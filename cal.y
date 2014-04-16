@@ -15,8 +15,12 @@ char tmp[128];
 
 %token <s> SUM_CLASS TIMES FRAC VAR 
 %type  <s> tex factor term script
-%left '+' 
+%left '+' '-'
+%nonassoc NEG
 %right 'P' '^' '_' 
+%left TIMES 
+%nonassoc '{' '}'
+%nonassoc '(' ')'
 %%
 doc :
     | doc query;
@@ -35,19 +39,39 @@ tex : factor
 		free($1);
 		free($3);
     }
+    | tex '-' factor 
+    { 
+		sprintf(tmp, "(%s minus %s)", $1, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($3);
+    }
+    | '-' tex %prec NEG
+    { 
+		sprintf(tmp, "-%s", $2);
+		$$ = strdup(tmp); 
+		free($2);
+    }
     ;
 
 factor : term
        { 
-		$$ = strdup($1); 
-		free($1);
+			$$ = strdup($1); 
+			free($1);
        }
-       | factor term 
+       | factor term
        {
-		sprintf(tmp, "(%s*%s)", $1, $2);
-		$$ = strdup(tmp); 
-		free($1);
-		free($2);
+			sprintf(tmp, "(%s⋅%s)", $1, $2);
+			$$ = strdup(tmp); 
+			free($1);
+			free($2);
+       }
+       | factor TIMES term
+       {
+			sprintf(tmp, "(%s*%s)", $1, $3);
+			$$ = strdup(tmp); 
+			free($1);
+			free($3);
        }
        ;
 
@@ -55,6 +79,13 @@ term : VAR
      { 
 		$$ = strdup($1); 
 		free($1);
+     }
+     | term script
+     {
+		sprintf(tmp, "%s[%s]", $1, $2);
+		$$ = strdup(tmp); 
+		free($1);
+		free($2);
      }
      | '(' tex ')'
      { 
@@ -65,13 +96,6 @@ term : VAR
      { 
 		$$ = strdup($2); 
 		free($2);
-     }
-     | term script
-     {
-	sprintf(tmp, "%s[%s]", $1, $2);
-	$$ = strdup(tmp); 
-	free($1);
-	free($2);
      }
      ;
 
@@ -88,19 +112,19 @@ script :  '_' VAR %prec 'P'
 			free($4);
 			free($2);
        }
-       | '_' VAR '^' term
+       | '_' VAR '^' '{' tex '}'
        { 
-			sprintf(tmp, "^%s_%s", $4, $2);
+			sprintf(tmp, "^%s_%s", $5, $2);
 			$$ = strdup(tmp); 
-			free($4);
+			free($5);
 			free($2);
        }
-       | '^' VAR '_' term
+       | '^' VAR '_' '{' tex '}'
        { 
-			sprintf(tmp, "^%s_%s", $2, $4);
+			sprintf(tmp, "^%s_%s", $2, $5);
 			$$ = strdup(tmp);
 			free($2);
-			free($4);
+			free($5);
        }
        | '^' VAR %prec 'P'
        { 
@@ -115,45 +139,45 @@ script :  '_' VAR %prec 'P'
 			free($2);
 			free($4);
        }
-       | '^' term %prec 'P'
+       | '^' '{' tex '}' %prec 'P'
        { 
-			sprintf(tmp, "^%s", $2);
+			sprintf(tmp, "^%s", $3);
 			$$ = strdup(tmp);
-			free($2);
+			free($3);
        }
-       | '^' term '_' VAR
+       | '^' '{' tex '}' '_' VAR
        { 
-			sprintf(tmp, "^%s_%s", $2, $4);
+			sprintf(tmp, "^%s_%s", $3, $6);
 			$$ = strdup(tmp);
-			free($2);
-			free($4);
+			free($3);
+			free($6);
        }
-       | '^' term '_' term
+       | '^' '{' tex '}' '_' '{' tex '}'
        { 
-			sprintf(tmp, "^%s_%s", $2, $4);
+			sprintf(tmp, "^%s_%s", $3, $7);
 			$$ = strdup(tmp);
-			free($2);
-			free($4);
+			free($3);
+			free($7);
        }
-       | '_' term %prec 'P'
+       | '_' '{' tex '}' %prec 'P'
        { 
-			sprintf(tmp, "_%s", $2);
+			sprintf(tmp, "_%s", $3);
 			$$ = strdup(tmp);
-			free($2);
+			free($3);
        }
-       | '_' term '^' VAR
+       | '_' '{' tex '}' '^' VAR
        { 
-			sprintf(tmp, "^%s_%s", $4, $2);
+			sprintf(tmp, "^%s_%s", $6, $3);
 			$$ = strdup(tmp);
-			free($4);
-			free($2);
+			free($6);
+			free($3);
        }
-       | '_' term '^' term 
+       | '_' '{' tex '}' '^' '{' tex '}' 
        { 
-			sprintf(tmp, "^%s_%s", $4, $2);
+			sprintf(tmp, "^%s_%s", $7, $3);
 			$$ = strdup(tmp);
-			free($4);
-			free($2);
+			free($7);
+			free($3);
        }
        ;
 %%
