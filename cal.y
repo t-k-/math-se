@@ -15,6 +15,8 @@ char tmp[128];
 
 %token <s> SUM_CLASS TIMES FRAC VAR 
 %type  <s> tex factor term script
+
+%right '='
 %left '+' '-'
 %nonassoc NEG
 %right 'P' '^' '_' 
@@ -52,26 +54,55 @@ tex : factor
 		$$ = strdup(tmp); 
 		free($2);
     }
+    | tex '=' tex 
+    { 
+		sprintf(tmp, "(%s=%s)", $1, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($3);
+    }
     ;
 
 factor : term
        { 
-			$$ = strdup($1); 
-			free($1);
+		$$ = strdup($1); 
+		free($1);
        }
        | factor term
        {
-			sprintf(tmp, "(%s⋅%s)", $1, $2);
-			$$ = strdup(tmp); 
-			free($1);
-			free($2);
+		sprintf(tmp, "(%s⋅%s)", $1, $2);
+		$$ = strdup(tmp); 
+		free($1);
+		free($2);
        }
        | factor TIMES term
        {
-			sprintf(tmp, "(%s*%s)", $1, $3);
-			$$ = strdup(tmp); 
-			free($1);
-			free($3);
+		sprintf(tmp, "(%s*%s)", $1, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($3);
+       }
+       | FRAC '{' tex '}' '{' tex '}'
+       { 
+		sprintf(tmp, "(%s/%s)", $3, $6);
+		$$ = strdup(tmp); 
+		free($3);
+		free($6);
+       }
+       | SUM_CLASS '{' tex '}'
+       { 
+		sprintf(tmp, "\\%s{%s}", $1, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($3);
+       }
+       | SUM_CLASS script '{' tex '}'
+       { 
+		sprintf(tmp, "\\%s[%s](%s)", $1, $2, $4);
+		$$ = strdup(tmp); 
+		free($1);
+		free($2);
+		free($4);
        }
        ;
 
