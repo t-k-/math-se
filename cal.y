@@ -13,16 +13,15 @@ char tmp[128];
 
 %error-verbose
 
-%token <s> SUM_CLASS TIMES FRAC VAR 
-%type  <s> tex factor term script
+%token <s> EQ_CLASS SUM_CLASS TIMES FRAC SQRT VAR 
+%type  <s> tex factor term body script
 
-%right '='
+%right EQ_CLASS
 %left '+' '-'
-%nonassoc NEG
+%nonassoc NEG '!'
 %right 'P' '^' '_' 
-%left TIMES 
-%nonassoc '{' '}'
-%nonassoc '(' ')'
+%left TIMES DIV
+%nonassoc '{' '}' '(' ')' ABS_L ABS_R
 %%
 doc :
     | doc query;
@@ -54,9 +53,9 @@ tex : factor
 		$$ = strdup(tmp); 
 		free($2);
     }
-    | tex '=' tex 
+    | tex EQ_CLASS tex 
     { 
-		sprintf(tmp, "(%s=%s)", $1, $3);
+		sprintf(tmp, "(%s %s %s)", $1, $2, $3);
 		$$ = strdup(tmp); 
 		free($1);
 		free($3);
@@ -82,6 +81,13 @@ factor : term
 		free($1);
 		free($3);
        }
+       | factor DIV term
+       {
+		sprintf(tmp, "(%s/%s)", $1, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($3);
+       }
        | FRAC '{' tex '}' '{' tex '}'
        { 
 		sprintf(tmp, "(%s/%s)", $3, $6);
@@ -89,22 +95,42 @@ factor : term
 		free($3);
 		free($6);
        }
-       | SUM_CLASS '{' tex '}'
+       | SUM_CLASS body
        { 
-		sprintf(tmp, "\\%s{%s}", $1, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
-       }
-       | SUM_CLASS script '{' tex '}'
-       { 
-		sprintf(tmp, "\\%s[%s](%s)", $1, $2, $4);
+		sprintf(tmp, "\\%s{%s}", $1, $2);
 		$$ = strdup(tmp); 
 		free($1);
 		free($2);
-		free($4);
+       }
+       | SUM_CLASS script body
+       { 
+		sprintf(tmp, "\\%s[%s]{%s}", $1, $2, $3);
+		$$ = strdup(tmp); 
+		free($1);
+		free($2);
+		free($3);
        }
        ;
+
+body : '{' tex '}'
+     {
+	sprintf(tmp, "%s", $2);
+	$$ = strdup(tmp); 
+	free($2);
+     }
+     | '(' tex ')'
+     {
+	sprintf(tmp, "%s", $2);
+	$$ = strdup(tmp); 
+	free($2);
+     }
+     | VAR
+     {
+	sprintf(tmp, "%s", $1);
+	$$ = strdup(tmp); 
+	free($1);
+     }
+     ;
 
 term : VAR 
      { 
@@ -118,6 +144,12 @@ term : VAR
 		free($1);
 		free($2);
      }
+     | ABS_L tex ABS_R 
+     { 
+		sprintf(tmp, "|%s|", $2);
+		$$ = strdup(tmp); 
+		free($2);
+     }
      | '(' tex ')'
      { 
 		$$ = strdup($2); 
@@ -126,6 +158,31 @@ term : VAR
      | '{' tex '}'
      { 
 		$$ = strdup($2); 
+		free($2);
+     }
+     | '(' tex ')' '!'
+     { 
+		sprintf(tmp, "%s!", $2);
+		$$ = strdup(tmp); 
+		free($2);
+     }
+     | VAR '!'
+     { 
+		sprintf(tmp, "%s!", $1);
+		$$ = strdup(tmp); 
+		free($1);
+     }
+     | SQRT '[' tex ']' body 
+     { 
+		sprintf(tmp, "(%s√%s)", $3, $5);
+		$$ = strdup(tmp); 
+		free($3);
+		free($5);
+     }
+     | SQRT body
+     { 
+		sprintf(tmp, "(√%s)", $2);
+		$$ = strdup(tmp); 
 		free($2);
      }
      ;
