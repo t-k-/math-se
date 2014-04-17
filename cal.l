@@ -119,6 +119,7 @@ void mkstr(char *);
 [ \t]+          {}
 \\[a-zA-Z]+     {/* omit undefined control sequence */}
 \\!             {}
+\\\\            {}
 \\;             {}
 \\,             {}
 \\[ ]           {}

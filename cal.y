@@ -28,19 +28,19 @@ doc :
 
 query : tex '\n' { printf("%s \n", $1); };
 
-tex : factor 
+tex : term 
     { 
 		$$ = strdup($1); 
 		free($1);
     }
-    | tex '+' factor 
+    | tex '+' term 
     { 
 		sprintf(tmp, "(%s+%s)", $1, $3);
 		$$ = strdup(tmp); 
 		free($1);
 		free($3);
     }
-    | tex '-' factor 
+    | tex '-' term 
     { 
 		sprintf(tmp, "(%s minus %s)", $1, $3);
 		$$ = strdup(tmp); 
@@ -62,55 +62,33 @@ tex : factor
     }
     ;
 
-factor : term
-       { 
+term : factor 
+     { 
 		$$ = strdup($1); 
 		free($1);
-       }
-       | factor term
-       {
+     }
+     | term factor 
+     {
 		sprintf(tmp, "(%s⋅%s)", $1, $2);
 		$$ = strdup(tmp); 
 		free($1);
 		free($2);
-       }
-       | factor TIMES term
-       {
+     }
+     | term TIMES factor 
+     {
 		sprintf(tmp, "(%s*%s)", $1, $3);
 		$$ = strdup(tmp); 
 		free($1);
 		free($3);
-       }
-       | factor DIV term
-       {
+     }
+     | term DIV factor
+     {
 		sprintf(tmp, "(%s/%s)", $1, $3);
 		$$ = strdup(tmp); 
 		free($1);
 		free($3);
-       }
-       | FRAC '{' tex '}' '{' tex '}'
-       { 
-		sprintf(tmp, "(%s/%s)", $3, $6);
-		$$ = strdup(tmp); 
-		free($3);
-		free($6);
-       }
-       | SUM_CLASS body
-       { 
-		sprintf(tmp, "\\%s{%s}", $1, $2);
-		$$ = strdup(tmp); 
-		free($1);
-		free($2);
-       }
-       | SUM_CLASS script body
-       { 
-		sprintf(tmp, "\\%s[%s]{%s}", $1, $2, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($2);
-		free($3);
-       }
-       ;
+     }
+     ;
 
 body : '{' tex '}'
      {
@@ -132,60 +110,82 @@ body : '{' tex '}'
      }
      ;
 
-term : VAR 
-     { 
-		$$ = strdup($1); 
-		free($1);
-     }
-     | term script
-     {
-		sprintf(tmp, "%s[%s]", $1, $2);
-		$$ = strdup(tmp); 
-		free($1);
-		free($2);
-     }
-     | ABS_L tex ABS_R 
-     { 
-		sprintf(tmp, "|%s|", $2);
-		$$ = strdup(tmp); 
-		free($2);
-     }
-     | '(' tex ')'
-     { 
-		$$ = strdup($2); 
-		free($2);
-     }
-     | '{' tex '}'
-     { 
-		$$ = strdup($2); 
-		free($2);
-     }
-     | '(' tex ')' '!'
-     { 
-		sprintf(tmp, "%s!", $2);
-		$$ = strdup(tmp); 
-		free($2);
-     }
-     | VAR '!'
-     { 
-		sprintf(tmp, "%s!", $1);
-		$$ = strdup(tmp); 
-		free($1);
-     }
-     | SQRT '[' tex ']' body 
-     { 
-		sprintf(tmp, "(%s√%s)", $3, $5);
-		$$ = strdup(tmp); 
-		free($3);
-		free($5);
-     }
-     | SQRT body
-     { 
-		sprintf(tmp, "(√%s)", $2);
-		$$ = strdup(tmp); 
-		free($2);
-     }
-     ;
+factor : VAR 
+       { 
+			$$ = strdup($1); 
+			free($1);
+       }
+       | factor script
+       {
+			sprintf(tmp, "%s[%s]", $1, $2);
+			$$ = strdup(tmp); 
+			free($1);
+			free($2);
+       }
+       | ABS_L tex ABS_R 
+       { 
+			sprintf(tmp, "|%s|", $2);
+			$$ = strdup(tmp); 
+			free($2);
+       }
+       | FRAC '{' tex '}' '{' tex '}'
+       { 
+			sprintf(tmp, "(%s/%s)", $3, $6);
+			$$ = strdup(tmp); 
+			free($3);
+		free($6);
+       }
+       | SUM_CLASS body
+       { 
+			sprintf(tmp, "\\%s{%s}", $1, $2);
+			$$ = strdup(tmp); 
+			free($1);
+			free($2);
+       }
+       | SUM_CLASS script body
+       { 
+			sprintf(tmp, "\\%s[%s]{%s}", $1, $2, $3);
+			$$ = strdup(tmp); 
+			free($1);
+			free($2);
+			free($3);
+       }
+       | '(' tex ')'
+       { 
+			$$ = strdup($2); 
+			free($2);
+       }
+       | '{' tex '}'
+       { 
+			$$ = strdup($2); 
+			free($2);
+       }
+       | '(' tex ')' '!'
+       { 
+			sprintf(tmp, "%s!", $2);
+			$$ = strdup(tmp); 
+			free($2);
+       }
+       | VAR '!'
+       { 
+			sprintf(tmp, "%s!", $1);
+			$$ = strdup(tmp); 
+			free($1);
+       }
+       | SQRT '[' tex ']' body 
+       { 
+			sprintf(tmp, "(%s√%s)", $3, $5);
+			$$ = strdup(tmp); 
+			free($3);
+			free($5);
+       }
+       | SQRT body
+       { 
+			sprintf(tmp, "(√%s)", $2);
+			$$ = strdup(tmp); 
+			free($2);
+       }
+       ;
 
 script :  '_' VAR %prec 'P' 
        { 
@@ -270,7 +270,10 @@ script :  '_' VAR %prec 'P'
        ;
 %%
 
-void yyerror(const char *ps) {}
+void yyerror(const char *ps) 
+{
+	printf("err: %s \n", ps);
+}
 
 int main() 
 {
