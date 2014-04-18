@@ -1,6 +1,11 @@
-all: cal 
+PARSER=ma-pa
 
-%: %.tab.o %.yy.o
+all: $(PARSER) test-tree
+
+test-tree: tree.c list.c test-tree.c
+	gcc $^ -I ./inc -o $@
+
+$(PARSER): $(PARSER).tab.o $(PARSER).yy.o
 	gcc $^ -lfl -mcheck -o $@ 
 
 %.tab.o: %.tab.c
@@ -9,12 +14,12 @@ all: cal
 %.yy.o: lex.yy.c %.tab.h
 	gcc -c -o $@ $< -include $(word 2, $^)
 
-lex.yy.c: cal.l 
+lex.yy.c: $(PARSER).l
 	flex $<
-	
+
 parse = bison --verbose --report=itemset -d $^
 %.tab.h %.tab.c: %.y 
 	$(parse) 2>&1 | grep --color conflicts || $(parse) 
 
 clean:
-	find . -mindepth 1 \( -path './.git' -o -name "*.[yl]" -o -name "list*" -o -name "README.md" -o -name "Makefile" -o -name "*.swp" \) -prune -o -print | xargs rm -f
+	rm -f lex.yy.c *.output *.tab.h *.tab.c *.o $(PARSER) test-tree
