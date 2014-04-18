@@ -65,7 +65,7 @@ TREE_IT_CALLBK(print)
 		}
 	}
 
-	printf("── %s (", p->name);
+	printf("── %d %s (", p->weight, p->name);
 	print_type(p->type);
 	printf(")\n");
 
@@ -82,7 +82,7 @@ TREE_IT_CALLBK(release)
 	TREE_OBJ(struct token_t, p, tnd);
 	BOOL res;
 
-	printf("release %s \n", p->name);
+	//printf("release %s \n", p->name);
 	res = tree_detach(&p->tnd, pa_now, pa_fwd);
 	free(p->name);
 	free(p);
@@ -113,16 +113,21 @@ void matree_attach(struct token_t *s /* son */,
 	if (f == NULL || s == NULL) 
 		return;
 
-	if (s->type == f->type && (f->type == SUM || f->type == TIMES)) {
+	f->weight += s->weight;
+
+	if (s->type == f->type &&
+	   (f->type == SUM || f->type == TIMES)) {
+
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
 		//printf("free %s \n", s->name);
 		free(s->name);
 		free(s);
+
+		f->weight --;
 	} else {
 		tree_attach(&s->tnd, &f->tnd, NULL, NULL);
 	}
-
 }
 
 struct token_t* mktoken(char* name, int type)
@@ -130,6 +135,7 @@ struct token_t* mktoken(char* name, int type)
 	struct token_t *p = malloc(sizeof(struct token_t));
 	p->name = strdup(name);
 	p->type = type;
+	p->weight = 1;
 	TREE_NODE_CONS(p->tnd);
 
 	return p;
@@ -143,4 +149,36 @@ void matree_print(struct token_t *p)
 void matree_release(struct token_t *p)
 {
 	tree_foreach(&p->tnd, &tree_post_order_DFS, &release, 0, NULL);
+}
+
+static
+TREE_IT_CALLBK(leaf)
+{
+	TREE_OBJ(struct token_t, p, tnd);
+	struct token_t *f;
+	BOOL res;
+
+	if (p->tnd.sons.now == NULL) {
+		printf("branch word: ");
+
+		f = p;
+		do {
+			printf("%d", f->weight);
+			print_type(f->type);
+			if (f->tnd.father == NULL)
+				break;
+			else
+				printf(",");
+			f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
+		} while (1);
+		
+		printf("\n");
+	}
+
+	LIST_GO_OVER;
+}
+
+void matree_br_word(struct token_t *p)
+{
+	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf, 0, NULL);
 }

@@ -1,4 +1,5 @@
 #include "mathtree.h"
+#include <stdio.h>
 
 int 
 main()
@@ -37,6 +38,8 @@ main()
 	p[0] = p[11];
 	
 	matree_print(p[0]);
+	printf("=========\n");
+	matree_br_word(p[0]);
 	matree_release(p[0]);
 
 	return 0;
