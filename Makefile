@@ -2,8 +2,14 @@ PARSER=ma-pa
 
 all: $(PARSER) test-tree
 
-test-tree: tree.c list.c test-tree.c
-	gcc $^ -I ./inc -o $@
+%.o: %.c
+	gcc $^ -I ./inc -c 
+
+mathtree.a: tree.o list.o mathtree.o
+	ar rcs libmathtree.a $^
+
+test-tree: test-tree.c mathtree.a 
+	gcc $< -lmathtree -L . -I ./inc -o $@
 
 $(PARSER): $(PARSER).tab.o $(PARSER).yy.o
 	gcc $^ -lfl -mcheck -o $@ 
@@ -22,4 +28,4 @@ parse = bison --verbose --report=itemset -d $^
 	$(parse) 2>&1 | grep --color conflicts || $(parse) 
 
 clean:
-	rm -f lex.yy.c *.output *.tab.h *.tab.c *.o $(PARSER) test-tree
+	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree
