@@ -102,7 +102,7 @@ body : '{' tex '}'
 	$$ = strdup(tmp); 
 	free($2);
      }
-     | VAR
+     | VAR 
      {
 	sprintf(tmp, "%s", $1);
 	$$ = strdup(tmp); 
@@ -110,7 +110,7 @@ body : '{' tex '}'
      }
      ;
 
-factor : VAR 
+factor : body 
        { 
 			$$ = strdup($1); 
 			free($1);
@@ -142,7 +142,7 @@ factor : VAR
 			free($1);
 			free($2);
        }
-       | SUM_CLASS script body
+       | SUM_CLASS script body 
        { 
 			sprintf(tmp, "\\%s[%s]{%s}", $1, $2, $3);
 			$$ = strdup(tmp); 
@@ -150,23 +150,7 @@ factor : VAR
 			free($2);
 			free($3);
        }
-       | '(' tex ')'
-       { 
-			$$ = strdup($2); 
-			free($2);
-       }
-       | '{' tex '}'
-       { 
-			$$ = strdup($2); 
-			free($2);
-       }
-       | '(' tex ')' '!'
-       { 
-			sprintf(tmp, "%s!", $2);
-			$$ = strdup(tmp); 
-			free($2);
-       }
-       | VAR '!'
+       | body '!'
        { 
 			sprintf(tmp, "%s!", $1);
 			$$ = strdup(tmp); 
