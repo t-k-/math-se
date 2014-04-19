@@ -23,7 +23,7 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> EQ_CLASS SUM_CLASS TIMES FRAC SQRT VAR 
-%type  <p> tex term factor body 
+%type  <p> tex term factor body script 
 
 %right EQ_CLASS
 %left '+' '-'
@@ -49,24 +49,24 @@ tex : term
     }
     | tex '+' term 
     { 
-	SUB_CONS(mktoken("+", MT_SUM), $1, $3);
+	SUB_CONS(mktoken("+", MT_ADD), $1, $3);
 	root = $$ = father;
     }
     | tex '-' term 
     { 
-	struct token_t *p = mktoken("-", MT_NEG_VAR);
+	struct token_t *p = mktoken("-", MT_NEG);
 	matree_attach($3, p);
-	SUB_CONS(mktoken("+", MT_SUM), $1, p);
+	SUB_CONS(mktoken("+", MT_ADD), $1, p);
 	root = $$ = father;
     }
     | '-' tex %prec NEG
     { 
-	SUB_CONS(mktoken("-", MT_NEG_VAR), $2, NULL);
+	SUB_CONS(mktoken("-", MT_NEG), $2, NULL);
 	root = $$ = father;
     }
     | tex EQ_CLASS tex 
     { 
-	SUB_CONS(mktoken($2, MT_EQ), $1, $3);
+	SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
 	root = $$ = father;
     }
     ;
@@ -115,6 +115,17 @@ factor : body
 	SUB_CONS($1, NULL, NULL);
 	root = $$ = father;
        }
+       | factor script
+       {
+	if ($2->type == MT_EMPTY) {
+		SUB_CONS($1, NULL, NULL);
+		free($2);
+		root = $$ = father;
+	} else {
+		SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $2);
+		root = $$ = father;
+	}
+       }
        | ABS_L tex ABS_R 
        { 
 	SUB_CONS(mktoken("||", MT_ABS), $2, NULL);
@@ -122,7 +133,7 @@ factor : body
        }
        | FRAC '{' tex '}' '{' tex '}'
        { 
-	SUB_CONS(mktoken("frac", MT_FRAC), $3, $6);
+	SUB_CONS(mktoken("/", MT_FRAC), $3, $6);
 	root = $$ = father;
        }
        | SUM_CLASS body
@@ -130,9 +141,15 @@ factor : body
 	SUB_CONS(mktoken($1, MT_SUM_CLASS), $2, NULL);
 	root = $$ = father;
        }
+       | SUM_CLASS script body 
+       { 
+	free($2); /* just omit script in this case */
+	SUB_CONS(mktoken($1, MT_SUM_CLASS), $3, NULL);
+	root = $$ = father;
+       }
        | body '!'
        { 
-	SUB_CONS(mktoken("||", MT_ABS), $1, NULL);
+	SUB_CONS(mktoken("!", MT_FACT), $1, NULL);
 	root = $$ = father;
        }
        | SQRT '[' tex ']' body 
@@ -147,6 +164,67 @@ factor : body
        }
        ;
 
+script :  '_' VAR %prec 'P' 
+       { 
+	SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
+	root = $$ = father;
+       }
+       | '_' VAR '^' VAR
+       { 
+	SUB_CONS(mktoken($4, MT_VAR), NULL, NULL);
+	root = $$ = father;
+       }
+       | '_' VAR '^' '{' tex '}'
+       { 
+	SUB_CONS($5, NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' VAR '_' '{' tex '}'
+       { 
+	SUB_CONS(mktoken($2, MT_VAR), NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' VAR %prec 'P'
+       { 
+	SUB_CONS(mktoken($2, MT_VAR), NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' VAR '_' VAR
+       { 
+	SUB_CONS(mktoken($2, MT_VAR), NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' '{' tex '}' %prec 'P'
+       { 
+	SUB_CONS($3, NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' '{' tex '}' '_' VAR
+       { 
+	SUB_CONS($3, NULL, NULL);
+	root = $$ = father;
+       }
+       | '^' '{' tex '}' '_' '{' tex '}'
+       { 
+	SUB_CONS($3, NULL, NULL);
+	root = $$ = father;
+       }
+       | '_' '{' tex '}' %prec 'P'
+       { 
+	SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
+	root = $$ = father;
+       }
+       | '_' '{' tex '}' '^' VAR
+       { 
+	SUB_CONS(mktoken($6, MT_VAR), NULL, NULL);
+	root = $$ = father;
+       }
+       | '_' '{' tex '}' '^' '{' tex '}' 
+       { 
+	SUB_CONS($7, NULL, NULL);
+	root = $$ = father;
+       }
+       ;
 %%
 struct token_t *root = NULL;
 
@@ -160,102 +238,3 @@ int main()
 	yyparse();
 	return 0;
 }
-/*
-%type  <s> script
-
-       | factor script
-       {
-	SUB_CONS(mktoken($2, MT_SU_SCRIPT), $1, NULL);
-	root = $$ = father;
-       }
-
-       | SUM_CLASS script body 
-       { 
-	struct token_t *p = mktoken($2, MT_SUM_CLASS);
-	SUB_CONS(mktoken($1, MT_SUM_CLASS), $3, NULL);
-	matree_attach(father, p);
-	root = $$ = p;
-       }
-
-script :  '_' VAR %prec 'P' 
-       { 
-			sprintf(tmp, "_%s", $2);
-			$$ = strdup(tmp); 
-			free($2);
-       }
-       | '_' VAR '^' VAR
-       { 
-			sprintf(tmp, "^%s_%s", $4, $2);
-			$$ = strdup(tmp); 
-			free($4);
-			free($2);
-       }
-       | '_' VAR '^' '{' tex '}'
-       { 
-			sprintf(tmp, "^%s_%s", $5, $2);
-			$$ = strdup(tmp); 
-			free($5);
-			free($2);
-       }
-       | '^' VAR '_' '{' tex '}'
-       { 
-			sprintf(tmp, "^%s_%s", $2, $5);
-			$$ = strdup(tmp);
-			free($2);
-			free($5);
-       }
-       | '^' VAR %prec 'P'
-       { 
-			sprintf(tmp, "^%s", $2);
-			$$ = strdup(tmp);
-			free($2);
-       }
-       | '^' VAR '_' VAR
-       { 
-			sprintf(tmp, "^%s_%s", $2, $4);
-			$$ = strdup(tmp);
-			free($2);
-			free($4);
-       }
-       | '^' '{' tex '}' %prec 'P'
-       { 
-			sprintf(tmp, "^%s", $3);
-			$$ = strdup(tmp);
-			free($3);
-       }
-       | '^' '{' tex '}' '_' VAR
-       { 
-			sprintf(tmp, "^%s_%s", $3, $6);
-			$$ = strdup(tmp);
-			free($3);
-			free($6);
-       }
-       | '^' '{' tex '}' '_' '{' tex '}'
-       { 
-			sprintf(tmp, "^%s_%s", $3, $7);
-			$$ = strdup(tmp);
-			free($3);
-			free($7);
-       }
-       | '_' '{' tex '}' %prec 'P'
-       { 
-			sprintf(tmp, "_%s", $3);
-			$$ = strdup(tmp);
-			free($3);
-       }
-       | '_' '{' tex '}' '^' VAR
-       { 
-			sprintf(tmp, "^%s_%s", $6, $3);
-			$$ = strdup(tmp);
-			free($6);
-			free($3);
-       }
-       | '_' '{' tex '}' '^' '{' tex '}' 
-       { 
-			sprintf(tmp, "^%s_%s", $7, $3);
-			$$ = strdup(tmp);
-			free($7);
-			free($3);
-       }
-       ;
-*/

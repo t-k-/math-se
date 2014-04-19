@@ -1,16 +1,18 @@
 #include "tknet.h"
 
 enum {
-	MT_EQ,
-	MT_SUM,
+	MT_EQ_CLASS,
+	MT_ADD,
 	MT_SUM_CLASS,
 	MT_TIMES,
 	MT_FRAC,
+	MT_FACT,
 	MT_VAR,
 	MT_SQRT,
 	MT_ABS,
-	MT_NEG_VAR,
+	MT_NEG,
 	MT_SU_SCRIPT,
+	MT_EMPTY,
 	UNKNOWN
 };
 

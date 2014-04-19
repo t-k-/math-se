@@ -6,38 +6,44 @@
 static void print_type(int t_num)
 {
 	switch (t_num) {
-		case MT_EQ:
-			printf("equal");
+		case MT_EQ_CLASS:
+			printf("EQ_CLASS");
 			break;
-		case MT_SUM:
-			printf("sum");
+		case MT_ADD:
+			printf("ADD");
 			break;
 		case MT_SUM_CLASS:
-			printf("sumclass");
+			printf("SUM_CLASS");
 			break;
 		case MT_TIMES:
-			printf("times");
+			printf("TIMES");
 			break;
 		case MT_FRAC:
-			printf("frac");
+			printf("FRAC");
+			break;
+		case MT_FACT:
+			printf("FACT");
 			break;
 		case MT_VAR:
-			printf("var");
+			printf("VAR");
 			break;
 		case MT_SQRT:
-			printf("sqrt");
+			printf("SQRT");
 			break;
 		case MT_ABS:
-			printf("abs");
+			printf("ABS");
 			break;
-		case MT_NEG_VAR:
-			printf("neg_var");
+		case MT_NEG:
+			printf("NEG");
 			break;
 		case MT_SU_SCRIPT:
-			printf("su_script");
+			printf("SUS");
+			break;
+		case MT_EMPTY:
+			printf("EMPTY");
 			break;
 		default :
-			printf("unknown");
+			printf("UNKNOWN");
 	}
 }
 
@@ -74,7 +80,7 @@ TREE_IT_CALLBK(print)
 		}
 	}
 
-	printf("──  %s (w=%d,type=", p->name, p->weight);
+	printf("──  %s (%d ", p->name, p->weight);
 	print_type(p->type);
 	printf(")\n");
 
@@ -125,7 +131,7 @@ void matree_attach(struct token_t *s /* son */,
 	f->weight += s->weight;
 
 	if (s->type == f->type &&
-	   (f->type == MT_SUM || f->type == MT_TIMES)) {
+	   (f->type == MT_ADD || f->type == MT_TIMES)) {
 
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
@@ -161,7 +167,7 @@ void matree_release(struct token_t *p)
 }
 
 static
-TREE_IT_CALLBK(leaf)
+TREE_IT_CALLBK(leaf_up)
 {
 	TREE_OBJ(struct token_t, p, tnd);
 	struct token_t *f;
@@ -172,8 +178,12 @@ TREE_IT_CALLBK(leaf)
 
 		f = p;
 		do {
-			print_type(f->type);
-			printf("(w=%d)", f->weight);
+			printf("%d ", f->weight);
+			if (f->type == MT_SUM_CLASS)
+				printf("%s", f->name);
+			else
+				print_type(f->type);
+
 			if (f->tnd.father == NULL)
 				break;
 			else
@@ -189,5 +199,5 @@ TREE_IT_CALLBK(leaf)
 
 void matree_br_word(struct token_t *p)
 {
-	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf, 0, NULL);
+	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, NULL);
 }
