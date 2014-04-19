@@ -7,6 +7,12 @@
 void yyerror(const char *);
 char tmp[128];
 extern struct token_t *root;
+
+#define SUB_CONS(_father, _sonl, _sonr) \
+	struct token_t *father = _father; \
+	matree_attach(_sonl, father); \
+	matree_attach(_sonr, father)
+
 %}
 
 %union {
@@ -16,9 +22,8 @@ extern struct token_t *root;
 
 %error-verbose
 
-%token <p> EQ_CLASS SUM_CLASS TIMES FRAC SQRT 
-%token <s> VAR 
-%type  <p> tex term 
+%token <s> EQ_CLASS SUM_CLASS TIMES FRAC SQRT VAR 
+%type  <p> tex term factor body 
 
 %right EQ_CLASS
 %left '+' '-'
@@ -39,25 +44,109 @@ query : tex '\n'
 
 tex : term 
     { 
-		$$ = $1;
-		root = $$;
+	SUB_CONS($1, NULL, NULL);
+	root = $$ = father;
     }
     | tex '+' term 
     { 
-		struct token_t *p = mktoken("+", MT_SUM);
-		matree_attach($1, p);
-		matree_attach($3, p);
-		$$ = p;
-		root = $$;
+	SUB_CONS(mktoken("+", MT_SUM), $1, $3);
+	root = $$ = father;
     }
-;
+    | tex '-' term 
+    { 
+	struct token_t *p = mktoken("-", MT_NEG_VAR);
+	matree_attach($3, p);
+	SUB_CONS(mktoken("+", MT_SUM), $1, p);
+	root = $$ = father;
+    }
+    | '-' tex %prec NEG
+    { 
+	SUB_CONS(mktoken("-", MT_NEG_VAR), $2, NULL);
+	root = $$ = father;
+    }
+    | tex EQ_CLASS tex 
+    { 
+	SUB_CONS(mktoken($2, MT_EQ), $1, $3);
+	root = $$ = father;
+    }
+    ;
 
-term : VAR 
+term : factor 
+     { 
+	SUB_CONS($1, NULL, NULL);
+	root = $$ = father;
+     }
+     | term factor 
+     {
+	SUB_CONS(mktoken("⋅", MT_TIMES), $1, $2);
+	root = $$ = father;
+     }
+     | term TIMES factor 
+     {
+	SUB_CONS(mktoken("*", MT_TIMES), $1, $3);
+	root = $$ = father;
+     }
+     | term DIV factor
+     {
+	SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
+	root = $$ = father;
+     }
+     ;
+
+body : '{' tex '}'
+     {
+	SUB_CONS($2, NULL, NULL);
+	root = $$ = father;
+     }
+     | '(' tex ')'
+     {
+	SUB_CONS($2, NULL, NULL);
+	root = $$ = father;
+     }
+     | VAR 
+     {
+	SUB_CONS(mktoken($1, MT_VAR), NULL, NULL);
+	root = $$ = father;
+     }
+     ;
+
+factor : body 
        { 
-			struct token_t *p = mktoken($1, MT_VAR);
-			$$ = p;
-			root = $$;
+	SUB_CONS($1, NULL, NULL);
+	root = $$ = father;
        }
+       | ABS_L tex ABS_R 
+       { 
+	SUB_CONS(mktoken("||", MT_ABS), $2, NULL);
+	root = $$ = father;
+       }
+       | FRAC '{' tex '}' '{' tex '}'
+       { 
+	SUB_CONS(mktoken("frac", MT_FRAC), $3, $6);
+	root = $$ = father;
+       }
+       | SUM_CLASS body
+       { 
+	SUB_CONS(mktoken($1, MT_SUM_CLASS), $2, NULL);
+	root = $$ = father;
+       }
+       | body '!'
+       { 
+	SUB_CONS(mktoken("||", MT_ABS), $1, NULL);
+	root = $$ = father;
+       }
+       | SQRT '[' tex ']' body 
+       { 
+	SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
+	root = $$ = father;
+       }
+       | SQRT body
+       { 
+	SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
+	root = $$ = father;
+       }
+       ;
+
 %%
 struct token_t *root = NULL;
 
@@ -72,137 +161,21 @@ int main()
 	return 0;
 }
 /*
-factor body script
-    | tex '-' term 
-    { 
-		sprintf(tmp, "(%s minus %s)", $1, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
-    }
-    | '-' tex %prec NEG
-    { 
-		sprintf(tmp, "-%s", $2);
-		$$ = strdup(tmp); 
-		free($2);
-    }
-    | tex EQ_CLASS tex 
-    { 
-		sprintf(tmp, "(%s %s %s)", $1, $2, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
-    }
-    ;
+%type  <s> script
 
-term : factor 
-     { 
-		$$ = strdup($1); 
-		free($1);
-     }
-     | term factor 
-     {
-		sprintf(tmp, "(%s⋅%s)", $1, $2);
-		$$ = strdup(tmp); 
-		free($1);
-		free($2);
-     }
-     | term TIMES factor 
-     {
-		sprintf(tmp, "(%s*%s)", $1, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
-     }
-     | term DIV factor
-     {
-		sprintf(tmp, "(%s/%s)", $1, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
-     }
-     ;
-
-body : '{' tex '}'
-     {
-	sprintf(tmp, "%s", $2);
-	$$ = strdup(tmp); 
-	free($2);
-     }
-     | '(' tex ')'
-     {
-	sprintf(tmp, "%s", $2);
-	$$ = strdup(tmp); 
-	free($2);
-     }
-     | VAR 
-     {
-	sprintf(tmp, "%s", $1);
-	$$ = strdup(tmp); 
-	free($1);
-     }
-     ;
-
-factor : body 
-       { 
-			$$ = strdup($1); 
-			free($1);
-       }
        | factor script
        {
-			sprintf(tmp, "%s[%s]", $1, $2);
-			$$ = strdup(tmp); 
-			free($1);
-			free($2);
+	SUB_CONS(mktoken($2, MT_SU_SCRIPT), $1, NULL);
+	root = $$ = father;
        }
-       | ABS_L tex ABS_R 
-       { 
-			sprintf(tmp, "|%s|", $2);
-			$$ = strdup(tmp); 
-			free($2);
-       }
-       | FRAC '{' tex '}' '{' tex '}'
-       { 
-			sprintf(tmp, "(%s/%s)", $3, $6);
-			$$ = strdup(tmp); 
-			free($3);
-		free($6);
-       }
-       | SUM_CLASS body
-       { 
-			sprintf(tmp, "\\%s{%s}", $1, $2);
-			$$ = strdup(tmp); 
-			free($1);
-			free($2);
-       }
+
        | SUM_CLASS script body 
        { 
-			sprintf(tmp, "\\%s[%s]{%s}", $1, $2, $3);
-			$$ = strdup(tmp); 
-			free($1);
-			free($2);
-			free($3);
+	struct token_t *p = mktoken($2, MT_SUM_CLASS);
+	SUB_CONS(mktoken($1, MT_SUM_CLASS), $3, NULL);
+	matree_attach(father, p);
+	root = $$ = p;
        }
-       | body '!'
-       { 
-			sprintf(tmp, "%s!", $1);
-			$$ = strdup(tmp); 
-			free($1);
-       }
-       | SQRT '[' tex ']' body 
-       { 
-			sprintf(tmp, "(%s√%s)", $3, $5);
-			$$ = strdup(tmp); 
-			free($3);
-			free($5);
-       }
-       | SQRT body
-       { 
-			sprintf(tmp, "(√%s)", $2);
-			$$ = strdup(tmp); 
-			free($2);
-       }
-       ;
 
 script :  '_' VAR %prec 'P' 
        { 

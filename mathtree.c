@@ -6,11 +6,20 @@
 static void print_type(int t_num)
 {
 	switch (t_num) {
+		case MT_EQ:
+			printf("equal");
+			break;
 		case MT_SUM:
 			printf("sum");
 			break;
+		case MT_SUM_CLASS:
+			printf("sumclass");
+			break;
 		case MT_TIMES:
 			printf("times");
+			break;
+		case MT_FRAC:
+			printf("frac");
 			break;
 		case MT_VAR:
 			printf("var");
@@ -65,7 +74,7 @@ TREE_IT_CALLBK(print)
 		}
 	}
 
-	printf("── %d %s (", p->weight, p->name);
+	printf("──  %s (w=%d,type=", p->name, p->weight);
 	print_type(p->type);
 	printf(")\n");
 
@@ -163,8 +172,8 @@ TREE_IT_CALLBK(leaf)
 
 		f = p;
 		do {
-			printf("%d", f->weight);
 			print_type(f->type);
+			printf("(w=%d)", f->weight);
 			if (f->tnd.father == NULL)
 				break;
 			else
