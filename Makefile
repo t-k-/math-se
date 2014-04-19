@@ -1,27 +1,29 @@
 PARSER=ma-pa
+CFLAGS=-I ./inc -L . 
+CC=gcc $(CFLAGS)
 
 all: $(PARSER) test-tree
-
-%.o: %.c
-	gcc $^ -I ./inc -c 
 
 mathtree.a: tree.o list.o mathtree.o
 	ar rcs libmathtree.a $^
 
 test-tree: test-tree.c mathtree.a 
-	gcc $< -lmathtree -L . -I ./inc -o $@
+	$(CC) $< -lmathtree -o $@
 
-$(PARSER): $(PARSER).tab.o $(PARSER).yy.o
-	gcc $^ -lfl -mcheck -o $@ 
+$(PARSER): $(PARSER).tab.o lex.yy.o mathtree.a
+	$(CC) $(PARSER).tab.o lex.yy.o -lmathtree -lmcheck -lfl -o $@ 
 
 %.tab.o: %.tab.c
-	gcc -c -o $@ $^
+	$(CC) -c $^ -o $@
 
-%.yy.o: lex.yy.c %.tab.h
-	gcc -c -o $@ $< -include $(word 2, $^)
+lex.yy.o: lex.yy.c ma-pa.tab.h
+	$(CC) -c  $< -include $(word 2, $^) -o $@
 
 lex.yy.c: $(PARSER).l
 	flex $<
+
+%.o: %.c
+	$(CC) $^ -c 
 
 parse = bison --verbose --report=itemset -d $^
 %.tab.h %.tab.c: %.y 

@@ -6,25 +6,25 @@
 static void print_type(int t_num)
 {
 	switch (t_num) {
-		case SUM:
+		case MT_SUM:
 			printf("sum");
 			break;
-		case TIMES:
+		case MT_TIMES:
 			printf("times");
 			break;
-		case VAR:
+		case MT_VAR:
 			printf("var");
 			break;
-		case SQRT:
+		case MT_SQRT:
 			printf("sqrt");
 			break;
-		case ABS:
+		case MT_ABS:
 			printf("abs");
 			break;
-		case NEG_VAR:
+		case MT_NEG_VAR:
 			printf("neg_var");
 			break;
-		case SU_SCRIPT:
+		case MT_SU_SCRIPT:
 			printf("su_script");
 			break;
 		default :
@@ -116,7 +116,7 @@ void matree_attach(struct token_t *s /* son */,
 	f->weight += s->weight;
 
 	if (s->type == f->type &&
-	   (f->type == SUM || f->type == TIMES)) {
+	   (f->type == MT_SUM || f->type == MT_TIMES)) {
 
 		list_foreach(&s->tnd.sons, &son_pass, f);
 

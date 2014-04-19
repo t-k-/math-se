@@ -2,44 +2,77 @@
 #include <stdio.h>  /* for printf() */
 #include <stdlib.h> /* for free() */
 #include <string.h> /* for strdup() */
+#include "mathtree.h"
 
 void yyerror(const char *);
 char tmp[128];
+extern struct token_t *root;
 %}
 
 %union {
-	char  *s;
+	struct token_t *p;
+	char *s;
 }
 
 %error-verbose
 
-%token <s> EQ_CLASS SUM_CLASS TIMES FRAC SQRT VAR 
-%type  <s> tex factor term body script
+%token <p> EQ_CLASS SUM_CLASS TIMES FRAC SQRT 
+%token <s> VAR 
+%type  <p> tex term 
 
 %right EQ_CLASS
 %left '+' '-'
 %nonassoc NEG '!'
-%right 'P' '^' '_' 
+%right 'P' '^' '_'
 %left TIMES DIV
 %nonassoc '{' '}' '(' ')' ABS_L ABS_R
 %%
 doc :
     | doc query;
 
-query : tex '\n' { printf("%s \n", $1); };
+query : tex '\n' 
+      { 
+		matree_print(root); 
+		matree_br_word(root); 
+		matree_release(root); 
+      };
 
 tex : term 
     { 
-		$$ = strdup($1); 
-		free($1);
+		$$ = $1;
+		root = $$;
     }
     | tex '+' term 
     { 
-		sprintf(tmp, "(%s+%s)", $1, $3);
-		$$ = strdup(tmp); 
-		free($1);
-		free($3);
+		struct token_t *p = mktoken("+", MT_SUM);
+		matree_attach($1, p);
+		matree_attach($3, p);
+		$$ = p;
+		root = $$;
     }
+;
+
+term : VAR 
+       { 
+			struct token_t *p = mktoken($1, MT_VAR);
+			$$ = p;
+			root = $$;
+       }
+%%
+struct token_t *root = NULL;
+
+void yyerror(const char *ps) 
+{
+	printf("err: %s \n", ps);
+}
+
+int main() 
+{
+	yyparse();
+	return 0;
+}
+/*
+factor body script
     | tex '-' term 
     { 
 		sprintf(tmp, "(%s minus %s)", $1, $3);
@@ -252,15 +285,4 @@ script :  '_' VAR %prec 'P'
 			free($3);
        }
        ;
-%%
-
-void yyerror(const char *ps) 
-{
-	printf("err: %s \n", ps);
-}
-
-int main() 
-{
-	yyparse();
-	return 0;
-}
+*/

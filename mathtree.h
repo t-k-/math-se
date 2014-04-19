@@ -1,13 +1,13 @@
 #include "tknet.h"
 
 enum {
-	SUM,
-	TIMES,
-	VAR,
-	SQRT,
-	ABS,
-	NEG_VAR,
-	SU_SCRIPT,
+	MT_SUM,
+	MT_TIMES,
+	MT_VAR,
+	MT_SQRT,
+	MT_ABS,
+	MT_NEG_VAR,
+	MT_SU_SCRIPT,
 	UNKNOWN
 };
 
@@ -24,5 +24,7 @@ void matree_attach(struct token_t * /* son */,
 		struct token_t * /* father */); 
 
 void matree_print(struct token_t *);
+
+void matree_release(struct token_t*);
 
 void matree_br_word(struct token_t *);
