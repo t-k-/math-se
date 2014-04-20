@@ -132,7 +132,7 @@ void mkstr(char *str)
 	char *p, *tmp_str = strdup(str);
 	p = tmp_str;
 	while (*p != '\0') {
-		*p = toupper(*p);
+		*p = tolower(*p);
 		p++;
 	}
 	yylval.s = tmp_str; 

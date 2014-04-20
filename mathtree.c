@@ -7,43 +7,43 @@ static void print_type(int t_num)
 {
 	switch (t_num) {
 		case MT_EQ_CLASS:
-			printf("EQ_CLASS");
+			printf("eq_class");
 			break;
 		case MT_ADD:
-			printf("ADD");
+			printf("add");
 			break;
 		case MT_SUM_CLASS:
-			printf("SUM_CLASS");
+			printf("sum_class");
 			break;
 		case MT_TIMES:
-			printf("TIMES");
+			printf("times");
 			break;
 		case MT_FRAC:
-			printf("FRAC");
+			printf("frac");
 			break;
 		case MT_FACT:
-			printf("FACT");
+			printf("fact");
 			break;
 		case MT_VAR:
-			printf("VAR");
+			printf("var");
 			break;
 		case MT_SQRT:
-			printf("SQRT");
+			printf("sqrt");
 			break;
 		case MT_ABS:
-			printf("ABS");
+			printf("abs");
 			break;
 		case MT_NEG:
-			printf("NEG");
+			printf("neg");
 			break;
 		case MT_SU_SCRIPT:
-			printf("SUS");
+			printf("sus");
 			break;
 		case MT_EMPTY:
-			printf("EMPTY");
+			printf("empty");
 			break;
 		default :
-			printf("UNKNOWN");
+			printf("unknown");
 	}
 }
 
@@ -166,7 +166,28 @@ void matree_release(struct token_t *p)
 	tree_foreach(&p->tnd, &tree_post_order_DFS, &release, 0, NULL);
 }
 
-static
+static leaf_up_print(struct token_t *f)
+{
+	printf("branch word: ");
+
+	while (f != NULL) {
+		if (f->type == MT_SUM_CLASS)
+			printf("%s", f->name + 1);
+		else
+			print_type(f->type);
+		printf("(weight=%d)", f->weight);
+
+		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
+
+		if (f == NULL) 
+			printf(".");
+		else
+			printf(", ");
+	}
+	printf("\n");
+}
+
+	static
 TREE_IT_CALLBK(leaf_up)
 {
 	TREE_OBJ(struct token_t, p, tnd);
@@ -174,28 +195,16 @@ TREE_IT_CALLBK(leaf_up)
 	BOOL res;
 
 	if (p->tnd.sons.now == NULL) {
-		printf("branch word: ");
-
-		f = p;
-		do {
-			printf("%d ", f->weight);
-			if (f->type == MT_SUM_CLASS)
-				printf("%s", f->name);
-			else
-				print_type(f->type);
-
-			if (f->tnd.father == NULL)
-				break;
-			else
-				printf(",");
-			f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
-		} while (1);
-		
-		printf("\n");
+		f = MEMBER_2_STRUCT(p->tnd.father, struct token_t, tnd);
+		leaf_up_print(f);
 	}
 
 	LIST_GO_OVER;
 }
+
+#define LEAF_UP_PRINT
+#define LEAF_UP_WRITE_DIR
+#define LEAF_UP_WRITE_FILE
 
 void matree_br_word(struct token_t *p)
 {
