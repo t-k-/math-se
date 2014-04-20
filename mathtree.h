@@ -32,4 +32,4 @@ void matree_print(struct token_t *);
 
 void matree_release(struct token_t*);
 
-void matree_br_word(struct token_t *);
+char *matree_br_word(struct token_t *);

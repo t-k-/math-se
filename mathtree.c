@@ -3,48 +3,51 @@
 #include <string.h>
 #include "mathtree.h"
 
-static void print_type(int t_num)
+static char *str_type(int t_num)
 {
+	static char out[32];
 	switch (t_num) {
 		case MT_EQ_CLASS:
-			printf("eq_class");
+			sprintf(out, "eq_class");
 			break;
 		case MT_ADD:
-			printf("add");
+			sprintf(out, "add");
 			break;
 		case MT_SUM_CLASS:
-			printf("sum_class");
+			sprintf(out, "sum_class");
 			break;
 		case MT_TIMES:
-			printf("times");
+			sprintf(out, "times");
 			break;
 		case MT_FRAC:
-			printf("frac");
+			sprintf(out, "frac");
 			break;
 		case MT_FACT:
-			printf("fact");
+			sprintf(out, "fact");
 			break;
 		case MT_VAR:
-			printf("var");
+			sprintf(out, "var");
 			break;
 		case MT_SQRT:
-			printf("sqrt");
+			sprintf(out, "sqrt");
 			break;
 		case MT_ABS:
-			printf("abs");
+			sprintf(out, "abs");
 			break;
 		case MT_NEG:
-			printf("neg");
+			sprintf(out, "neg");
 			break;
 		case MT_SU_SCRIPT:
-			printf("sus");
+			sprintf(out, "sus");
 			break;
 		case MT_EMPTY:
-			printf("empty");
+			sprintf(out, "empty");
 			break;
 		default :
-			printf("unknown");
+			sprintf(out, "unknown");
 	}
+
+	return out;
 }
 
 /* some thing we need to print the tree nicely */ 
@@ -81,7 +84,7 @@ TREE_IT_CALLBK(print)
 	}
 
 	printf("──  %s (%d ", p->name, p->weight);
-	print_type(p->type);
+	str_type(p->type);
 	printf(")\n");
 
 	if (depth_flag[pa_depth] == depth_going_end)
@@ -166,7 +169,7 @@ void matree_release(struct token_t *p)
 	tree_foreach(&p->tnd, &tree_post_order_DFS, &release, 0, NULL);
 }
 
-static leaf_up_print(struct token_t *f)
+static void leaf_up_print(struct token_t *f)
 {
 	printf("branch word: ");
 
@@ -174,7 +177,8 @@ static leaf_up_print(struct token_t *f)
 		if (f->type == MT_SUM_CLASS)
 			printf("%s", f->name + 1);
 		else
-			print_type(f->type);
+			printf("%s", str_type(f->type));
+
 		printf("(weight=%d)", f->weight);
 
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
@@ -187,26 +191,69 @@ static leaf_up_print(struct token_t *f)
 	printf("\n");
 }
 
-	static
+static char *leaf_up_dir(struct token_t *f, char *res)
+{
+	char tmp[32];
+	sprintf(tmp, "%s", "./collection/");
+	strcat(res, tmp);
+
+	while (f != NULL) {
+		if (f->type == MT_SUM_CLASS)
+			sprintf(tmp, "%s", f->name + 1);
+		else
+			sprintf(tmp, "%s", str_type(f->type));
+
+		strcat(res, tmp);
+		
+		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
+
+		if (f != NULL) {
+			sprintf(tmp, "/");
+			strcat(res, tmp);
+		}
+	}
+
+	strcat(res, "\n");
+	return res;
+}
+
+static char *leaf_up_weight(struct token_t *f, char *res)
+{
+	char tmp[32];
+	while (f != NULL) {
+		sprintf(tmp, "%d ", f->weight);
+		strcat(res, tmp);
+		
+		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
+	}
+
+	strcat(res, "\n");
+	return res;
+}
+
+static
 TREE_IT_CALLBK(leaf_up)
 {
 	TREE_OBJ(struct token_t, p, tnd);
+	P_CAST(res_str, char, pa_extra);
 	struct token_t *f;
 	BOOL res;
 
 	if (p->tnd.sons.now == NULL) {
 		f = MEMBER_2_STRUCT(p->tnd.father, struct token_t, tnd);
 		leaf_up_print(f);
+		leaf_up_dir(f, res_str);
+		leaf_up_weight(f, res_str);
 	}
 
 	LIST_GO_OVER;
 }
 
-#define LEAF_UP_PRINT
-#define LEAF_UP_WRITE_DIR
-#define LEAF_UP_WRITE_FILE
-
-void matree_br_word(struct token_t *p)
+char *matree_br_word(struct token_t *p)
 {
-	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, NULL);
+	static char res[2048];
+	res[0] = '\0';
+	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, res);
+
+	return res;
 }

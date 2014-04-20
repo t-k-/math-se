@@ -7,6 +7,7 @@
 void yyerror(const char *);
 char tmp[128];
 extern struct token_t *root;
+extern FILE *out_f;
 
 #define SUB_CONS(_father, _sonl, _sonr) \
 	struct token_t *father = _father; \
@@ -37,10 +38,14 @@ doc :
 
 query : tex '\n' 
       { 
+		char *str;
 		matree_print(root); 
-		matree_br_word(root); 
+		str = matree_br_word(root); 
+		fprintf(out_f, "%s", str);
 		matree_release(root); 
-      };
+      }
+      | '\n' { printf("Bye!\n"); return; }
+      ;
 
 tex : term 
     { 
@@ -227,14 +232,30 @@ script :  '_' VAR %prec 'P'
        ;
 %%
 struct token_t *root = NULL;
+FILE *out_f = NULL;
 
 void yyerror(const char *ps) 
 {
 	printf("err: %s \n", ps);
 }
 
-int main() 
+int main(int argc, char *argv[]) 
 {
+	if (argc != 2) {
+		printf("please specify URL.\n");
+		return 0;
+	}
+
+	out_f = fopen( "parser" ".output", "w");
+
+	if (out_f == NULL) {
+		printf("error in generating output.\n");
+		return 0;
+	}
+
+	fprintf(out_f, "%s\n", argv[1]);
 	yyparse();
+
+	fclose(out_f);
 	return 0;
 }
