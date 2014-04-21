@@ -137,3 +137,8 @@ void mkstr(char *str)
 	}
 	yylval.s = tmp_str; 
 }
+
+char *get_lexbuff()
+{
+	return YY_CURRENT_BUFFER->yy_ch_buf;
+}

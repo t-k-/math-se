@@ -3,11 +3,14 @@
 #include <stdlib.h> /* for free() */
 #include <string.h> /* for strdup() */
 #include "mathtree.h"
+#include "inter-def.h"
 
 void yyerror(const char *);
 char tmp[128];
 extern struct token_t *root;
 extern FILE *out_f;
+extern char *get_lexbuff();
+extern char *g_url;
 
 #define SUB_CONS(_father, _sonl, _sonr) \
 	struct token_t *father = _father; \
@@ -38,11 +41,30 @@ doc :
 
 query : tex '\n' 
       { 
+		FILE *out_fbody = fopen(OUT_FBODY, "w");
+		FILE *out_fhead = fopen(OUT_FHEAD, "w");
 		char *str;
+		char cmd_buff[4096];
+
+		if (out_fhead == NULL || out_fbody == NULL) {
+			printf("error in writing to output.\n");
+			return 0;
+		}
+
 		matree_print(root); 
-		str = matree_br_word(root); 
-		fprintf(out_f, "%s", str);
+		str = matree_br_word(root);
 		matree_release(root); 
+
+		fprintf(out_fhead, "%s%s\n", get_lexbuff(), g_url);
+		fclose(out_fhead);
+
+		fprintf(out_fbody, "%s", str);
+		fclose(out_fbody);
+
+		system("cat " OUT_FBODY " | sort | uniq -c > tmp");
+		system("awk '{print $2 \" \" $1 \"X \" $3 \" \" $4 \" \" $5}' tmp > " 
+		       OUT_FBODY);
+		system("rm tmp");
       }
       | '\n' { printf("Bye!\n"); return; }
       ;
@@ -232,12 +254,13 @@ script :  '_' VAR %prec 'P'
        ;
 %%
 struct token_t *root = NULL;
-FILE *out_f = NULL;
 
 void yyerror(const char *ps) 
 {
 	printf("err: %s \n", ps);
 }
+
+char *g_url;
 
 int main(int argc, char *argv[]) 
 {
@@ -246,16 +269,9 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	out_f = fopen( "parser" ".output", "w");
+	g_url = argv[1];
 
-	if (out_f == NULL) {
-		printf("error in generating output.\n");
-		return 0;
-	}
-
-	fprintf(out_f, "%s\n", argv[1]);
 	yyparse();
 
-	fclose(out_f);
 	return 0;
 }

@@ -213,7 +213,7 @@ static char *leaf_up_dir(struct token_t *f, char *res)
 		}
 	}
 
-	strcat(res, "\n");
+	strcat(res, " ");
 	return res;
 }
 
@@ -221,29 +221,34 @@ static char *leaf_up_weight(struct token_t *f, char *res)
 {
 	char tmp[32];
 	while (f != NULL) {
-		sprintf(tmp, "%d ", f->weight);
+		sprintf(tmp, "%d-", f->weight);
 		strcat(res, tmp);
 		
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
 	}
 
-	strcat(res, "\n");
+	strcat(res, " ");
 	return res;
 }
+
+struct br_word_arg {
+	char *res;
+	char *lexbuff;
+	char *url;
+};
 
 static
 TREE_IT_CALLBK(leaf_up)
 {
 	TREE_OBJ(struct token_t, p, tnd);
 	P_CAST(res_str, char, pa_extra);
-	struct token_t *f;
 	BOOL res;
 
-	if (p->tnd.sons.now == NULL) {
-		f = MEMBER_2_STRUCT(p->tnd.father, struct token_t, tnd);
-		leaf_up_print(f);
-		leaf_up_dir(f, res_str);
-		leaf_up_weight(f, res_str);
+	if (p->tnd.sons.now == NULL /* is leaf */ ) {
+		leaf_up_print(p);
+		leaf_up_dir(p, res_str);
+		leaf_up_weight(p, res_str);
+		strcat(res_str, "\n");
 	}
 
 	LIST_GO_OVER;
@@ -253,6 +258,7 @@ char *matree_br_word(struct token_t *p)
 {
 	static char res[2048];
 	res[0] = '\0';
+
 	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, res);
 
 	return res;
