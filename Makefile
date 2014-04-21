@@ -31,3 +31,4 @@ parse = bison --verbose --report=itemset -d $^
 
 clean:
 	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree
+	rm -rf collection
