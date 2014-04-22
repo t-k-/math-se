@@ -1,8 +1,10 @@
 PARSER=ma-pa
+SEARCHER=ma-se
 CFLAGS=-I ./inc -L . 
 CC=gcc $(CFLAGS)
 
-all: $(PARSER) test-tree
+all: $(PARSER) $(SEARCHER) test-tree 
+	chmod +x ./co-in
 
 mathtree.a: tree.o list.o mathtree.o
 	ar rcs libmathtree.a $^
@@ -12,6 +14,9 @@ test-tree: test-tree.c mathtree.a
 
 $(PARSER): $(PARSER).tab.o lex.yy.o mathtree.a
 	$(CC) $(PARSER).tab.o lex.yy.o -lmathtree -lmcheck -lfl -o $@ 
+
+$(SEARCHER): $(SEARCHER).c
+	$(CC) $^ -o $@
 
 %.tab.o: %.tab.c
 	$(CC) -c $^ -o $@
@@ -30,5 +35,5 @@ parse = bison --verbose --report=itemset -d $^
 	$(parse) 2>&1 | grep --color conflicts || $(parse) 
 
 clean:
-	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree
+	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy
 	rm -rf collection

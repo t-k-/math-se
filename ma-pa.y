@@ -6,7 +6,6 @@
 #include "inter-def.h"
 
 void yyerror(const char *);
-char tmp[128];
 extern struct token_t *root;
 extern FILE *out_f;
 extern char *get_lexbuff();
