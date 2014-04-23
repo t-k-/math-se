@@ -35,5 +35,5 @@ parse = bison --verbose --report=itemset -d $^
 	$(parse) 2>&1 | grep --color conflicts || $(parse) 
 
 clean:
-	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy
+	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy $(SEARCHER)
 	rm -rf collection
