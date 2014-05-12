@@ -5,6 +5,7 @@ CC=gcc $(CFLAGS)
 
 all: $(PARSER) $(SEARCHER) test-tree 
 	chmod +x ./co-in
+	ctags --langmap=c:.c.y -R ./*
 
 mathtree.a: tree.o list.o mathtree.o
 	ar rcs libmathtree.a $^
@@ -15,8 +16,8 @@ test-tree: test-tree.c mathtree.a
 $(PARSER): $(PARSER).tab.o lex.yy.o mathtree.a
 	$(CC) $(PARSER).tab.o lex.yy.o -lmathtree -lmcheck -lfl -o $@ 
 
-$(SEARCHER): $(SEARCHER).c
-	$(CC) $^ -o $@
+$(SEARCHER): $(SEARCHER).c mathtree.a
+	$(CC) $(word 1, $^) -lmathtree -o $@
 
 %.tab.o: %.tab.c
 	$(CC) -c $^ -o $@
@@ -35,5 +36,5 @@ parse = bison --verbose --report=itemset -d $^
 	$(parse) 2>&1 | grep --color conflicts || $(parse) 
 
 clean:
-	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy $(SEARCHER)
+	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy score tags rank $(SEARCHER)
 	rm -rf collection
