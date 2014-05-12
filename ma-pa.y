@@ -40,7 +40,7 @@ doc :
 
 query : tex '\n' 
       { 
-		FILE *out_fbody = fopen(OUT_FBODY, "w");
+		FILE *out_fbody = fopen("tmp0", "w");
 		FILE *out_fhead = fopen(OUT_FHEAD, "w");
 		char *str;
 		char cmd_buff[4096];
@@ -60,10 +60,11 @@ query : tex '\n'
 		fprintf(out_fbody, "%s", str);
 		fclose(out_fbody);
 
-		system("cat " OUT_FBODY " | sort | uniq -c > tmp");
-		system("awk '{print $2 \" \" $1 \"X \" $3 \" \" $4 \" \" $5}' tmp > " 
+		system("cat tmp0 | sort | uniq -c > tmp1");
+		system("awk '{print $2 \" \" $1 \"X \" $3 \" \" $4 \" \" $5}' tmp1 >> " 
 		       OUT_FBODY);
-		system("rm tmp");
+		system("rm tmp0");
+		system("rm tmp1");
       }
       | '\n' { printf("Bye!\n"); return; }
       ;
@@ -263,6 +264,8 @@ char *g_url;
 
 int main(int argc, char *argv[]) 
 {
+	system("> " OUT_FBODY);
+	
 	if (argc != 2) {
 		printf("please specify URL.\n");
 		return 0;
