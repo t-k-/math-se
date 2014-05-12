@@ -66,7 +66,7 @@ query : tex '\n'
 		system("rm tmp0");
 		system("rm tmp1");
       }
-      | '\n' { printf("Bye!\n"); return; }
+      | '\n' { printf("Don't forget to run ./co-in, bye!\n"); return; }
       ;
 
 tex : term 
@@ -264,6 +264,8 @@ char *g_url;
 
 int main(int argc, char *argv[]) 
 {
+
+	printf("Content-type: text/html\n\n");
 	system("> " OUT_FBODY);
 	
 	if (argc != 2) {

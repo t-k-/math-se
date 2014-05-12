@@ -19,7 +19,6 @@ int main()
 
 	scanf("%s", arg);
 
-	printf("Content-type: text/html\n\n");
 	printf("raw: %s <br/>", arg);
 	
 	replace_plus(arg);
@@ -29,5 +28,6 @@ int main()
 	unescape = curl_easy_unescape(curl, arg, 0, NULL);
 	printf("escaped: %s", unescape);
 
+	system("./ma-se 'a+b'");
 	return 0;
 }

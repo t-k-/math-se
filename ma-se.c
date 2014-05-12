@@ -257,7 +257,7 @@ int main(int argc, const char *argv[])
 	fprintf(fquery, "%s\n", argv[1]);
 	fclose(fquery);
 
-	system("rm " OUT_FBODY);
+	system("rm -f " OUT_FBODY);
 	system("./ma-pa null < query");
 
 	fbody = fopen(OUT_FBODY, "r");
@@ -276,7 +276,7 @@ int main(int argc, const char *argv[])
 		printf("under %s:\n", dir_str);
 
 		sprintf(tmp_str, "test -d %s", dir_str);
-		if (system(tmp_str) != 0 /* test return 0 */) {
+		if (system(tmp_str) != 0) {
 			printf("%s\n", "branch word not found.");
 			continue;
 		}
