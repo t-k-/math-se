@@ -83,6 +83,7 @@ void mkstr(char *);
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\ldots         { mkstr(yytext); return VAR; }
+\\cdots         { mkstr(yytext); return VAR; }
 [0-9]+\.?[0-9]* { mkstr(yytext); return VAR; } 
 \\partial       { mkstr(yytext); return VAR; } 
 \\alpha         { mkstr(yytext); return VAR; } 
