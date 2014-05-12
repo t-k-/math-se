@@ -3,9 +3,10 @@ SEARCHER=ma-se
 CFLAGS=-I ./inc -L . 
 CC=gcc $(CFLAGS)
 
-all: $(PARSER) $(SEARCHER) test-tree 
+all: $(PARSER) $(SEARCHER)
 	chmod +x ./co-in
 	ctags --langmap=c:.c.y -R ./*
+	make -C ./httpd
 
 mathtree.a: tree.o list.o mathtree.o
 	ar rcs libmathtree.a $^
@@ -38,3 +39,4 @@ parse = bison --verbose --report=itemset -d $^
 clean:
 	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy score tags rank $(SEARCHER)
 	rm -rf collection
+	make clean -C ./httpd
