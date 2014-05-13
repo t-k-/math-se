@@ -71,22 +71,22 @@ TREE_IT_CALLBK(print)
 	for (i = 0; i<pa_depth; i++) {
 		switch (depth_flag[i + 1]) {
 		case depth_end:
-			printf("   ");
+			OUTPUT("   ");
 			break;
 		case depth_begin:
-			printf("  |");
+			OUTPUT("  |");
 			break;
 		case depth_going_end:
-			printf("  └");
+			OUTPUT("  └");
 			break;
 		default:
 			break;
 		}
 	}
 
-	printf("──  %s (%d ", p->name, p->weight);
+	OUTPUT("──  %s (%d ", p->name, p->weight);
 	str_type(p->type);
-	printf(")\n");
+	OUTPUT(")\n");
 
 	if (depth_flag[pa_depth] == depth_going_end)
 		depth_flag[pa_depth] = depth_end;
@@ -101,7 +101,6 @@ TREE_IT_CALLBK(release)
 	TREE_OBJ(struct token_t, p, tnd);
 	BOOL res;
 
-	//printf("release %s \n", p->name);
 	res = tree_detach(&p->tnd, pa_now, pa_fwd);
 	free(p->name);
 	free(p);
@@ -119,7 +118,6 @@ LIST_IT_CALLBK(son_pass)
 	if (gf == NULL)
 		return LIST_RET_BREAK;
 
-	//printf("attach %s to %s\n", son->name, gf->name);
 	res = tree_detach(&son->tnd, pa_now, pa_fwd);
 	tree_attach(&son->tnd, &gf->tnd, pa_now, pa_fwd);
 
@@ -139,7 +137,6 @@ void matree_attach(struct token_t *s /* son */,
 
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
-		//printf("free %s \n", s->name);
 		free(s->name);
 		free(s);
 
@@ -172,24 +169,24 @@ void matree_release(struct token_t *p)
 
 static void leaf_up_print(struct token_t *f)
 {
-	printf("branch word: ");
+	OUTPUT("branch word: ");
 
 	while (f != NULL) {
 		if (f->type == MT_SUM_CLASS)
-			printf("%s", f->name + 1);
+			OUTPUT("%s", f->name + 1);
 		else
-			printf("%s", str_type(f->type));
+			OUTPUT("%s", str_type(f->type));
 
-		printf("(w=%d)", f->weight);
+		OUTPUT("(w=%d)", f->weight);
 
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
 
 		if (f == NULL) 
-			printf(".");
+			OUTPUT(".");
 		else
-			printf(", ");
+			OUTPUT(", ");
 	}
-	printf("\n");
+	OUTPUT("\n");
 }
 
 static char *leaf_up_dir(struct token_t *f, char *res)

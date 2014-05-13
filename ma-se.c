@@ -28,11 +28,11 @@ typedef struct {
 void print_bwd(br_wd_t *bwd)
 {
 	unsigned int i;
-	printf("num=%d, length=%d, weight=[", bwd->num, bwd->len);
+	OUTPUT("num=%d, length=%d, weight=[", bwd->num, bwd->len);
 	for (i = 0; bwd->w[i] != 0; i++) {
-		printf("%d ", bwd->w[i]);
+		OUTPUT("%d ", bwd->w[i]);
 	}
-	printf("]\n");
+	OUTPUT("]\n");
 }
 
 void str2bwd(char *str, br_wd_t *out)
@@ -98,14 +98,13 @@ static
 LIST_IT_CALLBK(_print_rank)
 {
 	LIST_OBJ(rank_doc, p, ln);
-	P_CAST(fp, FILE, pa_extra);
 	char cmd[STR_BUFLEN];
 
 	sprintf(cmd, "cat %s/%s >> rank", p->dir_str, 
 			p->doc_str);
 	system(cmd);
 
-	fprintf(fp, "score=%d: %s/%s\n", p->score, 
+	OUTPUT("score=%d: %s/%s\n", p->score, 
 			p->dir_str, p->doc_str);
 	LIST_GO_OVER;
 }
@@ -147,9 +146,9 @@ LIST_IT_CALLBK(_update_exist)
 	LIST_GO_OVER;
 }
 
-void rl_print(struct list_it *li, FILE *fp)
+void rl_print(struct list_it *li)
 {
-	list_foreach(li, &_print_rank, fp);
+	list_foreach(li, &_print_rank, NULL);
 }
 
 int rl_insert(struct list_it *li, int score, char *dir, char *doc)
@@ -193,10 +192,10 @@ void candy2rank(char *bwd_str, struct list_it *rank_list)
 	br_wd_t query, doc;
 	str2bwd(bwd_str, &query);
 			
-	printf(BOLDCYAN);
-	printf("query branch word: ");
+	OUTPUT(BOLDCYAN);
+	OUTPUT("query branch word: ");
 	print_bwd(&query);
-	printf(ANSI_COLOR_RST);
+	OUTPUT(ANSI_COLOR_RST);
 
 	if (fcandy == NULL)
 		return;
@@ -209,13 +208,13 @@ void candy2rank(char *bwd_str, struct list_it *rank_list)
 			sscanf(tmp_str, "%s %s\n", bwd_str, doc_str);
 			str2bwd(bwd_str, &doc);
 
-			printf(BOLDMAGENTA);
-			printf("doc branch word: ");
+			OUTPUT(BOLDMAGENTA);
+			OUTPUT("doc branch word: ");
 			print_bwd(&doc);
-			printf(ANSI_COLOR_RST);
+			OUTPUT(ANSI_COLOR_RST);
 
 			m = bwd_w_match(&query, &doc);
-			printf("weight matches m=%d\n", m);
+			OUTPUT("weight matches m=%d\n", m);
 			
 			pre_score = (float)min(doc.num, query.num) *
 				(float)m/(float)query.len;
@@ -226,7 +225,7 @@ void candy2rank(char *bwd_str, struct list_it *rank_list)
 			
 			score = pre_score * 100.f + sub_score * 100.f;
 
-			printf("score=%d.\n", score);
+			OUTPUT("score=%d.\n", score);
 			rl_insert(rank_list, score, dir_str, doc_str);
 		}
 	}
@@ -245,12 +244,12 @@ int main(int argc, const char *argv[])
 	struct list_it rank_list = LIST_NULL;
 
 	if (fquery == NULL) {
-		printf("cannot open file for writing.\n");
+		OUTPUT("cannot open file for writing.\n");
 		return 0;
 	}
 
 	if (argc != 2) {
-		printf("no query argument.\n");
+		OUTPUT("no query argument.\n");
 		return 0;
 	}
 
@@ -263,37 +262,47 @@ int main(int argc, const char *argv[])
 	fbody = fopen(OUT_FBODY, "r");
 
 	if (fbody == NULL) {
-		printf("bad query.\n");
+		OUTPUT("cannot open file for reading.\n");
 		return 0;
 	}
 
-	printf("query: \n");
+	OUTPUT("query: \n");
+#ifdef _MY_DEBUG
 	system("cat " OUT_FBODY);
+#endif
 
 	system("> candy");
 	while (fgets(tmp_str, sizeof(tmp_str), fbody)) {
 		sscanf(tmp_str, "%s %s %s\n", dir_str, num_str, bwd_str);
-		printf("under %s:\n", dir_str);
+		OUTPUT("under %s:\n", dir_str);
 
 		sprintf(tmp_str, "test -d %s", dir_str);
 		if (system(tmp_str) != 0) {
-			printf("%s\n", "branch word not found.");
+			OUTPUT("%s\n", "branch word not found.");
 			continue;
 		}
 
+#ifdef _MY_DEBUG
 		sprintf(tmp_str, "find %s -name 'posting' "
 		                 "-exec echo referred_by {} \\; "
 		                 "-exec cat {} \\; "
 		                 "| tee candy", dir_str);
+#else
+		sprintf(tmp_str, "find %s -name 'posting' "
+		                 "-exec echo referred_by {} \\; "
+		                 "-exec cat {} \\; "
+		                 "> candy", dir_str);
+#endif
+
 		system(tmp_str);
 
 		sprintf(tmp_str, "%s%s", num_str, bwd_str);
 		candy2rank(tmp_str, &rank_list);
 	}
 
-	printf("writing rank file...\n");
+	OUTPUT("writing rank file...\n");
 	system("> rank");
-	rl_print(&rank_list, stdout);
+	rl_print(&rank_list);
 	rl_release(&rank_list);
 	
 	fclose(fbody);

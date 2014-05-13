@@ -46,7 +46,7 @@ query : tex '\n'
 		char cmd_buff[4096];
 
 		if (out_fhead == NULL || out_fbody == NULL) {
-			printf("error in writing to output.\n");
+			OUTPUT("error in writing to output.\n");
 			return 0;
 		}
 
@@ -66,7 +66,7 @@ query : tex '\n'
 		system("rm tmp0");
 		system("rm tmp1");
       }
-      | '\n' { printf("Don't forget to run ./co-in, bye!\n"); return; }
+      | '\n' { OUTPUT("Don't forget to run ./co-in, bye!\n"); return; }
       ;
 
 tex : term 
@@ -257,19 +257,20 @@ struct token_t *root = NULL;
 
 void yyerror(const char *ps) 
 {
-	printf("err: %s \n", ps);
+	OUTPUT("err: %s \n", ps);
 }
 
 char *g_url;
 
 int main(int argc, char *argv[]) 
 {
-
+#ifndef _MY_DEBUG
 	printf("Content-type: text/html\n\n");
+#endif
 	system("> " OUT_FBODY);
 	
 	if (argc != 2) {
-		printf("please specify URL.\n");
+		OUTPUT("please specify URL.\n");
 		return 0;
 	}
 
