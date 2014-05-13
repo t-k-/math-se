@@ -17,30 +17,22 @@ int main()
 
 	CURL *curl;
 	char *unescape;
+	char *get_str;
 	char arg[2048];
 	char cmd[2048];
 	char line[4096];
 	FILE *f_rank = NULL;
+	printf("Content-type: text/html\n\n");
 
 	scanf("%s", arg);
+	get_str = getenv("QUERY_STRING");
 	
+	printf("get: %s </br>", get_str);
+	printf("post: %s </br>", arg);
+
 	replace_plus(arg);
 	curl = curl_easy_init();
 	unescape = curl_easy_unescape(curl, arg, 0, NULL);
-
-	printf("Content-type: text/html\n\n");
-	printf("<html><head><style>"
-			"div.container { "
-			"height:150px;"
-			"position:absolute;"
-			"left:50%%;"
-			"top:50%%;"
-			"margin: 0 0 0 -240px;"
-			"}"
-			"</style>"
-			"</head>"
-			"<body>"
-			"<div class=\"container\" align=\"center\">");
 
 	sprintf(arg, "%s", unescape);
 	arg[0] = ' ';
