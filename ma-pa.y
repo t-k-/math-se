@@ -265,7 +265,7 @@ char *g_url;
 int main(int argc, char *argv[]) 
 {
 #ifndef _MY_DEBUG
-	printf("Content-type: text/html\n\n");
+	//printf("Content-type: text/html\n\n");
 #endif
 	system("> " OUT_FBODY);
 	

@@ -1,4 +1,4 @@
-search_page = search.bin
+search_page = result.bin
 
 $(search_page): httpd.c search.html
 	gcc $< -lcurl -L . -I ./include -o $@
@@ -9,4 +9,4 @@ $(search_page): httpd.c search.html
 	cp ../ma-se /var/www/cgi/
 
 clean:
-	rm -f $(search_page)
+	rm -f *.bin
