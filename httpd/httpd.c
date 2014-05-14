@@ -51,6 +51,8 @@ int main()
 {
 	CURL *curl;
 	char *unescape;
+	int results = 0;
+	int fail = 0;
 	char *get_str;
 	char arg[2048];
 	char cmd[2048];
@@ -85,15 +87,16 @@ int main()
 
 	if (start == 0) {
 		sprintf(cmd, "./ma-se '%s'", arg);
-		system(cmd);
+		fail = system(cmd);
 		start = 1;
 	} 
 
 	cat("head.cat");
 	printf("%s", arg);
 	printf("\\Big\\}[/imath]</h2>");
+	results = wc_l("rank");
 	printf("<p>%d result(s) in total, %d per page...</p>", 
-			wc_l("rank") >> 1, RES_PER_PAGE);
+			 results >> 1, RES_PER_PAGE);
 	
 	cat("neck.cat");
 
@@ -101,6 +104,14 @@ int main()
 	if (f_rank == NULL) {
 		printf("no thing we can find :( <br/>");
 		return 0;
+	}
+
+	if (fail) {
+		printf("<li><h1>query syntax error. X_X </h1></li>\n");
+		exit(1);
+	} else if (results == 0) {
+		printf("<li><h1>we have tried our best... </h1></li>\n");
+		exit(1);
 	}
 
 	end_flag = 0;

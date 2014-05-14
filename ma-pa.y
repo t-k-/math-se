@@ -258,6 +258,7 @@ struct token_t *root = NULL;
 void yyerror(const char *ps) 
 {
 	OUTPUT("err: %s \n", ps);
+	exit(1);
 }
 
 char *g_url;

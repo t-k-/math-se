@@ -226,6 +226,7 @@ void candy2rank(char *bwd_str, struct list_it *rank_list)
 int main(int argc, const char *argv[])
 {
 	FILE *fquery = fopen("query", "w");
+	int res;
 	FILE *fbody;
 	char tmp_str[STR_BUFLEN];
 	char dir_str[STR_BUFLEN];
@@ -247,7 +248,12 @@ int main(int argc, const char *argv[])
 	fclose(fquery);
 
 	system("rm -f " OUT_FBODY);
-	system("./ma-pa null < query");
+	res = system("./ma-pa null < query");
+
+	if (res != 0) {
+		OUTPUT("parser has an error.\n");
+		exit(1);
+	}
 
 	fbody = fopen(OUT_FBODY, "r");
 
