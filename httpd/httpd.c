@@ -36,6 +36,7 @@ int main()
 	char arg[2048];
 	char cmd[2048];
 	char line[4096];
+	int toggle = 0;
 	int start;
 	FILE *f_rank = NULL;
 	printf("Content-type: text/html\n\n");
@@ -64,22 +65,20 @@ int main()
 				start, start + 10);
 	}
 
-	cat("dog");
-	printf("rank: </br>");
+	cat("head.cat");
 	f_rank = fopen("rank", "r");
 	if (f_rank == NULL) {
 		printf("no thing we can find :( <br/>");
+		return 0;
 	}
 
 	while (fscanf(f_rank, "%s\n", line) != EOF) {
 		printf("[%s]</br>", line);
+		toggle = (toggle + 1) % 2;
 	}
-
-	printf( "</div>"
-			"</body>"
-			"</html>");
 	
 	fclose(f_rank);
+	cat("tail.cat");
 
 	return 0;
 }
