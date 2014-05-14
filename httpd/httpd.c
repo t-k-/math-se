@@ -4,6 +4,8 @@
 #include <string.h>
 #include "../inter-def.h"
 
+#define RES_PER_PAGE 10
+
 void cat(char *file)
 {
 	size_t len = 0;
@@ -30,7 +32,6 @@ void replace_plus(char *str)
 
 int main()
 {
-
 	CURL *curl;
 	char *unescape;
 	char *get_str;
@@ -39,9 +40,10 @@ int main()
 	char *line;
 	char last_line[4096];
 	size_t len = 0;
-	int toggle = 0;
+	int cnt = 0;
 	int start;
 	FILE *f_rank = NULL;
+	int end_flag;
 	printf("Content-type: text/html\n\n");
 
 	scanf("%s", arg);
@@ -54,26 +56,21 @@ int main()
 
 	sscanf(get_str, "s=%d", &start);
 
+	replace_plus(arg);
+	curl = curl_easy_init();
+	unescape = curl_easy_unescape(curl, arg, 0, NULL);
+
+	sprintf(arg, "%s", unescape);
+	unescape[0] = ' ';
+	unescape[1] = ' ';
+	strcpy(arg, unescape);
+	free(unescape);
+
 	if (start == 0) {
-		replace_plus(arg);
-		curl = curl_easy_init();
-		unescape = curl_easy_unescape(curl, arg, 0, NULL);
-
-		sprintf(arg, "%s", unescape);
-		unescape[0] = ' ';
-		unescape[1] = ' ';
-
-		sprintf(cmd, "./ma-se '%s'", unescape);
+		sprintf(cmd, "./ma-se '%s'", arg);
 		system(cmd);
-
-		/* printf("<h3>results of query %s (%d to %d):</h3>", 
-				unescape, start, start + 10); */
-		strcpy(arg, unescape);
-		free(unescape);
-	} else {
-		/* printf("<h3>results (%d to %d):</h3>", 
-				start, start + 10); */
-	}
+		start = 1;
+	} 
 
 	cat("head.cat");
 	printf("[imath] \\quad %s [/imath] : </p><hr class=\"rgsep\">"
@@ -85,22 +82,46 @@ int main()
 		return 0;
 	}
 
+	end_flag = 0;
 	while (getline(&line, &len, f_rank) != -1) {
-		if (toggle == 0) {
-			strcpy(last_line, line);
-		} else {
-			printf("<li><table border=\"0\"><tr><td><a href=%s"
-					"><h3>%s</h3></a><span style=\"color:green;\">"
-					"%s</span></td><td>[dmath]%s"
-					"[/dmath]</td></tr></table></li>",
-					line, last_line, line, last_line);
+		if (cnt / 2 >= start + RES_PER_PAGE - 1)
+			goto quit;
+
+		if (cnt >= 2 * (start - 1)) {
+			if (cnt % 2 == 0) {
+				strcpy(last_line, line);
+			} else {
+				printf("<li><table border=\"0\"><tr><td><a href=%s"
+						"><h3>%s</h3></a><span style=\"color:green;\">"
+						"%s</span></td><td>[dmath]%s"
+						"[/dmath]</td></tr></table></li>",
+						line, last_line, line, last_line);
+			}
 		}
 
-		toggle = (toggle + 1) % 2;
+		cnt ++;
 	}
+	end_flag = 1;
+
+quit:
 	free(line);
 	
 	fclose(f_rank);
+	cat("ass.cat");
+
+	printf(
+  "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
+  "name=\"my_pr\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
+   "</form>", 123, arg);
+
+	printf(
+  "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
+  "name=\"my_ne\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
+  "</form>", 321, arg);
+
+	cat("previous.cat");
+	printf("</td><td>");
+	cat("next.cat");
 	cat("tail.cat");
 
 	return 0;

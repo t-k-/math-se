@@ -118,9 +118,20 @@ https://www.google.com
 </td></tr></table></li>
 
 </ul><hr class="rgsep"><div style="width:300px;height:60px;"><table><tr><td>
-<a href="http://abc.com">&lt;&lt;previous page</a>
+
+<form action="/cgi/result.bin?s=2" method="post" name="my_pr">
+  <input type="hidden" name="q" value="this is my POST data 1">
+</form>
+<form action="/cgi/result.bin?s=3" method="post" name="my_ne">
+  <input type="hidden" name="q" value="this is my POST data 2">
+</form>
+
+<a href="#" onclick="document.my_pr.submit();">&lt;&lt;previous page</a>
+
 </td><td>
-<a href="http://abe.com">next page&gt;&gt;</a>
+
+<a href="#" onclick="document.my_ne.submit();">next page&gt;&gt;</a>
+
 </td> 
 </table>
 </div>
