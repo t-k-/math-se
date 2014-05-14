@@ -2,7 +2,7 @@
 <head>
 <style>
 div.container {
-	margin: 0 0 0 300px; 
+	margin: 0 0 0 360px; 
 	position:absolute;
 	top: 30%;
 }
@@ -82,8 +82,9 @@ function update(obj)
 <div class="mathman"><img src="mathman.jpg"/></div>
 <div class="container" align="center">
 <img src="math.png"/>
+<div style="height:35px;"></div>
 <form action="/cgi/result.bin?s=0" method="post">
-    <input class="in" type="text" name="q" size="50" onkeyup="update(this);" onfocus="update(this);"></input>
+    <input class="in" type="text" name="q" size="40" onkeyup="update(this);" onfocus="update(this);"></input>
     <input class="in" type=submit value="search">
 <form>
 </div>
