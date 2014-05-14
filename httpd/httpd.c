@@ -21,6 +21,23 @@ void cat(char *file)
 	fclose(f);
 }
 
+int wc_l(char *file)
+{
+	size_t len = 0;
+	int cnt = 0;
+	char *line = NULL;
+	FILE *f = fopen(file, "r");
+	if (f == NULL)
+		return 0;
+
+	while (getline(&line, &len, f) != -1) 
+		cnt ++;
+	free(line);
+
+	fclose(f);
+	return cnt;
+}
+
 void replace_plus(char *str)
 {
 	while (str[0] != '\0') {
@@ -109,19 +126,23 @@ quit:
 	fclose(f_rank);
 	cat("ass.cat");
 
+	printf("<span class=\"cnt_%d_endflag_%d\"></span>", cnt, end_flag);
+
 	printf(
   "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
   "name=\"my_pr\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
-   "</form>", 123, arg);
+   "</form>", max(1, start - 10), arg);
 
 	printf(
   "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
   "name=\"my_ne\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
-  "</form>", 321, arg);
+  "</form>", cnt/2 + 1, arg);
 
-	cat("previous.cat");
+	if (start > 1)
+		cat("previous.cat");
 	printf("</td><td>");
-	cat("next.cat");
+	if (!end_flag)
+		cat("next.cat");
 	cat("tail.cat");
 
 	return 0;

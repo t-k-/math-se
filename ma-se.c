@@ -61,16 +61,6 @@ void str2bwd(char *str, br_wd_t *out)
 	out->w[cnt] = 0;
 }
 
-__inline int max(int a, int b)
-{
-	return (a>b)?a:b;
-}
-
-__inline int min(int a, int b)
-{
-	return (a<b)?a:b;
-}
-
 int bwd_w_match(br_wd_t *bwd0, br_wd_t *bwd1)
 {
 	int i, l_min = min(bwd0->len, bwd1->len);

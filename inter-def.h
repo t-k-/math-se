@@ -11,3 +11,13 @@
 #else
 #define OUTPUT(...)
 #endif
+
+static __inline int max(int a, int b)
+{
+	return (a>b)?a:b;
+}
+
+static __inline int min(int a, int b)
+{
+	return (a<b)?a:b;
+}
