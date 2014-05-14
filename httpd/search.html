@@ -2,25 +2,57 @@
 <head>
 <style>
 div.container {
-	height:150px;
+	margin: 0 0 0 300px; 
 	position:absolute;
-	left:46%;
-	top:30%;
-	margin: 0 0 0 -280px;
-}
-
-div.con_top {
-	height:150px;
-	position:absolute;
-	left:50%;
-	top:10%;
-	margin: 0 0 0 -280px;
+	top: 30%;
 }
 
 input.in {
 	height:30px;
 	font-size:14pt;
 }
+
+div.mathman {
+position:absolute;
+z-index:-1;
+}
+
+div.bubble0 {
+border-radius: 50%;
+position:absolute;
+z-index:888;
+margin-top:120px;
+margin-left:150px;
+border-color:#C1C1C1;
+border-width:5px;	
+border-style:solid;
+padding: 4px 10px 4px 10px;
+}
+
+div.bubble1 {
+border-radius: 50%;
+position:absolute;
+z-index:888;
+margin-top:90px;
+margin-left:200px;
+border-color:#C1C1C1;
+border-width:5px;	
+border-style:solid;
+padding: 10px 20px 10px 20px;
+}
+
+div.top {
+border-radius: 50%;
+position:absolute;
+z-index:999;
+margin-top:10px;
+margin-left:250px;
+border-color:#C1C1C1;
+border-width:5px;	
+border-style:solid;
+padding: 20px 20px 20px 20px;
+}
+
 </style>
 <script type="text/x-mathjax-config"> 
 MathJax.Hub.Config({ 
@@ -44,13 +76,12 @@ function update(obj)
 </script>
 </head>
 <body>
-<div style="margin-bottom:15px;margin-right:60px;" class="con_top">
-<h2 id="preview">Input Any Magic!</h2>
-</div>
+<div class="top"><span id="preview"><h1>Input Any Magic!</h1></span></div>
+<div class="bubble0"></div>
+<div class="bubble1"></div>
+<div class="mathman"><img src="mathman.jpg"/></div>
 <div class="container" align="center">
-<div style="margin-bottom:20px;margin-right:60px;">
 <img src="math.png"/>
-</div>
 <form action="/cgi/result.bin?s=0" method="post">
     <input class="in" type="text" name="q" size="50" onkeyup="update(this);" onfocus="update(this);"></input>
     <input class="in" type=submit value="search">

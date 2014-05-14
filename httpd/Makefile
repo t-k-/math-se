@@ -10,6 +10,8 @@ $(search_page): httpd.c search.html template.html
 	cp ./*.html /var/www/html/
 	cp ./*.png /var/www/html/
 	cp ./*.png /var/www/cgi/
+	cp ./*.jpg /var/www/html/
+	cp ./*.jpg /var/www/cgi/
 
 clean:
 	rm -f *.bin
