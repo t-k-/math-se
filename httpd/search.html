@@ -5,15 +5,49 @@ div.container {
 	height:150px;
 	position:absolute;
 	left:50%;
-	top:40%;
+	top:30%;
+	margin: 0 0 0 -280px;
+}
+
+div.con_top {
+	height:150px;
+	position:absolute;
+	left:50%;
+	top:10%;
 	margin: 0 0 0 -280px;
 }
 </style>
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+        tex2jax: { 
+                inlineMath: [['[imath]','[/imath]']], 
+                displayMath: [['[dmath]','[/dmath]']] 
+        }, 
+}); 
+</script> 
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+function update(obj)
+{
+	var text = obj.value;
+	document.getElementById('preview').innerHTML = "[dmath]" + text + "[/dmath]";
+
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+</script>
 </head>
 <body>
+<div style="margin-bottom:20px;margin-right:60px;" class="con_top">
+<h2 id="preview">input your formula!</h2>
+</div>
 <div class="container" align="center">
+<div style="margin-bottom:20px;margin-right:60px;">
+<h1>Math Search</h1>
+</div>
 <form action="/cgi/result.bin?s=0" method="post">
-    <input type="text" name="q" size="50"></input>
+    <input type="text" name="q" size="50" onkeyup="update(this);" onfocus="update(this);"></input>
     <input type=submit value="search">
 <form>
 </div>
