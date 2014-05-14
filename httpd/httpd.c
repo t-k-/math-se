@@ -90,8 +90,12 @@ int main()
 	} 
 
 	cat("head.cat");
-	printf("[imath] \\quad %s [/imath] : </p><hr class=\"rgsep\">"
-			"<ul style=\"list-style-type: none;\">", arg);
+	printf("%s", arg);
+	printf("\\Big\\}[/imath]</h2>");
+	printf("<p>%d result(s) in total, %d per page...</p>", 
+			wc_l("rank") >> 1, RES_PER_PAGE);
+	
+	cat("neck.cat");
 
 	f_rank = fopen("rank", "r");
 	if (f_rank == NULL) {
@@ -126,12 +130,12 @@ quit:
 	fclose(f_rank);
 	cat("ass.cat");
 
-	printf("<span class=\"cnt_%d_endflag_%d\"></span>", cnt, end_flag);
+	//printf("<span class=\"cnt_%d_endflag_%d\"></span>", cnt, end_flag);
 
 	printf(
   "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
   "name=\"my_pr\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
-   "</form>", max(1, start - 10), arg);
+   "</form>", max(1, start - RES_PER_PAGE), arg);
 
 	printf(
   "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
