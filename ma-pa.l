@@ -75,6 +75,7 @@ void mkstr(char *);
 \\cdot          { mkstr(yytext); return TIMES; }
 
 \\frac          { mkstr(yytext); return FRAC; }
+\\dfrac         { mkstr(yytext); return FRAC; }
 
 \\sqrt          { mkstr(yytext); return SQRT; }
 
