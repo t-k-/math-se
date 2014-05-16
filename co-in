@@ -5,7 +5,7 @@ do
 	dir=`echo $line | awk '{print $1}'`
 	br_wd=`echo $line | awk '{print $2 $3}'`
 	mkdir -p $dir
-	echo $ref
 	cp head.output $dir/$ref
 	echo $br_wd " " $ref >> $dir/posting
+	echo "record $ref @@ $dir/posting..."
 done
