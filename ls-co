@@ -11,3 +11,4 @@ cat tmp3 | while read -d $'\n' line
 do
 	find ./collection -name "$line" | head -1 | xargs cat
 done
+rm -f tmp*
