@@ -48,6 +48,8 @@ void mkstr(char *);
 \\succeq        { mkstr(yytext); return EQ_CLASS; }
 \\mid           { mkstr(yytext); return EQ_CLASS; }
 ,               { mkstr(yytext); return EQ_CLASS; }
+\mapsto         { mkstr(yytext); return EQ_CLASS; }
+\to             { mkstr(yytext); return EQ_CLASS; }
 
 \\sum           { mkstr(yytext); return SUM_CLASS; }
 \\int           { mkstr(yytext); return SUM_CLASS; }
