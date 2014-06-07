@@ -78,4 +78,4 @@ def crawl(start_page, end_page):
 		navi_page = curl('/questions?sort=newest&page=' + str(i))
 		find_q_page(navi_page)
 
-crawl(2621, 19420)
+crawl(1, 19420)
