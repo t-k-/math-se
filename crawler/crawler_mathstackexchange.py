@@ -13,14 +13,20 @@ re_display = re.compile(r'\\\[(.+?)\\\]')
 root_url = 'math.stackexchange.com'
 
 c = pycurl.Curl()
-c.setopt(c.CONNECTTIMEOUT, 5)
-c.setopt(c.TIMEOUT, 8)
+c.setopt(c.CONNECTTIMEOUT, 8)
+c.setopt(c.TIMEOUT, 10)
 
 def curl(sub_url):
 	buf = cStringIO.StringIO()
 	c.setopt(c.URL, 'http://' + root_url + sub_url)
 	c.setopt(c.WRITEFUNCTION, buf.write)
-	c.perform()
+	while True:
+		try:
+			c.perform()
+		except:
+			print "try again..."
+			continue
+		break
 	res_str = buf.getvalue()
 	buf.close()
 	return res_str
@@ -62,12 +68,13 @@ def find_q_page(navi_page):
 		find_p(curl(tag_a['href']), save_file)
 		save_file.close()
 
-def crawl(num_page):
+def crawl(start_page, end_page):
 	if not os.path.exists(root_url):
 		os.makedirs(root_url)
 
-	for i in range(1, num_page):
+	for i in range(start_page, end_page):
+		print "page %d/%d..." % (i, end_page)
 		navi_page = curl('/questions?sort=newest&page=' + str(i))
 		find_q_page(navi_page)
 
-crawl(19420)
+crawl(2251, 19420)
