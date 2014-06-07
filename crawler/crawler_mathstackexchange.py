@@ -12,18 +12,19 @@ re_display = re.compile(r'\\\[(.+?)\\\]')
 
 root_url = 'math.stackexchange.com'
 
-c = pycurl.Curl()
-c.setopt(c.CONNECTTIMEOUT, 8)
-c.setopt(c.TIMEOUT, 10)
-
-def curl(sub_url):
+def curl(sub_url, c):
 	buf = cStringIO.StringIO()
 	c.setopt(c.URL, 'http://' + root_url + sub_url)
 	c.setopt(c.WRITEFUNCTION, buf.write)
+	errs = 0
 	while True:
 		try:
 			c.perform()
 		except:
+			errs = errs + 1
+			if errs > 5:
+				print "stop trying."
+				break
 			print "try again..."
 			continue
 		break
@@ -53,7 +54,7 @@ def find_p(q_page, sf):
 		find_tex(re_display, string, sf)
 
 
-def find_q_page(navi_page):
+def find_q_page(navi_page, c):
 	# find question page url
 	s = BeautifulSoup(navi_page)
 	tag_sums = s.find_all('div', {"class": "question-summary"})
@@ -66,16 +67,39 @@ def find_q_page(navi_page):
 			print "aready exists."
 			continue
 		save_file = open(save_path, 'w')
-		find_p(curl(tag_a['href']), save_file)
+		find_p(curl(tag_a['href'], c), save_file)
 		save_file.close()
 
 def crawl(start_page, end_page):
+	c = pycurl.Curl()
+	c.setopt(c.CONNECTTIMEOUT, 8)
+	c.setopt(c.TIMEOUT, 10)
+
 	if not os.path.exists(root_url):
 		os.makedirs(root_url)
 
 	for i in range(start_page, end_page):
 		print "page %d/%d..." % (i, end_page)
-		navi_page = curl('/questions?sort=newest&page=' + str(i))
-		find_q_page(navi_page)
+		sub_url = '/questions?sort=newest&page='
+		navi_page = curl(sub_url + str(i), c)
+		find_q_page(navi_page, c)
 
-crawl(1, 19420)
+# crawl(1, 19420)
+
+import threading
+import time
+
+new_thread = threading.Thread(target = crawl, args=(1, 5000))
+new_thread.start()
+time.sleep(0.5)
+
+new_thread = threading.Thread(target = crawl, args=(5001, 10000))
+new_thread.start()
+time.sleep(0.5)
+
+new_thread = threading.Thread(target = crawl, args=(10001, 15000))
+new_thread.start()
+time.sleep(0.5)
+
+new_thread = threading.Thread(target = crawl, args=(15001, 20000))
+new_thread.start()
