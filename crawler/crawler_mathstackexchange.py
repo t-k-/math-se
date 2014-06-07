@@ -45,7 +45,8 @@ def find_p(q_page, sf):
 		string = obj.string
 		if string is None:
 			continue
-		string = string.replace("\n", '')
+                # a newline is equavalent to a space in Tex
+		string = string.replace("\n", ' ') 
 		find_tex(re_sdollar, string, sf)
 		find_tex(re_ddollar, string, sf)
 		find_tex(re_inline, string, sf)
@@ -77,4 +78,4 @@ def crawl(start_page, end_page):
 		navi_page = curl('/questions?sort=newest&page=' + str(i))
 		find_q_page(navi_page)
 
-crawl(2251, 19420)
+crawl(2621, 19420)
