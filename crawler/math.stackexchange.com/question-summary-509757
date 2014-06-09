@@ -1,0 +1,17 @@
+I=\int\limits_{a}^\infty \frac{\exp(x)}{2\pi\lambda}\int\limits_0^\infty \frac{1}{\tau^2}\exp\left(-\frac{(x-\mu)^2}{2\tau^2}-\frac{(\log(\sigma/\tau))^2}{2\lambda^2}\right)d\tau   dx
+a\in\mathbb{R}
+\mu\in\mathbb{R}
+\lambda\in\mathbb{R}^+
+\sigma\in\mathbb{R}^+
+I=\frac{1}{2\pi\lambda}\int\limits_{0}^\infty \frac{\exp(-\frac{(\log(\sigma/\tau))^2}{2\lambda^2})}{\tau^2}\int\limits_a^\infty \exp\left(-\frac{(x-\mu)^2}{2\tau^2}+x\right)dx   d\tau
+\int\limits_a^\infty \exp\left(-\frac{(x-\mu)^2}{2\tau^2}+x\right)dx=\exp\left(\mu+\frac{\tau^2}{2}\right)\sqrt{\frac{\pi}{2}}\tau\left(1+\text{erf}\left(\frac{-a+\mu+\tau^2}{\sqrt{2}\tau}\right)\right).
+x
+\exp(\tau^2)
+\tau
+\tau\rightarrow\infty
+\infty
+\lambda \rightarrow 0
+\tau
+\exp(x)
+\exp(-x^2)
+P(x) =  \frac{1}{2\pi\lambda}\int\limits_0^\infty \frac{1}{\tau^2}\exp\left(-\frac{(x-\mu)^2}{2\tau^2}-\frac{(\log(\sigma/\tau))^2}{2\lambda^2}\right)d\tau

@@ -1,0 +1,60 @@
+n
+\{H_1, \dots, H_n\}
+\forall_{i \neq j }P(H_iH_j) = 0\text{ and }\sum_{i=1}^nP(H_i)=1
+m
+\{D_1,\dots,D_m\}
+H_i
+P(D_1\dots D_m\mid H_i) = \prod_{j=1}^mP(D_j\mid H_i)
+P(D_1 \dots D_m\mid\overline{H_i}) = \prod_{j=1}^mP(D_j\mid\overline{H_i})
+n>2
+\frac{P(D_j\mid H_i)}{P(D_j\mid\overline{H_i})}
+1
+H_i
+P(D \mid \overline{H_i}) = \frac{\sum_{k \neq i} P(D \mid H_k)P(H_k)}{\sum_{k \neq i} P(H_k)} = \frac{P(D) - P(D \mid H_i)P(H_i)}{1 - P(H_i)}
+D=D_1D_2 \dots D_m
+P(D_1D_2 \dots D_m \mid \overline{H_i}) = \frac{P(D_1D_2 \dots D_m) - P(D_1D_2 \dots D_m \mid H_i)P(H_i)}{1 - P(H_i)} = \frac{\prod_{j=1}^mP(D_j) - P(H_i)\prod_{j=1}^mP(Dj \mid H_i)}{1 - P(H_i)}
+d=D_j
+P(D_j \mid \overline{H_i}) = \frac{P(D_j) - P(D_j \mid H_i)P(H_i)}{1 - P(H_i)}
+\prod_{j=1}^mP(D_j\mid\overline{H_i}) = \frac{\prod_{j=1}^m(P(D_j) - P(D_j \mid H_i)P(H_i))}{(1 - P(H_i))^m}
+\frac{P(D_j\mid H_i)}{P(D_j\mid\overline{H_i})} = \frac{P(D_j\mid H_i)(1-P(H_i))}{P(D_j) - P(D_j \mid H_i)P(H_i)} = \frac{P(D_j\mid H_i)-P(D_j\mid H_i)P(H_i)}{P(D_j) - P(D_j \mid H_i)P(H_i)}
+P(D_j \mid H_i) = P(D_j)
+n=3
+a = P(D_1 | H_1)
+P(D_1 | H_2+H_3)
+P(D_1 | H_2)
+P(D_1 | H_3)
+h_2 = P(H_2)
+h_3 = P(H_3)
+P(D_1 | H_2+H_3) = \frac{h_2}{h_2+h_3} b + \frac{h_3}{h_2+h_3} c
+P(D_2 | H_2+H_3) = \frac{h_2}{h_2+h_3} e + \frac{h_3}{h_2+h_3} f
+(h_2+h_3)(h_2 be + h_3 cf) = (h_2 b + h_3 c)(h_2 e + h_3 f)
+cf+be = bf + ce
+h_2
+h_3
+t = e/(e+f)
+tb + (1-t)c = tc + (1-t)b
+b=c
+e=f
+a=b=c
+d=e=f
+1
+a=b
+d\neq e
+b\neq c
+a=b=c
+e=f
+a \neq c
+d=f
+d=e=f
+a_i = P(D_1 \mid H_i)
+b_i = P(D_2 \mid H_i)
+h_i = P(H_i)
+0 = \sum_{i<j,\ i\neq k,\ j\neq k} h_i h_j ( a_i b_j + a_j b_i - a_i b_i - a_j b_j)
+0 = \sum_{i\neq k,\  j \neq k} h_i h_j ( a_i b_j - a_i b_i )
+k
+0 = (P(D_1 \mid H_1) - P(D_1 \mid \overline{H_1}))(P(D_2 \mid H_1) - P(D_2 \overline{H_1}))
+0 = \left( \sum_{j\neq 1} h_j (a_1 - a_j)\right)\left(\sum_{j \neq 1} h_j (b_1 - b_j)\right)  = \sum_{i \neq 1,j \neq 1} h_i h_j (a_1 - a_i)(b_1 - b_j)
+a_1b_1 - a_1 b_j - a_i b_1 - a_i b_j
+H_2,\ldots,H_n
+a_1 b_1 - a_j b_1 - a_1 b_j \sim -a_j b_j
+H_1

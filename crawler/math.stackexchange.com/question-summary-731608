@@ -1,0 +1,28 @@
+k
+b
+d
+f
+ ky=b-(dx+f)^2 
+ |d\vec{s}| = |\vec{v}|dt \rightarrow \sqrt{dx^2 + dy^2} = |\vec{v}|dt \\ dy = f'dx \rightarrow |d\vec{s}| = \sqrt{1 + f'^2}dx\\ t_\text{total} = \int dt = \int \frac{\sqrt{1 + f'^2}}{|\vec{v}|}dx \\ t_\text{total} = \frac{1}{c_0}\int \sqrt{1 + f'^2}\sqrt{1 - kf}dx  
+ \frac{d}{dy}\left(f'\sqrt{\frac{1 - ky}{1 + f'^2}}\right) = 0 
+ f'\sqrt{\frac{1 - ky}{1 + f'^2}} = \alpha \\ f'^2\left(1 - ky\right) = \alpha^2\left(1 + f'^2\right) \\ f'^2\left(1 - ky - \alpha^2\right) = \alpha^2 \\ f' = \frac{\alpha}{\sqrt{1 - ky - \alpha^2 }} 
+ f = -\frac{2}{k}\alpha\sqrt{1 - ky - \alpha^2} + \beta 
+f = x
+y
+ x - \beta = -\frac{2}{k}\alpha\sqrt{1 - ky - \alpha^2} \\ \frac{k^2(x - \beta)^2}{4\alpha^2} = 1 - ky - \alpha^2 \\ y = \frac{1 - \alpha^2 - \frac{k^2(x - \beta)^2}{4\alpha^2}}{k} \\ y = \frac{4\alpha^2(1 - \alpha^2) - k^2(x - \beta)^2}{4k\alpha^2} \\ y = \frac{4\alpha(1 - \alpha) - k^2(x - \beta)^2}{4k\alpha} 
+\alpha^2
+\alpha
+\alpha
+\alpha \geq 0
+\alpha
+\beta
+ f(-x_0) = 0 = \frac{4\alpha(1 - \alpha) - k^2(-x_0 - \beta)^2}{4k\alpha} = \frac{4\alpha(1 - \alpha) - k^2(x_0 + \beta)^2}{4k\alpha} \\ f(x_0) = 0 = \frac{4\alpha(1 - \alpha) - k^2(x_0 - \beta)^2}{4k\alpha} \\ 4\alpha(1 - \alpha) - k^2(x_0 + \beta)^2 = 0 \\ 4\alpha(1 - \alpha) - k^2(x_0 - \beta)^2 = 0 \\ (x_0 + \beta)^2 = (x_0 - \beta)^2 \rightarrow \beta = 0 \\ 4\alpha(1 - \alpha) = k^2x_0^2 \\ f(x) = \frac{k^2}{\zeta}\left(x_0^2 - x^2\right) 
+\zeta = 4k\alpha
+\alpha
+x = 0
+x = 0
+y_0 = \frac{k^2x_0^2}{\zeta} = \frac{k^2x_0^2}{4k\alpha}
+\alpha = \frac{kx_0^2}{4y_0}
+ 4\alpha(1 - \alpha) = k^2x_0^2 \rightarrow 4\frac{kx_0^2}{4y_0}\left(1 - \frac{kx_0^2}{4y_0}\right) = k^2x_0^2 \\ \frac{k}{y_0}\cdot\frac{4y_0 - kx_0^2}{4y_0} = k^2 \\ 4y_0 -kx_0^2 = 4ky_0^2 \\ kx_0^2 = 4y_0 - 4ky_0^2 = 4y_0(1 - 4ky_0) 
+k
+ k^2x_0^2 = 4ky_0\left(1 - 4ky_0\right) \rightarrow (kx_0)^2 = 4ky_0\left(1 - ky_0\right) \text{, q.e.d} 

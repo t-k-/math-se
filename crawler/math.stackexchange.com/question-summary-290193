@@ -1,0 +1,34 @@
+X_1,X_2.... 
+Y_1,Y_2...
+X_n,Y_n
+n∈\mathbb N
+(X_n)
+(Y_n)
+u
+v
+u(X_n)\to u(X)
+v(Y_n)\to v(Y)
+u(X_n)v(Y_n)\to u(X)v(Y)
+X_n
+Y_n
+n
+\mathbb E(u(X_n)v(Y_n))=\mathbb E(u(X_n))\mathbb E(v(Y_n))
+u
+v
+(X,Y)
+ \mathbb E(u(X_n))\to\mathbb E(u(X)),\quad   \mathbb E(v(Y_n))\to\mathbb E(v(Y)), 
+ \mathbb E(u(X_n)v(Y_n))\to\mathbb E(u(X)v(Y)). 
+ \mathbb E(u(X)v(Y))=\mathbb E(u(X))\mathbb E(v(Y)). 
+a_j \rightarrow a, b_j \rightarrow b
+a \leqslant A, b \leqslant B \Longleftrightarrow \forall n, \exists i | \forall j > i: a_j \leqslant A + \frac{1}{n}, b_j \leqslant B + \frac{1}{n}
+X_i(\omega) \rightarrow X(\omega), Y_i(\omega) \rightarrow Y(\omega)
+\omega
+\{ X \leqslant a, Y \leqslant b \} = \bigcap_n \bigcup_{i \geqslant 0} \bigcap_{j \geqslant i} \{ X_j \leqslant a + \frac{1}{n}, Y_j \leqslant b + \frac{1}{n} \}
+\mathbb{P}
+\cap
+\cup
+X_j
+Y_j
+\mathbb{P}(X \leqslant a, Y \leqslant b) = \lim_n \lim_i \lim_{j \geqslant i} \mathbb{P}(X_j \leqslant a + \frac{1}{n}, Y_j \leqslant b + \frac{1}{n})
+\lim_n \lim_i \lim_{j \geqslant i} \mathbb{P}(X_j \leqslant a + \frac{1}{n})\mathbb{P}(Y_j \leqslant b + \frac{1}{n}) 
+= (\lim_n \lim_i \lim_{j \geqslant i} \mathbb{P}(X_j \leqslant a + \frac{1}{n}))(\lim_n \lim_i \lim_{j \geqslant i} \mathbb{P}(Y_j \leqslant b + \frac{1}{n})) = \mathbb{P}(X \leqslant a)\mathbb{P}(Y \leqslant b) 

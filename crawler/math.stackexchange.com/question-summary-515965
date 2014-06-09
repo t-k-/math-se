@@ -1,0 +1,26 @@
+y(v,t)
+v(x(s,t),t) = y(s,t)
+\frac{\partial y}{\partial t} = \frac{\partial v}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial v}{\partial t} 
+y
+t
+\frac{\partial^2 y}{\partial t^2} = \frac{\partial^2 v}{\partial x^2}(\frac{\partial x}{\partial t})^2 + 2(\frac{\partial^2 v}{\partial x \space \partial t}) + \frac{\partial^2 v}{\partial t^2} + \frac{\partial v}{\partial x}\frac{\partial^2 x}{\partial t^2}
+\frac{\partial^2 v}{\partial x^2}
+(\frac{\partial x}{\partial t})
+y(s,t) = v \big( x(s,t), t \big)
+\frac{\partial y}{\partial t}
+\star
+ \frac{\partial y}{\partial t} = \frac{\partial v}{\partial x}\big( x(s,t),t \big) \frac{\partial x}{\partial t}(s,t) + \frac{\partial v}{\partial y}\big( x(s,t),t \big) \tag{$\star$}
+t
+\frac{\partial^{2} y}{\partial t^{2}}
+(\star)
+t
+  \begin{eqnarray*} \frac{\partial}{\partial t} \Big[ \frac{\partial v}{\partial x}\big( x(s,t),t \big) \frac{\partial x}{\partial t}(s,t) \Big] & = & \Big[\frac{\partial}{\partial t} \frac{\partial v}{\partial x}\big( x(s,t),t \big) \Big] \frac{\partial x}{\partial t}(s,t) + \frac{\partial v}{\partial x}\big( x(s,t),t \big) \Big[ \frac{\partial}{\partial t} \frac{\partial x}{\partial t}(s,t) \Big] \\  & = & \Big[ \frac{\partial^{2} v}{\partial^{2} x}\big( x(s,t),t) \frac{\partial x}{\partial t}(s,t) + \frac{\partial^{2} v}{\partial x \partial y}\big( x(s,t),t \big) \Big] \frac{\partial x}{\partial t}(s,t) + \\   & &\frac{\partial v}{\partial x}\big( x(s,t),t \big) \Big[\frac{\partial^{2} x}{\partial^{2} t}(s,t) \Big] \\  & = & \frac{\partial^{2} v}{\partial x^{2}}\big( x(s,t),t \big) \left( \frac{\partial x}{\partial t}(s,t) \right)^{2} + \frac{\partial^{2} v}{\partial x \partial y}\big( x(s,t),t \big)\frac{\partial x}{\partial t}(s,t) + \\ & & \frac{\partial v}{\partial x}\big( x(s,t),t \big) \frac{\partial^{2} x}{\partial t^{2}}(s,t) \\ \end{eqnarray*} 
+ \frac{\partial}{\partial t} \Big[ \frac{\partial v}{\partial x}\big( x(s,t),t \big) \frac{\partial x}{\partial t}(s,t) \Big] = \frac{\partial^{2} v}{\partial x^{2}} \left( \frac{\partial x}{\partial t} \right)^{2} + \frac{\partial^{2} v}{\partial x \partial y} \frac{\partial x}{\partial t} + \frac{\partial v}{\partial x} \frac{\partial^{2} x}{\partial t^{2}} \tag{1}
+\frac{\partial}{\partial t} \Big[ \frac{\partial v}{\partial y}\big( x(s,t),t \big) \Big] =  \frac{\partial^{2} v}{\partial y \partial x}\big( x(s,t),t \big) \frac{\partial x}{\partial t}(s,t) + \frac{\partial^{2} v}{\partial y^{2}}\big( x(s,t),t \big) 
+ \frac{\partial}{\partial t} \Big[ \frac{\partial v}{\partial y}\big( x(s,t),t \big) \Big] = \frac{\partial^{2} v}{\partial y \partial x} \frac{\partial x}{\partial t} + \frac{\partial^{2} v}{\partial y^{2}} \tag{2}
+v
+\mathcal{C}^{2}
+ \frac{\partial^{2} v}{\partial x \partial y} = \frac{\partial^{2} v}{\partial y \partial x} 
+(1)
+(2)
+ \frac{\partial^{2} y}{\partial t^{2}} = \frac{\partial^{2} v}{\partial x^{2}} \left( \frac{\partial x}{\partial t} \right)^{2} + 2 \frac{\partial^{2} v}{\partial x \partial y} \frac{\partial x}{\partial t} + \frac{\partial^{2} v}{\partial y^{2}} + \frac{\partial v}{\partial x}\frac{\partial^{2} x}{\partial t^{2}}

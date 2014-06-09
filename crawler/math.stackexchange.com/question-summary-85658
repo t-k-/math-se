@@ -1,0 +1,17 @@
+X
+N(\mu, \sigma^2)
+Y=\frac{1}{a} X-b
+a
+b
+ \begin{align*} E(Y) &= aE(x)-b = \sum_x \Big(\frac{1}{a} x - b \Big) p_x(x) = \frac{1}{a} \sum_x x p_x(x) - b  \\ &=  \frac{1}{a} \sum_x x p_x(x) - b \sum_x p_x(x) = a E(x) - b \cdot 1. \end{align*} 
+a = 0
+E(x-b) = E(x)
+b = 0
+E(ax)= \frac{1}{a}E(x)
+ \begin{align*} \mu &= E(X) = \int_{-\infty}^{\infty} x f(x) dx = \int_{0}^{1} x \Big(\frac{1}{a} X - b \Big) dx = \frac{1}{a} \int_0^1 X^2 - xb ~dx  \\ & = \frac{1}{a} \Big( \frac{x^3}{3} - \frac{bx^2}{2} \Big) \text{ from } 1 \text{ to } 0  \\ & = \frac{1}{a} \Big( \frac{1}{3} - \frac{b}{2} \Big) . \end{align*} 
+ \text{RV } Y = (X - E(x)^2). 
+ \sigma^2 = \operatorname{Var}(x) = E[(x) - E[x])^2] 
+ \operatorname{Var} \Big( \frac{1}{a} X - b \Big) = a^2 \operatorname{Var}(x). 
+ \int_{\Box}^{\Box}\Big( \frac{1}{a} X - b \Big) - \Big( \frac{1}{a} X - b \Big)^2 \ldots 
+\mathsf{E}(Y)=\mathsf{E}(1/a\:X-b)=1/a\:\mathsf{E}(X)-b
+ \begin{align} \mathsf{Var}(Y) &=\mathsf{E}(Y^{\;2})-\mathsf{E}(Y)^2\\ &=\mathsf{E}(1/a^2X^2-2b/aX+b^2)-(1/a\:\mathsf{E}(X)-b)^2\\ &=1/a^2\mathsf{E}(X^2)-2b/a\mathsf{E}(X)+b^2-1/a^2\mathsf{E}(X)^2+2b/a\mathsf{E}(X)-b^2\\ &=1/a^2\mathsf{E}(X^2)-1/a^2\mathsf{E}(X)^2\\ &=1/a^2\mathsf{Var}(X). \end{align} 

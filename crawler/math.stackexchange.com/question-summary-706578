@@ -1,0 +1,8 @@
+w\sim N(0,\Sigma_p)
+y|X,w\sim N(X^\top w,\sigma_n^2I).
+p(w|X,y)\propto p(y|X,w)p(w) \propto exp(-{1 \over 2} (\sigma_n^{-2}(y-X^\top w)^\top (y-X^\top w) -w^\top\Sigma_p^{-1}w))= exp(-{1 \over 2}(\sigma_n^{-2}(w^\top Xy + y^\top X^\top w)-w^\top(\sigma_n^{-2}XX^\top -\Sigma_p^{-1} )w))
+exp(-{1 \over 2}(w - \bar w)^\top(\sigma_n^{-2}XX^\top -\Sigma_p^{-1})(w - \bar w))
+\bar w =\sigma_n^{-2}(\sigma_n^{-2}XX^\top -\Sigma_p^{-1})^{-1}Xy.
+w^\top X y = y^\top X^\top w
+p(w|X,y) \propto exp(-{1 \over 2}(2\sigma_n^{-2}y^\top X w -w^\top(\sigma_n^{-2}XX^\top -\Sigma_p^{-1} )w))= exp(-{1 \over 2}(w^\top A^{-1}w-2 \bar w^\top A^{-1}w))
+A=(\sigma_n^{-2}XX^\top -\Sigma_p^{-1})^{-1}  

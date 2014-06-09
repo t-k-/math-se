@@ -1,0 +1,9 @@
+\int_1^\infty \frac{\left \{x \right \}}{x}\left(\frac{1}{x^{s}-1}\right) \; dx
+\Re(s)>1 
+\left \{x \right \} 
+ \int_{1}^\infty \frac{\left \{x \right \}}{x}\left(\frac{1}{x^s - 1}\right)\; dx = \int_1^\infty \frac{1}{x(x^{s}-1)}\left(\frac{1}{2}-\frac{1}{\pi}\sum_{n=1}^\infty \frac{\sin(2\pi i nx)}{n} \right) \; dx
+=\int_1^\infty\frac{1}{x(x^s-1)}\left(\frac{1}{2}+\frac{1}{2\pi i}\ln \left(\frac{1-q^2}{1-q^{-2}} \right)\right ) \; dx
+ q 
+ q=e^{i \pi x}
+\frac{1}{2\pi i }\int_1^\infty \frac{\left(\pi i +\ln(-e^{2\pi i x}) \right )}{x(x^s - 1)} \; dx
+ \begin{eqnarray} \int_{1}^{\infty}\frac{\left \{x \right \}}{x}\frac{1}{x^{s}-1}\mathrm dx &=& \int_{1}^{\infty}\frac{x-\lfloor x\rfloor }{x}\sum_{j=1}^\infty x^{-js}\mathrm dx \\ &=& \sum_{j=1}^\infty\int_{1}^{\infty}\frac{x-\lfloor x\rfloor }{x} x^{-js}\mathrm dx \\ &=& \sum_{j=1}^\infty\left(\int_{1}^{\infty}x^{-js}\mathrm dx-\int_{1}^{\infty}\lfloor x\rfloor x^{-js-1}\mathrm dx\right) \\ &=& \sum_{j=1}^\infty\left(\frac1{js-1}-\sum_{k=1}^\infty\int_k^{k+1}kx^{-js-1}\mathrm dx\right) \\ &=& \sum_{j=1}^\infty\left(\frac1{js-1}+\sum_{k=1}^\infty k\frac1{js}\left((k+1)^{-js}-k^{-js}\right)\right) \\ &=& \sum_{j=1}^\infty\left(\frac1{js-1}-\sum_{k=1}^\infty \frac1{js}k^{-js}\right) \\ &=& \sum_{j=1}^\infty\left(\frac1{js-1}-\frac{\zeta(js)}{js}\right) \\ &=& \sum_{j=1}^\infty\frac{js(1-\zeta(js))+\zeta(js)}{js(js-1)} \\ &=& \sum_{j=1}^\infty\frac{1-\zeta(js)}{js-1}+\sum_{j=1}^\infty\frac{\zeta(js)}{js(js-1)}\;, \end{eqnarray} 

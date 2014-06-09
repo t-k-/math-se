@@ -1,0 +1,10 @@
+m,n\in\mathbb{N}
+\displaystyle\frac{d^n}{dx^n}\left(f(x)^m\right)
+f
+n
+\frac{d}{dx}\left(f(x)^m\right)=m \cdot f(x)^{m-1} \cdot f^{'}(x)
+\frac{d^2}{dx^2}\left(f(x)^m\right)=m \cdot (m-1) \cdot f(x)^{m-2} \cdot f^{'}(x)^2+m \cdot f(x)^{m-1} \cdot f^{''}(x)
+\frac{d^3}{dx^3}\left(f(x)^m\right)=m \cdot (m-1) \cdot (m-2) \cdot f(x)^{m-3} \cdot f^{'}(x)^3+3 \cdot m \cdot (m-1) \cdot f(x)^{m-2} \cdot f^{'}(x) \cdot f^{''}(x) + m \cdot f(x)^{m-1} \cdot f^{'''}(x)
+ {d^n \over dx^n} g(f(x)) = \sum_{k=1}^n g^{(k)}(f(x))\cdot B_{n,k}\left(f'(x),f''(x),\dots,f^{(n-k+1)}(x)\right). 
+ \frac{d^k}{dx^k} x^m = \frac{\Gamma(m+1)}{\Gamma(m-k+1 )}x^{m-k}. 
+ (g(f(x)))^{(n)} = \Gamma(m+1)\sum_{k=1}^n \frac{x^{m-k}}{\Gamma(m-k+1 )} B_{n,k}\left(f'(x),f''(x),\dots,f^{(n-k+1)}(x)\right). 

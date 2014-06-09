@@ -1,0 +1,14 @@
+\textbf{x}'(t)=A*\textbf{x(t)}
+\textbf{x(t)}=C_1\textbf{v}_1e^{\lambda_1t}+...+C_n\textbf{v}_ne^{\lambda_nt}
+n\in \mathbb N, A\in \mathbb R^{n\times n}
+I, t_0\in I, y_0\in \mathbb R^n
+b\colon I\to \mathbb R^n
+y'+Ay=b, y(t_0)=y_0.
+f\colon I\to\mathbb R^n
+C\in \mathbb R^n
+t\in I
+\begin{align} f'(t)+Af(t)=b(t)&\iff e^{At}(f'(t)+Af(t))=e^{At}b(t)\\ &\iff e^{At}f'(t)+e^{At}Af(t)=e^{At}b(t)\\ &\iff e^{At}f'(t)+Ae^{At}f(t)=e^{At}b(t)\\ &\iff \int \limits _{t_0}^te^{As}f'(s)+Ae^{As}f(s)\mathrm ds=\int \limits_{t_0}^te^{As}b(s)\mathrm ds+C\\ &\iff e^{At}f(t)=\int \limits_{t_0}^te^{As}b(s)\mathrm ds+C\\ &\iff f(t)=e^{-At}\int \limits_{t_0}^te^{As}b(s)\mathrm ds+e^{-At}C. \end{align}
+f(t_0)=y_0
+C=e^{At_0}y_0
+b
+1

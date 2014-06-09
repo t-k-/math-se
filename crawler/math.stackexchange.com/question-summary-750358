@@ -1,0 +1,25 @@
+Y_1
+Y_2
+Y_n
+θ
+f (y | θ)=\begin{cases} (θ + 1)y^θ, &  0 < y < 1; θ > −1,\\ 0 ,& elsewhere.\end{cases}
+L(\theta) = (\theta+1)^n \biggl(\prod_{i=1}^n y_i\biggr)^{\!\theta}
+\ln L(\theta) = n \ln (\theta+1) + \theta \sum_{i=1}^n  \ln y_i
+\frac{d \ln L(\theta)}{d \theta} = n\frac{1}{\theta+1} + \sum_{i=1}^n \ln y_i
+\frac{n}{\theta+1} = - \sum_{i=1}^n \ln y_i 
+\hat{\theta} = \frac{-n}{\sum_{i=1}^n \ln y_i} - 1
+\hat{\theta} = \frac{-n}{\sum_{i=1}^n \ln y_i} 
+\theta + 1
+\theta
+s > 0
+n = 1, 2, 3, \ldots
+s
+\frac{s}{n+s} > 0
+d(0,n) = 0
+n/s
+\hat \theta = -1 + n/s
+s = -\sum_{i=1}^n \log y_i > 0,
+\hat \theta = -1 + \frac{n}{s},
+\ell(\hat\theta \mid s) = n \log(\hat \theta + 1) - \hat\theta s = s + n \log \tfrac{n}{s} - n.
+\ell(\hat \theta + 1 \mid s) = n \log \left(\tfrac{n}{s} + 1\right) - n
+d(s,n) = \ell(\hat\theta \mid s) - \ell(\hat\theta + 1 \mid s) = s + n \log \frac{n}{n+s}.

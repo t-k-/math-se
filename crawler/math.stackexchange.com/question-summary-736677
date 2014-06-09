@@ -1,0 +1,37 @@
+A, B
+n
+AB,BA
+n
+A_{ij},B_{ij}=0
+i\ne j
+i\ne j
+\eqalign{   & {\left( {AB} \right)_{ij}} = \sum\limits_{k = 1}^n {{A_{ik}}{B_{kj}}}  = \sum\limits_{i \ne k = j} {{A_{ik}}{B_{kj}}}  + \sum\limits_{i = k \ne j} {{A_{ik}}{B_{kj}}}  + \sum\limits_{i \ne k \ne j} {{A_{ik}}{B_{kj}}}  = \sum\limits_{i \ne k = j} {0 \cdot {B_{kj}}}  + \sum\limits_{i = k \ne j} {{A_{ik}} \cdot 0}  + \sum\limits_{i \ne k \ne j} 0   \cr    &  = 0 + 0 + 0 = 0 = \sum\limits_{i = k \ne j} {{B_{ik}} \cdot 0}  + \sum\limits_{i \ne k = j} {0 \cdot {A_{kj}}}  + \sum\limits_{i \ne k \ne j} 0  = \sum\limits_{i = k \ne j} {{B_{ik}} \cdot {A_{kj}}}  + \sum\limits_{i \ne k = j} {{B_{ik}} \cdot {A_{kj}}}  + \sum\limits_{i \ne k \ne j} {{A_{ik}}{B_{kj}}}   \cr    &  = \sum\limits_{k = 1}^n {{B_{ik}}{A_{kj}}}  = {\left( {BA} \right)_{ij}} \cr} 
+i=j
+\eqalign{   & {\left( {AB} \right)_{ij}} = {\left( {AB} \right)_{ii}} = \sum\limits_{k = 1}^n {{A_{ik}}{B_{ki}}}  = \sum\limits_{k \ne i} {{A_{ik}}{B_{ki}}}  + \sum\limits_{k = i} {{A_{ik}}{B_{ki}}}  = \sum\limits_{k \ne i} {0 \cdot 0}  + {A_{ii}}{B_{ii}} = 0 + {A_{ii}}{B_{ii}}  \cr    &  = 0 + {B_{ii}}{A_{ii}} = \sum\limits_{k \ne i} {0 \cdot 0}  + {B_{ii}}{A_{ii}} = \sum\limits_{k \ne i} {{B_{ik}}{A_{ki}}}  + \sum\limits_{k = i} {{B_{ik}}{A_{ki}}}  = \sum\limits_{k = 1}^n {{B_{ik}}{A_{ki}}}  = {\left( {BA} \right)_{ii}} = {\left( {BA} \right)_{ij}} \cr} 
+AB=BA
+(AB)_{ij}=A_{ii}B_{ii}
+k\neq i
+A_{ik}=0
+k\neq j
+B_{kj}=0
+(AB)_{ij}=A_{ii}B_{ij}+A_{ij}B_{jj}
+i\neq j
+(AB)_{ij}=A_{ii}*0+0*B_{jj}=0
+i=j=k
+(AB)_{ij}=(AB)_{kk}=A_{kk}B_{kk}
+(AB)_{ij}=\sum_{k=1}^nA_{ik}B_{kj}
+BA
+i\neq j
+(BA)_{ij}=B_{ii}*0+0*A_{jj}=0
+i=j=k
+(BA)_{ij}=(BA)_{kk}=B_{kk}A_{kk}=A_{kk}B_{kk}=(AB)_{ij}
+AB=BA
+i=j
+(AB)_{ij}=(BA)_{ij}
+e_n
+a_n
+b_n
+n^{th}
+A
+B
+ABe_n=A(b_ne_n)=b_nAe_n=b_na_ne_n=a_nb_ne_n=a_nBe_n=Ba_ne_n=BAe_n\,.

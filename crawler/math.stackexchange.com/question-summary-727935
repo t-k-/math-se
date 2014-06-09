@@ -1,0 +1,33 @@
+\Omega\subset \mathbb{R}^N
+N\ge 2
+K\subset \Omega
+u:\overline{\Omega}\to\mathbb{R}
+u
+u=1
+\partial K
+\operatorname{int}{K}\ne\emptyset
+v:\overline{\Omega}\to \mathbb{R}
+x\in \operatorname{int}{K}
+v(x) = \left\{ \begin{array}{rl}  1 &\mbox{ if $x\in \operatorname{int}{K}$} \\  u(x) &\mbox{ otherwise}        \end{array} \right. 
+v
+L
+u
+w(x)=L\operatorname{dist}(x,K)
+L
+v
+L
+v
+|u(x)-1|\le L\operatorname{dist}(x,K),\quad x \in \Omega\setminus K
+v = 1 + \min(\max(u-1,-w),w)
+x,y
+K^\circ
+K^\circ
+1,u
+v
+x \in K^\circ
+y \in \bar{\Omega} \setminus K^\circ
+\phi(t) = x+t(y-x)
+T=\sup_{t \in [0,1]} \{ t | \phi(t) \in K^\circ \}
+K
+T \in (0,1)
+v(\phi(T)) = u(\phi(T))=1

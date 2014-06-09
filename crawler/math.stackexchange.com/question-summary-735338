@@ -1,0 +1,21 @@
+I = \bigg( \frac{m}{2\pi i\tau}\bigg) \int dx_1e^{\frac{im\tau}{2} \bigg((x_{2} - x_1)^2+(x_{1} - x_0)^2\bigg)}
+s= -iax^2 
+\int_{0}^{\infty} e^{iax^2}\;dx
+ \int_{0}^{i\infty} \frac{ds}{\sqrt{-ias}} e^{-s} 
+\gamma=[0,R]\cup Re^{i[0,\pi/4]}\cup e^{i\pi/4}[R,0]
+R\to\infty
+ \int_0^\infty e^{i\alpha x^2}\,\mathrm{d}x 
+ \int_\gamma e^{i\alpha z^2}\,\mathrm{d}z=0 
+0
+0
+ \begin{align} \left|\int_{Re^{i[0,\pi/4]}}e^{i\alpha z^2}\,\mathrm{d}z\right| &\le\int_0^{\pi/4}e^{-\alpha R^2\sin(2x)}R\,\mathrm{d}x\\ &\le\int_0^\infty e^{-\alpha R^24x/\pi}R\,\mathrm{d}x\\ &=\frac{\pi}{4\alpha R} \end{align} 
+ \begin{align} \overbrace{\int_0^\infty e^{i\alpha x^2}\,\mathrm{d}x}^{[0,R]} &=\overbrace{\int_0^\infty e^{i\alpha(xe^{i\pi/4})^2}\,\mathrm{d}xe^{i\pi/4}}^{e^{i\pi/4}[0,R]}\\ &=e^{i\pi/4}\int_0^\infty e^{-\alpha x^2}\,\mathrm{d}x\\ &=\color{#C00000}{\frac{1+i}{\sqrt2}\frac12\sqrt{\frac\pi\alpha}} \end{align} 
+s=-i\alpha x^2
+\frac12
+ \frac12\int_0^{-i\infty}\frac{e^{-s}}{\sqrt{-i\alpha s}}\,\mathrm{d}s 
+\gamma=-i[0,R]\cup Re^{-i[\pi/2,0]}\cup[R,0]
+ \frac12\int_\gamma\frac{e^{-z}}{\sqrt{-i\alpha z}}\,\mathrm{d}z=0 
+0
+R\to\infty
+ \begin{align} \left|\frac12\int_{Re^{-i[\pi/2,0]}}\frac{e^{-z}}{\sqrt{-i\alpha z}}\,\mathrm{d}z\right| &\le\left|\frac12\int_{-\pi/2}^0\frac{e^{-R\cos(x)}}{\sqrt{\alpha R}}R\,\mathrm{d}x\right|\\ &=\left|\frac12\int_0^{\pi/2}\frac{e^{-R\sin(x)}}{\sqrt{\alpha R}}R\,\mathrm{d}x\right|\\ &\le\frac12\int_0^\infty\frac{e^{-2Rx/\pi}}{\sqrt{\alpha R}}R\,\mathrm{d}x\\[5pt] &=\frac\pi{4\sqrt{\alpha R}} \end{align} 
+ \begin{align} \overbrace{\frac12\int_0^{-i\infty}\frac{e^{-s}}{\sqrt{-i\alpha s}}\,\mathrm{d}s}^{-i[0,R]} &=\overbrace{\frac{1+i}{\sqrt{2\alpha}}\int_0^\infty\frac{e^{-x}}{2\sqrt{x}}\,\mathrm{d}x}^{[0,R]}\\ &=\frac{1+i}{\sqrt{2\alpha}}\int_0^\infty e^{-x^2}\,\mathrm{d}x\\ &=\color{#C00000}{\frac{1+i}{\sqrt{2\alpha}}\frac{\sqrt\pi}2} \end{align} 

@@ -1,0 +1,27 @@
+p_{ij}
+i
+j
+P=(p_{ij})=\pmatrix{p_{11} & \cdots & p_{1n} \cr \vdots & & \vdots \cr p_{m1} & \cdots & p_{mn}}
+R
+C
+r_i
+i
+c_j
+j
+i
+1
+m
+j
+1
+n
+R=(r_i)=\pmatrix{r_1 & \cdots & r_m}, \qquad C=(c_j)=\pmatrix{c_1 \cr \vdots \cr c_n}
+p_{ij}
+r_ic_j
+RPC
+R
+e
+e=\sum_{i=1}^m\sum_{j=1}^n r_ic_jp_{ij}
+PC=\pmatrix{p_{11} & \cdots & p_{1n} \cr \vdots & & \vdots \cr p_{m1} & \cdots & p_{mn}}\pmatrix{c_1 \cr \vdots \cr c_n}=\pmatrix{p_{11}c_1+\cdots+p_{1n}c_n \cr \vdots \cr p_{m1}c_1+\cdots+p_{mn}c_n}=\pmatrix{\sum_{j=1}^np_{1j}c_j\cr \vdots \cr \sum_{j=1}^np_{mj}c_j}
+RPC=\pmatrix{r_1 & \cdots & r_m}\pmatrix{\sum_{j=1}^np_{1j}c_j\cr \vdots \cr \sum_{j=1}^np_{mj}c_j}=r_1\sum_{j=1}^np_{1j}c_j+\cdots+r_m\sum_{j=1}^np_{mj}c_j
+=\sum_{i=1}^m r_i \sum_{j=1}^n p_{ij}c_j=\sum_{i=1}^m\sum_{j=1}^n r_ip_{ij}c_j
+e=RPC

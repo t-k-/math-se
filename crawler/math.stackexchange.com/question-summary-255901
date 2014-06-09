@@ -1,0 +1,23 @@
+k, n ,m \in N
+0\leq k \leq n \leq m
+ \frac{2^{m-k}\Gamma(n+1)\Gamma\left(\left[\frac{m+1-k}{2}\right]\right)\Gamma(m+1-n)}{\Gamma(m+1)\Gamma\left(\left[\frac{m+2-k}{2}\right]\right)}\leq  \sqrt{\pi} 
+[\cdots]
+\lfloor \cdots \rfloor
+m
+n
+\Gamma(n+1) = n! \qquad \Gamma(m+1) = m! \qquad \Gamma(m+1-n) = (m-n)!
+ 2^{m-k} \frac{\Gamma\left(\left[\frac{m+1-k}{2}\right]\right)}{\Gamma\left(\left[\frac{m+2-k}{2}\right]\right)} \cdot \frac{n!(m-n)!}{m!} = 2^{m-k} \frac{\Gamma\left(\left[\frac{m+1-k}{2}\right]\right)}{\Gamma\left(\left[\frac{m+2-k}{2}\right]\right)} \cdot \frac{1}{\binom{m}{n}}. 
+m-k
+m+2-k
+(m+2-k)/2
+ \left[\frac{m+2-k}{2}\right] = \frac{m+2-k}{2} = \frac{m-k}{2} + 1. 
+ \Gamma\left(\left[\frac{m+2-k}{2}\right]\right) = \Gamma\left(\frac{m-k}{2} + 1\right) = \frac{m-k}{2} \,\Gamma\left(\frac{m-k}{2}\right). 
+ \frac{m+1-k}{2} = \frac{m+2-k}{2} - \frac{1}{2}, 
+ \left[\frac{m+1-k}{2}\right] = \frac{m+2-k}{2} - 1 = \frac{m-k}{2}, 
+ \Gamma\left(\left[\frac{m+1-k}{2}\right]\right) = \Gamma\left(\frac{m-k}{2}\right). 
+ \frac{2^{m+1-k}}{(m-k)\binom{m}{n}} \leq \sqrt{\pi}. 
+ k \geq m+1 - \log_2\left[\sqrt{\pi}(m-k)\binom{m}{n}\right] \qquad \text{if } m-k \text{ is even.} 
+m-k
+ \Gamma\left(\left[\frac{m+1-k}{2}\right]\right) = \Gamma\left(\left[\frac{m+2-k}{2}\right]\right), 
+ \frac{2^{m-k}}{\binom{m}{n}} \leq \sqrt{\pi}. 
+ k \geq m - \log_2\left[\sqrt{\pi}\binom{m}{n}\right] \qquad \text{if } m-k \text{ is odd.} 

@@ -1,0 +1,16 @@
+n \in \mathbb{N}
+\sum_{m=0}^n (-1)^m \binom{n}{m}_q = \begin{cases} \displaystyle \mathop{\prod_{k \text{ odd}}}_{1 \le k\leq n} (1-q^k), & \text{if } n \text{ is even}\\[30pt]0, &\text{if } n \text{ is odd}. \end{cases}
+q
+q-
+\binom{2n}{m}_q
+q^m \binom{2n-1}{m}_q+ \binom{2n-1}{m-1}_q
+\sum_{m=0}^{2n} (-1)^m \binom{2n}{m}_q =\sum_{m=0}^{2n-1} (-1)^m q^m\binom{2n-1}{m}_q .
+(1-q^m) \binom{2n-1}{m}_q=(1-q^{2n-1}) \binom{2n-2}{m-1}_q 
+ \sum_{m=0}^{2n} (-1)^m \binom{2n}{m}_q =(1-q^{2n-1})\sum_{m=0}^{2n-2} (-1)^{m-1}\binom{2n-2}{m-1}_q .
+r(n)=\sum_{m=0}^n (-1)^m \binom{n}{m}_q.
+q-
+e(x) = \sum\limits_{n = 0}^\infty  {\frac{{{x^n}}}{{(1 - q) \cdots (1 - {q^n})}}} .
+\sum\limits_{n = 0}^\infty  {\frac{{r(n)}}{{(1 - q) \cdots (1 - {q^n})}}}  = e( - x)e(x).
+e(x) = \frac{1}{{(1 - x)(1 - qx)(1 - {q^2}x) \cdots }}
+e( - x)e(x) = \frac{1}{{(1 - {x^2})(1 - {q^2}{x^2})(1 - {q^4}{x^2}) \cdots }} = \sum\limits_{}^{} {\frac{{{x^{2n}}}}{{(1 - {q^2})(1 - {q^4}) \cdots (1 - {q^{2n}})}}.} 
+r(2n) = \frac{{(1 - q)(1 - {q^2}) \cdots (1 - {q^{2n}})}}{{(1 - {q^2})(1 - {q^4}) \cdots (1 - {q^{2n}})}} = (1 - q)(1 - {q^3}) \cdots (1 - {q^{2n - 1}}).

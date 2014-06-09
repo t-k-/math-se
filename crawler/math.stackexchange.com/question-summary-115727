@@ -1,0 +1,25 @@
+B_t
+\mathbb R
+[0,1]
+0\leq t<1
+Y_0 = a
+\lim\limits_{t\to 1} Y_t = b
+ Y_t = a(1-t)+bt+(1-t)\int\limits_0^t\frac{\mathrm dB_s}{1-s} 
+ \lim\limits_{t\to 1}\;(1-t)\int\limits_0^t\frac{\mathrm dB_s}{1-s} = 0\text{ a.s.} 
+ \lim\limits_{t\to 1}\;(1-t)\int\limits_0^t\frac{B_s}{(1-s)^2}\mathrm ds = B_1 \text{ a.s.} 
+f
+\mu_t\to\delta_1
+\partial B
+\langle\partial B,\nu_t\rangle = -\langle\partial\nu_t,B\rangle
+   \lim_{t\to1}\; (1-t)\int_0^t\frac{f(s)}{(1-s)^2}\,ds = f(1).   
+   \mu_t(s) = \frac{1-t}{(1-s)^2}1_{[0,t]}(s),   
+   Y_t= a(1 - t) + bt + \langle\partial B,\nu_t\rangle,   
+   \nu_t(s) = \frac{1-t}{1-s}1_{[0,t]}(s),   
+   \partial\nu_t = (1-t)\delta_0 + \mu_t - \delta_t.   
+\{X_t\}_{t \in [0,T]}
+C>0
+X_t=\int_{0}^t\dfrac{dB_s}{1-s}
+C=2^{-n/4}
+X_t \to 0
+P\left(\sup\limits_{t \in [0,T]}|X_t|\geq C\right)\leq \dfrac{EX^2(T)}{C^2}
+P\left(\sup\limits_{1-2^{-n}\leq t\leq 1-2^{-n-1}}(1-t)|X_t|>C\right)\leq 2 C^{-2}2^{-n},

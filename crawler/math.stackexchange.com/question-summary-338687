@@ -1,0 +1,22 @@
+2
+4
+\int_{-\infty}^{y_l}\frac{b}{eb^{\mu_1}}f_1(y)\mathrm{d}y+\int_{y_l}^{y_u}K_1 l(y)^{\frac{-\ln(b)}{\ln(a b)}}f_1(y)\mathrm{d}y+\int_{y_u}^{\infty}\frac{1}{eb^{\mu_1}}f_1(y)\mathrm{d}y=1
+\int_{-\infty}^{y_l}\frac{1}{ea^{\mu_0}}f_0(y)\mathrm{d}y+\int_{y_l}^{y_u}K_0 l(y)^{\frac{\ln(a)}{\ln(a b)}}f_0(y)\mathrm{d}y+\int_{y_u}^{\infty}\frac{a}{ea^{\mu_0}}f_0(y)\mathrm{d}y=1
+\small \int_{-\infty}^{y_l}\frac{b}{eb^{\mu_1}}\ln \left(\frac{b}{e b^{\mu_1}}\right)f_1(y)\mathrm{d}y+\int_{y_l}^{y_u}K_1 l(y)^{\frac{-\ln(b)}{\ln(a b)}}f_1(y) \ln \left( K_1 l(y)^{\frac{-\ln(b)}{\ln(a b)}}\right)\mathrm{d}y+\int_{y_u}^{\infty}\frac{1}{eb^{\mu_1}}\ln \left(\frac{1}{eb^{\mu_1}}\right)f_1(y)\mathrm{d}y=\epsilon_1
+\small \int_{-\infty}^{y_l}\frac{1}{ea^{\mu_0}}\ln \left(\frac{1}{e a^{\mu_0}}\right)f_0(y)\mathrm{d}y+\int_{y_l}^{y_u}K_0 l(y)^{\frac{\ln(a)}{\ln(a b)}}f_0(y) \ln \left( K_0 l(y)^{\frac{\ln(a)}{\ln(a b)}}\right)\mathrm{d}y+\int_{y_u}^{\infty}\frac{a}{e a^{\mu_0}}\ln \left(\frac{a}{ea^{\mu_0}}\right)f_0(y)\mathrm{d}y=\epsilon_0
+\rightarrow f_0
+f_1
+\rightarrow l(y)=\frac{f_1(y)}{f_0(y)}
+\rightarrow  b=l(y_u),\quad a=\frac{1}{l(y_l)}
+\rightarrow K_0=\frac{e^{\frac{\ln^2(a)}{\ln (ab)}}}{e a^{\mu_0}},\quad K_1=\frac{e^{\frac{\ln^2(b)}{\ln (ab)}}}{e b^{\mu_1}}
+e a^{\mu_0}
+e b^{\mu_1}
+z_0=\int_{-\infty }^{y_l} f_0(y) \, \mathrm{d}y+\int _{y_l}^{y_u}e^{\frac{\text{ln}^2(a)}{\text{ln}(ab)}}l(y)^{\frac{\text{ln}[a]}{\text{ln}(ab)}}f_0(y)\mathrm{d}y+\int _{y_u}^{\infty }a f_0 (y)\mathrm{d}y
+z_1=\int _{-\infty }^{y_l}b f_1(y)\mathrm{d}y+\int _{y_l}^{y_u}e^{\frac{\text{ln}^2(b)}{\text{ln}(ab)}}l(y)^{\frac{-\text{ln}[b]}{\ln (ab)}}f_1(y)\mathrm{d}y+\int_{y_u}^{\infty } f_1(y) \, \mathrm{d}y
+h_0=-\text{ln}(z_0)+\frac{1}{z_0}\left(\int _{y_l}^{y_u}e^{\frac{\text{ln}^2(a)}{\text{ln}(ab)}}l(y)^{\frac{\text{ln}(a)}{\text{ln}(ab)}}\text{ln}\left(e^{\frac{\text{ln}^2(a)}{\text{ln}(ab)}}l(y)^{\frac{\text{ln}(a)}{\text{ln}(ab)}}\right)f_0(y)\mathrm{d}y+\int _{y_u}^{\infty }a\text{ln}(a)f_0 (y)\mathrm{d}y\right)=\epsilon_0
+h_1=-\text{ln}(z_1)+\frac{1}{z_1}\left(\int _{y_l}^{y_u}e^{\frac{\text{ln}^2(b)}{\text{ln}(ab)}}l(y)^{-\frac{\text{ln}(b)}{\text{ln}(ab)}}\text{ln}\left(e^{\frac{\text{ln}^2(b)}{\text{ln}(ab)}}l(y)^{-\frac{\text{ln}(b)}{\text{ln}(ab)}}\right)f_1(y)\mathrm{d}y+\int _{-\infty}^{y_l }b\text{ln}(b)f_1 (y)\mathrm{d}y\right)=\epsilon_1
+h_0(y_l,y_u)=\epsilon_0
+h_1(y_l,y_u)=\epsilon_1
+\{h_0(y_l,y_u)=\epsilon_0,\,h_1(y_l,y_u)=\epsilon_1\}
+\{y_l,y_u\}\in\mathbb{R}
+\{\epsilon_0\in[0,h_0(y_l\rightarrow -\infty,y_u \rightarrow \infty)],\epsilon_1\in[0,h_1(y_l\rightarrow -\infty,y_u \rightarrow \infty)]\}

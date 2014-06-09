@@ -1,0 +1,5 @@
+\sum_{k=1}^{\infty}\frac{(18)[(k-1)!]^2}{(2k)!}.
+   \frac{(k-1)!^2}{(2k)!} = \frac{\Gamma(k) \Gamma(k)}{ \Gamma(2k+1) } = \frac{1}{2k} B(k,k) = \frac{1}{2k} \int_0^1 x^{k-1} (1-x)^{k-1} \mathrm{d} x 
+ \begin{eqnarray}    \sum_{k=1}^\infty \frac{(k-1)!^2}{(2k)!} &=& \int_0^1 \left( \sum_{k=1}^\infty \frac{1}{2k} x^{k-1} (1-x)^{k-1} \right) \mathrm{d} x = \int_0^1 \frac{-\ln(1-x+x^2)}{2x (1-x)} \mathrm{d} x  \\    &=& -2 \int_{-1/2}^{1/2} \frac{\ln(3/4+u^2)}{1-4 u^2} \mathrm{d} u = -2 \int_0^1 \frac{\ln((3 +u^2)/4)}{1-u^2} \mathrm{d} u = \frac{\pi^2}{18}  \end{eqnarray} 
+36 \arcsin(1/2)^2
+ \sum_{k=1}^\infty \frac{((k-1)!)^2}{(2k)!} t^k = 2 \arcsin \left(\frac{\sqrt{t}}{2}\right)^2

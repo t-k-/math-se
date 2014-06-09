@@ -1,0 +1,23 @@
+ \int{ \frac{dt}{\mathrm{e}^{2\, t}\, \left(\mathrm{e}^{t} + 1\right)} } 
+ t + \frac{1}{\mathrm{e}^{t}} - \frac{1}{2\, \mathrm{e}^{2\, t}} - \ln\!\left(\mathrm{e}^{t} + 1\right) 
+x=e^t
+dx = e^t dt
+\int \frac{dx}{x^3 (x+1)}
+\frac1{x^3(x+1)} = \frac1{x^3} - \frac1{x^2} + \frac1{x} - \frac1{x+1}
+\int \frac{dx}{x^3 (x+1)} = \int \frac{dx}{x^3} - \int \frac{dx}{x^2} + \int \frac{dx}{x} - \int \frac{dx}{x+1} = -\frac1{2x^2} + \frac1{x} + \log(x) - \log(x+1)
+x=e^t
+\int \frac{dt}{e^{2t} \left(e^t+1\right)} = t + \frac1{e^t} - \frac1{2e^{2t}} - \log(e^t+1)
+A+C=0
+A+B=0
+B=1
+A=-1
+C=1
+u=e^t+1
+du=e^t\,dt
+dt = \frac{1}{u-1}\,du
+\frac{1}{e^{2t}(e^t+1)}
+\frac{1}{u^2(u+1)}.
+\begin{align*} \frac{1}{e^{2t}(e^t+1)} &= \frac{A}{e^t} + \frac{B}{e^{2t}} + \frac{C}{e^{t}+1}\\ &= \frac{Ae^t(e^t+1) + B(e^t+1) + Ce^{2t}}{e^{2t}(e^t+1)}\\ &= \frac{(A+C)e^{2t} + (A+B)e^t + B}{e^{2t}(e^t+1)}. \end{align*}
+\begin{align*} \int\frac{1}{e^{2t}(e^t+1)}\,dt &= \int\left(\frac{-1}{e^t} + \frac{1}{e^{2t}} + \frac{1}{e^t+1}\right)\,dt\\ &= -\int e^{-t}\,dt + \int e^{-2t}\,dt + \int\frac{1}{e^t+1}\,dt. \end{align*}
+\int\frac{dt}{e^t+1} = \int\frac{du}{(u-1)u} = \int\left(\frac{1}{u-1} - \frac{1}{u}\right)\,du
+\displaystyle \frac{1}{e^{2t}(e^t+1)} = \frac{(e^t+1)-e^t}{e^{2t}(e^{t}+1)} = \frac{1}{e^{2t}}-\frac{(e^t+1)-e^{t}}{e^t(e^t+1)} = \frac{1}{e^{2t}}-\frac{1}{e^{t}}+\frac{1}{e^{t}+1}.

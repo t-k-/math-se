@@ -1,0 +1,44 @@
+ \left[ \begin{matrix}-1 & 1 + \cos\frac{\pi}{2n} \\ -2 & 1 + 2\cos\frac{\pi}{2n}\end{matrix} \right] ^n \left[ \begin{matrix}0 \\ 1\end{matrix} \right] = \left[ \begin{matrix}\cot \frac{\pi}{4n} \\ \cot \frac{\pi}{4n}\end{matrix} \right]
+r
+r
+2n
+\left(  \cos\frac{\pi}{2n} \left[ \begin{matrix}0 & 1 \\ 0 & 2\end{matrix} \right] + \left[ \begin{matrix}-1 & 1 \\ -2 & 1\end{matrix} \right] \right)^n = \sum_{k=0}^{n} \left( \begin{matrix}n \\ k\end{matrix} \right) \cos^k\frac{\pi}{2n} \left[ \begin{matrix}0 & 1 \\ 0 & 2\end{matrix} \right]^k \left[ \begin{matrix}-1 & 1 \\ -2 & 1\end{matrix} \right]^{n-k} 
+\alpha=\pi/2n
+A
+e^{\pm i\alpha}
+A
+2\times2
+P
+PA=RP
+P
+R
+P
+P
+A=P^{-1}RP
+A^n=P^{-1}R^nP
+\sin\alpha=2\sin(\alpha/2)\cos(\alpha/2)
+1+\cos\alpha=2\cos^2(\alpha/2)
+(1+\cos\alpha)/\sin\alpha=\cot(\alpha/2)=\cot(\pi/4n).
+ A=\left(\begin{array}{rr}-1&1+\cos\alpha\\-2&1+2\cos\alpha\end{array}\right). 
+ R=\left(\begin{array}{rr}\cos\alpha&\sin\alpha\\-\sin\alpha&\cos\alpha\end{array}\right). 
+ P=\left(\begin{array}{rc}2&-1-\cos\alpha\\0&\sin\alpha\end{array}\right). 
+ R^n=\left(\begin{array}{rr}\cos n\alpha&\sin n\alpha\\-\sin n\alpha&\cos n\alpha\end{array}\right)=\left(\begin{array}{rr}0&1\\-1&0\end{array}\right). 
+ A^n\left(\begin{array}{r}1\\0\end{array}\right)=P^{-1}\left(\begin{array}{rr}0&1\\-1&0\end{array}\right)\left(\begin{array}{c}-1-\cos\alpha\\\sin\alpha\end{array}\right)= \frac{1}{\sin\alpha}\left(\begin{array}{r}1+\cos\alpha\\1+\cos\alpha\end{array}\right). 
+n
+A
+A=CDC^{-1}
+D={\rm diag}(\lambda_+,\lambda_-)
+C
+(0,1)^T
+C^{-1}
+(n_{1},n_{2})^T
+n_{1,2}
+\lambda_\pm = + \exp(\pm i\pi / 2n)
+ (\frac{1}{2}(1 +\exp(\pm i\pi/2n),1)^T 
+ \mp\frac{1}{2\sin (\pi/2n)}  (1  + \exp(\mp \pi i/2n))   
+D^n
+{\rm diag}(i,-i)
+\exp(i\pi /2)=i
+C D C^{-1} v
+1/\sin(\pi/2n)
+2\sin(\pi/4n)\cos(\pi/4n)

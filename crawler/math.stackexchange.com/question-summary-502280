@@ -1,0 +1,8 @@
+I=\lim_{x\to 0}\left(\dfrac{a^x-x\ln{a}}{b^x-x\ln{b}}\right)^{\cot^2{x}},(0<a\neq1,0<b\neq 1,a\neq b)
+I=e^{\displaystyle\lim_{x\to 0}\cot^2{x}\ln{\left(\dfrac{a^x-x\ln{a}}{b^x-x\ln{b}}\right)}}
+A=\lim_{x\to 0}\cot^2{x}\ln{\left(\dfrac{a^x-x\ln{a}}{b^x-x\ln{b}}\right)}=\lim_{x\to 0}\dfrac{\ln{(a^x-x\ln{a})}-\ln{(b^x-x\ln{b})}}{x^2}
+I=e^{0}=1
+\ln (a^x-x\ln{a}) = \ln (1+\frac{x^2}{2}(\ln{a})^2 + o(x^2)) = \frac{x^2}{2}(\ln{a})^2 + o(x^2)
+\ln (b^x-x\ln{b}) = \frac{x^2}{2}(\ln{b})^2 + o(x^2)
+\cot^2{x} \left(\ln (a^x-x\ln{a}) - \ln (b^x-x\ln{b}\right) = \frac{(\ln{a})^2-(\ln{b})^2}{2} + o(1).
+I = \sqrt{e^{(\ln{a})^2-(\ln{b})^2}}.

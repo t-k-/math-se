@@ -1,0 +1,11 @@
+n
+ 1\le n \le 5000
+|A| = \lfloor 5000/4 \rfloor = 1,250 
+|B| = \lfloor 5000/7 \rfloor = 714 
+|C| = \lfloor 5000/33 \rfloor = 151 
+|A\cap B| = \lfloor 5000/(4 * 7) \rfloor = 178
+|A\cap C| = \lfloor 5000/(4 * 33) \rfloor = 37
+|B\cap C| = \lfloor 5000/(7 * 33) \rfloor = 21
+|A \cap B\cap C| = \lfloor 5000/(4 * 7 * 33) \rfloor = 5
+|A|+|B|+|C| - |A\cap B| - |A\cap C| - |B\cap C| + |A \cap B\cap C|
+1,250 + 714 + 151 - 178 - 37 - 21 + 5 = 1,884

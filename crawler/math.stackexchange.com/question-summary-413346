@@ -1,0 +1,30 @@
+\exists X.B\Leftrightarrow \forall Y. (\forall X. B\to Y)\to Y
+B\in\Gamma
+\exists X.B\Rightarrow \forall Y. (\forall X. B\to Y)\to Y
+\Rightarrow_i
+\Gamma=\Gamma\cup\{\exists X.B\}
+\forall Y. (\forall X. B\to Y)\to Y
+\forall_i
+C\notin \Gamma
+(\forall X. B\to C)\to C
+\Rightarrow_i
+\Gamma=\Gamma\cup\{\forall X. B\to C\}
+C
+(\forall X. B\to C)
+\forall_e
+D
+X
+B\to C
+\exists X.B.
+\exists_e
+D
+X
+B
+C
+\frac{B\to C\;(H1)\qquad B\;(H2)}{C\;(*)}
+A\wedge B\equiv\forall X.(A\to B\to X)\to X
+A\vee B\equiv\forall X.(A\to X)\to (B\to X)\to X
+\{\exists X,T\}\equiv\forall Y.(\forall X.T\to Y)\to Y
+\{S^\ast,t\}\;as\;\{\exists X,T\}\equiv \lambda Y.\lambda f:(\forall X.T\to Y).\;f\;[S]\;t
+let\{X,x\}=t_1\;in\;t_2\equiv t_1[T_2](\lambda X.\lambda x:T_{11}.t_2) 
+(\forall A: Type[0] .(A\to Prop)\to Prop)

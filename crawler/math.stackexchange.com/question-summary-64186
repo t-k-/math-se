@@ -1,0 +1,75 @@
+X
+E[X] = \sum_{x=0}^\infty x P(X = x)
+P(X = 0)
+P(X = 1)
+P(X = 2)
+\begin{matrix} P(X=1) & P(X = 2) & P(X = 3) & P(X = 4) & P(X = 5) & \cdots \\ & P(X = 2) & P(X = 3) & P(X = 4) & P(X = 5) & \cdots \\ & & P(X = 3) & P(X = 4) & P(X = 5) & \cdots \\ & & & P(X = 4) & P(X = 5) & \cdots \\ & &  &  & P(X = 5) & \cdots\end{matrix}.
+P(X = 0)
+P(X > 0)
+P(X =0)
+P(X = 1)
+P(X > 1)
+x+1
+P(X > x)
+\sum_{x = 0}^{\infty} P(X > x)
+\sum_{x=0}^\infty x P(X = x) = E[X].
+X=x
+1
+(0,x)
+x
+(\omega,x)\mapsto\mathbf 1_{X(\omega)>x}
+P\otimes\mathrm Leb
+\Omega\times\mathbb R_+
+A_x=\{\omega\in\Omega\mid X(\omega)>x\}
+ \int_\Omega\int_{\mathbb R_+}\mathbf 1_{X(\omega)>x}\mathrm dx\mathrm dP(\omega)=\int_\Omega\int_0^{X(\omega)}\mathrm dx\mathrm dP(\omega)=\int_\Omega X(\omega)\mathrm dP(\omega)=E(X), 
+ \int_{\mathbb R_+}\int_\Omega\mathbf 1_{X(\omega)>x}\mathrm dP(\omega)\mathrm dx=\int_{\mathbb R_+}\int_\Omega\mathbf 1_{\omega\in A_x}\mathrm dP(\omega)\mathrm dx=\int_{\mathbb R_+}P(A_x)\mathrm dx=\int_{\mathbb R_+}P(X>x)\mathrm dx. 
+x_0 = 0
+x_1
+x_2
+p_0
+p_1
+p_2
+F(x)
+p_0
+p_1
+p_2
+0
+x_1
+x_2
+F(x)
+x_1
+(1-p_0)
+x_2 - x_1
+(1-p_0-p_1)
+x_1
+p_1
+x_2
+p_2
+p_1x_1 + p_2x_2 = E[X]
+F(x) = \begin{cases}  0, & x < 0, \\ p_0, & 0 \leq x < x_1,\\ p_0 + p_1, & x_1 \leq x < x_2,\\ 1, & x \geq x_2, \end{cases}
+ E[X]= \sum_{i=1}^3 p_ix_i = p_1x_1 + p_2x_2. 
+\int_0^\infty P\{X > x\}\mathrm dx = \int_0^\infty [1 - F(x)]\mathrm dx
+E[X]
+F(x)
+x
+dF(x)
+E[X] = \int_0^\infty x\mathrm dF(x)
+\int_0^\infty P\{X > x\}\mathrm dx = \int_0^\infty [1 - F(x)]\mathrm dx
+X
+E[X] = \int_0^\infty [1 - F(x)]\mathrm dx - \int_{-\infty}^0 F(x) \mathrm dx
+L = 10
+1, 2, \ldots, 9
+w_1,w_2,\ldots,w_9
+\sum_{n=1}^9 w_n = 1
+c = \mathbb E X
+X
+1,2,\ldots,9
+w_1,w_2,\ldots,w_9
+c = \mathbb E X = \sum_{n=0}^9 \mathbb P(X > n) = \sum_{n = 0}^9 \sum_{k=n+1}^9 w_k
+w_1
+w_2
+w_3
+c = \sum_{n=1}^9 n w_n
+ c = (w_1 + \cdots + w_9) + (w_2 + \cdots + w_9) + \cdots + (w_9) \>,  
+\sum_{n=0}^9 \mathbb P(X > n)
+\mathbb E X

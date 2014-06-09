@@ -1,0 +1,9 @@
+\int_0^\infty\frac{-38x}{(2x^2+9)(3x^2+4)} dx 
+\dfrac{114}{19}
+\ln
+u=x^2
+I=\int_0^\infty \frac{-38x}{(2x^2+9)(3x^2+4)} dx = \int_0^\infty \frac{-19}{(2u+9)(3u+4)} du
+\frac{-19}{(2u+9)(3u+4)}=\frac{2}{2u+9}-\frac{3}{3u+4}
+I=\lim_{L\rightarrow\infty}\left[ \log(2u+9) - \log(3u+4)\right|_0^L=\left(\lim_{u\rightarrow\infty} \log(2u+9)-\log(3u+4) \right) -2\log(3/2)
+\lim_{u\rightarrow\infty} \log(2u+9)-\log(3u+4)=\lim_{u\rightarrow\infty} \log\frac{2u+9}{3u+4}=\log\frac{2}{3}=-\log\frac{3}{2}
+I=-3\log\frac{3}{2}

@@ -1,0 +1,13 @@
+Y = X^2 + X
+p_Y(y) = \int_{X} p_{Y|X=x}(y)\cdot p_{X}(x)dx
+(Y|X=x) \sim (x^2+x) \Rightarrow p_{Y|X=x} = \delta_{x^2+x}(y)
+p_Y(y) = \int_{X} \delta_{x^2+x}(y)\cdot p_{X}(x)dx
+p_Y(y) = DF(Y < y) = DF(X^2 + X < y) = ...
+X^2 + X
+Y = X^2 + X = \left( X+\frac{1}{2} \right)^2 - \frac{1}{4}
+y+\frac{1}{4} > 0
+  F_Y(y) = \mathbb{P}(Y \le y) = \mathbb{P}\left( \left( X+\frac{1}{2} \right)^2  \le  y + \frac{1}{4} \right) 
+ \begin{eqnarray}    F_Y(y) &=& \mathbb{P}\left( -\sqrt{y + \frac{1}{4}} \le X+\frac{1}{2}  \le  \sqrt{y + \frac{1}{4}} \right) \\ &=& F_X\left( -\frac{1}{2} + \sqrt{y + \frac{1}{4}} \right) -  F_X\left( -\frac{1}{2} -\sqrt{y + \frac{1}{4}} \right) + \mathbb{P}\left( X = -\frac{1}{2} - \sqrt{y + \frac{1}{4}} \right)  \end{eqnarray} 
+X
+y
+    f_Y(y) = \frac{1}{\sqrt{4y+1}} \left( f_X\left(-\frac{1}{2} + \sqrt{y + \frac{1}{4}} \right) + f_X\left( -\frac{1}{2} -\sqrt{y + \frac{1}{4}} \right) \right) \cdot \mathbf{1}\left(y > -\frac{1}{4}\right) 

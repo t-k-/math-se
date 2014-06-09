@@ -1,0 +1,9 @@
+\Gamma(n,n)
+     \Gamma(n,n) = \int_n^\infty x^{n-1} \exp(-x) \mathrm{d}x 
+x=n t
+\begin{align}\Gamma(n,n) &= n^n \int_1^{\infty} dt \: t^{n-1} e^{-n t}\\ &= n^n \int_1^{\infty} \frac{dt}{t} e^{n (\log{t}-t)} \\ &= n^n e^{-n} \int_0^{\infty} \frac{du}{1+u} e^{n [\log{(1+u)}-u]} \end{align}
+u=0
+n \rightarrow \infty
+\Gamma(n,n) \sim n^n e^{-n} \int_0^{\infty} du \: e^{-n u^2/2}  = n^n e^{-n} \sqrt{\frac{\pi}{2 n}}
+\left ( 1 + \frac{n u^3}{3} \right ) (1-u) \sim 1-u +\frac{n u^3}{3} 
+\Gamma(n,n) = n^n e^{-n}  \left [ \sqrt{\frac{\pi}{2 n}} - \frac{1}{3 n} + O\left ( n^{-3/2} \right ) \right ]

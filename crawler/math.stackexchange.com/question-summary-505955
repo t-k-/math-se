@@ -1,0 +1,14 @@
+(V,E)
+\frac{n^2-3n+6}{2}
+\forall u,v:u\neq v: \{u,v\}\notin E \implies deg(u)+deg(v)\geq n
+\implies (V,E) \, contains\,Hamiltonian\,cycle
+(V,E)
+\lnot \forall u,v:u\neq v: \{u,v\}\notin E \implies deg(u)+deg(v)\geq n
+Take \{u,v\}\notin E \land deg(u)+deg(v)\lt n
+now\, remove\, u\, and\, v\, from\, the\, graph
+deg(u)+deg(v)\lt n ,\, \#E\geq \frac{n^2-3n+6}{2}
+after\, removing\, u\, and\, v\, from\, the\, graph,\, at\, least
+\frac{n^2-3n+6}{2} -\frac{2n-2}{2}=\frac{n^2-5n+8}{2} edges\, have\, to\, be\, left
+but\, after\, removing\, u\, and\, v,\, only\, n-2\, vertices\, are\, left,\, so\, at\, most
+\frac{(n-2)(n-3)}{2}=\frac{n^2-5n+6}{2} edges\,can\, still\,be\,in\,the\,graph
+which\, means\, we\, have\, a\, contradiction

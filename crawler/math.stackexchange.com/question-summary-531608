@@ -1,0 +1,30 @@
+R_1
+R_2
+\Omega \subset \Bbb R^3
+\overline{x}=\int_{\Omega}\overline{r}d\overline{r}.
+\overline{r}
+\Omega
+x
+y
+z
+(r,\phi,z)
+x = r \cos{\phi}
+y=r \sin{\phi}
+\Omega
+\phi \in \left [ -\frac{\pi}{2},\frac{\pi}{2} \right]
+z \in [-R_2,R_2]
+r \in \left [ R_1 - \sqrt{R_2^2-z^2},  R_1 + \sqrt{R_2^2-z^2}\right]
+x
+\bar{x} = \frac{\displaystyle \int_{\Omega} d^3 \vec{x} \, x}{\displaystyle \int_{\Omega} d^3 \vec{x}}
+\bar{y}=0
+\bar{z}=0
+\begin{align} \int_{\Omega} d^3 \vec{x} &= \int_{-\pi/2}^{\pi/2} d\phi \, \int_{-R_2}^{R_2} dz \, \int_{R_1 - \sqrt{R_2^2-z^2}}^{R_1 + \sqrt{R_2^2-z^2}} dr \, r \\ &= \frac{\pi}{2}\int_{-R_2}^{R_2} dz \left [\left (R_1 + \sqrt{R_2^2-z^2} \right )^2 - \left (R_1 - \sqrt{R_2^2-z^2} \right )^2 \right ]\\ &= 4 \pi R_1 \int_0^{R_2} dz \, \sqrt{R_2^2-z^2}\\ &= \pi^2 R_1 R_2^2 \end{align}
+\begin{align}\bar{x} &= \frac{1}{\pi^2 R_1 R_2^2} \int_{-\pi/2}^{\pi/2} d\phi \, \int_{-R_2}^{R_2} dz \, \int_{R_1 - \sqrt{R_2^2-z^2}}^{R_1 + \sqrt{R_2^2-z^2}} dr \, r^2 \cos{\phi} \\ &= \frac{4}{3 \pi^2 R_1 R_2^2} \int_0^{R_2} dz \, \left [\left (R_1 + \sqrt{R_2^2-z^2} \right )^3 - \left (R_1 - \sqrt{R_2^2-z^2} \right )^3 \right ]\\ &= \frac{8}{3 \pi^2 R_1 R_2^2} \int_0^{R_2} dz \,\left [3 R_1^2 \sqrt{R_2^2-z^2} + \left (R_2^2-z^2 \right )^{3/2} \right ] \\ &= \frac{8}{3 \pi^2 R_1 R_2} \left ( \frac{3 \pi}{4} R_1^2 R_2 + \frac{3 \pi}{16} R_2^3 \right )\end{align}
+\bar{x} = \frac{4 R_1^2+R_2^2}{2 \pi R_1}
+R_2 \to 0
+\bar{x}=\frac{2}{\pi} R_1
+\Omega
+\overline{r}
+(x,y,z)
+d\overline{r}
+dx dy dz

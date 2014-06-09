@@ -1,0 +1,5 @@
+E(X|X>c) = \frac{\int_x x f(x) I(x>c) dx}{\int_x f(x) I(x>c) dx}
+X \sim U[0,1]
+c=0.5
+E(X|X>0.5) = \frac{\int_x x  I(x>0.5) dx}{\int_x  I(x>0.5) dx} = \frac{(1 - 0.5^2)/2}{0.5}=0.75
+ \mathrm E(X\mid X\gt c)=\frac{\mathrm E(X\cdot\mathbf 1_{X\gt c})}{\mathrm P(X\gt c)} 

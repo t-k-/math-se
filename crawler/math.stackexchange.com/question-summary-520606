@@ -1,0 +1,34 @@
+(0,0)
+(1,0)
+(0,1)
+\int\int_D\frac{\sqrt[3]{y-x}}{1+x+y}dA
+u=y-x
+v=1+x+y
+y=1-x,
+y\le 1-x,
+x+y\le1.
+v=x+y
+v
+-\frac12,
+D
+u=y-x\\v=x+y,
+y=\frac{u+v}2\\x=\frac{v-u}2.
+\iint_D\frac{\sqrt[3]{y-x}}{1+x+y}\,dA=-\frac12\iint_D\frac{\sqrt[3]{u}}{1+v}\,du\,dv.
+x
+0,
+y
+0,
+-v\le u\le v
+v\le 1
+0\le v
+0\le\frac{v-u}2\\0\le v-u\\u\le v
+0\le\frac{u+v}2\\0\le u+v\\-v\le u.
+-\frac12\int_0^1\int_{-v}^v\frac{\sqrt[3]{u}}{1+v}\,du\,dv=-\frac12\int_0^1\frac1{1+v}\left(\int_{-v}^v\sqrt[3]{u}\,du\right)\,dv.
+D
+(x,y)\rightarrow (u,v)
+(0,0)\rightarrow (0-0,1+0+0)=(0,1)
+  \mathrm{dA}=\left| \begin{array}{cc} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}   \end{array} \right|\partial u\partial v. 
+A=A(v)
+B=B(v)
+J
+ \int\int_D\frac{\sqrt[3]{y-x}}{1+x+y}dA=\int_{1}^{2}\int_{A}^{B} \frac{\sqrt[3]{u}}{v}\,\,J\,\,du\, dv 

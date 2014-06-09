@@ -1,0 +1,10 @@
+m
+m: X \to \mathcal{P}(\mathcal{P}(X))
+m(x) := m_x, \forall x \in X 
+m
+X
+ \forall x \in X (\forall t \in m_x(x \in t)) 
+ \forall x \in X( X \in m_x) 
+ \forall x \in X( \forall t,u \in m_x(t \cap u \in m_x))
+ \forall x \in X (\forall t \in m_x( \exists r \in m_x(\forall y \in r(t \in m_y))))
+ \forall x \in X (\forall t \in m_x( \forall r \subseteq X( t \subseteq r \to r \in m_x)))

@@ -1,0 +1,50 @@
+f:[a, b] \to \mathbb{C}
+e^{i\theta}
+\left| \int_a^b f \right | \le \int_a^b |f| 
+P_n = \{ a = a_0^{(n)} < a_1^{(n)} < \dotsc < a_{r_n}^{(n)} = b\}
+[a,b]
+\mu(P_n) = \max \{ a_\rho^{(n)} - a_{\rho-1}^{(n)} : 1 \leqslant \rho \leqslant r_n\}
+\xi_\rho^{(n)} \in \left(a_{\rho-1}^{(n)},\, a_\rho^{(n)}\right)
+R\left(P_n,(\xi^{(n)}),f\right) := \sum_{\rho = 1}^{r_n} f\left(\xi_\rho^{(n)}\right)\cdot (a_\rho^{(n)} - a_{\rho-1}^{(n)})
+\int_a^b f(x)\,dx
+\mathbb{R}^n
+\lvert f\rvert
+\begin{align} \left\lvert R\left(P_n,(\xi^{(n)}),f \right)\right\rvert &= \left\lvert \sum_{\rho = 1}^{r_n} f\left(\xi_\rho^{(n)}\right)\cdot (a_\rho^{(n)} - a_{\rho-1}^{(n)})\right\rvert\\ &\leqslant \sum_{\rho=1}^{r_n} \left\lvert f(\xi_\rho^{(n)})\right\rvert \left( a_\rho^{(n)} - a_{\rho-1}^{(n)}\right)\\ &= R\left(P_n,(\xi^{(n)}),\lvert f\rvert \right), \end{align}
+\left\lvert \int_a^b f(x)\,dx \right\rvert \leqslant \int_a^b \left\lvert f(x)\right\rvert\,dx.
+\mathbb{C}
+\left\lVert \int_a^b f(x)\,dx \right\rVert \leqslant \int_a^b \left\lVert f(x)\right\rVert\,dx
+\mathbb{R}^n
+f
+\sup f
+\inf f
+f
+\mathbb{C}
+P
+a=t_0<t_1<...<t_n=b
+[a,b]
+m_i
+Re(f(t)):t_{i-1}\le t \le t_{i}
+z_i
+Im(f(t)):t_{i-1}\le t \le t_{i}
+f
+P
+L_{Re}(f,P)= \sum_1^n m_i(t_i - t_{i-1})
+L_{Im}(f,P)= \sum_1^n z_i(t_i - t_{i-1})
+(\underline \int_a^b f)_{Re} 
+sup_P L_{Re}(F,P)
+(\underline \int_a^b f)_{Im} 
+sup_P L_{Im}(F,P)
+\int_a^b f 
+\underline \int_a^b f
+(\underline \int_a^b f)_{Re} 
++i(\underline \int_a^b f)_{Im} 
+Re(f(x)),Im(f(x))\le |f(x)|
+L_{Re}(f,P),L_{Im}(f,P) \le L_{Re}(|f|,P),L_{Im}(|f|,P)
+(\underline \int_a^b f)_{Re},(\underline \int_a^b f)_{Im} \le (\underline \int_a^b |f|)_{Re},(\underline \int_a^b |f|)_{Im}
+\left| \int_a^b f \right |
+| \underline \int_a^b f|
+|(\underline \int_a^b f)_{Re} 
++i(\underline \int_a^b f)_{Im}| 
+\le |(\underline \int_a^b f)_{Re}| + |(\underline \int_a^b f)_{Im}|
+\le (\underline \int_a^b |f|)_{Re} + (\underline \int_a^b |f|)_{Im}
+\int_a^b |f|

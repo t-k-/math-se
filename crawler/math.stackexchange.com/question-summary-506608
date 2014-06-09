@@ -1,0 +1,35 @@
+\sum\limits_{k=1}^n k\textstyle\left(\!\!{n\choose k}\!\!\right)
+n{2n \choose n+1}
+\sum\limits_{k=1}^n k{n\choose k} = n \cdot 2^{n-1}
+(1+x)^n
+x
+1
+(1-x)^{-n} = \sum\limits_{k=0}^\infty {n-1+k\choose k} x^k
+x
+n+1
+2n
+\binom{2n}{n+1}
+n
+n\binom{2n}{n+1}
+c_1,c_2,\ldots,c_{2n}
+n+1
+U=\{c_{n+1},c_{n+2},\ldots,c_{2n}\}
+U
+k=1,\ldots,n
+c_{n+k}
+n-1
+\{c_1,c_2,\ldots,c_{n-1+k}\}
+k
+\{c_1,c_2,\ldots,c_{n-1+k}\}
+k
+k\binom{n-1+k}k
+c_{n+k}
+k
+\{1,2,\ldots,n\}
+\binom{n-1+k}{n-1}=\binom{n-1+k}k
+\sum_{k=1}^nk\binom{n-1+k}k=n\binom{2n}{n+1}\;.
+n+k
+(n,k)=(0,0)
+k
+n=0
+   \begin{align}    \sum_{k=0}^n k\left(\!\!\binom nk\!\!\right)     &= \sum_{k=0}^n k\binom{n+k-1}k     = \sum_{k=0}^n k\binom{n+k-1}{n-1} \quad\text{symmetry} \\ &= \sum_{k=0}^n (n+k-n)\binom{n+k-1}{n-1} \\ &= \sum_{k=0}^n n\binom{n+k}n-n\sum_{k=0}^n \binom{n+k-1}{n-1} \quad\text{absorption of $n+k$} \\ &= n\sum_{k=0}^n(\binom{n+k}n-\binom{n+k-1}{n-1}) \\ &= n\sum_{k=0}^n\binom{n+k-1}n \quad\text{Pascal's recurrence} \\ &= n\binom{2n}{n+1} \quad\text{upper summation.}  \end{align} 

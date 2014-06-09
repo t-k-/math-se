@@ -1,0 +1,7 @@
+\int_0^{2\pi}\left|\frac{(1-i\cos(\phi))}{(1+a-i\cos(\phi))}\right|^2d\phi
+u=\frac{|1+a|}{\sqrt{a^2+2a+2}}\tan\phi
+ 2\pi - 2\frac{(a^2+2a)}{|1+a|\sqrt{a^2+2a+2}}\int_{-\infty}^{\infty} \frac{1}{u^2 + 1}du= 2\pi - \frac{2\pi(a^2+2a)}{|1+a|\sqrt{a^2+2a+2}}. 
+z=e^{i2\phi}
+z=-2(1+a)^2-1+2|1+a|\sqrt{(1+a)^2+1}
+\frac{(1+a)^2-1}{|1+a|\sqrt{(1+a)^2+1}}
+ \begin{align} \int_0^{2\pi}\left|\frac{(1-i\cos(\phi))}{(1+a-i\cos(\phi))}\right|^2\,\mathrm{d}\phi &=\int_0^{2\pi}\frac{1+\cos^2(\phi)}{(1+a)^2+\cos^2(\phi)}\,\mathrm{d}\phi\\ &=2\pi-\int_0^{2\pi}\frac{(1+a)^2-1}{(1+a)^2+\cos^2(\phi)}\,\mathrm{d}\phi\\ &=2\pi-2\int_0^\pi\frac{(1+a)^2-1}{2(1+a)^2+1+\cos(2\phi)}\,\mathrm{d}(2\phi)\\ &=2\pi-\oint\frac{4(1+a)^2-4}{4(1+a)^2+2+\left(z+\frac1z\right)}\frac{\mathrm{d}z}{iz}\\ &=2\pi+i\oint\frac{4(1+a)^2-4}{z^2+(4(1+a)^2+2)z+1}\,\mathrm{d}z\\ &=2\pi+i(2\pi i)\frac{(1+a)^2-1}{|1+a|\sqrt{(1+a)^2+1}}\\ &=2\pi\left(1-\frac{(1+a)^2-1}{|1+a|\sqrt{(1+a)^2+1}}\right) \end{align} 

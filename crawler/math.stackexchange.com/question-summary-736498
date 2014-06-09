@@ -1,0 +1,23 @@
+f_n
+f(t) = \sum_{n=0}^{\infty} f_n(t)
+(X,d)
+f_n: X \rightarrow \mathbb C
+\epsilon >0
+x_0 \in X
+\forall \ n \in \mathbb N \ \exists \delta >0: d(x_0,x) \le \delta \Rightarrow |f_n(x_0)-f_n(x)| \le\epsilon
+K
+\epsilon^{'} = \epsilon / K
+\delta = \min \{\delta_1, ..., \delta_K
+\delta_j
+d(x_0,x) \le \delta \Rightarrow |f_j(x_0)-f_j(x)| \le\epsilon^{'}
+1 \le j \le K
+\epsilon^{'} > 0
+X = [0,1]
+f_n(x) = x^{n-1}-x^n, n\ge 1
+ f(x)  = \lim_{N\to \infty} 1-x^N= \begin{cases} 1 & \text{if } x <1\\ 0 & \text{if } x =1\end{cases} 
+\epsilon >0
+r =\epsilon/3
+ \forall r>0\ \ \exists N>0 \ \  N'\ge N\implies\forall x\in X\ \   d\left( \sum_{n=1}^{N'} f_n(x) - f(x) \right)<r 
+\sum_{n=1}^{N_r} f_n(x) 
+\delta_r
+ d(x,y)\le \delta_r\implies d\left(\sum_{n=1}^{N_r} f_n(x) , \sum_{n=1}^{N_r} f_n(y) \right)\le r; \\ d\left( \sum_{n=1}^{N_r} f_n(x) , f(x) \right)<r;\ \ \  d\left( \sum_{n=1}^{N_r} f_n(y), f(y) \right)<r;\\ \implies  d\left( f(y) ,f(x) \right)\le d\left( \sum_{n=1}^{N_r} f_n(x) , f(x) \right)+ d\left( \sum_{n=1}^{N_r} f_n(y), f(y) \right)+d\left(\sum_{n=1}^{N_r} f_n(x) , \sum_{n=1}^{N} f_n(y) \right)\\ \le 3r = \epsilon. 

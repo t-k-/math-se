@@ -1,0 +1,27 @@
+N_{\text{ways to get 
+}}
+ x_1+x_2+x_3+x_4 = 13\;\text{ where },1\leq x_i \leq 6\;\;\forall\;1\leq i \leq 4. 
+u(x)=(x+x^2+\cdots+x^6)^4
+13
+N=[x^{13}]u(x)
+x^{13}
+u(x)
+N
+u(x)=x^4(1-x^6)^4v(x)
+v(x)=(1-x)^{-4}
+x^4(1-x^6)^4
+x^4-4x^{10}
+16
+N=[x^9]v(x)-4[x^3]v(x)
+6v(x)
+(1-x)^{-1}=\sum\limits_{n}x^n
+n
+[x^n]v(x)={n+3\choose 3}
+13
+ \frac1{6^4}N=\frac1{6^4}\left({12\choose 3}-4{6\choose 3}\right)=\frac{35}{324}. 
+ \begin{array}{r|c} k & p(x_1+x_2=k) \\ \hline{} \\ 2 & 1/36 \\ 3 & 2/36 \\ 4 & 3/36 \\ 5 & 4/36 \\ 6 & 5/36 \\ 7 & 6/36 \\ 8 & 5/36 \\ 9 & 4/36 \\ 10 & 3/36 \\ 11 & 2/36 \\ 12 & 1/36 \\  \end{array} 
+ p(x_1+x_2+x_3+x_4=13)=
+\begin{array}{} p( ((x_1+x_2=2) \land (x_3+x_4=11) ) &\lor \\ ((x_1+x_2=3) \land (x_3+x_4=10)) &\lor  \\ ((x_1+x_2=4) \land (x_3+x_4=9)) & \lor   \\ \cdots &\lor \\ ((x_1+x_2=11) \land (x_3+x_4=2))) &=  \end{array} 
+ \begin{array}{} p(x_1+x2=2)\cdot p(x_3+x_4=11) &+ \\  p(x_1+x2=3)\cdot p(x_3+x_4=10) &+ \\ p(x_1+x+2=5)\cdot p(x_3+x_4=9)& + \\ \cdots &+ \\ p(x_1+x2=11)\cdot p(x_3+x_4=2)&= \end{array}
+\frac{1}{36} \cdot \frac{2}{36} + \frac{2}{36} \cdot \frac{3}{36} + \frac{3}{36} \cdot \frac{4}{36} + \frac{4}{36} \cdot \frac{5}{36} + \frac{5}{36} \cdot \frac{6}{36} + \\  \frac{6}{36} \cdot \frac{5}{36} + \frac{5}{36} \cdot \frac{4}{36} +  \frac{4}{36} \cdot \frac{3}{36} + \frac{3}{36} \cdot \frac{2}{36} + \frac{2}{36} \cdot \frac{1}{36}=
+\frac{(2+6+12+20+30 ) \cdot 2}{36 \cdot 36}=\frac{140}{36 \cdot 36 }=\frac{35}{324}

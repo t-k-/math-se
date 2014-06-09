@@ -1,0 +1,12 @@
+L \in (0, +\infty)
+\lim\limits_{n \to +\infty}\left( S_n - T_n\right)
+S_n = \int\limits_1^n \log x\, dx
+T_n = \sum_{k = 1}^{n-1}\frac{\log(k)+\log(k+1)}{2}
+S_n=\int_1^n \ln x\;dx=n\ln n-n+1
+T_n=\frac{1}{2}\sum_{k=1}^{n-1}\left(\ln k+\ln (k+1)\right)=\frac{1}{2}\left(\ln n!+\ln (n-1)!\right)=\ln \frac{n!}{\sqrt{n}}
+\begin{align*}\ln \frac{n!}{\sqrt{n}}&=\ln\left[\frac{ \sqrt{2\pi n}}{\sqrt{n}}\left(\frac{n}{e}\right)^n\left(1+O\left(\frac{1}{n}\right)\right)\right]\\&=\ln \sqrt{2\pi}+n\ln \frac{n}{e}+\ln \left(1+O\left(\frac{1}{n}\right)\right)\\&=\ln \sqrt{2\pi}+n\ln n-n+\ln \left(1+O\left(\frac{1}{n}\right)\right)\end{align*}
+S_n-T_n=1-\ln \sqrt{2\pi}-\ln \left(1+O\left(\frac{1}{n}\right)\right)
+\lim_{n\to\infty} S_n-T_n=1-\ln \sqrt{2\pi}
+\sqrt{2\pi}<e
+\sum u_n
+u_k=(2k+1)\log(1+\frac{1}{k})-2=(2k+1)(\frac{1}{k}-\frac{1}{2k^2}+\frac{1}{3k^3}+o(\frac{1}{k^3}))-2=\frac{1}{6k^2}+o(\frac{1}{k^2})

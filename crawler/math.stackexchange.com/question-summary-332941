@@ -1,0 +1,6 @@
+\frac{dy}{dr}
+ \begin{align*} y=f(a,b)\\ a=a(u,v) &&b=b(u,v)\\ u=u(r)&&v=v(r) \end{align*} 
+\frac{da}{dr}
+\frac{db}{dr}
+ \begin{align*} \frac{da}{dr} &= \frac{\partial a}{\partial u}\frac{du}{dr} + \frac{\partial a}{\partial v}\frac{dv}{dr}\\\frac{db}{dr} &= \frac{\partial b}{\partial u}\frac{du}{dr} + \frac{\partial b}{\partial v}\frac{dv}{dr} \end{align*} 
+ \begin{align*} \frac{dy}{dr} &= \frac{\partial y}{\partial a}\frac{da}{dr}+\frac{\partial y}{\partial b}\frac{db}{dr}\\ &=\frac{\partial y}{\partial a}\begin{pmatrix}\frac{\partial a}{\partial u}\frac{du}{dr}+ \frac{\partial a}{\partial v}\frac{dv}{dr}\end{pmatrix}+\frac{\partial y}{\partial b}\begin{pmatrix}\frac{\partial b}{\partial u}\frac{du}{dr} + \frac{\partial b}{\partial v}\frac{dv}{dr}\end{pmatrix}\\&= \frac{\partial y}{\partial a}\frac{\partial a}{\partial u}\frac{du}{dr} + \frac{\partial y}{\partial a}\frac{\partial a}{\partial v}\frac{dv}{dr}+\frac{\partial y}{\partial b}\frac{\partial b}{\partial u}\frac{du}{dr} + \frac{\partial y}{\partial b}\frac{\partial b}{\partial v}\frac{dv}{dr} \end{align*} 

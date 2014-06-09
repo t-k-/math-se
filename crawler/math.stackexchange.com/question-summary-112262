@@ -1,0 +1,30 @@
+u_{xx}\,u_{yy} - u_{xy}^2 = f(x)
+f(x) > 0
+f(x)= -x^2
+F(x,y,u,u_x,u_y,u_{xx},u_{xy},u_{yy}) = 0
+a:=\frac{\partial F}{\partial u_{xx}}
+b:=\frac{\partial F}{\partial u_{xy}}
+c:=\frac{\partial F}{\partial u_{xx}}
+\frac{d\,y}{d\,x} = \frac{b \;\pm\;\sqrt[2]{b^2-4\,a\,c}}{2\,a},
+b^2 - 4\,a\,c = 4\,u_{xy}^2 - 4\,u_{xx}\,u_{yy} = 4\,\left( u_{xy}^2 -u_{xx}\,u_{yy} \right) = 4\,\left(-f(x)\right) \overset{f(x)>0}{=} -4\,\left|f(x)\right| \Rightarrow  u_{xx}\,u_{yy} > u_{xy}^2 \Rightarrow \textrm{ elliptic. }
+f(x)= -x^2
+\frac{dy}{dx} = \frac{-u_{xy} \;\pm\; x}{u_{yy}},
+y_1(x)=c_1
+y_2(x)=c_2
+\xi
+\eta
+u(x,y) = X(x)+Y(y),
+u_x = X'\\ u_y = Y'\\ u_{xx} = X''\\ u_{yy} = Y''\\ u_{xy} = 0\\
+X''\,Y'' = -x^2,
+\frac{X''}{x^2} = \frac{-1}{Y''} = k
+X'' = k\;x^2
+ \longrightarrow X_c(x) = C_1\;x+C_2
+X'' = 0
+ X_p(x) = C_3\;x^4
+X'_p(x) = 4\;C_3\;x^3
+ X''_p(x) = 12\;C_3\;x^2 
+\rightarrow C_3 = \frac{k}{12} \Rightarrow
+X(x) = C_1\;x+ C_2 + \frac{k}{12}\;x^4.
+Y(y)
+Y(y) = D_1\;y+D_2 - \frac{1}{2\;k}\;y^2
+u(x,y) = X(x) + Y(y) = C_1\;x+ C_2 + \frac{k}{12}\;x^4 + D_1\;y+D_2 - \frac{1}{2\;k}\;y^2

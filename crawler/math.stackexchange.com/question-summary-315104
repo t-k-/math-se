@@ -1,0 +1,49 @@
+f:\mathbb{R}^n\rightarrow\mathbb{R}
+f(x)=\langle x,x\rangle
+g:\mathbb{R}\rightarrow\mathbb{R}
+g(x)=\sqrt{x}
+h:=g\circ f:\mathbb{R}^n\rightarrow\mathbb{R}
+x\mapsto \|x\|
+h
+a
+D(g(f(a)))\circ D f(a)
+x_1,\ldots,x_n
+\mathbb{R}^n
+f(\vec{x}) = x_1^2+\cdots+x_n^2
+h(\vec{x}) = \sqrt{x_1^2+\cdots+x_n^2} \equiv \left(x_1^2+\cdots+x_n^2\right)^{1/2} \, . 
+h
+\partial h/\partial x_k
+\vec{x}
+x_k
+\frac{\partial h}{\partial x_k} = \frac{1}{2}\times\left(x_1^2+\cdots+x_n^2\right)^{-1/2} \times 2x_k \equiv \frac{x_k}{\sqrt{x_1^2+\cdots+x_n^2}} \, . 
+\sqrt{x^2}
+(Dh)(\vec{x}) =  \left(\frac{\partial h}{\partial x_1},\ldots,\frac{\partial h}{\partial x_n}\right) = \frac{(x_1,\ldots,x_n)}{\sqrt{x_1^2+\cdots+x_n^2}}
+(Dh)(\vec{x})=\vec{x}/||\vec{x}||.
+f
+g
+t\neq 0
+ Df_x(k)=(x,k)+(k,x)=2(x,k) 
+ Dg_t(s)=g'(t)s=\frac{s}{2\sqrt{t}} 
+h=g\circ f
+x\neq 0
+ Dh_x(k)=Dg_{f(x)}\circ Df_x(k)=g'(f(x))2(x,h)=\frac{(x,k)}{\|x\|} 
+a
+\delta a
+a
+a
+a
+\delta a
+\hat{a}=a/\|a\|
+y:=f(a)
+(2)
+(3)
+(1)
+dh(a)
+dh(a)=dg\bigl(f(a)\bigr)\circ df(a)\ .\tag{1}
+f(a+X)-f(a)=(a+X)\cdot(a+X)-a\cdot a=2a\cdot X+|X|^2\tag{2}
+df(a).X=2 a\cdot X\ .
+g'(y)={1\over 2\sqrt{y}}\qquad(y>0)
+dg(y).Y={1\over 2g(y)}Y\ .\tag{3}
+dh(a).X=dg\bigl(f(a)\bigr)\bigl(df(a).X\bigr)={1\over 2g\bigl(f(a)\bigr)}\bigl(2a \cdot X)\bigr)={a\cdot X\over|a|}\ .
+\nabla h(a)={a\over|a|}\qquad(a\ne0)
+dh(a).X=\nabla h(a)\cdot X\qquad(X\in{\mathbb R}^n)\ .

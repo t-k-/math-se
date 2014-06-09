@@ -1,0 +1,16 @@
+N_A
+N_B
+N_A = 100
+N_B = 1000
+s = \sum_{A}x - \sum_{B}x
+\mu_C
+x
+C = A U B
+\mu_C = \frac{\sum_{A}x+\sum_{B}x}{N_A+N_B}
+E[s]
+\mu_s = \mu_C * (N_A-N_B)
+v_s = \sum_{A}x^2 - \frac{(\sum_{A}x)^2}{N_A} +\sum_{B}x^2 - \frac{(\sum_{B}x)^2}{N_B}
+t
+t = \frac{E[s] - \mu_s}{\sqrt{ v_s * \frac{N_C-2}{N_C}}}
+N_C = N_A+N_B
+\frac{N_A}{N_B}

@@ -1,0 +1,24 @@
+d=2r\arcsin\left(\sqrt{\sin^2\left(\dfrac{\phi_{2}-\phi_{1}}{2}\right)+\cos(\phi_{1})\cos(\phi_{2})\sin^2\left(\dfrac{\lambda_{2}-\lambda_{1}}{2}\right)}\right)
+d=2r\arcsin\left(\sqrt{\cos^2(\phi_{1})\sin^2\left(\dfrac{\lambda_{2}-\lambda_{1}}{2}\right)}\right)
+\lambda_{2}
+\lambda_{2}=\lambda_{1}-2\arcsin\left(\sec(\phi_{1})\sqrt{\sin\left(\dfrac{d}{2r}\right)}\right)
+\lambda_{2}=2\arcsin\left(\sec(\phi_{1})\sqrt{\sin\left(\dfrac{d}{2r}\right)}\right)+\lambda_{1}
+40° lat, 10° lng
+40° lat, 11° lng
+6371km
+d=2*6371km*\arcsin\left(\sqrt{\cos^2(40°)\sin^2\left(\dfrac{11°-10°}{2}\right)}\right)=85.1798km
+\lambda_{2}=2\arcsin\left(\sec(40°)\sqrt{\sin\left(\dfrac{85.1798km}{2*6371km}\right)}\right)+10°=10.0282
+11°
+\Delta\lambda
+d
+\phi
+\phi\neq\pi/2 + k\pi
+ \Delta\lambda = \pm 2 \arcsin\left\lvert \frac{\sin\frac{d}{2r}}{\cos\phi_1} \right\lvert 
+1-\cos(x)=2\sin^2(x/2)
+(1)
+ \begin{align} \cos\left(\frac dr\right)&=\sin^2(\phi)+\cos^2(\phi)\cos(\Delta\lambda)\\ 1-\cos\left(\frac dr\right)&=\cos^2(\phi)-\cos^2(\phi)\cos(\Delta\lambda)\\ &=\cos^2(\phi)(1-\cos(\Delta\lambda))\tag{1} \end{align} 
+ \begin{align} 2\sin^2\left(\frac{d}{2r}\right)&=\cos^2(\phi)\ 2\sin^2\left(\frac{\Delta\lambda}{2}\right)\\ \pm\sin\left(\frac{d}{2r}\right)&=\cos(\phi)\sin\left(\frac{\Delta\lambda}{2}\right)\tag{2} \end{align} 
+ \begin{align} \Delta\lambda &=\pm2\arcsin\left(\frac{\sin\left(\frac{d}{2r}\right)}{\cos(\phi)}\right)\\ &=\pm2\arcsin\left(\sec(\phi)\sin\left(\frac{d}{2r}\right)\right)\tag{3} \end{align} 
+(3)
+ \lambda_2=\lambda_1\pm2\arcsin\left(\sec(\phi_1)\sqrt{\sin\left(\dfrac{d}{2r}\right)}\right) 
+ \lambda_2=\lambda_1\pm2\arcsin\left(\sec(\phi_1)\sqrt{\sin^2\left(\dfrac{d}{2r}\right)}\right) 

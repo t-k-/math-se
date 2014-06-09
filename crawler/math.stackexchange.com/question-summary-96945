@@ -1,0 +1,25 @@
+f: (a,b) \times \mathbb{R} \rightarrow \mathbb{R}
+C^1
+D:=(a,b) \times \mathbb{R}
+A,B
+t_0 \in (a,b)
+| f(t,x)| \leq A+B|x|  \textrm{ for }  (t,x) \in D,
+x_0\in \mathbb{R}
+x: (a,b)\rightarrow \mathbb{R}
+x(t_0)=x_0
+\frac{dx}{dt}=f(t,x) 
+X=\{x:(a,b) \rightarrow \mathbb{R}: \sup_{t\in (a,b)}  e^{-B\gamma|t-t_0|} |x(t)|   <\infty, x(t_0)=x_0 \}
+d(x,y)=\sup_{t\in (a,b)} e^{-B\gamma|t-t_0|} |x(t)-y(t)|
+x,y \in X
+\gamma
+(X,d)
+Tx(t):=x_0+\int_{t_0}^t f(s,x(s))ds
+x \in X
+t\in (a,b)
+|f(s,x(s))|\leq A+Be^{B\gamma|t-t_0|}\cdot sup_{t\in (a,b)} |x(s)|e^{-B\gamma|t-t_0|} |x(t)|
+| \int_{t_0}^t e^{B \gamma |s-t_0|} ds| \leq \frac{1}{B \gamma} e^{B\gamma|t-t_0|}
+T
+\gamma>0
+X
+x^2
+ \frac12\frac{dx^2}{dt}=xf(x,t)\leq |x|(A+B|x|)\leq A+(A+B)x^2, 

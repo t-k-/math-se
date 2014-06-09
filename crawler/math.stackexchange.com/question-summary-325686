@@ -1,0 +1,15 @@
+B
+s\wedge t := \min\{s,t\}
+s\vee t := \max\{s,t\}
+ \mathbb E[\exp(B(s\wedge t) + B(s\vee t))] \\=\mathbb E[\exp(B(s\wedge t) + B(s\wedge t) + [B(s\vee t) - B(s\wedge t)])]  \\=\mathbb E[\exp(2\sqrt{(s\wedge t)} B(1))] \cdot \mathbb E[\exp(\sqrt{\vert t-s \vert}B(1))] 
+B(t)=_d \sqrt{t}B(1)
+B(s \vee t)-B(s \wedge t)
+2B(s \wedge t)
+\mathbb{E}e(2B(s \wedge t) + B(s \vee t)-B(s \wedge t)) = \mathbb{E}e(2B(s \wedge t)) \cdot \mathbb{E}(B(s \vee t)-B(s \wedge t))
+B(s \wedge t) + B(s \wedge t) = 2 B(s \wedge t) \stackrel{d}{=} 2 \sqrt{s \wedge t} \cdot B(1)
+B(s \vee t)-B(s \wedge t) \stackrel{d}{=} B(s \vee t - s \wedge t) = B(|t-s|) \stackrel{d}{=} \sqrt{|t-s|} \cdot B(1)
+B(s\wedge t)+B(s\vee t)=2B(u)+B'(v)
+u=s\wedge t
+v=s\vee t-s\wedge t=|t-s|
+B'(v)=B(v+u)-B(u)=_dB(v)
+B(u)

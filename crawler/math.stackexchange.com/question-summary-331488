@@ -1,0 +1,17 @@
+X
+G
+Y
+X
+N_X
+1
+(1,N-1)
+1/N
+1/N^2
+Q_k = \frac{|D_k|}{N}
+P_{kh}
+\begin{array}{rcl} Q_k & = & \sum_{h=1}^{N-1} P_{kh} = \\ & = & \sum_{h=1}^{N-1} \frac{1}{Nk} \sum_{i \in D_k} \sum_{j \in N_i} I(j \in D_h) = \\ & = &  \frac{1}{Nk} \sum_{i \in D_k} \sum_{j \in N_i} \sum_{h=1}^{N-1}I(j \in D_h) = \\ & = &  \frac{1}{Nk} \sum_{i \in D_k} \sum_{j \in N_i} 1 = \\ & = &  \frac{1}{Nk} \sum_{i \in D_k} |N_i| = \\ & = &  \frac{1}{Nk} \sum_{i \in D_k} k = \\ & = &  \frac{1}{Nk} |D_k| k = \frac{|D_k|}{N}. \end{array}
+1
+1
+2
+N-1
+P_{1,N-1} = \frac{1}{N}\sum_{j \in N_1}I(j \in D_{N-1}) = \frac{1}{N}I(2 \in D_{N-1}) = \frac{1}{N}

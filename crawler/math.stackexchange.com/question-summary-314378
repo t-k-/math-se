@@ -1,0 +1,22 @@
+\mathbf{u}
+\mathbf{u}
+E(\mathbf{u}) = \int_\Omega \left\|\mathbf{u}\cdot\nabla I + \frac{\partial I}{\partial t}\right\|^2dx + \lambda\int_\Omega \nabla \mathbf{u} : \nabla \mathbf{u} dx
+E(\mathbf{u}) = \int_\Omega \left(\mathbf{u}\cdot\nabla I + \frac{\partial I}{\partial t}\right) \left(\mathbf{v}\cdot\nabla I\right) dx + \lambda\int_\Omega\nabla\mathbf{u}:\nabla\mathbf{v}dx
+\mathbf{v}
+\newcommand{\b}{\mathbf}
+\b{v}\in V
+V
+V
+\b{u}
+\b{u} = \mathrm{argmin}_{\b{v}} E(\b{v})
+\b{v}\in V
+\|\cdot\|
+\epsilon
+\epsilon \to 0
+\b{v}\in V
+B(\b{u},\b{v}) = F(\b{v})
+ \lim_{\epsilon\to 0}\frac{d}{d\epsilon}E(\b{u}+\epsilon\b{v}) = 0 
+ \begin{aligned} E(\b{u}+\epsilon\b{v}) &= \int_\Omega \left|(\b{u}+\epsilon\b{v})\cdot\nabla I + \frac{\partial I}{\partial t}\right|^2 + \lambda\int_\Omega \nabla (\b{u}+\epsilon\b{v}): \nabla (\b{u}+\epsilon\b{v})  \\ &= \int_\Omega \left\{(\b{u}+\epsilon\b{v})\cdot\nabla I + \frac{\partial I}{\partial t}\right\}^2 + \lambda\int_\Omega \nabla \b{u}: \nabla \b{u} + \lambda \epsilon^2\int_\Omega \nabla \b{v}: \nabla \b{v} + 2\lambda \epsilon\int_\Omega \nabla \b{u}: \nabla \b{v} \end{aligned} 
+ \begin{aligned} \frac{d}{d\epsilon}E(\b{u}+\epsilon\b{v}) &= 2\int_\Omega \left((\b{u}+\epsilon\b{v})\cdot\nabla I + \frac{\partial I}{\partial t}\right) \frac{d}{d\epsilon}\left((\b{u}+\epsilon\b{v})\cdot\nabla I  + \frac{\partial I}{\partial t}\right)  \\ &\quad + 2\lambda \epsilon\int_\Omega \nabla \b{v}: \nabla \b{v}+2\lambda\int_\Omega \nabla \b{u}: \nabla \b{v} \\ &= 2\int_\Omega \left((\b{u}+\epsilon\b{v})\cdot\nabla I + \frac{\partial I}{\partial t}\right)  \left(\mathbf{v}\cdot\nabla I\right) + 2\lambda \epsilon\int_\Omega \nabla \b{v}: \nabla \b{v}+2\lambda\int_\Omega \nabla \b{u}: \nabla \b{v} \end{aligned} 
+ 0=\lim_{\epsilon \to 0}\frac{d}{d\epsilon}E(\b{u}+\epsilon\b{v}) = 2\int_\Omega \left(\b{u}\cdot\nabla I + \frac{\partial I}{\partial t}\right)  \left(\mathbf{v}\cdot\nabla I\right) +2\lambda\int_\Omega \nabla \b{u}: \nabla \b{v} 
+ \int_\Omega \left(\b{u}\cdot\nabla I \right)  \left(\mathbf{v}\cdot\nabla I\right) +\lambda\int_\Omega \nabla \b{u}: \nabla \b{v} = \int_\Omega \frac{\partial I}{\partial t} \left(\mathbf{v}\cdot\nabla I\right) 

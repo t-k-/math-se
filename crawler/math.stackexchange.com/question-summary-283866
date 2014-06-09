@@ -1,0 +1,67 @@
+T(n) = T(n - 1) + \Theta(n)
+T(n)=\Theta(n^2)
+ \begin{align} T(n) &= T(n - 1) + \Theta(n) \\      &= d(n - 1)^2 + cn \\      &= d(n^2 - 2n + 1) + cn \\      &= dn^2 - 2dn + d + cn .... \\ \end{align}
+\le
+\ge
+\Omega
+T(n) = T(n-1)+\Theta(n)
+T(n) = T(n-1)+O(n)
+c>0
+n
+T(n)=O(n^2)
+T(n)\le kn^2
+k>0
+n
+k
+c
+T(n)\le T(n-1)+cn 
+k
+T(n)\le k(n-1)^2+cn\le kn^2
+n/(2n-1)
+n\ge 1
+1
+k\ge c
+k=c
+n\ge 1
+T(n)=O(n^2)
+ \begin{align} T(n)&\le T(n-1)+cn\\     &\le k(n-1)^2+cn \end{align} 
+ \begin{align} k(n-1)^2+cn&\le kn^2\\ k(n^2-2n+1)+cn&\le kn^2\\ kn^2-2kn+k+cn&\le kn^2\\ -2kn+k+cn&\le 0\\ k(1-2n)&\le-cn\\ k(2n-1)&\ge cn\\ k&\ge \frac{cn}{2n-1} \end{align} 
+ \begin{align} T(n)&\le T(n-1) +cn &\text{given}\\     &\le c(n-1)^2+cn &\text{by assumption}\\     &=cn^2-2cn+c+cn\\     &=cn^2-cn+c\\     &=c(n^2-n+1)\le cn^2 &\text{ta daa!} \end{align} 
+T(n)
+T(n) = T(n-1)+g(n) = T(n-2)+g(n-1)+g(n)=\ldots
+T(n)
+T()
+\Theta()
+\Theta(n)
+g(n)\in\Theta(n)
+g_1
+g_2
+n
+g_1\cdot n\leq g(n)\leq g_2\cdot n
+g()
+\sum_{i=0}^n i = \frac{n(n+1)}{2}
+T()
+T_1
+T_2
+T_1\cdot n^2\leq T(n)\leq T_2\cdot n^2
+n
+T_1
+T_2
+g_1
+g_2
+g()
+T(n)\in\Theta(n^2)
+T_1
+T_2
+T(n)\in\Theta(n^2)
+g_1
+g_2
+g(n)\in\Theta(n)
+g(n)\in\Theta(n)
+T(n)\in\Theta(n^2)
+T_2
+T_2n^2+(g_2-2T_2)n+T_2\leq T_2\cdot n^2
+n
+T_2n^2
+\Theta()
+\begin{align} T(n) &= T(n-1)+g(n) \\ &\leq T(n-1) + g_2\cdot n && \text{by the definition of $g(n)\in\Theta(n)$} \\ &\leq T_2\cdot (n-1)^2+g_2\cdot n&& \text{by the definition of $T(n)\in\Theta(n^2)$} \\ &=T_2 n^2+(g_2-2T_2)n+T_2&& \text{by algebra} \\ \end{align}

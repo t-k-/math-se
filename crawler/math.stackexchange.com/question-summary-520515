@@ -1,0 +1,26 @@
+I\left(n,\epsilon\right)=\int_{-{\rm i}\infty}^{+{\rm i}\infty} \frac{{\rm e}^{\epsilon z}}{\left(z+\epsilon\right)^n}\,{\rm d}z
+n\gt 0
+\epsilon \in \left[-1, +1\right]
+I\left(n, \epsilon\right)
+\epsilon=-1
+\oint_C dz \frac{e^{-z}}{(z-1)^n}
+C
+R
+-\int_{-i R}^{i R} dz \frac{e^{-z}}{(z-1)^n} + i R \int_{-\pi/2}^{\pi/2} d\theta \, e^{i \theta} \frac{e^{-R \cos{\theta}} e^{-i R \sin{\theta}}}{(R e^{i \theta}-1)^n}
+R \to \infty
+n \gt 0
+2 R \int_0^{\pi/2} d\theta \, \frac{e^{-R \cos{\theta}}}{R^n} = \frac{2}{R^{n-1}} \int_0^{\pi/2} d\theta \, e^{-R \sin{\theta}} \le \frac{2}{R^{n-1}} \int_0^{\pi/2} d\theta \,e^{-2 R \theta/\pi} \le \frac{\pi}{R^n}
+i 2 \pi
+z=1
+\frac{1}{(n-1)!} \left [\frac{d^{n-1}}{dz^{n-1}} e^{-z} \right ]_{z=1} = \frac{(-1)^{n-1}}{(n-1)!} \frac{1}{e}
+\int_{-i \infty}^{i \infty} dz \frac{e^{-z}}{(z-1)^n} = i 2 \pi \frac{(-1)^{n}}{(n-1)!} \frac{1}{e}
+\epsilon = +1
+\int_{-i \infty}^{i \infty} dz \frac{e^{z}}{(z+1)^n} = i 2 \pi \frac{1}{(n-1)!} \frac{1}{e}
+z=-\epsilon
+\epsilon=1
+z=-1
+e^{\epsilon z}=e^{\epsilon x}e^{iy\epsilon}
+\epsilon=1
+e^{\epsilon x}\rightarrow 0
+x\rightarrow-\infty
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\expo}[1]{{\rm e}^{#1}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}

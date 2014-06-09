@@ -1,0 +1,27 @@
+x
+y
+\int_{0}^{1} t^{x-1} \cdot (1-t)^{y-1} dt = \frac{(x-1)! \cdot (y-1)!}{(x+y-1)!}
+m
+\int_0^{\infty} p^{m-1}e^{-p}dp=(m-1)! \tag{0}
+x=r\cos\theta,\qquad y=r\sin\theta,\qquad dx\,dy\rightarrow rdr\,d\theta.
+2\int_0^{\pi/2}\cos^{2m-1}\theta\sin^{2n-1}\theta \,d\theta=\frac{(m-1)!(n-1)!}{(m+n-1)!}.\tag{2}
+t=\sin^2\theta
+dt=2\sin\theta\cos\theta\,d\theta
+\cos^2\theta=1-t
+        \mathcal{L}(f*g) = \mathcal{L}(g)\cdot \mathcal{L}(f)\,, \tag{1}     
+       f*g = \int_0^t f(s)g(t-s)\,\mathrm{d}t\,. \tag{2}     
+    f(t) = t^x
+g(t) = t^y 
+(2)
+(1)
+x!
+y!
+(3)
+(4)
+t=1
+ B(x+1,y+1)=\int^{1}_{0}t^{x}\, (1-t)^{y}\,dt= \frac{\Gamma(x+1)\Gamma{(y+1)}}{\Gamma{(x+y+2)}}\,. 
+ f * g = \int_0^t s^x (t-s)^y\,\mathrm{d}s\,, \tag{3} 
+    \mathcal{L}(t^x * t^y) = \mathcal{L}(t^x)\mathcal{L}(t^y)                           = \frac{x!}{s^{x+1}} \cdot \frac{y!}{s^{y+1}}                           = \frac{x! \cdot y!}{s^{x+y+2}}\,. 
+ t^x * t^y = \mathcal{L}^{-1}\left( \frac{x! \cdot y!}{s^{x+y+2}} \right)           = t^{x+y+2} \frac{x! \cdot y!}{(x+y+1)!}\,. \tag{4} 
+   \int_0^t s^x(t-s)^y \mathrm{d}s = t^{x+y+2} \frac{x! \cdot y!}{(x+y+1)!} 
+   \int_0^1 s^x(1-s)^y \mathrm{d}s = \frac{x! \cdot y!}{(x+y+1)!} 

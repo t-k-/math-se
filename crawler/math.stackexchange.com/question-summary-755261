@@ -1,0 +1,87 @@
+X_i
+Y_i
+\mathbb{R}
+F
+G
+G(y)>F(y)
+y
+S^X_n=\sum_{i=1}^n X_i
+S^Y_n=\sum_{i=1}^n Y_i
+A>0
+B<0
+ \mathbb P(S^X_n\text{ hits }A\text{ before }B) > \mathbb P(S^Y_n\text{ hits }A\text{ before }B) 
+S_n^X
+A
+B
+\tau_A := \inf \{n \geq 0: S_n \geq A\}
+\tau_B := \inf \{n \geq 0: S_n \leq B\}
+\mathbb{N} \cup \{+\infty\}
+\mathbb{P}_{(S_n^X)} (\tau_A < \tau_B) > \mathbb{P}_{(S_n^Y)} (\tau_A < \tau_B).
+A
+A
+B
+X
+Y
+\tau_A < +\infty
+\tau_B < +\infty
+\tau_A < \tau_B
+X \equiv 0
+G > F
+\Omega
+(X',Y')
+\Omega
+X' = X
+Y' = Y
+X' > Y'
+G>F
+U
+[0,1]
+(X',Y') := (F^{-1} (U), G^{-1} (U))
+F^{-1}
+G^{-1}
+F
+G
+F^{-1} > G^{-1}
+(0,1)
+(X_n',Y_n')_{n \geq 1}
+(X',Y') = (X_1',Y_1')
+(X_n')_{n \geq 1} = (X_n)_{n \geq 1}
+(Y_n')_{n \geq 1} = (Y_n)_{n \geq 1}
+S_n^{X'} := \sum_{i=1}^n X_i'
+Y'
+(S_n^{X'})_{n \geq 1} = (S_n^X)_{n \geq 1}
+(S_n^{Y'})_{n \geq 1} = (S_n^Y)_{n \geq 1}
+X' > Y'
+X_i' > Y_i'
+i
+\tau_A^{X'} := \inf \{n \geq 0: S_n^{X'} \geq A\}
+\tau_A^{Y'}
+\tau_B^{X'}
+\tau_B^{Y'}
+S_n^{Y'} \geq A
+S_n^{X'} \geq A
+n
+\tau_A^{X'} \leq \tau_A^{Y'}
+\tau_B^{X'} \geq \tau_B^{Y'}
+\mathbb{P}_{(S_n^X)} (\tau_A < \tau_B) = \mathbb{P} (\tau_A^{X'} < \tau_B^{X'}) \geq \mathbb{P} (\tau_A^{Y'} < \tau_B^{Y'}) = \mathbb{P}_{(S_n^Y)} (\tau_A < \tau_B).
+\tau_A^{X'} < \tau_B^{X'}
+\tau_A^{Y'} > \tau_B^{Y'}
+G > F
+\mathbb{P} (Y < t) > 0
+t
+\mathbb{P} (X > t) > 0
+t
+M \in (A, +\infty]
+\mathbb{P} (X_1' \geq M) = \mathbb{P} (Y_1' \geq A)
+M
+X
+Y
+X_1' \in (A,M)
+Y_1' < A
+\mathbb{P} (X_1' \in (A,M)) = F(M)-F(A) = G(A)-F(A) > 0.
+X_1' \in (A,M)
+Y_2' < B-A
+\tau_A^{X'} = 1 < \tau_B^{X'}
+\tau_A^{Y'} > \tau_B^{Y'} = 2
+(G(A)-F(A))G(B-A)
+\mathbb{P}_{(S_n^X)} (\tau_A < \tau_B) - \mathbb{P}_{(S_n^Y)} (\tau_A < \tau_B) \geq (G(A)-F(A))G(B-A) > 0.

@@ -1,0 +1,14 @@
+n(A-B) = n(A)-n(A\cap B)
+\begin{array}{|l|l|l|} \hline A&B\\\hline     V & V & n(A\cap B) \\     V & F & n(a)      \\     F & V & \text{~}  \\     F & F & \text{~}    \\\hline \end{array}
+n(S\cup T)=n(S)+n(T)
+T\cap S = \emptyset
+(A-B)\cup (A\cap B) = A
+(A-B)\cap(A\cap B)=\emptyset
+S=A-B
+T=A\cap B
+n(A) = n(S\cup T) = n(S) + n(T) = n(A-B) + n(A\cap B)
+n(A - B) = n(A) - n(A\cap B)
+\underline{\mathbf{A=(A-B) \cup (A\cap B)}}
+x\in A \Leftrightarrow x\in A \wedge (x\in B\vee x\notin B) \Leftrightarrow (x\in A \wedge x\in B) \vee (x\in A \wedge x\notin B) \Leftrightarrow (x\in A\cap B)\vee (x\in A-B) \Leftrightarrow x\in (A\cap B)\cup (A-B)
+\underline{\mathbf{\emptyset = (A-B) \cap (A\cap B)}}
+x\in (A-B) \cap (A\cap B) \Leftrightarrow x\in (A-B) \wedge x\in (A\cap B) \Leftrightarrow (x\in A \wedge x\notin B) \wedge (x\in A \wedge x\in B) \Leftrightarrow x\in A \wedge (x\notin B \wedge x\in B) \Leftrightarrow x\in A \wedge F \Leftrightarrow F

@@ -1,0 +1,27 @@
+ \gcd(m, n) = 1
+x\equiv a\pmod m
+x\equiv b\pmod n
+a
+b
+M_1 = n
+M_2 = m
+(M_1,m)=(n,m)=1
+M_1
+M_1^*
+M_1^*.M_1 \equiv 1 \pmod{m}
+M_2
+M_2^*
+\mod{n}
+x= a.M_1.M_1^* + b.M_2.M_2^*
+x \equiv a.M_1.M_1^* + b.M_2.M_2^* \equiv a.1 + b.0 \equiv a \pmod{m}
+x \equiv a.M_1.M_1^* + b.M_2.M_2^* \equiv a.0 + b.1 \equiv b \pmod{n}
+m \mid M_2 \iff M_2 \equiv 0 \pmod{m}
+n \mid M_1 \iff M_1 \equiv 0 \pmod{n}
+M_1^*.M_1 \equiv 1 \pmod{m}
+M_2^*.M_2 \equiv 1 \pmod{n}
+x \equiv a_1 \pmod{m_1}
+\cdots
+x \equiv a_n \pmod{m_n}
+(m_i,m_j)=1
+i \neq j
+\displaystyle M_i = \frac{m_1.m_2.\cdots.m_n}{m_i}

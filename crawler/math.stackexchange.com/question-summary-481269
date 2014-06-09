@@ -1,0 +1,15 @@
+r
+s
+D_r = \{ (x,y) \in \mathbb{R}^2\ | \ |x-y| < r \}
+D_s = \{ (x,y) \in \mathbb{R}^2 \ | \ |x-y| < s \}
+D_r \circ D_s = \{ (x,y) \in \mathbb{R}^2 \ | \ |x-y|<r+s \}
+D_r \circ D_s \subseteq \{ (x,y) \in \mathbb{R}^2 \ | \ |x-y|<r+s \}
+(x,y)
+D_r \circ D_s
+\{ (x,y) \in \mathbb{R}^2 \ | \ |x-y|<r+s \} \subseteq D_r \circ D_s
+(x,y) \in D_{r+s}
+z = \frac{r}{r+s}x + \frac{s}{r+s}y.
+\begin{align} \lvert z - x\rvert &= \left\lvert\frac{s}{r+s}y + \left(\frac{r}{r+s}-1\right)x \right\rvert = \frac{s}{r+s}\lvert y-x\rvert < s\\ \lvert z - y\rvert &=\left\lvert \frac{r}{r+s}x + \left( \frac{s}{r+s}-1\right)y\right\rvert = \frac{r}{r+s}\lvert x-y\rvert < r \end{align}
+(x,z) \in D_s
+(z,y) \in D_r
+(x,y) \in D_r \circ D_s

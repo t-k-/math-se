@@ -1,0 +1,56 @@
+\lambda > 0
+N
+U_1
+U_2
+\ldots
+U(0,1)
+U_1 \geq e^{-\lambda}, U_1U_2 \geq e^{-\lambda}, U_1U_2 \ldots U_N \geq e^{-\lambda}
+U_1U_2 \ldots U_N U_{N+1} < e^{-\lambda}
+N
+\lambda
+\log U_i/\lambda
+U
+(0,1)
+X
+F_X(x)=1-e^{- \lambda x}
+x>0
+X
+\lambda e^{-\lambda x}
+x>0
+X=-\frac{\log U}{\lambda}.
+P(X \le x)=P(-\log U \le \lambda x)=P(\log U \ge - \lambda  x)=P(U \ge e^{-   \lambda x})=1-e^{-\lambda x}.
+s
+x
+[N=n]=[V_n\geqslant\mathrm e^{-\lambda}\geqslant V_{n+1}]
+V_0=1
+V_n=U_1U_2\cdots U_n
+n\geqslant1
+A(x,s)=\sum\limits_{n=0}^{+\infty}s^n\mathrm E(X_n(x))
+X_n(x)=\frac1xV_n^x(1-U_{n+1}^x)=\frac1xU_1^x\cdots U_n^x(1-U_{n+1}^x)
+u(x)=\mathrm E(U_1^x)=\frac1{x+1}
+\lambda
+\mathrm P(N_\lambda=n)=p_\lambda(n)
+n
+\lambda
+\lambda
+N_\lambda
+\lambda
+ A(x,s)=\int_0^{+\infty}\mathrm e^{-x\lambda}\mathrm E(s^{N_\lambda})\mathrm d\lambda. 
+ \mathrm E(s^{N_\lambda})=\sum_{n=0}^{+\infty}s^n\mathrm P(V_n\geqslant\mathrm e^{-\lambda}\geqslant V_{n+1}). 
+ X_n(x)=\int_0^{+\infty}\mathrm e^{-x\lambda}[V_n\geqslant\mathrm e^{-\lambda}\geqslant V_{n+1}]\mathrm d\lambda=\int_{-\log V_n}^{-\log V_{n+1}}\mathrm e^{-x\lambda}\mathrm d\lambda=\frac1x(V_n^x-V_{n+1}^x). 
+ A(x,s)=\sum\limits_{n=0}^{+\infty}s^n\frac1xu(x)^n(1-u(x))=\frac1x(1-u(x))\frac1{1-su(x)}, 
+ A(x,s)=\frac1{1+x-s}. 
+ \frac1{1+x-s}=\int_0^{+\infty}\mathrm e^{-x\lambda}\mathrm e^{-\lambda(1-s)}\mathrm d\lambda, 
+ \mathrm E(s^{N_\lambda})=\mathrm e^{-\lambda(1-s)}. 
+ \mathrm e^{-\lambda(1-s)}=\sum_{n=0}^{+\infty}p_{\lambda}(n)s^n,\quad\text{with}\ p_\lambda(n)=\mathrm e^{-\lambda}\frac{\lambda^n}{n!}, 
+V_n=U_1...U_n
+P(V_n<v)=P(\sum_{i=1}^n - \log U_i > - \log v)=\int_{- \log v}^{\infty}\frac{e^{-x}}{\Gamma(n)}x^{n-1}dx
+- \log U_i
+V_n
+\frac{(- \log v )^{n-1}}{\Gamma(n)}
+N=0
+e^{-\lambda}
+n \geq 1
+N=n
+V_n>e^{-\lambda},V_nU_{n+1}<e^{-\lambda}
+\int_{e^{-\lambda}}^1 \frac{(- \log v )^{n-1}}{\Gamma(n)} dv \int_0^{e^{- \lambda}/v}du= \frac{e^{- \lambda}}{\Gamma(n)} \int_{e^{- \lambda}}^1 \frac{(-\log v )^{n-1}}{v}dv=e^{-\lambda} \frac{\lambda^n}{\Gamma(n+1)}

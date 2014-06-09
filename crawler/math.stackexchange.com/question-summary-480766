@@ -1,0 +1,11 @@
+\int\frac{\log_5(x)}{x} \, dx
+\log_5(x)
+\frac{\ln(x)}{\ln(5)}
+\int \frac{\log_5{x}}{x}\,dx = \int \frac{\ln x}{x\ln 5}\,dx = \frac{1}{\ln 5} \int  \underbrace{\ln{x}}_{\large u}\cdot \underbrace{\frac 1x\,dx}_{\large \,du} = \frac1{2\ln 5}(\ln{x})^2 + C
+\int dx \frac{\log{x}}{x} = \int d(\log{x}) \log{x} = \frac12 (\log{x})^2 + C
+\text{As }\log_ab=\frac{\log_cb}{\log_ca}\implies \log_5x=\frac{\ln x}{\log_5e}
+\implies\int \frac{\log_5x}x dx=\frac1{\log_e5}\int\frac{\ln x}xdx
+\log_ab\cdot\log_bd=\frac{\log_cb}{\log_ca}\cdot \frac{\log_cd}{\log_cb}=\frac{\log_cd}{\log_ca}=\log_ad
+\implies \log_5x=\log_ex\cdot\log_5e
+\implies \int \frac{\log_5x}x dx=\log_5e\int\frac{\ln x}xdx
+\ln x=u

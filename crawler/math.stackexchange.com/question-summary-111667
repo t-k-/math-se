@@ -1,0 +1,43 @@
+ 0 < \lambda <1 
+ T: \ell^1 \to \ell^1
+ T(x_1,x_2,x_3, \cdots ) =(\lambda x_2 ,\lambda x_3 ,\lambda x_4 , \cdots)
+T
+||T||
+ n \in \mathbb{N}
+||T^n||
+T^n=T \circ T \circ T \cdots \circ T
+T
+n-
+ \sum_{n=0}^{\infty} T^n
+ T^0=Id
+S
+S=\sum_{n=0}^{\infty} T^n
+T
+x=(x_n)_n \in \ell^1
+ ||T(x)||_{1}^{2} =\sum_{n=2}^{\infty} \lambda |x_n| \leq \lambda \sum_{n=1}^{\infty} \lambda |x_n|= \lambda ||x||_1^{2} < + \infty
+T(x) \in \ell^1
+||T|| \leq \lambda
+||T|| \geq \frac{||T(e_2)||_1}{||e_2||_1} = \lambda
+||T||= \lambda
+ T^n(x)= (\lambda^n x_{n+1} , \lambda^n x_{n+2} , \cdots )
+||T^n||= \lambda^n
+S=\sum T^n
+x\in l_1
+ Sx = ( \sum_{n=1}^\infty \lambda^{n-1} x_n,   \sum_{n=2}^\infty \lambda^{n-2} x_n, \sum_{n=3}^\infty \lambda^{n-3} x_n,\ldots ) 
+\sum|x_i|
+Sx
+Sx
+\ell_1
+\Vert Sx\Vert_1   =\sum_{j=1}^\infty |  \sum_{n=j}^\infty \lambda^{n-j} x_n|  \le \sum_{n=1}^\infty   \sum_{j=n}^\infty \lambda^{n -1}| x_j|    \le \sum_{n=1}^\infty \lambda^{n-1}\Vert x\Vert_1={1\over 1-\lambda}\Vert x\Vert_1     
+\Vert S\Vert\le{1\over 1-\lambda}
+S
+1\over 1-\lambda
+ w_n=(\underbrace{0,0,\cdots,0\vphantom{\textstyle{1\over n}}}_{n\text{-terms}},\underbrace{ {\textstyle {1\over n}},  {\textstyle {1\over n}},\cdots, {\textstyle {1\over n}}}_{n\text{-terms}},0,0,\cdots) 
+  \eqalign {    T^0w_n &=\lambda^{0}  (\underbrace{ 0,0,0,\ldots,0}_{n\text{-terms}},  \underbrace{ {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, \ldots, {\textstyle {1\over n}}}_{n\text{-terms}}, 0,0\ldots    )  \cr   T^1w_n &=\lambda^{1} ( \underbrace{  0,0, \ldots,0}_{(n-1)\text{-terms}}, \underbrace{ {\textstyle {1\over n}}, {\textstyle {1\over n}},   {\textstyle {1\over n}}, {\textstyle {1\over n}}, \ldots, {\textstyle {1\over n}}}_{n\text{-terms}}, 0,0\ldots    )  \cr  T^2w_n &=\lambda^2 ( \underbrace{ 0,\ldots,0}_{(n-2)\text{-terms}},\underbrace{   {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, \ldots, {\textstyle {1\over n}}}_{n\text{-terms}}, 0,0\ldots    )  \cr  &\vdots\cr T^nw_n &=\lambda^{n}  ( \underbrace{    {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, {\textstyle {1\over n}}, \ldots, {\textstyle {1\over n}}}_{n\text{-terms}}, 0,0\ldots    )  ;\cr   } 
+ \Vert Sw_n\Vert  \ge\Bigl\Vert \sum_{j=0}^n T^jw_n\Bigr\Vert= 1+\lambda+\lambda^2+\cdots+\lambda^n={1-\lambda^{n+1}\over 1-\lambda}. 
+\Vert w_n\Vert=1
+n
+\lim\limits_{n\rightarrow\infty} {1-\lambda^{n+1}\over 1-\lambda}={1\over 1-\lambda}
+\Vert S\Vert\ge {1\over 1-\lambda}
+\Vert S\Vert\le {1\over 1-\lambda}
+\Vert S\Vert= {1\over 1-\lambda}

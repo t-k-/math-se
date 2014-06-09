@@ -1,0 +1,33 @@
+X \subseteq \mathbb{R}^m
+y
+X
+f:X\setminus\{y\} \to \mathbb{R}
+(x_k)
+X \setminus \{y\}
+\lim _{k \to \infty}x_k=y
+\lim_{k\to \infty}f(x_k)=\overline \lim_{x\to y}f(x)
+\displaystyle \overline \lim_{x\to y}f(x) = \lim_{\delta \to 0^+} \sup\{f(x): x \in X\setminus \{y\} \cap B(y,\delta)\}
+f
+I - \{y\}
+I
+y
+ \delta > 0
+g(\delta) =  \sup_{ \{x: 0 < | x - y | < \delta\} } f(x) 
+\inf_{ \delta > 0} g(\delta) = \lim_{ \delta \to 0^+ } g(\delta) = \limsup_{x\to y} f(x).
+g
+(\delta_n)
+0
+ \lim_{n \to \infty} g(\delta_n ) =  \limsup_{x\to y} f(x) 
+g( \delta_n ) < \infty 
+n
+n
+x_{n}
+ 0 < |x_n - y| < \delta_n 
+ g(\delta_n) - \frac{1}{n} \leq f(x_n) \leq g(\delta_n) 
+f
+I-\{y\}
+g(\delta) = \infty
+\delta > 0
+x_n
+f(x_n) > n
+ 0 < |y - x_n | < 1/n 

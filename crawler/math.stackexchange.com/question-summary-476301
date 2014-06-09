@@ -1,0 +1,45 @@
+\ell
+\Bbb R^n
+\omega=\sum_{i_1<\cdots<i_\ell}\omega_{i_1\cdots i_\ell} dx_{i_1}\wedge\cdots\wedge dx_{i_\ell}
+I\omega(x)=\sum_{i_1<\cdots<i_\ell}\sum_{\alpha=1}^\ell (-1)^{\alpha-1}\int_0^1t^{\ell-1} \omega_{i_1\cdots i_\ell}(tx)dt \; x_{i_\alpha}\,\cdot dx_{i_1}\wedge\cdots \wedge \widehat{dx_{i_\alpha}}\wedge \cdots\wedge dx_{i_\ell}
+dx_{I,\alpha}
+\omega=f \;\cdot  dx_{i_1}\wedge\cdots\wedge dx_{i_\ell}\;\;;\;\;i_1<\cdots <i_\ell
+dx_I
+dx_{i_1}\wedge\cdots\wedge dx_{i_\ell}
+I\omega(x)=\sum_{\alpha=1}^\ell (-1)^{\alpha-1}\int_0^1 t^{\ell-1} f(tx) dt\; x_{i_\alpha} \cdot dx_{I,\alpha}
+dx_{i_\alpha}
+\alpha-1
+\tag 1 \sum\limits_{\alpha  = 1}^\ell (-1)^{\alpha-1} {\int_0^1 {{t^{\ell  - 1}}} f\left( {tx} \right)dt\;\cdot d{x_{{i_\alpha }}} \wedge dx_{I,\alpha}}\\  = \int_0^1 {\ell {t^{\ell  - 1}}} f\left( {tx} \right)dt \cdot dx_I
+\sum\limits_{\alpha  = 1}^\ell  {{{\left( { - 1} \right)}^{\alpha  - 1}}\sum\limits_{j = 1}^n {\int_0^1 {{t^\ell }{D_j}} f\left( {tx} \right)dt}\, {x_{{i_\alpha }}}\;\cdot dx_j\wedge dx_{I,\alpha}} 
+\ell+1
+d\omega  = \sum\limits_{j = 1}^n {{D_j}f} \;\cdot d{x_j} \wedge d{x_{{i_1}}} \wedge  \cdots  \wedge d{x_{{i_\ell }}}
+j
+\ell+1
+\eta=D_j f\cdot\;dx_j\wedge dx_{i_1}\wedge\cdots\wedge dx_{i_\ell}
+j_1=j
+j_{k+1}=i_k
+\eta =D_j f\cdot\;dx_{j_1}\wedge dx_{j_2}\wedge\cdots\wedge dx_{j_{\ell+1}}
+I\eta=\sum_{\alpha=1}^{\ell+1}(-1)^{\alpha-1}\int_0^1 t^\ell D_jf(tx)dt\; dx_{j_\alpha} dx_{J,\alpha}
+\begin{align}   I\eta &= \sum\limits_{\alpha  = 1}^{\ell  + 1} {{{( - 1)}^{\alpha  - 1}}} \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;d{x_{{j_\alpha }}}d{x_{J,\alpha }} \cr     &= \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_{{j_1}}}d{x_{J,1}} - \sum\limits_{\alpha  = 2}^{\ell  + 1} {{{( - 1)}^{\alpha  - 2}}} \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_{{j_\alpha }}}d{x_{J,\alpha }} \cr     &= \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_j}d{x_I} - \sum\limits_{\alpha  = 1}^\ell  {{{( - 1)}^{\alpha  -1}}} \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_{{i_\alpha }}}d{x_{J,\alpha+1 }} \cr     &= \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_j}d{x_I} - \sum\limits_{\alpha  = 1}^\ell  {{{( - 1)}^{\alpha  - 1}}} \int_0^1 {{t^\ell }} {D_j}f(tx)dt\;{x_{{i_\alpha }}}d{x_j} \wedge d{x_{I,\alpha }} \end{align} 
+[0,1]\times \mathbb R^n
+t
+[0,1]
+\alpha_0
+\alpha_1
+\mathbb R^n
+t
+\alpha_1
+t
+F:[0,1]\times\mathbb R^n\to\mathbb R^n
+\alpha=\alpha_0(t)+dt\wedge\alpha_1(t),
+J\alpha=\int_0^1(\alpha_1(t))dt\in\Omega(\mathbb R^n)
+dJ\alpha=\int_0^1(d\alpha_1)dt.
+d\alpha=d\alpha_0+dt\wedge(\frac{\partial\alpha_0}{\partial t}-d\alpha_1).
+Jd\alpha=\int_0^1(\frac{\partial\alpha_0}{\partial t}-d\alpha_1)dt=\alpha_0(1)-\alpha_0(0)-dJ\alpha.
+F(t,x^1,\dots,x^n)=(tx^1,\dots,tx^n),
+I\omega=J(F^*\omega).
+\omega
+dI\omega+Id\omega=dJF^*\omega+JF^*d\omega=(dJ+Jd)F^*\omega=(F^*\omega)_0(1)-(F^*\omega)_0(0),
+(F^*\omega)_0(1)=\omega
+(F^*\omega)_0(0)=0
+(F^*\omega)_0(0)=\omega(0).

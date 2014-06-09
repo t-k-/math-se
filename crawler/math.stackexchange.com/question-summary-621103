@@ -1,0 +1,21 @@
+ \sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\sum_{r=0}^{n-1}\left(\frac{y^r}{r!}\right)\right) 
+x=y
+f(x,y)=\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\sum_{r=0}^{n-1}\left(\frac{y^r}{r!}\right)\right)
+I_0(x)=\sum_{n=0}^\infty\frac{x^{2n}}{4^nn!^2}
+f(x,x)=\frac{e^{2x}-I_0(2x)}{2}
+f(x,y)+f(y,x)=e^{x+y}-I_0(2\sqrt{xy})
+h
+h(x,y)=\sum_{n=0}^\infty\frac{x^n}{n!}\sum_{k=0}^n\frac{y^k}{k!}
+h(x,y)=\sum_{n=0}^\infty\frac{x^n}{n!}\sum_{k=0}^n\frac{y^k}{k!}=\sum_{n=0}^\infty\frac{x^n}{n!}\sum_{a+b=n}\frac{y^b}{b!}=\sum_{n=0}^\infty\sum_{a+b=n}\frac{x^{a+b}y^b}{(a+b)!b!}=\sum_{a=0}^\infty\sum_{b=0}^\infty\frac{x^{a+b}y^b}{(a+b)!b!}
+=\sum_{a=0}^\infty\sum_{b=0}^\infty\frac{y^bx^{a+b}}{b!(a+b)!}=\sum_{b=0}^\infty \frac{y^b}{b!}(\frac{x^{b}}{b!}+\frac{x^{1+b}}{(1+b)!}+\frac{x^{2+b}}{(2+b)!}+\frac{x^{3+b}}{(3+b)!}+\dots)
+h(x,y)=\sum_{b=0}^\infty \frac{y^b}{b!}(\frac{x^{b}}{(b)!}+\frac{x^{1+b}}{(1+b)!}+\frac{x^{2+b}}{(2+b)!}+\frac{x^{3+b}}{(3+b)!}+\dots)
+h(y,x)=\sum_{b=0}^\infty\frac{y^b}{b!}(\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+...\frac{x^{b-1}}{(b-1)!}+\frac{x^b}{b!}+\dots)
+h(x,y)+h(y,x)=\sum_{b=0}^\infty \frac{y^b}{b!}(\frac{x^b}{b!}+e^x)
+h(x,y)+h(y,x)=e^{x+y}+I_0(2\sqrt{xy})
+h(x,y)=\sum_{n=0}^{\infty}\left(\frac{x^n}{n!}\sum_{r=0}^{n-1}\left(\frac{y^r}{r!}\right)\right)+\sum_{n=0}^\infty\frac{(xy)^n}{n!^2}=f(x,y)+I_(2\sqrt{xy})
+f(x,y)+f(y,x)=e^{x+y}-I_0(2\sqrt{xy})
+x=y
+e^y \Gamma(n, y) / \Gamma(n)
+\Gamma(n, y)
+e^y
+e^{x+y}

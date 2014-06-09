@@ -1,0 +1,17 @@
+x_{t} = \mu +w_{t} -0.8*w_{t-1}
+w_{t}
+wn(0,\sigma_{w}^2)
+var(\bar{x})
+var(\bar{x}) =  \frac{1}{n}\sum_{j=-n}^n (1-\frac{|h|}{n})\gamma_{x}(h)
+var(x_{t}) = \sigma_{w}^2 + 0.64*\sigma_{w}^2
+|h|
+\gamma(0) = 1.64\sigma_{w}^2 , \gamma(1) = -0.8\sigma_{w}^2
+\gamma(h>=2) = 0
+\frac{1}{n}\sum_{j=-1}^1(1-\frac{|h|}{n})\gamma_{x}(h) = \frac{1}{n}[(1-\frac{1}{n})(-0.8\sigma_{w}^2) + 1.64\sigma_{w}^2 + (1-\frac{1}{n})(-0.8\sigma_{w}^2) 
+var(\bar{x}) = \frac{\sigma_{w}^2}{n}(1-2\frac{n-1}{n}0.8)
+\frac{\sigma_{w}^2}{n}(1.68-2\frac{n-1}{n}0.8)
+t>0
+n\ge 3
+ \bar x = \frac{1}{n} (x_{t+n-1} + x_{t+n-2} + \dots + x_t), 
+ \gamma_x(0)=(1+0.8^2) \sigma_w^2, \ \ \gamma_x(\pm 1)=-0.8 \sigma_w^2, \ \ \gamma_x(h)=0 {\rm \ \ otherwise}, 
+ {\rm Var\ }{\bar x}=\frac{\sigma_{w}^2}{n}(1-2\frac{n-1}{n}0.8),\qquad (*) 

@@ -1,0 +1,14 @@
+f \colon \mathbb{R} \to \mathbb{R}
+I
+I
+f \prime \, \text{is bounded on $I$} \Rightarrow f \, \text{is uniformly continuous on I}
+f \prime
+I
+x,y \in I
+\delta
+\delta:= \frac{\varepsilon}{|f \prime (x_1)|}
+\forall \varepsilon>0 \exists \delta>0 \forall x,y \in I \colon(|x-y|< \delta \Rightarrow |f(x)-f(y)|<\varepsilon)
+\exists x_1 \in I \colon \forall x_2 \in I \colon |f \prime(x_1)| \geq |f \prime (x_2)|
+\exists \xi \in (x,y):|f(x)-f(y)|=|f \prime(\xi)||x-y| \leq |f \prime(x_1)||x-y|< \varepsilon
+|x-y|< \frac{\varepsilon}{|f \prime (x_1)|} \Rightarrow |f(x)-f(y)|< \varepsilon
+f'(x_1) = 0

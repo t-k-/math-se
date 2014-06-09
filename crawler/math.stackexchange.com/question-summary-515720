@@ -1,0 +1,10 @@
+ \oint_{C_N} \frac{\pi\cot(\pi z)}{z^2 + b^2 } \ dz 
+C_N 
+ 2N + 1 
+  \oint_{C_N} \frac{\pi\cot(\pi z)}{z^2 + b^2 } \ dz = 2\pi i\left( \sum_{-N}^N \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , n \right) + \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , bi \right) + \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , -bi \right) \right)
+ \to 0 
+ N \to \infty 
+ \Rightarrow \sum_{-\infty }^{\infty} \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , n \right) + \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , bi \right) + \mathrm{Res} \left( \frac{\pi\cot(\pi z)}{z^2 + b^2 } , -bi \right) = 0 
+ \Rightarrow \sum_{-\infty}^{-1} \frac{1}{n^2 + b^2}  + \sum_{1}^{\infty} \frac{1}{n^2 + b^2 } + \frac{1}{b^2} +   \lim_{z \to bi} \frac{\pi\cot(\pi z)}{z + bi} + \lim_{z \to -bi} \frac{\pi\cot(\pi z)}{z - bi} = 0
+ \Rightarrow 2\sum_{n=1}^{\infty} \frac{1}{n^2 + b^2 } + \frac{1}{b^2} - \frac{\pi\coth(b\pi)}{b} = 0 
+ \Rightarrow \sum_{n=1}^{\infty} \frac{1}{n^2 + b^2 } =  \frac{\pi\coth(b\pi)}{2b} - \frac{1}{2b^2}  

@@ -1,0 +1,16 @@
+L(M)=\{w \in \{a,b\}^* \mid wab \}
+ab
+\to(s) \to a \to (a) \to b \to (accepting)
+(s)
+a,b
+w \in \{a,b\}^*
+w_1 = \epsilon\\ w_2 = ab\\ w_3 = a
+w_1
+w_2
+\begin{align*} z_{12} = \epsilon &\Rightarrow& w_1z_{12}&=\epsilon \not\in L\\ &&w_2z_{12}&=ab \in L\end{align*}
+w_1
+w_3
+\begin{align*} z_{13} = b &\Rightarrow& w_1z_{13}&=b \not\in L\\ &&w_3z_{13}&=ab \in L\end{align*}
+w_1
+w_2
+\begin{align*} z_{23} = \epsilon &\Rightarrow& w_2z_{23}&=ab \in L\\ &&w_3z_{23}&=a \not\in L\end{align*}

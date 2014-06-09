@@ -1,0 +1,11 @@
+\int_a^b f(x)~dx
+\int_a^b ~f(x)~dx = \int_{-3}^3 ~e^{-x^2}~dx \approx \dfrac{b-a}{2} \sum_{n=1}^5 f\left(\dfrac{b-a}{2}x_i + \dfrac{a+b}{2}\right) =  3 \sum_{i=1}^5 f\left(3x_i\right)
+3 \sum_{i=1}^5 e^{-(3x_i)^2} = 3 (0.000146211 +  0.0352118 + 0.568889 + 0.0352118 + 0.000146211) = 1.91881
+\int_{-3}^3 ~e^{-x^2}~dx = \sqrt{\pi } \text{erf}(3) \approx 1.77241
+10
+\int_{-3}^3 ~e^{-x^2}~dx = 1.77224
+[-1,1]
+a,b
+\int_a^b ~f(x)~dx = \int_{0}^1 ~e^{-x^2}~dx \approx \dfrac{b-a}{2} \sum_{n=1}^5 f\left(\dfrac{b-a}{2}x_i + \dfrac{a+b}{2}\right) =  \dfrac{1}{2} \sum_{i=1}^5 f\left(\dfrac{1}{2}x_i + \dfrac{1}{2}\right)
+\int_{0}^1 ~e^{-x^2}~dx \approx =  \dfrac{1}{2} \sum_{i=1}^5 f\left(\dfrac{1}{2}x_i + \dfrac{1}{2}\right) = \dfrac{1}{2} \sum_{i=1}^5 e^{-\left(\dfrac{1}{2}x_i + \dfrac{1}{2}\right)^2} = 0.746824
+\frac{1}{2} \sqrt{\pi } \text{erf}(1) \approx 0.746824

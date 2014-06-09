@@ -1,0 +1,35 @@
+\lim_{n \to \infty} \frac{n^3}{(3n)!^\frac{1}{n}}
+R
+e^3
+\frac{1}{27}
+n\to\infty
+ \sum_{n=0}^\infty a_nz^n,\qquad\mbox{where}\quad a_n:=\frac{n^{3n}}{(3n)!}, 
+ \frac{1}{R}=\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\lim_{n\to\infty}\sqrt[n]{a_n}=\lim_{n\to\infty}\frac{n^3}{(3n)!^\frac{1}{n}}. 
+ \frac{a_{n+1}}{a_n}=\frac{(n+1)^{3n+3}(3n)!}{(3n+3)!n^{3n}}=\left(1+\frac{1}{n}\right)^{3n}\cdot\frac{(n+1)^3}{(3n+1)(3n+2)(3n+3)}, 
+ \lim_{n\to\infty}\frac{n^3}{(3n)!^\frac{1}{n}}=\frac{e^3}{27}. 
+\lim_{n \to \infty} \frac{n^3}{(3n)!^\frac{1}{n}}
+=exp[\frac{3n\ln(3)-\ln(3n)-\ln(3n-1)-\cdots-\ln(1)}{n}]
+=exp[\frac{-1}{n}\left(\sum\limits_{i=1}^{n} \ln(\frac{i}{n})\right)]
+=exp[-\int\limits_{0}^{3}ln(x)\,dx]=exp[-3\ln(3)+\int\limits_{0}^{ln(3)}e^{x}\, dx]
+=exp[-3\ln(3)+3]=\frac{e^{3}}{27}
+A=\lim_{n\to\infty}\frac{n^3}{(3n)!^{1/n}}
+B=\lim_{n\to\infty}\frac{n}{(3n)!^{1/3n}}
+C=\lim_{n\to\infty}\frac{3n}{(3n)!^{1/3n}}
+D=\lim_{n\to\infty}\frac n{n!^{1/n}}
+E=\lim_{n\to\infty}\log n-\frac1n\Sigma_{i=1}^n\log i
+x\log x-x
+\log x
+n\log n-n+1=\int_1^n\log x\ge\int_1^n\log\lfloor x\rfloor=\Sigma_{i=1}^{n-1}\log i
+n\log n-n+1=\int_1^n\log x\le\int_1^n\log\lceil x\rceil=\Sigma_{i=1}^n\log i
+n\log n-n+1\le\Sigma_{i=1}^n\log i\le(n+1)\log n-n+1
+1-\frac1n-\frac{\log n}n\le\log n-\frac1n\Sigma_{i=1}^n\log i\le 1-\frac 1n
+E=1
+E
+\log D
+C
+D
+B
+C
+A
+B
+A=\frac{e^3}{27}

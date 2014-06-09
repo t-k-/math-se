@@ -1,0 +1,70 @@
+a,b,c
+ax^2\frac{\partial^2 v}{\partial x^2}+bx\frac{\partial v}{\partial x}+c\frac{\partial^2 v}{\partial y^2}=10x^2+9x+6
+v(x,0)=0,v(0,y)=0
+1
+a=b=0
+c\neq0
+c\dfrac{\partial^2v}{\partial y^2}=10x^2+9x+6
+\dfrac{\partial^2v}{\partial y^2}=\dfrac{10x^2+9x+6}{c}
+\dfrac{\partial v}{\partial y}=\dfrac{(10x^2+9x+6)y}{c}+C_1(x)
+v(x,y)=\dfrac{(10x^2+9x+6)y^2}{2c}+C_1(x)y+C_2(x)
+v(x,0)=0
+C_2(x)=0
+\therefore v(x,y)=\dfrac{(10x^2+9x+6)y^2}{2c}+C_1(x)y
+v(0,y)=0
+\dfrac{6y^2}{2c}+C_1(0)y=0
+C_1(0)=-\dfrac{3y}{c}
+\therefore v(x,y)=\dfrac{(10x^2+9x+6)y^2}{2c}+C_1(x)y
+C_1(x)
+C_1(0)=-\dfrac{3y}{c}
+2
+a=c=0
+b\neq0
+bx\dfrac{\partial v}{\partial x}=10x^2+9x+6
+\dfrac{\partial v}{\partial x}=\dfrac{10x}{b}+\dfrac{9}{b}+\dfrac{6}{bx}
+v(x,y)=\dfrac{5x^2}{b}+\dfrac{9x}{b}+\dfrac{6\ln x}{b}+C(y)
+x
+0
+\therefore
+v(0,y)=0
+3
+a\neq0
+b\neq0
+c=0
+ax^2\dfrac{\partial^2v}{\partial x^2}+bx\dfrac{\partial v}{\partial x}=10x^2+9x+6
+\dfrac{\partial^2v}{\partial x^2}+\dfrac{b}{ax}\dfrac{\partial v}{\partial x}=\dfrac{10}{a}+\dfrac{9}{ax}+\dfrac{6}{ax^2}
+=e^{\int\frac{b}{ax}dx}=e^{\frac{b}{a}\ln x}=e^{\ln x^{\frac{b}{a}}}=x^{\frac{b}{a}}
+\therefore\dfrac{\partial}{\partial x}\left(x^{\frac{b}{a}}\dfrac{\partial v}{\partial x}\right)=\dfrac{10x^{\frac{b}{a}}}{a}+\dfrac{9x^{\frac{b}{a}-1}}{a}+\dfrac{6x^{\frac{b}{a}-2}}{a}
+\begin{cases}x^{\frac{b}{a}}\dfrac{\partial v}{\partial x}=\dfrac{10x^{\frac{b}{a}+1}}{a+b}+\dfrac{9x^{\frac{b}{a}}}{b}+\dfrac{6x^{\frac{b}{a}-1}}{b-a}+C_1(y)&\text{when}\dfrac{b}{a}\neq-1,0,1\\\dfrac{1}{x}\dfrac{\partial v}{\partial x}=\dfrac{10\ln x}{a}-\dfrac{9}{ax}-\dfrac{3}{ax^2}+C_1(y)&\text{when}\dfrac{b}{a}=-1\\\dfrac{\partial v}{\partial x}=\dfrac{10x}{a}+\dfrac{9\ln x}{a}-\dfrac{6}{ax}+C_1(y)&\text{when}\dfrac{b}{a}=0\\x\dfrac{\partial v}{\partial x}=\dfrac{5x^2}{a}+\dfrac{9x}{a}+\dfrac{6\ln x}{a}+C_1(y)&\text{when}\dfrac{b}{a}=1\end{cases}
+\dfrac{\partial v}{\partial x}=\begin{cases}\dfrac{10x}{a+b}+\dfrac{9}{b}+\dfrac{6}{(b-a)x}+C_1(y)x^{-\frac{b}{a}}&\text{when}\dfrac{b}{a}\neq-1,0,1\\\dfrac{10x\ln x}{a}-\dfrac{9}{a}-\dfrac{3}{ax}+C_1(y)x&\text{when}\dfrac{b}{a}=-1\\\dfrac{10x}{a}+\dfrac{9\ln x}{a}-\dfrac{6}{ax}+C_1(y)&\text{when}\dfrac{b}{a}=0\\\dfrac{5x}{a}+\dfrac{9}{a}+\dfrac{6\ln x}{ax}+\dfrac{C_1(y)}{x}&\text{when}\dfrac{b}{a}=1\end{cases}
+v(x,y)=\begin{cases}\dfrac{5x^2}{a+b}+\dfrac{9x}{b}+\dfrac{6\ln x}{b-a}+\dfrac{C_1(y)ax^{1-\frac{b}{a}}}{a-b}+C_2(y)&\text{when}\dfrac{b}{a}\neq-1,0,1\\\dfrac{5x^2(2\ln x-1)}{2a}-\dfrac{9x}{a}-\dfrac{3\ln x}{a}+\dfrac{C_1(y)x^2}{2}+C_2(y)&\text{when}\dfrac{b}{a}=-1\\\dfrac{5x^2}{a}+\dfrac{9x(\ln x-1)}{a}-\dfrac{6\ln x}{a}+C_1(y)x+C_2(y)&\text{when}\dfrac{b}{a}=0\\\dfrac{5x^2}{2a}+\dfrac{9x}{a}+\dfrac{3(\ln x)^2}{a}+C_1(y)\ln x+C_2(y)&\text{when}\dfrac{b}{a}=1\end{cases}
+x
+0
+\therefore
+v(0,y)=0
+4
+a=0
+b\neq0
+c\neq0
+bx\dfrac{\partial v}{\partial x}+c\dfrac{\partial^2v}{\partial y^2}=10x^2+9x+6
+v(x,y)=v_c(x,y)+v_p(x,y)
+v_p(x,y)
+v_p(x,y)
+bx\dfrac{dv}{dx}=10x^2+9x+6
+2
+v(0,y)=0
+\therefore
+v(0,y)=0
+5
+a\neq0
+b\neq0
+c\neq0
+ax^2\dfrac{\partial^2v}{\partial x^2}+bx\dfrac{\partial v}{\partial x}+c\dfrac{\partial^2v}{\partial y^2}=10x^2+9x+6
+v(x,y)=v_c(x,y)+v_p(x,y)
+v_p(x,y)
+v_p(x,y)
+ax^2\dfrac{d^2v}{dx^2}+bx\dfrac{dv}{dx}=10x^2+9x+6
+3
+v(0,y)=0
+\therefore
+v(0,y)=0

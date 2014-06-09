@@ -1,0 +1,103 @@
+p
+q
+p+q-1-\gcd(p,q)
+\gcd(p,q)=1
+p+q-2
+p+q-2
+\newcommand{\block}[1]{   \underbrace{1 \cdots 1}_{#1} }
+\underbrace{\begin{pmatrix}   \smash[b]{\block{p}} \\ &\ddots \\ & & \block{p}\\ \smash[b]{\block{q}} \\ &\ddots \\ & & \block{q}   \end{pmatrix} }_{p+q-2}
+(u_k)_{k=1}^n
+s_k=\sum_1^ku_i
+0 \le k \le n
+s_0=0)
+s_{k+7} < s_k
+0 \le k \le n-7
+s_{k+11} > s_k
+0 \le k \le n-11
+n \ge 17
+0 = s_0 < s_7<s_{14}<s_{3} <s_{10} <s_{17}<s_{6}<s_{13}<s_{2}<s_{9}<s_{16}<s_5<s_{12}<s_1 <s_{8} <s_{15} <s_{4} <s_{11} <s_0 = 0,
+s_{17}
+s_{6}<s_{13}<s_{2}<s_{9}<s_{16}<s_5<s_{12}<s_1 <s_{8} <s_{15} <s_{4} <s_{11} <0 < s_7<s_{14}<s_{3} <s_{10}
+s_6=-12,s_{13}=-11,\ldots,s_{11}=-1,s_7=1,\ldots,s_3=3,s_{10}=4
+u_k
+u_k=s_k-s_{k-1}
+\{5,5,−13,5,5,5,−13,5,5,−13,5,5,5,−13,5,5\}
+p,q
+(p,q)=1
+s_{p-1} < \ldots < s_q < 0 < s_p < \ldots < s_{q-1}
+p=9, q=5
+s_8 < s_3 < s_{12} < s_7 < s_2 < s_{11} < s_6 < s_1 < s_{10} < s_5 < 0 < s_9 < s_4
+s_8=-10,\ldots,s_4=2,
+\{-3,-3,-3,11,-3,-3,-3,-3,11,-3,-3,-3\}
+p
++1
+q
+-1
+{\sf gcd}(p,q)=1
+p<q
+p
+q
+c_0=0<c_1=1<c_2<c_3< \ldots <c_{m-1}=p<c_m=q
+i
+c_{i+1}
+c_{i-1}
+c_i
+C
+p=1
+m\geq 3
+i,j
+\rho_i(j)
+\lbrace 1,2, \ldots ,i\rbrace
+j
+i
+\sim_i
+x \sim_i y
+x
+y
+i
+i
+ \rho_{c_2}\rho_{c_3}\ldots \rho_{c_{m-2}}\rho_{c_{m-1}}(x) \sim_{c_2} \rho_{c_2}\rho_{c_3}\ldots \rho_{c_{m-2}}\rho_{c_{m-1}}(x+c_m) \tag{1} 
+m\geq 4
+m-1
+c_0=0<c_1<c_2<\ldots <c_m
+C
+x\in[1,c_{m-1}-2]
+a
+c_m=ac_{m-1}+c_{m-2}
+ \rho_{c_2}\rho_{c_3}\ldots \rho_{c_{m-2}}\rho_{c_{m-1}}(x) \sim_{c_1} \rho_{c_2}\rho_{c_3}\ldots \rho_{c_{m-2}}\rho_{c_{m-1}}(x+c_{m-2}) \tag{3} 
+\rho_{c_{m-1}}(x)=x
+x \leq c_{m-1}-c_{m-2}
+\rho_{c_{m-1}}(x+c_{m-2})=x+c_{m-2}
+\rho_{c_{m-2}}\rho_{c_{m-1}}(x)=\rho_{c_{m-2}}\rho_{c_{m-1}}(x+c_{m-2})
+x>c_{m-1}-c_{m-2}
+y=x-(c_{m-1}-c_{m-2})
+y\in[1,c_{m-2}-2]
+\rho_{c_{m-2}}(y+c_{m-1}-c_{m-2})=\rho_{c_{m-2}}(y+c_{m-1})
+m-1
+ \rho_{c_1}\rho_{c_2}\ldots \rho_{c_{m-2}}(y+c_{m-1}-c_{m-2}) \sim_{c_1} \rho_{c_1}\rho_{c_2}\ldots \rho_{c_{m-2}}(y) \tag{4} 
+x\in [1,p+q-2]
+\rho_{c_2}\ldots \rho_{c_{m-2}}\rho_{c_{m-1}}(x) =c_2
+x
+I=[1,p+q-2]
+p
+q
+x\in[0,p+q-2]
+x
+I
+g(x)
+ g(qc_i+r)=qg(c_i)+g(r) \ \text{whenever} 0\leq r<c_i, qc_i+r\leq c_{i+1}. \tag{5} 
+i\geq 2
+a_i
+c_i=a_ic_{i-1}+c_{i-2}
+g(c_i)=a_ig(c_{i-1})+g(c_{i-2})
+ c_{i-1}g(c_i)-c_ig(c_{i-1})=-(c_{i-2}g(c_{i-1})-c_{i-1}g(c_{i-2})) \tag{6} 
+\delta_{i+1}=-\delta_i
+\delta_i=c_{i-1}g(c_i)-c_ig(c_{i-1})
+\delta_2=1
+\delta_i=(-1)^i
+(a_1,a_2,\ldots,a_{p+q-2})
+ a_{x}=\left\lbrace\begin{array}{lcl}  \frac{p+q-(g(p)+g(q))}{qg(p)-pg(q)}=\frac{p+q-(g(p)+g(q))}{(-1)^{m+1}} & \rm if & x \ \text{is good} \\ -\frac{g(p)+g(q)}{qg(p)-pg(q)}=\frac{g(p)+g(q)}{(-1)^m} & \rm if & x \ \text{is bad} \end{array}\right. \tag{7} 
+p
+1
+q
+-1

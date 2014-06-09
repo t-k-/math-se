@@ -1,0 +1,6 @@
+\frac{\sin{[(N+1/2) \theta]}}{\sin{(\theta/2)}} = 1 +2 \sum_{m=1}^N \cos{m \theta}
+\int_{-\pi}^{\pi} d\theta \left (  1 + 2\sum_{m=1}^N \cos{m \theta} \right)\left (  1 + 2 \sum_{n=1}^N \cos{n (\omega-\theta)} \right) 
+2 \pi + 4\sum_{m=1}^N \sum_{n=1}^N \int_{-\pi}^{\pi} d\theta \, \cos{m \theta} \, \cos{n (\omega-\theta)}
+\int_{-\pi}^{\pi} d\theta \, \cos{m \theta} \, \cos{n (\omega-\theta)} = \begin{cases} 0 & m \ne n \\ \pi \cos{n \omega} & m=n \end{cases}
+2 \pi +4  \pi \sum_{n=1}^N \cos{n \omega} = 2 \pi \frac{\sin{[(N+1/2) \omega]}}{\sin{(\omega/2)}}
+\int_{-\infty}^{\infty} dx' \, \frac{\sin{x'}}{x'} \frac{\sin{(x-x')}}{x-x'}  = \frac{1}{2 \pi} \int_{-\infty}^{\infty} dk\, [\pi\, \text{rect}(k)]^2 \, e^{i k x} = \pi \frac{\sin{k}}{k}

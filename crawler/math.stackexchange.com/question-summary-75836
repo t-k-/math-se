@@ -1,0 +1,22 @@
+\begin{align*} \Bigl[ (P\land Q)\equiv R\Bigr] &\to \Bigl[ (P\to R)\lor (Q\to R)\Bigr]\\ \Bigl[ (P\land Q)\equiv R\Bigr] &\to \Bigl[ \neg(P\land\neg R)\lor \neg(Q\land \neg R)\Bigr]\\ &\to \Bigl[ (\neg P\lor R)\lor (\neg Q\lor R)\Bigr]\\ &\to P' + R + Q' + R\\ &\to P' + R + Q' \end{align*}
+(P\land Q)
+R
+P
+R
+Q
+R
+(P\land Q)\equiv R
+(P\to R)\lor (Q\to R)
+P'+R + Q'+R = P'+Q'+R
+(P\land Q\land R) \lor (\neg(P\land Q)\land \neg R)
+ PQR + (PQ)'R' = PQR + (P'+Q')R' = PQR + P'R' + Q'R'.
+A\to B
+\neg A \lor B
+A'+B
+\Bigl( PQR + P'R' + Q'R'\Bigr)' + (P'+R+Q') = 1.
+(PQ)'R + R = ((PQ)'+1)R = R
+(PQR + P'R' + Q'R')' = (P'+Q'+R')(P+R)(Q+R);
+(P+R)(Q+R) = PQ + PR + QR + R = PQ + (P+Q+1)R = PQ+R
+\begin{align*} (PQR + P'R' + Q'R')' &= (P'+Q'+R')(P+R)(Q+R)\\ &= (P'+Q'+R')(PQ+R)\\ &= P'PQ + P'R + Q'PQ + Q'R + PQR' + R'R\\ &= 0 + P'R + 0 + Q'R + PQR' + 0\\ &= (P'+Q')R + PQR'\\ &= (PQ)'R + (PQ)R'. \end{align*}
+(PQ)'R + (PQ)R' + P' + Q' +R = 1
+(PQ)'R + (PQ)R' + P' + Q' + R = PQR' + P' + Q' + R.

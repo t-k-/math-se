@@ -1,0 +1,12 @@
+v = vector
+m = range
+f = \left|s \subseteq v | \right| / \left|{v}\right|
+\{1,\ldots\,m\}
+\delta_i
+n
+m
+m \times n
+ D_{m,n} = \frac{1}{n}\left( \begin{array}{cccc} \delta_1 & \delta_1 & \dots & \delta_1 \\ \delta_2 & \delta_2 & \dots & \delta_2 \\ \vdots & & \ddots & \vdots \\ \delta_m & \delta_m & \dots & \delta_m \end{array}\right) 
+D_{m,n} \cdot v
+ \begin{align} D_{m,n} \cdot v  & = \frac{1}{4}\left( \begin{array}{cccc} \delta_1 & \delta_1 & \delta_1 & \delta_1 \\ \delta_2 & \delta_2 & \delta_2 & \delta_2 \\ \delta_3 & \delta_3 & \delta_3 & \delta_3 \end{array}\right) \left(\begin{array}{c} 1 \\ 2 \\ 2\\ 3 \end{array}\right) \\ &=  \frac{1}{4}\left(\begin{array}{c} \delta_11 + \delta_1 2 + \delta_1 2+ \delta_1 3 \\ \delta_21 + \delta_2 2 + \delta_2 2+ \delta_2 3 \\ \delta_3 1 + \delta_3 2 + \delta_3 2+ \delta_3 3 \end{array}\right) \\ & =  \frac{1}{4} \left(\begin{array}{c} 1 + 0 + 0 + 0 \\ 0 + 1 + 1 + 0 \\ 0 + 0 + 0 + 1 \end{array}\right) \\& =  \frac{1}{4} \left(\begin{array}{c} 1 \\ 2 \\ 1 \end{array}\right)\end{align}
+ D_{m,n} \cdot v = \frac{1}{n}  \left(\begin{array}{c} \delta_1 \\ \delta_2 \\ \vdots \\ \delta_m \end{array}\right) \left(\begin{array}{c} 1 \\ 1 \\ \vdots \\ 1 \end{array}\right)^T v 

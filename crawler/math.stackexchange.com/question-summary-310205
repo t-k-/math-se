@@ -1,0 +1,35 @@
+a \in \mathbb{R}^+
+r \in \mathbb{R}
+\int_{-\infty}^{\infty}\frac{e^{r \arctan(ax)}+e^{-r \arctan(ax)}}{1+x^2}\cos \left( \frac{r}{2}\log(1+a^2x^2)\right)dx = 2\pi \cos \left( r\log(1+a)\right)?
+\oint_C dz \frac{e^{r \arctan{a z}} + e^{-r \arctan{a z}}}{1+z^2} \exp{\left [i \frac{r}{2} \log{(1+a^2 z^2)} \right ]}
+a>0
+C
+z=i/a
+z=i/a
+C
+z=i
+a>1
+a<1
+C
+a>1
+i 2 \pi
+z=i
+\int_{-\infty}^{\infty} dx \frac{e^{r \arctan{a x}} + e^{-r \arctan{a x}}}{1+x^2} \exp{\left [i \frac{r}{2} \log{(1+a^2 x^2)} \right ]} = i 2 \pi \frac{e^{i r \mathrm{arctanh}{a}}+e^{-i r \mathrm{arctanh}{a}}}{2 i} \exp{\left [i \frac{r}{2} \log{(1-a^2)} \right ]}
+\mathrm{arctanh}(a) = \frac{1}{2} \log{\left ( \frac{1+a}{1-a} \right )}
+\int_{-\infty}^{\infty} dx \frac{e^{r \arctan{a x}} + e^{-r \arctan{a x}}}{1+x^2} \exp{\left [i \frac{r}{2} \log{(1+a^2 x^2)} \right ]} = 2 \pi \cos{r \log{(1+a)}}
+\int_{-\infty}^{\infty} dx \frac{e^{r \arctan{a x}} + e^{-r \arctan{a x}}}{1+x^2} \cos{\left [ \frac{r}{2} \log{(1+a^2 x^2)} \right ]} = 2 \pi \cos{r \log{(1+a)}}
+f(a+z)
+ f(a+z) = C_{0}+C_{1}e^{-z}+C_{2}e^{-2z} + \ldots 
+b > 0 
+ \int_{0}^{\infty} \frac{f(a+ibt)-f(a-ibt)}{1+t^{2}} \ dt 
+= \int_{0}^{\infty}\frac{\Big(C_{0} + C_{1} (\cos bt - i \sin bt) + \ldots \Big) + \Big(C_{0} + C_{1} (\cos bt - i \sin bt) + \ldots \Big)}{1+t^{2}} \ dt
+ = 2 \int_{0}^{\infty}\frac{C_{0} + C_{1} \cos bt +C_{2} \cos 2bt + \ldots}{1+t^{2}} \ dt
+ = 2 \Big( C_{0} \frac{\pi}{2} + C_{1} \frac{\pi}{2} e^{-b} + C_{2} \frac{\pi}{2} e^{-2b} + \ldots \Big) = \pi \Big(C_{0} + C_{1}e^{-b} +C_{2}e^{-2b} + \ldots \Big)
+ = \pi f(a+b)
+f(z) = \cos (r \log z)
+ \int_{0}^{\infty} \frac{f(1+iat)+f(1-iat)}{1+t^{2}} \ dt = \int_{0}^{\infty} \frac{\cos \Big(r \log(1+iat) \Big) + \cos \Big(r \log(1-iat) \Big)}{1+t^{2}} \ dt 
+ =\pi \cos \Big(r \log(1+a) \Big)
+\cos \Big(r \log(1+iat) \Big) + \cos \Big(r \log(1-iat) \Big)
+= \cos \Big( \frac{r}{2} \log(1+a^{2}t^{2})+ir \arctan at \Big) + \cos \Big( \frac{r}{2} \log(1+a^{2}t^{2})-ir \arctan at \Big)
+ = 2 \cos \Big(\frac{r}{2} \log(1+a^{2}t^{2})\Big) \cosh(r \arctan at)
+\int_{0}^{\infty} \frac{\cosh (r \arctan at)}{1+t^{2}} \cos \Big( \frac{r}{2} \log(1+a^{2}t^{2}) \Big) \ dt = \frac{\pi}{2} \cos \Big( r\log(1+a) \Big) 

@@ -1,0 +1,29 @@
+f \in L^1 [0,2\pi ] 
+ g 
+2\pi
+\hat{f}(0)
+f
+0
+  \hat{f}(0)\cdot\hat{g}(0)=\lim_{n\to\infty}\frac{1}{2\pi}\intop_0^{2\pi}f(t)g(nt)dt  
+ \hat{f}(0) = \frac{1}{2\pi}\intop_0^{2\pi}f(t)dt 
+f\in C^1([0,2\pi])
+f\in C^1([0,2\pi])
+f\in C^1([0,2\pi])
+g\in L^1([0,2\pi])
+f\in C^1([0,2\pi])
+\varphi(f)=\hat{f}(0)\hat{g}(0)
+f\in L^1([0,2\pi])
+f\in L^1([0,2\pi])
+\varphi\in (L^1([0,2\pi]))^*
+\varphi(f)=\hat{f}(0)\hat{g}(0)
+\varphi
+C^1([0,2\pi])
+L^1([0,2\pi])
+L^1([0,2\pi])
+ \int\limits_{[0,2\pi]}f(t)g(nt)d\mu(t)= \frac{1}{n}\int\limits_{[0,2\pi n]}f\left(\frac{\tau}{n}\right)g(\tau)d\mu(\tau)= \frac{1}{n}\sum\limits_{k=0}^{n-1}\int\limits_{[2\pi k,2\pi (k+1)]}f\left(\frac{\tau}{n}\right)g(\tau)d\mu(\tau) 
+ \frac{1}{n}\sum\limits_{k=0}^{n-1}\int\limits_{[0,2\pi]}f\left(\frac{\xi+2\pi k}{n}\right)g(\xi)d\mu(\xi)= \int\limits_{[0,2\pi]}\left(\frac{1}{n}\sum\limits_{k=0}^{n-1}f\left(\frac{\xi+2\pi k}{n}\right)\right)g(\xi)d\mu(\xi) 
+ \lim\limits_{n\to\infty}\frac{1}{n}\sum\limits_{k=0}^{n-1}f\left(\frac{\xi+2\pi k}{n}\right)=\frac{1}{2\pi}\int\limits_{[0,2\pi]}f(\zeta)d\mu(\zeta)=\hat{f}(0) 
+ \lim\limits_{n\to\infty}\frac{1}{2\pi}\int\limits_{[0,2\pi]}f(t)g(nt)d\mu(t)= \lim\limits_{n\to\infty}\frac{1}{2\pi}\int\limits_{[0,2\pi]}\left(\frac{1}{n}\sum\limits_{k=0}^{n-1}f\left(\frac{\xi+2\pi k}{n}\right)\right)g(\xi)d\mu(\xi)= 
+ \frac{1}{2\pi}\int\limits_{[0,2\pi]}\lim\limits_{n\to\infty}\left(\frac{1}{n}\sum\limits_{k=0}^{n-1}f\left(\frac{\xi+2\pi k}{n}\right)\right)g(\xi)d\mu(\xi)= \frac{1}{2\pi}\int\limits_{[0,2\pi]}\hat{f}(0)g(\xi)d\mu(\xi)=\hat{f}(0)\hat{g}(0) 
+ \varphi: L^1([0,2\pi])\to\mathbb{C}:f\mapsto\lim\limits_{n\to\infty}\frac{1}{2\pi}\int\limits_{[0,2\pi]}f(t)g(nt)d\mu(t) 
+ |\varphi(f)|\leq\frac{\operatorname{ess}\sup|g|}{2\pi}\int\limits_{0,2\pi}|f(t)|d\mu(t)= \frac{\Vert g\Vert_{\infty}}{2\pi}\Vert f\Vert_1 

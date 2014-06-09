@@ -1,0 +1,27 @@
+\phi 
+\lim_{n \to \infty } \left( \left( \sum_{k = 0}^{[n\phi ]} \frac{1}{[ k\phi^{-1}] + 2}  \right) - \left( \sum_{k = 0}^n \frac{[k\phi ]}{( k + 1)( k + 2)} \right) \right) = \frac{1}{2} + \phi \tag 1
+[x]
+(1)
+ \phi 
+\lim_{n \to \infty } \left( \sum\limits_{k = 0}^{[n\phi ]} \frac{1}{\left[ k\phi^{-1} \right] + x} - \phi \ln n \right)
+\def\floor#1{\lfloor #1\rfloor} \def\ceil#1{\lceil #1\rceil}
+S
+j
+j=\floor{k/\phi}
+j\leq k/\phi<j+1
+k
+\ceil{(j+1)\phi} - \ceil{j\phi}
+0\leq j<n
+0\leq k\leq \floor{n\phi}
+j
+ S = \sum_{0\leq k\leq \lfloor n\phi\rfloor} \frac{1}{\lfloor   k/\phi\rfloor+2}, 
+ \sum_{0\leq k\leq \floor{n\phi}} \sum_j \frac{1}{j+2}[\phi j\leq   k<(j+1)\phi]. 
+[\ceil{j\phi}\leq k<\ceil{(j+1)\phi}]. 
+ \sum_{0\leq j<n} \frac{\ceil{(j+1)\phi} - \ceil{j\phi}}{j+2}. 
+ \frac{\ceil{n\phi}}{n+1} + \sum_{1\leq j<n} \frac{\ceil{j\phi}}{(j+1)(j+2)}. 
+\phi
+1
+ \frac{\ceil{n\phi}}{n+1} + \sum_{1\leq j<n} \frac{\ceil{j\phi}-\floor{j\phi}}{(j+1)(j+2)}. 
+ \sum_{1\leq k<n} \frac{1}{(k+1)(k+2)} = \frac12 - \frac1{1+n}. 
+ \frac{\ceil{n\phi}}{n+1} + \frac12 + O(n^{-1}) = \phi+\frac12 + O(1/n), 
+ \frac12+\phi. 

@@ -1,0 +1,23 @@
+a,c_0,c_1,...\in \mathbb{R}
+c_0,c_1,c_2,...
+\sum_{n=0}^{\infty}c_n(x-a)^n
+r
+\delta<r
+x
+0<|x-a|<\delta.
+r
+r>0
+x
+|x-a|<r
+k:=\min \{n:c_n\ne 0\}
+u(t)=t^k\left(|c_k|-\sum_{n=k+1}^\infty |c_n|t^{n+k}\right)
+|x-a|=t
+s(x)=\sum_{n=0}^{\infty}c_n(x-a)^n
+|s(x)-c_k(x-a)^k|\le \sum_{n=k+1}^{\infty}|c_n|\,|x-a|^n=|c_k|\,|x-a|^k-u(|x-a|).
+|s(x)|\ge |c_k(x-a)^k|-|s(x)-c_k(x-a)^k|\ge u(|x-a|).
+u(t)
+t=\tfrac r2s
+0\le s<1
+u(t)>0
+t
+ u(\tfrac r2s)\ge  s^k \left(|c_k|\left(\tfrac r2\right)^k-\sup_{n>k}|c_n|\left(\tfrac r2\right)^{n}\frac{s}{1-s} \right), 

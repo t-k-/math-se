@@ -1,0 +1,28 @@
+R_n(x)
+R_n(x) = \int_a^x \frac{(x-t)^n}{n!}f^{(n+1)}(t)dt
+R_n(x) = \int_0^x \frac{(x-t)^n}{n!}f^{(n+1)}(t)dt
+n
+f(x)=f(a)+f'(a)(x-a)+R_1(x)
+R_1(x) = f(x)-f(a) - f'(a) (x-a)
+{R_1}(x) = \int\limits_a^x {f'\left( t \right)dt}  - \int\limits_a^x {f'(a)dt} 
+{R_1}(x) = \int\limits_a^x {f'\left( t \right) - f'\left( a \right)dt} 
+f'\left( t \right) - f'\left( a \right) = u
+t - x = v
+{R_1}(x) = \int\limits_a^x {\left( {x - t} \right)f''\left( t \right)dt} 
+R_2(x)
+{R_2}(x) = {R_1}(x) - f''\left( a \right)\frac{{{{\left( {x - a} \right)}^2}}}{{2!}}
+{R_2}(x) = \int\limits_a^x {\left( {x - t} \right)f''\left( t \right)dt}  - \int\limits_a^x {\left( {x - t} \right)f''\left( a \right)dt} 
+{R_2}(x) = \int\limits_a^x {\left( {x - t} \right)\left( {f''\left( t \right) - f''\left( a \right)} \right)dt} 
+{R_2}(x) = \int\limits_a^x {\frac{{{{\left( {x - t} \right)}^2}}}{{2!}}f'''\left( t \right)dt} 
+f\colon[0,\infty)\to\mathbb{R}
+|f(x)|\le C\,e^{cx}
+C,c\in\mathbb{R}
+ \mathcal{L}f(s)=\int_0^\infty e^{-sx}f(x)\,dx,\quad s>c. 
+f\colon[0,\infty)\to\mathbb{R}
+n+1
+|f^{(k)}(x)|\le C\,e^{cx}
+x\ge0
+0\le k\le n+1
+C,c\in\mathbb{R}
+R_n(x)=f(x)-\sum_{k=0}^n\frac{f^{(k)}(0)}{k!}x^n.
+\begin{align*} \mathcal{L}R_n(s)&=\mathcal{L}f(s)-\sum_{k=0}^n\frac{f^{(k)}(0)}{k!}\mathcal{L}(x^k)(s)\\ &=\mathcal{L}f(s)-\sum_{k=0}^n\frac{f^{(k)}(0)}{s^{k+1}}\\ &=\frac{1}{s^{n+1}}\Bigl(s^{n+1}\mathcal{L}f(s)-\sum_{k=0}^ns^{n-k}f^{(k)}(0)\Bigr)\\ &=\frac{\mathcal{L}(x^{n})(s)}{n!}\cdot\mathcal{L}(f^{(n+1)})(s)\\ &=\mathcal{L}\Bigl(\frac{x^n}{n!}\ast f^{(n+1)}\Bigr). \end{align*}

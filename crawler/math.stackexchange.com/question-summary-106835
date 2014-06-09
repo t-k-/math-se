@@ -1,0 +1,29 @@
+V \equiv (X,Y)
+F(x,y)=Pr(X<=x,Y<=y) = \int_{-\infty}^{x}\int_{-\infty}^{y} f(x,y)dxdy
+R
+A \equiv (x_1,y_1) \;, B \equiv (x_1,y_0) \;,C \equiv (x_0,y_0) \;,A \equiv (x_0,y_1)
+x_1 > x_0
+y_1>y_0
+V
+R
+F(x,y)
+Pr(x_0<X<=x_1,y_0<Y<=y_1)=F(x_1,y_1)-F(x_1,y_0)+F(x_0,y_0)-F(x_0,y_1)
+F(x_1,...,x_N)=Pr(X1<=x1,..,X_N<=x_N)
+Pr(a_1<X_1<=b_1,...,a_N<X_N<=b_N)
+[a1,b1]x..x[a_N,b_N]
+a_i
+b_j
++\infty
+F_i(x)
+2^{10}
+2^n
+c=(c_i)_{1\leqslant i\leqslant n}
+c_i\in\{a_i,b_i\}
+1\leqslant i\leqslant n
+n(c)
+i
+c_i=a_i
+ \color{red}{\mathrm P(a_i\lt X_i\leqslant b_i\ \text{for all}\ i)=\sum_c(-1)^{n(c)}F(c_1,c_2,\ldots,c_n)} 
+c
+ \prod_{i=1}^n\left(\mathbf 1_{X_i\leqslant b_i}-\mathbf 1_{X_i\leqslant a_i}\right)=\sum_c(-1)^{n(c)}\prod_{i=1}^n\mathbf 1_{X_i\leqslant c_i}, 
+ \mathrm E\left(\prod_{i=1}^n\mathbf 1_{X_i\leqslant c_i}\right)=\mathrm P(X_i\leqslant c_i\ \text{for all}\ i)=F(c_1,c_2,\ldots,c_n). 

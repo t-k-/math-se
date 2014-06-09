@@ -1,0 +1,8 @@
+\
+ per average ton stored per month (based on the average of beginning and ending inventory each month). Carter can store up to 
+ \begin{array}{c|lc} \text{Month} & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline \text{price(dollar)} / \text{ton} & 135 & 110 & 150 & 175 & 130 & 145 \\ \end{array} 
+70
+x_i=\text{quantity sold in month } i,\\ y_i=\text{quantity bought in month } i,\\ I_i=\text{inventory at the beginning of month } i
+i\in \{1,2,\dots 6\}
+\begin{align} \max \quad & 135x_1+110x_2+150x_3+175x_4+130x_5+145x_6-135y_1-110y_2-150y_3-175y_4-130y_5-145y_6-10\left( \frac{I_1+I_2}{2}\right)-10\left( \frac{I_2+I_3}{2}\right)-10\left( \frac{I_3+I_4}{2}\right)-10\left( \frac{I_4+I_5}{2}\right)-10\left( \frac{I_5+I_6}{2}\right) \end{align}
+\begin{align} \text{s.t.} & I_i\leq 400 \quad \forall i\in \{1,2,\dots 6\}\\ & I_1=70\\ & I_2=I_1+y_1-x_1\\ & I_3=I_2+y_2-x_2\\ &I_4=I_3+y_3-x_3\\ &I_5=I_4+y_4-x_4\\ &I_6=I_5+y_5-x_5\\ & x_i, y_i, I_i \geq 0 \quad \forall i\in \{1,2,\dots 6\} \end{align}

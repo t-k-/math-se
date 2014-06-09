@@ -1,0 +1,64 @@
+(0,1)
+1
+1
+\frac{1}{2}
+X
+Y
+f
+[0,1]
+1
+F(t)=\int_0^tf(u)\,\mathrm du
+\begin{align} P[X+Y\ge1]=\iint\limits_{\substack{0\le x\le1\\0\le y\le1\\{x+y\ge1}}} f(x)f(y)\,\mathrm dx\,\mathrm dy=\int_0^1f(x)\left(\int_{1-x}^1f(y)\,\mathrm dy\right)\,\mathrm dx=\int_0^1f(x)\big(1-F(1-x)\big)\,\mathrm dx, \end{align}
+f
+1
+[0,1]
+F(t)=t
+P[X+Y\ge1] = \int_0^1\big(1-(1-x)\big)\,\mathrm dx=\int_0^1 x\,\mathrm dx=1/2
+(0,1)^2
+x+y\ge 1
+X
+Y
+U=1-X
+V=1-Y
+U
+V
+(0,1)
+P(U+V>1)
+P(X+Y>1)
+U+V>1
+X+Y<1
+P(X+Y>1)=P(U+V>1)=P(X+Y<1)
+1/2
+X+Y
+1
+0
+(x, y)
+\iff x + y > 1\quad  x \in (0, 1), y \in (0, 1)
+\dfrac{1}{2}
+= \dfrac{1}{2}
+(x, y)
+\iff x + y \lt 1 \quad x\in (0, 1), y\in (0, 1)
+\dfrac{1}{2}
+= \dfrac{1}{2}
+a+b
+a
+b
+\frac{1}{2} + \frac{1}{2} = 1
+\frac {1}{2}
+f_{X} (t) = 0
+f_{X} (t) = 1
+0\le t \le 1
+f_{Y} (t) = 0
+f_{Y} (t) = 1
+0\le t \le 1
+f_{Z}(t) =  \int_{-\infty}^\infty f_X(w)f_Y(t-w)dw = \int_{0}^t f_X(w)f_Y(t-w)dw
+t<0
+f_Z(t) = 0
+0\le t\le1
+f_Z(t) = t/2
+1\le t\le2
+f_Z(t) = 1-t/2
+t>2
+f_Z(t) = 0
+\int_1^\infty f_Z(t)dt = \int_1^2 f_Z(t)dt = 1/2
+\int_{-\infty}^1 f_Z(t)dt = \int_0^1 f_Z(t)dt = 1/2

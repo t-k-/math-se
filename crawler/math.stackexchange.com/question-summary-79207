@@ -1,0 +1,18 @@
+(x-2xy-y^2)\frac{dy}{dx}+y^2=0
+M = x - 2xy - y^2
+N = y^2
+M_x = 1-2y
+N_y = 2y
+y
+\mu (y)
+\frac{M_x-N_y}{N} = \frac{1-2y}{y^2} = \frac{1}{y^2} -2 \frac{1}{y}
+ \frac{d\mu}{dy} = \left(  \frac{1}{y^2} -2 \frac{1}{y} \right)\mu 
+\mu(y) = e^{\displaystyle\int\left(  \frac{1}{y^2} -2 \frac{1}{y} \right)dy} = e^{\frac{-1}{y}-2\log y} = y^{-2} e^{y^{-1}}.
+\frac{dx}{dy}
+x
+\frac{dx}{dy}+\left(\frac{1-2y}{y^2}\right).x=1
+x
+ \frac{dx}{dy}+P(y).x=Q(x)
+e^{\int P(y)dy}=e^{\int \left(\frac{1-2y}{y^2}\right)dy}=\frac{e^{\frac{-1}{y}}}{y^2}
+x.\frac{e^{\frac{-1}{y}}}{y^2}=\int\frac{e^{\frac{-1}{y}}}{y^2}dy+c=e^{\frac{-1}{y}}+c
+x=y^2(1+ce^{\frac{1}{y}})

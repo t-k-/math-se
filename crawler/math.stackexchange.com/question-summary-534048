@@ -1,0 +1,18 @@
+U_t(x,t)=U_{xx}(x,t)-b(t)U(x,t)+q_0
+b(t)
+t
+q_0
+0<x<\pi
+t>0
+U(x,0)=0
+U(0,t)=0=U(\pi,t)
+U(x,t)=\frac{4q_0}{\pi a(t)}\sum\limits_{n=1}^\infty \frac{\sin((2n-1)x)}{2n-1}\int\limits_0^t e^{-(2n-1)^2(t-\tau)}a(\tau)d\tau
+a(t)=e^{\int\limits_0^t b(\sigma)d\sigma)}.
+U_t(x,t)=U_{xx}(x,t)-bU(x,t)+q(t)
+b
+q
+t
+0<x<\pi
+t>0
+pde := diff(U(x, t), t)-(diff(U(x, t), x, x))+b*U(x, t)+q(t);
+pdsolve(pde);

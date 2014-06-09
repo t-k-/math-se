@@ -1,0 +1,63 @@
+(x+x^2+x^3+x^4+x^5+x^6)^{10} = x^{10}(x^6 - 1)(1+x+x^2+\cdots)^{10}
+\frac{1}{10}
+n
+n
+\frac{1}{n} - \epsilon
+\epsilon
+n
+6
+n
+n
+a_k
+k
+n
+x=e^{i2\pi k/n}
+6
+n
+n
+n
+\left(\dfrac{\sin(6\pi k/n)}{6\sin(\pi k/n)}\right)^n
+1
+k
+(7)
+n\in\{1,2,3,6\}
+\frac1n
+\sin(6\pi k/n)
+ \begin{align} P_n(x) &=\left(\frac{x+x^2+x^3+x^4+x^5+x^6}{6}\right)^n\\ &=\sum_{j=n}^{6n}a_j\,x^j\tag{1} \end{align} 
+ \begin{align} \frac1n\sum_{k=0}^{n-1}P(e^{i2\pi k/n}) &=\frac1n\sum_{k=0}^{n-1}\sum_{j=n}^{6n}a_k\,e^{i2\pi jk/n}\\ &=\sum_{j=n}^{6n}a_j\left(\frac1n\sum_{k=0}^{n-1}e^{i2\pi jk/n}\right)\tag{2} \end{align} 
+ \frac1n\sum_{k=0}^{n-1}e^{i2\pi jk/n}=\left\{\begin{array}{}1&\text{if }n\,\vert \,j\\0&\text{if }n\!\!\not{\vert}\,j\end{array}\right.\tag{3} 
+ P_n(x)=\left(\frac16\frac{x^7-x}{x-1}\right)^n\tag{4} 
+ \begin{align} P_n(e^{i2\pi k/n}) &=\left(\frac16\frac{\sin(6\pi k/n)}{\sin(\pi k/n)}e^{i7\pi k/n}\right)^n\\ &=(-1)^k\left(\frac{\sin(6\pi k/n)}{6\sin(\pi k/n)}\right)^n\tag{5} \end{align} 
+ \begin{align} \frac1n\sum_{k=0}^{n-1}P_n(e^{i2\pi k/n}) &=\frac1n\sum_{k=0}^{n-1}(-1)^k\left(\frac{\sin(6\pi k/n)}{6\sin(\pi k/n)}\right)^n\\ &=\frac1n+\frac1n\sum_{k=1}^{n-1}(-1)^k\left(\frac{\sin(6\pi k/n)}{6\sin(\pi k/n)}\right)^n\tag{6} \end{align} 
+ \frac1n\sum_{k=1}^{n-1}(-1)^k\left(\frac{\sin(6\pi k/n)}{6\sin(\pi k/n)}\right)^n\tag{7} 
+\epsilon
+n=1,2,3
+\frac{1}{648}
+n=4
+- \frac{1}{9270}
+n=5
+n=6
+0.01223
+n=52
+\frac{1}{n}
+n
+n \gt 43
+n
+3
+4
+1
+2
+5
+6
+\frac{35}{12}
+\sqrt{ \frac{24}{35 \pi n} } \exp\left( - \frac{3 n}{70} \right).
+\frac{1}{n}
+n \ge 14
+1 \le n \le 1000
+\frac{1}{n}
+n
+9 \le n \le 191
+n^{-1/2}
+n
+0
+n^{-1}

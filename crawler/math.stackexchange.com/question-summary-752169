@@ -1,0 +1,9 @@
+y'' + 2t(y')^2 = 0 
+y(0)=2,y'(0)=1
+y(t)=\tan^{-1}(t)+2 
+y_1' = y_2 \\ y_2'=-2t(y_2)^2
+\gamma(t,y) = \begin{pmatrix}   0 & 1 \\   0 & -2ty_2   \end{pmatrix} 
+{y_1,y_2,y_3, ...}
+Y_1 = \exp(h(\frac{\gamma_1}{4}+(\frac{1}{4}-\frac{\sqrt3}{6})\gamma_2)+\frac{h^2}{2}(\frac{5}{72}-\frac{\sqrt3}{24})[\gamma_1,\gamma_2])y_n\\ \gamma_1 = \gamma(t_n+ (\frac{1}{2}-\frac{\sqrt3}{6})h,Y1)\\ Y_2 = \exp(h((\frac{1}{4}+\frac{\sqrt3}{6})\gamma_1+(\frac{\gamma_2}{4}))+\frac{h^2}{2}(-\frac{5}{72}-\frac{\sqrt3}{24})[\gamma_1,\gamma_2])y_n\\ \gamma_2 = \gamma(t_n+ (\frac{1}{2}-\frac{\sqrt3}{6})h,Y2)\\ y_{n+1} = \exp(\frac{h}{2}(\gamma1 + \gamma2)-\frac{\sqrt3}{12}h^2[\gamma_1,\gamma_2])
+[\cdot,\cdot]
+[A,B] = AB-BA

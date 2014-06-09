@@ -1,0 +1,13 @@
+k
+N
+\left(\dfrac{1}{N}\sum_{n=1}^{N}(\omega{(n)})^k\right)^{\frac{1}{k}}\le k+\sum_{q\le N}\dfrac{1}{q}
+\displaystyle\sum_{q\le N}
+N
+q=1
+\omega{(n)}
+n
+ \omega(n) = \sum_{p|n} 1
+n\neq N
+\omega(n)^k = \left(\sum_{p|n} 1\right)^k = \\= k\cdot\!\!\!\!\!\!\!\!\!\sum_{\substack{p_1,\ldots,p_k|n\\ p_1\neq p_2\neq\ldots\neq p_k}}\!\!\!\!\!\!\!\!1 + \binom{k}{2}\cdot\!\!\!\!\!\!\!\!\sum_{\substack{p_1,\ldots,p_k|n\\ p_1\neq p_2\neq\ldots\neq p_k}}\!\!\!\!\!\!\!\!1 + \ldots + \binom{k}{k-1}\cdot\!\!\!\sum_{\substack{p_1,p_2|n\\ p_1\neq p_2}}\!\!1+\sum_{p|n}1.
+\sum_{\substack{p_1\cdot\ldots\cdot p_j\leq N\\ p_1\neq p_2\neq\ldots\neq p_j}}\!\!\!\frac{1}{p_1\cdot\ldots\cdot p_j}\leq\left(\sum_{p\leq N}\frac{1}{p}\right)^j=(\log\log N+\gamma)^j
+\frac{1}{N}\sum_{n\leq N}\omega(n)^k\leq (\log\log N + 1+\gamma)^k.

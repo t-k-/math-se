@@ -1,0 +1,19 @@
+ X: \text{number of days before the Leader goes to the Switch Room}\\ X \sim Geom\left(\frac{1}{24}\right)\\ E(X) = 24, Var(X) = 552\\ 
+ Y_n: \text{number of days before one of the n remaining prisoner}\\ \text{goes to the Switch Room for the first time (n from 1 through 23)}\\ Y_n \sim Geom\left(\frac{n}{24}\right)\\ E(Y_n) = \frac{24}{n}, Var(Y_n) = \frac{24 (24-n)}{n^2} 
+E(X)
+E(Y_n)
+ Z: \text{Number of days before the Leader announces everyone's been to the Switch Room}\\ E(Z) = \sum_{n=1}^{23}E(X) + E(Y_n) = 552 + \sum_{n=1}^{23}E(Y_n) \approx 552 + 89.6229 \approx 641.6229\\ Var(Z) = \sum_{n=1}^{23}Var(X) + Var(Y_n) = 12696 + \sum_{n=1}^{23}Var(Y_n) \approx 12696 + 833.3521 \approx 13529.3521\\ \sigma = \sqrt{13529.3521} = 116.3157 
+Z
+1
+P(d) =\frac{24^d-\binom{24}{23}23^d+\binom{24}{22}22^d-\cdots\pm\cdots-\binom{24}{1}1^d}{24^d}
+P(d)
+d
+P(d)=0.99
+d
+d
+182.76\ldots
+P(182)=0.989655\ldots
+P(183)=0.990085\ldots
+ E(T_n) = n \cdot H_n\\ Var(T_n) = \frac{\pi^2 n^2}{6} - n\cdot H_n 
+Z
+ Z: \text{Days before the Leader announces all prisoners been to the Switch Room}\\ E(Z) = E(T_{24}) = 24 \cdot H_{24} \approx 90.623\\ Var(Z) = Var(T_{24}) = 96\pi^2 - 24H_{24} \approx 856.859\\ \sigma = \sqrt{Var(Z)} \approx 29.2722 

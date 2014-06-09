@@ -1,0 +1,33 @@
+\limsup A_n \smallsetminus \liminf A_n = \limsup (A_n \cap A_{n+1})
+A_n = \begin{cases}[0,1] &, n \equiv 0 \pmod{2}\\ [2,3] &, n \equiv 1 \pmod{2}.\end{cases}
+\limsup A_n = [0,1] \cup [2,3]
+\liminf A_n = \varnothing = \limsup (A_n \cap A_{n+1})
+\DeclareMathOperator{\sdiff}{\triangle}
+\limsup A_n \setminus \liminf A_n = \limsup (A_n \sdiff A_{n+1})
+A \sdiff B
+(A\setminus B) \cup (B\setminus A)
+x\in\limsup_{n\in\Bbb N}A_n
+\{n\in\Bbb N:x\in A_n\}
+x\in\liminf_{n\in\Bbb N}A_n
+\{n\in\Bbb N:x\notin A_n\}
+x\in\limsup_{n\in\Bbb N}A_n\setminus\liminf_{n\in\Bbb N}A_n
+\{n\in\Bbb N:x\in A_n\}
+\{n\in\Bbb N:x\notin A_n\}
+x\in\limsup_{n\in\Bbb N}(A_n\cap A_{n+1})
+\{n\in\Bbb N:x\in A_n\cap A_{n+1}\}
+x
+x\in A_n
+n
+n\in\Bbb N
+x\notin A_n\cap A_{n+1}
+x\notin\limsup_{n\in\Bbb N}(A_n\cap A_{n+1})
+x\in\limsup_{n\in\Bbb N}A_n\setminus\liminf_{n\in\Bbb N}A_n
+A_n=\begin{cases} \{0\},&\text{if }n\text{ is even}\\ \varnothing,&\text{if }n\text{ is odd}\;. \end{cases}
+x\in\limsup_{n\in\Bbb N}A_n\setminus\liminf_{n\in\Bbb N}A_n
+\{n\in\Bbb N:x\in A_n\}
+\{n\in\Bbb N:x\notin A_n\}
+M
+x\in\limsup_{n\in\Bbb N}(A_n\setminus A_{n+1})
+M=\{n\in\Bbb N:x\in A_n\setminus A_{n+1}\}\;;
+\limsup_{n\in\Bbb N}A_n\setminus\liminf_{n\in\Bbb N}A_n\subseteq\limsup_{n\in\Bbb N}(A_n\setminus A_{n+1})\;.
+\limsup_{n\in\Bbb N}A_n\setminus\liminf_{n\in\Bbb N}A_n=\limsup_{n\in\Bbb N}(A_n\setminus A_{n+1})\;.

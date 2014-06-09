@@ -1,0 +1,17 @@
+p>1
+\int_0^\infty{\cos{t^p}}dt=\frac{1}{p}\cos({\frac{\pi}{2p}})\Gamma({\frac{1}{p}})
+f(z) = e^{iz^{p}}
+R
+\frac{\pi}{2p}
+p
+1
+\int_{0}^{\infty} f(x) \ dx + \lim_{R \to \infty} \int_{0}^{\pi/(2p)} f(Re^{it}) iRe^{it}\ dt  + \int^{\infty}_{0} f(te^{i \pi / (2p)}) e^{i \pi/(2p)} \ dt =0 
+\Big| \int_{0}^{\pi/(2p)} f(Re^{it}) iRe^{it}\ dt \Big| =\int_{0}^{\pi/(2p)} |e^{iR^{p}e^{ipt}} | R \ dt = \int_{0}^{\pi/(2p)} e^{-R^{p} \sin pt} R \ dt
+ \le \int_{0}^{\pi /(2p)} e^{-R^{p} \frac{2}{\pi} pt} R \ dt \  \ (\text{Jordan's inequality})
+ = R \frac{\pi}{2} \frac{1}{pR^{p}} \Big(1-e^{-R^{p}} \Big) \to 0 \ \text{as} \ R \to \infty  \ \text{since p >1}
+\int_{\infty}^{0} f(te^{i \pi / (2p)}) e^{i \pi/(2p)} \ dt = - \int_{0}^{\infty} e^{it^{p}e^{i \pi/2}}e^{i \pi/(2p)} \ dt = -e^{i \pi/(2p)}\int_{0}^{\infty} e^{-t^{p}}  \ dt  
+ \int_{0}^{\infty} e^{ix^{p}} \ dx = e^{i \pi /(2p)} \int_{0}^{\infty} e^{-t^{p}} \ dt
+ \int_{0}^{\infty} \Big( \cos(x^{p}) + i \sin(x^{p}) \Big) \ dx =  \left[ \cos \left(\frac{\pi}{2p} \right) + i\sin \left( \frac{\pi}{2p} \right) \right]\frac{1}{p}\Gamma\left( \frac{1}{p} \right)
+p
+1
+0

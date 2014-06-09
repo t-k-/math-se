@@ -1,0 +1,6 @@
+\int_0^{\frac{\pi}{2}}x\ln \cos x \, \text{d}x
+\int_0^{\frac{\pi}{2}}\left(\sum_{k=1}^\infty\frac{(-1)^{k-1}\cos (2kx)}{k}x-x\ln 2\right) \, \text{d}x
+I_k = \int_0^{\pi/2} x \cos(2kx) dx = \dfrac{\cos(\pi k) -1}{4k^2} = \begin{cases} 0 & \text{if }k \text{ is even}\\ - \dfrac1{2k^2} & \text{if }k \text{ is odd}\end{cases}
+\int_{0}^{\pi/2} \left(\sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}k x \cos(2kx) - x \ln 2\right) dx = \sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}k I_k - \dfrac{\pi^2/4}2 \ln2
+\sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}k I_k = - \dfrac12\sum_{k \text{ is odd}} \dfrac1{k^3} = -\dfrac{7}{16} \zeta(3)
+-\dfrac{7}{16} \zeta(3) - \dfrac{\pi^2}8 \ln2

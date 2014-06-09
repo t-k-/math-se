@@ -1,0 +1,10 @@
+\int_{-\pi/3}^{\pi/3}1-\tan^4(x)
+u=\tan(x),\quad \frac{du}{dx}=\sec^2(x)
+ \begin{align} \int 1-\tan^4(x) & = \int 1 \;dx - \int\tan^4(x) \; dx \\  & = x-\int\tan^4(x) \; dx \\  & = x-\int\tan^2(x) \tan^2(x) \; dx \\  & = x-\int\tan^2(x) (\sec^2(x) - 1) \; dx \\  & = x-\int\tan^2(x) \sec^2(x) \; dx - \int\tan^2(x) \; dx \\  & = x-\int u^2 \; du - (\tan(x)-x) \\  & = x-\frac{1}{3}u^3 - (\tan(x)-x) \\  & = 2x-\frac{1}{3}\tan^3(x)-\tan(x) \end{align} 
+   \frac{\mathrm{d} }{\mathrm{d} x} \tan(x) = 1 + \tan^2(x) 
+ \begin{eqnarray}   \int \left(1-\tan^4(x)\right)\mathrm{d} x &=& \int \left(1-\tan^2(x)\right) \left(1+\tan^2(x)\right) \mathrm{d} x = \int \left(1-\tan^2(x)\right) \mathrm{d} \tan(x)\\   &=& \tan(x) - \frac{1}{3} \tan^3(x) + \color{gray}{\text{const}} \end{eqnarray} 
+\tan x=\frac{2t}{1-t^2}\;,
+\frac{\mathrm dx}{\mathrm dt}=\frac2{1+t^2}\;,
+t=\tan\frac x2\;,
+\tan^4 x
+ \begin{eqnarray} &&\int\tan^4x\mathrm dx \\ &=& \int\left(\frac{2t}{1-t^2}\right)^4\frac2{1+t^2}\mathrm dt \\ &=& \int\frac{32t^4}{(1-t^2)^4(1+t^2)}\mathrm dt \\ &=& \int\left(\frac2{t^2+1}-\frac1{(t-1)^2}-\frac1{(t+1)^2}+\frac1{(t-1)^3}-\frac1{(t+1)^3}+\frac1{(t-1)^4}+\frac1{(t+1)^4}\right)\mathrm dt \\ &=& 2\arctan t+\frac1{t-1}+\frac1{t+1}-\frac1{2(t-1)^2}+\frac1{2(t+1)^2}-\frac1{3(t-1)^3}-\frac1{3(t+1)^3}+ \color{gray}{\text{const}} \\ &=& 2\arctan t+\frac{2t}{t^2-1}-\frac{8t^3}{3(t^2-1)^3}+ \color{gray}{\text{const}} \\ &=& x-\tan x+\frac13\tan^3 x+ \color{gray}{\text{const}}\;, \end{eqnarray} 

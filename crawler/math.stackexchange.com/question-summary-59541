@@ -1,0 +1,93 @@
+\displaystyle M_1 = \begin{bmatrix} 1&0&0&0&0 \\ 1&1&0&0&0 \\ 1&1+x&1&0&0 \\ 1&1+x(1+x)&1+2x&1&0 \\ 1&1+x(1+x(1+x))&1+x(1+x)+x(1+2x)&1+3x&1 \end{bmatrix}
+\displaystyle M_2 = \begin{bmatrix} 1&0&0&0&0 \\ x&1&0&0&0 \\ 1&x&1&0&0 \\ 0&1&x&1&0 \\ 0&0&1&x&1 \end{bmatrix}
+\displaystyle M_3 = \begin{bmatrix} 1&1&1&1&1 \\ \frac{1}{2}(-1+x)x&1&1&1&1 \\ \frac{1}{2}(-1+x)x&\frac{1}{2}(-1+x)x&1&1&1 \\ 1&\frac{1}{2}(-1+x)x&\frac{1}{2}(-1+x)x&1&1 \\ 1&1&\frac{1}{2}(-1+x)x&\frac{1}{2}(-1+x)x&1 \end{bmatrix}
+M_1\cdot M_2 / M_3
+A
+\displaystyle A = \begin{bmatrix} 1&0&0&0&0 \\ \frac{2}{-1+x}&1&0&0&0 \\ \frac{2}{(-1+x)x}&\frac{2(1+x)}{-1+x}&1&0&0 \\ 0&\frac{2(1+x(1+x))}{(-1+x)x}&\frac{2(1+2x)}{-1+x}&1&0 \\ 0&0&\frac{(2(1+x(1+x)+x(1+2x)))}{((-1+x)x)}&\frac{(2(1+3x))}{(-1 + x)}&1 \end{bmatrix}
+A
+B
+\displaystyle B = \begin{bmatrix} 1&0&0 \\ \frac{-2}{-1 + x}&1&0 \\ (\frac{4}{(-1+x)^2} - \frac{2}{(-1+x)x} + \frac{4x}{(-1 + x)^2})&(\frac{-2}{-1+x} - \frac{2x}{-1+x})&1 \end{bmatrix}
+B
+c\;
+\displaystyle c = \frac {B(n,1)}{B(n+1,1)}, \; n=1,2,3\;...
+b
+\displaystyle b = 1,\; 1+x,\; 1+2x,\; 1+3x \;...
+c
+b
+x
+d\;
+\displaystyle d = x + b*c
+\displaystyle d = \frac{1+x}{2}, \frac{x(2+x+x^2)}{1+x+2x^2}, \frac{1+x(6+x(7+2x(4+x)))}{2(1+x)(2+x+3x^2)}\;...
+d
+\displaystyle \sqrt x\;
+x=2\;
+\displaystyle \frac{3}{2}, \frac{16}{11}, \frac{137}{96}, \frac{1642}{1157}, \frac{8429}{5950}, \frac{67952}{48001}, \frac{1509939}{1066976}, \frac{38701726}{27353183}, \frac{1124000429}{794502270}, \frac{36478904464}{25787223797} \;...
+\displaystyle \frac{36478904464}{25787223797} = 1.41461
+\displaystyle \sqrt 2 = 1.41421
+d
+\sqrt x
+M_1 (n,k)=\begin{cases}1&k=1\\M_1(n-1,k-1)+x \cdot M_1(n-1,k)&k>1\\\end{cases}
+ M_1(n,k)=\sum_{j=0}^{n-k}\binom{k+j-2}jx^j\;, 
+ \begin{eqnarray} M_1(n+2,n+2) &=& 1\;, \\ M_1(n+2,n+1) &=& 1+nx\;, \\ M_1(n+2,n+0) &=& 1+(n-1)x+\frac{n(n-1)}2x^2\;. \end{eqnarray} 
+n\ge1
+A
+ \begin{eqnarray} A(n+2,n+2) &=& 1\;, \\ A(n+2,n+1) &=& \frac2{x-1}(1+nx)\;, \\ A(n+2,n+0) &=& \frac2{x(x-1)}\left(1+(n-1)x+\frac{n(n-1)}2x^2\right)\;. \end{eqnarray} 
+B
+\sum_{l=0}^2A(n+2,n+l)B(n+l,1)=0\;.
+A(n+2,n+2)=1
+B(n+2,1)
+B
+ \begin{eqnarray} B(n+2,1) &=& -A(n+2,n+1)B(n+1,1)-A(n+2,n)B(n,1) \\ &=& -\frac2{x-1}(1+nx)B(n+1,1) \\ && -\frac2{x(x-1)}\left(1+(n-1)x+\frac{n(n-1)}2x^2\right)B(n,1) \;. \end{eqnarray} 
+B(n+1,1)
+ \begin{eqnarray} \frac1{c(n+1)} &=& -A(n+2,n+1)-A(n+2,n)c(n) \\ &=& -\frac2{x-1}(1+nx) -\frac2{x(x-1)}\left(1+(n-1)x+\frac{n(n-1)}2x^2\right)c(n) \;, \end{eqnarray} 
+c
+d(n)=x+(1+(n-1)x)c(n)
+c(n)=\frac{d(n)-x}{1+(n-1)x}\;,
+d
+ \frac{1+nx}{d(n+1)-x} = -\frac2{x-1}(1+nx) -\frac2{x(x-1)}\left(1+(n-1)x+\frac{n(n-1)}2x^2\right)\frac{d(n)-x}{1+(n-1)x} \;, 
+ \begin{eqnarray} \frac1{d(n+1)-x} &=& -\frac2{x-1}\left(1+\frac{1+(n-1)x+\frac12n(n-1)x^2}{(1+nx)(1+(n-1)x)}\frac{d(n)-x}x\right) \\ &=& -\frac2{x-1}\left(1+\gamma(n)\frac{d(n)-x}x\right) \;, \end{eqnarray} 
+\gamma(n)
+n
+n
+\gamma(n)
+1/2
+ \begin{eqnarray} \frac1{d(n+1)-x} &=& -\frac2{x-1}\left(1+\frac12\frac{d(n)-x}x\right) \\ &=& \frac{d(n)+x}{x(1-x)} \;, \\ d(n+1) &=& x+\frac{x(1-x)}{d(n)+x} \\ &=& x\frac{d(n)+1}{d(n)+x}\;. \end{eqnarray} 
+\sqrt x
+ \begin{eqnarray} d(n+1)-\sqrt x &=& x\frac{d(n)+1}{d(n)+x}-\sqrt x \\ &=& \frac{x-\sqrt x}{d(n)+x}(d(n)-\sqrt x)\;. \end{eqnarray} 
+d(n)
+\gamma(n)=1/2
+d(n)
+d
+ d(n+1) = x-\frac{x-1}2\left(1+\gamma(n)\frac{d(n)-x}x\right)^{-1}\;. 
+\gamma(n)
+ \begin{eqnarray} \gamma(n)-\frac12 &=& \frac{1+(n-1)x+\frac12n(n-1)x^2}{(1+nx)(1+(n-1)x)}-\frac12 \\ &=& \frac12\frac{1-x}{(1+nx)(1+(n-1)x)} \end{eqnarray} 
+0<\gamma(n)\lt1/2
+x\gt1
+1/2\lt\gamma(n)\lt1
+x\lt1
+d(n)>0
+1+\gamma(n)\frac{d(n)-x}x\gt1+\gamma(n)\frac{-x}x=1-\gamma(n)\gt0\;.
+x\gt1
+d(n)\gt0
+ \begin{eqnarray} d(n+1) &\gt& x-\frac{x-1}2\left(1+\gamma(n)\frac{0-x}x\right)^{-1} \\ &=& x-\frac{x-1}2\left(1-\gamma(n)\right)^{-1} \\ &\gt& x-\frac{x-1}2\left(\frac12\right)^{-1} \\ &=& x-(x-1) \\ &=& 1\;. \end{eqnarray} 
+d(n)\lt x
+ \begin{eqnarray} d(n+1) &\lt& x-\frac{x-1}2\left(1+\gamma(n)\frac{x-x}x\right)^{-1} \\ &=& x-\frac{x-1}2 \\ &=& \frac{x+1}2\;. \end{eqnarray} 
+1\lt d(1)=(x+1)/2\lt x
+1\lt d(n)\le(x+1)/2\lt x
+n
+x<1
+d(n+1)\gt x
+d(n)\gt x
+ \begin{eqnarray} d(n+1) &\lt& x-\frac{x-1}2\left(1+\frac12\frac{d-x}x\right)^{-1} \\ &\lt& x-\frac{x-1}2\left(1+\frac12\frac{-x}x\right)^{-1} \\ &=& x-\frac{x-1}2\left(\frac12\right)^{-1} \\ &=& x-(x-1) \\ &=& 1\;. \end{eqnarray} 
+x\lt d(1)=(x+1)/2\lt1
+x\lt d(n)\lt1
+n
+\gamma(n)=\frac12(1+\epsilon(n))
+\epsilon(n)\to0
+n\to\infty
+ \begin{eqnarray} d(n+1) &=& x-\frac{x-1}2\left(1+\frac12(1+\epsilon(n))\frac{d(n)-x}x\right)^{-1} \\ &=& x-\frac{x-1}2\frac{x}{x+\frac12(1+\epsilon(n))(d(n)-x)} \\ &=& \frac{x(d(n)+x+\epsilon(n)(d(n)-x))-(x-1)x}{d(n)+x+\epsilon(n)(d(n)-x)} \\ &=& \frac{x(d(n)+1)+\epsilon(n)x(d(n)-x)}{d(n)+x+\epsilon(n)(d(n)-x)}\;, \end{eqnarray} 
+\sqrt x
+ \begin{eqnarray} d(n+1)-\sqrt x &=& \frac{x(d(n)+1)+\epsilon(n)x(d(n)-x)}{d(n)+x+\epsilon(n)(d(n)-x)}-\sqrt x \\ &=& \frac{(x-\sqrt x)(d(n)-\sqrt x+\epsilon(n)x(d(n)-x))}{d(n)+x+\epsilon(n)(d(n)-x)} \\ &=& \frac{(x-\sqrt x)(1+\epsilon(n)x(d(n)+\sqrt x))}{d(n)+x+\epsilon(n)(d(n)-x)}(d(n)-\sqrt x) \;. \end{eqnarray} 
+d(n)
+x
+ \limsup_{n\to\infty}\left|\frac{(x-\sqrt x)(1+\epsilon(n)x(d(n)+\sqrt x))}{d(n)+x+\epsilon(n)(d(n)-x)}\right| =\limsup_{n\to\infty}\left|\frac{x-\sqrt x}{d(n)+x}\right| \le\left|\frac{x-\sqrt x}x\right|\lt1\;, 

@@ -1,0 +1,33 @@
+X
+Y
+[0,1]
+R=\frac{X}{X+Y}
+S=X+Y
+(R,S)
+P\left[R\leq r\right]=\int_{0}^{1}P\left[R\leq r\mid Y=y\right]dy=\int_{0}^{1}P\left[X\leq\frac{ry}{1-r}\right]dy
+P\left[R\leq0\right]=0
+P\left[R\leq1\right]=1
+r
+\left(0,1\right)
+\frac{r}{1-r}\leq1
+r\leq\frac{1}{2}
+\frac{r}{1-r}\int_{0}^{1}ydy=\frac{r}{2-2r}
+r>\frac{1}{2}
+\frac{r}{1-r}\int_{0}^{\frac{1-r}{r}}ydy+\int_{\frac{1-r}{r}}^{1}dy=\frac{3}{2}-\frac{1}{2r}
+X,Y
+f:\mathbb{R}^{2}\rightarrow\mathbb{R}
+Ef\left(X,Y\right)=\int\int f\left(x,y\right)dF_{X}\left(x\right)dF_{Y}\left(y\right)
+R=g\left(X,Y\right)
+f
+\left(x,y\right)\mapsto1
+g\left(x,y\right)\leq z
+\left(x,y\right)\mapsto0
+Ef\left(X,Y\right)=P\left[Z\leq z\right]
+P\left[Z\leq z\mid Y=y\right]=\int f\left(x,y\right)dF_{X}\left(x\right)
+P\left[Z\leq z\right]=\int P\left[Z\leq z\mid Y=y\right]dF_{Y}\left(y\right)
+R = \frac{X}{X+Y}
+X
+Y
+f(x,y)
+R = \frac{X}{X+Y}
+P(R \le r)

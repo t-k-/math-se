@@ -1,0 +1,49 @@
+u \colon \mathbb{R}^n \to \mathbb{R}
+\gamma
+u
+ \begin{eqnarray} [u]_{C^\gamma}  &=&  \sup \left\{\frac{|u(x) - u(y)|}{|x-y|^\gamma} : x,y \in U, x \neq y \right\}  \\ &=& \inf \left\{ C \geq 0 : |u(x) - u(y)| \leq C |x-y|^{\gamma} \text{ for all } x,y \in U \right\}. \end{eqnarray} 
+1 \leq p < \infty
+0 < \gamma \leq 1
+0 < \lambda < 1
+C
+C^{1}(\mathbb{R}^n)
+u
+ 0 = \frac{\lambda}{p} - (1-\lambda)\frac{\gamma}{n}. 
+ \|u\|_{L^\infty} \leq C \|u\|_{L^p}^{\lambda} [u]_{C^\gamma}^{1-\lambda} 
+q,r
+p < q < r \leq \infty
+u \in L^p \cap L^r
+ \frac{1}{q} = \frac{\lambda}{p} + \frac{1-\lambda}{r}, 
+ \|u\|_{L^q} \leq \|u\|_{L^{p}}^{\lambda} \|u\|_{L^r}^{1-\lambda} 
+1/r
+q
+p
+\gamma
+n
+q \to \infty
+r \to -n / \gamma
+u \in L^{\infty}
+u
+C^1
+\lim_{q \to \infty} \|u\|_{L^q} =\|u\|_{L^\infty}
+ \frac{1}{r} = \frac{1/q - \lambda/p}{1-\lambda} = \frac{1/q}{1-\lambda} - \frac{\gamma}{n} 
+ \frac{1}{q} = \frac{\lambda}{p} + \frac{1-\lambda}{r}, 
+ 0 = \frac{\lambda}{p} - (1-\lambda)\frac{\gamma}{n}. 
+U = \Bbb R^n
+\| u \|_{L^p} = \| u \|_{C^\gamma} = 1
+L^\infty
+u
+L^p \cap C^\gamma
+v(x) = A u(B x)
+A
+B
+1
+u
+L^p
+ \| u \|_{L^\infty} \le \sum_{k=0}^{-\infty}\| P_k u \|_{L^\infty} + \sum_{k=1}^{\infty} \| P_k u \|_{L^\infty}. 
+\| P_k u \|_{L^\infty} \le C 2^{k \frac{n}{p}} \| P_k u \|_{L^p} = C 2^{k \frac{n}{p}}
+\sum_{k=0}^{-\infty}\| P_k u \|_{L^\infty} \le C \sum_{k=0}^{-\infty} 2^{k \frac{n}{p}} = C_1 < \infty. 
+C^\gamma
+ \sup_{k \in \Bbb Z} 2^{k \gamma} \| P_k u \|_{L^\infty} \le C' \| u \|_{C^\gamma} 
+\sum_{k=1}^{\infty}\| P_k u \|_{L^\infty} \le \sum_{k=1}^{\infty} 2^{-k \gamma} C' \| u \|_{C^\gamma} = C' \sum_{k=1}^{\infty} 2^{-k \gamma} = C_2 < \infty
+\| u \|_{L^\infty} \le C_1 + C_2

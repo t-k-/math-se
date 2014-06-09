@@ -1,0 +1,14 @@
+a_n = -\cos \left( \frac{\pi}{8n-2} \right) \to 1 \text{ as } n \to \infty
+\epsilon > 0
+N = \Big[ \frac{\pi}{8 \arccos \left( \epsilon - 1 \right) } + \frac{1}{4} \Big] + 1 \; \forall \; 0 \le \epsilon \le 2
+\epsilon > 2
+ \forall \; n \ge N = \Big[ \frac{\pi}{8 \arccos \left( \epsilon - 1 \right) } + \frac{1}{4} \Big] + 1 > \frac{\pi}{8 \arccos \left( \epsilon - 1 \right) } + \frac{1}{4} \\ \implies 8n > \frac{\pi}{\arccos \left( \epsilon - 1 \right)} + 2 \\ \implies 8n - 2 > \frac{\pi}{\arccos \left( \epsilon - 1 \right)} \\ \implies \arccos \left( \epsilon - 1 \right) > \frac{\pi}{8n-2} = \Bigl\lvert \frac{\pi}{8n-2} \Bigr\rvert \\ \implies \epsilon - 1 > \cos \left( \Bigl\lvert \frac{\pi}{8n-2} \Bigl\lvert \right) = \Bigl\lvert \, \cos \left( \frac{\pi}{8n-2} \right) \Bigr\rvert \\\\ \implies \epsilon > \Bigl\lvert \, \cos \left( \frac{\pi}{8n-2} \right) \Bigr\rvert + 1 = \Bigl\lvert \, \cos \left( \frac{\pi}{8n-2} \right) \Bigr\rvert + \lvert 1 \rvert \ge \Bigl\lvert \, \cos \left( \frac{\pi}{8n-2} \right) + 1 \Bigr\rvert \\\\ \iff \epsilon > \Bigl\lvert \, - \cos \left( \frac{\pi}{8n-2} \right) - 1 \Bigr\rvert 
+\therefore \; a_n \to 1
+\arccos a\lt b
+a\gt\cos b
+\lim_{n\to\infty}-\cos\left(\frac{\pi}{8n-2}\right)=-\cos\left(\lim_{n\to\infty}\frac{\pi}{8n-2}\right)=-\cos (0)=-1
+\cos(2x) = \cos^2(x) - \sin^2(x) = 1-2\sin^2(x)
+1-\cos(x) = 2\sin^2(x/2)
+|\sin(x)| \le |x|
+|1-\cos(x)| \le 2|x/2|^2 = |x|^2/2
+|1-\cos(\frac{\pi}{8n-2})| \le (\frac{\pi^2}{2(8n-2)^2}) 

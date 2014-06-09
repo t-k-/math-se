@@ -1,0 +1,33 @@
+X
+f(x)=(1/972)x(18-x)
+0<x<18,
+f(x)=0,
+Y=(X/9+.4).
+(i)
+E(X)
+\sigma_x
+E(X)=\int_{-{\infty}}^\infty
+xf(x)dx
+E(X)=
+f(x)=(1/972)x(18-x)
+=1/972\int_0^{18}x(18x-x^2)dx
+=1/972[18x^3/3-x^4/4]_0^{18}
+E[X]=9
+E(X^2)=\int_{-{\infty}}^\infty
+x^2f(x)dx
+=1/972\int_0^{18} x^2(18x-x^2)dx
+=1/972[18x^4/4-x^5/5]_0^{18}
+E[x^2]=97.2
+Var(x)=E[X^2]-E[X]^2=16.2
+\sigma_x = 4.02
+(ii)
+E(Y)
+\sigma_y
+Y=(X/9+.4),
+E[Y]=(E[X]/9+.4)
+\sigma_y
+V(Y)=V(\frac{X}{9}+.4)
+V(Y)=V(\frac{X}{9})
+V(Y)=\frac{1}{81}V(X)
+V(Y)=\frac{1}{81}\times 16.2
+V(Y) = 0.2

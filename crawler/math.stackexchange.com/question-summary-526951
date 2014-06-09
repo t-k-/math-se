@@ -1,0 +1,17 @@
+f_{X+Y}
+f_{X+Y}(z)=\int_{-\infty}^{+\infty}f_{X,Y}(x,z-x)\,\mathrm dx\\ =\int_{-\infty}^{+\infty}f_X(x)f_Y(z-x)\,\mathrm dx\\ =\int_{-\infty}^{+\infty}\frac1{\sqrt{2\pi}}\exp\left(-\frac12 x^2\right)\frac1{\sqrt{2\pi}}\exp\left(-\frac12(z-x)^2\right)\,\mathrm dx\\ = \frac1{2\pi} \int_{-\infty}^{+\infty}\exp\left(-\frac12\left(x^2+(z-x)^2\right)\right)\,\mathrm dx\\ = \frac1{2\pi}\exp(-1/2z^2) \int_{-\infty}^{+\infty}\exp(zx)\,\mathrm dx
+(X,Y)
+X=\mu_X+\sigma_XU
+Y=\mu_Y+\sigma_YV
+U
+V
+\rho=\mathrm{Corr}(X,Y)=\mathrm{Cov}(U,V)
+(U,W)
+X+Y=\mu_X+\mu_Y+Z
+X+Y
+\mu
+\sigma^2
+ V=\rho U+\tau W,\qquad\tau=\sqrt{1-\rho^2}, 
+ Z=\sigma_XU+\sigma_YV=(\sigma_X+\rho\sigma_Y)U+\sigma_Y\tau W 
+ E[Z^2]=(\sigma_X+\rho\sigma_Y)^2+\sigma_Y^2\tau^2. 
+ \mu=\mu_X+\mu_Y,\qquad\sigma^2=\sigma_X^2+2\rho\sigma_X\sigma_Y+\sigma_Y^2. 

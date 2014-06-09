@@ -1,0 +1,78 @@
+f
+[0,1]
+f'(x)
+\lim_{n\rightarrow\infty} \int\limits_0^1 \frac{nf(x)}{1+n^2x^2} dx = \frac{\pi}{2}f(0)\;?
+\int_0^1\frac{n}{1+n^2x^2}dx=\tan^{-1}(nx)
+f'(x)
+\lim_{n\rightarrow\infty} \int_0^1 \frac{n}{1+n^2x^2} \, dx = \frac{\pi}{2}.
+f
+\delta>0
+f(x)
+f(0)
+x
+[0,\delta)
+\delta
+n
+\int_0^{\delta} \frac{n}{1+n^2x^2} \, dx \approx \frac{\pi}{2}
+\int_{\delta}^1 \frac{n}{1+n^2x^2} \, dx \approx 0.
+\int_0^1 f(x) \frac{n}{1+n^2x^2} \, dx \approx f(0)\frac{\pi}{2}.
+\phi_n(x) = \frac{n}{1+n^2x^2}
+0
+\phi_n(x)
+f(x)
+f(0)
+f
+[0,1]
+|f(x)| \le B
+r>0
+x \in [r,1]
+\frac{n}{1+n^2x^2} \le \frac{1}{n r}
+\epsilon>0
+f
+0
+r
+\sup_{x \in [0,r)} |f(x)-f(0)| < \frac{\epsilon}{\pi}
+N
+N > \frac{B}{\epsilon r}
+n \ge N
+|\int_0^1 \phi_n(x)(f(x)-f(0))dx | < \epsilon
+\lim_n \int_0^1 \phi_n(x)(f(x)-f(0))dx = 0
+\lim_n \arctan n = \frac{\pi}{2}
+\lim_n \int_0^1 \phi_n(x)f(x)dx = \frac{\pi}{2} f(0)
+K_n
+K_n(x) \, dx
+\int f(x) \, dx 
+f(x) \, dx
+[x, x+dx]
+ K_n(0) \, dx \to 1
+K_n
+f
+[0, 1]
+f
+M > 0
+x = 0
+\epsilon > 0
+\delta > 0
+ |x| < \delta \Longrightarrow |f(x) - f(0)| < \epsilon. 
+ K_n(x) = \frac{1}{\tan^{-1}n} \frac{n}{1+n^2 x^2}. 
+ \int_{0}^{1} K_n(x) \, dx = \frac{1}{\tan^{-1} n} \int_{0}^{n} \frac{dx'}{1+x'^2} = 1
+\limsup_{n\to\infty}
+\epsilon > 0
+\epsilon>0
+\alpha >0
+|f(x)-f(0)|\leq \epsilon/2
+0\leq x\leq \alpha
+L_n
+\|f\|_\infty
+|f|
+[0,1]
+L_n-\frac{\pi}{2}f(0)
+\frac{\pi\epsilon}{4}<\epsilon
+N
+L_n
+\frac{\pi}{2}f(0)
+ L_n=\int_0^\alpha\frac{nf(0)}{1+n^2x^2}dx+\int_0^\alpha\frac{n(f(x)-f(0))}{1+n^2x^2}dx+\int_\alpha^1\frac{nf(x)}{1+n^2x^2}dx=I_n+J_n+K_n. 
+ I_n=f(0)\arctan(n\alpha)\longrightarrow \frac{\pi}{2}f(0). 
+ |J_n|\leq \int_0^\alpha\frac{n|f(x)-f(0)|}{1+n^2x^2}dx\leq \frac{\epsilon}{2}\int_0^\alpha\frac{n}{1+n^2x^2}dx=\frac{\epsilon}{2}\arctan(n\alpha)\longrightarrow\frac{\pi\epsilon}{4}. 
+ |K_n|\leq \|f\|_\infty \int_\alpha^1\frac{n}{1+n^2x^2}dx\leq \|f\|_\infty \int_\alpha^1\frac{n}{1+n^2\alpha^2}dx \leq \frac{\|f\|_\infty}{n\alpha^2}\longrightarrow 0. 
+ |L_n-\frac{\pi}{2}f(0)|\leq \epsilon\qquad\forall n\geq N. 

@@ -1,0 +1,26 @@
+f(x,y)=\large\frac{1}{2\pi}\frac{1}{\sqrt{1-x^2-y^2}}
+f(x,y)
+f
+R
+x,y\rightarrow x',y'
+f(x,y)=R\circ f(x,y):=f(x',y')
+f(x,0)=\large\frac{1}{2\pi}\frac{1}{\sqrt{1-x^2}}
+u(x)
+u(x):=\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}f(x,y)dy
+u(x)=1/2
+[-1,1]
+x
+f
+f(x,y)
+x,y
+\vec n_\theta
+(\cos\theta,\sin\theta
+f
+(\vec x\vec n_\theta)
+a=(\vec x\vec n_\theta)-i\epsilon
+\epsilon\to0^+
+ Rf_\vec\alpha(s) = \frac{1}{2}\mathbb{I}_{-1\leq s\leq 1},
+ \mathcal{F}(Rf_\vec\alpha)(\sigma) = \frac{\sin \sigma}{\sigma}, 
+ \mathcal{F}f(\vec k) = \frac{\sin |\vec k|}{|\vec k|}.
+ \begin{align} f(\vec x) &= \int \frac{d\vec k}{(2\pi)^2} e^{-i(\vec x\vec k)} \frac{\sin|\vec k|}{|\vec k|} \\&= \iint \frac{dr d\theta}{(2\pi)^2}e^{-i r (\vec x\vec n_\theta)\sin r} \\&=\frac{1}{4\pi^2}\int_0^{2\pi}d\theta \int_0^\infty \sin r e^{-i r (\vec x\vec n_\theta)}dr \\&= \frac{1}{4\pi^2} \int_0^{2\pi}d\theta \frac{1}{1-(\vec x\vec n_\theta)^2} \\&= \frac{1}{4\pi^2}\int_0^{2\pi} \frac{d\theta}{1-|\vec x|^2\cos^2\theta} \\&= \frac{1}{2\pi} \frac{1}{\sqrt{1-|\vec x|^2}} \end{align}
+ \int_0^\infty \sin r e^{-i a r}dr = \frac{1}{1-a^2}, \qquad (\Im a < 0). 

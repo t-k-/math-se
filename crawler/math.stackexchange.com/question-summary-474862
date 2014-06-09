@@ -1,0 +1,22 @@
+\{a_{n}\}_{n\ge 2}
+a_{n}\longrightarrow l
+l
+a_{n}=\sqrt{1+\sqrt{2+\cdots+\sqrt{n}}}.
+\lim_{n\to\infty}\sqrt{n}\cdot\sqrt[n]{l-a_{n}}=\dfrac{\sqrt{e}}{2}.
+l-x_n
+x_{m+1}-x_m
+ l-x_n=\sum\limits_{m\geq n}(x_{m+1}-x_m) 
+x_n^{(k)}=\sqrt{k+\sqrt{(k+1)+\ldots+\sqrt{n}}}
+ x_{n+1}-x_n=\frac{\sqrt{n+1}}{\prod_{1\leq k\leq n}(x_{n+1}^{(k)}+x_n^{(k)})} 
+x_n^{(k)}=\sqrt{k+x_n^{(k+1)}}
+\sqrt{k}\leq x_n^{(k)}\leq \sqrt{k}+1\tag{3.1}
+x_n^{(k)}=\sqrt{k}+\frac{1}{2}+\mathcal{O}\left(\frac{1}{\sqrt{k}}\right)\tag{3.2}
+x_n^{(k)}=\sqrt{k}\exp\left(\frac{1}{2\sqrt{k}}+\mathcal{O}\left(\frac{1}{k^{3/2}}\right)\right)\tag{3.3}
+1\leq k<n
+\mathcal{O}
+k
+n
+ x_{n+1}-x_n=\frac{1+\mathcal{o}(1)}{2^n\sqrt{(n-1)!}}\exp\left(-\sum\limits_{1\leq k< n}\left(\frac{1}{2\sqrt{k}}+\mathcal{O}\left(\frac{1}{k^{3/2}}\right)\right)\right) 
+ x_{n+1}-x_n\sim\frac{\operatorname{const}}{2^n\sqrt{(n-1)!}}\exp(-\sqrt{n}) 
+ l-x_n\sim x_{n+1}-x_n\sim \frac{\operatorname{const}}{2^n\sqrt{(n-1)!}}\exp(-\sqrt{n}) 
+ \sqrt[n]{l-x_n}\sim\frac{1}{2}\sqrt{\frac{e}{n}} 

@@ -1,0 +1,7 @@
+zdx+xdy+xydz 
+C
+r(t)=4\cos t \,\textbf{i} +4\sin t \,\textbf{j}+3t\,\textbf{k} \;,\;\; 0\le t \le 2\pi
+I:=\int\limits_0^{2\pi}\left( 3t(-4\sin t)+4\cos t(4\cos t)+16\cos t\sin t\cdot (3)\right)dt
+I:=\int\limits_0^{2\pi}\left(-12t\cos t+16\cos^2t+\overbrace{24\sin 2t}^{=48\sin t\cos t}\right)dt=
+=\left.12t\cos t\right|_0^{2\pi}-12\;\overbrace{\int\limits_0^{2\pi}\cos t\,dt}^{=0}+8\left(t+\sin t\cos t\right)_0^{2\pi}-\left.12\cos 2t\right|_0^{2\pi}=
+=24\pi+8(2\pi)-12(1-1)=40\pi

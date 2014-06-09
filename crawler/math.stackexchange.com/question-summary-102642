@@ -1,0 +1,27 @@
+X_1, X_2, \dots,X_n, X_{n+1}
+S_i = X_1 + \dots + X_i
+\mathbb{E}\left[\max_{k=1}^n\left(\frac{S_k}{S_{n+1}} - \mathbb{E}\left(\frac{S_k}{S_{n+1}}\right)\right)\right]
+\mathrm E\left(\frac{S_k}{S_n}\right)=\frac{k}n
+0\leqslant k\leqslant n
+U_{k:n}
+k
+n
+U_{k:n}
+\alpha = k
+\beta=n+1-k
+V_n = \max_{k=1}^n \left(U_{k:n} - \frac{k}{n+1} \right)
+ \mathbb{P}\left(-\frac{1}{n+1} \leqslant V_n \leqslant \frac{n}{n+1} \right) = 1
+     \mathbb{E}\left( \frac{S_k}{S_{n+1}} \right) = \mathbb{E}(U_{k:n}) = \frac{k}{n+1} 
+-\frac{1}{n+1} <z<\frac{n}{n+1}
+z_i = z + \frac{i}{n+1}
+z_0 = 0
+z_{n+1} = 1
+V_n
+ \begin{eqnarray}    \mathbb{P}(V_n \leqslant z) &=& \mathbb{P}\left(\land_{k=1}^n  \left(U_{k:n} \leqslant z+\frac{k}{n+1}\right)\right) = F_{U_{1:n}, \ldots, U_{n:n}}\left(z + \frac{1}{n+1},\ldots,z + \frac{n}{n+1} \right) \\    &=& \sum_{\begin{array}{c} s_1 \leqslant s_2 \leqslant \cdots \leqslant s_n \\ s_1+s_2 + \cdots+s_n+s_{n+1} = n \\ s_i \geqslant i \end{array}} \binom{n}{s_1,s_2,\ldots,s_{n+1}}\prod_{k=1}^{n+1} \left(F_U(z_k) - F_U(z_{k-1})\right)^{s_k} \end{eqnarray} 
+    \mathbb{E}(V_n) = -\frac{1}{n+1} + \int\limits_{-\frac{1}{n+1}}^{\frac{n}{n+1}} \left( 1- \mathbb{P}(V_n \leqslant z) \right) \mathrm{d} z = \frac{n}{n+1} - \int\limits_{-\frac{1}{n+1}}^{\frac{n}{n+1}} \mathbb{P}(V_n \leqslant z)  \mathrm{d} z 
+n
+\mathbb{E}(V_n)
+(n+1)^{n+2}
+\mathbb{E}(V_n)
+n
+n=10

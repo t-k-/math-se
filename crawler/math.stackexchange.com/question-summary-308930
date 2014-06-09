@@ -1,0 +1,3 @@
+\sum_{k=0}^nS(n,k)=B(n)\;,
+\sum kS(n,k)=B(n+1)-B(n)\;?
+\begin{align*} B(n+1)-B(n)&=\sum_{k=0}^{n+1}{{n+1}\brace k}-\sum_{k=0}^n{n\brace k}\\\\ &={{n+1}\brace{n+1}}+\sum_{k=0}^n\left({{n+1}\brace k}-{n\brace k}\right)\\\\ &=1+\sum_{k=0}^n\left(\left(k{n\brace k}+{n\brace{k-1}}\right)-{n\brace k}\right)\\\\ &=1+\sum_{k=0}^n\left((k-1){n\brace k}+{n\brace{k-1}}\right)\\\\ &=1+\sum_{k=1}^n(k-1){n\brace k}+\sum_{k=0}^{n-1}{n\brace k}\\\\ &=1+(n-1){n\brace n}+{n\brace 0}+\sum_{k=1}^{n-1}k{n\brace k}\\\\ &=1+(n-1)+\sum_{k=0}^{n-1}k{n\brace k}&&\text{since }{n\brace 0}=0\\\\ &=n+\sum_{k=0}^{n-1}k{n\brace k}\\\\ &=\sum_{k=0}^nk{n\brace k}&&\text{since }{n\brace n}=1\;. \end{align*}

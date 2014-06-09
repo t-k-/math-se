@@ -1,0 +1,24 @@
+ C_{0} = 1, C_{n} =  \displaystyle\sum_{i=0}^{n - 1} C_{i}C_{n - i - 1} 
+ C_{0} = 1, C_{n} = \displaystyle\frac {2(2n - 1)}{n + 1} C_{n - 1}
+c(x)=\sum_{n\ge 0}C_nx^n=\sum_{n\ge 0}\sum_{k=0}^{n-1}C_kC_{n-1-k}x^n\;.
+C_0=1
+\begin{align*} c(x)&=\sum_{n\ge 0}\sum_{k=0}^{n-1}C_kC_{n-1-k}x^n\\ &=1+\sum_{n\ge 1}\sum_{k=0}^{n-1}C_kC_{n-1-k}x^n\\ &=1+x\sum_{n\ge 0}\sum_{k=0}^nC_kC_{n-k}x^n\\ &=1+x\left(\sum_{n\ge 0}C_nx^n\right)^2\\ &=1+xc(x)^2\;, \end{align*}
+xc(x)^2-c(x)+1=0
+c(x)=\frac{1\pm\sqrt{1-4x}}{2x}\;,\tag{1}
+\lim_{x\to 0}c(x)=\lim_{x\to 0}\sum_{n\ge 0}C_nx^n=C_0=1\;,
+(1)
+c(x)=\frac{1-\sqrt{1-4x}}{2x}\;.
+\sqrt{1-4x}
+\begin{align*} \left(1-4x\right)^{1/2}&=\sum_{n\ge 0}\binom{1/2}n(-4x)^n\\ &=\sum_{n\ge 0}\frac{\left(\frac12\right)\left(-\frac12\right)\left(-\frac32\right)\dots\left(-\frac{2n-3}2\right)}{n!}(-4x)^n\\ &=\sum_{n\ge 0}(-1)^{n-1}\frac{(2n-3)!!}{2^nn!}(-4x)^n\\ &=-\sum_{n\ge 0}\frac{2^n(2n-3)!!}{n!}x^n\\ &=-2\sum_{n\ge 0}\frac{2^{n-1}\prod_{k=1}^{n-1}(2k-1)}{n(n-1)!}x^n\\ &=-2\sum_{n\ge 0}\frac{2^{n-1}(n-1)!\prod_{k=1}^{n-1}(2k-1)}{n(n-1)!^2}x^n\\ &=-2\sum_{n\ge 0}\frac{\left(\prod_{k=1}^{n-1}(2k)\right)\left(\prod_{k=1}^{n-1}(2k-1)\right)}{n(n-1)!^2}x^n\\ &=-2\sum_{n\ge 0}\frac{(2n-2)!}{n(n-1)!^2}x^n\\ &=-2\sum_{n\ge 0}\frac1n\binom{2(n-1)}{n-1}x^n\;, \end{align*}
+1
+-\frac12
+\begin{align*} c(x)&=\frac1{2x}\left(1+2\left(-\frac12+\sum_{n\ge 1}\frac1{n}\binom{2(n-1)}{n-1}x^n\right)\right)\\ &=\sum_{n\ge 1}\frac1n\binom{2(n-1)}{n-1}x^{n-1}\\ &=\sum_{n\ge 0}\frac1{n+1}\binom{2n}nx^n\;, \end{align*}
+C_n=\dfrac1{n+1}\dbinom{2n}n
+ C_n = \frac{1}{n+1}{2n\choose n} = \frac{(2n)!}{(n+1)!\,n!} \implies C_{n-1}=\frac{(2(n-1))!}{(n)!\,(n-1)!} 
+ \frac{C_n}{C_{n-1}}= \frac{ (2n)(2n-1)(2n-2)!(n-1)! }{(n+1)n(n-1)!(2n-2)!}=\frac{2(2n-1)}{n+1} 
+ \implies C_n = \frac{2(2n-1)}{n+1} C_{n-1}. 
+ C_{n+1} =  \displaystyle\sum_{i=0}^{n } C_{i}C_{n - i } \implies \sum_{n=0}^{\infty}C_{n+1}x^n = \sum_{n=0}^{\infty} \sum_{i=0}^{n } C_{i}C_{n - i } x^n 
+ \implies \sum_{n=1}^{\infty}C_{n}x^{n-1}  = \sum_{i=0}^{\infty}C_i\sum_{n=i}^{\infty}C_{n-i}x^n= \sum_{i=0}^{\infty}C_i\sum_{n=0}^{\infty}C_{n}x^{n+i}
+\implies \frac{1}{x}\sum_{n=0}^{\infty}C_{n}x^{n}-\frac{C_0}{x}= \sum_{i=0}^{\infty}C_ix^i\sum_{n=0}^{\infty}C_{n}x^{n}  
+ \implies \frac{g(x)}{x}-\frac{1}{x} = g(x)g(x) = g(x)^2  
+ \implies g(x)^2-\frac{g(x)}{x}+\frac{1}{x} = 0. 

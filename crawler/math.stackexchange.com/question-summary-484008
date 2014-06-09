@@ -1,0 +1,18 @@
+u,\beta\in\mathbb{R},\ u>1,\ 0\le\beta<1,\ \beta u<1
+\beta
+1/k
+k\in\mathbb{Z^+}
+\frac{1}{1-\beta u}-\sum_{n=0}^{\infty}\frac{e^{-u}u^n}{n!(1-\beta(n+1))}
+\beta=0
+0
+\epsilon>0
+\beta\in (0,1)
+\beta
+\epsilon
+\left|\frac{1}{1-\beta u}-\sum_{n=0}^{\infty}\frac{e^{-u}u^n}{n!(1-\beta(n+1))}\right|<\epsilon
+n\ge 0,\ \beta>0\Rightarrow \frac{1}{1-\beta(n+1)}\ge \frac{1}{1-\beta}
+u\ge\epsilon
+\beta<\frac{1}{u}\Rightarrow \sqrt{u^2-u\epsilon}<\epsilon-u\Rightarrow \epsilon>u
+\beta<\frac{1}{u}
+\frac{1}{1-\beta u}-\sum_{n=0}^\infty \frac{e^{-u}u^n}{n!(1-\beta(n+1))}\le \frac{1}{1-\beta u}-\frac{1}{1-\beta}=\frac{\beta(u-1)}{(1-\beta u)(1-\beta)}
+\frac{\beta(u-1)}{(1-\beta u)(1-\beta)}=\epsilon\Rightarrow \beta^2 u\epsilon- 2u\beta+1=0\Rightarrow \beta=\frac{u\pm\sqrt{u^2-u\epsilon}}{u\epsilon}

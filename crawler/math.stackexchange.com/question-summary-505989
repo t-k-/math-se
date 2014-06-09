@@ -1,0 +1,16 @@
+T(1) = 1
+n = 2^j
+T(n) = 7\,T\left(n \over 2\right) + \frac{18}{16}n^2
+n = 2^j
+n
+n
+T(2^j) = 7^j + \frac{3}{2}\,4^{j} \left[\left(\frac74\right)^j - 1\right],
+S(n)\ge \frac{18}{16} \sum_{j=0}^{\lfloor \log_2 n\rfloor} \left(\frac{7}{4}\right)^j 2^{2\lfloor \log_2 n\rfloor} = \frac{18}{16} 2^{2\lfloor \log_2 n\rfloor} \sum_{j=0}^{\lfloor \log_2 n\rfloor}  \left(\frac{7}{4}\right)^{\lfloor \log_2 n\rfloor-j} \\ = \frac{18}{16} 2^{2\lfloor \log_2 n\rfloor}  \left(\frac{7}{4}\right)^{\lfloor \log_2 n\rfloor} \sum_{j=0}^{\lfloor \log_2 n\rfloor} \left(\frac{7}{4}\right)^{-j} = \frac{18}{16} 7^{\lfloor \log_2 n\rfloor}  \sum_{j=0}^{\lfloor \log_2 n\rfloor} \left(\frac{7}{4}\right)^{-j}.
+\frac{18}{16}\times 7^{\lfloor \log_2 n\rfloor} \times\frac{7}{3} = \frac{21}{8} \times 7^{\lfloor \log_2 n\rfloor}.
+S(n) \in \Theta(7^{\lfloor \log_2 n\rfloor}) = \Theta(2^{\log_2 7\times \lfloor \log_2 n\rfloor}) = \Theta(n^{\log_2 7}).
+\Theta(n^3),
+\log_2 7 < 3
+T(n)
+T(1)=1
+18/16.
+T(n) = -\frac{2}{16} 7^{\lfloor \log_2 n\rfloor} + S(n).

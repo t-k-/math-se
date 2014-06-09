@@ -1,0 +1,18 @@
+ T[y] = \int_2^3 \left( 3\left| \frac{dy}{dx}\right|^2 - 8y \right)dx 
+ S[y] = \cosh(T[y]) 
+S[y]
+ S[y] = \cosh \left( \int_2^3 \left( 3 \left|\frac{dy}{dx}\right|^2 - 8y \right) dx \right) 
+T[y]
+S[y]
+S[y]
+X
+T:X\rightarrow\mathbb{R}
+\cosh:\mathbb{R}\rightarrow\mathbb{R}
+S=\cosh\circ T:X\to\mathbb{R}
+\langle(\cosh\circ T)'(x),y\rangle=\cosh'(T(x))\langle T'(x),y\rangle=\sinh(T(x))\langle T'(x),y\rangle
+\langle\cdot,\cdot\rangle
+T
+T
+S
+\cosh
+ S[y + t \, dy] = \cosh( T[y + t \, dy ] ) = \cosh( T[y] + t \, T'[y] \, dy + o(t) ) 

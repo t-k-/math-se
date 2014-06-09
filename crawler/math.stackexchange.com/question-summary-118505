@@ -1,0 +1,72 @@
+g: \Bbb{R} \to \Bbb{R}
+ g'(a)=a\cdot g(a-1),\ g(0)=\frac{1}{2}
+g(x)
+0
+> 1
+g(0)=1/2
+g(x) = 1/2 + c_1 x + c_2 x^2 + c_3 x^3 + \ldots
+g'(x) = c_1 + 2 c_2 x + 3 c_3 x^2 + \ldots
+x g(x-1) = x \left(1/2 + c_1 (x-1) + c_2 (x-1)^2 + \ldots\right)
+c_0
+c_{10}
+ \eqalign{c_1 &= 0\cr 2 c_2 &= 1/2 - c_1 + c_2 - c_3 + \ldots\cr 3 c_3 &=       c_1 - 2 c_2 + 3 c_3 - \ldots\cr (n+1) c_{n+1} &= \sum_{k=n-1}^\infty (-1)^{k-n+1} {k \choose {n-1}} c_k }
+g(x) = 0.5+ 0.2728329455\,{x}^{2}+ 0.07792814666\,{x}^{3}- 0.1526841461\,{x}^{4}+ 0.04393758550\,{x}^{5}+ 0.03918994575\,{x}^{6}- 0.01508119531\,{ x}^{7}- 0.005288135622\,{x}^{8}+ 0.002357480473\,{x}^{9}+  0.0007572988537\,{x}^{10}
+100
+\infty
+|c_k|^{-1/k}
+0<a\leq 1
+1<a\leq 2
+ \dot g(a)=ag(a-1) 
+ g(a)=\frac 12,\quad -1\leq a\leq 0. 
+ \dot g(a)=\frac 12 a,\quad g(0)=\frac 12, 
+ g(a)=\frac{a^2}{4}+\frac 12,\quad 0<a\leq 1. 
+ \dot g(a)=\frac{a^3}{4}+\frac a2,\quad g(1)=\frac 34, 
+ g(a)=\frac{a^4}{16}+\frac{a^2}{4}+\frac{7}{16},\quad 1<a\leq 2. 
+g'(a)=a\cdot g(a-1)
+g'(a)-a\cdot g(a-1)=0
+g(a)=\int_Ce^{as}K(s)~ds
+(\int_Ce^{as}K(s)~ds)'-a\int_Ce^{(a-1)s}K(s)~ds=0
+\int_Cse^{as}K(s)~ds-\int_Ce^{as}e^{-s}K(s)~d(as)=0
+\int_Cse^{as}K(s)~ds-\int_Ce^{-s}K(s)~d(e^{as})=0
+\int_Cse^{as}K(s)~ds-[e^{(a-1)s}K(s)]_C+\int_Ce^{as}~d(e^{-s}K(s))=0
+\int_Cse^{as}K(s)~ds-[e^{(a-1)s}K(s)]_C+\int_C(e^{-s}K'(s)-e^{-s}K(s))e^{as}~ds=0
+-[e^{(a-1)s}K(s)]_C+\int_C(e^{-s}K'(s)+(s-e^{-s})K(s))e^{as}~ds=0
+\therefore e^{-s}K'(s)+(s-e^{-s})K(s)=0
+e^{-s}K'(s)=(e^{-s}-s)K(s)
+\dfrac{K'(s)}{K(s)}=1-se^s
+\int\dfrac{K'(s)}{K(s)}~ds=\int(1-se^s)~ds
+\ln K(s)=s-(s-1)e^s+c_1
+K(s)=ce^{s-(s-1)e^s}
+\therefore g(a)=\int_Cce^{(a+1)s-(s-1)e^s}~ds
+s
+\therefore g_n(a)=\int_{a_n}^{b_n}c_ne^{(a+1)(p_n+q_ni)t-((p_n+q_ni)t-1)e^{(p_n+q_ni)t}}~d((p_n+q_ni)t)
+=(p_n+q_ni)c_n\int_{a_n}^{b_n}e^{(a+1)(p_n+q_ni)t-(p_nt-1+q_nti)e^{p_nt}e^{q_nti}}~dt
+=(p_n+q_ni)c_n\int_{a_n}^{b_n}e^{(a+1)(p_n+q_ni)t-(p_nt-1+q_nti)e^{p_nt}(\cos q_nt+i\sin q_nt)}~dt
+=(p_n+q_ni)c_n\int_{a_n}^{b_n}e^{(a+1)(p_n+q_ni)t-(p_nt-1+q_nti)(e^{p_nt}\cos q_nt+ie^{p_nt}\sin q_nt)}~dt
+=(p_n+q_ni)c_n\int_{a_n}^{b_n}e^{(a+1)(p_n+q_ni)t-(p_nt-1)e^{p_nt}\cos q_nt-i(p_nt-1)e^{p_nt}\sin q_nt-iq_nte^{p_nt}\cos q_nt+q_nte^{p_nt}\sin q_nt}~dt
+=(p_n+q_ni)c_n\int_{a_n}^{b_n}e^{p_n(a+1)t+q_nte^{p_nt}\sin q_nt-(p_nt-1)e^{p_nt}\cos q_nt}e^{(q_n(a+1)t-(p_nt-1)e^{p_nt}\sin q_nt-q_nte^{p_nt}\cos q_nt)i}~dt
+a
+a_n
+b_n
+p_n
+q_n
+\displaystyle\lim_{t\to a_n}e^{p_nat+q_nte^{p_nt}\sin q_nt-(p_nt-1)e^{p_nt}\cos q_nt}e^{(q_nat-(p_nt-1)e^{p_nt}\sin q_nt-q_nte^{p_nt}\cos q_nt)i}=\lim_{t\to b_n}e^{p_nat+q_nte^{p_nt}\sin q_nt-(p_nt-1)e^{p_nt}\cos q_nt}e^{(q_nat-(p_nt-1)e^{p_nt}\sin q_nt-q_nte^{p_nt}\cos q_nt)i}
+\int_{a_n}^{b_n}e^{p_n(a+1)t+q_nte^{p_nt}\sin q_nt-(p_nt-1)e^{p_nt}\cos q_nt}e^{(q_n(a+1)t-(p_nt-1)e^{p_nt}\sin q_nt-q_nte^{p_nt}\cos q_nt)i}~dt
+g_1(a)=c_1\int_{-\infty}^{\infty}e^{-\left|a+1\right|t+(t+1)e^{-t}}~dt
+a_1=-\infty
+b_1=\infty
+p_1=1
+q_1=0
+a+1\geq0
+a_1=-\infty
+b_1=\infty
+p_1=-1
+q_1=0
+a+1\leq0
+g_1(a)=c_1\int_{-\infty}^{\infty}e^{-\left|a+1\right|t+(t+1)e^{-t}}~dt
+g_1(a)=c_1\int_{-\infty}^{\infty}e^{-\left|a+1\right|t+(t+1)e^{-t}}~dt
+g(a)=c\int_{-\infty}^{\infty}e^{-\left|a+1\right|t+(t+1)e^{-t}}~dt
+g(0)=\dfrac{1}{2}
+\dfrac{1}{2}=c\int_{-\infty}^{\infty}e^{-t+(t+1)e^{-t}}~dt
+c=\dfrac{1}{2\int_{-\infty}^{\infty}e^{-t+(t+1)e^{-t}}~dt}
+\therefore g(a)=\dfrac{\int_{-\infty}^{\infty}e^{-\left|a+1\right|t+(t+1)e^{-t}}~dt}{2\int_{-\infty}^{\infty}e^{-t+(t+1)e^{-t}}~dt}

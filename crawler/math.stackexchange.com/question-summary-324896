@@ -1,0 +1,12 @@
+A = \begin{pmatrix} 1 &  a+3 &  8 &  2 \\ 0 &  0 & 2 & 0 \\ 0 & a-2 &  5 & 0 \\ 0 & 10 & a &  a+3 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \\ w \\ \end{pmatrix}  = \begin{pmatrix} 0 \\ 7 \\ -2 \\ 0 \\ \end{pmatrix}
+z=\dfrac{7}{2}
+y= \dfrac{-39}{2(a-2)}
+w= \dfrac{(390-(7a^2)+14a)}{ (2(a-2)(a+3))}
+\begin{align}\det A &= 1\cdot\det\left(\begin{array}{ccc}0 & 2 & 0\\a-2 & 3 & 0\\10 & a & a+3\end{array}\right)\quad (\text{expanded down first column})\\ &= 1\cdot(a+3)\cdot\det\left(\begin{array}{cc}0 & 2\\a-2 & 5\end{array}\right)\quad(\text{expanded down third column})\\ &= 1\cdot(a+3)\cdot\bigl(0-2(a-2)\bigr)\\ &= -2(a+3)(a-2).\end{align}
+\det A\neq 0.
+(1)
+(3)
+x
+x,y,z,w
+a
+x=-(a+3)y-8z-2z\tag{4}

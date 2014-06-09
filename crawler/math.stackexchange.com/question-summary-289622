@@ -1,0 +1,17 @@
+\lim_{n\rightarrow \infty} \sum_{k=0}^n\frac{k^k(n-k)^{n-k}}{k!(n-k)!}n!n^{-n-1/2}
+j=k
+(4)
+2m
+\le n^{-1/2}
+O(mn^{-1/2})
+ n!=\sqrt{2\pi n}\ n^n\,e^{-n}(1+O(1/n))\tag{1} 
+ \sum_{j=0}^n\binom{n}{j}\left(\frac{k}{n}\right)^{j}\left(1-\frac{k}{n}\right)^{n-j}=1\tag{2} 
+ \binom{n}{k}\left(\frac{k}{n}\right)^{k}\left(1-\frac{k}{n}\right)^{n-k}\le1\tag{3} 
+ \begin{align} &\sum_{k=0}^n\frac{k^k(n-k)^{n-k}}{k!(n-k)!}n!n^{-n-1/2}\\ &=\sum_{k< m}\binom{n}{k}\left(\frac{k}{n}\right)^{k}\left(1-\frac{k}{n}\right)^{n-k}n^{-1/2}\\ &+\sum_{k=m}^{n-m}\binom{n}{k}\left(\frac{k}{n}\right)^{k}\left(1-\frac{k}{n}\right)^{n-k}n^{-1/2}\\ &+\sum_{k>n-m}\binom{n}{k}\left(\frac{k}{n}\right)^{k}\left(1-\frac{k}{n}\right)^{n-k}n^{-1/2}\\ &=O(mn^{-1/2})+\frac1{\sqrt{2\pi}}\sum_{k=m}^{n-m}\frac1{\sqrt{k}\sqrt{n-k}}(1+O(1/m))+O(mn^{-1/2})\\ &=O(mn^{-1/2})+\frac1{\sqrt{2\pi}}\sum_{k=0}^n\frac1{\sqrt{k/n}\sqrt{1-k/n}}\frac1n(1+O(1/m))\tag{4} \end{align} 
+(4)
+m
+ \lim_{n\to\infty}\sum_{k=0}^n\frac{k^k(n-k)^{n-k}}{k!(n-k)!}n!n^{-n-1/2} =\frac1{\sqrt{2\pi}}\int_0^1\frac{\mathrm{d}x}{\sqrt{x-x^2}}(1+O(1/m))\tag{5} 
+ \begin{align} \lim_{n\to\infty}\sum_{k=0}^n\frac{k^k(n-k)^{n-k}}{k!(n-k)!}n!n^{-n-1/2} &=\frac1{\sqrt{2\pi}}\int_0^1\frac{\mathrm{d}x}{\sqrt{x-x^2}}\\ &=\frac1{\sqrt{2\pi}}\int_{-1}^1\frac{\mathrm{d}x}{\sqrt{1-x^2}}\\ &=\sqrt{\frac\pi2}\tag{6} \end{align} 
+\lim_{n\rightarrow \infty} \sum_{k=0}^n\frac{k^k(n-k)^{n-k}}{k!(n-k)!}\sqrt{2\pi}e^{-n}
+k
+\sum_{k=0}^n \frac{n!}{k!(n-k)!}k^k(n-k)^{n-k} = (k+n-k)^n

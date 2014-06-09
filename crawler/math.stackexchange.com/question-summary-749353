@@ -1,0 +1,20 @@
+n\ge0
+\int_0^{\pi/2} \frac{\sin(2n+1)x}{\sin x}dx=\frac\pi2
+n \neq -1
+\dfrac{dI_n}{dn} = 0
+I_n
+I_n = \int_0^{\pi/2} \dfrac{\sin(2n+1)x}{\sin(x)}dx
+I_{n+1} - I_n = \int_0^{\pi/2} \dfrac{2 \sin(x)\cos(2(n+1)x)}{\sin(x)} dx = 2\int_0^{\pi/2} \cos(2(n+1)x) dx = 0
+I_n = I_0 = \dfrac{\pi}2
+n=0
+\cos 2x=1-2\sin^2x
+\sin2x=2\cos x\sin x
+\int_0^{\frac\pi2} \cos(2n+2)x dx=0
+ \int_0^{\frac\pi2} \frac{\sin(2n+3)x}{\sin x}dx=\int_0^{\frac\pi2} \frac{\cos 2x\sin(2n+1)x}{\sin x}dx+\int_0^{\frac\pi2} \frac{\sin 2x\cos(2n+1)x}{\sin x}dx 
+ \int_0^{\frac\pi2} \frac{\sin(2n+3)x}{\sin x}dx=\int_0^{\frac\pi2} \frac{\sin(2n+1)x}{\sin x}dx-2\int_0^{\frac\pi2} \cos(2n+2)x dx. 
+ \int_{0}^{\pi /2} \frac{\sin(2n+1)x}{\sin x} \ dx = \frac{1}{4} \int_{-\pi}^{\pi} \frac{\sin(2n+1)x}{\sin x} \ dx = \frac{1}{4} \text{Im} \ \text{PV} \int_{-\pi}^{\pi} \frac{e^{i(2n+1)x}}{\sin x}
+ = \frac{1}{2} \text{Im} \ i \ \text{PV} \int_{-\pi}^{\pi} \frac{e^{i(2n+1)x}}{e^{ix}-e^{-ix}} \ dx
+z = e^{ix}
+= \frac{1}{2} \text{Im}\ i \ \text{PV} \int_{|z|=1} \frac{z^{2n+1}}{z-z^{-1}}\frac{dz}{iz} = \frac{1}{2} \text{Im} \ \text{PV} \int_{|z|=1} \frac{z^{2n+1}}{z^{2}-1} \ dz
+ = \frac{1}{2} \text{Im} \left(i \pi \ \text{Res} \left[\frac{z^{2n+1}}{z^{2}-1},1 \right] + i \pi \ \text{Res} \left[\frac{z^{2n+1}}{z^{2}-1},-1 \right]\right)
+ = \frac{1}{2} \text{Im} \left(i \pi (\frac{1}{2}) +i \pi (\frac{1}{2}) \right) = \frac{\pi}{2}

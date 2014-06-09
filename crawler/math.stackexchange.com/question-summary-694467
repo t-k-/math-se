@@ -1,0 +1,17 @@
+ f(x,y) = \frac{1}{y}e^{-y-\frac{x}{y}}. 
+ F(x) = \int_0^\infty f(x,y)\,dy. 
+y
+ \int f(x,y)\,dx = -e^{-y-\frac{x}{y}}. 
+g(x,y):= -e^{-y-\frac{x}{y}}
+ f(x,y) = \frac{\partial g}{\partial x}(x,y). 
+ F(x) = \int_0^\infty \frac{\partial g}{\partial x}(x,y)\,dy. 
+ F(x) = \frac{d}{dx} \int_0^\infty g(x,y)\,dy, 
+ F(x) = \frac{d}{dx} \int_0^\infty -e^{-y-\frac{x}{y}}\,dy = -\frac{d}{dx} \big(2\sqrt{x}\,K_1(2\sqrt{x})\big). 
+ F(x) = K_0(2\sqrt{x}) - \frac{1}{\sqrt{x}}\,K_1(2\sqrt{x})+K_2(2\sqrt{x}). 
+x\ge 0
+K_n
+\begin{align} F(x) &= \int_0^{\infty} \frac{dy}{y} e^{-y-\frac{x}{y}}\end{align}
+u=y+\frac{x}{y}
+y = \frac12 \left (u \pm \sqrt{u^2-4 x}\right )
+dy = \frac12 \left ( 1 \pm \frac{u}{\sqrt{u^2-4 x}} \right ) du
+\begin{align}F(x) &= \frac1{4 x} \int_{\infty}^{2 \sqrt{x}} du \left ( 1 - \frac{u}{\sqrt{u^2-4 x}} \right )\left (u + \sqrt{u^2-4 x}\right ) e^{-u} \\ &+ \frac1{4 x} \int_{2 \sqrt{x}}^{\infty} du \left ( 1 + \frac{u}{\sqrt{u^2-4 x}} \right )\left (u - \sqrt{u^2-4 x}\right )e^{-u}\\ &= 2 \int_{2 \sqrt{x}}^{\infty} du \frac{e^{-u}}{\sqrt{u^2-4 x}}\\ &= 2 \int_0^{\infty} dv \, e^{-2 \sqrt{x} \cosh{v}}\\ &= 2 K_0(2 \sqrt{x})\end{align}

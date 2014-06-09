@@ -1,0 +1,15 @@
+(-1)^n * n +(-1)^{n-1} * \lceil \frac{n-1}{2} \rceil
+(-1)^n (n-\lfloor \frac{n}{2} \rfloor)
+(-1)^n\cdot n + (-1)^{n-1}\left\lceil\frac{n-1}{2}\right\rceil = (-1)^n\left(n - \left\lceil \frac{n-1}{2}\right\rceil\right).\tag{1}
+\left\lceil \frac{n-1}{2}\right\rceil = \left\lfloor \frac{n}{2}\right\rfloor\tag{2}
+(1)
+(-1)^n\left(n-\left\lfloor\frac{n}{2}\right\rfloor\right).
+(2)
+n
+n = 2k
+\frac{n-1}{2} = k - \frac{1}{2}
+\left\lceil \frac{n-1}{2}\right\rceil = \left\lceil k-\frac{1}{2}\right\rceil = k = \frac{n}{2} = \left\lfloor\frac{n}{2}\right\rfloor
+n
+n = 2k+1
+\frac{n}{2} = k+\frac{1}{2}
+\left\lceil\frac{n-1}{2}\right\rceil = \lceil k\rceil = k = \left\lfloor k+\frac{1}{2}\right\rfloor = \left\lfloor \frac{n}{2}\right\rfloor

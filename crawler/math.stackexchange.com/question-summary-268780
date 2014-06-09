@@ -1,0 +1,27 @@
+0 < p < 0.5
+n
+2np
+S_n=X_1+\cdots+X_n
+n
+(X_n)_{n\geqslant1}
+p
+t
+\mathbb E(\mathrm e^{tX_k})=p\mathrm e^t+1-p
+B(n, p)
+E[X] = np
+Var[X] = np(1-p)
+X \geq 2np
+t = 2np
+P[X\geq t] \leq \frac{E[X]}{t} = \frac{np}{2np} = 0.5.
+t = np
+ P[|X-E[X]|\geq t] \leq \frac{Var[X]}{t^2} = \frac{np(1-p)}{(np)^2} = \frac{1-p}{np}.
+\epsilon = p
+P[X \geq (p+\epsilon)n] \leq \exp(-2\epsilon^2n) = \exp(-2p^2 n).
+\lambda > p
+\binom{n}{\lambda n}p^{\lambda n}(1-p)^{(1-\lambda)n} < \sum_{i=\lambda n}^n \binom{n}{i}p^i(1-p)^{n-i}  < \frac{\lambda(1-p)}{\lambda - p}\binom{n}{\lambda n}p^{\lambda n}(1-p)^{(1-\lambda) n},
+\sum_{i=\lambda n}^n \binom{n}{i}p^i(1-p)^{n-i}  \leq \left(\frac{p}{\lambda}\right)^{\lambda n}\left(\frac{1-p}{1-\lambda}\right)^{(1-\lambda)n}
+\lambda = 2p > p
+o(n)
+n!
+\begin{align*} \sum_{i=2pn}^n \binom{n}{i}p^i(1-p)^{n-i}  &\leq 2^{-2np}\left(\frac{1-p}{1-2p}\right)^{(1-2p)n}\\ &= \exp\left(-n\left(2p\ln 2+(1-2p)\ln\left(\frac{1-2p}{1-p}\right)\right)\right) \end{align*}
+\binom{n}{\lambda n} < \frac{1}{\sqrt{2\pi n \lambda(1-\lambda)}} \lambda^{-\lambda n}(1-\lambda)^{-(1-\lambda)n}

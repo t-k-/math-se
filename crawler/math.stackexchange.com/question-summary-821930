@@ -1,0 +1,31 @@
+\displaystyle \begin{array}{ccccc} f & : & \mathbb R^+ & \to & \mathbb R \\  & & x & \mapsto & \frac{x}{\sqrt{1+x}} \\ \end{array}
+\displaystyle \sum_{k=1}^n f\left(\frac{k}{n^2}\right)\to \frac{1}2
+n
+\delta-\epsilon
+N-\epsilon
+\displaystyle f\left(\frac{k}{n^2}\right) \sim\frac{k}{n^2}
+\frac{1}{2}
+n
++\infty
+S_n=\sum_{k=0}^nf(\frac{k}{n^2})\rightarrow \frac{f'(0)}{2}
+f
+0
+f(x)=f(0)+xf'(0)+o(x)=xf'(0)+o(x)
+\varepsilon >0
+\eta >0, \forall x \in [0,\eta), \qquad \vert f(x)-xf'(0)\vert \le \varepsilon\cdot x
+N \in \mathbb{N}
+\frac{1}{N}<\eta
+n \ge N
+k
+0 \le k \le n
+ 0\le \frac{k}{n^2} \le \frac{n}{n^2}<\eta 
+ \forall n\ge N, \forall k, 0\le k \le n \left\vert f(\frac{k}{n^2})-\frac{k}{n^2}f'(0) \right\vert  \le \varepsilon\frac{k}{n^2} 
+  \left\vert \sum_{k=0}^{n} f(\frac{k}{n^2})-f'(0)\sum_{k=0}^{n}\frac{k}{n^2} \right\vert \le \varepsilon \sum_{k=0}^{n}\frac{k}{n^2}
+ \left\vert S_n -f'(0)\frac{1}{2}-f'(0)\frac{1}{2n}\right\vert \le\varepsilon\big(\frac{1}{2}+\frac{1}{2n}\big)\le\varepsilon  
+ \left\vert S_n -f'(0)\frac{1}{2}\right\vert \le \left\vert S_n-\frac{f'(0)}{2}-\frac{f'(0)}{2n}\right\vert+ \left\vert \frac{f'(0)}{2n}\right\vert \le\varepsilon+\frac{\vert f'(0)\vert}{2n} 
+N_1\ge N
+\frac{\vert f'(0)\vert}{2N_1}<\varepsilon
+\vert S_n-f'(0)/2 \vert< 2\varepsilon
+n\ge N_1
+(S_n)
+\frac{f'(0)}{2}

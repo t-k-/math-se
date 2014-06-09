@@ -1,0 +1,30 @@
+C^3
+f(z+h)=f(h)+hf'(z)+\frac{h^2}{2}f''(z) + \frac{h^3}{6}f'''(z) + R
+f(z-h)
+R
+R_1
+R_2
+|f'(z) - \frac{f(z+h) - f(z-h)}{2h}|
+|f'(z) - \frac{f(z+h) - f(z-h)}{2h}| \leq L\cdot h^2
+R_1 = R_2
+L = \frac{|f'''(z)|}{6}
+R_1\neq R_2
+R_1 = \frac{h^4}{4!}f^{''''}(\xi_1)
+R_1 = \frac{h^4}{4!}f^{''''}(\xi_2)
+\xi_1\in(z,z+h)
+\xi_2\in(z-h,z)
+|\frac{R_1-R_2}{2h}|=\frac{h^3}{2\times 4!}|(f^{''''}(\xi_1)-f^{''''}(\xi_2))|\leq \frac{2h^3}{2\times4!}\sup_{\xi \in (z-h,z+h)}|f^{''''}(\xi)|
+R_1 = \frac{h^3}{3!}f^{''''}(\xi_1)
+R_2 = -\frac{h^3}{3!}f^{''''}(\xi_2)
+|\frac{R_1-R_2}{2h}|=\frac{2h^3}{12}|f^{'''}(\xi_1)+f^{'''}(\xi_2)|\leq\frac{h^3}{3}\sup_{\xi \in (z-h,z+h)}|f^{'''}(\xi)|=Lh^3
+f(z+h)=f(z)+hf'(z)+h^2f''(z)+R_1
+f(z-h)=f(z)-hf'(z)+h^2f''(z)-R_1
+|f'(z)-\frac{f(z+h)-f(z-h)}{2h}|=|f'(z)-\frac{(f(z)-f(z))+2hf'(z)+h^2(f''(z)-f''(z))+R_1+R_2}{2h}|
+=|f'(z)-f'(z)+\frac{R_1+R_2}{2h}|=|\frac{R_1+R_2}{2h}|\leq\frac{h^3}{3}\sup_{\xi \in (z-h,z+h)}|f^{'''}(\xi)|=Lh^3
+ \frac{f(x+h)-f(x-h)-2hf'(x)}{h^3} 
+h>h_1>h_2>h_3>0
+x-h_2<x_3<x+h_3
+ \frac{f'(x+h_1)+f'(x-h_1)-2f'(x)}{3h_1^{\,2}} 
+ \frac{f''(x+h_2)-f''(x-h_2)}{6h_2} 
+ \frac{f'''(x+h_3)+f'''(x-h_3)}6 
+ \frac{f'''(x_3)}3 

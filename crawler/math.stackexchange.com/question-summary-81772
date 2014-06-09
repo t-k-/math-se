@@ -1,0 +1,39 @@
+f = \chi_S - 1/2
+|f|
+S
+\mathbb{R}
+\chi_S := \left\{ \begin{array}{ll} 1, & x \in S\\ 0, & x \in S^c \end{array} \right.,
+f = f^+ - f^-
+|f| = f^+ + f^-
+f^+ := \max(f,0)
+f^- := - \min(f,0)
+\int_{\mathbb{R}}\,|f|\,d\mu = \int_{\mathbb{R}}\,\bigg( \big(\chi_S-1/2\big)^+ + (\chi_S-1/2)^-\bigg)\,d\mu = \int_{\mathbb{R}}\,\big(\chi_S-1/2)^+\,d\mu + \int_{\mathbb{R}}\;\big(\chi_S - 1/2)^-\,d\mu
+\leq \int_{\mathbb{R}}\;\chi_S{}^+\;d\mu+\int_{\mathbb{R}}\;(-1/2)^-\;d\mu+\int_{\mathbb{R}}\;\chi_S{}^-\;d\mu+\int_{\mathbb{R}}\;(-1/2)^-d\mu = \int_{\mathbb{R}}\;\chi_S{}^+d\mu+\int_{\mathbb{R}}\;\chi_S{}^-d\mu
+\int_{\mathbb{R}}\,f\,d\mu = \int_{\mathbb{R}}\,\bigg( \big(\chi_S-1/2\big)^+ - (\chi_S-1/2)^-\bigg)\,d\mu = \int_{\mathbb{R}}\,\big(\chi_S-1/2)^+\,d\mu - \int_{\mathbb{R}}\,\big(\chi_S - 1/2)^-\,d\mu
+\leq \cdots = \int_{\mathbb{R}}\;\chi_S{}^+d\mu-\int_{\mathbb{R}}\;\chi_S{}^-d\mu 
+S
+f
+|f|
+f = \chi_A - \chi_B
+\mathbb{R}
+\chi_A := 1
+x \in \mathbb{Q}
+-1
+x \in \mathbb{Q}^c
+\chi_B
+A
+B
+[0,1]
+|f|
+\{ x | |f(x)| = C\}= \{x | f(x)=C \} \cup \{x | f(x)=-C \} \,.
+\int |f| d\mu = \int f^+ d\mu+\int f^- d\mu
+f^+
+f^-
+|f|
+f
+|f|
+|f|
+S_c(f)
+S_c(f)
+S_c(f)
+S_c(|f|)

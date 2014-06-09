@@ -1,0 +1,13 @@
+|f(z)| = M
+z \in C
+ML
+|f(z)|=M
+z=e^{it}
+\alpha\in[0,2\,\pi)
+g(t)+t-\alpha=0
+t
+ f(z)=M\,e^{ig(t)},\quad g\in C([0,2\,\pi],\mathbb{R}),\quad g(0)=g(2\,\pi)\pmod {2\,\pi} 
+ \int_0^{2\pi}e^{ig(t)}e^{it}\,dt=2\,\pi\,e^{i\alpha} 
+ \Re(e^{-i\alpha}\int_0^{2\pi}e^{ig(t)}e^{it}\,dt)=\int_0^{2\pi}\Re(e^{i(g(t)+t-\alpha)})\,dt=2\,\pi. 
+ \Re(e^{i(g(t)+t-\alpha)})=1\quad \forall t 
+\left| \int_C f(z) dz \right| =\left| \int_0^{2 \pi} f(e^{it}) i e^{it} dt \right|=\left| \int_0^{2 \pi} f(e^{it}) e^{it} dt \right| \le \int_0^{2 \pi} \left| f(e^{it}) \right| dt \le 2 \pi M

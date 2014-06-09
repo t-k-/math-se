@@ -1,0 +1,54 @@
+V
+\mathbb{C}
+A(V)
+V
+\lambda \in A(V)
+\Re \lambda(x) < 0
+x \in V
+E:(0,1) \to A(V)
+E(\sigma,\cdot) = \sigma^{-\lambda(\cdot) - 1}
+E(\sigma,\cdot) = \exp {\left[ (-\lambda(\cdot) - 1) \ln \sigma \right] }.
+\sigma \mapsto \ln \sigma
+\sigma \mapsto e^\sigma
+(0,1)
+A(V)
+\ln \sigma
+e^\sigma
+A(V)
+A(V)
+V
+(-\lambda(\cdot) - 1)
+A(V)
+E
+\{K_n\}
+V
+V=\bigcup_nK_n
+K_n\subset K_{n+1}
+n
+A(V)
+n=1,2,\ldots
+\{K_n\}
+f:(0,1)\to A(V)
+0<t<1
+\varepsilon>0
+n
+\delta>0
+|s-t|<\delta
+f
+n
+0<t<1
+s>t/2
+\varepsilon>0
+0<\delta < \frac{t}2
+s\in(t-\delta,t+\delta)
+f:(0,1)\to A(V)
+(*)
+ p_n(g)= \sup_{z\in K_n}|g(z)| \qquad \textrm{for} \quad g\in A(V), 
+ p_n(f(t)-f(s)) < \varepsilon. 
+ f(t)(z) = t^{-\lambda(z)-1}. \qquad\qquad(*) 
+ p_n(f(t)-f(s)) = \sup_{z\in K_n} |t^{-\lambda(z)-1}-s^{-\lambda(z)-1}|. 
+ t^{-\lambda(z)-1}-s^{-\lambda(z)-1} = -(\lambda(z)+1) \int_s^t \theta^{-\lambda(z)-2} \mathrm{d}\theta, 
+ |t^{-\lambda(z)-1}-s^{-\lambda(z)-1}|  \leq |\lambda(z)+1| \,\big(\frac2t\big)^{2}|t-s|, 
+ \sup_{z\in K_n} |t^{-\lambda(z)-1}-s^{-\lambda(z)-1}|  \leq \big(\frac2t\big)^{2}|t-s| \sup_{z\in K_n} |\lambda(z)+1|, 
+ \delta \big(\frac2t\big)^{2} \sup_{z\in K_n} |\lambda(z)+1| < \varepsilon, 
+ p_n(f(t)-f(s)) < \varepsilon. 

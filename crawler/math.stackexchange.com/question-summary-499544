@@ -1,0 +1,48 @@
+Q = \begin{bmatrix} 0 & 1& 0    & 0 & .. & 0 & 0\\ 0 & a & 1-a & 0 & .. & 0 & 0\\ 0 & 0 & b   & 1 - b & .. & 0 & 0\\ .. & .. & .. & .. & .. & .. & .. \\ 0 & 0 & 0   & 0 & .. & 0 & 1 \end{bmatrix}
+a, b, c,
+0
+1
+Q^N
+Q^N
+> 500 \times 500
+N
+Q^N_{0,j}
+N
+Q
+Q^N_{0,j}
+Q^N
+Q
+Q^n = P D^n P^{-1}
+n
+Q
+Q
+P
+D
+Q^N
+N \in [1,100]
+a <= b
+a < b
+a=b=\ldots=\frac{1}{2}
+\frac{1}{2}
+a_1 = 0
+M = \left[\begin{array}{ccccc} a_1 & 1-a_1 & & &\\ & a_2 & 1-a_2 & &\\ & & \ddots & &\\ & & & a_{n-1} & 1-a_{n-1}\\ & & & & 1\end{array}\right].
+M
+a_1, \ldots, a_{n-1},1
+1
+a_i
+v^i
+v^i_i = 1
+j
+Mv^i
+v^i_j = \begin{cases}0, &j > i\\ \frac{\prod_{k=j}^{i-1} (a_k-1)}{\prod_{k=j}^{i-1} (a_k-a_i)}, & j \leq i\end{cases}
+a_j \frac{\prod_{k=j}^{i-1} (a_k-1)}{\prod_{k=j}^{i-1} (a_k-a_i)} + (1-a_j+1)\frac{\prod_{k=j}^{i-1} (a_k-1)}{\prod_{k=j+1}^{i-1} (a_k-a_i)}=\left(a_j+\frac{(1-a_j)(a_j-a_i)}{a_j-1}\right)v^i_j = a_i v^i_j.
+M = BDB^{-1}
+M^n = BD^nB^{-1}
+B^{-1}
+v^i
+v^n
+i<n
+B = \left[\begin{array}{cccc} v^1 & v^2 & \ldots & v^n\end{array}\right]
+B^{-1} = \left[\begin{array}{cccc} w^1 & w^2 & \ldots & w^n\end{array}\right]
+w^i_j = \begin{cases}0, &j > i\\ \frac{\prod_{k=j}^{i-1} (a_k-1)}{\prod_{k=j+1}^{i} (a_k-a_j)}, & j \leq i\end{cases}
+w^n_j = \begin{cases}1, &j = n\\ -\frac{\prod_{k=j+1}^{n-1} (a_k-1)}{\prod_{k=j}^{n-2} (a_k-a_{n-1})}, & j < n.\end{cases}

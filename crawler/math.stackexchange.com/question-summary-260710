@@ -1,0 +1,17 @@
+f,g : \mathbb{R}^{n \times n} \times \mathbb{R}^{a \times b} \rightarrow \mathbb{R}^{n \times n}
+ t(Q, X, Y) = trace(f(g(Q, X),Y))
+X, Y \in \mathbb{R}^{a \times b}
+Q \in \mathbb{R}^{n \times n}
+\frac{\partial t(Q,X, Y)}{\partial X}
+\frac{\partial t(Q,X, Y)}{\partial Y}
+a = b = n
+f(A,B) = AB
+g(A,B) = BA + AB
+f
+g
+f(g(Q,X),Y) = f(XQ + QX, Y) = XQY + QXY
+ \frac{\partial t(Q,X,Y)}{\partial X} = QY + YQ\\ \frac{\partial t(Q,X,Y)}{\partial Y} = XQ + QX
+f
+g
+X
+Y

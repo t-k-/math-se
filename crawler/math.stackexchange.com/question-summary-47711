@@ -1,0 +1,14 @@
+x = (\text{lon}_2 - \text{lon}_1)\times \cos(\text{lat}_1)\times \frac{\pi}{180}
+y = (\text{lat}_2-\text{lat}_1)\times \frac{\pi}{180}
+x = (\text{lon}_2-\text{lon}_1)\times \cos(\text{lat}_1)\times \frac{\pi \times R}{180}
+y = (\text{lat}_2-\text{lat}_1)\times \frac{\pi\times R}{180}
+\text{lat}_2 = \text{lat}_1 + y\times \frac{180}{\pi\times R}
+\text{lon}_2 = \text{lon}_1 + x\times \frac{180}{\pi\times R\times \cos(\text{lat}_1)}
+y = \frac{\pi R(b_2-b_1)}{180}
+x = \frac{\pi R(a_2-a_1)\cos(b_1)}{180}
+\cos(b_1)
+= \cos(\text{lat}_1)
+(x^2 + y^2)
+R
+\frac {\pi}{180}
+R

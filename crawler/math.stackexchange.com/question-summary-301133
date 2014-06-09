@@ -1,0 +1,3 @@
+H(X,Y|Z)=H(X|Z)+H(Y|X,Z)
+H(X,Y) = H(X) + H(Y|X)
+\begin{align*} H(X,Y|Z) &= -\sum_{x,y} p(x,y|z) \log p(x,y|z) \\ &= -\sum_{x,y} p(x,y|z) \log p(y|x,z) - \sum_{x,y} p(x,y|z) \log p(x|z) \\ &= -\sum_{x,y} p(x,y|z) \log p(y|x,z) - \sum_{x} p(x|z) \log p(x|z) \\ &= -\sum_{x,y} p(y|x,z)p(x|z) \log p(y|x,z) + H(X|Z) \\ &= -\sum_{x} \left[\sum_{y} p(y|x,z) \log p(y|x,z)\right]p(x|z) + H(X|Z) \\ &= \sum_{x} H(Y|X=x,Z)p(x|z) + H(X|Z) \\ &= H(Y|X,Z) + H(X|Z) \end{align*} 

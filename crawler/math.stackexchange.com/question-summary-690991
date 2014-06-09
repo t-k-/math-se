@@ -1,0 +1,15 @@
+\int_0^1\frac{\ln(x^2-x+1)}{x^2-x}\,\mathrm{d}x
+\pi^2/9
+\begin{align}-\int_0^1 dx \frac{\log{[1-(x-x^2)]}}{x-x^2}  &= \sum_{n=0}^{\infty} \frac1{n+1} \int_0^1 dx \, x^n (1-x)^n\\ &= \sum_{n=0}^{\infty} \frac1{n+1} \frac{n!^2}{(2 n+1)!}\\ &=2 \sum_{n=0}^{\infty} \frac1{(2 n+2) (2 n+1) \binom{2 n}{n}} \end{align}
+\frac{\arcsin{x}}{\sqrt{1-x^2}} = \sum_{n=0}^{\infty} \frac{2^{2 n} x^{2 n+1}}{(2 n+1) \binom{2 n}{n}} 
+4 \int_0^1 dx \frac{\arcsin{(x/2)}}{\sqrt{1-x^2/4}} = 8 \int_0^{\pi/6} d\theta \, \theta = \frac{\pi^2}{9}
+ I = \sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k} \int_{0}^{1}\frac{(x^2-x)^k}{(x^2-x)}dx = \sum_{k=0}^{\infty}\frac{1}{k} \int_{0}^{1}{x^{k-1}(1-x)^{k-1}}dx 
+ = \sum_{k=0}^{\infty}\frac{1}{k} \beta(k,k) = \sum_{k=0}^{\infty}\frac{1}{k} \frac{\Gamma(k)\Gamma(k)}{\Gamma(2k)} = 4(\sin^{-1}(1/2))^2 \sim 1.096622711. 
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\int_{0}^{1}{\ln\pars{x^{2} - x + 1} \over x^{2} - x}\,\dd x:\ {\large ?}}
+\ds{x^{2} - x + 1 = 0}
+\ds{\quad x_{\rm r} \equiv {1 + \root{3}\ic \over 2}\quad}
+\ds{\quad{1 \over x_{\rm r}} = x_{\rm r}^{*}}
+\ds{{\rm Li}_{1}\pars{z} = -\ln\pars{1 - z}}
+\ds{{\rm Li}_{2}\pars{z} = \int_{0}^{z}{{\rm Li}_{1}\pars{t} \over t}\,\dd t}
+ \color{#66f}{\large% \int_{0}^{1}{\ln\pars{x^{2} - x + 1} \over x^{2} - x}\,\dd x = {\pi^{2} \over 9}} 

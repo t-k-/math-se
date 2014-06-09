@@ -1,0 +1,69 @@
+f
+s_n
+s_n \to_{pointwise} f
+ s_n = \sum_{k=0}^{2^{2n}} \frac{k}{2^n} \chi_{f^{-1}( [ \frac{k}{2^n}, \frac{k +1}{2^n} ] ) }
+f
+s_n
+f
+s_n = \sum_{k=0}^{2^{2n}} \frac{k}{2^n} \chi_{f^{-1}( [ \frac{k}{2^n}, \frac{k +1}{2^n} ] ) }
+f
+f
+\frac{k}{2^n}
+f
+f
+E_{n,k} = f^{-1}\left(\left[\frac{k}{2^n}, \frac{k+1}{2^n}\right) \right),
+s_n = \sum_{k=0}^{2^{2n}-1}\frac{k}{2^n}\chi_{E_{n,k}}.
+n \in \mathbb{N}
+\mathscr{E}_n = \{ E_{n,k} : k \in \mathbb{N}\}
+E_{n,k}
+\left[\frac{k}{2^n},\frac{k+1}{2^n}\right)
+[0,\infty)
+f
+s_n
+f
+x
+s_n(x)
+2^n \leqslant f(x)
+s_n(x) = 0
+f(x) \geqslant 2^n
+k_{x,n} = \lfloor 2^n\cdot f(x)\rfloor \geqslant 2^{2n}
+x \in E_{n,k_{x,n}}
+k_{x,n} \geqslant 2^{2n}
+E_{n,k_{x,n}}
+s_n
+s_n(x) = 0
+n
+2^n > f(x)
+k_{x,n} = \lfloor 2^n\cdot f(x)\rfloor < 2^{2n}
+x \in E_{n,k_{x,n}}
+s_n(x) = \sum_{k=0}^{2^{2n}-1}\frac{k}{2^n}\chi_{E_{n,k}}(x) = \frac{k_{x,n}}{2^n}\chi_{E_{n,k_{x,n}}}(x) = \frac{k_{x,n}}{2^n}
+E_{n,k}
+k_{x,n} \leqslant 2^n\cdot f(x) < k_{x,n}+1
+s_n(x) = \dfrac{k_{x,n}}{2^n} \leqslant f(x) < \dfrac{k_{x,n}+1}{2^n}
+0 \leqslant f(x) - s_n(x) < \frac{1}{2^n},
+s_n(x) \to f(x)
+s_{n+1}(x) \geqslant s_n(x)
+k_{x,n} \leqslant 2^n\cdot x < k_{x,n}+1
+2k_{x,n} \leqslant 2^{n+1}\cdot f(x) < 2k_{x,n}+2
+k_{x,n+1} = \lfloor 2^{n+1}\cdot f(x)\rfloor = 2k_{x,n}
+2^{n+1}\cdot f(x) < 2 k_{x,n}+1
+k_{x,n+1} = \lfloor 2^{n+1}\cdot f(x)\rfloor = 2k_{x,n}+1
+s_{n+1}(x) = \frac{k_{x,n+1}}{2^{n+1}} = \frac{2k_{x,n}}{2^{n+1}} = \frac{k_{x,n}}{2^n} = s_n(x),
+s_{n+1}(x) = \frac{k_{x,n+1}}{2^{n+1}} = \frac{2k_{x,n}+1}{2^{n+1}} = \frac{k_{x,n}}{2^n} + \frac{1}{2^{n+1}} = s_n(x) + \frac{1}{2^{n+1}}.
+s_{n+1}(x) \geqslant s_n(x)
+s_n(x)
+x
+f
+f
+f
++\infty
+s_n
+2^n\cdot \chi_{F_n}
+s_n
+F_n = \{x : f(x) \geqslant 2^n\}
+k_n
+\frac{k_n}{2^n}\leq x < \frac{k_n+1}{2^n}
+k_n
+s_n=\frac{k_n}{2^n}
+\frac{k_n}{2^n} \rightarrow x
+n

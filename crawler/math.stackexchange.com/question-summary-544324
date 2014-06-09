@@ -1,0 +1,45 @@
+X
+E[X|X^2]
+E[X||X|]
+E[X|sin(X)]
+E[X\mid Y]
+u(Y)
+v
+E[Xv(Y)]=E[u(Y)v(Y)]
+Y=w(X)
+v
+w:x\mapsto x^2
+E[Xv(X^2)]=E[u(X^2)v(X^2)]
+x=\sqrt{y}
+x\gt0
+x=-\sqrt{y}
+x\lt0
+2x\mathrm dx=\mathrm dy
+w:x\mapsto|x|
+w:x\mapsto\sin(x)
+y
+[-1,1]
+S(y)=\{x\mid\sin(x)=y\}
+u(y)
+w:x\mapsto\sin(x)
+w:x\mapsto x^2
+w:x\mapsto|x|
+ E[Xv(w(X))]=E[u(w(X))v(w(X))]. 
+ \int xv(x^2)f_X(x)\mathrm dx=\int u(x^2)v(x^2)f_X(x)\mathrm dx. 
+ \int_\mathbb Rxv(x^2)f_X(x)\mathrm dx=\int_0^\infty v(y)(f_X(\sqrt{y})-f_X(-\sqrt{y}))\mathrm dy, 
+ \int_\mathbb R u(x^2)v(x^2)f_X(x)\mathrm dx=\int_0^\infty u(y)v(y)(f_X(\sqrt{y})+f_X(-\sqrt{y}))\frac{\mathrm dy}{\sqrt{y}}, 
+ u(y)=\sqrt{y}\frac{f_X(\sqrt{y})-f_X(-\sqrt{y})}{f_X(\sqrt{y})+f_X(-\sqrt{y})}. 
+ u(y)=y\frac{f_X(y)-f_X(y)}{f_X(y)+f_X(y)}. 
+ u(y)=\frac{\sum\limits_xxf_X(x)}{\sum\limits_xf_X(x)}, 
+S(y)
+S_g(y)=\{x\mid g(x)=y\}
+E[X\mid g(X)]
+|g'(x)|
+g(x)
+g(x_1)=g(x_2)
+g'(x_1)=\pm g'(x_2)
+|g'(x)|
+x
+S_g(y)
+E[X|\;|X|=y] = \dfrac{\displaystyle\sum_{x:|x|=y} xf(x)}{\displaystyle\sum_{x:|x|=y} f(x)}
+y\dfrac{f(y)-f(-y)}{f(y)+f(-y)}

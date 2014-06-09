@@ -1,0 +1,26 @@
+u_{xx}-10u_{xy}+25u_{yy}=e^x.
+u(x,0)=e^x-\cos5x\\u_y(x,0)=\sin 5x. \quad(*)
+\begin{cases}\alpha=y+5x\\ \beta=y\end{cases}\Longrightarrow v_{\beta\beta}=\dfrac{e^{\frac{\alpha-\beta}{5}}}{25}
+y.\varphi(y+5x)+\psi(y)+\frac{1}{25}\int e^{\frac{\alpha-\beta}{5}}
+\begin{cases}\alpha=5x+y\\\beta=5x-y\end{cases}
+u_x=u_\alpha\alpha_x+u_\beta\beta_x=5u_\alpha+5u_\beta
+u_{xx}=(5u_\alpha+5u_\beta)_x=(5u_\alpha+5u_\beta)_\alpha\alpha_x+(5u_\alpha+5u_\beta)_\beta\beta_x=5(5u_{\alpha\alpha}+5u_{\alpha\beta})+5(5u_{\alpha\beta}+5u_{\beta\beta})=25u_{\alpha\alpha}+50u_{\alpha\beta}+25u_{\beta\beta}
+u_y=u_\alpha\alpha_y+u_\beta\beta_y=u_\alpha-u_\beta
+u_{xy}=(5u_\alpha+5u_\beta)_y=(5u_\alpha+5u_\beta)_\alpha\alpha_y+(5u_\alpha+5u_\beta)_\beta\beta_y=5u_{\alpha\alpha}+5u_{\alpha\beta}-(5u_{\alpha\beta}+5u_{\beta\beta})=5u_{\alpha\alpha}-5u_{\beta\beta}
+u_{yy}=(u_\alpha-u_\beta)_y=(u_\alpha-u_\beta)_\alpha\alpha_y+(u_\alpha-u_\beta)_\beta\beta_y=u_{\alpha\alpha}-u_{\alpha\beta}-(u_{\alpha\beta}-u_{\beta\beta})=u_{\alpha\alpha}-2u_{\alpha\beta}+u_{\beta\beta}
+\therefore25u_{\alpha\alpha}+50u_{\alpha\beta}+25u_{\beta\beta}-10(5u_{\alpha\alpha}-5u_{\beta\beta})+25(u_{\alpha\alpha}-2u_{\alpha\beta}+u_{\beta\beta})=e^\frac{\alpha+\beta}{10}
+100u_{\beta\beta}=e^\frac{\alpha+\beta}{10}
+u_{\beta\beta}=\dfrac{e^\frac{\alpha+\beta}{10}}{100}
+u_\beta=p(\alpha)+\dfrac{e^\frac{\alpha+\beta}{10}}{10}
+u(\alpha,\beta)=\beta p(\alpha)+q(\alpha)+e^\frac{\alpha+\beta}{10}
+u(x,y)=(5x-y)p(5x+y)+q(5x+y)+e^x
+u(x,y)=-2yp(5x+y)+(5x+y)p(5x+y)+q(5x+y)+e^x
+u(x,y)=yf\left(x+\dfrac{y}{5}\right)+g\left(x+\dfrac{y}{5}\right)+e^x
+u(x,0)=e^x-\cos5x
+g(x)+e^x=e^x-\cos5x
+g(x)=-\cos5x
+\therefore u(x,y)=yf\left(x+\dfrac{y}{5}\right)-\cos(5x+y)+e^x
+u_y(x,0)=\sin5x
+f(x)+\sin5x=\sin5x
+f(x)=0
+\therefore u(x,y)=e^x-\cos(5x+y)

@@ -1,0 +1,126 @@
+m
+\frac{1}{m}=\frac{1}{\lfloor 2x \rfloor}+\frac{1}{\lfloor 5x \rfloor} .
+\lfloor \cdot \rfloor
+x
+x=n+r
+n
+r=\lfloor x\rfloor
+\lfloor 2x\rfloor = \lfloor 2n+2r\rfloor = 2n+\lfloor 2r\rfloor
+\lfloor 5x\rfloor = \lfloor 5n+5r\rfloor = 5n+\lfloor 5r\rfloor
+\frac1m = \frac1{2n+\lfloor 2r\rfloor}+\frac1{5n+\lfloor 5r\rfloor}.
+0\le r<1
+\lfloor 2r\rfloor
+\lfloor 5r\rfloor
+r
+[0,1)
+0\le r<\frac15
+m
+n
+7
+n=7k
+m=10k
+10
+\frac1m=\frac1{2n}+\frac1{5n}=\frac{7n}{10n^2}=\frac7{10n};
+\frac15\le r <\frac25
+49
+n
+m
+\frac1m=\frac1{2n}+\frac1{5n+1}=\frac{7n+1}{10n^2+2n},
+m=\frac{10n^2+2n}{7n+1}.
+m = \frac{10}7n+\frac4{49}-\frac4{49(7n+1)} = \frac{70n+4}{49}-\frac4{49(7n+1)},
+49m=70n+4-\frac4{7n+1}
+49m-70n-4=\frac4{7n+1}.
+\frac25\le r<\frac12
+n
+n=2
+n=2
+49m=140+8-1=147
+m=3
+49
+n=2
+\frac1m=\frac1{2n}+\frac1{5n+2}=\frac{7n+2}{10n^2+4n},
+m=\frac{10n^2+4n}{7n+2}=\frac{10n}7+\frac8{49}-\frac{16}{49(7n+2)},
+49m=70n+8-\frac{16}{7n+2}.
+m=\frac{10x}{7}
+x = \frac{7m}{10}
+x = \frac{7m+k}{10}
+k
+0 \leq k \leq 9
+6
+7m
+x = \frac{7y+k}{10} + \epsilon
+y,k
+k
+0< \epsilon <\frac{1}{10}
+\epsilon
+x,m > 0
+x
+ \frac{1}{10C} = \frac{1}{14C} + \frac{1}{35C} 
+ \frac{1}{3} = \frac{1}{\lfloor 2\cdot 2.4\rfloor} + \frac{1}{\lfloor 5\cdot 2.4\rfloor} = \frac{1}{4} + \frac{1}{12}. 
+x
+A + B/10
+B \in \{0,\cdots,9\}
+\alpha,\beta
+B
+(\alpha,\beta)
+\lfloor 2x \rfloor = 2A + \alpha, \; \lfloor 5x \rfloor = 5A + \beta, 
+(0,0);(0,1);(0,2);(1,2);(1,3);(1,4). 
+ (2A + \alpha) (5A + \beta) = m(7A + \alpha + \beta), 
+ 10A^2 - (7m - 5\alpha - 2\beta)A - ((\alpha+\beta)m - \alpha\beta). 
+ (7m - 5\alpha - 2\beta)^2 + 40 ((\alpha+\beta)m - \alpha\beta). 
+(0,0)
+10A^2 = 7mA
+10A = 7m
+7|A
+A = 7C
+m = 10C
+ m = 10C, x \in [7C,7C+0.2). 
+(0,1)
+(7m-2)^2
+ (7m-2)^2 + 40m. 
+(7m-2)^2 + \{14m - 3, 28m - 4, 42m - 3, 56m\}.
+(0,2)
+(7m-4)^2
+m = 3
+A = 2
+ (7m-4)^2 + 80m. 
+(7m-4)^2 + \{14m-7, 28m-12, 42m-15, 56m-16, 70m-15, 84m-12, 98m-7\}.
+ 10A^2 - 17A - 6 = 0 = (10A + 3)(A - 2). 
+ m = 3, x \in [2.4,2.5).
+(1,2)
+(7m-9)^2
+ (7m-9)^2 + 120m - 80. 
+\begin{align*} (7m-9)^2 + \{&14m-17,28m-32,42m-45,56m-56,70m-65,\\&84m-72,98m-77,112m-80,126m-81,140m-80,154m-77\}. \end{align*}
+(1,3)
+(7m-11)^2
+ (7m-11)^2 + 160m - 120. 
+\begin{align*} (7m-11)^2 + \{&14m-21, 28m-40, 42m-57, 56m-72, 70m-85, \\ &84m-96, 98m-105, 112m-112, 126m-117, 140m-120, \\ &154m-121, 168m-120, 182m-117\}. \end{align*}
+(1,4)
+(7m-13)^2
+ (7m-13)^2 + 200m - 160. 
+\begin{align*} (7m-13)^2 + \{& 14m-25, 28m-48, 42m-69, 56m-88, 70m-105, \\& 84m-120, 98m-133, 112m-144, 126m-153, 140m-160, \\& 154m-165, 168m-168, 182m-169, 196m-168, 210m-165,  \\& 224m-160, 238m-153\}. \end{align*}
+k + j/10 \le x < k + (j+1)/10
+k
+j
+j \le 9
+\lfloor 2x \rfloor = \begin{cases} 2k & 0 \le j \le 4 \\ 2k+1 &  5 \le j \le 9 \end{cases}
+\lfloor 5x \rfloor = \begin{cases} 5k + j/2 & j \ \text{even} \\ 5k + (j-1)/2 & j \ \text{odd} \end{cases}
+j = 0
+9
+f(x) = \frac{1}{1/\lfloor 2x \rfloor + 1/\lfloor 5x \rfloor} 
+j = 0
+1
+k > 0
+f(x) = 10 (k/7)
+k=2
+j=4
+f(x) = 3
+j = 4
+f(x) = \frac{1}{1/(2k) + 1/(5k+2)} = \frac{(2k)(5k+2)}{7k+2}
+\gcd(k,7k+2) = \gcd(k,2) = 1
+2 
+\gcd(5k+2,7k+2) = \gcd(5k+2,2k) = \gcd(k+2,2k) =1
+2
+4
+2 \times 2 \times 4 = 16
+k=2

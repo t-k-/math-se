@@ -1,0 +1,22 @@
+n
+k
+n
+\displaystyle\int_0^1 \frac{x^{k-1} - x^{n-k-1}}{1 - x^n} \; dx= \frac{\pi}{n} \cot{\frac{\pi k}{n}}
+\int_0^1 dx \; \frac{x^{k-1} - x^{n-k-1}}{1 - x^n} = \int_0^1 dx \; (x^{k-1} - x^{n-k-1}) \sum_{m=0}^{\infty} x^{m n} 
+ \begin{align} &= \sum_{m=0}^{\infty} \int_0^1 dx \; (x^{m n + k-1} - x^{(m+1) n-k-1}) \\ &= \sum_{m=0}^{\infty} \left ( \frac{1}{m n + k} - \frac{1}{(m+1) n - k} \right ) \\ &= \frac{1}{n} \sum_{m=0}^{\infty} \left ( \frac{1}{m + k/n} - \frac{1}{m+1 - k/n} \right )   \\&= \frac{1}{n} \sum_{m=-\infty}^{\infty} \frac{1}{m + k/n} \\ \end{align}
+k/n = z/\pi
+ \begin{align} &= \frac{\pi}{n}  \left ( \frac{1}{z} + 2 z \sum_{m=1}^{\infty} \frac{1}{z^2-\pi^2 m^2} \right ) \\ \end{align} 
+z
+\int_0^1 dx \; \frac{x^{k-1} - x^{n-k-1}}{1 - x^n} = \frac{\pi}{n} \cot{\frac{\pi k}{n}} 
+\cot{z} = \frac{1}{z} + 2 z \sum_{m=1}^{\infty} \frac{1}{z^2-\pi^2 m^2}  
+\cot{y} = \frac{1}{2} (\cot{\frac{y}{2}} - \tan{\frac{y}{2}}) 
+\pi x \cot{\pi x} = \frac{\pi x}{2} \left (\cot{\frac{\pi x}{2}} + \cot{\frac{\pi (x \pm 1)}{2}} \right ) 
+\pi x \cot{\pi x} = \frac{\pi x}{2^2} \left (\cot{\frac{\pi x}{2^2}} + \cot{\frac{\pi (x - 1)}{2^2}} + \cot{\frac{\pi (x + 1)}{2^2}} + \cot{\frac{\pi (x + 2)}{2^2}} \right ) 
+r
+\pi x \cot{\pi x} = \frac{\pi x}{2^r} \left (\cot{\frac{\pi x}{2^r}} + \sum_{m=1}^{2^{r-1}-1} \left [\cot{\frac{\pi (x - m)}{2^r}} + \cot{\frac{\pi (x + m)}{2^r}} \right ] + \cot{\frac{\pi (x + 2^{r-1})}{2^r}} \right ) 
+r \rightarrow \infty
+\lim_{r \rightarrow \infty} \frac{\pi x}{2^r} \cot{\frac{\pi x}{2^r}} = 1 
+\lim_{r \rightarrow \infty} \frac{1}{2^r} \cot{\frac{a}{2^r}} = \frac{1}{a} 
+\lim_{r \rightarrow \infty} \frac{1}{2^r} \cot{\frac{\pi(x+2^{r-1})}{2^r}} = 0
+\forall \, a \ne 0
+\pi x \cot{\pi x} = 1 + x \sum_{m=1}^{\infty} \left ( \frac{1}{x+m} + \frac{1}{x-m} \right ) 

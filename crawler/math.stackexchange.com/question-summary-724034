@@ -1,0 +1,8 @@
+\lim\limits_{(x,y) \to (0,0)}\dfrac{(y^2-x)^3}{x^2+y^4}
+r = \sqrt{x^2 + y^4}
+x = r \cos(\theta)
+y^2 = r \sin(\theta)
+ \dfrac{(r \sin (\theta) - r \cos(\theta))^3}{r^2 \cos^2(\theta) + r^2 \sin^2(\theta)} = r (\sin(\theta)-\cos(\theta))^3
+\lim\limits_{(x,y) \to (0,0)}\dfrac{(y^2-x)^3}{x^2+y^4}
+ f(x,y)=\dfrac{(y^2-x)^3}{x^2+y^4} 
+ \lim_{(0,0)} f(x,y) = \lim_{(0,0)} f(x^2,y)\\ |f(x^2,y)|= \dfrac{|y^2-x^2|^3}{x^4+y^4}\le \dfrac{(y^2+x^2)^3}{x^4+y^4} \\ =  \dfrac{r^6}{r^4 (\cos^4\theta + \sin^4\theta)}  = O(r^2) 

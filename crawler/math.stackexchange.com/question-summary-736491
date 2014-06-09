@@ -1,0 +1,16 @@
+X
+\mathbb{N}
+ \mathbb{E}[X] < \infty \Longleftrightarrow \sum_{n=1}^\infty \mathbb{P}[X>n] < \infty 
+ X > n 
+ \sum_{n=1}^\infty \mathbb{P}[X>n] 
+ \mathbb{E}[X] = \sum_{i=1}^\infty x_ip_i 
+X
+\mathbb{E}[x] = n_1 \mathbb{P}[X > n_1] + n_2 \mathbb{P}[X > n_2] + ... + n_\infty \mathbb{P}[X > n_\infty] 
+ n_1 \mathbb{P}[X > n_1] = n_1 \sum_{j=1}^\infty \mathbb{P}[([X= j + n_1] 
+X
+\mathbb{N}
+\mathrm{E}[X]\lt\infty
+\mathrm{E}[X]
+ \begin{align} \mathrm{E}[X] &=\sum_{k=0}^\infty(k+1)\overbrace{(\mathrm{P}[X\gt k]-\mathrm{P}[X\gt k+1])}^{\mathrm{P}[X=k+1]}\\ &=\lim_{N\to\infty}\left(\sum_{k=0}^N(k+1)\mathrm{P}[X\gt k]-\sum_{k=0}^{N+1} k\mathrm{P}[X\gt k]\right)\\ &=\lim_{N\to\infty}\sum_{k=0}^N\mathrm{P}[X\gt k]-\color{#C00000}{\lim_{N\to\infty}(N+1)\mathrm{P}[X\gt N+1]}\\ &=\sum_{k=0}^\infty\mathrm{P}[X\gt k] \end{align} 
+ \begin{align} 0 &=\lim_{N\to\infty}\sum_{k=N}^\infty(k+1)(\mathrm{P}[X\gt k]-\mathrm{P}[X\gt k+1])\\ &\ge\lim_{N\to\infty}(N+1)\sum_{k=N}^\infty(\mathrm{P}[X\gt k]-\mathrm{P}[X\gt k+1])\\[6pt] &=\lim_{N\to\infty}(N+1)\mathrm{P}[X\gt N]\\[10pt] &\ge\color{#C00000}{\lim_{N\to\infty}(N+1)\mathrm{P}[X\gt N+1]} \end{align} 
+E(X) = \sum_{n=1}^{\infty} P(X>n)

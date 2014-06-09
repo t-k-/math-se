@@ -1,0 +1,15 @@
+n
+n
+n
+n
+n\rightarrow\infty
+P(Win\:\:Game\:1) = \dfrac{1}{2^n}
+P(Win\:\:Game\:2) = \dfrac{n!}{n^n}
+n
+\ln\left(\frac{2^n n!}{n^n}\right)=\ln n!+n(\ln 2-\ln n)=\sum_{k=1}^n\ln k+n\ln 2-n\ln n\;.
+k\ge 1
+\ln k\le\int_k^{k+1}\ln x dx
+\sum_{k=1}^n\ln k\le\int_1^{n+1}\ln x\, dx=[x\ln x-x]_1^{n+1}=(n+1)\ln(n+1)-n
+\begin{align*} \ln\left(\frac{2^n n!}{n^n}\right)&\le(n+1)\ln(n+1)-n+n\ln 2-n\ln n\\ &=\Big((n+1)\ln(n+1)-n\ln n\Big)-n(1-\ln 2)\\ &=\Big((n+1)\ln(n+1)-n\ln(n+1)\Big)+\Big(n\ln(n+1)-n\ln n\Big)-n(1-\ln 2)\\ &=\ln(n+1)+n\Big(\ln(n+1)-\ln n\Big)-n(1-\ln 2)\\ &=\ln(n+1)+n\ln\left(1+\frac1n\right)-n(1-\ln 2)\;. \end{align*}
+n\to\infty
+\lim_{n\to\infty}\frac{2^n n!}{n^n}\;.

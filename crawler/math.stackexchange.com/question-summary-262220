@@ -1,0 +1,16 @@
+W_t
+(\mathcal{F}_s)_{s\geq0}
+\mathbb{E}\left[\int_0^t|W_r|^2\text{d}r \ |\ \mathcal{F}_s\right]
+X
+Y
+(\Omega,\mathcal F,\mathbb P)
+\mathcal G
+\mathcal F
+ \mathbb{E}\left[\int_0^t|W_r|^2\mathrm dr \,\bigg|\, \mathcal{F}_s\right]=\int_0^t\mathbb{E}[|W_r|^2 \mid \mathcal{F}_s]\mathrm dr  
+\mathbb{E} \left( \int_0^t |W_r|^2 \, dr |\mathcal{F}_s \right) = \int_0^t \mathbb{E}(|W_r|^2 |\mathcal{F}_s) \, dr
+t \geq s
+\begin{align} \int_0^t \mathbb{E}(|W_r|^2 |\mathcal{F}_s) \, dr &= \int_0^s \underbrace{ \mathbb{E}(|W_r|^2 |\mathcal{F}_s)}_{|W_r|^2} \, dr + \int_{s}^t \underbrace{\mathbb{E}(|W_r|^2 |\mathcal{F}_s)}_{|W_s|^2-d \cdot s + d \cdot r} \, dr \\ &= \int_0^s |W_r|^2 \, dr + (t-s) \cdot |W_s|^2 + d \cdot \frac{(t-s)^2}{2} \end{align}
+(|W_t|^2-t \cdot d)_{t \geq 0}
+(W_t)_t
+d
+d=1

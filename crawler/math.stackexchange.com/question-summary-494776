@@ -1,0 +1,43 @@
+1
++\infty
+\dfrac{n!e^n}{n^n} \sim \sqrt{2\pi n}
++\infty
+1
+4
+(3)
+(4)
+\log(a_n)
+a_n
+ a_n=\frac{n!e^n}{n^n}\tag{1} 
+ \begin{align} \frac{a_n}{a_{n-1}} &=\frac{(n-1)^{n-1}e}{n^{n-1}}\\ &=e\left(1-\frac1n\right)^{n-1}\tag{2} \end{align} 
+ \begin{align} \log\left(\frac{a_n}{a_{n-1}}\right) &=1+(n-1)\log\left(1-\frac1n\right)\\ &=1-(n-1)\left(\frac1n+\frac1{2n^2}+O\left(\frac1{n^3}\right)\right)\\ &=\frac1{2n}+O\left(\frac1{n^2}\right)\tag{3} \end{align} 
+ \log(a_n)=\frac12H_n+C+O\left(\frac1n\right)\tag{4} 
+I_n=\int_0^{\pi /2}\sin^{n}tdt
+I_{2n+1}\leqslant I_{2n}\leqslant I_{2n-1}
+{I_{2n + 1}} = \frac{{2n}}{{2n + 1}}{I_{2n - 1}}
+1\leqslant \frac{{{I_{2n}}}}{{{I_{2n + 1}}}}\leqslant \frac{{{I_{2n - 1}}}}{{{I_{2n + 1}}}}
+\frac{{{I_{2n}}}}{{{I_{2n + 1}}}}\to 1
+{I_{2n}} = \frac{{\left( {2n - 1} \right)!!}}{{\left( {2n} \right)!!}}\frac{\pi }{2}
+{I_{2n + 1}} = \frac{{\left( {2n } \right)!!}}{{\left( {2n+ 1} \right)!!}}
+\frac{{{I_{2n + 1}}}}{{{I_{2n}}}} = \frac{{\left( {2n} \right)!{!^2}}}{{\left( {2n - 1} \right)!!\left( {2n + 1} \right)!!}}\frac{2}{\pi } \to 1
+\prod\limits_{k = 1}^\infty  {\frac{{4{k^2}}}{{4{k^2} - 1}}}  = \frac{\pi }{2}
+\pi
+n\mapsto 2n
+A = \mathop {\lim }\limits_{n \to \infty } \frac{{n!{e^n}}}{{{n^{n + 1/2}}}}
+1 = \frac{A}{A} = \mathop {\lim }\limits_{n \to \infty } \frac{{n!{e^n}}}{{{n^{n + 1/2}}}}\frac{{{{\left( {2n} \right)}^{2n + 1/2}}}}{{\left( {2n} \right)!{e^{2n}}}} = \sqrt 2 \mathop {\lim }\limits_{n \to \infty } \frac{{{n^n}}}{{{e^n}n!}}\frac{{\left( {2n} \right)!!}}{{\left( {2n - 1} \right)!!}}
+1 = 2{\left( {\mathop {\lim }\limits_{n \to \infty } \frac{{{n^{n + 1/2}}}}{{{e^n}n!}}} \right)^2}\left( {\mathop {\lim }\limits_{n \to \infty } \frac{{2n + 1}}{n}} \right)\left( {\mathop {\lim }\limits_{n \to \infty } \frac{{\left( {2n} \right)!!\left( {2n} \right)!!}}{{\left( {2n - 1} \right)!!\left( {2n + 1} \right)!!}}} \right)
+\frac{1}{{\sqrt {2\pi } }} = { {\mathop {\lim }\limits_{n \to \infty } \frac{{{n^{n + 1/2}}}}{{{e^n}n!}}} }
+\int_1^n \log(x) \; dx
+[m, m+1]
+\int_m^{m+1} \log(x) \; dx \;\; = \;\; \frac1{2}(\log(m) + \log(m+1)) + e_m
+e_m
+m^{-2}
+m=1
+n-1
+x\log(x) - x\; |_1^n = \int_1^n \log(x)\; dx \;\; = \;\; \frac1{2}\log(n)+ \sum_{1}^{n-1} \log(n) + E_n
+E_n = \sum_{m=1}^{n-1} e_m
+E = \sum_{m=1}^\infty e_m
+C
+n^{-1}
+n^n e^{-n}e^{-1} = e^{E_n}(\frac{n!}{\sqrt{n}})
+\frac{e^n n!}{n^n} = (1 + O(n^{-1}))e^{1-E}\sqrt{n}

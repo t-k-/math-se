@@ -1,0 +1,4 @@
+f_1(x)=f_2(x)=f_3(x)
+f_1(x)=\sum_{m=0}^{\infty} \binom {x}m \sum_{k=0}^m\binom mk(-1)^{m-k}f(k)
+f_2(x)=\lim_{n\to\infty}\binom xn\sum_{k=0}^n\frac{x-n}{x-k}\binom nk(-1)^{n-k}f(k)
+f_3(x)=\lim_{n\to\infty}\frac{\sum_{k=0}^{n} \frac{(-1)^k f(k)}{(x-k)k!(n-k)!}}{\sum_{k=0}^{n} \frac{(-1)^k }{(x-k) k!(n-k)!}}

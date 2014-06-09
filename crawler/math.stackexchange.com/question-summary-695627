@@ -1,0 +1,23 @@
+A\vec{x} = \vec{b}
+(A+\delta{}A)(\vec{x}+\delta\vec{x}) = \vec{b}
+\dfrac{\|\delta\vec{x}\|/\|\vec{x}+\delta\vec{x}\|}{\|\delta{}A\|/\|A\|} \le \kappa{(A)}
+\kappa{(A)} = \|A\|\cdot\|A^{-1}\|
+A
+Ax=b
+ (A+\delta A)(x+\delta x)=b, 
+ Ax+\delta A (x+\delta x)+A\delta x=b, 
+ \delta A (x+\delta x)+A\delta x=0, 
+ \delta x= -A^{-1}\delta A (x+\delta x), 
+ \|\delta x\|\le \|A^{-1}\|\|\delta A\|\|x+\delta x\|=\kappa(A)\cdot\frac{\|\delta A\|}{\|A\|}\|x+\delta x\|, 
+ \frac{\frac{\|\delta x\|}{\|x+\delta x\|}}{\frac{\|\delta A\|}{\|A\|}}\le \kappa(A). 
+x
+A
+\phi(y,A) = Ay-b
+{\partial \phi(y,A) \over \partial y} = A
+{\partial \phi(y,A) \over \partial A}(\Delta) = \Delta y
+x
+A x(A) = b
+{\partial x(A) \over \partial A}(\Delta) = ({\partial \phi(y,A) \over \partial y})^{-1} {\partial \phi(y,A) \over \partial A}(\Delta) = A^{-1} \Delta x(A)
+\|{\partial x(A) \over \partial A}(\Delta)\| \le \|A^{-1}\| \|\Delta\| \|x(A)\|
+{\|\Delta\| \over \|A\|} \|x(A)\| 
+{\left({\|{\partial x(A) \over \partial A}(\Delta)\| \over \|x(A)\|} \right) \over \left( { \|\Delta\| \over \|A\| } \right) } \le \kappa(A)

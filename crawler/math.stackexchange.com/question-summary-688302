@@ -1,0 +1,10 @@
+\int\int\int_V (x+2y)^4(x-2y)^6 dxdydz
+V\in\Bbb{R}^3
+|x+2y|\le1
+|x-2y|\le2
+z\in[0,1]
+x+2y=u
+x-2y=v
+dxdy=\frac{1}{\begin{vmatrix} 1&2\\1&-2 \end{vmatrix}}dudv =\frac{1}{4}dudv
+V=\frac 14\int_0^1\int_{-2}^{2}\int_{-1}^1 u^4v^6dudvdz
+dxdy=dudv

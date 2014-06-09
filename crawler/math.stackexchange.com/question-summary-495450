@@ -1,0 +1,68 @@
+\lambda
+N
+X_n
+n
+X_n
+\lambda
+p(x) = P(X_n = x) = e^{-\lambda} \lambda^x/x!
+s
+T(s)
+n
+X_n = s
+1
+s
+T(s) > T(t)
+t < s
+\pi
+\{0,1,\ldots,s\}
+M(\pi)
+T(\pi_0) < T(\pi_1) < \ldots < T(\pi_s)
+P(A_s)
+s
+M(\pi)
+\{0,1,\ldots,s\}
+s
+M(\pi) = \frac{p(\pi_0)}{p(\pi_0) + \ldots + p(\pi_s)} \frac{p(\pi_1)}{p(\pi_1)+ \ldots + p(\pi_s)} \ldots \frac{p(\pi_{s-1})}{p(\pi_{s-1}) + p(\pi_s)} 
+\eqalign{P(A_0) &= M([0]) = 1\cr P(A_1) &= M([01]) = \dfrac{p(0) }{(p(0)+p(1))} = \dfrac{\lambda}{\lambda+1}\cr P(A_2) &=  M([012]) + M([102]) = {\frac {8 \left({\lambda}^{2}+\lambda+1\right)}{ \left( {\lambda}^{2}+2\,\lambda+2  \right)  \left( \lambda+2 \right)  \left( {\lambda}^{2}+2 \right) }} \cr P(A_3) &= M([0123]) + M([0213]) + M([1023]) + M([1203]) + M([2013]) + M([2103])\cr &= {\frac { 648\left( {\lambda}^{5}+3\,{\lambda}^{4}+6\,{\lambda}^{3}+ 15\,{\lambda}^{2}+18\,\lambda+18 \right)  \left( {\lambda}^{6}+3\,{ \lambda}^{5}+9\,{\lambda}^{4}+15\,{\lambda}^{3}+12\,{\lambda}^{2}+18\, \lambda+12 \right) }{ \left( {\lambda}^{3}+3\,{\lambda}^{2}+6\,\lambda +6 \right)  \left( {\lambda}^{2}+3\,\lambda+6 \right)  \left( \lambda+ 3 \right)  \left( {\lambda}^{2}+6 \right)  \left( {\lambda}^{3}+3\,{ \lambda}^{2}+6 \right)  \left( {\lambda}^{3}+6 \right)  \left( { \lambda}^{3}+6\,\lambda+6 \right) }} \cr} 
+n
+0
+0
+n
+1
+0
+1
+n
+s
+0, 1, 2, ..., s-1
+s
+L_n
+n
+S_n(i)
+i
+n
+A^c
+A
+p_\lambda(i)
+Po(\lambda)
+i
+ \mathbb{P}(S_n(i)) = (1- p_\lambda(i))^n 
+ \mathbb{P}(L_n = i) = \mathbb{P}[S_n(0) \cap S_n(1) \cap ... \cap S_n(i-1) \cap S_n(i)^c]  
+i
+i
+i
+ \mathbb{P}(L_n = i) = \mathbb{P}[S_n(0)]\mathbb{P}[ S_n(1) \cap ... \cap S_n(i-1) \cap S_n(i)^c \;\;|\;\; S_n(0)] 
+S_n(0)
+0
+0
+i\neq 0
+n
+0
+i
+n-1
+ \mathbb{P}(L_n = i) = \mathbb{P}[S_n(0)]\mathbb{P}[ S_{n-1}(1) \cap ... \cap S_{n-1}(i-1) \cap S_{n-1}(i)^c] 
+ \mathbb{P}(L_n = i) = \mathbb{P}[S_n(0)]\mathbb{P}[S_{n-1}(1)]...\mathbb{P}[S_{n-i+1}(i-1)] \mathbb{P}[S_{n-i}(i)^c] 
+ \mathbb{P}(L_n = i) = (1-p_\lambda(0))^n...(1-p_\lambda(i-1))^{n-i+1} (1-(1-p_\lambda(i))^{n-i}) 
+n
+i
+n
+i

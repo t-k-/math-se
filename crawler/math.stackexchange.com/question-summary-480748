@@ -1,0 +1,49 @@
+*
+X
+\Phi : \mathrm{heaps}(X) \rightarrow X
++
+\sum,
+\times
+\prod,
+\uplus
+\Phi
+H,I \in \mathrm{heaps}(X).
+\Phi(H \uplus I) = \Phi(H) * \Phi(I)
+X =
+\mathbb{B}.
+\leftrightarrow
+\not\leftrightarrow
+\leftrightarrow
+\not \leftrightarrow
+\mathrm{heaps}(\mathbb{B}) \rightarrow \mathbb{B}.
+H \in \mathrm{heaps}(\mathbb{B}),
+\mathrm{ef}(H)
+H
+\mathrm{ot}(H)
+H
+\mathrm{ef}
+\mathrm{ot}
+\mathrm{ef}(H \uplus \{x,y\}) = \mathrm{ef}(H \uplus \{\neg x, \neg y\}),\;\; \mathrm{ot}(H \uplus \{x,y\}) = \mathrm{ot}(H \uplus \{\neg x, \neg y\})
+\mathrm{ef}(H \uplus \{\neg x\}) = \neg\mathrm{ef}(H \uplus \{ x\}),\;\; \mathrm{ot}(H \uplus \{\neg x\}) = \neg\mathrm{ot}(H \uplus \{ x\})
+\mathrm{ef}(H \uplus \{x,x\}) = \mathrm{ef}(H),\;\; \mathrm{ot}(H \uplus \{x,x\}) = \mathrm{ot}(H)
+\mathrm{ef}(\emptyset) = \top,\;\; \mathrm{ot}(\emptyset) = \bot
+H
+|H| \;\mathrm{odd} \implies \mathrm{ef}(H) = \mathrm{ot}(H)
+|H| \;\mathrm{even} \implies \mathrm{ef}(H) \neq \mathrm{ot}(H)
+\mathrm{ef}(H \uplus \mathrm{ot}(I)) = \mathrm{ot}(\mathrm{ef}(H) \uplus I)
+\mathrm{ef}(H \uplus I) = [\mathrm{ef}(H) \wedge \mathrm{ef}(I)] \vee [\neg\mathrm{ot}(H) \wedge \neg\mathrm{ot}(I)]
+\mathrm{ot}(H \uplus I) = [\mathrm{ot}(H) \wedge \neg\mathrm{ef}(I)] \vee [\neg\mathrm{ef}(H) \wedge \mathrm{ot}(I)]
+\mathrm{ot}(H \uplus I) = [\mathrm{ot}(H) \vee \mathrm{ot}(I)] \wedge [\neg\mathrm{ef}(H) \vee \neg\mathrm{ef}(I)]
+\mathrm{ef}(H \uplus I) = [\mathrm{ef}(H) \vee \neg\mathrm{ot}(I)] \wedge [\neg\mathrm{ot}(H) \vee \mathrm{ef}(I)]
+\mathbb Z_2
+\oplus
+\bigoplus
+\oplus
+(A\leftrightarrow B)=A\oplus B\oplus 1
+0
+1
+n
+ a_1 \leftrightarrow a_2 \leftrightarrow \cdots \leftrightarrow a_n = a_1 \oplus a_2 \oplus \cdots \oplus a_n \oplus \underbrace{1\oplus\cdots\oplus1}_{n-1\text{ ones}}
+\neg A = 1\oplus A
+\oplus
+1\oplus 1=0

@@ -1,0 +1,29 @@
+A-B \subseteq C \Rightarrow A\cup B \subseteq B\cup C
+x\in A\cup B
+x\in B
+x\not\in B
+x\in A
+x\in A-B
+x\in C
+D=A\cup B
+D=(D\cap B)\cup (D\cap B^c)
+^c
+D\cap B=(A\cap B)\cup (B\cap B)=(A\cap B)\cup B
+D\cap B^c=(A\cap B^c)\cup( B\cap B^c)=A\cap B^c
+X \subseteq Y \Rightarrow X\cup Z \subseteq Y \cup Z
+(A - B) \cup B = A \cup B
+\subseteq
+\subseteq
+\cup
+\Rightarrow
+x \in B
+\lor
+\subseteq
+-
+\Rightarrow
+ \begin{align} & A \cup B \;\subseteq\; B \cup C \\ \equiv & \;\;\;\;\;\text{"definition of $\subseteq$"} \\ & \langle \forall x :: x \in A \cup B \;\Rightarrow\; x \in B \cup C \rangle \\ \equiv & \;\;\;\;\;\text{"definition of $\cup$, twice"} \\ & \langle \forall x :: x \in A \lor x \in B \;\Rightarrow\; x \in B \lor x \in C \rangle \\ \equiv & \;\;\;\;\;\text{"logic: expand $\Rightarrow$, and apply DeMorgan to its left hand side"} \\ & \langle \forall x :: (x \not\in A \land x \not\in B) \lor x \in B \lor x \in C \rangle \\ \equiv & \;\;\;\;\;\text{"logic: use negation of $x \in B$ in other part of $\lor$"} \\ & \langle \forall x :: (x \not\in A \land \textrm{true}) \lor x \in B \lor x \in C \rangle \\ \equiv & \;\;\;\;\;\text{"logic: simplify"} \\ & \langle \forall x :: x \not\in A \lor x \in B \lor x \in C \rangle \\ \end{align} 
+ \begin{align} & A - B \;\subseteq\; C \\ \equiv & \;\;\;\;\;\text{"definition of $\subseteq$"} \\ & \langle \forall x :: x \in A - B \;\Rightarrow\; x \in C \rangle \\ \equiv & \;\;\;\;\;\text{"definition of $-$"} \\ & \langle \forall x :: x \in A \land x \not\in B \;\Rightarrow\; x \in C \rangle \\ \equiv & \;\;\;\;\;\text{"logic: expand $\Rightarrow$, and apply DeMorgan to its left hand side"} \\ & \langle \forall x :: x \not\in A \lor x \in B \lor x \in C \rangle \\ \end{align} 
+ A \cup B \;\subseteq\; B \cup C \;\;\equiv\;\; A - B \;\subseteq\; C 
+\Rightarrow
+P \Rightarrow Q
+\lnot P \lor Q

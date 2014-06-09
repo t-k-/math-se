@@ -1,0 +1,17 @@
+\left ( B \times C \right )^A=\{f \in \mathcal{P} \left ( \left ( B \times C \right) \times A \right) \big | f \hspace{2mm} \text{is a function and} \hspace{2mm} \text{dom}(f)=B \times C  \}
+B^A = \{ f \in \mathcal{P} \left ( B \times A \right) \big | f \hspace{2mm} \text{is a function} \hspace{2mm} \text{dom}(f)=B \}
+C^A = \{ f \in \mathcal{P} \left ( C \times A \right) \big | f \hspace{2mm} \text{is a function} \hspace{2mm} \text{dom}(f)=C \}
+\left ( B \times C \right) ^A \equiv_C B^A \times C^A 
+B\times C
+\pi_B : B\times C \to B
+\pi_C : B \times C \to C
+f : A \to B \times C
+(\pi_C \circ f) \in C^A
+B
+C
+f
+\mathrm{curry}(f) = x \mapsto y \mapsto f(x,y),
+\mathrm{curry}(f)(x)(y) = f(x,y).
+\mathrm{uncurry}(f) = (x,y) \mapsto f(x)(y),
+\mathrm{uncurry}(f)(x,y) = f(x)(y).
+\ddot\smile

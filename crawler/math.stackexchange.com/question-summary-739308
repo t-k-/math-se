@@ -1,0 +1,21 @@
+\left( {X,Z} \right)
+{f_{X,Z}}\left( {x,z} \right)
+{f_X},{f_Z}
+{f_{X|Z}}\left( {x|z} \right) = {1_{\left\{ {y:{f_Z}\left( y \right) > 0} \right\}}}\left( z \right)\frac{{{f_{X,Z}}\left( {x,z} \right)}}{{{f_Z}\left( z \right)}}
+g\left( z \right): = \int_\mathbb{R} {h\left( x \right){f_{X|Z}}\left( {x|z} \right)dx} 
+h
+g\left( Z \right) = \mathbb{E}\left[ {h\left( X \right)|Z} \right]
+\mathbb{E}\left[ {{1_G} \cdot h\left( X \right)} \right] = \mathbb{E}\left[ {{1_G} \cdot g\left( Z \right)} \right],\forall G \in \sigma \left( Z \right) \Leftrightarrow 
+\int_G {h\left( X \right)d\mathbb{P}}  = \int_G {g\left( Z \right)d\mathbb{P}} ,\forall G \in \sigma \left( Z \right) \Leftrightarrow 
+\int_{X\left( G \right)} {h\left( x \right){f_X}\left( x \right)dx}  = \int_{Z\left( G \right)} {g\left( z \right){f_Z}\left( z \right)dz}  = \int_{Z\left( G \right)} {\left( {\int_\mathbb{R} {h\left( x \right){f_{X|Z}}\left( {x|z} \right)dx} } \right){f_Z}\left( z \right)dz}  = \int_{Z\left( G \right)} {\left( {\int_\mathbb{R} {h\left( x \right){f_{X,Z}}\left( {x,z} \right)dx} } \right)dz}  = \int_{Z\left( G \right)} {\left( {\int_\mathbb{R} {h\left( x \right){f_{X,Z}}\left( {x,z} \right)dx} } \right)dz} ,\forall G \in \sigma \left( Z \right)
+h = {1_B}
+B \in \mathcal{B}\left( \mathbb{R} \right)
+\int_{X\left( G \right)} {{1_B}\left( x \right){f_X}\left( x \right)dx}  = \int_{Z\left( G \right)} {\left( {\int_\mathbb{R} {{1_B}\left( x \right){f_{X,Z}}\left( {x,z} \right)dx} } \right)dz} ,\forall G \in \sigma \left( Z \right) \Leftrightarrow 
+\int_{X\left( G \right) \cap B} {{f_X}\left( x \right)dx}  = \int_{Z\left( G \right)} {\left( {\int_B {{f_{X,Z}}\left( {x,z} \right)dx} } \right)dz} ,\forall G \in \sigma \left( Z \right) \Leftrightarrow 
+\mathbb{P}\left( {X \in \left( {X\left( G \right) \cap B} \right)} \right) = \mathbb{P}\left( {X \in X\left( G \right),X \in B} \right) = \mathbb{P}\left( {Z \in Z\left( G \right),X \in B} \right),\forall G \in \sigma \left( Z \right)
+G \in \sigma \left( Z \right)
+{Z^{ - 1}}\left( {Z\left( G \right)} \right) = G
+{X^{ - 1}}\left( {X\left( G \right)} \right) \supseteq G
+\mathbb{P}\left( {{X^{ - 1}}\left( {X\left( G \right)} \right),X \in B} \right) = \mathbb{P}\left( {G,X \in B} \right),\forall G \in \sigma \left( Z \right)
+B = \mathbb{R}
+\mathbb{P}\left( {{X^{ - 1}}\left( {X\left( G \right)} \right)} \right) = \mathbb{P}\left( G \right),\forall G \in \sigma \left( Z \right)

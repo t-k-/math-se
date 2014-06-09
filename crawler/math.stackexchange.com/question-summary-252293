@@ -1,0 +1,38 @@
+M
+g
+\nabla
+u: \mathbb{R}\to T_pM
+T_pM
+\frac{d}{dt} \left(g_p(u(t),u(t))\right)=2g_p\left(\frac{d}{dt} u(t),u(t)\right)\text{ (1).}
+\frac{d}{dt} u(t)
+T(T_pM)
+T_pM
+p\in M
+(X,Y)\mapsto g_p(X,Y)
+T_pM\times T_pM
+\mathbb R
+g_p
+T_pM
+u:\mathbb R \rightarrow T_pM
+T_pM \cong \mathbb R^n
+h:t\mapsto g_p(u(t),u(t))
+h'(t)=g_p(u'(t),u(t))+g_p(u(t),u'(t))=2g_p(u'(t),u(t)).
+\gamma:\mathbb R \rightarrow M
+X:\mathbb R \rightarrow TM
+\pi\circ X=\gamma
+\pi:TM\rightarrow M
+(x_1,\cdots,x_n)
+M
+X=\sum_{i=1}^nX_i\dfrac{\partial}{\partial x_i}
+\dfrac{DX}{dt}=\sum_{i=1}^n\dfrac{dX_i}{dt}\dfrac{\partial}{\partial x_i}+\sum_{i=1}^nX_i\nabla_{\gamma'}\dfrac{\partial}{\partial x_i}
+u
+X:\mathbb R\rightarrow TM, t\mapsto (p,u(t))
+\forall t\in \mathbb R, X(t)\in T_pM
+u(t)
+\forall t\in\mathbb R, \pi\circ X(t)=p
+X
+\gamma:\mathbb R \rightarrow M, t\mapsto p
+\gamma'(t)=0
+\dfrac{DX}{dt}
+\dfrac{DX}{dt}=\sum_{i=1}^n\dfrac{dX_i}{dt}\dfrac{\partial}{\partial x_i}=\sum_{i=1}^n \dot{u}_i(t)\dfrac{\partial }{\partial x_i}=\dfrac{dX}{dt}
+\dfrac{d}{dt}g_p(u(t),u(t))=\dfrac{d}{dt}g_{\gamma(t)}(X,X)=2g_{\gamma(t)}(\dfrac{DX}{dt},X)=2g_p(\dfrac{dX}{dt},X)=2g_p(u'(t),u(t)).

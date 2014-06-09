@@ -1,0 +1,13 @@
+f(x) = \frac{2}{x-1}
+\frac{f(x+h)-f(x)}{h}
+0
+\require{cancel}
+f(x) = \frac 2{x - 1}
+\frac{f(x + h) - f(x)}{h} = \frac{\dfrac{2}{(x + h) - 1} - \dfrac {2}{x - 1}}{h}
+(x + h - 1)(x - 1)
+\begin {align}\frac{\dfrac{2}{(x + h) - 1} - \dfrac {2}{x - 1}}{h} \cdot \frac{ \dfrac{(x + h - 1)(x - 1)}{1}}{(x + h - 1)(x - 1)} & = \frac{2(x - 1) - 2(x + h - 1)}{h(x+h - 1)(x - 1)}\\ \\ & = \dfrac{-2\cancel{h}}{\cancel{h}(x+h + 1)(x-1)}\end{align}
+f(x+h)-f(x)=\frac2{x+h-1}-\frac2{x-1}=\frac{2(x-1)-2(x+h-1)}{(x+h-1)(x-1)}
+\implies f(x+h)-f(x)=-\frac{2h}{(x+h-1)(x-1)}
+h\ne0,
+\frac{f(x+h)-f(x)}h=-\frac2{(x+h-1)(x-1)}
+\lim_{h\to0}\frac{f(x+h)-f(x)}h=f'(x)\text{ and }h\to0\implies h\ne0

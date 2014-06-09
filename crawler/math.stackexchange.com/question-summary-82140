@@ -1,0 +1,19 @@
+f_n
+f_0 - f_1 + f_2 - \cdots - f_{2n-1} + f_{2n} = f_{2n-1} - 1
+n
+f_n
+F=\begin{bmatrix}1&1\\1&0\end{bmatrix}
+F^n=\begin{bmatrix}f_{n+1}&f_{n}\\f_{n}&f_{n-1}\end{bmatrix}
+n\in\mathbb Z
+(-F)^0+(-F)^1+(-F)^2+\cdots+(-F)^{2n}
+(-F-I_2)^{-1}((-F)^{2n+1}-(-F)^0)
+(-F-I_2)^{-1}=\begin{bmatrix}-1&1\\1&-2\end{bmatrix}
+f_0-f_1+f_2-\cdots+f_{2n}
+(-1)\cdot(-f_{2n+1})+1\cdot(-f_{2n}-1)=f_{2n-1}-1,
+n
+\sum_{j=0}^n F_j = F_{n+2} - 1
+F_0-F_1+F_2-F_3+\dots-F_{2n-1}+F_{2n}=
+F_0+(F_2-F_1)+(F_4-F_3)+\dots+(F_{2n}-F_{2n-1})=
+0+F_0+F_2+\dots+F_{2n-2}=
+0+(F_0+F_1)+\dots+(F_{2n-4}+F_{2n-3})=
+\sum_{k=0}^{2n-3} F_n = F_{2n-1}-1.

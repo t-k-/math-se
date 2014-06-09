@@ -1,0 +1,10 @@
+\int_a^bf(x) \approx \frac{h}{2}\sum\limits_{j=0}^n[f(x_{j,0}) + f(x_{j,1})]
+f(x_{j,0})
+h_j
+\int_a^b f(x)dx=\int_{a_{0,0}}^{b_{0,1}} f(x)dx+\int_{a_{1,0}}^{b_{1,1}} f(x)dx+...+\int_{a_{n,0}}^{b_{n,1}} f(x)dx
+\int_{a_{j,0}}^{b_{j,1}} f(x)dx=\frac{h_j}{2}\bigg(f(x_{j,0})+f(x_{j,1})\bigg)
+h_j=b_{j,1}-a_{j,0}
+x_{j,0}=\bigg(\frac{b_{j,1}-a_{j,0}}{2} \bigg)\frac{-1}{\sqrt{3}}+\frac{b_{j,1}+a_{j,0}}{2}
+x_{j,1}=\bigg(\frac{b_{j,1}-a_{j,0}}{2} \bigg)\frac{1}{\sqrt{3}}+\frac{b_{j,1}+a_{j,0}}{2}
+b_{0,1}-a_{0,0}=b_{1,1}-a_{1,0}=...=b_{n,1}-a_{n,0}\Rightarrow h_0=h_1=...=h_n=h
+\int_a^b f(x)dx=\frac{h}{2} \sum_{j=0}^n\bigg(f(x_{j,0})+f(x_{j,1})\bigg)

@@ -1,0 +1,23 @@
+\displaystyle \int_{0}^{\infty}\frac{\sin^{2}x}{x}\ dx
+f:\Bbb{R}\to\Bbb{R}
+2\pi
+\sin^2 x\ge f(x)
+ f(x)=\begin{cases} 1/2 & \text{if }\quad \pi/4\le x\le 3\pi/4\\ 0 & \text{if }\quad 0 \le x<\pi/4\quad \text{or}\quad  3\pi/4<x\le 2\pi \end{cases} 
+\int_0^\infty \frac{\sin^2x}{x}dx\ge\int_0^\infty \frac{f(x)}{x}dx=\sum_{n=0}^\infty\int_{(1/4+n)\pi}^{(3/4+n)\pi} \frac{dx}{2x}
+\sum_{n=0}^\infty\int_{(1/4+n)\pi}^{(3/4+n)\pi} \frac{dx}{2x}=\frac{1}{2}\sum_{n=0}^\infty\ln\frac{3+4n}{1+4n}=\frac{1}{2}\sum_{n=0}^\infty\ln\left( 1+\frac{2}{4n+1}\right).
+\sin^2(\frac\pi2+k\pi)=1
+\delta>0
+\sin^2x >\frac12
+|x-(\frac\pi2 + k\pi)| < \delta
+\int_{0}^{\infty}\frac{\sin^{2}x}{x}\ dx
+\int_{0}^{\infty}\frac{\sin^{2}x}{x}\ dx = \sum_{n=0}^\infty\int_{n\pi}^{(n+1)\pi}\frac{\sin^{2}x}{x}dx \geq \sum_{n=0}^\infty\int_{n\pi+\frac\pi2-\delta}^{n\pi+\frac\pi2+\delta}\frac{\sin^{2}x}{x}dx
+\int_{n\pi+\frac\pi2-\delta}^{n\pi+\frac\pi2+\delta}\frac{\sin^{2}x}{x}dx \geq \int_{n\pi+\frac\pi2-\delta}^{n\pi+\frac\pi2+\delta}\frac{1}{2x}dx \geq \frac{\delta}{2n\pi + \pi + 2\delta}
+\sum_{n=0}^\infty\frac{\delta}{2n\pi + \pi + 2\delta}
+(\sin^2 x)/x
+(0, \frac{\pi}{2})
+\cos^2(x + \frac{\pi}{2}) = \sin^2 x
+x
+x = u + \frac{\pi}{2}
+ \int_{\frac{\pi}{2}}^\infty \frac{\sin^2 x}{x}\, dx   \leq \int_0^\infty \frac{\sin^2 x}{x}\, dx. 
+ \int_{\frac{\pi}{2}}^\infty \frac{\cos^2 x}{x}\, dx   = \int_0^\infty \frac{\sin^2 x}{x + \frac{\pi}{2}}\, dx   \leq \int_0^\infty \frac{\sin^2 x}{x}\, dx. 
+ \int_{\frac{\pi}{2}}^\infty \frac{dx}{x}   = \int_{\frac{\pi}{2}}^\infty \frac{\cos^2 x}{x}\, dx   + \int_{\frac{\pi}{2}}^\infty \frac{\sin^2 x}{x}\, dx   \leq 2\int_0^\infty \frac{\sin^2 x}{x}\, dx, 

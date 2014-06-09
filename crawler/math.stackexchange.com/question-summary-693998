@@ -1,0 +1,24 @@
+[a,b]
+n
+ t\mapsto (x-a)^2(b-x)^2. 
+ f(t)=\sum_{n=1}^\infty n^8(x-n)^2(n+\frac1{n^2}-x)^2\,1_{[n,n+\frac1{n^2}]}. 
+ \int_{\mathbb R} |f|=\sum_{n=1}^\infty\int_n^{n+1/n^2}n^8(x-n)^2(n+\frac1{n^2}-x)^2 =\sum_{n=1}^\infty\,n^8\,\frac1{30n^{10}}=\sum_{n=1}^\infty\frac1{30n^2}<\infty. 
+ \int_{\mathbb R}|f'|=\sum_{n=1}^\infty\int_n^{n+1/n^2}|2n^8(x-n)(n+1/n^2-x)(2n+1/n^2-2x)|\,dx\\ =\sum_{n=1}^\infty\int_n^{n+1/2n^2}2n^8(x-n)(n+1/n^2-x)(2n+1/n^2-2x)\,dx\\-\int_{n+1/2n^2}^{n+1/n^2}2n^8(x-n)(n+1/n^2-x)(2n+1/n^2-2x)\,dx\\ =\sum_{n=1}^\infty n^8\,\frac1{8n^8}=\infty 
+e^{-x^2}
+f'(x)
+|f'(x)| \geq C \left|\frac{\cos(1/x^2)}{x}\right|
+C
+D/n
+D>0
+ \int_{-1}^1 \left|\frac{\cos(1/x^2)}{x}\right| \,dx 
+ \int^{1/\sqrt{\pi n}}_{1/\sqrt{\pi(n+1)}} \left|\frac{\cos(1/x^2)}{x}\right| \,dx \\ \geq \int^{1/\sqrt{\pi(n+1/4)}}_{1/\sqrt{\pi(n+3/4)}} \left|\frac{\cos(1/x^2)}{x}\right| \,dx \\ \geq \left(\frac 1{\sqrt{(n + 1/4)\pi}} - \frac 1{\sqrt{(n + 3/4)\pi}}\right)\cdot \sqrt{n \pi} \cdot \frac{\sqrt{2}}{2} 
+ \int_{-1}^1 |f'(x)|\,dx \geq \sum_{n=-N}^N D/n 
+f(x)\in L^1
+\forall_{\varepsilon > 0} \lim_{X\to \infty } \, \int_X^{X+\varepsilon} f'(x) \, dx=0
+f'(x)=\frac{e^x \left(x^2+1\right) \cos \left(e^x\right)-2 x \sin \left(e^x\right)}{\left(x^2+1\right)^2}
+|f'(x)|=\frac{e^x \left(x^2+1\right) \left|\cos \left(e^x\right)-\frac{2 x}{x^2+1} \frac{\sin \left(e^x\right)}{e^x}\right|}{\left(x^2+1\right)^2}\geqslant \frac{1}{2}\frac{e^x \left|\cos \left(e^x\right)-\frac{2 x}{x^2+1} \frac{\sin \left(e^x\right)}{e^x}\right|}{\left(x^2+1\right)}\geqslant \frac{1}{4}\frac{e^x \left(\cos \left(e^x\right)-\frac{2 x}{x^2+1} \frac{\sin \left(e^x\right)}{e^x}\right)^2}{\left(x^2+1\right)}
+\int_{-\infty}^{+\infty}|f'(x)| \,dx > \frac{1}{4}\int_{0}^{+\infty}\frac{e^x \left(\cos \left(e^x\right)-\frac{2 x}{x^2+1} \frac{\sin \left(e^x\right)}{e^x}\right)^2}{\left(x^2+1\right)} \,dx
+\left|\frac{2 x}{x^2+1} \sin \left(e^x\right)\right|\leqslant 1
+\int_{0}^{+\infty}\frac{e^x \cos \left(e^x\right)^2}{\left(x^2+1\right)} \,dx
+\int_{-\infty}^{+\infty}|f'(x)| \,dx
+\int_0^{+\infty}\frac{e^x \cos \left(e^x\right)^2}{\left(x^2+1\right)} \,dx> \int_0^{+\infty}\cos \left(e^x\right)^2 \,dx=\int_0^{+\infty}\frac{1}{2} \,dx+\frac{1}{2}\int_0^{+\infty}\cos \left(2e^x\right) \,dx

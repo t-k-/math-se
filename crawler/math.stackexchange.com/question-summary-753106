@@ -1,0 +1,16 @@
+ x 
+ f(x)=e^{-x^2}\int_{0}^{x}e^{t^2}dt 
+ f 
+ C^{\infty} 
+ \mathbb{R} 
+ f 
+ y'+2xy=1
+ \lim\limits_{x \to +\infty}2xf(x)=1 
+(3)
+(1)
+(4)
+ \begin{align} xe^{-x^2}\int_0^xe^{t^2}\,\mathrm{d}t &\ge e^{-x^2}\int_0^xte^{t^2}\,\mathrm{d}t\\ &=\frac12\tag{1} \end{align} 
+ \begin{align} xe^{-x^2}\int_0^{x-1}e^{t^2}\,\mathrm{d}t &\le xe^{-x^2}\int_0^{x-1}e^{(x-1)t}\,\mathrm{d}t\\ &\le\frac{ex}{x-1}e^{-2x}\tag{2} \end{align} 
+ \begin{align} xe^{-x^2}\int_0^xe^{t^2}\,\mathrm{d}t &=xe^{-x^2}\int_{x-1}^xe^{t^2}\,\mathrm{d}t +xe^{-x^2}\int_0^{x-1}e^{t^2}\,\mathrm{d}t\\ &\le xe^{-x^2}\int_{x-1}^x\frac{t}{x-1}e^{t^2}\,\mathrm{d}t +\frac{ex}{x-1}e^{-2x}\\ &=\frac12\frac{x}{x-1}\left(1-e^{-2x+1}\right) +\frac{ex}{x-1}e^{-2x}\tag{3} \end{align} 
+ \lim_{x\to\infty}xe^{-x^2}\int_0^xe^{t^2}\,\mathrm{d}t\le\frac12\tag{4} 
+ \lim_{x\to\infty}xe^{-x^2}\int_0^xe^{t^2}\,\mathrm{d}t=\frac12\tag{6} 

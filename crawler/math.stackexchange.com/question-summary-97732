@@ -1,0 +1,23 @@
+b,
+ a_n 
+a_n= \frac{1}{n}\left(e\cdot\sqrt e \cdots\sqrt[3]e\cdot\sqrt[n]e\right)
+b_n=\left(\sum_{k=1}^n\frac{1}{k}\right)-\log n
+\eqalign{   & {a_n} = \frac{1}{n}\prod\limits_{k = 1}^n {{e^{\frac{1}{k}}}}   \cr    & \log {a_n} =  - \log n + \sum\limits_{k = 1}^n {\frac{1}{k}}   \cr    & \log {a_n} = \sum\limits_{k = 1}^n {\frac{1}{k}}  - \log n  \cr    & \mathop {\lim }\limits_{n \to \infty } \log {a_n} = \gamma  \cr} 
+0 < \gamma < 1
+\log n
+\log (n+1)
+\eqalign{   & {b_n} = \sum\limits_{k = 1}^n {\frac{1}{k}}  - \sum\limits_{k = 1}^n {\log \frac{{k + 1}}{k}}   \cr    & {b_n} = \sum\limits_{k = 1}^n {\left( {\frac{1}{k} - \log \frac{{k + 1}}{k}} \right)}   \cr} 
+1 - \frac{1}{x} \leqslant \log x \leqslant x - 1
+\frac{1}{{k + 1}} \leq \log \left( {1 + \frac{1}{k}} \right) \leq \frac{1}{k}
+\eqalign{   & \frac{1}{k} - \frac{1}{{k + 1}} \geqslant \frac{1}{k} - \log \left( {\frac{{k + 1}}{k}} \right) \geqslant 0  \cr    & \sum\limits_{k = 1}^n {\frac{1}{k} - \frac{1}{{k + 1}}}  \geqslant \sum\limits_{k = 1}^n {\frac{1}{k} - \log \left( {\frac{{k + 1}}{k}} \right)}  \geqslant 0  \cr    & 1 \geqslant \sum\limits_{k = 1}^n {\frac{1}{k} - \log \left( {\frac{{k + 1}}{k}} \right)}  \geqslant 0 \cr} 
+\frac{1}{k} - \log \left( {\frac{{k + 1}}{k}} \right) \geqslant 0
+\log(a_n) = \log\frac{1}{n} + \log(e\cdot\sqrt{e}\cdots\sqrt[n]{e}) = \sum_{k = 1}^n\log \sqrt[k]{e} - \log n = \sum_{k=1}^n\frac{1}{k} - \log n = b_n
+\lim_{n\rightarrow\infty}b_n = b\in\mathbb{R}
+\lim_{n\rightarrow\infty}a_n = \lim_{n\rightarrow\infty}e^{b_n} = e^b
+b_n
+\int_1^{n+1}\frac{1}{x}dx \leq \sum_1^n \frac{1}{k}\leq 1 + \int_1^n\frac{1}{x}dx
+\int_1^{n + 1}\frac{1}{x}dx - \log n \leq b_n \leq 1 + \int_1^n\frac{1}{x}dx - \log n
+\log\frac{n+1}{n} \leq b_n \leq 1
+\{b_n\}
+b_n
+b_n

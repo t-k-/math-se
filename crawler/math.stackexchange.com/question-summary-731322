@@ -1,0 +1,35 @@
+f(x)=x
+0 \leq x \leq e
+f(x)=xf(\ln(x))
+x>e
+\sum_{n\geq1}{\frac{1}{f(n)}}
+n\geq 3
+k\geq 1
+ln^{(k)}
+\ln
+k
+f(n)=n*ln(n)*ln(ln(n))*\cdots * ln^{(k)}(n)
+t=e^u
+ \displaystyle I_k=\int_{\exp^{(k)}(1)}^{+\infty}{\frac{1}{t*ln(t)*\dots * ln^{(k)}(t)}dt}. 
+ \displaystyle I_k=\int_{exp^{(k-1)}(1)}^{+\infty}{\frac{1}{e^u*u*ln(u)*\dots * ln^{(k-1)}(u)}e^udu}=I_{k-1}, 
+\displaystyle I_1=\int_{e}^{+\infty}{\frac{1}{tln(t)}}dt
+I_k
+k
+n
+f
+(x_n)
+x_0=1
+n\geqslant0
+x_{n+1}=\mathrm e^{x_n}
+n\geqslant0
+n\geqslant1
+t=\ln x
+(x_n,x_{n+1})
+(x_{n-1},x_n)
+n\geqslant0
+\sum\limits_{n\geqslant1}\frac1{f(n)}
+ \sum_{n\geqslant1}\frac1{f(n)}\geqslant\sum_{n\geqslant1}\int_n^{n+1}\frac{\mathrm dx}{f(x)}=\int_1^\infty\frac{\mathrm dx}{f(x)}. 
+ I_n=\int_{x_n}^{x_{n+1}}\frac{\mathrm dx}{f(x)}. 
+ I_n=\int_{x_n}^{x_{n+1}}\frac{\mathrm dx}{xf(\ln x)}=\int_{x_{n-1}}^{x_{n}}\frac{\mathrm dt}{f(t)}=I_{n-1}. 
+ I_n=I_0=\int_1^\mathrm e\frac{\mathrm dx}x=1, 
+ \int_1^\infty\frac{\mathrm dx}{f(x)}=\sum_{n\geqslant0}I_n 

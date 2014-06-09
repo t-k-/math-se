@@ -1,0 +1,10 @@
+2+\sum_{m=1}^n 4(-1)^m\cos(m\pi x)
+x\in (-1,1)
+n
+m
+z\neq 1\neq z^{-1}
+ (-1)^m\cos(m\pi x)=\frac{e^{im\pi (x+1)}+e^{-im\pi (x+1)}}{2}=\frac{z^m+z^{-m}}{2} 
+\cos{(m \pi x)} = \Re{[e^{i m \pi x}]}
+\begin{align}\sum_{m=1}^{n} (-1)^m e^{i m \pi x}&= \frac{e^{i \pi (x+1)}-e^{i \pi (n+1) (x+1)}}{1+e^{i \pi x}}\\\end{align}
+\implies \sum_{m=1}^{n} (-1)^m \cos{(\pi m x)}  = -\frac{1}{2} + (-1)^n \frac{\cos{[(n+1/2) \pi x]}}{\cos{(\pi x/2)}}
+2+\sum_{m=1}^n 4(-1)^m\cos(m\pi x) = (-1)^n \frac{4 \cos{[(n+1/2) \pi x]}}{\cos{(\pi x/2)}}

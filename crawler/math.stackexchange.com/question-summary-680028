@@ -1,0 +1,11 @@
+\int_0^1 \frac{1}{x^{1/p}} \left[\frac{1-x^{1/p}}{x^{1/p}} \right]^{m/n-1} \Gamma\;\left(A, \left[\frac{1-x^{1/p}}{x^{1/p}} \right]^{1/n}\right) \,\mathrm{d}x,
+p
+m
+n
+A
+\Gamma(\cdot,\cdot)
+\int_0^1\dfrac{1}{x^\frac{1}{p}}\biggl(\dfrac{1-x^\frac{1}{p}}{x^\frac{1}{p}}\biggr)^{\frac{m}{n}-1}\Gamma\biggl(A,\biggl(\dfrac{1-x^\frac{1}{p}}{x^\frac{1}{p}}\biggr)^\frac{1}{n}\biggr)dx
+=\int_0^1\dfrac{1}{x}\biggl(\dfrac{1-x}{x}\biggr)^{\frac{m}{n}-1}\Gamma\biggl(A,\biggl(\dfrac{1-x}{x}\biggr)^\frac{1}{n}\biggr)d(x^p)
+=\int_0^1px^{p-2}\biggl(\dfrac{1-x}{x}\biggr)^{\frac{m}{n}-1}\Gamma\biggl(A,\biggl(\dfrac{1-x}{x}\biggr)^\frac{1}{n}\biggr)dx
+=\int_\infty^0\dfrac{px^{\frac{m}{n}-1}\Gamma(A,x^\frac{1}{n})}{(x+1)^{p-2}}d\left(\dfrac{1}{x+1}\right)
+=\int_0^\infty\dfrac{px^{\frac{m}{n}-1}\Gamma(A,x^\frac{1}{n})}{(x+1)^p}dx

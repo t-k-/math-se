@@ -1,0 +1,36 @@
+M(p) = 1+\frac{n-p-1}{n}M(n-1) + \frac{2}{n} N(p-1) + \frac{p-1}{n}M(p-1)
+N(p) = 1+\frac{n-p-1}{n}M(n-1) + \frac{p}{n}N(p-1)
+M(1) = 1+\frac{n-2}{n}M(n-1) + \frac{2}{n}N(0)
+N(0) = 1+\frac{n-1}{n}M(n-1)
+M(p)
+1 \leq p \leq n-1
+N(p)
+0 \leq p \leq n-2
+M(n-1)
+M(n-1)=\frac{n(n-2)f(n)+n^2}{2(n-f(n))}
+f(n)=\sum\limits_{i=1}^{n}{\frac{n!}{(n-i)!n^i}} \approx \sqrt{\frac{\pi n}{2}}-\frac{1}{3}+\frac{1}{12}\sqrt{\frac{\pi}{12n}}-\frac{4}{135n}
+M(n-1) \sim \frac{n(n-2)f(n)+n^2}{2n}=\frac{n-2}{2}f(n)+\frac{n}{2} \sim \sqrt{\frac{\pi n^3}{8}}
+S(p)=1+\frac{n-p-1}{n}M(n-1), T(p)=S(p)+\frac{2}{n}N(p-1)
+M(p)=T(p)+\frac{p-1}{n}M(p-1), N(p)=S(p)+\frac{p}{n}N(p-1), M(1)=T(1), N(0)=S(0)
+M(p)=\sum_{i=0}^{p-1}{\frac{p(p-1) \ldots (p-i)}{pn^i}T(p-i)}, N(p)=\sum_{i=0}^{p}{\frac{(p+1)p \ldots (p+1-i)}{(p+1)n^i}S(p-i)}
+f(n)
+(n+i-1)=(2n-2)-(n-1-i)
+i<n-1
+n+i-1=2n-2
+i=n-1
+i<n-2
+(n+1-i)i=2(n-1)^2-(3n-4)(n-1-i)
+i=n-2
+(n+1-i)i=2(n-1)^2
+i=n-1
+M(n-1)=\frac{(n-2)f(n)+n}{n-1}+(\frac{2f(n)}{n(n-1)}+(1-\frac{2}{n-1}))M(n-1)
+M(n-1)=\frac{\frac{(n-2)f(n)+n}{n-1}}{1-(\frac{2f(n)}{n(n-1)}+(1-\frac{2}{n-1}))}=\frac{n(n-2)f(n)+n^2}{2(n-f(n))}
+\sqrt n
+n\to\infty
+\frac\alpha n
+\frac n\alpha
+\sqrt{\frac{\pi n}2}
+\sqrt{\frac{\pi n^3}{2\alpha^2}}
+\alpha=2
+\sqrt{\frac{\pi n^3}8}\approx0.627n^{3/2}
+0.7

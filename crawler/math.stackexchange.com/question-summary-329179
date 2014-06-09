@@ -1,0 +1,12 @@
+x_1 = \log_{10}(a)
+x_2 = \log_{10}(a-b\cdot x_1)
+x_3 = \log_{10}(a-b\cdot x_2)
+x_4 = \log_{10}(a-b\cdot x_3)
+\vdots
+a
+b
+x = \log_{10}(a-b\cdot \log_{10}(a-b\cdot \log_{10}(a-b \cdot \ldots \log_{10}(a-b\cdot \log_{10}(a))\ldots)))
+\lim_{n\rightarrow\infty}   x_n = \log_{10}(a-bx_n)
+a-bx_n>0
+n
+x_n = \log_{10}(a-bx_n)

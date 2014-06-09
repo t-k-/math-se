@@ -1,0 +1,12 @@
+\Sigma
+x+x^2+...
+e^x \sin x=\sum_{n=0}^{\infty} \frac {x^n}{n!} \sum_{n=0}^{\infty} (-1)^n\frac {x^{2n+1}}{(2n+1)!}
+\frac  {e^x}{\sin x}=\frac {\sum_{n=0}^{\infty} \frac {x^n}{n!}}{\sum_{n=0}^{\infty} (-1)^n\frac {x^{2n+1}}{(2n+1)!}}
+\sin(x) = \dfrac{-i}{2} (e^{ix} - e^{-ix})
+e^x \sin(x) = \dfrac{-i}{2} (e^{(1+i) x} - e^{(1-i) x}) = \dfrac{-i}{2} \sum_{n=0}^\infty \dfrac{(1+i)^n - (1-i)^n)}{n!} x^n
+\left(\sum_{n=0}^\infty a_n x^n\right)\left(\sum_{n=0}^\infty b_n x^n\right) = \sum_{n=0}^\infty \sum_{j=0}^n a_j b_{n-j} x^n 
+b_0 \ne 0
+ \dfrac{\displaystyle\sum_{n=0}^\infty a_n x^n}{\displaystyle\sum_{n=0}^\infty b_n x^n} = \sum_{n=0}^\infty c_n x^n
+a_n = \sum_{j=0}^n b_j c_{n-j}
+ c_n = \dfrac{1}{b_0} \left(a_n - \sum_{j=1}^{n} b_j c_{n-j}\right)
+\left(\sum_{n=0}^{\infty}a_n\right)\cdot\left(\sum_{m=0}^{\infty}b_m\right)=\sum_{k=0}^{\infty}c_k,\\ \text{where }~c_k=\sum_{j=0}^{k}a_jb_{k-j}.

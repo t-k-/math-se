@@ -1,0 +1,22 @@
+N
+O_1, O_2,..O_N
+n
+n \le N
+0 \le O_i \le N
+\sum_{i=1}^{n} O_i = N
+^â 
+\chi^2 = \sum_{i=1}^{n} \frac{(O_i - E_i)^2}{E_i}
+E_i=\frac{N}{n}
+i
+\chi^2 = \sum_{i=1}^{n} \frac{(O_i - \frac{N}{n})^2}{\frac{N}{n}}
+= \frac{n}{N}\sum_{i=1}^{n} (O_i - \frac{N}{n})^2
+= \frac{n}{N}\sum_{i=1}^{n} (\frac{1}{n})^2(nO_i - N)^2
+= \frac{1}{nN}\sum_{i=1}^{n} (nO_i - N)^2
+\chi^2_{worst} = \frac{1}{nN}[(nN - N)^2 + (n-1)(-N)^2]
+= \frac{N}{n}[(n - 1)^2 + (n-1)]
+= \frac{N}{n}[n^2 -n]
+= N(n-1)
+\frac{\chi^2}{\chi^2_{worst}}
+^â 
+n
+N

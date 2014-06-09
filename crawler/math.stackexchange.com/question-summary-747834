@@ -1,0 +1,42 @@
+I = 0
+0 < a <1
+\displaystyle{I = 1 - {1 \over a}}
+a \geq 1
+ I \equiv {1 \over 2\pi{\rm i}}\int _{\Gamma_c}{a^{s} \over s\left(s - 1\right)}\,{\rm d}s \quad\mbox{where}\quad \Gamma_c \equiv \left\{c + {\rm i}t \mid c > 0\,, -\infty < t < \infty\right\} 
+\Gamma
+\Gamma_c
+\Gamma_R '
+-R,R \in \mathbb{R}
+|R|>1
+\Gamma _R ' := \{c + i t \mid c>0 , -R \le t \le R\}
+\Gamma_R := \{ R e ^{i\theta} + c \mid \frac{\pi}{2} \le \theta \le \frac{3 \pi}{2} \}
+\Gamma
+\Gamma_R
+\Gamma_R '
+\int _{\Gamma} \frac{a^s}{s (s-1) } ds
+s(\theta) = Re ^{i \theta} +c
+\frac{\pi}{2} \le \theta \le \frac{3 \pi}{2}
+\int _{\Gamma_c} \frac{a^s}{s (s-1) } ds = \lim _{R\rightarrow \infty} \left( \int _{\Gamma} \frac{a^s}{s (s-1) } ds - \int _{\Gamma_R } \frac{a^s}{s (s-1) } ds \right) 
+ \int_ {\Gamma} \frac{a^s}{s (s-1) } ds = 2 \pi i \left( 1 - \frac{1}{a} \right)
+\lim_{R \rightarrow \infty} \left( \int _{\Gamma_R } \frac{a^s}{s (s-1) } ds \right) 
+\lim_{R\rightarrow \infty} \left( \int_{\frac{\pi}{2}} ^{\frac{3 \pi}{2}} \frac{a^{R e^{i \theta} +c} R \theta e^{i \theta} }{(R e^{i \theta} + c + 1) (R e^{i \theta} + c)} d\theta \right)
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{I \equiv     {1 \over 2\pi\ic}\int_{\Gamma_c}{a^{s} \over s\pars{s - 1}}\,\dd s     \quad\mbox{where}\quad     \Gamma_c \equiv     \braces{c + {\rm i}t \mid c > 0\,,\ t \in {\mathbb R}}:\ {\large ?}.\quad     a > 0.}
+\ds{\LARGE 0 < a < 1}
+ I=\left\lbrace% \begin{array}{rcl} \vphantom{\large A}&& \\ \color{#00f}{\left.\begin{array}{lcl} \pars{1 - a}a^{c} & \mbox{if} & c < 0 \\ -a^{c} & \mbox{if} & 0 < c < 1 \\  0 & \mbox{if} & c > 1 \\ \mbox{diverges} && \mbox{otherwise} \end{array}\right\rbrace} & \mbox{if} & 0 < a < 1 \\[5mm] \color{#c00000}{\left.\begin{array}{lcl} 0     & \mbox{if} & c < 0 \\ a^{c} & \mbox{if} & 0 < c < 1 \\ \pars{1 - a}a^{c} & \mbox{if} & c > 1 \\ \mbox{diverges} && \mbox{otherwise} \end{array}\right\rbrace} & \mbox{if} & a \geq 1 \\ \vphantom{\large A}&& \end{array}\right. 
+\theta
+R \to \infty
+\int_{\Gamma_R} ds \frac{a^s}{s(s-1)} = \int_c^0 dx \frac{e^{(\log{a}) (x+i R)}}{(x+i R)(x+i R-1)} + i R \int_{\pi/2}^{3 \pi/2} d\theta \, e^{i \theta} \frac{e^{(\log{a}) R e{i \theta}}}{R e^{i \theta} (R e^{i \theta}-1)}\\ + \int_0^c dx \frac{e^{(\log{a}) (x-i R)}}{(x-i R)(x-i R-1)}
+c a^c/R^2
+R \to \infty
+\frac1{R} \int_{\pi/2}^{3 \pi/2} d\theta \, e^{(\log{a}) R \cos{\theta}}
+\log{a} \gt 0
+a \gt 1
+\cos{\theta} \lt 0
+\theta \in (\pi/2, 3 \pi/2)
+\pi/2
+\sin{\theta} \ge 2 \theta/\pi
+\left | \int_{\Gamma_R} ds \frac{a^s}{s(s-1)} \right | \le \frac{2}{R} \int_0^{\pi/2} d\theta \, e^{-(\log{a}) R \sin{\theta}} \le \frac{2}{R} \int_0^{\pi/2} d\theta \, e^{-2 (\log{a}) R \theta/\pi} \le \frac{\pi}{R^2 \log{a}}
+a \in (0,1)
+\log{a} \lt 0
+\cos{\theta} \gt 0

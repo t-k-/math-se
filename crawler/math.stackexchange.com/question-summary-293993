@@ -1,0 +1,30 @@
+X_{1}=\frac{\partial }{\partial x_{1}} + x_{2}\frac{\partial }{\partial x_{3}} + x_{2}^{2}\frac{\partial }{\partial x_{4}}
+X_{2}=\frac{\partial }{\partial x_{2}}
+\left [ X_{1},\left [ X_{1}, X_{2} \right ] \right ]
+\left [ X_{1},\left [ X_{1}, X_{2} \right ] \right ] = \left [ X_{1}, \left [ X_{1}X_{2}-X_{2} X_{1}\right ] \right ] = X_{1}X_{1}X_{2} - X_{1}X_{2}X_{1} - X_{1}X_{2}X_{1} + X_{2}X_{1}X_{1} = \left [ X_{1}, X_{1}X_{2} \right ]- \left [ X_{1}, X_{2}X_{1} \right ]
+\left [ X_{1},\left [ X_{1}, X_{2} \right ] \right ]
+0
+X_{1}X_{2}
+X_{2}X_{1}
+X_{1}
+X_{2}
+X_1
+X_2
+X_1
+X_2
+\partial/\partial x_i
+\partial/\partial x_j
+X
+Y
+XY:C^\infty(M)\to C^\infty(M)
+Yf\in C^\infty(M)
+f\to X(Yf)
+\frac{\partial}{\partial x_i}\frac{\partial}{\partial x_j}=\frac{\partial}{\partial x_i}\frac{\partial}{\partial x_j}
+X_i
+Y_i\in C^\infty(M)
+f\in C^\infty(M)
+[X,Y] = \sum_{j=1}^n\sum_{i=1}^n\left(X_i\frac{\partial Y_j}{\partial x_i} - Y_i\frac{\partial X_j}{\partial x_i}\right)\frac{\partial}{\partial x_j},
+X=\sum_{i=1}^nX_i\frac{\partial}{\partial x_i}\quad\text{ and }\quad\sum_{i=1}^nY_i\frac{\partial}{\partial x_i}
+\begin{array}{rcl} [X,Y]f & = & X(Yf) - Y(Xf) \\ & = & X\left(\sum_{j=1}^nY_j\frac{\partial f}{\partial x_j}\right) - Y\left(\sum_{j=1}^nX_j\frac{\partial f}{\partial x_j}\right) \\ & = & \sum_{i=1}^nX_i\frac{\partial}{\partial x_i}\left(\sum_{j=1}^nY_j\frac{\partial f}{\partial x_j}\right) - \sum_{i=1}^nY_i\frac{\partial}{\partial x_i}\left(\sum_{j=1}^nX_j\frac{\partial f}{\partial x_j}\right) \\ & = & \sum_{i=1}^nX_i\sum_{j=1}^n\left(\frac{\partial Y_j}{\partial x_i}\frac{\partial f}{\partial x_j} + Y_j\frac{\partial^2 f}{\partial x_i\partial x_j}\right) - \sum_{i=1}^nY_i\sum_{j=1}^n\left(\frac{\partial X_j}{\partial x_i}\frac{\partial f}{\partial x_j} + X_j\frac{\partial^2 f}{\partial x_i\partial x_j}\right) \\ & = & \sum_{i=1}^n\sum_{j=1}^nX_i\frac{\partial Y_j}{\partial x_i}\frac{\partial f}{\partial x_j} - \sum_{i=1}^n\sum_{j=1}^nY_i\frac{\partial X_j}{\partial x_i}\frac{\partial f}{\partial x_j} \\ & = & \sum_{j=1}^n\sum_{i=1}^n\left(X_i\frac{\partial Y_j}{\partial x_i} - Y_i\frac{\partial X_j}{\partial x_i}\right)\frac{\partial f}{\partial x_j} \\ & = & \left(\sum_{j=1}^n\sum_{i=1}^n\left(X_i\frac{\partial Y_j}{\partial x_i} - Y_i\frac{\partial X_j}{\partial x_i}\right)\frac{\partial}{\partial x_j}\right)f. \end{array}
+[X_1,X_2] = 0
+[X_1,[X_1,X_2]]=0

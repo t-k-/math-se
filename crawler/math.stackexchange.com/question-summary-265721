@@ -1,0 +1,49 @@
+\| \cdot \|
+\mathbb{R}^n
+\| \cdot \|_*
+\| z \|_* = \sup\{ z^{t} x : \| x \| < 1 \}
+\mathcal l_{p}
+\mathcal l_{q}
+||\cdot||
+\mathbb{R}^n
+||\cdot||_*
+z \in \mathbb{R}^n
+z^{\top} x = z\cdot x = \sum_{i=1}^n z_ix_i
+z
+x
+ ||z||_* := \sup \{ z^{\top} x : x \in \mathbb{R}^n, ||x|| \leq 1\} 
+1<p,q<\infty
+p,q \in (1,\infty)
+\frac1p + \frac1q = 1
+z=(z_1,\ldots,z_n) \in \mathbb{R}^n
+z \neq 0
+ \sup \left\{ \sum_{i=1}^n z_ix_i : x=(x_1,\ldots,x_n) \in \mathbb{R}^n, ||x||_q \leq 1\right\} = ||z||_p. 
+x=(x_1,\ldots,x_n) \in \mathbb{R}^n
+||x||_q \leq 1
+||z||_p
+||z||_p
+y \in \mathbb{R}^n
+||y||_q \leq 1
+\sum_{i=1}^n z_iy_i = ||z||_p
+ \sum_{i=1}^n z_ix_i  \leq \sum_{i=1}^n |z_ix_i|=  ||zx||_1 \leq ||z||_p ||x||_q \leq ||z||_p 
+x := \mathrm{sign}(z) |z|^{p-1}
+x_i := \mathrm{sign}(z_i)|z_i|^{p-1}
+i=1,\ldots,n
+z_i \mathrm{sign}(z_i) = |z_i|
+\frac1p + \frac1q = 1
+q(p-1) = p
+y := \frac{x}{||x||_q}
+z \neq 0
+||x||_q > 0
+||y||_q = 1
+||x||_q = (||x||_q^q)^{1/q} = (||z||_p^p)^{1/q} = ||z||_p^{p/q}
+\sum_{i=1}^n z_ix_i = ||z||_p^p
+\frac1p + \frac1q = 1
+p-p/q = p(1-1/q) = p(1/p) = 1
+y \in \mathbb{R}^n
+||y||_q \leq 1
+\sum_{i=1}^n z_i y_i = ||z||_p
+ \sum_{i=1}^n z_i x_i = \sum_{i=1}^n z_i  \mathrm{sign}(z_i)|z_i|^{p-1} = \sum_{i=1}^n |z_i|^p =  ||z||_p^p 
+ ||x||_q^q = \sum_{i=1}^n |x_i|^q = \sum_{i=1}^n |\mathrm{sign}(z_i)|z_i|^{p-1}|^q  = \sum_{i=1}^n |z_i|^{q(p-1)}= \sum_{i=1}^n |z_i|^p =||z||_p^p 
+ \sum_{i=1}^n z_i y_i = \sum_{i=1}^n z_i  \frac{x_i}{||x||_q} = \frac{1}{||x||_q}\sum_{i=1}^n z_i x_i 
+  \frac{1}{||x||_q}\sum_{i=1}^n z_i x_i = \frac{1}{ ||z||_p^{p/q}}||z||_p^p = ||z||_p^{p-p/q} = ||z||_p 

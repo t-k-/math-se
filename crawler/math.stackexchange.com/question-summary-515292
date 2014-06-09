@@ -1,0 +1,15 @@
+\sum_{i=1}^{n}i\left(\begin{array}{c}n\\i \end{array}\right)=n2^{n-1}
+\sum_{i=1}^{k}i\left(\begin{array}{c} k\\ i \end{array}\right)=k2^{k-1}
+k>1
+\sum_{i=1}^{k+1}i\left(\begin{array}{c} k+1\\ i \end{array}\right)=\sum_{i=1}^{k+1}i\left[\left(\begin{array}{c} k\\ i-1 \end{array}\right)+\left(\begin{array}{c} k\\ i \end{array}\right)\right]
+i=j+1
+\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i-1 \end{array}\right)+\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i \end{array}\right)=\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i-1 \end{array}\right)+\sum_{i=1}^{k}i\left(\begin{array}{c} k\\ i \end{array}\right)+(k+1)\left(\begin{array}{c} k\\ k+1 \end{array}\right)
+\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i-1 \end{array}\right)+\sum_{i=1}^{k}i\left(\begin{array}{c} k\\ i \end{array}\right)+(k+1)\left(\begin{array}{c} k\\ k+1 \end{array}\right)=\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i-1 \end{array}\right)+k2^{k-1}
+\sum_{i=1}^{k+1}i\left(\begin{array}{c} k\\ i-1 \end{array}\right)+k2^{k-1}=\sum_{j=0}^{k-1}(j+1)\left(\begin{array}{c} k\\ j \end{array}\right)+k2^{k-1}
+\sum_{j=0}^{k-1}j\left(\begin{array}{c} k\\ j \end{array}\right)+\sum_{j=0}^{k-1}\left(\begin{array}{c} k\\ j \end{array}\right)+k2^{k-1}=\sum_{j=1}^{k-1}j\left(\begin{array}{c} k\\ j \end{array}\right)+k\sum_{j=0}^{k-1}\left(\begin{array}{c} k-1\\ j \end{array}\right)+k2^{k-1}
+\left(\sum_{j=1}^{k}j\left(\begin{array}{c} k\\ j \end{array}\right)-k\left(\begin{array}{c} k\\ k \end{array}\right)\right)+k\sum_{j=0}^{k-1}\left(\begin{array}{c} k-1\\ j \end{array}\right)+k2^{k-1}=2^{k-1}-k+k2^{k-1}+k^{k-1}
+(k+1)2^{k}
+4
+\begin{align*} \sum_{i=1}^{k+1}i\binom{k+1}i&=\sum_{i=1}^{k+1}i\left(\binom{k}{i-1}+\binom{k}i\right)\\ &=\sum_{i=1}^{k+1}i\binom{k}{i-1}+\sum_{i=1}^{k+1}i\binom{k}i\\ &=\sum_{i=1}^{k+1}i\binom{k}{i-1}+\sum_{i=1}^ki\binom{k}i\\ &=\sum_{i=0}^k(i+1)\binom{k}i+k2^{k-1}\\ &=\sum_{i=0}^ki\binom{k}i+\sum_{i=0}^k\binom{k}i+k2^{k-1}\\ &=\sum_{i=1}^ki\binom{k}i+2^k+k2^{k-1}\\\\ &=k2^{k-1}+2^k+k2^{k-1}\\\\ &=2k2^{k-1}+2^k\\\\ &=k2^k+2^k\\\\ &=(k+1)2^k \end{align*}
+\sum_{i=1}^{k+1}i\binom{k+1}{i}=(k+1)+\sum_{i=1}^{k}i\left(\binom{k}{i-1}+\binom{k}{i}\right)=(k+1)+\sum_{i=1}^{k}i\binom{k}{i-1}+k2^{k-1}
+\sum_{i=1}^{k}i\binom{k}{i-1}=\sum_{i=1}^{k}(i-1+1)\binom{k}{i-1}=\sum_{i=0}^{k-1}i\binom{k}{i}+\sum_{i=0}^{k-1}\binom{k}{i}=(k2^{k-1}-k)+(2^k-1)

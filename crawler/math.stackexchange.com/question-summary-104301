@@ -1,0 +1,22 @@
+\mathrm{maxmag}(A)=\max_{x\neq 0}\frac{\|Ax\|}{\|x\|}
+\mathrm{minmag}(A)=\min_{x\neq 0}\frac{\|Ax\|}{\|x\|}
+\kappa(A)=\frac{\mathrm{maxmag}(A)}{\mathrm{minmag}(A)}
+y=Ax
+x = A^{-1} y
+\rightarrow \mathrm{maxmag}(A)  = \|Ax\|/\|x\| = \|y\|/\|x\|
+\|y\|/\|x\|
+\|x\|/\|y\|
+\rightarrow \|x\|/\|y\| = \|A^{-1}y\|/\|y\| = \mathrm{minmag}(A^{-1})  
+\mathrm{minmag}(A) \ \mathrm{minmag}(A^{-1}) = \frac{\|y\|/\|x\|}{\|x\|/\|y\|} =1  
+A^{-1}
+x\in\mathbb R^n
+Ax\neq 0
+x
+\operatorname{maxmag}(A)\cdot\operatorname{minmag}(A^{-1})\leq 1
+A^{-1}x\neq 0
+\operatorname{minmag}(A^{-1})\operatorname{maxmag}(A)\geq 1
+\operatorname{minmag}(A^{-1})\operatorname{maxmag}(A)=1
+\mathbb R^n
+\operatorname{minmag}(A^{-1})\neq 0
+\frac{||Ax||}{||x||}\operatorname{minmag}(A^{-1})\leq \frac{||Ax||}{||x||}\lVert A^{-1}\frac{Ax}{||Ax||}\rVert=1
+\operatorname{maxmag}(A)\frac{||A^{-1}x||}{||x||}\geq ||A\frac{A^{-1}x}{||A^{-1}x||}||\frac{||A^{-1}x||}{||x||}=1

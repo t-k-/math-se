@@ -1,0 +1,27 @@
+\displaystyle \int_1^{\infty} \frac{1}{x} -\sin^{-1} \frac{1}{x}\ \mathrm{d}x 
+x^{-1}=t
+\displaystyle \int_{0}^{1} \frac{t-\sin^{-1}t}{t^2}\ \mathrm{d}t
+|t|\leq 1 
+\displaystyle \sin^{-1}t =\sum_{k=0}^{\infty}\frac{(2k)!z^{2k+1}}{4^k (k!)^2(2k+1)}.
+\displaystyle \int_{0}^{1} \frac{t-\sin^{-1}t}{t^2}\ \mathrm{d}t=-\sum_{k=1}^{\infty} \frac{(2k-1)!}{4^k (k!)^2(2k+1)}
+\sin^{-1} t
+ \begin{align} &\int_1^\infty\left(\frac1x-\sin^{-1}\left(\frac1x\right)\right)\,\mathrm{d}x\\ &=-\int_0^{\pi/2}\left(\sin(t)-t\right)\,\mathrm{d}\csc(t)\\ &=\frac\pi2-1+\int_0^{\pi/2}\csc(t)(\cos(t)-1)\,\mathrm{d}t\\ &=\frac\pi2-1-\int_0^{\pi/2}\csc(t)(1-\cos(t))\frac{\sin^2(t)}{1-\cos^2(t)}\,\mathrm{d}t\\ &=\frac\pi2-1+\int_0^{\pi/2}\frac{\mathrm{d}\cos(t)}{1+\cos(t)}\\ &=\frac\pi2-1-\log(2) \end{align} 
+ \int_1^\infty\frac{dx}{x} - \int_1^\infty\ \arcsin\frac{1}{x}dx. 
+f(u) = \arcsin(u), d(g(u)) = \frac {1} {u^2}
+\int fdg = f(u)g(u)du-\int g(u) d(f(u))
+\int_0^1\frac{1}{u\sqrt{1-u^2}}du-\frac {\arcsin u} {u} + \int_1^\infty \frac{1} {x}dx.
+s=\sqrt{1-u^2}
+ds = -\frac {u} {\sqrt{1-u^2}}du
+\int \frac {ds}{s^2-1}
+\frac{\pi}{2} -1 - \ln2
+x=1/\sin t
+\mathrm dx=-\cos t\mathrm dt/(\sin t)^2
+u(t)=t-\sin t
+v(t)=1/\sin t
+ I=-\int_0^{\pi/2}(t-\sin t)\cos t\frac{\mathrm dt}{(\sin t)^2}=\int_0^{\pi/2}u(t)v'(t)\mathrm dt, 
+u({\pi/2})v({\pi/2})={\pi/2}-1
+u(0)v(0)=0
+\frac{1-\cos t}{\sin t}=\tan(t/2)
+ \int_0^{\pi/2}u'(t)v(t)\mathrm dt=\int_0^{\pi/2}(1-\cos t)\frac{\mathrm dt}{\sin t}. 
+ \int_0^{\pi/2}(1-\cos t)\frac{\mathrm dt}{\sin t}=\left[-2\log\cos(t/2)\right)_0^{\pi/2}=-2\log\cos(\pi/4)=\log2. 
+ I=\frac\pi2-1-\log2\approx-0.12235. 

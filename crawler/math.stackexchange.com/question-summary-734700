@@ -1,0 +1,41 @@
+1
+x
+(0,1)
+P(S_1\leqslant x)=x
+S'_n=S_{n+1}-S_1
+(S'_n)_{n\geqslant1}
+S_1
+(S_n)_{n\geqslant1}
+z
+S_1
+g(1)
+\mathrm e
+1
+ g(x)=\sum_{n\geqslant1}P(S_n\leqslant x). 
+ g(x)=x+\sum_{n\geqslant1}\int_0^xP(S_n\leqslant x-z)\mathrm dz=x+\int_0^xg(z)\mathrm dz. 
+ g(x)=\mathrm e^x-1. 
+f
+1
+x
+(0,1)
+ f(x)=\sum_{n\geqslant1}P(S_n\lt1\leqslant S_n+x)=\sum_{n\geqslant1}P(1-x\leqslant S_n\lt1), 
+ f(x)=g(1)-g(1-x)=\mathrm e-\mathrm e^{1-x}. 
+ \int_0^1xf(x)\mathrm dx=2-\tfrac12\mathrm e\approx0.640859. 
+f(x)
+ \int_0^1 x f(x)\,dx. 
+f(x)
+S_n
+n
+ f(x) = \sum_{n=1}^\infty Pr[1-x<S_n<1] = \sum_{n=1}^\infty f_n(x). 
+(1-x,1)
+ f_n(x) = \int_{1-x}^1 \frac{1}{2(n-1)!} \sum_{k=0}^n (-1)^k \binom{n}{k} (s-k)^{n-1} \mathrm{sgn}(s-k)\,ds = \frac{1}{2(n!)} \left[ 1-(1-x)^n + \sum_{k=1}^n \binom{n}{k} (-1)^{k+n} \left[(k-1+x)^n-(k-1)^n\right]\right].
+\sum_{n=1}^\infty \int_0^1 x\,f_n(x)\,dx
+\int_0^1 xf_n(x)\,dx
+n
+x(1-(1-x)^n) / (2*n!)
+ \sum_{n=1}^\infty \int_0^1 x\,f_n(x)\,dx = 1-e/4 + \frac{1}{2}\sum_{n=1}^\infty \frac{(-1)^n}{n!} \sum_{k=1}^n \binom{n}{k} (-1)^k \frac{(n+2)k^{n+1}-k^{n+2}+(k-1)^{n+2}}{(n+1)(n+2)}. 
+ b_n = \sum_{k=1}^n \binom{n}{k} (-1)^k \frac{(n+2)k^{n+1}-k^{n+2}+(k-1)^{n+2}}{(n+1)(n+2)}
+ b_n = \frac{(-1)^n}{2} \frac{n(n+3)}{(n+2)(n+1)}. 
+\frac{n+4}{(n+3)(n+2)} = -\frac{1}{n+3}+\frac{2}{n+2}
+e^x
+ 1-e/4 + \frac{1}{4} \sum_{n=0}^\infty \frac{1}{n!} \cdot \frac{n+4}{(n+3)(n+2)}. 

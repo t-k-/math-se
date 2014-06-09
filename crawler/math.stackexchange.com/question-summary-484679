@@ -1,0 +1,8 @@
+\frac{1}{\sqrt{2\pi}\sigma}\int_a^b x^2 \exp\left(\frac{-x^2}{2\sigma^2}\right)\mathrm dx
+x=t\sigma\sqrt2
+I
+u(t)=-t
+v(t)=\mathrm e^{-t^2}
+ I=\frac{\sigma^2}{\sqrt\pi}J\left(\frac{a}{\sigma\sqrt2},\frac{b}{\sigma\sqrt2}\right),\qquad J(x,y)=\int_x^y2t^2\mathrm e^{-t^2}\mathrm dt. 
+ J(x,y)=\left.-t\mathrm e^{-t^2}\right|_x^y+\int_x^y\mathrm e^{-t^2}\mathrm dt=x\mathrm e^{-x^2}-y\mathrm e^{-y^2}+\frac12\sqrt{\pi}(\mathrm{erf}(y)-\mathrm{erf}(x)). 
+ I=\frac{\sigma}{\sqrt{2\pi}}\left(a\mathrm e^{-a^2/(2\sigma^2)}-b\mathrm e^{-b^2/(2\sigma^2)}\right)+\frac12\sigma^2\left(\mathrm{erf}\left(\frac{b}{\sigma\sqrt2}\right)-\mathrm{erf}\left(\frac{a}{\sigma\sqrt2}\right)\right). 

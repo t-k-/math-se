@@ -1,0 +1,11 @@
+I=\int_0^1 (\sqrt[3]{1-x^7}-\sqrt[7]{1-x^3}) \, dx=0
+\sqrt[3]{1-x^7}=t\Longrightarrow x=\sqrt[7]{1-t^3}
+dx=-\dfrac{3}{7}t^2(1-t^3)^{-\dfrac{6}{7}} \, dt
+I=\frac{3}{7}\int_0^1 \frac{t^3}{\sqrt[7]{(1-t^3)^6}} \, dt-\int_0^1 \sqrt[7]{1-x^3} \, dx
+\int_0^1 \sqrt[7]{1-x^3} dx=\dfrac{3}{7}\int_0^1 \frac{x^3}{\sqrt[7]{(1-x^3)^6}} \, dt
+I=0
+x^7+y^3=1
+\{(x, y): 0 \leq x \leq 1, 0 \leq \sqrt[3]{1-x^7}\}
+\{(x, y): 0 \leq y \leq 1, 0 \leq x \leq \sqrt[7]{1-y^3}\}
+ \int_0^1 \sqrt[3]{1-x^7} \, dx = \int_0^1 \int_0^\sqrt[3]{1-x^7} \, dy\,dx 
+ \int_0^1 \sqrt[7]{1-y^3}) \, dy = \int_0^1 \int_0^\sqrt[7]{1-y^3} \, dx\,dy. 

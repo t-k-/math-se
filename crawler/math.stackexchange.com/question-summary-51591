@@ -1,0 +1,15 @@
+\mu,\sigma
+m_f(x,t) = \mathsf E_x f(X_t)
+f\in C^2(\mathbb R)
+ \mathrm dX_t = \mu(X_t)\mathrm dt+\sigma(X_t)\mathrm dw_t 
+ \begin{cases} \frac{\partial m_f}{\partial t} &= \mu\frac{\partial m_f}{\partial x}+\frac12\sigma^2\frac{\partial^2 m_f}{\partial x^2}, \\ m(x,0)&=f(x). \end{cases} 
+\mu
+\sigma
+Z_t = (X_t,Y_t)
+\mathrm dY_t = \mathrm dt
+ \mathcal A_Zg(x,y) = \frac{\partial g}{\partial y}+\mu\frac{\partial g}{\partial x}+\frac12\sigma^2\frac{\partial^2 g}{\partial x^2}. 
+m_f(\tau|x,t) = \mathsf E_{x,t}f(X_{t+\tau})
+\tau\in \mathbb R_{\geq 0}
+ \frac{\partial m_f}{\partial \tau} = \frac{\partial m_f}{\partial t}+\mu\frac{\partial m_f}{\partial x}+\frac12\sigma^2\frac{\partial^2 m_f}{\partial x^2}\quad(*) 
+(*)
+Z_t = (t,X_t)

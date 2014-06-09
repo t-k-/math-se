@@ -1,0 +1,21 @@
+N
+\{ 1, \dots, N \}
+N
+O(\log N)
+O(\log N)
+O(\log N)
+N
+N
+e(i)
+N
+i=1,2,\dots ,N
+e(N)=0
+i=1
+\log(N)
+e(i)=1+{1\over N-i+1}\sum_{j=i}^{N}e(j),\quad 1\leq i<N.\tag1
+e(i)=1+1+{1\over 2}+\cdots+{1\over N-i}\approx \log(N-i).\tag2
+e(i)
+i
+\begin{eqnarray*} e(N)&=&0\\ e(N-1)&=&1+{1\over 2}(e(N-1)+e(N))\implies e(N-1)=2\\ e(N-2)&=&1+{1\over 3}(e(N-2)+e(N-1)+e(N))\implies e(N-2)=2+{1\over 2}\\ &\dots&\mbox{etc.} \end{eqnarray*} 
+n
+\{0,1,\dots,n,n+1\}

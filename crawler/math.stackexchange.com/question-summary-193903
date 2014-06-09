@@ -1,0 +1,7 @@
+X_1,\ldots,X_n
+N(0,\sigma^2)
+E\left(\displaystyle\frac{\bigl(\sum_{i=1}^nX_i\bigr)^2}{\sum_{i=1}^n X_i^2}\right)
+X_i
+\frac{1}{\lambda} = \int_0^\infty \mathrm{e}^{-\lambda t} \mathrm{d} t
+\begin{eqnarray}    \mathbb{E}\left( \frac{\left(\sum_{i=1}^n X_i\right)^2}{\sum_{i=1}^n X_i^2} \right) &=& \int_0^\infty \mathbb{E}\left( \sum_{i=1}^n \sum_{j=1}^n X_i X_j \mathrm{e}^{-t \sum_{k=1}^n X_k^2} \right) \mathrm{d} t \\ &\stackrel{\text{symmetry}}{=}&  \int_0^\infty \sum_{i=1}^n \mathbb{E}\left( X_i^2 \mathrm{e}^{-t \sum_{k=1}^n X_k^2}\right) \mathrm{d} t \\ &\stackrel{\text{indep.}}{=}& \int_0^\infty \sum_{i=1}^n \mathbb{E}\left(X_i^2 \mathrm{e}^{-t X_i^2} \right) \prod_{k=1,k\not= i}^n \mathbb{E}\left(\mathrm{e}^{-t X_k^2} \right)  \mathrm{d} t \\ &=& \int_0^\infty \left(-\frac{\mathrm{d}}{\mathrm{d}t} \left(\mathbb{E}\left(\mathrm{e}^{-t X^2} \right)\right)^n  \right)\mathrm{d} t \\&=&    \left.-\left(\mathbb{E}\left(\mathrm{e}^{-t X^2} \right)\right)^n\right|_{t \to 0^+}^{t \to \infty} = 1 \end{eqnarray} 
+1

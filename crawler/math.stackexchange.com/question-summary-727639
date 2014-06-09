@@ -1,0 +1,47 @@
+X_0=0
+\{HH, HT, TH, TT \}
+1/4
+X_{n+1}=\begin{cases} X_n+1, & \text{with probability } \frac14 \{HT\} \\ X_n+0=X_n, & \text{with probability } \frac12 \{HH, TT\}\\ X_n-1, & \text{with probability } \frac14 \{TH\} \end{cases}
+T_0
+0
+0
+m
++1
+-1
+0
+2n+k
+0
+2n+k
+0
+\dbinom{2n+k}{n}\dbinom{n+k}{k}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k=\frac{(2n+k)!}{n!n!k!}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k
+E[T_0]=E\left(\sum_{n=0}^\infty 1_{(X_n=0)}\right)=\sum_{n=0}^\infty p_{0,0}(n)=\sum_{2n+k\in \mathbb N} \frac{(2n+k)!}{n!n!k!}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k=\infty
+A>1
+\sim
+n\to \infty
+\begin{align*}\sum_{2n+k\in \mathbb N} \frac{(2n+k)!}{n!n!k!}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k&=\sum_{n\in \mathbb N}\sum_{k\in \mathbb N}\frac{(2n+k)!}{n!n!k!}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k\ge\\&\ge \sum_{n\in \mathbb N}\sum_{k=2n}\frac{(2n+k)!}{n!n!k!}\left(\frac14\right)^n\left(\frac14\right)^n\left(\frac12\right)^k=\\&=\sum_{n\in \mathbb N}\frac{(4n)!}{n!n!(2n)!}\left(\frac{1}{4}\right)^{3n} \sim A\sum_{n=1}^{\infty}\frac{1}{n}=\infty\end{align*}
+\frac{(4n)!}{n!n!(2n)!}\left(\frac{1}{4}\right)^{3n} \sim A\frac{1}{n}
+x\to x+1
+\frac14
+x\to x-1
+\frac14
+x\to x
+\frac12
+x
+\mathbb Z
+t(0)=0
+t(k+1)=\inf\{n\geqslant t(k)\mid X_n\ne X_{t(k)}\}
+k\geqslant0
+t(k)
+Y_k=X_{t(k)}
+(Y_k)
+\mathbb Z
+x\to x+1
+\frac12
+x\to x-1
+\frac12
+x
+(Y_k)
+Y_k=0
+k\geqslant1
+X_{t(k)}=0
+(X_n)

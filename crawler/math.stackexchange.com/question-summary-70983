@@ -1,0 +1,11 @@
+ \begin{cases} V(k)=0 \text{ as } k < 1 \\ V(k+1) -V(k) = \left(\frac{1}{2}\right) \left(V(k) - V(k-1) \right) \text{ as } k \in [1,9] \\ V(k+1) = V(k) \text{ as } k >9  \end{cases} 
+V(10) - V(9) = (\frac{1}{2} (V(9) - V(8))
+1 = \left(\frac{3}{2}\right) V(9) - \frac{1}{2} V(8)
+V(9) = \frac{3}{2} V(8) - \frac{1}{2} V(7)
+V(2) - V(1) = (\frac{1}{2} (V(1) - V(0))
+V(2) = \frac{3}{2} V(1)
+V(3) = \frac{7}{6} V(2)
+k
+V(0) = 0 \text{ for } k \lt 1
+V(k)=\dfrac{2^n-1}{2^{n-1}} V(1) \text{ for } k \in [1,9]
+V(k) = \dfrac{511}{256} V(1) \text{ for } k \gt 9

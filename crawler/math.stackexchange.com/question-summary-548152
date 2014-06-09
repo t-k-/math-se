@@ -1,0 +1,39 @@
+T=\frac{X}{\sqrt(Y/f)}
+f_{T}(t)=\frac{1}{\sqrt{f\pi}}\cdot\frac{\Gamma(\frac{f+1}{2})}{\Gamma(\frac{f}{2})}\cdot(1+\frac{t^{2}}{f})^{-\frac{f+1}{2}}
+(-\infty,\infty)
+Y\sim\chi_{f}^{2}
+f_{Y}(y)=\frac{y^{\frac{f}{2}-1}e^{-\frac{y}{2}}}{2^{\frac{f}{2}}\Gamma(\frac{f}{2})}
+[0,\infty)
+X\sim N(0,\,1)
+f_{X}(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}}
+(-\infty,\infty)
+f_{Y,X}(y,x)=\frac{y^{\frac{f}{2}-1}e^{-\frac{y}{2}}}{2^{\frac{f}{2}}\Gamma(\frac{f}{2})}\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{z^{2}}{2}}
+y\geq0
+x\in\mathbb{R}
+W=\frac{Y}{2}
+W\geq0
+T=\frac{X}{\sqrt{Y/f}}
+T
+T\sim t_{f}
+Y
+X
+W
+T
+Y=2W
+X=T\sqrt{\frac{2W}{f}}
+\frac{\partial y}{\partial w}=2
+\frac{\partial y}{\partial t}=0
+\frac{\partial x}{\partial t}=\sqrt{\frac{2w}{f}}
+J(w,t)=\begin{vmatrix}\frac{\partial y}{\partial w} & \frac{\partial y}{\partial t}\\ \frac{\partial x}{\partial w} & \frac{\partial x}{\partial t} \end{vmatrix}=2\sqrt{\frac{2w}{f}}
+W
+T
+w\geq0
+\begin{align*} f_{W,T}(w,t) & =f_{Y,X}(y(w,t),x(w,t))\mid J(w,t)\mid\\  & =\frac{(2w)^{\frac{f}{2}-1}e^{-w}}{2^{\frac{f}{2}}\Gamma(\frac{f}{2})}\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{t^{2}(2w)}{2f}}\cdot2\sqrt{\frac{2w}{f}}\\  & =\frac{\sqrt{2w}\cdot w^{\frac{f}{2}-1}}{\Gamma(\frac{f}{2})\sqrt{2f\pi}}\cdot\frac{2^{\frac{f}{2}-1}\cdot2}{2^{\frac{f}{2}}}\cdot e^{-w-\frac{t^{2}w}{f}}\\  & =\frac{1}{\Gamma(\frac{f}{2})\sqrt{f\pi}}\cdot w^{\frac{f}{2}-\frac{1}{2}}e^{-(1+\frac{t^{2}}{f})w} \end{align*}
+T
+f_{T}(t)=\int_{0}^{\infty}f_{W,T}(w,t)\,\mathrm{d}w
+w^{\frac{f}{2}-1}e^{-(1+\frac{t^{2}}{f})w}
+\int_{0}^{\infty}t^{n-1}e^{-\lambda n}\mathrm{d}t=\Gamma(n)\lambda^{-n}
+\lambda=1+\frac{t^{2}}{f}
+n=\frac{f}{2}+\frac{1}{2}
+f_{T}(t)=\frac{1}{\sqrt{f\pi}}\cdot\frac{\Gamma(\frac{f+1}{2})}{\Gamma(\frac{f}{2})}\cdot(1+\frac{t^{2}}{f})^{-\frac{f+1}{2}}
+t

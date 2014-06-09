@@ -1,0 +1,30 @@
+{}_2F_1(1,1+a,2+a,z)
+0.99<z<1
+0<a<5
+{}_2F_1(1,1+a,2+a,z)=(1+a) \Phi(z,1,1+a)=(1+a)\sum_{n=0}^\infty \frac{z^n}{1+a+n}
+=(1+a) \int_0^\infty \frac{\exp(-(1+a)t)}{1-z \exp(-t)} dt
+=(1+a) \int_0^1 \frac{t^a}{1-tz} dt
+1-z
+ {}_2F_1(1,1+a,2+a,z) = (1+a) \int_0^1 \frac{t^a}{1-tz}\,dt. 
+tz = s
+ {}_2F_1(1,1+a,2+a,z) = \frac{1+a}{z^{1+a}} \int_0^z \frac{s^a}{1-s}\,dt. \tag{1} 
+s \approx z \approx 1
+ \frac{s^a}{1-s} \approx \frac{1}{1-s}, 
+ \int_0^z \frac{s^a}{1-s}\,dt \approx \int_0^z \frac{1}{1-s}\,ds = -\log(1-z). 
+ \frac{s^a}{1-s} = \frac{s^a - 1 + 1}{1-s} = \frac{1}{1-s} + \frac{s^a-1}{1-s}, 
+ \begin{align} \int_0^z \frac{s^a}{1-s}\,dt &= \int_0^z \frac{1}{1-s}\,dt + \int_0^z \frac{s^a-1}{1-s}\,dt \\ &= -\log(1-z) + \int_0^z \frac{s^a-1}{1-s}\,dt. \tag{2} \end{align} 
+z \to 1^-
+ \lim_{z \to 1^-} \int_0^z \frac{s^a-1}{1-s}\,dt = \int_0^1 \frac{s^a-1}{1-s}\,dt = -H_a, 
+ \begin{align} \int_0^z \frac{s^a}{1-s}\,dt &= -\log(1-z) + \int_0^1 \frac{s^a-1}{1-s}\,dt - \int_z^1 \frac{s^a-1}{1-s}\,dt \\ &= -\log(1-z) - H_a - \int_z^1 \frac{s^a-1}{1-s}\,dt, \tag{3} \end{align} 
+z \to 1^-
+(1)
+z \to 1^-
+ {}_2F_1(1,1+a,2+a,z) \approx -\frac{1+a}{z^{1+a}} \Bigl(\log(1-z) + H_a\Bigr) 
+(3)
+s = 1
+ s^a = \sum_{n=0}^{\infty} \binom{a}{n} (s-1)^n, 
+ \frac{s^a-1}{1-s} = -\sum_{n=1}^\infty \binom{a}{n} (s-1)^{n-1}, 
+ \begin{align} \int_z^1 \frac{s^a-1}{1-s} \,ds &= - \sum_{n=1}^{\infty} \binom{a}{n} \int_z^1 (s-1)^{n-1}\,ds \\ &= \sum_{n=1}^{\infty} \binom{a}{n} \frac{(z-1)^n}{n}. \end{align} 
+(3)
+(1)
+ {}_2F_1(1,1+a,2+a,z) = -\frac{1+a}{z^{1+a}} \left(\log(1-z) + H_a + \sum_{n=1}^{\infty} \binom{a}{n} \frac{(z-1)^n}{n}\right). 

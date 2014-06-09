@@ -1,0 +1,9 @@
+f(x)=\sin|x|
+f(x)
+c_0:=\frac{1}{\pi}\int_0^{2\pi}\sin x\,dx=\left.-\frac{1}{\pi}\,(\cos x)\right|_0^{2\pi}=0
+\forall\,\,n\neq \pm \,1\,\,,\,c_n:=\frac{1}{2\pi}\int_0^{2\pi}\sin x\,e^{-inx}\,dx=\frac{1}{4\pi i}\int_0^{2\pi}\left(e^{ix}-e^{-ix}\right)e^{-inx}\,dx=
+=\frac{1}{4\pi i}\int_0^{2\pi}\left(e^{ix(1-n)}-e^{-ix(1+n)}\right)dx=\frac{1}{4\pi i}\left[\frac{1}{i(1-n)}e^{ix(1-n)}+\frac{1}{i(1+n)}e^{ix(1+n)}\right]_0^{2\pi}=
+\frac{1}{4\pi i}\left[\frac{1}{i(1-n)}\left(e^{2\pi i(1-n)}-1\right)+\frac{1}{i(1+n)}\left(e^{2\pi i(1+n)}-1\right)\right]=0
+c_{-1}=\frac{1}{2\pi}\int_0^{2\pi}\sin x\,e^{ix}\,dx=\frac{1}{4\pi i}\int_0^{2\pi}\left(e^{2ix}-1\right)dx=\frac{1}{4\pi i}\left(-2\pi\right)=\frac{i}{2}
+c_1=\frac{1}{2\pi}\int_0^{2\pi}\sin x\,e^{-ix}\,dx=\frac{1}{4\pi i}\int_0^{2\pi}\left(1-e^{-2ix}\right)dx=\frac{1}{4\pi i}2\pi=-\frac{i}{2}
+\sin x=c_{-1}e^{-ix}+c_1e^{ix}=\frac{i}{2}\left(e^{-ix}-e^{ix}\right)=\frac{e^{ix}-e^{-ix}}{2i}

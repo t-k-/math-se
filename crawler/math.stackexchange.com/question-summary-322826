@@ -1,0 +1,18 @@
+5, 0, -8, -17, -25, -30, \dots
+a_0 = 5 \\   a_n = a_{n - 1} + n^2 - 6
+a_1
+a_1 = 5 + 1^2 - 6  = 0
+a_2
+a_2 = 0 + 2^2 - 6  =  -2
+-2 \not= -8
+n>2
+a_0 = 5
+ a_{n + 1} = a_n + (n + 1)^2 - 6 = a_n + n^2 + 2 n - 5 
+D
+\frac{d}{dz}
+A(z)
+\binom{-k}{n} = (-1)^n \binom{n + k - 1}{k - 1}
+ A(z) = \sum_{n \ge 0} a_n z^n 
+ \frac{A(z) - a_0}{z} = A(z) + ((zD)^2 + 2 z D - 5) \frac{1}{1 - z} 
+ A(z) = 11 \cdot \frac{1}{1 - z}           - 5 \frac{1}{(1 - z)^2}          - 3 \frac{1}{(1 - z)^3}                       + 2 \frac{1}{(1 - z)^4} 
+ \begin{align*} a_n &= 11          - 5 \cdot (-1)^n \binom{-2}{n}          - 3 \cdot (-1)^n \binom{-3}{n}         + 2 \cdot (-1)^n \binom{-4}{n} \\     &= \frac{2 n^3 + 3 n^2 - 35 n + 30}{6} \end{align*} 

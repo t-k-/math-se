@@ -1,0 +1,19 @@
+\sum_{n,m=-N}^N e^{-\alpha (n-m)^2}
+\alpha > 0
+n,m
+-N,..,N
+\tau = n-m
+\eta = \frac{m+n}{2}
+S\simeq\int_{-N}^N\underbrace{\int_{-N}^Ne^{-\alpha(x-y)^2}dx}_\text{The Gaussian Integral}dy\simeq\int_{-N}^N\sqrt\frac\pi\alpha dy=2N\sqrt\frac\pi\alpha
+\begin{align}0<\alpha<2.5&\iff S\simeq2N\sqrt{\frac\pi\alpha} \\\\\\\\\\ 3<\alpha<3.5&\iff S\simeq2N\sqrt{\frac\pi{\alpha-\frac12}} \\\\\\\\\\ \alpha>4&\iff S\simeq2N\end{align}
+(\tau,\eta)=(n-m,n+m)
+K(\tau)=2N-|\tau|
+(+2)
+K(-\tau)=K(\tau)
+\tau=-2N,-2N+1,...,2N\\ \eta=-K(\tau),-K(\tau)+2,...,K(\tau)
+f(N)=\sum_{\tau=-2N}^{2N}e^{-\alpha\tau^2}\sum_{\eta=-K(\tau)}^{K(\tau),+2}1
+\sum_{\tau=-2N}^{2N}e^{-\alpha\tau^2}\sum_{\eta=-K(\tau)}^{K(\tau),+2}1 =  2\sum_{\tau=1}^{2N}e^{-\alpha\tau^2}\sum_{\eta=-K(\tau)}^{K(\tau),+2}1 + e^0\sum_{\eta=-K(0)}^{K(0),+2}1
+\sum_{\eta=-k}^{k,+2}1=k+1,
+f(N)=(2N+1)+2(2N+1)\sum_{\tau=1}^{2N}e^{-\alpha\tau^2}-2\sum_{\tau=1}^{2N}\tau e^{-\alpha\tau^2}.
+S_N(\alpha):=\sum_{\tau=1}^{2N}e^{-\alpha\tau^2},
+f(N)=(2N+1)(1+2S_N(\alpha))+\frac{1}{\alpha}S_N'(\alpha).

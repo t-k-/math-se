@@ -1,0 +1,28 @@
+f(x)
+[0,1]
+\sup  (f[\frac {1}{n},1])-\inf (f [\frac {1}{n},1])<\frac {1}{n}
+n>0
+f(x)
+[0,1]
+\inf(S_n-s_n)=0
+S_n
+s_n
+P_n
+n
+P_n=\{0,1/n,1\}
+M_1=sup_{x\in[1/n,1]} f(x)
+M_0=sup_{x\in[0,1/n]} f(x)
+m_1=inf_{x\in[1/n,1]} f(x)
+m_0=inf_{x\in[0,1/n]} f(x)
+U(P_n,f)=(1/n)M_0+(1-1/n)M_1
+L(P_n,f)=(1/n)m_0+(1-1/n)m_1
+\epsilon > 0
+n>2(M_0-m_0)/\epsilon
+(n-1)/n^2<\epsilon/2 ,
+U(P_n,f)-L(P_n,f)=(M_0-m_0)(1/n)+(M_1-m_1)(1-1/n)<\epsilon
+\varepsilon>0
+n
+\max\left\{1,2\cdot\sup_{[0,1]}f\right\}n^{-1}\leq\varepsilon
+0<n^{-1}<1
+s(x)=\begin{cases}\inf_{0\leq t\leq n^{-1}}f(t)&\mbox{ if }0\leq x\leq n^{-1}\\\ \inf f\left([n^{-1},1]\right)&\mbox{ if }n^{-1}< x\leq 1,\end{cases}
+S(x)=\begin{cases}\sup_{0\leq t\leq n^{-1}}f(t)&\mbox{ if }0\leq x\leq n^{-1}\\\ \sup f\left([n^{-1},1]\right)&\mbox{ if }n^{-1}< x\leq 1,\end{cases}

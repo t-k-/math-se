@@ -1,0 +1,21 @@
+r_{n}=\sqrt{n^2+n+\frac{3}{4}}
+x_{n}=\left \lfloor \frac{r_{n}}{\sqrt{2}}-\frac{1}{2} \right \rfloor
+a_{n}=\sum_{k=1}^{\left \lfloor r_{n}-x_{n} \right \rfloor} \left \lfloor \sqrt{n^2+n-k^2-k+\frac{1}{2}-(x_{n})^2-(2k+1)x_{n}}-\frac{1}{2} \right \rfloor 
+A_{n}=4 ( (x_{n})^2+2a_n+n  )+1
+\lim_{n\to\infty}\frac{A_{n}}{n^2}
+r_n\sim n
+x_n\sim n/\sqrt2
+\lfloor r_n-x_n\rfloor\sim(1-1/\sqrt2)n
+n=2^{20}
+3.1\times10^{-6}
+ \frac{a_n}{n^2}\sim\frac{1}{n}\sum_{k=1}^{\lfloor(1-1/\sqrt2)n\rfloor}\sqrt{\frac{1}{2}-\sqrt2\,\frac{k}{n}-\Bigl(\frac{k}{n}\Bigr)^2} 
+ \int_0^{1-1/\sqrt2}\sqrt{\frac{1}{2}-\sqrt2\,x-x^2}\,dx=\frac{\pi-2}{8}=0.142669\dots 
+ \lim_{n\to\infty}\frac{A_n}{n^2}=4\Bigl(\frac12+\frac{\pi-2}{4}\Bigr)=\pi. 
+r_n = n + o(n)
+x_n = \frac{n}{\sqrt{2}} + o(n)
+\lfloor r_n - x_n\rfloor = \frac{2 - \sqrt{2}}{2}n + o(n)
+a_n = \sum_{k = 1}^{\frac{2 - \sqrt{2}}{2}n + o(n)} \Big(\sqrt{1 - \frac{1}{\sqrt{2}}}\Big) n +  o(n) - k + o(k) - \sqrt{2kn} 
+ a_n = \Big(\frac{2 - \sqrt{2}}{2}\Big)^{3/2} n^2 + o(n^2) -  \Big(\frac{2 - \sqrt{2}}{4} \Big) n^2 + o(n^2) - \sqrt{2n} H_{\frac{2 - \sqrt{2}}{2} n + o(n),-1/2} 
+ -\Big(\frac{2 - \sqrt{2}}{4}\Big) n^2 \leq a_n - o(n^2) \leq \Bigg(\Big(\frac{2 - \sqrt{2}}{2}\Big)^{5/2} - \frac{2 - \sqrt{2}}{4}\Bigg) n^2 
+ - 0.14645 n^2 \leq a_n - o(n^2) \leq -0.1 n^2
+ 0.8284 \leq  \lim_{n \rightarrow \infty} \frac{A_n}{n^2} \leq 1.2

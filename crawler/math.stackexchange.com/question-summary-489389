@@ -1,0 +1,9 @@
+\sum_{k=0}^{n-1}\dfrac{\tanh{\left(x\dfrac{1}{n\sin^2{\left(\dfrac{2k+1}{4n}\pi\right)}}\right)}}{1+\dfrac{\tanh^2{x}}{\tan^2{\left(\dfrac{2k+1}{4n}\pi\right)}}}=\tanh{(2nx)}
+\sum_{k=0}^{n-1}\dfrac{\dfrac{\tanh{x}}{n\sin^2{\left(\dfrac{2k+1}{4n}\pi\right)}}}{1+\dfrac{\tanh^2{x}}{\tan^2{\left(\dfrac{2k+1}{4n}\pi\right)}}}=\tanh{(2nx)}
+\cosh(2nx) = T_{2n}(\cosh x)\quad\text{ and }\quad \cos(2nx) = T_{2n}(\cos x)
+\cosh(2n x)
+A
+x
+2n
+\cosh(2n x ) = A \prod_{k=0}^{n-1}\left(\cosh^2 x - \cos^2(\frac{2k+1}{4n}\pi)\right)
+\begin{align} \tanh(2n x)  = & \frac{1}{2n} \sum_{k=0}^{n-1}\frac{ 2\sinh x\cosh x}{\cosh^2 x - \cos^2(\frac{2k+1}{4n}\pi)}\\ = & \frac{1}{n}\sum_{k=0}^{n-1}\frac{ \sinh x\cosh x}{\sinh^2 x + \sin^2(\frac{2k+1}{4n}\pi)}\\ = & \frac{1}{n}\sum_{k=0}^{n-1}\frac{ \tanh x}{\tanh^2 x + \sin^2(\frac{2k+1}{4n}\pi)(1 - \tanh^2 x)}\\ \\ = & {\Large \sum_{k=0}^{n-1}\frac{\frac{\tanh x}{n \sin^2(\frac{2k+1}{4n}\pi)} }{1 + (\frac{1}{\sin^2(\frac{2k+1}{4n}\pi)} - 1 ) \tanh^2 x} }\\ \\ = & {\Large \sum_{k=0}^{n-1}\frac{\frac{\tanh x}{n \sin^2(\frac{2k+1}{4n}\pi)} }{1 + \frac{\tanh^2 x}{\tan^2(\frac{2k+1}{4n}\pi)}} }\\ \end{align}

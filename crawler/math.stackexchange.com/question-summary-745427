@@ -1,0 +1,14 @@
+ \begin{align} &\text{A}.\ \lim_{x\rightarrow1}(2-x)^{\tan\left(\frac{\pi x}{2}\right)}\\ &\text{B}.\ \lim_{x\rightarrow 0}\left(\cot x-\frac{1}{x}\right)\\ &\text{C}.\ \lim_{x\rightarrow0}\frac{\sin^{-1}x-x}{\tan^{-1}x-x}\\ &\text{D}.\ \lim_{x\rightarrow 1}(2-x)^{\tan\left(\frac{\pi x}{2}\right)}\\ &\text{E}.\ \lim_{x\rightarrow0}\left(a^x+b^x\right)^\frac{1}{x} \end{align} 
+\ln y=\tan\left(\frac{\pi x}{2}\right)\ln(x-2)=\frac{\tan\left(\frac{\pi x}{2}\right)}{\frac{1}{\ln(2-x)}}
+\lim_{x\rightarrow 1}\frac{\tan\left(\frac{\pi x}{2}\right)}{\frac{1}{\ln(2-x)}}=_H\lim_{x\rightarrow1}\frac{\frac{\pi}{2}\sec^2(\frac{\pi x}{2})}{x-2}=\infty
+A\rightarrow \infty
+=_H\lim_{x\rightarrow0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{\frac{1}{1+x^2}-1}=_H\lim_{x\rightarrow0}\frac{\frac{-1}{2}\frac{1}{\sqrt{(1-x^2)^3}}(-2x)}{-\frac{2x}{(1+x^2)^2}}=\frac{1}{-2}=-\frac{1}{2}
+ \begin{align} \lim_{x\to1}(2-x)^{\tan\left(\frac{\pi x}{2}\right)}&=\lim_{x\to1}\exp\left[\ln(2-x)^{\tan\left(\frac{\pi x}{2}\right)}\right]\\ &=\lim_{x\to1}\exp\left[\tan\left(\frac{\pi x}{2}\right)\ln(2-x)\right]\\ &=\lim_{x\to1}\exp\left[\frac{\sin\left(\frac{\pi x}{2}\right)\ln(2-x)}{\cos\left(\frac{\pi x}{2}\right)}\right]\\ &=\exp\left[\lim_{x\to1}\frac{\sin\left(\frac{\pi x}{2}\right)\ln(2-x)}{\cos\left(\frac{\pi x}{2}\right)}\right]\\ &\stackrel{\text{l'Hospital}}=\exp\left[\lim_{x\to1}\frac{\frac{\pi }{2}\cos\left(\frac{\pi x}{2}\right)\ln(2-x)-\frac{1}{2-x}\sin\left(\frac{\pi x}{2}\right)}{-\frac{\pi }{2}\sin\left(\frac{\pi x}{2}\right)}\right]\\ &=\exp\left[\frac{0-\frac{1}{2-1}\cdot1}{-\frac{\pi }{2}\cdot1}\right]\\ &=\color{blue}{\exp\left(\frac{2}{\pi}\right)}. \end{align} 
+\\
+\Large\color{blue}{\text{# }\mathbb{Q.E.D.}\text{ #}}
+\lim_{x\to 0}\cot x-\frac1x=\lim_{x\to 0}\frac{x\cos x-\sin x}{x\sin x}\stackrel{\text{l'Hospital}}=\lim_{x\to 0}\frac{\cos x-x\sin x-\cos x}{\sin x+x\cos x}=
+=-\lim_{x\to 0}\frac{\sin x}{\frac{\sin x}x+\cos x}=-\frac0{1+1}=0
+\sin x \sim x - \frac{x^3}{6}
+\cot(x) \sim \frac{1}{x} - \frac{x}{3}
+\arcsin x \sim x + \frac{x^3}{6}
+(1 + x)^\alpha \sim 1 + \alpha x + \frac{\alpha(\alpha - 1)}{2} x^2

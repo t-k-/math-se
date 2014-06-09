@@ -1,0 +1,31 @@
+X
+n
+p=1/2
+f(n,k)
+k\ge 0
+Pr[X \ge E[X] + k ] \ge f(n,k).
+\mathbb P(X\geqslant \mathbb E(X)+k)
+\frac{n}2-k
+\mathbb P(X\geqslant \mathbb E(X)+k)
+n\to\infty
+k=\Theta(n)
+s\geqslant1
+\mathbb E(s^X)=[\frac12(1+s)]^n
+\mathbb E(X)=\frac12n
+(1+s)^ns^{-(n/2)-k}
+s\geqslant1
+\frac{n}{1+s}-\frac{(n/2)+k}{s}
+s=\frac{(n/2)+k}{(n/2)-k}
+\mathbb P(X\geqslant \mathbb E(X)+k)\leqslant f(n,k)
+n\to\infty
+k/n\to\alpha
+ \mathbb P(X\geqslant \mathbb E(X)+k)\leqslant\mathbb E(s^X)s^{-\mathbb E(X)-k}. 
+ f(n,k)=\left(1-\tfrac{2k}n\right)^{-\frac{n}2+k}\left(1+\tfrac{2k}n\right)^{-\frac{n}2-k}. 
+ \lim\limits_{n\to\infty}n^{-1}\log\mathbb P(X\geqslant \mathbb E(X)+k)=\lim\limits_{n\to\infty}n^{-1}\log f(n,\alpha n). 
+ f(n,\tfrac{n}4)=\left(\tfrac{16}{27}\right)^{\tfrac{n}4}, 
+ \mathbb P(X\geqslant\tfrac{3n}4+o(n))=\left(\tfrac{16}{27}\right)^{\tfrac{n}4+o(n)}. 
+j
+0 \le j \le n
+_2
+_1
+Pr[X \ge j] = 2^{-n} {n \choose j} {\mbox{$_2$F$_1$}(1,-n+j;\,j+1;\,-1)}

@@ -1,0 +1,35 @@
+f: \mathbb R^2\rightarrow\mathbb R
+n
+f
+f
+ f(x,y) = x^{2n} + y^{2n} - nx^2 + 2nxy - ny^2, 
+f_x = 2nx^{2n-1}-2nx+2ny
+f_{xx} = 2n(2n-1)x^{2n-2}-2n
+f_{xy} = 2n
+f_x = f_y = 0
+(x,y) = (0,0)
+f
+(0,0)
+n>0
+y=x
+y=-x
+y=\ \ x\quad \ \to \quad f(t) = 2 x^{2 n}\quad\quad\quad\quad\quad\ \ \ 
+y=-x\quad \ \to \quad f(t) = (-x)^{2 n} - 4 n x^2 + x^{2 n}
+y=-x
+-8n<0
+2n
+y=x
+2(2n!)>0
+f_x =0, f_y=0
+2n-1
+f_x=0
+2 n x^{2 n-1} = -2 n y^{2 n-1} \quad \to \quad y = -x
+x\to \pm2^{-1/(2-2 n)}, \ y=-x
+f(x,y)
+y=x
+y=-x
+n=3
+(0,0)
+f
+ LinearAlgebra:-IsDefinite(eval(simplify(VectorCalculus:-Hessian(f, [x, y]), power), [x = 0, y = 0]), query = 'negative\_definite') assuming n>= 1
+false

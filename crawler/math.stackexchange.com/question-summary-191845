@@ -1,0 +1,30 @@
+\lim_{x\to0} \frac{\cosh x\cosh 2x\cosh 3x \cdots \cosh nx-1}{x^2}
+\displaystyle\lim_{x\rightarrow 0}\frac{\displaystyle\prod_{k=1}^n\cosh kx - 1}{x^2}
+\displaystyle\prod_{k=1}^n\cosh kx - 1 = \displaystyle\prod_{k=1}^n\cosh kx - \displaystyle\prod_{k=1}^{n-1}\cosh kx + \displaystyle\prod_{k=1}^{n-1}\cosh kx -1 = (\displaystyle\prod_{k=1}^{n-1}\cosh kx)(\cosh nx -1) + \displaystyle\prod_{k=1}^{n-1}\cosh kx -1
+u_n = \displaystyle\lim_{x\rightarrow 0}\frac{\displaystyle\prod_{k=1}^n\cosh kx - 1}{x^2}
+u_n = u_{n-1} + \frac{n^2}{2}
+\forall n\in\mathbb{N},u_n\in\mathbb{R}
+u_1 = \frac{1}{2}
+u_n = \frac{1}{2}\displaystyle\sum_{k=1}^n k^2 = \displaystyle\frac{n(n+1)(2n+1)}{12}
+\alpha\to0
+x\to 0
+ \cosh \alpha=1+\frac{\alpha^2}{2}+o(\alpha^2) 
+ \prod\limits_{k=1}^n \cosh kx=  \prod\limits_{k=1}^n \left(1+\frac{k^2 x^2}{2}+o(k^2 x^2)\right)= \prod\limits_{k=1}^n \left(1+\frac{k^2 x^2}{2}+o(x^2)\right)= 1+\sum\limits_{k=1}^n\frac{1}{2}k^2 x^2+o(x^2) 
+ \lim\limits_{x\to 0}\frac{\prod\limits_{k=1}^n\cosh kx - 1}{x^2}= \lim\limits_{x\to 0}\frac{\frac{1}{2}\sum\limits_{k=1}^n k^2 x^2+o(x^2)}{x^2}= \frac{1}{2}\sum\limits_{k=1}^n k^2=\frac{n(n+1)(2n+1)}{12} 
+\cosh x = 1 + \frac{x^2}2 + O(x^4)
+0
+x^2
+ \cosh x \cosh 2x \cdots \cosh nx = \left(1+\frac{x^2}2\right)\left(1+\frac{(2x)^2}2\right)\cdots\left(1+\frac{(nx)^2}2\right)+O(x^4) 
+ \cosh x \cosh 2x \cdots \cosh nx = 1+\frac{x^2}2+\frac{(2x)^2}2+\cdots+\frac{(nx)^2}2+O(x^4) 
+x^2
+n
+n(n+1)(2n+1)/12
+ \lim_{x\to 0} \frac{\cosh x \cosh 2x \cdots \cosh nx - 1}{x^2}  = \lim_{x\to 0} \frac{\frac{n(n+1)(2n+1)}{12}x^2+O(x^4)}{x^2} =\frac{n(n+1)(2n+1)}{12}\,. 
+\displaystyle \frac{\cosh x\cosh 2x\cosh 3x \cdots \cosh nx-1}{x^2}=\frac{(e^x+e^{-x})(e^{2x}+e^{-2x})\cdot \ldots \cdot(e^{nx}+e^{-nx})-2^n}{2^n \cdot x^2}=
+e^x =a
+\large \frac{\left(\frac{e^{2x}+1}{e^x}\right)\cdot \left(\frac{e^{4x}+1}{e^{2x}}\right)\cdot \ldots\cdot \left(\frac{e^{2nx}+1}{e^{nx}}\right)-2^{n}}{2^n \cdot x^2}.
+\large\frac{\frac{(a^2+1)(a^4+1)\ldots(a^{2n}+1)}{a^{\frac{n(n+1)}{2}}}-2^n}{2^n \cdot x^2}=\frac{(a^2+1)(a^4+1)\ldots(a^{2n}+1)-2^n \cdot a^{\frac{n(n+1)}{2}}}{2^{n}\cdot x^{2} \cdot a^{\frac{n(n+1)}{2}}}. 
+=\large \frac{(a^2-1)(a^2+1)(a^4+1)\ldots(a^{2n}+1)-2^n \cdot a^{\frac{n(n+1)}{2}}\cdot(a^2-1)}{2^{n}\cdot x^{2} \cdot a^{\frac{n(n+1)}{2}}\cdot (a^2-1)}
+\large=\frac{(a^{4n}-1)-2^{n}\cdot a^{\frac{n(n+1)}{2}}\cdot(a^2-1)}{2^{n}\cdot x^{2} \cdot a^{\frac{n(n+1)}{2}}\cdot (a^2-1)}
+\large=\frac{e^{4nx}-1-2^{n} \cdot e^{\frac{n(n+1)}{2}\cdot x +2x}+2^{n}\cdot e^{\frac{n(n+1)}{2}\cdot x}}{2^{n} \cdot e^{\frac{n(n+1)}{2}\cdot x +2x} \cdot x^{2} -2^{n}\cdot e^{\frac{n(n+1)}{2}\cdot x} \cdot x^{2}}.
+\large \lim_{x \rightarrow 0}{\frac{e^{4nx}-1-2^{n} \cdot e^{\frac{n(n+1)}{2}\cdot x +2x}+2^{n}\cdot e^{\frac{n(n+1)}{2}\cdot x}}{2^{n} \cdot e^{\frac{n(n+1)}{2}\cdot x +2x} \cdot x^{2} -2^{n}\cdot e^{\frac{n(n+1)}{2}\cdot x} \cdot x^{2}}}=

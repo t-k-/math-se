@@ -1,0 +1,15 @@
+(X,Y)
+p(x,y) = \frac{1}{y}\exp(-y), \qquad 0 < x < y < \infty.
+E(X^r\mid Y)
+r = 1,2,\ldots
+p_y(y) = \exp(-y)
+p_{x\mid y}(x\mid y) = \frac{p(x,y)}{p_y(y)} = \frac{1}{y}
+E(X\mid Y) = \int_0^y x p_{x\mid y}(x\mid y) \, dx = \frac{y^3}{2}
+x^r
+\frac{x^{r+1}}{r+1}
+r\ne-1,
+r
+y
+\Bbb E(X^r\mid Y=y)=\int_0^y\frac{x^r}{y}\,dx=\frac1y\int_0^yx^r\,dx.
+\int_0^yx^r\,dx=\left[\frac{x^{r+1}}{r+1}\right]_{x=0}^{x=y}=\frac{y^{r+1}}{r+1}-\frac{0^{r+1}}{r+1}=\frac{y^{r+1}}{r+1}
+\Bbb E(X^r\mid Y=y)=\frac1y\cdot\frac{y^{r+1}}{r+1}=\frac{y^r}{r+1}.

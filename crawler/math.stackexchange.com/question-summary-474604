@@ -1,0 +1,15 @@
+A
+n\times n
+f,g:\mathbb{R}^n \rightarrow \mathbb{R}^n
+H: \mathbb{R}^m \rightarrow \mathbb{R}
+x \mapsto f(x)^t \cdot A \cdot g(x)
+H
+D_H
+F:\mathbb{R}^{n}\to\mathbb{R}^{2n}
+F(x)=(f(x),g(x))
+G:\mathbb{R}^{2n}\to\mathbb{R}
+G(x,y)=x^{T}Ay
+H=G\circ F
+DG(x,y)=\begin{pmatrix} y^{T}A,x^{T}A \end{pmatrix}
+DF(x,y)=\begin{pmatrix} Df(x,y)\\ Dg(x,y)\\ \end{pmatrix}
+DH(x,y)=DG(f(x),g(y))DF(x,y)=g(x)^{T}ADf(x,y)+f(x)^{T}ADg(x,y)

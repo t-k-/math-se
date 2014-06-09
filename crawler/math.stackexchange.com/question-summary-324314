@@ -1,0 +1,97 @@
+\text{"Toss a fair coin, if heads: stop; if tails: toss again."}
+1:
+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots =1
+\text{start}\to(1)\to(2)\to (1,2)\to (0,2,1)\to (0,1,0)\to (0)\to\text{end}
+1
+1
+\star
+\{0,1,\cdots \,n\}
+\textbf{Problem}
+\Omega
+\alpha\geq 2
+0:\;\Omega=\{0,1,\cdots\,\alpha-1\}
+\Omega
+r_n
+r_{n+1}=0
+r_{n+1}\geq 1
+\Omega\;r_{n+1}
+r_1=1
+\textbf{Attempted solution}
+\phi:
+r_n:
+n
+n>1:
+ \left\{    \begin{array}{l l}    p(\phi|r_n=0)=0 &\\     p(\phi|r_n=1)=p(\phi|r_1)=p(\phi) & \; (r_n=1\;\text{returns us to the initial conditions})   \end{array} \right.
+r_n\geq 1
+(\phi|r_n)
+\left(\bigcap_{k=1}^{r_n}\phi|i_k\right)
+n>1,r_n\geq 1:
+p(\phi|r_n)=p\left(\bigcap_{k=1}^{r_n}\phi|i_k\right)=\prod_{k=1}^{r_n}p(\phi|i_k)=p(\phi|r_1)^{r_n}=p(\phi)^{r_n}
+p(r_n=k\in\Omega)=\dfrac{1}{\alpha}
+\begin{align*}p(\phi)&=p(\phi|r_n=1)\\&=\sum_{k=0}^{\alpha-1}p(r_{n+1}=k)p(\phi|r_{n+1}=k)\\&=\frac{1}{\alpha}\sum_{k=0}^{\alpha-1}p(\phi|r_{n+1}=k)\\&=\frac{1}{\alpha}\sum_{k=0}^{\alpha-1}p(\phi)^k\end{align*}
+\lambda
+p(\phi)
+\lambda =\frac{1}{\alpha}\sum_{k=0}^{\alpha-1}\lambda^k\Rightarrow\alpha\lambda =\sum_{k=0}^{\alpha-1}\lambda^k
+\Rightarrow\lambda^{\alpha}-\alpha\lambda^2+\alpha\lambda-1 =0
+\alpha=2
+(\lambda-1)^2=0\Rightarrow \lambda=1
+\alpha=3
+(\lambda-1)^3=0\Rightarrow\lambda=1
+1
+(\lambda-1)^2(\lambda^2+2\lambda-1)=0\Rightarrow\lambda=\sqrt{2}-1\;\;\text{if}\;\;\lambda\neq 1
+\star
+\alpha \geq 4
+s_n
+n
+n \geq 0
+n=0
+s_0
+1
+s_n=r_{n+1}
+f_n(x)=E(x^{s_n})
+s_0
+1
+f_0(x)=E(x^{s_0})=x
+X
+s_{n+1}
+s_n
+X
+E(x^{s_{n+1}}|s_n=k)=\left(\frac{1+x+ \ldots + x^{\alpha-1}}{\alpha}\right)^k
+f_{n+1}(x)=E(x^{s_{n+1}})=E(E(x^{s_{n+1}}|s_n=k))=E(\left(\frac{1+x+ \ldots + x^{\alpha-1}}{\alpha}\right)^{s_n})=f_n(\frac{1+x+ \ldots + x^{\alpha-1}}{\alpha})
+P(x)=\frac{1+x+ \ldots + x^{\alpha-1}}{\alpha}
+f_n(x)=P^n(x)
+P^n(x)
+n^{\text{th}}
+P(x)
+P(s_n=0)=f_n(0)=P^n(0)
+P(x)=x
+x=1
+0<x=c<1
+x=1
+P'(x)>1
+x=1- \epsilon
+\epsilon>0
+P(a)<0
+1-\epsilon<a<1
+P(0)>0
+P(x)
+0
+1
+P(0)=\frac{1}{\alpha}>0, P(c)=c
+P(x) \not =x
+0<x<c
+P(x)
+0 \leq x
+x<P(x)<c
+0 \leq x<c
+P^0(0)=0<c
+P^n(x)<c
+P^n(x)<P^{n+1}(x)
+P_n(x)
+c
+0<p\leq c
+p
+P(x)=x
+p=c
+c=\lim_{n \to \infty}{P^n(0)}=\lim_{n \to \infty}{P(s_n=0)}=P(\phi)
+P(\phi)

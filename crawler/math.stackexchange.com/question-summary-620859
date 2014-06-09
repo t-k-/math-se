@@ -1,0 +1,9 @@
+a > 0
+e^{-a} = \int_{0}^{\infty}{\frac{e^{-x}}{\sqrt{x}}e^{-a^{2}/(4x)}dx}.
+\int_{0}^{\infty} \frac{e^{-(x+a^2/4x)}}{\sqrt{x}} \ dx  = 2 \int_{0}^{\infty} e^{-(t^{2}+a^{2}/4t^{2})} \ dt
+ \int^{\infty}_{0} e^{-ax^{2}-b/x^{2}} \ dx = \int_{0}^{\infty} \exp \left[ -a \left(x^{2}+\frac{b}{a}\frac{1}{x^{2}} \right) \right] \ dx 
+ = \exp\left[ -a\left(x^{2}+\frac{b}{a} \frac{1}{x^{2}} - 2 \frac{\sqrt{b}}{\sqrt{a}} \right) - 2 \sqrt{ab}\right] \ dx= e^{-2 \sqrt{ab}} \int_{0}^{\infty} \exp \left[ -a\left(x- \frac{\sqrt{b}}{\sqrt{a}} \frac{1}{x} \right)^{2} \right] \ dx 
+ = \frac{\sqrt{b}}{\sqrt{a}} e^{-2\sqrt{ab}} \int_{0}^{\infty} \exp  \left[ -a\left(\frac{\sqrt{b}}{\sqrt{a}} \frac{1}{u}- u \right)^{2} \right] \frac{du}{u^{2}}
+ \implies \int_{0}^{\infty} e^{-ax^{2}-b/x^{2}} \ dx = \frac{1}{2} e^{-2 \sqrt{ab}} \int_{0}^{\infty} \left( 1+ \frac{\sqrt{b}}{\sqrt{a}} \frac{1}{x^{2}}\right) \exp \left[-a \left(x- \frac{\sqrt{b}}{\sqrt{a}} \frac{1}{x} \right)^{2} \right] \ dx
+ = \frac{1}{2} e^{- 2\sqrt{ab}} \int_{-\infty}^{\infty} e^{-at^{2}} \ dt = \frac{1}{2} \sqrt{\frac{\pi}{a}} e^{- 2 \sqrt{ab}}
+ \int_{0}^{\infty} \frac{e^{-(x+a^2/4x)}}{\sqrt{x}} \ dx = \sqrt{\pi} \ e^{-2 \sqrt{a^{2}/4}} = \sqrt{\pi} e^{-a}

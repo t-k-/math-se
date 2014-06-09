@@ -1,0 +1,19 @@
+c>0,\sigma>0
+\tau>0
+g_c:(-1,1)\mapsto\mathbb{R}
+g_c
+\rho
+g_c
+g_c(\rho)=E( (-c)\vee [(X_{\sigma,\rho}Y_{\tau,\rho})\wedge c])
+(X_{\sigma,\rho},Y_{\tau,\rho})^T\sim N_2(0,\Sigma)
+  \Sigma= \begin{pmatrix} \sigma^2 & \rho\sigma\tau \\ \rho\sigma\tau & \tau^2 \end{pmatrix}. 
+V = XY
+\int_{-\infty}^\infty f_{X,Y}(x,v/x)\frac{1}{|x|}\mathrm{d}x
+f_V(v) = 2 \frac{1}{\sqrt{2 \pi  \left(1-\rho ^2\right)} \sigma  \tau } e^{\frac{\rho  v}{\sigma  \tau -\rho ^2 \sigma  \tau }} K_0\left(\frac{\left| v\right| }{\sigma  \tau -\rho ^2 \sigma  \tau }\right)
+K_0
+g(\rho) = \mathbb{E}[\max(-c,\min(c,V))]
+\frac{\sqrt{ \pi  \left(1-\rho ^2\right)}\sigma \tau}{\sqrt{2}}g(\rho) = -c \int_{-\infty}^{-c} e^{\rho v/((1-\rho^2)\sigma\tau)}K_0(-v/(1-\rho^2))\mathrm{d}v\\ + \int_{-c}^0 v e^{\rho v/((1-\rho^2)\sigma\tau)}K_0(-v/((1-\rho^2)\sigma\tau))\mathrm{d}v\\ + \int_0^c v e^{\rho v/((1-\rho^2)\sigma\tau)}K_0(v/((1-\rho^2)\sigma\tau))\mathrm{d}v\\ + c\int_c^\infty e^{\rho v/((1-\rho^2)\sigma\tau)}K_0(v/((1-\rho^2)\sigma\tau))\mathrm{d}v
+w = -v/((1-\rho^2)\sigma\tau)
+w = v/((1-\rho^2)\sigma\tau)
+\frac{\sqrt{\pi  \left(1-\rho ^2\right)}\sigma \tau}{\sqrt{2}}g(\rho) = -c ((1-\rho^2)\sigma\tau) \int_{c/((1-\rho^2)\sigma\tau)}^\infty e^{-\rho w}K_0(w)\mathrm{d}w\\ - ((1-\rho^2)\sigma\tau)^2 \int_0^{c/((1-\rho^2)\sigma\tau)} w e^{-\rho w}K_0(w)\mathrm{d}w\\ + ((1-\rho^2)\sigma\tau)^2 \int_0^{c/((1-\rho^2)\sigma\tau)} w e^{\rho w}K_0(w)\mathrm{d}w\\ + c ((1-\rho^2)\sigma\tau) \int_{c/(1-\rho^2)}^\infty e^{\rho w}K_0(w)\mathrm{d}w\\
+ \frac{\sqrt{ \pi  \left(1-\rho ^2\right)}\sigma \tau}{2 \sqrt{2}}g(\rho)= c((1-\rho^2)\sigma\tau)\int_{c/((1-\rho^2)\sigma\tau)}^\infty \sinh(\rho w)K_0(w)\mathrm{d}w\\ + ((1-\rho^2)\sigma\tau)^2 \int_0^{c/((1-\rho^2)\sigma\tau)} w \sinh(\rho w)K_0(w)\mathrm{d}w 

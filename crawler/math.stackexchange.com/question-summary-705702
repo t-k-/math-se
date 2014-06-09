@@ -1,0 +1,39 @@
+B(n_1, p)
+B(n_2, p)
+ Z = X + Y 
+B(n_1 + n_2, p )
+ \iff  f(x,y) = f_1(x) \cdot f_2(y) 
+ X
+B(n, p) 
+P(X = k) = {n \choose k }p^k(1-p)^{n-k}
+n
+k
+p
+f(k)
+f(k) = {n \choose k }p^k(1-p)^{n-k}
+f(x,y) = f_1(x) \cdot  f_2(y) = [ {n_1 \choose x }p^x(1-p)^{n_1-x} ] \cdot [ {n_2 \choose y }p^y(1-p)^{n_2-y} ]  = ... = {n_1 + n_2 \choose ? }p^?(1-p)^{(n_1+n_2)-?}
+Z=k
+X=0
+Y=k
+X=1
+Y=k-1
+X=2
+Y=k-2
+X=k
+Y=0
+i
+\Pr(X=i)=\binom{n_1}{i}p^i (1-p)^{n_1-i}.
+\Pr(Y=k-i)=\binom{n_2}{k-i}p^{k-i} (1-p)^{n_2-(k-i)}.
+\binom{n_1+n_2}{k}
+k
+n_1
+n_2
+\sum_{i=1}^k \binom{n_1}{i}\binom{n_2}{k-i}
+\sum_{i=1}^k \binom{n_1}{i}\binom{n_2}{k-i}=\binom{n_1+n_2}{k}=\binom{n}{k}.
+\Pr(Z=k)=\binom{n}{k}p^k(1-p)^{n-k}
+Y=Y_1+Y_2+\cdots+Y_{n_2}
+Z
+n_1+n_2
+n
+p
+Z

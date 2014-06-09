@@ -1,0 +1,29 @@
+a
+b
+a < b
+\displaystyle\int_a^b e^{-x^2}(1-x^2)\,dx
+(1-x^2)
+e^{-x^2}
+a
+b
+a<b
+f(a,b)
+a<b
+(-1,1)
+f(a,b) = \int_a^b e^{-x^2}(1-x^2)\,dx = \int_0^b e^{-x^2}(1-x^2)\,dx - \int_0^ae^{-x^2}(1-x^2)\,dx
+\frac{\partial f}{\partial a} = -e^{-a^2}(1-a^2),\qquad\frac{\partial f}{\partial b} = e^{-b^2}(1-b^2)
+\frac{\partial f}{\partial a} = 0 \implies 1-a^2=0 \implies a=\pm 1,\qquad \frac{\partial f}{\partial b}=0 \implies 1-b^2=0 \implies b=\pm 1.
+\frac{\partial^2f}{\partial a^2} = 2ae^{-a^2}(2-a^2),\quad \frac{\partial^2f}{\partial b^2} = -2be^{-b^2}(2-b^2),\quad \frac{\partial^2 f}{\partial a\partial b} = 0
+\frac{\partial^2f}{\partial a^2}(-1,1) = -2e^{-1},\quad \frac{\partial^2f}{\partial b^2} (-1,1) = -2e^{-1},\quad \frac{\partial^2 f}{\partial a\partial b}(-1,1) = 0.
+D=\frac{\partial^2 f}{\partial a^2}(-1,1)\frac{\partial^2 f}{\partial b^2}(-1,1) - \left(\frac{\partial^2 f}{\partial a\partial b}(-1,1)\right)^2 = 4e^{-2}>0
+\dfrac{\partial^2 f}{\partial a^2}(-1,1) = -2e^{-1}<0
+(-1,1)
+f(a,b)
+\displaystyle\int_a^b e^{-x^2}(1-x^2)\,dx
+a=-1
+b=1
+e^{-x^2} > 0 \quad \forall\ x
+(a,b) = (-1,1)
+(1-x^2) > 0 \Leftrightarrow x \in [-1,1]
+\int_{-1}^1 e^{-x^2} (1-x^2) dx = 2 \int_0^1 e^{-x^2} (1-x^2) dx = \frac 1 e + \frac {\sqrt \pi} 2{\rm erf}(1) 
+\frac {\sqrt \pi} 2 {\rm erf}(1) = \int_0^1 e^{-x^2} dx

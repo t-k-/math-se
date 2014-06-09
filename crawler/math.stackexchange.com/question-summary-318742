@@ -1,0 +1,50 @@
+90 = 2 \times 3^2 \times 5
+79x \equiv 1 \pmod {90}
+79x \equiv 1 \pmod 2
+7x \equiv 1 \pmod 9
+4x \equiv 1 \pmod 5
+79, 7
+4
+    \left\{     \begin{aligned}       x & \equiv b_1 \pmod{a_1} \\       x & \equiv b_2 \pmod{a_2} \\       \vdots & \\       x & \equiv b_r \pmod{a_r}     \end{aligned}  \right. 
+90 = 2 \cdot 5 \cdot 9
+79 \equiv 1 \pmod 2
+ 79 \cdot x \equiv 1 \cdot x \pmod{2} \quad \Rightarrow \quad x \equiv 1 \pmod{2} 
+4x \equiv 1 \pmod{5}
+ 4 \cdot 4 = 16 \equiv 1 \pmod{5}
+ 4 \cdot 4 \cdot x \equiv 4 \cdot 1 \pmod{5} \Rightarrow x \equiv 4 \pmod{5} 
+7x \equiv 1 \pmod{9}
+ 4 \cdot 7 \cdot x \equiv 4 \cdot 1 \pmod{9} \Rightarrow x \equiv 4 \pmod{9} 
+   \left\{     \begin{aligned}       x & \equiv 1 \pmod 2 \\       x & \equiv 4 \pmod 5 \\       x & \equiv 4 \pmod 9     \end{aligned}   \right.  
+ x = \sum_{1 \le i \le r} m_i b_i \pmod{n} 
+  \begin{align}    m_1 & \quad \text{coefficient for mod 2} \\    m_2 & \quad \text{coefficient for mod 5} \\    m_3 & \quad \text{coefficient for mod 9}    \end{align} 
+ m_i = s_i \cdot \frac{n}{a_i} 
+s_i = \left(\frac{n}{a_i}\right)^{-1}
+a_i
+n = 90
+   \begin{align}     a_1 & = 2 \\     a_2 & = 5 \\     a_3 & = 9    \end{align} 
+   \begin{align}     s_1 = \left(\frac{90}{2}\right)^{-1} \pmod 2 = 1 \\     s_2 = \left(\frac{90}{5}\right)^{-1} \pmod 5 = 2 \\     s_3 = \left(\frac{90}{10}\right)^{-1} \pmod 9 = 1    \end{align} 
+   \begin{align}     m_1 = s_1 \cdot \frac{90}{2} = 1 \cdot 45 = 45 \\     m_2 = s_2 \cdot \frac{90}{5} = 2 \cdot 18 = 36 \\     m_3 = s_3 \cdot \frac{90}{10} = 1 \cdot 10 = 10   \end{align} 
+   x = \sum_{1 \le i \le 3} m_i \cdot b_i     = 45 \cdot 1 + 36 \cdot 4 + 10 \cdot 4     = 229 \equiv 49 \pmod{90} 
+x = 49
+   \begin{align}     49 & \equiv 1 \pmod 2 \\     49 & \equiv 4 \pmod 5 \\     49 & \equiv 4 \pmod 9   \end{align} 
+ 79 \cdot 49 = 3871 \equiv 1 \pmod 90 \quad (\text{because } 3871 = 90 \cdot 43 + 1)
+79\equiv 7\pmod 9
+79x\equiv 7x\pmod 9
+79x\equiv 1\pmod9
+7x\equiv1\pmod9
+79\equiv4\pmod5
+79x\equiv 1\pmod5
+4x\equiv1\pmod5
+\rm mod\ 10\!:\ 1 \equiv 79x\equiv -x,\:
+\rm\:x = -1\!+\!10n.\:
+\rm\:mod\ 9\!:\ 1 \equiv 79x\equiv -2x\equiv -2(-1\!+\!10n)\equiv 2\!-\!2n,\:
+\rm\:2n\equiv 1\equiv 10,\:
+\rm\:n\equiv 5,\:
+\rm\:n = 5\!+\!9k.\:
+\rm\: x = -1\!+\!10n=-1\!+\!10(5\!+\!9k) = 49\! +\! 90k.
+\,90=2\cdot3^2\cdot5\,\Longrightarrow 79x=1\pmod{90}\Longrightarrow x=1\pmod{2,3^2,5}
+79x=1\pmod 2\Longleftrightarrow x=1\pmod 2
+79x=1\pmod 9\Longleftrightarrow7x = 1\pmod 9\,\,\,\text{, since}\,\,\,79=7\pmod 9
+79x=1\pmod 5\Longleftrightarrow4x=1\pmod 5\,\,\text{, since}\,\,\,79=4\pmod 5
+79=-11\;\;,\;\;11^{-1}=41\Longrightarrow 79^{-1}=(-11)^{-1}=-41=49\Longrightarrow
+79x=1\pmod {90}\Longrightarrow x=79^{-1}\pmod {90}=49\pmod{90}

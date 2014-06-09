@@ -1,0 +1,21 @@
+\phi \in C^\infty_0(\Omega)
+\partial\Omega
+u\in L^1_{loc}(\Omega)
+\int_\Omega u\Delta \phi \, dx=0, \quad\forall \phi \in > C^\infty_0(\Omega).
+u\in C^2(\Omega)
+\implies
+\nabla \cdot (u\nabla\phi) = \nabla u \cdot \nabla \phi + u \Delta \phi
+U = \int_\Omega u\Delta \phi \,dx = \int_\Omega \nabla \cdot (u\nabla \phi )dx - \int_\Omega \nabla u\cdot \nabla \phi\,dx 
+ = \int_{\partial \Omega} \nu \cdot (u\nabla\phi)ds - \int_{\partial\Omega}\nu\cdot(\phi\nabla u)ds + \int_\Omega \phi \Delta u dx 
+ \therefore \int_\Omega \phi \Delta u dx=0, \quad\forall \phi \in > C^\infty_0(\Omega)\\ \text{note: I think that the fact in question is used.}
+\Delta u=0
+\Omega
+\because
+\exists x_0 \in \Omega \mid \Delta u(x_0) \neq 0
+\Delta u(x_0) > 0
+\Delta u
+\phi\in C^\infty_0
+\exists B_\delta(x_0)\subset\Omega \mid \Delta u(x)>0 \quad\forall x\in B_\delta(x_0)
+\phi(x) = \begin{cases}1 & |x-x_0| < \frac \delta 2 \\ 0 & otherwise\end{cases}
+\underbrace{0=\int_\Omega\phi\Delta u dx}_{assumption} = \int_{B_\delta (x_0)} \phi\Delta u dx \geq \int_{B_{\delta/2}(x_0)}\phi\Delta u\,dx
+=\int_{B_{\delta/2}(x_0)}\Delta u\,dx > 0

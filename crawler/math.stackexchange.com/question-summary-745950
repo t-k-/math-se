@@ -1,0 +1,11 @@
+f: \mathbb{R}^2 \rightarrow \mathbb{R}
+f(x,y) = 2x^2 + 3y
+\begin{bmatrix} 0\\0 \end{bmatrix}
+ Df(0,0) = \lim \limits_{h\rightarrow 0} \frac{\Vert f(x+h, y+h) - f(x,y) -T(k,h)h \Vert}{||h||} = \lim_{h\rightarrow 0} \frac{|| f(h,h) - f(0,0) -T(k,h)h ||}{||h||} = \frac{|| 2h^2 + 3h -T(k,h)h ||}{||h||} = \lim_{h\rightarrow 0}\frac{|| h(2h + 3 - T(k,h)) ||}{||h||} = \lim_{h\rightarrow 0} 2h + 3 - T(k,h) = 0
+T(k,h) = 3 + ah
+a\in\mathbb{R}
+T(k,h)h
+T(k,h)
+||h||
+||(h,k)||
+(x,y)=(0,0)

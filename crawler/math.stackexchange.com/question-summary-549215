@@ -1,0 +1,66 @@
+I=\int_C \frac{e^{az}}{1+e^z}dz
+R \to \infty
+C
+(1+i)R
+(-1+i)R
+a \in (0,1)
+R
+(2n+1)\pi i
+z(t)=iR+t, \ t\in[-R,R]
+|I| \le \int_{-R}^{R} \frac{e^{at}dt}{|1+e^{t+iR}|}
+e^t -1
+0<a<1
+\pm R, \pm R + 2\pi i
+\pm R, (\pm 1+i)R
+R
+R
+2 \pi i
+\frac{\pi}{\sin(a\pi)}
+R
+R_n = 2\pi n
+\int_\mathbb{R} \frac{e^{ax}}{1+e^x}dx = \frac{\pi}{\sin(a\pi)},
+I_{top} = e^{2\pi i a n} I_n
+I_n = \int_{-2\pi n}^{2 \pi n} f(x)dx.
+R \notin \{(2k+1) \cdot \pi; k \in \mathbb{Z}\}
+C
+z(t) = \imath \, R +t
+t \in [-R,R]
+I(R) := \int_C \frac{e^{a \cdot z}}{1+e^{z}} \, dz
+\begin{align*} I(R) &= \imath \, e^{\imath \, a \cdot R} \cdot \int_{-R}^R \frac{e^{a \cdot t}}{1+e^{\imath \, R+t}}  \, dt \\ &=\imath \, e^{\imath \, a \cdot R} \cdot \int_{-R}^R \frac{e^{a \cdot t}}{1+e^{\imath \, R+t}} \cdot \frac{1+e^{-\imath \, R + t}}{1+e^{-\imath \, R+t}} \, dt \\ &= \imath \, e^{\imath \, a \cdot R} \cdot \int_{-R}^R \frac{e^{a \cdot t}+e^{(a+1) \cdot t} \cdot e^{-\imath \, R}}{e^{2t}+\cos^2(R)+2e^t \cdot \cos^2(R)} \, dt \\ &= \imath \, e^{\imath \, a \cdot R} \cdot (I_1(R)-\imath \, I_2(R)) \end{align*}
+\begin{align*} I_1(R) &:= \int_{-R}^R \frac{e^{a \cdot t}+e^{(a+1) \cdot t} \cdot \cos(R)}{e^{2t}+\cos^2(R)+2e^t \cdot \cos^2(R)} \, dt \\ I_2(R) &:= \sin(R) \cdot \int_{-R}^R \frac{e^{(a+1) \cdot t}}{e^{2t}+\cos^2(R)+2e^t \cdot \cos^2(R)} \, dt \end{align*}
+(R_n)_{n \in \mathbb{N}}
+R_n \to \infty
+R_n \notin \{(2k+1) \cdot \pi; k \in \mathbb{N}\}
+n \in \mathbb{N}
+\lim_{n \to \infty} I(R_n) = 0 \Leftrightarrow \lim_{n \to \infty}  I_1(R_n) = \lim_{n \to \infty} I_2(R_n) = 0
+\begin{align*} |I_2(R_n)| &\geq |\sin(R_n)|  \cdot \underbrace{\int_{-R_n}^{R_n} \frac{e^{(a+1) \cdot t}}{(e^t+1)^2} \, dt}_{\geq c>0} \end{align*}
+|\sin(R_n)| \to 0
+I_2(R_n)
+|\cos(R_n)| \to 1
+\cos(R_n) \to 1
+\cos(R_n) \to -1
+I_2(R_n) \to I_2 := \int_{-\infty}^{\infty} \frac{e^{a \cdot t} + e^{(a+1) \cdot t}}{(e^t+1)^2} \, dt
+I_2>0
+I(R_n)
+0
+\cos(R_n) \to -1
+I_2(R_n) \to I_2 := \int_{-\infty}^{\infty} \frac{e^{a \cdot t} - e^{(a+1) \cdot t}}{(e^t+1)^2} \, dt
+R_n \to \infty
+R_n \notin \{(2k+1) \cdot \pi; k \in \mathbb{Z}\}
+r_n := \frac{1}{\sqrt{R_n}}
+\int_{D_n} \frac{e^{a \cdot z}}{1+e^z} \, dz
+D_n
+z(t) = R_n \cdot e^{\imath \, t}
+t \in [0,\pi]
+\begin{align*} \int_{D_n} \frac{e^{a \cdot z}}{1+e^z} \, dz &= \underbrace{\int_0^{\frac{\pi}{2}-r_n} \frac{e^{a \cdot z(t)}}{1+e^{z(t)}} \cdot z'(t)\, dt}_{=: J_1} \\ &\quad + \underbrace{\int_{\frac{\pi}{2}-r_n}^{\frac{\pi}{2}+r_n} \frac{e^{a \cdot z(t)}}{1+e^{z(t)}} \cdot z'(t)\, dt}_{=: J_2}+\underbrace{\int_{\frac{\pi}{2}+r_n}^{\pi} \frac{e^{a \cdot z(t)}}{1+e^{z(t)}} \cdot z'(t)\, dt}_{=: J_3} \end{align*}
+\begin{align*} |J_1| &\leq R_n \cdot \int_{0}^{\frac{\pi}{2}-r_n} \frac{e^{a \cdot R_n \cdot \cos(t)}}{e^{R_n \cdot \cos(t)}-1} \, dt \end{align*}
+t \mapsto \frac{e^{a \cdot R \cdot \cos(t)}}{e^{R \cdot \cos(t)}-1}
+[0,\pi/2-r_n]
+|J_1| \leq R_n \cdot \frac{\pi}{2} \cdot \frac{e^{a \cdot R_n \cdot \cos(\pi/2-r_n)}}{e^{R_n \cdot \cos(\pi/2-r_n)}-1} \to 0 \quad (n \to \infty)
+R_n \cdot \cos(\pi/2-r_n) \to \infty
+n \to \infty
+a \in (0,1)
+|J_3| \leq R_n \cdot \frac{\pi}{2} \cdot \frac{e^{a \cdot R_n \cdot \cos(\pi/2+r_n)}}{1-e^{R_n \cdot \cos(\pi/2+r_n)}} \to 0 \quad (n \to \infty)
+|J_2|
+\left| \int_{D_n} \frac{e^{a \cdot z}}{1+e^z} \, dz \right| \to 0
+n \to \infty

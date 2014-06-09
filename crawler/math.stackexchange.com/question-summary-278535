@@ -1,0 +1,17 @@
+k(t) = \left(v_0\cos(\beta)t,\,v_0\sin(\beta)t-\frac{g}{2}t^2\right)
+t\geq 0
+v_0>0
+\beta\in[0,2\pi]
+g
+s(t) = \int_0^t \|k'(u)\|\,\mathrm du.
+v_0
+\sin^2(\beta)+\cos^2(\beta)=1
+k'(t) = (v_0\cos(\beta),\,v_0\sin(\beta)-gt)
+\begin{align}\|k'(t)\| &= \sqrt{v_0^2\cos^2(\beta)+v_0^2\sin^2(\beta)-2gtv_0\sin(\beta)+g^2t^2}\\ &= \sqrt{v_0^2-2gtv_0\sin(\beta)+g^2t^2}\end{align}
+\tag{1} v_0^2-2guv_0\sin\beta+g^2u^2= \left(gu-v_0 \sin \beta \right)^2+v_0^2 \cos ^2\beta    . 
+y= g u-v_0 \sin \beta .
+ \|k'(u)\|
+y= v_0\cos\beta \sinh x
+s(t) = \int_0^t \|k'(u)\|\, du.
+\begin{align}s(t) &= \int_0^t \sqrt{v_0^2-2guv_0\sin\beta+g^2u^2}\, du \\ &= \int_0^t \sqrt{\left(gu-v_0 \sin \beta \right)^2+v_0^2 \cos ^2\beta\, }du\\&=\int_{- v_0 \sin\beta}^{gt- v_0 \sin\beta} \sqrt{y^2 + v_0^2 \cos ^2\beta}.\end{align} 
+\begin{align}s(t) &= v_0|\cos \beta|\int_{-\mathop{\rm asinh} \tan \beta}^{\mathop{\rm asinh} (g t/(v_0 \cos \beta)- \tan \beta)} \overbrace{\cosh^2 x}^{(1+\cosh 2x)/2}\,dx\\&= v_0|\cos \beta| \left(\frac{1}{2} x+ \frac{1}{4}\sinh(2x)  \right)\Bigg|_{x=-\mathop{\rm asinh} \tan \beta}^{\mathop{\rm asinh} (g t/(v_0 \cos \beta)- \tan \beta)}\end{align}

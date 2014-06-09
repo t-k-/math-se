@@ -1,0 +1,66 @@
+m
+n
+m|n
+a
+[a]_m
+[a]_n,[a+m]_n,[a+2m]_n,\dots,[a+n-m]_m
+[a]_m=[a]_n\cup[a+m]_n\cup\dots\cup[a+n-m]_n
+mp=n
+p\in\mathbb{Z}
+[a]_m=[a]_n\cup[a+m]_n\cup\dots\cup[a+n-m]_n
+[a]_m=[a]_n\cup[a+m]_n\cup\dots\cup[a+m(p-1)]_n
+[a]_m\subseteq[a+sm]_n 
+0\leq s \leq p-1
+s\in\mathbb{Z}
+t\in[a]_m
+\implies t\equiv a\pmod{m}\implies t=a+mk'
+k\in\mathbb{Z}
+k'=pq+r
+r=k'-pq
+0\leq r<p
+[t]_n=[a+k'm]_n=[a+(k'-pq)m]_n
+t\in[a+sm]_n
+0\leq k'-pq\leq p-1
+[a+sm]_n\subseteq [a]_m
+k\in[a+sm]_n
+k\equiv a+sm\pmod{n}\implies n|(k-a-sm)
+m|n
+m|(k-a-sm)
+mt'=k-a-sm
+t'\in\mathbb{Z}\implies mt'=(k-sm)-a
+k-sm\equiv a \pmod{m}
+k\equiv a+sm\pmod{m}
+\equiv a\pmod{m}
+k\in[a]_m
+[a+sm]_n\subseteq [a]_m
+[a]_m=[a]_n\cup[a+m]_n\cup\dots\cup[a+n-m]_n
+t\in[a+rm]_n
+0\le r\le p-1
+t\in[a+sm]_n
+0\le k^{\prime}-pq\le p-1)
+k\equiv a+sm \pmod n
+k\equiv a+sm \equiv a \pmod m
+m|n
+k\in [a]_n
+q,r\in\mathbb{Z}
+0\le r\lt k
+(1)
+(2)
+(3)
+0\le r\lt k
+(2)
+(1)\implies(5)
+(2)
+(5)
+(2)
+(5)\implies(7)
+(6)
+(8)
+ \begin{align} x\in[a]_m&\iff\exists j\in\mathbb{Z}: x-a=jm\tag{1}\\[6pt] m\mid n&\iff \exists k\in\mathbb{Z}: n=km\tag{2} \end{align} 
+ j=qk+r\tag{3} 
+ \begin{align} x-a-rm &=x-a-(j-qk)m\\ &=x-a-jm+qn\\ &=qn\tag{4} \end{align} 
+ x-a-rm=qn\iff x\in[a+rm]_n\tag{5} 
+ m\mid n\implies[a]_m\subset\bigcup_{r=0}^{k-1}[a+rm]_n\tag{6} 
+ x-a=rm+qn=(qk+r)m\iff x\in[a]_m\tag{7} 
+ m\mid n\implies\bigcup_{r=0}^{k-1}[a+rm]_n\subset[a]_m\tag{8} 
+ m\mid n\implies[a]_m=\bigcup_{r=0}^{k-1}[a+rm]_n\tag{9} 

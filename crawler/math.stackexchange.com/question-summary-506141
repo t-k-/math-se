@@ -1,0 +1,33 @@
+\ddot x+(x^2+\dot x^2-1)\dot x +x=0
+y=\dot x
+\dot y = (1-x^2)y-y^3
+\dot x = \frac {dx(t)}{dt}
+\ddot x+(x^2+\dot x^2-1)\dot x + x=0. \tag{1}
+y
+y = \dot x
+\dot x = y, \tag{2}
+y
+\dot y = - (x^2 + y^2 - 1)y - x. \tag{3}
+x
+y
+x = r \cos \theta, \tag{4}
+y = r \sin \theta, \tag{5}
+\dot x = \dot r \cos \theta -r \dot \theta \sin \theta, \tag{6}
+\dot y =\dot r \sin \theta + r\dot \theta \cos \theta. \tag{7}
+\dot r \cos \theta -r \dot \theta \sin \theta = r\sin \theta, \tag{8}
+\dot r \sin \theta + r\dot \theta \cos \theta = - (r^2 \cos^2 \theta + r^2 \sin^2 \theta - 1) r \sin \theta - r \cos \theta;\tag{9}
+\begin{bmatrix} \cos \theta & - r\sin \theta \\ \sin \theta & r \cos \theta \end{bmatrix} \begin{pmatrix} \dot r \\ \dot \theta \end{pmatrix} = \begin{pmatrix} r \sin \theta \\ -(r^2 - 1)r \sin \theta -r \cos \theta \end{pmatrix}.  \tag{10}
+r \ne 0
+r
+\det \begin{bmatrix} \cos \theta & - r\sin \theta \\ \sin \theta & r \cos \theta \end{bmatrix} = r(\cos^2 \theta + \sin^2 \theta) = r; \tag{11}
+\begin{bmatrix} \cos \theta & - r\sin \theta \\ \sin \theta & r \cos \theta \end{bmatrix}^{-1} = \frac{1}{r} \begin{bmatrix} r\cos \theta &  r\sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix}; \tag{12}
+\begin{pmatrix} \dot r \\ \dot \theta \end{pmatrix} = \begin{pmatrix} -r(r^2 - 1) \sin^2 \theta \\ -(r^2 -1)(\cos \theta)(\sin \theta) -1 \end{pmatrix}, \tag{13}
+\dot r = -r(r^2 - 1) \sin^2 \theta, \tag{14}
+\dot \theta = -(r^2 -1)(\cos \theta)(\sin \theta) -1 = -\frac{1}{2}(r^2 -1)\sin 2 \theta -1. \tag{15}
+\sin^2 \theta \ne 0
+r
+0 < r < 1
+r > 1
+r = 1
+\dot r = 0, \tag{16}
+\dot \theta = -1; \tag{17}

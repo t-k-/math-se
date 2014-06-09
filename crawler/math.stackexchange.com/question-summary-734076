@@ -1,0 +1,10 @@
+ \lim_{n\to\infty}n\Bigg(\frac{3(n+1)}{2n}\sqrt{\frac{2(n+2)(2n+1)}{(3n+2)(3n+4)}}-1\Bigg) 
+\lim_{n\to\infty}\left((n+1)\sqrt{\frac{18(n+2)(2n+1)}{4(3n+2)(3n+4)}}-n\right)
+=\lim_{n\to\infty}\left((n+1)\sqrt{\frac{36n^2+90n+36}{36n^2+72n+32}}-n\right)
+=\lim_{n\to\infty}\left[n\left(\sqrt{\frac{36n^2+90n+36}{36n^2+72n+32}}-1\right)\right]-\lim_{n\to\infty}\sqrt{\frac{36n^2+90n+36}{36n^2+72n+32}}
+=\lim_{n\to\infty}\left[\frac{n\left(\sqrt{36n^2+90n+36}-\sqrt{36n^2+72n+32}\right)}{\sqrt{36n^2+72n+32}}\right]
+=\lim_{n\to\infty}\left[\frac{n\left[{36n^2+90n+36}-(36n^2+72n+32)\right]}{\sqrt{36n^2+72n+32}\left(\sqrt{36n^2+90n+36}+\sqrt{36n^2+72n+32}\right)}\right]
+=\lim_{n\to\infty}\left[\frac{18n^2+4n}{\sqrt{36n^2+72n+32}\left(\sqrt{36n^2+90n+36}+\sqrt{36n^2+72n+32}\right)}\right]
+=\lim_{n\to\infty}\left[\frac{18+4/n}{\sqrt{36+72/n+32/{n^2}}\left(\sqrt{36+90/n+36/{n^2}}+\sqrt{36+72/n+32/{n^2}}\right)}\right]
+=\frac{18}{\sqrt{36}(\sqrt{36}+\sqrt{36})}=\cdots
+n^2

@@ -1,0 +1,42 @@
+f(z) = \sum_{k=0}^\infty c_k^{(a)}\frac{(z-a)^k}{k!}
+\begin{align}   f(b+z) &\ =\ e^{(b-a)\partial_c}f(c+z)|_{c=a} \\ &\ =\ \sum_{l=0}^\infty\frac{(b-a)^l\partial_a^l}{l!}\sum_{k=0}^\infty\frac{\partial_a^k f(a)}{k!}z^k \\ &"=" \sum_{k=0}^\infty\underbrace{\left(\sum_{l=0}^\infty\frac{(b-a)^l}{l!}c_{k+l}^{(a)}\right)}_{\stackrel!=c_k^{(b)}}\frac{z^k}{k!} \end{align}
+"="
+\Gamma\subset\mathbb C
+a
+b
+f|_\Gamma
+\Gamma
+a
+b
+a
+b
+\begin{align}   c_n^{(b)} &= f^{(n)}(b) = \underbrace{f^{(n)}(a)}_{=c_n^{(a)}} + \int_a^b f^{(n+1)}(t)\,dt \\ &= c_n^{(a)} + \sum_{k=0}^\infty c_{k+n}^{(a)} \underbrace{\int_a^b \frac{(z-a)^k}{k!}\,dz}_{=\frac{(b-a)^{k+1}}{(k+1)!}} \\ &= \sum_{k=0}^\infty c_{n+k}^{(a)}\frac{(b-a)^k}{k!} (*) \end{align}
+b
+c_j
+a
+b
+c_0=a
+c_N=b
+N
+N+1
+c_j
+c_j
+c_{j+1}
+f_j
+|c_j-c_{j+1}|<R_j
+R_j^{-1} = \limsup\limits_{k\to\infty}\sqrt[k]{|f^{(k)}(c_j)|}
+f_j
+f^{(k)}(c_{j+1})
+f_{j+1}
+c_{j+1}
+f_j(z) = \sum_{k=0}^\infty f^{(k)}(c_j)\frac{(z-c_j)^k}{k!}
+\begin{align}   f^{(k)}(c_{j+1}) &= \sum_{l=0}^\infty f^{(k+l)}(c_j)\frac{(c_{j+1}-c_j)^l}{l!} \\ &= \sum_{l=k}^\infty f^{(l)}(c_j)\frac{(c_{j+1}-c_j)^{l-k}}{(l-k)!} \end{align}
+\begin{align} f^{(l_N)}(b) = f^{(l_N)}(c_N) &= \sum_{l_{N-1}=l_N}^\infty\sum_{l_{N-2}=l_{N-1}}^\infty\cdots\sum_{l_0=l_1}^\infty \underbrace{f^{(l_0)}(c_0)}_{=f^{(l_0)}(a)}\prod_{m=1}^N \frac{(c_{m}-c_{m-1})^{(l_{m-1}-l_{m})}}{(l_{m-1}-l_{m})!} (\dagger) \\ &= \sum_{l_0=l_N}^\infty \sum_{l_1=l_N}^{l_0}\sum_{l_2=l_N}^{l_1}\cdots\sum_{l_{N-1}=l_N}^{l_{N-2}} \underbrace{f^{(l_0)}(c_0)}_{=f^{(l_0)}(a)}\prod_{m=1}^N \frac{(c_{m}-c_{m-1})^{(l_{m-1}-l_{m})}}{(l_{m-1}-l_{m})!} \\ &= \sum_{k_0=0}^\infty\underbrace{f^{(l_N+k_0)}(c_0)}_{=f^{(l_N+k_0)}(a)} \sum_{k_1=0}^{k_0}\sum_{k_2=0}^{k_1}\cdots\sum_{k_{N-1}=0}^{k_{N-2}} \prod_{m=1}^N \frac{(c_{m}-c_{m-1})^{(k_{m-1}-k_{m})}}{(k_{m-1}-k_{m})!} \quad(k_N=0) \end{align}
+\gamma:[0,1]\to\mathbb C
+a=\gamma(0)
+b=\gamma(1)
+1/N=:dt, j/N=:t_j, c_j:=\gamma(t_j)
+N
+c_j - c_{j-1} = \gamma(t_j) - \gamma(t_j-dt) = \gamma'(t_j)dt - \gamma''(t_j)dt^2/2 + \mathcal O(dt^3).
+f^{(l)}(b) \dot= \sum_{k=0}^{N-1} f^{(l+k)}(a) \underbrace{\sum_{j_1=1}^{N-1}\sum_{j_2=1 \atop j_2\neq j_1}^{N-1}\cdots\sum_{j_{k}}}_{k\,\text{sums}}dt^{k}\prod_{m=1}^{k}\gamma'(c_{j_m})
+(*)

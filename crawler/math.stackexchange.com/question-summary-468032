@@ -1,0 +1,73 @@
+\sqrt{1 +n\sqrt{1 +(n+1)\sqrt{1 + (n+2)\sqrt{1 + (n+3)\sqrt{1 +....\infty}}}}} = n+1
+F(x) = \sqrt{ax+(n+a)^2 +x\sqrt{a(x+n)+(n+a)^2+(x+n) \sqrt{a(x+2n)+(n+a)^2+(x+2n)\sqrt{\mathrm{\cdots}}}}}
+F(x)^2 = ax+(n+a)^2 +x\sqrt{a(x+n)+(n+a)^2+(x+n) \sqrt{\mathrm{\cdots}}} 
+F(x)^2 = ax+(n+a)^2 +xF(x+n) \tag1
+F(x) = mx+k 
+deg(F(x))
+F(x)^2 = ax+(n+a)^2 +xF(x+n) 
+( mx+k)^2=ax+(n+a)^2+x(m(x+n)+k) 
+ m^2x^2+2mkx+k^2=ax+(n+a)^2+mx^2+(mn+k)x
+m^2=m
+m=1
+m=0
+2mk=mn+k+a
+m=1
+2k=n+a+k
+k=n+a
+ m^2x^2+2mkx+k^2=ax+(n+a)^2+mx^2+(mn+k)x
+k^2=(n+a)^2
+F(x) = mx+k 
+F(x) = x + n + a 
+  x + n + a= \sqrt{ax+(n+a)^2 +x\sqrt{a(x+n)+(n+a)^2+(x+n) \sqrt{\mathrm{\cdots}}}} 
+a=0
+n=1
+ x+1=\sqrt{1 +x\sqrt{1 +(x+1)\sqrt{1 + (x+2)\sqrt{1 + (x+3)\sqrt{1 +....}}}}}  
+x > 0
+m \in \mathbb{N}
+\varphi_m(x)
+(x+1)\varphi_m(x) = \begin{cases}1,&\text{ for } m = 0\\ \\ \sqrt{1+x\sqrt{1+(x+1)\sqrt{\cdots\sqrt{1+(x+m)}}}},&\text{ otherwise. }\end{cases}
+m > 0
+x > 0, y \in [0,1]
+y + \frac{1-y}{(x+1)^2} \in [y,1]
+\varphi_{m-2}(x+2), \varphi_{m-3}(x+3),\ldots
+\begin{align}      &(x+1)^2\varphi_{m}(x)^2 = 1 + x(x+2)\varphi_{m-1}(x+1)\\ \iff &\varphi_{m}(x)^2 = \varphi_{m-1}(x+1) + \frac{1 - \varphi_{m-1}(x+1)}{(x+1)^2} \end{align} 
+\varphi_{m-1}(x+1) \le \varphi_{m}(x)^2 \le 1 \quad\iff\quad \varphi_{m-1}(x+1)^{2^{-1}} \le \varphi_{m}(x) \le 1
+\begin{align} &\varphi_{0}(x+m)^{2^{-m}} \le \varphi_{1}(x+m-1)^{2^{-(m-1)}} \le \cdots \le \varphi_{m}(x) \le 1\\ \implies & \left(\frac{1}{x+m+1}\right)^{2^{-m}} \le \varphi_m(x) \le 1\tag{*1} \end{align}
+x
+(*1)
+1
+m \to \infty
+\sqrt{1+x\sqrt{1+(x+1)\sqrt{1 + \cdots}}} = (x+1)\lim_{m\to\infty}\varphi_m(x) = x + 1
+f(x)^2=1+xf(x+1)
+f(x)=x+1
+ f(x)=\sqrt{1+x\sqrt{1+(x+1)\sqrt{1+(x+2)\sqrt{1+\dots}}}} 
+f(x)=x+1
+ \hspace{-18pt}x+1=\small\sqrt{1+x\sqrt{1+(x+1)\sqrt{1+\dots+\sqrt{1+(x+k-2)\sqrt{1+(x+k-1)(x+k+1)}}}}}\tag{1} 
+f_{0,x}(x+1)=x+1
+k\ge0
+f_{k,x}(x+k+1)=x+1
+k\ge0
+f_{k,x}(x+k+1)=x+1
+ f_{k,x}(y)=\left\{\begin{array}{} y&\text{if }k=0\\ \sqrt{1+xf_{k-1,x+1}(y)}&\text{if }k>0 \end{array}\right. 
+ f_{k,x}(y)=\small \sqrt{1+x\sqrt{1+(x+1)\sqrt{1+\dots+\sqrt{1+(x+k-2)\sqrt{1+(x+k-1)y}}}}} 
+ \begin{align} f_{k+1,x}(x+k+2) &=\sqrt{1+xf_{k,x+1}(x+k+2)}\\ &=\sqrt{1+x(x+2)}\\ &=x+1 \end{align} 
+(1)
+f_{k,x}(1)
+f_{k,x}(x+k+1)
+x+1
+j\ge0
+j\ge0
+j=k
+ \lim_{k\to\infty}f_{k,x}(1)=x+1\tag{2} 
+ \frac{f_{0,x+k}(x+k+1)}{f_{0,x+k}(1)}=\frac{x+k+1}{1} 
+ \frac{f_{j,x+k-j}(x+k+1)}{f_{j,x+k-j}(1)}\le(x+k+1)^{1/2^j} 
+ \begin{align} \frac{f_{j+1,x+k-j-1}(x+k+1)}{f_{j+1,x+k-j-1}(1)} &=\sqrt{\frac{1+(x+k-j-1)f_{j,x+k-j}(x+k+1)} {1+(x+k-j-1)f_{j,x+k-j}(1)}}\\ &\le\sqrt{\frac{f_{j,x+k-j}(x+k+1)}{f_{j,x+k-j}(1)}}\\ &\le(x+k+1)^{1/2^{j+1}} \end{align} 
+ \frac{f_{j,x+k-j}(x+k+1)}{f_{j,x+k-j}(1)}\le(x+k+1)^{1/2^j} 
+ \frac{f_{k,x}(x+k+1)}{f_{k,x}(1)}\le(x+k+1)^{1/2^k} 
+f_{k,x}(x+k+1)=x+1
+(2)
+ (x+1)(x+k+1)^{-1/2^k}\le f_{k,x}(1)\le (x+1) 
+ \lim_{k\to\infty}f_{k,x}(1)=x+1 
+x>-1\iff \underline{x+1}=\sqrt{(x+1)^2}=\sqrt{1+2x+x^2}=\sqrt{1+x\cdot(\underline{\underline{x+2}})}
+\begin{align}x>-2\iff \underline{\underline{x+2}}=\sqrt{(x+2)^2}=\sqrt{[(x+1)+1]^2}&=\sqrt{1+2(x+1)+(x+1)^2}=\\&=\sqrt{1+(x+1)(\underline{\underline{\underline{x+3}}})}\end{align}
+\to x+1=\sqrt{1+x\sqrt{1+(x+1)(\underline{\underline{x+3}})}}\quad-\quad

@@ -1,0 +1,53 @@
+w''(x)+p(x)w'(x)+q(x)w(x)=r(x)
+w(0)=w_0,\ w'(0)=w_1
+w_{n+2}=\frac{r_{n+2}-(n+1)p_0w_{n+1}-\sum_{k=0}^n w_k (q_{n-k}+kp_{n+1-k})}{(n+1)(n+2)}
+p
+q
+r
+y(x)=\sum_{n=0}^\infty y_n x^n
+\{p_n\},\{q_n\},\{r_n\}
+(-R,R)
+\forall w_0,w_1
+(-R,R)
+ w(x)
+\{w_n\}
+w(x)=\sum_{n=0}^\infty w_n x^n
+x_0
+|x_0|<R
+T
+|x_0|<T<R
+|w_n| T^n
+\sum w_nx^n
+\ge T
+x_0
+T
+\sum r_n x^n
+r_n T^n \to 0
+A
+n
+C
+n
+p
+|p_n| T^n \to 0
+p_0T/(n+2) \to 0
+n \to \infty
+(T^2C)/(n+2) \to 0
+n \to \infty
+N \in \mathbb N
+n \ge N
+K
+|w_n| T^n \le K
+n \in \mathbb N
+0 \le n \le N+1
+K
+n+1
+n+2
+n > N
+|w_{n+1}|T^{n+2} \le 4 K/4 =K
+ |r_n| T^n \le A\qquad\text{for all $n$}. 
+ |q_n|T^n \le C \qquad\text{for all $n$}. 
+ \frac{2}{n(n+1)}\sum_{k=0}^n k|p_{n+1-k}|T^{n+1-k} \to 0 
+ \frac{|p_0|T}{n+2} \le \frac{1}{4},\qquad \frac{T^2C}{n+2} \le \frac{1}{4},\qquad \frac{T}{(n+1)(n+2)}\sum_{k=0}^n k|p_{n+1-k}|T^{n+1-k} \le \frac{1}{4} 
+ 4A,\quad |w_0|, |w_1| T, |w_2|T^2, |w_3| T^2,\cdots, |w_N|T^N, |w_{N+1}|T^{N+1} . 
+ w_{n+2}T^{n+2} = \frac{r_{n+2}T^{n+2}-(n+1)p_0 T w_{n+1}T^{n+1} -\sum_{k=0}^n w_kT^k(T^2q_{n-k}T^{n-k}+kTp_{n+1-k}T^{n+1-k})}{(n+1)(n+2)} 
+\begin{align} \frac{|r_{n+2}|T^{n+2}}{(n+1)(n+2)} &\le\frac{A}{(n+1)(n+2)} \le A \le \frac{1}{4}\;K \\ \frac{(n+1)|p_0| T |w_{n+1}|T^{n+1}}{(n+1)(n+2)} &\le \frac{|p_0| T K}{(n+2)} \le \frac{1}{4}\;K \\ \frac{\sum_{k=0}^n |w_k|T^k T^2|q_{n-k}|T^{n-k}}{(n+1)(n+2)} &\le \frac{(n+1)}{(n+1)(n+2)}K T^2 C \le \frac{1}{4}\;K \\ \frac{\sum_{k=0}^n |w_k|T^k kT|p_{n+1-k}|T^{n+1-k}}{(n+1)(n+2)} &\le \frac{KT}{(n+1)(n+2)}\sum_{k=0}^n k|p_{n+1-k}|T^{n+1-k} \le  \frac{1}{4}\;K \end{align}

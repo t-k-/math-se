@@ -1,0 +1,9 @@
+\displaystyle \int_{0}^{\infty} x^{s-1} \cos x \ dx = \int_{0}^{\infty} x^{s-1} {}_0F_1 \left(-;\frac{1}{2};\frac{-x^{2}}{4} \right) \ dx 
+\displaystyle u = \frac{x^{2}}{4}
+\displaystyle = 2^{s-1} \int_{0}^{\infty} u^{\frac{s}{2}- 1} {}_0F_1 \left(-;\frac{1}{2};-u \right) \ du
+ \displaystyle= 2^{s-1} \Gamma \left(\frac{s}{2} \right) \frac{\Gamma\left( \frac{1}{2} \right)}{\Gamma \left( \frac{1}{2}-s \right)}
+ = \displaystyle \pi \frac{\Gamma(s)}{\Gamma \left(\frac{s}{2} + \frac{1}{2}\right) \Gamma \left( \frac{1}{2}-s \right)} 
+ \displaystyle \Gamma(s) \cos \left(\frac{\pi s}{2} \right)
+\displaystyle 2^{s-1} \int_{0}^{\infty} u^{\frac{s}{2}- 1} {}_0F_1 \left(-;\frac{1}{2};-u \right) \ du =  2^{s-1} \Gamma \left(\frac{s}{2} \right) \frac{\Gamma\left( \frac{1}{2} \right)}{\Gamma \left( \frac{1}{2}-\frac{s}{2} \right)}
+  \displaystyle = \pi \frac{\Gamma(s)}{\Gamma \left(\frac{s}{2} + \frac{1}{2}\right) \Gamma \left( \frac{1}{2}-\frac{s}{2} \right)} = \pi \frac{\Gamma(s)}{\Gamma \left(\frac{s+1}{2}\right) \Gamma \left( 1- \frac{s+1}{2} \right)} 
+ = \displaystyle \Gamma(s) \sin \left(\pi\frac{s+1}{2} \right) = \Gamma(s) \cos \left(\frac{\pi s}{2} \right)

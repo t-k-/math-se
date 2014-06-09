@@ -1,0 +1,39 @@
+y_1
+y_2
+ y''+y'+xy=0  
+C_{k+2}=(-(k+1)\cdot C_{k+1}-C_{k-1})/((k+2)\cdot(k+1))
+C_{2}=-C_{1}/2
+y=\sum a_kx^k
+xy=\sum a_kx^{k+1}=\sum a_{k-1}x^k
+y'=\sum ka_kx^{k-1}=\sum(k+1)a_{k+1}x^k
+y''=\sum k(k+1)a_{k+1}x^{k-1}=\sum(k+1)(k+2)a_{k+2}x^k
+0=\sum(a_{k-1}+(k+1)a_{k+1}+(k+1)(k+2)a_{k+2})x^k
+a_{k-1}+(k+1)a_{k+1}+(k+1)(k+2)a_{k+2}=0
+(x+k)^2(a_1(x+k)^n+a_2)y''+(x+k)(b_1(x+k)^n+b_2)y'+(c_1(x+k)^n+c_2)y=0
+y''+y'+xy=0
+(x+k)^2(a_1(x+k)^n+a_2)y''+(x+k)(b_1(x+k)^n+b_2)y'+(c_1(x+k)^n+c_2)y=0
+(x+k)^2(a_1(x+k)^n+a_2)y''+(x+k)(b_1(x+k)^n+b_2)y'+(c_1(x+k)^n+c_2)y=0
+y=e^{ax}u
+y'=e^{ax}u'+ae^{ax}u
+y''=e^{ax}u''+ae^{ax}u'+ae^{ax}u'+a^2e^{ax}u=e^{ax}u''+2ae^{ax}u'+a^2e^{ax}u
+\therefore e^{ax}u''+2ae^{ax}u'+a^2e^{ax}u+e^{ax}u'+ae^{ax}u+xe^{ax}u=0
+e^{ax}u''+(2a+1)e^{ax}u'+(x+a^2+a)e^{ax}u=0
+u''+(2a+1)u'+(x+a^2+a)u=0
+a=-\dfrac{1}{2}
+u''+\left(x-\dfrac{1}{4}\right)u=0
+(x+k)^2(a_1(x+k)^n+a_2)y''+(x+k)(b_1(x+k)^n+b_2)y'+(c_1(x+k)^n+c_2)y=0
+u=\sum\limits_{n=0}^\infty a_n\left(x-\dfrac{1}{4}\right)^n
+u'=\sum\limits_{n=0}^\infty na_n\left(x-\dfrac{1}{4}\right)^{n-1}=\sum\limits_{n=1}^\infty na_n\left(x-\dfrac{1}{4}\right)^{n-1}
+u''=\sum\limits_{n=1}^\infty n(n-1)a_n\left(x-\dfrac{1}{4}\right)^{n-2}=\sum\limits_{n=2}^\infty n(n-1)a_n\left(x-\dfrac{1}{4}\right)^{n-2}
+\therefore\sum\limits_{n=2}^\infty n(n-1)a_n\left(x-\dfrac{1}{4}\right)^{n-2}+\left(x-\dfrac{1}{4}\right)\sum\limits_{n=0}^\infty a_n\left(x-\dfrac{1}{4}\right)^n=0
+\sum\limits_{n=2}^\infty n(n-1)a_n\left(x-\dfrac{1}{4}\right)^{n-2}+\sum\limits_{n=0}^\infty a_n\left(x-\dfrac{1}{4}\right)^{n+1}=0
+\sum\limits_{n=2}^\infty n(n-1)a_n\left(x-\dfrac{1}{4}\right)^{n-2}+\sum\limits_{n=3}^\infty a_{n-3}\left(x-\dfrac{1}{4}\right)^{n-2}=0
+2a_2+\sum\limits_{n=3}^\infty(n(n-1)a_n+a_{n-3})\left(x-\dfrac{1}{4}\right)^{n-2}=0
+\therefore\begin{cases}2a_2=0\\n(n-1)a_n+a_{n-3}=0\end{cases}
+\begin{cases}a_2=0\\a_n=-\dfrac{a_{n-3}}{n(n-1)}\end{cases}
+\therefore\begin{cases}a_0=a_0\\a_{3n}=\dfrac{(-1)^na_0}{(2\times3)(5\times6)(8\times9)......((3n-1)3n)}\forall n\in\mathbb{N}\\a_1=a_1\\a_{3n+1}=\dfrac{(-1)^na_1}{(3\times4)(6\times7)(9\times10)......(3n(3n+1))}\forall n\in\mathbb{N}\\a_{3n+2}=0~\forall n\in\mathbb{Z}^*\end{cases}
+\begin{cases}a_0=a_0\\a_{3n}=\dfrac{(-1)^n(4\times7\times10\times......(3n+1))a_0}{2\times3\times4\times5\times6\times7\times8\times9\times10\times......(3n-1)3n(3n+1)}\forall n\in\mathbb{N}\\a_1=a_1\\a_{3n+1}=\dfrac{(-1)^n(2\times5\times8\times......(3n-1))a_1}{2\times3\times4\times5\times6\times7\times8\times9\times10\times......(3n-1)3n(3n+1)}\forall n\in\mathbb{N}\\a_{3n+2}=0~\forall n\in\mathbb{Z}^*\end{cases}
+\begin{cases}a_0=a_0\\a_{3n}=\dfrac{(-1)^n\biggl(\prod\limits_{k=1}^n(3k+1)\biggr)a_0}{(3n+1)!}\forall n\in\mathbb{N}\\a_1=a_1\\a_{3n+1}=\dfrac{(-1)^n\biggl(\prod\limits_{k=1}^n(3k-1)\biggr)a_1}{(3n+1)!}\forall n\in\mathbb{N}\\a_{3n+2}=0~\forall n\in\mathbb{Z}^*\end{cases}
+\begin{cases}a_{3n}=\dfrac{(-1)^n\biggl(\prod\limits_{k=0}^n(3k+1)\biggr)a_0}{(3n+1)!}\forall n\in\mathbb{Z}^*\\a_1=a_1\\a_{3n+1}=\dfrac{(-1)^n\biggl(\prod\limits_{k=1}^n(3k-1)\biggr)a_1}{(3n+1)!}\forall n\in\mathbb{N}\\a_{3n+2}=0~\forall n\in\mathbb{Z}^*\end{cases}
+\therefore y=C_1e^{-\frac{1}{2}\left(x-\frac{1}{4}\right)}\sum\limits_{n=0}^\infty\dfrac{\biggl((-1)^n\prod\limits_{k=0}^n(3k+1)\biggr)\left(x-\dfrac{1}{4}\right)^{3n}}{(3n+1)!}+C_2e^{-\frac{1}{2}\left(x-\frac{1}{4}\right)}\biggl(x-\dfrac{1}{4}+\sum\limits_{n=1}^\infty\dfrac{(-1)^n\biggl(\prod\limits_{k=1}^n(3k-1)\biggr)\left(x-\dfrac{1}{4}\right)^{3n+1}}{(3n+1)!}\biggr)=C_1\biggl(\sum\limits_{n=0}^\infty\dfrac{(-1)^n}{2^nn!}\left(x-\dfrac{1}{4}\right)^n\biggr)\sum\limits_{n=0}^\infty\dfrac{\biggl((-1)^n\prod\limits_{k=0}^n(3k+1)\biggr)\left(x-\dfrac{1}{4}\right)^{3n}}{(3n+1)!}+C_2\biggl(\sum\limits_{n=0}^\infty\dfrac{(-1)^n}{2^nn!}\left(x-\dfrac{1}{4}\right)^n\biggr)\biggl(x-\dfrac{1}{4}+\sum\limits_{n=1}^\infty\dfrac{(-1)^n\biggl(\prod\limits_{k=1}^n(3k-1)\biggr)\left(x-\dfrac{1}{4}\right)^{3n+1}}{(3n+1)!}\biggr)
+\dfrac{1}{4}

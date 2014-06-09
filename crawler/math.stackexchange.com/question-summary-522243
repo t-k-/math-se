@@ -1,0 +1,30 @@
+A, B
+C
+C \subseteq A
+A - (B - C) = (A - B) \cup C
+x \in A-(B-C) \Longleftrightarrow x \in A \neg \wedge (x \in B \wedge x \notin C) \Longleftrightarrow x \in A \wedge x \notin B \vee x \in C \Longleftrightarrow (x \in A \wedge x \notin B) \vee x \in C \Longleftrightarrow x \in (A-B) \cup C
+C \subseteq A
+x\in A-(B-C)
+\implies x\in A \land \neg x\in(B-C)
+\implies x\in A \land \neg(x\in B \land \neg x\in C)
+ \implies x\in A \land (\neg x\in B \vee x \in C) \qquad De\, Morgan \,Rule
+ \implies (x\in A \land \neg x\in B) \vee (x\in A \land x\in C) \qquad Distribution \, of \, and \, on \, or (1)
+C \subseteq A
+\forall x, x\in C \implies x\in A  \qquad (2) 
+x\in (A-B) \vee x\in C \qquad
+\implies x \in (A-B) \cup C
+(A-(B-C)) \subset (A-B) \cup C 
+x\in A\setminus(B\setminus C)\leftrightarrow x\in A\wedge x\notin(B\setminus C)
+\leftrightarrow x\in A\wedge\lnot(x\in B\wedge x\notin C)
+\leftrightarrow x\in A\wedge(x\notin B\vee x\in C)
+\leftrightarrow(x\in A\wedge x\notin B)\vee(x\in A\wedge x\in C)
+\leftrightarrow(x\in A\setminus B)\vee x\in C\leftrightarrow x\in(A\setminus B)\cup C
+C\subseteq A
+\;x \in A \land (x \not\in B \lor x \in C)\;
+\;\land\;
+\;\lor\;
+\;-\;
+\;\cup\;
+\;x \in C\;
+\;\land\;
+\;\subseteq\;

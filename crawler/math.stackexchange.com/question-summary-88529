@@ -1,0 +1,24 @@
+F_n = 0, 1, 1, 2, 3, 5, 8,\dots
+0.0112358\dots\approx 1/89
+\sum_{n=0}^{\infty}\frac{F_n}{10^n} = \frac{10}{89}
+p > 1
+\sum_{n=0}^{\infty}\frac{F_n}{p^n} = \frac{p}{p^2-p-1}
+p = 10
+F_n=\frac{\phi^n-(-\phi)^{-n}}{\sqrt 5}
+\begin{align*}\sum_{n=0}^{\infty}\frac{F_n}{p^n}&=\frac1{\sqrt 5}\left(\frac1{1-\phi/p}-\frac1{1+(p\phi)^{-1}}\right)\\&=\frac{p(\phi^2+1)/(\sqrt 5)}{(p-\phi)(p\phi +1)}\\&=\frac{p\phi}{\phi p^2-(\phi^2-1)p-\phi}\\&=\frac{p\phi}{\phi p^2-\phi p-\phi}\\&=\frac{p}{p^2-p-1}\end{align*}
+f(z) = \sum\limits_{n=0}^\infty F_nz^n
+zf(z) + z^2f(z) = \sum_{n=1}^\infty {F_{n-1}z^n} + \sum_{n=2}^\infty F_{n-2}z^n =
+F_0z + \sum_{n=2}^\infty (F_{n-2}+F_{n-1})z^n =F_0z + (f(z)-F_0 - F_1z)
+F_0=0, F_1=1
+f(z)
+f(z)=\frac{z}{1-z-z^2}
+z=\dfrac{1}p
+z=\dfrac{1}{p}
+F_i
+\frac{(k-1)k^{n+1}F_{n+1}-k^{n+2}F_{n+2}+k}{1-k-k^2}+k^{n+1}F_{n+1}= \frac{-k^{n+3}F_{n+1}-k^{n+2}F_{n+2}+k}{1-k-k^2}=
+\frac{-k^{n+3}(F_{n+3}-F_{n+2})-k^{n+2}F_{n+2}+k}{1-k-k^2}= \frac{(k-1)k^{n+2}F_{n+2}-k^{n+3}F_{n+3}+k}{1-k-k^2}
+A=\begin{pmatrix} 0 & 1\\ 1 & 1 \end{pmatrix}
+A^n= \begin{pmatrix} F_{n-1} & F_n\\ F_n & F_{n+1} \end{pmatrix} 
+(Ak-I)^{-1}=\begin{pmatrix}-1&k\\k&k-1\end{pmatrix}^{-1}= \frac1{1-k-k^2}\begin{pmatrix} k-1& -k \\ -k & -1 \end{pmatrix}
+A^{n+1}k^{n+1}-I=\begin{pmatrix} k^{n+1}F_n-1 & k^{n+1}F_{n+1}\\ k^{n+1}F_{n+1} & k^{n+1}F_{n+2}-1 \end{pmatrix}
+\sum_{k=0}^n (Ak)^i = (A^{n+1}k^{n+1}-I)(Ak-I)^{-1}

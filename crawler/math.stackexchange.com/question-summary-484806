@@ -1,0 +1,16 @@
+\sigma
+m
+ \ln L = -\frac{n}{2}\ln2 \pi - n \ln \sigma - \sum_{i=1}^n\dfrac{1}{2\sigma^2}(x_i - m)^2 
+ \dfrac{\partial \ln L}{\partial \sigma} = - \dfrac{n}{\sigma} +  \sum_{i=1}^n\dfrac{1}{\sigma^3}(x_i - m)^2 = 0
+ \dfrac{\partial \ln L}{\partial m} = \sum_{i=1}^n\dfrac{1}{\sigma^2}(x_i - m) = 0 
+ m = \dfrac{\sum_{i=1}^n x_i}{n} 
+ \sigma = \sqrt{\dfrac{\sum_{i=1}^n\left(x_i - \dfrac{\sum_{i=1}^n x_i}{n}\right)^2}{n}}
+  A = \dfrac{\partial^2 \ln L}{\partial \sigma^2} = \dfrac{n}{\sigma^2} -  \sum_{i=1}^n\dfrac{3}{\sigma^4}(x_i - m)^2 = \dfrac{-2n^2}{\sum_{i=1}^n\left(x_i - \dfrac{\sum_{i=1}^n x_i}{n}\right)^2} 
+ C = \dfrac{\partial^2 \ln L}{\partial m^2} = -\dfrac{n}{\sigma^2} = -\dfrac{n^2}{\sum_{i=1}^n\left(x_i - \dfrac{\sum_{i=1}^n x_i}{n}\right)^2} 
+ B^2 = \left(\dfrac{\partial^2 \ln L}{\partial m \partial \sigma}\right)^2 =  \left(\dfrac{-2\sum_{i=1}^n (x_i-m)}{\sigma^3}\right)^2 = \dfrac{4\left[\sum_{i=1}^n\left(x_i - \dfrac{\sum_{i=1}^n x_i}{n}\right)\right]^2}{\left(\sum_{i=1}^n(x_i - m)^2\right)^3} 
+AC - B^2 > 0
+\frac{\sum_{i=1}^{n}x_i}{n}=\bar{x}
+B
+\sum_{i=1}^n x_i - \bar{x} = (\sum_{i=1}^n x_i )- n\bar{x} = n\bar{x} - n\bar{x} = 0
+B=0
+AC > 0

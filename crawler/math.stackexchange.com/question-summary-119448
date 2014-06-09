@@ -1,0 +1,23 @@
+μ_1^+, μ_1^-, μ_2^+, μ_2^-
+ \mu_1=\mu_1^+-\mu_1^-
+     \mu_2=\mu_2^+-\mu_2^- 
+\mu_1^+ +\mu_1^-
+     \int_X \! f \, d\mu = \left(\int_X \! f \, d\mu_1^+ - \int_X \! f \, d\mu_1^-\right) + i \left(\int_X \! f \, d\mu_2^+ - \int_X \! f \, d\mu_2^-\right) \tag{1} 
+     \int_X \! f \, d\mu = \int_X \! \Re(f) \, d\mu + i \int_X \! \Im(f) \, d\mu. \tag{2}  
+[d]\Re(\mu)
+d\mu = (\cos(x)+ i \sin(x))\ dx
+[0,2\pi]
+d\mu_1 = \cos(x)\ dx
+d\mu_2 = \sin(x)\ dx
+d\mu_1 = d\mu_1^+ - d\mu_1^-
+d\mu_1^+ = \rho_1^+(x)\ dx
+d\mu_1^- = \rho_1^-(x)\ dx
+\rho_1^+(x) = \max(\cos(x),0)
+\rho_1^-(x) = -\min(\cos(x),0)
+d\mu_2 = d\mu_2^+ - d\mu_2^-
+d\mu_1^+
+d\mu_1^-
+d\mu_2^+
+d\mu_2^-
+\int_X f\ d\mu
+\int_X f\ d\mu_1^+ - \int_X f\ d\mu_1^- + i \int_X f \ d\mu_2^+ - i \int_X f \ d\mu_2^-

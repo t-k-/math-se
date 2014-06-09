@@ -1,0 +1,24 @@
+p
+q
+[0,1]
+x=\min\{p,q\}
+y=1-\max\{p,q\}
+z=1-x-y
+x
+y
+z
+F_X(x) = 1 - (1-x)^2
+F_Y(x) = 1 - (1-y)^2
+z
+f_Z(z) = P(1-x-y = z) = P(x+y = 1-z) = \int_{0}^{1-z} P(X = 1-z-k)P(Y = k)dk
+\int_{0}^{1-z}\frac{2}{z+k} \frac{2}{1-k}dk
+z
+\left|p-q\right|
+F_z(t)
+|p-q|<t
+p
+q
+t
+t
+(1-t)^2/2
+F_z(t)=1-(1-t)^2

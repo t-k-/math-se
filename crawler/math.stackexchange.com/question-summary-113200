@@ -1,0 +1,14 @@
+f:[0,1]\times[0,1] \rightarrow \mathbb{R}
+ F(t) := \int_{0}^{1} f(x,t)dx 
+ F'(t) = \int_{0}^{1}g(x,t)dx 
+\underset{n \rightarrow \infty}{lim} g_n = g(x, t)
+M'
+n
+g_n
+M'
+g_n(x,t) := \frac{f(x, t + \frac{1}{n}) - f(x,t)}{\frac{1}{n }}.
+ F'_n(t) := \frac{\int_{0}^{1} f(x,t + \frac{1}{n})dx - \int_{0}^{1} f(x,t)}{\frac{1}{n}}dx 
+F'_n(t) = \int_{0}^{1} g_n(t)dx
+\underset{n \rightarrow \infty}{lim} F'_n(t) = \int_{0}^{1}g(x,t)dx
+f
+[0,1]\times[0,1]

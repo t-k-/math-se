@@ -1,0 +1,17 @@
+X
+Y
+I_{x,y}(\theta) = I_x(\theta) + I_y(\theta)
+ {\rm E}_\theta \left[\left( \frac {\partial}{\partial\theta} \log f_\theta^{xy} (x,y)\right)^2 \right] ={\rm E}_\theta \left[\left( \frac {\partial}{\partial\theta} \log f_\theta^{x} (x)\right)^2 \right]  + {\rm E}_\theta \left[\left( \frac {\partial}{\partial\theta} \log f_\theta^{y} (y)\right)^2 \right]  + {\rm E}_\theta \left[\left( \frac {\partial}{\partial\theta} \log f_\theta^{y} (y)\right) \left( \frac {\partial}{\partial\theta} \log f_\theta^{x} (x)\right) \right]  
+X
+Y
+\theta
+(X,Y)
+(x,y)
+\theta
+(X,Y)
+{\rm E}
+\frac{\partial}{\partial\theta}
+ f_{(X,Y)}(x,y;\theta)=f_X(x;\theta)\cdot f_Y(y;\theta)\tag{1} 
+ I_{(X,Y)}(\theta)={\rm E}\left[\left(\frac{\partial}{\partial\theta}\log f_{(X,Y)}(X,Y;\theta)\right)^2\right]. 
+ {\rm E}\left[\frac{\partial}{\partial\theta}\log f_{(X,Y)}(X,Y;\theta)\right]=0 
+ I_{(X,Y)}(\theta)=\mathrm{Var}\left(\frac{\partial}{\partial\theta}\log f_{(X,Y)}(X,Y;\theta)\right). 

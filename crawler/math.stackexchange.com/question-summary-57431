@@ -1,0 +1,67 @@
+ \xmean{#1} 
+ \xmean{\negthinspace\xmean{#1}\negthinspace} 
+\def\\{\backslash } \def\xmean#1{< \negthinspace #1 \negthinspace > } \def\mean#1{\hbox{$ \xmean{#1} $}} \def\cov#1{\hbox{$ \xmean{\negthinspace\xmean{#1}\negthinspace} $}} \def\hq{\ } \def\q{\quad} \def\qq{\q\q} \def\qqq{\qq\q} \def\qqqq{\qqq\q}
+polar
+L
+\theta
+x
+L
+\theta
+L
+(u, v)
+L
+u\cos \theta + v \sin \theta - r
+L:~~  x\cos \theta + y \sin \theta ~=~r.
+c~=~\cos \theta
+s~=~\sin \theta
+L
+cx+sy~=~r
+L
+(x_i, y_i)
+i=1
+n
+n
+\mean{f} 
+\mean{x} ~=~(1/n)\sum_{i=1}^n x_i
+\mean{xy} ~=~(1/n)\sum_{i=1}^n x_i y_i
+\mean{f} 
+\mean{f} ~=~(1/n)\sum_{i=1}^n f_i.
+p
+q
+p
+q
+\cov{p,q}~=~\mean{pq} -\mean{p} \mean{q},
+\cov{x,x}~=~\mean{x^2}-\mean{x}^2 \hq{\rm and}\hq \cov{x,y}~=~\mean{xy}-\mean{x}\mean{y}.
+L
+\eqalignno{ D &~=~ \mean{({\rm distance\;from\;point\;}i{\rm\;to\;}L)^2} \cr &~=~ \mean{(cx+sy-r)^2} \cr &~=~ \mean{c^2x^2+s^2y^2+r^2 + 2csxy-2crx-2sry} \cr &~=~ c^2\mean{x^2} +s^2\mean{y^2} +r^2+ 2sc\mean{xy} -2cr\mean{x} -2sr\mean{y}.\cr }
+L
+\partial D / \partial r=0
+\partial D / \partial \theta=0
+r
+\theta
+D
+D
+r
+\theta
+S=\sin 2\theta =2sc
+C=\cos 2\theta=c^2-s^2
+c^2=(1+C)/2
+s^2=(1-C)/2
+R
+\phi
+D_2=R\cos\phi
+D_3=R\sin\phi
+R \ge 0
+0 \le \phi < 2\pi
+D
+\eqalignno{ D~&=~ c^2\mean{x^2} +s^2\mean{y^2} +2sc\mean{xy} +r^2 -2r(c\mean{x} +s\mean{y})\cr &=~ c^2\mean{x^2} +s^2\mean{y^2} +2sc\mean{xy} +(r-c\mean{x} -s\mean{y})^2 -(c\mean{x} +s\mean{y})^2\cr &=~c^2(\mean{x^2}-\mean{x}^2)  + s^2(\mean{y^2}-\mean{y}^2) + 2sc(\mean{xy}-\mean{x}\mean{y}) +(r-c\mean{x} -s\mean{y})^2\cr &=~c^2\cov{x,x} + s^2\cov{y,y}+2sc\cov{x,y} +(r-c\mean{x} -s\mean{y})^2.\cr }
+\eqalignno{ D~&=~{\cov{x,x}+\cov{y,y} \over 2} + C {\cov{x,x}-\cov{x,y} \over 2} + S \cov{x,y} +(r-c\mean{x} -s\mean{y})^2\cr &=~D_1+C~D_2+S~D_3 +(r-c\mean{x} -s\mean{y})^2\cr }
+D_1={\cov{x,x} +\cov{y,y} \over 2},\hq D_2={\cov{x,x} -\cov{y,y} \over 2},\hq {\rm and}\hq D_3=\cov{x,y}.
+\eqalignno{ D~&=~D_1+R\cos 2\theta\cos\phi+R\sin 2\theta\sin\phi +(r-c\mean{x} -s\mean{y})^2\cr &=~D_1+R\cos(2\theta-\phi) +(r-c\mean{x} -s\mean{y})^2.\cr }
+\cos(2\theta-\phi) \ge -1
+(r-c\mean{x}-s\mean{y})^2 \ge 0
+D \ge D_1-R
+\theta=(\phi+\pi)/2
+r=\mean{x}\cos\theta + \mean{y}\sin\theta
+D
+D_1 - R

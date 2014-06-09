@@ -1,0 +1,23 @@
+a(x,y) u_{xx}+2 b(x,y) u_{xy}+c(x,y) u_{yy}=d(x,y,u,u_x,u_y)
+A u_{\xi \xi}+ 2B u_{\xi \eta}+C u_{\eta \eta}=D
+A=a \xi_x^2+2b \xi_y \xi_x+c \xi_y^2 
+B=a \xi_x \eta_x +b \eta_x \xi_y+b\eta_y \xi_x+c \xi_y \eta_y
+C=a \eta_x^2 +2b \eta_x \eta_y+c \eta_y^2 
+\frac{dy}{dx}=\frac{1}{a} ( b \pm \sqrt{b^2-ac})
+A=C
+B=0
+A-C=0 \Rightarrow a (\xi_x^2-\eta_x^2)+2b (\xi_x \xi_y - \eta_x \eta_y) + c(\xi_y^2-\eta_y^2)=0 \ \ \ (1)
+B=0 \Rightarrow a \xi_x \eta_x+b (\xi_x \eta_y+ \xi_y \eta_x)+c \xi_y \eta_y=0 \ \ \ (2)
+(1)+2 i (2):
+a(\xi_x^2-\eta_x^2+2 i \xi_x \eta_x)+2b(\xi_x \xi_y-\eta_x \eta_y+i(\xi_x \eta_y+\xi_y \eta_x)+c(\xi_y^2-\eta_y^2+2i \xi_y \eta_y)=0
+a(\xi_x+i \eta_x)^2+2b ( \xi_x+i \eta_x)(\xi_y+i \eta_y)+c(\xi_y+i \eta_y)^2=0
+\zeta=\xi+i \eta
+a \zeta_x^2+2b \zeta_x \zeta_y+c \zeta_y^2=0
+a (\frac{\zeta_x}{\zeta_y})^2+2b (\frac{\zeta_x}{\zeta_y})+c=0
+\frac{\zeta_x}{\zeta_y}=-\frac{1}{a}(b \pm \sqrt{b^2-ac})=-\frac{1}{a}(b \pm i \sqrt{ac-b^2})
+\frac{\xi_x+i \eta_x}{\xi_y+i \eta_y}=- \frac{1}{a}(b \pm i \sqrt{ac-b^2})
+\left.\begin{matrix} \xi_x=\frac{1}{(ac-b^2)^{1/2}}(b \eta_x+c \eta_y) \\  \xi_y=\frac{-1}{(ac-b^2)^{1/2}}(a \eta_x+b \eta_y) \end{matrix}\right\} \text{ Bertami equation }
+A(u_{\xi \xi}+u_{\eta \eta})=D \overset{A \neq 0}{\Rightarrow} u_{\xi \xi}+u_{\eta \eta}=F(\xi, \eta, u, u_{\xi}, u_{\eta})
+A=C
+B=0
+(1)+2i (2)

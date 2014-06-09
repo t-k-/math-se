@@ -1,0 +1,9 @@
+y(t)= \int_{-\infty}^{t-2} \tau \cdot x(2\tau)d\tau 
+y_1(t)=\int_{-\infty}^{t-2}\tau x_1(2\tau)d\tau=\int_{-\infty}^{t-2}\tau x(2\tau-t_0)d\tau=\int_{-\infty}^{t-2-t_0/2}(\tau+t_0/2) x(2\tau)d\tau \neq y(t-t_0)
+x=1_{ [0,2] }
+t > 100
+y_{x}(t) = \int_{-\infty}^{98} \tau  1_{ [0,2] }(2 \tau) d \tau = \int_0^1 \tau d \tau = {1 \over 2}
+x' = 1_{ [2,4] } 
+x'(t) = x(t-2)
+y_{x'}(t) = \int_{-\infty}^{98} \tau  1_{ [2,4] }(2 \tau) d \tau = \int_1^2 \tau d \tau = {3 \over 2}
+y_{x'}(t) = y_x (t-2)

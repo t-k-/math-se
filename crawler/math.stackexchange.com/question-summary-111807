@@ -1,0 +1,14 @@
+f: \mathbb{R} \rightarrow \mathbb{R}
+\int_{-\infty} ^\infty |f(t)|\,dt < +\infty
+x\in \mathbb{R}
+\sum_{n=1}^\infty f(nx+n!)
+g(x):=\sum_{n=1}^\infty f(nx+n!)
+\mathbb{R}
+f
+0<\int\limits_{\mathbb{R}}f(x)d\mu(x)<+\infty
+g_n(x)=f(nx+n!)
+g(x)=\sum\limits_{n=1}^\infty g_n(x)
+g
+ \int\limits_{\mathbb{R}}g(x)d\mu(x)= \int\limits_{\mathbb{R}}\sum\limits_{n=1}^\infty g_n(x) d\mu(x)= \sum\limits_{n=1}^\infty\int\limits_{\mathbb{R}} g_n(x) d\mu(x) 
+ \int\limits_{\mathbb{R}} g_n(x) d\mu(x)= \int\limits_{\mathbb{R}} f(nx+n!) d\mu(x)= \int\limits_{\mathbb{R}} f(nx) d\mu(x)= \frac{1}{n}\int\limits_{\mathbb{R}} f(x) d\mu(x) 
+ \int\limits_{\mathbb{R}}g(x)d\mu(x)= \sum\limits_{n=1}^\infty\frac{1}{n}\int\limits_{\mathbb{R}} f(x) d\mu(x)= \int\limits_{\mathbb{R}} f(x) d\mu(x)\left(\sum\limits_{n=1}^\infty\frac{1}{n}\right)=+\infty 

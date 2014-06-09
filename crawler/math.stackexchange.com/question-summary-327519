@@ -1,0 +1,17 @@
+L^2(\mathbb{R}^6)
+f\in H^{\frac{1}{2}}(\mathbb{R}^3)
+x,y\in\mathbb{R}^3
+\lambda>0
+m>0
+H^{\frac{1}{2}}(\mathbb{R}^3)\subset L^2(\mathbb{R}^3) 
+2x\cdot y\geq -x^2-y^2
+F(x,y)=\frac{f(x)}{x^2+y^2+\frac{2}{m+1}x\cdot y+\lambda}
+ x^2+y^2+\frac{2}{m+1}x\cdot y+\lambda\geq\frac{m}{m+1}x^2+\frac{m}{m+1}y^2+\lambda 
+F(x,y)\le \dfrac{f(x)}{Cx^2+Cy^2+\lambda}
+\|f\|\le M
+\int_{\mathbb{R}^6}\dfrac{f^2(x)}{(Cx^2+Cy^2+\lambda)^2}dx_1 dx_2 dx_3 dy_1dy_2dy_3\le\int_{\mathbb{R}^6}\dfrac{f^2(x)}{(Cy^2+\lambda)^2}dx_1 dx_2 dx_3 dy_1dy_2dy_3\le M^2\int_{\mathbb{R}^3}\dfrac{1}{(Cy^2+\lambda)^2}dy_1dy_2dy_3 = \int_0^{\infty}\int_0^{2\pi} \dfrac{1}{(Cr^2+\lambda)^2}r^2\sin(\theta)drd\theta = C_1\int_0^{\infty} \dfrac{1}{(Cr^2+\lambda)^2}r^2dr
+r
+\dfrac{1}{Cr^2+\lambda}\sim\dfrac{1}{\lambda}
+r
+\dfrac{1}{Cr^2+\lambda}\sim\dfrac{1}{Cr^2}
+C_1\int_0^{\infty} \dfrac{1}{(Cr^2+\lambda)^2}r^2dr = \left(\int_0^{1} +\int_1^{\infty}\right)\dfrac{1}{(Cr^2+\lambda)^2}r^2dr\le\int_0^1 \dfrac{1}{\lambda^2}r^2dr+\int_1^{\infty}\dfrac{1}{C^2r^4}r^2dr

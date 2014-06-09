@@ -1,0 +1,36 @@
+n\to\infty
+\Omega
+\Theta
+n\to\infty
+x\to 0
+3n^2+4=5n^2+7n
+\tag{1} 3n^2+4 = O(n^2)
+\tag{2} 5n^2+7n = O(n^2)
+\tag{3} O(n^2)=3n^2+4,
+(1)
+(2)
+ O(E) := \bigcup_{f(n) \in E} O(f(n)). 
+E
+E_1
+E_2
+O(f(n))
+f(n)
+\{ f(n) \}
+5 + O(n) + O(n^2)\log(O(n^3))
+O(2^{n^2 + O(n)})
+O(\cdot)
+ \{  5 + f(n) + g(n) \log h(n) \ : \ f(n) \in O(n), \quad g(n) \in O(n^2), \quad h(n) \in O(n^3)  \}.  
+f(n) = E
+n = O(n^2)
+f(n)
+\{ f(n) \}
+f(n) = E
+f(n) \in E
+f(n) \in E \iff \lbrace f(n) \rbrace \subseteq E
+O(f(n))
+O(f(n))
+\mathcal{O}
+n\to\infty
+\mathcal{O}_{n\to\infty}(f(n)) = \Big\{g:\mathbb N\to\mathbb R \;\Big|\; \exists N,C\in \mathbb N. \forall n>N. \big[C(f(n))>g(n)\big]\Big\}
+ 5 + O(n) + O(n^2)\log(O(n^3)) = O(n^2\log n)
+\begin{align} &\forall \phi_0\in\mathcal O(n). \forall \phi_1\in\mathcal O(n^2). \forall \phi_2\in\mathcal O(n^3). \exists \psi\in\mathcal O(n^2\log n). \\& \forall n. \big[ 5+\phi_0(n)+\phi_1(n)\log(\phi_2(n)) = \psi(n)\big] \end{align}

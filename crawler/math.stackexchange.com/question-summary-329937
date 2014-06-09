@@ -1,0 +1,17 @@
+f(x) = x^3
+0\leq x \leq L
+\tag 1 f(x) = x^3
+\tag 2 f(x) = x^3 = c_0P_0(x) + c_1P_1(x) + c_2P_2(x) = \frac{3}{5}P_1(x) + \frac{2}{5} P_3(x)
+(2)
+f(-x) = -f(x)
+(1)
+f(x) = \sum_{n=1}^\infty b_n~\sin(n x)
+b_n = \frac{2}{\pi} \int_0^{\pi} f(x)~\sin(n x)~dx
+L
+b_n = \frac{2}{L} \int_0^{L} f(x)~\sin(\frac{n \pi x}{L})~dx
+\displaystyle b_1 = \frac{2}{L} \int_0^{L} x^{3}~\sin(\frac{1 \pi x}{L})~dx = \frac{2 (\pi^2-6) L^3}{\pi^3}
+\displaystyle b_2 = \frac{2}{L} \int_0^{L} x^{3}~\sin(\frac{2 \pi x}{L})~dx = -\frac{(2 \pi^2-3) L^3}{2 \pi^3}
+\displaystyle b_3 = \frac{2}{L} \int_0^{L} x^{3}~\sin(\frac{3 \pi x}{L})~dx = \frac{2 (3 \pi^2-2) L^3}{9 \pi^3}
+\ldots
+\displaystyle b_n = \frac{2}{L} \int_0^{L} x^{3}~\sin(\frac{n \pi x}{L})~dx =  -\frac{2 L^3 (\pi n (\pi^2 n^2-6) \cos(\pi n)-3 (\pi^2 n^2-2) \sin(\pi n))}{(\pi^4 n^4)}
+\ldots

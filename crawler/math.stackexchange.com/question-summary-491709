@@ -1,0 +1,35 @@
+s_1=1
+s_{n+1}=\frac{1}{5}(s_n+7)
+n\geq 1
+\lim_{n \rightarrow \infty} (s_n)= L.
+\lim_{n \rightarrow \infty}(s_n) = \frac{7}{4}.
+\textbf{Claim:}
+(s_n)
+1 \leq s_n < \frac{7}{4}
+\textbf{Proof:}
+n=1
+s_1=1
+1 \leq s_1 < \frac{7}{4}
+n=k
+1 \leq s_k < \frac{7}{4}
+\frac{8}{5} \leq s_{k+1} < \frac{7}{4}
+1 \leq s_{k+1} < \frac{7}{4}
+(s_n)
+n \in \mathbb{N}
+\textbf{Claim:}
+(s_n)
+s_{n+1}-s_n > 0 \, \forall \, n \in \mathbb{N}
+\textbf{Proof:}
+(s_n)
+1 \leq s_n < \frac{7}{4} \Rightarrow  7-4s_n > 0 \Rightarrow \frac{7-4s_n}{5}>0 \Rightarrow  s_{n+1}-s_n > 0 \, \forall \, n \in \mathbb{N}.
+s_n<s_{n+1}
+n \ge 1
+(s_n)
+ s_{n+1}-s_n=\frac15(s_n-s_{n-1}) \quad \forall n \ge 2, 
+\tag{*} s_{n+1}-s_n=\frac{s_2-s_1}{5^{n-1}}=\frac{3}{5^n} \quad \forall n \ge 1.  
+n \ge 1
+(s_n)
+ \lim_ns_n=\lim_n\left(\frac74-\frac34\cdot\frac{1}{5^{n-1}}\right)=\frac74. 
+\begin{align*}\bullet&\;\;s_1=1\le\frac{1+7}5=:s_2\;,\;\;\text{induction now:}\\ s_n:&=\frac15(s_{n-1}+7)\stackrel{\text{ind. hyp.}}\le\frac15(s_n+7)=:s_{n+1}\\{}\\ \bullet\bullet&\;\;\text{Bounded by induction again:}\;\;s_1=1\le 2\;,\;\;s_{n+1}=\frac15(s_n+7)\le\frac15(2+7)\le 2\end{align*}
+\;\alpha\;
+\alpha\leftarrow s_n=\frac15(s_n+7)\to\frac15(\alpha+7)\implies5\alpha=\alpha+7\ldots

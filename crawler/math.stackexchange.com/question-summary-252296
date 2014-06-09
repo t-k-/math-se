@@ -1,0 +1,40 @@
+\exists x (P(x) \lor Q(x)) \equiv \exists x P(x) \lor \exists x Q(x)
+\def\A{\mathfrak A}
+\exists x. P(x) \lor Q(x)
+\A = (A, P^\A, Q^\A)
+a \in A
+a \in P^\A
+a \in Q^\A
+a \in P^\A
+\A \models \exists x.P(x)
+a \in Q^\A
+\A \models \exists x. Q(x)
+\A \models \exists x\, P(x) \lor \exists x \, Q(x)
+\A \models \exists x P(x)\lor \exists x Q(x)
+\A \models \exists x P(x)
+\A \models \exists x Q(x)
+a \in A
+a \in P^\A
+a \in Q^\A
+\A \models \exists x. P(x) \lor Q(x)
+\A
+ \models \bigl(\exists x. P(x) \lor Q(x)\bigr) \equiv \bigl(\exists x\, P(x) \lor \exists x\, Q(x)\bigr) 
+(A \equiv B) \iff [(A\land B) \lor (\lnot A \land \lnot B)] \equiv [(A\land B) \lor \lnot(A \lor B)]
+(A \equiv B)\; \text{ means}\;\; (A \rightarrow B) \land (B \rightarrow A).
+\exists x (P(x) \vee Q(x))
+P(a)\vee Q(a)
+a
+P(a)
+\exists x P(x)
+\exists x P(x)\vee \exists x Q(x)
+P(a)\rightarrow \exists x P(x)\vee \exists x Q(x)
+Q(a)
+\varphi
+P(X)
+\psi
+ Q(X)
+\exists x ( \varphi x \vee \psi x)
+\vdash \exists x ( \varphi x \vee \psi x) 
+\Leftarrow
+P(X)
+\exists x: P(X)

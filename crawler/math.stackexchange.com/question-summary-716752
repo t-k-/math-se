@@ -1,0 +1,10 @@
+\sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\tan(\frac{1}{n})
+x
+n
+n
+\sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\tan(\frac{1}{n}) =  \sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\frac{\sin(\frac{1}{n})}{\cos(\frac{1}{n})}
+\lim_{x\to0}\frac{\sin x}{x}=1 \implies \sin(x)\approx x
+\sin\left(\frac1n\right)\approx \frac1n
+\sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\frac{\sin(\frac{1}{n})}{\cos(\frac{1}{n})}\approx \sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\frac{ \frac{1}{n}}{\cos(\frac{1}{n})}
+\cos\left(\frac1n\right)\approx 1
+\sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\frac{\sin(\frac{1}{n})}{\cos(\frac{1}{n})}\approx \sum_{n=1}^{\infty}\frac{1}{\sqrt{n}}\frac{ \frac{1}{n}}{ 1} = \sum \frac{1}{n^{3/2}}

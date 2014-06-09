@@ -1,0 +1,12 @@
+C^m_j
+(2m-1)^m=\sum_{j=1}^m(2j-1)C^m_j(2m-1)^{m-j},
+\{a_n\}
+\{b_n\}
+ (2n-1)^n = \sum_{k=1}^n {n\choose k} (2k-1) (2n-1)^{n-k}.
+ A(z) B(z) = \sum_{n\ge 0} a_n \frac{z^n}{n!} \sum_{n\ge 0} b_n \frac{z^n}{n!} = \sum_{n\ge 0} \sum_{k=0}^n \frac{1}{k!}\frac{1}{(n-k)!} a_k b_{n-k} z^n\\ = \sum_{n\ge 0} \sum_{k=0}^n \frac{n!}{k!(n-k)!} a_k b_{n-k} \frac{z^n}{n!} = \sum_{n\ge 0} \left(\sum_{k=0}^n {n\choose k} a_k b_{n-k}\right)\frac{z^n}{n!}
+\sum_{k=0}^n {n\choose k} a_k b_{n-k}.
+ A(z) = \sum_{k\ge 1} (2k-1) \frac{z^k}{k!} = 1 + (2z-1) \exp(z)
+B(z) = \sum_{k\ge 0} (2n-1)^k  \frac{z^k}{k!} = \exp(z(2n-1)).
+Q(z) = \exp(z(2n-1)) + (2z-1) \exp(2nz).
+ n! [z^n] Q(z) = n! \frac{(2n-1)^n}{n!} + n! 2 \frac{(2n)^{n-1}}{(n-1)!} - n! \frac{(2n)^n}{n!}.
+ (2n-1)^n + 2n (2n)^{n-1} - (2n)^n = (2n-1)^n.

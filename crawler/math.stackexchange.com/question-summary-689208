@@ -1,0 +1,13 @@
+X_1, X_2, \ldots, X_n
+\theta \in [0,1]
+A
+B
+\pi(\theta) \propto (\theta^a)((1-\theta)^b)
+\displaystyle f(X|\theta) = \prod_{i=1}^n \theta^{x_i}(1-\theta)^{1-x_i}=\theta^{\sum x_i}(1-\theta)^{n-\sum x_i}
+\displaystyle \pi(\theta |x)\propto f(x|\theta)\pi(\theta)\propto \theta^{\sum x_i}(1-\theta)^{n-\sum x_i} \theta^a(1-\theta)^b=\theta^{\sum x_i+a}(1-\theta)^{n+b-\sum x_i}=\exp\left((n-n\bar{X}+b)\log(1-\theta)+(n\bar{X}+a)\log\theta\right)
+\theta
+g(\theta)=(n-n\bar{X}+b)\log(1-\theta)+(n\bar{X}+a)\log\theta
+\displaystyle g^{\prime}(\theta)=-\frac{n-n\bar{X}+b}{1-\theta}+\frac{n\bar{X}+a}{\theta}=0
+\theta
+\displaystyle\hat{\theta}=\frac{n\bar{X}+a}{n+a+b}
+g^{\prime\prime}(\theta)>0

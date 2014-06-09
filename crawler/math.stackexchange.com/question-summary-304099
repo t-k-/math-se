@@ -1,0 +1,95 @@
+m
+n -m
+\it x
+\it Ax=b
+P
+P
+\min cx
+\it Ax
+=
+\it b
+ \it x \ge
+0
+\begin{pmatrix} B & N  \end{pmatrix} \begin{pmatrix} x_{\beta} \\ x_{\eta} \end{pmatrix}\\
+ Bx_{\beta}+Nx_{\eta}=b  \implies x_{\beta}=B^{-1}b-B^{-1}Nx_{\eta}
+\beta
+ x_{\beta}:= B^{-1}b
+ x_{\eta}:=0
+ f(\overline{x})=c_{\beta}\overline{x}_{\beta}+c_{\eta}\overline{x}_{\eta}
+(x_{\beta},x_{\eta})
+f(x) = c_{\beta}x_{\beta}+c_{\eta}x_{\eta}=f(\overline{x})+\overline{c}_{\eta}x_{\eta}
+ \overline{c}_{\eta}=(c_{\eta}-c_{\beta}B ^{-1}N) 
+F
+F=\{x=(x_{\beta},x_{\eta}): x_{\beta}=\overline{x}_{\beta}-B^{-1}Nx_{\eta},x_{\beta}\geq  0,x_{\eta}\geq  0\}
+\min \overline{c}_{\eta}x_{\eta}
+ B^{-1}Nx_{\eta}\leq \overline{x}_{\beta} \  \  \  \ \ (1)
+x_{\eta}\ge 0
+\overline{c}:=c-c_{\beta}B^{-1}A
+\min \overline{c}_{p}x_{p}
+\overline{a}x_{p}\leq \overline{x}_{\beta} \ \ \ \ \ \ \ \ \ \ \ \ (2)
+x_{p}\ge 0
+ x_{p}^{\ast}:=\min \left\{\dfrac{\overline{x}_{\beta (i)}}{\overline{a}_{i}}: 1\leq i \leq m, \overline{a}_{i}> 0 \right\}=:\dfrac{\overline{x}_{\beta (q)}}{\overline{a}_{q}}
+ \forall i \ \overline{a}_{i}\leq 0 
+(2)
+(1)
+\it i
+\overline{a}_{i}> 0
+x^{\ '}_{\beta (i)}:=\overline{x}_{\beta(i)}-\overline{a}_{i}x_{p}^{\ast}=\overline{x}_{\beta (i)}-\overline{a}_{i}\dfrac{\overline{x}_{\beta (q)}}{\overline{a}_{q}}\geq 0, \quad i=1, ..., m  
+x^{\ '}_{p}:=x_{p}^{\ast}=\dfrac{\overline{x}_{\beta (q)}}{\overline{a}_{q}}\geq 0\ \qquad \ \ \ \qquad \ \qquad \ \ \ \ \qquad \ \ \ \qquad \qquad \ \qquad \ \ \ \ (3)
+x^{\ '}_{j}:=\overline{x}_{j}=0  
+\it p
+ \overline{c}_{p}=\min_{j\in \eta} \overline{c}_{j} 
+\overline{c}_{p}x_{p}^{\ast}
+ j
+\overline{c}_{p}x_{p}^{\ast}>\overline{c}_{j}x_{j}^{\ast}
+\overline{B}=B-B^{q}e_{q}^{t}+A^{p}e_{q}^{t}
+\overline{B}=B(I-e_{q}e_{q}^{t}+B^{-1}A^{p}e_{q}^{t})=B(I-(e_{q}-\overline{a})e_{q}^{t})
+\it a
+\it b
+( I-ab^{t})^{-1}=I+\dfrac{ab^{t}}{1-b^{t}a}
+\overline{W}:= \left(I+\dfrac{(e_{q}-\overline{a})e_{q}^{t}}{1-e_{q}^{t}(e_{q}-\overline{a})}\right)W
+\overline{W}:=W+\dfrac{1}{\overline{a}_{q}}(e_{q}-\overline{a})W_{q}
+ x^{\ '}_{\beta}:=\overline{B}^{\ -1}b= \left(I+\dfrac{(e_{q}-\overline{a})e_{q}^{t}}{1-e_{q}^{t}(e_{q}-\overline{a})}\right)x_{\beta}
+\it W 
+ B^{-1}
+ \overline{a} 
+\it W 
+\it B 
+ F:=\{x\in \mathbb{R}^{n}:Ax=b,x\geq \ 0\}
+ \ F 
+\overline{x}
+\it F
+\it A
+\overline{x}
+\overline{x}
+\it n-m
+\overline{x}
+\it A
+\overline{x}
+\it F
+\overline{x}
+\it F
+\it A
+ \beta^{1} 
+ \beta^{2} 
+\qquad\qquad \dim \left[ \ker(A(\beta^{1}\cup  \beta^{2} ))\right]=\left |  \beta^{1} \cup  \beta^{2}  \right | - m
+ \beta^{1} 
+ \beta^{2} 
+ |  \beta^{1} \cup  \beta^{2}  |=m+1 
+ \dim [\ker (A(\beta^{1} \cup  \beta^{2} ))]=1 
+A(\alpha), \ \alpha \subset \{1,...,n\}
+A
+ \beta^{1} 
+ \beta^{2} 
+x^1
+x^2
+Ax=b, \ x\geq 0
+x_j =0
+j\notin \beta^1 \cup \beta^2
+x
+x^1
+x^2
+B
+b
+x^1
+x^2

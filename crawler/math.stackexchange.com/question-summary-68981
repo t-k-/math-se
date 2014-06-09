@@ -1,0 +1,12 @@
+G(n)=\begin{cases}1 &\text{if }n \text{ is a prime }\equiv 3\bmod17\\0&\text{otherwise}\end{cases}
+P(n)=\begin{cases}1 &\text{if }n \text{ is a prime }\\0&\text{otherwise.}\end{cases}
+\lim_{N\to\infty}\frac{\sum\limits_{n=1}^N G(n)}{\sum\limits_{n=1}^N P(n)}=\frac1{16}
+\lim_{N\to\infty} \frac{\sum\limits_{n=1}^N n\,G(n)}{\sum\limits_{n=1}^N n\,P(n)}?
+O(f(n))
+f(n)
+\lim_{N\to\infty} \frac{\sum\limits_{n=1}^N f(n)\,G(n)}{\sum\limits_{n=1}^N f(n)\,P(n)}
+O(1)
+P_a(s)\sim \frac{1}{\phi(n)}\sum_{p\text{ prime}}\frac{1}{p^s}.
+\sum p^{-s}\sim \log(\frac{1}{s-1})
+s\to1^+
+\frac{\sum\limits_{n=1}^N n\,G(n)}{\sum\limits_{n=1}^N n\,P(n)}=\frac{(N\sum\limits_{n=1}^N G(n))-\sum\limits_{n=1}^{N-1}\sum\limits_{k=0}^{n} G(k)}{\sum\limits_{n=1}^N n\,P(n)}=\frac{(N\sum\limits_{n=1}^N P(n)/16)-\sum\limits_{n=1}^{N-1}\sum\limits_{k=0}^{n} P(k)/16}{\sum\limits_{n=1}^N n\,P(n)}=\frac1{16}

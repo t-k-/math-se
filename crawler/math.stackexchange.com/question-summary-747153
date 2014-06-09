@@ -1,0 +1,8 @@
+[0,1 ] 
+2^{n+1}
+2^n
+P_n=\{[x_i,x_{i+1}]=[\frac{(i-1)}{2^{n}},\frac{i}{2^n}],i=1,...,2^n\}
+L(P,f)=\sum_{k=1}^{2^n}\frac{1}{2^n}\inf_{x\in[x_k,x_k+1]}f(x)=\sum_{k=1}^{2^n}\frac{1}{2^n}=1
+U(P,f)\sum_{k=1}^{2^n}\frac{1}{2^n}\sup_{x\in[x_k,x_k+1]}f(x)=\sum_{k=1}^{2^n-2}\frac{1}{2^n}+\frac{4}{2^n}=1-\frac{1}{2^{n-1}}+\frac{1}{2^{n-2}}
+U(P,f)-L(P,f)= 1-\frac{1}{2^{n-1}}+\frac{1}{2^{n-2}}-1=\frac {1}{2^{n-2}}-\frac {1}{2^{n-1}}=\frac {1}{2^{n-1}}\le \epsilon 
+n

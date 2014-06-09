@@ -1,0 +1,23 @@
+\int_0^1 \int_0^1 \frac{x^2-y^2}{(x^2+y^2)^2} \text{d}y \ \text{d}x
+\begin{align} \int_0^1 \frac{x^2-y^2}{(x^2+y^2)^2}\, dy &= \frac{1}{x}\int_0^{1/x} \frac{1-t^2}{(1+t^2)^2}\, dt \qquad\qquad\qquad\qquad\qquad (y = x\cdot t)\\ &= \frac{1}{2x} \int_0^{2\arctan(1/x)} \frac{1 - \tan^2 (\varphi/2)}{(1+\tan^2(\varphi/2))^2}(1+\tan^2(\varphi/2))\, d\varphi\quad (t = \tan (\varphi/2))\\ &= \frac{1}{2x} \int_0^{2\arctan(1/x)} \frac{\cos^2(\varphi/2) - \sin^2(\varphi/2)}{\cos^2(\varphi/2)+\sin^2(\varphi/2)}\, d\varphi\\ &= \frac{1}{2x} \int_0^{2\arctan(1/x)} \cos\varphi\,d\varphi\\ &= \frac{1}{2x} \sin \left(2\arctan(1/x)\right)\\ &= \frac{1}{x} \sin \left(\arctan(1/x)\right)\cos\left(\arctan(1/x)\right)\\ &= \frac{1}{x} \frac{1/x}{\sqrt{1+1/x^2}}\frac{1}{\sqrt{1+1/x^2}}\\ &= \frac{1}{1+x^2} \end{align}
+\int_0^1 \frac{dx}{1+x^2} = \arctan 1 = \frac{\pi}{4}.
+\int_0^1\int_0^1 \frac{x^2-y^2}{(x^2+y^2)^2}\, dx\,dy
+-\frac{\pi}{4}
+x^2 + y^2 \geq 1
+\pm
+45^\circ
+y=x.
+ x^2 + y^2 \leq 1, \; \; y \leq x. 
+ \int_0^{\pi/4}  \int_0^{1} \frac{\cos 2 \theta}{r} dr d\theta = \frac{1}{2 }  \int_0^{1} \frac{1}{r} dr = \left.\frac{1}{2 } \log r \; \right\rvert_{r=0}^{r=1} 
+r
+ \int_0^1 \int_0^1 \frac{x^2-y^2}{(x^2+y^2)^2} \text{d}y \ \text{d}x =  \int_0^1 \int_0^1 \frac{x^2}{(x^2+y^2)^2} \text{d}y \ \text{d}x - \int_0^1 \int_0^1 \frac{y^2}{(x^2+y^2)^2} \text{d}y \ \text{d}x. 
+ \int_{0}^{1}\frac{1}{(x^2+y^2)^2}dy=\frac{xy}{x^2 + y^2} + \frac{\arctan(y/x))}{2x}\Big|_{0}^{1} =\dots.  
+\left\lbrace \left(0,y\right)\ \ni\ y \in \left(0, 1\right) \right\rbrace
+x = 0
+y = 0
+x \leftrightarrow y
+\left.\nabla^{2}\ln\left(\rho\right)\right\vert_{\rho\ \not=\ 0} = 0
+\vec{\rho} = \vec{0}
+\not= 0
+\rho \equiv x\,\hat{x} + y\,\hat{y}
+ {\pi \over 4} - \arctan\left(\epsilon\right)- \arctan\left(1 \over \epsilon\right) + \arctan\left(1\right) \to 0 

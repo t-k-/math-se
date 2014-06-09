@@ -1,0 +1,42 @@
+\sum_k\frac{1}{k}\to\infty
+ \int_0^\infty  x \sqrt{1-e^{-x}}\,e^{-x}dx\equiv I 
+ y=\sqrt{1-e^{-x}}\\ y(0)=0, \ y(\infty)=1\\ y^2=1-e^{-x}\\ 2ydy=e^{-x}dx\\ e^{-x}=1-y^2\\ x=\ln\frac{1}{1-y^2} \rightarrow\\ I=2\int_0^1 y^2\ln\frac{1}{1-y^2} dy=\\ -2\int_0^1y^2\ln(1-y^2)\,dy=\\2\int_0^1y^2\sum_{k=1}^\infty \frac{y^{2k}}{k}=\\ 2\sum_{k=1}^\infty \frac{1}{k}\int_0^1 y^{2(k+1)}dy=\\ 2\sum_{k=1}^\infty \frac{1}{k(3+2k)}=\\ 2\sum_{k=1}^\infty \left(\frac{1}{3k}-\frac{2}{3(2k+3)}    \right) 
+\displaystyle \sum_{k=1}^{\infty} x^{2k}=\frac{x^2}{1-x^2}
+\blacksquare
+\frac{4}{3}\sum_{k=1}^{\infty} \left(\frac{1}{2k}-\frac{1}{2k+3}\right)=\frac{4}{3}\int_0^1 \sum_{k=1}^{\infty} \left(x^{2k-1}-x^{2k+2}\right)\,dx=\frac{4}{3}\int_0^1 \,dx\left(\frac{1}{x}-x^2\right)\sum_{k=1}^{\infty} x^{2k}
+\int_0^1 x^{2k-1}\,dx=\frac{1}{2k}
+\int_0^1 x^{2k+2}\,dx=\frac{1}{2k+3}
+\frac{4}{3}\int_0^1 \frac{1-x^3}{x}\frac{x^2}{1-x^2}\,dx=\frac{4}{3}\int_0^1 \frac{(x^2+x+1)x}{1+x}\,dx=\frac{4}{3}\int_0^1\left(x+\frac{x^3}{1+x}\right)\,dx
+=\frac{4}{3}\int_0^1 \left(x+\frac{x^3+1}{1+x}-\frac{1}{1+x}\right)\,dx=\frac{4}{3}\int_0^1 \left( x^2+1-\frac{1}{x+1}\right)\,dx=\frac{4}{3}\left(\frac{4}{3}-\ln 2\right)
+u = x
+du = dx
+dv = \sqrt{1-e^{-x}} e^{-x} \, dx
+v = \frac{2}{3}(1-e^{-x})^{3/2}
+e^{-x} = \cos^2 t
+x = -2 \log \cos t
+dx = 2 \tan t \, dt
+F(x) = \int u \, dv = \frac{2x}{3} (1-e^{-x})^{3/2} - \frac{2}{3} \int (1-e^{-x})^{3/2} \, dx.
+\begin{align*} \int (1-e^{-x})^{3/2} \, dx &= \int (1-\cos^2 t)^{3/2} \cdot 2 \tan t \, dt \\ &= 2\int \sin^3 t \tan t \, dt \\ &= 2 \int (1-\cos^2 t)^2 \sec t \, dt \\ &= 2 \int \sec t - \cos t - \sin^2 t \cos t \, dt. \end{align*}
+y=e^{-x}
+-\ln y =x
+dx = -dy / y
+\sqrt{1-y} = \tau
+y= 1-\tau^2
+dy = -2\tau d \tau
+x\to 0
+0
+x\to \infty
+ \int x \sqrt{1-e^{-x}}e^{-x}dx = \frac{2}{3} x (1-e^{-x})^{3/2} -\frac{2}{3}\int dx (1-e^{-x})^{3/2} 
+ \int dx (1-e^{-x})^{3/2} = \int \frac{-dy}{y}(1-y)^{3/2} 
+ \int \frac{+2\tau d \tau}{1-\tau^2}\tau^3 = 2\int d\tau \frac{\tau^4-\tau^2+\tau^2-1+1}{1-\tau^2} = -2 \int \tau^2 d\tau - 2\int d\tau +2\int \frac{d\tau}{1-\tau^2}=\\ -\frac{2\tau^3}{3}-2\tau +  \ln \frac{1+\tau}{1-\tau}. 
+ \frac{2}{3}x(1-e^{-x})^{3/2}-\frac{2}{3}\left[-\frac{2}{3}(1-e^{-x})^{3/2}-2\sqrt{1-e^{-x}}+\ln \frac{1+\sqrt{1-e^{-x}}}{1-\sqrt{1-e^{-x}}}\right]. 
+ \lim_{x\to \infty}\left[\ln\frac{1+\sqrt{1-e^{-x}}}{1-\sqrt{1-e^{-x}}}-x(1-e^{-x})^{3/2}\right]=\\ =\lim_{y\to 0}\left[\ln\frac{1+\sqrt{1-y}}{1-\sqrt{1-y}}+\ln y \cdot (1-y)^{3/2}\right]=\\ =\lim_{y\to 0}\left[\ln\frac{1+1-y/2}{1-1+y/2}+\ln y \cdot (1-3y/2)\right] =\lim_{y\to 0}\ln\frac{(2-y/2)y}{y/2} = \ln 4. 
+ \frac{2}{3}(-\ln 4+2+\frac{2}{3}) = \frac{2}{9}(8-3\ln 4). 
+\psi(\frac{1}{2})=-\gamma -2\log2
+\psi(x+1)=\psi(x)+\frac{1}{x}
+\frac{2}{3}(\gamma +\frac{8}{3}+\psi(\frac{1}{2}))
+\frac{2}{3}(\frac{8}{3}-2\log2)=\frac{4}{3}(\frac{4}{3}-\log2)
+ \left(\frac{1}{3k} - \frac{2}{3(2k+3)} \right)  = \frac{(2k+3) - (2k)}{3k(2k+3)} = \frac{3}{3k(2k+3)}
+\frac{1}{2k^2}
+\frac{1}{3k}
+\log(ab) = \log(a) + \log(b)

@@ -1,0 +1,27 @@
+\frac{dy}{dx}=\frac{4+y^2}{1+x^2}
+y(1)=2
+y(2)
+\int \frac{dy}{4+y^2}=\int \frac{dx}{1+x^2} -- (|)
+\frac{1}{2}\ tan^{-1}\frac{y}{2}=\tan^{-1}x+c
+tan^{-1}\frac{y}{2}=2(\tan^{-1}x+c)
+\frac{y}{2}=tan(2(tan^{-1}x+c))
+y=2\tan(2(\tan^{-1}x+c))
+y(x) = 2 tan(2(\tan^{-1}x+c)) -- (||)
+y(1) = 2 \tan(2(tan^{-1}1+c))=2
+2 tan(2(\tan^{-1}1+c))=2
+tan(2(\tan^{-1}1+c))=1
+tan(2(\tan^{-1}1+c))=tan(\frac{\pi}{4})
+2(tan^{-1}1+c))=\frac{\pi}{4}
+tan^{-1}1+c=\frac{\pi}{8}
+\frac{\pi}{4}+c=\frac{\pi}{8}
+c=\frac{\pi}{8}-\frac{\pi}{4}
+c=-\frac{\pi}{8} -- (|||)
+y(x) = 2 \tan(2(tan^{-1}x-\frac{\pi}{8}))
+\frac12\arctan \frac y2=\arctan x+c
+y(1)=2, \frac12\arctan 1=\arctan 1+c
+\implies c=-\frac12\arctan 1=-\frac\pi8
+\frac12\arctan\frac y2=\arctan x-\frac\pi8\iff \arctan y=2\arctan x-\frac\pi4
+\implies \frac y2=\tan\left(2\arctan x-\frac\pi4\right)
+=\frac{\tan(2\arctan x)-\tan\frac\pi4}{1+\tan(2\arctan x)\tan\frac\pi4}\text{ applying }\tan(A-B)=\frac{\tan A-\tan B}{1+\tan A\tan B}
+2\arctan x=\arctan \frac{2x}{1-x^2}, \tan(2\arctan x)=\tan\left(\arctan \frac{2x}{1-x^2}\right)=\frac{2x}{1-x^2}
+\implies \frac y2=\frac{\frac{2x}{1-x^2}-1}{1+\frac{2x}{1-x^2}}=\frac{2x-1+x^2}{1-x^2+2x}

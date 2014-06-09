@@ -1,0 +1,83 @@
+w(x) := \displaystyle\sum_{k= 0}^{\infty} a^k\cos(b^k\pi x) 
+0 < a < 1
+ab > 1+ \frac{3\pi}{2}, b
+1
+w(x)
+n
+w(x)_n := \displaystyle\sum_{k= 0}^{n} a^k\cos(b^k\pi x) 
+w(x)_n
+[\alpha,\beta]
+V_{w(x)_n} =\pi\displaystyle\int_{\alpha}^{\beta}  (w(x)_n)^2dx = \pi\displaystyle\int_{\alpha}^{\beta}  (\displaystyle\sum_{k= 0}^{n} a^k\cos(b^k\pi x) )^2dx  =
+\pi\displaystyle\int_{\alpha}^{\beta}  (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))^2dx =
+\pi\displaystyle\int_{\alpha}^{\beta}  (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))dx =
+\pi\displaystyle\int_{\alpha}^{\beta} [ \cos(\pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) +
+\cos(\pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + 
+a\cos(b \pi x) (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + 
+a^2\cos(b^2 \pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + $$\ldots +
+a^n\cos(b^n \pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) ] dx =
+\pi\displaystyle\int_{\alpha}^{\beta}[ (\cos^2(\pi x) + a\cos(\pi x)\cos(b \pi x) + a^2\cos(\pi x)\cos(b^2 \pi x) + \ldots +  a^n\cos(\pi x)\cos(b^n \pi x)) +
+( a^2\cos^2(b \pi x)+a\cos(b \pi x) \cos(\pi x)  + a^3\cos(b \pi x)\cos(b^2 \pi x) + \ldots +  a^{n+1}\cos(b \pi x)\cos(b^n \pi x)) +
+(a^4\cos^2(b^2 \pi x) +  a^2\cos(b^2 \pi x) \cos(\pi x) + a^3\cos(b^2 \pi x) \cos(b \pi x)  + \ldots +  a^{n+2}\cos(b^2 \pi x) \cos(b^n \pi x)) + \ldots + 
+( a^{2n}\cos^2(b^n \pi x)) +  a^n\cos(b^n \pi x)) \cos(\pi x) +  a^{n+1}\cos(b^n \pi x)) \cos(b \pi x) +  a^{n+2}\cos(b^n \pi x)) \cos(b^2 \pi x) + \ldots +  a^{2n-1}\cos(b^n \pi x)) \cos(b^{n-1} \pi x)) ]dx = 
+ \pi\displaystyle\int_{\alpha}^{\beta} ([  \displaystyle\sum_{k= 1}^{n+1}a^{2(k-1)}\cos^2(b^{k-1}\pi x) ] + [\bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)])dx =
+ \pi[\displaystyle\int_{\alpha}^{\beta}   \displaystyle\sum_{k= 1}^{n+1}a^{2(k-1)}\cos^2(b^{k-1}\pi x)dx + \displaystyle\int_{\alpha}^{\beta}  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1}\displaystyle\int_{\alpha}^{\beta}  a^{2(k-1)}\cos^2(b^{k-1}\pi x)dx + \displaystyle\int_{\alpha}^{\beta}  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}\displaystyle\int_{\alpha}^{\beta} \cos^2(b^{k-1}\pi x)dx +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \displaystyle\int_{\alpha}^{\beta}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+\int \cos^2(\gamma_1 x)dx = \frac{2\gamma_1 x + \sin(2\gamma_1x )}{4\gamma_1} + c
+\int \cos(\gamma_1 x)cos(\gamma_2 x)dx = \frac{\gamma_1 \sin(\gamma_1 x)\cos(\gamma_2 x) - \gamma_2 \cos(\gamma_1 x)\sin(\gamma_2 x) }{\gamma_1^2 -\gamma_2^2} + c, \gamma_1, \gamma_2 \in \mathbb{R} 
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}\displaystyle\int_{\alpha}^{\beta} \cos^2(b^{k-1}\pi x)dx +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \displaystyle\int_{\alpha}^{\beta}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + \sin(2\pi b^{k-1}x)}{4\pi b^{k-1}}  \Big|_\alpha^\beta +  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)\sin(\pi x b^i - \pi x b^j) + (b^j -b^i)\sin(\pi x b^j + \pi x b^i)}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] 
+\alpha, \beta \in \mathbb{R}: \alpha, \beta \in \mathbb{Z}
+ \sin(2\pi b^{k-1}x) = \sin(\pi y) = 0, \forall y \in \mathbb{Z}
+ \sin(\pi x b^i - \pi x b^j) = \sin(\pi (x b^i - x b^j)) = \sin(\pi y) = 0 \forall y \in \mathbb{Z}
+\sin(\pi x b^j + \pi x b^i) = \sin(\pi (x b^j + x b^i)) = \sin(\pi y) = o \forall y \in \mathbb{Z}
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + \sin(2\pi b^{k-1}x)}{4\pi b^{k-1}}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)\sin(\pi x b^i - \pi x b^j) + (b^j -b^i)\sin(\pi x b^j + \pi x b^i)}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + 0}{4\pi b^{k-1}}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)0 + (b^j -b^i)0}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}     \frac{x}{2}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{0}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}     \frac{x}{2}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}0  ] =  \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta + 0] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta] = \pi \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta 
+V_{w(x)_n} = \pi\displaystyle\int_{\alpha}^{\beta}  (w(x)_n)^2dx = \pi\displaystyle\int_{\alpha}^{\beta}  (\displaystyle\sum_{k= 0}^{n} a^k\cos(b^k\pi x) )^2dx = \pi \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta, \alpha,\beta \in \mathbb{Z} 
+w(x)
+V_{w(x)_n} =\pi\displaystyle\int_{\alpha}^{\beta}  (w(x)_n)^2dx = \pi\displaystyle\int_{\alpha}^{\beta}  (\displaystyle\sum_{k= 0}^{n} a^k\cos(b^k\pi x) )^2dx  =
+\pi\displaystyle\int_{\alpha}^{\beta}  (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))^2dx =
+\pi\displaystyle\int_{\alpha}^{\beta}  (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x))dx =
+\pi\displaystyle\int_{\alpha}^{\beta} [ \cos(\pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) +
+\cos(\pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + 
+a\cos(b \pi x) (\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + 
+a^2\cos(b^2 \pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) + $$\ldots +
+a^n\cos(b^n \pi x)(\cos(\pi x) + a\cos(b \pi x) + a^2\cos(b^2 \pi x) + \ldots +  a^n\cos(b^n \pi x)) ] dx =
+\pi\displaystyle\int_{\alpha}^{\beta}[ (\cos^2(\pi x) + a\cos(\pi x)\cos(b \pi x) + a^2\cos(\pi x)\cos(b^2 \pi x) + \ldots +  a^n\cos(\pi x)\cos(b^n \pi x)) +
+( a^2\cos^2(b \pi x)+a\cos(b \pi x) \cos(\pi x)  + a^3\cos(b \pi x)\cos(b^2 \pi x) + \ldots +  a^{n+1}\cos(b \pi x)\cos(b^n \pi x)) +
+(a^4\cos^2(b^2 \pi x) +  a^2\cos(b^2 \pi x) \cos(\pi x) + a^3\cos(b^2 \pi x) \cos(b \pi x)  + \ldots +  a^{n+2}\cos(b^2 \pi x) \cos(b^n \pi x)) + \ldots + 
+( a^{2n}\cos^2(b^n \pi x)) +  a^n\cos(b^n \pi x)) \cos(\pi x) +  a^{n+1}\cos(b^n \pi x)) \cos(b \pi x) +  a^{n+2}\cos(b^n \pi x)) \cos(b^2 \pi x) + \ldots +  a^{2n-1}\cos(b^n \pi x)) \cos(b^{n-1} \pi x)) ]dx = 
+\cup
+\Sigma
+ \pi\displaystyle\int_{\alpha}^{\beta} ([  \displaystyle\sum_{k= 1}^{n+1}a^{2(k-1)}\cos^2(b^{k-1}\pi x) ] + [\bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)])dx =
+ \pi[\displaystyle\int_{\alpha}^{\beta}   \displaystyle\sum_{k= 1}^{n+1}a^{2(k-1)}\cos^2(b^{k-1}\pi x)dx + \displaystyle\int_{\alpha}^{\beta}  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1}\displaystyle\int_{\alpha}^{\beta}  a^{2(k-1)}\cos^2(b^{k-1}\pi x)dx + \displaystyle\int_{\alpha}^{\beta}  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}\displaystyle\int_{\alpha}^{\beta} \cos^2(b^{k-1}\pi x)dx +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \displaystyle\int_{\alpha}^{\beta}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+\int \cos^2(\gamma_1 x)dx = \frac{2\gamma_1 x + \sin(2\gamma_1x )}{4\gamma_1} + c
+\int \cos(\gamma_1 x)cos(\gamma_2 x)dx = \frac{\gamma_1 \sin(\gamma_1 x)\cos(\gamma_2 x) - \gamma_2 \cos(\gamma_1 x)\sin(\gamma_2 x) }{\gamma_1^2 -\gamma_2^2} + c, \gamma_1, \gamma_2 \in \mathbb{R} 
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}\displaystyle\int_{\alpha}^{\beta} \cos^2(b^{k-1}\pi x)dx +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \displaystyle\int_{\alpha}^{\beta}\cos(b^i\pi x)\cos(b^j\pi x)dx] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + \sin(2\pi b^{k-1}x)}{4\pi b^{k-1}}  \Big|_\alpha^\beta +  \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)\sin(\pi x b^i - \pi x b^j) + (b^j -b^i)\sin(\pi x b^j + \pi x b^i)}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] 
+\alpha, \beta \in \mathbb{R}: \alpha, \beta \in \mathbb{Z}
+x\in\mathbb{R}:\forall i\in\mathbb{Z}:x\cdot b^{i}\in\mathbb{Z}
+b
+x\in\mathbb{Z}
+i=0
+ \sin(2\pi b^{k-1}x) = \sin(\pi y) = 0, \forall y \in \mathbb{Z}
+ \sin(\pi x b^i - \pi x b^j) = \sin(\pi (x b^i - x b^j)) = \sin(\pi y) = 0 \forall y \in \mathbb{Z}
+\sin(\pi x b^j + \pi x b^i) = \sin(\pi (x b^j + x b^i)) = \sin(\pi y) = o \forall y \in \mathbb{Z}
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + \sin(2\pi b^{k-1}x)}{4\pi b^{k-1}}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)\sin(\pi x b^i - \pi x b^j) + (b^j -b^i)\sin(\pi x b^j + \pi x b^i)}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}    \Big| \frac{2\pi b^{k-1}x + 0}{4\pi b^{k-1}}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{(-b^j -b^i)0 + (b^j -b^i)0}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}     \frac{x}{2}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j} \Big| \frac{0}    {2\pi (b^j -b^i) (b^j + b^i)} \Big|_\alpha^\beta ] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)}     \frac{x}{2}  \Big|_\alpha^\beta +   \bigcup _{i,j=0,i\neq j}^{n}a^{i+j}0  ] =  \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta + 0] =
+ \pi[ \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta] = \pi \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta 
+V_{w(x)_n} = \pi\displaystyle\int_{\alpha}^{\beta}  (w(x)_n)^2dx = \pi\displaystyle\int_{\alpha}^{\beta}  (\displaystyle\sum_{k= 0}^{n} a^k\cos(b^k\pi x) )^2dx = \pi \displaystyle\sum_{k= 1}^{n+1} a^{2(k-1)} \frac{x}{2}  \Big|_\alpha^\beta, \alpha,\beta \in \mathbb{Z} 
+w(x)
+x
+x=\frac{p}{q}
+q
+\mathbb{Q}
+\mathbb{R}
+n\rightarrow\infty

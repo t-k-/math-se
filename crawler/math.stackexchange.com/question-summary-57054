@@ -1,0 +1,42 @@
+\{x\}
+x\in\mathbb R
+||x||
+x
+x
+N
+\{x\}=\frac{1}{2}-\sum_{n=1}^N\frac{\sin 2\pi nx}{\pi n}+O((1+||x||N)^{-1})
+0 \leq x \leq 1/2
+g_N(x)=O(\frac{1}{1+xN})
+g_N(x)
+O(\frac{1}{xN})
+O(1)
+O(1)
+1/2+O(\log(1+xN))
+O(\frac{1}{xN})
+O(1)
+g_N(x)=\sum_{n=1}^N\frac{\sin 2\pi nx}{\pi n}+x-\frac{1}{2}
+g_N'(x)=D_N(x)
+D_N(t)=1+2\sum_{n=1}^N\cos2 \pi nt=\frac{\sin2\pi(N+1/2)t}{\sin\pi t}
+g_N(x)=\int_0^xD_N(t)dt - \frac{1}{2}
+|D_n(t)| \leq 2N+1
+|D_N(t)|\leq \frac{1}{2|t|}
+0<|t|<1/2
+|D_N(t)| \leq \frac{7}{2}\frac{N}{1+N|t|}
+g_N(x)=1/2+O(\log(1+xN))
+\int_0^x|D_n(t)|dt \leq \frac{7}{2}\int_0^x\frac{N}{1+Nt}dt=\frac{7}{2}\log(1+xN)
+g_N(x)=O(\frac{1}{xN})
+\int_0^xD_N(t)dt
+D_N(1-t)=D_N(t)
+\int_0^1D_N(t)dt=1
+g_N(x)
+0 \leq x \leq 1/2
+g_N(x)=-\frac{1}{2}\int_x^{1-x}D_N(t)dt
+\int_x^{1-x}D_n(t)dt=\frac{1}{\pi(N+\frac{1}{2})}\frac{\cos 2\pi(N+\frac{1}{2})x}{\sin\pi x}-\frac{1}{2(N+\frac{1}{2})}\int_x^{1-x}\frac{\cos 2\pi(N+\frac{1}{2})tdt}{\sin^2\pi t}
+\sin\pi t \geq 2t
+0 \leq t \leq 1/2
+\frac{1}{2\pi}\frac{1}{(N+1/2)x}
+\frac{1}{8}\frac{1}{(N+1/2)x}
+|g_N(x)|\leq\left(\frac{1}{4\pi}+\frac{1}{16}\right)\frac{1}{(N+\frac{1}{2})x}
+g_N(x)=O(\frac{1}{xN})
+O(1)
+g_N(x)=O(\frac{1}{1+xN})

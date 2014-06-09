@@ -1,0 +1,13 @@
+\int_0^1 \frac{x^{2012}}{1+e^x}dx
+\int_{-1}^1 \frac{x^{2012}}{1+e^x}dx=1/2013
+\frac{1}{1+e^x} = \frac{1}{e^x(1+e^{-x})} = e^{-x} \sum_{k=0}^\infty (-1)^k e^{-kx} = \sum_{k=0}^\infty (-1)^k e^{-(k+1)x}
+x \ge c
+c > 0
+\int_{-1}^{1} \frac{x^{2012}}{1+e^{x}} \ dx =\underbrace{\int_{-1}^{0}\frac{x^{2012}}{1+e^{x}}}_{I_{1}} \ dx + \int_{0}^{1}\frac{x^{2012}}{1+e^{x}} \ dx \qquad \cdots (1)
+I_{1}
+x=-t
+dx = -dt
+t=0
+t=1
+I_{1}= -\int_{1}^{0} \frac{e^{t}\cdot t^{2012}}{1+e^{t}} \ dt = \int_{0}^{1} \frac{e^{x}\cdot x^{2012}}{1+e^{x}} \ dx
+(1)

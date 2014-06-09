@@ -1,0 +1,7 @@
+I_{m,n}=\int_0^{\pi/2} \sin^m \theta \cos^n \theta d \theta
+I_{m,n}=I_{n,m}
+I_{m,n}=\frac{m-1}{m+n}I_{m-2,n}
+m>1
+I_{m,n}=\int\limits_0^{\pi/2}\sin^m t\cos^n t\,dt=\int\limits_0^{\pi/2}\cos^m\left(\frac{\pi}{2}-t\right)\sin^n\left(\frac{\pi}{2}-t\right)t\,dt=
+\,u:=\pi/2-t\Longrightarrow -du=dt
+=\int\limits_{\pi/2}^0\cos^mu\sin^nu(-du)=\int\limits_0^{\pi/2}\sin^nu\cos^mu\,du=I_{n,m}

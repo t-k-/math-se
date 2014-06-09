@@ -1,0 +1,15 @@
+\mathbf{F} = \langle x, y, z\rangle
+z = xy + 1
+0\leq x,y\leq 1
+\hat{\mathbf{n}} = \nabla f/ \lvert\nabla f\rvert = \frac{1}{\sqrt{3}}\langle 1, 1, 1\rangle
+dS = \frac{\lvert\nabla f\rvert dxdy}{\frac{\partial f}{\partial z}} = \sqrt{3}dxdy
+\mathbf{F}\cdot\hat{\mathbf{n}} = \frac{1}{\sqrt{3}}(x+y+z) = \frac{1}{\sqrt{3}}(x+y+xy + 1)
+ \int_0^1\int_0^1(x + y + xy + 1)dxdy = \frac{9}{4} 
+\nabla\cdot\mathbf{F} = 3
+ \int_S(\mathbf{F}\cdot\hat{\mathbf{n}})dS = \int_V(\nabla\cdot\mathbf{F})dV 
+ \int 3dV = 3V = 3\frac{5}{4} = \frac{15}{4} 
+\mathbf F
+V
+\mathbf g(x,y) = (x,y,xy+1)
+\int_0^1\int_0^1 \mathbf F(\mathbf g(x,y))\cdot \left(\frac{\partial\mathbf g}{\partial x}\times\frac{\partial\mathbf g}{\partial y}\right) \,dx\,dy\,,
+\int_0^1\int_0^1 (1-xy)\,dx\,dy = \frac34\,.

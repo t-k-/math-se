@@ -1,0 +1,14 @@
+H_n(x)\equiv (-1)^n e^{x^2}\frac{d^n}{dx^n}(e^{-x^2})
+\frac{H_{2n}(0)}{(2n)!} = \frac{(-1)^n}{n!}?
+e^{-x^2} = \sum \frac{(-1)^n}{n!}x^{2n} \qquad \implies\qquad \frac{d^{2n}}{dx^{2n}}(e^{-x^2})\mid_{x=0} = (-1)^n \frac{(2n)!}{n!}
+H_{2n}(0) = (-1)^{2n} e^0 \times (-1)^n \frac{(2n)!}{n!} = (-1)^n \frac{(2n)!}{n!}
+e^{2 x t-t^2} = \sum_{n=0}^{\infty} H_n(x) \frac{t^n}{n!}
+e^{-t^2} = \sum_{n=0}^{\infty} (-1)^n \frac{t^{2 n}}{n!}
+x=0
+e^{-t^2} = \sum_{n=0}^{\infty} H_n(0) \frac{t^n}{n!}
+H_n(0)=0
+n
+\frac{H_{2 n}(0)}{(2 n)!} = \frac{(-1)^n }{n!}
+H_{n+1}(x) = 2 x H_n(x) - 2 n H_{n-1}(x)
+H_{2 n}(0) = -2 (2 n-1) H_{2(n-1)}(0)  = (-2)^n (2 n-1) (2 n-3)\cdots (1)
+H_{2 n}(0) = (-1)^n \frac{(2 n)!}{n!}

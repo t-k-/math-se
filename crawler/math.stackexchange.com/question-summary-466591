@@ -1,0 +1,33 @@
+p_{n}
+n^{\text{th}}
+p_{n}\sim n \log(n).
+p
+\mathbb{P}(x) = \sum_{p\leq x}1 \sim \frac{x}{\log(x)} 
+g(n)
+n = \frac{g(n)}{\log g(n)}
+g(n) = n\log g(n)
+g_0(n)=n
+g_0()
+g_1(n) = n\log g_0(n) = n\log n
+g_2(n) = n\log g_1(n) = n\log(n\log n) = n(\log n+\log\log n)
+g_3(n) = n\log\left(n\log n+n\log\log n\right) = n\log\left(n\log n\cdot\left(1+\frac{\log\log n}{\log n}\right)\right)\\=n\left(\log n+\log\log n+\log\left(1+\frac{\log\log n}{\log n}\right)\right)\\=n\left(\log n+\log\log n+\frac{\log\log n}{\log n}+o\left(\frac{\log\log n}{\log n}\right)\right)
+\frac{p_n}{n} = \log n+\log\log n-1+O\left(\frac{\log\log n}{\log n}\right)
+ \sum_{p \leq x} 1 \sim \frac{x}{\log (x)} 
+ \sum_{p \leq p_n} 1 = n 
+ \frac{p_n}{\log (p_n)} \sim n \implies p_n \sim n \log n 
+p_n / \log p_n  = n + o(n)
+ \frac{n \log n}{\log (n\log n)} = n ( 1 - \frac{\log\log n}{\log n + \log\log n}) = n + o(n) 
+ \frac{p_n}{\log p_n} = \frac{n\log n}{\log (n\log n)} + o(n) \tag{*}
+g:x\mapsto x / \log x
+x > e
+(e,\infty)
+(e,\infty)
+ g'(x) = \frac1{\log x} - \frac{1}{(\log x)^2} 
+g^{-1}( g(n\log n) + o(n))
+g(n \log n / 2) < g(n\log n) + o(n) < g(2n \log n)
+n
+\frac{1}{2\log n} < g' < \frac{1}{\log n}
+ g^{-1}(g(n\log n) + o(n)) = n\log n + o(n\log n) 
+g^{-1}
+ p_n = n\log n + o(n\log n)
+ p_n \sim n\log n

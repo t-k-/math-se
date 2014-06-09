@@ -1,0 +1,56 @@
+\mathbb{Q}
+(1) \Phi_n(0)=1
+n>1
+(2) \Phi_{2n}(x)=\Phi_n(-x)
+n>1
+n
+ x^{n}-1=\prod_{d|n} \Phi_{d}(x)
+d
+n
+\Phi_n(x) = \prod_{d|n} (x^d-1)^{\mu(n/d)}
+n>1
+\sum_{d|n} \mu(n/d) = 0
+\Phi_n(0) = (-1)^0 = 1.
+n=1
+\Phi_1(0) = (-1)^1 = -1.
+d
+(-x)^d = (-1)^d x^d = -x^d
+n>1
+\prod_{d|n} (-1)^{\mu(n/d)}=1
+\mu(2n/d)+\mu(n/d)=0
+\Phi_n(0) = \prod_{d|n} (-1)^{\mu(n/d)} = (-1)^{\sum_{d|n} \mu(n/d)}.
+\Phi_n(-x) = \prod_{d|n} ((-x)^d-1)^{\mu(n/d)}.
+ \prod_{d|n} (-x^d-1)^{\mu(n/d)} = \prod_{d|n} \left(\frac{x^{2d}-1}{-x^d+1}\right)^{\mu(n/d)} = \prod_{d|n} (-1)^{\mu(n/d)} \prod_{d|n} \left(\frac{x^{2d}-1}{x^d-1}\right)^{\mu(n/d)}\\ = \prod_{d|n} (-1)^{\mu(n/d)} \prod_{d|n} \left(\frac{x^d-1}{x^{2d}-1}\right)^{\mu(2n/d)} \\= \prod_{d|n} (-1)^{\mu(n/d)} \prod_{d|n} \left(\frac{x^d-1}{x^{2d}-1}\right)^{\mu(2n/d)} \prod_{d|n} \left(\frac{x^{2d}-1}{x^{2d}-1}\right)^{\mu(2n/d/2)}\\ =  \Phi_{2n}(x)  \prod_{d|n} (-1)^{\mu(n/d)} \prod_{d|n} \frac{1}{(x^{2d}-1)^{\mu(2n/d)}(x^{2d}-1)^{\mu(n/d)}}\\ = \Phi_{2n}(x)  \prod_{d|n} (-1)^{\mu(n/d)} \prod_{d|n} \frac{1}{(x^{2d}-1)^{\mu(2n/d)+\mu(n/d)}}.
+ \Phi_{2n}(x) \times 1 \times  \prod_{d|n} \frac{1}{(x^{2d}-1)^0} =  \Phi_{2n}(x).
+\prod_{d \mid 2n} \Phi_d(x) =x^{2n}-1 = (x^n-1)(x^n+1) = -(x^n-1)((-x)^n-1) = -\prod_{d \mid n} \Phi_d(x)\Phi_d(-x).
+n>1
+\Phi_n(x) = \prod_{1\le k\le n \atop \gcd(k,n)=1} (x-e^{2\pi i k/n}).
+\Phi_n(0) = (-1)^{\varphi(n)} \prod_{1\le k\le n \atop \gcd(k,n)=1} e^{2\pi i k/n}.
+\sum_{1\le k\le n \atop \gcd(k,n)=1} k = \frac{1}{2} \varphi(n) n.
+\Phi_n(0) = (-1)^{\varphi(n)} e^{(2\pi i/n) \times 1/2\times \varphi(n) \times n} =  (-1)^{\varphi(n)}  e^{\pi i  \varphi(n)} =  (-1)^{2\varphi(n)} =1.
+\varphi(n)
+\Phi_n(-x) = \prod_{1\le k\le n \atop \gcd(k,n)=1} (-x-e^{2\pi i k/n}) = (-1)^{\varphi(n)} \prod_{1\le k\le n \atop \gcd(k,n)=1}  (x+e^{2\pi i k/n}) \\ = (-1)^{\varphi(n)} \prod_{1\le k\le n \atop \gcd(k,n)=1}  (x-e^{\pi i + 2\pi i k/n})= (-1)^{\varphi(n)} \prod_{1\le k\le n \atop \gcd(k,n)=1}  (x-e^{2\pi i (k/n+1/2)})\\ = (-1)^{\varphi(n)} \prod_{1\le k\le n \atop \gcd(k,n)=1}  (x-e^{2\pi i (2k+n)/(2n)}).
+2n
+\mathcal{P}_1
+e^{2\pi i k/(2n)}
+\gcd(k,2n)=1
+1\le k\le 2n
+e^{2\pi i (2k+n)/(2n)}
+\mathcal{P}_2
+\gcd(k,n)=1
+1\le k\le n.
+k.
+\mathcal{Q}
+n
+\mathcal{P}_1
+q
+q+n
+n
+\mathcal{P}_2
+q\equiv 2k+n\bmod (2n)
+q+n\equiv 2k+n\bmod (2n)
+k
+k
+k=(q+n)/2
+k=q/2,
+k

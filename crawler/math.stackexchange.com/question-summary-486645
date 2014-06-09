@@ -1,0 +1,30 @@
+n
+1
+n
+k
+k
+E(n)
+E(n)
+k
+k
+\frac{n+1}{2}
+1,2,3,\dots, n
+\frac{1}{n}
+k
+k
+X_i
+i
+E(X_1+X_2+\cdots +X_k)=E(X_1)+E(X_2)+\cdots +E(X_k)=k\cdot\frac{n+1}{2}.
+n
+K
+X_i
+i
+K
+N:=X_1+\cdots+X_K
+K
+\{K=j\}
+\{X_1+\cdots+X_j=m\}
+ P(N=m)=P(N=m,\ K=1)+\cdots+P(N=m,\ K=n), 
+ P(N=m,\ K=j)=P(X_1+\cdots+X_K=m,\ K=j)=P(X_1+\cdots+X_j=m,\ K=j). 
+ \begin{align*} P(X_1+\cdots+X_j=m,\ K=j)&=P(X_1+\cdots+X_j=m)P(K=j). \end{align*} 
+ \begin{align*} \DeclareMathOperator*{\E}{\mathbb{E}}\E[N]&=\sum_{m=1}^{n(n+1)/2}mP(N=m)\\ &=\sum_{m=1}^{n(n+1)/2}m\sum_{j=1}^{n}P(X_1+\cdots+X_j=m)P(K=j)\\ &=\sum_{j=1}^{n}P(K=j)\sum_{m=1}^{n(n+1)/2}mP(X_1+\cdots+X_j=m). \end{align*} 

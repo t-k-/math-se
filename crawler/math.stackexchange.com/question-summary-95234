@@ -1,0 +1,11 @@
+(r,s)
+\sigma
+r+s
+\sigma^{-1}(1) < \cdots< \sigma^{-1}(r)
+\sigma^{-1}(r+1) < \cdots < \sigma^{-1}(r+s)
+f_1(t), f_2(t),\ldots,f_r(t)
+\int_a^bf_1\;dt\cdots f_r\;dt = \int_a^b \left(\int_a^t f_1\;dt \cdots f_{r-1}\;dt\right)f_r(t)\;dt.
+(r,s)
+\left(\int_a^bf_1\;dt\cdots f_r\;dt\right)\left(\int_a^bf_{r+1}\;dt\cdots f_{r+s}\;dt\right)=\sum \int_a^bf_{\sigma(1)}\;dt\cdots f_{\sigma(r+s)}\;dt
+\int_a^bf_1\,\mathrm dt\cdots f_r\,\mathrm dt=\int_{a\le t_1\le\cdots\le t_r\le b} f_1(t_1)\cdots f_r(t_r)\,\mathrm dt_1\ldots\mathrm dt_r\;,
+ \begin{align} &\left(\int_a^bf_1\,\mathrm dt\cdots f_r\,\mathrm dt\right)\left(\int_a^bf_{r+1}\,\mathrm dt\cdots f_{r+s}\,\mathrm dt\right) \\ =& \left(\int_{a\le t_1\le\cdots\le t_r\le b} f_1(t_1)\cdots f_r(t_r)\,\mathrm dt_1\ldots\mathrm dt_r\right) \\ & \cdot\left(\int_{a\le t_{r+1}\le\cdots\le t_{r+s}\le b} f_{r+1}(t_{r+1})\cdots f_{r+s}(t_{r+s})\,\mathrm dt_{r+1}\ldots\mathrm dt_{r+s}\right) \\ =& \int_{{\scriptstyle a\le t_1\le\cdots\le t_r\le b}\atop{\scriptstyle a\le t_{r+1}\le\cdots\le t_{r+s}\le b}} f_1(t_1)\cdots f_{r+s}(t_{r+s})\,\mathrm dt_1\ldots\mathrm dt_{r+s} \\ =& \sum \int_{a\le t_1\le\cdots\le t_{r+s}\le b} f_{\sigma(1)}(t_1)\cdots f_{\sigma(r+s)}(t_{r+s})\,\mathrm dt_1\ldots\mathrm dt_{r+s} \\ =& \sum \int_a^bf_{\sigma(1)}\,\mathrm dt\cdots f_{\sigma(r+s)}\,\mathrm dt\;. \end{align} 

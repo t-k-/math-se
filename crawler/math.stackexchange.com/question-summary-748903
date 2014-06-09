@@ -1,0 +1,16 @@
+X = (X_t: t \in \mathbb{R})
+\lambda
+P(X_{t_n} = a_n | X_{t_{n-1}} = a_{n-1}, X_{t_{n-2}} = a_{n-2},...) = P(X_{t_n} = a_n | X_{t_{n-1}} = a_{n-1})
+\quad a_1 \leq a_2 \leq ... \leq a_n
+\quad t_1 \leq t_2 \leq  ... \leq t_n
+N_n = X_{t_n} - X_{t_{n-1}}
+\lambda (t_n-t_{n-1})
+N_{n-1} = X_{t_n} - X_{t_{n-2}}
+\lambda (t_n-t_{n-2})
+N_{n-2} = X_{t_n} - X_{t_{n-3}}
+\lambda (t_n-t_{n-3})
+N_i
+P(X_{t_n} = a_n | X_{t_{n-1}} = a_{n-1}, X_{t_{n-2}} = a_{n-2} ,...) = P(N_n = a_n, N_{n-1} = a_{n-1}, N_{n-2} = a_{n-2},...) = \frac{e^{-\lambda (t_n-t_{n-1})}*(\lambda (t_n-t_{n-1}))^{a_n-a_{n-1}} }{{a_n-a_{n-1}}!}*...*\frac{e^{-\lambda (t_n-t_1)}*(\lambda (t_n-t_1))^{a_n-a_1} }{{a_n-a_1}!}
+P(X_{t_n} = a_n | X_{t_{n-1}} = a_{n-1}) = P(N_n = a_n-a_{n-1}) =  \frac{e^{-\lambda (t_n-t_{n-1})}*(\lambda (t_n-t_{n-1}))^{a_n-a_{n-1}} }{{a_n-a_{n-1}}!}
+X_{n-2},X_{n-3}, ...
+X_n

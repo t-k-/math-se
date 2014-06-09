@@ -1,0 +1,27 @@
+T: \mathbb{R}^n \times \mathbb{R}^n \times \mathbb{R}^3 \rightarrow \mathbb{R}
+3
+\langle .,.\rangle
+\mathbb{R}^n
+f_1, \dots, f_n
+e_1, \dots, e_n
+e_i
+T(X,X,X)
+\{X \in \mathbb{R}^n \mid \|X\| = 1, \textrm{ and } X \textrm{ is orthogonal to } e_1, \dots, e_{i-1}\}
+T
+1 \leq a,b,c \leq n
+a < b < c
+A(\langle X,Z \rangle \langle Y,W \rangle - \langle X,W \rangle \langle Y,Z \rangle) + \sum_{m=1}^{n}T(X,Z,f_m)T(Y,W,f_m) - \sum_{m=1}^{n}T(X,W,f_m)T(Y,Z,f_m) = 0
+\sum_{m=1}^{n}T(X,f_m,f_m) = 0
+\dots
+(n-a+1)
+(n-a+1)(n-a+2)
+(n-a+1)(n-a+2)...(n-1)
+(n-a+1)(n-a+2)...(n-1)n
+A' = A\left(1+\frac{1}{n}\right)
+n-1
+A'
+e'_1, \dots, e'_{n-1}
+e'_i = e_{i+1}
+e_2, \dots, e_n
+(n-a+1)(n-a+2)^{\epsilon_1}(n-a+2)^{\epsilon_2}\dots (n-1)^{\epsilon_{a-2}}n^{\epsilon_{a-1}}
+\epsilon_i

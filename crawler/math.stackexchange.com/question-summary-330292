@@ -1,0 +1,29 @@
+n \ge 0
+k
+a_0 = 1
+a_1 = 1
+a_{n+2} = a_{n+1} + ka_n
+k
+a_n = \frac{r_2^{n+1} - r_1^{n+1}}{(r_2-r_1)r_1^{n+1}r_2^{n+1}}
+r_1 = \frac{-1 - \sqrt{1+4k}}{2k}
+r_2 = \frac{-1 + \sqrt{1+4k}}{2k}
+k
+a_{n+2} = a_{n+1} + ka_n
+\sum_{n\ge0}a_{n+2}x^n = \sum_{n\ge0}a_{n+1}x^n + k\sum_{n\ge0}a_{n}x^n
+A(x) = \sum_{n\ge0}a_nx^n
+\frac{A(x) - a_0 - xa_1}{x^2} = \frac{A(x) - a_0}{x} + kA(x)
+A(x)\left(\frac{1}{x^2} -\frac{1}{x} - k\right) = \frac{1+x}{x^2} - \frac{1}{x}
+A(x)\left(\frac{1 - x - kx^2}{x^2}\right) = \frac{1}{x^2}
+A(x)= \frac{1}{1 - x - kx^2}
+r_1
+r_2
+A(x) = \frac{1}{(x-r_1)(x-r_2)}
+A(x) = \frac{1}{r_2-r_1}\frac{1}{(r_1 - x)} - \frac{1}{r_2-r_1}\frac{1}{(r_2 - x)}
+A(x) = \frac{1}{(r_2-r_1)(r_1)}\frac{1}{(1 - \frac{x}{r_1})} - \frac{1}{(r_2-r_1)(r_2)}\frac{1}{(1 - \frac{x}{r_2})}
+A(x) = \frac{1}{(r_2-r_1)(r_1)}\sum_{n\ge0}{\left(\frac{x}{r_1}\right)^n} - \frac{1}{(r_2-r_1)(r_2)}\sum_{n\ge0}{\left(\frac{x}{r_2}\right)^n}
+A(x) = \sum_{n\ge0} x^n \left(\frac{1}{(r_2-r_1)(r_1^{n+1})} - \frac{1}{(r_2-r_1)(r_2^{n+1})}\right)
+a_n = \frac{r_2^{n+1} - r_1^{n+1}}{(r_2-r_1)r_1^{n+1}r_2^{n+1}}
+A(x)= \frac{1}{1 - x - kx^2}
+A(x) = \frac{1}{(x-r_1)(x-r_2)}
+1-x-kx^2=-kx^2-x+1\Rightarrow x_{1,2}=\frac{1\pm\sqrt{1+4k}}{2}
+1-x-kx^2=-kx^2-x+1=(-k)(x-x_1)(x-x_2)=(-k)(x-\frac{1-\sqrt{1+4k}}{2})(x-\frac{1+\sqrt{1+4k}}{2})

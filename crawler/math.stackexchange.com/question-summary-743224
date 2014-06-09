@@ -1,0 +1,38 @@
+\operatorname{Re}(z)>s
+a_n
+\sum_{n=1}^{\infty} \frac{a_{n}}{n^{s}}
+\sum_{n=1}^{\infty} \frac{a_{n}}{n^{z}}
+s = 0
+a_n
+b_n = a_n\cdot n^{-s}
+\sum\limits_{n=1}^\infty \frac{a_n}{n^z}
+\operatorname{Re} z > 0
+P_n = \sum_{k=1}^n a_k
+\sum\limits_{n=1}^\infty \frac{a_n}{n^z}
+\operatorname{Re} z > 0
+\begin{align} \left\lvert \sum_{n=K}^M \frac{a_n}{n^z}\right\rvert &= \left\lvert \sum_{n=K}^M \frac{P_n - P_{n-1}}{n^z}\right\rvert\\ &= \left\lvert \frac{P_M}{M^z} - \frac{P_{K-1}}{K^z} + \sum_{n=K}^{M-1} P_n\left(\frac{1}{n^z}-\frac{1}{(n+1)^z}\right)\right\rvert\\ &\leqslant \frac{\lvert P_M\rvert}{M^x} + \frac{\lvert P_{K-1}\rvert}{K^x} + \sum_{n=K}^{M-1} \lvert P_n\rvert \left\lvert\frac{1}{n^z} - \frac{1}{(n+1)^z} \right\rvert, \end{align}
+x = \operatorname{Re} z
+\frac{1}{n^z} - \frac{1}{(n+1)^z} = z\int_{n}^{n+1} \frac{dt}{t^{z+1}}
+\left\lvert \frac{1}{n^z} - \frac{1}{(n+1)^z}\right\rvert \leqslant \lvert z\rvert \int_n^{n+1} \left\lvert \frac{1}{t^{z+1}}\right\rvert\,dt = \lvert z\rvert \int_{n}^{n+1} \frac{dt}{t^{x+1}}.
+\int_{K}^\infty \frac{dt}{t^{x+1}} = \frac{1}{xK^x},
+\left\lvert \sum_{n=K}^M \frac{a_n}{n^z}\right\rvert \leqslant \left(2 + \frac{\lvert z\rvert}{x} \right)\frac{1}{K^x}\cdot \sup_{n} \lvert P_n\rvert.
+K^{-x}
+0
+K\to \infty
+\sup\limits_n \lvert P_n\rvert < \infty
+s_K = \sum_{n=1}^K \frac{a_n}{n^z}
+ \sum_{n=1}^\infty \frac{a_n}{n^z}
+\sum a_n
+\sum \frac{a_n}{n^z}
+\operatorname{Re} z \geqslant 0
+\left\lvert \frac{a_n}{n^z}\right\rvert = \frac{\lvert a_n\rvert}{n^{x}} \leqslant \lvert a_n\rvert,
+a_n
+\sum \frac{a_n}{n^z}
+\operatorname{Re} z > 1
+\frac{1}{n^x}
+a_n = (-1)^{n-1}
+\eta
+1
+\\
+\Large\color{blue}{\text{# }\mathbb{Q.E.D.}\text{ #}}
+\left | \dfrac{a_n}{n^{x+iy}} \right | = \left | \dfrac{a_n}{n^x e^{iy\ln n}} \right | = \dfrac{|a_n|}{n^x | e^{iy \ln(n)}|} = \dfrac{|a_n|}{n^x} \leq \dfrac{|a_n|}{n^s}

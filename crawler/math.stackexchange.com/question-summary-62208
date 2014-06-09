@@ -1,0 +1,10 @@
+X = [x_1, x_2,\ldots,x_n]^T
+\dfrac{\sum\limits_{i=1}^n |x_i|}{\left(\sum\limits_{i=1}^n x_i^2\right)^{\frac12}}
+x_i
+x_i \in [0,1]
+\|x\|^2=\sum\limits_{j=1}^nx_i^2
+\frac{\partial}{\partial x_k}\|x\|^2=2x_k
+\frac{\partial}{\partial x_k}\|x\|^2=2\|x\|\frac{\partial}{\partial x_k}\|x\|
+\frac{\partial}{\partial x_k}\|x\|=\frac{x_k}{\|x\|}
+\frac{\mathrm{d}}{\mathrm{d}x}|x|=\frac{x}{|x|}
+ \frac{\partial}{\partial x_k}\frac{\sum\limits_{i=1}^n |x_i|}{\|x\|}=\frac{\frac{x_k}{|x_k|}\|x\|-\frac{x_k}{\|x\|}\sum\limits_{i=1}^n|x_i|}{\|x\|^2} 

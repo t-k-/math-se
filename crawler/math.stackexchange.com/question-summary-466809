@@ -1,0 +1,17 @@
+ \cos(x_1)+\cos(x_2)+\cos(x_3)= \frac{3}{5} 
+ \cos(3x_1)+\cos(3x_2)+\cos(3x_3)=0 
+ \cos(5x_1)+\cos(5x_2)+\cos(5x_3)=0 
+x_0
+x_{n+1}=x_n-\dfrac{f(x_n)}{f'(x_n)}
+F\left(\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\right) = \begin{bmatrix}f_1(x_1,x_2,x_3) \\  f_2(x_1,x_2,x_3)  \\ f_3(x_1,x_2,x_3)\end{bmatrix} = \begin{bmatrix}\cos x_1 + \cos x_2 + \cos x_3 -\dfrac{3}{5} = 0 \\   \cos 3x_1 + \cos 3x_2 + \cos 3x_3 = 0 \\ \cos 5x_1 + \cos 5x_2 + \cos 5x_3 = 0  \end{bmatrix}
+3x3
+J(x_1,x_2,x_3) = \begin{bmatrix} \dfrac{\partial f_1}{\partial x_1} & \dfrac{\partial f_1}{\partial x_2} & \dfrac{\partial f_1}{\partial x_3}\\ \dfrac{\partial f_2}{\partial x_1} & \dfrac{\partial f_2}{\partial x_2} & \dfrac{\partial f_2}{\partial x_3} \\ \dfrac{\partial f_3}{\partial x_1} & \dfrac{\partial f_3}{\partial x_2} & \dfrac{\partial f_3}{\partial x_3}\end{bmatrix} = \begin{bmatrix} -\sin x_1 & -\sin x_2 & -\sin x_3 \\ -3\sin 3x_1 & -3\sin 3x_2 & -3\sin 3x_3 \\ -5\sin 5x_1 & -5\sin 5x_2 & -5\sin 5x_3 \end{bmatrix}
+G
+G(x) = x - J(x)^{-1}F(x)
+x^{(0)}
+k \ge 1
+x^{(k)} = G(x^{(k-1)}) = x^{(k-1)} - J(x^{(k-1)})^{-1}F(x^{(k-1)}).
+\begin{bmatrix}x_1^{(k)}\\x_2^{(k)}\\x_3^{(k)}\end{bmatrix} = \begin{bmatrix}x_1^{(k-1)}\\x_2^{(k-1)}\\x_3^{(k-1)}\end{bmatrix} + \begin{bmatrix}y_1^{(k-1)}\\y_2^{(k-1)}\\y_3^{(k-1)}\end{bmatrix}
+\begin{bmatrix}y_1^{(k-1)}\\y_2^{(k-1)}\\y_3^{(k-1)}\end{bmatrix}= -\left(J\left(x_1^{(k-1)},x_2^{(k-1)},x_3^{(k-1)}\right)\right)^{-1}F\left(x_1^{(k-1)},x_2^{(k-1)},x_3^{(k-1)}\right)
+x^{(0)} = \begin{bmatrix}x_1^{(0)}\\x_2^{(0)}\\x_3^{(0)}\end{bmatrix} = \begin{bmatrix}1\\2\\3\end{bmatrix}
+\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix} = \begin{bmatrix} 4.094047142323228 \\ 1.2318378396357232 \\ -0.5601417633888767 \end{bmatrix}

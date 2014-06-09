@@ -1,0 +1,10 @@
+F(x,y)=\iint_{R_{xy}} e^{(u-1)}e^{(v^2-v)}dudv
+R_{xy}
+[0,x]\times[0,y]
+\nabla F(1,1)
+\nabla F(1,1)=(\dfrac{\partial F(1,1)}{\partial x},\dfrac{\partial F(1,1)}{\partial y})
+\dfrac{\partial F (x,y)}{\partial x}=\dfrac{\partial}{\partial x} \int_0^y\int_0^x e^{(u-1)}e^{(v^2-v)}dudv
+\dfrac{\partial}{\partial x} \int_0^y\int_0^x e^{(u-1)}e^{(v^2-v)}dudv=\int_0^y [\dfrac{\partial}{\partial x} \int_0^x e^{(u-1)}e^{(v^2-v)}du]dv
+\dfrac{\partial}{\partial x} \int_0^x e^{(u-1)}e^{(v^2-v)}du=e^{(x-1)}e^{(v^2-v)}
+\dfrac{\partial F (x,y)}{\partial x}=\int_0^y e^{(x-1)}e^{(v^2-v)}dv=e^{(x-1)}\int_0^y e^{(v^2-v)}dv
+y

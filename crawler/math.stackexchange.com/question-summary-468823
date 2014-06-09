@@ -1,0 +1,8 @@
+(1+t^2)x'''+\sin(t) x''+(1+t)x'+\cos(t)x=e^{-2t}\cos (t)
+x_1 = x, x_2 = x', x_3 = x''
+X'(t) = A(t)X(t) + F(t)
+X'(t) = \begin{bmatrix}x'_1(t) \\ x'_2(t) \\ x'_3(t) \end{bmatrix} = \begin{bmatrix}0 & 1 & 0\\0 & 0 & 1 \\ -\dfrac{\cos t}{1+t^2} & -\dfrac{(1+t)}{1+t^2} & -\dfrac{\sin t }{1+t^2} \end{bmatrix} \begin{bmatrix}x_1(t) \\ x_2(t) \\ x_3(t) \end{bmatrix} +\begin{bmatrix} 0 \\ 0 \\ \dfrac{e^{-2t} \cos t}{1+t^2} \end{bmatrix}
+y=(y_0,y_1,y_2)=(x,x',x'')
+y'=Ay + c
+A(t)
+c(t)

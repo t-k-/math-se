@@ -1,0 +1,17 @@
+B_i
+CB
+\begin{align} CB (E) = \bigcap_{k \geq 1} B^k (E) & = B(E) \cap \bigcap _{k\geq2} B^k (E)=\\ & = \prod_i B_i (E_{-i}) \cap \bigcap_{k \geq 2} B^k (E) = \\ & = \prod_i B_i (E_{-i}) \cap \bigcap_{k \geq 2} B (B^{k-1} (E)) = \\ & = \prod_i B_i (E_{-i}) \cap \bigcap_{k \geq 2} \prod_i B_i (B_{-i}^{k-1} (E)) = \\ & = \prod_i \left( B_i (E_{-i}) \cap \bigcap _{k \geq 2} B_i (B_{-i}^{k-1} (E)) \right) \equiv \prod_i CB_i (E) \end{align}
+\begin{align} \prod_i \left( B_i (E_{-i}) \cap \bigcap _{k \geq 2} B_i (B_{-i}^{k-1} (E)) \right) & = \prod_i \left( B_i (E_{-i}) \cap \bigcap _{k \geq 2} B_{i}^k (E) \right) = \\ & = \prod_i \bigcap_{k \geq 1} B^{k}_{i} (E_{-i}) \end{align}
+B_{-i}^{k-1}(E)
+B(E)
+E
+i
+E_{-i}
+E = \prod_{i} E_{i}
+E_{i}
+i
+B_{i}(E_{i}) \leftrightarrow E_{i}
+E_{i}
+i
+i
+(B^{k-1}(E))_{-i} = \prod_{j \neq i} B_{j}(B_{-i}^{k-2}(E)).

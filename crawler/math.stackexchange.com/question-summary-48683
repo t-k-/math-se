@@ -1,0 +1,35 @@
+E_n
+E_n
+0 \lt p, q \lt 1
+ E_{n} =\frac{1}{2} \sum _{i=0}^{n}\min\left[\binom{n}{i}\ q^{i} (1-q)^{n-i} ,\binom{n}{i}\ p^{i} (1-p)^{n-i} \right] 
+E_{n+1} \le E_n
+p^{1 \over 2}q^{1 \over 2}= r{p + q \over 2}
+0 < r < 1
+(1-p)^{1 \over 2}(1-q)^{1 \over 2}= s(1 - {p + q \over 2})
+0 < s < 1
+p \neq q
+r^is^{n-i} \leq t^n
+0 < t =\max(r,s) < 1
+1
+0 < t < 1
+\lim_{n\rightarrow \infty} E_n = 0
+E_n \leq {1 \over 2}\sum_{i=0}^n {n \choose i}p^{i \over 2}q^{i \over 2}(1- p)^{{n-i \over 2}}(1 - q)^{{n-i \over 2}}
+E_n \leq {1 \over 2} \sum_{i=0}^n {n \choose i}r^is^{n-i}\bigg({p + q \over 2}\bigg)^i\bigg(1 - {p + q \over 2}\bigg)^{n-i}
+E_n \leq {1 \over 2}t^n\sum_{i=0}^n {n \choose i}\bigg({p + q \over 2}\bigg)^i\bigg(1 - {p + q \over 2}\bigg)^{n-i}
+E_n \leq {1 \over 2}t^n
+p \ne q
+X
+(n,p)
+n
+[0,1]
+X = \frac{1}{n} \sum_{i=1}^n B_i
+B_i
+p
+Y
+(n,q)
+q \ne p
+E_n
+\delta
+q \ne p
+X
+Y

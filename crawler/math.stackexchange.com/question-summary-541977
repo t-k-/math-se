@@ -1,0 +1,15 @@
+f(x,y,z)
+C^2
+x = u + v - w
+y = 2u - 3v
+z = v + 2w
+\frac{\partial^2f}{\partial{v}\partial{w}}
+\dfrac{\partial f}{\partial w}
+x
+y
+z
+\dfrac{\partial}{\partial v}
+\begin{aligned}\frac{\partial f}{\partial w} &= \frac{\partial x}{\partial w}\frac{\partial f}{\partial x} + \frac{\partial y}{\partial w}\frac{\partial f}{\partial y} + \frac{\partial z}{\partial w}\frac{\partial f}{\partial z} \\ &= \left(\frac{\partial x}{\partial w}\frac{\partial}{\partial x}+\frac{\partial y}{\partial w}\frac{\partial}{\partial y} + \frac{\partial z}{\partial w}\frac{\partial}{\partial z}\right)f\end{aligned}
+\frac{\partial}{\partial w} = \frac{\partial x}{\partial w}\frac{\partial}{\partial x} + \frac{\partial y}{\partial w}\frac{\partial}{\partial y} + \frac{\partial z}{\partial w}\frac{\partial}{\partial z}
+\frac{\partial}{\partial v} = \frac{\partial x}{\partial v}\frac{\partial}{\partial x} + \frac{\partial y}{\partial v}\frac{\partial}{\partial y} + \frac{\partial z}{\partial v}\frac{\partial}{\partial z}
+\frac{\partial^2f}{\partial v\partial w} = \frac{\partial x}{\partial v}\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial w}\right) + \frac{\partial y}{\partial v}\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial w}\right) + \frac{\partial z}{\partial v}\frac{\partial}{\partial z}\left(\frac{\partial f}{\partial w}\right)

@@ -1,0 +1,18 @@
+\lim_{n \rightarrow \infty} (1+c/n^2 - 2/n)^n = e^{-2}
+c\geq 1
+\lim_{n \rightarrow \infty} (1-2/n)^n = e^{-2}
+\frac 1 {n^2}-\frac 2 n +1=\left(\frac 1 n -1\right)^2
+x_n= \left(1- \frac 2 n+\frac c {n^2}\right)^n 
+y_n=\log x_n=n \log \left(1- \frac 2 n+\frac c {n^2}\right)
+n{\log \left(1- \frac 2 n+\frac c {n^2}\right)}=
+n\left(\frac c {n^2}- \frac 2 n\right)\frac{\log \left(1+\left(\frac c {n^2}- \frac 2 n\right)\right)}{\left(\frac c {n^2}- \frac 2 n\right)}=
+\left(\frac c {n}- 2\right)\frac{\log \left(1+a_n\right)}{a_n}=
+a_n\to 0
+\left(\frac c {n}- 2\right)\frac{\log \left(1+a_n\right)}{a_n}\to (0-2)\cdot 1 =-2
+x_n\to e^{-2}
+\lim _{n\to\infty} \left(\left(1+\frac{c-2n}{n^2}\right)^{\frac{n^2}{c-2n}}\right)^{\frac{c-2n}{n}}
+= \left(\lim _{n\to\infty}\left(1+\frac{c-2n}{n^2}\right)^{\frac{n^2}{c-2n}}\right)^{\lim _{n\to\infty}\left(\frac{c-2n}n\right)}
+m=\frac{n^2}{c-2n},n\to \infty\implies m\to\infty
+= \left(\lim _{m\to\infty}\left(1+\frac1m\right)^m\right)^{\lim _{n\to\infty}\left(\frac{c-2n}n\right)}
+c
+=e^{-2}

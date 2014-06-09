@@ -1,0 +1,24 @@
+T(n) \le cn-d
+c
+d
+>0
+n = 0
+T(0) = T\left(\left\lfloor\frac{3\times0}{4}\right\rfloor\right) + T\left(\left\lfloor\frac{0}{4}\right\rfloor\right) + 1 = T(0)+T(0)+1
+T(0) = -1
+d=1
+n=0
+k
+0
+k
+n=k+1
+\begin{align} T(k+1) =& T\left(\left\lfloor\frac{3(k+1)}{4}\right\rfloor\right) + T\left(\left\lfloor\frac{k+1}{4}\right\rfloor\right) + 1\\ \le& c\left\lfloor\frac{3(k+1)}{4}\right\rfloor-1 + c\left\lfloor\frac{k+1}{4}\right\rfloor-1 + 1 &\text{(by assumption)}\\ \le& \frac{3(k+1)c}{4} + \frac{(k+1)c}{4} - 1\\ \le& c(k+1) - 1\\ \end{align}
+c=1
+T(n) \le n-1
+T(n)=O(n)
+T(n) < n
+T(n+1) < n+1
+T(n) \le n-1
+T(0)
+T(0) = -1
+c
+T(n) = -1

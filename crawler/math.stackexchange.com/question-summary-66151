@@ -1,0 +1,49 @@
+\bar{y} = \frac{A\bar{x} +\bar{b}}{\bar{c}^{T}\bar{x} + d}
+A
+n \times m
+n, m \in \mathbb R_{+}
+f(x) := \bar{y}
+f : \mathbb R^{m} \mapsto \mathbb R^{n}
+\bar{y}
+\bar{y}
+d \in \mathbb R
+\bar{x}
+\bar{y}^{-1}
+\bar{y}
+\bar{x}
+\bar{x}(\bar{c}^{T}\bar{y}^{-1}+d) - A\bar{y}^{-1} - \bar{b} = 0
+(\bar{x} \bar{c}^{T} - A ) \bar{y}^{-1} + (\bar{x} d - \bar{b} ) = 0
+\bar{y}^{-1} =  (\bar{x} \bar{c}^{T} -A)^{-1}(\bar{b} - \bar{x} d)
+(\bar{x} \bar{c}^{T} -A)
+c^{T}\bar{y}^{-1}
+\bar{x}\bar{c}^{T}
+\bar{y}
+\bar{x}(\bar{c}^{T}\bar{y}^{-1}) = (\bar{x}\bar{c}^{T})\bar{y}^{-1}
+P,Q,R,S
+\mathbb{R}
+ \Delta\star\pmatrix{P&Q\\R &S} = P+Q\Delta(I-S\Delta)^{-1}R 
+\Delta
+\pmatrix{A &b}
+V^{-1} := \pmatrix{A&b}
+V=\pmatrix{V_1\\V_2}
+\pmatrix{c^T&0}
+ y=x\star \left(\begin{array}{c|cc}0 &A &b\\\hline 1 & -c^T&0\end{array} \right) 
+x=\pmatrix{\bar{x}\\1} 
+ \left(\begin{array}{ccc}0 &A &b\\ 1 & -c^T&0\end{array} \right)^{-1} =  \left(\begin{array}{cc}c^TV_1 &1\\ V_1&0\\ V_2 &0\end{array} \right) 
+m+2
+ x=y\star\left(\begin{array}{c|c}\bar{p}&Q\\\hline r &\bar{s}^T\end{array} \right) = \bar{p} + Qy(1-\bar{s}^Ty)^{-1}r 
+\bar{y}^{-1}
+f(x) = \dfrac{A x + b}{c^T x + d} = y
+A
+n \times n
+x
+y
+b
+c
+n
+d
+c^T x + d \ne 0
+A x + b = (c^T x + d) y
+(A - y c^T) x = d y - b
+A - y c^T
+ x = f^{-1}(y) = (A - y c^T)^{-1} (d y - b)

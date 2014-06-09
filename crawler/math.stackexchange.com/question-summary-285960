@@ -1,0 +1,11 @@
+ \displaystyle \int^{\infty}_{0} \frac{\ln (|\tan x| )}{1+x^{2}} \ dx = \frac{\pi}{2} \ln (\tanh 1)
+\displaystyle \int^{\infty}_{0} \frac{\ln (|\tan x| )}{1+x^{2}} \ dx
+\ast
+\mathbb{R}
+\mathbb{R} + i \epsilon
+\mathbb{R} - i \epsilon
+\vert \tan(z) \vert^2 = \frac{\sin^2(2 x) + \sinh^2(2y)}{(\cos(2x) + \cosh(2y))^2} \to_{y \to \pm \infty} 1
+(\ast)
+     \int_0^\infty \frac{\log | \tan x |}{1+x^2} \mathrm{d} x = \frac{1}{2} \int_0^\infty \frac{\log \tan^2 x }{1+x^2} \mathrm{d} x = \frac{1}{4} \int_{-\infty}^\infty \frac{\log \tan^2 x }{1+x^2} \mathrm{d} x  \tag{$\ast$} 
+ \begin{eqnarray}  \int_{-\infty}^\infty \frac{\log \tan^2 x }{1+x^2} \mathrm{d} x &=& \frac{1}{2} \int_{-\infty +i 0}^{\infty +i 0} \frac{\log \tan^2 x }{1+x^2} \mathrm{d} x + \frac{1}{2} \int_{-\infty-i 0}^{\infty - i 0} \frac{\log \tan^2 x }{1+x^2} \mathrm{d} x  \\  &=& \frac{1}{2} \cdot 2 \pi i \operatorname{Res}_{x=i}\frac{\log \tan^2 x }{1+x^2} - \frac{1}{2} \cdot 2 \pi i \operatorname{Res}_{x=-i}\frac{\log \tan^2 x }{1+x^2} \\   &=& 2 \pi \log \tanh(1) \end{eqnarray} 
+   \int_0^\infty \frac{\log | \tan x |}{1+x^2} \mathrm{d} x = \frac{\pi}{2} \log \tanh(1) 

@@ -1,0 +1,20 @@
+n
+E[X^4]
+P(|X|>c) \le \dfrac{E[X^4]}{c^4}
+X=Z_1 + Z_2 + \cdots + Z_n
+Z_i =\pm 1
+E[ (Z_1 + Z_2 + \cdots + Z_n)^4]
+n^4
+Z_i
+E(Z_i^4)
+E(Z_i^2 Z_j^2)
+n
+ {4 \choose 2} {n \choose 2} = 3 n (n-1)
+E(Z_i^2) = E(Z_i^4)=1
+E(X^4) = n + 3 \; n( n - 1) = n \; (3 n -2)
+X \stackrel{d}{=} 2 U - n
+U
+Bi(n, \frac{1}{2})
+g(t) = \mathbb{E}\left( \mathbb{e}^{t U} \right) = \left( \frac{1}{2} + \frac{1}{2} \mathrm{e}^t \right)^n
+  \mathbb{E}\left( \mathbb{e}^{t X} \right) = \mathrm{e}^{-t n} g(2t) = \cosh^n(t) 
+    \cosh^n(t) = 1 + n \frac{t^2}{2!} + n(3n-2) \frac{t^4}{4!} + o(t^4) 

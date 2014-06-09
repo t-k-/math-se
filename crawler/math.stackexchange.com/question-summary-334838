@@ -1,0 +1,27 @@
+\sin 2t
+x" = −4x; x(0) = 0, x'(0) = 2.
+x = x + 2; x(0) = 2
+\tag 1 \displaystyle x''= - 4x, x(0) = 0, x'(0) = 2 \rightarrow x(t) = \sin(2t).
+(1)
+x_1 = x
+x_2 = x'
+\tag 2 x'_1 = x' = x_2 ~~~ \text{and} ~~ x'_2 = x'' = -4x_1
+A = \begin{bmatrix} 0 & 1 \\ -4 & 0 \\ \end{bmatrix} 
+A
+\lambda_1 = 2i, v_1 = (-\frac{i}{2}, 1)
+\lambda_2 = -2i, v_2 = (\frac{i}{2}, 1)
+x_1(t) = \sin(2t)
+x_2(t) = 2\cos(2t)
+(2)
+\tag 3 \displaystyle x_1(t) = \sin(2t) = 2 t-\frac{4 t^3}{3} + \frac{4 t^5}{15} + O(t^7)
+\tag 4 \displaystyle x_2(t) = 2\cos(2t) = 2 - 4 t^2 + \frac{4 t^4}{3} - \frac{8 t^6}{45} + O(t^7)
+x_1(t)
+x_2(t)
+(3)
+(4)
+X_{0}=  \begin{bmatrix} 0 \\ 2 \\ \end{bmatrix}
+A = \begin{bmatrix} 0 & 1 \\ -4 & 0 \\ \end{bmatrix}
+\begin{bmatrix} 0 \\ 2 \\ \end{bmatrix} + \int^{t}_{0} \begin{bmatrix} 0 & 1 \\ -4 & 0 \\ \end{bmatrix}\begin{bmatrix} 0 \\ 2 \\ \end{bmatrix} = \begin{bmatrix} 2t \\ 2 \\ \end{bmatrix}
+\begin{bmatrix} 0 \\ 2 \\ \end{bmatrix} + \int^{t}_{0} \begin{bmatrix} 0 & 1 \\ -4 & 0 \\ \end{bmatrix}\begin{bmatrix} 2t \\ 2 \\ \end{bmatrix}=\begin{bmatrix} 2t \\ 2-4t^{2} \\ \end{bmatrix}
+\sin(2t)
+\cos(2t)

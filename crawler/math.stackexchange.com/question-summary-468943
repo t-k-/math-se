@@ -1,0 +1,20 @@
+C\subset\mathbb{R}^n
+f:C\to\mathbb{R}
+\mathrm{epi}(f)
+\mathrm{epi}(f)= \bigcap\limits_{(v,w,c) \in V \times W \times C} \{(x,y) \in C \times \mathbb{R} \mid -v \cdot x + w \cdot y \geq c \},
+V
+W
+C
+\mathrm{epi}(f)= \bigcap\limits_{(v,c) \in V \times C} \{ (x,y) \in C \times \mathbb{R} \mid y \geq c+ v \cdot x \}.
+f(x) \geq \max\limits_{(v,c) \in V \times C} v \cdot x +c
+y<f(x)
+(x,y) \notin \mathrm{epi}(f)
+(v,c) \in V \times C
+y< v \cdot x+c
+y \to f(x)
+f(x) \leq v \cdot x+c \leq \max\limits_{(v,c) \in V \times C} v \cdot x+c,
+f(x)= \max\limits_{(v,c) \in V \times C} v \cdot x+c
+f(x)= \max\limits_{a \in A} (a \cdot x+ c_a)
+a \in A
+H_a= \{(x,y) \in C \times \mathbb{R} \mid y \geq a \cdot x+c_a \}.
+\bigcap\limits_{a \in A} H_a= \{(x,y) \in C \times \mathbb{R} \mid y \geq \max\limits_{a \in A} (a \cdot x+c_a)=f(x) \}= \mathrm{epi}(f).

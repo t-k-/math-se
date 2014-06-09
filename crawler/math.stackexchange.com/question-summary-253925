@@ -1,0 +1,22 @@
+\int_0^\infty \frac{dx}{x^p(x^2+2x\cos{\phi}+1)}=\pi\frac{\sin{p\phi}}{\sin{p\pi}\sin{\phi}}
+0<p<1
+0<\phi<\pi
+R
+0
+2\pi.
+I
+I,
+-I e^{-2\pi i p}.
+f(x) = \frac{e^{-p \log x}}{x^2+ 2x\cos\phi+1}
+ I = \int_0^\infty f(x) dx = \int_0^\infty \frac{e^{-p \log x}}{x^2+ 2x\cos\phi+1} dx
+ \rho_{0,1} = -\cos\phi \pm \sqrt{\cos^2\phi -1} = -\cos\phi \pm i\sin\phi = - e^{\mp i\phi} = e^{\pi i} e^{\mp i\phi}.
+ I \left(1- e^{-2\pi i p} \right) = 2\pi i \left(\operatorname{Res}_{x=\rho_0} f(x) + \operatorname{Res}_{x=\rho_1} f(x)\right).
+ \operatorname{Res}_{x=\rho_0} f(x) = \lim_{x\to\rho_0} \frac{x^{-p}}{x-\rho_1} = \frac{e^{-\pi i p} e^{p i\phi}}{2i\sin\phi} 
+ \operatorname{Res}_{x=\rho_1} f(x) = \lim_{x\to\rho_1} \frac{x^{-p}}{x-\rho_0} = -\frac{e^{-\pi i p} e^{-p i\phi}}{2i\sin\phi} 
+R
+R
+f(x)
+O(1/R^{2+p})
+O(1/R^{1+p})
+I \left(1 - e^{-2\pi i p} \right) = 2\pi i \, e^{-\pi i p} \frac{e^{p i\phi} - e^{-p i\phi}}{2i\sin\phi} = 2\pi i \, e^{-\pi i p} \frac{\sin (p\phi)}{\sin\phi}
+ I = \frac{2\pi i \, e^{-\pi i p}}{1 - e^{-2\pi i p}} \frac{\sin (p\phi)}{\sin\phi} = \frac{2\pi i}{e^{\pi i p} - e^{-\pi i p}} \frac{\sin (p\phi)}{\sin\phi} = \frac{\pi}{\sin(\pi p)}  \frac{\sin (p\phi)}{\sin\phi}.

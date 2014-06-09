@@ -1,0 +1,13 @@
+X_1......X_5
+E(x)= \mu_i
+\sigma_i^2
+i=1,2....5
+Corr(X_i,X_j)= \frac {E(X_iX_j)-\mu_i\mu_j}{\sigma_i\sigma_j} = \rho
+1 \le i\ne j \le 5
+\bar X = \sum_{1 \le i \le 5} \frac {X_i}{n}
+\bar X
+X_1,..., X_n
+E(\sum_{i=1}^n X_i) = \sum_{i=1}^n E(X_i)
+var(\sum_{i=1}^n X_i) = \sum_{i=1}^n var(X_i) + 2\sum_{i \neq j}cov(X_i, X_j)
+= \sum_{i=1}^n var(X_i) +2\sum_{i \neq j}\sigma_i\sigma_j corr(X_i, X_j).
+var(\overline{X}) = \frac{1}{n^2}var(\sum_{i=1}^n X_i) = \frac{1}{n^2} (\sum_{i=1}^n\sigma_i^2 + 2\rho \sum_{i \neq j}\sigma_i\sigma_j )

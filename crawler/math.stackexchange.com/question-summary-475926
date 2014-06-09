@@ -1,0 +1,18 @@
+\mathbf{AB} = \mathbf{A}\left[\vec{b_1} \cdots \vec{b_i} \cdots \vec{b_p}\right]_{n \times p} = \left[\mathbf{A}\vec{b_1} \cdots \mathbf{A}\vec{b_i} \cdots \mathbf{A}\vec{b_p}\right]_{m \times p}. \tag{Row}
+\text{ Also, } \qquad \mathbf{AB} = \left[\begin{matrix}  \vec{a^1} \\ \vdots \\ \vec{a^i} \\ \vdots \\ \vec{a^m} \end{matrix}\right]\mathbf{B}  = \left[\begin{matrix}  \vec{a^1}\mathbf{B}  \\ \vdots \\ \vec{a^i}\mathbf{B}  \\ \vdots \\ \vec{a^m}\mathbf{B}  \end{matrix}\right]_{m \times p}. \tag{Coln}
+2.
+\mathbf{A}
+B
+A
+B
+B
+(Row)
+B
+B
+A
+A
+(Column)
+e_i,\ldots,e_n
+\text{ 
+th row of AB } = e_j^TAB = (e_j^TA)B = \begin{bmatrix} A(j,1) & \cdots & A(j,n) \\     \end{bmatrix}B = (\mathbf{A^j})^TB 
+\left[         \begin{matrix}         1 & 2\\         3 & 4\\         \end{matrix}\right]\cdot \left[         \begin{matrix}         1 & 2\\ 3 & 4\\         \end{matrix}\right] = \left[         \begin{matrix}         \left[         \begin{matrix}         1 & 2\\         3 & 4\\         \end{matrix}\right]\cdot\left[         \begin{matrix}         1\\         3\\         \end{matrix}\right] & \left[         \begin{matrix}         1 & 2\\         3 & 4\\         \end{matrix}\right]\cdot\left[         \begin{matrix}         2\\         4\\         \end{matrix}\right]\\         \end{matrix}\right] =  \left[         \begin{matrix}         \left[         \begin{matrix}         7\\         15\\         \end{matrix}\right] & \left[         \begin{matrix}         10\\         22\\         \end{matrix}\right]\\         \end{matrix}\right] =\left[         \begin{matrix}         7 & 10\\         15 & 22\\         \end{matrix}\right]. 

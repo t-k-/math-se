@@ -1,0 +1,18 @@
+A,B
+\max_{0\leq P\leq I}\|APBPA\|
+\tilde{P}
+v = \mbox{arg }\max_{\|x\|\le1} x^TA\tilde{P}B\tilde{P}Ax
+A\tilde{P}B\tilde{P}A
+u = \tilde{P}Av/\|\tilde{P}Av\|
+P = uu^T
+\tilde{P}\le I
+u^TA v \ge \|\tilde{P}Av\|
+P
+ v^T APBPA v=(u^T B u)(u^TAv)^2 \ge(u^T B u)\|\tilde{P}Av\|^2 =  v^T A\tilde{P}B\tilde{P}Av. 
+ \max_{\|u\| \le 1, \|v\| \le 1} (u^T B u)(u^TAv)^2=\max_{\|u\| \le 1} (u^T B u)(u^TA^2u) 
+P^*
+P^*A^2 u^* = \|A u^*\|^2 u^*
+u^* \in \arg \max_{\|u\| \le 1} (u^T B u)(u^TA^2u)
+ u^* = \frac{1}{2}\left( \frac{Bu^*}{{u^*}^TBu^*} + \frac{A^2 u^*}{{u^*}^T A^2 u^*} \right) 
+u^*
+ \begin{eqnarray} y_{k} &=& Bu_k (u_k^TA^2u_k) + A^2 u_k(u_k^T B u_k) \\ u_{k+1} &=& y_k/\|y_k\| \end{eqnarray} 

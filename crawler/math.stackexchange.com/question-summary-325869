@@ -1,0 +1,24 @@
+(P\nabla)\cdot (P\nabla)=\nabla \cdot (P\nabla)
+P
+P
+P
+P^2=P\ ,\ P^T=P
+\vec e_i
+i
+(i\in\{1,2,3\})
+ \vec e_i\cdot\vec e_j=\delta_{ij}= \left\{ \begin{array}{l} 1 \quad\text{if}\quad i=j\\ 0 \quad\text{if}\quad i\neq j \end{array} \right.\quad . 
+ \nabla=\sum_{i=1}^{3}\vec e_i\frac{\partial}{\partial x_i} 
+ \left. \begin{array}{c} P_{ij}=P_{ji}\\ (P^2)_{ij}=\sum_{k}^3P_{ik}P_{kj}=P_{ij} \end{array} \quad \right\} \quad P\ \text{is orthogonal projection} 
+ P\nabla=\sum_{i,j=1}^{3}\vec e_iP_{ij}\frac{\partial}{\partial x_j} 
+ \begin{array}{rcl} (P\nabla)\cdot(P\nabla)&=&\sum_{i,j,k,l=1}^{3}\vec e_iP_{ij}\frac{\partial}{\partial x_j}\vec e_kP_{kl}\frac{\partial}{\partial x_l} \\ &=& \sum_{i,j,k,l=1}^{3} \underbrace{\vec e_i\cdot\vec e_k}_{=\delta_{ik}} P_{ij}P_{kl}\frac{\partial^2}{\partial x_j\partial x_l} \\ &=& \sum_{j,k,l=1}^{3} \underbrace{P_{kj}P_{kl}}_{=P_{jk}P_{kl}} \frac{\partial^2}{\partial x_j\partial x_l} \\ &=& \sum_{j,l=1}^{3} \underbrace{P^2_{jl}}_{=P_{jl}} \frac{\partial^2}{\partial x_j\partial x_l} \end{array}  
+ \begin{array}{rcl} \nabla\cdot(P\nabla) &=& \sum_{i,j,k=1}^3 \underbrace{\vec e_i\cdot\vec e_j}_{=\delta_{ij}} P_{jk}\frac{\partial^2}{\partial x_i\partial x_k} \\ &=& \sum_{i,k=1}^3P_{ik}\frac{\partial^2}{\partial x_i\partial x_k}=(P\nabla)\cdot(P\nabla) \end{array} 
+\nabla
+P\nabla
+\nabla
+\nabla
+\nabla
+\nabla f=\sum \frac{\partial f}{\partial i}e_{i}
+P\nabla f=\frac{\partial f}{\partial i}
+e_{i}
+\nabla \frac{\partial f}{\partial i}
+ij

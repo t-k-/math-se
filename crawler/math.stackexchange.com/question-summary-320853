@@ -1,0 +1,24 @@
+P=\left(\begin{matrix} -1 &0 &0\\ 0 &0 &0\\ 0 &0 &1 \end{matrix}\right)
+    e^{Pt} = (I_3 - P^2) + P \sinh( t) + P^2 \cosh(t)
+P
+I_3
+3\times3
+P=\left(\begin{matrix} 0 &1 &0\\ 0 &0 &1\\ 0 &1 &0 \end{matrix}\right)
+-1,0,1
+P^3-P=0
+ P^3=P. 
+ P^0=I_3\qquad P^{2n}=P^2\qquad P^{2n-1}=P\qquad\forall n\geq 1. 
+ e^{tP}=\sum_{n\geq 0}\frac{t^nP^n}{n!}=I_3+\sum_{n\geq 1}\frac{t^{2n}}{(2n)!}P^2+\sum_{n\geq 1}\frac{t^{2n+1}}{(2n+1)!}P 
+ =I_3 +(\cosh t-1)P^2+\sinh t P=I_3-P^2+\sinh tP+\cosh tP^2. 
+Q
+ P=AQA^{-1} 
+Q
+ e^{tQ}=I_3 +(\cosh t-1)Q^2+\sinh t Q=I_3-Q^2+\sinh tQ+\cosh tQ^2. 
+ AQ^nA^{-1}=(AQA^{-1})^n=P^n\qquad\forall n\geq 0 
+ e^{tP}=Ae^{tQ}A^{-1}=I_3 +(\cosh t-1)P^2+\sinh t P=I_3-P^2+\sinh tP+\cosh tP^2. 
+P=\left(\begin{matrix} -1 &0 &0\\ 0 &0 &0\\ 0 &0 &1 \end{matrix}\right)
+    e^{Pt} = (I_3 - P^2) + P \sinh( t) + P^2 \cosh(t)
+P
+P = S J S^{-1} = \begin{bmatrix} 1 & 1 & 1 \\ -1 & 0 & 1\\ 1 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix} -1 & 0 & 0 \\ 0 & 0 & 0\\ 0 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix} 0 & -\frac{1}{2} & \frac{1}{2} \\ 1 & 0 & -1\\ 0 & \frac{1}{2} & \frac{1}{2}\end{bmatrix}
+\cosh t = \frac{1}{2}(e^{-t} + e^{t}) ~ \text{and} ~ \sinh t = \frac{1}{2}(-e^{-t} + e^{t}) ~\text{and}~ P^{2} = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}
+\displaystyle e^{Pt} = e^{S J S^{-1} t} = \begin{bmatrix} 1 & -1 & 1 \\ -1 & 0 & 1\\ 1 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix} e^{-1} & 0 & 0 \\ 0 & 0 & 0\\ 0 & 0 & e^{t}\end{bmatrix} \cdot \begin{bmatrix} 0 & -\frac{1}{2} & \frac{1}{2} \\ 1 & 0 & -1\\ 0 & \frac{1}{2} & \frac{1}{2}\end{bmatrix} = \begin{bmatrix} 1 & 0 & -1 \\ 0 & 0 & 0\\ 0 & 0 & 0\end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{1}{2}(e^{-t}+e^{t}) \\ 0 & \frac{1}{2}(e^{-t}+e^{t}) & 0\\ 0 & 0 & \frac{1}{2}(e^{-t}+e^{t})\end{bmatrix} + \begin{bmatrix} 0 & \frac{1}{2}(-e^{-t}+e^{t}) & 0 \\ 0 & 0 & \frac{1}{2}(-e^{-t}+e^{t})\\ 0 & \frac{1}{2}(-e^{-t}+e^{t}) & 0\end{bmatrix} = (I_3 - P^2) + P \sinh( t) + P^2 \cosh(t) = \begin{bmatrix} 1 & \frac{1}{2}(-e^{-t}+e^{t}) & -1 + \frac{1}{2}(e^{-t}+e^{t}) \\ 0 & \frac{1}{2}(e^{-t}+e^{t}) & \frac{1}{2}(-e^{-t}+e^{t})\\ 0 & \frac{1}{2}(-e^{-t}+e^{t}) & \frac{1}{2}(e^{-t}+e^{t})\end{bmatrix}

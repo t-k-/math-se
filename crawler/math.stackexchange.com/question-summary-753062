@@ -1,0 +1,39 @@
+Q \subseteq \mathbb{R}^n
+f: Q \to \mathbb{R}
+Q
+g: Q \to \mathbb{R}
+f(x) = g(x)
+x \in Q \setminus E 
+E
+g
+Q
+\int\limits_Q f = \int\limits_Q g 
+\epsilon >0
+| g(x) | \leq M 
+x \in Q
+E
+E
+\widetilde{Q_i} 
+i=1,...,k
+E
+\sum_{i=1}^k Vol( \widetilde{Q_i} ) < \frac{ \epsilon }{2M}
+f
+Q
+P
+Q
+U(f,P) - L(f,P) < \frac{\epsilon}{2} 
+P
+\widetilde{Q_i}'s
+P
+P'
+ U(g,P') = \sum_R M_R(g) Vol(R) = \sum_R M_R(f) Vol(R) + \sum_{ \widetilde{Q_i} \subseteq R } M_{\widetilde{Q_i}} (g) Vol( \widetilde{Q_i} ) \leq 
+ \leq U(f,P') + \frac{\epsilon}{2M} \cdot M \leq U(f,P) + \frac{ \epsilon}{2} 
+ L(g,P') = \sum_R m_R(f) Vol(R) + \sum_{ \widetilde{Q_i} \subseteq R } m_{\widetilde{Q_i}} (g) Vol( \widetilde{Q_i} ) \geq \sum_R m_R(f) Vol(R) = L(f,P') \geq L(f,P) 
+ U(g,P') - L(g,P') \leq U(f,P) + \frac{\epsilon}{2} - L(f,P) < \frac{ \epsilon}{2} + \frac{\epsilon}{2} = \epsilon 
+g
+Q
+U(g,P') \leq U(f,P) 
+\int_Q g \leq \int_Q f 
+L(g, P') \geq L(f,P)
+\int_Q g \geq \int_Q f 
+ \int\limits_Q f = \int\limits_Q g 

@@ -1,0 +1,11 @@
+Y_1, Y_2,\dots , Y_n
+f (y | θ)=\begin{cases} (θ + 1)y^θ, &  0 < y < 1; θ > −1,\\ 0 ,& \text{elsewhere}.\end{cases}
+\theta
+ \begin{align} \hat{\theta}&=\frac{1- 2\overline{y}}{\overline{y}-1}\\ \end{align} 
+E[\hat{\theta}_{MME}] = E[\frac{1- 2\overline{y}}{\overline{y}-1}] = \int_0^1 \frac{1- 2\overline{y}}{\overline{y}-1}(\theta+1)y^\theta dy
+Y_i
+f
+F
+E[F(Y_1, \dots , Y_n)] = \int dy_1 f(y_1) \dots \int dy_n f(y_n) F( y_1, \dots , y_n)
+F( y_1, \dots , y_n) =  \frac 1n (y_1+ \cdots + y_n)
+\int dy_1 \dots \int dy_n (\theta+1)^n (y_1\dots y_n)^\theta \frac {n-2(y_1+\dots +y_n)}{y_1+\dots +y_n - n} 

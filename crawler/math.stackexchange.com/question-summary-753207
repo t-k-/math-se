@@ -1,0 +1,20 @@
+u^2 = x^2+4
+\int\frac{\sqrt{x^2+4}}{x}\:\mathrm{d}x 
+\sqrt{(x^2+4)} + \ln \left|\frac{\sqrt{(x^2+4)}-2} {{\sqrt{(x^2+4)}+2}}\right| + C
+u^{2}=x^{2}+4
+2u\,\mathrm{d}u=2x\,\mathrm{d}x
+\int\frac{\sqrt{x^{2}+4}}{x}\:\mathrm{d}x=\frac{1}{2}\int\frac{\sqrt{x^{2}+4}}{x^{2}}2x\:\mathrm{d}x=\frac{1}{2}\int\frac{\sqrt{u^{2}}}{u^{2}-4}2u\:\mathrm{d}u
+\int\frac{u^{2}}{u^{2}-4}\:\mathrm{d}u
+\frac{u^{2}}{u^{2}-4}\equiv 1+\frac{1}{u-2}-\frac{1}{u+2}
+\int\frac{\sqrt{x^{2}+4}}{x}\:\mathrm{d}x=\int\left(1+\frac{1}{u-2}-\frac{1}{u+2}\right)\:\mathrm{d}u=u+\ln|u-2|-\ln|u+2|+C
+\int\frac{\sqrt{x^{2}+4}}{x}\:\mathrm{d}x=\sqrt{x^{2}+4}+\ln|\sqrt{x^{2}+4}-2|-\ln|\sqrt{x^{2}+4}+2|+C
+\log(a)-\log(b)=\log\left(\frac{a}{b}\right)
+\int\frac{\sqrt{x^{2}+4}}{x}\:\mathrm{d}x=\sqrt{x^{2}+4}+\ln\left|\frac{\sqrt{x^{2}+4}-2}{\sqrt{x^{2}+4}+2}\right|+C
+u^2 = x^2 + 4 \implies 2 u du= 2x dx \implies u du = x dx
+ \int \frac{ \sqrt{x^2 + 4}}{x }dx = \int \frac{u}{x} \frac{ u du}{x} = \int \frac{ u^2 du}{u^2 - 4}= \int \frac{ u^2 + 4 - 4}{u^2 - 4} du = \int du + 4 \int \frac{du}{u^2-4}
+u^2 - 4 = (u-2)(u+2) 
+u^2=x^2+4
+x=\sqrt{u^2-4}
+(2u)du=(2x)dx\Rightarrow dx=\frac{u}{x}du=\frac{u}{\sqrt{u^2-4}}du
+\int \frac{u}{\sqrt{u^2-4}}\frac{u}{\sqrt{u^2-4}}du=\int \frac{u^2}{u^2-4}du=\int du+\int\frac{4}{(u+2)(u-2)}du\\=u+\int\frac{4}{(u+2)(u-2)}du
+\int\frac{4}{(u+2)(u-2)}du=\int\frac{1}{u-2}du-\int\frac{1}{u+2}du

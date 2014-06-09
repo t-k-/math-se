@@ -1,0 +1,13 @@
+\frac{1}{4(\ln2)^2}\leq\sum_{n=0}^{\infty}\frac{2^n}{2^{2^n}}
+\sum_{n=1}^\infty \frac{1}{2^n} \leq \sum_{n=0}^{\infty}\frac{2^n}{2^{2^n}} \leq 2\sum_{n=1}^\infty \frac{1}{2^n}  \,.
+\sum_{n=1}^\infty \frac{1}{2^n}=1
+\sum_{n=0}^{\infty}\frac{2^n}{2^{2^n}} \geq 1 = \frac{1}{(\ln e)^2}\geq \frac{1}{ (\ln(4))^2} =\frac{1}{4(\ln2)^2}
+f(n)=\frac{2^n}{2^{2^n}}
+f(x)=2^{x-2^x}
+x>0
+f'(x)=2^{x-2^x}(1-2^x\ln2)<0
+f
+ \sum\limits_{n=0}^\infty f(n)= \sum\limits_{n=0}^\infty\int\limits_{[n,n+1]}f(n)dx= \sum\limits_{n=0}^\infty\int\limits_{[n,n+1]}f([x])dx\geq 
+ \sum\limits_{n=0}^\infty\int\limits_{[n,n+1]}f(x)dx= \int\limits_{[0,+\infty)} f(x)dx 
+ \int\limits_{[0,+\infty)} f(x)dx= \int\limits_{[0,+\infty)} \frac{2^x}{2^{2^x}}dx= \int\limits_{[0,+\infty)} \frac{d(2^x)}{2^{2^x}\ln2}= \int\limits_{[1,+\infty)} \frac{du}{2^u\ln2}= 
+ \frac{1}{\ln2}\left(-\frac{2^{-u}}{\ln2}\right)_{u=1}^{u=+\infty}=\frac{1}{2\ln^2 2}>\frac{1}{4\ln^2 2} 

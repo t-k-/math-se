@@ -1,0 +1,56 @@
+u
+\mathbf{R}^n
+|u(x)|\leqslant C \ln(|x|+1)
+u
+u
+u
+u(x) - u(z)
+x,z
+ |B_R|(u(x) - u(z)) = \int_{B_R(x)} u(y) dy - \int_{B_R(z)} u(y) dy 
+ = \int_{B_R(x)} u(y) + f(y) - f(y) dy - \int_{B_R(z)} u(y) + f(y) - f(y) dy 
+ \leq \int_{B_R(x)\setminus B_R(z)} u(y) + f(y) dy + \int_{B_r(z) \setminus B_r(x)} f(y) dy 
+A\delta B
+(A\setminus B)\cup (B\setminus A)
+ \leq \int_{B_R(x) \delta B_R(z)} u(y) + 2f(y) dy 
+w = \max(|x|,|z|)
+B_R(x) \delta B_R(z) \subset B_{R+ w}(0) \setminus B_{R-w}(0)
+ \leq \int_{B_{R+ w}(0) \setminus B_{R-w}(0)} u(y) + 2f(y) dy 
+u
+f
+ \leq (u(0)+2f(R+w)) \left( |B_{R+ w}| - |B_{R- w}|\right) 
+|B_{R+ w}| - |B_{R- w}| = O(R^{n-1})
+f
+\lim_{R\to\infty} (u(0) + 2f(R+w))\frac{|B_{R+ w}| - |B_{R- w}|}{|B_R|} = 0
+ u(x) - u(z) \leq 0 
+x
+z
+u(x) = u(z)
+v(z)
+u(z)
+{\displaystyle f(z) = e^{u(z) + i v(z)}}
+K
+f(z)
+|f(z)| = e^{u(z)} \leq e^{C\ln(|z| + 1)}
+\leq K(1 + |z|)^C
+z_0
+f(z)
+\lim_{z \rightarrow z_0} e^{u(z)} = |f(z)| = 0
+\lim_{z \rightarrow z_0} u(z) = -\infty
+u(z)
+z_0
+f(z)
+u(z)
+u
+u \geq -\log(1+|x|)
+u(0) = a
+x
+B_R
+u(x) = C
+u
+\log(1+2R) + 1
+B_{2R}
+a + 1 + \log(1+2R)
+0
+u
+|u| \leq C(1+\log(1+2R))
+C + \log(1+2R) + 1 \leq K(a + 1 + \log(1+2R))

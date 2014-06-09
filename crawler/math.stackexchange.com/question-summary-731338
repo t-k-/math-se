@@ -1,0 +1,7 @@
+\omega
+ \sum_{n\leq x} \left[ \frac{ \sum_{d\mid n}\omega\left(d\right)  }{n} \right] 
+ \sum_{qd\leq x}\left[\frac{\omega\left(d\right)}{qd} \right]=\sum_{d\leq x}\left[\frac{\omega\left(d\right)}{d} \sum_{q\leq x/d}\left[\frac{1}{q} \right]\right] 
+  \sum_{q\leq x/d}\left[\frac{1}{q} \right]=\log\left(\frac{x}{d}\right)+C+O\left(\frac{d}{x}\right)=\log\left(x\right)-\log\left(d\right)+C+O\left(\frac{d}{x}\right) 
+ f\left(x\right)=\frac{\omega\left(x\right)}{x} 
+ \sum_{qd\leq x}\left[\frac{\omega\left(d\right)}{qd} \right]=\sum_{d\leq x}\left[f\left(d\right)\left( \log\left(x\right)-\log\left(d\right)+C+O\left(\frac{d}{x}\right) \right)\right] 
+\log\left(x\right)\sum_{n\leq x}f\left(x\right)+O\left(1\right)

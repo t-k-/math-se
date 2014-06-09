@@ -1,0 +1,14 @@
+f:[o,+\infty)\rightarrow \Bbb R
+\lim\limits_{x\rightarrow+\infty}[f(x+1)-f(x)]= L
+\lim\limits_{x\rightarrow+\infty}\frac{f(x)}x = L
+\lim\limits_{x\rightarrow+\infty}[f(x+1)-f(x)]= L
+\epsilon
+y>0
+x>y
+x\to+\infty
+L+\epsilon
+\epsilon\to 0
+\limsup\limits_{x\to+\infty} \frac{f(x)}{x}\leq L
+\liminf\limits_{x\to+\infty} \frac{f(x)}{x}\geq L
+x> y\implies |f(x+1)-f(x)-L|<\epsilon
+\begin{align} \frac{f(x)}{x} &=\frac{f(x)-f\left(x-\lfloor x-y\rfloor\right)}{x}+\frac{f\left(x-\lfloor x-y\rfloor\right)}{x}\\ &=\frac{1}{x}\left(\sum\limits_{i=1}^{\lfloor x-y\rfloor}(f(x-i+1)-f\left(x-i\right))+f\left(x-\lfloor x-y\rfloor\right)\right)\\ &\leq\frac{1}{x}\left(\sum\limits_{i=1}^{\lfloor x-y\rfloor}(L+\epsilon)+\sup\limits_{z\in [0,y+1)}|f(z)|\right)\\ &\leq\frac{\lfloor x-y\rfloor}{x}(L+\epsilon)+\frac{1}{x}\sup\limits_{z\in [0,y+1)}|f(z)|\\ &\leq L+\epsilon+\frac{1}{x}\sup\limits_{z\in [0,y+1)}|f(z)|\\ \end{align}

@@ -1,0 +1,25 @@
+y = \prod_{i=1}^M x_i
+x_i\sim U(0,1)
+E[y] = 2^{-M}
+z = \ln y = \sum_{i=0}^M \ln x_i
+z\sim Norm(\mu=-M,\sigma^2 = M)
+\mu = M \int_0^1 \ln x dx = -M
+\sigma^2 = M\int_0^1 (\ln x + 1)^2 dx = M
+\ln x
+y
+e^{\mu + \frac{\sigma^2}{2}} = e^{-M/2} \neq 2^{-M}
+e^{-M/2} \gg 2^{-M}
+M\rightarrow \infty
+f_Y(y) = \frac{1}{y\sqrt{2\pi M}}e^{-\frac{(\ln y +M)^2}{2M}} 
+z
+U
+(0,1)
+P[-\log(U) \leq x] = P[U \geq e^{-x}] = 1 - e^{-x}
+x \in [0,\infty)
+-\log U
+\lambda=1
+-Z
+Z
+      -\sum_{i=1}^M \log(x_i) \sim \text{Gamma}(M,1), 
+   f_{-Z}(z)  = \frac{z^{M-1} e^{-z}}{(M-1)!}, \ \ z > 0. 
+   f_Z(z)  = \frac{(-z)^{M-1} e^z}{(M-1)!}, \ \ z \leq 0. 

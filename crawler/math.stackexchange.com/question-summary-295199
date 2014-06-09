@@ -1,0 +1,11 @@
+S_0=1
+S_1=1+a,...,S_n=\sum_{i=0}^n a^i
+S_{n+1}=1+aS_n
+n \ge 0
+n=1
+n\geq 1
+S_n=\sum_{i=0}^n a^i
+1
+S_{n+1}
+ aS_n=a\sum_{i=0}^n a^i=\sum_{i=0}^n a^{i+1}=\sum_{i=1}^{n+1}a^i. 
+\begin{eqnarray} \rm S_n =\, \sum_{i\, =\, 0}^n\,a^i\ \ \Rightarrow\ \ S_{n+1} &=&\rm\ \  S_n\ +\ a^n \\ \\ \rm Hence\ \quad S_{n+2} - a\, S_{n+1} &=&\rm\  (S_{n+1} +\color{#C00}{a^{n+2}}) - \color{#C00}a\,(S_{n}+\color{#C00}{a^{n+1}})\\ \\ &=&\rm\ \  S_{n+1} - a\, S_n\ =\ 1\ \ \ \text{by induction}\\ \end{eqnarray}

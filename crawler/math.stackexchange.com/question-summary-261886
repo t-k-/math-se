@@ -1,0 +1,22 @@
+\sup_{x\in [a,b]} f(x) = \lim_{n\rightarrow\infty} (\int_a^b (f(x))^n \;dx)^{\frac{1}{n}}
+F = \sup_{\xi\in[a,b]} f(\xi)
+F=0
+F>0
+\epsilon \in (0,F)
+A_\epsilon = \{x | f(x) \geq F-\epsilon\}
+f
+mA_\epsilon > 0
+m
+mA_\epsilon (F-\epsilon)^n \leq \int_{A_\epsilon} (F-\epsilon)^n dx \leq I^n_n = \int_a^b (f(x))^n dx \leq \int_a^b F^n dx  \leq (b-a) F^n
+\sqrt[n]{mA_\epsilon} (F-\epsilon) \leq I_n \leq \sqrt[n]{b-a}F
+\lim_{n \to \infty}\sqrt[n]{mA_\epsilon} = 1
+\lim_{n \to \infty}\sqrt[n]{b-a} = 1
+\limsup_{n \to \infty} I_n \leq F
+\liminf_{n \to \infty} I_n \geq F-\epsilon
+\epsilon
+0
+\liminf_{n \to \infty} I_n \geq F
+A_\epsilon
+f(x) \geq F-\epsilon
+x
+mA_\epsilon

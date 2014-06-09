@@ -1,0 +1,4 @@
+f'(x) \approx 3/(2h^3) \int_{-h}^{h} tf(x+t) dt
+f(x+t)
+ F_x(r) = \int_0^r tf(x+t) dt 
+ F_x(r) = 0 + 0f(x+0)\times r + A_xr^2 + \frac 16 (2f'(x+0) + 0f''(x+0))r^3 +  B_xr^4 + O(r^5) \\=A_xr^2 + \frac 13f'(x)r^3 + B_xr^4 + O(r^5)\\ \frac2{3h^3}\int_{-h}^h tf(x+t)dt = \frac2{3h^3}(F_x(h) - F_x(-h))  = f'(x) + O(h^2)\\ 

@@ -1,0 +1,45 @@
+{20 \choose 10}
+\sum_{k\in \{9, 11, 13, 15, 17, 19 \}} { {k \choose 9} \over {20 \choose 10}} = {30616 \over 46189} \simeq 0.662842.
+n
+\frac{\binom{21-n}{10}}{\binom{20}{10}}\;.
+n
+\frac{\binom{21-n}{10}-\binom{20-n}{10}}{\binom{20}{10}}\;.
+ \begin{eqnarray} \sum_{k=0}^{5}\frac{\binom{21-(2k+1)}{10}-\binom{20-(2k+1)}{10}}{\binom{20}{10}} &=& \sum_{n=0}^{10}(-1)^n\frac{\binom{20-n}{10}}{\binom{20}{10}} \\ &=& \frac{122464}{184756}\\ &\approx& \frac23\;.  \end{eqnarray}  
+\mathbb P(X = i)
+X
+10
+X
+10
+X_1, X_2, \dots, X_{10}
+X_i
+i^{\text{th}}
+\mathbb P(X \ge i)
+\mathbb P(X = i)
+\mathbb P(X \ge i) - \mathbb P(X \ge i+1)
+\mathbb P(X \ge i)
+X
+\mathbb P(X = i)
+\mathbb P(X \le i)
+\mathbb P(X=i)
+\mathbb P(X \ge i)
+X \ge i
+i
+\begin{pmatrix} 21-i \\ 10 \end{pmatrix}
+10
+i
+i+1
+\dots
+20
+i > 11
+i \le 11
+i \ge 12
+10
+20
+\begin{pmatrix} 20 \\ 10 \end{pmatrix}
+X
+X
+X
+X
+ \mathbb P(X = i) = \mathbb P(X \ge i) - \mathbb P(X \ge i+1) = \frac{ \begin{pmatrix} 21-i \\ 10 \end{pmatrix} - \begin{pmatrix} 20-i \\ 10 \end{pmatrix} }{\begin{pmatrix} 20 \\ 10 \end{pmatrix} }. 
+X
+ \sum_{i=0}^5 \frac{ \begin{pmatrix} 21-2i \\ 10 \end{pmatrix} - \begin{pmatrix} 20-2i \\ 10 \end{pmatrix} }{\begin{pmatrix} 20 \\ 10 \end{pmatrix} }  = \frac{ \begin{pmatrix} 20 \\ 10 \end{pmatrix} - \begin{pmatrix} 19 \\ 10 \end{pmatrix} + \begin{pmatrix} 18 \\ 10 \end{pmatrix} - \begin{pmatrix} 17 \\ 10 \end{pmatrix} + \dots + \begin{pmatrix} 10 \\ 10 \end{pmatrix}}{\begin{pmatrix} 20 \\ 10 \end{pmatrix} } 

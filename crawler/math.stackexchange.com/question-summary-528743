@@ -1,0 +1,7 @@
+\{X_n\}
+1/n \sum\limits_{i=1}^n X_i \rightarrow0 
+R
+X'_j:=X_j\chi_{\{|X_j|\leqslant R\}}-\mathbb E(X_j\chi_{\{|X_j|\leqslant R\}})
+X''_j:=X_j\chi_{\{|X_j|\gt R\}}-\mathbb E(X_j\chi_{\{|X_j|\gt R\}})
+S_n:=\sum_{j=1}^nX_j=\sum_{j=1}^n(X'_j+X''_j)
+\mathbb E|S_n|\leqslant \mathbb E\left|\sum_{j=1}^nX'_j\right|+n\max_{1\leqslant j\leqslant n}\mathbb E|X_j|\chi_{\{|X_j|\gt R\}}\leqslant\mathbb E \left|\sum_{j=1}^nX'_j\right|+n\sup_{k\in\mathbb N}\mathbb E(|X_k|\chi_{\{|X_k|\gt R\}}).

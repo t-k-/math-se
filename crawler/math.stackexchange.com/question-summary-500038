@@ -1,0 +1,18 @@
+\displaystyle \sum _{k=0}^{\frac{n}{2}-m} \frac{\left(-\frac{1}{2}\right)^k}{k!} \exp \left(\frac{3 (m+k)-2 (m+k)^2}{n}\right)
+e ^{-1/2}
+ m=1,2....
+n \rightarrow \infty
+\alpha_{n,k} = \begin{cases} \exp\left(\frac{3(m+k)-2(m+k)^2}{n}\right), & 0 \le k \le \frac{n}{2} - m\\ \\ 0, & k > \frac{n}{2} - m. \end{cases}
+n
+n^{th}
+ \sum _{k=0}^{\frac{n}{2}-m} \frac{1}{k!}(-\frac12)^k \alpha_{n,k} = \sum_{k=0}^{\infty} (S_k - S_{k-1})\alpha_{n,k} = \sum_{k=0}^{\infty} S_k (\alpha_{n,k} - \alpha_{n,k+1})
+\displaystyle\lim_{n\to\infty} \sum_{k=0}^{\infty} (\alpha_{n,k} - \alpha_{n,k+1})    =\lim_{n\to\infty} a_{n,0} = \lim_{n\to\infty} e^{(3m-2m^2)/n} = 1.
+k
+\displaystyle\quad\lim_{n\to\infty} (\alpha_{n,k}-\alpha_{n,k+1}) = 1 - 1 = 0.
+\lim_{n\to\infty} \sum_{k=0}^{\infty}S_k(\alpha_{n,k}-\alpha_{n,k+1}) = \lim_{k\to\infty} S_k = \sum_{k=0}^{\infty} \frac{1}{k!}(-\frac12)^k = e^{-1/2}
+\beta_{n,k}
+b_k
+d_k
+\beta_{n,k}
+d_k
+\sum_{k} b_k = \sum_{k} \lim_{n\to\infty} \beta_{n,k} = \lim_{n\to\infty} \sum_{k}\beta_{n,k}

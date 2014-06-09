@@ -1,0 +1,23 @@
+(p \land q ) \to r
+p\to (q \to r)
+(p\land q)\to r\equiv \lnot(p\land q)\lor r \equiv \lnot p \lor \lnot q \lor r
+p\to (q\to r)\equiv p\to (\lnot q \lor r)\equiv \lnot p\lor (\lnot q \lor r)\equiv \lnot p \lor \lnot q \lor r
+(P\wedge Q)\rightarrow R
+P
+Q
+P\wedge Q
+R
+P\rightarrow(Q\rightarrow R)
+P\rightarrow(Q\rightarrow R)
+P\wedge Q
+P
+Q
+R
+(P\wedge Q)\rightarrow R
+a \rightarrow b \equiv \lnot a \lor b\tag{1}
+\lnot(a \land b) \equiv \lnot a \lor \lnot b\tag{2}
+\lor
+\begin{align} (p \land q ) \to r & \equiv \lnot(p \land q) \lor r\tag{by (1)} \\ \\ & \equiv (\lnot p \lor \lnot q) \lor r \tag{by (2)}\\ \\  & \equiv \lnot p \lor( \lnot q \lor r) \tag{associativity of $\lor$} \\ \\ & \equiv \lnot p \lor (q \rightarrow r)\tag{by (1)}\\ \\ & \equiv p \rightarrow(q\rightarrow r) \tag{by (1)}  \end{align}
+p
+q
+r

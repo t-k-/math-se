@@ -1,0 +1,27 @@
+A
+B
+t \in [0,1]
+\det((1-t)A + tB)
+A
+B
+A
+B
+A = \operatorname{diag}(a_1,\ldots,a_n), B = \operatorname{diag}(b_1,\ldots,b_n),
+\begin{aligned} \det((1-t)A + tB) &= \det \operatorname{diag}((1-t)a_1 + tb_1, \ldots, (1-t)a_n + tb_n) \\ &= \prod_{j=1}^n ((1-t)a_j + tb_j). \end{aligned}
+A = I
+(1-t)A + tB
+D(0) = 1
+c(\tau)
+D(t) = \det((1-t)I - tB),
+ \dot{D}(t) = D(t) c(t)
+c(t) := \operatorname{trace}(((1-t)I + tB)^{-1}(B-I))
+D(t) = \exp\left(\int_0^t c(\tau) \; d\tau\right)
+A=I
+(1-t)I + tB
+\frac{d}{dt}((1-t)I + tB) = B-I
+\frac{d}{dt}\log(A(t)) = A(t)^{-1} \frac{d}{dt} A'(t)
+B
+A
+\dot{D}(t)
+\begin{aligned} \int_0^t c(\tau) \; d\tau &= \operatorname{trace} \int_0^t ((1-\tau)I + \tau B)^{-1} (B-I) \; d\tau \\ &= \operatorname{trace} \log ((1-t)I + tB) \end{aligned} 
+ D(t) = e^{\operatorname{trace} \log((1-t)I + tB)}. 

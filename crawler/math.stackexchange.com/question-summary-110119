@@ -1,0 +1,26 @@
+X_1, X_2,\ldots
+m_k:=EX_k=\sqrt{2k}
+v_k:=\operatorname{Var} X_k=2k
+Y_n=\dfrac{\sum_{i=1}^n (X_i−m_i)}{n}
+b^{−2}_n\sum_{i=1}^n E(|X_i−m_i|^2⋅1_{∣Xi−mi∣>ϵ⋅b_n}) ⟶0
+n→∞\text{ and }∀ϵ>0
+\frac{\sum_{i=1}^n (X_i−m_i)}{b_n}⇒N(0,1)
+b^2_n=\sum_{i=1}^n \operatorname{Var} X_i=\sum_{i=1}^n 2i=n(n+1)
+Y_n=\frac{\sum_{i=1}^n (X_i−m_i)}{n}=\sqrt{\frac{n+1}{n}}\frac{\sum_{i=1}^n (X_i−m_i)}{b_n},
+\frac{\sum_{i=1}^{n}(X_i−m_i)}{b_n}⇒N(0,1)\text{ and }\sqrt{\frac{n+1}{n}}=\sqrt{1+\frac{1}{n}}→1,
+Y_n⇒N(0,1).
+E(|X_i−m_i|^2⋅1_{∣Xi−mi∣>ϵ⋅b_n})=∫_{∣x−m_i∣>ϵ⋅b_n}(x−m_i)^2\sqrt{2i}e^{−\frac{x}{\sqrt{2i}}}\;dx.
+x_{k,n}=\mathrm E((X_k-m_k)^2:|X_k-m_k|\geqslant\varepsilon b_n)
+X_k/m_k
+X
+x_{k,n}\leqslant m_k^2x_{n,n}
+k\leqslant n
+\sum\limits_{k=1}^nx_{k,n}\leqslant b_n^2x_{n,n}
+b_n^2=\sum\limits_{k=1}^nm_k^2
+x_{n,n}\to0
+\sum\limits_{k=1}^nx_{k,n}\ll b_n^2
+ x_{k,n}=m_k^2\mathrm E((X-1)^2:(X-1)^2\geqslant\varepsilon^2 b_n^2/m_k^2). 
+\mathrm E((X-1)^2:X\geqslant t)=(t^2+1)\mathrm e^{-t}
+t\geqslant0
+x_{n,n}=O(b_n^2\mathrm e^{-\varepsilon b_n/m_n})
+x_{n,n}\to0

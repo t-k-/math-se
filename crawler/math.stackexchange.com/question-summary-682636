@@ -1,0 +1,8 @@
+T \subset \mathbb{R}
+A(t)
+A(\tau)
+t, \tau \in T
+ A : T \rightarrow \mathbb{R}^{n \times n} 
+ \frac{1}{n!} \left ( \int_{\tau}^t A(s) \; ds \right )^n = \int_\tau^t A(s_1) \int_\tau^{s_1} A(s_2) \dots \int_\tau^{s_{n-1}} A(s_n) \; ds_n ds_{n-1} \dots ds_1 
+u = \int_{\tau}^{s_1} A(s) \; ds
+\frac{du}{ds_1} = A(s_1)

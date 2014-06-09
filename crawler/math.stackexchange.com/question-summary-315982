@@ -1,0 +1,102 @@
+A=(a_{ij})_n
+\lambda_1\geq\cdots\geq \lambda_n\geq 0
+k\in\{1,\ldots,n\}
+\prod_{j=1}^ka_{jj}\leq\left(\frac{1}{k}\sum_{j=1}^k\lambda_j\right)^k.
+\le
+a_{jj}, j = 1,\ldots,k
+\prod_{j=1}^k a_{jj} \le \left( \frac{1}{k} \sum_{j=1}^k a_{jj} \right)^{k}
+A
+\lambda_1 \ge \lambda_2 \ge \cdots \lambda_n \ge 0
+\Omega
+\Lambda
+A = \Omega^{T} \Lambda \Omega
+\Lambda_{ii} = \lambda_i
+i = 1,\ldots,n
+\Omega
+\sum_{j=1}^k a_{jj} = \sum_{j=1}^k \sum_{i=1}^n \lambda_i |\Omega_{ij}|^2 =\sum_{i=1}^n\lambda_i \beta_i \,\,\,\text{ where }\,\,\,\beta_i = \sum_{j=1}^k |\Omega_{ij}|^2 
+0 \le \beta_i \le 1
+\sum_{i=1}^n \beta_i = k
+x_0 = 0
+x_i = \sum_{s=1}^i \beta_s
+i = 1,\ldots,n
+\beta(t)
+\gamma(t)
+[0,k)
+\begin{align} \beta(t)  &= \lambda_i \,\,\,\text{ for }\,\,\, t \in [x_{i-1}, x_i), & i = 1,\ldots, n\\ \gamma(t)  &= \lambda_i \,\,\,\text{ for }\,\,\, t \in [i-1, i), & i = 1,\ldots, k \end{align}
+\lambda_i
+\beta(t) \le \gamma(t)
+[0,k)
+\sum_{i=1}^{n} \lambda_i\beta_i = \int_{0}^{k} \beta(t) dt \le \int_{0}^{k} \gamma(t) dt = \sum_{i=1}^k \lambda_i
+\prod_{j=1}^k a_{jj} \le \left( \frac{1}{k} \sum_{j=1}^k \lambda_j \right)^{k}
+\sum_{j=1}^k a_{jj} \le \sum_{j=1}^k \lambda_j
+A
+n\times n
+\text{diag}(A)
+A
+\lambda(A)
+A
+\text{diag}(A)
+\lambda(A)
+\{e_1,\ldots,e_n\}
+\mathbb{C}^n
+a_{jj}=(e_j,Ae_j)\geq 0
+j
+a_{11},\ldots,a_{kk}
+k=n
+A
+k\leq n-1
+ \sum_{j=1}^k a_{jj}\leq \sum_{j=1}^k\lambda_j \qquad\forall 1\leq k\leq n. 
+A_k
+A
+k
+A_k=(a_{ij})_{1\leq i,j\leq k}
+M_k(\mathbb{C})
+(A_kx,x)=(Ax,x)
+x\in \mathbb{C}^k
+\mathbb{C}^n
+e_1,\ldots,e_k
+\mu_1\geq\ldots\geq \mu_k\geq 0
+A_k
+A_k
+j
+\mathbb{C}^n
+ \mu_j=\max_{F\subseteq \mathbb{C}^k\dim F=j}\;\;\min_{x\in F, \|x\|=1} (A_kx,x)=\max_{F\subseteq \mathbb{C}^k\dim F=j}\;\;\min_{x\in F, \|x\|=1} (Ax,x). 
+ \forall 1\leq j\leq k\qquad \mu_j\leq \lambda_j\quad\Rightarrow\quad \sum_{j=1}^ka_{jj}=\mbox{tr}A_k=\sum_{j=1}^k\mu_j\leq \sum_{j=1}^k\lambda_j. 
+P_k
+A_{k}
+A_k
+k
+k
+A
+P_kA_kP_k' = \Phi_k 
+\left[\mu_1,\mu_2,\cdots,\mu_k\right]
+A
+\left(\begin{array}[cc] AA_k&U\\ U'&R \end{array}\right)
+U
+k\times (n-k)
+R
+(n-k)\times(n-k)
+\left(\begin{array}[cc] AP_k&0\\ 0&I_{n-k} \end{array}\right)$$\left(\begin{array}[cc] AA_k&U\\ U'&R \end{array}\right)
+\left(\begin{array}[cc] AP_k'&0\\ 0&I_{n-k} \end{array}\right)
+\left(\begin{array}[cc] A\Phi_k& P_kU\\ U'P_k'&R \end{array}\right)
+tr(\Phi_k) = tr(A_k) = \sum_{i=1}^k a_{ii}
+\Lambda = \left[\lambda_1,\cdots,\lambda_n\right]
+\sum_{i=1}^k\lambda_i\ge tr(\Phi_k)
+x=(x_1,\cdots,x_k,0)
+0
+n-k
+z =x\left(\begin{array}[cc] AP_k'&0\\ 0&I_{n-k} \end{array}\right) P'_n 
+\sum_{i=1}^n\lambda_i z_i^2 =\sum_{j=1}^k\mu_j x_j^2 
+x = \left[0,0,\cdots,1,0,0\cdots,0\right]
+k
+x = e^m
+m
+z^m = (z_1^m,\cdots,z_n^m)
+z^l
+z^m
+m\neq l
+\sum_{j=1}^k(z_i^j)^2\le 1
+z^l
+\sum_{i=1}^n \lambda_i (z_i^m)^2 = \mu_m
+\sum_{j=1}^k \mu_j = \sum_{i=1}^n\lambda_i(\sum_{j=1}^k(z_i^j)^2)\le \sum_{i=1}^k \lambda_i
+\sum_{i=1}^n\sum_{j=1}^k(z_i^j)^2 = k

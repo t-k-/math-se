@@ -1,0 +1,18 @@
+K
+f(x)
+ f(x)=\begin{cases} \frac{3}{4}(1-x^2), &|x|<1,\\ \\ 0, &\text{otherwise}\\ \end{cases} 
+Y=4-K^2
+-1\leq K\leq 1
+x\in [3,4]
+ P(Y\leq x)=P(4-K^2\leq x)=P(\sqrt{4-x}\leq K \leq \infty)=\int_{\sqrt{4-x}}^{\infty} f(t)d t=\int_{\sqrt{4-x}}^{1} f(t)d t 
+\int_{0}^{x}f(s)ds
+K
+x=3
+x=4
+0
+1
+ P(4-K^2 \leq x) = P(\sqrt{4-x} \leq K \leq \infty) + P(-\infty \leq K \leq -\sqrt{4-x}) 
+ P(\sqrt{4-x} \leq K \leq \infty) + P(-\infty \leq K \leq -\sqrt{4-x}) = 2P(\sqrt{4-x} \leq K \leq \infty) 
+ 2\int^{1}_{\sqrt{4-x}}f(t) dt \\ =\frac{3}{2}\int^{1}_{\sqrt{4-x}}1-t^2 dt \\ =\frac{3}{2}\left.\left(t-\frac{t^3}{3}\right)\right|_{\sqrt{4-x}}^1 \\ =\frac{3}{2}\left(\left(1-\frac{1}{3}\right)-\left(\sqrt{4-x}-\frac{(4-x)^{3/2}}{3}\right)\right) \\ =1-\frac{1}{2}\left(x-1\right)\sqrt{4-x} \\ 
+x
+ \frac{d}{dx}1-\frac{1}{2}\left(x-1\right)\sqrt{4-x} \\ =-\frac{1}{2}\left(\sqrt{4-x}+\frac{1-x}{2\sqrt{4-x}}\right) 

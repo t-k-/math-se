@@ -1,0 +1,19 @@
+\dfrac{n}{n+1}+\dfrac{2n(n-1)}{(n+1)(n+2)}+\dfrac{3n(n-1)(n-2)}{(n+1)(n+2)(n+3)}+\cdots=\dfrac{n}{2}
+\dfrac{n}{n+1}+\dfrac{2n(n-1)}{(n+1)(n+2)}+\dfrac{3n(n-1)(n-2)}{(n+1)(n+2)(n+3)}+\cdots=\displaystyle\sum_{k=1}^{n}\dfrac{(n!)^2}{(n-k)!(n+k)!}
+\displaystyle\sum_{k=1}^{n}\dfrac{(n!)^2}{(n-k)!(n+k)!}=(n!)^2\displaystyle\sum_{k=1}^{n}\dfrac{1}{\Gamma{(n-k+1)}\Gamma{(n+k+1)}}
+\Longleftrightarrow \displaystyle\sum_{k=1}^{n}\dfrac{kC_{n}^{k}}{C_{n+k}^{k}}=\dfrac{n}{2}
+\dfrac{kC_{n}^{k}}{C_{n+k}^{k}}=\dfrac{kC_{2n}^{n+k}}{C_{2n}^{n}}
+\Longleftrightarrow \displaystyle\sum_{k=0}^{n}kC_{2n}^{n+k}=\dfrac{n}{2}C_{2n}^{n}
+\displaystyle\sum_{k=0}^{n}kC_{2n}^{n+k}=\displaystyle\sum_{k=0}^{n}C_{2n}^{k}-\displaystyle\sum_{k=0}^{n}kC_{2n}^{k}=\dfrac{n}{2}C_{2n}^{n}
+\{a_n\}
+\{b_n\}
+ A(z) B(z) = \sum_{n\ge 0} a_n \frac{z^n}{n!}  \sum_{n\ge 0} b_n \frac{z^n}{n!} = \sum_{n\ge 0}  \sum_{k=0}^n \frac{1}{k!}\frac{1}{(n-k)!} a_k b_{n-k} z^n\\ = \sum_{n\ge 0}  \sum_{k=0}^n \frac{n!}{k!(n-k)!} a_k b_{n-k} \frac{z^n}{n!} = \sum_{n\ge 0}  \left(\sum_{k=0}^n {n\choose k} a_k b_{n-k}\right)\frac{z^n}{n!}
+\sum_{k=0}^n {n\choose k} a_k b_{n-k}.
+\sum_{k=0}^n \frac{k\times (n!)^2}{(n+k)! (n-k)!} = n! \sum_{k=0}^n {n\choose k} \frac{k\times k!}{(n+k)!}.
+A(z) = \sum_{k\ge 0} \frac{k\times k!}{(n+k)!} \frac{z^k}{k!} = \sum_{k\ge 1} \frac{k}{(n+k)!} z^k
+B(z) = \sum_{k\ge 0} \frac{z^k}{k!} = \exp(z).
+A(z)
+z \sum_{k\ge 1} \frac{k}{(n+k)!} z^{k-1} = z \frac{d}{dz} \sum_{k\ge 1} \frac{z^k}{(n+k)!} = z \frac{d}{dz} \frac{1}{z^n} \sum_{k\ge 1} \frac{z^{n+k}}{(n+k)!} = z \frac{d}{dz}  \frac{1}{z^n} \left(\exp(z)-\sum_{q=0}^n \frac{z^q}{q!}\right) \\= z \times \left(-\frac{n}{z^{n+1}} \left(\exp(z)-\sum_{q=0}^n \frac{z^q}{q!}\right) +\frac{1}{z^n}  \left(\exp(z)-\sum_{q=0}^{n-1} \frac{z^q}{q!}\right)\right).
+A(z) B(z)
+[z^n] A(z) B(z) \\= - n [z^{2n}]  \left(\exp(2z)-\exp(z)\sum_{q=0}^n \frac{z^q}{q!}\right) + [z^{2n-1}]  \left(\exp(2z)-\exp(z)\sum_{q=0}^{n-1} \frac{z^q}{q!}\right) \\ = -n\frac{2^{2n}}{(2n)!} +n\sum_{q=0}^n \frac{1}{q!}\frac{1}{(2n-q)!} + \frac{2^{2n-1}}{(2n-1)!} -\sum_{q=0}^{n-1} \frac{1}{q!}\frac{1}{(2n-1-q)!} \\ = n\sum_{q=0}^n \frac{1}{q!}\frac{1}{(2n-q)!} -\sum_{q=0}^{n-1} \frac{1}{q!}\frac{1}{(2n-1-q)!} \\ = \frac{n}{(2n)!} \sum_{q=0}^n {2n\choose q} - \frac{1}{(2n-1)!} \sum_{q=0}^{n-1} {2n-1\choose q} \\ = \frac{n}{(2n)!} \left(2^{2n-1}+\frac{1}{2}{2n\choose n}\right) - \frac{1}{(2n-1)!} 2^{2n-2} \\ = \frac{2^{2n-2}}{(2n-1)!}  + \frac{n}{2} \frac{1}{(2n)!} {2n\choose n} - \frac{1}{(2n-1)!} 2^{2n-2} = \frac{n}{2} \frac{1}{(n!)^2}.
+n! \times n! \times [z^n] A(z) B(z) = n! \times n! \times \frac{n}{2} \frac{1}{(n!)^2} = \frac{n}{2}

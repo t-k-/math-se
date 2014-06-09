@@ -1,0 +1,33 @@
+f, a, b
+(x,y,z)
+\vec{s}
+  \vec{s} \cdot \nabla f = a f + b \\ 
+(x, y, z)
+\Bbb R^3
+\Bbb R^n
+\vec s
+\vec s \cdot \nabla f = af + b, \tag{1}
+\dot {\vec x}(t) = \vec s(x(t)), \tag{2}
+\frac{df}{dt} = af(t) + b. \tag{3}
+u(t) = af(t) + b, \tag{4}
+\frac{du}{dt} = a\frac{df}{dt} = a(af + b) = au, \tag{5}
+u(t) = u(t_0)e^{a(t - t_0)}.  \tag{6}
+f(t)
+f(t) = \frac{1}{a}((af(t_0) + b)e^{a(t - t_0)} - b). \tag{7}
+f(p, t) = \frac{1}{a}((af(p, t_0) + b)e^{a(t - t_0)} - b). \tag{8}
+f(p, t)
+S
+t
+\vec s
+t = t_0
+S
+p_0 \in S
+(p, t)
+\Bbb R^n
+(p, t)
+S
+p
+\frac{df(p, t)}{dt} = a(p, t)f(p, t) + b(p, t), \tag{9}
+f(p, t) = exp(\int_{t_0}^t a(p, s) ds) (f(p, t_0) + \int_{t_0}^t exp(-\int_{t_0}^s a(p, r) dr)b(p, s) ds), \tag{10}
+a
+b

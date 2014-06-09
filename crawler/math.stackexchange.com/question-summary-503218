@@ -1,0 +1,29 @@
+X(t)=Y_1+tY_2
+Y_1,Y_2
+Y_1 \sim N(0,1)
+(X(t),X(s))
+t\not = s
+X(t)\sim N(0,1)+N(0,t^2)=N(0,1+t^2)
+\mathrm{cov}(X(t),X(s))=1+ts
+(X(t),X(s))
+E[A(X(t),X(s))]
+A
+(Y_1,Y_2)
+u=x+ty
+v=x+sy
+y=(u-v)/(t-s)
+x=(tv-su)/(t-s)
+t\gt s
+\mathrm dx\mathrm dy=\mathrm du\mathrm dv/(t-s)
+t\gt s
+(X(t),X(s))
+f_{t,s}
+2
+B(u,v)
+ E[A(X(t),X(s))]=E[A(Y_1+tY_2,Y_1+sY_2)]=\iint A(x+ty,x+sy)\mathrm e^{-(x^2+y^2)/2}\frac{\mathrm dx\mathrm dy}{2\pi}. 
+ E[A(X(t),X(s))]=\iint A(u,v)\mathrm e^{-B(u,v)/2}\frac{\mathrm du\mathrm dv}{2\pi(t-s)}, 
+ B(u,v)=\frac{(tv-su)^2+(u-v)^2}{(t-s)^2}. 
+ f_{t,s}(u,v)=\frac{\mathrm e^{-B(u,v)/2}}{2\pi(t-s)}. 
+ B(u,v)=\frac{(s^2+1)u^2-2(st+1)uv+(t^2+1)v^2}{(t-s)^2}. 
+\sigma_1=1+t^2,\sigma_2=1+s^2,\rho=\frac{1+ts}{\sqrt{1+t^2}\sqrt{1+s^2}}.
+(X_t,X_s)\sim N(0,0,\sigma_1,\sigma_2,\rho).

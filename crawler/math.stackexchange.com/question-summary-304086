@@ -1,0 +1,10 @@
+x
+t
+e^{2xt-t^2}=\sum^\infty_{n=0}\frac{H_n(x)}{n!}t^n. 
+f(t)=e^{-(x-t)^2}=e^{-x^2}e^{2xt-t^2}.
+f(t)=\sum^\infty_{n=0}\frac{f^{(n)}(0)}{n!}t^n.
+x-t=u
+f^{(n)}(0)=\bigg[ \frac{d^n}{dt^n}e^{-(x-t)^2} \bigg]_{t=0}=(-1)^n\bigg[ \frac{d^n}{dt^n}e^{-u^2} \bigg]_{u=x}=(-1)^n\frac{d^n}{dx^n}(e^{-x^2})=e^{-x^2}H_n(x).
+x-t=u
+(-1)^n
+f^{\left(n\right)}\left(t\right)=\left[\frac{d^{n}}{dt^{n}}e^{-\left(x-t\right)^{2}}\right]_{t=0}=\left[\frac{d^{n}}{\left(-1\right)^{n}d^{n}u}e^{-u^{2}}\right]_{x-u=0}=\left[\left(-1\right)^{n}\frac{d^{n}}{d^{n}u}e^{-u^{2}}\right]_{u=x}=\\=\left(-1\right)^{n}\frac{d^{n}}{d^{n}x}e^{-x^{2}}=e^{-x^{2}}\cdot\left(-1\right)^{n}e^{-x^{2}}\frac{d^{n}}{d^{n}x}e^{-x^{2}}=e^{-x^{2}}H_{n}\left(x\right)

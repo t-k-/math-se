@@ -1,0 +1,12 @@
+\rho [t] = \int_0^\infty \frac{t(x)}{\sqrt{x}}dx
+x
+t(x)
+t'(x)
+\rho'[t] = -\rho[t']
+-\int_0^\infty \frac{t'(x)}{\sqrt{x}}dx
+\left.\frac{t(x)}{\sqrt{x}}\right|_0^\infty - \frac{1}{2}\int_0^\infty \frac{t(x)}{x^{3/2}} dx
+t
+t(a)-t(0)
+O(a)
+ \begin{split} -\int_0^\infty \frac{t'(x)}{\sqrt{x}}dx  &= \lim_{a\to 0^+}-\int_a^\infty \frac{t'(x)}{\sqrt{x}}dx \\ &= \lim_{a\to 0^+} -\left.\frac{t(x)}{\sqrt{x}}\right|_a^\infty - \frac{1}{2}\int_a^\infty \frac{t(x)}{x^{3/2}} dx  \\ &= \lim_{a\to 0^+} \frac{t(a)}{\sqrt{a}}- \frac{1}{2}\int_a^\infty \frac{t(x)}{x^{3/2}} dx \end{split} 
+ \begin{split} \dots & =\lim_{a\to 0^+} \frac{t(0)}{\sqrt{a}}- \frac{1}{2}\int_a^\infty \frac{t(x)}{x^{3/2}} dx \\ & =\lim_{a\to 0^+} \frac{1}{2}\int_a^\infty \frac{t(0)-t(x)}{x^{3/2}} dx  \\ & =\frac{1}{2}\int_0^\infty \frac{t(0)-t(x)}{x^{3/2}} dx  \end{split} 

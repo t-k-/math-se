@@ -1,0 +1,17 @@
+S=\sum_{(n,k)\in \mathbb{N}^2} a_{n,k} \ x^{n+2k}
+S=\sum_{m=0}^\infty b_m x^m.
+x
+S
+n+k
+b_m = \sum_{i=0}^{m}a_{i,m-i}.
+n+2k
+b_m
+m \in 2 \mathbb{N} \implies b_m=\sum_{i=0}^{m}a_{i,\lfloor\frac{m}{2} \rfloor -i}
+m \in 2 \mathbb{N} +1\implies b_m=\sum_{i=1}^{m}a_{i,\lfloor\frac{m}{2} \rfloor -i}
+8 : \quad (0,4),(2,3),(4,2),(6,1),(8,0)
+9 : \quad (1,4),(3,3),(5,2),(7,1),(9,0)
+m
+0
+1
+\left( \sum_{n=0}^{\infty} \frac{z^n}{n!} \right)  \left( \sum_{n=0}^{\infty} \frac{|E_{2k}|}{(2k)!}z^{2k}\right)  = \sum_{n=0}^{\infty}\sum_{k=0}^{\infty}  \frac{z^n}{n!} \frac{|E_{2k}|}{(2k)!}z^{2k} = \sum_{n=0}^{\infty}\sum_{k=0}^{\infty}  \frac{|E_{2k}|}{n!(2k)!}z^{n+2k}. 
+a_{n,k} = \frac{|E_{2k}|}{n!(2k)!}

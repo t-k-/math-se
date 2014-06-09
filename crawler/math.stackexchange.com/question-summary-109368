@@ -1,0 +1,35 @@
+s
+u
+2
+(s,u)
+s
+u^{[1]}
+pr(s,u)
+9
+pr(00,**),pr(01,*1),pr(10,1*),pr(11,11)
+pr(**)
+ \begin{cases} pr(00,00) + &pr(00,01) + &pr(00,10) + &pr(00,11) &= pr(00) \\             &pr(01,01)   &          + &pr(01,11) &= pr(01) \\             &            &pr(10,10) + &pr(10,11) &= pr(10) \\             &            &            &pr(11,11) &= pr(11) \\ \end{cases} 
+ \begin{cases} pr(00) + pr(01) + pr(10) + pr(11) &= 1 \\ pr(00) &> 0 \\ pr(01) &> 0 \\ pr(10) &> 0 \\ pr(11) &> 0 \\ \end{cases} 
+ \sum_{s,u}{pr(s,u)\log{pr(s,u)} - \sum_{u}{\big(\sum_{s}{pr(s,u)}\big)\log{\big(\sum_{s'}{pr(s',u)}\big)}}} 
+\scriptsize \begin{align} pr(00,00)\log{pr(00,00)} & + pr(00,01)\log{pr(00,01)} & + pr(00,10)\log{pr(00,10)} & + pr(00,11)\log{pr(00,11)} \\ &+pr(01,01)\log{pr(01,01)} & & + pr(01,11)\log{pr(01,11)} \\ &&+pr(10,10)\log{pr(10,10)}  & + pr(10,11)\log{pr(10,11)} \\ &&&+pr(11,11)\log{pr(11,11)}\\ \end{align} 
+\scriptsize \begin{align} &-\big(pr(00,01)+pr(01,01)\big)\times \log{\big(pr(00,01)+pr(01,01)\big)} \\ &-\big(pr(00,10)+pr(10,10)\big)\times \log{\big(pr(00,10)+pr(10,10)\big)} \\ &-\big(pr(00,11)+pr(01,11)+pr(10,11)+pr(11,11)\big)\times \log{\big(pr(00,11)+pr(01,11)+pr(10,11)+pr(11,11)\big)} \\ \end{align} 
+s
+u
+1
+s
+1
+u
+01
+11
+00
+ \begin{align*} pr(s,u) - b^{\lambda_s}\sum_{s'}{pr(s',u)} & = 0 \\ pr(s) - \sum_{u'}{pr(s,u')} & = 0 \end{align*} 
+ \frac{pr(s_1,u_1)}{pr(s_1,u_2)} = \frac{\sum_{s'}{pr(s',u_1)}}{\sum_{s'}{pr(s',u_2)}}= \frac{pr(s_2,u_1)}{pr(s_2,u_2)} 
+s_2=11
+u_2=11
+u_1\neq{11}
+pr(s_2,u_1)=0
+s_2
+u_1
+\frac{pr(s_2,u_1)}{pr(s_2,u_2)}=0
+s_1\neq{11}
+pr(s,u)=\begin{cases}pr(s), & \text{if } u \text{ is all bit } 1 \\0, & \text{otherwise.}\end{cases}

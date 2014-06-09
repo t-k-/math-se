@@ -1,0 +1,41 @@
+\dot{x}=A_ix
+i=1,\cdots,N
+A_i=A_0+B\Delta_iC
+\lVert \Delta_i\rVert_2\leq 1
+A_i
+B
+C
+\tilde{A}_i =A_i-A_0
+\tilde{A}_i\in Im B
+\tilde{A}_i^T \in ImC^T\, i=1,\dots, N
+\Psi_B=\begin{bmatrix} \tilde{A}_1 &\tilde{A}_2\dots &\tilde{A}_N\end{bmatrix}
+\Psi_C=\begin{bmatrix} \tilde{A}_1^T &\tilde{A}_2^T\dots &\tilde{A}_N^T\end{bmatrix}
+\Psi_B=U_B\Sigma_BV_B^T
+\Psi_C=U_C\Sigma_CV_C^T
+r_B=rank(\Psi_B)
+r_C=rank(\Psi_C)
+\Delta_i
+\tilde{A}_i=B\Delta_iC
+B
+\tilde{B}=\begin{bmatrix} u_1&u_2&\dots u_{r_B}\end{bmatrix}
+C
+\tilde{C}=\begin{bmatrix} v_1&v_2&\dots v_{r_C}\end{bmatrix}^T
+u_i
+U_B
+v_i
+U_C
+\lVert \Delta_i \rVert_2\leq1
+\tilde{\Sigma}_B=diag(\sigma^b_1,\dots, \sigma^b_{r_B})
+\tilde{\Sigma}_C=diag(\sigma^c_1,\dots, \sigma^c_{r_C})
+B’=\tilde{B}\tilde{\Sigma}_B
+C’=\tilde{C}\tilde{\Sigma}_C
+\tilde{A}_i=B\Delta_iC, i=1,\dots,N
+B
+C
+B’
+C’
+\Delta_i
+i
+\kappa=\max_i \lVert\Delta_i \rVert
+B=\sqrt{\kappa}B'
+C=\sqrt{\kappa}C'

@@ -1,0 +1,31 @@
+\Theta(x)
+I=\int_{-\infty}^{\infty}dx_1 \int_{-\infty}^{\infty}dx_2 \  \Theta(x_1-x_2) \ e^{i(ax_1+bx_2)}
+\Theta
+\Theta (x)=-\frac{1}{2\pi i}\int_{-\infty}^{\infty}d\tau \frac{1}{\tau + i\epsilon} e^{-ix\tau}
+X=x_1+x_2
+x=x_1-x_2
+\int_{-\infty}^{\infty}dk\ \Theta(k)e^{-2\pi i kx}=\frac{1}{2}(\delta(x)-\frac{i}{\pi k}) 
+\delta(a)\delta(b)
+I
+a
+b
+I= -\frac{1}{2\pi i}\int_{-\infty}^{\infty}dx_1 \int_{-\infty}^{\infty}dx_2\int_{-\infty}^{\infty}d\tau \ \frac{1}{\tau + i\epsilon}e^{-i(\tau-a)x_1}e^{-i(\tau+b)x_2}\\=2\pi i\int_{-\infty}^{\infty}d\tau\ \frac{1}{\tau + i\epsilon}\delta(\tau-a)\delta(\tau+b) =2\pi i\frac{\delta(a+b)}{a + i\epsilon}
+I=\frac{1}{2}\int_{-\infty}^{\infty}dX \int_{-\infty}^{\infty}dx \ \Theta(x) \ e^{ia\frac{x+X}{2}+ib\frac{X-x}{2}} \\ =\pi \int_{-\infty}^{\infty}dx \ \Theta(x) e^{-2\pi i\frac{b-a}{4\pi}}\delta(\frac{b+a}{2})
+I=\pi \left(2\pi\delta(b-a)-\frac{4 i}{b-a}\right)\delta(a+b)=2\pi^2\delta(a)\delta(b)+2\pi i\frac{\delta(a+b)}{a}
+\int_{-\infty}^{\infty}da \int_{-\infty}^{\infty}db \ I = \int_{-\infty}^{\infty}dx_1\int_{-\infty}^{\infty}dx_2 \Theta(x_1-x_2) \delta(x_1)\delta(x_2)  \\ = \Theta(0)=\frac{1}{2}
+\int_{-\infty}^{\infty}da \int_{-\infty}^{\infty}db \ I=4\pi^2-\int_{-\infty}^{\infty}db \frac{1}{b}=-\infty
+ I(a_1,a_2) ~:=~ \iint_{\mathbb{R}^2} \! \mathrm{d}x^1 \mathrm{d}x^2~  e^{i (a_1 x^1+a_2 x^2)}  \theta(x^1-x^2) 
+\tag{1}~=~ \iint_{\mathbb{R}^2} \! \mathrm{d}y^1 \mathrm{d}y^2 ~  e^{i (b_1 y^1 + b_2 y^2)}  \theta(y^1)~=~I_1(b_1)~I_2(b_2) .
+ \tag{2} \begin{bmatrix}y^1 \\ y^2 \end{bmatrix} ~=~\begin{bmatrix} \frac{1}{2} &-\frac{1}{2} \\ 1-t & t \end{bmatrix} \begin{bmatrix}x^1 \\ x^2 \end{bmatrix} 
+y^1
+t\in\mathbb{R}
+t
+ \tag{3} \begin{bmatrix}x^1 \\ x^2 \end{bmatrix} ~=~\begin{bmatrix}  t&\frac{1}{2} \\ t-1 & \frac{1}{2} \end{bmatrix} \begin{bmatrix}y^1 \\ y^2 \end{bmatrix}. 
+a_1 x^1+a_2 x^2=b_1 y^1 + b_2 y^2
+ \tag{4} \begin{bmatrix}b_1 \\ b_2 \end{bmatrix} ~=~\begin{bmatrix}  t&  t-1 \\ \frac{1}{2}& \frac{1}{2} \end{bmatrix} \begin{bmatrix}a_1 \\ a_2 \end{bmatrix}. 
+\tag{5} I_1(b_1)~:= \int_{\mathbb{R}} \! \mathrm{d}y^1~e^{i b_1 y^1}\theta(y^1) ~=~\frac{i}{b_1+i0^+}~=~P\frac{i}{b_1}+\pi\delta(b_1),
+\tag{6} I_2(b_2)~:= \int_{\mathbb{R}} \! \mathrm{d}y^2~e^{i b_2 y^2} ~=~2\pi ~\delta(b_2).
+t
+t
+ I(a_1,a_2)~=~I_1(b_1)~I_2(b_2)~=~\frac{2\pi i}{a_1+i0^+}\delta(a_1+a_2)
+\tag{7} ~=~2\pi i ~P\frac{1}{a_1}\delta(a_1+a_2)+2\pi^2 \delta(a_1)\delta(a_2). 

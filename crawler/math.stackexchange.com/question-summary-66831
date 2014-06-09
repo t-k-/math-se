@@ -1,0 +1,37 @@
+C
+X,Y \in C
+X \times Y
+X \oplus Y
+C
+\psi : (X \times Y) \oplus (X \times Z) \to X \times (Y \oplus Z)
+\psi
+C
+\psi : (X \times Y) \oplus (X \times Z) \to X \times (Y \oplus Z)
+ A \stackrel{\iota_A}{\longrightarrow} A\sqcup B \stackrel{\iota_B}{\longleftarrow} B 
+ f: A \longrightarrow C \qquad \text{and} \qquad g: B \longrightarrow C \ , 
+ h : A \sqcup B \longrightarrow C \qquad \text{such that} \qquad h\iota_A = f \quad \text{and} \quad h\iota_B = g \ . 
+\iota_A
+\iota_B
+h
+ h(x) = \begin{cases} f(a) & \text{if}\ x=a\in A \\ g(b) & \text{if}\ x=b\in B  \ . \end{cases} 
+ A \stackrel{\pi_A}{\longleftarrow} A\times B \stackrel{\pi_B}{\longrightarrow} B 
+ f: C \longrightarrow A \qquad \text{and} \qquad g: C \longrightarrow B \ , 
+ h : C \longrightarrow A \times B \qquad \text{such that} \qquad \pi_A h = f \quad \text{and} \quad \pi_B h = g \ . 
+\pi_A
+\pi_B
+h
+ h(c) = (f(c), g(c)) \ . 
+ f: A \longrightarrow B 
+X
+ \mathrm{id}_X \times f : X \times A \longrightarrow X \times B  \ . 
+\mathrm{id}_X \times f
+ \mathrm{id}_X\pi_X : X\times A \longrightarrow X \qquad \text{and}\qquad f\pi_A : X\times A \longrightarrow B \ . 
+ (\mathrm{id}_X \times f) (x,a) = (x, f(a)) \ . 
+ (X\times Y) \sqcup (X\times Z) \longrightarrow X \times (Y\sqcup Z) 
+ Y \stackrel{\iota_Y}{\longrightarrow} Y\sqcup Z \stackrel{\iota_Z}{\longleftarrow} Z \ . 
+X
+ X\times Y \stackrel{\mathrm{id}_X \times \iota_Y}{\longrightarrow}X\times ( Y\sqcup Z ) \stackrel{\mathrm{id}_X\times \iota_Z}{\longleftarrow} X\times Z \ . 
+ \psi : (X\times Y) \sqcup (X\times Z) \longrightarrow X \times (Y\sqcup Z) 
+ \psi \iota_{X\times Y} = \mathrm{id}_X \times \iota_Y \qquad \text{and}\qquad \psi\iota_{X\times Z} = \mathrm{id}_X \times \iota_Z \ . 
+\psi
+ \psi (x, a ) = \begin{cases} (x, y) & \text{if}\ (x,a)=(x,y) \in X\times Y \\ (x, z) & \text{if}\ (x,a)=(x,z) \in X\times Z \ . \end{cases} 

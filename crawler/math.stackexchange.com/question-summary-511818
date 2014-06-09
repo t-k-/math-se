@@ -1,0 +1,18 @@
+n
+{\log_2n \over n} >{ 1 \over 8}
+\log{n} > \frac{n}{8}
+n > 0
+n > 2^{n/8}
+n^8 > 2^n
+n
+k
+k \ge 2
+n \ge k^2+1
+2^n > n^k
+k=8
+65
+43.56
+ sol := solve(log[2](n)/n > 1/8) 
+{\it RealRange} \left( {\it Open} \left( -8\,{\frac {{\it LambertW}  \left( -1/8\,\ln  \left( 2 \right)  \right) }{\ln  \left( 2 \right) } } \right) ,{\it Open} \left( -8\,{\frac {{\it LambertW} \left( -1,-1/8 \,\ln  \left( 2 \right)  \right) }{\ln  \left( 2 \right) }} \right)   \right)   
+evalf(sol) 
+ {\it RealRange} \left( {\it Open} \left(  1.099997030 \right) ,{\it  Open} \left(  43.55926044 \right)  \right)   .

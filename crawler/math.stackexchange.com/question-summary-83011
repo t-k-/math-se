@@ -1,0 +1,30 @@
+\mathbb{E}\bigl[250-\lfloor50\cdot Z\rfloor\quad\vert\quad 250-\lfloor50\cdot Z\rfloor\ge0\bigr]
+Z\sim N(0,1)
+\lfloor250 - 50\cdot x\rfloor=250-\lfloor 50\cdot x\rfloor
+N(250, 50^2)
+0
+\mathbb{E}\bigl[X\bigr]>250
+X\sim N_{\ge0}(250,50^2)
+[a,a+1]
+a\in\mathbb{N_0}
+ h(a)=\int_a^{a+1}f(x)\;dx 
+ \sum_{a=0}^\infty h(a)=1 
+ \mathbb{E}\bigl[250-\lfloor50\cdot Z\rfloor \quad \vert \quad 250-\lfloor50\cdot Z\rfloor\ge0\bigr]=\sum_{a=0}^\infty a\cdot h(a) 
+h(0)
+h(250)
+ \begin{align*} h(0)&=0.0000000312698&h(250)&=0.00797832\\ h(1)&=0.0000000345445&h(251)&=0.00797513\\ \hat{h}(0)&=0.0000000346522&\hat{h}(250)&=0.00796824 \end{align*} 
+ \sum_{a=0}^\infty (a+1)\cdot h(a) 
+⌊250−50⋅x⌋\neq250−⌊50⋅x⌋
+250-\lfloor50\cdot X\rfloor
+X\sim N(0, 1)
+250-\lfloor50\cdot X\rfloor<0
+X\in[-\infty, 251/50)
+a
+250<\left\lfloor50\cdot \frac{251}{50}\right\rfloor=251
+ f(x)=\frac{g(x)}{\Phi(251/50)}\qquad g(x)=\begin{cases}0&x\ge \frac{251}{50}\\\phi(x)&x<\frac{251}{50}\end{cases} 
+ \int_{-\infty}^\infty f(x)dx=\frac{1}{\Phi(251/50)}\int_{-\infty}^\infty g(x)dx=\frac{1}{\Phi(251/50)}\int_{-\infty}^{\frac{251}{50}}\phi(x)dx=\frac{\Phi(251/50)}{\Phi(251/50)}=1 
+\mathbb{E}\bigl[250-\lfloor50\cdot X\rfloor\bigr]=250-\int_{-\infty}^\infty\lfloor50\cdot x\rfloor f(x) dx 
+ \begin{align} 250-\lfloor50\cdot x\rfloor&=a\in\mathbb{N}_0\\ 250-a&=\lfloor50\cdot x\rfloor\Leftrightarrow x\in\left[\frac{250-a}{50},\frac{250-a+1}{50}\right) \end{align}
+ h(a)=\int_{\frac{250-a}{50}}^{\frac{250-a+1}{50}}f(x)dx=\frac{1}{\Phi(251/50)}\int_{\frac{250-a}{50}}^{\frac{250-a+1}{50}}g(x)dx=\frac{\Phi\left(\frac{250-a+1}{50}\right)-\Phi\left(\frac{250-a}{50}\right)}{\Phi(251/50)} 
+ \sum_{a=0}^{\infty}h(a)=\sum_{a=0}^{\infty}\frac{\Phi\left(\frac{250-a+1}{50}\right)-\Phi\left(\frac{250-a}{50}\right)}{\Phi(251/50)}=\frac{\sum_{a=0}^{\infty}\Phi\left(\frac{250-a+1}{50}\right)-\Phi\left(\frac{250-a}{50}\right)}{\Phi(251/50)}=\frac{\Phi\left(\frac{250-0+1}{50}\right)}{\Phi(251/50)}=1
+ \begin{align} \sum_{a=0}^\infty a\cdot h(a)&=\sum_{a=1}^\infty a\cdot\frac{\Phi\left(\frac{250-a+1}{50}\right)-\Phi\left(\frac{250-a}{50}\right)}{\Phi(251/50)}\\ &=\frac{1}{\Phi(251/50)}\left(\sum_{a=1}^\infty a\cdot \Phi\left(\frac{251-a}{50}\right)-\sum_{a=1}^\infty a\cdot \Phi\left(\frac{250-a}{50}\right)\right)\\ &=\frac{1}{\Phi(251/50)}\left(\sum_{a=0}^\infty (a+1)\cdot \Phi\left(\frac{251-(a+1)}{50}\right)-\sum_{a=1}^\infty a\cdot \Phi\left(\frac{250-a}{50}\right)\right)\\ &=\frac{1}{\Phi(251/50)}\left(\Phi\left(\frac{250}{50}\right)+\sum_{a=1}^\infty (a+1)\cdot \Phi\left(\frac{250-a}{50}\right)-a\cdot \Phi\left(\frac{250-a}{50}\right)\right)\\ &=\frac{1}{\Phi(251/50)}\left(\Phi\left(\frac{250}{50}\right)+\sum_{a=1}^\infty \Phi\left(\frac{250-a}{50}\right)\right)\\ &=\frac{\sum_{a=0}^\infty \Phi\left(\frac{250-a}{50}\right)}{\Phi(251/50)}\approx250.500067... \end{align} 

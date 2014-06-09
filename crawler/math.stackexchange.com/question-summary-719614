@@ -1,0 +1,20 @@
+2y_{1}y_{2} - (y_{1})^2
+Y_1=\min\{Y_J,Y_W\}
+Y_2=\max\{Y_J,Y_W\}
+Y_J
+Y_W
+(Y_J,Y_W)
+(0,1)^2
+x\lt y
+(0,1)
+f_{Y_1,Y_2}
+(Y_1,Y_2)
+0\lt y_1\lt y_2\lt1
+ P(x\lt Y_1,Y_2\lt y)=P(x\lt Y_J\lt y,x\lt Y_W\lt y)=(y-x)^2. 
+ f_{Y_1,Y_2}(y_1,y_2)=2\,\mathbf 1_{0\lt y_1\lt y_2\lt 1}. 
+ P(Y_1\lt y_1,Y_2\lt y_2)=\int_0^{y_2}\int_0^{y_1}f_{Y_1,Y_2}(u,v)\mathrm du\mathrm dv=\int_0^{y_2}\int_0^{\min\{y_1,v\}}2\mathrm du\mathrm dv, 
+ P(Y_1\lt y_1,Y_2\lt y_2)=\int_0^{y_2}2\min\{y_1,v\}\mathrm dv=\int_0^{y_1}2v\mathrm dv+\int_{y_1}^{y_2}2y_1\mathrm dv, 
+ P(Y_1\lt y_1,Y_2\lt y_2)=y_1^2+2y_1(y_2-y_1)=2y_1y_2-y_1^2. 
+Y_1
+Y_2
+f_{(1),(2)}(y_1,y_2)=\frac{2!}{(1-1)!(2-1-1)!(2-2)!}(y_1)^0(y_2-y_1)^0(y_2)^0f_{(1)}(y_1)f_{(2)}(y_2)=2

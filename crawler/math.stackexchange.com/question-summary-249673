@@ -1,0 +1,22 @@
+L
+[0,1]
+L=\lbrace x\in [0,1]: \forall n\in \mathbb{N}, \exists p,q\in \mathbb{Z}, q>1, \text{and such that}\,0<\vert x-\frac{p}{q} \vert <\frac{1}{q^n}\rbrace.
+\varepsilon
+L\cap [0,1]
+p,q\in \mathbb{Q}
+I_{p/q}
+\frac{p}{q}
+\frac{1}{q^n}<\varepsilon.
+J_n=\lbrace I_{p/q}:\frac{p}{q}\in \mathbb{Q}, q^n>q_0, q_0>\varepsilon ^{-1} \rbrace
+\varepsilon
+\sum_{p/q\in \mathbb{Q}, q>q_0}|I_{p/q}|^s\le \sum_{q>q_0}\frac{2^s}{q^{ns}}\cdot q<2\sum_{q>q_0}\frac{1}{q^{ns-1}}<\delta.
+(*)
+L
+0
+\varepsilon>0, \delta >0, \exists \varepsilon-\text{cover}
+q_0
+\sum_{I\, \text{is a cover}}|I|^s<\delta \Rightarrow \text{Hdim}\le s.
+s>\frac{1}{n} \Rightarrow \text{Hdim}(L)\le \frac{1}{n} \Rightarrow \text{Hdim}(L)=0
+|I_{p/q}|
+J_n
+(*)

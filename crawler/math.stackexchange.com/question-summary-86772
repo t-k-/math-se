@@ -1,0 +1,18 @@
+f:\mathbb{C}\rightarrow \mathbb{C} \in \mathcal{O}(\mathbb{C}), \exists n\in \mathbb{N}, R >0 , M>0 : |f(z)| \le M|z|^{n} \ \ \forall |z|>R \Rightarrow \deg(f)\le n 
+M
+f
+n
+f(z) = \sum_{n=0}^{\infty} a_n (z-z_0)^n
+|f(z)| = \left| \sum_{n=0}^{\infty} a_n (z-z_0)^n \right| \le M |z|^n .
+k\geq 1
+z_0\in\mathbb C
+r
+\{z,|z-z_0|=r\}\subset\{z\in\mathbb C,|z|\geq R\}
+r
+f^{(n+k)}(z_0)=0
+z_0
+k\geq 1
+f
+n
+f^{(n+k)}(z_0) =\frac{(n+k+1)!}{2i\pi}\int_{C(z_0,r)}\frac{f(z)}{(z-z_0)^{n+k+1}}dz,
+|f^{(n+k)}(z_0)|\leq \frac{(n+k+1)!}{2\pi}\int_{C(z_0,r)}M\frac{|z|^n}{r^{n+k+1}}\leq \frac{(n+k+1)!}{r^{n+k+1}}M(r+|z_0|)^n.

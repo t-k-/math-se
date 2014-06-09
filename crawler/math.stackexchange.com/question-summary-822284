@@ -1,0 +1,53 @@
+\{W(t)\}_{t\geq0}
+f
+T>0
+\Pi=\{t_{0}=0,t_{1},\ldots,t_{n}=T\}
+[0,T]
+X(\omega)=\lim_{||\Pi||\to0}\;\sum_{i=0}^{n-1}f(W(t_{i}))(W(t_{i+1})-W(t_{i}))^{2}.
+f\equiv1
+X\equiv T
+(W(t_{i+1})-W(t_{i}))^{2}\approx(t_{i+1}-t_{i})
+||\Pi||\to0
+0
+X\equiv \int_{0}^{T}f(W(s))\;ds.
+T
+0
+f(W(t_{i})).
+\lim_{||\Pi||\to0}\;\sum_{i=0}^{n-1}(W(t_{i+1})-W(t_{i}))^{2}=T,
+\mathbb{E}[(W(t_{i+1})-W(t_{i}))^{2}]=\text{Var}[W(t_{i+1})-W(t_{i})]=t_{i+1}-t_{i}
+\text{Var}[(W(t_{i+1})-W(t_{i}))^{2}]=2(t_{i+1}-t_{i})^{2}
+\Pi
+(W(t_{i+1})-W(t_{i}))^{2}=\frac{T}{n}\left(\frac{W(t_{i+1})-W(t_{i})}{\sqrt{t_{i+1}-t_{i}}}\right)^{2}.
+1
+(W(t_{i+1})-W(t_{i}))^{2}\neq t_{i+1}-t_{i}
+\sum_{i=0}^{n-1}\phi(t_{i}))\to0\;\text{as}\;n\to\infty.
+f(W(t_{i}))
+Y_{i}:=\left(\frac{W(t_{i+1})-W(t_{i})}{\sqrt{t_{i+1}-t_{i}}}\right)^{2},
+\sum_{i=0}^{n-1}(W(t_{i+1})-W(t_{i}))^{2}=T\sum_{i=0}^{n-1}\frac{Y_{i+1}}{n}\to T\;\text{as}\;n\to\infty.
+(W(t_{i+1})-W(t_{i}))^{2}=(t_{i+1}-t_{i})+\phi(t_{i})
+\sum_{i=0}^{n}f(W(t_{i}))\phi(t_{i})\to0\;\text{as}\;n\to\infty?
+f(W(t_{i}))(W(t_{i+1})-W(t_{i}))^{2}=f(W(t_{i}))(t_{i+1}-t_{i})+\phi(t_{i}))
+Y_{i}':=f(W(t_{i}))Y_{i}:=f(W(t_{i}))\left(\frac{W(t_{i+1})-W(t_{i})}{\sqrt{t_{i+1}-t_{i}}}\right)^{2}
+f \in C_b
+(W_t)_{t \geq 0}
+|\Pi| := \max_j |t_j-t_{j-1}|
+\Pi = \{0=t_0<\ldots<t_n=T\}
+\sum_{j=1}^n f(W_{t_{j-1}}) \cdot (W_{t_{j}}-W_{t_{j-1}})^2 \stackrel{L^2(\mathbb{P})}{\to} \int_0^T f(W_s) \, ds \quad \text{as |\Pi| \to 0}
+t \mapsto f(W_t)
+|\Pi| \to 0
+\sum_{j=1}^n f(W_{t_{j-1}}) \cdot (t_j-t_{j-1}) \to \int_0^T f(W_s) \, ds
+I_n := \sum_{j=1}^n f(W_{t_{j-1}}) \bigg[ (W_{t_j}-W_{t_{j-1}})^2 - (t_j-t_{j-1}) \bigg] \to 0 \tag{1}
+|\Pi| \to 0
+\Delta t_j := t_j-t_{j-1}
+\Delta W_j := W_{t_j}-W_{t_{j-1}}
+(W_t^2-t)_{t \geq 0}
+(\mathcal{F}_t)_{t \geq 0}
+\begin{align*} &\quad \mathbb{E} \bigg( f(W_{t_{j-1}}) f(W_{t_{i-1}}) \cdot [\Delta W_j^2 - \Delta_j] \cdot [\Delta W_i^2-\Delta_i]\bigg)\\ &= \mathbb{E} \bigg( \mathbb{E} \bigg( f(W_{t_{j-1}}) f(W_{t_{i-1}}) \cdot [\Delta W_j^2 - \Delta_j] \cdot [\Delta W_i^2-\Delta_i] \mid \mathcal{F}_{t_{j-1}} \bigg) \bigg) \\ &= \mathbb{E} \bigg( f(W_{t_{j-1}}) f(W_{t_{i-1}}) \cdot [\Delta W_i^2-\Delta_i] \cdot \underbrace{\mathbb{E} \bigg( \Delta W_j^2 - \Delta_j \mid \mathcal{F}_{t_{j-1}} \bigg)}_{\mathbb{E}(\Delta W_j^2-\Delta j)=0} \bigg) = 0. \tag{2} \end{align*}
+I_n
+(2)
+\mathbb{E}(I_n^2) = \mathbb{E}\left(\sum_{j=1}^n f(W_{t_{j-1}})^2 (\Delta W_j^2-\Delta_j)^2 \right).
+f
+W_t-W_s \sim W_{t-s} \sim \sqrt{t-s} W_1
+\begin{align*} \mathbb{E}(I_n^2) &\leq \|f\|_{\infty}^2 \sum_{j=1}^n \mathbb{E}\bigg[(\Delta W_j^2-\Delta_j)^2\bigg] \\ &= \|f\|_{\infty}^2 \sum_{j=1}^n \Delta_j^2 \cdot (\mathbb{E}(W_1^2)-1)^2 \\ &\leq C |\Pi| \sum_{j=1}^n \Delta_j = C |\Pi| T \end{align*}
+C := \|f\|_{\infty}^2 (\mathbb{E}(W_1^2)-1)^2
+|\Pi| \to 0

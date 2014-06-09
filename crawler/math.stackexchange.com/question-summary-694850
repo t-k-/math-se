@@ -1,0 +1,39 @@
+\int{artanh(x)} dx
+y = artanh(x)
+\therefore \dfrac{dy}{dx} = \dfrac{1}{1-x^2}
+\therefore dx = (1-x^2)dy
+y = artanh(x)
+tanh(y) = x
+\therefore 1-x^2 = 1-tanh^2(y)
+\int{artanh(x)} dx = \int{y(1-tanh^2y)}dy
+= \int{y- y(tanh^2y)}dy
+= \int{y}dy - \int{y(tanh^2y)}dy
+= \frac{1}{2}y^2 - \int{y(tanh^2y)}dy
+\int{y(tanh^2y)}dy
+u = y
+\dfrac{dv}{dy} = tanh^2y
+\therefore \dfrac{du}{dy} = 1
+v = \int{1 - sech^2y}dy
+\therefore v = y - tanhy
+uv - \int{v}{\dfrac{du}{dx}}
+\int{ytanh^2y}dy = ytanh^2y - \int{y - tanhy}dy
+\int{artanh(x)} dx = \frac{1}{2}y^2 - ytanh^2y + \int{y - tanhy}dy
+= \frac{1}{2}y^2 -ytanh^2y + \frac{1}{2}y^2 -lncoshy + C
+ = y^2 -ytanh^2y -lncoshy + C
+y = artanhx
+\therefore y^2 = artanh^2x 
+tanh^2y = (tanh(artanhx))^2 = x^2
+coshy = cosh(artanhx)
+u = artanhx
+cosh(u)
+u = artanhx
+tanhu = x
+\therefore tanh^2u = x^2
+\therefore 1- sech^2u = x^2 
+\therefore cosh^2u = \dfrac{1}{1-x^2}
+\therefore coshu = \dfrac{1}{\sqrt{1-x^2}}
+\int{artanh(x)} dx = artanh^2x - x^2(artanhx) - ln(\dfrac{1}{\sqrt{1-x^2}}) + C
+\therefore \int{artanh(x)} dx = artanhx(artanhx - x^2) + \frac{1}{2}ln(1-x^2) + C
+\int{artanh(x)} dx = x(artanhx) + \frac{1}{2}ln(1-x^2) + C
+u=\tanh ^{-1}(x)
+v'=dx

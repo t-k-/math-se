@@ -1,0 +1,19 @@
+\left\lfloor\frac{x/a}b\right\rfloor = \left\lfloor\frac{\lfloor x/a\rfloor}b\right \rfloor
+x = qa+r
+r<a
+x/a = q + r/a
+\lfloor x/a \rfloor = q
+\big\lfloor \lfloor x/a \rfloor/b\big\rfloor = \lfloor q/b \rfloor
+q = wb+t
+t<b
+q/b = w +t/b
+\big\lfloor \lfloor x/a \rfloor/b\big\rfloor = \lfloor w + t/b \rfloor = w
+\left\lfloor\frac{x/a}b\right\rfloor = \left\lfloor \frac{q+r/a}{b} \right\rfloor = \left\lfloor w + \frac{t}{b} + \frac{r}{ab} \right\rfloor = \left\lfloor w + \frac{at + r}{ab} \right\rfloor 
+\dfrac{at + r}{ab} < 1
+x = q_1 a + r_1
+0 \leq r_1 \leq a-1
+q_1 = q_2b + r_2
+0 \leq r_2 \leq b-1
+\lfloor\lfloor x/a\rfloor/b\rfloor = q_2
+\lfloor x/ab\rfloor = q_2
+x = q_2ab + (ar_2+r_1),\quad 0 \leq ar_2+r_1 \leq a(b-1)+(a-1) = ab-1,

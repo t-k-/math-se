@@ -1,0 +1,75 @@
+y=e^{-x}\cos(x)
+e^x
+\cos(x)
+e^x
+\cos(x)
+e^{-x} = 1+x+ \frac{x^2}{2!}+ \frac{x^3}{3!}+ \frac{x^4}{4!}+ \frac{x^5}{5!}+ \frac{x^6}{6!},
+\cos(x) = 1- \frac{x^2}{2!}+ \frac{x^4}{4!}- \frac{x^6}{6!}.
+6
+x^7\over7!
+e^x
+x
+ \tag{1} \color{maroon}{ \Bigl( 1-x+ \frac{x^2}{2!}- \frac{x^3}{3!}+ \frac{x^4}{4!}- \frac{x^5}{5!}+ \frac{x^6}{6!}\Bigr)}\color{darkgreen}{ \Bigl( 1- \frac{x^2}{2!}+ \frac{x^4}{4!}- \frac{x^6}{6!}\Bigr)}; 
+\color{maroon}{\text{left}}
+\color{darkgreen}{right}
+a_i
+\tag{2} a_0+a_1x^1+a_2x^2+a_3x^3+a_4x^4+a_5x^5+a_6x^6. 
+\color{maroon}{\text{left}}
+\color{darkgreen}{right}
+i
+a_i
+x^i
+a_0
+a_0=1
+a_1
+x
+\color{maroon}{-x}
+\color{maroon}{\text{left}}
+\color{darkgreen}{1}
+\color{darkgreen}{right}
+a_1=1
+a_2
+\ \ \ \ \bullet
+\color{maroon}{1}
+\color{maroon}{\text{left}}
+\color{darkgreen}{-{x^2\over 2!}}
+\color{darkgreen}{right}
+\ \ \ \ \bullet
+\color{\maroon}{x^2\over 2!}
+\color{maroon}{\text{left}}
+\color{darkgreen}{1}
+\color{darkgreen}{right}
+ 1\cdot{-x^2\over2!}+{x^2\over2!}\cdot1=0 
+a_2=0
+ \eqalign{ a_3&= \underbrace{-1\over2!}_{\color{maroon}{-x}\cdot \color{darkgreen}{x^2\over2!} } +        \underbrace{-1\over3!}_{ \color{maroon}{-x^3\over3!}\cdot\color{darkgreen}1  } \cr a_4&= \underbrace{1\over4!}_{\color{maroon}1\cdot\color{darkgreen}{x^4\over4!}} -\underbrace{1\over2!2!}_{\color{maroon}{x^2\over2!}\cdot\color{darkgreen}{-x^2\over2!}}   +\underbrace{1\over4!}_{\color{maroon}{x^4\over4!}\cdot\color{darkgreen}1}  \cr a_5&=  \underbrace{-1\over 4!}_{\color{maroon}{-x}\cdot\color{darkgreen}{x^4\over4!}}+ \underbrace{1\over3!2!}_{\color{maroon}{-x^3\over3!}\cdot\color{darkgreen}{-x^2\over2!}}+ \underbrace{-1\over5!}_{\color{maroon}{-x^5\over5!}\cdot\color{darkgreen}1}   \cr a_6&=   \underbrace{-1\over 6!}_{\color{maroon}1\cdot\color{darkgreen}{-1\over6!}}+ \underbrace{1\over2!4!}_{\color{maroon}{x^2\over2!}\cdot\color{darkgreen}{x^4\over4!}}- \underbrace{1\over4!2!}_{\color{maroon}{x^4\over4!}\cdot\color{darkgreen}{-x^2\over2!}} + \underbrace{1\over6!}_{ \color{maroon}{x^6\over6!}\cdot\color{darkgreen}1} \cr }  
+a_i
+e^{-x}
+e^{-x}=1-x+{x^2\over2!}-{x^3\over3!}+\cdots
+\cos x = \frac{e^{ix}+e^{-ix}}{2}
+e^{-x}\cos x = \frac{e^{x(-1+i)} + e^{x(-1-i)}}2
+e^{-x}\cos x = \sum_{n=0}^\infty \frac{a_nx^n}{n!}
+a_n = \frac{(-1+i)^n + (-1-i)^n} 2  = \Re{(-1+i)^n}
+-1+i = \sqrt{2}e^{i\frac{3\pi}{4}}
+(-1+i)^n
+(\sqrt{2})^n \cos\left(\frac{3\pi n}4\right)
+e^{-x}\cos x = \sum_{n=0}^\infty 2^{\frac n 2}\cos\left(\frac{3\pi n}4\right)\frac{x^n}{n!}
+a_n=2^{\frac{n}2}\cos(\frac{3\pi n}4)
+(-1+i)^n
+a_0=1
+a_1=-1
+a_2=0
+a_3=2
+(-1+i)^4 = -4
+a_{n+4} = -4 a_n
+a_4=-4, a_5=4, a_6=0
+1 - x + 2\frac{x^3}{3!} - 4 \frac{x^4}{4!} + 4\frac{x^5}{5!} = 1-x + \frac{x^3}{3} - \frac{x^4}{6} + \frac{x^5}{30}
+x^6
+(1-x+ \tfrac{x^2}{2!}- \tfrac{x^3}{3!}+ \tfrac{x^4}{4!}- \tfrac{x^5}{5!}+ \tfrac{x^6}{6!} - \cdots)(1- \tfrac{x^2}{2!}+ \tfrac{x^4}{4!}- \tfrac{x^6}{6!}- \cdots)
+=(1-x+ \tfrac{x^2}{2!}- \tfrac{x^3}{3!}+ \tfrac{x^4}{4!}- \tfrac{x^5}{5!}+ \tfrac{x^6}{6!} - \cdots) - \tfrac{x^2}{2!}(1-x+ \tfrac{x^2}{2!}- \tfrac{x^3}{3!}+ \tfrac{x^4}{4!}- \cdots)
++ \tfrac{x^4}{4!} (1-x+ \tfrac{x^2}{2!}-  - \cdots) - \tfrac{x^6}{6!}(1- \cdots)
+ = 1 +x(-1) + x^2(\tfrac{1}{2!} + \tfrac{-1}{2!})  + x^3(\tfrac{-1}{3!} + \tfrac{1}{2!}) + x^4(\tfrac{1}{4!} + \tfrac{-1}{2!2!} + \tfrac{1}{4!}) \cdots \text{etc.}         
+e^x=\sum \frac{x^n}{n!}
+e^{-x}=\sum (-1)^n \frac{x^n}{n!}
+\cos(x)=\sum (-1)^n \frac{x^{2n}}{(2n)!}
+\left(\sum_{i=0}^\infty (-1)^i \frac{x^i}{i!}\right)\left(\sum_{j=0}^\infty (-1)^j \frac{x^{2j}}{(2j)!}\right) = \sum_{k=0}^\infty c_k x^k
+c_k = \sum_{i+2j=k} (-1)^{i+j}\frac{1}{i!\cdot (2j)!}=\begin{cases} \sum_{j=0}^{k/2} (-1)^{k-j} \frac{1}{(k-2j)!(2j)!}&, \text{ if } k \text{ is even,} \\ \sum_{j=0}^{(k-1)/2} (-1)^{k-j} \frac{1}{(k-2j)!(2j)!} &, \text{ if } k \text{ is odd}. \end{cases}

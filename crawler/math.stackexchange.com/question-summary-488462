@@ -1,0 +1,9 @@
+\sum_{n\geq1} \rho^n I_n(\omega) 
+\rho>0
+\omega >0
+I_n
+ S  = \sum_{n=1}^{\infty} x^nI_n(y)  = \sum_{n=1}^{\infty} x^n \sum_{k = 0}^{\infty} \frac{\left(\frac{y}{2} \right)^{2k + n}}{k!\Gamma(n+k+1)}
+ = \sum_{n=1}^{\infty} \left( \frac{xy}{2} \right)^n \sum_{k=0}^{\infty} \frac{\left( \frac{y^2}{4} \right)^k }{k!(n+k)!}  = \sum_{n=1}^{\infty} \frac{\left( \frac{xy}{2} \right)^n}{n!} + \sum_{n=1}^{\infty} \sum_{k=1}^{\infty} \frac{\left( \frac{xy}{2} \right)^n \left( \frac{y^2}{4} \right)^k}{k!(n+k)!} 
+ = e^{\frac{xy}{2}} - 1 + \sum_{k=1}^{\infty} \frac{\left( \frac{y^2}{4} \right)^k}{k!} \sum_{n=1}^{\infty} \frac{\left(\frac{xy}{2} \right)^n}{(n+k)!} 
+ \sum_{n=1}^{\infty} \frac{\left(\frac{xy}{2} \right)^n}{(n+k)!}  = \frac{\gamma \left(k,\frac{xy}{2} \right)}{\left(\frac{xy}{2} \right)^k (k-1)!e^{-\frac{xy}{2}}} - \frac{1}{k!}
+ \Rightarrow S = e^{\frac{xy}{2}} - 1   + e^{\frac{xy}{2}}\sum_{k=1}^{\infty} \frac{k\gamma \left(k,\frac{xy}{2} \right)\left(\frac{y}{2x} \right)^k}{k!^2} - \sum_{k=1}^{\infty} \frac{\left(\frac{y^2}{4} \right)^k}{k!^2} 

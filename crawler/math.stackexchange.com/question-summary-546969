@@ -1,0 +1,13 @@
+X_1= 2Z_1 - Z_2 +3Z_3
+X_2=Z_1 + Z_2 - Z_3
+X_3 = 3Z_1 + 2Z_2 + Z_3
+(X_1, X_2, X_3)
+ \mathbf{Z}=\begin{pmatrix}Z_1 \\ Z_2 \\ Z_3 \end{pmatrix}\sim N\left(\boldsymbol{0}, \mathbf{I}\right) 
+\mathbf{X}
+ \mathbf{X}=\begin{pmatrix}X_1 \\ X_2 \\ X_3 \end{pmatrix}=\begin{pmatrix}2Z_1-Z_2+3Z_3 \\ Z_1+Z_2-Z_3 \\ 3Z_1+2Z_2+Z_3 \end{pmatrix}=\underbrace{\begin{pmatrix}2 & -1 & 3 \\1 & 1 & -1 \\ 3 & 2 & 1\end{pmatrix}}_{\mathbf{B}}\begin{pmatrix}Z_1 \\ Z_2 \\ Z_3 \end{pmatrix} 
+\mathbf{Z}\sim N(\boldsymbol{\mu}, \mathbf{\Lambda})
+\mathbf{X}=\mathbf{a}+\mathbf{BZ}
+\mathbf{X}\sim N(\boldsymbol{\mu}+\mathbf{a}, \mathbf{B}\boldsymbol{\Lambda}\mathbf{B}^\prime)
+\mathbf{X}
+ \mathbf{BIB}^\prime=\begin{pmatrix}2 & -1 & 3 \\1 & 1 & -1 \\ 3 & 2 & 1\end{pmatrix}\begin{pmatrix}2 & 1 & 3 \\-1 & 1 & 2 \\ 3 & -1 & 1\end{pmatrix}=\begin{pmatrix}14 &-2 & 9\\ -2 & 3 &4 \\ 9 & 4 & 14\end{pmatrix} 
+\text{Cov}(aZ_1 + b Z_2 + c Z_3, d Z_1 + e Z_2 + f Z_3) = \ldots

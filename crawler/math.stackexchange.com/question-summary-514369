@@ -1,0 +1,26 @@
+1\leq p_{1}\leq p_{2}\leq\infty
+L^{p_{2}}\subseteq L^{p_{1}}
+[]
+ id:\,(C([a,b]),||\ldotp||_{p_{2}})\to(C([a,b]),||\ldotp||_{p_{1}}) 
+f\in C([a.b])
+0<\alpha<1
+ A=\{x\in[a,b]\mid|f(x)|>1\}\,,\, B=\{x\in[a,b]\mid\alpha\leq|f(x)|<1\}\,,\, C=\{x\in[a,b]\mid|f(x)|<\alpha\} 
+ \int_{a}^{b}|f|^{p_{1}}=\int_{A}|f|^{p_{1}}+\int_{B}|f|^{p_{1}}+\int_{C}|f|^{p_{1}} 
+ \leq\int_{A}|f|^{p_{2}}+\int_{B}1+\int_{C}\alpha^{p_{1}} 
+ \leq||f||_{p_{2}}^{p_{2}}+\mu(B)+(b-a)\alpha^{p_{1}} 
+3
+(1)
+ ||f||_{p_{1}}^{p_{1}}\geq\int_{B}|f|^{p_{2}}\geq\alpha^{p_{2}}\mu(B) 
+(\star)
+ \implies\mu(B)\leq\frac{||f||_{p_{2}}^{p_{2}}}{\alpha^{p_{2}}} 
+(1)
+ ||f||_{p_{1}}^{p_{1}}\leq||f||_{p_{2}}^{p_{2}}+\frac{||f||_{p_{2}}^{p_{2}}}{\alpha^{p_{2}}}+(b-a)\alpha^{p_{1}} 
+ \alpha=||f||_{p_{2}}^{\frac{1}{2}} 
+ \implies||f||_{p_{2}}^{p_{2}}+||f||_{p_{2}}^{\frac{p_{2}}{2}}+(b-a)\alpha^{p_{1}} 
+(\star)
+\alpha=||f||_{p_{2}}^{\frac{1}{2}}
+0<\alpha<1
+f\in C([a,b])
+L^{p}
+\int|f|^{p_{1}}<\infty
+150

@@ -1,0 +1,40 @@
+A \subset [0,1]
+B \subset [1,2]
+m^{*}(A \cup B) = m^{*}(A) + m^{*}(B)
+m^{*}(A \cup B)-m^{*}(B) \le m^{*}(A)
+m^*
+\mathbb{R}
+\geq
+I = (a,b)
+l(I) := b-a
+I
+I_k
+A\cup B\subset\bigcup_{k=1}^\infty I_k
+\sum_{k=1}^\infty l(I_k) < \infty
+A\subset\bigcup_{k=1}^\infty (I_k\cap[0,1])
+B\subset\bigcup_{k=1}^\infty (I_k\cap[1,2])
+ m^*(A \cup B) \leq m^*(A) + m^*(B). 
+ m^*(A) = \inf\{ \sum_{k=1}^\infty l(I_k): I_k \text{ open Intervalls and } A\subset\bigcup_{k=1}^\infty I_k\}, 
+ \sum_{k=1}^\infty l(I_k) \geq \sum_{k=1}^\infty l(I_k \cap [0,1]) + \sum_{k=1}^\infty l(I_k \cap [1,2]). 
+ \begin{align} m^*(A\cup B) &= \inf\{ \sum_{k=1}^\infty l(I_k): I_k \text{ open Intervalls and } A \cup B \subset\bigcup_{k=1}^\infty I_k\} \\ &\geq \inf\{ \sum_{k=1}^\infty l(I_k \cap [0,1]): I_k \text{ open Intervalls and } A\cup B\subset\bigcup_{k=1}^\infty I_k\} \\ &\quad+ \inf\{ \sum_{k=1}^\infty l(I_k \cap [1,2]): I_k \text{ open Intervalls and } A\cup B\subset\bigcup_{k=1}^\infty I_k\}\\ &\geq m^*(A) + m^*(B) \end{align} 
+I_k \cap [0,1]
+A
+B
+A
+B
+I
+J
+I \cap J
+A\subset I
+B\subset J
+E=[0,1]
+m^*(A \cup B)=m^*((A \cup B) \cap E)+m^*((A \cup B) \cap E^c) 
+(A \cup B) \cap E=(A \cap E) \cup (B \cap E)=A \cup(B \cap E)
+B \subset [1,2]
+B \cap E
+m^*((A \cup B) \cap E)=m^*(A)
+m^*((A \cup B) \cap E^c)=m^*(B)
+F
+m^*(F)=0
+m^*(E \cup F)=m^*(E)
+E \subseteq \mathbb R

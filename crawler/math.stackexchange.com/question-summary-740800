@@ -1,0 +1,12 @@
+(X,Y,Z)
+Z
+ R_Z(\theta)= \begin{pmatrix} cos \theta & -\sin(\theta) & 0\\  \sin(\theta) & \cos(\theta) & 0 \\ 0 & 0 & 1  \end{pmatrix} 
+R_Z(\theta)
+Z
+\vec{u}
+ \vec{u_{rot}} = R_Z \cdot \vec{u}  
+\vec{v}
+t
+\vec u(t)
+\vec v(t) = \frac{d}{dt} \vec u(t) = \lim_{h\to 0} \frac1h ( \vec u(t+h) - \vec u(t) ) 
+ \begin{align}\lim_{h\to 0} \frac1h ( R\vec u(t+h) - R\vec u(t)) &= \lim_{h\to 0} \frac1h R(\vec u(t+h) - \vec u(t)) \\&= \lim_{h\to 0} R\frac1h (\vec u(t+h) - \vec u(t)) \\&= R\lim_{h\to 0} \frac1h (\vec u(t+h) - \vec u(t)) = R \vec v(t) \end{align}

@@ -1,0 +1,9 @@
+n:= 1,2,3,.....,
+x^n =x^{n-1}(2-(2-x))
+ I_n = \int_0^1 \frac{x^{n-1}}{2-x}.dx 
+I_{n+1} = 2I_n - \frac{1}{n} 
+I_1 = \ln{2}
+0.6931 
+I_n
+I_{12}=-0.0189
+\begin{align}I_{n+1} &= \int_0^1\frac{x^n}{2-x}\,dx\\ &= \int_0^1\frac{x^{n-1}\bigl(2-(2-x)\bigr)}{2-x}\,dx\\ &= \int_0^1\frac{2x^{n-1}-(2-x)x^{n-1}}{2-x}\,dx\\ &= \int_0^1\left(\frac{2x^{n-1}}{2-x}-\frac{(2-x)x^{n-1}}{2-x}\right)\,dx.\end{align}

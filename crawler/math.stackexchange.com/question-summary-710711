@@ -1,0 +1,12 @@
+A\in \mathbb{R}^{m\times n}
+\sigma_{\text{max}} (A) = \underset{y\in\mathbb{R}^m\\x\in \mathbb{R}^n}{\text{max}}\frac{y^TAx}{\Vert{x}\Vert_2\Vert y\Vert_2}.
+x
+y
+y=Ax
+y
+y
+\sigma_{\max}(A)
+ \frac{y^TAx}{\|x\|_2\|y\|_2}\leq\frac{\|y\|_2\|Ax\|_2}{\|y\|_2\|x\|_2}=\frac{\|Ax\|_2}{\|x\|_2}. 
+ \left.\frac{y^TAx}{\|x\|_2\|y\|_2}\right|_{y=Ax}=\frac{x^TA^TAx}{\|x\|_2\|Ax\|_2} =\frac{\|Ax\|_2^2}{\|x\|_2\|Ax\|_2}=\frac{\|Ax\|_2}{\|x\|_2}. 
+ \max_{x,y}\frac{y^TAx}{\|x\|_2\|y\|_2}=\max_{x}\frac{\|Ax\|_2}{\|x\|_2}. 
+ \max_x\frac{\|Ax\|_2^2}{\|x\|_2^2}=\max_x\frac{x^T(A^TA)x}{x^Tx}=\lambda_{\max}(A^TA)=\sigma_{\max}^2(A). 

@@ -1,0 +1,37 @@
+\sum_{k=0}^{m} \frac{m!(n-k)!}{n!(m-k)!} = \frac{n+1}{n-m+1}
+\dfrac{m!}{n!} \sum_{k=0}^m \dfrac{(n-k)!}{(m-k)!} = \dfrac{m!(n-m)!}{n!} \dfrac{(n+1)!}{(n-m+1)! m!} = \dfrac{n+1}{n-m+1}
+n+1
+m
+n-m+1
+X
+1,2,....,m+1 
+P(X=1)=\frac{n-m+1}{n+1}
+P(X=2)=\frac{m}{n+1}\times \frac{n-m+1}{n}
+P(X=3)=\frac{m}{n+1} \times \frac{m-1}{n}\times \frac{n-m+1}{n-1}
+P(X=k)=\frac{m}{n+1}\times \frac{m-1}{n}.... \times \frac{m-k+2}{n-k+3}\times \frac{n-m+1}{n-k+2}=\frac{n-m+1}{n+1}\times \frac{m!(n-(k-1))!}{n!(m-(k-1))!}
+1
+\displaystyle\sum_{k=1}^{m+1}P(X=k)=1
+\Rightarrow\displaystyle\sum_{k=1}^{m+1}\frac{n-m+1}{n+1}\times \frac{m!(n-(k-1))!}{n!(m-(k-1))!}=1
+\Rightarrow\displaystyle\sum_{l=0}^{m}\frac{n-m+1}{n+1}\times \frac{m!(n-l)!}{n!(m-l)!}=1
+\Rightarrow\displaystyle\sum_{l=0}^{m}\frac{m!(n-l)!}{n!(m-l)!}=\frac{n+1}{n-m+1}
+\sum_{k=0}^m\frac{(n-k)!}{(m-k)!}=\frac{(n+1)!}{m!(n+1-m)}=\binom{n+1}m(n-m)!\;.
+\frac{(n-k)!}{(m-k)!}=(n-k)^{\underline{n-m}}\;,
+\sum_{k=0}^m(n-k)^{\underline{n-m}}=\binom{n+1}m(n-m)!\;.\tag{1}
+(n-k)^{\underline{n-m}}
+n-m
+[n-k]
+0\le k\le m
+n-m+1
+[n+1]
+n-k+1
+n-m
+(1)
+n-m+1
+[n+1]
+n-m
+\dbinom{n+1}{n-m+1}=\dbinom{n+1}m
+n-m+1
+[n+1]
+(n-m)!
+m-n
+(1)

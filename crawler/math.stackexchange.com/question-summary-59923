@@ -1,0 +1,27 @@
+\frac{d}{dx}\left[ A(x)\frac{d\, u(x)}{dx} \right].
+h
+x_{i-1} = x_i - h
+x_{i+ 1} = x_i + h
+x_i
+\begin{align*}\left\{\frac{d}{dx}\left[ A(x)\frac{d\, u(x)}{dx}\right]\right\}_i   &= \frac{\left[A(x)\frac{d\, u(x)}{dx}\right]_{i+1/2} - \left[A(x)\frac{d\, u(x)}{dx}\right]_{i-1/2}}{h} \\ &= \frac{A_{i+1/2}\left[\frac{u_{i+1}-u_{i}}{h}\right] - A_{i-1/2}\left[\frac{u_{i}-u_{i-1}}{h}\right]}{h} \end{align*}
+A
+i + \frac 12
+A
+i - \frac 12
+i \pm
+i
+i + 1
+i + 2
+i
+i -1
+i -2
+A
+A(x)
+A
+A
+u
+ \left\{\frac{d}{dx}\left[ A(x)\frac{d\, u(x)}{dx}\right]\right\}_i  = \frac{A_{i+1/2}\left[\frac{u_{i+1}-u_{i}}{h}\right] - A_{i-1/2}\left[\frac{u_{i}-u_{i-1}}{h}\right]}{h} 
+ \frac{\partial u}{\partial t} = \frac{\partial}{\partial x} \left( A(x) \frac{\partial u}{\partial x} \right), 
+A_{i+1/2} \approx \frac12 ( A_{i+1} + A_i )
+\frac{1}{4}(A_{i+1}-A_{i-1})(u_{i+1}-u_{i-1}) + A_i(u_{i+1}-2u_i+u_{i-1})
+ \frac{\mathrm{d}}{\mathrm{d}x}\left[A\frac{\mathrm{d}u}{\mathrm{d}x}\right]=\frac{\mathrm{d}A}{\mathrm{d}x}\frac{\mathrm{d}u}{\mathrm{d}x}+A\frac{\mathrm{d}^2u}{\mathrm{d}x^2} 

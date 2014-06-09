@@ -1,0 +1,13 @@
+f(x,y,z) = x^2y + y^2z + x - z
+ \begin{align*} f'_x &= 2xy + 1 \hspace{10mm} f'_y = x^2 + 2yz \hspace{10mm}f'_z = y^2 - 1\\ \end{align*} 
+ \begin{align*} f''_{xx} = 2y \hspace{10mm} f''_{xy} = 2x \hspace{10mm} f''_{xz} = 2y\\ f''_yy = 2z \hspace{10mm} f''_{yz} = 2y \hspace{10mm} f''_{zz} = 0\\ \end{align*} 
+ \begin{align*} 2xy + 1 &= 0\\ x^2 + 2yz &= 0\\ y^2 -1 &= 0 \end{align*} 
+A = [-\frac{1}{2}, 1, -\frac{1}{8}]
+B = [\frac{1}{2}, -1, \frac{1}{8}]
+2, -\frac{3}{2}, -8
+ \begin{align*} f''{xx}(-\frac{1}{2}, 1, -\frac{1}{8}) = 2 \hspace{10mm} f''{xy}(-\frac{1}{2}, 1, -\frac{1}{8}) = -1 \hspace{10mm} f''{xz}(-\frac{1}{2}, 1, -\frac{1}{8}) = 0\\ f''{yy}(-\frac{1}{2}, 1, -\frac{1}{8}) = -\frac{1}{4} \hspace{10mm} f''{yz}(-\frac{1}{2}, 1, -\frac{1}{8}) = 2 \hspace{10mm} f''{zz}(-\frac{1}{2}, 1, -\frac{1}{8}) = 0\\ \end{align*} 
+ H =    \begin{pmatrix}    2 & -1 & 0 \\    -1 & -\frac{1}{4} & 2 \\    0  & 2  & 0    \end{pmatrix} 
+2, -\frac{3}{2}, 8
+ \begin{align*} f''{xx}(-\frac{1}{2}, 1, -\frac{1}{8}) = -2 \hspace{10mm} f''{xy}(-\frac{1}{2}, 1, -\frac{1}{8}) = 1 \hspace{10mm} f''{xz}(-\frac{1}{2}, 1, -\frac{1}{8}) = 0\\ f''{yy}(-\frac{1}{2}, 1, -\frac{1}{8}) = \frac{1}{4} \hspace{10mm} f''{yz}(-\frac{1}{2}, 1, -\frac{1}{8}) = -2 \hspace{10mm} f''{zz}(-\frac{1}{2}, 1, -\frac{1}{8}) = 0\\ \end{align*} 
+ H =    \begin{pmatrix}    -2 & 1 & 0 \\    1 & \frac{1}{4} & -2 \\    0  & -2  & 0    \end{pmatrix} 
+f''_{xz} = 2y

@@ -1,0 +1,32 @@
+r_1, r_2, r_3, ... r_n
+r_{inner}
+\theta_i  = 2\sin^{-1} \frac{r_i}{r_i+r_{inner}}
+2\pi = \sum_i (2\sin^{-1} \frac{r_i}{r_i+r_{inner}})
+r_{inner}
+r_{inner}
+r_{n+1}=r_1
+ \qquad\qquad\qquad \qquad\qquad\qquad \sum\limits_{i=1}^n\varphi(i,{i+1})\;=\;2\pi \qquad\qquad\qquad \qquad\qquad\qquad(1) 
+n
+n=3
+r_i=1,2,3
+R=\frac{6}{23}
+i\neq j
+i>j
+i
+j
+R
+(1)
+i+1,\ldots,j-1
+|i-j|
+ \varphi(i,j) \;\geqslant\; \sum_{k=i}^{j-1}\varphi(k,{k+1}) 
+R
+r_1
+r_2
+R
+r_{n+1}=r_1
+ (r_1+r_2)^2=(R+r_1)^2+(R+r_2)^2-2(R+r_1)(R+r_2)\cos(\varphi_{12})\tag{1} 
+ \begin{align} \cos(\varphi_{12}) &=\frac{(R+r_1)^2+(R+r_2)^2-(r_1+r_2)^2}{2(R+r_1)(R+r_2)}\\[6pt] &=\frac{(R+r_1)(R+r_2)-2r_1r_2}{(R+r_1)(R+r_2)}\\[6pt] &=1-2\frac{r_1}{R+r_1}\frac{r_2}{R+r_2}\tag{2} \end{align} 
+ \pi=\sum_{i=1}^n\cos^{-1}\left(1-2\frac{r_i}{R+r_i}\frac{r_{i+1}}{R+r_{i+1}}\right)\tag{3} 
+ f(x)=\pi-\sum_{i=1}^n\cos^{-1}\left(1-2\frac{r_i}{x+r_i}\frac{r_{i+1}}{x+r_{i+1}}\right)\tag{4} 
+ f'(x)=\sum_{i=1}^n\frac{\frac1{x+r_i}+\frac1{x+r_{i+1}}} {\sqrt{\frac{x+r_i}{r_i}\frac{x+r_{i+1}}{r_{i+1}}-1}}\tag{5} 
+ x_{k+1}=x_k- \frac{\displaystyle\pi-\sum_{i=1}^n\cos^{-1}\left(1-2\frac{r_i}{x_k+r_i}\frac{r_{i+1}}{x_k+r_{i+1}}\right)} {\displaystyle\sum_{i=1}^n\frac{\frac1{x_k+r_i}+\frac1{x_k+r_{i+1}}} {\sqrt{\frac{x_k+r_i}{r_i}\frac{x_k+r_{i+1}}{r_{i+1}}-1}}} 

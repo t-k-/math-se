@@ -1,0 +1,23 @@
+n^2+1
+(a+b)
+b^2 - 4ac
+an^2 + bn + c
+n^2 + m^2
+n^2 + m^2 + 1
+n^2 + 1
+f(n)/k
+x^{12}+488669
+\sum_{n\leq x}\Lambda(n^2+1)=\sum_{n\leq x}\sum_{d\mid n^2+1}-\mu(d)\ln(d)=\sum_{n\leq x}\sum_{d\leq x}\sum_{n^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)
+=\sum_{d\leq x}\sum_{n\leq x}\sum_{n^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)=\sum_{d\leq x}\sum_{k=0}^{d-1}\sum_{n\leq \frac{x-k}{d}}\sum_{(dn+k)^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)
+=\sum_{d\leq x}\sum_{k=0}^{d-1}\sum_{n\leq \frac{x-k}{d}}\sum_{k^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)=\sum_{d\leq x}\sum_{k=0}^{d-1}\sum_{k^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)\lfloor{\frac{x-k}{d}}\rfloor
+=\sum_{d\leq x}\sum_{k=0}^{d-1}\sum_{k^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)(\frac{x}{d}+O(1))\approx\sum_{d\leq x}\sum_{k=0}^{d-1}\sum_{k^2+1\equiv 0 \text{ mod } d}-\mu(d)\ln(d)\frac{x}{d}
+=x\sum_{d\leq x}\frac{-\mu(d)\ln(d)f(d)}{d}
+f(d)
+k
+d
+k^2\equiv -1 \text{ mod } d
+\chi
+4
+f(n)=\sum_{d\mid n}\mu(d)^2\chi(\frac{n}{d})\iff\sum_{n=1}^\infty\frac{f(n)}{n^s}=\frac{L(s,\chi)\zeta(s)}{\zeta(2s)}
+\sum_{n\leq x}\Lambda(n^2+1)\approx x\lim_{s\to +1}\sum_{d=1}^\infty\frac{-\mu(d)\ln(d)f(d)}{d^s}=x\prod_{p \text{ odd} }(1-\frac{\chi(p)}{p-1})
+\sum_{p\leq x}_{p=n^2+1}1\sim \text{Li}(x^{1/2})(\prod_{p\equiv 1 \text{ mod } 4}\frac{p-2}{p-1})(\prod_{p\equiv 3 \text{ mod } 4}\frac{p}{p-1})

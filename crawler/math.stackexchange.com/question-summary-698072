@@ -1,0 +1,15 @@
+x\cdot\frac{d}{dx}
+a_{n,i,j}
+a_{0,i,j}=\begin{cases}1&i=0\wedge j=0\\0&\mbox{otherwise}\end{cases}
+\left(x\cdot\frac{d}{dx}\right)^n\cdot f(x)
+\left(x\cdot\frac{d}{dx}\right)^n\cdot f(x)=\sum\limits_{i=0}^\infty\sum\limits_{j=0}^\infty a_{n,i,j}\cdot x^i\cdot\frac{d^j}{dx^j}f(x)
+\left(x\cdot\frac{d}{dx}\right)^{n+1}\cdot f(x)=\sum\limits_{i=0}^\infty\sum\limits_{j=0}^\infty a_{n,i,j}\cdot\left(i\cdot x^{i-1}\cdot\frac{d^j}{dx^j}f(x)+x^i\cdot\frac{d^{j+1}}{dx^{j+1}}f(x)\right),
+a_{n+1,i,j}=a_{n,i+1,j}\cdot(i+1)+a_{n,i,j-1},
+b_{n,i,j}=N(n)\cdot I(i)\cdot J(j)
+N(n)\cdot I(i)\cdot J(j)
+N(n)=\lambda_n^n
+I(i)=\lambda_i^i
+J(j)=\lambda_j^{-j}=(\lambda_n-\lambda_i)^{-j}
+N(n+1)\cdot I(i)\cdot J(j)=N(n)\cdot I(i+1)\cdot J(j)+N(n)\cdot I(i)\cdot J(j-1)
+\lambda_n=\frac{N(n+1)}{N(n)}=\frac{I(i+1)}{I(i)}+\frac{J(j-1)}{J(j)}=\lambda_i+\lambda_j
+b_{n,i,j}=\lambda_n^n\cdot\lambda_i^i\cdot(\lambda_n-\lambda_i)^{-j}

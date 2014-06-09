@@ -1,0 +1,6 @@
+\vec{v} \in R^m
+v_n^2 > v_n v_{n+1}
+ B_h =  \left[ \begin{array}{cccc} 2 & -1 & 0 & 0 \\ -1 & 2 & -1 & 0 \\ 0 & -1 & \ddots & \ddots \\ 0 & 0 & \ddots & \ddots \\ \end{array} \right] 
+ \vec{v}^{\,T} B_h \vec{v} > 0 
+ 2 \left( \sum \limits_{n = 1}^{N-1} v_n^2 - \sum \limits_{n = 1}^{N-2} v_n v_{n+1} \right) 
+v_1^2 + \sum_{i = 1}^{n-1}(v_i - v_{i + 1})^2 + v_n^2

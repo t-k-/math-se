@@ -1,0 +1,34 @@
+P: GL_n(\mathbb R) \to \mathbb R
+P(A)=\det(A^{-1}-A)
+f(A)=\det(A)
+g(A)=A^{-1}-A
+P(A)=f(g(A))
+P'(A)=f'(g(A))g'(A)
+f'(A)=\operatorname{trace}(\operatorname{adj}(A)D_A)
+D_A
+f'(A^{-1}-A)=\operatorname{trace}(\operatorname{adj}(A^{-1}-A) D_{A^{-1}-A})
+g'(A)=D_{A^{-1}-A}
+P'(A) =\operatorname{trace}(\operatorname{adj}(A^{-1}-A) D_{A^{-1}-A})*D_{A^{-1}-A}
+A \mapsto A^{-1}
+\det
+P
+A
+f(A) = \det A
+A
+Df(A)(\Delta) = \det A \operatorname{tr} (A^{-1} \Delta)
+(\det A  )A^{-1} = \operatorname{adj} A
+Df(A)(\Delta) = \operatorname{tr} (\operatorname{adj}(A) \Delta)
+A
+g(A) = A^{-1} -A
+Dg(A)(\Delta) = -(A^{-1} \Delta A^{-1} + \Delta)
+Df \circ g (A) (\Delta) = Df(g(A)) (Dg(A)(\Delta))
+g(A) = g_1(A)+g_2(A)
+g_1(A) = A^{-1}, g_2(A) = -A
+D g_2(A)(\Delta) = -\Delta
+g_1
+\|\Delta\| < {1 \over 2\|A^{-1}\|}
+g_1(A+\Delta) = (A+\Delta)^{-1} = ((I+\Delta)A)^{-1} = A^{-1} (I+\Delta A^{-1})^{-1} = A^{-1} \sum_{k=0}^\infty (-1)^k (\Delta A^{-1})^k
+g_1(A+\Delta) = g_1(A) -A^{-1} \Delta A^{-1} + \sum_{k=2}^\infty (-1)^k (\Delta A^{-1})^k
+\|\sum_{k=2}^\infty (-1)^k (\Delta A^{-1})^k \| \le \|\Delta\|^2 \|A^{-1}\|^2\sum_{k=0}^\infty (\|\Delta\| \|A^{-1}\|)^2 \le 2 \|\Delta\|^2 \|A^{-1}\|^2
+o(\|\Delta\|)
+D g_1(A)( \Delta) = -A^{-1} \Delta A^{-1}

@@ -1,0 +1,8 @@
+\,x_{1},\, x_{2},\, \nu\, =\, 12.654,\, 13.487,\, 0\,
+\dfrac{(x_{1}\cdot(-BesselK(\nu,x_{1}\cdot125))\cdot BesselI(\nu,x_{2}\cdot125))-(x_{2}\cdot BesselK(\nu+1,x_{1}\cdot 125)\cdot BesselI(\nu+1,x_{2}\cdot 125))}{\dfrac{-1}{125\cdot x_{1}}}
+125 x_1
+125 x_2
+\nu^2
+ \eqalign{K_\nu(x) &\sim \sqrt{\frac{\pi}{2x}} e^{-x} \left(1+{\frac {4\,{\nu}^{2}-1^2}{1!\; 8x}}+{\frac {(4 \nu^2-1^2)(4 \nu^2-3^2)}{2!\; (8x)^{2}}}\right.\cr &\left.+{\frac {(4 \nu^2 - 1^2)(4 \nu^2 - 3^2)(4 \nu^2 - 5^2)}{3! \;(8x)^{3}}}+{\frac {(4 \nu^2 - 1^2)(4 \nu^2 - 3^2)(4 \nu^2 - 5^2)(4 \nu^2 - 7^2)}{4! \;(8x)^{4}}}+\ldots  \right)\cr I_\nu(x) &\sim  \frac{e^x}{\sqrt{2\pi x}}\left(1-{\frac {4\,{\nu}^{2}-1^2}{1!\; 8x}}+{\frac {(4 \nu^2-1^2)(4 \nu^2-3^2)}{2!\; (8x)^{2}}}\right.\cr &\left.-{\frac {(4 \nu^2 - 1^2)(4 \nu^2 - 3^2)(4 \nu^2 - 5^2)}{3! \;(8x)^{3}}}+{\frac {(4 \nu^2 - 1^2)(4 \nu^2 - 3^2)(4 \nu^2 - 5^2)(4 \nu^2 - 7^2)}{4! \;(8x)^{4}}}-\ldots  \right)\cr}
+BesselI_{exp}(\nu,x) = \exp(-x)BesselI(\nu,x)\\BesselK_{exp}(\nu,x) = \exp(x)BesselK(\nu,x)
+BesselI(\nu,x) = \exp(\log(BesselI_{exp}(\nu,x))+x)\\BesselK(\nu,x) = \exp(\log(BesselK_{exp}(\nu,x))-x)

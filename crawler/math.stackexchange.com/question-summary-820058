@@ -1,0 +1,12 @@
+P_{X}=\frac{1}{3}E(1)+\frac{2}{3}B(\frac{1}{2})
+\lambda=1
+P_{X}
+\textbf{E}X
+Var(X)
+t<0;
+t<3/2;
+3/2\leq t.
+ with(Statistics): E := RandomVariable(Exponential(1)): B := RandomVariable(BernoulliDistribution(1/2)): Z := (1/3)*E+(2/3)*B:
+simplify(CDF(Z, t)); 
+\cases{0&$t<0;$\cr 1/2-1/2\,{{\rm e}^{-3\,t}}&$t<3/2;$\cr 1-1/2\,{{\rm e}^{-3\,t}}-1/2\,{{\rm e}^{9/2-3\,t}}&$3/2\leq t.$\cr} 
+diff(convert(simplify(CDF(Z, t)), Heaviside), t)

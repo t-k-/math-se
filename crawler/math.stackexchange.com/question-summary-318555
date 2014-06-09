@@ -1,0 +1,25 @@
+\frac d {dx} x^n=nx^{n-1}
+n \in \mathbb R
+\frac d {dx} x^n=nx^{n-1}
+n \in\mathbb N
+\frac d {dx} x^n=nx^{n-1}
+n
+x^r=e^{r\ln x}:
+\begin{align*}(x^r)'&=\lim_{h\to 0}\frac{e^{r\ln (x+h)}-e^{r\ln x}}{h}\\&=\lim_{h\to 0}\left(\frac{e^{r\ln (x+h)}-e^{r\ln x}}{r\ln(x+h)-r\ln x}\right)\left(\frac{r\ln (x+h)-r\ln x}{h}\right)\end{align*}
+(\ln 
+r\ln x =w,\;\;r\ln (x+h)=w+i:
+\begin{align*}\cdots &=\left(\lim_{i\to 0}\frac{e^{w+i}-e^w}{i}\right)\cdot \lim_{h\to 0}r\ln\left(1+\frac{h}{x}\right)^{\frac{1}{h}}\quad\qquad\quad\\&=\left(\lim_{i\to 0}\frac{e^{w+i}-e^w}{i}\right)\left(\lim_{h\to 0}\frac{r}{x}\ln\left(1+\frac{h}{x}\right)^{\frac{x}{h}}\right)\\&=\displaystyle\lim_{i\to 0}e^w\left(\frac{e^{i}-1}{i}\right)\cdot \frac{r}{x}\end{align*}
+i=\ln \left(1+\frac{1}{a}\right):\qquad (i\to0 \Rightarrow a\to \infty)
+\begin{align*}\cdots &=\lim_{a\to \infty}e^w\left(\frac{1}{a \ln \left(1+\frac{1}{a}\right)}\right)\cdot \frac{r}{x}\quad\qquad\qquad\qquad\qquad\\&=\lim_{a\to \infty}e^w\left(\frac{1}{\ln \left(1+\frac{1}{a}\right)^{a}}\right)\cdot \frac{r}{x}\\&=\dfrac{re^w}{x}\\&=rx^{r-1}\end{align*}
+f(x) = x^n
+ f'(x) = \lim_{h \to 0}\frac{f(x + h) - f(x)}{h} 
+ \begin{align} f'(x) &= \lim_{h \to 0} \frac{(x + h)^n - x^n}{h} \\ &= \lim_{h \to 0} \frac{x^n + nhx^{n-1} + \frac{n(n-1)}{2!}h^2x^{n-2} + \cdots - x^n}{h}\\ &= \lim_{h \to 0} \text{ } h \text{ } \frac{nx^{n-1} + \frac{n(n-1)}{2!}hx^{n-2} + \cdots \text{ higher powers in h}}{h} \\ &= nx^{n-1} + \lim_{h \to 0} \text{ } h \cdot \left( \frac{n(n-1)}{2!}x^{n-2} + \cdots \text{multiples of h}\right)\\ &= nx^n + 0\\ &= nx^n \end{align} 
+ \begin{align} f'(x) &= \lim_{h \to 0} \frac{(x + h)^r - x^r}{h} \\ &= \lim_{h \to 0} \frac{x^r + hrx^{r-1} + \frac{r(r-1)}{2!}h^2x^{r-2} + \cdots - x^r}{h}\\ &= \lim_{h \to 0} \text{ } h \text{ } \frac{rx^{r-1} + \frac{r(r-1)}{2!}hx^{r-2} + \cdots \text{ higher powers in h}}{h} \\ &= rx^{r-1} + \lim_{h \to 0} \text{ } h \cdot \left( \frac{r(r-1)}{2!}x^{r-2} + \cdots \text{multiples of h}\right)\\ &= rx^r + 0\\ &= rx^r \end{align} 
+e^x
+\log(x)
+n\in Q
+\frac pq
+y=x^{\frac pq}
+\dfrac{dx^n}{dx}=\dfrac{de^{n\log(x)}}{dx}=n\dfrac{x^n}{x}=nx^{n-1}
+y^q=x^p
+\dfrac{dx^n}{dx}=\dfrac{d}{dx}\lim_{r\to n}x^r

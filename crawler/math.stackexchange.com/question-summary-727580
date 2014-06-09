@@ -1,0 +1,13 @@
+C^0([a, b])=\{f:[a, b]\longrightarrow \mathbb R: f\ \textrm{continuous}\}
+T:C^0([a, b])\longrightarrow C^0([a, b])
+k:[a, b]\times [a, b]\longrightarrow \mathbb R
+g:[a, b]\longrightarrow \mathbb R
+T
+d_\infty(f, g)=\sup_{x\in [a, b]}|f(x)-g(x)|.
+(Tf)(x)=g(x)+\int_{a}^b k(x, y)f(y)\ dy,
+\sup_{x\in [a, b]}\int_{a}^b |k(x, y)|\ dy<1.
+T:X\longrightarrow X
+(X, d)
+c<1
+d(Tx, Ty)\leq c d(x, y)
+d_\infty(Tf, Th)= \sup_x \left| \int_a^b k(x,y) (f(y)-h(y)) dy \right| \\ \le \sup_x \left( \sup_y |f(y)-h(y)| \int_a^b |k(x,y)|  dy \right)  = \sup_x \int_a^b |k(x,y)|  dy \times d_\infty(f, h)

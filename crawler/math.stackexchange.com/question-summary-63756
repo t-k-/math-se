@@ -1,0 +1,29 @@
+E(X) = \sum_{i=0}^\infty P(X > i).
+X
+E(X) = \int_0^\infty P(X > x) dx?
+F
+X
+X=F^{-1}(U)
+U
+[0,1)
+E(X) =     \int_0^1 F^{-1}(u) du.
+\int_0^1     F^{-1}(u) du = \int_0^\infty P(X > x) dx.
+F
+X
+ \mathrm E(X)=\int\limits_\Omega X\ \mathrm dP=\int\limits_\Omega \int\limits_{0}^{+\infty}[X\gt t]\mathrm dt\ \mathrm dP=\int\limits_{0}^{+\infty}\int\limits_\Omega [X\gt t]\mathrm dP\ \mathrm dt=\int\limits_{0}^{+\infty}\mathrm P(X\gt t)\ \mathrm dt. 
+ \mathrm E(X)=\int\limits_\Omega X\ \mathrm dP=\int\limits_\Omega\ \sum\limits_{i=0}^{+\infty}[X\gt i]\ \mathrm dP=\sum\limits_{i=0}^{+\infty}\ \int\limits_\Omega[X\gt i]\ \mathrm dP=\sum\limits_{i=0}^{+\infty}\mathrm P(X\gt i). 
+X \geq 0
+X
+EX= \int_{0}^{\infty}P(X > t)dt.
+\int_{0}^{\infty}P(X>t)dt = \int_0^{\infty}\left( \int_{t}^{\infty} \nu_X(ds)\right)dt=\int_{\mathbb{R}}\left( \int_{0}^{\infty}\textbf{1}_{[0,\infty)}(t)\textbf{1}_{(t,\infty)}(s)\nu_X(ds)\right)dt=
+=\int_{0}^{\infty}\left(\int_0^s dt \right) \nu_X(ds)= \int_{0}^{\infty}s \nu_X(ds)=\int_{\mathbb{R}}s\nu_X(ds)=EX
+EX=\int_{0}^{\infty}P(X \geq t)dt.
+\int_{0}^{\infty}P(X=t)dt=0
+\begin{align*} \mathbb{E}[g(X)]&=\int_0^\infty g(t) dF(t) \\               &= \int_0^\infty -g(t) d(1-F(t)) \\ &= [-g(t)(1-F(t))]^\infty_0 - \int_0^\infty 1-F(t)d(-g(t)) \\ &= \int_0^\infty g'(t)\mathbb{P}[X>t]dt\\  \end{align*}
+g(X)=X
+\mathbb{E}[X]
+X
+\mathbb{E}[X^+]
+\mathbb{E}[X^-]
+X^+=\max(X,0)
+X^-=\max(-X,0)

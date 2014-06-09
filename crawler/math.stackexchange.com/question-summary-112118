@@ -1,0 +1,14 @@
+\int dx ~\delta(x-x_0)~\partial_x F(x) 
+\partial_x
+-\partial_{x_0}
+x - x_0 = 0
+dx - dx_0 = 0
+dx = dx_0
+\frac{d}{dx}=\frac{d}{dx_0}
+\delta
+ \int\,dx\,\delta(x-x_0) \partial_x F(x) = -\int dx \partial_x \delta(x-x_0) F(x)\,, 
+ \lim_{\epsilon \searrow 0} \frac{1}{\sqrt{2\pi\epsilon}}\,e^{-(x-x_0)^2/2\epsilon} = \delta(x - x_0)\,, 
+ \int dx \delta(x-x_0) \partial_x F(x) = -\lim_{\epsilon \searrow 0} \int dx  \frac{1}{\sqrt{2\pi\epsilon}}\,\partial_x e^{-(x-x_0)^2/2\epsilon} F(x)\,. 
+ \partial_x e^{-(x-x_0)^2/2\epsilon} = -\partial_{x_0} e^{-(x-x_0)^2/2\epsilon}\,, 
+ \int dx \delta(x-x_0) \partial_x F(x) = \lim_{\epsilon \searrow 0} \int dx  \frac{1}{\sqrt{2\pi\epsilon}}\,\partial_{x_0} e^{-(x-x_0)^2/2\epsilon} F(x)\,, 
+ \int dx \delta(x-x_0) \partial_x F(x) = \partial_{x_0} \lim_{\epsilon \searrow 0} \int dx  \frac{1}{\sqrt{2\pi\epsilon}} e^{-(x-x_0)^2/2\epsilon} F(x) = \partial_{x_0} \int dx \delta(x-x_0) F(x) = F^\prime(x_0)\,. 

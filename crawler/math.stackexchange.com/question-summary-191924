@@ -1,0 +1,22 @@
+F(x,y,z) = (yz, xz, xy)
+ x,y,z > 0, \space x^2 + y^2 + z^2 = a^2 
+N = \frac{1}{a}(x,y,z)
+\langle F,N \rangle = \frac{3}{a}xyz
+ flux_F(M) = \int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}} \frac{3}{a}(a\cos(\varphi)\sin(\theta)\times a\sin(\varphi)\sin(\theta)\times a\cos(\theta))\times  {\color{Red} \sin(\theta)} d\theta d\varphi = ... = \frac{3a^2}{8} 
+a^2\sin(\theta)
+r=(a\cos(\varphi)\sin(\theta), a\sin(\varphi)\sin(\theta), a\cos(\theta))
+r:\mathbb{R}^2 \rightarrow \mathbb{R}^3
+\sqrt{det(D_r^T D_r)} = a^2\sin(\theta)
+ \int_{M}f = \int_{\Omega}f\circ r \sqrt{det(D_r^T D_r)} 
+z=f(x,y)
+\mathcal{S}
+dS
+P
+d\mathbf{S}
+\mathcal{S}
+D:x^2+y^2\leq a^2
+\hat{N}= \pm\frac{-\frac{\partial f}{\partial x}\mathbf{i}-\frac{\partial f}{\partial y}\mathbf{j}+\mathbf{k}}{\sqrt{1+\big(\frac{\partial f}{\partial x}\big)^2+\big(\frac{\partial f}{\partial y}\big)^2}}
+= \frac{1}{a}\big(x\mathbf{i}+y\mathbf{j}+z\mathbf{k}\big),a>0
+dS=\sqrt{1+\big(\frac{\partial f}{\partial x}\big)^2+\big(\frac{\partial f}{\partial y}\big)^2}dxdy
+d\mathbf{S}=\hat{N} dS=\big(-\frac{\partial f}{\partial x}\mathbf{i}-\frac{\partial f}{\partial y}\mathbf{j}+\mathbf{k}\big)dxdy
+\iint_{\mathcal{S}}F(x,y,z)\bullet\mathbf{S}=\iint_{D} F(x,y,z)\cdot d\mathbf{S}\\\ = \iint_{D}(yz\mathbf{i}+xz\mathbf{j}+xy\mathbf{k})\cdot (\frac{x}{z}\mathbf{i}+\frac{y}{z}\mathbf{j}+\mathbf{k})=\iint_{D}3xy

@@ -1,0 +1,22 @@
+s
+n \rightarrow \infty
+(X_t)
+ \frac{1}{n} \sum_{k=1}^{n-s} X_{k+s}X_{k}
+ \frac{1}{n} \sum_{k=1}^{n} X_{k+s}X_{k}
+\frac{n-s}{n}
+1
+\sum_{k=n+1-s}^{n} X_{k+s}X_{k}
+n \rightarrow \infty
+ \frac{ \sum_{k=1}^{n-s} X_{k+s}X_{k}}{\sum_{k=1}^{n} X_{k+s}X_{k}}=\frac{ \sum_{k=1}^{n-s} X_{k+s}X_{k}}{\sum_{k=1}^{n-s} X_{k+s}X_{k} + \sum_{k=n+1-s}^{n} X_{k+s}X_{k}}
+(X_t)
+\mathbb{E} [X_{t+s}X_t]
+s
+t
+s \in \mathbb{N}
+Y_n := \frac{1}{n} \sum_{k=1}^{n-s} X_{k+s} X_k \qquad \qquad Z_n := \frac{1}{n} \sum_{k=1}^n X_{k+s} X_k.
+Y_n = \frac{n-s}{n} Z_{n-s}. \tag{1}
+d
+Y
+Y_n \stackrel{d}{\to} Y  \quad \Leftrightarrow \quad Z_n \stackrel{d}{\to} Y \tag{2}
+(2)
+(1)

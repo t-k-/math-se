@@ -1,0 +1,25 @@
+ d = \lim_{n\to \infty }\sqrt{{\left({\left(2 \, n^{2} - n\right)} e^{\left(2 i \, \sqrt{n^{2} - n} \pi\right)} + {\left(n e^{\left(4 i \, \sqrt{n^{2} - n} \pi\right)} + n\right)} \sqrt{n^{2} - n}\right)} e^{\left(-2 i \, \sqrt{n^{2} - n} \pi\right)}} 
+ a = \sqrt{n^{2} -n} 
+ d = \sqrt{a n e^{\left(-2 i \, \pi a\right)} + a n e^{\left(2 i \, \pi a\right)} + 2 \, n^{2} - n} 
+ d = \sqrt{2 \, a n \cos\left(-2 \, \pi a\right) + 2 \, n^{2} - n} 
+ \lim_{n\to \infty } \sqrt{n^{2} -n} = n-1/2 
+ d = \sqrt{2 \,n \left( n-1/2 \right) \cos\left(-2 \, \pi \left( n-1/2 \right)\right) + 2 \, n^{2} - n} 
+ d = \sqrt{ \left(  2 \, n^{2} - n \right) \cos\left(- \pi n \right) + 2 \, n^{2} - n} 
+ d = \sqrt{ \left(  2 \, n^{2} - n \right) \left( \cos\left(- \pi n \right) + 1\right)} 
+ d = \sqrt{ \left(  2 \, n^{2} - n \right) \left( -1 + 1\right)} = 0 
+ d = \lim_{n\to \infty }\sqrt{{\left({\left(2 \, n^{2} - n\right)} e^{\left(2 i \, \sqrt{n^{2} - n} \pi\right)} + {\left(n e^{\left(4 i \, \sqrt{n^{2} - n} \pi\right)} + n\right)} \sqrt{n^{2} - n}\right)} e^{\left(-2 i \, \sqrt{n^{2} - n} \pi\right)}} = 0 
+ \sqrt{4+\pi^2}/4 
+z_n
+\sqrt{1-{1\over n}}
+{1\over n}
+\sqrt{1-x}
+0
+\cos
+0
+Q_n
+z_n:=\exp\Bigl(2i\pi n\sqrt{1-{1\over n}}\Bigr)\ .
+Q_n:=\Bigl((2n^2-n) z_n +n^2(z_n^2+1)\sqrt{1-{1\over n}}\Bigr)\ z_n^{-1}=2n^2-n+2n^2{z_n+z_n^{-1}\over 2}\sqrt{1-{1\over n}}\ .
+\sqrt{1-{1\over n}}=1-{1\over 2n}-{1\over 8n^2}+O(n^{-3})\ .
+\eqalign{{z_n+z_n^{-1}\over 2}&=\cos\Bigl(2\pi n \sqrt{1-{1\over n}}\Bigr)=\cos\Bigl(2\pi n\Bigl(1-{1\over 2n}-{1\over 8n^2}+O(n^{-3})\Bigr)\Bigr)\cr &=-\cos\Bigl({\pi\over 4n}+O(n^{-2})\Bigr)=-1+{\pi^2\over 32 n^2}+O(n^{-3})\ .\cr}
+\eqalign{Q_n &= 2n^2-n +2n^2\Bigl(-1+{\pi^2\over 32 n^2}+O(n^{-4})\Bigr)\bigl(1-{1\over 2n}-{1\over 8n^2}+O(n^{-3})\bigr)\cr &=  {1\over 4}+{\pi^2\over16}+O(n^{-1})\ .\cr}
+\lim_{n\to\infty}\sqrt{Q_n}={1\over4}\sqrt{4+\pi^2}\ ,

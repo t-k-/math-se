@@ -1,0 +1,18 @@
+n
+n_1
+n_2
+n_k
+n_1+n_2+...+n_k=n
+\frac{n!}{n_1!\cdot n_2!\cdot...\cdot n_k!}
+{(n_1 + \dots + n_k)! \over n_1! \cdots n_k!} = \frac{n_1!}{n_1!} \cdot \frac{(n_1 + n_2)!}{n_1!n_2!} \cdot \frac{(n_1 + n_2 + n_3)!}{(n_1 + n_2)!n_3!} \cdots \frac{(n_1 + \dots + n_k)!}{(n_1 + \dots + n_{k-1})!n_k!} =\\ \binom{n_1}{n_1} \cdot \binom{n_1+n_2}{n_2} \cdot \binom{n_1+n_2+n_3}{n_3} \cdots \binom{n_1 + \dots + n_k}{n_k}
+p
+p
+\sum_{m=1}^\infty \lfloor \frac{n_1+n_2+..+n_k}{p^m} \rfloor
+p
+\sum_{m=1}^\infty \lfloor \frac{n_1}{p^m} \rfloor+ \lfloor \frac{n_2}{p^m} \rfloor+...+\lfloor \frac{n_k}{p^m} \rfloor
+\lfloor \frac{n_1}{p^m} \rfloor+ \lfloor \frac{n_2}{p^m} \rfloor+...+\lfloor \frac{n_k}{p^m} \rfloor
+\lfloor \frac{n_1}{p^m} \rfloor+ \lfloor \frac{n_2}{p^m} \rfloor+...+\lfloor \frac{n_k}{p^m} \rfloor \leq \frac{n_1+n_2+..+n_k}{p^m}
+\lfloor \frac{n_1}{p^m} \rfloor+ \lfloor \frac{n_2}{p^m} \rfloor+...+\lfloor \frac{n_k}{p^m} \rfloor \leq \lfloor \frac{n_1+n_2+..+n_k}{p^m} \rfloor
+\sum_{m=1}^\infty \lfloor \frac{n_1}{p^m} \rfloor+ \lfloor \frac{n_2}{p^m} \rfloor+...+\lfloor \frac{n_k}{p^m} \rfloor \leq \sum_{m=1}^\infty \lfloor \frac{n_1+n_2+..+n_k}{p^m} \rfloor
+S_{n_1} \times S_{n_2} \times \ldots \times S_{n_k}
+S_n

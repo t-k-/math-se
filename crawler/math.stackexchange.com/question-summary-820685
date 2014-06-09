@@ -1,0 +1,21 @@
+p \land q \vDash p
+p \nvDash p \land q
+\models
+R, S
+\exists x (Rx \wedge Sx) \models \exists x Rx \wedge \exists x Sx
+\mathfrak{A} = \langle D, I\rangle
+\beta
+\mathfrak{A}
+\mathfrak{A}, \beta \models \exists x (Rx \wedge Sx) \Rightarrow~ \text{There is some}~a \in D~\text{with}~ \mathfrak{A}, \beta \frac{a}{x} \models Rx ~\text{and}~\mathfrak{A}, \beta \frac{a}{x} \models Sx \Rightarrow~\text{There is some}~a \in D~\text{with}~\mathfrak{A}, \beta \frac{a}{x} \models Rx ~\text{and}~\text{there is some}~a \in D~\text{with}~\mathfrak{A}, \beta \frac{a}{x} \models Sx \Rightarrow \mathfrak{A}, \beta \models\exists x Rx \wedge \exists x Sx
+\beta \frac{a}{x}
+\beta
+a
+x
+\exists x Rx \wedge \exists x Sx \not \models \exists x (Rx \wedge Sx)
+\mathfrak{A} = \langle \mathbb{N}, I \rangle
+I(R) = \lbrace n \in \mathbb{N}: n = m \cdot 2~ \text{for some}~ m \in \mathbb{N} \rbrace, I(S) = \mathbb{N} \setminus I(R)
+I(R), I(S)
+\beta
+\mathfrak{A}, \beta \models \exists x Rx \wedge \exists x Sx
+I(R) \cap I(S) = \emptyset
+\mathfrak{A}, \beta \not \models \exists x (Rx \wedge Sx)

@@ -1,0 +1,13 @@
+X_1,X_2,...,X_n
+0<x<1
+0<\theta<\infty
+f(x;\theta)=\frac{1}{\theta}x^{\frac{1-\theta}{\theta}}
+\mathbb{E}(\ln(x))
+\frac{1}{-n\mathbb{E}[\frac{d^2}{d\theta^2}\ln(f(x;\theta))]} ~~\text{or}~~ \frac{1}{-n\mathbb{E}[\frac{d}{d\theta}\ln(f(x;\theta))]^2}
+\displaystyle \prod_{i=1}^n \frac{1}{\theta}x_i^{\frac{1-\theta}{\theta}}=\exp\{\theta^{-1}\sum\log x_i-\sum\log x_i-n\log\theta\}
+\frac{2}{\theta^3}\sum_{i=1}^n\log x_i+\frac{n}{\theta^2}
+\log x_i
+Y=\log X
+X=e^Y
+f_Y(y)=f_X(e^y)\left| \frac{dx}{dy}\right| =\frac{1}{\theta}(e^y)^\frac{1-\theta}{\theta}\left| e^y\right|
+Y

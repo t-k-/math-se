@@ -1,0 +1,20 @@
+\frac{d}{dx}\displaystyle\int_{0}^{x}F_{1}(x-v)f_{1}(v)\, \mathrm{d}v = \displaystyle\int_{0}^{x}f_{1}(x-v)f_{1}(v)\, \mathrm{d}v 
+\frac{d}{dx}F_{1}(x) = f_{1}(x)
+x
+0
+\chi^2
+\chi^2
+x
+x+h
+h
+F(x+h-v)-F(x-v)=h\cdot f(x-v+\theta(x)h)
+\theta(x)\in(0,1)
+F(x+h-v)f(v)
+[x,x+h]
+x
+0
+0
+F(0)=\int_0^0f(x)\mathrm dx
+\frac{\displaystyle\int_0^{x+h}F(x+h-v)f(v)\, \mathrm dv-\int_0^{x}F(x-v)f(v)\, \mathrm dv}h\\ =\frac1h\left(\int_0^{x}(F(x+h-v)f(v)-F(x-v)f(v))\, \mathrm dv +\int_x^{x+h}F(x+h-v)f(v)\, \mathrm dv\right)
+ \approx\frac1h\left(\int_0^{x}h\cdot f(x-v+\theta(x)h)f(v)\, \mathrm dv +h\cdot F(0)f(x)\right)\\ =\int_0^{x} f(x-v+\theta(x)h)f(v)\, \mathrm dv \approx\int_0^{x} f(x-v)f(v)\, \mathrm dv 
+ \frac{\mathrm d}{\mathrm dx}\int_{f(x)}^{g(x)}h(x,t)\,\mathrm dt=g'(x)h(x,g(x))-f'(x)h(x,f(x))+\int_{f(x)}^{g(x)}\frac{\partial}{\partial x}h(x,t)\,\mathrm dt.

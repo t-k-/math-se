@@ -1,0 +1,10 @@
+X=C([a,b],\mathbb C)
+\|\cdot\|_\infty
+\|\cdot\|_\infty
+\|f-g\|^2_\infty +\|f+g\|^2_\infty = 2(\|f\|^2_\infty+\|g\|^2_\infty)
+\|f\|_\infty=\sup(|f(x)| \text{ where }x\in [a,b])
+f(x)=\begin{cases}x,&x\in [0,1/4],\\1/2-x,&x\in[1/4,1/2],\\0,&x\in[1/2,0]\end{cases}
+g(x)=\begin{cases}1-x,&x\in [3/4,1],\\x-1/2,&x\in[1/4,1/2],\\0,&x\in[0,1/2]\end{cases}
+\sup_{x\in[0,1]}|f(x)| = \max\left(\sup_{x\in[0,1/4]}|f(x)|,\sup_{x\in[1/4,1/2]}|f(x)|,\sup_{x\in[1/2,1]}|f(x)|\right)
+=\max\left(\sup_{x\in[0,1/4]}|x|,\sup_{x\in[1/4,1/2]}|1/2-x|,\sup_{x\in[1/2,1]}0\right)
+=\max\left( 1/4 ,\sup_{x\in[1/4,1/2]}(1/2-x), 0\right)=\max\left( 1/4 , 1/4,  0\right)=\frac 14.

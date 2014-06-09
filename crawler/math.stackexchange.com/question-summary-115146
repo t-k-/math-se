@@ -1,0 +1,26 @@
+\{ a_n \}
+\{ b_n \}
+a_n>0
+b_n>0
+n \geq N
+c_n = b_n - \frac{a_{n+1}b_{n+1}}{a_n}
+1
+\sum\limits_{k = N}^n {{a_k} \leq  \frac{{{a_N}{b_N}}}{r}} 
+2
+\displaystyle\sum a_n
+\displaystyle\sum \dfrac{1}{b_n}
+|r| < 1
+\eqalign{   & {b_N} = {c_N} + \frac{{{a_{N + 1}}}}{{{a_N}}}{b_{N + 1}}  \cr    & {b_N} = {c_N} + \frac{{{a_{N + 1}}}}{{{a_N}}}{c_{N + 1}} + \frac{{{a_{N + 2}}}}{{{a_N}}}{b_{N + 2}}  \cr    & {b_N} = {c_N} + \frac{{{a_{N + 1}}}}{{{a_N}}}{c_{N + 1}} + \frac{{{a_{N + 2}}}}{{{a_N}}}{c_{N + 2}} + \frac{{{a_{N + 3}}}}{{{a_N}}}{b_{N + 3}} \cr} 
+n
+{b_N} = {c_N} + \frac{{{a_{N + 1}}}}{{{a_N}}}{c_{N + 1}} + \frac{{{a_{N + 2}}}}{{{a_N}}}{c_{N + 2}} +  \cdots  + \frac{{{a_{N + n}}}}{{{a_N}}}{c_{N + n}} + \frac{{{a_{N + n + 1}}}}{{{a_N}}}{b_{N + n + 1}}
+\eqalign{   & {b_N} \geqslant r\left( {1 + \frac{{{a_{N + 1}}}}{{{a_N}}} + \frac{{{a_{N + 2}}}}{{{a_N}}} +  \cdots  + \frac{{{a_{N + n}}}}{{{a_N}}}} \right) + \frac{{{a_{N + n + 1}}}}{{{a_N}}}{b_{N + n + 1}}  \cr    & {b_N} > r\left( {1 + \frac{{{a_{N + 1}}}}{{{a_N}}} + \frac{{{a_{N + 2}}}}{{{a_N}}} +  \cdots  + \frac{{{a_{N + n}}}}{{{a_N}}}} \right)  \cr    & \frac{{{a_N}{b_N}}}{r} > {a_N} + {a_{N + 1}} + {a_{N + 2}} +  \cdots  + {a_{N + n}} = \sum\limits_{k = N}^n {{a_k}}  \cr} 
+\begin{align*}b_N &= c_N + \frac{a_{N+1}b_{N+1}}{a_N}\\ &=c_N+\frac{a_{N+1}}{a_N}\left(c_{N+1}+\frac{a_{N+2}b_{N+2}}{a_{N+1}}\right)\\ &=c_N+\frac{a_{N+1}}{a_N}\cdot c_{N+1}+\frac{a_{N+2}}{a_N}\cdot b_{N+2}\\ &=c_N+\frac{a_{N+1}}{a_N}\cdot c_{N+1}+\frac{a_{N+2}}{a_N}\cdot c_{N+2}+\frac{a_{N+3}}{a_N}\cdot b_{N+3}\\ &\ge r\left(1+\frac{a_{N+1}}{a_N}+\frac{a_{N+2}}{a_N}\right)+\frac{a_{N+3}}{a_N}\cdot b_{N+3}\tag{why?}\\ &=\frac{r}{a_N}(a_N+a_{N+1}+a_{N+2})+\frac{a_{N+3}}{a_N}\cdot b_{N+3}\\ &>\frac{r}{a_N}(a_N+a_{N+1}+a_{N+2})\;.\tag{why?} \end{align*}
+\sum a_n
+c_n
+a_n
+a_{n+1}
+\{c_n\}
+\forall n \geq N,\ c_n > 0.
+a_n \over a_{n+1}
+b_n
+b_{n+1}

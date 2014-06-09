@@ -1,0 +1,9 @@
+(E,\mathcal{M},\mu)
+0 < \mu(E) < \infty
+f \in L^\infty(E)
+\|f\|_\infty > 0
+ \lim_{n\to\infty} \|f||_n = \lim_{n\to\infty} \frac{\|f\|_{n+1}^{n+1}}{\|f\|_n^n} = \|f\|_\infty 
+\lim_{n\to\infty} \|f||_n =  \|f\|_\infty
+\|f\|_n^n=\int_E|f|^n\leq\left(\int_E|f|^{n\frac{n+1}{n}}\right)^\frac{n}{n+1}\left(\int_E1\right)^\frac{1}{n+1}=\|f\|_{n+1}^n\mu(E)^\frac{1}{n+1}\Rightarrow \frac{\|f\|_{n+1}^{n+1}}{\|f\|_n^n}\geq \|f\|_{n+1}\mu(E)^{-\frac{1}{n+1}},
+\|f\|_{n+1}^{n+1}=\int_E|f|^{n+1}\leq\|f\|_{\infty}\int_E|f|^n=\|f\|_{\infty}\|f\|_n^n\Rightarrow \frac{\|f\|_{n+1}^{n+1}}{\|f\|_n^n}\leq \|f\|_{\infty}.
+n\to\infty

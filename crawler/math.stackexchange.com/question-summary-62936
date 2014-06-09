@@ -1,0 +1,24 @@
+2D
+3D
+3D
+2D
+2D
+3D
+3\times3
+3D
+2D
+4
+3
+4
+4
+[x_n,y_n]_{n=1}^4
+4
+[u_n,v_n]_{n=1}^4
+3\times3
+3D
+ [x,y]\mapsto[x,y,1] 
+ [x,y,z]\mapsto\left[\frac{x}{z},\frac{y}{z}\right] 
+ M:\left[\begin{array}{cc}x&y\end{array}\right]\mapsto\left[\begin{array}{ccc}x&y&1\end{array}\right]M=\left[\begin{array}{ccc}u&v&w\end{array}\right]\mapsto\left[\begin{array}{cc}\frac{u}{w}&\frac{v}{w}\end{array}\right] 
+ \left[\begin{array}{ccc}d_1&d_2&d_3\end{array}\right]=\left[\begin{array}{ccc}x_4&y_4&1\end{array}\right]\left[\begin{array}{ccc}x_1&y_1&1\\x_2&y_2&1\\x_3&y_3&1\end{array}\right]^{-1} 
+ M_{[x\;y]}=\left[\begin{array}{ccc}d_1x_1&d_1y_1&d_1\\d_2x_2&d_2y_2&d_2\\d_3x_3&d_3y_3&d_3\end{array}\right] 
+ M_{[x\;y]}^{-1}M_{[u\;v]}:\left[\begin{array}{cc}x_n&y_n\end{array}\right]\mapsto\left[\begin{array}{cc}u_n&v_n\end{array}\right] 

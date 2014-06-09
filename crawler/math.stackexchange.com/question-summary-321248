@@ -1,0 +1,19 @@
+\int_{-\infty}^{\infty} \frac{\cos x + x \sin x}{1+x^2} dx
+0\leq t \leq \pi
+\int_{R e^{it}} \frac{e^{iz}}{z-i} dz
+ f(z) = \frac{e^{iz}}{z-i} = \frac{(z+i)e^{iz}}{(z+i)(z-i)} = \frac{(z+i)e^{iz}}{z^2+1}. 
+z=x
+ f(x) = \frac{(x+i)(\cos x + i \sin x)}{x^2+1} = \frac{x\cos x - \sin x + i(\cos x + x\sin x)}{x^2+1}. 
+\Gamma
+[-R,R]
+C : z=Re^{it}
+0 < t < \pi
+R > 1
+ \int_{\Gamma} f(z)\,dz = \int_{[-R,R]} f(z)\,dz + \int_C f(z)\,dz = 2\pi i \operatorname{Res}(f;z=i) 
+z=i
+f
+\Gamma
+R\to\infty
+C
+0
+ \int_{-\infty}^\infty \frac{x\cos x - \sin x}{x^2+1}\,dx + i \int_{-\infty}^\infty \frac{x\sin x + \cos x}{x^2+1}\,dx = 2\pi i \operatorname{Res}(f;z=i). 

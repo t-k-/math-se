@@ -1,0 +1,39 @@
+u,x,y\in \mathbb{R}^n
+i\in \mathbb{C}
+\langle u,x\rangle =u_1x_1+\cdots+u_nx_n
+\large \lvert e^{i \langle u,x \rangle}-e^{i \langle u,y \rangle}\rvert < \lvert u \rvert \cdot \lvert x-y\rvert
+h(t)=\exp(\mathrm i\langle u,(1-t)x+ty\rangle)
+h(0)=\mathrm e^{\mathrm i\langle u,x\rangle}
+h(1)=\mathrm e^{\mathrm i\langle u,y\rangle}
+t
+[0,1]
+|h(t)|=1
+h'(t)=\mathrm i\cdot\langle u,y-x\rangle\cdot h(t)
+|h'(t)|=|\langle u,y-x\rangle|
+t
+[0,1]
+ {{\rm d}{\rm e}^{{\rm i}\mu\left\langle u, x - y\right\rangle} \over {\rm d}\mu} = {\rm i}\left\langle u, x - y\right\rangle {\rm e}^{{\rm i}\mu\left\langle u, x - y\right\rangle} 
+ {\rm e}^{{\rm i}\mu\left\langle u, x - y\right\rangle} - 1 = {\rm i}\left\langle u, x - y\right\rangle \int_{0}^{1}{\rm e}^{{\rm i}\mu'\left\langle u, x - y\right\rangle}\,{\rm d}\mu' 
+ {\rm e}^{{\rm i}\mu\left\langle u, x\right\rangle} - {\rm e}^{{\rm i}\mu\left\langle u,y\right\rangle} = {\rm i}\left\langle u, x - y\right\rangle {\rm e}^{{\rm i}\mu\left\langle u,y\right\rangle} \int_{0}^{1}{\rm e}^{{\rm i}\mu'\left\langle u, x - y\right\rangle}\,{\rm d}\mu' 
+ \color{#ff0000}{\large% \left\vert{\rm e}^{{\rm i}\mu\left\langle u, x\right\rangle} - {\rm e}^{{\rm i}\mu\left\langle u,y\right\rangle}\right\vert} = \left\vert\left\langle u, x - y\right\rangle\right\vert \left\vert \int_{0}^{1}{\rm e}^{{\rm i}\mu'\left\langle u, x - y\right\rangle}\,{\rm d}\mu' \right\vert \color{#ff0000}{\large% \leq \left\vert u\right\vert\left\vert x - y\right\vert} 
+\left|{d\over dt}e^{it}\right|=1
+t
+\left|e^{i\langle u,x\rangle}-e^{i\langle v,x\rangle}\right|\leq \left|\langle u,x\rangle-\langle u,y\rangle\right|\leq|u|\ |x-y|\ .
+\gamma:[0,1]\to\mathbb{C}
+\gamma(t) = (1-t)i\langle u,y\rangle + ti\langle u,x\rangle
+\left|e^{i\langle u,x\rangle}-e^{i\langle u,y\rangle}\right| = \left|\int_\gamma e^{z}dz\right|,
+\left|\int_\gamma e^{z}dz\right| = \left|\int_0^1 e^{i((1-t)\langle u,y\rangle + t\langle u,x\rangle)}i\langle u,x-y\rangle dt\right| \leq \int_0^1 |\langle u,x-y\rangle|dt =\\ = |\langle u,x-y\rangle| \leq \|u\|\|x-y\|.
+x = y
+\vert e^{i\langle u, y \rangle} - e^{i\langle u, x \rangle} \vert \le \vert u \vert \vert y - x \vert. \tag{0}
+e^{i\langle u, x \rangle} = \cos \langle u, x \rangle + i \sin \langle u, x \rangle \tag{1}
+\nabla e^{i\langle u, x \rangle} = \nabla (\cos \langle u, x \rangle + i \sin \langle u, x \rangle) = (-\sin  \langle u, x \rangle + i\cos  \langle u, x \rangle)u, \tag{2}
+\gamma:[0, 1] \to \Bbb R^n
+\gamma(s) = (1 - s)x + sy
+\gamma(0) = x
+\gamma(1) = y
+\gamma'(s) = y - x
+s \in [0, 1]
+e^{i\langle u, y \rangle} - e^{i\langle u, x \rangle} = \int_0^1 \nabla e^{i\langle u, \gamma(s) \rangle} \cdot \gamma'(s)ds = \int_0^1 \nabla e^{i\langle u, \gamma(s) \rangle} \cdot (y - x)ds, \tag{3}
+\vert e^{i\langle u, y \rangle} - e^{i\langle u, x \rangle} \vert = \vert \int_0^1 \nabla e^{i\langle u, \gamma(s) \rangle} \cdot (y - x)ds \vert \le \vert y - x \vert \, \vert \int_0^1 \nabla e^{i\langle u, \gamma(s) \rangle}ds \vert
+\le \vert y - x \vert \,  \int_0^1 \vert\nabla e^{i\langle u, \gamma(s) \rangle}\vert ds  \le \vert u \vert \vert y - x \vert, \tag{4}
+\vert \nabla e^{i\langle u, x \rangle} \vert = \vert (-\sin  \langle u, x \rangle + i\cos  \langle u, x \rangle)u \vert = \vert u \vert. \tag{5}

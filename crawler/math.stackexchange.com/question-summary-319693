@@ -1,0 +1,14 @@
+\large \frac{\sum\limits_{p=1}^{N-1} \frac{p(2(N-1)-1-p)!}{(N-1)!(N-1-p)!}\frac{(\beta)^{-p-1}-(\alpha)^{-p-1}}{(\beta)^{-1}-(\alpha)^{-1}}}{\sum\limits_{p=1}^N\frac{p(2N-1-p)!}{N!(N-p)!}\frac{(\beta)^{-p-1}-(\alpha)^{-p-1}}{(\beta)^{-1}-(\alpha)^{-1}}}
+\rightarrow \infty
+\alpha \geq 0.5
+\beta \geq 0.5
+\alpha(1-\alpha)
+\alpha < 0.5
+\beta > \alpha 
+\beta(1-\beta)
+\beta < 0.5
+\alpha>\beta
+0\le\alpha\ne\beta\le1
+ \begin{align} \frac{p(2N-1-p)!}{N!(N-p)!} &=\frac{p}{N}\binom{2N-1-p}{N-p}\\ &=(-1)^{N-p}\frac{-p}{-N}\binom{-N}{N-p}\\ &=(-1)^{N-p}\left(1+\frac{N-p}{-N}\right)\binom{-N}{N-p}\\ &=(-1)^{N-p}\left(\binom{-N}{N-p}+\binom{-1-N}{N-1-p}\right)\tag{1} \end{align} 
+ \begin{align} &\sum_{p=1}^N\frac{p(2N-1-p)!}{N!(N-p)!}x^{-p-1}\\ &=\sum_{p=1}^N(-1)^{N-p}\left(\binom{-N}{N-p}+\binom{-1-N}{N-1-p}\right)x^{-p-1}\\ &=x^{-1-N}\sum_{p=1}^N(-1)^{N-p}\binom{-N}{N-p}x^{N-p}\\ &-x^{-N}\sum_{p=1}^N(-1)^{N-1-p}\binom{-1-N}{N-1-p}x^{N-1-p}\\ &=x^{-1-N}\sum_{p=0}^{N-1}(-1)^p\binom{-N}{p}x^p\\ &-x^{-N}\sum_{p=0}^{N-2}(-1)^p\binom{-1-N}{p}x^p\\ &\sim x^{-1-N}(1-x)^{-N}-x^{-N}(1-x)^{-1-N}\\ &=\frac{1-2x}{x^{N+1}(1-x)^{N+1}}\tag{2} \end{align} 
+ \begin{align} &\frac{\displaystyle\sum_{p=1}^{N-1}\frac{p(2(N-1)-1-p)!}{(N-1)!(N-1-p)!}\frac{\beta^{-p-1}-\alpha^{-p-1}}{\beta^{-1}-\alpha^{-1}}} {\displaystyle\sum_{p=1}^N\frac{p(2N-1-p)!}{N!(N-p)!}\frac{\beta^{-p-1}-\alpha^{-p-1}}{\beta^{-1}-\alpha^{-1}}}\\[9pt] &\sim\frac{\displaystyle\frac{1-2\beta}{\beta^N(1-\beta)^N}-\frac{1-2\alpha}{\alpha^N(1-\alpha)^N}} {\displaystyle\frac{1-2\beta}{\beta^{N+1}(1-\beta)^{N+1}}-\frac{1-2\alpha}{\alpha^{N+1}(1-\alpha)^{N+1}}}\\[9pt] &\stackrel{N\to\infty}\longrightarrow\min(\alpha(1-\alpha),\beta(1-\beta))\tag{3} \end{align} 

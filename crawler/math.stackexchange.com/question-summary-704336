@@ -1,0 +1,38 @@
+n+k \geq 1
+n
+k
+p_{n}(x)
+ p(x) = \displaystyle \sum_{i=0}^{n} \frac{(-1)^{i}}{n+k+i} \frac{(m+n+i)!}{i!(n-i)!(m+i)!} x^{m+i} . 
+\text{(1)}
+\text{(2)}
+m \geq 1
+m, n \geq 0
+n + k \geq 1
+\text{(3)}
+\text{(2)}
+\text{(1)}
+q(x)
+ q(x) = \frac{(n+k-1)!}{(2n+k)!} \sum_{j=n+1}^{2n+k} \binom{2n+k}{j} \frac{d^{n}}{dx^{n}} (1-x)^{j} x^{2n+m-j}. 
+(1-x) \mid \frac{d^{i}}{dx^{i}} (1-x)^{j}
+i \leq n < j
+(1-x) \mid q(x)
+q(1) = 0
+ p(1) = \frac{(n+k-1)!}{(2n+k)!} \prod_{j=0}^{n-1} (m-k-j) \underset{m \geq k}{=} \frac{(n+k-1)!(m-k)!}{(2n+k)!(m-k-n)!}. 
+n > m-k
+p(1) = 0
+ 1 \leq k \leq m \leq n
+n > m - k
+\displaystyle S_{n,m,k}=\sum_{i=0}^n\dfrac{(-1)^i}{n+k+i}\cdot\dfrac{(m+n+i)!}{i!(n-i)!(m+i)!}=\sum_{i=0}^n\dfrac{(-1)^i(m+n+i)...(n+k+i+1). (n+k+i-1)!}{i!(n-i)!(m+i)...(k+i+1).(k+i)!}
+\displaystyle\quad =\sum_{i=0}^n\dfrac{(m+n+i)^{\underline{m-k}}}{(m+i)^{\underline{m-k}}}\cdot \dfrac{(-1)^i{n\choose i}{n+k+i-1\choose n-1}}{n}
+(x)^{\underline{n}}=x(x-1)...(x-n+1)
+\Delta\left[\dfrac{(m+n+i)^{\underline{m-k}}}{(m+i)^{\underline{m-k}}}\right]=\dfrac{(n+k+i+2)...(m+n+i+1)}{(k+i+2)...(m+i+1)}-\dfrac{(n+k+i+1)...(m+n+i)}{(k+i+1)...(m+i)}
+\quad =n(k-m)\cdot\dfrac{(m+n+i)^{\underline{m-k-1}}}{(m+i+1)^{\underline{m-k+1}}}
+\Delta\left[(-1)^{i-1}.{n-1\choose i-1}{n+k+i-1\choose n}\right]=\dfrac{n+k}{n}(-1)^i.{n\choose i} {n+k+i-1\choose n-1}
+\displaystyle S_{n,m,k}=\dfrac{1}{n+k}\sum_{i=0}^n \dfrac{(m+n+i)^{\underline{m-k}}}{(m+i)^{\underline{m-k}}}\Delta\left[(-1)^{i-1}.{n-1\choose i-1}{n+k+i-1\choose n}\right]
+\displaystyle = \dfrac{1}{n+k}\left.\left[\dfrac{(m+n+i)^{\underline{m-k}}}{(m+i)^{\underline{m-k}}}\cdot (-1)^{i-1}.{n-1\choose i-1}{n+k+i-1\choose n}\right]\right|_{i=0}^{n+1}
+\quad +\dfrac{n(m-k)}{n+k}\sum_{i=0}^n (-1)^{i}.{n-1\choose i}{n+k+i\choose n} \cdot\dfrac{(m+n+i)^{\underline{m-k-1}}}{(m+i+1)^{\underline{m-k+1}}}
+\displaystyle =\dfrac{(m-k)}{n+k}\sum_{i=0}^{n-1} \dfrac{(-1)^i(m+n+i)!}{(n+k+i+1) i!(n-1-i)!(m+i+1)!}
+\Rightarrow S_{n,m,k}=\dfrac{m-k}{n+k}S_{n-1,m+1,k+2}=\dfrac{m-k}{n+k}\cdot\dfrac{m-k-1}{n+k+1}S_{n-2,m+2,k+4}=...=
+=\dfrac{(m-k)(m-k-1)...(m-k-n+1)}{(n+k)(n+k+1)...(2n+k-1)}S_{0,m+n,k+2n}
+S_{0,m+n,k+2n}=\dfrac{(-1)^0 (m+n+0+0)!}{(0+k+2n+0) 0!(0-0)!(m+n+0)!}=\dfrac{1}{2n+k}
+\boxed{\displaystyle\sum_{i=0}^n\dfrac{(-1)^i}{n+k+i}\cdot\dfrac{(m+n+i)!}{i!(n-i)!(m+i)!}=\dfrac{(m-k)^{\underline{n}}}{(n+k)_{n+1}}}

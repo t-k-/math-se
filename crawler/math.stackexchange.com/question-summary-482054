@@ -1,0 +1,23 @@
+a_n
+a \in \mathbb{R}
+t_{k,n}
+1\le k \le n
+(I) \quad \forall k \lim_{n \to \infty}t_{k,n} = 0
+(II) \quad \lim_{n \to \infty} \sum_{k=1}^n t_{k,n} = 1
+(III) \quad \exists M : \forall n\ \ \sum_{k=1}^n |t_{k,n}| \le M
+\lim_{n \to \infty}s_n =a
+s_n \equiv \sum_{k=1}^n t_{k,n} \cdot a_k.
+N_1
+n \ge N_1 \implies |a_n - a| < \varepsilon
+|s_n -a| = \left| \sum_{k=1}^{n} t_{k,n} \cdot a_k -a \right| = \left| \sum_{k=1}^{N_1 -1} t_{k,n} \cdot a_k + \sum_{k=N_1}^{n} t_{k,n} \cdot a_k -a \right| \le 
+\le \left| \sum_{k=1}^{N_1 -1} t_{k,n} \cdot a_k \right| + \left| \sum_{k=N_1}^{n} t_{k,n} \cdot a_k  -a\right|.
+(I)
+\left| \sum_{k=N_1}^{n} t_{k,n} \cdot (a_k -a) + a\left( \sum_{k=N_1}^{n} t_{k,n} -1\right) \right| \le \left| \sum_{k=N_1}^{n} t_{k,n} \cdot (a_k -a) \right| + \left| a\left( \sum_{k=N_1}^{n} t_{k,n} -1 \right) \right| \le
+\le  M \varepsilon + |a|\left|  \sum_{k=1}^{n} t_{k,n} -1  - \sum_{k=1}^{N_1 -1}t_{k,n} \right| \le M \varepsilon + |a|\left|  \sum_{k=1}^{n} t_{k,n} -1 \right| + |a| \left|\sum_{k=1}^{N_1 -1}t_{k,n} \right| .
+(III)
+|a| \varepsilon
+(II)
+(I)
+\varepsilon
+N_2
+n>N\equiv \max \{ N_1, N_2\}

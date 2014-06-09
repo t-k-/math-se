@@ -1,0 +1,34 @@
+\sim N(0,1)
+f
+E[|f'(Z)|] < \infty
+f'
+E[Zf(Z)] = E[f'(Z)]
+E[Zf(Z)] = \frac{1}{\sqrt{2\pi}} \left[ -f(z) \cdot \exp \left\{ \frac{-z^2}{2} \right\} \right] \Bigg|_{-\infty}^{\infty} + E[f'(Z)]
+E\left[ \lvert f'(z) \rvert \right] < \infty
+\frac{1}{\sqrt{2\pi}} \left[ -f(z) \cdot \exp \left\{ \frac{-z^2}{2} \right\} \right] \Bigg|_{-\infty}^{\infty} = 0,
+ \lim_{z \to \infty} \bigg\{ f(-z) \exp\left(-z^2 / 2\right) - f(z) \exp\left(-z^2 / 2\right) \bigg\} = \lim_{z \to \infty} \bigg\{ \left( f(-z) - f(z) \right) \exp\left(-z^2 / 2\right) \bigg\} = 0. 
+f
+f(z) - f(-z) = \int_{-z}^z f'(x) dx.
+ \begin{align} \bigg\lvert \frac{1}{\sqrt{2 \pi}} \left( f(-z) - f(z) \right) \exp\left(-z^2 / 2\right) \bigg\rvert &= \bigg\lvert \frac{1}{\sqrt{2 \pi}} \exp\left(-z^2 / 2\right) \int_{-z}^z f'(x) dx \bigg\rvert \\ &= \bigg\lvert \int_{-z}^z \frac{1}{\sqrt{2 \pi}} \exp\left(-z^2 / 2\right) f'(x) dx \bigg\rvert \\ &= \bigg\lvert \int_{-z}^z f'(x) \, \phi(z) \, dx \bigg\rvert \\ &\le \int_{-z}^z \big\lvert f'(x)  \, \phi(z) \big\rvert \, dx \\ &= \int_{-z}^z \big\lvert f'(x) \big\rvert \, \phi(z) \, dx \\ &= \int_{-z}^z \big\lvert f'(x) \big\rvert \, \phi(x) \;\times\; \frac{\phi(z)}{\phi(x)} \, dx \\ &\le \int_{-z}^z \big\lvert f'(x) \big\rvert \, \phi(x) \;\times\; \frac{\phi(z)}{\phi(0)} \, dx \\ &= \frac{\phi(z)}{\phi(0)} \int_{-z}^z \big\lvert f'(x) \big\rvert \, \phi(x) \, dx. \end{align} 
+\phi(z) / \phi(0)
+E\Big[\big\lvert f'(x) \big\rvert\Big]
+Z\sim \mathcal{N}(0,1)
+f
+E[|f'(Z)|]<\infty
+ \begin{align} E[Zf(Z)]&=\int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}}zf(z)\exp\left(-\frac{z^2}{2}\right)\,\mathrm dz=\int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}}zf(z)\exp\left(-\frac{z^2}{2}\right)\,\mathrm dz-f(0)E[Z]\\ &=\int_{-\infty}^\infty\frac{1}{\sqrt{2\pi}}z\left[f(z)-f(0)\right]\exp\left(-\frac{z^2}{2}\right)\,\mathrm dz\\ &=\int_{-\infty}^\infty\frac{1}{\sqrt{2\pi}}z\left[\int_0^zf'(u)\,\mathrm du\right]\exp\left(-\frac{z^2}{2}\right)\,\mathrm dz. \end{align} 
+ \begin{align} E[f'(Z)]=&\int_{-\infty}^\infty f'(z)\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{z^2}{2}\right)\,\mathrm dz\\ =&\frac{1}{\sqrt{2\pi}}\int_{-\infty}^0f'(z)\left[\int_{-\infty}^z-u\exp\left(-\frac{u^2}{2}\right)\mathrm du\right]\,\mathrm dz\\ +&\frac{1}{\sqrt{2\pi}}\int_0^\infty f'(z)\left[\int_z^\infty u\exp\left(-\frac{u^2}{2}\right)\mathrm du\right]\,\mathrm dz. \end{align} 
+ \int_0^\infty f'(z)\left[\int_z^\infty u\exp\left(-\frac{u^2}{2}\right)\mathrm du\right]\,\mathrm dz=\int_0^\infty\int_z^\infty f'(z)u\exp\left(-\frac{u^2}{2}\right)\mathrm du\,\mathrm dz\\ =\int_0^\infty \int_0^u f'(z)u\exp\left(-\frac{u^2}{2}\right)\mathrm dz\,\mathrm du 
+ \begin{align} &\int_{-\infty}^0f'(z)\left[\int_{-\infty}^z-u\exp\left(-\frac{u^2}{2}\right)\mathrm du\right]\,\mathrm dz=\int_{-\infty}^0\int_{u}^0f'(z)(-u)\exp\left(-\frac{u^2}{2}\right)\mathrm dz\,\mathrm du\\ &=\int_{-\infty}^0\int_{0}^u f'(z)u\exp\left(-\frac{u^2}{2}\right)\mathrm dz\,\mathrm du \end{align} 
+ E[f'(Z)]=\int_{-\infty}^\infty\frac{1}{\sqrt{2\pi}}u\left[\int_{0}^u f'(z)\,\mathrm dz\right]\exp\left(-\frac{u^2}{2}\right)\,\mathrm du=E[Zf(Z)] 
+f
+\mathbb{P}
+f_n
+[-n,n]
+|f_n(x)| < M \cdot (2n)
+x \in [-n,n]
+M \ge 0
+f_n
+f_n \le f_{n+1} \uparrow f
+\mathbb{E}[f'(x)] < \infty
+f_n(x)= \left\{\begin{array}{lr} f(x): x \in [-n,n] \\ 0: \text{otherwise}\end{array}\right..
+\bigg\lvert \frac{1}{\sqrt{2 \pi}} \exp\left(-z^2 / 2\right) \int_{-z}^z f'(x) dx \bigg\rvert,

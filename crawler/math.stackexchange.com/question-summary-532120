@@ -1,0 +1,23 @@
+|g(z+h)-g(z)| \rightarrow 0
+h \rightarrow 0
+h \in \mathbb{C}
+\operatorname{Im} w \geqslant 0
+\left\lvert e^{-2\pi iw(x-t)}\right\rvert = e^{2\pi(x-t) \operatorname{Im}w}\leqslant 1,
+\int_{-\infty}^T \left\lvert f(x)\right\rvert \cdot \left\lvert e^{-2\pi i (z+h)(x-t)}- e^{-2\pi i z(x-t)} \right\rvert\,dx \leqslant 2\int_{-\infty}^T \lvert f(x)\rvert\,dx.\tag{1}
+z
+\operatorname{Im}z \geqslant 0
+\varepsilon > 0
+T < t
+(1)
+\varepsilon/2
+z+h
+\begin{align} \lvert g(z+h) - g(z)\rvert &= \left\lvert\int_{-\infty}^t f(x) e^{-2\pi i z(x-t)}\left(e^{-2\pi i h(x-t)}-1 \right)\,dx\right\rvert\\ &\leqslant \int_{-\infty}^T \lvert f(x)\rvert \cdot \lvert e^{-2\pi i z(x-t)}\rvert\cdot \lvert e^{-2\pi i h(x-t)}-1\rvert\,dx\\ &\qquad + \int_T^t \lvert f(x)\rvert \cdot \lvert e^{-2\pi i z(x-t)}\rvert\cdot \lvert e^{-2\pi i h(x-t)}-1\rvert\,dx\\ &\leqslant 2\int_{-\infty}^T \lvert f(x)\rvert\,dx + A\cdot\int_T^t \lvert e^{-2\pi i h(x-t)}-1\rvert\,dx\\ &\leqslant \varepsilon/2 + A(t-T)\cdot \max_{T\leqslant x \leqslant t} \left\lvert e^{-2\pi i h(x-t)}-1\right\rvert\\ &\leqslant \varepsilon/2 + A(t-T)\cdot \left(e^{2\pi \lvert h\rvert(t-T)}-1\right). \end{align}
+\lvert h\rvert
+0 \leqslant r \leqslant 1
+e^r - 1 \leqslant 2r
+\lvert h\rvert \leqslant \frac{\varepsilon}{1 + \varepsilon + 2A(2\pi(t-T)^2)}
+A(t-T)\left(e^{2\pi\lvert h\rvert(t-T)}-1\right) \leqslant 2A\lvert h\rvert < \varepsilon/2.
+g
+z
+z
+g

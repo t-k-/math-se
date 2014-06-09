@@ -1,0 +1,25 @@
+f:\mathbb{R}^2\to\mathbb{R}
+f(x,y)=\left\{\begin{matrix} \frac{x^2y}{x^2+y^2}&\text{if }(x,y)\neq(0,0) \\   0&\text{if }x=y=0  \end{matrix}\right.
+\varepsilon>0
+g:(-\varepsilon,\varepsilon)\to\mathbb{R}^2
+0
+g(0)=(0,0)
+\lim_{t\to 0}\frac{f\left(g(t)\right)}{t}
+g(t)=(g_{1}(t),g_{2}(t))
+g_{i}'(0)\neq0
+i=1,2
+\lim_{t\to0}\frac{f(g(t))}{t}=\lim_{t\to0}\frac{f(g_{1}(t),g_{2}(t))}{t}=\lim_{t\to0}\frac{\frac{g_{1}^{2}(t)g_{2}(t)}{g_{1}^{2}(t)+g_{2}^{2}(t)}}{t}=\lim_{t\to0}\frac{\big(\frac{g_{1}(t)}{t}\big)^{2}\frac{g_{2}(t)}{t}}{\big(\frac{g_{1}(t)}{t}\big)^{2}+\big(\frac{g_{2}(t)}{t}\big)^{2}}=\frac{(g'_{1}(0))^{2}g'_{2}(0)}{(g'_{1}(0))^{2}+(g'_{2}(0))^{2}}
+g'_{1}(0)=0=g'_{2}(0)
+|g_{1}(t)g_{2}(t)|=\sqrt{|g^{2}_{1}(t)||g^{2}_{2}(t)|}\le\frac{|g_{1}(t)|^{2}+|g_{2}(t)|^{2}}{2}=\frac{|g_{1}^{2}(t)+g_{2}^{2}(t)|}{2}
+g_{i}(t)=0
+i=1,2
+|\frac{g_{1}(t)g_{2}(t)}{g_{1}^{2}(t)+g_{2}^{2}(t)}|\le\frac{1}{2}
+|\frac{\frac{g_{1}^{2}(t)g_{2}(t)}{g_{1}^{2}(t)+g_{2}^{2}(t)}}{t}|\le\frac{|\frac{g_{1}(t)}{t}|}{2}
+0
+g'_{1}(0)=0
+g_{i}(t)=0
+i=1,2
+0
+f(g_{1}(t),g_{2}(t))=f(0,0)=0
+f
+0

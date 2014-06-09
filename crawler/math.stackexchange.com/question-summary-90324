@@ -1,0 +1,9 @@
+\lim \limits_{x\to \infty}\left(\frac{x}{x-1}\right)^{2x+1}
+(2x+1)\cdot(\text{something}) = \frac{\text{something}}{1/(2x+1)}
+\lim_{x\to\infty}\left(1 + \frac{a}{x}\right)^x = e^{a},
+\lim_{x\to\infty}\left(1 - \frac{1}{x}\right)^x = e^{-1},
+\begin{align*} \left(\frac{x}{x-1}\right)^{2x+1} &= \left(\left(\frac{x}{x-1}\right)^x\right)^2\left(\frac{x}{x-1}\right)\\ &= \left(\frac{1}{\left(\frac{x-1}{x}\right)^x}\right)^2\left(\frac{x}{x-1}\right)\\ &= \left(\frac{1}{\left(1 - \frac{1}{x}\right)^x}\right)^2\left(\frac{x}{x-1}\right). \end{align*}
+x \mapsto y+1
+\left(\frac{x}{x-1}\right)^{2x+1} = \left(1+\frac{1}{y}\right)^{2y+3} =\left(\left(1+\frac{1}{y}\right)^y\right)^2\left(1+\frac{1}{y}\right)^{3}
+ \begin{eqnarray} \lim \limits_{x\to \infty}\left(\frac{x}{x-1}\right)^{2x+1}=\lim \limits_{x\to \infty}\left(\frac{x-1+1}{x-1}\right)^{2x+1} =\lim \limits_{x\to \infty}\left(1+\frac{1}{x-1}\right)^{2x+1}\\= \lim \limits_{x\to \infty}\left(1+\frac{1}{x-1}\right)^{(x-1)\cdot\frac{2x+1}{x-1}}  =\lim \limits_{x\to \infty}\left(1+\frac{1}{x-1}\right)^{(x-1)\cdot\frac{2x+1}{x-1}}=e^{\lim \limits_{x\to \infty}\frac{2x+1}{x-1}}=e^2 \end{eqnarray} 
+\lim_{x\to\infty}(\frac{x}{x-1})^{2x+1}=\lim_{x\to\infty}(\frac{x-1+1}{x-1})^{2x+1}=\lim_{x\to\infty}(1+\frac{1}{x-1})^{2x+1}=e^{\lim_{x\to\infty}\frac{2x+1}{x-1}}=e^2

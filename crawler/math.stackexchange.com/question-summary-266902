@@ -1,0 +1,33 @@
+X(t)
+S=\int_{0}^T(X(t))^+dt
+(x)^+=\max\{0,x\}
+S
+S
+T^3
+S=\int_{0}^T|X(t)|dt
+f:\mathbb{R}^+\to\mathbb{R}^+
+\mathbb{P}[g(S-\mathbb{E}S)\geq l]
+g:\mathbb{R}\to \mathbb{R}^+
+ \begin{align} \mathbb{P}[g(S-\mathbb{E}S)\geq l] &= \mathbb{P}[f(g(S-\mathbb{E}S))\geq f(l)]\\ &\leq \frac{\mathbb{E}[f(g(S-\mathbb{E}S))]}{f(l)}\\ &= \frac{\mathbb{E}[f(g(\int_0^T X_t^+-\mathbb{E}X_t^+dt))]}{f(l)}\\ &= \frac{\mathbb{E}[f(g(T\int_0^T X_t^+-\mathbb{E}X_t^+\frac{dt}{T}))]}{f(l)}\\ \end{align} 
+f
+g
+f
+ \begin{align} \mathbb{P}[g(S-\mathbb{E}S)\geq l] &\leq \frac{\mathbb{E}[\int_0^T f(g(T(X_t^+-\mathbb{E}X_t^+)))\frac{dt}{T}]}{f(l)} \end{align} 
+N
+\varphi(m) = \mathbb{E}[f(g(m(N^+-\mathbb{E}N^+)))]
+ \begin{align} \mathbb{P}[g(S-\mathbb{E}S)\geq l] &\leq \frac{\int_0^T \mathbb{E}[f(g(T(X_t^+-\mathbb{E}X_t^+)))]dt}{Tf(l)}\\ &\leq \frac{\int_0^T \varphi(T\sqrt{T})dt}{Tf(l)}\\ &= \frac{\varphi(T^{\frac{3}{2}})}{f(l)}\\ \end{align} 
+g(x)=|x|
+\mathbb{P}[|S-\mathbb{E}S|\geq l]
+f
+ \begin{align} f(l) =e^{\frac{l^2}{4T^3}} \end{align} 
+l=kT^{\frac{3}{2}}
+ \begin{align} \varphi(T^{\frac{3}{2}}) &= \mathbb{E}\left[e^{\frac{(N^+-\mathbb{E}N^+)^2}{4}}\right]\\                          &= 1.12 \\                          &<\infty \\ \end{align} 
+ \begin{align} \mathbb{P}[|S-\mathbb{E}S|\geq l] = O\left(e^{\frac{-l^2}{4T^3}}\right) \end{align} 
+ \begin{align} \mathbb{P}[|S-\mathbb{E}S|\geq kT^{\frac{3}{2}}] = O\left(e^{\frac{-k^2}{4}}\right) \end{align} 
+g(x) = (-x)\mathbf{1}(x<0)
+\mathbb{P}[\mathbb{E}(S)-S\geq l]
+l\geq 0
+f(l)=\frac{l}{T^{\frac{3}{2}}}
+ \begin{align} \varphi(m) &= T^{\frac{-3}{2}}\mathbb{E}[m(\mathbb{E}N^+-N^+)\mathbf{1}(N^+-\mathbb{E}N^+<0)]\\ &= T^{\frac{-3}{2}}m\left(\frac{1}{2 \sqrt{2 \pi }}+\frac{-1+e^{-\frac{1}{4 \pi }}+\frac{1}{2} \text{Erf}\left[\frac{1}{2 \sqrt{\pi }}\right]}{\sqrt{2 \pi }}\right)\\ &= 0.23m T^{\frac{-3}{2}} \end{align} 
+  \begin{align} \mathbb{P}[\mathbb{E}[S]-S\geq l]&\leq \frac{\int_0^T\varphi(t\sqrt{T})dt}{Tf(l)}\\ &= \frac{\varphi(1)\int_0^Tt\sqrt{T}dt}{Tf(l)}\\ &= \frac{0.12T^{\frac{3}{2}}}{l}  \end{align} 
+  \begin{align} \mathbb{P}[\mathbb{E}[S]-S\geq kT^{\frac{3}{2}}]&\leq \frac{0.12}{k} \end{align} 

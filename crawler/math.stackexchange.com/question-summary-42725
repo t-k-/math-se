@@ -1,0 +1,64 @@
+N_1(t), t \geq 0
+N_2(t), t \geq 0
+\lambda_1
+\lambda_2
+S_n^i
+n
+i, i = 1,2
+P[S_n^1 < S_m^2] = \sum_{k=n}^{n+m-1} {n+m-1 \choose k} \left(\frac{\lambda_1}{\lambda_1 + \lambda_2}\right)^k \left(\frac{\lambda_2}{\lambda_1 + \lambda_2}\right)^{n+m-1-k}
+n=m
+ n \rightarrow \infty
+\frac{\lambda_1}{\lambda_2}
+X_k^1
+f_{X_1^1 } (x) = \lambda _1 e^{ - \lambda _1 x} 
+x > 0
+X_k^2
+f_{X_1^2 } (x) = \lambda _2 e^{ - \lambda _2 x} 
+x > 0
+X_k^1
+Y_k = X_k^1 - X_k^2
+Y_k
+\tilde S_n = Y_1 +  \cdots  + Y_n
+Z_n = \frac{{\tilde S_n  - n\mu }}{{\sigma \sqrt n }}
+Z_n
+{\rm N}(0,1)
+\lambda_1 > \lambda_2
+{\rm P}(S_n^1  < S_n^2 )
+1
+n \to \infty
+{\rm P}(S_n^1  < S_n^2 )
+ S_n^1  = X_1^1  + X_2^1  + X_3^1  +  \cdots , 
+ S_n^2  = X_1^2  + X_2^2  + X_3^2  +  \cdots , 
+ {\rm P}(S_n^1  < S_n^2 ) = {\rm P}(Y_1  + \cdots  + Y_n  < 0). 
+ \mu  = {\rm E}(Y_1) =  {\rm E}(X_1^1 ) - {\rm E}(X_1^2 ) = \frac{1}{{\lambda _1 }} - \frac{1}{{\lambda _2 }} 
+ \sigma^2 = {\rm Var}(Y_1) = {\rm Var}(X_1^1 ) + {\rm Var}(X_1^2 ) = \frac{1}{{\lambda _1^2 }} + \frac{1}{{\lambda _2^2 }}. 
+ \frac{\mu }{\sigma } = \frac{{\lambda _2  - \lambda _1 }}{{\lambda _1 \lambda _2 }}\frac{{\lambda _1 \lambda _2 }}{{\sqrt {\lambda _1^2  + \lambda _2^2 } }} = \frac{{\lambda _2  - \lambda _1 }}{{\sqrt {\lambda _1^2  + \lambda _2^2 } }}. 
+ {\rm P}(Y_1  +  \cdots  + Y_n  < 0) = {\rm P}\bigg(\frac{{\tilde S_n  - n\mu }}{{\sigma \sqrt n }} < \frac{{ - n\mu }}{{\sigma \sqrt n }}\bigg) = {\rm P}\bigg(Z_n  < \frac{{\lambda _1  - \lambda _2 }}{{\sqrt {\lambda _1^2  + \lambda _1^2 } }}\sqrt n \bigg). 
+\Phi
+{\rm N}(0,1)
+{\rm P}(S_n^1  < S_n^2 )
+f_{X} (x) = \lambda e^{ - \lambda x} 
+x > 0
+-\ln(U)/\lambda
+U
+(0,1)
+\zeta = \zeta (n,\lambda_1,\lambda_2)
+\hat p = \hat p(n,\lambda_1,\lambda_2)
+{\rm P}(S_n^1  < S_n^2 )
+n=50
+\lambda_1=2
+\lambda_2 = 1
+\zeta = \sqrt{10}
+\hat p = 0.999678
+\Phi(\zeta) \approx 0.999217
+n=100
+\lambda_1=4
+\lambda_2 = 3
+\zeta = 2
+\hat p = 0.978802
+\Phi(\zeta) \approx 0.977250
+\rho = \lambda_1 / \lambda_2
+ {\rm P}(S_n^1  < S_n^2 ) \approx \Phi \bigg(\frac{{\lambda _1  - \lambda _2 }}{{\sqrt {\lambda _1^2  + \lambda _2^2} }}\sqrt n \bigg), 
+ \zeta  = \frac{{\lambda _1  - \lambda _2 }}{{\sqrt {\lambda _1^2  + \lambda _2^2 } }}\sqrt n , 
+ \frac{{\lambda _1  - \lambda _2 }}{{\sqrt {\lambda _1^2  + \lambda _2^2 } }} =  \frac{{\rho - 1}}{{\sqrt {\rho^2  + 1} }}, 
+ {\rm P}(S_n^1  < S_n^2 ) \approx \Phi \bigg(\frac{{\rho  - 1 }}{{\sqrt {\rho^2  + 1} }}\sqrt n \bigg). 

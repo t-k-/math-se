@@ -1,0 +1,29 @@
+f:(a,b) \to \mathbb{R}
+p \in (a,b)
+\displaystyle \lim_{x \to p+}f(x) = l \land \lim_{x \to p-}f(x) = l \implies \lim_{x \to p}f(x) = l
+\displaystyle \lim_{x \to p+}f(x) = l 
+\displaystyle \lim_{x \to p-}f(x) = l
+\epsilon > 0
+\exists \delta_1 > 0 : \forall x \in (a,b)
+0 < x-p < \delta_1, \lvert f(x) - l \rvert < \epsilon
+\exists \delta_2 > 0 : \forall x \in (a,b)
+- \delta_2 < x-p < 0, \lvert f(x) - l \rvert < \epsilon
+\delta = \min \{ \delta_1 , \delta_2 \}
+\forall x \in (a,b)
+0 < \lvert x - p \rvert < \delta, \lvert f(x) - l \rvert < \epsilon
+\delta \leq \delta_1, \delta_2
+\delta
+\varepsilon > 0
+\spadesuit
+\forall \varepsilon > 0.\ \exists \delta > 0.\ \forall x \in (a,b).\ 0 < |x - p| < \delta \implies |f(x) - l| < \varepsilon. \tag{$\spadesuit$}
+\delta = \min\{\delta_1,\delta_2\}
+\delta_1
+\delta_2
+\varepsilon
+|x - p| \leq \delta
+|x - p| \leq \delta_1
+|x - p| \leq \delta_2
+|f(x) - l| < \varepsilon
+\delta
+(\spadesuit)
+\ddot\smile

@@ -1,0 +1,12 @@
+\begin{align}   & \int_{-\infty }^{+\infty }\frac{\cos \alpha x}{( \beta^2+x^2 )( ( \beta +1 )^2+x^2 )\cdots ( ( \beta +n )^2+x^2 )} \, \text{d}x = 2\pi \sum\limits_{k=0}^n ( -1 )^k \frac{( 2\beta -1+k )!}{( 2\beta +n+k )!} \frac{1}{k!( n-k )!}{\text{e}^{-\alpha (\beta +k)}} \\   & n\in \mathbb{N},\ \ \alpha ,\ \beta >0  \end{align}
+\gamma(R)
+-R
++R
+|z|=R
+ \begin{align} &\int_{-\infty }^{+\infty }\frac{\cos(\alpha x)}{(\beta^2+x^2)((\beta+1)^2+x^2 )\cdots((\beta+n)^2+x^2)}\,\mathrm{d}x\\ &=\lim_{R\to\infty}\mathrm{Re}\left(\int_{\gamma(R)}\frac{\exp(i\alpha z)}{(\beta^2+z^2)((\beta+1)^2+z^2 )\cdots((\beta+n)^2+z^2)}\,\mathrm{d}z\right) \end{align} 
+z=i(\beta+k)
+2\pi i
+2\beta
+ \begin{align} &\frac{\exp(-\alpha(\beta+k))}{2i(\beta+k)}\prod_{\substack{j=0\\j\ne k}}^n\frac1{(\beta+j)^2-(\beta+k)^2}\\ &=(-1)^k\frac{\exp(-\alpha(\beta+k))}{2i(\beta+k)}\prod_{\substack{j=0\\j\ne k}}^n\frac1{(2\beta+k+j)|j-k|}\\ &=(-1)^k\frac{\exp(-\alpha(\beta+k))}{ik!(n-k)!}\prod_{j=0}^n\frac1{2\beta+k+j}\\ &=(-1)^k\frac{\exp(-\alpha(\beta+k))}{ik!(n-k)!}\frac{\Gamma(2\beta+k)}{\Gamma(2\beta+k+n+1)}\\ \end{align} 
+ 2\pi\sum_{k=0}^n(-1)^k\frac{\exp(-\alpha(\beta+k))}{k!(n-k)!}\frac{\Gamma(2\beta+k)}{\Gamma(2\beta+k+n+1)} 
+ 2\pi\sum_{k=0}^n(-1)^k\frac{\exp(-\alpha(\beta+k))}{k!(n-k)!}\frac{(2\beta+k-1)!}{(2\beta+k+n)!} 

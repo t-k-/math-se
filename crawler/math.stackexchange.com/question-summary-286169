@@ -1,0 +1,12 @@
+\int_{0}^{\infty} \frac{e^{-x \cosh t}}{\sqrt{(\sinh t)}}dt
+x
+t=0
+\sinh{t} \sim t
+\cosh{t} \sim 1+\frac{t^2}{2}
+t \rightarrow 0
+I(x) = \int_{0}^{\infty} dt \: \frac{e^{-x \cosh t}}{\sqrt{(\sinh t)}} \sim e^{-x} \int_{0}^{\infty} dt \: \frac{e^{-x t^2/2}}{\sqrt{t}} 
+v = x t^2
+dv = 2 \sqrt{x v} dt
+I(x) \sim \frac{1}{2} e^{-x} x^{-1/4} \int_{0}^{\infty} dv \: v^{-3/4} e^{-v/2}  
+I(x) \sim 2^{-3/4} \Gamma \left ( \frac{1}{4} \right ) e^{-x} x^{-1/4} 
+x \rightarrow \infty

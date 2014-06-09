@@ -1,0 +1,20 @@
+-\sum_{n=0}^{\infty} \left(\frac{n^2 \pi \ T}{L^2} a_n(t) + m_La^{''}_n\right)\sin\left(\frac{n \pi x}{L} \right) = F_0 \sin \omega_E t.
+\sin(kx\pi/L)
+x
+0
+L
+\int_0^L \sin\left(\frac{n \pi x}{L} \right) \sin \left(\frac{k \pi x}{L} \right)dx = \begin{cases}\frac{L}{2}& \mbox{if }n=k\\ 0&\mbox{otherwise} \end{cases}
+a_k(t)
+n = k
+n \neq k
+0
+-\sum_{n=0}^{\infty} \left ( \int_0^L { \left(\frac{n^2 \pi \ T}{L^2} a_n(t) + m_La^{''}_n\right)}dx \times \frac L 2 \right ) = \int_0^L {F_0 \sin \omega_E t \sin \left(\frac{k \pi x}{L} \right)}dx
+-\sum_{n=0}^{\infty} \left(\frac{n^2 \pi \ T}{L} a_n(t) + Lm_La^{''}_n \right) \times \frac L 2  = \int_0^L {F_0 \sin \omega_E t \sin \left(\frac{k \pi x}{L} \right)}dx
+-\sum_{n=0}^{\infty} \left( 2n^2 \pi \ T a_n(t) + 2L^2 m_La^{''}_n \right) = \int_0^L {F_0 \sin \omega_E t \sin \left(\frac{k \pi x}{L} \right)}dx
+-\sum_{n=0}^{\infty} \left( 2n^2 \pi \ T a_n(t) + 2L^2 m_La^{''}_n \right) = F_0 \sin \omega_E t \left(- \frac{L}{k \pi}\right) \left(\cos \left(k \pi \right) - 1\right)
+-\sum_{n=0}^\infty\Big(\frac{n^2\pi T}{L^2}a_n(t)+m_L\ddot{a_n}\Big)sin(\frac{n\pi x}{L})=F_o sin(\omega_E t)
+\int_0^L \Big[-\sum_{n=0}^\infty\Big(\frac{n^2\pi T}{L^2}a_n(t)+m_L\ddot{a_n}\Big)sin(\frac{n\pi x}{L})\Big]sin(\frac{k\pi x}{L})=\int_0^LF_o sin(\omega_E t)sin(\frac{k\pi x}{L})
+n \neq k
+n=k
+\frac{L}{2}
+-\Big(\frac{k^2\pi T}{L^2}a_k(t)+m_L\ddot{a_k}\Big)\frac{L}{2}=\int_0^LF_o sin(\omega_E t)sin(\frac{k\pi x}{L})

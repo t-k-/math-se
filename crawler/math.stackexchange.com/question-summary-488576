@@ -1,0 +1,21 @@
+W=(W_1, \ldots ,W_n)
+a=(a_1,\ldots,a_n) \in \mathbb{R}^{n}(n ≥ 1)
+|a|>R , R\in \mathbb{R}^{n}
+\tau_{k}
+f=f_{n,k}
+C^{2}(\mathbb{R}^{n})
+R\leq |x|\leq 2^{k}R
+\Delta f=0
+A_{k}=\{x,R<|x|<2^{k}R\},
+A_{k}=\{x,R<|x|<2^{k}R\},  k=1,2,\ldots
+T_{k}=\inf\{t>0,R<|x|<2^{k}R\}    
+f(x):=\begin{cases} -\log|x| & \text{when } n=2 , \\ |x|^{2-n} & \text{when } n>2. \end{cases}
+ \mathbb{E}^{x}[f(W_{\tau_k})]=f(a) \forall k 
+\mathbb{E}^{a}[f(W_{\tau_{k}})]=f(R)P^{a}|W_{\tau_{k}}|=R]+f(2^{k}R)P^{a}|W_{\tau_{k}}|=2^{k}R]
+f(x)=f(x)1_{R\leq |x|\leq 2^{k}R}
+\mathbb{E}^{a}[f(x)]=\mathbb{E}^{a}[f(x)1_{R\leq |x|\leq 2^{k}R}]=\int_{-\infty}^{\infty}f(x)1_{R\leq |x|\leq 2^{k}R} \, dP=\int_{{R\leq |x|\leq 2^{k}R}}f(x) \, dP= ??  
+\mathbb{E}^a[f(W_{\tau_k})] = f(R) \cdot \mathbb{P}^a[|W_{\tau_k}|=R] + f(2^k \cdot R) \cdot \mathbb{P}^a[|W_{\tau_k}|=2^k \cdot R]
+|W_{\tau_k}| = R \cdot 1_{\{|W_{\tau_k}|=R\}} + 2^k \cdot R \cdot 1_{\{|W_{\tau_k}|=2^k \cdot R\}}
+\tau_k
+\tau_k<\infty
+\begin{align*} \mathbb{E}^a[f(W_{\tau_k})] &= \mathbb{E}^a(f(R) \cdot 1_{\{|W_{\tau_k}|=R\}} +f(2^k \cdot R) \cdot 1_{\{|W_{\tau_k}|=2^k \cdot R\}}) \\ &= f(R) \cdot \mathbb{P}^a[|W_{\tau_k}|=R] + f(2^k \cdot R) \cdot \mathbb{P}^a[|W_{\tau_k}|=2^k \cdot R] \end{align*} 

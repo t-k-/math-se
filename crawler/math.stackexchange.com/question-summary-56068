@@ -1,0 +1,17 @@
+a
+f(z)=\sum_{n=1}^{+\infty} \frac{z^n}{(n!)^a}
+1/a
+\exists A,B\in \mathbb{R}
+|f(z)|\leq A\exp{(B|z|^{1/a})},\forall z\in \mathbb{C}
+f(z)=\sum_{n=0}^\infty c_nz^n\ 
+ \rho=\limsup_{n\to\infty}\frac{\log n}{\log\frac{1}{\sqrt[n]{|c_n|}}}. 
+r \geq 0
+ |f(z)| \leq \sum_n \frac{|z|^n}{(n!)^{a}}, 
+ f(r) := \sum_n \frac{r^n}{(n!)^{a}} \leq A \exp(B r^{1/a}), 
+N := (2r)^{1/a} e
+n \geq N
+\frac{r^n}{(n!)^a} \leq 2^{-n}
+t_1^a + \ldots + t_N^a \leq N(t_1 + \ldots + t_N)^a
+N = e2^{1/a} r^{1/a} \leq e 2^{1/a} \exp(r^{1/a})
+\begin{eqnarray*} f(r)  &=& \sum_{n} \frac{r^n}{(n!)^a}   \\ &=& \sum_{n < N} \left(\frac{(r^{1/a})^n}{n!} \right)^a + \sum_{n \geq N} \frac{r^n}{(n!)^a}  \\ &\leq& N \left( \sum_{n < N} \frac{(r^{1/a})^n}{n!} \right)^a + \sum_{n \geq N} 2^{-n} \\ &\leq& N \left( \sum_{n} \frac{(r^{1/a})^n}{n!} \right)^a + 2 \\ &=& N \exp(r^{1/a})^a + 2 = N \exp(a r^{1/a}) + 2. \end{eqnarray*}
+ f(r) \leq e 2^{1/a} \exp((1+a) r^{1/a})+2. 

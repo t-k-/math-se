@@ -1,0 +1,13 @@
+b_n = \sum^n_{k=1}(k^{-1}) -\sum^n_{k=1}(k^{-2})
+\frac{b_n}{\log(n)} \rightarrow 1
+n \rightarrow \infty
+k>0
+\sum^n_{k=2}(k^{-1}) \leq \log(n) \leq \sum^{n-1}_{k=1}(k^{-1})
+\frac{1}{\sum^{n-1}_{k=1}(k^{-1})} \leq \frac{1}{\log(n)} \leq \frac{1}{\sum^{n}_{k=2}(k^{-1})}
+ \frac{\sum^n_{k=1}(k^{-1}) -\sum^n_{k=1}(k^{-2})}{\sum^{n-1}_{k=1}(k^{-1})} \leq \frac{\sum^n_{k=1}(k^{-1}) -\sum^n_{k=1}(k^{-2})}{\log(n)}  \leq \frac{\sum^n_{k=1}(k^{-1}) -\sum^n_{k=1}(k^{-2})}{\sum^{n}_{k=2}(k^{-1})} 
+n \to \infty
+n \to \infty
+n \to \infty
+\frac{b_n}{\sum\limits_{k=1}^{n-1} \frac{1}{k}}, \frac{b_n}{\sum\limits_{k=2}^n \frac{1}{k}} \to 1
+\frac{b_n}{\sum\limits_{k=1}^{n-1} 1/k} = \frac{ 1 + 1/2 + \dots + 1/(n-1)}{1+1/2 + \dots + 1/(n-1)} + \frac{1/n  - \sum\limits_{k=1}^n 1/k^2}{1 + 1/2 + \dots + 1/(n-1)} = 1 + \frac{1/n - \sum\limits_{k=1}^n 1/k^2}{\sum\limits_{k=1}^{n-1} 1/k}.
+\frac{b_n}{\sum\limits_{k=1}^{n-1} 1/k} \to 1

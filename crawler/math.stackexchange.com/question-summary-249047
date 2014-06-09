@@ -1,0 +1,10 @@
+A
+k(A)=\|A\|\|A^{-1}\|
+A
+ ||Au||_2 
+u=(x,y,z)^{T}
+||u||_2 = 1
+ Au=         \begin{bmatrix}         1 & 0 & 0 \\         0 & 1 & 1 \\         0 & 0 & 1 \\         \end{bmatrix}    \begin{bmatrix}         x \\         y \\         z \\         \end{bmatrix}= \begin{bmatrix}         x \\         y+z \\         z \\         \end{bmatrix} 
+ \implies ||Au||_2 = \sqrt{x^2+(y+z)^2+z^2} = \sqrt{(x^2 + y^2 + z^2) + 2yz + z^2}
+ \sqrt{1 + 2yz + z^2}.
+ ||Au||_2  = \sqrt{1 + 2yz + z^2} \implies ||A||= \max_{||u||_2=1 }~\sqrt{1 + 2yz + z^2}= \frac{1}{2}+\frac{\sqrt{5}}{2} . 

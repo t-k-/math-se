@@ -1,0 +1,17 @@
+ \left(B_t\right)_{t\geq 0}
+ Z_t = \frac{1}{\sqrt{1-t}} \exp \left( \frac{-B^2_t}{2\left( 1-t\right)} \right ) , t \geq 0
+\left(Z_t\right)_{t\geq 0} 
+t \in \left [ 0, 1\right [
+ M = \left(M_t\right)_{t\geq 0}
+ \langle M \rangle_t= V_t,\  \forall{t\geq 0}
+\lambda \in R
+ X^\lambda_t = \exp \left(\lambda M_t  -\frac{\lambda}{2}V_t \right)
+ Z_t =  \exp \left( \frac{-B^2_t}{2\left( 1-t\right)} - \frac{1}{2} \log \left( 1-t\right) \right ) 
+ M_t :=\frac{-B^2_t}{2\left( 1-t\right)} = - \int_0 ^t \frac{B_s}{\left( 1-s\right)}dB_s -\int_0 ^t \frac{-B^2_s}{2\left( 1-s\right)} ds - \int_0 ^t \frac{1}{\left( 1-s\right)}ds .
+ \langle M \rangle_t = \int_0 ^t \frac{B^2_s}{\left( 1-s\right)^2}d\langle B \rangle_s =\int_0 ^t \frac{B^2_s}{\left( 1-s\right)^2}ds
+ \mathbb E \langle M \rangle_t =  \int_0 ^t \frac{ \mathbb E \left[ B^2_s\right ] }{\left( 1-s\right)^2}ds =  \int_0 ^t \frac{ s }{\left( 1-s\right)^2}ds = - \log(1-t) < \infty , \  \forall t \in \left[0,1 \right[ 
+Z_t
+ \frac{B_t^2}{2(1-t)} = \int_0^t\frac{B_s}{1-s}dB_s + \frac{1}{2}\int_0^t\frac{ds}{1-s}+ \frac{1}{2}\int_0^t \frac{B_s^2}{(1-s)^2}ds. 
+M_t = \displaystyle\int_0^t \frac{B_s}{1-s}dB_s
+ \langle M \rangle_t = \int_0^t\frac{B_s^2}{(1-s)^2}ds. 
+ \exp\left\{-\frac{B_t^2}{2(1-t)} - \frac{1}{2}\ln(1-t)\right\} = \exp\left\{-M_t - \frac{1}{2}\langle M\rangle_t\right\} 

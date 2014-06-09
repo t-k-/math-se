@@ -1,0 +1,26 @@
+T:\in \Bbb R^3  \rightarrow \Bbb R^3
+-x_1+x_2+x_3=0
+S=\{x:-x_1+x_2+x_3=0\} \implies S=\gen[(1,1,0),(1,0,1)]
+(1,1,0)
+(1,0,1)
+\vec n=(-1,1,1)
+\vec x=(x,y,z), 
+\vec x
+\vec n
+ Projection _{\, \vec x}\, \vec n = \frac{\vec x · \vec n}{\vec n · \vec n} \vec n 
+\vec x
+ Reflection (\vec x)=\vec x - 2\frac{\vec x · \vec n}{\vec n · \vec n} \vec n
+=(x,y,z)-2\frac{(x,y,z) · (-1,1,1)}{(-1,1,1)·(-1,1,1)}(-1,1,1)=(x,y,z)+(x-y-z) \left( -\frac{2}{3},\frac{2}{3},\frac{2}{3}\right) = \frac{1}{3}(x+2y+2z,2x+y-2z,2x-2y+z) 
+\vec x
+P=A(A^{T}A)^{-1}A^{T}
+A=\begin{bmatrix}1&1\\1&0\\0&1\end{bmatrix}
+P=\begin{bmatrix}\frac{2}{3}&\frac{1}{3}&\frac{1}{3}\\\frac{1}{3}&\frac{2}{3}&-\frac{1}{3}\\\frac{1}{3}&-\frac{1}{3}&\frac{2}{3}\end{bmatrix}
+\{q_1,q_2\}
+P=QQ^{t}
+q_1
+q_2
+R=2P-I=\begin{bmatrix} \frac{1}{3} & \frac{2}{3} & \frac{2}{3}\\ \frac{2}{3} & \frac{1}{3} & -\frac{2}{3} \\ \frac{2}{3} & -\frac{2}{3} & \frac{1}{3} \end{bmatrix}
+------------------------------------------
+\;\;\;\;
+\begin{bmatrix}1 & 1 &-1\\1 & 0 &1\\0 & 1 & 1\end{bmatrix}=\begin{bmatrix}1 & 1 & 1\\1 & 0 & -1\\0 & 1 & -1\end{bmatrix}
+R=\begin{bmatrix}1 & 1 & 1\\1 & 0 & -1\\0 & 1 & -1\end{bmatrix}\begin{bmatrix}1 & 1 &-1\\1 & 0 &1\\0 & 1 & 1\end{bmatrix}^{-1}

@@ -1,0 +1,28 @@
+f(t) = t[u(t)-u(t-1)]+2t[u(t-1) - u(t-2)]
+L\{f(t-t_0)u(t-t_0)\} = e^{-st_0}F(s), F(s) = L\{f(t)\}
+0 \le t \lt  t_0
+t\ge t_0
+{\cal  L}\{f(t-t_0)\,{\cal U}(t-t_0)\} =   e^{-t_0s}F(s).
+{\cal U}(t-t_0)=\cases{0,&  $0 \le t \lt  t_0$ \cr 1,& $t\ge t_0$ } .
+f(t)=t+1
+t_0=1
+F(s)={\cal L}\{ t+1\}= {\cal L}\{ t \}+{\cal L}\{ 1\}  ={1\over s^2}+{1\over s^{\vphantom2}}
+ {\cal L}\bigl\{ t\, {\cal U}(t-1)\bigr\}={\cal L}\bigl\{   \bigl((t+1)-1\bigr)\, {\cal U}(t-1) \bigr\}=e^{-1s}F(s)=e^{- s} \Bigl({\textstyle{1\over s^2}+{1\over s^{\vphantom2} }}\Bigr). 
+  {\cal   L}\{f(t )\,{\cal U}(t-t_0)\} = e^{-t_0s}{\cal L}\bigl\{f(t+t_0) \bigr\}.   
+\eqalign{ t\,{\cal U}(t)-t\,{\cal U}(t-1)+2t\,{\cal U}(t-1) -2t\,{\cal U}(t-2)&= \color{maroon}{t\,{\cal U}(t)} +  \color{darkgreen}{t\,{\cal U}(t-1)} - \color{darkblue}{2t\,{\cal U}(t-2)}\cr  } 
+\tag{1}{\cal L}\bigl\{ \color{maroon}{t\,{\cal U}(t)} +  \color{darkgreen}{t\,{\cal U}(t-1)} - \color{darkblue}{2t\,{\cal U}(t-2)}\bigr\} = {\cal L}\bigl\{ \color{maroon}{t\,{\cal U}(t)}\bigr\} + {\cal L}\bigl\{ \color{darkgreen}{t\,{\cal U}(t-1)}\bigr\} -2{\cal L}\bigl\{ \color{darkblue}{ t\,{\cal U}(t-2)}\bigr\} 
+\tag{2}  \color{maroon}{ {\cal L}\bigl\{ t\, {\cal U}(t ) \bigr\}= {\cal L}(t)= {\textstyle{1\over s^2} } } . 
+\tag{3}\color{darkgreen}{ {\cal L}\bigl\{ t\, {\cal U}(t-1)\bigr\}={\cal L}\bigl\{   \bigl((t+1)-1\bigr)\, {\cal U}(t-1) \bigr\}=e^{-1s}{\cal L}\{t+1\}=e^{- s} \Bigl({\textstyle{1\over s^2}+{1\over s^{\vphantom2} }}\Bigr)}, 
+\tag{4}\color{darkblue}{ {\cal L}\bigl\{  t\, {\cal U}(t-2)\bigr\}= {\cal L}\bigl\{   \bigl((t+2)-2\bigr)\, {\cal U}(t-2) \bigr\}= e^{-2s} {\cal L}\{t+2\}= e^{-2 s} \Bigl({\textstyle{1\over s^2}+{2\over s^{\vphantom2} }}\Bigr)}, 
+u(t) = 1
+t \ge 0
+0
+u(t) - u(t - 1) = 1
+[0, 1]
+u(t - 1) - u(t - 2) = 1
+[1, 2]
+t
+2t
+F(s) = \int_{0}^{1}te^{-st}dt + \int_{1}^22te^{-st}dt
+\int te^{-st}\;dt = \frac{e^{-st}(st + 1)}{s^2}
+F(s) = \frac{e^{-s} - 4e^{-2s}}{s} + \frac{e^{-s} + 1 - 2e^{-2s}}{s^2}

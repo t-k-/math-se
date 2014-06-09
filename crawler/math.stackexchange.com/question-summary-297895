@@ -1,0 +1,28 @@
+\lim_{n\to\infty}\frac{n}{2^n}\sum_{k=1}^{n}\dbinom{n-1}{k-1}\{\sqrt{k^2+2k+2}\}
+\{x\}
+x
+k \ge 1
+m_k
+\to 0
+k \to \infty
+\{\sqrt{k^2+2k+2}\} = \sqrt{(k+1)^2+1)} - (k+1) = \frac{1}{2k}( 1 + m_k )
+M
+|m_k|
+\epsilon > 0
+N_1
+|m_k| < \epsilon
+k > N_1
+n > N_1
+N_1
+\frac{M}{2^{n+1}}\sum_{k=1}^{N_1}\dbinom{n}{k} \to 0
+n \to \infty
+N_2 > N_1
+< \frac{\epsilon}{2}
+n > N_2
+n > N_2
+\epsilon
+\begin{align}  &\frac{n}{2^n}\sum_{k=1}^{n}\dbinom{n-1}{k-1}\{\sqrt{k^2+2k+2}\}\\ =&\frac{n}{2^n}\sum_{k=1}^{n}\dbinom{n-1}{k-1}\frac{1}{2k}( 1 + m_k )\\ =&\frac{1}{2^{n+1}}\sum_{k=1}^{n}\dbinom{n}{k}( 1 + m_k )\\ =&\frac{2^n-1}{2^{n+1}} + \frac{1}{2^{n+1}}\sum_{k=1}^{n}\dbinom{n}{k} m_k \end{align} 
+\begin{align}   \left|\frac{1}{2^{n+1}}\sum_{k=1}^{n}\dbinom{n}{k} m_k\right| &\le \frac{M}{2^{n+1}}\sum_{k=1}^{N_1}\dbinom{n}{k} + \frac{\epsilon}{2^{n+1}}\sum_{k=N_1+1}^{n}\dbinom{n}{k}\\ &\le \frac{M}{2^{n+1}}\sum_{k=1}^{N_1}\dbinom{n}{k} + \frac{\epsilon}{2} \end{align} 
+ \left|\frac{n}{2^n}\sum_{k=1}^{n}\dbinom{n-1}{k-1}\{\sqrt{k^2+2k+2}\} - \frac{1}{2}\right| \le \epsilon + \frac{1}{2^{n+1}} 
+\lim_{n\to\infty} \frac{n}{2^n}\sum_{k=1}^{n}\dbinom{n-1}{k-1}\{\sqrt{k^2+2k+2}\}  = \frac12
+\{\sqrt{k^2+2k+2}\}=\sqrt{k^2+2k+2}-(k+1)=\frac{1}{\sqrt{k^2+2k+2}+(k+1)}=\frac{1}{2k}+O\left(\frac{1}{k(k+1)}\right)

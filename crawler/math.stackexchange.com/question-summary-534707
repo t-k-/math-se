@@ -1,0 +1,45 @@
+ e 
+\lim_{x\rightarrow +\infty}\large{\frac{\sqrt[3]{x^2\sqrt{x^2+1}}+3x}{x}} 
+\lim_{x\rightarrow 0^+} \large{(2-e^{\arcsin^2\sqrt{x}})^{\frac{3}{x}}}
+\lim_{x\rightarrow -\pi}\large{\frac {\sin(4x)}{x^2+\pi x}}
+(c)
+\displaystyle x+\pi=y\implies \sin4x=\sin 4(y-\pi)=\sin(4y-4\pi)=\sin4y
+\displaystyle\lim_{x\rightarrow -\pi}\frac {\sin(4x)}{x^2+\pi x}=\lim_{y\to0}\frac{\sin 4y}{y(y-\pi)}
+\lim_{u\to0}\frac{\sin u}u=1
+(a),
+\lim_{x\rightarrow +\infty}\frac{\sqrt[3]{x^2\sqrt{x^2+1}}+3x}x =\lim_{x\rightarrow +\infty}\frac{\sqrt[3]{\sqrt{x^6+x^4}}+3x}x=\lim_{x\rightarrow +\infty}\frac{(x^6+x^4)^{\frac16}+3x}x 
+\frac1x=h
+=\lim_{h\to0}(1+h^2)^{\frac16}+3=\cdots
+a
+x>0
+\frac{\sqrt[3]{x^2\sqrt{x^2+1}}+3x}{x}=\frac{\sqrt[3]{x^2\sqrt{x^2+1}}}{\sqrt[3]{x^3}}+3=\sqrt[3]{x^{-1}\sqrt{x^2+1}}+3=\sqrt[3]{\sqrt{x^{-2}}\sqrt{x^2+1}}+3=\sqrt[3]{\sqrt{1+x^{-2}}}+3
+\lim_{x\to\infty}\sqrt[3]{\sqrt{1+x^{-2}}}+3=\sqrt[3]{\sqrt{1+0}}+3=4
+L = \lim_{x \to 0}(2 - e^{\arcsin^{2}\sqrt{x}})^{3/x}
+\displaystyle \begin{aligned} \log L &= \log\left\{\lim_{x \to 0}(2 - e^{\arcsin^{2}\sqrt{x}})^{3/x}\right\} \\ &= \lim_{x \to 0}\log\left\{(2 - e^{\arcsin^{2}\sqrt{x}})^{3/x}\right\} \text{ (because of continuity of log) }\\ &= \lim_{x \to 0}\frac{3}{x}\log(2 - e^{\arcsin^{2}\sqrt{x}})\\ &= 3\lim_{x \to 0}\frac{\log(1 + 1 - e^{\arcsin^{2}\sqrt{x}})}{1 - e^{\arcsin^{2}\sqrt{x}}}\cdot\frac{1 - e^{\arcsin^{2}\sqrt{x}}}{x}\\ &= 3\lim_{x \to 0} 1\cdot \frac{1 - e^{\arcsin^{2}\sqrt{x}}}{x}\text{ (see explanation point 1 below) }\\ &= -3 \lim_{x \to 0} \frac{e^{\arcsin^{2}\sqrt{x}} - 1}{x}\\ &= -3\lim_{x \to 0} \frac{e^{\arcsin^{2}\sqrt{x}} - 1}{{\arcsin^{2}\sqrt{x}}}\cdot\frac{{\arcsin^{2}\sqrt{x}}}{x}\\ &= -3\lim_{x \to 0}1\cdot\left(\frac{\arcsin\sqrt{x}}{\sqrt{x}}\right)^{2}\text{ (see explanation point 2 below) }\\ &= -3\cdot 1^{2}\text{ (see explanation point 3 below) }\\ &= -3\end{aligned}
+L
+L = e^{-3}
+\displaystyle \lim_{y \to 0}\frac{\log(1 + y)}{y} = 1
+y = 1 - e^{\arcsin^{2}\sqrt{x}}
+y \to 0
+x \to 0
+1
+\displaystyle \lim_{y \to 0}\frac{e^{y} - 1}{y} = 1
+y = \arcsin^{2}\sqrt{x}
+y \to 0
+x \to 0
+1
+\displaystyle \lim_{y \to 0}\frac{\sin y}{y} = 1,\,\,\lim_{y \to 0}\frac{\arcsin y}{y} = 1
+y = \sqrt{x}
+1
+\lim_{x\to0}\left(2-e^{(\arcsin\sqrt x)^2}\right)^{\frac3x}
+=\left(\lim_{x\to0}\left(1+1-e^{(\arcsin\sqrt x)^2}\right)^{\frac1{1-e^{(\arcsin\sqrt x)^2}}}\right)^{\lim_{x\to0}\frac{3(1-e^{(\arcsin\sqrt x)^2})}x}
+\displaystyle1-e^{(\arcsin\sqrt x)^2}=\frac1n
+x\to0,n\to\infty\implies \lim_{n\to\infty}(1+\frac1n)^n=e
+\lim_{x\to0}\frac{3(1-e^{(\arcsin\sqrt x)^2})}x=-3\lim_{x\to0}\frac{e^{(\arcsin\sqrt x)^2}-1}{(\arcsin\sqrt x)^2}\cdot \lim_{x\to0}\left(\frac{\arcsin\sqrt x}{\sqrt x}\right)^2
+(\arcsin\sqrt x)^2=h
+\arcsin\sqrt x=u
+\lim_{x\to0}\frac{3(1-e^{(\arcsin\sqrt x)^2})}x=-3
+x
+ \arcsin^2\sqrt{x} \sim x. 
+ {(2-e^{\arcsin^2\sqrt{x}})^{\frac{3}{x}}}\sim {(2-e^{x})^{\frac{3}{x}}}=e^{\frac{3}{x}\ln(2-e^x)} = e^{\frac{3}{x}(-x+O(x^2))}\longrightarrow_{x\to 0} e^{-3} 
+ \ln(2-e^{x})=-x-x^2+O(x^3). 

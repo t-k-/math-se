@@ -1,0 +1,16 @@
+f
+\gamma
+z
+\gamma
+F(z)=\int_{\gamma} {f{(\theta})\over\theta-z}d\theta
+F(z)
+z_{0}
+F(z)
+z_0 \notin \text{im} \, \gamma
+r:=d(z_0,\text{im} \, \gamma)>0
+z \in B(z_0,r)
+\frac{1}{\theta-z} = \frac{1}{\theta-z_0} \cdot \frac{1}{1-\frac{z-z_0}{\theta-z_0}} = \frac{1}{\theta-z_0} \cdot \sum_{n=0}^\infty \left( \frac{z-z_0}{\theta-z_0} \right)^n
+\theta \in \text{im} \, \gamma
+\theta \in \text{im} \, \gamma
+\left| \frac{z-z_0}{\theta-z_0} \right| \leq \frac{|z-z_0|}{r} < 1
+F(z) = \int_\gamma \lim_{N \to \infty} \sum_{n=0}^N \frac{(z-z_0)^n}{(\theta-z_0)^{n+1}} \cdot f(\theta) \, d\theta = \sum_{n=0}^\infty (z-z_0)^n \cdot \underbrace{\int_\gamma f(\theta) \cdot \frac{1}{(\theta-z_0)^{n+1}} \, d\theta}_{=:a_n}

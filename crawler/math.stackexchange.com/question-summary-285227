@@ -1,0 +1,20 @@
+\exp(x+y) = \exp(x) \exp(y)
+f(x) = \sum_{n=0}^\infty c_n(x-a)^n
+g(x) = \sum_{k=0}^\infty d_n(x-a)^n
+\exp(x) = \sum_{n=0}^\infty \frac {x^n}{n!}
+ f(x)g(x) = \sum_{n=0}^\infty e_n(x-a)^n 
+ e_n = \sum_{m=0}^n c_md_{n-m} 
+x,y \in \mathbb R
+f(z) := \sum_{n=0}^\infty \left(\frac {x^n}{n!} \right )z^n
+g(z) := \sum_{n=0}^\infty \left(\frac {y^n}{n!} \right )z^n
+\exp(x) \exp(y) = f(1)g(1)
+f(1)g(1) = \exp(x+y)
+  f(z)g(z) = \sum_{n=0}^\infty \left( \sum_{k=0}^m \frac {x^m y^{n-m}}{m! (n-m)!} \right)z^n 
+  = \sum_{n=0}^\infty \frac 1 {n!} (x+y)^n z^n 
+t=1
+f
+f(0, 0) = 1
+ f(x, y) = \frac{e^x e^y}{e^{x+y}}. 
+ \frac{\partial f}{\partial x}  = \frac{e^x e^y e^{x+y} - e^x e^y e^{x+y}}{(e^{x+y})^2} = 0. 
+ \frac{\partial f}{\partial y}  = \frac{e^x e^y e^{x+y} - e^x e^y e^{x+y}}{(e^{x+y})^2} = 0. 
+ e^{x+y} = e^x e^y. 

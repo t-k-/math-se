@@ -1,0 +1,5 @@
+E[X_1^2|X_1+\cdots+X_k=n]
+X_1,\ldots,X_k
+E[X_1^2|X_1+\cdots+X_k=n] = \frac{1}{k}E[X_1^2+\cdots+X_k^2|X_1+\cdots+X_k=n]
+E[X_1^2+\cdots+X_k^2|X_1+\cdots+X_k=n] = E[(X_1+\cdots+X_k)^2-2\sum_{i<j}X_iX_j|X_1+\cdots+X_k=n] = n^2-2\binom{k}{2}E[X_1X_2|X_1+\cdots+X_k=n] = n^2-k(k+1)E[...]
+E[X_1X_2|X_1+\cdots+X_k=n] = \sum_{x,y}xyP[X_1=x,X_2=y|X_1+\cdots+X_k=n] = \sum_{x,y} xyP[X_1=x]P[X_2=y]P[X_3+\cdots+X_k=n-x-y]/P[X_1+\cdots+X_k=n]

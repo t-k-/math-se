@@ -1,0 +1,34 @@
+3\cdot9^{\frac{1}{2}}\cdot27^{\frac{1}{4}}\cdot81^{\frac{1}{8}} \dotsb
+\begin{align} P &= 3 \cdot 9^{\frac{1}{2}} \cdot 27^{\frac{1}{4}} \cdot 81^{\frac{1}{8}} \dotsb\\ \implies \ln P &=\ln3+\frac{1}{2} \ln 3^2+\frac{1}{2^2} \ln 3^3+\frac{1}{2^3} \ln 3^4 + \dotsb\\ &=\ln 3 \sum_{x=0}^{\infty}\frac{x+1}{2^x} \end{align}
+S_n=\sum_{0\le r\le n}(r+1)u^r=1+2u+3u^2+\cdots+nu^{n-1}+(n+1)u^n
+uS_n=u+2u^2+3u^3+\cdots+nu^{n}+(n+1)u^{n+1}
+S_n-uS_n
+=1+u(2-1)+u^2(3-2)+\cdots+u^{n-1}\{n-(n-1)\}+u^n\{(n+1)-n\}-(n+1)u^{n+1}
+=1+u+u^2+\cdots+u^{n-1}+u^n-(n+1)u^{n+1}
+=\frac{1-u^{n+1}}{1-u}-(n+1)u^{n+1}
+|u|<1, \lim_{n\to \infty} u=0
+\lim_{n\to \infty} n u^n=0\text{ (Proof below)}
+\lim_{n\to \infty}(1-u)S_n=\frac1{1-u}\iff \lim_{n\to \infty}S_n=\frac1{(1-u)^2}
+u=\frac12
+\lim_{n\to \infty}\sum_{0\le r\le n}(r+1)\left(\frac12\right)^r=\frac1{\left(\frac12\right)^2}=4
+\log P=4\log 3\iff P=3^4=81
+\lim_{n\to \infty} n u^n=\lim_{n\to \infty}\frac{n}{\left(\frac1u\right)^n}
+\frac \infty\infty
+\lim_{n\to \infty} n u^n=\lim_{n\to \infty} \frac1{\left(\frac1u\right)^{n-1}\ln(\frac1u)}=-\lim_{n\to \infty}\frac{u^{n-1}}{\ln u}=0
+|u|<1
+f(x):=\sum_{k=0}^\infty x^k=\frac{1}{1-x}\,\,,\,\,|x|<1\Longrightarrow f'(x)=\frac{1}{(1-x)^2}=\sum_{k=1}^\infty kx^{k-1}\,\,,\,\,|x|<1
+\sum_{k=0}^\infty\frac{k+1}{2^k}=\sum_{k=1}^\infty k\left(\frac{1}{2}\right)^k+\sum_{k=0}^\infty\left(\frac{1}{2}\right)^k=\ldots
+\sum_{k=0}^{\infty} r^k = \frac{1}{1-r} 
+\sum_{k=0}^{\infty} k r^k = \frac{r}{(1-r)^2} 
+r=1/2
+\ln{P} = (2 + 2) \ln{3}  = 4 \ln{3} \implies P = 81 
+ P = \prod_{k=1}^\infty \big(3^k\big)^{\left(2^{1-k}\right)}
+\log_3
+ \log_3 P = \sum_{k=1}^\infty \log_3 3^{k2^{1-k}}  
+ \log_3 P = \sum_{k=1}^\infty k2^{1-k} 
+ \log_3 P = 2\sum_{k=1}^\infty k\left(\frac{1}{2}\right)^k
+ \sum_{k=1}^{\infty} k r^k = \frac{r}{\left(1-r\right)^2} 
+ \log_3 P = 2 \cdot \frac{\frac{1}{2}}{(1-1/2)^2} 
+ \log_3 P = \frac{1}{1/4} 
+ \log_3 P = 4 
+ P = 3^4 = 81 

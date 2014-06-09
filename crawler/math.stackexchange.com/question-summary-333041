@@ -1,0 +1,25 @@
+X_1
+X_2
+X_n
+X_i \sim U(0,1)
+X_{(i)}
+X_{(k)} \sim B(k,n+1-k)
+Y_1
+Y_2
+Y_n
+Y_i \sim U(0,1)
+Y_{(i)}
+Y_{(k)} \sim B(k,n+1-k)
+\Pr(X_{(1)} < Y_{(2)}, X_{(2)} < Y_{(3)})= ?
+E_1 \equiv \{X_{(1)} < Y_{(2)}\}
+E_2 \equiv \{X_{(2)} < Y_{(3)}\}
+F_{X_{1:n},X_{2:n}}(y_2,y_3)
+0<y_2<y_3<1
+    f_{X_{1:n}, X_{2:n}}\left(x_1, x_2\right) = n(n-1) \left(1-x_2\right)^{n-2} \left[ 0 < x_1 < x_2 <1\right] 
+    f_{Y_{2:n}, Y_{3:n}}\left(y_2, y_3\right) = n(n-1)(n-2) y_2 \left(1-y_3\right)^{n-3} \left[ 0 < y_2 < y_3 <1\right] 
+ \begin{eqnarray}     \Pr\left(X_{1:n}\lt Y_{2:n},X_{2:n}\lt Y_{3:n}\right) &=& \mathbb{E}\left( \Pr\left(X_{1:n}\lt Y_{2:n},X_{2:n}\lt Y_{3:n} \mid Y_{2:n},Y_{3:n}\right) \right) \\ &=& \mathbb{E}\left(  F_{X_{1:n},X_{2:n}}\left(Y_{2:n},Y_{3:n}\right)\right) \end{eqnarray} 
+\begin{eqnarray}    F_{X_{1:n},X_{2:n}}(y_2,y_3) &=& n(n-1) \int_0^{y_3} \mathrm{d}x_2 \int_{0}^{\min(y_2,x_1)} \mathrm{d}x_1 \cdot  \left(1-x_2\right)^{n-2} \\&=& 1 - \left(1-y_2\right)^{n} - n y_2 \left(1-y_3\right)^{n-1} \end{eqnarray}
+  \begin{eqnarray}     \Pr\left(X_{1:n}\lt Y_{2:n},X_{2:n}\lt Y_{3:n}\right) &=&  1 - \mathbb{E}\left(  \left(1-Y_{2:n}\right)^{n} \right) - n \mathbb{E}\left( Y_{2:n} \left(1-Y_{3:n}\right)^{n-1}\right) \\   &=& 1 - \mathbb{E}\left(  Y_{n-1:n}^{n} \right) - n \mathbb{E}\left( Y_{2:n} \left(1-Y_{3:n}\right)^{n-1}\right) \end{eqnarray} 
+ \begin{eqnarray}   n \mathbb{E}\left( Y_{2:n} \left(1-Y_{3:n}\right)^{n-1}\right) &=& \int_0^{1} \mathrm{d}y_3 \int_0^{y_3} \mathrm{d} y_2 \cdot n^2(n-1)(n-2) y_2^2 (1-y_3)^{2n-4}  \\   &=& \frac{n^2 (n-1)(n-2)}{ \frac{1}{2} (2n)(2n-1)(2n-2)(2n-3)} \int_0^{1} \mathrm{d}y_3 \int_0^{y_3} f_{Z_{3:2n},Z_{4:2n}}\left(y_2,y_3\right) \\   &=& \frac{n(n-2)}{2 (2n-1)(2n-3)} \end{eqnarray} 
+   \mathbb{E}\left(  Y_{n-1:n}^{n} \right) = \int_0^1 x^n \cdot n(n-1) x^{n-2} (1-x) \mathrm{d} x = \frac{n(n-1)}{2n(2n-1)} \int_0^1 f_{Y_{2n-1:2n}}(x) \mathrm{d}x =  \frac{n-1}{2(2n-1)}  
+    \Pr\left(X_{1:n}\lt Y_{2:n},X_{2:n}\lt Y_{3:n}\right) = 1-\frac{n-1}{2(2n-1)}-\frac{n(n-2)}{2 (2n-1)(2n-3)}=\frac{(5n-4)(n-1)-1}{2(2n-1)(2n-3)} 

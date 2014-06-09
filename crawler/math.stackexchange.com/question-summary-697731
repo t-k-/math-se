@@ -1,0 +1,21 @@
+f(n, m) = f(n - 1, m) + f(n, m-1) + c
+f(n,m)=\begin{cases} 0,&\text{if }n,m <0\\ 1,&\text{if }n,m = 0\\ \sum_{i=0}^{k=n+m-1}\left(\left[f(n-i,m-[k-i])+c\right]\binom{k}{i}\right)-c,&\text{otherwise}, \end{cases}
+-1
+n=m=0
+f(n,m)=f(n-1,m)+f(m-1,n)+c
+m,n\geq 1
+F(x,y)
+n,m\geq 0
+n=0
+m=0
+n
+m
+ F(x,y):=\sum_{n=0}^{\infty}\sum_{m=0}^{\infty}f(n,m)x^ny^m. 
+ \begin{align*} F(x,y)&=\sum_{n=0}^{\infty}f(n,0)x^n+\sum_{m=0}^{\infty}f(0,m)y^m-1+\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n,m)x^ny^m\\ &=\frac{1}{1-x}+\frac{1}{1-y}-1+\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n,m)x^ny^m, \end{align*} 
+ \begin{align*} \sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n,m)x^ny^m&=\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n-1,m)x^ny^m+\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n,m-1)x^ny^m+\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}cx^ny^m. \end{align*} 
+ \begin{align*} \sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n-1,m)x^ny^m&=x\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n-1,m)x^{n-1}y^m\\ &=x\sum_{n=0}^{\infty}\sum_{m=1}^{\infty}f(n,m)x^ny^m\\ &=x\left[\sum_{n=0}^{\infty}\sum_{m=0}^{\infty}f(n,m)x^ny^m-\sum_{n=0}^{\infty}f(n,0)x^n\right]\\ &=x\left[F(x,y)-\frac{1}{1-x}\right]. \end{align*} 
+ \sum_{n=1}^{\infty}\sum_{m=1}^{\infty}f(n,m-1)x^ny^m=y\left[F(x,y)-\frac{1}{1-y}\right]. 
+ \sum_{n=1}^{\infty}\sum_{m=1}^{\infty}cx^ny^m=\sum_{n=1}^{\infty}cx^n\frac{y}{1-y}=\frac{cxy}{(1-x)(1-y)}. 
+ F(x,y)(1-x-y)=\frac{1-x-y+xy(1+c)}{(1-x)(1-y)}, 
+ F(x,y)=\frac{1+c}{1-x-y}-\frac{c}{(1-x)(1-y)}. 
+ f(n,m)=[x^ny^m]F(x,y)=(1+c)\binom{n+m}{n}-c 

@@ -1,0 +1,17 @@
+y(n) = y(n-1) + y(n-2)
+y(0)=0, y(1)=1
+y(n) = y(n-1) + y(n-2) + \delta(n-1)
+Y(z) = z^{-1}Y(z) + z^{-2}Y(z) + z^{-1}
+Y(z)
+Y(z) = \frac{z^{-1}}{1-z^{-1}-z^{-2}}
+z^2-z-1
+\alpha_1
+\alpha_2
+ Y(z) = \frac{z}{z^2-z-1} \implies \frac{Y(z)}{z} = \left(-\frac{1}{5}+\frac{2}{5}\alpha_1\right) \frac{1}{z-\alpha_1}+ \left(-\frac{1}{5}+\frac{2}{5}\alpha_2\right) \frac{1}{z-\alpha_2} 
+ \implies Y(z) = \beta_1 \frac{z}{z-\alpha_1}+\beta_2 \frac{z}{z-\alpha_2} 
+ \implies Y(z) = \beta_1\left(1-\frac{\alpha_1}{z}\right)^{-1}+\beta_2\left(1-\frac{\alpha_2}{z}\right)^{-1}  
+\beta_1 =\left(-\frac{1}{5}+\frac{2}{5}\alpha_1\right)
+\beta_2=\left(-\frac{1}{5}+\frac{2}{5}\alpha_2\right)
+ \implies Y(z) = \beta_1 \sum_{n=0}^{\infty}\frac{\alpha_1^n}{z^n}+\beta_2 \sum_{n=0}^{\infty}\frac{\alpha_2^n}{z^n}
+ \implies y(n)= \beta_1\alpha_1^n + \beta_2\alpha_2^n . 
+ y(n)=\frac{1}{2\pi i}\int_{C} z^{k-1}Y(z) dz .

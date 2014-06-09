@@ -1,0 +1,11 @@
+\int_0^\infty e^{-t} \, dt
+t = nu
+dt = n\,du
+\int_0^\infty e^{-nu}n\,du
+\frac{d}{dx} f(g(x)) = f'(g(x)) g'(x),
+ \frac{d}{dx} f(g(x)) 
+ u = g(x),\qquad \frac{du}{dx} = g'(x). 
+ \frac{d}{dx} f(g(x)) = \frac{d}{dx} f(u) = \frac{df(u)}{dx} = \frac{df(u)}{du}\cdot\frac{du}{dx} = f'(u)\cdot g'(x) = f'(g(x))\, g'(x). 
+ \int f'(g(x)) g'(x) \,dx, 
+ u=g(x),\qquad \frac{du}{dx} = g'(x),\qquad du = g'(x)\,dx. 
+ \int f'(g(x)) g'(x) \,dx = \int f'(u)\,du = f(u)+C = f(g(x))+C. 

@@ -1,0 +1,9 @@
+f(x) = e^{x-1} + x^2 - 7
+x_0 = 1.5
+\operatorname{f}'(x) = \operatorname{e}^{x-1}+2x
+x_{n+1} = x_n - \frac{\operatorname{f}(x_n)}{\operatorname{f}'(x_n)}
+x_{n+1} = x_n - \frac{\operatorname{e}^{x_n-1}+x_n^2-7}{\operatorname{e}^{x_n-1}+2x_n}
+x_0 = 1.5
+x_1 = 1.5 - \frac{\operatorname{e}^{0.5}+1.5^2-7}{\operatorname{e}^{0.5}+3} \approx 2.167
+x_1 = 2.167...
+x_2 = 2.167... - \frac{\operatorname{e}^{1.167...}+(2.167...)^2-7}{\operatorname{e}^{1.167...}+3} \approx 2.0466567

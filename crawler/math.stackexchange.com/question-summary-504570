@@ -1,0 +1,25 @@
+f \colon A \subseteq \mathbb R^n \to \mathbb R
+A
+\|\mathop{\rm grad} f(x)\| \le M
+x \in A
+|f(x)-f(y)| \le M\|x-y\|
+x,y \in A
+A
+A
+A = \{x \in \mathbb R^2 \mid \def\abs#1{\left|#1\right|}\abs x < 1\} \setminus \{0\} \times (-1,0]
+f \colon A \to \mathbb R
+f
+\abs{{\rm grad}\, f(x)}\le 2
+x \in A
+\epsilon \in(0,1)
+   f(x) = \begin{cases} \mathop{\rm sgn} x_1 \cdot x_1^2 & x_2 < 0\\                             0 & x_2 \ge 0 \end{cases} 
+    Df(x) = \begin{cases} (\mathop{\rm sgn} x_1 \cdot 2x_1, 0) & x_2 < 0\\             0 & x_2 \ge 0    \end{cases} 
+  \abs{f(\epsilon, \epsilon-1)-f(-\epsilon, \epsilon-1)} = 2(\epsilon-1)^2 \not\le 2\epsilon.  
+g(t)=f(x+t(y-x))
+t\in[0,1]
+g'(t)=grad(f)\cdot(y-x)
+u\in(0,1)
+grad(f)
+x+u(y-x)
+|f(x)-f(y)|=|g(1)-g(0)|=\\|g'(u)|=|grad(f)\cdot(y-x)|\leq\|grad(f)\|\cdot\|x-y\|\leq M\|x-y\|.
+A

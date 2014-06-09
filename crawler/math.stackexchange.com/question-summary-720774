@@ -1,0 +1,32 @@
+X_1,X_2,X_3
+\lambda=2
+X_1+X_2+X_3 \geq1
+2e^{-2x}
+0
+1
+1
+e^{-\frac{1}{2}}*(1+\frac{1}{2}+\frac{1}{8})
+X=X_1+X_2+X_3
+(2e^{-2x}\cdot u(x))\ast(2e^{-2x}\cdot u(x))\ast(2e^{-2x}\cdot u(x))
+\ast
+1
+x\geq 0
+0
+f\ast g
+\int_{-\infty}^{\infty}f(t)g(x-t)dt
+\int_{-\infty}^{\infty}2e^{-2t}\cdot u(t)\cdot 2e^{-2(x-t)}\cdot u(x-t)dt=\int_{0}^{\infty}4e^{-2x}\cdot u(x-t)dt=4 xe^{-2x}u(x)
+4xe^{-2x}
+2e^{-2x}
+P_X(x)=4x^2e^{-2x}u(x)
+1
+\infty
+\int_{1}^{\infty}4x^2e^{-2x}u(x)dx=\int_{1}^{\infty}4x^2e^{-2x}dx=\dots=\ell_{n\rightarrow\infty}\left.\left[-2x^2e^{-2x}-2xe^{-2x}-2e^{-2x}\right]\right|_{x=1}^{x=n}
+=0-(-5e^{-2})=5e^{-2}\approx 0.68
+B
+(X_1,X_2,X_3)
+x_1
+x_2
+x_3
+ P(X_1+X_2+X_3\in B)=\iint\!\!\!\int_{x_1+x_2+x_3\in B} f_{X_1}(x_1)f_{X_2}(x_2)f_{X_3}(x_3)\mathrm dx_1\mathrm dx_2\mathrm dx_3. 
+ P(X_1+X_2+X_3\geqslant1)=8\iint\!\!\!\int_{x_1+x_2+x_3\geqslant1}\mathrm e^{-2(x_1+x_2+x_3)}\mathrm dx_1\mathrm dx_2\mathrm dx_3. 
+ P(X_1+X_2+X_3\leqslant1)=8\int_0^1\mathrm e^{-2x_3}\int_0^{1-x_ 3}\mathrm e^{-2x_2}\int_0^{1-x_3-x_2}\mathrm e^{-2x_1}\mathrm dx_1\mathrm dx_2\mathrm dx_3. 

@@ -1,0 +1,47 @@
+f : \mathbb Z \to \mathbb Z
+g : \mathbb Z \to \mathbb Z
+f(x) = 3x + 1
+g(x) = \lfloor x/2\rfloor
+x\in\mathbb Z
+f
+x
+f(x)=0
+f\circ g
+g
+g(1)=g(0)=0
+f\circ g
+f\circ g
+g\circ f
+x
+g(f(x))=4
+g(f(x))
+f\circ g
+x
+f(g(x))=0
+f(g(0)) = f(g(1))=1
+g\circ f
+x
+g(f(x))=4
+x\in\mathbb Z
+g(f(x))
+x
+g(f(x+1))>g(f(x))
+ \begin{align} g(f(x+1)) &= \left\lfloor\frac12(3(x+1)+1) \right\rfloor\\ &= \left\lfloor\frac12(3x+1)+\frac32 \right\rfloor\\ &\geq \left\lfloor\frac12(3x+1) \right\rfloor + 1\\ &>\left\lfloor\frac12(3x+1) \right\rfloor =g(f(x)) \end{align} 
+x,y
+x>y
+g(f(x))>g(f(y))
+g(f(x))
+g\circ f
+g(f(a))=g(f(b))
+a,b
+a=b
+g\circ f
+\lfloor (3a+1)/2\rfloor = \lfloor (3b+1)/2\rfloor
+ \frac12(3a+1)-1<\frac12(3b+1)<\frac12(3a+1) + 1 \implies\\ 3a + 1 - 2 < 3b + 1 < 3a + 1 + 2 \implies\\ a - 2/3 < b < a + 2/3 
+f,g:\mathbb{Z}\to\mathbb{Z}
+g(x)=2x
+f(x) = \lfloor x/2\rfloor
+g
+f\circ g
+f
+f\circ g

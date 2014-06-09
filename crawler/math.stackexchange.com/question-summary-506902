@@ -1,0 +1,18 @@
+R_{21} = \begin{bmatrix} \hat{u} & \hat{v} & \hat{w} \end{bmatrix} = \begin{bmatrix} u_x &v_x & w_x \\ u_y & v_y & w_y \\ u_z & v_z & w_z \\ \end{bmatrix}
+zyx
+\psi \theta \varphi
+R(\psi) = \begin{bmatrix} \cos(\psi) & -\sin(\psi) & 0 \\ \sin(\psi) & \cos(\psi) & 0 \\ 0 & 0 & 1 \\  \end{bmatrix}
+R(\theta) = \begin{bmatrix} \cos(\theta) & 0 & \sin(\theta) \\ 0 & 1 & 0 \\ -\sin(\theta) & 0 & \cos(\theta) \\ \end{bmatrix}
+R(\varphi) = \begin{bmatrix} 1 & 0 & 0 \\ 0 & \cos(\varphi) & -\sin(\varphi)\\ 0 & \sin(\varphi) & \cos(\varphi) \\  \end{bmatrix}
+\underline{e}_4
+R_{41} = R(\varphi) R(\theta) R(\psi)
+R_{41} = \left( R(\varphi)^T R(\theta)^T R(\psi)^T \right) ^T
+\underline{e}_4
+\vec{w}_2 = \vec{w}_1 R_{41}^T
+\vec{v}_2 = R_{41} \vec{v}_1
+R_{41}=R(\psi)R(\theta)R(\varphi)
+R(\varphi)
+R(\theta)
+R(\psi)
+R_{41}
+\vec w_2 = \vec v_2^T = \left(R_{41}\vec v_1\right)^T = \vec v_1^TR_{41}^T = \vec w_1R_{41}^T 

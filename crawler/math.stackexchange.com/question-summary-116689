@@ -1,0 +1,67 @@
+\sum_{y=0}^{Y}(1+\left\lfloor \frac{yX}{Y}\right\rfloor)
+(0,0)-(0,Y)-(\left\lfloor X \right\rfloor,Y)
+N
+N + \sum_{y=1}^Y (\left\lfloor\frac{yX}{Y}\right\rfloor - \left\lfloor \frac{y\left\lfloor X\right\rfloor}Y \right\rfloor)
+0
+1
+y=1,..,Y
+n
+\frac{y\left\lfloor X\right\rfloor}{Y} < n \leq \frac{yX}{Y}
+\frac X Y
+X
+R_k=\frac{P_k}{Q_k}
+k
+y\leq Y
+R_{2n}<\frac{x}{y}\leq R_{2n+2}
+(u,v)
+uQ_{2n} + vQ_{2n+1}\leq Y
+ua_{2n+2} \geq v
+v_1=\left\lfloor \frac{v-1}{a_{2n+2}}\right\rfloor
+\sum_{v=1}^{\left\lfloor \frac {a_{2n+2}Y}{Q_{2n+2}}\right\rfloor}\sum_{u=v_1+1}^{\left\lfloor \frac{Y-vQ_{2n+1}}{Q_{2n}}\right\rfloor} 1 
+\max(0,\left\lfloor \frac{Y-vQ_{2n+1}}{Q_{2n}}\right\rfloor - \left\lfloor \frac{v-1}{a_{2n+2}}\right\rfloor)
+a_{2n+2}=1
+\left\lfloor \frac{Y-vQ_{2n+1}}{Q_{2n}}\right\rfloor - (v-1) = \left\lfloor\frac{Y-v(Q_{2n+1}+Q_{2n})}{Q_{2n}}\right\rfloor +1 = \left\lfloor \frac{Y-vQ_{2n+2}}{Q_{2n}}\right\rfloor + 1
+R_0=P_0
+(x,y)
+y\leq Y
+x\leq R_0y
+1+Y+\sum_{j=1}^Y P_0j = 1+Y+P_0\frac{Y(Y+1)}2
+1+Y+P_0\frac{Y(Y+1)}2 + \sum_{n=1}^\infty \sum_{v=1}^{\left\lfloor \frac {a_{2n}Y}{Q_{2n}}\right\rfloor} \max(0,\left\lfloor \frac{Y-vQ_{2n-1}}{Q_{2n-2}}\right\rfloor - \left\lfloor \frac{v-1}{a_{2n}}\right\rfloor)
+\frac{Q_{2n}}{a_{2n}}>Y
+\frac{Q_{2n}}{a_{2n}}>Q_{2n-1}
+Q_k
+Q_k
+k
+n
+O(\log Y)
+n,v
+\frac{2Y}{a_1}
+a_1=1
+Y+1
+X
+Y
+X=\frac{Y}{N}
+N>1
+\frac{1}{N}
+P_0=0
+Q_0=1
+Q_2=N
+a_2=1
+X=\frac{Y}{N}
+0+\frac{1}{N-1+\frac{1}{1}}
+1+Y+\sum_{v=1}^{\left\lfloor \frac{Y}{N}\right\rfloor} (1+Y-vN) = (1+Y)( 1+\left\lfloor X\right\rfloor) - \frac{N\left\lfloor X\right\rfloor(\left\lfloor X\right\rfloor +1)}2
+Y=10
+N=3
+X=\frac{10}{3}
+26
+1+Y+P_0\frac{Y(Y+1)}2 + \sum_{n=1}^\infty \sum_{v=1}^{\left\lfloor \frac Y {Q_{2n-1}}\right\rfloor}\left( \left\lfloor \frac{Y-vQ_{2n-1}}{Q_{2n-2}}\right\rfloor-\left\lfloor \frac{Y-vQ_{2n-1}}{Q_{2n}}\right\rfloor\right)
+Q_2+Q_1>Y
+1+Y+P_0\frac{Y(Y+1)}2 + \sum_{v=1}^{\left\lfloor \frac Y {Q_1}\right\rfloor} Y-vQ_1 =
+1+Y+P_0\frac{Y(Y+1)}2 + YY_0 - Q_1\frac{Y_0(Y_0+1)}2
+Y_0=\left\lfloor \frac Y {Q_1}\right\rfloor
+\frac X Y=\pi
+Q_1=7
+Q_2=106
+Y<113
+1+Y+3\frac{Y(Y+1)}2 + YY_0 - 7\frac{Y_0(Y_0+1)}2
+Y_0=\left\lfloor \frac Y {7}\right\rfloor

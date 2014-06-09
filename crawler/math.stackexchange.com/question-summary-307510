@@ -1,0 +1,44 @@
+n-2k \ge 0
+x=i\epsilon
+\lfloor n/2\rfloor
+\begin{eqnarray*} \int_0^\infty dx\, \left(\frac{\sin x}{x}\right)^n  &=& \lim_{\epsilon\to 0^+}      \frac{1}{2} \int_{-\infty}^\infty dx\,      \left(\frac{\sin x}{x-i\epsilon}\right)^n \\ &=& \lim_{\epsilon\to 0^+}     \frac{1}{2} \int_{-\infty}^\infty dx\,     \frac{1}{(x-i\epsilon)^n}     \left(\frac{e^{i x}-e^{-i x}}{2i}\right)^n \\ &=& \lim_{\epsilon\to 0^+}     \frac{1}{2} \frac{1}{(2i)^n} \int_{-\infty}^\infty dx\,     \frac{1}{(x-i\epsilon)^n}      \sum_{k=0}^n (-1)^k {n \choose k} e^{i x(n-2k)} \\ &=& \lim_{\epsilon\to 0^+}     \frac{1}{2} \frac{1}{(2i)^n}      \sum_{k=0}^n (-1)^k {n \choose k}      \int_{-\infty}^\infty dx\, \frac{e^{i x(n-2k)}}{(x-i\epsilon)^n}.  \end{eqnarray*}
+\begin{eqnarray*} \int_0^\infty dx\, \left(\frac{\sin x}{x}\right)^n &=& \frac{1}{2} \frac{1}{(2i)^n}     \sum_{k=0}^{\lfloor n/2\rfloor} (-1)^k {n \choose k}     \frac{2\pi i}{(n-1)!}      \left.\frac{d^{n-1}}{d x^{n-1}} e^{i x(n-2k)}\right|_{x=0} \\ &=& \frac{1}{2} \frac{1}{(2i)^n}     \sum_{k=0}^{\lfloor n/2\rfloor}      (-1)^k {n \choose k}      \frac{2\pi i}{(n-1)!} (i(n-2k))^{n-1} \\ &=& \frac{\pi}{2^n (n-1)!}       \sum_{k=0}^{\lfloor n/2\rfloor} (-1)^k {n \choose k} (n-2k)^{n-1}. \end{eqnarray*}
+|\sin(z)|\le e^{|\mathrm{Im}(z)|}
+|\mathrm{Im}(z)|\le1
+|\sin(z)|\le e
+\left(\frac{\sin(z)}{z}\right)^n
+|z|\to\infty
+\gamma^+
+\gamma^-
+\gamma^+
+-R-i
+R-i
+|z+i|=R
+\gamma^-
+-R-i
+R-i
+|z+i|=R
+ \int_{-\infty}^\infty\left(\frac{\sin(z)}{z}\right)^n\mathrm{d}z =\int_{-\infty-i}^{\infty-i}\left(\frac{\sin(z)}{z}\right)^n\mathrm{d}z\tag{1} 
+n-2k\ge0
+\gamma^+
+\gamma^-
+\gamma^-
+ \left(\frac{\sin(z)}{z}\right)^n=\frac1{(2iz)^n}\sum_{k=0}^n(-1)^k\binom{n}{k}e^{(n-2k)iz}\tag{2} 
+ \begin{align} \int_0^\infty\left(\frac{\sin(z)}{z}\right)^n\mathrm{d}z &=\frac12\int_{\gamma^+}\frac1{(2iz)^n}\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^k\binom{n}{k}e^{(n-2k)iz}\mathrm{d}z\\ &=\frac{\pi i}{(2i)^n}\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^k\binom{n}{k}\mathrm{Res}\left(\frac{e^{(n-2k)iz}}{z^n},0\right)\\ &=\frac{\pi i}{(2i)^n}\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^k\binom{n}{k}\frac{(n-2k)^{n-1}i^{n-1}}{(n-1)!}\\ &=\frac{\pi}{2^n(n-1)!}\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^k\binom{n}{k}(n-2k)^{n-1}\tag{3} \end{align} 
+I = \int_{-\infty}^{\infty} \left(\frac{\sin z}{z} \right)^n dz
+n
+\geq 3
+C_{\epsilon}^+
+C_{\epsilon}^-
+(\sin x)^n
+e^{i l x}
+-n \leq l \leq n
+l < 0
+\int_{C_{\epsilon}^-}
+l > 0
+\int_{C_{\epsilon}^+}
+l > 0
+\epsilon
+ I = \lim_{\epsilon \rightarrow 0} \int_{C_{\epsilon}^{\pm}} = \frac{1}{2} \lim_{\epsilon \rightarrow 0} \left( \int_{C_{\epsilon}^+} + \int_{C_{\epsilon}^-} \right) 
+ \int_{C_{\epsilon}^{\mp}} \frac{e^{\pm i l x}}{x^n} dx = \mp 2 \pi i \frac{(\pm i l)^{n-1}}{(n-1)!} 
+ I = \frac{\pi }{2^{n-1} (n-1)!} \sum_{l = 0}^{(n-1)/2} (-1)^{n-1-l}\left(\begin{array}{c}n \\ l \end{array} \right) (n-2l)^{n-1} 

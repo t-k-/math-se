@@ -1,0 +1,10 @@
+f(x;\theta) = (1/\theta)x^{(1-\theta)/\theta} $$\hspace{20 mm}
+   0 <x <1 ,\hspace{5 mm} 0 <\theta<\infty
+\theta 
+\hat{\theta}
+-(1/n) \sum ln  X_i
+X_i \sim f_\theta(X) = \frac{1}{\theta}x^{(1-\theta)/\theta)}I_{\{ x \in (0,1), \theta>0\}}
+i=1, ... , n
+ \mathcal{l}(\theta)  = \log(\prod_{i=1}^n f_\theta(x_i)) = \sum_{i=1}^n \log(f_\theta(x_i)) = -n \log(\theta) + (1-\theta)/\theta \sum_{i=1}^n \log(x_i)  
+\partial \mathcal l(\theta) = -\frac{n}{\theta} -  \frac{1}{\theta^2} \sum_{i=1}^n \log(x_i) = 0 
+ \hat \theta  =  - \frac{1}{n} \sum_{i=1}^n \log(x_i)\quad \square 

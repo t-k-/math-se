@@ -1,0 +1,64 @@
+\{\phi_i\}_{i=1}^N
+\{\psi_i\}_{i=1}^N
+\mathbb{R}^N
+(\phi_i,\psi_i) \ge 0
+e_i=\phi_i-\psi_i
+C
+ \sum_{i \neq j} (e_i,e_j) \le C \sum_i ||e_i||^2? 
+\psi_i
+\mathbb{R}^N
+\phi_i
+V
+V := \sum_i^N \psi_i
+\langle V,\psi_i\rangle = 1
+\langle V, V\rangle = N
+ \phi_i = -\frac{2}{N}V + \psi_i 
+ \langle \phi_i,\phi_j\rangle = \frac{4}{N^2}\langle V,V\rangle - \frac{2}{N}\langle V, \psi_i + \psi_j\rangle + \langle \psi_i,\psi_j\rangle = \delta_{ij} 
+ \langle \phi_i, \psi_i\rangle = 1 - 2/N \geq 0
+N \geq 2
+\phi_i
+\psi_i
+\{\langle\pi, V\rangle = 0\}
+ \langle \phi_i - \psi_i, \phi_j-\psi_j\rangle = \frac{4}{N} 
+ 4(N-1) = \frac{4}{N}\cdot (N^2 - N)= \sum_{i\neq j}\langle e_i,e_j\rangle \leq C_N \sum \|e_i\|^2 = 4 C_N 
+C_N \geq (N-1)
+2\langle e_i,e_j\rangle \leq \|e_i\|^2 + \|e_j\|^2
+   \sum_{i\neq j}\langle e_i,e_j\rangle \leq {n\choose 2} \frac{2}{N}\sum \|e_i\|^2  
+C_N \leq (N-1)
+C_N = (N-1)
+\{-\psi_i\}_{i=1}^N
+e_i=\phi_i+\psi_i
+i\not=j
+\psi_i=\sum_{j=1}^N (\psi_i,\phi_j)\phi_j
+C=1
+(e_i,e_j)=(\phi_i,\psi_j)+(\phi_j,\psi_i)
+\sum_{i\not=j}(e_i,e_j)=2\sum_{i\not=j}(\phi_i,\psi_j) 
+\|e_i\|^2=\sum_{j=1}^N |(\psi_i,\phi_j)-\delta_{ij}|^2=\sum_{j=1}^N |(\psi_i,\phi_j)|^2-2(\psi_i,\phi_i)+1.
+\sum_{i=1}^N\|e_i\|^2=\sum_{i=1}^N\sum_{j=1}^N |(\psi_i,\phi_j)|^2-2\sum_{i=1}^N(\psi_i,\phi_i)+N.
+\sum_{i=1}^N\sum_{j=1}^N |(\psi_i,\phi_j)|^2+N\ge 2\sum_{i=1}^N(\psi_i,\phi_i)
+\sum_{i=1}^N\sum_{j=1}^N |(\psi_i,\phi_j)-\delta_{ij}|^2\ge 0.
+U=[u_1,\ldots, u_n]
+V=[v_1,\ldots,v_n]
+n\ge2
+V=I_n
+d_i=u_i-v_i
+e=(1,1,\ldots,1)
+C\ge0
+U
+\langle u_i,v_i\rangle\ge0
+ee^T - (C+1)I_n = Q\Lambda Q^T
+r=\sqrt{n}
+t=\frac{1}{r+1}
+ \begin{eqnarray} 0\le\delta_C(U)&:=& \frac12\left(C\sum_i \|d_i\|^2 - \sum_{i\not=j} \langle d_i,d_j\rangle\right)\\ &=& nC - C\sum_i\langle u_i,v_i\rangle + \sum_{i\not=j}\langle u_i,v_j\rangle\\ &=& nC - (C+1)\sum_i\langle u_i,v_i\rangle + \sum_{i,j}\langle u_i,v_j\rangle\\ &=& nC - (C+1){\rm tr}(U) + {\rm tr}(ee^T U)\\ &=& nC + {\rm tr}\left([ee^T - (C+1)I_n]U\right) \end{eqnarray} 
+ \Lambda = \begin{pmatrix}n-1-C\\&-(C+1)I_{n-1}\end{pmatrix} 
+ Q = \frac{1}{r}\begin{pmatrix} 1&-1&-1&\ldots&-1\\ 1&r-t&-t&\ldots&-t\\ 1&-t&\ddots&\ddots&\vdots\\ \vdots&\vdots&\ddots&\ddots&-t\\ 1&-t&\ldots&-t&r-t \end{pmatrix} 
+ \delta_C(U) = nC + {\rm tr}\left(\begin{pmatrix}n-1-C\\&-(C+1)I_{n-1}\end{pmatrix}Q^TUQ\right). 
+C\ge n-1
+\delta_C(U)\ge\delta_C(I_n)=0
+C<n-1
+\delta_C
+U=U_{\rm opt}=Q(-1\oplus I_{n-1})Q^T = I-\frac2n ee^T
+\delta_C(U) = 2[C-(n-1)]<0
+U_{\rm opt}
+\langle u_i,v_i\rangle\ge0
+ \\     0.7449   -0.1554   -0.2566   -0.1677   -0.3110   -0.1738   -0.1967   -0.2552   -0.1312   -0.2812       -0.2923    0.7844   -0.1284   -0.1065   -0.2503   -0.2134   -0.2485   -0.2069   -0.1589   -0.1828     -0.1429   -0.2351    0.8301   -0.1749   -0.1849   -0.1480   -0.2192   -0.1936   -0.1031   -0.2287    -0.2150   -0.2567   -0.1478    0.8380   -0.2066   -0.1578   -0.2133   -0.1680   -0.0756   -0.1294    -0.1900   -0.2030   -0.2207   -0.1796    0.7393   -0.2527   -0.1869   -0.2995   -0.2257   -0.2361    -0.2796   -0.2012   -0.2156   -0.2005   -0.2095    0.7855   -0.1406   -0.2357   -0.1624   -0.1790    -0.2483   -0.1787   -0.1399   -0.1415   -0.2742   -0.2752    0.7760   -0.1274   -0.2534   -0.1826    -0.2024   -0.2172   -0.1928   -0.2007   -0.1693   -0.1861   -0.2954    0.7745   -0.1689   -0.2356    -0.2207   -0.1572   -0.1801   -0.2000   -0.1339   -0.1748   -0.0687   -0.1589    0.8643   -0.1691    -0.1656   -0.2320   -0.1494   -0.2343   -0.2270   -0.2360   -0.2391   -0.1995   -0.1552    0.7831 

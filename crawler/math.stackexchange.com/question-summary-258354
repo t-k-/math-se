@@ -1,0 +1,13 @@
+x(t) = x_0 + t d_0
+t \in [0,1]
+\min_{t \in [0,1]} \|x(t) -p_0\|
+\phi(t) = \|x(t) -p_0\|^2 = ||x_0-p_0\|^2+t^2 \|d_0\|^2-2 t \langle p_0 -x_0, d_0 \rangle
+\phi
+t
+t
+t'
+[0,1]
+\phi'(t') = 0
+t' = \frac{\langle p_0 -x_0, d_0 \rangle}{\|d_0\|^2}
+t_0 = \min(1, \max(0, t'))
+\|x(t_0) - p_0\|

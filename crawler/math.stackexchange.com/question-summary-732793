@@ -1,0 +1,18 @@
+\ln x
+x
+\ln 11.1
+x_0 = 10, x_1 = 11, x_2 = 12
+x = 10, 11, 12
+(x, y) = (x, \ln x) = (10 , \ln 10), (11, \ln 11), (12 \ln 12)
+(x, y) = (10 , 2.302585093), (11, 2.397895273), (12 , 2.484906650)
+y(x) = a_2 x^2 + a_1 x + a_0
+a_0, a_1, a_2
+a_2 x_1^2 + a_1x_1 + a_0 = y_1 \\ a_2 x_2^2 + a_1x_2 + a_0 = y_2 \\ a_2 x_3^2 + a_1x_3 + a_0 = y_3
+ \begin{bmatrix} 1 & x_1 & x_1^2 \\ 1 & x_2 & x_2^2 \\ 1 & x_3 & x_3^2 \end{bmatrix} \begin{bmatrix} a_0 \\ a_1 \\ a_2 \end{bmatrix} = \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix}
+a_0, a_1, a_2
+ \begin{bmatrix} 1 & 10 & 100 \\ 1 & 11 & 121 \\ 1 & 12 & 144 \end{bmatrix} \begin{bmatrix} a_0 \\ a_1 \\ a_2 \end{bmatrix} = \begin{bmatrix} 2.302585093 \\ 2.397895273 \\ 2.484906650 \end{bmatrix}
+a_0 = 0.893049 , a_1 = 0.182448 , a_2 = -0.0041494 
+y(x) = -0.0041494 x^2 +  0.182448 x + 0.893049 
+\begin{array}{c|c|c|c}  \text {x} & y(x) & \ln x & |y(x) - \ln x)| \\ \hline  10 & 2.30259 & 2.302585093 & 3.907005953873721 \times 10^{-6} \\ \hline  11 & 2.3979 & 2.397895273 & 4.327201629017452 \times 10^{-6} \\ \hline  11.1 & 2.40697 & 2.40695 & 0.0000291177 \\ \hline  12 & 2.48491 & 2.484906650 & 4.750211999748899 \times 10^{-6}  \end{array}
+x = 11.1
+ \mbox{Relative Error} = \left|\dfrac{\mbox{calculated - actual}}{\mbox{actual}}\right| = \left|\dfrac{2.40697 - 2.40695}{2.40695}\right|  = 8.309271069065387 \times 10^{-6}

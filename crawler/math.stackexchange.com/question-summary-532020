@@ -1,0 +1,6 @@
+a_0 = 1 \\ a_{n+1} = (n+1)a_n + 1 
+ n!b_n = a_n \Rightarrow (n+1)!b_{n+1} = (n+1)!b_n + 1 
+ \Rightarrow (b_{n+1} - b_n)(n+1)! = 1 \Rightarrow b_{n+1} - b_n = \frac{1}{(n+1)!} 
+ \sum_{n=0}^k (b_{n+1} - b_n)  = \sum_{n=1}^{k+1} \frac{1}{n!} \Rightarrow b_{k+1} - b_0 = \sum_{n=1}^{k+1} \frac{1}{n!} 
+ a_0 = 1 = 0!b_0 = b_0 \Rightarrow b_{k+1} = 1 + \sum_{n=1}^{k+1} \frac{1}{n!} \Rightarrow b_n = 1 + \sum_{k=1}^{n} \frac{1}{k!}  
+ \Rightarrow a_n= n! \left(1 + \sum_{k=1}^{n} \frac{1}{k!}  \right) 

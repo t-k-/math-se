@@ -1,0 +1,24 @@
+ M:=\left\{(x,y,z)\in\mathbb{R}^3: z\in [0,2\pi],(x-\cos(z))^2+(y-\sin(z))^2\leq\frac{1}{4}\right\} 
+ M_z:=\left\{(x,y)\in\mathbb{R}^2: (x,y,z)\in M\right\} 
+ \operatorname{vol}_3(M)=\int\limits_0^{2\pi}\operatorname{vol}_2(M_z)\, dz 
+\operatorname{vol}_2(M_z)
+a:=x-\cos(z)
+b:=y-\sin(z)
+a^2+b^2\leq\frac{1}{4}
+ \lvert a\rvert\leq\frac{1}{2}\Leftrightarrow \cos(z)-\frac{1}{2}\leq x\leq\cos(z)+\frac{1}{2},~~~~~\lvert b\rvert\leq\frac{1}{4}\Leftrightarrow\sin(z)-\frac{1}{2}\leq y\leq\sin(z)+\frac{1}{2}. 
+ \operatorname{vol}_2(M_z)=\int\limits_{\sin(z)-\frac{1}{2}}^{\sin(z)+\frac{1}{2}}\int\limits_{\cos(z)-\frac{1}{2}}^{\cos(z)+\frac{1}{2}}1\, dx\, dy=1. 
+ \operatorname{vol}_3(M)=2\pi 
+\frac{\pi^2}{2}
+M_z
+R_z = \left[\cos(z)-\frac{1}{2}, \cos(z)+\frac{1}{2}\right] \times \left[\sin(z)-\frac{1}{2}, \sin(z)+\frac{1}{2}\right]
+ (x-\cos(z))^2+(y-\sin(z))^2\leq\frac{1}{4} \iff \\ \cos(z)-\frac{1}{2}\leq x\leq\cos(z)+\frac{1}{2} \,\,\,\,\, \text{and} \,\,\,\,\, \sin(z)-\frac{1}{2}\leq y\leq\sin(z)+\frac{1}{2} 
+\iff
+x = \cos(z)+\frac{1}{2}
+y = \sin(z)+\frac{1}{2}
+(x, y) \in R_z
+(x-\cos(z))^2+(y-\sin(z))^2 = (\frac{1}{2})^2 + (\frac{1}{2})^2 = \frac{1}{2} > \frac{1}{4}
+(x, y) \notin M_z
+M_z \subset R_z
+M_z = R_z
+M_z
+R_z

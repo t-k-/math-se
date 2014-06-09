@@ -1,0 +1,13 @@
+35
+10
+55\%
+p(n)
+10
+n
+p(n)\mid_{n < 10} = 0
+p(10) = 2^{-10}
+\begin{align}p(n) & = 2^{-10} + 2^{-10}p(n-10) + 2^{-9}p(n-9) + 2^{-8}p(n-8) +\cdots+2^{-1}p(n-1)\\ & = 2^{-10}+\sum\limits_{r=1}^{10} 2^{-r}p(n-r) \\ \therefore p(35) & = \frac{451879032}{34359738368} \end{align}
+\small \boxed{\begin{array}{ccc}\boxed{\begin{array}{l|r} n & p(n) \\ \hline 10&\frac{1}{1024}\\ 11&\frac{3}{2048}\\ 12&\frac{8}{4096}\\ 13&\frac{20}{8192}\\ 14&\frac{48}{16384}\\ \end{array}}\boxed{\begin{array}{l|r} n & p(n) \\ \hline 15&\frac{112}{32768}\\ 16&\frac{256}{65536}\\ 17&\frac{576}{131072}\\ 18&\frac{1280}{262144}\\ 19&\frac{2816}{524288}\\ \end{array}}\boxed{\begin{array}{l|r} n & p(n) \\ \hline 20&\frac{6144}{1048576}\\ 21&\frac{13311}{2097152}\\ 22&\frac{28667}{4194304}\\ 23&\frac{61422}{8388608}\\ 24&\frac{131016}{16777216}\\ \end{array}}\boxed{\begin{array}{l|r} n & p(n) \\ \hline 25&\frac{278368}{33554432}\\ 26&\frac{589392}{67108864}\\ 27&\frac{1244064}{134217728}\\ 28&\frac{2618624}{268435456}\\ 29&\frac{5498112}{536870912}\\ \end{array}}\boxed{\begin{array}{l|r} n & p(n) \\ \hline 30&\frac{11517696}{1073741824}\\ 31&\frac{24077824}{2147483648}\\ 32&\frac{50239489}{4294967296}\\ 33&\frac{104644615}{8589934592}\\ 34&\frac{217616416}{17179869184}\\ \end{array}}\end{array}}\\  \therefore p(35) = \frac{451879032}{34359738368}
+p=1/2
+p=55/100
+\mathbb{P}(\mbox{at least 10 heads in a row})={56484879 \over 4294967296} = 0.01315141073,

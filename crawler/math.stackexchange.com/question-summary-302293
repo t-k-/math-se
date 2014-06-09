@@ -1,0 +1,18 @@
+\int_0^{\pi} \frac{\sin^2 \theta}{(1-2a\cos\theta+a^2)(1-2b\cos\theta+b^2)}\mathrm{d\theta}, \space 0<a<b<1
+1/2
+[0,2 \pi)
+z=e^{i \theta}
+d\theta = dz/(i z)
+\frac{1}{2 i}\oint_{|z|=1} \frac{dz}{z}  \frac{-\frac{1}{4} (z^2-1)^2}{(a z^2-(1+a^2)z+a)(b z^2-(1+b^2)z+b)}
+\frac{i}{8} \oint_{|z|=1} \frac{dz}{z}  \frac{(z^2-1)^2}{(a z-1)(z-a)(b z-1)(z-b)}
+0<a<b<1
+i 2 \pi
+\mathrm{Res}_{z=0}\frac{i}{8} \frac{(z^2-1)^2}{z(a z-1)(z-a)(b z-1)(z-b)} = \frac{i}{8 a b}
+\mathrm{Res}_{z=a}\frac{i}{8} \frac{(z^2-1)^2}{z(a z-1)(z-a)(b z-1)(z-b)} = \frac{i}{8 a} \frac{a^2-1}{(a b-1)(a-b)}
+\mathrm{Res}_{z=b}\frac{i}{8} \frac{(z^2-1)^2}{z(a z-1)(z-a)(b z-1)(z-b)} = -\frac{i}{8 b} \frac{b^2-1}{(a b-1)(a-b)}
+\int_0^{\pi} d\theta \frac{\sin^2 \theta}{(1-2a\cos\theta+a^2)(1-2b\cos\theta+b^2)} = \frac{\pi}{2} \frac{1}{1-a b}
+n\ne m
+n=m
+\blacksquare
+\int_0^{\pi} dx\left(\sum_{n=1}^{\infty} a^{n-1}\sin (nx)\right)\left(\sum_{m=1}^{\infty} b^{m-1}\sin (mx)\right)=\frac{1}{ab}\sum_{n=1}^{\infty} \sum_{m=1}^{\infty} a^nb^m\int_0^{\pi} \sin(nx)\sin(mx)\,dx 
+\frac{1}{ab}\sum_{n=1}^{\infty} (ab)^n\int_0^{\pi} \sin^2(nx)\,dx=\frac{\pi}{2ab}\sum_{n=1}^{\infty} (ab)^n=\boxed{\dfrac{\pi}{2}\dfrac{1}{1-ab}}

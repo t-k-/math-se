@@ -1,0 +1,20 @@
+\textbf{Answer}
+i<k
+j\ge i
+\textbf{Question 1: }
+E[W_{t_{j+1}}|\mathcal{F}_{t_{j}}] = W_{t_{j}}
+W_{t}
+j\ge i
+\textbf{Question 2: }
+I_{t_{i}}^{n}
+(W_t)_{t \geq 0}
+i<k
+I_t^n
+(2)
+\begin{align*} I_t^n &= \sum_{j=0}^{i-1} \Delta_{t_j}(W_{t_{j+1}}-W_{t_j}) +  \sum_{j=i}^{k-1} \Delta_{t_j}(W_{t_{j+1}}-W_{t_j}) + \Delta_{t_k}(W_t-W_{t_k}) \\ &=: J_1+J_2+J_3 \end{align*}
+\mathbb{E}(J_2 \mid \mathcal{F}_{t_i}) = \sum_{j=i}^{k-1} \mathbb{E} \bigg( \Delta_{t_j}(W_{t_{j+1}}-W_{t_j})  \mid \mathcal{F}_{t_i} \bigg) = 0
+(3)
+\mathbb{E}(J_3 \mid \mathcal{F}_{t_i}) = 0.
+J_1=I_{t_i}^n
+\mathcal{F}_{t_i}
+\mathbb{E}(I_t^n \mid \mathcal{F}_{t_i}) = \underbrace{\mathbb{E}(J_1 \mid \mathcal{F}_{t_i})}_{J_1}+\underbrace{\mathbb{E}(J_2 \mid \mathcal{F}_{t_i})}_{0} + \underbrace{\mathbb{E}(J_3 \mid \mathcal{F}_{t_i})}_{0} = J_1 = I_{t_i}^n.

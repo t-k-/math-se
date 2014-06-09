@@ -1,0 +1,31 @@
+A
+i\in A
+a,b\in A
+A
+a\sqcup b
+(i_a,i_b)
+ \newcommand{\ra}[1]{\!\!\!\!\!\!\!\!\!\!\!\!\xrightarrow{\quad#1\quad}\!\!\!\!\!\!\!\!} \newcommand{\da}[1]{\left\downarrow{\scriptstyle#1}\vphantom{\displaystyle\int_0^1}\right.} % \begin{array}{llllllllllll} i & \ra{i_a} & a & \\ \da{i_b} & & \da{s_a} &\\ b & \ra{s_b} & a\sqcup b & \\ \end{array} 
+f\colon a\to c
+g\colon b\to c
+A
+(f,g)\colon a\sqcup b\to c
+(f,g)\circ s_a=f
+(f,g)\circ s_b=g
+f,g\colon a\to b
+A
+((f,id(b)),(g,id(b)))
+ \newcommand{\ra}[1]{\!\!\!\!\!\!\!\!\!\!\!\!\xrightarrow{\quad#1\quad}\!\!\!\!\!\!\!\!} \newcommand{\da}[1]{\left\downarrow{\scriptstyle#1}\vphantom{\displaystyle\int_0^1}\right.} % \begin{array}{llllllllllll} a\sqcup b & \ra{(f,id(b))} & b & \\ \da{(g,id(b))} & & \da{p} &\\ b & \ra{q} & Coeq(f,g) & \\ \end{array} 
+c
+A
+h\colon b\to c
+h\circ f=h\circ g
+h\circ(f,id(b))=h\circ(g,id(b))
+a\sqcup b
+x\colon Coeq(f,g)\to c
+x\circ p=x\circ q=h
+y\colon Coeq(f,g)\to c
+y\circ p=h
+x=y
+ y\circ q=y\circ q\circ id(b)=y\circ q\circ (g,id(b))\circ s_b=y\circ p\circ (f,id(b))\circ s_b= 
+ =h\circ(f,id(b))\circ s_b=h,  
+\mathbf{Set}

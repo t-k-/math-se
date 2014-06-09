@@ -1,0 +1,18 @@
+u \in H^1(0,T;L^2)
+h \in [0,T]
+\int_0^{T-h}\lVert u(t+h)-u(t) \rVert_{L^2}^2 \leq C|h|
+u'
+C
+H^1
+\sup_{0<h<T} \frac{1}{h} \int_0^{T-h}\lVert u(t+h)-u(t) \rVert_{L^2}^2 <\infty \tag{1}
+u(t,x)=t^{\alpha}
+0\le t\le 1
+\alpha\in (0,1/2)
+x
+u\notin H^1
+\|u(t+h)-u(t)\|_{L^2} = C((t+h)^\alpha-t^\alpha)
+C
+t\mapsto t^\alpha
+\int_{0}^{h} ((t+h)^\alpha-t^\alpha)^2\,dt = O(h^{2\alpha+1})
+(t+h)^\alpha-t^\alpha \le \alpha h t^{\alpha-1}
+ \int_{h}^{1-h} ((t+h)^\alpha-t^\alpha)^2\,dt = O(h^2) \int_{h}^{1-h} t^{2\alpha-2} \,dt = O(h^2)O(h^{2\alpha-1}) =  O(h^{2\alpha+1}) 

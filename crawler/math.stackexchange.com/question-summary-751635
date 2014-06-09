@@ -1,0 +1,32 @@
+f'_{xy}=f'_{yx}
+D_{2,1}=f_{yx}
+D_{1,2}=f_{xy}
+D_{1,2}f(a)-D_{2,1}f(a)>0
+A=[a,b]\times[c,d]
+D_{1,2}f(x)-D_{2,1}f(x)>0
+x \in A
+\int_{A}D_{2,1}f=\int_{c}^d\int_a^b D_{2,1}f dxdy=\int_{c}^d D_1f(b,y)-D_1(a,y)dy= \\f(b,d)-f(a,d)-f(b,c)+f(a,c) 
+\int_{A}D_{2,1}f=\int_{a}^b\int_c^d D_{1,2}f dydx = f(b,d)-f(b,c)-f(a,d)+f(a,c)
+\int_{A}D_{1,2}f-D_{2,1}f=0
+ \omega
+\omega
+(a+h, b+k)
+f
+ F(h,k)=f(a+h,b+h)-f(a+h,b)-f(a,b+k)+f(a,b)
+ \phi(x) = f(x,b+k) - f(x,b) 
+\phi(x+k) - \phi(x)= f(x+h,b+k) - f(x+h,b)- f(x,b+k)+ f(x,b) 
+ F(h,k)= \phi(a+h) - \phi(a) 
+\phi(x)
+\phi'(x)= f'_x(x,b+k)- f'_x(x,b)
+\alpha
+ \phi(x+h) - \phi(x) = h\phi'(x+ \alpha h)
+F(h,k) = h[f'_x(a+ \alpha h,b+k) - f'_x(a+\alpha h,b)]
+f'_x(a +\alpha h,y)
+\beta
+F(h,k)= hkf"_{xy}(a+\alpha h,b + \beta k)
+f"_{xy}
+\lim_{(h,k) \to (0,0)} \frac{F(h,k)}{hk} = \lim_{(h,k) \to (0,0)}f"_{xy}(a+ \alpha h, b + \beta k)= f"_{xy}(a,b) 
+\Psi(y)
+\Psi(y) = f(a+h,y)-f(a,y)
+\lim_{(h,k) \to (0,0)} \frac{F(h,k)}{hk} = \lim_{(h,k) \to (0,0)}f"_{yx}(a+ \alpha h, b + \beta k)= f"_{yx}(a,b) 
+\lim_{(h,k) \to (0,0)} \frac{F(h,k)}{hk} = f"_{xy}(a,b)= f"_{yx}(a,b) 

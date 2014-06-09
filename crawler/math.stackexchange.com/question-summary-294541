@@ -1,0 +1,16 @@
+I(\lambda)=\int_0^{\infty}\frac{\ln ^2x}{x^2+\lambda x+\lambda ^2}\text{d}x
+I(\lambda)=\int_0^{\infty}\frac{\ln ^2x}{\lambda ^2x^2+\lambda x+1}\text{d}x =\frac{1}{\lambda}\int_0^{\infty}\frac{(\ln x-\ln \lambda)^2}{x^2+x+1}\text{d}x \\ =\frac{\ln ^2\lambda}{\lambda}\int_0^{\infty}\frac{1}{x^2+x+1}\text{d}x+\frac{1}{\lambda}\int_0^{\infty}\frac{\ln ^2x}{x^2+x+1}\text{d}x \\ =\frac{\ln ^2\lambda}{\lambda}\frac{2\pi}{3\sqrt{3}}+\frac{2}{\lambda}\int_0^1\frac{\ln ^2x}{x^2+x+1}\text{d}x
+\frac{1}{x^2+x+1}=\frac{2}{\sqrt{3}}\sum_{k=0}^{\infty}\sin \left(\frac{2\pi}{3}\left(k+1\right)\right)x^k
+\int_0^1\frac{\ln ^2x}{x^2+x+1}\text{d}x=\frac{2}{\sqrt{3}}\sum_{k=0}^{\infty}\frac{2}{\left(k+1\right)^3}\sin \left(\frac{2\pi}{3}\left(k+1\right)\right)x^k
+\sum_{k=1}^{\infty}\frac{\sin (kx)}{k^3}=\frac{\pi ^2}{6}x-\frac{\pi}{4}x^2+\frac{x^3}{12}
+f-g
+\int_0^1 \dfrac{\ln^2(x)}{1+x+x^2} = \int_0^1 \dfrac{1-x}{1-x^3} \ln^2(x) dx = \int_0^1 (1-x)\ln^2(x) \left(\sum_{k=0}^{\infty} x^{3k}\right) dx
+\underbrace{\int_0^1 x^n \ln^2(x)dx = \int_{-\infty}^0 e^{nt} t^2 e^t dt}_{x \mapsto e^t} = \int_0^{\infty} t^2 e^{-(n+1)t}dt = \dfrac2{(1+n)^3}
+\int_0^1 \dfrac{\ln^2(x)}{1+x+x^2} dx = \sum_{k=0}^{\infty} \left(\dfrac2{(1+3k)^3} - \dfrac2{(2+3k)^3} \right) = \dfrac{8 \pi^3}{81 \sqrt3}
+\sum_{k=0}^{\infty} \dfrac1{(1+3k)^3} =f
+\sum_{k=0}^{\infty} \dfrac1{(2+3k)^3} =g
+\int_0^1\frac{\ln ^2x}{x^2+x+1}\text{d}x=\frac{8\sqrt{3}}{243}\pi^3 \sim 1.768047624. 
+ \int _{a }^{b }\!{\frac {\ln  \left( tx + u \right) }{m{x}^{2}+nx+p}}{dx}.
+ \int_{0}^{1} \frac{\ln(x)^2}{x-\alpha}= -2 Li_{3}\left(\frac{1}{a}\right), 
+ \operatorname{Li}_{s}(z) = \sum_{k=1}^{\infty}\frac{z^k}{k^s}. 
+\frac{16\pi^{3}}{81\sqrt{3}}.

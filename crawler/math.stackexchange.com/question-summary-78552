@@ -1,0 +1,12 @@
+I_n=\int\limits_0^1 (1-x^2)^ndx 
+I_n={2n\over 2n+1}I_{n-1}
+n\geq 1
+I_n
+I_n = \frac{2n}{2n+1}I_{n-1}
+-
+ I_n = \int_0^1 (1-x^2)^n\,dx = x(1-x^2)^n\mid^1_0 + 2n\int\limits_{0}^1(1-x^2)x^2\,dx =  
+ =  0 +2n\int\limits_{0}^1(1-x^2)^{n-1}(x^2-1)\,dx + 2n I_{n-1} = 2nI_{n-1} - 2nI_n 
+n > 0
+I_0 = \int_0^1 \mathrm{d} x = 1
+      \frac{\mathrm{d}}{\mathrm{d} x} \left( x \left(1-x^2\right)^n \right) = \left(2n+1\right) \left(1-x^2\right)^n - 2 n \left(1-x^2\right)^{n-1} 
+    0 = (2n+1) I_n - 2n I_{n-1} 

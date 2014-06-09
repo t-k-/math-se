@@ -1,0 +1,23 @@
+x,y,z
+f(x,y,z) = 0
+w(x,y)
+f(x,y,z) = 0
+x(y,z), y(x,z), z(x,y)
+f(x,y,z) = 0
+x = x(y,z)
+x = const
+dx = 0
+\left .dy \right|_x = \partial y_x
+\left . dz\right |_x = \partial z_x
+\partial z_x
+\left .\frac {\partial z}{\partial x} \right |_y
+ dx = \left .\frac {\partial x}{\partial y} \right |_z dy + \left .\frac {\partial x}{\partial z} \right |_y dz 
+ \left .\frac {\partial x}{\partial y} \right |_z \partial y_x + \left .\frac {\partial x}{\partial z} \right |_y \partial z_x=0 \\ 
+ \left .\frac {\partial x}{\partial y} \right |_z \frac {\partial y_x}{\partial z_x} + \left .\frac {\partial x}{\partial z} \right |_y = \left .\frac {\partial x}{\partial y} \right |_z \left . \frac {\partial y}{\partial z}\right |_x + \left .\frac {\partial x}{\partial z} \right |_y = 0 
+ \left .\frac {\partial x}{\partial y} \right |_z \left . \frac {\partial y}{\partial z}\right |_x \left .\frac {\partial z}{\partial x} \right |_y+ 1 = 0 
+z=const
+w = w(x,y)
+y = y(x)
+\left . \frac {\partial x}{\partial w} \right |_z = \left (\left . \frac {\partial x}{\partial w} \right |_z \right)^{-1}
+ \left . \frac {\partial x}{\partial w} \right |_z = \left . \frac {\partial x}{\partial y} \right |_z \left . \frac {\partial y}{\partial w} \right |_z 
+ \left . \frac {\partial w}{\partial x} \right |_z = \left . \frac {\partial w}{\partial y} \right |_z \left . \frac {\partial y}{\partial x} \right |_z 

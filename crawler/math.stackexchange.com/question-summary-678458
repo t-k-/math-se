@@ -1,0 +1,15 @@
+ P(Z\leq-1.8) 
+ F_Z(0) - F_1(1.8) = 0.5 - F_1(1.8) 
+ F_Z(1.8) - F_2(1.8) 
+ F_Z(1.8)=0.9641\\ F_1(1.8)=0.4641\\ F_2(1.8)=0.9281 
+0.5 - 0.4641=0.0359
+0.036
+F_Z
+F_1
+F_2
+ F_Z : P(Z\leq z)\\ F_1 : P(0\leq Z\leq z)\\ F_2 : P(-z\leq Z\leq z) 
+\begin{align}  F_Z(z) & =P(Z\le z) \\ & = P((Z \le -z) or (-z \lt Z \le z))\\ & = P(Z \le -z) + P(-z \lt Z \le z)\\ & = F_Z(-z) + F_2(z) \end{align}
+F_Z(-z) =F_Z(z) - F_2(z)
+\le
+ \begin{align}\\F_Z(-z) & = P(Z \le -z)\\  & = P(Z \ge z) \tag{by symmetry}\\ & =  1 - P(Z \le z)\\ & = 1 - [P((Z \le 0) or (0 \lt Z \le z))]\\ & = 1 - [P(Z \le 0) + P(0 \lt Z \le z)]\\ & = [1 - P(Z \le 0)] - P(0 \lt Z \le z)\\ & = P(Z \le 0) - P(0 \lt Z \le z) \tag{since P(Z $\le$ 0) = 0.5}\\ & = F_Z(0) - F_1(z) \end{align}
+F_Z(-1.8)

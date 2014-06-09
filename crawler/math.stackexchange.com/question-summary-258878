@@ -1,0 +1,13 @@
+ S(x) = \sum_{k=0}^\infty a_k \cdot x^k \to S(x)' = \sum_{k=0}^\infty (k+1)\cdot a_{k+1} \cdot x^k 
+x_k
+f(x)=b^x-1
+x_m
+S(x)
+ S(x) = x_0-x_1+x_2-\ldots - x_{m-1}+\sum_{k=0}^\infty a_k \cdot x_m^k 
+x_1=b^x-1,x_2=b^{x_1}-1,\ldots x_m=b^{x_{m-1}}-1
+ S(x)' = f'(t)_{|t=x} - f'(t)_{|t=x_1} + \ldots - f'(t)_{|t=x_{m-1}} + \sum_{k=0}^\infty (k+1)\cdot a_{k+1} \cdot x_m^k \qquad \text{???}
+x_k=\underbrace{f(\cdots(f}_k(x))\cdots)=f(x_{k-1})
+f'(t)=\ln b \cdot b^t
+\frac d{dx} x_k = f'(x_{k-1})\cdot\frac d{dx} x_{k-1} 
+\frac d{dx} x_k = f'(x_{k-1})f'(x_{k-2})\cdot\ldots\cdot f'(x).
+\frac d{dx} x_k = (\ln b)^k\cdot b^{x_{k-1}+x_{k-2}+\ldots+ x}.

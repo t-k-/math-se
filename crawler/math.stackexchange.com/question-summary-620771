@@ -1,0 +1,21 @@
+t
+A_t:\Omega_0 \to \Omega_t
+\mathbb{R}^n
+w
+\frac{d}{dt}A_t(y) = w(A_t(y),t)
+J_{A_t}
+A_t
+\frac{d}{dt}\text{det}J_{A_t}(y) = \nabla \cdot w(A_t(y))\text{det}J_{A_t}(y)?
+J_{A_t}
+ \frac{d}{dt} \det(G(t)) = \det(G(t)) \text{trace}[G(t)^{-1} G'(t)] .
+t = t_0
+H(t) = G(t_0)^{-1} G(t)
+H'(t) = G(t_0)^{-1} G'(t)
+H(t_0) = I
+H(t)
+t = t_0
+ \frac d{dt} \det(H(t))\big|_{t = t_0} = \text{trace}(H'(t_0)) .\tag1
+J_{A_t}
+(1)
+H(t) = I + (t-t_0) H'(t_0) + o(t-t_0)
+\det(H(t)) = 1 + (t-t_0)\text{trace}(H'(t_0)) + o(t-t_0)

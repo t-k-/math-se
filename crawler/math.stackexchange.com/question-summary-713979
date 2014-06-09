@@ -1,0 +1,11 @@
+=\int_{-6}^{-3}{\sqrt{x^2-9}\over x}\,dx
+u=\sqrt{x^2-9}\implies du ={x\over \sqrt{x^2-9}}
+=\int_{x=-6}^{x=-3}{\sqrt{x^2-9}\over x}\cdot{\sqrt{x^2-9}\over x}\,dx
+=\int_{x-6}^{x=-3}{x^2-9 \over x^2}\,du
+=\int_{x=-6}^{x=-3}{u^2\,du \over u^2 + 9}
+=\int_{x=-6}^{x=-3}{du\over 1 + \left(\frac3{u}\right)^2}
+=\left[\tan^{-1}\left({3\over \sqrt{x^2-9}}\right)\right]_{-6}^{-3}
+=\pi/2
+\arctan (\frac{3}{u})
+\frac{u^2}{u^2+9}
+1-\frac{9}{u^2+9}

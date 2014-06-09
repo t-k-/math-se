@@ -1,0 +1,13 @@
+ \int_0^\infty \frac{e^{-at} - e^{-bt}}{t} \text{d}t 
+ \frac{ e^{-at} - e^{-bt} }{t} = \int^b_a e^{-xt} dx 
+ \int^{\infty}_0 \int^b_a e^{-xt} dx dt = \int^b_a \int^{\infty}_0 e^{-xt} dt dx 
+ = \int^b_a \frac{1}{x} dx = \log(b/a) 
+ g(b) = \int_{0}^\infty \frac{e^{-at} - e^{-bt}}{t} dt. 
+b
+g(b) = \ln b + C
+C
+C
+a
+g(a) = 0
+ g'(b) = \frac{d}{db}\int_{0}^\infty \frac{e^{-at} - e^{-bt}}{t} dt = \int_{0}^{\infty} \frac{\partial}{\partial b} \frac{e^{-at} - e^{-bt}}{t} dt. 
+ g'(b) = \int_{0}^{\infty} e^{-bt} dt = - \left.\frac{e^{-bt}}{b} \right|_{0}^{\infty} = \frac{1}{b}. 

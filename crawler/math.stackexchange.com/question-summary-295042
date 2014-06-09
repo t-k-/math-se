@@ -1,0 +1,174 @@
+x_n
+x_1
+1
+x_2
+n
+x_1+x_2
+2
+3
+x_n
+x_1+...+x_n
+n
+x_1=1
+x_2=3
+x_3=2
+x_n
+x_{(x_n)}
+n
+x_2=3
+x_3=2
+\varphi = \frac{1+\sqrt{5}}{2}
+\frac{1}{\varphi}+\frac{1}{\varphi ^2}=1
+\lceil {n \varphi} \rceil, \lceil {n \varphi ^2} \rceil
+a_1=1, a_{\lceil {n \varphi} \rceil}=\lceil {n \varphi ^2} \rceil, a_{\lceil {n \varphi ^2} \rceil}=\lceil {n \varphi} \rceil
+a_{a_n}=n
+\sum\limits_{i=1}^{n}{a_i}=n \lceil{\frac{n}{\varphi}} \rceil
+n
+\sum\limits_{i=1}^{n}{a_i}=n \lceil{\frac{n}{\varphi}} \rceil
+a_n
+n \mid \sum\limits_{i=1}^{n}{a_i}
+n=1
+1=1 \lceil{\frac{1}{\varphi}} \rceil
+n=2
+1+3=2 \lceil{\frac{2}{\varphi}} \rceil
+n=k \geq 2
+\sum\limits_{i=1}^{k}{a_i}=k \lceil{\frac{k}{\varphi}} \rceil
+k+1=m \varphi +1- \{m \varphi \}
+m-1<m-\frac{\{m \varphi \}}{\varphi}=\frac{k}{\varphi}<m<m+\frac{1-\{m \varphi \}}{\varphi}=\frac{k+1}{\varphi}<m+1
+\lceil{\frac{k}{\varphi}} \rceil=m, \lceil{\frac{k+1}{\varphi}} \rceil=m+1
+\sum\limits_{i=1}^{k+1}{a_i}=k \lceil{\frac{k}{\varphi}} \rceil+a_{k+1}=km+(m+k+1)=(k+1)(m+1)=(k+1) \lceil{\frac{k+1}{\varphi}} \rceil
+k+1=m \varphi ^2 +1-\{m \varphi ^2 \}
+\lceil{c \varphi} \rceil=k, \lceil{(c+1) \varphi} \rceil=k+2
+k=c \varphi +1-\{c \varphi \}, k+2=(c+1) \varphi +1-\{(c+1) \varphi \}
+\lceil \frac{k}{\varphi} \rceil =\lceil m \varphi \rceil =\lceil \frac{k+1}{\varphi} \rceil =c+1
+k+1=m+c+1, a_{k+1}=c+1
+\sum\limits_{i=1}^{k+1}{a_i}=k \lceil{\frac{k}{\varphi}} \rceil +a_{k+1}=k(c+1)+(c+1)=(k+1)(c+1)=(k+1) \lceil{\frac{k+1}{\varphi}} \rceil
+x_n
+a_n
+x_n=a_n \, \forall n \in \mathbb{Z}^+
+x_n
+x_{x_n}=n
+0
+\def\N{\mathbf N}0\in\N
+0
+a_i=x_{i+1}-1
+i\in\N
+(a_i)_{i\in\N}
+a_i\in\N
+a_i\neq a_j
+0\leq j<i
+a_0+a_1+\ldots+a_i
+i+1
+a_0=0
+i\mapsto a_i
+\N
+a_{a_i}=i
+i\in\N
+\def\dn#1{\lfloor#1\rfloor}\def\up#1{\lceil#1\rceil}\up x-x
+x
+\def\cfr#1{\operatorname{cf}(#1)}\cfr x
+\phi
+1+\phi=\phi^2
+1/\phi+1=\phi
+1/\phi^2+1/\phi=1
+k>0
+\def\lo{\operatorname{low}}\lo(k)
+\def\hi{\operatorname{high}}\hi(k)
+\cfr{k\phi}+\cfr{k/\phi^2}=1
+(k+1)/\phi\in\mathbf N
+\phi
+   \cfr{k\phi}=\cfr{k/\phi}<1/\phi=1-1/\phi^2   \quad\text{or equivalently}\quad   \cfr{k/\phi^2}>1/\phi^2=1-1/\phi 
+   \cfr{k\phi}=\cfr{k/\phi}>1/\phi=1-1/\phi^2   \quad\text{or equivalently}\quad   \cfr{k/\phi^2}<1/\phi^2=1-1/\phi 
+\lo(l)
+n=\up{l/\phi}
+\cfr{l/\phi}=n-l/\phi<1/\phi
+n\phi-l=\phi(n-l/\phi)<1
+l=\dn{n\phi}
+\lo(\dn{n\phi})
+n>0
+\hi(h)
+n=\up{h/\phi^2}
+\cfr{h/\phi^2}=n-h/\phi^2<1/\phi^2
+n\phi^2-h=\phi^2(n-h/\phi^2)<1
+h=\dn{n\phi^2}
+\hi(\dn{n\phi^2})
+n>0
+(a_i)_{i\in\N}
+i=0
+\lo(i)
+\hi(i)
+l
+\lo(l)
+l=\dn{n\phi}
+a_l=l+n=\dn{n\phi+n}=\dn{n\phi^2}
+h
+\hi(h)
+h=\dn{n\phi^2}
+a_h=h-n=\dn{n\phi^2-n}=\dn{n\phi}
+n\in\N
+i\mapsto A_i
+\N
+   a_i=   \begin{cases}     0 & \text{if $i=0$,} \\     \up{i\phi}=i+\up{i/\phi} & \text{if $\lo(i)$,} \\     \dn{i/\phi}=i-\up{i/\phi^2} & \text{if $\hi(i)$.} \\   \end{cases} 
+   a_{\dn{n\phi}}=\dn{n\phi^2} \quad\text{and}\quad   a_{\dn{n\phi^2}}=\dn{n\phi} \qquad\text{for all $n\in\N$,} 
+(a_i)_{i\in\N}
+\N
+1
+a_k
+a_i
+\lo(k)
+a_k=\dn{k/\phi}<k+1
+k+1
+\lo(k)
+2
+i\leq\dn{k/\phi}
+a_0,a_1,\ldots,a_{k-1}
+a_k=\up{k\phi}=\dn{k/\phi}+k+1
+k+1
+\dn{k/\phi}
+n=\sum_{k\ge 1}e_kF_k\;,
+e_k\in\{0,1\}
+F_1
+e_2=1
+e_2=1,e_1=0
+e_2=0,e_1=1
+19
+x(n)
+x\big(x(n)\big)=n
+n\in\Bbb Z^+
+\begin{array}{r} n:&1&\color{red}{2}&\color{red}{3}&\color{blue}{4}&\underline{5}&\color{blue}{6}&\color{green}{7}&\underline{8}&\color{cyan}{9}&\color{magenta}{10}&\color{green}{11}&\color{purple}{12}&\tiny{13}&\color{cyan}{14}&\tiny{15}&\color{magenta}{16}&\tiny{17}&\tiny{18}&\color{purple}{19}\\ x_n:&1&\color{red}{3}&\color{red}{2}&\color{blue}{6}&\underline{8}&\color{blue}{4}&\color{green}{11}&\underline{5}&\color{cyan}{14}&\color{magenta}{16}&\color{green}{7}&\color{purple}{19}&\tiny{21}&\color{cyan}{9}&\tiny{24}&\color{magenta}{10}&\tiny{27}&\tiny{29}&\color{purple}{12} \end{array}
+\begin{array}{r|r|r|r|c|c} n&x(n)&n_{\text{Zeck}}&x(n)_{\text{Zeck}}&\text{Shift}&\text{Fibonacci numbers}\\ \hline 1&1&10&1&\to&F_2,F_1\\ 2&3&100&1000&\leftarrow&F_3,F_4\\ 3&2&1000&100&\to&F_4,F_3\\ 4&6&1001&10010&\leftarrow\\ 5&8&10000&100000&\leftarrow&F_5,F_6\\ 6&4&10010&1001&\to\\ 7&11&10100&101000&\leftarrow\\ 8&5&100000&10000&\to&F_6,F_5\\ 9&14&100001&1000010&\leftarrow\\ 10&16&100100&1001000&\leftarrow\\ 11&7&101000&10100&\to\\ 12&19&101001&1010010&\leftarrow\\ 13&21&1000000&10000000&\leftarrow&F_7,F_8\\ 14&9&1000010&100001&\to\\ 15&24&1000100&10001000&\leftarrow\\ 16&10&1001000&100100&\to\\ 17&27&1001001&10010010&\leftarrow\\ 18&29&1010000&10100000&\leftarrow\\ 19&12&1010010&101001&\to \end{array}
+F_1
+F_2
+n
+\to
+0
+\leftarrow
+1
+0101101011011010110\;,
+\phi = \frac {1+\sqrt 5}2
+1
+\lceil n\phi \rceil
+\lceil n\phi^2 \rceil
+\frac 1\phi + \frac 1{\phi^2}=1
+a_{\lceil n\phi \rceil}=\lceil n\phi^2 \rceil
+a_{\lceil n\phi^2 \rceil}=\lceil n\phi \rceil
+n
+\phi^2=1+\phi
+ a_n = \begin{cases} x_n & x_n < n \\ x_n - n & x_n \geq n \end{cases} 
+a_{n+1} - a_n \in \{ 0, 1 \}
+n_i
+x_{n_i} \geq {n_i}
+x_{n_i} = n_i + i
+n_0 = 1
+x_n < n
+x_{n+1} = (n+1) + x_n
+X_n
+\sum_{i=1}^n x_n
+\begin{array}{rrlrr} n & x_n   &    & X_n & X_n/x_n \\ 1 & 1     &    & 1   & 1 \\ 2 & \not1 & 3  & 4   & 2 \\ 3 & 2     &    & 6   & 2 \\ 4 & \not2 & 6  & 12  & 3 \\ 5 & \not3 & 8  & 20  & 4 \\ 6 & 4     &    & 24  & 4 \\ 7 & \not4 & 11 & 35  & 5 \\ \end{array} 
+x_n
+X_{n-1}/(n-1)
+x_n
+X_{n-1}=a(n-1)
+X_{n-1}+ X_{n-1}/(n-1) =an
+x_n < 2n
+n

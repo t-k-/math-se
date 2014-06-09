@@ -1,0 +1,35 @@
+A
+n \times n
+G=(V,E)
+n
+A=(a_{ij})
+i,j
+A^k
+i-j
+G
+k
+a_{ij}=\begin{cases} 1 & ij\in E  \\ 0 & ij\notin E \end{cases}
+w_k(i,j)
+i-j
+k
+i-j
+k
+k-1
+i
+N(j)
+N(j)
+j
+[A^k]_{ij}=[A^{k-1}A]_{ij}=[A^{k-1}]_i^T [A]_j
+A
+w_{1}(i,j)=\begin{cases} 1 & ij\in E  \\ 0 & ij\notin E \end{cases}
+w_k(i,j)=\sum_{x \in N(j)}w_{k-1}(i,x)
+[A^k]_{ij}=\sum_{l=1}^n[A^{k-1}]_{il}[A]_{lj}
+A
+[A^k]_{ij}=\sum_{x\in N(j)}[A^{k-1}]_{ix}
+k
+w_k(i,j)=[A^k]_{ij}
+i,j\in\{1,\ldots,n\}
+k=1
+k>1
+k-1
+\begin{align*} w_k(i,j)&=\sum_{\ell\in N(j)}w_{k-1}(i,\ell)\\ &=\sum_{\ell\in N(j)}[A^{k-1}]_{i\ell}&\text{induction hypothesis}\\ &=\sum_{\ell=1}^n[A^{k-1}]_{i\ell}[A]_{\ell j}&\text{since }[A]_{\ell j}=\begin{cases}1,&\ell\in N(j)\\0,&\ell\notin N(j)\end{cases}\\ &=[A^k]_{ij}\;, \end{align*}

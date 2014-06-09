@@ -1,0 +1,33 @@
+18539 \rightarrow 93581
+n = \lfloor \log_{10}x\rfloor
+x
+n + 1
+x = \displaystyle\sum_{i=0}^nx_i10^i
+x_i \in \{0, 1, \dots, 9\}
+x_k
+(k+1)^{\text{st}}
+x
+10^k
+x10^{-k} = \sum_{i=0}^nx_i10^{i-k} = \sum_{i=0}^{k-1}x_i10^{i-k} + \sum_{i=k}^nx_i10^{i-k}.
+1
+\lfloor x10^{-k}\rfloor = \left\lfloor\sum_{i=0}^nx_i10^{i-k}\right\rfloor = \sum_{i=k}^nx_i10^{i-k}.
+k+1
+x_k
+x_k = \lfloor x10^{-k}\rfloor - 10\lfloor x10^{-(k+1)}\rfloor
+\lfloor x10^{-n+1}\rfloor = 0
+k = 1
+x
+x10^{\lfloor \log_{10}x\rfloor} - 99\sum_{k=1}^{\lfloor \log_{10}x\rfloor}\lfloor x10^{-k}\rfloor10^{\lfloor \log_{10}x\rfloor-k}.
+x = 123
+\lfloor \log_{10}x\rfloor = 2
+\lfloor x10^{-1}\rfloor = \lfloor 12.3\rfloor = 12
+\lfloor x10^{-2}\rfloor = \lfloor 1.23\rfloor = 1
+123\times 10^2 - 99\left(12\times 10 + 1\times 1\right) = 123\times 100 - 99\times 121 = 12300 - 11979 = 321
+R(N)=U(N)10^{[log(N)]}+R([N/10])
+U(N)=N-10[N/10]
+N
+R(0)
+0
+10
+R_b(N) = U_b(N)b^{[log_b(N)]}+R_b([N/b])
+U_b(N)=N-b[N/b]

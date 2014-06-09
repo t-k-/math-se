@@ -1,0 +1,27 @@
+\mu
+\Sigma
+\boldsymbol\mu = \begin{bmatrix}  \boldsymbol\mu_1 \\  \boldsymbol\mu_2 \end{bmatrix}
+\boldsymbol\Sigma = \begin{bmatrix}  \boldsymbol\Sigma_{11} & \boldsymbol\Sigma_{12} \\  \boldsymbol\Sigma_{21} & \boldsymbol\Sigma_{22} \end{bmatrix} \quad
+x_1
+x_2= a
+(x_1|x_2=a) \sim N(\bar{\mu}, \bar{\Sigma})
+\bar{\boldsymbol\mu} = \boldsymbol\mu_1 + \boldsymbol\Sigma_{12} \boldsymbol\Sigma_{22}^{-1} \left(  \mathbf{a} - \boldsymbol\mu_2 \right) 
+\overline{\boldsymbol\Sigma} = \boldsymbol\Sigma_{11} - \boldsymbol\Sigma_{12} \boldsymbol\Sigma_{22}^{-1} \boldsymbol\Sigma_{21}.  
+\begin{align} Y_1 &=X_1-\Sigma_{12}\Sigma_{22}^{-1}X_2 \\ Y_2 &=X_2\end{align}
+\begin{pmatrix}         Y_1 \\         Y_2          \end{pmatrix} \sim\mathcal{N_p}\left[\begin{pmatrix}         \mu_1-\Sigma_{12}\Sigma_{22}^{-1}\mu_2 \\         \mu_2          \end{pmatrix} ,\begin{pmatrix}         \bar \Sigma & 0 \\         0 & \Sigma_{22}         \end{pmatrix} \right] 
+\begin{pmatrix}         Y_1 \\         Y_2          \end{pmatrix} 
+Y_1 \sim \mathcal{N_{p1}}(\mu_1-\Sigma_{12}\Sigma_{22}^{-1}\mu_2, \bar \Sigma)
+Y_2 \sim \mathcal{N_{p-p1}}(\mu_2,\Sigma_{22})
+Cov(Y_1,Y_2)=0
+\begin{align}n(y_1,y_2) &= n(y_1|\mu_1-\Sigma_{12}\Sigma_{22}^{-1}\mu_2, \bar \Sigma)\cdot n(y_2| \mu_2,\Sigma_{22}) \end{align}
+\begin{pmatrix}         X_1 \\         X_2          \end{pmatrix} 
+y_1
+x_1-\Sigma_{12}\Sigma_{22}^{-1}x_2
+y_2
+x_2
+\begin{pmatrix}         X_1 \\         X_2          \end{pmatrix} 
+\begin{align}n(x_1,x_2) &= n((x_1-\Sigma_{12}\Sigma_{22}^{-1}x_2)|\mu_1-\Sigma_{12}\Sigma_{22}^{-1}\mu_2, \bar \Sigma)\cdot n(x_2| \mu_2,\Sigma_{22}) \end{align}
+X_1
+X_2=a
+\begin{align}f_{X_1|X_2=a}(x_1) &= \dfrac{n(x_1,a)}{n(a|\mu_2,\Sigma_{22})} \\ &=n(x_1-\Sigma_{12}\Sigma_{22}^{-1}a|\mu_2-\Sigma_{12}\Sigma_{22}^{-1}\mu_2, \bar \Sigma) \\ &= \dfrac{1}{(2 \pi)^{p/2}\sqrt{|\bar \Sigma|}}\exp\left( \frac{1}{2}\left[ (x_1-\mu_1- \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2))'\bar \Sigma^{-1}(x_1-\mu_1- \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2)) \right]\right) \end{align}
+X_1|X_2=a \sim \mathcal{N_{p1}}(\bar \mu, \bar \Sigma)

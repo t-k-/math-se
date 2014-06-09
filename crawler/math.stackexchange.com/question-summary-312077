@@ -1,0 +1,36 @@
+f:\Bbb R^n\rightarrow\Bbb R
+f(x)=x^TAx
+A
+x^T
+f(x+h)
+f(x)
+h
+h\to 0
+f(x+h)=(x+h)^TA(x+h)=x^TAx+ h^TAx+x^TAh+h^TAh=f(x)+2x^TAh+h^TAh
+f(x+h)-f(x)=2x^TA\cdot h + h^TAh
+h
+2x^TA
+h
+0
+h
+2x^TA
+2Ax
+x^T
+f
+ df_x(h)=f(h). 
+g
+\|g(h,k)\|\leq C\|h\|\|k\|
+ dg_{(x,y)}(h,k)=g(x,k)+g(h,y). 
+f(x)=(x,x)
+g(x,y)=x^tAy
+g\circ f(x)=x^tAx
+ d(g\circ f)_x(h)=dg_{f(x)}\circ df_x(h)=dg_{(x,x)} (h,h)=x^tAh+h^tAx. 
+A
+A
+ x^tAh+h^tAx=x^tAh+h^tA^tx=x^tAh+(Ah)^tx=2x^tAh. 
+h
+ d(g\circ f)_x=2x^tA. 
+\mathbf{x}^{n\times 1}=(x_1,\dots ,x_n)'
+\mathbf y=f(\mathbf x)
+\mathbf{x}
+\frac{\partial f}{\partial \mathbf x}=\begin{pmatrix} \frac{\partial f}{\partial  x_1}  \\ \vdots\\ \frac{\partial f}{\partial  x_n} \end{pmatrix}

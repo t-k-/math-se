@@ -1,0 +1,20 @@
+  f(x,y) = \begin{cases} (x^2 + y^2)\sin\frac{1}{x^2 + y^2},  & \text{if 
+} \\ 0, & \text{if 
+}  \\ \end{cases}
+\lim_{{h \to 0}\\{, k\to0}} \frac{f(x+h, y+k) - f(x,y) - f'_x(x,y)h - f'_y(x,y)k}{\sqrt{h^2 + k^2}} = 0.
+f'_x = 2x\sin(\frac{1}{x^2 + y^2}) - (x^2 + y^2)\frac{2x \cos(\frac{1}{x^2 + y^2})}{(x^2 + y^2)^2} = \dots = 2x\bigg(\sin(\frac{1}{x^2 + y^2}) - \frac{\cos(\frac{1}{x^2 + y^2})}{x^2 + y^2}\bigg)
+f'_y = 2y\bigg(\sin(\frac{1}{x^2 + y^2}) - \frac{\cos(\frac{1}{x^2 + y^2})}{x^2 + y^2}\bigg).
+f:\mathbb{R}^2\to \mathbb{R}
+x\in \mathbb{R}^2
+T:\mathbb{R}^2\to \mathbb{R}
+x=(0,0)
+T=0
+x\in \mathbb{R}^2\setminus {(0,0)}
+f(x)= \Vert x\Vert^2 \sin(\Vert x\Vert ^{-2})
+f
+x=(0,0)
+f
+f
+ \lim\limits_{h\to 0}\frac{|f(x+h)-f(x)-T(h)|}{\Vert h\Vert }=0 
+ \frac{|f(x+h)-f(x)-T(h)|}{\Vert h\Vert }= \frac{\Vert h\Vert^2 \sin(\Vert h\Vert ^{-2})}{\Vert h\Vert}= \Vert h\Vert |\sin(\Vert h\Vert ^{-2})| 
+ 0\leq \lim\limits_{h\to 0}\frac{|f(x+h)-f(x)-T(h)|}{\Vert h\Vert }= \lim\limits_{h\to 0}\Vert h\Vert | \sin(\Vert h\Vert ^{-2})| \leq \lim\limits_{h\to 0}\Vert h\Vert= 0 

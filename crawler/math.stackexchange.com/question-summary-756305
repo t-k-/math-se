@@ -1,0 +1,39 @@
+ −x^2 − y^2 + z^2 = 61
+z = 8
+\int_0^{\sqrt{3}}  8r-\sqrt{61+r^2}r dr
+r
+12 - 512/2 + \dfrac{61^3}{3}
+\theta
+0
+2\pi
+xy
+2\pi
+-x^2-y^2+z^2=61
+x^2+y^2=z^2-61
+z
+\sqrt{z^2-61}
+(0,0,\sqrt{61})
+0^2+0^2-\sqrt{61}^2=61
+z
+\sqrt{61}
+r(\theta)=\sqrt{z^2-61}
+\theta
+h(r)
+x^2+y^2=\sqrt{z^2-61}^2
+\int_{\sqrt{61}}^8\int_0^{2\pi}\frac{1}{2}r(\theta)^2d\theta dz
+=\int_{\sqrt{61}}^8\int_0^{2\pi}\frac{1}{2}\sqrt{z^2-61}^2d\theta dz
+=\int_{\sqrt{61}}^8\int_0^{2\pi}\frac{1}{2}(z^2-61)d\theta dz
+=\int_{\sqrt{61}}^8\frac{1}{2}(z^2-61)dz\int_0^{2\pi}1d\theta
+=\pi\int_{\sqrt{61}}^8(z^2-61)dz
+\int_0^{\sqrt{3}}2\pi r h(r)dr
+=\int_0^{\sqrt{3}}2\pi r (8-\sqrt{r^2+61})dr
+=2\pi\int_0^{\sqrt{3}} (8r-r\sqrt{r^2+61})dr
+=2\pi\bigg( 12 -\int_0^{\sqrt{3}} (r\sqrt{r^2+61})dr\bigg)
+\int_0^{\sqrt{3}} r\sqrt{r^2+61}dr
+=\int_0^{\sqrt{3}} r\sqrt{r^2+61}dr\cdot\frac{\frac{d(r^2+61)}{dr}}{\frac{d(r^2+61)}{dr}}
+=\int_0^{\sqrt{3}} \frac{r\sqrt{r^2+61}}{2r}d(r^2+61)
+=\frac{1}{2}\int_0^{\sqrt{3}} \sqrt{r^2+61}d(r^2+61)
+=\frac{1}{2}\int_{61}^{64} \sqrt{u}du,\:u=r^2+61
+=\frac{\sqrt{u}^3}{3}\bigg|_{61}^{64}
+=\frac{8^3}{3} - \frac{\sqrt{61}^3}{3}
+\int_0^{2\pi}\int_0^{\sqrt{3}}(8r-r\sqrt{r^2+61})drd\theta=2\pi\bigg(12-\frac{8^3}{3} + \frac{\sqrt{61}^3}{3}\bigg)

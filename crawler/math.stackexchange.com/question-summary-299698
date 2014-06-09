@@ -1,0 +1,7 @@
+m\frac{dv}{dt}=gm-Kv^2
+v(0)=32; m=128;g=10;K=5
+128\frac{dv}{dt}=1280-5v^2
+\frac{dv}{dt}=10-\frac{5}{128}v^2
+\frac{dv}{dt}=\frac{-5}{128}(v^2-256)
+\frac{dv}{v^2-256}=\frac{-5}{128}dt
+\int \frac{dv}{v^2-256} = \frac{1}{32} \int dv \left ( \frac{1}{v-16} - \frac{1}{v+16} \right ) = \frac{1}{32} \ln{\left ( \frac{v-16}{v+16} \right ) }+ C

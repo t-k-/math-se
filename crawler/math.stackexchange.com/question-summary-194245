@@ -1,0 +1,9 @@
+\vec{x}=(x_1, x_2, x_3)
+x_3=0
+T(\vec{x})=(x_1, x_2, -x_3)
+A=\begin{bmatrix}1&0&0 \\ 0&1&0 \\ 0&0&-1\end{bmatrix} \times \vec{x}
+(x_1, x_2, -x_3)
+A
+T((x_1,x_2,x_3)+(y_1,y_2,y_3))=T(x_1,x_2,x_3)+T(y_1,y_2,y_3)
+T(\alpha(x_1,x_2,x_3))=\alpha T((x_1,x_2,x_3))
+ \begin{eqnarray} T\left(a_1 {\bf v}_1 +  a_2 {\bf v}_2\right) &=& T\left(a_1\left(v_{1x}, v_{1y}, v_{1z}\right) + a_2\left(v_{2x}, v_{2y}, v_{2z}\right)\right) \\ &=& T\left(\left(a_1 v_{1x}, a_1 v_{1y}, a_1 v_{1z}\right) + \left(a_2 v_{2x}, a_2 v_{2y}, a_2 v_{2z}\right)\right) \\ &=& T\left(a_1 v_{1x} + a_2 v_{2x}, a_1 v_{1y} + a_2 v_{2y}, a_1 v_{1z} + a_2 v_{2z}\right) \\ &=& \left(a_1 v_{1x} + a_2 v_{2x}, a_1 v_{1y} + a_2 v_{2y}, - a_1 v_{1z} - a_2 v_{2z}\right) \\ &=& \left(a_1 v_{1x}, a_1 v_{1y}, -a_1 v_{1z}\right) + \left(a_2 v_{2x}, a_2 v_{2y}, -a_2 v_{2z}\right) \\ &=& a_1 \left(v_{1x}, v_{1y}, -v_{1z}\right) + a_2 \left(v_{2x}, v_{2y}, -v_{2z}\right) \\ &=& a_1 T\left({\bf v}_1\right) + a_2 T\left({\bf v}_2\right). \end{eqnarray} 

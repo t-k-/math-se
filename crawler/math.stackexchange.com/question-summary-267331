@@ -1,0 +1,41 @@
+\Delta_3 = \frac1{r^2}\partial_r(r^2\partial_r) + \frac1{r^2} L^2
+L^2 = \frac1{\sin\theta}\partial_\theta(\sin\theta\partial_\theta)+\frac1{\sin^2\theta}\partial_\phi^2.
+\Delta_4 = \frac1{r^3}\partial_r(r^3\partial_r) + \frac1{r^2}M^2
+d
+\Delta_d
+\Delta_d = \frac1{r_d^{d-1}}\partial_{r_d}(r_d^{d-1}\partial_{r_d}) + \frac1{r_d^2}L_d^2
+r_d
+d
+L_d
+d
+d=1
+x
+L_1=0
+\Delta_1=\partial_x^2=\frac{d^2}{dx^2}
+d=2
+(x_1,x_2) = \rho(\cos\phi, \sin\phi)
+L_2^2=\partial_\phi^2
+d-1\to d\ge3
+r\equiv r_d
+z\equiv x_d \equiv r\cos\theta
+\theta
+\rho\equiv r_{d-1} = r\sin\theta
+d\rho = dr\sin\theta + d\theta r\cos\theta
+dz=dr\cos\theta-d\theta r\sin\theta
+\Delta_d = \Delta_{d-1}+\partial_z^2
+\frac1{\rho^{d-2}}\partial_\rho(\rho^{d-2}\partial_\rho) = \partial_\rho^2 + \frac{d-2}\rho\partial_\rho
+d\rho\partial_\rho + dz\partial_z = dr\partial_r + d\theta\partial_\theta
+\begin{pmatrix}\partial_\rho\\\partial_z\end{pmatrix} = \begin{pmatrix}\sin\theta & \frac1r\cos\theta\\                  \cos\theta&-\frac1r\sin\theta\end{pmatrix}   \begin{pmatrix}\partial_r\\\partial_\theta\end{pmatrix}.
+\partial_\rho^2 + \partial_z^2 = (\partial_\rho,\partial_z)\begin{pmatrix}\partial_\rho\\\partial_z\end{pmatrix} = \partial_r^2 + \frac1r\partial_r + \frac1{r^2}\partial_\theta^2 
+\frac{d-2}\rho\partial_\rho = \frac{d-2}{r\sin\theta}(\sin\theta\partial_r+\frac1r\cos\theta\partial_\theta)
+\boxed{\Delta_d = \underbrace{\partial_r^2 + \frac{d-1}r\partial_r}_{\frac1{r^{d-1}}\partial_r(r^{d-1}\partial_r)} + \frac1{r^2}\Big(\underbrace{\partial_\theta^2+(d-2)\cot\theta\partial_\theta}_{=\frac1{\sin^{d-2}\theta}\partial_\theta(\sin^{d-2}\theta\partial_\theta)}+\frac1{\sin^2\theta}L_{d-1}^2\Big).}
+\theta
+L_d^2 = \frac1{\sin^{d-2}\theta}\partial_\theta(\sin^{d-2}\theta\partial_\theta) + \frac1{\sin^2\theta} L_{d-1}^2.
+\boxed{L_d^2 = \sum_{i=2}^d \left(\prod_{j=i+1}^d\frac1{\sin^2\theta_j}\right)\frac1{\sin^{i-2}\theta_i}\partial_{\theta_i}(\sin^{i-2}\theta_i\partial_{\theta_i})}
+\theta_j
+j-1
+\theta_1
+d=2
+i-2
+(\phi,\theta,\omega)
+L_4^2 = \frac1{\sin^2\omega}\left(\partial_\omega(\sin^2\omega\partial_\omega) + \frac1{\sin^2\theta}\left((\sin\theta\partial_\theta)^2 + \partial_\phi^2\right)\right)

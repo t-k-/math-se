@@ -1,0 +1,26 @@
+\nabla \times \vec{B}\left(\vec{r}\right) = \mu_0 \vec{J}\left(\vec{r}\right)
+\nabla\frac{1}{|\vec{r}-\vec{a}|} = -\frac{\vec{r}-\vec{a}}{|\vec{r}-\vec{a}|^3}
+\vec{J}\left(\vec{r}_s\right)
+\vec{r}
+\vec{J}\left(\vec{r}_s\right)
+\vec{r}
+\nabla \cdot \vec{J}\left(\vec{r}_s\right) = 0
+ \nabla \iiint_{V_s}             \left(               \vec{J}\left(\vec{r}_s\right) \cdot \nabla \frac {1} {\left|\vec{r}-\vec{r}_s\right|}             \right)       \space dV\left(\vec{r}_s\right) 
+\nabla \cdot \vec{J}\left(\vec{r}_s\right)
+ \vec{B} \left( \vec{r} \right) =     \frac{\mu_0}{4\pi}       \iiint_{V_s}            \frac{\vec{J}\left(\vec{r}_s\right)}{\left|\vec{r}-\vec{r}_s\right|^3}            \times \left(\vec{r}-\vec{r}_s\right)        \space dV\left(\vec{r}_s\right) 
+ \vec{B} \left( \vec{r} \right) =     -\frac{\mu_0}{4\pi}       \iiint_{V_s}           \vec{J}\left(\vec{r}_s\right)           \times            \nabla_{\vec{r}}            \frac{1}{\left|\vec{r}-\vec{r}_s\right|}        \space dV\left(\vec{r}_s\right) 
+ \vec{B} \left( \vec{r} \right) =     \frac{\mu_0}{4\pi}       \iiint_{V_s}           \nabla_{\vec{r}}           \times             \frac{\vec{J}\left(\vec{r}_s\right)}{\left|\vec{r}-\vec{r}_s\right|}        \space dV\left(\vec{r}_s\right) 
+ \nabla_{\vec{r}} \times \vec{B} \left( \vec{r} \right) =     \frac{\mu_0}{4\pi}       \iiint_{V_s}           \nabla_{\vec{r}} \times           \left(           \nabla_{\vec{r}}           \times            \frac{\vec{J}\left(\vec{r}_s\right)}{\left|\vec{r}-\vec{r}_s\right|}           \right)       \space dV\left(\vec{r}_s\right) 
+    \frac{\mu_0}{4\pi}       \iiint_{V_s}           \left(                     \nabla_{\vec{r}}\left(\nabla_{\vec{r}} \cdot \frac{\vec{J}\left(\vec{r}_s\right)}{\left|\vec{r}-\vec{r}_s\right|} \right)            -  {\nabla^2}_{\vec{r}} \frac{\vec{J}\left(\vec{r}_s\right)}{\left|\vec{r}-\vec{r}_s\right|}           \right)       \space dV\left(\vec{r}_s\right) 
+    \frac{\mu_0}{4\pi}       \iiint_{V_s}           \left(           \nabla_{\vec{r}}             \left(               \vec{J}\left(\vec{r}_s\right) \cdot \nabla_{\vec{r}} \frac {1} {\left|\vec{r}-\vec{r}_s\right|}             \right)           + \vec{J}\left(\vec{r}_s\right) \space 4\pi \delta^3 \left(\vec{r}-\vec{r}_s\right)           \right)       \space dV\left(\vec{r}_s\right) 
+    \left[    \frac{\mu_0}{4\pi}       \iiint_{V_s}           \nabla_{\vec{r}}             \left(               \vec{J}\left(\vec{r}_s\right) \cdot \nabla_{\vec{r}} \frac {1} {\left|\vec{r}-\vec{r}_s\right|}             \right)       \space dV\left(\vec{r}_s\right)     \right]    \Large{ + \space\mu_0 \vec{J}\left(\vec{r}\right)} 
+     \frac{\mu_0}{4\pi}     \left[        \nabla_{\vec{r}}       \iiint_{V_s}             \left(               \vec{J}\left(\vec{r}_s\right) \cdot \nabla_{\vec{r}} \frac {1} {\left|\vec{r}-\vec{r}_s\right|}             \right)       \space dV\left(\vec{r}_s\right)       \right]       \Large{+ \space\mu_0 \vec{J}\left(\vec{r}\right)} 
+ \iiint_{V_s} \left( \vec{J}\left(\vec{r}_s\right) \cdot \nabla \frac {1} {\left|\vec{r}-\vec{r}_s\right|} \right) \space dV\left(\vec{r}_s\right) 
+\vec{r}
+\vec{r}_s
+\nabla\cdot\vec{J}=0
+ \nabla_{\vec{r}_s}\frac {1} {\left|\vec{r}-\vec{r}_s\right|} = -\nabla_{\vec{r}}\frac {1} {\left|\vec{r}-\vec{r}_s\right|} 
+  -\iiint_{V_s} \left( \vec{J}\left(\vec{r}_s\right) \cdot \nabla_{\vec{r}_s} \frac {1} {\left|\vec{r}-\vec{r}_s\right|} \right) \space dV\left(\vec{r}_s\right)  
+  \iiint_{V_s} \frac {\nabla_{\vec{r}_s} \cdot \vec{J}\left(\vec{r}_s\right)} {\left|\vec{r}-\vec{r}_s\right|}  dV\left(\vec{r}_s\right) -  \oint_{\partial V_s}  \frac {\vec{J}\left(\vec{r}_s\right)} {\left|\vec{r}-\vec{r}_s\right|}   \cdot d\vec{S}\left(\vec{r}_s\right) 
+V_s
+1/r

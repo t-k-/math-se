@@ -1,0 +1,45 @@
+n \in \mathbb{N}, s \in \mathbb{N}
+n \equiv Q_s(n) \left(\bmod\ 10^s - 1\right)
+n \equiv Q'_s(n)\left(\bmod\ 10^s + 1\right)
+Q_s(n) = \sum_{i=0}^{\infty}(a_{is+s-1}\dots a_{is+1}a_{is})
+Q_3 (6154328103) = 103 + 328 + 154 + 006 = 591
+Q'_s(n) = \sum_{i=0}^{\infty}(-1^i)(a_{is+s-1}\dots a_{is+1}a_{is})
+Q'_3 (6154328103) = 103 - 328 + 154 - 006 = -77
+n
+n = \sum_{i=0}^{\infty}(a_{is+s-1}\dots a_{is+1}a_{is}) \cdot 10^{is}
+6154328103 = 103 \cdot 10^{0 \cdot 3} + 328 \cdot 10^{1 \cdot 3} + 154 \cdot 10^{2 \cdot 3} + 6 \cdot 10^{3 \cdot 3}
+\rm\ 43211\ \:(mod\ 7)\:.\:
+\rm\ d_n\: d_{n-1}\ 
+\rm\ d_n\cdot 3 + d_{n-1}\:\ (mod\ 7),\:
+\rm\qquad\phantom{\equiv} \color{red}{4\ 3}\ 2\ 1\ 1
+\rm\qquad\equiv\phantom{4} \color{green}{1\ 2}\ 1\ 1\quad 
+\rm\quad \color{red}4\cdot 3 + \color{red}3\ \equiv\ \color{green}1 
+\rm\qquad\equiv\phantom{4\ 3} \color{royalblue}{5\ 1}\ 1\quad 
+\rm\quad \color{green}1\cdot 3 + \color{green}2\ \equiv\ \color{royalblue}5 
+\rm\qquad\equiv\phantom{4\ 3\ 5} \color{brown}{2\ 1}\quad 
+\rm\quad \color{royalblue}5\cdot 3 + \color{royalblue}1\ \equiv\ \color{brown}2 
+\rm\qquad\equiv\phantom{4\ 3\ 5\ 2} 0\quad 
+\rm\quad \color{brown}2\cdot 3 + \color{brown}1\ \equiv\ 0 
+\rm\ 43211\equiv 0\:\ (mod\ 7)\:,\:
+\rm\ 43211 = 7\cdot 6173\:.\:
+11
+9\:
+11
+9\:
+9
+11\cdots1
+99\cdots9
+\rm b\equiv 1 \implies  a_k b^k+ a_{k-1} b^{k-1}+\cdots +a_1b+a_0\equiv a_k+a_{k-1}+\cdots+a_1+a_0 \bmod (b-1)
+\rm b\equiv -1 \implies \large\circ \normalsize =a_k(-1)^k+a_{k-1}(-1)^{k-1}+\cdots-a_1+a_0 \bmod (b+1)
+i \ge 0
+n_i = (a_{is+s-1} \cdots a_{is})
+b = 10^s
+b \equiv 1 \mod (b - 1)
+n = \sum_{i = 0}^{\infty} n_i b^i \equiv \sum_{i = 0}^{\infty} n_i = Q_s(n) \mod (b-1)
+b \equiv -1 \mod (b+1)
+n = \sum_{i = 0}^{\infty} n_i b^i \equiv \sum_{i = 0}^{\infty} n_i (-1)^i = Q_s'(n) \mod (b+1)
+s = 1
+9
+9
+6154328103=6,000,000,000+154,000,000+328,000+103=(6)(1,000,000,000)+(154)(1,000,000)+(328)(1,000)+103=(6)(999,999,999+1)+(154)(999,999+1)+(328)(999+1)+103=6+154+328+103+(999)x
+x=(6)(1,001,001)+(154)(1,001)+(328)(1)

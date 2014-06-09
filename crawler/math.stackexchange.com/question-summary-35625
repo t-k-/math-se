@@ -1,0 +1,21 @@
+\in \mathbb R
+f(a,b,c)=c\cdot\int_a^b g(t) \cdot h(t,c) \,dt,\quad0\leq a<b
+\frac{\delta f(\cdot)}{\delta c} 
+h(\cdot)
+g(t)
+g(t)
+h(\cdot)
+h(t,c)=e^{-t\cdot d\cdot(1-c)},\quad0<c,d<1
+a
+b
+\frac{\delta f(\cdot)}{\delta a}
+h
+t
+c
+c
+t
+ \begin{eqnarray*} \frac{\partial}{\partial c} c \int_a ^b g(t) h(t,c) dt  &=&  \int_a ^b g(t) h(t,c) dt + c \frac{\partial}{\partial c}\int_a ^b g(t) h(t,c) dt \\ &=& \int_a ^b g(t) h(t,c) dt + c \int_a ^b \frac{\partial}{\partial c}(g(t) h(t,c)) dt  \\ &=& \int_a ^b g(t) h(t,c) dt + c \int_a ^b g(t) \frac{\partial}{\partial c}h(t,c) dt. \end{eqnarray*} 
+h
+ \begin{eqnarray*} \frac{\partial}{\partial c}h(t,c) &=& \frac{\partial}{\partial c}e^{-td + tdc}  \\ &=&  \frac{\partial}{\partial c}e^{-td}e^{tdc} \\ &=& e^{-td}te^{tc}= te^{-td + tdc} = tdh(t,c) . \end{eqnarray*}
+\begin{eqnarray*} &=& \int_a ^b g(t) h(t,c) dt + c \int_a ^b g(t) tdh(t,c) dt \\ &=& \int_a ^b (cdt+1)g(t) h(t,c) dt . \end{eqnarray*}
+g(t)

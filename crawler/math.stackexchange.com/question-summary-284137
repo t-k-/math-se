@@ -1,0 +1,20 @@
+1
+\Pr(Y=n)=e^{-(\lambda_1+\lambda_2)}\frac{(\lambda_1+\lambda_2)^n}{n!}.\tag{$1$}
+A_1
+X_1=x_1
+A_2
+X_2=x_2
+B
+Y=n
+\Pr(A_1\cap A_2|B).
+\frac{\Pr(A_1\cap A_2\cap B ) }{\Pr(B)}.
+(1)
+2
+x_1+x_2=n
+n=x_1+x_2
+x_2=n-x_1
+\left(e^{-\lambda_1}\frac{\lambda_1^{x_1}}{x_1!}\right)\left(e^{-\lambda_2}\frac{\lambda_2^{x_2}}{x_2!}\right),\tag{$2$}
+\Pr(A_1\cap A_2|B)=\left(\frac{\lambda_1^{x_1}}{x_1!}\right)\left(\frac{\lambda_2^{x_2}}{x_2!}\right) \left(\frac{n!}{(\lambda_1+\lambda_2)^n}  \right).
+\binom{n}{x_1}\left(\frac{\lambda_1}{\lambda_1+\lambda_2}\right)^{x_1}\left(\frac{\lambda_2}{\lambda_1+\lambda_2}\right)^{n-x_1}.
+p=\frac{\lambda_1}{\lambda_1+\lambda_2}
+\binom{n}{x_1}p^{x_1}(1-p)^{n-x_1},

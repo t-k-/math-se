@@ -1,0 +1,21 @@
+f(t)=e^{ita}\text{ for }-\pi < t < \pi ;\qquad a \in \mathbb{R}\backslash \mathbb{Z}
+f(t)=|t| \text{ for }-\pi < t < \pi
+f(t)=e^{ita}
+c_n 
+f(t) \sim \sum\limits_{k=-\infty}^{\infty}c_ne^{ikt}
+c_n = \frac{1}{2\pi}\int\limits_{-\pi}^{\pi}e^{iat}e^{ikt}\mathrm dt = \frac{1}{2\pi}\int\limits_{-\pi}^{\pi}e^{it(k+a)}\mathrm dt
+u:=k+a
+\frac{1}{2\pi}\int\limits_{-\pi}^{\pi}e^{itu}\mathrm dt = \frac{1}{2\pi}\left(\frac{2 \sin(\pi u)}{u}\right) = \frac{\sin(\pi (k+a))}{\pi(k+a)}
+f(t)\sim \sum\limits_{k=-\infty}^{\infty} \frac{ \sin(\pi(k+a))}{\pi(k+a)}e^{ikt}
+t=0
+\displaystyle {\sum\limits_{k=-\infty}^{\infty}}\frac{\sin(\pi(k+a))}{\pi(k+a)}=1
+t=\pi
+\displaystyle{e^{\pi i a} = \frac{\sin(\pi(k+a))}{\pi(k+a)}e^{\pi i k} }
+f(t)\sim \frac{a_0}{2}+\sum\limits_{k=0}^{\infty}b_k \sin(kt)+a_k \cos(kt)
+f(-t)=f(t)
+b_k=0
+ a_0= \frac{1}{\pi}\left(\int\limits_{-\pi}^{0}-t\mathrm dt + \int\limits_{0}^{\pi} t \mathrm dt  \right) = \pi 
+ a_k= \frac{1}{\pi}\left(\int\limits_{-\pi}^{0}-t\cos(kt)\mathrm dt + \int\limits_{0}^{\pi}t\cos(kt)\mathrm dt\right) = \frac{2(\pi k \sin (\pi k)+ \cos(\pi k)-1}{k^2} = \frac{2(-1)^k-2}{\pi k^2}
+f(t)\sim \pi + \sum\limits_{k=0}^{\infty}\frac{2(-1)^k -2}{\pi k^2}\cos(kt)
+t=0
+\pi = \sum\limits_{k=0}^{\infty}\frac{2(-1)^k -2}{\pi k^2} 

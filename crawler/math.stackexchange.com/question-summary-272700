@@ -1,0 +1,56 @@
+h
+h
+h
+2
+Q_h
+\begin{array}{lrr} h & {\frak B}((h,h)\rightarrow(h,h)) & 2^{h \pmod{2}} \times Q_h^2\\ 0 & 1 & 1^2\\ 1 & 2 & 2 \times 1^2\\ 2 & 16 & 4^2\\ 3 & 128 & 2 \times 8^2\\ 4 & 1,\!156 & 34^2\\ 5 & 10,\!952 & 2 \times 74^2\\ 6 & 107,\!584 & 328^2\\ 7 & 1,\!083,\!392 & 2 \times 736^2\\ 8 & 11,\!115,\!556 & 3,\!334^2\\ 9 & 115,\!702,\!472 & 2 \times 7,\!606^2\\ 10 & 1,\!218,\!289,\!216 & 34,\!904^2\\ 11 & 12,\!948,\!910,\!592 & 2 \times 80,\!464^2\\ 12 & 138,\!708,\!574,\!096 & 372,\!436^2\\ 13 & 1,\!495,\!661,\!223,\!968 & 2 \times 864,\!772^2\\ 14 & 16,\!218,\!468,\!710,\!656 & 4,\!027,\!216^2\\ 15 & 176,\!727,\!219,\!273,\!728 & 2 \times 9,\!400,\!192^2\\ 16 & 1,\!933,\!956,\!651,\!447,\!076 & 43,\!976,\!774^2\\ 17 & 21,\!243,\!204,\!576,\!601,\!928 & 2 \times 103,\!061,\!158^2\\ 18 & 234,\!121,\!111,\!199,\!439,\!424 & 483,\!860,\!632^2\\ 19 & 2,\!587,\!943,\!032,\!046,\!002,\!688 & 2 \times 1,\!137,\!528,\!688^2\\ \end{array}
+\sum_{i=0}^h\binom{h}{i}^4
+k
+2
+k
+2
+\frac{3k-2}{4k-2}(2k)!
+{\frak{B}}((i,j)\rightarrow(k,l))
+T_{a}^{b}
+a
+b
+a,b=1,2
+{\frak{B}}((h,h)\rightarrow(h,h))
+2h
+h
+1
+1
+h
+1
+1
+{{2h}\choose{h}}^2
+{\frak{B}}((i,n-i)\rightarrow(j,n-j))
+n
+i
+1
+j
+1
+{{n}\choose{i}}{{n}\choose{j}}
+x\in\mathbb{Z}^2
+n
+G_{n}(x)
+H_{n}(x)
+n
+x'
+m \le n-2
+x-x'
+n-m-2
+2
+H
+\tilde{H}(k,z)
+\tilde{G}(k,z)=\tilde{H}(k,z) + 2 z^2 \tilde{H}(k,z) \tilde{G}(k,z)
+\tilde{G}^{-1}=1-2(\cos k_x+\cos k_y)z
+z^{j}
+k
+ G_{n}(x) = H_{n}(x) + 2\sum_{m=0}^{n-2}\sum_{x'\in\mathbb{Z}^2}H_{m}(x')G_{n-m-2}(x-x'), 
+\tilde{G}(k,z)\equiv\sum_{x\in\mathbb{Z}^2}\sum_{n}z^n\exp(ik\cdot x)G_{n}(x),
+ \tilde{H}(k,z) = \frac{\tilde{G}(k,z)}{1 + 2z^2 \tilde{G}(k,z)} = \frac{1}{1 - 2(\cos k_x + \cos k_y)z + 2z^2}, 
+ \begin{eqnarray} \tilde{H}(k,z) &=& \sum_{n}(2z)^n\left(\cos k_x + \cos k_y - z\right)^n \\ &=& \sum_{n}(2z)^{n}\sum_{i=0}^{n}{{n}\choose{i}}\left(\cos k_x + \cos k_y\right)^{n-i} (-z)^{i} \\ &=& \sum_{n, i\le n} z^{n+i} 2^{n} {{n}\choose{i}}\left(\cos k_x + \cos k_y\right)^{n-i} (-1)^{i} \\ &=& \sum_{j, 2i\le j}z^{j} 2^{j-i} {{j-i}\choose{i}}\left(\cos k_x + \cos k_y\right)^{j-2i} (-1)^{i}; \end{eqnarray} 
+ H_{n}(x) = \sum_{i \le \lfloor n/2 \rfloor} (-2)^{i}{{n-i}\choose{i}}G_{n-2i}(x), 
+ \begin{eqnarray} {\frak{B}}((h,h)\rightarrow(h,h)) &=& H_{2h}(0) \\ &=& \sum_{k=0}^{h} (-2)^{k}{{2h-k}\choose{k}}{{2h-2k}\choose{h-k}}^2 \\ &=& (-2)^{h}\sum_{k=0}^{h} \left(-\frac{1}{2}\right)^{k}{{h+k}\choose{2k}}{{2k}\choose{k}}^2. \end{eqnarray} 
+B(h)

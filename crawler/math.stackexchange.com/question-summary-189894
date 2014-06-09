@@ -1,0 +1,36 @@
+x
+y
+x
+y
+0
+u
+v
+\bar{x}=\bar{y}=0
+\bar{u}=\bar{v}=0
+(1)
+(2)
+(3)
+(4)
+u
+v
+(6)
+(5)
+ \begin{align} s_u^2 &=\mathrm{E}\left[(cx+dy)^2\right]\\ &=c^2s_x^2+2cdR\,s_xs_y+d^2s_y^2\tag{1} \end{align} 
+ \begin{align} s_v^2 &=\mathrm{E}\left[(cx-dy)^2\right]\\ &=c^2s_x^2-2cdR\,s_xs_y+d^2s_y^2\tag{2} \end{align} 
+ s_u^2-s_v^2=4cdR\,s_xs_y\tag{3} 
+ s_u^2+s_v^2=2c^2s_x^2+2d^2s_y^2\tag{4} 
+ \begin{align}4s_u^2s_v^2 &=(2c^2s_x^2+2d^2s_y^2)^2-(4cd\,s_xs_y\,R)^2\\ &=(2c^2s_x^2-2d^2s_y^2)^2+(4cd\,s_xs_y)^2(1-R^2)\tag{5} \end{align} 
+ \begin{align} 0 &=\mathrm{E}[uv]\\ &=c^2s_x^2-d^2s_y^2\tag{6} \end{align} 
+ s_us_v=2cd\,s_xs_y\sqrt{1-R^2}\tag{7} 
+\textrm{Cov}\left[u,v\right]=\textrm{E}\left[uv\right]=c^2s_x^2-d^2s_y^2=0
+s_x
+s_y
+s_u
+s_v
+u
+v
+\textrm{Var}\left[u\right]=\textrm{E}\left[u^2\right]=s_u^2
+\textrm{Var}\left[v\right]=\textrm{E}\left[v^2\right]=s_v^2
+\begin{align} s_u^2 &= \textrm{E}\left[\left(cx+dy\right)^2\right]\\ &= \textrm{E}\left[c^2x^2+2cdxy+d^2y^2\right]\\ &= c^2s_x^2+2cd\textrm{Cov}\left[x,y\right]+d^2s_y^2\\ &= c^2s_x^2+2cds_xs_yR+d^2s_y^2\\ \end{align}
+\begin{align} s_v^2 &= \textrm{E}\left[\left(cx-dy\right)^2\right]\\ &= \textrm{E}\left[c^2x^2-2cdxy+d^2y^2\right]\\ &= c^2s_x^2-2cd\textrm{Cov}\left[x,y\right]+d^2s_y^2\\ &= c^2s_x^2-2cds_xs_yR+d^2s_y^2\\ \end{align}
+\begin{align} s_us_v &= \sqrt{\left(c^2s_x^2+2cds_xs_yR+d^2s_y^2\right)\left(c^2s_x^2-2cds_xs_yR+d^2s_y^2\right)}\\ &= \sqrt{c^4s_x^4-4c^2d^2s_x^2s_y^2R^2+2c^2d^2s_x^2s_y^2+d^4s_y^4}\\ &= \sqrt{\left(c^2s_x^2-d^2s_y^2\right)^2+4c^2d^2s_x^2s_y^2\left(1-R^2\right)}\\ &= \sqrt{4c^2d^2s_x^2s_y^2\left(1-R^2\right)}\\ &= 2cds_xs_y\sqrt{1-R^2}\\ \end{align}

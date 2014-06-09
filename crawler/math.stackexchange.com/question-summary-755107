@@ -1,0 +1,27 @@
+ \sum_{n=0}^\infty \frac{\exp(-nx)}{n+a} =f(x) 
+a=1
+ f(x) \sim \frac{1}{x}+ \gamma 
+a >0
+ f(x)\sim \frac{1}{x}-\Psi (x) 
+a>0
+x
+0^+
+\gamma
+\psi=\Gamma'/\Gamma
+f(x)=-\gamma-\psi(a)-\ln(x)+o(x)
+f
+1-e^{-x}\leq x
+m
+0<x<1
+m=\lfloor 1/\sqrt{x}\rfloor
+g(a,x)={\cal O}(\sqrt{x})
+0^+
+\ln\frac{x}{1-e^{-x}}{\cal O}( x)
+0^+
+(1)
+\eqalign{ f(x)&=\frac{1}{a}+ \sum_{n=1}^\infty\frac{e^{-nx}}{n}+ \sum_{n=1}^\infty\left(\frac{1}{n+a}-\frac{1}{n}\right)e^{-nx}\cr &=\frac{1}{a}-\ln(1-e^{-x})+ \sum_{n=1}^\infty\left(\frac{1}{n+a}-\frac{1}{n}\right)+ \sum_{n=1}^\infty\left(\frac{1}{n+a}-\frac{1}{n}\right)(e^{-nx}-1)\cr &=-\gamma-\psi(a)-\ln(1-e^{-x})+a \sum_{n=1}^\infty\frac{1-e^{-nx} }{n(n+a)} } 
+ \vert f(x)+\gamma+\psi(a)+\ln(x)\vert\leq \ln\frac{x}{1-e^{-x}}+a g(a,x)\tag{1} 
+ g(a,x)=  \sum_{n=1}^\infty\frac{1-e^{-nx} }{n(n+a)}\tag{2} 
+\eqalign{ 0<g(a,x)&=\sum_{n=1}^m\frac{1-e^{-nx} }{n(n+a)}+ \sum_{n=m+1}^\infty\frac{1-e^{-nx} }{n(n+a)}\cr &\leq(1-e^{-mx})\sum_{n=1}^m\frac{1}{n(n+a)}+\sum_{n=m+1}^\infty\frac{1}{n(n+a)}\cr &\leq mx\sum_{n=1}^m\frac{1}{n^2}+\sum_{n=m+1}^\infty\frac{1}{n^2}\cr &\leq \frac{mx\pi^2}{6}+\int_{m}^\infty\frac{dt}{t^2}= \frac{mx\pi^2}{6}+\frac{1}{m} } 
+ 0<g(a,x)\leq \left(\frac{\pi^2}{6}+\frac{1}{1-\sqrt{x}}\right)\sqrt{x} 
+ f(x)+\gamma+\psi(a)+\ln(x)={\cal O}(\sqrt{x}) 

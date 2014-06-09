@@ -1,0 +1,14 @@
+ h(x,y)=\frac{1}{\ln(e^x+y)}, y>0 
+  \frac{\partial h}{\partial x} \ \  \text{as} \ \ \frac{d}{dx} \ \left[ \frac{1}{\ln(e^x + C)} \right] \ , 
+  y  
+  \frac{\partial h}{\partial y} \ \  \text{as} \ \ \frac{d}{dy} \ \left[ \frac{1}{\ln(D + y)} \right] \ , 
+  e^x   
+  y-
+u = e^x + y
+h(x, y) = (\ln u)^{-1,} \tag{1}
+\dfrac{\partial h(x, y)}{\partial x} = \dfrac{dh}{du}\dfrac{\partial u}{\partial x}; \tag{2}
+\dfrac{dh}{du} = -(\ln u)^{-2} u^{-1} \tag{3}
+\dfrac{\partial u(x, y)}{\partial x} = e^x, \tag{4}
+\dfrac{\partial h(x, y)}{\partial x} = -(\ln(e^x + y))^{-2} (e^x + y)^{-1}e^x; \tag{5}
+\dfrac{\partial u(x, y)}{\partial y} = 1, \tag{6}
+\dfrac{\partial h(x, y)}{\partial y} = -(\ln(e^x + y))^{-2} (e^x + y)^{-1}. \tag{7}

@@ -1,0 +1,30 @@
+X
+  X^{(n)}(s,\omega) = X\left(\frac{(k+1)t}{2^n},\omega\right)\cdot \mathbf1\left\{s\in \left(\frac{kt}{2^n},\frac{(k+1)t}{2^n}\right]\right\} 
+t>0,n\ge 1, k=0,1,\dots, 2^n-1
+\mathbf1
+X
+ \sum_{k=0}^{2^n-1} X\left(\frac{(k+1)t}{2^n},\omega\right)\cdot \mathbf1\left\{s\in \left(\frac{kt}{2^n},\frac{(k+1)t}{2^n}\right]\right\} \to X_s(\omega)
+(s,\omega) \in [0,t]\times\Omega
+n\to \infty
+X
+\omega\in \Omega
+s\mapsto X(s,\omega)
+s
+f:[0,t]\to \mathbb R
+n\in\mathbb N 
+k = 0,1,2,\dots,2^{n}-1
+s\in [0,t)
+s
+\hat k(n) = \{k:I_{k,n}(s) = 1\}
+s
+s<t_{\hat k(n)+1}
+t_{\hat k(n)+1}-s\leq 2^{-n}t
+t_{\hat k(n)+1}\downarrow s
+n\to\infty
+\lim\limits_{n\to\infty}f\left(t_{\hat k(n)+1}\right) = f(s)
+s =t
+ \lim\limits_{h\downarrow 0}f(s+h) = f(s)\quad\text{ for all }s\in[0,t)  
+ \begin{cases} t_{k,n} &= \frac{kt}{2^n}, \\ \\ f_{k,n} &= f\left(t_{k+1,n}\right), \\ \\ I_{k,n}(s) &= 1_{(t_{k,n},t_{k+1,n}]}(s) \end{cases} 
+ \lim\limits_{n\to\infty}\sum\limits_{k=0}^{2^n-1}f_{k,n}I_{k,n}(s) = f(s). 
+ \lim\limits_{n\to\infty}\sum\limits_{k=0}^{2^n-1}f_{k,n}I_{k,n}(s) = f_{\hat k(n),n} = f\left(t_{\hat k(n)+1}\right) 
+ \lim\limits_{n\to\infty}\sum\limits_{k=0}^{2^n-1}f_{k,n}I_{k,n}(t) = f(t) 

@@ -1,0 +1,13 @@
+g
+g'(x) = \frac{1}{x}
+x > 0
+g(1) = 0
+g(xy) = g(x) + g(y)
+x, y > 0
+h(x) = g(x,y)
+g(xy) = g(x) + c
+x = 1
+g(y) = g(1) + c = 0 + c
+g(xy) = g(x) + g(y)
+\frac{d}{dx}g(xy) = g'(xy)y = \frac{y}{xy} = \frac{1}{x} = g'(x) = \frac{d}{dx}g(x),
+g(xy)=\int_1^{xy} \frac{dt}{t}=\int_1^x\frac{dt}{t}+\underbrace{\int_x^{xy}\frac{dt}{t}}_{t\,\mapsto\, xt}=\int_1^x\frac{dt}{t}+\int_1^{y}\frac{dt}{t}=g(x)+g(y)

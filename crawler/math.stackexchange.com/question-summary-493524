@@ -1,0 +1,7 @@
+ f(x) = \int_{0}^{1-x^2} e^{(t^2)} dt  
+u = 1-x^2
+y = \int_{0}^{u}e^{(t^2)} dt
+\frac{dy}{dx} = \frac{dy}{du} * \frac{du}{dx} = e^{u^2} * (-2x)
+= -2e^{(1-x^2)^2}x
+\frac{d}{dx}(\int_{0}^{1-x^2} e^{(t^2)}  dt) = -2 e^{(x^2-1)^2} x
+ y^2 = (-y)^2 \Rightarrow (x^2-1)^2 = (1-x^2)^2 

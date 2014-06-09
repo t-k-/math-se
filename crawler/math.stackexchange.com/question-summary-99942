@@ -1,0 +1,11 @@
+\begin{align*}\int \sec(x)dx &=\int \sec(x)\cdot \frac{\sec(x)+\tan(x)}{\sec(x)+\tan(x)}dx\\ &=\int \frac{\sec^2(x)+\tan(x)\sec(x)}{\sec(x)+\tan(x)}dx. \end{align*}
+f(x) = \frac{1}{x}
+g(x)=\sec(x)+\tan(x)
+g'(x)=\sec^2(x)+\tan(x)\sec(x)
+\int \sec(x)dx = \int f(g(x))\cdot g'(x)dx=\int \frac{1}{u}du
+u=g(x)
+=\ln|\sec(x)+\tan(x)|+c
+(1)
+(2)
+ \begin{align} \int\sec(x)\;\mathrm{d}x &=\int\sec^2(x)\;\mathrm{d}\sin(x)\\ &=\int\frac{1}{1-\sin^2(x)}\;\mathrm{d}\sin(x)\\ &=\int\frac12\left(\frac{1}{1-\sin(x)}+\frac{1}{1+\sin(x)}\right)\;\mathrm{d}\sin(x)\\ &=\frac12(\log(1+\sin(x))-\log(1-\sin(x)))+C\\ &=\frac12\log\left(\frac{1+\sin(x)}{1-\sin(x)}\right)+C\\ &=\frac12\log\left(\frac{(1+\sin(x))^2}{\cos^2(x)}\right)+C\\ &=\log\left(\frac{1+\sin(x)}{\cos(x)}\right)+C\\ &=\log(\sec(x)+\tan(x))+C\tag{1} \end{align} 
+ \begin{align} \frac{\mathrm{d}}{\mathrm{d}x}\log(\sec(x)+\tan(x)) &=\frac{\sec(x)\tan(x)+\sec^2(x)}{\sec(x)+\tan(x)}\\ &=\sec(x)\tag{2} \end{align} 

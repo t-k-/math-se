@@ -1,0 +1,25 @@
+\delta>0
+\Re\beta>0
+y\neq1
+G(\beta,\delta,y) = \int_0^1 \frac{x^{\beta-1}dx}{1-x}\log\frac{1-y x^\delta}{1-y},
+y=1
+ G(\beta,\delta,y) = \frac{G_0(\beta,\delta)}{1-y} + G_1(\beta,\delta) + o(1), \qquad (y\to1-)
+\frac{1}{\delta}
+y
+\propto(\log(1-y))^2
+\propto \log(1-y)^2
+\beta, \delta
+\Re(\beta) > 0, \delta > 0
+|y| < 1
+x \in (0,1)
+n\delta \ge 1
+G(\beta,\delta,y) = \int_0^1 \frac{x^{\beta-1}dx}{1-x}\left\{\log\frac{1-yx^\delta}{1-y}\right\} = \int_0^1 \frac{x^{\beta-1}dx}{1-x}\left\{\sum_{n=1}^{\infty}\frac{y^n}{n}(1-x^{n\delta})\right\}\tag{*}
+\left|\frac{1 - x^{n\delta}}{1-x}\right| \le n\delta
+O(\lambda^3)
+y \to 1^{-}
+\lambda
+\beta
+\delta
+O(\lambda^3)
+\begin{align} G(\beta,\delta,y) =& \sum_{n=1}^{\infty} \frac{y^{n}}{n}\left\{ H_{n-1} + (\log\delta - \gamma - \psi(\beta)) + \frac{2\beta+\delta-1}{2n\delta} + O(\frac{\lambda^3}{n^2}) \right\}\\ = & \frac12 \log(1-y)^2 + (\gamma + \psi(\beta) - \log\delta)\log(1-y) + O(\lambda^3) \end{align}
+\lim_{y->1^{-}} O(\lambda^3) \text{-term} \sim \frac{2\beta+\delta-1}{2\delta}\zeta(2) = \frac{(2\beta+\delta-1)\pi^2}{12\delta}

@@ -1,0 +1,28 @@
+(x_1,y_1)
+(x_2,y_2)
+d
+\left|\sqrt{(x-x_1)^2+(y-y_1)^2}-\sqrt{(x-x_2)^2+(y-y_2)^2}\right|=d
+\left(\sqrt{(x-x_1)^2+(y-y_1)^2}-\sqrt{(x-x_2)^2+(y-y_2)^2}\right)^2=d^2
+(x-x_1)^2+(y-y_1)^2+2\sqrt{(x-x_1)^2+(y-y_1)^2}\sqrt{(x-x_2)^2+(y-y_2)^2}+(x-x_2)^2+(y-y_2)^2=d^2
+ |A-X| - |B-X| = d 
+ \sqrt{(a_x-x)^2 + (a_y-y)^2} - \sqrt{(b_x-x)^2 + (b_y-y)^2} = d 
+Ax^2 + By^2 + Cxy + Dx + Ey + F = 0
+ \sqrt{(a_x-x)^2 + (a_y-y)^2}  = \sqrt{(b_x-x)^2 + (b_y-y)^2} + d 
+ (a_x-x)^2 + (a_y-y)^2  = (b_x-x)^2 + (b_y-y)^2 + 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} + d^2 
+ a_x^2 -2xa_x + x^2 + a_y^2 - 2a_y y + y^2  = b_x^2 - 2xb_x + x^2 + b_y^2 -2b_y y + y^2 + 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} + d^2 
+x
+y
+ a_x^2 -2xa_x + a_y^2 - 2a_y y = b_x^2 - 2xb_x + b_y^2 -2b_y y + 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} + d^2 
+ a_x^2 - 2xa_x + a_y^2 - 2a_y y - b_x^2 = 2xb_x - b_y^2 + 2b_y y - d^2 = 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} 
+ \left((-2a_x + 2b_x)x + (-2a_y + 2b_y)y + (a_x^2 + a_y^2 - b_x^2 - b_y^2 - d^2)\right) = 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} 
+J = -2a_x + 2b_x
+k = -2a_y + 2b_y
+L = a_x^2 + a_y^2 - b_x^2 - b_y^2 - d^2
+ Jx + Ky + L = 2d \sqrt{(b_x-x)^2 + (b_y-y)^2} 
+ (Jx + Ky + L)^2 = 4d^2 \left((b_x-x)^2 + (b_y-y)^2\right) 
+ J^2x^2 + JxKy + JxL + KyJx + K^2y^2 + KyL + LJx + LKy + L^2 = 4d^2 \left(b_x^2 - 2xb_x +x^2 + b_y^2 - 2yb_y + y^2\right) 
+ J^2x^2 + K^2y^2 + 2JxKy + 2JxL +  2KyL + L^2 = 4d^2 b_x^2 - 8d^2xb_x + 4d^2x^2 + 4d^2b_y^2 - 8d^2yb_y + 4d^2y^2 
+x^2, y^2, xy, x, y
+ (J^2-4d^2)x^2 + (K^2-4d^2)y^2 + (2JK)xy + (2JL+8d^2b_x)x + (2KL + 8d^2b_y)y + (L^2 - 4d^2 b_x^2 - 4d^2 b_y^2) = 0 
+ ((-2a_x + 2b_x)^2-4d^2)x^2 + ((-2a_y + 2b_y)^2-4d^2)y^2 + (2(-2a_x + 2b_x)(-2a_y + 2b_y))xy \\+ (2(-2a_x + 2b_x)(a_x^2 + a_y^2 - b_x^2 - b_y^2 - d^2)+8d^2b_x)x + (2(-2a_y + 2b_y)(a_x^2 + a_y^2 - b_x^2 - b_y^2 - d^2) + 8d^2b_y)y \\+ ((a_x^2 + a_y^2 - b_x^2 - b_y^2 - d^2)^2 - 4d^2 b_x^2 - 4d^2 b_y^2) = 0 
+ (4a_x^2 - 8a_x b_x + 4b_x^2)x^2 + \\ (4a_y^2 - 8a_y b_y + 4b_y^2)y^2 + \\ (8a_xa_y - 8a_xb_y - 8a_yb_x + 8b_xb_y)xy +\\ (-4a_x^3 -4a_xa_y^2 + 4 a_x b_x^2 + 4 a_x b_y^2 + 4 a_x d^2 + 4b_xa_x^2 + 4b_xa_y^2 + 4b_x^3 - 4b_xb_y^2 + 4b_xd^2)x +\\ (-4a_ya_x^2 - 4a_y^3 + 4 a_y b_x^2 + 4 a_y b_y^2 + 4 a_y d^2 + 4b_ya_x^2 + 4b_ya_y^2 - 4b_yb_x^2 - 4b_y^3 + 4b_yd^2)y +\\ a_x^4 + a_x^2 a_y^2 - a_x^2b_x^2 - a_x^2b_y^2 - a_x^2d^2\\ + a_y^2 a_x^2 + a_y^4 - a_y^2b_x^2 - a_y^2b_y^2 - a_y^2 d^2\\ - b_x^2 a_x^2 - b_x^2 a_y^2 + b_x^4 + b_x^2 b_y^2 -3 b_x^2 d_2\\ - b_y^2 a_x^2 - b_y^2a_y^2 + b_y^2b_x^2 + b_y^4 + b_y^2 d^2\\ - d^2 a_x^2 - d^2 a_y^2 + d^2 b_x^2 -3 d^2 b_y^2 + d^4\\ = 0 

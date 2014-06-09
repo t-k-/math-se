@@ -1,0 +1,113 @@
+g\!: F_{A\sqcup B} \longrightarrow F_A\coprod F_B
+g \colon F_{A \amalg B} \to F_A \amalg F_B
+\mathcal{C}
+U \colon \mathcal{C} \to \mathsf{Set}
+A,B
+j_A \colon A \to  A \amalg B \gets B : \! j_B
+\mathsf{Set}
+F_A, F_B, F_{A \amalg B}
+\mathcal{C}
+\eta_A \colon A \to UF_A
+\eta_B \colon B \to UF_B
+\eta_{A \amalg B}\colon A \amalg B \to UF_{A \amalg B}
+\mathsf{Set}
+F_A,F_B, F_{A \amalg B}
+A,B,A \amalg B
+i_A \colon F_A \to F_{A} \amalg F_{B} \gets  F_B : \! i_B
+\mathcal{C}
+\eta_{A} \colon A \to UF_A
+\eta_{A \amalg B} \circ j_A \colon A \to UF_{A\amalg B}
+f_{A} \colon F_A \to F_{A \amalg B}
+Uf_A \circ \eta_A = \eta_{A \amalg B} \circ j_A
+f_B \colon F_B \to F_{A \amalg B}
+Uf_B \circ \eta_B = \eta_{A \amalg B} \circ j_B
+i_A \colon F_A \to F_{A} \amalg F_{B} \gets  F_B : \! i_B
+f_A \colon F_A \to  F_{A \amalg B} \gets F_{B} : \! f_B
+f \colon F_A \amalg F_B \to F_{A \amalg B}
+f_A = f \circ i_A
+f_B = f \circ i_B
+g \colon F_{A \amalg B} \to F_A \amalg F_{B}
+f
+\eta_{A \amalg B} \colon A \amalg B \to UF_{A \amalg B}
+j_A \colon A \to  A \amalg B \gets B : \! j_B
+\mathsf{Set}
+\eta_{A \amalg B}
+F_{A \amalg B}
+X
+A \amalg B \to UX
+X
+\mathcal{C}
+A \amalg B
+A \amalg B
+X = F_A \amalg F_B
+A \to U(F_A \amalg F_B) \gets B
+U
+\eta_A\colon A\to UF_A
+\eta_B \colon B \to UF_B
+h \colon A \amalg B \to U(F_{A} \amalg F_{B})
+h\circ j_A = h_A
+h \circ j_B = h_B
+i_A \colon F_A \to F_{A} \amalg F_{B} \gets  F_B : \! i_B
+Ui_A \colon UF_A \to U(F_{A} \amalg F_{B}) \gets UF_B : \! Ui_B.
+h_A  = Ui_A \circ \eta_A \colon A \to U(F_{A} \amalg F_{B}) \gets U(F_B) : \! h_B = Ui_B \circ \eta_B
+\eta_{A \amalg B} \colon A \amalg B \to UF_{A \amalg B}
+g \colon F_{A \amalg B} \to F_{A} \amalg F_{B}
+Ug \circ \eta_{A \amalg B} = h
+f \circ g \colon F_{A \amalg B} \to F_{A \amalg B}
+g \circ f \colon  F_{A} \amalg F_{B} \to F_{A} \amalg F_{B}
+f \circ g
+\eta_{A \amalg B}\colon A \amalg B \to F_{A \amalg B}
+h
+h \circ j_A = h_A = Ui_A \circ \eta_A
+Uf \circ h \circ j_A = \eta_{A \amalg B} \circ j_A
+Uf \circ h \circ j_B = \eta_{A \amalg B} \circ j_B
+Uf \circ h = \eta_{A \amalg B}
+U(f \circ g) \circ \eta_{A \amalg B} = \eta_{A \amalg B} = U(1_{F_{A \amalg B}}) \circ \eta_{A \amalg B}
+f \circ g = 1_{F_{A \amalg B}}
+\eta_{A \amalg B}
+ U(f \circ g) \circ \eta_{A \amalg B} = Uf \circ Ug \circ \eta_{A \amalg B} = Uf \circ h. 
+ Uf \circ h \circ j_A = Uf \circ Ui_A \circ \eta_A = U(f \circ i_A) \circ \eta_A = U(f_A) \circ \eta_A = \eta_{A \amalg B} \circ j_A, 
+g \circ f \colon F_{A} \amalg F_{B} \to F_{A} \amalg F_{B}
+F_{A} \amalg F_{B}
+g \circ f \circ i_A \colon F_{A} \to F_{A} \amalg F_{B}
+g \circ f \circ i_A = i_A
+g \circ f \circ i_A = i_A
+\eta_A
+g \circ f \circ i_A = 1_{F_A \amalg F_B} \circ i_A
+g \circ f \circ  i_B = 1_{F_A \amalg F_B} \circ i_B
+F_A \amalg F_B
+g \circ f = 1_{F_A \amalg F_B}
+ U(g \circ f \circ i_A) \circ \eta_A = Ug \circ Uf_A \circ \eta_A = Ug \circ \eta_{A \amalg B} \circ j_A = h \circ j_A = h_A = Ui_A \circ \eta_A 
+\mathcal{C}
+\mathcal{C}(X,Y)
+X
+Y
+U
+A \to U(F_A\coprod F_B)
+B \to U(F_A\coprod F_B)
+A\cup B
+A
+B
+A \to U(F_A)
+B \to U(F_B)
+\mathcal{C}
+F_A \to F_A\coprod F_B
+F_B \to F_A\coprod F_B
+ A \to U(F_A) \to U(F_A\coprod F_B) \text{ and } B \to U(F_B) \to U(F_A\coprod F_B).
+F_{A\cup B}
+F_{A\cup B}
+F_A
+F_B
+X
+F_A \coprod F_B
+F_{A \coprod_{set} B}
+\mathcal C \to Sets
+\mathcal{C}^{op}
+ \hom(F_A \coprod F_B, X)  \cong \hom(F_A, X) \times \hom(F_B,X) \cong \hom_{set}(A,X_{set}) \times \hom_{set}(B,X_{set}) 
+ \cong \hom_{set}(A \coprod_{set} B, X_{set}) \cong \hom(F_{A \coprod_{set} B},X) 
+\hom = \hom_{\mathcal{C}}
+\mathcal{C}
+\hom_{set}
+\coprod_{set}
+X
+X_{set}

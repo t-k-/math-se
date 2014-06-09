@@ -1,0 +1,8 @@
+\int_{0}^\infty \frac{1}{\Gamma(x)}\, \mathrm{d}x = e + \int_0^\infty \frac{e^{-x}}{\pi^2 + \ln^2 x}\, \mathrm{d}x
+\sum_{n=0}^{\infty}f(n)-\int_{0}^{\infty}f(x)dx=\frac{1}{2}f(0)+i\int_{0}^{\infty}\frac{f(it)-f(-it)}{e^{2\pi t}-1}dt
+f(u)=1/\Gamma(u)
+\sum_{n=0}^{\infty}\frac{1}{n!}-\int_{0}^{\infty}\frac{1}{\Gamma(x)}dx=i\int_{0}^{\infty}\frac{1/\Gamma(it)-1/\Gamma(-it)}{e^{2\pi t}-1}dt
+i\int_{0}^{\infty}\frac{1/\Gamma(it)-1/\Gamma(-it)}{e^{2\pi t}-1}dt=-\frac{1}{2}\int_{-\infty}^{\infty}\frac{1/\Gamma(it)}{\sin \pi i t}e^{-\pi\vert t\vert}dt
+e^{-\pi\vert t\vert}=\int_{0}^{\infty}\frac{u^{it}}{u(\pi^2+\log^2u)}du
+\int_{-\infty}^{\infty}\int_{0}^{\infty}\frac{u^{it}}{u(\pi^2+\log^2u)}\frac{-1/\Gamma(it)}{2\sin \pi i t}dudt
+-\frac{1}{2\pi i}\int_{C}\frac{\pi u^{z-1}}{\Gamma(z)\sin \pi z}dz=-e^{-u}

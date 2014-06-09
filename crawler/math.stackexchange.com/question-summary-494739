@@ -1,0 +1,69 @@
+S=\{3^n 4^m:n,m \in\Bbb N\}
+x_1,x_2,x_3,\dots
+S
+x_1\lt x_2 \lt x_3\lt\dots
+n\to \infty
+{a_{k+1}\over{a_k}}\to1
+a_k=3^{n_1}4^{m_1}, a_{k+1}=3^{n_2}4^{m_2}\in S
+a_k=3^{n_1}4^{m_1}=3^{n_1}(3+1)^{m_1}=3^{n_1}\big(\sum_{i=0}^{m_1}(^{m_1}_i)3^i\big)=\sum_{i=0}^{m_1}(^{m_1}_i)3^{i+n_1},
+a_{k+1}=3^{n_2}4^{m_2}=3^{n_2}(3+1)^{m_2}=3^{n_2}\big(\sum_{i=0}^{m_2}(^{m_2}_i)3^i\big)=\sum_{i=0}^{m_2}(^{m_2}_i)3^{i+n_2}. 
+\varepsilon > 0
+K = K_\varepsilon
+s \in S
+s > K
+s' \in S
+1 < \dfrac{s'}{s} < e^\varepsilon
+\dfrac{s_{k+1}}{s_k}
+s_k > K
+s \in S
+3
+4
+3
+4
+(k,\ell)
+(m,n)
+\begin{align} 0 & < k\log 3 - \ell\log 4 < \varepsilon,\text{ and}\\ 0 & < m\log 4 - n\log 3 < \varepsilon. \end{align}
+\dfrac{\log 4}{\log 3}
+\varepsilon > 0
+\left\lvert\frac{\log 4}{\log 3} - \frac{p}{q}\right\rvert < \frac{1}{q^2},
+> \dfrac{\log 3}{\varepsilon}
+- \varepsilon < p\log 3 - q\log 4 < \varepsilon.
+\dfrac{\log 4}{\log 3}
+(k,\ell)
+(m,n)
+K
+s \in S
+s > K
+3
+n
+4
+\ell
+K = 3^n\cdot 4^\ell
+s = 3^a\cdot 4^b > K
+s' = 3^{a-n}\cdot 4^{b+m}
+a \geqslant n
+s' = 3^{a+k}\cdot 4^{b-\ell}
+a
+b
+a/b
+n
+m
+(s_i)_{i=0}^{\infty}
+an+bm
+ s_{k+1}-s_k \to 0
+\epsilon > 0
+N(\epsilon)
+s_{n+1}-s_n < \epsilon
+n > N(\epsilon)
+n^2
+ai+bj
+0 \le i, j \le n-1
+(n-1)(a+b)
+d_k = s_{k}-s_{k-1}
+s_0 = 0
+\sum_{k=1}^{n^2} d_k =\sum_{k=1}^{n^2} (s_{k}-s_{k-1}) = s_{n^2}-s_0 = (n-1)(a+b) 
+D_n = \min (d_k)_{k=1}^{n^2}
+\begin{align} (n-1)(a+b) &=\sum_{k=1}^{n^2} d_k\\ & \ge \sum_{k=1}^{n^2} D_n\\ & = n^2 D_n\\ \end{align} 
+D_n  \le \dfrac{(n-1)(a+b)}{n^2} < \dfrac{a+b}{n} 
+n > \dfrac{a+b}{\epsilon}
+D_n < \epsilon

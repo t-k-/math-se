@@ -1,0 +1,12 @@
+ \vdash (\exists x)(A \land B \land C) \rightarrow (\exists x)(A \rightarrow C \rightarrow B)
+ (\exists x)(A \land B \land C) \vdash(\exists x)(A \rightarrow C \rightarrow B) 
+ (\exists x)(A \land B \land C) 
+<hypothesis>
+ (A \land B \land C)[x := z] 
+ A[x := z] \land B[x :=z] \land C[x := z] 
+[(A \land C) \land B] \rightarrow [(A \rightarrow C) \rightarrow B]
+(A \land B \land C)[x:=z] \vdash (A[x:=z] \rightarrow C[x:=z] \rightarrow B[x:=z])
+(A \land B \land C)[x:=z] \vdash (A \rightarrow C \rightarrow B)[x:=z]
+(A \land B \land C)[x:=z] \vdash (\exists x)(A \rightarrow C \rightarrow B)
+(\exists x)(A \land B \land C) \vdash (\exists x)(A \rightarrow C \rightarrow B)
+\vdash (\exists x)(A \land B \land C) \rightarrow (\exists x)(A \rightarrow C \rightarrow B)

@@ -1,0 +1,20 @@
+B_t
+I_t=\int_0^t|B_s|^2\!\text{ds}\ 
+S_t=\max_{0\leq s\leq t}B_s
+F:\mathbb{R}^2_+\times\mathbb{R}\times\mathbb{R}_+\rightarrow\mathbb{R}
+C^{1,2,1}
+(t,a,x,s)\in\mathbb{R}^2_+\times\mathbb{R}\times\mathbb{R}_+
+F_s(t,a,x,s)=0
+x=s
+F_t(t,a,x,s)+x^2F_a(t,a,x,s)+\frac{1}{2}F_{xx}(t,a,x,s)=0
+F(t,I_t,B_t,S_t)
+t\geq0
+I_t
+S_t
+\Longrightarrow\ I_t, S_t
+F(t,I_t,B_t,S_t)=F(0,I_0,B_0,S_0)+\int_0^tF_t(r,I_r,B_r,S_r)\text{dr}+\int_0^tF_a(r,I_r,B_r,S_r)\text{d}I_r+\\ +\int_0^tF_x(r,I_r,B_r,S_r)\text{d}B_r+\int_0^tF_s(r,I_r,B_r,S_r)\text{d}S_r+ \frac{1}{2}\int_0^tF_{xx}(r,I_r,B_r,S_r)\text{d}\left<B,B\right>_r=\\
+=F(0,I_0,B_0,S_0)+\int_0^tF_t(r,I_r,B_r,S_r)\text{dr} +\int_0^tF_a(r,I_r,B_r,S_r)\text{d}I_r+\\ +\int_0^tF_x(r,I_r,B_r,S_r)\text{d}B_r+\int_0^tF_s(r,I_r,B_r,S_r)\text{d}S_r +\frac{1}{2}\int_0^tF_{xx}(r,I_r,B_r,S_r)\text{dr}
+F(t,I_t,B_t,S_t)
+\int_0^tF_t(r,I_r,B_r,S_r)\text{dr}+ \int_0^tF_a(r,I_r,B_r,S_r)\text{d}I_r+\int_0^tF_s(r,I_r,B_r,S_r)\text{d}S_r+\\ +\frac{1}{2}\int_0^tF_{xx}(r,I_r,B_r,S_r)\text{dr}=0
+\int_0^tF_s(r,I_r,B_r,S_r)\text{d}S_r
+\int_0^tF_a(r,I_r,B_r,S_r)\text{d}I_r

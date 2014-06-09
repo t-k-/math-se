@@ -1,0 +1,51 @@
+L^1(\mathbb{R}^2)
+L^2(\mathbb{R}^2)
+\chi_{[0,+\infty[}e^{-x}  \quad \text{ and } \quad \frac{e^{(-\frac{x^2}{2})}}{1+iy}
+L^2(\mathbb{R}^2)
+L^1(\mathbb{R}^2)
+\frac{1}{1+iy}
+\frac{1}{1+iy}
+e^{(-\frac{x^2}{2})}
+f(x) = \frac{1}{1+i x}
+e^{-k} \chi_{[0,+\infty]}{(k)}
+\chi_{[0,+\infty]}(k)
+0
+k<0
+1
+k>0
+f(x)
+\hat{f}(k) = \int_{-\infty}^{\infty} dx \: f(x) e^{i k x} 
+\hat{f}(k) = \int_{-\infty}^{\infty} dx \: \frac{e^{i k x}}{1+i x}  
+\oint_{C_R} dz \: \frac{e^{i k z}}{1+i z}  
+C_R
+[-R,R]
+R
+\Im{z}>0
+i 2 \pi
+C_R
+\frac{e^{i k z}}{1+i z}
+z=i
+\mathrm{Res}_{z=i} \frac{e^{i k z}}{1+i z} = \lim_{z \rightarrow i} (z-i) \frac{e^{i k z}}{1+i z} = -i \, e^{-k}
+\frac{e^{i k z}}{1+i z}
+z=i
+\oint_{C_R} dz \: \frac{e^{i k z}}{1+i z} = \int_{-R}^R dx \: \frac{e^{i k x}}{1+i x} + i R \int_{0}^{\pi} d \phi \: e^{i \phi} \frac{\exp{(i k R e^{i \phi})}}{1+i R e^{i \phi}}  
+\begin{align} \int_{-\infty}^{\infty} dx \: \frac{e^{i k x}}{1+i x} = e^{-k} & (k>0) \\ \end{align}
+k<0
+k<0
+\hat{f}(k) = \begin{cases} e^{-k} & k>0 \\ 0 & k<0 \\ \end{cases} = e^{-k} \chi_{[0,+\infty]}(k) 
+ \hat{f}(k_x,k_y) = \int_{-\infty}^{\infty} dx \: \int_{-\infty}^{\infty} dy \: f(x,y) e^{i (k_x x+k_y y)} 
+ f(x,y) = \frac{e^{-\frac{x^2}{2}}}{1+i y} 
+f
+f(x,y) = g(x) h(y)
+\hat{f}(k_x,k_y) = \hat{g}(k_x) \hat{h}(k_y)
+\hat{h}(k_y)
+\hat{g}(k_x)
+ \hat{g}(k_x) = \int_{-\infty}^{\infty} dx \: e^{-\frac{x^2}{2}} e^{i k_x x} 
+ \hat{g}(k_x) = \int_{-\infty}^{\infty} dx \: e^{-\frac{(x-i k_x)^2}{2}} e^{-\frac{k_x^2}{2}} 
+k_x
+\int_{-\infty}^{\infty} dx \: e^{-a x^2} = \sqrt{\frac{\pi}{a}}
+\Re{a} \ge 0
+ \hat{f}(k_x,k_y) = \sqrt{2 \pi} e^{-\frac{k_x^2}{2}} e^{-k_y} \chi_{[0,+\infty]}(k_y) 
+     \mathcal{F}_\omega\left(\chi_{[0,\infty]}(x) \mathrm{e}^{-x}\right) = \int_0^\infty \mathrm{e}^{i \omega x - x} \mathrm{d} x = \frac{1}{1-i \omega} 
+\begin{eqnarray}   \chi_{[0,\infty]}(x) \mathrm{e}^{-x} &=&  \mathcal{F}^{-1}_x\left(\frac{1}{1-i \omega}\right) = \frac{1}{2\pi} \int_{-\infty}^\infty \frac{1}{1-i \omega} \mathrm{e}^{-i \omega x} \mathrm{d}\omega \stackrel{\omega \to - \omega}{=} \frac{1}{2\pi} \int_{-\infty}^\infty \frac{1}{1+i \omega} \mathrm{e}^{i \omega x} \mathrm{d}\omega \\     &=& \frac{1}{2\pi} \mathcal{F}_x\left(\frac{1}{1+i \omega}\right) \tag{1} \end{eqnarray} 
+\begin{eqnarray}    \mathcal{F}_{\omega_1, \omega_2}\left( \frac{\exp\left(-\frac{x^2}{2}\right)}{1+i y} \right) &=& \mathcal{F}_{\omega_1} \left(\exp\left(-\frac{x^2}{2}\right)\right) \mathcal{F}_{\omega_1} \left( \frac{1}{1+i y}\right) \\& =& \left( \sqrt{2\pi} \mathrm{e}^{-\frac{\omega_1^2}{2}} \right) \left(2 \pi \chi_{[0,\infty]}(\omega_2) \mathrm{e}^{-\omega_2}\right) \\ &=& \left(2\pi\right)^{3/2} \exp\left(-\frac{\omega_1^2}{2} - \omega_2\right) \chi_{[0,\infty]}(\omega_2) \end{eqnarray} 

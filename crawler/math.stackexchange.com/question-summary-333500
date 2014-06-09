@@ -1,0 +1,14 @@
+f
+\int_{-\infty}^{\infty}f(\xi)d\xi = \lim_{\delta \to 0,~  \delta>0}\sum_{n=-\infty}^{\infty}\delta f(\delta n)
+f
+\int_{-\infty}^{\infty}f(\xi)d\xi =\lim_{||T|| \to 0}\sum_{n=-\infty}^{\infty}f(x_n ^*)\Delta x_n
+ \lim_{\delta \to 0,~  \delta>0}\sum_{n=-\infty}^{\infty}\delta f(\delta n)
+\delta
+f_\delta(x) = f(\delta \lfloor \frac{x}{\delta} \rfloor )
+f
+\lim_{\delta \downarrow 0} f_\delta(x) = f(x)
+f
+|f_\delta(x)| \le \frac{A}{1+(\delta \lfloor \frac{x}{\delta} \rfloor)^2} \le g(x) = \max(\frac{A}{1+x^2}, \frac{A}{1+(x-\delta)^2})
+g
+\lim_{\delta \downarrow 0} \int f_\delta = \int f
+\int f_\delta

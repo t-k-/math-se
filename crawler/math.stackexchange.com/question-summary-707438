@@ -1,0 +1,10 @@
+Y_{1}, Y_{2}, Y_{3}
+ f(y) = \left\{ 	\begin{array}{ll} 		(1/\theta)\mathrm{e}^{-y/\theta}  &  y \gt 0 \\ 		0 & elsewhere. 	\end{array} \right.
+\hat{\theta_{1}} = Y_{1}, \hat{\theta_{2}} = (Y_{1} + Y_{2}) / 2, \hat{\theta_{3}} = (Y_{1} + 2Y_{2})/3, \hat{\theta_{4}} = \bar{Y}
+ E(\hat{\theta_{1}}) \\ = E(Y_{1}) \\ = Y_{1}\int_0^\infty (1/\theta)\mathrm{e}^{-y/\theta}\,\mathrm{d}y \\ = \left.Y_{1}(-\mathrm{e}^{y/\theta}) \right|_0^\infty \\ = Y_1(0 + 1) = Y_1 
+E(\hat{\theta_{4}}) \\ = E(\bar{Y}) \\ = \int_0^\infty (1/\theta^2)\mathrm{e}^{-2y/\theta}\,\mathrm{d}y \\ = \left.(1/2\theta)(-\mathrm{e}^{-2y/\theta}) \right|_0^\infty \\ = (1/2\theta)(0 + 1) = 1/2\theta
+\hat{\theta_{1}}, \hat{\theta_{2}}, \hat{\theta_{3}}, \hat{\theta_{4}}
+E(Y_1) = \theta
+Y_1\sim \text{Expo}(\lambda)
+\text{mean}=\frac{1}{\lambda}
+E(\overline Y)=E\left(\frac{Y_1 + Y_2 + Y_3}{3}\right)= \frac{E(Y_1) + E(Y_2) + E(Y_3)}{3}=\frac{\theta + \theta + \theta}{3}= \theta

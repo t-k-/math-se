@@ -1,0 +1,24 @@
+x \in \mathbb R 
+\left( X_t^x\right)_{t\geq 0} 
+ X_t ^x =x + \int _0 ^t \sigma\left( X_s^x\right) ~dB_s + \int _0 ^t b\left( X_s^x\right) ~ds , \ t\geq 0 
+\sigma
+b
+\mathbb R
+\mathbb R
+\left( B_t\right)_{t\geq 0} 
+\forall x, y \in \mathbb R
+\tau_{\left(x,y\right)} = \inf \{ t\geq 0 : X_t ^x =y\}
+\forall \left] y,z \right[ \subset \mathbb R
+ \tau_{\left(y,z\right)}(x) = \inf \{ t\geq 0 : X_t ^x \notin \left] y,z \right[\}
+b \equiv 0
+x \in \left] y,z \right[
+\forall \phi \in \mathcal C^2_c\left( \mathbb R, \mathbb R \right)  
+a(x) = \sigma ^2(x)
+\tau^x =\tau_{\left(y,z\right)}(x) 
+ \mathbb E \left \{ \phi\left( X_{t\wedge \tau^x}^x\right)\right \} -\phi \left( x\right)= \frac{1}{2}\mathbb E \left \{\int _0^{t\wedge \tau^x}a \phi^"\left( X_s^x\right) ~ds\right \} 
+ \phi\left( X_{t\wedge \tau^x}^x\right)-\phi \left( x\right)=  \frac{1}{2}\int _0^{t\wedge \tau^x}a \phi^"\left( X_s^x\right) ~ds   +\int _0^{t\wedge \tau^x} b \phi'\left( X_s^x\right) ~ds +\int _0^{t\wedge \tau^x} \sigma \phi'\left( X_s^x\right) ~dBs
+ \mathbb E \left \{ \phi\left( X_{t\wedge \tau^x}^x\right)\right \} -\phi \left( x\right)= \frac{1}{2}\mathbb E \left \{\int _0^{t\wedge \tau^x}a \phi^"\left( X_s^x\right) ~ds\right \} + \mathbb E \left  \{\int _0^{t\wedge \tau^x}b \phi'\left( X_s^x\right) ~ds\right \}
+\mathbb P \left\{ \tau^x < \infty\right\}=1
+\phi \in \mathcal C^2_c\left( \mathbb R, \mathbb R \right)  
+ \phi'' (x) = \frac {1}{a(x)}
+ \mathbb E \left \{ t\wedge \tau ^x \right \} = 2 \left( \mathbb E  \left \{ \phi\left( X_{t\wedge \tau^x}^x\right)\right \}  -\phi \left( x\right) \right )

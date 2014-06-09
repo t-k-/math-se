@@ -1,0 +1,27 @@
+(\sqrt{a}+b)^n=N+f
+f \in (0,1)
+(\sqrt{a}+b)^{n+2} =M+g
+g \in (0,1)
+0<\sqrt{a}-b<1
+(a,b)
+n
+f>g
+n
+f<g
+a
+b
+a > 0
+0 < \sqrt{a}-b < 1
+\begin{align} (b+\sqrt{a})^n + (b-\sqrt{a})^n &= \sum_{k=0}^n \binom{n}{k}b^{n-k}a^{k/2} + \sum_{k=0}^n (-1)^k\binom{n}{k}b^{n-k}a^{k/2}\\ &= \sum_{k=0}^n \bigl(1 + (-1)^k\bigr)\binom{n}{k}b^{n-k}a^{k/2}\\ &= 2\sum_{m=0}^{\lfloor n/2\rfloor} \binom{n}{2m}b^{n-2m}a^m, \end{align}
+(b+\sqrt{a})^n + (b-\sqrt{a})^n
+0 < \sqrt{a}-b < 1
+0 < \lvert b-\sqrt{a}\rvert^n < 1
+(b-\sqrt{a})^n
+n
+n
+n
+(\sqrt{a}+b)^n = \underbrace{(b+\sqrt{a})^n + (b-\sqrt{a})^n}_{N(n)} + \underbrace{(\sqrt{a}-b)^n}_{f(n)}
+g = f(n+2) = (\sqrt{a}-b)^2\cdot f(n) = (\sqrt{a}-b)^2\cdot f < f
+n
+(\sqrt{a}+b)^n = \underbrace{(b+\sqrt{a})^n + (b-\sqrt{a})^n - 1}_{N(n)} + \underbrace{1-(\sqrt{a}-b)^n}_{f(n)},
+g = 1-(\sqrt{a}-b)^{n+2} > 1 - (\sqrt{a}-b)^n = f

@@ -1,0 +1,6 @@
+\mathrm{Li}(x)=\frac{x}{\log x}+\int_2^x \frac{dt}{\log^2t}-\frac{2}{\log 2}.
+C_n
+x
+\mathrm{Li}(x)=\frac{x}{\log x} \left(1+ \sum_{k=1}^{n-1} \frac{k!}{\log^k x} \right)+n! \int_2^x \frac{dt}{\log^{n+1}t}+C_n,
+\int_2^x \frac1{\log^k t} \mathrm dt=\frac{x}{\log^k x}-\frac2{\log^k 2}+k \int_2^x\frac1{\log^{k+1}t} \mathrm dt
+\small\begin{align*}\int_2^x \frac1{\log\,t}\mathrm dt&=\frac{x}{\log\,x}-\frac2{\log\,2}+\int_2^x \frac1{\log^2 t} \mathrm dt\\&=\frac{x}{\log\,x}-\frac2{\log\,2}+\left(\frac{x}{\log^2 x}-\frac2{\log^2 2}+2\int_2^x \frac1{\log^3(t)} \mathrm dt\right)\\&=\frac{x}{\log\,x}-\frac2{\log\,2}+\left(\frac{x}{\log^2 x}-\frac2{\log^2 2}+2\left(\frac{x}{\log^3 x}-\frac2{\log^3 2}+3\int_2^x \frac1{\log^4 t}\mathrm dt\right)\right)\\&=\frac{x}{\log\,x}-\frac2{\log\,2}+\left(\frac{x}{\log^2 x}-\frac2{\log ^2(2)}+2\left(\frac{x}{\log^3 x}-\frac2{\log^3 2}+3\left(\frac{x}{\log^4 x}-\frac2{\log^4 2}+\right.\right.\right.\\ &\qquad\qquad\left.\left.\left.4\int_2^x \frac1{\log^5 t} \mathrm dt\right)\right)\right)\end{align*}

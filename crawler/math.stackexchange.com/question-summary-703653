@@ -1,0 +1,30 @@
+ \sum_{k=0}^{n} k \binom nk p^k (1-p)^{n-k} = np 
+ \sum_{k=0}^{n}  \binom nk p^k (1-p)^{n-k} = (1 + [1-P])^n = 1 
+ \sum_{k=0}^{n+1} k \binom {n+1}{k} p^k (1-p)^{n+1-k} = (n+1)p  
+ \sum_{k=0}^{n} k \binom {n}{k} p^k (1-p)^{n-k} = np  
+y=1-p
+x=p
+ f(x)=\sum_{k=0}^{n}  \binom nk x^k y^{n-k}= (x+y)^n
+x\frac{\partial f}{\partial x}= \sum_{k=0}^{n} k \binom nk x^k y^{n-k}=nx(x+y)^{n-1} 
+n
+p
+np
+Y = \sum_i X_i
+X_i
+n
+X_i
+Y
+E[Y] = \sum_i E[X_i]
+E[X_i]=p
+k\binom{n\vphantom{1}}{k}=n\binom{n-1}{k-1}
+ \begin{align} \sum_{k=0}^nk\binom{n}{k}p^k(1-p)^{n-k} &=\sum_{k=0}^nn\binom{n-1}{k-1}p^k(1-p)^{n-k}\\ &=np\sum_{k=0}^n\binom{n-1}{k-1}p^{k-1}(1-p)^{n-k}\\ &=np\,\Big(p+(1-p)\Big)^{n-1}\\[12pt] &=np \end{align} 
+k
+k!
+\begin{align} \sum_{k=0}^{n} k \binom nk p^k (1-p)^{n-k} &=  \sum_{k=1}^{n} k\frac{n!}{k!(n-k)!} p^k (1-p)^{n-k} =  n\sum_{k=1}^{n} \frac{(n-1)!}{(k-1)!(n-k)!} p^k (1-p)^{n-k}\\ &=  n\sum_{k=1}^{n} \binom{n-1}{k-1} p^k (1-p)^{n-k}=n\sum_{k=0}^{n-1} \binom{n-1}{k} p^{k+1} (1-p)^{n-(k+1)}\\&={np\sum_{k=0}^{n-1} \binom{n-1}{k} p^{k} (1-p)^{n-1-k}}=np\cdot(p+1-p)^{n-1}=np\end{align}
+x=\frac{p}{1-p}
+n \frac{1}{(1-p)^{n-1}}
+(1-p)^{n-1}
+p
+(1+x)^n=\sum_0^n  \binom{n}{k} x^k.
+n(1+x)^{n-1}=\sum_0^n k\binom{n}{k}x^{k-1}.
+\sum_0^n k\binom{n}{k}p^{k-1} (1-p)^{n-k}=n.

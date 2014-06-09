@@ -1,0 +1,92 @@
+\mathbf{Set}^{op}
+\mathbf{CABA}
+\mathbf{Set}^{op}
+\mathbf{CBA}
+F: \mathcal{X} \to \mathcal{A}
+G: \mathcal{A} \to \mathcal{X}
+\eta: Id_{\mathcal{X}} \to GF
+\varepsilon: FG \to Id_{\mathcal{A}}
+\{ X \in \mathcal{X} \mid \eta_X \text{ is an isomorphism} \}
+\{ A \in \mathcal{A} \mid \varepsilon_A \text{ is an isomorphism} \}
+\mathcal{X}=\mathbf{Set}
+\mathcal{A}=\mathbf{CBA}^{op}
+op
+\mathbf{Set}
+\mathbf{CBA}
+2 = \{ 0,1 \}
+0 < 1
+X
+P(X) = \mathbf{Set}(X,2)
+B
+Q(B) = \mathbf{CBA}(B,2)
+P
+Q
+f: X \to Y
+P(f): P(Y) \to P(X)
+h \in P(Y)
+h\circ f \in P(X)
+Q
+P: \mathbf{Set} \to \mathbf{CBA}^{op}
+Q: \mathbf{CBA}^{op} \to \mathbf{Set}
+Q
+P
+P(X)
+X
+X
+2
+X
+\eta_X : X \to Q(P(X)
+\eta_X(x)\sigma := \sigma(x)
+x\in X
+\sigma\in P(X)
+f: X \to Q(B)
+\hat{f}: B \to P(X)
+\hat{f}
+\hat{f}(b)x := f(x)b
+\matrix{ f(x)b = 1 &\iff& (\eta_X(x)\circ \hat{f})b = 1 \cr           &\iff& \eta_X(x)(\hat{f}b) = 1 \cr           &\iff& \hat{f}(b)x = 1 \cr } 
+X=Q(B)
+f=id_{Q(B)}
+\varepsilon_B: B \to P(Q(B))
+\varepsilon_B(b)h := h(b)
+b \in B
+h\in Q(X)
+B
+at(B)
+b\in B
+at(B/b)
+b
+B
+b\in B
+b = \bigvee(at(B/b))
+B
+h\in Q(B)
+at(B)
+h^{-1}(1)
+a_h
+b \in B
+h(b)=1 \iff a_h\leq b
+a\in at(B)
+Q(B)
+h \mapsto a_h
+Q(B)
+at(B)
+P(X)
+X
+h \in Q(P(X))
+x\in X
+h = \eta_X(x)
+\eta_X
+\varepsilon_B: B\to P(Q(B))
+B
+B
+\sigma \in P(Q(B))
+S = \sigma^{-1}(1) \subseteq Q(B)
+B
+2
+b = \bigvee \{a_s\mid s \in S \}
+b
+b\in B
+\varepsilon_B(b)=\sigma
+\varepsilon_B
+B
+\matrix{ \varepsilon_B(b)h = 1 &\iff& h(b) = 1 \cr                       &\iff& \exists s\in S: h(a_s) = 1 \cr                       &\iff& \exists s\in S: a_h \leq a_s \cr                       &\iff& \exists s\in S: a_h = a_s \cr                       &\iff& h \in S \cr                       &\iff& \sigma(h) = 1 \cr } 

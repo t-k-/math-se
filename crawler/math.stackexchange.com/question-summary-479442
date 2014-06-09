@@ -1,0 +1,36 @@
+x=ia
+x=-ia
+S=\{-ia, ia\}
+ \varphi \colon \Bbb C\setminus S\to \Bbb C, z\mapsto\dfrac{e^{i(3z)}}{(z^2+a^2)^2}
+n\in \Bbb N
+n> a
+\gamma (n):=\gamma _1(n)\lor \gamma _2(n)
+\gamma _1(n)\colon [-n,n]\to \Bbb C, t\mapsto t
+\gamma _2(n)\colon [0,\pi]\to \Bbb C, \theta \mapsto ne^{i\theta}
+\gamma (n)
+S
+\varphi
+\operatorname {Res}(\varphi ,ia)=\left.\dfrac{d}{dz}\left(z\mapsto (z-ia)^2\varphi (z)\right)\right\vert_{z=ia}\overset{\text{W.A.}}{=}\left.\dfrac{ie^{i3z}(3ia+3z+2i)}{(z+ia)^3}\right\vert_{z=ia} = \dfrac{e^{-3a}(3a+1)}{4a^3i}.
+\gamma(n)
+n>a
+\varphi
+\displaystyle \int \limits_{\gamma (n)}\varphi (z)dz=2\pi i\cdot \dfrac{e^{-3a}(3a+1)}{4a^3i}= \dfrac{\pi e~^{-3a}(3a+1)}{2a^3}.
+\displaystyle \int \limits _{\gamma (n)}\varphi=\int \limits _{\gamma _1(n)}\varphi +\int \limits_{\gamma _2(n)}\varphi \tag {*}
+t\mapsto \dfrac{\sin (3t)}{(t^2+a^2)^2}
+\displaystyle\int \limits _{\gamma _1(n)}\varphi(z)dz=\int \limits _{-n}^n\varphi (t)dt=\int \limits_{-n}^n\dfrac{e^{i(3t)}}{(t^2+a^2)^2}dt=\int \limits_{-n}^n\dfrac{\cos(3t)+i\sin 3t)}{(t^2+a^2)^2}dt=\int \limits _{-n}^n\dfrac{\cos (3t)}{(t^2+a^2)^2}dt.
+\int \limits _{\gamma _2(n)}\varphi (z)dz=\int \limits _0^\pi \varphi(ne^{i\theta})\cdot ine^{i\theta}d\theta=\int \limits _0^\pi\dfrac{e^{i\cdot 3ne^{i\theta}}ine^{i\theta}}{(n^2e^{2ni\theta }+a^2)^2}d\theta=n\int \limits _0^\pi i\dfrac{e^{i\cdot 3n(\cos (\theta)+i\sin (\theta))}e^{i\theta}}{(n^2e^{2ni\theta }+a^2)^2}d\theta=\\ =n\int \limits _0^\pi i\dfrac{e^{-3n\sin (\theta)}e^{i(3n\cos (\theta)+\theta)}}{(n^2e^{2ni\theta }+a^2)^2}d\theta,
+\left \vert\, \int \limits _{\gamma _2(n)}\varphi (z)dz\right \vert\leq n\int \limits _0^\pi \left \vert i\dfrac{e^{-3n\sin (\theta)}e^{i(3n\cos (\theta)+\theta)}}{(n^2e^{2ni\theta }+a^2)^2}\right \vert d\theta =n\int \limits_0^\pi \left \vert\dfrac{e^{-3n\sin (\theta)}}{(n^2e^{2ni\theta }+a^2)^2}\right \vert d\theta=\\=n\int \limits_0^\pi \dfrac{\left \vert e^{-3n\sin (\theta)}\right \vert}{\left \vert n^2e^{2ni\theta }+a^2\right \vert^2}d\theta \underset{(n>a)}{\leq} n\int \limits _0^\pi \dfrac{e^{-3a\sin (\theta)}}{(n^2-a^2)^2}d\theta=\dfrac{n}{(n^2-a^2)^2}\int \limits _0^\pi e^{-3a\sin (\theta)}d\theta\overset{n\to +\infty}{\longrightarrow} 0
+(*)
+\dfrac{\pi e~^{-3a}(3a+1)}{2a^3}=\int \limits_{-\infty}^{+\infty} \dfrac{\cos (3t)}{(t^2+a^2)^2}dt.
+\begin{aligned}f(t)=\int_0^{\infty} \frac{\cos 3xt}{(x^2+a^2)^2}\,dx\Rightarrow \mathcal{L}\{f(t)\} &=\int_0^{\infty}e^{-st}\int_0^{\infty}\frac{\cos 3xt}{(x^2+a^2)^2}\,dx\,dt\\&=\int_0^{\infty}\frac{1}{(x^2+a^2)^2}\int_0^{\infty} e^{-st}\cos 3xt\,dt\,dx\\&=\int_0^{\infty}\frac{s\,dx}{(x^2+a^2)^2(9x^2+s^2)}\\&=\frac{3\pi}{2a^2(3a+s)^2}+\frac{\pi s}{4a^3(3a+s)^2}\end{aligned}
+\mathcal{L}^{-1}\left\{\frac{3\pi}{2a^2(3a+s)^2}\right\}+\mathcal{L}^{-1}\left\{\frac{\pi s}{4a^3(3a+s)^2}\right\}=\frac{3\pi t}{2a^2e^{3at}}+\frac{\pi(1-3at)}{4a^3e^{3at}}
+t=1
+\int_0^{\infty}\frac{\cos 3x\,dx}{(x^2+a^2)^2}=\frac{\pi(3a+1) }{4a^3e^{3a}}
+\int_{0}^{R}\frac{\cos(3x)}{(x^2+a^2)^2}=\frac{1}{2}\int_{-R}^{R}\frac{\cos(3x)}{(x^2+a^2)^2}
+\int_{-R}^{R}\frac{e^{3ix}}{(x^2+a^2)^2}\ dx+\int_{\gamma_R}\frac{e^{3iz}}{(z^2+a^2)^2}\ dz=2\pi i\cdot \text{res}_{ia}\left(\frac{e^{3iz}}{(z^2+a^2)^2}\right)
+z=Re^{I\theta},\, 0\leq \theta\leq \pi
+ \int_{C_R}\frac{e^{iz}}{z^2+a^2}dz 
+ \Bigg|\frac{e^{iz}}{z^2+a^2}\Bigg| \leq \frac{\Big|e^{i R e^{R\theta}}\Big|}{R^2-a^2} = \frac{e^{-R \sin(\theta)}}{R^2-a^2}. 
+R\sin(\theta ) \geq 0 
+0\leq \theta\leq \pi
+ \lim_{R\to \infty}  \frac{e^{-R \sin(\theta)}}{R^2-a^2} = 0 .

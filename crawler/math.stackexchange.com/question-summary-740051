@@ -1,0 +1,53 @@
+X
+Y
+X
+Y
+X
+Y
+Z
+X \to Y \to Z
+X
+Z
+Y
+Z
+X
+Y
+X \to Y \to Z
+Y
+X
+[p(x|y)]
+ p(z_k)=p(z_k|x_i)=\sum_{j=1}^N p(z_k|y_j,x_i)p(y_j|x_i)=\sum_{j=1}^N p(z_k|y_j)p(y_j|x_i) 
+ \sum_{j=1}^N p(y_j|x_i)=1 
+ \sum_{j=1}^N \left(p(z_k|y_j)-p(z_k)\right)p(y_j|x_i)=0\implies \\ \sum_{j=1}^N \left(\frac{p(z_k|y_j)-p(z_k)}{p(y_j)}\right)p(x_i|y_j)=0 
+Y
+X
+X
+Y
+\alpha_i
+i
+|\alpha_i|\leq 1
+M
+X
+\beta_i\in[0,1]
+Z
+p(z_k|x_i,y_j)=\beta_i
+N
+M
+N
+Z
+ \alpha_1 p(x_1|y_j)+\dots+\alpha_M p(x_M|y_j)=0, 
+ p(x_1|y_j)+\dots+ p(x_M|y_j)=1. 
+ (1+\alpha_1) p(x_1|y_j)+\dots+(1+\alpha_M) p(x_M|y_j)=1. 
+ \beta_1 p(x_1|y_j)+\dots+\beta_M p(x_M|y_j)=\zeta. 
+j
+Z\rightarrow X \rightarrow Y
+j
+Z
+Y
+X
+Y
+Z
+Y
+X
+Z\rightarrow X \rightarrow Y
+ p(z_k|y_j)=\zeta  

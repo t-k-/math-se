@@ -1,0 +1,30 @@
+\begin{bmatrix} A_{1} &B_1  \\ B_1'  &C_1 \end{bmatrix}
+\begin{bmatrix} A_2 &B_2 \\ B_2'  &C_2 \end{bmatrix}
+\begin{bmatrix} A_{1} &B_1  \\ B_1'  &C_1 \end{bmatrix}-\begin{bmatrix} A_2 &B_2 \\ B_2'  &C_2 \end{bmatrix}
+(A_1-B_1C^{-1}_1B_1')-(A_2-B_2C^{-1}_2B_2')
+X'
+X
+\begin{pmatrix} x & y \end{pmatrix}
+\begin{bmatrix} A_{1} &B_1  \\ B_1^T  &C_1 \end{bmatrix}-\begin{bmatrix} A_2 &B_2 \\ B_2^T  &C_2 \end{bmatrix} \geq 0
+ \begin{pmatrix} x^T & y^T \end{pmatrix} \begin{bmatrix} A_{1} &B_1  \\ B_1^T  &C_1 \end{bmatrix} \begin{pmatrix} x \\ y \end{pmatrix} \geq \begin{pmatrix} x^T & y^T \end{pmatrix} \begin{bmatrix} A_2 &B_2 \\ B_2^T  &C_2 \end{bmatrix} \begin{pmatrix} x \\ y \end{pmatrix}~~~~~(*)
+y^T(C_1-B_1^T A_1^{-1} B_1)y \geq \mbox{ something positive} + y^T(C_2-B_2^T A_2^{-1} B_2)y,
+y^T(C_1-B_1^T A_1^{-1} B_1)y \geq  y^T(C_2-B_2^T A_2^{-1} B_2)y,
+X=\begin{pmatrix}A&B\\C&D\end{pmatrix}
+S
+D
+X
+ \begin{pmatrix}A&B\\C&D\end{pmatrix} =\begin{pmatrix}I&BD^{-1}\\&I\end{pmatrix} \begin{pmatrix}S\\&D\end{pmatrix} \begin{pmatrix}I\\D^{-1}C&I\end{pmatrix}. 
+ \begin{pmatrix}A&B\\B^\ast&D\end{pmatrix} =\begin{pmatrix}I&Y^\ast\\&I\end{pmatrix} \begin{pmatrix}S\\&D\end{pmatrix} \begin{pmatrix}I\\Y&I\end{pmatrix}\ \textrm{ for some } Y. 
+ \begin{eqnarray} &&\begin{pmatrix}A_1&B_1\\B_1^\ast&D_1\end{pmatrix} \ge\begin{pmatrix}A_2&B_2\\B_2^\ast&D_2\end{pmatrix} \\ &\Rightarrow& \begin{pmatrix}S_1\\&D_1\end{pmatrix} \ge \begin{pmatrix}I&Z^\ast\\&I\end{pmatrix} \begin{pmatrix}S_2\\&D_2\end{pmatrix} \begin{pmatrix}I\\Z&I\end{pmatrix}\ \textrm{ for some } Z\\ &\Rightarrow& (x^\ast,0)\begin{pmatrix}S_1\\&D_1\end{pmatrix}\begin{pmatrix}x\\0\end{pmatrix} \ge (x^\ast,\ x^\ast Z^\ast) \begin{pmatrix}S_2\\&D_2\end{pmatrix} \begin{pmatrix}x\\Zx\end{pmatrix},\ \forall x\\ &\Rightarrow& x^\ast S_1 x \ \ge\ x^\ast S_2 x + (Zx)^\ast D_2 (Zx) \ \ge\ x^\ast S_2 x,\ \forall x\\ &\Rightarrow& S_1\ge S_2. \end{eqnarray} 
+ \begin{pmatrix} Q &S\\ S^T &R \end{pmatrix} \succeq 0 
+R^\dagger
+R
+\begin{align} R &\succeq 0\\ Q -SR^\dagger S^T &\succeq 0\\ S(I-RR^\dagger) &= 0 \end{align} 
+ M_1 - M_2 := \begin{pmatrix} A_1 &B_1\\ B_1^T &C_1 \end{pmatrix} - \begin{pmatrix} A_2 &B_2\\ B_2^T &C_2 \end{pmatrix}\succeq 0
+Q=M_1,S=I,R=M_2^{-1}
+M_1
+(1,1)
+\begin{align} M_2^{-1} &\succeq 0 \quad \text{by definition}\\ M_1 - M_2 &\succeq 0\\ I (I-M_2M_2^{-1}) &= 0 \end{align} 
+ \begin{pmatrix} M_1 &I\\I&M_2^{-1} \end{pmatrix}\succeq 0 
+ M_2^{-1} = \begin{pmatrix}  (A_2 - B_2C_2^{-1}B_2^T)^{-1} &\star\\ \star &\star \end{pmatrix} 
+\begin{pmatrix} M_1 &I\\I&M_2^{-1} \end{pmatrix} \leadsto \left( \begin{array}{cc|cc} (A_1 - B_1C_1^{-1}B_1^T) &I &0 &0\\ I &(A_2 - B_2C_2^{-1}B_2^T)^{-1} &0 &\star\\ \hline 0 &0 &C_1 &I\\ 0&\star&I&\star \end{array}\right) \succeq 0 

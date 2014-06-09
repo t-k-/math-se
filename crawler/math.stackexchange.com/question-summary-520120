@@ -1,0 +1,16 @@
+u\in C^2(\mathbb{R}^n)
+\mathbb{R}^n
+Q\in\mathbb{R}^{n^2}
+QQ^T=E_n
+v\in C^2(\mathbb{R}^n)
+v(y):=u(x)
+y=Qx
+\mathbb{R}^n
+ \Delta u:=\sum\limits_{k=1}^{n}\frac{\partial^2 u}{\partial x_k^2}=0\mbox{ in }\mathbb{R}^n. 
+\Delta v=0
+ y=\begin{pmatrix}y_1\\\vdots\\y_n\end{pmatrix}=\underbrace{\begin{pmatrix}q_{11}\ldots q_{1n}\\\vdots\\q_{n1}\ldots q_{nn}\end{pmatrix}}_{=Q}\cdot\begin{pmatrix}x_1\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}\sum\limits_{i=1}^{n}q_{1i}x_i\\\vdots\\\sum\limits_{i=1}^{n}q_{ni}x_i\end{pmatrix}, 
+ \Delta v(y)=\sum\limits_{k=1}^{n}\frac{\partial^2 v(y)}{\partial\left(\sum\limits_{i=1}^{n}q_{ki}x_i\right)^2}. 
+y_l=\sum_{i=1}q_{li}x_i
+\frac{\partial v}{\partial x_i}=\sum_{l=1}^{n}\frac{\partial u}{\partial y_l}.q_{li}
+\frac{\partial^2 v}{\partial x_i\partial x_k}=\sum_{l=1}^{n}\sum_{j=1}^{n}\frac{\partial ^2u}{\partial y_l\partial y_j}.q_{li}.q_{ji}
+\Delta v=\sum_{l=1}^{n}\sum_{j=1}^{n}\frac{\partial ^2u}{\partial y_l\partial y_j} (\sum_{i=1}^{n}q_{li}.q_{ji})=\Delta u

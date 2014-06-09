@@ -1,0 +1,34 @@
+f: U \subseteq \mathbb{R}^d \to \mathbb{R}
+U
+v = ( \alpha_1,\dots,\alpha_d ) \in \mathbb{R}^d 
+ D_v f(x_0) = \sum_{j=1}^d \alpha_j \frac{ \partial f }{\partial  x_j}(x_0)?
+u \in \mathbb R^d
+u \neq 0
+\begin{align} D_u f(x_0) &= \lim_{t \to 0} \frac{f(x_0 + tu) - f(x_0)}{t} \\ &= \lim_{t \to 0} \frac{f(x_0 + tu) - f(x_0) - J(tu) + J(tu)}{t} \\ &= \lim_{t \to 0} \frac{f(x_0 + tu) - f(x_0) - J(tu)}{t} + \frac{J(tu)}{t} \\ &= \lim_{t \to 0} \frac{f(x_0 + tu) - f(x_0) - J(tu)}{t||u||}||u|| + \frac{J(tu)}{t} \end{align}
+0 \cdot ||u|| = 0
+t \to 0
+ \frac{J(tu)}{t} = \frac{\sum \limits_{j = 1}^{d} a_j t u_j}{t} = \frac{t \sum \limits_{j = 1}^{d} a_j u_j}{t} = \sum \limits_{j = 1}^{d} a_j u_j = J(u)
+D_u f(x_0) = 0 + J(u) = J(u)
+u = e_j
+\frac{\partial f}{\partial x_j}(x_0) = D_{e_j}f(x_0) = J(e_j) = a_j
+D_v f(x_0) = J(v) = \sum \limits_{j = 1}^{d} a_j \alpha_j = \sum \limits_{j = 1}^{d}\frac{\partial f}{\partial x_j}(x_0) \alpha_j = \sum \limits_{j = 1}^{d} \alpha_j \frac{\partial f}{\partial x_j}(x_0)
+||h|| \to 0
+h = tv
+t
+\frac{f(x_0 + tv) - f(x_0)}{t} = \langle \nabla f(x_0), v \rangle + ||v|| \frac{o(|t|)}{t}
+t \to 0
+D_v f(x_0) = \langle \nabla f(x_0), v \rangle = \sum_{j=1}^d \alpha_j \frac{ \partial f }{\partial  x_j}(x_0)
+f
+p
+r
+\lim_{X\to 0}r(X)=0
+h>0
+V\ne0
+X:=tV
+(1)
+f(p+X)-f(p)=df(p).X +|X|\,r(X) \qquad\bigl(0<|X|<h\bigr)\ .\tag{1}
+f(p+tV)-f(p)=t\> df(p).V +t\,|V|\>r(tV)\qquad\bigl(0<t<h'\bigr)\ .
+D_Vf(p):=\lim_{t\to0+}{f(p+tV)-f(p)\over t}=df(p).V+|V|\lim_{t\to 0+}r(tV)=df(p).V=\nabla f(p)\cdot V\ .
+f\circ p
+p(t)=x_0+tv
+D_vf(x_0)=(f\circ p)'(0)

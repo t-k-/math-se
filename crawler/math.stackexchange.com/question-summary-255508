@@ -1,0 +1,8 @@
+\int \frac{\mathrm{d}x}{2+2\sin x + \cos x}\, \mathrm{d}x 
+\mathrm{d}x
+dx
+u=\tan\frac{x}{2}
+\sin x=\frac{2u}{1+u^2}
+\cos x=\frac{1-u^2}{1+u^2}
+dx=\frac{du}{1+u^2}
+\int\frac{dx}{2+2\sin x+\cos x}=\int\frac{du}{2+2u^2+4u+1-u^2}=\int\frac{du}{u^2+4u+3}=\int\frac{du}{(u-1)(u-3)}=\frac{1}{2}\int\frac{du}{1-u}+\frac{1}{2}\int\frac{du}{u-3}=\frac{1}{2}\ln\left|1-u\right|+\frac{1}{2}\ln\left|u-3\right|+c=\\ \frac{1}{2}\ln\left|1-\tan\frac{ x}{2}\right|+\frac{1}{2}\ln\left|\tan\frac{ x}{2}-3\right|+c

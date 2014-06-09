@@ -1,0 +1,8 @@
+\alpha^*,\mu^* 
+\max_{\alpha, \mu}\mathcal{L}(\omega, \xi, b, \alpha, \mu)
+\alpha_i^* = 0
+\mathrm{y}_i(w^T x_i + b ) - 1 + \xi_i > 0
+\mu_i^* = 0 
+\xi_i > 0
+\min_{\omega, \xi, b} \frac{1}{2} \omega^T\omega + C\sum_{i=1}^n\xi_i \\ \text{subject to} \\ \mathrm{y}_i(w^T x_i + b )  \geq   1 - \xi_i  \\  \xi_i \geq 0 
+\mathcal{L}(\omega, \xi, b, \alpha, \mu) = \frac{1}{2} \omega^T\omega + C\sum_{i=1}^n\xi_i -\sum_{i=1}^n(y_i(\omega^T x_i + b) - 1 + \xi_i) -\sum_{i=1}^n{\mu_i \xi_i} \quad \alpha, \mu \text{ are dual variables}

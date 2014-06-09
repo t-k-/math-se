@@ -1,0 +1,35 @@
+n
+c_n
+n
+b_n
+n
+p_n=c_n+b_n
+n\geqslant1
+c_{n+1}=\frac23b_n
+\frac23
+b_{n+1}=\frac13b_n+\frac13c_n
+c_1=\frac23
+b_1=\frac13
+p_n=3b_{n+1}
+9b_{n+2}=3b_{n+1}+3c_{n+1}=3b_{n+1}+2b_n
+n\geqslant1
+9r^2-3r-2=0
+r_2=\frac23
+r_1=-\frac13
+b_n=B_2r_2^n+B_1r_1^n
+B_1
+B_2
+b_2=\frac13
+B_2=\frac23
+B_1=\frac13
+b_n=r_2^{n+1}-r_1^{n+1}
+ \begin{eqnarray} P_k &=& \frac{\left(\frac13\right)^2\left(\left(\frac23 + \sqrt{\left(\frac23\right)^2+4\cdot\frac13\cdot\frac23}\right)^{k-1} - \left(\frac23 - \sqrt{\left(\frac23\right)^2+4\cdot\frac13\cdot\frac23}\right)^{k-1}\right)}{2^{k-1}\sqrt{\left(\frac23\right)^2+4\cdot\frac13\cdot\frac23}} \\ &=& \frac49 \left( \left(\frac23\right)^{k-1}-\left(-\frac13\right)^{k-1}\right)\;. \end{eqnarray} 
+n
+ \begin{eqnarray} \sum_{k=1}^n \frac49 \left( \left(\frac23\right)^{k-1}-\left(-\frac13\right)^{k-1}\right) &=& \frac49 \left(\frac{1-\left(\frac23\right)^n}{1-\frac23}-\frac{1-\left(-\frac13\right)^n}{1-\left(-\frac13\right)}\right) \\ &=& 1-\frac13\left(4\left(\frac23\right)^n-\left(-\frac13\right)^n\right) \end{eqnarray} 
+1
+\frac{4\cdot2^n-(-1)^n}{3^{n+1}}
+0, 1, 2
+p
+p=\frac{4}{6}=\frac{2}{3}
+p_n = 1 - (P^n)_{13}
+    P = \left( \begin{array}{ccc} 1-p & p & 0 \\ 1-p & 0 & p \\ 0 & 0 & 1 \end{array} \right) 

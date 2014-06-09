@@ -1,0 +1,8 @@
+\frac{d\ln(x+\sqrt{x^2+1})}{dx}=\frac1{x+\sqrt{x^2+1}}\left(1+\frac{2x}{2\sqrt{x^2+1}}\right)=\frac1{\sqrt{x^2+1}}
+\int \ln(x+\sqrt{x^2+1})\cdot 1 dx
+=\ln(x+\sqrt{x^2+1})\int dx-\left(\frac{d\ln(x+\sqrt{x^2+1})}{dx}\int dx\right)dx
+=x\ln(x+\sqrt{x^2+1})-\int \frac{x}{\sqrt{x^2+1}} dx
+x^2+1=y^2
+ xdx=ydy
+c
+\int \frac{x}{\sqrt{x^2+1}} dx=\int\frac{ydy}y=y+c=\sqrt{x^2+1}+c

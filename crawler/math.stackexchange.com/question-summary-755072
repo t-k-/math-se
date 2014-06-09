@@ -1,0 +1,10 @@
+\beta_k = \alpha_{n-k}
+A_n = \begin{bmatrix} 0 & 0 & \cdots & 0 & -\beta_n \\ 1 & 0 & \cdots & 0 & -\beta_{n-1}  \\ 0 & 1 & \cdots & 0 & -\beta_{n-2} \\ \vdots & & & & \vdots \\ 0 & 0 & \vdots & 1 & -\beta_1 \end{bmatrix}
+xI-A_n = \begin{bmatrix} x & 0 & \cdots & 0 & \beta_n \\ -1 & x & \cdots & 0 & \beta_{n-1}  \\ 0 & -1 & \cdots & 0 & \beta_{n-2} \\ \vdots & & & & \vdots \\ 0 & 0 & \vdots & -1 & x+\beta_1 \end{bmatrix}
+p_n(x) = \det(xI -A_n)
+p_{n-1}
+xI-A_n
+x
+\beta_n
+p_n(x)=\det(xI -A_n) = x \det(xI -A_{n-1}) +(-1)^{n-1} (-1)^{n-1} \beta_n = x p_{n-1}(x)+\beta_n
+p_1(x) = x+\beta_1

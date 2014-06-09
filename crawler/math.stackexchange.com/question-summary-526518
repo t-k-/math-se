@@ -1,0 +1,19 @@
+f(n) = 6n^{10} + 3^{3n-6}
+f_1(n) = 6n^{10},
+f_2(n) = 3^{3n-6}
+f_1
+n^{11}
+n^{10}
+f_2
+3^{n}
+3^{3n}
+f_1(n) = \mathrm O(n^{10})
+f_1(n) = \mathrm O(n^{11})
+\mathrm O(n^{10})
+f_2(n) = \mathrm O(3^{3n})
+f_2 = \mathrm O(3^n)
+c
+N_c = 3 + \left\lfloor\frac{\log_3 c}2\right\rfloor + 1
+n \ge N_c
+3^{2n-6} > 3^{6 + (\log_3 c) - 6} = 3^{\log_3 c} = c
+f_2(n) = 3^{3n - 6} > c 3^n

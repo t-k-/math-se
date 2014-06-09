@@ -1,0 +1,12 @@
+X_1 \sim geom(p_1)
+X_2 \sim geom(p_2)
+\{1,2,\ldots\}
+Y = X_1 + X_2
+Y
+\sum_{j=1}^{k} r^{j-1} = \frac{1-r^k}{1-r}
+p_1 p_2 \sum_{j=1}^{k-1} (1-p_2)^{j-1} \sum_{i=1}^{k-j} (1-p_1)^{i-1} 
+\sum_{i=1}^{k-j} (1-p_1)^{i-1} = \frac{ 1 - (1-p_1)^{k-j} }{p_1} 
+\begin{align} p_2 \sum_{j=1}^{k-1} (1-p_2)^{j-1} \left [ 1 - (1-p_1)^{k-j} \right ] &= 1 - (1-p_2)^{k-1} - p_2 \sum_{j=1}^{k-1} (1-p_2)^{j-1} (1-p_1)^{k-j} \\ \end{align} 
+\begin{align}\sum_{j=1}^{k-1} (1-p_2)^{j-1} (1-p_1)^{k-j} &= (1-p_1)^{k-1} \sum_{j=1}^{k-1} \left ( \frac{1-p_2}{1-p_1} \right )^{j-1} \\ &= (1-p_1)^{k-1} \frac{ 1 - \left ( \frac{1-p_2}{1-p_1} \right )^{k-1}}{1 - \frac{1-p_2}{1-p_1}} \\ &= (1-p_1)\frac{(1-p_1)^{k-1} - (1-p_2)^{k-1}}{p_2-p_1} \\ \end{align} 
+\begin{align} 1 - (1-p_2)^{k-1} - p_2 (1-p_1)\frac{(1-p_1)^{k-1} - (1-p_2)^{k-1}}{p_2-p_1} \\ = 1 - \frac{(p_2-p_1)(1-p_2)^{k-1} + p_2 (1-p_1)[(1-p_1)^{k-1} - (1-p_2)^{k-1}]}{p_2-p_1} \\  \end{align}
+1 - \frac{p_1 (1-p_2)^k - p_2 (1-p_1)^k}{p_1-p_2}

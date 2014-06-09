@@ -1,0 +1,14 @@
+A_0,\dots,A_{n-1}
+n>0
+A'_{0, i} = A_i
+A'_{1, i} = \bigcup ( \{ A_0, \ldots A_{n - 1} \} \setminus \{A_i\})
+i=0,\dots,n-1
+ \bigcup_{i=0}^{n-1} ( A_i \times A_i) = \bigcap_{i=0}^{n-1} \left( (A'_{0, i} \times    A'_{0, i}) \cup ( A'_{1, i} \times A'_{1, i}) \right) . 
+n=4
+\{x,y\}\subseteq\bigcap_{i=0}^{3}A'_{1,i}
+\langle x,y\rangle\in  \bigcap_{i=0}^{3}\left( (A'_{0,i}\times A'_{0,i})\cup (A'_{1,i}\times A'_{1,i}) \right).
+A_{i}
+x
+y
+\langle x,y\rangle \not\in\bigcup_{i=0}^{3}(A_{i}\times A_{i}).
+\bigcup_{i=0}^{3}(A_{i}\times A_{i})\not\supseteq\bigcap_{i=0}^{3}\left( (A'_{0,i}\times A'_{0,i})\cup (A'_{1,i}\times A'_{1,i}) \right).

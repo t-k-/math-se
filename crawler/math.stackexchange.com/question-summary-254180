@@ -1,0 +1,8 @@
+A
+n\times n
+\int_{\mathbb R^n} \|x\|^2 e^{-x\cdot Ax} dx
+A = L^TL
+\frac{1}{\sqrt{det(A)}} \int_{\mathbb R^n} \|Lu\|^2 e^{-\|u\|^2}du
+\int u_i u_j e^{-\|u\|^2}du
+i\ne j
+\begin{align*} \int_{\mathbb R^n} \|x\|^2 e^{-x^T A x} dx     &= \det L^{-1} \int_{\mathbb R^n} \|L^{-1} u \|^2 e^{-\|u\|^2} du \\     &= \frac{1}{\sqrt{\det A}} \left({L^{-1}}^T L^{-1}\right)_{ii}          \int_{\mathbb R^n} u_i^2  e^{-\|u\|^2} du \\     &= \frac{1}{\sqrt{\det A}} \left(A^{-1}\right)_{ii}         \int u_i^2  e^{-u_i^2} d u_i \prod_{j\ne i} \int e^{-u_j^2} du_j \\     &= \frac{1}{\sqrt{\det A}} \left(A^{-1}\right)_{ii}         \frac{\sqrt{\pi}}{2} \prod_{j\ne i} \sqrt{\pi} \\     &= \frac{\pi^{n/2}}{2} \frac{\mathrm{Tr}\, A^{-1}}{\sqrt{\det A}}.  \end{align*}

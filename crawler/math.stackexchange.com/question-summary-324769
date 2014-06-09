@@ -1,0 +1,17 @@
+ f(x,y) = 3x^2 -2xy+y^3 
+\large{\frac{f(x+h,y) - f(x,y)}{h}}
+\large{\frac{f(x,y+k) - f(x,y)}{k}}
+ \begin{align*} \frac{f(x+h,y) - f(x,y)}{h} &= \frac{3(x+h)^2 - 2y(x+h) + y^3 -(3x^2-2xy+y^3)}{h} \\&= \frac{3(x+h)^2 - 3x^2 -2y(x+h) + 2xy}{h} \\&=\frac{3(x+h+x)(x+h-x) - 2y(h)}{h} \\&=\frac{3(x+h+x)(x+h-x) - 2y(h)}{h} \\&= 3(2x+h) -2y \end{align*} 
+ \begin{align*} \frac{f(x,y+k) - f(x,y)}{k} &= \frac{3x^2 - 2x(y+k) + (y+k)^3-(3x^2-2xy+y^3)}{k} \\&= \frac{-2x(y+k) +(y+k)^3 + 2xy-y^3}{k} \\&=\frac{2x(-y-k+y) + (y+k)^3 - y^3}{k} \\&=\frac{-2xk + (y+k-y)[(y+k)^2 + y(y+k) + y^2]}{k} \\&=\frac{-2xk + k[(y+k)^2 + y(y+k) + y^2]}{k} \\&= -2x + (y+k)^2 + y(y+k) + y^2 \end{align*} 
+ \begin{align*} \frac{\partial f}{\partial x}(x,y)=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}{h} &= \lim_{h \to 0}3(2x+h) - 2y \\&= 6x + 2y \end{align*} 
+ \begin{align*} \frac{\partial f}{\partial y}(x,y)=\lim_{k\to0}\frac{f(x,y+k)-f(x,y)}{k} &= \lim_{k \to 0} -2x + (y+k)^2 + y(y+k) + y^2 \\&= -2x + y^2 + y^2 + y^2 \\&= -2x + 3y^2 \end{align*} 
+h\to 0
+f(x,y)
+x
+k\to 0
+f(x,y)
+y
+\frac{\partial f}{\partial x}(x,y)=\lim_{h\to0}\frac{f(x+h,y)-f(x,y)}{h}.
+h
+k
+\frac d{dx}(3x^2)=6x

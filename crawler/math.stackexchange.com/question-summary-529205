@@ -1,0 +1,32 @@
+ \int_{0}^{z} \ln \Gamma(x)  \  \mathrm  dx = \frac{z}{2}  \log (2 \pi) + \frac{z(1-z)}{2} +  z \ln \Gamma(z) - \log G(z+1)
+ \int_{0}^{z} \ln \Gamma(x)  \  \mathrm dx = \frac{z}{2} \log(2 \pi) + \frac{z(1-z)}{2} - \zeta^{'}(-1) + \zeta^{'}(-1,z)
+\log G(z+1) - z \log \Gamma(z) = \zeta'(-1) - \zeta'(-1,z) 
+\sum_{k=2}^{\infty} \zeta(k,a) x^{k-1} = \psi(a) - \psi(a-x)
+ \sum_{k=2}^{\infty} \frac{\zeta(k,a)}{k} x^{k} = \psi(a) x + \log \Gamma(a-x) - \log \Gamma(a)
+ \implies \sum_{k=2}^{\infty} (-1)^{k} \frac{\zeta(k,1)}{k} x^{k} = \gamma x + \log \Gamma(x+1) 
+\zeta(k,1) = \zeta(k)
+0
+z
+ \int_{0}^{z} \log \Gamma(x+1) \  \mathrm dx = \int_{0}^{z} \log x \  \mathrm dx + \int_{0}^{z} \log \Gamma(x) \  \mathrm dx   = - \frac{\gamma z^{2}}{2} + \sum_{k=2}^{\infty} (-1)^{k} \frac{\zeta(k,1)}{k(k+1)} z^{k+1}
+ \displaystyle \zeta(s,a) = \frac{1}{\Gamma(s)} \int_{0}^{\infty} \frac{t^{s-1} e^{-at}}{1-e^{-t}} \ \mathrm dt 
+ \int_{0}^{z} \log \Gamma(x) \  \mathrm dx = z- z \log z  - \frac{\gamma z^{2}}{2} + \sum_{k=2}^{\infty} (-1)^{k} \frac{z^{k+1}}{k(k+1)} \frac{1}{\Gamma(k)} \int_{0}^{\infty} \frac{t^{k-1} e^{-t}}{1-e^{-t}} \ \mathrm dt 
+ = z - \log z - \frac{\gamma z^{2}}{2} + z \int_{0}^{\infty} \frac{e^{-t}}{1-e^{-t}} \frac{1}{t} \sum_{k=2}^{\infty} \frac{(-1)^{k}}{k+1} \frac{(zt)^{k}}{k!} \ \mathrm dt 
+ = z - z \log z - \frac{\gamma z^{2}}{2}  + z \int_{0}^{\infty} \frac{e^{-t}}{1-e^{-t}}\frac{1}{t} \Big( -\frac{e^{-zt}}{zt} - 1 + \frac{zt}{2} + \frac{1}{zt} \Big) \ \mathrm dt
+ = z - z \log z - \frac{\gamma z^{2}}{2} + \lim_{s \to 0^{+}} \Big[ - \int_{0}^{\infty} \frac{t^{s -2} e^{-(1+z)t}}{1-e^{-t}} \ \mathrm dt - z \int_{0}^{\infty} \frac{t^{s-1} e^{-t}}{1-e^{-t}} \ \mathrm dt + \frac{z^{2}}{2} \int_{0}^{\infty} \frac{t^{s} e^{-t}}{1-e^{-t}} \ \mathrm dt 
+ + \int_{0}^{\infty} \frac{t^{s -2} e^{-t}}{1-e^{-t}} \ \mathrm dt \Big]
+ = z - z \log z - \frac{\gamma z^{2}}{2} + \lim_{s \to 0^{+}} \Big[ - \Gamma(s-1) \zeta(s-1,1+z) -z \Gamma(s) \zeta(s) + \frac{z^{2}}{2} \Gamma(s+1) \zeta(s+1)
+ + \Gamma(s-1) \zeta(s-1) \Big]
+ = z - z \log z - \frac{\gamma z^{2}}{2} + \lim_{s \to 0^{+}} \Bigg[-\Big(-\frac{1}{s} + \gamma -1 + \mathcal{O}(s) \Big) \Big( \zeta(-1, z+1)+ \zeta'(-1,z+1)s + \mathcal{O}(s^{2}) \Big)
+ - z \Big( \frac{1}{s} - \gamma + \mathcal{O}(s) \Big) \Big( - \frac{1}{2} - \frac{\ln (2 \pi)}{2} s + \mathcal{O}(s^{2}) \Big) + \frac{z^{2}}{2} \Big(1 - \gamma s + \mathcal{O}(s^{2}) \Big) \Big( \frac{1}{s} + \gamma +  \mathcal{O} (s) \Big) 
+ + \Big(- \frac{1}{s} + \gamma -1 + \mathcal{O} (s) \Big) \Big( - \frac{1}{12} + \zeta'(-1) s + \mathcal{O}(s^{2}) \Big) \Bigg] 
+ = z - z \log z - \frac{\gamma z^{2}}{2}
+ + \lim_{s \to 0^{+}} \Bigg[-\Big(-\frac{1}{s} + \gamma -1 + \mathcal{O}(s) \Big) \Big( \zeta(-1,z) -z + \zeta'(-1,z)s + z \ln z \ s + \mathcal{O}(s^{2}) \Big)
+ - z \Big( \frac{1}{s} - \gamma + \mathcal{O}(s) \Big) \Big( - \frac{1}{2} - \frac{\ln (2 \pi)}{2} s + O(s^{2}) \Big) + \frac{z^{2}}{2} \Big(1- \gamma s + \mathcal{O}(s^{2}) \Big) \Big( \frac{1}{s} + \gamma +  \mathcal{O} (s) \Big) 
+ + \Big(- \frac{1}{s} + \gamma -1 + \mathcal{O} (s) \Big) \Big( - \frac{1}{12} + \zeta'(-1) s + \mathcal{O}(s^{2}) \Big) \Bigg] 
+ = z - z \log z - \frac{\gamma z^{2}}{2}
+ + \lim_{s \to 0^{+}} \Bigg[-\Big(-\frac{1}{s} + \gamma -1 + \mathcal{O}(s) \Big) \Big( -\frac{z^{2}}{2}+\frac{z}{2}-\frac{1}{12}-z + \zeta'(-1,z)s + z \ln z \ s + \mathcal{O}(s^{2}) \Big)
+ - z \Big( \frac{1}{s} - \gamma + \mathcal{O}(s) \Big) \Big( - \frac{1}{2} - \frac{\ln (2 \pi)}{2} s + O(s^{2}) \Big) + \frac{z^{2}}{2} \Big(1- \gamma s + \mathcal{O}(s^{2}) \Big) \Big( \frac{1}{s} + \gamma +  \mathcal{O} (s) \Big) 
+ + \Big(- \frac{1}{s} + \gamma -1 + \mathcal{O} (s) \Big) \Big( - \frac{1}{12} + \zeta'(-1) s + \mathcal{O}(s^{2}) \Big) \Bigg] 
+ = z - z \log z - \frac{\gamma z^{2}}{2} + \lim_{s \to 0^{+}} \Big[\zeta'(-1,z) + z \log z + \frac{\gamma z^{2}}{2} - \frac{z^{2}}{2} + \frac{z}{2} - z + \frac{z \log(2 \pi)}{2} - \zeta(-1)
++ \mathcal{O}(s) \Big] 
+ = \frac{z}{2} \log(2 \pi) + \frac{z(1-z)}{2} -\zeta'(-1)+ \zeta'(-1,z) 

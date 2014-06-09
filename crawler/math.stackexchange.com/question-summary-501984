@@ -1,0 +1,28 @@
+\mathop {\lim }\limits_{n \to \infty } \left( {\int\limits_0^{\frac{\pi }{2}} {\left\vert\frac{{\sin \left( {2n + 1} \right)x}}{{\sin x}}\right\vert\,dx - \frac{{2\ln n}}{\pi }} } \right) = \frac{{6\ln 2}}{\pi } + \frac{{2\gamma }}{\pi } + \frac{2}{\pi }\sum\limits_{k = 1}^\infty  {\frac{1}{{2k + 1}}\ln \left( {1 + \frac{1}{k}} \right)}\cdots (1) 
+(1)
+I_{n}=\int_{0}^{\frac{\pi}{2}}\dfrac{\sin{(2n+1)x}}{\sin{x}}dx=\dfrac{\pi}{2}
+(1)
+I_{n}-I_{n-1}=\int_{0}^{\frac{\pi}{2}}\dfrac{\sin{(2n+1)x}-\sin{(2n-1)x}}{\sin{x}}dx=2\int_{0}^{\frac{\pi}{2}}\cos{(2nx)}dx=0
+I_{n}=I_{n-1}=\cdots=I_{0}=\dfrac{\pi}{2}
+f(x)
+[0,\frac{\pi}{2}]
+\lim_{n\to\infty} \int_0^{\frac{\pi}{2}} \Big|\sin((2n+1)x)\Big| f(x) dx = \frac{2}{\pi}\int_0^{\frac{\pi}{2}} f(x) dx
+\frac{1}{\sin x} - \frac{1}{x}
+\lim_{n\to\infty} \int_0^{\frac{\pi}{2}} \Big|\sin((2n+1)x)\Big| \Big(\frac{1}{\sin x} - \frac{1}{x} \Big) dx = \frac{2}{\pi} \int_0^{\frac{\pi}{2}} \Big(\frac{1}{\sin x} - \frac{1}{x} \Big) dx\\ = \frac{2}{\pi} \left[\log\left(\frac{\tan(\frac{x}{2})}{x}\right)\right]_0^{\frac{\pi}{2}} = \frac{2}{\pi} \left[\log\frac{2}{\pi} - \log{\frac12}\right] = \frac{2}{\pi} \log\frac{4}{\pi} \tag{*1}
+\int_0^{\frac{\pi}{2}}  \frac{|\sin((2n+1)x)|}{x} dx = \int_0^{\pi(n+\frac12)} \frac{|\sin x|}{x} dx = \int_0^{\pi n} \frac{|\sin x|}{x} dx + O(\frac{1}{n}) 
+\psi(x)
+x
+\psi(x) = \log x - \frac{1}{2x} + \sum_{k=1}^{\infty}\frac{\zeta(1-2k)}{x^{2k}}
+\int_0^1 \sin(\pi x)\psi(x+n) dx = \frac{2}{\pi} \log n + O(\frac{1}{n})\tag{*3}
+(*3)
+(*2)
+(*1)
+(*4)
+\lim_{n\to\infty} \left(\int_0^{\frac{\pi}{2}} \left|\frac{\sin((2n+1)x)}{\sin x}\right| dx - \frac{2}{\pi} \log n\right) = \frac{2}{\pi} \log\frac{4}{\pi} - \int_0^1 \sin(\pi x)\psi(x) dx \tag{*4}
+\color{blue}{^{[1]}}
+\int_0^1 \sin(\pi x)\psi(x) dx = \int_0^1 \sin(\pi x)\,d\log\Gamma(x) = -\pi\int_0^1 \cos(\pi x)\log\Gamma(x) dx 
+\displaystyle \int_0^1 \cos(\pi x)\log \frac{\pi}{\sin(\pi x)} dx = 0\quad
+\displaystyle \int_0^1 \cos(\pi x)\Big(\frac12 - x\Big) dx = \frac{2}{\pi^2}
+\displaystyle \int_0^1 \cos(\pi x)\sin(2\pi k x) dx = \frac{4k}{(4k^2-1)\pi} 
+(*4)
+\begin{align} \text{RHS}_{(*4)} = & \frac{2}{\pi}\log\frac{4}{\pi} + \pi \left[  \Big(\gamma + \log(2\pi)\Big)\frac{2}{\pi^2} + \frac{4}{\pi^2}\sum_{k=2}^{\infty}\frac{\log k}{4k^2-1} \right]\\ = & \frac{2}{\pi}\left[\log 8 + \gamma + \sum_{k=2}^{\infty}\log k \left(\frac{1}{2k-1}-\frac{1}{2k+1}\right) \right]\\ = & \frac{6\log 2}{\pi} + \frac{2\gamma}{\pi} + \frac{2}{\pi}\sum_{k=1}\frac{\log(1+\frac{1}{k})}{2k+1} \end{align}

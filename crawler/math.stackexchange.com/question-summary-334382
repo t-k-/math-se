@@ -1,0 +1,22 @@
+a_n=(1+\frac{1}{n})^n
+\epsilon>0
+N
+|a_m-a_n|<\epsilon
+ m,n>N
+|a_m-a_n|=\bigg|\bigg(1+\frac{1}{m}\bigg)^m-\bigg(1+\frac{1}{n}\bigg)^n\bigg|\leq \bigg|\bigg(1+\frac{1}{m}\bigg)^m\bigg|+\bigg|\bigg(1+\frac{1}{n}\bigg)^n\bigg|\leq\bigg(1+\frac{1}{m}\bigg)^m+\bigg(1+\frac{1}{n}\bigg)^n\leq \quad?
+\left(1+\dfrac{1}{n}\right)^n = 1 + 1 + \dfrac{1}{2!}\left(1-\dfrac{1}{n}\right)+\dfrac{1}{3!}\left(1-\dfrac{1}{n}\right)\left(1-\dfrac{2}{n}\right) + \ldots \leq 2 + \dfrac{1}{2} + \dfrac{1}{2^2} + \dots =3
+ \begin{align*} \left(1-\dfrac{1}{n^2}\right)^n  &= 1 - {n \choose 1}\frac{1}{n^2} + {n \choose 2}\frac{1}{n^4}  + \dots\\ &= 1 - \frac{1}{n} + \dfrac{1}{2!n^2}\left(1-\dfrac{1}{n}\right) - \dfrac{1}{3!n^3}\left(1-\dfrac{1}{n}\right)\left(1-\dfrac{2}{n}\right) + \ldots  \end{align*} 
+ | \left(1-\dfrac{1}{n^2}\right)^{n} -\left(1-\frac{1}{n} \right)| \leq \dfrac{1}{2n^2} + \dfrac{1}{2^2n^2} + \dfrac{1}{2^3n^2} + \ldots = \dfrac{1}{n^2} . 
+ \begin{align*} \left(1+\frac{1}{n+1}\right)^{n+1} - \left(1+\frac{1}{n}\right)^n &= \left(1+\frac{1}{n}-\frac{1}{n(n+1)}\right)^{n+1}-\left(1+\frac{1}{n}\right)^n \\ &=\left(1+\frac{1}{n}\right)^{n+1}\left\{ \left( 1- \frac{1}{(n+1)^2}\right)^{n+1} - \frac{n}{n+1}\right\}\\ &= \left(1+\frac{1}{n}\right)^{n+1}(1 - \frac{1}{n+1} + \text{O}(\frac{1}{n^2}) - \frac{n}{n+1})\\ & = \left(1+\frac{1}{n}\right)^{n+1}\text{O}(\frac{1}{n^2}) \\ &= \text{O}(\frac{1}{n^2}) \text{ (since 
+ is bounded) }. \end{align*} 
+a_k = (1+1/k)^k
+|a_{k+1}-a_k| \leq C/k^2
+C
+\sum_{ k \geq n } | a_{k+1} - a_k | \to 0
+n \to \infty
+|a_n - a_m| \leq \sum_{ k \geq \min\{m,n\}} |a_{k+1} - a_k|
+\epsilon > 0
+N
+\sum_{ k \geq N} |a_k - a_{k+1}| < \epsilon
+|a_n - a_m| < \epsilon 
+n,m \geq N

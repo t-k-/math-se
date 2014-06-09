@@ -1,0 +1,42 @@
+\int_0^\infty \mathrm{Ci}(\alpha x)\mathrm{Ci}(\beta x)dx=\frac{\pi}{2 \max(\alpha,\beta)}
+\displaystyle \mathrm{Ci}(x)=-\int_x^\infty\frac{\cos(t)}{t}dt
+\alpha
+\beta
+\alpha=2, \;\ \beta=3
+\dfrac{\pi}{6}
+\alpha
+\beta
+\beta=3
+\dfrac{\pi}{2\cdot 3}=\dfrac{\pi}{6}
+I=\int_0^\infty \int_{\alpha x}^\infty \int_{\beta x}^\infty \frac{\cos u \cos v}{uv } du\: dv\: dx,
+\int_0^\infty \int_{x}^\infty \int_{x}^\infty \frac{\cos \beta u \cos \alpha v}{uv } du\: dv\: dx.
+\{(x,u,v): x<u, x<v\}
+\{(x,u,v): x<u<v\}
+\{(x,u,v): x<v<u\}.
+\int_0^\infty \int_{x}^\infty \int_{v}^\infty \square\:   du\: dv\: dx = \int_0^\infty \int_{0}^u \int_{0}^v \square\:   dx\: dv\: du 
+ \int_0^\infty \int_{0}^u \int_{0}^v \frac{\cos \beta u \cos \alpha v}{uv } dx\: dv\: du = \int_0^\infty \int_{0}^u \frac{\cos \beta u \cos \alpha v}{u } dv\: du = \int_0^\infty \frac{\cos \beta u \sin \alpha u}{\alpha u } du
+u
+v
+\alpha
+\beta
+I(\alpha, \beta)=\int_0^\infty \frac{\beta \cos \beta t \sin \alpha t + \alpha \sin \beta t \cos \alpha t}{\alpha \beta t } dt.
+\int_0^\infty \frac{\sin t}{t} dt
+\gamma\ne0
+t\to\gamma t
+\text{sgn}(\gamma)
++1
+\gamma\gt0
+-1
+\gamma\lt0
+0
+\gamma=0
+(\alpha,\beta)
+\alpha\gt\beta
+\pi/(2\alpha)=\pi/(2\max(\alpha,\beta))
+\alpha=\beta
+\pi/(4\alpha)=\pi/(4\beta)
+\pi/(2\alpha)=\pi/(2\beta)
+I(\alpha, \beta)=\int_0^\infty \frac{\beta \cos \beta t \sin \alpha t + \alpha \sin \beta t \cos \alpha t}{\alpha \beta t } \mathrm dt,
+ 2\cos \beta t \sin \alpha t =\sin(\alpha+\beta)t+\sin(\alpha-\beta)t,\quad 2\sin \beta t \cos \alpha t =\sin(\alpha+\beta)t+\sin(\beta-\alpha)t, 
+ \int_0^\infty \frac{\sin \gamma t}{t} \mathrm dt=\text{sgn}(\gamma)\int_0^\infty \frac{\sin t}{t} \mathrm dt=\text{sgn}(\gamma)\frac{\pi}2, 
+ I(\alpha,\beta)=\frac\pi{4\alpha}(1+\text{sgn}(\alpha-\beta))+\frac\pi{4\beta}(1+\text{sgn}(\beta-\alpha)). 

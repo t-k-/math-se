@@ -1,0 +1,14 @@
+J_\nu = \frac{({x/2})^\nu}{\Gamma(\nu+1/2)\sqrt{\pi}}\int_{-1}^{1}(1-t^2)^{\nu-1/2}e^{itx}dt
+\int_{-1}^{1}(1-t^2)^{\nu-1/2}e^{itx}dt=\int_{-\pi/2}^{\pi/2}(\cos \theta)^{2\nu}e^{ix\sin\theta}d\theta=\int_{-\pi/2}^{\pi/2}(\cos \theta)^{2\nu}\left(\sum _{n=-\infty}^\infty J_ne^{in\theta}\right)d\theta
+\int_{-1}^{1}(1-t^2)^{\nu-1/2}e^{itx} \ dt = \int_{-1}^{1}  (1-t^{2})^{v-1/2} \sum_{n=0}^{\infty}\frac{(itx)^{n}}{n!} \ dt 
+ = \sum_{n=0}^{\infty} \frac{(ix)^{n}}{n!} \int_{-1}^{1} t^{n} (1-t^{2})^{v-1/2} \ dt 
+n
+n
+ \int_{-1}^{1}(1-t^2)^{\nu-1/2}e^{itx} \ dt = 2 \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!} \int_{0}^{1} t^{2n} (1-t^{2})^{v-1/2} \ dt
+u=x^{2}
+ = \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!} \int_{0}^{1} u^{n-1/2} (1-u)^{v-1/2} \ du = \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!} B \left(n + \frac{1}{2}, v + \frac{1}{2} \right)
+=\sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!} \frac{\Gamma(n+ \frac{1}{2}) \Gamma(v+\frac{1}{2})}{\Gamma(n+v+1)} 
+ = \sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!} \frac{2^{1-2n} \sqrt{\pi} \ \Gamma(2n) \Gamma(v+\frac{1}{2})}{\Gamma(n) \Gamma(n+v+1)} = \sum_{n=0}^{\infty} (-1)^{n} \frac{\sqrt{\pi} \ \Gamma(v+\frac{1}{2})}{n! \Gamma(n+v+1)} \left(\frac{x}{2} \right)^{2n}
+v
+ J_{v}(x) = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{\Gamma(v+1+k) n!} \left(\frac{x}{2} \right)^{v+ 2n}
+ \int_{-1}^{1} (1-t^2)^{\nu-1/2}e^{itx} \ dt = J_{v}(x) \sqrt{\pi} \ \Gamma(v+\frac{1}{2}) \left( \frac{2}{x}\right)^{v}

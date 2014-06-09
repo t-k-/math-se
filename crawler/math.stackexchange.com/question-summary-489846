@@ -1,0 +1,30 @@
+  ^C D^{\alpha}y(t)=f(t,y(t),y'(t)), t\in [0,T] ....(1) 
+ y(0)=y_0, y'(0)=y_1 ....                              (2) 
+f:[0,T]\times\mathbb{R}\times \mathbb{R}\rightarrow \mathbb{R} 
+y_0,y_1\in \mathbb{R}
+\alpha \in ]1,2]
+1<\alpha<2
+\alpha=2
+y(0)=y_0
+y'(0)=y_1
+\gamma=1/\Gamma(2-\alpha)
+y\in C^2([0,t])
+(*)
+(T-t)^{\alpha-2}
+t
+0
+T
+y\in C^2([0,T])
+a>0
+b>0
+f
+y\in C^1([0,T])
+y\in C^2([0,T])
+(\dagger)
+(*)
+ \gamma\int_0^t(t-s)^{1-\alpha}y''(s) \, \mathrm{d}s = f(t,y(t),y'(t)), \qquad\qquad(*) 
+ y'(T) = \int_0^T \big[\textrm{some function of }t\textrm{ and }f(t,y(t),y'(t))\big]  \,\mathrm{d}t. 
+ \gamma \int_0^T\int_0^t(T-t)^{\alpha-2}(t-s)^{1-\alpha}y''(s) \, \mathrm{d}s \,\mathrm{d}t = \int_0^T (T-t)^{\alpha-2} f(t,y(t),y'(t))\,\mathrm{d}t. \qquad\qquad(**) 
+ \begin{split} \int_0^T\int_0^t(T-t)^{\alpha-2}(t-s)^{1-\alpha}y''(s) \, \mathrm{d}s \,\mathrm{d}t &= \int_0^T\int_s^T(T-t)^{\alpha-2}(t-s)^{1-\alpha}y''(s) \,\mathrm{d}t\, \mathrm{d}s\\ &= \Gamma(\alpha-1)\Gamma(2-\alpha)\int_0^T y''(s)\, \mathrm{d}s \\ &=\Gamma(\alpha-1)\Gamma(2-\alpha)\big( y'(T)-y'(0) \big), \end{split} 
+ \int_0^1x^{a-1}(1-x)^{b-1}\, \mathrm{d}x = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}, 
+ y'(T) = y_1 + c\int_0^T (T-t)^{\alpha-2} f(t,y(t),y'(t))\,\mathrm{d}t, \qquad\qquad(\dagger) 

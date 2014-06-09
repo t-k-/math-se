@@ -1,0 +1,9 @@
+|z| < 1
+z \in \mathbb{C}
+(1+z)\prod_{n=1}^{+\infty}(1+z^{2^{n}})= \frac{1}{1-z}
+|z| < 1
+\displaystyle \lim_{N \to \infty} (1-z) P(N) = \lim_{N \to \infty} 1 - z^{2^{N+1}} = 1
+P(N) = \prod_{n=0}^N (1+z^{2^n}).
+ \begin{align*} (1-z)P(N) &= (1-z)(1+z)(1+z^2)(1+z^4)\ldots(1+z^{2^N}) \\ &= (1-z^2)(1+z^2)(1+z^4)\ldots(1+z^{2^N}) \\ &= (1-z^4)(1+z^4) \ldots (1+z^{2^N}) \\ &= (1-z^8) \ldots (1+z^{2^N}) = \ldots \\ &= 1-z^{2^{N+1}}. \end{align*}
+\frac{1}{1-z}
+ \frac{1}{1-z} = \sum_{n=0}^\infty z^n 

@@ -1,0 +1,14 @@
+ \int\frac{\ln^2(a+bx)dx}{x^n} 
+\int udv=uv-\int vdu
+\int\frac{\ln(a+bx)dx}{x^n}
+\begin{align} u =& \frac{\ln(a+bx)}{x^n} \\  du =& \frac{\frac{bx^n}{a+bx}-n x^{n-1}\ln(a+bx)}{x^{2n}}dx  = \left[ \frac{b}{x^n(a+bx)}-\frac{n\ln(a+bx)}{x^{n+1}}\right]dx\\ dv =& \ln(a+bx) dx \\ v =& \frac{(a+bx)\ln(a+bx)}{b}-x \end{align}
+I_n(x)=\int\frac{\ln(a+bx)dx}{x^n}
+\text{(1)}
+n \ge 2
+\text{(2)}
+\ln x
+n \ge 2
+n \ge 3
+\begin{align} J_n(x)=&\int\frac{\ln^2(a+bx)dx}{x^n}\\ =& \int\frac{\ln(a+bx)}{x^n}\ln(a+bx)dx\\ =& \frac{\ln(a+bx)}{x^n} \cdot \left[ \frac{(a+bx)\ln(a+bx)}{b}-x \right]- \\  & \int{\left[ \frac{(a+bx)\ln(a+bx)}{b}-x\right] \left[\frac{b}{x^n(a+bx)}-\frac{n\ln(a+bx)}{x^{n+1}}\right]dx}\\ =& \frac{(a+bx)\ln^2(a+bx)}{bx^n}-\frac{\ln(a+bx)}{x^{n-1}} -\\  & \int \left[ \frac{\ln(a+bx)}{x^n} - \frac{b}{x^{n-1}(a+bx)}- \frac{n(a+bx)\ln^2(a+bx)}{bx^{n+1}} +\frac{n\ln(a+bx)}{x^{n}}\right]dx \\ =& \frac{(a+bx)\ln^2(a+bx)}{bx^n}-\frac{\ln(a+bx)}{x^{n-1}} - (n+1) I_n(x) +\frac{na}{b} J_{n+1}(x) + nJ_n(x) +\\  &  \int\frac{b\,dx}{x^{n-1}(a+bx)}\\ =& \frac{(a+bx)\ln^2(a+bx)}{bx^n}-\frac{\ln(a+bx)}{x^{n-1}} - (n+1) I_n(x) +\frac{na}{b} J_{n+1}(x) + nJ_n(x) +\\  & \left(-\frac{b}{a}\right)^{n-1} \int \frac{b\,dx}{a+bx}  - \sum_{k=1}^{n-1} \left(-\frac{b}{a}\right)^{n-k}\int\frac{dx}{x^k} &\text{(1)}\\ =& \frac{(a+bx)\ln^2(a+bx)}{bx^n}-\frac{\ln(a+bx)}{x^{n-1}} - (n+1) I_n(x) +\frac{na}{b} J_{n+1}(x) + nJ_n(x) +\\  & \left(-\frac{b}{a}\right)^{n-1} \ln(a+bx) -\left(-\frac{b}{a}\right)^{n-1} \ln x - \sum_{k=2}^{n-1} \left(-\frac{b}{a}\right)^{n-k}\frac{1}{(-k+1)x^{k-1}} &\text{(2)}\\ \end{align}
+J_{n+1}(x)
+\begin{align} -\frac{na}{b} J_{n+1}(x)=& \frac{(a+bx)\ln^2(a+bx)}{bx^n}-\frac{\ln(a+bx)}{x^{n-1}} - (n+1) I_n(x) + (n-1)J_n(x) +\\  & \left(-\frac{b}{a}\right)^{n-1} \ln(a+bx) -\left(-\frac{b}{a}\right)^{n-1} \ln x - \sum_{k=2}^{n-1} \left(-\frac{b}{a}\right)^{n-k}\frac{1}{(-k+1)x^{k-1}}\\ J_{n+1}(x)=& -\frac{(a+bx)\ln^2(a+bx)}{nax^n}+\frac{b\ln(a+bx)}{nax^{n-1}} + \frac{b(n+1)}{na} I_n(x) - \frac{b(n-1)}{na}J_n(x) +\\  & \left(-\frac{b}{a}\right)^{n} \frac{\ln(a+bx)}{n}  -\left(-\frac{b}{a}\right)^{n} \frac{\ln x}{n} - \frac{1}{n}\sum_{k=2}^{n-1} \left(-\frac{b}{a}\right)^{n-k+1}\frac{1}{(-k+1)x^{k-1}}\\ \end{align}

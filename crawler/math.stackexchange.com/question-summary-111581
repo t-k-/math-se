@@ -1,0 +1,47 @@
+\mathcal{C}[0,1] 
+[0,1]
+ \| \cdot \|_1 
+ \mathcal{C}[0,1] 
+ \|  f \|_0 = 0  \implies f \equiv 0
+ \| \cdot \|_1 
+ \|  \cdot \|_0 
+  \| f \|_1 = \int_{0}^{1} |f(x)| \ dx \quad \text{and} \quad \| f \|_0 = \int_{0}^{1} x |f(x)| \ dx.  
+ f \not\equiv 0
+ u = x 
+dv = |f(x)| \ dx 
+  \int_{0}^{1} x |f(x)| \ dx =\left[ x \cdot  \int_{0}^{x} |f(t)| \ dt \right]_{0}^{1} - \int_{0}^{1}  \int_{0}^{x} |f(t)| \ dt \ dx      = \int_{0}^{1} |f(t)| \ dt -   \int_{0}^{1}  \int_{0}^{x} |f(t)| \ dt \ dx. 
+ v(x) = \int_{0}^{x} |f(t)| \ dt, \quad \text{with} \ x \in [0,1] . 
+x \in [0,1]
+ f(t) 
+0
+ M > 0
+v(0) = 0 
+ v(x) 
+ M
+  v(x) = \int_{0}^{x} |f(t)| \ dt  \leq  \int_{0}^{1} | f(t) | \ dt = M,  
+  \int_{0}^{1} v(x) \ dx <  \int_{0}^{1} M \ dx \iff  \int_{0}^{1}  \int_{0}^{x} |f(t)| \ dt \ dx < \int_{0}^{1} \int_{0}^{1} | f(t) | \ dt \ dx, 
+ \|f \|_0 = \int_{0}^{1} |f(t)| \ dt -   \int_{0}^{1}  \int_{0}^{x} |f(t)| \ dt \ dx > \int_{0}^{1} |f(t)| \ dt - \int_{0}^{1} \int_{0}^{1} |f(t)| \ dt \ dx = 0. 
+ f \not\equiv 0 \implies \|f \|_0 > 0 
+x_0
+f(x_0)\ne 0
+\epsilon>0
+x|f(x)|>0
+x\in (-\epsilon+ x_0,x_0+\epsilon)
+K=[-\frac \epsilon 2+x_0,x_0+\frac \epsilon 2]
+m>0
+x|f(x)|
+K
+m\cdot \epsilon\leq \int_K x|f(x)|dx\leq \int_0^1 x|f(x)|dx. 
+\| \cdot \|_1 
+g 
+ \int^1_0 |g(x)| dx =0 
+g = 0 
+f
+xf(x)
+ 0 = \int^1_0 x |f(x) | dx = \int^1_0 |x f(x) | dx.
+xf(x)=0
+f(x)=0 
+(0,1]
+f
+f(0)=0 
+f=0

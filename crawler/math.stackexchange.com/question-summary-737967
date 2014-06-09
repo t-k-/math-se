@@ -1,0 +1,32 @@
+Y,Z
+\ Z \sim e(1), \ Y \sim R(0,1), \ X = \frac Z Y
+P(X>1)
+P(X>1) = 1-P(X \le 1) = 1 - P(Z\le Y) = 1 - \int^{\frac 1 2}_0 \int^y_0 \frac {e^{-z}} 2 \ dz \ dy = 0.426
+f_{X,Y}
+(X,Y)
+f_{X,Y}
+\int \int_A f(x,y) \ dx \ dy = \int \int_B f(w_1(u,v),w_2(u,v)) |J| \ du \ dv
+f_{X,Y}
+(Z,Y)
+(X,Y)
+(Z,Y)
+g(z,y)=(z/y,y)
+g
+h(x,y)=(xy,y)
+h_1(x,y)=xy
+h_2(x,y)=y
+h
+\det J(x,y)=y
+(X,Y)
+ f_{Z,Y}(z,y)=\mathrm{e}^{-z}\mathbf{1}_{0<z}\mathbf{1}_{0<y<1} 
+ J(x,y)= \begin{pmatrix} \frac{\partial h_1}{\partial x}(x,y) & \frac{\partial h_1}{\partial y}(x,y) \\ \frac{\partial h_2}{\partial x}(x,y) & \frac{\partial h_2}{\partial y}(x,y) \end{pmatrix} = \begin{pmatrix} y & x \\ 0 & 1 \end{pmatrix} 
+ \begin{align} f_{X,Y}(x,y)&=|\det J(x,y)|f_{Z,Y}(h(x,y))=|y| f_{Z,Y}(xy,y)\\ &=y\mathrm{e}^{-xy}\mathbf{1}_{0<xy}\mathbf{1}_{0<y<1}=y\mathrm{e}^{-xy}\mathbf{1}_{0<y<1}\mathbf{1}_{0<x} \end{align} 
+(X,Y) = g(Z,Y)
+g(z,y) = (z/y,y)
+x = z/y
+y = y
+w_1(x,y)=xy=z
+w_2(x,y)=y=y
+|J| = | y \cdot 1 - 0 \cdot x | = |y |
+f_{(X,Y)}(x,y) = f_{(Z,Y)}(w_1(x,y), w_2(x,y)) |J| = 2e^{-xy}|y|
+2e^{-xy}y

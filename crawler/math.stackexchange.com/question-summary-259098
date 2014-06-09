@@ -1,0 +1,38 @@
+F_Z(z)
+Z\le z
+F_Z(z)=0
+Z\le z
+F_Z(z)=1
+z\ge 1
+0\lt z\lt 1
+x
+y
+(X,Y)
+x=z
+F_Z(z)=z^2-2z\ln z
+F_Z(z)= \Pr(Z\le  z)=\int_{x=0}^z \left(\int_{y=0}^1 (2-2x)\,dy\right)\,dx +  \int_{x=z}^1 \left(\int_{y=0}^{z/x} (2-2x)\,dy\right)\,dx. 
+\to
+\to
+\to
+\varphi
+q
+\psi
+\psi
+(x,y)\to(z,t)
+z=xy
+t=
+t=x
+\mathrm dz\mathrm dt=x\mathrm dx\mathrm dy
+\mathrm dx\mathrm dy=\mathrm dz\mathrm dt/t
+\psi
+ \mathbb E(\varphi(X,Y))=\iint\varphi(x,y)p_{X,Y}(x,y)\mathrm dx\mathrm dy. 
+ \mathbb E(\psi(XY))=\int\psi(z)q(z)\mathrm dz. 
+ \int\psi(z)q(z)\mathrm dz=\iint\psi(xy)p_{X,Y}(x,y)\mathrm dx\mathrm dy. 
+ \iint\psi(xy)p_{X,Y}(x,y)\mathrm dx\mathrm dy=\iint\psi(z)p_{X,Y}(t,z/t)\mathrm dz\mathrm dt/t. 
+ q(z)=\int p_{X,Y}(t,z/t)\mathrm dt/t. 
+p_{X,Y}
+XY
+q
+ p_{X,Y}(x,y)=2(1-x)\,\mathbf 1_{0\leqslant x,y\leqslant 1}, 
+ q(z)=\int 2(1-t)\,\mathbf 1_{0\leqslant t\leqslant1}\,\mathbf 1_{0\leqslant z/t\leqslant 1}\mathrm dt/t=2\mathbf 1_{0\leqslant z\leqslant1}\int_z^1(1-t)\mathrm dt/t. 
+ q(z)=2(z-1-\log z)\,\mathbf 1_{0\leqslant z\leqslant1}. 

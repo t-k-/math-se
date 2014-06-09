@@ -1,0 +1,15 @@
+\int_{\frac{\pi}{2}}^{\frac{\pi}{4}}\cot^5x\,\csc^3xdx
+\cot^5x=\frac{\cos^5x}{\sin^5x}
+\int_{\frac{\pi}{2}}^{\frac{\pi}{4}}\frac{\cos^5x}{\sin^5x}\csc^3xdx
+\sin
+\cos
+\cos
+\cos
+\sin
+u
+u=\sin x
+\eqalign{ \int\cot^5 x\,\csc^3 x\,dx&=  \int {\cos^5 x\over \sin^5 x}{1\over \sin^3 x}\,dx\cr &=\int {\cos  x \cdot(\cos^2 x)^2\over \sin^8 x} \,dx\cr  &=\int {\cos  x \cdot(1-\sin^2 x)^2\over \sin^8 x} \,dx\cr  &\buildrel{u=\sin x}\over=\int {  (1-u^2)^2\over u^8  } \,du\cr  &=\int {  1-2u^2+u^4 \over u^8  } \,du\cr  &=\int {( u^{-8}-2u^{-6}+u^{-4}  )} \,du\cr  &=  {{ -u^{-7}\over7}+2{u^{-5}\over 5}-{u^{-3}\over3}  } +C\cr  &=  {{ -\sin^{-7} x\over7}+2{\sin^{-5}x\over 5}-{\sin^{-3}x\over3}  } +C.\cr   } 
+\cot^5 x\,\csc^3 x=\cot^4x\,\csc^2 x(\cot x\csc x)= (\csc^2 x-1)^2\csc^2 x(\csc x\cot x)\;,
+d(\csc x)=-\csc x\cot x dx
+u=\csc x
+\begin{align*} \int(\csc^2 x-1)^2\csc^2 x(\csc x\cot x)dx&=-\int(u^2-1)^2u^2du\\ &=-\int(u^6-2u^4+u^2)du\\ &=-\frac{u^7}7+\frac{2u^5}5-\frac{u^3}3+C\\ &=-\frac17\csc^7 x+\frac25\csc^5 x-\frac13\csc^3 x+C\;. \end{align*}

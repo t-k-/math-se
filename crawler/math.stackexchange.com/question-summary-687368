@@ -1,0 +1,10 @@
+J_n(z)
+n=0
+I(z)=\int_0^\pi e^{i z \cos(\theta)}( \cos(\theta)+iz\sin^2(\theta))d \theta =0.
+J_{\nu}(z) = \sum_{n=0}^{\infty}\frac{(-1)^n}{\Gamma(n+\nu+1)\,n!}\left(\frac{x}{2}\right)^{2n+\nu}.
+e^{iz\cos(\theta)}
+e^{iz\cos(\theta)} = \sum_{n=0}^{\infty}\frac{1}{n!}(iz\cos(\theta))^n.
+\frac{1}{\pi}\int_0^{\pi}e^{iz\cos(\theta)}d\theta = \frac{1}{\pi}\int_0^{\pi}\sum_{n=0}^{\infty}\frac{1}{n!}(iz\cos(\theta))^nd\theta = \frac{1}{\pi}\sum_{n=0}^{\infty}\frac{1}{n!}i^nz^n\int_0^{\pi}\cos^n(\theta)d\theta.
+\int_0^{\pi}\cos^n(\theta)d\theta = \begin{cases}0 & n \text{ odd}\\\frac{(2n)!\pi}{2^{2n}(n!)^2} & n \text{ even}\end{cases}. 
+\frac{1}{\pi}\int_0^{\pi}e^{iz\cos(\theta)}d\theta = \frac{1}{\pi}\sum_{n=0}^{\infty}\frac{1}{(2n)!}i^{2n}z^{2n}\frac{(2n)!\pi}{2^{2n}(n!)^2} = \sum_{n=0}^{\infty} \frac{(-1)^n}{(n!)^2}\left(\frac{z}{2}\right)^{2n}. 
+\Gamma(n+1) = n!

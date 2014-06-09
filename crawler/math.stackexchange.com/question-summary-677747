@@ -1,0 +1,7 @@
+u = \frac{1}{e^z} + 1
+\frac{du}{dz} = -e^{-z}dz \implies -du = \frac{1}{e^z}dz
+ \int \frac{1}{1+e^z}dz = \int\frac{1}{e^z(\frac{1}{e^z} + 1)}dz   =\int\frac{1}{\frac{1}{e^z} + 1}\frac{1}{e^z}dz 
+\int \frac{1}{1+e^z}dz = -\int\frac{1}{u}du = -\ln(u) + C = -\ln(e^{-z}+1) + C
+z - \ln(1+e^z)+C
+ -\ln \left( e^{-z}+1\right) + C = -\ln \left[ e^{-z} \left( 1 + e^z\right)\right] + C = \dots 
+ z+\text{ln}\left(1+e^{-z}\right)==\text{ln}\left(1+e^z\right)\\ e^{z+\text{ln}\left(1+e^{-z}\right)}==e^{\text{ln}\left(1+e^z\right)}\\ e^z\left(1+e^{-z}\right)==1+e^z\\ e^z+1==1+e^z 

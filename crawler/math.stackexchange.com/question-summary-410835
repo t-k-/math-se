@@ -1,0 +1,28 @@
+S(m,t)=e^{-(m+1) t} \sum _{k=0}^{\infty } \frac{t^k}{k!}\left(\sum _{r=0}^k \frac{t^r}{r!}\right)^{m},
+S(m,t)=P(A)
+A=[X_{m+1}\geqslant\max\{X_i;1\leqslant i\leqslant m\}]
+(X_i)_{1\leqslant i\leqslant m+1}
+t
+k\geqslant0
+\mathbf I=\{1,2,\ldots,m+1\}
+M=\max\{X_i;i\in\mathbf I\}
+A_J=[\forall i\in J, X_i=M]
+J\subseteq\mathbf I
+B_i=A_{\{1,2,\ldots,i\}}
+i
+\mathbf I
+P(A_J)=P(B_i)
+J\subseteq\mathbf I
+i
+A_{\{i\}}
+i
+\mathbf I
+(m+1)P(B_1)\geqslant1
+1\geqslant (m+1)P(B_1)-\frac12m(m+1)P(B_2)
+P(B_2)
+ P(A\mid X_{m+1}=k)=P(X_1\leqslant k)^m=\left(\mathrm e^{-t}\sum_{r=0}^k\frac{t^r}{r!}\right)^m, 
+ P(A)=E(P(A\mid X_{m+1}))=\sum_{k=0}^{+\infty}\mathrm e^{-t}\frac{t^k}{k!}P(A\mid X_{m+1}=k). 
+ S(m,t)=P(B_1).  
+ S(m,t)\geqslant\frac1{m+1}. 
+ 1=\sum_{i=1}^{m+1}(-1)^{i+1}{m+1\choose i}P(B_i), 
+ S(m,t)\leqslant\frac1{m+1}+\frac12mP(B_2). 

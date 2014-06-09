@@ -1,0 +1,14 @@
+v
+\forall i \in 1..k < n : n_i
+R^n
+v
+vM = Projection(v)
+n=3, k=2, n_1=(1,0,0), n_2=(0,1,0) \Rightarrow p(1,1,1) = (0,0,1)
+n=3,k=2,n_1=(1,0,-1),n_2=(0,1,-1) \Rightarrow p(0,0,1)=({1 \over 3},{1 \over 3},{1 \over 3})
+n=3,k=1,n_1=(0,0,1) \Rightarrow p(1,1,1) = (1,1,0)
+ v\to v-(v\cdot n_i)n_i\;; 
+ v\to\left(I-n_in_i^\top\right)v\;; 
+k
+ v\to\left(I-\sum_in_in_i^\top\right)v\;. 
+n_i
+ v\to v\left(I-\sum_in_i^\top n_i\right)\;. 

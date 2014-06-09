@@ -1,0 +1,28 @@
+\int_{0}^{\infty} \frac{x^{m-1}}{a+x^n}, a,m,n \in \mathbb{R}, 0<m<n, 0<a
+\int_{0}^{\infty} \frac{dt}{1+t^4}
+\int_{0}^{\infty} \frac{x^{m-1}}{a+x^n}=\frac{\pi}{n}  \left(\frac{1}{a}\right)^{1-\frac{m}{n}} \csc \left(m \cdot \frac{\pi     }{n}\right)
+I = \int\limits_{0}^{\infty} \frac{x^{a-1}}{1+x^{b}} \ \text{dx}
+f(z) = \frac{z^{a-1}}{1+z^{b}} = \frac{|z|^{a-1} \cdot e^{i(a-1)\text{arg}(z)}}{1+|z|^{b}e^{ib\text{arg}(z)}}
+z_{1} = e^{\pi{i}/b}
+\text{Res} \Biggl[\frac{z^{a-1}}{1+z^{b}}, e^{\pi{i}/b}\Biggr] = \frac{z^{a-1}}{bz^{b-1}}\Biggl|_{z =e^{\pi i / b}} = -\frac{1}{b}e^{\pi i a/b}
+\gamma_{1}
+R \to \infty
+ \epsilon \to 0^{+}
+\gamma_{2}
+R \to \infty
+0 < a < b
+\Biggl|\int\limits_{\gamma_{2}} f(z) dz \Biggr| \leq \frac{R^{a-1}}{R^{b}-1} \cdot \frac{2\pi R}{b} \sim \frac{2 \pi}{b R^{b-a}} \to 0
+\gamma_{3}
+R \to \infty
+\epsilon \to 0^{+}
+\gamma_{4}
+\epsilon \to 0^{+}
+0 < a <b
+\Biggl|\int\limits_{\gamma_{4}} f(z) \ dz \Biggr| \leq \frac{\epsilon^{a-1}}{1-\epsilon^{b}} \cdot \frac{2\pi\epsilon}{b} \sim \frac{2\pi\epsilon}{b} \to 0
+\text{Residue Theorem}
+R \to \infty
+\epsilon \to 0^{+}
+I
+ I + 0 - e^{2\pi a/b}I + 0 = 2\pi i \cdot \Bigl(-\frac{1}{b} e^{\pi ia/b}\Bigr)
+(e^{-\pi i a/b} - e^{\pi i a./b})I= -\frac{2\pi i}{b}
+I= \frac{2\pi i}{b \cdot (e^{\pi ia/b} - e^{-\pi i a/b})}=\frac{\pi}{b \sin(\pi a/b)}

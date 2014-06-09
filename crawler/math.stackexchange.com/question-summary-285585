@@ -1,0 +1,21 @@
+ xu_x-xyu_y-y=0 
+u(x,y)
+ u(x,y)=-xf(ye^x) 
+ x(s,t)=s^2e^t 
+xu_x-xyu_y-y=0
+xu_x-xyu_y=y
+u_x-yu_y=\dfrac{y}{x}
+\dfrac{dx}{dt}=1
+x(0)=0
+x=t
+\dfrac{dy}{dt}=-y
+y(0)=y_0
+y=y_0e^{-t}=y_0e^{-x}
+\dfrac{du}{dt}=\dfrac{y}{x}=\dfrac{y_0e^{-t}}{t}
+u(x,y)=y_0\int^t\dfrac{e^{-t}}{t}dt+f(y_0)=ye^x\int^x\dfrac{e^{-t}}{t}dt+f(ye^x)
+u(s^2,s)=s^3
+se^{s^2}\int^{s^2}\dfrac{e^{-t}}{t}dt+f(se^{s^2})=s^3
+f(se^{s^2})=s^3-se^{s^2}\int^{s^2}\dfrac{e^{-t}}{t}dt
+\therefore u(x,y)=ye^x\int^x\dfrac{e^{-t}}{t}dt+f(ye^x)
+f(s)
+f(se^{s^2})=s^3-se^{s^2}\int^{s^2}\dfrac{e^{-t}}{t}dt

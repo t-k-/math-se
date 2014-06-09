@@ -1,0 +1,31 @@
+U
+f_{U}
+ f_{U}\left(u\right) = \left\{ \begin{array}{ll} 2u & \text{ if } u \in \left] 0,1 \right[ \\ 0  & \text{ otherwise.} \end{array} \right. 
+X = e^{U}
+ f_{X}\left(x\right) =  \left\{ \begin{array}{ll} \frac{2 \cdot \ln\left(x\right)}{x} & \text{ if } x \in \left] 1,e \right[ \\ 0  & \text{ otherwise.} \end{array} \right. 
+Y \sim R\left(0,1\right)
+f_{Y}
+ f_{Y}\left(y\right) = \left\{ \begin{array}{ll} 1 & \text{ if } y \in \left]0,1\right[ \\ 0 & \text{ otherwise.} \end{array} \right. 
+Z = Y^{3}
+ f_{Z}\left(z\right) = \left\{ \begin{array}{ll} \frac{1}{3} \cdot z^{-\frac{2}{3}} & \text{ if } z \in \left]0,1\right[ \\ 0  & \text{ otherwise.} \end{array} \right. 
+z^{\frac{1}{3}}
+\frac{1}{3} \cdot z^{\frac{2}{3}}
+\frac{1}{3} \cdot z^{-\frac{2}{3}}
+X = e^U
+U
+g(x)
+f_X(x) = \frac{\mathrm d}{\mathrm dx}F_X(x) = \frac{\mathrm d}{\mathrm dx}F_U(g(x)) = f_U(g(x))\frac{\mathrm d}{\mathrm dx}g(x)
+X
+(0,1)
+Y = X^3
+(0,1)
+0 < y < 1
+Y
+f_X(\cdot)
+1
+(0,1)
+a \neq 0
+\frac{\mathrm d}{\mathrm dy}y^a = ay^{a-1} = \frac{1}{3}y^{-\frac{2}{3}}
+a = \frac{1}{3}
+F_Y(y) = P\{Y \leq y\} = P\{X^3 \leq y\} = P\{X \leq y^\frac{1}{3}\}  = F_X(y^\frac{1}{3})
+f_Y(y) = \frac{\mathrm d}{\mathrm dy}F_Y(y) = \frac{\mathrm d}{\mathrm dy} F_X(y^\frac{1}{3}) = f_X(y^\frac{1}{3})\cdot \frac{1}{3}y^{-\frac{2}{3}} = \frac{1}{3}y^{-\frac{2}{3}}, 0 < y < 1.

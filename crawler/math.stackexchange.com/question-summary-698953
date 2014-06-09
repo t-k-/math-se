@@ -1,0 +1,12 @@
+A = \begin{pmatrix}25 & 15 & -5\\15 & 18 & 0\\-5 & 0 & 11\end{pmatrix}
+A_{n-1} = \begin{pmatrix}25 & 15\\15 & 18\end{pmatrix}, z = \begin{pmatrix}-5 \\ 0\end{pmatrix}
+R_{n-1} = \begin{pmatrix} \sqrt{a_{11}} & \frac{a_{12}}{r_{11}}\\ 0 & \sqrt{a_{22}-r_{12}^2}\end{pmatrix} = \begin{pmatrix}5 & 3\\ 0 &3\end{pmatrix}
+R_{n-1}^T \mathbf{w} = \mathbf{z}
+\begin{pmatrix}5 & 0\\ 3 &3\end{pmatrix} \begin{pmatrix}w_1\\w_2\end{pmatrix} = \begin{pmatrix}-5 \\0 \end{pmatrix}
+\mathbf{w} = \begin{pmatrix}-1\\1\end{pmatrix}
+R
+\mathbf{w^Tw} = \begin{pmatrix}-1 & 1\end{pmatrix} \begin{pmatrix}-1\\1\end{pmatrix} = 1 + 1 = 2
+r_{kk}
+r_{kk} = \sqrt{a_{kk} - \mathbf{w^Tw}} = \sqrt{11 - 2} = 3
+R
+R = \begin{pmatrix}R_{n-1} & \mathbf{w}\\ 0 & r_{kk}\end{pmatrix} = \begin{pmatrix}5 & 3 & -1\\0 & 3 & 1\\0 & 0 & 3\end{pmatrix}

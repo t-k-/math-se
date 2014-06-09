@@ -1,0 +1,25 @@
+X,Y
+Q(x,B)
+X
+Y
+\mathsf E(Y \mid X=x) := \int y \,Q(x,dy)
+\mathsf E(Y \mid X)
+\sigma(X)
+\varphi(x)
+\mathsf E( Y \mid X) = \varphi(X)
+\mathsf E (Y \mid X = x) := \varphi(x)
+    \mathsf P_{X,Y}(A,B) = \int\limits_{A}Q(x,B) \, \mathsf P_{X}(dx) 
+    \mathsf E(Y \mid X) := \mathsf E ( Y \mid \sigma(X)) 
+    \varphi(x) = \int y \, Q(x,dy) ? 
+\psi:\mathbb{R}^2\to\mathbb{R}
+\psi(X,Y)
+A\in\mathcal{B}(\mathbb{R})
+\psi(x,y)=1_A(x)\cdot y
+\varphi(x)=\int y\, Q(x,\mathrm d y)
+\varphi(X)=E[Y\mid X]
+A\in\mathcal{B}(\mathbb{R})
+\sigma(X)=\{ \{X\in A\}\mid A\in\mathcal{B}(\mathbb{R})\}
+ P(X\in A,Y\in B)=\int_A Q(x,B)\,P_X(\mathrm dx), \quad A,B\in\mathcal{B}(\mathbb{R}) 
+ E[\psi(X,Y)]=\int_\mathbb{R} \int_\mathbb{R} \psi(x,y)\, Q(x,\mathrm dy)\, P_X(\mathrm dx) 
+ \int_A \varphi(x)\, P_X(\mathrm dx)=\int_{\{X\in A\}} Y\,\mathrm dP 
+ \begin{align} \int_{\{X\in A\}}Y\,\mathrm dP&=\int_A\varphi(x)\,P_X(\mathrm dx)=\int_\mathbb{R} 1_A(x)\varphi(x)\, P_X(\mathrm dx) \\ &=\int_\Omega 1_A(X)\varphi(X)\,\mathrm dP=\int_{\{X\in A\}}\phi(X)\,\mathrm dP, \end{align} 

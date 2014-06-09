@@ -1,0 +1,19 @@
+2 \leq r\leq n
+^nC_r + 2\times^nC_{r-1} + ^nC_{r-2}
+\binom{n}{r}+2\binom{n}{r-1}+\binom{n}{r-2}
+\binom{n}{r}+\binom{n}{r-1}=\frac{n!}{(n-r)! r!}+\frac{n!}{(n-(r-1))! (r-1)!}
+\frac{n!}{(n-r)! r!}+\frac{n!}{(n-(r-1))! (r-1)!}=\frac{n!}{(n-r)! r!}+\frac{n!} {(n-r+1))! (r-1)!}
+\frac{n!}{(n-r)! r!}+\frac{n!} {(n-r+1))! (r-1)!}=\frac{n!}{(n-r)!(r-1)!}(\frac{1}{r}+\frac{1}{n-r+1})
+\frac{n!}{(n-r)!(r-1)!}(\frac{1}{r}+\frac{1}{n-r+1})=\frac{n!}{(n-r)!(r-1)!}(\frac{n-r+1+r}{r.(n-r+1)})
+\frac{n!}{(n-r)!(r-1)!}(\frac{n-r+1+r}{r.(n-r+1)})=\frac{n!}{(n-r)!(r-1)!}(\frac{n+1}{r.(n-r+1)})
+\frac{n!}{(n-r)!(r-1)!}(\frac{n+1}{r.(n-r+1)})=\frac{(n+1)n!}{(n-r+1)(n-r)!.r(r-1)!}
+\frac{(n+1)n!}{(n-r+1)(n-r)!.r(r-1)!}=\frac{(n+1)!}{(n-r+1)!r!}=\frac{(n+1)!}{((n+1)-r)!.r!}=\binom{n+1}{r}
+\binom{n}{r}+\binom{n}{r-1}=\binom{n+1}{r}
+r
+r-1
+\binom{n}{r-1}+\binom{n}{r-2}=\binom{n+1}{r-1}
+\binom{n}{r}+2\binom{n}{r-1}+\binom{n}{r-2}=\binom{n}{r}+\binom{n}{r-1}+\binom{n}{r-1}+\binom{n}{r-2}
+\binom{n}{r}+\binom{n}{r-1}=\binom{n+1}{r}
+\binom{n}{r-1}+\binom{n}{r-2}=\binom{n+1}{r-1}
+\binom{n}{r}+2\binom{n}{r-1}+\binom{n}{r-2}=\binom{n}{r}+\binom{n}{r-1}+\binom{n}{r-1}+\binom{n}{r-2}=\binom{n+1}{r}+\binom{n+1}{r-1}=\binom{n+2}{r}
+\binom{n}{r}+2\binom{n}{r-1}+\binom{n}{r-2}=\binom{n+2}{r}

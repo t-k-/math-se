@@ -1,0 +1,66 @@
+C^{n}[0,1]
+\|f\|_{C^{n}} = \sum_{k=0}^{n}\|f^{(k)}\|_{\infty}
+C[0,1]
+C^n[0,1]
+C^1([0,1])
+C^n ([0,1])
+C^1([0,1])
+\|f \| := \| f \|_\infty + \| f^\prime \|_\infty
+f_n
+f_n
+f: [0,1] \to \mathbb{R}
+f_n(x_0)
+\mathbb{R}
+x_0
+[0,1]
+\mathbb{R}
+f(x_0)
+\mathbb{R}
+f_n^\prime
+g(x) := \lim_{n \to \infty} f_n(x)
+f
+C^1([0,1])
+f
+\varepsilon > 0
+x_0 \in [0,1]
+|f(x_0) - f(x)| \leq |f(x_0) - f_n(x_0)| + |f_n(x_0) - f_n(x)| + |f(x) - f_n(x)|
+\frac{\varepsilon}{3}
+n
+|f(x_0) - f_n(x_0)| < \frac{\varepsilon}{3}
+|f(x) - f_n(x)| < \frac{\varepsilon}{3}
+f_n
+\delta
+|x-x_0| < \delta
+|f_n(x_0) - f_n(x)| < \frac{\varepsilon}{3}
+g = \lim_{n \to \infty} f^\prime_n
+f
+f^\prime = \lim_{n \to \infty} f^\prime_n = g
+f_n
+f_n(x) = f_n(0) + \int_0^x f^\prime_n (t) dt
+f(x) = f(0) + \int_0^x \lim_{n \to \infty} f_n^\prime(t) dt
+|f(x) - f(0) - \int_0^x \lim_{n \to \infty} f_n^\prime(t) dt| < \varepsilon
+n
+\| f_n - f\| < \varepsilon
+\| f_n - f\|_\infty < \varepsilon
+\| f_n^\prime - g\|_\infty < \varepsilon
+\begin{align}  &|f(x) - f(0) - \int_0^x \lim_{n \to \infty} f_n^\prime(t) dt| \\ &\leq |f(x) - f_n(x)| + |f(0) - f_n(0)| + |f_n(x) - f_n(0) - \int_0^x f_n^\prime(t) dt | + | \int_0^x f_n^\prime(t) - \lim_{n \to \infty} f_n^\prime(t) dt|  \end{align}
+\frac{\varepsilon}{4}
+n
+0
+n
+| f_n^\prime(t) - \lim_{n \to \infty} f_n^\prime(t)| < \frac{\varepsilon}{4}
+ \left | \int_0^x f_n^\prime(t) - \lim_{n \to \infty} f_n^\prime(t) dt \right |  \leq  \int_0^x | f_n^\prime(t) - \lim_{n \to \infty} f_n^\prime(t)| dt \leq \int_0^x \frac{\varepsilon}{4} dt = x \frac{\varepsilon}{4} \leq  \frac{\varepsilon}{4}
+\| f - f_n \| \xrightarrow{n \to \infty} 0
+ \| f - f_n \|  = \| f  - f_n \|_\infty + \| f^\prime - f_n^\prime \|_\infty \leq 2 \max ( \| f  - f_n \|_\infty, \| f^\prime - f_n^\prime \|_\infty )
+f_n
+f^\prime_n
+f_n
+| f(x) - f_n(x) | \leq |f(x) - f_N(x)| + |f_N(x) - f_n(x)|
+N
+n,m\geq N
+|f_N(x) - f_n(x)| < \frac{\varepsilon}{2}
+|f_m(x) - f_N(x)| < \frac{\varepsilon}{2}
+\lim_{m \to \infty} |f_m(x) - f_N(x)| \leq \frac{\varepsilon}{2}
+x
+[0,1]
+\| f  - f_n \|_\infty \xrightarrow{n \to \infty} 0

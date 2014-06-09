@@ -1,0 +1,42 @@
+\displaystyle I(n,\alpha)=\int_0^\pi \sin(n\theta)e^{\alpha \theta} d\theta
+\displaystyle I(n,\alpha)=\frac{n}{n^2+\alpha^2}(1-(-1)^ne^{\alpha \pi})
+\sin{n \theta} = \Im{[e^{i n \theta}]}
+\begin{align}\int_0^{\pi} d\theta \: \sin{n \theta} e^{\alpha \theta} &= \Im{\left[ \int_0^{\pi} d\theta \:e^{(\alpha+i n) \theta} \right]}\\ &= \Im{\left[ \frac{e^{(\alpha+i n)\pi}-1}{\alpha+i n}\right]}\\ &= \frac{-n}{\alpha^2+n^2} [(-1)^n e^{\alpha n}-1]\end{align}
+J(n,\alpha)=\int_0^{\pi}cos(n \theta)e^{\alpha \theta}.
+I(n,\alpha)
+I(3,2)
+n
+\alpha
+\int u dv=uv-\int v du
+uv
+\sin(0)=\sin(n\pi)=0
+\cos(0)=1
+\cos(n\pi)=(-1)^n.
+(-1)^n
+\int e^{ax}\sin(bx)dx = \frac{1}{a}e^{ax}\sin(bx) - \frac{b}{a}\left(\frac{1}{a}e^{ax}\cos(bx) + \frac{b}{a}\int e^{ax}\cos(bx)\,dx\right).
+\int e^{ax}\sin(bx)\,dx = \frac{1}{a}e^{ax}\sin(bx) - \frac{b}{a^2}e^{ax}\cos(bx) - \frac{b^2}{a^2}\int e^{ax}\cos(bx)\,dx.
+\left(1 + \frac{b^2}{a^2}\right)\int e^{ax}\sin(bx)\,dx = \frac{1}{a}e^{ax}\sin(bx) - \frac{b}{a^2}e^{ax}\cos(bx).
+\displaystyle 1 + \frac{b^2}{a^2} = \frac{a^2+b^2}{a^2}
+\displaystyle \frac{a^2}{a^2+b^2}
+\frac{a^2}{a^2+b^2}
+\frac{a^2+b^2}{a^2}\int e^{ax}\sin(bx)\,dx = \frac{1}{a}e^{ax}\sin(bx) - \frac{b}{a^2}e^{ax}\cos(bx),
+\tag 1 \int e^{ax}\sin(bx)\,dx = \frac{a}{a^2+b^2}e^{ax}\sin(bx) - \frac{b}{a^2+b^2}e^{ax}\cos(bx).
+(1)
+\Pi
+0
+\displaystyle \frac{a}{a^2+b^2}e^{ax}\sin(bx) - \frac{b}{a^2+b^2}e^{ax}\cos(bx)
+\pi
+\displaystyle \frac{a}{a^2+b^2} e^{a \pi}(a \sin b \pi - b \cos b \pi)
+\sin b \pi= 0
+b
+\cos b \pi = \pm 1
+-1
+b
++1
+(-1)^b
+\displaystyle \frac{a}{a^2+b^2}e^{ax}\sin(bx) - \frac{b}{a^2+b^2}e^{ax}\cos(bx)
+0
+\frac{a}{a^2+b^2} (0 - b).
+\pi
+0
+\displaystyle \frac{a}{a^2+b^2}e^{ax}\sin(bx) - \frac{b}{a^2+b^2}e^{ax}\cos(bx)|{_0^\pi} = \frac{b}{a^2+b^2}\left(1 - (-1)^b e^{a \pi}\right)

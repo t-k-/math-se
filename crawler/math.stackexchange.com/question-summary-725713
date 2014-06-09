@@ -1,0 +1,18 @@
+D\left ( P_{o}\left [ x \right ]\left | \right |P_{1}\left [ x \right ] \right )=\sum_{x\in \mathcal{X}}^{} P_{0}\left [ x \right ]log\frac{P_{0}\left [ x \right ]}{P_{1}\left [ x \right ]}
+D\left ( P_{o}\left [ x \right ]\left | \right |P_{1}\left [ x \right ] \right )\approx \frac{1}{2ln2}\sum_{x\in \mathcal{X}}^{}\frac{\left (  P_{o}\left [ x \right ]-P_{1}\left [ x \right ]\right )^{2}}{P_{1}\left [ x \right ]}
+a_x = P_0[x] 
+b_x=P_1[x] 
+e_x=a_x-b_x
+ a_x \, \ln \frac{a_x}{b_x}=b_x \,  \left(1+\frac{e_x}{b_x}\right) \ln \left(1 +\frac{e_x}{b_x}\right) =b_x \, (1+u_x) \, \ln(1+u_x)
+u_x=e_x/b_x
+u_x
+\ln(1+u) = u - \frac{u^2}{2}+O(u^3)
+ b_x \left( (1 + u_x) (u_x - \frac{u_x^2}{2}) + O(u_x^3)\right)=b_x \left( u_x +\frac{u_x^2}{2} + O(u_x^3)\right)
+x
+\sum_x b_x u_x = \sum_x e_x = 0
+ \sum_x  b_x \left(\frac{u_x^2}{2} + O(u_x^3)\right) \approx \sum_x \frac{(a_x-b_x)^2}{2 \, b_x}
+2
+\ln(2)
+D\left ( P_{o}\left [ x \right ]\left | \right |P_{1}\left [ x \right ] \right ) = \frac{1}{\ln (2)}\sum_{x} P_0[x] \ln \frac{P_0[x]}{P_1[x]}  \approx \frac{1}{\ln(2)}\sum_{x}^{}\frac{\left(  P_{0}\left [ x \right ]-P_{1}\left [ x \right ]\right)^{2}}{ 2 \, P_{1}\left [ x \right ]}
+|u_x| = \frac{|P_0[x] - P_1[x]|}{P_1[x]} \ll 1
+P_1[x]

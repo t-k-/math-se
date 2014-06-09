@@ -1,0 +1,8 @@
+W(y_1,y_2,y_3)=\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1' & y_2' &  y_3'  \\ y_1'' & y_2'' & y_3'' \end{array}\right|
+W'(y_1,y_2,y_3)=\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1' & y_2' &  y_3'  \\ y_1''' & y_2''' & y_3''' \end{array}\right|
+W^\prime(y_1,y_2,y_3)=\frac{d}{dx}\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1\prime & y_2\prime &  y_3\prime  \\ y_1\prime\prime & y_2\prime\prime & y_3\prime\prime \end{array}\right|\\ =\left| \begin{array}{ccc} y_1\prime & y_2\prime & y_3\prime \\ y_1\prime & y_2\prime &  y_3\prime  \\ y_1\prime\prime & y_2\prime\prime & y_3\prime\prime \end{array}\right|+\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1\prime\prime & y_2\prime\prime &  y_3\prime\prime  \\ y_1\prime\prime & y_2\prime\prime & y_3\prime\prime \end{array}\right|+\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1\prime & y_2\prime &  y_3\prime  \\ y_1\prime\prime\prime & y_2\prime\prime\prime & y_3\prime\prime\prime \end{array}\right|\\ =\left| \begin{array}{ccc} y_1 & y_2 & y_3 \\ y_1\prime & y_2\prime &  y_3\prime  \\ y_1\prime\prime\prime & y_2\prime\prime\prime & y_3\prime\prime\prime \end{array}\right|. 
+y_1=x,y_2=y,y_3=z
+W(x,y,z)
+W'(x,y,z)
+ x''(yz'-zy')-y''(xz'-zx')+z''(xy'-yx') 
+ x'''(yz'-zy')-y'''(xz'-zx')+z'''(xy'-yx')+{\color{red}{(x''(yz''-zy'')-y''(xz''-zx'')+z''(xy''-yx''))}} 

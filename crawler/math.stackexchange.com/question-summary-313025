@@ -1,0 +1,51 @@
+ f(x)=\ x e^{x^2}\int_x^\infty e^{-t^2} \implies f(x)=\ x e^{x^2}g(x).
+ f(0)=0 
+f(x)>0,\,\, \forall x>0
+x
+ \lim_{ x\to \infty } xe^{x^2}g(x) = \lim _{x\to \infty} \frac{g(x)}{\frac{1}{xe^{x^2}}}=\lim_{x \to \infty} \frac{g'(x)}{\frac{1}{(xe^{x^2})'}}=\lim_{x \to \infty} \frac{-e^{-x^2}}{{-{\frac {{{\rm e}^{-{x}^{2}}} \left( 2\,{x}^{2}+1 \right) }{{x}^{2}}}}} =\frac{1}{2}. 
+t\mapsto\sqrt{t+x^2}
+(1)
+x
+ \begin{align} xe^{x^2}\int_x^\infty e^{-t^2}\,\mathrm{d}t &=xe^{x^2}\int_0^\infty e^{-t-x^2}\frac{\mathrm{d}t}{2\sqrt{t+x^2}}\\ &=\frac12\int_0^\infty e^{-t}\frac{\mathrm{d}t}{\sqrt{1+t/x^2}}\tag{1} \end{align} 
+ \frac12\int_0^\infty e^{-t}\,\mathrm{d}t=\frac12\tag{2} 
+p\mapsto p/x
+(3)
+x
+ \begin{align} x\int_0^\infty\frac{e^{-px}}{p+1}\,\mathrm{d}p &=\int_0^\infty\frac{e^{-p}}{1+p/x}\,\mathrm{d}p\tag{3} \end{align} 
+ \int_0^\infty e^{-p}\,\mathrm{d}p=1\tag{4} 
+u=\frac{1}{t}
+dv=te^{-t^2}\,dt
+du=-\frac{1}{t^2}\,dt
+v=-\frac{1}{2}e^{-t^2}
+\frac{1}{x}\cdot\frac{1}{2}e^{-x^2}
+xe^{x^2}
+\int_x^\infty \frac{1}{2t^2}e^{-t^2}\,dt
+xe^{x^2}
+\frac{1}{x}\cdot \frac{1}{2}e^{-x^2}-\int_x^\infty \frac{1}{2t^2}e^{-t^2}\,dt.
+\int_x^\infty e^{-t^2}\,dt
+x
+x+1
+x+1
+\infty
+x
+x+1
+\lt e^{-x^2}
+\int_x^\infty \frac{1}{2t^2}e^{-t^2}\,dt \lt \frac{1}{2x^2}\int_x^\infty e^{-t^2}\,dt.
+x+1
+\infty
+t=s+1
+\int_{s=x}^\infty e^{-s^2-2s-1}\,ds
+e^{-x^2}\int_x^\infty e^{-2s-1}\,ds
+x>0
+ x\int_0^{+\infty}\frac{e^{-px}}{p+1}dp=1-\int_0^{+\infty}\frac{e^{-px}}{(p+1)^2}dp\leq 1 
+1-0=1
+x\rightarrow +\infty
+x>0
+1
+\lim_{x \rightarrow \infty} f(x) = L \Leftrightarrow \forall \; \varepsilon > 0 \; \exists \; N > 0 \ni x > N \Rightarrow \left| f(x) - L \right| < \varepsilon
+\;\\ x e^{x^2}\int_x^\infty e^{-t^2} \, dt = \lim_{b \rightarrow \infty} x e^{x^2}\int_x^b e^{-t^2} \, dt = L \Leftrightarrow \\ \forall \; \varepsilon > 0 \; \exists \; N > 0 \ni b > N \Rightarrow \left| e^{x^2}\int_x^b e^{-t^2} \, dt - L \right| < \varepsilon
+\;\\ \text{Let} L = {1\over2}
+\text{Show:} \; \forall \; \varepsilon > 0 \; \exists \; N > 0 \ni b > N \Rightarrow \left| x e^{x^2}\int_x^b e^{-t^2} \, dt - {1\over2} \right| < \varepsilon
+N
+\varepsilon
+x

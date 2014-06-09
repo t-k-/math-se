@@ -1,0 +1,13 @@
+f_{X+Y}(z)=\begin{cases}\frac z2 & 0\le z\le1\\ \frac12 & 1\le z\le2\\ \frac{(3-z)}{2} & 2\le z\le 3\\ 0 & \text{elsewhere} \end{cases}
+\int_0^z\frac x2dx
+Z=X+Y
+F_Z(z)=P(Z\leq z)
+z
+z<0
+f_Z(x)=0
+x<0
+0\leq z\leq 1
+1\leq z\leq 2
+ P(Z\leq z)=\int_{-\infty}^z f_Z(x)\,\mathrm dx=\int_{-\infty}^z0\,\mathrm dx=0 
+ P(Z\leq z)=\int_{-\infty}^z f_Z(x)\,\mathrm dx=\int_{-\infty}^0 0\,\mathrm dx+\int_0^z\frac{x}{2}\,\mathrm dx, 
+ P(Z\leq z)=\int_{-\infty}^00\,\mathrm dx+\int_0^1\frac{x}{2}\,\mathrm dx+\int_1^z\frac{1}{2}\,\mathrm dx 

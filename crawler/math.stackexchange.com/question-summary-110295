@@ -1,0 +1,23 @@
+(x+y)^{2}=x^{2}+2xy+y^{2}
+(x-y)^{2}=x^{2}-2xy+y^{2}
+\frac{{dy}}{{dx}} = \frac{{2xy}}{{2{x^2} + {y^2}}}
+x^2
+\frac{{dy}}{{dx}} = \frac{{2\dfrac{y}{x}}}{{2 + {{\left( {\dfrac{y}{x}} \right)}^2}}}
+f\left( v \right) = \frac{{2v}}{{2 + {v^2}}}
+\eqalign{   & \frac{y}{x} = v  \cr    & y = vx  \cr    & y' = v'x + v \cr} 
+\frac{{dv}}{{dx}}x + v = \frac{{2v}}{{2 + {v^2}}}
+\eqalign{   & \frac{{dv}}{{dx}}x =  - \frac{{{v^3}}}{{2 + {v^2}}}  \cr    & \frac{{dx}}{x} =  - \frac{{2 + {v^2}}}{{{v^3}}}dv  \cr    & \frac{{dx}}{x} = \left( { - \frac{2}{{{v^3}}} - \frac{1}{v}} \right)dv \cr} 
+\log x + C = \frac{1}{{{v^2}}} - \log v
+\eqalign{   & \log x + C = \frac{{{x^2}}}{{{y^2}}} - \log \frac{y}{x}  \cr    & \log x + C = \frac{{{x^2}}}{{{y^2}}} - \log y + \log x  \cr    & \log y = \frac{{{x^2}}}{{{y^2}}} - C  \cr    & y = {C_1}\exp \left( {{x^2}{y^{ - 2}}} \right) \cr} 
+y
+x
+y\sqrt {\log y + C}  = x
+{y^2}\left( {\log y + C} \right) = {x^2}
+{e^{{y^2}}}y{e^C} = {e^{{x^2}}}
+2{y^2}{e^{2{y^2}}}{e^{2C}} = 2{e^{2{x^2}}}
+2{y^2} = W\left( {\frac{{2{e^{2{x^2}}}}}{{{e^{2C}}}}} \right)
+y = \sqrt {\frac{1}{2}W\left( {\frac{{2{e^{2{x^2}}}}}{{{e^{2C}}}}} \right)} 
+\eqalign{   & \log y + C = \frac{{{x^2}}}{{{y^2}}}  \cr    & y{e^C} = {e^{\frac{{{x^2}}}{{{y^2}}}}}  \cr    & {y^2}{e^{2C}} = {e^{2\frac{{{x^2}}}{{{y^2}}}}}  \cr    & 2\frac{{{x^2}}}{{{y^2}}}{y^2}{e^{2C}} = 2\frac{{{x^2}}}{{{y^2}}}{e^{2\frac{{{x^2}}}{{{y^2}}}}}  \cr    & 2{x^2}{e^{2C}} = 2\frac{{{x^2}}}{{{y^2}}}{e^{2\frac{{{x^2}}}{{{y^2}}}}}  \cr    & W\left( {2{x^2}{e^{2C}}} \right) = 2\frac{{{x^2}}}{{{y^2}}}  \cr    & {y^2} = \frac{{2{x^2}}}{{W\left( {2{x^2}{e^{2C}}} \right)}}  \cr    & y = \frac{{\sqrt 2 x}}{{\sqrt{W\left( {2{x^2}{e^{2C}}} \right)}}} \cr} 
+\frac{dy}{dx}=\frac{2xy}{2x^2+y^2}
+z =\frac{y}{x} \Rightarrow y'=xz'+z
+xz'+z=\frac{2z}{2+z^2} \Rightarrow xz'=\frac{-z^3}{2+z^2} \Rightarrow \int \frac {2+z^2}{z^3} \,dz= -\int \frac {dx}{x} 

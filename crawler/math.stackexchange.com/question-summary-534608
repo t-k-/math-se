@@ -1,0 +1,30 @@
+u_t(x,t)=u_{xx}(x,t)-bu(x,t)+q(t)
+b
+u(x,0)=0
+u(0,t)=0=u(\pi,t)
+0<x<\pi
+t>0
+u(x,t)
+u(x,t)=\sum\limits_{n=1}^\infty B_ne^{-n^2t}\sin(nx)
+u_t(x,t)=ku_{xx}(x,t)+q(t)
+u(x,0)=f(x)
+u(0,t)=0=u(\pi,t)
+u(x,t)=\sum\limits_{n=1}^\infty C(n,t)\sin nx
+u(0,t)=u(\pi,t)=0
+\sum\limits_{n=1}^\infty C_t(n,t)\sin nx=-\sum\limits_{n=1}^\infty n^2C(n,t)\sin nx-b\sum\limits_{n=1}^\infty C(n,t)\sin nx+q(t)
+\sum\limits_{n=1}^\infty(C_t(n,t)+(n^2+b)C(n,t))\sin nx=\sum\limits_{n=1}^\infty2q(t)\int_0^\pi\sin nx~dx~\sin nx
+0<x<\pi
+\sum\limits_{n=1}^\infty(C_t(n,t)+(n^2+b)C(n,t))\sin nx=\sum\limits_{n=1}^\infty2q(t)\left[-\dfrac{\cos nx}{n}\right]_0^\pi\sin nx
+0<x<\pi
+\sum\limits_{n=1}^\infty(C_t(n,t)+(n^2+b)C(n,t))\sin nx=\sum\limits_{n=1}^\infty\dfrac{2(1-(-1)^n)q(t)\sin nx}{n}
+0<x<\pi
+\therefore C_t(n,t)+(n^2+b)C(n,t)=\dfrac{2(1-(-1)^n)q(t)}{n}
+(e^{(n^2+b)t}C(n,t))_t=\dfrac{2(1-(-1)^n)q(t)e^{(n^2+b)t}}{n}
+e^{(n^2+b)t}C(n,t)=\dfrac{2(1-(-1)^n)}{n}\int q(t)e^{(n^2+b)t}~dt
+e^{(n^2+b)t}C(n,t)=A(n)+\dfrac{2(1-(-1)^n)}{n}\int_0^tq(t)e^{(n^2+b)t}~dt
+C(n,t)=A(n)e^{-(n^2+b)t}+\dfrac{2(1-(-1)^n)e^{-(n^2+b)t}}{n}\int_0^tq(t)e^{(n^2+b)t}~dt
+\therefore u(x,t)=\sum\limits_{n=1}^\infty\left(A(n)e^{-(n^2+b)t}+\dfrac{2(1-(-1)^n)e^{-(n^2+b)t}}{n}\int_0^tq(t)e^{(n^2+b)t}~dt\right)\sin nx
+u(x,0)=0
+\sum\limits_{n=1}^\infty A(n)\sin nx=0
+A(n)=0
+\therefore u(x,t)=\sum\limits_{n=1}^\infty\dfrac{2(1-(-1)^n)e^{-(n^2+b)t}}{n}\int_0^tq(t)e^{(n^2+b)t}~dt~\sin nx=\sum\limits_{n=1}^\infty\dfrac{2e^{-((2n-1)^2+b)t}}{2n-1}\int_0^tq(t)e^{((2n-1)^2+b)t}~dt~\sin((2n-1)x)~,~\text{where}~0<x<\pi

@@ -1,0 +1,20 @@
+h(x)=|x|
+[-1,1]
+\mathbb R
+h(2+x) = h(x)
+0
+1
+h_n(x) = (1/2)^n h(2^n x)
+ g(x) = \sum_{n=0}^\infty {1\over 2^n }h(2^n x) = \sum_{n \ge 0}h_n(x)
+g
+x\in \mathbb R
+x_m = 2^{-m}
+ \lim_{m \to \infty} {g(x_m) -g(0) \over x_m - 0} = \lim_{m \to \infty} {g(x_m)  \over x_m } 
+ {g(x_m) \over x_m} = 2^m \sum_{n=0}^\infty 2^{-n}h(2^{n-m})
+n>m
+h(2^{n-m})=0
+ {g(x_m) \over x_m} = \sum_{n=0}^m 2^{m-n}h(2^{n-m}) = \sum_{n=0}^m 2^{m-n} 2^{n-m} = \sum_{n=0}^m 4^{m-n} = \sum_{n=0}^m 4^{n} = {4\over 3}({1 -{1\over 4}^{m+1}})
+2^{m-n}2^{n-m}
+1
+4^{m-n}
+\sum_{n=0}^m1 = m+1

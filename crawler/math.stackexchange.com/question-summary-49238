@@ -1,0 +1,37 @@
+f
+x_n\to x
+ F(x) =\int\limits_{-\infty}^\infty f(y)\frac{1}{x\sqrt{2\pi}}\mathrm e^{-y^2/2x^2}\,dy  
+y=xu
+F(x)=\int\limits _{-\infty}^{\infty}f(y)\frac{1}{x\sqrt{2\pi}}\mathrm{e}^{-y^{2}/2x^{2}}\, dy=\int\limits _{-\infty}^{\infty}f(xu)\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2} du.
+\epsilon>0
+x
+\biggr|F(x+\delta)-F(x)\biggr|=\biggr|\int\limits _{-\infty}^{\infty}\left(f((x+\delta)u)-f(xu)\right)\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2}\, du\biggr|<\epsilon.\ \ \ \ \ \ (1)
+f
+|f|\leq M
+2M\int\limits _{-\infty}^{\infty}\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2} du=2M
+\delta
+\delta\rightarrow 0
+f
+F
+\lim_{\delta\rightarrow 0} F(x+\delta)-F(x)=0
+\epsilon
+N
+[-Nx,Nx]
+f
+\delta
+|f((x+\delta)u)-f(x)|\leq \frac{\epsilon}{4N}
+(1)
+\int_{-\infty}^N\frac{2M}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2}du+\int_N^\infty \frac{2M}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2}du<\frac{\epsilon}{2}.
+\biggr|\int\limits _{-N}^{N}\left(f((x+\delta)u)-f(xu)\right)\frac{1}{\sqrt{2\pi}}\mathrm{e}^{-u^{2}/2}\, du\biggr|<\frac{\epsilon}{2}.
+f
+x^2
+t\,( > 0)
+\{X_t: t \geq 0\}
+(t_n)
+t_n \to t
+X_{t_n} \to X_t
+X_{t_n} \to X_t
+f
+ {\rm E}f(X_t) = \int_{ - \infty }^\infty  {f(y)\frac{1}{{\sqrt {2\pi t} }}e^{ - y^2 /(2t)} dy} . 
+ {\rm E}f(X_{t_n}) = \int_{ - \infty }^\infty  {f(y)\frac{1}{{\sqrt {2\pi t_n} }}e^{ - y^2 /(2t_n)} dy}. 
+ {\rm E}f(X_{t_n}) \to {\rm E}f(X_t) 

@@ -1,0 +1,15 @@
+f(x) = \sin^{2}{x} + \sin^{2}\left(x + \frac{\pi}{3}\right) + \cos{x}\cos\left(x + \frac{\pi}{3}\right)
+g(x) = \left\{\begin{array}{rcc} 2x,\quad0\le x<1 \\x + \frac{1}{4},\quad 1 \le x<2  \end{array}\right.
+g\{f(x)\}
+f(x)
+f(x) = \sin^{2}{x} + \sin^{2}\left(x + \frac{\pi}{3}\right) + \cos{x}\cos\left(x + \frac{\pi}{3}\right)
+=1-\cos^{2}{x} + 1-\cos^{2}\left(x + \frac{\pi}{3}\right) + \cos{x}\cos\left(x + \frac{\pi}{3}\right)
+=2-\frac{3}{4}\cos^{2}{x}-\left[\frac{1}{2}\cos{x}-\cos(x+\frac{\pi}{3})\right]^2.
+\cos(x+\frac{\pi}{3})=\cos x\cos\frac{\pi}{3}-\sin x\sin\frac{\pi}{3}=\frac{1}{2}\cos{x}-\frac{\sqrt{3}}{2}\sin x,
+f(x) =  2-\frac{3}{4}\cos^{2}{x}-\Big(\frac{\sqrt{3}}{2}\sin x\Big)^2=2-\frac{3}{4}\cos^{2}{x}-\frac{3}{4}\sin^{2}{x}=2-\frac{3}{4}=\frac{5}{4}.
+g(f(x))=g(\frac{5}{4})=\frac{5}{4}+\frac{1}{4}=\frac{3}{2}.
+0<f<1
+f
+g(f) = 2\cdot f
+1<=f<2
+g(f)=f + \dfrac{1}{4}

@@ -1,0 +1,11 @@
+{\lim_{x\to 1} (2 - x)^{tan{\frac{\pi x}{2}}}} 
+{a^x = e^{ln(a)^x}}
+{ln}
+y=x-1
+x=1+t
+t\to 0
+ \tan \big(\tfrac{\pi x}{2}\big)=\tan \big(\tfrac{\pi (1+t)}{2}\big) =\tan \big(\tfrac{\pi}{2}+\tfrac{\pi t}{2}\big)=-\cot\big(\tfrac{\pi t}{2}\big)=-\frac{\cos(\tfrac{\pi t}{2}\big)}{\sin(\tfrac{\pi t}{2}\big)}= -\frac{2}{\pi t}+{\mathcal O}(1). 
+ \lim_{x\to 1} (2-x)^{\tan \big(\tfrac{\pi x}{2}\big)}=\lim_{t\to 0}(1-t)^{-\frac{2}{\pi t}}= \lim_{t\to 0}\left((1-t)^{-1/t}\right)^{2/\pi}=\mathrm{e}^{2/\pi}. 
+\displaystyle1-x=y,\tan\frac{\pi x}2=\tan\frac\pi2(1-y)=\tan\left(\frac\pi2-\frac{\pi y}2\right)=\cot\frac{\pi y}2
+{\lim_{x\to 1} (2 - x)^{\tan{\dfrac{\pi x}2}}} =\left(\lim_{y\to0}(1+y)^\dfrac1y\right)^{\lim_{y\to0}\cos\dfrac{\pi y}2\cdot \lim_{y\to0}\dfrac{\dfrac{\pi y}2}{\sin\dfrac{\pi y}2}\cdot\dfrac2\pi}
+=e^{\left(\cos0\cdot1\cdot\dfrac2\pi\right)}

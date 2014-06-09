@@ -1,0 +1,19 @@
+1 + \sum_{i=0}^n \left(\frac1{x_i}\prod_{j\neq i} \left(1+\frac1{x_j-x_i} \right) \right)=\prod_{i=0}^n \left(1+\frac1{x_i} \right)
+x_i
+f(z) = \prod_i (z - x_i)
+\prod_{j\ne i}(1 + \frac{1}{x_j-x_i}) = \prod_{j\ne i}\frac{(x_i - 1) - x_j}{x_i - x_j} = - \frac{f(x_i-1)}{f'(x_i)}
+C_i
+x_i
+C_{\infty}
+C_o
+1 - \sum_i \frac{f(x_i-1)}{x_if'(x_i)} = 1 - \sum_i \frac{1}{2\pi i}\int_{C_i} \frac{f(z-1)}{zf'(x_i)(z-x_i)} dz = 1 - \frac{1}{2\pi i}\int_{\sum_i C_i} \frac{f(z-1)}{zf(z)} dz 
+\frac{1}{2\pi i}\int_{\sum_i C_i} \frac{f(z-1)}{zf(z)} dz  = \frac{1}{2\pi i} \left( \int_{C_\infty} - \int_{C_o} \right) \frac{f(z-1)}{zf(z)} dz
+\displaystyle\;\;\frac{f(z-1)}{z f(z)} = \frac{1}{z} + O(\frac{1}{z^2})\;\;
+z
+\frac{1}{2\pi i} \int_{C_\infty} \frac{f(z-1)}{zf(z)} dz  = \frac{1}{2\pi i} \int_{C_\infty} ( \frac{1}{z} + O(\frac{1}{z^2}) ) dz = 1
+1
+\text{LHS} = \frac{1}{2\pi i}\int_{C_o}\frac{f(z-1)}{zf(z)}dz = \frac{f(-1)}{f(0)} =\frac{\prod_i(-1 - x_i)}{\prod_i ( -x_i )} = \prod_i (1+\frac{1}{x_i}) =\text{RHS} 
+z = 0
+f(z-1) - f(z)  = \sum_i \frac{f(z)(f(x_i-1) - f(x_i))}{(z-x_i)f'(x_i)} = f(z) \sum_{i}\frac{f(x_i-1)}{(z-x_i)f'(x_i)} 
+1 + \sum_i \frac{f(x_i-1)}{(z-x_i)f'(x_i)} = \frac{f(z-1)}{f(z)}
+\text{LHS} = 1 - \sum_i \frac{f(x_i-1)}{x_if'(x_i)} = \frac{f(-1)}{f(0)} = \text{RHS}.

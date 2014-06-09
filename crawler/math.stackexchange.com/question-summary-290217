@@ -1,0 +1,29 @@
+Y=X_1+X_2
+X_1
+X_2
+(\mu,\sigma^2)
+=P(X_1+X_2=Y)
+$=\int_{x=-\infty}^{y} \frac1{\sqrt{2\pi}\sigma} e^{\frac{(x_1-\mu)^2}{2\sigma^2}} \frac1{\sqrt{2\pi}\sigma} e^{\frac{(y-x_1-\mu)^2}{2\sigma^2}} dx
+=\int_{x=-\infty}^{y} \frac1{2\pi\sigma^2} e^{\frac{(x_1-\mu)^2+(y-x_1-\mu)^2}{2\sigma^2}}  dx
+= \frac1{2\pi\sigma^2} \int_{x=-\infty}^{y} e^{\frac{(x_1-\mu)^2+(y-x_1-\mu)^2}{2\sigma^2}} dx 
+= \frac1{2\pi\sigma^2} e^{\frac{y^2+2\mu^2-2y\mu}{2\sigma^2}}\int_{x=-\infty}^{y} e^{\frac{x_1(x_1-y)}{\sigma^2}} dx 
+\frac{x_1(x_1-y)}{\sigma^2}
+X
+\Phi_X
+\Phi_{X+Y} = \Phi_X \Phi_Y
+X
+\mu_X
+\sigma_X
+j = \sqrt{-1}
+X
+Y
+\mu_Y
+\sigma_Y
+\Phi_X(\nu) = exp\left({j \nu \mu_X - \frac{\sigma_X^2 \nu^2}{2}}\right) 
+\Phi_{X+Y}(\nu) = exp\left({j \nu \mu_X - \frac{\sigma_X^2 \nu^2}{2}}\right)exp\left({j \nu \mu_Y - \frac{\sigma_Y^2 \nu^2}{2}}\right).
+X_i = \mu + \sigma Z_i
+Z_i
+0
+1
+f_y(y)=P(Y=y)=P(X_1+X_2=Y)=P(X_1=x_1)P(X_2=Y−x_1)
+f_Y(y) = \int_{-\infty}^\infty f_{X_1}(x) f_{X_2}(y-x)\ dx

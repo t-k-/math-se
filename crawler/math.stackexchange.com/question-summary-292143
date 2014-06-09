@@ -1,0 +1,31 @@
+(X_t)
+Q
+X_t=\mathcal{E}\left(\int_0^t\lambda(s) \, dW(s)\right)
+\lambda(s)
+W
+Q
+X_t
+\mu:=-\frac{1}{2}\int_0^t |\lambda(s)|^2ds 
+\sigma^2:=\int_0^t |\lambda(s)|^2ds
+(X_t)
+(\mathcal{F}_t)
+K
+t>s
+E_Q[\mathbf1_{\{X_t>K\}}|\mathcal{F}_s]
+\mathcal{F}
+W
+X_t^\lambda
+X^\lambda_t=X^\lambda_sY
+Y
+\mathcal F_s
+X^{\lambda_s}_{t-s}
+\lambda_s(\cdot)=\lambda(s+\cdot)
+X^{\lambda_s}_{t-s}=\exp(\mu+\sigma Z)
+\mu=\mu_t-\mu_s
+\sigma^2=\sigma^2_t-\sigma^2_s
+Z
+x
+G(x)=Q(\sigma Z\gt\log x-\mu)
+G(x)=\Phi((\mu-\log x)/\sigma)
+ Q(X^\lambda_t\gt K\mid\mathcal F_s)=G(K(X^\lambda_s)^{-1}),\qquad G:x\mapsto Q(X^{\lambda_s}_{t-s}\gt x).  
+ Q(X_t\gt K\mid\mathcal F_s)=\Phi\left(\frac{\mu_t-\mu_s-\log K+\log X_s}{\sqrt{\sigma^2_t-\sigma^2_s}}\right). 

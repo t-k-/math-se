@@ -1,0 +1,23 @@
+X\sim \mathrm{Gamma}(a_1,b)
+Y \sim \mathrm{Gamma}(a_2,b)
+X+Y\sim(a_1+a_2,b)
+X
+Y
+X
+Y
+Z=X+Y
+f_X(x)
+f_Y(y)
+X
+Y
+X
+Y
+f_X(x) = 0
+x < 0
+z
+f_Y(z-x) = 0
+x > z
+z > 0
+f_{X+Y}(z) = \int_{-\infty}^{\infty} f_X(x)f_Y(z-x)\,\mathrm dx. 
+\begin{align} f_{X+Y}(z) &= \int_0^z f_X(x)f_Y(z-x)\,\mathrm dx\\ &=\int_0^z \frac{x^{a_1-1}e^{-x}}{\Gamma(a_1)}\frac{(z-x)^{a_2-1}e^{-(z-x)}}{\Gamma(a_2)}\,\mathrm dx\\ &= e^{-z}\int_0^z \frac{x^{a_1-1}(z-x)^{a_2-1}}{\Gamma(a_1)\Gamma(a_2)}\,\mathrm dx &\scriptstyle{\text{now substitute}}~ x = zt~ \text{and think}\\ &= e^{-z}z^{a_1+a_2-1}\int_0^1 \frac{t^{a_1-1}(1-t)^{a_2-1}}{\Gamma(a_1)\Gamma(a_2)}\,\mathrm dt & \scriptstyle{\text{of Beta}}(a_1,a_2)~\text{random variables}\\ &= \frac{e^{-z}z^{a_1+a_2-1}}{\Gamma(a_1+a_2)} \end{align}
+E(e^{(X+Y)t} )=E(e^{Xt}e^{Yt})=E(e^{Xt})E(e^{Yt})

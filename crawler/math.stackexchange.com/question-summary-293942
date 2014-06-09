@@ -1,0 +1,25 @@
+I=\int_{-\infty}^\infty\frac{x\sin(\pi x)}{x^2+2x+5}dx.
+z\in\Bbb C.
+f(z)=\frac{ze^{i\pi z}}{z^2+2z+5}
+f(z)=\frac{z\cos(\pi z)}{z^2+2z+5}+i\frac{z\sin(\pi z)}{z^2+2z+5}
+\int_{-\infty}^\infty f(x)dx=\int_{-\infty}^\infty\frac{x\cos(\pi x)}{x^2+2x+5}dx+i\int_{-\infty}^\infty\frac{x\sin(\pi x)}{x^2+2x+5}dx.
+I
+C_R
+H_R
+R
+I_R=[-R,R]
+f
+-1+2i
+-1-2i
+-1+2i
+\mathrm{res}_{(-1+2i)}f=\frac{(-1+2i)e^{i\pi(-1+2i)}}{2(-1+2i)+2}=-\frac14(2+i)e^{-2\pi}.
+\int_{H_R} f(z)dz+\int_{I_R} f(z)dz=\int_{C_R} f(z)dz=2i\pi\cdot(-\frac14)(2-i)e^{-2\pi}=\frac\pi 2(1-2i)e^{-2\pi}.
+\int_{H_R} f(z)dz
+R
+\begin{eqnarray}|\int_{H_R}f(z)dz|&\leq&\max_{\theta\in[0,\pi]}|\frac{Re^{i\theta}}{(Re^{i\theta})^2+2Re^{i\theta}+5}|\\&=&\max_{\theta\in[0,\pi]}\frac R{|(Re^{i\theta})^2+2Re^{i\theta}+5|}\\&\leq&\frac R{R^2-2R-5},\end{eqnarray}
+\int_{I_R} f(z)dz
+\int_{-\infty}^\infty f(x)dx
+R
+\int_{-\infty}^\infty f(z)dz=\frac\pi 2(1-2i)e^{-2\pi}=\frac\pi 2e^{-2\pi}-i\pi e^{-2\pi},
+I=-\pi e^{-2\pi}.
+\mathcal{L}\big\{\frac{1}{x+a}\big\}=e^{as}\Gamma(0,as).

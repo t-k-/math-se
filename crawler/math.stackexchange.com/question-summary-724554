@@ -1,0 +1,51 @@
+a_n
+n
+0's, 1's
+2's
+1
+j
+1
+2
+j+1
+1\leq j\leq n-1
+a_n=2a_{n-1}+a_{n-2}, a_1=3,a_2=7
+x
+n
+y
+n
+1
+3y
+n+1
+x-y
+1
+0
+x-y
+3y+x-y = 2y+x
+a_{n-1}
+a_{n-2}
+S_n
+n > 2
+r_n \colon S_n \to S_{n-1}\times \{1,2\} \cup S_{n-2}
+S_n
+0,1
+2
+0
+2
+S_{n-1}
+1
+0
+S_{n-2}
+a_n = 2a_{n-1} + a_{n-2}
+n > 2
+r_n (s_1,s_2,\dotsc,s_n) \mapsto \begin{cases} ((s_2,\dotsc,s_n),s_1/2+1) &, s_1 \neq 1\\ (s_3,\dotsc,s_n) &, s_1 = 0 \end{cases}
+a_2 = 7
+ a_{n + 2} = 2 a_{n + 1} + a_n 
+A(z) = \sum_{n \ge 0} a_n z^n
+z^n
+n \ge 0
+r_1 = 1 + \sqrt{2}
+r_2 = 1 - \sqrt{2}
+ \frac{A(z) - 1 - 3 z}{z^2} = 2 \frac{A(z) - 1}{z} + A(z) 
+ A(z) = \frac{1 + z}{1 - 2 z - z^2} 
+ A(z) = \frac{r_1 + 1}{2^{3/2} (1 - r_1 z)} - \frac{r_2 + 1}{2^{3/2} (1 - r_2 z)} 
+ a_n = \frac{r_1 + 1}{2^{3/2}} \cdot r_1^n - \frac{r_2 + 1}{2^{3/2}} \cdot r_2^n 

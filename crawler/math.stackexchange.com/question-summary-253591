@@ -1,0 +1,14 @@
+X_n \rightarrow_p Y
+X_n \rightarrow Z\space a.s.
+P(Y=Z)=1
+\forall \epsilon > 0
+n\rightarrow \infty
+P(|Y-Z| > \epsilon) = P(|Y-X_n + X_n - Z| > \epsilon) 
+\leq P(|X_n-Z|+|X_n - Y| > \epsilon)
+\leq P(|X_n-Z| > \epsilon/2) + P(|X_n-Y|>\epsilon/2) \quad (*)
+P(|Y-Z| > \epsilon)= 0 \quad \forall \epsilon > 0
+P(|Y-Z| = 0) = 1
+(*)
+a+b >c, b< c/2 \Rightarrow a> c/2
+P(|X_n-Z|+|X_n - Y| > \epsilon) = P(|X_n-Z|+|X_n - Y| > \epsilon, |X_n -Y| > \epsilon/2)  + P(|X_n-Z|+|X_n - Y| > \epsilon,|X_n -Y| \leq \epsilon/2)
+\leq P(|X_n-Y|>\epsilon/2) + P(|X_n-Z| > \epsilon/2)

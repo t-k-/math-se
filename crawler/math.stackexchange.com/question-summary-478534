@@ -1,0 +1,80 @@
+\int_{C^{+}} \frac{t^{\beta - 1}}{\log t}dt = \int_{0}^{x^{\beta}}\frac{du}{\log u}= \mathrm {Li} (x^{\beta}) - i\pi
+\beta
+u = t^{\beta}
+\log t = \log u/\beta
+dt/t = du/u \beta
+C^{+}
+0
+1 - \epsilon
+u = 1
+1 + \epsilon
+1
+2
+0
+- \mathrm {Li}(0)
+- i \pi
+u = 1
+u = r e^{i \theta}
+\DeclareMathOperator{\li}{li} \DeclareMathOperator{\Li}{Li}
+\begin{align} \li x &= \int_0^x \frac{dt}{\log t}\\ \Li x &= \int_2^x \frac{dt}{\log t} = \li x - \li 2 \end{align}
+\li
+\li x = \lim_{\varepsilon \searrow 0} \left(\int_0^{1-\varepsilon} \frac{dt}{\log t} + \int_{1+\varepsilon}^x \frac{dt}{\log x}\right)
+x > 1
+\Li
+x < 1
+x = 1
+C^+
+\begin{align} \int_{C^+} \frac{t^{\beta-1}}{\log t}\, dt &= \int_0^{1-\varepsilon} \frac{t^{\beta-1}}{\log t}\,dt + \int_{1+\varepsilon}^x \frac{t^{\beta-1}}{\log t}\,dt + \underbrace{\int_0^\pi \frac{(1+\varepsilon e^{i(\pi-\varphi)})^{\beta-1}}{\log (1+\varepsilon e^{i(\pi-\varphi)})} (-i\varepsilon e^{i(\pi-\varphi)})\,d\varphi}_{\rho(\varepsilon)}\\ &= \int_0^{(1-\varepsilon)^{\beta}} \frac{du}{\log u} + \int_{(1+\varepsilon)^{\beta}}^{x^\beta} \frac{du}{\log u} + \rho(\varepsilon). \end{align}
+(1-\varepsilon)^\beta
+(1+\varepsilon)^\beta
+\beta \neq 1
+1
+\lim_{\varepsilon\searrow 0} \left(\int_0^{(1-\varepsilon)^{\beta}} \frac{du}{\log u} + \int_{(1+\varepsilon)^{\beta}}^{x^\beta} \frac{du}{\log u}\right) = \li(x^\beta),
+O(\varepsilon^2)
+\dfrac{z^{\beta-1}}{\log z}
+1
+\lim_{\varepsilon\searrow 0} \rho(\varepsilon) = -\pi i \operatorname{Res}_{z=1} \frac{z^{\beta-1}}{\log z} = -\pi i.
+C^+
+\varepsilon > 0
+\int_{C^+} \frac{t^{\beta-1}}{\log t}\, dt = \li(x^\beta) -\pi i.
+\Li
+\li
+1
+-i\pi\,
+z=1
+\;\operatorname{li}(0)=0
+z_0
+\epsilon\to 0
+R\to +\infty
+z_0
+\quad
+z_0
+\;I\,
+I-\pi \,i\;\underset{z=z_0}{\operatorname{Res}}f(z)=2\,\pi\,i\sum_{z_i\;\text{inside}\;C} \;\underset{z=z_i}{\operatorname{Res}}f(z)
+I+\pi \,i\;\underset{z=z_0}{\operatorname{Res}}f(z)=2\,\pi\,i\sum_{z_i\;\text{inside}\;C} \;\underset{z=z_i}{\operatorname{Res}}f(z)
+z_0
+I=2\,\pi\,i\left[\sum_{z_i\;\text{inside}\;C} \;\underset{z=z_i}{\operatorname{Res}}f(z)+\frac 12\underset{z=z_0}{\operatorname{Res}}f(z)\right]
+\quad
+I=2\,\pi\,i\,\sum_{z_i\;\text{inside}\;C} \;\underset{z=z_i}{\operatorname{Res}}f(z)+\sum_{c_j\;\text{on}\;C} \phi_j\;i\;\underset{z=c_j}{\operatorname{Res}}f(z)
+f(z)
+z_0
+z_0
+\;\underset{z=z_0}{\operatorname{Res}} f(z)=C_{-1}
+f(z)
+g(z)
+g(z)
+g(z)
+|g(z)|<M=
+\to 0
+f(z)=\frac{C_{-1}}{z-z_0}+g(z)
+I(\phi)=\lim_{\epsilon\to 0}\int_{C_\epsilon}f(z)\,dz=\lim_{\epsilon\to 0}\int_{C_\epsilon}\frac{C_{-1}}{z-z_0}dz+\lim_{\epsilon\to 0}\int_{C_\epsilon}g(z)\,dz
+\,z=z(\theta)=z_0+\epsilon\,e^{i(\theta+\theta_0)}\,
+I(\phi)=\lim_{\epsilon\to 0}\int_{C_\epsilon}\frac{C_{-1}}{z-z_0}dz=\lim_{\epsilon\to 0}\int_0^\phi\frac{C_{-1}}{\epsilon\,e^{i(\theta+\theta_0)}}i\,\epsilon\,e^{i(\theta+\theta_0)}\;d\theta
+\boxed{\displaystyle I(\phi)=\lim_{\epsilon\to 0}\int_{C_\epsilon}f(z)\,dz=i\,\phi\;C_{-1}}
+- \pi i
+u
+e^{t}
+\log u = t
+du = e^{t}dt
+t = 0
+-i\pi\left(e^{t}\right)_{z=0} = - i \pi

@@ -1,0 +1,9 @@
+L
+R
+L \leq R
+p(x) = Pr\{L \leq x \leq R\}
+x
+X = R - L
+E[X] = \int_{-\infty}^{\infty}p(x)dx
+\mathbb{E}X
+ \mathbb{E}X=\mathbb{E}[\,\int_{L(\omega)}^{R(\omega)}1\cdot\mathrm{d}x\,]= \int_{\Omega}\mathbb{d}p\cdot \int_{L(\omega)}^{R(\omega)}1\cdot\mathrm{d}x=\int_{\Omega}\mathbb{d}p\cdot \int_{-\infty}^{+\infty}1_{[L(\omega),\,R(\omega)]}\mathrm{d}x=\\ \int_{-\infty}^{+\infty}\mathrm{d}x  \int_{\Omega}1_{[L(\omega),\,R(\omega)]}\mathrm{d}x=\int_{-\infty}^{+\infty}\mathbb{P_r}\{L\le x\le R\}\mathrm{d}x 

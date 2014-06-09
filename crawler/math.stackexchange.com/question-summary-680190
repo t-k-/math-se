@@ -1,0 +1,24 @@
+ \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & \cos{\theta} & -\sin{\theta} & 0 \\ 0 & \sin{\theta} & \cos{\theta} & 0 \\ 0 & 0 & 0 & 1 \\ \end{pmatrix} 
+ \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & \cos{\theta} & -\sin{\theta} & 0 \\ 0 & \sin{\theta} & \cos{\theta} & 0 \\ 0 & 0 & 0 & 1 \\ \end{pmatrix} \begin{pmatrix} x_x & y_x & z_x & \Delta_x \\ x_y & y_y & z_y & \Delta_y \\ x_z & y_z & z_z & \Delta_z \\ 0 & 0 & 0 & 1 \\ \end{pmatrix} 
+ \begin{pmatrix} x_x & y_x & z_x & \Delta_x \\ x_y \cos{\theta} - x_z \sin{\theta} & y_y \cos{\theta} - y_z \sin{\theta} & z_y \cos{\theta} - z_z \sin{\theta} & \Delta_y \cos{\theta} - \Delta_z \sin{\theta} \\ x_y \sin{\theta} + x_z \cos{\theta} & y_y \sin{\theta} + y_z \cos{\theta} & z_y \sin{\theta} + z_z \cos{\theta} & \Delta_y \sin{\theta} + \Delta_z \cos{\theta} \\ 0 & 0 & 0 & 1 \\ \end{pmatrix} 
+R
+T
+C = R * T
+T
+R
+\Delta
+C = T * R
+R
+T
+4 \times 1
+\Delta
+\Delta
+\vec{x}
+\vec{y}
+\vec{z}
+(2,3)
+yz
+y
+z
+\theta
+T

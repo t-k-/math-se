@@ -1,0 +1,29 @@
+V
+\le 3
+f: V \rightarrow V, p \rightarrow p'
+\mathbb{R}-
+B=(1,x,x^2,x^3)
+f(1) = 0, \ f(x) = 1, \ f(x^2) = 2x, \ f(x^3) = 3x^2 
+\mathbb{R}^3
+f(1) = 0 = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \end{pmatrix} = \lambda_1 \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} + \lambda_2 \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} + \lambda_3 \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} + \lambda_4 \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} \Rightarrow \lambda_1 = \lambda_2 = \lambda_3 = \lambda_4 =  0
+f(x) = 1 = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} = \lambda_1 \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} + \lambda_2 \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} + \lambda_3 \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} + \lambda_4 \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} \Rightarrow \lambda_2 = \lambda_3 = \lambda_4 =  0, \ \lambda_1 = 1 
+f(x^2) = 2x = \begin{pmatrix} 0 \\ 2 \\ 0 \\ 0 \end{pmatrix} = \lambda_1 \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} + \lambda_2 \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} + \lambda_3 \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} + \lambda_4 \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} \Rightarrow \lambda_1 = \lambda_3 = \lambda_4 =  0, \ \lambda_2 = 2 
+f(x^3) = 3x^2 = \begin{pmatrix} 0 \\ 0 \\ 3 \\ 0 \end{pmatrix} = \lambda_1 \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} + \lambda_2 \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} + \lambda_3 \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} + \lambda_4 \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} \Rightarrow \lambda_2 = \lambda_1 = \lambda_4 =  0, \ \lambda_3 = 3 
+M_B^B = \begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 2 & 0 \\ 0& 0 & 0 & 3 \\ 0 & 0 & 0 & 0 \end{pmatrix}  
+f(x^3) = 3x^2
+ 3x^2 = \begin{pmatrix} 0 \\ 0 \\ 3 \\ 0 \end{pmatrix} \text{ or } 3x^2 = \begin{pmatrix} 0 \\ 0 \\ 0 \\ 3 \end{pmatrix}
+V
+T
+V
+(v_1,...,v_n)
+V
+T
+v_k
+Tv_k =a_{1,k}v_1 \ + \   ...\  + \ a_{n,k}v_n
+\left[\begin{matrix} a_{1,1}&\cdots& &a_{1,n} \\ \vdots& \ddots & &\vdots\\ a_{n,1}&\cdots &  & a_{n,n}  \end{matrix}\right]
+n+1
+f
+x^k
+kx^{k-1}
+0 \cdot 1 \ +\   ... \ + \  kx^{k-1}  + \ ... \ + \ 0  x^n
+\left[\begin{matrix} 0 & 1& \cdots& &0 \\ \vdots&&\ddots&&\vdots\\ &&&&n\\ 0&&\cdots&&0 \end{matrix}\right]

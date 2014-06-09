@@ -1,0 +1,29 @@
+x'=-ay
+y'=ax
+z(t)=(cos(at),sin(at))
+A(t)
+0
+X'(t)=A(t)X(t)
+X(t) = (cos(at),sin(at))^T, X(0)=I
+A(t)= \begin{bmatrix}0 & -a\\a & 0\end{bmatrix}
+x(t)
+A = \begin{bmatrix}0 & -a\\a & 0\end{bmatrix}
+|A - \lambda I| = \begin{pmatrix} -\lambda & -a \\ a & -\lambda \end{pmatrix} = 0
+\lambda^2 + a^2 = 0,so, \lambda^2 = -a^2
+\lambda_{1,2} = \pm ia
+\lambda_1 = -ia, v_1 = (-i, 1)
+\lambda_2 = ia, v_2 = (i, 1)
+A = \begin{bmatrix}0 & -a\\a & 0\end{bmatrix} = P \cdot J \cdot P^{-1} = \begin{bmatrix} -i & i\\1 & 1\end{bmatrix} \cdot \begin{bmatrix} -ia & 0\\0 & ia\end{bmatrix} \cdot \begin{bmatrix} \frac{i}{2} & \frac{1}{2}\\ -\frac{i}{2} & \frac{1}{2}\end{bmatrix}.
+\displaystyle e^{At} = P \cdot e^{Jt} \cdot P^{-1} = \begin{bmatrix} -i & i\\1 & 1\end{bmatrix} \cdot \begin{bmatrix} e^{-iat} & 0\\0 & e^{iat}\end{bmatrix} \cdot \begin{bmatrix} \frac{i}{2} & \frac{1}{2}\\ -\frac{i}{2} & \frac{1}{2}\end{bmatrix}
+e^{ \pm iat} = \cos (at) \pm i \sin (at)
+e^{At} = P \cdot e^{Jt} \cdot P^{-1} = \begin{bmatrix} \cos (at) & -\ sin (at)\\ \sin (at) & \cos (at)\end{bmatrix}
+t = 0
+X_0
+x(t) = X_0 e^{At} = X_0 \begin{bmatrix} \cos (at) & -\ sin (at)\\ \sin (at) & \cos (at)\end{bmatrix}
+2x2
+e^ {tA}= \sum_{i=0}^{\infty}\frac{(tA)^k}{k1}
+(tA)^2
+(tA)^3
+(tA)^k
+e^{tA}=\begin{bmatrix}\ cos ta & -\ sin ta\\\ sin ta & \ cos ta\end{bmatrix}
+X'(t)=e^AX_0

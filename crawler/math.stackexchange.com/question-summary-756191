@@ -1,0 +1,13 @@
+\int_{0}^{1}x^{2}\sin(x^{4})dx
+<0.001
+\xi\in (0,x)
+\lvert x\rvert<1
+n
+\frac{1}{(2n+1)!}<10^{-3}
+n=3
+ x^2\sin(x^4)=\sum_{k=0}^\infty \frac{(-1)^kx^{8k+6}}{(2k+1)!},  
+ \int_0^1 x^2\sin(x^4)\,dx=\sum_{k=0}^\infty \frac{(-1)^k}{(2k+1)!(8k+7)}. 
+ \sin x=x-\frac{x^3}{3!}+\cdots+\frac{(-1)^nx^{2n+1}}{(2n+1)!}\sin^{(2n+1)}(\xi), 
+ \left|\,\sin x-x+\frac{x^3}{3!}+\cdots+\frac{(-1)^{k}x^{2k-1}}{(2k-1)!}\,\right|<\frac{1}{(2k+1)!}, 
+ \left|\,x^2\sin x^4-x^6+\frac{x^{10}}{3!}+\cdots+\frac{(-1)^{k}x^{8k+6}}{(2k-1)!}\,\right|<\frac{1}{(2k+1)!}, 
+ \left|\,\int_0^1 x^2\sin x^4\,dx-\sum_{k=0}^{n-1} \frac{(-1)^k}{(2k+1)!(8k+7)}\right|<\frac{1}{(2n+1)!}. 

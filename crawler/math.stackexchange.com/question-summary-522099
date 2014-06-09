@@ -1,0 +1,25 @@
+X
+n \times m
+Y
+X
+\bf{z}
+n \times 1
+||z|| = 1
+||Y^T\bf{z}||^2
+YY^T
+\|Y^T z\|^2 = \langle Y^T z, Y^T z \rangle = \langle z, YY^T z \rangle
+YY^T
+\langle z, YY^T z \rangle
+\|z\| \le 1
+Y Y^T
+YY^T
+Q
+\|Q x\| = \|x\|
+A
+\lambda_{\text{min}} \|x\|^2 \le \langle x, Ax \rangle \le \lambda_{\text{max}} \|x\|^2
+A = Q \Lambda Q^T
+Q
+\Lambda = \operatorname{diag}(\lambda_1,...,\lambda_n)
+\langle x, Ax \rangle = \langle Q^Tx, \Lambda (Q^Tx) \rangle = \sum_k \lambda_k [Q^Tx]_k^2
+\lambda_{\text{min}} \sum_k  [Q^Tx]_k^2 \le \langle x, Ax \rangle \le \lambda_{\text{max}} \sum_k  [Q^Tx]_k^2 
+\sum_k  [Q^Tx]_k^2 = \|Q^T x\|^2 = \|x\|^2

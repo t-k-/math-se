@@ -1,0 +1,17 @@
+E(z^k)= \sum_{k=0}^{\infty} p(k)z^k
+\widetilde{p}(z) =\int_{-\infty}^{\infty} z^k p(k) \, \mathrm{d}k
+\widetilde{f}(s)= \int_0^{\infty} x^{s-1} f(x) \mathrm{d} x \quad f(x)= \frac{1}{2 \pi i} \int_{c-i\infty}^{c+i\infty} x^{-s} \widetilde{f}(s) \mathrm{d}s
+p(k)
+p(k)=f(-\ln(x))
+k=-\ln(x)
+f(-\ln(x))
+ \widetilde{f}(s)=\int_{-\infty}^{\infty}e^{-ks} p(k) \, \mathrm{d} k
+\mathcal{G}(z)=\widetilde{f}(-\ln(z))
+p(k)=\frac{1}{2 \pi i}\int_{\ln(z)=-c-i\infty}^{\ln(z)=-c+i\infty}z^{-k-1} \mathcal{G}(z) \,\mathrm{d} z
+|z| \in [e^{-a},e^{-b}]
+c\in [a,b]
+\text{arg}(z)
+\text{arg}(z)
+-\infty
++\infty
+\frac{1}{2 \pi i} \oint_{|z|\in [e^{-a},e^{-b}]} z^{-k-1} \mathcal{G}(z) \,\mathrm{d} z

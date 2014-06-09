@@ -1,0 +1,14 @@
+n
+t_1,t_2,\dots,t_n
+y_1,y_1,\dots,y_n
+y_i
+\theta
+\theta
+1
+t_i
+i
+\Pr(X_i=0)= e^{-\theta t_i}
+\Pr(X_i=1)=1-e^{-\theta t_i}
+t_1=\cdots=t_n
+ X_i = \left.\begin{cases} 1 & \text{if at least one emission in the $i$th time period}, \\ 0 & \text{otherwise}, \end{cases}\right\} = \begin{cases} 1 & \text{if }y_i\ge 1, \\ 0 & \text{if }y_i=0. \end{cases} 
+ L(\theta) = \prod_{i=1}^n (e^{-\theta t_i})^{1-X_i} (1-e^{-\theta t_i})^{X_i} 

@@ -1,0 +1,14 @@
+\iint_R{ \nabla \times \vec{F} \cdot \hat{n}}\,dA
+\vec{F}=-x^2y \hat{i}+x y^2\hat{j}
+C:r=a \cos{t}\hat{\imath}+a \sin{t} \hat{\jmath}, 0 \leq t \leq 2 \pi \text{ and } R: x^2+y^2 \leq a^2
+$$ 
+ 
+ So 
+ But how can I continue?? Do I have to do something like the following?? 
+(x,y)=(r\cos t, r\sin t)
+dA = dxdy = rdrdt
+ \int\int_R (x^2 + y^2) dA= {2\pi}\int_0^{a} r^2 rdr = {2\pi}\frac{a^4}4 
+\oint_C{\overrightarrow{F} \cdot \hat{n}}ds=\iint_R{\nabla \cdot \overrightarrow{F}}dA
+\hat{n}=\frac{dy}{dt}\hat{\imath}-\frac{dx}{dt}\hat{\jmath}=a \cos{t} \hat{\imath}+a \sin{t} \hat{\jmath}
+\oint_C{\overrightarrow{F} \cdot \hat{n}}ds=\int_0^{2 \pi}{(-a^3 \cos^2{t} \sin{t} \hat{\imath}+a^3 \cos{t} \sin^2{t} \hat{\jmath})(a \cos{t} \hat{\imath}+a \sin{t} \hat{\jmath})}dt=\int_0^{2 \pi}{(-a^4 \cos^3{t} \sin{t}+a^4 \cos{t} \sin^3{t})}dt=...=0
+\nabla \cdot \overrightarrow{F}=0 \Rightarrow \iint_R{\nabla \cdot \overrightarrow{F}}dA=\iint_R{0}dA=0

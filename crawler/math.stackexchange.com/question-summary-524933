@@ -1,0 +1,15 @@
+A_{m0} 
+\alpha_{m0} 
+6 x 6
+ I_1 = \int e^{- \int{(A_{m0} + \alpha_{m0} G(t))}dt} (G(t)-1) dt 
+\displaystyle G(t) = exp(-\frac{(t-t_0)^2}{2 \sigma^2})
+ I_1 = \int e^{-A_{m0}t} e^{-\alpha_{m0} \int{G(t)}dt} (G(t)-1) dt 
+ I_1 =-(\frac{1}{\alpha_{m0}}) \int e^{-(A_{m0}+\alpha_{m0})t} e^{-\alpha_{m0} \int{(G(t)-1)}dt} [-\alpha_{m0}(G(t)-1)] dt 
+ I_1 =-(\frac{1}{\alpha_{m0}}) \int e^{-(A_{m0}+\alpha_{m0})t} d(e^{-\alpha_{m0} \int{(G(t)-1)}dt}) 
+ I_1 =-(\frac{1}{\alpha_{m0}})e^{-(A_{m0}+\alpha_{m0})t} e^{-\alpha_{m0} \int{(G(t)-1)}dt}+(\frac{1}{\alpha_{m0}})\int e^{-\alpha_{m0} \int{(G(t)-1)}dt} e^{-(A_{m0}+\alpha_{m0})t} [-(A_{m0}+\alpha_{m0})dt] 
+ I_1 =-(\frac{1}{\alpha_{m0}})e^{-(A_{m0}+\alpha_{m0})t} e^{-\alpha_{m0} \int{(G(t)-1)}dt}+(\frac{-(A_{m0}+\alpha_{m0})}{\alpha_{m0}})\int e^{-\alpha_{m0} \int{(G(t)-1)}dt} e^{-(A_{m0}+\alpha_{m0})t} dt 
+ e^{A+B} = e^{B+A} 
+ I_0 = \int G(t) dt = \frac{\pi \sigma}{2} erf(\frac{x}{\sqrt 2}) 
+G(t)
+I_0
+I_1

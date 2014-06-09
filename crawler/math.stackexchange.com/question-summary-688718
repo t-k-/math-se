@@ -1,0 +1,10 @@
+f\in L^1(\mathbb R^n)
+k\in C^\infty(\mathbb R^n\times \mathbb R^n)
+1
+1
+g\in C^\infty(\mathbb R^n)
+\tau_x k(x, y)=k(x, x-y)
+\tilde{k}(x, y)=k(x, -y)
+\displaystyle (g*f)(x)=\int_{\mathbb R^n} g(x-y)f(y)\ dy
+\displaystyle \mathcal{F}_{\mathbb R^n}f(\xi)=\int_{\mathbb R^n} e^{-2\pi iy\cdot \xi}f(y)\ dy
+(g*f)(x)=\sum_{\xi\in\mathbb  Z^n} e^{2\pi ix\cdot \xi}\mathcal{F}_{\mathbb R^n}(\tau_x \tilde{k}(x, \cdot))(\xi)\mathcal{F}_{\mathbb R^n} f(\xi)?

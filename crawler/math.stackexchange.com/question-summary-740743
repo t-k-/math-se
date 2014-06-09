@@ -1,0 +1,8 @@
+f(t) = \begin{cases} 0,& \mbox{if} \quad 0 \leq t \lt \pi \\ \sin(t), &\mbox{if} \quad  t \geq \pi \end{cases}
+f(t)=\sin(t)u(t-\pi)=-\sin(t-\pi)u(t-\pi)=g(t-\pi)
+g(t)=-\sin(t)u(t)
+g(t)
+G(s)=-\frac{1}{s^2+1}
+F(s)=e^{-\pi s}G(s)=-\frac{e^{-\pi s}}{s^2+1}
+\mathcal L(f)(s):=\int_0^\infty f(t)e^{-st}dt= \int_0^\pi 0\cdot e^{-st}dt+ \int_\pi^\infty \sin t e^{-st}dt=\int_\pi^\infty \sin t e^{-st}dt.
+\sin t=\frac{e^{it}-e^{-it}}{2i}

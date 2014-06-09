@@ -1,0 +1,27 @@
+U
+V
+W
+W
+P(U<W) = \int_{w=0}^{1/2} P(U < W ~|~ W = w) f(w)dw
+f(w)
+ \begin{align} F(w) &= P(W<w) \\ &= P( \frac{1}{2}\min U_i < w)\\ &= P( \min U_i < 2w)\\ &= 1-P( \min U_i \geq 2w) \\ &= 1-\prod_{i=1}^n{P(U_i \geq 2w)} \\  &= 1-(1-2w)^n \end{align}
+f(w) = 2n(1-2w)^{n-1} 
+\begin{align} P(U<W) &= \int_{0}^{1/2} P(U < W ~|~ W = w) f(w)dw \\  &\int_{0}^{1/2} wf(w)dw \\  &\int_{0}^{1/2} 2nw(1-2w)^{n-1} dw \\  \end{align}
+n+1
+1/(n+1)
+1/2
+w(1-2w)^{n-1} = \left(w-\frac{1}{2}+\frac{1}{2}\right)(1-2w)^{n-1} = -\frac{1}{2}(1-2w)^n +\frac{1}{2}(1-2w)^{n-1} 
+\left(\frac{1}{4(n+1)}\cdot (1-2w)^{n+1}-\frac{1}{4n}\cdot (1-2w)^{n}\right)\Bigg\vert_{w=0}^{w=\frac{1}{2}} = \frac{1}{2(n+1)},
+[W\gt u]=[\min\limits_{1\leqslant i\leqslant n}U_i\gt2u]=\bigcap\limits_{i=1}^n[U_i\gt2u]
+P[U_i\gt2u]=(1-2u)^+
+u
+(U_i)
+ P[U\lt W]=\int_0^1P[W\gt u]\mathrm du. 
+ P[U\lt W]=\int_0^{1/2}(1-2u)^n\mathrm du\stackrel{x=1-2u}{=}\int_0^1x^n\frac{\mathrm dx}2=\frac12\frac1{n+1}. 
+x = 1-2w
+w = \frac{1-x}{2}
+dx = \frac{dw}{-2}
+\begin{align} P(U<W) &= \int_{0}^{1/2} 2nw(1-2w)^{n-1} dw \\  &= \int 2n \frac{1-x}{2} x^{n-1} \frac{dx}{-2} \\  &= \frac{n}{2} \int x^n - x^{n-1} dx \\  &= \frac{n}{2} \Bigg(\frac{x^{n+1}}{n+1} - \frac{x^{n}}{n} \Bigg) \\ &= \frac{nx^{n}}{2} \Bigg( \frac{x}{n+1} - \frac{1}{n} \Bigg) \\  &= \frac{n(1-2w)^{n}}{2} \Bigg( \frac{(1-2w)}{n+1} - \frac{1}{n} \Bigg) \\  \end{align}
+w=1/2
+w=0
+\begin{align} P(U<W) &= \frac{n(1-2w)^{n}}{2} \Bigg( \frac{(1-2w)}{n+1} - \frac{1}{n} \Bigg) \Bigg|_{0}^{1/2}\\  &= 0 - \frac{n}{2} \Bigg( \frac{1}{n+1} - \frac{1}{n} \Bigg)\\ &= \frac{n}{2} \Bigg( \frac{1}{n} - \frac{1}{n+1} \Bigg)\\ &= \frac{1}{2(n+1)} \end{align}

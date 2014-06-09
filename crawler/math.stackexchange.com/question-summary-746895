@@ -1,0 +1,11 @@
+\lim_{n\to\infty} \displaystyle \sum_{k=0}^{\lfloor n/2 \rfloor}  \binom{n}{2k}\left(4^{-k}\binom{2k}{k}\right)^{\frac{2n}{\log_2{n}}}\,?
+k = \lfloor n/4\rfloor
+\binom{n}{2k}
+n \log 2 + O(\log n)
+-n \log 2 - \frac{n \log 2}{\log n}\log (\pi/4) + O(\log n)
+\pi/4 < 1
+n\gt4
+\frac2{\log_2(n)}\lt1
+1
+ \sum_{k=0}^{\lfloor n/2\rfloor}2^{-2nk}\binom{n}{2k}\binom{2k}{k}^{\large\frac{2n}{\log_2(n)}} =\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}{2k}\left[4^{-k}\binom{2k}{k}^{\large\frac2{\log_2(n)}}\right]^{\large n} 
+ \binom{2k}{k}\le\frac{4^k}{\sqrt{\pi k}} 

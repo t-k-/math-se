@@ -1,0 +1,13 @@
+p<1/2
+1-p
+S_n
+n
+S_0=a
+0<a<N
+M_n=[(1-p)/p]^{S_{n}}
+\mathbb{E}[M_{n+1}|S_{0}, \dots S_{n}] = M_{n}
+ \begin{align} \mathbb{E}[M_{n+1}|S_{0}, \dots, S_{n}] &= \mathbb{E}[[(1-p)/p]^{S_{n+1}}|S_{0}, \dots, S_{n}] \\ &= \mathbb{E}[[(1-p)/p]^{S_{n+1}}|S_{n}] &&\text{(By Markovity.)} \\ &= [(1-p)/p]^{p(S_{n}+1) + (1-p)(S_{n}-1)} \\ &= [(1-p)/p]^{S_{n}+2p-1}, \end{align} 
+M_n
+\newcommand{\E}{\mathbf{E}} \E(\exp(S_{n+1}))
+\exp(\E(S_{n+1}))
+ \begin{align*} \mathbf{E}[M_{n+1} \mid S_0, \ldots, S_n]   &= \mathbf{E} \left[ \left.  \left( \frac{1-p}{p} \right)^{S_{n+1}} \right| \ S_0, \ldots, S_n \right]   \\ &= p \cdot \left( \frac{1-p}{p} \right)^{S_n + 1}  +  (1-p) \cdot \left( \frac{1-p}{p} \right)^{S_n - 1}    \\ &= p \cdot \frac{1-p}{p} \cdot M_n  +  (1-p) \cdot \left(\frac{1-p}{p}\right)^{-1}  \cdot  M_n  \\ &= (p + (1-p)) \cdot M_n   \\ &= M_n.  \end{align*} 

@@ -1,0 +1,62 @@
+\forall n : a_n\le a_{n+1}\le b_{n+1}
+a_n
+b_{n+1}.
+\forall n : b_n\ge b_{n+1}> a_{n+1}
+b_n
+a_{n+1}.
+b_n\to c_b
+a_n\to c_a
+\lim(c_b-b_n)<\frac \epsilon 2 : \lim(c_a-a_n)<\frac \epsilon 2 
+b_n\to c_a
+\lim(b_n-c_b)=\lim(b_n-a_n+a_n-c_b)\le \color{blue}{|\lim(b_n-a_n)|}+|\lim(c_b-a_n)|\le \frac \epsilon 2+\frac \epsilon 2=\epsilon
+|\lim(b_n-a_n)|\le\frac \epsilon 2
+(a_n)_{n=1}^\infty
+b_1
+a_n \leq b_n \leq b_1
+(a_n)_{n=1}^\infty
+c_a \in \mathbb{R}
+c_a:=\lim_{n\to\infty}a_n
+\sup_n a_n
+\{a_n\;|\;n\geq1\}\subset \mathbb{R}
+a_n>c_a
+n
+\varepsilon=\frac12(a_n−c_a)>0
+m \geq n
+a_m \geq a_n > c_a+ \varepsilon
+s<c_a
+(a_n)_{n=1}^\infty
+\varepsilon=\frac12(c_a−s)>0
+a_n\leq s < c_a−\varepsilon
+n
+c_b := \lim_{n\to\infty}b_n = \inf_n b_n
+\{b_n\;|\;n\geq 1\}
+a_m \leq b_n
+m
+n
+m=n
+p = \max\{m,n\}
+a_m \leq a_p \leq b_p \leq b_n
+n\geq1
+a_m \leq b_n
+m \geq 1
+b_n
+(a_m)_{m=1}^\infty
+c_a = \sup_m a_m \leq b_n
+n
+n \geq 1
+c_a
+(b_n)_{n=1}^\infty
+c_a \leq \inf_n b_n = c_b
+[c_a,c_b]
+a_n \leq c_a \leq c_b \leq b_n
+[c_a,c_b] \subset [a_n,b_n]
+n
+[c_a,c_b] \subset \bigcap_{n=1}^\infty [a_n,b_n]
+\bigcap_{n=1}^\infty [a_n,b_n] \subset [c_a,c_b]
+(a_n)_{n=1}^\infty
+(b_n)_{n=1}^\infty
+c_a \leq x \leq c_b
+\bigcap_{n=1}^\infty [a_n,b_n] = [c_a,c_b].
+|c_b-c_a| \leq |c_b-b_n|+|b_n-a_n|+ |a_n-c_a| \leq \frac{\epsilon}{3}+\frac{\epsilon}{3}+\frac{\epsilon}{3}
+\epsilon
+n

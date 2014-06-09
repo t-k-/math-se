@@ -1,0 +1,10 @@
+R\to\infty
+R
+x^2+x-2=(x+2)(x-1)
+\displaystyle \frac1{x^2+x-2}=\frac13\left(\frac1{x-1}-\frac1{x+2}\right)
+P.V. \int_0^{\infty} \frac 1{x^2+x-2}=\frac13 P.V.\int_0^{\infty} \frac1{x-1}-\frac1{x+2} dx=
+ =\frac13 \lim_{\epsilon\to 0}\left[\int_0^{1-\epsilon} \frac1{x-1}-\frac1{x+2} dx+\int_{1+\epsilon}^{\infty} \frac1{x-1}-\frac1{x+2} dx\right] 
+\lim_{R\to \infty}\log\left(\frac{R-1}{R+2}\right)=0
+ =\frac13 \lim_{\epsilon\to 0}\left[ \left[\log(1-x)-\log(x+2)\right]_0^{1-\epsilon}+ \left[\log(x-1)-\log(x+2)\right]_{1+\epsilon}^{\infty}\right] 
+ =\frac13 \lim_{\epsilon\to 0}\left[\log(\epsilon)-\log(3-\epsilon)+\log(2)-\log(\epsilon)+\log(3+\epsilon)\right] 
+ =\frac{\log(2)}3 

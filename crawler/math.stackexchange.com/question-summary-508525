@@ -1,0 +1,23 @@
+\sum\limits_{n = 1}^\infty  {\left\{ {{{\ln }^2}\left( {n - \frac{1}{4}} \right) + {{\ln }^2}\left( {n{\rm{ + }}\frac{1}{4}} \right) - {{\ln }^2}\left( {n - \frac{1}{2}} \right) - {{\ln }^2}\left( {n + \frac{1}{2}} \right)} \right\}}  = \ln 2\ln \pi  - \frac{5}{2}{\ln ^2}2
+n!\approx\left(\dfrac{n}{e}\right)^n\sqrt{2n\pi}
+\sum_{n=1}^{\infty}\left(n\ln{(\dfrac{2n+1}{2n-1})}-1\right)=\dfrac{1-\ln{2}}{2}
+\sum_{n=1}^{\infty} \frac{n^2}{2^n} = 6
+\frac{d}{ds} \frac{1}{(n+a)^s} = \ln^2(n+a) \frac{1}{(n+a)^s}
+F(s) = \sum_{n=1}^{\infty} \frac{1}{(n+1/4)^s}+\frac{1}{(n-1/4)^s}-\frac{1}{(n+1/2)^s}-\frac{1}{(n-1/2)^s}
+s
+\sum_{n=1}^{\infty}  \frac{1}{(n+1/4)^s} = 4^s \sum_{n=1}^{\infty} \frac{1}{(4n+1)^s} = 4^s\left(\sum_{n=0}^{\infty} \frac{1}{(4n+1)^s}-1\right) \tag{1}
+\sum_{n=1}^{\infty}  \frac{1}{(n-1/4)^s} = 4^s \sum_{n=0}^{\infty} \frac{1}{(4n+3)^s} \tag{2}
+\sum_{n=1}^{\infty}  \frac{1}{(n+1/2)^s} = 2^s \sum_{n=1}^{\infty}  \frac{1}{(2n+1)^s} = 2^s \left(\sum_{n=0}^{\infty}  \frac{1}{(2n+1)^s} - 1\right) \tag{3}
+\sum_{n=1}^{\infty}  \frac{1}{(n-1/2)^s} = 2^s \sum_{n=1}^{\infty}  \frac{1}{(2n-1)^s} = 2^s \sum_{n=0}^{\infty}  \frac{1}{(2n+1)^s} \tag{4}
+(1)
+(2)
+\sum_{n=1}^{\infty}  \frac{1}{(n+1/4)^s} + \sum_{n=1}^{\infty}  \frac{1}{(n-1/4)^s} = -4^s + 4^s\left(\sum_{n=0}^{\infty} \frac{1}{(4n+1)^s}+\sum_{n=0}^{\infty} \frac{1}{(4n+3)^s}\right) \\= -4^s + 4^s \sum_{n=0}^{\infty}\frac{1}{(2n+1)^s}
+(3)
+(4)
+F(s) = 2^s-4^s + (4^s-2\cdot2^s)\sum_{n=0}^{\infty}\frac{1}{(2n+1)^s}
+\zeta(s) = \sum_{n=0}^{\infty}\frac{1}{(2n+1)^s} + \sum_{n=0}^{\infty}\frac{1}{(2n)^s} = \sum_{n=0}^{\infty}\frac{1}{(2n+1)^s} + 2^{-s}\zeta(s)
+\sum_{n=0}^{\infty}\frac{1}{(2n+1)^s} = (1-2^{-s})\zeta(s)
+F(s)  =2^s-4^s + (4^s - 2\cdot 2^s)(1-2^{-s})\zeta(s) = (2^s-1)((2^s-2)\zeta(s)-2^s)
+\zeta(0) = -\frac{1}{2}
+\zeta'(0) = -\frac{1}{2}\ln 2
+F''(0) = \ln^2 2(-\zeta(0)-1)+2\ln 2(-\ln2+\ln2 \zeta(0)-\zeta'(0)) \\= -\frac{1}{2}\ln^2 2 + 2\ln 2\left(-\frac{3}{2}\ln 2 + \frac{1}{2}\ln(2\pi)\right)\\= \ln2 \ln \pi - \frac{5}{2}\ln^22

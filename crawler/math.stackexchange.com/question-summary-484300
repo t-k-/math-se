@@ -1,0 +1,9 @@
+X_1 ,\ldots,X_n,Y_1,\ldots,Y_n
+X_1Y_1+\cdots+X_nY_n
+ Z = \sum_{i=1}^n X_iY_i, 
+X_i
+Y_i
+Z
+ \mathrm E[Z] = \sum_{i=1}^n \mathrm E[X_iY_i] = \sum_{i=1}^n \mathrm E[X_i]\mathrm E[Y_i]. 
+ \mathrm{Var}[Z] = \sum_{i=1}^n \mathrm{Var}[X_iY_i] = \sum_{i=1}^n \mathrm E[Y_i]^2\mathrm{Var}[X_i]+\mathrm E[X_i]^2\mathrm{Var}[Y_i]+\mathrm{Var}[X_i]\mathrm{Var}[Y_i] 
+Z\sim\mathcal{N}(\mathrm{E}[Z],\mathrm{Var}[Z])

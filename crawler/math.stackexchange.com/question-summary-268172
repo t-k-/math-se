@@ -1,0 +1,26 @@
+Poiss(\lambda)
+k
+X
+P(Y\geq2k)
+\sum_{k=1}^{\infty}P(X=k)P_{Y|X}(Y\geq2k|X=k)
+=\sum_{k=1}^{\infty}P(X=k)\cdot P(Y\geq2k)
+=\sum_{k=1}^{\infty}P(X=k)\cdot(1-P(Y<2k))
+=\sum_{k=1}^{\infty}P(X=k)\cdot(1-\sum_{j=1}^{2k-1}P(Y=j))
+=\sum_{k=1}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{k!}\cdot(1-\sum_{j=1}^{2k-1}e^{-\lambda}\frac{\lambda^{j}}{j!}))
+Y \sim \text{Poiss}(\lambda)
+X \sim \text{Poiss}(\lambda)
+\displaystyle \mathbb{P}(Y \ge 2 X) = \sum_{x = 0}^{\infty} \sum_{y = 2x}^{\infty} f_X(x) \frac{1}{2} f_Y \left( \frac{1}{2} y \right )
+f_Y(y) = 0
+y \not \in \mathbb{N}_0
+y = 2x + 2u
+\displaystyle = \frac{1}{2} \sum_{x = 0}^{\infty} \sum_{u = 0}^{\infty} f_X(x) f_Y (x + u )
+\left ( f_X \star f_Y \right )(u)
+\displaystyle = \frac{1}{2} \sum_{u = 0}^{\infty} \left ( f_X \star f_Y \right )(u)
+\displaystyle f_S(x) = e^{-(\lambda_1 + \lambda_2)} \left ( \frac{\lambda_1}{\lambda_2} \right ) ^ {x/2} I_{\lvert x \rvert}(2 \sqrt{\lambda_1 \lambda_2})
+\displaystyle f_S(x) = e^{-2 \lambda } I_{\lvert x \rvert}(2 \lambda )
+\lambda > 0
+I_{x}(\cdot)
+\displaystyle = \frac{1}{2} e^{-2 \lambda } \sum_{u = 0}^{\infty} I_{\lvert u \rvert}(2  \lambda )
+\displaystyle \sum_{k = 1}^{\infty} I_{k}(x)
+\frac{1}{2} \left ( e^x - I_0(x) \right )
+\displaystyle \mathbb{P}(Y \ge 2 X) = \frac{1}{4}  \left ( 1 + e^{-2 \lambda } I_0(2 \lvert \lambda \rvert) \right ) \quad \square

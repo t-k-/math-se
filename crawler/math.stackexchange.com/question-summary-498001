@@ -1,0 +1,66 @@
+u
+v
+w =\|v\|u + \|u\|v
+\theta
+u
+v
+\alpha
+u
+w
+\beta
+v
+w
+w
+\theta
+\mathbb{R}^2
+\mathbb{R}^2
+w = \|u\| \|v\| ( \frac{u}{\|u\|} + \frac{v}{\|v\|} )
+u,v
+u=v
+w=2u
+u=-v
+w=0
+u,v
+b_1 = \frac{u+v}{\|u+v\|}
+b_2 = \frac{u-v}{\|u-v\|}
+u = \frac{\|u+v\|}{2} b_1 + \frac{\|u-v\|}{2} b_2
+v = \frac{\|u+v\|}{2} b_1 - \frac{\|u-v\|}{2} b_2
+w = \|u+v\| b_1
+Q
+Q b_1 = v
+J
+Jb_1 = b_2, Jb_2 = -b_1
+Qx=x,Jx=x
+x \in \operatorname{sp} \{ b_1, b_2 \}^\bot 
+Q,J
+Q b_2 = Q J b_1 = J Q b_1
+Q
+b_1
+z
+\operatorname{sp} \{ b_1, b_2 \}^\bot 
+Q^T b_1 = u
+Q(\alpha_1 b_1 + \alpha_2 b_2 +z) = (\alpha_1 \frac{\|u+v\|}{2} + \alpha_2 \frac{\|u-v\|}{2}) b_1 + (-\alpha_1 \frac{\|u+v\|}{2} + \alpha_2 \frac{\|u-v\|}{2}) b_2 + z
+Q^T(\alpha_1 b_1 + \alpha_2 b_2 +z) = (\alpha_1 \frac{\|u+v\|}{2} - \alpha_2 \frac{\|u-v\|}{2}) b_1 + (\alpha_1 \frac{\|u+v\|}{2} + \alpha_2 \frac{\|u-v\|}{2}) b_2 + z
+Q \frac{w}{\|w\|} = v
+Q^T \frac{w}{\|w\|} = u
+Q^T
+Q
+2 \pi
+\cos (-\theta) = \frac{\|u+v\|}{2}
+\sin(-\theta) = \frac{\|u-v\|}{2}
+-\theta
+Q b_1 = v
+b_1,b_2
+\cos \alpha=\frac{\langle u,w\rangle}{||u||\,||w||}=\frac{\langle u,||v||u+||u||v\rangle}{||u||\,||w||}=\frac{||u||^2\,||v||+||u||\langle u,v\rangle}{||u||\,||w||}
+\cos\beta=\frac{\langle v,w\rangle}{||v||\,||w||}=\frac{\langle v,||v||u+||u||v\rangle}{||v||\,||w||}=\frac{||v||\langle v,u\rangle+||u||\,||v||^2}{||v||\,||w||}
+\cos\alpha=\cos\beta\iff
+\iff ||u||^2||v||^2||w||+||u||\,||v||\,||w||\langle u,v\rangle=||u||^2||v||^2||w||+||u||\,||v||\,||w||\langle v,u\rangle 
+u\cdot w=|u||w|\cos \alpha
+v\cdot w=|v||w|\cos \beta
+u\cdot w=u\cdot (|v|u+|u|v)=|u|^2|v|+|u|(u\cdot v)=|u|(|u||v|+u\cdot v)
+v\cdot w=v\cdot (|v|u+|u|v)=(u\cdot v)|v|+|u||v|^2=|v|(|u||v|+u\cdot v)
+\cos \alpha = \cos \beta
+\alpha, \beta\in[0,\pi/2]
+u\cdot w>0
+v\cdot w>0
+\theta

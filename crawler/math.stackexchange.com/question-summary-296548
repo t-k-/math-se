@@ -1,0 +1,6 @@
+ \int_0^{\pi} \frac{x \sin x}{1+(\cos x)^2}
+\begin{align}\int_0^{\pi} dx\: \frac{x \sin x}{1+(\cos x)^2} &= -\int_0^{\pi} d(\cos{x})\: \frac{x}{1+(\cos x)^2}\\ &= -[x \arctan{\cos{x}}]_0^{\pi} + \underbrace{\int_0^{\pi} dx \:\arctan{\cos{x}}}_{\mathrm{this} = 0} \\ &= \frac{\pi^2}{4} \end{align}
+I=\int_0^{\pi} \frac{x \sin x}{1+(\cos x)^2}\mathrm{dx}=-\int_{0}^{\pi} \frac{ y\sin y}{1+(\cos y)^2}\mathrm{dy}+\pi\int_0^{\pi}\frac{\sin y}{1+(\cos y)^2}\mathrm{dy}
+I=-\frac{\pi}{2}\int_0^{\pi}\frac{(\cos x)'}{1+(\cos x)^2}\mathrm{dx}
+I=\frac{\pi}{2}[-\arctan(\cos x)]_0^{\pi/2}=\frac{\pi^2}{4}
+\int_0^\pi xf(\sin x )\mathrm{dx}=\frac \pi2\int_0^\pi f(\sin x )\mathrm{dx}

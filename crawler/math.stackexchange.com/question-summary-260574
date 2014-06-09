@@ -1,0 +1,15 @@
+\gamma_+
+-i-R
+-i+R
+-i+Re^{i\theta}
+\theta\in[0,\pi]
+R\to\infty
+\gamma_-
+-i-R
+-i+R
+-i+Re^{-i\theta}
+\theta\in[0,\pi]
+R\to\infty
+ \begin{align} \int_0^\infty\frac{\sin^2(x)}{x^2}\,\mathrm{d}x &=\frac12\int_{-\infty}^\infty\frac{\sin^2(x)}{x^2}\,\mathrm{d}x\\ &=-\frac18\int_{-i-\infty}^{-i+\infty}\frac{e^{2ix}+e^{-2ix}-2}{x^2}\,\mathrm{d}x\\ &=-\frac18\left(\int_{\gamma_+}\frac{e^{2ix}-1}{x^2}\,\mathrm{d}x +\int_{\gamma_-}\frac{e^{-2ix}-1}{x^2}\,\mathrm{d}x\right)\tag{1} \end{align} 
+(1)
+\int_{0}^{\infty}\frac{(\sin x)^2}{x^2}dx=-\int_{0}^{\infty}(\sin x)^2{d\frac{1}{x}}=-\frac{(\sin x)^2}{x}\Bigg|^{\infty}_{0}+\int_{0}^{\infty}\frac{(2\sin x\cos x)}{x}dx=\int_{0}^{\infty}\frac{(\sin2x)}{2x}d2x=\ldots

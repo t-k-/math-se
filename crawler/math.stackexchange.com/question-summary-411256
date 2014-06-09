@@ -1,0 +1,24 @@
+n \ge 3
+f(n) = \sum_{k=3}^n {n \choose k}{k-1 \choose 2}.
+f
+\binom{n}k\binom{k-1}2=\frac12\binom{n}k(k-1)(k-2)\;,
+(k-1)(k-2)
+x^{k-1}
+g(x)=\sum_{k=3}^n\binom{n}kx^{k-1}
+x
+g''(x)=\sum_{k=3}^n\binom{n}k(k-1)(k-2)x^{k-2}\;:
+f(n)=\frac12g''(1)
+g(x)
+g(x)
+g(x)=\frac1x\sum_{k=3}^n\binom{n}kx^k\;,
+\sum_{k=0}^n\binom{n}kx^k
+x=1
+\frac{(1+x)^n-1}{x}.
+(1)
+(2)
+(3)
+ \begin{align} \sum_{k=m}^n\binom{n}{k}\binom{k}{m} &=\sum_{k=m}^n\binom{n}{m}\binom{n-m}{k-m}\\ &=\binom{n}{m}2^{n-m}\tag{1} \end{align} 
+ \binom{k-1}{2}=\binom{k}{2}-\binom{k}{1}+\binom{k}{0}\tag{2} 
+ \binom{k-1}{2}=\left\{\begin{array}{} 0&\text{for }k\in\{1,2\}\\ 1&\text{for }k=0 \end{array}\right.\tag{3} 
+ \begin{align} \sum_{k=3}^n\binom{n}{k}\binom{k-1}{2} &=-\binom{n}{0}\binom{-1}{2}+\sum_{k=0}^n\binom{n}{k}\binom{k-1}{2}\\ &=-1+\sum_{k=0}^n\binom{n}{k}\left(\binom{k}{2}-\binom{k}{1}+\binom{k}{0}\right)\\ &=-1+\binom{n}{2}2^{n-2}-\binom{n}{1}2^{n-1}+\binom{n}{0}2^{n-0}\\[9pt] &=(n^2-5n+8)2^{n-3}-1\tag{4} \end{align} 
+\sum_{k=3}^n\binom{n}{k}\binom{k-1}{2}=2^{n-3}n^2-5\cdot2^{n-3}n+2^n-1

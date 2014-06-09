@@ -1,0 +1,14 @@
+\alpha
+f(x)= x^{\alpha}
+0 < x \leq 1
+f(0) = 0
+\int_0^1 f
+-1<\alpha<0 
+\epsilon = -\alpha
+t\leq 1
+t>1
+x^{\alpha}
+ \int^1_0 x^{\alpha}\,dx = \int^{\infty}_0 \mathrm{meas}(\{x\in (0,1] : x^{\alpha} > t\})\,dt.\tag{1} 
+ \mathrm{meas}(\{x\in (0,1] : x^{\alpha} > t\}) =\mathrm{meas}\big((0,1]\big)= 1, 
+\mathrm{meas}(\{x\in (0,1] : x^{\alpha} > t\}) =\mathrm{meas}\big((0,t^{-1/\epsilon})\big) = t^{-1/\epsilon}, 
+ \int^1_0 x^{\alpha}\,dx = \int^1_0 1\,dt + \int^{\infty}_{1}t^{-1/\epsilon}\,dt = 1 - \frac{1}{-1/\epsilon + 1} = \frac{1}{1+\alpha}. 

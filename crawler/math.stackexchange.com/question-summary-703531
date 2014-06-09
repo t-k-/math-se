@@ -1,0 +1,12 @@
+ (X_1,...,X_d) = (Q_1^{1/2}Z_1,...,Q_d^{1/2}Z_d), \\ Q_j^{-1} = 2\nu_j^{-1}F_\Gamma^\leftarrow(V; \nu_j/2) \text{ for } j=1,...,d \\ V\sim Unif(0,1) \\ \mathbf{Z} = (Z_1, ... Z_d) \sim Normal_d(0, \mathbf{R}) \\ V \perp \mathbf{Z} 
+F_\Gamma(\cdot ;\mathcal{v})
+v
+F_\Gamma^\leftarrow
+\mathbf{R}
+Q_j^{-1}\sim Gamma(\nu_j/2, \ 2/\nu_j)
+j=1,...,d
+Q_j^{1/2}Z_j \sim t_{\nu_j}
+(X_1,...,X_d)
+\nu_1=...=\nu_d=\nu
+t_\nu
+ F_{X_1,...,X_d}(x_1,...,x_d) = P(X_1 \leq x_1, ..., X_d \leq x_d) \\ = P(Q_1^{1/2}Z_1 \leq x_1, ..., Q_d^{1/2}Z_d \leq x_d) \\ = \int_0^1 P(Q_1^{1/2}Z_1 \leq x_1, ..., Q_d^{1/2}Z_d \leq x_d | V=v) f_V(v) dv \\ = \int_0^1 P(q_1^{1/2}Z_1 \leq x_1, ..., q_d^{1/2}Z_d \leq x_d) dv \\ = \int_0^1 P(q_1^{1/2}Z_1 \leq x_1, ..., q_d^{1/2}Z_d \leq x_d) dv \\ = \int_0^1 P(Z_1 \leq x_1 q_1^{-1/2}, ..., Z_d \leq x_d q_d^{-1/2}) dv 

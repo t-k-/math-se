@@ -1,0 +1,21 @@
+\left\{ U_{\phi, x, \delta} \,\left|\, \begin{array}{c} \phi \colon S \to \mathbb{R} \text{ is bounded and continuous,} \\ x \in \mathbb{R} \text{ and } \delta > 0 \end{array} \right. \right\}
+U_{\phi, x, \delta} := \left\{ \mu \in \boldsymbol{P}(S) \,:\, \left| \int_{S} \phi \, \mathrm{d} \mu - x \right| < \delta \right\}."
+\nu\in\boldsymbol{P}(S)
+\delta
+\phi
+x=\int \phi d\nu
+\displaystyle\left| \int_{S} \phi_1 \, \mathrm{d} \nu - x_1 \right| < \delta_1
+\displaystyle\left| \int_{S} \phi_2 \, \mathrm{d} \nu - x_2 \right| < \delta_2
+\delta^\ast, x^\ast\in\mathbb{R}
+\phi^\ast
+\displaystyle\left| \int_{S} \phi^\ast \, \mathrm{d} \nu - x^\ast \right| < \delta^\ast
+\varphi_1:=\phi_1-x_1
+\varphi_2:=\phi_2-x_2
+\varphi^*:=|\varphi_1|+|\varphi_2|=|\phi_1-x_1|+|\phi_2-x_2|
+\phi_1
+\phi_2
+\delta^*:=\min(\delta_1,\delta_2)
+x^*=0
+\displaystyle\left|\int_S\varphi^*\mathrm d\nu-x^*\right|\leq\delta^*
+\left|\int_S\phi_1\mathrm d\nu-x_1\right| =\left|\int_S(\phi_1-x_1)\mathrm d\nu\right|\leq\int_S|\phi_1-x_1|\mathrm d\nu\leq\int_S \varphi^*\mathrm d\nu\leq\delta^*\leq\delta_1
+\left|\int_S\phi_2\mathrm d\nu-x_2\right| =\left|\int_S(\phi_2-x_2)\mathrm d\nu\right|\leq\int_S|\phi_2-x_2|\mathrm d\nu\leq\int_S \varphi^*\mathrm d\nu\leq\delta^*\leq\delta_2,

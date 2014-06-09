@@ -1,0 +1,22 @@
+P(n, k, a, b)
+n
+k
+a
+b
+P(28, 19, 1, 2)
+P(30, 10, 2, 7)
+P(n, 19, 1, 2)
+ (x + x^2)^{19} = x^{19}(x+1)^{19} = x^{19}\bigg( {19\choose 0} + \ldots + {19\choose 9}x^9 + \ldots + {19 \choose 19}x^{19} \bigg) 
+x^{28}
+{19 \choose 9}
+P(n, 10, 2, 7)
+ (x^2 + x^3 + x^4 + x^5 + x^6 + x^7)^{10} = x^{20}(1 + x + x^2 + x^3 + x^4 + x^5)^{10}. 
+x^{10}
+85228
+{19 \choose 9} = 92378
+(1+x+x^2+x^3+x^4+x^5)^{10}
+\left({1-x^6\over 1-x}\right)^{10}=(1-x^6)^{10}(1-x)^{-10} =\sum_{j=0}^\infty {10\choose j}(-1)^j x^{6j}  \,\sum_{k=0}^\infty {9+k\choose k} x^k.
+6j+k=10
+j=0,k=10
+j=1,k=4
+{10\choose 0}{19\choose 10}-{10\choose 1}{13\choose 4}=85228. 

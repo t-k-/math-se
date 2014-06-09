@@ -1,0 +1,33 @@
+\chi^2
+Z_{1}, ..., Z_{v}
+v
+N(0,1)-
+\chi_{v}^2 = Z_{1}^2 + ... + Z_{v}^2
+v = 1
+F_{\chi_{1}^2}(x) = F_{1}(x)
+F_{1}(x) = P(Z_{1}^2 \leq x) = P(-\sqrt{x} \leq Z_{1} \leq \sqrt{x}) = 2\Phi(\sqrt{x}) - 1, 
+x \geq 0
+\Phi(x)
+f_{1}(x) = x^{-\frac{1}{2}}\phi(\sqrt{x}) = C_{1}x^{-\frac{1}{2}}e^{-\frac{1}{2}x}
+x \geq 0
+C_{1} = \frac{1}{\sqrt{2\pi}}
+Z_{1}^2 + Z_{2}^2
+v = 2
+Z_{1}^2
+Z_{2}^2
+P(Z_{1}^2 + Z_{2}^2 \leq x)
+Z_{1}^2
+Z_{2}^2
+u = xt
+P(Z_1^2 + Z_2^2 \leq x) = E[ 1_{Z_1^2 + Z_2^2 \leq x}]
+ = \int_0^{+\infty} \int_0^{+\infty} 1_{u+v\leq x} f_1(u) f_1(v) du dv
+ = \int_0^{+\infty} \int_0^{+\infty} 1_{u \leq x-v} f_1(u) du f_1(v) dv
+ = \int_0^{+\infty} F_1(x-v) 1_{v \leq x} f_1(v) dv
+ = \int_0^{x} F_1(x-v) f_1(v) dv
+1_{v \leq x}
+F_1(x-v)
+x \geq v
+f_2(x) = \frac{d}{dx} P(Z_1^2 + Z_2^2 \leq x)
+f_2(x) = \int_0^{x} f_1(x-v) f_1(v) dv
+f_2(x) = C_1^2 \int_0^{x} \sqrt{u(x-u)} dv e^{-\frac{1}{2}x}
+f_2(x) = C_1^2 \int_0^{1} \sqrt{t(1-t)} dt e^{-\frac{1}{2}x}

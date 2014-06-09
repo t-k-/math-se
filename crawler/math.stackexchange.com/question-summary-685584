@@ -1,0 +1,25 @@
+F(x) = aF(x-k+1) + bF(x-k+2) + cF(x-k+4) + dF(x-k+7)
+F(x) = 1
+x<k
+a,b,c,d,k
+x
+k=4
+k=4
+d F(x-4+7)
+d \neq 0
+F(x+3)
+F(x-k+4)
+c=1
+k>7
+k=8
+F(x) = a F(x-7) + b F(x-6)+cF(x-4)+d F(x-1)
+F(x-7)
+G(x) = \pmatrix{F(x)\\F(x-1)\\F(x-2)\\F(x-3)\\F(x-4)\\F(x-5) \\ F(x-6)} 
+G(x-1) = \pmatrix{F(x-1)\\F(x-2)\\F(x-3)\\F(x-4)\\F(x-5) \\ F(x-6)\\F(x-7)} 
+ G(x) = \pmatrix{ d & 0&0&c&0&b&a\\ 1 & 0&0&0&0&0&0\\ 0&1 & 0&0&0&0&0\\ 0&0&1 & 0&0&0&0\\ 0&0&0&1 & 0&0&0\\ 0&0&0&0&1 & 0&0\\ 0&0&0&0&0 & 1&0\\ } G(x-1)
+k=5
+x
+x-2
+ F(x) = a F(x-4)+bF(x-3)+cF(x-1)+dF(x+2)
+ F(x-2)=a F(x-6)+bF(x-5)+c F(x-3)+d F(x)
+ F(x) = \frac{1}{d} F(x-2)-\frac a d F(x-6) -\frac b d F(x-5) -\frac c d F(x-3) 

@@ -1,0 +1,33 @@
+Y_0=0
+Y_1,Y_2,\ldots
+P[Y_i=1]=p
+P[Y_i=-1]=1-p
+p\in(0,1)
+X_n:=\sum_{i=0}^n Y_i
+p=\frac{1}{2}
+(X_n)_{n\in\mathbb{N}}
+\mathcal{F}_n^X:=\sigma(X_0,\ldots,X_n)
+E[X_{n}\mid\mathcal{F}_{s}]=X_{s}
+n\geq s
+A\in\mathcal{F}_{s}
+\int_{A}E[X_{n}\mid\mathcal{F}_{s}]=\int_{A}X_{n}\, dP=\int_{A}\, X_{s}\, dP
+p=\frac{1}{2}
+E[X_{n+1}\mid\mathcal{F}_{n}]=X_{n}
+X_{n+1}=X_{n}+Y_{n+1}
+E[X_{n+1}\mid\mathcal{F}_{n}]=E[X_{n}+Y_{n+1}\mid\mathcal{F}_{n}]=E[X_{n}\mid\mathcal{F}_{n}]+E[Y_{n+1}\mid\mathcal{F}_{n}]
+X_{n}
+\mathcal{F}_{n}
+E[X_{n}\mid\mathcal{F}_{n}]=X_{n}
+E[Y_{n+1}\mid\mathcal{F}_{n}]=0
+P
+p=\frac{1}{2}
+A\in\mathcal{F}_{n}
+\int_{A}E[Y_{n+1}\mid\mathcal{F}_{n}]\, dP=\int_{A}Y_{n+1}\, dP
+\int_{A}Y_{n+1}\, dP=0
+P[Y_{n+1}=1]=\frac{1}{2}
+P[Y_{n+1}=-1]=\frac{1}{2}
+p<\frac{1}{2}
+\int_{A}\, Y_{n+1}\, dP<0
+E[X_{n+1}\mid\mathcal{F}_{n}]<X_{n}
+(X_{n})_{n\in\mathbb{N}}
+p>\frac{1}{2}

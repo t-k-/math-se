@@ -1,0 +1,8 @@
+1.\int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}g(t)h(x-t)dt\right)e^{-i2 \pi k x}dx=\int_{-\infty}^{\infty}g(x)e^{-i2 \pi k x}dx\int_{-\infty}^{\infty}h(x)e^{-i2 \pi k x}dx
+2.\int_{-\infty}^{\infty}g(x)h(x)e^{-i2 \pi k x}dx=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x)e^{-i2 \pi t x}dx \int_{-\infty}^{\infty}f(x)e^{-i2 \pi (k-t) x}dx dt?
+1.f(x)=g(x)\otimes h(x)\Leftrightarrow F(k)=G(k)H(k)
+2.f(x)=g(x) h(x)\Leftrightarrow F(k)=G(k) \otimes H(k).
+g(x)\otimes h(x)=\int_{-\infty}^{\infty}g(t)h(x-t)dt
+f(x)=\int_{-\infty}^{\infty}F(k)e^{i2\pi k x}dk \Leftrightarrow F(k)=\int_{-\infty}^{\infty}f(x)e^{-i2 \pi k x}dx.
+x-t=y
+ = \int_{-\infty}^{\infty}g(t)\int_{-\infty}^{\infty}h(y)e^{-i2 \pi k (y+t) }dy dt = \int_{-\infty}^{\infty}g(t)e^{-i2 \pi k t }dt\int_{-\infty}^{\infty}h(y)e^{-i2 \pi k y } dy \,. 

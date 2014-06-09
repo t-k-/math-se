@@ -1,0 +1,25 @@
+k
+P_k(x)
+k
+\mathbb{Q}(q)
+P_k(q^n)=\binom{n}{k}_q
+n
+\binom{n}{k}_q
+q
+P_k(q^n)
+q^n
+[0]_q=0
+[a+b]_q=[a]_q+q^a[b]_q
+a,b\in\mathbb{N}
+a=n-i
+b=1+i
+[n-i]_q=[n]_q-q^{n-i}[1+i]_q
+0 \leq i \leq k < n
+c_i=[1+i]_q\in\mathbb{Q}(q)
+deg(P_k)=k
+ [n]_q = \sum_{i=0}^{n-1}\;q^i = \frac{1-q^n}{1-q} = f(q^n) \qquad\text{for}\qquad 0 < n \in \mathbb{N} \qquad\text{and}\qquad f(x) = \frac{1-x}{1-q} \in \mathbb{Q}(q)[x] 
+ \binom{n}{k}_q = \prod_{i=0}^{k-1}\frac{[n-i]_q}{[1+i]_q} = \prod_{i=0}^{k-1}\frac{[n]_q-q^{n-i}[1+i]_q}{[1+i]_q} = P_k(q^n) %\qquad\text{for}\qquad %[m]_q! = \prod_{h=1}^{m} [h]_q 
+ P_k(x) =\prod_{i=0}^{k-1}\frac{f(x)-x\cdot c_i q^{-i}}{c_i} =\prod_{i=0}^{k-1}\left(\frac{f(x)}{c_i}-\frac{x}{q^i}\right) \in \mathbb{Q}(q)[x] 
+ P_k(x) = \prod_{i=1}^{k} \frac{1 - x (1+q-q^{1-i})}{1-q^i}. 
+q
+   \binom{n}{k}_q = q^k \binom{n-1}{k}_q + \binom{n-1}{k-1}_q, 

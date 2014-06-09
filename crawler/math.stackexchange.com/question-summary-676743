@@ -1,0 +1,26 @@
+B_n
+\kappa
+\mathbb{R}^3
+0 \leq x \leq a
+T(x,t)
+x = 0
+x = a
+T(x,0) = 0.
+T
+U
+U(x,t) = T(x,t) - \frac{x}{a},
+\frac{\partial{U}}{\partial{t}} = \kappa\,\frac{\partial^2{U}}{\partial{x^2}},
+t > 0
+B_n
+T(x,t) = \frac{x}{a} + \sum_{n=1}^\infty B_n \exp\left(-\frac{n^2 \pi^2 \kappa t}{a^2}\right) \sin\left(\frac{n\pi x}{a}\right)
+T
+T(x,0)=0
+U
+U(x,0)=-x/a
+U(x,t) = \sum_{n=1}^{\infty} B_n e^{-n^2 \pi^2 \kappa t/a^2} \sin{\left ( \frac{n \pi x}{a}\right )}
+U(x,0) = \sum_{n=1}^{\infty} B_n \sin{\left ( \frac{n \pi x}{a}\right )}
+u
+B_n
+B_n = \frac{2}{a} \int_0^a dx \, \left ( -\frac{x}{a} \right ) \sin{\left ( \frac{n \pi x}{a}\right )} = -\frac{2}{a^2} \int_0^a dx \; x \sin{\left ( \frac{n \pi x}{a}\right )}
+U(x,0)=-x/a
+ \begin{gather} B_n=\frac{2}{a}\int\limits_0^a U(x,0)\sin{\biggl(\frac{n{\pi}x}{a}\biggr)}dx= -\frac{2}{a^2}\int\limits_0^a x\sin{\biggl(\frac{n{\pi}x}{a}\biggr)}dx=\\ =\frac{2}{an\pi}\int\limits_0^a x\,d\cos{\biggl(\frac{n{\pi}x}{a}\biggr)}= \frac{2}{an\pi}x\cos{\biggl(\frac{n{\pi}x}{a}\biggr)}\biggr|_0^a-\frac{2}{an\pi} \int\limits_0^a \cos{\biggl(\frac{n{\pi}x}{a}\biggr)}dx=\\ =\frac{2}{n\pi}\cos{(n\pi)}-\frac{2}{n^2{\pi}^2}\sin{\biggl(\frac{n{\pi}x}{a}\biggr)} \biggr|_0^a=\frac{2(-1)^n}{n\pi}. \end{gather} 

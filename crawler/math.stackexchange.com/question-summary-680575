@@ -1,0 +1,4 @@
+\sigma(t): x=r\cos(t), y=r\sin(t),\; \alpha\leq t\leq \beta
+\mathrm{dist}((x_{1},y_{1}),(x_{2},y_{2}))=\int_{\alpha}^{\beta}\rho(\sigma(t))|\sigma'(t)|dt=\int_{\alpha}^{\beta}\frac{dt}{\sin(t)}=\ln\left|\frac{\tan\frac{\beta}{2}}{\tan\frac{\alpha}{2}}\right|
+\mathrm{dist}((x_{1},y_{1}),(x_{2},y_{2}))=\mathrm{arccosh}\left(1+\frac{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}{2y_{1}y_{2}}\right)
+\mathrm{dist}((z_{1},z_{2}))=2\mathrm{arctanh}\frac{|z_{1}-z_{2}|}{|z_{1}-\overline{z_{2}}|}=\log\frac{|z_{1}-\overline{z_{2}}|+|z_{1}-z_{2}|}{|z_{1}-\overline{z_{2}}|-|z_{1}-z_{2}|}

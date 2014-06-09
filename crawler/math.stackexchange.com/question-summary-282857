@@ -1,0 +1,25 @@
+T
+T \vdash \varphi
+T \vdash \Box\varphi
+T \vdash \Box\mathsf{(\varphi \to \psi)} \to (\Box\varphi \to \Box\psi)
+T \vdash \Box\varphi \to \Box\Box\varphi
+M
+\tau
+\ulcorner M\urcorner
+[T]
+\alpha
+\beta
+\mathtt{App}_{\alpha,\beta}
+[\alpha\to\beta]\to[\alpha]\to[\beta]
+\alpha
+\mathtt{Lift}_{[\alpha]}
+[\alpha]\to\Big[[\alpha]\Big]
+\gamma \equiv \Box\gamma\to\bot
+\mathtt{p}: \gamma\to[\gamma]\to\bot
+\mathtt{Explode}:\bot\to\alpha
+\alpha
+\beta\eta
+\lambda x.\ulcorner \mathtt p\;\llcorner x\lrcorner\;\llcorner \mathtt{Lift}\;x\lrcorner\urcorner ~:~ [\gamma]\to[\bot] 
+ \lambda x:\ulcorner \mathtt{Explode}\;\llcorner x \lrcorner\urcorner ~:~ [\bot]\to[\gamma] 
+\delta\equiv\Box\neg\delta
+\tau

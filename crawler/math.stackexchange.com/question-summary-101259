@@ -1,0 +1,17 @@
+F: (\Bbb{R}^3,\times) \to (so(3),[,]),\ F(v)=\begin{pmatrix}0&-v_3&v_2 \\ v_3& 0&-v_1\\ -v_2&v_1&0 \end{pmatrix}=\hat{v}
+w \in \Bbb{R}^3
+\hat{v}w=v \times w
+A \in O(3)
+Ad_A \hat{v}=\widehat{Av}
+A\hat v A^{-1}=\widehat{Av}
+\text{^}
+O(3)
+\exp(\hat w)
+\hat w \in so(3)
+-I
+-I
+A = \exp(\hat w)
+ Ad_A \hat v = \exp(ad_{\hat w} v) = \hat v + [\hat w, \hat v] + \frac{1}{2} [\hat w, [\hat w, \hat v]] + \cdots = \hat v + F(w \times v) +\frac{1}{2} F(w \times (w \times v)) + \cdots 
+ = F(v) + F(\hat w v) + \frac{1}{2}F(\hat w^2 v) + \cdots = F(v + \hat w v + \frac{1}{2}\hat w^2 v + \cdots ) = F(\exp(\hat w) v) = \widehat{Av}. 
+A = -I
+A \in SO(3)

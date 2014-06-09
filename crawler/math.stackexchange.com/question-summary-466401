@@ -1,0 +1,140 @@
+F_n
+n
+\sigma(n)
+n
+n
+\sigma(n)>\sigma(m) \hspace{3mm} \forall m<n
+F_q
+q
+F_p
+p
+4
+1, 1, 2, 3, 8, 144
+1, 2, 3, 4, 6, 12
+3
+3
+3
+F_3=2
+16
+6
+10
+16
+12
+15
+F_{12}=144
+F_{15}=610
+6
+10
+3
+10
+10
+6
+4
+6
+F_6=8
+F_{12}=144
+\begin{align} (p-1)^2\left(\sigma(p^k)\sigma(p^r) - \sigma(p^{k+r})\right) &= (p^{k+1}-1)(p^{r+1}-1) - (p^{k+r+1}-1)(p-1)\\ &= p^{k+r+2}-p^{k+1}-p^{r+1}+1-p^{k+r+2}+p^{k+r+1}+p-1\\ &= p^{k+r+1}-p^{k+1}-p^{r+1}+p\\ &= p(p^k-1)(p^r-1)\\ &> 0. \end{align}
+p^2
+\sigma(p^2-1) \geqslant (p^2-1) + \frac{p^2-1}{2} + 2 + 1 = p^2 + \frac{p^2+1}{2} + 1 > p^2+p+1 = \sigma(p^2)
+3 \leqslant p < q
+p,q
+\begin{align} \sigma(pq-1) &\geqslant (pq-1) + \frac{pq-1}{2} + 2 + 1\\ &= pq + \frac{pq+1}{2} +1\\ &= pq+p+q+1 + \frac{pq-2p-2q+1}{2}\\ &= pq+p+q+1 + \frac{(p-2)(q-2)-3}{2}\\ &\geqslant pq+p+q+1 = \sigma(pq). \end{align}
+5 \mid n
+m = 4\frac{n}{5} < n
+\sigma(m) = 7\sigma(n/5) > 6\sigma(n/5) \geqslant \sigma(n)
+n
+9\mid n
+m = 8\frac{n}{9} < n
+\sigma(m) = 15\sigma(n/9) > 13\sigma(n/9) \geqslant \sigma(n)
+n
+\geqslant 7
+3
+p > 5
+n
+2^a < p < 2^{a+1}
+p < 2^{a+1}-1
+m = 2^a\frac{n}{p} < n
+\sigma(m) = (2^{a+1}-1)\sigma(n/p) \geqslant (p+1)\sigma(n/p) \geqslant \sigma(n)
+n
+p = 2^{a+1}-1
+m = 2^{a-1}\cdot 3\cdot\frac{n}{p} < n
+\begin{align} \sigma(m) &= (2^a-1)\cdot 4\cdot \sigma(n/p)\\ &= (2^{a+2}-4)\sigma(n/p)\\ &> 2^{a+1}\sigma(n/p)\\ &\geqslant (p+1)\sigma(n/p) \geqslant \sigma(n) \end{align}
+3\not\mid n
+n = 3\cdot k
+\begin{align} \sigma(m) &= (2^a-1)\cdot 13 \cdot \sigma(k/p)\\ &= (2^{a+3} + 5\cdot 2^a - 13)\sigma(k/p)\\ &\geqslant 2^{a+3}\sigma(k/p)\\ &= 4(p+1)\sigma(k/p)\\ &\geqslant \sigma(n). \end{align}
+n = 2^k\cdot m > 20
+k\geqslant 1
+m > 1
+m \not\equiv 0\pmod{3}
+n
+n
+p > 5
+3^a < p < 3^{a+1}
+p
+3^{a+1}
+3^{a+1}-1 \geqslant p+1
+p/3 < 3^a < p/2
+3^a = \frac{p+1}{2}
+a \geqslant 2
+p \geqslant 17
+3^{a-1}5n/p < n
+\begin{align} \sigma(2^{k+1}3^am/p) &= (2^{k+2}-1)\frac{3^{a+1}-1}{2}\sigma(m/p)\\ &> (2^{k+1}-1)(p+1)\sigma(m/p)\\ &\geqslant \sigma(2^km) = \sigma(n). \end{align}
+\begin{align} \sigma(3^{a-1}5n/p) &\geqslant \frac{3^a-1}{2}\cdot 5\cdot\sigma(n/p)\\ &= 5\frac{p-1}{4}\sigma(n/p)\\ &\geqslant (p+1)\sigma(n/p) \geqslant \sigma(n). \end{align}
+(p+1)/2 < 3^a < 3p/4
+a \geqslant 2
+\begin{align} \sigma(2^{k+2}3^{a-1}m/p) &= (2^{k+3}-1)\frac{3^a-1}{2}\sigma(m/p)\\ &\geqslant (2^{k+3}-1)\frac{p+1}{4}\sigma(m/p)\\ &> (2^{k+1}-1)(p+1)\sigma(m/p)\\ &\geqslant (2^{k+1}-1)\sigma(m) = \sigma(n). \end{align}
+\frac{3p}{4} < 3^a < p
+p \geqslant 11
+\begin{align} \sigma(3^an/p) &= \frac{3^{a+1}-1}{2}\sigma(n/p)\\ &\geqslant \frac{9p-1}{8}\sigma(n/p)\\ &> (p+1)\sigma(n/p) \geqslant \sigma(n). \end{align}
+n = 2^k\cdot 5^m
+m \geqslant 2
+\begin{align} \sigma(2^{k+3}\cdot 3\cdot 5^{m-2}) &= (2^{k+4}-1)\cdot 4 \cdot \sigma(5^{m-2})\\ &= \left(32(2^{k+1}-1) + 28\right)\sigma(5^{m-2})\\ &> (2^{k+1}-1)31\sigma(5^{m-2}) \geqslant \sigma(2^k5^m). \end{align}
+n = 2^k\cdot 5
+k \geqslant 3
+\sigma(2^{k-1}\cdot 3^2)-\sigma(2^k\cdot 5) = 13(2^k-1) - 6(2^{k+1}-1) = 2^k - 7 > 0,
+\begin{align} 31\cdot \frac{3^{a-1}-1}{2} &> 3\cdot\frac{3^{a+1}-1}{2}\\ \iff 31\cdot 3^{a-1} - 31 &> 27\cdot 3^{a-1} - 3\\ \iff 4\cdot 3^{a-1} &> 28\\ \iff 3^{a-1} &> 7, \end{align}
+a \geqslant 3
+n
+\sigma(2^4\cdot 3^{a-2}m) > \sigma(2\cdot 3^am)
+a \in \lbrace 1,\, 2\rbrace
+5^2 \mid m
+n
+7^2 \mid m
+n
+\begin{align} \sigma(2^43^{a+1}m/5^2) &= 31\frac{3^{a+2}-1}{2}\sigma(m/5^2)\\ &> 3\frac{3^{a+1}-1}{2}\cdot 31\sigma(m/5^2)\\ &\geqslant 3\frac{3^{a+1}-1}{2}\sigma(m) = \sigma(2\cdot 3^am) = \sigma(n), \end{align}
+\begin{align} \sigma(2^53^{a+1}m/7^2) &= 63\frac{3^{a+2}-1}{2}\sigma(m/7^2)\\ &> 3\frac{3^{a+1}-1}{2}\cdot 63\sigma(m/7^2)\\ &> 3\frac{3^{a+1}-1}{2}\cdot 57\sigma(m/7^2)\\ &\geqslant 3\frac{3^{a+1}-1}{2}\sigma(m) = \sigma(n), \end{align}
+n
+p > 7
+n
+5^2
+7^2
+n
+2^c < p < 2^{c+1}
+2^c > \frac{3p+4}{4}
+\sigma(n) \leqslant \sigma(2^cn/p)
+n
+\sigma(2p) = 3(p+1) \leqslant 2^{c+2}-1 = \sigma(2^{c+1}),
+\frac{2p}{3} < 2^c \leqslant \frac{3p+4}{4}
+p > 15
+2^{c-2}\cdot 5 < p
+m = 5^b\cdot r
+r \not\equiv 0 \pmod{5}
+\sigma(n) \leqslant \sigma(2^{c-2}5n/p)
+n
+\begin{align} \sigma(2^{c-1}5^{b+1}) - \sigma(2\cdot5^bp) &= (2^c-1)\frac{5^{b+2}-1}{4} - 3\frac{5^{b+1}-1}{4}(p+1)\\ &\geqslant \frac{2p-1}{3}\cdot\frac{5^{b+2}-1}{4} - 3\frac{5^{b+1}-1}{4}p - 3\frac{5^{b+1}-1}{4}\\ &= \left(\frac{2(5^{b+2}-1)}{12} -\frac{9(5^{b+1}-1)}{12}\right)p\\ &\qquad - \left(\frac{9(5^{b+1}-1)}{12}+\frac{5^{b+2}-1}{12}\right)\\ &= \frac{5^{b+1}+7}{12}p - \frac{14\cdot 5^{b+1}-10}{12} > 0, \end{align}
+\frac{p}{2} < 2^c < \frac{2p}{3}
+2^{c+1}-1 \geqslant p+1
+2^{c+1}-1 = p
+\sigma(2^c\cdot 3^{a+1}) = (2^{c+1}-1)\frac{3^{a+2}-1}{2} > (p+1)\cdot 3 \frac{3^{a+1}-1}{2} = \sigma(2\cdot3^ap),
+\begin{align} \sigma(2^c\cdot 3^{a+1}) -\sigma(2\cdot3^ap) &= (2^{c+1}-1)\frac{3^{a+2}-1}{2} - 3\frac{3^{a+1}-1}{2}(p+1)\\ &= p - 3\frac{3^{a+1}-1}{2}\\ &\geqslant p - 39. \end{align}
+p = 31
+\sigma(30n/31) > \sigma(n)
+p = 11
+\sigma(10n/11) > \sigma(n)
+n
+5^2
+\equiv 6 \pmod{12}
+2\cdot 3^2\cdot 5\cdot 7 = 630
+F_p
+p
+4

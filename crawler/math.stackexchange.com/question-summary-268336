@@ -1,0 +1,28 @@
+Q
+n \geq 2
+1 \leq i < k \leq n
+P
+(i, k)
+Q
+P
+(n-1)
+x_1, \dots, x_{k-1}, x_{k+1}, \dots, x_n
+P x_1 \dots x_{k-1} x_{k+1} \dots x_n \iff Q x_1 \dots x_{k-1} x_i x_{k+1} \dots x_n.
+Q
+1 \leq i \leq n
+P
+Q
+x_1 \dots x_{i-1}, x_{i+1}, \dots, x_n
+P x_1 \dots x_{i-1} x_{i+1} \dots x_n \iff \wedge_{x_i} Q x_1 \dots x_n.
+Q x_1 \dots x_n
+x_i
+n-1
+n
+n
+P(x) \Leftrightarrow Q(x, x)
+P'(x,y,z) \Leftrightarrow Q'(x,y,z,y)
+P''(x,y,z,w) \Leftrightarrow Q''(x,y,z,x,w)
+n-1
+n
+P(x) \Leftrightarrow \forall yQ(x, y)
+P(x, y) \Leftrightarrow \forall zQ(z, x, y)

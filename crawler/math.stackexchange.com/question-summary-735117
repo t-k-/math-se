@@ -1,0 +1,13 @@
+S=\{x^2+y^2+z^2=R^2\}
+r=dist((x,y,z),(0,0,c))
+c>R,c\in\mathbb{R}
+I=\int\int_S\frac{d^2S}{r^n}
+r=\sqrt{x^2+y^2+(\sqrt{R^2-x^2-y^2}-c)^2}
+G = \left| \begin{array}{cc} 1 & 0 \\ 0 & 1 \\ \frac{-x}{\sqrt{R^2-x^2-y^2}} & \frac{-y}{\sqrt{R^2-x^2-y^2}} \end{array} \right|
+I=\int\int_{x^2+y^2<R^2}\frac{1}{\Big(x^2+y^2+(\sqrt{R^2-x^2-y^2}-c)^2\Big)^\frac{n}{2}}*\sqrt{G}
+x=tcos\alpha,y=tsin\alpha
+t=Rsin\beta
+(R, \theta, \phi)
+r = \sqrt{x^2 + y^2 + (z-c)^2} = \sqrt{x^2 + y^2 + z^2 - 2cz + c^2} = \sqrt{R^2 - 2Rc \cos \phi + c^2}
+d^2 S = R^2 \sin \phi\, d\theta\, d\phi
+\iint_S \frac{d^2S}{r^n} = \int_0^\pi \int_0^{2\pi} \frac{R^2 \sin \phi}{(R^2 - 2Rc\cos \phi + c^2)^{n/2}}\, d\theta\, d\phi

@@ -1,0 +1,30 @@
+g_{n}
+[0,1]
+M
+n
+n
+|g_{n}(x)-g_n(y)|\leq M|x-y|
+x,y\in [0,1]
+|g_{n}(x)|\leq M
+x\in [0,1]
+0\leq a\leq b\leq 1
+f\in L^{1}[0,1]
+\lim_{n\rightarrow \infty } \int_{a}^{b}g_{n}(x)\sin (2n\pi x)\,dx=0. 
+\lim_{n\rightarrow \infty } \int_{0}^{1}f(x)g_{n}(x)\sin (2n\pi x)\,dx=0.
+-\int_{a}^{b} g_n(y)\sin (2n \pi y)\,dy
+O(1/n)
+O(1/n)
+\int_a^b g_n(x)\sin (2n \pi x)\,dx = O(1/n)
+\int_a^b g_n(x)\sin (2n \pi x)\,dx = - \int_a^b g_n(x)\sin (2n \pi (x+1/(2n))\,dx \\  =- \int_{a+1/(2n)}^{b+1/(2n)} g_n(y-1/(2n))\sin (2n \pi y)\,dy 
+L^1
+\|f(\cdot)-f(\cdot+1/n)\|_{L^1}\to 0
+n\to \infty
+g_n
+g_n' \in L^1[0,1]
+g_n(x) = \int_0^x g_n'(t) dt
+\phi(x) = g_n(x) \frac{\cos(2 \pi nx)}{2 \pi n}
+\phi'(x) = -g_n(x)\sin(2 \pi nx)+g_n'(x) \frac{\cos(2 \pi nx)}{2 \pi n}
+\phi(b)-\phi(a) = \int_a^b \phi'(t) dt
+\frac{1}{n}(g_n(b) \frac{\cos(2 \pi n b)}{2 \pi}-g_n(a) \frac{\cos(2 \pi n a)}{2 \pi}) = - \int_a^b g_n(x)\sin(2 \pi nx) dx + \int_a^b g_n'(x) \frac{\cos(2 \pi nx)}{2 \pi n} dx
+|g_n(x)| \leq M
+|\int_a^b g_n(x)\sin(2 \pi nx) dx| \leq \frac{1}{2n\pi}(2M+\|g_n'\|_1)

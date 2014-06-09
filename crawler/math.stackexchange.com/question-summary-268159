@@ -1,0 +1,36 @@
+\pi
+1
+\begin{align} T(n,1) &= (n-1)\text{th digit of }\pi, \\ T(n,2) &= T(n,1) - T(n-1,2), \\ \text{for } k>2, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1)-\sum\limits_{i=1}^{k-1} T(n-i,k) \end{align} 
+\displaystyle \left( \begin{array}{cccccccc}  1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  3 & 3 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & -2 & 3 & 0 & 0 & 0 & 0 & 0 \\  4 & 6 & -2 & 3 & 0 & 0 & 0 & 0 \\  1 & -5 & 3 & -2 & 3 & 0 & 0 & 0 \\  5 & 10 & 0 & 3 & -2 & 3 & 0 & 0 \\  9 & -1 & 2 & -3 & 3 & -2 & 3 & 0 \\  2 & 3 & 7 & 7 & -3 & 3 & -2 & 3 \end{array} \right)
+\displaystyle \left( \begin{array}{cccccccc}  1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  -1 & \frac{1}{3} & 0 & 0 & 0 & 0 & 0 & 0 \\  -1 & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 & 0 & 0 \\  0 & -\frac{14}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 & 0 \\  -1 & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 & 0 \\  1 & -\frac{146}{243} & -\frac{28}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 & 0 \\  -1 & -\frac{688}{729} & -\frac{11}{243} & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} & 0 \\  0 & \frac{694}{2187} & -\frac{850}{729} & -\frac{92}{243} & -\frac{1}{81} & -\frac{5}{27} & \frac{2}{9} & \frac{1}{3} \end{array} \right)
+\displaystyle \left( \begin{array}{cccccccccccc}  1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\  1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\  1 & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\  1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\  1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\  1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\  1 & 1 & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \end{array} \right)
+\begin{align} T(n,1) &= 1, \\ \text{for } k>1, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1)-\sum\limits_{i=1}^{k-1} T(n-i,k) \end{align}
+\begin{align} T(n,1) &=1, \\  T(n,2) &= T(n,1)-T(n-1,2),\\ \text{for } k>2, T(n,k) &= \sum\limits_{i=1}^{k-1} T(n-i,k-1) -\sum\limits_{i=1}^{k-1} T(n-i,k) \end{align}
+(0,1,0,0,...)
+x=(x_i)=(1,3-1,1-4,\dots)
+x=(x_i)
+A(x)
+x=(x_1,...,x_m)
+T(n,1)=\sum_{i=1}^n x_i
+A(x+x')=A(x)+A(x')
+A(\alpha x)=\alpha A(x)
+\alpha
+x=(1,0,0,...)
+B = A(1,0,...0)
+x=(0,1,0,...)
+A(x)
+0
+MB
+M
+1
+x=(x_i)
+A(x)=\left(\sum_{i=1}^{m} x_i M^{i-1} \right)B
+\sum_{i=1}^m x_iM^{i-1}
+x_1
+x_1\neq 0
+x_1^{-1}
+B^{-1}
+\mu(k)
+B^{-1}\left(\sum_{i=1}^m x_iM^{i-1}\right)^{-1}
+x_1^{-1}\mu(k)
+x_1=1

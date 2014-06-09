@@ -1,0 +1,20 @@
+(X,\mu)
+f,g
+\mu
+X
+\int_X |f(x)g(x)| d\mu(x) \leq \frac{1}{2}\int_{|f(x)| \leq 1} |f(x)|^2 d\mu(x) + \frac{1}{2} \int_{|g(x)|\leq 1} |g(x)|^2 d\mu(x) + \int_{|f(x)| > 1} \left(|f(x)|\log |f(x)| + \frac{1}{2} \right) d\mu(x) + \int_{|g(x)| > 1} \left(e^{|g(x)| - 1} - \frac{1}{2}\right) d\mu(x)
+\phi(s)
+s \geq 0
+\phi(0) = 0
+\phi^{-1}
+\phi
+\int_X |f(x)g(x)| d\mu(x) \leq \int_X \int_0^{|f(x)|} \phi(s) ds d\mu(x) + \int_X \int_0^{|g(x)|} \phi^{-1}(s) ds d\mu(x)
+\phi
+\int_X \Psi(|f(x)|)\,d\mu(x)
+\int_X \int_0^{|f(x)|} \phi(s) \,ds \,d\mu(x) 
+\phi
+\Psi
+\varphi(s) = \begin{cases} s,\quad & 0\le s\le 1 \\ 1+\log s, \quad &s>1\end{cases}
+\int_0^t\varphi(s)\,ds = \begin{cases} t^2/2,\quad & 0\le t\le 1 \\ 1/2+t\log t, \quad &t>1\end{cases}\tag{1}
+\varphi^{-1}(s) = \begin{cases} s,\quad & 0\le s\le 1 \\ e^{s-1} , \quad &s>1\end{cases} \tag{2}
+\int_0^t\varphi^{-1}(s)\,ds = \begin{cases} t^2/2,\quad & 0\le t\le 1 \\ 1/2+e^{t-1} , \quad &t>1\end{cases}\tag{3}

@@ -1,0 +1,24 @@
+a
+P
+d_h
+d_v
+S
+b_h
+b_v
+\beta
+x^2+y^2 = r_w^2
+y = \tan(\pi-\alpha) (x+d_h) + d_v
+r_w^2=x^2+(tan(\pi-\alpha)(x+d_h)+d_v)^2
+r_w^2=x^2+(tan(\pi-\alpha)(x+d_h))^2+2tan(\pi-\alpha)(x+d_h)d_v+d_v^2
+k=tan(\pi-\alpha)
+r_w^2=x^2+(k(x+d_h))^2+2k(x+d_h)d_v+d_v^2
+r_w^2=x^2+(kx+kd_h)^2+2kd_vx+2kd_vd_h+d_v^2
+r_w^2=x^2+(kx)^2+2k^2d_hx+(kd_h)^2+2kd_vx+2kd_vd_h+d_v^2
+r_w^2=x^2+k^2x^2+2k^2d_hx+(kd_h)^2+2kd_vx+2kd_vd_h+d_v^2
+r_w^2=(1+k^2)x^2+2k^2d_hx+(kd_h)^2+2kd_vx+2kd_vd_h+d_v^2
+r_w^2=(1+k^2)x^2+(2k^2d_h+2kd_v)x+(kd_h)^2+2kd_vd_h+d_v^2
+0=(1+k^2)x^2+(2k^2d_h+2kd_v)x+(kd_h)^2+2kd_vd_h+d_v^2-r_w^2
+0=Ax^2+Bx+C
+A=1+k^2=1+(tan(\pi-\alpha))^2
+B=2k^2d_h+2kd_v=2(tan(\pi-\alpha))^2d_h+2(tan(\pi-\alpha))d_v
+C=(kd_h)^2+2kd_vd_h+d_v^2-r_w^2=(tan(\pi-\alpha)d_h)^2+2tan(\pi-\alpha)d_vd_h+d_v^2-r_w^2

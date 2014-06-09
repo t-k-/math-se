@@ -1,0 +1,14 @@
+X_i=\beta X_{i-1}+\varepsilon_i
+i=1,2,...
+\varepsilon_i
+\mu
+\sigma^2
+0<\beta<1
+X_0=0
+X_i=\sum_{j=1}^i \varepsilon_j \beta ^{i-j}
+E(X_i)=\mu((\beta^i-1)/(\beta-1))
+X_i
+E(X_i^2)
+Var(X_i)=E(X_i^2)-[E(X_i)]^2
+X_i
+ X_i=\sum_{j=1}^i\beta^{i-j}\varepsilon_j\implies\mathrm{var}(X_i)=\sum_{j=1}^i\beta^{2(i-j)}\mathrm{var}(\varepsilon_j)=\sigma^2\sum_{j=1}^i\beta^{2(i-j)}=\sigma^2\frac{1-\beta^{2i}}{1-\beta^2}.

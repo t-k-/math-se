@@ -1,0 +1,21 @@
+f(x) = e^{2^x}
+e
+f'(x)
+\begin{align}f'(x) &=& \lim_{h \to 0} \frac{e^{2^{x+h}}-e^{2^x}}{h}\\                       &=& \lim_{h \to 0} \frac{e^{2^{x}2^h}-e^{2^x}}{h} \end{align}
+h
+h
+h
+e^{2^x}2^x\ln 2
+\begin{align}f'(x) &=& \lim_{h \to 0} \frac{e^{2^{x+h}}-e^{2^x}}{h}\\ &=& e^{2^x}\lim_{h \to 0} \frac{e^{2^{x}(2^h-1)}-1}{h}\\ \end{align}
+2^h-1=y
+y=\frac{\ln{(y+1)}}{\ln2}
+h\to0
+y\to0
+\begin{align}f'(x)  &=& e^{2^x}\lim_{y \to 0} \frac{e^{(2^{x}y)}-1}{\frac{\ln(y+1)}{\ln2}}\\ &=& e^{2^x}\ln2\lim_{y \to 0} \frac{e^{(2^{x}y)}-1}{\ln(y+1)}\\ \end{align}
+e
+\begin{align}f'(x)  &=&e^{2^x}\ln2\lim_{y \to 0} \frac{(1+y)^{\frac{1}{y}2^{x}y}-1}{\ln(y+1)}\\ \end{align}
+z=2^x\ln(y+1)
+y+1=e^{\frac{z}{2^x}}
+y\to0
+z\to0
+\begin{align}f'(x)  &=&e^{2^x}\ln2\lim_{z \to 0} \frac{(e^{\frac{z}{2^x}})^{2^{x}}-1}{\frac{z}{2^x}}\\ &=&e^{2^x}\ln2*2^x\lim_{z \to 0} \frac{e^{z}-1}{z}\\ &=&e^{2^x}\ln2*2^x\lim_{z \to 0} \frac{((1+z)^{\frac{1}{z}})^{z}-1}{z}\\ &=&e^{2^x}\ln2*2^x \end{align}

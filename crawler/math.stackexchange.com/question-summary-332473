@@ -1,0 +1,43 @@
+\int \frac{6x}{\sqrt{x^2+4x+8}} dx.
+\begin{align}\int \dfrac{6x}{\sqrt{x^2 + 4x + 8}}\, dx\; & = \;\int \dfrac{6x+12 -12}{\sqrt{x^2 + 4x + 8}} \,dx \\ \\ \\ \\ & = \int \dfrac {6(x + 2) - 12}{\sqrt {\color{blue}{\bf (x^2+ 4x + 4) + 4}}}\,dx  \end{align}
+ = \;\int \dfrac {6(x + 2)}{\sqrt {(x^2 + 4x + 8}}\,dx\;\; -\;\; 12\int \dfrac{1}{\sqrt{\color{blue}{\bf (x+2)^2 + 2^2}}}\, dx 
+\;v = x+2\;\implies\;dv = dx.
+(x + a)^2 + b
+a
+x
+b
+x
+4x
+a
+1/2 \cdot 4 = 2
+(x + 2)^2 + b = x^2 + 4x + 8
+b
+4
+x^2 + 4x + 8 = (x + 2)^2 + 4
+u = x + 2
+\int \frac{6(u -2)}{\sqrt{u^2 + 4}}du
+u = 2\tan(\theta)
+du = 2\sec^2(\theta)
+\sqrt{u^2 + 4} = \sqrt{4\tan^2(\theta) + 4} = 2\sqrt{\tan^2(\theta) + 1} = 2\sqrt{\sec^2{\theta}} = \sec(\theta)
+\int \frac{6(\tan(\theta) - 2)(2\sec^2(\theta))}{2\sec(\theta)}d\theta
+= 6\int [\tan(\theta)\sec(\theta) - 2\sec(\theta)] d\theta
+\tan(\theta)\sec(\theta)
+\sec(\theta)
+\sec(\theta)
+6\sec(\theta) - 12\ln(|\sec(\theta) + \tan(\theta)|) + C
+\theta = \tan^{-1}(u/2)
+\sec(\tan^{-1}(u/2)
+\theta
+u/2
+u
+2
+\theta
+\sqrt{u^2 + 4}/2
+3\sqrt{u^2 + 4} - 12\ln\left|\frac{\sqrt{u^2 + 4}}{2} + \frac{u}{2}\right| + C
+u = x + 2
+3\sqrt{(x + 2)^2 + 4} - 12\ln\left|\frac{\sqrt{(x + 2)^2 + 4}}{2} + \frac{x + 2}{2}\right| + C
+\int \frac{6x}{\sqrt{x^2+4x+8}}dx=\int\frac{6(x+2)-12}{\sqrt{(x+2)^2+2}}dx
+=6\int\frac{x}{\sqrt{x^2+2}}dx-12\int\frac{1}{\sqrt{x^2+2}}dx
+=6\sqrt{x^2+2}-12\sinh^{-1}\left(\frac{x+2}{2}\right)+C.
+ \begin{align} \int \frac{6x +12 -12}{\sqrt{x^2+4x+8}} dx   &= \int \frac{6x +12}{\sqrt{x^2+4x+8}} dx - \int \frac{12}{\sqrt{x^2+4x+8}} dx \\   &= \int \frac{6(x+2)}{\sqrt{x^2+4x+8}} dx - \int \frac{12}{\sqrt{x^2+4x+8}} dx \\    &= \int \frac{3(2x+4)}{\sqrt{x^2+4x+8}} dx - \int \frac{12}{\sqrt{x^2+4x+8}} dx. \end{align}
+x^2+4x+8 = t

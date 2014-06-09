@@ -1,0 +1,71 @@
+f_T(t)=\int_{-\infty}^\infty|x|2nx\times \frac{\frac{1}{2}^{\frac{n}{2}}}{\Gamma\left(\frac{n}{2}\right)}(x^2n)^{\frac{n}{2}-1}e^{-\frac{1}{2}x^2n}\frac{1}{\sqrt{2\pi}}e^{-\frac{(xt)^2}{2}}dx
+\Gamma
+f_T(t)=\frac{\Gamma[(n+1)/2]}{\sqrt{n\pi}\Gamma(n/2)}\left(1+\frac{t^2}{n}\right)^{-(n+1)/2}
+\alpha=\frac{n+1}{2} \lambda=\frac{1}{2}
+1
+\int_{0}^{\infty}g(t)dt= \int_{0}^{\infty}\frac{\frac{1}{2}^{\frac{n+1}{2}}}{\Gamma\left(\frac{n+1}{2}\right)}t^{\frac{n+1}{2}-1}e^{-\frac{1}{2}t}dt=1
+t=x^2n
+dt=2xn\,dx
+\int_{0}^{\infty}g(t)dt=\int_{0}^{\infty}g(x^2n)2xn\,dx=\int_{0}^{\infty}\frac{\frac{1}{2}^{\frac{n+1}{2}}}{\Gamma\left(\frac{n+1}{2}\right)}(x^2n)^{\frac{n+1}{2}-1}e^{-\frac{1}{2}(x^2n)}2xn\,dx=1
+\Gamma[(n+1)/2]
+f_T(t)=\int_{-\infty}^\infty|x|2nx\times \frac{\frac{1}{2}^{\frac{n}{2}}}{\Gamma\left(\frac{n}{2}\right)}(x^2n)^{\frac{n}{2}-1}e^{-\frac{1}{2}x^2n}\frac{1}{\sqrt{2\pi}}e^{-\frac{(xt)^2}{2}}
+=\frac{\Gamma[(n+1]/2)]}{\sqrt{n\pi}\Gamma(n/2)}\int_{-\infty}^\infty \frac{\sqrt{n\pi}\Gamma(n/2)}{\Gamma[(n+1]/2)]}|x|2nx\times \frac{\frac{1}{2}^{\frac{n}{2}}}{\Gamma\left(\frac{n}{2}\right)}(x^2n)^{\frac{n}{2}-1}e^{-\frac{1}{2}x^2n}\frac{1}{\sqrt{2\pi}}e^{-\frac{(xt)^2}{2}}dx
+=\frac{\Gamma[(n+1]/2)]}{\sqrt{n\pi}\Gamma(n/2)}\int_{-\infty}^\infty 2nx \frac{(\frac{1}{2})^{\frac{n+1}{2}}}{\Gamma [(n+1)/2)] }(x^2n)^{\frac{n-1}{2}}e^{-\frac{1}{2}(x^2n)}\times2n|x|e^{-\frac{(xt)^2}{2}}dx
+Y
+n
+Y
+\sqrt Y\equiv \hat Y
+n
+ f_{\hat Y}(\hat y) = \frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} \hat y^{n-1} \exp\Big \{{-\frac {\hat y^2}{2}} \Big\} \qquad [1]
+X \equiv \frac {1}{\sqrt n}\hat Y
+ \frac {\partial \hat Y}{\partial X} = \sqrt n
+ f_{X}(x) = f_{\hat Y}(\sqrt nx)\Big |\frac {\partial \hat Y}{\partial X} \Big| = \frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} (\sqrt nx)^{n-1} \exp\Big \{{-\frac {(\sqrt nx)^2}{2}}  \Big\}\sqrt n 
+=\frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} n^{\frac n2}x^{n-1} \exp\Big \{{-\frac {n}{2}x^2}  \Big\} \qquad [2]
+T = \frac{Z}{\sqrt \frac Yn}= \frac ZX 
+f_T(t) = \int_{-\infty}^{\infty} |x|f_Z(xt)f_X(x)dx   
+f_X(x) = 0
+[-\infty, 0]
+X
+f_T(t) = \int_{0}^{\infty} xf_Z(xt)f_X(x)dx   
+ = \int_{0}^{\infty} x \frac{1}{\sqrt{2\pi}}\exp \Big \{{-\frac{(xt)^2}{2}}\Big\}\frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} n^{\frac n2}x^{n-1} \exp\Big \{{-\frac {n}{2}x^2}  \Big\}dx 
+ = \frac{1}{\sqrt{2\pi}}\frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} n^{\frac n2}\int_{0}^{\infty} x^n \exp \Big \{-\frac 12 (n+t^2) x^2\Big\} dx \qquad [3]
+\exp \Big \{-\frac 12 (n+t^2) x^2\Big\}
+\int_{0}^{\infty} x^n \exp \Big \{-\frac 12 (n+t^2) x^2\Big\} = (n+t^2)^{-\frac 12 (n+1)}\Gamma(n+1)D_{-(n+1)}(0) 
+ = \left(1+\frac {t^2}{n}\right)^{-\frac 12 (n+1)} n^{-\frac 12 (n+1)}\Gamma(n+1)D_{-(n+1)}(0) \qquad [4] 
+D_{-(n+1)}(0) = U(n+\frac 12,0) = \frac {\sqrt\pi}{2^{\frac 12(n+\frac 12)+\frac 14} \Gamma\Big (\frac 34 + \frac 12(n+\frac 12)\Big)} = \frac {\sqrt\pi}{2^{\frac n2+\frac 12} \Gamma\Big (\frac n2 + 1\Big)} \qquad [5]
+[5]
+[4]
+[3]
+f_T(t) = \frac{1}{\sqrt{2\pi}}\frac {2^{1-\frac n2}}{\Gamma\left(\frac {n}{2}\right)} n^{\frac n2} n^{-\frac 12 (n+1)}\Gamma(n+1)\frac {\sqrt\pi}{2^{\frac n2+\frac 12} \Gamma\Big (\frac n2 + 1\Big)}\left(1+\frac {t^2}{n}\right)^{-\frac 12 (n+1)} \; [6] 
+eq. [3]
+m \equiv x^2 \Rightarrow dm = 2xdx \Rightarrow dx = \frac {dm}{2x}, \; x = m^{\frac 12}
+I_3=\int_{0}^{\infty} x^n \exp \Big \{-\frac 12 (n+t^2) m\Big\} \frac {dm}{2x} = \frac 12\int_{0}^{\infty} m^{\frac {n-1}{2}} \exp \Big \{-\frac 12 (n+t^2) m\Big \} dm \qquad [7]
+ Gamma(m;k,\theta) = \frac {m^{k-1} \exp\Big\{-\frac{m}{\theta}\Big \}}{\theta^k\Gamma(k)}
+k-1 = \frac {n-1}{2} \Rightarrow k^* = \frac {n+1}{2}, \qquad \frac 1\theta =\frac 12 (n+t^2) \Rightarrow \theta^* = \frac 2 {(n+t^2)} 
+k^*
+\theta^*
+(\theta^*)^{k^*}\Gamma(k^*)
+I_3 = \frac12(\theta^*)^{k^*}\Gamma(k^*) = \frac12 \Big (\frac 2 {n+t^2}\Big ) ^{\frac {n+1}{2}}\Gamma\left(\frac {n+1}{2}\right) = 2^ {\frac {n-1}{2}}n^{-\frac {n+1}{2}}\Gamma\left(\frac {n+1}{2}\right)\left(1+\frac {t^2}{n}\right)^{-\frac 12 (n+1)} 
+=\frac{\Gamma[(n+1)/2]}{\sqrt{n\pi}\Gamma(n/2)}\left(1+\frac {t^2}{n}\right)^{-\frac 12 (n+1)}
+t
+u = \frac{1}{2} x^2 (n+t^2)
+t
+0
+\infty
+|x|
+Z
+V
+n
+t
+Z=x
+x \cdot t > 0
+V
+n(x/t)^2
+Y
+Y = Z / \sqrt{(V/n)}
+t > 0
+f_T(t) = \int_0^\infty \frac{ (nx^2/t^2)^{k/2-1} e^{-\frac{nx^2}{2t^2}} }{ 2^{n/2} \Gamma(n/2) }  \frac{e^{-x^2/2}}{\sqrt{2\pi}} dx
+t>0
+Z=x>0
+V = n(x/t)^2
+u = x^2 \frac{1+n/t^2}{2}

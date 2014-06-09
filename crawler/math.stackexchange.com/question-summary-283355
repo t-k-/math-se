@@ -1,0 +1,26 @@
+X
+Y
+Y
+\mu
+G_{X+Y}(s) = e^{\mu(s e^{s-1} - 1)}
+G_Y(s) = e^{\mu(s-1)}
+G_X
+G_X(s) = \sum_{x=0}^{\infty} s^x P(X=x) = \sum_{x=0}\sum_{y=0} s^x \frac{e^{-y} y^x}{x!} \frac{e^{-\mu} \mu^y}{y!}
+G_X(s) = e^{-\mu} \sum_{x=0} \frac{s^x}{x!} \sum_{y=0} \frac{y^x e^{-y}\mu^y}{y!}
+G_{X+Y}(s) = G_X(s) G_Y(s)
+X
+Y
+X
+Y
+G_{X+Y}(s)={\Bbb E}s^{X+Y}
+Y
+X
+Y
+Y
+X
+e^{Y(s-1)}
+\alpha^Y
+\alpha
+Y
+ {\Bbb E}[s^{X+Y}\mid Y]=s^Y{\Bbb E}[s^X\mid Y]. \qquad (*) 
+ {\Bbb E}[s^{X+Y}\mid Y]=s^Y e^{Y(s-1)}. \qquad (**) 

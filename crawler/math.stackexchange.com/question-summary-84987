@@ -1,0 +1,25 @@
+\lim_{N \to \infty} \prod_{n=1}^N (a^2\cos^2 (2\pi n/N)+b^2\sin^2(2\pi n/N))^{1/N}=ab
+\Big(\frac{a+b}{2} \Big)^2
+ab
+I(a,b)
+ \int_0^1 \ln \left( a^2 \cos^2 (2\pi x) +  b^2 \sin^2 (2\pi x)  \right) \ dx =  \frac{1}{2 \pi} \int_0^{2\pi} \ln \left( a^2 \cos^2 y +  b^2 \sin^2 y  \right) \ dy . 
+ I(a,b) = 2\ln \Bigl( \frac{a+b}{2} \Bigr). 
+\cos^2(y)=\frac{1+\cos(2y)}{2}
+\sin^2(y)=\frac{1-\cos(2y)}{2}
+x=\frac{a^2-b^2}{a^2+b^2}
+y\mapsto y/2
+(2)
+(3)
+x
+z=\tan(y/2)
+ \frac{1}{2\pi}\int_0^{2\pi}\log\left(a^2\cos^2(y)+b^2\sin^2(y)\right)\mathrm{d}y\tag{1} 
+ \log\left(\frac{a^2+b^2}{2}\right)+\frac{1}{2\pi}\int_0^{2\pi}\log\left(1+\frac{a^2-b^2}{a^2+b^2}\cos(2y)\right)\;\mathrm{d}y\tag{2} 
+ \frac{1}{2\pi}\int_0^{2\pi}\log\left(1+x\cos(y)\right)\;\mathrm{d}y\tag{3} 
+ \begin{align} \frac{\mathrm{d}}{\mathrm{d}x}\frac{1}{2\pi}\int_0^{2\pi}\log\left(1+x\cos(y)\right)\;\mathrm{d}y &=\frac{1}{2\pi}\int_0^{2\pi}\frac{\cos(y)}{1+x\cos(y)}\mathrm{d}y\\ &=\frac{1}{2\pi}\int_{-\infty}^\infty\frac{\frac{1-z^2}{1+z^2}}{1+x\frac{1-z^2}{1+z^2}}\frac{2\mathrm{d}z}{1+z^2}\\ &=\frac{1}{\pi(1+x)}\int_{-\infty}^\infty\frac{(1-z^2)\;\mathrm{d}z}{\left(1+\frac{1-x}{1+x}z^2\right)(1+z^2)}\\ &=\frac{1}{\pi}\int_{-\infty}^\infty\left(\frac{\frac{1}{x}}{1+z^2}-\frac{\frac{1}{x(1+x)}}{1+\frac{1-x}{1+x}z^2}\right)\mathrm{d}z\\ &=\frac{1}{x}-\frac{1}{x(1+x)}\sqrt{\frac{1+x}{1-x}}\\ &=\frac{1}{x}-\frac{1}{x\sqrt{1-x^2}}\tag{4} \end{align} 
+(4)
+x=\frac{a^2-b^2}{a^2+b^2}
+(5)
+(5)
+(2)
+ \frac{1}{2\pi}\int_0^{2\pi}\log\left(1+x\cos(y)\right)\;\mathrm{d}y=\log\left(\frac{1+\sqrt{1-x^2}}{2}\right)\tag{5} 
+ \frac{1}{2\pi}\int_0^{2\pi}\log\left(a^2\cos^2(y)+b^2\sin^2(y)\right)\mathrm{d}y=2\log\left(\frac{a+b}{2}\right)\tag{6} 

@@ -1,0 +1,29 @@
+x \in \mathbb{R}
+(x_n)
+\sum_{n = 1}^\infty c_n
+f(x) = \sum_{n = 1}^\infty c_n I( x - x_n)
+f
+V_a^b f = \sum_{n = 1}^\infty |c_n|
+I(x) = \begin{cases}0 & \text{if } x \leq 0\\1 & \text{if } x > 0\end{cases}
+f
+V_a^b f \leq \sum_{n = 1}^\infty |c_n|
+\epsilon>0
+N
+\sum\limits_{i=N+1}^\infty |c_i|<\epsilon
+(z_i)_{i=1}^N
+(x_i)_{i=1}^N
+0<\delta<\min\limits_{2\le i\le N}|z_i-z_{i-1}|
+(y_i)_{i=0}^N
+i=0
+i=N
+1\le i<N
+ y_i=\cases{a,&$i=0$\cr b, &$i=N$\cr z_i+\delta,&$1\le i<N$. } 
+i^*
+x_{i^*}=z_{i}
+ f(y_{i })-f(y_{i-1})= c_{i^*}+\sum_{\scriptstyle {y_{i-1}\le x_k<y_i}\atop\scriptstyle k\ne i^* } c_k; 
+ |f(y_i)-f(y_{i-1})|\ge |c_{i^*}|-\sum_{\scriptstyle y_{i-1}\le x_k<y_i \atop\scriptstyle k\ne i^*} |c_k|. 
+ \sum_{i=1}^N  |f(y_i)-f(y_{i-1})|\ge \sum_{i=1}^N|c_i|-\sum_{i=1}^N\sum_{\scriptstyle y_{i-1}\le x_k<y_i\atop\scriptstyle k\ne i^* } |c_k|. 
+ \sum_{i=1}^N\sum_{ \scriptstyle y_{i-1}\le x_k<y_i\atop\scriptstyle k\ne i^*} |c_k|= \sum_{i=N+1}^\infty |c_i|<\epsilon; 
+ \sum_{i=1}^N  |f(y_i)-f(y_{i-1})|\ge \sum_{i=1}^N|c_i|-\epsilon. 
+\epsilon
+V_a^b f\le\sum\limits_{n=1}^\infty|c_n|

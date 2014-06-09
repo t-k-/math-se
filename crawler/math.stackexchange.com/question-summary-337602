@@ -1,0 +1,32 @@
+u(x) = \frac{x^2}{2}
+\int_0^2 \frac{n}{2}u'(x)^2-nu(x) \, dx
+C^2[0,2]
+u(0) = 0
+u(2)=2
+n
+L(u,v) = \frac{n}{2} v^2-n u
+C = \{u \in C^2[0,2] | u(0) =0, \, u(2) = 2 \}
+\hat{u}(x) = \frac{1}{2}x (4-x)
+\hat{u}
+\frac{\partial L(\hat{u}(x), \hat{u}'(x))}{\partial u} = -n = n \hat{u}''(x) = \frac{d}{dx}\frac{\partial L(\hat{u}(x), \hat{u}'(x))}{\partial v}
+C
+L
+u \mapsto u'
+u \mapsto L(u,u')
+J
+J(u) = \int_0^2 L(u(x),u'(x)) dx
+P: \ \min_{u \in C} J(u)
+\hat{u}
+P
+dJ(\hat{u}, u-\hat{u}) \ge 0
+u \in C
+dJ(u,\delta) = \int_0^2 ( \frac{\partial L(u(x), u'(x))}{\partial u} \delta(x) + \frac{\partial L(u(x), u'(x))}{\partial v} \delta'(x) ) dx
+dJ(\hat{u},\delta) = 0
+\delta \in C^1[0,2]
+\delta(0) = \delta(2) = 0
+\hat{u}
+P
+\hat{u} \in C^2[0,2]
+dJ(\hat{u},\delta) = 0
+C
+C_{\text{relaxed}} = \{u \in C^1[0,2] | u(0) =0, \, u(2) = 2 \}

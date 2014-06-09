@@ -1,0 +1,41 @@
+G_1
+G_2
+\{z\in \mathbb C:|z+1|<1\}
+w=\frac{(1-i)z+2}{(1+i)z+2}
+w=\frac{(1+i)z+2}{(1-i)z+2}
+G_1=\{w\in \mathbb C:Im(w)<0\}
+G_2=\{w\in \mathbb C:Im(w)>0\},
+G_1=\{w\in \mathbb C:Im(w)>0\}
+G_2=\{w\in \mathbb C:Im(w)<0\},
+G_1=\{w\in \mathbb C:|w|>2\}
+G_2=\{w\in \mathbb C:|w|<2\},
+G_1=\{w\in \mathbb C:|w|<2\}
+G_2=\{w\in \mathbb C:|w|>2\}.
+z
+w
+|z+1|<1
+w
+u+iv
+u
+Re(w)
+v
+Im(w)
+f_1(z) := \frac{(1-\imath) \cdot z+2}{(1+\imath) \cdot z+2} \qquad \qquad f_2(z) := \frac{(1+\imath) \cdot z+2}{(1-\imath) \cdot z+2}
+z=-1
+\{z \in \mathbb{C}; |z+1|<1\}
+f_1(-1) = \frac{(1-\imath) \cdot (-1)+2}{(1+\imath) \cdot (-1)+2} = \frac{\imath+1}{-\imath+1} = \frac{(\imath+1)^2}{1-\imath^2} = \ldots = \imath
+f_2(-1)= \frac{(1+\imath) \cdot (-1)+2}{(1-\imath) \cdot (-1)+2} = \frac{-\imath+1}{\imath+1} = \frac{1}{f_1(-1)} = \frac{1}{\imath} =-\imath
+|f_2(-1)|<2
+\text{Im} \, w>0 \Leftrightarrow |w-\imath| < |w+\imath|
+w:=f_1(z)
+\text{Im} \, f_1(z) > 0 \Leftrightarrow \left| \frac{(1-\imath) \cdot z+2}{(1+\imath) \cdot z+2}-\imath \right| < \left| \frac{(1-\imath) \cdot z+2}{(1+\imath) \cdot z+2}+\imath \right| \\ \Leftrightarrow |\underbrace{(1-\imath) \cdot z+2 - \imath \cdot ((1+\imath) \cdot z+2)}_{2 (1-\imath) \cdot z+2-2\imath} | < |\underbrace{(1-\imath) \cdot z+2 + \imath \cdot ((1+\imath) \cdot z+2)}_{2+2\imath}| \\ \Leftrightarrow |2 \cdot (1-\imath) \cdot (z+1)| < |2 \cdot (1+\imath)| \\ \Leftrightarrow |z+1|<1
+f_1
+f_1(-1+i)=\infty
+f_1(-2)=-1
+f_1(-1-i)=0
+f(0)=1
+f_2
+f_2(1-i)=\infty
+f_2(-2)=-1
+f_2(-1+i)=0
+f(0)=1

@@ -1,0 +1,12 @@
+\int_0^1 t\sqrt{4+9t^2} \,dt?
+t
+t=\sqrt{t^2}
+\;\color{red}{\bf u = 4 + 9t^2}.\;
+ \,du = 18 t \,dt \iff \color{blue}{\bf t\,dt = \dfrac 1{18}} \,du
+\;t = 0, \;u = 4 + 9(0)^2 = 9.\;
+\;t = 1, \;u = 4+9(1)^2 = 13
+\int_0^1 \sqrt{\color{red}{\bf 4 + 9t^2}}\color{blue}{\bf (t\,dt)} \quad = \quad  \color{blue}{\bf \dfrac1{18}}\int_{\bf 4}^{\bf 13} \sqrt{\color{red}{\bf u}} \color{blue}{\bf \,du}\quad  = \quad \dfrac 1{18} \int_4^{13} u^{1/2} \,du
+\int f'(x)f^n(x)dx=\frac{f^{n+1}(x)}{n+1}
+f(x)=4+9t^2
+f'(x)=18t
+\int t\sqrt{4+9t^2}dx=\frac{1}{18}\int 18t\sqrt{4+9t^2}dx=\frac{1}{27}(\sqrt{(4+9t^2)^3})+C

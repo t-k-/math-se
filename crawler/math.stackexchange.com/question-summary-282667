@@ -1,0 +1,8 @@
+3n2^{n-1}+2^n
+T_{r+1}=(3r+1)\binom nr=3r\frac{n!}{(n-r)! r!}+\binom nr \text{where}\space 0\le r\le n
+r\frac{n!}{(n-r)! r!}=r\frac{n!}{\{n-1-(r-1)\}!) r(r-1)!} \text{if} \space  r\ge1
+r\frac{n!}{(n-r)! r!}=n\frac{(n-1)!}{\{n-1-(r-1)\}!) (r-1)!} =n\binom{n-1}{r-1}
+\sum_{0\le r\le n}(3r+1)\binom nr
+=3n\sum_{0\le r\le n}\binom{n-1}{r-1}+\sum_{0\le r\le n}\binom nr
+=3n\sum_{1\le r\le n}\binom{n-1}{r-1}+\sum_{0\le r\le n}\binom nr
+=3n(1+1)^{n-1}+(1+1)^n=3n2^{n-1}+2^n=2^{n-1}(3n+2)

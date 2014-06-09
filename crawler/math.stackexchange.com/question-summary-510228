@@ -1,0 +1,17 @@
+t\in [\pi, 3\pi/2]
+c(t)=\langle \cos t+t\sin t, \sin t-t\cos t\rangle
+c'(t)=\langle -\sin t+\sin t+t\cos t, \cos t-\cos t+t\sin t\rangle= \langle t\cos t, t\sin t\rangle
+t\in [\pi, 3\pi/2]
+c'(t)\not=0
+c(t)
+\lVert c'(t)\rVert =\sqrt{(t\cos t)^2+(t\sin t)^2}=|t|=t
+s=\int^{t_0}_{t}\lVert c'(t)\rVert du =\int_{\pi}^{t} u du=\frac{1}{2}(t^2 -\pi^2)
+t=\sqrt{2s+\pi^2}
+s\in [\pi/\sqrt{2},3\pi/2\sqrt{2}]
+\tilde{c}(s)=\langle \cos(\sqrt{2s}+\pi^2)+\sqrt{2s+\pi^2}\sin(\sqrt{2s+\pi^2}), \sin(\sqrt{2s+\pi^2})-\sqrt{2s+\pi^2}\cos(\sqrt{2s+\pi^2})\rangle
+\lVert \tilde{c}'(s)\rVert \not =1
+t_0\in [\ pi,3/2\pi]
+s(t)=\int_{t_0}^t\|c'(t)\|\,dt,
+\sqrt{2t}
+c\left(\sqrt{2t}\right) = \{\sqrt{2} \sqrt{t} \sin \left(\sqrt{2} \sqrt{t}\right)+\cos \left(\sqrt{2} \sqrt{t}\right),\sin \left(\sqrt{2} \sqrt{t}\right)-\sqrt{2} \sqrt{t} \cos \left(\sqrt{2} \sqrt{t}\right)\}
+\frac{d}{dt}c\left(\sqrt{2t}\right)=\left\{\text{Cos}\left[\sqrt{2} \sqrt{t}\right],\text{Sin}\left[\sqrt{2} \sqrt{t}\right]\right\}

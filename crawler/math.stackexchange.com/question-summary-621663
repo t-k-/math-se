@@ -1,0 +1,15 @@
+\bullet\int_{0}^{t}\int_{0}^{s}W(r)\;drds=-tW(t)+(t+1)\int_{0}^{t}W(s)\;ds
+W(t)
+t \mapsto \int_0^t \int_0^s W(r) \, dr \, ds
+t \mapsto (t+1) \cdot \int_0^t W(s) \, ds
+\omega \in \Omega
+t \mapsto t \cdot W_t
+\int_0^t \int_0^s W(r) \, dr \, ds - (t+1) \cdot \int_0^t W(s) \, ds = - t \cdot W_t
+X
+E[W(s)W(u)]=\min(s,u)
+Y
+X
+Y
+ X=\int_0^t(t-s)W(s)\;\mathrm ds, 
+ \mathrm{var}(X)=2\int_0^t(t-s)\int_0^s(t-u)u\;\mathrm du\;\mathrm ds=\frac{t^5}{20}. 
+ \mathrm{var}(Y)=t^3-2t(t+1)\int_0^ts\;\mathrm ds+2(t+1)^2\int_0^t\int_0^su\;\mathrm du\;\mathrm ds=\frac{(t^2-t+1)t^3}3. 

@@ -1,0 +1,32 @@
+X_1, X_2, \ldots, X_n, \ldots
+(0,1)
+f_n(x)
+S_n := \sum_{k = 1}^n X_k
+[x]
+n = 1
+y
+\int f_{n}\left(y\right)f_{1}\left(x-y\right)dy=\int\frac{1}{\left(n-1\right)!}\sum_{k=0}^{\left\lfloor y\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\left(y-k\right)^{n-1}1_{\left(0,1\right)}\left(x-y\right)dy
+=\frac{1}{\left(n-1\right)!}\sum_{k=0}^{\left\lfloor x-1\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\int_{x-1}^{\left\lfloor x\right\rfloor }\left(y-k\right)^{n-1}dy+\frac{1}{\left(n-1\right)!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\int_{\left\lfloor x\right\rfloor }^{x}\left(y-k\right)^{n-1}dy
+=\frac{1}{n!}\sum_{k=0}^{\left\lfloor x-1\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\left[\left(\left\lfloor x\right\rfloor -k\right)^{n}-\left(x-1-k\right)^{n}\right]+\frac{1}{n!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\left[\left(x-k\right)^{n}-\left(\left\lfloor x\right\rfloor -k\right)^{n}\right]
+=\frac{1}{n!}\sum_{k=0}^{\left\lfloor x-1\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\left[\left(x-k\right)^{n}-\left(x-1-k\right)^{n}\right]+\left(-1\right)^{\left\lfloor x\right\rfloor }\binom{n}{\left\lfloor x\right\rfloor }\left(x-\left\lfloor x\right\rfloor \right)^{n}
+=\frac{1}{n!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\binom{n}{k}\left(x-k\right)^{n}+\frac{1}{n!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\binom{n}{k-1}\left(x-k\right)^{n}
+\binom{n}{-1}:=0
+=\frac{1}{n!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\left[\binom{n}{k}+\binom{n}{k-1}\right]\left(x-k\right)^{n}
+=\frac{1}{n!}\sum_{k=0}^{\left\lfloor x\right\rfloor }\left(-1\right)^{k}\binom{n+1}{k}\left(x-k\right)^{n}
+I*I*\cdots*I = I^{*n}
+I
+[0,1]
+*
+I^{*n}
+n
+n
+(\delta_1 - \delta_0)^{*n}
+\delta_x
+x
+\delta_x * \delta_y = \delta_{x+y}
+n
+-\infty
+\int^n \delta_y (dx)^n = \frac1{(n-1)!} (x-y)_+^{n-1}
+x_+
+\max\{x,0\}
+n

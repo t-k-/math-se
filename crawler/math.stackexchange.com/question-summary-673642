@@ -1,0 +1,34 @@
+f(t)=e^{-a^*t}*u(t)
+F(w)=\int_0^∞[e^{-a*t}*e^{-j*w*t}]\,dt
+\int_0^∞e^{{[-a+jw}]*t}\,dt
+[1/-(a+jw)]
+[e^{-(a+jw)*t}]|_0^∞
+F(w)=1/(a+jw)
+[a/(a^2+w^2)
+j*a/(a^2+w^2)]
+[1/-(a+jw)]
+[e^{-(a+jw)*t}]|_0^∞
+[a/(a^2+w^2)]
+[j*a/(a^2+w^2)]
+a > 0
+g
+\mathbb{R}
+\forall t \in \mathbb{R}, \; g(t)= \begin{cases} e^{-at} & \text{if } t \geq 0 \\[2mm] 0 & \text{otherwise}. \end{cases} 
+g
+\mathrm{L}^{1}(\mathbb{R})
+\omega \in \mathbb{R}
+ \begin{align*} \mathcal{F}(g)(\omega) & = {} \int_{\mathbb{R}} g(t) e^{-it\omega} \; dt \\[2mm]  & = \int_{0}^{+\infty} e^{-at} e^{-it\omega} \; dt \\[2mm]  & = \int_{0}^{+\infty} e^{-(a+i\omega)t} \; dt \\[2mm]  & = \lim \limits_{M \to +\infty} \Big[ -\frac{1}{a+i\omega} e^{-(a+i\omega)t} \Big]_{0}^{M} \\[2mm]  & = \frac{1}{a+i\omega}. \end{align*} 
+z
+\overline{z} z = \vert z \vert^{2}
+\mathcal{F}(g)(\omega)
+ \mathcal{F}(g)(\omega) = \frac{a-i\omega}{\vert a+i\omega \vert^{2}} = \frac{a-i\omega}{a^{2}+\omega^{2}} 
+ \Re \Big( \mathcal{F}(g)(\omega) \Big) = \frac{a}{a^{2}+\omega^{2}} \quad \mathrm{and} \quad \Im \Big( \mathcal{F}(g)(\omega) \Big) = -\frac{\omega}{a^{2}+\omega^{2}}
+\Re(z)
+\Im(z)
+z
+f
+ f = g \star u 
+\star
+g
+u
+ \mathcal{F}(f)(\omega) = \mathcal{F}(g)(\omega) \times \mathcal{F}(u)(\omega) = \frac{\mathcal{F}(u)(\omega)}{a+i\omega} 

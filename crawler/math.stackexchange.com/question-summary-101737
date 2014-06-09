@@ -1,0 +1,59 @@
+E
+M
+\mathcal{A}^k(E)
+\Lambda^k (TM)^* \otimes E
+k
+E
+\nabla:\mathcal{A}^0(E) \to \mathcal{A}^1(E)
+\nabla:\mathcal{A}^k(E) \to \mathcal{A}^{k+1}(E)
+\nabla(\alpha \otimes s)= d \alpha \otimes s + (-1)^k \alpha \wedge\nabla s
+\nabla
+F_\nabla=\nabla \circ \nabla: \mathcal{A}^0(E) \to \mathcal{A}^2(E)
+F_{\nabla}(fs) = f F_{\nabla}(s)
+F_\nabla
+\mathcal{A}^2(\text{End}(E))
+F_\nabla
+s \mapsto F_\nabla(X,Y)(s)
+F_{\nabla}(X,Y) = \nabla_X \nabla_Y  - \nabla_Y \nabla_Y - \nabla_{[X,Y]}
+E=TM
+\nabla
+\nabla
+(x^1, \ldots, x^n)
+(e_1, \ldots, e_r)
+E
+U
+\newcommand{\Tud}[3]{{#1}^{#2}_{\phantom{#2}{#3}}}
+\Tud{\omega}{\nu}{\mu} \in \Omega^1(U)
+\Tud{\Omega}{\nu}{\mu} \in \Omega^2(U)
+\nabla e_\mu = \Tud{\omega}{\nu}{\mu} \otimes e_\nu
+\nabla \nabla e_\mu = \Tud{\Omega}{\nu}{\mu} \otimes e_\nu
+\nabla \nabla e_\mu = \mathrm{d}\Tud{\omega}{\nu}{\mu} \otimes e_\nu - \Tud{\omega}{\nu}{\mu} \wedge \Tud{\omega}{\rho}{\nu} \otimes e_\rho
+\Tud{\Omega}{\nu}{\mu} = \mathrm{d}\Tud{\omega}{\nu}{\mu} + \Tud{\omega}{\nu}{\rho} \wedge \Tud{\omega}{\rho}{\mu}
+\nabla \nabla
+C^\infty(U)
+E
+\nabla (W^\mu e_\mu) = \mathrm{d} W^\mu \otimes e_\mu + W^\mu \Tud{\omega}{\nu}{\mu} \otimes e_\nu
+\nabla \nabla (W^\mu e_\mu) = \mathrm{d} W^\mu \wedge \Tud{\omega}{\nu}{\mu} \otimes e_\nu + W^\mu \, \mathrm{d} \Tud{\omega}{\nu}{\mu} \otimes e_\nu - \mathrm{d}W^\mu \wedge \Tud{\omega}{\nu}{\mu} \otimes e_\nu - W^\mu \Tud{\omega}{\nu}{\mu} \wedge \Tud{\omega}{\rho}{\nu} \otimes e_\rho
+\nabla \nabla (W^\mu e_\mu) = W^\mu \Tud{\Omega}{\nu}{\mu} \otimes e_\nu = W^\mu \nabla \nabla e_\mu
+X
+Y
+\langle - , - \rangle
+\begin{align}  \nabla_X \nabla_Y e_\mu = \nabla_X ( \langle \Tud{\omega}{\nu}{\mu} , Y \rangle e_\nu) & = \langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , Y \rangle, X \rangle e_\nu + \langle \Tud{\omega}{\nu}{\mu} , Y \rangle \langle \Tud{\omega}{\rho}{\nu} , X \rangle e_\rho \\  \nabla_Y \nabla_X e_\mu = \nabla_Y ( \langle \Tud{\omega}{\nu}{\mu} , Y \rangle e_\nu) & = \langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , X \rangle, Y \rangle e_\nu + \langle \Tud{\omega}{\nu}{\mu} , X \rangle \langle \Tud{\omega}{\rho}{\nu} , Y \rangle  e_\rho \\  \nabla_{[X, Y]} e_\mu & = \langle \Tud{\omega}{\nu}{\mu} , [X, Y] \rangle e_\nu \end{align}
+\begin{align} (\nabla_X \nabla_Y - \nabla_Y \nabla_X - \nabla_{[X, Y]}) e_\mu & = (\langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , Y \rangle, X \rangle - \langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , X \rangle, Y \rangle - \langle \Tud{\omega}{\nu}{\mu} , [X, Y] \rangle) \, e_\nu \\ & \phantom{=} + (\langle \Tud{\omega}{\nu}{\rho} , X \rangle \langle \Tud{\omega}{\rho}{\mu} , Y \rangle - \langle \Tud{\omega}{\nu}{\rho} , Y \rangle \langle \Tud{\omega}{\rho}{\mu} , X \rangle) \, e_\nu \end{align}
+\Tud{\Omega}{\nu}{\mu} (X, Y) = \langle \Tud{\Omega}{\nu}{\mu} , X \wedge Y \rangle = \langle \mathrm{d}\Tud{\omega}{\nu}{\mu} , X \wedge Y \rangle + \langle \Tud{\omega}{\nu}{\rho} \wedge \Tud{\omega}{\rho}{\mu} , X \wedge Y \rangle
+\langle \mathrm{d}\Tud{\omega}{\nu}{\mu} , X \wedge Y \rangle = \langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , Y \rangle , X \rangle - \langle \mathrm{d} \langle \Tud{\omega}{\nu}{\mu} , X \rangle , Y \rangle - \langle \Tud{\omega}{\nu}{\mu} , [X, Y] \rangle
+\langle \Tud{\omega}{\nu}{\rho} \wedge \Tud{\omega}{\rho}{\mu} , X \wedge Y \rangle = \langle \Tud{\omega}{\nu}{\rho} , X \rangle \langle \Tud{\omega}{\rho}{\mu}, Y \rangle - \langle \Tud{\omega}{\nu}{\rho} , Y \rangle \langle \Tud{\omega}{\rho}{\mu}, X \rangle 
+\Tud{\Omega}{\nu}{\mu} (X, Y) e_\nu = (\nabla_X \nabla_Y - \nabla_Y \nabla_X - \nabla_{[X, Y]}) e_\mu 
+s\in \mathcal A^0(E)
+\nabla s \in \mathcal A^1(E)
+\nabla s = \alpha \otimes t
+\alpha
+\nabla_X s = \alpha(X)t
+X,Y
+d \alpha (X,Y)= X \alpha(Y) - Y\alpha(X) - \alpha([X,Y])
+F_\nabla(X,Y)(s) = \nabla(\alpha \otimes t)(X,Y) = (d \alpha \otimes t - \alpha \wedge \nabla t)(X,Y)
+=(d \alpha)(X,Y)t - \alpha(X) \nabla_Y t + \alpha(Y) \nabla_X t
+= [X \alpha(Y) - Y\alpha(X) - \alpha([X,Y])]t - \alpha(X) \nabla_Y t + \alpha(Y) \nabla_X t
+= (X \alpha(Y))t + \alpha(Y)\nabla_X t - (Y \alpha(X))t - \alpha(X)\nabla_Y t - \alpha([X,Y])t 
+= \nabla_X (\alpha(Y) t) - \nabla_Y(\alpha(X) t) - \alpha([X,Y])t
+=\nabla_X \nabla_Y s - \nabla_Y \nabla_X s- \nabla_{[X,Y]}s.

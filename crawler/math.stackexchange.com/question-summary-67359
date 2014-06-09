@@ -1,0 +1,43 @@
+P(X+Y>0 \ |\  Y<0)
+X
+Y
+\mu
+\sigma
+P(X+Y>0 \textrm{ and } Y<0)
+\sigma = 1
+\sigma^2
+\sigma
+\mu > 0
+P(\{X + Y > 0\}\cap\{Y < 0\}) = \left.\left.\frac{1}{2}\right(\Phi(\sqrt{2}\mu)  -  [\Phi(\mu)]^2\right)
+P\{Y < 0\} = 1 -\Phi(\mu)
+\begin{align*} P\{X + Y > 0\} &= \Phi(\sqrt{2}\mu)\\  &= P\{X > 0, Y > 0\} + P(\{X + Y > 0\}\cap\{Y < 0\}) +  P(\{X + Y > 0\}\cap\{X < 0\})\\ &= [\Phi(\mu)]^2 + 2P(\{X + Y > 0\}\cap\{Y < 0\}) \end{align*} 
+P\{X + Y > 0 \mid Y < 0\} = \frac{P(\{X + Y > 0\}\cap\{Y < 0\})}{P\{Y < 0\}} = \frac{\Phi(\sqrt{2}\mu)  -  [\Phi(\mu)]^2}{2(1 -\Phi(\mu))}
+\mathbb{P}(X+Y>0 \vert Y<0) = \frac{\mathbb{P}(X+Y>0 \land Y<0)}{\mathbb{P}(Y<0)}
+\mathbb{P}(X+Y>0 \land Y<0)
+(U,V) = (X+Y,Y)
+(2 \mu, \mu)
+(2 \sigma^2, \sigma^2)
+\rho = \frac{1}{\sqrt{2} \sigma^2} \mathbb{E}((X+Y-2\mu)(Y-\mu)) = \frac{1}{\sqrt{2} \sigma^2} \mathbb{E}((Y-\mu)^2) = \frac{1}{\sqrt{2}}
+\mathbb{P}(U > 0 \land V < 0) = \mathbb{P}(V < 0) - \mathbb{P}(U < 0 \land V < 0)
+\mu
+\sigma
+\rm CDF
+\rho=\frac{1}{\sqrt{2}}
+   \mathbb{P}(X+Y>0 \vert Y<0)  = 1 - \frac{\rm CDF_{U,V}(0,0)}{ \rm CDF_{V}(0)} 
+   \mathbb{P}(X+Y>0 \vert Y<0)  = 1 - \frac{\rm CDF_{\mathcal{BN}(\rho)}(-\sqrt{2}\frac{\mu}{\sigma},-\frac{\mu}{\sigma})}{ \Phi(-\frac{\mu}{\sigma}) } 
+\mathbb{P}(X+Y>0 \vert Y<0)
+\frac{\mu}{\sigma}
+X
+Y
+X=\mu+\sigma X_0
+Y=\mu+\sigma Y_0
+X_0
+Y_0
+x
+G
+U(-\infty)=0
+U(0)=\frac18
+U(+\infty)=0
+ \mathrm P(X+Y>0\mid Y<0)=\frac{U(-\mu/\sigma)}{G(-\mu/\sigma)}, 
+ G(x)=\int\limits_{-\infty}^xg(y)\mathrm dy,\qquad\qquad g(y)=\frac1{\sqrt{2\pi}}\mathrm e^{-y^2/2}, 
+ U(x)=\int\limits_{-\infty}^xg(y)\int\limits_{2x-y}^{+\infty}g(z)\mathrm dz\,\mathrm dy=G(x)-\int\limits_{-\infty}^xg(y)G(2x-y)\,\mathrm dy. 

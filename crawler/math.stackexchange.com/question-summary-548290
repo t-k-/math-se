@@ -1,0 +1,17 @@
+I \equiv \int_0^{2\pi} \cos^{2n} x  \ dx, 
+\int_0^{2\pi} f(e^{it}) ie^{it}dt = \oint_{|z|=1}f(z)dz.
+I = -\frac{i}{4^n}\oint_{|z|=1} \frac{(z^2-1)^{2n}}{z^{2n+1}}dz
+2n+1
+z=0
+f(z)\equiv (1+(-z^2))^{2n} = \sum_{k=0}^{2n}{2n\choose k}(-1)^k z^{2k} \equiv \sum_{k=0}^{2n} a_k z^k 
+g(z) \equiv z^{2n+1}
+h(z) \equiv \frac{f(z)}{g(z)} = \sum_{k=-(2n+1)}^{\infty}c_k z^k
+c_{-1}
+g(z)h(z)=z^{2n+1}(c_{-(2n+1)} z^{2n+1}+\cdots+\frac{c_{-1}}{z}+\cdots) = c_{-(2n+1)}+\cdots+c_{-1}z^{2n}+\cdots
+=f(z)
+c_{-1}=a_{2n}={2n\choose n}.
+I=-\frac{i}{4^n} \ 2\pi i {2n\choose n}=\frac{2\pi}{4^n}{2n\choose n}.
+k\ne n
+[0,2\pi]
+ \begin{split} \cos^{2n}x &= \left(\frac{e^{ix}+e^{-ix}}{2}\right)^{2n} = \frac{1}{2^{2n}} \sum_{k=0}^{2n} \binom{2n}{k}e^{ikx}e^{-i(2n-k)x} \\ &= \frac{1}{2^{2n}} \sum_{k=0}^{2n} \binom{2n}{k}e^{i(2k-2n)x} \end{split} 
+ \int_0^{2\pi}\cos^{2n}x \,dx = \int_0^{2\pi}\frac{1}{2^{2n}}\binom{2n}{n} \,dx = \frac{2\pi}{2^{2n}}\binom{2n}{n} 

@@ -1,0 +1,29 @@
+ \displaystyle\prod_{n=2}^{\infty}\left(1-\frac{1}{n^3}\right)
+\omega = -\frac{1}{2}+ i \frac{\sqrt{3}}{2}
+\prod_{n=2}^{\infty}\left(1-\frac{1}{n^3}\right)  =\prod_{n=2}^{\infty}\frac{(n-1)(n^2+n+1)}{n^3}
+  =\lim_{m\to\infty}\frac{1}{m}\prod_{n=2}^m\frac{(n-\omega)(n-\omega^2)}{n^2}
+  =\lim_{m\to\infty}\frac{\Gamma(m+1-\omega)\Gamma(m+1-\omega^2)}{m(m!)^2\Gamma(-\omega)\Gamma(-\omega^2)(1-\omega)(1-\omega^2)(-\omega)(-\omega^2)}
+  =\frac{1}{3\Gamma(-\omega)\Gamma(-\omega^2)}=\frac{\sin{\pi(-\omega)}}{3\pi}
+ =\frac{\cosh (\frac{\sqrt{3}\pi}{2})}{3\pi } 
+ \prod_{n=2}^{m} \frac{(n- \omega)(n-\omega^{2})}{n^{2}}= \frac{1}{2^{2} \times 3^{2} \cdots m^{2}} (2-\omega)(3-\omega) \cdots (m- \omega)(2-\omega^{2})(3-\omega^{2})
+\cdots (m- \omega^{2})
+= \frac{1}{(m!)^{2}} \frac{\Gamma(m+1-\omega)}{(1-\omega)(-\omega)\Gamma(-\omega)} \frac{\Gamma(m+1-\omega^{2})}{(1-\omega^{2})(-\omega^{2})\Gamma(-\omega^{2})}
+ \prod_{n=2}^{\infty}\left(1-\frac{1}{n^3}\right) = \prod_{n=2}^{\infty}\frac{(n-1)(n^2+n+1)}{n^3}
+ = \prod_{n=2}^{\infty} \frac{(n-1)(n- \omega)(n-\omega^{2})}{n^{3}}
+ = \lim_{m \to \infty} \prod_{n=2}^{m} \frac{n-1}{n} \frac{(n- \omega)(n-\omega^{2})}{n^{2}}
+ = \lim_{m \to \infty}  \frac{1}{2} \cdot \frac{2}{3}\ \cdots  \frac{m-1}{m} \frac{1}{2^{2} \cdot 3^{2} \cdots  m^{2}} (2-\omega)(3-\omega) \cdots (m- \omega)  (2-\omega^{2})(3-\omega^{2})
+\cdots (m- \omega^{2})
+ = \lim_{m \to \infty} \frac{1}{m} \frac{1}{(m!)^{2}} \displaystyle \frac{\Gamma(m+1-\omega)}{(1-\omega)(-\omega)\Gamma(-\omega)} \frac{\Gamma(m+1-\omega^{2})}{(1-\omega^{2})(-\omega^{2})\Gamma(-\omega^{2})}
+(1-\omega)(1-\omega^{2}) = 3
+(-\omega)(-\omega^{2})=1
+ = \frac{1}{3\Gamma(-\omega) \Gamma(-\omega^{2})}\lim_{m \to \infty} \frac{\Gamma(m+1- \omega) \Gamma(m+1-\omega^{2})}{m \Gamma(m+1) \Gamma(m+1) }  
+ = \frac{1}{3 \Gamma \left(\frac{1}{2} - i\frac{\sqrt{3}}{2} \right) \Gamma \left(\frac{1}{2} + i\frac{\sqrt{3}}{2} \right)} = \frac{1}{3 \Gamma \left(1- \frac{1+ i \sqrt{3}}{2} \right) \Gamma \left(\frac{1}{2} + i\frac{\sqrt{3}}{2} \right)}
+ = \frac{\sin \left(\pi \frac{1+i \sqrt{3}}{2}  \right)}{3 \pi}= \frac{\sin \frac{\pi}{2} \cos \frac{i \pi \sqrt{3}}{2} + \cos \frac{\pi}{2} \sin \frac{i \pi \sqrt{3}}{2}}{3 \pi}
+= \frac{\cosh \frac{\pi \sqrt{3}}{2}}{3 \pi}
+\displaystyle \lim_{n \to \infty} \frac{\Gamma (n+a)}{\Gamma(n)n^{a}}  = 1
+a \in \mathbb{R}
+a
+ \lim_{m \to \infty} \frac{\Gamma(m+1- \omega) \Gamma(m+1-\omega^{2})}{m \Gamma(m+1) \Gamma(m+1) }
+ = \lim_{m \to \infty} \frac{\Gamma(m+1- \omega) \Gamma(m+1-\omega^{2})}{m^{-\omega}m^{-\omega^{2}} \Gamma(m+1) \Gamma(m+1) } 
+ = \lim_{m \to \infty} \frac{(m-\omega)(m-\omega^{2})}{m^{2}}\frac{\Gamma(m- \omega)}{\Gamma(m) m^{-\omega} } \frac{\Gamma(m-\omega^{2})}{ \Gamma(m)m^{-\omega^{2}} } = 1
+\displaystyle \prod_{n=N}^{\infty} \left(1- \frac{1}{n^{k}} \right)

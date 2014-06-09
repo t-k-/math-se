@@ -1,0 +1,43 @@
+\prod_{i=1}^{r}a_i b_i = \prod_{i=1}^{r}a_i\prod_{i=1}^{r}b_i
+(ab)c = a(bc) 
+ a \cdot b
+c
+b\cdot c
+a
+b\cdot c
+ab = ba
+r=2.
+(a_1 b_1)(a_2 b_2) = a_1 b_1 a_2 b_2 
+ a_1 b_1 a_2 b_2 = a_1 a_2 b_1 b_2 
+a_1 a_2 b_1 b_2 = (a_1 a_2)(b_1 b_2) 
+ (a_1 b_1)(a_2 b_2) = (a_1 a_2)(b_1 b_2) 
+a_i
+b_i
+a_i
+b_i
+2\times 2
+a_i,b_j
+\prod_{i=1}^r a_ib_i = \left(\prod_{i=1}^ra_i\right)\left(\prod_{i=1}^r b_i\right).
+x_1,\ldots, x_n
+\sigma\colon\{1,\ldots,n\}\to\{1,\ldots,n\}
+x_1\cdots x_n = x_{\sigma(1)}\cdots x_{\sigma(n)}.
+n
+n=1
+n=2
+\sigma=\mathrm{id}
+\sigma=(1,2)
+k
+\sigma
+\{1,\ldots,k+1\}
+m
+\sigma(m)=k+1
+\begin{align*} x_{\sigma(1)}\cdots x_{\sigma(k+1)} &= \left(x_{\sigma(1)}\cdots x_{\sigma(m-1)}\right)x_{k+1}\left(x_{\sigma(m+1)}\cdots x_{\sigma(k+1)}\right)\\ &= \left(x_{\sigma(1)}\cdots x_{\sigma(m-1)}\right)\left(x_{\sigma(m_1)}\cdots x_{\sigma(k+1)}\right)x_{k+1}. \end{align*}
+\varphi\colon\{1,\ldots,k\}\to \{1,\ldots,k\}
+\varphi(i) = \left\{\begin{array}{ll} \sigma(i)&\text{if }i\lt m,\\ \sigma(i+1)&\text{if }i\geq m. \end{array}\right.
+\begin{align*} x_{\sigma(1)}\cdots x_{\sigma(k_1)} &= \left(x_{\sigma(1)}\cdots x_{\sigma(m-1)}x_{\sigma(m+1)}\cdots x_{\sigma(k+1)}\right) x_{k+1}\\ &= \left( x_{\varphi(1)}\cdots x_{\varphi(m-1)}x_{\varphi(m)}\cdots x){\varphi(k)}\right)x_{k+1}\\ &= \left(x_1\cdots x_k\right)x_{k+1}, \end{align*}
+x_1,\ldots,x_{2r}
+\sigma\colon\{1,\ldots,2r\}\to\{1,\ldots,2r\}
+x_k = \left\{\begin{array}{ll} a_i &\text{if }k=2i-1\\ b_i &\text{if }k=2i. \end{array}\right.
+x_1\ldots x_{2r} = (a_1b_1a_2b_2\cdots a_rb_r) = \prod_{i=1}^ra_ib_i.
+\sigma(i) = \left\{\begin{array}{ll} 2i-1 &\text{if }1\leq i\leq r,\\ 2i-2r &\text{if }r+1\leq i\leq 2r. \end{array}\right.
+\begin{align*} \prod_{i=1}^{r}a_ib_i &= x_1\ldots x_{2r}\\  &= x_{\sigma(1)}\cdots x_{\sigma(2r)}&&\text{(by generalized commutativity)}\\  &= x_1x_3\cdots x_{2r-1}x_2x_4\cdots x_{2r}\\  &=\left(x_1x_3\cdots x_{2r-1}\right)\left(x_2x_4\cdots x_{2r}\right) &&\text{(by generalized associativity)}\\ &= \left(a_1a_2\cdots a_r\right)\left(b_1b_2\cdots b_r\right)\\ &= \left(\prod_{i=1}^ra_i\right)\left(\prod_{i=1}^rb_i\right). \end{align*}

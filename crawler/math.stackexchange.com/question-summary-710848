@@ -1,0 +1,28 @@
+0<y<x<1
+f_{X,Y}(x,y) = \begin{cases} 8xy,  & \text{if $0<y<x<1$} \\ 0, & \text{otherwise}  \\ \end{cases} 
+W
+W = X - Y
+F_W(w) = P(W\le w) = P(X - Y\le w)
+\int_0^1 \left(\int_{x-w}^x 8xy \;dy \right) dx 
+Y
+X
+w\in [0,1]
+\langle 1,0\rangle
+x-y=w
+y=x-w
+y
+0
+x
+x
+w
+x-w
+x
+x
+w
+1
+F_W(w)=\left\{\begin{array}{1cl} 0 & \textrm{if} & w<0 \\ \int_{0}^{1}\int_{\max\{x-w,0\}}^{x}8xy \, \textrm{d}y \, \textrm{d}x & \textrm{if} & 0\leq w \leq 1 \\ 1 & \textrm{if} & 1<w \end{array}\right.
+\max
+(X,Y)
+f(x,y)
+W=X-Y
+P(W<w) = P(X-Y<w)

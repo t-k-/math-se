@@ -1,0 +1,23 @@
+n
+n/k
+S_1, \ldots, S_{n/k}
+k
+ Y = (k/n) \sum_{i=1}^{n/k} \min S_i 
+Y
+E[Y]
+Y
+X_1\leq \dots\leq X_n
+n
+k
+X_t
+\mathbb{E}[Y] = \frac{k}{n}\sum_{t=1}^{n-k+1} \frac{\binom{n-t}{k-1}}{\binom{n-1}{k-1}} X_t \approx \frac{k}{n}\sum_{t=1}^{n-k+1} e^{-k t/n} X_t.
+X_t
+X_t\in S_i
+X_t
+X_1,\dots, X_{t-1}
+S_i
+X_t
+S_i \setminus \{X_t\} \subseteq \{X_{t+1},\dots, X_n\}
+|S_i \setminus \{X_t\}| = k-1
+\mathbb{E}[Y] = \frac{k}{n}\mathbb{E}\left[\sum_{i=1}^{n/k} \min(S_i)\right] = \frac{k}{n} \sum_{t=1}^{n} X_t \Pr(X_t\text{ is important}).
+\frac{\binom{n-t}{k-1}}{\binom{n-1}{k-1}}

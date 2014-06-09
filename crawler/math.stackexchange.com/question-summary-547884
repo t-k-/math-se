@@ -1,0 +1,12 @@
+X_1,X_2,.....X_n
+DE(\theta,0)
+\sqrt{n}\overline{X}
+Y_n=\sqrt{n}*\overline{X}=\sqrt{n}*\sum_{i=1}^{n} Xi/n=\sum_{i=1}^{n} Xi/\sqrt{n}.
+M_{Y_n}(t)=E[e^{tY_n}]=E[e^{t*(\sum_{i=1}^{n} Xi/\sqrt{n})}]=E[e^{\frac{t}{\sqrt{n}}X_1}]*E[e^{\frac{t}{\sqrt{n}}X_2}]*...*E[e^{\frac{t}{\sqrt{n}}X_n}]=(E[e^{\frac{t}{\sqrt{n}}X}])^n=(M_X(\frac{t}{\sqrt{n}}))^n
+X
+DE(\theta,0)
+MGF
+X
+M_X(t)=\frac{e^{0*t}}{1-\theta^2t^2}=\frac{1}{1-\theta^2t^2}
+M_{\sqrt{n}\overline{X}}=(M_X(\frac{t}{\sqrt{n}}))^n=(\frac{1}{1-\theta^2*\frac{t^2}{n}})^n=?
+\lim_{n \to \infty}

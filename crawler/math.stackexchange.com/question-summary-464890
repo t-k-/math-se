@@ -1,0 +1,39 @@
+y_i = \beta x_i + u_i
+u_i
+N(0, \sigma^2 = 9)
+i = 1, 2, ..., n
+p(\beta) \propto constant
+\beta
+p(\beta|\mathbf{y}) = (18\pi)^{-\frac{1}{2}}\left(\sum_{i=1}^n x_i^2\right)^{\frac{1}{2}} \exp\left[-\frac{1}{18}\sum_{i=1}^n x_i^2 (\beta - \hat{\beta})^2\right]
+\displaystyle{\hat{\beta} = \frac{\sum_{i=1}^n y_ix_i}{\sum_{i=1}^n x_i^2}}
+y
+x
+x_{n+1}
+p(y_{n+1}|x_{n+1},\mathbf{y}) = \int_{\beta} p(y_{n+1}|x_{n+1}, \beta, \mathbf{y}) p(\beta|\mathbf{y})d\beta
+E[y_{n+1}|x_{n+1},\mathbf{y}] = \hat{\beta}x_{n+1}
+\displaystyle{var[y_{n+1}|x_{n+1},\mathbf{y}] = \frac{9[x_{n+1}^2 + \sum_{i=1}^n x_i^2]}{\sum_{i=1}^n x_i^2}}
+y_{n+1}
+x_{n+1}
+p(y_{n+1}|x_{n+1},\mathbf{y}) = \left(\frac{18\pi\left[x_{n+1}^2 + \displaystyle{\sum_{i=1}^n x_i^2}\right]}{ \displaystyle{\sum_{i=1}^n x_i^2}}\right)^{-\frac{1}{2}} \exp\left\{-\frac{\displaystyle{\sum_{i=1}^n x_i^2}}{18\left(x_{n+1}^2 + \displaystyle{\sum_{i=1}^n x_i^2}\right)}\left(y_{n+1}-\hat{\beta}x_{n+1}\right)^2\right\}
+y_{n+1}
+a
+b
+P(a < y_{n+1} < b) = \int_{a}^b p(y_{n+1}|x_{n+1}, \mathbf{y}) dy_{n+1} = 95\%
+y_{n+1}|x_{n+1}, \mathbf{y} \sim N(m, v^2)
+m = E[y_{n+1}|x_{n+1},\mathbf{y}]
+v^2 = var[y_{n+1}|x_{n+1},\mathbf{y}]
+\frac{y_{n+1}-m}{v} \sim N(0,1)
+P(-1.96 < \frac{y_{n+1}-m}{v} < 1.96) = 95\%
+P(-1.96v+m < y_{n+1} < 1.96v+m) = 95\%
+x_{n+1}
+v
+m
+v
+m
+a = -1.96v+m
+b = 1.96v+m
+a
+b
+a
+b
+95\%

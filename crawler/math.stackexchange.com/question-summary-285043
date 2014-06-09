@@ -1,0 +1,13 @@
+x-u\to -du
+f(u)\to \int_0^u f(t)dt
+\int_0^x f(u)(x-u)du=\left[(x-u)\int_0^u f(t)dt\right]_0^x+\int_0^x\int_0^u f(t)dt\;du
+\int_0^x f(u)(x-u)du=\int_0^x\int_0^u f(t)dt\;du
+f
+x>0
+T:=\{(t,u)\ |\ 0\leq u\leq t\leq x\}
+(t,u)
+T
+\phi(t,u):= f(u)
+J:=\int_T \phi(t,u)\ {\rm d}(t,u)
+J=\int_0^x\left(\int_u^x \phi(t,u)\ dt\right)\ du=\int_0^x\left(\int_u^x f(u)\ dt\right)\ du=\int_0^x f(u)(x-u)\  du
+J=\int_0^x\left(\int_0^t \phi(t,u)\ du\right)\ dt=\int_0^x\left(\int_0^t f(u)\ du\right)\ dt\ .

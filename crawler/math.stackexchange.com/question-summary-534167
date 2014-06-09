@@ -1,0 +1,28 @@
+ f(n) = 2n^2 + 2n + 1. 
+n \geq -1/2
+2n+1 \geq 0
+ f(n) \geq 2n^2, 
+n \geq 1
+n \leq n^2
+ f(n) \leq 2n^2 + 2n^2 + n^2 = 5n^2. 
+ 2n^2 \leq f(n) \leq 5n^2 
+n \geq 1
+f(n) \in \Theta(n^2)
+n \geq 1
+ \lim_{n \to \infty} \frac{f(n)}{2n^2} = 1, 
+\epsilon > 0
+ 1-\epsilon \leq \frac{f(n)}{2n^2} \leq 1+\epsilon 
+n
+ 2(1-\epsilon)n^2 \leq f(n) \leq 2(1+\epsilon)n^2 
+n
+f(n) \in \Theta(n^2)
+n \to \infty
+ g(n) = \sum_{i=1}^{n^2} \left(\frac{3}{4}\right)^i. 
+\lim_{n \to \infty} g(n)
+ \lim_{n \to \infty} g(n) = \sum_{i=1}^{\infty} \left(\frac{3}{4}\right)^i = \frac{3/4}{1-3/4} = 3 
+ 3-\epsilon \leq g(n) \leq 3+\epsilon 
+n
+g(n) \in \Theta(1)
+n \to \infty
+ h(n) = 4\log n \times 2\log n = 8 (\log n)^2. 
+\Theta\Bigl((\log n)^2\Bigr)

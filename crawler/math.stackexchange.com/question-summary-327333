@@ -1,0 +1,30 @@
+u
+\tan x
+v
+1
+\int \tan x \,dx = \int \tan x \cdot 1\; dx = \tan x \cdot x - \int \sec^2 x \cdot x\; dx
+u
+x
+v
+\sec^2 x
+\implies\int \tan x\;dx = x \cdot \tan x - \Bigg(x \cdot \tan x - \int 1\cdot \tan x\;dx \Bigg)
+u
+\sec^2 x
+v
+I_n =\displaystyle\int^\frac\pi4_0 \tan^n x\;dx
+n\geqslant 2
+I_n = \frac1{n-1}-I_{n-2}
+I_n = \int \tan^{n-2}x\cdot \tan^2 x\;dx = \int \tan^{n-2} x(1-\sec^2 x)dx
+\int \tan^{n-2} x\cdot \sec^2 x\;dx
+\frac10
+\int \tan^{n-2} x\cdot \sec^2 x\;dx = \bigg[ \tan^{n-2} x\cdot \tan x\bigg]^\frac\pi4_0 - (n-2)\int \tan^{n-3}x\cdot \tan x\;dx
+\implies I_n = I_{n-2}-\bigg( (1-\infty)-(n-2)I_{n-2}\bigg)
+ \begin{align*} \int \tan x \,dx &= \int \frac {\sin x}{\cos x} \,dx \\&= -\int \frac {-\sin x}{\cos x} \,dx\,\,\, \spadesuit \\&= -\ln |\cos x| +C \end{align*} 
+\spadesuit
+\frac{d}{dx} \ln f(x) = \frac{f'(x)}{f(x)}
+f(x) = \cos x
+f'(x) = -\sin x
+\ln
+||
+\tan^n x=\tan^{n-2}x \times \tan^2x =\tan^{n-2}x \times (\sec^2x-1)\,\,\,\forall \,x\geq2 \,\,\,\heartsuit
+ \begin{align*} \int \tan^n x \,dx &=  \int \tan^{n-2}x \times (\sec^2x-1) \,dx \\&= \int \tan^{n-2}x \times (\sec^2x-1) \,dx\,\,\, \text{using} \, \heartsuit \\&= \int \tan^{n-2}x \times (\sec^2x) \,dx - \underbrace{\int \tan^{n-2}x  \,dx}_{I_{n-2}} \end{align*} 

@@ -1,0 +1,25 @@
+(H,<,>)
+q:H\rightarrow \mathbb{C}
+\vert q(x)\vert\leq C\cdot\Vert x \Vert^2
+C>0
+x\in H
+q(x+y)+q(x-y)=2q(x)+2q(y)
+x,y\in H
+q(\lambda x)=\vert \lambda \vert^2 q(x)
+x\in H
+\lambda\in\mathbb{C}
+T:H\rightarrow H
+q(x)=<Tx,x>, \forall x\in H
+g(x,y):=\frac{1}{4}\left( q(x+y)-q(x-y)+i\cdot q(x+iy)-i\cdot q(x-iy) \right)
+Tx:=\sum_{i\in I}g(x,e_i)e_i
+(e_i)_{i\in I}
+g(x,y)=<Tx,y>, \forall x,y\in H
+y \in H
+g(x,\cdot)
+g(x,\alpha y) = \overline{\alpha}g(x,y)
+\alpha \in \mathbb{C}
+ y = \sum_j \langle y,e_j\rangle e_j \qquad\qquad\text{(1)} 
+ \langle Tx,y\rangle = \sum_i g(x,e_i)\langle e_i, y\rangle 
+ = \sum_i \sum_j g(x,e_i) \overline{\langle y,e_j\rangle} \langle e_i, e_j\rangle 
+ = \sum_i g(x,e_i)\overline{\langle y,e_i\rangle} 
+ g(x,y) = \sum_i g(x,e_i)\overline{\langle y,e_i\rangle} 

@@ -1,0 +1,18 @@
+x
+ 2 \int_{0}^{\infty} \frac{e^{\frac{-x^2}{2y}}}{\sqrt{2 \pi y}} e^{-2y}\mathrm dy
+\frac{4}{k^2+4}
+e^{-\pi x^2}
+e^{-\pi x^2}
+x\to x\sqrt{2\pi y}
+2\int_{0}^{\infty} \frac{e^{\frac{-x^2}{2y}}}{\sqrt{2 \pi y}} e^{-2y} dy
+e^{-ixt}
+e^{-2\pi ixt}
+t\to\frac{t}{2\pi}
+2\int_{0}^{\infty} \frac{e^{\frac{-x^2}{2y}}}{\sqrt{2 \pi y}} e^{-2y} dy
+ \begin{align} \int_{-\infty}^\infty e^{\frac{-x^2}{2y}}e^{-2\pi ixt}dx&=\int_{-\infty}^\infty e^{-\pi x^2}e^{-2\pi ixt\sqrt{2\pi y}}\sqrt{2\pi y}\;dx\\ &=\sqrt{2\pi y}\;e^{-2\pi^2 y t^2} \end{align} 
+ \begin{align} 2\int_{0}^{\infty} \frac{\sqrt{2\pi y}\;e^{-2\pi^2 y t^2}}{\sqrt{2 \pi y}} e^{-2y} dy&=2\int_{0}^{\infty} e^{-2\pi^2 y t^2} e^{-2y} dy\\ &=\int_{0}^{\infty} e^{-(1+\pi^2t^2)y} dy\\ &=\frac{1}{1+\pi^2t^2} \end{align} 
+ \int_{-\infty}^\infty e^{\frac{-x^2}{2y}}e^{-ixt}dx=\sqrt{2\pi y}\;e^{-y/2\;t^2} 
+ \begin{align} 2\int_{0}^{\infty} \frac{\sqrt{2\pi y}\;e^{-y/2\;t^2}}{\sqrt{2 \pi y}} e^{-2y} dy&=2\int_{0}^{\infty} e^{-y/2\;t^2} e^{-2y} dy\\ &=\int_{0}^{\infty} e^{-(1+t^2/4)y} dy\\ &=\frac{4}{4+t^2} \end{align} 
+ f(x) = 2 \int_0^{\infty} \frac{e^{-\frac{x^2}{2y}}}{\sqrt{2 \pi y}} e^{-2y} dy. 
+ \widehat{f}(\xi) = \int_{\mathbb{R}^d}^{} f(x) e^{- 2 \pi i x \cdot \xi} dx, 
+\begin{align} \widehat{f}(\xi) &= \int_{-\infty}^{\infty} f(x) e^{- 2 \pi i x \cdot \xi} dx \\ &= 2 \int_{-\infty}^{\infty} \int_0^{\infty} \frac{1}{\sqrt{2 \pi y}} e^{-\frac{1}{2y}(4y \pi i x\xi + x^2 +1)} dy dx \\ &=2 \int_0^{\infty} \frac{1}{\sqrt{2 \pi y}}e^{- \frac{1}{2y}(1 + 4 \pi^2 \xi^2 y^2)} \int_{- \infty}^{\infty} e^{- \frac{1}{2y}(x + 2 \pi i\xi y)^2} dx dy. \end{align}

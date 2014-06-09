@@ -1,0 +1,9 @@
+f(z) = (1-z^2)^{\frac{1}{2}}
+f(z)
+0
+\pi
+O(R^{-2})
+\int f(z) dz = \int \frac{1}{z(1-z^2)^{\frac{1}{2}}} dz   
+\left | \int_0^\pi f(Re^{i \theta}) d ( R e^{i \theta}) \right | = \left | \int_0^\pi  \frac{ i  d \theta}{  \sqrt{ 1- R^2 e^{2 i \theta}}} \right | \leq \int_0^ \pi \frac{ d \theta}{ \sqrt{1 + R^2} } = \frac{ \pi }{ \sqrt{ 1 + R^2}} \to 0
+R \to \infty
+O(R^{-1})

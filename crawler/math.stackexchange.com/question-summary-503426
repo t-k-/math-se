@@ -1,0 +1,8 @@
+\pi
+\cos(n \cdot\arccos x)
+x
+{n\choose 2a}{a\choose 0}+ {n\choose {2a+2}}{{a+1}\choose 1} + {n\choose {2a+4}}{{a+2}\choose 2} + \ldots
+a = 0
+\text{The Chebyshev polynomial of the first kind is given by}
+\text{You can now compare coefficients and obtain the answer.}
+\boxed{\color{red}{T_n(x) = \cos(n\arccos(x)) = \dfrac{n}2 \sum_{k \leq n/2}(-1)^k \dfrac{(n-k-1)!}{k!(n-2k)!}(2x)^{n-2k}}}

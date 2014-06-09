@@ -1,0 +1,18 @@
+(X_n)
+\varepsilon>0
+ \sum_{n=1}^{\infty}\mathbb{P}\left(\frac{1}{n}\lvert X_n\rvert>\varepsilon\right)<\infty. 
+(\Omega,\mathfrak{A},\mathbb{P})
+X_n
+ \sum_{n=1}^{\infty}\mathbb{P}\left(\frac{1}{n}\lvert X_n\rvert>\varepsilon\right)=\sum_{n=1}^{\infty}\mathbb{P}\left(\frac{1}{n}\lvert X_1\rvert>\varepsilon\right). 
+ \sum_{n=1}^{\infty}\mathbb{P}\left(\frac{1}{n}\lvert X_1\rvert>\varepsilon\right)=\mathbb{E}\left(\sum_{n=1}^{\infty}1_{\frac{1}{n}\lvert X_1\rvert>\varepsilon}\right). 
+Y:=\frac{\lvert X_1\rvert}{\varepsilon}
+ A_m:=\left\{\omega\in\Omega: m\leq Y(\omega)<m+1\right\}, m\geq 1. 
+\omega\in\Omega
+Y(\omega)\in A_m
+m\geq 1
+\omega
+\omega\in\Omega
+X_1
+ Y(\omega)\geq \sum_{n=1}^m 1_{\left\{Y>n\right\}}=\sum_{n=1}^{\infty}1_{\left\{Y>n\right\}}. 
+ \Rightarrow\mathbb{E}(Y)\geq\sum_{n=1}^{\infty}\mathbb{E}(1_{\left\{Y>n\right\}})=\sum_{n=1}^{\infty}\mathbb{P}(\left\{Y>n\right\}) 
+ \mathbb{E}(Y)=\frac{1}{\varepsilon}\int_{\Omega}\lvert X_1\rvert\, d\mathbb{P}<\infty. 

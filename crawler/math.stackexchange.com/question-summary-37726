@@ -1,0 +1,15 @@
+f_n(x) = n^cx(1-x^2)^n
+c
+{f_n(x)}
+[0,1]
+{f_n}
+[0,1]
+c
+ f_n (x)=n^c x(1−x^2)^n 
+f'_n (x)= n^c((1-x^2)^n-2nx^2(1-x^2)^{n-1}) = 0 \rightarrow x=\frac{1}{\sqrt{1+2n}}  )
+f(x)=0
+x=0
+x=1
+ |f_n (x)| 
+ \begin{align*} \sup_{0<x<1} |f_n(x)| &= n^c\cdot \frac{1}{\sqrt{1+2n}} \cdot \left(1-\frac{1}{{1+2n}}\right)^n\\ \lim_{n \rightarrow \infty} \sup_{0<x<1} |f_n(x)| &= \lim_{n \rightarrow \infty} \frac{n^c}{\sqrt{1+2n}} \cdot \left(1-\frac{1}{{1+2n}}\right)^n\\ &=\lim_{n \rightarrow \infty} \frac{n^c}{\sqrt{1+2n}} \cdot \left(\left(1+\frac{-1}{{1+2n}}\right)^{(-1-2n)}\right)^{\frac{n}{-1-2n}}\\ &=\lim_{n \rightarrow \infty} \frac{1}{\sqrt{2}n^{0.5-c}}\cdot e^{-0.5} \end{align*} 
+c<0.5 

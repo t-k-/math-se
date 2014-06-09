@@ -1,0 +1,27 @@
+1 - s
+\gamma = 1
+1 - s
+\gamma = 0
+\mathcal{L}^{-1}\frac{\log(s)}{1 + s}
+\mathcal{L}^{-1} \{F(s)\}(t) = f(t) = \frac{1}{2\pi i}\lim_{T\to\infty}\int_{\gamma-iT}^{\gamma+iT}e^{st}F(s)\,ds
+t>0
+\gamma
+\gamma = 0^+
+\log s/(1+s)
+s=-1
+s=0
+s=\infty
+-\infty -i 0^+
+0-i 0^+
+0+i 0^+
+-\infty +i0^+
+0
+|z|\log z  \to 0
+|z|\to0
+f(t)=\frac1{2\pi i} \int_{-\infty}^0\!dx\, \left( \frac{\log (x-i0^+)}{1+x-i0^+ } - \frac{\log (x+i0^+)}{1+x+i0^+ } \right) e^{x t} 
+ f(t)=\mathcal{L}^{-1} \left[ \frac{\log(s)}{s+1}  \right]
+ f(f) \space \underleftrightarrow{\mathcal{L}} \space F(s) \hspace{10mm} e^{-at}f(t)  \space \underleftrightarrow{\mathcal{L}} \space  \frac{\log(s)}{s+1} 
+ e^{t}f(t)=\mathcal{L}^{-1} \left[ \frac{\log(s-1)}{s}  \right] \hspace{10mm} \frac{1}{s} \triangleq  \int_0^t 
+ e^tf(t)=\int_0^t \mathcal{L^{-1}} \left[ \log(s-1) \right] d \tau \hspace{10mm} -t.f(t) \space \underleftrightarrow{\mathcal{L}} \space \frac{d}{ds}F(s)
+G(s=)\mathcal{L^{-1}} \left[ \log(s-1) \right] \rightarrow -t.g(t)=\mathcal{L} \left[ \frac{1}{s-1} \right] \rightarrow g(t)=\frac{-e^t}{t}
+f(t)=e^{-t} \int_0^t \frac{-e^{\tau}}{\tau} d \tau = \int_0^t \frac{-e^{-(t-\tau)}}{\tau} d \tau

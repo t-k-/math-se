@@ -1,0 +1,15 @@
+\frac{\partial L}{\partial q}\dot{q}=\frac{d}{dt}(\frac{\partial L}{\partial \dot{q}})
+L(q,\dot{q},t)
+ S = \int\limits_{t_1}^{t_2} \mathcal{L}(q, \dot{q}, t)dt 
+q_0(t)
+ q(\eta, t) = q_0(t) + \eta \lambda(t) 
+\lambda(t_1) = \lambda(t_2) = 0
+ S(\eta) = \int\limits_{t_1}^{t_2} \mathcal{L}(q_0 + \eta\lambda, \dot{q}_0 + \eta\dot{\lambda}, t)dt 
+S
+ \frac{dS}{d\eta} = \int\limits_{t_1}^{t_2} \frac{d\mathcal{L}(q_0 + \eta\lambda, \dot{q}_0 + \eta\dot{\lambda}, t)}{d\eta}dt = 0 \\ \frac{dq}{d\eta} = \lambda, \frac{d\dot{q}}{d\eta} = \dot{\lambda}, \frac{dt}{d\eta} = 0 \\ \frac{d\mathcal{L}}{d\eta} = \frac{\partial \mathcal{L}}{\partial q}\lambda + \frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda} = 0 \\ \int\limits_{t_1}^{t_2}\left(\frac{\partial \mathcal{L}}{\partial q}\lambda + \frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda}\right)dt = 0 \\  \int\limits_{t_1}^{t_2}\frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda}dt = -\int\limits_{t_1}^{t_2}\frac{\partial \mathcal{L}}{\partial q}\lambda dt 
+ \int\limits_{t_1}^{t_2} \frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda}dt = \left.\lambda \frac{\partial \mathcal{L}}{\partial \dot{q}}\right|_{t_1}^{t_2} - \int\limits_{t_1}^{t_2}  \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) \lambda dt 
+\lambda(t_1) = \lambda(t_2) = 0
+ \int\limits_{t_1}^{t_2} \frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda}dt = - \int\limits_{t_1}^{t_2}  \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) \lambda dt 
+\int\frac{\partial \mathcal{L}}{\partial \dot{q}}\dot{\lambda}dt = -\int\limits\frac{\partial \mathcal{L}}{\partial q}\lambda dt
+ - \int\limits_{t_1}^{t_2}  \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) \lambda dt =  -\int\limits\frac{\partial \mathcal{L}}{\partial q}\lambda dt \\ \int\limits_{t_1}^{t_2} \left(\frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) - \frac{\partial \mathcal{L}}{\partial q}\right)\lambda dt = 0 
+ \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) - \frac{\partial \mathcal{L}}{\partial q} = 0 

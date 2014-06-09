@@ -1,0 +1,26 @@
+ax^2+by^2+cx+dy+exy+c=0
+a,b,c
+ a x^2 + b x y + c y^2 + c x + e y + f = 0 
+ b^2 - 4 a c < 0 
+ 4 a c - b^2 > 0 
+ q = {{64 f (4 a c - b^2) - 64 (a e^2 - b d e - c d^2)} \over {(4ac - b^2)^2}} 
+ s = {1 \over 4} \sqrt { |q| \sqrt { b^2 + (a - c)^2 }} 
+ r_\max = {1 \over 8} \sqrt { 2 |q| {\sqrt{b^2 + (a - c)^2} - 2 q (a + c) }} 
+ r_\min = \sqrt {{r_\max}^2 - s^2} 
+ l = 2 {{ {r_\min}^2 } \over {r_\max}} 
+ g = {{s} \over {r_\max}} 
+ h = {{{r_\max}^2} \over {s}} 
+ x_\Delta = { b e - 2 c d \over 4 a c - b^2} 
+ y_\Delta = { b d - 2 a e \over 4 a c - b^2} 
+ y_T = y_\Delta + {\sqrt {(2 b d - 4 a e)^2 + 4(4 a c - b^2)(d^2 - 4 a f)} \over {2(4 a c - b^2)}} 
+ x_T = {{-b y_T - d} \over {2 a}} 
+ y_B = y_\Delta - {\sqrt {(2 b d - 4 a e)^2 + 4(4 a c - b^2)(d^2 - 4 a f)} \over {2(4 a c - b^2)}} 
+ x_B = {{-b y_B - d} \over {2 a}} 
+ x_L = x_\Delta - {\sqrt {(2 b e - 4 c d)^2 + 4(4 a c - b^2)(e^2 - 4 c f)} \over {2(4 a c - b^2)}} 
+ y_L = {{-b x_L - e} \over {2 c}} 
+ x_R = x_\Delta + {\sqrt {(2 b e - 4 c d)^2 + 4(4 a c - b^2)(e^2 - 4 c f)} \over {2(4 a c - b^2)}} 
+ y_R = {{-b x_R - e} \over {2 c}} 
+ F_{1,x} = x_\Delta - s \ cos (\theta) 
+ F_{1,y} = y_\Delta - s \ sin (\theta)) 
+ F_{2,x} = x_\Delta + s \ cos (\theta) 
+ F_{2,y} = y_\Delta + s \ sin (\theta)) 

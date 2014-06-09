@@ -1,0 +1,32 @@
+\epsilon > 0
+\delta >0
+\int_{E_0}|f|<\epsilon
+E_0 \subset E
+|E_0|<\delta
+E \subset \mathbb R^n
+f \in L(E)
+f
+|f| = \lim\limits_{k\rightarrow \infty} f_k
+E
+f_k:E\rightarrow[0,\infty]
+f_k \leq f_{k+1}
+E
+k\in N
+\epsilon > 0
+f_k
+\int _E f_k  < \frac{\epsilon}{2}
+\int _E |f| = \int _E\lim\limits_{k\rightarrow \infty} f_k
+\int _E\lim\limits_{k\rightarrow \infty} f_k = \lim\limits_{k\rightarrow \infty} \int _E f_k
+\left|\int _E |f| - \int _E f_k \right| < \frac{\epsilon}{2} < \epsilon
+\int _E |f| = \int _E |f| -f_k+f_k = \int _E \left(|f| -f_k \right) +\int _E f_k
+\int _E |f| >0 
+\int _E |f| = \left| \int _E |f|\right|
+\left|\int _E |f| - \int _E f_k \right| < \frac{\epsilon}{2}
+\int _E f_k  < \frac{\epsilon}{2}
+\int _E |f|  < \epsilon
+E_0 \subset E
+\int _{E_0} |f| \leq \int _E |f|  < \epsilon
+\int _E |f| = \left| \int _E \left(|f| -f_k \right) +\int _E f_k \right|
+\left| \int _E \left(|f| -f_k \right) +\int _E f_k \right| \leq \left| \int _E \left(|f| -f_k \right) \right| +\left|\int _E f_k \right| 
+\leq \left| \int _E (|f| -f_k ) \right| +\int _E |f_k| = \left| \int _E (|f| -f_k ) \right| +\int _E f_k
+\int _E |f| \leq \left| \int _E (|f| -f_k ) \right| +\int _E f_k < \frac{\epsilon}{2} + \frac{\epsilon}{2} < \epsilon

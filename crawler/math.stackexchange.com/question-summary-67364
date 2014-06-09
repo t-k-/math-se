@@ -1,0 +1,24 @@
+\sum_{n=0}^{\infty}nk^n.
+k=1
+|k|<1
+|k|\ge1
+ \begin{align} \sum_{n=k}^\infty\binom{n}{k}x^n &=\sum_{n=k}^\infty\binom{n}{n-k}x^n\\ &=\sum_{n=k}^\infty(-1)^{n-k}\binom{-k-1}{n-k}x^n\\ &=\sum_{n=0}^\infty(-1)^n\binom{-k-1}{n}x^{n+k}\\ &=x^k\sum_{n=0}^\infty(-1)^n\binom{-k-1}{n}x^n\\ &=x^k(1-x)^{-k-1} \end{align} 
+ \sum_{n=1}^\infty nk^n=\frac{k}{(1-k)^2} 
+f(x) = \dfrac{1}{1-x} = \displaystyle \sum x^n
+\displaystyle f'(x) = \dfrac{1}{(1-x)^2} = \sum nx^{n-1}
+xf'(x) = \displaystyle \sum nx^n
+|k|<1
+\sum_{n=0}^{\infty}nk^n=k \sum_{n=0}nk^{n-1} = k \sum_{n=0}^{\infty}\frac{d}{dk}(k^n) =k \frac{d}{dk} \sum_{n=0}^{\infty}k^n = k \frac{d}{dk}\frac{1}{1-k}=\frac{k}{(1-k)^2}
+k>1
+|k|\lt 1
+|k|\lt 1
+S_m\to l
+l\in\mathbb{R}
+S_m=\sum_{n=0}^m nk^n.
+\begin{align*} S_m &= 0 + k + \sum_{n=2}^m nk^n\\ &= k +\sum_{n=1}^{m-1}(n+1)k^{n+1}\\ &= k + k\sum_{n=1}^{m-1} nk^n + \sum_{n=1}^{m-1} k^{n+1}\\ &= k + k\sum_{n=1}^{m-1} nk^n + k^2\sum_{n=1}^{m-1} k^{n-1}\\ &= k + kS_{m-1} + k^2\sum_{n=0}^{m-2} k^n\\ &= k + kS_{m-1} + k^2\cdot \frac{1-k^{m-1}}{1-k}. \end{align*}
+\begin{align*} \lim_{m\to\infty}S_m &= k+k\lim_{m\to\infty} S_{m-1}+\frac{k^2}{1-k}-\lim_{m\to\infty}\frac{k^{m+1}}{1-k}\\ l &= k+kl+\frac{k^2}{1-k}-0\\ (1-k)l &= k+\frac{k^2}{1-k}\\ l&= \frac{k}{1-k}+\left( \frac{k}{1-k} \right)^2\\ l&=\frac{k}{(1-k)^2}. \end{align*}
+\sum_{k=1}^n kp^k=\frac{p(np^{n+1}-(n+1)p^n+1)}{(p-1)^2}
+n\to \infty
+\lim_{n\to \infty}\left|\frac{(k+1)}{k}p\right|<1
+|p|<1
+ \sum\limits_{k=1}^\infty kp^k = \frac p{(p-1)^2}+\underbrace{\lim_{n\to \infty} \frac{np^{n+2}-(n+1)p^{n+1}}{(p-1)^2}}_{=0} = \frac p {(p-1)^2} 

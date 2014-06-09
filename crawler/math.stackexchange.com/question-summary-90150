@@ -1,0 +1,11 @@
+X
+Y=2X+3
+M_Y(t)
+Y
+M_X(t)
+M_Y(t)=M_{2X+3}(t)=M_X(2t)\cdot M_3(t)=e^{3t}\cdot M_X(2t)
+M_X(t)= \frac{1}{1-5t}~~~ \text{or}~~~ M_X(t)=\frac{5}{5-t}.
+M_X(t)={1\over 1-5t}
+\lambda=1/5
+t<{1\over10}
+\eqalign{ M_{2X+3}(t)&= \int_{0}^\infty e^{t(2x+3)}\lambda e^{-\lambda x}\, dx\cr &= e^{3t} \int_0^\infty e^{t 2x  }\lambda e^{-\lambda x}\, dx\cr &=e^{3t}\lambda \int_0^\infty e^{-(\lambda-2t)x }\, dx\cr &=e^{3t}\lambda  { e^{-(\lambda-2t)x }\over - (\lambda-2t)}\Bigl|_0^\infty\cr  &=e^{3t}\cdot{\lambda\over  \lambda-2t} \cr &=e^{3t}\cdot{1\over  1-10t} \cr } 

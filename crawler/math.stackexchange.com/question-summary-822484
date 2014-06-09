@@ -1,0 +1,25 @@
+a>0
+ \int_0^\pi \frac{x\sin x}{1-2a\cos x+a^2}dx? 
+0<a<1
+\displaystyle f(z) = \frac{z}{a-e^{-iz}}
+\pm \pi
+\pm \pi + iR
+f(z)
+a-e^{-iz}=e^{\ln a + 2 \pi i n}-e^{-iz}= 0
+z= i \ln a - 2 \pi n
+ 0<a< 1
+ R \to \infty
+ \int_{- \pi}^{0} \frac{z}{a-e^{-ix}} \ dx + \int_{0}^{\pi} \frac{x}{a-e^{-ix}} \ dx + i \int_{0}^{\infty}f(\pi + i t) \ dt + \lim_{R \to \infty} \int_{-\pi}^{\pi} f(t + iR) \ dt 
++ \ i \int_{\infty}^{0} f(-\pi+it) \ dy =0
+ \begin{align} \int_{- \pi}^{0} \frac{x}{a-e^{-ix}} \ dx + \int_{0}^{\pi} \frac{x}{a-e^{-ix}} \ dx  &= -\int_{0}^{\pi} \frac{u}{a-e^{iu}} \ du + \int_{0}^{\pi} \frac{x}{a-e^{-ix}} \ dx \\ &= \int_{0}^{\pi} \frac{-x(a-e^{-ix})+ x(a-e^{ix}) }{(a-e^{ix})(a-e^{-ix})} \ dx \\ &= - 2 i \int_{0}^{\pi} \frac{x \sin x}{1-2a \cos x +a^{2}} \ dx \end{align}
+ \begin{align} i \int_{0}^{\infty} f(\pi + it) \ dt - i \int_{0}^{\infty} f(-\pi + it) \ dt &= i \int_{0}^{\infty} \frac{\pi + it}{a-e^{-i(\pi + it)}} \ dt - i \int_{0}^{\infty} \frac{- \pi + it}{a-e^{-i( -\pi + it)}} \ dy \\ &= i \int_{0}^{\infty} \frac{\pi + it}{a +e^{t}} \ dt - i \int_{0}^{\infty} \frac{- \pi + it}{a+ e^{t}} \ dt \\ &= 2 \pi i \int_{0}^{\infty} \frac{1}{a+e^{t}} \ dt \\ &= 2 \pi i \int_{0}^{\infty} \frac{e^{-t}}{1+ae^{-t}} \ dt \\ &= - \frac{2 \pi i}{a} \ln (1+ae^{-t}) \Big|^{\infty}_{0} \\ &= \frac{2 \pi i}{a} \ln(1+a) \end{align}
+ - 2i \int_{0}^{\pi} \frac{x \sin x}{1-2a \cos x +a^{2}} \ dx + \frac{2 \pi i}{a} \ln(1+a) = 0
+ \int_{0}^{\pi } \frac{x \sin x}{1-2a \cos x +a^{2}} \ dx = \frac{\pi \ln (1+a)}{a}
+a >1
+z=i \ln a
+ \displaystyle \frac{\ln a}{a}
+- 2i \int_{0}^{\pi} \frac{x \sin x}{1-2a \cos x +a^{2}} \ dx + \frac{2 \pi i}{a} \ln(1+a) = 2 \pi i \frac{\ln a}{a} 
+ \int_{0}^{\pi} \frac{x \sin x}{1-2a \cos x+a^{2}} \ dx = \frac{\pi \ln (1+a)}{a} - \frac{\pi \ln a}{a} = \frac{\pi \ln \left(\frac{1+a}{a} \right)}{a}
+a>1
+\sum_{n=1}^{\infty}\frac{\sin{(nx)}}{a^{n+1}}=\frac{\sin x}{1-2a\cos x+a^2}
+\begin{align}I(a)&=\int_0^\pi \frac{x\sin x}{1-2a\cos x+a^2}\mathrm{d}x\\ &=\int_{0}^{\pi}x\sum_{n=1}^{\infty}\frac{\sin{(nx)}}{a^{n+1}}\mathrm{d}x\\ &=\sum_{n=1}^{\infty}\frac{1}{a^{n+1}}\int_{0}^{\pi}x\sin{(nx)}\mathrm{d}x\\ &=\sum_{n=1}^{\infty}\frac{1}{a^{n+1}}\left(\frac{\sin{(n\pi)}}{n^2}-\frac{\pi\cos{(n\pi)}}{n}\right)\\ &=\pi\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n\,a^{n+1}}\\ &=\frac{\pi}{a}\log{\frac{a+1}{a}}.\end{align}

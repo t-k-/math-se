@@ -1,0 +1,23 @@
+\displaystyle\int_0^\infty ne^{-nx}\sin\left(\frac{1}{x}\right)\;dx
+n\to\infty
+ne^{-nx}\sin\left(\frac{1}{x}\right)\to 0
+x>0
+[a,\infty)
+a>0
+\displaystyle\int_a^\infty ne^{-nx}\sin\left(\frac{1}{x}\right)\;dx\to 0
+n\to\infty
+a>0
+y = nx
+{n \over y^2}\sin({n \over y})
+\cos({n \over y})
+y^2e^{-y}
+|\cos({n \over y})| \leq 1
+n
+y
+n
+n
+\int_0^{\infty}e^{-y}\sin({n \over y})\,dy
+= {{1 \over n}}\int_0^{\infty}y^2e^{-y}{{n \over y^2}}\sin({n \over y})\,dy
+{1 \over n}\lim_{y \rightarrow \infty} \big(y^2 e^{-y}\cos({n \over y})\big) - {1 \over n}\lim_{y \rightarrow 0} \big(y^2 e^{-y}\cos({n \over y})\big) - {1 \over n}\int_0^{\infty}(2y - y^2)e^{-y}\cos({n \over y})\,dy
+- {1 \over n}\int_0^{\infty}(2y - y^2)e^{-y}\cos({n \over y})\,dy
+{1 \over n}\int_0^{\infty}(2y + y^2)e^{-y}\,dy

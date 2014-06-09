@@ -1,0 +1,22 @@
+(f/g)'(c)=\frac{g(c)f'(c)-f(c)g'(c)}{[g(c)]^2}
+g'(c)=\lim_{x\to c}\frac{g(x)-g(c)}{x-c}.
+\frac{g(c)f'(c)-f(c)g'(c)}{[g(c)]^2}=\frac{g(c)\left[\frac{f(x)-f(c)}{x-c}\right]-f(c)\left[\frac{g(x)-g(c)}{x-c}\right]}{[g(c)]^2}=
+\frac{\frac{g(c)f(x)-g(c)f(c)}{x-c}+\frac{f(c)g(c)-f(c)g(x)}{x-c}}{[g(c)]^2}=\frac{\frac{g(c)f(x)-g(c)f(c)}{[g(c)]^2}+\frac{f(c)g(c)-f(c)g(x)}{[g(c)]^2}}{x-c}=
+\frac{\frac{g(c)f(x)}{[g(c)]^2}-\frac{g(c)f(c)}{[g(c)]^2}+\frac{f(c)g(c)}{[g(c)]^2}-\frac{f(c)g(x)}{[g(c)]^2}}{x-c}=\frac{\frac{f(x)}{g(c)}-\frac{f(c)}{g(c)}+\frac{f(c)}{g(c)}-\frac{f(c)g(x)}{[g(c)]^2}}{x-c}.
+\frac{\frac{f(x)}{g(x)}-\frac{f(c)}{g(c)}}{x-c},
+\frac{f'(c)g(c) - f(c)g'(c)}{[g'(c)]^2}
+\frac{\frac{f}{g}(x) - \frac{f}{g}(c)}{x-c}
+f(x)g(x)-f(c)g(c)
+f(x)g(x) - f(c)g(x) + f(c)g(x) - f(c)g(c)
+g(x)
+g(c)
+g(x)
+g(c)
+g(x)
+g(c)\neq 0
+f
+g
+c
+g
+c
+\begin{align*} \lim_{x\to c}\frac{(\frac{f}{g})(x) - (\frac{f}{g})(c)}{x-c} &= \lim_{x\to c}\frac{\frac{f(x)}{g(x)} - \frac{f(c)}{g(c)}}{x-c}\\ &= \lim_{x\to c}\frac{\quad\frac{f(x)g(c) - f(c)g(x)}{g(x)g(c)}\quad}{x-c}\\ &= \lim_{x\to c}\frac{f(x)g(c)-f(c)g(x)}{(x-c)g(x)g(c)}\\ &= \lim_{x\to c}\frac{f(x)g(c) - f(c)g(c) + f(c)g(c) - f(c)g(x)}{(x-c)g(x)g(c)}\\ &= \lim_{x\to c}\left(\left(\frac{f(x)-f(c)}{x-c}\right)\frac{g(c)}{g(x)g(c)} - \frac{f(c)}{g(x)g(c)}\left(\frac{g(x)-g(c)}{x-c}\right)\right)\\ &= \left(\lim_{x\to c}\frac{f(x)-f(c)}{x-c}\right)\left(\lim_{x\to c}\frac{1}{g(x)}\right)\\&\qquad\quad - \left(\lim_{x\to c}\frac{f(c)}{g(x)g(c)}\right)\left(\lim_{x\to c}\frac{g(x)-g(c)}{x-c}\right)\\ &= f'(c)\left(\frac{1}{g(c)}\right) - \left(\frac{f(c)}{[g(c)]^2}\right)g'(c)\\ &= \frac{f'(c)g(c) - f(c)g'(c)}{[g(c)]^2}. \end{align*}

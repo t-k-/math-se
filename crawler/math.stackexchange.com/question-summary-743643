@@ -1,0 +1,34 @@
+(F,H)_{p,q} = (F,H)_{P,Q}
+dP\wedge dQ = dp \wedge dq
+ \sum_i \det\left( \frac{\partial(P_j, P_k)}{\partial(p_i, q_i)} \right) = \sum_i \det\left( \frac{\partial(Q_j, Q_k)}{\partial(p_i, q_i)} \right) = 0, \sum_i \det\left( \frac{\partial(P_j, Q_k)}{\partial(p_i, q_i)} \right) = \delta_{j,k}, 
+ \sum_i \det\left( \frac{\partial(p_j, p_k)}{\partial(P_i, Q_i)} \right) = \sum_i \det\left( \frac{\partial(q_j, q_k)}{\partial(P_i, Q_i)} \right) = 0, \sum_i \det\left( \frac{\partial(p_j, q_k)}{\partial(P_i, Q_i)} \right) = \delta_{j,k}. 
+ \sum_i \det\left( \frac{\partial(p_i, q_i)}{\partial(P_j, P_k)} \right) = \sum_i \det\left( \frac{\partial(p_i, q_i)} {\partial(Q_j, Q_k)} \right) = 0, \sum_i \det\left( \frac{\partial(p_i, p_i)}{\partial(P_j, Q_k)} \right) = \delta_{j,k}, 
+ \sum_i \det\left( \frac{\partial(P_i, Q_i)}{\partial(p_j, p_k)} \right) = \sum_i \det\left( \frac{\partial(P_i, Q_i)}{\partial(q_j, q_k)} \right) = 0, \sum_i \det\left( \frac{\partial(P_i, Q_i)}{\partial(p_j, q_k)} \right) = \delta_{j,k}. 
+A
+A^\star\omega^2=\omega^2
+\omega^2=dp_i\wedge dq^i
+R^{2n}
+A^\star\omega^2=A^\star(dp_i\wedge dq^i)=(A^\star dp_i) \wedge (A^\star dq^i)=d(p_i\circ A)\wedge d(q^i\circ A)=dP_i\wedge dQ^i\quad (1)
+A
+dP_i\wedge dQ^i=dp_i\wedge dq^i \qquad (2)
+\Omega=\begin{pmatrix} 0\, & E\, \\ -E\, & 0\,\end{pmatrix}
+\omega^2
+\Lambda=\left(\frac{\partial x^i}{\partial x'^{i'}}\right)=\begin{pmatrix} p_P & p_Q \\ q_P & q_Q\end{pmatrix}
+p_P
+\Big(\frac{\partial p_i}{\partial P_j}\Big)
+\Lambda^T\Omega\Lambda=\Omega \qquad (3)
+I
+\ I=\Omega^{-1}=\big(\Lambda^T \Omega \Lambda\big)^{-1}=\Lambda^{-1}I(\Lambda^{-1})^T\qquad (4)
+I=\begin{pmatrix} 0\, & -E\, \\ E\, & 0\,\end{pmatrix}, \ \Lambda^{-1}=\begin{pmatrix}P_p & P_q \\ Q_p &Q_q\end{pmatrix}
+P,\ Q
+A
+(Q,P)_{p,q}=E,\ (P,P)_{p,q}=(Q,Q)_{p,q}=0
+\begin{pmatrix} 0\, & -E\, \\ E\, & 0\,\end{pmatrix}=\begin{pmatrix} P_q P_p^T-P_p P_q^T & P_q Q_p^T-P_p Q_q^T \\ Q_q P_p^T-Q_p P_q^T & Q_q Q_p^T-Q_p Q_q^T \end{pmatrix}\qquad (5)
+\begin{align}P_q P_p^T-P_p P_q^T =&(P,P)_{p,q}=0\\[5pt]Q_q Q_p^T-Q_p Q_q^T =&(Q,Q)_{p,q}=0\qquad (6)\\[5pt]Q_q P_p^T-Q_p P_q^T  =& (Q,P)_{p,q}=E\end{align}
+F,\ H
+(F,H)_{p,q}=H_PF_Q^T-H_QF_P^T=(F,H)_{P,Q}
+A
+(F,H)_{p,q}=(F,H)_{P,Q}
+\begin{split}(F,H)_{p,q}=&H_pF_q^T-H_qF_p^T\\ =&(H_PP_p+H_QQ_p)(F_PP_q+F_QQ_q)^T-(H_PP_q+H_QQ_q)(F_PP_p+F_QQ_p)^T\\ =&H_P(P,P)_{p,q}F_P^T+H_P(Q,P)_{p,q}F_Q^T +H_Q(P,Q)_{p,q}F_P^T+H_Q(Q,Q)_{p,q}F_Q^T\end{split}
+\begin{pmatrix} 0\, & E\, \\ -E\, & 0\,\end{pmatrix}=\begin{pmatrix} p_P^T q_P-q_P^Tp_P & p_P^T q_Q-q_P^Tp_Q \\ p_Q^T q_P-q_Q^Tp_P & p_Q^T q_Q-q_Q^Tp_Q \end{pmatrix}\qquad(7)
+\begin{pmatrix} p_P^T q_P-q_P^Tp_P & p_P^T q_Q-q_P^Tp_Q \\ p_Q^T q_P-q_Q^Tp_P & p_Q^T q_Q-q_Q^Tp_Q \end{pmatrix}\begin{pmatrix} P_q P_p^T-P_p P_q^T & P_q Q_p^T-P_p Q_q^T \\ Q_q P_p^T-Q_p P_q^T & Q_q Q_p^T-Q_p Q_q^T \end{pmatrix}=\begin{pmatrix} E\, & 0\, \\ 0\, & E\,\end{pmatrix}=E_{2n}

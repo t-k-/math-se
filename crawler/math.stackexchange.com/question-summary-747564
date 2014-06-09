@@ -1,0 +1,17 @@
+L_1 = \{a^nb^m \mid 2n \le m \le 3n\}
+L_2 = \{a^nb^mc^k \mid n = m \: or \: m \ne k\}
+\rightarrow q_0$$\rightarrow (a,0,11)$$\rightarrow q_1 $$\rightarrow (b,11,\lambda) \: and \: (b,111,\lambda)$$\rightarrow q_2$$\rightarrow (\lambda,0,\lambda)$$\rightarrow q_3
+\rightarrow (a,0,11)
+\rightarrow (b,11,\lambda) \: and \: (b,111,\lambda)
+\rightarrow (\lambda,0,\lambda)
+q_1 \rightarrow (a,1,11) \rightarrow q_1
+q_2 \rightarrow (b,11,\lambda) \: and \: (b,111, \lambda) \rightarrow q_2
+\delta(q_0,a,0) = (q_1,10)
+\delta(q_0,\lambda,0) = (q_3,\lambda)
+\delta(q_1,a,1) = (q_1,11)
+\delta(q_1,b,11) = (q_2,\lambda)
+\delta(q_1,b,111) = (q_2,\lambda)
+\delta(q_2,b,11) = (q_2,\lambda)
+\delta(q_2,b,111) = (q_2,\lambda)
+\delta(q_1,b,11) = (q_2,\lambda)
+\delta(q_2,\lambda,0) = (q_3,\lambda)

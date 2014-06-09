@@ -1,0 +1,10 @@
+(X, \mathcal F, \mu)
+f\in M^+(X,\mu)
+t>0
+S_f(t)=\{x\in X:f(x)>t\} \quad \Psi_f(t)=\mu(S_f(t))
+\int_Xfd\mu=\int_0^\infty \Psi_f(t)dt
+\{f_n\}_{n=0}^\infty
+f:f\in M^+ \land \lim_{n\to \infty}\int_Xf_nd\mu=\int_Xfd\mu
+f
+\sigma
+ \begin{align} \int_0^\infty \Psi_f(t)\,\mathrm dt&=\int_0^\infty\int_X 1_{S_f}(t)\,\mathrm \mu(\mathrm dx)\,\mathrm dt=\int_X\,\int_0^\infty 1_{S_f}(t)\,\mathrm dt\,\mu(\mathrm dx)\\ &=\int_X\int_0^\infty 1_{[0,f(x)]}\,\mathrm dt\,\mathrm \mu(\mathrm dx)=\int_X f(x)\,\mu(\mathrm dx), \end{align} 

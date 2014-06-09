@@ -1,0 +1,34 @@
+ \max_x \ ax_1 \ + x_2 
+ v_1x_1 - v_2x_2 \geq b_1 \\ v_1x_1 - v_2x_2 \geq b_2 \\  x_1 \geq 0 \\ x_2 \geq 0
+ \min_\gamma \ b_1\gamma_1 + b_2\gamma_2 
+ v_1\gamma_1 - v_2\gamma_2 \geq 1 \\ \gamma_1 \geq 0 \\ \gamma_2 \geq 0
+ \max_x \ ax_1 \ + x_2 
+ v_1x_1 - v_2x_2 \geq b_1 \\ v_1x_1 - v_2x_2 \geq b_2 \\  x_1 \geq 0 \\ x_2 \geq 0
+ \min_x -ax_1 - x_2
+ v_2x_2 - v_1x_1 +b_1 \le 0 \\ v_2x_2 - v_1x_1 + b_2 \le 0 \\  x_1 \geq 0 \\ x_2 \geq 0
+ \max_ \gamma  \min_x -ax_1 - x_2
++ \gamma_1(v_2x_2 - v_1x_1 +b_1) \\ + \gamma_2(v_2x_2 - v_1x_1 + b_2)
+x_1 \geq 0 \\ x_2 \geq 0 \\ \gamma_1 \geq 0 \\ \gamma_2 \geq 0
+ \max_ \gamma  \min_x \gamma_1 b_1 + \gamma_2 b_2
+ + x_1(-v_1 \gamma_1 -v_1 \gamma_2 -a)
+ + x_2(v_2 \gamma_1 +v_2 \gamma_2 -1)
+x_1 \geq 0 \\ x_2 \geq 0 \\ \gamma_1 \geq 0 \\ \gamma_2 \geq 0
+ \max_ \gamma  \gamma_1 b_1 + \gamma_2 b_2
+-v_1 \gamma_1 -v_1 \gamma_2 -a \ge 0
+v_2 \gamma_1 +v_2 \gamma_2 -1 \ge 0
+ \gamma_1 \geq 0 \\ \gamma_2 \geq 0
+ \min_ \gamma  - \gamma_1 b_1 - \gamma_2 b_2
+-v_1 \gamma_1 -v_1 \gamma_2 \ge a
+v_2 \gamma_1 +v_2 \gamma_2 \ge 1
+ \gamma_1 \geq 0 \\ \gamma_2 \geq 0
+\alpha = (a,1)^T
+V = \begin{bmatrix} v_1 & -v_2 \\ v_1 & -v_2 \end{bmatrix}
+b= (b_1,b_2)^T
+\sup_{x \ge 0} \{ \alpha^Tx | V x \ge b \}
+\sup_{x \ge 0} \inf_{\gamma \ge 0} \alpha^Tx +\gamma^T(Vx-b) 
+\inf
+\sup
+\inf_{\gamma \ge 0} \sup_{x \ge 0}  \alpha^Tx +\gamma^T(Vx-b)  = \inf_{\gamma \ge 0} \sup_{x \ge 0}  (\alpha+V^T \gamma)^T x - b^T\gamma
+\alpha+V^T \gamma
+\inf_{\gamma \ge 0} \{ -b^T \gamma | V^T \gamma \le -\alpha \}
+\min \{ -(b_1 \gamma_1+b_2 \gamma_2) | \gamma_1 \ge 0, \gamma_2 \ge 0, v_1\gamma_1+v_1 \gamma_2 \le -a, -v_2\gamma_1+-v_2 \gamma_2 \le -1 \}

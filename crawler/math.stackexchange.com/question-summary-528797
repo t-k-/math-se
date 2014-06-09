@@ -1,0 +1,14 @@
+\forall
+\exists
+\leftrightarrow
+(\lnot a\in C \lor b \in C)\land(\not b \in C \lor a \in C)
+\in
+\lnot(x \in X) \equiv x \notin X
+\lnot\Big((\forall a \in A)(\exists b \in B)(a \in C \leftrightarrow b\in C)\Big)\tag{1}
+\equiv \lnot \Big[(\forall a \in A)(\exists b \in B)\Big((a \notin  C \lor b \in C)\land( b \notin C \lor a \in C)\Big)\Big]\tag{2}
+\equiv (\exists a \in A)(\forall b \in B)  \Big( \lnot(a\notin C \lor b \in C) \lor \lnot(b\notin C \lor a\in C)\Big)\tag{3}
+ \equiv (\exists a \in A)(\forall b \in B)  \Big((a\in C \land b \notin C) \lor (b\in C \land a\notin C)\Big)\tag{4}
+(1)
+(2)
+(3)
+(4)

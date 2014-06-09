@@ -1,0 +1,27 @@
+f \in L^2(\mathbb{R}^n)
+P_y(x)
+x \in \mathbb{R}^n
+y > 0
+P_y(x) = \frac{C_n y}{(y^2 + |x|^2)^\frac{n+1}{2}},
+C_n
+n
+\int_{\mathbb{R}^n} P_y(x) dx = \int_{\mathbb{R}^n} P_1(x) dx = 1
+y > 0
+u_f(x,y) = P_y \ast f (x)
+T(f)
+T(f)(x) = \left(\int_0 ^\infty  \int_0 ^\infty \frac{|u_f(x,y_1) - u_f(x,y_2)|^2}{|y_1 - y_2|^2}dy_1 dy_2 \right)^\frac{1}{2}.
+||T(f)||_2 = C||f||_2,
+C
+f
+||T(f)||^2_2 = \int_{\mathbb{R^n}} \int_0 ^\infty  \int_0 ^\infty \frac{|u_f(x,y_1) - u_f(x,y_2)|^2}{|y_1 - y_2|^2}dy_1 dy_2 dx = \\ \int_0 ^\infty  \int_0 ^\infty \frac{1}{|y_1 - y_2|^2} \int_{\mathbb{R}^n} |u_f(x,y_1) - u_f(x,y_2)|^2 dx dy_1 dy_2 =\\ \int_0 ^\infty  \int_0 ^\infty \frac{1}{|y_1 - y_2|^2} \int_{\mathbb{R}^n} |\widehat{u_f( \cdot ,y_1)}(\xi) - \widehat{u_f(\cdot ,y_2)}(\xi)|^2 d\xi dy_1 dy_2. 
+\hat{P_y}(\xi) = e^{-2\pi |y| |\xi|}
+ \widehat{u_f( \cdot ,y)}(\xi) = \hat{P_y}(\xi) \hat{f}(\xi) = e^{-2\pi |y| |\xi|} \hat{f}(\xi).
+ ||T(f)||_2 = \int_0 ^\infty  \int_0 ^\infty \frac{1}{|y_1 - y_2|^2} \int_{\mathbb{R}^n} |\hat{f}(\xi)|^2|e^{-2\pi |y_1| |\xi|} - e^{-2\pi |y_2| |\xi|} |^2 d\xi dy_1 dy_2,
+|e^{-2\pi |y_1| |\xi|} - e^{-2\pi |y_2| |\xi|} |^2
+y_1,y_2
+|\hat{f}(\xi)|^2
+y_1|\xi| = z_1
+y_2|\xi| = z_2
+\xi
+ \|T(f)\|_2 =\int_{\mathbb{R}^n}  |\hat{f}(\xi)|^2 d\xi \int_0 ^\infty  \int_0 ^\infty \left|\frac{e^{-2\pi  y_1  |\xi|} - e^{-2\pi  y_2  |\xi|}}{y_1 - y_2}  \right|^2 \, dy_1 \,dy_2 
+ \|T(f)\|_2 =\int_{\mathbb{R}^n}  |\hat{f}(\xi)|^2 d\xi \int_0 ^\infty  \int_0 ^\infty \left|\frac{e^{-2\pi z_1 } - e^{-2\pi z_2  }}{z_1 - z_2}  \right|^2 \, dz_1 \,dz_2 

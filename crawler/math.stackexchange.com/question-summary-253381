@@ -1,0 +1,21 @@
+\displaystyle \int_{0}^{\frac{\pi}{2}}\cos^{m}(x)\cos(nx)dx=\frac{\pi\Gamma(m+1)}{2^{m+1}\Gamma(\frac{m+n}{2}+1)\Gamma(\frac{m-n}{2}+1)}
+m=n
+\frac{\pi}{2^{m+1}}
+\displaystyle\int_{0}^{\frac{\pi}{2}}\cos^{m}(x)\cos(nx)dx=\frac{m}{n}\int_{0}^{\frac{\pi}{2}}\cos^{m-1}(x)\cos(n-1)xdx-\frac{m}{n}\int_{0}^{\frac{\pi}{2}}\cos^{m}(x)\cos(nx)dx
+\displaystyle \left(1+\frac{m}{n}\right)I_{m,n}=\frac{m}{n}I_{m-1,n-1}
+n=n-1, \;\ m=m-1
+z=e^{ix}
+\cos x=\frac{e^{ix}+e^{-ix}}{2}=\frac{z+\frac{1}{z}}{2}
+dx=\frac{dz}{iz}
+I
+I_1
+I_1=\frac{1}{i2^m}\int_{0}^{i}(1+z^2)^mz^{n-m-1}dz
+z^n=\cos nx +i\sin nx
+z^2=-y
+I_1=\frac{i^{n-m-1}}{2^{m+1}}\int_{0}^{1}(1-y)^my^{\frac{n-m}{2}-1}dz=\frac{i^{n-m-1}}{2^{m+1}}B\left(m+1,\frac{n-m}{2}\right)
+B(x,y)
+i^{n-m-1}=\sin\left(\pi\frac{n-m}{2}\right)-i\cos\left(\pi\frac{n-m}{2}\right)
+I_1
+I=\mathfrak{Re}(I_1)= \frac{\sin\left(\pi\frac{n-m}{2}\right)}{2^{m+1}}B\left(m+1,\frac{n-m}{2}\right)
+B(x,y)=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
+\Gamma(x)\Gamma(1-x)=\frac{\pi}{\sin\pi x}

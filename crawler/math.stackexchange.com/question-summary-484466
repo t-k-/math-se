@@ -1,0 +1,18 @@
+z = x + iy
+w = u + iv
+u = u(x,y)
+v = v(x,y)
+x = x(u,v)
+y = y(u,v)
+\phi(x,y)
+w
+\psi(u,v):=\phi(x(u,v,),y(u,v))
+\nabla \psi = \nabla \phi \times\overline{\dfrac{dz}{dw}}
+\nabla \psi = \dfrac{d\psi}{du} + i\dfrac{d\psi}{dv}
+\nabla \phi = \dfrac{d\phi}{dx} + i\dfrac{d\phi}{dy}
+i
+\begin{align*} \dfrac{d\psi}{du} + i\dfrac{d\psi}{dv} &= \dfrac{d\phi}{dx}\dfrac{dx}{du} + \dfrac{d\phi}{dy}\dfrac{dy}{du} + i\bigg[\dfrac{d\phi}{dx}\dfrac{dx}{du} + \dfrac{d\phi}{dy}\dfrac{dy}{dv}\bigg] \\ &= \dfrac{d\phi}{dx}\bigg[\dfrac{dx}{du} + i\dfrac{dx}{dv}\bigg] +\dfrac{d\phi}{dy}\bigg[\dfrac{dy}{du} + i\dfrac{dy}{dv}\bigg] \\ &= \dfrac{d\phi}{dx}\bigg[\dfrac{dx}{du} - i\dfrac{dy}{du}\bigg] +i\dfrac{d\phi}{dy}\bigg[\dfrac{dx}{du} - i\dfrac{dy}{du}\bigg] \\ &= \bigg[\dfrac{d\phi}{dx} + i\dfrac{d\phi}{dy}\bigg]\bigg[\dfrac{dx}{du} - i\dfrac{dy}{du}\bigg] \end{align*}
+\bigg[\dfrac{dx}{du} - i\dfrac{dy}{du}\bigg] = \overline{\dfrac{dz}{dw}}
+dz/dw = dx/du + i dy/du
+w=u
+\frac{z(u+h,v)-z(u,v)}{h}

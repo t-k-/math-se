@@ -1,0 +1,36 @@
+A
+B
+\text{vec}(A)
+A
+\text{vec}(A) \text{vec}(B)^T
+\text{vec}(A) \text{vec}(B)^T
+A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}, ~~~~ B = \begin{pmatrix} b_{11} & b_{12} & \cdots & b_{1n} \\ b_{21} & b_{22} & \cdots & b_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ b_{n1} & b_{n2} & \cdots & b_{nn} \end{pmatrix}. 
+\begin{align} \operatorname{vec}(A) \operatorname{vec}(B)^T  &= \begin{pmatrix} a_{11} \\ \vdots \\ a_{n1} \\ a_{12} \\ \vdots \\ a_{n2} \\ \vdots \\ a_{1n} \\ \vdots \\ a_{nn} \end{pmatrix} \begin{pmatrix} b_{11} & \cdots & b_{n1} & b_{12} & \cdots & b_{n2} & \cdots & b_{1n} & \cdots & b_{nn} \end{pmatrix} \\ &=  \begin{pmatrix} a_{11}b_{11} & a_{11}b_{21} & \cdots & a_{11}b_{nn} \\ a_{21}b_{11} & a_{21}b_{21} & \cdots & a_{21}b_{nn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{nn}b_{11} & a_{nn}b_{21} & \cdots & a_{nn}b_{nn} \end{pmatrix} \end{align}
+n^2 \times n^2
+a_{ij} \operatorname{vec}(B)^T
+a_{ij}\operatorname{vec}(B)^T
+n \times n
+i, j
+n^2 \times n^2
+A \otimes B
+A \otimes B = \begin{pmatrix}    a_{11} b_{11} & a_{11} b_{12} & \cdots & a_{11} b_{1n} &                     \cdots & \cdots & a_{1n} b_{11} & a_{1n} b_{12} & \cdots & a_{1n} b_{1n} \\    a_{11} b_{21} & a_{11} b_{22} & \cdots & a_{11} b_{2n} &                     \cdots & \cdots & a_{1n} b_{21} & a_{1n} b_{22} & \cdots & a_{1n} b_{2n} \\    \vdots & \vdots & \ddots & \vdots & & & \vdots & \vdots & \ddots & \vdots \\    a_{11} b_{n1} & a_{11} b_{n2} & \cdots & a_{11} b_{nn} &                     \cdots & \cdots & a_{1n} b_{p1} & a_{1n} b_{n2} & \cdots & a_{1n} b_{nn} \\    \vdots & \vdots & & \vdots & \ddots & & \vdots & \vdots & & \vdots \\    \vdots & \vdots & & \vdots & & \ddots & \vdots & \vdots & & \vdots \\    a_{n1} b_{11} & a_{n1} b_{12} & \cdots & a_{n1} b_{1n} &                     \cdots & \cdots & a_{nn} b_{11} & a_{nn} b_{12} & \cdots & a_{nn} b_{1n} \\    a_{n1} b_{21} & a_{n1} b_{22} & \cdots & a_{n1} b_{2n} &                     \cdots & \cdots & a_{nn} b_{21} & a_{nn} b_{22} & \cdots & a_{nn} b_{2n} \\    \vdots & \vdots & \ddots & \vdots & & & \vdots & \vdots & \ddots & \vdots \\    a_{n1} b_{n1} & a_{n1} b_{n2} & \cdots & a_{n1} b_{nn} &                     \cdots & \cdots & a_{nn} b_{n1} & a_{nn} b_{n2} & \cdots & a_{nn} b_{nn}  \end{pmatrix}
+\operatorname{vec}(A)\operatorname{vec}(B)^T
+n \times n
+A \otimes B
+\operatorname{vec}(A)\operatorname{vec}(B)^T
+A \otimes B
+\|\operatorname{vec}(A)\operatorname{vec}(B)^T\|_\infty
+|a_{ij}|
+\|\operatorname{vec}(A)\operatorname{vec}(B)^T\|_1
+|a_{ij}| \sum_{k, l} |b_{kl}|.
+\operatorname{vec}(A)\operatorname{vec}(B)^T
+A \otimes B
+\operatorname{vec}(A)\operatorname{vec}(B)^T
+A \otimes B
+\operatorname{rank}(A)\operatorname{rank}(B)
+\operatorname{vec}(A)\operatorname{vec}(B)^T
+\|\operatorname{vec}(A)\| \|\operatorname{vec}(B)\|
+\|\operatorname{vec}(A)\|
+A
+A
+\operatorname{vec}(A)\operatorname{vec}(B)^T = \|\operatorname{vec}(A)\| \|\operatorname{vec}(B)\| \frac{\operatorname{vec}(A)}{\|\operatorname{vec}(A)\| }\frac{\operatorname{vec}(B)^T}{\|\operatorname{vec}(B)\| },

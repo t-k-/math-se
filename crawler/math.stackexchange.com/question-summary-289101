@@ -1,0 +1,19 @@
+n
+\frac{1}{2}
+t
+u=4 t (1-t)
+t
+2t=1-\sqrt{1-u}
+u
+t
+2t=1+\sqrt{1-u}
+u
+t
+t=1
+t = \frac{1}{2} \left(1-\sqrt{1-u}\right)
+   \frac{1}{2 \pi i} \oint \frac{1}{\left(4 t(1-t) \right)^n} \frac{\mathrm{d}t}{t(1-2t)} =  \frac{1}{2 \pi i} \oint  \frac{1}{2} \frac{1+\sqrt{1-u}}{1-u} \frac{\mathrm{d}u}{u^{n+1}} = [u^n] \frac{1}{2} \frac{1+\sqrt{1-u}}{1-u} 
+\begin{eqnarray}    \sum_{j=0}^n \binom{n+j-1}{j} \frac{1}{2^{n+j}} &=& [u^n] \frac{1}{2} \frac{1+\sqrt{1-u}}{1-u} = [u^n] \frac{1}{2} \left( \frac{1}{1-u} + \frac{1}{\sqrt{1-u}} \right) \\ &=& \frac{1}{2} + \frac{1}{2} \binom{-1/2}{n} = \frac{1}{2} + \frac{1}{2^{2n+1}} \binom{2n}{n} \end{eqnarray} 
+n
+g(u) = \frac{1}{2} \frac{1+ \sqrt{1-u}}{1-u}
+[u^n] g(u) \sim \frac{1}{2}
+    g(u) = \frac{1}{2} \frac{1}{1-u} + \mathcal{o}\left(\frac{1}{1-u}\right)  

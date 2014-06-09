@@ -1,0 +1,17 @@
+ \nabla \cdot \vec{F} = \frac{1}{r^2} \partial_r (r^2 F^r) + \frac{1}{r \sin \theta} \partial_\theta (\sin \theta F^\theta) + \frac{1}{r \sin \theta} \partial_\phi F^\phi 
+g = r^4 \sin^2 \theta
+ \nabla \cdot \vec{F} = \frac{1}{\sqrt{g}} \partial_\alpha (\sqrt{g} F^\alpha ) 
+ \nabla \cdot \vec{F} = \frac{1}{r^2 \sin \theta} \partial_r (r^2 \sin \theta F^r ) + \frac{1}{r^2 \sin \theta} \partial_\theta (r^2 \sin \theta F^\theta ) + \frac{1}{r^2 \sin \theta} \partial_\phi (r^2 \sin \theta F^\phi ) \\ = \frac{1}{r^2} \partial_r (r^2 F^r) + \frac{1}{ \sin \theta} \partial_\theta (\sin \theta F^\theta) + \partial_\phi F^\phi
+\pmb{e}_{\mu}
+\pmb{e}_{\mu}\cdot\pmb{e}_{\nu}=g_{\mu\nu}
+\pmb V
+\pmb F=F^{\mu}\pmb{e}_{\mu}
+F^{\mu}
+\pmb F
+g=r^4\sin^2\theta
+\hat{x}^{\mu}=(r,\phi,\theta)
+ \pmb{e}_{\mu}\cdot\pmb{e}_{\nu}=g_{\mu\nu}=\begin{pmatrix} 1 & 0 & 0\\  0 & r^2\sin^2\theta & 0\\  0 & 0 & r^2 \end{pmatrix}=\begin{pmatrix} g_{rr} & 0 & 0\\  0 & g_{\phi\phi} & 0\\  0 & 0 & g_{\theta\theta} \end{pmatrix} 
+ x^{\mu}=(r,\phi \,r\sin\theta,\theta \,r)=\sqrt{g_{\mu\mu}}\hat{x}^{\mu} 
+\pmb F=F^{\mu}\pmb{e}_{\mu}
+ \nabla\cdot\pmb F=\frac{1}{\sqrt g}\frac{\partial}{\partial x^{\mu}}\left(\sqrt{g} F^{\mu}\right)=\frac{1}{\sqrt g}\frac{\partial}{\partial \hat x^{\mu}}\left(\sqrt{g} \frac{F^{\mu}}{\sqrt{g_{\mu\mu}}}\right) 
+ \begin{align} \nabla\cdot\pmb F&=\frac{1}{r^2\sin\theta}\left[\frac{\partial}{\partial r}\left(r^2\sin\theta\, F^{r}\right)+\frac{\partial}{\partial (\phi\,r\sin\theta)}\left(r^2\sin\theta\, F^{\phi}\right)+\frac{\partial}{\partial (\theta\,r)}\left(r^2\sin\theta\, F^{\theta}\right)\right]\\ &=\frac{1}{r^2\sin\theta}\left[\frac{\partial}{\partial r}\left(r^2\sin\theta\, \frac{F^{r}}{1}\right)+\frac{\partial}{\partial \phi}\left(r^2\sin\theta\, \frac{F^{\phi}}{r\sin\theta}\right)+\frac{\partial}{\partial \theta}\left(r^2\sin\theta\, \frac{F^{\theta}}{r}\right)\right]\\ &=\frac{1}{r^2}\frac{\partial \left(r^2 F^{r}\right)}{\partial r}+\frac{1}{r\sin\theta}\frac{\partial F^{\phi}}{\partial \phi}+\frac{1}{r\sin\theta}\frac{\partial \left(F^{\theta}\sin\theta \right)}{\partial \theta} \end{align} 

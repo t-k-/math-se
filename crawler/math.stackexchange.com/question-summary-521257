@@ -1,0 +1,12 @@
+f(t)
+a\lt 1
+f(t)=1, \{kt_0\le t\le kt_0+\tau\}
+f(t)=a,\{kt_0+\tau\le t\le (k+1)t_0\}
+f
+f(t) = a + (1-a)\cdot \chi_{[0,\tau]}(t).
+f
+\{e^{2\pi int/t_0}\}_{n\in\mathbb{Z}}
+\{\cos (2\pi nt/t_0)\}_{n\in\mathbb{N}} \cup \{\sin (2\pi nt/t_0)\}_{n\in\mathbb{Z}^+}
+\begin{align} \int_0^{t_0} \chi_{[0,\tau]}(t) e^{-2\pi int/t_0}\,dt &= \int_0^\tau e^{-2\pi int/t_0}\,dt\\ &= \begin{cases} \qquad \tau &, n = 0\\ \frac{t_0}{2\pi in}\left(1-e^{-2\pi in\tau/t_0}\right) &, n \neq 0. \end{cases} \end{align}
+\begin{align} \int_0^{t_0} \chi_{[0,\tau]}(t)\sin (2\pi nt/t_0)\,dt &= \int_0^\tau \sin(2\pi nt/t_0)\,dt\\ &= \frac{t_0}{2\pi n}\left(1 - \cos (2\pi n\tau/t_0)\right), \end{align}
+\begin{align} \int_0^{t_0} \chi_{[0,\tau]}(t)\cos (2\pi nt/t_0)\,dt &= \int_0^\tau \cos(2\pi nt/t_0)\,dt\\ &= \begin{cases} \qquad\tau &, n = 0\\ \frac{t_0}{2\pi n}\sin (2\pi n\tau/t_0) &, n \neq 0. \end{cases} \end{align}

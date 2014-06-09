@@ -1,0 +1,8 @@
+X_1,X_2,\ldots
+S_n=X_1+X_2+ \cdots + X_n
+\mathbb{E}\left(X_iX_j\right)=0
+i \neq j
+\mathbb{E}[X_{1}X_{2}]=0
+\mathbb{E}[X_{1} X_{2}|X_{1}]=0
+ \begin{align} X_{1}^{2} &= X_{1} \mathbb{E}[S_{2}|X_{1}] &&\text{(By the martingale property.)}\\ &= \mathbb{E}[X_{1}^{2}|X_{1}] + \mathbb{E}[X_{1}X_{2}|X_{1}] &&\text{(By linearity of conditional expectation.)} \\ &=X_{1}^2 +  \mathbb{E}[X_{1} X_{2}|X_{1}] &&\text{(By properties of conditional expectation.)} \end{align} 
+\mathbb{E}[X_1 X_2] = \mathbb{E}[\mathbb{E}[X_1 X_2 | X_1]]

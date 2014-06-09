@@ -1,0 +1,36 @@
+B
+\mu
+f_{B}(t) = \mu e^{-\mu t}
+P(B < t) = 1 - e^{-\mu t}
+B'
+p
+N
+P(NB' + B \leq t)
+\begin{eqnarray*}P(NB' + B \leq t) &=& \sum_{k=1}^{\infty} P(NB' + B \leq t|N=k)P(\text{the service fails k times}) \\&=& \sum_{N=1}^{\infty} P(NB' + B \leq t|N=k)p^k \\&=& \sum_{k=1}^{\infty} P(B\leq t - kB')p^k\end{eqnarray*}
+B'_1,B'_2,\ldots,B'_N
+P(B +\sum_{i=1}^{N} B'_i \leq t) = \sum_{k=1}^{\infty}P(B+\sum_{i=1}^{k}B'_i \leq t|N=k)P(\text{the service fails k times})
+\mu
+T
+N_t
+t
+n
+[T\geqslant t,N_t=n]
+n
+n
+t
+n
+R_n=B'_1+\cdots+B'_n
+\mathfrak{R}
+(B'_k)
+(R_k)
+k\leqslant n
+P(B_k>B'_k|\mathfrak{R})=\mathrm{e}^{-\mu B'_k}
+B_{n+1}
+n\geqslant0
+ \mathrm P(T\geqslant t|\mathfrak{R})=\mathrm{e}^{-\mu t} 
+T
+\mathfrak{R}
+\mu
+ [T\geqslant t,N_t=n]=[B_1>B'_1,\ldots,B_n>B'_n,t\geqslant R_n,B'_{n+1}>t-R_n,B_{n+1}>t-R_n]. 
+ \mathrm P(T\geqslant t,N_t=n|\mathfrak{R})=\mathrm{e}^{-\mu B'_1}\cdots\mathrm{e}^{-\mu B'_n}\cdot\mathrm{e}^{-\mu(t-R_n)}\cdot[R_n\leqslant t<R_n+B'_{n+1}], 
+ \mathrm P(T\geqslant t,N_t=n|\mathfrak{R})=\mathrm{e}^{-\mu t}\cdot[R_n\leqslant t<R_{n+1}]. 

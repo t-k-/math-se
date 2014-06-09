@@ -1,0 +1,8 @@
+\int^\infty_{-\infty} x \exp\{ -\frac{1}{2(1-\rho^2)} (x-y\rho)^2 \} \, dx
+u = \frac{x-y\rho}{\sqrt{1-\rho^2}}
+\sqrt{1-\rho^2}\int^{\infty}_{-\infty} [u\sqrt{1-\rho^2} + y\rho] e^{-u^2/2} \; du
+\ldots=\sqrt{1-\rho^2}\left[y\rho\sqrt{1-\rho^2}\underbrace{\int_{\mathbb{R}}ue^{-u^2/2}du}_{0\mbox{ odd integrant}}+y\rho{\int_{\mathbb{R}}e^{-u^2/2}du}\right]=y\rho\sqrt{1-\rho^2}\int_\mathbb{R}e^{-u^2/2}du=\ldots
+u \mapsto (2\pi)^{-1/2}\exp(-u^2/2)
+\int_{\mathbb R} (2\pi)^{-1/2}u\exp(-u^2/2)\, du
+ \int_{\mathbb R} (2\pi)^{-1/2} \exp(-u^2/2)\, du = 1 \iff \int_{\mathbb R}  \exp(-u^2/2)\, du = (2\pi)^{1/2} 
+ \int_{\mathbb R} (2\pi)^{-1/2} u \exp(-u^2/2)\, du = 0 

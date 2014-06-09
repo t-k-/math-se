@@ -1,0 +1,16 @@
+\int_0^{\infty}{\frac{e^{-ax}-e^{-bx}}{x}\sin{mx} \, dx} \quad (a > 0 \, , b >0)
+f(0) = 0
+t=0
+0
+ f(t) = \int_0^{\infty} \frac{e^{-atx} - e^{-btx}}x \sin(mx) \, dx 
+ f(1) = \int_0^1 f'(t) \, dt 
+ \begin{gather*} \begin{aligned} f'(t) & = \frac{d}{d t} \int_0^{\infty} \frac{e^{-atx} - e^{-btx}}x \sin (mx) \, dx \\\ & = \int_0^{\infty} \frac{\partial}{\partial t} \left( \frac{e^{-atx} - e^{-btx}}x \sin (mx) \right) \, dx \\\ & = \int_0^{\infty} \frac{-ax e^{-atx} + bx e^{-btx}}x \sin(mx) \, dx \\\ & = \int_0^{\infty} (b e^{-btx} - a e^{-atx}) \sin(mx) \, dx. \\\ & = b \left( \frac{m}{m^2+(bt)^2} \right) - a \left( \frac{m}{m^2+(at)^2} \right). \\\ \end{aligned} \end{gather*} 
+0
+1
+x \mapsto mx
+\sin(x)/x
+ I = \int_0^\infty  {\frac{{e^{ - ax}  - e^{ - bx} }}{x}} \sin (mx)\,dx = \int_0^\infty  {\frac{{e^{ - (a/m)x}  - e^{ - (b/m)x} }}{x}\sin (x)\,dx} . 
+ I = \int_0^\infty  {e^{ - (a/m)x} \frac{{\sin (x)}}{x}dx}  - \int_0^\infty  {e^{ - (b/m)x} \frac{{\sin (x)}}{x}dx} . 
+ \int_0^\infty  {e^{ - sx} \frac{{\sin (x)}}{x}} \,dx = \arctan \bigg(\frac{1}{s}\bigg), \;\; s > 0. 
+ I = \arctan \bigg(\frac{m}{a}\bigg) - \arctan \bigg(\frac{m}{b}\bigg), 
+ I = \bigg[\frac{\pi }{2} - \arctan \bigg(\frac{a}{m}\bigg)\bigg] - \bigg[\frac{\pi }{2} - \arctan \bigg(\frac{b}{m}\bigg)\bigg] = \arctan \bigg(\frac{b}{m}\bigg) - \arctan \bigg(\frac{a}{m}\bigg). 

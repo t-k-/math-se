@@ -1,0 +1,36 @@
+f , g
+f:[0 , 2\pi]\rightarrow\mathbb{R}
+g:\mathbb{R}\rightarrow\mathbb{R}
+\forall x\in\mathbb{R}:g(x+2\pi)=g(x)
+\int\limits_{0}^{2\pi}  \! {g(x)} \, \mathrm{d}x=0.
+\lim\limits_{n\rightarrow\infty} \int\limits_{0}^{2\pi}  \! {f(x) g(nx)} \, \mathrm{d}x=0.
+\xi \in ]0 , 2\pi[
+\left| \int\limits_{0}^{2\pi}  \! {f(x) g(nx)} \, \mathrm{d}x-0 \right|=\left| \int\limits_{0}^{2\pi}  \! {f(x) g(nx)} \, \mathrm{d}x \right|\leq\int\limits_{0}^{2\pi}  \! {\left|f(x) g(nx)\right|} \, \mathrm{d}x=\int\limits_{0}^{2\pi}  \! {\left|f(x)\right| \left|g(nx)\right|} \, \mathrm{d}x
+=\left|f(\xi)\right| \int\limits_{0}^{2\pi}  \! { \left|g(nx)\right|} \, \mathrm{d}x
+g
+2 \pi
+t \mapsto g(nt)
+\frac{2 \pi}{n}
+I \subset [0,2 \pi]
+\frac{2 \pi}{n}
+\int_0^{2 \pi} 1_I(t) g(nt) dt  = 0
+f_n(t) = f(\frac{2 \pi}{n}\lfloor \frac{nt}{2 \pi} \rfloor)
+f_n = \sum_{k=0}^{n-1} f(\frac{k}{n}2 \pi)1_{[\frac{k}{n}2 \pi, \frac{k+1}{n}2 \pi)}
+[0,2 \pi)
+\int_0^{2 \pi} f_n(t) g(nt) dt  = 0
+f
+[0,2 \pi]
+\epsilon>0
+\delta>0
+|x-y| < \delta
+|f(x)-f(y)| < \epsilon
+N
+\frac{2 \pi}{N} < \delta
+n \ge N
+|f(t)-f_n(t)| < \epsilon
+t
+u:=nx\Longrightarrow dx=\frac{du}{n}\Longrightarrow \int\limits_0^{2\pi} g(nx)dx=\frac{1}{n}\int\limits_0^{2\pi n} g(u)\,du=0
+\int\limits_0^{2n\pi}g(u)\,du=\sum_{k=1}^n\;\int\limits_{2(k-1)\pi}^{2k\pi}g(u)\,du
+\,1\le k\le n\,
+\int\limits_{2(k-1)\pi}^{2k\pi}g(u)\,du=\int\limits_{2(k-1)\pi}^{2k\pi}g(u+2k\pi)\,du=\int\limits_0^{2\pi}g(t)\,dt=0
+t:=u-2(k-1)\pi\,\;,\;\;dt=du

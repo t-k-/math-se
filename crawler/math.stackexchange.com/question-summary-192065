@@ -1,0 +1,12 @@
+ \sum_{k=0}^n \cos k\theta 
+  \cos\left(\frac{n\theta}{2}\right)\frac{\sin\left(\frac{(n+1)\theta}{2}\right)}{\sin(\theta / 2)}   
+ 1 + \cos\theta + \cos 2\theta + \cdots  + \cos n\theta 
+\alpha = \frac{n+1}{2} \theta
+\beta = \frac{n}{2} \theta
+     \sin \frac{\theta}{2} \cdot \cos(k \theta) = \underbrace{\frac{1}{2} \sin\left( \left(k+\frac{1}{2}\right)\theta\right)}_{f_{k+1}} - \underbrace{\frac{1}{2} \sin\left( \left(k-\frac{1}{2}\right)\theta\right)}_{f_{k}} 
+ \begin{eqnarray}    \sin \frac{\theta}{2} \cdot  \sum_{k=1}^n \cos(k \theta) &=& \sum_{k=1}^n \left(f_{k+1} - f_k\right) = f_{n+1}-f_1 \\ &=& \frac{1}{2} \underbrace{\sin\left(\left(n+\frac{1}{2}\right)\theta\right)}_{\sin(\alpha+\beta)}-\frac{1}{2} \underbrace{\sin \frac{\theta}{2}}_{\sin(\alpha-\beta)} = \cos(\alpha) \sin(\beta) \\   &=& \cos\left(\frac{n+1}{2}\theta\right) \sin\left(\frac{n}{2} \theta\right) \end{eqnarray} 
+\cos(n\theta) = \Re({e^{in\theta}})
+\Re(\sum_{n = 0}^{N}{e^{in\theta}})
+\frac{e^{i(N+1)\theta}-1}{e^{i\theta} - 1}
+\sum_{n = 0}^N{e^{in\theta}} = \frac{e^{i(N+1)\theta}-1}{e^{i\theta} - 1}.
+\frac{e^{i(N+1)\theta}-1}{e^{i\theta} - 1} = \frac{e^{i(N+1)\theta/2}}{e^{i\theta/2}}\frac{e^{i(N+1)\theta/2} - e^{-i(N+1)\theta/2}}{e^{i\theta/2} - e^{-i\theta/2}}.

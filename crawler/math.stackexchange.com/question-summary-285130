@@ -1,0 +1,21 @@
+\int_0^1 \frac{t^2-1}{(t^2+1)\log t}dt = 2\log\left( \frac{2\Gamma \left( \frac{5}{4}\right)}{\Gamma\left( \frac{3}{4}\right)}\right)
+\alpha
+\alpha
+\alpha=2
+\alpha=0
+(1)
+I(\alpha)=\int_0^1 \frac{t^\alpha-1}{(t^2+1)\ln t}dt  
+I'(\alpha)=\int_0^1 \frac{t^{\alpha}}{(t^2+1)}dt=\frac{1}{4} \left(-\psi_0\left(\frac{1 + \alpha}{4}\right) + \psi_0\left(\frac{3 + \alpha}{4}\right)\right)  
+I(\alpha)=\frac{1}{4} \int\left(-\psi_0\left(\frac{1 + \alpha}{4}\right) + \psi_0\left(\frac{3 + \alpha}{4}\right)\right) d\alpha= 
+I(\alpha)=\left(\ln \Gamma \left(\frac{3 + \alpha}{4}\right)- \ln \Gamma \left(\frac{1 + \alpha}{4}\right)\right)+C\tag1
+I(2)=\ln \left(\frac{\Gamma \left(\frac{5}{4}\right)}{\Gamma \left(\frac{3}{4}\right)}\right)+C
+C=\ln \left(\frac{\Gamma \left(\frac{1}{4}\right)}{\Gamma \left(\frac{3}{4}\right)}\right)
+\int_0^1 \frac{t^2-1}{(t^2+1)\ln t}dt=\ln \left(\frac{\Gamma \left(\frac{5}{4}\right)\Gamma \left(\frac{1}{4}\right)}{\Gamma^2 \left(\frac{3}{4}\right)}\right)  
+-\int_0^{\infty} dx \: \frac{e^{-x}}{x} \frac{1-e^{-2 x}}{1+e^{-2 x}} 
+ = -\int_0^{\infty} dx \: \frac{1}{x} (e^{-x} - e^{-3 x}) \sum_{k=0}^{\infty} (-1)^k e^{-2 k x} 
+ = -\sum_{k=0}^{\infty} (-1)^k \int_0^{\infty} dx \: \frac{1}{x} (e^{-(2 k+1) x} - e^{-(2 k+3) x}) 
+ = \sum_{k=0}^{\infty} (-1)^{k+1} \log{ \left [ \frac{(2 k+1)}{(2 k+3)} \right ] } 
+ = \log{\left [ \prod_{k=0}^{\infty} \frac{4 k+3}{4 k+1} \frac{4 k+3}{4 k+5} \right ]} 
+ \prod_{k=0}^{n} \frac{4 k+3}{4 k+1} \frac{4 k+3}{4 k+5} = \frac{9 \Gamma{\left ( \frac{5}{4} \right )} \Gamma{\left ( \frac{9}{4} \right )} \Gamma{\left ( n + \frac{7}{4} \right )}^2}{5 \Gamma{\left ( \frac{7}{4} \right )}^2 \Gamma{\left (n+ \frac{5}{4} \right )} \Gamma{\left ( n + \frac{9}{4} \right )}}
+n \rightarrow \infty
+ \prod_{k=0}^{\infty} \frac{4 k+3}{4 k+1} \frac{4 k+3}{4 k+5} = \prod_{k=0}^{\infty} \frac{(k+\frac{3}{4})^2}{(k+\frac{1}{4})(k+\frac{5}{4})} = \frac{\Gamma{\left ( \frac{1}{4} \right )} \Gamma{\left ( \frac{5}{4} \right )}}{\Gamma{\left ( \frac{3}{4} \right )^2}} = \frac{2^2 \Gamma{\left ( \frac{5}{4} \right )^2}}{\Gamma{\left ( \frac{3}{4} \right )^2}} 

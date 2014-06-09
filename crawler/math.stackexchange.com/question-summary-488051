@@ -1,0 +1,27 @@
+3
+(0.9)(0.4)^3(0.6)
+(0.1)(0.9)(0.4)^2(0.6)
+W
+R
+\overline{W},\overline{R}
+\overline{W}^{m-1} W \overline{R}^{n-1} R
+p_{m,n} = (1-0.9)^{m-1} 0.9 (1-0.6)^{n-1} 0.6
+\sum_{m+n=5} p_{m,n}
+(m,n)
+(1,4), (2,3), (3,2), (4,1)
+.9\times.4\times.4\times.4\times.6
+.1 \times .9\times.4\times.4\times.6
+W
+W
+\Pr(W=w) = .9 \times.1^{w-1}
+w\ge1
+R
+\Pr(R=r) = .6 \times.4^{r-1}
+r\ge1
+\Pr(W+R=x)
+X=W+R
+W
+R
+\Pr(X=x) = \sum_{k=-\infty}^{\infty}\Pr(W=k)\Pr(R=x-k) = \sum_{k=1}^{x-1}\Pr(W=k)\Pr(R=x-k)
+k = 1, 2, 3, 4
+p(k) = (0.1)^{k-1}(0.9)(0.4)^{5-k}(0.6) = \frac{864}{15625 \cdot 4^k}

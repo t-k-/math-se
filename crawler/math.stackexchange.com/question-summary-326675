@@ -1,0 +1,12 @@
+[D^2-(x^2+1)]
+[D+A][D-B]f=[D^2-(x^2+1)]f
+f(x)
+a(x)
+b(x)
+f(x)
+a(x) + b(x) = 0
+a(x) b(x) + b^\prime(x) = -x^2-1
+a(x) = -b(x) = x
+    (D^2 - (x^2+1)) \circ f(x) = f^{\prime\prime}(x) - (x^2+1) f(x) = \left( D + a(x) \right) \left(D + b(x) \right) \circ f(x) 
+\begin{eqnarray}    \left( D + a(x) \right) \left(D + b(x) \right) \circ f(x) &=& \left( D + a(x) \right)  \circ \left( f^{\prime}(x) + b(x) f(x)\right) \\ &=& f^{\prime\prime}(x) + \left(b(x) f(x)\right)^\prime + a(x) f^\prime(x) + a(x) b(x) f(x) \\  &=& f^{\prime\prime}(x) + \left( a(x) + b(x) \right) f^\prime(x) + \left( a(x) b(x) + b^\prime(x) \right) f(x) \end{eqnarray} 
+   (D^2 - (x^2+1)) = (D + x)( D-x) 

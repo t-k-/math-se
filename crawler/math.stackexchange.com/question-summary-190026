@@ -1,0 +1,33 @@
+\left(X_n\right)_{n\in\mathbb{N}_0}
+E
+\left(P_x\space:\space x\in E\right)
+\kappa\left(x,B\right)=\mathrm{P}_x\left(X\in B\right)
+A\in\mathcal{B}\left(E\right)
+x\in E
+i,j\in\mathbb{N}_0
+\mathrm{P}_x\left(\left.X_{i+j}\in A\space\right|\mathcal{F}_i\right)=\kappa_j\left(X_i,A\right)
+A\in\mathcal{B}\left(E\right)
+x\in E
+i\in\mathbb{N}_0
+\kappa_0\left(x,\cdot\right):=\delta_x\left(\cdot\right)
+\mathrm{P}_x\left(X_0=x\right)=1
+\mathrm{P}_x\left(\left.X_{i+1}\in A\space\right|\mathcal{F}_i\right)=\kappa_1\left(X_i, A\right)
+\kappa_j\left(x, A\right):=\mathrm{P}_x\left(X_j\in A\right)
+\kappa_{n+1}=\kappa_n\cdot\kappa_1:=\intop_E\kappa_n\left(\cdot, \mathrm{d}x\right)\kappa_1\left(x,\cdot\right)
+m\in\mathbb{N}_0
+\mathrm{P}_x\left(\left.X_{i+m}\in A\space\right|\mathcal{F}_i\right)=\kappa_m\left(X_i, A\right)
+j\geqslant1
+j=1
+j\geqslant1
+\mathrm P(X_{i+j+1}\in A\mid \mathcal F_{i+1})=\kappa_j(X_{i+1},A)
+\mathcal F_i\subseteq \mathcal F_{i+1}
+u
+\mathrm E(u(X_{i+1})\mid \mathcal F_i)=v(X_i)
+u=\kappa_j(\cdot,A)
+\kappa_{j+1}=\kappa_j\cdot \kappa_1
+\kappa_{j+1}=\kappa_1\cdot \kappa_j
+\kappa_{j+1}(\,\cdot\,,A)
+ \mathrm P(X_{i+j+1}\in A\mid \mathcal F_{i})=\mathrm E(\kappa_j(X_{i+1},A)\mid \mathcal F_i). 
+ v(\,\cdot\,)=\int u(y)\kappa_1(\,\cdot\,,dy). 
+ v(\,\cdot\,)=\int \kappa_j(y,A)\kappa_1(\,\cdot\,,dy)=(\kappa_1\cdot \kappa_j)(\,\cdot\,,A). 
+ \mathrm P(X_{i+j+1}\in A\mid \mathcal F_{i})=\kappa_{j+1}(X_i,A). 

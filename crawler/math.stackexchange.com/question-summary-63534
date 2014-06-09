@@ -1,0 +1,33 @@
+\int_0^\infty {\int_0^\infty  {\mathrm dp\mathrm dq\frac{\sinh(upq)}{q^2 - p^2}pq} } e^{-vq^2 - wp^2}  = \frac{\pi}{4}\frac{u(w - v)}{\left[(w + v)^2-u^2 \right]\left(4wv-u^2\right)^{1/2}}
+u,v,w > 0
+u, v, w > 0
+4vw > u^2
+\pm 1
+\mathrm{Res} \{ f, 1 \} + \mathrm{Res} \{ f, -1 \} = 0
+\pm 1
+f
+ I := \int_{0}^{\infty} \int_{0}^{\infty} \frac{\sinh (upq)}{p^2 - q^2} \, pq \, e^{-vp^2} e^{-wq^2} \; dpdq. 
+ \begin{eqnarray*} I & = & \int_{0}^{\frac{\pi}{2}} \int_{0}^{\infty} \frac{\sinh (r^2 u \cos \theta \sin \theta)}{r^2 \cos^2 \theta - r^2 \sin^2 \theta} \, r^2 \cos\theta \sin \theta \, e^{-vr^2 \cos^2 \theta} e^{-w r^2 \sin^2 \theta} \; r dr d\theta \\ & = & \frac{1}{2} \int_{0}^{\frac{\pi}{2}} \frac{\tan \theta}{1 - \tan^2 \theta} \int_{0}^{\infty} \sinh(r^2 u \sin \theta \cos\theta) \, e^{-r^2 (v \cos^2 \theta + w \sin^2 \theta)} \; d(r^2) d\theta \\ & = & \frac{1}{2} \int_{0}^{\frac{\pi}{2}} \frac{\tan \theta}{1 - \tan^2 \theta} \left( \frac{u \cos\theta \sin\theta}{(v \cos^2 \theta + w \sin^2 \theta)^2 - u^2 \cos^2 \theta \sin^2 \theta} \right) d\theta \\ & = & \frac{1}{4} \int_{-\infty}^{\infty} \frac{u t^2}{(1-t^2)\left( (v + w t^2)^2 - u^2 t^2 \right)}\; dt. \qquad (\text{where} \ t = \tan \theta) \end{eqnarray*} 
+ f(z) = \frac{u}{4} \frac{z^2}{(1-z^2)\left( (v + w z^2)^2 - u^2 z^2 \right)} 
+ \begin{align*} I = & \pi i \Bigg[ \mathrm{Res} \left\{ f, 1 \right\} + \mathrm{Res} \left\{ f, -1 \right\} \Bigg] \\ & + 2\pi i \Bigg[ \mathrm{Res} \left\{ f, \frac{u+i\sqrt{4vw-u^2}}{2w} \right\} + \mathrm{Res} \left\{ f, \frac{-u+i\sqrt{4vw-u^2}}{2w} \right\} \Bigg], \end{align*}
+I(u,v,w)
+4vw>u^2
+\sinh
+4I(u,v,w)=\partial_uJ(u,v,w)
+J(u,\cdot,\cdot)
+(p,q)
+J(u,v,w)
+I(u,v,w)
+J(u,\frac12(v+w),\frac12(v+w))=0
+J(u,v,w)
+\partial_tJ(u,\frac12(v+w)-t,\frac12(v+w)+t)
+u
+ 4I(u,v,w)=\int_{-\infty}^\infty\int_{-\infty}^\infty{\mathrm dp\mathrm dq}\,\frac{e^{upq}}{q^2 - p^2}pq\, e^{-vq^2 - wp^2}, 
+ J(u,v,w)=\iint{\mathrm dp\mathrm dq}\,\frac{e^{upq}}{q^2 - p^2}\, e^{-vq^2 - wp^2}. 
+ \partial_wJ(u,v,w)-\partial_vJ(u,v,w)=\iint{\mathrm dp\mathrm dq}\,e^{upq}\,e^{-vq^2-wp^2}. 
+ \iint e^{-\frac12\xi^*C\xi}\,\text{d}\xi=2\pi\det(C)^{-1/2}, 
+ \partial_wJ(u,v,w)-\partial_vJ(u,v,w)=\frac{2\pi}{\sqrt{4vw-u^2}}. 
+ J(u,v,w)=\int\limits_{0}^{(w-v)/2}\frac{2\pi \text{d}t}{\sqrt{4\left(\frac12(v+w)+t\right)\left(\frac12(v+w)-t\right)-u^2}}, 
+ J(u,v,w)=\int\limits_{0}^{w-v}\frac{\pi \text{d}t}{\sqrt{s^2-t^2}},\quad s^2=(v+w)^2-u^2. 
+ J(u,v,w)=\pi\text{Arcsin}\left(\frac{w-v}{s}\right). 
+ 4I(u,v,w)=\frac{\pi(w-v)u}{((v+w)^2-u^2)\sqrt{4vw-u^2}}. 

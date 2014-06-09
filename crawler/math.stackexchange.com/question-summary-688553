@@ -1,0 +1,12 @@
+X_1 \sim U[-2,1]. X_2=0.5e^{-|t|}, -\infty<t<\infty
+F_Y
+X_1<-1
+-1 \le X_1<0
+0 \le X_1
+   Y = \begin{cases} X_2,  & \text{$X_1<-1$} \\ X_1, & \text{$-1 \le X_1<0$}  \\ 3, & \text{$0 \le X_1$}  \\ \end{cases}
+-1\le X_1<0
+F_Y(y) = \mathbb{P}[Y \leq y]
+\mathbb{P}[Y \leq y]
+y \in [-1,0]
+y \in [-1,0]
+ F_Y(y) = \int_{-\infty}^y f_Y(z) dz        = \int_{-\infty}^{-1} f_Y(z) dz + \int_{-1}^{y} f_Y(z) dz        = F_{X_2}(-1) + \left( F_{X_1}(y) - F_{X_1}(-1) \right). 

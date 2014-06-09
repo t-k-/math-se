@@ -1,0 +1,19 @@
+c_n:= \sum_{k=0}^{\lfloor \frac{n}{2} \rfloor} \left(-a\right)^k \frac{1}{k!} \frac{b^{n-2k}}{\left(n-2k\right)!} ~ ~ ~ ~; ~ ~ ~ ~ a,b>0    ~ ~ ~ ; ~ ~  n\in\mathbb{N }
+c_n
+0
+n
+\vert c_n \vert \leq 1/2^n
+n
+ c_n = \frac{4^n a^n ~ U(-n,1/2,b^2/4a)}{(2n)!} ~~~~\text{ ( n even )}
+ c_n = \frac{4^n a^n ~ b ~ U(-n,3/2,b^2/4a)}{(2n+1)!} ~~~~\text{ ( n odd)}
+c_{odd}, c_{even}
+n
+O(1)
+\cos(f\sqrt{n}+g)
+c_n
+c_n
+2^{-n}
+ U(-n,1/2,b^2/4a) \sim \Gamma(\frac{1}{4} + n + \frac{1}{4})\Big(c_{even}(a,b)+O(1)\Big)
+ U(-n,3/2,b^2/4a) \sim \Gamma(\frac{3}{4} + n + \frac{1}{4})\Big(c_{odd}(a,b)+O(1)\Big)
+ c_n = \frac{4^n a^n ~ U(-n,1/2,b^2/4a)}{(2n)!} \sim \frac{\sqrt{2}}{4 n}\left(\frac{ea}{n^{3/2}}\right)^n c'_{even}(a,b)~~~~\text{ ( n even )}
+ c_n = \frac{4^n a^n ~ b ~ U(-n,3/2,b^2/4a)}{(2n+1)!} \sim \frac{\sqrt{2}}{4 n}\left(\frac{ea}{n}\right)^n c'_{odd}(a,b)~~~~\text{ ( n odd)}

@@ -1,0 +1,16 @@
+a < c < d < b
+f(x)=\begin{cases} 1 \text{ if } x \in [c,d]\\ 0 \text{ if } x \in [a,b]\setminus[c,d]. \end{cases}
+P=\{a=x_0<...<x_{k-1}<c<x_k<...<x_{l-1}<d<x_l<...<x_n=b\}
+U(f,P)=\sum\limits_{i=1}^{n}M_i(f)\Delta x_i=\sum\limits_{i=k}^{l}M_i\Delta x_i=x_l-x_k \geq d-c.
+L(f,P) \leq d-c
+L(f,P)=\sum\limits_{i=1}^{n}m_i(f)\Delta x_i=\sum\limits_{i=k-1}^{l-1}m_i\Delta x_i=x_{l-1}-x_{k-1} \leq d-c.
+f
+P
+m_i
+L(f,P)
+x_l
+d
+x_{k-1}
+c
+ M_i=\sup_{[x_{i-1},x_i]}f= \begin{cases}1,\quad &i=k,\ldots,l\\ 0,&\text{otherwise} \end{cases} 
+ U(f,P)=\sum_{i=1}^n M_i(x_i-x_{i-1})=\sum_{i=k}^l (x_i-x_{i-1})=x_l-x_{k-1}\geq d-c, 

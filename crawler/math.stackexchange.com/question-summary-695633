@@ -1,0 +1,18 @@
+ \int\int_{S}\frac{1}{x}dy\wedge dz+\frac{1}{y}dz\wedge dx+\frac{1}{z}dx\wedge dy 
+ \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1. 
+F:=<\frac{1}{x},\frac{1}{y},\frac{1}{z}>
+\nabla\cdot F=-(\frac{1}{x^2}+\frac{1}{y^2}+\frac{1}{z^2})
+x=a\rho\cos\theta\sin\phi
+y=b\rho\sin\theta\sin\phi
+z=c\rho\cos\phi
+ \int\int_{S}\frac{1}{x}dy\wedge dz+\frac{1}{y}dz\wedge dx+\frac{1}{z}dx\wedge dy=\int\int_{S}F\cdot dS=\int\int\int_{D}\nabla\cdot F dV. 
+ \int\int\int_{D}\nabla\cdot F dV=-\int\int\int_{D}(\frac{1}{x^2}+\frac{1}{y^2}+\frac{1}{z^2})dV. 
+ -\int\int\int_{D}(\frac{1}{x^2}+\frac{1}{y^2}+\frac{1}{z^2})dV\\ =-abc\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{1}(\frac{1}{a^2\rho^2\cos^2\theta\sin^2\phi}+\frac{1}{b^2\rho^2\sin^2\theta\sin^2\phi}+\frac{1}{c^2\rho^2\cos^2\phi})\rho^2\sin\phi d\rho d\theta d\phi\\ =-abc\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{1}(\frac{1}{a^2\cos^2\theta\sin\phi}+\frac{1}{b^2\sin^2\theta\sin\phi}+\frac{\sin\phi}{c^2\cos^2\phi}) d\rho d\theta d\phi. 
+\nabla \cdot F
+G : S^{2} \to S : (x, y, z) \to (ax, by, cz)
+\omega
+G^{*}\omega = \frac{bc}{ax} dy \wedge dz + \frac{ca}{by} dz \wedge dx + \frac{ab}{cz} dx \wedge dy 
+S^{2}
+ \int_{S} \omega = \int_{S^{2}} G^{*}\omega. 
+ \int_{S^{2}} G^{*}\omega = \int_{S^{2}} \left( \frac{bc}{ax}, \frac{ca}{by}, \frac{ab}{cz} \right) \cdot (x, y, z) \, d\sigma = \int_{S^{2}} \left( \frac{bc}{a} + \frac{ca}{b} + \frac{ab}{c} \right) \, d\sigma. 
+\int_{S^{2}} d\sigma

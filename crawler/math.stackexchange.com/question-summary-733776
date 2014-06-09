@@ -1,0 +1,59 @@
+f
+E
+f(x,y) = e^{-xy}
+E = \{(x,y) : 0 < x < y < x+x^2\}
+f
+E
+\displaystyle\int_E f(x,y) \ dx dy = \underbrace{\int_0^{\infty} \left(\int_{x}^{x+x^2}e^{-xy} \ dy\right)dx}_{= J} = \underbrace{\int_{x}^{x+x^2}\left(\int_0^{\infty}e^{-xy} \ dx \right) dy}_{= I} 
+\displaystyle\int_0^{\infty}e^{-xy} \ dx = \dfrac{1}{y}
+I = \displaystyle\int_{x}^{x+x^2} \dfrac{1}{y} \ dy = \ln(x+x^2)-\ln(x) = \ln(1+x)
+I
+0 < x < y
+y
+0
+\infty
+I = \displaystyle\int_0^{\infty} \dfrac{1-e^{-y^2}}{y} \ dy
+J
+J = \displaystyle\int_{0}^{\infty}\dfrac{e^{-x^2}-e^{-x^2(1+x)}}{x} \ dx 
+y=x
+y=x+x^2
+   E = \{(x,y) \in \mathbb{R}^2 \,:\, x,y \geq 0, x \leq y \leq x+x^2 \} \text{.} 
+x
+y
+x
+x+x^2
+E = \bigcup_{x\in [0,\infty]} \left(\{x\}\times [x,x+x^2]\right)
+E
+y
+E
+x
+y
+(x,y
+E
+x \leq y
+x+x^2 \geq y
+\sqrt{y + \frac{1}{4}} - \frac{1}{2} \leq x
+   \int_E f = \int_0^\infty \int_x^{x+x^2}f(x,y) \,dydx \text{.} 
+   E = \bigcup_{x\in [0,\infty]} \left(\left[\sqrt{y + \frac{1}{4}} - \frac{1}{2},y\right]\times\{y\}\right) 
+   \int_E f = \int_0^\infty \int_{\sqrt{y + \frac{1}{4}} - \frac{1}{2}}^y f(x,y) \,dxdy \text{.} 
+\int_0^1 g
+e^{-x^2} \leq 1
+0
+1
+(1-e^{-x^3})
+x \to 0
+e^x
+1-e^{-x^3} = x^3 - \frac{x^6}{2!} + \frac{x^9}{3!} +\ldots \leq x^3M
+x \in [0,1]
+g(x) \leq x^2M
+   \int_E e^{-xy} \,d(x,y) = \int_0^\infty g(x) \,dx \text{ where } g(x) = \frac{1}{x}e^{-x^2}\left(1-e^{-x^3}\right)\text{.} 
+   g(x) \leq \frac{1}{x}\left(1-e^{-x^3}\right) \text{.} 
+   \int_0^1 g \leq M \text{.} 
+\int_1^\infty g(x)
+M
+g(x) \leq Me^{-x}
+x \geq 1
+e^{-x^n} \leq e^{-x}
+x^{-1} \leq 1
+f
+\int_E f

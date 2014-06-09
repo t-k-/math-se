@@ -1,0 +1,27 @@
+f
+[a,b]
+g:J\to[a,b]
+J
+H(x)=\int\limits_{a}^{g(x)}f(t)\,\mathrm dt,\qquad x\in J.
+H
+H'(x)=f\left(g\left(x\right)\right)g'(x).
+H(x)=\int\limits_{1}^{\exp(x)}\ln(2t)\,\mathrm dt.
+\begin{align} 	\frac{H(x+h)-H(x)}{h} &= \frac{1}{h}\left(\int\limits_{a}^{g(x+h)}f(t)\,\mathrm dt - \int\limits_{a}^{g(x)}f(t)\,\mathrm dt\right)\\ 	&= \frac{1}{h}\int\limits_{g(x)}^{g(x+h)}f(t)\,\mathrm dt\\ 	&\overset{(1)}{=} \frac{1}{h}\int\limits_{x}^{x+h}f(g(t))g'(t)\,\mathrm dt = \frac{1}{h}\int\limits_{x}^{x+h}H'(t)\,\mathrm dt\\ 	&\overset{(2)}{=} \frac{1}{h}\cdot h\cdot H'(\xi)=H'(\xi),\qquad \xi\in[x,x+h]. \end{align}
+(1)
+g
+(2)
+f:[a,b]\to\mathbb{R}
+\xi\in[a,b]
+(x+h)-x=h
+h\to 0
+\xi\to x
+h<0
+h\to 0
+\quad\square
+\int\limits^b_af(x)\,\mathrm dx=(b-a)f(\xi).
+\frac{H(x+h)-H(x)}{h}\longrightarrow H'(x).
+\begin{align} 	H'(x)&=\ln(2\exp(x))\cdot\exp(x)=\exp(x)(x+\ln(2)). \end{align}
+F
+f
+H(x)=F(g(x))-F(a)
+H'(x) = (F(g(x))-F(a))' = F'(g(x))\cdot g'(x) = f(g(x))\cdot g'(x)

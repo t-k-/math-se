@@ -1,0 +1,13 @@
+a_n
+a_2, a_3, a_4
+ A=\begin{pmatrix} 6 & -9 \\  1 & 0 \end{pmatrix}
+G=\begin{pmatrix} 3 & 1 \\  0 & 3 \end{pmatrix}
+G^n=3^{n-1}\begin{pmatrix} 3 & n \\  0 & 3 \end{pmatrix}
+v=\begin{pmatrix} a_{n+1}\\  a_n \end{pmatrix}
+Av=\begin{pmatrix} 6a_{n+1}-9a_n\\  a_{n+1} \end{pmatrix}
+Av=\begin{pmatrix} 6a_{n+1}-9a_n\\  a_{n+1} \end{pmatrix}=\begin{pmatrix} a_{n+2}\\  a_{n+1} \end{pmatrix}
+A = SGS^{-1}
+S = \begin{pmatrix}3&1\\1&0\end{pmatrix}
+G^n
+A^n v
+A^n v = (SGS^{-1})^n v = SG^nS^{-1}v

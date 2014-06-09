@@ -1,0 +1,25 @@
+f(S)=\mathrm{trace}(S)+m^2\mathrm{trace}(S^{-2})
+S\in \mathcal{M}_{m,m}
+f(S)
+S_1
+S_2
+\Delta = S_2 - S_1
+t \in [0,1]
+\phi = (S_1 + t\Delta)^{-1} = ((1 - t) S_1 + t S_2)^{-1}
+\begin{align}          & \frac{d}{dt} \phi   \;= - \phi \Delta \phi\\ \implies & \frac{d}{dt} \phi^2 \;= - \phi \Delta \phi^2 - \phi^2 \Delta \phi\\ \implies & \frac{d^2}{dt^2} \phi^2 =      ( \phi \Delta \phi ) \Delta \phi^2   + \phi \Delta ( \phi \Delta \phi^2 + \phi^2 \Delta \phi )   + ( \phi \Delta \phi^2 + \phi^2 \Delta \phi ) \Delta \phi   + \phi^2 \Delta ( \phi \Delta \phi ) \end{align}
+\begin{align} \frac{d^2}{dt^2} \operatorname{tr}(\phi^2) &= 2\operatorname{tr}( (\phi\Delta)^2\phi^2 + (\phi\Delta\phi)^2 + \phi^2 (\Delta\phi)^2)\\ &= 2\operatorname{tr}\left( 2 (\sqrt{\phi}\Delta\sqrt{\phi}^3)^T(\sqrt{\phi}\Delta\sqrt{\phi}^3) + (\phi\Delta\phi)^T(\phi\Delta\phi)\right)\ge 0\tag{*} \end{align}
+t \in [0,1]
+\phi
+\phi\Delta\phi
+(*)
+\frac{d^2}{dt^2}\operatorname{tr}\left(((1-t)S_1 + t S_2) + m^2((1 - t) S_1 + t S_2)^{-2}\right) > 0 
+[0,1]
+\operatorname{tr}(S+m^2 S^{-2})
+\operatorname{tr}(S^{-n})
+n \ge 1
+\psi(t) = S_1 + t\Delta
+\lambda > 0
+Z_{\lambda}(t) = \operatorname{tr}(e^{-\lambda \psi(t)})
+\begin{align} \frac{d}{dt}Z_{\lambda}(t) &= \operatorname{tr}\left( \int_0^1 ds\;e^{-\lambda s\psi(t)}( -\lambda\Delta )e^{-\lambda(1-s)\psi(t)}\right)\\ &= -\lambda \operatorname{tr}\left(e^{-\lambda\psi(t)}\Delta\right)\\ \implies \frac{d^2}{dt^2}Z_{\lambda}(t) &= \lambda^2 \operatorname{tr}\left(\int_0^1 ds\;e^{-\lambda s\psi(t)}\Delta e^{-\lambda(1-s)\psi(t)}\Delta\right)\\ &= \lambda^2 \int_0^1 ds \operatorname{tr}\left( ( e^{-\frac{\lambda s}{2}\psi(t)}\Delta e^{-\frac{\lambda(1-s)}{2}\psi(t)} )^T ( e^{-\frac{\lambda s}{2}\psi(t)}\Delta e^{-\frac{\lambda(1-s)}{2}\psi(t)} ) \right)\\ &> 0 \end{align}
+n \ge 1
+\frac{d^2}{dt^2} \operatorname{tr}( \psi(t)^{-n} )  =\frac{d^2}{dt^2}  \operatorname{tr}\left(\int_0^{\infty}\frac{\lambda^{n-1}}{n!} e^{-\lambda\psi(t)} d\lambda\right) = \frac{1}{n!}\int_0^{\infty} \lambda^{n-1} \frac{d^2Z_{\lambda}(t)}{dt^2} d\lambda > 0 

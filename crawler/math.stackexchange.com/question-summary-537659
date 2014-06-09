@@ -1,0 +1,19 @@
+T_i
+i
+\lambda
+t>0
+ E(\sum_{i=1}^\infty T_i 1_{\{T_i<t\}}) 
+ E(\sum_{i=1}^{N_t} T_i) 
+ E(E(\sum_{i=1}^{N} T_i|N_t=N))=E(\sum_{i=1}^{N} E(T_i|N_t=N)) 
+E\left( \sum_{k=1}^{N_t}X_k e^{t-T_k} \right)
+X_k
+T_k
+N_t
+[0,t]
+T_k∼Beta(k,n−k+1)
+[0,1]
+N_t
+[0,t]
+T_k/t∼Beta(k,n−k+1)
+ E(T_k/t | N_t = N) = \frac{k}{N+1} 
+ \sum_{k=1}^N E(T_k | N_t = N) = \sum_{k=1}^N t \, E(T_k/t | N_t = N) = t \frac{N}{2} 

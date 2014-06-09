@@ -1,0 +1,9 @@
+x_{k+1} = A_k x_k + w_k
+x_0, w_o, w_1,...
+x_k
+E(x_{k+1}|x_k)= \Sigma_{k+1,k} \Sigma_k^{-1}x_k
+A_k = \Sigma_{k+1,k} \Sigma_k^{-1}
+w_k = x_{k+1} - E(x_{k+1}|x_k)
+\Sigma_{k+1,k} := cov(x_{k+1}, x_k)
+\Sigma_{k} := cov(x_k,x_k)
+cov(x_{k+1}-\Sigma_{k+1,k} \Sigma_k^{-1}x_k,x_k)=0

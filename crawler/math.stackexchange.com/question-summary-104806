@@ -1,0 +1,9 @@
+\textit{Complex Analysis}
+B(z)= e^{i \varphi} (\frac{z-a_1}{1-\bar{a_1} z} \cdots \frac{z-a_n}{1-\bar{a_n} z})
+a_1, ..., a_n \in \mathbb{D}
+0 \leq \varphi \leq 2\pi
+e^{i \varphi} \prod_{n=1}^\infty\frac{z-a_n}{1-\bar{a_n} z}
+\sum_{n=1}^\infty (1-|a_n|) < \infty
+|a_n|\ge\frac12
+ \begin{align} \frac{|a_n|}{a_n}\frac{z-a_n}{\overline{a}_n z-1} &=|a_n|\frac{z-a_n}{|a_n|^2 z-a_n}\\ &=(1-(1-|a_n|))\left(1+\frac{z(1-|a_n|^2)}{|a_n|^2 z-a_n}\right)\\ &=(1-(1-|a_n|))\left(1+\frac{z(1+|a_n|)}{|a_n|^2\left(z-\frac{1}{\overline{a}_n}\right)}(1-|a_n|)\right)\tag{2} \end{align} 
+ \begin{align} \left|\frac{z(1+|a_n|)}{|a_n|^2\left(z-\frac{1}{\overline{a}_n}\right)}\right| &\le\frac{1+|a_n|}{|a_n|^2}\frac{|z|}{1-|z|}\\ &\le6\frac{|z|}{1-|z|}\tag{3} \end{align} 

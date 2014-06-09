@@ -1,0 +1,36 @@
+U\subseteq\mathbb{R}^{n}
+f:U\to\mathbb{R}^{n}
+U
+f\left(U\right)
+g:f\left(U\right)\to U
+f
+g
+f(U)
+x\in U
+g
+y=f(x)
+f
+L_x>0
+r_x>0
+\|x'-x\|\le r_x
+x'\in U
+\|f(x')-y\|\le L_x\|x'-x\|
+g
+L_y>0
+r_y>0
+\|y'-y\|\le r_y
+y'\in f(U)
+\|g(y')-x\|\le L\|y'-y\|
+r=\min(r_x,  L_x^{-1}r_y)
+\|x'-x\|\le r
+y'=f(x')
+\|y'-y\|\le r_y
+f'(x)
+f
+x
+\det f'(x)\ne 0
+g
+y
+g'(y)=f'(x)^{-1}
+\|x'-x\|=\|g(y')-x\|\le L_y\|y'-y\|=L_y\|f(x')-y\|.
+\limsup_{y'\to y}\frac{\|g(y')-x- f'(x)^{-1}(y'-y)\|}{\|y'-y\|}\le\|f'(x)^{-1}\|\cdot\lim_{x'\to x}\frac{\|f(x)-y- f'(x)(x'-x)\|}{\|x'-x\|}=0,

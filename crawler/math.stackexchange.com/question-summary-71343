@@ -1,0 +1,8 @@
+\int_{-\infty}^{\infty} \frac{x^2 e^{-x^2/2}}{a+bx^2}dx
+b<0
+a\in\mathbb{R}
+y=x^2
+z=y+a
+\int_{-\infty}^{+\infty}\frac{x^2}{a+bx^2}e^{-x^2/2}dx=\frac{1}{b}\int_{-\infty}^{+\infty}\left(1-\frac{a}{a+bx^2}\right)e^{-x^2/2}dx
+=\frac{1}{b}\left(\sqrt{2\pi}-\frac{a}{\sqrt{2}b}\int_{-\infty}^{+\infty}\frac{1}{\frac{a}{2b}+x^2}e^{-x^2}dx\right)
+=\frac{1}{b}\left(\sqrt{2\pi}-\sqrt{\frac{a}{b}}\pi\exp\left(\frac{a}{2b}\right)\mathrm{erfc}\left(\sqrt{\frac{a}{2b}}\right)\right).

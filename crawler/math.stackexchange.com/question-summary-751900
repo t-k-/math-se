@@ -1,0 +1,16 @@
+\Omega \subset \mathbb{R}^2=\{x={(x_1,x_2):x_i\in \mathbb{R}}\}
+F: V \to \mathbb{R}
+F(u) = \int_{\Omega}{K(u)\nabla u\cdot\nabla v \,dx},\qquad\forall v\in V
+V=H^1_0(\Omega)
+v
+K(u)=u^2
+DF(u)\delta u
+F
+u
+ F'(u)=\lim_{h\to 0}\frac {F(u+hf)-F(u)}{h}
+\frac {F(u+hf)-F(u)}{h}=\int\frac {K(u+hf)\nabla (u+fh)\cdot\nabla v-K(u)\nabla (u)\cdot\nabla v}{h}dx=\int\frac {(K(u+fh)\nabla (u)-K(u)\nabla (u))\cdot\nabla v+hK(u+hf)\nabla (f)\cdot\nabla v}{h}dx
+=\int K'(u)\nabla u\cdot\nabla v+K(u)\nabla f\cdot\nabla v dx
+F'(u)=\int K'(u)\nabla u\cdot\nabla v+K(u)\nabla f\cdot\nabla v dx
+f\in V 
+hf=\delta u 
+\int K'(u)\nabla u\cdot\nabla v+K(u)\nabla \delta u\cdot\nabla(v)dx 

@@ -1,0 +1,19 @@
++\infty
+f(x) = e^x = \sum_{k=0}^\infty \frac{1}{k!} x^k
+f_N(x) = \sum_{k=0}^N \frac{1}{k!} x^k
+x \mapsto f(x)-f_N(x)
+\mathbb{C}
+\mathbb{C}
+|x| \leq R
+|f(x)-f_N(x)| \leq \sum_{k=N+1}^\infty \frac{1}{k!} R^k= e^R-\sum_{k=0}^N \frac{1}{k!} R^k
+\lim_{N \to \infty} \sum_{k=0}^N \frac{1}{k!} R^k = e^R
+\overline{B(0,R)}
+\exp(z) := \sum_{k \geq 0} \frac{z^k}{k!}
+f_n(z) := \sum_{k=0}^n \frac{z^k}{k!}
+\sup_{z \in \mathbb{C}} |f_n(z)-f(z)| \geq \sup_{z \in [0,\infty)} |f_n(z)-f(z)| = \sup_{z \in [0,\infty)} \left| \sum_{k \geq n+1} \frac{z^k}{k!} \right| \geq \sup_{z \in [0,\infty)} \frac{z^{n+1}}{(n+1)!} = \infty
+n \in \mathbb{N}
+\|f_n-f\|_{\infty} \leq \varepsilon
+f_n
+\mathbb{C}
+\exp
+\infty

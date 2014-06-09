@@ -1,0 +1,7 @@
+(a_i) \subset \mathbb{C}
+\hat{(a_i)}(n) = \sum_{k=1}^{\infty} a_k e^{-i2\pi k / n}
+\hat{(a_i)}(n) = \lim {N\rightarrow \infty} \sum_{k=1}^N a_k e^{i2\pi k/N}
+f : \mathbb{Z} \rightarrow \mathbb{C}
+\hat{f}(\omega) = \sum_{n=-\infty}^{\infty} a_n e^{- \omega i 2 \pi n}
+b_k = \hat{f}(1/k)
+ b_k = (\sum_{n = -\infty}^{\infty} a_{kn + 1}) e^{-i2\pi/ k} + (\sum_{n=-\infty}^{\infty} a_{kn+2} )e^{-i2\pi2/k} + \dots \text {finite sum} 

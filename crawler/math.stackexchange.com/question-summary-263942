@@ -1,0 +1,21 @@
+A
+n
+m
+B
+m
+p
+|A| = \max\{|a_{ij}| : i = 1,\ldots,n \text{ and} j = 1,\ldots,m\}
+ |AB| \leq m|A||B|
+ |AB| = \max\{| \sum_{j=1}^{m}a_{ij}b_{jk} |: i = 1,\ldots,n \text{ and } k = 1,\ldots,p\} \leq \max\{ \sum_{j=1}^{m}|a_{ij}b_{jk}| : i = 1,\ldots,n \text{ and } k = 1,\ldots,p\}  \leq m\max\{|a_ij|\}\max\{|b_{jk}|\} = m|A||B| 
+\vert a_{ij} \vert \leq \vert A \vert
+i,j
+\vert b_{jk} \vert \leq \vert B \vert
+j,k
+\vert A \vert 
+\vert B \vert
+\vert A \vert 
+\vert B \vert
+i,k
+\left \vert (AB)_{ik} \right \vert = \underbrace{\left \vert \sum_{j=1}^m a_{ij} b_{jk} \right \vert \leq \sum_{j=1}^m \vert a_{ij} \vert \vert b_{jk} \vert}_{\text{Triangle inequality}} = \overbrace{\sum_{j=1}^m \vert a_{ij} \vert \vert b_{jk} \vert \leq \sum_{j=1}^m \vert A \vert \vert B \vert}^{\text{Definition of $\vert A \vert $ and $\vert B \vert$}} = m\vert A \vert \vert B \vert
+\max_{i,k}\left \vert (AB)_{ik} \right \vert \leq m\vert A \vert \vert B \vert
+ |AB| = \max\{| \sum_{j=1}^{m}a_{ij}b_{jk} |: i = 1,...,n \text{ and} k = 1,...p\} \leq \max\{ \sum_{j=1}^{m}|a_{ij}b_{jk}| : i = 1,...,n \text{ and} k = 1,...p\}  \leq \max\{ \sum_{j=1}^{m}|a_{ij}||b_{jk}| : i = 1,...,n \text{ and} k = 1,...p\}\leq \max\{ \sum_{j=1}^{m}max\{|a_{ij}|\}max\{|b_{jk}|\}\}=max\{ \sum_{j=1}^{m}|A||B|\}=m|A||B|

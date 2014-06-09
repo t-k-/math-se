@@ -1,0 +1,9 @@
+ p(X) = \frac{1}{2\lambda} \exp\left(-\frac{|x|}{2\lambda}\right), \\  X \in \{0,1,...,255\}. 
+\lambda
+ \DeclareMathOperator*{\argmin}{\arg\!\min} \hat\lambda = \argmin_{\lambda} \left\{ - \sum\limits_{i=1}^{255} f(x=i)\log_2(p_{\lambda}(x=i)) \right\}, 
+f(x=i)
+x
+i
+p_\lambda(x)
+\lambda
+ \hat\lambda = \argmin_{\lambda} \left\{ D(f(x)||p_{\lambda}(x) ) \right\}  = \argmin_{\lambda} \left\{ \sum_{i=1}^{255} \left[ f(x=i)\log_2\left(\frac{f(x=i)}{p_{\lambda}(x=i)}\right) \right] \right\} .  

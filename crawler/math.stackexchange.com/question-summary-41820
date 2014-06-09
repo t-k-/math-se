@@ -1,0 +1,39 @@
+X
+t
+x_0 + tv
+X
+\epsilon >0
+x_0 + tv \in X
+|t| < \epsilon
+x_0
+ g(t) = f(x_0 + tv) 
+f
+x_0
+\partial f(x_0)
+r:X \rightarrow F
+r(x_0) = 0
+ f(x) = f(x_0) + \partial f(x_0)(x - x_0) + r(x)||x - x_0|| 
+ g(t) = f(x_0 + tv) 
+ = f(x_0) + \partial f(x_0)( (x_0 + tv) - x_0) + r(x_0 + tv)||(x + tv) - x_0|| 
+ = f(x_0) +\partial f(x_0)(tv) + r(x_0 +tv)||tv|| 
+ f(x_0 + tv) = f(x_0) + t \partial f(x_0)(v) + |t|r(x_0 + tv)||v|| 
+ \frac{f(x_0 + tv) - f(x_0)}{t} - \partial f(x_0)(v) = \frac{|t|}{t} ||v||r(x_0 + tv) 
+t \rightarrow 0
+0
+\frac{|t|}{t}||v|| = ±||v||
+ \lim_{t \to 0} \; r(x_0 + tv) = r(x_0) = 0 
+r
+f
+ \lim_{t \to 0} \frac{f(x_0 + tv) - f(x_0)}{t} = \partial f(x_0)(v) = D_v f(x_0) 
+D_v f(x_0)
+f
+x_0
+v
+\gamma\colon (-\epsilon,\epsilon)\to X
+g = f\circ \gamma
+\gamma
+\gamma'(0) = v
+g
+0
+ \gamma(t) \;=\; x_0 + vt\text{,} 
+ g'(0) \;=\; (f\circ \gamma)'(0) \;=\; \partial f(x_0)(\gamma'(0)) \;=\; \partial f(x_0)(v). 

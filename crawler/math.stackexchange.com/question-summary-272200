@@ -1,0 +1,37 @@
+n\lg n = O(n^{\log_3 4 - r})
+\lg n = \log_2 n
+r > 0
+T(n) = 4T(n/3) + n\lg n
+\ln(n)<n^k
+k
+n
+\log4_3=\ln(4)/\ln(3)\approx 1.26
+r<\ln4/\ln3 -1\approx 0.26
+\ln n < n^k
+k
+n
+\ln n = O(n^k)
+f(x)=O(g(x))
+x\to\infty
+M
+x_0
+|f(x)|<M|g(x)|
+x>x_0
+f
+g
+x
+\lim_{n\to\infty} {\ln n /n^k}=0
+any
+\ln(n)
+n^k
+\lim_{n\to\infty} {\ln n /n^k}=\lim_{n\to\infty} {(\ln n)' \over (n^k)'}=\lim {{1/n}\over{kn^{k-1}}} =\lim {1/kn^k}=0
+k>0
+ 2\sum_{j=0}^{\lfloor \log_3 n \rfloor} j 4^j \sum_{k=0}^{\lfloor \log_3 n \rfloor - j } 3^k = \sum_{j=0}^{\lfloor \log_3 n \rfloor} j 4^j (3^{1+\lfloor \log_3 n \rfloor - j}-1) = 3^{1+\lfloor \log_3 n \rfloor }  \sum_{j=0}^{\lfloor \log_3 n \rfloor} j \left(\frac{4}{3}\right)^j -\sum_{j=0}^{\lfloor \log_3 n \rfloor} j 4^j
+ 3 \lfloor \log_3 n \rfloor 4^{1 + \lfloor \log_3 n \rfloor} - 9 \times  4^{1 + \lfloor \log_3 n \rfloor} + 12 \times 3^{1 + \lfloor \log_3 n \rfloor}.
+ \frac{1}{9} \left( \lfloor \log_3 n \rfloor 4^{2+\lfloor \log_3 n \rfloor} -(1+\lfloor \log_3 n \rfloor) 4^{1+\lfloor \log_3 n \rfloor} +4 \right) 
+ \frac{1}{3} \lfloor \log_3 n \rfloor 4^{1+\lfloor \log_3 n \rfloor} - \frac{1}{9} 4^{1+\lfloor \log_3 n \rfloor} + \frac{4}{9}. 
+ \frac{8}{3} \lfloor \log_3 n \rfloor 4^{1 + \lfloor \log_3 n \rfloor} - \frac{80}{9} \times  4^{1 + \lfloor \log_3 n \rfloor} + 12 \times 3^{1 + \lfloor \log_3 n \rfloor}  - \frac{4}{9}.
+T(n) \le 3 \lfloor \log_3 n \rfloor  \left( 4^{1+\lfloor \log_3 n \rfloor} -  3^{1+\lfloor \log_3 n \rfloor}\right) - \frac{8}{3} \lfloor \log_3 n \rfloor 4^{1 + \lfloor \log_3 n \rfloor} + \frac{80}{9} \times  4^{1 + \lfloor \log_3 n \rfloor} - 12 \times 3^{1 + \lfloor \log_3 n \rfloor}  + \frac{4}{9} = \left(\frac{1}{3} \lfloor \log_3 n \rfloor + \frac{80}{9} \right) 4^{1 + \lfloor \log_3 n \rfloor} - \left( 3 \lfloor \log_3 n \rfloor + 12 \right) 3^{1 + \lfloor \log_3 n \rfloor}   + \frac{4}{9}.
+ \sum_{j=0}^{\lfloor \log_3 n \rfloor} 4^j = \frac{1}{3} 4^{1+\lfloor \log_3 n \rfloor} - \frac{1}{3}
+ T(n) \le \frac{80}{9} 4^{1 + \lfloor \log_3 n \rfloor} - \left( 3 \lfloor \log_3 n \rfloor + 12 \right) 3^{1 + \lfloor \log_3 n \rfloor} + \frac{1}{3} \lfloor \log_3 n \rfloor    + \frac{4}{9}.
+ T(n) \in \Theta\left(4^{\lfloor \log_3 n \rfloor} \right) = \Theta\left(n^{\log_3 4}\right).

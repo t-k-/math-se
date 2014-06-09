@@ -1,0 +1,29 @@
+N(t)=(1+f)\cdot\left(N(t-1)-N(t-T)+N(t-T-1)\right)
+(T+1) \times (T+1)
+g = 1 + f
+X(k)=\left[\begin{array}{c}N(t)\\N(t+1)\\\vdots\\N(t+T)\end{array}\right], X(k+1)=\left[\begin{array}{c}N(t+T+1)\\N(t+T+2)\\\vdots\\N(t+2T + 1)\end{array}\right]
+X(k+1) = MX(k)
+ N(t+T+1) = g(N(t) - N(t+1) + N(t+T)) \Rightarrow 
+X_1(k+1) = g(X_1(k) - X_2(k) + X_{T+1}(k)) 
+ N(t+T+2) = g(N(t+1) - N(t+2) + N(t+T+1)) \Rightarrow 
+X_2(k+1) = g(X_2(k) - X_3(k)) + g X_{1}(k+1) 
+\cdots
+ N(t+2T) = g(N(t+T-1) - N(t+T) + N(t+2T-1)) \Rightarrow 
+X_{T}(k+1) = g(X_{T}(k) - X_{T+1}(k)) + g X_{T-2}(k+1) 
+ N(t+2T+1) = g(N(t+T) - N(t+T+1) + N(t+2T)) \Rightarrow 
+X_{T+1}(k+1) = gX_{T+1}(k) + g(-X_{1}(k+1)+X_{T}(k+1)) 
+A
+B
+(T+1)\times(T+1)
+M = (I-B)^{-1}A
+X(k+1) = AX(k) + BX(k+1)
+X(k+1) = (I-B)^{-1}AX(k)
+A=\left[\begin{array}{ccccccc}g & -g & 0 & 0 & \cdots & 0 & g\\0 & g & -g & 0 & \cdots & 0 & 0\\\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\0 & 0 & 0 & 0 & \cdots & g & -g\\0 & 0 & 0 & 0 & \cdots & 0 & g\end{array}\right]
+B=\left[\begin{array}{ccccccc}0 & 0 & 0 & \cdots & 0 & 0 & 0\\g & 0 & 0 & \cdots & 0 & 0 & 0\\0 & g & 0 & \cdots & 0 & 0 & 0\\\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\0 & 0 & 0 & \cdots & g & 0 & 0\\-g & 0 & 0 & \cdots & 0 & g & 0\end{array}\right]
+f
+T
+A
+B
+M
+X(k+h) = M^h X(k)
+X(k+h)=\left[\begin{array}{c}N(t+h(T+1))\\N(t+h(T+1)+1)\\\vdots\\N(t+h(T+1)+ T)\end{array}\right]

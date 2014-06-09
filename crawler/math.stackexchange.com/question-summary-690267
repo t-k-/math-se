@@ -1,0 +1,12 @@
+\sum_{i=0}^{n-1} \sum_{j=0}^{i-1} \sum_{k=0}^{j-1} i + j + k
+\Theta(g(n))
+j(j-1)/2
+j
+j(j+1)/2
+1/2
+j^2
+j
+i^3, i^2,
+i
+ S = \sum_{i=0}^{n-1} \sum_{j=0}^{i-1} \sum_{k=0}^{j-1} i + j + k =  \sum_{i=0}^{n-1} \left( i + \left(\sum_{j=0}^{i-1} \left(j + \sum_{k=0}^{j-1} k\right) \right)  \right) 
+ S = \frac{1}{2} \sum_{i=0}^{n-1} \left( i + \left(\sum_{j=0}^{i-1} j^2 + j \right)  \right) 

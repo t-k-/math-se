@@ -1,0 +1,60 @@
+T: \mathsf{Set} \to \mathsf{Set}
+U
+X
+T(X)
+\lambda : X \to \mathbb{Z}
+f : X \to Y
+T(X) \to T(Y)
+\lambda
+y \mapsto \sum_{x \in f^{-1}(y)} \lambda(x)
+\eta : \mathrm{id} \to T
+x \in X
+x
+1
+\mu : T^2 \to T
+\alpha \in T^2(X)
+\mu(\alpha) \in T(X)
+\mu(\alpha)(x)=\sum_{\lambda \in T(X)} \alpha(\lambda) \cdot \lambda(x)
+T
+X
+h : T(X) \to X
+f \mapsto \sum_{x \in X} f(x) \cdot x
+f \in T(X)
+x_0 \in X
+1
+\sum_{x \in X} f(x) \cdot x = 1
+\alpha \in T(T(X))
+\sum_{x \in X} \Bigl(\sum_{\lambda \in T(X)} \alpha(\lambda) \cdot \lambda(x)\Bigr) \cdot x = \sum_{x \in X} \Bigl(\sum_{\lambda \in T(X), \sum\limits_{y \in X} \lambda(y)=x} \alpha(\lambda)\Bigr) \cdot x
+\mathsf{Ab} \to \mathsf{Mod}(T)
+(X,h)
+T
++
+X
+x+y = 1 \cdot x + 1 \cdot y + 0 \cdot ? + \dotsc
+0_X := \sum_{x \in X} 0 \cdot x
+x,y \in X
+x+y :=\begin{cases} \sum_{z \in X} \delta_{z,\{x,y\}} \cdot z & x \neq y\\ \sum_{z \in X} (2 \cdot \delta_{z,x}) \cdot z  & x = y \neq 0_M \\ 0_M & x=y=0_M \end{cases}
++
+T (X)
+X
+T
+h : T (X) \to X
+X
+T (X)
+T
+h : T (X) \to X
+T
+\eta_X : X \to T (X)
+X
+X
+T (X)
+\eta
+T (X)
+X
+h
+T (X)
+X
+T (X)
+X
+x + y = h(\eta_X(x) + \eta_X(y))
++

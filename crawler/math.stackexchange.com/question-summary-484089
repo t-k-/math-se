@@ -1,0 +1,6 @@
+J[y] = \int_{x_1}^{x_2} f(x,y,y',\ldots,y^n)
+y(x) \rightarrow y(x) + \epsilon \eta(x)
+J[y+\epsilon \eta] - J[y]
+\int_{x_1}^{x_2} \{f(x,y+\epsilon \eta ,y'+\epsilon \eta')-f(x,y,y')\} \, dx = \int_{x_1}^{x_2} \left\{\epsilon \eta \frac{\partial f}{\partial y}+ \epsilon \frac{d \eta}{d x} \frac{\partial f}{\partial y'} + O(\epsilon^2)\right\} \, dx 
+f=f(x,y,y')
+f(x,y+\epsilon \eta,y' + \epsilon \eta') = f(x,y,y') +  \epsilon \eta \frac{\partial f}{\partial y}+ \epsilon \eta' \frac{\partial f}{\partial y'} + O(\epsilon^2)

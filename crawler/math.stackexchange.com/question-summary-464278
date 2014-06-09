@@ -1,0 +1,54 @@
+f:[a,b] \to \mathbb{R}
+g:[c,d] \to \mathbb{R}
+g'
+g([[c,d]) \subset [a,b]
+\displaystyle \int_{g(c)}^{g(d)} f(x)dx = \displaystyle \int_{c}^{d} f(g(t))g'(t)dt
+7.36
+f
+g'
+h\in \mathscr R[c,d]
+x\in [c,d]
+a
+[c,d]
+f\in \mathscr R g([c,d])
+\displaystyle \int_c^d f(g(t))h(t)dt
+g(x)=\int_a^x h(t)dt
+\int_{g(c)}^{g(d)}f(t)dt=\int_c^d f(g(t))h(t)dt
+f
+g
+[c,d]
+g'
+[c,d]
+g([c,d])\subset[a,b]
+\int_{g(c)}^{g(d)}f(x)dx=\int_{c}^{d}f(g(t))g'(t)dt
+g
+g
+-g
+1
+P
+c=x_{0}<...<x_{n}=d
+g(P)
+g(c)=g(x_{0})\le g(x_{1})\le...\le g(x_{n})=g(d)
+g(P)
+L(f,g(P))=\sum_{R\subset g(P)}m(f)vol(R)=\sum_{[g(x_{i}),g(x_{i+1})]\subset g(P)}\int_{g(x_{i})}^{g(x_{i+1})}m(f)dx=\sum_{[x_{i},x_{i+1}]\subset P}\int_{x_{i}}^{x_{i+1}}m(f)(g(t))g'(t)dt\le\sum_{[x_{i},x_{i+1}]\subset P}\int_{x_{i}}^{x_{i+1}}f(g(t))g'(t)dt=\int_{c}^{d}f(g(t))g'(t)dt
+\int_{g(c)}^{g(d)}f(x)dx\le\int_{c}^{d}f(g(t))g'(t)dt
+U(f,g(P))=\sum_{R\subset g(P)}M(f)vol(R)=\sum_{[g(x_{i},g(x_{i+1}]\subset g(P)}\int_{g(x_{i}}^{g(x_{i+1})}M(f)dx=\sum_{[x_{i},x_{i+1}]\subset P}\int_{x_{i}}^{x_{i+1}}M(f)(g(t))(g'(t))dt\ge\sum_{[x_{i},x_{i+1}]\subset P}\int_{x_{i}}^{x_{i+1}}f(g(t))g'(t)dt=\int_{c}^{d}f(g(t))g'(t)dt
+\int_{g(c)}^{g(d)}f(x)dx\ge\int_{c}^{d}f(g(t))g'(t)dt
+\int_{g(c)}^{g(d)}f(x)dx=\int_{c}^{d}f(g(t))g'(t)dt
+f=1
+1
+\int_{g(c)}^{g(d)}1dx=g(d)-g(c)=\int_{c}^{d}g'(t)dt
+g'
+g
+[x,y] \subset [a,b]
+I \subset [a,b]
+m
+\{x : g'(x) = 0\}
+\chi_I
+ \int_x^y g'(t)dt = g(y) - g(x) 
+ \int_{g^{-1}(I)} g'(t)dt = m(I) 
+ \int_c^d \chi_I(g(t))g'(t)dt = \int_{g(c)}^{g(d)} \chi_I(t)dt 
+f
+F' = f
+F(g(d)) - F(g(c))
+ \int_{c}^{d} F'(g(t))g'(t)dt = \int_{c}^{d} (F \circ g)'(t)dt = (F \circ g)(d) - (F \circ g)(c) = F(g(d)) - F(g(c)) 

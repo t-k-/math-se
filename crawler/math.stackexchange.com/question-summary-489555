@@ -1,0 +1,54 @@
+\int_{0}^{\infty}{\frac{1}{x^{3}-1}} dx
+\int_{0}^{1}
+\int_{1}^{\infty}
+\frac{\pi\sqrt{3}}{9}
+ \int_{0}^{\infty}{\frac{1}{x^{3}-a^{3}}} dx   , a>0
+\int_0^{a-\epsilon}{\frac{\ln z}{z^3-a^3}}dz+ \int_{\pi}^{0}{\frac{\ln(a+\epsilon e^{i\theta})}{(a+\epsilon e^{i\theta})^3-a^3}}i\epsilon e^{i\theta}d\theta+ \int_{a+\epsilon}^{\infty}{\frac{\ln z}{z^3-a^3}}dz
++\int_\infty^{a+\epsilon}{\frac{\ln z+2\pi i}{z^3-a^3}}dz+ \int_{2\pi}^{\pi}{\frac{\ln(a+\epsilon e^{i\theta})+2\pi i}{(a+\epsilon e^{i\theta})^3-a^3}}i\epsilon e^{i\theta}d\theta+ \int_{a-\epsilon}^0{\frac{\ln z+2\pi i}{z^3-a^3}}dz    
+\epsilon
+0
+\int_\pi^0{\frac{i\ln a}{3a^2}}d\theta+ \int_{2\pi}^{\pi}{\frac{i\ln a-2\pi}{3a^2}}d\theta=-{\frac{2\pi i \ln a}{3a^2}}+{\frac{2\pi^2}{3a^2}}
+-2\pi i \int_{0}^{a-\epsilon}{\frac{1}{x^3-a^3}}dx-2\pi i\int_{a+\epsilon}^{\infty}{\frac{1}{x^3-a^3}}dx=-2\pi iJ
+2\pi i
+-2\pi iJ-{\frac{2\pi i \ln a}{3a^2}}+{\frac{2\pi^2}{3a^2}}=2\pi i\sum{Res}
+a e^{i{\frac{2\pi}{3}}}
+a e^{i{\frac{4\pi}{3}}}
+ \sum{Res}={\frac{\ln (ae^{i2\pi/3})}{3a^2e^{i2\pi/3}}}+{\frac{\ln (ae^{i4\pi/3})}{3a^2e^{i4\pi/3}}}={\frac{{\frac{\pi \sqrt{3}}{3}}-\ln a-\pi i}{3a^2}}
+2\pi i
+J=-\frac{\pi\sqrt{3}}{9a^2}
+x=1
+x^3-1=(x-1)(x^2+x+1)
+x\in[1,2]
+x^2+x+1\leq 2^2+2+1=7
+\int_1^2\frac{1}{x-1}\,dx
+\infty
+\int_1^2\frac{1}{x^3-1}\,dx
+ \int_1^2\frac{1}{x^3-1}\,dx. 
+ \frac{1}{x^3-1}\geq\frac{1}{7(x-1)}\geq0,\qquad 1<x\leq 2. 
+x=1
+\oint_C dz \frac{\log{z}}{z^3-1}
+C
+z=1
+C
+\int_{\epsilon}^R dx \frac{\log{x}}{x^3-1} + i R \int_0^{2 \pi} d\theta\, e^{i \theta} \frac{\log{R}+i \theta}{R^3 e^{i 3 \theta}-1} + \\ \int_R^{1+\epsilon} dx \frac{\log{x}+i 2 \pi}{x^3-1} + i \epsilon \int_{2 \pi}^{\pi} d\phi \, e^{i \phi} \frac{\log{(1+\epsilon e^{i \phi})}+i 2 \pi}{(1+\epsilon e^{i \phi})^3-1} + \\ \int_{1-\epsilon}^{\epsilon}dx \frac{\log{x}+i 2 \pi}{x^3-1} + i \epsilon \int_{2 \pi}^0 d\phi \, e^{i \phi} \frac{\log{\epsilon}+i \phi}{\epsilon^3 e^{i 3 \phi}-1}
+R \to \infty
+\epsilon \to 0
+\log{x}=0
+x=1
+i 2 \pi
+\log{R}/R^2
+\epsilon \log{\epsilon}
+-i 2 \pi
+i \epsilon \int_{2 \pi}^{\pi} d\phi \, e^{i \phi} \frac{\epsilon e^{i \phi} + i 2 \pi}{3 \epsilon e^{i \phi}} \sim \frac{2 \pi^2}{3} \quad (\epsilon \to 0)
+-i 2 \pi PV \int_0^{\infty} \frac{dx}{x^3-1} + \frac{2 \pi^2}{3}
+i 2 \pi
+z=e^{i 2 \pi/3}
+z=e^{i 4 \pi/3}
+i 2 \pi \left (\frac{i 2 \pi/3}{3 e^{i 4 \pi/3}} + \frac{i 4 \pi/3}{3 e^{i 8 \pi/3}} \right )= \frac{2 \pi^3}{3}+i \frac{2 \pi^2}{3 \sqrt{3}} 
+ PV \int_0^{\infty} \frac{dx}{x^3-1}=-\frac{\pi}{3 \sqrt{3}}
+(1)
+n\ge1
+ \begin{align} \int_0^\infty\frac1{|x^3-1|}\,\mathrm{d}x &\ge\int_{1+1/n}^2\frac1{|x^3-1|}\,\mathrm{d}x\\ &=\int_{1+1/n}^2\frac1{(x-1)(x^2+x+1)}\,\mathrm{d}x\\ &\ge\frac17\int_{1+1/n}^2\frac1{x-1}\,\mathrm{d}x\\ &=\frac17\log(n)\tag{1} \end{align} 
+(2)
+ -\frac\pi{3\sqrt3}\tag{3} 
+{\bf\mbox{This is the}\ {\large\underline{\mbox{Mathematica}}}\ \mbox{result}}

@@ -1,0 +1,17 @@
+\sum_{n=1}^{\infty}\dfrac{[(n-1)!]^2}{(2n)!}(2x)^{2n}.\qquad (-1\le x\le 1)
+f(x)=\sum_{n=1}^{\infty}\dfrac{[(n-1)!]^2}{(2n)!}(2x)^{2n},
+f'(x)=2\sum_{n=1}^{\infty}\dfrac{[(n-1)!]^2}{(2n-1)!}(2x)^{2n-1}
+f''(x)=4\sum_{n=1}^{\infty}\dfrac{[(n-1)!]^2}{(2n-2)!}(2x)^{2n-2}
+f(x)
+x \frac{d}{dx} \left [x \frac{d}{dx} f(x) \right ] = 4 \sum_{n=1}^{\infty} \frac{(2 x)^{2 n}}{\displaystyle \binom{2 n}{n}}
+x \frac{d}{dx} \left [x \frac{d}{dx} f(x) \right ] = 4 \frac{x \arcsin{x}}{(1-x^2)^{3/2}} + \frac{4}{1-x^2}-4 
+x
+x \frac{d}{dx} f(x) = 4 \int dx \frac{\arcsin{x}}{(1-x^2)^{3/2}} + 4 \int dx \left [\frac1{x (1-x^2)} - \frac1{x} \right ]
+x=\sin{\theta}
+4 \int d\theta (\theta \, \sec^2{\theta} + \csc{\theta} \sec{\theta}-\cot{\theta})
+4 \theta \tan{\theta} + 4 \underbrace{\int d\theta (\csc{\theta}\sec{\theta}-\cot{\theta}-\tan{\theta})}_{\text{Nice how this vanishes, huh?}}= 4 \theta \tan{\theta} +C 
+C=0
+f'(0)=0
+f'(x) = 4 \frac{\arcsin{x}}{\sqrt{1-x^2}} 
+f(0)=0
+f(x) = 2 (\arcsin{x})^2

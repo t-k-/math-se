@@ -1,0 +1,5 @@
+X_1,X_2,X_3
+\frac{1}{\lambda1},\frac{1}{\lambda2},\frac{1}{\lambda3}
+P(X_1>X_2\mid X_1>X_3)
+\begin{eqnarray}   \Pr\left(X_1>X_2 \mid X_1>X_3\right) &=& \frac{\Pr(X_1 > X_2, X_1>X_3)}{\Pr(X_1>X_3)} \\ &=& \frac{\mathbb{E}\left( \Pr(X_1 > X_2, X_1>X_3 \mid X_1) \right)}{\Pr(X_1>X_3)} \\  &=& \frac{\mathbb{E}\left( \Pr(X_2<X_1\mid X_1)\Pr( X_3<X_1 \mid X_1) \right)}{\Pr(X_1>X_3)} \\  &=& \frac{\mathbb{E}\left( F_{X_2}(X_1)F_{X_3}(X_1) \right)}{\mathbb{E}\left( F_{X_3}(X_1) \right)} \\  &=& \frac{\int_0^\infty \left(1-\mathrm{e}^{-\lambda_2 x_1}\right)\left(1-\mathrm{e}^{-\lambda_3 x_1}\right) \lambda_1 \mathrm{e}^{-\lambda_1 x_1} \mathrm{d}x_1}{\int_0^\infty \left(1-\mathrm{e}^{-\lambda_3 x_1}\right) \lambda_1 \mathrm{e}^{-\lambda_1 x_1} \mathrm{d}x_1 } \\ &=& \frac{\lambda_2 \left(2 \lambda_1+\lambda_2+\lambda_3\right)}{\left(\lambda_1+\lambda_2\right) \left(\lambda_1+\lambda_2+\lambda_3\right)} \end{eqnarray} 
+P(X_1 > X_2\mid X_1 > X_3) = P(X_1 > X_2-X_3).

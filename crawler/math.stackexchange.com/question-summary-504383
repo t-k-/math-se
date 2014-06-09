@@ -1,0 +1,13 @@
+f : [0, 1] → [0, 1]
+I = \int_{0}^{1} f(x) dx
+X_1, . . . , X_n
+X_i ∼ binom(1, I)
+\hat I_{HM}=\frac{1}{n}\sum_{i=1}^{n}X_i
+\hat I_{MC}=\frac{1}{n}\sum_{i=1}^{n}f(U_i)
+U_1, . . . , U_n
+U(0, 1)
+Var (X_1) =  \int_{0}^{1}f(x) dx − (\int_{0}^{1}f(x) dx)^2
+Var f(U_1) =  \int_{0}^{1}f^2(x) dx − (\int_{0}^{1}f(x) dx)^2
+X_1 ∼ binom(1, I)
+Var (X_1)=npq=(1)(I)(1-I)
+E [f(U)^2] = \int_0^1 f(x)^2\; dx

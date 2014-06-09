@@ -1,0 +1,31 @@
+S
+0,1
+x
+S
+x
+\le k-1\quad
+0
+x
+\le k-1\quad
+1
+\sum_{x\in S} |x|
+S_{p,q}
+p
+0
+q
+1
+\Sigma_{p=0}^{k-1}\Sigma_{q=0}^{k-1}\Sigma_{x\in S_{p,q}} |x|
+x\in S_{p,q}
+{{p+q} \choose p}
+S_{p,q}
+p+q
+f(k) = \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}(p+q)
+\begin{align*} \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}(p+q) &= \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}p + \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}q\\ &= \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}p + \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose q}q\\ &= 2 \sum_{p=0}^{k-1}\sum_{q=0}^{k-1}{{p+q} \choose p}p\\ &= 2 \sum_{p=0}^{k-1}p\sum_{q=0}^{k-1}{{p+q} \choose p}\\ &= 2 \sum_{p=1}^{k-1}p{{p+k} \choose {p+1}}\\ &= 2 \sum_{p=1}^{k-1}p{{p+k} \choose {k-1}}. \end{align*}
+2{{2k+1} \choose k} = {{2k+1} \choose k} + {{2k+1} \choose {k+1}} = {{2k+2} \choose {k+1}}
+\begin{align*}\sum_{p=1}^{k-1}p{{p+k} \choose {k-1}} &= \sum_{p=1}^{k-1}\sum_{i=1}^p {{p+k} \choose {k-1}}\\ &= \sum_{i=1}^{k-1}\sum_{p=i}^{k-1}{{p+k} \choose {k-1}}\\ &= \sum_{i=1}^{k-1}\left({{2k} \choose k} - {{i+k} \choose k} \right)\\ &= (k-1) {{2k} \choose k} - {{2k} \choose {k+1}} + 1\\ &= k {{2k} \choose k} - {{2k+1} \choose {k+1}} + 1\\ &= k {{2k} \choose k} - {{2k+1} \choose k} + 1, \end{align*}
+f(k) = 2 \left(k {{2k} \choose k} - {{2k+1} \choose k} + 1 \right) = 2k {{2k} \choose k} - 2{{2k+1} \choose k} + 2.
+f(k) = 2k {{2k} \choose k} - {{2k+2} \choose {k+1}} + 2.
+C_{k+1} = \frac{2(2k+1)}{k+2}C_k
+f(k) = 2k(k+1)C_k - (k+2)C_{k+1} + 2= 2(k^2-k-1)C_k + 2,
+f(1) = 0, f(2) = 6, f(3) = 52
+f(4) = 310

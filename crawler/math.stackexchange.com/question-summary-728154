@@ -1,0 +1,21 @@
+\int\limits_{ - \infty }^\mu {{e^{{{ - 1} \over 2} \cdot {{\left( {{{x - \mu } \over \sigma }} \right)}^2}}}} dx = \int\limits_\mu^\infty  {{e^{{{ - 1} \over 2} \cdot {{\left( {{{x - \mu } \over \sigma }} \right)}^2}}}} dx
+\mu
+0
+y=2\mu-x
+dy=-dx
+\mu \mapsto 2\mu-\mu=\mu
+b \mapsto 2\mu-b
+(y-\mu)^2=(\mu-y)^2
+\int_\mu^b \mathrm{exp}\left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)\,dx
+\int_\mu^{2\mu-b} \mathrm{exp}\left(-\frac{1}{2}\left(\frac{(2\mu-y)-\mu}{\sigma}\right)^2\right)\,(-dy)
+ = -\int_\mu^{2\mu-b} \mathrm{exp}\left(-\frac{1}{2}\left(\frac{\mu-y}{\sigma}\right)^2\right)\,dy = \int^\mu_{2\mu-b} \mathrm{exp}\left(-\frac{1}{2}\left(\frac{\mu-y}{\sigma}\right)^2\right)\,dy
+ = \int^\mu_{2\mu-b} \mathrm{exp}\left(-\frac{1}{2}\left(\frac{y-\mu}{\sigma}\right)^2\right)\,dy
+b \to \infty
+x
+y
+\int_\mu^\infty \mathrm{exp}\left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)\,dx =\int_{-\infty}^\mu \mathrm{exp}\left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)\,dx
+n(x)=\mathrm{exp}\left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)
+x=\mu
+x=\mu
+\int_{-\infty }^0 \exp\left( -\frac 12 \left(\frac{x - \mu}\sigma \right) ^2 \right)  dx = \int_{-\infty }^{-\mu} \exp\left( -\frac 12 \left(\frac{x}\sigma \right) ^2 \right)  dx \\= \int_{\mu}^{\infty} \exp\left( -\frac 12 \left(\frac{x}\sigma \right) ^2 \right)  dx \\= \int_{2\mu}^{\infty} \exp\left( -\frac 12 \left(\frac{x-\mu}\sigma \right) ^2 \right)  dx 
+ \int_{-\infty }^0 \exp\left( -\frac 12 \left(\frac{x - \mu}\sigma \right) ^2 \right)  dx = \int_{0}^{\infty} \exp\left( -\frac 12 \left(\frac{x-\mu}\sigma \right) ^2\right)  dx\iff \mu=0 

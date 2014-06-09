@@ -1,0 +1,20 @@
+z
+(2n-1)!!=1\cdot 3\cdots (2n-1)
+(2n)!!=2\cdot 4\cdots 2n
+\int_0^{\frac{\pi}{2}}(\sin x)^z\ dx.
+\frac{\sqrt{\pi}\Gamma\left(\frac{z+1}{2}\right)}{2\Gamma\left(\frac{z}{2}+1\right)},
+\int_0^{\frac{\pi}{2}}(\sin x)^{2z}\ dx=\frac{(2z-1)!!}{(2z)!!}\frac{\pi}{2},
+\Gamma(s)
+\Gamma(s)\Gamma(z)=\int_{0}^{\infty}\int_{0}^{\infty}t^{s-1}u^{z-1}e^{-(t+u)}dtdu.
+t=x^{2}
+u=y^{2}
+\Gamma(s)\Gamma(z)=4\int_{0}^{\infty}\int_{0}^{\infty}x^{2s-1}y^{2z-1}e^{-(x^{2}+y^{2})}dtdu.
+y=r\sin\theta
+x=r\cos\theta
+\Gamma(s)\Gamma(z)=4\left(\int_{0}^{\pi/2}\cos^{2s-1}\theta\sin^{2z-1}\theta d\theta\right)\left(\int_{0}^{\infty}r^{2s+2z-1}e^{-r^{2}}dr\right).
+\eta=r^{2}
+2\int_{0}^{\infty}r^{2s+2z-1}e^{-r^{2}}dr=\int_{0}^{\infty}\eta^{s+z-1}e^{-\eta}d\eta=\Gamma(s+z).
+\frac{\Gamma(s)\Gamma(z)}{\Gamma(s+z)}=2\left(\int_{0}^{\pi/2}\cos^{2s-1}\theta \sin^{2z-1}\theta d\theta\right).
+s=\frac{1}{2}
+z=\frac{x+1}{2}
+ \begin{align*} \int_{0}^{\frac{\pi}{2}}{(\sin\psi)^x}d\psi&= \int_{0}^{\frac{\pi}{2}}{(\sin\psi)^{2\cdot \frac{1}{2}(x+1)-1}(\cos\psi)^{2\cdot \frac{1}{2}-1}}d\psi\\ &=\frac{1}{2}B\left( \frac{x+1}{2},\frac{1}{2} \right)\\ &= \frac{1}{2}\cdot \frac{\Gamma\left(\frac{x+1}{2}\right)\Gamma\left(\frac{1}{2}\right)}{\Gamma\left( \frac{x}{2}+1 \right)}\\ &=\frac{\sqrt{\pi}\Gamma\left(\frac{x+1}{2}\right)}{2\Gamma\left( \frac{x}{2}+1 \right)}. \end{align*}

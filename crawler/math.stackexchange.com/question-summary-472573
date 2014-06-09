@@ -1,0 +1,28 @@
+G
+g(t)
+h(t)
+G
+g(0) = I
+g^\prime(0) = X
+h(0) = I
+h^\prime(0) = Y
+g(t)h(t)g^{-1}(t)h^{-1}(t)
+I + [X, Y]t^2 + \mathcal{O}(t^3)
+g
+g(t)
+(1)
+(2)
+0
+(3)
+g = I + X t + g''(0) t^2/2 + O(t^3)
+h = I + Y t + h''(0) t^2/2 + O(t^3)
+g^{-1} = I - X t + (X^2 - g''(0)/2) t^2 + O(t^3)
+h^{-1} = I - Y t + (Y^2 - h''(0)/2) t^2 + O(t^3)
+gh
+g^{-1} h^{-1}
+g''
+h''
+(X+Y)^2 = X^2 + X Y + Y X + Y^2
+g h = I + (X + Y) t + (g''(0)/2 + X Y + h''(0)/2) t^2 + O(t^2)
+g^{-1} h^{-1} = I - (X + Y) t + (X^2 - g''(0)/2 + X Y + Y^2 - h''(0)/2) t^2 + O(t^3)
+ I + \left(\frac{g''(0)}{2} + X Y + \frac{h''(0)}{2} - (X+Y)^2 + X^2 - \frac{g''(0)}{2} + X Y + Y^2 - \frac{h''(0)}{2}\right) t^2 + O(t^3)

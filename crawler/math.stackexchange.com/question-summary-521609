@@ -1,0 +1,17 @@
+X
+6
+Y
+6
+Y
+0
+1
+ \mathbb E(X) = \mathbb E(\mathbb E(X\mid Y)) = \frac16\cdot1 + \frac56\cdot(1+\mathbb E(X)). 
+ w = \frac16\cdot1+\frac56\cdot(1+w). 
+\Pr(X=i|X \gt n) = \Pr(X=i-n)
+E[X] = \displaystyle\sum_{i=1}^{\infty} i \Pr(X=i) 
+=  \Pr(X=1) + \displaystyle\sum_{i=2}^{\infty} i \Pr(X=i|X \gt 1) \Pr(X \gt 1) 
+=  \Pr(X=1) + \Pr(X \gt 1) \displaystyle\sum_{j=1}^{\infty} (1+j) \Pr(X=j) 
+=  \Pr(X=1) + \Pr(X \gt 1) \displaystyle\sum_{j=1}^{\infty} \Pr(X=j)+ \Pr(X \gt 1) \displaystyle\sum_{j=1}^{\infty} j \Pr(X=j) 
+=  \Pr(X=1) + \Pr(X \gt 1)(1+ E[X])
+E[X]= 1 + \Pr(X \gt 1) E[X]
+E[X]= 1 / \Pr(X = 1)

@@ -1,0 +1,83 @@
+C_n
+n
++1
+-1
+ \sum_{G \in C_n} (-1)^{|G|} ? 
+n=3
+3 - 1 = 2
+ \sum_{G \in C_n} (-1)^{|G|} = (-1)^{n-1} (n-1)! \quad ? 
+w(n) = \sum\limits_{G\in C_n}(-1)^{e(G)}
+e(G)
+G
+G\in C_n
+[n] = [1,n]\cap\mathbb{Z}^+
+w(k) = (-1)^{k-1}(k-1)!
+1\le k \le n
+H
+[n]
+H
+H_1,\dots,H_k
+v_i = |H_i|
+P(H)
+H_1,\dots,H_k
+G_n
+[n]
+\vert P(H)\vert = \prod_{i=1}^k(v_i-1)!,
+\sum_{H\in G_n}\vert P(H)\vert = n!.
+C_{n+1}(H)
+G\in C_{n+1}
+H
+n+1
+H_i
+H
+G\in C_{n+1}(H)
+n+1
+G
+H_i
+j=1,\dots,v_i
+\dbinom{v_i}{j}
+n+1
+j
+H_i
+\begin{align*} \sum_{G\in C_{n+1}(H)}(-1)^{e(G)} &= \prod_{i=1}^k\sum_{j=1}^{v_i}\binom{v_i}{j}(-1)^jw(v_i)\\ &= \prod_{i=1}^k(-1)^{v_i-1}(v_i-1)!\sum_{j=1}^{v_i}\binom{v_i}{j}(-1)^j\\ &= \prod_{i=1}^k(-1)^{v_i-1}(v_i-1)!(-1)\\ &= \prod_{i=1}^k(-1)^{v_i}(v_i-1)!\\ &= (-1)^n\prod_{i=1}^k(v_i-1)!\\ &= (-1)^n\vert P(H)\vert \end{align*}
+\begin{align*} w(n+1) &= \sum_{H\in G_n}\quad\sum_{G\in C_{n+1}(H)}(-1)^{e(G)}\\ &= \sum_{H\in G_n}(-1)^n \vert P(H)\vert\\ &= (-1)^n\sum_{H\in G_n}\vert P(H)\vert\\ &= (-1)^n n!. \end{align*}
+\sigma
+G_n \setminus H_n
+G_n
+n
+G \in G_n
+n
+C_1,\ldots,C_m
+n
+\max C_i
+C_i
+\sigma
+\sigma
+C_i
+\sigma
+(-1)^{n-1}
+n
+n-1
+(n-1)!
+H_n
+S_n
+n
+c
+T \in H_n
+T_1,\ldots,T_m
+c
+c(T) = nc(T_1)\cdots c(T_m).
+n
+t_1
+t_1
+t_2
+t_1
+n
+n
+n-1
+1
+n-2
+2
+1
+n-1
+(n-1)!

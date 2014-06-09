@@ -1,0 +1,16 @@
+X
+m
+0
+0 < p < 1
+f(m) = P(X=m) = (m+1) p^2 (1-p)^m,
+h(s)=\sum_{m=0}^{\infty}P(X=m)s^m=\sum_{m=0}^{\infty}(m+1)p^2(1-p)^ms^m
+=\frac{p^2}{(1-p)s}\sum_{m=0}^{\infty}(m+1)((1-p)s)^{m+1}
+=\frac{p^2}{(1-p)s}\frac{(1-p)s}{(1-(1-p)s)^2}=\frac{p^2}{(1-(1-p)s)^2}
+E[X]=\sum_{m=1}^{\infty}mP(X=m)
+h'(s)=\sum_{m=1}^{\infty}mP(X=m)s^{m-1}
+h'(1)=\sum_{m=1}^{\infty}mP(X=m)=E[X]
+Var[X]=E[X^2]-(E[X])^2
+h''(1)=\sum_{m=1}^{\infty}m(m-1)P(X=m)=\sum_{m=1}^{\infty}m^2P(X=m)-\sum_{m=1}^{\infty}mP(X=m)
+=E[X^2]-E[X]
+E[X^2]=h''(1)+E[X]=h''(1)+h'(1)
+Var[X]=E[X^2]-(E[X])^2=h''(1)+h'(1)-(h'(1))^2

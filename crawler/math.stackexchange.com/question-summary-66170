@@ -1,0 +1,19 @@
+ \begin{eqnarray*} \Delta u =& f(x,y,z) &\text{in } D \\ \frac{\partial u}{\partial \mathbf n} =& 0 &\text{on } \operatorname{bdy} D  \end{eqnarray*} 
+ \iiint\limits_{D} f(x,y,z) \ \mathrm{d}x \ \mathrm{d}y \ \mathrm{d}z = 0 
+u
+u
+d\Omega
+d \Gamma
+v=v_i
+i=1..n
+\int_\Omega \frac{\partial u}{\partial x_i}v d \Omega=\int_\Gamma uv\nu_i d \Gamma-\int_\Omega u \frac{\partial v}{\partial x_i} d \Omega,
+\int_\Omega \nabla  u \cdot v d \Omega=\int_\Gamma (uv)\cdot \nu d \Gamma-\int_\Omega u ( \nabla \cdot v) d \Omega,
+v=\nabla v 
+ \int \nabla u \cdot \nabla v d\Omega =\int_\Gamma u \nabla v \cdot \mu d \Gamma-\int_\Omega u \Delta v d \Omega
+u\equiv 1
+0 = \int_\Gamma v \cdot \nu d \Gamma-\int_\Omega \text{div v}d \Omega 
+v=\nabla u
+u=1
+0=\int_\Gamma \frac{\partial u}{\partial n}d \nu- \int_\Omega \Delta u d \Omega
+\Delta u=f
+\frac{\partial u}{\partial n}=0

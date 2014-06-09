@@ -1,0 +1,12 @@
+ \int \frac{dx}{(x^2+ \alpha^2)^2} 
+x=\alpha\sinh \phi, dx=\alpha\cosh \phi d\phi
+\phi=\sinh^{-1}(x/\alpha)
+ I=\int \frac{dx}{(x^2+ \alpha^2)^2} 
+ I=\int \frac{\alpha\cosh \phi d\phi}{(\alpha^2(\sinh^2 \phi+1))^{2}}=\frac{1}{\alpha^3}\int \frac{\cosh \phi d\phi}{\cosh^4 \phi}=\frac{1}{\alpha^3}\int \frac{d\phi}{\cosh^3 \phi}=\frac{1}{\alpha^3}\left( \arctan\big(\tanh \frac{\phi}{2}\big)+\frac{1}{2}\text{sech} \phi \tanh \phi + \mathcal{C}\right). 
+ I=\frac{ \frac{\alpha x}{\alpha^2+x^2}+\arctan(\frac{x}{\alpha})}{2\alpha^3}+\mathcal{C}. 
+ \tanh \big(\sinh^{-1}\frac{x}{\alpha}\big)=\frac{x}{\sqrt{\alpha^2+x^2}}, \ \ \text{sech}\big({\sinh^{-1} \frac{x}{\alpha}\big)= \frac{\alpha}{\sqrt{\alpha^2+x^2}}}, \ \alpha >0. 
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\int\frac{dx}{x^2+\alpha^2}=\frac{x}{x^2+\alpha^2}+2\int\frac{x^2\color{red}{+\alpha^2-\alpha^2}}{(x^2+\alpha^2)^2}dx
+\displaystyle\displaystyle\cos2\theta=2\cos^2\theta-1\iff\cos^2\theta=\frac{1+\cos2\theta}2
+\displaystyle\int2\cos2\theta\ d\theta=\sin2\theta+K=\frac{2\tan\theta}{1+\tan^2\theta}+K
+K

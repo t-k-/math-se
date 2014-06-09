@@ -1,0 +1,20 @@
+\phi(x)
+(0, l)
+\displaystyle\phi(x) = \sum c_n \sin\left(\left(n + \frac{1}{2}\right) \frac{\pi x}{l}\right)
+0 < x < l
+\phi(x)
+\tilde{\phi}(x)
+\tilde{\phi}(x) = \begin{cases}\phi(x) & 0 \leq x \leq l\\ \phi(2l − x) & l \leq x \leq 2l\end{cases}.
+x = l
+\tilde{\phi}(x)
+(0, 2l)
+0 < x < l
+\tilde \phi
+[0,2l]
+ A_n = \frac{2}{2l} \int_0^{2l} \tilde \phi(x)\,\sin \frac{\pi n}{2l}x\,dx \tag{1} 
+\tilde \phi
+y=2l-x
+\sin (\pi n-x)=-\sin x
+n
+ \int_0^{2l} \tilde \phi(x)\,\sin \frac{\pi n}{2l}x\,dx  =  \int_0^{l}   \phi(x)\,\sin \frac{\pi n}{2l}x\,dx + \int_l^{2l}   \phi(2l-x)\,\sin \frac{\pi n}{2l}x\,dx 
+ \begin{split} \int_l^{2l}   \phi(2l-x)\,\sin \frac{\pi n}{2l}x\,dx &= -\int_l^{0}   \phi(y)\,\sin \frac{\pi n}{2l}(2l-y)\,dy \\  &= \int_0^{l}   \phi(y)\, \sin \left(\pi n-\frac{\pi n}{2l}y\right)\,dy  \end{split} 

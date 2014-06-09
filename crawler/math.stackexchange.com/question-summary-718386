@@ -1,0 +1,28 @@
+cn
+c=0
+T(n)=\alpha n
+\alpha
+T(n) = T\left(\frac{n}{3}\right)+T\left(\frac{2n}{3}\right) = \alpha \frac{n}{3}+\alpha \frac{2n}{3} = \alpha n
+T \in \Theta(g)
+(\exists k_1 > 0,\, \exists k_2 > 0,\, \exists n_0,\,\forall n > n_0)\\ g(n)k_1 \le T(n) \le g(n)k_2
+T
+g
+n
+g
+k_1
+k_2
+n_0
+n\,\log(n)k_1 \le T(n) \le n\,\log(n) k_2
+n\,\log(n)k_1 \le T(n/3) + T(2n/3) \le n\,\log(n) k_2
+\frac n3\, \log(\frac n3)k_1 \le T(n/3)
+\frac {2n}3\, \log(\frac {2n}3)k_1 \le T(2n/3)
+n\,\log(n)k_1 \le \frac n3\, \log(\frac n3)k_1 + \frac {2n}3\, \log(\frac {2n}3)k_1   
+3n\,\log(n) \le n\, \log(n) + 2n\, \log(n) -n\,\log(3)-2n\log(1.5)  
+n\,\log(3)+2n\log(1.5) \le 0
+n\,\log\,n
+\alpha\,n\,k_1 \le T(n/3) + T(2n/3) \le \alpha\,n\,k_2
+\alpha\,n\,k_1 \le \alpha\,n/3\,k_1 + \alpha 2n/3 \,k_1 \land\\ \alpha\,n/3\,k_2 + \alpha 2n/3 \,k_2 \le \alpha\,n\,k_2  
+k_1
+k_2
+\alpha
+(\forall \alpha)\, T \in \Theta(\alpha n)

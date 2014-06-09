@@ -1,0 +1,13 @@
+A_n
+n
+ A_0 = A_1 = 0;\quad A_n = A_{\lfloor{n/2}\rfloor} + A_{\lceil{n/2}\rceil} + n - \frac{\lfloor{n/2}\rfloor}{\lceil{n/2}\rceil+1} - \frac{\lceil{n/2}\rceil}{\lfloor{n/2}\rfloor+1}. 
+n
+\Delta_n := A_{n+1} - A_{n}
+ A_{2p} = 2 A_{p} + 2p - 2 + \frac{2}{p+1};\quad A_{2p+1} = A_{p} + A_{p+1} + 2p - 1 + \frac{2}{p+2}. 
+ \Delta_{2p} = \Delta_{p} + 1 + \frac{2}{p+2} - \frac{2}{p+1};\quad \Delta_{2p+1} = \Delta_p + 1. 
+\Delta_{2p} = \Delta_{2p+1} = \Delta_{p} + 1
+\Delta_n = \lfloor{\lg n}\rfloor + 1
+n
+\sum_{k=1}^{n-1}\Delta_k
+\Delta_k
+\sum_{k=1}^{n-1}\Delta_k

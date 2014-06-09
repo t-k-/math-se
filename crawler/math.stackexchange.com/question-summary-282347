@@ -1,0 +1,45 @@
+X
+n
+U
+U
+(0,1)
+X
+\{0,1,\ldots,n\}
+P(X=k | U) = {n \choose k} U^k (1-U)^{n-k}
+P(X=k) = \int_0^1 {n \choose k} u^k (1-u)^{n-k} f_U(u) \text{ d}u
+f_U(u)
+X
+\forall u \in (0,1)\ \  f_U(u) = 1
+P(X=k) = {n \choose k} \int_0^1 u^k (1-u)^{n-k} \text{d}u
+X
+X
+\{0,1,2,\ldots,n\}
+ \mathbb E(s^X)=\sum_{k=0}^ns^k\mathbb P(X=k)=\int_0^1\sum_{k=0}^n\binom{n}ku^k(1-u)^{n-k}s^k\mathrm du. 
+ \sum_{k=0}^n\binom{n}k(su)^k(1-u)^{n-k}=(1-(1-s)u)^n, 
+ \mathbb E(s^X)=\int_0^1(1-(1-s)u)^n\mathrm du\stackrel{[v=1-(1-s)u]}{=}\frac1{1-s}\int_s^1v^n\mathrm dv=\frac{1-s^{n+1}}{(n+1)(1-s)}, 
+ \mathbb E(s^X)=\frac1{n+1}\sum_{k=0}^ns^k. 
+X
+V
+[0,1]
+\mathbf 1_{V\leqslant u}
+u
+(U_i)_{1\leqslant i\leqslant n}
+[0,1]
+\sum\limits_{i=1}^n\mathbf 1_{U_i\leqslant u}
+(n,u)
+X
+X=\sum\limits_{i=1}^n\mathbf 1_{U_i\leqslant U_{n+1}}
+(U_i)_{1\leqslant i\leqslant n+1}
+[0,1]
+[X=k]
+U_{n+1}
+(k+1)
+(U_{(i)})_{1\leqslant i\leqslant n+1}
+(U_i)_{1\leqslant i\leqslant n+1}
+U_{n+1}
+1
+n+1
+X
+\{0,1,2,\ldots,n\}
+\Gamma
+\int_0^1 x^\alpha (1 - x)^\beta dx

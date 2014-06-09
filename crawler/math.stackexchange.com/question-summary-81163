@@ -1,0 +1,15 @@
+f(x)
+[a,b]
+c\in (a,b)
+\int\limits_a^b g(x)\delta(f(x))dx={g(c)\over |f'(c)|}
+\delta(f(x))={\delta(x-c)\over |f'(c)|}
+f
+[a,b]
+f'(x)>0
+f'(x)<0
+ \begin{align} \int_a^bg(x)\delta(f(x))\;\mathrm{d}x &=\int_{f(a)}^{f(b)}g(f^{-1}(x))\delta(x)\;\mathrm{d}f^{-1}(x)\\ &=\int_{f(a)}^{f(b)}g(f^{-1}(x))\delta(x)\;\frac{\mathrm{d}x}{f'(f^{-1}(x))}\\ &=\frac{g(f^{-1}(0))}{f'(f^{-1}(0))}\\ &=\frac{g(c)}{f'(c)} \end{align} 
+\delta
+\varphi_\epsilon(x)=\varphi(x/\epsilon)/\epsilon
+\varphi
+1
+\epsilon\to0

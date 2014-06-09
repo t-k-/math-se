@@ -1,0 +1,10 @@
+I:=\int e^x \cosh(x) \: dx
+u=\cosh(x)
+v'=e^x
+u'=\sinh(x)
+v=e^x
+I:=e^x \cosh(x)-\int e^x \sinh(x)=e^x \cosh(x) - (e^x \sinh(x) - \int e^x \cosh(x)\: dx
+I = e^x \cosh(x) - e^x \sinh(x) + I \implies 0 = e^x(\cosh(x)-\sinh(x))=e^x e^{-x} = 1
+e^x\cosh x=\frac{1}{2}e^x(e^x+e^{-x})=\frac{1}{2}(e^{2x}+1)\Longrightarrow
+\int e^x\cosh x\,dx=\frac{1}{2}\int(e^{2x}+1)dx=\frac{1}{4}e^{2x}+\frac{x}{2}+C=\frac{1}{4}\left(e^{2x}+2x\right)+C
+\,e^x(\cosh x-\sinh x)=e^x(e^{-x})=1\,

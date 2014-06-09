@@ -1,0 +1,26 @@
+Ds= A+A^2+\alpha_1\tag{1}
+Ds= M+M^2+\alpha_2 \tag{2}
+(1)
+Ds
+(2)
+Ds= A+A^2+\alpha_1+M+M^2+\alpha_2
+ Ds(A,M) = \begin{pmatrix}1\\A\\A^2\end{pmatrix}^\top \begin{vmatrix}  K_{11} & K_{12} & K_{13} \\ K_{21} & K_{22} & K_{23} \\ K_{31} & K_{32} & K_{33}  \end{vmatrix} \begin{pmatrix}1\\M\\M^2\end{pmatrix}
+ Ds(A,M) = K_{11} + K_{12} M + K_{13} M^2 + K_{21} A + K_{22} A M + K_{23} A M^2 +  K_{31} A^2 + K_{32} A^2 M + K_{33} A^2 M^2 
+M=M_\star
+A
+Ds = (K_{11}+K_{12}M_\star+K_{13} M_\star^2) \\      + (K_{21}+K_{22}M_\star+K_{23} M_\star^2) A \\      + (K_{31}+K_{32}M_\star+K_{33} M_\star^2) A^2 \\      = \alpha_1 + \beta_1 A + \gamma_1 A^2
+A=A_\star
+M
+Ds = (K_{11}+K_{21}A_\star+K_{31} A_\star^2) \\      + (K_{12}+K_{22}A_\star+K_{32} A_\star^2) M \\      + (K_{13}+K_{23}A_\star+K_{33} A_\star^2) M^2 \\      = \alpha_2 + \beta_2 M + \gamma_2 M^2
+\alpha_1
+\beta_1
+\gamma_1
+\alpha_2
+\beta_2
+\gamma_2
+K_{ij}
+K_{32}=K_{23}=K_{33}=0
+A
+M
+Ds = (K_{11}+K_{12}M_\star+K_{13} M_\star^2)       + (K_{21}+K_{22}M_\star) A       + (K_{31}) A^2 \\      = \alpha_1 + \beta_1 A + \gamma_1 A^2
+Ds = (K_{11}+K_{21}A_\star+K_{31} A_\star^2) + (K_{12}+K_{22}A_\star) M  + (K_{13}) M^2 \\      = \alpha_2 + \beta_2 M + \gamma_2 M^2

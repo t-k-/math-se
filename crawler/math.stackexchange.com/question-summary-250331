@@ -1,0 +1,25 @@
+A-(B\cup C) = (A-B)\cap (A-C)
+a\in A - (B\cup C) \leftrightarrow a \in A \land a \notin (B\cup C)
+\leftrightarrow a \in A \land a \notin B \land a \notin C
+\leftrightarrow (a \in A \land a \notin B) \land (a \in A \land a  \notin C)
+\leftrightarrow a \in (A-B) \land a \in (A-C)
+\leftrightarrow a \in (A-B) \cap (A-C)
+A
+B
+A\subseteq B
+B\subseteq A
+A=B=C
+A\subseteq B\subseteq C\subseteq A
+\newcommand{\cl}{\operatorname{cl}}
+\cl A=\bigcap\{C\subseteq\Bbb Z^+:A\subseteq C\text{ and }C\text{ is closed under addition}\}\;,
+A
+A=\{n\in\Bbb Z^+:n\text{ is even}\}
+A=\cl A
+\mathscr{C}=\{C\subseteq\Bbb Z^+:A\subseteq C\text{ and }C\text{ is closed under addition}\}
+A\in\mathscr{C}
+\cl A=\bigcap\mathscr{C}\subseteq A
+A\subseteq C
+C\in\mathscr{C}
+A\subseteq\bigcap\mathscr{C}=\cl A
+A=\cl A
+\cl\{2\}=A

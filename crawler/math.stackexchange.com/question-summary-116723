@@ -1,0 +1,16 @@
+f_n
+p<\infty
+g_n
+g_n := \sum_{i=1}^n f_i
+g_n\to g
+L^p
+ \int{g d\mu} = \int{\lim_{n\to \infty}\sum_{i=1}^n f_id\mu} = \lim_{n\to \infty} \sum_{i=1}^n \int{f_id\mu}
+f_n\ge 0
+f_n
+X
+q\ge1
+1/p+1/q=1
+\begin{align*} \Bigl|\int_X(g_n-g)d\mu\Bigr|&\le\int_X|g_n-g|\,d\mu\\ &\le\Bigl(\int_xd\mu\Bigr)^{1/q}\Bigl(\int_X|g_n-g|^pd\mu\Bigr)^{1/p}\\ &=\|g-g_n\|_{L^p(X)}\to0. \end{align*}
+n\to\infty
+\left|\int g-g_n\,d\mu\right|\leq\|g-g_n\|_{L^1}\to0
+\int g-g_n\,d\mu=\int g\,d\mu - \int \sum_{k=1}^n f_k d\mu=\int g\,d\mu -\sum_{k=1}^n \int f_k d\mu

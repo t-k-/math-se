@@ -1,0 +1,73 @@
+\lim_{n\to\infty} x_n = a
+\lim_{n\to\infty} y_n = b
+\lim_{n\to\infty} \frac{x_1 y_n + x_2 y_{n-1} + \cdots + x_n y_1}{n}.
+x_{n} \to x
+n \to \infty
+\lim_{n \to \infty}\frac{x_{1} + x_{2} + \cdots + x_{n}}{n} = x
+x_{n} = a + e_{n}
+e_{n} \to 0
+n \to \infty
+a\cdot b = ab
+y_{n}
+K > 0
+K\cdot\dfrac{|e_{1}| + |e_{2}| + \cdots + |e_{n}|}{n}
+e_{n} \to 0
+0
+ab
+\begin{aligned}\frac{x_{1}y_{n} + x_{2}y_{n - 1} + \cdots + x_{n}y_{1}}{n} &= a\cdot\frac{y_{1} + y_{2} + \cdots + y_{n}}{n}\\ &+ \frac{e_{1}y_{n} + e_{2}y_{n - 1} + \cdots + e_{n}y_{1}}{n}\end{aligned}
+x_n \to 0
+y_n \to b
+\frac{y_1+y_2+\ldots+ y_n}{n} \to b
+K>0
+\frac{y_1+y_2+\ldots+ y_n}{n} \le K
+n
+x_n \to 0
+\varepsilon>0
+m>0
+|x_m|<\frac{\varepsilon}{2K}.
+\frac{x_1y_n+\ldots + x_ny_1}{n}=\frac{x_1y_n+\ldots + x_m y_{n-m+1}}{n}+\frac{x_{m+1}y_{n-m}+\ldots + x_ny_1}{n} \le \frac{x_1y_n+\ldots + x_m y_{n-m+1}}{n} + \frac{\varepsilon}{2K}K
+\le \frac{x_1y_n+\ldots + x_m y_{n-m+1}}{n} + \frac{\varepsilon}{2} \frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
+m
+x_n \to a
+\frac{x_1y_n+\ldots + x_ny_1}{n}=\frac{(x_1-a)y_n+\ldots + (x_n-a)y_1}{n}+a\frac{y_1+\ldots + y_n}{n}
+\epsilon_0 >0
+\epsilon=\epsilon_0/M^*
+M^*
+|\sum_{p=0}^{n} x_p.y_{n-p}-n.ab|<n\epsilon
+\lim_{n}x_n=a
+\lim_{n}y_n=b
+n_0
+n_0'
+(n>n_0) \implies (|x_n-a|<\epsilon)
+(n>n_0') \implies (|y_n-b|<\epsilon)
+n>n_0+n_0'
+\sum_{p=0}^{n} x_p.y_{n-p}-n.ab = (\sum_{p=0}^{n_0-1} x_p.y_{n-p}-n_0.ab) + (\sum_{p=n_0+1}^{n-n_0'} x_p.y_{n-p}-(n-(n_0+n_0')).ab)+(\sum_{p=n-n_0'+1}^{n} x_p.y_{n-p}-n_0'.ab)
+|x_p.y_{n-p}-ab|=|x_p.(y_{n-p}-b)+b(x_p-a)|\leq|x_p.(y_{n-p}-b)|+|b(x_p-a)|
+M=max_{0\leq p\leq n_0}(|x_p|,|x_p-a|)\geq\frac{a}{2}
+\infty
+|\sum_{p=0}^{n_0-1} x_p.y_{n-p}-n_0.ab| = |\sum_{p=0}^{n_0-1} (x_p.y_{n-p}-ab)|\leq n_0.M.\epsilon+n_0.b.M
+|\sum| \leq n_0'.M'.\epsilon+n_0'.a.M'
+|\sum| \leq (n-(n_0+n_0')).((b+\epsilon).\epsilon+a.\epsilon)\leq (n-(n_0+n_0')).((b+a+1).\epsilon
+|\sum_{p=0}^{n} x_p.y_{n-p}-n.ab|<\epsilon (n_0 M + n_0' M'+(n-(n_0+n_0'))(a+b+1))+n_0 b M + n_0' a M'
+|\frac{1}{n}\sum_{p=0}^{n} x_p.y_{n-p}-ab|<\epsilon (\frac{C}{n}+(a+b+1)) + \frac{C'}{n}<(a+b+3)\epsilon<\epsilon_0
+(x_n)_{n\in\mathbb{N}^*}\to a
+\left(\bar{x}_n=\frac{1}{n}\sum_{j=1}^{n}x_j\right)_{n\in\mathbb{N}^*}\to a
+\epsilon>0
+N\in\mathbb{N}
+\epsilon
+m\geq N
+n\geq N
+\frac{1}{2}b \bar{x}_n+\frac{1}{2}a \bar{y}_n
+\frac{\epsilon}{2}(|\bar{x}_n|+|\bar{y}_n|)
+n\geq N
+\frac{2n}{2n+1}\left(\frac{1}{2}b \bar{x}_n+\frac{1}{2}a \bar{y}_n\right)
+\left(\frac{\epsilon}{2}+\frac{\varepsilon^2}{n}\right)\cdot(|\bar{x}_n|+|\bar{y}_n|)
+(1)
+(2)
+|x_m-a|,\quad|y_m-b|,\quad|\bar{x}_m-a|,\quad|\bar{y}_m-b|
+ c_n = \frac{1}{n}\sum_{i=1}^{n}x_i y_{n+1-i}, 
+ c_{2n} = \frac{1}{2n}\sum_{j=1}^{n} x_j y_{2n+1-j}+\frac{1}{2n}\sum_{j=1}^{n} y_j x_{2n+1-j} 
+ \left(c_{2n}\right)_{n\in\mathbb{N}^*}\to ab. \tag{1}
+ c_{2n+1} = \frac{2n}{2n+1}\left(\frac{1}{2n}\sum_{j=1}^{n} x_j y_{2n+2-j}+\frac{1}{2n}\sum_{j=1}^{n} y_j x_{2n+2-j}\right)+\frac{x_{n+1}y_{n+1}}{2n+1} 
+ \left(c_{2n+1}\right)_{n\in\mathbb{N}}\to ab. \tag{2}
+ \left(c_n\right)_{n\in\mathbb{N}^*}\to ab \tag{3}

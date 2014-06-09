@@ -1,0 +1,17 @@
+\psi \in C^\infty(\mathbb{R}^n)
+{}^{[1]}
+{}^{[1]}
+\mathbb{R}^2
+\psi
+\mathbb{R}
+\psi_0(x) = \begin{cases} 1 &, \lvert x\rvert \leqslant \frac14\\ \frac32 - 2\lvert x\rvert &, \frac14 < \lvert x\rvert \leqslant \frac34\\ 0 & \lvert x\rvert > \frac34\end{cases}
+\sum_{k\in\mathbb{Z}} \psi_0(x+k) \equiv 1
+\varphi
+\left[-\frac18, \frac18\right]
+\psi_1 := \psi_0 \ast \varphi.
+\psi_1
+\left[-\frac78,\frac78\right]
+\psi_1
+1 \equiv \sum_{k \in \mathbb{Z}} \psi_1(x+k) =  \sum_{k \in \mathbb{Z}} (\psi_0 \ast \varphi)(x+k) = \sum_{k \in \mathbb{Z}} \tau_k(\psi_0 \ast \varphi) = \sum_{k \in \mathbb{Z}} (\tau_k \psi_0)\ast\varphi = \left( \sum_{k \in \mathbb{Z}} \tau_k\psi_0\right)\ast \varphi,
+\tau_k\psi_0
+\psi(x_1,\, \dotsc,\, x_n) := \prod_{k=1}^n \psi_1(x_k)

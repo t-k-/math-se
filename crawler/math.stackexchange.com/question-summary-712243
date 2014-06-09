@@ -1,0 +1,59 @@
+ g(x) = \sum_{k=1}^\infty {\cos (kx) \over k^2}
+ f(x) = \sum_{k=1}^\infty {\sin (kx) \over k^3}
+f'
+\mathbb R
+g_n(x) = \sum_{k=1}^n \frac{\cos (kx)}{k^2},
+g_n'(x) = - \sum_{k=1}^n \frac{\sin (kx)}{k}.
+h(x) = -\sum_{k=1}^\infty \frac{\sin (kx)}{k}.
+g
+h
+M
+h
+L^2([0,2\pi])
+\sin (kx)
+\int_0^{2\pi} \sin^2(kx)\,dx = \pi
+k \in \mathbb{Z}^+
+\lVert g_n' - g_m'\rVert_{L^2([0,2\pi])}^2 = \sum_{k=m+1}^n \frac{1}{k^2} \int_0^{2\pi} \sin^2(kx)\,dx < \frac{\pi}{m}
+1 \leqslant m < n
+(g_n')
+L^2([0,2\pi])
+g
+h
+\begin{align} g(y) - g(x) &= \lim_{n\to\infty} g_n(y) - g_n(x) \\ &= \lim_{n\to \infty} \int_x^y g_n'(t)\,dt\\ &= \int_x^y \lim_{n\to\infty} g_n'(t)\,dt\\ &= \int_x^y h(t)\,dt, \end{align}
+\int_x^y 1\cdot\lvert u(t) - v(t)\rvert\,dt \leqslant \sqrt{\int_x^y 1^2\,dt}\cdot\sqrt{\int_x^y \lvert u(t)-v(t)\rvert^2\,dt} \leqslant \sqrt{y-x}\cdot \lVert u-v\rVert_{L^2}.
+g
+h(x)
+h
+g
+h
+g
+h
+h
+2\pi
+g
+h
+h
+h(x) = \frac{x-\pi}{2}
+0 < x < 2\pi
+h(0) = 0
+h
+2\pi
+h(0) = 0
+-\frac{\sin (kx)}{k} = \int_x^\pi \cos (kt)\,dt,
+\begin{align} g_n'(x) &= - \sum_{k=1}^n \frac{\sin (kx)}{k}\\ &= \int_x^\pi \sum_{k=1}^n \cos (kt)\,dt\\ &= \int_x^\pi \frac{\sin \left(n+\frac{1}{2}\right)t}{2\sin\frac{t}{2}} - \frac{1}{2}\,dt\\ &= \frac{x-\pi}{2} + \int_x^\pi \frac{1}{2\sin \frac{t}{2}}\cdot \sin \left(n+\tfrac{1}{2}\right)t\,dt. \end{align}
+\varphi(t) = \frac{1}{2\sin (t/2)}
+(0,2\pi)
+0 < x < 2\pi
+\int_x^\pi \varphi(t)\sin (ct)\,dt = -\left.\frac{\varphi(t)\cos (ct)}{c}\right\rvert_{x}^\pi + \frac{1}{c} \int_x^\pi \varphi'(t)\cos(ct)\,dt,
+\left\lvert \int_x^\pi \frac{\sin \left(n+\frac{1}{2}\right)t}{2\sin \frac{t}{2}}\,dt\right\rvert \leqslant \frac{K(x)}{n+\frac{1}{2}},
+K(x)
+\varphi
+[x,\pi]
+[\pi,x]
+-\sum_{k=1}^\infty \frac{\sin (kx)}{k}
+[\delta, 2\pi - \delta]
+0 < \delta < \pi
+2\pi
+[0,2\pi]
+f(x)
+M_k=1/k^3

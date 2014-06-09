@@ -1,0 +1,68 @@
+f: \mathbb{R}^+ \to \mathbb{R}^+
+f(x+y)>f(x)(1+yf(x))
+x,y\in \mathbb{R}^+
+f
+f
+f(x+y) \geq f(x)(1+yf(x))
+x,y>0
+x_0 < x_1 < x_2 < \ldots
+x_0 := 2011 \text{ and } x_{n+1} := x_n + 1/f(x_n) \text{ for } n>0.
+f(x + 1/f(x)) \geq f(x)(1+f(x)/f(x)) = 2f(x)
+f(x_n) \geq 2^n f(x_0)
+n
+ x_n = x_0 + \sum_{i=0}^{n-1} (x_{i+1} - x_i) = x_0 + \sum_{i=0}^{n-1} 1/f(x_i) \leq x_0 + \sum_{i=0}^{n-1} 1/(2^i f(x_0)) < x_0 + 2/f(x_0) =: M.
+x_0,x_1,\ldots
+M
+f(x_0),f(x_1),\ldots
+N
+f(x_N) > f(M)
+x_N < M
+f
+f
+\epsilon > 0
+n \in \mathbb N_{0}
+u_n
+u_n = \epsilon f(1+n\epsilon)
+u_{n+1} > u_n + u_n^2
+u_0 = \epsilon f(1)
+ f(1+(n+1)\epsilon) - f(1+n\epsilon) > \epsilon f(1+ n\epsilon)^2.  
+(*): f(x+y)-f(x)>yf(x)^2
+f
+x
+y\rightarrow+\infty
+f
+a
+f(a)>1
+x\ge 0
+g(x)=f(x+a)-f(a)
+g(0)=0
+g
+(**): g(x+y) - g(x)>yg(x)^2
+x\ge 0
+y>0
+f
+g
+x=0
+g
+g
+x=a
+(*)
+g(y)>y
+y>0
+b>0
+h=b/n
+(**)
+g(ih)-g((i-1)h)>hg((i-1)h)^2
+i=1,2,...,n
+h\rightarrow 0
+g(b) >\int_0^b g(u)^2 du
+g
+g(u)>u
+n
+O(b^{2^{n+1}}/2^{n^3})
+b>1
+g(b)
+f(a+b)
+g(b)>\int_0^b g(u)^2 du > \int_0^b u^2 du = \frac{b^3}{3}.
+g(b)>\int_0^b g(u)^2 du > \int_0^b \left(\frac{u^3}{3}\right)^2 du = \frac{b^7}{3^2 \times 7}.
+ g(b) > \frac{b^3}{3},\ \frac{b^7}{3^2 \times 7},\ \frac{b^{15}}{3^4 \times 7^2 \times 15}, ... 

@@ -1,0 +1,16 @@
+u_n
+\frac{1}{n^2}\sum^n_{k=1} \lfloor kx\rfloor
+x \in \mathbb R
+ c_n = \frac{1}{n^2}\lfloor kx\rfloor
+\epsilon > 0
+N
+n > N
+|\frac{1}{n^2}\lfloor kx\rfloor - l| < \epsilon
+l
+kx-1<\lfloor kx\rfloor\le kx
+\sum_{k=1}^{n}(kx-1)<\sum_{k=1}^{n}\lfloor kx\rfloor\le \sum_{k=1}^{n}kx
+ \frac{n(n+1)x}{2}-n<\sum_{k=1}^{n}\lfloor kx\rfloor\le \frac{n(n+1)x}{2}
+\frac{1}{n^2}\left(\frac{n(n+1)x}{2}-n\right)<\frac{1}{n^2}\sum_{k=1}^{n}\lfloor kx\rfloor\le \frac{1}{n^2}\frac{n(n+1)x}{2}
+\Rightarrow \left(\frac{1}{2}+\frac{1}{2n}\right)x-\frac{1}{n}<\frac{1}{n^2}\sum_{k=1}^{n}\lfloor kx\rfloor\le \left(\frac{1}{2}+\frac{1}{2n}\right)x
+l=x/2
+kx-1 < \lfloor kx \rfloor \le kx

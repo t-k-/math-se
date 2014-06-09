@@ -1,0 +1,22 @@
+\displaystyle  \lim_{n \rightarrow \infty} \int\limits_0^n \frac {1}{n+n^2\sin(xn^{-2})} dx 
+t=\dfrac{x}n
+\sin(t/n) > \dfrac2{\pi} \cdot \dfrac{t}n
+t \in [0,1]
+I_n = \int_0^1 \dfrac{dt}{1+n \sin(t/n)}
+1 + n \sin(t/n) > 1+\dfrac{2t}{\pi}
+I_n < \int_0^1 \dfrac{dt}{1+\dfrac{2t}{\pi}} \text{,  which is clearly bounded}
+\lim_{n \to \infty}\int_0^1 \dfrac{dt}{1+n \sin(t/n)} = \int_0^1 \lim_{n \to \infty}\dfrac{dt}{1+n \sin(t/n)} = \int_0^1 \dfrac{dt}{1+t} = \log(2)
+u=x/n^2
+ I_n=\int_0^{1/n}\frac{du}{\sin u+\frac{1}{n}}. 
+\epsilon>0
+n
+u
+[0,1/n]
+ (1-\epsilon)u\leq \sin u\leq u 
+n
+ \log 2=\int_0^{1/n}\frac{du}{u+\frac{1}{n}}\leq I_n\leq \int_0^{1/n}\frac{du}{(1-\epsilon)u+\frac{1}{n}}=\frac{\log(2-\epsilon)}{1-\epsilon} 
+ \log 2\leq \liminf I_n\leq\limsup I_n\leq \frac{\log(2-\epsilon)}{1-\epsilon}. 
+\epsilon
+0
+ \lim I_n=\log 2. 
+y = {x \over n}

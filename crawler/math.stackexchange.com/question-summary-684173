@@ -1,0 +1,10 @@
+\int_0^{+ \infty}\int_{- \infty}^{+ \infty}e^{(ax+by)} e^{-x} e^{-0.5(y-x)^2} \; dy \; dx
+\begin{align*} \int_0^\infty\int_{-\infty}^\infty e^{ax+by}e^{-x}e^{-0.5(y-x)^2}\ dy\ dx &= \int_0^\infty\int_{-\infty}^\infty e^{(a-1)x}e^{by}e^{-\frac12(y^2-2xy-x^2)}\ dy\ dx \\  &= \int_0^\infty e^{(a-1)x+\frac12x^2}\int_{-\infty}^\infty e^{-\frac12y^2+(b+x)y}\ dy\ dx \end{align*} 
+x
+e^{0.5 \cdot (y-x)^2}
+x,y
+\begin{align} \int_0^\infty\int_{-\infty}^\infty e^{ax+by}e^{-x}e^{-{1\over2}(y-x)^2}\,dy\,dx &=\int_0^\infty\int_{-\infty}^\infty e^{ax+bx+bu}e^{-x}e^{-{1\over2}u^2}\,du\,dx\\ &=\int_0^\infty e^{ax+bx-x}\,dx \int_{-\infty}^\infty e^{-{1\over2}(u-b)^2+{1\over2}b^2}\,du\\ &=e^{{1\over2}b^2}\int_0^\infty e^{(a+b-1)x}\,dx\int_{-\infty}^\infty e^{-{1\over2}v^2}\,dv \end{align}
+x
+a+b\ge1
+v
+\sqrt{2\pi}

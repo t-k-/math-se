@@ -1,0 +1,80 @@
+n \in \mathbb{N}
+k \in \mathbb{N}
+n^k > \sum_{i=1}^{n-1} i^k \ ?
+k
+n^k > 1^k + 2^k + 3^k + 4^k + \dots + (n-2)^k + (n-1)^k
+ \iff 1 > \left(\frac 1n\right)^k + \left(\frac 2n\right)^k + \left(\frac 3n\right)^k + \dots + \left(\frac {n-1}n\right)^k
+k \to \infty
+k
+x=\frac{ik}{n}
+k=\log(2)n
+ e^{-x/(1-x/k)}\le\left(1-\frac xk\right)^k\le e^{-x}\tag{1} 
+ \begin{align} \frac1{n^k}\sum_{i=0}^{n-1}i^k &=\frac1{n^k}\sum_{i=1}^n(n-i)^k\\ &=\sum_{i=1}^n\left(1-\frac in\right)^k\\ &\le\sum_{i=1}^ne^{-ik/n}\\ &\le\frac1{e^{k/n}-1}\tag{2} \end{align} 
+k/n
+\log(2)
+\alpha\gt0
+ \begin{align} \hspace{-1cm}\frac1{n^k}\sum_{i=0}^{n-1}i^k &=\frac1{n^k}\sum_{i=1}^n(n-i)^k\\ &=\sum_{i=1}^n\left(1-\frac in\right)^k\\ &\ge\sum_{i=1}^ne^{-ik/(n-i)}\\ &=\sum_{i=1}^ne^{-ik/n}-\sum_{i=1}^ne^{-ik/n}\left(1-e^{-i^2k/n/(n-i)}\right)\\ &\ge\color{#00A000}{\sum_{i=1}^ne^{-ik/n}}\color{#C00000}{-\sum_{i=1}^ne^{-ik/n}\frac{i^2k}{n(n-i)}}\\ &\ge\color{#00A000}{\sum_{i=1}^\infty e^{-ik/n}}\color{#C00000}{-\frac1{1-\alpha}\sum_{i=1}^{\alpha n}e^{-ik/n}\frac{i^2k}{n^2}-\sum_{i=\alpha n+1}^ne^{-ik/n}\frac{i^2k}{n}}\color{#00A000}{-\sum_{i=n+1}^\infty e^{-ik/n}}\\ &\ge\frac1{e^{k/n}-1}-\frac1{1-\alpha}\frac{k}{n^2}\frac{e^{-k/n}+e^{-2k/n}}{(1-e^{-k/n})^3}\color{#0000FF}{-e^{-\alpha k}\frac{nk}{e^{k/n}-1}-\frac{e^{-n}}{e^{k/n}-1}}\\ &\sim\frac1{e^{k/n}-1}-\frac{6\log(2)}{(1-\alpha)n}\tag{3} \end{align} 
+\frac1{e^x-1}
+x=\log(2)
+-2
+\frac1{e^{k/n}-1}-\frac{6\log(2)}{n}=1
+k=\log(2)(n-3)
+k=\log(2)(n-3)
+ k=\log(2)(n-3)-\frac{3\log(2)(17\log(2)-6)}{2n}+\dots\tag{4} 
+1+x\le e^x
+x\in\mathbb{R}
+k^\text{th}
+ 1-\frac xk\le e^{-x/k}\le\frac1{1+\frac xk}=1-\frac{x}{k+x}\tag{5} 
+ e^{-x/(k-x)}\le1-\frac xk\le e^{-x/k}\tag{6} 
+ e^{-x/(1-x/k)}\le\left(1-\frac xk\right)^k\le e^{-x}\tag{7} 
+n=944029
+c
+k(n) = \lfloor n\log 2-c\rfloor
+n
+n\log 2-k(n)
+1
+k(n) = \lfloor n\log 2-0.039721\rfloor \quad \text{ for } \ 2\le n<944029
+k(944029) = 654351, \quad \text{with } 944029\log(2)-654351 < 0.039717
+k(603162) = 418079, \quad \text{with } \ 603162 \log 2 - 418079 > 1.0397208
+n\ge 2
+\lfloor n\log 2\rfloor-1 \le k(n) \le \lfloor n\log 2\rfloor  \tag{??}
+S_n(x_n)<1
+S_{n+1}(x_n)<2\cdot e^{-x_n/n}
+S_n(x)=\sum_{i=1}^{n-1}\left(\frac{i}{n}\right)^x
+S_n(x)=-1+(1+1/n)^x\cdot S_{n+1}(x)\leq -1+e^{x/n}\cdot S_{n+1}(x),\tag{1}
+(1)
+(2)
+ 0<S_{n+1}(x)-S_{n}(x)<\frac{1}{x+1}\tag{2}.
+S_n(x)< -1+(1+1/n)^x\cdot\left(\frac{1}{x+1}+S_n(x)\right),
+\frac{S_n(x)}{S_n(x)+\frac{1}{x+1}}<-1+(1+1/n)^x<e^{x/n}-1,
+S_n(x) < \frac{e^{x/n}-1}{(2-e^{x/n})(x+1)}.\tag{3}
+x
+n\log 2
+RHS=1
+e^{x/n}=\frac{2x+3}{x+2}
+x=n\cdot\log\left(2-\frac{1}{x+2}\right)
+RHS
+1
+ S_n\left(n\cdot \log\left(2-\frac{1}{n\log 2}\right)\right)<1\tag{4}
+(3)
+n\cdot\log 2
+S_n(x)<1
+x
+n\cdot\log 2
+\frac{C}{x+1}
+S_{n+1}(x)-S_{n}(x)
+(2)
+S_n(x)<1
+x>\frac{2n}{3}-1
+ S_n(x) = \sum_{i=1}^{n-1} \left(\frac{i}{n}\right)^x. 
+\log{2}
+ S_n(x) = \left(\frac{n-1}{n}\right)^x \left[1+S_{n-1}(x)\right]. 
+x_n
+S_n(x_n)=1
+x_{n}=x_{n-1}+\Delta_n
+ S_n(x_n) = 1 = \left(\frac{n-1}{n}\right)^{x_n}\left[1+S_{n-1}(x_{n-1}+\Delta_n)\right] = \left(\frac{n-1}{n}\right)^{x_n}\left[2+\Delta_nS_{n-1}'(x_{n-1}) + O(\Delta_n^2)\right]. 
+S_{n-1}
+x_{n-1}
+ x_n \approx \frac{\log{2}}{\log(n/(n-1))} = \frac{(n-1)\log{2}}{1+O(1/(n-1))} \approx (n-1)\log{2}. 
+x_n-x_{n-1} = \log{2}+O(\epsilon)
+\lim_{n\to\infty} (x_n-x_{n-1}) = \log{2}

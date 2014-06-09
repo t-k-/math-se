@@ -1,0 +1,41 @@
+X_0, X_1, X_2, \ldots
+S=\{0,1,\ldots,n\}
+A=\{0,n\}
+P(i,i+1)=p
+P(i,i-1)=q
+i \in S \setminus A
+p+q=1
+p,q>0
+T
+0
+n
+\mathbb{E}_k(\cdot) := \mathbb\{\cdot | X_0 = k\}
+k \in S \setminus A
+\mathbb{E}_k(T|X_T = n)
+0\leqslant k\leqslant n
+u_k=E_k(T:X_T=n)
+v_k=P_k(X_T=n)
+(u_k)
+(v_k)
+u_0=u_n=v_0=0
+v_n=1
+1\leqslant k\leqslant n-1
+(v_k)
+p\ne q
+0\leqslant k\leqslant n
+(u_k)
+u_k=k
+u_k=r^k
+u_k=kr^k
+(u_k)
+p=q=\frac12
+r=1
+v_k=\frac{k}n
+u_k=k
+u_k=k^2
+u_k=k^3
+u_k=\frac13nk-\frac1{3n}k^3
+ u_k=v_k+pu_{k+1}+qu_{k-1},\qquad v_k=pv_{k+1}+qv_{k-1}. 
+ v_k=\frac{1-r^k}{1-r^n},\qquad r=\frac{q}p. 
+ E_k(T\mid X_T=n)=\frac{u_k}{v_k}. 
+ E_k(T\mid X_T=n)=\tfrac13(n^2-k^2). 

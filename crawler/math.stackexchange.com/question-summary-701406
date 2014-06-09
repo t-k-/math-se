@@ -1,0 +1,22 @@
+\lim_{n\to \infty}\frac1{2n}\log\left({2n \choose n}\right)
+\log(n!) = \Theta (n\log(n))
+\lim_{n\to\infty}\frac{1}{2n}\left(\log\left(2n!\right) - \log\left(n!^2\right)\right) = \frac{1}{2n}\left(\log\left(2n!\right) - 2\log\left(n!\right)\right) 
+\lim_{n\to\infty}\frac{1}{2n}\left(2n\log\left(2n\right) - 2n\log\left(n\right)\right) 
+\log\left(2n\right) - \log\left(n\right) = \log(2)
+\Theta
+n \to \infty
+\begin{align*} a_n &= \frac{1}{2n} \log \binom{2n}{n} = \frac{1}{2n} \log \frac{(2n)!}{(n!)^2} \\ &= \frac{1}{2n} \sum_{k=1}^n \log \frac{n+k}{k} = \frac{1}{2n} \sum_{k=1}^n \log \Bigl( 1 + \frac{1}{k/n} \Bigr). \end{align*}
+\begin{align*} \lim_{n \to \infty} a_n &= \frac{1}{2} \int_{x=0}^1 \log\Bigl(1 + \frac{1}{x}\Bigr) \, dx = \frac{1}{2} \int_{x=0}^1 \log (x+1) - \log x \, dx \\ &= \log 2. \end{align*}
+z > 1
+z = 1
+a_n(z) = \frac{1}{zn} \log \binom{zn}{n}
+\lim_{n \to \infty} a_n(z) = \log \frac{z}{(z-1)^{1-1/z}}.
+a_n(w,z) = \frac{1}{\binom{z}{w}n} \log \binom{zn}{wn}, \quad z > w \ge 1?
+(1+1)^{2n} = \sum\limits_{k=0}^{2n} \binom{2n}{k}
+\binom{2n}{n}
+2n+1
+\binom{2n}{k}
+\log 2
+\frac{2^{2n}}{2n+1} \le \binom{2n}{n} \le 2^{2n} \quad\implies\quad \log 2 - \frac{\log(2n+1)}{2n} \le \frac{1}{2n}\log\binom{2n}{n} \le \log 2
+(2 n+1) \log (2)
+\log\left(2n!\right) - 2\log\left(n!\right)

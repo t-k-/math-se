@@ -1,0 +1,10 @@
+0 \le r \le k \le n
+r \ge 0
+n' = n-r
+1
+r = 1, 2, 3
+\sum_{k=0}^n \Pr[K = k] = \sum_{k=0}^n \binom{n}{k} p^k (1-p)^{n-k} = (p+(1-p))^n = 1^n = 1.
+\begin{align*} \binom{k}{r} \binom{n}{k} &= \frac{k!}{r! \, (k-r)!} \cdot \frac{n!}{k! \, (n-k)!} = \frac{n!}{r! \, (k-r)! \, (n-k)!} \\ &= \frac{n! \, (n-r)!}{r! \, (n-r)! \, (k-r)! \, (n-k)!} = \binom{n}{r} \binom{n-r}{k-r},\end{align*}
+M_r = \binom{K}{r}.
+\begin{align*} {\rm E}[M_r] &= \sum_{k=0}^n \binom{k}{r} \Pr[K = k] \\ &= \sum_{k=0}^n \binom{k}{r}\binom{n}{k} p^k (1-p)^{n-k} \\ &= \sum_{k=r}^n \binom{n}{r}\binom{n-r}{k-r} p^r p^{k-r} (1-p)^{n-k} \\ &= \binom{n}{r} p^r \sum_{k=r}^n \binom{n-r}{k-r} p^{k-r} (1-p)^{n-k} \\ &= \binom{n}{r} p^r \sum_{k'=0}^{n-r} \binom{n-r}{k'} p^{k'} (1-p)^{(n-r)-k'} \\ &= \binom{n}{r} p^r,\end{align*}
+\begin{align*} {\rm E}[K(K-1)\ldots(K-r+1)] &= {\rm E}[r! \, M_r] = r! \, {\rm E}[M_r] = \frac{n!}{(n-r)!} p^r \\ &= n(n-1)\ldots(n-r+1) p^r. \end{align*}

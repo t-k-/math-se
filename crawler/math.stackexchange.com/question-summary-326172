@@ -1,0 +1,24 @@
+ l^{p} 
+ \mathbf{x} = (x_{i})_{i \in \mathbb{N}} 
+ \displaystyle \left( \sum_{i=1}^{\infty} |x_{i}|^{p} \right)^{1/p} 
+ l^{\infty} 
+ \mathbf{x} 
+ \displaystyle \sup_{i \in \mathbb{N}} |x_{i}| 
+ l^{p} 
+ l^{\infty} 
+ L^{p} 
+ l^{p} 
+ L^{p} 
+k \in \mathbb{N}
+p \geq 1
+\|x\|_{\infty} \leq \|x\|_p
+|x_k| \leq \left(\sum_{j=1}^{\infty} |x_j|^p \right)^{\frac{1}{p}}=\|x\|_p
+\|x\|_{\infty} \leq \liminf_{p \to \infty} \|x\|_p \tag{1}
+q<p
+|x_j| \leq \|x\|_{\infty}
+j \in \mathbb{N}
+\|x\|_p = \left( \sum_{j=1}^{\infty} |x_j|^{p-q} \cdot |x_j|^q \right)^{\frac{1}{p}} \leq \|x\|_{\infty}^{\frac{p-q}{p}} \cdot \left( \sum_{j=1}^{\infty} |x_j|^q \right)^{\frac{1}{p}} = \|x\|_{\infty}^{1-\frac{q}{p}} \cdot \|x\|_q^{\frac{q}{p}}
+ \limsup_{p \to \infty} \|x\|_p \leq \limsup_{p \to \infty} \left( \|x\|_{\infty}^{1-\frac{q}{p}} \cdot \|x\|_q^{\frac{q}{p}}\right) = \|x\|_{\infty} \cdot 1 \tag{2}
+\lim_{p \to \infty} \|x\|_p
+\|x\|_{\infty}
+\limsup_{p \to \infty} \|x\|_p \leq \|x\|_{\infty} \leq \liminf_{p \to \infty} \|x\|_p

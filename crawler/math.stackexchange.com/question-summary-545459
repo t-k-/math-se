@@ -1,0 +1,9 @@
+z
+(u,v)
+(x,y)
+u = x^2 + y^2
+v=2xy
+\left(\frac{\partial z}{\partial u}\right)_{v} \text{ in terms of } \left(\frac{\partial z}{\partial x}\right)_{y} \text{ and } \left(\frac{\partial z}{\partial y}\right)_{x}
+\left(\frac{\partial z}{\partial u}\right)_{v}=\left(\frac{\partial z}{\partial x}\right)_{y}\left(\frac{\partial x}{\partial u}\right)_{v}+\left(\frac{\partial z}{\partial y}\right)_{x}\left(\frac{\partial y}{\partial u}\right)_{v}
+\begin{align*}\left(\frac{\partial z}{\partial u}\right)_{v}&=\left(\frac{\partial z}{\partial x}\right)_{y}\left(\frac{\partial u}{\partial x}\right)_{v}^{-1} +\left(\frac{\partial z}{\partial y}\right)_{x}\left(\frac{\partial u}{\partial y}\right)_{v}^{-1} \\ &= \left(\frac{\partial z}{\partial x}\right)_{y}\left(\frac{1}{2x}\right) + \left(\frac{\partial z}{\partial y}\right)_{x}\left(\frac{1}{2y}\right)\end{align*}
+\left(\frac{\partial z}{\partial u}\right)_{v}=\frac{1}{2(x^2 - y^2)}\left\{x\left(\frac{\partial z}{\partial x}\right)_{y}-y\left(\frac{\partial z}{\partial y}\right)_{x}\right\}

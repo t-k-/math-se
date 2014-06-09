@@ -1,0 +1,9 @@
+0 < a_0 \leq a_1 \leq \cdots \leq a_n
+|z| < 1
+z
+ p_n(z) = a_0 z^n + a_1 z^{n-1} + \cdots + a_{n-1} z + a_n = 0 
+n = 2
+\lvert z\rvert< 1
+\begin{align} \lvert (1-z)p_n(z)\rvert &= \left\lvert \sum_{k=0}^n a_{n-k}z^k - \sum_{k=0}^n a_{n-k}z^{k+1}\right\rvert\\ &= \left\lvert \sum_{k=0}^n a_{n-k}z^k - \sum_{k=1}^{n+1} a_{n+1-k}z^k\right\rvert\\ &= \left\lvert a_n - \sum_{k=1}^n (a_{n+1-k} - a_{n-k})z^k - a_0z^{n+1}\right\rvert\\ &\geqslant a_n - \sum_{k=1}^n (a_{n+1-k}-a_{n-k})\lvert z\rvert^k - a_0 \lvert z\rvert^{n+1}\\ &\geqslant a_n - \sum_{k=1}^n (a_{n+1-k} - a_{n-k}) - a_0\lvert z\rvert^{n+1}\\ &= a_0(1-\lvert z\rvert^{n+1})\\ &> 0 \end{align}
+a_m \leqslant a_{m+1}
+\lvert z\rvert^k < 1

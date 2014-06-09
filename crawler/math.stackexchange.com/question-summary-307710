@@ -1,0 +1,35 @@
+(x,y)
+ \neq 
+(0,0)
+u(0,0) = 0
+\frac{\partial u} {\partial x} (x,y)
+\frac{\partial u} {\partial y} (x,y)
+ (x,y) \in \Bbb R^2.  
+ \frac {\partial^2 u} {\partial x \partial y} (0,0) \neq \frac {\partial^2 u} {\partial y \partial x} (0,0)  
+ \frac {\partial u}{\partial x} and \frac {\partial u}{\partial y} 
+(0,0)
+u(x,y) = xy \frac {x^2-y^2}{x^2+y^2} 
+u(x, y)=\begin{cases} xy \frac {x^2-y^2}{x^2+y^2}, ~(x, y) \ne (0,0)\\\\ ~~~0, ~~~~~~~~~~~~~~~(x, y) = (0,0)\;. \end{cases}
+\tag 1 u(x, y)=\begin{cases} \frac {x^3y - xy^3}{x^2+y^2}, ~(x, y) \ne (0,0)\\\\ ~~~0, ~~~~~~~~~~~~~~(x, y) = (0,0)\;. \end{cases}
+\displaystyle \frac{\partial u} {\partial x} (x,y) ~\forall x~ \in \Bbb R^2
+\displaystyle \frac{\partial u} {\partial y} (x,y) ~\forall x~ \in \Bbb R^2
+ \displaystyle \frac {\partial^2 u} {\partial x \partial y} (0,0) \neq \frac {\partial^2 u} {\partial y \partial x} (0,0)
+\displaystyle \frac {\partial u}{\partial x} \text{and} \frac {\partial u}{\partial y} 
+(0,0)
+(1)
+(a)
+\tag 2 \displaystyle \frac{\partial u} {\partial x} (x,y) = \frac{(3x^2y- y^3)(x^2+y^2) - 2x(x^3y - xy^3)}{(x^2 + y^2)^2} = \frac{x^4y + 4x^2y^3-y^5}{(x^2+y^2)^2}
+(1)
+(b)
+\tag 3 \displaystyle \frac{\partial u} {\partial y} (x,y) = \frac{(x^3-3xy^2)(x^2+y^2) - 2y(x^3y - xy^3)}{(x^2+y^2)^2} = \frac{x^5 - 4x^3y^2-xy^4}{(x^2+y^2)^2}
+(2)
+ \tag 4 \displaystyle \frac {\partial^2 u} {\partial x \partial y} (x, y) = \frac{(x^4+ 12x^2y^2-5y^4)(x^2+y^2)^2 - 2(x^2+y^2)(2y)(x^4y + 4x^2y^3-y^5)}{(x^2+y^2)^4} = \frac{x^6 + 9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3} = \frac {\partial^2 u} {\partial y \partial x} (x, y)
+\tag 5 \displaystyle \frac {\partial^2 u} {\partial x \partial y} (x, y) = \frac {\partial^2 u} {\partial y \partial x} (x, y) = \begin{cases} \frac{x^6 + 9x^4y^2-9x^2y^4-y^6}{(x^2+y^2)^3}, ~(x, y) \ne (0,0)\\\\ ~~~~~~~~~~~~~~~~~~0, ~~~~~~~~~~~~~~~~~~~~~~~~(x, y) = (0,0)\;. \end{cases}
+(c)
+ \frac {\partial^2 u} {\partial x \partial y} (0,0) \neq \frac {\partial^2 u} {\partial y \partial x} (0,0)
+ \tag 6 \displaystyle \frac{\partial^2 u} {\partial x \partial y} (0,0) = \lim\limits_{h \to 0} \frac{\frac{\partial u}{\partial x} (0, h) - \frac{\partial u}{\partial x} (0, 0)}{h} = \lim\limits_{h \to 0} \frac{-h^5/h^4}{h} = \lim\limits_{h \to 0} \frac{-h}{h} = -1
+ \tag 7 \displaystyle \frac{\partial^2 u} {\partial y \partial x} (0,0) = \lim\limits_{h \to 0} \frac{\frac{\partial u}{\partial y} (h, 0) - \frac{\partial u}{\partial y} (0, 0)}{h} = \lim\limits_{h \to 0} \frac{h^5/h^4}{h} = \lim\limits_{h \to 0} \frac{h}{h} = +1
+\therefore
+(c)
+\frac {\partial^2 u} {\partial x \partial y} (0,0) \neq \frac {\partial^2 u} {\partial y \partial x} (0,0)
+(d)

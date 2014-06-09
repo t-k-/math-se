@@ -1,0 +1,19 @@
+\displaystyle \sin( x) =  x \prod_{k=1}^\infty \left( 1 - \frac{x^2}{\pi^2k^2} \right)
+\sin( x)
+y''+y=0
+\displaystyle \frac{\sin'( x)}{\sin( x)} =  \frac{1}{x}-2x \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}
+\displaystyle \sin'( x) =  \sin( x)\left(\frac{1}{x}-2x \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2} \right)
+\displaystyle \sin''( x) = \sin'( x) \left(\frac{1}{x}-2x \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}\right)+ \sin( x) \left(-\frac{1}{x^2}-2\sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}-4x^2 \sum_{k=1}^\infty \frac{1}{(\pi^2k^2-x^2)^2}\right)
+\displaystyle \sin''( x) = \left(\frac{\sin( x)}{x}-2x \sin( x) \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}\right) \left(\frac{1}{x}-2x \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}\right)+ \sin{x} \left(-\frac{1}{x^2}-2\sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2}-4x^2 \sum_{k=1}^\infty \frac{1}{(\pi^2k^2-x^2)^2}\right)
+\displaystyle \sin''( x) = \sin x \left(+4x^2\left(\sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2} \right)^2-6  \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2} -4x^2\sum_{k=1}^\infty \frac{1}{(\pi^2k^2-x^2)^2} \right)
+\sin( x)
+y''+y=0
+ 4x^2\left(\sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2} \right)^2-6  \sum_{k=1}^\infty \frac{1}{\pi^2k^2-x^2} -4x^2\sum_{k=1}^\infty \frac{1}{(\pi^2k^2-x^2)^2}=-1
+-1
+x=0
+ -6  \sum_{k=1}^\infty \frac{1}{\pi^2k^2} =-1
+ \sum_{k=1}^\infty \frac{1}{k^2} =\frac{\pi^2}{6}
+\sum_{k=1}^{\infty} \frac{1}{\pi^2 k^2-x^2} = \frac{1}{2 x} \left ( \frac{1}{x}-\cot{x}\right)
+\sum_{k=-\infty}^{\infty} \frac{1}{(\pi^2 k^2-x^2)^2} = -\sum_{\pm} \text{Res}_{z=\pm x/\pi} \frac{\pi \cot{\pi z}}{(\pi^2 z^2-x^2)^2}
+\sum_{k=-\infty}^{\infty} \frac{1}{(\pi^2 k^2-x^2)^2} = \frac{\cot^2{x}}{2 x^2} + \frac{\cot{x}}{2 x^3}+ \frac{1}{2 x^2}
+\sum_{k=1}^{\infty} \frac{1}{(\pi^2 k^2-x^2)^2} = \frac{\cot^2{x}}{4 x^2} + \frac{\cot{x}}{4 x^3}+ \frac{1}{4 x^2} - \frac{1}{2 x^4}

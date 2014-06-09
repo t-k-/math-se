@@ -1,0 +1,65 @@
+X
+Y
+X_1
+X_2
+{\rm dist }(X_1)={\rm B}(n,p)
+{\rm dist }(X_2)={\rm B}(m,p)
+B(n,p)
+n
+p
+n
+X_1
+m
+X_2
+n+m
+p
+Y=X_1+X_2
+Y
+Y
+n
+X_1
+m
+X_2
+Y
+0
+1
+\ldots\,
+n+m
+0\le k\le n+m
+{\rm dist }(X_1+X_2)={\rm B}(n+m,p)
+   \eqalign{       p_Y(k)&=\sum_{i=0}^kP[X_1=i,X_2=k-i]\cr       &=\sum_{i=0}^kP[X_1=i]\cdot P[ X_2=k-i]\cr       &=\sum_{i=0}^k{n\choose i}(1-p)^{n-i}p^i\cdot{m\choose k-i}(1-p)^{m-(k-i)}p^{k-i}\cr    %   &=\sum_{i=1}^k{n\choose i}{m\choose k-i}(1-p)^{m+n}p^{k}\cr       &=(1-p)^{m+n-k }p^{k}\sum_{i=0}^k{n\choose i}{m\choose k-i}\cr       &={m+n\choose k}(1-p)^{m+n-k}p^{k }. } 
+n
+m
+k\le n+m
+   \sum_{i=0}^{k} {n\choose i}{m\choose k-i}  = {n+m\choose k}. 
+X_1
+X_2
+p_{X_1}
+p_{X_2}
+Y=X_1+X_2
+k
+    p_Y(k)=\sum_{i\le\, k}p_{X_1}(i)p_{X_2}(k-i). 
+X
+m
+p
+Y
+n
+X
+Y
+W_1, W_2, \dots, W_m, W_{m+1}, W_{m+2}, \dots, W_{m+n}
+m+n
+p
+W
+m+n
+p
+S=\sum_{i=1}^m W_i
+m
+p
+T=\sum_{i=m+1}^{m+n} W_i
+n
+p
+S
+X
+T
+Y
+W=\sum_{i=1}^{m+n} W_i.

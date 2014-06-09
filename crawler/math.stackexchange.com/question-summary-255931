@@ -1,0 +1,20 @@
+curl(E)=[2x,0,−2x].
+\mathbf{E} = (3yz,zx,2xy)
+z=4-x^2-y^2
+ \nabla \times \mathbf{E} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\  \partial_x &\partial_y & \partial_z \\  3yz & zx & 2xy \end{vmatrix} = (2x-x, 3y-2y, z-3z) = (x,y,-2z). 
+ \nabla \times \mathbf{E}\big\vert_{S} = (x,y, 2x^2+2y^2-8). 
+ds=[-2x,-2y,1]
+ d\mathbf{S} = \left(-\frac{\partial z}{\partial x}, -\frac{\partial z}{\partial y}, 1\right) = (2x,2y,1). 
+\iint(-4x^2-2x ) \,dxdy
+\int_0^{2\pi}\int_0^2 (-4(r\cos\theta)^2-2(r\cos\theta))rdrd\theta
+x,y\geq 0
+x^2+y^2\leq 4
+x,y
+xy
+0
+\pi/2
+ \oint_C \mathbf{E}\cdot \mathbf{t} \,ds =  \iint_S\nabla \times \mathbf{E}\cdot d\mathbf{S}  \\ = \iint_{\{x,y\geq 0 : \; x^2+y^2\leq 4\}} (2x^2+2y^2 + 2x^2+2y^2-8 ) \,dxdy \\ =\int^{\pi/2}_0 \int^2_0  (4r^2-8)r\,drd\theta = 0.
+\int_0^3\int_0^{2\pi}\int_0^\pi (3p^2)p^2sin(\phi)d\phi d\theta dp
+\frac{2916\pi}{5}
+r
+ \int_0^3\int_0^{2\pi}\int_0^\pi (3r^2)r^2\sin \phi \,d\phi d\theta dr. 

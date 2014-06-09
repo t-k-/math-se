@@ -1,0 +1,21 @@
+f_{x}(x,y) = \int_{0}^{\infty} e^{-y} dy = 1 
+F_v = P(min{X,Y}>v) = P(X>v)*P(Y>v) = (1-F_{x}(v))(1-F_{y}(v))
+F_{X}(v) = v
+F_{Y}(v) = 1-e^{-v}
+\frac{dF_{V}(v)}{dv}
+    f_{min{X,Y}}(v) = \left\{      \begin{array}{lr}        (v-2)e^{-v}-1 & : 0<x<1, y>0 \\        0 & : otherwise      \end{array}    \right. 
+(o,2)
+f_{2X+Y}(w) = \int_{-\infty}^{\infty}f_{2x}(x)*f_{Y}(w-x)dx
+= \int_{0}^{2}\frac{1}{2}f_{Y}(w-x)dx
+f_{2x}(x) = \frac{1}{2}
+(0,2)
+= \frac{1}{2} \int_{w-2}^{w} f_{Y}(z)dz
+0 < w < 2
+w > 2
+f_{2X + Y}(w) = \int_{0}^{w} e^(-z) dz = 1 - e^{-w}
+f_{2X + Y}(w) = \int_{w-2}^{w} e^(-z) dz = e^{-w - 2} - e^{-2}
+    f_{2X + Y}(w) = \left\{      \begin{array}{lr}        1 - e^{-w} & : 0 < w < 2 \\        e^{-w - 2} - e^{-2} & : w > 2 \\        0 & : otherwise      \end{array}    \right. 
+\mathbb{P}( \min(X,Y) > z) = \mathbb{P}(X > z \land Y >z) = \mathbb{P}(X > z) \mathbb{P}( Y >z)
+2 X
+(0,2)
+    f_{2 X + Y}(z) = \int_{-\infty}^\infty f_{2 X}(x) f_Y(z-x) \mathrm{d} x = \int_{0}^2 f_{2 X}(x) f_Y(z-x) \mathrm{d} x 

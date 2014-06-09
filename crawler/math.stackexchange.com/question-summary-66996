@@ -1,0 +1,59 @@
+X
+3
+Y
+5
+(X < Y)
+Z
+10
+(X < Y < Z)
+P(X < Y) = \sum_{n=2}^{\infty}\sum_{k=1}^{\infty}((32/36)^{(n-1)}(4/36)-(34/36)^{(k-1)}(2/36)]
+P(X<Y)
+q = P(3 \text{ before } 5)
+3
+5
+3
+3
+5
+3
+5
+q = P(3) \cdot 1 + P(5) \cdot 0 + P(\text{neither } 3 \text{ nor } 5) \cdot q
+P(3) = \frac{2}{36}
+P(5) = \frac{4}{36}
+P(\text{neither } 3 \text{ nor } 5) = 1 - \frac{2}{36} - \frac{4}{36} = \frac{30}{36}
+q = \frac{2}{36} + \frac{30}{36} q \quad \Longleftrightarrow \quad q = \frac{1}{3}
+q = P(3) \cdot 1 + P(5) \cdot 0 + P(\text{neither } 3 \text{ nor } 5) \cdot q \quad \Longleftrightarrow \quad q = \frac{P(3)}{P(3) + P(5)} = \frac{P(3)}{P(3 \text{ or } 5)} = P(3\ |\ 3 \text{ or } 5)
+3
+5
+3
+3
+3
+5
+P(X<Y<Z)
+3
+5
+10
+3
+P(X<Y,X<Z) = \frac{P(X)}{P(X \text{ or } Y \text{ or } Z)} = \frac{P(X)}{P(X) + P(Y) + P(Z)} = \frac{2}{2+4+3} = \frac{2}{9}
+3,5,10
+3
+5
+10
+X
+5
+10
+P(Y<Z | X<Y,X<Z) = \frac{P(Y)}{P(Y \text{ or } Z)} = \frac{P(Y)}{P(Y)+P(Z)} = \frac{4}{4+3} = \frac{4}{7}
+P(X<Y<Z) = P(X<Y,X<Z) \cdot P(Y<Z | X<Y, X<Z) = \frac{2}{9} \cdot \frac{4}{7} = \frac{8}{63}
+P(X<Y<Z)
+P(X)=\frac{2}{36}
+P(Y)=\frac{4}{36}
+P(Z)=\frac{3}{36}
+\frac{27}{36}
+X
+Y
+Z
+P(X<Y<Z)=\frac{2}{36}P(X<Y<Z|X<Y,Z)+\frac{3}{36}P(X<Y<Z|Z<X,Y)
++\frac{4}{36}P(X<Y<Z|Y<X,Z)+\frac{27}{36}P(X<Y<Z)
+P(Y<Z)
+P(Y<Z)=\frac{4}{7}
+P(X<Y<Z)=\frac{8}{36(7)}+\frac{27}{36}P(X<Y<Z)=\frac{8}{63}
+ \Pr(W=3\mid W=3\text{ or }W=5) = \frac{\Pr(W=3)}{\Pr(W=3\text{ or }W=5)} = \frac{2/36}{6/36}= \frac13. 

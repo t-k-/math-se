@@ -1,0 +1,15 @@
+f(\epsilon)
+\epsilon
+f(\epsilon)
+\epsilon
+1/\epsilon
+1/\epsilon^2
+\phi(k) = \frac{k^{\epsilon}}{\epsilon}
+ f(\epsilon) = \sum_{k=1}^{\infty} e^{-\phi(k)} 
+N \gg 1
+ {\rm f}_{N}\left(\epsilon\right) = \sum_{k = 1}^{N}\exp\left(-{k^{\epsilon} \over \epsilon}\right) = N\sum_{k = 1}^{N}\exp\left(-{\left\lbrace N\left\lbrack k/N\right\rbrack\right\rbrace^{\epsilon} \over \epsilon}\right)\,{1 \over N} \sim N\int_{1/N}^{1}\exp\left(-N^{\epsilon}x^{\epsilon}/\epsilon\right)\,{\rm d}x 
+t \equiv N^{\epsilon}x^{\epsilon}/\epsilon \quad\Longrightarrow\quad x = {\epsilon^{1/\epsilon} \over N}\,t^{1/\epsilon}
+ N\int_{1/N}^{1}\exp\left(-N^{\epsilon}x^{\epsilon}/\epsilon\right)\,{\rm d}x = N\int_{1/\epsilon}^{N^{\epsilon}/\epsilon}{\rm e}^{-t}\, {\epsilon^{1/\epsilon} \over N}\,{1 \over \epsilon}\,t^{1/\epsilon - 1} \,{\rm d}t = {\epsilon^{1/\epsilon} \over \epsilon} \int_{1/\epsilon}^{N^{\epsilon}/\epsilon}{\rm e}^{-t}\,t^{1/\epsilon - 1} \,{\rm d}t 
+ {\large% {\rm f}\left(\epsilon\right) = {\epsilon^{1/\epsilon} \over \epsilon} \int_{1/\epsilon}^{\infty}{\rm e}^{-t}\,t^{1/\epsilon - 1} \,{\rm d}t\,,\qquad \epsilon > 0} 
+ \left.\vphantom{\LARGE A}{\rm f}\left(\epsilon\right)\right\vert_{\epsilon\ \gtrsim\ 0} = {\epsilon^{1/\epsilon} \over \epsilon} \int_{1/\epsilon}^{\infty}{\rm e}^{-t}\,t^{1/\epsilon - 1} \,{\rm d}t \sim \left.\vphantom{\LARGE A} -{\epsilon^{1/\epsilon} \over \epsilon}\,{\rm e}^{-t}t^{1/\epsilon - 1} \right\vert_{t\ =\ 1/\epsilon}^{t\ \to\ \infty} = {\epsilon^{1/\epsilon} \over \epsilon}\,{\rm e}^{-1/\epsilon} {1 \over \epsilon^{1/\epsilon - 1}} = {\rm e}^{-1/\epsilon} 
+ \begin{array}{|c|}\hline\\ \\ {\large\quad{\rm f}\left(\epsilon\right) \sim {\rm e}^{-1/\epsilon}  \quad\mbox{when}\quad  \epsilon \gtrsim 0\quad} \\ \\ \hline \end{array} 

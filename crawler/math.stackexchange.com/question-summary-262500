@@ -1,0 +1,16 @@
+ \frac{\mathrm d^2 y}{\mathrm d x^2}-\frac{1}{x}\frac{\mathrm dy}{\mathrm dx}=1,\quad y(0)=y(1)=0, 
+y(x) = a + b x^2.
+G
+G(0,t) = G(1,t) = 0
+\begin{equation*} \frac{d^2}{dx^2}G(x,t) - \frac{1}{x} \frac{d}{dx} G(x,t) = \delta(x-t),\tag{1} \end{equation*}
+G(x,t) =  \begin{cases}  a(t)x^2, & x<t \\  b(t)(1-x^2), & x>t.  \end{cases}
+y'(x) = v(x)
+v(x) = x g(x)
+v'(x) - \dfrac{v(x)}{x} = 1
+xg'(x) + g(x) - g(x) = 1\implies g'(x) = \dfrac1x
+g(x) = \log(x) + c_1 \implies v(x) = x \log(x) + c_1 x
+y'(x) = x \log(x) + c_1 x
+y(x) = \int x \log (x) + c_2 x^2 + c_3 = \dfrac{x^2}4 \left(2 \log(x) - 1 \right) + k_1 x^2 + k_2
+y(0) = 0 \implies k_2 = 0
+y(1) = -\dfrac14 + k_1 = 0 \implies k_1 = \dfrac14
+y(x) = \dfrac{x^2 \log(x)}2

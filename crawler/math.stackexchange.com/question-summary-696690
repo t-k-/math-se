@@ -1,0 +1,13 @@
+S_n := \sum_{j=1}^n Y_j, \qquad n \in \mathbb{N} \tag{1}
+\mathbb{Z}
+Y_j \sim \frac{1}{2} (\delta_1+\delta_{-1})
+\mathbb{P}(S_{2n}=0) = 2^{-2n} {2n \choose n} \sim \frac{1}{\sqrt{\pi n}} \qquad \text{and} \qquad \mathbb{P}(S_{2n+1}=0)=0 \tag{2}
+n
+\mathbb{Z}^3
+X_n := ((X_n)_1,(X_n)_2,(X_n)_3)^T := \sum_{j=1}^n (Y_j,Y_j,Y_j)^T=(S_n,S_n,S_n)^T. 
+\mathbb{P}((X_n)_i=0) = \mathbb{P}(S_n=0) \stackrel{(2)}{\leq} \frac{C}{\sqrt{n}},
+c_i=1/2
+i=1,2,3
+\sum_{i=1}^3 c_i>1
+\sum_{n=1}^{\infty} \mathbb{P}(X_n=0) = \sum_{n=1}^{\infty} \mathbb{P}((X_n)_1=0) = \sum_{n=1}^{\infty} \mathbb{P}(S_n=0) \stackrel{(2)}{=} \infty.
+\mathbb{P}(X_n=0 \, \text{infinitely often})=1

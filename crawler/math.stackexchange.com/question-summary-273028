@@ -1,0 +1,8 @@
+Q
+Q = \begin{pmatrix} -\mu & \mu \\ \lambda & -\lambda \end{pmatrix}
+P(t) = \exp(Qt)
+Q
+{Q}t = \pmatrix{-\mu t &\mu t \\ \lambda t & -\lambda t} = \pmatrix{1 & -\frac{\mu }{\lambda } \\ 1 & 1} \cdot \pmatrix{0 & 0 \\ 0 & -t(\lambda + \mu)} \cdot \pmatrix{1 & -\frac{\mu }{\lambda } \\ 1 & 1}^{-1}.
+\exp{ \pmatrix{0 & 0 \\ 0 & -t(\lambda + \mu)}} =  \pmatrix{\exp(0) & 0 \\ 0 & \exp(-t(\lambda + \mu))} = \pmatrix{1 & 0 \\ 0 & \exp(-t(\lambda + \mu))}.
+\mathbb{P}(t) = \exp(\mathbb{Q} t) = \frac{1}{\lambda + \mu}\pmatrix{\lambda + \mu \exp(-t(\lambda+\mu)) & \mu - \mu \exp(-t(\lambda+\mu)) \\ \lambda - \lambda\exp(-t(\lambda+\mu)) & \mu + \lambda\exp(-t(\lambda+\mu))}.
+e^{P^{-1}AP}=P^{-1}e^AP

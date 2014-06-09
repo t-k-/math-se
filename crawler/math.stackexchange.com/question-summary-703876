@@ -1,0 +1,14 @@
+ \int_{-\infty}^{\infty} \operatorname{erfc}^{2}(|x|) e^{-i\xi x} \, dx = \frac{4}{\xi}e^{-\xi^{2}/4} \left\{ \operatorname{erfi}\left( \frac{\xi}{2} \right) - \operatorname{erfi}\left( \frac{\xi}{2\sqrt{2}} \right) \right\}, \tag{1} 
+\operatorname{erfi}(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{t^{2}} \, dt. 
+ \operatorname{erfc}(|t|) = \frac{2}{\sqrt{\pi}} \int_{1}^{\infty} \left| t \right| e^{-t^{2}x^{2}} \, dx. 
+ \int_{-\infty}^{\infty} t^{2} e^{-r^{2}t^{2}} e^{-i\xi t} \, dt = \frac{\sqrt{\pi}}{4} \frac{2r^{2} - \xi^{2}}{r^{5}} e^{-\xi^{2} / 4r^{2}}. \tag{3} 
+\text{(3)}
+\text{(3)}
+\text{(2)}
+u = \xi / 2r
+v = \frac{1}{2}\xi \cos\theta
+\text{(1)}
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left( #1 \right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\wt}[1]{\widetilde{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+ \mbox{Let's}\quad \phi_{1}\pars{k} \equiv \int_{-\infty}^{\infty}{\rm erfc}\pars{\verts{x}}\expo{-\ic kx}\,\dd x 
+ \phi_{2}\pars{k} = {1 \over 2\pi}\int_{-\infty}^{\infty} \phi_{1}\pars{p}\phi_{1}^{*}\pars{p - k}\,\dd p 
+\color{#00f}{\large% \phi_{2}\pars{k} = {2 \over \pi^{2}} \int_{-\infty}^{\infty}{{\rm F}\pars{p/2}{\rm F}\pars{\bracks{p - k}/2} \over k\pars{p - k}}\,\dd p} 

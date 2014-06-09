@@ -1,0 +1,20 @@
+6
+p
+\Pr(\text{Mike wins}) = \sum_{k=1}^\infty \left(\frac 5 6\right)^{k-1} \frac 5 6\text{ for }k = 1,3,5,\ldots,\infty
+\Pr(\text{Tom wins}) =  \sum_{k=1}^\infty \left(\frac 5 6\right)^{k-1}\frac 5 6\text{ for }k = 2,4,6,\ldots, \infty
+k\ge0
+(2k+1)
+({5\over6})^{2k}\cdot{1\over6}
+ \sum_{k=0}^\infty ({\textstyle{5\over6}})^{2k}\cdot{\textstyle{1\over6}}= \sum_{k=0}^\infty ({\textstyle{25\over36}})^{ k}\cdot{\textstyle{1\over6}}= {1/6\over1-{25\over36}}={6\over11}. 
+1-{6\over 11}={5\over11}
+p
+5/6
+1-p
+1/6
+p
+ \sum_{k=0}^\infty ({\textstyle{(1-p)}})^{2k}\cdot{\textstyle{p}}= \sum_{k=0}^\infty ({\textstyle{(1-p)^2}})^{ k}\cdot{\textstyle{p}}= {p\over1-{(1-p)^2}}={p\over 2p-p^2}={1\over 2-p}. 
+{1\over 2-p}>{1\over 2}
+ \begin{align} & \Pr(\text{Mike wins})  = \Pr(\text{6 on 1st trial}) + \Pr(\text{first 6 on a later odd-numbered trial}) \\  \\ & = \frac 16 + \Pr(\text{non-6 on 1st trial})\cdot\Pr(\text{6 on a later odd-numbered trial}\mid\text{non-6 on 1st trial}) \\  \\ & = \frac 1 6 + \frac 5 6 \cdot \Pr(\text{6 on an even-numbered trial})\tag{(explanation below)} \\  \\ & = \frac 1 6 + \frac 5 6 \cdot \Pr(\text{Tom wins}) \\  \\ & = \frac 1 6 + \frac 5 6 \cdot (1 - \Pr(\text{Mike wins})). \end{align} 
+ p= \frac 1 6 + \frac 5 6 (1-p) 
+p= \dfrac{6}{11}
+\dfrac{5}{11}

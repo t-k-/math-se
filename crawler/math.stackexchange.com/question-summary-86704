@@ -1,0 +1,64 @@
+f
+[0,\infty )
+\lim\limits_{x\to \infty} f(x)=L<\infty
+\lim_{n\to \infty} \int_{0}^{2} f(nx)dx.
+f
+\lim
+\lim\limits_{n\to \infty} \int_{0}^{2} f(nx)dx=\int_{0}^{2}\lim\limits_{n\to \infty}  f(nx)dx=\int_{0}^{2}\ L  dx=2L
+I_n = \int\limits_0^2f(nx)\,dx = \frac1n\int\limits_0^{2n} f(x)dx
+\lim\limits_{x\to\infty}f(x) = L<\infty
+\varepsilon>0
+x(\varepsilon)
+x>x(\varepsilon)
+ L-\varepsilon\leq f(x)\leq L+\varepsilon. 
+\varepsilon>0
+n>x(\varepsilon)
+J(\varepsilon)= \int\limits_{0}^{x(\varepsilon)}f(x)dx
+ I_n = \frac1n\int\limits_{0}^{x(\varepsilon)}f(x)dx+\frac1n\int\limits_{x(\varepsilon)}^{2n}f(x)dx\quad (1) 
+ \frac1nJ(\varepsilon)+\left(2-\frac{x(\varepsilon)}{n}\right)(L-\varepsilon)\leq I_n\leq \frac1nJ(\varepsilon)+\left(2-\frac{x(\varepsilon)}{n}\right)(L+\varepsilon)\quad (2) 
+ \frac1n(J(\varepsilon)-(L+\varepsilon)x(\varepsilon))-2\varepsilon\leq I_n-2L\leq \frac1n(J(\varepsilon)-(L+\varepsilon)x(\varepsilon))+2\varepsilon. 
+\delta
+\varepsilon<\delta
+N>\frac{3}{\delta}(J(\varepsilon)-(L+\varepsilon)x(\varepsilon))
+n\geq N
+\lim\limits_{n\to\infty}I_n = 2L
+ |I_n-2L|\leq \delta, 
+(1)
+(2)
+f(x)\leq L+\varepsilon
+x\geq x(\varepsilon)
+(2)
+f(x)\geq L-\varepsilon
+x\geq x(\varepsilon)
+ I_n = \frac1n J(\varepsilon)+\frac1n\int\limits_{x(\varepsilon)}^{2n}f(x)dx\leq \frac1n J(\varepsilon) +\frac{2n-x(\varepsilon)}{n}(L+\varepsilon)=\frac1nJ(\varepsilon)+\left(2-\frac{x(\varepsilon)}{n}\right)(L+\varepsilon). 
+f
+g
+\int_0^2 |g| dx < \infty
+ | f_n (x) | := |f(nx) | \leq g(x)
+n
+x
+x \in [0,\infty)
+f
+g(x) := \sup\limits_{x \in [0,\infty)} |f(x)|
+ f_{n}(x) \leq |f_{n}(x)| \leq g(x)
+ \lim_{n \rightarrow \infty} \int_0^2 f(nx) dx = \int_0^2  \lim_{n \rightarrow \infty} f(nx) dx = \int_0^2 L dx = 2L
+f
+\lim\limits_{x\rightarrow\infty} f(x)=L
+|f|
+M
+[0,\infty)
+ \epsilon>0
+\delta={\epsilon\over M}
+N
+n>N
+x>\delta
+L-\epsilon\le f(nx)\le L+\epsilon
+n>N
+ \int_0^2 f(nx) =\int_0^\delta f(nx) +\int_\delta^2 f(nx) . 
+ (2-\delta)(L-\epsilon)\le\int_\delta^2 f(nx) \le (2-\delta)(L+\epsilon).
+ \int_0^\delta f(nx) + (2-\delta)(L-\epsilon) \le \int_0^2 f(nx) \le\int_0^\delta f(nx) + (2-\delta)(L+\epsilon); 
+   -\delta M+  (2-\delta)(L-\epsilon) \le  \int_0^2 f(nx) \le\delta\cdot M+ (2-\delta)(L+\epsilon). 
+ -\epsilon+ (2-\delta)(L-\epsilon) \le  \int_0^2 f(nx) \le\epsilon+ (2-\delta)(L+\epsilon), 
+ 2L+{\epsilon^2\over M}-3\epsilon-{\epsilon\over M}L \le  \int_0^2 f(nx) \le 2L-{\epsilon^2\over M}+3\epsilon-{\epsilon\over M}L , 
+L
+M

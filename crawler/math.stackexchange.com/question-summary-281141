@@ -1,0 +1,17 @@
+\gamma _R
+\sigma_1
+\sigma_1(t)=Re^{it}
+0\leq t\leq\pi
+\sigma_2
+-R
+R
+f(z)=\frac{e^{\pi iz}}{z^2-2z+2}
+R>2
+\int_{\gamma_R}f(z) dz.
+f(z)=\frac{e^{\pi i z}}{[z-(1+i)][z-(1-i)]}\Longrightarrow \operatorname{Res}\limits_{z=1+i}(f)\lim_{z\to 1+i}(z-(1+i))f(z)=
+=\lim_{z\to 1+i}\frac{e^{\pi i z}}{z-z+i}=\frac{e^{-\pi(1-i)}}{2i}=-\frac{e^{-\pi}}{2i}
+\int\limits_{\gamma_R}f(z)\,dz=2\pi i\left(-\frac{e^{-\pi}}{2i}\right)=-\pi e^{-\pi}
+\,z=x+yi\,\,\,,\,\,x^2+y^2=R^2\,\,,\,y\geq 0
+\left|\int\limits_{\sigma_1}f(z)\,dz\right|\leq \max\frac{e^{-\pi y}}{R^2+2R+2}\cdot\pi R\xrightarrow[R\to\infty]{}0
+\int\limits_{\gamma_R}f(z)\,dz=\int\limits_{-\infty}^\infty\frac{e^{\pi i x}}{x^2-2x+2}\,dx\xrightarrow[R\to\infty]{}-\pi e^{-\pi}
+\int\limits_{-\infty}^\infty\frac{\cos \pi x}{x^2-2x+2}dx=-\frac{\pi}{e^\pi}

@@ -1,0 +1,22 @@
+\frac{\partial}{\partial x_i}(g \circ f)(x)=g'(f(x))\frac{\partial f}{\partial x_i}(x)
+\mathbb{R}
+f
+g \circ f
+f:\mathbb{R}^n\to\mathbb{R}
+g:\mathbb{R}\to \mathbb{R}
+\mathbf{x}=(x_1,\dots,x_n)\in\mathbb{R}^n
+1\le i\le n
+\frac{\partial f}{\partial x_i}(x_1,\dots,x_n)
+f_i: \mathbb{R}\to\mathbb{R}
+f_i(x)=f(x_1,\dots,x,\dots,x_n)
+\frac{\partial f}{\partial x_i}(\mathbf{x})=\lim_{x_\to x_i} \frac{f(x_1,\dots,x,\dots,x_n)-f(\mathbf{x})}{x-x_i}.
+\frac{\partial f}{\partial x_i}(\mathbf{x})=f_i'(x_i),
+h=g\circ f:\mathbb{R}^n\to\mathbb{R}
+\frac{\partial h}{\partial x_i}
+h_i: \mathbb{R}\to\mathbb{R}
+h_i=g\circ f_i
+\mathbb{R}
+\mathbb{R}
+g
+f_i
+\frac{\partial h}{\partial x_i}(\mathbf{x})=(g\circ f_i)'(x_i)=g'(f_i(x_i))f_i'(x)=g'(f(x))\frac{\partial f}{\partial x_i}(\mathbf{x}).

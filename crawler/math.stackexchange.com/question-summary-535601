@@ -1,0 +1,6 @@
+ \frac{du}{dx}
+u = f(x,y,z)
+y = \phi(x)
+z = \psi(x,y)
+\frac{du}{dx} = \frac{\partial u}{\partial x} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial x} + \frac{\partial u}{\partial z} \frac{\partial z}{\partial x} =  \frac{\partial u}{\partial x} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial x} + \frac{\partial u}{\partial z} \left( \frac{\partial \psi}{\partial x} + \frac{\partial \psi}{\partial y} \frac{\partial y}{\partial x} \right)
+\frac{du}{dx}=\frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}\phi'+\frac{\partial u}{\partial z}(\frac{\partial \psi}{\partial x}+\frac{\partial \psi}{\partial y}\phi')

@@ -1,0 +1,21 @@
+||Ax||_2 \leq ||A||_{F}||x||_2
+A
+x\in \mathbb R^n
+||x||_2
+||A||_F
+Ax
+Ax =\begin{pmatrix} \sum_{i=1}^n a_{1i}x_i \\\sum_{i=1}^n a_{2i}x_i \\ \vdots \\ \sum_{i=1}^n a_{ni}x_i \end{pmatrix}
+||Ax||_2 = \sqrt{\sum_{j=1}^n |\sum_{i=1}^n a_{ji}x_i|^2}
+\sqrt{\sum_{j=1}^n \sum_{i=1}^n |a_{ij}|^2\sum_{k=1}^n |x_k|^2}
+\sum_{i=1}^m
+\sum_{j=1}^n x_j^2
+\sum_{i=1}^m
+i
+ \|Ax\|_2\le \|A\|_F\|x\|_2 
+ \Big(\sum_{i=1}^m \Big(\sum_{j=1}^n a_{ij} x_j\Big)^2\Big)^{1/2} \le \Big(\sum_{i=1}^m \sum_{j=1}^n a_{ij}^2\Big)^{1/2} \Big(\sum_{j=1}^n x_j^2\Big)^{1/2} 
+ \sum_{i=1}^m \Big(\sum_{j=1}^n a_{ij} x_j\Big)^2 \le \sum_{i=1}^m \sum_{j=1}^n a_{ij}^2 \sum_{j=1}^n x_j^2 
+ \Big(\sum_{j=1}^n a_{ij} x_j\Big)^2 \le \sum_{j=1}^n a_{ij}^2 \sum_{j=1}^n x_j^2 
+\|\cdot\|_2
+\|Ax\|_2\leq\|A\|_2\|x\|_2
+\|A\|_2\leq\|A\|_F
+ \|A\|_2^2=\rho(A^TA)=\lambda_{\max}(A^TA)\leq\sum_{i=1}^n\lambda_i(A^TA)\leq\mathrm{trace}(A^TA)=\|A\|_F^2. 

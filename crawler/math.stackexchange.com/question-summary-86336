@@ -1,0 +1,10 @@
+n
+N
+r
+1\leq i\leq N
+A_i
+i
+\mathbb{P}(A_1A_2\cdots A_j)=\sum_{s=0}^j{j\choose s}{n\choose s}s!\left({1\over N}\right)^s\left(1-{j\over N}\right)^{n-s}.
+\mathbb{P}(\mbox{at least }k\mbox{ of the }A_i\mbox{s occur})=\sum_{j=k}^N(-1)^{j-k}{j-1\choose j-k}{N\choose j}\mathbb{P}(A_1A_2\cdots A_j).
+k=N-r+1
+\mathbb{P}(\mbox{at least }r\mbox{ repeated values})=1-\mathbb{P}(\mbox{at least }N-r+1\mbox{ of the }A_i\mbox{s occur}).

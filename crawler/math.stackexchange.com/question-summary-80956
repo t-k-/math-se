@@ -1,0 +1,17 @@
+X, Y
+\sim N(\mu, \sigma^2)
+M = \frac12(X + Y),\qquad  V = (X - M)^2 + (Y - M)^2
+(M, X - M, Y - M)
+M
+V
+X-M
+(X-Y)/2
+Y-M
+(Y-X)/2
+s
+t-u
+X+Y
+(X-Y)/2
+N(2\mu,2\sigma^2)
+N(0,\sigma^2/2)
+ \begin{align} & {}\qquad M_{(M,X-M,Y-M)}(s,t,u) = \mathbb{E}\left( e^{sM+t(X-M)+u(Y-M)} \right) = \mathbb{E}\left( e^{s(X+Y)+t(X-Y)/2 + u(Y-X)/2} \right) \\  \\  \\ & = \mathbb{E}\left(e^{(s+t/2-u/2)X+(s-t/2+u/2)Y} \right) =M_{(X,Y)}\left(s+\frac {t-u}{2},s-\frac {t-u}{2}\right) \\  \\  \\ & = M_X\left(s+\frac {t-u}{2}\right) M_Y\left(s-\frac {t-u}{2}\right) = M_X\left(s+\frac {t-u}{2}\right) M_X\left(s-\frac {t-u}{2}\right) \\  \\  \\ & = \exp\left( \left(s+\frac{t-u}{2}\right)\mu +  \left(s+\frac{t-u}{2}\right)^2\frac{\sigma^2}{2} \right)\cdot \exp\left( \left(s-\frac{t-u}{2}\right)\mu +  \left(s+\frac{t-u}{2}\right)^2\frac{\sigma^2}{2} \right) \\  \\ & = \exp\left( s(2\mu) + s^2\frac{2\sigma^2}{2} \right)\cdot\exp \left( (t-u)^2\frac{\sigma^2/2}{2} \right) = M_{X+Y}(s) M_{N(0,\sigma^2/2)} (t-u) \end{align} 

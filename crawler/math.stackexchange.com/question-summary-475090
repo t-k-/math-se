@@ -1,0 +1,33 @@
+T(n) = \Theta(n)
+n
+T(0) = 0
+n = \sum_{k=0}^{\lfloor \log_2 n \rfloor} d_k 2^k
+ T(n) = T(\lfloor n/2 \rfloor) + T(\lfloor n/4 \rfloor) + T(\lfloor n/8 \rfloor) + n.
+\rho_{1,2,3}
+\rho_1
+1 - \frac{1}{2} z - \frac{1}{4} z^2 - \frac{1}{8} z^3
+\rho_1 \approx 0.9196433771 \quad \text{and} \quad \rho_{2,3} \approx  -0.2098216888 \pm 0.3031453647 i
+c_{1,2,3}
+[z^j] \frac{1}{1 - \frac{1}{2} z - \frac{1}{4} z^2 - \frac{1}{8} z^3} = c_1 \rho_1^j + c_2 \rho_2^j + c_3 \rho_3^j
+c_1 \approx 0.6184199255 \quad \text{and} \quad c_{2,3}  \approx  0.1907900392 \mp 0.01870058304 i.
+T(n)
+ T(n) \ge \sum_{j=0}^{\lfloor \log_2 n \rfloor}  [z^j] \frac{1}{1 - \frac{1}{2} z - \frac{1}{4} z^2 - \frac{1}{8} z^3}  2^{\lfloor \log_2 n \rfloor}  \\ = 2^{\lfloor \log_2 n \rfloor}  \sum_{j=0}^{\lfloor \log_2 n \rfloor} (c_1 \rho_1^j + c_2 \rho_2^j + c_3 \rho_3^j)  = 2^{\lfloor \log_2 n \rfloor}  \left( c_1 \frac{1-\rho_1^{\lfloor \log_2 n \rfloor +1}}{1-\rho_1} + c_2 \frac{1-\rho_2^{\lfloor \log_2 n \rfloor +1}}{1-\rho_2} + c_3 \frac{1-\rho_3^{\lfloor \log_2 n \rfloor +1}}{1-\rho_3} \right).
+T(n) \le \sum_{j=0}^{\lfloor \log_2 n \rfloor}  [z^j] \frac{1}{1 - \frac{1}{2} z - \frac{1}{4} z^2 - \frac{1}{8} z^3}  \sum_{k=j}^{\lfloor \log_2 n \rfloor} 2^k \\ = \sum_{j=0}^{\lfloor \log_2 n \rfloor} (c_1 \rho_1^j + c_2 \rho_2^j + c_3 \rho_3^j) (2^{\lfloor \log_2 n \rfloor +1} - 2^j) \\ = 2^{\lfloor \log_2 n \rfloor +1}  \left( c_1 \frac{1-\rho_1^{\lfloor \log_2 n \rfloor +1}}{1-\rho_1} + c_2 \frac{1-\rho_2^{\lfloor \log_2 n \rfloor +1}}{1-\rho_2} + c_3 \frac{1-\rho_3^{\lfloor \log_2 n \rfloor +1}}{1-\rho_3} \right) \\ - \left( c_1 \frac{(2\rho_1)^{\lfloor \log_2 n \rfloor +1}-1}{2\rho_1-1} + c_2 \frac{1-(2\rho_2)^{\lfloor \log_2 n \rfloor +1}}{1-2\rho_2} + c_3 \frac{1-(2\rho_3)^{\lfloor \log_2 n \rfloor +1}}{1-2\rho_3} \right).
+|\rho_{1,2,3}|<1
+ 2^{\lfloor \log_2 n \rfloor}  \left(\frac{c_1}{1-\rho_1} +\frac{c_2}{1-\rho_2} +\frac{c_3}{1-\rho_3} \right) = 8 \times 2^{\lfloor \log_2 n \rfloor}.
+|2| > |2\rho_1|
+8
+\lfloor \log_2 n \rfloor
+\log_2 n,
+ 2\times 2^{\lfloor \log_2 n \rfloor}  \left(\frac{c_1}{1-\rho_1} +\frac{c_2}{1-\rho_2} +\frac{c_3}{1-\rho_3} \right) = 16 \times 2^{\lfloor \log_2 n \rfloor}.
+ T(n) \in \Theta \left(2^{\lfloor \log_2 n \rfloor} \right) = \Theta\left(n\right)
+k
+k/2, k/4,\text{ and }k/8
+(7/8)n
+7/8
+(7/8)^2n
+T(n)
+T(n)\ge 2n
+T(n)=\Theta(n)
+ n+\left(\frac{7}{8}\right)n+\left(\frac{7}{8}\right)^2n+\left(\frac{7}{8}\right)^3n+\cdots 
+ T(n)\le \frac{1}{1-\frac{7}{8}} = 8n 

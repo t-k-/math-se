@@ -1,0 +1,110 @@
+\mathbb{R}^\mathbb{R}
+T_4
+A \subseteq \mathbb{R}^\mathbb{R}
+T_4
+I=[0,1]
+X={^I\Bbb N}
+t\in I
+f_t:I\to\Bbb N:x\mapsto\begin{cases} 0,&\text{if }x=t\\ k,&\text{if }k\in\Bbb Z^+\text{ and }\frac1{k+1}<|x-t|\le\frac1k\;. \end{cases}
+h:I\to X:x\mapsto\big\langle f_t(x):t\in I\big\rangle\;,
+D
+y=h(u)=\langle f_t(u):t\in I\rangle\in D
+f_u(u)=0
+B
+y
+X
+f_u(t)\ne 0
+t\in I\setminus\{u\}
+B\cap D=\{y\}
+B=\Big\{\langle x_t:t\in I\rangle\in X:x_u=0\Big\}\;;
+D
+X
+y=\langle y_t:t\in I\rangle\in X
+t\in I
+y_t\ne 0
+y\notin\operatorname{cl}_XD
+\begin{align*} h^{-1}[B_F]&=\{u\in I:h(u)\in B_F\}\\ &=\{u\in I:\forall t\in F(f_t(u)=y_t)\}\\ &=\left\{u\in I:\forall t\in F\left(\frac1{y_t+1}<|u-t|\le\frac1{y_t}\right)\right\}\\ &=\bigcap_{t\in F}R_t\;, \end{align*}
+t\in I
+\begin{align*} R_t&=\left\{u\in I:\frac1{y_t+1}<|u-t|\le\frac1{y_t}\right\}\\ &=I\cap\left(\left[t-\frac1{y_t},t-\frac1{y_t+1}\right)\cup\left(t+\frac1{y_t+1},t+\frac1{y_t}\right]\right)\;. \end{align*}
+t\in I
+V_t
+t
+I
+R_t
+I
+F\subseteq I
+\{V_t:y\in F\}
+I
+B_F
+y
+D
+\dashv
+V_t=I\cap\left(t-\frac1{y_t+1},t+\frac1{y_t+1}\right)\;;
+h^{-1}[B_F]=\bigcap_{t\in F}R_t\subseteq I\setminus\bigcup_{t\in F}V_t=\varnothing\;,
+y=\langle y_t:t\in I\rangle\in X\setminus D
+y_s=0
+s\in I
+y\ne h(s)
+t\in I\setminus\{s\}
+y_t\ne f_t(s)
+u\in I\setminus\{x\}
+f_u(s)\ne 0
+y
+D
+B_{s,t}=\Big\{\langle x_u:u\in I\rangle\in X:x_s=0\text{ and }x_t=y_t\Big\}
+D
+X
+X
+X=\Bbb N^{\omega_1}
+X
+H_0=\Big\{\langle n_\xi:\xi<\omega_1\rangle\in X:\forall m\in\Bbb N\setminus\{0\}\big(|\{\xi<\omega_1:n_\xi=m\}|\le 1\big)\Big\}
+H_1=\Big\{\langle n_\xi:\xi<\omega_1\rangle\in X:\forall m\in\Bbb N\setminus\{1\}\big(|\{\xi<\omega_1:n_\xi=m\}|\le 1\big)\Big\}\;.
+H_i
+i
+i=0,1
+X
+U_0
+U_1
+H_0\subseteq U_0
+H_1\subseteq U_1
+\operatorname{cl}U_0\cap\operatorname{cl}U_1=\varnothing
+X
+D
+X
+D_0=U_0\cap D
+D_1=U_1\cap D
+x\in D_0
+B(x)
+x
+U_0
+x\in D_1
+B(x)
+x
+U_1
+V_0=\bigcup_{x\in D_0}B(x)
+V_1=\bigcup_{x\in D_1}B(x)
+\operatorname{cl}V_0=\operatorname{cl}U_0
+\operatorname{cl}V_1=\operatorname{cl}U_1
+B(x)
+x\in D_0\cup D_1
+V_0
+V_1
+\operatorname{cl}U_0
+\operatorname{cl}U_1
+C\subseteq\omega_1
+\operatorname{cl}U_0
+\operatorname{cl}U_1
+\varphi:C\to\Bbb N
+x\in H_0
+y\in H_1
+x_\xi=\begin{cases}\varphi(\xi),&\text{if }\xi\in C\\0,&\text{otherwise}\end{cases}
+u_\xi=\begin{cases}\varphi(\xi),&\text{if }\xi\in C\\1,&\text{otherwise}\;.\end{cases}
+z\in X
+z\upharpoonright C=\varphi
+z
+x
+C
+x\in\operatorname{cl}U_0
+z\in\operatorname{cl}U_0
+z\in\operatorname{cl}U_1
+X

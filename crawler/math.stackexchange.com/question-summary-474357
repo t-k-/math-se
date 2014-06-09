@@ -1,0 +1,11 @@
+k,t \in N, x\in \mathbb R^+
+f(x,k,t)=\sum_{i=0}^{\text{min}(k,t)} {{\binom k  i} \over {\binom t i}}\cdot x^i
+g(x,k,t) = f(x^{-1},k,t)
+I
+x
+f(x,k,t) = g(x^{-1},k,t)
+g = {k! \over t!}\sum_{i=0}^{\text{min}(k,t)} {(t-i)! \over (k-i)!} x^{-i}= {k! \over t!}\sum_{j=-\text{min}(k,t)}^0 {(t+j)! \over (k+j)!} x^j
+I^tg={k! \over t!}x^t\sum_{j=-\text{min}(k,t)}^0 {j! \over (k+j)!}x^{j}
+\frac{t!}{k!}{\partial^k \over \partial x^k}(x^{k-t}I^tg) = \sum_{j=-\text{min}(k,t)}^0 x^{j} = \frac{x-x^{-\text{min}(k,t)}}{x-1}
+g(x,k,t) = {k! \over t!}{\partial^t \over \partial x^t}\left(x^{t-k}I^k\left({(x-x^{-\text{min}(k,t)}) \over (x-1)}\right)\right)
+f(x,k,t) = -{k! \over t!}x^2{\partial^t \over \partial x^t}\left(x^{k-t}I^k\left({(x^{\text{min}(k,t)+1}-1) \over (x-1)}\right)\right)

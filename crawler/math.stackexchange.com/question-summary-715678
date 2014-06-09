@@ -1,0 +1,19 @@
+X,Y\sim Poisson(\lambda)
+X=0
+Y
+X>0
+Y
+T=0
+X=0
+T=1+X+Y
+X>0
+X,Y
+\displaystyle\frac{\lambda^x e^{-\lambda }}{x!}\left(\frac{\lambda ^y e^{-\lambda }}{y!} \right) ^{\{x>0\}}
+P(T=0)=P(X=0)=e^{-\lambda}
+X>0
+P(T=t)=P(1+X+Y=t)=P(X+Y=t-1)=P(X=x, Y=t-x-1)=\displaystyle\frac{\lambda^{t-1}e^{-2\lambda}}{x!(t-x-1)!}
+x
+T=1+X+Y
+T=X+Y
+1
+P(T=t)=\ldots=P(X+Y=t-1)=\sum_{x=1}^{t-1}P(X=x,Y=t-x-1)=\sum_{x=1}^{t-1}\frac{\lambda^{t-1}e^{-2\lambda}}{x!(t-x-1)!}

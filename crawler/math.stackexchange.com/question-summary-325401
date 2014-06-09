@@ -1,0 +1,22 @@
+t(1)=n; t(n)=n + 2*2*t(n/2)
+a=4, b=2, c=1 => \theta(n^2)
+\mathcal{O}(n^3)
+t(1)=1
+t(n)=n+4\cdot t(n/2)
+n\geqslant1
+t(x)
+x
+s(k)=t(2^k)/4^k
+k\geqslant0
+s(0)=1
+s(k)=1/2^k+s(k-1)
+1=s(0)\leqslant s(k)\leqslant1+1/2+1/4+\cdots\lt2
+k
+4^k\leqslant t(2^k)\lt2\cdot4^k
+(t(n))_{n\geqslant1}
+k
+2^k\leqslant n\lt2^{k+1}
+4^k\leqslant t(2^k)\leqslant t(n)\leqslant t(2^{k+1})\lt2\cdot4^{k+1}
+n
+n^2/4\leqslant t(n)\lt8n^2
+t(n)=\Theta(n^2)

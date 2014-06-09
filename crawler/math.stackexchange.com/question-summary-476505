@@ -1,0 +1,7 @@
+\frac1{s(s^2+1)^2}
+\frac1{s(s^2+1)^2}=\frac{A}{s}+\frac{Bs+C}{s^2+1}+\frac{Ds+E}{(s^2+1)^2}
+A=1,
+B=-1,
+C=E=0,
+D=-1.
+\begin{align}f(t) &= \operatorname*{Res}_{s=0} \frac{e^{s t}}{s(1+s^2)^2}+ \operatorname*{Res}_{s=i} \frac{e^{s t}}{s(1+s^2)^2}+\operatorname*{Res}_{s=-i} \frac{e^{s t}}{s(1+s^2)^2}\\ &= \frac{e^{(0) t}}{(0^2+1)^2}+\left[\frac{d}{ds}\frac{e^{s t}}{s(s+i)^2}\right]_{s=i} +\left[\frac{d}{ds}\frac{e^{s t}}{s(s-i)^2}\right]_{s=-i}\\ &= 1+\left[ \frac{e^{s t} ((s+i) s t-3 s-i)}{s^2 (s+i)^3}\right]_{s=i}+\left [\frac{e^{s t} ((s-i) s t-3 s+i)}{s^2 (s-i)^3} \right ]_{s=-i}\\ &=1+\left[-\frac{1}{8} i e^{i t} (-2 t-4 i)\right]+\left[\frac{1}{8} i e^{-i t} (-2 t+4 i)\right]\\&=1-\cos{t}-\frac12 t \sin{t}\end{align}

@@ -1,0 +1,13 @@
+n
+\sum_{k=n+1}^\infty {1\over k^2}<10^{-8}.
+\sum_{k=1}^\infty {1\over k^2} = \sum_{k=1}^n {1\over k^2} + \sum_{k=n+1}^\infty {1 \over k^2} \implies \sum_{k=n+1}^\infty {1 \over k^2} = \sum_{k=1}^\infty {1\over k^2} - \sum_{k=1}^n {1\over k^2}
+\sum_{k=1}^\infty {1\over k^2} = \zeta(2)={\pi^2 \over6}
+\sum_{k=n+1}^\infty {1 \over k^2} = {\pi^2 \over6} - \sum_{k=1}^n {1\over k^2}
+\sum_{k=n+1}^\infty {1 \over k^2} < 10^{-8} \implies {\pi^2 \over6} - \sum_{k=1}^n {1\over k^2} < 10^{-8} \implies \sum_{k=1}^n {1\over k^2} > {\pi^2 \over6} - 10^{-8}
+\displaystyle \frac{1}{k^2} < \frac{1}{(k-1)k } = \frac{1}{k-1} - \frac{1}{k}
+n=10^8
+n
+n.
+\sum_{k=n+1}^{\infty} \frac{1}{k^2} < \left(\frac{1}{n} - \frac{1}{n+1} \right)+\left(\frac{1}{n+1} - \frac{1}{n+2} \right)+\left(\frac{1}{n+2} - \frac{1}{n+3} \right) + \cdots = \frac{1}{n}
+\sum_{k=N+1}^\infty \frac 1{k^2}\sim \int_{N+1}^\infty \frac {dk}{k^2}
+\sum_{k=N+1}^\infty \frac 1{k^2}<  \int_N^\infty \frac {dk}{k^2}=\frac 1N

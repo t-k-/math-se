@@ -1,0 +1,123 @@
+(1-q_1)(1-q_2)\ldots(1-q_n)
+n\ge 2
+\{(q_1,\ldots , q_n) :q_1^2+q_2^2+\ldots+q_n^2=1 \ q_i\ge 0 \}
+q_i\ge0
+(1,1\ldots 1)
+(q_1,\ldots ,q_n)
+M=\frac{3}{2}-\sqrt{2}
+n
+\phi(x)=1-\sqrt{x}
+x\in [0,1]
+ \phi(x_1)\phi(x_2)\ldots \phi(x_n)\leq M, \ \text{whenever} \ x_i\geq 0, \ x_1+x_2+x_3+\ldots +x_n=1. \tag{1}  
+\phi
+\phi(x)\phi(y) \leq \phi(x+y)
+\phi(x+y)\leq (\phi(\frac{x+y}{2}))^2
+x=\frac{1}{6},y=\frac{1}{3}
+\phi
+ \psi(t)=\left\lbrace\begin{array}{lcl} \phi(t), & \rm{if} & t\leq \alpha, \\ \phi\big(\frac{t}{2}\big)^2, & \rm{if} & t\geq \alpha, \\ \end{array}\right.\tag{2} 
+\alpha=4(3-2\sqrt{2})
+\phi(t)=\phi(\frac{t}{2})^2
+(0,1)
+\phi(x_1)\phi(x_2)\ldots \phi(x_n) \leq  \psi(x_1)\psi(x_2)\ldots \psi(x_n) \leq \psi(x_1+x_2+x_3+\ldots +x_n) =\psi(1)=M \tag{3}
+ \psi(t)-\phi(t)=\frac{\sqrt{t}}{2}(\sqrt{t}-\sqrt{\alpha}) \geq 0. 
+x+y\leq \alpha
+ (1-\sqrt{x})(1-\sqrt{y})\leq 1-\sqrt{x+y} \tag{4} 
+a=\sqrt{x},b=\sqrt{y}
+ \begin{array}{cl} & (1-a)(1-b)\leq 1-\sqrt{a^2+b^2} \\ \Leftrightarrow & ab+\sqrt{a^2+b^2} \leq a+b \\ \Leftrightarrow & a^2b^2+a^2+b^2+2ab\sqrt{a^2+b^2} \leq a^2+b^2+2ab \\ \Leftrightarrow & a^2b^2+2ab\sqrt{a^2+b^2} \leq 2ab \\ \Leftrightarrow & ab+2\sqrt{a^2+b^2} \leq 2 \\ \end{array} 
+a^2+b^2 \leq \alpha
+ ab+2\sqrt{a^2+b^2} \leq \frac{a^2+b^2}{2}+2\sqrt{a^2+b^2} \leq \frac{\alpha}{2}+2\sqrt{\alpha}=6-4\sqrt{2}+4\sqrt{2}-4=2 \tag{5} 
+x\leq \alpha, y\leq \alpha, x+y > \alpha
+ (1-\sqrt{x})(1-\sqrt{y})\leq \bigg(1-\sqrt{\frac{x+y}{2}}\bigg)^2 \tag{6} 
+a=\sqrt{x},b=\sqrt{y}
+ \begin{array}{cl} & (1-a)(1-b)\leq \bigg(1-\frac{\sqrt{a^2+b^2}}{2}\bigg)^2 \\ \Leftrightarrow & \sqrt{2(a^2+b^2)} \leq a+b+\frac{a^2+b^2}{2}-ab \\  & \\  \Leftrightarrow & 2(a^2+b^2) \leq   \frac{a^4+b^4}{4}-(a^3b+ab^3)-(a^2b+ab^2)+(a^3+b^3)+ \frac{3a^2b^2}{2} +a^2+b^2-2ab \\  & \\  \Leftrightarrow & 0 \leq \frac{a^4+b^4}{4}-(a^3b+ab^3)-(a^2b+ab^2)+(a^3+b^3)+ \frac{3a^2b^2}{2} -a^2-b^2-2ab \\ \Leftrightarrow & 0 \leq \frac{(b-a)^2}{4}(a^2+b^2+4(a+b)-2ab-4) \\ \Leftrightarrow & 0 \leq a^2+b^2+4(a+b)-2ab-4 \\ \Leftarrow & 0 \leq \alpha+4(a+b)-2ab-4 \\ \Leftrightarrow & 0 \leq 4(a+b)-2ab-4\sqrt{\alpha} \ ({\rm since} \ \alpha-4=-4\sqrt{\alpha})\\ \Leftrightarrow & 2(\sqrt{\alpha}-a) \leq b(2-a) \\ \Leftrightarrow & 4(\sqrt{\alpha}-a)^2 \leq b^2(2-a)^2 \\ \Leftarrow &  4(\sqrt{\alpha}-a)^2 \leq (\alpha-a^2)(2-a)^2 \\ \Leftrightarrow &  4(\sqrt{\alpha}-a) \leq (\sqrt{\alpha}+a)(2-a)^2 \\ \end{array} 
+  (\sqrt{\alpha}+a)(2-a)^2-4(\sqrt{\alpha}-a)=a(16(1-\sqrt{\alpha})+(\sqrt{\alpha}-a)(\alpha+2\sqrt{\alpha}-a))   \tag{7} 
+x,y
+\alpha
+x \leq \alpha \leq y \leq 1-x
+x\leq 1-\alpha
+ (1-\sqrt{x})\bigg(1-\sqrt{\frac{y}{2}}\bigg)^2\leq \bigg(1-\sqrt{\frac{x+y}{2}}\bigg)^2 \tag{8} 
+F_1(y)=\frac{1-\sqrt{\frac{x+y}{2}}}{1-\sqrt{\frac{y}{2}}}
+y\in [\alpha,1-x]
+ {F'}_1(y)=\frac{F_2(y)}{\sqrt{y(x+y)}\bigg(1-\sqrt{\frac{y}{2}}\bigg)^2}, \ F_2(y)=\sqrt{x+y}-\sqrt{y}-\frac{x}{\sqrt{2}} \tag{9} 
+{F'}_2(y)=\frac{1}{2\sqrt{x+y}}-\frac{1}{2\sqrt{y}} \leq 0
+F_2
+F_2(y)\leq F_2(\alpha)=F_3(x)
+F_3(x)=\sqrt{x+\alpha}-\frac{x}{\sqrt{2}}-\sqrt{\alpha}
+{F'}_3(y)=\frac{1}{2\sqrt{x+\alpha}}-\frac{1}{\sqrt{2}} \leq 0
+2\sqrt{x+\alpha} \geq 2\sqrt{\alpha} > 1.5 > \sqrt{2}
+F_3
+F_3(x) \leq F_3(0)=0
+F_2(y) \leq 0
+F_1
+F_1(y)\geq F_1(1-x)
+y=1-x
+ (1-\sqrt{x})\bigg(1-\sqrt{\frac{1-x}{2}}\bigg)^2\leq \bigg(1-\sqrt{\frac{1}{2}}\bigg)^2 \tag{10} 
+a=\sqrt{x}
+ \begin{array}{cl} & (1-a)\bigg(1-\sqrt{\frac{1-a^2}{2}}\bigg)^2\leq \frac{3}{2}-\sqrt{2} \\ \Leftrightarrow &(1-a)\bigg(1-\sqrt{2(1-a^2)}+\frac{1-a^2}{2}\bigg)\leq \frac{3}{2}-\sqrt{2} \\  & \\  \Leftrightarrow & (1-a)\bigg(1+\frac{1-a^2}{2}\bigg)-(\frac{3}{2}-\sqrt{2})\leq  (1-a)\sqrt{2(1-a^2)} \\  \Leftrightarrow & \frac{a^3-a^2-3a}{2}+\sqrt{2}\leq  (1-a)\sqrt{2(1-a^2)} \\   \Leftarrow & \bigg(\frac{a^3-a^2-3a}{2}-\sqrt{2}\bigg)^2\leq (1-a)^22(1-a^2) \\ \end{array} 
+a\leq\sqrt{1-\alpha} \leq 0.6=\frac{3}{5}
+ \begin{array}{cl}  & 2(1-a)^2(1-a^2)-\bigg(\frac{a^3-a^2-3a}{2}-\sqrt{2}\bigg)^2 \\  =& \frac{a}{4}(-a^5+2a^4 - 3a^3 + (10-4\sqrt{2})a^2 + (4\sqrt{2} - 9)a + (12\sqrt{2}- 16)) \\  \geq& \frac{a}{4}(-a^5+2a^4 - 3a^3 +\frac{108}{25}a^2 + -\frac{84}{25}a + \frac{24}{25} \end{array}  \tag{11} 
+x
+y
+\alpha
+ \bigg(1-\sqrt{\frac{x}{2}}\bigg)^2\bigg(1-\sqrt{\frac{y}{2}}\bigg)^2\leq \bigg(1-\sqrt{\frac{x+y}{2}}\bigg)^2 \tag{12} 
+(\frac{x}{2},\frac{y}{2})
+(x,y)
+\frac{x}{2}
+\frac{y}{2}
+\leq \frac{1}{2} \leq \alpha
+{\bf 1\ }
+r
+0<r\leq1
+f(q_1,q_2):=(1-q_1)(1-q_2)
+q_1^2+q_2^2=r^2, \quad q_1\geq0, \ q_2\geq0\  .
+g_r(t):=(1-r\cos t)(1-r\sin t)\qquad(0\leq t\leq{\pi\over2})
+r<\rho:=2(\sqrt{2}-1)
+r>\rho
+{\bf 2\ }
+n\geq2
+q=(q_1,q_2,\ldots,q_n)
+f
+{\bf 1}
+i
+0<q_i^2<\tau
+\tau>{1\over3}
+i
+q_i^2\geq\tau
+q_i
+q_1q_2>0\quad\Rightarrow\quad f(q_1,q_2)<f(r,0)\ .
+q_1\ne q_2\quad\Rightarrow\quad f(q_1,q_2)<f\left({r\over\sqrt{2}},{r\over\sqrt{2}}\right)\ .
+\tau:={1\over2}\rho^2\doteq0.343>{1\over3}\ .
+{\bf 3\ }
+0<q_1^2<\tau\leq q_2^2\leq q_3^2
+{\bf 1}
+q
+q_1^2+q_2^2=1-q_3^2\leq 1-\tau<2\tau=\rho^2\ .
+{\bf 4\ }
+q_1^2
+q_2^2
+>0
+{\bf 1}
+r=1
+q_1=q_2={1\over\sqrt{2}}
+\max f=\left(1-{1\over\sqrt{2}}\right)^2={1\over2}(3-2\sqrt{2})\doteq0.0858\ .
+f(q_1,\dots, q_n)
+q_i\ge0
+c(q_1,\dots, q_n)=0
+f(s_1^2,\dots, s_n^2)
+c(s_1^2,\dots, s_n^2)=0
+s_i
+f
+(s_1^2,\dots, s_n^2)
+\prod(1-s_i^2)
+\sum s_i^4=1
+(1-a)(1-b)(1-c)
+a,b,c\ge0
+a^2+b^2+c^2=1
+(1-x^2)(1-y^2)(1-z^2)
+x^4+y^4+z^4=1
+g(x,y,z,\lambda)=(1-x^2)(1-y^2)(1-z^2)-\lambda(x^4+y^4+z^4-1)
+\begin{align} 0 = \frac{\partial f}{\partial x} = & -2x(1-y^2)(1-z^2)+4x^3\lambda\\ 0 = \frac{\partial f}{\partial y} = & -2y(1-x^2)(1-z^2)+4y^3\lambda\\ 0 = \frac{\partial f}{\partial z} = & -2z(1-x^2)(1-y^2)+4z^3\lambda\\ 0 = \frac{\partial f}{\partial \lambda} = & x^4+y^4+z^4-1\\ \end{align}
+(x,y,z,\lambda)
+(x^2,y^2, z^2)
+a=x^2,b=y^2,c=z^2
+ \begin{array}{llll}  (a,b,c) & (1-a)(1-b)(1-c)\\ \hline\\ \left(\frac{1}{\sqrt{2}},  \frac{1}{\sqrt{2}},  0\right) & \left(1-\frac{1}{\sqrt{2}}\right)^2 \\  \left(\frac{1}{\sqrt{2}} , 0 , \frac{1}{\sqrt{2}}\right) & \left(1-\frac{1}{\sqrt{2}}\right)^2 \\  \left(0 , \frac{1}{\sqrt{2}} , \frac{1}{\sqrt{2}} \right)& \left(1-\frac{1}{\sqrt{2}}\right)^2 \\  \left(\frac{1}{\sqrt{3}} , \frac{1}{\sqrt{3}} , \frac{1}{\sqrt{3}} \right)& \left(1-\frac{1}{\sqrt{3}}\right) ^3 \\  \left(\frac{2}{3}, \frac{2}{3} , \frac{1}{3} \right)& \frac{2}{27} \\  \left(\frac{2}{3} , \frac{1}{3} , \frac{2}{3} \right)& \frac{2}{27} \\  \left(\frac{1}{3} , \frac{2}{3} , \frac{2}{3} \right)& \frac{2}{27} \\  (1 , 0 , 0) & 0 \\  (0 , 1 , 0) & 0 \\  (0 , 0 , 1) & 0 \\ \end{array} 

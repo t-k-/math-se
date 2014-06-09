@@ -1,0 +1,38 @@
+\sum_{n|q}\sum_{m|q}\frac{\mu(m)\mu(n)}{mn}(m,n)=\frac{\varphi(q)}{q}
+q
+q=1
+q=p^ab
+p
+a\geq1
+p\nmid b
+A(m,n)=\frac{\mu(m)\mu(n)}{mn}\gcd(m,n)
+B(q)=\sum_{n\mid q}\sum_{m\mid q}A(m,n)
+A=0
+m
+n
+p^2
+\mu(pm)=-\mu(m)
+m\mid b
+n
+\begin{align}B(q)& =\sum_{\substack{n\mid q\\ p\nmid n}}\sum_{\substack{m\mid q\\ p\nmid m}}A +\sum_{\substack{n\mid q\\ p\nmid n}}\sum_{\substack{m\mid q\\ p\mid m}}A +\sum_{\substack{n\mid q\\ p\mid n}}\sum_{\substack{m\mid q\\ p\nmid m}}A +\sum_{\substack{n\mid q\\ p\mid n}}\sum_{\substack{m\mid q\\ p\mid m}}A. \end{align}
+\begin{align}B(q)& =\sum_{n\mid b}\sum_{m\mid b}A(m,n) +\sum_{n\mid b}\sum_{m\mid b}A(pm,n) +\sum_{n\mid b}\sum_{m\mid b}A(m,pn) +\sum_{n\mid b}\sum_{m\mid b}A(pm,pn)\\ &=B(b)-\frac1p\cdot B(b)-\frac1p\cdot B(b)+\frac p{p^2}\cdot B(b) \end{align}
+b
+b<q
+\begin{align}B(q)&=B(b)\cdot\frac{p-1}p\\ &=\frac{\varphi(b)}b\cdot\frac{p-1}p\\ &=\frac{\varphi(q)}q. \end{align}
+A_n(m)=\frac{\mu(m)\gcd(m,n)}m
+A_n
+n
+q
+S_n(q):=\sum_{m\mid q}\frac{\mu(m)\gcd(m,n)}m
+S_n(q)
+S_n
+S_n(p^k)=1-\frac{\gcd(n,p)}p=\begin{cases}\frac{p-1}p&\text{ if }p\nmid n\\0&\text{ if }p\mid n.\end{cases}
+n\mid q
+p
+q
+p\mid n
+S_n(q)=S_n(p^k)\cdot\text{other factors}=0
+n=1
+\sum_{n\mid q}\frac{\mu(n)}n\cdot S_n(q)=\frac{\mu(1)}1\cdot S_1(q)=\sum_{m\mid q}\frac{\mu(m)}m.
+\mu*\textbf{id}=\varphi
+\sum_{m\mid q}\frac{\mu(m)}m=\frac{\varphi(q)}q.

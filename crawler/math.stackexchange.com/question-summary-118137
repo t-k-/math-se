@@ -1,0 +1,27 @@
+1
+n\to\infty
+a_n\to 1
+a_n=\prod_{j\in\mathbb{Z}}\frac{1+\exp(-2n e^{-|j|/n})}{1+\exp(-(1+e^{-1/n})n e^{-|j|/n})}
+1
+\prod\limits_{j\geq 1}w_{j,n}
+1
+\prod\limits_{j=1}^{\infty}w_{j,n}
+\sum\limits_{j=1}^{\infty}(w_{j,n}-1)
+ \begin{align*} w_{j,n}-1&=\frac{\exp(-(1+e^{-1/n})ne^{-j/n})-\exp(-2ne^{-j/n})}{1+\exp(-2ne^{-j/n})}\\ &=\frac{\exp(-ne^{-j/n})}{1+\exp(-2ne^{-j/n})}\left[\exp(-ne^{-(j+1)/n})-\exp(-ne^{-j/n})\right]\\ &\leq\left[\exp(-ne^{-(j+1)/n})-\exp(-ne^{-j/n})\right] \end{align*} 
+a_n=\prod\limits_{j=1}^{+\infty}w_{j,n}\to 1
+b_n=\sum\limits_{j=1}^{+\infty}(w_{j,n}-1)\to 0
+\sum_{j=1}^{+\infty}(w_{j,n}-1)\leq \lim_{j\to+\infty}\left[\exp(-ne^{-j/n})-\exp(-ne^{-1/n})\right]={1-\exp(-ne^{-1/n})}
+ 1+\sum_{j=1}^{+\infty}(w_{j,n}-1)\leq\prod_{j=1}^{+\infty}w_{j,n}\leq \exp \left(\sum_{j=1}^{+\infty}(w_{j,n}-1)\right) 
+ \begin{align*} \eta_{j,n}&=\exp(-ne^{-j/n})\left[\exp(-ne^{-(j+1)/n})-\exp(-ne^{-j/n})\right], \\ \theta_{j,n}&=\exp\left(-ne^{-(j+1)/n}\right)\left[\exp(-ne^{-(j+1)/n})-\exp(-ne^{-j/n})\right], \\ c_n&=\sum_{j=1}^{+\infty}\eta_{j,n}, \\ d_n&=\sum_{j=1}^{+\infty}\theta_{j,n}. \end{align*} 
+\frac12\eta_{j,n}\leq w_{j,n}\leq \eta_{j,n}
+\frac{1}{2}c_n\leq b_n\leq c_n
+ \begin{align*} c_n+d_n&=\\&\sum_{j\geq 1} \left[\exp(-ne^{-(j+1)/n})+\exp(-ne^{-j/n})\right]\left[\exp(-ne^{-(j+1)/n})-\exp(-ne^{-j/n})\right]\\ &=\sum_{j\geq 1}\left[\exp(-2ne^{-(j+1)/n})-\exp(-2ne^{-j/n})\right]\\ &=\lim_{j\to+\infty}\left[\exp(-2ne^{-j/n})-\exp(-2ne^{-1/n})\right]\\ &=\left[1-\exp(-2ne^{-1/n})\right]. \end{align*} 
+-1/n<c<0
+j\geq 1
+n\geq 1
+d_n\leq e c_n
+1
+ 1\leq \frac{\theta_{j,n}}{\eta_{j,n}}\leq e 
+ 1-\exp(-2ne^{-1/n})=c_n+d_n\leq (1+e)c_n\leq 2(1+e)b_n, 
+ b_n\geq \frac{1}{2(1+e)}\left[1-\exp(-2ne^{-1/n})\right] 
+\prod_{j=1}^{\infty}w_{j,n}\geq 1+\frac{1}{2(1+e)}\left[1-\exp(-2ne^{-1/n})\right],

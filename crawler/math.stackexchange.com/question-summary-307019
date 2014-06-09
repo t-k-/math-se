@@ -1,0 +1,19 @@
+a\in \mathbb R
+\int d^3 r \exp(-i \vec r\cdot\vec q)\exp(-a^2 r^2)
+\vec{r}=(r_1,r_2,r_3)
+r^2
+\vec{r} \cdot \vec{r}=r_1^2+r_2^2+r_3^2
+\vec{q}=(q_1,q_2,q_3)
+(q_1,q_2,q_3)
+x = r \sin{\theta} \cos{\phi}
+y = r \sin{\theta} \sin{\phi}
+z = r \cos{\theta}
+\mathrm{d^3}\vec{r} = r^2 \sin{\theta} \, dr \, d \theta \, d \phi 
+e^{-i \vec r\cdot\vec q} = e^{-i q r \cos{\theta}} = \sum_{l=0}^\infty\mathrm i^l(2l+1)j_l(q r)P_l(\cos\theta)
+j_0
+P_l
+l=0
+\theta
+\phi
+4 \pi
+\begin{align}\int_{\mathbb{R}^3} d^3 r \exp(-i \vec r\cdot\vec q)\exp(-a^2 r^2) &= 4 \pi \int_0^{\infty} dr \: r^2 e^{-a r^2} j_0(q r) \\ &= \frac{4 \pi}{q} \int_0^{\infty} dr \: r e^{-a r^2} \sin{q r} \\ &= \sqrt{\frac{\pi^3}{a^3}} e^{-\frac{q^2}{4 a}} \end{align}

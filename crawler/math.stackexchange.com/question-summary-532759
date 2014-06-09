@@ -1,0 +1,21 @@
+PV\int_{-1}^{2} \frac{\log{x}}{x} \ dx
+0
+\int_{0}^{3} \frac{\log{x}}{x-2} \ dx 
+i\pi
+\log(x)
+x\lt0
+ \begin{align} &\mathrm{PV}\int_{-1}^2\frac{\log(x)}{x}\,\mathrm{d}x\\ &=\lim_{\epsilon\to0^+}\left(\int_{-1}^{-\epsilon}\frac{\log(x)}{x}\,\mathrm{d}x +\int_\epsilon^2\frac{\log(x)}{x}\,\mathrm{d}x\right)\\ &=\lim_{\epsilon\to0^+}\left(\int_{-1}^{-\epsilon}\frac{i\pi}{x}\,\mathrm{d}x +\color{#C00000}{\int_{-1}^{-\epsilon}\frac{\log|x|}{x}\,\mathrm{d}x +\int_\epsilon^1\frac{\log|x|}{x}\,\mathrm{d}x} +\int_1^2\frac{\log|x|}{x}\,\mathrm{d}x\right)\\ &=\left(\lim_{\epsilon\to0^+}\int_{-1}^{-\epsilon}\frac{i\pi}{x}\,\mathrm{d}x\right) +\int_1^2\frac{\log(x)}{x}\,\mathrm{d}x\\ &=i\pi\lim_{\epsilon\to0^+}\log(\epsilon) +\int_1^2\frac{\log(x)}{x}\,\mathrm{d}x\\ &=-i\infty+\frac12\log(2)^2 \end{align} 
+ \begin{align} \mathrm{PV}\int_{-1}^2\frac{\log|x|}{x}\,\mathrm{d}x &=\int_1^2\frac{\log(x)}{x}\,\mathrm{d}x\\ &=\frac12\log(2)^2 \end{align} 
+ \begin{align} &\mathrm{PV}\int_0^3\frac{\log(x)}{x-2}\,\mathrm{d}x\\ &=\mathrm{PV}\int_0^3\left(\frac{\log(x)}{x-2}+\frac{\log(x)}{2}\right)\,\mathrm{d}x -\int_0^3\frac{\log(x)}{2}\,\mathrm{d}x\tag{1}\\ &=\mathrm{PV}\int_0^3\frac{x\log(x)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{2}\\ &=\mathrm{PV}\int_0^3\frac{2\log(2)}{2(x-2)}\,\mathrm{d}x +\int_0^3\frac{x\log(x)-2\log(2)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{3}\\ &=\small\mathrm{PV}\int_1^3\frac{\log(2)}{x-2}\,\mathrm{d}x +\int_0^1\frac{\log(2)}{x-2}\,\mathrm{d}x+\int_0^3\frac{x\log(x)-2\log(2)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{4}\\ &=\small\mathrm{PV}\int_{-1}^1\frac{\log(2)}{x}\,\mathrm{d}x +\int_0^1\frac{\log(2)}{x-2}\,\mathrm{d}x+\int_0^3\frac{x\log(x)-2\log(2)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{5}\\ &=\int_0^1\frac{\log(2)}{x-2}\,\mathrm{d}x+\int_0^3\frac{x\log(x)-2\log(2)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{6}\\ &=-\log(2)^2+\int_0^3\frac{x\log(x)-2\log(2)}{2(x-2)}\,\mathrm{d}x-\frac32\Big(\log(3)-1\Big)\tag{7}\\ \end{align} 
+ \begin{align} \mathrm{PV}\int_{-1}^1\frac{2\log(2)}{2x}\,\mathrm{d}x &=\lim_{\epsilon\to0^+}\left(\int_{-1}^{-\epsilon}\frac{2\log(2)}{2x}\,\mathrm{d}x +\int_\epsilon^1\frac{2\log(2)}{2x}\,\mathrm{d}x\right)\\ &=\lim_{\epsilon\to0^+}0\\ &=0\tag{8} \end{align} 
+\log[z]=\log[r]+i(\theta+2n\pi)
+z
+\theta\ge \frac{\pi}{2}
+\frac{\log[r]}{r}
+-2
+3
+\int^{2}_{0}\frac{\log[r]}{r}+\int^{3}_{0}\frac{\log[r]}{r}+2\pi i
+\int^{2}_{0}\frac{\log[r]}{r}
+z=re^{i\theta}
+\log[r]+\pi i
+\frac{1}{2}\log[r]^{2}|^{2}_{\epsilon}

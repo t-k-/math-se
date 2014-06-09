@@ -1,0 +1,11 @@
+X\sim \mathcal{N}(0,1)
+m
+\sigma^{2}
+Y\sim \mathcal{N}(m,\sigma^{2})
+I=\mathbb{E}[\Phi(Y)]
+\Phi
+X
+X-Y
+\Phi(\cdot)
+E[\Phi(Y)] = \int_{-\infty}^\infty \Phi(y)\frac{1}{\sigma \sqrt{2\pi}}\exp\left(-\frac{(y-\mu)^2}{2\sigma^2}\right)\,\mathrm dy.
+\begin{align*} E[\Phi(Y)] &= \int_{-\infty}^\infty \Phi(y)\frac{1}{\sigma \sqrt{2\pi}}\exp\left(-\frac{(y-\mu)^2}{2\sigma^2}\right)\,\mathrm dy\\ &= \int_{-\infty}^\infty P\{X \leq y\}f_Y(y)\,\mathrm dy\\ &= \int_{-\infty}^\infty P\{X \leq y \mid Y = y\}f_Y(y)\,\mathrm dy\\ &= P\{X \leq Y\}\\ &= P\{X-Y\leq 0\}. \end{align*}

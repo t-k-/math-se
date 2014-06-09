@@ -1,0 +1,35 @@
+\mathbb{R}^n
+ \int_C f(x) dx 
+f : \mathbb{R}^n \rightarrow \mathbb{R}
+C
+\mathbb{R}^n
+y(t)
+[a,b]
+ \int_C f(x) dx = \int_b^a f(y(t)) |y'(t)| dt 
+|v|
+v
+y(t,x)
+t
+x
+y(t,x) = y(t,z) \ 
+t
+\ y(t,x) = z \ 
+g(x) = \frac{\int_b^a y(t,x) |y'(t,x)| dt}{\int_b^a |y'(t,x)| dt}
+y(t,x)
+ \int_X f(x) dx = \int_X g(x) dx 
+X \ 
+\mathbb{R}^n
+[a,b]
+X
+X\ 
+n
+B \ 
+C \ 
+A \ 
+   g(x) = \begin{cases}            \frac{\int_B f(u) du}{\int_B du} & \text{if } \ x \in B \\            \frac{\int_C f(u) du}{\int_C du} & \text{if } \ x \in C    \end{cases} 
+du = dx
+x
+ \int_A g(x) dx = \int_B g(x) dx + \int_C g(x) dx
+ = \int_B \frac{\int_B f(u) du}{\int_B du} dx + \int_C \frac{\int_C f(u) du}{\int_C du} dx
+ = \int_B f(u) du \frac{\int_B dx}{\int_B du} + \int_C f(u) du \frac{\int_B dx}{\int_B du}
+ = \int_B f(u) du + \int_C f(u) du = \int_A f(u) du

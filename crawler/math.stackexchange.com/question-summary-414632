@@ -1,0 +1,35 @@
+X_t=\sum_{i=1}^t Y_i
+Y_i
+\pm
+p
+1-p
+0<p<0.5
+\tau_k=\min\left\{t:X_t=k\right\}
+P(\tau_1<\infty)=\frac{p}{1-p}=q
+P(\tau_k<\infty)=q^k
+P(\tau_{k-1}<\infty)=q^{k-1}
+P(\tau_k<\infty)=P(\tau_k<\infty\mid \tau_{k-1}<\infty)P(\tau_{k-1}<\infty)+P(\tau_k<\infty\mid \tau_{k-1}=\infty)P(\tau_{k-1}=\infty)
+P(\tau_k<\infty\mid \tau_{k-1}<\infty)=q
+k \in \mathbb{N}
+\tau_k
+(Z_s)_{s \geq 0}
+Z_s := X_{s+\tau_k}-X_{\tau_k} \qquad (s \in \mathbb{N}_0)
+\begin{align*} \tau_{k+1} &= \tau_k + \min \{t-\tau_k; X_{(t-\tau_k)+\tau_k} - X_{\tau_k} = 1\} \\ &= \tau_k + \underbrace{\min\{s \geq 0; Z_s=1\}}_{=:\sigma_1} \end{align*}
+\tau_k
+(Z_s)_{s \geq 0}
+\tau_k
+\sigma_1
+Y_j
+\sigma_1 \sim \tau_1
+\mathbb{P}(\tau_{k+1}<\infty) = \mathbb{P}(\tau_k < \infty, \sigma_1 < \infty) = \mathbb{P}(\tau_k<\infty) \cdot \underbrace{\mathbb{P}(\sigma_1<\infty)}_{\mathbb{P}(\tau_1<\infty)}.
+\mathbb{P}(\tau_{k+1}<\infty) = q^k \cdot q = q^{k+1}
+\tau_k
+(Z_s)_{s \geq 0}
+\xi, \eta_j \in \mathbb{R}
+s_j \in \mathbb{N}_0
+\mathcal{F}_m := \sigma(X_1,\ldots,X_m)
+\xi=0
+X
+Z
+\begin{align*} \mathbb{E} \exp  \left(\imath \, \xi \cdot \tau_k + \imath \sum_{j=0}^n \eta_j \cdot Z_{s_j} \right) &= \sum_{m \geq 1} e^{\imath \, \xi \cdot m} \cdot \mathbb{E} \bigg( \underbrace{1_{[\tau_k=m]}}_{\in \mathcal{F}_m} \cdot \underbrace{\exp \bigg(\imath \sum_{j=0}^n \eta_j \cdot \underbrace{(X_{s_j+m}-X_m)}_{\sim X_{s_j}} \bigg)}_{\text{independent of} \, \mathcal{F}_m} \bigg) \\ &= \mathbb{E}e^{\imath \, \xi \cdot \tau_k} \cdot \mathbb{E}\exp \left(\imath \, \sum_{j=0}^n \eta_j \cdot X_{s_j} \right) \end{align*}
+\begin{align*} \mathbb{E} \exp  \left(\imath \, \xi \cdot \tau_k + \imath \sum_{j=0}^n \eta_j \cdot Z_{s_j} \right)&= \mathbb{E}e^{\imath \, \xi \cdot \tau_k} \cdot \mathbb{E}\exp \left(\imath \, \sum_{j=0}^n \eta_j \cdot Z_{s_j} \right) \end{align*}

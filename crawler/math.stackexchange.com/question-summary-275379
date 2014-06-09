@@ -1,0 +1,28 @@
+k-
+ x(n+1) = A(n) x(n) 
+ H(n):= A^T (n) A(n)
+\displaystyle{ || x(n+1) ||_2 ^2 = x^T (n+1) x(n+1) = x^T (n) H(n) x(n) }
+H(n)
+H(n)
+ \lambda_1 (n) \leq \lambda_2 (n) \leq \cdots \leq \lambda_k (n) 
+ \displaystyle{x \in \mathbb R ^{ k \times 1} }
+ \lambda_1 (n) x^T x \leq x^T H(n) x \leq \lambda_k (n) x^T x 
+ \left( \prod_{i=n_0}^{n-1} \lambda_1 (i) \right ) x^T(n_0) x(n_0) \leq x^T (n)  x(n) \leq  \left( \prod_{i=n_0}^{n-1}\lambda_k (i) \right)x^T(n_0) x(n_0) 
+\displaystyle{\prod_{i=n_0}^{n-1} \lambda_1 (i) \leq || |\Phi( n, n_0) ||^2 \leq \prod_{i=n_0}^{n-1} \lambda_k (i)}
+\Phi( n, n_0) = \Phi(n) \Phi^{-1} (n_0)
+ \Phi
+H = P \Lambda P^t
+P
+\Lambda
+x
+x^T H x = x^T P \Lambda P^T x = y^T \Lambda y = \lambda_1 y_1^2 + \lambda_2 y_2^2  + \cdots\lambda_k y_k^2 
+y=P^t x
+|y| = |x|
+\lambda_1 |y|^2=\lambda_1 |x|^2
+\lambda_k |y|^2=\lambda_k |x|^2
+ \lambda_1 |x|^2 \le x^t H x \le \lambda_k |x|^2
+ x_n^T x_n = x_{n-1}^T H_{n-1} x_{n-1}  \le \lambda^{(k)}_{n-1} x_{n-1}^T x_{n-1} =  \lambda^{(k)}_{n-1} x_{n-2}^T H_{n-2} x_{n-2} \le \lambda^{(k)}_{n-1} \lambda^{(k)}_{n-2} x_{n-3}^T x_{n-3}  
+x(n_0)
+\Phi
+A
+H

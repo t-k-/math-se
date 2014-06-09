@@ -1,0 +1,59 @@
+n
+2n
+\displaystyle\sum_{i=0}^n (-2)^i {n \choose i}\frac{(2n-i)!}{(2n)!}
+n
+0.3678794
+i
+ 2^i \frac{n(n-1)(n-2)\cdots(n-i+1)}{i!} \frac1{(2n-i+1)(2n-i+2)\cdots(2n)} 
+ \frac1{i!} \frac{2n}{2n} \frac{2(n-1)}{2n-1} \cdots \frac{2(n-i+1)}{(2n-i+1)} \sim \frac 1{i!} 
+i>n
+\lim_{n\to\infty} \sum_{i=0}^\infty [\cdots] =  \sum_{i=0}^\infty \lim_{n\to\infty} [\cdots] = \sum_{i=0}^\infty (-1)^i \frac1 {i!} \equiv e^{-1}
+1 - \frac{2}{2 \cdot n}
+n
+(1- \frac{1}{n})^n
+\frac{1}{e}
+\textbf{1)}
+a_n\le c_n
+n\ge 2
+t_i=\frac{1}{i!}\bigg[1-\frac{2^{i}n!}{(n-i)!}\frac{(2n-i)!}{(2n)!}\bigg]>0
+i\ge 2
+\frac{2^{i}n!}{(n-i)!}\frac{(2n-i)!}{(2n)!}=\frac{(2n)(2n-2)(2n-4)\cdots(2n-2i+2)}{(2n)(2n-1)(2n-2)\cdots(2n-i+1)}<1
+c_n-a_n=\sum_{i=0}^n (-1)^i \frac{1}{i!}-\sum_{i=0}^n (-2)^i {n \choose i}\frac{(2n-i)!}{(2n)!}
+=\sum_{i=0}^n (-1)^i\frac{1}{i!}\bigg[1-\frac{2^{i}n!}{(n-i)!}\frac{(2n-i)!}{(2n)!}\bigg]=\sum_{i=0}^n(-1)^it_i,
+c_n-a_n\ge0
+n\ge2
+t_{i}-t_{i+1}\ge0
+i\ge2
+\displaystyle t_{i}-t_{i+1}=\frac{1}{i!}\bigg[1-\frac{2^{i}n!}{(n-i)!}\frac{(2n-i)!}{(2n)!}\bigg]-\frac{1}{(i+1)!}\bigg[1-\frac{2^{i+1}n!}{(n-i-1)!}\frac{(2n-i-1)!}{(2n)!}\bigg]
+\displaystyle=\frac{1}{(i+1)!}\bigg[i+1-\frac{(i+1)2^{i}n!(2n-i)!}{(n-i)!(2n)!}-1+\frac{2^{i+1}n!(2n-i-1)!}{(n-i-1)!(2n)!}\bigg]
+\displaystyle=\frac{1}{(i+1)!}\bigg[i-\frac{(i+1)2^{i}n!(2n-i)!}{(n-i)!(2n)!}+\frac{2^{i+1}(n-i)n!(2n-i-1)!}{(n-i)!(2n)!}\bigg],
+t_{i}-t_{i+1}\ge0 \iff
+ i(n-i)!(2n)!\ge(i+1)2^{i}n!(2n-i)!-2^{i+1}(n-i)n!(2n-i-1)!
+i\ge2
+\\\ \;\;\;\;\; =\  2^{i}n!(2n-i-1)!\big[(i+1)(2n-i)-2(n-i)\big]
+\\\ \;\;=2^{i}n!(2n-i-1)!(i)(2n-i+1)\iff
+(n-i)!(2n)!\ge2^{i}n!(2n-i-1)!(2n-i+1)\iff
+\big[(2n)(2n-1)(2n-2)\cdots(2n-i+2)\big](2n-i)\ge2^{i}n(n-1)(n-2)\cdots(n-i+1)\iff
+\big[(2n)(2n-1)(2n-2)\cdots(2n-i+2)\big](2n-i)\ge(2n)(2n-2)(2n-4)\cdots(2n-2i+2),
+-------------------------------------------
+\textbf{2)}
+a_n\ge b_n
+n\ge2
+s_i=\frac{1}{i!}\bigg[\frac{2^{i}n(n-1)\cdots(n-i+1)}{(2n)(2n-1)\cdots(2n-i+1)}-\frac{n(n-1)\cdots(n-i+1)}{n^i}\bigg]>0
+i\ge2
+\;\;\;\;2^{i}n^{i}=(2n)^{i}\ge(2n)(2n-1)(2n-2)\cdots(2n-i+1).
+a_n-b_n=\sum_{i=0}^n (-2)^i {n \choose i}\frac{(2n-i)!}{(2n)!}-\sum_{i=0}^n {n\choose i}\big(\frac{-1}{n}\big)^i
+=\sum_{i=0}^n (-1)^{i} \frac{1}{i!}\bigg[\frac{2^{i}n!(2n-i)!}{(n-i)!(2n)!}-\frac{n!}{(n-i)!(n^{i})}\bigg]=\sum_{i=0}^n(-1)^i s_i,
+a_n-b_n\ge0
+n\ge2
+s_{i}-s_{i+1}\ge0
+i\ge2
+=\frac{1}{(i+1)!}\bigg[\frac{2^{i}(i+1)n(n-1)\cdots(n-i+1)}{(2n)(2n-1)\cdots(2n-i+1)}-\frac{(i+1)n(n-1)\cdots(n-i+1)}{n^i}-\frac{2^{i+1}n(n-1)\cdots(n-i)}{(2n)(2n-1)\cdots(2n-i)}+\frac{n(n-1)\cdots(n-i)}{n^{i+1}}\bigg]
+=\frac{1}{(i+1)!}\bigg[\frac{2^{i}(i+1)(2n-i)n(n-1)\cdots(n-i+1)}{(2n)(2n-1)\cdots(2n-i)}-\frac{(n-1)(n-2)\cdots(n-i+1)[n(i+1)-(n-i)]}{n^i}\bigg]
+s_{i}-s_{i+1}=\frac{1}{i!}\bigg[\frac{2^{i}n(n-1)\cdots(n-i+1)}{(2n)(2n-1)\cdots(2n-i+1)}-\frac{n(n-1)\cdots(n-i+1)}{n^i}\bigg]-\frac{1}{(i+1)!}\bigg[\frac{2^{i+1}n(n-1)\cdots(n-i)}{(2n)(2n-1)\cdots(2n-i)}-\frac{n(n-1)\cdots(n-i)}{n^{i+1}}\bigg]
+s_i-s_{i+1}\ge0\iff
+2^{i}n^{i}(i+1)(2n-i)n(n-1)(n-2)\cdots(n-i+1)\ge i(n+1)(n-1)(n-2)\cdots(n-i+1)(2n)(2n-1)\cdots(2n-i)\iff
+(i+1)n\ge i(n+1)
+(2n)^{i}\ge (2n)(2n-1)(2n-2)\cdots(2n-i+1)
+2^{i}n^{i}(i+1)(2n-i)n\ge i(n+1)(2n)(2n-1)(2n-2)\cdots(2n-i)\iff
+(2n)^{i}(i+1)n\ge i(n+1)(2n)(2n-1)(2n-2)\cdots(2n-i+1),

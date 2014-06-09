@@ -1,0 +1,44 @@
+\begin{array}{c|c|c|}   & \text{X} & \text{Y} \\ \hline \text{1} & 1 & 1 \\ \hline \text{2} & 3 & 4 \\ \hline \text{3} & 5 & 4 \\ \hline \text{4} & 6 & 4 \\ \hline \text{5} & 9 & 9 \\ \hline \text{mean} & 4,8 & 4,4 \\ \hline \end{array}
+ \beta = \frac{\sum xiyi}{\sum xi^2} 
+X_k
+k
+X
+k\in1,2,3,4,5
+X_1=1,X_2=3,X_3=5,X_4=6,X_5=9
+Y_k
+k
+Y
+k\in1,2,3,4,5
+Y_1=1,Y_2=4,Y_3=4,Y_4=4,Y_5=9
+\large SE = \sqrt{\frac{\frac{1}{n-2}\sum_{k=1}^ne_k^2}{\sum_{k=1}^N(X_k-\bar{X})^2}}
+n
+5
+e(k)
+Y_k
+\hat{Y_k}
+\hat{Y_k}
+X_k
+\bar{X}
+X
+e(k)=Y_k-\hat{Y_k}
+\hat{Y_k}
+\hat{Y_k}=beta\times X_k+ alpha
+\hat{Y}=[1.0543,2.8151,4.5759,5.4563,8.0975]
+\sum_{k=1}^5e_k^2=(1-1.0543)^2+(4-2.8151)^2+(4-4.5759)^2+(4-5.4563)^2+(9-8.0975)^2\\=4.6739
+\bar{X}=24/5=4.8
+\sum_{k=1}^5(X_k-\bar{X})^2=(1-4.8)^2+(3-4.8)^2+(5-4.8)^2+(6-4.8)^2+(9-4.8)^2\\=36.8
+\large SE = \sqrt{\frac{(\frac{1}{5-2})4.6739}{36.8}}=0.20576
+(x_i, y_i)
+i = 1, 2, \ldots, n
+\beta
+\hat \beta
+\sigma^2
+\hat \beta
+t
+\nu = n-2
+\hat \beta = \frac{\sum x_i y_i - \frac{1}{n} \sum x_i \sum y_i}{\sum x_i^2 - \frac{1}{n}\left(\sum x_i\right)^2}.
+{\rm Var}[\hat\beta] = \frac{\sigma^2}{\sum (x_i - \bar x)^2},
+\begin{align*} \hat \sigma &= \frac{1}{n-2} \sum_{i=1}^n (y_i - \hat y_i)^2 \\ &= \frac{1}{n-2} \left( \sum y_i^2 - \frac{1}{n} \Bigl( \sum y_i \Bigr)^2 - \hat\beta \Bigl( \sum x_i y_i - \frac{1}{n} \sum x_i \sum y_i \Bigr) \right).\end{align*}
+\widehat{\rm Var}[\hat\beta] = \frac{\hat\sigma^2}{\sum (x_i - \bar x)^2}.
+H_0 : \beta = 0, \quad H_a : \beta \ne 0,
+T = \frac{\hat \beta - 0}{{\rm s.e.}(\hat\beta)}

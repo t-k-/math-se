@@ -1,0 +1,21 @@
+\int_{-1}^{1}\exp\left(\frac{1}{x^2-1}\right) \ dx=1\ ? 
+\int_{-1}^1e^{\frac{1}{x^2-1}}~dx
+=\int_{-1}^0e^{\frac{1}{x^2-1}}~dx+\int_0^1e^{\frac{1}{x^2-1}}~dx
+=\int_1^0e^{\frac{1}{(-x)^2-1}}~d(-x)+\int_0^1e^{\frac{1}{x^2-1}}~dx
+=\int_0^1e^{\frac{1}{x^2-1}}~dx+\int_0^1e^{\frac{1}{x^2-1}}~dx
+=2\int_0^1e^{\frac{1}{x^2-1}}~dx
+=2\int_0^\infty e^{\frac{1}{\tanh^2x-1}}~d(\tanh x)
+=2\int_0^\infty e^{-\frac{1}{\text{sech}^2x}}~d(\tanh x)
+=2\int_0^\infty e^{-\cosh^2x}~d(\tanh x)
+=2\left[e^{-\cosh^2x}\tanh x\right]_0^\infty-2\int_0^\infty\tanh x~d\left(e^{-\cosh^2x}\right)
+=4\int_0^\infty e^{-\cosh^2x}\sinh x\cosh x\tanh x~dx
+=4\int_0^\infty e^{-\cosh^2x}\sinh^2x~dx
+=4\int_0^\infty e^{-\frac{\cosh2x+1}{2}}\dfrac{\cosh2x-1}{2}dx
+=2e^{-\frac{1}{2}}\int_0^\infty e^{-\frac{\cosh2x}{2}}(\cosh2x-1)~dx
+=e^{-\frac{1}{2}}\int_0^\infty e^{-\frac{\cosh2x}{2}}(\cosh2x-1)~d(2x)
+=e^{-\frac{1}{2}}\int_0^\infty e^{-\frac{\cosh x}{2}}(\cosh x-1)~dx
+=e^{-\frac{1}{2}}\left(K_1\left(\dfrac{1}{2}\right)-K_0\left(\dfrac{1}{2}\right)\right)
+K_0
+K_1
+ e^{-1/2} (K_1(1/2) - K_0(1/2))
+1/(x^2-1) = -s

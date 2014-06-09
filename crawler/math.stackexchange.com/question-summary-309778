@@ -1,0 +1,43 @@
+a>0
+f
+[-a,a]
+f
+ \int_{-a}^0 fdx = \int_0^a fdx 
+P
+[-a,0]
+-a = x_0 < x_1 < \ldots < x_k = 0
+P^*
+[0,a]
+0 = x_k < x_{k+1} < \ldots < x_{2k} = a
+x_0=-x_{2k}, x_1=-x_{2k-1}, \ldots , x_{k-1}=-x_{k+1}
+S(f;P)=S(f;P^*)
+S(f;P)= \sum_{i=1}^k f(x_i-1)\cdot(x_i - x_{i-1})
+S(f;P^*)= \sum_{i=k}^{2k} f(x_i)\cdot(x_i - x_{i-1})
+f
+f(x_{2k})=f(-x_0)=f(x_0)
+S(f;P)=S(f;P^*)
+f
+[-a,a]
+[-a,0]
+[0,a]
+\epsilon>0
+\delta_1
+\delta_1
+P
+[0,a]
+\delta_1
+\delta_2
+\delta_2
+P
+[-a,0]
+\delta
+P
+[0,a]
+\delta=\min(\delta_1,\delta_2)
+P^*
+P
+P^*
+\epsilon
+ \left|\int_0^a f(x)\,dx - S(f,P)\right|<\epsilon  \tag1
+ \left|\int_{-a}^0 f(x)\,dx - S(f,P)\right|<\epsilon  \tag2
+ \left|\int_{-a}^0 f(x)\,dx - \int_0^a f(x)\,dx\right|<2\epsilon  \tag3

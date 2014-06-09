@@ -1,0 +1,138 @@
+\sigma
+\Omega
+\mu
+C_c(\Omega)
+L_1(\Omega, \mu)
+\sigma
+f \in L_1(\Omega)
+\varepsilon > 0
+s \in L_1
+\|f−s \|_1 <\varepsilon
+f
+\{s_n\}
+f
+\| s_n(x) - f(x) \|_1 = \int_\Omega |s_n(x) - f(x)| d \mu < \varepsilon 
+C_c(\Omega)
+L_1
+\mu
+s_n
+Y_n
+0
+Y_n \setminus K
+K
+μ(Y_n \setminus K) < \delta
+\delta
+\tilde{s_n}
+ \lim_{n \to \infty} \| \tilde{s_n}(x) - f(x)\|_1 =  \lim_{n \to \infty} \int_{Y_n \setminus K} |s_n(x) - f(x)| d\mu = \lim_{n \to \infty} \int_{Y_n} |s_n(x) - f(x)| d\mu = 0
+f^+
+f^-
+\varepsilon \gt 0
+s^+
+s^-
+\|f^\pm-s^\pm\| \lt \varepsilon/2
+s^\pm
+\|f-(s^+-s^-)\| \leq \|f^+-s^+\|+\|f^--s^-\|\lt \varepsilon
+\sigma
+\Omega
+f \geq 0
+A_{k,n} = \{x\in \Omega : 2^{-n} k \leq f(x) \lt 2^{-n}(k+1)\}
+s_n = 2^{-n} \sum\limits_{k=0}^{2^{2n}}k \cdot[A_{k,n}]
+s_n
+f
+\{x \in \Omega\,:\,0 \leq f \lt 2^n + 2^{-n}\}
+2^{-n}
+s_n \nearrow f
+f \in L^1
+s_n \in L^1
+s_n
+s_n \to f
+L^1
+\|f-s_n\| = \int f-s_n
+0 \leq f-s_n \leq f
+s_n \to f
+\mu(\Omega) < \infty
+\mathbb{R}
+\sigma
+[-n,n]
+\bigcup_{n=1}^{\infty} (n, n+2^{-n})
+1
+C_c(\Omega)
+L_1
+\mu
+s_n
+Y_n
+0
+Y_n \backslash K
+K
+\mu(Y_n \backslash K) < \delta
+\delta
+\tilde{s_n}
+ \lim_{n \rightarrow \infty} || \tilde{s_n}(x) - f(x)||_1 =  \lim_{n \rightarrow \infty} \int_{Y_n \backslash K} |s_n(x) - f(x)| d\mu = \lim_{n \rightarrow \infty} \int_{Y_n} |s_n(x) - f(x)| d\mu = 0
+\tilde{s}_n
+K
+\mu(E\setminus K) \lt \delta
+s_n
+\mu
+C \subset K
+\mu(C \subset K) \lt \delta
+s_n|_{C}
+\tilde{s}_{n}
+s_n
+L^1
+\varepsilon > 0
+f \in L^1
+s
+\| s - f \|_{L^1} < \varepsilon
+\mu (\operatorname{supp}{s}) < \infty 
+f \geq 0
+L^1
+f \in L^1
+f = f^+ - f^-
+s^+
+s^-
+\| f^+ - s^+\| < \frac{\varepsilon}{2}
+\| f^- - s^- \| < \frac{\varepsilon}{2}
+\| f - (s^+ - s^-) \| \leq \|f^+ - s^+\| + \| f^- - s^- \| < \varepsilon
+f
+s_n
+s_n \to f
+0 \leq s_n \leq s_{n+1}
+s_n
+f
+\| f - s_n \|_{L^1} \to 0
+|f(x) - s_n(x)| \leq |f(x)|
+f
+ \lim_{n \to \infty} \| f - s_n \|_{L^1} = \lim_{n \to \infty} \int_\Omega |f(x) - s_n(x)| d\mu = \int_\Omega \lim_{n \to \infty} |f(x) - s_n(x)| d\mu = 0
+s_n
+\int_\Omega s_n d \mu = \sum_{i=1}^N \alpha_i \mu(Y_i) < \infty
+\mu(Y_i) < \infty
+s_n \in L^1
+s_n \geq 0
+\mu (Y_i) < \infty
+i
+\mu(\operatorname{supp}{s_n}) = \mu (\bigcup Y_i) \leq  \sum_{i=1}^N \mu(Y_i) < \infty
+\varepsilon > 0
+s \in L^1
+\| s - f\|_{L^1} < \frac{\varepsilon}{2}
+\tilde{s}
+\| \tilde{s} - f\|_{L^1} < \varepsilon
+\mu
+K_\delta \subseteq \operatorname{supp}{s}
+\mu(\operatorname{supp}{s} \setminus K_\delta) < \delta
+\delta > 0
+\mu(K_\delta) < \infty
+C_{\delta^\prime}
+f
+C_{\delta^\prime}
+\mu(K_\delta \setminus C_\delta^\prime) < \delta^\prime
+\delta^\prime > 0
+C_{\delta^\prime}
+\mu
+O_\tau
+\mu(O_\tau \setminus \operatorname{supp}{s}) < \tau
+\tau > 0
+s|_{C_{\delta^\prime}}
+\tilde{s} : \Omega \to \mathbb{R}
+0
+O_\tau
+ \| \tilde{s} - f \|_{L^1} \leq \int_\Omega |\tilde{s} - s| d \mu + \int_\Omega | f - s| d \mu < \| s \|_\infty 2 (\delta + \delta^\prime + \tau) + \frac{\varepsilon}{2}

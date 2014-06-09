@@ -1,0 +1,34 @@
+F
+\lambda>0
+F
+F(t)=f_k
+t\in [x_k,x_{k+1}]
+f_k,x_k
+\liminf_{x\to\infty}\frac {1-F(x)} {e^{-\lambda x}}=0   
+\limsup_{x\to\infty}\frac {1-F(x)} {e^{-\lambda x}}=\infty
+ 
+c_1 < c_2 < \dots
+a_1<a_2<\dots
+c_k:=e^{(2k+1)^2}
+a_k:=e^{4k^2}
+ F(x) =\begin{cases} 0, &\qquad \text{if } x < a_1,\\[6pt]  1-e^{-c_k}, &\qquad \text{if } a_k\le x < a_{k+1},\text{ for } k=1, 2, \dots, \end{cases} 
+ c_k/a_k\to\infty, \qquad c_k/a_{k+1}\to 0. 
+a_n=\exp(3^n)
+x_n=a_n^2+1
+\mathbb P(X=x_n)=c\mathrm e^{-a_n}
+n\geqslant1
+c
+c\sum\limits_n\mathrm e^{-a_n}=1
+x_n\ll a_{n+1}
+n
+\mathrm e^{-a_n}\leqslant\sum\limits_{k\geqslant n}\mathrm e^{-a_k}\leqslant2\mathrm e^{-a_{n}}
+1-F(a_n^2)\gt c\mathrm e^{-a_n}
+\mathrm e^{\lambda a_n^2}(1-F(a_n^2))\gt c\exp(\lambda a_n^2-a_n)\to+\infty
+1-F(x_n)\leqslant2c\mathrm e^{-a_{n+1}}
+\mathrm e^{\lambda x_n}(1-F(x_n))\leqslant2c\exp(\lambda x_n-a_{n+1})\to0
+F(t)
+(x_k, x_{k+1})
+x_k
+\frac{1-F(x)}{e^{-\lambda x}}
+k
+ 1/k

@@ -1,0 +1,22 @@
+\cot(x)
+\log|\sin x|+C
+\int\log(\sin x)~dx
+\log (\sin x)
+\log (\cos x)
+\int \log(\cos x) = x\log(\cos x) + \int x \tan x dx
+0
+\pi/2
+\pi
+I=\int_0^{\pi/2} \log(\sin(x)) dx = - \dfrac{\pi \log2}2
+I=\underbrace{\int_0^{\pi/2} \log(\sin(x)) dx = -\int_{\pi/2}^0 \log(\cos(y)) dy}_{y = \pi/2-x} = \int_0^{\pi/2} \log(\cos(x))dx
+I+I = \int_0^{\pi/2} \log(\sin(x)) dx + \int_0^{\pi/2} \log(\cos(x)) dx = \int_0^{\pi/2} \log(\sin(x) \cos(x))dx
+2I = \int_0^{\pi/2} \log(\sin(2x))dx - \dfrac{\pi}2 \log2 = \dfrac12\int_0^{\pi} \log(\sin(x)) dx - \dfrac{\pi}2 \log2 = I - \dfrac{\pi}2 \log2
+I = -\dfrac{\pi}2 \log2
+ int(ln(abs(sin(x))), x); 
+i\ln  \left( 2 \right) \ln  \left( {{\rm e}^{ix}} \right) -i\ln   \left( {{\rm e}^{ix}} \right) \ln  \left( {\frac {-i \left(  \left( { {\rm e}^{ix}} \right) ^{2}-1 \right) {\it signum} \left( \sin \left( x  \right)  \right) }{{{\rm e}^{ix}}}} \right) -1/2\,i \left( \ln   \left( {{\rm e}^{ix}} \right)  \right) ^{2}+i\ln  \left( {{\rm e}^{ix }} \right) \ln  \left( {{\rm e}^{ix}}+1 \right) +i{\it dilog} \left( { {\rm e}^{ix}}+1 \right) -i{\it dilog} \left( {{\rm e}^{ix}} \right)  . 
+ Integrate[Log[Abs[Sin[x]]], x, Assumptions -> x > 0\, \&\& x < Pi/2]  
+Piecewise[{{I [Pi] x - x Log[1 - E^{2 I x}] + x Log[Sin[x]] +      1/2 I (x^2 + PolyLog[2, E^{2 I x}]),     Sin[x] < 0}}, -x Log[1 - E^{2 I x}] + x Log[Sin[x]] +    1/2 I (x^2 + PolyLog[2, E^{2 I x}])] .
+\int \ln|sin(x)|\,dx
+\int \ln(sin(x))\,dx
+ int(ln(sin(x)), x) 
+-x\ln  \left( 1-{{\rm e}^{2\,ix}} \right) +x\ln  \left( \sin \left( x  \right)  \right) +1/2\,i{x}^{2}+1/2\,i{\it polylog} \left( 2,{{\rm e} ^{2\,ix}} \right)   .

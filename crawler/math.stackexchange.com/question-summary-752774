@@ -1,0 +1,61 @@
+e_i
+i
+n-1
+n
+\text{cross}(x_0,...,x_{n-1})=\det\begin{vmatrix}&x_0&\\&x_1&\\&\vdots&\\e_1&\cdots&e_n\end{vmatrix}
+v_1,...,v_n
+A=\begin{bmatrix}v_0&\cdots&v_n\end{bmatrix}
+\sqrt{\det A^TA}
+\sqrt{\det\begin{bmatrix}a_0&a_1&a_2\\b_0&b_1&b_2\end{bmatrix}\begin{bmatrix}a_0&b_0\\a_1&b_1\\a_2&b_2\end{bmatrix}}=\sqrt{||a||^2||b||^2-(a\cdot b)^2}=||a\times b||
+||\text{cross}(x_0,...,x_{n-1})||=\sqrt{\det A^TA}\;\;\;\;\;\; A=\begin{bmatrix}x_0&\cdots&x_{n-1}\end{bmatrix}
+x_1,\dotsc,x_{n-1} \in \mathbb{R}^n
+x_1 \times \cdots \times x_{n-1} \in \mathbb{R}^n
+n
+\operatorname{det} : \mathbb{R}^n \times \cdots \times \mathbb{R}^n \to \mathbb{R}
+\det(e_1,\dotsc,e_n) = 1
+\{e_k\}
+\mathbb{R}^n
+  \forall y \in \mathbb{R}^n, \quad \langle x_1 \times \cdots \times x_{n-1},y \rangle = \operatorname{det}(x_1,\dotsc,x_{n-1},y), 
+x_1,\dotsc,x_{n-1} \in \mathbb{R}^n
+H
+n-1
+\mathbb{R}^n
+x_1 \times \cdots \times x_{n-1} \neq 0
+x_k
+H
+\hat{n}
+y \notin H
+x_1,\dotsc,x_{n-1},y
+n
+P
+n
+\mathbb{R}^n = H^\perp \oplus H
+M : H^\perp \to H
+P_H(v)
+v
+H
+T(P)
+n
+Tx_1 = x_1,\dotsc,Tx_{n-1}=x_{n-1}
+P
+Ty = y - P_H y
+P_H y \in H = \{x_1 \times \cdots \times x_{n-1}\}^\perp
+Ty \in H^\perp
+T(P)
+\|Ty\| = |\langle \hat{n},y\rangle|
+(n-1)
+R
+x_1,\dotsc,x_{n-1}
+x_1 \times \cdots \times x_{n-1} = \|x_1 \times \cdots \times x_{n-1}\|\hat{n}
+  |\operatorname{det}(x_1,\dotsc,x_{n-1},y)| = |\langle x_1 \times \cdots x_{n-1},y\rangle| = \|x_1 \times \cdots \times x_{n-1}\||\langle \hat{n},y\rangle|. 
+  T = \begin{pmatrix} I_{H^\perp} & 0 \\ M & I_{H} \end{pmatrix} 
+M(c \hat{n}) = -c \langle \hat{n},y \rangle^{-1} P_H y = -c\langle \hat{n},y\rangle^{-1}(y-\langle\hat{n},y\rangle\hat{n}),
+  Ty = \langle \hat{n},y \rangle \hat{n} = P_{H^\perp} y = y - P_H y, 
+  \operatorname{Vol}_n(T(P)) = |\operatorname{det}(Tx_1,\dotsc,Tx_{n-1},Ty)|\\ = |\operatorname{det}(x_1,\dotsc,x_{n-1},y-P_H y)|\\ = |\operatorname{det}(x_1,\dotsc,x_{n-1},y)|\\ = \|x_1 \times \cdots \times x_{n-1}\||\langle \hat{n},y\rangle|. 
+  \operatorname{Vol}_n(T(P)) = \operatorname{Vol}_{n-1}(R)|\langle \hat{n},y\rangle|. 
+  \operatorname{Vol}_{n-1}(R)|\langle \hat{n},y\rangle| = \operatorname{Vol}_n(T(P)) =  \|x_1 \times \cdots \times x_{n-1}\||\langle \hat{n},y\rangle|, 
+  \operatorname{Vol}_{n-1}(R)| = \|x_1 \times \cdots \times x_{n-1}\|, 
+\phi x_1 \times \cdots \times \phi x_n
+x_1 \times \cdots \times x_{n-1}
+\phi
+\mathbb{R}^n

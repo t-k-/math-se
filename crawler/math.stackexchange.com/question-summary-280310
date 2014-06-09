@@ -1,0 +1,28 @@
+E[X|Y=5]
+6
+5
+\frac{1}{5}
+6
+1
+5
+\tag{1}\Bbb E(X|Y=5)=\sum\limits_{i=1}^5 i\cdot P[X=i|Y=5]+E(X|Y=5, X> 5)P[X>5|Y=5].
+Y=5
+X>5
+\eqalign{ \sum\limits_{i=1}^5 i\cdot P[X=i|Y=5] &=(1/5)\cdot 1+ (4/5)(1/5)\cdot 2+(4/5)^2(1/5)\cdot 3+(4/5)^3(1/5)\cdot 4+0\cr   &=\textstyle{821\over625}.} 
+ E(X|Y=5, X> 5)= (\Bbb E(X)+5)=6+5= 11. 
+Y=5
+6
+X=1
+\frac15
+X=2
+\frac45\cdot\frac15
+X=3
+\left(\frac45\right)^2\cdot\frac15
+X=4
+\left(\frac45\right)^3\frac15
+X=5
+0
+n>5
+X=n
+\left(\frac45\right)^4\left(\frac56\right)^{n-6}\cdot\frac16
+\begin{align*} \Bbb E[X\mid Y=5]&=\sum_{k=1}^4k\left(\frac45\right)^{k-1}\frac15+\left(\frac45\right)^4\sum_{k\ge 6}k\left(\frac56\right)^{k-6}\frac16\\\\ &=\frac15\sum_{k=1}^4k\left(\frac45\right)^{k-1}+\frac16\left(\frac45\right)^4\sum_{k\ge 0}(k+6)\left(\frac56\right)^k\\\\ &=\frac15\sum_{k=1}^4k\left(\frac45\right)^{k-1}+\left(\frac45\right)^4\sum_{k\ge 0}\left(\frac56\right)^k+\frac16\left(\frac45\right)^4\sum_{k\ge 1}k\left(\frac56\right)^k\\\\ &=1.3136+\frac{0.4096}{1-5/6}+\frac16\left(\frac45\right)^4\left(\frac56\right)\sum_{k\ge 1}k\left(\frac56\right)^{k-1}\\\\ &=3.7712+\frac{256}{36\cdot125}\frac1{\left(1-\frac56\right)^2}\\\\ &=3.7712+\frac{256}{125}\\\\ &=5.8192\;. \end{align*}

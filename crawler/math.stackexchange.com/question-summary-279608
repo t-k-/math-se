@@ -1,0 +1,23 @@
+\begin{matrix} i & \mathrm{Response} \, y_i & \mathrm{Covariate} \, x_i \\ 1 & -1 & -0.5 \\ 2 & -0.25 &-0.25 \\ 3 & 1 & 0 \\ 4 & 1.2 & 0.25 \\ 5 & 2.6 & 0.5 \end{matrix}
+Y_i = \alpha_0 + \alpha_1(ax_i + b) + \alpha_2(dx_i^2 + ex_i + f)
+\sum_i^n ax_i + b = dx_i^2 + ex_i + f = 0
+\alpha_{0,1,2}
+x_i
+\sum_i^n x_i = 0
+\langle f,g\rangle=\sum_j^n f(x_j) g(x_j)
+\phi_{k+1}(x)=(x+b_k)\phi_k(x)+c_k\phi_{k-1}(x)
+\langle \phi_j,\phi_k\rangle=0,\quad j\neq k
+\phi_{-1}(x)=0
+\phi_0(x)=1
+b_k
+c_k
+\begin{align*}b_k&=-\frac{\langle x\phi_k ,\phi_k\rangle}{\langle \phi_k,\phi_k\rangle}\\c_k&=-\frac{\langle\phi_k,\phi_k\rangle}{\langle\phi_{k-1},\phi_{k-1}\rangle}\end{align*}
+x\phi_k
+x
+\phi_k(x)
+\phi_1(x)=x
+\phi_2(x)
+b_1=0
+c_1=-\frac18
+\phi_2(x)=x^2-\frac18
+0.71+3.46\phi_1(x)+0.285714\phi_2(x)

@@ -1,0 +1,22 @@
+X_n
+E
+x\in E
+\tau_x:=\inf\{n\geq 1\vert X_n=x\}
+p(x,y)
+\mathbb P(\tau_x =k\vert X_0=y)
+k\geqslant1
+x
+y
+E
+h_k(x,y)=\mathbb P(\tau_y=k\mid X_0=x)
+h_1(x,y)=p(x,y)
+k\geqslant1
+h_{k+1}(x,y)=\sum\limits_{z\ne y}p(x,z)h_k(z,y)
+p=(p(x,y))_{(x,y)\in E\times E}
+h_k=(h_k(x,y))_{(x,y)\in E\times E}
+k\geqslant1
+d_k
+h_k
+h_1=p
+k\geqslant1
+h_{k+1}=ph_k-pd_k

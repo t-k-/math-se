@@ -1,0 +1,70 @@
+g_k(\lambda) := \# \{i | m_i(\lambda) \geq k\}
+\lambda = [5,3,3,3,2,2,0,\cdots,0] \Rightarrow m_3(\lambda) = 3, g_2(\lambda) = 6
+n = 3
+ \{\lambda | \lambda \vdash 3 \} = \{(1,1,1),(1,2),(3)\}
+ \begin{array}{l|cccccc} \lambda & m_1 & m_2 & m_3 & g_1 & g_2 & g_3 \\\hline (1,1,1) & 3 & 0 & 0 & 1 & 1 & 1 \\ (1,2) & 1 & 1 & 0 & 2 & 0 & 0 \\ (3) & 0 & 0 & 1 & 1 & 0 & 0 \\\hline \sum & 4 & 1 & 1 & 4 & 1 & 1 \end{array} 
+k,l
+m_l < k
+k,l
+m_k < l
+k,l
+k,l
+m_l < k
+k,l
+m_k < l
+k,l
+m_l < k
+m_k < l
+k,l
+m_k < l
+m_l < k
+k
+l
+l
+k
+m_l < k
+k,l
+k,l
+k^{-1}
+l
+\alpha = (k^{-1}n) \bmod{l}, \quad \beta = (l^{-1}n) \bmod{k}.
+(a,b)
+ak+bl=n
+(a,b)' = \left(\frac{l}{k}(b - \beta) + \alpha, \frac{k}{l}(a - \alpha) + \beta\right).
+k = 5
+l = 3
+k^{-1} \bmod{l} = 2
+l^{-1} \bmod{k} = 2
+n = 30
+(a,b)'=(b,a)
+(0,10)' = (6,0)
+(3,5)' = (3,5)
+n = 40
+\alpha = 80 \bmod{3} = 2
+\beta = 80 \bmod{2} = 0
+(a,b)' = (3/5b + 2, 5/3(a - 2))
+(8,0)' = (2,10)
+(5,5)' = (5,5)
+n = 7
+\alpha = 14 \bmod{3} = 2
+\beta = 14 \bmod{2} = 0
+(2,-1)' = (7/5,0)
+x^n
+n
+P = \frac{1}{(1-x)(1-x^2)(1-x^3)\cdots}.
+m_k
+1/(1-x^k)
+\sum m_k
+ x^k + 2x^{2k} + 3x^{3k} + \cdots = \frac{x^k}{(1-x^k)^2}. 
+ M = \frac{x^k}{1-x^k} P. 
+g_k
+1
+k
+1/(1-x)
+1
+x^k P
+2
+x^{2k} P
+\sum g_k
+ x^k + x^{k+1} + \cdots = \frac{x^k}{1-x}. 
+ G = (x^k + x^{2k} + x^{3k} + \cdots) P = \frac{x^k}{1-x^k} P = M. 

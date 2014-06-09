@@ -1,0 +1,10 @@
+ \frac{\mathrm d}{\mathrm dx}\left( \int_{\cos x}^{\sin x}{\sin \left( t^3 \right)\mathrm dt} \right) 
+ \sin \left( \sin^3 x \right)\cos x + \sin \left( \cos ^{3}x \right)\sin x 
+f(t)=\sin(t^3)
+ \int_{\cos x}^{\sin x}{\sin ( t^3) \,dt} =F(\sin x) - F(\cos x)
+F(x) = \int_a^x f(t) dt
+ \frac{d}{dx}\left[ \int_{\cos x}^{\sin x}{\sin ( t^3 ) dt} \right]  = \frac{d}{dx} [F(\sin x) - F(\cos x)]  = F'(\sin x) \sin' x - F'(\cos x) \cos' x
+ = f(\sin x) \cos x + f(\cos x) \sin x = \sin ( \sin^3 x) \cos x + \sin (\cos^3 x) \sin x.
+\frac{d}{dx}\int_{a(x)}^{b(x)} f(t,x)\,dt = \frac{d b(x)}{d x}\,f(b(x),x)-\frac{d a(x)}{d x}\,f(a(x),x)+ \int_{a(x)}^{b(x)}\frac{\partial}{\partial x}\,f(t,x)\,dt
+\int_0^{\sin x} \sin(t^3)\mathrm dt - \int_0^{\cos x} \sin(t^3)\mathrm dt
+\frac{\mathrm d}{\mathrm dx} \int_0^{\sin x} \sin(t^3)\mathrm dt = \sin((\sin x)^3)(\sin x)' = \sin((\sin x)^3) \cos x.

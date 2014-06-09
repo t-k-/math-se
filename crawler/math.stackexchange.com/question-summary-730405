@@ -1,0 +1,7 @@
+\epsilon\gt0
+u_\epsilon(t)\to0
+t\to0
+\int_{1+\epsilon}^\infty xp_n(x) \mathrm{d}x=E(X_n;X_n\gt1+\epsilon)\leqslant\sqrt{E(X_n^2)\cdot P(X_n\gt1+\epsilon)}. 
+ E(X_n^2)=E(X_n)^2+\mathrm{var}(X_n)=1+\mathrm{var}(X_n). 
+ P(X_n\gt1+\epsilon)\leqslant P(|X_n-E(X_n)|\gt\epsilon)\leqslant\frac{\mathrm{var}(X_n)}{\epsilon^2}. 
+ \int_{1+\epsilon}^\infty xp_n(x) \mathrm{d}x\leqslant u_\epsilon(\mathrm{var}(X_n)),\qquad u_\epsilon(t)=\frac1\epsilon\sqrt{t(1+t)}. 

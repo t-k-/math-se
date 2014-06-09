@@ -1,0 +1,41 @@
+2\times2
+M
+\begin{pmatrix}X+|X| & X-|X| \\  Y-|Y| & Y+|Y|\end{pmatrix}
+X
+Y
+n\times n
+|X|
+X
+X
+M
+X
+Y
+ \left|\begin{pmatrix}X+|X| & X-|X| \\  Y-|Y| & Y+|Y|\end{pmatrix}\pmatrix{\frac{1}{2}I &I\\-\frac{1}{2}I &I}\right| = \left|\begin{pmatrix}|X| & 2X \\  -|Y| & 2Y\end{pmatrix}\right| 
+2
+A,B,C,D
+ \det\pmatrix{A &B\\C&D} 
+X+|X|
+Y+|Y|
+A,B,C,D
+\det(S) = \det(A)
+\det(T) = \det(D-CA^{-1}B)
+I
+A
+A
+1\times 1
+S
+\det(A)
+n\times n
+A,C
+N_{1j}
+j^{th}
+S
+\det(N_{1j}) = \det(M_{1,j})
+M_{1j}
+j^{th}
+A
+\det(M) = \det(S)\det(T)
+M = \begin{pmatrix}A & B \\  C & D\end{pmatrix} = \begin{pmatrix}A & 0\\  C & I\end{pmatrix} \begin{pmatrix}I & A^{-1}B\\  0 & D-CA^{-1}B\end{pmatrix} = ST
+\det(S) = \sum\limits_{j=1}^{n+1} (-1)^{j+1}a_{1j}\det(N_{1j})
+\sum\limits_{j=1}^{n+1} (-1)^{j+1}a_{1j}\det(N_{1j}) = \sum\limits_{j=1}^{n+1} (-1)^{j+1}a_{1j}\det(M_{1j}) = \det(A)
+\det(M) = \det(A)\det(D-CA^{-1}B)

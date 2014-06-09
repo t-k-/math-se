@@ -1,0 +1,14 @@
+ F_n = F_{n-1} + F_{n-2} 
+ F_0 = 1 
+ F_1 = 1 
+ F_n^{\frac{1}{n}} 
+ n 
+ \phi = \frac{1+\sqrt{5}}{2} 
+F_n = \frac{\varphi^n - \psi^n}{\varphi - \psi}; \qquad \varphi = \frac{1+\sqrt{5}}{2}, \psi = 1 - \varphi = -\frac{1}{\varphi},
+\log F_n = \log \frac{\varphi^n(1 - (\psi/\varphi)^n)}{\sqrt{5}} = n\log \varphi - \frac12\log 5 + \log (1 - (-\psi^2)^n),
+\frac{1}{n+1}\log F_{n+1}- \frac1n\log F_n = \frac{\log 5}{2n(n+1)} + \frac{1}{n+1}\log(1-(-\psi^2)^{n+1}) - \frac{1}{n}\log(1-(-\psi^2)^n).
+\lvert\psi\rvert < 1
+\frac{\log 5}{2n(n+1)}
+n
+\frac{1}{n+1}\log F_{n+1} - \frac1n\log F_n \geqslant \frac{\log 5}{2n(n+1)} - \frac{4}{n} \lvert\psi\rvert^{2n}
+n > 3

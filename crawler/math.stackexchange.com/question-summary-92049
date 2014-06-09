@@ -1,0 +1,42 @@
+f(x)
+[0, \infty)
+\lim \limits_{x \to \infty}x^2 f(x) = 1
+\lim_{n \to \infty}  \int_0^1 f(nx) \,dx .
+u^2 f(u) \to 1
+u \to \infty
+ \begin{array}{rcl} \lim_{u \to \infty} \int_0^1 f(ux) \, dx  &\stackrel{\color{Brown}{ux = y}}{=}& \lim_{u \to \infty}\frac{\int_0^u f(y) \, dy}{u} \\&\stackrel{\color{Brown}{\text{l'Hôpital}}}{=}& \lim_{u \to \infty} \frac{\frac{d}{du}\int_0^u f(y) \, dy}{\frac{d}{du}u}  \\& \stackrel{\phantom{ux \to y}}{=}& \lim_{u \to \infty} f(u)  \\&\stackrel{\phantom{ux \to y}}{=}& 0, \end{array} 
+f
+[0,\infty)
+[0,\infty)
+ \lim_{n\rightarrow \infty}\int_0^1 f(nx)\,dx.
+u=nx
+ \lim_{n\rightarrow \infty}{1\over n}\int_0^n f(u)\,du. 
+\lim\limits_{x\rightarrow\infty}\bigl[ x^2 f(x)\bigr]=1
+x
+x\ge  A
+ \tag{1}{1\over 2x^2}\le f(x)\le {2\over x^2} 
+C 
+ \tag{2}\lim_{n\rightarrow \infty}{1\over n}\int_A^n {C\over x^2}\,dx= \lim_{n\rightarrow \infty}{1\over n} \Bigl[{C\over A}-{C\over n}\,\Bigr]=0. 
+\lim\limits_{n\rightarrow \infty}{1\over n}\int_A^n f(u)\,du=0.
+\eqalign{ \lim_{n\rightarrow \infty}{1\over n}\int_0^n f(u)\,du &=\lim_{n\rightarrow \infty}\Bigl[\,{1\over n}\int_0^A f(u)+{1\over n}\int_A^n f(u)\,du\Bigr]\cr &=\lim_{n\rightarrow \infty}  \,{1\over n}\int_0^A f(u)\ +\  \lim_{n\rightarrow \infty}{1\over n}\int_A^n f(u)\,du \cr      &=0. } 
+\int_0^1 f(nx)dx = \frac{1}{n}\int_0^n f(x)dx
+f(x)
+\int_0^\infty f(x)dx = C
+x_0
+f(x)>0
+x>x_0
+n>x_0
+\epsilon>0
+n>C/\epsilon
+\int_0^1 f(nx)dx < \epsilon
+\int_0^1 f(nx)dx = \frac{1}{n} \int_0^n f(x)dx < \frac{1}{n}\int_0^\infty f(x)dx = \frac C n
+\int_0^1f(nx)dx=\frac 1n\int_0^nf(t)dt
+t=nx
+\varepsilon>0
+A
+|x^2f(x)-1|\leq \varepsilon
+x\geq A
+n_0
+n\geq n_0
+\left|\int_0^1f(nx)dx\right|\leq \varepsilon
+0

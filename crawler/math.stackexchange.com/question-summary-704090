@@ -1,0 +1,9 @@
+K = USU^T,
+ \begin{align*} K = \left[ \begin{array}{cc} K_{11} & K_{12} \\ K_{21} & K_{22}  \end{array}\right] &= \left[ \begin{array}{cc} U_1 S U_1^T & U_1 S U_2^T \\ (U_1 S U_2^T)^T & U_2 S U_2^T  \end{array}\right] \end{align*} 
+K^{-1} = US^{-1}U^T
+ \begin{align*} K^{-1} = \left[ \begin{array}{cc} A_{11} & A_{12} \\ A_{21} & A_{22}  \end{array}\right] &= \left[ \begin{array}{cc} U_1 S^{-1} U_1^T & U_1 S^{-1} U_2^T \\ (U_1 S^{-1} U_2^T)^T & U_2 S^{-1} U_2^T  \end{array}\right] \end{align*} 
+ \begin{align*} \left[ \begin{array}{cc} A & B \\ C & D  \end{array}\right]^{-1}&= \left[ \begin{array}{cc} M & -MBD^{-1} \\ -D^{-1}CM & D^{-1} + D^{-1}CMBD{-1}  \end{array}\right], \end{align*} 
+M = (A-BD^{-1}C)^{-1}
+M^{-1}
+M = U_1 S^{-1} U_1^T
+ \begin{align*} K^{-1}_{1,1} = M &= (U_1SU_1^T - U_1SU_2^T(U_2SU_2^T)^{-1}U_2SU_1^T)^{-1}\\                  &= (U_1SU_1^T - U_1SU_2^TU_2S^{-1}U_2^TU_2SU_1^T)^{-1} \\                  &= (U_1SU_1^T - U_1SIS^{-1}ISU_1^T)^{-1} \\                  &= (U_1SU_1^T - U_1SU_1^T)^{-1} \\                  &= 0, \end{align*} 

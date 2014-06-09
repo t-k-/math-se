@@ -1,0 +1,43 @@
+\frac{1}{2}\small\triangle
+\frac{1}{2}\small\triangle
+(X_t)_{t \geq 0}
+A
+Af(x) := \lim_{t \downarrow 0} \frac{\mathbb{E}^x(f(X_t))-f(x)}{t} = \lim_{t \downarrow 0} \frac{P_tf(x)-f(x)}{t}
+(C_{\infty},\|\cdot\|_{\infty})
+P_tf(x) := \mathbb{E}^xf(X_t)
+(X_t)_{t \geq 0}
+\mathbb{E}^xf(X_t) \approx f(x)+t Af(x)
+t \geq 0
+\frac{d}{dt} P_t f(x) = A P_tf(x), \tag{1}
+t \mapsto P_tf(x)=\mathbb{E}^x(f(X_t))
+(1)
+u(t,x) := P_t f(x)
+\frac{\partial}{\partial t} u(t,x) = Au(t,x) \qquad u(0,x)=f(x).
+M_t^f := f(X_t) - f(X_0)- \int_0^t Af(X_s) \, ds, \qquad t \geq 0 \tag{2}
+(X_t)_{t \geq 0}
+\mathbb{E}^x(f(X_t))
+\mathbb{E}^x(f(B_t)) \approx f(x)+ \frac{t}{2} f''(x)
+t
+\mathbb{E}^x(f(B_t)) \approx \mathbb{E}^x \left[f(x)+f'(x)(B_t-x)+\frac{1}{2} f''(x)(B_t-x)^2 \right]= f(x)+0+\frac{t}{2} f''(x)
+\mathbb{E}^x(B_t-x)=0
+\mathbb{E}^x((B_t-x)^2)=t
+(1)
+u(t,x) := \mathbb{E}^x(f(B_t))
+\partial_t u(t,x) = \frac{1}{2}\partial_x^2 u(t,x) \qquad u(0,x)=f(x).
+M_t^f := f(B_t)-f(B_0) - \frac{1}{2} \int_0^t f''(B_s) \, ds.
+f(B_t)-f(B_0) = \int_0^t f'(B_s) \, dB_s+ \frac{1}{2} \int_0^t f''(B_s) \,ds = M_t^f + \frac{1}{2} \int_0^t f''(B_s) \,ds.
+A f (x) = \lim_{t \downarrow 0} \frac{\mathbf{E}^{x} [f(X_{t})] - f(x)}{t}
+X_{t}
+f(X_t)
+X
+\pi(x)
+\pi(x)
+0
+A
+f
+\pi
+f(x)
+A^* \pi(x) = 0
+A^*
+A
+\Delta \pi = 0

@@ -1,0 +1,47 @@
+n
+\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}^{\large n}
+n
+\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}^{\large n} = \begin{pmatrix} 1 & n \\ 0 & 1\end{pmatrix}
+n
+n = 2
+n = k
+n = k+1
+\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}^k = \begin{pmatrix} 1 & k \\ 0 & 1\end{pmatrix}.
+\begin{pmatrix} 1 & 1\\ 0 & 1 \end{pmatrix}^{k + 1} = \begin{pmatrix} 1 & 1\\ 0 & 1\end{pmatrix} \begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}^k \quad \overset{IH}{=} \quad \begin{pmatrix} 1 & 1\\ 0 & 1\end{pmatrix} \begin{pmatrix} 1 & k \\ 0 & 1\end{pmatrix}=\quad\cdots
+N^2=0
+N=\begin{pmatrix} 0 & 1\\ 0 & 0 \end{pmatrix}
+\begin{pmatrix} 1 & 1\\ 0 & 1 \end{pmatrix}^n=(I_2+N)^n=\sum_{k=0}^n {n\choose k}N^k={n\choose 0}I_2+{n\choose 1}N=I_2+nN=\begin{pmatrix} 1& n\\ 0 & 1 \end{pmatrix}
+n
+A^n
+x_0=1
+y_0=0
+(1 \ 0)^T
+ \begin{pmatrix} x_{n+1} \\ y_{n+1} \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix} \begin{pmatrix} x_n \\ y_n \end{pmatrix} 
+ \begin{pmatrix} x_{n} \\ y_{n} \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}^n \begin{pmatrix} x_0 \\ y_0 \end{pmatrix} 
+ x_{n+1}=x_n+y_n, \qquad y_{n+1}=y_n 
+ x_n = x_0 + n\  y_0, \qquad y_n = y_0 
+x_0=0
+y_0=1
+(n \ 1)^T
+ A = \begin{pmatrix} 0 & a \\ 0 & 0 \end{pmatrix}. 
+k \in \mathbb  N
+k \ge 2
+A^k = O
+ \exp A = \sum_{k=0}^\infty A^k = I + A. 
+A
+A
+ \log \left( I + A \right) = A. 
+ \log \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} 
+ \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}^n = \exp \begin{pmatrix} 0 & n \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}. 
+A^{2} = 0
+{\rm f}\left(A\right)
+{\it linear}
+A
+\left(1 + \mu A\right)^{n} = \alpha + \beta A
+ \left(% \begin{array}{cc} 1 & 1 \\ 0 & 1 \end{array}\right) = 1 + A \quad\mbox{where}\quad A = \left(% \begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}\right) 
+ nA\left(1 + \mu A\right)^{n -1} = \alpha' + \beta' A \quad\Longrightarrow\quad nA\left(\alpha + \beta A\right) = \left(1 + \mu A\right)\left(\alpha' + \beta' A\right) = \alpha' + \beta' A + \mu\alpha' A 
+ \mbox{That's means}\quad 0 = \alpha'\,,\quad n\alpha = \beta' + \mu\alpha'= \beta'\,, \quad\mbox{with}\quad \left.\alpha\right\vert_{\mu\ =\ 0} = 1\ \mbox{and}\  \left.\beta\right\vert_{\mu\ =\ 0} = 0\ 
+\alpha = 1
+\beta = n\mu
+ \begin{array}{|c|}\hline\\ \color{#ff0000}{\large\quad% \left(1 + \mu A\right)^{n} \color{#000000}{\ =\ } 1 + n\mu A \quad\color{#000000}{\Longrightarrow}\quad \left(1 + A\right)^{n} \color{#000000}{\ =\ } 1 + nA \quad} \\ \\ \hline \end{array} 
+ \left(1 + A\right)^{n} = 1\ +\ \overbrace{\quad{n \choose 1}\quad}^{=\ n}\ A\ +\ \overbrace{\quad{n \choose 2}\,A^{2} + \cdots\quad}^{=\ 0} 

@@ -1,0 +1,5 @@
+ g_i(x+r\delta t, t+\delta t) = T_{ij}g_j(x,t) 
+ g_i(k,t+\delta t) = \Gamma_{ij}g_j(k,t) 
+ \Gamma_{ij}=diag(\exp(-ik\cdot r\delta t))T_{ij} 
+\begin{eqnarray*} \int dx\exp [ikx]g_{i}(x+r\delta t,t+\delta t) &=&\exp [-ikr\delta t]\int dy\exp [iky]g_{i}(y,t+\delta t) \\ &=&\exp [-ikr\delta t]\tilde{g}_{i}(k,\delta t)=T_{ij}\int dx\exp [ikx]g_{j}(x,t)\\=T_{ij}\tilde{g}_{j}(k,t) \end{eqnarray*}
+\tilde{g}_{i}(k,\delta t)=\exp [ikr\delta t]T_{ij}\tilde{g}_{j}(k,t) 

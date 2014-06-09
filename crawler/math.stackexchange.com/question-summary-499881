@@ -1,0 +1,20 @@
+a_n
+ \lim_{n \rightarrow \infty}a_n \rightarrow 0
+b_n
+a_n
+\sum_{n = 1}^{\infty} b_n
+\sum_{n = 1}^{\infty} a_n
+n \geqslant 1
+m = \lfloor\sqrt{n}\rfloor
+k = n - m^2
+a_n = a_{m^2+k} = \frac{1}{m^2} + \frac{k}{2m+1}\left(\frac{1}{m^2} - \frac{1}{(m+1)^2}\right).
+a_n \geqslant \frac{1}{\lfloor n\rfloor^2},
+\sum_{n=1}^{N^2-1} a_n = \sum_{m=1}^{N-1} \left(\sum_{k=0}^{2m} a_{m^2+k}\right) \geqslant \sum_{m=1}^{N-1} \frac{2m+1}{m^2} > 2\log N,
+\sum_{n=1}^\infty a_n = \infty
+m \geqslant 1
+0 \leqslant k < 2m
+a_{m^2+k} < a_{m^2+k+1}
+a_{m^2} > a_{(m+1)^2 + 2(m+1)} > a_{(m+1)^2}
+a_{m^2}
+a_{(m+1)^2}
+\frac{2}{m^2}

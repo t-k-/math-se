@@ -1,0 +1,26 @@
+R = \mathbb{F}_{p^n}[X,Y]/(XY - 1)
+M
+R
+R/M
+\mathbb{F}_p
+\mathbb{F}_p
+R
+M \subset R
+R/M
+p
+R
+\mathbb{F}_{p^n}(X)
+R/M = R / \{0\} \cong R
+\,I:=\langle\,1-xy\,\rangle\,
+f:R\longrightarrow \mathbb F_{p^n}[x,x^{-1}]\,\,,\,\,f(g(x,y)+I):=g(x,x^{-1})
+g(x,x^{-1})=a_{0,0}+...+a_{0,n_0}x^{n_0}+x^{-1}\left(a_{1,0}+...+a_{1,n_1}x^{n_1}\right)+\ldots +x^{-m}\left(a_{n,0}+\ldots +a_{n,n_m}x^{n_m}\right)
+\,k\in\mathbb N\,
+I\;\;\;\text{coefficient of}\,\,\,x^{-k}=a_{k,0}+a_{k+1,1} +\ldots +a_{j,j-k}+...=0
+II\;\;\;\!\!\text{coefficient of}\,\,\,x^k\,\,=a_{0,k}+a_{1,k+1} +\ldots +a_{k,k+j}+...=0
+\,x\,
+\,g(x,y)\,
+\,1-x^ty^t=(1-xy)\left(1+xy+...+x^{t-1}y^{t-1}\right)\,
+\,II\,
+a_{m,0}x^m+a_{m+1,1}x^{m+1}y+\ldots +a_{m+k,k}x^{m+k}y^k=x^m\left(a_{m,0}+a_{m+1,1}xy+...+a_{m+k,k}x^ky^k\right)=
+\stackrel{by\,\,I}=x^m\left(-a_{m+1,1}-a_{m+2,2}-\ldots -a_{m+k,k}+a_{m+1,1}xy+\ldots a_{m+k,k}x^ky^k\right)=
+=-x^m\left[a_{m+1,1}(1-xy)+a_{m+2,2}(1-x^2y^2)+...+a_{m+k,k}(1-x^ky^x)\right]\in I=\langle \,1-xy\,\rangle

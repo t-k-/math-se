@@ -1,0 +1,23 @@
+\displaystyle \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^c f(i,j,k)
+f(i,j,k)=i+j+k
+f
+i, j
+k
+ \sum_{i=1}^ai=\binom{a+1}{2} 
+ \sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^ci=\binom{a+1}{2}bc 
+ \begin{align} \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^c (i + j + k) &=\left(\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^ci\right) +\left(\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^cj\right) +\left(\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^ck\right)\\[6pt] &=\quad\overbrace{\binom{a+1}{2}bc}^{\text{contribution of }i} \quad+\quad\overbrace{a\binom{b+1}{2}c}^{\text{contribution of }j} \quad+\quad\overbrace{ab\binom{c+1}{2}}^{\text{contribution of }k}\\[18pt] &=\frac{abc(a+b+c+3)}{2} \end{align} 
+3\leq f(i,j,k)=i+j+k=n\leq a+b+c
+\sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^cf(i,j,k)=\sum_{n=3}^{a+b+c}n\sum_{i+j+k=n}1=\sum_{n=3}^{a+b+c}n\binom{n-1}{2}
+\sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^c (i+j+k)
+i+j
+k
+c(i+j)
+c
+k
+\frac 12c(c+1)
+j
+j
+b
+b
+j
+\sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^c (i+j+k)=\sum_{i=1}^a \sum_{j=1}^b c(i+j)+\frac 12c(c+1)

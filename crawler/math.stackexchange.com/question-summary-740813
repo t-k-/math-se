@@ -1,0 +1,15 @@
+x
+y
+X
+a
+Y
+b
+z = 2x+3y+4
+G_z(u)= E(u^z) = E(u^{2x+3y+4}) = E(u^{2x} \cdot u^{3y} \cdot u^4) )= u^4 \cdot E(u^{2x}) \cdot E(u^{3y})
+X \sim \mathcal{P}(a)
+\begin{array}{rcl} E(t^X) & = & \sum_{n=0}^{\infty}e^{-a} \frac{a^n}{n!} t^n\\ & = & e^{-a} \sum_{n=0}^{\infty}\frac{(at)^n}{n!} \\ \Longleftrightarrow E(t^X) & = & e^{-a + at} \end{array} 
+t
+t^2
+t^3
+E(t^Z) = t^4 E(t^{2X}) E(t^{3Y})
+E(t^Z) = t^4e^{-a-b + at^2 + bt^3}

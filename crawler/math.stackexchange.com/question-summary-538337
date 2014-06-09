@@ -1,0 +1,15 @@
+f(n)=\overset{n}{\underset{k=1}{\Sigma}}\lceil log_{2}k\rceil
+n\geq1
+f(n)=n-1+f(\lceil\frac{n}{2}\rceil)+f(\lfloor\frac{n}{2}\rfloor)
+\overset{n}{\underset{k=1}{\Sigma}}\lceil log_{2}k\rceil
+k
+k
+k = 2\kappa
+k
+k = 2\kappa - 1
+\kappa \ge 2
+\log_2 (2\kappa - 1)
+\kappa \ge 2
+n
+ \def\fl#1{\left\lfloor #1\right\rfloor}\def\cl#1{\left\lceil#1\right\rceil}   \cl{\log_2 k} = \cl{\log_2 2\kappa} = \cl{1 + \log_2\kappa} = 1 +\cl{\log_2 \kappa} 
+ \cl{\log_2 k} = \cl{\log_2 (2\kappa - 1)} = \cl{\log 2\kappa} = 1 + \cl{\log_2 \kappa} 

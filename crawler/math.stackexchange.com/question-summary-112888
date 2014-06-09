@@ -1,0 +1,26 @@
+R(x)
+C^\infty
+\mathbb{R}^n
+R(0)=0
+DR(0)=0
+r_{jk}(x)
+R(x)=\sum r_{jk}(x)x_jx_k.
+\varphi(t)=F(x+ty)
+F
+C^1
+R(x)=\Phi(x)x
+\Phi(x)=\int_0^1DR(tx)\text{ }dt
+R(0)=0
+\Phi(0)=DR(0)=0
+\Phi(x)=\Psi(x)x
+F(x+y)=F(x)+\int_0^1DF(x+ty)y\text{ }dt,
+x\in{\mathbb R}^n
+\phi(0)=f(0)=0
+\phi'(0)=0
+f
+\phi(t)\ :=\ f(t\, x)\qquad(0\leq t\leq 1)\ .
+f(x)=\phi(1)=\phi(0)+\int_0^1 \phi'(t)\, 1\ dt =\phi(0)+\phi'(t)(t-1)\Bigr|_0^1\ +\int_0^1 \phi''(t)\,(1-t)\ dt\ .
+\phi'(t)=\sum_i x_i\ f_{.i}(t\,x) \ ;
+\phi''(t)=\sum_i x_i{\partial\over\partial t}f_{.i}(t\,x) =\sum_{i\,k} x_i\,x_k\, f_{.ik}(t\, x)\ .
+f(x)=\sum_{ik}x_i\,x_k\ \int_0^1 f_{.ik}(t\, x)(1-t)\ dt\ ;
+r_{i\ k}(x)\ :=\ \int_0^1 f_{.ik}(t\, x)(1-t)\ dt

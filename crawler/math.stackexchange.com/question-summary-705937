@@ -1,0 +1,6 @@
+X_1, X_2, \ldots
+C:=\{ \omega\in\Omega \ | \ \sum X_n(\omega) \ \text{converges} \}
+C
+\omega \in C  \Leftrightarrow (\forall m \in \Bbb N )(\exists p \in \Bbb N)( \forall k \geq p) \quad \left|\sum_{i=k+1}^{+\infty} X_k(\omega)\right| < \frac 1{m+1}  
+C=\bigcap_{m \in \Bbb N}\bigcup_{p \in \Bbb N}\bigcap_{k \geq p} Y_{m,p,k}
+Y_{m,p,k}=\left\{\omega \in \Omega / \left| \sum_{i=k+1}^{+\infty} X_k(\omega) \right| < \frac 1{m+1}\right\}

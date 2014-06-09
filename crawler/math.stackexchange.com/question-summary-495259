@@ -1,0 +1,83 @@
+(X_k^i)_{k,i}
+i\geqslant1
+k\geqslant1
+n\geqslant1
+T_n^i
+n
+i
+ Y_k^i=\sum_{\ell=1}^iX_k^\ell,\qquad T_n^i=\max\{Y_\ell^i\mid 1\leqslant \ell\leqslant n\}. 
+i=1
+T_n^1=\max\{X_\ell^1\mid 1\leqslant\ell\leqslant n\}
+E[T^1_n]
+n
+E[T^1_n]\sim\log n
+n\to\infty
+T^1_n
+E[T_n^{i}]
+n\to\infty
+i\geqslant2
+i\geqslant1
+j\geqslant1
+N^{i,j}_n
+1\leqslant\ell\leqslant n
+Y_\ell^{i+j}\leqslant T_n^i
+N_n^{i,j}
+j
+i
+E[N_n^{i,j}]
+n\to\infty
+i\geqslant1
+j\geqslant1
+S_n^m
+F_{S_n^m}
+S_n^m
+s\ge 0
+m
+n\to\infty
+m
+s\ge 0
+ f_n^m \equiv \log n + (m-1) \log \log n - \log ((m-1)!). 
+ S_n^m = T_n^m - f_n^m. 
+ F_{S_n^m}(s) = F_{T_n^m}(s+f_n^m). 
+ \lim_{n\to\infty} \frac{(m-1)!}{(\log n)^{m-1}}\sum_{i=0}^{m-1} \frac{(s+f_n^m)^i}{i!} = 1. 
+ F_{S_n^m}(s) \to \exp\left(-\mathrm e^{-s}\right). 
+m=1
+T_n^m
+t=s+f_n^m
+ \left(1- \frac{1}{n}e^{-s}\right)^{n-1} e^{-s} |s|^p \le e^{-\frac{1}{2}e^{-s}} e^{-s} |s|^p. 
+m\ge 2
+n\to\infty
+ \lim_{n\to\infty} \mathbb{E}\left( |T_n^m - f_n^m|^p 1_{T_n^m\le \log n + m - 1}\right) = 0. 
+\mathbb{E}\left( (T_n^m - f_n^m)^p 1_{T_n^m > \log n + m - 1}\right)
+T_n^m
+t = s + f_n^m
+ I_n^m(s) \equiv \left( 1 - \frac{1}{n} e^{-s}\frac{(m-1)!}{(\log n)^{m-1}}\sum_{i=0}^{m-1} \frac{(s+f_n^m)^i}{i!} \right)^{n-1}\ e^{-s} \frac{(s+f_n^m)^{m-1}}{(\log n)^{m-1}} \ s^p. 
+s
+n
+s
+n
+ (*)\ \ \ |I_n^m| \le e^{-\frac{1}{2}e^{-s}} e^{-s} s^p (|s| + 2)^{m-1}. 
+n
+s \ge - f_n^m + \log n + m -1
+(*)
+ \left(1-\frac{e^{-s}}{n}\frac{(m+1)!}{(\log n)^{m-1}}\sum_{i=0}^{m-1} \frac{(s+f_n^m)^i}{i!}\right)^{n-1} \le e^{-\frac{1}{2}e^{-s}}. 
+J_n^{m,i}
+i
+T_n^m
+m^{\mbox{th}}
+1
+\{J_n^{m,i}\}_{i=2,3,\ldots,n}
+1
+N_n^{m,h}
+n-1
+N_n^{m,h}
+i
+N_n^{m,h}
+n-1
+p_n^{m,h}
+ p_n^{m,h}\equiv\mathbb{P}(J_n^{m,2}\ge m+h |\mbox{frog 1 is slowest}). 
+F_{T_n^m}
+ 1 = \int_0^{\infty} n \left(1 - e^{-t}\sum_{i=0}^{m-1} \frac{t^i}{i!} \right) \left(1 - e^{-t}\sum_{i=0}^{m-1} \frac{t^i}{i!} \right)^{n-2} e^{-t} \frac{t^{m-1}}{(m-1)!} \ dt, 
+ \lim_{n\to\infty} \frac{(m+h-1)!}{(m-1)!} \frac{n}{(\log n)^h} I_n^{m,h}(s) = e^{-e^{-s}} e^{-2s}. 
+\mathbb{E}(N_n^{m,h}) = (n-1) p_n^{m,h}
+\mathrm{Var}(N_n^{m,h}) = (n-1) p_n^{m,h}(1-p_n^{m,h})

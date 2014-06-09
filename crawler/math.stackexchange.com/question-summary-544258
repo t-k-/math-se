@@ -1,0 +1,16 @@
+z=x-\mu
+ \frac{1}{(2\pi\sigma^2)^{1/2}} e^{- \frac{1}{2\sigma^2}(x-\mu)^2} 
+ E[x]=\int\limits_{-\infty}^{\infty}\frac{1}{(2\pi\sigma^2)^{1/2}} e^{- \frac{1}{2\sigma^2}(x-\mu)^2} x dx 
+ E[x]=\int\limits_{-\infty}^{\infty}\frac{1}{(2\pi\sigma^2)^{1/2}} e^{- \frac{1}{2\sigma^2}(z)^2} (z+\mu) dz 
+0
+1
+E[X]=\mu
+ E[X] = \frac{1}{(2\pi \sigma^2)^{1/2}}\int_{-\infty}^{\infty} (z+\mu) e^{-\frac{z^2}{2\sigma^2}}dz = \frac{1}{(2\pi \sigma^2)^{1/2}}\int_{-\infty}^{\infty} z e^{-\frac{z^2}{2\sigma^2}}dz + \mu \left(\frac{1}{(2\pi \sigma^2)^{1/2}}\int_{-\infty}^{\infty} e^{-\frac{z^2}{2\sigma^2}}dz\right) 
+ e^{-\frac{1}{2\sigma^2}z^2}z + e^{-\frac{1}{2\sigma^2}z^2}\mu 
+\int_{-\infty}^\infty e^{-\frac{1}{2\sigma^2}z^2}z = 0
+e^{-\frac{1}{2\sigma^2}z^2}z
+ E[x] = \int_{-\infty}^\infty \frac{1}{(2\pi\sigma^2)^{1/2}}e^{-\frac{1}{2\sigma^2}z^2}\mu \,dz 
+\int_{-\infty}^{\infty} dz \, z \, e^{-z^2/(2 \sigma^2)} = 0
+\int_{-\infty}^{0} dz \, z \, e^{-z^2/(2 \sigma^2)} + \int_{0}^{\infty} dz \, z \, e^{-z^2/(2 \sigma^2)}
+\frac12 \int_{-\infty}^{0} d(z^2) \, e^{-z^2/(2 \sigma^2)} + \frac12\int_{0}^{\infty} d(z^2) \, e^{-z^2/(2 \sigma^2)}
+-\frac12 2 \sigma^2 \left [e^{-z^2/(2 \sigma^2)} \right ]_{-\infty}^0 -\frac12 2 \sigma^2 \left [e^{-z^2/(2 \sigma^2)} \right ]_0^{\infty} = -\sigma^2 - \left (-\sigma^2 \right ) = 0

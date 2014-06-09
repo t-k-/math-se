@@ -1,0 +1,48 @@
+m_d
+n
+n m_s
+m_s
+n
+n m_d
+n
+n v_d
+\frac{n}{n{-}1}
+n{-}1
+n
+ \mathrm{E}[(n m_s-n m_d)^2]=n v_d 
+ \mathrm{E}[(m_s-m_d)^2]=\frac{1}{n}v_d 
+ \begin{align} &\mathrm{E}[v_s]\\ &=\mathrm{E}\left[\frac{1}{n}\sum_{k=1}^n(x_k-m_s)^2\right]\\ &=\mathrm{E}\left[\frac{1}{n}\sum_{k=1}^n(x_k-m_d)^2+2(x_k-m_d)(m_d-m_s)+(m_d-m_s)^2\right]\\ &=\mathrm{E}\left[\frac{1}{n}\sum_{k=1}^n(x_k-m_d)^2+2(m_s-m_d)(m_d-m_s)+(m_d-m_s)^2\right]\\ &=\mathrm{E}\left[\frac{1}{n}\sum_{k=1}^n(x_k-m_d)^2-(m_d-m_s)^2\right]\\ &=v_d-\frac{1}{n}v_d\\ &=\frac{n{-}1}{n}v_d \end{align} 
+ v_d=\frac{n}{n{-}1}\mathrm{E}[v_s] 
+\sum (x_i - a)^2
+a
+x_i
+a
+\sum (x_i - a) = 0 
+\sum (x_i - \overline{x})^2 \leq \sum (x_i - \mu)^2
+\overline{x}
+\mu
+\sum (x_i - \overline{x})^2 / N
+(a+b)^2
+1
+n-1
+\mu
+1
+0
+\mu\sqrt{n}
+0
+n-1
+n-1
+ \begin{bmatrix}x_1 \\ \vdots \\ x_n\end{bmatrix} = \begin{bmatrix}\overline{x} \\ \vdots \\  \overline{x} \end{bmatrix} + \begin{bmatrix} x_1 - \overline{x} \\  \vdots \\  x_n - \overline{x}\end{bmatrix}, 
+ \begin{bmatrix}u_1 \\ \vdots \\ u_n\end{bmatrix} = \begin{bmatrix} u_1 \\ 0 \\ 0 \\  \vdots \\  0 \end{bmatrix} + \begin{bmatrix} 0 \\ u_2 \\ u_3 \\  \vdots \\  u_n \end{bmatrix}. 
+ \underbrace{\sum_{i=1}^n (x_i - \overline{x})^2}_{n\text{ terms}} = \underbrace{\sum_{i=2}^n u_i^2}_{n-1\text{ terms}}. 
+\sum_{i=1}^n (X_i - \overline{X})^2/\sigma^2
+n-1
+X
+\overline{X}
+\overline{x} = (x_1+\cdots+x_n)/n
+\overline{x}=\mu
+(a+b)^2
+ \sum_{i=1}^n (x_i - \mu)^2 = n(\overline{x} - \mu)^2 + \sum_{i=1}^n (x_i - \overline{x})^2 
+ \sum_{i=1}^n (x_i - \mu)^2 \ge \sum_{i=1}^n (x_i - \overline{x})^2 
+n-1
+n

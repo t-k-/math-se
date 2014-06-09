@@ -1,0 +1,67 @@
+G_{n,p}
+G_{n,m}
+n
+p
+p
+N = {n \choose 2}
+Np
+n
+m
+G_{n,p}
+Q = (Q_n)
+\mathbb{P}_{n,p}(Q_n) \to 1
+n \to \infty
+G_{n,m}
+(Q_n)
+G_{n,p}
+Q
+x > 0
+\epsilon > 0
+n \to \infty
+\#\{m: |m-pN| \leq xn\sqrt{pq} \text{ and } \mathbb{P}_{n, m}(Q_n) < 1 - \epsilon\} < \epsilon n \sqrt{pq}
+\Rightarrow
+G_{n,p}
+G_{n,m}
+m
+\mathbb{P}(Q_n)
+n\sqrt{pq}
+\omega (n) \to \infty
+n \to \infty
+|e(G_{n,p}) - pN| \leq \omega(n)n\sqrt{pq}\;,
+\omega(n) \notin \mathcal{O}(n)
+\omega'(n) := \frac{\omega(n)}{n}
+\lim_{n \rightarrow \infty} \omega'(n) = \infty
+n\rightarrow \infty
+\mathbb{P}_{n,p}(|e(G_{n,p}) - pN| > \omega(n)\sqrt{pq}) \leq \frac{Npq}{\omega(w)'n^2pq} \rightarrow 0 
+m
+pN
+\omega(n)=xn
+\epsilon > 0
+n\rightarrow \infty
+\forall\epsilon>0:\; \mathbb{P}_{n,p}(|e(G_{n,p}) - pN| > \omega(n)\sqrt{pq} \cap \mathbb{P}_{n,m}(Q_n) < 1 - \epsilon) \leq \mathbb{P}_{n,p}(|e(G_{n,p}) - pN| > \omega(n)\sqrt{pq})
+\mathbb{P}_{n,p}(\mathbb{P}_{n,m}(Q_n)<1-\epsilon)) \rightarrow 0 \\ \Leftrightarrow \forall x>0:\;\mathbb{P}_{n,p}(|e(G_{n,p}) - pN| \leq xn\sqrt{pq} \cap \mathbb{P}_{n,m}(Q_n) < 1 - \epsilon)\rightarrow 0
+\mathbb{P}_{n,p}(Q_n)
+\mathbb{P}_{n,m}(Q_n)
+\mathbb{P}_{n,p}(Q_n) = \mathbb{P}_{n,p}(\bigcup_{m\in\{1,\dots,N\}} (Q_n \cap e(G_{n,p}) = m)) \\= \sum_{m\in\{1,\dots,N\}} \mathbb{P}_{n,p}(e(G_{n,p}) = m)\cdot \mathbb{P}_{n,m}(Q_n)
+\epsilon
+\epsilon
+\epsilon
+1
+\epsilon
+\mathbb{P}_{n,p}(\mathbb{P}_{n,m}(Q_n) < 1-\epsilon) > \epsilon \Rightarrow  \mathbb{P}_{n,p}(Q_n) < 1 - \epsilon^2\\ \mathbb{P}_{n,p}(Q_n) > 1 - \epsilon^2 \Rightarrow  \mathbb{P}_{n,p}(\mathbb{P}_{n,m}(Q_n) < 1-\epsilon) < \epsilon
+\forall \epsilon \exists n_0\forall n > n_0:\;\mathbb{P}_{n,p}(\mathbb{P}_{n,m}(Q_n) < 1-\epsilon) > \epsilon \\ \Leftrightarrow \forall \epsilon \exists n_0\forall n > n_0:\;\mathbb{P}_{n,p}(Q_n) < 1 - \epsilon
+\mathbb{P}_{n,m}(Q_n)  \rightarrow 1\\ \Leftrightarrow \forall x>0 \forall \epsilon,\epsilon'>0\exists n_0\forall n \geq n_0:\;\\ \mathbb{P}_{n,p}(|e(G_{n,p}) - pN| \leq xn\sqrt{pq} \cap \mathbb{P}_{n,m}(Q_n) < 1 - \epsilon) < \epsilon'
+\mathbb{P}_{n,p}
+\Leftarrow
+\forall x>0 \forall \epsilon' > 0 \exists n_0\forall n \geq n_0:
+\Rightarrow\forall x>0 \forall \epsilon,\epsilon' > 0 \exists n_0\forall n \geq n_0:
+m
+\epsilon \rightarrow 0
+0
+\max_{m\in\{m:|m-pN|\leq xn\sqrt{pq}\}} \mathbb{P}_{n,p}(e(G_{n,p})=m) = \mathbb{P}_{n,p}(e(G_{n,p})=pN) \leq \frac{1}{\sqrt{Npq2\pi}} + \epsilon'
+\mathbb{P}_{n,p}(|e(G_{n,p}) - pN| \leq xn\sqrt{pq} \cap \mathbb{P}_{n,m}(Q_n) < 1 - \epsilon) \leq \#\{m:|m - pN| \leq xn\sqrt{pq}, \mathbb{P}_{n,m}(Q_n) < 1 -\epsilon \} \cdot (\frac{1}{\sqrt{Npq2\pi}} + \epsilon')\\ \leq\frac{\epsilon n\sqrt{pq}}{\sqrt{Npq2\pi}}+\epsilon'\epsilon n\sqrt{pq} 
+\Rightarrow
+\forall x>0 \forall \epsilon > 0 \exists n_0\forall n \geq n_0:
+\min_{m\in\{m:|m-pN|\leq xn\sqrt{pq}\}} \mathbb{P}_{n,p}(e(G_{n,p})=m) = \mathbb{P}_{n,p}(e(G_{n,p})=pN-xn\sqrt{pq}) \geq \frac{1}{\sqrt{e^{x^2}Npq2\pi}} - \epsilon
+\Rightarrow\forall \epsilon' \exists x>0 \exists \epsilon > 0 \forall n_0\exists n \geq n_0:
+\mathbb{P}_{n,p}(|e(G_{n,p}) - pN| \leq xn\sqrt{pq} \cap \mathbb{P}_{n,m}(Q_n) < 1 - \epsilon) \geq \#\{m:|m - pN| \leq xn\sqrt{pq}, \mathbb{P}_{n,m}(Q_n) < 1 -\epsilon \} \cdot \frac{1}{\sqrt{e^{x^2}Npq2\pi}} - \epsilon'\\ \geq \frac{\epsilon n\sqrt{pq}}{\sqrt{e^{x^2}Npq2\pi}}-\epsilon'\epsilon n\sqrt{pq}

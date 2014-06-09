@@ -1,0 +1,23 @@
+\pmatrix{0&0&\lambda\\0&\lambda&-1\\ \lambda&-1&0}
+A^{-1}=\frac{-1}{\lambda^3}\pmatrix{-1&-\lambda&-\lambda^2\\ -\lambda&-\lambda^2&0 \\ -\lambda^2&0&0}
+0a_{11}+0a_{21}+\lambda a_{31} = 1
+a_{31} = 1/\lambda
+0a_{11}+\lambda a_{21}+-1/\lambda = 0
+a_{21} = 1/\lambda^2
+ \pmatrix{0&0&\lambda\\0&\lambda&-1\\ \lambda&-1&0} \pmatrix{a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\ a_{31}&a_{32}&a_{33}} =  \pmatrix{1&0&0\\0&1&0\\ 0&0&1} 
+A
+2\times2
+v
+2\times1
+T = A^{-1} v (v^\top A^{-1} v)^{-1} 
+v
+T^\top v=1
+v^\top T=1 
+ \begin{bmatrix} 0 & v^\top \\ v & A \end{bmatrix} 
+ \begin{bmatrix} 0 & v^\top \\ v & A \end{bmatrix}^{-1} = \begin{bmatrix} -(v^\top A^{-1} v)^{-1} & T^\top \\ T & A^{-1}-T v^\top A^{-1} \end{bmatrix} 
+T^\top A = (v^\top A^{-1} v)^{-1} v^\top
+  \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
+A = \begin{pmatrix} \lambda & -1 \\ -1 & 0 \end{pmatrix} 
+v = \begin{pmatrix} 0 \\ \lambda \end{pmatrix}
+T = \begin{pmatrix} \lambda & -1 \\ -1 & 0 \end{pmatrix}^{-1} \begin{pmatrix} 0 \\ \lambda \end{pmatrix} \left(\begin{pmatrix} 0 & \lambda \end{pmatrix}  \begin{pmatrix} \lambda & -1 \\ -1 & 0 \end{pmatrix}^{-1} \begin{pmatrix} 0 \\ \lambda \end{pmatrix} \right)^{-1} = \begin{pmatrix} \frac{1}{\lambda^2} \\ \frac{1}{\lambda} \end{pmatrix}
+ \begin{bmatrix} -(v^\top A^{-1} v)^{-1} & T^\top \\ T & A^{-1}-T v^\top A^{-1} \end{bmatrix} = \begin{bmatrix}  \begin{pmatrix} \frac{1}{\lambda^3} \end{pmatrix} & \begin{pmatrix} \frac{1}{\lambda^2} & \frac{1}{\lambda} \end{pmatrix} \\ \begin{pmatrix} \frac{1}{\lambda^2} \\ \frac{1}{\lambda} \end{pmatrix} & \begin{pmatrix} \frac{1}{\lambda} & 0 \\ 0 & 0 \end{pmatrix} \end{bmatrix}  

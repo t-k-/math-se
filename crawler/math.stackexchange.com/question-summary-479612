@@ -1,0 +1,17 @@
+f: \mathbb{R}_+ \to \mathbb{R}, f(x) := \left(1 + \frac{\log 2}{\log x}\right)^{\log x}
+\log x \in \mathbb{N}
+x
+f
+\lceil\log x\rceil
+0 \leq t \leq 1,
+\log(1+t)
+ 0 \leq t \leq 1, \; \; \; \log(1+t) \geq \; t - \frac{t^2}{2}  
+x > 2
+ t = \frac{\log 2}{\log x}  
+\log (2x) = \log 2 + \log x.
+\ln(1+t) \ge t-\dfrac{t^2}{2} 
+0 \le t \le 1
+\dfrac{1}{1+t} \ge 1-t
+0 \le t \le 1
+1 \ge (1+t)(1-t) = 1-t^2 
+\begin{align} \ln(1+t) &= \int_1^{1+t} \dfrac{dx}{x}\\ &= \int_0^{t} \dfrac{dx}{1+x}\\ &\ge \int_0^{t} (1-x)\ dx\\ &= (x-\dfrac{x^2}{2})\big|_0^t\\ &= t-\dfrac{t^2}{2}\\ \end{align} 

@@ -1,0 +1,14 @@
+(x_i,y_i)
+i = 1...N
+a^2+b^2+c^2 = 1
+d = ax_i+by_i+c
+E = \sum_{i=0}^N (ax_i+by_i+c)^2 -λ(a^2+b^2+c^2-1)
+\lambda
+a,b,c
+a,b,c
+E_a = \sum_{i=0}^N 2x_i(ax_i+by_i+c)-2λa=0
+E_b = \sum_{i=0}^N 2y_i(ax_i+by_i+c)-2λb=0
+E_c = \sum_{i=0}^N 2(ax_i+by_i+c)-2λc=0
+E_\lambda=a^2+b^2+c^2-1=0
+\begin{bmatrix}\sum x_i^2& \sum x_iy_i & \sum x_i\\ \sum y_ix_i& \sum y_i^2 & \sum y_i\\ \sum x_i& \sum y_i & \sum 1\end{bmatrix}\begin{bmatrix}a\\b\\c\end{bmatrix}=\lambda\begin{bmatrix}a\\b\\c\end{bmatrix}
+a^2+b^2+c^2=1

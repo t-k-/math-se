@@ -1,0 +1,19 @@
+\det(A) = \frac 12 \begin{vmatrix}\operatorname{tr}(A)&1\\\operatorname{tr}(A^2)& \operatorname{tr}(A)\end{vmatrix}
+2\times 2
+\det(A) = 1/2
+|A|
+det(A)
+2 \times 2
+\newcommand{\tr}{\operatorname{tr}} \newcommand{\det}{\operatorname{det}} \det(A) = \frac{1}{n!}\left|\begin{array}{cccccccc} \tr(A) & 1 & . & . & . & \dots & . & . \\ \tr(A^2) & \tr(A) & 2 & . & . & \dots & . & . \\ \tr(A^3) & \tr(A^2) & \tr(A) & 3 & . & \dots & . & . \\ \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ \tr(A^{n-1}) & \tr(A^{n-2}) & \tr(A^{n-3}) & \tr(A^{n-4}) & \tr(A^{n-5}) & \dots & \tr(A) & n-1 \\ \tr(A^n) & \tr(A^{n-1}) & \tr(A^{n-2}) & \tr(A^{n-3}) & \tr(A^{n-4}) & \dots & \tr(A^2) & \tr(A) \end{array}\right|
+3\times3
+\det(A) = \frac{1}{6}\left|\begin{array}{cccc}  \tr(A) & 1 & 0 \\  \tr(A^2) & \tr(A) & 2 \\  \tr(A^3) & \tr(A^2) & \tr(A) \end{array}\right|
+B_{ij} = \begin{cases}  i & \text{ if } j = i + 1 \\  \tr(A^{i-j+1}) & \text{ if } j \leq i \\  0 & \text{ if } j > i+1  \end{cases}
+2\times2
+A^2-\text{tr}(A)A+\det(A)I_2=0 
+\begin{align*}&\text{tr}(A^2)-\text{tr}(A)\text{tr}(A)+2\det(A)=0 \Rightarrow\\ &\det(A)=\frac12[\text{tr}(A)\text{tr}(A)-\text{tr}(A^2)]=\frac12\begin{vmatrix}\text{tr}(A)&1\\\text{tr}(A^2)&\text{tr}(A)\end{vmatrix}\end{align*}
+\lambda_1,\lambda_2
+A
+\det(A)=\lambda_1 \lambda_2
+tr A=\lambda_1+\lambda_2
+tr(A^2)=\lambda_1^2+\lambda_2^2
+1/2[(tr A)^2-tr(A^2)]=1/2[(a_{11}+a_{22})^2-(a_{11}^2+2a_{12}a_{21}+a_{22}^2)]=\cdots

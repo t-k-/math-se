@@ -1,0 +1,27 @@
+a_1 = 1, \ a_2 = 18
+a_{2n} = 8a_n + 10, \ \ n\geq 1
+a_n
+n\geq 1
+b_{k+1}=ub_k+v
+u=8
+v=10
+b_0=1
+b_k=a_{2^k}
+k\geqslant0
+(b_k)_{k\geqslant0}
+r
+s
+k\geqslant0
+r
+s
+B(x)
+r+s=b_0=1
+r+su=b_1=u+v
+r=\dfrac{v}{1-u}
+s=1-\dfrac{v}{1-u}
+ B(x)=\sum\limits_{k\geqslant0}b_kx^k. 
+ B(x)=b_0+\sum\limits_{k\geqslant1}b_kx^k=1+\sum\limits_{k\geqslant0}b_{k+1}x^{k+1}=1+\sum\limits_{k\geqslant0}(ub_k+v)x^{k+1}, 
+ B(x)=1+ux\sum\limits_{k\geqslant0}b_kx^k+vx\sum\limits_{k\geqslant0}x^k=1+uxB(x)+\frac{vx}{1-x}. 
+ B(x)=\frac{1+\frac{vx}{1-x}}{1-ux}=\frac{1-(1-v)x}{(1-x)(1-ux)}=\frac{r}{1-x}+\frac{s}{1-ux}, 
+ B(x)=r\sum\limits_{k\geqslant0}x^k+s\sum\limits_{k\geqslant0}u^kx^k, 
+ b_k=r+su^k. 

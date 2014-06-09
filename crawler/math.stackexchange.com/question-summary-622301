@@ -1,0 +1,18 @@
+ P = \sum_{n=0}^{N-1} \sum_{k=0}^{N-1} \mathbb{E} \Big[x^2[n] x^2[k] \Big] 
+x[n]
+\sim  \mathcal{N}(0, \sigma^2)
+ P = (N^2 - N)\sigma^4 + \sum_{n=0}^{N-1} \mathbb{E} \Big[x^4[n]  \Big] 
+X \sim {\rm Normal}(0,\sigma^2)
+{\rm E}[X^4]
+\sigma^2 t
+\sigma^2
+\begin{align*} M_X(t) &= {\rm E}[e^{tX}] = \int_{x=-\infty}^\infty e^{tx} \cdot \frac{1}{\sqrt{2\pi} \sigma} e^{-x^2/(2\sigma^2)} \, dx \\ &= e^{(\sigma t)^2/2} \int_{x=-\infty}^\infty \frac{1}{\sqrt{2\pi} \sigma} e^{-(\sigma t)^2/2 + tx - x^2/(2\sigma^2)} \, dx\\ &= e^{(\sigma t)^2/2} \int_{x=-\infty}^\infty \frac{1}{\sqrt{2\pi} \sigma} e^{-(x/\sigma - \sigma t)^2/2} \, dx \\ &= e^{(\sigma t)^2/2}, \end{align*}
+k^{\rm th}
+k^{\rm th}
+M
+t = 0
+{\rm E}[X^k] = \frac{d^k}{dt^k}[M_X(t)]_{t=0}.
+{\rm E}[X^4] = \left[\sigma^4 (3 + 6(\sigma t)^2 + (\sigma t)^4)e^{(\sigma t)^2/2} \right]_{t = 0} = 3\sigma^4.
+P = N(N+2)\sigma^4.
+X_i
+P = \sum_0^{N-1} \sum_0^{N-1} E(X_i^2 X_j^2) = N(N-1) E(X_i^2) E(X_j^2) + 3N E(X_i^2) = N(N+2) \sigma^4.

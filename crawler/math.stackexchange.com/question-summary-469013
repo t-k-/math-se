@@ -1,0 +1,6 @@
+\rho_1
+\rho_2
+\hat{w}
+S(\rho) = \mbox{Tr}(\rho \ln(\rho))
+ \hat{w} = \mbox{arg}\max_w S(w\rho_1+(1-w)\rho_2)\mbox{ s.t. } 0 \le w \le 1
+ S(\rho_1) \ge \ln(\hat{w}) +S(\hat{w}\rho_1+(1-\hat{w})\rho_2) \\ S(\rho_2) \ge \ln(1-\hat{w}) +S(\hat{w}\rho_1+(1-\hat{w})\rho_2)

@@ -1,0 +1,15 @@
+ S(n) = \sum_{k \geq 1} \frac{n!}{k (n-k)! n^k} = \sum_{k \geq 1} \frac{n^{\underline{k}}}{k n^k} \sim \frac{1}{2} \log(n). 
+\sum_{k=1}^n \frac{1}{k} (1-1/n)(1-2/n)\cdots (1-k/n)
+(1-1/n) (1-2/n) \cdots (1-k/n) \approx e^{-k^2/(2n)}.
+\sum_{k \geq 1} \frac{1}{k} e^{-k^2/(2n)} = \sum_{k \geq 1} \frac{1}{\sqrt{n}} \frac{\sqrt{n}}{k} e^{-(k/\sqrt{n})^2 /2}.
+1/\sqrt{n}
+[x<1]
+1
+x<1
+0
+x \geq 1
+(1/2) \log n
+\int_{0}^{\infty} \frac{e^{-x^2/2} - [x<1]}{x} dx
+\int_{1/\sqrt{n}}^{\infty} \frac{dx}{x} e^{-x^2/2}
+\int_{1/\sqrt{n}}^{1} \frac{dx}{x} + \int_{1/\sqrt{n}}^{\infty} \frac{e^{-x^2/2} - [x<1]}{x} dx.
+(1/2) \log n + O(1)

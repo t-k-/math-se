@@ -1,0 +1,13 @@
+\sum_{k=0}^{(\log n) - 1} \frac{n}{\log (n - k)}  + \theta(1) = \sum_{k=1}^{\log n} \frac{n}{k}+ \theta(1) 
+k
+\operatorname{floor}
+0\le\log(n) - \lfloor\log(n)\rfloor<1
+(1)
+O(n)
+ \sum_{k=0}^{\log(n) - 1} \frac{n}{\log(n) - k} = \sum_{k=1}^{\log(n)} \frac{n}{k} 
+ \begin{align} \sum_{k=1}^{\lfloor\log(n)\rfloor} \frac{n}{k}-\sum_{k=0}^{\lfloor\log(n)\rfloor - 1} \frac{n}{\log(n) - k} &=\sum_{k=1}^{\lfloor\log(n)\rfloor} \frac{n}{k}-\sum_{k=1}^{\lfloor\log(n)\rfloor} \frac{n}{\log(n) - \lfloor\log(n)\rfloor + k}\\ &=\sum_{k=1}^{\lfloor\log(n)\rfloor}\frac{n(\log(n) - \lfloor\log(n)\rfloor)}{k(\log(n) - \lfloor\log(n)\rfloor + k)}\tag{1} \end{align} 
+ \begin{array}{} \sum_{k=1}^{\lfloor\log(n)\rfloor}\frac{1}{k(k+1)}\le\sum_{k=1}^{\lfloor\log(n)\rfloor}\frac{1}{k(\log(n) - \lfloor\log(n)\rfloor + k)}\le\sum_{k=1}^{\lfloor\log(n)\rfloor}\frac{1}{k^2}\tag{2} \end{array} 
+ n(\log(n) - \lfloor\log(n)\rfloor)\left(1-\frac{1}{\lfloor\log(n)\rfloor+1}\right) 
+ n(\log(n) - \lfloor\log(n)\rfloor)\left(\frac{\pi^2}{6}-\frac{1}{\lfloor\log(n)\rfloor+1}\right) 
+ (k = 0) n/log(n-0) = n/log(n) 
+ (k = log(n)) n/k = n/log(n) 

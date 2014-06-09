@@ -1,0 +1,26 @@
+u\in C^2
+u_{tt}=u_{xx}
+u(0,x)=f(x)
+u_t(0,x)=g(x)
+v\in C^2(\Omega)
+\Omega=\{(a,b)\in\mathbb R^2 | a+b>0\}
+v(a,b)=u(a+b,a-b)
+u
+v
+v_{ab}=0
+t=a+b, x=a-b
+v_{ab}=u_{tx}(t,x)=0
+u_{tt}=u_{xx}
+u(t,x)=F(t-x)+G(t+x)
+F
+G
+u(x,t) = F(x+t) + G(x -t)
+\alpha = x+t
+\beta=x-t
+x=(\alpha + \beta)/2
+t=(\alpha-\beta)/2
+ u\left (\frac{\alpha+ \beta}{2},  \frac{\alpha- \beta}{2}\right) = v(\alpha, \beta) 
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial \alpha} \frac{\partial \alpha}{\partial x} +\frac{\partial v}{\partial \beta} \frac{\partial \beta}{\partial x}  =  \frac{\partial v}{\partial \alpha} + \frac{\partial v}{\partial \beta}
+\frac{\partial u}{\partial t} = \frac{\partial v}{\partial \alpha} \frac{\partial \alpha}{\partial t} +\frac{\partial v}{\partial \beta} \frac{\partial \beta}{\partial t} = \frac{\partial v}{\partial \alpha} - \frac{\partial v}{\partial \beta}
+\frac{\partial^2 v}{\partial \alpha^2} + 2 \frac{\partial^2 v}{\partial \alpha \partial \beta} + \frac{\partial^2 v}{\partial \beta^2} = \frac{\partial^2 v}{\partial \alpha^2} - 2 \frac{\partial^2 v}{\partial \alpha \partial \beta} + \frac{\partial^2 v}{\partial \beta^2} 
+  v_{\alpha \beta} = 0

@@ -1,0 +1,19 @@
+c \geq 2
+c
+ 1-\frac{1}{c}Beta\left(c+1,\frac{1}{c}\right) \geq \frac{1}{c+1}.
+c \geq 2
+t \in [0,1]
+t^c \leq t
+Beta\left(c+1,\frac{1}{c}\right)  = \int_0^1 t^c (1-t)^{1/c-1} dt.
+Beta\left(c+1,\frac{1}{c}\right) \leq \int_0^1 t (1-t)^{1/c-1} dt = \left. -c t (1-t)^{1/c}\right|_0^1 + c\int_0^1 (1-t)^{1/c} dt
+= \left. \frac{-c (1-t)^{1/c+1}}{1+1/c}  \right|_0^1 = \frac{c}{1+1/c} = \frac{c^2}{c+1}.
+1-\frac{1}{c}Beta\left(c+1,\frac{1}{c}\right) \geq 1- \frac{c}{c+1} = \frac{1}{c+1}.
+c
+1-\frac{1}{c}Beta\left(c+1,\frac{1}{c}\right) = \frac{\log c + \gamma}{c} + O\left(\frac{(\log c)^2}{c^2}\right).
+1-\frac{1}{c}Beta\left(c+1,\frac{1}{c}\right) = 1 - \frac{c}{c}\left(1 - \frac{\gamma}{c} + O\left(\frac{1}{c^2}\right)\right)\left(1 - \frac{\log c}{c} + O\left(\frac{(\log c)^2}{c^2}\right)\right)
+= \frac{\log c + \gamma}{c} + O\left(\frac{(\log c)^2}{c^2}\right).
+c \geq 2
+c^2/(c+1)
+1
+\begin{align*} \text{Beta}(c+1, 1/c) &= \frac{\Gamma(c+1)\Gamma(1/c)}{\Gamma(c + 1 + 1/c)}\\ &= \frac{c}{c+1/c}\times \frac{c-1}{c-1+1/c}\times \cdots  \times \frac{2}{2+1/c}\times \frac{1}{1+1/c} \times \frac{1}{(1/c)\Gamma(1/c)}\times \Gamma(1/c). \end{align*}
+\text{Beta}(c+1, 1/c) < \frac{c^2}{c+1} \Rightarrow \frac{1}{c}\text{Beta}(c+1, 1/c) < \frac{c}{c+1} = 1 - \frac{1}{c+1}

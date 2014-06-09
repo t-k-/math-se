@@ -1,0 +1,8 @@
+u
+\int \frac{e^{-x^2}}{2x}dx
+u
+\int \frac{e^{-x^2}}{2x}dx=\frac14\int e^{-u}u^{-1}du
+R.H.S=\frac14\int e^{-u}u^{-1}du=\frac14\int_{0}^{u}e^{-u}u^{-1}du+c
+\frac14\int_{0}^{u}e^{-u}u^{-1}du+c=\frac14(\int_{0}^{\infty}e^{-u}u^{-1}du-\int_{u}^{\infty}e^{-u}u^{-1}du)+c=-\frac14 \Gamma(0,u)+d
+\int \frac{e^{-x^2}}{2x}dx=-\frac14 \Gamma(0,x^2)+d
+c,d

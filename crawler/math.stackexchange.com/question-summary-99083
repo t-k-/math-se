@@ -1,0 +1,39 @@
+f
+a
+g
+b
+f(x)=(x-a)g(x)+b
+x
+(x-a)
+f(x)
+f
+g(x)
+b
+f
+f_n(x)=\sum_{u=0}^{n}c_ux^u
+f_n(x)=(x-a)\sum_{q=1}^{n}\sum_{z=q}^{n}a^{z-q}c_zx^{q-1}+\sum_{z=0}^{n}a^zc_z
+b=\sum_{z=0}^{n}a^zc_z
+g(x)
+\sum_{u=0}^{n}c_ux^u=(x-a)g(x)+\sum_{z=0}^{n}a^zc_z \Rightarrow g(x)=\frac{\sum_{u=0}^{n}c_ux^u-a^{u}c_u}{(x-a)}
+g(x)=\frac{\sum_{u=0}^{n}c_u(x^u-a^u)}{(x-a)}
+\frac{x^u-a^u}{(x-a)}=\sum_{k=1}^{u}a^{u-k}x^{k-1}
+\therefore g(x)=\sum_{u=0}^{n}\sum_{k=1}^{u}a^{u-k}c_ux^{k-1}
+\sum_{u=0}^{n}\sum_{k=1}^{u}a^{u-k}c_ux^{k-1}=\sum_{q=1}^{n}\sum_{z=q}^{n}a^{z-q}c_zx^{q-1}\text{?}
+\sum_{k=1}^{n}\sum_{u=k}^{n}a^{u-k}c_ux^{k-1}
+e_{u,k}=a^{u-k}c_ux^{k-1}
+\sum_{u=0}^{n}\sum_{k=1}^{u}e_{u,k}=\sum_{k=1}^{0}e_{0,k}+\sum_{k=1}^{1}e_{1,k}+\sum_{k=1}^{2}e_{2,k}+\dots+\sum_{k=1}^{n-2}e_{(n-2),k}+\sum_{k=1}^{n-1}e_{(n-1),k}+\sum_{k=1}^{n}e_{n,k}
+\sum_{u=0}^{n}\sum_{k=1}^{u}e_{u,k}=\sum_{k=1}^{n}e_{n,k}+\sum_{k=1}^{n-1}e_{(n-1),k}+\sum_{k=1}^{n-2}e_{(n-2),k}+\dots+\sum_{k=1}^{2}e_{2,k}+\sum_{k=1}^{1}e_{1,k}+\sum_{k=1}^{0}e_{0,k}
+\sum_{k=1}^{n-j}e_{(n-j),k}=\sum_{k=(1+j)}^{n}e_{(n-j),(k-j)}
+f(x)
+n
+g(x)
+n-1
+b
+n
+n
+D^m x^n = 0
+m>n
+g
+b
+f
+\begin{eqnarray*} f(x) &=& \sum_{k=0}^n \frac{f^{(k)}(a)}{k!} (x-a)^k \\ &=& \sum_{k=1}^n \frac{f^{(k)}(a)}{k!} (x-a)^k + f(a) \\ &=& (x-a) \sum_{k=1}^n \frac{f^{(k)}(a)}{k!} (x-a)^{k-1} + f(a) \\ &=& (x-a) \underbrace{\sum_{k=0}^{n-1} \frac{f^{(k+1)}(a)}{(k+1)!} (x-a)^{k}}_{g(x)} + \underbrace{f(a)}_b. \end{eqnarray*}

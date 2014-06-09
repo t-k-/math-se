@@ -1,0 +1,29 @@
+N
+\mathbf{a}_i = \begin{pmatrix} a_{i,x} \\ a_{i,y} \\ a_{i,z} \end{pmatrix}
+N
+\mathbf{b}_i = \begin{pmatrix} b_{i,x} \\ b_{i,y} \\ b_{i,z} \end{pmatrix}
+\mathbf{A} = \begin{pmatrix} \mathbf{a}_1 ... \mathbf{a}_M\end{pmatrix}
+\mathbf{B} = \begin{pmatrix} \mathbf{b}_1 ... \mathbf{b}_M\end{pmatrix}
+\mathbf{M}(\phi,\theta,\psi) = \mathbf{M}_{\mathrm{yaw}}(\phi)\mathbf{M}_{\mathrm{pitch}}(\theta)\mathbf{M}_{\mathrm{roll}}(\psi)
+\mathbf{M} \in \mathbb{R}^{3 \times 3}
+\mathbf{A} \approx \mathbf{M}(\phi,\theta,\psi)\mathbf{B}
+\mathbf{F}(\phi,\theta,\psi) = \mathbf{A}-\mathbf{M}(\phi,\theta,\psi)\mathbf{B}
+\mathbf{F} : \mathbb{R}^3 \rightarrow \mathbb{R}^{3 \times N}
+\min_{\phi,\theta,\psi} \|\mathbf{A}-\mathbf{M}(\phi,\theta,\psi)\mathbf{B}\|_2^2
+\mathbf{F}'
+\mathbb{R}^{3 \times N}
+\mathbf{A} \in \mathbb{R}^{3 \times 3} \rightarrow \mathbf{c} \in \mathbb{R}^9
+\mathbf{M}(\phi,\theta,\psi)\mathbf{B} \in \mathbb{R}^{3 \times 3} \rightarrow \mathbf{d}(\phi,\theta,\psi) \in \mathbb{R}^9
+\mathbf{d}(\phi,\theta,\psi)
+\mathbf{d}(\phi,\theta,\psi) = \mathbf{d}(\phi_k,\theta_k,\psi_k) + \underbrace{\mathbf{J}(\mathbf{d}(\phi_k,\theta_k,\psi_k))}_{=\mathbf{G}} \underbrace{\begin{pmatrix} \phi - \phi_k \\ \theta - \theta_k \\ \psi - \psi_k \end{pmatrix}}_{=\Delta\mathbf{\varphi}_k}
+\mathbf{J}(\mathbf{d})
+\mathbf{d}
+\mathbf{G} \in \mathbb{R}^{3N \times 3}
+\Delta\mathbf{\varphi}_k \in \mathbb{R}^3
+\mathbf{c} = \begin{pmatrix} a_{1,x} \\ a_{1,y} \\ a_{1,z} \\a_{2,x} \\ a_{2,y} \\ a_{2,z} \\ ..\end{pmatrix}, \mathbf{d}(\phi,\theta,\psi) =  \begin{pmatrix} M_{1,x}b_{1,x}+M_{2,x}b_{1,y}+M_{3,x}b_{1,z} \\ M_{1,y}b_{1,x}+M_{2,y}b_{1,y}+M_{3,y}b_{1,z} \\ M_{1,z}b_{1,x}+M_{2,z}b_{1,y}+M_{3,z}b_{1,z} \\ M_{1,x}b_{2,x}+M_{2,x}b_{2,y}+M_{3,x}b_{2,z} \\ M_{1,y}b_{2,x}+M_{2,y}b_{2,y}+M_{3,y}b_{2,z} \\ M_{1,z}b_{2,x}+M_{2,z}b_{2,y}+M_{3,z}b_{2,z} \\ .. \end{pmatrix}
+\Rightarrow \min_{\phi,\theta,\psi} \|\mathbf{A}-\mathbf{M}(\phi,\theta,\psi)\mathbf{B}\|_2^2 \Leftrightarrow \min_{\phi,\theta,\psi} \|\mathbf{c}-\mathbf{d}(\phi,\theta,\psi)\|_2^2
+\Delta\mathbf{\varphi}_k
+\|\Delta\mathbf{\varphi}_k\| < \epsilon
+\mathbf{\varphi}_0 = \begin{pmatrix} 0\\0\\0 \end{pmatrix}
+\Delta\mathbf{\varphi}_k = (\mathbf{G}^T\mathbf{G})^{-1}\mathbf{G}^T(\mathbf{c}-\mathbf{d}(\phi_k,\theta_k,\psi_k))
+\mathbf{\varphi}_{k+1} = \mathbf{\varphi}_{k} + \Delta\mathbf{\varphi}_k

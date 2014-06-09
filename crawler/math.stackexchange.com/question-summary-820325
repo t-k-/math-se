@@ -1,0 +1,17 @@
+(X_1,X_2)
+[0,1]^2
+Y_1=\max(X_1,X_2)
+Y_2=\min(X_1,X_2)
+M:=Y_1-Y_2
+g
+\displaystyle E(g(M))=\int_0^1\int_0^1g(y_1-y_2)1_{\{y_1>y_2\}}dy_1dy_2=\int_0^{1}\int_{y_2}^1g(y_1-y_2)dy_1dy_2
+M=|X_1-X_2|
+E(g(M))
+(u,v)=(y-x,x)
+1
+M
+f_M
+ E(g(M))=\iint_{[0,1]^2}g(|x_1-x_2|)\mathrm dx_1\mathrm dx_2=2\iint_{[0,1]^2}g(y-x)\mathbf 1_{x\lt y}\mathrm dy\mathrm dx. 
+ 0\lt x\lt y\lt1\iff0\lt u\lt1,\ 0\lt v\lt1-u, 
+ E(g(M))=2\int_0^1g(u)\int_0^{1-u}\mathrm dv\,\mathrm du=\int_0^1g(u)(2(1-u))\,\mathrm du. 
+ f_M(u)=2(1-u)\mathbf 1_{[0,1]}(u). 

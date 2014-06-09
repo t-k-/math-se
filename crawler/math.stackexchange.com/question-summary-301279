@@ -1,0 +1,16 @@
+ f\colon\mathbb{R}^2\to\mathbb{R}^2, z=\begin{pmatrix}x\\y\end{pmatrix}\mapsto\begin{pmatrix}\sin x\cosh y\\\cos x\sinh y\end{pmatrix}. 
+h=(h_1,h_2)
+ \lim\limits_{t\to 0}\frac{f(z+th)-f(z)}{t}=\lim\limits_{t\to 0}\frac{1}{t}\begin{pmatrix}\sin(x+th_1)\cosh(y+th_2)-\sin(x)\cosh(y)\\\cos(x+th_1)\sinh(y+th_2)-\cos(x)\sinh(y)\end{pmatrix} 
+ Df(x)[h]=\begin{pmatrix}(\sin(x)\cosh(y))'\\(\cos(x)\sinh(y))'\end{pmatrix}? 
+t \mapsto \sin(x+th_1)\cosh(y+th_2)
+t
+x
+h_1, h_2
+Df(x)
+\phi_{x,h}(t) = x+t h
+f \circ \phi_{x,h}
+df(x,h) = (f \circ \phi_{x,h})'(0)
+df(x,h) = Df(x)h
+Df(x) = \begin{bmatrix} \cos x \cosh y & \sin x \sinh y \\ -\sin x \sinh y & \cos x \cosh y \end{bmatrix}
+df(x,h) = \begin{bmatrix} h_1 \cos x \cosh y + h_2 \sin x \sinh y \\ -h_1 \sin x \sinh y + h_2  \cos x \cosh y \end{bmatrix}
+h = \binom{h_1 } {h_2}

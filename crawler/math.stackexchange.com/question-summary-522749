@@ -1,0 +1,18 @@
+y''-2y'+y=\frac{e^x}{x^2+1}
+\tag 1 y''-2y' + y = \dfrac{e^x}{x^2+1}
+(1)
+\tag 2 y''-2y' + y = 0
+y_h = c_1 e^x + c_2 xe^x
+y_1 = e^x
+y_2 = xe^x
+y_h
+f = \dfrac{e^x}{x^2+1}
+(1)
+y_1
+y_2
+W(e^x, xe^x) = e^{2x}
+\displaystyle u_1 = \int \dfrac{-y_2 f}{W(e^x, x e^x)} dx = -\int \dfrac{x}{x^2+1} dx = -\dfrac{1}{2} \ln (x^2+1)
+\displaystyle u_2 = \int \dfrac{y_1 f}{W(e^x, x e^x)} dx = \int \dfrac{1}{x^2+1} dx = \tan^{-1} x
+y_p
+y_p = y_1 u_1 + y_2 u_2 = -e^x\left(\dfrac{1}{2} \ln (x^2+1)\right) + xe^x  \tan^{-1} x 
+y(x) = y_h(x) + y_p(x) = c_1e^x + c_2 xe^x -e^x\left(\dfrac{1}{2} \ln (x^2+1)\right) + xe^x \tan^{-1} x

@@ -1,0 +1,69 @@
+N
+x
+K
+N
+p(X=x)=\frac{1 + T(1 - x/N)}{M}
+M=\sum_{x'=1}^{N}\left(1 + T(1 - x'/N)\right)\;.
+ \begin{eqnarray} \sigma_x &:=& \sum_{x'=1}^{x}\left(1 + T(1 - x'/N)\right) \\ &=& (1+T)x-\frac TN \frac{x(x+1)}{2}\;, \end{eqnarray} 
+M=\sigma_N=(1+T)N-T(N+1)/2=N+T(N-1)/2
+ \begin{eqnarray} p(X\le x) &=& \sum_{x'=1}^xp(X=x') \\ &=& \frac{\sigma_x}{M} \\ &=& \frac{(1+T)x-\frac TN \frac{x(x+1)}{2}}{N+T(N-1)/2} \end{eqnarray} 
+r
+[0,1]
+x
+r\le p(X\le x)
+x
+1
+N
+r\le p(X\le x)
+N
+r
+p(X\le x)
+N
+N
+x
+r=p(X\le x)
+x
+x
+N
+r=p(X\le x)
+x
+X
+x_1, x_2, \ldots, x_n
+p_1, p_2, \ldots, p_n
+\sum_{i=1}^np_i=1
+F
+F_1=p_1, F_2=p_1+p_2, \ldots, F_k=F_{k-1}+p_k, \ldots F_n=1.0
+u\in[0,1)
+U\sim Unif[0,1)
+u
+I_k=[F_{k-1}, F_k)
+F_k-F_{k-1}=p_k
+(U\in[F_k, F_{k-1}))
+p_k
+(X=x_k)
+x_k
+X
+u\in I_k
+x, p, F
+x=[x_0, \ldots, x_{n-1}]
+Z
+[1 .. N]
+P(Z) = a Z + b
+Z = \lceil N \times Y \; \rceil 
+Y
+[0,1]
+X
+Y = X
+p
+Y = \sqrt{X}
+1-p
+P(Z) = \frac{1- p}{N} + \frac{(2 Z -1) \; p}{N^2}
+p
+x_1,x_2,\ldots,x_n
+p_1,p_2,\ldots,p_n
+n_s
+E(N_w) = \sum_{k=1}^n kp_k
+\sum_{k=1}^np_k = 1,\,
+p_1 \ge p_2 \ge \cdots \ge p_n
+p_1 \le p_2 \le \cdots \le p_n
+n=2

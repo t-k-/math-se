@@ -1,0 +1,12 @@
+\sum_{i=0}^{n-r} \frac{2^i (r+i) \binom{n-r}{i}}{(i+1) \binom{2n-r}{i+1}}=1?
+ \begin{align} \frac{2^i(r+i)\binom{n-r}{i}}{(i+1) \binom{2n-r}{i+1}} &=\frac{2^i(r+i)}{n}\frac{\binom{2n-r-i-1}{n-1}}{\binom{2n-r}{n}}\tag{1}\\ &=\frac{2^i}{n}\frac{2n\binom{2n-r-i-1}{n-1}-n\binom{2n-r-i}{n}}{\binom{2n-r}{n}}\tag{2}\\ &=\frac{2^{i+1}\binom{2n-r-i-1}{n-1}-2^i\binom{2n-r-i}{n}}{\binom{2n-r}{n}}\tag{3} \end{align} 
+(1)\quad
+\frac1{i+1}\frac{\color{#C00000}{(n-r)!}}{i!\color{#C00000}{(n-r-i)!}}\frac{(i+1)!\color{#00A000}{(2n-r-i-1)!}}{\color{#00A000}{(2n-r)!}}=\frac1n\frac{n!\color{#C00000}{(n-r)!}}{\color{#00A000}{(2n-r)!}}\frac{\color{#00A000}{(2n-r-i-1)!}}{(n-1)!\color{#C00000}{(n-r-i)!}}
+(2)\quad
+\begin{array}{l}(2n-r-i)\binom{2n-r-i-1}{n-1}=n\binom{2n-r-i}{n}\\ \Rightarrow(r+i)\binom{2n-r-i-1}{n-1}=2n\binom{2n-r-i-1}{n-1}-n\binom{2n-r-i}{n}\end{array}
+(3)\quad
+\frac{2^i}{n}
+(4)
+(3)
+ \begin{align} \sum_{k=0}^{n-m}\binom{n-k}{m}2^k &=\sum_{k=0}^{n-m}\sum_{j=0}^k\binom{n-k}{m}\binom{k}{j}\\ &=\sum_{j=0}^{n-m}\binom{n+1}{m+j+1}\tag{4} \end{align} 
+ \begin{align} {\large\sum_{i=0}^{n-r}}\;\frac{2^i(r+i)\binom{n-r}{i}}{(i+1) \binom{2n-r}{i+1}} &={\large\sum_{i=0}^{n-r}}\;\frac{2^{i+1}\binom{2n-r-i-1}{n-1}-2^i\binom{2n-r-i}{n}}{\binom{2n-r}{n}}\\ &=\frac1{\binom{2n-r}{n}}\sum_{i=0}^{n-r}\left(2\binom{2n-r}{n+i}-\binom{2n-r+1}{n+i+1}\right)\\ &=\frac1{\binom{2n-r}{n}}\sum_{i=0}^{n-r}\left(\binom{2n-r}{n+i}-\binom{2n-r}{n+i+1}\right)\\ &=\frac1{\binom{2n-r}{n}}\binom{2n-r}{n}\\[6pt] &=1\tag{5} \end{align} 

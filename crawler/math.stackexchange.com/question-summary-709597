@@ -1,0 +1,30 @@
+n_2>n_1>r>1
+r\neq gcd(n_i,r)=t>1
+i=1,2
+n_1\nmid n_2
+gcd(n_1,n_2) \bmod r=gcd(n_1\bmod r,n_2\bmod r)\bmod r
+gcd(gcd(n_1\bmod r,n_2\bmod r)\bmod r,r)=t
+r=6
+n_1 = 16
+n_2 = 32
+6 \neq \gcd(16,6) = \gcd(32,6) = 2 > 1
+\gcd(16,32) \pmod{6} = 16 \pmod{6} \equiv 4 \pmod{6}
+\gcd\left(16 \pmod{6}, 32\pmod{6}\right)\pmod{6} = \gcd(4,2) \pmod{6} = 2 \pmod{6}
+n_1 \nmid n_2
+r=6
+n_1 = 70
+n_2 = 80
+6 \neq \gcd(70,6) = \gcd(80,6) = 2 > 1
+\gcd(70,80) \pmod{6} = 10 \pmod{6} \equiv 4 \pmod{6}
+\gcd\left(70 \pmod{6}, 80\pmod{6}\right)\pmod{6} = \gcd(4,2) \pmod{6} = 2 \pmod{6}
+gcd(gcd(n_1\bmod r,n_2\bmod r)\bmod r,r)=t
+r=6
+n_1 = 10
+n_2 = 22
+6 \neq \gcd(10,6) = \gcd(22,6) = 2
+\gcd(10\pmod{6},22\pmod{6})\pmod{6} = \gcd(4,4)\pmod{6} = 4 \neq \gcd(4,6) = 2
+r=3
+n_1=5
+n_2=8
+m = \gcd(n_1,n_2) = \gcd(5,8)=1
+m \bmod r = 1 \bmod 3 = 1 \neq 2 = \gcd(2,2) = \gcd(5 \bmod 3, 8 \bmod 3) = \gcd(n_1 \bmod r, n_2 \bmod r)

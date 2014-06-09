@@ -1,0 +1,55 @@
+\int_{\Omega} |\nabla u|^2 d^n x=\lambda_1\int_{\Omega}u^2 d^n x
+u\in H^1_0(\Omega)
+\Omega\subset\mathbb{R}^n
+\lambda_1
+\Omega
+u
+\lambda_1
+S=\{u\in H_0^1(\Omega):\ J(u)=1\}
+J:H_0^1(\Omega)\to\mathbb{R}
+I:S\to\mathbb{R}
+J(u)=\int_\Omega |u|^2=\|u\|_2^2
+I(u)=\int_\Omega |\nabla u|^2=\|u\|_{1,2}^2
+\lambda_1=\min_{u\in S} I(u)
+u\in H_0^1(\Omega)
+I(u)=\lambda _1
+u
+\lambda_1
+S
+u
+S^\perp_u=\{v\in S:\ \int_\Omega uv=0\}
+\epsilon>0
+F:(-\epsilon,\epsilon)\times S^\perp_u\to\mathbb{R}
+F(t,v)=\int_\Omega\left|\nabla \left(\frac{u+tv}{\|u+tv\|_2}\right)\right|^2
+\frac{u+tv}{\|u+tv\|_2}
+S
+u
+v\in S^{\perp}_u
+t=0
+F(t,v)
+\frac{dF(0,v)}{dt}=\int_\Omega \nabla u\nabla v-\lambda_1\int_\Omega uv=0
+-\Delta
+\lambda_1
+H_0^1(\Omega)
+u\in H_0^1(\Omega)
+\|u\|_{1,2}^2=\lambda_1
+\|u\|_2=1
+u=\sum_{i=1}^\infty (u,\varphi_i)\varphi_i
+\varphi_i
+\lambda_i
+(\cdot,\cdot)
+H_0^1(\Omega)
+\lambda_1=\|u\|_{1,2}^2=(u,u)=\sum_{i=1}^\infty \lambda_i(u,\varphi_i)^2\tag{1}
+\|u\|_2=\sum_{i=1}^\infty (u,\varphi_i)^2
+\lambda_1= \sum_{i=1}^\infty \lambda_1(u,\varphi_i)^2\tag{2}
+(2)
+(3)
+\sum_{i=1}^\infty (\lambda_i-\lambda_1)(u,\varphi_i)^2=0
+\lambda_i=0
+\lambda_i>\lambda_1
+\lambda_1
+u=\sum_{i=1}^m (u,\varphi_i)\varphi_i
+\varphi_i
+i=1,...,m
+\lambda_1
+-\Delta u=-\Delta \left(\sum_{i=1}^m (u,\varphi_i)\varphi_i\right)=-\sum_{i=1}^m (u,\varphi_i)\Delta \varphi_i=\lambda_1 u

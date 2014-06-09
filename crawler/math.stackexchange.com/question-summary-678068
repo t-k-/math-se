@@ -1,0 +1,13 @@
+(X|N=n)\sim\operatorname{Bin(n,p)}
+N\sim\operatorname{Poisson(\lambda)}
+Y=N-X
+E[XY|N=n]
+X\sim\operatorname{Poisson(\lambda p)}
+Y\sim\operatorname{Poisson(\lambda(1-p))}\implies E[XY|N=n] = E[X(N-X)|N=n]
+E[NX|N=n] - E[X^2|N=n]
+X
+Y
+N
+E[NX\mid N = n] = E[nX\mid N = n] = nE[X\mid N = n] = n(np)
+E[XY\mid N = n] = E[X(N-X)\mid N=n] = E[NX\mid N = n] -E[X^2\mid N = n]
+E[X^2 \mid N = n] = \operatorname{var}(X \mid N = n) + (E[X\mid N=n])^2 = np(1-p) + (np)^2

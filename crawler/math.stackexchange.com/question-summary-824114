@@ -1,0 +1,9 @@
+\Theta(n^2) + T(n, 2, n)
+x = 0
+y = 0
+i > n
+S
+ T(x,i,y) = \begin{cases} 1 & \text{if $x = 0$ or $y = 0$ or $i > n$} \\ 1 + \max_{\substack{0 \leq a \leq x\\ 0 \leq b \leq y}} S(x,i,y,a,b) & \text{otherwise,} \end{cases} 
+ S(x,i,y,a,b) = T(x-a,i+1,b) + T(x-a,i+1,y-b) + T(a,i+1,y-b).
+f
+T(n, 2, n)\in O(f)

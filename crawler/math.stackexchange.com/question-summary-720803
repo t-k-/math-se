@@ -1,0 +1,32 @@
+1^n+2^n+\ldots+2006^n
+1.~2006
+2.~2007
+3.~2008
+4.~\text{None}
+n
+2006
+2007
+2008
+ \sum_{k=1}^{2006}k^2=2692751091 
+f(n)=1^n+2^n+\ldots+2006^n
+n=0
+f(n) = 1^n+2^n+\ldots+2006^n=\underbrace{1+1+\ldots+1}_\text{2006 times} = 2006
+2006 \mid f(n)
+2007,2008 \not\mid f(n)
+n > 0
+\begin{align*} 1^n+2^n+\ldots+2006^n &= (1^n+2^n+3^n+4^n)+\ldots+(2001^n+2002^n+2003^n+2004^n)+2005^n+2006^n\\   &\equiv (1+0+1+0)+\ldots+(1+0+1+0)+1+0 \mod 2\\   &\equiv 1 \mod 2 \end{align*}
+2006,2008 \not\mid f(n)
+n > 0
+\begin{align*} 1^n+2^n+\ldots+2006^n &= (1^n+2006^n)+(2^n+2005^n)+\ldots+(1003^n+1004^n)\\   &\equiv (1^n+(-1)^n)+(2^n+(-2)^n)+\ldots+(1003^n+(-1003)^n) \mod 2007\\   &\equiv (1^n-1^n)+(2^n-2^n)+\ldots+(1003^n-1003^n) \mod 2007\\   &\equiv 0 \mod 2007 \end{align*}
+2007 \mid f(n)
+n > 0, n
+f(2) = \dfrac{2006 * (2006+1) * (2*2006 + 1)}{6} \equiv 6 \mod 9
+f(4) = f(2)*(\dfrac{3*2006^2 +3*2006 - 1}{5}) \equiv 6 \mod 9
+f(6) = f(2)*(\dfrac{3*2006^4 +6*2006^3- 3*2006 +1}{7}) \equiv 6 \mod 9
+9 \not\mid f(2),f(4),f(6)
+2007 \not\mid f(2),f(4),f(6)
+a^n \equiv \left.\begin{align*}  & 0 & a \equiv 0,3,6 \mod 9 \end{align*}\right.
+a^6 \equiv \left\{\begin{align*}  & 0 & a \equiv 0,3,6 \mod 9\\   & 1 & a \not\equiv 0,3,6 \mod 9 \end{align*}\right.
+n,m > 0, n,m
+\begin{align*}  n \equiv m \mod 6 & \Rightarrow & a^n \equiv a^m \mod 9\\   & \Rightarrow & f(n) \equiv f(m) \mod 9 \end{align*}
+2007 \not\mid f(n)

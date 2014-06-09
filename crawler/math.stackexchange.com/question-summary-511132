@@ -1,0 +1,21 @@
+n
+|f(z)| \leq \frac{1}{(1-|z|)^n},
+f
+a(n)\sim n
+n
+|f'(z)|\leq \frac{a(n)}{(1-|z|)^{n+1}},
+a(n)\sim 2^n
+n
+\Gamma_\rho
+\rho
+|z|<\rho<1
+f'(z)=\frac{1}{2\pi i}\int_{\Gamma_\rho}\frac{f(\zeta)}{(\zeta-z)^2}\,d\zeta
+\Gamma_\rho
+\zeta=(z/|z|)\rho e^{i\theta}
+r=|z|
+|f(\zeta)|\le 1/(1-\rho)^n
+\Gamma_\rho
+|f'(z)|\le\frac\rho{2\pi}\int_{-\pi}^\pi\frac{d\theta}{(1-\rho)^n|\rho e^{i\theta}-r|^2} < \frac{\rho}{(1-\rho)^n(\rho-r)^2}=\frac\rho{\rho+r}\cdot\frac1{(1-\rho)^n(\rho-r)}.
+\rho=r+(1-r)/n
+1-\rho=(1-r)(1-1/n)
+|f'(z)|<\frac n{(1-r)^{n+1}(1-1/n)^n},

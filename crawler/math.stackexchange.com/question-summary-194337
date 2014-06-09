@@ -1,0 +1,69 @@
+E
+q(e,d)\geq0
+e,d\in E
+q(e,e)=-\sum_{e\neq d}q(e,d)
+0<\lambda:=\sup_{e\in E}|q(e,e)|<\infty
+I
+E
+p(e,d):=\frac{1}{\lambda}q(e,d)+I(e,d)\space\space\mathrm{for\, }e,d\in E.
+p
+q=\lambda(p-I)
+\left(Y=(Y_n)_{n\in\mathbb{N}_0},(\mathrm{P}_e^Y)_{e\in E}\right)
+S_Y=(\Omega_Y,\mathcal{A}_Y)
+p
+\left(T=(T_t)_{t\geq0},(\mathrm{P}_n^T)_{n\in\mathbb{N}_0}\right)
+S_T=(\Omega_T,\mathcal{A}_T)
+\lambda
+Y
+T
+S_Y\otimes S_T
+X_t:=Y_{T_t}
+\mathrm{P}_e:=\mathrm{P}_e^Y\otimes\mathrm{P}_0^T
+\mathfrak{X}:=\left(X=(X_t)_{t\geq0},(\mathrm{P}_e)_{e\in E}\right)
+p_t(e,d):=\mathrm{P}_e[X_t=d]=\sum_{n=0}^\infty\mathrm{P}_0^T[T_t=n]\mathrm{P}_e^Y[Y_n=d]=e^{-\lambda t}\sum_{n=0}^\infty \frac{\lambda^nt^n}{n!}p^n(e,d)
+\mathfrak{X}
+\mathfrak{X}
+\mathbb{N}_0
+\mathcal{B}(\mathbb{N}_0)=\mathbb{P}(\mathbb{N}_0)
+\forall e\in\mathbb{N}_0\forall s,t\in [0,\infty)\forall B\subseteq\mathbb{N}_0,\space \mathrm{P}_e[X_{s+t}\in B|\mathcal{F}_s]=\mathrm{P}_{X_s}[X_t\in B]\space\space\mathrm{P}_e\mathrm{-a.s.}
+\kappa:\mathbb{N}_0\times\mathcal{B}(\mathbb{N}_0)\rightarrow[0,1],\space\space(e,B)\mapsto\mathrm{P}_e[X\in B]
+e\in\mathbb{N}_0
+s,t\in[0,\infty)
+B\subseteq\mathbb{N}_0
+\sigma
+\mathbb{N}_0
+B
+B=\{j\}
+\mathrm{P}_e[X_{s+t}=j|\mathcal{F}_s]=\mathrm{P}_{X_s}[X_t=j]\space\space\mathrm{P}_e\mathrm{-a.s.}
+G\in\mathcal{F}_s
+\mathrm{P}_e[\{X_{s+t}=j\}\cap G]=\intop_G \mathrm{P}_{X_s}[X_t=j]\space\mathrm{dP}_e\space\space(*)
+\pi
+\lambda
+G
+n\in\mathbb{N}_0
+0 \leq u_0 < u_1 < \cdots < u_n \leq s
+k_0, k_1, \dots, k_n\in\mathbb{N}_0
+G=\bigcap_{i=0}^n \{X_{u_i}=k_i\}\space\space(**)
+G
+n=0
+n=0
+u\in[0,s]
+k\in\mathbb{N}_0
+\begin{align}\intop_{X_u=k}\mathrm{P}_{X_s}[X_t=j]\space\mathrm{dP}_e &=\sum_{m=0}^\infty\space\intop_{X_u=k\atop X_s=m} \mathrm{P}_{X_s}[X_t=j]\space\mathrm{dP}_e\\ &=\sum_{m=0}^\infty\space\intop_{X_u=k\atop X_s=m} \mathrm{P}_m[X_t=j]\space\mathrm{dP}_e\\ &=\sum_{m=0}^\infty\space\mathrm{P}_e[X_u=k, X_s=m]\mathrm{P}_m[X_t=j]\end{align}
+m\in\mathbb{N}_0
+m\in\mathbb{N}_0
+\space\mathrm{P}_e[X_u=k, X_s=m]\mathrm{P}_m[X_t=j]=\mathrm{P}_e[X_u=k, X_s=m, X_{s+t}=j]
+\mathrm{P}_e=\mathrm{P}_e^Y\otimes\mathrm{P}_0^T
+Y
+T
+T
+\begin{align}&\mathrm{P}_e(Y_{T_u}=k, Y_{T_s}=m)\mathrm{P}_m(Y_{T_t}=j)\\ &=\sum_{a,b,c=0}^\infty \mathrm{P}_e(Y_a=k, Y_b=m, T_u=a, T_s=b)\mathrm{P}_m(Y_c=j, T_t=c)\\ &=\sum_{a,b,c=0}^\infty \mathrm{P}^Y_e(Y_a=k, Y_b=m)\mathrm{P}_m^Y(Y_c=j)\mathrm{P}_0^T(T_u=a)\mathrm{P}_0^T(T_{s-u}=b-a)\mathrm{P}_0^T(T_t=c) \end{align}
+\begin{align}&\mathrm{P}_e(Y_{T_u}=k, Y_{T_s}=m, Y_{T_{s+t}}=j)\\ &=\sum_{a,b,c=0}^\infty\mathrm{P}_e(Y_a=k, Y_b=m, Y_{b+c}=j, T_u=a, T_s=b, T_{s+t}=b+c)\\ &=\sum_{a,b,c=0}^\infty\mathrm{P}_e^Y(Y_a=k, Y_b=m, Y_{b+c}=j)\mathrm{P}_0^T(T_u=a)\mathrm{P}_0^T(T_{s-u}=b-a)\mathrm{P}_0^T(T_t=c) \end{align}
+a,b,c\in\mathbb{N}_0
+u\leq s
+T_u\leq T_s
+a\leq b
+\mathrm{P}_e^Y(Y_a=k, Y_b=m, Y_{b+c}=j)=\mathrm{P}^Y_e(Y_a=k, Y_b=m)\mathrm{P}_m^Y(Y_c=j)
+\left(Y, (\mathrm{P}_e^Y)_{e\in\mathbb{N}_0}\right)
+\begin{align}\mathrm{P}_e^Y(Y_a=k, Y_b=m, Y_{b+c}=j)&=\mathrm{E}_e^Y\left(\mathrm{P}_e^Y(Y_{b+c}=j|\mathcal{F}_b)\space; Y_a=k, Y_b=m\right)\\ &=\mathrm{E}_e^Y\left(\mathrm{P}_{Y_b}^Y(Y_c=j)\space; Y_a=k, Y_b=m\right)\\ &=\mathrm{E}_e^Y\left(\mathrm{P}_m^Y(Y_c=j)\space; Y_a=k, Y_b=m\right)\\ &=\mathrm{P}_m^Y(Y_c=j)\mathrm{P}_e^Y\left(Y_a=k, Y_b=m\right)\end{align}
+\square

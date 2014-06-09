@@ -1,0 +1,32 @@
+F=v^T\times A \times v
+A
+v
+v
+\frac{\partial F}{\partial v}=0
+v^T \times A + (A \times v)^T + v^T \times \frac{\partial A}{\partial v} \times v =0 
+\dfrac{\partial A}{\partial v}
+A=\begin{bmatrix} A_{11} & A_{12} \\ A_{21} & A_{22} \end{bmatrix}
+A_{11}=a
+A_{12}=ab
+A_{21}=a^2b
+A_{22}=ab^2
+v^T=\begin{Bmatrix} a & b\end{Bmatrix}
+A
+v
+\dfrac{\partial A}{\partial v}
+2 \times 2 \times 2
+\frac{\partial A}{\partial v}=\begin{bmatrix} \begin{bmatrix} A_{11,a} & A_{12,a} \\ A_{21,a} & A_{22,a} \end{bmatrix} \\ \begin{bmatrix} A_{11,b} & A_{12,b} \\ A_{21,b} & A_{22,b} \end{bmatrix}\end{bmatrix}
+F
+F=  \sum_{i,j}A_{ij}v_iv_j.
+F=A_{11}v_1^2+(A_{12}+A_{21})v_1v_2+A_{22}v_2^2.
+ \frac{\partial F}{\partial v}=\begin{bmatrix} \frac{\partial F}{\partial v_1}\\ \vdots \\ \frac{\partial F}{\partial v_n} \end{bmatrix}. 
+\frac{\partial A}{\partial v}
+v^T\frac{\partial A}{\partial v}v
+k
+\sum_{i,j}\frac{\partial A_{ij}}{\partial v_k}v_iv_j
+\begin{align}v^T\frac{\partial A}{\partial v}v&=\left(A_{11,1}v_1^2+(A_{12,1}+A_{21,1})v_1v_2+A_{22,1}v_2^2,A_{11,2}v_1^2+(A_{12,2}+A_{21,2})v_1v_2+A_{22,2}v_2^2\right)\\\end{align}
+\dfrac{∂v}{∂v_i}=e_i
+i^{th}
+\dfrac{∂F}{∂v_i}=e_i^TAv+v^TAe_i+v^T\dfrac{∂A}{∂v_i}v=e_i^T(A+A^T)v+v^T\dfrac{∂A}{∂v_i}v
+\dfrac{∂A}{∂v_i}
+[\dfrac{∂A_{j,k}}{∂v_i}]_{j,k}

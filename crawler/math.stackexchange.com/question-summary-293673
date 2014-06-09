@@ -1,0 +1,14 @@
+(a_n)_{n \geq 0}
+0
+(b_n)
+\frac{a_{n+1}}{\sum_{i=1}^{n}{a_i}} \leq 0
+b_n=\frac{\sum_{i=1}^{n}{a_i}}{n}
+\frac{b_{n+1}}{b_n}=(\frac{n}{n+1})(\frac{\sum_{i=1}^{n+1}{a_i}}{\sum_{i=1}^{n}{a_i}}) \leq (\frac{\sum_{i=1}^{n+1}{a_i}}{\sum_{i=1}^{n}{a_i}})=1+\frac{a_{n+1}}{\sum_{i=1}^{n}{a_i}}
+a_i\ge a_{n+1}
+i=1,\dots, n
+\begin{align} b_n-b_{n+1} &=\frac{(n+1)\sum_{i\le n}a_i -  n\sum_{i\le n+1} a_i}{n(n+1)} =  \\ &= \frac{\sum_{i\le n}a_i - na_{n+1}}{n(n+1)} = \frac{\sum_{i\le n}(a_i -a_{n+1})}{n(n+1)} \ge 0  \end{align}
+a_i
+b_{n}\geq b_{n+1}
+\frac{\sum_{i=1}^{n}{a_i}}{n}\geq \frac{\sum_{i=1}^{n+1}{a_i}}{n+1}
+n\sum_{i=1}^{n}{a_i}+\sum_{i=1}^{n}{a_i}\geq n\sum_{i=1}^{n}{a_i}+na_{n+1}
+\sum_{i=1}^{n}{a_i}\geq na_{n+1}

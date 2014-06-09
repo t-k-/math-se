@@ -1,0 +1,30 @@
+u_{tt}=\Delta u, \quad x\in {\Bbb R}^3, \ \color{red}{t<0}
+ u(x,0)=g(x),\quad u_t(x,0)=0,\quad x\in{\Bbb R}^3. 
+t>0
+v:\Bbb{R}^3\times[0,\infty)\to{\Bbb R}
+u_{tt}(x,-s)=\Delta u(x,-s)
+s>0
+v(x,s):=u(x,-s).
+ v_{s}(x,s)=u_t(x,-s)\cdot(-1),\quad v_{ss}(x,s)=u_{tt}(x,-s)\cdot (-1)(-1)=u_{tt}(x,-s) 
+ \Delta v(x,s)=\Delta u(x,-s). 
+t<0
+v_{tt}=\Delta v, \quad v\in {\Bbb R}^3, \ \color{blue}{t>0}
+ v(x,0)=g(x),\quad v_t(x,0)=0,\quad x\in{\Bbb R}^3. 
+ v(x,t)=\frac{\partial}{\partial t}\left(\frac{1}{4\pi t}\int_{B(x;|t|)}g(y)dS(y) \right), 
+ u(x,t)=v(x,-t)=\frac{\partial}{\partial t}\left(\frac{1}{4\pi (-t)}\int_{B(x;|t|)}g(y)dS(y) \right). 
+g(x)\equiv 1
+ u(x,t)=\frac{\partial}{\partial t}\left(\frac{1}{4\pi (-t)}(4\pi t^2) \right)=-1. 
+ \lim_{t\to 0-}u(x,t)=-1\not= u(x,0). 
+u(x,t) = v(x,-t) = \ldots 
+f(x) = 1
+x
+f(x) = \frac{d}{dx} (x).
+ f(-x) \neq \frac{d}{dx}(-x)
+t>0
+u(x,t)
+t<0
+q=h(t)=-t
+ u(x,-t)=v(x,t)=\frac{\partial}{\partial t}\left(\frac{1}{4\pi t}\int_{B(x;|t|)}g(y)dS(y) \right) 
+ \begin{align} u(x,q)&=u(x,-t)=\frac{\partial}{\partial q}\left(\frac{1}{4\pi (-q)}\int_{B(x;|q|)}g(y)dS(y) \right)\cdot\frac{dq}{dt}\notag\\ &=  \frac{\partial}{\partial q}\left(\frac{1}{4\pi (-q)}\int_{B(x;|q|)}g(y)dS(y) \right)\cdot(-1)\notag\\ &=\frac{\partial}{\partial q}\left(\frac{1}{4\pi q}\int_{B(x;|q|)}g(y)dS(y) \right),\qquad q<0. \end{align} 
+q
+t

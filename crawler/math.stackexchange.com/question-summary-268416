@@ -1,0 +1,38 @@
+\hat{\beta}
+\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 X_1 + \cdots + \hat{\beta}_n X_n 
+\hat{\beta}_i
+ \hat{\beta}_i = \frac{ Cov(X_i, Y) }{Var(X_i) },
+ Y = \beta_0 + \beta_1 X_1 + \cdots + \beta_n X_n + \epsilon_i 
+\hat{\beta_0}
+n
+m
+ X=\begin{bmatrix} 1 & x_{11} & \cdots & x_{1n} \\ 1 & x_{21} & \cdots & x_{2n} \\ \vdots & \vdots & & \vdots \\ 1 & x_{m1} & \cdots & x_{mn} \end{bmatrix} 
+ \begin{bmatrix} Y_1 \\  \vdots \\ Y_m \end{bmatrix} = \begin{bmatrix} 1 & x_{11} & \cdots & x_{1n} \\ 1 & x_{21} & \cdots & x_{2n} \\ \vdots & \vdots & & \vdots \\ 1 & x_{m1} & \cdots & x_{mn} \end{bmatrix} \begin{bmatrix} \beta_0 \\  \beta_1 \\ \vdots \\  \beta_n \end{bmatrix} + \begin{bmatrix} \varepsilon_1 \\ \vdots \\ \varepsilon_m \end{bmatrix}. 
+ Y=X\beta+\varepsilon. 
+ \hat\beta =  (X^T X)^{-1} X^T Y. 
+\hat\beta_k
+k
+1
+0
+ X=[X_1\quad X_2] 
+ \beta=\begin{pmatrix} \beta_1\\\beta_2 \end{pmatrix}. 
+ y=X_1\beta_1+X_2\beta_2+e. 
+\beta
+X_2=x_2
+M_1,M_2
+x_2^*
+y^*
+x_2
+y
+X_1
+ y=X\hat\beta=X_1\hat\beta_1+X_2\hat\beta_2+\hat e. 
+ M_1=I-X_1(X_1'X_1)^{-1}X_1'\\ M_2=I-X_2(X_2'X_2)^{-1}X_2' 
+ \hat\beta_1=(X_1'M_2X_1)^{-1}(X_1'M_2y)\\ \hat\beta_2=(X_2'M_1X_2)^{-1}(X_2'M_1y). 
+ \hat\beta_2=((M_1x_2)'M_1x_2)^{-1}((M_1x_2)'M_1y)=(x_2^{*\prime}x_2^*)^{-1}x_2^{*\prime}y^*, 
+\hat\beta_2
+y
+x_2
+x_2
+X_1
+(1,...,1)'
+\hat\beta_0

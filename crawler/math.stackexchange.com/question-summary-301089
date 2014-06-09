@@ -1,0 +1,12 @@
+s_{n,k}
+n!
+\sum_{k=0}^{n} s_{n,k} = n!\tag{1}
+n=1
+\begin{bmatrix} n\\ n\end{bmatrix} = 1
+\begin{bmatrix} n\\ 0\end{bmatrix} = 0
+(1)
+\sum_{k=0}^{n+1} s_{n+1,k} = (n+1)!
+\begin{align*} \sum_{k=0}^{n+1} s_{n+1,k} &= \sum_{k=0}^{n+1} s_{n,k-1} + ns_{n,k}\\\\ &= \sum_{k=0}^{n+1} s_{n,k-1} + \sum_{k=0}^{n+1} ns_{n,k}\\\\ &= n! + n\sum_{k=0}^{n+1} s_{n,k}\\\\ &= n! + n(n!)\\\\ &= (n+1)!\quad\square\quad\text{(since }s_{n,n+1}=0\text{)} \end{align*}
+s_{n,k}
+n
+k

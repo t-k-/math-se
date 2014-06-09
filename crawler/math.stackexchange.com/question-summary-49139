@@ -1,0 +1,49 @@
+f:\mathbb{R} \rightarrow \mathbb{R}
+x_0
+f'(x_0) = 0
+f''(x_0) \leq 0
+f:\mathbb{R}^n \rightarrow \mathbb{R}
+x_0\in \mathbb{R}^n
+Df(x_0) = 0
+D^2f(x_0) \leq 0
+-D^2f(x_0)
+0 \in U
+U
+0
+f
+0
+g(t) = f(tx)
+t \in (-\epsilon, 1+\epsilon)
+\epsilon >0
+U
+0 \in U
+\epsilon_{1}>0
+B(0,\epsilon_{1}) \subset U
+0 +tx \in B(0,\epsilon_{1})
+||tx|| = |t|\cdot ||x|| < \epsilon_{1}
+|t| < \frac{\epsilon_{1}}{||x||}
+x+tx= (1+t)x \in B(x,\epsilon_{2}) \subset U
+|t| <\frac{\epsilon_{2}}{||x||}
+\epsilon = \min \{\epsilon_{1}/||x||, \epsilon_{2}/||x||\}
+tx \in U
+t \in (-\epsilon,1+\epsilon)
+g
+g'(0)= \sum\limits_{i=1}^{n} \frac{\partial{f}}{\partial{x_i}} (0)x_{i}
+g''(t) = \sum\limits_{i,j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_j}\partial{x_i}} (tx)x_{j}x_{i}
+g
+R
+\lim_{t \to 0} R/t^2=0
+t=1
+f
+g(t)=g(0)+g'(0)t + g''(0)t^{2} + R
+ f(x)=f(0) + \sum\limits_{i=1}^{n}\frac{\partial{f}}{\partial{x_i}}(0)x_{i} + \sum\limits_{i,j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_j}\partial{x_i}} (0)x_{j}x_{i} +R \qquad (\text{I})
+f
+x=0
+t=0
+g
+g''(0) \leq 0
+f
+x
+0
+ \sum\limits_{i,j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_j}\partial{x_i}} (0)x_{j}x_{i} \leq 0
+ D^{2}f(0) = \left(\begin{array}{cccccc} \frac{\partial^{2}{f}}{\partial{x_{1}^{2}}}(0) & \frac{\partial^{2}{f}}{\partial{x_1}\partial{x_2}}(0) & \cdot & \cdot & \cdot & \frac{\partial^{2}{f}}{\partial{x_1}\partial{x_n}}(0) \\\ &  \cdot \\\ & \cdot \\\ & \cdot \\\ \frac{\partial^{2}f}{\partial{x_n}\partial{x_1}}(0) & \frac{\partial^{2}{f}}{\partial{x_n}\partial{x_2}}(0) & \cdot & \cdot & \cdot & \frac{\partial^{2}{f}}{\partial{x_{n}^{2}}}(0) \end{array}\right)

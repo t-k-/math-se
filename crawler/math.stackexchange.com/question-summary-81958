@@ -1,0 +1,19 @@
+W
+B
+N
+K
+i
+i
+N
+N
+i = 0,1,\ldots,N
+B_i ={\rm\ number\ of\ black\ balls\ on\ iteration\ } i
+i
+ X_i =\cases{1,& if a  black  ball was drawn on iteration $i$ \cr  0,& otherwise}
+P[X_i = 1] = {B\over W+B}
+ P[X_{i+1} = 1]  = \sum_{ {\rm admiss.\ } b}  P[B_i = b] \cdot{ b\over i*K+W+B }  ={ E(B_i) \over i*K+W+B}.
+B_i = B +\sum\limits_{j=0}^{i-1}  {K*X_j}
+E(X_j) = P[X_j = 1] ={ B\over W+B}
+ E(B_i) = E(B)+\sum\limits_{j=0}^{i-1}  {K*E(X_j)=}B + i K{B\over W+B}.
+ P[X_{i+1} = 1]
+\eqalign{ P[X_{i+1} = 1] &={ E(B_i) \over i*K+W+B}\cr & = [ B + i*K*B/(W+B) ] / i*K+W+B \cr &={ B\over B+W}. } 

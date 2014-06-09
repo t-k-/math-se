@@ -1,0 +1,30 @@
+\int_0^\infty \prod_{k=0}^\infty\frac{1+\frac{x^2}{(b+1+k)^2}}{1+\frac{x^2}{(a+k)^2}} \ dx=\frac{\sqrt{\pi}}{2}\frac{\Gamma \left(a+\frac{1}{2}\right)\Gamma(b+1)\Gamma \left(b-a+\frac{1}{2}\right)}{\Gamma(a)\Gamma \left(b+\frac{1}{2}\right)\Gamma(b-a+1)}
+a
+b
+\Gamma
+\prod_{k=0}^{b-a-1}\frac{1}{2a+2k+1} =  \frac{1}{2^{b-a}} \frac{\Gamma(a + 1/2)}{\Gamma(b+1/2)}.
+\prod_{k=0}^{b-a} (a+k) = \frac{\Gamma(b+1)}{\Gamma(a)}.
+ \frac{1}{2^{b-a}} {2(b-a) - 1 \choose b-a} = \frac{1}{2^{b-a}} \frac{\Gamma(2b-2a)}{\Gamma(b-a+1)\Gamma(b-a)}.
+I(a, b) = \frac{\pi}{4^{b-a}} \frac{\Gamma(a + 1/2)}{\Gamma(b+1/2)}  \frac{\Gamma(b+1)}{\Gamma(a)} \frac{\Gamma(2b-2a)}{\Gamma(b-a+1)\Gamma(b-a)}
+ \Gamma(2b-2a) = \frac{2^{2(b-a)-1}}{\sqrt\pi} \Gamma(b-a) \Gamma(b-a+1/2)
+I(a, b) = \frac{\pi}{4^{b-a}} \frac{\Gamma(a + 1/2)}{\Gamma(b+1/2)}  \frac{\Gamma(b+1)}{\Gamma(a)} \frac{\Gamma(b-a+1/2)}{\Gamma(b-a+1)} \frac{2^{2(b-a)-1}}{\sqrt\pi} \\  =  \frac{\sqrt\pi}{2} \frac{\Gamma(a + 1/2)}{\Gamma(b+1/2)}  \frac{\Gamma(b+1)}{\Gamma(a)} \frac{\Gamma(b-a+1/2)}{\Gamma(b-a+1)}.
+a
+b
+b>a.
+a,b
+b>a>1.
+g_1(x) = \prod_{k=a}^b \frac{1}{k+ix}  \quad \text{and} \quad g_2(x) = \prod_{k=a}^b \frac{1}{k-ix}.
+g_1(x)
+g_2(x)
+I(a,b)
+ g_1(x) = \frac{1}{(b-a)!}  \sum_{k=a}^b (-1)^{k+1-a} {b-a \choose k-a} \frac{i}{x-ki}
+ g_2(x) = \frac{1}{(b-a)!}  \sum_{k=a}^b (-1)^{k-a} {b-a \choose k-a} \frac{i}{x+ki}.
+ R(a,b) = \sum_{m=a}^b \frac{i}{(b-a)!} (-1)^{m+1-a}  {b-a \choose m-a} \left(\frac{1}{(b-a)!}  \sum_{k=a}^b (-1)^{k-a} {b-a \choose k-a} \frac{1}{m+k} \right)
+ \frac{i}{((b-a)!)^2} \sum_{m=a}^b \sum_{k=a}^b  (-1)^{m+1+k-2a} {b-a \choose m-a} {b-a \choose k-a} \frac{1}{m+k}.
+ \sum_{m=a}^b \sum_{k=a}^b   (-1)^{m+1+k-2a} {b-a \choose m-a} {b-a \choose k-a} x^{m+k-1} \\ = - x^{2a-1} \sum_{m=a}^b {b-a \choose m-a} (-1)^{m-a} x^{m-a}  \sum_{k=a}^b {b-a \choose k-a} (-1)^{k-a} x^{k-a} \\ = - x^{2a-1} (1-x)^{2(b-a)}.
+ R(a,b) = - i \frac{1}{((b-a)!)^2} \operatorname{B}(2a, 2(b-a)+1).
+I(a,b) = \frac{1}{2} \frac{\Gamma(b+1)^2}{\Gamma(a)^2} \times 2\pi i \times \left(- i \frac{1}{((b-a)!)^2} \operatorname{B}(2a, 2(b-a)+1) \right) \\= \pi \frac{\Gamma(b+1)^2}{\Gamma(a)^2} \frac{1}{((b-a)!)^2} \operatorname{B}(2a, 2(b-a)+1).
+ I(a,b) = \pi \frac{\Gamma(b+1)^2}{\Gamma(a)^2} \frac{1}{\Gamma(b-a+1)^2} \frac{\Gamma(2a)\Gamma(2(b-a)+1)}{\Gamma(2b+1)}.
+ \pi \frac{\Gamma(b+1)^2}{\Gamma(a)^2 \Gamma(b-a+1)^2} \frac{\frac{2^{2a-1}}{\sqrt{\pi}} \Gamma(a) \Gamma(a+1/2) \frac{2^{2b-2a}}{\sqrt{\pi}} \Gamma(b-a+1/2) \Gamma(b-a+1)} {\frac{2^{2b}}{\sqrt{\pi}} \Gamma(b+1/2) \Gamma(b+1)},
+  \sqrt{\pi} 2^{2a-1+2b-2a-2b}  \frac{\Gamma(b+1)}{\Gamma(a) \Gamma(b-a+1)}\Gamma(a+1/2) \frac{ \Gamma(b-a+1/2)}{ \Gamma(b+1/2)},
+ \frac{\sqrt{\pi}}{2} \frac{\Gamma(b+1)\Gamma(a+1/2)\Gamma(b-a+1/2)} {\Gamma(a) \Gamma(b-a+1) \Gamma(b+1/2)},

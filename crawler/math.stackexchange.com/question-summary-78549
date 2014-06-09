@@ -1,0 +1,32 @@
+x,u,v
+u,v
+E(x|u,v)=E(x|u)+E(x|v)-E(x)
+x=au+bv+w
+a
+b
+(u,v,w)
+y=E(x|u,v)
+y=au+bv+E(w)
+(u,v)
+ E(x|u)+E(x|v)=E(x|u,v)+E(x). 
+u
+\mu_u
+u
+\dfrac{x-\mu_u}{\sigma_u}
+\sigma_u
+u
+x
+x
+x
+u
+x
+u
+\rho_{x,u}\left(\dfrac{x-\mu_u}{\sigma_u}\right)
+\mu_x
+\sigma_x
+x
+v
+ E(x\mid u) = \mu_x + \sigma_x \rho_{x,u}\left(\dfrac{x-\mu_u}{\sigma_u}\right) 
+ \begin{align} & {} \quad E(X\mid u) + E(x\mid c) - E(x) \\  \\ & = \mu_x + \sigma_x \rho_{x,u}\left(\frac{x-\mu_u}{\sigma_u}\right) + \mu_x + \sigma_x \rho_{x,v}\left(\frac{x-\mu_v}{\sigma_v}\right) - \mu_x \\  \\ & = \mu_x + \sigma_x \rho_{x,u}\left(\frac{x-\mu_u}{\sigma_u}\right) + \sigma_x \rho_{x,v}\left(\frac{x-\mu_v}{\sigma_v}\right) \\  \\  \\ & = \mu_x + \frac{\rho_{x,u}\sigma_x\sigma_u}{\sigma_u^2}\left(x-\mu_u\right) + \frac{\rho_{x,v}\sigma_x\sigma_v}{\sigma_u^2}\left(x-\mu_v\right) \\  \\  \\ & = \mu_x + \frac{\operatorname{cov}(x,u)}{\sigma_u^2}\left(x-\mu_u\right) + \frac{\operatorname{cov}(x,v)}{\sigma_u^2}\left(x-\mu_v\right) \end{align} 
+u
+v

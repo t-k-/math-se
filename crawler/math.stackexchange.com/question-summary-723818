@@ -1,0 +1,11 @@
+\prod\limits_{k=0}^n{(1+2^k)^2}
+n
+ \prod_{k=0}^{n} (2^{k} + 1) = \prod_{k=0}^{n} 2^{k}(1 + 2^{-k}) = \left( \prod_{k=0}^{n} 2^{k} \right)\left( \prod_{k=0}^{n} (1 + 2^{-k}) \right). 
+ \log \prod_{k=0}^{n} 2^{k} = \sum_{k=0}^{n} k \log 2 = \frac{n(n+1)}{2}\log 2 \quad \Longrightarrow \quad \prod_{k=0}^{n} 2^{k} = 2^{n(n+1)/2}. 
+ \log \prod_{k=0}^{n} (1 + 2^{-k}) = \sum_{k=0}^{n} \log(1 + 2^{-k}), 
+n \to \infty
+\sum_{k=0}^{n} 2^{-k}
+C = \prod_{k=}^{\infty} (1 + 2^{-k}),
+ \prod_{k=0}^{n} (2^{k} + 1) \sim C 2^{n(n+1)/2}. 
+\log C
+ \log C = \log 2 + \sum_{j=1}^{\infty} \frac{(-1)^{j-1}}{j(2^{j} - 1)} \approx 4.7684620580627434483 \cdots. 

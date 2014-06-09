@@ -1,0 +1,24 @@
+a_l \le a_m \le a_r
+b_l \le b_r
+I=\int_{b_l}^{b_r}\mu(x)dx
+\mu(x)=\begin{cases} \frac{x-a_l}{a_m-al} & a_l \le x \le a_m\\[1em] \frac{a_r-x}{a_r-a_m} & am \le x \le a_r\\[1em] 0 & \text{otherwise} \end{cases}
+b_l
+b_r
+a_m \le b_l \le b_r \le a_r
+I=\int_{b_l}^{b_r}\frac{a_r-x}{a_r-a_m}dx
+a_l \le b_l \le b_r \le a_m
+I=\int_{b_l}^{b_r}\frac{x-a_l}{a_m-a_l}dx
+a_l \le b_l \le a_m \le b_r \le a_r
+I=\int_{b_l}^{a_m}\frac{x-a_l}{a_m-a_l}dx + \int_{a_m}^{b_r}\frac{a_r-x}{a_r-a_m}dx
+b_l
+b_r
+x^+=\max(0,x)
+\mu
+a_l,a_m,a_r
+\mu
+ \begin{split} \mu(x) &= \frac{1}{a_m-a_l}(x-a_l)^+  - \left(\frac{1}{a_m-a_l}+\frac{1}{a_r-a_m}\right)(x-a_m)^+  \\&+ \frac{1}{a_r-a_m} (x-a_r)^+ \end{split}\tag{1}
+\mu
+\int x^+\,dx = \frac12(x^+)^2+C
+b_r
+b_l
+\begin{split} \int\mu(x)\,dx &= \frac{1 }{2(a_m-a_l)}((x-a_l)^+)^2  \\&- \frac12\left(\frac{1}{a_m-a_l}+\frac{1}{a_r-a_m}\right)((x-a_m)^+)^2  \\&+ \frac{1}{2(a_r-a_m)} ((x-a_r)^+)^2 +C \end{split}\tag{2}

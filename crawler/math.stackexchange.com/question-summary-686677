@@ -1,0 +1,21 @@
+(s_n)
+\mid s_{n+1} - s_{n} \mid < 2^{-n}
+n \in \mathbb{N}
+(s_n)
+\mid s_{n+1} - s_{n} \mid < \frac{1}{n}
+n \in \mathbb{N}
+\epsilon > 0
+N = \log_2{2/\epsilon}
+m, n > N
+m > n
+\delta = m-n
+\mid s_{n+1} - s_{n} \mid < \frac{1}{2^n}
+\mid s_{n+2} - s_{n+1} \mid < \frac{1}{2^{n+1}}
+\mid s_{n+\delta} - s_{n+\delta-1} \mid < \displaystyle{\frac{1}{2^{n+\delta-1}}}
+\mid s_{n+\delta} - s_n \mid = \mid s_{m} - s_{n} \mid < \displaystyle{\frac{1}{2^{n}} + \frac{1}{2^{n+1}} ... \frac{1}{2^{n+\delta-1}}}
+\displaystyle{\frac{1}{2^{n}} + \frac{1}{2^{n+1}} ... \frac{1}{2^{n+\delta-1}}} = \frac{1}{2^{n-1}} - \frac{1}{2^{n+\delta-1}} < \frac{1}{2^{n-1}} - \frac{1}{2^n} < \frac{1}{2^n-1} < \frac{1}{2^{N-1}} = \epsilon
+\mid s_m - s_n \mid < \epsilon
+\sigma \frac{1}{n}
+s_n \to \infty
+s_n = \sum_{k=1}^{n} \frac{1}{n}.
+|s_{n+1} - s_{n}| = \frac{1}{n+1} < \frac{1}{n},

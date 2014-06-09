@@ -1,0 +1,21 @@
+\sum_{n=2}^\infty(\cos((n^{3}+\sqrt{n}+7)^{\frac{1}{3}})-\cos((n^{3}-2\sqrt{n}+3)^{\frac{1}{3}}))
+\sum_{n=2}^\infty(\cos((n^{3}+\sqrt{n}+7)^{\frac{1}{3}})-\cos((n^{3}-2\sqrt{n}+3)^{\frac{1}{3}}))=
+=\sum_{n=2}^\infty-2\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)\cdot\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}+\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)
+\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}+\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)\in\langle-1,1\rangle
+=\sum_{n=2}^\infty|-2\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)\cdot\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}+\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)|\leq2\sum_{n=1}^\infty\left|\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)\right|
+\frac{1}{2}\sum_{n=2}^\infty\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}=\frac{1}{2}\sum_{n=2}^\infty\frac{4+3\sqrt{n}}{\sqrt[3]{(n^{3}+\sqrt{n}+7)^{2}}+\sqrt[3]{n^{3}+\sqrt{n}+7} \sqrt[3]{n^{3}-2\sqrt{n}+3}+\sqrt[3]{(n^{3}-2\sqrt{n}+3)^{2}}}
+\frac{1}{2}\sum_{n=2}^\infty\frac{4+3\sqrt{n}}{\sqrt[3]{(n^{3}+\sqrt{n}+7)^{2}}+\sqrt[3]{n^{3}+\sqrt{n}+7}\cdot\sqrt[3]{n^{3}-2\sqrt{n}+3}+\sqrt[3]{(n^{3}-2\sqrt{n}+3)^{2}}}<\frac{4\sqrt{n}}{n^{2}}=\frac{4}{n^{1.5}}
+\frac{\sin\left(\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}\right)}{\frac{\sqrt[3]{n^{3}+\sqrt{n}+7}-\sqrt[3]{n^{3}-2\sqrt{n}+3}}{2}}\rightarrow1
+\mathbb{R}
+n
+1
+a\gt b\gt0
+a_n=n^3+\sqrt{n}+7
+b_n=n^3-2\sqrt{n}+3
+a_n-b_n\sim3\sqrt{n}
+b_n\sim n^3
+\sum\limits_n\frac1{n\sqrt{n}}
+\sum\limits_n\left[\cos(a_n^{1/3})-\cos(b_n^{1/3})\right]
+ a^{1/3}-b^{1/3}=\int_b^a\frac{\mathrm dx}{3x^{2/3}}\leqslant\frac{a-b}{3b^{2/3}}. 
+ |\cos(a_n^{1/3})-\cos(b_n^{1/3})|\leqslant a_n^{1/3}-b_n^{1/3}\leqslant\frac{a_n-b_n}{3b_n^{2/3}}. 
+ \frac{3\sqrt{n}}{3(n^3)^{2/3}}=\frac1{n\sqrt{n}}. 

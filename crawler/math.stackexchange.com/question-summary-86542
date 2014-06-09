@@ -1,0 +1,64 @@
+0 \leq k \leq n
+\binom{n}{k}^{-1}=(n+1)\int_{0}^{1}x^{k}(1-x)^{n-k}dx  . 
+k
+k=0
+k\leq n-1
+k=n
+(n+1)\int_{0}^{1}x^{k+1}(1-x)^{n-k-1}dx
+(n+1)\int_{0}^{1}(1-x)^{n}dx=-(1-x)^{n+1}\Big|_0^1=1=\binom{n}{0}^{-1}.
+\binom{n}{k}^{-1}=(n+1)\int_{0}^{1}x^{k}(1-x)^{n-k}dx.
+(n+1)\int_{0}^{1}x^{k+1}(1-x)^{n-k-1}dx=-\frac{(n+1)}{n-k}\int_{0}^{1}x^{k+1}d((1-x)^{n-k})
+=-\frac{(n+1)}{n-k}\Big[x^{k+1}(1-x)^{n-k}\Big|_0^1-\int_{0}^{1}(1-x)^{n-k}d(x^{k+1})\Big]=\frac{(n+1)(k+1)}{n-k}\int_{0}^{1}x^{k}(1-x)^{n-k}dx.
+(n+1)\int_{0}^{1}x^{k+1}(1-x)^{n-k-1}dx=\frac{k+1}{n-k}\binom{n}{k}^{-1}=\binom{n}{k+1}^{-1},
+n+1
+X_0,X_1,\ldots,X_n
+[0,1]
+i=1,\ldots,n
+1
+0
+Y_i = \begin{cases} 1 & \text{if }X_i<X_0 \\ 0 & \text{if }X_i>X_0\end{cases}
+Y_1,\ldots,Y_n
+X_0
+\Pr(Y_i=1\mid X_0)= X_0
+\Pr(Y_1+\cdots+Y_n=k\mid X_0) = \dbinom{n}{k} X_0^k (1-X_0)^{n-k},
+\Pr(Y_1+\cdots+Y_n=k) = \mathbb{E}\left(\dbinom{n}{k} X_0^k (1-X_0)^{n-k}\right).
+ \int_0^1 \binom nk x^k(1-x)^{n-k}\;dx. 
+i
+X_i
+(k+1)
+X_0,X_1,\ldots,X_n
+0
+n+1
+1/(n+1)
+\int_0^1\binom nk x^k(1-x)^{n-k}\;dx = \frac{1}{n+1}.
+\sum_{k=0}^n t^k \int_0^1 {n \choose k} x^k (1 - x)^{n-k}  \, dx = \int_0^1 (1 + (t-1)x)^n \, dx = \frac{t^{n+1} - 1}{(t-1)(n+1)} = \frac{1 + t + \cdots + t^n}{n+1}.
+I_k(x) = \int_0^x u^k e^u \, du
+\sum I_k(x) \frac{t^k}{k!} = \int_0^x e^{ut} e^u \, du = \frac{e^{(t+1)x} - 1}{t+1}.
+R(n,0) = 1/(n+1)
+\frac{1}{\binom{n}{k}(n+1)}
+\int_0^1 x^k (1-x)^{n-k} dx
+R(n,k) = \frac{k}{n+1} R(n-1,k-1),
+\binom{n-1}{k-1} \frac{n}{k} = \binom{n}{k}
+u = \left(\frac{x}{1-x}\right)^k
+dv = (1-x)^n dx
+X
+1
+\Gamma(n)
+1
+\Gamma(n) = (n-1)!
+n
+Y
+m
+n
+\Pr(X+Y<w)
+\Gamma(n+m)
+w\to\infty
+1
+w\to\infty
+1
+ x \mapsto \frac{x^{n-1}e^{-x}}{\Gamma(n)}\text{ for }x>0, 
+ (x,y)\mapsto \frac{x^{n-1}e^{-x}}{\Gamma(n)}\cdot\frac{y^{m-1}e^{-y}}{\Gamma(m)}\text{ for }x,y>0. 
+ \iint\limits_{\{(x,y)\in\mathbb (R^+)^2\,:\,x+y<w\}} \frac{x^{n-1}e^{-x}}{\Gamma(n)}\cdot\frac{y^{m-1}e^{-y}}{\Gamma(m)} \, dy\,dx. 
+ \begin{align} u & = x+y, \\ v & = x/(x+y), \\ \text{so that } x & = uv, \\ y & = u(1-v), \\ dx\,dy & = u\,du\,dv. \end{align} 
+ \begin{align} & \phantom{={}} \frac{1}{\Gamma(n)\Gamma(m)}\int_0^1 \int_0^w (uv)^{n-1}(u(1-v))^{m-1} e^{-u} u\,du\,dv \\ & = \frac{1}{\Gamma(n)\Gamma(m)}\int_0^1v^{n-1}(1-v)^{m-1}\,dv \cdot \int_0^w u^{n+m-1} e^{-u}\,du. \end{align} 
+ \int_0^1 v^{n-1}(1-v)^{m-1}\,dv = \frac{\Gamma(n)\Gamma(m)}{\Gamma(n+m)}. 

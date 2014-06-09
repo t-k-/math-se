@@ -1,0 +1,20 @@
+\frac2{\pi}\int_0^{2\pi} f(e^{i\theta})\cos^2\left(\frac{\theta}{2}\right)\;\mathrm d\theta=2f(0)+f^\prime(0)
+f
+|z| < R,\; R > 1
+2f(0)+f'(0)=2(\frac1{2\pi}\int_0^{2\pi} f(e^{i\theta})d\theta + \frac1{2\pi i}\int_0^{2\pi}\frac{f(e^{i\theta})ie^{i\theta}}{e^{i2\theta}}=\frac{1}{\pi}\int_0^{2\pi} f(e^{i\theta})d\theta\frac1{2\pi}\int_0^{2\pi}\frac{f(e^{i\theta})}{e^{i\theta}}\quad\text{(1)}
+\frac2{\pi}\int_0^{2\pi} f(e^{i\theta})\cos^2(\frac{\theta}{2}) d\theta
+\frac1{\pi}\int_0^{2\pi} f(e^{i\theta})d\theta+\frac1{2\pi}\int_0^{2\pi}f(e^{i\theta})[{e^{i\theta}}+e^{i-\theta}]d\theta \quad\text{(2)}
+\frac2{\pi}\int_0^{2\pi} f(e^{i\theta})\cos^2\left(\frac{\theta}{2}\right)\;\mathrm d\theta=\frac2{\pi}\int_0^{2\pi} f(e^{i\theta})\left(\frac{1+\cos\,\theta}{2}\right)\;\mathrm d\theta
+=\frac1{\pi}\int_0^{2\pi} f(e^{i\theta})(1+\cos\,\theta)\;\mathrm d\theta
+=\frac1{\pi}\left(\int_0^{2\pi} f(e^{i\theta})\;\mathrm d\theta+\int_0^{2\pi} f(e^{i\theta})\cos\,\theta\;\mathrm d\theta\right)
+f(0)=\frac1{2\pi i}\oint_\gamma \frac{f(u)}{u}\mathrm du=\frac1{2\pi i}\int_0^{2\pi} \frac{f(\exp(i\theta))}{\exp(i\theta)}\mathrm d(\exp(i\theta))=\frac1{2\pi}\int_0^{2\pi}f(\exp(i\theta))\mathrm d\theta
+2f(0)+\frac1{\pi}\int_0^{2\pi} f(\exp(i\theta))\cos\,\theta\;\mathrm d\theta
+f(z)=\frac1{2\pi i}\oint_\gamma \frac{f(u)}{u-z}\mathrm du
+z
+f^{\prime}(z)=\frac1{2\pi i}\oint_\gamma \frac{f(u)}{(u-z)^2}\mathrm du
+f^{\prime}(0)=\frac1{2\pi i}\int_0^{2\pi} \frac{f(\exp(i\theta))}{\exp(2i\theta)}\mathrm d(\exp(i\theta))
+=\frac1{2\pi}\int_0^{2\pi} f(\exp(i\theta))\exp(-i\theta)\mathrm d\theta
+=\frac1{2\pi}\int_0^{2\pi} f(\exp(i\theta))\cos\,\theta\;\mathrm d\theta-\frac{i}{2\pi}\int_0^{2\pi} f(\exp(i\theta))\sin\,\theta\;\mathrm d\theta
+\theta=\pi
+f^{\prime}(0)=\frac1{2\pi}\int_0^{2\pi} f(\exp(i\theta))\cos\,\theta\;\mathrm d\theta
+2f(0)+2f^\prime(0)

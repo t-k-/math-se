@@ -1,0 +1,18 @@
+ \max_{c_t,t\ge 0}\int_{0}^{\infty}e^{-\rho t}\ln(c_t)\, \mathrm{d}t,~~~\rho\in (0,1) 
+y_t=f(k_t) \\ \dot{k}_t=y_t-c_t\\  k_t \ge 0 \\  k_0 >0 ~~~~\text{given}
+k_t
+c_t
+H_t = e^{-\rho t}\ln(c_t) + \lambda_t (f(k_t)-c_t)
+\frac{\partial H}{\partial c_t} = 0 
+\frac{\partial H}{\partial k_t} = -\dot{\lambda}_t
+lim_{t \rightarrow \infty} \lambda_t k_t =0
+\dot{\lambda}_t = -\lambda_t (\rho + \frac{\dot{c}_t}{c_t})
+c_t
+\frac{\dot{c}_t}{c_t} = f'(k_t)-\rho
+ \max_{c_t,t\ge 0}\int_{0}^{\infty}e^{-\rho t}\ln(c_t)\, \mathrm{d}t,~~~\rho\in (0,1) 
+y_t=f(k_{1t})+g(k_{2t}) \\ \dot{k}_{1t}=\theta(y_t-c_t), ~~~ \theta\in (0,1)\\ \dot{k}_{2t}=(1-\theta)(y_t-c_t)\\ k_{1t},k_{2t} \ge 0 \\  k_{10},k_{20} >0 ~~~\text{given}
+ \left[ \matrix{ \theta f' & (1-\theta) f' \\ \theta g' & (1-\theta) g' \\ } \right] \left[ \matrix{ \lambda_{1t}\\ \lambda_{2t}\\ } \right] = - \left[ \matrix{ \dot{\lambda}_{1t}\\ \dot{\lambda}_{2t}\\ } \right] 
+c_t
+H_t = e^{-\rho t}\ln(c_t) + \theta \lambda_{1t} (f(k_{1t}) + g(k_{2t})-c_t) + (1-\theta)\lambda_{2t} (f(k_{1t}) + g(k_{2t})-c_t)
+ \frac{e^{-\rho t}}{c_t}=\theta \lambda_{1t} + (1-\theta)\lambda_{2t}\\ f'(\theta \lambda_{1t} + (1-\theta)\lambda_{2t}) = - \dot{\lambda}_{1t}\\ g'(\theta \lambda_{1t} + (1-\theta)\lambda_{2t}) = - \dot{\lambda}_{2t} 
+\frac{\dot{c}_t}{c_t} = \theta f'(k_t) + (1-\theta) g'(k_t)-\rho

@@ -1,0 +1,28 @@
+(B_t,\mathcal{F}_t)_{t \geq 0}
+(\Omega,\mathcal{A},\mathbb{P})
+a \in \mathbb{R}
+\tau_a
+w \in \Omega
+b>a
+\tau_b(\omega) = \tau_a(\omega)=\infty
+\tau_b(\omega)-\tau_a(\omega) := 0
+B_{\tau_a}(\omega)=B_{\tau_b}(\omega):=0
+\tau_a := \tau(a) := \inf\{t \geq 0; B_t = a \} \qquad \qquad (\inf \emptyset := \infty)
+\tau(a_n)-\tau(a_{n-1}),\ldots,\tau(a_2)-\tau(a_1)
+0<a_1 < \ldots < a_n
+\tau(a_n)-\tau(a_{n-1})
+\mathcal{F}_{\geq \tau(a_{n-1})}
+\mathcal{F}_{\geq \tau(a_{n-1})} := \sigma(B_{\tau(a_{n-1})+s}-B_{\tau(a_{n-1})}; s \geq 0)
+t \geq 0
+\begin{align} [\tau(a_n)-\tau(a_{n-1})>t] &= [\tau(a_n)-\tau(a_{n-1})>t, \tau(a_{n-1}) < \infty] \\ &= \left[ \sup_{s \in \mathbb{Q}, 0 \leq s \leq t} (B_{\tau(a_{n-1})+s}-B_{\tau(a_{n-1})}) < a_n - a_{n-1}, \tau(a_{n-1})< \infty \right]  \\ &= \left[0< \sup_{s \in \mathbb{Q}, 0 \leq s \leq t} (B_{\tau(a_{n-1})+s}-B_{\tau(a_{n-1})}) < a_n - a_{n-1}\right] \tag{1} \end{align}
+\subseteq
+\supseteq
+\omega \in [\tau(a_{n-1})=\infty]
+\sup_{s \in \mathbb{Q}, 0 \leq s \leq t} (B_{\tau(a_{n-1})+s}-B_{\tau(a_{n-1})})
+B_{\tau(a_{n-1})}(\omega) := 0
+\omega \in [\tau(a_{n-1})=\infty]
+B_{\infty}=0
+\omega \in [\tau(a_{n-1})=\infty]
+\omega \in [\tau(a_{n-1})=\infty]
+B_{\tau(a_{n-1})+s}(\omega)=B_{\infty+s}(\omega)=B_{\infty}(\omega)=0 \qquad (0 \leq s \leq t)
+[X \in B] := X^{-1}(B) := \{w \in \Omega; X(\omega) \in B\}

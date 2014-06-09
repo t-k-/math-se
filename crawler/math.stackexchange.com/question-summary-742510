@@ -1,0 +1,10 @@
+\lim_{n \to \infty} \sum_{k=0}^{\lfloor n/2 \rfloor} 2^{-2nk} \binom{n}{2k}\left(\binom{2k}{k}^n\right) = 1
+k=0
+1
+0
+(1)
+\frac53
+ \sum_{k=1}^{\lfloor n/2\rfloor}2^{-2nk}\binom{n}{2k}\binom{2k}{k}^{\large n} =\sum_{k=1}^{\lfloor n/2\rfloor}\binom{n}{2k}\left[4^{-k}\binom{2k}{k}\right]^{\large n}\tag{1} 
+ \begin{align} &\frac{(n-2k)(n-2k-1)}{(2k+1)(2k+2)}\left[\frac14\frac{(2k+2)(2k+1)}{(k+1)(k+1)}\right]^{\large n}\\ &=\left(\frac{n+1}{2k+1}-1\right)\left(\frac{n+1}{2k+2}-1\right)\left[1-\frac1{2k+2}\right]^{\large n}\\[6pt] &=\left(\frac{2k+2}{2k+1}\frac{n+1}{2k+2}-1\right)\left(\frac{n+1}{2k+2}-1\right)\frac{2k+2}{2k+1}\left[1-\frac1{2k+2}\right]^{\large n+1}\\[6pt] &\le\left(\frac43\frac{n+1}{2k+2}-1\right)\left(\frac{n+1}{2k+2}-1\right)\frac43\left[1-\frac1{2k+2}\right]^{\large n+1}\\[6pt] &\le\frac43\left(\frac43x-1\right)(x-1)e^{-x}\qquad\text{where }x=\frac{n+1}{2k+2}\\[6pt] &\lt\frac25\qquad\qquad\text{for all }x\ge1\tag{2} \end{align} 
+\binom{n}{4}\sim\frac{n^4}{24}
+ \sum_{k=0}^{\lfloor n/2\rfloor}2^{-2nk}\binom{n}{2k}\binom{2k}{k}^{\large n} \sim1+\binom{n}{2}(1/2)^n+O\left(n^4(3/8)^n\right)\tag{3} 

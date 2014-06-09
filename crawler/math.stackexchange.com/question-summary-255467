@@ -1,0 +1,9 @@
+\def\left{\operatorname{left}}\def\right{\operatorname{right}}
+     p(l, r, s) = 0.5 \cdot \left(l, r, s)                + 0.5 \cdot \right(l, r, s) 
+     \left(l, r, s) = \begin{cases} p(l - s, r, 2s)  & s \le l\\                             1                 & l < s \le l + w\\                     0                 & l + w < s\end{cases} 
+    \right(l, r, s) = \begin{cases} p(l, r - s, 2 s)  & s \le r\\                     1                  & r < s \le r + w\\                     0                & r + w < s\end{cases}
+l = r = k
+s = 1
+w = f\cdot k
+f \in (0, 1)
+k

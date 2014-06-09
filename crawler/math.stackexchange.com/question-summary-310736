@@ -1,0 +1,55 @@
+A
+B
+X
+U, V \subset X
+A \subset U
+B \subset V
+U \cap V=\emptyset
+\newcommand{\cl}{\operatorname{cl}}
+X
+A
+B
+X
+x\in A
+G_x
+x
+\cl G_x\cap B=\varnothing
+x\in B
+H_x
+x
+\cl H_x\cap A=\varnothing
+A
+B
+A\subseteq\bigcup\mathscr{G}
+B\subseteq\bigcup\mathscr{H}
+\mathscr{G}=\{G_n:n\in\omega\}\subseteq\{G_x:x\in A\}
+\mathscr{H}=\{H_n:n\in\omega\}\subseteq\{H_x:x\in B\}
+U_0=G_0
+V_0=H_0\setminus\cl G_0
+U_n
+V_n
+n\in\omega
+U_{n+1}=G_{n+1}\setminus\cl\bigcup_{k\le n}V_k
+V_{n+1}=H_{n+1}\setminus\cl\bigcup_{k\le n+1}U_k
+U=\bigcup_{n\in\omega}U_n
+V=\bigcup_{n\in\omega}V_n
+U
+V
+x\in A
+n
+x\in G_n
+x\in U_n
+x\notin\cl V_k
+k\in\omega
+A\subseteq U
+B\subseteq V
+x\in U\cap V
+x\in V_n
+n\in\omega
+x\notin U_k
+k\le n
+x\in U_k
+k>n
+U_k
+x\notin V_n
+U\cap V=\varnothing

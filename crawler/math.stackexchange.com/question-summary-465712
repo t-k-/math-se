@@ -1,0 +1,32 @@
+f(\cdot) \in C^\infty
+2\pi
+\int_0^{2\pi}|u(x,t)|^2\ dx=\int_0^{2\pi}|f(x)|^2\ dx, \quad\forall t \geq 0
+\lim_{t \to 0+}\int_0^{2\pi}|u(x,t)-f(x)|^2\ dx=0
+c_n={1 \over {2\pi}}\int_0^{2\pi}f(x)e^{-\sqrt{-1}nx}\ dx
+f
+u(x,t)
+u(x,t):=\sum_{n \in \mathbb{Z}} e^{-\sqrt{-1}n^2 t} c_n e^{\sqrt{-1}nx}
+f(x)
+u(x,t)
+\star
+\int_0^{2\pi}|u(x,t)|^2\ dx=\int_0^{2\pi}|f(x)|^2\ dx, \quad\text{for any }\; t \geq 0,\tag{$\star$}
+G'(t) = \int_0^{2\pi}  u(x,t)\overline{u}_t(x,t) + u_t(x,t)\overline{u}(x,t) \, dx \\ = \int_0^{2\pi}   u(x,t)\overline{iu_{xx}(x,t)} + iu_{xx}(x,t)\overline{u}(x,t) \, dx \\ = -i\int_0^{2\pi} u(x,t)\overline{u_{xx}(x,t)} \, dx+ i\int_0^{2\pi} u_{xx}(x,t)\overline{u(x,t)} \, dx \\ = i\int_0^{2\pi} u_x(x,t)\overline{u_{x}(x,t)} \, dx - \color{blue}{iu(x,t)\overline{u_{x}(x,t)} \,\Big|_{0}^{2\pi}} \\ -i \int_0^{2\pi} u_x(x,t)\overline{u_{x}(x,t)} \, dx + \color{blue}{iu_x(x,t)\overline{u(x,t)} \,\Big|_{0}^{2\pi}}. 
+u(x,t):=\sum_{n \in \mathbb{Z}} e^{i n^2 t} c_n e^{i nx}.
+k
+n^2
+n\in \mathbb{Z}
+X
+u(x,0) = X(x)T(0) = X(x) = f(x)
+\{c_n\}
+ u(x,t) = X(x)T(t)\implies X(x)T'(x) = i X''(t) T(t) \\ \implies -k X(x) = X''(x), \quad  T'(t) = -ik T(t) \\ \implies X(x) = c_1 \cos(\sqrt{k}x) + c_2 \sin(\sqrt{k}x),\quad T(t) = c e^{-ikt}. 
+ \operatorname{span}\{\cos(nx),\sin(nx)\}_{n\in \mathbb{Z}} = \operatorname{span}\{e^{\pm i n x}\}_{n\in \mathbb{Z}} =  \operatorname{span}\{e^{i n x}\}_{n\in \mathbb{Z}}, 
+u(x,t):=\sum_{n \in \mathbb{Z}}  c_n e^{i nx}\color{red}{e^{-i n^2 t}}.
+(\star)
+u_1
+u_2
+w
+(\star)
+f
+c_n
+w = u_1 - u_2
+\int_0^{2\pi}|w(x,t)|^2\ dx= 0, \quad\text{for any }\; t \geq 0. 

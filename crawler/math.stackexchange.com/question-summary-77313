@@ -1,0 +1,98 @@
+(x\phi_n,\phi_n)
+ d_n = -a_n \frac{\int_a^b x \phi_n \phi_n w(x) \ \mathrm dx}{\int_a^b \phi_n \phi_n w(x) \ \mathrm dx}
+b_n
+c_n
+b_n = d_n
+c_n = d_{n-1}
+ \phi_{n+1}(x) = (a_n x + b_n) \phi_n(x) - c_n \phi_{n-1}(x)
+\phi_n(x)
+w(x)
+(a,b)
+ (\phi_i, \phi_j) = \int_a^b w(x) \phi_i(x) \phi_j(x) \ \mathrm dx = 0, \text{if } i \neq j
+ (\phi_i, \phi_j) \neq 0, \text{if } i = j
+\phi_n(x)
+\phi_n(x) = A_n x^n + B_n x^{n-1} + \ldots = A_n(x - x_{n,1})(x - x_{n,2}) \ldots (x-x_{n,n})
+\gamma_n = (\phi_n, \phi_n) \geq 0
+ a_n = \frac{A_{n+1}}{A_n}
+ b_n = a_n \left[ \frac{B_{n+1}}{A_{n+1}} - \frac{B_n}{A_n} \right]
+ c_n = \frac{A_{n+1} A_{n-1}}{A_n^2} \cdot \frac{\gamma_n}{\gamma_{n-1}}
+G(x)
+ G(x) = \phi_{n+1}(x) - a_n x \phi_n(x) = \left[ B_{n+1} - \frac{A_{n+1}B_n}{A_n} \right] x^n + \ldots = d_n \phi_n(x) + d_{n-1} \phi_{n-1}(x)
+d_i
+ d_i = \frac{1}{\gamma_i} \left[ (\phi_{n+1}, \phi_i) - a_n(x\phi_n, \phi_i)\right]
+G_{n-1} (x)
+w(x)
+(f(x),g(x))=\int_a^b w(u)f(u)g(u) \,\mathrm du
+\phi_k(x)=A_k x^k+\cdots
+k
+w(x)
+(\phi_k(x),\phi_\ell(x))=0,\quad k\neq \ell
+q(x)=\phi_{k+1}(x)-\frac{A_{k+1}}{A_k}x\phi_k(x)
+x^{k+1}
+k
+\frac{A_{k+1}}{A_k}
+a_k
+\phi_{k+1}(x)-a_k x\phi_k(x)=\mu_k\phi_k(x)+\mu_{k-1}\phi_{k-1}(x)+\cdots
+\mu_j
+\mu_j=\frac{(q(x),\phi_j(x))}{(\phi_j(x),\phi_j(x))}
+(\phi_k(x),x^\ell)=0,\quad \ell < k
+\mu_j
+j < k-1
+\mu_k
+b_k
+\mu_{k-1}
+c_k
+\phi_{k+1}(x)-a_k x\phi_k(x)=b_k\phi_k(x)+c_k\phi_{k-1}(x)
+\phi_k(x)
+A_k=1
+a_k=1
+\phi_{k+1}(x)=(x+b_k)\phi_k(x)+c_k\phi_{k-1}(x)
+\phi_{k+1}(x)
+\phi_k(x)
+\phi_{k-1}(x)
+\begin{align*}(\phi_{k+1}(x),\phi_{k+1}(x))&=(\phi_{k+1}(x),x\phi_k(x))\\0&=(x\phi_k(x),\phi_k(x))+b_k(\phi_k(x),\phi_k(x))\\0&=(x\phi_k(x),\phi_{k-1}(x))+c_k(\phi_{k-1}(x),\phi_{k-1}(x))\end{align*}
+b_k
+c_k
+\begin{align*}b_k&=-\frac{(x\phi_k(x),\phi_k(x))}{(\phi_k(x),\phi_k(x))}\\c_k&=-\frac{(x\phi_k(x),\phi_{k-1}(x))}{(\phi_{k-1}(x),\phi_{k-1}(x))}\end{align*}
+c_k
+(x\phi_k(x),\phi_{k-1}(x))=(\phi_k(x),x\phi_{k-1}(x))
+k
+(\phi_{k+1}(x),\phi_{k+1}(x))
+c_k=-\frac{(\phi_k(x),\phi_k(x))}{(\phi_{k-1}(x),\phi_{k-1}(x))}
+(f(x),g(x))=\int_{-1}^1 \frac{f(u)g(u)}{\sqrt{1-u^2}}\mathrm du
+\phi_{-1}(x)=0
+\phi_0(x)=1
+\phi_1(x)
+b_0=-\frac{(x,1)}{(1,1)}=0
+\phi_1(x)=x
+\phi_2(x)
+\begin{align*}b_1&=-\frac{(x\phi_1(x),\phi_1(x))}{(\phi_1(x),\phi_1(x))}=0\\c_1&=-\frac{(\phi_1(x),\phi_1(x))}{(\phi_0(x),\phi_0(x))}=-\frac12\end{align*}
+\phi_2(x)=\left(x+b_1\right)\phi_1(x)+c_1\phi_0(x)=x^2-\frac12
+\phi_3(x),\phi_4(x),\dots
+b_k
+ b_k = a_k \left[ \frac{B_{k+1}}{A_{k+1}} - \frac{B_k}{A_k}\right] \ldots (1)
+ c_k = \frac{A_{k+1}A_{k-1}}{A_k^2} \frac{\gamma_k}{\gamma_{k-1}} \ldots (2)
+ \phi_{k+1}(x) = (a_k x + b_k)\phi_k(x) - c_k \phi_{k-1}(x)
+ p^k(x) = \mu_k \phi_k(x) + \mu_{k-1}\phi_{k-1}(x) + \ldots
+ \mu_i = \frac{(p^k, \phi_i)}{(\phi_i, \phi_i)}
+arg
+\phi_i(x)
+i
+ \textrm{deg}(\phi_i(x)) > \textrm{deg}(arg) \implies (\phi_i, arg) = 0
+ \textrm{deg}(\phi_i(x)) \leq \textrm{deg}(arg) \implies (\phi_i, arg) \neq 0
+(p^k(x), \phi_{k+1}(x)) = 0
+c_k
+ \phi_{k+1}(x) = (a_k x + b_k)\phi_k(x) + c_k \phi_{k-1}(x)
+\phi_{k+1}, \phi_k, \phi_{k-1}
+ (\phi_{k+1}, \phi_{k+1}) = (a_k x \phi_k, \phi_{k+1}) \iff (\phi_k, \phi_k) = (a_{k-1}x \phi_{k-1}, \phi_k) \iff (\phi_k, \phi_k) = a_{k-1}(\phi_k, x \phi_{k-1})
+ 0 = (a_k x \phi_k, \phi_k) + b_k(\phi_k, \phi_k)
+ 0 = (a_k x \phi_k, \phi_{k-1}) + c_k (\phi_{k-1}, \phi_{k-1})
+ c_k = -\frac{a_k (x\phi_k, \phi_{k-1})}{\phi_{k-1}, \phi_{k-1}} = -\frac{a_k}{a_{k-1}} \frac{(\phi_k, \phi_k)}{(\phi_{k-1}, \phi_{k-1})} = \frac{\gamma_k}{\gamma_{k-1}} \frac{-A_{k+1}}{A_k} \frac{A_{k-1}}{A_k}
+b_k
+\phi_{k+1}(x) = (a_k x + b_k)\phi_k(x) - c_k \phi_{k-1}(x)
+\phi_i
+x^j
+ A_{k+1}x^{k+1} + B_{k+1}x^{k} + \ldots = (a_k x + b_k)(A_k x^k + B_k x^{k-1} + \ldots) + c_k (A_{k-1}x^{k-1} + B_{k-1}x^{k-1} + \ldots)
+x^k
+ B_{k+1} = b_k A_k + a_k B_k
+ b_k = \frac{B_{k+1} - a_k B_k}{A_k} = \frac{B_{k+1} - \frac{A_{k+1}}{A_k} B_k}{A_k} = \frac{A_{k+1}}{A_k} \left[ \frac{B_{k+1}}{A_{k+1}} - \frac{B_k}{A_k} \right]

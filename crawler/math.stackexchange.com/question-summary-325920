@@ -1,0 +1,44 @@
+F(u) = \int_0^1(u'')^2+u^2dx 
+C^2[0,1]
+u(0)=a,u(1)=b,u'(0)=c,u'(1)=d
+a,b,c,d \in \mathbb{R}
+u_*
+\phi \in C^2[0,1],\ \frac{d}{ds}| _{s=0} F(u_* +s\phi) = \int_0^1 (2(u'')\phi''+2u\phi) dx
+\phi
+y:=(u(x),u'(x),u^{''}(x),x)
+L(u(x),u'(x),u^{''}(x),x)=u^2(x)+(u^{''}(x))^2
+\frac{dS[u+s\phi]}{ds}|_{s=0},
+\phi\in C^2([0,1])
+\phi(0)=\phi(1)=\phi^{'}(0)=\phi^{'}(1)=0
+\frac{dS[u+s\phi]}{ds}|_{s=0}=\lim_{s\rightarrow 0}\frac{ S[u+s\phi]-S[u]}{s}=\\ \lim_{s\rightarrow 0}\frac{\int_0^1 L(u(x)+s\phi(x),u'(x)+s\phi'(x),u^{''}(x),+s\phi^{''}(x),x) -L(u(x),u'(x),u^{''}(x),x)dx}{s}.
+\phi(x)
+b
+C^2_b([0,1]):=\{ u\in  C^2([0,1]):~u(0)=a,u(1)=b,u'(0)=c,u'(1)=d \}. 
+\phi\in C^2([0,1])
+u=u(x)
+u+s\phi
+s
+u
+C^2_b([0,1])
+s
+(u+s\phi)(0)\stackrel{!}{=}a\Rightarrow \phi(0)=0, 
+(u+s\phi)(1)\stackrel{!}{=}b\Rightarrow \phi(1)=0,
+(u+s\phi)^{'}(0)\stackrel{!}{=}c\Rightarrow \phi^{'}(0)=0,
+(u+s\phi)^{'}(1)\stackrel{!}{=}d\Rightarrow  \phi^{'}(1)=0,
+\frac{dS[u+s\phi]}{ds}|_{s=0}
+y(x):=(u(x),u'(x),u^{''}(x),x)
+h(x):=(s\phi(x),s\phi'(x),s\phi^{''}(x),0)
+x\in [0,1]
+y(x)
+L(u(x),u'(x),u^{''}(x),x)
+L(y(x)+h(x))-L(y(x))=\langle \nabla L(y(x)),h(x)\rangle+O(\|h(x)\|);~~(*)
+\nabla L(y(x))
+L
+y(x)
+\nabla L(y)=\left(\frac{\partial L}{\partial u},\frac{\partial L}{\partial u'},\frac{\partial L}{\partial u^{''}}, \frac{\partial L}{\partial x}\right)= \left(\frac{\partial L}{\partial u},0,\frac{\partial L}{\partial u^{''}}, \frac{\partial L}{\partial x}\right)
+(*)
+L
+\int_0^1 L(u(x)+s\phi(x),u'(x)+s\phi'(x),u^{''}(x),+s\phi^{''}(x),x) -L(u(x),u'(x),u^{''}(x),x)dx= \int_0^1 s\left(\frac{\partial L}{\partial u}\phi(x)+\frac{\partial L}{\partial u^{''}}\phi^{''}(x)\right)+O(s^2)=\int_0^1 s\left(2u(x)\phi(x)+ 2u^{''}(x)\phi^{''}(x)\right)dx+O(s^2). 
+\frac{dS[u+s\phi]}{ds}|_{s=0}=\lim_{s\rightarrow 0}\frac{\int_0^1 s\left(2u(x)\phi(x)+ 2u^{''}(x)\phi^{''}(x)\right)dx+O(s^2)}{s}=\\\int_0^1 2u(x)\phi(x)+ 2u^{''}(x)\phi^{''}(x)dx, 
+\frac{dS[u+s\phi]}{ds}|_{s=0}=0,
+C^2_b([0,1])

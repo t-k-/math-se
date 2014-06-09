@@ -1,0 +1,9 @@
+Installment Amount = \frac {P*i*(1 + i)^n}{(1 + i)^n - 1}
+I
+B(j)
+j
+I
+B(n)=0
+B(0)=P
+B(j)=(1+i)\cdot B(j-1)-I
+B(0)=P \\ B(1)=(1+i)P-I \\ B(2)=(1+i)((1+i)P-I)-I=(1+i)^2P-(1+i)I-I \\ B(j)=(1+i)^jP-(1+i)^{(j-1)}I-(1+i)^{j-2}I-\ldots I=(1+i)^jP-\frac {(1+i)^j-1}{i}I \\ 0=(1+i)^nP-\frac{(1+i)^n-1}{i}I

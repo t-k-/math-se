@@ -1,0 +1,18 @@
+R[X,\, Y,\, Z]
+X,\, Y,\, Z
+R
+\sigma
+R[X,\, Y,\, Z]
+\sigma[F(X,\, Y,\, Z)]=F(X+1,\, Y,\, Z)
+\sigma
+\Delta=\sigma-I
+\Delta[F(X,\, Y,\, Z)]=F(X+1,\, Y,\, Z)-F(X,\, Y,\, Z)
+F
+G
+R[X,\, Y,\, Z]
+\Delta
+n=1
+n
+n+1
+\Delta^{n+1}[FG]=\Delta(\Delta^{n}[FG])=\Delta\Bigl(\sum_{r=0}^{n}\begin{pmatrix}n\\ r \end{pmatrix}(\Delta^{r}[F])(\sigma^{r}\Delta^{n-r}[G])\Bigr)=\sum_{r=0}^{n}\Bigl(\Delta\begin{pmatrix}n\\ r \end{pmatrix}(\Delta^{r}[F])(\sigma^{r}\Delta^{n-r}[G])\Bigr)=\sum_{r=0}^{n}\Bigl(\begin{pmatrix}n\\ r \end{pmatrix}\Delta(\Delta^{r}[F])(\sigma^{r}\Delta^{n-r}[G])\Bigr)  
+\sum_{r=0}^{n}\Bigl(\begin{pmatrix}n\\ r \end{pmatrix}\Delta(\Delta^{r}[F])(\sigma^{r}\Delta^{n-r}[G])=\sum_{r=0}^{n}\begin{pmatrix}n\\ r \end{pmatrix}\Delta^{r+1}[F]\sigma^{r+1}\Delta^{n-r}[G]+\sum_{r=0}^{n}\begin{pmatrix}n\\ r \end{pmatrix}[F]\sigma^{r}\Delta^{n-r-1}[G]=[F]\Delta^{n+1}[G]+\sum_{r=1}^{n}\begin{pmatrix}n\\ r \end{pmatrix}[F]\sigma^{r}\Delta^{n-r-1}[G]+\sum_{r=0}^{n-1}\begin{pmatrix}n\\ r \end{pmatrix}\Delta^{r+1}[F]\sigma^{r+1}\Delta^{n-r}[G]+\Delta^{n+1}[F]\sigma^{n+1}[G]  

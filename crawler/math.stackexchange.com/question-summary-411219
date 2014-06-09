@@ -1,0 +1,60 @@
+u(0,y)=u(1,y)
+u(x,0)=u(x,1)
+\nabla^2 u(x,y) = 0 \text{ in } \Omega=[0,1]^2
+u_1
+u_2
+u_2=u_1+C
+C
+\Omega
+[0,\pi]^2
+u(x,y) = X(x)Y(y)
+\lambda = \omega^2 >0
+0
+\{1,x,y,xy\}
+A
+\mathbb{N}
+a_1,a_2,b_1,b_2
+\omega
+c_{\omega}
+b_1 = 0
+u(0,y) = u(\pi,y)
+ X'' - \lambda X = 0,\quad\text{and}\quad Y'' + \lambda Y = 0.\tag{1} 
+ u(x,y) = \sum_{\omega\in A} c_{\omega}(a_1 e^{-\omega x} + a_2 e^{\omega x})\big(b_1 \cos (\omega y) + b_2  \sin (\omega y)\big), \tag{2} 
+ u(x,0) = u(x,\pi),\quad\text{and}\quad u(0,y) = u(\pi,y). 
+ \sum_{\omega\in A} c_{\omega}(a_1 e^{-\omega x} + a_2 e^{\omega x}) b_1 = -\sum_{\omega\in A} c_{\omega}(a_1 e^{-\omega x} + a_2 e^{\omega x}) b_1, 
+\sum_{\omega\in A} c_{\omega}(a_1 + a_2 )b_2  \sin (\omega y) = \sum_{\omega\in A} c_{\omega}(a_1 e^{-\omega \pi} + a_2 e^{\omega \pi})b_2  \sin (\omega y).
+\lambda = -\omega^2<0
+u(x,0) = u(x,\pi) = 0
+u(0,y) = u(\pi,y) = 0
+ u(x,y) = \sum_{\omega\in A} c_{\omega}\big(a_1 \cos (\omega x) + a_2  \sin (\omega x)\big)(b_1 e^{-\omega y} + b_2 e^{\omega y}), \tag{3} 
+x
+y
+u(x,0) = u(x,\pi) = 0
+u(0,y) = u(\pi,y) = g(y)
+c
+a_1
+a_2
+\dagger
+g
+\sin (\omega_0 y)
+[0,\pi]
+\ddagger
+h(y)
+g(y)
+\omega_0
+ (a_1 e^{-\omega x} + a_2 e^{\omega x})
+g(y)
+g(y)
+ u(x,y) = \sum_{\omega\in A} (a_1 e^{-\omega x} + a_2 e^{\omega x}) \sin (\omega y),\tag{$\dagger$} 
+ \sum_{\omega\in A} (a_1 + a_2 ) \sin (\omega y) = \sum_{\omega\in A} (a_1 e^{-\omega \pi} + a_2 e^{\omega \pi}) \sin (\omega y) = g(y), 
+ \int^{\pi}_0 g(y)\sin (\omega_0 y) \,dy=\int^{\pi}_0  (a_1 + a_2 ) \sin^2 (\omega_0 y) \,dy= \int^{\pi}_0 (a_1 e^{-\omega_0\pi} + a_2 e^{\omega_0 \pi}) \sin^2 (\omega_0 y)\,dy, 
+ \int^{\pi}_0 g(y)\sin (\omega_0 y) \,dy = \frac{\pi}{2} (a_1 + a_2 ) = \frac{\pi}{2}  (a_1 e^{-\omega_0\pi} + a_2 e^{\omega_0\pi}). 
+ \begin{gathered} a_1 = \frac{2(e^{\omega_0\pi}-1)}{\pi(e^{\omega_0\pi} - e^{-\omega_0\pi})}\int^{\pi}_0 g(y)\sin (\omega_0 y) \,dy, \\ a_2 = \frac{2(1-e^{-\omega_0\pi})}{\pi(e^{\omega_0\pi} - e^{-\omega_0\pi})}\int^{\pi}_0 g(y)\sin (\omega_0 y) \,dy. \end{gathered}\tag{$\ddagger$} 
+u(x,0) = u(x,\pi) = 0
+u(0,y) = u(\pi,y) = 1
+u_1(x,y)
+u(0,y) = u(\pi,y) = 1
+(\dagger)
+(\ddagger)
+u_2(x,y) = 2u_1(x,y)
+u_2 = u_1 +C

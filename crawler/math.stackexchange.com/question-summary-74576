@@ -1,0 +1,32 @@
+m
+n
+ \begin{matrix}      &   & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 & 13 & 14 & 15 & 16 &  \\    &   & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow &  \downarrow& \downarrow & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow & \downarrow &  \\   2 & \rightarrow  & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 3 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 4 & \cdots \\   3 & \rightarrow  & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 2 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & \cdots \\  4 & \rightarrow  & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 2 & \cdots \\  5 & \rightarrow  & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & \cdots \\  6 & \rightarrow  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & \cdots \\  7 & \rightarrow  & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & \cdots \\  8 & \rightarrow  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \cdots \\  9 & \rightarrow  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots \\  10 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots \\  11 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & \cdots \\  12 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & \cdots \\  13 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & \cdots \\  14 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & \cdots \\  15 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & \cdots \\  16 & \rightarrow & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \cdots \\   &  & \vdots &  &  &  &  &  &  & \vdots &  &  &  &  &  &  &  &  \vdots &  \\ \{D(n)\}& = & \lbrace & 1, &  & 3, &  &  &  & 5, &  &  &  &  &  &  &  &   8,& \cdots\rbrace \\ \end{matrix} 
+2^k
+D(n)
+p^k
+p
+D(n)
+ D(n)=\sum_{m=2}^{\infty}\sum_{r=1}^{\infty}\frac{r}{m^{r+1}}\sum_{j=1}^{m-1}\left(\sum_{k=0}^{m^{r+1}-1}\cos\left( \frac{2k\pi(2^{n}+(m-j)m^{r})}{m^{r+1}} \right)\right) 
+o(m,n)
+i
+m^i|n
+O(n) = \sum_{m=2}^n o(m,n)
+D(n) = \sum_{m=1}^n \tau(m) = \sum_{m=1}^n \sum_{d|m} 1
+p
+k\geq 1
+O(p^k) = D(k)
+o(m,p^k)
+0
+m
+p
+m=p^i
+o(p^i,p^k)= \lfloor \frac{k}{i} \rfloor
+O(p^k) = \sum_{i=1}^{k} \lfloor \frac{k}{i} \rfloor
+D(k)
+D(k) = \sum_{d=1}^k \sum_{d|m; m\leq k} 1
+\sum_{d|m; m\leq k} 1
+d
+k
+\lfloor \frac{k}{d}\rfloor
+D(k)=O(p^k)
+D(k) = \sum_{d=1}^k \lfloor \frac{k}{d}\rfloor

@@ -1,0 +1,18 @@
+\exists x_{0} \forall x_{1} (x_{0} \dot{=}x_{1})  \to \forall x_{0} \forall x_{1} (x_{0} \dot{=}x_{1})
+x
+y
+x_0
+x_1
+\quad\quad|\quad \exists x\forall y\, x = y\\ \quad\quad|\quad\ldots\\ \quad\quad|\quad\forall x\forall y\, x = y\\ \exists x\forall y\, x = y\ \to\ \forall x\forall y\, x = y\quad\quad\quad\text{By Conditional Proof}
+\exists x\varphi(x)
+\varphi(a)
+a
+C
+a
+C
+\quad\quad|\quad \exists x\forall y\, x = y\\ \quad\quad|\quad\quad|\quad \forall y\, a = y\\ \quad\quad|\quad\quad|\quad\ldots\\ \quad\quad|\quad\quad|\quad\forall x\forall y\, x = y\\ \quad\quad|\quad\forall x\forall y\, x = y\quad\quad\quad\quad\quad\quad\text{By EE}\\ \exists x\forall y\, x = y\ \to\ \forall x\forall y\, x = y
+\quad\quad|\quad \exists x\forall y\, x = y\\ \quad\quad|\quad\quad|\quad \forall y\, a = y\\ \quad\quad|\quad\quad|\quad a = b\\ \quad\quad|\quad\quad|\quad\ldots\\ \quad\quad|\quad\quad|\quad\forall x\forall y\, x = y\\ \quad\quad|\quad\forall x\forall y\, x = y\\ \exists x\forall y\, x = y\ \to\ \forall x\forall y\, x = y
+\quad\quad|\quad \exists x\forall y\, x = y\\ \quad\quad|\quad\quad|\quad \forall y\, a = y\\ \quad\quad|\quad\quad|\quad a = b\\ \quad\quad|\quad\quad|\quad a = c\\ \quad\quad|\quad\quad|\quad\ldots\\ \quad\quad|\quad\quad|\quad\forall x\forall y\, x = y\\ \quad\quad|\quad\forall x\forall y\, x = y\\ \exists x\forall y\, x = y\ \to\ \forall x\forall y\, x = y
+\quad\quad|\quad \exists x\forall y\, x = y\\ \quad\quad|\quad\quad|\quad \forall y\, a = y\\ \quad\quad|\quad\quad|\quad a = b\\ \quad\quad|\quad\quad|\quad a = c\\ \quad\quad|\quad\quad|\quad b = c \quad\quad\quad\quad\quad \text{By Leibniz's Law}\\ \quad\quad|\quad\quad|\quad \forall y\, b = y \quad\quad\quad\quad \text{By Univ. quantifier introduction}\\ \quad\quad|\quad\quad|\quad\forall x\forall y\, x = y\quad\quad\quad \text{By Univ. quantifier introduction again}\\ \quad\quad|\quad\forall x\forall y\, x = y\\ \exists x\forall y\, x = y\ \to\ \forall x\forall y\, x = y
+ \begin{array}{lr}  1. & \exists (x) \forall (y) (x = y) & \text{Assumption} \\ 2. & \neg \forall(x) \forall(y)(x=y) & \text{Assumption} \\ 3. & \exists(x) \exists(y) \neg(x=y) & \text{Quantifier Negation 2} \\ 4. & \exists(y) \neg(a=y) & \text{Existential Instantiation 3} \\ 5. & \neg(a=b) & \text{Existential Instantiation 4} \\ 6. & \forall (y) (c = y) & \text{Existential Instantiation 1} \\ 7. & (c = a) & \text{Universal Instantiation 6} \\ 8. & (c = b) & \text{Universal Instantiation 6} \\ 9. & (a = b) & \text{Transitivity of Identity 7,8} \\ 10.& \forall(x) \forall(y)(x=y) & \text{Reductio 2, 5, 9} \\ 11.& \exists (x) \forall (y) (x = y) \rightarrow\forall(x) \forall(y)(x=y) & \text{Discharge 1, 10} \\ \end{array} 
+c=c

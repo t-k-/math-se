@@ -1,0 +1,21 @@
+T(m) \leq T(\sqrt m) + 1
+T(1)=1
+T(m^{2^{0}})-T(m^{2^{-1}})\leq 1
+T(m^{2^{-1}})-T(m^{2^{-2}})\leq 1
+.
+.
+.
+T(m^{2^{-(n-1)}})-T(m^{2^{-n}})\leq 1
+T(m)-T(m^{2^{-n}})\leq n
+T(m)-n\leq T(m^{2^{-n}})
+T(1)=1
+T
+(1, \infty)
+\lg m =\log_2m
+a
+\sqrt{m}
+m=2^{2^k}
+T(2^{2^k}) = T(2^{2^0})+k
+ T(m) = a + \lg\lg m 
+ \begin{align} T(\sqrt{m})+1&=(a+\lg\lg\sqrt{m})+1\\  &= a+1+\lg\lg(m^{1/2})\\  & =a + 1 +\lg\left(\frac{1}{2}\lg m\right)\\  &= a + 1 + \lg\left(\frac{1}{2}\right)+\lg\lg m\\  &= a + 1 - 1 +\lg\lg m\\  &= a+\lg\lg m = T(m) \end{align} 
+ \begin{align} T(2^{2^k}) &= T(2^{2^{k-1}})+1\\  &= T(2^{2^{k-2}})+1+1\\  &= T(2^{2^{k-3}})+3\\  &= T(2^{2^{k-4}})+4\\ \end{align} 

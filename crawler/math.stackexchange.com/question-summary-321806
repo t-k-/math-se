@@ -1,0 +1,12 @@
+\displaystyle f(z)= z^{a-1} \left(z + z^{-1}\right)^{b} \ (a >b >-1)
+|z|=1
+i
+-i
+0,i
+-i
+\displaystyle\int_{C}z^{a-1}\left( z+z^{-1}\right)^{b}\ dz = \int_{-1}^{1}(it)^{a-1}\left( it+(it)^{-1}\right)^{b}i\ dt 
+ \displaystyle =\int_{-1}^{1}(it)^{a-1}\left(\frac{1-t^{2}}{it}\right)^{b}\ i dt 
+ \displaystyle = i \ i^{a-b}\int_{-1}^{1}t^{a-b-1}\left(1-t^{2}\right)^{m}\ dt 
+ \displaystyle =i \Big[\cos\left(\frac{\pi(a-b)}{2}\right)+i\sin\left(\frac{\pi(a-b)}{2}\right)\Big]\int_{-1}^{1}t^{a-b-1}\left(1-t^{2}\right)^{b}\ dt 
+  \displaystyle 2i \sin\left(\frac{\pi(a-b)}{2}\right)\int_{0}^{1}t^{a-b-1}\left(1-t^{2}\right)^{b}\ dt 
+\begin{align}i^{a-b} \int_{-1}^1 dt \: t^{a-b-1} (1-t^2)^b &= e^{i \pi (a-b)/2} \left [ \underbrace{\int_{-1}^0 dt \: t^{a-b-1} (1-t^2)^b}_{t=u e^{-i \pi}} + \int_{0}^1 dt \: t^{a-b-1} (1-t^2)^b \right ]\\ &= e^{i \pi (a-b)/2} \left ( e^{-i \pi (a-b-1)}+1\right ) \int_{0}^1 dt \: t^{a-b-1} (1-t^2)^b \\ &= \left ( -e^{-i \pi (a-b)/2}+ e^{i \pi (a-b)/2}\right ) \int_{0}^1 dt \: t^{a-b-1} (1-t^2)^b\end{align}

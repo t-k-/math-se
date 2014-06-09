@@ -1,0 +1,6 @@
+\int\frac{\ln x}{(\ln x+1)^2}dx
+\ln x=y\implies x=e^y
+\int\frac{\ln x}{(\ln x+1)^2}dx=\int\frac y{(y+1)^2}e^y dy
+=\int\left(\frac{y+1-1}{(y+1)^2}\right) e^ydy=\int e^y\left(\frac1{y+1}-\frac1{(y+1)^2}\right)
+\displaystyle f(y)=\frac1{y+1}, f'(y)=?
+\int e^y\left[f(y)+f'(y)\right]dy=f(y)e^ydy+f'(y)e^y=d(e^yf(y))

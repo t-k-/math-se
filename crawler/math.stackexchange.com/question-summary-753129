@@ -1,0 +1,14 @@
+x^TAx=\mathrm{tr}(Axx^T)
+A
+n
+A^T
+A
+x^TAx=x^T\left(\matrix{\vdots\\\sum_{j=1}^nA_{ij}x_j\\\vdots}\right)=\sum_{i=1}^n\sum_{j=1}^nA_{ij}x_ix_j
+Axx^T=A\left(\matrix{&\vdots&\\\cdots& x_ix_j&\cdots\\&\vdots&}\right)
+[Axx^T]_{ij}=\sum_{k=1}^nA_{ik}[xx^T]_{kj}=\sum_{k=1}^nA_{ik}x_kx_j
+k
+j
+[Axx^T]_{ii}=\sum_{k=1}^nA_{ik}x_kx_i=\sum_{k=1}^nA_{ik}x_ix_k
+tr(Axx^T)=\sum_{i=1}^n\sum_{k=1}^nA_{ik}x_ix_k
+tr(Axx^T)=\sum_{i=1}^n\sum_{j=1}^nA_{ij}x_ix_j
+\text{tr}\left(AB\right)=\sum_{i}\sum_{j}\alpha_{ij}\beta_{ji}=\sum_{j}\sum_{i}\beta_{ji}\alpha_{ij}=\text{tr}\left(BA\right)

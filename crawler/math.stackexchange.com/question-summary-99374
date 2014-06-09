@@ -1,0 +1,30 @@
+x_1
+x_2
+X_1
+X_2
+y_1 = f_1(x_1,x_2)
+y_2 = f_2(x_1,x_2)
+x_1 = g_1(y_1,y_2)
+x_2 = g_2(y_1,y_2)
+x_1
+x_2
+F_{X_1,X_2}(x_1,x_2)
+y_1
+y_2
+F_{Y_1,Y_2}(y_1,y_2)
+y_1,y_2
+f_{Y_1,Y_2}(y_1,y_2)
+\partial^2 {F_{Y_1,Y_2}(y_1,y_2)}\over \partial{y_1}\partial{y_2}
+\partial {\partial F_{Y_1,Y_2}(y_1,y_2)\over\partial y_2} \over\partial y_1
+\partial F_{Y_1,Y_2}(y_1,y_2)\over\partial y_2
+_{\delta y_2\to 0} {F_{Y_1,Y_2}(y_1,y_2 + \delta y_2) - F_{Y_1,Y_2}(y_1,y_2)} \over \delta y_2
+\partial^2 {F_{Y_1,Y_2}(y_1,y_2)}\over \partial{y_1}\partial{y_2}
+_{\delta y_1\to 0} {{_{\delta y_2\to 0}{F_{Y_1,Y_2}(y_1+\delta y_1,y_2 + \delta y_2) - F_{Y_1,Y_2}(y_1+\delta y_1,y_2)} \over \delta y_2} - {_{\delta y_2\to 0} {F_{Y_1,Y_2}(y_1,y_2 + \delta y_2) - F_{Y_1,Y_2}(y_1,y_2)} \over \delta y_2}}\over {\delta y_1} 
+F_{Y_1,Y_2}(y_1,y_2)
+F_{X_1,X_2}(x_1,x_2)
+\delta x_1 = \delta y_1 \cdot {\partial{g_1}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_1}\over\partial{y_2}};\delta x_2 = \delta y_1 \cdot {\partial{g_2}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_2}\over\partial{y_2}}
+F_{Y_1,Y_2}(y_1+\delta y_1,y_2 + \delta y_2)
+F_{X_1,X_2}(x_1+\delta y_1 \cdot {\partial{g_1}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_1}\over\partial{y_2}},x_2 + \delta y_1 \cdot {\partial{g_2}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_2}\over\partial{y_2}})
+\int\limits_{}^{[x_1+\delta y_1 \cdot {\partial{g_1}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_1}\over\partial{y_2}}]} \int\limits_{}^{[x_1+\delta y_1 \cdot {\partial{g_1}\over\partial{y_1}} + \delta y_2 \cdot { \partial{g_1}\over\partial{y_2}}]} f_{X_1,X_2}(x_1,x_2) dx_1\,dx_2
+f_{Y_1,Y_2}(y_1,y_2) = f_{X_1,X_2}(x_1,x_2) \cdot ({\partial g_1\over\partial y_1} \cdot {\partial g_2\over\partial y_2} + {\partial g_2\over\partial y_1} \cdot {\partial g_1\over\partial y_2})
+f_{Y_1,Y_2}(y_1,y_2) = f_{X_1,X_2}(x_1,x_2) \cdot ({\partial g_1\over\partial y_1} \cdot {\partial g_2\over\partial y_2} - {\partial g_2\over\partial y_1} \cdot {\partial g_1\over\partial y_2})

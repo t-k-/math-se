@@ -1,0 +1,23 @@
+X^TX
+\frac{n+1}{n}
+n-1
+\frac{1}{n}
+e
+V
+e
+X
+X^TX=\frac{n+1}{n}I-ee^T
+X=U\Sigma V^T
+U
+m\times m
+\Sigma
+m\times n
+\left(\sqrt{\frac{n+1}{n}},\ldots,\sqrt{\frac{n+1}{n}},\sqrt{\frac{1}{n}}\right)
+V
+n\times n
+e_n=(0,\ldots,0,1)^T\in\mathbb{R}^n
+f
+U^TAU
+ \begin{align} \Sigma V^T(I+nee^T)V\Sigma^T &= \Sigma\left[I+n(V^Te)(e^TV)\right]\Sigma^T \\ &= \Sigma(I+ne_ne_n^T)\Sigma^T \\ &=\textrm{diag}\left(\underbrace{\frac{n+1}{n},\ldots,\frac{n+1}{n}}_{n \textrm{ entries}},\ \underbrace{0,\ldots,0}_{m-n \textrm{ entries}}\right) = D\quad\textrm{(say)}. \end{align} 
+ \begin{align} f(X)&=\textrm{tr}\left((I+nee^T)X^TAX\right)\\ &=\textrm{tr}\left((I+nee^T)V\Sigma^T U^TAU\Sigma V^T\right)\\ &=\textrm{tr}\left(\Sigma V^T(I+nee^T)V\Sigma^T U^TAU\right)\\ &=\textrm{tr}\left(DU^TAU\right) \end{align} 
+f:\mathbb{M}^{m\times n}\mapsto \mathbb{R}

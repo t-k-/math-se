@@ -1,0 +1,39 @@
+f_n(x)=n\cos^nx\sin x
+x \in \left[0,\frac{\pi}{2} \right]
+\lim \limits_{n \to \infty}f_{n}(x)=0
+x
+|f_n(x) - 0|< \epsilon
+a,b
+\{f_n\}
+\left[a,b\right]
+f
+[a,b]
+\lim_{n\to\infty}\int_a^bf_n(t)dt=\int_a^bf(t)dt.
+0
+[a,b]
+\left|\int_a^bf_n(t)dt-\int_a^bf(t)dt\right|\leq (b-a)\sup_{a\leq x\leq b}|f_n(x)-f(x)|,
+f_n
+0
+\int_0^{\frac{\pi}2}f_n(x)dx=n\left[-\frac{(\cos x)^{n+1}}{n+1}\right]_0^{\frac \pi 2}=\frac n{n+1}\to 1,
+x_n=\sin^{-1}\left(\frac{1}{\sqrt{n+1}}\right)
+\sin(x_n)=\frac{1}{\sqrt{n+1}}
+\cos(x_n)=\frac{1}{\sqrt{1+1/n}}
+(2)
+\lim\limits_{n\to\infty}f_n(x)=0
+f_n(x)
+0
+[0,\frac{\pi}{2}]
+x
+f_n(x)>1
+ \begin{align} \lim_{n\to\infty}\frac{f_n(x_n)}{\sqrt{n}} &=\lim_{n\to\infty}\frac{n\;\cos^n(x_n)\sin(x_n)}{\sqrt{n}}\\ &=\lim_{n\to\infty}\frac{1}{(1+1/n)^{n/2}}\sqrt{\frac{n}{n+1}}\\ &=e^{-1/2}\tag{1} \end{align} 
+ f_n(x_n)\sim e^{-1/2}\sqrt{n}\tag{2} 
+t=\cos(x)
+0\le t\le1
+h(t) = g(t)^2= n^2 t^{2n}(1-t^2)
+t_n=\sqrt{\frac{n}{n+1}}
+h
+n\to\infty
+0
+g(t)= n t^n\sqrt{1-t^2}
+h'(t)= 2n^3t^{2n-1}(1-t^2)-2n^2t^{2n+1}=2n^2t^{2n-1}(n-(n+1)t^2).
+h(t_n)=n^2\left(\frac{n}{n+1}\right)^n \left(1-\frac{n}{n+1}\right)=  n\cdot\frac{1}{\left(\frac{n}{n+1}\right)^n}\cdot \frac{n}{n+1}\sim n\cdot\frac{1}{e}\cdot 1 \qquad \text{as $n\to\infty$}

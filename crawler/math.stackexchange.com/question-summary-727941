@@ -1,0 +1,11 @@
+e,\beta
+\varphi>0
+n
+\int_{-\infty}^\infty e^{-\beta x}\left(1+\varphi e^{-bx}\right)^{-\frac{1}{\varphi}-1}~dx
+\int_{-\infty}^\infty e^{-\beta x}\left(1+\varphi e^{-bx}\right)^{-\frac{1}{\varphi}-1}~dx
+=\int_\infty^0x^\frac{\beta}{b}~(1+\varphi x)^{-\frac{1}{\varphi}-1}~d\left(-\dfrac{\ln x}{b}\right)
+=\dfrac{1}{b}\int_0^\infty x^{\frac{\beta}{b}-1}(1+\varphi x)^{-\frac{1}{\varphi}-1}~dx
+=\dfrac{1}{b}\int_0^\infty\left(\dfrac{x}{\varphi}\right)^{\frac{\beta}{b}-1}(1+x)^{-\frac{1}{\varphi}-1}~d\left(\dfrac{x}{\varphi}\right)
+=\dfrac{1}{\varphi^\frac{\beta}{b}~b}\int_0^\infty x^{\frac{\beta}{b}-1}(1+x)^{-\frac{1}{\varphi}-1}~dx
+=\dfrac{1}{\varphi^\frac{\beta}{b}~b}B\left(\dfrac{\beta}{b},\dfrac{1}{\varphi}-\dfrac{\beta}{b}+1\right)
+\therefore\int_{-\infty}^\infty\beta x^ne^{-\beta x}\left(1+\varphi e^{-bx}\right)^{-\frac{1}{\varphi}-1}~dx=(-1)^n\beta\dfrac{d^n}{d\beta^n}\left(\dfrac{1}{\varphi^\frac{\beta}{b}~b}B\left(\dfrac{\beta}{b},\dfrac{1}{\varphi}-\dfrac{\beta}{b}+1\right)\right)(b=\beta)

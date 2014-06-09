@@ -1,0 +1,25 @@
+\int_{-1}^{1}(x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}\sin5xdx
+\int_{-1}^{1}\frac{(x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}\sin5x}{\sqrt{1-x^{2}}}dx
+f(x)
+f(-x) = -f(x)
+f(-x)=f(x)
+f(x)
+f(x)
+\int_{-1}^1 f(x) \hspace{4pt} dx = 0
+\int_{-1}^1 f(x) dx = 2 \int_0^1 f(x) dx 
+f(x) = (x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}\sin5x
+ \begin{align*} f(-x) &= (-x^{5} + x^{3} +x)(1+x^{2})^{\frac{1}{4}} \sin5(-x) \\  &= (-x^{5} + x^{3} +x)(1+x^{2})^{\frac{1}{4}} (-\sin 5x)\\  &= (x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}\sin 5x = f(x)\\ \end{align*} 
+(1+x^2)^{\frac{1}{4}} \approx 1+\frac{1}{4}x^{2}
+ 2 \int_0^1 (x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}\sin5x dx \approx 2 \int_0^1 (x^{5}-x^{3}-x)(1+\frac{x^2}{4})\sin5x dx
+ 2 \int_0^1 \left( \frac{3}{4} x^5 \sin(5x) -x \sin(5x) - \frac{5x^3}{4} \sin(5x) + \frac{x^7}{4} \sin(5x) \right) dx 
+ \approx 2 \left( \frac{98165 \cos(5) -22233 \sin(5)}{312500} \right) = 0.314658 
+ \int_{-1}^1 \frac{(x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}}{\sqrt{1-x^2}}\sin5x dx = 2  \int_0^1 \frac{(x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}}{\sqrt{1-x^2}}\sin5x dx
+ \frac{1}{\sqrt{1-x^2}} = (1-x^2)^{\frac{-1}{2}} \approx (1+\frac{x^2}{2}) 
+ \int_{-1}^1 \frac{(x^{5}-x^{3}-x)(1+x^{2})^{\frac{1}{4}}}{\sqrt{1-x^2}}\hspace{4pt}sin5x \hspace{4pt} dx = 2  \int_0^1 (x^{5}-x^{3}-x)(1+\frac{1}{4}x^{2})(1+\frac{1}{2}x^2)\sin5x dx
+ = 2 \int_0^1 \left(\frac{x^9}{8} + \frac{x^7}{4} - \frac{x^5}{8} - \frac{7x^3}{8} -x \right)\sin5x dx 
+ = \frac{2}{15625000} \left( (703125x^8 - 481250 x^6 + 186875 x^4 -1730325 x^2 - 486574)\sin5x - 5x(78125 x^8 - 68750x^6 + 37375 x^4-576775x^2 -486574)\cos5x \right) 
+0
+1
+0.406494
+0
+1

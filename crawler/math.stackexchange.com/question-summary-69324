@@ -1,0 +1,16 @@
+K_{n}
+K_{n} = \sum\limits_{j=-n}^{n} D_{j}(t)
+D_{n} = \sum\limits_{j=-n}^{n}e^{ijt}
+e^{ijt}
+t\in [-\pi,\pi)
+j\in\mathbb{Z}
+ D_n(t)=\frac{e^{i(2n+1)t/2}-e^{-i(2n+1)t/2}}{e^{it/2}-e^{-it/2}}\tag{1}=\frac{\sin((2n+1)t/2)}{\sin(t/2)} 
+\begin{align} F_N(t) &=\frac{1}{N}\sum_{n=0}^{N-1}D_n(t)\\ &=\frac{1}{N}\frac{e^{iNt}-2+e^{-iNt}}{(e^{it/2}-e^{-it/2})^2}\\ &=\frac{1}{2N}\frac{1-\cos(Nt)}{\sin^2(t/2)}\\ &=\frac{1}{N}\frac{\sin^2(Nt/2)}{\sin^2(t/2)}\tag{2} \end{align} 
+K_{n} = \frac{1}{n} \sum_{k=0}^{n-1} D_k(t)
+ D_n(t) = \sum_{k=-n}^n \exp(i k t) = \exp(-i t n) \sum_{k=0}^{2n} \exp(i k t) = \mathrm{e}^{-i t n} \frac{1-\exp(i t (2n+1))}{1-\exp(i t)} = \frac{\sin ( n t + \frac{t}{2})}{\sin(\frac{t}{2})} 
+ \begin{eqnarray}  K_n &=& \frac{1}{n \sin(t/2)} \sum_{k=0}^{n-1} \sin\left( k t+\frac{t}{2}\right) \\    &=& \frac{1}{n \sin(t/2)^2} \frac{1}{2}\sum_{k=0}^{n-1} \left( \cos(k t) - \cos((k+1)t)\right)   \\    &=& \frac{1}{2 n \sin(t/2)^2} \left( 1 - \cos( n t) \right) =      \frac{1}{n} \left( \frac{\sin(n t/2)}{\sin(t/2)} \right)^2 \ge 0   \end{eqnarray} 
+n
+t=2k\pi
+D_j(t)
+e^{it}-1
+\frac{1}{n}\sum_{j=0}^{n-1} D_j(t)=\begin{cases} \frac{1-\cos{nt}}{(1-\cos{t})n} &\mbox{if } t\not=2k\pi \\ n & \mbox{if } t=2k\pi \end{cases}\ge0

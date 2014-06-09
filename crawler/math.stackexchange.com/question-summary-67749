@@ -1,0 +1,24 @@
+u(0,t)=0
+t>0
+u(x,0)=0
+0<x<R
+u_t + u_x =f(x,t)
+t>0
+\int_0^r (u(x,t))^2 dx \leq e^t \int_0^t \int_0^R f^2(x,s)dx ds
+t\ge x
+x \ge t
+u^2
+f^2
+u^2
+[0,R]\times[0,t]
+t
+e^t
+u(x,t)=\int_0 ^x f(s, s + t - x) d s
+u(x,t)=\int_0 ^t f(s + x - t, s) d s
+u
+[0,R]
+uu_t=\frac{1}{2}(u^2)_t
+ \frac{1}{2}\frac{d}{dt} \int_0^R u^2(x,t)dx + \frac{1}{2}u^2(R,t) = \int_0^R f(x,t)u(x,t)dx \leq \left( \int_0^R f^2 (x,t)dx \right) ^{\frac{1}{2}}\left( \int_0^R u^2 (x,t)dx \right) ^{\frac{1}{2}} 
+ \frac{d}{dt} \int_0^R u^2(x,t)dx = 2\left( \int_0^R u^2 (x,t)dx \right) ^{\frac{1}{2}} \frac{d}{dt} \left( \int_0^R u^2 (x,t)dx \right) ^{\frac{1}{2}}  
+ \frac{d}{dt}\left( \int_0^R u^2 (x,t)dx \right) ^{\frac{1}{2}} \leq \left( \int_0^R f^2 (x,t)dx \right) ^{\frac{1}{2}} 
+ \left( \int_0^R u^2(x,t)dx \right)^{\frac{1}{2}} \leq \int_0^t \left( \int_0^R f^2(x,t)dx \right)^{\frac{1}{2}} \leq t^{\frac{1}{2}} \left( \int_0^t  \int_0^R f^2(x,s)dx ds \right)^{\frac{1}{2}} 

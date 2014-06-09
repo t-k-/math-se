@@ -1,0 +1,28 @@
+n \geq 1
+a \neq 1
+\sum_{i=0}^{n} a^i = \frac{a^{n+1} - 1}{a - 1}
+\sum_{k=1}^{n} f(k) = g(n)
+f(1) = g(1)
+g(n + 1) - g(n) = f(n + 1)
+f(1) = \sum_{i=0}^{1} a^i = a^0 + a^1 = a^1 + 1
+g(1) = \frac{a^{1+1} - 1}{a - 1} = \frac{a^2 -1}{a - 1} = \frac{(a + 1)(a - 1)}{a - 1} = a + 1
+f(1) = g(1)
+f(n)
+a^{n+1}
+g(n)
+\frac{a^{n+1+1} - 1}{a + 1 - 1} - \frac{a^{n+1} - 1}{a - 1}
+\begin{aligned} a^{n+1} &=^? \frac{a^{n+1+1} - 1}{a + 1 - 1} - \frac{a^{n+1} - 1}{a - 1}\\ &=^? \frac{a^{n+2} - 1}{a} - \frac{a^{n+1} - 1}{a - 1}\\ &=^? \frac{a^na^2 - 1}{a} - \frac{a^na^1 - 1}{a - 1}\\ &=^? \frac{a^na^2 - 1}{a}(\frac{a - 1}{a - 1}) - \frac{a^na^1 - 1}{a - 1}(\frac{a}{a})\\ &=^? \frac{(a^na^2 - 1)(a - 1)}{a(a - 1)} - \frac{a^na^2 - a}{a(a - 1)}\\ &=^? \frac{a^na^2(a - 1) - 1(a - 1) - a^na^2 + a}{a(a - 1)}\\ &=^? \frac{a^na^3 - a^na^2 - a + 1 - a^na^2 + a}{a(a - 1)}\\ &=^?\frac{a^na^3 -2a^na^2 + 1}{a^2 - a}\\ \end{aligned}
+\frac{a^na^3 -2a^na^2 + 1}{a^2 - a}
+g(n+1)-g(n)
+\frac{a^{n+1+1} - 1}{a + 1 - 1} - \frac{a^{n+1} - 1}{a - 1}\;,
+\frac{a^{(n+1)+1}}{a-1}-\frac{a^{n+1}-1}{a-1}\;.
+n
+a
+a+1
+n
+a
+\dfrac{a^{n+1+1} - 1}{\color{red}{\underbrace{a + 1}_{\text{Incorrect}}} - 1} - \dfrac{a^{n+1} - 1}{a - 1}
+\dfrac{a^{n+1+1} - 1}{a - 1} - \dfrac{a^{n+1} - 1}{a - 1} = \dfrac{a^{n+2} - a^{n+1}}{a-1} = a^{n+1} \dfrac{a-1}{a-1} = a^{n+1}, \,\,\,\,\,\, \forall a \neq 1
+\sum_{i=0}^{n} a^i = \frac{a^{n+1} - 1}{a - 1}
+\sum_{i=0}^{n+1} a^i =\sum_{i=0}^{n} a^i +a^{n+1}= \frac{a^{n+1} - 1}{a - 1}+a^{n+1}=\frac{a^{n+1} - 1+aa^{n+1}-a^{n+1}}{a - 1}=
+=\frac{ - 1+aa^{n+1}}{a - 1}=\frac{ a^{(n+1)+1}-1}{a - 1}

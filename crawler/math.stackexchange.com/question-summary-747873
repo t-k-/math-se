@@ -1,0 +1,14 @@
+\begin{bmatrix}1& 1\\ 0& 1\end{bmatrix}.
+\begin{bmatrix}-6& -2\\ 10&3\end{bmatrix}
+A=\begin{bmatrix}1& 1\\ 0& 1\end{bmatrix}=\begin{bmatrix}1& 0\\ 0& 1\end{bmatrix}+\begin{bmatrix}0& 1\\ 0& 0\end{bmatrix}=X+N
+e^A=e^Xe^N=\begin{bmatrix}e& e\\ 0& e\end{bmatrix}
+B=\begin{bmatrix}-6& -2\\ 3& 10\end{bmatrix}=\begin{bmatrix}-1/2& -5/2\\ 1& 1\end{bmatrix}\begin{bmatrix}-2& 0\\ 0& -1\end{bmatrix}\begin{bmatrix}-1/2& -5/2\\ 1& 1\end{bmatrix}^{-1}=PEP^{-1}
+e^B=Pe^EP^{-1}=e^{-2}\begin{bmatrix}5-4e& 2(1-e)\\ 10(e-1)& 5e-4\end{bmatrix}
+A = I + N
+e^A = e^{j_\lambda} = e^{\lambda I + N} = e^{\lambda}\sum_{j=0}^{n-1} \dfrac{1}{j!}N^j
+e^A = e\begin{bmatrix}1& 1\\ 0& 1\end{bmatrix} = \begin{bmatrix}e& e\\ 0& e\end{bmatrix}
+A = PJP^{-1} = \begin{bmatrix}-1& -2\\ 2& 5\end{bmatrix}\begin{bmatrix}-2& 0\\ 0& -1\end{bmatrix}\begin{bmatrix}-5& 2\\ 2& 1\end{bmatrix}
+e^A = Pe^JP^{-1} = \begin{bmatrix}\frac{5-4 e}{e^2} &-\frac{2 (e-1)}{e^2} \\ \frac{10 (e-1)}{e^2}&\frac{5 e-4}{e^2}\end{bmatrix}
+e^A=I+A+\frac12 A^2 + \frac1{3!}A^3 + ...
+A^i
+i

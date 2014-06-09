@@ -1,0 +1,33 @@
+n
+P
+1
+11
+3n
+1 - 11 \cdot \frac{(n-1)^{3n}}{n^{3n}} \leq P \leq 1 -  11 \cdot \frac{11(n-1)^{3n}}{n^{3n}} + 5 \cdot 11 \cdot \frac{(n-2)^{3n}}{n^{3n}}
+\mathbb{P}(
+)=\frac{|E|}{|Q|}=\frac{11 \cdot (n-1)^{3n}}{n^{3n}}
+A_i
+i
+M
+A = \cup_{i=1}^m A_i
+\{1,\ldots,m\}
+M
+\bar{A}
+ \renewcommand{\Pr}{\mathbb{P}} \sum_{i=1}^m \;\Pr(A_i) - \sum_{1 \leq i < j \leq m} \Pr(A_i \cap A_j) \leq \Pr(A) \leq \sum_{i=1}^m \;\Pr(A_i) \> . 
+\Pr(A_i) = (1-1/n)^M
+i
+\Pr(A_i \cap A_j) = (1-2/n)^M
+i \neq j
+ m\Big(1-\frac{1}{n}\Big)^M - \frac{m(m-1)}{2}\Big(1-\frac{2}{n}\Big)^M \leq \Pr(A) \leq m \Big(1-\frac{1}{n}\Big)^M 
+\Pr(\bar{A}) = 1 - \Pr(A)
+m = 11
+M = 3 n
+M
+n
+m
+c > 0
+M = n \log m + c n
+\{1,\ldots,m\}
+M = n \log m + c n
+ m(1-1/n)^M = m (1 - 1/n)^{n \log m + c n} \leq e^{-c} 
+ \Pr(\bar{A}) \geq 1 - e^{-c} \> . 

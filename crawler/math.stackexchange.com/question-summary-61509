@@ -1,0 +1,36 @@
+L^1
+L^2
+T: L^1(\mathbb{R}^n) \to L^1(\mathbb{R}^n)
+T
+\mu
+C_0(\mathbb{R}^n)
+T(f) = f \ast \mu
+f \in L^1(\mathbb{R}^n)
+\|T\|=\|\mu\|
+T:L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)
+T
+m(y)
+(T\hat{f})(y) = m(y) \hat{f}(y)
+f \in L^2(\mathbb{R}^n)
+\|T\|=\|m\|_\infty
+\phi_\epsilon(x)=\phi(x/\epsilon)/\epsilon^n
+c
+\int_{\mathbb{R}^n}\phi(x)\;\mathrm{d}x=1
+ \phi(x)=\left\{\begin{array}{cl}c\;e^{|x|^2/(|x|^2-1)}&\text{if }|x|<1\\0&\text{if }|x|\ge1\end{array}\right. 
+\|T\phi_\epsilon\|_{L^1}
+\epsilon\to0
+\{\epsilon_k\}
+\mu
+T\phi_{\epsilon_k}\to\mu
+L^1
+T
+(Tf)^\wedge=m\hat{f}
+T
+m
+\psi(x)=e^{-\pi x^2}
+\hat{\psi}=\psi
+m(\xi)=(T^{\;*}\psi)^\wedge(\xi)/\psi(\xi)
+\|m\|_{L^\infty}=\|T\|_{L^2}
+ \begin{align} f*\mu(x) &=\lim_{k\to\infty}\;\int_{\mathbb{R}^n}f(y)\;T\phi_{\epsilon_k}(x-y)\;\mathrm{d}y\\ &=\lim_{k\to\infty}\;\int_{\mathbb{R}^n}f(y)\;T(\phi_{\epsilon_k}(x-y))\;\mathrm{d}y\\ &=\lim_{k\to\infty}\;\int_{\mathbb{R}^n}T(f(y)\;\phi_{\epsilon_k}(x-y))\;\mathrm{d}y\\ &=\lim_{k\to\infty}\;T\left(\int_{\mathbb{R}^n}f(y)\;\phi_{\epsilon_k}(x-y)\;\mathrm{d}y\right)\\ &=T\left(\lim_{k\to\infty}\;\int_{\mathbb{R}^n}f(y)\;\phi_{\epsilon_k}(x-y)\;\mathrm{d}y\right)\\ &=Tf(x) \end{align} 
+ \begin{align} \psi(\xi)\;(Tf)^\wedge(\xi) &=(\psi*Tf)^\wedge(\xi)\\ &=\left(\int_{\mathbb{R}^n}\psi(x-y)\;Tf(y)\;\mathrm{d}y\right)^\wedge(\xi)\\ &=\left(\int_{\mathbb{R}^n}\psi(y)\;Tf(x-y)\;\mathrm{d}y\right)^\wedge(\xi)\\ &=\left(\int_{\mathbb{R}^n}T^{\;*}\psi(y)\;f(x-y)\;\mathrm{d}y\right)^\wedge(\xi)\\ &=(T^{\;*}\psi)^\wedge(\xi)\hat{f}(\xi) \end{align} 
+ (Tf)^\wedge(\xi)=m(\xi)\hat{f}(\xi) 

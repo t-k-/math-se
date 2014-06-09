@@ -1,0 +1,16 @@
+I_{n}(x)=\int (x^{2}+1)^{(n-0.5)} dx
+I_{n}(x)
+\sum_{k\leq n} h_{k} I_{k}(x)
+h_{k}
+II_{n}(x)=\int cos^{n}(x) dx
+n II_{n}(x)-(n-1)II_{n-2}(x)=sin(x)cos^{n-1}(x)
+\sinh y:=x
+\ \cosh y:=\sqrt{1+x^2}
+x:=\sinh y\ ,\quad dx=\cosh y\ dy
+I_n(x)=\int\cosh^{2n}y\ dy\Bigr|_{y:={\rm arsinh} x}\ .
+J_n(y):=\int\cosh^{2n}y\ dy\ .
+\eqalign{J_n(y)&=\int\cosh^{2n-1}y\ \cosh y\ dy\cr &= \cosh^{2n-1}y\ \sinh y - (2n-1)\int \cosh^{2n-2}y\ \sinh^2 y\ dy \cr &= \cosh^{2n-1}y\ \sinh y - (2n-1)\int \cosh^{2n-2}y\ (\cosh^2 y-1)\ dy\cr &=\cosh^{2n-1}y\ \sinh y -(2n-1)\bigl(J_n(y)-J_{n-1}(y)\bigr)\ .\cr }
+J_n(y)={1\over 2n}\bigl(\cosh^{2n-1}y\ \sinh y +(2n-1) J_{n-1}(y)\bigr)\ .
+I_n(x) = x\ {}_2F_1\bigl(0.5, 0.5 - n; 1.5; -x^2\bigr)
+F(b-) = \frac{2b - c + (a-b)z}{b - c} F + \frac{1 - z}{c - b}F(b+)
+I(n) = \frac{0.5 + 2n + nx^2}{1+n}I(n-1) + \frac{1 + x^2}{1 + n}I(n-2)

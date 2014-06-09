@@ -1,0 +1,78 @@
+1) \ \sum_{k=0}^{m}(-1)^k {n \choose k} {n \choose m-k}
+2) \ \sum_{A,B\subseteq X} |A\cup B|
+|X|=n
+\sum_{i=0}^{k} {n \choose i} {m \choose k-i}= {n+m \choose k}
+\sum_{A,B\subseteq X} |A\cup B|=\sum_{i=0}^{n} {n \choose i}\cdot i \cdot 2^i
+i
+{ n\choose i} 
+i
+2^i
+n=1
+ \color{red}{S_X=\sum_{A\subseteq X}\sum_{B\subseteq X}|A\cup B|}, 
+ S_X=\sum_{A\subseteq X}\sum_{B\subseteq X}\sum_{x\in X}[x\in A\cup B]. 
+[x\in A\cap B]=[x\in A]+[x\in B]-[x\in A]\cdot[x\in B]
+s_x=2t_x-r_x
+v_x
+X
+|X|=n
+v_x=2^n
+x
+u_x
+X
+x
+X\setminus\{x\}
+|X\setminus\{x\}|=n-1
+u_x=2^{n-1}
+x
+ S_X=\sum_{x\in X}s_x,\qquad\text{with}\quad s_x=\sum_{A\subseteq X}\sum_{B\subseteq X}[x\in A\cup B]. 
+ t_x=\sum_{A\subseteq X}[x\in A]\cdot\sum_{B\subseteq X}1=u_x\cdot v_x, 
+ r_x=\sum_{A\subseteq X}[x\in A]\cdot\sum_{B\subseteq X}[x\in B]=(u_x)^2, 
+ u_x=\sum_{A\subseteq X}[x\in A],\qquad v_x=\sum_{A\subseteq X}1. 
+t_x=2^{2n-1}
+r_x=2^{2n-2}
+s_x=3\cdot2^{2n-2}
+x
+ \color{red}{S_X=n\cdot3\cdot4^{n-1}}. 
+1)
+(3)
+(1-x^2)^n
+(4)
+(1)
+(2)
+x
+ f(x)=(1-x)^n=\sum_{k=0}^n(-1)^k\binom{n}{k}x^k\tag{1} 
+g(x)=(1+x)^n=\sum_{k=0}^n\binom{n}{k}x^k\tag{2} 
+ \begin{align} f(x)g(x)=(1-x^2)^n&=\sum_{k=0}^n(-1)^k\binom{n}{k}x^{2k}\tag{3}\\                  &=\sum_{m=0}^n\left(\sum_{k=0}^{m}(-1)^k {n \choose k} {n \choose m-k}\right)x^m\tag{4} \end{align} 
+ \sum_{k=0}^{m}(-1)^k {n \choose k} {n \choose m-k}=\left\{\begin{array}{}(-1)^{m/2}\binom{n}{m/2}&\text{when }m\text{ is even}\\0&\text{when }m\text{ is odd}\end{array}\right. 
+a_k = (-1)^k \binom{n}{k}
+b_k = \binom{n}{k}
+a
+b
+(1-x)^n
+(1+x)^n
+0\leqslant m \leqslant 2n
+m>2n
+    \sum_{k=0}^{m}(-1)^k {n \choose k} {n \choose m-k} = [x]^m (1-x)^n (1+x)^n = [x]^m (1-x^2)^n = \left\{ \begin{array}{cl} (-1)^{m/2} \binom{n}{m/2} &  m \bmod 2 =0 \\ 0 & m \bmod 2 =1  \end{array} \right. 
+p
+q
+r
+A \cap B^c
+B \cap A^c
+A \cap B
+p,q,r \geqslant 0
+p+q+r \leqslant n
+p+q+r
+n
+ \begin{eqnarray}    \sum_{A,B \subseteq X} | A \cup B | &=& \sum_{p=0}^n \sum_{q=0}^n \sum_{r=0}^n [ p+q+r \leqslant n] (p+q+r) \binom{n}{p+q+r} \binom{p+q+r}{p,q,r} \\ &=&  \sum_{p=0}^n \sum_{q=0}^{n-p} \sum_{r=0}^{n-p-r} \frac{n! (p+q+r)}{(n-p-q-r)!p! q! r!} \\ &\stackrel{\text{multinomial}}{=}& \left. \left( x \frac{ \partial}{\partial x} + y \frac{\partial}{\partial y} + z \frac{\partial}{\partial z} \right) (1+x+y+z)^n \right|_{x=1,y=1,z=1} \\ &=& 3 \cdot n \cdot 4^{n-1} \end{eqnarray} 
+\binom{n}{k} \binom{n}{m-k}
+k
+m-k
+n
+\phi
+k
+C
+\phi(C)
+\phi
+m
+k=m/2
+m/2

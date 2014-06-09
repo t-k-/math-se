@@ -1,0 +1,48 @@
+E[M] \approx \frac{H_k}{\log(1+k/n)} - \frac{1}{2}
+n
+E_{\max}(1,k) = 1
+E_{\max}(2,k) = 1+\frac{2}{k+1}
+E_{\max}(3,k) = 1+\frac{6(k+1)}{(k+1)(k+2)}
+E_{\max}(4,k) = 1+\frac{12(k^2+2k+3)}{(k+1)(k+2)(k+3)}
+E_{\max}(5,k) = 1+\frac{20(k^3+3k^2+14k+6)}{(k+1)(k+2)(k+3)(k+4)}
+E_{\max}(6,k) = 1+\frac{30(k^4+4k^3+39k^2+32k+44)}{(k+1)(k+2)(k+3)(k+4)(k+5)}
+k
+n
+n+k=m
+k
+k
+x_i
+1\cdots m
+\sum x_i =m
+\displaystyle  E_M = E(max(x_i)) -1 \approx E(max(y_i)) -1 = G\left(k,\frac{k}{k+n}\right) - 1
+\displaystyle  G(k,p) = \sum_{i=1}^k \binom{k}{i} (-1)^{i+1} \frac{1}{1-(1-p)^i}
+\displaystyle G(k,p) \approx \frac{H_k}{- \log(1-p)} +  \frac{1}{2} 
+\displaystyle H_k=\sum_{i=1}^k \frac{1}{i}
+\displaystyle  E_M \approx \frac{H_k}{\log(1+k/n)} - \frac{1}{2}
+\displaystyle  E_M \approx n \frac{ H_k} {k} - \frac{1}{2} \approx n \frac{ H_k} {k}
+ \hspace{14pt} (n \to \infty)
+n,k
+E_M
+\log(k)
+m
+{\bf x}=\{x_i\}
+i=1\cdots k
+x_i\ge 1
+\sum x_i = m= n+k
+P({\bf x}) = \frac{1}{Z}
+Z(n,k)
+{\bf y}=\{y_i\}
+p=k/m
+\displaystyle P({\bf y}) = \prod p (1-p)^{y_i} = p^k (1-p)^{\sum y_i}
+y_i \ge 1
+ s({\bf y})=\sum y_i
+s = m
+P({\bf y} | s = m ) = P({\bf x})
+E[g({ \bf x})]
+g({\bf x}) = max(x_1 \cdots x_k)
+E[g({\bf y})]
+\displaystyle E[g({\bf y})] = \int g({\bf y}) P({\bf y}) dy = \int g({\bf y}) \sum_s P({\bf y} | s) P(s) dy 
+p
+E(s)=m
+P(s)
+E[g({\bf y})] \approx  E[g({\bf x})]

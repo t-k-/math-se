@@ -1,0 +1,26 @@
+(\Omega,\mathcal F, P)
+A_1,A_2,...,A_n
+\mathcal F
+P(\bigcup_{i=1}^nA_i)=\sum_{k=1}^n
+\sum_{\mathcal J \in \{1,...,n\}; |\mathcal J|=k} (-1)^{k+1}P(\bigcap_{i \in \mathcal J} A_i)
+n=2
+A, B
+\mathcal F
+A=(A \setminus B) \cup (A\cap B)
+B=(B \setminus A) \cup (A\cap B)
+P(A)=P(A \setminus B)+P(A\cap B)
+P(B)=P(B \setminus A)+P(A\cap B)
+A \cup B
+A \cup B= (A\setminus B) \cup (A \cap B) \cup (B \setminus A)
+P(A \cup B)=P(A \setminus B)+P(A\cap B)+P(B \setminus A)=P(A)+P(B)-P(A \cap B)
+n=2
+n \implies
+n+1
+P(\cup_{i=1}^{n+1} A_i)
+P(\cup_{i=1}^{n+1} A_i)=P((\cup_{i=1}^n A_i \setminus A_{n+1}) \cup A_{n+1})=P(\cup_{i=1}^n A_i \setminus A_{n+1})+P(A_{n+1})
+P(\cup_{i=1}^n A_i \setminus A_{n+1})
+P(\cup_{i=1}^n A_i \setminus A_{n+1})=P(\cup_{i=1}^n (A_i \setminus A_{n+1}))=\sum_{k=1}^n
+\sum_{\mathcal J \in \{1,...,n\}; |\mathcal J|=k} (-1)^{k+1}P(\bigcap_{i \in \mathcal J} (A_i\setminus A_{n+1}))
+\sum_{\mathcal J \in \{1,...,n\}; |\mathcal J|=k} (-1)^{k+1}P(\bigcap_{i \in \mathcal J} (A_i\setminus A_{n+1})) +P(A_{n+1})
+\sum_{k=1}^{n+1}
+\sum_{\mathcal J \in \{1,...,n+1\}; |\mathcal J|=k} (-1)^{k+1}P(\bigcap_{i \in \mathcal J} A_i)

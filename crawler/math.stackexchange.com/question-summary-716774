@@ -1,0 +1,29 @@
+\sin \theta = \frac{2}{\pi}-\frac{4}{\pi}\sum_1^{\infty}\frac{\cos 2n\theta}{4n^2-1}\;\;\;\;(0\leq\theta\leq \pi)\;\;\;\;(*),
+\cos\theta=\frac{d}{d\theta}\sin\theta = -\int_{\pi/2}^\theta \sin\phi \:d\phi.
+(*)
+\cos\theta
+0 <\theta < \pi
+\sum_1^{\infty}\frac{(-1)^{n+1}}{n}\sin n\theta = \frac{\theta}{2}\;\;\text{for}\;\;-\pi < \theta < \pi.
+(*)
+(*)
+\frac{d}{d\theta}\sin\theta = \frac{8}{\pi}\sum_1^{\infty}\frac{n}{4n^2-1}\sin2n\theta = \cos\theta
+\cos\theta = -\int_{\pi/2}^\theta \sin\phi \;d\phi = -\int_{\pi/2}^\theta \left[\frac{2}{\pi}-\frac{4}{\pi}\sum_1^{\infty}\frac{\cos 2n\phi}{4n^2-1}\right]\;d\phi
+= -\int_{\pi/2}^\theta \frac{2}{\pi}\;d\phi + \frac{4}{\pi}\int_{\pi/2}^\theta\sum_1^{\infty}\frac{\cos 2n\phi}{4n^2-1}\;d\phi = -\left[ \frac{2\phi}{\pi} \right]_{\pi/2}^{\theta} + \frac{4}{\pi}\left[ \sum_1^{\infty}\frac{\sin2n\phi}{2n(4n^2-1)}\right]_{\pi/2}^\theta 
+= -\left[\frac{2\theta}{\pi}-1\right] + \frac{4}{\pi}\left[ \sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)}- \sum_1^{\infty}\frac{\sin n\pi}{2n(4n^2-1)} \right]
+= 1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)} = \cos\theta \;\;\;\text{?} 
+1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)} = \frac{8}{\pi}\sum_1^{\infty}\frac{n}{4n^2-1}\sin2n\theta = \cos\theta\;\;\;\;\;\;\;\; 0<\theta<\pi\;\;\;\;\text{?}
+\left|\frac{\cos 2n\theta}{4n^2-1}\right|\le\frac1{4n^2-1}\implies \;\text{since the series} \sum_{n=1}^\infty\frac1{4n^2-1}
+(\sin\theta)'=\cos\theta\stackrel?=\left(\frac{2}{\pi}-\frac{4}{\pi}\sum_1^{\infty}\frac{\cos 2n\theta}{4n^2-1}\right)'=\frac4\pi\sum_{n=1}^\infty\frac{2n\sin2n\theta}{4n^2-1}
+\int\sin\theta d\theta=-\cos\theta\stackrel?=\int\left(\frac{2}{\pi}-\frac{4}{\pi}\sum_1^{\infty}\frac{\cos 2n\theta}{4n^2-1}\right)d\theta=
+=\frac2\pi\theta-\frac4\pi\sum_{n=1}^\infty\frac{\sin2n\theta}{2n(4n^2-1)}
+1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)} = \frac{8}{\pi}\sum_1^{\infty}\frac{n}{4n^2-1}\sin2n\theta = \cos\theta\;\;\;\;\;\;\;\; 0<\theta<\pi\;\;\;\;
+1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)} = \frac{8}{\pi}\sum_1^{\infty}\frac{n}{4n^2-1}\sin2n\theta\;\;\;\;\;\;\;\; 0<\theta<\pi
+1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{\sin2n\theta}{2n(4n^2-1)}-\frac{8}{\pi}\sum_1^{\infty}\frac{n}{4n^2-1}\sin2n\theta = 0
+=1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\left(\frac{\sin2n\theta}{2n(4n^2-1)} - \frac{2n\sin 2n\theta}{4n^2-1}\right)
+=1-\frac{2\theta}{\pi} + \frac{4}{\pi}\sum_1^{\infty}\frac{(4n^2-1)(-\sin2n\theta)}{2n(4n^2-1)} = 1-\frac{2\theta}{\pi} - \frac{4}{\pi}\sum_1^{\infty}\frac{\sin 2n\theta}{2n}=0
+1-\frac{2\theta}{\pi}=\frac{4}{\pi}\sum_1^{\infty}\frac{\sin 2n\theta}{2n}
+\frac{\pi}{4}-\frac{\theta}{2}=\sum_1^{\infty}\frac{\sin 2n\theta}{2n}
+\sum_1^{\infty}\frac{(-1)^{n+1}}{n}\sin n\theta = \frac{\theta}{2}\;\;\;\;\;-\pi<\theta<\pi
+\frac{\pi}{4}-\sum_1^{\infty}\frac{(-1)^{n+1}}{n}\sin n\theta=\sum_1^{\infty}\frac{\sin 2n\theta}{2n},
+\frac{\pi}{4} = \sum_1^{\infty}\frac{\sin(2n-1)\theta}{2n-1}\;\;\;\;\;\;\;\; 0<\theta<\pi.
+1 = \frac{4}{\pi}\sum_1^{\infty}\frac{\sin(2n-1)\theta}{2n-1}\;\;\;\;\;\;\;\; 0<\theta<\pi.\;\;\;\;\blacksquare

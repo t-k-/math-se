@@ -1,0 +1,3 @@
+x:\mathbb{R}\rightarrow\mathbb{R}
+\int_{-\infty}^\infty|x(t)|^2dt<\infty
+\begin{eqnarray} \infty&>&\int_{-\infty}^\infty|x(t)|^2dt\\ &=&\int_{-\infty}^\infty\left(\sum_{k=-\infty}^\infty x(kT_s)\operatorname{sinc}(t/T_s-k)\right)\left(\sum_{l=-\infty}^\infty x(lT_s)\operatorname{sinc}(t/T_s-l)\right)dt\\ &=&\sum_{k=-\infty}^\infty \sum_{l=-\infty}^\infty x(kT_s)x(lT_s)\int_{-\infty}^\infty\operatorname{sinc}(t/T_s-k)\operatorname{sinc}(t/T_s-l)dt\\ &=&T_s^2\sum_{k=-\infty}^\infty |x(kT_s)|^2 \end{eqnarray}

@@ -1,0 +1,18 @@
+((P \to U \lor V) \to Z) \leftrightarrow ((P \to U) \to Z) \land ((P \to V) \to Z)
+\begin{array}{lcl} \begin{array}{l} G\vdash U\\ \hline G\vdash U\lor V \end{array} &\quad& \text{(Rv1)}\\ &\\ \begin{array}{l} G\vdash V\\ \hline G\vdash U\lor V \end{array} &\quad& \text{(Rv2)}\\ &\\ \begin{array}{l} G,\ U\vdash A\\ G,\ V\vdash A\\ \hline G,\ U\lor V \vdash A \end{array} &\quad& \text{(Lv)}\end{array}
+((P \to U \lor V) \to Z) \to ((P \to U) \to Z) \land ((P \to V) \to Z)
+\begin{array}{ll} U\vdash U\lor V\\ \hline P\to U\vdash P\to U\lor V\\ \hline (P\to U\lor V) \to Z\vdash (P\to U)\to Z \end{array}
+((P \to U) \to Z) \land ((P \to V) \to Z) \to ((P \to U \lor V) \to Z).
+Z
+(P \to U \lor V) \to (P \to U) \lor (P \to V),
+Z := (P \to U) \lor (P \to V)
+((P \to U) \to ((P \to U) \lor (P \to V))) \land ((P \to V) \to ((P \to U) \lor (P \to V))) \to ((P \to U \lor V) \to ((P \to U) \lor (P \to V)))
+(P \to U \lor V) \to ((P \to U) \lor (P \to V)).
+(A \to (B \lor C))
+((B \to Z) \land (C \to Z)) \to (A \to Z)
+P
+U
+V
+P \to U
+P \to V
+P

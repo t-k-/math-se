@@ -1,0 +1,150 @@
+k
+n
+m
+6
+49
+5
+\{2,3,4,5,6,26\}
+1936
+m \le k \le n
+m-1
+2
+3,4,5,6
+n-m+1
+n-m
+m
+n-m
+k-m
+{1,2,3,4,5,6}
+{1,2,3,4,5,6}
+k=m
+P(n,k,m)
+k
+n
+m
+P(n,k,m) = n-m+1
+k \ge m+1
+1
+P(n,k,m) = (n-m) \times \binom{n-m-1}{k-m} + \binom{n-m}{k-m}
+P(49,6,5) = (49-5) \times \binom{49-5-1}{6-5} + \binom{49-5}{6-5}
+P(49,6,5) = 44 \times \binom{43}{1} + \binom{44}{1}
+P(49,6,5) = 44 \times 43 + 44
+P(49,6,5) = 1936
+S
+[n]
+x_i
+y_i
+S
+n=7
+S=\{1,2,4,5,6\}
+x_1=2
+1,2\in K
+y_1=1
+3\notin K
+x_2=3
+y_2=1
+k
+S
+[n]
+m
+\bigl((x_i),(y_i)\bigr)
+\sum_ix_i=k, \sum_iy_i=n-k, x_i,y_i\geq1
+i
+x_i\geq m
+i
+x
+r
+S
+r
+(y_i)
+(x_1,\dots,x_r)
+1,n\in S
+x_1,y_1,x_2,y_2,\dots,x_{r-1},y_{r-1},x_r
+1,n\notin S
+y_1,x_1,y_2,x_2,\dots,y_r,x_r,y_{r+1}
+1\in S
+n\notin S
+x_1,y_1,x_2,y_2,\dots,x_r,y_r
+1\notin S
+n\in S
+y_1,x_1,y_2,x_2,\dots,y_r,x_r
+\mathbb N
+z_1+\cdots+z_p=q
+\binom{p+q-1}{p-1}
+\mathbb Z^+
+\binom{q-1}{p-1}
+z_i
+z_i-1
+\mathbb N
+z_1+\cdots+z_p=q-p
+x_i
+\geq1
+x_i
+x_i-1
+\mathbb N
+x_1+\cdots+x_r=k-r
+x_i\geq m-1
+i
+j
+A_j=\bigl\{(x_1,\dots,x_r): x_1+\cdots+x_r=k-r, x_j\geq m-1\bigr\}
+1\leq j_1<\cdots<j_\ell\leq r
+x_i
+x_i-(m-1)
+i=j_1,\dots,j_\ell
+A_{j_1}\cap\cdots\cap A_{j_\ell}
+\mathbb N
+x_1+\cdots+x_r=k-r-\ell(m-1)
+\bigl|A_{j_1}\cap\cdots\cap A_{j_\ell}\bigr|=\binom{k-\ell(m-1)-1}{r-1}
+(x_1,\dots,x_r)
+r
+\sum_{\ell=1}^r(-1)^{\ell-1}\sum_{1\leq j_1<\cdots<j_\ell\leq r}\bigl|A_{j_1}\cap\cdots\cap A_{j_\ell}\bigr|=\sum_{\ell=1}^r(-1)^{\ell-1}\binom r\ell\binom{k-\ell(m-1)-1}{r-1}\,.
+(y_1,\dots,y_s)
+\mathbb Z^+
+y_1+\cdots+y_s=n-k
+\binom{n-k-1}{s-1}
+s=r
+s=r+1
+s=r-1
+r
+(y_i)
+(x_1,\dots,x_r)
+\begin{align*} &\,\Biggl[\,\binom{n-k-1}{r-1}+\binom{n-k-1}{r}\Biggr]+\Biggl[\,\binom{n-k-1}{r}+\binom{n-k-1}{r+1}\Biggr]\\ =&\,\binom{n-k}{r}+\binom{n-k}{r+1}\\ =&\,\binom{n-k+1}{r+1}\,. \end{align*}
+k
+[n]
+m
+N(n,k,m)=\sum_{r\geq1}\binom{n-k+1}r\sum_{\ell=1}^r(-1)^{\ell-1}\binom r\ell\binom{k-\ell(m-1)-1}{r-1}
+k
+[n]
+m
+m+1
+N(n,k,m)-N(n,k,m+1)
+m
+x_i=m
+i
+k
+[n]
+m
+m
+r\geq1
+\binom{n-k+1}{r+1}
+x_1,\dots,x_r
+x_i
+m
+r
+\mathbb Z^+
+z_1+\cdots+z_{r-1}=k-m
+z_k
+x_j
+j\ne i
+z_k<m
+k
+\bigl|(A_1\cup\cdots\cup A_{r-1})^{\,c}\bigr|
+A_k=\bigl\{(w_1,\dots,w_{r-1})\in\mathbb N^{r-1}: w_1+\cdots+w_{r-1}=k-m-(r-1), w_k\geq m-1\bigr\}
+w_j=z_j-1
+(z_1,\dots,z_{r-1})
+\begin{align*} &\,\binom{k-m-1}{r-2}-\sum_{\ell=1}^{r-1}(-1)^{\ell-1}\binom{r-1}\ell\binom{k-m-\ell(m-1)-1}{r-2}\\ =&\,\sum_{\ell=0}^{r-1}(-1)^\ell\binom{r-1}\ell\binom{k-m-\ell(m-1)-1}{r-2}\,. \end{align*}
+k
+[n]
+m
+m
+\sum_{r\geq1}r\,\binom{n-k+1}{r+1}\sum_{\ell=0}^{r-1}(-1)^\ell\binom{r-1}\ell\binom{k-m-\ell(m-1)-1}{r-2}\,.

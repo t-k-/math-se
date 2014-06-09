@@ -1,0 +1,24 @@
+\delta(G)
+G
+G
+\delta(G)
+G=(V,E,w)
+w
+w: E\to \mathbb{R^{\geq 0}}
+d:V\to \mathbb{R^{\geq 0}}
+d(v) = \sum_{v\in e\in E} w(e)
+\delta(G) = \min_{v\in V} \{d(v)\}
+G
+\delta(G)
+G
+\min \{2\delta(G),|G|-1\}
+v_1,\ldots,v_n
+w(\{v_i,v_n\})\leq w(\{v_i,v_{i+1}\})
+i
+v_1,\ldots,v_{i-1},v_i,v_n,v_{n-1}\ldots,v_{i+1}
+ \delta(G) \leq \sum_{\{v_i,v_n\}\in E} w(\{v_i,v_n\}) \leq \sum_{i=1}^{n-1} w(\{v_i,v_{i+1}\})  
+ \delta(G) \leq \sum_{\{v_1,v_i\}\in E} w(\{v_1,v_i\}) \leq \sum_{i=2}^n w(\{v_{i},v_{i-1}\}) 
+2\delta(G)
+i
+\{v_1,v_{i+1}\}
+\{v_i,v_n\}

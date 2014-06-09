@@ -1,0 +1,18 @@
+\{H(t_i)\}
+T
+\theta
+n
+t
+ T[H(t)H(t')] = \theta(t-t')H(t)H(t') + \theta(t'-t)H(t')H(t) 
+ \int_{-\infty}^{t} dt_1 \int_{-\infty}^{t_1} dt_2 \ldots \int_{-\infty}^{t_{n-1}} dt_n H(t_1)H(t_2)\ldots H(t_n) 
+\frac{1}{n!}\int_{-\infty}^{t} dt_1 \int_{-\infty}^{t} dt_2 \ldots \int_{-\infty}^{t} dt_n T[H(t_1)H(t_2)\ldots H(t_n)] 
+n=2
+\int_{-\infty}^{t} dt_1 \int_{-\infty}^{t} dt_2T[H(t_1)H(t_2)] =  \int_{-\infty}^{t} dt_1 \int_{-\infty}^{t_1} dt_2 H(t_1)H(t_2) + \int_{-\infty}^{t} dt_1 \int_{t_1}^{t} dt_2 H(t_2)H(t_1)
+(-\infty, t_1=t]\times (-\infty, t_2=t]
+t_2=t_1
+K(t_1,t_2) = K(t_2,t_1)
+T[H(t_1)H(t_2)] = T[H(t_2)H(t_1)]
+\int_{t_o}^tdt'\int_{t_o}^{t'}dt'' H(t')H(t'')=\frac{1}{2}\int_{t_0}^tdt'\int_{t_0}^tdt''\mathcal{T}(H(t')H(t''))
+n
+n!
+\int_{t_o}^tdt_1\int_{t_o}^{t_1}dt_2\cdots\int_{t_o}^{t_{n-1}}dt_n H(t_1)\cdots H(t_n)=\frac{1}{n!} \int_{t_o}^tdt_1\int_{t_o}^{t}dt_2\cdots\int_{t_o}^{t}dt_n \mathcal{T}(H(t_1)\cdots H(t_n))

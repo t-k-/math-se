@@ -1,0 +1,7 @@
+\sigma (x) = \frac{1}{1+e^{-x}}
+\frac{d\sigma (x)}{d(x)} = \sigma (x)\cdot (1-\sigma(x))
+f(x)=1/\sigma(x) = 1+e^{-x}
+f'(x) = -\sigma'(x)/\sigma(x)^2
+f'(x) = -e^{-x} = 1-f(x)=1-1/\sigma(x) = (\sigma(x)-1)/\sigma(x)
+(1+e^{-x})\sigma=1
+\Rightarrow \frac{d\sigma}{dx}=\sigma.\frac{e^{-x}}{(1+e^{-x})}=\sigma.\frac{(1+e^{-x})-1}{(1+e^{-x})}=\sigma.\left[1-\frac{1}{(1+e^{-x})}\right]=\sigma.(1-\sigma)

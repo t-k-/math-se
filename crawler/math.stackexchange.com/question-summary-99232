@@ -1,0 +1,9 @@
+ \int_{0}^{1} \frac{x^n}{1+x^n} \mathrm dx \sim \frac{\ln(2)}{n}
+ a
+ \int_{0}^{1} \frac{x^n}{1+x^n} \mathrm dx=\frac{\ln(2)}{n}+\frac{a}{n^2}+o\left(\frac{1}{n^2}\right)? 
+I-n:=\int_0^1\frac{x^n}{1+x^n}
+t=x^n
+|1-t^{\frac 1n}|=\left|\int_0^{\frac{\ln t}n}e^t dt\right|\leq \frac 1n|\ln t|
+\lim_{n\to\infty}\int_0^1\frac{\ln(1+t)}t(1-t^{\frac 1n})dt=0
+a=-\int_0^1\frac{\ln(1+t)}tdt
+ \begin{eqnarray} \int_{0}^{1} \frac{x^n}{1+x^n} \mathrm dx &=& -\int_{0}^{1} \sum_{k=1}^\infty(-x^n)^k \mathrm dx \\ &=& -\sum_{k=1}^\infty\int_{0}^{1}(-x^n)^k \mathrm dx \\ &=& -\sum_{k=1}^\infty\frac{(-1)^k}{kn+1} \\ &=& -\sum_{k=1}^\infty\frac1{kn}\frac{(-1)^k}{1+\frac1{kn}} \\ &=& \sum_{k=1}^\infty\sum_{l=0}^\infty(-1)^k(-kn)^{-(l+1)} \\ &=& -\sum_{l=0}^\infty (-1)^ln^{-(l+1)}\sum_{k=1}^\infty(-1)^kk^{-(l+1)} \\ &=& -\frac1n\sum_{k=1}^\infty\frac{(-1)^k}k+\sum_{l=1}^\infty(-1)^ln^{-(l+1)}\left(1-2^{-l}\right)\zeta(l+1) \\ &=& \frac{\log2}n-\frac{\pi^2}{12}\frac1{n^2}+o\left(\frac1{n^2}\right)\;. \end{eqnarray} 

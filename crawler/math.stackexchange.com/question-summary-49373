@@ -1,0 +1,26 @@
+f
+0
+C
+1
+1
+f(C) = 1
+f(C) = 0
+ \begin{pmatrix}   p_{1,1} & \ldots & p_{1,n}  \\   \vdots & \ddots & \vdots  \\   p_{n,1} & \ldots & p_{n,n} \end{pmatrix} . 
+\sum_{i=1}^np_{k,i}=1
+k
+p_{k,i}=0
+p_{k,i}=p_{k,j}\equiv p_k=\tfrac1n
+p_{k,i}=0
+i
+n\ln(n)
+0
+0
+1
+   H_k = -\sum_ip_{k,i}\cdot\ln(p_{k,i}) 
+   \bigl.H_k\bigr|_{p_{k,i}=p_{k,j}}   = -\sum_ip_{k}\cdot\ln(p_{k})   = -n\cdot p_{k}\cdot\ln(p_{k})   = -n\cdot \tfrac1n\cdot\ln(\tfrac1n)   = -\ln(\tfrac1n)   = \ln(n) 
+   \bigl.H_k\bigr|_{p_{k,i}=0\ \forall i\neq j}   = -0 - \ldots - p_{k,j}\ln (p_{k,j}) - \ldots -0   = -1\cdot \ln(1)   = 0 
+   H := -\sum_{k}\sum_{i}p_{k,i}\cdot\ln(p_{k,i}) 
+   f:= 1-\frac{H}{n\ln(n)}   = 1 + \sum_{k,i}\frac{p_{k,i}\ln(p_{k,i})}{n\cdot\ln(n)} 
+R_i
+i
+f = (R_1 + ..R_n)/n

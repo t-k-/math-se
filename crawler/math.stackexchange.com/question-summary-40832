@@ -1,0 +1,34 @@
+R^2
+R^2
+R^2 \equiv 1 - \frac{SS_{\rm err} }{ SS_{\rm tot}} = 1 - \frac{\sum_i (y_i - f_i)^2}{\sum_i (y_i-\bar{y})^2}
+f_i
+R^2
+b_n
+b_{n+1}
+b_n
+y_{n+1}
+x_{n+1}
+R_n^2 = 1 - \frac{N_n}{D_n}
+D_n = {\sum_{i=0}^n (y_i-\bar{y_n})^2}
+D_{n+1}
+\bar{y_{n+1}} = \bar{y_n} + \frac{1}{n+1}(y_{n+1} - \bar{y_n})
+D_{n+1} = D_n + \frac{n}{n+1}(\bar{y_n}-y_{n+1})^2
+f_{i,i}
+f_{i,n}
+N_n = {\sum_{i=0}^n (y_i - f_{i,i})^2}
+N_{n+1} = N_n + (y_{n+1} - f_{n+1,n+1})^2
+D_{n+1}
+N_{n+1}
+D_0 = 0
+N_0 = 0
+\bar{y_n} = 0
+R_{n+1}^2 = 1 - \frac{N_{n+1}}{D_{n+1}}
+R^2 \equiv \frac{\sum_i (f_i - \bar{f_i})^2}{\sum_i (y_i-\bar{y})^2}
+R^2
+R^2
+\sum_i (y_i - f_{i,n})^2
+x_i
+b_n
+N_{n+1} = \sum_{i=1}^{n+1} (y_i - f_{i,n+1})^2 = \sum_{i=1}^{n+1} (y_i - x_i*b_{n+1})^2
+ = \sum_{i=1}^{n+1} (y_i^2 - 2y_i*x_i*b_{n+1} + (x_i*b_{n+1})^2)
+ = \sum_{i=1}^{n+1} y_i^2 - 2(\sum_{i=1}^{n+1}y_i*x_i)*b_{n+1}  + b_{n+1}^T*(\sum_{i=1}^{n+1}x_i^T*x_i)*b_{n+1}

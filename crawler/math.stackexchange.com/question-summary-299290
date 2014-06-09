@@ -1,0 +1,18 @@
+f_0,\dots,f_r
+g
+f_0(n)a_n+f_1(n)a_{n-1}+\cdots+f_r(n)a_{n-r}=g(n)\tag1
+f_i
+g
+f_0x^n+f_1x^{n-1}+\cdots+f_r\tag2
+f_i
+g
+a_0, a_1, \dotsc
+a_n = \sum_{i = 1}^mk_ia_{n - i}
+m
+v_j = \begin{bmatrix}a_{j - 1} & a_{j - 2} & \cdots & a_{j - m}\end{bmatrix}^\intercal
+j > m
+v_m
+ v_{j + 1} = \overbrace{\begin{bmatrix}k_1 & k_2 & \cdots & k_{m - 1} & k_m\\1 & 0 & \cdots & 0 & 0\\0 & 1 & \cdots & 0 & 0\\\vdots & \vdots & \ddots & \vdots & \vdots\\0 & 0 & \cdots & 1 & 0\end{bmatrix}}^Mv_j. 
+M = P^{-1}\operatorname{diag}(d_1, d_2, \dotsc, d_m)P
+ (Pv_{m + j}) = \begin{bmatrix}d_1^j & 0 & \cdots & 0\\0 & d_2^j & \cdots & 0\\\vdots & \vdots & \ddots & \vdots\\0 & 0 & \cdots & d_m^j\end{bmatrix}(Pv_m). 
+a_0, a_1, \dotsc

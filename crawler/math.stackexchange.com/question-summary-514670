@@ -1,0 +1,25 @@
+\prod_{i = 1}^{n} i^{\binom{n}{i}}
+X_1,...,X_n
+P(X_i=1)=x
+S_n=X_1+...+X_n
+\mathbb E\left(\log(\frac{S_n}{n})\right)
+\log(x)
+n\to\infty
+\mathbb E\left(\log(\frac{S_n}{n})\right)
+B_n(x)
+B_n(x)
+f(x)
+f(x)
+ \sum_{i = 1}^{n} {\binom{n}{i}}\log i=\sum_{i = 1}^{n} {\binom{n}{i}}\log\frac{i}{n}+\log n\sum_{i = 1}^{n} {\binom{n}{i}}=\sum_{i = 1}^{n} {\binom{n}{i}}\log\frac{i}{n}+2^n\log n. 
+ \mathbb E\left(\log(\frac{S_n}{n})\right)=\sum_{i = 1}^{n} {\binom{n}{i}}x^i(1-x)^{n-i}\log\frac{i}{n} 
+B_n(x)
+f(x)=\log(x)
+B_n(\frac{1}{2})
+\log(\frac{1}{2})
+ B_n(\frac{1}{2})=\sum_{i = 1}^{n} {\binom{n}{i}}2^{-n}\log\frac{i}{n} 
+ \prod_{i = 1}^{n} i^{\binom{n}{i}}=\exp\left(2^n\log n+2^n B_n(\frac{1}{2})\right)\approx \exp\left(2^n\log n+2^n \log(\frac{1}{2})\right) 
+ \prod_{i = 1}^{n} i^{\binom{n}{i}}\approx \left( \frac{n}{2}\right)^{2^n} 
+A(n,0)
+A(n,n) = n
+A(n,m) = \prod_{i=m}^{n} i^{n\choose {i-m}}
+A(n+1,m) = (n+1)^{{n+1}\choose m} A(n,m) A(n,m+1)

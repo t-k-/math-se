@@ -1,0 +1,64 @@
+L(n,k)
+k
+n
+L(n-2,k-1)
+k-1
+k
+n-1
+L(n-1,k)
+L(n,k)=L(n-2,k-1)+ L(n-1,k).
+L(n,k)=\binom{n-k+1}{k}.
+C(n,k)
+k-2
+n-4
+L(n-4,k-2)
+k
+C(n,k)=\binom{n-k+1}{k}-\binom{n-k-1}{k-2}
+1 \le k \le n/2
+{{n-k+1}\choose{k}} - {{n-k-1}\choose{k-2}}
+{{n}\choose{-1}} = 0
+f(k,n)
+k
+n
+1 \le k \le n/2
+f(1,n) = n
+f(k,2k) = 2
+k
+\mathcal A(k,n)
+k
+\{0,1,\dots,n-1\}
+0
+n-1
+f(k,n) = |\mathcal A(k,n)|
+A \in \mathcal A(k+1,n+1)
+n \notin A
+\{0,n-1\} \nsubseteq A
+A \in \mathcal A(k+1,n)
+\mathcal A(k+1,n) \subseteq \mathcal A(k+1,n+1)
+n \in A
+n \notin A
+\{0,n-1\} \subseteq A
+n \in A
+\{0,n-1\} \cap A = \emptyset
+A \setminus \{n\} \in \mathcal A(k,n-1)
+0 \notin A \in \mathcal A(k,n-1)
+A \cup \{n\} \in \mathcal A(k+1,n+1)
+n \notin A
+\{0,n-1\} \subseteq A
+A \setminus \{n-1\} \in \mathcal A(k,n-1)
+0 \in A \in \mathcal A(k,n-1)
+n-2 \notin A
+A \cup \{n-1\} \in \mathcal A(k+1,n+1)
+f
+f(k+1,n+1) = f(k+1,n) + f(k,n-1),
+f(k,n) = {{n-k+1}\choose{k}} - {{n-k-1}\choose{k-2}}
+{{n}\choose{-1}} = 0
+{{k+1}\choose{k}}-{{k-1}\choose{k-2}} = 2 = f(k,2k)
+{{n}\choose{1}}-{{n-2}\choose{-1}} = n
+\begin{align*}f(k+1,n)+f(k,n-1)&= {{n-(k+1)+1}\choose{k+1}} - {{n-(k+1)-1}\choose{(k+1)-2}}\\ &\qquad {}+ {{(n-1)-k+1}\choose{k}} - {{(n-1)-k-1}\choose{k-2}}\\ &={{n-k}\choose{k+1}} - {{n-k-2}\choose{(k-1}} + {{n-k}\choose{k}} - {{(n-k-2}\choose{k-2}}\\ &={{n-k}\choose{k+1}} + {{n-k}\choose{k}} - {{n-k-2}\choose{(k-1}} - {{(n-k-2}\choose{k-2}}\\ &={{n-k+1}\choose{k+1}} - {{n-k-1}\choose{k-1}}\\ &={{(n+1)-(k+1)+1}\choose{k+1}} - {{(n+1)-(k+1)-1}\choose{(k+1)-2}}\\ &=f(k+1,n)+f(k,n-1) \end{align*}
+k
+n
+x_i \ge 1
+i.
+ x_1 + x_2 + \cdots + x_k = n-k, 
+\binom{n-k-1}{k-1}=\frac{k}{n-k} \binom{n-k}{k}.

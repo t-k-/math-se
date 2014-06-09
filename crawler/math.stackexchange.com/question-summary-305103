@@ -1,0 +1,28 @@
+ \int_0^\infty \frac {e^{-\alpha x}-e^{-\beta x}}{x} \sin(\gamma x)\, \mathrm{ d}x = \arctan\left( \frac {\beta}{\gamma} \right) - \arctan\left( \frac {\alpha}{\gamma} \right) \tag{**} 
+ \alpha, \beta, \gamma \in \mathbb R, \gamma \neq 0 
+ \int_0^\infty \frac {e^{-\alpha x}-e^{-\beta x}}{x}\, \mathrm{d}x = \ln\left( \frac { \beta }{ \alpha } \right) \tag{*} 
+I(y) = \int_0^\infty e^{-yx}\, \mathrm{d}x
+I(y)
+y
+I(y)
+\alpha
+\beta
+y
+ \int_\alpha^\beta \left(\int_0^\infty e^{-yx}\, \mathrm{d}x\right)\,\mathrm{d}y = \int_0^\infty \left(\int_\alpha^\beta e^{-yx}\, \mathrm{d}y\right)\,\mathrm{d}x 
+(*)
+\sin(x) = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!}x^{2n+1}
+\begin{aligned}\int_0^\infty \frac{e^{-\alpha x}-e^{-\beta x}}{x}\sin(\gamma x) \ dx &= \int_0^\infty \left( \frac{e^{-\alpha x}-e^{-\beta x}}{x}\right)\sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!}(\gamma x)^{2n+1} \ dx \\&= \sum_{n=0}^\infty \frac{(-1)^{n}\gamma^{2n+1}}{(2n+1)!} \left\{ \int_0^\infty e^{-\alpha x}x^{2n}dx-\int_0^\infty e^{-\beta x}x^{2n}dx\right\} \\ &= \sum_{n=0}^\infty\frac{(-1)^{n}\gamma^{2n+1}}{(2n+1)!} \left\{ \frac{\Gamma(2n+1)}{\alpha^{2n+1}}-\frac{\Gamma(2n+1)}{\beta^{2n+1}}\right\} \\&=\sum_{n=0}^\infty\frac{(-1)^{n}\gamma^{2n+1}}{(2n+1)!} \left\{ \frac{(2n)!}{\alpha^{2n+1}}-\frac{(2n)!}{\beta^{2n+1}}\right\} \\&=\sum_{n=0}^\infty \frac{(-1)^n \left( \frac{\gamma}{\alpha}\right)^{2n+1}}{2n+1} - \sum_{n=0}^\infty \frac{(-1)^n \left( \frac{\gamma}{\beta}\right)^{2n+1}}{2n+1} \\&=\arctan \left( \frac{\gamma}{\alpha}\right)-\arctan \left( \frac{\gamma}{\beta}\right)\end{aligned}
+\arctan(x) = \sum_{n=0}^\infty \frac{(-1)^n}{2n+1}x^{2n+1}
+I(\gamma)=\int_0^\infty \frac {e^{-\alpha x}-e^{-\beta x}}{x} \sin(\gamma x) dx\implies \frac{dI(\gamma)}{dx}=\int_0^\infty  ({e^{-\alpha x}-e^{-\beta x}}) \cos(\gamma x) dx.
+\cos(x)
+\alpha
+\beta
+I(y,\gamma) = \int_0^{\infty} e^{-yx}sin(\gamma x)\mathrm{d}x
+\int_{\alpha}^{\beta} I(y,\gamma)\mathrm{d}y
+I(y,\gamma)=\frac{\gamma}{\gamma^2+y^2}
+\int_{\alpha}^{\beta}\frac{\gamma}{\gamma^2+y^2} = \arctan(\gamma/y)|_{\alpha}^{\beta}
+f:(0,+\infty) \to \mathbf{R}
+\displaystyle f(0+)=\lim_{x \to 0+}f(x)
+\displaystyle f(+\infty)=\lim_{x \to +\infty}f(x)
+a,b >0
+\int_0^{+\infty} \frac{f(bx)-f(ax)}{x}dx=(f(+\infty)-f(0+))\ln\left(\frac{b}{a}\right)

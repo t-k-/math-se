@@ -1,0 +1,13 @@
+\min\left\{2,\frac{n}2\right\} + \min\left\{3,\frac{n}2\right\} + \min\left\{4,\frac{n}2\right\} + \cdots + \min\left\{n+1, \frac{n}2\right\}=\sum_{i=1}^n \min(i+1,n/2)
+n
+n=2m
+\min\left\{i,\frac{n}2\right\}=\min\{i,m\}=\begin{cases}i,&\text{if }i\le m\\ m,&\text{if }i\ge m. \end{cases}
+\begin{align*} \sum_{i=2}^{n+1}\min\left\{i,\frac{n}2\right\} &= \sum_{i=2}^m i + \sum_{i=m+1}^{n+1} m\\ &= \frac{m(m+1)}2-1 + (n+1-m)m\\ &= \frac12\left(\frac{n}2\right)\left(\frac{n}2+1\right)-1+\left(\frac{n}2\right)\left(\frac{n}2+1\right)\\ &= \frac{3n(n+2)}{8}-1\\ &=\frac{3n^2+6n-8}8. \end{align*}
+n
+n=2m+1
+\min\left\{i,\frac{n}2\right\}=\min\left\{i,m+\frac12\right\}=\begin{cases}i,&\text{if }i\le m\\ m+\frac12,&\text{if }i> m. \end{cases}
+\begin{align*} \sum_{i=2}^{n+1}\min\left\{i,\frac{n}2\right\} &= \sum_{i=2}^m i + \sum_{i=m+1}^{n+1} \left(m+\frac12\right)\\ &= \frac{m(m+1)}2-1 + (n+1-m)\left(m+\frac12\right)\\ &= \frac12\left(\frac{n-1}2\right)\left(\frac{n+1}2\right)-1+\left(\frac{n}2\right)\left(\frac{n+3}2\right)\\ &= \frac{3n^2+6n-1}{8}-1\\ &= \frac38 (n^2+2n-3). \end{align*}
+n
+\sum_{i=1}^{\frac{n}{2}-2} \min\left(i+1,\frac{n}{2}\right)+\frac{n}{2}+\sum_{i=\frac{n}{2}}^{n} \min\left(i+1,\frac{n}{2}\right)=\sum_{i=1}^{\frac{n}{2}-2} (i+1)+\frac{n}{2}+\frac{n}{2}\sum_{i=\frac{n}{2}}^{n} 1
+n
+\sum_{i=1}^{\frac{n-3}{2}} (i+1)+\frac{n}{2}\sum_{i=\frac{n-1}{2}}^{n} 1

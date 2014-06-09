@@ -1,0 +1,17 @@
+f:[0,1]\longrightarrow R
+f(1)=0
+4\int_{0}^{1}x^2|f'(x)|^2dx\ge\int_{0}^{1}|f(x)|^2+\left(\int_{0}^{1}|f(x)|dx\right)^2
+\int_{a}^{b}f^2(x)dx\int_{a}^{b}g^2(x)dx\ge\int_{a}^{b}(f(x)g(x))^2dx
+c := \int_0^1 f(x) \, dx \tag{1}
+\int_0^1 (f(x)+c)^2 \, dx >0
+f=-c
+f=0
+f(1)=0
+\begin{align*} \int_0^1 (f(x)+c)^2 \, dx &= \bigg[x \cdot (f(x)+c)^2\bigg]_0^1 - 2 \int_0^1 x \cdot (f(x)+c) \cdot f'(x) \\ &= c^2 + 2 \int_0^1 -(f(x)+c) \cdot f'(x) \cdot x \end{align*}
+f(1)=0
+\int_0^1 |f(x)+c|^2 \, dx -c^2 \leq 2 \sqrt{ \int_0^1 |f(x)+c|^2 \, dx} \cdot \sqrt{\int_0^1 x^2 \cdot f'(x)^2 \, dx}
+\sqrt{\int_0^1 |f(x)+c|^2 \, dx} - \frac{c^2}{\sqrt{\int_0^1 |f(x)+c|^2 \, dx}} \leq 2 \sqrt{\int_0^1 x^2 \cdot f'(x)^2 \, dx} 
+\int_0^1 |f(x)+c|^2 \, dx - 2c^2 + \frac{c^4}{\int_0^1 |f(x)+c|^2 \, dx} \leq 4 \int_0^1 x^2 \cdot f'(x)^2 \, dx \tag{2}
+\int_0^1 |f(x)+c|^2 \, dx = \int_0^1 f(x)^2 \, dx +2c \underbrace{\int_0^1 f(x) \, dx}_{c} + c^2 \stackrel{(1)}{=} \int_0^1 f(x)^2 \, dx + 3 \left( \int_0^1 f(x) \, dx \right)^2 
+(2)
+\int_0^1 |f(x)|^2 \, dx + \left( \int_0^1 f(x) \, dx \right)^2 + \underbrace{\frac{c^4}{\int_0^1 |f(x)+c|^2 \, dx}}_{\geq 0} \leq 4 \int_0^1 x^2 \cdot f'(x)^2 \, dx

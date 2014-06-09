@@ -1,0 +1,40 @@
+\Rightarrow \int_{1}^\infty \dotsb\int_{1}^\infty \frac{dx_1 \dotsb dx_n}{x_1^{\alpha_1}+\dotsb + x_n^{\alpha_n}} \leq \frac1n \int_{1}^\infty \dotsb\int_{1}^\infty \frac{dx_1 \dotsb dx_n}{x_1^{\alpha_1/n}\dotsb  x_n^{\alpha_n/n}},
+\leq \frac1n \int_{S^{n-1}} \int_{1}^\infty \frac{dx_1 \dotsb dx_n}{r^{\frac{\alpha_1+\dotsb + \alpha_n}{n}}|f(\sigma)|}r^{n-1} dr\,d\sigma,\tag{1}
+\sigma
+(n-1)
+\mathbb{R}^n
+|f(\sigma)|\leq1
+\geq
+\frac1{\alpha_1}+ \dotsb + \frac1{\alpha_n}<1 \\\Rightarrow \frac{n}{\frac1{\alpha_1}+ \dotsb + \frac1{\alpha_n}}>n\\\overset{\text{AM $\geq$ HM}}{\Rightarrow}\frac{\alpha_1 + \dotsb+\alpha_n}{n}>n
+r
+>1
+\sum_{i=1}^n\lambda_i=1
+p:=\left(\frac{1}{\alpha_1}+\cdots+\frac{1}{\alpha_n}\right)^{-1}>1,
+y_i=\alpha_i\log x_i,\quad\lambda_i=\frac{p}{\alpha_i}\in (0,1), \quad i=1,\cdots,n.
+\sum_{i=1}^n x_i^{\alpha_i}\ge \sum_{i=1}^n \lambda_i e^{y_i}\ge \exp\left(\sum_{i=1}^n \lambda_i y_i\right)=\prod_{i=1}^n x_i^p.\tag{1}
+(1)
+\left(\int_1^\infty\frac{dx}{x^p}\right)^n=\frac{1}{(p-1)^n}.
+x_k^{\alpha_k}=ru_k^2
+r
+(1,\infty)
+u=(u_k)
+\sum\limits_ku_k^2=1
+(x_k)\to(r,u)
+\prod\limits_k\mathrm dx_k=r^{\beta-1}\mathrm dr\mathrm d\mu(u)
+\beta=\sum\limits_k\frac1{\alpha_k}
+\mu
+\sum\limits_kx_k^{\alpha_k}=r
+\beta\lt1
+ \int^\infty\frac{r^{\beta-1}\mathrm dr}r 
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{{\rm e}^{#1}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}%  \newcommand{\sgn}{{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}
+\ds{% {\cal J} \equiv \int_{1}^{\infty}\cdots\int_{1}^{\infty} {\dd x_{1}\ldots\dd x_{n}  \over  {x_{1}^{\alpha_{1}} + \cdots + x_{n}^{\alpha_{n}}}}\ <\ \infty:\ {\large ?}}
+\Gamma\pars{z,a}
+\it\mbox{Incomplete Gamma function}\ \pars{~\Re\, z > 0~}
+\Gamma\pars{z} \equiv \Gamma\pars{z,0}
+\it\mbox{Gamma function}
+\ds{\sum_{i = 1}{1 \over \alpha_{i}} < 1}
+1/\alpha_1 + \cdots + 1/\alpha_n < 1
+(1/\alpha_1 < 1/n) \wedge \cdots \wedge (1/\alpha_n < 1/n)
+   \int_1^\infty \cdots \int_1^\infty   \frac{dx_1 \cdots dx_n}{x_1^{\alpha_1}+\cdots + x_n^{\alpha_n}}   \leq \frac{1}{n} \int_{1}^\infty \cdots \int_{1}^\infty   \frac{dx_1 \cdots dx_n}{x_1^{\alpha_1/n}\cdots x_n^{\alpha_n/n}} 
+ \frac{1}{n} \int_{1}^\infty \cdots \int_{1}^\infty \frac{dx_1 \cdots dx_n}{x_1^{\alpha_1/n}\cdots x_n^{\alpha_n/n}} = \frac{1}{n} \int_{1}^\infty \frac{dx_1}{x_1^{\alpha_1/n}} \cdots \int_{1}^\infty \frac{dx_n}{x_n^{\alpha_n/n}} 
+ \int_{1}^\infty \frac{dx_i}{x_i^{\alpha_i/n}}  = \left[ \frac{x_i^{1-\alpha_i/n}}{1-\alpha_i/n} \right]_1^\infty =  \left\{ \begin{array}{ll} \frac{1}{1-\alpha_i/n} & \mbox{if} \quad \alpha_i > n \\  \infty & \mbox{if} \quad \alpha_i \le n \end{array} \right. 

@@ -1,0 +1,15 @@
+X
+i = 20
+P(X>40 \;| \;X>10)
+P(X>40)
+A = P(X>40)
+B = P(X>10)
+A \cap B
+P(X>10)
+P(X>40) \cup P(X>10) - P(X>10)
+1- (1-e^{-\frac{30}{20}})=0.2231
+P(X>40 \mid X>10)= P(X>30) 
+s>0
+t>0
+P(X>s+t\mid X>s) = P(X>t) = e^{-\lambda t}.
+ \begin{align} P(X>s+t\mid X>s) &= \frac{P\big(X>s+t\cap X>s\big)}{P(X>s)} = \frac{P(X>s+t)}{P(X>s)}  \\ &= \frac{\int_{s+t}^{\infty}\lambda e^{-\lambda x}dx}{\int_{s}^{\infty}\lambda e^{-\lambda x}dx} = e^{-\lambda t} = P(X>t),\quad (s>0,t>0). \end{align} 

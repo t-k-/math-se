@@ -1,0 +1,10 @@
+  \int_{- \infty}^{\infty} \frac{\exp\left(-(a+bx)^2\right)}{1+\exp(x)}\mathrm dx 
+a
+(1+\mathrm{e}^x)^{-1}
+b>0
+   (1+\mathrm{e}^x)^{-1} = \left\{      \begin{array}{ll}            \sum_{k \ge 0} (-1)^k \mathrm{e}^{-(k+1)x} & x > 0 \\            \sum_{k \ge 0} (-1)^k \mathrm{e}^{k x} & x \le 0      \end{array} \right. 
+    \int_0^\infty \mathrm{e}^{-(a+b x)^2} \mathrm{e}^{-(k+1) x} \, \mathrm{d} x =       \frac{\sqrt{\pi}}{2 b} \exp \left( \frac{(k+1)(k+1+4 a b)}{4 b^2} \right) \mathrm{erfc}\left( a + \frac{k + 1}{2 b} \right) 
+    \int_{-\infty}^0 \mathrm{e}^{-(a+b x)^2} \mathrm{e}^{k x} \, \mathrm{d} x =      \frac{\sqrt{\pi}}{2 b} \exp\left( \frac{k(k-4 a b)}{4 b^2} \right) \mathrm{erfc}\left( \frac{k}{2b} -a\right) 
+a=-\frac{1}{2b}
+\frac{\sqrt{\pi}}{2|b|} = \int_{-\infty}^{\infty} \frac{e^{-b^2x^2}}{1+e^{x}} dx = \int_{-\infty}^{\infty} \frac{e^{-b^2x^2} \cdot e^x}{1+e^{x}} dx
+  =  e^\frac{1}{4b^2}\int_{-\infty}^\infty\frac{e^{-(-\frac{1}{2b}+bx)^2}}{1+e^{x}} dx.  

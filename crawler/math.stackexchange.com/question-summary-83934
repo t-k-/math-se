@@ -1,0 +1,11 @@
+x^2+y^2=4
+y+z=4
+z=0
+\iiint \limits_G  dV 
+ \iint\limits_R \big[\int \limits_0^{4-y}dz\big] dA = \int\limits_{-2}^2 \int\limits_{-\sqrt{4-x^2}}^{\sqrt{4-x^2}} \int\limits_0^{4-y} dz\,dy\,dx = 16\pi
+h_1, h_2
+2
+6
+ h(x,y) = h_1 + \frac{1}{2}(h_2 - h_1)(1 + \frac{y}{2})
+ h(r,\theta) = h_1 + \frac{1}{2}(h_2 - h_1)(1 + \frac{r\sin(\theta)}{R}) 
+ V = \int_0^{2\pi} \int_0^R r*h(r,\theta)\, dr\, d\theta = \frac{1}{2} \pi R^2 (h_1 + h_2) 

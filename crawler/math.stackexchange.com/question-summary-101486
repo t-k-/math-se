@@ -1,0 +1,15 @@
+A({n})=4A(\lfloor{n/7} \rfloor)+n^2
+n\ge 2
+A({n})=1
+0\le n\le 1
+A(n) = 4^kA(n/7^k)+4^k\lfloor n/7^k \rfloor ^2 ....+4\lfloor n/7 \rfloor ^2 + n^2
+k = \lceil \ln(n)/\ln(7) \rceil
+n \le 7^k
+A(\lceil n/7^k \rceil) = 1
+A(n) = 4^k +4^k\lfloor n/7^k \rfloor ^2 ....+4\lfloor n/7 \rfloor ^2 + n^2 
+\lfloor x \rfloor \le x \le \lceil x \rceil < x+1
+4^k < 4^{1+\ln(n)/\ln(7)} = 4n^{\ln(4)/\ln(7)} < 4n 
+A(n) < 4n + n^2(4^k/7^k+....+4/7+1) < 4n + n^2/(1-4/7) < 4n + 7 n^2/3 
+A(n) = O(n^2)
+n^2
+A({n})=7A(\lfloor{n/4} \rfloor)+n^2

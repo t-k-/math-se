@@ -1,0 +1,11 @@
+f(g(x))=(f\circ g)(x)=f(y)
+y\doteq g(x)
+g(x)
+\frac{\mathrm{d}f(g(x))}{\mathrm{d}x}\Big|_{x=x_0}= \lim_{x\to x_0}\frac{f(g(x))-f(g(x_0))}{x-x_0}= \lim_{x\to x_0}\frac{f(g(x))-f(g(x_0))}{g(x)-g(x_0)}\cdot\frac{g(x)-g(x_0)}{x-x_0}= \frac{\mathrm{d}f(y)}{\mathrm{d}y}\Big|_{y=g(x_0)} \frac{\mathrm{d}g(x)}{\mathrm{d}x}\Big|_{x=x_0}. 
+g(x_0) - g(x)
+0
+x\neq x_0
+\lim_{x\to x_0}\frac{f(g(x))-f(g(x_0))}{g(x)-g(x_0)} = \lim_{y\to y_0}\frac{f(y)-f(y_0)}{y-y_0}
+ Q(y)= \left\{     \begin{array}{rl}       \frac{f(y)-f(g(x_0))}{y-g(x_0)} & \text{if } y\not= g(x_0),\\       \frac{\mathrm{d}f}{\mathrm{d}y}\Big|_{y=g(x_0)} & \text{if } y= g(x_0).     \end{array} \right. 
+ \frac{f(g(x))-f(g(x_0))}{x-x_0}=Q(y)\cdot \frac{g(x)-g(x_0)}{x-x_0}. 
+ \lim_{x\to x_0}\frac{f(g(x))-f(g(x_0))}{x-x_0} = \lim_{x\to x_0} Q(y)\cdot \frac{g(x)-g(x_0)}{x-x_0} =_{\text{if they exist}}\lim_{y\to g(x_0)}Q(y) \lim_{x\to x_0}\frac{g(x)-g(x_0)}{x-x_0} = \frac{\mathrm{d}f(g(x_0))}{\mathrm{d}y}\frac{\mathrm{d}g(x_0)}{\mathrm{d}x}. 

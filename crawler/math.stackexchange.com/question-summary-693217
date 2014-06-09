@@ -1,0 +1,18 @@
+f(x,y) = \begin{cases} (x^2+y^2)\sin (x^2+y^2)^{-1} \ \ \ &\text{, if } x^2+y^2 \neq 0 \\ 0 &\text{, if } x^2+y^2=0 \end{cases}
+(0,0)
+f
+(a,b)
+M,N\in \mathbb{R}
+\leftrightarrow
+\lim_{h_1,h_2\to 0} \frac{f(a+h_1,b+h_2)-f(a,b)-Mh_2-Nh_2}{\sqrt{h_1^2+h_2^2}}=0
+f_x(x,y)=2x\left( \sin (x^2+y^2)^{-1}-\frac{(x^2+y^2)\cos (x^2+y^2)^{-1}}{(x^2+y^2)^2} \right)
+f_y(x,y)=2y\left( \sin (x^2+y^2)^{-1}-\frac{(x^2+y^2)\cos (x^2+y^2)^{-1}}{(x^2+y^2)^2} \right)
+\lim_{h_1,h_2\to 0} \frac{(h_1^2+h_2^2)\sin(h_1^2+h_2^2)^{-1}-Mh^1-Nh_2}{\sqrt{h_1^2+h_2^2}}=
+= \lim_{h_1,h_2\to 0} \frac{\sqrt{h_1^2+h_2^2}\sqrt{h_1^2+h_2^2}\sin(h_1^2+h_2^2)^{-1}-Mh^1-Nh_2}{\sqrt{h_1^2+h_2^2}}=
+=\lim_{h_1,h_2\to 0} \frac{\sqrt{h_1^2+h_2^2}\left(\sqrt{h_1^2+h_2^2}\sin(h_1^2+h_2^2)^{-1}-\frac{Mh_1}{\sqrt{h_1^2+h_2^2}}-\frac{Nh_2}{\sqrt{h_1^2+h_2^2}}\right)}{\sqrt{h_1^2+h_2^2}}=
+=\lim_{h_1,h_2\to 0} \sqrt{h_1^2+h_2^2}\sin(h_1^2+h_2^2)^{-1}-\frac{Mh_1-Nh_2}{\sqrt{h_1^2+h_2^2}}=
+ \sin(h_1^2+h_2^2) = (h_1^2+h_2^2)-\frac{(h_1^2+h_2^2)^3}{3!}+\dots\,. 
+f(x,y) = g(x^2+y^2)
+y=0
+ \lim_{(x,y)\to(0,0)}\frac{\sqrt{x^2+y^2}}{\sin(x^2+y^2)} = 0. 
+ \lim_{x\to 0}\frac{|x|}{\sin(x^2)} = +\infty. 

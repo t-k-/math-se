@@ -1,0 +1,27 @@
+\int_0 ^{2\pi} \frac{d\theta}{a+b\sin \theta}=\frac{2\pi}{\sqrt{a^2-b^2}} \text{for}\  a>b>0
+\theta
+z
+z=e^{i\theta}
+dz=i.e^{i\theta}.d\theta\Rightarrow dz=i.z.d\theta \Rightarrow d\theta =\frac{dz}{iz}
+\Rightarrow \int_0 ^{2\pi} \frac{d\theta}{a+b\sin \theta}=\int_{|z|\leq 1} \frac{1}{a+b.\frac{1}{2i}.(\frac{z^2-1}{z})}.\frac{dz}{iz}
+\int_{|z|\leq 1} \frac{1}{a+b.\frac{1}{2i}.(\frac{z^2-1}{z})}.\frac{dz}{iz}= 2 \int_{|z|\leq 1}  \frac{1}{bz^2+(2ai)z-b} dz
+bz^2+(2ai)z-b=0 \Rightarrow z=\frac{-2ai \pm \sqrt{-4a^2+4b^2}}{2b}
+a>b
+\frac{-2ai \pm 2i\sqrt{a^2-b^2}}{2b}=\frac{-ai \pm  i \sqrt{a^2-b^2}}{b}
+\frac{-ai +  i \sqrt{a^2-b^2}}{b}
+\frac{-ai -  i \sqrt{a^2-b^2}}{b}
+\{ z\in \mathbb{C} : |z|\leq 1\}
+\{ z\in \mathbb{C} : |z|\leq 1\}
+|\frac{-ai -  i \sqrt{a^2-b^2}}{b}|=\big|-i(\frac{a+\sqrt{a^2-b^2}}{b})\big|=\big|\frac{a+\sqrt{a^2-b^2}}{b}\big| \leq |\frac{a}{b}|+|\sqrt{(\frac{a}{b})^2-1}|
+a>b
+\frac{a}{b}>1
+\frac{a}{b}
+|\frac{-ai +  i \sqrt{a^2-b^2}}{b}|
+z_{\pm} = -i \left [ \frac{a}{b} \pm \sqrt{\left ( \frac{a}{b}\right)^2-1}\right]
+a>b
+a/b > 1
+|z_+| > 1
+|z_-| = \frac{a}{b} - \sqrt{\left ( \frac{a}{b}\right)^2-1} = \frac{1}{\frac{a}{b} + \sqrt{\left ( \frac{a}{b}\right)^2-1}} = \frac{1}{|z_+|} < 1
+z=z_-
+\frac{2}{2 b z_-+i 2 a}  = \frac{i}{a-\sqrt{a^2-b^2}-a} = \frac{-i}{\sqrt{a^2-b^2}}
+2 \pi/\sqrt{a^2-b^2}

@@ -1,0 +1,43 @@
+X
+Y
+\mathrm{Uniform}(0,1)
+X
+Y
+U = \cos(2\pi Y)\sqrt{-2\ln(X)}
+V = \sin(2\pi Y)\sqrt{-2\ln(X)}
+U
+V
+U
+V
+X
+Y
+Y = \frac{1}{2}\tan^{-1}\left(\frac{V}{U}\right)
+X
+T:[0,1]^2\to \mathbb R^2
+(u,v)
+\mathbb R^2\setminus\{(0,0)\}
+T
+J_T
+[0,1]^2
+T^{-1}
+2\times2
+J_T
+f_{U,V}
+ T(x,y)=(\cos(2\pi y)\sqrt{-2\log x},\sin(2\pi y)\sqrt{-2\log x}). 
+ f_{U,V}(u,v)=f_{X,Y}(T^{-1}(u,v))\cdot|\det J_T(T^{-1}(u,v))|^{-1}, 
+u
+v
+\mathrm du\mathrm dv
+\mathrm du\mathrm du=\mathrm dv\mathrm dv=0
+\mathrm dv\mathrm du=-\mathrm du\mathrm dv
+\mathrm du=\alpha\mathrm dx+\beta\mathrm dy
+\mathrm du=\gamma\mathrm dx+\delta\mathrm dy
+T(x,y)=(u,v)
+x=\exp(-(u^2+v^2)/2)
+ u=\cos(2\pi y)\sqrt{-2\log x},\quad v=\sin(2\pi y)\sqrt{-2\log x}, 
+ \mathrm du=-2\pi\sin(2\pi y)\sqrt{-2\log x}\mathrm dy-\frac{\cos(2\pi y)}{x\sqrt{-2\log x}}\mathrm dx, 
+ \mathrm dv=+2\pi\cos(2\pi y)\sqrt{-2\log x}\mathrm dy-\frac{\sin(2\pi y)}{x\sqrt{-2\log x}}\mathrm dx. 
+ \mathrm du\mathrm dv=|\alpha\delta-\beta\gamma|\,\mathrm dx\mathrm dy. 
+ \mathrm du\mathrm dv=\frac{2\pi}x\,\mathrm dx\mathrm dy, 
+ |\det J_T(x,y)|^{-1}=\frac{x}{2\pi}. 
+ f_{U,V}(u,v)=\frac{\mathrm e^{-(u^2+v^2)/2}}{2\pi}. 

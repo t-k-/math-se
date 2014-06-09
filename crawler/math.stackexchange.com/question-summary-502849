@@ -1,0 +1,23 @@
+\mathbb E[X] = \mathbb E[\mathbb E[X\mid F]] \tag 1
+\operatorname{var}(X) = \mathbb E[\operatorname{var}(X\mid F)] + \operatorname{var}(\mathbb E[X\mid F]) \tag 2
+\newcommand{\E}{\mathbb E}
+\newcommand{\var}{\operatorname{var}}
+1/12
+n
+1/12
+F
+1
+X
+ F = \begin{cases} 1 & \text{with probability }1/6, \\ 0 & \text{with probability }5/6. \end{cases} 
+ \E(X\mid F=1) = \frac12\text{ and }\E(X\mid F=0) = 0. 
+ \E(X\mid F) = \begin{cases} 1/2 & \text{with probability }1/6, \\ 0 & \text{with probability }5/6. \end{cases} 
+ \E(X) = \E(\E(X\mid F)) = \frac{1}{12}. 
+ \var(X\mid F=1) = \frac14 \text{ and }\var(X\mid F=0)=0. 
+ \E(X\mid F) = \begin{cases} 1/2 & \text{with probability }1/6, \\ 0 & \text{with probability }5/6. \end{cases} 
+ \var(\E(X\mid F)) = \left(\frac12\right)^2\cdot\frac16\cdot\frac56= \frac{5}{144}. 
+ \var(X\mid F) = \begin{cases} 1/4 & \text{with probability }1/6, \\ 0 & \text{with probability }5/6. \end{cases} 
+ \E(\var(X\mid F)) = \frac{1}{24}. 
+ \var(X) = \var(\E(X\mid F))+\E(\var(X\mid F)) = \frac{5}{144}+\frac{1}{24} = \frac{11}{144}. 
+n
+n
+n

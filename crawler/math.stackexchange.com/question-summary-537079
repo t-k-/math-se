@@ -1,0 +1,20 @@
+X,Y
+f: X \times Y \to \mathbb R
+s_1 : X\to \mathbb R
+s_2 : Y\to \mathbb R
+s_1(x_0)=\displaystyle \sup_{y\in Y}|f(x_0,y)|
+s_2(y_0)=\displaystyle \sup_{x\in X}|f(x,y_0)|
+\displaystyle \sup_{x\in X} s_1(x)=\displaystyle \sup_{y\in Y} s_2(y)
+\displaystyle \sup_{x\in X}(\displaystyle \sup_{y\in y}|f(x,y)|) = \displaystyle \sup_{y\in Y}(\displaystyle \sup_{x\in X}|f(x,y)|)
+\displaystyle \sup_{(x,y)\in XxY}|f(x,y)|
+f
+u=\sup\{|f(x,y)|:\langle x,y\rangle\in X\times Y\}
+\epsilon>0
+\langle x,y\rangle\in X\times Y
+|f(x,y)|>u-\epsilon
+s_1(x)>u-\epsilon
+s_2(y)>u-\epsilon
+u-\epsilon<\sup_{x\in X}s_1(x)\le u
+u-\epsilon<\sup_{y\in Y}s_2(y)\le u
+\epsilon>0
+\sup_{x\in X}s_1(x)=\sup_{y\in Y}s_2(y)=u\;.

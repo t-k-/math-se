@@ -1,0 +1,26 @@
+\theta = \int_0^\infty \mathrm{e}^{-x^2}~\mathrm{d}x
+ E\left[\frac{1}{U^2}~\mathrm{e}^{-(-1+1/U)^2}\right]
+U
+\hat\theta = \frac{1}{N} \sum_0^n \frac{1}{U} \space \mathrm{e}^{-(-1+1/U)^2} 
+N
+U
+(\hat\Theta_n)_{n\geqslant1}
+x=(1-u)/u
+u=1/(x+1)
+\theta= E\left[U^{-2}\mathrm{e}^{-(-1+1/U)^2}\right],
+\hat\Theta_n = \frac{1}{n} \sum_{k=1}^nV_k,\qquad V_k= U_k^{-2}\mathrm{e}^{-(-1+1/U_k)^2}. 
+ E(\hat\Theta_n)=E(V_1)=\int_0^1u^{-2}\mathrm e^{-(1-u)^2/u^2}\mathrm du=\int_0^\infty\mathrm e^{-x^2}\mathrm dx=\theta, 
+ \mathrm{var}(\hat\Theta_n)=\frac{\sigma^2}n,\qquad\sigma^2=\mathrm{var}(V_1). 
+ E(V_1^2)=\int_0^1u^{-4}\mathrm e^{-2(1-u)^2/u^2}\mathrm du=\int_0^\infty(x+1)^2\mathrm e^{-2x^2}\mathrm dx, 
+ \theta=\frac12\sqrt\pi,\quad E(V_1^2)=\frac12+\frac5{16}\sqrt{2\pi},\quad\sigma^2=\frac12+\frac5{16}\sqrt{2\pi}-\frac14\pi. 
+N
+n
+\hat\Theta_n
+(\int_0^\infty e^{-x^2}dx)^2=(\int_0^\infty e^{-x^2}dx)(\int_0^\infty e^{-x^2}dx)=(\int_0^\infty e^{-x^2}dx)(\int_0^\infty e^{-y^2}dy)=(\int_0^\infty\int_0^\infty e^{-x^2}e^{-y^2}dxdy)=\int_0^\infty\int_0^\infty e^{-(x^2+y^2)}dxdy
+x=r\cos(\theta),y=r\sin(\theta)
+r^2=x^2+y^2
+0\leq r\leq\infty
+\,
+(0\le\theta \leq2\pi)
+\int_0^\infty\int_0^\infty e^{-(x^2+y^2)}dxdy=\int_0^{2\pi}\int_0^\infty re^{-r^2}drd\theta=(\int_0^{2\pi}1d\theta)(-\frac{1}{2}e^{-r^2}|^\infty_0)=\pi
+\int_0^\infty e^{-x^2}dx)^2=\sqrt{\pi}

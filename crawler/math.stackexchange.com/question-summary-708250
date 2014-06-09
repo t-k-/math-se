@@ -1,0 +1,50 @@
+\iint_U xy\,dx\,dy
+U
+x^2+2x+y^2-6y
+\theta
+r
+xy
+\theta
+0
+2\pi
+r
+0
+2\pi
+r
+0
+ \ U \ 
+ \ (x+1)^2 \ + \ (y-3)^2 \ = \ 16 , 
+ \ (-1, 3) \ 
+ \ y \ 
+ \ y(x) \ 
+   (y-3)^2 \ = \ 16 \ - \ (x+1)^2 \ \ \Rightarrow \ \ y \ = \ 3 \ \pm \ \sqrt{16 \ - \ (x+1)^2} \ \ . 
+ \ x \ 
+ \ [-5, 3] \ . 
+ \iint_U \ xy \ \ dy \ dx \ \ = \ \ \int_{-5}^3 \ \int_{ \ 3 \ - \ \sqrt{16 \ - \ (x+1)^2}}^{ \ 3 \ + \ \sqrt{16 \ - \ (x+1)^2}} \ xy \ \ dy \ dx  
+ = \ \ \int_{-5}^3 \  \left( \ \frac{1}{2}xy^2 \ \right) \vert_{ \ 3 \ - \ \sqrt{16 \ - \ (x+1)^2}}^{ \ 3 \ + \ \sqrt{16 \ - \ (x+1)^2}}  \ \ dx 
+ = \ \ \frac{1}{2} \ \int_{-5}^3 \  x \ [ \  ( \ 9 \ + \ 6 \ \sqrt{16 \ - \ (x+1)^2} \ + \ [16 \ - \ (x+1)^2] \ ) 
+ - \ ( \ 9 \ - \ 6 \ \sqrt{16 \ - \ (x+1)^2} \ + \ [16 \ - \ (x+1)^2] \ ) \ ] \ \ dx 
+ = \ \ \frac{1}{2} \ \int_{-5}^3 \  x \ (  \ 12 \ \sqrt{16 \ - \ (x+1)^2}  ) \ \ dx \ \ = \ 6 \ \int_{-5}^3 \  x \  \sqrt{16 \ - \ (x+1)^2}   \ \ dx  \ \ . 
+ \ u-
+ \ u = x + 1 \ , \ x = u - 1 \ , \ dx = du \ 
+ \rightarrow \ \ 6 \ \int_{-4}^4 \  (u - 1) \  \sqrt{16 \ - \ u^2}   \ \ du  \ \ = \ \ 6 \ \left[ \ \int_{-4}^4 \  u \  \sqrt{16 \ - \ u^2}   \ \ du \  -  \ \int_{-4}^4 \   \sqrt{16 \ - \ u^2}   \ \ du \  \right]  \ \ . 
+    -6  \ \int_{-4}^4 \   \sqrt{16 \ - \ u^2}   \ \ du \ \ = \  -48 \pi \ \ .  
+ \ \ 
+  \int_{-4}^4 \ \int_{ \ - \sqrt{16 \ - \ u^2}}^{ \  \sqrt{16 \ - \ u^2}} \ (u - 1) \ (v + 3) \ \ dv \ du  
+ = \ \ \int_{-4}^4 \ (u - 1) \ \left( \ \frac{1}{2} v^2 \ + \ 3v \ \right) \vert_{ \  - \ \sqrt{16 \ - \ u^2}}^{ \  \sqrt{16 \ - \ u^2}} \ \ du 
+ = \ \ \int_{-4}^4 \ (u - 1) \ ( \ [  \ \frac{1}{2} \cdot (16 \ - \ u^2) \ + \ 3 \cdot \sqrt{16 \ - \ u^2} \ ]   
+ - \ [  \ \frac{1}{2} \cdot (16 \ - \ u^2) \ - \ 3 \cdot \sqrt{16 \ - \ u^2} \ ] \ )  
+ = 6 \ \int_{-4}^4 \  (u - 1) \  \sqrt{16 \ - \ u^2}   \ \ du \ \ , 
+ \ R \  
+ \ (x_0, y_0) \ , 
+  \int_{-R}^R \ \int_{ \ - \sqrt{R^2 \ - \ u^2}}^{ \  \sqrt{R^2 \ - \ u^2}} \ (u + x_0) \ (v + y_0) \ \ dv \ du  
+ = \ \ \int_{-R}^R \ \ (u + x_0) \ \cdot \  2 y_0 \ \sqrt{R^2 \ - \ u^2} \ \  du \ \ = \ \ 2 y_0 \ \int_{-R}^R \ \ x_0 \    \sqrt{R^2 \ - \ u^2} \ \  du 
+ = \ \ 2 x_0 y_0 \ \cdot \ \frac{1}{2} \pi \ R^2 \ = \   \pi \ x_0 y_0 \ R^2 \ \ .  \ \ \ \mathbf{ [1] } 
+ \iint_U \ xy \ \ dy \ dx \ \ = \ \pi \cdot (-1) \cdot 3  \cdot 4^2 \ = \ -48 \pi \ \ . 
+ \ \ 
+  \int_{-4}^4 \ \int_{ \ - \sqrt{16 \ - \ u^2}}^{ \  \sqrt{16 \ - \ u^2}} \ (u - 1) \ (v + 3) \ \ dv \ du \ \ \rightarrow \ \ \int^{2 \pi}_0  \int_0^4 \ (r \cos \theta - 1) \ (r \sin \theta + 3) \ \ r dr \ d\theta 
+ = \ \ \int^{2 \pi}_0  \int_0^4 \ ( \ r^3 \cos \theta  \sin \theta \ + \ 3r^2 \cos \theta \ - \ r^2 \sin \theta \ - \ 3r \ ) \ \  dr \ d\theta  
+ = \ \ \int^{2 \pi}_0  \ \left(  \frac{1}{4}r^4 \cdot \frac{1}{2}  \sin 2 \theta \ + \ r^3 \cos \theta \ - \ \frac{1}{3}r^3 \sin \theta \ - \ \frac{3}{2}r^2 \ \right) {\LARGE\vert}_0^4 \   d\theta  
+ = \ \ \int^{2 \pi}_0  \ 32 \  \sin 2 \theta \ + \ 64 \ \cos \theta \ - \ \frac{64}{3} \ \sin \theta \ - \ 24  \ \   d\theta \ \ . 
+ \int^{2 \pi}_0    - \ 24  \ \   d\theta \ \  = \ -24 \ \cdot \ 2 \pi \ = \ -48 \pi \ \ . 
+ \ \mathbf{1} \ 

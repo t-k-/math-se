@@ -1,0 +1,23 @@
+1/e
+A(n) = \displaystyle \sum_{k=1}^n a(k)
+\sum_{n=1}^N a(n) b(n) = \sum_{n=1}^N b(n)(A(n)-A(n-1)) = \sum_{n=1}^{N} b(n) A(n) - \sum_{n=1}^N b(n)A(n-1)\\ = \sum_{n=1}^{N} b(n) A(n) - \sum_{n=0}^{N-1}^N b(n+1)A(n) = b(N) A(N) - b(1)A(0) + \sum_{n=1}^{N-1} A(n) (b(n)-b(n+1))
+a(n) = 1
+b(n) = \log(n)
+A(n) = n
+\log
+\log \left(\dfrac{n!}{n^n}\right) = - n + \mathcal{O}(\log (n))
+\dfrac1n \log \left(\dfrac{n!}{n^n}\right) = - 1 + \mathcal{O}\left(\dfrac{\log (n)}n \right)
+\lim_{n \to \infty} \dfrac1n \log \left(\dfrac{n!}{n^n}\right) = -1
+\lim_{n \to \infty}\left(\dfrac{n!}{n^n}\right)^{1/n} = \dfrac1e
+\int_{k-1}^k\ln t dt\leq \ln k \leq \int_k^n \ln t dt
+k=2,\ldots,n
+n-1
+t\ln t-t
+\ln t
+C=1-2\ln 2
+ \int_1^n\ln t dt \leq \ln (n!) \leq \int_2^{n+1}\ln t dt. 
+ n\ln n-n+1\leq \ln (n!) \leq (n+1)\ln(n+1)-n+C 
+ -n+1\leq \ln (n!) - n\ln n\leq n\ln(1+1/n) + \ln(n+1) -n+C 
+ -1+\frac{1}{n} \leq \frac{ \ln (n!) - n\ln n}{n} \leq -1 + \ln(1+1/n) +\frac{\ln(n+1)+C}{n}. 
+ \lim_{n\rightarrow +\infty}\frac{ \ln (n!) - n\ln n}{n}=-1 
+ \lim_{n\rightarrow +\infty} \left( \frac{n!}{n^n}\right)^{1/n}=\lim_{n\rightarrow +\infty} \exp\left( \frac{ \ln (n!) - n\ln n}{n} \right)=\exp(-1). 

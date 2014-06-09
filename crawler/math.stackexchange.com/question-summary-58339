@@ -1,0 +1,39 @@
+\frac{2^n}{2}
+2^n
+X
+n
+n >1
+X_n
+g(n) = X_{n+1} -X_n
+g(2) = \mathbb{E}X_{4,8} - \mathbb{E}X_{2,4}
+g(3) = \mathbb{E}X_{8,16} - \mathbb{E}X_{4,8}
+X
+F(x) = (1-(1-x)^2)^2
+m=1-\sqrt{1-1/\sqrt2}
+n\to\infty
+\mathbb{E}X_n \to m
+g(n) \to 0
+g(2) . . . g(6)
+g(n) = \int_0^1 (\sum_{k=\frac{2^{n}}{2}}^{2^{n}} \frac{(2^{n})!}{k!(2^{n}- k)!}F(x)^k(1-F(x))^{2^{n}- k} - \sum_{k=\frac{2^{n+1}}{2}}^{2^{n+1}} \frac{(2^{n+1})!}{k!(2^{n+1}- k)!}F(x)^k(1-F(x))^{2^{n+1}- k})  \, dx 
+g(n)
+\mathbb{E}X_n
+n
+h(n) = (\mathbb{E}X_{2^n,2^n} -\mathbb{E}X_{\frac{2^n}{2},\frac{2^n}{2}})- (\mathbb{E}X - \mathbb{E}X_{\frac{2^n}{2}, 2^n})  
+F(x)
+F(F(x))
+h(n) = 0
+n
+\tilde{B}_x(a,b)
+   F_{2^{n-1}:2^n} (x ) = \tilde{B}_{F(x)}(2^{n-1}, 2^{n-1}-1) 
+q=F(x)
+    \mathbb{E}(X_{2^{n-1}:2^n}) = \int_0^1 x \cdot \mathrm{d}  F_{2^{n-1}:2^n} (x ) 
+Q(q)
+Q(q) = 1-\sqrt{1-\sqrt{q}}
+ \mathbb{E}(X_{2^{n-1}:2^n}) = 2^{n-1} \binom{2^n}{2^{n-1}} \int_0^1 Q(q) q^{(2^{n-1}-1)} (1-q)^{2^{n-1}} \mathrm{d}q  
+q^{a-1} (1-q)^a
+q_\ast=\frac{a-1}{2a-1}
+Q(q)
+ q_\ast = \frac{2^{n-1} -1}{2^n -1}
+   Q(q) = \sum_{k=1}^m Q^{(k)}(q_\ast) \frac{(q-q_\ast)^k}{k!} + o((q-q_\ast)^m) 
+   2^{n-1} \binom{2^n}{2^{n-1}} \int_0^1 (q-q_\ast) q^{(2^{n-1}-1)} (1-q)^{2^{n-1}} \mathrm{d}q  = \frac{1}{2+2^{1-n}} - q_\ast = \frac{1}{4^n-1} 
+    \mathbb{E}(X_{2^{n-1}:2^n}) = Q(q_\ast) + Q^\prime(q_\ast) \frac{1}{4^n-1} + \text{remainder} 

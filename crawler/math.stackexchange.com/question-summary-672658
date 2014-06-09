@@ -1,0 +1,33 @@
+a, b, m
+n
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+mx + ny = k
+k
+y
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+mx + ny = k
+n\neq 0
+y = \frac{k}{n} - \frac{m}{n}x
+ \frac{x^2}{a^2}+\frac{(\frac{k}{n} - \frac{m}{n}x)^2}{b^2}=1 
+ (\frac{1}{a^2}+\frac{m^2}{b^2n^2})x^2-\frac{2 k m}{b^2n^2} x +\frac{k^2}{b^2 n^2}-1= 0 
+\frac{4 k^2 m^2}{b^4n^4} - 4(\frac{1}{a^2}+\frac{m^2}{b^2n^2})(\frac{k^2}{b^2 n^2}-1) =0 
+ (\frac{4 m^2}{b^4n^4} - \frac{4(\frac{1}{a^2}+\frac{m^2}{b^2n^2})}{b^2 n^2}) k^2 + 4(\frac{1}{a^2}+\frac{m^2}{b^2n^2}) =0 
+k
+ |k| =\sqrt{\frac{4(\frac{1}{a^2}+\frac{m^2}{b^2n^2})}{\frac{4(\frac{1}{a^2}+\frac{m^2}{b^2n^2})}{b^2 n^2}-\frac{4 m^2}{b^4n^4} }}  = \sqrt{\frac{(\frac{1}{a^2}+\frac{m^2}{b^2n^2})} {\frac{\frac{1}{a^2}}{b^2 n^2}+\frac{m^2}{b^4 n^4}-\frac{ m^2}{b^4n^4} }}
+=\frac {\sqrt{(\frac{1}{a^2}+\frac{m^2}{b^2n^2})}}{\frac{1}{abn}} = \sqrt{a^2m^2+b^2n^2}
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+x = \verts{a}\cos\pars{\theta}
+y = \verts{b}\sin\pars{\theta}
+ m\braces{\verts{a}\cos\pars{\theta}} + n\braces{\verts{b}\sin\pars{\theta}} = k \quad\imp\quad \sin\pars{\theta} + {m\verts{a} \over n\verts{b}}\,\cos\pars{\theta} = {k \over n\verts{b}} 
+\ds{\tan\pars{\mu} = {m\verts{a} \over n\verts{b}}}
+\!\!\!\!\! \sin\pars{\theta}\cos\pars{\mu} + \cos\pars{\theta}\sin\pars{\mu} = {k \over n\verts{b}}\,\cos\pars{\mu} = {k \over n\verts{b}}\,{1 \over \root{\tan^{2}\pars{\mu} + 1}} ={k\sgn\pars{n} \over \root{m^{2}a^{2} + n^{2}b^{2}}} 
+ \sin\pars{\theta + \mu} = {k\sgn\pars{n} \over \root{m^{2}a^{2} + n^{2}b^{2}}} 
+\ds{{\verts{k} \over \root{m^{2}a^{2} + n^{2}b^{2}}}  \leq 1}
+\theta\ \in\ {\mathbb R}
+\pars{~\mbox{otherwise,}\ \theta\ \in\ {\mathbb C}~}
+0 \leq \arcsin\pars{\alpha} < 2\pi
+ \theta = -\arctan\pars{m\verts{a} \over n\verts{b}} + \arcsin\pars{{k\sgn\pars{n} \over \root{m^{2}a^{2} + n^{2}b^{2}}}} + 2\pi n\,,\quad n\ \in\ {\mathbb Z} 
+\theta
+x = \verts{a}\cos\pars{\theta}
+y = \verts{b}\sin\pars{\theta}
+ \color{#00f}{\large% \begin{array}{rcl} x & = & {\verts{nba}\sqrt{m^{2}a^{2} + n^{2}b^{2} - k^{2}} + ma^{2}k \over m^{2}a^{2} + n^{2}b^{2}} \\[3mm] y & = & {k \over n} - {m \over n}\,x \\[3mm]&& \color{#000}{\large\mbox{when}\ {\verts{k} \over \root{m^{2}a^{2} + n^{2}b^{2}}} \leq 1} \end{array}} 

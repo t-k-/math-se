@@ -1,0 +1,16 @@
+2^n
+o
+n!
+n!
+o
+n^n
+n\to\infty
+\frac{2^n}{n!}\quad\text{and}\quad\frac{n!}{n^n}\;;
+\frac{2^n}{n!}=\frac21\cdot\frac22\cdot\frac23\cdot\ldots\cdot\frac2{n-1}\cdot\frac2n\le 2\left(\frac23\right)^{n-2}
+n\ge 2
+\ln\frac{n!}{n^n}=\ln n!-\ln n^n=\sum_{k=1}^n\ln k-n\ln n\le\int_1^{n+1}\ln x\,dx-n\ln n\;,
+\sum_{k=1}^n\ln k
+\int_1^{n+1}\ln x\,dx
+\int_1^{n+1}\ln x\,dx=\left[x\ln x-x\right]_1^{n+1}=(n+1)\ln(n+1)-n\;,
+\begin{align*} \ln\frac{n!}{n^n}&\le(n+1)\ln(n+1)-n(1+\ln n)\\ &=\ln(n+1)^{n+1}-n\ln en\\ &=\ln(n+1)^{n+1}-\ln(en)^n\\ &=\ln\frac{(n+1)^{n+1}}{e^nn^n}\\ &=\ln\left(\left(\frac{n+1}n\right)^n\cdot\frac{n+1}{e^n}\right)\\ &=\ln\left(\left(1+\frac1n\right)^n\cdot\frac{n+1}{e^n}\right)\;, \end{align*}
+\frac{n!}{n^n}\le\left(1+\frac1n\right)^n\cdot\frac{n+1}{e^n}\;.

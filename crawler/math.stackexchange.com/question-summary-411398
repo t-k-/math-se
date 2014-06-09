@@ -1,0 +1,17 @@
+\int_{-\infty}^{+\infty} e^{-x^2}\cos x \, dx
+f(x)=e^{-x^2}
+C
+-R
+R
+R+i/2
+-R+i/2
+R\to\infty
+ 0 = \oint_C f(z) = \\ \int_{-\infty}^\infty f(x)\, dx-\int_{-\infty}^\infty f(x+i/2)\, dx = \\ \sqrt{\pi}-e^{1/4}\int_{-\infty}^\infty e^{-x^2}(\cos(x)+i\sin(x))\, dx 
+\int_{-\infty}^\infty e^{-x^2}\cos(x)\,dx = \frac{\sqrt \pi}{\sqrt[4] e}
+I(a) = \int_{-\infty}^\infty e^{-x^2} \cos(a x)\,dx
+I'(a) = -\int_{-\infty}^\infty x e^{-x^2} \sin(a x)\,dx = \frac{1}{2}e^{-x^2} \sin(a x)\bigg|_{-\infty}^\infty-\frac{a}{2}\int_{-\infty}^\infty e^{-x^2}\cos(ax)\,dx = -\frac{a I(a)}{2}
+I(0)=\sqrt{\pi}
+I(a) = \sqrt \pi e^{-\frac{a^2}{4}}
+I(1) = \frac{\sqrt \pi}{\sqrt[4] e}
+\cos x = \sum_{n=0}^\infty (-1)^n \frac{x^{2n}}{(2n)!}
+ I =  \int_{-\infty}^\infty e^{-x^2}\cos x\,dx = \\ \int_{-\infty}^\infty e^{-x^2}\sum_{n=0}^\infty (-1)^n \frac{x^{2n}}{(2n)!}\, dx=\\ \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}\int_{-\infty}^\infty e^{-x^2} x^{2n}\, dx=\\ \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}2\int_{0}^\infty e^{-x^2} x^{2n}\, dx \stackrel{x\mapsto \sqrt x}{=}\\ \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}\int_{0}^\infty e^{-x} x^{n-1/2}\, dx =\\ \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}\Gamma\left(k+\frac{1}{2}\right)=\\ \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!} \frac{\sqrt{\pi} (2n)!}{4^n n!} = \\ \sqrt \pi \sum_{n=0}^\infty \left(-\frac{1}{4}\right)^n \frac{1}{n!} = \\ \frac{\sqrt \pi}{\sqrt[4] e} 

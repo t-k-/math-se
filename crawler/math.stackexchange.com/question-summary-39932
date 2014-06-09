@@ -1,0 +1,43 @@
+T
+R
+r
+T
+T
+R
+r' \ll r
+R,r,r'
+T
+X-Y
+Z
+(R,r')
+\vec{x}=\left(\begin{array}{ccc} \cos\phi & \sin\phi & \\ -\sin\phi & \cos\phi & \\ &&1 \end{array} \right) \left( \begin{array}{c} \rho\sin\theta\\ r+R\cos\theta\\ r\sin\theta \end{array} \right)\;, 
+\theta
+\phi
+z
+\rho=\sqrt{R^2-r^2}
+\phi=0
+\theta
+\phi
+\frac{\partial\vec{x}}{\partial\theta}= \left( \begin{array}{c} \rho\cos\theta\\ -R\sin\theta\\ r\cos\theta \end{array} \right)\;, \;\;\; \frac{\partial\vec{x}}{\partial\phi}= \left( \begin{array}{c} r+R\cos\theta\\ -\rho\sin\theta\\ 0 \end{array} \right)\;. 
+\phi
+\phi
+\phi
+ \begin{eqnarray} \frac{\mathrm ds}{\mathrm d\phi} &=& \left|\frac{\partial\vec{x}}{\partial\phi}\right| \sqrt{1-\left(\frac{\frac{\partial\vec{x}}{\partial\phi}\cdot\frac{\partial\vec{x}}{\partial\theta}}{\left|\frac{\partial\vec{x}}{\partial\phi}\right|\left|\frac{\partial\vec{x}}{\partial\theta}\right|}\right)^2} \\ &=& \sqrt{\left|\frac{\partial\vec{x}}{\partial\phi}\right|^2-\left(\frac{\frac{\partial\vec{x}}{\partial\phi}\cdot\frac{\partial\vec{x}}{\partial\theta}}{\left|\frac{\partial\vec{x}}{\partial\theta}\right|}\right)^2} \\ &=& \sqrt{(r+R\cos\theta)^2+\rho^2\sin^2\theta-\left(\rho(r\cos\theta+R)/R\right)^2}\;. \end{eqnarray} 
+\theta
+\cos\theta
+R(r+R\cos\theta)-\rho^2\cos\theta-r\rho^2(r\cos\theta+R)/R^2=0\;,
+\cos\theta=-\frac{R}{r}\;.
+R> r
+\cos\theta=\pm1
+|\partial\vec{x}/\partial\theta|
+|\partial\vec{x}/\partial\phi|
+|\partial\vec{x}/\partial\phi|
+ \frac{\mathrm ds}{\mathrm d\phi}=(R\pm r)\frac{r}{R}\;\;\text{for}\;\;\cos\theta=\pm1\;. 
+R\pm r
+|\partial\vec{x}/\partial\phi|
+r/R
+\partial\vec{x}/\partial\phi
+\cos\theta=-1
+r'
+r'\ll r
+\Delta\phi=\frac{2r'}{\mathrm ds/\mathrm d\phi}=\frac{2r'R}{(R-r)r}\;.

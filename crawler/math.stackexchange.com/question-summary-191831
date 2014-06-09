@@ -1,0 +1,21 @@
+L
+u(x,t)
+k(x)
+x_0
+x_1
+k(x)
+\partial_t u(x,t)=k(x)\partial_{xx}u(x,t)
+u(x,0)=T_0
+u(0,t)=u_0(t)
+u(L,t)=u_L(t)
+u(x_0,t)=u_{x_0}(t)
+u(x_1,t)=u_{x_1}(t)
+ u(0,t) = u(L,t) = T_0 
+\partial_tu(x,t)=\partial_tv(x,t)+\partial_tu_0(t)+\dfrac{x}{L}(\partial_tu_L(t)−\partial_tu_0(t))
+\partial_xu(x,t)=\partial_xv(x,t)+u_L(t)−u_0(t)
+\partial_{xx}u(x,t)=\partial_{xx}v(x,t)
+\therefore\partial_tv(x,t)+\partial_tu_0(t)+\dfrac{x}{L}(\partial_tu_L(t)−\partial_tu_0(t))=k(x)\partial_{xx}v(x,t)
+\partial_tv(x,t)-k(x)\partial_{xx}v(x,t)=-\partial_tu_0(t)-\dfrac{x}{L}(\partial_tu_L(t)−\partial_tu_0(t))
+v(0,t)=0
+v(L,t)=0
+v(x,0)=T_0-u_0(0)-\dfrac{x}{L}(u_L(0)−u_0(0))

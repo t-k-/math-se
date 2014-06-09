@@ -1,0 +1,31 @@
+\sum_{j=0}^n \binom{n}{j} \frac1{j+1} = \frac{2^{n+1}-1}{n+1}
+(1+x)^n = \sum_{j=0}^n \binom{n}{j}x^j.
+0
+x
+\frac{(1+x)^{n+1}-1}{n+1} = \sum_{j=0}^n \binom{n}{j}\frac{x^{j+1}}{j+1}.
+x=1
+\ast
+ \frac{1}{2^{n+1}-1} \sum_{j=0}^n \binom{n}{j} \frac{1}{j+1} = \frac{1}{n+1}. \tag{$\ast$} 
+S \subseteq \{ 0, 1, 2, \ldots, n \}
+x
+S
+0
+n+1
+\frac{1}{n+1}
+(\ast)
+E_j
+S
+0
+j
+\{ 1, 2, \ldots, n\}
+E_j
+0
+\frac{1}{j+1}
+0 \notin S
+0
+ \frac{1}{2^{n+1}-1} \binom{n}{j}. 
+ \begin{align*} \Pr[\text{Head is } 0] &= \sum_{j=0}^n \Pr[E_j] \cdot \Pr[\text{Head is } 0 \mid E_j] \\  &= \sum_{j=0}^n \frac{1}{2^{n+1}-1} \binom{n}{j} \cdot \frac{1}{j+1} \end{align*} 
+n+1
+ \binom{n}{j}\frac{n+1}{j+1}=\binom{n+1}{j+1}\tag{1} 
+ \begin{align} \sum_{j=0}^n\binom{n}{j}\frac{n+1}{j+1} &=\sum_{j=0}^n\binom{n+1}{j+1}\\ &=2^{n+1}-1\tag{2} \end{align} 
+ \sum_{j=0}^n\binom{n}{j}\frac{1}{j+1}=\frac{2^{n+1}-1}{n+1}\tag{3} 

@@ -1,0 +1,17 @@
+1<\beta<2
+\lambda=\sqrt{1-(2/\beta -1)^2}
+c >1
+f(0) = g(0) = 1
+f(t) =f(t-1)+g(t-1)
+F(z)
+G(z)
+f
+g
+(1)
+(2)
+ F(z):=\sum_{t=0}^{\infty}f(t)z^t\qquad G(z):=\sum_{t=0}^{\infty}g(t)z^t 
+\begin{align*} F(z)&=\sum_{t=0}^{\infty}f(t)z^t\\ &=1+\sum_{t=1}^{\infty}f(t-1)z^{t}+\sum_{t=1}^{\infty}g(t-1)z^t\\ &=1+z\cdot F(z)+z\cdot G(z).\tag{1} \end{align*}
+\begin{align*} G(z)&=\sum_{t=0}^{\infty}g(t)z^t\\ &=1+(\beta-1)\sum_{t=1}^{\infty}g(t-1)z^t+\beta\sum_{t=1}^{\infty}f(t)z^t\\ &=1+(\beta-1)z\cdot G(z)+\beta(F(z)-1).\tag{2} \end{align*}
+ F(z)=\frac{1+zG(z)}{1-z}. 
+ G(z)=\frac{1+(\beta-1)z}{(\beta-1)z^2-2\beta z+1}, 
+ F(z)=\frac{1-2(\beta-1)z}{(\beta-1)z^2-2\beta z+1}. 

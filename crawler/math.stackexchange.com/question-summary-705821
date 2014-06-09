@@ -1,0 +1,25 @@
+\{(S_i, \mathcal{F}_i) \mid i \in [N]\}
+\mathbb{E}S_i^p < \infty
+M = \max_i S_i
+\|M\|_p \leq q \|S_N\|_p
+q
+p
+\frac{1}{p} + \frac{1}{q} = 1
+X, Y
+p
+t > 0
+ t \{X > t\} \leq \mathbb{P} Y \{X > t\} 
+ \|X\|_p \leq \frac{p}{p-1} \|Y\|_p 
+pt^{p-2}
+t
+\mathbb{E}X^p
+ \frac{p}{p-1} \mathbb{E} Y \int_0^{\infty} (p-1)t^{p-2} \{X > t\} dt 
+\leq (\mathbb{E}X^p)^{1/q}
+p-1)q = p
+\|X\|_p
+ \|Y\|_p\frac{p}{p-1} \left[ \mathbb{E} \left(\int_0^{\infty} (p-1)t^{p-2} \{X > t\} dt \right)^q \right]^{1/q} 
+\mathbb{E}(X^p) = \int_0^{\infty} p \cdot r^{p-1} \mathbb{P}(X > r) \, dr.
+r \mathbb{P}(X >r) \leq \int_{X>r} Y \, d\mathbb{P}
+\begin{align*} \mathbb{E}(X^p) &\leq \int_0^{\infty} p r^{p-2} \int_{X>r} Y \, d\mathbb{P} \, dr \\ &=p \int \int_0^X r^{p-2} \, dr Y \, d\mathbb{P}\\ &= \frac{p}{p-1} \int X^{p-1} Y \, d\mathbb{P} \end{align*}.
+\mathbb{E}(X^p) \leq \frac{p}{p-1} \|Y\|_q \underbrace{\left(\int X^{(p-1) q} \, d\mathbb{P}\right)^{\frac{1}{q}}}_{\mathbb{E}(X^p)^{1-\frac{1}{p}}}.
+\mathbb{E}(X^p)^{1-\frac{1}{p}}

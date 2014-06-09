@@ -1,0 +1,8 @@
+\lim_{r\downarrow 0} \left(\frac{a_1^r + \dotsb + a_n^r}{n}\right)^{1/r}= \left( a_1 \dotsb a_n\right)^{1/n}?
+\ln L = \lim_{r\downarrow 0} \frac{a_1^r + \dotsb + a_n^r}{n\left( a_1^r \ln{a_1} + \dotsb + a_n^r \ln{a_n} \right)}.
+r \rightarrow 0
+a>0
+a^r = 1 + r \log a + o(r)
+\frac{1}{n}\sum_{i=1}^n a_i^r=\frac{1}{n}\sum_{i=1}^n(1 + r \log a_i + o(r))=1+r\frac{1}{n}\sum_{i=1}^n\log a_i + o(r)
+\lim_{r \rightarrow 0} (1+rx + o(r))^{1/r}=e^x
+\lim_{r \rightarrow 0} \left(\frac{1}{n}\sum_{i=1}^n a_i^r\right)^{1/r}=\lim_{r \rightarrow 0} \left(1+r\frac{1}{n}\sum_{i=1}^n\log a_i + o(r)\right)^{1/r}=e^{\left(\frac{1}{n}\sum_{i=1}^n\log a_i\right)}= \left( \prod_{i=1}^n a_i\right)^{1/n}.

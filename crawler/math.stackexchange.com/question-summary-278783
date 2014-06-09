@@ -1,0 +1,89 @@
+f:[a,b] \to \Bbb R
+b-a>\pi
+x\in (a,b)
+\sin\left(\frac{x-a}{b-a}\pi\right)>0
+f(a)=f(b)=0
+I_2
+\int_a^bf(x)\sin\left(\frac{x-a}{b-a}\pi\right)dx>0
+0<\int_a^bf(x)\sin\left(\frac{x-a}{b-a}\pi\right)dx+\int_a^bf''(x)\sin\left(\frac{x-a}{b-a}\pi\right)dx=I_1+I_2\tag{1}.
+I_1=-\frac{\pi}{b-a}\left(\int_a^b-f'(x)\cos\left(\frac{x-a}{b-a}\pi\right)dx.\right)
+\small 0<\left(\frac{(b-a)^2}{\pi^2}-1\right)\int_a^bf'(x)\cos\left(\frac{x-a}{b-a}\pi\right)=\left(\frac{(b-a)^2}{\pi^2}-1\right)\int_a^bf(x)\sin\left(\frac{x-a}{b-a}\pi\right)dx.
+f
+f'
+[a,b]
+f''
+(a,b)
+g
+[a,b]
+(a,b)
+f(a)=f(b)=0
+g(a)=0
+g(b)=f'(b)\sin(b-a)
+c\in(a,b)
+f(x)>0
+(a,b)
+f(b)=0
+f'(b)\le 0
+f''(c)+f(c)>0
+(1)
+b-a>\pi
+g:[a,b]\to \mathbb{R}, \quad x\mapsto f'(x)\sin(x-a)-f(x)\cos(x-a).
+\frac{f'(b)\sin(b-a)}{b-a}=\frac{g(b)-g(a)}{b-a}=g'(c)=(f''(c)+f(c))\sin(c-a).\tag{1}
+b-a\le \pi
+g
+(a,b)
+g
+(a,b)
+g(b^-)>g(a^+)
+f(x)>0
+(a,b)
+f(a)=f(b)=0
+g(a^+)\ge 0\ge g(b^-)
+g'(x)=(f''(x)+f(x))\sin(x-a)>0.
+g(a^+):=\lim_{x\to a^+} g(x)=\lim_{x\to a^+}f'(x)\sin(x-a)
+g(b^-):=\lim_{x\to b^-} g(x)=\lim_{x\to b^-}f'(x)\sin(x-a)
+\limsup_{x\to a^+}f'(x)\ge\liminf_{x\to a^+}\frac{f(x)-f(a)}{x-a}\ge 0 
+\liminf_{x\to b^-}f'(x)\le\limsup_{x\to b^-}\frac{f(x)-f(b)}{x-b}\le 0 .
+a = b = 0
+f(0) = 0
+x \in (a,b)
+b - a = 0
+f(a) = f(b) = 0
+f(x) = 1
+x \in (a,b)
+a
+b
+(a,b)
+a
+b
+f'(b) \leq 0
+b-a < \pi
+\int_a^b f''(x)\sin(x - a)dx = f'(b) \sin(b-a) - \int_a^b f(x) \sin(x-a) dx
+\int_a^b\left(f(x) + f''(x)\right) \sin(x-a) dx = f'(b) \sin(b-a).
+a < b
+f
+[a,b]
+b-a \leq \pi
+g(x) = \sin (x-a)f'(x) - f(x) \cos (x-a)
+\lim_{x \to a^+} g(x) \ge 0
+x \in (a,b)
+g'(x) = (f(x) + f''(x)) \sin(x-a) > 0
+b-a \leq \pi
+g
+(a,b)
+g > 0
+\displaystyle \lim_{u \to b^-} g(u) > 0
+u_n \to b^-
+lim_{n \to \infty} f'(u_n) \leq 0
+\lim_{n \to \infty} g(u_n) = \lim_{n \to \infty} \sin(u_n - a)f'(u_n) - \lim_{n \to \infty} f(u_n) \cos (u_n - a) \leq 0
+1 > \epsilon > 0
+x \in (a,a+\epsilon)
+f'(x) < N \ll 0
+x < y \in (a,a+\epsilon)
+c
+x,y
+a
+f(y) = f(y) - f(a) \leq N\epsilon < 0
+f(y) > 0
+y \in (a,b)
+f(y) - f(x) = f'(c)(y-x) < N(y-x) < N\epsilon < 0

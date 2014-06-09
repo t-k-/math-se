@@ -1,0 +1,41 @@
+x=0
+x=l
+l
+0<x<l
+x=l
+x=0
+K(0)
+g(0)
+e(0)
+g(0)
+K(0)
+e(0)
+V(l)
+M(l)
+f_V=f(K,e)
+f_M=f(K,e)
+K
+e
+K(0)
+e(0)
+10^-8
+g(x)
+tanh()
+K(0)
+g(0)
+e(0)
+K
+g
+e
+K
+e
+K(0)
+g(0)
+e(0)
+l=25mm.
+ u' = f(u,v,x) \\ v'=g(u,v,x)
+0=x_0 < x_1 < \dots < x_n = l
+x_{i+1}-x_i = h
+u(x_i) = u_i
+ \frac{1}{2h}  \begin{pmatrix}   0 & 1 & 0 & \cdots & 0&0 \\   -1& 0 & 1 & \cdots & 0&0 \\   0 & -1 & 0 & \cdots & 0&0 \\   \vdots  & \vdots  &\vdots& \ddots & \vdots &\vdots  \\   0& 0&0& \cdots &0& 1\\   0&0&0&\cdots &-1 & 0   \end{pmatrix}  \begin{pmatrix}    u_1 \\ u_2 \\u_3 \\ \vdots \\u_{n-2} \\ u_{n-1}  \end{pmatrix}  +  \frac{1}{2h} \begin{pmatrix}    -u(0) \\ 0 \\ 0 \\ \vdots \\0 \\ u(l)  \end{pmatrix} =\begin{pmatrix}    f(u_1,v_1,x_1) \\ f(u_2,v_2,x_2) \\ f(u_3,v_3,x_3) \\ \vdots \\f(u_{n-2},v_{n-2},x_{n-2}) \\ f(u_{n-1},v_{n-1},x_{n-1})  \end{pmatrix} 
+ \frac{1}{2h}  \begin{pmatrix}   -2 & 2 & 0 & \cdots & 0&0 \\   -1& 0 & 1 & \cdots & 0&0 \\   0 & -1 & 0 & \cdots & 0&0 \\   \vdots  & \vdots  &\vdots& \ddots & \vdots &\vdots  \\   0& 0&0& \cdots &0& 1\\   0&0&0&\cdots &-2 & 2   \end{pmatrix}  \begin{pmatrix}    v_0 \\ v_1 \\v_3 \\ \vdots \\v_{n-1} \\ v_{n}  \end{pmatrix} =\begin{pmatrix}    g(u_0,v_0,x_0) \\ g(u_1,v_1,x_1) \\ g(u_2,v_2,x_2) \\ \vdots \\g(u_{n-1},v_{n-1},x_{n-1}) \\ g(u_{n},v_{n},x_{n})  \end{pmatrix} 

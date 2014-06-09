@@ -1,0 +1,14 @@
+x, y
+a
+\sum_{k = 0}^{\infty}\frac{2}{2k + 1}e^{-(2k + 1)\pi x/a}\sin\left( \frac{(2k + 1)\pi y}{a}\right)  = \tan^{-1}\left( \frac{\sin(\pi y/a)}{\sinh(\pi x/a)} \right) 
+0
+z
+\sum_{k=0}^{\infty} z^{2k} = \frac{1}{1-z^{2}} \ \ , \  |z|<1 
+\sum_{k=0}^{\infty} \frac{z^{2k+1}}{2k+1} = \text{arctanh} (z)
+ \sum_{k = 0}^{\infty}\frac{2}{2k + 1}e^{-(2k + 1)\pi x/a}\sin\left( \frac{(2k + 1)\pi y}{a}\right)  = \text{Im}\sum_{k = 0}^{\infty}\frac{2}{2k + 1}e^{-(2k + 1)\pi x/a} e^{i(2k+1) \pi y /a}
+ = 2 \ \text{Im} \ \text{arctanh} \left(e^{- \pi x /a} e^{- i \pi y/a} \right) = \ \text{Im} \Big( \log (1+e^{- \pi x/a} e^{i \pi y/a}) - \log(1-e^{-\pi x /a} e^{i \pi y /a})\Big)
+ = \arctan \left( \frac{\sin (\frac{\pi y}{a})}{e^{\pi a /x} +\cos (\frac{\pi y}{a})}  \right) + \arctan\left( \frac{\sin (\frac{\pi y}{a})}{e^{\pi a /x} - \cos (\frac{\pi y}{a})}  \right)  
+ = \arctan \left( \frac{2e^{\pi x/a} \sin (\frac{\pi y}{a})}{e^{2 \pi a/x}-1} \right)
+ = \arctan \left( \frac{\sin (\frac{\pi y}{a})}{\sinh (\frac{\pi x}{a})}\right) 
+ \sin t = \frac{ e^{it} - e^{-it}}{2i} 
+ \sum_{k=0}^{\infty}  t^{2k} = \frac{1}{1-t^2} .

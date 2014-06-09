@@ -1,0 +1,19 @@
+M
+s,t
+E\left(\int_s^t X \, dM\mid\mathcal{F}_s\right)\le 0
+E(\int_s^t X \, dM\mid\mathcal{F}_s)> -\infty
+M
+X
+I_t := \int_s^t X(r) \, dM_r, \qquad t \geq s
+\mathbb{E} \left( \int_s^t X(r) \, dM_r \mid \mathcal{F}_s \right) = \mathbb{E}(I_t \mid \mathcal{F}_s) = I_s =0
+t \geq s
+M
+X
+(\tau_n)_n
+I_{t}^{\tau_n} := \int_s^{t \wedge \tau_n} X(r) \, dM_r
+\mathbb{E} \left( \int_s^{t \wedge \tau_n} X(r) \, dM_r \mid \mathcal{F}_s \right) = 0.
+\lim_{n \to \infty} I_t^{\tau_n} = I_t
+\mathbb{E} \left( \int_s^{t} X(r) \, dM_r \mid \mathcal{F}_s \right) \leq \limsup_{n \to \infty} \mathbb{E} \left( \int_s^{t \wedge \tau_n} X(r) \, dM_r \mid \mathcal{F}_s \right) = 0.
+\sup_{n \in \mathbb{N}} \left| \int_s^{t \wedge \tau_n} X(r) \, dM_r \right| \in L^1(\mathbb{P}).
+\mathbb{E}\left( \int_s^t X \, dM \mid \mathcal{F}_s \right) \leq 0 \Leftrightarrow \mathbb{E}(M_t \mid \mathcal{F}_s) \leq M_s
+M

@@ -1,0 +1,20 @@
+ \lim_{x \to 1^+} \frac{x^x+\frac{x}{2}-\sqrt x-\frac{1}{2}}{\log(x)-x+1} 
+x
+1+y
+ \lim_{y \to 0^+}_{y<1} \frac{(y+1)^{y+1}+\frac{y}{2}-\sqrt{1+y}}{\sum_{n=1}^\infty (-1)^n\frac{y^{n+1}}{n+1}} 
+y
+y=1+x
+(1+y)^{(1+y)} = 1 + (1+y)*y + \ldots = 1 + y + y^2 + \ldots
+\sqrt{1+y} = (1+y)^{1/2} = 1 + (1/2)y + \ldots
+ \left(1 + \frac{y}{2} + O(y^2)\right) + \frac{y}{2} - \left( 1 + \frac{y}{2} + O(y^2) \right) = \frac{y}{2} + O(y^2) 
+-y^2 + O(y^3)
+\frac{\frac{y}{2} + O(y^2)}{-y^2 + O(y^3) } = \frac{-1}{2y}\frac{1 + O(y)}{1 +O(y)} = \frac{-1}{2y}(1+O(y))
+\frac{-1}{2y}
+y
+ \lim_{x \to 1^+} \frac{x^x+\frac{x}{2}-\sqrt x-\frac{1}{2}}{\log(x)-x+1}= \lim_{x \to 1^+} \frac{x^x(\log(x)+1)+\frac{1}{2}-\frac{1}{2\sqrt x}}{\frac{1}{x}-1}=-\infty 
+ \lim_{x \to 1^+}  \frac{x^x+\frac{x}{2}-\sqrt x-\frac{1}{2}}{\log(x)-x+1}= \lim_{x \to 1^+} \frac{1+(x-1)+\frac{x}{2}-1-\frac{x-1}{2}-\frac{1}{2}}{x-1-\frac{1}{2}(x-1)^2-x+1}=-\infty 
+\lim_{x\to1} f(x) = 0
+\lim_{x\to1} g(x) = 0
+ \lim_{x\to1^+} \frac{f(x)}{g(x)} = \lim_{x\to1^+} \frac{f'(x)}{g'(x)} 
+f'(1) \neq 0
+g'(1)=0

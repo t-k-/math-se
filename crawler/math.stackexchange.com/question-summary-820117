@@ -1,0 +1,32 @@
+B
+A
+B
+x
+x
+A
+B
+A/B
+x \to \infty
+B\ge A
+A/B
+ B = e^x = \sum_{i=0}^{\infty} \frac{x^i}{i!} 
+n\in\mathbb{Z^+}
+ A = \sum_{j=0}^{\infty} \frac{x^{jn}}{(jn)!} 
+A
+n
+e^x
+0
+ \sum_{j=0}^{\infty} \frac{x^{jn}}{(jn)!} = \frac{1}{n} \sum_{k=0}^{n-1} \exp\left(xe^{i2\pi k/n}\right). 
+ \begin{align} \sum_{k=0}^{n-1} \exp\left(xe^{i2\pi k/n}\right) &= \sum_{k=0}^{n-1} \sum_{j=0}^{\infty} \frac{x^j e^{i2\pi kj/n}}{j!} \\ &= \sum_{j=0}^{\infty} \frac{x^j}{j!} \sum_{k=0}^{n-1} e^{i2\pi kj/n}. \end{align} 
+j
+n
+1
+n
+j
+n
+ \sum_{k=0}^{n-1} e^{i2\pi kj/n} = \frac{1 - e^{i2\pi j}}{1 - e^{i2\pi j/n}} = 0. 
+j
+n
+ \sum_{k=0}^{n-1} \exp\left(xe^{i2\pi k/n}\right) = n \sum_{j=0}^{\infty} \frac{x^{jn}}{(jn)!}. 
+ \frac{\displaystyle\sum_{j=0}^{\infty} \frac{x^{jn}}{(jn)!}}{\displaystyle\sum_{j=0}^{\infty} \frac{x^{j}}{j!}} = \frac{1}{n} + \frac{1}{n} \sum_{k=1}^{n-1} \exp\left(x\left(e^{i2\pi k/n}-1\right)\right) \longrightarrow \frac{1}{n} 
+x \to \infty

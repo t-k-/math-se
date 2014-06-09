@@ -1,0 +1,5 @@
+ 0 \leq a \leq 9 
+ \left \lfloor \frac{10^{20000}}{10^{100}+3} \right\rfloor \equiv a \mod 10 
+0\le\epsilon\le\left(\frac{9}{10}\right)^{100}
+ \small\begin{align} &\frac{10^{20000}}{10^{100}}\frac1{1+3\cdot10^{-100}}\\ &=10^{19900}\left(1-3\cdot10^{-100}+\left(3\cdot10^{-100}\right)^2-\dots \color{#00A000}{-\left(3\cdot10^{-100}\right)^{199}}\color{#C00000}{+\left(3\cdot10^{-100}\right)^{200}-\dots}\right)\\ &\equiv\color{#00A000}{-3^{199}}\color{#C00000}{+\epsilon}\pmod{10^{100}} \end{align} 
+ \begin{align} \left\lfloor\frac{10^{20000}}{10^{100}+3}\right\rfloor &\equiv-3^{199}\pmod{10^{100}}\\ &\equiv-\left(3^4\right)^{49}\,3^3\pmod{10}\\[6pt] &\equiv-1^{49}\,7\pmod{10}\\[12pt] &\equiv3\pmod{10} \end{align} 

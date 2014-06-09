@@ -1,0 +1,17 @@
+P(S_N=r)\approx \exp(-N \cdot \mathbb{D}((p,1-p) \parallel (r/N,1-r/N)))
+p
+N
+r
+\mathbb{D}
+P(S_N=r)
+A=\frac{N!}{r! \cdot (N-r)!} \cdot p^r \cdot (1-p)^{N-r}
+\log(A)\approx N\log(N)-r\log(r)-(N-r) \cdot \log(N-r)+r \cdot \log(p)/\log(2)+(N-r) \cdot \log(1-p)/\log(2)
+B=\exp(-N \cdot (p \cdot \log_2(\frac{p}{r/N})+(1-p) \cdot \log_2(\frac{1-p}{1-r/N})))
+\log(B)=-N \cdot (p \cdot \log_2(\frac{p}{r/N})+(1-p) \cdot \log_2(\frac{1-p}{1-r/N}))
+\log(A)
+\log(B)
+r=x \cdot N
+\log(A)\approx r/x\cdot\log(r/x)-r\cdot\log(r)-(r/x-r)\cdot\log(r/x-r)+ r \cdot \log(p)+(r/x-r) \cdot \log(1-p)=r/x\cdot\log(r)-r/x \log(x)-r/x \log r- r/x \log(1-x)+r/x \log x + r\log r+r\cdot\log (1-x)-r\log x-r\log r+r\log p +r/x \log(1-p) -r \log(1-p) =-r/x \cdot \log (1-x)+r\cdot \log (1-x) -r\cdot \log x + r \cdot \log p + r/x \cdot \log(1-p) -r\cdot \log(1-p)
+\log(B)=-r/x \cdot (x\log x/p + (1-x) \log (\frac{1-x}{1-p}))=-r \cdot \log x +r\cdot \log p- r/x \cdot \log (1-x) +r \cdot \log(1-x)+r/x \cdot \log(1-p)-r \cdot \log (1-p)
+\log A
+\log B

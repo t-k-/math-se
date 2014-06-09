@@ -1,0 +1,24 @@
+\hat{y_i}=\hat{\beta_0}+\hat{\beta_1}x_i+\hat{\epsilon_i}
+\hat{\beta_0}
+\hat{\beta_1}
+\hat{\epsilon_i}
+0
+\sigma^2
+\operatorname{Var}\left(\hat{\beta_0}\right)=\frac{\sigma^2\sum_{i=1}^nx_i^2}{n\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}
+\operatorname{Var}\left(\hat{\beta_1}\right)=\frac{\sigma^2}{\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}
+\operatorname{cov}\left(\hat{\beta_0},\hat{\beta_1}\right)=\frac{-\sigma^2\sum_{i=1}^nx_i}{n\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}
+\hat{\beta}
+\beta
+E[\hat{\beta}]=\beta
+u \sim N(\mu=0,\sigma)
+b
+\hat{\beta}=(X'X)^{-1}X'Y
+\begin{equation} Y=X\beta +u \end{equation}
+Y\sim N(\mu=\beta_0+\beta_1x,\sigma)
+Var(\hat{\beta)}:=\sigma^2(\hat{\beta})=\left( \begin{array}{ccc} Var(\hat{\beta_0}) & Cov(\hat{\beta_0},\hat{\beta_1})   \\ Cov(\hat{\beta_0},\hat{\beta_1}) & Var(\hat{\beta_1}) \end{array} \right)
+E[u]=0
+E[u^2]=Var(u)=\sigma^2
+\begin{align*}Var(\hat{\beta})&=E[\hat{\beta}\phantom{}^2]-E[\hat{\beta}]^2=E[((X'X)^{-1}X'Y)^2]-\beta^2=E[((X'X)^{-1}X'(X\beta +u))^2]-\beta^2=\\&=E[((X'X)^{-1}X'X\beta +(X'X)^{-1}X'u))^2]-\beta^2=E[(\beta+(X'X)^{-1}X'u))^2]-\beta^2=\\&=E[\beta^2]+2(X'X)^{-1}X'E[u]+E[((X'X)^{-1}X'u))^2]-\beta^2=\\&=\beta^2+0+E[((X'X)^{-1}X'u))^2]-\beta^2=E[((X'X)^{-1}X'u))^2]=\\&=\left((X'X)^{-1}X'\right)^2\cdot E[u^2]\end{align*}
+\begin{align*}Var(\hat{\beta})&=\left((X'X)^{-1}X'\right)^2\cdot E[u^2]=(X'X)^{-1}X'\cdot(X'X)^{-1}X'\cdot\sigma^2=\sigma^2(X'X)^{-1}\cdot I=\\&=\sigma^2(X'X)^{-1}.\end{align*}
+(X'X)^{-1}=\left( \begin{array}{ccc} \frac{\sum x_i^2}{n\sum (x_1-\bar{x})^2} & \frac{-\sum x_i}{n\sum (x_1-\bar{x})^2}   \\ \frac{-\sum x_i}{n\sum (x_1-\bar{x})^2} & \frac{1}{n\sum (x_1-\bar{x})^2} \end{array} \right)
+\begin{align*} Var(\hat{\beta})&=\left( \begin{array}{ccc} Var(\hat{\beta_0}) & Cov(\hat{\beta_0},\hat{\beta_1})   \\ Cov(\hat{\beta_0},\hat{\beta_1} & Var(\hat{\beta_1}) \end{array} \right)=\sigma^2\left(X'X\right)^{-1}=\\&\phantom{kl}\\&=\left( \begin{array}{ccc} \frac{\sigma^2 \sum x_i^2}{n\sum (x_1-\bar{x})^2} & \frac{-\sigma^2 \sum x_i}{n\sum (x_1-\bar{x})^2}   \\ \frac{-\sigma^2 \sum x_i}{n\sum (x_1-\bar{x})^2} & \frac{\sigma^2}{n\sum (x_1-\bar{x})^2} \end{array} \right) \end{align*}

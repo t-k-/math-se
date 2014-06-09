@@ -1,0 +1,12 @@
+J(w) = \sum^m_{i=1} u_i (w^T x_i - y_i)^2
+J(w) = (Xw - y)^T U(Xw - y)
+U
+i
+J(w)
+w^Tx_i = x_i^Tw
+u_i
+U
+ \sum^m_{i=1} (w^T x_i - y_i) u_i (w^T x_i - y_i) 
+ \sum^m_{i=1} (x_i^Tw - y_i) u_i (x_i^Tw - y_i) 
+ \pmatrix{x_1^Tw-y_1 &\ldots &x_m^Tw-y_m}\pmatrix{u_1 \\&u_2\\&&\ddots\\&&&u_m}\pmatrix{x_1^Tw-y_1 \\\vdots \\x_m^Tw-y_m} 
+ J(w) = (X^Tw-y)^T U(X^Tw-y) 

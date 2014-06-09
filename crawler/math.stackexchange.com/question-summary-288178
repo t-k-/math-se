@@ -1,0 +1,14 @@
+E = \{t_1,...t_N\}
+t_i < 0
+L(t) = at + b
+ \Vert{L-\Phi}\Vert
+ \Phi(t) = K\sum_{i=1}^N\delta(t-t_i) 
+ d\omega = e^{kt}dt 
+\int_{-\infty}^{0}\left(L(t)-\Phi(t)\right)^2 e^{kt}dt = \int_{-\infty}^{0}\left(at+b-\Phi(t)\right)^2 e^{kt}dt
+a
+b
+\begin{eqnarray} a \int_{-\infty}^{0}t^2 e^{kt}dt + b \int_{-\infty}^{0}t e^{kt}dt & = & \int_{-\infty}^{0}\Phi(t) t e^{kt}dt \\ a \int_{-\infty}^{0}t e^{kt}dt + b \int_{-\infty}^{0}e^{kt}dt & = & \int_{-\infty}^{0}\Phi(t) e^{kt}dt  \end{eqnarray}
+\Phi(t)=K\sum_{i=1}^N \delta(t-t_i)
+\begin{eqnarray} -\frac{2}{k^3}a + \frac{1}{k^2}b & = & K\sum_{i=1}^N t_i e^{kt_i} \\ \frac{1}{k^2}a  - \frac{2}{k} b  & = & K\sum_{i=1}^N e^{kt_i}  \end{eqnarray}
+a
+b

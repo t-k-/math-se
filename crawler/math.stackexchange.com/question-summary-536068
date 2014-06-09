@@ -1,0 +1,14 @@
+F(x)=e^{-e^{-x}}
+Z=X-Y
+F_Z(x)
+F_Z(x)=\frac{e^x}{1+e^x}
+ \begin{align} P(Z\leq z)&=P(X\leq z+Y)=\int_{-\infty}^\infty P(X\leq z+y) f(y)\,\mathrm dy\\ &=\int_{-\infty}^\infty\exp(-e^{-(z+y)})\exp(-y-e^{-y})\,\mathrm dy \\ &=\int_{-\infty}^\infty \exp(-y-e^{-y}(1+e^{-z}))\,\mathrm dy\\ &=\left[\frac{1}{1+e^{-z}}\exp(-(1+e^{-z})e^{-y})\right]_{-\infty}^\infty\\ &=\frac{1}{1+e^{-z}}. \end{align} 
+F_Z(z)=\mathbb{P}\{Z\leq z\}=\mathbb{P}\{X-Y\leq z\}=\mathbb{P}\{X\leq Y+z\}
+A\subseteq \mathbb{R}^2
+A=\{(x,y)\in\mathbb{}R^2\;|\;x\leq y+z\}
+\int_A f_{X,Y}(x,y) dxdy
+X,Y
+f_{X,Y}(x,y)=f_X(x)\cdot f_Y(y)
+f_X(x)=f_Y(x)=e^{-e^{-x}}\cdot e^{-x}
+F_Z(z)=\int_{-\infty}^\infty\int_{-\infty}^{y+c}e^{-e^{-x}}\cdot e^{-x}e^{-e^{-y}}\cdot e^{-y}dxdy
+x

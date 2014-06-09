@@ -1,0 +1,8 @@
+\sum_{k=0}^\infty{x^{e^k}}
+x^{e^k}=e^{(e^k \log{x})}
+|(e^k \log{x})|<\infty
+e^{(e^k \log{x})}=\frac{(e^k \log{x})^0}{0!}+\frac{(e^k \log{x})^1}{1!}+\frac{(e^k \log{x})^2}{2!}+\dots
+\frac{(e^k \log{x})^m}{m!}=\sum_{j=0}^\infty{\frac{m^j \log{x}^m}{m!j!}k^j}
+\sum_{k=0}^\infty{x^{e^k}}=\sum_{k=0}^\infty{\sum_{j=0}^\infty{ \sum_{m=0}^\infty{\frac{m^j \log{x}^m}{m!j!}k^j} }}
+\sum_k
+\sum_j

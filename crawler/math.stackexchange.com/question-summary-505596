@@ -1,0 +1,25 @@
+X_1
+X_2
+X_3
+...
+X_n
+n>2
+[0,1]
+X_1 < X_2 < ... < X_n
+Y_n
+\frac{X_n}{(X_1 X_2 \dots X_n)^\frac{1}{n-1}}
+logY
+log X_k
+n
+Gamma(1, n)
+Y_n = \frac{X_n}{(X_1 X_2 \dots X_n)^\frac{1}{n-1}}= \frac{X_nX_n^{-\frac{1}{n-1}}}{(X_1 X_2 \dots X_{n-1})^\frac{1}{n-1}}= \frac{X_n^{\frac{n-2}{n-1}}}{(X_1 X_2 \dots X_{n-1})^\frac{1}{n-1}}
+Z \equiv X_n^{\frac{n-2}{n-1}}
+ f_{Z}(z) = \frac {n-1}{n-2}z^{\frac {1}{n-2}} \qquad [1]
+B(a,b)
+a= \frac {n-1}{n-2}
+b=1
+ f_{Z_{\pi}}(z_{\pi}) = \frac {1}{(n-2)!}\cdot \Big(-\ln z_{\pi}\Big)^{n-2} 
+G \equiv \left(Z_{\pi}\right)^{\frac {1}{n-1}}
+f_G(g) = \frac {(n-1)^{n-1}}{(n-2)!}\Big(-g\ln g\Big)^{n-2} \qquad [2]
+f_{Y_n}(y_n) = \int_0^1g\frac {n-1}{n-2}(gy_n)^{\frac {1}{n-2}}\frac {(n-1)^{n-1}}{(n-2)!}\Big(-g\ln g\Big)^{n-2}dg 
+=(y_n)^{\frac {1}{n-2}}\frac {1}{n-2}\frac {(n-1)^{n}}{(n-2)!}\int_0^1g^{\frac {n-1 + (n-2)^2)}{n-2}}\Big(-\ln g\Big)^{n-2}dg 

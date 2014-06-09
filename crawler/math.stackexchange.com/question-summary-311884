@@ -1,0 +1,13 @@
+D
+(0,0)
+(0,1)
+(1,0)
+(1,1)
+\min(x^2,y^2)
+x^2
+y^2
+x\mapsto e^{x^2}
+x\mapsto 2xe^{x^2}
+x=y
+\begin{align} \int_0^1\int_0^1e^{\min\{x^2,y^2\}}\,\mathrm dy\,\mathrm dx &= 2\int_0^1\int_x^1e^{x^2}\,\mathrm dy\,\mathrm dx\\ &=2\int_0^1(1-x)e^{x^2}\,\mathrm dx\\ &=2\int_0^1e^{x^2}\,\mathrm dx-\int_0^12xe^{x^2}\,\mathrm dx\\ &=2\int_0^1e^{x^2}\,\mathrm dx-e+1. \end{align}
+\begin{align} \int_0^1\int_0^1e^{\max\{x^2,y^2\}}\,\mathrm dy\,\mathrm dx &= 2\int_0^1\int_0^xe^{x^2}\,\mathrm dy\,\mathrm dx\\ &=2\int_0^1 x e^{x^2}\,\mathrm dx\\ &=e-1. \end{align}

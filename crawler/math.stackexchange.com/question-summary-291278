@@ -1,0 +1,11 @@
+ \sum \limits_{k=1}^{\infty} k q^{k-1} 
+ 0 < q < 1 
+ \sum_{i=0}^{n-1} i x^i = \frac{x-nx^n+(n-1)x^{n+1}}{(1-x)^2} 
+q\ne1
+S=\sum_{1\le k \le n}kq^{k-1}=1+2q+3q^2+\cdots+(n-1)q^{n-2}+(n)q^{n-1}
+qS=q\sum_{1\le k \le n}kq^{k-1}=q+2q^2+3q^3+\cdots+(n-1)q^{n-1}+(n)q^{n}
+(1-q)S=1+(2q-q)+(3q^2-2q^2)+\cdots+\{n-(n-1)\}q^{n-1}-nq^n
+=-nq^n+1+q+q^2+\cdots+q^{n-1}=-nq^n+\frac{1-q^n}{1-q}
+S=\frac{1-q^n}{(1-q)^2}-\frac{nq^n}{1-q}
+\lim_{n\to\infty}S=\frac1{(1-q)^2}
+f(x):=\sum_{i=0}^\infty x^i=\frac{1}{1-x}\,\,,\,\,|x|<1\Longrightarrow\frac{1}{(1-x)^2}=f'(x)=\sum_{k=1}^\infty ix^{i-1}\,\,,\,\,|x|<1\ldots

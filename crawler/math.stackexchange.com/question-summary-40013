@@ -1,0 +1,17 @@
+k_{t+1}=\beta\alpha k_t^\alpha
+\alpha,\beta \in R(0,1)
+\lim_{t\to\infty} k_{t+1}=k_t=k^*.
+\left[ \begin{matrix} \log k(t+1)\\ \log k(t+2) \end{matrix} \right] = \left[ \begin{matrix} 0 &1\\ 0 &\alpha \end{matrix}\right] \left[ \begin{matrix} \log k(t)\\ \log k(t+1)\end{matrix} \right] + \left[ \begin{matrix} 0\\ \log\beta + \log\alpha \end{matrix} \right]
+U_{t+1} = AU_t +B
+x_t=\log k_t
+x_{t+1}=\alpha x_t+b
+b=\log(\alpha\beta)
+\alpha\ne1
+x_{t+1}-x^*=\alpha (x_t-x^*)
+x^*=b/(1-\alpha)
+x_t=x^*+\alpha^t(x_0-x^*)
+|\alpha|<1
+x_t\to x^*
+x_0=\log k_0
+k_t\to k^*
+k^*=\exp(x^*)=(\alpha\beta)^{1/(1-\alpha)}

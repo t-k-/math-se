@@ -1,0 +1,14 @@
+F(u) = \int^1_0 ((u')^2+3u^4+cosh(u)+(x^3-x)(u))dx \:in\: C^1[0,1]
+u(0)=u(1)=0
+C^1[0,1]
+u_0,u_1 \in C^1[0,1] ,\lambda \in [0,1]
+\int_0^1 (u')^2dx
+u_0' \ne u_1'
+((1-\lambda)u_0' + \lambda u_1')^2 \lt (1-\lambda)u_0'^2 + \lambda u_1'^2
+\int_0^1 3u^4 dx
+3x^4
+3((1-\lambda)u_0 + \lambda u_1)^4 \lt 3(1-\lambda)u_0^4 + 3\lambda u_1^4
+\int^1_0 cosh(u)dx 
+cosh((1-\lambda)u_0 + \lambda u_1) \lt (1-\lambda)cosh(u_0) + \lambda cosh(u_1)
+ \int^1_0 (x^3-x)(u)dx
+\int^1_0 (x^3-x)(1-\lambda)u_0 + \lambda u_1)dx = (1-\lambda)\int^1_0 (x^3-x)u_0dx + \lambda \int^1_0 (x^3-x) u_1dx

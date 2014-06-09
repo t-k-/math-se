@@ -1,0 +1,11 @@
+\int_{-\pi}^{\pi}\sin(nx)e^{inx}
+-\pi i
+e^{-in \pi}=\cos(n \pi)-i \sin(n\pi)=(-1)^{n}
+[\cos(nx)e^{-inx}]_{-\pi}^{\pi}
+\int_{-\pi}^{\pi}\sin(nx)e^{inx}=[\frac{(-\cos(nx))}{n}e^{-inx}]_{-\pi}^{\pi}-\int_{-\pi}^{\pi}\frac{ine^{-inx}\cos(nx)}{n}=-\frac{1}{n}[\cos(nx)e^{-inx}]_{-\pi}^{\pi}-\int_{-\pi}^{\pi}ie^{-inx}\cos(nx)e^{inx}=0-i[\frac{e^{-inx}}{-in}]_{-\pi}^{\pi}\cos(nx)=0.
+\sin(n x)=\frac{e^{inx}-e^{-inx}}{2i}.
+\int_{-\pi}^\pi \frac{e^{inx}-e^{-inx}}{2i} e^{inx}dx=\frac{1}{2i}\int_{-\pi}^\pi(e^{2inx}-1)dx
+\frac{1}{2i}\int_{-\pi}^\pi e^{2inx}dx=0
+i\pi
+\eqalign{ \int \underbrace{\vphantom{(}e^{Bx}}_u \underbrace{\sin (Ax)\, dx}_{dv} &= \underbrace{-A^{-1}\cos(Ax)}_v \underbrace{e^{Bx}\vphantom{(}}_u -\int \underbrace{-A^{-1}\vphantom{(}}_v \underbrace{B\cos(Ax)e^{Bx}\,dx}_{du}\cr &= -A^{-1}\cos(Ax)e^{Bx}+A^{-1}B\Bigl[ \int \underbrace{e^{Bx}\vphantom{(}}_s  \underbrace{ \cos(Ax)\,dx}_{dw}\Bigr]  \cr            &= -A^{-1}\cos(Ax)   e^{Bx} +A^{-1}B\Bigl[  \underbrace{  A^{-1}\sin(Ax)}_w \underbrace{e^{Bx}\vphantom{(}}_s   - \int  \underbrace{A^{-1} \sin(Ax)}_w\underbrace{Be^{Bx}\vphantom{(}}_{ds}   \Bigr]  \cr  &= -A^{-1}\cos(Ax)e^{Bx}+A^{-2}B   \sin(Ax)e^{Bx}   -  A^{-2}B^2\int \sin(Ax)e^{Bx}  .     \cr  } 
+\eqalign{\int \sin (nx)e^{inx}\, dx &= -n^{-1}\cos(nx)e^{inx}+n^{-2}(in)  \sin(nx)e^{inx}   -  n^{-2}(in)^2\int \sin(nx)e^{inx}      \cr &= {-e^{inx}  ( \cos(nx)- i    \sin(nx)) \over n } -i^2 \int \sin(nx)e^{inx}   \cr &= {-e^{inx}  e^{-inx} \over n } -i^2 \int \sin(nx)e^{inx}   \cr &= {-1 \over n } + \int \sin(nx)e^{inx}.    }  

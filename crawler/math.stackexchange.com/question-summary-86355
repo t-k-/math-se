@@ -1,0 +1,17 @@
+ dS_t = \sigma S_{t-} dX_t 
+ S_t = S_0 \exp(\alpha N_t - \beta t) 
+ (N_t)_{t \in [0, T]} 
+ \lambda > 0 
+ (\Omega, \mathcal{F}, P) 
+ X_t := N_t - \lambda t 
+ X 
+ \sigma > 0, \ \alpha := \log (1 + \sigma), \ \beta := \sigma \lambda 
+ \ S_t = S_0 \exp(\alpha N_t - \beta t) \ 
+ \ d S_t = \sigma S_{t-} d X_t \ 
+\Delta S_s = S_0  \exp(\alpha N_{s-}) \cdot (\exp ( \alpha \Delta N_s ) - 1)  =  S_{s-} \, \sigma \, \Delta N_s
+f : \mathbb{R} \to \mathbb{R}
+S_0 \exp(\cdot)
+ C^2 
+ f 
+X
+  \begin{align*} f(X_t) &= f(0) - \beta  \int_0^t f'(X_{s-}) ds  \ + \ \sum_{0 < s \leq t} \ (f(X_s) - f(X_{s-}) \  \\ &= S_0 - \beta \int_0^t  S_{s-} ds + \sum_{0 < s \leq t}  \Delta S_s  \\ &= S_0 - \sigma \int_0^t S_{s-} d (\lambda s) + \sigma \, \sum_{0 < s \leq t}  S_{s-} \Delta N_s   \\ &= S_0 - \sigma \int_0^t S_{s-} d(\lambda s) + \sigma \int_0^t S_{s-} d N_s  \\ &= S_0 + \sigma \int_0^t S_{s-} d X_s . \end{align*}

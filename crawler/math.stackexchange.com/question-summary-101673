@@ -1,0 +1,71 @@
+y_0, y_1, y_2, ...
+0 \leq y_i < 2^{32}
+x_i
+x_0 = 0
+x_i = x_{i-1} | y_{i-1}
+i > 0
+x_i = 2^{32} -1
+i \geq  N
+y_i
+\frac{1}{2}
+\frac{1}{2}
+x_1
+32 \div 2 = 16
+x_2
+x_3
+x_4
+x_5
+\sum_{1}^{\infty} \frac{n}{2^n} = 2
+k
+k
+0
+1
+1
+0
+k
+e
+\le k-1
+32
+b
+2
+1/4
+(1,1)
+1/2
+(0,1)
+(1,0)
+1/4
+(0,0)
+e
+1/4
+1+e
+1/2
+1
+2
+1/4
+1
+e
+e=8/3
+e=\frac{1}{4}(1+e)+\frac{1}{2}(1+2)+ \frac{1}{4}(1).
+1+2
+y_i
+x_{i-1}
+1
+k
+\frac{1}{2}
+32
+32
+X_k
+i
+k
+0
+1
+X_k
+\frac{1}{2}
+X_k
+P\{X_k \leq m\} = 1 - P\{X_k > m\} = 1 - \frac{1}{2^m}.
+N
+32
+\frac{1}{2}
+7
+P\{N > m\} = P\{\text{at least one}~X_k > m\}  = 1 - P\{\text{all}~ X_k \leq m\} = 1 - \left(1 - \frac{1}{2^m}\right)^{32}
+\begin{align*}E[N] &= \sum_{m=0}^{\infty} P\{N > m\}  = \sum_{m=0}^{\infty} 1 - \left(1 - \frac{1}{2^m}\right)^{32} \\ &= 1 + \left[1 - \left(\frac{1}{2}\right)^{32}\right] + \left[1 - \left(\frac{3}{4}\right)^{32}\right] + \left[1 - \left(\frac{7}{8}\right)^{32}\right] + \cdots \end{align*}

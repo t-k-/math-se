@@ -1,0 +1,15 @@
+\ddot{x} + 2\lambda \dot{x} + \omega_0^2 = 0
+p = \dot{x}
+q = x
+\dot{r} = -\Omega r
+r(t) = e^{-\Omega(t - t_0)}r(t_0)
+\begin{align*} \dot{p} &= -2\lambda p - \omega_0^2q \\ \dot{q} &= p. \end{align*}
+ r = \begin{pmatrix}p \\ q\end{pmatrix}, \qquad \Omega = \begin{pmatrix} 2\lambda & \omega_0^2 \\ -1 & 0 \end{pmatrix} 
+\det(\omega I - \Omega) = 0
+\omega_\pm = -\lambda \pm \sqrt{\lambda^2 - \omega_0^2}
+\omega_+ \neq \omega_-
+P
+\lambda < \omega_0
+\begin{align*} r(t) = e^{-P^{-1} \begin{pmatrix} \omega_+ & \\  & \omega_- \end{pmatrix} P(t - t_0)}r(t_0) = P^{-1} \begin{pmatrix} e^{-\omega_{+}(t - t_0)} & \\  & e^{-\omega_{-}(t - t_0)} \end{pmatrix} P\,r(t_0) \end{align*}
+\omega_+ = \omega_-
+\Omega

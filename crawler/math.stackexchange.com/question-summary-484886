@@ -1,0 +1,9 @@
+|t|<1
+t^n
+\frac{\exp\left({-\frac{tx}{1-t}}\right)}{1-t}  = \sum_{n=0}^\infty \left( \sum_{k=0}^n \frac{(-1)^k n! x^k }{(k!)^2 (n-k)!} \right ) \cdot  \frac{t^n}{n!} 
+\frac{\exp\left({-\frac{tx}{1-t}}\right)}{1-t}  = \exp \left( - x \sum_{n=0}^\infty t^{n+1} \right )\cdot \sum_{n=0}^\infty t^n  = \prod_{m=0}^\infty  \exp\left( -xt^{m+1} \right )\cdot \sum_{n=0}^\infty t^n
+n!
+\frac{1}{(1-t)^{n+1}} = \frac{1}{n!}\left(\frac{d}{dt}\right)^{n} \frac{1}{1-t}
+n \geqslant 0
+\begin{align} \frac{\exp \left(\frac{-tx}{1-t}\right)}{1-t} &= \sum_{k=0}^\infty \frac{(-tx)^k}{k!}\frac{1}{(1-t)^{k+1}}\\ &= \sum_{k=0}^\infty \frac{(-tx)^k}{(k!)^2} \left(\frac{d}{dt}\right)^k\sum_{n=0}^\infty t^n\\ &= \sum_{k=0}^\infty \frac{(-tx)^k}{(k!)^2} \sum_{n=k}^\infty \frac{n!}{(n-k)!}t^{n-k}\\ &= \sum_{k=0}^\infty \sum_{n=k}^\infty \frac{(-1)^k n! x^k}{(k!)^2(n-k)!}t^n\\ &= \sum_{n=0}^\infty \left(\sum_{k=0}^n \frac{(-1)^k n! x^k}{(k!)^2(n-k)!}\right)t^n \end{align}
+\lvert t\rvert < 1

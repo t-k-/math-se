@@ -1,0 +1,11 @@
+s = w_1 - w_2
+p(s \mid w_1,w_2)
+p(y \mid w_1,w_2) = \int\int p(y \mid t) p(t \mid s) p(s \mid w_1,w_2) dsdt
+t \sim N(t \mid s, 1)
+s = w_1 - w_2
+p(y \mid t)
+p(t \mid s)
+p(y \mid w_1,w_2) = \int\int p(y \mid t) p(t \mid s) p(s \mid w_1,w_2) dsdt = \int p(y \mid t) p(t \mid w_1,w_2) dt
+p(x|y) = \delta_y(x)
+\delta
+p(s|w_1,w_2) = \delta_{w_1-w_2}(s)

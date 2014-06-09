@@ -1,0 +1,42 @@
+X
+X',X''
+X = X' + X''
++1
+X
+Y = X_1 + X_2
+X_i
+\kappa^{[x]}_n
+\kappa^{[y]}_n = 2 \kappa^{[x]}_n
+Y
+X
+Y_t = \sum\limits_{n=1}^{N_t} X_n
+X_1,X_2,\dots
+Y_t
+t
+X_1
+\operatorname{cum}(A,B,C,\dots)
+n
+A
+\operatorname{cum}(A,\dots,A)
+n
+\operatorname{cum}_n(A)
+A
+E(ABCD)
+\{A,B,C,D\}
+\operatorname{cum}(3A,B,C,D) = 3\operatorname{cum}(A,B,C,D)
+\operatorname{cum}(A,B,C,D \mid N=n)
+n
+\operatorname{cum}(A,B,C,D \mid N)
+N
+ \begin{align} E(ABCD) & = \operatorname{cum}(A,B,C,D) \\ & {} + \underbrace{\operatorname{cum}(A,B,C)\operatorname{cum}(D) + \cdots\cdots}_{4\text{ terms}} \\ & {} + \underbrace{\operatorname{cum}(A,B)\operatorname{cum}(C,D)+ \cdots\cdots}_{\text{3 terms}} \\ & {} + \underbrace{\operatorname{cum}(A,B)\operatorname{cum}(C)\operatorname{cum}(D) + \cdots\cdots}_{6\text{ terms}} \\ & {} + \operatorname{cum}(A)\operatorname{cum}(B)\operatorname{cum}(C)\operatorname{cum}(D). \end{align} 
+ \begin{align} \operatorname{cum}(A,B,C,D) & = \operatorname{cum}(\operatorname{cum}(A,B,C,D \mid N)) \\ & {} + \operatorname{cum}(\operatorname{cum}(A,B,C\mid N),\operatorname{cum}(D\mid N)) + \text{3 more terms} \\ & {} + \operatorname{cum}(\operatorname{cum}(A,B \mid N),\operatorname{cum}(C,D\mid N)) + \text{2 more terms} \\ & {} + \operatorname{cum}(\operatorname{cum}(A,B\mid N),\operatorname{cum}(C\mid N),\operatorname{cum}(D\mid N)) + \text{5 more terms} \\ & {} + \operatorname{cum}(\operatorname{cum}(A\mid N),\operatorname{cum}(B\mid N), \operatorname{cum}(C\mid N), \operatorname{cum}(D\mid N)), \end{align} 
+\operatorname{cum}_4\left(\sum\limits_{n=1}^{N_t} X_n\right)
+\operatorname{cum}_m\left( \sum\limits_{n=1}^{N_t} X_n \mid N_t \right) = N_t\operatorname{cum}_m(X_1)
+\operatorname{cum}_{\ell}(N_t\operatorname{cum}_m(X_t)) = \operatorname{cum}_m(X_t) \cdot \operatorname{cum}_\ell(N_t)
+\operatorname{cum}_m(X_t)
+\operatorname{cum}_\ell(N_t) = t
+\ell
+t
+X_1
+X_1
+Y_t

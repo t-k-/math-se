@@ -1,0 +1,19 @@
+ y(k+1) = a(k)y(k) + g(k) 
+y(k_0)
+g(k)
+k\ge k_0
+\begin{align} y(k_0 + 1) &= a(k_0)y(k_0)+g(k_0)\\ y(k_0 + 2) &= a(k_0+1)y(k_0+1)+g(k_0+1)\\ &= a(k_0+1)a(k_0)y(k_0)+a(k_0+1)g(k_0) + g(k_0+1)\\ y(k_0+3) &= a(k_0+2)y(k_0+2) + g(k_0+2)\\ &= a(k_0+2)a(k_0+1)a(k_0)y(k_0) + a(k_0+2)a(k_0+1)g(k_0) + a(k_0+2)g(k_0+1) +\cdots\\ \end{align}\\ \vdots\\ y(k) = \left(\prod_{i=k_0}^{k-1}a(k_0 + i)\right)y(k_0) + \sum_{\tau = k_0}^{k-1}\left(\prod_{i = \tau + 1}^{k-k_0-1}a(k_0+i)\right)g(k_0 + \tau) 
+\phi(k,h)
+ \phi(k, h) = \begin{cases} \begin{align} a(k-1)\cdots a(h) &h < k\\ 1 &h = k \end{align} \end{cases} 
+ y(k) = \phi(k, k_0)y(k_0) + \sum_{\tau=k_0}^{k-1}\phi(k, \tau + 1)g(\tau) 
+y_f
+ y_f(k) = \sum_{\tau=k_0}^{k-1}\phi(k, \tau + 1)g(\tau) 
+g(\cdot) = \delta(\cdot - \tau)
+\delta
+\delta(\cdot - \tau)
+\tau
+\tau
+\phi(k, \tau +1)g(\tau)
+g(\cdot) = \delta(\cdot - \tau)
+\tau
+\sum_{i=-\infty}^\infty a_i \delta_{ij} =a_j

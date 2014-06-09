@@ -1,0 +1,30 @@
+\max\; U= log(xT_o + (1-x)T_s) + log(Y)
+T_o
+T_s
+Y
+x\in[0:1]
+N = \binom{P_sT_s+Y \quad\quad\quad\quad\quad\quad\quad\quad\quad \text{if} \; T_o=0}{P_sT_s+P_oT_o+P_f+P_a+Y \quad \text{if} \; T_o>0}
+T_o
+T_s
+Y
+P_f
+P_a
+T_o
+P_o
+P_s
+T_o
+T_s
+N
+T_o \leq T_{\max} \triangleq ( N - P_f - P_a - Y ) / P_s
+T_o>0
+U_+
+T_o=0
+U_0
+B=0
+T_o\leq BT_{\max}
+T_o=0
+B=1
+T_o\leq T_{\max}
+T_o
+\begin{array}{ll} \text{maximize}   & \log(xT_o+(1-x)T_s)+\log Y \\ \text{subject to} & N = P_sT_s + P_oT_o + B(P_f+P_a) + Y \\                   & T_s, T_o \geq 0 \\                   & T_o \leq B T_{\max} \\                   & B\in\{0,1\} \end{array}
+\sqrt{(xT_o+(1-x)T_s)Y}

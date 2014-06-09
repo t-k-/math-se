@@ -1,0 +1,12 @@
+ \lim_{s \to 1} \Big( \zeta(s,a) - \frac{1}{s-1} \Big) = - \psi(a)
+\zeta(s,a)
+\psi(a)
+ \displaystyle \zeta(s,a) = 2 \int_{0}^{\infty} \frac{\sin (s \arctan \frac{t}{a} )}{(a^{2}+t^{2})^{s/2} (e^{2 \pi t}-1)} \ dt  + \frac{1}{2a^{s}} + \frac{a^{1-s}}{s-1} 
+s
+ \lim_{s \to 1} \Big( \zeta(s,a) - \frac{1}{s-1} \Big) = 2 \int_{0}^{\infty} \frac{\sin (\arctan \frac{t}{a} )}{(a^{2}+t^{2})^{1/2} (e^{2 \pi t}-1)} \ dt  + \frac{1}{2a} 
+ = 2\int_{0}^{\infty} \frac{t}{(a^{2}+t^{2})(e^{2 \pi t}-1)} \ dt + \frac{1}{2a} = - 2 \frac{\mathcal{d}}{\mathcal{d} a} \int_{0}^{\infty} \frac{\arctan (\frac{t}{a})}{e^{2 \pi t}-1} \ dt + \frac{1}{2a}
+ 2 \int_{0}^{\infty} \frac{\arctan \left( \frac{x}{z} \right)}{e^{2 \pi x} -1} \ dx = \ln \Gamma(z) -  \left( z- \frac{1}{2} \right)  \ln z + z - \frac{\ln (2 \pi)}{2}
+ \lim_{s \to 1} \Big( \zeta(s,a) - \frac{1}{s-1} \Big) = - \frac{d}{da} \Bigg(   \ln \Gamma(a) -  \left( a- \frac{1}{2} \right)  \ln a + a - \frac{\ln (2 \pi)}{2} \Bigg) + \frac{1}{2a}
+ = -\psi(a)  +\ln a +1 -\frac{1}{2a} -1 + \frac{1}{2a} =  - \psi(a) \color{#C00000}{+ \ln a} 
+\lim_{s\rightarrow 1}\frac{a^{1-s}-1}{s-1}=1
+-\ln(a)

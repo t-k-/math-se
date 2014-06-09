@@ -1,0 +1,28 @@
+f(z) = u(z) + iv(z)
+\mathbb{D}
+u(z)
+\overline{\mathbb{D}}
+z \in \mathbb{D}
+ f(z) = \int_0^{2 \pi} u(e^{i \theta}) \frac{e^{i \theta} + z}{e^{i \theta} - z} \frac{d \theta}{2 \pi} + iv(0) 
+u(z)
+f
+\mathbb{D}
+\overline{\mathbb{D}}
+z \in \mathbb{D}
+v
+\varepsilon > 0
+\{ |z - z_0| < \varepsilon \} \subseteq \mathbb{D}
+z \in \mathbb{D}
+iv(0)
+v
+0
+ u(z) = \int_0^{2 \pi} u(e^{i \theta}) \frac{e^{i \theta} + z}{e^{i \theta} - z} \frac{d \theta}{2 \pi} 
+ v(z) = \int_0^{2 \pi} v(z + \varepsilon e^{i \theta}) \frac{d \theta}{2 \pi} 
+u(z) = \operatorname{Re} \int_0^{2\pi} u(e^{i\theta})\frac{e^{i\theta}+z}{e^{i\theta}-z}\,\frac{d\theta}{2\pi}.\tag{1}
+z
+\tilde{f}(z) := \int_0^{2\pi} u(e^{i\theta})\frac{e^{i\theta}+z}{e^{i\theta}-z}\,\frac{d\theta}{2\pi}
+(1)
+\operatorname{Re} \tilde{f} = \operatorname{Re} f = u
+f-\tilde{f}
+\tilde{f}(0) = \int_0^{2\pi} u(e^{i\theta})\frac{e^{i\theta}+0}{e^{i\theta}-0}\,\frac{d\theta}{2\pi} = \int_0^{2\pi} u(e^{i\theta})\,\frac{d\theta}{2\pi} = u(0),
+f(0) - \tilde{f}(0) = i \operatorname{Im} f(0).

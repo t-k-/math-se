@@ -1,0 +1,30 @@
+\int_{-\infty }^{+\infty }{\frac{{{x}^{2}}\, \text{d}x}{\left( \beta +{{\text{e}}^{x}} \right)\left( 1-{{\text{e}}^{-x}} \right)}}=\frac{\left( {{\pi }^{2}}+{{\ln }^{2}}\beta  \right)\ln \beta }{3\left( \beta +1 \right)},\ \ \left|\text{arg}\beta\right|<\pi
+\beta
+\displaystyle \int_{-\infty}^{\infty} \frac{x^{2}}{(\beta+e^x)(1-e^{-x})} \ dx  
+\displaystyle u = e^{x}
+ \displaystyle= \int_{0}^{\infty} \frac{\ln^{2} u}{(\beta + u)(u-1)} \ du 
+u=1
+\displaystyle f(z) = \frac{\ln^{3} z}{(\beta+z)(z-1)}
+\text{PV} \Bigg( \displaystyle \int_{0}^{\infty} \frac{\ln^3 u}{(\beta+u)(u-1)} \ du  - \int_{0}^{\infty} \frac{(\ln u +2 \pi i)^{3}}{(\beta+u)(u-1)} \ du \Bigg)= 2 \pi i \text{Res} [f,-\beta] = 2 \pi i  \frac{\ln^{3}(-\beta)}{-\beta - 1}
+ \displaystyle= - 2 \pi i \frac{(\ln \beta + i \pi)^{3}}{\beta + 1}
+ \text{PV} \displaystyle \int_{0}^{\infty} \frac{-6 \pi  \ln^{2} u + 8 \pi^{3}}{(\beta+u)(u-1)} \ du = \frac{- 2 \pi \ln^{3} \beta + 6 \pi^{3} \ln \beta}{\beta+1}
+\displaystyle \int_{0}^{\infty} \frac{\ln^{2}u}{(\beta + u)(u-1)} \ du = \frac{  \ln^{3} \beta - 3 \pi^{2} \ln \beta}{3(\beta+1)} + \frac{4}{3} \pi^{2} \ \text{PV} \int_{0}^{\infty} \frac{1}{(\beta +u)(u-1)} \ du 
+= \displaystyle  \frac{\ln^{3} \beta - 3 \pi^{2} \ln \beta}{3(\beta+1)} + \frac{4 \pi^{2}}{3} \frac{\ln \beta}{\beta +1} = \frac{(\pi^2 + \ln^{2} \beta) \ln \beta}{3(\beta+1)}
+\int_{0}^{\infty} \frac{1}{(\beta +u)(u-1)} \ du
+\displaystyle \text{PV} \int_{0}^{\infty} \frac{1}{(\beta +u)(u-1)} \ du 
+ \displaystyle = \lim_{\epsilon \to 0^{+}} \Bigg( \int_{0}^{1-\epsilon} \frac{du}{(\beta +u)(u-1)} + \int_{1+\epsilon}^{\infty} \frac{du}{(\beta +u)(u-1)} \Bigg)
+ \displaystyle = \frac{1}{1 + \beta} \lim_{\epsilon \to 0^{+}} \Bigg( \ln \Big(\frac{u-1}{\beta + u}\Big) \Big|^{1- \epsilon}_{0} + \ln \Big(\frac{u-1}{\beta + u}\Big) \Big|^{\infty}_{1+\epsilon}\Bigg)
+ \displaystyle = \frac{1}{1 + \beta} \lim_{\epsilon \to 0^{+}} \Bigg( \ln \Big(\frac{-\beta-1-\epsilon}{\beta+1-\epsilon} \Big) - \ln \big(\frac{-1}{\beta} \big) \Bigg)
+\displaystyle = \frac{\ln (-1) - \ln \big( \frac{-1}{\beta}\big) }{1 + \beta}
+ \displaystyle = \frac{i\pi  + \ln \beta - i \pi}{1+ \beta} = \frac{\ln \beta}{1+\beta} 
+u=e^{x}
+du=u dx
+I = \int_0^{\infty} du \:  \frac{\log^2{u}}{(\beta+u)(u-1)} 
+\oint_C dz \frac{\log^3{z}}{(\beta+z)(z-1)} 
+C
+\int_0^{\infty} du \: \frac{\log^3{u}}{(\beta+u)(u-1)} - \int_0^{\infty} du \: \frac{\log^3{( u e^{i 2 \pi)}}}{(\beta+u)(u-1)} = i 2 \pi \mathrm{Res}_{z=-\beta} \frac{\log^3{z}}{(\beta+z)(z-1)}
+\int_0^{\infty} du \: \frac{\log^3{u} - (\log^3{u} + i 2 \pi)^3}{(\beta+u)(u-1)} = -i 2 \pi \frac{(\log{\beta}+i \pi)^3}{1+\beta} 
+\int_0^{\infty} du \: \frac{-i 6 \pi \log^2{u} + 12 \pi^2 \log{u} + i 8 \pi^3 }{(\beta+u)(u-1)} = -i 2 \pi \left (I - 4 \pi^2 \int_0^{\infty} du \: \frac{1}{(\beta+u)(u-1)}\right ) 
+PV\int_0^{\infty} du \: \frac{1}{(\beta+u)(u-1)} = \frac{\log{\beta}}{1+\beta}
+-i 2 \pi
+3 I-4 \pi^2 \frac{\log{\beta}}{1+\beta} = \frac{\log^3{\beta} - 3 \pi^2\log{\beta}}{1+\beta}

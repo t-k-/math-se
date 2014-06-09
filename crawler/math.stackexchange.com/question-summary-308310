@@ -1,0 +1,11 @@
+\{X\}
+X_i \sim U[0,1]
+N = \text{min}\{n\geq1: X_1 + \ldots +X_n >x\} 
+x \in (0,1)
+\{N > n\}
+\{N > n\} =
+\{X_1 + \ldots + X_n \leq x\} = \int_{A_x}\mathrm{d}x_1 \ldots \mathrm{d}x_n
+A_x = \{(x_1,\ldots,x_n):0\leq \sum^n_{i=1} x_i \leq x\}
+\{N > n\} = \frac{x^n}{n!}
+N > 2
+\begin{align} \mathbf{P}(N > 2) & = \mathbf{P}(X_1 \leq x, X_2 < x - X_1) \\  & = \int_0^{x-x_1}\int_0^xdx_1dx_2 \\  & = \int_0^x(x-x_1)dx_1 \\  & = \frac{x^2}{2}. \\ \end{align}

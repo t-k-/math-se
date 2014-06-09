@@ -1,0 +1,10 @@
+d^{3}k
+\mathbb{R}^{3}
+K:=|\mathbf{k}|
+R:=|\mathbf{x}|
+\int_{\mathbb{R}^{3}}d^{3}k\frac{1}{|\mathbf{k}|^{2}}e^{i\mathbf{k}\cdot(\mathbf{x}-\mathbf{x}')}
+\int_{\mathbb{R}^{3}}d^{3}kf(K)e^{i\mathbf{k}\cdot\mathbf{x}}=\frac{4\pi}{R}\int_{0}^{\infty}dK\, K\, f(K)\,\sin(KR)
+k
+ \mathrm e^{\mathrm i\mathbf k\cdot\mathbf r}=\mathrm e^{\mathrm iKR\cos\theta}=\sum_{l=0}^\infty\mathrm i^l(2l+1)j_l(KR)P_l(\cos\theta)\;. 
+l\gt0
+ \begin{align} \int\mathrm d^3kf(K)\mathrm e^{\mathrm i\mathbf k\cdot\mathbf x} &= \int\mathrm d^3kf(K)j_0(KR) \\ &= \int\mathrm d\Omega\int\mathrm dKK^2f(K)j_0(KR) \\ &= \int\mathrm d\Omega\int\mathrm dKK^2f(K)\frac{\sin(KR)}{KR} \\ &= \frac{4\pi}R\int\mathrm dKKf(K)\sin(KR)\;. \end{align} 

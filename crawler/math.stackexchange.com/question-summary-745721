@@ -1,0 +1,33 @@
+E=\{\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\}
+\rho=\frac{r}{4\pi abc}
+r=dist(0,T_{(x,y,z)}E)
+T_{(x,y,z)}E
+E
+1
+[0,2\pi] \times [0,\pi] \ni (\theta,\phi)\quad\mapsto\quad\vec{X}(\theta,\phi) = (a\sin\theta\cos\phi, b\sin\theta\sin\phi,c\cos\theta)
+\vec{X}(\theta,\phi) = (u,v,w)
+(u,v,w)
+\left(\frac{u}{a^2},\frac{v}{b^2},\frac{w}{c^2}\right)
+\begin{align} \vec{X}_\theta &= \frac{\partial\vec{X}}{\partial\theta} = (a\cos\theta\cos\phi, b\cos\theta\sin\phi,-c\sin\theta)\\ \vec{X}_\phi  &= \frac{\partial\vec{X}}{\partial\phi} = (-a\sin\theta\sin\phi, b\sin\theta\cos\phi,0)\\ \implies X_\theta \times X_\phi &= abc\sin\theta  \left(\frac{\sin\theta\cos\phi}{a},\frac{\sin\theta\sin\phi}{b},\frac{\cos\theta}{c}\right)\\ &= abc\sin\theta \left(\frac{u}{a^2},\frac{v}{b^2},\frac{w}{c^2}\right) \end{align} 
+\frac{u}{a^2}(x-u) + \frac{v}{b^2}(y-v) + \frac{w}{c^2}(z-w) = 0 \quad\iff\quad \frac{ux}{a^2} + \frac{vy}{b^2} + \frac{wz}{c^2} = 1 
+r = \frac{1}{\sqrt{ \left(\frac{u}{a^2}\right)^2 + \left(\frac{v}{b^2}\right)^2 +  \left(\frac{w}{c^2}\right)^2}}
+dS = | \vec{X}_\theta \times \vec{X}_\phi |d\theta d\phi = \frac{abc\sin\theta}{r} d\theta d\phi
+\int_0^{2\pi}\int_0^\pi \frac{r}{4\pi abc} \frac{abc\sin\theta}{r} d\theta d\phi =  \frac{1}{4\pi}\int_0^{2\pi}\int_0^\pi \sin\theta d\theta d\phi = 1
+\frac{1}{4\pi abc}\int_E \hat{n}\cdot\vec{X} dS = \frac{1}{4\pi abc}\int_V \nabla\cdot\vec{X} dV = \frac{1}{4\pi abc}\int_V 3 dV = \frac{1}{4\pi abc} \left( 4\pi abc \right) = 1 
+P(x, y, f(x, y))
+0\leq\phi\leq 2\pi
+\ -{\pi\over 2}\leq\theta\leq{\pi\over2}
+E
+{\bf z}(\phi,\theta)
+{\bf x}
+T
+{\bf z}:={\bf z}(\phi,\theta)
+T
+r(\phi,\theta)={\bf n}\cdot{\bf z}
+(1)
+(\phi,\theta)\mapsto{\bf z}(\phi,\theta)=(a\cos\theta\cos\phi,b\cos\theta\sin\phi, c\sin\theta)
+{\bf n}(\phi,\theta)={{\bf z}_\phi\times{\bf z}_\theta\over|{\bf z}_\phi\times{\bf z}_\theta|}\ ,
+{\rm d}\omega=|{\bf z}_\phi\times{\bf z}_\theta|\ {\rm d}(\phi,\theta)\ .\tag{1}
+{\bf n}\cdot{\bf x}={\bf n}\cdot{\bf z}\ ,
+{\rm d}m=\rho\>{\rm d}\omega={1\over 4\pi a b c}({\bf z}_\phi\times{\bf z}_\theta)\cdot{\bf z}(\phi,\theta)\ {\rm d}(\phi,\theta)\ ,
+\int_E {\rm d}m={1\over 4\pi a b c}\int_{-\pi/2}^{\pi/2}\int_0^{2\pi}({\bf z}_\phi\times{\bf z}_\theta)\cdot{\bf z}(\phi,\theta)\ d\phi\ d\theta\ .

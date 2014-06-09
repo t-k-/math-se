@@ -1,0 +1,32 @@
+T(n) = \frac{n}{2}T(\frac{n}{2}) + \log n
+\log n
+\begin{align} \sum\limits_{i=0}^n \frac{n}{2^{i}}  \log \frac{n}{2^{i}}&= n \sum\limits_{i=0}^n \frac{1}{2^{i}}  \log \frac{n}{2^{i}}\\ &=n \sum\limits_{i=0}^n \frac{1}{2^{i}}  (\log n - \log 2^{i})\\ &=n \sum\limits_{i=0}^n \frac{1}{2^{i}} \log n -  \sum\limits_{i=0}^n \frac{1}{2^{i}}  \log 2^{i}\\ &=n \sum\limits_{i=0}^n \frac{1}{2^{i}} \log n -  \sum\limits_{i=0}^n \frac{ \log 2^{i}}{2^{i}}\\ &=n \sum\limits_{i=0}^n \frac{1}{2^{i}} \log n -  d \sum\limits_{i=0}^n \frac{i}{2^{i}}\\ &=2 n  \log n - d \sum\limits_{i=0}^n \frac{i}{2^{i}} \end{align}
+2n \log n
+x
+x
+x=\frac{1}{2}
+ 1+x+x^2+...+x^n=\frac{x^{n + 1} -1}{x-1} 
+ x+2x^2+3x^3+...+n x^n=\frac{nx^{n+2} - (n + 1)x^{n+1} + x}{(x-1)^2} 
+ \sum\limits_{i=0}^n\frac{i}{2^i}=n\left(\frac{1}{2}\right)^{n} - (n + 1)\left(\frac{1}{2}\right)^{n-1} + 2 
+ \sum\limits_{i=0}^n \frac{i}{2^{i}} 
+ \sum\limits_{i=0}^n i(\frac{1}{2})^i 
+ \sum\limits_{i=0}^n ix^i, x = \frac{1}{2} 
+ \sum\limits_{i=0}^n x^i = \frac{x^{n+1} - 1}{x - 1} 
+x
+x
+ \left( x = \frac{1}{2} \right) 
+ \frac{d}{dx}\left( \sum\limits_{i=0}^n x^i \right) = \frac{d}{dx} \left( \frac{x^{n+1} - 1}{x - 1} \right)
+ \Rightarrow \sum\limits_{i=0}^n ix^{i-1}  =  \frac{(x - 1)(n + 1)x^n - (x^{n+1} -1)(1)}{(x - 1)^2} 
+ \Rightarrow \sum\limits_{i=0}^n ix^{i-1}  =  \frac{(x^{n+1} - x^n)(n + 1) - x^{n+1} + 1}{(x - 1)^2} 
+ \Rightarrow \sum\limits_{i=0}^n ix^{i-1}  =  \frac{(nx^{n+1} - nx^n) + (x^{n+1} - x^n) - x^{n+1} + 1}{(x - 1)^2} 
+ \Rightarrow \sum\limits_{i=0}^n ix^{i-1}  =  \frac{nx^{n+1} - nx^n + x^{n+1} - x^n - x^{n+1} + 1}{(x - 1)^2} 
+ \Rightarrow \sum\limits_{i=0}^n ix^{i-1}  =  \frac{nx^{n+1} - nx^n - x^n + 1}{(x - 1)^2} 
+ x\sum\limits_{i=0}^n ix^{i-1}  =  x\left( \frac{nx^{n+1} - nx^n - x^n + 1}{(x - 1)^2} \right)
+ \Rightarrow \sum\limits_{i=0}^n ix^{i}  =  \frac{nx^{n+2} - nx^{n+1} - x^{n+1} + x}{(x - 1)^2} 
+ \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  \frac{n\left(\frac{1}{2}\right)^{n+2} - n\left(\frac{1}{2}\right)^{n+1} - \left(\frac{1}{2}\right)^{n+1} + \left(\frac{1}{2}\right)}{(\left(\frac{1}{2}\right) - 1)^2} 
+ \Rightarrow \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  \frac{n\left(\frac{1}{2^{n+2}}\right) - n\left(\frac{1}{2^{n+1}}\right) - \left(\frac{1}{2^{n+1}}\right) + \left(\frac{1}{2}\right)}{\left(-\frac{1}{2}\right)^2} 
+ \Rightarrow \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  \frac{\frac{n}{2^{n+2}} - \frac{n + 1}{2^{n+1}} + \frac{1}{2}}{\left(\frac{1}{4}\right)} 
+ \Rightarrow \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  4 \left( \frac{n}{2^{n+2}} - \frac{n + 1}{2^{n+1}} + \frac{1}{2} \right) 
+ \Rightarrow \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  4 \left( \frac{n}{2^{n+2}} - \frac{2(n + 1)}{2^{n+2}} + \frac{2^{n+1}}{2^{n+2}} \right) 
+ \Rightarrow \sum\limits_{i=0}^n i\left(\frac{1}{2}\right)^{i}  =  \frac{n - 2(n + 1) + 2^{(n+1)}}{2^{n}} 
+ \Rightarrow \sum\limits_{i=0}^n \frac{i}{2^{i}} = \frac{n - 2(n + 1) + 2^{(n+1)}}{2^{n}} 

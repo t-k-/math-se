@@ -1,0 +1,17 @@
+x_{1},x_{2},\cdots,x_{n}
+\sum_{i,j=1}^{n}|x_{i}+x_{j}|\ge n\sum_{i=1}^{n}|x_{i}|.
+|a|+|b|\ge |a+b|.
+|\cdot|
+i,j
+(\star)
+ \forall (i,j),\qquad |x_i| \leq \frac{|x_i+x_j|+|x_i-x_j|}{2}, 
+ n\sum_{i} |x_i| \leq \frac{1}{2}\sum_{i,j} |x_i+x_j| + \frac{1}{2}\sum_{i,j} |x_i-x_j| \leq \sum_{i,j} |x_i+x_j|. 
+(\star)
+|x_i|+|x_j|-|x_i+x_j|=0
+x_ix_j\ge 0
+=\min{(|x_i|,|x_j|)}
+x_ix_j< 0.
+ \sum_{1\leq i,j\leq n}(|x_i|+|x_j|-|x_i+x_j|) =2\sum_{x_ix_j< 0}\min\{|x_i|,|x_j|\}
+=4\sum_{x_i>0>x_j}\min\{x_i,-x_j\}\leq 4\sum_{x_i>0>x_j}\sqrt{-x_ix_j}\le
+4\sum_{x_i>0}\sqrt{x_i}\sum_{0>x_j}\sqrt{-x_j}\leq \left (\sum_{x_i>0}\sqrt{x_i}+\sum_{0>x_j}\sqrt{-x_j}\right )^2 = 
+\left (\sum_{1\leq k\leq n}\sqrt{|x_k|}\right )^2\leq n\sum_{1\leq k\leq n}|x_k|.

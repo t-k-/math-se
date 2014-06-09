@@ -1,0 +1,21 @@
+T_0 \to \infty
+x(t)
+X_n
+x(t) = rect(\frac{t-0.25}{0.25}) * \Delta _1 (t)
+x(t)
+\tilde x(t)
+[-T_0/2,T_0/2]
+\tilde x(t) = x(t)
+\widehat x(\omega)
+T_0
+x(t)
+x
+n
+\mathcal F\{x(t)\}
+x(t) = \sum_{n = -\infty}^\infty X_n e^{i 2 \pi n/T_0}
+ \widehat x(\omega) = \int_{-\infty}^\infty \tilde x(t) e^{-i\omega t}dt = \int_{-T_0/2}^{T_0/2} x(t) e^{-i\omega t}dt 
+ X_n = \frac{1}{T_0} \int_{-T_0/2}^{T_0/2} x(t)e^{-i (2 \pi n/T_0) t}\,dt 
+ X_n = \frac{1}{T_0}\widehat{x}(2 \pi n/T_0) 
+ \mathcal{F}\{x(t)\} =  \sum_{n=-\infty}^\infty X_n \mathcal{F}\{e^{i 2 \pi n/T_0}\} = \sum_{n=-\infty}^\infty X_n \delta(\omega - 2 \pi n/T_0) 
+L_1
+L_2

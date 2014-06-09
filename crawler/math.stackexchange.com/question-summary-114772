@@ -1,0 +1,75 @@
+U\subset\mathbb{R}^{n}
+\partial U
+C^1
+u\in C^{1}(\bar{U})
+\nu=(\nu^1,\ldots\nu^n)
+U
+\int_{U}{\frac{\partial u}{\partial x_i}}dx=\int_{\partial U}u\nu^{i}dS\;\;\;\;(i=1,\ldots,n),
+n
+n=3
+U
+U
+a\leq x_i\leq b
+i
+D
+U
+x_1x_2\cdots\hat{x_i}\cdots x_n
+\hat{}
+U
+U=\{(x_1,\cdots,x_n)\in \mathbf{R}^n|(x_1,\cdots,\hat{x_i},\cdots,x_n)\in D\mbox{ and } f_1\leq x_i \leq f_2\}
+\mathbf{R}^{n-1}\to \mathbf{R}
+f_1(x_1,\cdots,\hat{x_i},\cdots,x_n)
+f_2(x_1,\cdots,\hat{x_i},\cdots,x_n)
+f_1
+f_2
+C^1
+\partial U
+C^1
+U
+dA=dx_1\cdots\hat{dx_i}\cdots dx_n
+\int_U\frac{\partial u}{\partial x_i}dx=\int_{\partial U}u\nu^idS.
+\int_D\left(\int_{f_1(x_1,\cdots,\hat{x_i},\cdots,x_n)}^{f_2(x_1,\cdots,\hat{x_i},\cdots,x_n)}\frac{\partial u}{\partial x_i}dx_i\right)dA,
+\int_Du(x_1,\cdots,f_2(x_1,\cdots,\hat{x_i},\cdots,x_n),\cdots,x_n)-u(x_1,\cdots,f_1(x_1,\cdots,\hat{x_i},\cdots,x_n)\cdots,x_n)dA.
+\partial U
+S_2
+S_3
+S_{1}
+\nu^i
+S_2
+\nu^i
+S_3
+S_3
+x_i
+\nu^i
+S_1
+\int_{S_2}u\nu^idS+\int_{S_3}u\nu^idS+\int_{S_1}u\nu^idS.
+\nu_i
+S_3
+S_1
+S_2
+x_1x_2\cdots\hat{x_i}\cdots x_n
+D
+\nu^i
+\nu
+x_i
+\mathbf{R}^n
+\int_{S_2}u\nu^idS=\int_Du(x_1,\cdots,f_2(x_1,\cdots,\hat{x_i},\cdots,x_n),\cdots,x_n)d A,
+\int_{S_1}u\nu^idS=-\int_Du(x_1,\cdots,f_1(x_1,\cdots,\hat{x_i},\cdots,x_n),\cdots,x_n)dA.
+U
+C^1
+U
+\overline{U}\subset\mathbb{R}^n
+\mathbb{R}^n
+U
+\cup_{\alpha}U_\alpha
+\int_Ud\omega
+\int_{\partial U}\omega
+i
+\int_{R}d\omega_i
+\int_{\partial R}\omega_i
+R=U
+U_\alpha
+ U=\cup_\alpha U_\alpha \qquad U_\alpha \text{ pairwise disjoint, convex} 
+ \omega=\sum_{i=1}^{n}\omega_i \qquad \omega_i= u\,dx^1 \wedge\cdots\wedge dx^{i-1} \wedge dx^{i+1} \wedge\cdots\wedge dx^n 
+ d\omega=\sum_{i=1}^n d\omega_i%=\nabla\cdotu\, dx^1\wedge\cdots\wedge dx^n \qquad d\omega_i=\frac{\partial u}{\partial x^i}\,dx^1\wedge\cdots\wedge dx^n
+ \eqalign{                         \int_{         U       } d\omega   &= \sum_i             \int_{         U       } d\omega_i    = \sum_i \sum_\alpha \int_{         U_\alpha} d\omega_i \\&= \sum_i \sum_\alpha \int_{\partial U_\alpha}  \omega_i    = \sum_i             \int_{\partial U       }  \omega_i   &=                    \int_{\partial U       }  \omega } 

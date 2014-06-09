@@ -1,0 +1,12 @@
+D(X)
+E(X)=0
+\int_X \frac{<X|X>}{(2\pi)^{n/2}|\Sigma|^{1/2}}\exp(-\frac{1}{2}X^T \Sigma^{-1} X) dX
+\Sigma
+\Sigma
+<X|X>
+X=(X_1,\ldots,X_n)^T
+n
+X-E[X]
+E[X]=(E[X_1],\ldots,E[X_n])^T=(\mu_1,\ldots,\mu_n) 
+ (X-E[X])^T(X-E[X])= \begin{bmatrix} X_1-\mu_1 &\cdots &X_n-\mu_n \end{bmatrix} \begin{bmatrix} X_1-\mu_1\\ \vdots\\ X_n-\mu_n \end{bmatrix} =\sum_{i=1}^n(X_i-\mu_i)^2 
+ E[(X-E[X])^T(X-E[X])]=\sum_{i=1}^n E[(X_i-\mu_i)^2]=\sum_{i=1}^n\mathrm{Var}(X_i). 

@@ -1,0 +1,18 @@
+f(x) = f(0) + f'(0)x + \int_0^x (x-t) f''(t) dt
+h(x) = \int_0^x (x-t) f''(t) dt
+h'(x) = \frac{d}{dx}(\int_0^x (x-t) f''(t) dt) = \frac{d}{dx}(\int_0^x xf''(t) dt) - \frac{d}{dx}(\int_0^x tf''(t) dt)= xf''(x) - xf''(x) = 0
+h(x) = \int_0^x (x-t) f''(t) dt = \int_0^x xf''(t) dt - \int_0^x tf''(t) dt = xf'(x) - xf'(0) - \int_0^x tf''(t) dt
+h'(x) = xf''(x) + f'(x)-f'(0) - xf''(x) = f'(x) -f'(0)
+h'(x) = 0
+h'(x) = f'(x) -f'(0) = 0
+f'(x) = f'(0)
+g(x) = f'(0)x + \int_0^x (x-t) f''(t) dt
+g'(x)= f'(0) +0
+g'(x)=f'(0) = f'(x)
+f(x)
+g(x)
+f(x) = g(x) + c
+f'(0)x + \int_0^x (x-t) f''(t) dt + c
+f(0) = f'(0)(0) + \int_0^0 (0-t) f''(t) dt + c
+c=f(0)
+f(x) = f(0) + f'(0)x + \int_0^x (x-t) f''(t) dt

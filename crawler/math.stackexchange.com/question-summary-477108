@@ -1,0 +1,59 @@
+n
+\lfloor \sqrt n+\sqrt {n+1}+\sqrt{n+2}+\sqrt{n+3}+\sqrt{n+4}\rfloor=\lfloor\sqrt {25n+49}\rfloor.
+\lfloor x\rfloor
+x
+\lfloor \sqrt n+\sqrt {n+1}+\sqrt{n+2}+\sqrt{n+3}+\sqrt{n+4}\rfloor=\lfloor\sqrt {25n+49}\rfloor
+n
+\sqrt{25n+49}=5\sqrt{n+2-1/25}\sim5\sqrt{n+2}
+\sum_{k+0}^4 \sqrt{n+k}
+n\to\infty
+M+\epsilon
+\epsilon < 0.1n^{-1/2}
+f(n)=\sqrt{n}+\sqrt{n+1}+\sqrt{n+2}+\sqrt{n+3}+\sqrt{n+4}-\sqrt{25 n+49}
+\sim\frac{1}{10n^{1/2}}+O\left(n^{-3/2}\right)
+\epsilon
+\lfloor L(n)\rfloor=\lfloor R(n)\rfloor
+n\geq2
+L(n):= \sqrt{n-2}+\sqrt{n-1}+\sqrt{n}+\sqrt{n+1}+\sqrt{n+2},\quad R(n):=\sqrt{25n-1}\ .
+f(0)=2
+\>f'(0)=0
+(1)
+R(n)
+(\ell=0)
+(\ell\geq1)
+f(x):=\sqrt{1+x}+\sqrt{1-x}
+f''(x)=-{1\over4}\bigl((1+x)^{-3/2}+(1-x)^{-3/2}\bigr)\doteq-{1\over2}\quad\bigl(|x|\ll1\bigr)\ .
+f(x)\doteq2-{x^2\over4}\quad\bigl(|x|\ll1\bigr)\ .
+L(n)=\sqrt{n}\left(1+f({1\over n})+f({2\over n})\right)\doteq\sqrt{n}\bigl(5-{5\over4n^2}\bigr)\doteq\sqrt{25n-{25\over 2n}}\ .\tag{1}
+n=k^2+\ell, \qquad 0\leq\ell<2k+1\ .
+\lfloor L(n)\rfloor=\lfloor R(n)\rfloor=\cases{5k-1\quad&$(\ell=0)$\cr 5k&$(\ell\geq1)$\cr}\quad.
+n
+n-2
+ \lfloor \sqrt{n-2}+\sqrt{n-1}+\sqrt n+\sqrt {n+1}+\sqrt{n+2}\rfloor=\lfloor\sqrt {25n-1}\rfloor
+ \sqrt {25n-1} \lt \sqrt{n-2}+\sqrt{n-1}+\sqrt n+\sqrt {n+1}+\sqrt{n+2} \tag{1} 
+ \sqrt{n-2}+\sqrt{n-1}+\sqrt n+\sqrt {n+1}+\sqrt{n+2}  \lt \sqrt {25n} \tag{2}
+ \sqrt{x-b}+\sqrt{x+b} \lt \sqrt{x-a}+\sqrt{x+a} , 0 \lt a \lt b \lt x \tag{3}
+(3)
+ \sqrt{x-b}\sqrt{x+b} \lt \sqrt{x-a}\sqrt{x+a} 
+x^2-b^2 \lt x^2-a^2 
+ a^2 \lt b^2 
+(3)
+b=2
+a=0
+(3)
+b=1
+a=0
+ \sqrt{n-2}+\sqrt{n-1}+\sqrt n+\sqrt {n+1}+\sqrt{n+2} \lt 5 \sqrt{n}
+\sqrt{n-2}+\sqrt{n+2}=\sqrt{n}+\sqrt{n}
+\sqrt{n-1}+\sqrt{n+1}=\sqrt{n}+\sqrt{n}
+(2)
+(1)
+ \sqrt{n-2}+\sqrt{n-1}+\sqrt n+\sqrt {n+1}+\sqrt{n+2} \gt 2\sqrt{n-2}+\sqrt n+ 2 \sqrt{n+2} 
+\sqrt{n-1}+ \sqrt{n+1} \gt \sqrt{n-2}+ \sqrt{n+2}
+ 2 \sqrt{n-2}+\sqrt n+ 2 \sqrt{n+2} \gt  \sqrt{25n-1} 
+ 2 \sqrt{n-2} + 2 \sqrt{n+2} \gt  \sqrt{25n-1} - \sqrt{n} 
+ 2\,\sqrt{n}\,\sqrt{25\,n-1}+8\,\sqrt{n-2}\,\sqrt{n+2} \gt 18\,  n-1 
+9216\,n^3-185664\,n^2+20544\,n-66049 \gt 0
+\left(n-21\right)\,\left(9216\,n^2+7872\,n+185856\right)+3836927
+n \ge 21
+(1)

@@ -1,0 +1,8 @@
+k
+n-k
+1+2+\dots+k
+\begin{align} T(n)&=T(n-1)+n\\   &=T(n-2)+(n-1)+n\\   &=T(n-3)+(n-2)+(n-1)+n\\   &=T(n-4)+(n-3)+(n-2)+(n-1)+n \end{align}
+ T(n)=T(n-k)+[(\color{red}{n-k}+1)+(\color{red}{n-k}+2)+\cdots+(n-1)+n] 
+ \sum_{i=1}^k(n-k+i) 
+ \sum_{i=1}^k(n-k)+\sum_{i=1}^ki=(k(n-k))+\frac{k(k+1)}{2} 
+ T(n)=T(n-k)+nk-\frac{k(k-1)}{2} 

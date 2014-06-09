@@ -1,0 +1,34 @@
+A
+B
+C
+1
+2
+3
+P(A<B<C)
+P(A<B)=\frac{\lambda_a}{\lambda_a+\lambda_b}.
+\min(A,B)\sim \mathcal E(\lambda_a+\lambda_b),
+\{A<B<C\}
+\{A<\min(B,C)\}
+\{B<C\}
+X
+\lambda
+\mathbb{P}(X > x) = \exp(-\lambda x)
+x \ge 0
+\mathbb{E}(f(X-a) ; X > a) = \mathbb{E}(f(X))
+   \begin{eqnarray}    \mathbb{E}( \mathbf{1}_{X > a} \exp(-\mu X)) &=& \mathbb{E}(\exp(-\mu X); X > a) \mathbb{P}(X > a) \\    &=& \exp(-\mu a) \cdot \mathbb{E}(\exp(-\mu (X-a)); X > a) \cdot \exp(-\lambda a) \\   &=& \exp(-(\mu+\lambda) a) \cdot \mathbb{E}(\exp(-\mu X) )  \\    &=& \exp(-(\mu+\lambda) a) \cdot \frac{\lambda}{\lambda+\mu}   \end{eqnarray} 
+  \begin{eqnarray}   \mathbb{P}(C > B > A) &=& \mathbb{E}_A( \mathbb{E}_B( \mathbf{1}_{B>a} \mathbb{P}(C > b ; B=b, A=a) ; A=a)) \\    &=& \mathbb{E}_A( \mathbb{E}_B( \mathbf{1}_{B>a} \exp(-\lambda_c b) ; A=a)) \\    &=& \mathbb{E}_A( \frac{\lambda_b}{\lambda_b+\lambda_c} \exp(-a(\lambda_b+\lambda_c)   ) \\  &=& \frac{\lambda_b}{\lambda_b+\lambda_c} \cdot \frac{\lambda_a}{\lambda_a + \lambda_b+\lambda_c} \end{eqnarray} 
+\lambda_a=1
+\lambda_b = 2
+\lambda_c=3
+\frac{1}{15}
+X
+\lambda\gt 0
+\Pr(X\le x) = 1 - \exp(-\lambda x)
+0\lt x\le 1
+\Pr(\exp(-X)\lt x) = \Pr(X \gt -\log(x)) = \exp(\lambda\log(x)) = x^\lambda.
+\exp(-X)
+\lambda x^{\lambda-1}\ dx
+(A,B,C)
+A\lt B\lt C
+\eqalign{ \Pr(A \lt B \lt C) &= \Pr(\exp(-C)\lt \exp(-B)\lt \exp(-A)) \\ &= \int_0^1 da \int_0^a 2b\ db\int_0^b 3c^2\ dc \\ &= \int_0^1 da \int_0^a 2b\ b^3\ db\\ &= \frac{2}{5}\int_0^1 a^5\ da \\ &= \frac{1}{15}. }
+\mathrm P(A<B<C) = \int_0^\infty \mathrm P(A < B < x) f_C(x) \mathrm d x = \int_0^\infty \int_0^x \mathrm P(A<y) f_B(y) f_C(x) \mathrm d y \mathrm d x

@@ -1,0 +1,38 @@
+(y+ux)u_x+(x+yu)u_y=u^2-1
+\frac{dx}{dt}=y+ux,\frac{dy}{dt}=x+yu,\frac{du}{dt}=u^2-1
+\frac{\frac{dx}{dt}}{y+ux}=\frac{\frac{dy}{dt}}{x+yu}=\frac{\frac{du}{dt}}{u^2-1}
+\frac{\frac{dx}{dt}+\frac{dy}{dt}}{x+y+ux+uy}=\frac{\frac{du}{dt}}{u^2-1} 
+\frac{\frac{d(y+x)}{dt}}{x+y}=\frac{\frac{du}{dt}}{u-1}
+\frac{d(ln(x+y)+ln(u-1))}{dt}=0
+\frac{\frac{dx}{dt}-\frac{dy}{dt}}{y-x+ux-uy}=\frac{\frac{du}{dt}}{u^2-1} 
+\frac{\frac{d(x-y)}{dt}}{y-x}=\frac{\frac{du}{dt}}{u+1}
+\frac{d(-ln(x-y)+ln(u+1))}{dt}=0
+ln(x+y) +ln(u-1)=c_1
+ln(u+1)-ln(x-y)=c_2
+\dfrac{du}{dt}=u^2-1
+u(0)=0
+u=-\tanh t
+\therefore\begin{cases}\dfrac{dx}{dt}=y-x\tanh t~......(1)\\\dfrac{dy}{dt}=x-y\tanh t~......(2)\end{cases}
+(1)+(2)
+\dfrac{dx}{dt}+\dfrac{dy}{dt}=x+y-(x+y)\tanh t
+\dfrac{d(x+y)}{dt}=(x+y)(1-\tanh t)
+\dfrac{d(x+y)}{x+y}=(1-\tanh t)~dt
+\int\dfrac{d(x+y)}{x+y}=\int(1-\tanh t)~dt
+\ln(x+y)=t-\ln\cosh t+c_1
+x+y=C_1e^t~\text{sech}~t
+(1)-(2)
+\dfrac{dx}{dt}-\dfrac{dy}{dt}=y-x-(x-y)\tanh t
+\dfrac{d(x-y)}{dt}=(x-y)(-1-\tanh t)
+\dfrac{d(x-y)}{x-y}=(-1-\tanh t)~dt
+\int\dfrac{d(x-y)}{x-y}=\int(-1-\tanh t)~dt
+\ln(x-y)=-t-\ln\cosh t+c_2
+x-y=C_2e^{-t}~\text{sech}~t
+\therefore\begin{cases}x=\dfrac{C_1e^t~\text{sech}~t+C_2e^{-t}~\text{sech}~t}{2}\\y=\dfrac{C_1e^t~\text{sech}~t-C_2e^{-t}~\text{sech}~t}{2}\end{cases}
+x(0)=x_0
+y(0)=f(x_0)
+\begin{cases}\dfrac{C_1+C_2}{2}=x_0\\\dfrac{C_1-C_2}{2}=f(x_0)\end{cases}
+\begin{cases}C_1=x_0+f(x_0)\\C_2=x_0-f(x_0)\end{cases}
+\therefore\begin{cases}x=\dfrac{(x_0+f(x_0))e^t~\text{sech}~t+(x_0-f(x_0))e^{-t}~\text{sech}~t}{2}\\y=\dfrac{(x_0+f(x_0))e^t~\text{sech}~t-(x_0-f(x_0))e^{-t}~\text{sech}~t}{2}\end{cases}
+\begin{cases}x=x_0+f(x_0)\tanh t\\y=x_0\tanh t+f(x_0)\end{cases}
+\therefore\begin{cases}x_0=\dfrac{x-y\tanh t}{1-\tanh^2t}=\dfrac{x+yu}{1-u^2}\\f(x_0)=\dfrac{y-x\tanh t}{1-\tanh^2t}=\dfrac{xu+y}{1-u^2}\end{cases}
+\dfrac{xu+y}{1-u^2}=f\left(\dfrac{x+yu}{1-u^2}\right)

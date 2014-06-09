@@ -1,0 +1,9 @@
+ \mathcal{B}(x;a,b) = \frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)} x^{a-1} (1-x)^{b-1} 
+ \int_0^1 x^{a-1} (1-x)^{b-1}\,dx = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)} 
+x=\mu t
+0
+1
+ \begin{align*} \newcommand{\ints}{\int_0^\infty\int_0^\infty} \Gamma(a)\Gamma(b) &= \int_0^\infty \exp(-x)x^{a-1} \, dx \int_0^\infty \exp(-y)y^{b-1} \, dy  \\    &= \ints \exp(-x)x^{a-1}  \exp(-y)y^{b-1} \, dx\,dy \\    &= \ints e^{-t} x^{a-1}(t-x)^{b-1} \, dt\,dx \end{align*} 
+t=x+y
+t \geqslant x
+     \int_0^\infty \exp(-t)\left( \int_0^t x^{a-1} (t-x)^{b-1} \mathrm{d}x\right) \mathrm{d}t \stackrel{x=\mu t}{=} \int_0^\infty \exp(-t)  \left( t^{a+b-1} \int_0^t \mu^{a-1} (1-\mu)^{b-1} \mathrm{d}\mu\right) \mathrm{d}t = \\  \int_0^\infty t^{a+b-1}\mathrm{e}^{-t} \mathrm{d}t \cdot \int_0^1 \mu^{a-1} (1-\mu)^{b-1} \mathrm{d} \mu 

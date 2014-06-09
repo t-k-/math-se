@@ -1,0 +1,8 @@
+\frac1{2\pi}\int_{0}^{2\pi}e^{\cos\theta}\cos(n\theta) \,d\theta
+\frac1{2 \pi} \int_0^{2 \pi} d\theta \, e^{\cos{\theta}} \, e^{i n \theta}
+z=e^{i \theta}
+\frac1{i 2 \pi} \oint_{|z|=1} \frac{dz}{z} e^{(z+z^{-1})/2} z^n = \frac1{i 2 \pi} \sum_{k=0}^{\infty}\frac1{2^k k!} \oint_{|z|=1} dz \frac{e^{z/2}}{z^{k+1-n}}
+0 \le k \le n-1
+\sum_{k=n}^{\infty} \frac1{2^k k!} \left [\frac{d^{k-n}}{dz^{k-n}} e^{z/2} \right ]_{z=0}= 2^n \sum_{k=n}^{\infty} \frac1{2^{2 k} k! (k-n)!} = \frac1{2^n} \sum_{k=0}^{\infty}\frac1{2^{2 k} k! (k+n)!} = I_n(1)
+I_n
+n

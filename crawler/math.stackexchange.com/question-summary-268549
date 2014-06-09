@@ -1,0 +1,65 @@
+f(d)
+d
+\mathbb{Z}_p^\times
+d
+d\mid p-1
+ \sum_{d\mid p-1}f(d)\equiv \sum_{x\in\mathbb{Z}_p^\times}x\equiv 0\pmod{p} 
+F(n)=\sum_{d\mid n}f(d)
+n=p-1
+\mu(p-1)\pmod{p}
+f(1)=1
+F(1)=1
+F((p-1)/d)\equiv 0
+(p-1)/d\neq 1
+ f(n)=\sum_{d\mid n}\mu(d)F(n/d). 
+ f(p-1)=\sum_{d\mid p-1}\mu(p-1)F((p-1)/d) 
+ F(n)=\sum_{(k,n)=1}^{1\leq k\leq n}f\left(\frac{k}{n}\right), 
+ \sum_{d\mid n}F(d)=\sum_{k=1}^n f\left(\frac{k}{n}\right). 
+f\left(\frac{k}{n}\right)
+1\leq k\leq n
+k^\prime=k/(k,n)
+n^\prime=n/(k,n)
+n^\prime\mid n
+F(n^\prime)
+f\left(\frac{k}{d}\right)
+d\mid n
+1\leq k\leq d
+(k,d)=1
+dj=n
+f\left(\frac{k}{d}\right)=f\left(\frac{kj}{n}\right)
+1\leq kj\leq n
+ \frac{k}{n}=\frac{k/(k,n)}{n/(k,n)}=\frac{k^\prime}{n^\prime} 
+g
+g
+\phi(p)=p-1
+ S=\sum_{(k,p-1)=1}^{1\leq k\leq p-1} g^k 
+ S_n=\sum_{(k,n)=1}^{1\leq k\leq n} a^{k/n}. 
+ \sum_{d\mid n}S_d=\sum_{k=1}^n a^{k/n}=\frac{a^{1/n}-a^{(n+1)/n}}{1-a^{1/n}}. 
+ S_n=\sum_{d\mid n}\frac{a^{1/d}-a^{(d+1)/d}}{1-a^{1/d}}\cdot\mu\left(\frac{n}{d}\right). 
+n=p-1
+a=g^{p-1}
+ S=\sum_{d\mid p-1}g^{(p-1)/d}\left(\frac{1-g^{p-1}}{1-g^{(p-1)/d}}\right)\cdot\mu\left(\frac{p-1}{d}\right). 
+p\mid 1-g^{p-1}
+p\nmid 1-g^{(p-1)/d}
+d\neq 1
+g
+d\neq 1
+p
+d=1
+ S\equiv g^{p-1}\mu(p-1)\equiv\mu(p-1)\pmod{p}. 
+n
+\mu(n)
+S_n
+\Phi_1(x)=x-1
+S_1=1=\mu(1)
+1\le n\le k-1
+c=\displaystyle\sum_{d|k}S_d
+k\ge 2
+\displaystyle\sum_{d|k}S_d=0
+S_k=\mu(k)
+\sum_{d|n}\mu(d)=0
+x^k-1=\prod_{d|k}\Phi_d(x)=\prod_{d|k}(x^d-S_d x^{d-1}+\ldots) = x^k-cx^{k-1}+\ldots, 
+S_k+\sum_{\stackrel{d|k}{d<k}}\mu(d)=S_k + \left(\sum_{d|k}\mu(d)\right)-\mu(k) = 0.
+g_1, g_2,\ldots, g_{p-1}
+p
+\sum_{i=1}^{\varphi(p-1)}g_i\equiv\mu(p-1)\pmod{p}.

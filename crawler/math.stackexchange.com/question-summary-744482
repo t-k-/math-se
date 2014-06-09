@@ -1,0 +1,31 @@
+F(s) = \dfrac{2(s-1)e^{-2s}}{s^2 -2s + 2}
+\mathscr{L}^{-1}\left(\dfrac{2(s-1)}{s^2 -2s + 2}\right) = \mathscr{L}^{-1}\left(\dfrac{2(s-1)}{(s-1)^2 + 1^2}\right) = 2e^t \cos t
+\mathscr{L}^{-1} (F(s)) = 2 e^{t-2} u (t-2) \cos (2-t)
+\frac1{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, F(s) \, e^{s t}
+c
+F
+t
+f
+F
+f(t) = \frac{2}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, \frac{s-1}{s^2-2 s+2} \, e^{s (t-2)}
+2 \oint_C dz \frac{z-1}{z^2-2 z+2} \, e^{z (t-2)}
+C
+[c-i R,c+i R]
+[c+i R,iR]
+[-i R, c-i R]
+R
+2 \int_{c-i \infty}^{c+i \infty} ds \, \frac{s-1}{s^2-2 s+2} \, e^{s (t-2)} +\int_c^0 dx \frac{x+i R-1}{(x+i R)^2-2 (x+i R)+2} e^{(x+i R)(t-2)} \\ + i R \int_{\pi/2}^{3 \pi/2} d\theta \, e^{i \theta} \frac{R e^{i \theta}-1}{R^2 e^{i 2 \theta}-2 R e^{i \theta}+2} e^{(t-2) R e^{i \theta}}\\ + \int_0^c dx \frac{x-i R-1}{(x-i R)^2-2 (x-i R)+2} e^{(x-i R)(t-2)} 
+(e^{c (t-2)}-1)/(R (t-2))
+R \to \infty
+2 \int_{\pi/2}^{3 \pi/2} d\theta \, e^{R (t-2) \cos{\theta}}
+\theta \in [\pi/2, 3 \pi/2]
+\cos{\theta} \le 0
+R \to \infty
+t-2 \gt 0
+t-2 \lt 0
+t-2 \gt 0
+f(t) = e^{(1+i)(t-2)} + e^{(1-i)(t-2)} = 2 e^{t-2} \cos{(t-2)}
+t-2 \lt 0
+i 2 \pi
+C
+f(t) = 2 e^{t-2} \cos{(t-2)}\, \theta(t-2)

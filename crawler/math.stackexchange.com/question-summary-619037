@@ -1,0 +1,22 @@
+3 \times 3
+\theta
+x
+\theta
+\pi/4
+a = \cos \theta
+b = \sin \theta
+(c, d)
+ \begin{bmatrix}{x\\y\\1}\end{bmatrix} 
+s
+t
+ R_1 = \begin{bmatrix}a & b & 0 \\ -b & a & 0 \\ 0 & 0 & 1 \end{bmatrix}\\ R_2 = \begin{bmatrix}a & -b & 0 \\ b & a & 0 \\ 0 & 0 & 1 \end{bmatrix} 
+ T_1 = \begin{bmatrix}1 & 0 & -c \\ 0 & 1 & -d \\ 0 & 0 & 1\end{bmatrix}\\ T_2 = \begin{bmatrix}1 & 0 &  c \\ 0 & 1 &  d \\ 0 & 0 & 1\end{bmatrix}\\ 
+ D = \begin{bmatrix} 1 & 0 & 0 \\ 0 & s/t & 0 \\ 0 & 0 & 1 \end{bmatrix} 
+ M = T_2 \cdot R_2 \cdot D \cdot R_1 \cdot T_1 
+ \begin{bmatrix}{x\\y\\1}\end{bmatrix} \mapsto M \cdot \begin{bmatrix}{x\\y\\1}\end{bmatrix} 
+\theta
+x
+y
+y
+x
+\theta

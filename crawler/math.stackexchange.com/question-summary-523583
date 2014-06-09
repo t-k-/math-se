@@ -1,0 +1,18 @@
+\Omega = \sum_{i=1}^N  \sum_{j=1}^P [g(Z_{i,j}) - F_{i} - b_j]^2]  + \lambda \sum_{z=1}^{255} g''(z)^2
+ g(l), l \in \{0..255\}
+ F_k \in \{1..N\} 
+ b_j, \lambda, N,  P, Z_{i,j} 
+ g(128) = 0 
+g
+ g(i) = i, \forall i \in \{0,..255\}
+E_i
+E_i = g(Z_{i,j}) - b_j 
+g
+ [\begin{pmatrix}   a_{1} & 0 & \cdots & 0 \\   0 & a_{2} & \cdots & 0 \\   \vdots  & \vdots  & \ddots & \vdots  \\   0 & 0 & \cdots & a_n  \end{pmatrix} + 2 \cdot \lambda \cdot \begin{pmatrix}   1 & -2 & 1 & \cdots  \\ -2 & 5 & -4 & 1  & \cdots  \\ 1 & -4 & 6 & -4 & 1 & \cdots  \\ \vdots&\ddots&\ddots&\ddots&\ddots&\ddots&\ddots \\ \vdots& 0& 1 & -4 & 6 & -4 & 1  \\ \vdots&&0& 1 & -4 & 5 & -2 \\ 0&\cdots&&0& 1 & -2 & 1\\  \end{pmatrix}] \cdot  \begin{pmatrix} g(0)\\ \vdots\\ g(255)\\ \end{pmatrix} = \begin{pmatrix} c_0\\ \vdots\\ c_255\\ \end{pmatrix} 
+a_k = \sum_{i=1}^N  \sum_{j=1}^P \phi_{Z_{i,j}=k}, \forall k \in \{0,..,255\}
+c_k = \sum_{i=1}^N  \sum_{j=1}^P (F_i + b_j)\cdot{\phi_{Z_{i,j}=k}}, \forall k \in \{0,..,255\}
+\phi_{Z_{i,j}=k} = 1, \forall Z_{i,j} = k
+g
+E_i
+g
+g'(z) > 0, \forall z \in \{0,..,255\}

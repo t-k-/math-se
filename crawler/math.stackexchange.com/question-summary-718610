@@ -1,0 +1,30 @@
+ \int_{-\pi/2}^{\pi/2}\cos^m\left(x\right){\rm e}^{{\rm i}n x}\,{\rm d}x ={\pi \over 2^{m}}\, {\Gamma\left(1 + m\right)  \over  \Gamma\left( 1 + \left[m + n\right]/2\right)\  \Gamma\left( 1 + \left[m - n\right]/2\right)} 
+\Re(m)>-1
+m \in \mathbb{C}, n \in \mathbb{R}
+n >m >-1
+ \int_{-\pi /2}^{\pi /2} (\cos x)^{m} e^{inx} \ dx = \int_{- \pi /2}^{\pi /2} (\cos x)^{m} \cos(nx) \ dx = \text{Re} \int_{- \pi/2}^{\pi /2} \left( \frac{e^{ix}+e^{-ix}}{2} \right)^{m} e^{inx} \ dx
+z= e^{ix}
+ = \frac{1}{2^{m}} \text{Re} \frac{1}{i} \int_{C} (z+z^{-1})^{m} z^{n-1} \ dz = \frac{1}{2^{m}} \text{Re} \frac{1}{i} \int_{C} \left(z^{2}+1 \right)^{m} z^{n-m-1} \ dz 
+ = \frac{1}{2^{m}} \text{Re} \frac{1}{i} \int_{C} f(z) \ dz 
+C
+z=i
+z=-i
+f(z)
+z=i
+[-i,i]
+f(z) = |z^{2}+1|^{m} |z|^{n-m-1} e^{i \pi /2(n-m-1)}
+z=-i
+f(z) =|z^{2}+1|^{m} |z|^{n-m-1} e^{-i \pi /2(n-m-1)}
+ \int_{C} f(z) \ dz + e^{i \pi /2 (n-m-1)}\int_{1}^{0} \left| (te^{i \pi /2})^{2} +1 \right|^{m} |te^{ i \pi /2}|^{n-m-1} e^{ i \pi /2} \ dt 
++e^{-i \pi /2 (n-m-1)}\int_{0}^{1} \left| (te^{-i \pi /2})^{2} +1 \right|^{m} |te^{ -i \pi /2}|^{n-m-1} e^{ -i \pi /2} \ dt = 0 
+ \implies \int_{C} f(z) \ dz = e^{ i \pi /2 (n-m)} \int_{0}^{1} (1-t^{2})^m t^{n-m-1} \ dt - e^{- i \pi /2 (n-m)} \int_{0}^{1} (1-t^{2})^{m} t^{n-m-1} \ dt 
+ = 2 i \sin \left( \frac{\pi}{2} (n-m) \right) \int_{0}^{1}  (1-t^{2})^{m} t^{n-m-1}\ dt
+u = t^{2}
+ = i \sin \left( \frac{\pi}{2} (n-m) \right) \int_{0}^{1} (1-u)^{m} u^{n/2-m/2-1} \ du 
+ = i \sin \left( \frac{\pi}{2} (n-m) \right) B \left( \frac{n}{2} - \frac{m}{2}, m+1 \right)
+ = i \sin \left( \frac{\pi}{2} (n-m) \right) \frac{\Gamma(\frac{n}{2} - \frac{m}{2}) \Gamma(m+1)}{\Gamma(\frac{m}{2}+\frac{n}{2} + 1)}
+ = i \pi  \frac{\Gamma(m+1)}{ \Gamma(1- \frac{n}{2} + \frac{m}{2})\Gamma(\frac{m}{2}+\frac{n}{2}+1)}
+ \int_{-\pi /2}^{\pi /2} (\cos x)^{m} e^{inx} \ dx = \frac{1}{2^{m}} \text{Re} \frac{1}{i}  i \pi \frac{\Gamma(m+1)}{ \Gamma(1- \frac{n}{2} + \frac{m}{2})\Gamma(\frac{m}{2}+\frac{n}{2}+1)}
+ =\frac{\pi}{2^m} \frac{\Gamma(1+m)}{\Gamma \left(1+ \frac{m+n}{2}\right)\Gamma \left(1+ \frac{m-n}{2}\right)} 
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\int_{-\pi/2}^{\pi/2}\cos^{m}\pars{x}\expo{\ic nx}\,\dd x ={\pi \over 2^{m}}\, {\Gamma\pars{1 + m}  \over \Gamma\pars{1 + \bracks{m + n}/2}\,\Gamma\pars{1 + \bracks{m - n}/2}}:\  {\large ?}}

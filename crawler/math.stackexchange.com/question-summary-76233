@@ -1,0 +1,9 @@
+X_1,X_2,\ldots
+P(X_1>0)=1
+S_n=\sum_{i=1}^nX_i
+x>0
+T_x=min\{n\geq1:S_n\geq x\}
+\frac12E[T_x]\leq\frac{x}{E[\min(X_1,x)]}\leq E[T_x]
+x\leq E[\min(X_1,x)]E[T_x]\leq 2x
+E\left[\sum_{i=1}^{T_x}\min(X_i,x)\right]
+x\leq \sum_{i=1}^{T_x}\min(X_i,x)\leq 2x,

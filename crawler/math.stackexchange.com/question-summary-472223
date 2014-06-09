@@ -1,0 +1,14 @@
+0, \dfrac12, \dfrac14, \dfrac38, \dfrac5{16}, \dfrac{11}{32}, \dfrac{21}{64},...
+1, \dfrac12, \dfrac34, \dfrac58, \dfrac{11}{16}, \dfrac{21}{32}, \dfrac{43}{64},...
+s_n=\dfrac{a_n}{2^n}
+\dfrac13
+r_n=\dfrac{a_{n+1}}{2^n}
+\dfrac23
+a_n=a_{n-1}+2a_{n-2}, a_0=0
+\begin{align*} a_n&=2a_{n-1}+(-1)^{n-1}\\ &=2\left(2a_{n-2}+(-1)^{n-2}\right)+(-1)^{n-1}\\ &=2^2a_{n-2}+2(-1)^{n-2}+(-1)^{n-1}\\ &=2^2\left(2a_{n-3}+(-1)^{n-3}\right)+2(-1)^{n-2}+(-1)^{n-1}\\ &=2^3a_{n-3}+2^2(-1)^{n-3}+2(-1)^{n-2}+(-1)^{n-1}\\ &\;\vdots\\ &=2^ka_{n-k}+2^{k-1}(-1)^{n-k}+2^{k-2}(-1)^{n-k+1}+\ldots+2(-1)^{n-2}+(-1)^{n-1}\\ &\;\vdots\\ &=2^na_0+\sum_{k=0}^n2^k(-1)^{n-1-k}\\ &=\sum_{k=0}^n2^k(-1)^{n-1-k}\\ &=(-1)^{n-1}\sum_{k=0}^{n-1}\left(\frac2{-1}\right)^k\\ &=(-1)^{n-1}\sum_{k=0}^{n-1}(-2)^k\\ &=(-1)^{n-1}\cdot\frac{(-2)^n-1}{-2-1}\\ &=\frac{(-1)^n\left((-2)^n-1\right)}3\\ &=\frac{2^n-(-1)^n}3\;. \end{align*}
+\vdots
+n
+a_n
+\frac13\left(2^n-(-1)^n\right)
+n
+\frac{\frac13\left(2^n-(-1)^n\right)}{2^n}\;,

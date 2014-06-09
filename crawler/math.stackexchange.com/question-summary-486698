@@ -1,0 +1,6 @@
+\vec{n}
+\varepsilon
+W( \vec{n}+ \varepsilon \vec{\eta}, \nabla \vec{n} + \varepsilon \nabla \vec{\eta})
+\vec{\eta}=\vec{\eta}(\vec{x})
+\nabla \vec{\eta}=\frac{\partial\eta_i}{\partial x_j} \vec{e}_i \otimes \vec{e}_j
+ W( \vec{n}+ \varepsilon \vec{\eta}, \nabla \vec{n} + \varepsilon \nabla \vec{\eta}) \approx W(\vec{n}, \nabla \vec{n}) + \varepsilon \eta_i \frac{\partial W}{\partial n_i}(\vec{n}, \nabla \vec{n}) + \varepsilon (\nabla \vec{\eta})_{ij} \frac{\partial W}{\partial \nabla n_i}(\vec{n}, \nabla \vec{n})

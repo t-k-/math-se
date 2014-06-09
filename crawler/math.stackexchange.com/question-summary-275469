@@ -1,0 +1,15 @@
+a<b \in\mathbb{R}
+0
+\lambda\not\in(a,b)
+\frac{1}{2}
+\lambda=a
+b
+1
+\lambda\in(a,b)
+\epsilon\searrow0
+2\pi i
+\frac{1}{2\pi i}\int_a^b\left(\frac{1}{t-i\epsilon-\lambda}-\frac{1}{t+i\epsilon-\lambda}\right)dt
+ \frac{1}{t-\lambda \pm i \epsilon} = \frac{1}{t-\lambda \pm i \epsilon} \frac{t-\lambda \mp i \epsilon}{t-\lambda \mp i \epsilon} = \frac{t-\lambda \mp i \epsilon}{(t-\lambda)^2 + \epsilon^2}.
+ \frac{1}{t-\lambda-i\epsilon}-\frac{1}{t-\lambda+i\epsilon} = \frac{2i \epsilon}{(t-\lambda)^2 + \epsilon^2} .
+\frac{1}{2\pi i}\int_a^b\left(\frac{1}{t-i\epsilon-\lambda}-\frac{1}{t+i\epsilon-\lambda}\right)dt = \frac{\epsilon}{\pi} \int_a^b \frac{dt}{(t-\lambda) + \epsilon^2} = \frac{1}{\pi}\left[\arctan\left(\frac{b-\lambda}{\epsilon}\right) - \arctan\left(\frac{a-\lambda}{\epsilon}\right)\right].
+\begin{align} \lim_{x\to \pm \infty} \arctan(x) &=\pm\frac\pi2, & \arctan(0)&=0.\end{align}

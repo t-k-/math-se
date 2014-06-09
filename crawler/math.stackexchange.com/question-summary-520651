@@ -1,0 +1,23 @@
+t_i
+f(t)=\sum_{i=0}^nw_i(t)p_i
+p_i
+w_i(t)
+p_i
+p_{i+1}
+f_i(t) = a_3(t-t_i)^3+a_2(t-t_i)^2+a_1(t-t_i)+a_0
+v_i = \frac{\frac{p_{i+1}-p_i}{t_{i+1}-t_i}+\frac{p_i-p_{i-1}}{t_i-t_{i-1}}}{2}
+f_i(t)
+p
+f_i(t)=\left( 2\frac{(p_i-p_{i+1})}{(t_{i+1}-t_i)^3}+\frac{\frac{\frac{p_{i+2}-p_{i+1}}{t_{i+2}-t_{i+1}}+\frac{p_{i+1}-p_i}{t_{i+1}-t_i}}{2}+\frac{\frac{p_{i+1}-p_i}{t_{i+1}-t_i}+\frac{p_i-p_{i-1}}{t_i-t_{i-1}}}{2}}{(t_{i+1}-t_i)^2} \right )(t-t_i)^3+\left(\frac{3(p_{i+1}-p_i)}{(t_{i+1}-t_i)^2}-\frac{\frac{\frac{p_{i+2}-p_{i+1}}{t_{i+2}-t_{i+1}}+\frac{p_{i+1}-p_i}{t_{i+1}-t_i}}{2}+2\frac{\frac{p_{i+1}-p_i}{t_{i+1}-t_i}+\frac{p_i-p_{i-1}}{t_i-t_{i-1}}}{2}}{t_{i+1}-t_i} \right )(t-t_i)^2+\frac{\frac{p_{i+1}-p_i}{t_{i+1}-t{i}}+\frac{p_i-p_{i-1}}{t_i-t_{i-1}}}{2}(t-t_i)+p_i
+2n+6
+\phi_0, \ldots \phi_{2n+1}
+ t_0, t_0, t_0, t_0, t_1, t_1, t_2, t_2, \;\ldots\; t_{n-1}, t_{n-1}, t_n, t_n, t_n, t_n 
+2n+2
+Q_i
+V_i
+P_i
+Q_i
+V_i
+ \;\;\;\;\;\;Q_0 = P_0   \quad ; \quad Q_1 = P_0 + V_0   \\ Q_2 = P_1 - V_1   \quad ; \quad Q_3 = P_1 + V_1         \\ Q_4 = P_2 - V_2   \quad ; \quad Q_5 = P_2 + V_2         \\ \vdots \\ Q_{2i} = P_i - V_i   \quad ; \quad Q_{2i+1} = P_i + V_i         \\ \vdots \\ Q_{2n-2} = P_{n-1} - V_{n-1}    \quad ; \quad Q_{2n-1} = P_{n-1} + V_{n-1}         \\ Q_{2n} = P_{n} - V_{n}    \quad ; \quad Q_{2n+1} = P_n 
+ V_i = \frac12\left({\frac{P_{i+1}-P_i}{t_{i+1}-t_i}+\frac{P_i-P_{i-1}}{t_i-t_{i-1}}}\right) 
+ f(t) = \sum_{i=0}^{2n+1}\phi_i(t)Q_i 

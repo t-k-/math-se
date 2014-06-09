@@ -1,0 +1,156 @@
+(a_n),\, (b_k)
+A = \sum_{n=0}^\infty a_n
+B = \sum_{k=0}^\infty b_k
+A\cdot B
+a_n
+b_k
+\mathbb{N}\times\mathbb{N}
+a_nb_k
+A\cdot B
+a_n = (p^n)^{-s}
+b_k = (q^k)^{-s}
+p,\,q
+p^nq^k
+\mathbf{IV}
+\zeta(s) - \frac{1}{s-1}
+\Re s > 1-\varepsilon
+\varepsilon > 0
+\Re s > 0
+e^{\vartheta(2n) - \vartheta(n)} \leqslant 2^{2n},
+\vartheta(2n) - \vartheta(n) \leqslant \log 2\cdot (2n).\tag{1}
+\vartheta(x) - \vartheta(x/2) \leqslant C\cdot x\tag{2}
+x > 0
+x
+x = 2n,\; n \in \mathbb{Z}^+
+(1)
+x
+n = \lfloor x/2\rfloor
+\begin{align} \vartheta(x) - \vartheta(x/2) &= \vartheta(2n) - \vartheta(n) + \left(\vartheta(x) - \vartheta(2n)\right) + \left(\vartheta(n) - \vartheta(x/2)\right)\\ &\leqslant \log 2\cdot (2n) + O(\log x) + O(\log x)\\ &\leqslant C\cdot x \end{align}
+x \geqslant x_0
+x_0
+C
+\log x \leqslant (C - \log 2)x
+\log x
+\left(\vartheta(x) -\vartheta(2n)\right) - \left(\vartheta(x/2) - \vartheta(n)\right)
+\vartheta(x) = \left(\vartheta(x) - \vartheta(x/2)\right) + \left(\vartheta(x/2) - \vartheta(x/4)\right) + \dotsb + \left(\vartheta(x/2^r) - \vartheta(x/2^{r+1})\right) + \vartheta(x/2^{r+1})
+C\cdot \frac{x}{2^k}
+\vartheta(x_0)
+\vartheta(x) \leqslant \sum_{k=0}^r C\cdot \frac{x}{2^k} + \vartheta(x_0) \leqslant 2Cx + \vartheta(x_0).
+(\mathbf{IV})
+\Re s > 1
+-\frac{\zeta'(s)}{\zeta(s)} = \sum_{p} \frac{\log p}{p^s-1}.
+\frac{1}{p^s-1} = \frac{1}{p^s} + \frac{1}{p^s(p^s-1)}
+-\frac{\zeta'(s)}{\zeta(s)} = \Phi(s) + \underbrace{\sum_p \frac{\log p}{p^s(p^s-1)}}_{\alpha(s)}.
+\Phi(s) = -\frac{\zeta'(s)}{\zeta(s)} - \alpha(s),\tag{3}
+\Re s > 1
+(\mathbf{II})
+\zeta(s)
+\Re s > 0
+s = 1
+-\zeta'(s)/\zeta(s)
+\Re s > 0
+s = 1
+\zeta
+\Re s > 0
+\sum_p \frac{\log p}{p^s(p^s-1)}
+\Re s > 1/2
+\left\lvert \frac{\log p}{p^s(p^s-1)}\right\rvert \leqslant \frac{\log p}{\lvert p^s\rvert (\lvert p^s\rvert -1)} \leqslant \frac{2\log p}{\lvert p^s\rvert^2} = \frac{2\log p}{p^{2\Re s}}
+p
+\lvert p^s\rvert - 1 \geqslant \lvert p^s\rvert/2
+\Re s > 1/2
+p > 4
+\sum \frac{\log n}{n^t}
+t > 1
+(3)
+\Re s > 1/2
+\Phi
+\Re s > 1/2
+1/2 < \Re s \leqslant 1
+\alpha(s)
+\Phi
+-\zeta'(s)/\zeta(s)
+f
+z_0
+f(z) = \frac{a}{z-z_0} + g(z)
+z_0
+g
+\lim\limits_{z\to z_0} (z-z_0)f(z) = a
+f
+z_0
+f
+k
+z_0
+f'/f
+k
+z_0
+\begin{align} f(z) &= (z-z_0)^k\cdot g(z),\; g(z_0) \neq 0\\  \rightsquigarrow \frac{f'(z)}{f(z)} &= \frac{k(z-z_0)^{k-1}g(z) + (z-z_0)^kg'(z)}{(z-z_0)^kg(z)} = \frac{k}{z-z_0} + \frac{g'(z)}{g(z)}. \end{align}
+f
+k
+z_0
+-k
+z_0
+f
+0
+z_0
+f
+z_0
+f(z_0) \neq 0
+f
+0
+(3)
+\zeta(s)
+\zeta
+s = 1
+1
+\Phi
+s = 1
+\lim\limits_{\varepsilon \to 0} \varepsilon \Phi(1+\varepsilon) = 1
+1
+\varepsilon
+\varepsilon > 0
+\mu
+\nu
+\zeta(s)
+-\mu
+-\nu
+\zeta(\overline{s}) = \overline{\zeta(s)}
+\zeta(s)
+\mu
+1 + i\alpha,\; \alpha \in \mathbb{R}\setminus\{0\}
+\mu
+1 - i\alpha
+\sum_{r=-2}^2 \binom{4}{2+r} \Phi(1+\varepsilon + ir\alpha) = \sum_p \frac{\log p}{p^{1+\varepsilon}}\left(p^{i\alpha/2} + p^{-i\alpha/2}\right)^4,
+\geqslant 0
+\varepsilon > 0
+\varepsilon \searrow 0
+0 \leqslant \lim_{\varepsilon\searrow 0} \sum_{r=-2}^2 \binom{4}{2+r} \varepsilon\Phi(1+\varepsilon + ir\alpha) = 6 - 8\mu - 2\nu,
+\mu,\, \nu \geqslant 0
+s = 1
+\zeta(s)
+\mu = 0
+\zeta(1 + i\alpha) \neq 0
+(\mathbf{VI})
+xx
+x
+\pi(y) \leqslant y
+-\pi(x^{1-\varepsilon})
+O(x^{1-\varepsilon})
+\vartheta(x) \geqslant (1-\varepsilon)\log x \left(\pi(x) + O(x^{1-\varepsilon})\right).
+\varepsilon \searrow 0
+O(x^{1-\varepsilon})
+\frac{x}{\log x}
+\vartheta(x) \sim x
+\vartheta(x) \leqslant \pi(x)\log x
+\liminf_{x\to\infty} \frac{\pi(x)\log x}{x} \geqslant \lim_{x\to\infty}\frac{\vartheta(x)}{x} = 1.
+\vartheta(x) \geqslant (1-\varepsilon)\log x\left(\pi(x) + O(x^{1-\varepsilon})\right)
+\frac{\pi(x)\log x}{x} \leqslant \frac{\vartheta(x)}{(1-\varepsilon)x} + O\left(\frac{\log x}{x^\varepsilon}\right)
+\lim_{x\to\infty}\frac{\log x}{x^\varepsilon} = 0
+\varepsilon > 0
+\limsup_{x\to\infty} \frac{\pi(x)\log x}{x} \leqslant \frac{1}{1-\varepsilon}\lim_{x\to\infty} \frac{\vartheta(x)}{x} + \lim_{x\to\infty}O\left(\frac{\log x}{x^\varepsilon}\right) = \frac{1}{1-\varepsilon}.
+\limsup_{x\to\infty} \frac{\pi(x)\log x}{x} \leqslant 1.
+\varepsilon
+\begin{align} \pi(x) &= \pi(y) + \sum_{y < p \leqslant x} 1\\ &\leqslant \pi(y) + \sum_{y < p \leqslant x}\frac{\log p}{\log y}\\ &\leqslant y + \frac{1}{\log y}\vartheta(x)\\ \Rightarrow \frac{\pi(x)\log x}{x} &\leqslant \frac{y\log x}{x} + \frac{\log x}{\log y}\cdot \frac{\vartheta(x)}{x} \end{align}
+1 < y < x
+x \geqslant 3
+y = \dfrac{x}{(\log x)^2}
+\frac{\vartheta(x)}{x} \leqslant \frac{\pi(x)\log x}{x} \leqslant \frac{1}{\log x} + \frac{\log x}{\log x - 2 \log \log x}\cdot \frac{\vartheta(x)}{x}.

@@ -1,0 +1,51 @@
+\int e^w \sqrt{g}\, dx \leq C \exp \Big( c \|Du\|_{L^n}^n + \|u\|_{L^n}^n \Big),
+ |u(x)| = \frac{|u(x)|}{ \kappa \|D u\|_{L^n} } \cdot \kappa \|D u\|_{L^n}\leq \frac{n-1}{n} \left( \left( \frac{|u(x)|}{ \kappa \|DU\|_{L^n}} \right)^{\tfrac{n}{n-1}} + \Big( \kappa \| Du\|_{L^n} \Big)^{\tfrac{n}{n-1}} \right).
+\displaystyle \int \exp\left(\frac{n-1}{n} \left(\frac{|u(x)|}{ \kappa \|DU\|_{L^n}}\right)^{\tfrac{n}{n-1}}\right) dx \leq C.
+\mathbb{R}^n
+w
+u
+M
+U
+M
+\exists
+\varphi \in C_{0}^{\infty}(M)
+0 \leq \varphi \leq 1
+\phi \equiv 1
+M
+supp(\varphi) \subset U
+\displaystyle M = \cup_{\alpha =1}^{\infty}M_{\alpha}
+M
+\chi
+\displaystyle \chi_{\alpha} \in C_{0}^{\infty}(M_{\alpha})
+\sum_{\alpha=1}^{N}\chi_{\alpha}=1
+w
+M
+\displaystyle w = \left( \sum_{\alpha = 1}^{N}\chi_{\alpha}\right)w = \sum_{\alpha=1}^{N}\left(\chi_{\alpha}w \right)
+\displaystyle w = \frac{w}{\kappa ||Dw||_{L^{n}}} \cdot \kappa ||Dw||_{L^{n}} \leq \frac{n-1}{n}\left( \left( \frac{w}{\kappa ||Dw ||_{L^{n}}}\right)^{\frac{n}{n-1}} + (\kappa ||Dw||_{L^{n}})^{\frac{n}{n-1}}\right)
+\displaystyle \int e^{w} \leq \int \exp\left[ \frac{n-1}{n} \left(\frac{w}{\kappa ||Dw||_{L^{n}}}\right)^{\frac{n}{n-1}}+\frac{n-1}{n}\left( \kappa ||Dw||_{L^{n}}\right)^{\frac{n}{n-1}}\right]
+\displaystyle = \int \left(\exp\left[ \frac{n-1}{n} \left( \frac{w}{\kappa ||Dw||_{L^{n}}}\right)^{\frac{n}{n-1}}\right] \exp \left[\frac{n-1}{n} \left( \kappa ||Dw||_{L^{n}}\right)^{\frac{n}{n-1}} \right]\right)
+\displaystyle =\exp \left[\frac{n-1}{n} \left( \kappa ||Dw||_{L^{n}}\right)^{\frac{n}{n-1}} \right]  \int \exp\left[ \frac{n-1}{n} \left( \frac{w}{\kappa ||Dw||_{L^{n}}}\right)^{\frac{n}{n-1}}\right]
+\displaystyle \leq C \exp\left[ \frac{n-1}{n}\left(\kappa ||Dw||_{L^{n}} \right)^{\frac{n}{n-1}}\right]
+\frac{n-1}{n} < 1
+\frac{n}{n-1} > 1
+\displaystyle \leq C \exp \left[ \left( \kappa ||Dw||_{L^{n}} \right)^{\frac{n}{n-1}}\right]
+\displaystyle = C \exp\left[ \kappa^{\frac{n}{n-1}} ||Dw||_{L^{n}}^{\frac{n}{n-1}}\right]
+\kappa
+\displaystyle \leq C \exp\left[\kappa ||Dw||_{L^{n}}^{\frac{n}{n-1}}\right]
+||Dw||
+w
+\displaystyle ||Dw|| = \left\Vert D \left(\sum_{\alpha = 1}^{N} \chi_{\alpha} w \right)\right\Vert_{L^{n}} = \left\Vert \sum_{\alpha=1}^{N} D \left( \chi_{\alpha} w\right)\right\Vert_{L^{n}} \leq \sum_{\alpha=1}^{N}\left\Vert D\left( \chi_{\alpha}w\right)\right\Vert_{L^{n}}
+\displaystyle = \sum_{\alpha =1}^{N} \left\Vert \left(D\chi_{\alpha} \right)w + \chi_{\alpha} \left( Dw\right)\right\Vert_{L^{n}}
+\displaystyle \leq \sum_{\alpha =1}^{N} \left\Vert \left(D\chi_{\alpha}\right)w \right\Vert_{L^{n}} + \sum_{\alpha =1}^{N}\left\Vert \chi_{\alpha}\left(Dw \right) \right\Vert_{L^{n}}
+\displaystyle \leq b\left\Vert w \right\Vert_{L^{n}} + \left\Vert Dw \right\Vert_{L^{n}}
+b
+\displaystyle \leq C \exp \left[\kappa \left(b \left\Vert w \right\Vert_{L^{n}} + ||Dw||_{L^{n}}\right)^{\frac{n}{n-1}} \right]
+b
+\displaystyle \leq C \exp \left[\kappa \left( b ||w||_{L^{n}} + ||Dw||_{L^{n}}\right)^{n} \right]
+\displaystyle \leq C \exp \left[\kappa\cdot 2^{n} \left( b^{n} ||w||_{L^{n}}^{n} + ||Dw||_{L^{n}}^{n} \right) \right]
+\displaystyle = C \exp \left[ \kappa \cdot 2^{n} \cdot b^{n} ||w||_{L^{n}}^{n} + k \cdot 2^{n} ||Dw||_{L^{n}}^{n} \right]
+\kappa \cdot 2^{n} \cdot b^{n} ||w||_{L^{n}}^{n} + k \cdot 2^{n} ||Dw||_{L^{n}}^{n}   = ||w||_{L^{n}}^{n} + (\kappa \cdot 2^{n} \cdot b^{n} - 1)||w||_{L^{n}}^{n} + \kappa \cdot 2^{n} ||Dw||_{L^{n}}^{n}
+\displaystyle \leq ||w||_{L^{n}}^{n}+(\kappa \cdot 2^{n}\cdot b^{n} - 1)\cdot \tilde{c}^{n}||Dw||_{L^{n}}^{n} + \kappa \cdot 2^{n} ||Dw||_{L^{n}}^{n}
+\displaystyle ||w||_{L^{n}}^{n} + \left[(\kappa \cdot 2^{n} \cdot b^{n} - 1)\cdot \tilde{c}^{n} + \kappa \cdot 2^{n} \right]\cdot ||Dw||_{L^{n}}^{n}
+\displaystyle ||w||_{L^{n}}^{n} + c ||Dw||_{L^{n}}^{n}
+\displaystyle \leq C \exp \left[ ||w||_{L^{n}}^{n} + c ||Dw||_{L^{n}}^{n} \right]

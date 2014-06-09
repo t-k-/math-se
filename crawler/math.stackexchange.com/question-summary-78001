@@ -1,0 +1,37 @@
+k
+m
+a_k(m,n)
+n
+k
+m
+k=1
+a_1(m,n)=0
+n<m
+a_1(m,n)=1
+m\ge n
+a_1(m,n)
+A_1(x)=\sum_{n\ge 0}a_1(m,n)\frac{x^n}{n!}=\sum_{n\ge m}\frac{x^n}{n!}=e^x-\sum_{n=0}^{m-1}\frac{x^n}{n!}.
+A_k(x)
+k\ge 1
+n
+k+1
+k+1
+k
+r
+k+1
+r
+\binom{n}r
+a_1(m,r)
+k+1
+a_k(m,n-r)
+k
+r
+A_{k+1}(x)=A_1(x)A_k(x)
+m-1
+(1)
+a_{k+1}(m,n) = \sum_{r=0}^n\binom{n}r a_1(m,r)a_k(m,n-r)\;,
+A_k(x)=A_1(x)^k=\left(e^x-\sum_{n=0}^{m-1}\frac{x^n}{n!}\right)^k\tag{1}.
+p_m(x)=\sum_{n=0}^{m-1}\frac{x^n}{n!},
+A_k(x) = \big(e^x-p_m(x)\big)^k.
+k=1
+k

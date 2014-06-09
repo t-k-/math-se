@@ -1,0 +1,14 @@
+(\Omega, \mathcal F, P)
+[0,1]
+X(\omega) = 1
+0 \le \omega < \frac{1}{4}
+X(\omega) = 2\omega^2
+\frac{1}{4} \le \omega < \frac{3}{4}
+X(\omega) = \omega^2
+\frac{3}{4} \le \omega \le 1
+P(X \in A)
+A = [0,\frac{3}{4}]
+A = [\frac{1}{2},1]
+P(X \in [0,1]) = \frac{\sqrt{2}}{2} + \frac{1}{4}
+P(X \in [\frac{1}{2},1]) = \frac{\sqrt{2}}{2}
+   \mathbb{P}\left( 0 \leqslant X \leqslant \frac{3}{4}\right) =   \underbrace{\int_{0}^{1/4} \left[ 0 \leqslant 1 \leqslant \frac{3}{4} \right] \mathrm{d} \omega}_0 + \underbrace{\int_{1/4}^{3/4} \left[ 0 \leqslant 2 \omega^2 \leqslant \frac{3}{4} \right] \mathrm{d} \omega}_{ \int_{1/4}^{\sqrt{\frac{3}{8}}} \mathrm{d} \omega } + \underbrace{\int_{3/4}^{1} \left[ 0 \leqslant \omega^2 \leqslant \frac{3}{4} \right] \mathrm{d} \omega}_{ \int_{3/4}^{\frac{\sqrt{3}}{2}} \mathrm{d} \omega } 

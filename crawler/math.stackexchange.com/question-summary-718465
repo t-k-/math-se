@@ -1,0 +1,23 @@
+a_1=2, a_2=10
+a_n=2a_{n-1}+3a_{n-2}
+F(x)
+F(x) = 2 + 10x + \sum\nolimits_{n \ge 2} {(2{a_{n + 1}} + 3{a_n}) \cdot {x^n}} 
+F(x) = 2 + 10x + 2 \cdot \sum\nolimits_{n \ge 2} {{a_{n + 1}}{x^n} + 3}  \cdot \sum\nolimits_{n \ge 2} {{a_n}{x^n}} 
+F(x) = 2 + 10x + 2 \cdot \sum\nolimits_{n \ge 2} {{a_{n + 1}}{x^n} + 3}  \cdot \left( {F(x) - 2 - 10x} \right)
+\sum_{n \ge 2} a_{n+1} x^n = \frac{1}{x} \sum_{n \ge 2} a_{n+1} x^{n+1} = \frac1x \sum_{m \ge 3} a_m x^m = \frac1x (F(x) - a_0 - a_1x - a_2 x^2)
+\displaystyle F(x) = \sum_{n \ge 0}a_n x^n
+F(x) = 2 + 10x + \sum_{n \ge 2} a_n x^n
+F(x) = 2 + 10x + \sum_{n \ge 0} a_{n+2} x^{n+2},
+\displaystyle F(x) = 2 + 10x + \sum_{n \ge 2} a_{n+2} x^{n+2}
+\begin{align} F(x)  &= 2 + 10x + \sum_{n \ge 0} a_{n+2} x^{n+2} \\ &= 2 + 10x + \sum_{n \ge 0} (2a_{n+1} + 3a_n) x^{n+2} \\ &= 2 + 10x + 2x\sum_{n \ge 0} a_{n+1} x^{n+1} + 3x^2 \sum_{n \ge 0} a_n x^n \\ &= 2 + 10x + 2x(F(x) - a_0) + 3x^2 F(x) \\ \end{align}
+F(x)(1 - 2x - 3x^2) = 2 + 6x 
+F(x) = \frac{2 + 6x}{1 - 2x - 3x^2} = \frac{2 + 6x}{(1 + x)(1 - 3x)} = \frac{3}{1-3x} - \frac{1}{1+x}
+a_n = 3^{n+1} - (-1)^n
+F(z) = \sum_{n \ge 0} a_n z^n
+a_0
+ a_{n + 2} = 2 a_{n + 1} + 3 a_n \qquad a_0 = 2, a_1 = 2  
+z^n
+n \ge 0
+ \frac{F(z) - 2 - 2 z}{z^2}   = 2 \frac{F(z) - 2}{z} + 3 F(z) 
+ F(z) = 2 \frac{1 - z}{(1 + z) (1 - 3 z)}      = \frac{1}{1 - 3 z} + \frac{1}{1 + z} 
+ a_n = 3^n + (-1)^n 

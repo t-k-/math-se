@@ -1,0 +1,9 @@
+P(X<Y)
+Y
+f_Y
+X
+F_X
+ \Pr \left[ X < Y \right] = \int \Pr \left[ X < y \right] f_Y \left( y    \right) \mathrm{d} y = \int F_X \left( y \right) f_Y \left( y \right)    \mathrm{d} y 
+Z:=X-Y
+\begin{align} P(X<Y) & = P(Z<0)\\ & =\int_{-\infty}^{\infty}P(Z<0|X=x)dF_{X}(x)\\ & =\int_{-\infty}^{\infty}P(X-Y<0|X=x)dF_{X}(x)\\ & =\int_{-\infty}^{\infty}P(x-Y<0|X=x)dF_{X}(x)\\ & =\int_{-\infty}^{\infty}P(x<Y)dF_{X}(x)\\ & =\int_{-\infty}^{\infty}(1-P(Y\leq{x}))dF_{X}(x)\\ & =\int_{-\infty}^{\infty}(1-F_{Y}(x))dF_{X}(x) \end{align}
+Y

@@ -1,0 +1,35 @@
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\xx}[0]{\boldsymbol{x}}
+\newcommand{\XX}[0]{\boldsymbol{X}}
+\newcommand{\pderiv}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\xx
+\XX
+t
+\xx = \xx(\XX,t)
+\xx
+\xx
+t
+\pderiv{}{\xx}\left(\pderiv{\xx}{t}\right) = \pderiv{}{t}\left(\pderiv{\xx}{\xx}\right)
+\xx = t^2\XX
+\pderiv{\xx}{t} = 2t\XX = \frac{2}{t}\xx \quad \Rightarrow \quad  \pderiv{}{\xx}\left(\pderiv{\xx}{t}\right) = \frac{2}{t}\bs{I}
+\pderiv{}{t}\left(\pderiv{\xx}{\xx}\right) = \pderiv{}{t}\left(\bs{I}\right) = \bs{0}
+ \begin{eqnarray} && \left(\frac{\left(f(x+\Delta x,y+\Delta y)-f(x+\Delta x,y)\right)}{\Delta y}-\frac{\left(f(x,y+\Delta y)-f(x,y)\right)}{\Delta y}\right)/\Delta x\\ &=& \left(\frac{\left(f(x+\Delta x,y+\Delta y)-f(x,y+\Delta y)\right)}{\Delta x}-\frac{\left(f(x+\Delta x,y)-f(x,y)\right)}{\Delta x}\right)/\Delta y\;. \end{eqnarray} 
+\Delta x
+y
+\Delta y
+x
+x=x(X,t)
+X=X(x,t)
+(X,t)
+ \begin{eqnarray} \left.\frac{\partial}{\partial t}\right|_X \left.\frac{\partial}{\partial x}\right|_t &=& \left.\frac{\partial}{\partial t}\right|_X\left(\left.\frac{\partial t}{\partial x}\right|_t\left.\frac{\partial}{\partial t}\right|_X+\left.\frac{\partial X}{\partial x}\right|_t\left.\frac{\partial}{\partial X}\right|_t\right) \\ &=& \left.\frac{\partial}{\partial t}\right|_X\left(\left.\frac{\partial X}{\partial x}\right|_t\left.\frac{\partial}{\partial X}\right|_t\right) \\ &=& \left(\left.\frac{\partial}{\partial t}\right|_X\left.\frac{\partial X}{\partial x}\right|_t\right) \left.\frac{\partial}{\partial X}\right|_t + \left.\frac{\partial X}{\partial x}\right|_t \frac{\partial^2}{\partial t\partial X}\; \end{eqnarray} 
+\partial t/\partial x|_t=0
+ \begin{eqnarray} \left.\frac{\partial}{\partial x}\right|_t \left.\frac{\partial}{\partial t}\right|_X &=& \left(\left.\frac{\partial t}{\partial x}\right|_t\left.\frac{\partial}{\partial t}\right|_X+\left.\frac{\partial X}{\partial x}\right|_t\left.\frac{\partial}{\partial X}\right|_t\right)\left.\frac{\partial}{\partial t}\right|_X \\ &=& \left(\left.\frac{\partial X}{\partial x}\right|_t\left.\frac{\partial}{\partial X}\right|_t\right)\left.\frac{\partial}{\partial t}\right|_X \\ &=& \left.\frac{\partial X}{\partial x}\right|_t \frac{\partial^2}{\partial X\partial t} \\ &=& \left.\frac{\partial X}{\partial x}\right|_t \frac{\partial^2}{\partial t\partial X}\;. \end{eqnarray} 
+ \left.\frac{\partial}{\partial t}\right|_X \left.\frac{\partial}{\partial x}\right|_t - \left.\frac{\partial}{\partial x}\right|_t \left.\frac{\partial}{\partial t}\right|_X = \left(\left.\frac{\partial}{\partial t}\right|_X\left.\frac{\partial X}{\partial x}\right|_t\right) \left.\frac{\partial}{\partial X}\right|_t 
+X
+x
+t
+x
+x
+1
+x
+ \begin{eqnarray} \left(\left.\frac{\partial}{\partial t}\right|_X\left.\frac{\partial X}{\partial x}\right|_t\right) \left.\frac{\partial}{\partial X}\right|_t x &=& \left(\left.\frac{\partial}{\partial t}\right|_Xt^{-2}\right) \left.\frac{\partial}{\partial X}\right|_t t^2X \\ &=& -2t^{-3}\cdot t^2 \\ &=& -\frac2t\;, \end{eqnarray} 

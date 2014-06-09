@@ -1,0 +1,16 @@
+ f:2^E \rightarrow R 
+ S,T \subseteq E 
+ S\subseteq T : f(T)\geq f(S)  
+ f(\emptyset) = 0 
+ S,T\subseteq E : f(T)\leq f(S) + \sum_{e_i\in T-S}(f(S\cup\{e_i\})-f(S))  
+f
+f(S \cup \{e_i\})+f(S \cup \{e_j\} ), e_i,e_j \in T-S
+e_i,e_j \notin S 
+f(S \cup \{e_i\})+f(S \cup \{e_j\} )+f(S \cup \{e_k\}) \geq f(S\cup\{e_i,e_j\})+f(S\cup \{e_k\}) + f(S) \geq f(S \cup\{e_i,e_j,e_k\}) +2f(S)
+f(S \cup \{e_i\})+f(S \cup \{e_j\} ) \geq f(S \cup \{e_i,e_j\})+f(S)
+|T-S| = n
+\sum_{i \in T-S} f(S\cup \{e_i\}) \geq f(S \cup \{\cup e_i\}) + (n-1)f(S)
+\sum_{i \in T-S} (f(S\cup \{e_i\})-f(S)) \geq  f(S \cup \{\cup_{i\in T-S} e_i\}) -f(S)
+f(S)+\sum_{i \in T-S} (f(S\cup \{e_i\})-f(S)) \geq  f(S \cup \{\cup_{i\in T-S} e_i\}) 
+f(S \cup \{\cup_{i\in T-S} e_i\}) = f(S\cup T)
+f(S)+\sum_{i \in T-S} (f(S\cup \{e_i\})-f(S)) \geq  f(S \cup T)\geq f(T)

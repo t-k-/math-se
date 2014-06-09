@@ -1,0 +1,14 @@
+\partial_t (t,s) = K(t, s)N(t, s)
+t \geq 0
+s \in [0, 1]
+T(t, s) = \frac{\partial_sx(t, s)}{||\partial_sx(t, s)||}, \ N(t, s) = \frac{\partial_sT(t, s)}{||\partial_sT(t, s)||}, \ K = \frac{||\partial_sT(t, s)||}{||\partial_sx(t, s)||}
+t\geq0
+s \in [0, 1]
+x: [0, \infty] \rightarrow \mathbb{R}^n
+||\partial_sx(t, s)||
+||\partial_sT(t, s)||
+\partial_tL_t=\int_0^1 \partial_t||\partial_sx(t,s)||ds \ \ \ \ \forall t \geq0
+ \{x(t, s): s\in [0,1]\}
+||\partial_sx)t,s)|| = \partial_sx(t, s).T(t, s)
+L(t)=\int_0^1 ||\partial_sx(t, s)||ds \ \ \ \ \forall t \geq0
+\partial_t L_t=\int_0^1 \partial_t ||\partial_s x(t,s)||ds < 0

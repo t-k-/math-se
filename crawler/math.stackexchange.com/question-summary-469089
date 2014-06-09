@@ -1,0 +1,7 @@
+A
+P
+\delta>0
+E[\exp(|A|)] \leq \exp(\delta) + \exp(\delta)P(|A|>\delta) + \int_\delta^\infty\exp(x)P(|A|>x)dx
+\begin{align*} \mathbb{E}e^{|A|} &= \int 1_{\{|A| \leq \delta\}} \underbrace{e^{|A|}}_{\leq e^{\delta}} \, d\mathbb{P} + \int 1_{\{|A|> \delta\}} \cdot e^{|A|} \, d\mathbb{P} \\ &\leq \underbrace{e^{\delta} \cdot \mathbb{P}(|A| \leq \delta) + e^{\delta} \cdot \mathbb{P}(|A|>\delta)}_{=e^{\delta} \leq e^{\delta}+e^{\delta} \cdot \mathbb{P}(|A|>\delta)} + \int 1_{\{|A|> \delta\}} \cdot (e^{|A|}-e^{\delta}) \, d\mathbb{P} \tag{1} \end{align*}
+\begin{align*} \int_{\delta}^{\infty} e^x \cdot \mathbb{P}(|A|>x) \, dx &= \mathbb{E} \left( \int_{\delta}^{\infty} e^x \cdot 1_{\{|A|>x\}} \, dx \right) \tag{2} \end{align*}
+\begin{align*} \int_{\delta}^{\infty} e^x \cdot 1_{\{|A|>x\}} \, dx &= \begin{cases} \int_{\delta}^{|A|} e^x \, dx = e^{|A|}-e^{\delta} & |A|>\delta \\ 0 & |A| \leq \delta \end{cases} \\ &= (e^{|A|}-e^{\delta}) \cdot 1_{\{|A|>\delta\}} \tag{3} \end{align*}

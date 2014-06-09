@@ -1,0 +1,7 @@
+V(\mathbf{x})\mathop{:=}\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar x)^2
+\bar x\mathop{:=}\frac1n\sum_{i=1}^nx_i
+\displaystyle \kappa_C\mathop{:=}\lim_{\epsilon\rightarrow0}\sup \left\{\frac{\left|V(\mathbf{x})-V(\mathbf{x}+\Delta\mathbf{x})\right|}{\epsilon V(\mathbf{x})}:|\Delta x_i|\le\epsilon|x_i|,\;i=1,\ldots,n\right\}
+\displaystyle\kappa_C=2\frac{\sum_{i=1}^n|x_i-\bar x||x_i|}{(n-1)V(\mathbf x)}
+\displaystyle(n-1)V(\mathbf x+\Delta\mathbf x)=\sum_{i=1}^n(x_i-\bar x + \Delta x_i-n^{-1}\sum_{j=1}^n\Delta x_j)^2
+=(n-1)V(\mathbf x)+2\sum_{i=1}^n(x_i-\bar x)(\Delta x_i - n^{-1}\sum_{j=1}^n\Delta x_j)+\sum_{i=1}^n(\Delta x_i - n^{-1}\sum_{j=1}^n\Delta x_j)^2
+=(n-1)V(\mathbf x)+2\sum_{i=1}^n(x_i-\bar x)\Delta x_i+\sum_{i=1}^n(\Delta x_i - n^{-1}\sum_{j=1}^n\Delta x_j)^2

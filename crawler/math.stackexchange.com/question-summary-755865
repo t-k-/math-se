@@ -1,0 +1,13 @@
+ \frac{22}{7}-\pi = \int_{0}^{1}\frac{x^{4}\left(1 - x\right)^{4}}{1 + x^{2}}\,{\rm d}x 
+ \frac{x^4\,\left(1-x\right)^4}{1+x^2}=\frac{\left(x^4-1+1\right)\,\left(1-x\right)^4}{1+x^2}=\frac{\left(x^4-1\right)\,\left(1-x\right)^4}{1+x^2}+\frac{\left(1-x\right)^4}{1+x^2}\\=\left(x^2-1\right)\left(1-x\right)^4+\frac{\left(1-x\right)^4}{1+x^2}\\=\left(x+1\right)\left(x-1\right)^5+\frac{\left(1-x\right)^4}{1+x^2}\\=\left(x-1\right)^6+2\left(x-1\right)^5+\frac{\left(1-x\right)^4}{1+x^2}
+\int_0^1 \frac{\left(1-x\right)^4}{1+x^2}=\int_0^1\left(x^2-4x+5\right)-\frac{4}{x^2+1}=\frac{10}{3}-\pi
+ x^4(1-x)^4 = x^8 - 4x^7 + 6x^6 - 4x^5 + x^4 
+ x^4(1-x)^4 = x^6(x^2+1)- 4x^5(x^2+1) + 5x^4(x^2 + 1) - 4x^2(x^2+1)+4(x^2+1) -4 \\ \frac{x^4(1-x)^4}{1+x^2} = (x^6 -4x^5 + 5x^4 - 4x^2 + 4) - \frac{4}{x^2+1} \\ 
+ \int_0^1 \! (x^6 -4x^5 + 5x^4 - 4x^2 + 4) \,\mathrm{d}x - \int_0^1 \! \frac{4}{x^2+1} \, \mathrm{d}x \\ = \frac{22}{7} - 4(\arctan(1) - \arctan(0)) \\ = \frac{22}{7} - \pi 
+\begin{align}\int_0^1 dx \frac{x^4 (1-x)^4}{1+x^2} &= \int_0^1 dx \frac{x^4-4 x^5 + 6 x^6 - 4 x^7 + x^8}{1+x^2}\\ &= \sum_{k=0}^{\infty} (-1)^k \int_0^1 dx \left (x^{4+2 k}-4 x^{5+2 k}+6 x^{6+2 k}-4 x^{7+2 k}+x^{8+2 k}\right )\\&= \sum_{k=0}^{\infty} (-1)^k \left (\frac1{5+2 k}-\frac{4}{6+2 k}+\frac{6}{7+2 k}-\frac{4}{8+2 k}+\frac1{9+2 k} \right ) \end{align} 
+\sum_{k=0}^{\infty} \frac{(-1)^k}{5+2 k} = \frac15-\frac17+\frac19-\cdots=\frac{\pi}{4}-\left (1-\frac13 \right )  
+\sum_{k=0}^{\infty} \frac{(-1)^k}{7+2 k} = \frac17-\frac19+\frac1{11}-\cdots=\left (1-\frac13+\frac15 \right ) -\frac{\pi}{4} 
+\sum_{k=0}^{\infty} \frac{(-1)^k}{9+2 k} = \frac19-\frac1{11}+\frac1{13}-\cdots=\frac{\pi}{4}-\left (1-\frac13+\frac15-\frac17 \right )  
+\sum_{k=0}^{\infty} \frac{(-1)^k}{3+ k} = \frac13-\frac14+\frac15-\cdots=\log{2}-\left (1-\frac12 \right )
+\sum_{k=0}^{\infty} \frac{(-1)^k}{4+ k} = \frac14-\frac15+\frac16-\cdots=\left (1-\frac12+\frac13 \right )-\log{2}
+-\left (1-\frac13 \right )+ 6 \left (1-\frac13+\frac15 \right )-\left (1-\frac13+\frac15-\frac17 \right )- \frac{2}{3} - \pi = \frac{22}{7}-\pi

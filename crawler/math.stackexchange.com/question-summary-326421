@@ -1,0 +1,21 @@
+n \in \mathbb N
+12 \leq n \leq 16
+\overline{n}
+\mathbb Z_{210}
+\overline{n}^{-1}
+n
+\mathbb Z_{210}
+\gcd(210,n)=1
+\left\{n\in \mathbb N \mid 12 \leq n\leq 16 \;\wedge\;\gcd(210,n)=1\right\} = \{13\}
+\overline{13} \in \mathbb Z_{210}
+13\alpha \equiv 1 \pmod{210}
+210 = 13 \cdot 16 +2\\16=2\cdot 8
+210=13\cdot 16+2\\13=6\cdot2 +1\\2=2\cdot 1
+1=13-6\cdot 2=13-6(210-13\cdot 16)=97\cdot 13+(-6)\cdot210\Longrightarrow
+\Longrightarrow 13^{-1}=97\pmod{210}
+13
+0
+1
+\begin{eqnarray} \rm CRT\ &\Rightarrow&\rm\ \ x\,(x^{-1}mod\ y) &+&\, \rm y\,(y^{-1} mod\ x)\ \ \equiv\ \ 1\ \ \ \,(mod\ xy)\quad\ when\quad (x,y)=1 \\ \\ &\Rightarrow& \rm\ \ \ \ \ x^{-1}mod\,\ y &\,\equiv\: &\rm \dfrac{1\ +\ y\ \ (-y^{-1} mod\ x)}x\ \ \ (mod\ y)\quad\ {\bf [Inverse\ Reciprocity]} \\ \\ &\Rightarrow& \rm\ \ 13^{-1}\, mod\ 210\,\ &\equiv&\rm \dfrac{1\ +\ 210\ \ (-210^{-1}\,mod\ 13)}{13} \\ \\ &&   &\equiv&\rm \dfrac{1 + (\color{#C00}2 + 13\cdot 16)\,(-{\color{#C00}2}^{-1}\!\!\equiv \color{#0A0}{6}\,\ mod\ 13)}{13}\\   && &\equiv\,&\rm \dfrac{1 + (\color{#C00}{2})\,\color{#0A0}{6}}{13}\, +\, (16)\,\color{#0A0}{6} \,\equiv\, 97\ \ \ (mod\ 210) \end{eqnarray}
+\begin{eqnarray}     {\bf Lemma}\ \ &&\rm y &=&\rm  \ \ \,r \,  +\,  q x &\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\rm e.g.\  &\ \ 210\ \,= \ \:2 +\! 16\cdot 13 &&\rm\ \ (1)\ \ find\ \ r \ =\,\ y\ \ \,mod \ x\\              &&\rm 1 &=\,&\rm  r'r\, +\, p x & &\ \ 1 =\! (-6)2 \,+\, \color{#C00}1\cdot 13 &&\rm\ \ (2)\ \ find\ \ r' = r^{-1}\ mod\ x \\                                                     \Rightarrow  &&\rm 1 &\equiv&\rm x\,(\color{#0A0}{p - q r'})\ \ \  (mod\ y)& &\ \ 1 \equiv 13(\color{#C00}1-16(-6)) &&\rm\ \ (3)\ \ find\,\ x' = x^{-1}\, mod\ y\\ {\bf Proof\quad\ }  &&   &=&\rm 1\!-\!rr'\!\!-\!xqr'\! & &\ \ \phantom{1} \equiv 13\cdot 97&&\rm\ \ \phantom{(3)\   find }x^{-1}\! =\, determinant\\                        &&    &=&\rm 1\!-\!(r\!+\!qx)r'\! = 1\!-\!yr'\!\equiv 1\!\!\!\!\!\!\! && &&\rm\ \ \phantom{(3)\ \ find\,\ x' =} \ (see\ below) \end{eqnarray}
+\begin{eqnarray} \begin{array}{l}{\bf Lemma}\\ \phantom{.}\end{array}\quad\ \begin{array}{l} \rm  y = \ \ \,  r + q\,x\\ \rm 1 = r'r + p\,x\end{array}\ \Rightarrow\   \left[\begin{array}{c}\rm  y\\ \rm  1\end{array}\right]\! &=& \left[\begin{array}{cc}\rm 1 &\rm q\\ \rm r' &\rm p\end{array}\right] \left[\begin{array}{c}\rm  r\\ \rm x\end{array}\right]\ \Rightarrow\,\ \rm x^{-1}\! = det = p\!-\!qr'\ \ (mod\ y)  \\ \\ \begin{array}{l}\rm {\bf Proof}\quad\ \  By\ Cramer\\ \phantom{.}\end{array}\ \ \ \ \ \  \left[\begin{array}{cc}\rm 1 &\rm y\\ \rm r' &\rm 1\end{array}\right]\!&=&\left[\begin{array}{cc}\rm 1 &\rm q\\ \rm r' &\rm p\end{array}\right] \left[\begin{array}{cc}\rm 1 &\rm r\\ \rm 0 &\rm x\end{array}\right]\\ \\ \rm Taking\ \ det\  \Rightarrow\ 1-yr'  &=&\rm\ (p-qr')\ x \quad \Rightarrow\quad 1 \,\equiv\, (p-qr')\,x\ \ \ (mod\ y)\end{eqnarray}

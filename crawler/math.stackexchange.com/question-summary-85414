@@ -1,0 +1,6 @@
+x
+f(x)  = 1 + \frac1{x} \int_1^x f(t)\ \mathrm{d}t
+\begin{align*}f(x) &= 1 + \frac1{x} \int_1^x f(t)\ \mathrm{d}t\\ x(f(x) - 1) &= \int_1^x f(t) \  \mathrm{d}t \end{align*}
+\begin{align*} f(x) - 1 + x f'(x) &= f(x)\\ f'(x) &= \frac1{x}\\ f(x) &= \ln x \end{align*}
+\begin{align*} f(x) &= 1 + \frac1{x} \int_1^x \ln t \ \mathrm{d}t\\ f(x) &= 1 + \frac1{x} (x(\ln x -1)|_1^x)\\ f(x) &= 1 + \frac1{x} (x(\ln x -1) - (\ln 1 - 1))\\ f(x) &= 1 + \ln x - 1 + \frac1{x}\\ f(x) &= \ln x + \frac1{x} \end{align*}
+\ln(x) + 1

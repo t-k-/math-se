@@ -1,0 +1,21 @@
+X,N\sim \mathcal{N}(0,1)
+A
+1
+p
+0
+1-p
+X,N,A
+Y=AX+N
+\mathbb{E}(X\mid Y)
+\mathbb{E}(X\mid Y)\overset{\text{a.s}}{=}\mathbb{E}[\mathbb{E}(X\mid Y,A)\mid Y]
+Z=Y\mid A
+(X,Z)
+(X,Y)
+Z\sim\mathcal{N}(0,A^2+1)
+\mathbb{E}(X\mid Z)=\frac{\text{cov}(X,Z)}{\text{var}(Z)}Z=\frac{A}{A^2+1}Z
+\text{cov}(X,Z)
+(X,Z)
+\mathbb{E}(X\mid Y,A)=\mathbb{E}(X\mid Z)
+\mathbb{E}(X\mid Y)=\mathbb{E}[\mathbb{E}(X\mid Z)\mid Y]=\mathbb{E}\left( \frac{A}{A^2+1}Y\mid Y\right) =Y\mathbb{E}\left( \frac{A}{A^2+1}\mid Y\right)
+\newcommand{\E}{\mathbb E}
+ \E(X\mid Y)=\E(\E(X\mid Y,A)) = \E\left.\begin{cases} \E(X\mid X+N) & \text{if }A=1 \\ 0 & \text{if }A=0 \end{cases}\right\} = p\E(X\mid X+N). 

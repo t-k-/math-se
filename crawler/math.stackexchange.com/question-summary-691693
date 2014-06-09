@@ -1,0 +1,16 @@
+S_t
+X_i
+\mu
+\sigma^2
+S_t = S_0\prod_{i=1}^{N(t)}X_i
+N(t) = 0
+N_t
+E[S_t|N_t] = S_0\prod_{i=1}^{N(t)} EX_i
+N
+X_i
+E[S_t|N_t] = S_0 \mu^{N(t)} 
+r
+E[S_t] = EE[S_t|N_t]  = S_0 \exp(-rt)\sum_{k=0}^\infty \mu^{k}\frac{(rt)^k}{k!} = S_0 \exp(rt(\mu-1))
+E[S_t^2] = E[S_0^2 {\sigma^2 + \mu^2}^N_t] = S_0^2 \exp(rt(\sigma^2 + \mu^2 - 1))
+Var[S_t] = S_0^2 (\exp(rt(\sigma^2 + \mu^2 - 1)) - \exp(2rt(\mu-1)))
+X_i

@@ -1,0 +1,17 @@
+a
+I(a)=\int_{0}^{\infty}\sin^3(x)\cos[a\tan(x)]\frac{dx}{x}
+I(a)=\frac{\pi}{4}(1-a)e^{-a}
+a > 0
+t = \tan x
+\frac{t^2}{(1+t^2)^2}
+\begin{align} I(a) = & \int_0^{\infty}\sin^3(x)\cos(a\tan x)\frac{dx}{x}\\      = & \frac12 \int_{-\infty}^{\infty}\sin^3(x)\cos(a\tan x)\frac{dx}{x}\\      = & \frac12 \sum_{n=-\infty}^{\infty} \int_{(n-\frac12)\pi}^{(n+\frac12)\pi}\sin^3(x)\cos(a\tan x)\frac{dx}{x}\\      \overset{(\text{ by }*1)}{=} &\frac12 \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sin^3(x)\cos(a\tan x)\left(\sum_{n=-\infty}^{n=\infty} \frac{(-1)^n}{x + n\pi}\right)dx\\      \overset{(\text{ by }*2)}{=} &\frac12 \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sin^2(x)\cos(a\tan x)dx \end{align}
+I(a) = \frac12 \int_{-\infty}^{\infty} \frac{t^2}{1+t^2} \cos(at) \frac{dt}{1+t^2}        = \frac12 \int_{-\infty}^{\infty} \frac{t^2}{(1+t^2)^2} e^{iat} dt\tag{*3} 
+(*3)
+a > 0
+t = i
+\frac{t^2}{(1+t^2)^2} = \frac14 \left( \frac{1}{(t-i)^2} - \frac{i}{t-i} + \frac{i}{t+i} + \frac{1}{(t+i)^2}\right)
+I(a) = \frac{2\pi i}{8}\left[ \frac{d}{dt}\left(e^{iat}\right) - i e^{iat} \right]_{t=i}        = \frac{\pi}{4}(1-a) e^{-a} 
+4 \sin^3(x) = 3 \sin(x) - \sin(3x)
+I^\prime(a)
+a=0
+     I(0) = \int_0^\infty \frac{\sin^3(x)}{x} \mathrm{d} x = \frac{3}{4} \int_0^\infty \frac{\sin(x)}{x} \mathrm{d} x - \frac{1}{4} \int_0^\infty \frac{\sin(3x)}{x} \mathrm{d}x = \frac{1}{2} \int_0^\infty \frac{\sin(x)}{x} \mathrm{d} x = \frac{\pi}{4} 

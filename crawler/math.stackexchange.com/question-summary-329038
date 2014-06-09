@@ -1,0 +1,22 @@
+Y_t=\beta_0+\beta_1X_{t1}+\beta_2X_{t2}+...+\beta_{p-1}X_{t,p-1}+\epsilon_t
+\varepsilon_t=\rho\varepsilon_{t-1}+u_t
+u_t
+N(0,\sigma^2)
+|\rho|<1
+\varepsilon_t
+E(\varepsilon_t)=0, \sigma^2(\varepsilon_t)=\frac{\sigma^2}{1-\rho^2}
+\sigma^2
+u_t
+Cov(\varepsilon_t,\varepsilon_{t-2})
+Cov(\varepsilon_t,\varepsilon_{t-2})=E[(\varepsilon_t-\mu_t)(\varepsilon_{t+2}-\mu_{t+2})]=E(\varepsilon_t\varepsilon_{t-2})=E[(\rho\varepsilon_{t-1}+u_t)(\rho\varepsilon_{t-3}+u_{t-2})]=E(\rho^2\varepsilon_{t-1}\varepsilon_{t-3})+E(\rho\varepsilon_{t-1}u_t)+E(\rho\varepsilon_{t-3}u_{t-2})+E(u_tu_{t-2})=\rho^2E(\varepsilon_{t-1}\varepsilon_{t-3})+\rho E(\varepsilon_{t-1}u_t)+\rho E(\varepsilon_{t-3}u_{t-2})+0
+E(\varepsilon_{t-1}\varepsilon_{t-3})
+E(\varepsilon_t\varepsilon_{t-2})
+Cov(\varepsilon_t,\varepsilon_{t-2})=\rho^2(\frac{\sigma^2}{1-\rho^2})
+\text{cov} \left( \varepsilon_t, \varepsilon_{t - k} \right) = E \left[ \varepsilon_t \varepsilon_{t - k} \right] - E \left[ \varepsilon_t \right] E \left[ \varepsilon_{t - k} \right]
+k > 0
+E \left[ \varepsilon_t \right] = E \left[ \varepsilon_{t - k} \right] = 0
+u_t
+\varepsilon_t
+E \left[ \varepsilon_{t - 1} \varepsilon_{t - 2} \right]
+E \left[ \varepsilon_t \varepsilon_{t - 1} \right] = \rho E \left[ \varepsilon_{t - 1}^2 \right] + E \left[ u_t \varepsilon_{t - 1} \right] = \rho \frac{\sigma^2}{1 - \rho^2}
+\text{cov} \left( \varepsilon_t, \varepsilon_{t - 2} \right) = \rho^2 \frac{\sigma^2}{1 - \rho^2}

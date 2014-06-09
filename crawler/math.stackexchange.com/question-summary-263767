@@ -1,0 +1,23 @@
+\lim_{n\to\infty} \left(\int_0^{\pi} \frac{\sin^2 n x}{\sin x} \ dx-\sum_{k=1}^n \frac{1}{k}\right)
+\int_{0}^{\pi} e^{(2n+1)ix} dx = \frac{-2}{i}(2n+1)
+t=e^{ix}
+\frac{\sin^2(nx)}{\sin x} = (\frac{t^{n}-t^{-n}}{2i})^2 (\frac{t-t^{-1}}{2i})^{-1}
+=\frac{i}{-2} \frac{t^{2n+1}+t^{1-2n}-2t}{t^2-1} = \frac{i}{-2} t \frac{t^{2n}-1}{t^2-1}(1-t^{-2n})
+=\frac{i}{-2} \sum_{i=0}^{n-1} (t^{2i+1} - t^{2(i-n)+1})
+\frac{i}{-2}\frac{-2}{i} \sum_{i=0}^{n-1} \frac{1}{2i+1} - \frac{1}{2(i-n)+1}=
+=2 \sum_{i=0}^{n-1} \frac{1}{2i+1} =2(H_{2n}-\frac{1}{2}H_n)
+\lim_{n \to \infty} 2(H_{2n}-\frac{1}{2}H_n) - H_{n} = \lim 2H_{2n}-2H_{n}
+H_{n} \sim \log n + \gamma + O(n^{-1})
+H_{2n}-H_{n}
+\int_{n}^{2n} \frac{dt}{t} = \ln 2
+\ln 4
+\ \displaystyle f(n):=\int_0^{\pi} \frac{\sin^2 n x}{\sin x} \ dx\ 
+\ (n+1)\to +\infty
+\;\log(1+x)\,
+\,x=1
+f(0)+\sum_{n=0}^\infty \left(\frac 2{2n+1}-\frac 1{n+1}\right)=2\sum_{n=0}^\infty \left(\frac 1{2n+1}-\frac 1{2n+2}\right)=2\,\log(1+1)=\log(4)
+\sum_{k=1}^nsin(2k-1)x=\frac{cos(2nx)-1}{-2sinx}=\frac{sin^2(nx)}{sinx}
+I=lim_{n\to\infty}\sum_{k=1}^n(\int_{0}^\pi(sin(2k-1)xdx-\frac{1}{k})=lim_{n\to\infty}\sum_{k=1}^n(\frac{2}{2k-1}-\frac{1}{k})
+\sum_{k=1}^{n}\frac{1}{k}\sim log(n)+c
+c
+I=lim_{n\to\infty}2[\sum_{k=1}^{2n}\frac{1}{k}-\sum_{k=1}^n\frac{1}{2k}]-\sum_{k=1}^n\frac{1}{k}=lim_{n\to\infty}(2log2n+2c-logn-c-logn-c)=2log2

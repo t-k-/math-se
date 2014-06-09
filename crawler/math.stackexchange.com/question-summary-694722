@@ -1,0 +1,8 @@
+g
+\mathcal{V}=\mathcal{V}[U,T]
+g_k=g(t_k)
+\Delta B_k = B(t_{k+1})-B(t_k)
+\mathcal{F}_k=\mathcal{F}_{t_k}
+U=t_0<t_1<\ldots <t_{n-1}< t_n=T
+\mathbb{E}\{\int_U^T g(s)dB(s)\mid \mathcal{F}_U\} = 0
+\mathbb{E}\{\int_U^T g(s)dB(s)\mid \mathcal{F}_U\} = \sum_k\mathbb{E}[g_k\Delta B_k\mid\mathcal{F}_U] = \{g_k,\Delta B_k \text{ are independent of }\mathcal{F}_U\}=\Sigma_k\mathbb{E}[g_k\Delta B_k]=\Sigma_k \mathbb{E}[\mathbb{E}[g_k\Delta B_k\mid \mathcal{F}_k]]=\{g_k\in\mathcal{F}_k,\Delta B_k\text{ is independent of }\mathcal{F}_k\}=\sum_kg_k\mathbb{E}[\Delta B_k]=0. 

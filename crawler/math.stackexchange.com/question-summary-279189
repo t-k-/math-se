@@ -1,0 +1,33 @@
+A,B
+C
+A
+09:00 - 09:07, 09:12 - 09:38, 12:40-12:45
+B
+08:35-09:45, 16:35-17:00
+C
+10:00-12:00
+\lambda
+\lambda
+A
+Pois(\frac{7}{38}t)
+38
+B
+Pois(\frac{1}{5}t)
+95
+C
+Pois(\frac{1}{5}t)
+120
+A
+Pois(0.290858*t)
+B
+Pois(0.126315*t)
+C
+Pois(0.1*t)
+\mathbb{P}(A(3)>2) + \mathbb{P}(B(3)>2) + \mathbb{P}(C(3)>2)
+ = 3-\exp(-3*0.290858) \sum_{k=0}^{2} \frac{(3*0.290858)^k}{k!} -\exp(-3*0.126315) \sum_{k=0}^{2} \frac{(3*0.126315)^k}{k!} -\exp(-3*0.1) \sum_{k=0}^{2} \frac{(3*0.1)^k}{k!} \approx  0.06856
+\mathbb{P}(A(3) \geq 1) * \mathbb{P}(B(3) \geq 1) * \mathbb{P}(C(3) \geq 1) + \mathbb{P}(A(3)> 2) * \mathbb{P}(B(3)=0) * \mathbb{P}(C(3)=0)+ \mathbb{P}(A(3)=0)\mathbb{P}(B(3)>2)\mathbb{P}(C(3)=0) + \cdots 
+\frac{3}{5}
+\frac{1}{2}
+\frac{1}{5}
+50
+\frac{3}{15}(\mathbb{P}(A(5)=3) + \mathbb{P}(B(5)=3)) + \frac{3}{25}(\mathbb{P}(A(5)=3)+\mathbb{P}(B(5)=3)) \approx 0.04546

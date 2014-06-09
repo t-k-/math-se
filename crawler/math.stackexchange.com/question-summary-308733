@@ -1,0 +1,42 @@
+F(x),G(x)\ge 0
+[0,+\infty)
+\displaystyle\lim_{x\to+\infty}x(F(x)+G(x))=0
+\forall\varepsilon>0,\displaystyle\lim_{x\rightarrow+\infty}\displaystyle\int_{\varepsilon}^{+\infty}xF(xt)\cos{t}dt=0
+\displaystyle\lim_{n\to+\infty}\displaystyle\int_{0}^{+\infty}(F(t)-G(t))\cos{\dfrac{t}{n}}dt=0
+\displaystyle\lim_{x\to 0}\displaystyle\int_{0}^{\infty}(F(t)-G(t))\cos{(xt)}dt=0
+\newcommand\abs[1]{\left\lvert#1\right\rvert}a>0
+\lim_{x\to+\infty}\int_a^\infty xF(xt)\cos tdt=0
+x>0
+A>a
+c\in[a,A]
+\int_a^AF(xt)\cos tdt=F(ax)\int_a^c\cos tdt+F(Ax)\int_c^A\cos tdt
+A>a
+\abs{\int_a^AF(xt)\cos tdt}\le 2F(ax)\int_{-\pi/2}^{\pi/2}\cos tdt
+\int_a^\infty F(xt)\cos tdt=o\left(\frac1x\right)\qquad x\to+\infty
+\int_0^\infty
+\int_0^{\pi/2}
+\lim_{x\to+\infty}x\int_0^{\pi/2}(F(xu)-G(xu))\cos udu=0\tag{*}
+\lim_{n\to\infty}n\int_0^{\pi/2}(F(nu)-G(nu))\cos udu=0\tag1
+n\le x<n+1
+x(F(xu)-G(xu))=\frac xnn(F(nu)-G(nu))-x(F(nu)-F(xu))+x(G(nu)-G(xu))\tag2
+\lim_{x\to+\infty}\frac xn\cdot n\int_0^{\pi/2}(F(nu)-G(nu))\cos udu=0\tag3
+0\le x(F(nu)-F(xu))=(x-n)F(nu)+(nF(nu)-xF(xu))\le F(nu)+(nF(nu)-xF(xu))
+zF(z)\to0
+z\to+\infty
+\Delta>0
+F(z)\le1/z
+z\ge\Delta
+x\to+\infty
+\int_0^{\pi/2}F(nu)\cos udu=\int_0^{\Delta/n}+\int_{\Delta/n}^{\pi/2}
+\int_0^{\Delta/n}\le F(0)\int_0^{\Delta/n}\cos udu\to0
+\int_{\Delta/n}^{\pi/2}\le\frac1n\int_{\Delta/n}^{\pi/2}\frac{\cos u}udu\le\frac1n\int_{\Delta/n}^{\pi/2}\frac{du}u=O\left(\frac{\ln n}n\right)\to0
+\int_0^{\pi/2}(nF(nu)-xF(xu))\cos udu=\int_0^{n\pi/2}F(v)\left(\cos\frac vn-\cos\frac vx\right)dv-\int_{n\pi/2}^{x\pi/2}F(v)\cos\frac vxdv
+0\le-\int_0^{n\pi/2}\le 2F(0)\int_0^{n\pi/2}\sin\frac12\left(\frac vn-\frac vx\right)=O\left(\frac1x\right)
+\int_{n\pi/2}^{x\pi/2}\le\frac{(x-n)\pi}2F(n\pi/2)\to0
+\int_0^{\pi/2}x(F(nu)-F(xu))\cos udu\to0\tag4
+\int_0^{\pi/2}x(F(nu)-F(xu))\cos udu\to0\tag5
+\displaystyle \int_{\epsilon}^z {\cos(t) dt} = \sin(z) - \sin(\epsilon)
+\forall z >0 
+\displaystyle \int_{\epsilon}^{\infty} {F(xt) \cdot \cos(t) dt}
+x > 0
+\displaystyle \lim_{x\to \infty} {x F(x)} = 0 \implies \lim_{x \to \infty} {{x F(xt) \cos(t)}} = 0 \quad \forall t >0 \implies \lim_{x \to \infty} {\int_{\epsilon}^{\infty} {x F(xt) \cos(t) dt}} = 0 

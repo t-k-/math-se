@@ -1,0 +1,35 @@
+\lim_{n\rightarrow \infty} \frac{T(x)}{x}=\prod_p \left(1-\frac{1}{p}\right)\left(1+\frac{1}{p}+\frac{1}{p^4}+\frac{1}{p^9}+\frac{1}{p^{16}}+\cdots\right).
+\prod_p \left(1-\frac{1}{p}\right)\left(1+\sum_{n=1}^\infty \frac{1}{p^{n^2}}\right).
+\rm\bf Definition
+f
+\mathbb{E}(f)=\lim_{n\to\infty} \frac{1}{n}\sum_{m=1}^nf(m).
+\rm\bf Theorem
+f
+\mathbb{E}(f)=\prod_{p}\left(1-\frac{1}{p}\right)\left(\sum_{r=0}^\infty \frac{f(p^r)}{p^r}\right). \tag{1}
+\rm\bf Justification
+f_x(n)
+f(n')
+n'
+n
+q^r
+q>x
+n
+p^r\|n
+p^r|n
+p^{r+1}\not|n
+(1-1/p)p^{-r}
+p
+p^r
+f_x
+x\to\infty
+\mathbb{E}(f_x)=\sum_{p|n\Rightarrow p\le x} f(n)\left[\prod_{p|n,\;p^r\|n}\left(1-\frac{1}{p}\right)\frac{1}{p^r}\right] \tag{2}
+=\prod_{p\le x}\left[\left(1-\frac{1}{p}\right)\sum_{r=0}^\infty\frac{f(p^r)}{p^r}\right]. \tag{3}
+\mathbb{E}(f_x)
+(2)
+\lim_{x\to\infty}\mathbb{E}(f-f_x)=0
+f
+f(p^r)
+p^r
+1
+r
+0

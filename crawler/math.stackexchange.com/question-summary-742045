@@ -1,0 +1,58 @@
+A = \begin {cases} 1 & 0 & 0 & 2 \\ 0 & a-2 & 0 & 0 \\ 0 & 0 & b + 1 & c \\ 0 & 0 & c & 0 \end {cases}
+a,b,c
+1
+a,b,c
+2
+a,b,c
+3
+a,b,c
+\begin {cases} a = 2 \implies \begin {cases} b = -1 \implies \begin {cases} c = 0 \implies \text {rank 1, infinite solutions} \\ c \neq 0 \implies \text {rank 3, NO solution because of 3rd row} \end {cases} \\ b \neq -1 \implies \begin {cases} c = 0 \implies \text {rank 2, infinite solutions} \\ c \neq 0 \implies \text {rank 2, infinite solutions} \end {cases} \end {cases} \\ a \neq 2 \implies \begin {cases} b = -1 \implies \begin {cases} c = 0 \implies \text {rank 2, infinite solutions} \\ c \neq 0 \implies \text {rank 4, NO solutions because of 3rd row} \end {cases} \\ b \neq -1 \implies \begin {cases} c = 0 \implies \text {rank 3, unique solution} \\ c \neq 0 \implies \text {rank 3, unique solution} \end {cases} \end {cases} \end {cases}
+a,b,c
+1
+(2,-1,0)
+a,b,c
+2
+\{ (2,-1,t) \ | \ t \in \mathbb{R} \} \cup \{ (t, -1, 0) \ | \ t \in \mathbb{R} - \{ 2 \} \}
+a,b,c
+3
+\{ (2, -1, t) \ | \ t \in \mathbb{R} \} \cup \{ (t,r,s) \ | \ t,r,s \in \mathbb{R} \land t \neq 2 \land r \neq -1\}
+a,b,c
+\{ (2,-1,t) \ | \ t \in \mathbb{R} - \{ 0 \} \} \cup \{ (t,-1,r) \ | \ t,r \in \mathbb{R} \land t \neq 2 \land r \neq 0 \}
+3
+3
+a \neq 2
+b \neq -1
+a
+b
+a
+b
+c
+(x,y,z)^T
+  A = \begin{pmatrix}  1 & 0 & 0 & 2 \\  0 & a-2 & 0 & 0\\  0 & 0 & b+1 & c\\  0 & 0 & c & 0 \end{pmatrix} 
+  \begin{pmatrix}  1 & 0 & 0  \\  0 & a-2 & 0\\  0 & 0 & b+1\\  0 & 0 & c \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix}  2 \\  0\\  c\\  0 \end{pmatrix}, 
+c \neq 0
+a \neq 2
+\operatorname{rank}(A) = 4
+a = 2
+\operatorname{rank}(A) = 3
+\text{(row 4)} \mapsto \text{(row 4)} - (b+1)c^{-1}\text{(row 3)},
+  A^\prime = \begin{pmatrix}  1 & 0 & 0 & 2 \\  0 & a-2 & 0 & 0\\  0 & 0 & c & 0\\  0 & 0 & 0 & c \end{pmatrix}. 
+c = 0
+A
+a \neq 2
+b \neq -1
+\operatorname{rank}(A) = 3
+a \neq 2
+b = -1
+\operatorname{rank}(A) = 2
+a = 2
+b \neq -1
+\operatorname{rank}(A) =2
+a = 2
+b = -1
+\operatorname{rank}(A) = 1
+  A = \begin{pmatrix}  1 & 0 & 0 & 2 \\  0 & a-2 & 0 & 0\\  0 & 0 & b+1 & 0\\  0 & 0 & 0 & 0 \end{pmatrix} 
+a \neq 2
+b \neq -1
+c
+a, b, c

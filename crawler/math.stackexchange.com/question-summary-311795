@@ -1,0 +1,3 @@
+\displaystyle\sum_{k=1}^{N}\sum_{b=2}^{L} \varphi(b)(b^{2}2^{k})
+\varphi(b)
+\sum_{k=1}^{N}{\sum_{b=2}^{\left\lfloor\frac{N}{k}\right\rfloor}{\varphi(b)(b^{2}2^{k})}}=\sum_{b=2}^{N}{\sum_{k=1}^{\left\lfloor\frac{N}{b}\right\rfloor}{\varphi(b)(b^{2}2^{k})}}=\sum_{b=2}^{N}{\varphi(b)b^{2}\sum_{k=1}^{\left\lfloor\frac{N}{b}\right\rfloor}{2^{k}}}=\sum_{b=2}^{N}{\varphi(b)b^{2}(2^{\left\lfloor\frac{N}{b}\right\rfloor+1}-2)}

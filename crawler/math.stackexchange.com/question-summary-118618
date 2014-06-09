@@ -1,0 +1,40 @@
+x
+a
+b
+y
+m
+s
+z = x + y
+z
+x
+y
+x
+z
+z
+x
+y
+x
+z
+X
+Y
+Z = X+Y
+X
+Y
+a = 0, b = 1, m = 0
+X
+Y
+f_{X,Z}(x,z)
+(X, X+Y) = (X,Z)
+X = x
+Z
+x
+s^2
+f_Z(z)
+\Phi(\cdot)
+\text{erf}
+x\exp(-x^2/2)
+E[X|Z]
+f_{X.Y}(x,y) = \frac{1}{s\sqrt{2\pi}}\exp(-y^2/2s^2), ~0 \leq x \leq 1, -\infty < y < \infty.
+f_{X|Z}(x|z) = \frac{f_{X,Z}(x,z)}{f_Z(z)}  = \frac{f_{X,Z}(x,z)}{\int_{-\infty}^{\infty}f_{X,Z}(x,z)\mathrm dx}.
+E[X|Z] = \int_{-\infty}^{\infty} xf_{X|Z}(x|z) \mathrm dx.
+f_{X|Z}(x|z) = \frac{f_{Z|X}(z|x)f_X(x)}{f_Z(z)}  = \frac{1}{f_Z(z)}\cdot\frac{1}{s\sqrt{2\pi}}\exp(-(x-z)^2/2s^2),  ~ 0 \leq x \leq 1

@@ -1,0 +1,24 @@
+a_i
+i
+n >= 0
+a_0 = 5
+a_n = (a_{n-1}+1)\cdot\frac{3}{4}
+a_{n+2} = (((a_{n}+1)\cdot\frac{3}{4})+1)\cdot\frac{3}{4}
+a_{n+2} = (((a_{n}+1)\cdot\frac{3^2}{4^2})+\frac{3}{4})
+a_{n+2} = (((\frac{3^2}{4^2}\cdot a_{n}+\frac{3^2}{4^2}))+\frac{3}{4})
+a_{n} = \left(\frac{3}{4}\right)^n\cdot a_{0}+\sum_{k=1}^{n}\frac{3^k}{4^k}
+a_{n} = \left(\frac{3}{4}\right)^n\cdot a_{0}+\left(\frac{3}{4}\cdot\frac{1-\left(\frac{3}{4}\right)^n}{1-\left(\frac{3}{4}\right)}\right)
+a_{n} = \left(\frac{3}{4}\right)^n\cdot a_{0}+\left(3\frac{2^{2n}-3^n}{2^{2n}}\right)
+a_3
+3.84375
+n\to\infty
+3
+a_n=b_n+3
+(1)
+b_n
+\dfrac{3}{4}
+b_n
+0
+a_n
+3
+b_{n+1}=\frac{3}{4}b_n.

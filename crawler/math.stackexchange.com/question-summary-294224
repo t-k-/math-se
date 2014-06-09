@@ -1,0 +1,53 @@
+\newcommand\abs[1]{\left\lvert#1\right\rvert}
+\{s_n\}
+\sigma_n
+a_n=s_n-s_{n-1}
+n\ge1
+M<+\infty
+\abs{na_n}\le M
+n
+\lim_{n\to\infty}\sigma_n=\sigma
+\lim_{n\to\infty}s_n=\sigma
+\sigma_n=\frac{s_0+s_1+\dotsb+s_n}{n+1}\qquad(n=0,1,2,\dotsc)
+m<n
+\abs{s_n-s_k}\le(n-m-1)M\,/\,(m+2)
+\epsilon>0
+n
+m
+(m+1)\,/\,(n-m)\le1/\epsilon
+\abs{s_n-s_k}<M\epsilon
+s_n-\sigma_n=\frac{m+1}{n-m}(\sigma_n-\sigma_m)+\frac1{n-m}\sum_{k=m+1}^n(s_n-s_k)\tag{*}
+m\le\frac{n-\epsilon}{1+\epsilon}<m+1
+\limsup_{n\to\infty}\,\abs{s_n-\sigma}\le M\epsilon
+(\ast)
+\sigma_n
+s_n-s_{n-1}
+s_n-\sigma_n
+s_k
+k
+\sigma_n
+(n-m)
+s_n
+s_n-\sigma_n
+ \sum_{k=m+1}^ns_k=\color{#C00000}{\sum_{k=0}^ns_k}-\color{#00A000}{\sum_{k=0}^ms_k}\tag{1} 
+ \sum_{k=m+1}^ns_k=\color{#C00000}{(n+1)\sigma_n}-\color{#00A000}{(m+1)\sigma_m}\tag{2} 
+(2)
+\displaystyle\sum_{k=m+1}^ns_n=(n-m)s_n
+s_n-s_{n-1}
+s_n-\sigma_n
+s_n-s_k
+\sigma_n-\sigma_m
+ \begin{align} \sum_{k=m+1}^n(s_n-s_k) &=(n-m)s_n-\Big[(n+1)\sigma_n-(m+1)\sigma_m\Big]\\ &=(n-m)s_n-\Big[(n-m)\sigma_n+(m+1)\sigma_n-(m+1)\sigma_m\Big]\\[8pt] &=(n-m)(s_n-\sigma_n)-(m+1)(\sigma_n-\sigma_m)\tag{3} \end{align} 
+(m+1)(\sigma_n-\sigma_m)
+s_n-\sigma_n
+n-m
+(\ast)
+\ast
+m
+n
+\sigma_n-\sigma_m
+\sigma_n
+\displaystyle\sum_{k=m+1}^n(s_n-s_k)
+s_n-s_{n-1}
+ (m+1)(\sigma_n-\sigma_m)+\sum_{k=m+1}^n(s_n-s_k)=(n-m)(s_n-\sigma_n) 
+ \frac{m+1}{n-m}(\sigma_n-\sigma_m)+\frac1{n-m}\sum_{k=m+1}^n(s_n-s_k)=(s_n-\sigma_n)\tag{$\ast$} 

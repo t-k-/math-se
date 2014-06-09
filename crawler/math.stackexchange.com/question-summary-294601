@@ -1,0 +1,5 @@
+\displaystyle \lim_{n\to\infty}\int_{0}^{\infty}\frac{e^{-x}\cos(x)}{\frac{1}{n}+nx^2}dx 
+\ast
+u=nx
+(\ast)
+ \begin{align} \lim_{n\to\infty}\int_0^\infty\frac{e^{-x}\cos(x)}{\frac1n+nx^2}\,\mathrm{d}x &=\lim_{n\to\infty}\int_0^\infty\frac{e^{-x}\cos(x)}{1+n^2x^2}\,\mathrm{d}nx\\ &=\lim_{n\to\infty}\int_0^\infty\frac{e^{-u/n}\cos(u/n)}{1+u^2}\,\mathrm{d}u\\ &=\int_0^\infty\frac{\mathrm{d}u}{1+u^2}\tag{$\ast$}\\[3pt] &=\frac\pi2 \end{align} 

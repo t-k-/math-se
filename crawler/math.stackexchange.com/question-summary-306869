@@ -1,0 +1,24 @@
+ ABCD
+ R
+ A,B,C,D
+ m_a,m_b,m_c
+ m_d
+ m_a+m_b+m_c+m_d\leq \dfrac{16}{3}R
+\vec{x}_a, \vec{x}_b, \vec{x}_c, \vec{x}_d
+ABCD
+|\vec{x}_a| = |\vec{x}_b| = |\vec{x}_c| = |\vec{x}_d| = R
+ABCD
+R
+\vec{p} = \frac14 ( \vec{x}_a + \vec{x}_b + \vec{x}_c + \vec{x}_d )
+ABCD
+m_a
+\vec{x}_a
+\frac13 ( \vec{x}_b + \vec{x}_c + \vec{x}_d )
+m_b = \frac43 |\vec{x}_b - \vec{p}|
+m_c = \frac43 |\vec{x}_c - \vec{p}|
+m_d = \frac43 |\vec{x}_d - \vec{p}|
+m_a = |\vec{x}_a - \frac13 ( \vec{x}_b + \vec{x}_c + \vec{x}_d )| = \frac43 | \vec{x}_a - \vec{p}|
+m_a + m_b + m_c + m_d  = \frac43 \left(|\vec{x}_a - \vec{p}| + |\vec{x}_b - \vec{p}| + |\vec{x}_c - \vec{p}| + |\vec{x}_a - \vec{p}| \right)
+\left(|\vec{x}_a - \vec{p}| + |\vec{x}_b - \vec{p}| + |\vec{x}_c - \vec{p}| + |\vec{x}_a - \vec{p}| \right)^2 \le 4  \left(|\vec{x}_a - \vec{p}|^2 + |\vec{x}_b - \vec{p}|^2 + |\vec{x}_c - \vec{p}|^2 + |\vec{x}_a - \vec{p}|^2\right)
+\begin{align} &|\vec{x}_a - \vec{p}|^2 + |\vec{x}_b - \vec{p}|^2 + |\vec{x}_c - \vec{p}|^2 + |\vec{x}_a - \vec{p}|^2\\ = & |\vec{x}_a|^2 + |\vec{x}_b|^2 + |\vec{x}_c|^2 + |\vec{x}_d|^2 - 4 |\vec{p}|^2\\ \le & 4 R^2 \end{align}
+m_a + m_b + m_c + m_d \le \frac43 \sqrt{4 \times 4R^2} = \frac{16}{3} R

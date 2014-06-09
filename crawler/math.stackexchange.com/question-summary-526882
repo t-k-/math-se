@@ -1,0 +1,10 @@
+ \left(\partial z \over \partial x\right)^2 - \left(\partial z \over\partial y\right)^2 = 4{\partial z \over \partial u}{\partial z \over \partial v}
+z = f(x,y)
+u = x+y
+v = x-y
+\partial_x
+\frac{\partial}{\partial x}
+\partial_x u = \partial_y u = \partial_x v = -\partial_y v = 1
+\partial_x z = \partial_u z \partial_x u + \partial_v z \partial_x v = (\partial_u z + \partial_v z)
+\partial_y z = \partial_u z \partial_y u + \partial_v z \partial_y v = (\partial_u z - \partial_v z)
+(\partial_xz)^2 - (\partial_yz)^2 = (\partial_xz + \partial_yz)(\partial_xz - \partial_yz) = 2\partial_uz \cdot 2\partial_vz = 4\partial_uz\partial_vz

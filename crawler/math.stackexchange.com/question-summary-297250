@@ -1,0 +1,29 @@
+u_t + b \cdot \nabla u + cu =0
+u(x,0) = g(x)
+ z(s) = -cus + K
+ z(s) := u(x + bs, t+s)
+ \frac{dz}{ds} = b\cdot\nabla u + \frac{du}{dt} = -cu,  
+ z(0) = u = K 
+ z(-t) = u(x-bt,0) = g(x-bt) = K + cut 
+ \boxed{u(x,t) = \frac{g(x-bt)}{1+ct}.} 
+ (1+ct)^{-2}ct(b\cdot\nabla g + cg)\neq0
+ \frac{\mathrm{d}z}{\mathrm{d}s}(s) = (b\cdot \nabla u)(x + bs, t + s) + (\partial_t u)(x+bs, t+s) = - cu(x+bs, t+s) = - c z(s) 
+ z = z_0 \exp (-c s) 
+z_0
+s = 0
+u_t+b\cdot\nabla u+cu=0
+u(x,0)=g(x)
+u_t+bu_x+cu=0
+u(x,0)=g(x)
+\dfrac{dt}{ds}=1
+t(0)=0
+t=s
+\dfrac{dx}{ds}=b
+x(0)=x_0
+x=bs+x_0=bt+x_0
+\dfrac{du}{ds}=-cu
+u(0)=f(x_0)
+u(x,t)=f(x_0)e^{-cs}=f(x-bt)e^{-ct}
+u(x,0)=g(x)
+f(x)=g(x)
+\therefore u(x,t)=g(x-bt)e^{-ct}

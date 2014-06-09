@@ -1,0 +1,18 @@
+T(n) = 2T\left(\frac{n}{2}\right) + \Theta(n \log n)
+S(k)=2^{-k}T(2^k)
+S(k)=S(k-1)+\Theta(k)
+S(k-1)+Ak\leqslant S(k)\leqslant S(k-1)+Bk
+A
+B
+S(0)+A\sum\limits_{i=1}^ki\leqslant S(k)\leqslant S(0)+B\sum\limits_{i=1}^ki
+S(k)=\Theta(k^2)
+(T(k))_k
+T(2^k)=\Theta(2^kk^2)
+T(n)=\Theta(n(\log n)^2)
+S(n)=T(n)/cn
+S(n) = S(n/2) + \log (n)
+k
+S(n) = S(n/{2^k}) + k \log 2 (\log_2 n - \frac{(k-1)}{2})
+k = \log_2 n + O(1)
+T(n) = (\frac{c \log 2}{2}) n \log_2^2 n + O(n\log n)
+k

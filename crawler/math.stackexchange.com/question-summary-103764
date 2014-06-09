@@ -1,0 +1,33 @@
+a_1,\dots,a_n
+\binom{a_1+\cdots+a_n}{a_1,\dots,a_n}
+ \prod_{i,j=1\atop i\neq j}^n\left(1-\frac{x_i}{x_j}\right)^{a_i} 
+\binom{a+b+c}{a,b,c}
+a_1=a,a_2=b,a_3=c
+\binom{a+b+c}{a,b,c}
+ \sum_{k=-a}^a(-1)^k\binom{a+b}{a+k}\binom{b+c}{b+k}\binom{c+a}{c+k}
+ \prod_{i,j=1\atop i\neq j}^3\left(1-\frac{x_i}{x_j}\right)^{a_i} 
+ \left(1-\frac{x_1}{x_2}\right)^a\left(1-\frac{x_1}{x_3}\right)^a\left(1-\frac{x_2}{x_1}\right)^b\left(1-\frac{x_2}{x_3}\right)^b\left(1-\frac{x_3}{x_1}\right)^c\left(1-\frac{x_3}{x_2}\right)^c 
+-\frac{x_1}{x_2}
+(1-\frac{x_1}{x_2})^a
+-\frac{x_2}{x_1}
+(1-\frac{x_2}{x_1})^b
+-a
+a
+a_1=a
+a_2=b
+a_3=c
+ \prod_{1\le i,j\le 3, \ i\ne j}\left(1-\frac{x_i}{x_j}\right)^{a_i} 
+i:=a+k
+\ell=c+k
+j=b+k
+i
+j
+\ell
+k
+(-1)^{2a+2b+2c+3k}=(-1)^k
+\left({a+b+c\atop a\ \ \  b\ \ \  c}\right)
+ \prod_{1\le i,j\le 3, \ i\ne j}\left(1-\frac{x_i}{x_j}\right)^{a_i} 
+ = (-1)^{a+b+c} x_1^{a-c} x_2^{b-a} x_3^{c-b}  (1-\frac{x_2}{x_1})^{a+b} (1-\frac{x_3}{x_2})^{b+c} (1-\frac{x_1}{x_3})^{c+a}. \qquad (1) 
+ \sum_{i,j,\ell} (-1)^{a+b+c+i+j+\ell} {a+b\choose i} {b+c\choose j} {c+a\choose \ell} x_1^{\ell-i+a-c} x_2^{i-j+b-a} x_3^{j-\ell+c-b}.\qquad (2) 
+ \ell-i+a-c=0,\  i-j+b-a=0,\  j-\ell+c-b=0.\qquad (3) 
+ \sum_k (-1)^{2a+2b+2c+3k} {a+b\choose a+k} {b+c\choose b+k} {c+a\choose c+k}, 

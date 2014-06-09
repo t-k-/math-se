@@ -1,0 +1,55 @@
+n
+a>1
+{}^n
+\hspace{.2in}\begin{cases} \log^1(x) = \ln x \\ \log^{n+1}(x) = \log^n(\ln x) \end{cases}
+\hspace{.2in}\begin{cases} \operatorname{pow}_a^1(x) = a^x \\ \operatorname{pow}_a^{n+1}(x) = \operatorname{pow}_a^n(a^x) \end{cases}
+\log^3(x) = \ln \ln \ln x
+\operatorname{pow}_a^2(x) = a^{a^x}
+f_a(x)
+\{\ln a^x,\ \ln \ln a^{a^x},\ \ln \ln \ln a^{a^{a^x}},\ \dots\}
+\{x \ln a,\ x \ln a+\ln \ln a,\ \ln\left(a^x \ln a+\ln \ln a\right),\ \ln \ln\left(a^{a^x}\ln a+\ln \ln a\right),\ \dots\}
+\boxed{\phantom{\Bigg|}\hspace{0.2in}  f_a(x) = \lim\limits_{n\to\infty} \log^n(\operatorname{pow}_a^n(x)) \hspace{0.25in}}
+f_e(x)=x
+a
+a > e
+n
+f_n(x) = \log^n(\operatorname{pow}_a^n(x))
+f_0(x) = x
+f_{n+1}(x) = \log(f_n(a^x))
+\log
+pow_a
+T : f \mapsto \log \circ f \circ pow_a
+f \ge g
+\Bbb R^+
+T(f) \ge T(g)
+\Bbb R
+f_0(x) = x
+f_1(x) = \log(a^x) \ge \log(e^x) = f_0(x)
+x \in \Bbb R^+
+f_n
+x
+(f_n)
+f_{n+1}(x) \ge f_n(x)
+x < 0
+n = 0
+\forall x \in \Bbb R, f_n(x) \ge f_1(x) = (\log a) x
+T
+L_{A,B}(x) = Ax+B
+f_n
+x
+T(L_{A,B})(x) = \log(Aa^x+B)
+\log(Aa^x) = \log A + x \log a = L_{\log a,\log A}(x)
+L_{\log a, \log A}(x) \le T(L_{A,B})(x) \le L_{\log a, \log A}(x) + B/(Aa^x)
+f_n
+f(x)
+x \in \Bbb R
+f
+f(x) \ge Ax
+\lim_{x \to +\infty} f(x)/x = A
+f
+f = T(f)
+e^{f(x)} = f(a^x)
+x
+\lim_{x \to - \infty} f(x) = \lim_{x \to - \infty} \log(f(a^x))  = \lim_{x \to 0} \log(f(0)) \ge \log(f(0))
+f
+0

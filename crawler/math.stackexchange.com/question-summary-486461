@@ -1,0 +1,43 @@
+n=(1\,b_{m-1}\ldots b_1\,b_0)_2
+\begin{align*} g(n)&=(\alpha\,\beta_{b_{m-1}}\,\beta_{b_{m-2}}\ldots\beta_{b_1}\,\beta_{b_0})_3\\ &=3^m\alpha+\beta_0\sum\{3^k:b_k=0\text{ and }k<m\}+\beta_1\sum\{3^k:b_k=1\text{ and }k<m\}\;, \end{align*}
+\begin{align*} a(n)&=3^m\;,\\ b(n)&=\sum\{3^k:b_k=0\text{ and }k<m\}\;,\text{ and }\\ c(n)&=\sum\{3^k:b_k=1\text{ and }k<m\}\;. \end{align*}
+b(n)
+c(n)
+(\alpha\,\beta_{b_{m-1}}\,\beta_{b_{m-2}}\ldots\beta_{b_1}\,\beta_{b_0})_3
+\beta_0
+\beta_1
+i=0,1
+\beta_{b_k}=\beta_i
+b_k=i
+n=13=(1101)_2
+m=3
+b_0=b_2=0
+b_1=1
+a(13)=27
+b(13)=3^2+3^0=10
+c(13)=3^1=3
+\alpha=1
+\beta_0=\beta_1=\gamma=0
+g(n)=a(n)
+\begin{align*} &a(1)=1\;,\\ &a(2n+j)=3a(n)\;. \end{align*}
+n=2^m+\ell
+0\le\ell<2^m
+a(n)=3^m
+(\alpha\,\beta_{b_{m-1}}\,\beta_{b_{m-2}}\ldots\beta_{b_1}\,\beta_{b_0})_3
+\beta_0=1
+\alpha=\beta_1=\gamma=0
+\begin{align*} &b(1)=0\;,\\ &b(2n)=3b(n)+1\;,\\ &b(2n+1)=3b(n)\;; \end{align*}
+b(n)
+(\alpha\,\beta_{b_{m-1}}\,\beta_{b_{m-2}}\ldots\beta_{b_1}\,\beta_{b_0})_3
+c(n)
+g(n)=n
+\begin{align*} &1=\alpha\;,\\ &2n=3n+\gamma n+\beta_0\;,\\ &2n+1=3n+\gamma n+\beta_1\;, \end{align*}
+n
+\alpha=1
+\beta_0=0
+\beta_1=1
+\gamma=-1
+n=g(n)=a(n)+c(n)-d(n)
+\begin{align*} d(n)&=a(n)+c(n)-n\\ &=3^m+\sum\{3^k:b_k=1\text{ and }k<m\}-n\;. \end{align*}
+n=13
+d(13)=27+3-13=17

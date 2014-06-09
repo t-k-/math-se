@@ -1,0 +1,44 @@
+\int {{x^{1/6}+1}\over x^{7/6}+x^{5/4}}dx = \int {{x^{1/6}}\over x^{7/6}+x^{5/4}}dx + \int {1\over x^{7/6}+x^{5/4}}dx
+u^{24}=x\;,\;\;dx=24u^{23}du\;,\;\; x^{1/6}=u^{4}\;,\;\;x^{7/6}=u^{28}\;,\;\; x^{5/4}=u^{30}
+\int {{24u^{27}}\over u^{28}+u^{30}}du + \int {24u^{23}\over u^{28}+u^{30}}du = 24\int {du\over u+u^{3}} + 24\int {du\over u^{5}+u^{7}}
+Au^2+A +Bu^2+Cu=1
+A=1
+B=-1
+C=0
+24\int {du\over u+u^{3}}
+24[\int {A\over u}du +\int {Bu+C\over u^2+1}du]
+24[\int {A\over u}du +\int {Bu+C\over u^2+1}du]= 24[\int {du\over u} + \int {-u\over u^{2}+1}du]
+24[ln|u|-{ln(u^{2}+1)\over 2}]=12[ln{u^{2}\over u^{2}+1}]
+24\int {du\over u^{5}+u^{7}}
+u=tanz
+du=sec^{2}zdz
+u^{5}+u^{7}=u^{5}(1+u^{2})
+tan^{5}z(sec^{2}z)
+24\int {du\over u^{5}+u^{7}}
+=24\int {sec^{2}zdz\over tan^{5}zsec^{2}z}
+=24$\int cot^{5}zdz
+=24\int cotzcot^{4}zdz
+=24\int cotz(csc^{2}-1)^{2}dz
+=24\int cotz(csc^{4}z-2csc^{2}z+1)dz
+=24\int cotzcsc^{4}zdz-48\int cotzcsc^{2}zdz+24\int cotzdz
+=24\int cotzcsczcsc^{3}zdz-48({-cot^{2}z\over 2})+24ln|sinz|
+-24csc^{4}z\over 4
+-cot^{2}z\over 2
+sinz
+csc^{4}z
+cot^{2}z
+sinz
+u=tanz
+-6csc^{4}z
+24cot^{2}z
+sinz
+-6(u^{2}+1)^{2}\over u^{4}
+24\over u^{2}
+24ln|{u\over (u^{2}+1)^{1/2}}|
+u^{24}=x
+\int {{x^{1/6}+1}\over x^{7/6}+x^{5/4}}dx = 12ln|{x^{1/12}\over x^{1/12}+1}|+24ln|{x^{1/24}\over (x^{1/12}+1)^{1/+2}}|+{24\over x^{1/12}}-{6(x^{1/12}+1)^{1/2}\over x^{1/6}}+C
+x^{1/12}
+y
+x=y^{12}
+\frac{12 \left(y^2+1\right)}{y^3 (y+1)}
+12 \left(-\frac{1}{2 y^2}+\frac{1}{y}+2 \log (y)-2 \log (y+1)\right)

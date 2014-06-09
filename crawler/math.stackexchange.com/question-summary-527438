@@ -1,0 +1,6 @@
+\int_0^\infty\frac{\sqrt{x+\sqrt{x^2+1}}}{\sqrt{x\phantom{|}}\sqrt{x^2+1}}e^{-x}dx
+\int_0^\infty\dfrac{\sqrt{x+\sqrt{x^2+1}}}{\sqrt{x}\sqrt{x^2+1}}e^{-x}~dx
+=\int_0^\infty\dfrac{\sqrt{\sinh x+\sqrt{\sinh^2x+1}}}{\sqrt{\sinh x}\sqrt{\sinh^2x+1}}e^{-\sinh x}~d(\sinh x)
+=\int_0^\infty\dfrac{\sqrt{\sinh x+\cosh x}}{\sqrt{\sinh x}\cosh x}e^{-\sinh x}\cosh x~dx
+=\int_0^\infty\dfrac{e^{-\sinh x}\sqrt{e^x}}{\sqrt{\sinh x}}dx
+=\int_0^\infty\dfrac{e^{\frac{x}{2}-\sinh x}}{\sqrt{\sinh x}}dx

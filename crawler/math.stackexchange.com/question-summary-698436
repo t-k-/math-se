@@ -1,0 +1,8 @@
+2^n  \sum_{i=0}^{\log(n)}\left(\frac{3}{2}\right)^i
+S = 1 + (3/2) + (3/2)^2 + \cdots + (3/2)^n
+rS = (3/2) + (3/2)^2 + \cdots + (3/2)^n+1
+S - rS = 1 - (3/2)^n+1
+\Rightarrow -(1/2)S =1 - (3/2)^{n+1} \Rightarrow S = -2 - (3/2)^n+1 = 2^n((3/2)^{n+1} + 2)
+\sum^t_{i=0} \left(\frac{3}{2}\right)^i = 2\times\left(\left(\frac{3}{2}\right)^{t+1}-1\right)
+t=\lfloor \log(n) \rfloor
+t \in \mathbb N

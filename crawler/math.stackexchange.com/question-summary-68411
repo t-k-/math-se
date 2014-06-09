@@ -1,0 +1,11 @@
+\sum_{n \leq x} \frac{\mu(n)}{n} \log{\frac{x}{n}}=O(1) 
+A(x)=\sum_{n \leq x} \frac{\mu(n)}{n}
+A(t)
+o(1)
+t \in [1,x]
+O(1)
+\sum_{n \leq x} \frac{\mu(n)}{n} \log{\frac{x}{n}}= \int_1^{x} \frac{A(t)\mathrm dt}{t},
+\sum_{n\leq x}\frac{\mu(n)}{n} \log\frac{x}{n}=\int_1^x \left(\sum_{m\leq t}\frac{\mu(m)}{m}\right) \frac{dt}{t}.
+\sum_{m\leq t}\frac{\mu(m)}{m}\ll (\log t)^{-2}
+\sum_{nd\leq x}\frac{\mu(n)}{nd}=\sum_{k\leq x}\frac{1}{k}\sum_{d|k}\mu(d)=1.
+\sum_{n\leq x}\frac{\mu(n)}{n}\sum_{k\leq\frac{x}{n}}\frac{1}{k}=\sum_{n\leq x}\frac{\mu(n)}{n}\left(\log\left(\frac{x}{n}\right)+\gamma+O\left(\frac{n}{x}\right)\right).

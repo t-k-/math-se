@@ -1,0 +1,31 @@
+X
+Y
+U = \min(X,Y)
+V = \max(X,Y)
+W = V -U
+P(U =i)
+P(W =j)
+U
+W
+U=\min(X,Y)
+V=\max(X,Y)
+X
+Y
+X
+Y
+p
+0<p<1
+X
+Y
+U
+P(X=i)=p(1-p)^i
+P(X>i)=\sum_{k=i+1}^\infty {p(1-p)^k}=p \cdot\dfrac{(1-p)^{i+1}}{1-(1-p)}=(1-p)^{i+1}
+P(U=i)=P(\min(X,Y)=i)=P(X>i,Y=i)+P(X=i,Y>i)+P(X=i,Y=i)
+\min(X,Y)
+2p-p^2
+p^2<2p
+P(U=i)=(2p-p^2)\cdot(1-p)^{2i}
+W=V-U
+P(W=j)=P(V-U=j)=\sum_{k=0}^\infty{P(U=k,V=j+k)}
+\begin{align*}P(W=j)&=\sum_{k=0}^\infty\{P(X=k;Y=j+k)+P(X=j+k;Y=k)\}\\ &=\sum_{k=0}^\infty{2p^2(1-p)^{j+2k}}\\ &=\dfrac{2p^2(1-p)^j}{1-(1-p)^2}\\&=\dfrac{2p^2(1-p)^j}{2p-p^2}\end{align*}
+\begin{align*}P(U=i;W=j)&=P(U=i;V=i+j)\\&=P(X=i;Y=i+j)+P(X=i+j;Y=i)\end{align*}

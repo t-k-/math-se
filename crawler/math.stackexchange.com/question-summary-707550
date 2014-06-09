@@ -1,0 +1,17 @@
+[a,b]
+[c,d]
+(b-a)(d-c)
+p1 = ceil( 2^k*a )
+p2 = floor( 2^k*b )
+q1 = ceil( 2^k*c )
+q2 = floor( 2^k*d )
+[a,b]
+p2-p1
+1/2^k
+[c,d]
+q2-q1
+1/2^k
+( p2-p1 ) / 2^k * ( q2-q1 ) / 2^k = (p2-p1)(q2-q1) / 2^k
+( p2-p1+2 )( q2-q1+2 ) / 2^(2k)
+ceil(x) = - floor( -x )
+floor(x) + floor(y) <= floor( x+y )

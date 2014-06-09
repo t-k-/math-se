@@ -1,0 +1,25 @@
+L_1
+ x = y - D^\intercal z
+L_1
+D = \bigl(\begin{smallmatrix} D_1\\ D_2 \end{smallmatrix} \bigr)
+\lambda = \bigl(\begin{smallmatrix} \lambda_1\\ \lambda_2 \end{smallmatrix} \bigr)
+D_1
+D_2
+D_1
+D_2
+ D_1 =  \begin{pmatrix}   -1 & 1 & 0 & \cdots \\   0 & -1 & 1 & \cdots \\   \vdots  & \vdots  & \vdots & \ddots  \\  \end{pmatrix} D_2 =  \begin{pmatrix}   1 & -2 & 1 & 0 & \cdots \\   0 & 1 & -2 & 1 &\cdots \\   \vdots  & \vdots  & \vdots & \vdots &\ddots  \\  \end{pmatrix} 
+D D^\intercal
+ \min t + \lambda_1^T w_1 + \lambda_2^T w_2
+ s.t. 
+ r = y -x 
+(1,t, r) \in Q_r
+ z_1 = D_1 x, z_2= D_2=x
+ (w_{ij} , z_{ij})\in Q^2,\quad i\in\{1,2\}, j=1,\ldots
+Q^2
+Q_r
+ \max \mu_0 + y^t \mu_r
+ s.t. 
+ \lambda_1 \geq \mu_1 
+ \lambda_2 \geq \mu_2 
+(1,-\mu_0, -\mu_r) \in Q_r
+ D_1^T \mu_1 + D_2^T \mu_2 + \mu_r\leq 0

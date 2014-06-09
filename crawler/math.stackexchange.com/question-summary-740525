@@ -1,0 +1,21 @@
+\theta
+a=\oint\vec{E}.\vec{dS}=\oint E.dS.cos\theta
+a=\int_0^l\int_0^l \frac{kq}{x^2+y^2+l^2}.\frac{l}{\sqrt(x^2+y^2+l^2)}dxdy
+kq\pi/6=q/24\epsilon
+k=1/4\pi\epsilon
+l
+x=l\,\tilde x
+y=l\,\tilde y
+I(l) = \int_{0}^{l}\int_{0}^{l}\frac{k\,q\,l}{(x^2+y^2+l^2)^{\frac{3}{2}}}\,dxdy\\ = \int_{0}^{1}\int_{0}^{1}\frac{k\,q}{(\tilde x^2+\tilde y^2+1)^{\frac{3}{2}}}\, d\tilde x d\tilde y\\ = I(1).
+l
+l
+l=1
+I=k\,q\int_{0}^{1}\int_{0}^{1}\frac{1}{(x^2+y^2+1)^{\frac{3}{2}}}\, dx dy
+\int_{0}^{1}\frac{1}{(x^2+y^2+1)^{\frac{3}{2}}}\,dy
+y=\sqrt{x^2+1}\tan{u}.
+\int_{0}^{1}\frac{1}{(x^2+y^2+1)^{\frac{3}{2}}}\,dy = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{x^2+1}}}}\frac{\sqrt{x^2+1}\sec^2{u}}{(x^2+1+(x^2+1)\tan^2{u})^{\frac{3}{2}}}\,du\\  = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{x^2+1}}}}\frac{\sqrt{x^2+1}\sec^2{u}}{(x^2+1)^{\frac32}(1+\tan^2{u})^{\frac{3}{2}}}\,du\\  = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{x^2+1}}}}\frac{\sec^2{u}}{(x^2+1)\sec^3{u}}\,du\\  = \frac{1}{x^2+1}\int_{0}^{\tan^{-1}{\frac{1}{\sqrt{x^2+1}}}}\cos{u}\,du\\  = \frac{1}{x^2+1}\frac{1}{\sqrt{x^2+2}}.
+\frac{I}{kq} = \int_{0}^{1}\frac{1}{(x^2+1)\sqrt{x^2+2}}\,dx
+x=\sqrt{2}\tan{u}
+\int_{0}^{1}\frac{1}{(x^2+1)\sqrt{x^2+2}}\,dx = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{2}}}}\frac{\sqrt{2}\sec^2{u}}{(2\tan^2{u}+1)\sqrt{2\tan^2{u}+2}}\,du\\ = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{2}}}}\frac{\sec^2{u}}{(2\tan^2{u}+1)\sqrt{\tan^2{u}+1}}\,du\\ = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{2}}}}\frac{\sec{u}}{2\tan^2{u}+1}\,du\\ = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{2}}}}\frac{\cos{u}}{2\sin^2{u}+\cos^2{u}}\,du\\ = \int_{0}^{\tan^{-1}{\frac{1}{\sqrt{2}}}}\frac{\cos{u}}{\sin^2{u}+1}\,du\\ = \int_{0}^{1/\sqrt{3}}\frac{dw}{w^2+1}=\tan^{-1}{\frac{1}{\sqrt{3}}} = \frac{\pi}{6},
+w=\sin{u}
+I = \frac{\pi kq}{6}.~~~\blacksquare

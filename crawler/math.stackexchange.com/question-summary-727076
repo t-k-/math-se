@@ -1,0 +1,18 @@
+2,4,8,16,32,64,128, 256
+256 = \frac{1}{2}{\sum_1^{8} 2^k}
+3/4
+\frac{3}{4}^{256} \leq \frac{1}{2^{32}}
+P=\frac{1}{2^{32}}
+2^1
+2^2
+2^{11} = 2048
+P(i,j,x)
+(i,j)
+0\le x \le 11
+\dots
+x
+P'(i,j,x) = \underbrace{P(i,j,x)}_{\text{already was in this state}} - \underbrace{P(i,j,x) * (P(i+1,j,x)+P(i+1,j,x))}_{\text{leaves this state due to a join or move to the right}} + \underbrace{P(i,j,x-1)*P(i-1,j,x-1)}_{\text{joines this state due to join from the left}} + \dots 
+x=1
+x=2
+ P'(i,j,1) =P(i,j,1) + P(i,j,0)/16 \\ P'(i,j,2)=P(i,j,2) + P(i,j,0)/16 \\ P'(i,j,0)=P(i,j,0)*\frac{14}{16}\,. 
+x=11

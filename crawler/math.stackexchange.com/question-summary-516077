@@ -1,0 +1,28 @@
+n
+a_n\geq1
+n
+L
+ a_{n+1}-a_n=\frac{\sqrt{2+\sqrt{3+\cdots\sqrt{n+1}}}-\sqrt{2+\sqrt{3+\cdots\sqrt{n}}}}{a_{n+1}+a_n}\\ \leq\frac{\sqrt{2+\sqrt{3+\cdots\sqrt{n+1}}}-\sqrt{2+\sqrt{3+\cdots\sqrt{n}}}}{2}\\ =\frac12\,\frac{\sqrt{3+\sqrt{4+\cdots\sqrt{n+1}}}-\sqrt{3+\sqrt{4+\cdots\sqrt{n}}}}{\sqrt{2+\sqrt{3+\cdots\sqrt{n+1}}}+\sqrt{2+\sqrt{3+\cdots\sqrt{n}}}}\\ \leq\frac12\,\frac{\sqrt{3+\sqrt{4+\cdots\sqrt{n+1}}}-\sqrt{3+\sqrt{4+\cdots\sqrt{n}}}}{2\sqrt2}\\ \leq\cdots\\ \leq\frac{\sqrt{n+1}}{2^{n+1}}\leq\frac{n+1}{2^n} 
+ a_{n+k}-a_n=\sum_{j=1}^ka_{n+j}-a_{n+j-1}\leq\sum_{j=1}^k\frac{n+j+1}{2^{n+j}}\leq\frac3{2^n}. 
+n^{2^{-n}}
+1
+n \to \infty
+C
+ n^{2^{-n}} \leq C 
+n
+ n \leq C^{2^n} 
+n
+ \begin{align} a_n &= \sqrt{1+\sqrt{2+\sqrt{3+\cdots+\sqrt{n}}}} \\ &\leq \sqrt{C^2+\sqrt{C^{2^2}+\sqrt{C^{2^3}+\cdots+\sqrt{C^{2^n}}}}} \\ &= C \sqrt{1+\sqrt{1+\sqrt{1+\cdots+\sqrt{1}}}} \\ &< C \sqrt{1+\sqrt{1+\sqrt{1+\cdots}}} \\ &= C\varphi, \end{align} 
+\varphi
+a_n
+n\ge 10
+a_0=1
+a_{n+1}=\sqrt{1+\sqrt{2}a_{n}}
+\sqrt{1+\sqrt{2^1+\sqrt{2^2+\sqrt{2^3...}}}}=\sqrt{1+\sqrt{2}\sqrt{1+2^{-1}\sqrt{2^2+\sqrt{2^3...}}}}
+<\sqrt{1+\sqrt{2}\sqrt{1+2^{-0.5}\sqrt{2^2+\sqrt{2^3+...}}}}
+=\sqrt{1+\sqrt{2}\sqrt{1+\sqrt{2+2^{-1}\sqrt{2^3...}}}}
+\cdots
+<\sqrt{1+\sqrt{2}\sqrt{1+\sqrt{2+\sqrt{2^2...}}}}
+a_n\le\frac{1+\sqrt3}{\sqrt2}
+1\le\frac{1+\sqrt3}{\sqrt2}
+a_{n+1}\le\sqrt{2+\sqrt{3}}=\frac{1+\sqrt3}{\sqrt2}

@@ -1,0 +1,31 @@
+(\frac{2}{365})^3
+\{1,\ldots,365\}
+A(n, d)
+4
+n
+\{1,\ldots, d\}
+B_1(n,d)
+0
+4
+B_2(n,d)
+-1
+0
+B_3(n,d)
+-2,-1
+0
+X
+1
+n
+1/d
+A(n,d) = 0
+d \le 3
+n \le 3
+ \eqalign{A(n,d)& = P(X=0) A(n,d-1) + \sum_{x=1}^{n-3} P(X=x) B_1(n-x,d-1)\cr                   & = (1-1/d)^n A(n,d-1) + \sum_{x=1}^{n-3} {n \choose x} (1/d)^x (1-1/d)^{n-x} B_1(n-x,d-1)\cr             B_1(n,d) &= P(X=0) A(n,d-1) + \sum_{x=1}^{n-2} P(X=x) B_2(n-x,d-1)\cr &= (1-1/d)^n A(n,d-1) + \sum_{x=1}^{n-2} {n \choose x} (1/d)^x (1-1/d)^{n-x} B_2(n-x,d-1)\cr             B_2(n,d) &= P(X=0) A(n,d-1) + \sum_{x=1}^{n-1} P(X=x) B_3(n-x,d-1)\cr &= (1-1/d)^n A(n,d-1) + \sum_{x=1}^{n-1} {n \choose x} (1/d)^x (1-1/d)^{n-x} B_3(n-x,d-1)\cr             B_3(n,d) &= P(X=0) A(n,d-1) + P(X \ge 1)\cr &= (1-1/d)^n A(n,d-1) + 1-(1 - 1/d)^n}
+A(n,365)
+n
+1
+200
+n
+A(n,365) \ge .5
+92
+{365\choose 4}

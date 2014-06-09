@@ -1,0 +1,12 @@
+\lim_{x\to\infty} \sqrt{x} \int_0^\frac{\pi}{4} e^{x(\cos t-1)}\cos t\ dt
+\int_0^{\infty} dt \, e^{-x t^2/2} = \sqrt{\frac{\pi}{2 x}}
+1
+\sqrt{\pi/2}
+\_
+f(\text{x$\_$})\text{:=}\text{NIntegrate}\left[\cos (t) \exp (-x (1-\cos (t))),\left\{t,0,\frac{\pi }{4}\right\}\right]
+\text{Plot}\left[\left\{\log _{10}\left(f\left(10^x\right)\right),\log _{10}\left(\sqrt{\frac{\pi }{2}}\right)-\frac{x}{2}\right\},\{x,0,4\}\right]
+-3/2
+\text{Plot}\left[\log _{10}\left(\left| f\left(10^x\right)-\sqrt{\frac{\pi }{2\ 10^x}}\right| \right),\{x,2,4\}\right]
+= pi/2
+pi/4
+x

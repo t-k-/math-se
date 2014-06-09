@@ -1,0 +1,88 @@
+P\left(\left.X\right|\mathcal{A}\right)
+P\left(\left.Y\right|\mathcal{A}\right)
+B
+P\left(\left.X\in B\right|\mathcal{A}\right)=P\left(\left.Y\in B\right|\mathcal{A}\right)\space\mathrm{a.s.}
+E\left(\left.f(X)\right|\mathcal{A}\right)=E\left(\left.f(Y)\right|\mathcal{A}\right)\space\mathrm{a.s.}
+f
+E\left(\left.f(X)\right|\mathcal{A}\right)\left(\omega\right)=\int f dP\left(\left.\cdot\right|\omega\right)\space\mathrm{a.s.}
+E\left(\left.f(Y)\right|\mathcal{A}\right)
+\omega
+P\left(\left.X\in\cdot\right|\mathcal{A}\right)\left(\omega\right)=P\left(\left.Y\in\cdot\right|\mathcal{A}\right)\left(\omega\right)
+S:=\left(\Omega,\mathcal{F},P\right)
+\mathcal{A}
+\sigma
+\mathcal{F}
+S':=\left(\Omega,\mathcal{A},P\right)
+X_1,X_2:\Omega\rightarrow\mathbb{R}
+\mathcal{F}\space/\space\mathfrak{B}
+\mathfrak{B}
+\omega\in\Omega
+\left(\mathbb{R},\mathfrak{B}\right)
+\mu_\omega^{(i)}:\mathfrak{B}\rightarrow\mathbb{R},\space\space\mu_\omega^{(i)}(D):=\kappa_i\left(D,\omega\right)
+D\in\mathfrak{B}
+P\left(\left.X_i\in D\right|\mathcal{A}\right)
+\phi_D^{(i)}:\Omega\rightarrow\left[0,1\right]\space\space\phi_D^{(i)}\left(\omega\right):=\kappa_i\left(D,\omega\right)
+D\in\mathfrak{B}
+\phi_D^{(1)}=\phi_D^{(2)}\space\space S'\mathrm{-a.s.}
+\mathfrak{B}\space/\space\mathfrak{B}
+f:\mathbb{R}\rightarrow\mathbb{R}
+f\circ X_1, f\circ X_2\in\mathcal{L}_1(S)
+m_i:\Omega\rightarrow\mathbb{R}
+i\in\left\{1,2\right\}
+E_{S'}\left(\left.f\circ X_i\right|\mathcal{A}\right)
+m_1=m_2\space\space S'\mathrm{-a.s.}
+f:\mathbb{R}\rightarrow\mathbb{R}
+f\circ X_1, f\circ X_2\in\mathcal{L}_1(S)
+m_i:\Omega\rightarrow\mathbb{R}
+i\in\left\{1,2\right\}
+E_{S'}\left(\left.f\circ X_i\right|\mathcal{A}\right)
+f
+f
+f=\mathbb{1}_D
+D\in\mathfrak{B}
+f
+f=\sum_{j=1}^n c_j\mathbb{1}_{D_j}
+1\leq n\in\mathbb{N}
+0\leq c_j\in\mathbb{R}
+D_j\in\mathfrak{B}
+j\in\left\{1,\dots,n\right\}
+f
+\left(f\circ X_i\right)^\pm\in\mathcal{L}_1(S)
+i\in\left\{1,2\right\}
+m_1=m_2
+S'
+f
+f
+f=\mathbb{1}_D
+D\in\mathfrak{B}
+m_i
+E_{S'}\left(\left.\mathbb{1}_D\circ X_i\right|\mathcal{A}\right)=P\left(\left.X_i\in D\right|\mathcal{A}\right)
+m_i=\phi_D^{(i)}
+S'
+\phi_D^{(1)}=\phi_D^{(2)}
+S'
+f=\sum_{j=1}^n c_j\mathbb{1}_{D_j}
+1\leq n\in\mathbb{N}
+0\leq c_j\in\mathbb{R}
+D_j\in\mathfrak{B}
+j\in\left\{1,\dots,n\right\}
+f\circ X_i=\sum_{j=1}^n c_j\left(\mathbb{1}_{D_j}\circ X_i\right)
+i\in\left\{1,2\right\}
+E_{S'}\left(\left.f\circ X_1\right|\mathcal{A}\right)=\sum_{j=1}^n c_j E_{S'}\left(\left.\mathbb{1}_{D_j}\circ X_1\right|\mathcal{A}\right)=\sum_{j=1}^n c_j E_{S'}\left(\left.\mathbb{1}_{D_j}\circ X_2\right|\mathcal{A}\right)=E_{S'}\left(\left.f\circ X_2\right|\mathcal{A}\right)\space\space S'\mathrm{-a.s.}
+f
+f
+f_k\uparrow f
+\left(f_k\right)_{k=1}^\infty
+k\in\mathbb{N}
+f_k
+f_k\circ X_i\uparrow f\circ X_i
+i\in\left\{1,2\right\}
+\begin{array} {lcl} E_{S'}\left(\left.f\circ X_1\right|\mathcal{A}\right) & = & E_{S'}\left(\left.\lim_{k\rightarrow\infty}\left(f_k\circ X_1\right)\right|\mathcal{A}\right)=\lim_{k\rightarrow\infty}E_{S'}\left(\left.f_k\circ X_1\right|\mathcal{A}\right) = \\ & = & \lim_{k\rightarrow\infty}E_{S'}\left(\left.f_k\circ X_2\right|\mathcal{A}\right)=E_{S'}\left(\left.\lim_{k\rightarrow\infty}\left(f_k\circ X_2\right)\right|\mathcal{A}\right) = E_{S'}\left(\left.f\circ X_2\right|\mathcal{A}\right)\space\space S'\mathrm{-a.s.} \end{array}
+\left(f\circ X_i\right)^\pm=f^{\pm}\circ X_i
+i\in\left\{1,2\right\}
+\begin{array} && E_{S'}\left(\left.f\circ X_1\right|\mathcal{A}\right) \\ & = & E_{S'}\left(\left.\left(f\circ X_1\right)^{+}-\left(f\circ X_1\right)^{-}\right|\mathcal{A}\right)=E_{S'}\left(\left.\left(f\circ X_1\right)^{+}\right|\mathcal{A}\right)-E_{S'}\left(\left.\left(f\circ X_1\right)^{-}\right|\mathcal{A}\right) \\ & = & E_{S'}\left(\left.f^{+}\circ X_1\right|\mathcal{A}\right)-E_{S'}\left(\left.f^{-}\circ X_1\right|\mathcal{A}\right)=E_{S'}\left(\left.f^{+}\circ X_2\right|\mathcal{A}\right)-E_{S'}\left(\left.f^{-}\circ X_2\right|\mathcal{A}\right) \\ & = & E_{S'}\left(\left.\left(f\circ X_2\right)^{+}\right|\mathcal{A}\right)-E_{S'}\left(\left.\left(f\circ X_2\right)^{-}\right|\mathcal{A}\right) = E_{S'}\left(\left.\left(f\circ X_2\right)^{+}-\left(f\circ X_2\right)^{-}\right|\mathcal{A}\right) \\ & = & E_{S'}\left(\left.f\circ X_2\right|\mathcal{A}\right)\space\space S'\mathrm{-a.s.} \end{array}
+\kappa_1
+\kappa_2
+1
+\kappa_i
+i\in\left\{1,2\right\}

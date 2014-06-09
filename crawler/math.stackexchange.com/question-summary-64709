@@ -1,0 +1,21 @@
+u_k
+v_k
+[-1,1]
+[3,5]
+ f(x) = P(\varphi)(x) = \int_{-1}^1 \log(x-t)\varphi(t) dt,\quad x \in [3,5] 
+u_k:[3,5]\rightarrow \mathbf{R}, v_k:[-1,1]\rightarrow\mathbf{R} 
+k
+\lambda_k
+k
+ f(x) = P(\varphi)(x) = \sum_{k=1}^\infty \lambda_k(v_k,\varphi)u_k(x) 
+P: L^2([-1,1]) \to L^2([3,5])
+P^*
+\phi\in L^2([-1,1])
+f\in L^2([3,5])
+ \int_3^5 P(\phi)(x)f(x) dx = \int_{-1}^1 \phi(t) P^*(f)(t)dx. 
+ P^*(f)(t) = \int_3^5 \log(x-t)f(x) dx. 
+P^*P:L^2([-1,1]) \to L^2([-1,1])
+P^*P
+\sigma_k
+v_k
+\lambda_k = \sqrt\sigma_k

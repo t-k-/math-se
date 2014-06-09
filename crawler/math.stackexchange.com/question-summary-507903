@@ -1,0 +1,96 @@
+m,n
+S_{m,n}
+\mathbf x=(x_1,x_2,\cdots,x_m)
+\sum_{j=1}^m\frac{1}{x_j}=\frac1n.
+k_{m,n}=\max_{\mathbf x\in S_{m,n}}\left(\max_{1\le j\le m}x_j\right)
+k_{m,n}=k_{m-1,n}\left(k_{m-1,n}+1\right).
+n
+\sum_{i=1}^n\frac{1}{a_i}=1
+2\le a_1\lt a_2\lt\cdots\lt a_n\le 99
+S_{m,n}.
+S_{m,n}
+m=1
+S_{m-1,n}^{\gt}
+x_m
+(\star\star)
+\mathbf x
+x_m
+(\star\star)
+\mathbf x^{\prime}=\left((x_m-n)x_1,(x_m-n)x_2,\cdots,(x_m-n)x_{m-1}\right)
+(\star)
+x_m
+(\star\star)
+|S_{m,n}^{\gt}|
+\sum_{j=1}^{m-1}\frac1{x^j}=\frac1n-\frac1{x_m}=\frac{x_m-n}{nx_m},
+\sum_{j=1}^{m-1}=\frac{1}{(x_m-n)x_j}=\frac{1}{nx_m}\ \ \ \ \cdots(\star).
+n+1\le x_m\le mn\ \ \ \ \ \cdots(\star\star).
+k_{3,n}
+n
+k_{2,n}=n(n+1)
+k_{3,n}
+\mathbf x=(x_1,x_2,x_3)
+(rx_1,rx_2)\in S_{2,n(n+r)}^{\gt}
+(\star)
+r=x_3-n
+1\le r\le 2n
+(\star\star).
+k_{m,n}
+\left(n(n+1)(n(n+1)+1),n(n+1)+1,n+1\right)\in S_{3,n}^{\gt}.
+k_{3,n}\ge n(n+1)(n(n+1)+1).
+rx_1\le k_{2,n(n+r)}=n(n+r)(n(n+r)+1).
+x_1\le \frac 1r n(n+r)(n(n+r)+1).
+n(n+1)(n(n+1)+1)-\frac 1r n(n+r)(n(n+r)+1)=\frac{1}{r}n^2(n^2-n+1)(r-1)\ge \frac 1r n^2(n^2-2n+1)(r-1)\ge 0,
+x_1\le n(n+1)(n(n+1)+1).
+n\in\mathbb N
+e_{1,n}=n+1,\ \  e_{m,n}=ne_{1,n}e_{2,n}\cdots e_{m-1,n}+1\ \ (m=2,3,4,\cdots).
+\begin{align}\sum_{i=1}^mx_iy_i & = x_1y_1+\sum_{i=2}^mx_i(S_i-S_{i-1}) \\  & = x_1y_1+\sum_{i=2}^mx_iS_i-\sum_{i=1}^{m-1}x_{i+1}S_i \\   & = x_1y_1+\sum_{i=2}^{m-1}(x_i-x_{i+1})S_i+x_mS_m-x_2S_1 \\  & = (x_1-x_2)y_1+\sum_{i=2}^{m-1}(x_i-x_{i+1})(y_1+\cdots+y_i)+x_m(y_1+\cdots+y_m). \end{align}
+m=1
+x_1\gt n
+x_1\ge n+1=e_{1,n}
+(\star).
+(\star)
+m-1
+m
+(x_1,x_2,\cdots,x_m)
+(\star)
+(x_1,x_2,\cdots,x_m)
+\begin{align}\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac1{e_{m,n}}\lt \frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_m}\lt \frac1n\qquad(\star\star)\end{align}
+0\lt\frac1n-\left(\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_m}\right)\lt\frac1n-\left(\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac1{e_{m,n}}\right)=\frac1{e_{m+1,n}-1}.
+M\in\mathbb N.
+\{e_{m,n}\}
+(1)
+\frac1n-\left(\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_m}\right)\ (\gt 0)
+\frac{M}{nx_1x_2\cdots x_m}
+\frac{1}{nx_1x_2\cdots x_m}\le\frac{M}{nx_1x_2\cdots x_m}\lt\frac{1}{ne_{1,n}e_{2,n}\cdots e_{m,n}}.
+\begin{align}x_1x_2\cdots x_m\gt e_{1,n}e_{2,n}\cdots e_{m,n}\qquad (1)\end{align}
+P=\frac{x_1}{e_{1,n}}+\frac{x_2}{e_{2,n}}+\cdots+\frac{x_m}{e_{m,n}},
+\begin{align} P\ge m\sqrt[m]{\frac{x_1x_2\cdots x_m}{e_{1,n}e_{2,n}\cdots e_{m,n}}}\gt m\qquad (2)\end{align}
+\begin{align} P= & (x_1-x_2)\frac1{e_{1,n}}+(x_2-x_3)\left(\frac1{e_{1,n}}+\frac1{e_{2,n}}\right)+\cdots \\ & +(x_{m-1}-x_m)\left(\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac{1}{e_{m-1,n}}\right) \\ & +x_{m}\left(\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac1{e_{m,n}}\right) \end{align}
+x_i-x_{i+1}\le0\ (i=1,2,\cdots,m-1)
+(\star\star)
+P\lt 1+1+\cdots+1=m
+(2)
+(x_1,x_2,\cdots,x_m)
+(\star\star)
+(\star)
+m
+x_1=e_{1,n}, x_2=e_{2,n},\cdots, x_m=e_{m,n}.
+\frac1{x_1}\le\frac{1}{e_{1,n}},
+\frac1{x_1}+\frac{1}{x_2}\le\frac{1}{e_{1,n}}+\frac1{e_{2,n}},
+\vdots
+\frac1{x_1}+\cdots+\frac{1}{x_{m-1}}\le\frac1{e_{1,n}}+\cdots+\frac1{e_{m-1,n}},
+\begin{align} P\le & (x_1-x_2)\frac1{x_1}+(x_2-x_3)\left(\frac1{x_1}+\frac1{x_2}\right)+\cdots \\ & +(x_{m-1}-x_{m})\left(\frac1{x_1}+\cdots+\frac1{x_{m-1}}\right) \\ & +x_m\left(\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac1{e_{m,n}}\right).\end{align}
+\begin{align}P\lt & (x_1-x_2)\frac1{x_1}+(x_2-x_3)\left(\frac1{x_1}+\frac1{x_2}\right)+\cdots \\ & +(x_{m-1}-x_{m})\left(\frac1{x_1}+\cdots+\frac1{x_{m-1}}\right)\\ & +x_m\left(\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_m}\right),\end{align}
+(3)
+m
+m=1
+x_1=n=e_{1,n}-1.
+m\ge 2
+x_1\le x_2\le \cdots\le x_m
+x_m\le e_{m,n}-1
+(3)
+\sum_{i=1}^{m-1}\frac1{x_i}\lt\frac1n,
+\frac1{x_1}+\frac1{x_2}+\cdots+\frac1{x_{m-1}}\le\frac1{e_{1,n}}+\frac1{e_{2,n}}+\cdots+\frac1{e_{m-1,n}}.
+\frac1{x_m}=\frac1n-\sum_{i=1}^{m-1}\frac1{x_i}\ge\frac1n-\sum_{i=1}^{m-1}\frac1{e_{i,n}}=\frac1{e_{m,n}-1}.
+\max_{\mathbf x\in S_{m,n}}\left(\max_{1\le i\le m}x_i\right)\le e_{m,n}-1.
+(e_{1,n},e_{2,n},\cdots,e_{m-1,n},e_{m,n}-1)\in S_{m,0},

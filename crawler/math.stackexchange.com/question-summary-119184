@@ -1,0 +1,18 @@
+\displaystyle\int {1\over (1+kx^2)^{3/2}}dx
+\displaystyle x\over \sqrt{kx^2+1}.
+\int \dfrac{1}{(1+kx^2)^{3/2}}dx
+1+kx^2=t
+2kx\cdot dx = dt \text{. Also, } x = \sqrt{t-1\over k}
+2kx\cdot dx = dt
+dx = \frac{dt}{2kx} = \frac{\sqrt{k}dt}{2k\sqrt{t-1}}= \frac{dt}{2\sqrt{k}\sqrt{t-1}}
+\int \dfrac{1}{(1+kx^2)^{3/2}}dx=
+\int \dfrac{1}{2t^{1.5}\sqrt{k}\sqrt{t-1}}dt
+\dfrac{1}{2\sqrt{k}}\int \dfrac{1}{t^{1.5}.\sqrt{t-1}}dt=\dfrac{1}{2\sqrt{k}}\dfrac{2\sqrt{t-1}}{\sqrt{t}}=\dfrac{1}{\sqrt{k}}\dfrac{\sqrt{t-1}}{\sqrt{t}}
+=\dfrac{1}{\sqrt{k}}\dfrac{\sqrt{t-1}}{\sqrt{t}}
+=\dfrac{1}{\sqrt{k}}\dfrac{\sqrt{kx^2}}{\sqrt{1+kx^2}}
+=\dfrac{x}{\sqrt{1+kx^2}}
+ \begin{align*} \dfrac{1}{2\sqrt{k}}\int \dfrac{1}{t^{\frac{3}{2}} \sqrt{t-1}}dt &= \dfrac{1}{2\sqrt{k}}\int \dfrac{\sqrt{t}}{t^{2} \sqrt{t-1}}dt\\ &= \dfrac{1}{2\sqrt{k}}\int \dfrac{1}{t^{2} \sqrt{1-\frac{1}{t}}}dt \tag{A} \end{align*} 
+ \sqrt{1-\frac{1}{t}} = u
+ \frac{1}{2t^2 \sqrt{(1-\frac{1}{t})}} dt = du
+(A)
+ \frac{1}{2\sqrt{k}} \int 2 du = \frac{1}{2\sqrt{k}} 2u = \frac{u}{\sqrt{k}}  = \left(\sqrt{\frac{t-1}{tk}}\right) = \frac{x}{\sqrt{1+kx^2}}

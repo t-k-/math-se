@@ -1,0 +1,88 @@
+H(x)=
+D(x) = H(x) + H(x-1)
+x
+\mathbb N \to \mathbb R
+H
+D(x)=H(x)+H(x-1)
+H
+c (-1)^x
+c
+0=0+0
+0=(-1)^x+(-1)^{x+1}
+H
+D=0
+H
+D(x)=H(x)+H(x-1)
+H(x) = D(x) - H(x-1)
+H(0)
+H
+H(2) = D(2) - H(1) = D(2) - (D(1) - H(0)) = D(2) - D(1) + H(0)
+H(x) = \sum \limits_{i=1}^{x} (-1)^{x-i} D(i) + (-1)^x H(0)
+H(x) = \sum \limits_{i=1}^{x} (-1)^{x-i} D(i) + (-1)^x c
+c
+c
+ D(x) - D(x - 1) +  \cdots = H(x) + H(x - 1) - (H(x - 1) + H(x - 2)) +  \cdots 
+ \sum_{n=0}^\infty (-1)^nD(x-n) = \sum_{n=0}^\infty (-1)^n(H(x-n) + H(x - n - 1)) = H(x) 
+D(x)=x^2
+(7)
+H(x)=\tfrac{1}{2}x^2+\tfrac{1}{2}x
+\left(\tfrac{1}{2}x^2+\tfrac{1}{2}x\right)+\left(\tfrac{1}{2}(x-1)^2+\tfrac{1}{2}(x-1)\right)=x^2
+x
+H(x)
+D(x)
+x
+-\infty
+((-1)^x D(0)- (-1)^x D(1)+\dots + D(x))+ ((-1)^{x-1}D(0) - (-1)^{x-1}D(1) + \dots + D(x-1)) = D(x) 
+H(x)=0
+D
+D(0)
+D
+x
+d(x) = h(x) + h(x-1)
+D(x) = \sum \limits_{n=0}^{\infty} d(n) x^n/n!
+H(x) = \sum \limits_{n=0}^{\infty} h(n) x^n/n!
+H'(x) = \sum \limits_{n=1}^{\infty} h(n) x^{n-1}/(n-1)!   = \sum \limits_{n=0}^{\infty} h(n+1) x^n/n!
+H(x) + H'(x) = \sum \limits_{n=0}^{\infty} (h(n)+h(n+1)) x^n/n!  = \sum \limits_{n=0}^{\infty} d(n+1) x^n/n!
+D'(x) = \sum \limits_{n=0}^{\infty} d(n+1) x^n/n!
+H(x) + H'(x) = D'(x)
+e^x
+e^x D'(x) = e^x(H(x) + H'(x))  =(e^x H(x))'
+e^x H(x) = \int e^x D'(x) dx 
+ H(x) = e^{-x} \int e^x D'(x) dx 
+H
+\int e^x D(x) dx
+H(x)=x
+D(x)=2x-1
+D(x)=2x-1
+x=0,1,2,\dots
+H(x)
+D:\mathbb{R}\rightarrow\mathbb{R}
+H:\mathbb{R}\rightarrow\mathbb{R}
+D(x)=H(x)+H(x-1)
+D(x)=\sum_{i=0}^na_ix^i
+a_n\neq0
+H(x)
+n
+H(x)=\sum_{i=0}^nb_ix^i
+H(x)+H(x-1)=\sum_{i=0}^n(b_ix^i+b_i(x-1)^i)
+=\sum_{i=0}^n\left(b_ix^i+b_i\left(\sum_{j=0}^i{i\choose j}x^{i-j}(-1)^j\right)\right)
+x^m
+i
+j
+0\leq j\leq i\leq n
+x^{i-j}
+i-j=m
+(i,j)\in{(m,0),(m+1,1),\dots,(m+(n-m),n-m)}
+l=0,1,\dots,n-m
+x^m
+a_m=b_m+\sum_{l=0}^{m-n}b_{m+l}{m+l\choose l}(-1)^{m+1}
+m=0,1,\dots,n
+a_m=\sum_{k=m}^n\alpha^m_{k}b_k
+(*)_m
+a_n=\alpha^m_nb_n
+b_n
+b_{n-1},b_{n-2},\dots,b_0
+(*)_m
+b_k
+k>m
+H

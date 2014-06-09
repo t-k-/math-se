@@ -1,0 +1,12 @@
+\delta(x^2-a^2)=\frac{1}{2|a|}[\delta(x-a)+\delta(x+a)]
+\int_{-\infty}^{\infty}f(x)\delta(x^2-a^2)\, dx
+u^2=x^2-a^2
+x=\sqrt{u^2-a^2}
+u
+x=\sqrt{u}
+\mathrm{d}x = \frac{\mathrm{d}u}{2\sqrt{u}}
+x=-\sqrt{u}
+\mathrm{d}x = -\frac{\mathrm{d}u}{2\sqrt{u}}
+\int_0^\infty f(x)\delta(x^2-a^2)\,\mathrm{d}x = \int_0^\infty \frac{f(\sqrt{u})}{2\sqrt{u}}\delta(u-a^2)\,\mathrm{d}u=\frac{f(|a|)}{2|a|}.
+\int_{-\infty}^0 f(x)\delta(x^2-a^2)\,\mathrm{d}x = \int^{\infty}_0 \frac{f(-\sqrt{u})}{2\sqrt{u}}\delta(u-a^2)\,\mathrm{d}u=\frac{f(-|a|)}{2|a|}.
+\int_{-\infty}^{\infty} f(x)\delta(x^2-a^2)\,\mathrm{d}x = \frac{1}{2|a|}\left(f(|a|)+f(-|a|)\right) = \frac{1}{2|a|}\left(f(a)+f(-a)\right).

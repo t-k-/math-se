@@ -1,0 +1,23 @@
+\sigma_\alpha(n)
+\sigma_\alpha=N^\alpha \ast u
+\varphi(d^\alpha)
+\sigma_1(n)=\sum_{d \mid n} \varphi(d)\sigma_0 \left( \frac{n}{d} \right).
+\sigma_1=N \ast u = (\varphi \ast u) \ast u = \varphi \ast (u \ast u) = \varphi \ast \sigma_0,
+\sigma_\alpha(n)=\sum_{d \mid n} \varphi(d^\alpha)\sigma_{\alpha-1} \left( \frac{n}{d} \right),
+\rm\sigma_\alpha=(\color{Blue}{Id}\cdot Id^{\alpha-1})*1 \tag{1}
+\rm= (\color{Blue}{(\varphi*1)}\cdot\color{Red}{Id^{\alpha-1}})*1 \tag{2}
+\rm=(\color{Orange}(\color{Red}{Id^{\alpha-1}}\cdot\color{Blue}{\varphi}\color{Orange})*\color{Red}{Id^{\alpha-1}})*1 \tag{3}
+\rm =\color{Orange}(\color{Green}{Id^{\alpha-1}\cdot\varphi}\color{Orange})*(\color{Purple}{Id^{\alpha-1}*1}) \tag{4}
+\rm=(\color{Green}{\varphi\circ Id^\alpha})*\color{Purple}{\sigma_{\alpha-1}}. \tag{5}
+\sigma_x = 1*N^x.
+\zeta(s-x)\zeta(s)
+\phi(d^\alpha)=d^{\alpha-1}\phi(d)
+\sum_{d|n}\phi(d^\alpha)\sigma_{\alpha-1}\left(\frac{n}{d}\right)
+\frac{\zeta(s-1)}{\zeta(s)}
+\sigma_{x}(n)=\sum_{d|n} d^x,
+\left(\sum_{n=1}^\infty \frac{\phi(n)}{n^{s-\alpha+1}}\right)\left(\sum_{m=1}^\infty \frac{\sigma_{\alpha-1}}{n^s}\right)
+= \frac{\zeta(s-\alpha)}{\zeta(s-\alpha-1)}\cdot \zeta(s-\alpha-1)\zeta(s)=\zeta(s-\alpha)\zeta(s). 
+\sigma_a(n)
+J_k(n)
+J_{\alpha}=\mu*N^\alpha
+\sigma_{\alpha}=J_{\alpha}*\sigma_{0}

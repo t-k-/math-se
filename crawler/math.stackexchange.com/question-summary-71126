@@ -1,0 +1,19 @@
+f:\mathbb{R} \to \mathbb{R}
+\eqalign{   & M_0  = \sup \left|f(x)\right|  \cr                & M_1  = \sup \left|\frac{d}{dx} f(x) \right|  \cr                & M_2  = \sup \left|\frac{d^2}{dx^2} f(x) \right| \cr }
+M_1 ^2  \leqslant 4M_0 M_2
+x\in\mathbb R
+h>0
+f(x+2h)
+\xi\in(x,x+2h)
+|f'(x)|
+x
+|f'(x)|
+M_1
+M_2=0
+h\to\infty
+M_1=0
+h=\frac{M_1}{2M_2}
+ f(x+2h) = f(x)+f'(x)2h+\frac{f''(\xi)}{2!}(2h)^2 
+ f'(x)=\frac{1}{2h}\left[f(x+2h)-f(x)\right]-f''(\xi)h 
+ |f'(x)|\leq\frac{1}{2h}|f(x+2h)-f(x)|+|f''(\xi)|h\leq\frac{M_0}{h}+M_2h. 
+ 0\leq M_2h^2-M_1h+M_0=M_2\left(h-\frac{M_1}{2M_2}\right)^2+\frac{4M_2M_0-M_1^2}{4M_2}. 

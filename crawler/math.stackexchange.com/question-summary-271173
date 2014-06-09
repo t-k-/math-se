@@ -1,0 +1,35 @@
+F
+(*F)^{\mu\nu}:={1\over 2}\epsilon^{\mu\nu\rho\sigma}F_{\rho \sigma}
+**F=-F
+(**F)^{ab}={1\over 4} \epsilon^{ab\mu\nu}\epsilon_{\mu\nu\rho\sigma}F^{\rho\sigma}
+(**F)^{ab}={1\over 4} \epsilon^{ab\mu\nu}\epsilon_{\mu\nu}.^{\rho\sigma}F_{\rho\sigma}
+\def\a{\alpha} \def\b{\beta} \def\e{\epsilon} \def\d{\delta} \def\m{\mu} \def\n{\nu} \def\r{\rho} \def\s{\sigma}
+(*F)^{\m\n} = \frac{1}{2}\e^{\m\n\r\s} F_{\r\s}
+(*F)_{\m\n} = \frac{1}{2}\e_{\m\n\r\s} F^{\r\s}.
+\eta_{\m\n}
+(-1)^s = \textrm{sign}\,\det\eta
+d=4
+k=2
+(-1)^s = -1
+F
+\eta^{\m\n}\eta_{\n\r} = \d^\m_\r.
+\begin{eqnarray*} (**F)^{\m\n} &=& \frac{1}{4} \e^{\m\n\r\s}\e_{\r\s\a\b} F^{\a\b} \\ &=& \frac{1}{4} \e^{\r\s\m\n}\e_{\r\s\a\b} F^{\a\b} \end{eqnarray*}
+\e^{a_1\cdots a_k a_{k+1}\cdots a_d}\e_{a_1\cdots a_k b_{k+1}\cdots b_d} = (-1)^s k!(d-k)!\ \d^{[a_{k+1}}_{b_{k+1}}\cdots \d^{a_d]}_{b_d},
+\e^{\r\s\m\n}\e_{\r\s\a\b} = -4 \d_\a^{[\m} \d_\b^{\n]}.
+\begin{eqnarray*} (**F)^{\m\n} &=& -\d_\a^{[\m} \d_\b^{\n]} F^{\a\b} \\ &=& -\frac{1}{2}(\d_\a^\m \d_\b^\n - \d_\a^\n \d_\b^\m) F^{\a\b} \\ &=& - \frac{1}{2}(F^{\m\n} - F^{\n\m}) \\ &=& -F^{\m\n}, \end{eqnarray*}
+*
+-*
+F^{ab}
+F_{ab}
+\epsilon_{abcd} \epsilon^{abef}
+G^{cd} = \epsilon^{abcd} F_{ab}
+G = \star F
+F
+F = \frac{1}{2} F_{ab} \gamma^a \gamma^b \implies F_{ab} = F \cdot (\gamma_b \wedge \gamma_a)
+\epsilon
+\epsilon \equiv \frac{1}{4!} \epsilon^{abcd} \gamma_a \gamma_b \gamma_c \gamma_d = \gamma_0 \gamma_1 \gamma_2 \gamma_3 \implies \epsilon^{abcd} = \epsilon \cdot (\gamma^d \wedge \gamma^c \wedge \gamma^b \wedge \gamma^a)
+\begin{align*}G^{cd} = G \cdot (\gamma^d \gamma^c) &= \frac{1}{2} F \cdot (\gamma_b \wedge \gamma_a) \epsilon \cdot (\gamma^d \wedge \gamma^c \wedge \gamma^b \wedge \gamma^a) \\ &= \frac{1}{2} [F \cdot (\gamma_b \wedge \gamma_a) \gamma^b \wedge \gamma^a] \epsilon \cdot (\gamma^d \wedge \gamma^c) \\ &= (F \epsilon) \cdot (\gamma^d \wedge \gamma^c)\end{align*}
+G = F \epsilon
+\star G = G \epsilon = F \epsilon \epsilon = -F
+\gamma_a
+\begin{align*} \epsilon_{abcd} \epsilon^{abef} &= \epsilon (\gamma^d \wedge \gamma^c \wedge\gamma^b \wedge \gamma^a) \epsilon (\gamma_f \wedge \gamma_e \wedge \gamma_b \wedge \gamma_a) \\  &= (-2)(-1) (\gamma^d \gamma^c) \cdot ( \gamma_f \gamma_e) \\  &= 2(\eta^c_f \eta^d_e - \eta^c_e \eta^d_f ) \\  &= 4 \eta^{[c}_f \eta^{d]}_e \end{align*} 

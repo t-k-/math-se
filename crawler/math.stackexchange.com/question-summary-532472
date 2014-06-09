@@ -1,0 +1,26 @@
+t = 1, 2, \cdots, T
+\eta_1
+y_k
+k \le t
+\theta = (\phi, \sigma)
+(2)
+(1)
+(a)-(c)
+(1)
+y_1 \sim N\left(0, \frac{\sigma^2}{1-\phi^2}\right)
+y_2 \mid y_1 \sim N\left( \phi y_1, \sigma^2\right)
+y_3 \mid y_2, y_1 \equiv y_3 \mid y_2 \sim N\left(\phi y_2, \sigma^2\right)
+y_t \mid y_{t-1}, y_{t-2}, \cdots, y_1 \equiv y_t \mid y_{t-1} \sim N\left(\phi y_{t-1}, \sigma^2\right)
+\theta = \left(\phi, \sigma^2\right)
+(2)
+T
+(1-\phi^2)
+(W1)
+p(\theta) \propto \frac{1}{\sigma}
+\phi \mid \sigma, y_{1:T}
+b = \frac{B}{A}
+\sigma \mid y_{1:T}
+p(\phi \mid \sigma,  y_{1:T})
+p(\sigma \mid y_{1:T})
+p(y_2, y_3, \dots, y_T|y_1, \theta)
+ \begin{align*} p(y_1, y_2, y_3, \dots, y_T; \phi)&=p(y_1; \phi)\prod_{t=2}^T p(y_t|y_{t-1}; \phi)\tag{1}\\ p(y_2, y_3, \dots, y_T|y_1; \phi)&=\prod_{t=2}^T p(y_t|y_{t-1}; \phi)\tag{2} \end{align*} 

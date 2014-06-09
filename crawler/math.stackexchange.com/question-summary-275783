@@ -1,0 +1,16 @@
+H^1([0,1])
+W^{1,2}([0,1])
+   T\colon L^2([0,1])\to H^1([0,1]),\quad x\mapsto\int\limits_0^t x(s)\, ds. 
+   x\mapsto \int_t^1 x(s)\, ds + \overline{x'(t)}. 
+\langle Tf,g\rangle_{H^1}=\langle Tf,g\rangle_{L^2} + \langle (Tf)',g'\rangle_{L^2}
+=\int\limits_0^1 (Tf)(x)\overline{g(x)}\, dx+\int\limits_0^1 (Tf)'(x)\overline{g'(x)}\, dx
+=\int\limits_0^1\int\limits_0^x f(s)\, ds\overline{g(x)}\, dx+\int\limits_0^1 f(x)\cdot \overline{g'(x)}\, dx
+=\int\limits_0^1\int\limits_s^1 f(s)\overline{g(x)}\, dx\, ds+\int\limits_0^1 f(x)\overline{g'(x)}\, dx
+=\int\limits_0^1 f(s)\int\limits_s^1\overline{g(x)}\, dx\, ds+\int\limits_0^1 f(x)\overline{g'(x)}\, dx
+=\int\limits_0^1 \left(f(s)\int\limits_s^1\overline{g(x)}\, dx+f(s)\overline{g'(s)}\right)\, ds
+=\int\limits_0^1 f(s)\cdot \left(\int\limits_s^1\overline{g(x)}\, dx+\overline{g'(s)}\right)\, ds
+x\mapsto \int\limits_t^1 x(s)\, ds+x'(t)
+f
+g
+T^*f(x)=\int_x^1f(s)ds+f'(x)
+\langle f,Tg\rangle_{H^1}=\int_0^1f(t)\overline{\int_0^tg(s)ds}dt+\int_0^1f'(t)\overline{g(t)}dt.

@@ -1,0 +1,3 @@
+\frac{1}{\operatorname{B}(k,n-k+1)} = n \binom{n-1}{k-1}
+   \sum_{k=1}^n \frac{x^{k-1} (1-x)^{n-k}}{\operatorname{B}(k,n-k+1)} = n \sum_{k=1}^{n} \binom{n-1}{k-1} x^{k-1} (1-x)^{(n-1)-(k-1)} = n  
+    \mathbb{E}\left( \sum_{k=1}^{N_t} X_k \mathrm{e}^{t-T_k} \right) = \mathbb{E}\left(  \mathbb{E}\left( \sum_{k=1}^{N_t} X_k \mathrm{e}^{t-T_k} \Big| N_t \right) \right) = \mathbb{E}(X) \mathbb{E}\left( N_t \int_0^1 \mathrm{e}^{t-t x} \mathrm{d} x \right) = \mathbb{E}(X) \mathbb{E}\left( N_t \right) \frac{\exp(t)-1}{t} = \lambda \left( \exp(t)-1 \right)\mathbb{E}(X) 

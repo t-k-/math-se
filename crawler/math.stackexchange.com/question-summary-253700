@@ -1,0 +1,37 @@
+f(t) = \mathcal{L}^{-1} \{F(s)\} = \frac{1}{2 \pi i} \lim_{T\to\infty}\int_{ \gamma - i T}^{ \gamma + i T} e^{st} F(s)\,ds
+\hat{f}(s)
+C
+\frac{1}{i 2 \pi} \oint_C ds \, \hat{f}(s) \, e^{s t}
+C
+C
+t
+t>0
+t<0
+T
+\infty
+s = R e^{i \phi}
+i T\int_{\pi/2}^{3 \pi/2} d\phi \, e^{i \phi} \, \hat{f}(T e^{i \phi}) e^{t T \cos{\phi}} e^{i t T \sin{\phi}}
+\cos{\phi} < 0
+t > 0
+\lim_{T \to \infty} T \hat{f}(T) = 0
+f(t)
+t<0
+\gamma
+\gamma
+\Re{z}=\gamma
+\hat{f}(s)
+s
+\frac{1}{i 2 \pi} \int_{\gamma-i \infty}^{\gamma+I \infty} ds \, \hat{f}(s) \, e^{s t} = \sum_k \text{Res}_{s=s_k} [\hat{f}(s) \, e^{s t}]
+x'' + 4 x= 1
+x(0) = x'(0) = 0
+\hat{x}(s) = \frac{1}{s (s^2+4)}
+x(t)
+\hat{x}(s) e^{s t}
+s=0
+s=2 i
+s=-2 i
+s=0
+\lim_{s \to 0} s \frac{e^{s t}}{s (s^2+4)} = \frac14
+\lim_{s \to 2 i} (s-2 i) \frac{e^{s t}}{s (s^2+4)} = \frac{e^{i 2 t}}{-8}
+\lim_{s \to -2 i} (s+2 i) \frac{e^{s t}}{s (s^2+4)} = \frac{e^{-i 2 t}}{-8}
+x(t) = \frac{1-\cos{2 t}}{4} = \frac12 \sin^2{t}

@@ -1,0 +1,20 @@
+ f(x) 
+ [0,1] 
+ x \in (0, 1] 
+ f(x) 
+\displaystyle |\sqrt{n}\int_0^1 \frac{f(x)}{1+nx^2}\,dx-\frac{\pi}{2}{f(0)}|= |\sqrt{n}\int_0^1 \frac{f(x)-\frac{\pi}{2\arctan(\sqrt{n})}f(0)}{1+nx^2}\,dx|\le|\sqrt{n}\int_0^\delta \frac{f(x)-\frac{\pi}{2\arctan(\sqrt{n})}f(0)}{1+nx^2}\,dx|+|\sqrt{n}\int_\delta^1 \frac{f(x)-\frac{\pi}{2\arctan(\sqrt{n})}f(0)}{1+nx^2}\,dx|\,.
+\delta >0
+\displaystyle |\sqrt{n}\int_0^\delta \frac{f(x)-\frac{\pi}{2\arctan(\sqrt{n})}f(0)}{1+nx^2}\,dx|\le\sqrt{n}M(\delta,n)\int_0^\delta \frac{1}{1+nx^2}\,dx=M(\delta,n)\arctan(\sqrt{n}\delta)<\epsilon
+\epsilon>0
+\delta, n
+c,x,x^2,\ldots
+\varepsilon
+\varepsilon>0
+\|p-f\|_\infty<\frac{\varepsilon}{3}
+n
+n^4
+\lim_{n\rightarrow\infty}\sqrt n\int_0^1{f(x)\over1+nx^2}dx = \lim_{n\rightarrow\infty}n^2\int_0^1{f(x)\over1+n^4x^2}dx=\lim_{n\rightarrow\infty}\int_0^{n^2}{f(u/n^2)\over1+u^2}du
+\int_0^{n^2}{f(u/n^2)\over1+u^2}du = \int_0^{n^2}{f(0)\over1+u^2}du + \int_0^n{f(u/n^2)-f(0)\over1+u^2}du+\int_n^{n^2}{f(u/n^2)-f(0)\over1+u^2}du
+(\pi/2)f(0)
+0
+0

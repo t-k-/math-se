@@ -1,0 +1,19 @@
+\Omega
+\mathbb{C}
+z_0 \in \Omega
+f
+\Omega
+z=z_0+re^{i\theta}
+r
+f(z_0) \neq 0
+f'(z_0) \neq 0
+|f(z)| = |f(z_0)|\big(1+\lambda r \cos(\theta+\phi)+O(r^2)\big)
+\displaystyle \frac{f'(z_0)}{f(z_0)}=\lambda e^{i\phi}, \lambda > 0.
+f(z)=f(z_0)+f'(z_0)(z-z_0)+O((z-z_0)^2) = 
+  f(z_0)+f'(z_0)(re^{i\theta})+O(r^2) =
+|f(z_0)|\big | 1+\lambda r e^{i(\theta+\phi)} + O(r^2) \big | =
+|f(z_0)|\big | 1+\lambda r (\cos(\theta+\phi)+i\sin(\theta + \phi)) + O(r^2) \big |
+\psi = \theta + \phi
+\begin{align} \lvert 1 + \lambda re^{i\psi}\rvert^2 &= \lvert (1+\lambda r\cos\psi) + i\lambda r\sin\psi\rvert^2\\ &= (1+\lambda r\cos\psi)^2 + \lambda^2 r^2\sin^2\psi\\ &= 1 + 2\lambda r\cos\psi + \lambda^2r^2. \end{align}
+\sqrt{1+x} = 1 + \frac{x}{2} + O(x^2)
+\lvert 1 +\lambda re^{i\psi}\rvert = 1 + \lambda r\cos\psi + \frac12\lambda^2r^2 + O(\lambda^2r^2) = 1 + \lambda r\cos\psi + O(r^2)

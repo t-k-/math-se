@@ -1,0 +1,38 @@
+ AND \to \lambda{}pq.pq\boldsymbol{F} \to \lambda{}p.\lambda{}q.pq(\lambda{}x.\lambda{}y.y) 
+ OR \to \lambda{}p.\lambda{}q.pTq \to \lambda{}p.\lambda{}q.p(\lambda{}x.\lambda{}y.x)q 
+ NOT \to \lambda{}p.pFT \to \lambda{}p.p(\lambda{}x.\lambda{}y.y)(\lambda{}x.\lambda{}y.x) 
+AND\ (AND\ b\ c)\ d
+AND\ b\ (AND\ c\ d)
+\beta\eta
+ AND\ (AND\ b\ c)\ d \to (bcF)dF
+ AND\ b\ (AND\ c\ d) \to b(cdF)F
+ NOT\ (NOT\ b)\ and\ b
+ AND\ (NOT\ b)\ (NOT\ c)\ and\ NOT\ (AND\ b\ c)
+NOT\ (NOT\ b)
+b
+ AND \to \lambda{}pqxy.p(qxy)y 
+ OR \to \lambda{}pqxy.px(qxy) 
+ NOT \to \lambda{}pxy.pyx 
+       (\lambda{}pxy.pyx)((\lambda{}pxy.pyx)b) \to  \lambda{}xy.((\lambda{}pxy.pyx)b)yx \to  \lambda{}xy.(\lambda{}xy.byx)yx \to  \lambda{}xy.(\lambda{}u.buy)x \to  \lambda{}xy.bxy \to_\eta  \lambda{}x.bx \to_\eta  b 
+\beta\eta
+b
+c
+d
+b=\lambda pqrsx.x
+\beta\eta
+(bcF)dF \mathrel{\to^*_\beta} \lambda x.x
+b(cdF)F \mathrel{\rightarrow^*_\beta} \lambda rsx.x
+\beta\eta
+\beta\eta
+\alpha
+x
+y
+M
+N
+\text{AND}
+M
+N
+M \equiv F
+N \equiv \Omega
+\text{AND}\; M\; N \rightarrow F
+\text{AND}\; N\; M

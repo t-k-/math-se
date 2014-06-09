@@ -1,0 +1,24 @@
+f(t)
+\frac{d}{dx}
+\int
+\int
+\int
+f(t)= \int_{1}^\infty \frac{\arctan (tx)}{x^2\sqrt{x^2-1}}dx
+ -\frac{\pi}{2} \, \left( -1-t+\sqrt {1+{t}^{2}} \right) . 
+t
+x^2-1 = u^2
+x\, dx = u\, du
+R
+C
+f(0) = 0
+C = \frac{\pi}{2}
+t<0,
+ f'(t) = \int_1^\infty \frac{x}{1+t^2x^2} \frac{1}{x^2\sqrt{x^2-1}} dx.
+ f'(t) = \int_0^\infty \frac{u}{1+t^2(u^2+1)} \frac{1}{(u^2+1)\sqrt{u^2}} du = \int_0^\infty \frac{1}{1+t^2(u^2+1)} \frac{1}{u^2+1} du.
+ g(u) = \frac{1}{2} \frac{1}{1+t^2(u^2+1)} \frac{1}{u^2+1} \quad \text{we seek to evaluate} \quad \int_{-\infty}^\infty g(u) du.
+ 2 \pi i  \left(\operatorname{Res}_{u=i} g(u) +  \operatorname{Res}_{u=\sqrt{-\frac{1}{t^2}-1}} g(u)  \right).
+ 2\pi i \left(- \frac{1}{4} i - \frac{1}{4} \frac{1}{\sqrt{-\frac{1}{t^2}-1}}\right) = \frac{\pi}{2} - i \frac{\pi}{2}\frac{1}{\sqrt{-\frac{1}{t^2}-1}} = \frac{\pi}{2} - \frac{\pi}{2}\frac{t}{\sqrt{t^2+1}} \quad( t\geqslant 0)
+ f(t) = C + \frac{\pi}{2} t - \frac{\pi}{2} \sqrt{t^2+1}.
+ 0 = C - \frac{\pi}{2} 
+ f(t) = \frac{\pi}{2} ( 1 + t - \sqrt{t^2+1} ).
+ f(t)= \frac{\pi}{2}(-1 + t +\sqrt{t^2+1})

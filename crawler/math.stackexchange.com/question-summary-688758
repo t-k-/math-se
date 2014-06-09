@@ -1,0 +1,28 @@
+S:M_3(\Bbb R)\to M_3(\Bbb R)\;,\;\;S(A)=\frac{3A+A^t}2
+\;\langle A,B\rangle:=tr.(AB^t)\;
+\;S\;
+\;S\;
+E_{12}=(e_{ij})\in M_3(\Bbb R)\;,\;\;e_{ij}=\begin{cases}1&,\;\;(ij)= (12)\\0&,\;\;(ij)\neq(12)\end{cases}
+S(E_{12})=\frac12\left(3E_{12}+E_{12}^t\right)=\begin{pmatrix}0&\frac32&0\\\frac12&0&0\\0&0&0\end{pmatrix}\implies
+||S(E_{12})||^2=tr.(S(E_{12})(S(E_{12}))^t)=tr.\left(\begin{pmatrix}0&\frac32&0\\\frac12&0&0\\0&0&0\end{pmatrix}\begin{pmatrix}0&\frac12&0\\\frac32&0&0\\0&0&0\end{pmatrix}\right)=
+=tr.\begin{pmatrix}\frac94&0&0\\0&\frac14&0\\0&0&0\end{pmatrix}=\frac52
+||E_{12}||=tr.\begin{pmatrix}1&0&0\\0&1&0\\0&0&0\end{pmatrix}=2
+\;S^2\in \text{Span}\,\{I,S\}\;
+S^2(A)=\frac12S(3A+A^t)=\frac12\frac12(3(3A+A^t)+(3A+A^t)^t)=\frac14(10A+6A^t)=
+=\frac52A+\frac32A^t=3\left[\frac12(3A+A^t)\right]-2A=3S(A)-2I(A)
+S^2-3S+2I=0\implies x^2-3x+2=(x-2)(x-1)=\text{the minimal polynomial of}\;\;S
+A
+1
+1
+\alpha_n
+A
+2
+2
+\beta_n
+S(A)=A\iff A=-A^t\iff A\in\mathcal{AS}_n(\Bbb R) 
+\dim \mathcal{AS}_n(\Bbb R)=\frac{n(n-1)}{2}:=\alpha_n
+S(A)=2A\iff A\in\mathcal{S}_n(\Bbb R)
+\dim \mathcal{S}_n(\Bbb R)=\frac{n(n+1)}{2}:=\beta_n
+\chi_S(x)=(x-1)^{\alpha_n}(x-2)^{\beta_n}
+2
+1

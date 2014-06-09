@@ -1,0 +1,20 @@
+\int_0^\infty \frac{x^t}{1+x^2}dx \qquad \forall t \in (-1,1)
+z=i
+z=-i
+f(z) = \frac{z^t}{1+z^2}
+\text{Res}(f,i) = \frac{e^{it\frac{\pi}{2}}}{2i}
+\text{Res}(f,-i) = -\frac{e^{it\frac{3\pi}{2}}}{2i}
+\int_0^\infty \frac{x^t}{1+x^2}dx = 2\pi i(\text{Res}(f,i)+\text{Res}(f,-i))
+\int_0^\infty \frac{x^t}{1+x^2}dx = \frac{2\pi i}{1-e^{2\pi i (t-1)}}(\text{Res}(f,i)+\text{Res}(f,-i))
+\oint_C dz \frac{x^t}{1+x^2} = i 2 \pi \sum_{\pm} \operatorname*{Res}_{z=\pm i} \frac{x^t}{1+x^2} 
+C
+R
+\epsilon
+\int_0^{R} dx \frac{x^t}{1+x^2} + i R \int_0^{2 \pi} d\theta \, e^{i \theta} \frac{R^t e^{i t \theta}}{1+R^2 e^{i 2 \theta}} \\ + e^{i 2 \pi t}\int_R^0 dx \frac{x^t}{1+x^2} + i \epsilon \int_{2 \pi}^0 d\phi \, e^{i \phi} \frac{\epsilon^t e^{i t \phi}}{1+\epsilon^2 e^{i 2 \phi}}
+R \to\infty
+2 \pi R^{-(1-t)}
+t \lt 1
+\epsilon \to 0
+2 \pi \epsilon^{1+t}
+t \gt -1
+\left (1-e^{i 2 \pi t} \right ) \int_0^{\infty} dx \frac{x^t}{1+x^2} = i 2 \pi \sum_{\pm} \operatorname*{Res}_{z=\pm i} \frac{x^t}{1+x^2}

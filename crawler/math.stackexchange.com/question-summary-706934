@@ -1,0 +1,20 @@
+\lim_{\sigma \to 1} (\sigma-1)\int_1^{\infty}\frac{\psi(x)-x}{x^{\sigma+i\tau + 1}} \mathrm{d}x
+\zeta(1+i\tau) \neq 0
+\begin{align} \int_1^\infty \frac{\psi(x)}{x^{s+1}}\, dx &= \int_1^\infty x^{-s-1} \sum_{p,k} \log p \cdot \chi_{[p^k,\infty)}(x)\,dx\\ &= \sum_{p,k} \log p \int_{p^k}^\infty \frac{dx}{x^{s+1}}\\ &= \sum_{p,k} \frac{\log p}{s\cdot p^{sk}}\\ &= \sum_p \frac{\log p}{s}\sum_{k} p^{-sk}\\ &= \sum_p \frac{\log p}{s(p^s-1)}\\ &= -\frac{1}{s}\cdot \frac{\zeta'(s)}{\zeta(s)} \end{align}
+\operatorname{Re} s > 1
+\int_1^\infty x^{-s}\,dx = \frac{1}{s-1}
+\zeta(s) = (s-1)^{-1}\cdot h(s)
+\zeta
+1
+\begin{align} \int_1^\infty \frac{\psi(x)-x}{x^{s+1}}\,dx &= -\left(\frac{1}{s}\cdot \frac{\zeta'(s)}{\zeta(s)} + \frac{1}{s-1}\right)\\ &= - \left(\frac{(s-1)^{-1}h'(s) - (s-1)^{-2}h(s)}{s\cdot(s-1)^{-1}h(s)} + \frac{1}{s-1}\right)\\ &= - \left(\frac{1}{s}\frac{h'(s)}{h(s)} - \frac{1}{s(s-1)} + \frac{1}{s-1}\right)\\ &= - \frac{1}{s}\left(\frac{h'(s)}{h(s)} + 1\right).\tag{1} \end{align}
+\zeta(1+i\tau) = 0
+\frac{h'}{h}
+1 + i\tau
+\lim_{\sigma\to 1} (\sigma-1)\int_1^\infty \frac{\psi(x)-x}{x^{\sigma+i\tau+1}}\,dx = -\mu \neq 0,
+\mu
+\zeta
+h
+1+i\tau
+\psi(x) - x \in O\left(\frac{x}{\log x}\right),\tag{2}
+\begin{align} \left\lvert \int_1^\infty \frac{\psi(x)-x}{x^{s+1}}\,dx\right\rvert &\leqslant \int_1^\infty \frac{\lvert\psi(x)-x\rvert}{x^{\sigma+1}}\,dx\\ &\leqslant K + C\cdot \int_e^\infty \frac{dx}{x^{\sigma}\log x}\,dx\\ &= K + C\cdot \int_1^\infty \frac{e^{-(\sigma-1)t}}{t}\,dt\\ &= K + C\cdot \int_{\sigma-1}^\infty \frac{e^{-t}}{t}\,dt\\ &\leqslant \tilde{K} + C\cdot \log \frac{1}{\sigma-1}, \end{align}
+\lim_{\sigma\to 1}\quad (\sigma-1)\int_1^\infty \frac{\psi(x)-x}{x^{\sigma+i\tau+1}}\,dx = 0.

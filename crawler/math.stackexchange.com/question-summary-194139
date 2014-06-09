@@ -1,0 +1,28 @@
+[0,k]
+U(0,1)
+(0,0)
+(1,0)
+(1,1)
+k \in (0,1)
+(0,k]
+\ell \in (0,1)
+[\ell, 1)
+W = \max\{X,Y\}
+Z = \min\{X,Y\}
+a \geq b
+P(A\cup B) = P(A) + P(B) - P(A\cap B)
+a < b
+X
+Y
+a
+b
+f_{X,Y}
+a=b
+f_{\max,\min}
+2
+(0,0)
+(1,0)
+(1,1)
+\begin{align} F_{W,Z}(a,b) &= P\{W \leq a, Z \leq b\}\\ &= P\left(\{W \leq a\}\cap \{Z \leq b\}\right)\\ &= P\left(\{X \leq a, Y \leq b\} \cup \{X \leq b, Y \leq a\}\right)\\ &= P\{X \leq a, Y \leq b\} + P\{X \leq b, Y \leq a\}  - P\{X \leq b, Y \leq b\} )\\ &= F_{X,Y}(a,b) + F_{X,Y}(b,a) - F_{X,Y}(b,b). \end{align}
+F_{W,Z}(a,b) = P\{X \leq a, Y \leq a\} = F_{X,Y}(a,a).
+f_{W,Z}(a,b) = \begin{cases} f_{X,Y}(a,b) + f_{X,Y}(b,a), &\text{if}~ a \geq b,\\ 0, &\text{if}~ a < b. \end{cases}

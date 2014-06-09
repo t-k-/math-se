@@ -1,0 +1,63 @@
+I(a,b)=\int_0^\infty \frac{\log(1+x^2)}{\sqrt{(a^2+x^2)(b^2+x^2)}}dx
+x\mapsto1/x
+I(a,b)=\frac{1}{ab}I\left(\frac{1}{a},\frac{1}{b}\right)+\frac{\log(ab)}{b}K\left( \frac{\sqrt{b^2-a^2}}{b}\right) \quad b>a
+a > b
+m
+s
+\frac{b^2}{a^2} = 1 - m = \frac{1-3s}{2}
+x^2
+\frac{b^2}{p-\frac{1-s}{2}}
+I(a,b)
+\wp(z), \zeta(z), \sigma(z)
+I(a,b) = -\frac{1}{a}\int_\infty^{\frac{1-s}{2}} \frac{\log\left[\frac{p-\left(\frac{1-s}{2}-b^2\right)}{p-\left(\frac{1-s}{2}\right)}\right]}{ \sqrt{4p^3 - g_2 p - g_3}} dz \quad\text{ where }\quad \begin{cases}g_2 = 1+3s^2\\g_3 = s(s^2-1)\end{cases}
+\wp'(z)^2 = 4\wp(z)^3 - g_2 \wp(z) - g_3 = 4 \left(\wp(z) - \frac{1-s}{2}\right)\left(\wp(z) + \frac{1+s}{2}\right)\left(\wp(z) - s\right)
+\wp(z)
+\omega = K(\sqrt{m}),\quad \omega' = iK'(\sqrt{m}) = iK(\sqrt{1-m})
+K(k)
+\wp(\omega) = \frac{1-s}{2}
+\wp(\omega') = -\frac{1+s}{2}
+\rho
+\wp(\omega \pm \rho ) = \frac{1-s}{2} - b^2
+b
+0
+\infty
+\wp(\omega\pm\rho)
+\wp(\omega) = \frac{1-s}{2}
+-\infty
+\rho
+b
+0
+\infty
+\omega + \rho
+\omega, \omega+\omega', \omega'
+0
+b
+\rho
+I(a,b)
+\displaystyle\;C = \frac{\sigma(\omega)^2}{\sigma(\omega+\rho)\sigma(\omega-\rho)}
+\begin{align} I(a,b)  &= \frac{1}{a}\int_0^\omega\log\left[ \frac{\wp(z)-\wp(\omega+\rho)}{\wp(z)-\wp(\omega)} \right]dz = \frac{1}{2a}\int_{-\omega}^\omega\log\left[ \frac{\wp(z)-\wp(\omega+\rho)}{\wp(z)-\wp(\omega)}\right]dz\\ &= \frac{1}{2a}\int_{-\omega}^\omega\log\left[C \frac{\sigma(z+\omega+\rho)\sigma(z+\omega-\rho)}{\sigma(z+\omega)^2} \right] \end{align} 
+b = 1
+a = 1
+I(a,b) = \frac{1}{a}\left\{ \omega\log\left[ -\frac{a^2}{\sigma(\rho)^2}\right] + \zeta(\omega) \rho^2 - \pi i\rho \right\} \quad\text{ with }\quad \rho = \wp^{-1}\left(\frac{a^2+b^2-3}{3a^2}\right) 
+b = 1
+\wp(\rho) = s = \wp(\omega'\pm\omega) \implies \rho = \omega'-\omega
+\eta = \zeta(\omega)
+\eta' = \zeta(\omega')
+I(a,b)
+\wp'(z+\rho) = -\frac{\sigma(2z+2\rho)}{\sigma(z+\rho)^4} = e^{2(\eta'-\eta)(2z + \omega'-\omega)}\frac{\sigma(2z)}{\sigma(z+\rho)^4}
+\sigma(\rho)^4 = \frac{2}{\wp''(\rho)}e^{2(\eta'-\eta)(\omega'-\omega)} = -\frac{a^4}{b^2(a^2-b^2)}e^{2(\eta'-\eta)(\omega'-\omega)} 
+\frac{1}{a}\left\{\omega\left(\log(b\sqrt{a^2-b^2}) \stackrel{?}{\pm} \frac{\pi i}{2}\right) -\omega ( (\eta'-\eta)(\omega'-\omega) ) + \eta(\omega'-\omega)^2 - \pi i(\omega'-\omega) \right\}
+\eta\omega'-\omega\eta' = \frac{\pi i}{2}
+I(a,b)
+\frac{\pi i}{2}\omega
+b = 1
+\begin{align} & -\omega ( (\eta'-\eta)(\omega'-\omega) ) + \eta(\omega'-\omega)^2 - \pi i(\omega'-\omega)\\ =& (\omega'-\omega)( -\omega(\eta'-\eta) + \eta(\omega'-\omega) - \pi i)\\ =& -\frac{\pi i}{2}(\omega' - \omega) \end{align} 
+\begin{align} I(a,1)  &= \frac{1}{a}\left\{\omega\log(b\sqrt{a^2-b^2}) - \frac{\pi i}{2}\omega'\right\}\\ &= \frac{1}{a}\left\{\log(b\sqrt{a^2-b^2})K\left(\sqrt{1-\frac{b^2}{a^2}}\right) + \frac{\pi}{2}K\left(\frac{b}{a}\right)\right\} \end{align}
+a = 1
+\wp(\rho) = -\frac{1+s}{2} = \wp(\pm\omega') \implies \rho = \omega'
+I(a,b)
+I(1,b)
+b = 1
+\sigma(\rho)^4 = \frac{2}{\wp''(\rho)}e^{2\eta'\omega'} = \frac{a^2}{a^2-b^2}e^{2\eta'\omega'}
+\frac{1}{a}\left\{\omega\log(a\sqrt{a^2-b^2}) - \omega\eta'\omega' + \eta\omega'^2 - \pi i\omega'\right\} = \frac{1}{a}\left\{\omega\log(a\sqrt{a^2-b^2}) -\frac{\pi i}{2}\omega'\right\} 
+I(1,b) =  \frac{1}{a}\left\{\log(a\sqrt{a^2-b^2})K\left(\sqrt{1-\frac{b^2}{a^2}}\right) + \frac{\pi}{2}K\left(\frac{b}{a}\right)\right\} 

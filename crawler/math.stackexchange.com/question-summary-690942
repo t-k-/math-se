@@ -1,0 +1,18 @@
+\{ a_n \}
+\{ b_n \}
+n \ge 0
+\ast
+\{ c_n \} = \{ a_n \} \ast \{ b_n \}
+c_n = \sum_{k=0}^{n} a_k b_{n-k}
+(\{ a_n \} \ast \{ b_n \}) \ast \{ c_n \} = \{ a_n \} \ast (\{ b_n \} \ast \{ c_n \})
+(\{ a_n \} \ast \{ b_n \}) \ast \{ c_n \} = \sum_{k=0}^{n} \big( (\sum_{j=0}^{k} a_j b_{k-j}) c_{n-k} \big) = \sum_{k=0}^{n} \sum_{j=0}^{k} (a_j b_{k-j} c_{n-k}) \big.
+\{ a_n \} \ast (\{ b_n \} \ast \{ c_n \}) = \sum_{k=0}^{n} \big( a_k (\sum_{j=0}^{n-k} b_j c_{n-k-j}) \big) = \sum_{k=0}^{n} \sum_{j=0}^{n-k} (a_k b_j c_{n-k-j}).
+a_i b_j c_k
+\{d_n\}_n
+\{ e_n \}_n
+n \in \mathbb{N},  \ d_n = e_n
+\mathbb{N}
+\left( a * b \right)_n = \sum_{i+j=n} a_ib_j 
+d_n = \sum_{i+j=n} \sum_{k+y=i} a_kb_yc_j = \sum_{i+j=n}\sum_k a_kb_{i-k}c_j 
+e_n = \sum_{i+j=n} \sum_{t+s=j} a_ib_tc_s = \sum_{i+j=n}\sum_s a_ib_{j-s}c_s 
+\{ 1, \dots , n \}

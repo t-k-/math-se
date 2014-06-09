@@ -1,0 +1,18 @@
+\mathbb{P} = (P, \leq)
+p,q \in P
+\mathbb{P}
+\begin{align} &\underset{\widetilde{\hphantom{x}}}{x} := \{ \langle \emptyset , p \rangle\} \\  &\underset{\widetilde{\hphantom{y}}}{y} := \{ \langle \emptyset , q \rangle, \langle \underset{\widetilde{\hphantom{x}}}{x}, q \rangle\}\\  &\underset{\widetilde{\hphantom{z}}}{z} := \{ \langle \underset{\widetilde{\hphantom{y}}}{y} , p \rangle, \langle \underset{\widetilde{\hphantom{x}}}{x} , q \rangle, \langle \underset{\widetilde{\hphantom{x}}}{x} , p \rangle\}\\  &\underset{\widetilde{\hphantom{u}}}{u} := \{  \langle \underset{\widetilde{\hphantom{z}}}{z} , p\rangle,   \langle \underset{\dot{\hphantom{q}}}{q} , p\rangle, \langle \underset{\dot{\hphantom{p}}}{p} , q\rangle \}\\  &\underset{\widetilde{\hphantom{v}}}{v} := \{  \langle \underset{\widetilde{\hphantom{u}}}{u} , q\rangle, \langle \underset{\dot{\hphantom{p}}}{p} , p\rangle, \langle \underset{\widetilde{\hphantom{z}}}{z} , p \rangle \} \end{align} 
+ \underset{\widetilde{\hphantom{v}}}{v}[\{ p \}], \underset{\widetilde{\hphantom{v}}}{v}[\{ q \}],  \underset{\widetilde{\hphantom{v}}}{v}[\{ p, q \}]
+ \underset{\widetilde{\hphantom{v}}}{v}[\{ p \}] =  \{ \underset{\dot{\hphantom{p}}}{p}[\{ p \} ], \underset{\widetilde{\hphantom{z}}}{z}[\{ p \}] \} = \{ \underset{\dot{\hphantom{p}}}{p}[\{ p \} ], \{ \emptyset, \{ \emptyset \} \} \}
+\begin{align}   &\underset{\widetilde{\hphantom{x}}}{x}[\{ p \}] = \{ \emptyset \}\\  &\underset{\widetilde{\hphantom{y}}}{y}[\{ p \}] = \emptyset \\  & \underset{\widetilde{\hphantom{z}}}{z}[\{ p \}] = \{ \underset{\widetilde{\hphantom{y}}}{y}[\{ p \}], \underset{\widetilde{\hphantom{x}}}{x}[\{ p \}]\} = \{ \emptyset, \{ \emptyset \} \}  \end{align}
+ \underset{\widetilde{\hphantom{v}}}{v}[\{ q \}] = \{ \underset{\widetilde{\hphantom{u}}}{u}[\{ q \}] \} = \{ \emptyset \}
+ \underset{\widetilde{\hphantom{u}}}{u}[\{ q \}] = \{ \underset{\dot{\hphantom{p}}}{p}[\{ q \} ] \}= \emptyset
+ \begin{align*}  &\underset{\widetilde{\hphantom{v}}}{v}[\{ p, q \}] = \\  &\{ \underset{\widetilde{\hphantom{u}}}{u}[\{ p, q \}], \underset{\dot{\hphantom{p}}}{p}[\{ p, q \}], \underset{\widetilde{\hphantom{z}}}{z}[\{ p, q \}] \} = \\ &\{     \{  \{ \{ \emptyset \}, \{ \emptyset, \{ \emptyset \} \} \}, \underset{\dot{\hphantom{q}}}{q}[\{ p, q \} ] , \underset{\dot{\hphantom{p}}}{p}[\{ p, q \} ] \}, \underset{\dot{\hphantom{p}}}{p}[\{ p, q \}], \{ \{ \emptyset \}, \{ \emptyset, \{ \emptyset \} \} \} \} \end{align*} 
+\begin{align} &\underset{\widetilde{\hphantom{u}}}{u}[\{ p, q \}] = \{  \{ \{ \emptyset \}, \{ \emptyset, \{ \emptyset \} \} \}, \underset{\dot{\hphantom{q}}}{q}[\{ p, q \} ] , \underset{\dot{\hphantom{p}}}{p}[\{ p, q \} ] \} \\  &\underset{\widetilde{\hphantom{z}}}{z}[\{ p, q \}] = \{ \{ \emptyset \}, \{ \emptyset, \{ \emptyset \} \} \} \end{align}
+\check x
+\mathbb P
+\check x[\{p\}] = \{\check y[\{p\}] \mid \langle\check y,p\rangle\in\check x\}
+\{p\}
+\begin{align} \check v[\{p\}] &= \Bigg\{p[\{p\}], \check z[\{p\}]\Bigg\}\\ &=\Bigg\{p,\bigg\{\check y[\{p\}],\check x[\{p\}]\bigg\}\Bigg\}\\ &=\Bigg\{p,\bigg\{\varnothing,\{\varnothing\}\bigg\}\Bigg\} \end{align}
+\check v[\{q\}]
+\check u[\{q\}] = \{p\}

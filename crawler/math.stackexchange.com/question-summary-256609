@@ -1,0 +1,59 @@
+(8,2,4)
+(2,3,4)
+7
+A
+ \ b_n
+b_n=A-\left\lfloor\frac{n}{2}\right\rfloor,A-\left\lfloor\frac{n}{2}\right\rfloor+1,\dots,A-1,A,A+1\dots,A+\left\lfloor\frac{n}{2}\right\rfloor
+ \ b_n
+\mathcal{O}(n\lg n)
+(a_i)_{i=1}^n
+(b_i)_{i=1}^n
+a_n
+k
+n-k
+n
+n
+X[1,\dots,n]
+(3,5,5,7,7,7,7,8,8,9)
+3\big|5\big|7\big|8\big|9
+C
+X[1,\dots,n]
+\left( C,\dots,C \right)
+X[1,\dots,n]
+X[1,\dots,n]
+C \in \mathbb{Z}
+C
+Y[1,\dots,m]
+C-1
+Y[1,\dots,m]\geqslant C
+C
+Y[1,\dots,m]
+C+1
+Y[1,\dots,m]\leqslant C
+C
+Y[1,\dots,m]
+C+1
+C-1
+C \in \text{median}\left(Y[1,\dots,n]\right)
+1
+Y[1,\dots,n]
+X[1,\dots,n]
+A[1,\dots,n]
+1
+X[1,\dots,n]
+OPT \in OPT(X[1,\dots,n])
+X[1,\dots,n]
+X'[1,\dots,n]
+X'[i]\geqslant X'[i-1]
+f:\{0,\dots,n\}^2  \to \mathbb{N}
+f(i,j)
+X[1,\dots,i]
+X'[j]
+n \times n
+j
+i=n-1
+  f(i,j)=\begin{cases} \left|X[1]-X'[j]\right| & i=1\\ f(i-1,1)+ \left|X[i]-X'[1]\right| & j=1\\ \min_{k \leqslant j}\left\{ f(i-1,k) +\left|X[i]-X'[j]\right|\right\} & \text{otherwise} \end{cases} 
+f \in \mathcal{O} (n^3)
+\mathcal{O} (n^2)
+f(i,j)=\min\left\{f(i,j-1)-\left|X'[j-1]-X[i] \right|,f(i-1,j)\right\}+\left| X'[j]-X[i]\right|
+\mathcal{O}(n\lg n)

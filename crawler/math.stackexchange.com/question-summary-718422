@@ -1,0 +1,14 @@
+m\to\infty
+\int_{2\sqrt{m}}^{\infty}e^{-\frac{x^2}{4}}x^mdx
+x = 2\sqrt{m} y
+ \int_{2\sqrt{m}}^\infty e^{-x^2/4} x^m\,dx = \left(2\sqrt{m}\right)^{m+1} \int_1^\infty \exp\left[m\left(\log(y)-y^2\right)\right]\,dy. 
+[1,\infty)
+\log(y)-y^2
+y = 1
+ \log(y)-y^2 = -1 - (y-1) + O(y-1)^2, 
+\log(y) - y^2
+-1-(y-1) = -y
+ \int_1^\infty \exp\left[m\left(\log(y)-y^2\right)\right]\,dy \sim \int_1^\infty \exp(-my)\,dy = m^{-1}e^{-m} 
+m \to \infty
+ \int_{2\sqrt{m}}^\infty e^{-x^2/4} x^m\,dx \sim \left(2\sqrt{m}\right)^{m+1} m^{-1} e^{-m} = 2 \left(\frac{2}{e}\right)^m m^{(m-1)/2} 
+m \to \infty

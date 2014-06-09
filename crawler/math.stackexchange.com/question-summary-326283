@@ -1,0 +1,13 @@
+\displaystyle\sum_{n=2,n\neq m^2}^{1000}\left[\dfrac{1}{\{\sqrt{n}\}}\right]
+\{x\}=x-[x]
+[x]
+[5.4]=5, [2.9]=2,[-1.1]=-2 
+n^2 < x < (n+1)^2
+x = n^2 + k
+\left\lfloor\frac{1}{\{\sqrt{x}\}}\right\rfloor  = \left\lfloor\frac{1}{\sqrt{n^2+k}-n}\right\rfloor  = \left\lfloor\frac{\sqrt{n^2+k} + n}{k}\right\rfloor  = \left\lfloor\frac{2n}{k}\right\rfloor 
+\sum_{x = n^2+1 }^{(n+1)^2-1} \left\lfloor\frac{1}{\{\sqrt{x}\}}\right\rfloor = \sum_{k=1}^{2n}\left\lfloor\frac{2n}{k}\right\rfloor = D(2n)
+\begin{align}\sum_{x=2,x\neq m^2}^{1000}\left\lfloor\dfrac{1}{\{\sqrt{x}\}}\right\rfloor &= \sum_{x=2,x\neq m^2}^{1023}\left\lfloor\dfrac{1}{\{\sqrt{x}\}}\right\rfloor - 23 = \sum_{n=1}^{31} \sum_{x=n^2+1}^{(n+1)^2-1}\left\lfloor\frac{1}{\{\sqrt{x}\}}\right\rfloor -23\\ &= \sum_{n=1}^{31}D(2n) - 23 = 3843 \end{align}
+N
+D(x) = x\log x + x(2\gamma - 1) + O(x^\theta)
+\theta
+131/464

@@ -1,0 +1,14 @@
+M
+L
+L
+(\exists x)(\alpha)
+¬[(\forall x )(¬\alpha)]
+M \models (\exists x) (\alpha) 
+a\in A
+M\models \alpha [s[x|a]]
+M\models (\exists x)(\alpha)[s] \ \leftrightarrow \  M \models ¬(\forall x)(¬\alpha)[s] \ \leftrightarrow  \ \text{for each 
+ A}\ , M \not\ \not\models (¬\alpha)[s[x|a]] \leftrightarrow \text{there is no 
+ s.t.} \  M\models (¬\alpha)[s[x|a]] \leftrightarrow \text{there is no 
+ s.t.}\  M\not\models \alpha [s[x|a]] 
+\text{there is no } a\in A \text{ s.t. }M\nvDash \alpha [s[x|a]]\iff \text{there is }a\in A \text{ s.t. } M\vDash \alpha[s[x|a]].
+ \begin{aligned} M\models (\exists x)(\alpha)[s]  &\iff & M\models \lnot(\forall x)\lnot(\alpha)[s] &\qquad(1)\\ & \iff &\text{not}(M\models (\forall x)\lnot(\alpha)[s]) &\qquad(2)\\ & \iff  &\text{not}(\text{for all }a\in A,\>\> M\models \lnot(\alpha)[s[x|a]]) &\qquad(3)\\ \end{aligned} 

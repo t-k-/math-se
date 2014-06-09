@@ -1,0 +1,12 @@
+n
+k
+n\geq k
+C_{n,k} + C_{n,k-1} = C_{n+1,k}
+C
+n
+k
+n\geq k
+n+1
+\newcommand{\sft}[1]{\mathsf{\text{#1}}}
+\binom{n+1}{k}=\binom{n}{k}+\binom{n}{k-1}
+\begin{align} \binom{n+1}{k}=\begin{array}{c} \sft{# of ways of choosing}\\ k\sft{ balls from }n+1\sft{ balls} \end{array}&=\begin{array}{c} \sft{# of ways of choosing}\\ k\sft{ balls from }n+1\sft{ balls}\\ \sft{in which the red ball}\\ \sft{IS chosen} \end{array}\;\;+\;\;\begin{array}{c} \sft{# of ways of choosing}\\ k\sft{ balls from }n+1\sft{ balls}\\ \sft{in which the red ball}\\ \sft{ISN'T chosen} \end{array}\\[0.2in] &=\begin{array}{c} \sft{# of ways of choosing}\\ \sft{the other }k-1\sft{ balls}\\ \sft{from the }n\sft{ non-red balls} \end{array}+\begin{array}{c} \sft{# of ways of choosing}\\ \sft{all }k\sft{ balls}\\ \sft{from the }n\sft{ non-red balls} \end{array}\\[0.2in] &=\qquad\quad\binom{n}{k-1}\quad\quad+\qquad\qquad\binom{n}{k} \end{align}

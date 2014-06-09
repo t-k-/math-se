@@ -1,0 +1,33 @@
+k,p
+\sum_{i=0}^{p} \binom{k}{i} \binom{k+p-i}{p-i}\text{, or}
+\sum_{i=0}^{p} \binom{k-1}{i} \binom{k+p-i}{p-i}\text{?}
+p
+k
+p
+F(x)=\sum_{p=0}^{\infty}\sum_{i=0}^{p}\binom{k}{i}\binom{k+p-i}{p-i}x^{p}.
+F(x)=\sum_{i=0}^{\infty}\binom{k}{i}\sum_{p=i}^{\infty}\binom{k+p-i}{p-i}x^{p},
+\frac{1}{(1-x)^{k+1}}
+F(x)=\sum_{i=0}^{\infty}\binom{k}{i}x^{i}\sum_{p=0}^{\infty}\binom{k+p}{p}x^{p}.
+F(x)=\frac{1}{(1-x)^{k+1}}\sum_{i=0}^{\infty}\binom{k}{i}x^{i}=\frac{\left(1+x\right)^{k}}{(1-x)^{k+1}}
+k
+k
+G(x)=\sum_{k=0}^{\infty}\sum_{i=0}^{p}\binom{k}{i}\binom{k+p-i}{p-i}x^{k}.
+G(x)=\sum_{i=0}^{p}\sum_{k=i}^{\infty}\binom{k}{i}\binom{k+p-i}{p-i}x^{k}=\sum_{i=0}^{p}x^{i}\sum_{k=0}^{\infty}\binom{k+i}{i}\binom{k+p}{p-i}x^{k}.
+=\sum_{i=0}^{p}x^{i}\sum_{k=0}^{\infty}\frac{(k+i)!}{k!i!}\frac{(k+p)!}{(k+i)!(p-i)!}x^{k}=\sum_{i=0}^{p}\frac{x^{i}p!}{i!\left(p-i\right)!}\sum_{k=0}^{\infty}\frac{\left(k+p\right)!}{k!p!}x^{k}.
+G(x)=\frac{(1+x)^{p}}{\left(1-x\right)^{p+1}}.
+0 < s < 1/2
+0 < s < 1/2
+X
+(k,s)
+Y
+(k+p-X,t)
+t=s/(1-s) \, (\in (0,1))
+{\rm P}(X + Y = p) \leq 1
+ \sum\limits_{i = 0}^p {{k \choose i}{k + p - i \choose p - i}}  \le \frac{1}{{(1 - 2s)^k }}\bigg(\frac{{1 - s}}{s}\bigg)^p. 
+ {\rm P}(X + Y = p) = \sum\limits_{i = 0}^p {{\rm P}(X + Y = p|X = i){\rm P}(X = i)}  = \sum\limits_{i = 0}^p {{\rm P}(Y = p - i|X = i){\rm P}(X = i)}. 
+ {\rm P}(X = i) = {k \choose i}s^i (1-s)^{k-i} 
+ {\rm P}(Y = p - i|X = i) = {k + p - i \choose p - i}t^{p - i} (1 - t)^k , 
+ \frac{s}{{(1 - s)t}} = 1,  
+ {\rm P}(X + Y = p) = (1 - s)^k (1 - t)^k t^p \sum\limits_{i = 0}^p {{k \choose i}{k + p - i \choose p - i}} . 
+ (1 - s)^k (1 - t)^k t^p = (1 - 2s)^{k} \bigg(\frac{s}{{1 - s}}\bigg)^p , 
+ \sum\limits_{i = 0}^p {{k \choose i}{k + p - i \choose p - i}}  \le \frac{1}{{(1 - 2s)^k }}\bigg(\frac{{1 - s}}{s}\bigg)^p. 

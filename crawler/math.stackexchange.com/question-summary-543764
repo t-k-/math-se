@@ -1,0 +1,9 @@
+f(x,y)=\frac{\Gamma(\alpha_1 + \alpha_2 + \alpha_3)}{\Gamma(\alpha_1) \Gamma(\alpha_2) \Gamma(\alpha_3)} x^{\alpha_1 - 1} y^{\alpha_2 - 1} (1-x-y)^{\alpha_3 -1}
+\alpha_1, \alpha_2 + \alpha_3
+y
+y = (1-x)u
+X \sim \operatorname{Beta}(\alpha_1, \alpha_2+\alpha_3)
+      f_{X,Y}(x,y) = \frac{\Gamma(\alpha_1+\alpha_2+\alpha_3)}{\Gamma(\alpha_1) \Gamma(\alpha_2) \Gamma(\alpha_3)} x^{\alpha_1 - 1} y^{\alpha_2-1} (1-x-y)^{\alpha_3-1} \left[ x >0, y>0, x+y<1\right] 
+     f_X(x) = \int_{-\infty}^\infty f_{X,Y}(x,y) \mathrm{d}y = \frac{\Gamma(\alpha_1+\alpha_2+\alpha_3)}{\Gamma(\alpha_1) \Gamma(\alpha_2) \Gamma(\alpha_3)} x^{\alpha_1 - 1} [ 0 < x < 1] \int_0^{1-x} y^{\alpha_2-1} (1-x-y)^{\alpha_3-1}\mathrm{d}y 
+   \int_0^{1-x} y^{\alpha_2-1} (1-x-y)^{\alpha_3-1}\mathrm{d}y = (1-x)^{\alpha_2+\alpha_3-1} \underbrace{ \int_0^1 u^{\alpha_2-1} (1-u)^{\alpha_3-1} \mathrm{d}u}_{B(\alpha_2, \alpha_3) = \frac{\Gamma(\alpha_2) \Gamma(\alpha_3)}{\Gamma(\alpha_2+\alpha_3)}} 
+    f_X(x) = \frac{\Gamma(\alpha_1+\alpha_2+\alpha_3)}{\Gamma(\alpha_1) \Gamma(\alpha_2+\alpha_3)}  x^{\alpha_1-1} (1-x)^{\alpha_2+\alpha_3 -1} [0<x<1] 

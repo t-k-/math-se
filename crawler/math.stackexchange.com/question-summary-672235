@@ -1,0 +1,19 @@
+\iint_D x\ln(xy) dx\,dy \text{ where } 1 \le x \le e , \frac{2}{x} \le y \le \frac{1}{x}
+(\ln4 -1)(e - 1)
+ \int_1^\text{e}\left( \int_\frac{2}{x}^\frac{1}{x}x \ln(xy)\;\mathrm{d}y\right)\;\mathrm{d}x 
+ \int_\frac{2}{x}^\frac{1}{x}x \ln(xy)\;\mathrm{d}y = \left[ \begin{array}{c c} u = \ln(xy)& v' = 1\\ u' = \frac{1}{xy}\cdot x & v= y \end{array} \right] = x\left(\left[ y\cdot\ln(xy) \right]_{2/x}^{1/x} -\int_\frac{2}{x}^\frac{1}{x}\frac{1}{y}\cdot y\; \mathrm{d}y \right) = x\left( \left(\frac{\ln 1}{x}\right)-\left(\frac{\ln 2}{x}\right)-\left[y\right]_{2/x}^{1/x} \right) = x\left(-\frac{1+\ln 2}{x}\right) = -1-\ln 2 
+ \int_1^\text{e} -1 -\ln 2\; \mathrm{d}x = -(1+\ln 2)\left[x\right]_1^\text{e} = -(1+\ln 2)(e-1) 
+y
+x
+\int_1^e \left(\int_{1/x}^{2/x} x \ln(xy) dy\right)dx.
+x
+\int_{1/x}^{2/x}\ln(xy) dy
+x
+D,
+D'=\varphi(D)=\{(u,\,v)\colon\;\; 1\leqslant{u} \leqslant{e},\;\;{1\leqslant{v}\leqslant{2}}\}.
+\varphi\colon\;\;\pmatrix{x\\y}\mapsto \pmatrix{u\\v}
+\begin{cases} u=x,\\ v= xy. \end{cases}
+\dfrac{\partial(u,\,v)}{\partial(x,\,y)}=\pmatrix{ \dfrac{\partial{u}}{\partial{x}}& \dfrac{\partial{u}}{\partial{y}}\\\dfrac{\partial{v}}{\partial{x}} & \dfrac{\partial{v}}{\partial{y}}}=\pmatrix{y&x\\1&0},
+\det{\dfrac{\partial(u,\,v)}{\partial(x,\,y)}}=x\ne{0}
+\det{\dfrac{\partial(x,\,y)}{\partial(u,\,v)}}=\dfrac{1}{u}.
+\iint\limits_{D} {x\ln(xy)} dx\,dy=\iint\limits_{D'} {u\ln{(v)}} \dfrac{1}{u}\ du\,dv= \int\limits_{1}^{e}{\left(\int\limits_{1}^{2}{\ln{(v)}\ dv}\right)\ du}

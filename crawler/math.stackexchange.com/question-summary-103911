@@ -1,0 +1,23 @@
+X_1, \dots, X_n
+k
+p
+P(X_k = k|k,p) = \binom{k}{x}p^{x}(1-p)^{k-x}
+k
+p
+kp(1-p)+k^{2}p^{2}
+\bar{X} = kp
+\frac{1}{n} \sum X_{i}^{2} = kp(1-p)+k^{2}p^{2}
+X_i
+\sum_{j=0}^k Y_{i,j}
+Y_{i,j}
+1
+p
+0
+1-p
+E[Y_{i,j}]=p
+E[Y_{i,j}^2]=p
+E[\left(Y_{i,j}-E[Y_{i,j}]\right)^2]=E[Y_{i,j}^2]-E[Y_{i,j}]^2 =p - p^2 = p(1-p)
+E[X_{i}]=\sum_{j=0}^k E[Y_{i,j}]=kp
+E[\left(X_{i}-E[X_{i}]\right)^2]=\sum_{j=0}^k E[\left(Y_{i,j}-E[Y_{i,j}]\right)^2]=kp(1-p).
+E[X_{i}^2]=E[\left(X_{i}-E[X_{i}]\right)^2] + E[X_{i}]^2 = kp(1-p) + k^2 p^2
+E\left[ \frac{1}{n} \sum_{i=1}^n X_i^2 \right] = \frac{1}{n} E\left[  \sum_{i=1}^n \left(kp(1-p) + k^2 p^2\right) \right] = kp(1-p) + k^2 p^2

@@ -1,0 +1,20 @@
+f
+D=\{|x+iy|< 1\}
+f = 0
+|z_0| < s <r <1
+f(z_0) = \frac{1}{2 \pi i} \oint_{\gamma_r} \frac{f(z)}{z-z_0} dz = \frac{1}{2 \pi } \int_0^{2 \pi} \frac{f(r e^{i \theta})}{r e^{i \theta}-z_0} r e^{i \theta} d\theta
+|f(z_0)| \le \frac{r}{2 \pi } \int_0^{2 \pi} \frac{|f(r e^{i \theta})|}{|r e^{i \theta}-z_0|}   d\theta \le \frac{1}{2 \pi } \int_0^{2 \pi} \frac{|f(r e^{i \theta})|}{|r e^{i \theta}-z_0|}   d\theta
+g_r (\theta) = \frac{|f(r e^{i \theta})|}{|r e^{i \theta}-z_0|}
+r \in (s,1)
+|r e^{i \theta}-z_0|\ge s -|z_0|
+g_r (\theta) \le \frac{|f(r e^{i \theta})|}{s -|z_0|}
+\lim_{r \uparrow 1} g_r (\theta) = 0
+\theta
+g_r
+g_1
+|f(r e^{i \theta})| \le \frac{1}{\sqrt{r |\sin \theta|}}
+|\sin(x)| \ge \frac{1}{2} \min_{k \in \mathbb{Z}} |x-k\pi|
+g_r (\theta) \le g_1(\theta)=  (\frac{1}{s-|z_0|} \frac{1}{\sqrt{s}}) \frac{\sqrt{2}}{\sqrt{\min_{k \in \mathbb{Z}} |\theta-k\pi|}} 
+\int_0^{2 \pi} g_1 = 8\sqrt{\pi} (\frac{1}{s-|z_0|} \frac{1}{\sqrt{s}})  
+|f(z_0)| \le \frac{1}{2 \pi} \lim_{r \uparrow 1} \int_0^{2 \pi} g_r = 0
+z_0 \in D

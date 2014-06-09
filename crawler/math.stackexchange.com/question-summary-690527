@@ -1,0 +1,19 @@
+f
+f
+0
+f''(z)-3f'(z)+2f(z)=0
+a_0 = 1
+a_1 = 2
+\begin{align} \sum_{n=2}^{\infty} n(n+1)a_nz^{n-2}-3\sum_{n=1}^{\infty}na_nz^{n-1}+2\sum_{n=0}^{\infty}a_nz^n & = 0 \end{align}
+a_{n+2} = \frac{3(n+1)a_{n-1} + 2a_{n-2}}{(n+2)(n+3)} : n\ge 2
+\sum_{n=0}^{\infty} (n+2) (n+1) a_{n+2} z^n - 3 \sum_{n=0}^{\infty} (n+1) a_{n+1} z^n + 2 \sum_{n=0}^{\infty} a_n z^n = 0
+(n+2) (n+1) a_{n+2} - 3 (n+1) a_{n+1} + 2 a_n = 0
+a_n = b_n/n!
+b_{n+2} - 3 b_{n+1} + 2 b_n = 0
+b_n = A 2^n + B \implies a_n = A\frac{2^n}{n!} + B \frac1{n!}
+a_0 = 1 \implies A+B=1
+a_1=2 \implies 2 A+B=2
+A=1
+B=0
+a_n = 2^n/n!
+f(z) = \sum_{n=0}^{\infty} \frac{(2 z)^n}{n!} = e^{2 z}

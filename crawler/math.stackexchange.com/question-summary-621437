@@ -1,0 +1,5 @@
+F_{\alpha}(\alpha)=\begin {matrix} 0 & \alpha <0\\ \\ \int_0^{\alpha}\frac 1tF\left (\frac {t}{1-t}\right)dt & 0\le \alpha \le 1/2\\ \\ 1+\ln \alpha & 1/2\le \alpha \le 1\\ \\ 1& \alpha >1 \end{matrix}
+f_{\alpha}(\alpha)=\begin {matrix} 0 & \alpha <0\\ \\ \\ \frac 1{\alpha}F\left(\frac {\alpha}{1-\alpha}\right) & 0\le \alpha \le 1/2\\ \\ \frac 1{\alpha} & 1/2\le \alpha \le 1\\ \\ 0& \alpha >1 \end{matrix}
+E(\alpha) = \int_0^1 \alpha f_{\alpha}(\alpha)d\alpha = \int_0^{1/2} \alpha \frac 1{\alpha}F\left(\frac {\alpha}{1-\alpha}\right)d\alpha + \int_{1/2}^1 \alpha \frac 1{\alpha}d\alpha
+\Rightarrow E(\alpha) = \int_0^{1/2} F\left(\frac {\alpha}{1-\alpha}\right)d\alpha + \frac 12
+E(\alpha^2) = \int_0^{1/2} \alpha F\left(\frac {\alpha}{1-\alpha}\right)d\alpha + \frac 38

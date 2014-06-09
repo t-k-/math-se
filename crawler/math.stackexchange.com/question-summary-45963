@@ -1,0 +1,23 @@
+A
+v_i
+A = \sum \lambda_i v_i v_i^T
+x_i = \sqrt{\lambda_i}v_i
+\lambda_i >0
+X = [x_i]
+X
+x_i
+A = \sum x_i x_i^T = X X^T 
+\sum x_i x_i^T = X X^T
+x_i
+A = L L'
+L
+A = E D E'
+L
+L= E D^{\frac{1}{2}} F
+F
+L
+E D^{\frac{1}{2}}
+L L^*
+L
+\begin{align} A &= U\Sigma V^* && \textrm{SVD def.}\\ U &= V &&\textrm{since A is symmetric} \\ A &= \left(U \sqrt{\Sigma}\right) \left(U \sqrt{\Sigma}\right)^*  && \textrm{note that 
+ is easily computed as it's diagonal} \\ A &= L L^* && \textrm{with...}\\ L &= U \sqrt{\Sigma} \end{align}

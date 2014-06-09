@@ -1,0 +1,10 @@
+\mu
+\sigma^2
+E(Y)
+Y=aX + b
+E(Y)=E(aX+b)=\frac{1}{\sqrt(2\pi)\sigma}\int_{-\infty}^{\infty}(ax+b)^{{-(ax+b-\mu}^2/2\sigma^2)}
+c = \frac{1}{\sigma\sqrt{2\pi}}
+\eqalign{ \Bbb E(aX+b)&=\int_{-\infty}^\infty (ax+b) f_X(x)\,dx \cr &=c\int_{-\infty}^\infty (ax+b) \exp \textstyle({-(x-\mu)^2\over 2\sigma^2})\,dx \cr &= a\cdot c\int_{-\infty}^\infty  x \exp {\textstyle({-(x-\mu)^2\over 2\sigma^2}})\,dx  +b\cdot c\int_{-\infty}^\infty  x \exp  (\textstyle{-(x-\mu)^2\over 2\sigma^2})\,dx \cr &=a\,\Bbb E(X)+b\cdot 1\cr &=a\mu+b. } 
+1
+\Bbb E(aX+b)=a\Bbb E(X)+b
+X

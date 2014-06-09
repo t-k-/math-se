@@ -1,0 +1,27 @@
+n
+L_\infty
+m
+\mathbf{z} \in \mathbb{C}^n
+\mathbf{M}\in\mathbb{C}^{n\times m}
+\underset{\mathbf x\in\mathbb{C}^m}{\arg\min} \|\mathbf{z}+\mathbf{M}\mathbf{x}\|_\infty
+\mathbf{M}
+\mathbf{M}^*\mathbf{M}=\mathbf{I}
+\mathbf{M}^*\mathbf{z} = \mathbf{0}
+\mathbf{M}
+n\times n
+\mathbf{M}\mathbf{M}^*
+\left|(\mathbf{z}+\mathbf{M}\mathbf{x})_i\right| \le \lambda
+\lambda
+\min\{\Lambda\} \text{ s.t. }\forall i, \left|(\mathbf{z}+\mathbf{M}\mathbf{x})_i\right|^2 \le \lambda^2 \triangleq \Lambda
+\max_u \inf_{\Lambda,\mathbf{x}} \left( \Lambda + \sum_{j=1}^n u_j (\left|(\mathbf{z} + \mathbf{M} \mathbf{x})_j\right|^2 - \Lambda) \right)
+u_i \ge 0
+\max_u \sum_{j=1}^n u_j \left|(\mathbf{z} - \mathbf{M} \mathbf{M}^* \mathbf{U}^+ \mathbf{M} \mathbf{M}^* \mathbf{U} \mathbf{z})_j\right|^2
+u_i \ge 0, \sum_{i=1}^n u_i = 1
+U_{ij}=\delta_{ij} u_i
+-\mathbf{M}^* \mathbf{U} \mathbf{z} = \mathbf{M}^* \mathbf{U} \mathbf{M} \mathbf{x}
+n-m
+u_i
+u_i=0
+\sum_i |(\mathbf{z}+\mathbf{Mx})_i|^p
+p=20
+L_\infty

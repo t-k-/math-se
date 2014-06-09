@@ -1,0 +1,31 @@
+|x|^{\frac{1}{3}}+|y|^{\frac{1}{3}}+|z|^{\frac{1}{3}}=|a|^{\frac{1}{3}}.
+8\int_{0}^{|a|}\int_{0}^{(|a|^{\frac{1}{3}}-x^{\frac{1}{3}})^3}\int_{0}^{(|a|^{\frac{1}{3}}-x^{\frac{1}{3}}-y^{\frac{1}{3}})^3}dz\,dy\,dx
+n
+V(r)
+V(r)=r^n V(1)
+s=r^\alpha
+n=3,\alpha=1/3
+V(r)=r^3 (2\times 3!)^3/9!=r^3/210
+\sum_{i=1}^n |x_i|^\alpha=r^\alpha.
+I=\int\exp(-\sum_{i=1}^n |x_i|^\alpha)dx_1\dots dx_n.
+I=\int_0^\infty\exp(-r^\alpha)d(V(r))=V(1)\int_0^\infty e^{-s}\frac{n}{\alpha}s^{n/\alpha-1}ds=V(1)\Gamma(n/\alpha+1)
+I=(2\int_{0}^\infty e^{-|x|^\alpha}dx)^n=(2\Gamma(1/\alpha+1))^n
+V(r)=r^n(2\Gamma(1/\alpha+1))^n/\Gamma(n/\alpha+1).
+\mathscr{I}
+(x,y,z) = (au^3,av^3,aw^2)
+\mathscr{I}
+\displaystyle \Delta = \{\;(u,v,w) : 0 \le u, v, w; u + v + w \le 1\;\}
+\mathscr{I} = 8 \int_{\Delta} d (a u^3)d(a v^3)d(a w^3) = (6a)^3 \int_{\Delta} (uvw)^2 du dv dw
+\Delta
+(\lambda,\mu,\nu)
+\Delta
+[0,1]^3
+\begin{cases} \lambda & = u + v + w\\ \lambda \mu & = v + w\\ \lambda \mu \nu & = w \end{cases} \quad\iff\quad \begin{cases} u &= \lambda (1-\mu)\\ v &= \lambda \mu (1-\nu)\\ w &= \lambda \mu \nu \end{cases} 
+\begin{align} du \wedge dv \wedge dw &= d(u + v + w) \wedge d(v+w) \wedge dw = d\lambda \wedge \lambda d\mu \wedge \lambda\mu d\nu = \lambda^2\mu d\lambda \wedge d\mu \wedge d\nu\\ u v w &= \lambda^3 \mu^2 (1-\mu) \nu (1-\nu) \end{align}
+(x,y,z) = (au^6,av^6,aw^6)
+\Delta
+\Theta = \{\;(u,v,w) : 0 \le u, v, w; u^2 + v^2 + w^2 \le 1\;\}
+\begin{align} \mathscr{I} &= (6a)^3 \left(\int_0^1 \lambda^8 d\lambda \right)\left( \int_0^1 \mu^5 (1-\mu)^2 d\mu \right)\left( \int_0^1 \nu^2(1-\nu)^2 d\nu \right)\\ &= (6a)^3 \left(\frac19\right)\left(\frac16 - \frac27 + \frac18 \right)\left(\frac13 - \frac24 + \frac15\right)\\ &= (6a)^3 \left(\frac19\right)\left(\frac{1}{168}\right)\left(\frac{1}{30}\right)\\ &= \frac{a^3}{210} \end{align}
+\mathscr{I} = 8 \int_{\Theta} d(a u^6) d(a v^6) d(a w^6) = (12a)^3 \int_{\Theta} (uvw)^5 du dv dw
+\begin{cases} u &= r\sin\theta\cos\phi\\ v &= r\sin\theta\sin\phi\\ w &= r\cos\theta \end{cases} \quad\implies\quad \begin{cases} du dv dw &= r^2\sin\theta dr d\theta d\phi\\ uvw &= r^3 \sin^2\theta\cos\theta \sin\phi\cos\phi \end{cases}
+\begin{align} \mathscr{I} & = (12a)^3 \left(\int_0^1 r^{17} dr \right) \left(\int_0^{\frac{\pi}{2}}\sin^{11}\theta\cos^5\theta d\theta\right) \left(\int_0^{\frac{\pi}{2}}\sin^5\phi\cos^5\phi d\phi\right)\\ & = (12a)^3 \left(\frac{1}{18}\right) \left(\frac{1}{336}\right) \left(\frac{1}{60}\right)\\ &= \frac{a^3}{210} \end{align} 

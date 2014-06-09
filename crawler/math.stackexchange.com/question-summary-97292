@@ -1,0 +1,31 @@
+\int\frac{\ln(1+e^x)}{e^x} \space dx
+t = e^x
+dx = \frac{1}{t} dt
+\int\frac{\ln(1+t)}{t^2} \space dt = \frac{1}{t} \cdot \ln(1+t) - \frac{1}{t} \cdot \ln(1+t) + \int\frac{\ln(1+t)}{t^2} \space dt
+\cdots
+0 = 0
+f(x)
+g(x)
+ \int f(x) g(x) dx 
+ \int u dv = u v - \int v du 
+ \int f(x) g(x) dx = f(x) G(x) - \int G(x) f'(x) dx 
+G(x)
+g(x)
+f'(x)
+f(x)
+u=f(x)
+dv = g(x) dx
+u = G(x)
+dv = f'(x) dx
+ \int G(x) f'(x) dx = G(x) f(x) - \int f(x) g(x) dx
+ \int f(x) g(x) dx = G(x) f(x) - G(x) f(x) + \int f(x) g(x) dx 
+ \to \int f(x) g(x) dx = \int f(x) g(x) dx 
+ \to 0 = 0 
+0=0
+\int \frac{\ln(1+t)}{t^2} \ \mathrm{d}t = -\frac1{t}\ln(1+t) - \int -\frac1{t}\cdot\frac1{1+t} \  \mathrm{d}t = -\frac1{t}\ln(1+t) + \int \frac1{t}\cdot\frac1{1+t} \  \mathrm{d}t
+ \int \frac1{t(t+1)} \ \mathrm{d}t = \int \frac1{t}-\frac1{t+1} \ \mathrm{d}t = \ln t - \ln (t+1) + C 
+ \int \frac{\ln(1+e^x)}{e^x} \ \mathrm{d}x= x - \ln(1+e^x) - \frac{\ln(1+e^x)}{e^x} + C
+ \int\frac{\ln(1+e^x)}{e^x} \; dx = \overbrace{\int u\;dv = uv - \int v\;du}^\text{This is integration by parts.} 
+ \begin{align} u & = \ln(1+e^x), \qquad dv =\frac{dx}{e^x}  \\  \\  \\ du &= \frac{e^x}{1+e^x}\;dx, \qquad  v = \frac{-1}{e^x} \end{align} 
+ \begin{align} & {} \qquad uv - \int v\;du = \frac{\ln(1+e^x)}{e^x} - \int \frac{-dx}{1+e^x} = \frac{\ln(1+e^x)}{e^x} - \int \frac{-e^{-x}\;dx}{e^{-x}+1} \\  \\  \\ & = \frac{\ln(1+e^x)}{e^x} + \int \frac{e^{-x}\;dx}{e^{-x}+1} = \frac{\ln(1+e^x)}{e^x} + \int \frac{dw}{w+1} \\  \\  \\ & = \frac{\ln(1+e^x)}{e^x} + \ln(w+1) + C = \frac{\ln(1+e^x)}{e^x} + \ln(e^{-x}+1) + C. \end{align} 
+ \ln(e^{-x} + 1) = \ln\Big( e^{-x}(1+e^x) \Big) = \ln(e^{-x}) + \ln(1+e^x) = -x + \ln(1+e^x), 

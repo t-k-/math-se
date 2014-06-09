@@ -1,0 +1,19 @@
+ \begin{align} U(a,a-n,1) &= \frac{1}{\Gamma(a)} \int_0^\infty e^{-t} t^{a-1} (1+t)^{-n-1}\,dt \\ &= \frac{1}{\Gamma(a)} \int_0^\infty \exp f_{a,n}(t)\,dt. \end{align} 
+0 < a \leq 1
+ \begin{align} f_{a,n}(t) &= -t + (a-1)\log t - (n+1)\log(1+t) \\ &= -t + (a-1)\log t - (n+1)t + O(nt^2) \\ &\approx (a-1)\log t - (n+2)t, \end{align} 
+t=0
+n \to \infty
+ \begin{align} \int_0^\infty \exp f_{a,n}(t)\,dt &\sim \int_0^\infty \exp\Bigl[(a-1)\log t - (n+2)t\Bigr]\,dt \\ &= \frac{\Gamma(a)}{(n+2)^a} \\ &\sim \frac{\Gamma(a)}{n^a}. \end{align} 
+a>1
+f_{a,n}(t)
+t = t^* \approx \frac{a-1}{n}
+ \begin{align} t^* &= \frac{-n+a-3}{2}+\frac{1}{2}\sqrt{n^2+(-2a+6)n+a^2-2a+5} \\ &= \frac{-n+a-3}{2}+\frac{n}{2}\sqrt{1+\frac{-2a+6}{n}+\frac{a^2-2a+5}{n^2}} \\ &= \frac{-n+a-3}{2}+\frac{n}{2}\left[1+\frac{1}{2}\left(\frac{-2a+6}{n}+\frac{a^2-2a+5}{n^2}\right) \right. \\ &\qquad\qquad \left.- \frac{1}{8}\left(\frac{-2a+6}{n}+\frac{a^2-2a+5}{n^2}\right)^2 + O\left(\frac{1} {n^3}\right)\right] \\ &= \frac{-n+a-3}{2}+\frac{n}{2}\left[1 + \frac{-a+3}{n} + \frac{2a-2}{n^2} + O\left(\frac{1} {n^3}\right)\right] \\ &= \frac{-n+a-3}{2} + \frac{n}{2} + \frac{-a+3}{2} + \frac{a-1}{n} + O\left(\frac{1} {n^2}\right) \\ &= \frac{a-1}{n} + O\left(\frac{1} {n^2}\right), \end{align} 
+\sqrt{1+x} = 1 + \frac{x}{2} - \frac{x^2}{8} + O(x^3)
+ \begin{align} f_{a,n}(t) &= -t + (a-1)\log t - (n+1)\log(1+t) \\ &= \alpha(a,n) + \beta(a,n)(t-t^*)^2 + \text{higher order terms}, \end{align} 
+ \alpha(a,n) = (a-1)\Bigl[\log(a-1)-\log(n)-1\Bigr] + o(1) 
+ \beta(a,n) = -\frac{n^2}{2 (a-1)} + O(n). 
+ \begin{align} \int_0^\infty \exp f_{a,n}(t)\,dt &\sim e^{\alpha(a,n)} \int_{-\infty}^{\infty} \exp\Bigl[ \beta(a,n) t^2 \Bigr]\,dt \\ &\sim \exp\Bigl\{(a-1)\Bigl[\log(a-1)-\log(n)-1\Bigr]\Bigr\} \int_{-\infty}^{\infty} \exp\Bigl[ -\frac{n^2}{2 (a-1)} t^2 \Bigr]\,dt \\ &= e^{1-a} \sqrt{\frac{2\pi}{a-1}} \left(\frac{a-1}{n}\right)^a. \end{align} 
+0 < a \leq 1
+a > 1
+ U(a,a-n,1) \sim \frac{1}{n^a} 
+ U(a,a-n,1) \sim \frac{e^{1-a}}{\Gamma(a)} \sqrt{\frac{2\pi}{a-1}} \left(\frac{a-1}{n}\right)^a. 

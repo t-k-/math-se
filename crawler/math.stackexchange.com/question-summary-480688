@@ -1,0 +1,19 @@
+\frac{d^n}{dx^n}(u\cdot v\cdot w)=\sum_{k_1+k_2+k_3=n}\binom{n}{k_1,k_2,k_3}u^{(k_1)}v^{(k_2)}w^{(k_3)}
+x \sin x \ln x
+(f\cdot g)^{(n)}=\sum_{j+k=n}\binom{n}{j,k}f^{(j)}g^{(k)}
+(f\cdot g\cdot h)^{(n)}\\=\sum_{j+k=n}\binom{n}{j,k}(f\cdot g)^{(j)}h^{(k)}\\=\sum_{j+k=n}\sum_{m+l=j}\binom{n}{j,k}\binom{j}{m,l}f^{(m)}g^{(l)}h^{(k)}
+\left( {x\sin x\log x} \right)''' = \sum\limits_{i + j + k = 3}\binom{3}{i,j,k} {{x^{\left( i \right)}}\sin {x^{\left( k \right)}}\log {x^{\left( j \right)}}} 
+k_{1}+k_{2}+k_{3}=2
+k_{1}
+k_{2}
+k_{3}
+2
+2
+0
+1
+0
+6
+f''(x)=\sum_{k_{1}+k_{2}+k_{3}=2}\binom{2}{k_{1},k_{2},k_{3}}\frac{d^{k_{1}}}{d‌​x^{k_{1}}}(x)\frac{d^{k_{2}}}{dx^{k_{2}}}(\sin(x))\frac{d^{k_{3}}}{dx^{k_{3}}}(ln‌​(x))
+=\binom{2}{2,0,0}\frac{d^{2}}{dx^{2}}(x)\sin(x)\ln(x)+\binom{2}{0,2,0}\frac{d^{‌​2}}{dx^{2}}(\sin(x))x\ln(x)+\binom{2}{0,0,2}\frac{d^{2}}{dx^{2}}(\ln(x))x\sin(x)+‌​\binom{2}{1,1,0}\frac{d}{dx}(x)\frac{d}{dx}(\sin(x))\ln(x)+\binom{2}{1,0,1}\frac{‌​d}{dx}(x)\frac{d}{dx}(\ln(x))\sin(x)+\binom{2}{0,1,1}\frac{d}{dx}(\sin(x))\frac{d‌​}{dx}(\ln(x))x
+=0-x\sin(x)\ln(x)-x\sin(x)\frac{1}{x^{2}}+2\cos(x)\ln(x)
++2\sin(x)\frac{1}{x}+2x\cos(x)\frac{1}{x}

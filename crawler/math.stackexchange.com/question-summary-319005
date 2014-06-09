@@ -1,0 +1,17 @@
+x \in (0, e)
+(e+x)^{e-x}>(e-x)^{e+x}
+f(x)=(e+x)^{e-x}
+g(x)=\ln \cdot f(x)
+0\lt x\le e
+ \begin{align} (e-x)\log(e+x) &=e-x+(e-x)\log\left(1+\frac xe\right)\\ &=e-x+(e-x)\left(\frac xe-\frac12\frac{x^2}{e^2}+\frac13\frac{x^3}{e^3}-\dots\right)\\ &=e-x+x-\frac32\frac{x^2}{e}+\frac56\frac{x^3}{e^2}-\dots\\ &=e-\frac32\frac{x^2}{e}+\frac56\frac{x^3}{e^2}-\frac7{12}\frac{x^4}{e^3}+\dots\tag{1} \end{align} 
+ \begin{align} (e+x)\log(e-x) &=e+x+(e+x)\log\left(1-\frac xe\right)\\ &=e+x-(e+x)\left(\frac xe+\frac12\frac{x^2}{e^2}+\frac13\frac{x^3}{e^3}+\dots\right)\\ &=e+x-x-\frac32\frac{x^2}{e}-\frac56\frac{x^3}{e^2}-\dots\\ &=e-\frac32\frac{x^2}{e}-\frac56\frac{x^3}{e^2}-\frac7{12}\frac{x^4}{e^3}-\dots\tag{2} \end{align} 
+ \begin{align} &(e-x)\log(e+x)-(e+x)\log(e-x)\\ &=2\left(\frac56\frac{x^3}{e^2}+\frac9{20}\frac{x^5}{e^4}+\dots+\frac{4n+1}{2n(2n+1)}\frac{x^{2n+1}}{e^{2n}}+\dots\right)\tag{3} \end{align} 
+ (e+x)^{e-x}\gt(e-x)^{e+x}\tag{4} 
+e
+u = x/e \in (0,1)
+g(u) = (1-u) \log(1+u) - (1+u) \log (1-u) - 2 u
+ e^{e g(u)} > 1 \>, 
+g(u) > 0
+g(0) = 0
+g'(u) > 0
+(0,1)

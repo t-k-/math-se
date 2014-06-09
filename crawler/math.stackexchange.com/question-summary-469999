@@ -1,0 +1,24 @@
+M: (0,\infty)^n \rightarrow (0,\infty)
+\min\{x_i\} \leq M(x_i) \leq \max\{x_i\}
+\mathbb{R}^n
+M
+(x_1,\dots,x_n) \in (0,\infty)^n
+\epsilon > 0
+\delta > 0
+(y_1,\dots,y_n) \in (0,\infty)^n
+|y_i-x_i| < \delta
+|M(y_1,\dots,y_n)-M(x_1,\dots,x_n)| < \epsilon
+(x_1,\dots,x_n) \in (0,\infty)^n
+\epsilon > 0
+\delta
+|y_i-x_i| < \delta
+i
+(y_1,\dots,y_n) \leq (1+\frac\delta{\text{min}_i\,x_i})(x_1,\dots,x_n)
+\delta < \frac{\epsilon\cdot\text{min}_i\,x_i}{M(x_1,\dots,x_n)}
+|y_i-x_i| < \delta
+i
+|M(y_1,\dots,y_n)-M(x_1,\dots,x_n)| < \epsilon
+ x_i - \delta < y_i < x_i + \delta, 
+ y_i < (1+\frac\delta{x_i})x_i \leq (1+\frac\delta{\text{min}_i\, x_i})x_i, 
+ M(y_1,\dots,y_n) \leq (1+\frac\delta{\text{min}_i\,x_i})M(x_1,\dots,x_n). 
+ M(y_1,\dots,y_n) \geq (1-\frac\delta{\text{min}_i\,x_i})M(x_1,\dots,x_n). 

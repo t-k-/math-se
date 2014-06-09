@@ -1,0 +1,8 @@
+L^2
+8.95\%
+n^\text{th}
+2\pi
+n\to\infty
+ \sum_{k=-n}^ne^{ikt}=\frac{\sin\left(\frac{2n+1}{2}t\right)}{\sin\left(\frac12t\right)} 
+ \int_{-2\pi/(2n+1)}^{2\pi/(2n+1)}\frac{\sin\left(\frac{2n+1}{2}t\right)}{\sin\left(\frac12t\right)}\,\mathrm{d}t 
+ \begin{align} &\lim_{n\to\infty}\frac1{4\pi}\left(\int_{-2\pi/(2n+1)}^{2\pi/(2n+1)}\frac{\sin\left(\frac{2n+1}{2}t\right)}{\sin\left(\frac12t\right)}\,\mathrm{d}t-2\pi\right)\\ &=\lim_{n\to\infty}\frac1{2\pi}\int_0^{2\pi/(2n+1)}\frac{\sin\left(\frac{2n+1}{2}t\right)}{\sin\left(\frac12t\right)}\,\mathrm{d}t-\frac12\\ &=\lim_{n\to\infty}\frac1{(2n+1)\pi}\int_0^\pi\frac{\sin(t)}{\sin\left(\frac1{2n+1}t\right)}\,\mathrm{d}t-\frac12\\ &=\frac1\pi\int_0^\pi\frac{\sin(t)}{t}\mathrm{d}t-\frac12\\[18pt] &\doteq0.089489872236 \end{align} 

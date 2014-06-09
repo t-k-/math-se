@@ -1,0 +1,12 @@
+D_n  = \det \begin{pmatrix}    x  & 0 & \cdots  &  \cdots  & 0      & 1 \\    -1 & x & 0       &  \vdots  & 0      & 2 \\    0  &-1 & \ddots  &  \ddots  & \vdots & \vdots  \\ \vdots & \ddots & \ddots & x & 0 & n-2 \\  0 &  \cdots & 0  & - 1 & x & n-1 \\   0 &  \cdots  & 0 & 0 & - 1 & x  \\ \end{pmatrix} 
+D_n  = x^n  + x^{n - 1}  + \left( {n - 1} \right)x^{n - 2}  + \cdots( {n - m + 1} )x^{n - m}  +  \cdots + 3x^2  + 2x + 1
+R_i
+i^\text{th}
+R_1 \leftarrow xR_2 + x^2 R_3 + \cdots + x^{n-1} R_n
+ \begin{pmatrix} 0 & 0 & 0 & \cdots & 0 & 1 + 2 x + 3 x^2 + \cdots + (n-1)x^{n-2} + x^n  \\ -1 & x & 0 & \cdots & 0 & 2 \\ 0 & -1 & x & \cdots  & 0 & 3 \\ \vdots & \vdots & \vdots &  & \vdots & \vdots \\ 0 & 0 & 0 & \cdots & -1 &  x \end{pmatrix} \, . 
+M
+(n-1) \times (n-1)
+M
+\det(M) = (-1)^{n-1}
+ \det(D_n) = (-1)^{n+1} (1 + 2 x + 3 x^2 + \cdots + (n-1)x^{n-2} + x^n) \det(M) \, , 
+ \begin{pmatrix} -1 & x & 0 & \cdots & 0 \\ 0 & -1 & x & \cdots  & 0 \\ \vdots & \vdots & \ddots &  & \vdots \\ 0 & 0 & 0 & \cdots & -1 \end{pmatrix} \, . 

@@ -1,0 +1,17 @@
+\delta_n(x) = 1
+x \in [n, n+1]
+0
+\delta_n(x) \geq 0
+\int_R \delta_n(x) = 1
+\int_{-\epsilon}^{\epsilon} \delta_n(x) dx \to 1
+\epsilon > 0
+\epsilon \to 0
+E_n = \int_R \phi(x) \delta_n(x) dx - \phi(o) = \int_R (\phi(x)-\phi(0)) \delta_n(x) dx
+|E_n| \leq \int_{\epsilon}^{\epsilon} |\phi(x)-\phi(0)|\delta_n(x)dx + \int_{R\setminus [-\epsilon, \epsilon]} |\phi(x)-\phi(0)| \delta_n(x) dx
+|E_n| \leq \sup_{x \in [-\epsilon, \epsilon]} |\phi(x)-\phi(0)| \int_{-\epsilon}^\epsilon \delta_n(x) dx + 2 \sup_{x \in R} |\phi(x)| \int_{R\setminus [-\epsilon, \epsilon]} \delta_n(x) dx.
+\limsup_{n \to \infty} |E_n| \leq \sup_{x \in [-\epsilon, \epsilon]} |\phi(x)-\phi(0)|.
+ \delta_n(x) = n/2 
+x\in (0,1/n]
+x\in (1,1+1/n]
+\phi
+ \lim \int_{-\infty}^\infty \phi(x)\delta_n(x)dx = \frac12(\phi(0)+\phi(1)) 

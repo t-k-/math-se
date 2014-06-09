@@ -1,0 +1,21 @@
+(V, \langle \cdot, \cdot \rangle)
+f,g : \mathbb{R} \longrightarrow V
+ \frac{d}{dt} \langle f, g \rangle = \langle f(t), g^{\prime}(t) \rangle + \langle f^{\prime}(t), g(t) \rangle 
+h\to 0
+g
+ \begin{align*}   \frac{1}{h}   &    \left[     \langle f(t+h),\, g(t+h)\rangle - \langle f(t),\, g(t) \rangle   \right] \\   & =    \frac{1}{h}     \left[       \langle f(t+h),\, g(t+h)\rangle - \langle f(t),\, g(t+h)\rangle     \right]    + \frac{1}{h}     \left[       \langle f(t),\, g(t+h)\rangle - \langle f(t),\, g(t)\rangle     \right] \\   &=    \left\langle     \frac{1}{h}       \left[         f(t+h) - f(t)        \right],\,         g(t+h)   \right\rangle    +   \left\langle     f(t),\,     \frac{1}{h}       \left[         g(t+h) - g(t)       \right]   \right\rangle. \end{align*} 
+ \frac{d}{dt} \langle f(t), g(t) \rangle 
+ \langle f^{\prime}(t), g(t) \rangle + \langle f(t), g^{\prime}(t) \rangle 
+\frac{\|T(v_0+v,w_0+w)-T(v_0,w_0)-(T(v,w_0)+T(v_0,w))\|}{\|(v,w)\|}=\frac{\|T(v,w)\|}{\|(v,w)\|}\leq C\frac{\|v\|\|w\|}{\|(v,w)\|}\to 0
+(v,w)\to 0
+V=W
+Z=\mathbb R
+Z=\mathbb C
+T:V\times V\to Z
+DT_{(v_0,w_0)}(v,w)=\langle v,w_0\rangle+\langle v_0,w\rangle
+f,g:\mathbb R\to V
+F:\mathbb R\to V\times V
+F(t)=(f(t),g(t))
+DF|_t(h)=h(f'(t),g'(t))
+D(T\circ F)|_{t}(h) =DT|_{F(t)}\circ DF|_t(h)=h(\langle f'(t),g(t)\rangle+\langle f(t),g'(t)\rangle),
+\frac{d}{dt} \langle f, g \rangle = \langle f'(t),g(t)\rangle+\langle f(t),g'(t)\rangle

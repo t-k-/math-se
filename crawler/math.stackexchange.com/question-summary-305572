@@ -1,0 +1,11 @@
+\mathbb R^n
+k
+\le1
+x_1,\ldots,x_k
+F:= \left\{x \in \mathbb{R}^n; \sum_{i=1}^k |x_i-x| \leq 1 \right\}
+x,y \in F
+\lambda \in (0,1)
+x_{\lambda} := \lambda \cdot x + (1-\lambda) \cdot y
+\begin{align} \sum_{i=1}^k |x_i-x_{\lambda}| &= \sum_{i=1}^k \underbrace{|(\lambda \cdot x_i+(1-\lambda) \cdot x_i)-(\lambda \cdot x+(1-\lambda) \cdot y)|}_{|\lambda \cdot (x_i-x)+(1-\lambda) \cdot (x_i-y)|} \\ &\leq \lambda  \cdot \underbrace{\sum_{i=1}^k  |x_i-x|}_{\leq 1} + (1-\lambda) \cdot \underbrace{\sum_{i=1}^k |x_i-y|}_{\leq 1} \leq \lambda +  (1-\lambda)=1 \end{align}
+x_{\lambda} \in F
+F

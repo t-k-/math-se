@@ -1,0 +1,33 @@
+X_0,\ldots, X_i,\ldots, X_n
+0,\ldots,J_i,\ldots,J_n
+Y
+D_6
+D_{10}
+1, \ldots, 6
+1, \ldots, 10
+X
+[1,6]
+Y
+[1,10]
+Z=X+Y
+Z
+[1+1, 6+10] = [2,16]
+Z
+Z
+X
+Y
+X=k
+Y=z-k
+2\le n \le 7, P(Z) = \frac{n-1}{60}
+Y
+Z=12
+X=1
+ 8\le n \le 11, P(Z) = \frac{6}{60}
+ P(Z=z) = \sum_{k=0}^z P(X=k) P(Y=z-k) 
+P(Z=2) = P(X=1)P(Y=2-1) = \frac{1}{6}\frac{1}{10} = \frac{1}{60}\\ P(Z=3) = P(X=1)P(Y=3-1) + P(X=2)P(Y=3-2) = \frac{2}{60} \\ \vdots\\ P(Z=7) = P(X=1)P(Y=7-1) + \dots +P(X=6)P(Y=7-6) = \frac{6}{60}. 
+ P(Z=8) = P(X=1)P(Y=8-1) + \dots + P(X=6)P(Y=8-6) = \frac{6}{60}\\ P(Z=9) = P(X=1)P(Y=9-1) + \dots + P(X=6)P(Y=9-6) = \frac{6}{60}\\ \vdots\\ P(Z=11) = P(X=1)P(Y=11-1) + \dots + P(X=6)P(Y=11-6) = \frac{6}{60}. 
+ P(Z=12) = P(X=2)P(Y=12-2) + \dots + P(X=6)P(Y=12-6) = \frac{5}{60}\\ P(Z=13) = P(X=3)P(Y=13-2) + \dots + P(X=6)P(Y=13-6) = \frac{4}{60}\\ \vdots\\ P(Z=16) = P(X=6)P(Y=16-6) = \frac{1}{60}. 
+ P(Z=z) =  \begin{cases} \dfrac{z-1}{60} & 2 \le z \le 7 \\ \dfrac{6}{60}   & 8 \le z \le 11 \\ \dfrac{17-z}{60} & 12 \le z \le 16 \\ \end{cases} 
+Z
+U
+Z+U

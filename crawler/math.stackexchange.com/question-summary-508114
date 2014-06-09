@@ -1,0 +1,61 @@
+var(y-x)
+x = 0, 1, 2
+y = 0, 1, 2
+p(0, 0) = 0, p(1, 0) = 0.4, p(2, 0) = 0.2
+p(0,1)=0.2, p(1,1)=0.2, p(2,1) = 0
+var(x-y) = var(x) + var(y) - 2cov(x, y)
+E(x), E(x^2), E(y), E(y^2),
+E(xy)
+X
+Y
+X
+Y
+ E(X)=\sum_{k=0}^\infty k Pr(X=k) 
+ E(X)=0*\frac{1}{5}+1*\frac{3}{5}+2*\frac{1}{5}=1 
+ E(Y)=0*\frac{3}{5}+1*\frac{2}{5}+2*0=\frac{2}{5} 
+E(X^2)
+E(Y^2)
+ \begin{align} E(X^2)&=0^2*\frac{1}{5}+1^2*\frac{3}{5}+2^2*\frac{1}{5}=\frac{7}{5}\\ E(Y^2)&=0^2*\frac{3}{5}+1^2*\frac{2}{5}+2^2*0=\frac{2}{5} \end{align} 
+V(X)=E(X^2)-E(X)^2
+ \begin{align} V(X)&=\frac{7}{5}-1^2=\frac{2}{5}\\ V(Y)&=\frac{2}{5}-\frac{4}{25}=\frac{6}{25} \end{align} 
+E(XY)
+ E(XY)=\sum_{k=0}^\infty\sum_{l=0}^\infty kl Pr(X=k, Y=l) 
+ E(XY)=\sum_{k=0}^2\sum_{l=0}^2klPr(X=k, Y=l) 
+k=0
+l=0
+ E(XY)=\sum_{k=1}^2\sum_{l=1}^2klPr(X=k, Y=l) 
+Y
+Y
+Y=1
+ E(XY)=\sum_{k=1}^2kPr(X=k, Y=1)=Pr(X=1, Y=1)+2Pr(X=2, Y=1)=Pr(X=1, Y=1)=\frac{1}{5}. 
+ Cov(X, Y)=E(XY)-E(X)E(Y)=\frac{1}{5}-1*\frac{2}{5}=-\frac{1}{5} 
+-\frac{1}{5}
+E(XY)
+XY
+X
+Y
+Y=2
+X=0
+Y=0
+E(XY)
+X=1
+Y=1
+0.2
+E(XY)=(1)(1)(0.2)
+E(X^2)
+X=1
+0.2+0.4
+X=2
+0.2
+\Pr(X=0)
+E(X^2)=(1^2)(0.6)+(2^2)(0.2)=1.4
+E(X)
+(1)(0.6)+(2)(0.2)=1
+E(Y^2)
+E(Y)
+Y
+2
+Y^2=Y
+0.2
+\text{Cov}(X,Y)=E(XY)-E(X)E(Y)
+\text{Var}(W)=E(W^2)-(E(W))^2

@@ -1,0 +1,67 @@
+a\ge 0, b\ge 0
+f(a,b,\lambda,\gamma)=\frac{1}{2}[(1+\cos(\gamma))\cos(\lambda(b-a))+(1-\cos(\gamma))\cos(\lambda(b+a))],
+0< \gamma\le \pi
+\lim_{(a,b)\to (0,0)} \frac{\cos^{-1}(f(a,b,\lambda,\gamma))}{\cos^{-1}(f(a,b,1,\gamma))}=|\lambda|
+f(a,b,\lambda,\gamma)=\cos(\lambda a)\cos(\lambda b)+\sin(\lambda a)\sin(\lambda b)\cos(\gamma).
+{\bf Edit}\ 
+\gamma\in\ ]0,\pi[\ 
+a+b:=r \quad(r\geq0),\quad b-a:=t\ r \quad(|t|\leq1), \quad q:=\sin{\gamma\over2}\ .
+r\to 0
+t
+f(a,b,\lambda,\gamma)=(1-q^2)\cos(\lambda t r) + q^2 \cos(\lambda r) = 1 -{\lambda^2\over2}(q^2+t^2-q^2 t^2) r^2 + O(r^4)\ .
+\phi(a,b,\lambda,\gamma)=:\phi_\lambda
+0
+(a,b)\to(0,0)
+f(a,b,\lambda,\gamma)
+\sin^2\phi_\lambda=1-\cos^2\phi_\lambda= \lambda^2(q^2+t^2-q^2 t^2) r^2 +O(r^4)\ .\qquad(*)
+q>0
+q^2+t^2>0
+u>0
+v\in\bigl]{-{\pi\over2}},{\pi\over2}\bigr[
+t=u\sin v
+\ q= u \cos v
+u
+v
+(*)
+\sin^2\phi_\lambda ={1\over8}\lambda^2 u^2\bigl(8-u^2+u^2\cos(4v)\bigr)r^2 + O(r^4)\ .
+8-u^2+u^2\cos(4v)
+u
+{\sin^2\phi_\lambda \over \sin^2\phi_1}=\lambda^2 + O(r^2)\ ,
+O
+u
+v
+\gamma
+\lim_{r\to 0+}{\phi_\lambda \over \phi_1}\ =\ \lambda\ ,
+\gamma
+a
+b
+\arccos(f)
+\vert \lambda \vert
+    f(a,b,\lambda, \gamma) = \cos(\lambda(a-b)) - 2 \sin(\lambda a) \sin(\lambda b) \sin^2  \left(\frac{\gamma}{2} \right) 
+   f(a, b, \lambda, \gamma) \sim 1 - \frac{1}{2}\lambda^2 (a-b)^2 - 2 \sin^2  \left(\frac{\gamma}{2} \right) \lambda^2 a b + o(a^2,ab,b^2) 
+    \arccos(f(a,b,\lambda, \gamma)) \sim \vert \lambda\vert  \sqrt{ (a-b)^2 + 4 a b \cdot \sin^2  \left(\frac{\gamma}{2} \right)  } 
+g(a,b,\gamma)
+(a-b)^2+4ab\sin^2(\gamma/2)
+o,o_1
+\gamma
+g(a,b,\gamma)
+>0
+(a,b)\neq (0,0)
+\gamma>0
+o((a-b)^2)=0
+a=b,
+o((a-b)^2)/g(a,b,\gamma)\le o((a-b)^2)/(a-b)^2\to 0.
+\lim_{(a,b)\to (0,0)}\frac{\cos^{-1}(f(a,b,\lambda,\gamma)}{\cos^{-1}(f(a,b,1,\gamma)}=|\lambda|\lim_{(a,b)\to (0,0)}\sqrt{\frac{g(a,b,\gamma)+o((a-b)^2)+o(ab)\sin^2(\gamma/2)}     {g(a,b,\gamma)+o_1((a-b)^2)+o_1(ab)\sin^2(\gamma/2)}},
+\lim_{x\to 0}\frac{\cos^{-1}(1-x)}{\sqrt{2x}}=1.
+o_1
+0<\gamma\le\pi
+|\lambda| 
+(a,b)\to (0,0)
+o(ab)\sin^2(\gamma/2)/g(a,b,\gamma)=\frac{o(ab)\sin^2(\gamma/2)}{(a-b)^2+4ab\sin^2(\gamma/2)}\le o(ab)/ab\to 0.
+(a,b)\to (0,0)
+0<\gamma\le\pi
+f(a,b,\lambda,\gamma)
+f(a,b,1,\gamma)
+0<\gamma\le\pi
+\lim_{(a,b)\to (0,0)}\frac{\cos^{-1}(f(a,b,\lambda,\gamma))}{\sqrt{2(1-f(a,b,\lambda,\gamma))}}
+\lim_{(a,b)\to (0,0)}\frac{\cos^{-1}(f(a,b,1,\gamma))}{\sqrt{2(1-f(a,b,1,\gamma))}}

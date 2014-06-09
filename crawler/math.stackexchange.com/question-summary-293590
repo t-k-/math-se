@@ -1,0 +1,7 @@
+(B_t)
+f
+X_t = \int_0^t f(s)B_s ds
+(X_t)
+(X_t)
+\mathbb{E} \left( X_t X_s\right) = \mathbb{E}\left( \left(\int_0^t f(u)B_u du \right) \left( \int_0^s f(v)B_v dv\right)\right) = \int_0^t \int_0^s f(u)f(v)\mathbb{E}\left(B_u B_v \right)du dv
+= \int_0^t \int_0^s f(u)f(v) \cdot \min(u,v) du dv

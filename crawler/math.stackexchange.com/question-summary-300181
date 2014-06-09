@@ -1,0 +1,63 @@
+n
+\mathbb  N
+m
+x_1,x_2,...,x_n
+m=n
+2x_1+x_2+...+x_n=x_1+x_1+x_2+...+x_n
+(n-2)x_1+3x_2=\underbrace{x_1+x_1+ \ldots +x_1}_{n-2 \, \text{terms}}+x_2+x_2+x_2
+x_1+x_2+(x_{n-1})^{n-1}=x_1+x_2+\underbrace{x_{n-1}*x_{n-1}* \ldots *x_{n-1}}_{n-1 \, \text{terms}}
+(x_3)^3+ (x_n)^{n-2}=x_3*x_3*x_3+\underbrace{x_{n}*x_{n}* \ldots *x_{n}}_{n-2 \, \text{terms}}
+(x_1)(x_2)^n=x_1*\underbrace{x_2*x_2* \ldots *x_2}_{n \, \text{terms}}
+n
+m
+F(n,m)
+F(n,m)
+F(2,m)
+F(2,1)=6
+x_1+x_1 , x_2+x_2, x_1+x_2, x_1x_2, (x_1)^2,(x_2)^2 
+F(2,m)
+m+1
+m
+(x_1+x_1)*x_1
+x_1+x_1*x_1=x_1+x_1^2
+m
+F(n,m)
+m+1
+n
+2^m
+F(n,m) \leq p(m+1)n^{m+1}
+p(x)
+c_i
+i
+i
+i-1
+\sum\limits_{i=1}^{m+1}{(i-1)c_i}
+\sum\limits_{i=1}^{m+1}{c_i}-1
+\sum\limits_{i=1}^{m+1}{ic_i}=m+1
+i
+\binom{i+n-1}{i}
+b_j
+x_j
+\sum\limits_{j=1}^{n}{b_j}=i
+c_i
+\binom{c_i+\binom{i+n-1}{i}-1}{c_i}
+a_j
+\sum\limits_{j=1}^{\binom{i+n-1}{i}}{a_j}=c_i
+c_i
+\prod\limits_{i=1}^{m+1}{\binom{c_i+\binom{i+n-1}{i}-1}{c_i}}
+F(n,m)=\sum\limits_{\sum\limits_{i=1}^{m+1}{ic_i}=m+1}{\prod\limits_{i=1}^{m+1}{\binom{c_i+\binom{i+n-1}{i}-1}{c_i}}}
+n
+m+1
+F(n,1)=n(n+1), F(n,2)=\frac{n(n+1)(5n+4)}{6}, F(n,3)=\frac{n(n+1)(5n^2+9n+6)}{8}
+n=1, \binom{i+n-1}{i}=1
+\prod\limits_{i=1}^{m+1}{\binom{c_i+\binom{i+n-1}{i}-1}{c_i}}=1
+F(1,m)=p(m+1)
+g(n)=\frac{F(n,m)}{n^{m+1}}
+n
+F(n,m) \leq F(1,m)n^{m+1}=p(m+1)n^{m+1}
+F(n,m)
+(n+1)
+F(n,m)=(n+1)P(n)
+P(n)
+m
+F(n,m) \leq \frac{F(1,m)}{2}n^{m}(n+1)=\frac{p(m+1)}{2}n^{m}(n+1)

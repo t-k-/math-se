@@ -1,0 +1,28 @@
+I={\Large\iint}_{D}\dfrac{(x+y)\ln\left(1+\dfrac{y}{x}\right)}{\sqrt{1-x-y}}\,dx\,dy,
+D=\{(x,y)\mid x+y\le 1,x\ge 0,y\ge 0\}.
+\int_0^1 \int_0^{1-x} \frac{ (x+y) \log(1 + \frac y x)}{ \sqrt{1 - x - y}} dy dx
+ \begin{align*} I_1 &= \int_0^{1-x} \frac{ (x+y) \log(1 + \frac y x)}{ \sqrt{1 - x - y}} dy \\     &=  \left[\log (1 + \frac yx)\frac{-2}{3}  \sqrt{-x-y+1} (x+y+2) \right ]_0^{1-x} \\ &  - \int_0^{1-x} \frac 1 {x+y}  \frac{-2}{3}  \sqrt{-x-y+1} (x+y+2) dy \\   &= \frac 2 3 \int_0^{1-x} \frac{(x+y+2)\sqrt{1-x-y}}{x+y}dy \\   &=  \frac 2 3 \left( -\frac{2}{3} \left(\sqrt{1-x} (x+5)-6 \sinh ^{-1}\left(\sqrt{\frac{1}{x}-1}\right)\right. \right )\\  \end{align*}
+x=uv
+y=(1-u)v
+x+y=v
+D
+(u,v)
+0\leqslant u,v\leqslant 1
+(u,v)\mapsto(x,y)
+v
+I=J\cdot K
+J=\left.u-u\log u\right|_0^1=1
+v=1-w^2
+2w
+ I=\iint\frac{-v\log u}{\sqrt{1-v}}\cdot v\cdot \mathrm du\mathrm dv. 
+ J=\int_0^1(-\log u)\cdot \mathrm du,\qquad K=\int_0^1\frac{v^2}{\sqrt{1-v}}\cdot \mathrm dv. 
+ K=\int_0^1\frac{(1-w^2)^2}{w}\cdot 2w\cdot \mathrm dw=2\left.\left(w-\tfrac23w^3+\tfrac15w^5\right)\right|_0^1=\tfrac{16}{15}. 
+ I=1\cdot\tfrac{16}{15}. 
+ I={\iint}_{D}\dfrac{(x+y)\ln\left(1+\dfrac{y}{x}\right)}{\sqrt{1-x-y}}\,dx\,dy={\int}_{0}^{1}\int_{0}^{1-y}\dfrac{(x+y)\ln\left(1+\dfrac{y}{x}\right)}{\sqrt{1-x-y}}\,dx\,dy. 
+\displaystyle{% I = {\Large\iint}_{\!\!D} \!\! {\left(x + y\right)\ln\left(1 + y/x\right)  \over  \sqrt{1 - x - y\,}}\,{\rm dx}\,{\rm d}y\,,\qquad D \equiv \left\lbrace \left(x,y\right)\ \ni\ x \geq 0\,,\ y \geq 0\,,\ x + y \leq 1 \right\rbrace}
+ \begin{array}{|c|}\hline\\ \color{#ff0000}{\large\quad% I = {\Large\iint}_{\!\!D} \!\! {\left(x + y\right)\ln\left(1 + y/x\right)  \over  \sqrt{1 - x - y\,}}\,{\rm dx}\,{\rm d}y \color{#000000}{\ =\ } {16 \over 15}\quad} \\ \\ \hline \end{array} 
+I=\int\int_{D}\dfrac{(x+y)\ln{(1+\dfrac{y}{x})}}{\sqrt{1-x-y}}dxdy=\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{1}{\sin{t}+\cos{t}}}\dfrac{r(\sin{t}+\cos{t})\ln{(1+\tan{t})}}{\sqrt{1-r(\cos{t}+\sin{t}}}rdr
+u=\sqrt{1-r(\cos{t}+\sin{t})}
+\Longrightarrow I=2\int_{0}^{\frac{\pi}{2}}\dfrac{\ln{(1+\tan{t})}}{(\cos{t}+\sin{t})^2}dt\cdot\int_{0}^{1}(1-2u^2+u^4)dy
+I=\dfrac{16}{15}\int_{0}^{\frac{\pi}{2}}\dfrac{\ln{(1+\tan{t})}}{(1+\tan{t})^2}d\tan{t}
+I=-\dfrac{16}{15}\int_{0}^{\frac{\pi}{2}}\ln{(1+\tan{t})}d\dfrac{1}{1+\tan{t}}=\dfrac{16}{15}

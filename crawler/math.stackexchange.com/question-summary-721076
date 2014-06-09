@@ -1,0 +1,47 @@
+y(0)=3
+y'(0)=1
+y(1) = 14.82789927
+ \frac{d^2y}{dx^2}+\frac{dy}{dx}-6y=0
+y(0)=3
+z(0)=1
+ \left\{\begin{array}{l}   \frac{dy}{dx} = z \\   \frac{dz}{dx} = 6y - z \end{array}\right. 
+ \frac{dy}{dx} = f(x,y,z) \\ \frac{dz}{dx}=g(x,y,z)
+ y_{i+1}=y_i + \frac{1}{6}(k_0+2k_1+2k_2+k_3) \\ z_{i+1}=z_i + \frac{1}{6}(l_0+2l_1+2l_2+l_3) 
+k_0 = hf(x_i,y_i,z_i) \\ k_1 = hf(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_0,z_i+\frac{1}{2}l_0) \\ k_2 = hf(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_1,z_i+\frac{1}{2}l_1) \\ k_3 = hf(x_i+h,y_i+k_2,z_i+l_2) 
+l_0 = hg(x_i,y_i,z_i) \\ l_1 = hg(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_0,z_i+\frac{1}{2}l_0) \\ l_2 = hg(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_1,z_i+\frac{1}{2}l_1) \\ l_3 = hg(x_i+h,y_i+k_2,z_i+l_2)
+y(0)=3
+z(0)=1
+ \left\{\begin{array}{l}   \frac{dy}{dx} = z \\   \frac{dz}{dx} = 6y - z \end{array}\right. 
+l_0 = hg(x_i,y_i,z_i)
+k_1 = hf(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_0,z_i+\frac{1}{2}l_0)
+l_1 = hg(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_0,z_i+\frac{1}{2}l_0)
+k_2 = hf(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_1,z_i+\frac{1}{2}l_1)
+l_2 = hg(x_i+\frac{1}{2}h,y_i+\frac{1}{2}k_1,z_i+\frac{1}{2}l_1)
+k_3 = hf(x_i+h,y_i+k_2,z_i+l_2)
+l_3 = hg(x_i+h,y_i+k_2,z_i+l_2)
+y_{i+1}=y_i + \frac{1}{6}(k_0+2k_1+2k_2+k_3)
+ \frac{dy}{dx} = f(x,y,z) = z \\ \frac{dz}{dx}=g(x,y,z) = 6y - z
+i= 0, t_0 = 0 = x_0
+l_0 = hg(x_0,y_0,z_0) = \dfrac{1}{10}(6y_0 - z_0) = \dfrac{1}{10}(6 \times 3 - 1) = \dfrac{1}{10}(17)
+k_1 = hf(x_0+\frac{1}{2}h,y_0+\frac{1}{2}k_0,z_0+\frac{1}{2}l_0) = \dfrac{1}{10}(1 + \dfrac{1}{2}\dfrac{1}{10}(17)) ~~
+l_1 = hg(x_0+\frac{1}{2}h,y_i+\frac{1}{2}k_0,z_0+\frac{1}{2}l_0)
+k_2 = hf(x_0+\frac{1}{2}h,y_0+\frac{1}{2}k_1,z_0+\frac{1}{2}l_1)
+l_2 = hg(x_0+\frac{1}{2}h,y_0+\frac{1}{2}k_1,z_0+\frac{1}{2}l_1)
+k_3 = hf(x_0+h,y_0+k_2,z_0+l_2)
+l_3 = hg(x_0+h,y_0+k_2,z_0+l_2)
+y_{1}=y_0 + \frac{1}{6}(k_0+2k_1+2k_2+k_3)
+x_1
+z_1
+i = 1, t_1 = t_0 + h = \dfrac{1}{10} = x_1
+l_0 = hg(x_1,y_1,z_1) = \dfrac{1}{10}(6y_1 - z_1)
+k_1 = hf(x_1+\frac{1}{2}h,y_1+\frac{1}{2}k_0,z_1+\frac{1}{2}l_0)
+l_1 = hg(x_1+\frac{1}{2}h,y_1+\frac{1}{2}k_0,z_1+\frac{1}{2}l_0)
+k_2 = hf(x_1+\frac{1}{2}h,y_1+\frac{1}{2}k_1,z_1+\frac{1}{2}l_1)
+l_2 = hg(x_1+\frac{1}{2}h,y_1+\frac{1}{2}k_1,z_1+\frac{1}{2}l_1)
+k_3 = hf(x_1+h,y_1+k_2,z_1+l_2)
+l_3 = hg(x_1+h,y_1+k_2,z_1+l_2)
+y_{2}=y_1 + \frac{1}{6}(k_0+2k_1+2k_2+k_3)
+10
+z_{10}
+y(x) = e^{-3 x}+2 e^{2 x}
+y(1) = \dfrac{1}{e^3} + 2 e^2 = 14.8278992662291643974401973...

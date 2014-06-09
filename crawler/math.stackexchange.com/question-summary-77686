@@ -1,0 +1,54 @@
+\sum \limits_{i=1}^{n}\  \sum \limits_{j=i}^{n}\  \sum \limits_{k=i}^{j}\ 1 = \sum \limits_{j=1}^{n}\ \sum \limits_{k=1}^{j}\ \sum \limits_{i=1}^{k}\ 1 
+\{ (i, j, k) \in \mathbb Z^3 \mid 1 \leq i \leq k \leq j \leq n \}
+j
+1
+n
+k
+i
+j
+k
+1
+j
+1 \leq k \leq j
+k
+j
+i
+1
+k
+j
+k
+i \leq k
+i \leq j
+i
+1
+n
+i
+j
+i
+n
+i
+j
+k
+[i, j]
+\sum_i\sum_j\sum_k [1 \leq i \leq n][i \leq j \leq n][i \leq k \leq j]
+i,j,k
+[p][q]=[p\text{ and }q]
+\sum_i\sum_j\sum_k [1\leq i\leq k\leq j\leq n]=\sum_j\sum_k\sum_i [1\leq i\leq k\leq j\leq n]
+\begin{align*}\sum_j\sum_k\sum_i [1\leq i\leq k\leq j\leq n]&=\sum_j\sum_k\sum_i [1\leq i\leq k][1\leq k\leq j\leq n]\\&=\sum_j\sum_k\sum_i [1\leq i\leq k][1\leq k\leq j][1\leq j\leq n]\\&=\sum_j[1\leq j\leq n]\sum_k[1\leq k\leq j]\sum_i [1\leq i\leq k]\end{align*}
+\sum \limits_{i=1}^{n}\  \sum \limits_{j=i}^{n}\  \sum \limits_{k=i}^{j}\ 1 = \sum \limits_{i=1}^{n}\ \sum \limits_{j=1}^{i}\ \sum \limits_{k=1}^{j}\ 1
+i = 1
+n
+n
+f(n) = \sum \limits_{i=1}^{n}\  \sum \limits_{j=i}^{n}\  \sum \limits_{k=i}^{j}\ 1,
+g(n) = \sum \limits_{j=1}^{n}\ \sum \limits_{k=1}^{j}\ \sum \limits_{i=1}^{k}\ 1.
+f(n) = g(n)
+n=1
+f(n+1) = f(n) + \sum_{i=1}^{n+1} \sum_{k=i}^{n+1} 1
+g(n+1) = g(n) + \sum_{k=1}^{n+1} \sum_{i=1}^{k} 1
+(0,0),(0,n+1),(n+1,n+1)
+(n+1,0)
+i
+k
+\sum_{i=1}^{n+1} \sum_{k=i}^{n+1} 1 = \sum_{k=1}^{n+1} \sum_{i=1}^{k} 1
+\sum \limits_{k=1}^{n} \sum \limits_{j=k}^{n}\  \sum \limits_{1=i}^{k} 1
+\sum \limits_{i=1}^{n}\  \sum \limits_{j=i}^{n}\  \sum \limits_{k=i}^{j}\ 1

@@ -1,0 +1,24 @@
+E \subseteq \mathbb{R}
+A \subseteq  \mathbb{R}
+m^*(A) \geq m^*(A \cap E) + m^*(A \cap E^c)
+m^*(A) = \inf \{ \sum|I_n| : \{I_n\}  \text{is a covering of }  of A \} 
+I = [a,b]
+A \subseteq \mathbb{R}
+\epsilon > 0
+\{I_n\}
+A
+ \sum |I_n| \leq m^*(A) + \epsilon 
+I'_n = I_n \cap [a,b]
+A \cap [a,b] \subseteq I_n \cap [a,b] 
+I'_n
+A \cap [a,b]
+ m^*(A \cap [a,b]) \leq \sum |I_n'| 
+I_n'' = I_n \cap (-\infty, a)
+I_n''' = I_n \cap (b, \infty)
+I_n''
+I_n'''
+A \cap [a,b]^c 
+m^*(A \cap [a,b]^c) \leq \sum |I_n''| + \sum |I_n'''| 
+I_n', I_n'', I_n'' \subseteq I_n
+\sum |I_n'| + \sum |I_n''| + \sum |I_n'''| \leq \sum |I_n| 
+m^*(A \cap [a,b]) + m^*(A \cap [a,b]^c) \leq m^*(A) + \epsilon

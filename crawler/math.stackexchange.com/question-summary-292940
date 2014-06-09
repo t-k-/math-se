@@ -1,0 +1,22 @@
+C(n, k)
+n
+k
+\sum_{k=0}^{n/2} C(n-k, k)
+s_n
+s_{n+2}=s_n+s_{n+1}
+n\in\mathbf N
+s_0=s_1=1
+s_n=F_{n+1}
+n
+2
+1\times n
+k\leq n/2
+k
+n-k
+k
+n
+n-1\geq0
+F_n
+n^{\text{th}}
+ \begin{align} \sum_n\sum_k\binom{n-k}{k}x^n &=\sum_n\sum_k\binom{n}{k}x^{n+k}\\ &=\sum_nx^n(1+x)^n\\ &=\frac1{1-x-x^2}\\ &=\frac1{\sqrt5}\left(\frac{\phi}{1-\phi x}+\frac{1/\phi}{1+x/\phi}\right)\\ &=\sum_n\frac{\phi^{n+1}-(-1/\phi)^{n+1}}{\sqrt5}x^n \end{align} 
+ \begin{align} \sum_k\binom{n-k}{k} &=\frac{\phi^{n+1}-(-1/\phi)^{n+1}}{\sqrt5}\\ &=F_{n+1} \end{align} 

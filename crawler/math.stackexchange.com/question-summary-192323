@@ -1,0 +1,29 @@
+g : \mathbb R \to \mathbb R
+f(x,y)=x^ng(\frac {y}{x})
+n\in\Bbb Z^+
+f
+x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial y}=nf
+x\frac {\partial f}{\partial x}=nx^ng(\frac {y}{x})-x^{n-1}g´(\frac {y}{x})
+y\frac {\partial f}{\partial y}=\frac {y}{x}g´(\frac {y}{x})
+\frac{\partial f}{\partial x} = \frac{\partial}{\partial x}\left(x^ng\left(\frac{y}{x}\right)\right) = \frac{\partial}{\partial x}(x^n)g\left(\frac{y}{x}\right) + x^n\frac{\partial}{\partial x}\left(g\left(\frac{y}{x}\right)\right).
+\frac{\partial}{\partial x}\left(g\left(\frac{y}{x}\right)\right)
+\frac{\partial}{\partial x}\left(g\left(\frac{y}{x}\right)\right) = g'\left(\frac{y}{x}\right)\frac{\partial}{\partial x}\left(\frac{y}{x}\right).
+\frac{\partial f}{\partial y}
+x^n
+y
+\frac{\partial}{\partial y}\left(g\left(\frac{y}{x}\right)\right)
+\frac{\partial f}{\partial x}
+\frac{\partial f}{\partial y}
+f
+h (x, y) = y / x
+f (x, y) = x^n g (y/x)
+f (x, y) = x^n g ( h (x,y))
+\partial_x f (x,y) = n x^{n-1} g (h(x,y)) + x^n g'(h(x,y)) \partial_x h (x,y)
+\partial_y f (x,y) = x^n g'(h(x,y)) \partial_y h (x,y)
+\partial_x h (x,y) = -y / x^2
+\partial_y h (x,y) = 1 / x
+\partial_x f (x,y) = n x^{n-1} g(y/x) - x^{n-2} y \, g'(y/x)
+\partial_y f (x,y) = x^{n-1} g'(y/x)
+x\, \partial_x f (x,y) = n x^n g(y/x) - x^{n-1} y\, g'(y/x)
+y\, \partial_y f (x,y) = x^{n-1} y\, g'(y/x)
+x\, \partial_x f (x,y) + y\, \partial_y f (x,y) = n x^n g(y/x) = n f (x,y)

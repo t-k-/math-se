@@ -1,0 +1,14 @@
+ \int {\frac{{1 + \frac{1}{{{x^2}}}}}{{{x^2} - 1 + \frac{1}{{{x^2}}}}}} dx 
+x^2-1+\frac1{x^2}=\left(x-\frac1x\right)^2+1
+\left(x-\frac1x\right)'=1+\frac1{x^2}
+\int\frac{1+\frac1{x^2}}{1+\left(x-\frac1x\right)^2}dx=\int\frac{\left(x-\frac1x\right)'dx}{1+\left(x-\frac1x\right)^2}=\arctan\left(x-\frac1x\right)+C
+\int\frac{f'(x)}{1+f(x)^2}dx=\arctan f(x)+C
+t=x-\frac 1x
+dt=1+\frac 1{x^2}
+\int \frac{dt}{t^2+1}=\tan^{-1}t+C
+x^2 - 1 + {1\over x^2} = \left(x-{1\over x}\right)^2 + 1
+\left(x-{1\over x}\right) = z 
+ \implies 1 + 1/x^2 dx = dz
+\int {dz \over z^2 + 1} 
+ = \arctan(z)
+ = \arctan\left(x-{1\over x}\right) + C

@@ -1,0 +1,23 @@
+s(x)=v(x)+q(x)g(x)
+g(x)h(x)=x^7+1
+s(x)=v(x)h(x)\bmod(x^7+1)
+GF(8)
+p(x)=x^3+x+1
+g(x)=x^4+\alpha^3x^3+x^2+\alpha x+\alpha^3
+q(x)=\alpha^6 x^2 + \alpha^2 x + \alpha
+v(x)=\alpha^6 x^6 + \alpha^3 x^3 + \alpha^6 x^2 + x + \alpha^4
+s(x)=v(x)+q(x)g(x)
+=(\alpha^6 x^6 + \alpha^3 x^3 + \alpha^6 x^2 + x + \alpha^4)+(\alpha^6 x^2 + \alpha^2 x + \alpha)(x^4+\alpha^3x^3+x^2+\alpha x+\alpha^3)
+=(\alpha^6 x^6 + \alpha^3 x^3 + \alpha^6 x^2 + x + \alpha^4)+(\alpha^6 x^6 + \alpha^3 x^3 + \alpha^6 x^2 + \alpha^3x + \alpha^4)=\alpha x
+h(x)=\frac{x^7+1}{g(x)}=x^3+\alpha^3x^2+\alpha^2x+\alpha^4
+s(x)=v(x)h(x)\bmod(x^7+1)
+s(x)=(\alpha^6 x^6 + \alpha^3 x^3 + \alpha^6 x^2 + x + \alpha^4)(x^3+\alpha^3x^2+\alpha^2x+\alpha^4)\bmod(x^7+1)
+s(x)=\alpha^6 x^9 + \alpha^2 x^8 + \alpha x^7 + \alpha x^4 + \alpha^4 x^3 + \alpha^4 x^2 + \alpha^3 x + \alpha \bmod (x^7+1)
+\frac{\alpha^6 x^9 + \alpha^2 x^8 + \alpha x^7 + \alpha x^4 + \alpha^4 x^3 + \alpha^4 x^2 + \alpha^3 x + \alpha}{x^7+1}
+=(\alpha^6 x^2 + \alpha^2 x + \alpha) + (\alpha x^4 + \alpha^4 x^3 + \alpha^3 x^2 + \alpha^5 x)
+s(x)=\alpha x^4 + \alpha^4 x^3 + \alpha^3 x^2 + \alpha^5 x
+s(x)
+s(x)
+g(x)
+\rm\ s(x)\ h(x)\equiv v(x)\ h(x)\ \ (mod\ x^7 + 1)\:,\:
+\rm\:h(x)\:,\:

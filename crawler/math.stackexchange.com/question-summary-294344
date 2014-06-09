@@ -1,0 +1,11 @@
+         A=         \begin{bmatrix}         -4 & -4 & 12 & 0 \\         -4 & -4 & 12 & 0 \\         4 & -2 & 0 &-6 \\         1 &-4 &7 &-5 \\          \end{bmatrix} 
+T(x)=Ax
+         RREF(A)=         \begin{bmatrix}         1 & 0 & -1 & -1 \\         0 & 1 & -2 & 1 \\         0 & 0 & 0 & 0 \\         0 & 0 & 0 & 0 \\          \end{bmatrix} 
+T(v)=Av,~~~v\in\mathbb K^4
+         T(v)=         \begin{pmatrix}         1 & 0 & -1 & -1 \\         0 & 1 & -2 & 1 \\         0 & 0 & 0 & 0 \\         0 & 0 & 0 & 0 \\          \end{pmatrix}\begin{pmatrix}         x  \\         y  \\         z  \\         t  \\          \end{pmatrix}=\begin{pmatrix}         x-z-t  \\         y-2z+t  \\        0  \\         0  \\          \end{pmatrix} 
+\begin{pmatrix}         1 & 0 & -1 & -1 \\         0 & 1 & -2 & 1 \\         0 & 0 & 0 & 0 \\         0 & 0 & 0 & 0 \\          \end{pmatrix}\approx\begin{pmatrix}         1 & 0 & 0 & 0 \\         0 & 1 & 0 & 0 \\         0 & 0 & 0 & 0 \\         0 & 0 & 0 & 0 \\          \end{pmatrix}  
+T(v)=         \begin{pmatrix}         1 & 0 & 0 & 0 \\         0 & 1 & 0 & 0 \\         0 & 0 & 0 & 0 \\         0 & 0 & 0 & 0 \\          \end{pmatrix}\begin{pmatrix}         x  \\         y  \\         z  \\         t  \\          \end{pmatrix}=\begin{pmatrix}         x  \\         y  \\        0  \\         0  \\          \end{pmatrix}=x\begin{pmatrix}         1  \\         0  \\        0  \\         0  \\          \end{pmatrix}+y\begin{pmatrix}         0  \\         1  \\        0  \\         0  \\          \end{pmatrix}
+v = (x,y,z,w)^T
+Av = (-4x-4y+12z,-4x-4y+12z,4x-2y-6w,x-4y+7z-5w)
+= x(-4,-4,4,1) + y(-4,-4,-2,-4) + z(12,12,0,7) + w(0,0,-6,-5)
+A

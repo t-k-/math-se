@@ -1,0 +1,35 @@
+y''+\frac{x}{2}y'+y=0
+y'=\frac{\partial y}{\partial x}
+g=y'
+g'+\frac{x}{2}g+y=0
+y=\int_Ce^{xu}K(u)~du
+(\int_Ce^{xu}K(u)~du)''+\dfrac{x}{2}(\int_Ce^{xu}K(u)~du)'+\int_Ce^{xu}K(u)~du=0
+\int_Cu^2e^{xu}K(u)~du+\dfrac{x}{2}\int_Cue^{xu}K(u)~du+\int_Ce^{xu}K(u)~du=0
+\int_C(u^2+1)e^{xu}K(u)~du+\int_C\dfrac{ue^{xu}K(u)}{2}d(xu)=0
+\int_C(u^2+1)e^{xu}K(u)~du+\int_C\dfrac{uK(u)}{2}d(e^{xu})=0
+\int_C(u^2+1)e^{xu}K(u)~du+\left[\dfrac{ue^{xu}K(u)}{2}\right]_C-\int_Ce^{xu}~d\left(\dfrac{uK(u)}{2}\right)=0
+\int_C(u^2+1)e^{xu}K(u)~du+\left[\dfrac{ue^{xu}K(u)}{2}\right]_C-\int_Ce^{xu}\dfrac{uK'(u)+K(u)}{2}du=0
+\int_C(u^2+1)e^{xu}K(u)~du+\left[\dfrac{ue^{xu}K(u)}{2}\right]_C-\int_Ce^{xu}\dfrac{uK'(u)-(2u^2+1)K(u)}{2}du=0
+\therefore uK'(u)-(2u^2+1)K(u)=0
+uK'(u)=(2u^2+1)K(u)
+\dfrac{K'(u)}{K(u)}=2u+\dfrac{1}{u}
+\int\dfrac{K'(u)}{K(u)}du=\int\left(2u+\dfrac{1}{u}\right)du
+\ln K(u)=u^2+\ln u+c_1
+K(u)=cue^{u^2}
+\therefore y=\int_Ccue^{u^2+xu}~du
+u
+\therefore y_n=\int_{a_n}^{b_n}c_n(k_nt)e^{(k_nt)^2+xk_nt}~d(k_nt)={k_n}^2c_n\int_{a_n}^{b_n}te^{{k_n}^2t^2+k_nxt}~dt
+x
+a_n
+b_n
+x
+k_n
+\lim\limits_{t\to a_n}t^2e^{{k_n}^2t^2+k_nxt}=\lim\limits_{t\to b_n}t^2e^{{k_n}^2t^2+k_nxt}
+\int_{a_n}^{b_n}te^{{k_n}^2t^2+k_nxt}~dt
+n=1
+a_1=0
+b_1=\infty
+k_1=\pm i
+\therefore y=C_1\int_0^\infty te^{-t^2}\cos xt~dt
+C_1\int_0^\infty te^{-t^2}\sin xt~dt
+y=C_1\int_0^\infty te^{-t^2}\sin xt~dt+C_2\int_0^\infty te^{-t^2}\cos xt~dt

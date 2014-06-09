@@ -1,0 +1,25 @@
+f(x) = x - \frac16 x^3 + \frac1{180} x^5
+-\pi
++\pi
+\sin(x) - \frac16 \sin(x)^3 + \frac1{180} \sin(x)^5
+L \sin(x/L) - \frac16 (L \sin(x/L))^3 + \frac1{180} (L \sin(x/L))^5
+L \sin(x/L) - \frac14\frac{L^3}6(3 \sin(x/L) - \sin(3x/L)) + \frac1{16}\frac{L^5}{180} (10 \sin(x/L) - 5 \sin(3x/L) + \sin(5x/L))
+(L - \frac{L^3}8 + \frac{L^5}{288}) \sin(x/L) + (\frac{L^3}{24} - \frac{L^5}{576}) \sin(3x/L)+\frac{L^5}{2880} \sin(5x/L)
+g(x) = P(x) \sin(Bx+c)
+\sin(a) \sin(b) = \frac12 (\cos(a-b)-\cos(a+b))
+N
+x_n = -\pi + n \Delta x
+n=0,1,\dots,N-1
+\Delta x = 2\pi / (N-1)
+f(\mathbf{x})
+f(\mathbf{x})
+\mathbf{w} = \operatorname{FFT}(f(\mathbf{x}))
+ f(x_n) = \sum_{m=0}^{N-1} w_m e^{j 2\pi n m/N} 
+ f(x_n) = \sum_{m=0}^{N-1} w_m \cos \left( {\pi\over N}\left(m+{1\over 2}\right) n \right). 
+[-1, 1], x = \cos(\arccos(x))
+x \over b
+x = b\cos(\arccos{x \over b})
+x^p = b^p\cos(\arccos{x^p \over b^p})
+f(x) = x - \frac16 x^3 + \frac1{180} x^5
+f(x) = b\cos(\arccos{x \over b}) - \frac16 b^3\cos( \arccos{x^3 \over b^3}) + \frac1{180} b^5 \cos(\arccos{x^5 \over b^5})
+\pm b

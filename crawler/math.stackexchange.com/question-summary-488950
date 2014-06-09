@@ -1,0 +1,14 @@
+P:S(\mathbb R^n)\rightarrow C^\infty(\mathbb T^n)
+f\mapsto Pf
+\|Pf\|_{L^1(\mathbb T^n)}\leq \|f\|_{L^1(\mathbb R^n)}
+S(\mathbb R^n)
+\displaystyle\|f\|_{L^1(\mathbb T^n)}=\int_{\mathbb T^n}|f(x)|\ dx
+Pf(x)=\sum_{k\in\mathbb Z^n} f(x+k).
+\mathbb{T}^n
+Q=[0,1)^n \subset \mathbb{R}^n
+k \in \mathbb{Z}^n
+ \|\tau_kf\|_{L^1(\mathbb{T}^n)}=\int_{Q}|f(x+k)|\,dx=\int_{k+Q}|f|, 
+ (\tau_kf)(x)=f(x+k) \quad \forall x,k \in \mathbb{R}^n, 
+ k+Q=[k_1,1+k_1)\times\ldots\times[k_n,1+k_n) \quad \forall k=(k_1,\ldots,k_n) \in \mathbb{Z}^n. 
+ \bigcup_{k\in \mathbb{z}^n}(k+Q)=\mathbb{R}^n, 
+ \|Pf\|_{L^1(\mathbb{T}^n)}=\left\|\sum_{k \in \mathbb{Z}^n}\tau_kf\right\|_{L^1(\mathbb{T}^n)}\le \sum_{k \in \mathbb{Z}^n}\|\tau_kf\|_{L^1(\mathbb{T}^n)}= \sum_{k \in \mathbb{Z}^n}\int_{k+Q}|f|=\int_{\mathbb{R}^n}|f|=\|f\|_{L^1(\mathbb{R}^n)}. 

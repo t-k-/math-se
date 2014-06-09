@@ -1,0 +1,57 @@
+K
+N \gt K
+0 \lt f \lt 1
+f(1-f)^{K-1} - (1-f)^{N-K} \alpha_K = 0
+f(1-f)^{K-2} - (1-f)^{N-K} \alpha_{K-1} (1 - f - \alpha_K) = 0
+\ldots
+f - (1-f)^{N-K} \alpha_1 \Pi_{i=2}^{K}(1-f- \alpha_i) = 0
+\alpha
+ \alpha_K = f ( 1-f)^{2K - N-1}
+ \ldots 
+ \alpha_{j-1} = \frac{f (1-f)^{K - N + j - 1} }{ \Pi_{i=j}^{K}(1-f- \alpha_i) }
+N=4000
+f=10^{-3}
+K=18
+K=19
+j=1
+f=10^{-4}
+K \lt 4000
+f
+N
+(1-f)^N = \frac{ f }{ 1 + f - (1 - f)^2 }
+(1-f)^N =\frac{ f }{ 1 + f - 1 +2f- f^2 } = \frac{ f }{ 3f- f^2 } = \frac1{ 3- f } 
+f
+(1-f)^N = \frac1{3}
+1-f = \frac1{3^{1/N}}
+f = 1-\frac1{3^{1/N}} = 1-3^{-1/N} = 1-e^{-\ln (3/N)} \approx 1-(1-(\ln (3/N)) = \ln (3/N) 
+f
+(1-f)^N(1-(1-f)^N) \approx 2f^2
+f
+1/N
+(1-Nf)(Nf) \approx 2f^2
+1-Nf \approx 2f/N
+f \approx 1/(N+2/N) \approx 1/N
+N=4000
+f \approx 2.5\times 10^{-4}
+f
+a/N + b/N^2
+a
+1
+b
+ \ldots 
+N
+ 1 = \frac{ f (1- f)^{k - N - 1} }{ \displaystyle \Pi_{i = 2}^{k} ( 1 - f - \alpha_i^{-}) } 
+ 1 - f - \alpha_2^{-} = \frac{ f (1- f)^{k - N - 1} }{ \displaystyle \Pi_{i = 3}^{k} ( 1 - f - \alpha_i^{-}) } 
+ 1 - f - \alpha_2^{-} = \frac{ \alpha_2^{-} }{ ( 1 - f)^2 } 
+  \alpha_2^{-} = \frac{ (1-f)^3 }{ 1 + ( 1 - f)^2 } 
+  \alpha_k^{-} = \frac{ (1-f)^{2k-1} }{ \displaystyle \sum_{i=0}^{k-1} (1-f)^{2i}  } 
+  \alpha_k^{-} = \frac{ (1-f)^{2k-1} \lbrack 1 - (1-f)^2 \rbrack }{ 1- (1-f)^{2k} } 
+2k = N
+  f = \frac{ (1-f)^N \lbrack 1 - (1-f)^2 \rbrack }{ 1- (1-f)^{N} } 
+ (1-f)^N = \frac{ f }{ 1 + f - (1 - f)^2 } = \frac{ 1 }{ 3 - f }
+ (3-f)(1-f)^N= 1 
+ N = - \frac{ \log{(3-f)} }{ \log{(1-f)} } 
+N
+f
+N=4000
+f=2.746 \times 10^{-4}

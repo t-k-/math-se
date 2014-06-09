@@ -1,0 +1,13 @@
+ \ln \binom{N}{r} = \ln \frac{N!}{(N-r)! r!} \approx (N-r) \ln \frac{N}{N-r} + r \ln \frac{N}{r} 
+ \ln x! \approx x \ln x - x + \frac12 \ln 2 \pi x
+ \ln \frac{N!}{(N-r)! r!} = \ln N! - \ln (N-r)! - \ln r! 
+ \approx N \ln N - N + \frac12 \ln 2 \pi N - (N-r) \ln (N-r) + (N-r) - \frac12 \ln 2\pi (N-r) - r \ln r + r - \frac12 \ln 2 \pi r
+(N-r) \ln \frac{N}{N-r} + r \ln \frac{N}{r}
+= (N-r) \ln N  - (N-r) \ln ({N-r}) + r \ln N - r \ln r
+= N\ln N -r\ln N + r \ln N  - (N-r) \ln ({N-r}) - r \ln r
+= N \ln N  - (N-r) \ln (N-r)   - r \ln r
+N \ln N  - (N-r) \ln (N-r)   - r \ln r  + \frac12 \ln \left(\frac{N}{2 \pi (N-r)r} \right)
+N
+r
+0
+N

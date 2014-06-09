@@ -1,0 +1,15 @@
+(w_n)
+ 1 + \sum_{k=0}^{n-1}\biggl(\prod_{j=0}^{k-1}(1+w_j)\biggr)w_k \leq \prod^{n-1}_{k=0}(1+w_k) 
+n=1
+1 \leq 1 + w_0
+n=2
+1 + (1 + w_0)w_1 \leq (1 + w_0)(1 + w_1)
+n-1
+1 + \sum_{k=0}^{n-1} \prod_{j=0}^{k-1}(1 + w_j) w_k \leq \prod_{k=0}^{n-1}(1 + w_k)
+ 1 + \sum_{k=0}^{n} \prod_{j=0}^{k-1}(1 + w_j) w_k = \color{red}{1 + \sum_{k=0}^{n-1} \prod_{j=0}^{k-1}(1 + w_j) w_k} + \prod_{j=0}^{n-1}(1 + w_j)w_n 
+\leq \color{red}{\prod_{k=0}^{n-1}(1+w_k)} + \prod_{j=0}^{n-1}(1 + w_j)w_n = (1 + w_n)  \prod_{j=0}^{n-1}(1 + w_j) = \prod_{k=0}^n(1 + w_k)
+k=0
+w_0
+1+w_0+(1+w_0)\sum_{k=1}^{n-1}\left(\prod_{j=1}^{k-1}(1+w_j)\right)w_k=(1+w_0)\left[1 + \sum_{k=1}^{n-1}\biggl(\prod_{j=1}^{k-1}(1+w_j)\biggr)w_k\right].
+1 + \sum_{k=0}^{n-1}\biggl(\prod_{j=0}^{k-1}(1+w_j)\biggr)w_k = \prod^{n-1}_{k=0}(1+w_k).
+w_j

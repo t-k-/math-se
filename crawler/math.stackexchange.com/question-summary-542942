@@ -1,0 +1,15 @@
+( P \land Q ) \lor ( R \land S ) \lor ( P \land S )
+( S \land ( P \lor R ) ) \lor ( P \land Q )
+( P \lor R ) \land ( S \lor ( P \land Q ) )
+( P \lor R ) \land ( P \lor S ) \land ( Q \lor S )
+\mathtt{OR}
+\vee
+\mathtt{AND}
+\wedge
+\mathtt{OR}
+a\vee a\equiv a
+a\vee\neg a\equiv\mathtt{true}
+a\wedge(a\vee b)\equiv a
+ \begin{eqnarray} (a\wedge b)\vee(c \wedge d)\vee(e \wedge f) &\equiv& (a\vee c \vee e)\wedge(a\vee c \vee f)\wedge(a\vee d \vee e)\wedge(a\vee d \vee f) \\ && \wedge (b\vee c \vee e)\wedge(b\vee c \vee f)\wedge(b\vee d \vee e)\wedge(b\vee d \vee f): && \end{eqnarray} 
+ \begin{eqnarray} (P\wedge Q) \vee (R\wedge S) \vee (P \wedge S) &\equiv& (P\vee R)\wedge(P\vee R \vee S)\wedge(P \vee S)\wedge (P\vee S) \\ && \wedge (Q\vee R\vee P) \wedge(Q\vee R\vee S)\wedge(Q\vee S \vee P)\wedge(Q\vee S). \end{eqnarray} 
+ \begin{eqnarray} (P\wedge Q) \vee (R\wedge S) \vee (P \wedge S) &\equiv& (P\vee R)\wedge (P\vee S) \wedge(Q\vee S), \end{eqnarray} 

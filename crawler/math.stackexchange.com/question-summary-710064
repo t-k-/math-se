@@ -1,0 +1,27 @@
+ { }_2F_1\left(1, n + 1;n+2; \frac{1}{2}\right) \in O(2^n)
+n
+2
+n
+ {}_2F_1\big( 1,n+1;n+2;\tfrac12 \big) = \sum_{j=0}^\infty \frac{n+1}{2^j(n+1+j)} < \sum_{j=0}^\infty \frac1{2^j} = 2. 
+n
+-2
+z=1/2
+[z^{n+1}]
+\rho_m = \log 2 + 2\pi i m,
+m
+\rho_0 = \log 2,
+\mathrm{Li}_{-n}(z) =  \sum_{k=0}^k k! {n+1 \brace k+1} \left(\frac{z}{1-z}\right)^{k+1}
+\mathrm{Li}_{-n}(1/2) = \sum_{k=0}^n k! {n+1 \brace k+1}.
+\exp(u(\exp(z)-1))
+{n+1\brace k+1} = (n+1)! [z^{n+1}] [u^{k+1}] \exp(u(\exp(z)-1)) =  (n+1)! [z^{n+1}] \frac{(\exp(z)-1)^{k+1}}{(k+1)!}.
+(n+1)! [z^{n+1}] \sum_{k=0}^n \frac{(\exp(z)-1)^{k+1}}{k+1}.
+(n+1)! [z^{n+1}] \sum_{k=0}^\infty \frac{(\exp(z)-1)^{k+1}}{k+1} \\= (n+1)! [z^{n+1}] \log \frac{1}{1-(\exp(z)-1)} = (n+1)! [z^{n+1}] \log \frac{1}{2-\exp(z)} = (n+1)! [z^{n+1}] \left(\log \frac{1}{2} + \log \frac{1}{1-\exp(z)/2}\right).
+(n+1)! [z^{n+1}] \log \frac{1}{1-\exp(z)/2}.
+\log 2
+\mathrm{Res}\left(\frac{1}{1-\exp(z)/2}; z=\log 2\right) =\left. \frac{1}{-\exp(z)/2}\right|_{z=\log 2} = -1.
+\log \left(-\frac{1}{z-\log 2}\right) = \log\left(\frac{1}{\log 2 - z}\right) = \log\frac{1}{\log 2}+ \log\left(\frac{1}{1-z/\log 2}\right).
+(n+1)! [z^{n+1}] \log\left(\frac{1}{1-z/\log 2}\right) = (n+1)! \frac{(1/\log 2)^{n+1}}{n+1}  = \frac{n!}{(\log 2)^{n+1}}
+n
+q
+q
+(-1)^q \frac{q!}{(\log 2)^{q+1}\times (n+1)^q}

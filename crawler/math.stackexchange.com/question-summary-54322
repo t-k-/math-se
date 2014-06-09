@@ -1,0 +1,94 @@
+f_n
+C^1
+[0,a]
+f_n = 1
+[1/n,a]
+0\le f_n \le 1
+f_n(0)=0
+\phi
+[0,a].
+\lim_{n\to\infty} \int_0^a f_n'(x) \phi(x) dx = \phi(0)
+\phi
+C^1
+\phi
+\int_0^a f_n'(x)\phi(x) dx = \int_0^{1/n} f_n'(x)\phi(x) dx= \frac{1}{n}f_n'(c_n) \phi(c_n)
+0<c_n<1/n
+f_n
+f_n'
+\frac{1}{n}f_n'(c_n)
+n\to\infty
+f_n
+[0,1/n]
+\alpha_n
+1/n
+f_n(\alpha_n)=0
+0 \leq f_n \leq 1
+f_n (0) = 0
+f_n (1/n) = 1
+[\alpha_n,1/n]
+[0,\alpha_n]
+f_n
+f'_n
+\alpha_n
+1/n
+\phi 
+\phi
+[0,a]
+x \mapsto 1/x
+\infty
+1/\alpha_n > n^2
+ f_n (x) = \cos ^2 \bigg(\frac{\pi }{x}\bigg), \;\; x \in [\alpha_n,1/n], 
+ f_n (x) = 0, \;\; x \in [0,\alpha_n], 
+ f'_n (x) = 2\cos \bigg(\frac{\pi }{x}\bigg)\sin \bigg(\frac{\pi }{x}\bigg)\frac{\pi }{{x^2 }} = \sin \bigg(\frac{{2\pi }}{x}\bigg)\frac{\pi }{{x^2 }}, 
+ f'_n (x) = 0. 
+ \phi(x) = x\sin \bigg(\frac{{2\pi }}{x}\bigg) ,\;\; x \in (0,a], 
+ \phi(0) = 0. 
+ \int_0^{1/n} {f'_n (x)\phi (x)\,dx}  = \int_{\alpha _n }^{1/n} {f'_n (x)\phi (x)\,dx} =  \pi \int_{\alpha _n }^{1/n} {\frac{{\sin ^2 (\frac{{2\pi }}{x})}}{x} \,dx} . 
+ \int_0^{1/n} {f'_n (x)\phi (x)\,dx}  = \pi \int_n^{1/\alpha _n } {\frac{{\sin ^2 (2\pi x)}}{x}\,dx} . 
+ \int_0^{1/n} {f'_n (x)\phi (x)\,dx} \not  \to \phi (0). 
+\phi
+C^1
+f_n
+\phi
+ \begin{eqnarray} \lim_{n\to\infty}\left|\int_0^af_n'(x)\phi(x)\mathrm dx-\phi(0)\right| &=& \lim_{n\to\infty}\left|\int_0^{1/n}f_n'(x)\phi(x)\mathrm dx-\phi(0)\right| \\ &=& \lim_{n\to\infty}\left|\int_0^{1/n}f_n'(x)\phi(x)\mathrm dx-\int_0^{1/n}f_n'(x)\phi(0)\mathrm dx\right| \\ &=& \lim_{n\to\infty}\left|\int_0^{1/n}f_n'(x)(\phi(x)-\phi(0))\mathrm dx\right| \\ &\le& \lim_{n\to\infty}\int_0^{1/n}\left|f_n'(x)\right|\left|\phi(x)-\phi(0)\right|\mathrm dx \\ &\le& \lim_{n\to\infty}\int_0^{1/n}\left|f_n'(x)\right|\epsilon(n)\mathrm dx \\ &=& \lim_{n\to\infty}\int_0^{1/n}f_n'(x)\epsilon(n)\mathrm dx \\ &=& \lim_{n\to\infty}\epsilon(n) \\ &=& 0\;. \end{eqnarray} 
+f_n
+\phi
+f_n
+\phi
+C^1
+\phi
+\phi
+ \int_0^{1/n} \phi f_n'dx = \int_0^{1/n} \phi df_n = f_n(1/n)\phi(1/n) - f_n(0)\phi(0) - \int_0^{1/n} f_n d \phi = \phi(1/n) - \int_0^{1/n} f_n d \phi
+\phi(1/n) \to \phi (0)
+F_n \cdot V_0^{1/n} \phi
+F_n = \max_{x \in [0,1/n]} f_n(x)
+V_0^{1/n} \phi
+\phi
+[0,1/n]
+\phi
+[0,\epsilon)
+\epsilon >0
+n \to \infty
+\phi
+\phi(x) = x \sin(X)
+x \neq 0
+\phi(0) = 0
+\int_0^{1/n} f_n' \phi
+f_n'
+\phi
+n
+p \in (0,1/n)
+\phi(p) = 0
+f_n'(x) = A \phi^+ - B \phi^-
+x \in [0,p]
+f_n'(x) = 0
+x \geq p
+\phi^+,\phi^-
+\phi
+\phi = \phi^+ - \phi^-
+|\phi| = \phi^+ + \phi^-
+A,B
+f_n(x) = \int_0^x f_n'
+f_n(1) =1
+A,B
+ \int_0^{1/n} f_n' \phi =  A  \int_0^p (\phi^+)^2 + B \int_0^p (\phi^-)^2 

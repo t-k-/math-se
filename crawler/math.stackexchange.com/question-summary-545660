@@ -1,0 +1,21 @@
+n\in\mathbb {N}
+[x]
+\leq x
+\{x\}=x-[x]
+\int_{1}^{n+1} \frac {\{x\}^{[x]}}{[x]} dx
+I_n
+I_1
+I_2
+I_1=\frac 12
+I_2=\frac 23
+I_n=\frac {n}{n+1}\forall n\in\mathbb{N}
+m\in\mathbb{N}
+I_{m+1}=\int_{1}^{m+2}\frac {\{x\}^{[x]}}{[x]} dx
+=I_m+\int_{m+1}^{m+2}\frac {\{x\}^{[x]}}{[x]} dx
+=\frac {m}{m+1}+\frac {1}{m+1}\int_{0}^{1} \{t\}^{m+1}dt
+t=x+m+1\implies dx=dt
+t\in(0,1)
+d\{t\}=dt
+I_{m+1}
+I_{m+1}=\frac {m}{m+1}+\frac {1}{m+1}\int_{0}^{1} t^{m+1}dt=\frac {m}{m+1}+\frac{1}{(m+1)(m+2)}=\frac {m+1}{m+2}
+\begin{align*} I_n & = \int_1^{n+1} \frac{\{x\}^{\lfloor x \rfloor}}{\lfloor x \rfloor} dx \\ & = \sum_{j=1}^n \int_j^{j+1} \frac{(x-j)^j}{j} dx \\ & = \sum_{j=1}^n \int_0^1 \frac{u^j}{j} du = \sum_{j=1}^n \frac{1}{j(j+1)} \\ & = \frac{n}{n+1} \end{align*}

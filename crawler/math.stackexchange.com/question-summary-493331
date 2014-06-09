@@ -1,0 +1,9 @@
+\int{\frac{\sin{x}+\cos{x}}{\sin^4{x}+\cos^4{x}}}dx
+\arctan
+\sin^4x+\cos^4x=(\sin^2x+\cos^2x)^2-2\sin^2x\cos^2x=1-\frac{\sin^22x}2
+\int(\sin x+\cos x)dx=\sin x-\cos x,\sin2x=1-u^2
+\implies \int{\frac{\sin{x}+\cos{x}}{\sin^4{x}+\cos^4{x}}}dx=2\int\frac{du}{2-(1-u^2)^2}=2\int\frac{du}{(\sqrt2+1-u^2)(\sqrt2-1+u^2)}
+=\frac2{2\sqrt2}\int\frac{(\sqrt2+1-u^2)+(\sqrt2-1+u^2)}{(\sqrt2+1-u^2)(\sqrt2-1+u^2)}du
+=\frac1{\sqrt2}\left(\int\frac{du}{\sqrt2-1+u^2}+\int\frac{du}{\sqrt2+1-u^2}\right)
+\displaystyle\int\frac{dy}{a^2+y^2}=\frac1a\arctan \frac ya+K
+\displaystyle\int\frac{dy}{a^2-y^2}=\frac1{2a}\ln\big|\frac{a+y}{a-y}\big|+C

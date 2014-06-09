@@ -1,0 +1,6 @@
+\frac{d}{dr} \int\limits_r^\infty \frac{sg(s)\;ds}{\left(s^2-r^2\right)^{1/2}} =   r \int\limits_r^\infty \frac{g'(s)\;ds}{\left(s^2-r^2\right)^{1/2}}
+ \begin{align} & \int\limits_{r+\Delta r}^\infty \frac{sg(s)\;ds}{\left( s^2 - (r+\Delta r)^2 \right)^{1/2} } - \int\limits_r^\infty \frac{sg(s)\;ds}{\left(s^2 - r^2\right)^{1/2}} \\  \\ & = \int\limits_r^\infty \left[ \frac{(s+\Delta r)g(s+\Delta r) }{\left( (s+\Delta r)^2 - (r+\Delta r)^2 \right)^{1/2}} - \frac{sg(s)}{\left( s^2 - r^2 \right)^{1/2}} \right] \; ds \end{align} 
+\frac{d}{dr} \int\limits_{r}^{\infty} \frac{sg(s)\;ds}{\left(s^2-r^2\right)^{1/2}} = \int\limits_r^\infty \frac{s(r-s)g(s)+sg'(s)+g(s)}{\left(s^2-r^2\right)^{1/2}}\;ds
+ \frac{d}{dr} \int\limits_r^\infty \frac{sg(s)\;ds}{\left(s^2-r^2\right)^{1/2}} =   \int\limits_r^\infty \frac{s^2 g'(s) + sg(s) }{r \left(s^2-r^2\right)^{1/2} } ds 
+ \begin{align} s & = r\sec\theta \\ ds & = r\sec\theta\tan\theta\;d\theta \end{align} 
+ \begin{align} \int_r^\infty \frac{sg(s)\;ds}{\sqrt{s^2-r^2}} & = r^2 \int_0^{\pi/2} (\sec^2\theta)\; g(r\sec\theta)\;d\theta. \end{align} 

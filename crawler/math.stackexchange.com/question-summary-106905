@@ -1,0 +1,27 @@
+N
+N
+N = n
+n
+p
+X
+Y
+X +Y = N
+P(N = n) = (e^{-r})\frac{r^n}{n!}\qquad n = 0,1,2,\ldots
+P(X=x) = \sum_{n\geq x} P(X=x|N=n)P(N=n)\quad ?
+X
+n
+n < x
+X = x
+P(X = x | N = n)  = 0
+P(X = x) = \sum_{n=0}^\infty P(X = x\; {\rm and}\; N=n) = \sum_{n= 0}^\infty P(X = x|N=n)P(N=n)
+P(X = x | N = n) = {n\choose x}p^x(1-p)^{n-x}
+P(X=x) = \sum_{n=x}^\infty P(X=x|N=n)P(N=n) =  \sum_{n=x}^\infty {n\choose x}p^x(1-p)^{n-x}{r^ne^{-r}\over n!}.
+P(X=x) = e^{-r}\sum_{n=x}^\infty {1\over x!(n-x)!}(rp)^x(r - rp)^{n-x} 
+P(X=x) = e^{-r}\sum_{n=0}^\infty {1\over n!x!} (rp)^x(r-rp)^n =  {(rp)^xe^{-r}\over x!}\sum_{n=0}^\infty {(r-rp)^n\over n!}= {(rp)^xe^{-r}\over x!} e^{r-rp} = {(rp)^xe^{-rp}\over x!}.
+\begin{align} P[X = x] &= \sum_{n=1}^\infty P[X = x, N = n]\\          &= \sum_{n=1}^\infty P[X = x | N = n] P[N = n], \end{align}
+n < x
+n < x
+x
+n
+n
+x

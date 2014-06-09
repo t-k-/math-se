@@ -1,0 +1,47 @@
+2^{(N-2)}
+ \mathbf{card}(\bigcup^n_{i=1} A_i) = \sum^n_{k=1} (-1)^{k+1}  \left(\sum_{1 \leq i_1 < \cdots < i_k \leq n} \mathbf{card}(A_{i_1} \cap \cdots \cap A_{i_k}) \right) 
+A_i
+N
+X, Y \in N
+ Z_{XY} = \{ Z \subseteq N \mid X \in Z \land Y \in Z\} 
+G = \{\{X_1, Y_1\}, \cdots \{X_k, Y_k\}\}
+k
+Y~
+Z_{X_1Y_1} \cup \cdots \cup Z_{X_kY_k}
+A_i
+Z_{X_iY_i}
+ \mathbf{card}(A_{i_1} \cap \cdots \cap A_{i_n}) =  2 ^{N - \mathbf{card}(\{X_{i_1}, Y_{i_1}, \cdots, X_{i_n}, Y_{i_n}\})} 
+ \begin{align*} \mathbf{card}(Z_{X_1Y_1} \cup Z_{X_2Y_2}) & = \mathbf{card}(Z_{X_1Y_1}) + \mathbf{card}(Z_{X_2Y_2}) - \mathbf{card}(Z_{X_1Y_1} \cap Z_{X_2Y_2}) \\ & = 2^{N-2} + 2^{N-2} - 2^{N - \mathbf{card}(\{X_1, Y_1, X_2, Y_2\})} \end{align*}
+ \begin{align*} \mathbf{card}(Z_{X_1Y_1} \cup Z_{X_2Y_2} \cup Z_{X_3Y_3}) & = \mathbf{card}(Z_{X_1Y_1}) + \mathbf{card}(Z_{X_2Y_2}) + \mathbf{card}(Z_{X_3Y_3}) \\ & - ~ \mathbf{card}(Z_{X_1Y_1} \cap Z_{X_2Y_2}) - ~ \mathbf{card}(Z_{X_1Y_1} \cap Z_{X_3Y_3}) - ~ \mathbf{card}(Z_{X_2Y_2} \cap Z_{X_3Y_3}) \\ & + ~ \mathbf{card}(Z_{X_1Y_1} \cap Z_{X_2Y_2} \cap Z_{X_3Y_3}) \\ & = 2^{N-2} + 2^{N-2} + 2^{N-2} \\ & - ~2^{N - \mathbf{card}(\{X_1, Y_1, X_2, Y_2\})} - 2^{N - \mathbf{card}(\{X_1, Y_1, X_3, Y_3\})} - 2^{N - \mathbf{card}(\{X_2, Y_2, X_3, Y_3\})} \\ & + ~2^{N - \mathbf{card}(\{X_1, Y_1, X_2, Y_2, X_3, Y_3\})} \end{align*}
+N = \{A, B, C, D\}
+Y = Z_{AB} \cup Z_{AC} \cup Z_{BC}
+\{\{A,B\},\{A,B,C\},\{A,B,D\},\{A,B,C,D\}\}
+\{\{A, C\},\{A,C,D\}\}
+\{\{B, C\},\{B,C,D\}\}
+\mathbf{card}(Y) = 2^2 + 2^2 + 2^2 - 2 - 2 -2 + 2 =8
+\{\{B, C\}\}
+7
+N
+2^N
+{N \choose 2}=\frac{N(N=1)}{2}
+2^{N-2}
+A,B
+A,C
+2\times 2^{N-2}-2^{N-3} = 3\times 2^{N-3}
+N=4
+6
+A,B
+C,D
+2\times 2^{N-2}-2^{N-4} = 7\times 2^{N-4}
+N=4
+7
+A
+B
+C
+A
+B
+A
+C
+A
+B
+C

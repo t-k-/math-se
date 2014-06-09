@@ -1,0 +1,48 @@
+Y
+M
+A
+Y_t=Y_0+M_t+A_t,\ a.s.,
+Y
+M
+A
+A^2
+M
+(Y_t)_{t \geq 0}
+Y_{\infty} \in L^1
+Y_t \to Y_{\infty}
+L^1
+t \to \infty
+\mathbb{E}\left( \sup_{t \geq 0} A_t \right) = \sup_{t \geq 0} \mathbb{E}(A_t),
+A_t \to A_{\infty} := \sup_{t \geq 0} A_t
+L^1
+Y_t = Y_0 + M_t+A_t
+M_t \to M_{\infty}
+L^1
+M_{\infty}
+(M_t)_{t \in (0,\infty]}
+C>0
+|Y_t| \leq C
+t \geq 0
+\lambda>0
+T:= \inf\{t \geq 0; A_t \geq \lambda\}.
+\begin{align*} \mathbb{P}(A_{\infty} \geq \lambda+4C) &= \mathbb{P}(A_{\infty} \geq \lambda+C, T<\infty) \leq \mathbb{P}(A_{\infty}-A_T \geq 4C, T<\infty) \\ &\leq \frac{1}{4C} \mathbb{E}((A_{\infty}-A_T) \cdot 1_{\{T<\infty\}}). \tag{1}\end{align*}
+T_n := \inf\{t \geq 0; A_t \geq \lambda-1/n\}.
+T_n \uparrow T
+\mathcal{F}_{T_n} \subseteq \mathcal{F}_T
+j \geq k
+\{T_k <N\} \in \mathcal{F}_{T_k} \subseteq \mathcal{F}_{t_j}
+\begin{align*} \mathbb{E}((A_{\infty}-A_{T_j}) \cdot 1_{\{T_k<N\}}) &= \mathbb{E}\bigg[ \mathbb{E}(A_{\infty}-A_T \mid \mathcal{F}_{T_k}) \cdot 1_{\{T_k<N\}} \bigg] \\ &= \mathbb{E}\bigg[ \mathbb{E}(Y_{\infty}-Y_T \mid \mathcal{F}_{T_k}) \cdot 1_{\{T_j<N\}} \bigg] \\ &\leq 2C \mathbb{P}(T_k<N). \end{align*}
+-M_t = A_t-Y_t
+j \to \infty
+ \mathbb{E}((A_{\infty}-A_T) \cdot 1_{\{T_k<N\}}) \leq 2C \mathbb{P}(T_k<N).
+k \to \infty
+\mathbb{E}((A_{\infty}-A_T) \cdot 1_{\{T<N\}}) \leq 2 C \mathbb{P}(T \leq N).
+\mathbb{E}((A_{\infty}-A_T) \cdot 1_{\{T<\infty\}}) \leq 2 C \mathbb{P}(T < \infty). \tag{2}
+(1)
+(2)
+\mathbb{P}(A_{\infty} \geq \lambda+4C) \leq \frac{1}{2} \mathbb{P}(T<\infty) = \frac{1}{2} \mathbb{P}(A_{\infty} \geq \lambda).
+\lambda = 4kC
+k \in \mathbb{N}_0
+\mathbb{P}(A_{\infty} \geq (k+1) 4C) \leq \frac{1}{2} \mathbb{P}(A_{\infty} \geq 4kC).
+\mathbb{P}(A_{\infty} \geq 4kC) \leq \frac{1}{2^{k-1}}.
+\mathbb{E}(A_\infty^p) = p \int_{(0,\infty)} x^{p-1} \mathbb{P}(A_{\infty} \geq x) \, dx.

@@ -1,0 +1,19 @@
+2 \times 2
+P_t=\begin{pmatrix}1-a(t)&a(t)\\ b(t)&1-b(t)\end{pmatrix}
+Q=\begin{pmatrix}-\alpha&\alpha\\ \beta&-\beta\end{pmatrix}
+P_t=\mathrm e^{Qt}
+a(0)=b(0)=0
+A=\alpha t
+B=\beta t
+U+V\lt1
+P_{\mathrm{obs}}
+A
+B
+P'_t=P_tQ,
+a'(t)=\alpha(1-a(t))-\beta a(t),\qquad b'(t)=\beta(1-b(t))-\alpha b(t).
+a'(t)+(\alpha+\beta)a(t)=\alpha,\qquad b'(t)+(\alpha+\beta)b(t)=\beta.
+a(t)=\frac{\alpha}{\alpha+\beta}(1-\mathrm e^{-(\alpha+\beta)t}),\qquad b(t)=\frac{\beta}{\alpha+\beta}(1-\mathrm e^{-(\alpha+\beta)t}). 
+ P_t=\begin{pmatrix}\frac{\beta+\alpha\mathrm e^{-(\alpha+\beta)t}}{\alpha+\beta}&\frac{\alpha(1-\mathrm e^{-(\alpha+\beta)t})}{\alpha+\beta}\\ \frac{\beta(1-\mathrm e^{-(\alpha+\beta)t})}{\alpha+\beta}&\frac{\alpha+\beta\mathrm e^{-(\alpha+\beta)t}}{\alpha+\beta}\end{pmatrix}. 
+ P_t=\begin{pmatrix}\frac{B+A\mathrm e^{-A-B}}{A+B}&\frac{A(1-\mathrm e^{-A-B})}{A+B}\\ \frac{B(1-\mathrm e^{-A-B})}{A+B}&\frac{A+B\mathrm e^{-A-B}}{A+B}\end{pmatrix}. 
+ P_{\mathrm{obs}}=\begin{pmatrix}1-U& U\\ V&1-V\end{pmatrix}, 
+ \hat A=-\log(1-U-V)\cdot\frac{U}{U+V},\qquad \hat B=-\log(1-U-V)\cdot\frac{V}{U+V}. 

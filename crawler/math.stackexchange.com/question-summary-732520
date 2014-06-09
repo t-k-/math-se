@@ -1,0 +1,31 @@
+\det(A) \neq 0
+a,b,c,d \in \Bbb R
+ A=\begin{Bmatrix} a & b \\ c & d \end{Bmatrix} 
+x_i
+a,b,c,d
+A^{-1}=\begin{pmatrix} x_1 &x_2 \\ x_3 & x_4 \end{pmatrix}
+A\cdot A^{-1}=\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}=I \tag1
+A\cdot A^{-1}=\begin{pmatrix} a & b \\ c & d \end{pmatrix}\cdot\begin{pmatrix} x_1 &x_2 \\ x_3 & x_4 \end{pmatrix}=\begin{pmatrix} ax_1+bx_3 &ax_2+bx_4 \\ cx_1+dx_3 & cx_2+dx_4 \end{pmatrix} \tag2
+\begin{pmatrix} ax_1+bx_3 &ax_2+bx_4 \\ cx_1+dx_3 & cx_2+dx_4 \end{pmatrix}=\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+\begin{cases}  ax_1+bx_3=1\\ax_2+bx_4=0 \\cx_1+dx_3=0\\cx_2+dx_4=1 \end{cases}
+\left[\begin{array}{cc|cc}a&b&1&0\\c&d&0&1\end{array}\right] \sim \left[\begin{array}{cc|cc}a&b&1&0\\0&\frac{ad-bc}{a}&-\frac{c}{a}&1\end{array}\right] \sim \cdots
+\frac{c}{a}
+\cdots\sim\left[\begin{array}{cc|cc}1&0&\frac{d}{ad-bc}&\frac{-b}{ad-bc}\\0&1&\frac{-c}{ad-bc}&\frac{a}{ad-bc}\end{array}\right]
+\frac{1}{ad-bc}\left[\begin{array}{cc}d&-b\\-c&a\end{array}\right]
+A^{-1}=\frac1{\det A}\text{adj }A
+\displaystyle A^{-1}=\frac1{ad-bc}\left(\begin{matrix}\ \ \ d&\!\!\!-b\\-c&\ a\end{matrix}\right)
+A^{-1}
+A
+ \left[ \begin{array}{ccc|ccc} a & b & c & 1 & 0 & 0 \\ d & e & f & 0 & 1 & 0 \\ g & h & i & 0 & 0 & 1 \end{array} \right] 
+3\times3
+3\times 3
+3\times 3
+ -a\cdot\text{2nd row} + d\cdot\text{1st row} \mapsto \text{new 2nd row}; 
+ -a\cdot\text{3rd row} + g\cdot\text{1st row} \mapsto \text{new 3rd row}: 
+ \left[ \begin{array}{cccccc} a & b & c & 1 & 0 & 0 \\ 0 & bd-ae & cd-af & d & -a & 0 \\ 0 & bg-ah & cg-ai & g & 0 & -a \end{array} \right] 
+ -(bd-ae)\cdot\text{3rd} + (bg-ah)\cdot\text{2nd} \mapsto \text{3rd}: 
+ \left[ \begin{array}{ccc|ccc} a & b & c & \cdots\cdots \\ 0 & bd - ae & cd - af & \cdots\cdots \\ 0 & 0 & (bg-ah)(cd-af)-(bd-ae)(cg-ai) & \cdots\cdots \end{array} \right. 
+ \left. \begin{array}{ccc|ccc} \cdots\cdots & 1 & 0 & 0 \\ \cdots\cdots & d & -a & 0 \\ \cdots\cdots & (bgd-ahd)-(bdg-aed) & -bga+a^2 h & bda-a^2 e \end{array} \right] 
+0
+0
+1

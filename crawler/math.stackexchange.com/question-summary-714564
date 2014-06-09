@@ -1,0 +1,32 @@
+f'''(x)
+f''(0)
+\lim_{x \to 0}(1+x+ \frac{f(x)}{x})^{1/x}=e^3
+\frac{\log(1+x+ \frac{f(x)}{x})}{x}-3=o(1)
+x \to 0
+1+x+\frac{f(x)}{x} = e^{3x+o(x)}
+x \to 0
+f(0)
+f'(0)
+0
+e^{3x+o(x)}=1+3x+o(x)
+f''(x)
+f'(x)
+2x^2+o(x^2)
+o(x^2)
+\begin{align} \lim_{x \to 0} \frac{\log(1+x+ \frac{f(x)}{x})}{x}-3=0  \end{align}
+f(x)=x(e^{3x+o(x)}-x-1),\frac{f(x)}{x}=e^{3x+o(x)}-x-1
+\begin{align} f(x) &= x(1+3x+o(x)-x-1) \\ &=2x^2+o(x^2) \end{align}
+f''(x)=\lim_{x \to 0}\frac{f'(x)-f'(0)}{x}=\lim_{x \to 0} \frac{f'(x)}{x}
+f''(0)
+f''(0)
+ f(x)=f(0)+f'(0)x+f''(0)\,\frac{x^2}2+o(x^3), 
+ f(-x)=f(0)-f'(0)x+f''(0)\,\frac{x^2}2-o(x^3). 
+\tag{1} f''(0)=\frac{f(x)+f(-x)-2f(0)}{x^2}+o(x). 
+f(0)=0
+(1)
+o(x)
+o(-x)
+(2)
+ 1+x+\frac{f(x)}{x} = e^{3x+o(x)}, 
+\tag{2} x+x^2+f(x)=xe^{3x+o(x)}. 
+ f''(0)=\lim_{x\to0}\frac{f(x)+f(-x)-2f(0)}{x^2}=\lim_{x\to0}\frac{f(x)+f(-x)}{x^2}=\lim_{x\to0}\frac{xe^{3x+o(x)}-x-x^2-xe^{-3x+o(-x)}+x-x^2}{x^2}\\ =-2+\lim_{x\to0}\frac{e^{3x+o(x)}-e^{-3x+o(-x)}}{x}-2+\lim_{x\to0}\frac{3x+3x+o(x^2)}{x}=-2+6=4. 

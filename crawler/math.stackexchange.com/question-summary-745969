@@ -1,0 +1,20 @@
+P_{n+1}(x) = \frac{2n+1}{n+1} x P_n(x) - \frac{n}{n+1} P_{n-1}(x)
+P_n(1) = 1
+n
+P_n(-x) = (-1)^n  P_n(x)
+n
+x
+P_0(x) = 1
+P_1(x) = x
+1
+k
+P_k(1) = 1
+P_0(1) = 1
+k
+P_k(1) = 1
+P_{k+1}(1) = \frac{2k+1}{k+1} (1)P_k(1) - \frac{k}{k+1}P_{k-1}(1) = \frac{2k+1}{k+1}  - \frac{k}{k+1} = 1
+n
+P_n(-x) = (-1)^n  P_n(x)
+\begin{array}{c|c} &\scriptsize{LHS}&\scriptsize{RHS}\\n & P_n(-x) & (-1)^nP_n(x)\\ \hline 0 & 1 & 1 \\ 1 & -x & -x\end{array}
+\begin{align}n:  P_n(-x)  & = (-1)^nP_n(x) \\ n-1:  P_{n-1}(-x)  & = (-1)^{n-1}P_{n-1}(x)\end{align}\tag{I}
+\begin{align}n+1: P_{n+1}(-x) &= \frac{2n+1}{n+1}(-x)P_n(-x) - \frac{n}{n+1}P_{n-1}(-x) \\ &= \frac{2n+1}{n+1}(-x)\color{blue}{(-1)^nP_n(x)} - \frac{n}{n+1}\color{blue}{(-1)^{n-1}P_{n-1}(x)}\\ &= \frac{2n+1}{n+1}x(-1)^{n+1}P_n(x) - \frac{n}{n+1}(-1)^{n+1}P_{n-1}(x)\\&=(-1)^{n+1}\left(\frac{2n+1}{n+1}xP_n(x) - \frac{n}{n+1}P_{n-1}(x)\right)\\&=(-1)^{n+1}P_{n+1}(x) \text{ true}\end{align}

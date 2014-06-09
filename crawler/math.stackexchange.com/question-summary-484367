@@ -1,0 +1,15 @@
+S (x) = e^{-x} \sum_{k=0}^{\infty} \frac{x^k}{k!} \sqrt{k+1}
+x
+\sqrt{k+1} \leq \sqrt{\frac{k^{2}}{4} + k + 1} = \frac{k}{2} + 1 ~\forall~k \geq 0
+x
+\sqrt{k+1}
+f'=1+xf
+x=0
+(8)
+e^{-x}x^n
+(10)
+ \begin{align} \frac1{4^n}\binom{2n}{n} &=\frac1{\sqrt{\pi n}} \left(1-\frac1{8n}+\frac1{128n^2}+\frac5{1024n^3}-\frac{21}{32768n^4}+\dots\right)\\ &=\frac1{\sqrt{\pi(n+1)}} \left(1+\frac3{8n}-\frac{23}{128n^2}+\frac{89}{1024n^3}-\frac{1509}{32768n^4}+\dots\right)\tag{7} \end{align} 
+ \begin{align} \frac{\sqrt{n+1}}{n!} &=\frac{4^n}{\sqrt{\pi}}\frac{n!}{(2n)!}\left(1+\frac3{8n}-\frac{23}{128n^2}+\frac{89}{1024n^3}-\frac{1509}{32768n^4}+\dots\right)\\ &=\frac{2^n}{\sqrt{\pi}}\frac1{(2n-1)!!}\left(1+\frac3{8n}-\frac{23}{128n^2}+\frac{89}{1024n^3}-\frac{1509}{32768n^4}+\dots\right)\\ &=\frac{2^n}{\sqrt{\pi}}\small\left(\frac1{(2n{-}1)!!}+\frac{3/4}{(2n{+}1)!!}+\frac{1/32}{(2n{+}3)!!}+\frac{9/128}{(2n{+}5)!!}+\frac{491/2048}{(2n{+}7)!!}+\dots\right)\tag{8} \end{align} 
+ \begin{align} \int_x^\infty e^{-t^2/2}\,\mathrm{d}t &=\frac1x\int_x^\infty\frac{x}{t}e^{-t^2/2}\,\mathrm{d}t^2/2\\ &\le\frac1x\int_x^\infty e^{-t^2/2}\,\mathrm{d}t^2/2\\ &=\frac1xe^{-x^2/2}\tag{9} \end{align} 
+ \begin{align} \sum_{k=0}^\infty\frac{x^{2k+1}}{(2k+1)!!} &=e^{x^2/2}\int_0^xe^{-t^2/2}\,\mathrm{d}t\\ &=\sqrt{\frac\pi2}\ e^{x^2/2}+O\left(\frac1x\right)\\ \frac1{\sqrt{2x}}\sum_{k=0}^\infty\frac{(2x)^{k+1}}{(2k+1)!!} &=\sqrt{\frac\pi2}e^x+O\left(\frac1{\sqrt{x}}\right)\\ e^{-x}\sum_{k=0}^\infty\frac{(2x)^{k+1}}{(2k+1)!!} &=\sqrt{\pi x}+O\left(e^{-x}\right)\tag{10} \end{align} 
+ \begin{align} e^{-x}\sum_{n=1}^\infty\frac{\sqrt{n+1}}{n!}x^n &=\sqrt{x}\small\left(1+\frac3{8x}+\frac1{128x^2}+\frac9{1024x^3}+\frac{491}{32768x^4}+O\left(\frac1{x^5}\right)\right)\tag{11} \end{align} 

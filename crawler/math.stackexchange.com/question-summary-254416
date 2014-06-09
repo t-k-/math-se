@@ -1,0 +1,39 @@
+\sum_{k=0}^{n} \binom{n}{k}\frac{(-1)^k}{(k+1)^2}
+z = -1
+\sum_{k=0}^{n} \binom{n}{k} s^k = (1+s)^n
+H_n
+n^{\text{th}}
+ \frac{1}{z} \int_0^z \sum_{k=0}^{n} \binom{n}{k} s^k\,ds = \sum_{k=0}^{n} \binom{n}{k} \frac{z^k}{k+1}, 
+ - \int_0^z \frac{1}{t} \int_0^t \sum_{k=0}^{n} \binom{n}{k} s^k\,ds\,dt = - \sum_{k=0}^{n} \binom{n}{k} \frac{z^{k+1}}{(k+1)^2}. 
+ \sum_{k=0}^{n} \binom{n}{k} \frac{(-1)^k}{(k+1)^2} = \int_{-1}^{0} \frac{1}{t} \int_0^t \sum_{k=0}^{n} \binom{n}{k} s^k\,ds\,dt. 
+ \begin{align*} \sum_{k=0}^{n} \binom{n}{k} \frac{(-1)^k}{(k+1)^2} &= \int_{-1}^{0} \frac{1}{t} \int_0^t (1+s)^n \,ds\,dt \\ &= \frac{1}{n+1}\int_{-1}^{0} \frac{1}{t} \left[(1+t)^{n+1} - 1\right]\,dt \\ &= \frac{1}{n+1}\int_{0}^{1} \frac{u^{n+1}-1}{u-1}\,du \\ &= \frac{1}{n+1}\int_0^1 \sum_{k=0}^{n} u^k \,du \\ &= \frac{1}{n+1}\sum_{k=1}^{n+1} \frac{1}{k} \\ &= \frac{H_{n+1}}{n+1}, \end{align*} 
+\displaystyle f(n) = \sum_{k=1}^{n} \binom{n}{k} \frac{(-1)^{k+1}}{k}.
+f(n+1)
+f(n)
+0
+\begin{align} f(n+1) - f(n) &= \sum_{k=1}^{n+1} \binom{n+1}{k} \frac{(-1)^{k+1}}{k} - \sum_{k=1}^n \binom{n}{k} \frac{(-1)^{k+1}}{k} \\ &= \sum_{k=1}^{n+1} \binom{n}{k-1} \frac{(-1)^{k+1}}{k} \\ &= \sum_{k=0}^n \binom{n}{k} \frac{(-1)^{k}}{k+1} \\ &= \frac{1}{n+1}\sum_{k=0}^n \binom{n+1}{k+1} (-1)^{k} \:\:\:\: \text{ (absorption identity!)} \\ &= \frac{1}{n+1} \left(1 + \sum_{k=0}^{n+1} \binom{n+1}{k} (-1)^{k+1} \right)\\ &= \frac{1}{n+1}, \end{align}
+f(n+1) = \sum_{k=0}^n (f(k+1) - f(k)) = \sum_{k=0}^n \frac{1}{k+1} = H_{n+1}.
+\sum_{k=0}^n \binom{n}{k} \frac{(-1)^k}{(k+1)^2} = \frac{H_{n+1}}{n+1}.
+(1-x)^n=\sum_{0\le k\le n}\binom nk(-1)^kx^k
+x,
+C
+-\frac{(1-x)^{n+1}}{n+1}+C=\sum_{0\le k\le n}\binom nk(-1)^k\frac{x^{k+1}}{k+1}
+x=0,C-\frac1{n+1}=0\implies C=\frac1{n+1}
+\sum_{0\le k\le n}\binom nk(-1)^k\frac{x^{k+1}}{k+1}=\frac1{n+1}-\frac{(1-x)^{n+1}}{n+1}
+\sum_{0\le k\le n}\binom nk(-1)^k\frac{x^{k}}{k+1}=\frac1{x(n+1)}-\frac{(1-x)^{n+1}}{(n+1)x}
+x,
+D
+\sum_{0\le k\le n}\binom nk(-1)^k\frac{x^{k+1}}{(k+1)^2}=\frac {\log x}{n+1}-\int\frac{(1-x)^{n+1}}{(n+1)x}dx+D
+$\sum_{k=0}^{n} \binom{n}{k}x^k=(1+x)^k
+x
+0
+t
+\sum_{k=0}^{n} \binom{n}{k}\frac{t^{k+1}}{k+1}=\frac{(1+t)^{k+1}-1}{k+1}
+t
+\sum_{k=0}^{n} \binom{n}{k}\frac{t^{k}}{k+1}=\frac{(1+t)^{k+1}-1}{(k+1)t}
+t
+0
+z
+z=-1
+\sum_{k=0}^{n} \binom{n}{k}\frac{z^{k}}{(k+1)^2}=\int_{0}^z\frac{(1+t)^{k+1}-1}{(k+1)t}dt
+\sum_{k=0}^{n} \binom{n}{k}\frac{(-1)^{k}}{(k+1)^2}=\int_{0}^{-1}\frac{(1+t)^{k+1}-1}{(k+1)t}dt

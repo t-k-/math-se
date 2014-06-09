@@ -1,0 +1,6 @@
+\begin{cases} u^{(4)}=f(t,u(t)),\, t\in[0,1]\\u(0)=u(1)=u''(0)=u''(1)=0\end{cases}
+F(t,u)=\int_0^u f(t,v)dv, Ku(t)=\int_0^1 G(t,s) u(s) ds
+J(u)=\frac12 ||u||^2-\int_0^1 F(t,Ku(t))dt, ~ u\in H=L^2[0,1]
+G(t,s)=\begin{cases} s(1-t)~~0\leq s\leq t\leq 1\\t(1-s)~~ 0\leq t\leq s\leq1\end{cases}
+(\textbf{f}u)(t)=f(t,u(t))
+(J'(u),v)=(u,v)-(K\textbf{f}Ku,v)

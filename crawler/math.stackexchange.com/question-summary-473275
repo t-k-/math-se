@@ -1,0 +1,14 @@
+f(z)
+|f(z^2)|\le|f(z)|^2
+\gamma_R
+R
+n\gt2\log_2(M)
+R\to\infty
+n^\text{th}
+0
+f
+ M=\sup_{|z|=2}|f(z)| 
+ \sup_{|z|=2^{2^n}}|f(z)|\le M^{2^n} 
+ |f(z)|\le|z|^{2\log_2(M)} 
+ f^{(n)}(z)=n!\int_{\gamma_R}\frac{f(w)\,\mathrm{d}w}{(w-z)^{n+1}} 
+ \begin{align} |f^{(n)}(z)| &\le\int_{\gamma_R}\frac{|w|^{2\log_2(M)}\,\mathrm{d}w}{(z-w)^{n+1}}\\ &\sim2\pi R^{2\log_2(M)-n}\\[12pt] &\to0 \end{align} 

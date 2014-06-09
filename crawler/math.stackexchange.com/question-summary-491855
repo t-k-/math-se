@@ -1,0 +1,15 @@
+ \int_{0}^{\infty} \frac{\tan^{-1}(ax)}{x(1+x^2)}dx 
+\vartheta(a)=\int_{0}^{\infty} \frac{\tan^{-1}(ax)}{x(1+x^2)}dx
+\vartheta '(a) = \int_0^\infty  {\frac{1}{{1 + {a^2}{x^2}}}\frac{1}{{1 + {x^2}}}} dx
+\frac{1}{{1 + {a^2}{x^2}}}\frac{1}{{1 + {x^2}}} = \frac{1}{{1 - {a^2}}}\left( {\frac{1}{{1 + {x^2}}} - \frac{{{a^2}}}{{1 + {a^2}{x^2}}}} \right)
+\int_0^\infty  {\frac{{dx}}{{1 + {x^2}}}} = \frac{\pi}2
+\vartheta '(a) = \frac{1}{{1 - {a^2}}}\left( {\frac{\pi }{2} - a\frac{\pi }{2}} \right) = \frac{{1 - a}}{{1 - {a^2}}}\frac{\pi }{2} = \frac{\pi }{2}\frac{1}{{1 + a}}
+\displaystyle I(a) = \int_{0}^{\infty}\frac{\tan^{-1}(ax)}{x.(1+x^2)}dx
+a
+\displaystyle \frac{dI(a)}{da} = \int_{0}^{\infty}\frac{1}{(1+a^2x^2).x.(1+x^2)}.x.dx
+\displaystyle \frac{dI(a)}{da} = \int_{0}^{\infty}\frac{1}{(1+x^2).(1+a^2x^2)}dx
+\displaystyle \frac{dI(a)}{da} = \frac{1}{(a^2-1)}\int_{0}^{\infty}\left(\frac{a^2}{1+a^2x^2}-\frac{1}{1+x^2}\right)dx
+\displaystyle \frac{dI(a)}{da}= \frac{a}{(a^2-1)}.\frac{\pi}{2}-\frac{1}{(a^2-1)}.\frac{\pi}{2}
+\displaystyle \frac{dI(a)}{da} = \frac{\pi}{2}.\frac{1}{a+1}
+\displaystyle \int \frac{dI(a)}{da}da = \frac{\pi}{2}\int\frac{1}{a+1}da
+\displaystyle I(a) =\frac{\pi}{2}.\ln |a+1|+C

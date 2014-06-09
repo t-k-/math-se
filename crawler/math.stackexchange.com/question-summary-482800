@@ -1,0 +1,37 @@
+X
+f(.)
+F(.)
+\mu
+\sigma ^2
+Y=\alpha + \beta X
+\alpha
+\beta
+-\infty< \alpha<\infty
+\beta>0
+\alpha
+\beta
+Y
+0
+1
+X
+Y
+Y
+\alpha,\beta
+F(.)
+X
+\mu
+Y
+Z
+C
+Z
+-C
+-(Z-C)
+\alpha=-\mu/\sigma
+\beta=1/\sigma
+E[Y]= E[\alpha + \beta X]  = E[\alpha] + \beta E[X]  = -\mu/\sigma + (1/\sigma)(\mu) = 0 
+Var[Y]= Var[\alpha + \beta X]  = \beta^2 Var[X]  =(1/\sigma ^2)(\sigma ^2) = 1 
+P_{ xy}=\displaystyle\frac{Cov(X,Y)}{\sqrt{Var(x)Var(Y)}}
+=\displaystyle\frac{Cov(X,\alpha + \beta X)}{\sqrt{Var(x)Var(\alpha + \beta X)}} = \displaystyle\frac{Cov(X,\alpha)+ Cov(X,\beta X) }{\sqrt{Var(x)\beta^2 Var[X]}} = \displaystyle\frac{\beta Var[X] }{\beta Var[X]} = 1
+Y
+ F_X(z) = P[X\leq{}z] = P[(Y - \alpha)/\beta \leq{}z] = P[Y - \alpha \leq{}z\beta] = P[Y \leq{}(z\beta) + \alpha] = F_Y((z\beta) + \alpha)
+P[Y - \alpha - \beta \mu \leq{}z] = P[\alpha + \beta X - \alpha - \beta \mu \leq{}z] = P[X - \mu\leq{}z/\beta] = P[-(X -\mu )\leq{}z/\beta] = P[-(Y - \alpha - \beta \mu) \leq{}z] 

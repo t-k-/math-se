@@ -1,0 +1,7 @@
+\epsilon > 0
+\lim_{R\rightarrow\infty} \int_0^R e^{x^2 - R^2}dx = 0
+\lim_{R\rightarrow\infty} \int_0^{R-\epsilon} e^{x^2 - R^2}dx = 0
+\lim_{R\rightarrow\infty} \int_0^R e^{x^2 - R^2}dx = \lim_{R\rightarrow\infty}\lim_{\epsilon \rightarrow 0} \int_0^{R-\epsilon} e^{x^2 - R^2}dx = \lim_{\epsilon \rightarrow 0}\lim_{R\rightarrow\infty} \int_0^{R-\epsilon} e^{x^2 - R^2}dx = 0
+\int_0^Re^{x^2-R^2}dx=\int_0^{R-\epsilon}e^{x^2-R^2}dx+\int_{R-\epsilon}^Re^{x^2-R^2}dx\le \int_0^{R-\epsilon}e^{x^2-R^2}dx+\epsilon.
+\lim_{R\rightarrow \infty} \int_0^R e^{x^2-R^2}dx = \lim_{R\rightarrow \infty} \frac{\int_0^R e^{x^2}dx}{e^{R^2}}
+\lim_{R\rightarrow \infty} \int_0^R e^{x^2-R^2}dx = \lim_{R\rightarrow \infty} \frac{e^{R^2}}{2Re^{R^2}} = \lim_{R\rightarrow \infty} \frac{1}{2R} = 0

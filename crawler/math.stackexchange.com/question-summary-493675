@@ -1,0 +1,11 @@
+\ \displaystyle\sum_{i = 0}^{[n/2]} \binom {n} {2i} p^{2i}q^{n-2i} = \frac{1}{2}[(p+q)^n + (q-p)^n ]
+\ [n/2]
+\ n/2 
+\ q = 1 - p
+\ q = 1 - p 
+\begin{align*} \frac12\left((p+q)^n+(-p+q)^n\right)&=\frac12\left(\sum_{k=0}^n\binom{n}kp^kq^{n-k}+\sum_{k=0}^n\binom{n}k(-1)^kp^kq^{n-k}\right)\\\\ &=\frac12\sum_{k=0}^n\binom{n}k\left(1+(-1)^k\right)p^kq^{n-k}\\\\ &=\frac12\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}k2p^{2k}q^{n-2k}\\\\ &=\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}kp^{2k}q^{n-2k}\;, \end{align*}
+1+(-1)^k=\begin{cases}2,&\text{if }k\text{ is even}\\0,&\text{if }k\text{ is odd}\;.\end{cases}
+j
+j
+2i
+(q\pm p)^n=\sum_{j=0}^n{n\choose j}(\pm 1)^{j}p^jq^{n-j} 

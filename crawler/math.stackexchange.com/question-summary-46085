@@ -1,0 +1,16 @@
+p(n) \sim \frac{1}{4n\sqrt{3}} e^{\pi \sqrt{\frac{2n}{3}}}
+k
+k
+p(n,k) \sim ?
+\Theta(n^{k-1})
+k
+\binom{n-1}{k-1}
+ \frac{1}{k!} \binom{n-1}{k-1} \leq p(n,k) \leq \binom{n-1}{k-1}. 
+1
+k
+x^n
+(1-x)^{-k}
+\binom{n+k-1}{k-1}
+ P_k = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdots \frac{1}{1-x^k}. 
+ P_k = \frac{1}{k!(1-x)^k} + \cdots. 
+p(n,k) = \frac{1}{k!} \binom{n+k-1}{k-1} + O(n^{k-2}) = \frac{n^{k-1}}{k!(k-1)!} + O(n^{k-2}). 

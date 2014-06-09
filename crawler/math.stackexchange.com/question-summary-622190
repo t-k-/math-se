@@ -1,0 +1,17 @@
+\displaystyle \frac{d x_1}{dx}(t) = x_2(t)
+\displaystyle \frac{d x_2}{dx}(t) = \frac{-k}{m}x_1(t)+\frac{f(t)}{m}
+\displaystyle 0 = x_2(t)
+\displaystyle 0 = \frac{-k}{m}x_1(t)+\frac{f(t)}{m}
+x_{eq} = \left[ \begin{array}{c} x_{1} \\ x_{2} \\ \end{array} \right] = \left[ \begin{array}{c} f/k \\ 0 \\ \end{array} \right]
+\Delta x(t) = x(t) - x_{eq}
+\displaystyle \frac{d \Delta x_1}{dx}(t) = \Delta x_2(t)
+\displaystyle \frac{d \Delta x_2}{dx}(t) = \frac{-k}{m}\Delta x_1(t)
+\displaystyle \Delta x_1(t) = \Delta x_1(0) cos(\omega t) + \frac{\Delta x_2(0)}{\omega} sin(\omega t)
+\displaystyle \Delta x_2(t) = -\Delta x_1(0) \omega sin(\omega t) + \Delta x_2(0)cos(\omega t)
+\omega^2 = \frac{k}{m}
+\frac{d^2x_1}{dt^2} = \frac{dx_2}{dt} = -\omega^2 x_1
+x_1
+x_1(t) = A_1\cos(\sqrt{\omega}t) + A_2\sin(\sqrt{\omega}t)
+x_2(t)
+A_1 = x_1(0)
+A_2 = \frac{x_2(0)}{\omega}

@@ -1,0 +1,22 @@
+\sigma_{mt}
+r_{mt}
+\sigma_{it}
+r_{it}
+\rho_{it}
+r_{it}
+r_{mt}
+(\epsilon_{mt}, \xi_{it})
+(\epsilon_{mt}, \xi_{it})
+S
+(1)
+(2)
+r_{mt} = \frac{\sigma_{mt}}{\sigma_{it}\rho_{it}}r_{it} - \frac{\sigma_{mt}\sqrt{1-\rho_{it}^2}}{\rho_{it}}\xi_{it}
+CoVaR
+Pr\left(r_{mt} \le CoVaR \mid r_{it} = C \right)=\alpha
+1-Pr\left(r_{mt} \le CoVaR \mid r_{it} = C \right)=1-\alpha \\ Pr\left(\xi_{it} \le \frac{\rho_{it}}{\sigma_{mt}\sqrt{1-\rho_{it}^2}} \left(\frac{\sigma_{mt}}{\sigma_{it}\rho_{it}}C - CoVaR \right)\mid r_{it} = C \right)=1-\alpha \ \ \ \cdots \ \ \ (3)
+\displaystyle \mathbb{E}\left(\xi_{it} \mid r_{it} = C\right) = \frac{cov(\xi_{it}, r_{it})}{\sigma_{it}^2} \times C \\ \mathbb{V}(\xi_{it} \mid r_{it} ) = \mathbb{V}(\xi_{it}) - \mathbb{V}_{r_{it}}\left[\mathbb{E}\left(\xi_{it} \mid r_{it} \right) \right] = \mathbb{V}(\xi_{it})\times\left[1-\left( \frac{cov(\xi_{it}, r_{it})}{\sigma_{it}^2}\right)^2 \sigma_{it}^2 \right]
+\displaystyle \mathbb{V}(\xi_{it})\times\left[1-\left( \frac{cov(\xi_{it}, r_{it})}{\sigma_{it}^2}\right)^2 \sigma_{it}^2 \right]
+ \mathbb{E}\left[\frac{1}{\rho_{it}}\left(\xi_{it} - \frac{\sqrt{1-\rho_{it}^2}}{\sigma_{it}} \times C \right) \mid r_{it} = C\right] =0 \\ \mathbb{V}\left[\frac{1}{\rho_{it}}\left(\xi_{it} - \frac{\sqrt{1-\rho_{it}^2}}{\sigma_{it}} \times C \right) \mid r_{it} = C \right] =1
+(3)
+\frac{1}{\rho_{it}} \left[ \frac{\rho_{it}}{\sigma_{mt}\sqrt{1-\rho_{it}^2}} \left(\frac{\sigma_{mt}}{\sigma_{it}\rho_{it}}C - CoVaR \right) - \frac{\sqrt{1-\rho_{it}^2}}{\sigma_{it}} \times C \right] = G^{-1} \left(1-\alpha\right) \ \ \ \cdots (4)
+(4)

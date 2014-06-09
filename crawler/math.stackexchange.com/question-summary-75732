@@ -1,0 +1,89 @@
+X
+Y
+X,Y \sim \exp(1)
+E[\max(X,Y) | \min(X,Y)]
+\min(X,Y)
+\max(X,Y)
+Z=\min\{X,Y\}
+W=\max\{X,Y\}
+[z\leqslant Z,W\leqslant w]
+[z\leqslant X\leqslant w]\cap[z\leqslant Y\leqslant w]
+z
+w
+z\leqslant w
+\geqslant x
+\mathrm e^{-x}
+x
+[z\leqslant X\leqslant w]
+[z\leqslant Y\leqslant w]
+\mathrm e^{-z}-\mathrm e^{-w}
+z
+w
+(Z,W)
+V=W-Z
+Z\geqslant0
+V\geqslant 0
+v=w-z
+Z
+V
+Z
+2
+V
+1
+(X^{(k)})_{1\leqslant k\leqslant n}
+(X_k)_{1\leqslant k\leqslant n}
+\{X^{(1)},X^{(2)},\ldots,X^{(n)}\}=\{X_1,X_2,\ldots,X_n\}
+X^{(1)}<X^{(2)}<\cdots <X^{(n)}
+(Z_1,Z_1+Z_2,\ldots,Z_1+Z_2+\cdots+Z_n)
+(Z_k)_{1\leqslant k\leqslant n}
+Z_k
+n-k+1
+1\leqslant k\leqslant\ell\leqslant n
+ \mathrm P(z\leqslant Z,W\leqslant w)=(\mathrm e^{-z}-\mathrm e^{-w})^2. 
+ 2\mathrm e^{-z-w}\cdot[0\leqslant z\leqslant w]. 
+ 2\mathrm e^{-z-(v+z)}\cdot[0\leqslant z\leqslant v+z]=2\mathrm e^{-2z}\cdot[z\geqslant 0]\cdot\mathrm e^{-v}\cdot[v\geqslant0]. 
+ \mathrm E(W\mid Z)=\mathrm E(V+Z\mid Z)=\mathrm E(V)+Z=1+Z. 
+ \mathrm E(X^{(\ell)}\mid X^{(k)})=X^{(k)}+\sum\limits_{i=n-\ell+1}^{n-k}\frac1i. 
+\Pr(X\le a)
+\Pr(b \lt X \le a) 
+\Pr(b \lt X \le a) \Pr(b \lt Y \le a)
+a
+b
+b
+I_{b\le a}
+p(a,b)
+a
+\max(X,Y)
+b
+\min(X,Y)
+p(a|b) =\dfrac{p(a,b)}{\int_{a=b}^\infty p(a,b) \; da}
+E[a|b] = \int_{a=b}^\infty a\; p(a|b) \; da
+b
+X
+Y
+\mu
+E[\max(X,Y) | \min(X,Y)] = \min(X,Y) +\mu
+(X,Y)
+x+y = \min(x,y) + \max(x,y)
+\min(x,y) \le \max(x,y)
+(U,V) = (\min(X,Y), \max(X,Y))
+u>0
+    \mathbb{P}(x,y) = \mathrm{e}^{-x-y} \mathbf{1}_{x >0 } \mathbf{1}_{y >0 } \, \mathrm{d} x \mathrm{d} y 
+    \mathbb{P}(u,v) = \mathcal{N} \mathrm{e}^{-u-v}  \mathbf{1}_{v \ge u >0 } \, \mathrm{d} u \mathrm{d} v 
+    \int_0^\infty \mathrm{d} v \int_0^v \mathrm{d} u \,\, \mathrm{e}^{-u-v} =     \int_0^\infty \mathrm{d} v \,\, \mathrm{e}^{-v} ( 1 - \mathrm{e}^{-v} ) = 1 - \frac{1}{2} = \frac{1}{2} = \frac{1}{\mathcal{N}}   
+    \mathbb{E}(\max(X,Y) \vert \min(X,Y) = u) = \frac{\int_0^\infty v \mathrm{d} P(u,v)}{\int_u^\infty \mathrm{d} P(u,v)} = \frac{\int_u^\infty  \mathcal{N} v \mathrm{e}^{-u-v} \mathrm{d} v}{\int_u^\infty  \mathcal{N} \mathrm{e}^{-u-v} \mathrm{d} v} = 1 + u 
+Z = \min(X,Y)
+W = \max(X,Y)
+w > z
+w < z
+X
+Y
+W
+Z = z
+f_{X,Y}(x,y) = e^{-x-y}
+x, y \geq 0
+\begin{align*} F_{Z,W}(z,w) &= P\{Z \leq z, W \leq w\}\\ &= P\left[\{X \leq z, Y \leq w\} \cup \{X \leq w, Y \leq z\}\right]\\ &= P\{X \leq z, Y \leq w\} + P\{X \leq w, Y \leq z\} - P\{X \leq z, Y \leq z\}\\ &= F_{X,Y}(z, w) + F_{X, Y}(w,z) - F_{X,Y}(z,z) \end{align*} 
+\begin{align*} F_{Z,W}(z,w) &= P\{Z \leq z, W \leq w\} = P\{Z \leq w, W \leq w\}\\ &= P\{X \leq w, Y \leq w\}\\ &= F_{X,Y}(w,w). \end{align*} 
+f_{Z,W}(z,w) = \frac{\partial^2}{\partial z \partial w}F_{Z,W}(z,w) =  \begin{cases} f_{X,Y}(z,w) + f_{X,Y}(w,z), & \text{if}~w > z,\\ \\ 0, & \text{if}~w < z. \end{cases} 
+ f_{W \mid Z}(w \mid z) = \frac{f_{Z,W}(z,w)}{f_Z(z)} = \begin{cases} \frac{f_{X,Y}(z,w) + f_{X,Y}(w,z)}{\int_z^{\infty} f_{X,Y}(z,w) + f_{X,Y}(w,z)\  \mathrm dw}, & w > z,\\ 0, & w < z, \end{cases} 
+ \begin{align*}E[W \mid Z = z]  &= \frac{\int_z^\infty w\cdot f_{X,Y}(z,w) + w\cdot f_{X,Y}(w,z)\  \mathrm dw}{ \int_z^\infty f_{X,Y}(z,w) + f_{X,Y}(w,z)\  \mathrm dw}\\ &= \frac{\int_z^\infty w\cdot e^{-w-z} + w\cdot e^{-w-z}\  \mathrm dw}{ \int_z^\infty e^{-w-z} + e^{-w-z}\  \mathrm dw}\\ &= \frac{2e^{-2z}\int_z^\infty w\cdot e^{-w}\  \mathrm dw}{ 2e^{-2z}} = \frac{2e^{-z}[\left . (-we^{-w})\right\vert_z^{\infty} + \int_z^{\infty}e^{-w}\ \mathrm dw]}{2e^{-2z}}\\ &= 1 + z. \end{align*} 

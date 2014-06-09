@@ -1,0 +1,11 @@
+(T,S,\theta)
+f(\cdot)
+E[\theta|T=x,S=y]=\frac{\int_{-\infty}^{\infty} z \cdot f(x,y,z)dz}{f(x,y)}=\hat{\theta}(x,y)
+s
+ E[\theta|T=t,S\geq s]=\frac{E[\theta \cdot I\{T=t,S\geq s\}]}{\Pr[T=t,S\geq s]} 
+ =\frac{E[\theta \cdot \Pr[T=t,S\geq s|\, \theta]]}{\Pr[T=t,S\geq s]} =\frac{\int_{-\infty}^{\infty} z \cdot f(z) \left( \int_{s}^{\infty} \frac{f(t,u,z)}{f(z)}\,du \right) \,dz}{\int_{s}^{\infty} f(t,u)\,du}  
+ =\frac{\int_{-\infty}^{\infty} \int_{s}^{\infty} z \cdot f(t,u,z)\,du \,dz}{\int_{s}^{\infty} f(t,u)\,du}  = \int_{s}^{\infty} \hat{\theta}(t,u) du 
+ \frac{\partial E[\theta|T=t,S\geq s]}{\partial s}=- \hat{\theta}(t,s) \qquad (\text{Result A}) 
+ \frac{\partial E[\theta|T=t,S\geq s]}{\partial s}=\frac{\partial}{\partial s}  \left( \frac{\int_{-\infty}^{\infty} \int_{s}^{\infty} z \cdot f(t,u,z)\,du \,dz}{\int_{s}^{\infty} f(t,u)\,du} \right) 
+ =\frac{-\int_{s}^{\infty} f(t,u)\,du \int_{-\infty}^{\infty} z \cdot f(t,s,z)\,dz+f(t,s)\int_{-\infty}^{\infty} \int_{s}^{\infty} z \cdot f(t,u,z)\,du \,dz}{({\int_{s}^{\infty} f(t,u)\,du})^2} 
+ =\left(E[\theta|T=t,S\geq s]-\hat{\theta}(t,s)\right)\frac{f(t,s)}{\int_{s}^{\infty} f(t,u)\,du} 

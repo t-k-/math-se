@@ -1,0 +1,6 @@
+ \text{cone}: r = \frac{z}{7} \text{ plug into sphere equation}\\ \left(\frac{z}{7}\right)^2 + z^2 = 1 \rightarrow z^2 = \frac{1}{1 + \frac{1}{49}} = \frac{49}{50} \\ z_{top} = \frac{7}{\sqrt{50}} 
+ dV = Adh = \pi(R^2 - r^2)dz = \pi\left((1 - z^2) - \left(\frac{z}{7}\right)^2\right)dz 
+R
+r
+ V = \int dV = \pi\int\limits_0^{\frac{7}{\sqrt{50}}}\left(1 - \frac{50}{49}z^2\right)dz = \pi\left.\left(z - \frac{50}{147}z^3\right)\right|_0^{\frac{7}{\sqrt{50}}} \\ V = \pi \left(\frac{7}{\sqrt{50}} - \frac{50}{3\cdot49}\cdot\frac{7^3}{50\sqrt{50}}\right) \\ V = \pi\left(\frac{7}{\sqrt{50}} - \frac{7}{3\sqrt{50}}\right) = \frac{7\pi}{\sqrt{50}}\cdot \frac{2}{3} = \frac{14\pi}{3\sqrt{50}} 
+ V = \int\limits_0^\frac{7}{\sqrt{50}}dz\int\limits_{\frac{z}{7}}^{\sqrt{1 - z^2}}dr\int\limits_0^{2\pi} rd\phi 

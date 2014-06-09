@@ -1,0 +1,25 @@
+A
+m \times N
+m <M
+2
+x
+s
+\Gamma_s=\displaystyle\max_{x \neq0, ||x||_0\le s} \frac{||Ax||_2}{||x||_2}
+\Gamma_s = \displaystyle\max_{S \subset [N]: |S|=s} ||A_S^T A_S - I_s||_2
+[N]=\left\{1,\cdots,N\right\}
+A_S
+m \times s
+A
+S
+||\cdot||_0
+T
+x
+s
+T=\bigcup\limits_{S\subset|N|,\,|S|=s}\operatorname{span}\{e_i: i\in S\}
+\Gamma_s
+\max\limits_{S \subset [N]: |S|=s} ||A_S^T A_S - I_s||_2
+A=(3,3)
+s=1
+\Gamma_1=3
+\max\limits_{S \subset [N]: |S|=s} ||A_S^T A_S - I_s||_2=\|3^2-1\|_2=8
+ \begin{align*} \Gamma_s &=\max\limits_{x \in T\setminus0} \frac{||Ax||_2}{||x||_2}\\ &=\max\limits_{S\subset|N|,\,|S|=s}\ \max\limits_{x \in \operatorname{span}\{e_i: i\in S\}\setminus0} \frac{||Ax||_2}{||x||_2}\\ &=\max\limits_{S\subset|N|,\,|S|=s}\ \max\limits_{x \in \mathbb{R}^s\setminus0} \frac{||A_Sy||_2}{||y||_2}\\ &=\max\limits_{S\subset|N|,\,|S|=s}\ ||A_S||_2. \end{align*} 

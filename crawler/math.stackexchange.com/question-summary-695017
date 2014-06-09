@@ -1,0 +1,14 @@
+X_1,...,X_n
+f(x;\theta) = \begin{cases} 1 &\mbox{if } \theta-1/2<x< \theta+1/2 \\  0 & otherwise \end{cases}
+Y_1=min \lbrace X_1,...,X_n \rbrace
+Y_n=max \lbrace X_1,...,X_n\rbrace
+u(X_1,...,X_n)
+Y_n-1/2<u<Y_1+1/2
+\theta
+f(x;\theta) = \begin{cases} 1 &\mbox{if } -1/2<x- \theta<1/2 \\  0 & otherwise \end{cases}
+Y_n-1/2<u<Y_1+1/2
+L(\theta)=\prod_i(x-\theta)
+logL(\theta)=log\prod_i(x_i-\theta)=\sum_i log(x_i- \theta)
+(logL(\theta))'=\sum_i 1/(x_i- \theta)=0
+f_\theta(x) = 1_{|x-\theta|\le \frac 12}
+\{\theta | \forall i\, f_\theta(X_i)=1\} =\{\theta| \forall i\, X_i - \frac 12 \le \theta \le X_i + \frac 12 \} =[\max X_i- \frac 12 , \min X_i + \frac 12] 

@@ -1,0 +1,22 @@
+\int_{0}^{2\pi}\log|e^{i \theta}-1|d \theta
+0
+z=e^{i \theta}
+d\theta = -i dz/z
+\log{|\zeta|} = \Re{[\log{\zeta}]}
+\Re{\left [ -i \oint_{C} dz \frac{\log{(z-1)}}{z}\right ]}
+C
+z=1
+i 2 \pi
+z=0
+i 2 \pi (-i) \log{(-1)} = i 2 \pi^2
+\log{(-1)}
+|e^{ix}-1|=|\cos x+i\sin x-1|=|(\cos x-1)+i\sin x|=\sqrt{(\cos x-1)^2+\sin^2x}=
+=\sqrt{(\underline{\cos}^2x-2\cos x+\underline1)+\underline{\sin}^2x}=\sqrt{2-2\cos x}=\sqrt{4\frac{1-\cos x}2}=2\cdot|\sin\tfrac x2|
+\int_0^{2\pi}\ln\Big(2\cdot|\sin\tfrac x2|\Big)dx=\int_0^{2\pi}\Big(\ln2+\ln|\sin\tfrac x2|\Big)dx=2\pi\ln2+\underbrace{\int_0^{2\pi}\ln|\sin\tfrac x2|dx}_I
+I=2\int_0^\pi\ln|\sin t|dt=2\int_0^\pi\ln(\sin t)dt=2\int_0^1\frac{\ln u}{\sqrt{1-u^2}}du=2\int_0^1\frac{\ln\sqrt y}{\sqrt{1-y}}\cdot\frac{dy}{2\sqrt y}=
+=\frac12\int_0^1(\ln y)\cdot y^{^{-\frac12}}(1-y)^{^{-\frac12}}dy=\frac12\cdot\bigg[\frac d{dn}\int_0^1y^n(1-y)^{^{-\frac12}}dy\bigg]_{n=-\frac12}=\frac{\dfrac d{dn}B\Big(n+1;\ \tfrac12\!\Big)}2
+\frac d{dn}B\Big(n+1,\tfrac12\!\Big)=\frac d{dn}\circ\frac{\Gamma(n+1)\cdot\overbrace{\Gamma\Big(\tfrac12\Big)}^\sqrt\pi}{\Gamma\Big(n+\tfrac32\Big)}=\sqrt\pi\cdot\bigg[\frac{\Gamma'(n+1)}{\Gamma\Big(n+\frac32\Big)}-\frac{\Gamma(n+1)\Gamma'\Big(n+\frac32\Big)}{\Gamma^2\Big(n+\frac32\Big)}\bigg]
+H_{_{-\frac12}}=\int_0^1\frac{1-x^{^{-\frac12}}}{1-x\quad}dx=2\int_0^1\frac{1-t^{^{-1}}}{1-t^2\ }t\cdot dt=2\int_0^1\frac{t-1}{1-t^2}dt=-2\int_0^1\frac{dt}{1+t}=
+=-2\ln(1+t)|_0^1=-2\ln2.\quad
+H_0=0.\quad
+\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad

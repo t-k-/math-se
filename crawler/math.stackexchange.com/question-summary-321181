@@ -1,0 +1,15 @@
+ f(x,y) = - \frac{2}{5}x - 1, \quad x,y \in (0,10) 
+x,y,z
+ A(x,y,z) = 10- \frac{x}{10} - y - \frac{z}{5} 
+(0,0,0)
+(10,10,-5)
+ \int_{(0,0,0)}^{(10,10,-5)} A(\overrightarrow{r}(t)) \overrightarrow{\mathbf{r'}}(t)\,\mathrm{d}t 
+\int_{(0,0,0)}^{(10,10,-5)} A(\overrightarrow{r}(t)) |\overrightarrow{\mathbf{r'}}(t)|\,\mathrm{d}t = \int_{(0,0,0)}^{(10,10,-5)} A(\overrightarrow{r}(s)) ds
+\frac{d^2}{d s^2} \overrightarrow{r}(s) = \frac{1}{2}\overrightarrow{\nabla}[A(\overrightarrow{r}(s))^2] = \left(\frac{x}{100}+\frac{y}{10}+\frac{z}{50}-1,\frac{x}{10}+ y+\frac{z}{5}-10,\frac{x}{50}+\frac{y}{5}+\frac{z}{25}-2\right)
+s
+s=0
+s=1
+\overrightarrow{r}(0)=(0,0,0)
+\overrightarrow{r}(1)=(10,10,-5)
+[x(s),y(s),z(s)]=\left[\frac{10 \left(-19 s-2 e^{-\frac{1}{2} \sqrt{\frac{21}{5}} (s-2)}+2    e^{\frac{1}{2} \sqrt{\frac{21}{5}} s}+e^{\sqrt{\frac{21}{5}}} (19    s+2)-2\right)}{21 \left(e^{\sqrt{\frac{21}{5}}}-1\right)},\frac{10 \left(-s-20    e^{-\frac{1}{2} \sqrt{\frac{21}{5}} (s-2)}+20 e^{\frac{1}{2} \sqrt{\frac{21}{5}}    s}+e^{\sqrt{\frac{21}{5}}} (s+20)-20\right)}{21    \left(e^{\sqrt{\frac{21}{5}}}-1\right)},\frac{5 \left(e^{\sqrt{\frac{21}{5}}}    (8-29 s)-8 e^{-\frac{1}{2} \sqrt{\frac{21}{5}} (s-2)}+8 e^{\frac{1}{2}    \sqrt{\frac{21}{5}} s}+29 s-8\right)}{21    \left(e^{\sqrt{\frac{21}{5}}}-1\right)}\right]
+s \in [0,1]

@@ -1,0 +1,17 @@
+L(x) = \int_0^x \cos(t^2)\space dt
+f(t) = \cos(t)
+f'(t) = -\sin(t)
+f''(t) = -\cos(t)
+f^{(3)}(t) = \sin(t)
+t = 0
+1, 0, -1, 0
+\cos(t)
+P(t) = 1 - t^2/2! + t^4/4! ...
+P(t^2) = 1 - t^4/2! + t^8/4!...
+L(x) = \int_0^t (1 - t^4/2! + t^8/4!...)\space dt = x - x^5/(5\cdot2!) + x^9/(9\cdot4!)... = \sum_{n=0}^{\infty}(-1)^n\frac{x^{4n+1}}{(4n+1)(2n)!}
+f(t) = \cos(t^2)
+f'(t) = -2t\sin(t^2)
+f''(t) = -2\sin(t^2) -4t^2\cos(t^2) = -2(\sin(t^2)+2t^2\cos(t^2))
+f^{(3)}(t) = -2(2t\cos(t^2)+4t\cos(t^2)-4t^3\sin(t^2)) = 8t^3\sin(t^2)-12t\cos(t^2)
+f^{4}(0) = -12
+1, 0, 0, 0, -12, 0 , 0, 0, C

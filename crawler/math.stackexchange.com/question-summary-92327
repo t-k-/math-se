@@ -1,0 +1,20 @@
+ f(x)= \int_0^1 e^{|x-t|}  f(t) \, dt+x-1  
+L^2(0,1)
+k(x,t):=\exp(|x-t|)
+[0,1]^2
+T:L^2(0,1)\ni f\mapsto \int_0^1 \exp(|x-t|)\ f(t)\ \text{d} t\in L^2(0,1)
+\{e^n\}_{n\in \mathbb{N}}
+L^2
+T
+\{\lambda_n\}_{n\in \mathbb{N}}
+T
+\lambda_n
+e^n
+g_n:=\langle g,e^n\rangle
+e^N
+\lambda_N\neq 1
+f=\sum_{n=1}^\infty f_n\ e^n \qquad \text{and} \qquad g=\sum_{n=1}^\infty g_n\ e^n\; ,
+\sum_{n=1}^\infty g_n\ e^n =g=(I-T)f=\sum_{n=1}^\infty f_n\ (1-\lambda_n)\ e^n\; ;
+g_N =\sum_{n=1}^\infty g_n\ \delta_{n,N} =\sum_{n=1}^\infty g_n\ \langle e^n, e^N\rangle =\sum_{n=1}^\infty f_n\ (1-\lambda_n)\ \langle e^n, e^N\rangle = f_N\ (1-\lambda_N)
+f_N=\frac{g_N}{1-\lambda_N}
+\tag{S} f=\sum_{n=1}^\infty \frac{\langle g,e^n\rangle}{1-\lambda_n}\ e^n

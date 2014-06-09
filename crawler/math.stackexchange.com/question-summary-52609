@@ -1,0 +1,29 @@
+ \int_0^1 \left(\int_0^x f(y) \, dy \right)^2 \, dx 
+ \begin{align} & \phantom{= {}} \int_0^1 \left( \int_0^x f(y)\,dy \right)^2\,dx = \int_0^1 \int_0^x \int_0^x f(y)f(z)\,dy\,dz \, dx = \int_0^1\int_0^1 \int_{\max\{y,z\}}^1 f(y)f(z)\, dx \, dy\, dz \\ & = \int_0^1\int_0^1 \left( f(y)f(z) \int_{\max\{y,z\}}^1  1\, dx \right) dy \, dz = \int_0^1\int_0^1 f(y)f(z) \left(1-{\max\{\,y,z\,\}}\right) \, dy  \, dz. \end{align} 
+x
+1-\max\{\,y,z\,\}
+y
+\int_0^1\int_0^1 \cdots\,dy\,dz
+dy
+dz
+dy
+f(y)
+f(z)
+f(y)
+x
+y
+x
+1-\max\{\,y,z\,\}
+a^2 b^3
+=
+1\leq p <\infty
+F
+(X,\mu)\times (T,\nu)
+\mu,\nu
+\sigma
+\left[\int_{T}\left(\int_{X}\left|F(x,t)\right|d\mu(x)\right)^pd\nu(t)\right]^{\frac{1}{p}}\leq\int_{X}\left[\int_{T}\left|F(x,t)\right|^pd\nu(t)\right]^{\frac{1}{p}}d\mu(x)
+\left\|Gg\right\|_{L^1(T)} = \int_T \left|\int_X \left|F\left(x,t\right)\right|g\left(t\right)d\mu\left(x\right)\right|d\nu\left(t\right)
+= \int_X \int_T \left|F\left(x,t\right)\right|\left|g\left(t\right)\right| d\nu\left(t\right)d\mu\left(x\right)
+\leq \int_X \left\|F\right\|_{L^p\left(T\right)} \left\|g\right\|_{L^q\left(T\right)} d\mu\left(x\right)
+= \int_X \left(\int_T \left|F\left(x,t\right)\right|^p d\nu\left(t\right)\right)^{\frac{1}{p}} d\mu\left(x\right)
+p=1

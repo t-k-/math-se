@@ -1,0 +1,7 @@
+\sum\limits_{k=0}^n k^p
+\sum_{k=0}^n k^p = 0^p + 1^p + \cdots + n^p\tag{1}
+n^p = \sum_{k=0}^n S(p,k)[n]_{k}\tag{2}
+(1)
+(2)
+\sum_{k=0}^n k^p = \sum_{k=0}^n S(p,k)[0]_{k} + \sum_{k=0}^n S(p,k)[1]_{k} + \cdots + \sum_{k=0}^n S(p,k)[n]_{k}\;.
+\begin{align*}\sum_{k=0}^n k^p&=\sum_{k=0}^n \sum_{j=0}^p \left\{p\atop j\right\}k^{(j)}\\&=\sum_{k=0}^n \sum_{j=0}^p j!\left\{p\atop j\right\}\binom{k}{j}\\&=\sum_{j=0}^p j!\left\{p\atop j\right\}\sum_{k=0}^n \binom{k}{j}\\&=\sum_{j=0}^p j!\left\{p\atop j\right\}\binom{n+1}{j+1}\\&=\sum_{j=0}^p \frac{n+1}{j+1}j!\left\{p\atop j\right\}\binom{n}{j}\\&=(n+1)\sum_{j=0}^p \left\{p\atop j\right\}\frac{n^{(j)}}{j+1}\end{align*}

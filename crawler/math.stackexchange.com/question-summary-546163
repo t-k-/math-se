@@ -1,0 +1,11 @@
+\lim_{x\to0}\left(\frac{e^{2x}-1-2x}{x^2}\right)
+\{a_n\}_{n\in\mathbb{N}}
+e^{2x}
+x
+|x|<1
+n
+n\geq 3
+2
+ a_n = \left(1+\frac{2x}{n}\right)^n 
+ e^{2x}-1-2x = \sum_{k=2}^{n}\binom{n}{k}\frac{(2x)^k}{n^k} = 2\frac{n-1}{n}x^2+\sum_{k=3}^{n}\binom{n}{k}\frac{(2x)^k}{n^k},
+\left|\sum_{k=3}^{n}\binom{n}{k}\frac{(2x)^k}{n^k}\right|\leq\sum_{k=3}^{n}\frac{(2|x|)^k}{k!}\leq (e^2-5)|x|^3\leq\frac{5}{2}|x|^3,

@@ -1,0 +1,18 @@
+\sum_{k=1}^\infty \frac{k^2}{k!}
+ \sum_{1}^{\infty} \frac{k^2}{k!} = \sum_{1}^{\infty} \frac{k}{(k-1)!} = \sum_{0}^{\infty} \frac{k+1}{k!} = \sum_0^{\infty} \frac{1}{k!} + \sum_1^{\infty} \frac{k}{k!} = e + \sum_0^{\infty} \frac{1}{k!} = 2e 
+n
+n\ge 0
+S_n=\sum_{k=0}^{\infty}\frac{k^n}{k!}
+S_1=\binom{0}{0}S_0=1 \times e = e
+n=2
+S_2=\binom 1 0 S_0 + \binom 1 1 S_1 = 2e
+f(x) = \sum_{k=0}^{\infty} \frac{x^k}{k!} = e^x
+\frac{d}{dx} \left [x \frac{d}{dx} f(x)\right] = \sum_{k=0}^{\infty} \frac{k^2 x^k}{k!} = (x+1) e^x 
+x=1
+e^x=1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^k}{k!}+\cdots
+e^x=0+1+\dfrac{2x}{2!}+\cdots+\dfrac{kx^{k-1}}{k!}+\cdots
+x
+xe^x=x+\dfrac{2x^2}{2!}+\cdots+\dfrac{kx^k}{k!}+\cdots
+(x+1)e^x=1+\dfrac{2^2x}{2!}+\cdots+\dfrac{k^2x^{k-1}}{k!}+\cdots
+x=1
+2e=\dfrac{1^2}{1!}+\dfrac{2^2}{2!}+\cdots+\dfrac{k^2}{k!}+\cdots

@@ -1,0 +1,14 @@
+a > 0
+f \in L^1(0,a)
+g \in L^1(0,a)
+\int_0^a g(x)dx = \int_0^a f(t) dt
+ g(x) = \int_x^a f(t) t^{-1} dt, \quad 0 < x \leq a. 
+h(x,y) = \chi_{[x,a)} f(y) y^-1
+\chi_A
+A
+f
+f
+f
+h(x,y):=\chi_{\{0\leqslant x\leqslant y\lt a\}}f(y)y^{-1}
+\int_{[0,a]}g(x)dx=\iint_{[0,a]^2}h(x,y)dydx=\iint_{[0,a]^2}h(x,y)dxdy=\int_{[0,a]}f(y)dy.
+\int_0^a g(t)dt=\int_0^a\int_x^af(s)s^{-1}dsdu=\int_0^a\int_0^sf(s)s^{-1}duds=\int_0^af(s)ds

@@ -1,0 +1,15 @@
+Ly=-y''.
+y'(0)=y(0),\quad y'(1)+y(1)=0
+y''+\lambda y = 0
+y(x) = A \cos{\sqrt{\lambda} x} + B \sin{\sqrt{\lambda} x}
+y'(0)=y(0)
+A = B \sqrt{\lambda}
+y'(1) + y(1) = 0
+-A \sqrt{\lambda} \sin{\sqrt{\lambda}} + B \sqrt{\lambda} \cos{\sqrt{\lambda}} + A \cos{\sqrt{\lambda}} + B \sin{\sqrt{\lambda}}=0
+-\lambda \sin{\sqrt{\lambda}} +  \sqrt{\lambda} \cos{\sqrt{\lambda}} + \sqrt{\lambda} \cos{\sqrt{\lambda}} +  \sin{\sqrt{\lambda}}=0
+\tan{\sqrt{\lambda}} = \frac{2 \sqrt{\lambda}}{\lambda-1}
+\lambda_k \sim k^2 \pi^2
+y_k(x) = \sqrt{\lambda_k} \cos{\sqrt{\lambda_k} x} + \sin{\sqrt{\lambda_k} x}
+G(x,x') = \sum_{k=1}^{\infty} \frac{y_k(x) y_k(x')}{\lambda-\lambda_k}
+G
+\frac{d^2}{dx^2} G(x,x') + \lambda G(x,x') = \delta(x-x')

@@ -1,0 +1,3 @@
+b[x]:=\; \text{BesselI}\left(x,\frac{c^2}{2}\right)
+h:=\text{HypergeometricPFQ}\left[\left\{\frac{3}{2},2\right\},\left\{\frac{5}{4},\frac{7}{4}\right\},-c^2\right]
+\int\limits_0^\infty\frac{x^2}{(x+c)^{3/2}}e^{-x^2}=\\ \frac{e^{-\frac{c^2}{2}} \left(3 \pi  \left(c^2 \left(-3+4 c^2\right) b[-1/4]+\left(1-7 c^2+4 c^4\right) b[1/4]-c^2 \left(-1+4 c^2\right) \left(b[3/4]+b[5/4]\right)\right)+64 c^2 e^{\frac{c^2}{2}} h\right)}{12 \sqrt{c}} 

@@ -1,0 +1,7 @@
+E[E[X|Y]]=E[X]
+X
+Y
+E[X]=\int_{-\infty}^{\infty} xf_{X}(x)dx
+E[X|Y]=\int_{-\infty}^{\infty} xf_{X|Y=y}(x|Y=y)dx
+f_{X|Y=y}(x|Y=y)=\frac{f(x,y)}{f_{Y}(y)}
+E[E[X|Y]]=\int_{-\infty}^{\infty} x\int_{-\infty}^{\infty} x\frac{f(x,y)}{f_{Y}(y)}dxdx

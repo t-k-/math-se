@@ -1,0 +1,12 @@
+ J_k(\lambda)^n = \begin{bmatrix} \lambda^n & \binom{n}{1}\lambda^{n-1} & \binom{n}{2}\lambda^{n-2} & \cdots & \cdots & \binom{n}{k-1}\lambda^{n-k+1} \\  & \lambda^n & \binom{n}{1}\lambda^{n-1} & \cdots & \cdots & \binom{n}{k-2}\lambda^{n-k+2} \\  &  & \ddots & \ddots & \vdots & \vdots\\  &  & & \ddots & \ddots & \vdots\\  &  & &  & \lambda^n & \binom{n}{1}\lambda^{n-1}\\  &  &  &  &  & \lambda^n \end{bmatrix}
+n
+N
+N^k=0
+J_k(\lambda)^n=(\lambda I+N)^n=\sum_{r=0}^\color{red}{n} \binom{n}{r}\lambda^{n-r} N^r=\sum_{r=0}^\color{red}{\min(n,k-1)} \binom{n}{r}\lambda^{n-r} N^r.
+n\times n
+\lambda
+\mathbf J=\begin{pmatrix}\lambda&1&&\\&\lambda&\ddots&\\&&\ddots&1\\&&&\lambda\end{pmatrix}
+f(\mathbf J)
+f(\mathbf J)=\begin{pmatrix}f(\lambda)&f^\prime(\lambda)&\cdots&\frac{f^{(n-1)}(\lambda)}{(n-1)!}\\&f(\lambda)&\ddots&\vdots\\&&\ddots&f^\prime(\lambda)\\&&&f(\lambda)\end{pmatrix}
+f(x)=x^k
+\frac1{j!}\frac{\mathrm d^j}{\mathrm dx^j}x^k=\binom{k}{j}x^{k-j}

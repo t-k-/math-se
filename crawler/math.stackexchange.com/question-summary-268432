@@ -1,0 +1,19 @@
+s=13
+N
+k=4
+k\leqslant N\leqslant(k-1)s+1
+n\geqslant1
+[N\gt n]
+n
+{ks\choose n}
+n
+ks
+{ks\choose n}^{-1}
+[N\gt n]
+A_n
+ A_n={k\choose1}{(k-1)s\choose n}-{k\choose2}{(k-2)s\choose n}+\cdots\pm{k\choose k-1}{s\choose n}\mp{k\choose 0}{0\choose n}. 
+ \mathbb E(N)=\sum_{n\geqslant0}\mathbb P(N\gt n)=\sum_{n\geqslant0}{ks\choose n}^{-1}A_n. 
+ \mathbb E(N)=\sum_{n\geqslant0}{52\choose n}^{-1}\left(4{39\choose n}-6{26\choose n}+4{13\choose n}-{0\choose n}\right), 
+ \mathbb E(N)=4+\sum_{n=4}^{39}{52\choose n}^{-1}\left(4{39\choose n}-6{26\choose n}+4{13\choose n}\right), 
+ \mathbb E(N)=4+4B_{39}-6B_{26}+4B_{13},\qquad B_i=\sum_{n=4}^{i}{52\choose n}^{-1}{i\choose n}. 
+ \mathbb E(N)=\frac{4829}{630}=7+\frac23-\frac1{630}\approx7.66508. 

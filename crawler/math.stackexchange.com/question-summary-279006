@@ -1,0 +1,22 @@
+ (x+2+y)^{23} 
+ x^6y^7 
+(x+2+y)(x+2+y) \ldots (x+2+y)
+x^6 y^7
+x
+y
+23-6-7
+ {23 \choose 6} {23-6 \choose 7} { 23-6-7 \choose 23-6-7} \times x^6 \times y^7 \times (2)^{23-6-7}
+\binom{23}{6,10,7}2^{10}x^6y^7=\dfrac{23!}{6!\ 10!\ 7!}2^{10}x^6y^7=2010334470144 x^6 y^7
+ (x+y+2)^{23} = \sum_{k=0}^{23} \binom{23}{k} 2^{23-k} (x+y)^k
+ =  \sum_{k=0}^{23} \binom{23}{k} 2^{23-k} \sum_{\ell=0}^k \binom{k}{\ell} x^{\ell} y^{k-\ell}
+k
+\ell = 6
+x^6 y^7
+2^{10} \binom{23}{13} \binom{13}{6}
+ \sum_{k=0}^{\infty}\sum_{m=0}^{\infty}\frac{x^m y^k}{m! k!}\frac{\partial^{m+k}}{\partial x^m \partial y^k }f(x,y)|_{x=0,y=0} ,
+x^6 y^7
+ \frac{1}{6!\,7!}\frac{\partial^{13}}{\partial x^6 \partial y^7 }(x+y+2)^{23}|_{x=0,y=0} = 2010334470144 
+ D^n x^m = \frac{\Gamma(m+1)}{\Gamma(m-n+1)}x^{m-n} 
+ \frac{\partial^{13}}{\partial x^6 \partial y^7 }(x+y+2)^{23}. 
+ \frac{\partial^{6}}{\partial x^6 }\frac{\Gamma(23+1)}{\Gamma(23-7+1)}(x+y+2)^{16}  = \frac{\Gamma(23+1)}{\Gamma(23-7+1)}\frac{\Gamma(16+1)}{\Gamma(16-6+1)}(x+y+2)^{10} 
+ = \frac{(23)!}{(16)!}\frac{(16)!}{(10)!}(x+y+2)^{10} .

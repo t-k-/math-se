@@ -1,0 +1,13 @@
+n
+ Ls_{n+1}=-\int_0^{\pi/3}\bigg[\ln\big(2\sin\frac{\theta}{2}\big)\bigg]^nd\theta 
+ Ls_n\big(\frac{\pi}{3}\big). 
+\text{Consider }\int_0^\frac{\pi}{3}\left(2\sin\frac{\theta}{2}\right)^a~d\theta~,
+\int_0^\frac{\pi}{3}\left(2\sin\frac{\theta}{2}\right)^a~d\theta
+=2^a\int_0^\frac{\pi}{3}\sin^a\frac{\theta}{2}d\theta
+=2^{a+1}\int_0^\frac{\pi}{6}\sin^a\theta~d\theta
+=2^{a+1}\int_0^\frac{1}{2}x^a~d(\sin^{-1}x)
+=2^{a+1}\int_0^\frac{1}{2}\dfrac{x^a}{\sqrt{1-x^2}}dx
+=2^{a+1}\int_0^\frac{1}{4}\dfrac{x^\frac{a}{2}}{\sqrt{1-x}}d\left(x^\frac{1}{2}\right)
+=2^a\int_0^\frac{1}{4}\dfrac{x^\frac{a-1}{2}}{\sqrt{1-x}}dx
+=2^aB\left(\dfrac{1}{4};\dfrac{a+1}{2},\dfrac{1}{2}\right)
+\therefore\int_0^\frac{\pi}{3}\ln^n\left(2\sin\frac{\theta}{2}\right)d\theta=\dfrac{d^n}{da^n}\left(2^aB\left(\dfrac{1}{4};\dfrac{a+1}{2},\dfrac{1}{2}\right)\right)(a=0)

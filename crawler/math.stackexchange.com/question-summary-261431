@@ -1,0 +1,45 @@
+\phi
+\mathbb{R}^n
+t> 0
+\phi_t = t^{-n}\phi(x/t)
+ M_\phi f(x) = \sup \{ |\phi_t\ast f(y)| : |x-y| < t\} 
+\mathcal{M}f = \mathcal{M} |f|
+\phi
+|\phi_t\ast f| \leq \phi_t \ast |f|
+f
+\lambda_\phi(s)
+s \geq 0
+\{ \phi(x) \geq s\}
+\phi(x) = \int_0^P \chi_{\lambda_{\phi}(s)}(x) \mathrm{d}s
+P = \sup \phi
+\lambda_\phi(s)
+\lambda^*\phi(s)
+\lambda_\phi(s)
+|y-x| < 1
+ \int_{\lambda_\phi(s)} f(y-z) \mathrm{d}z \leq \int_{\lambda^*_\phi(s)} f(x - z) \mathrm{d}z 
+f
+x + \lambda^*_\phi(s) \supset y + \lambda_\phi(s)
+P'
+\lambda_\phi(P')
+\phi
+\lambda_\phi(P')
+R'
+\begin{align} \phi\ast f(y) &= \int_0^{P'} \int_{\lambda_\phi(s)} f(y-z) \mathrm{d}z \mathrm{d}s + \int_{P'}^P \int_{\lambda_\phi(s)} f(y-z) \mathrm{d}z \mathrm{d}s \\  &\leq \int_0^{P'} \int_{\lambda^*_\phi(s)} f(x-z) \mathrm{d}z \mathrm{d}s + \int_{P'}^P\int_{\lambda^*_\phi(P')} f(x-z) \mathrm{d}z \mathrm{d}s \\ & \leq \int_0^{P'} |\lambda_\phi^*(s)| \mathcal{M}f(x) \mathrm{d}s + |P' - P||\lambda_\phi^*(P')|\mathcal{M}f(x)  \end{align}
+s \leq P'
+|\lambda_\phi^*(s)| \leq c^n |\lambda_\phi(s)|
+c = 1 + 1/R'
+ \leq  \mathcal{M}f(x)\left( c^n \int_0^P |\lambda_\phi(s)| \mathrm{d}s + |P-P'| |\lambda_\phi^*(P')|\right)\tag{*}
+\int \phi(z) \mathrm{d}z
+\phi
+\phi
+\phi_t
+P \mapsto t^{-n} P
+|y-x| < t
+\lambda^*_{\phi_t}(s)
+t
+P'
+t
+\phi_t
+P' \mapsto t^{-n} P'
+\lambda_\phi(P') \to t \lambda_\phi(P')
+t

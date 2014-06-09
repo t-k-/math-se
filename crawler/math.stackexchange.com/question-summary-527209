@@ -1,0 +1,13 @@
+\int_0^{2\pi} \frac{1}{\sqrt{1-k^2\sin^2x}} dx
+F(x/k^2)
+F(x/k^2)
+J=\int_{0}^{2\pi}1-\frac{-1}{2}k^2 \sin^2(x)+\frac{-1}{2}\frac{-3}{2}k^4 \sin^4(x)+...dx
+=\int_{0}^{2\pi}1+\sum_{j\ge 1}\frac{(2j-1)!!}{(2j)!!}k^{2j} \sin^{2j}(x)dx
+I_{n\ge1}=\int_0^{2\pi}\sin^{2n}(x)dx
+=[-\cos(x)\sin^{2n-1}(x)]_0^{2\pi}-\int_0^{2\pi}-\cos(x)(2n-1)\sin^{2n-2}(x)\cos(x)dx
+=(2n-1)\int_0^{2\pi}(1-\sin^2(x))\sin^{2n-2}(x)dx=(2n-1)(I_{n-1}-I_n)
+I_n=\frac{2n-1}{2n}I_{n-1}
+I_0=2\pi\Rightarrow I_n=\frac{(2n-1)!!}{(2n)!!}2\pi
+J=2\pi+2\pi\sum_{j\ge 1}\frac{(2j-1)!!^2}{(2j)!!^2}k^{2j}
+\Sigma
+2\pi, 2\pi\left(1+\frac{k^2}{4}\right), 2\pi\left(1+\frac{k^2}{4}+\frac{9k^4}{64}\right)

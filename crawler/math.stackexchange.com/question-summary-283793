@@ -1,0 +1,13 @@
+T(n) = 3T(\frac{n}{2}) + n
+T(n)
+n= 2^m
+g(m) = T(2^m)
+T(n)
+n^{\log_2(3)}
+T(n) = 3T(n/2) + n
+T(n) = 3T(n/2)+n
+T(n) = 3(3T(n/2^2)+n/2)+n = 3^2T(n/2^2) + (3/2)n + n
+T(n) = 3^2(3T(n/2^3) + n/2^2) + (3/2)n + n = 3^3T(n/2^3) + (3/2)^2n + (3/2)^1 +n
+k=\text{floor}(\log_2 n)
+T(n) =3^{k+1} T(O(1))+ n\sum_{i=0}^k({3\over2})^i =3^{k+1} T(O(1))+ n\sum_{i=0}^k({3\over2})^i =3^{k+1} T(O(1)) +n\frac{1.5^{k+1}-1}{1.5-1}
+T(n)=\Theta(n 3^k)= \Theta(n 3^{\text{floor}(\log_2 n)})

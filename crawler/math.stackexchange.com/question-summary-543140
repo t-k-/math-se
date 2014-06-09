@@ -1,0 +1,20 @@
+n+1
+x_{0},x_{1},...,x_{n} \in \mathbb{R}
+\phi_{j}^{(n)}=\prod_{i=0,i \neq j}^{n}(x_{j}-x_{i})
+(\phi_{n}^{(n)})^{-1}= -(\sum_{i=0}^{n-1}(\phi_{i}^{(n)})^{-1})
+n=2
+-\sum_{i=0}^{2-1} \left(\phi_i^{(n)}\right)^{-1} = -\left(\frac{1}{(x_0-x_1)(x_0-x_2)} + \frac{1}{(x_1-x_0)(x_1-x_2)}\right)
+ = -\frac{(x_1-x_2)-(x_0-x_2)}{(x_0-x_1)(x_0-x_2)(x_1-x_2)}
+= \frac{1}{(x_2-x_0)(x_2-x_1)}
+=\left(\phi_2^{(2)}\right)^{-1}
+\Psi_j(X) = \prod_{\substack{i=0\\i\neq j}}^n (X - x_i)
+n
+L(X) = \sum_{i=0}^n \frac{\Psi_i(X)}{\phi_i^{(n)}}
+d \leqslant n
+\Psi_i(x_i) = \phi_i^{(n)}
+\Psi_i(x_j) = 0
+j \neq i
+L(x_i) = 1,\quad 0 \leqslant i \leqslant n,
+L \equiv 1
+X^n
+L

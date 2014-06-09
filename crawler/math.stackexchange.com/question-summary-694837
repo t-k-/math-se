@@ -1,0 +1,73 @@
+U_1, ..., U_n
+X
+V_1, ..., V_n
+\overline{V_i} \subset U_i
+i = 1,...,n
+A = X - (U_2\cup ...\cup U_n)
+U_i
+X
+A \subset U_1
+X
+V_1
+A \subset V_1
+\overline{V_1} \subset U_1
+V_1, U_2, ..., U_n
+V_1, ..., V_{k-1}
+V_1, ...,V_{k-1}, U_k, U_{k+1},...,U_n
+X
+A = X - (V_1\cup ...\cup V_{k-1}) - (U_{k+1}\cup ...\cup U_n)
+A
+V_k
+A \subset V_k
+\overline{V_k} \subset U_k
+V_1, ...,V_k, U_{k+1},...,U_n
+X
+n
+X
+U_\alpha
+_{\alpha \in J}
+X
+J
+U_\alpha
+J
+\alpha_0
+J
+A = X - \bigcup\limits_{\alpha \in J - \{\alpha_0\}} U_\alpha
+U_{\alpha_0}
+V_{\alpha_0}
+A \subset V_{\alpha_0} \subset \overline{V_{\alpha_0}} \subset U_{\alpha_0}
+U_\alpha\space\vert\space\alpha \in J - \{\alpha_0\}
+\cup
+V_{\alpha_0}
+X
+\mathcal{C}
+V\space\vert\space\overline{V} \subset U_\alpha
+\alpha \in J
+\mathcal{F}
+J
+\mathcal{C}
+\alpha \in J
+B_\alpha = \{V \in \mathcal{C}\space\vert\space \overline{V} \subset U_\alpha
+X - \bigcup\limits_{\lambda < \alpha}f(\lambda) - \bigcup\limits_{\lambda > \alpha}U_\lambda \subset V
+f \in \mathcal{F}
+S_\alpha
+J
+S_\alpha =
+\lambda \in J\space \vert\space \lambda < \alpha
+\alpha \in J
+\mathcal{B}
+B_\alpha\space\vert\space\alpha \in J
+c : \mathcal{B} \longrightarrow \bigcup\limits_{B \in \mathcal{B}}B = \mathcal{C}
+c(B) \in B\space\forall\space B \in \mathcal{B}
+\rho : \mathcal{F} \longrightarrow \mathcal{C}
+\rho(f) = c(B_\alpha)
+S_\alpha
+f
+h : J \longrightarrow\mathcal{C}
+h(\alpha) = \rho(h\vert S_\alpha)
+\alpha \in J
+V_\alpha = h(\alpha) = \rho(h\vert S_\alpha) = c(B_\alpha)
+\overline{V_\alpha} \subset U_\alpha
+X - \bigcup\limits_{\lambda < \alpha}h(\lambda) - \bigcup\limits_{\lambda > \alpha}U_\lambda \subset V_\alpha
+V_\alpha
+X

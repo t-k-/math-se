@@ -1,0 +1,54 @@
+\ddot x = \mu \dot x^2 - g,  \space \space x(0)=x_0
+\mu
+\dot x = v
+v(0)  = 0
+\dot v = \mu v^2 - g
+\dot x = h(t) + f(t) x + g(t)x^2
+h(t) = -g
+f(t) = 0
+g(t) = \mu
+v_p(t) = \sqrt{g \over \mu}
+\implies y = {1 \over {v- \sqrt{g \over n}}}
+\implies y(0) = \sqrt{n\over g}
+v(t)
+\dot y = -(f(t) + 2v_pg(t))y-g(t)
+y_h(t)
+y_p (t)
+\dot y = -2 \sqrt{g\mu }\space y \implies y_h = y(0) e^{-2 \sqrt{g\mu }}
+y_p(t)
+y_p(t) = y(0)(t)e^{-2 \sqrt{g\mu }} = C_1 (t)e^{-2 \sqrt{g\mu }}
+ \iff C_1(t) = {-\mu \over {2 \sqrt{g\mu }}}e^{2 \sqrt{g\mu }}
+y(t) = {1 \over v - \sqrt {g \over n}} = C_1(t)e^{-2 \sqrt{g\mu }} + y_h(t)= {-\mu \over {2 \sqrt{g\mu }}}e^{2 \sqrt{g\mu }}e^{-2 \sqrt{g\mu }} + y(0) e^{-2 \sqrt{g\mu }} 
+= {-\mu \over {2 \sqrt{g\mu }}} + y(0) e^{-2 \sqrt{g\mu }}
+y = {1 \over {v- \sqrt{g \over n}}}
+v
+v = \dot x
+v(t)=\dot{x}(t)
+-g
+w(t)=v(t)-\gamma
+\dot{v}=\mu v^2-g.
+\int dt/(at^2+bt)=-(2/b)\text{artanh} (2at/b+1)
+b>0
+\int_{w_0}^{w(t)} \frac{dw}{\mu w^2+2\sqrt{\mu g}w}=\int_0 ^t dt.
+C
+w
+v
+v(0)=0
+C=0
+\frac{-1}{\sqrt{\mu g}}\text{artanh}\left( \mu w+1 \right)-C=t
+w(t)=\sqrt{\frac{g}{\mu}}\left( \tanh[-\sqrt{\mu g}(t+C)]-1 \right).
+v(t)=w(t)+\gamma=\sqrt{\frac{g}{\mu}} \tanh[-\sqrt{\mu g}(t+C)],
+v=\dot{x}
+\int dt \tanh(t)=\ln (\cosh x)
+x(t)=x_0-\frac{1}{\mu}\ln\left[ \cosh(-\sqrt{\mu g}t) \right],
+x(0)=x_0
+\dot{x}(0)=x(0)=0
+ \ddot{x} = \dot{x}\frac{d}{dx}\dot{x} = \frac{d}{dx}\frac{\dot{x}^{2}}{2} 
+ \frac{d}{dx}\frac{v^{2}}{2} = \mu v^{2} - g 
+ v^{2}\mathrm{e}^{-2\mu x} = \int 2g \mathrm{e}^{-2\mu x} dx + C_{1} = -\frac{g}{\mu}\mathrm{e}^{-2\mu x} + C_{1} 
+ C_{1} = \frac{g}{\mu} 
+ v =\sqrt{\frac{g}{\mu}}\sqrt{\mathrm{e}^{2\mu x} - 1}  
+ \frac{dx}{dt} = \sqrt{\frac{g}{\mu}}\sqrt{\mathrm{e}^{2\mu x} - 1}  
+ \int \frac{1}{\sqrt{\mathrm{e}^{2\mu x} - 1} }dx = \sqrt{\frac{g}{\mu}}t + C_{1} 
+ \frac{1}{\mu}\arctan{\sqrt{\mathrm{e}^{2\mu x} - 1} } = \sqrt{\frac{g}{\mu}}t + C_{1},\\ \sqrt{\mathrm{e}^{2\mu x} - 1}  = \tan{\left(\sqrt{\mu g}t + C_{2}\right)} 
+ x(t) = \frac{1}{\mu}\ln{\left[\sec{\left(\sqrt{\mu g}t + C_{2}\right)}\right]} 

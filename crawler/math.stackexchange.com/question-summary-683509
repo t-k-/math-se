@@ -1,0 +1,5 @@
+\int_0^{\frac{\pi}{2}}(\ln(\tan x))^2dx
+\int_{-\infty}^{\infty}\frac{x^2e^x}{e^{2x}+1}dx
+\frac{\pi^3}{8}
+I=\int_{-\infty}^\infty\frac{x^2e^x}{e^{2x}+1}=2J
+J=\int_{0}^\infty\frac{x^2e^x}{e^{2x}+1}dx=\int_{0}^{\infty}\frac{x^2e^{-x}}{e^{-2x}+1}dx=\int_{0}^{\infty}x^2e^{-x}\sum_{k=0}^{\infty}(-1)^k e^{-2kx}dx\\=\sum_{k=0}^{\infty}(-1)^k\int_{0}^{\infty}x^2e^{-(2k+1)x}dx\quad(\mbox{Can be justified by Fubini's theorem})\\ =\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k+1)^3}\Gamma(3)

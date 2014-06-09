@@ -1,0 +1,8 @@
+ \int_0^\infty xe^{-c x^2}\sinh(a x)\cos(bx)\,dx = \frac{1}{4}\sqrt{\dfrac{\pi}{c^3}}\exp\left\{\frac{a^2-b^2}{4c}\right\}\left(a\cos\left(\frac{ab}{2c}\right)-b\sin\left(\frac{ab}{2c}\right)\right) 
+a=b
+a, b, c \gt 0
+\begin{align}\int_0^{\infty} dx \, x \, e^{-c x^2} \sinh{a x} \, \cos{b x} &=\frac14 \Re{\left [\int_{-\infty}^{\infty} dx \, x \, e^{-c x^2} \, \left (e^{a x}-e^{-a x} \right )  e^{i b x}\right ]}\\ &=\frac14 \Re{\left [\int_{-\infty}^{\infty} dx \, x \, e^{-c x^2} \, e^{(a+i b) x} - \int_{-\infty}^{\infty} dx \, x \, e^{-c x^2} \, e^{-(a-i b) x}\right ]}\\ &= \frac14 \Re{\left [e^{(a+i b)^2/(4 c)}\int_{-\infty}^{\infty} dx \, x \, e^{-c (x-(a+i b)/(2 c))^2} \, \\ - e^{(a-i b)^2/(4 c)}\int_{-\infty}^{\infty} dx \, x \, e^{-c (x+(a-i b)/(2 c))^2} \right ]}\\ &= \frac14 \Re{\left [e^{(a+i b)^2/(4 c)}\int_{-\infty}^{\infty} dy \, \left (y+\frac{a+i b}{2 c} \right ) \, e^{-c y^2} \, \\ - e^{(a-i b)^2/(4 c)}\int_{-\infty}^{\infty} dy \, \left (y-\frac{a-i b}{2 c} \right ) \, e^{-c y^2} \right ]} \end{align} 
+y\, e^{-c y^2}
+e^{-c y^2}
+\sqrt{\pi/c}
+\begin{align}\int_0^{\infty} dx \, x \, e^{-c x^2} \sinh{a x} \, \cos{b x} &= \frac14 \sqrt{\frac{\pi}{c}}\Re{\left [e^{(a+i b)^2/(4 c)} \frac{a+i b}{2 c} + e^{(a-i b)^2/(4 c)} \frac{a-i b}{2 c} \right ]}\\ &= \frac12 \sqrt{\frac{\pi}{c}} e^{(a^2-b^2)/4 c} \Re{\left [e^{i a b/(2 c)} \frac{a+i b}{2 c} \right ]}\\ &= \frac14 \sqrt{\frac{\pi}{c^3}}\,e^{(a^2-b^2)/4 c} \left [a \cos{\left (\frac{a b}{2 c} \right )}-b \sin{\left (\frac{a b}{2 c} \right )} \right ] \end{align}

@@ -1,0 +1,31 @@
+X
+f_X
+Y
+f_Y
+f_Z
+Z = X/Y
+f_W
+W = XY
+F_V(x) = P(V \lt x) = P(X+Y \lt x) = \iint_{X+Y \lt x} df_x df_y = \int_{-\infty}^{\infty}df_x\int_{-\infty}^{z-x}df_y = \int_{-\infty}^{\infty}f_x(z)f_y(z-x) dz
+f_V = \frac{dF_V}{dx}
+Z = X/Y
+W = XY
+f_Z
+Z
+u
+x=zt
+y=t
+\mathrm dx\mathrm dy=t\mathrm dz\mathrm dt
+u
+f_X
+f_Y
+X
+Y
+(0,1)
+f_X=f_Y=\mathbf 1_{(0,1)}
+z\gt0
+ \mathbb E(u(Z))=\iint u(x/y)f_X(x)f_Y(y)\mathrm dx\mathrm dy. 
+ \mathbb E(u(Z))=\iint u(z)f_X(zt)f_Y(t)t\mathrm dz\mathrm dt. 
+ f_Z(z)=\int f_X(zt)f_Y(t)t\mathrm dt. 
+ f_Z(z)=\int \mathbf 1_{0\leqslant zt\leqslant1}\mathbf 1_{0\leqslant t\leqslant1}t\mathrm dt=\int_0^{\min(1,1/z)}t\mathrm dt=\frac{\min(1,1/z)^2}2, 
+ f_Z(z)=\begin{cases}\frac12&\text{if}\ z\leqslant1,\\ \frac1{2z^2}&\text{if}\ z\geqslant1.\end{cases} 

@@ -1,0 +1,24 @@
+ \dfrac{dT}{dt} = \dfrac{P}{\rho Ac_ph} + \dfrac{q (T_{in} - T)}{Ah} - \dfrac{U\pi D(T - T_{a})}{\rho Ac_p} 
+P
+h
+q
+ T_{in}
+t=0
+t=600
+h
+T
+q \ T_{in}
+q = U(t-t_1)
+T_{in} = U(t-t_2)
+ \mathcal{L}(q \ T_{in}) = \int_0^{\infty} U(t-t_1) \ U(t-t_2) \ e^{- s t} dt = \frac{1}{s}e^{-s \ \text{Max}(t_1,t_2)}; \ Re(s)>0, \ t_1>0, \ t_2>0
+q \ T
+T
+F(s) = \mathcal{L}f(t)
+q = f_2
+T = f_1
+\mathcal{L} (f_1(t) f_2(t)) = \frac{1}{2 \pi i} \int_{c-i \infty}^{c+i \infty} F_1(s^{\prime}) F_2(s-s^{\prime}) \ ds^{\prime}
+\mathcal{L}( q \ T) = \frac{1}{2 \pi i}\int_{c-i \infty}^{c+i \infty} \hat{T}(s^{\prime}) \frac{e^{-t_1(s - s^{\prime})}}{s - s^{\prime}} \ ds^{\prime}
+\hat{T}
+\mathcal{L}T
+c
+c<s

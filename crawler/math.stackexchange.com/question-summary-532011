@@ -1,0 +1,40 @@
+p>1
+a_n=n^{-\frac{p-1}{p}}\sum_{i=1}^n(i+1)^{-\frac1p}
+a_n
+a_n
+\lim_{n\to \infty}a_n= \frac{p-1}{p}
+p\gt0
+u:x\mapsto x^{-1/p}
+x\gt0
+i\geqslant1
+x
+((i+1)/n,(i+2)/n)
+y
+(i/n,(i+1)/n)
+u((i+1)/n)
+p\ne1
+u
+v:x\mapsto (p/(p-1))x^{1-1/p}
+v(1/n)
+v(2/n)
+v(0)=0
+p\gt1
+v((n+1)/n)
+v((n+2)/n)
+v(1)=p/(p-1)
+ u(x)\leqslant u((i+1)/n)\leqslant u(y). 
+ n\int_{(i+1)/n}^{(i+2)/n}u(x)\mathrm dx\leqslant u((i+1)/n)\leqslant n\int_{i/n}^{(i+1)/n}u(y)\mathrm dy. 
+ a_n=n^{-(p-1)/p}n^{-1/p}\sum_{i=1}^nu((i+1)/n)=n^{-1}\sum_{i=1}^nu((i+1)/n), 
+ \int_{2/n}^{(n+2)/n}u(x)\mathrm dx\leqslant a_n\leqslant \int_{1/n}^{(n+1)/n}u(x)\mathrm dx. 
+ \lim_{n\to\infty}a_n=p/(p-1). 
+x^{-1/p}
+[0,1]
+a
+C_p
+p
+2\varepsilon
+a
+\int_0^at^{-1/p}\mathrm dt\lt\varepsilon
+\int_a^1t^{-1/p}\mathrm dt
+\frac 1n\sum_{j=\lfloor na\rfloor}^n(j/n)^{-1/p}\to \int_a^1x^{-1/p}\mathrm dt
+\frac 1n\sum_{j=1}^{\lfloor na\rfloor}(j/n)^{-1/p}=\frac 1n\sum_{j=1}^{\lfloor na\rfloor}(n/j)^{1/p}\leqslant n^{1/p-1}(1+\sum_{j=2}^{\lfloor na\rfloor}\int_{j-1}^js^{-1/p}\mathrm ds)=n^{1/p-1}\left[\frac 1{1-1/p}s^{1-1/p}\right]_1^{\lfloor na\rfloor}\leqslant C_p(a+1/n),

@@ -1,0 +1,19 @@
+A_n
+P(A_n) < 1 \forall n
+P[A_n i.o.] = 1
+P(\cup_n A_n) =1
+P(\cup _{k=n} A_k) = 1 \forall n
+\mathbb{P} \left( \bigcap_{n \in \mathbb{N}} \bigcup_{k \geq n} A_k \right) = \lim_{n \to \infty} \mathbb{P} \left( \bigcup_{k \geq n} A_k \right) 
+\lim_{n \to \infty} \mathbb{P} \left( \left( \bigcup_{k \geq n} A_k \right)^c \right) = 0. \tag{1}
+A_k
+k \in \mathbb{N}
+\begin{align*} \mathbb{P} \left( \left( \bigcup_{k=n}^{n+m} A_k \right)^c \right)&= \mathbb{P} \left( \bigcap_{k=n}^{n+m} A_k^c \right) = \prod_{k=n}^{n+m} \mathbb{P}(A_k^c) = \prod_{k=n}^{n+m} (1-\mathbb{P}(A_k)). \tag{2}\end{align*}
+m \geq 1
+k
+\mathbb{P}(A_k)>0
+k_1,\ldots,k_n \in \mathbb{N}
+\mathbb{P}(A_{k_j})<1
+\mathbb{P} \left( \left( \bigcup_{j=1}^n A_{k_j} \right)^c \right) = \prod_{j=1}^n (1-\mathbb{P}(A_{k_j}))>0
+m \to \infty
+(2)
+(1)

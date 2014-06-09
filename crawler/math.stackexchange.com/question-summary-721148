@@ -1,0 +1,9 @@
+R = {(x,y) : x^2 + y^2 \leq 25, x\geq 0}
+x_c  = \dfrac{\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} x dy dx}{\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} dydx}
+x=5\sin(\theta)
+dx=5\cos{\theta}d\theta
+\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} dydx=\int_{x=0}^{5} 2\sqrt{25-x^2}dx
+\int_{x=0}^{5} 2\sqrt{25-x^2}dx=\int_{\theta=0}^{\pi/2} 2\sqrt{25-25\sin^2{\theta}}5\cos{\theta}d\theta=\int_{\theta=0}^{\pi/2} 50\cos^2{\theta}d\theta=\int_{\theta=0}^{\pi/2} 50\frac{1+cos{2\theta}}{2}d\theta=\frac{25\pi}{2}
+\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} x dy dx=\int_{x=0}^{5} 2x \sqrt{25-x^2}   dx
+\int_{x=0}^{5} 2x \sqrt{25-x^2}   dx=\int_{\theta=0}^{\pi/2} 10\sin{\theta}\sqrt{25-25\sin^2{\theta}}5\cos{\theta}d\theta=\int_{\theta=0}^{\pi/2} 250\sin{\theta}\cos^2{\theta}d\theta=-\frac{250\cos^3(\pi/2)}{3}+\frac{250\cos^3(0)}{3}=\frac{250}{3}
+x_c  = \dfrac{\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} x dy dx}{\int_{x=0}^{5} \int_{y=-\sqrt{25-x^2}}^{\sqrt{25-x^2}} dydx}=\frac{\frac{250}{3}}{\frac{25\pi}{2}}=\frac{20}{3\pi}

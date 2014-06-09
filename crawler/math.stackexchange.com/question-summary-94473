@@ -1,0 +1,19 @@
+u_t-u_{xx}=g(x,t)
+x \in \mathbb{R}
+t>0
+u(x,0)=0
+\hat{u_t}(w,t)=-w^2\hat{u}(w,t)+\hat{g}(w,t)
+\hat{u}=A(w)e^{-w^2t}
+u
+\hat{u}=e^{-w^2t} \Big[ \int_0^t e^{w^2s}\hat{g}(w,s) ds +A(w)\Big]
+u(x,0)=0 \Rightarrow \hat{u}(w,0)=0
+A(w)=0
+\hat{u}=e^{-w^2t}\int_0^t e^{w^2s}\hat{g}(w,s) ds
+u(x,0)=0
+u(x,0)=0
+t
+\mathcal{L}_{t\to s^2}\{u_t\}-\mathcal{L}_{t\to s^2}\{u_{xx}\}=\mathcal{L}_{t\to s^2}\{g(x,t)\}
+s^2U(x,s)-u(x,0)-U_{xx}(x,s)=G(x,s)
+U_{xx}(x,s)-s^2U(x,s)=-G(x,s)
+U(x,s)=C_1(s)e^{xs}+C_2(s)e^{-xs}-\dfrac{e^{xs}}{2s}\int_0^xG(x,s)e^{-xs}~dx+\dfrac{e^{-xs}}{2s}\int_0^xG(x,s)e^{xs}~dx
+u(x,t)=\mathcal{L}^{-1}_{s^2\to t}\{C_1(s)e^{xs}\}+\mathcal{L}^{-1}_{s^2\to t}\{C_2(s)e^{-xs}\}-\mathcal{L}^{-1}_{s^2\to t}\left\{\dfrac{e^{xs}}{2s}\int_0^xG(x,s)e^{-xs}~dx\right\}+\mathcal{L}^{-1}_{s^2\to t}\left\{\dfrac{e^{-xs}}{2s}\int_0^xG(x,s)e^{xs}~dx\right\}

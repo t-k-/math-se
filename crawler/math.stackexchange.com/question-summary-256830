@@ -1,0 +1,55 @@
+f
+A
+A(a,b)=\{z:a<|z|< b\},
+a < r < b
+M(r) = \max_{|z|=r}|f(z)| 
+\log\left(\frac ba\right)\log(M(r)) \le\ \log\left(\frac br\right)\log(M(a)) + \log\left(\frac ra\right)\log(M(b))
+f
+f=cz^\lambda
+c\in\mathbb C
+\lambda\in\mathbb Z
+f
+\mathbb C-\{0\}
+M(r)=|c|r^\lambda
+\log M(r)=\log c+\lambda \log r
+\log\frac br\log M(a)+\log\frac ra\log M(b)=\log\frac br\left(\log c+\lambda \log a\right)+\log\frac ra\left(\log c+\lambda \log b\right)
+=(\log b\log c-\log r\log c+\lambda\log b\log a-\lambda\log r\log a)
+\qquad+\ (\log r\log c-\log a\log c+\lambda\log r\log b-\lambda\log a\log b)
+=\log b\log c-\lambda\log r\log a-\log a\log c+\lambda\log r\log b
+=\log\frac ba\left(\log c+\lambda \log r\right)=\log\frac ba\log M(r).
+\log\frac br\log M(a)+\log\frac ra\log M(b)=\log\frac ba\log M(r)
+a<r<b
+\log r\log\frac{M(b)}{M(a)}+(\log b\log M(a)-\log a\log M(b))=\log\frac ba\log M(r)
+\lambda\log\frac ba=\log\frac{M(b)}{M(a)}
+c'\log\frac ba=\log b\log M(a)-\log a\log M(b)
+\lambda\log r+c'=\log M(r)\Rightarrow M(r)=cr^\lambda
+c=e^{c'}
+M(r)=\max_{|z|=r}|f(z)|
+r_0
+z_0
+|f(z_0)|=M(r_0)
+f
+r_0
+\frac d{d\theta}|f(z)|=0
+z_0
+\frac d{dr}|f(z)|=M'(r)
+\frac d{dz}f(z)=\psi z/|z|M'(|z|)=c\psi\lambda z^{\lambda-1}
+z_0
+|\psi|=1
+f
+z_0
+M'(|z_0|)
+\lambda=\frac{\log(b/r)}{\log(b/a)}
+1-\lambda=\frac{\log(r/a)}{\log(b/a)}
+\log(b/a)
+\log(M(r))\leq \lambda \log(M(a))+(1-\lambda)\log(M(b)).
+a^{\lambda}b^{1-\lambda}=\exp(\lambda\log(a)+(1-\lambda)\log(b))=r
+\log(M(a^\lambda b^{1-\lambda})\leq \lambda\log(M(a))+(1-\lambda)\log(M(b))
+M
+\log(M(\exp(z))
+z
+\log(M(\exp(z))=Az+B
+M(\exp(z))=Ce^{Az}
+M(z)=Cz^A
+f''(z)=\lim_{h\rightarrow 0}\frac{f(z+h)+f(z-h)-2f(z)}{h^2}=\lim_{h\rightarrow 0}\frac{2f(z)-2f(z)}{h^2}=0
+z=\frac{1}{2}(z+h)+\frac{1}{2}(z-h)

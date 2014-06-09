@@ -1,0 +1,10 @@
+\int e^{-x}\cos(x)dx
+e^{i x}=\cos x+i \sin x
+\sin (-x)= -\sin x
+\cos (-x) = \cos x
+e^{-i x}=\cos x-i \sin x
+\cos x = \dfrac{e^{ix}+e^{-ix}}{2}
+\Re
+\Im
+\begin{align*}\int e^{-x}\cos x~~ \mathrm d x &= \Re\left(\int e^{-x}e^{ix} \mathrm dx\right)\\&=\Re\left(\int e^{x(i-1)} \mathrm d x\right) \\&=\Re\left(\dfrac{e^{x(i-1)}}{i-1}\right)\\&=e^{-x}\cdot\Re\left(\dfrac{\cos x+ i \sin x}{-1+i}\right) \\&= e^{-x} \cdot\dfrac{\sin x-\cos x}{2}\end{align*} 
+\begin{align*} \int e^{-x} \cos x ~\mathrm dx&=\int e^{-x} \cdot \dfrac{e^{ix}+e^{-ix}}{2} \mathrm dx\\&=\dfrac{1}{2} \cdot \int (e^{ix-x}+e^{-ix-x}) \mathrm d x\\&=\dfrac{1}{2}\cdot \left(\dfrac{e^{x(i-1)}}{i-1}+\dfrac{e^{x(-1-i)}}{-i-1}\right)\end{align*}

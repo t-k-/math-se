@@ -1,0 +1,29 @@
+-\partial V/\partial t = \min_{u(t)} \{x^TQx + u^TRu + \partial V^T/\partial x(Ax + Bu) \}
+x \in \Re^n
+u \in \Re^m
+Q \in \Re^{n\times n}
+R \in \Re^{m\times m}
+A \in \Re^{n\times n}
+B \in \Re^{n\times m}
+u
+u^*=-\frac{1}{2}R^{-1}B^T\partial V/\partial x
+V(x,t)
+x
+V(x(t),t) = x(t)^{T}P(t)x(t)
+\partial V/\partial x = 2P(t)x(t)
+u^*(t) = -R^{-1}B^TP(t)x(t)
+P
+-\partial V/\partial t = -x^T\dot{P}x \equiv x^TQx + (-R^{-1}B^TPx)^TR(-R^{-1}B^TPx)+2x^TP(Ax+B[-R^{-1}B^TPx])
+-x^T\dot{P}x = x^T\{A^TP + PA + Q - PBR^{-1}B^TP\}x
+A^TP
+PA
+2x^TP
+Ax+Bu^*
+P
+P = QLQ^T
+Q
+\begin{align*} A^TP+PA &= A^TQLQ^T + QLQ^TA \\ Q^TA^TP+Q^TPA &= Q^TA^TQLQ^T+LQ^TA \\ Q^TA^TPQ+Q^TPAQ &= Q^TA^TQL+LQ^TAQ \\ Q^T(A^TP+PA)Q &=Q^TA^TQL+(Q^TAQ)^TL \\  &= Q^TA^TQL+Q^TA^TQL \\  &= 2(Q^TA^TQ)L \end{align*} 
+Q
+\begin{align*} A^TP+PA &= 2Q(Q^TA^TQ)LQ^T \\  &= 2A^T(QLQ^T)\\  &= 2A^TP \\  &= 2PA \end{align*} 
+P
+P^T=P

@@ -1,0 +1,25 @@
+p
+p
+(1)
+\begin{align} p \lor (x \land y) \lor (\lnot x \lor \lnot y) & \equiv p\lor [(x \land y) \lor \lnot x \lor \lnot y] \tag{1}\\ \\ & \equiv p \lor [(x\lor \lnot x \lor \lnot y) \land (y \lor \lnot x \lor  \lnot y)]\tag{2} \\ \\ & \equiv  p \lor \{[(x \lor \lnot x) \lor \lnot y] \land [(y \lor \lnot y) \lor \lnot x]\}\tag{3}\\ \\ & \equiv p \lor [(T \lor \lnot y) \land (T \lor \lnot x)] \tag{4}\\ \\ & \equiv p \lor (T \land T) \tag{5}\\ \\  & \equiv p \lor T \tag{6}\\ \\ & \equiv T\tag{7}\end{align}
+p, \, x\, \text{ or}\; y
+(1)
+\lor
+(2)
+\lor
+(3)
+q \lor \lnot q\equiv T
+(4)
+(5), (7)
+T \lor q\equiv T
+(6)
+T \land T
+\land
+\neg(\neg p \to \neg(\neg x \lor \neg y)) \to \neg(x \land y)
+(x \land y) \to (\neg p \to \neg(\neg x \lor \neg y))
+(x \land y) \to (\neg p \to (x \land y))
+\alpha = x \land y
+\alpha \to (\neg p \to \alpha).
+(\alpha \land \neg p) \to \alpha
+\alpha \to \alpha.
+\ddot\smile

@@ -1,0 +1,13 @@
+f: \mathbb{R} \rightarrow \mathbb{R}
+\lim_{x \to \infty}f'(x)=1
+a \in \mathbb{R}
+ \lim_{x \to \infty} \frac{e^{f(x+a)}}{e^{f(x)}} 
+ \begin{align} \lim_{x \to \infty} \frac{e^{f(x+a)}}{e^{f(x)}}&=\lim_{n \to \infty}e^{f(x+a)}e^{-f(x)} \\ &=\lim_{x \to \infty}e^{f(x+a)-f(x)} \\ &=\lim_{x \to \infty}\left(e^{f(x+a)-f(x)}\right)^\frac{a}{a} \\ &=\lim_{x \to \infty}\left(e^\frac{f(x+a)-f(x)}{a}\right)^a \\ &=\left(e^{\lim_{x \to \infty}\frac{f(x+a)-f(x)}{a}}\right)^a \\ &=\left(e^{\lim_{x \to \infty}f'(x)}\right)^a \\ &=(e^1)^a\\ &=e^a \end{align} 
+L=\lim\limits_{x\to \infty}f'(x)
+\epsilon >0
+N
+x\ge N\implies |f'(x)-L|<\epsilon
+x\ge n
+\lim\limits_{x\to\infty}\frac{f(x+a)-f(x)}{a}=L
+ \frac{f(x+a)-f(x)}{a}\ne f'(x)
+\begin{align} \left|\frac{f(x+a)-f(x)}{a}-L\right| &=\left|\frac{1}{a}\int_x^{x+a}(f'(t)-L)dt\right|\\ &\le \frac{1}{a}\int_{x}^{x+a}|f'(t)-L|dt\\ &\le \frac1a\int_x^{x+a}\epsilon = \epsilon \end{align}

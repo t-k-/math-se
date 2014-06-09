@@ -1,0 +1,17 @@
+\mathbb R
+\{x\in\mathbb R\,:\, x>0\}
+x\in[a,b]
+0<a<b
+[a,b]
+\Gamma(x)=\int_0^{\infty}t^{x-1}e^{-t}dt
+t^{x-1}e^{-t}
+\lim_{x\to x_0}\Gamma(x)=\lim_{x\to x_0}\int_0^{\infty}t^{x-1}e^{-t}dt=\int_0^{\infty}\lim_{x\to x_0}t^{x-1}e^{-t}dt=\Gamma(x_0)
+\Gamma
+[a,b]
+\Gamma
+\,b>0\,\,\,,\,\,\epsilon>0\,
+\,\delta>0\,
+\,|x-x_0|<\delta\Longrightarrow \left|t^{x-1}-t^{x_0-1}\right|<\epsilon\,
+\,[0,b]\,
+\left|\Gamma(x)-\Gamma(x_0)\right|=\left|\lim_{b\to\infty}\int\limits_0^b \left(t^{x-1}-t^{x_0-1}\right)e^{-t}\,dt\right|\leq
+\leq\lim_{b\to\infty}\int\limits_0^b\left|t^{x-1}-t^{x_0-1}\right|e^{-t}\,dt<\epsilon\lim_{b\to\infty}\int\limits_0^b e^{-t}\,dt=\epsilon

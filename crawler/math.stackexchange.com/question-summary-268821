@@ -1,0 +1,24 @@
+G
+[a,b]
+G(a) = c, G(b) = d
+f
+[c,d]
+\int_c^d f(y)dy = \int_a^b f(G(x))dG(x)
+\int_c^d f(y) dy = \int_a^b f(G(x))G'(x)dx
+G
+\int_a^b f(G(x))dG(x)
+m(E) = \mu_G(G^{-1}(E))
+E \subset [c,d]
+\chi_E
+E
+\int_{[c,d]} \chi_E \; dy = m(E) = \mu_G(G^{-1}(E))
+\chi_E(G(y)) = \chi_{G^{-1}(E)}(y)
+G^{-1}(E)
+[a,b]
+G
+\mu_G(G^{-1}(E)) = \int_{[a,b]} \chi_{G^{-1}(E)}(y) \; dG = \int_{[a,b]} \chi_{E}(G(y)) \;dG 
+\int_{[a,b]} \chi_E(G(y)) \; dG = \int_{[c,d]}\chi_E\;dy
+G
+G(t) - G(x) = \int_x^t G'(y)dy
+(t, x) \subset [a,b]
+G(t) - G(x) = \mu_G((t,x))

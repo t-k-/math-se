@@ -1,0 +1,23 @@
+f_{X,Y}(x,y) = cxe^{-x}
+x > 0, |y| < x
+c
+c = 1/4
+\int_0^\infty \int_{-x}^x cxe^{-x}dydx = 1
+f_{X|Y}(x|y)
+f_{Y|X}(y|x)
+f_{X|Y}(x|y) = \frac{f_{X,Y}(x,y)}{f_Y(y)}
+f_Y(y) = \int_0^\infty \frac{1}{4}xe^{-x} dx = \frac{1}{4} 
+f_{X|Y}(x|y) = \frac{\frac{1}{4}xe^{-x}}{\frac{1}{4}} = xe^{-x}
+f_{Y|X}(y|x) = \frac{f_{X,Y}(x,y)}{f_X(x)}
+f_X(x) = \int_{-x}^x \frac{1}{4}xe^{-x} dy = (-\frac{1}{4}e^{-x}(x+1)) - (-\frac{1}{4}e^x(-x+1))
+c=1/4
+f_{Y\mid X}
+f_{X\mid Y}
+f_Y
+f_{X,Y}
+ f_{X,Y}(x,y) = cxe^{-x}1_{x>0}1_{\left|y\right|<x}. 
+\left\{x\in\mathbb{R}:\ 1_{x>0}1_{\left|y\right|<x}\right\} = \left\{x\in\mathbb{R}:1_{x>\text{max}(0,\left|y\right|)}\right\}
+f_{X|Y}(x|y)
+f_{Y|X}(y|x)
+\int_{x\in \Omega_X}f_{X|Y}(x|y)\mathrm{d}x=1
+\int_{y\in \Omega_Y}f_{Y|X}(y|x)\mathrm{d}y=1

@@ -1,0 +1,51 @@
+\sum_{n=1}^{\infty}\frac{z^n}{(1-z^n)^k}=\sum_{n=1}^{\infty}\sigma_{k-1}(n)z^n
+c_N
+(k+1)
+(n,i_1,\ldots,i_k)
+n
+i_j
+n(1+i_1+\cdots+i_k)=N
+ \sum_{n=1}^{\infty}\frac{z^n}{(1-z^n)^k}=\sum_{n\geqslant1}z^n\sum_{i_1\geqslant0}z^{ni_1}\cdots\sum_{i_k\geqslant0}z^{ni_k}=\sum_{n,i_1,\ldots,i_k}z^{n(1+i_1+\cdots+i_k)}=\sum_{N\geqslant1}c_Nz^N, 
+n
+N
+d=N/n
+N
+d
+k
+(i_1,\ldots,i_k)
+i_1+\cdots+i_k=d-1
+i_j
+x^{d-1}
+N\geqslant1
+(c_N)_N
+(\sigma_{k-1}(N))_N
+k=1
+k=2
+k=3
+c_N
+(\sigma_{i}(N))_{1\leqslant i\leqslant k-1}
+k\geqslant1
+c_1=1
+c_2=1+k
+c_3=1+\frac12k(k+1)
+c_4=1+k+\frac16k(k+1)(k+2)
+ \left(\sum_{i\geqslant0}x^i\right)^k=\frac1{(1-x)^k}=\sum_{m\geqslant0}{m+k-1\choose k-1}x^m. 
+ c_N=\sum_{d\mid N}{d+k-2\choose k-1}. 
+ c_N=\sum_{d\mid N}\tfrac12d(d+1)=\tfrac12\sigma_2(N)+\tfrac12\sigma_1(N). 
+\displaystyle{% \sum_{n = 1}^{\infty}{z^{n} \over \left(1 - z^{n}\right)^{k}} = \sum_{n = 1}^{\infty}\sigma_{\,k - 1}\left(n\right)z^{n}:\ {\large ?} \quad\mbox{where}\quad \sigma_{\,k - 1}\left(n\right) \equiv \sum_{d\,|\,n}d^{k - 1}}
+ {1 \over 1 - z} = \sum_{\ell = 0}^{\infty}z^{\ell}\,, \quad {1 \over \left(1 - z\right)^{2}} = \sum_{\ell = 1}^{\infty}\ell\,z^{\ell - 1}\,, \quad {1 \over \left(1 - z\right)^{3}} = {1 \over 2} \sum_{\ell = 2}^{\infty}\ell\left(\ell - 1\right)z^{\ell - 2} 
+ {1 \over \left(1 - z\right)^{4}} = {1 \over 3\cdot 2} \sum_{\ell = 3}^{\infty}\ell\left(\ell - 1\right)\left(\ell - 2\right) z^{\ell - 3}\,, \quad \ldots 
+ \begin{array}{rcl}\hline\\ {1 \over \left(1 - z\right)^{k}} & = & {1 \over \left(k - 1\right)!} \sum_{\ell = k - 1}^{\infty}\ell\left(\ell - 1\right)\ldots \left(\ell - k + 2\right)z^{\ell - k + 1} \\[3mm]& = & {1 \over \left(k - 1\right)!} \sum_{\ell = k - 1}^{\infty}{\ell! \over \left(\ell - k + 1\right)!}\, z^{\ell - k + 1} \\[3mm]& = & \sum_{\ell = k - 1}^{\infty}{\ell \choose k - 1}z^{\ell - k + 1} = \sum_{\ell = 0}^{\infty}{\ell + k - 1\choose k - 1}z^{\ell} \\ \\ \hline \end{array} 
+k=1,2
+|z|<1
+S_\ell=T_1\bigcup...\bigcup T_\ell,  T_\ell=\lbrace(m,n)\in\mathbb{N}\times\mathbb{N};mn=\ell\rbrace
+k=1
+\frac{1}{1-z^n}=\sum_{m=0}^{\infty}z^{mn}=\sum_{m=1}^{\infty}z^{n(m-1)}
+\sum_{n=1}^{\infty}\frac{z^n}{1-z^n}=\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}z^{mn}=\sum_{n=1}^{\infty}\sigma_0(n)z^n.
+k=2
+\frac{1}{(1-z^n)^2}=\sum_{m=1}^{\infty}mz^{n(m-1)}
+\sum_{n=1}^{\infty}\frac{z^n}{(1-z^n)^2}=\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}mz^{mn}=\sum_{n=1}^{\infty}\sigma_1(n)z^n.
+f_k(u) = \left(u\dfrac{d}{du}\right)^k \dfrac{u}{1-u}
+k\in\{0,1\}
+k \geq 2
+ \sum_{n=1}^\infty \sigma_k(n)z^n = \sum_{m=1}^\infty f_k(z^m) 

@@ -1,0 +1,18 @@
+\forall x(P(x) \vee Q(y))
+(\forall x P(x)) \vee Q(y)
+\forall x(P(x) \vee Q(x))
+(\forall x P(x)) \vee (\forall x Q(x))
+Q(y)
+x
+Q(y)
+Q(y)
+P(x)
+\forall x, P(x)
+(\forall x, P(x)) \lor Q(y)
+\forall x, (P(x) \lor Q(y))
+\forall x, (P(x) \lor Q(y)) \vdash (\forall x, P(x)) \lor Q(y)
+Q(y), [\forall x, (P(x) \lor Q(y))] \vdash (\forall x, P(x)) \lor Q(y)
+\lnot Q(y), [\forall x, (P(x) \lor Q(y))] \vdash (\forall x, P(x)) \lor Q(y),
+\forall x, (P(x) \lor Q(y))
+x
+(\forall x, P(x)) \vee Q(y)

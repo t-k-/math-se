@@ -1,0 +1,14 @@
+ = (1 -e^{-1})\sum_{n=0}^\infty (1-e^{-n})[\sum_{k=0}^{\infty} \frac{-k(-n)^{k+1}}{(k+1)!}]
+\begin{align*} \sum_{n\ge 0}\int_n^{n+1}ne^{-x}dx&=\sum_{n\ge 0}n\left[\frac1{e^x}\right]_{n+1}^n\\\\ &=\sum_{n\ge 0}n\left(\frac1{e^n}-\frac1{e^{n+1}}\right)\\\\ &=\left(1-\frac1e\right)\sum_{n\ge 0}\frac{n}{e^n}\;.\tag{1} \end{align*}
+|x|<1
+x
+\frac1{1-x}=\sum_{n\ge 0}x^n
+\frac{x}{(1-x)^2}=\sum_{n\ge 0}nx^n\;.\tag{2}
+x=e^{-1}
+(1)
+\left(1-\frac1e\right)\frac{e^{-1}}{\left(1-e^{-1}\right)^2}=\frac{e-1}e\cdot\frac{e}{(e-1)^2}=\frac1{e-1}\;.
+(2)
+ \sum_{k=0}^{\infty} e^{-k x} = \frac{1}{1-e^{-x}} \implies -\sum_{k=0}^{\infty}k e^{-k x}
+= \frac{d}{dx}\frac{1}{1-e^{-x}}. 
+{}{}
+\int_0^\infty  \lfloor x \rfloor e^{-x}dx = \sum_{n=1}^{\infty} \int^{\infty}_n e^{-x} dx= \sum_{n=1}^{\infty} e^{-n}=\frac{1}{e-1}.

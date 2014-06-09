@@ -1,0 +1,71 @@
+z
+\psi(s,w)
+G(w) = z + \int \psi(s,w)\,dB_s(w)
+G(w)
+G(w) = (B^2_T(w)-T)\exp(B_T(w)-T)
+G(w) = E[G] + \int \psi(s,w)\,dB_s(w)
+E[G]
+T^2e^{-T/2}
+\psi(s,w)
+G
+dB_s
+\psi(s,w)
+dG(w) = (B_s^2 + 2B_s - 2s)e^{B_s-s}dB_s(w) + (\ldots)dt
+G=X_TY_T\mathrm e^{-T/2}
+X
+Y
+t\geqslant0
+M^T_t=E[X_TY_T\mid\mathcal F_t]
+(M^T_t)_{0\leqslant t\leqslant T}
+M^T_T=X_TY_T
+M^T_0=E[X_TY_T]
+\mathrm dM^T_t=K^T_t\mathrm dB_t
+(K^T_t)_{0\leqslant t\leqslant T}
+M_0^T
+K^T
+X_t=B_t^2-t,\qquad Y_t=\mathrm e^{B_t-t/2}. 
+G=\mathrm e^{-T/2}M^T_0+\mathrm e^{-T/2}\int_0^TK^T_t\mathrm dB_t. 
+M_0^T=T^2\mathrm e^{-T/2}
+K^T
+t\lt T
+u=T-t
+\bar B
+\bar X
+\bar Y
+s\geqslant0
+\bar B
+\mathcal F_t
+(\bar B,\bar Y)
+(B,Y)
+k\geqslant0
+M^T
+M_t^T
+\mathrm dX=2B\mathrm dB
+\mathrm dY=Y\mathrm dB
+\mathrm d(BY)
+Y(B+1)\mathrm dB
+\mathrm d(XY)
+Y(X+2B)\mathrm dB
+\bar B_s=B_{t+s}-B_t,\qquad\bar X_s=\bar B_s^2-s,\qquad\bar Y_s=\mathrm e^{\bar B_s-s/2}. 
+ X_TY_T=((B_t+\bar B_u)^2-t-u)Y_t\bar Y_u=X_tY_t\bar Y_u+2B_tY_t\bar B_u\bar Y_u+Y_t\bar B_u^2\bar Y_u. 
+ M_t^T=E[X_TY_T\mid\mathcal F_t]=A_0(T-t)X_tY_t+2A_1(T-t)B_tY_t+A_2(T-t)Y_t, 
+ A_k(u)=E[B_u^kY_u]. 
+A_k
+0\leqslant k\leqslant2
+x
+Y^x
+Y^x_0=1
+E[Y^x_u]=1
+u\geqslant0
+x
+0\leqslant t\leqslant T
+ Y^x_u=\exp((1+x)B_u-(1+x)^2u/2)=Y_u\exp(xB_u-xu-x^2u/2), 
+ E[Y_u]=1,\quad E[(B_u-u)Y_u]=0,\quad E[((B_u-u)^2-u)Y_u]=0, 
+ A_0(u)=1,\quad A_1(u)=uA_0(u)=u,\quad A_2(u)=2uA_1(u)-(u^2-u)A_0(u)=u^2+u. 
+ K_t^T=(B_t^2-t+2(T-t+1)B_t+(T-t)^2+3(T-t))\cdot\mathrm e^{B_t-t/2}. 
+2 \int_0^T B_t \cdot \exp \left( B_t-\frac{t}{2} \right) \, dt = T^2
+t \mapsto B_t(w) \cdot \exp \left( B_t-\frac{t}{2} \right)(w)
+2 B_T \cdot \exp \left(B_T- \frac{T}{2} \right) = 2 T \quad \text{a.s.}
+B_T = T \cdot \exp \left(\frac{T}{2}-B_T\right) \geq 0
+f(t,x) := (x^2-t) \cdot \exp (x-t)
+\underbrace{f(t,B_t)}_{G_t}-\underbrace{f(0,0)}_{0}= \int_0^t \exp(B_s-s) \cdot (B_s^2+2B_s-s) \, dB_s \\ + \frac{1}{2} \int_0^t \exp(B_s-s) \cdot \left(-\frac{1}{2} B_s^2+2B_s + \frac{s}{2} \right) \, ds

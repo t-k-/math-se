@@ -1,0 +1,39 @@
+\sqrt{1-\cos(x)}
+u=1-\cos(x)
+du=\sin(x)\,dx
+1/\sqrt{2-u}
+s=2-u
+ds=-du
+1/\sqrt{s}
+2\sqrt{s}
+s=2-u
+u=1-\cos(x)
+x
+\int\sqrt{1-\cos(x)}\,dx
+=\int-\frac{1}{\sqrt{2-u}}\,du
+=-\int\frac{1}{\sqrt{2-u}}\,du
+=\int\frac{1}{\sqrt{s}}\,ds
+=2\sqrt{s}+\text{constant}
+=2\sqrt{2-u}+\text{constant}
+=2\sqrt{\cos(x)+1}+\text{constant}
+\boxed{=-2\sqrt{1-\cos(x)}\cot\big(\frac{x}{2}\big)+\text{constant}}
+2\sqrt{\cos(x)+1}+\text{constant}
+2\pi
+0
+-2\sqrt{1-\cos(x)}\cot\big(\frac{x}{2}\big)+\text{constant}
+2\pi
+0
+0 \times \infty
+2\pi
+0
+0
+ \int_0^{2\pi}\sqrt{1-\cos x}\,dx=\int_0^{2\pi}\sqrt{2\sin^2\frac{x}{2}}\,dx =\sqrt{2}\int_0^{2\pi}\sin\frac{x}{2}\,dx=-2\sqrt{2}\cos\frac{x}{2}\Big|_0^{2\pi}=4\sqrt{2}. 
+u
+u=1-\cos x
+\begin{align}|\sin x| &= \sqrt{\sin^2 x}\\ &= \sqrt{1-\cos^2 x}\\ &= \sqrt{1-\cos x}\sqrt{1+\cos x}\\ &=\sqrt{1-\cos x}\sqrt{2-(1-\cos x)},\end{align}
+\frac{du}{dx}=\sin x=\begin{cases}|\sin x|=\sqrt{1-\cos x}\sqrt{2-(1-\cos x)} & 0\le x\le \pi\\-|\sin x|=-\sqrt{1-\cos x}\sqrt{2-(1-\cos x)} & \pi\le x\le2\pi,\end{cases}
+\begin{align}\int_0^{2\pi}\sqrt{1-\cos x}\,dx &= \int_0^\pi\sqrt{1-\cos x}\,dx+\int_\pi^{2\pi}\sqrt{1-\cos x}\,dx\\ &= \int_0^\pi\frac{|\sin x|}{\sqrt{2-(1-\cos x)}}\,dx+\int_\pi^{2\pi}\frac{|\sin x|}{\sqrt{2-(1-\cos x)}}\,dx\\ &= \int_0^\pi\frac{\sin x\,dx}{\sqrt{2-(1-\cos x)}}-\int_\pi^{2\pi}\frac{\sin x\,dx}{\sqrt{2-(1-\cos x)}}\\ &= \int_0^2\frac{du}{\sqrt{2-u}}-\int_2^0\frac{du}{\sqrt{2-u}}\\ &= 2\int_0^2\frac{du}{\sqrt{2-u}}.\end{align}
+\cos(2\pi-x)=\cos x
+u
+[0,\pi]
+\begin{align}\int_0^{2\pi}\sqrt{1-\cos x}\,dx &= \int_0^\pi\sqrt{1-\cos x}\,dx+\int_\pi^{2\pi}\sqrt{1-\cos x}\,dx\\ &= \int_0^\pi\sqrt{1-\cos x}\,dx+\int_\pi^{2\pi}\sqrt{1-\cos(2\pi-x)}\,dx\\ &= \int_0^\pi\sqrt{1-\cos x}\,dx-\int_{2\pi}^\pi\sqrt{1-\cos(2\pi-x)}\,dx\\ &= \int_0^\pi\sqrt{1-\cos x}\,dx-\int_0^\pi\sqrt{1-\cos x}\frac{d(2\pi-x)}{dx}\,dx\\ &= 2\int_0^\pi\sqrt{1-\cos x}\,dx,\end{align}

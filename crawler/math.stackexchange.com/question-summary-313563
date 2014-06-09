@@ -1,0 +1,19 @@
+\textbf{My Question:}
+A
+A_{ij} = \Phi(\max(x_i+x_j-1,0)) 
+ 0 \leq x_i \leq 1
+ i=1,2,...n
+\Phi:[0,1] \rightarrow \mathbb{R} 
+A
+\textbf{What I tried:}
+n=1
+n=2
+ \Phi(\max(2x-1,0)) \geq 0 
+ \Phi(y) \geq 0 \hspace{4mm}\forall y \in [0,1]  
+\mathbf{Case 1 : x_1 \geq \frac{1}{2}, x_2 \leq \frac{1}{2}, x_1+x_2 \leq 1}
+ \Phi(2x_1-1) \geq 0 \\ \Phi(0) \leq \Phi(2x_1-1) 
+\mathbf{Case 2 : x_1 \geq \frac{1}{2}, x_2 \leq \frac{1}{2}, x_1+x_2 \geq 1}
+ \Phi(2x_1-1) \geq 0 \\ \Phi(2x_1-1) \Phi(0) - \Phi(x_1+x_2-1)^2 \geq 0 
+\mathbf{Case 3 : x_1 \geq \frac{1}{2}, x_2 \geq \frac{1}{2}, x_1+x_2 \geq 1}
+ \Phi(2x_1-1) \geq 0 \\ \Phi(2x_1-1) \Phi(2x_2-1) - \Phi(x_1+x_2-1)^2 \geq 0 
+\Phi

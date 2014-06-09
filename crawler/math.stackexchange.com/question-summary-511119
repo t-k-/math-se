@@ -1,0 +1,12 @@
+ \exists x\;\forall y\;\forall z \Bigl({\rm person}(x)\land \bigl(({\rm likes}(x,y)\land y\ne z)\to \neg {\rm likes}(x,z)\bigr)\Bigr) 
+\alpha \to \beta \equiv \neg \alpha \lor \beta
+\neg(\alpha \land \beta) \equiv \neg \alpha \lor \neg \beta
+\neg(\alpha \lor \beta) \equiv \neg \alpha \land \neg \beta
+\forall x_1\ldots \forall x_n\exists v. \phi(x_1, \ldots, x_n, v)
+\phi(x_1, \ldots, x_n, f(x_1, \ldots, x_n, v))
+x
+p
+  \exists x\;\forall y\;\forall z \Bigl({\rm person}(x)\land \bigl(\neg ({\rm likes}(x,y)\land y\ne z)\lor \neg {\rm likes}(x,z)\bigr)\Bigr) 
+\exists x\;\forall y\;\forall z \Bigl({\rm person}(x)\land \bigl( \neg {\rm likes}(x,y)\lor y= z \lor \neg {\rm likes}(x,z)\bigr)\Bigr) 
+\forall y\;\forall z \Bigl({\rm person}(p)\land \bigl( \neg {\rm likes}(p,y)\lor y= z \lor \neg {\rm likes}(p,z)\bigr)\Bigr) 
+{\rm person}(p)\land \bigl( \neg {\rm likes}(p,y)\lor y= z \lor \neg {\rm likes}(p,z)\bigr)

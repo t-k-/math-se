@@ -1,0 +1,18 @@
+(1-w-zw)F(z,w)+zw^nF(z,w^2)=z-zw\,.
+n\geq2
+F(z,w)
+\mathbb C^2
+G(j)=F(z,w^j)
+j\geq1
+G(j)-\underbrace{\,\frac{-zw^{jn}}{1-w^j-zw^j}\,\\[4mm]}_{a_j}\,G(2j)=\underbrace{\,\frac{z-zw^j}{1-w^j-zw^j}\,\\[4mm]}_{b_j}\,.
+\prod_{k=0}^\infty a_{2^kj}=c_j
+H(j)=G(j)/c_j
+H(j)-H(2j)=\frac{b_j}{c_j}\,,
+\begin{align*} F(z,w)=&\,G(1)=c_1H(1)\\ =&\,c_1\sum_{r=0}^\infty\bigl[H(2^r)-H(2^{r+1})\bigr]+c_1\lim_{r\to\infty}H(2^r)\\ =&\,\sum_{r=0}^\infty b_{2^r}\frac{c_1}{c_{2^r}}+\lim_{r\to\infty}\frac{c_1}{c_{2^r}}G(2^r)\\ %=&\,\sum_{r=0}^\infty \frac{z-zw^{2^r}}{1-w^{2^r}-zw^{2^r}}\,\prod_{k=0}^{r-1}\frac{zw^{2^kn}}{1-w^{2^k}-zw^{2^k}}+\lim_{r\to\infty}\frac{c_1}{c_{2^r}}G(2^r)\\ \end{align*}
+F
+|w|<1
+\lim\limits_{r\to\infty}G(2^r)=F(z,0)=z
+d_r=\frac{c_1}{c_{2^r}}=\prod_{k=0}^{r-1}\frac{-zw^{2^kn}}{1-w^{2^k}-zw^{2^k}}
+F(z,w)=\sum_{r=0}^\infty b_{2^r}d_r+z\lim_{r\to\infty}d_r\,.
+(d_r)_{r\geq1}
+F

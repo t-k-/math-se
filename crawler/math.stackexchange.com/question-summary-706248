@@ -1,0 +1,13 @@
+  y'' + 2y' + 5y = f(t) 
+ Y(s)
+  F(s) + s+2\over(s^2 + 2s + 5) 
+ F(s) + s + 2\over (s+1)^2 + 4) 
+ S = s + 1 
+ F(s)\over(S^2 + 2^2)  
+ S\over(S^2 + 2^2) 
+ 1\over(S^2 + 2^2) 
+\tag 1 y'' + 2y' + 5y = f(t), ~ y(0) = 1, y'(0) = 0 
+(1)
+Y(s) = \dfrac{1}{(s+1)^2 + 2^2} \left(F(s) + s + 2 \right)
+y(t) = (e^{-t} \sin t \cos t)*f(t)) + \left( \dfrac{1}{2}e^{-t}(2 \cos 2t - \sin 2t) \right)  + (e^{-t} \sin 2t)
+y(t) = \int_0^t (e^{-(t-v)} \sin(t-v) \cos(t-v))*f(v)~dv +  \dfrac{1}{2}e^{-t}(2 \cos 2t - \sin 2t)   + e^{-t} \sin 2t

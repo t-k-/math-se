@@ -1,0 +1,10 @@
+X_n
+X_n
+X
+\{\omega: X_n(\omega) -> X(\omega)\}
+X_n
+X
+\{\lim_{n \to \infty} X_n = X\} = \bigcap_{n \in \mathbb{N}} \bigcup_{m \in \mathbb{N}} \left\{ \sup_{k \geq m} |X_k-X| < \frac{1}{n} \right\}.
+\mathbb{P}
+\begin{align*} \mathbb{P}(\lim_{n \to \infty} X_n = X) &= \lim_{n \to \infty} \lim_{m \to \infty} \mathbb{P} \left( \sup_{k \geq m} |X_k-X| < \frac{1}{n} \right) \\ &= 1- \lim_{n \to \infty} \underbrace{\lim_{m \to \infty} \mathbb{P} \left( \sup_{k \geq m} |X_k-X| \geq \frac{1}{n} \right)}_{0} = 1.\end{align*}
+\begin{align*} \mathbb{P}\left( |X_n-X|>\varepsilon \, \text{infinitely often} \right) &= \mathbb{P} \left( \bigcap_{m \in \mathbb{N}} \bigcup_{k \geq m} \{|X_k-X| > \varepsilon\} \right) \\ &= \mathbb{P} \left( \bigcap_{m \in \mathbb{N}} \left\{ \sup_{k \geq m} |X_k-X|>\varepsilon \right\} \right) \\ &\leq \mathbb{P} \left( \sup_{k \geq m} |X_k-X|>\varepsilon \right) \\ &\to 0 \qquad m \to \infty. \end{align*}

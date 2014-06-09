@@ -1,0 +1,19 @@
+F(t) = L^{-1}\{s^{-1/2}e^{-1/s}\}
+f(s)
+F(t)
+\int_{AB}
+\int_{EH}
+\int_{HJK}
+\int_{KL}
+s=xe^{i\pi}
+\int_{EH}  =\int_{-R}^{-\epsilon} \frac{e^{st-1/s}}{\sqrt s} ds =\int_{R}^{\epsilon} \frac{ie^{1/x-xt}}{\sqrt x} dx
+s=xe^{-i\pi}
+\int_{KL} =\int_{-\epsilon}^{-R} \frac{e^{st-1/s}}{\sqrt s} ds =\int_{\epsilon}^{R} \frac{ie^{1/x-xt}}{\sqrt x} dx
+s=\epsilon e^{i\theta}
+\int_{HJK} =\int_{\pi}^{-\pi} \frac{e^{st-1/s}}{\sqrt s} ds =\int_{\pi}^{-\pi} \frac{e^{\epsilon t e^{i\theta}-1/\epsilon e^{i\theta}}}{\sqrt \epsilon e^{i\theta /2}} i\sqrt \epsilon e^{i\theta /2} ds =\int_{\pi}^{-\pi} \sqrt{\epsilon} ie^{\epsilon t e^{i\theta} - (\epsilon te^{i\theta})^{-1}+ i\theta/2} dx
+F(t) = -\frac{1}{2\pi i}\lim_{R\to \infty}_{\epsilon \to 0} \{\int_{R}^{\epsilon} \frac{ie^{1/x-xt}}{\sqrt x} dx + \int_{\epsilon}^{R} \frac{ie^{1/x-xt}}{\sqrt x} dx + \int_{\pi}^{-\pi} \sqrt{\epsilon} ie^{\epsilon t e^{i\theta} - (\epsilon te^{i\theta})^{-1}+ i\theta/2} dx\}
+\therefore F(t) = -\frac{1}{2\pi}\lim_{R\to \infty}_{\epsilon \to 0} \int_{\pi}^{-\pi} \sqrt{\epsilon} e^{\epsilon t e^{i\theta} - (\epsilon te^{i\theta})^{-1}+ i\theta/2} dx
+\epsilon \to t^{-1/2}
+\frac{\cos(2\sqrt t)}{\sqrt{\pi t}}
+ with(inttrans): invlaplace(exp(-1/s)/s, s, t);  
+{{\rm J}\left(0,\,2\,\sqrt {t}\right)}  .

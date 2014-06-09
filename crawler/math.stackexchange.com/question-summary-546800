@@ -1,0 +1,59 @@
+\{a^ib^jc^k \mid i \neq j \;or\; j \neq k \}
+a
+b
+c
+a
+b
+c
+b
+S \rightarrow aAbBcC
+A \rightarrow a | A | \epsilon
+b,c
+a
+b
+ww
+L_1
+c
+a
+b
+c
+S_1\to XC
+C
+c
+X
+a
+b
+X
+a
+b
+X\to aXb
+a
+b
+X\to Y
+Y\to aY\mid a
+a
+b
+C \rightarrow C | c | \epsilon
+G=\{V,\Sigma, P,S\}
+L
+L_1 = \{a^ib^jc^k|i\neq j\}
+L_1 = \{a^ib^jc^k|j\neq k\}
+S_1 \rightarrow L_1
+S_2 \rightarrow L_2
+S \rightarrow S_1 \mid S_2
+L_1
+c
+S_1 \rightarrow XC
+C \rightarrow C \mid c\mid \epsilon
+X \rightarrow aXb
+a
+b
+i>j
+X \rightarrow Y
+Y\rightarrow aY | a
+j>i
+X \rightarrow Z
+Z \rightarrow Zb | b
+L
+L = (\{S,X,Y,Z,C\},\{a,b,c\},P,S)
+S \rightarrow S_1 | S_2

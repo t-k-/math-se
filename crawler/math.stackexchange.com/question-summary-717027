@@ -1,0 +1,29 @@
+Y_1, Y_2,\ldots, Y_n
+N(0,1)
+ X_i =\sum_{j=1}^n c_{i,j}Y_j
+i=1,2,\ldots,n
+c_{i,j}
+E(X_i\mid X_k)=\dfrac{\sum_{j=1}^n c_{i,j}c_{k,j}}{\sum_{j=1}^nc_{k,j}^2}X_k
+\operatorname{Var}(X_i\mid X_k)
+X
+Y
+X
+N(0, CC')
+\alpha_{i,k}
+\beta_{i,k}
+\gamma_{i,k}
+Z_{i,k}
+X_{i,k}
+i\ne k
+\langle\ ,\ \rangle
+c_i=(c_{ik})_k
+X_i=\alpha_{i,k}X_k+\beta_{i,k}Z_{i,k}+\gamma_{i,k}, 
+ E(X_i\mid X_k)=\alpha_{i,k}X_k+\gamma_{i,k}, 
+ \mathrm{var}(X_i\mid X_k)=\beta_{i,k}^2. 
+ E(X_i)=E(X_k)=0,\qquad\mathrm{var}(X_i)=\sum_jc_{i,j}^2, 
+ \mathrm{Cov}(X_i,X_k)=\sum_jc_{i,j}c_{k,j}, 
+ E(X_i)=\gamma_{i,k},\qquad\mathrm{var}(X_i)=\alpha^2_{i,k}\mathrm{var}(X_k)+\beta^2_{i,k}, 
+ \mathrm{Cov}(X_i,X_k)=\alpha_{i,k}\mathrm{var}(X_k), 
+ \gamma_{i,k}=0,\qquad\alpha_{i,k}=\frac{\sum\limits_jc_{i,j}c_{k,j}}{\sum\limits_jc_{k,j}^2}, 
+ \beta^2_{i,k}=\sum_jc_{i,j}^2-\frac{\left(\sum\limits_jc_{i,j}c_{k,j}\right)^2}{\sum\limits_jc_{k,j}^2}. 
+ \alpha_{i,k}=\frac{\langle c_i,c_k\rangle}{\langle c_k,c_k\rangle}, \qquad \beta^2_{i,k}=\langle c_i,c_i\rangle-\frac{\langle c_i,c_k\rangle^2}{\langle c_k,c_k\rangle}. 

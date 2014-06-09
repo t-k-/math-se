@@ -1,0 +1,20 @@
+  2 \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n+1}\left( 1 + \frac12 + \cdots + \frac 1n\right) 
+ (\log 2)^2 
+ \left(\sum_{n=1}^{\infty} a_n\right)\left(\sum_{n=1}^{\infty} b_n\right) = \sum_{n=1}^{\infty} c_{n+1},
+ c_n = \sum_{k=1}^{n-1} a_k b_{n-k}. 
+a_n = b_n = \frac{(-1)^{n}}{n}
+ a_k b_{n-k} = \frac{(-1)^n}{k(n-k)} = \frac{(-1)^n}{n}\left(\frac{1}{k}+\frac{1}{n-k}\right), 
+ \begin{align*} c_n &= \frac{(-1)^n}{n} \sum_{k=1}^{n-1} \left(\frac{1}{k}+\frac{1}{n-k}\right) \\ &= 2\frac{(-1)^n}{n} \sum_{k=1}^{n-1} \frac{1}{k}. \end{align*} 
+ 2 \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n+1} \sum_{k=1}^{n} \frac{1}{k} = \left(\sum_{n=1}^{\infty} \frac{(-1)^n}{n}\right)^2 = (-\log 2)^2 = (\log 2)^2. 
+\dfrac1k = \displaystyle \int_0^1 x^{k-1} dx
+\dfrac1{n+1} = \displaystyle \int_0^1 y^n dy
+S = \sum_{n=1}^{\infty} \dfrac{(-1)^{n+1}}{n+1} \sum_{k=1}^n \dfrac1k
+f_n(z) = \dfrac{1 - (-z)^n}{1+z}
+g(z) = \dfrac2{1+z}
+[0,1]
+\sum_{k=0}^{\infty} \int_0^1 (-z)^k dz = \lim_{n \to \infty} \int_0^1 \dfrac{1 - (-z)^n}{1+z} dz
+\lim_{n \to \infty} \int_0^1 \dfrac{1 - (-z)^n}{1+z} dz = \int_0^1 \dfrac{dz}{1+z}
+2S
+\log^2(2)
+S = \sum_{n=1}^{\infty} (-1)^{n+1} \int_0^1 y^n dy \left(\sum_{k=1}^n \int_0^1 x^{k-1} dx  \right) = \sum_{n=1}^{\infty} (-1)^{n+1} \int_0^1 y^n dy \left(\int_0^1 \dfrac{1-x^n}{1-x} dx  \right)
+S = \int_0^1 \int_0^1 \dfrac{\dfrac{y}{1+y} - \dfrac{xy}{1+xy}}{1-x} dy dx = \int_0^1 \int_0^1 \dfrac{y+xy^2-xy-xy^2}{(1+y)(1+xy)(1-x)} dx dy\\ =\int_0^1 \int_0^1 \dfrac{y}{(1+y)(1+xy)} dx dy = \int_0^1 \dfrac{\log(1+y)}{1+y} dy = \left. \dfrac{\log^2(1+y)}2 \right \vert_0^1 = \dfrac{\log^2(2)}2

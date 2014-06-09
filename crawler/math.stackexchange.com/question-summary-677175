@@ -1,0 +1,13 @@
+\color{#FF4F00}{\neg}(\; \forall \; e > 0 \: \exists \; d > 0 \: \forall \; c \in S \: \forall \; x \in S \: {\LARGE{[}} \; |x - c|< d \implies |f(x) - f(c)| < e {\LARGE{]}} \;) \tag{♦}
+\iff \exists \; e > 0 \; \color{#FF4F00}{\neg}( \; \exists \; d > 0 \: \forall \; c \in S \: \forall \; x \in S \: {\LARGE{[}} \; |x - c|< d \implies |f(x) - f(c)| < e {\LARGE{]}} \;) 
+\iff \exists \; e > 0 \; \exists \; d > 0 \: \color{#FF4F00}{\neg}(\; \forall \; c \in S \: \forall \; x \in S \: {\LARGE{[}} \; |x - c|< d \implies |f(x) - f(c)| < e {\LARGE{]}} \;) 
+(♦)
+\exists \; e > 0 \: \forall \; d > 0 \: \exists \; c \in S \: \exists \; x \in S \:\: \color{#FF4F00}{\neg}{\LARGE{[}} \; |x - c|< d \implies |f(x) - f(c)| < e {\LARGE{]}} \tag{♣}
+\forall e > 0 : P(e)
+\forall e : (e > 0 \implies P(e))
+\exists d > 0 : P(d)
+\exists d : (d > 0 \land P(d))
+\forall e>0 \; \exists d > 0 : P(e, d)
+\displaystyle \forall e : (e>0 \implies (\exists d: d>0 \land P(e,d)))
+\begin{align} \neg \forall e : [e>0 \implies (\exists d: d>0 \land P(e,d))] &\equiv \exists e: \neg \: [e>0 \implies (\exists d: d>0 \land P(e,d))] \\ &\equiv \exists e : \neg \: [\neg(e > 0) \lor (\exists d: d>0 \land P(e,d))] \\ &\equiv \exists e : e > 0 \land \neg \: (\exists d: d>0 \land P(e,d)) \\ &\equiv \exists e : e > 0 \land \forall d: \neg [d>0 \land P(e,d)] \\ &\equiv \exists e : e > 0 \land \forall d: [\neg (d>0) \lor \neg P(e,d)] \\ &\equiv \exists e : e > 0 \land \forall d: [d>0 \implies \neg P(e,d)] \end{align}
+\exists e > 0 \; \forall d > 0 \; \neg P(e, d)

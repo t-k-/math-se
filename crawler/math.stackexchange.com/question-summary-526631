@@ -1,0 +1,32 @@
+\frac 72
+\frac 27
+1
+\frac 16
+2
+\frac 7{36}
+S(\omega) \subset \mathbb{N}
+\omega
+d_k(\omega) \in \{1,...,6\}
+S(\omega) = \{ \sum_{k=1}^n d_k(\omega) \}_{n=1}^\infty 
+n \in \{0,...,5\}
+\pi_k(n) = p\{ \omega | r_k(\omega) = n \}
+\pi_1(n) = \frac{1}{6}
+\{1,...6\}
+\frac{1}{6}
+k >1
+\pi_k(n) = \sum_{m=0}^{5} p \left(\{ \omega | r_k(\omega) = n \} | \{ \omega | r_{k-1}(\omega) = m \} \right) \pi_{k-1}(m)
+m \in \{1,...,5\}
+p \left(\{ \omega | r_k(\omega) = n \} | \{ \omega | r_{k-1}(\omega) = m \} \right) = \begin{cases} 1, & n=m-1 \\ 0, & \text{otherwise}\end{cases}
+m = 0
+p \left(\{ \omega | r_k(\omega) = n \} | \{ \omega | r_{k-1}(\omega) = 0 \} \right) = \frac{1}{6}
+\pi_k = (\pi_k(0),...,\pi_k(5))^T
+\pi_k = M \pi_{k-1}
+M= \begin{bmatrix} \frac{1}{6} & 1 & 0 & 0 & 0 & 0 \\ \frac{1}{6} & 0 & 1 & 0 & 0 & 0  \\ \frac{1}{6} & 0 & 0 & 1 & 0 & 0 \\ \frac{1}{6} & 0 & 0 & 0 & 1 & 0  \\ \frac{1}{6} & 0 & 0 & 0 & 0 & 1  \\ \frac{1}{6} & 0 & 0 & 0 & 0 & 0 \\ \end{bmatrix}
+\pi_{1000000}(0) = e_1^T M^{999999} \pi_1
+M \hat{\pi} = \hat{\pi}
+\hat{\pi} = c(1, \frac{5}{6}, \frac{4}{6}, \frac{3}{6},  \frac{2}{6}, \frac{1}{6})^T
+c= \frac{7}{2}
+\hat{\pi} = \frac{2}{7}(1, \frac{5}{6}, \frac{4}{6}, \frac{3}{6},  \frac{2}{6}, \frac{1}{6})^T
+\hat{\pi}(0) = \frac{2}{7}
+S(\omega)
+r_k

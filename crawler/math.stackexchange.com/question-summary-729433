@@ -1,0 +1,30 @@
+P = H^* H'
+H'^* H = I_2
+P
+m \times m
+I_2
+2\times 2
+H
+m\times 2
+H
+\mathbf{x}
+\mathbf{y}
+   H = \begin{bmatrix} x_1 & y_1 \\ x_2 & y_2 \\ \dots & \dots \\ x_m & y_m \end{bmatrix}   \quad \text{and} \quad   H' = \begin{bmatrix} x_1 & x_2 & \dots & x_m \\ y_1 & y_2 & \dots & y_m \end{bmatrix} 
+   H'\cdot H = \begin{bmatrix}              \sum_{i=1}^m x_i x_i & \sum_{i=1}^mx_i y_i \\              \sum_{i=1}^m x_i y_i & \sum_{i=1}^m y_i y_i              \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
+   \mathbf{x} = \begin{bmatrix} x_1 & x_2 & \dots & x_m \end{bmatrix}^T   \quad \text{and} \quad   \mathbf{y} = \begin{bmatrix} y_1 & y_2 & \dots & y_m \end{bmatrix}^T 
+   H'.H = \begin{bmatrix} \mathbf{x}\cdot\mathbf{x} &  \mathbf{x}\cdot\mathbf{y} \\      \mathbf{x}\cdot\mathbf{y} & \mathbf{y}\cdot\mathbf{y} \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \,. 
+\mathbf{x}, \mathbf{y}
+j
+P
+\mathbf{x}
+x_j
+P_j
+\lambda = 1
+\mathbf{y}
+\mathbf{P}^T
+   P = H\cdot H' = \begin{bmatrix}            x_1x_1 + y_1y_1 & x_1x_2 + y_1y_2 &\dots & x_1x_m+y_1y_m \\           x_2x_1 + y_2y_1 & x_2x_2 + y_2y_2 &\dots & x_2x_m+y_2y_m \\           \dots & \dots & \ddots & \dots\\           x_mx_1 + y_my_1 & x_mx_2 + y_my_2 &\dots & x_mx_m+y_my_m         \end{bmatrix} 
+   \mathbf{P}_j = x_j\,\mathbf{x} + y_j\,\mathbf{y} 
+   \mathbf{P}_j\cdot\mathbf{x} = x_j 
+   P_{1j}\,x_1 + P_{2j}\,x_2 + \dots + P_{mj}\,x_m = x_j \,. 
+   \begin{bmatrix}       P_{11} & P_{21} & \dots & P_{m1} \\      P_{12} & P_{22} & \dots & P_{m2} \\      \vdots & \vdots & \ddots & \vdots \\      P_{1m} & P_{2m} & \dots & P_{mm}   \end{bmatrix}   \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_m \end{bmatrix} =    \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_m \end{bmatrix}   
+  (\mathbf{P}^T - \lambda\mathbf{I})\,\mathbf{x} = \mathbf{0} \,. 

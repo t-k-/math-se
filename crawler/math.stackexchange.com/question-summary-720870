@@ -1,0 +1,28 @@
+V
+k
+\mathbb R ^d
+v_1 ,...,v_k
+V
+P=\sum_{i=1}^{k}v_{i}v_{i}^{T}
+\{v_1,...,v_k\}
+\mathbb R ^d
+\{v_1,...,v_d\}
+x \in \mathbb R ^d
+x=\sum_{j=1}^{d}\alpha_{j}v_{j}
+Px=\left(\sum_{i=1}^{k}v_{i}v_{i}^{T}\right)\left(\sum_{j=1}^{d}\alpha_{j}v_{j}\right)=\left(\sum_{i=1}^{k}v_{i}v_{i}^{T}\right)\left(\sum_{j=1}^{d}\alpha_{j}v_{j}\right)=\sum_{i=1}^{k}\sum_{j=1}^{d}\alpha_{j}v_{i}v_{i}^{T}v_{j}=\sum_{j=1}^{k}\alpha_{j}v_{j}
+P=\sum_{i=1}^{k}v_{i}v_{i}^{T}:= \left[\left.\begin{array}{c} \\ v_{1}\\ \\ \end{array}\right|\left.\begin{array}{c} \\ \cdots\\ \\ \end{array}\right|\begin{array}{c} \\ v_{k}\\ \\ \end{array}\right]  \left[\left.\begin{array}{c} \\ v_{1}\\ \\ \end{array}\right|\left.\begin{array}{c} \\ \cdots\\ \\ \end{array}\right|\begin{array}{c} \\ v_{k}\\ \\ \end{array}\right]^{T}?  
+v_i=(v_{i1},\dots,v_{id})^T
+i=1\dots k
+v_i
+d\times d
+v_iv_i^T=\left(\begin{matrix}v_{i1}\\v_{i2}\\\vdots\\v_{id}\end{matrix}\right)(v_{i1},\dots,v_{id})=\begin{pmatrix}v_{i1}^2 & \dots & v_{i1}v_{in} &\dots & v_{i1}v_{id}\\\vdots&\ddots&\vdots&&\vdots\\v_{im}v_{i1}&\dots& v_{im}v_{in}&\dots&v_{im}v_{id}\\\vdots&&\vdots&\ddots&\vdots\\v_{id}v_{i1}&\dots&v_{id}v_{in}&\dots&v_{id}^2\end{pmatrix}
+d=3
+V=R^2
+R^3
+v_1=\begin{pmatrix}1\\0\\0\end{pmatrix}
+v_2=\begin{pmatrix}0\\1\\0\end{pmatrix}
+P=\sum_{i=1}^2v_iv_i^T=\begin{pmatrix}1 &0 & 0\\0 &1&0\\0&0&0\end{pmatrix}
+P=\sum_{i=1}^{k}v_{i}v_{i}^{T}:= \left[\left.\begin{array}{c} \\ v_{1}\\ \\ \end{array}\right|\left.\begin{array}{c} \\ \cdots\\ \\ \end{array}\right|\begin{array}{c} \\ v_{k}\\ \\ \end{array}\right]  \left[\left.\begin{array}{c} \\ v_{1}\\ \\ \end{array}\right|\left.\begin{array}{c} \\ \cdots\\ \\ \end{array}\right|\begin{array}{c} \\ v_{k}\\ \\ \end{array}\right]^{T}
+\mathbf{v}=\begin{pmatrix}v_1^T\\\vdots\\v_k^T\end{pmatrix}
+P
+\mathbf{v}^T\mathbf{v}=v_1v_1^T+\ldots+v_kv_k^T

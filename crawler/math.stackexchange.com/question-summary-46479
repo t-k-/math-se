@@ -1,0 +1,65 @@
+x_1 \in [0,1]
+x_2 \in [0, x_1]
+x_2
+\{1,2,3\}
+ P(n,k) = \frac{1}{k} \sum_{q=n}^k \frac{1}{q} 
+ = \frac{\Psi(k+1) - \Psi(n)}{k} 
+k
+x_2
+U_1 U_2
+U_1
+U_2
+(0,1)
+U_1 U_2
+x_{n+1}
+(0,x_n)
+x:=x_1+x_2+x_3+\cdots
+1
+U_1 + U_1 U_2 + U_1 U_2 U_3 + \cdots
+U_i
+(0,1)
+x
+x_2
+0 < x \leq 1
+F(x)=x - x \log x
+x_2
+f(x)=-\log(x)
+0 < x < 1
+x_1 = s
+0 < s < 1
+x_2
+(0,s)
+0 < x \leq 1
+ {\rm P}(x_2  \le x) = \int_0^1 {{\rm P}(x_2  \le x|x_1  = s)ds}  = \int_0^x {{\rm P}(x_2  \le x|x_1  = s)ds}  + \int_x^1 {{\rm P}(x_2  \le x|x_1  = s)ds} 
+  = \int_0^x {1ds}  + \int_x^1 {\frac{x}{s}ds}  = x - x\log x. 
+x_2
+U_1 U_2
+U_1
+U_2
+(0,1)
+ {\rm P}(x_2  \le x) = {\rm P}(U_1 U_2  \le x) = \int_0^1 {{\rm P}(U_1 U_2  \le x|U_1  = s)ds}  = \int_0^1 {P\bigg(U_2  \le \frac{x}{s}\bigg)ds}  
+ = \int_0^x {P\bigg(U_2  \le \frac{x}{s}\bigg)ds} + \int_x^1 {P\bigg(U_2  \le \frac{x}{s}\bigg)ds} =  \int_0^x {1ds} + \int_x^1 {\frac{x}{s}ds} = x - x \log x. 
+U_i
+i=1,2
+-\log U_i
+(1)
+0 < x \leq 1
+\xi_1
+\xi_2
+(1)
+\xi_1+\xi_2
+ye^{-y}
+y > 0
+U_1 \cdots U_n
+U_i
+(0,1)
+ {\rm P}(x_2  \le x) = {\rm P}(U_1 U_2  \le x) = {\rm P}(\log U_1 + \log U_2  \le \log x) = {\rm P}( - \log x \le \xi_1  + \xi_2 ), 
+ {\rm P}(x_2  \le x) = \int_{ - \log x}^\infty  {ye^{ - y} dy} = -e^{-y}(y+1) \big|_{ - \log x}^\infty  = x - x \log x. 
+P(x_2 | x_1)
+P(x_1)
+P(x_2) = \int P(x_2,x_1) dx_1 = \int P(x_2 | x_1) P(x_1) dx_1
+P(x_1)=1
+[0,1]
+P(x_2 | x_1) = 1/x_1 
+0 \le x_2 \le x_1 \le 1
+P(x_2) = - \log(x_2)

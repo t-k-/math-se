@@ -1,0 +1,17 @@
+\textbf{x}
+p
+p>1
+f(\textbf{x}) = ||\textbf{x}||_2^p
+f(x)
+ f(\mathbf{x}):=||\mathbf{x}||_{2}^{p}=\left(\sum_{i=1}^{n}x_{i}^{2}\right)^{p/2} 
+ \nabla f(\mathbf{x}) :=  \left(\frac{\partial f}{\partial x_{1}},\frac{\partial f}{\partial x_{2}}, \ldots, \frac{\partial f }{\partial x_{n}  } \right) 
+ \frac{\partial f}{\partial x_{j}} = \frac{p}{2}\left(\sum_{i=1}^{n} x_{i}^{2}  \right)^{p/2-1}\cdot 2x_{j}  =px_{j}||\mathbf{x}||_{2}^{p-2} 
+ \nabla f(\mathbf{x})=p||\mathbf{x}||_{2}^{p-2}\left(x_{1},x_{2},\ldots, x_{n}\right) 
+ \nabla^{2}f := \begin{pmatrix} \frac{\partial^{2} f}{\partial x_{1}^{2}} &  \frac{\partial^{2} f}{\partial x_{1} \partial_{x_{2}}} &  \cdots  &\frac{\partial^{2} f}{\partial x_{1}\partial_{x_{n}}} \\ \frac{\partial^{2} f}{\partial x_{2} \partial x_{1}} & \frac{\partial^{2} f}{\partial x_{2}^{2}} & \cdots & \frac{\partial^{2} f}{\partial x_{2}\partial_{x_{n}}}  \\ \vdots & \vdots & \ddots & \vdots   \\ \frac{\partial^{2} f}{\partial x_{n} \partial_{x_{1}}}  & \frac{\partial^{2} f}{\partial x_{n} \partial_{x_{2}}} & \cdots & \frac{\partial^{2} f}{\partial x_{n}^{2}}   \end{pmatrix} 
+\frac{\partial^2 f}{\partial x_i^2}=\frac{\partial}{\partial x_i}\left(px_i\left(\mathbf x^2\right)^{p/2-1}\right)=p\left(\left(\mathbf x^2\right)^{p/2-1}+(p-2)x_i^2\left(\mathbf x^2\right)^{p/2-2}\right)
+\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial}{\partial x_i}\left(px_j\left(\mathbf x^2\right)^{p/2-1}\right)=p(p-2)x_ix_j\left(\mathbf x^2\right)^{p/2-2}
+i\ne j
+H
+H=p\left(\mathbf x^2\right)^{p/2-2}\left((\mathbf x^\top\mathbf x) I+(p-2)\mathbf x\mathbf x^\top\right)\;,
+f(\mathbf x) = (\mathbf x ^\top \mathbf x) ^{p/2}
+f'(\mathbf x) = p/2 (\mathbf x^\top \mathbf x) ^{(p-2)/2} 2\mathbf x = p (\mathbf x^\top \mathbf x) ^{(p-2)/2} \mathbf x

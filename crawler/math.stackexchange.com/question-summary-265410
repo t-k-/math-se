@@ -1,0 +1,38 @@
+(1_1),(1_2),...,(1_m)\\  (1_1),(1_2,2_2),...,(1_m)\\ ...\\ (1_1),(1_2),...,(1_m,2_m)\\ (1_1,2_1),(1_2),...,(1_m)\\ (1_1,2_1),(1_2,2_2),...,(1_m)\\ ...\\ (1_1,2_1),(1_2),...,(1_m,2_m)\\ ...\\ ...\\ (1_1,2_1,...,a_1),(1_2,2_2,...,a_2),...,(1_m,2_m,...,a_m)
+a_1-th
+a_2-th
+a_1 \times a_2 \times ... \times a_m
+h
+h\in \mathbb{N}
+N_k=\{1,\dots,a_k\}
+k=1,\dots,m
+|G|
+h,m
+a_k
+k=1,\dots,m
+G=\left\{\langle i_1,\dots,i_m\rangle\in\prod_{k=1}^mN_k:\sum_{k=1}^mi_k\le h\right\}\;;
+x_1+\ldots+x_m+x_{m+1}=h-m\tag{1}
+x_1+\ldots+x_{k-1}+y_k+y_{k+1}+\ldots+x_{m+1}=h-m-a_k
+(1)
+x_k
+\binom{h-a_k}m
+\binom{h}m
+\binom{h}m-\sum_{k=1}^m\binom{h-a_k}m\;.\tag{2}
+(1)
+(2)
+1\le i<k\le m
+(1)
+x_i
+x_k
+\binom{h-a_i-a_k}m
+(2)
+[m]^k
+k
+\{1,\dots,m\}
+\binom{h}m-\sum_{k=1}^m\binom{h-a_k}m+\sum_{1\le i<k\le m}\binom{h-a_i-a_k}m\;.
+\sum_{k=0}^m(-1)^k\sum_{S\in[m]^k}\binom{h-\sum\limits_{i\in S}a_i}m\;.\tag{3}
+h
+a_i
+(3)
+0
+k

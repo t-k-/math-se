@@ -1,0 +1,86 @@
+a^2 -ab +b^2 = (a+b)^2 -3ab.
+x,y
+ax + by = 1
+(a+b)x + ((a+b)^2 -3ab)y =1.
+x = (a+b)
+y = -1
+3ab =1.
+\gcd(a+b,a^2-ab+b^2)=\gcd(a+b,3ab)
+p
+p|\gcd(a+b,3ab)
+p=3
+p|a
+p|b
+p|a
+p\not|b
+p\not|a+b
+p|b
+b\not|a+b
+p=3
+9|\gcd(a+b,3ab)
+3|a
+3|b
+3\not |a+b
+b
+-b
+gcd(a,b)=gcd(a,-b)
+gcd(a^2+ab+b^2,a-b)
+p
+a-b
+a \equiv b \mod p
+p|3
+p|a
+p
+a
+b
+gcd(a,b) \neq 1
+p=3
+gcd(a^2+ab+b^2,a-b)
+0 = a^2+ab+b^2=a^2+a^2+a^2=3a^2 \mod p
+a^2+ab+b^2=(a-b)^2+3ab
+9
+(a-b)^2
+a^2+ab+b^2
+3ab
+3|ab
+a,b
+3|a-b,a\implies 3|b \implies (a,b)!= 1
+a^2+ab+b^2,a-b
+\phi_1(x)=x-1
+\phi_3(x)=x^2+x+1
+\phi_n(x), \phi_m(x)
+m=1
+n=p
+\phi_m(x)=x-1,\phi_n(x)=x^{p-1}+x^{p-2} + \cdots + 1
+h_n(x,y)=\phi_n(\frac{x}{y})y^{\phi(n)}=\sum_{i=0}^{p-1}x^i y^{p-1-i},h_m(x,y)=\phi_m(\frac{x}{y})y^{\phi(m)}=x-y
+gcd(x,y)=1 \implies gcd(\phi_m(x,y),\phi_m(x,y)) \in \{1,p \}
+p \neq 2
+q
+\sum_{i=0}^{p-1}x^i y^{p-1-i} = px^{p-1} \equiv 0 \mod q \implies p=q
+p^2
+x \equiv y \mod p
+x=y+pk
+k
+x^i = y^i + y^{i-1}pki \mod p^2
+\sum_{i=0}^{p-1}x^i y^{p-1-i} = \sum_{i=0}^{p-1} ( y^i + y^{i-1}pki) y^{p-1-i} =
+p y^{p-1} + pk y^{p-2} \sum_{i=1}^{p-1} i = py^{p-1} + pk y^{p-2} \binom{p}{2} =
+ y^{p-2}p (y+k\frac{p-1}{2}) \mod {p^{2}}
+p
+y
+gcd(x,y)=1
+p^2
+y+k\frac{p-1}{2} \equiv 0 \mod p
+p \nmid k
+p|y
+p^2 \nmid x-y
+gcd(\phi_n(x), \phi_m(x))
+n,m
+\phi_n(1) = p
+n=p^{k}
+1
+gcd(h_n(x,y),h_m(x,y))=1
+(n,m)=1
+n,m
+gcd(h_n(x,y),h_m(x,y))
+p
+n=1, m=p^k, k>1

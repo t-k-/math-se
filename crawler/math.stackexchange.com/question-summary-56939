@@ -1,0 +1,49 @@
+\int _Vf(\pmb{r})\delta (g(\pmb{r}))d\pmb{r}=\int _S\frac{f(\pmb{r})}{|\text{grad} g(\pmb{r})|}d\sigma
+S
+V
+g(\pmb{r})=0
+\text{grad} g(\pmb{r})\neq 0
+\delta (g(x))=\sum _a \frac{\delta (x-a)}{\left|g'(a)\right|}
+a
+g(x)
+g'(a)\neq 0
+g(x)
+g(x)
+g(a)+(x-a)g'(a)=(x-a)g'(a)
+g(a)=0
+\int _{-\infty }^{\infty }f(x)\delta (g(x))dx=\sum _a \int _{a-\epsilon }^{a+\epsilon }f(x)\delta \left((x-a)g'(a)\right)dx
+\delta (kx)=\frac{\delta (x)}{|k|}
+\int _{-\infty }^{\infty }f(x)\delta (g(x))dx=\sum _a \frac{f(a)}{\left|g'(a)\right|}
+\sum _a \frac{\delta (x-a)}{\left|g'(a)\right|}
+\delta (g(x))
+g(\mathbf{x}) = g(\mathbf{r}) + \vec{\mathrm{grad} g(\mathbf{r})}.(\mathbf{x}-\mathbf{r}) + o(\vert \mathbf{x}-\mathbf{r} \vert)
+g(\mathbf{r})=0
+\mathbf{n}_1 = \frac{\vec{\mathrm{grad} g(\mathbf{r})}}{\vert{\mathrm{grad} g(\mathbf{r})}\vert}
+\mathbf{n}_i
+i=2, \ldots, n
+t_i
+\mathbf{r} = \sum_i t_i \mathbf{n}_i
+dV_x = dx_1 \wedge d x_2 \wedge \ldots \wedge d x_n = \vert J \vert dt_1 \wedge d t_2 \wedge \ldots \wedge d t_n = dV_t
+  \int f(\mathbf{r}) \delta( g(\mathbf{r})) dV_x =      \int f(\mathbf{r}) \delta( \vert \mathrm{grad} g(\mathbf{r}) \vert t_1 ) dV_t =      \int f(\mathbf{r}) \frac{1}{\vert \mathrm{grad} g(\mathbf{r}) \vert }\delta( t_1 ) dV_t 
+t_1
+d \sigma
+\delta(x)
+\varphi_\epsilon(x)=\varphi(x/\epsilon)/\epsilon
+\varphi
+1
+\varphi
+\lim_{\epsilon\to 0}\;\varphi_\epsilon\to\delta
+\pmb{r}\in S
+g(\pmb{x})=(\pmb{x}-\pmb{r})\cdot \nabla g(\pmb{r})+o(\pmb{x}-\pmb{r})
+S
+\nabla g=\pmb{n}|\nabla g|
+\pmb{n}
+S
+\pmb{r}\in S
+\varphi_{\epsilon'}((\pmb{x}-\pmb{r})\cdot \pmb{n})
+S
+\pmb{r}
+ \begin{align} \varphi_\epsilon(g(\pmb{x}))&=\varphi((\pmb{x}-\pmb{r})\cdot \nabla g(\pmb{r})/\epsilon)/\epsilon+o(\pmb{x}-\pmb{r})\\ &=\varphi((\pmb{x}-\pmb{r})\cdot \pmb{n}/\epsilon')/\epsilon'/|\nabla g(\pmb{r})|+o(\pmb{x}-\pmb{r})\\ &=\varphi_{\epsilon'}((\pmb{x}-\pmb{r})\cdot \pmb{n})/|\nabla g(\pmb{r})|+o(\pmb{x}-\pmb{r}) \end{align} 
+\delta(g(\pmb{r}))\;d\pmb{r}=\;\displaystyle{\frac{d\sigma}{|\nabla g(\pmb{r})|}}
+d\sigma
+S

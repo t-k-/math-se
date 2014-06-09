@@ -1,0 +1,12 @@
+t=x/z
+\int\frac{dx}{(z^{2}+x^{2})^{3/2}}
+\frac{1}{z^{2}}\int\frac{dt}{(1+t^{2})^{3/2}}
+x = z \tan(t)
+ dx = \frac{z\, dt}{\cos^2(t)}
+ \int \frac{z\,dt}{\cos^2(t) z^3 (1+\tan^2(t))^{3/2}}=
+ \frac{1}{z^2} \int \frac{dt}{\cos^2(t) (\frac{1}{\cos^2(t)})^{3/2}}=
+ \frac{1}{z^2} \int \cos(t) \,dt=  \frac{1}{z^2} \sin(t) + C = 
+ \frac{1}{z^2} \frac{x}{\sqrt{z^2+x^2}} + C,
+\frac{x}{z}=\sinh u\Longrightarrow dx=z\cosh u
+\int\frac{dx}{(z^2+x^2)^{3/2}}=\frac{1}{z^3}\int z\cosh u\; du\frac{1}{(1+\sinh^2u)^{3/2}}=\frac{1}{z^2}\int\frac{du}{\cosh^2 u}=
+=\frac{2}{z^2}\int\frac{e^udu}{e^{2u}+1}=\frac{2}{z^2}\arctan e^u+C\ldots

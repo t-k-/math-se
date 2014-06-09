@@ -1,0 +1,10 @@
+P(X\geq m)=\sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^r}{r!};m=0,1,...
+m=1,2,...
+P(X\geq m)=\int_{0}^{\lambda}\frac{e^{-u}u^{m-1}}{(m-1)!}du
+m
+1
+0
+\lambda
+ f(\lambda)=\sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^r}{r!}\implies f'(\lambda)=\sum_{r=m}^{\infty}\frac{-e^{-\lambda}\lambda^r}{r!}+\sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^{r-1}}{(r-1)!} 
+ \sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^{r-1}}{(r-1)!}=\frac{e^{-\lambda}\lambda^{m-1}}{(m-1)!}+\sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^{r}}{r!}=\frac{e^{-\lambda}\lambda^{m-1}}{(m-1)!}+f(\lambda) 
+ f'(\lambda)=-f(\lambda)+\sum_{r=m}^{\infty}\frac{e^{-\lambda}\lambda^{r-1}}{(r-1)!}=-f(\lambda)+\frac{e^{-\lambda}\lambda^{m-1}}{(m-1)!}+f(\lambda)\\ \implies f'(\lambda)=\frac{e^{-\lambda}\lambda^{m-1}}{(m-1)!}\\ f(\lambda)=\int_0^\lambda \frac{e^{-u}u^{m-1}}{(m-1)!}du 

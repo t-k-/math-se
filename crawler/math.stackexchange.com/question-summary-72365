@@ -1,0 +1,85 @@
+S^m
+S^n
+ (m < n ) 
+ \left\{ (x_1, x_2, ..., x_{m+1}, 0,...0) | \sum x_i^2 = 1 \right\}  
+ S^n \backslash S^m 
+ S^{n-m-1} 
+ n = 2 
+m = 1 
+x, y , z
+x,y
+S^0
+ \left\{ (0,0,-1) , (0,0,1) \right\} 
+ i : S^0 \to S^2 \backslash S^1
+ f : S^2 \backslash S^1 \to S^0 
+ f ( (x,y,z) ) = (0,0, \frac{z}{||z||}) 
+ S^1 
+ fi = {id}_{S^0} 
+ if \simeq {id}_{S^2 \backslash S^1} 
+ H : S^2 \backslash S^1 \times [0,1] \to S^2 \backslash S^1 
+ H(x,t) = tx + (1-t)f(x) 
+ S^2 \backslash S^1 
+ n = 1
+ m = 0
+\mathbb{R}^{n+1} = \mathbb{R}^{m+1} \times \mathbb{R}^{n-m}
+(x,y)
+x\in\mathbb{R}^{m+1}
+y \in \mathbb{R}^{n-m}
+S^m
+S^n \subset \mathbb{R}^{n+1}
+(x,y) \in\mathbb{R}^{n+1} 
+y=0
+\| x \| = 1
+S^{n-m-1}
+S^n
+(x,y)
+x=0
+\|y\| =1
+S^{n} \backslash S^m
+(x,y)\in S^n
+y\neq 0
+ i : S^{n-m-1} \longrightarrow S^n\backslash S^m \ , \qquad i(0,y) = (0,y) \ . 
+(x,y) \in S^{n-m-1}
+x = 0
+(x,y) \in S^n\backslash S^m
+S^{n-m-1}
+x=0
+ f: S^n \backslash S^m \longrightarrow S^{n-m-1} \ , \qquad f(x,y) = \left( 0,\frac{y}{\|y\|} \right) \ . 
+y\neq 0
+f
+ (f\circ i) (0,y) = f(0,y) = \left( 0,\frac{y}{\|y\|} \right) = (0,y) \ , 
+\|y\|=1
+ (i\circ f)(x,y) = \left( 0,\frac{y}{\|y\|} \right) \ , 
+\mathrm{id_{S^n\backslash S^m}}
+i\circ f
+ H : (S^n\backslash S^m)\times I \longrightarrow S^n\backslash S^m \ , \qquad H(x,y,t) = \frac{\left((1-t)x, (1-t)y + t\frac{y}{\|y\|} \right)}{\left\| \left((1-t)x, (1-t)y + t\frac{y}{\|y\|} \right) \right\|} \ . 
+ H(x,y,0) = \frac{( x,y )}{\|(x,y)\|}  = (x,y) \ , 
+(x,y) \in S^n
+ H(x,y,1) = \frac{\left(0, \frac{y}{\|y\|} \right)}{\left\| \left(0, \frac{y}{\|y\|} \right) \right\|}  = \left( 0, \frac{y}{\|y\|} \right) \ . 
+(1-t)y + t\frac{y}{\|y\|} \neq 0 
+(x,y,t) \in (S^n\backslash S^m)\times I
+  (1-t)y + t\frac{y}{\|y\|} = 0 \qquad \Longleftrightarrow \qquad (1-t)y\|y\| +ty = 0 
+y\neq 0
+ (1-t)\|y\| +t = 0 \ . 
+t \in [0,1]
+\|y\|
+1
+y \neq 0
+0
+\mathbb R^{n+1}
+\mathbb R^{n+1} = \mathbb R^{m+1} \oplus \mathbb R^{n-m}
+\mathbb R^{n+1}
+S^n
+\mathbb R^{m+1}
+S^m
+S^m
+S^n
+S^n
+\mathbb R^{n-m}
+S^{n-m-1}
+\partial (I^{n+1}) \simeq S^n
+I
+I^{n+1} = I^{m+1} \times I^{n-m}
+ \partial (I^{n+1}) = (\partial I^{m+1}) \times I^{n-m} \cup I^{m+1} \times (\partial I^{n-m})
+ S^n \simeq S^m \times D^{n-m} \cup D^{m+1} \times S^{n-m-1}
+\partial (S^m \times D^{n-m}) = S^m \times S^{n-m-1} = \partial (D^{m+1} \times S^{n-m-1})

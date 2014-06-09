@@ -1,0 +1,17 @@
+26
+12
+14
+11
+\binom{26}{11}\times\frac{12}{26}\times\frac{11}{25}\times\frac{10}{24}\times\frac{14}{23}\times\frac{13}{22}\times\frac{12}{21}\times\frac{11}{20}\times\frac{10}{19}\times\frac{9}{18}\times\frac{8}{17}\times\frac{7}{16}
+\mathbb{P}(X \geq5) = 1 - \mathbb{P}(X \lt 5)
+\mathbb{P}(X \lt 5) = \mathbb{P}(X=0) + \mathbb{P}(X=1) + \mathbb{P}(X=2) + \mathbb{P}(X=3) + \mathbb{P}(X=4)
+N_{\mathbb{Or}}
+N_{B}
+N
+n
+k
+\frac{N_{\mathbb{Or}}}{N}\times\frac{N_\mathbb{Or}-1}{N-1}\times\cdots\times\frac{N_{\mathbb{Or}}-(k-1)}{N-(k-1)}\times\frac{N_B}{N-k}\times\cdots\times\frac{N_B-(n-k-1)}{N-(n-1)}
+\mathbb{Pr}[N_{\mathbb{Or},n}^{(S)}=k]=\binom{n}{k}\prod_{a=0}^{n-1}\left(\frac{1}{N-a}\right)\prod_{b=0}^{k-1}(N_{\mathbb{Or}}-b)\prod_{c=0}^{n-k-1}(N_B-c)
+\mathbb{Pr}[N_{\mathbb{Or},n}^{(S)}=i]
+i = 0,1,...,4
+\mathbb{Pr}[N_{\mathbb{Or},11}^{(S)}=11|N_{\mathbb{Or},11}^{(S)} \geq 5] = \frac{\mathbb{Pr}[N_{\mathbb{Or},11}^{(S)}=11 \bigcap N_{\mathbb{Or},11}^{(S)} \geq 5]}{\mathbb{Pr}[N_{\mathbb{Or},11}^{(S)} \geq 5]} = \frac{\mathbb{Pr}[N_{\mathbb{Or},11}^{(S)}=11]}{\mathbb{Pr}[N_{\mathbb{Or},11}^{(S)} \geq 5]}

@@ -1,0 +1,24 @@
+\lim_{n \rightarrow \infty} n^2 |\int_{[0,1]}f(x)-I_n(x)|
+I_n
+I_n=\frac{1}{n}\sum_{k=1}^nf(c_k)
+c_k
+k^{th}
+\frac{max_{[0,1]} f''(x)}{24n^2}
+x
+\frac{f^{(n+1)}(\xi)(x-x_\circ)^{n+1}}{(n+1)!}
+[0,1]
+n
+\lim_{n \rightarrow \infty} n^2 \frac{f^{(n+1)}(\xi)(x-x_\circ)^{n+1}}{(n+1)!}
+\infty \times 0
+f''
+h
+\xi \in [a,a+h]
+n
+[0,1]
+h = 1/n
+x_j = j h
+\xi_j \in [x_j, x_{j+1}]
+\displaystyle \frac{1}{n} \sum_{j=0}^{n-1} f''(\xi_j)
+\int_0^1 f''(x)\ dx = f'(1) - f'(0)
+ \int_a^{a+h} f(x)\ dx - h f(a+h/2) = -\frac{h^3}{24} f''(\xi)
+\int_0^1 f(x)\ dx - I_n = \sum_{j=0}^{n-1} \left(\int_{x_j}^{x_{j+1}} f(x)\ dx - \frac{1}{n} f(x_j + h/2)\right) = - \frac{1}{24n^3} \sum_{j=0}^{n-1} f''(\xi_j) 

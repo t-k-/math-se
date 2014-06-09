@@ -1,0 +1,106 @@
+f_1(x_1)=1+x_1,
+f_n(x_1,\ldots,x_n) = \begin{cases} (1+x_n)f_{n-1}(x_1,\ldots,x_{n-1}) & \text{if } f_{n-1}(x_1,\ldots,x_{n-1}) \le 1, \\ x_n + f_{n-1}(x_1,\ldots,x_{n-1}) & \text{otherwise}. \end{cases}
+(g_n)_{n=1}^\infty
+g_n\colon [-1,\infty)^n\to\mathbb{R}
+g_n(x_1,\ldots,x_n) = \prod_{k=1}^n (1+x_k).
+n\ge1
+x_1,\ldots,x_n\in[-1,\infty)
+f_n(x_1,\ldots,x_n) <1
+g_n(x_1,\ldots,x_n) \le1
+f_0=g_0=1
+x_i\geq 0
+ f_{i+1} = f_{i}+\min\{f_i,1\}x_{i+1} 
+ g_{i+1} = g_i+g_ix_{i+1} 
+x_i
+f_i
+k\in \mathbb N
+\sigma_{k} = \inf\{i>\tau_{k-1}:f_i<1\}
+\tau_k = \inf\{i>\sigma_{k}:f_i\geq 1\}
+\sigma_1
+f
+1
+\tau_0=0
+\tau_1
+f
+1
+\sigma_1
+\sigma_2
+f
+1
+\tau_1
+ 0=\tau_0<\sigma_1<\tau_1<\sigma_2<\tau_2<... 
+k \geq 0
+ \begin{cases} \text{if }g_{\tau_k}\leq f_{\tau_k}&\text{ then }g_{\sigma_{k+1}}\leq f_{\sigma_{k+1}},\quad(*) \\ \text{if }g_{\sigma_{k+1}}\leq f_{\sigma_{k+1}}&\text{ then }g_{\tau_{k+1}}\leq f_{\tau_{k+1}}.\quad (**) \end{cases} 
+(*),(**)
+g_{\tau_0} =g_0\leq f_0=f_{\tau_0}
+g_{\tau_k}\leq f_{\tau_k}
+g_{\sigma_{k+1}}\leq f_{\sigma_{k+1}}
+k\geq 0
+(***)
+i\geq 0
+f_i<1\Rightarrow g_i\leq 1
+n
+f_i<1
+g_i\leq f_i
+(*)
+(**)
+(*)
+k\geq 0
+\tau_k = m
+\sigma_{k+1}=n>m
+(*)
+g_m\leq f_m
+n = m+1
+f_m\geq 1
+f_{m+1} = f_m+x_{m+1}<1
+-1<x_{m+1}<0
+f_m\geq 1
+-1<x_{m+1}<0
+ g_{m+1} = g_{m}(1+x_{m+1})\leq f_m(1+x_{m+1}) = f_m + f_mx_{m+1}\leq f_{m+1} 
+n>m+1
+j = n-m-1>0
+f_{m+i}\geq 1
+0\leq i\leq j
+f_{m+j+1} = f_{n} <1
+f_m\geq 1,a\geq 0,-1<x_n<-f_m-a
+(*)
+ f_{m+j} = f_m+\sum\limits_{i=1}^j x_{m+i}=: f_m+a. 
+ g_{m+j} = g_m\prod\limits_{i=1}^j(1+x_{m+i})\leq g_m \exp\left\{\sum\limits_{i=1}^j x_{m+i}\right\}  = g_m\mathrm e^{a}. 
+ g_n = g_{m+j+1} = g_{m+j}(1+x_n)\leq g_m\mathrm e^a(1+x_n)\leq f_m\mathrm e^a(1+x_n)\leq f_m+a+x_n = f_n 
+(**)
+g_{\sigma_{k+1}}\leq f_{\sigma_{k+1}}
+i<\tau_{k+1}
+f,g
+g_{\tau_{k+1}}\leq f_{\tau_{k+1}}
+\varphi(x)
+\varphi
+x\le\varphi(x)
+x
+ \varphi(x)=\left\{\begin{array}{}x&\text{if }x\le1\\\exp(x-1)&\text{if }x>1\end{array}\right.\tag{1} 
+y\le1
+(1+x)\varphi(y)=(1+x)y\le\varphi((1+x)y)
+y>1
+x+y>1
+(1+x)\varphi(y)\le\exp(x)\varphi(y)=\varphi(x+y)
+y>1
+x+y\le1
+(1+x)\varphi(y)-\varphi(x+y)=(1+x)\exp(y-1)-(x+y)
+x
+(1+x)\exp(y-1)-(x+y)
+\exp(y-1)-1>0
+x=1-y
+(1+x)\varphi(y)\le\varphi(x+y)
+x_k\ge-1
+ \begin{align} (1+x)\exp(y-1)-(x+y) &\le\exp(x)\exp(y-1)-(x+y)\\ &=\exp(x+y-1)-(x+y)\\ &=0 \end{align} 
+\Box
+g_0=\varphi(f_0)=1
+g_{n-1}\le\varphi(f_{n-1})
+f_{n-1}\le1
+g_n=(1+x_n)g_{n-1}\le(1+x_n)\varphi(f_{n-1})\le\varphi((1+x_n)f_{n-1})=\varphi(f_n)
+f_{n-1}>1
+g_n=(1+x_n)g_{n-1}\le(1+x_n)\varphi(f_{n-1})\le\varphi(x_n+f_{n-1})=\varphi(f_n)
+g_n\le\varphi(f_n)
+f_1(3/2)=1+3/2=5/2
+f_2(3/2,-2)=-2+5/2=1/2
+f_3(3/2,-2,-2)=(1+(-2))(1/2)=-1/2<1
+g_3(3/2,-2,-2)=(3/2+1)(-2+1)(-2+1)=5/2>1

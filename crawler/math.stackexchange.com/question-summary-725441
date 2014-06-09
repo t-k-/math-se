@@ -1,0 +1,24 @@
+f(x,y) = tan(x + 3y + \frac{\pi}{4})
+f(3,-1) = tan(\frac{\pi}{4}) = 1
+f_{x}(3,-1) = sec^2(\frac{\pi}{4}) = 2
+f_{y}(3,-1) = 3sec^2(\frac{\pi}{4}) = 6
+f
+(2,6)
+u = x + 3y + \frac{\pi}{4}
+\frac{du}{dx}= 1 
+\frac{dy}{dx}= 3 
+f_{x}(u) = sec^2(u)
+f_{xx}(u) = 2tan(u)sec^2(u)\frac{du}{dx}
+f_{xy}(u) = 2tan(u)sec^2(u)\frac{du}{dy}
+f_{y}(u) = 3sec^2(u)
+f_{yx}(u) = 6tan(u)sec^2(u)\frac{du}{dx}
+f_{yy}(u) = 6tan(u)sec^2(u)\frac{du}{dy}
+u
+(3,-1)
+f_{xx}(3,-1) = 2tan(\frac{\pi}{4})sec^2(\frac{\pi}{4})\cdot1 = 4
+f_{xy}(3,-1) = 2tan(\frac{\pi}{4})sec^2(\frac{\pi}{4})\cdot3 = 12
+f_{yx}(3,-1) = 6tan(\frac{\pi}{4})sec^2(\frac{\pi}{4})\cdot1 = 12
+f_{yy}(3,-1) = 6tan(\frac{\pi}{4})sec^2(\frac{\pi}{4})\cdot3 = 36
+T_{2}((x,y),(3,-1)) = 1+(2,6) \cdot (x-3,y+1) + \frac{1}{2} \bigl( \begin{smallmatrix}    x-3 & y+1\\ \end{smallmatrix} \bigr) \bigl( \begin{smallmatrix}    4 & 12\\   12 & 36  \end{smallmatrix} \bigr) \bigl( \begin{smallmatrix}    x-3 \\   y+1   \end{smallmatrix} \bigr)
+= 1+2x-6+6y+6+\frac{1}{2}[(x-3)(4x-12+12y+12)+(y+1)(12x-36+36y+36)]
+ = 2x^2 + 18y^2 + 12xy + 2x + 6y + 1

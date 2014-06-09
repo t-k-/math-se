@@ -1,0 +1,6 @@
+\sigma^2_N=\frac{1}{N}\sum_{i=1}^N(Y_i-\mu_N)^2
+\mu_N=\frac{1}{N}\sum_{i=1}^NY_i.
+(N-1)\sigma^2_{N-1}=N\sigma^2_N-\frac{N}{N-1}(Y_N-\mu_N)^2
+ \begin{align} \mu_N-\mu_{N-1}&=\mu_N-\frac{1}{N-1}\sum_{i=1}^{N-1}Y_i=\mu_N-\frac{N}{N-1}\mu_N+\frac{1}{N-1}Y_N\\ &=\left(1-\frac{N}{N-1}\right)\mu_N+\frac{1}{N-1}Y_N= \frac{1}{N-1}\left(Y_N-\mu_N\right) \end{align} 
+ -(N-1)(\mu_N-\mu_{N-1})^2=-(N-1)\frac{1}{(N-1)^2}(Y_N-\mu_N)^2=-\frac{1}{N-1}(Y_N-\mu_N)^2. 
+ \begin{align} -(N-1)&(\mu_N-\mu_{N-1})^2-(Y_N-\mu_N)^2=-\frac{1}{N-1}(Y_N-\mu_N)^2-(Y_N-\mu_N)^2\\ &=-\left(\frac{1}{N-1}+1\right)(Y_N-\mu_N)^2=-\frac{N}{N-1}(Y_N-\mu_N)^2. \end{align} 

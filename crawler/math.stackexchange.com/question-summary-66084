@@ -1,0 +1,36 @@
+\int_{-\infty}^\infty x^2 e^{-x^2}\mathrm dx
+I_s = \int_{-\infty}^\infty \mathrm{e}^{-s x^2} \mathrm{d} x
+-\left. \frac{\mathrm{d}}{\mathrm{d} s} I_s  \right|_{s=1}
+I_s
+x = r \sin \theta
+y = r \cos \theta
+t = r^2
+   I_s^2 = \int_{-\infty}^\infty \mathrm{e}^{-s x^2} \mathrm{d} x \cdot \int_{-\infty}^\infty \mathrm{e}^{-s y^2} \mathrm{d} y = \int_{-\infty}^\infty \int_{-\infty}^\infty \mathrm{e}^{-s (x^2 + y^2)} \, \mathrm{d} x \mathrm{d} y 
+    I_s^2 = \int_{0}^{2 \pi} \mathrm{d} \theta \int_0^\infty \mathrm{e}^{-s r^2} \cdot r \, \mathrm{d} r = \pi \int_0^\infty \mathrm{e}^{-s t} \mathrm{d} t = \frac{\pi}{s} 
+I_s > 0
+s >0
+I_s = \sqrt{\frac{\pi}{s}}
+   \int_{-\infty}^\infty x^2 \mathrm{e}^{-x^2} \mathrm{d} x = \left.  -\frac{\mathrm{d}}{\mathrm{d} s} \sqrt{\frac{\pi}{s}} \right|_{s=1} = \left. \frac{\sqrt{\pi}}{2} s^{-\frac{3}{2}} \right|_{s=1} = \frac{\sqrt{\pi}}{2} 
+1/2
+f(x)=x^{2}e^{-x^{2}}
+ f(-x)=f(x)
+\int_{-\infty }^{\infty }f(x)\mathrm{d}x=2\int_{0}^{\infty }f(x)\mathrm{d}x
+\frac{dx}{dx}=1
+ \int x^{2}e^{-x^{2}}\mathrm{d}x=\int x\cdot xe^{-x^{2}}\mathrm{d}x, 
+ \int xe^{-x^{2}}\mathrm{d}x=-\frac{1}{2}e^{-x^{2}} 
+\begin{eqnarray*} \int x^{2}e^{-x^{2}}\mathrm{d}x &=&x\left( -\frac{1}{2}e^{-x^{2}}\right) -\int -\frac{ 1}{2}e^{-x^{2}}\,\mathrm{d}x \\ &=&-\frac{1}{2}xe^{-x^{2}}+\frac{1}{2}\int e^{-x^{2}}\,\mathrm{d}x.\tag{0} \end{eqnarray*}
+\begin{eqnarray*} \int_{0}^{\infty }x^{2}e^{-x^{2}}dx &=&\left. -\frac{1}{2} xe^{-x^{2}}\right\vert _{0}^{\infty }+\frac{1}{2}\int_{0}^{\infty }e^{-x^{2}}\,\mathrm{d}x \\ &=&\left( \lim_{c\rightarrow \infty }-\frac{1}{2}ce^{-c^{2}}\right) +\frac{1 }{2}0e^{-0^{2}}+\frac{1}{2}\int_{0}^{\infty }e^{-x^{2}}\,\mathrm{d}x \\ &=&0+0+\frac{1}{2}\int_{0}^{\infty }e^{-x^{2}}\,\mathrm{d}x \\ &=&\frac{1}{2}\int_{0}^{\infty }e^{-x^{2}}\,\mathrm{d}x.\tag{1} \end{eqnarray*}
+ I:=\int_{-\infty }^{\infty }x^{2}e^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty }x^{2}e^{-x^{2}}\mathrm{d}x=\int_{0}^{\infty }e^{-x^{2}}\,\mathrm{d}x.\tag{2} 
+r^{2}=x^{2}+y^{2}
+x=r\cos \theta ,y=r\sin \theta 
+\frac{\partial (x,y)}{\partial (r,\theta )}=r
+ \int_{x=0}^{\infty }\int_{y=0}^{\infty }e^{-x^{2}-y^{2}}\mathrm{d}x\mathrm{d}y=\int_{\theta =0}^{\pi /2}\int_{r=0}^{\infty }e^{-r^{2}}r\mathrm{d}r\mathrm{d}\theta.\tag{3}  
+ \int_{x=0}^{\infty }\int_{y=0}^{\infty }e^{-x^{2}-y^{2}}\mathrm{d}x\mathrm{d}y=\left( \int_{0}^{\infty }e^{-x^{2}}\mathrm{d}x\right) \left( \int_{0}^{\infty }e^{-y^{2}}\mathrm{d}y\right) =I^{2}\tag{4} 
+\begin{eqnarray*} I &=&\int_{\theta =0}^{\pi /2}\int_{r=0}^{\infty }e^{-r^{2}}r\mathrm{d}r\mathrm{d}\theta = \frac{\pi }{2}\int_{0}^{\infty }e^{-r^{2}}r\mathrm{d}r \\ &=&\frac{\pi }{2}\left. \left( -\frac{1}{2}e^{-r^{2}}\right) \right\vert _{0}^{\infty }=\frac{\pi }{2}\left( \lim_{c\rightarrow \infty }-\frac{1}{2} e^{-c^{2}}+\frac{1}{2}e^{-0^{2}}\right)  \\ &=&\frac{\pi }{2}\left( 0+\frac{1}{2}\right) =\frac{\pi }{4},\tag{5} \end{eqnarray*}
+ I=\frac{\sqrt{\pi }}{2}.\tag{6} 
+\int_{-\infty}^\infty e^{-x^2}=\sqrt\pi
+e^{-x^2}
+\frac{d^2}{dx^2}e^{-x^2}=-2e^{-x^2}+4x^2e^{-x^2}
+0
+\int\left(\frac{d^2}{dx^2}e^{-x^2}\right)dx=\frac{d^2}{dx^2}\int e^{-x^2}dx=\frac{d^2}{dx^2}\sqrt\pi=0
+\begin{array}{rcl} 0&=&\int -2e^{-x^2}+4x^2e^{-x^2}\,dx\\ &=&-2\sqrt\pi+4\int x^2e^{-x^2}\,dx\\ \implies\int x^2e^{-x^2}\,dx&=&\frac{\sqrt\pi}{2} \end{array} 

@@ -1,0 +1,7 @@
+ \sum_{n=1}^N |x_n|^p = R^p 
+R
+n
+V_n^p(R) = \frac{(2\Gamma(\frac{1}{p}+1)R)^n}{\Gamma(\frac{n}{p}+1)}
+V_1^p(1) = 2
+\begin{align}V_n^p(1) &= \int_{-1}^{1}dx_1\int_{|x_2|^p+\ldots+|x_n|^p\le 1-|x_1|^p}\prod_{i=2}^n dx_i\\ &=\int_{-1}^{1} V_{n-1}^p((1 - |x|^p)^\frac{1}{p}) dx\\ &= V_{n-1}^p(1) \left[2\int_0^1 (1-x^p)^\frac{n-1}{p} dx\right]\\ &= V_{n-1}^p(1) \left[\frac{2}{p} \int_{0}^1 y^{\frac{1}{p}-1}(1-y)^{\frac{n-1}{p}} dy\right]\\ &= V_{n-1}^p(1) \left[ \frac{2}{p}\frac{\Gamma(\frac{1}{p})\Gamma(\frac{n-1}{p}+1)}{\Gamma(\frac{n}{p}+1)}\right]\\ &= V_{n-1}^p(1) \left[2\Gamma(\frac{1}{p}+1) \frac{\Gamma(\frac{n-1}{p}+1)}{\Gamma(\frac{n}{p}+1)}\right] \end{align}
+ V_n^p(1) = V_1^p(1) (2\Gamma(\frac{1}{p}+1))^{n-1}\frac{\Gamma(\frac{1}{p}+1)}{\Gamma(\frac{n}{p}+1)} = \frac{(2\Gamma(\frac{1}{p}+1))^n}{\Gamma(\frac{n}{p}+1)}

@@ -1,0 +1,11 @@
+n^{\text{th}}
+ s=\frac{1}{4}+\frac{1\cdot 3}{4\cdot 6}+\frac{1\cdot 3\cdot 5}{4\cdot 6\cdot 8}+\ldots 
+a_1=\frac{1}{4}
+a_{n+1} =a_n\frac{2n-1}{2n+2}
+1\cdot 3\cdots (2n-1) = \frac{1\cdot 2 \cdot 3 \cdots (2n)}{2\cdot 4\cdots (2n)}=\frac{(2n)!}{2^nn!}
+ 4\cdot 6\cdots \left(2(n+1)\right) = 2^n\left(2\cdot 3\cdots (n+1)\right) = 2^n(n+1)!
+a_n = \frac{(2n)!}{2^{2n} n!(n+1)!} = \frac{1}{2^{2n}}\frac{1}{n+1}\binom{2n}{n} = \frac{1}{2^{2n}}C_n
+n^{\text{tn}}
+a_n=\frac{1}{4^n(n+1)}\binom{2n}n
+\frac{2}{1+\sqrt{1-4x}} = \sum_{n=0}^\infty C_nx^n
+C_n \sim \frac{2^{2n}}{n^{3/2}\sqrt{\pi}}

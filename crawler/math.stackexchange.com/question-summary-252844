@@ -1,0 +1,37 @@
+(X, Y)
+P_x(B)=P(Y\in B\mid X=x)
+E|g(X,Y)|<\infty
+P_x
+E[g(X,Y)\mid X=x]=\int g(x,y)P_x(dy) \text{  ($P_x$-a.s.)}
+P_x
+P_X
+E(I_{B}(x,Y)\mid X=x)
+\forall B\in \mathcal{B}(\mathbb{R}^2)
+\forall A\in \mathcal{B}(\mathbb{R})
+\mathcal{B}(\mathbb{R})/\mathcal{B}(\mathbb{R})
+\forall A_1, A_2\in \mathcal{B}(\mathbb{R})
+\mathcal{B}(\mathbb{R})/\mathcal{B}(\mathbb{R})
+A_1\times A_2\in\mathcal{C}. 
+\mathcal{L}
+\pi
+\mathcal{L}\subset\mathcal{C}
+\mathcal{C}=\{B\in \mathcal{B}(\mathbb{R}^2)\mid x\mapsto\int_\mathbb{R}I_B(x,y)P_x(dy)\text{ is $\mathcal{B}(\mathbb{R})/\mathcal{B}(\mathbb{R})$-measurable function and }\int_A E[I_B(X,Y)\mid X=x]P_X(dx)=\int_A\int_\mathbb{R}I_B(x,y)P_x(dy)P_X(dx)\}
+\int_\mathbb{R}I_{A_1\times A_2}(x,y)P_x(dy)=I_{A_1}(x)\int_\mathbb{R}I_{A_2}(y)P_x(dy)=I_{A_1}P_x(A_2)
+\int_A E[I_B(X,Y)\mid X=x]P_X(dx)=\int_{\{X\in A\}}I_{A_1\times A_2}(X,Y)P(d\omega)=P(\{Y\in A_2\}\cap\{X\in A\cap A_1\})
+\int_A\int_\mathbb{R}I_{A_1\times A_2}(x,y)P_x(dy)P_X(x)=\int_A I_{A_1}(x)P(Y\in A_2\mid X=x)P_X(dx)=P(\{Y\in A_2\}\cap\{X\in A\cap A_1\})
+\mathcal{L}=\{A_1\times A_2\mid A_1,A_2\in\mathcal{B}(\mathbb{R})\}
+\forall B_1,B_2\in\mathcal{C}
+B_1\subset B_2
+\mathcal{B}(\mathbb{R})/\mathcal{B}(\mathbb{R})
+B_2\backslash B_1\in\mathcal{C}
+\int_\mathcal{R}I_{B_2\backslash B_1}(x,y)P_x(dy)=\int_\mathcal{R}I_{B_2}(x,y)P_x(dy)-\int_\mathcal{R}I_{B_1}(x,y)P_x(dy)
+\int_A E[I_{B_2\backslash B_1}(X,Y)\mid X=x]P_X(dx)=\int_A E[I_{B_2}(X,Y)\mid X=x]P_X(dx)-\int_A E[I_{B_1}(X,Y)\mid X=x]P_X(dx)=\int_A\int_\mathcal{R}I_{B_2}(x,y)P_x(dy)P_X(dx)-\int_A\int_\mathcal{R}I_{B_1}(x,y)P_x(dy)P_X(dx)=\int_A\int_\mathcal{R}I_{B_2\backslash B_1}(x,y)P_x(dy)P_X(dx)
+B_1,B_2,...\in\mathcal{B}(\mathbb{R^2})
+B_n\uparrow B
+\mathcal{B}(\mathbb{R})/\mathcal{B}(\mathbb{R})
+B\in\mathcal{C}
+\int_\mathbb{R}I_B(x,y)P_x(dy)=\int_\mathbb{R}\lim_{n\to\infty} I_{B_n}(x,y)P_x(dy)=\lim_{n\to\infty}\int_\mathbb{R}I_{B_n}(x,y)P_x(dy)
+\int_A E[I_B(X,Y)\mid X=x]P_x(dx)=\lim_{n\to\infty}\int_A E[I_{B_n}(X,Y)\mid X=x]P_X(dx)=\lim_{n\to\infty}\int_A\int_\mathbb{R}I_{B_n}(x,y)P_x(dy)P_X(dx)=\int_A\int_\mathbb{R}I_{B}(x,y)P_x(dy)P_X(dx)
+\mathcal{C}
+\lambda
+\mathcal{C}=\mathcal{B}(\mathbb{R}^2)

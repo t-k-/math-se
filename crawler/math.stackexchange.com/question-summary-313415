@@ -1,0 +1,37 @@
+X_n
+N
+\mathbb P (N \le  k) = 1
+\mathbb EX_0 ≤ \mathbb EX_N ≤ \mathbb EX_k
+S_n = \xi_1 + · · · + \xi_n
+ξ_m
+\mathbb E \xi_m = 0
+\sigma_m^2 = \mathbb E \xi_m^2 < \infty
+|\xi_m | \le K
+s^2_n = \sum_{m \le n} \sigma^2_m
+S_n^2 − s^2_n
+\mathbb P \left(\max_{1 \le m \le n} |S_m| ≤ x \right) ≤ (x + K)^2/ \mathbb E(S_n^2)
+A = \{\max_{1 \le m \le n} |S_m| ≤ x\}
+X_n = S^2_n - s^2_n
+N = \inf\{m:|S_m| \ge x~\text{or}~n+1\}
+N
+X_{n+1} = X_N
+A^c
+\mathbb E (X_{n+1} 1_A) = \mathbb E (X_N 1_A)
+\mathbb E (X_N 1_A) \ge 0
+\mathbb E (X_{n+1} 1_A) \ge 0
+\mathbb E(X_N 1_A) \ge 0
+ 0 = \mathbb E{X_1} = \mathbb E{X_N} = \mathbb E{X_{n+1}}. 
+ \mathbb E(s_n^2 1_A) \le \mathbb E(s_{n+1}^2 1_A) \le \mathbb E(S_{n+1}^2 1_A) \le (x + K)^2. 
+\tau := n \wedge \inf \{ m \geq 1 : |S_m| > x \}
+N
+S_\tau^2 \leq (x+K)^2
+S_n^2 - s_n^2
+\tau
+\mathbb{E} S_\tau^2 = \mathbb{E} s_\tau^2
+S_\tau^2 \leq (x+K)^2
+ (x+K)^2 \geq \mathbb{E} S_\tau^2 = \mathbb{E} s_\tau^2 = \mathbb{E} \left\{ \mathbb{1}_A s_\tau^2 \right\} + \mathbb{E} \left\{ \mathbb{1}_{A^c} s_\tau^2 \right\} \geq \mathbb{E} \left\{ \mathbb{1}_A s_\tau^2 \right\}
+A = \cap_{1 \leq m \leq n} \{ |S_m| \leq x \}
+A
+\tau = n
+s_\tau^2 = s_n^2
+ (x+K)^2 \geq \mathbb{E} \left\{ \mathbb{1}_A s_\tau^2 \right\} = \mathbb{E} \left\{ \mathbb{1}_A s_n^2 \right\} = \mathbb{E} \mathbb{1}_A \cdot s_n^2 = \mathbb{P}(A) \mathbb{E} S_n^2 

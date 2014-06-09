@@ -1,0 +1,23 @@
+\gcd(\mbox{lcm}(a,b), \mbox{lcm}(b,c), \mbox{lcm}(a,c)) = \mbox{lcm}(\gcd(a,b), \gcd(b,c), \gcd(a,c)).
+\gcd(a,b)\mbox{lcm}(a,b) = ab
+\gcd(\mbox{lcm}(a,b),\mbox{lcm}(a,c)) = \mbox{lcm}(a,\gcd(b,c))
+\gcd(a,b)
+\mbox{lcm}(a, b)
+\mbox{lcm}(b,c)
+\mbox{lcm}(a, c)
+\gcd(b,c)
+\gcd(a,c)
+\mbox{lcm}(a, b)
+\mbox{lcm}(b, c)
+\mbox{lcm}(a, c)
+ab/\gcd(a, b)
+ab/\gcd(b, c)
+ac/\gcd(a, c)
+\gcd(ab/\gcd(a, b), bc/\gcd(b, c), ac/\gcd(a, c))
+\gcd(ab/\gcd(a, b, c), bc/\gcd(a, b, c), ac/\gcd(a, b, c)) = \gcd(ab, bc, ac)/\gcd(a, b, c)
+\mbox{lcm}(\gcd(a,b), \mbox{lcm}(\gcd(b,c), \gcd(a,c))) = \frac{\gcd(a,b)\mbox{lcm}(\gcd(b,c), \gcd(a,c))}{\gcd(\gcd(a,b), \mbox{lcm}(\gcd(b,c), \gcd(a,c)))}
+= \frac{\gcd(a,b)\mbox{lcm}(\gcd(b,c), \gcd(a,c))}{\gcd(a,b,c, \mbox{lcm}(a,b))} = \frac{\gcd(a,b)\mbox{lcm}(\gcd(b,c), \gcd(a,c))}{\gcd(a,b,c)}
+= \frac{\gcd(a,b)\gcd(c,\mbox{lcm}(a,b))}{\gcd(a,b,c)} = \frac{\gcd(c \gcd(a,b), ab)}{\gcd(a,b,c)} = \frac{\gcd(ac, bc, ac)}{\gcd(a,b,c)},
+\frac{\mbox{lcm}(ab, bc, ac)}{\mbox{lcm}(a, b, c)}.
+\mbox{lcm}(ab, bc, ac)\gcd(a, b, c) = abc
+\gcd(ab, bc, ac)\mbox{lcm}(a, b, c) = abc

@@ -1,0 +1,12 @@
+Tu(x)
+Tu(x) = -\lambda\int_0^1g(x,y)\sin(u(y))\,dy
+g(x,y) = \begin{cases} x(1-y) & 0\leq x\leq y\leq 1, \\ y(1-x) & 0\leq y \leq x \leq 1. \end{cases}
+\begin{align*} \|Tu_1-Tu_2\|_\infty &= |\lambda|\left\|\int_0^1 g(x,y)\sin(u_1(y))-sin(u_2(y))\,dy\right\|_\infty \\ &\leq |\lambda|\| \sin(u_1(y))-\sin(u_2(y))\|_{\infty}\left\|\int_0^1 g(x,y)\,dy\right\|_{\infty} \end{align*}
+\leq |\lambda|\|u_1-u_2\|\frac{1}{8}
+ \|Tu-Tv\|_\infty \le |\lambda| \|u-v\|_\infty \sup_{x \in [0,1]}\int_0^1 |g(x,y) | dy 
+\int_0^1 |g(x,y) | dy = \int_0^x y(1-x)dy + \int_x^1 x(1-y)dy = \frac{1}{2}x(1-x)
+x=\frac{1}{2}
+\int_0^1 |g(x,y) | dy \le \frac{1}{8}
+\|Tu-Tv\|_\infty \le \frac{1}{8}|\lambda| \|u-v\|_\infty 
+T
+|\lambda| < 8

@@ -1,0 +1,30 @@
+x
+l, r
+LI(x)
+x
+RI(x)
+x
+P(x)
+x
+P(x) \equiv (\lfloor l \rfloor + 1 < r) \lor (RI(x) \land (r \in \mathbb Z) ) \lor (LI(x) \land (l \in \mathbb Z))
+x
+(l,r)
+\lfloor l \rfloor + 2 \leq \lceil r \rceil
+(LI(x) \land \lfloor l \rfloor = l) \lor (RI(x) \land \lceil r \rceil=r)
+\lceil r \rceil
+\lfloor l \rfloor
+(\lfloor l \rfloor + 2 \leq \lceil r \rceil) \lor
+(LI(x) \land \lfloor l \rfloor = l) \lor 
+(RI(x) \land \lceil r \rceil=r)
+x
+\land
+l\lt r \lor (l = r \land LI(x) \land RI(x))
+|x|>1
+r-l>1
+ P = (|x|>1) \vee(\lceil l\rceil \leq r \wedge LI) \vee  (l \leq \lfloor r\rfloor \wedge RI) 
+x=\,].9,1.1[
+ P = (|x|>1) \vee (LI \wedge \lceil l\rceil \leq r) \vee  (RI \wedge l \leq \lfloor r\rfloor ) \vee (\lceil r\rceil - \lfloor l\rfloor =2) 
+LI \wedge \lceil l\rceil \leq r
+l
+r
+ (\lfloor l(x) \rfloor \neq \lfloor r(x) \rfloor) \vee (LI(x) \wedge \lfloor l(x) \rfloor = l(x)) \vee (RI(x) \wedge \lfloor r(x) \rfloor = r(x)) 

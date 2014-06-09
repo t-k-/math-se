@@ -1,0 +1,27 @@
+f
+\lim_{x\to+\infty} { f(x+1)- f(x)}=l.
+\lim_{x\to +\infty}\frac{f(x)}{x}=l\,?
+n
+\lim_{n\to +\infty}\frac{f(n)          }{n}=l,
+g(x)=f(x)-lx
+g
+\lim_{x\to +\infty}g(x+1)-g(x)=0
+\lim_{x\to+\infty}\frac{g(x)}x=0
+\varepsilon>0
+n_0
+|g(x+1)-g(x)|\leq\varepsilon
+x\geq n_0
+M:=\sup_{x\in [x_0,x_0+1]}|g(x)|
+g
+x\geq n_0
+N=N(x)
+x-N\in [x_0,x_0+1[
+\frac{|g(x)-g(x-N)|}N\leq\varepsilon
+|g(x)-g(x-N)|\leq N\varepsilon
+x_0\leq x-N
+\frac{x_0}x\leq 1-\frac Nx
+\frac Nx\leq 1-\frac{x_0}x\leq 1
+\varepsilon>0,\: \limsup_{x\to+\infty}\left|\frac{g(x)}x\right|\leq\varepsilon
+g(x)-g(x-N)=\sum_{k=0}^{n-1}g(x-k)-g(x-k-1),
+\left|\frac{g(x)}x\right|\leq \frac{N\varepsilon}x+\frac{|g(x-N)|}x\leq \frac{N\varepsilon}x+\frac Mx,
+\forall \varepsilon>0,\,\forall x\geq n_0,\quad \left|\frac{g(x)}x\right|\leq \varepsilon+\frac Mx,

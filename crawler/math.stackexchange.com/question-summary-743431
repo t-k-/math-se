@@ -1,0 +1,12 @@
+m, f\in S(\mathbb R^{n})
+\mathcal{F}
+\mathcal{F}^{-1}
+k\in \mathbb Z^{n}.
+\mathcal S
+\mathcal S
+g(y) = e^{-i k \cdot y} f(y)
+w = z + k
+e^{-i k\cdot x} \mathcal F^{-1} [m \mathcal F f](x)
+\cal F g(z) = \int_{\mathbb R^n} e^{-i z \cdot y} g(y) \, dy = \int_{\mathbb R^n} e^{-i z \cdot y} e^{-i k \cdot y} f(y) = \int_{\mathbb R^n} e^{-i(k + z)\cdot y} f(y) \, dy,
+m(z + k) \mathcal F g(x) = m(z + k) \int_{\mathbb R^n} e^{-i(k + z)\cdot y} f(y) \, dy,
+\mathcal F^{-1}[m(\cdot + k) \mathcal Fg](x) = \int_{\mathbb R^n} e^{i x \cdot z}m(z + k) \mathcal Fg(z) \, dz = \int_{\mathbb R^n} \int_{\mathbb R^n} e^{ix\cdot z}m(z+k)e^{-i(k+z)\cdot y} f(y) \, dy \, dz.

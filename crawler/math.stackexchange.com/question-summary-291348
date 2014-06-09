@@ -1,0 +1,26 @@
+0 \longrightarrow \Bbb R \overset{\text{const.}}\longrightarrow \mathcal{C}^\infty(\Bbb R^3,\Bbb R) \overset{\text{grad}}\longrightarrow \mathcal{C}^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{rot}}\longrightarrow \mathcal{C}^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{div}}\longrightarrow \mathcal{C}^\infty(\Bbb R^3,\Bbb R)\longrightarrow 0
+\Bbb R
+\text{const}:c \mapsto f(\vec x)\equiv c
+\Bbb R^n
+n
+\Bbb R^3
+M = \Bbb R^3
+p
+\Bbb R^3
+f \in \Omega^0(\Bbb R^3)
+\Omega^0(\Bbb R^3) \cong \Omega^3(\Bbb R^3) \cong C^\infty(\Bbb R^3, \Bbb R), \quad \Omega^1(\Bbb R^3) \cong \Omega^2(\Bbb R^3) \cong C^\infty(\Bbb R^3, \Bbb R^3).
+df = \sum_{i = 1}^3 \frac{\partial f}{\partial x_i} dx_i ~\leftrightarrow~ \operatorname{grad}(f) = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \frac{\partial f}{\partial x_3} \right).
+\alpha = \sum_{i = 1}^3 \alpha_{i}(x_1, x_2, x_3) ~dx_i \in \Omega^1(\Bbb R^3) ~\leftrightarrow~ v = (\alpha_1, \alpha_2, \alpha_3) \in C^\infty(\Bbb R^3, \Bbb R^3),
+d\alpha = \sum_{i = 1}^3 \sum_{j = 1}^3 \frac{\partial \alpha_i}{\partial x_j} ~dx_i \wedge dx_j = \left(\frac{\partial \alpha_3}{\partial x_2} - \frac{\partial \alpha_2}{\partial x_3}\right) ~dx_2 \wedge dx_3 - \left(\frac{\partial \alpha_3}{\partial x_1} - \frac{\partial \alpha_1}{\partial x_3}\right) ~dx_1 \wedge dx_3 + \left(\frac{\partial \alpha_2}{\partial x_1} - \frac{\partial \alpha_1}{\partial x_2}\right) ~dx_1 \wedge dx_2 ~\leftrightarrow~ \operatorname{rot}(v).
+\beta = \sum_{i = 1}^3 \sum_{j = 1}^3 \beta_{ij}(x_1, x_2, x_3) ~dx_i \wedge dx_j \in \Omega^2(\Bbb R^3) ~\leftrightarrow~ w = (\beta_{23}, -\beta_{13}, \beta_{12}) \in C^\infty(\Bbb R^3, \Bbb R^3),
+d\beta = \sum_{i,j,k = 1}^3 \frac{\partial \beta_{ij}}{\partial x_k} ~dx_i \wedge dx_j \wedge dx_k = \frac{\partial \beta_{23}}{\partial x_1}~dx_2 \wedge dx_3 \wedge dx_1 + \frac{\partial \beta_{13}}{\partial x_2}~dx_1 \wedge dx_3 \wedge dx_2 + \frac{\partial \beta_{12}}{\partial x_3}~dx_1 \wedge dx_2 \wedge dx_3 ~\leftrightarrow~ \operatorname{div}(w) = \frac{\partial \beta_{23}}{\partial x_1} - \frac{\partial \beta_{13}}{\partial x_2} + \frac{\partial \beta_{12}}{\partial x_3}.
+0 \longrightarrow C^\infty(\Bbb R^3,\Bbb R) \overset{\text{grad}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{rot}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{div}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R)\longrightarrow 0
+0 \longrightarrow \Bbb R \overset{\text{const.}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R) \overset{\text{grad}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{rot}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R^3) \overset{\text{div}}\longrightarrow C^\infty(\Bbb R^3,\Bbb R)\longrightarrow 0.
+\mathbb G^n
+2^n
+k
+\nabla
+\nabla \wedge A
+k
+A
+(k+1)

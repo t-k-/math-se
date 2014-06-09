@@ -1,0 +1,14 @@
+P(\sum_{k=1}^n Y_k <(1-\varepsilon)\log n)=0
+Y_n=\min_{1\le k\le n}X_k
+X_n
+n\ge 1
+(0,1)
+\sum_{k=1}^n Y_k/\log n
+P(\sum Y_k <(1-\varepsilon)\log n)=P(\sum_{k=1}^n X_{(1)} <(1-\varepsilon)\log n)
+=P(X_{(1)}<(1-\varepsilon)\log n/n)
+=1-(1-\frac{(1-\varepsilon)\log n}{n})^n
+\rightarrow 1-e^{-(1-\varepsilon)\log n}
+\rightarrow_{n\rightarrow\infty} 1
+\sum_{k=1}^n Y_k=\sum_{k=1}^n \min_{1\le j\le k} X_k=nX_{(1)}
+\epsilon = 2
+P(Y_1 + Y_2 < \frac{1}{2}log(2)) \geq P(X_1 \in (0,\frac{1}{4}log(2)), X_2 \in (\frac{1}{4}log(2),\frac{1}{2}log(2))) = \frac{1}{16}log^2(2) > 0. 

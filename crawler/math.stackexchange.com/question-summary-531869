@@ -1,0 +1,41 @@
+\sum_{i=n}^{\infty}\frac{i}{2^i}
+\displaystyle f(x) = \sum_{i=n}^\infty i x^{i-1} = \frac{d}{dx} \sum_{i=n}^\infty x^i = \frac{d}{dx} \frac{x^n}{1-x} = \frac{nx^{n-1}(1-x) + x^n }{(1-x)^2}
+\displaystyle \sum_{i=n}^\infty \frac{i}{2^i} = \frac{1}{2} \sum_{i=n}^\infty i \left(\frac{1}{2}\right)^{i-1} = \frac{1}{2} f\left(\frac{1}{2}\right) = \frac{1}{2} \frac{n(1/2)^{n-1} (1/2)+(1/2)^n}{1/4} = \frac{n+1}{2^{n-1}}
+ \sum_{i = n}^{\infty} \frac{i}{2^i}
+\frac{i}{2^i} < 1, \space \forall i \ge 0
+ \lim_{i\to\infty}{\frac{i}{2^i}} \to0
+M
+ \lim_{n\to\infty}\frac{U_{n+1}}{U_n} = \frac{n\times{2^{n+1}}}{(n+1)\times{2^n}} = \frac{n}{(n+1)}\times 2 = 2 < M
+X
+I=X[X\ge n]
+I=X
+X\ge n
+I=0
+E[I]=\sum_{i=n}^{\infty}\frac i{2^i}
+Y_i
+1
+X\ge i
+0
+E[Y_i]=\dfrac1{2^{i-1}}
+i-1
+I=nY_n+\sum_{i=n+1}^{\infty}Y_i,
+E[I]=nE[Y_n]+\sum_{i=n+1}^{\infty}E[Y_i]=\frac n{2^{n-1}}+\sum_{i=n+1}^{\infty}\frac1{2^{i-1}}=\frac n{2^{n-1}}+\frac1{2^{n-1}}=\frac{n+1}{2^{n-1}}.
+I=XY_n
+X\lt n
+I=X\cdot0=0
+X\ge n
+I=X\cdot1=X
+k
+X
+Y_i
+Y_i=1
+i\le k
+Y_i=0
+i\gt k
+I=nY_n+\sum_{i=n+1}^{\infty}Y_i.
+k\lt n
+k=n
+n=n\cdot1+\sum_{i=n+1}^{\infty}0.
+k=n+r
+r\in\mathbb N
+n+r=n\cdot1+\sum_{i=n+1}^{n+r}1+\sum_{i=n+r+1}^{\infty}0.

@@ -1,0 +1,61 @@
+\displaystyle\int_{0}^{+\infty}\frac{\log x}{1+x^3}dx
+ \int_\gamma\frac{\log(z)}{1+z^3}\,\mathrm{d}z\tag{1} 
+e^{\pi i/3}
+\frac{\pi i}{3}\frac1{3e^{2\pi i/3}}
+e^{\pi i/3}
+(4)
+(4)
+(5)
+ \begin{align} 2\pi i\frac{\pi i}{3}\frac1{3e^{2\pi i/3}} &=\color{#C00000}{\int_0^\infty\frac{\log(t)}{1+t^3}\,\mathrm{d}t} \color{#0000FF}{-\int_0^\infty\frac{\log(t)+2\pi i/3}{1+t^3}\,e^{2\pi i/3}\,\mathrm{d}t}\\ &=\left(1-e^{2\pi i/3}\right)\int_0^\infty\frac{\log(t)}{1+t^3}\,\mathrm{d}t -\frac{2\pi i}{3}e^{2\pi i/3}\int_0^\infty\frac{\mathrm{d}t}{1+t^3}\tag{2} \end{align} 
+ \frac{2\pi^2}{9}e^{\pi i/3} =\left(1-e^{2\pi i/3}\right)\int_0^\infty\frac{\log(t)}{1+t^3}\,\mathrm{d}t +\frac{2\pi}{3}e^{\pi i/6}\int_0^\infty\frac{\mathrm{d}t}{1+t^3}\tag{3} 
+ \frac{2\pi^2}{9} =-i\sqrt3\int_0^\infty\frac{\log(t)}{1+t^3}\,\mathrm{d}t +\frac{\pi(\sqrt3-i)}{3}\int_0^\infty\frac{\mathrm{d}t}{1+t^3}\tag{4} 
+ \int_0^\infty\frac{\mathrm{d}t}{1+t^3}=\frac{2\pi\sqrt3}{9}\tag{5} 
+ \int_0^\infty\frac{\log(t)}{1+t^3}\,\mathrm{d}t=-\frac{2\pi^2}{27}\tag{6} 
+\oint_C dz \frac{\log^2{z}}{1+z^3}
+\arg{z}=0
+\arg{z}=2 \pi
+\log{(x e^{i 2 \pi})} = \log{x} + i 2 \pi
+C
+\begin{align}\oint_C dz \frac{\log^2{z}}{1+z^3} &= \int_0^{\infty} dx \frac{\log^2{x}}{1+x^3} - \int_0^{\infty} dx\frac{(\log{x}+ i 2 \pi)^2}{1+x^3}\\ &= -i 4 \pi \int_0^{\infty} dx \frac{\log{x}}{1+x^3} + 4 \pi^2 \int_0^{\infty} dx \frac{1}{1+x^3} \end{align}
+\mathrm{Res}_{z=-1} = \frac{-\pi^2}{(1+e^{i \pi/3}) (1+e^{-i \pi/3})}
+\mathrm{Res}_{z=e^{i \pi/3}} = \frac{-(\pi^2/9)}{(e^{i \pi/3}-e^{-i \pi/3}) (1+e^{i \pi/3})}
+\mathrm{Res}_{z=e^{-i \pi/3}} = \frac{-(25\pi^2/9)}{(1+e^{-i \pi/3}) (e^{-i \pi/3}-e^{i \pi/3})}
+-i 4 \pi \int_0^{\infty} dx \frac{\log{x}}{1+x^3} + 4 \pi^2 \int_0^{\infty} dx \frac{1}{1+x^3} = i 2 \pi \left ( \frac{4 \pi^2}{27} - i \frac{4 \pi^2}{3 \sqrt{3}} \right ) 
+\int_0^{\infty} dx \frac{\log{x}}{1+x^3} = -\frac{2 \pi^2}{27}
+\int_0^{\infty} dx \frac{1}{1+x^3} = \frac{2 \pi}{3 \sqrt{3}}
+f(t)
+0\le t \le 1,
+f'(0).
+\rho
+f(t)
+R
+R e^{2\pi i/3}
+\rho
+t
+ f(t) = \int_0^\infty \frac{x^t}{1+x^3} dx
+\operatorname{Res}\left(\frac{x^t}{1+x^3}; x=\rho\right)  = \frac{\rho^t}{3\rho^2}.
+ e^{2\pi i/3} \int_R^0 \frac{(e^{2\pi i/3} x)^t}{1 + e^{2\pi i}x^3} dx = - (e^{2\pi i/3})^{t+1} \int_0^R \frac{x^t}{1+x^3} dx
+\rho = e^{\pi i/3}
+t
+f'(0)
+\ln \rho^2 = 2\ln\rho
+\rho^2
+ f(t) = 2\pi i \frac{\rho^{t-2}/3}{1- (e^{2\pi i/3})^{t+1}}.
+ f(t) = 2\pi i \frac{\rho^{t-2}/3}{1- (\rho^2)^{t+1}}.
+ f'(t) = {\frac {2/3\,i\pi \, \left( {\rho}^{t-2}\ln  \left( \rho \right) -{\rho}^{t} \ln  \left( \rho \right)  \left( {\rho}^{2} \right) ^{t}+{\rho}^{t} \left( { \rho}^{2} \right) ^{t}\ln  \left( {\rho}^{2} \right)  \right) }{ \left( -1+  \left( {\rho}^{2} \right) ^{t}{\rho}^{2} \right) ^{2}}} 
+2/3\,i\pi \, \left( {\frac {\ln  \left( \rho \right) }{{\rho}^{2}}}-\ln  \left( \rho \right) +\ln  \left( {\rho}^{2} \right)  \right)  \left( -1+{\rho} ^{2} \right) ^{-2}\\ = 2/3\,i\pi \, \left( {\ln  \left( \rho \right) }-\rho^2 \ln  \left( \rho \right) + \rho^2\ln  \left( {\rho}^{2} \right)  \right)  \left( -\rho+{\rho} ^{3} \right) ^{-2} \\ = 2/3\,i\pi \, \left( {\ln  \left( \rho \right) }-\rho^2 \ln  \left( \rho \right) + \rho^2\ln  \left( {\rho}^{2} \right)  \right)  \left( -\rho-1 \right) ^{-2} \\ = 2/3\,i\pi \, \ln\rho\left(1-\rho^2  + 2\rho^2  \right)  \left( -\rho-1 \right) ^{-2} \\ = 2/3\,i\pi \, \ln\rho\left(1+\rho^2\right)  \left(\rho+1 \right) ^{-2}.
+\rho
+f'(0) = -\frac{2\pi^2}{27}.
+f_6 = \dfrac{\pi^2}{216}
+f_3 = \dfrac19 \cdot \dfrac{\pi^2}8 = \dfrac{\pi^2}{72}
+\zeta
+6^{th}
+\zeta = e^{\pi i /3}
+I = \int_0^{\infty} \dfrac{\log(x)}{1+x^3} dx = \underbrace{\int_0^1 \dfrac{\log(x)}{1+x^3} dx}_J + \underbrace{\int_1^{\infty} \dfrac{\log(x)}{1+x^3} dx}_K
+K = \int_1^{\infty} \dfrac{\log(x)}{1+x^3} dx = \int_1^0 \dfrac{\log(1/x)}{1+1/x^3} \left(-\dfrac{dx}{x^2}\right) = - \int_0^1 \dfrac{x \log(x)}{1+x^3} dx
+\int_0^1 x^m \log(x) dx = - \dfrac1{(m+1)^2}
+J = \int_0^1 \dfrac{\log(x)}{1+x^3} dx = \int_0^1 \sum_{k=0}^{\infty}(-x^3)^k \log(x) dx = \sum_{k=0}^{\infty}(-1)^k \int_0^1 x^{3k} \log(x) dx = \sum_{k=0}^{\infty} \dfrac{(-1)^{k+1}}{(3k+1)^2}
+K = -\int_0^1 \dfrac{x\log(x)}{1+x^3} dx = \sum_{k=0}^{\infty}(-1)^{k+1} \int_0^1 x^{3k+1} \log(x) dx = \sum_{k=0}^{\infty} \dfrac{(-1)^{k}}{(3k+2)^2}
+J = -\sum_{k=0}^{\infty} \dfrac1{(6k+1)^2} + \sum_{k=0}^{\infty} \dfrac1{(6k+4)^2} = f_4 - f_1
+K = \sum_{k=0}^{\infty} \dfrac1{(6k+2)^2} - \sum_{k=0}^{\infty} \dfrac1{(6k+5)^2} = f_2 - f_5
+f_l = \sum_{k=0}^{\infty} \dfrac1{(6k+l)^2}

@@ -1,0 +1,20 @@
+z = f(x,y)
+x = g(s,t)
+y = h(s,t)
+\frac{∂^2z}{∂t^2}
+\frac{∂^2z}{∂t^2} = \frac{∂}{∂t}\left(\frac{∂z}{∂x}\right)\frac{∂x}{∂t} + \frac{∂}{∂t}\left(\frac{∂x}{∂t}\right)\frac{∂z}{∂x} + \frac{∂}{∂t}\left(\frac{∂z}{∂y}\right)\frac{∂y}{∂t} + \frac{∂}{∂t}\left(\frac{∂y}{∂t}\right)\frac{∂z}{∂y}
+\frac{∂^2z}{∂t^2} = \frac{∂^2z}{∂x^2}\left(\frac{∂x}{∂t}\right)^2 + 2\left(\frac{∂^2z}{∂x∂y}\right)\frac{∂x}{∂t}\frac{∂y}{∂t} + \frac{∂^2z}{∂y^2}\left(\frac{∂y}{∂t}\right)^2 + \frac{∂z}{∂x}\frac{∂^2x}{∂t^2} + \frac{∂z}{∂y}\frac{∂^2y}{∂t^2}
+\frac{∂^2z}{∂t^2} = \frac{∂}{∂t}\left(\frac{∂z}{∂x}\right)\frac{∂x}{∂t} + \frac{∂}{∂t}\left(\frac{∂z}{∂y}\right)\frac{∂y}{∂t} + \frac{∂z}{∂x}\frac{∂^2x}{∂t^2} + \frac{∂z}{∂y}\frac{∂^2y}{∂t^2}
+\frac{∂}{∂t}\frac{∂z}{∂x}
+\frac{∂}{∂t} = \frac{∂x}{∂t}\frac{∂}{∂x} + \frac{∂y}{∂t}\frac{∂}{∂y}
+\frac{∂^2z}{∂t^2} = \left(\frac{∂x}{∂t}\frac{∂}{∂x} + \frac{∂y}{∂t}\frac{∂}{∂y}\right)\left(\frac{∂z}{∂x}\right)\frac{∂x}{∂t} + \left(\frac{∂x}{∂t}\frac{∂}{∂x} + \frac{∂y}{∂t}\frac{∂}{∂y}\right)\left(\frac{∂z}{∂y}\right)\frac{∂y}{∂t} + \frac{∂z}{∂x}\frac{∂^2x}{∂t^2} + \frac{∂z}{∂y}\frac{∂^2y}{∂t^2}
+\frac{∂^2z}{∂t^2} = \frac{∂x}{∂t}\frac{∂}{∂x}\left(\frac{∂z}{∂x}\right)\frac{∂x}{∂t} + \frac{∂y}{∂t}\frac{∂}{∂y}\left(\frac{∂z}{∂x}\right)\frac{∂x}{∂t} + \frac{∂x}{∂t}\frac{∂}{∂x}\left(\frac{∂z}{∂y}\right)\frac{∂y}{∂t} + \frac{∂y}{∂t}\frac{∂}{∂y}\left(\frac{∂z}{∂y}\right)\frac{∂y}{∂t} + \frac{∂z}{∂x}\frac{∂^2x}{∂t^2} + \frac{∂z}{∂y}\frac{∂^2y}{∂t^2}
+\frac{∂^2z}{∂t^2} = \frac{∂^2z}{∂x^2}\left(\frac{∂x}{∂t}\right)^2 + 2\left(\frac{∂^2z}{∂x∂y}\right)\frac{∂x}{∂t}\frac{∂y}{∂t} + \frac{∂^2z}{∂y^2}\left(\frac{∂y}{∂t}\right)^2 + \frac{∂z}{∂x}\frac{∂^2x}{∂t^2} + \frac{∂z}{∂y}\frac{∂^2y}{∂t^2}
+\displaystyle{\partial \over\partial t}{\partial z\over\partial x}
+q=\displaystyle{\partial z\over\partial x}
+q
+x
+y
+\displaystyle{{\partial q\over \partial t}} ={\partial\over\partial t}{\partial z\over\partial x}
+z
+\eqalign{ {\partial\over\partial t}{\partial z\over\partial x} &={\partial q\over\partial t}\cr &={\partial q\over \partial x}{\partial x\over\partial t}+  {\partial q\over \partial y}{\partial y\over\partial t}\cr &={\partial^2 z\over  \partial x^2} {\partial x\over \partial t}+{\partial z\over\partial x\partial y} {\partial y\over\partial t}.} 

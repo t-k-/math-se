@@ -1,0 +1,20 @@
+\theta\in[0,1]
+s(\cdot)
+\theta
+0\leq(0)<s(1)\leq1
+s(0)+s(1)>1
+\max_{s(\cdot)\in C[0,1]}=\int_0^{s^{-1}(1-s(0))} \left(s(0)[s^{-1}(1-s(0))]+\int_0^{\theta} (1-s^{-1}(1-s(x)))dx\right) d \theta +\int_{s^{-1}(1-s(0))}^1 \theta d\theta
+=  s(0)(s^{-1}(1-s(0))^2-\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x))dxd \theta +\frac{1}{2}   =  s(0)(s^{-1}(1-s(0))^2-\int_0^{s^{-1}(1-s(0))}\left(\int_x^{s^{-1}(1-s(0))}d \theta \right)s^{-1}(1-s(x))dx +\frac{1}{2}    =   s(0)(s^{-1}(1-s(0))^2-\int_0^{s^{-1}(1-s(0))}[s^{-1}(1-s(0))-x]s^{-1}(1-s(x))dx +\frac{1}{2}
+g(x)=s^{-1}(1-s(x))
+s(x)+s(g(x))=1
+ s^{-1}(1-s(0))=g(0)
+s(\cdot)
+g(\cdot)
+s(0)=G(g(0))
+g(\cdot)
+\max_{g(\cdot)\in C[0,1]} U_i(\theta; s)=G(g(0))[g(0)]^2-\int_0^{g(0)}(g(0)-x)g(x)dx+\frac{1}{2}
+s(x)+s(g(x))=1
+s(0)=G(g(0))
+\begin{align} &\int_0^{s^{-1}(1-s(0))} \left(s(0)[s^{-1}(1-s(0))]+\int_0^{\theta} (1-s^{-1}(1-s(x)))dx\right) d \theta +\int_{s^{-1}(1-s(0))}^1 \theta d\theta\\ &=\int_0^{s^{-1}(1-s(0))} s(0)[s^{-1}(1-s(0))]d \theta +\int_0^{s^{-1}(1-s(0))}\int_0^{\theta} (1-s^{-1}(1-s(x)))dxd \theta +\frac{\theta^2}{2}\big|_{s^{-1}(1-s(0))}^1 \theta d\theta\\ &= s(0)(s^{-1}(1-s(0))^2 +\int_0^{s^{-1}(1-s(0))}\int_0^{\theta} (1-s^{-1}(1-s(x)))dxd \theta +\frac{1-(s^{-1}(1-s(0)) )^2}{2} \\ \end{align} 
+\begin{align} \int_0^{s^{-1}(1-s(0))}\int_0^{\theta} (1-s^{-1}(1-s(x)))dxd \theta &=\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}1dxd \theta \\ &\quad -\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x)))dxd \theta\\ &=\int_0^{s^{-1}(1-s(0))}\theta d \theta \\ &\quad -\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x)))dxd \theta\\ &=\frac{(s^{-1}(1-s(0)))^2}{2} \\ &\quad -\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x)))dxd \theta\\ \end{align} 
+s(0)(s^{-1}(1-s(0))^2 +\frac{(s^{-1}(1-s(0)))^2}{2}   -\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x)))dxd \theta +\frac{1-(s^{-1}(1-s(0)) )^2}{2} \\ =s(0)(s^{-1}(1-s(0))^2 +\frac12 -\int_0^{s^{-1}(1-s(0))}\int_0^{\theta}s^{-1}(1-s(x)))dxd \theta 

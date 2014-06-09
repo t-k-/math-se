@@ -1,0 +1,23 @@
+\alpha:[a,b] \rightarrow \mathbb{R}^n
+\alpha^{-1}
+\alpha^{-1}(t)=\alpha(a + b - t)
+F
+\mathbb{R}^n
+ \int\limits_{\alpha^{-1}} F \cdot d(\alpha^{-1}) = -\int\limits_{\alpha} F \cdot d\alpha 
+ \int\limits_{\alpha^{-1}} F \cdot d(\alpha^{-1}) = 
+ =\int\limits_{a}^{b}F(\alpha^{-1}(t)) \cdot [\alpha^{-1}(t)]^\prime dt 
+ =\int\limits_{a}^{b}F(\alpha(a + b -t)) \cdot \alpha^{\prime}(a + b - t)dt 
+u = a + b - t
+t = a \implies u = b
+t = b \implies u = a
+dt = -du
+ - \int\limits_{b}^{a}F( \alpha(u)) \cdot \alpha^{\prime}(u)du 
+ = \int\limits_{a}^{b}F( \alpha(u)) \cdot \alpha^{\prime}(u)du 
+ = \int\limits_{\alpha} F \cdot d\alpha 
+dt = -du
+\alpha^{-1}
+-\alpha'(a+b-t)
+\alpha(a+b-t)
+-1
+-t
+c^-1

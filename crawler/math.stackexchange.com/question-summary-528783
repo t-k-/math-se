@@ -1,0 +1,132 @@
+V
+n
+u
+V
+H_u: V \to V
+H_u(v) = v - 2 \langle v,u \rangle u
+v \in V
+P
+V
+P^2=P
+P
+V=\ker P\oplus\operatorname{img}P
+P
+P
+v\in V
+P(v)
+v
+P(v)
+v
+v-P(v)
+v=(v-P(v))+P(v)
+v-P(v)\in\ker P
+P(v)
+P
+x
+y
+V=\langle u\rangle\oplus \langle u\rangle^\perp
+\langle u\rangle
+H_u
+0
+\langle u\rangle^\perp
+P
+\langle u\rangle
+\langle u\rangle^\perp
+\Bbb C
+2
+\langle v,u \rangle = v^T \overline{u}
+H_u
+H_u v = v-2 v^T \overline{u} u = v-2 \overline{u}^T v u = v- 2u \overline{u}^T v = (I-2u u^*)v
+H_u = I-2u u^*
+\chi_{H_u}(s) = \det( sI-H_u) = \det ( (s-1)I +2 u u^*) 
+U
+U e_1 = u
+u
+\chi_{H_u}(s) = \det ((s-1)I +2 Ue_1 e_1 U^*) = \det ((s-1)I +2 e_1 e_1)
+(s-1)I +2 e_1 e_1
+\chi_{H_u}(s) = (s-1)^{n-1}(s+1)
+u_2,...,u_n
+u,u_2,...,u_n
+H_u u = -u
+H_u u_k = u_k
+k=2,...,n
+-1
+1
++1
+n-1
+\chi_{H_u}(s) = \Pi_{k=1}^n (s-\lambda_k)
+\lambda_k
+H_u
+\det(A+u v^*) = (1+v^* A^{-1}u) \det A
+s \neq 1
+\det ( (s-1)I +2 u u^*) = (1+\frac{u^* u}{s-1}) \det ((s-1)I) = \frac{s+1}{s-1} (s-1)^n = (s-1)^{n-1}(s+1)
+s
+ \left\langle v',H_u(v)\right\rangle = \left\langle v',v\right\rangle - 2 \langle v,u \rangle \left\langle v',u\right\rangle 
+(H_u)_{ij}
+e_k, k \in [1, 2, \ldots, n]
+\langle H_u(e_i), e_j \rangle = \langle e_i, e_j \rangle - 2 \langle e_i, u \rangle \langle u, e_j \rangle
+i, j \in [1, 2, \ldots, n]
+H_u(v \wedge w) \equiv H_u(v) \wedge H_u(w)
+2
+n
+n
+n
+E
+n
+E
+E = A_{n-1} \wedge u
+A_{n-1}
+n-1
+u
+A
+u
+H_u
+E
+H_u(E) = H_u(A_{n-1}) \wedge H_u(u)
+H_u(A_{n-1}) = A_{n-1}
+A_{n-1}
+n-1
+u
+-2 \langle v, u \rangle u
+u - 2 \langle u, u\rangle u = -u
+H_u(E) =(\det H_u) E =  A_{n-1} \wedge (-u) = -E
+-1
+E
+n
+n
+\sum_{i=0}^n c_i (-\lambda)^{n-i}
+c_0
+c_1
+c_1 = \text{Tr} \, H_u = \partial_{a_1} * H_u(a_1)
+a_1
+c_i = \partial_{a_i} * H_u(a_i)
+i
+a_i
+i=2
+H_u
+H_u(v \wedge w) = v \wedge w - 2 (v \cdot u) (u \wedge w) - 2 (v \wedge u)(u \cdot w)
+\partial_v
+\partial_w
+\partial_v \cdot H_u(v \wedge w)  = (n-1)w - 2 u\cdot (u \wedge w) - 2(n-1) u(u \cdot w)
+\begin{align*}\partial_w \cdot (\partial_v \cdot H_u[v\wedge w]) &= (n)(n-1) - 2n + 2 - 2(n-1) \\ &= n^2 -n - 2n + 2 - 2n + 2 \\ &= n^2 - 5n + 4 \\ &= (n-1)(n-4)\end{align*}
+H_u(v \wedge w) = v \wedge w - 2 u \wedge (u \cdot [v \wedge w])
+k
+A_k
+H_u(A_k) = A_k - 2 u \wedge (u \cdot A_k)
+H_u
+v
+H_u
+H_u(u) = -u
+H_u(v) = v
+\langle u, v\rangle = 0
+v
+u
+n-1
+u_1, u_2, \ldots, u_{n-1}
+H_u
+u, u_1, \ldots, u_{n-1}
+V
+-1
+1
+\det(t I_n - H_u)
+(t+1)(t-1)^{n-1}

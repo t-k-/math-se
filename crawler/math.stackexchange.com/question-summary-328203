@@ -1,0 +1,44 @@
+r
+(r,\theta,\phi)
+(x,y,z)
+z
+\phi
+\theta
+x
+x=r\sin\theta\cos\phi
+y=r\sin\theta\sin\phi
+z=r\cos\phi
+\gamma(t):[0,1]\to \mathbb{R}^3
+\gamma(t)=(x(t),y(t),z(t))
+l_{\gamma}=\int_{0}^{1}\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2+(\frac{dz}{dt})^2}?
+l_{\gamma}=\int_{a}^{b}\sqrt{(\frac{dr}{dt})^2+r^2(\frac{d\theta}{dt})^2}
+ \gamma:t\mapsto\vec x(t)= \left( \begin{array}{c} x^1(t)\\ x^2(t)\\ x^3(t) \end{array} \right)\ ; \quad t\in[0,1] 
+\vec x_0=\vec x(0)
+\vec x_i=\vec x(t_i),\  i=1,2,...n-1\ 
+\vec x_n=\vec x(1)
+t_0=0<t_1<t_2<\ ...<t_n=1
+[0,1]
+\vec x_i-1
+\vec x_i
+ \sqrt{\sum_k(x_i^k-x_{i-1}^k)^2}\ ;\quad k\in\{1,2,3\}\ . 
+ \sum_{i=1}^n(t_i-t_{i-1})\sqrt{\sum_k{(\frac{\mathrm dx^k}{\mathrm dt}_{|\xi_{i}})^2}}\quad, 
+ l(0,1,\gamma)=\int\limits_0^1\sqrt{\sum_k(\frac{\mathrm dx^k}{\mathrm dt})^2}\,\mathrm dt \quad.  
+0<t_1-t_0\ll 1
+0=t_0<t_1<\ldots<t_N=1
+[0,1]
+\epsilon
+\delta
+\eqalign{|\gamma(t_1)-\gamma(t_0)|^2&= (x(t_1)-x(t_0))^2+(y(t_1)-y(t_0))^2+(z(t_1)-z(t_0))^2 \cr &\doteq \bigl(\dot x^2(t_0)+\dot y^2(t_0)+\dot z^2(t_0)\bigr)(t_1-t_0)^2\cr}
+|\gamma(t_1)-\gamma(t_0)|\doteq \sqrt{\dot x^2(t_0)+\dot y^2(t_0)+\dot z^2(t_0)}\ (t_1-t_0)\ .
+\eqalign{L(\gamma)&\doteq\sum_{k=1}^N|\gamma(t_k)-\gamma(t_{k-1})|\cr &\doteq\sum_{k=1}^N\sqrt{\dot x^2(t_{k-1})+\dot y^2(t_{k-1})+\dot z^2(t_{k-1})}\ (t_k-t_{k-1})\cr &\doteq \int_0^1\sqrt{\dot x^2(t)+\dot y^2(t)+\dot z^2(t)}\ dt\ .\cr}
+(r,\phi,\theta)
+\phi=\arg(x,y)
+\theta=\arg(\sqrt{x^2+y^2},z)
+r
+\phi
+\theta
+t
+\dot x^2+\dot y^2+\dot z^2
+x=r\cos\phi\cos\theta,\quad y=r\sin\phi\cos\theta,\quad z=r\sin\theta\ .
+\dot x=\cos\phi\cos\theta\ \dot r-r\sin\phi\cos\theta\ \dot\phi-r\cos\phi\sin\theta\ \dot\theta\ ,
+ds=\sqrt{\dot r^2 + r^2\cos^2\theta\ \dot\phi^2+ r^2\ \dot\theta^2}\ dt\ .

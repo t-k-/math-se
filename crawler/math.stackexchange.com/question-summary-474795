@@ -1,0 +1,10 @@
+dy
+\Omega
+\exp\left\{-\frac12y^T\Omega y - v^Ty\right\}
+\Omega
+x = y + \Omega^{-1} v
+\Omega
+\frac{1}{2} x^T  \Omega x =  \frac{1}{2} y^T  \Omega y+ v^T y  + \frac{1}{2} (\Omega^{-1} v)^T(\Omega^{-1} v)
+\mathbb{R}^n
+ \int e^{-\frac{1}{2} x^T \Omega x }dx = \sqrt{\frac{(2 \pi)^n}{\det\Omega}} 
+ \int e^{-\frac{1}{2} y^T \Omega y - v^T y} = \sqrt{\frac{(2 \pi)^n}{\det\Omega}} e^{\frac{1}{2} v^T \Omega^{-2} v }

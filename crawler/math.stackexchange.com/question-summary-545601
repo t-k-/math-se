@@ -1,0 +1,29 @@
+X
+ f_X(x) = \begin{cases}1 & x \in [0, \frac{1}{2}) \\ 1 & x \in [1, \frac{3}{2}) \\ 0 & \text{otherwise} \end{cases} 
+Y = {(X - 1)}^2
+g(X)
+0 \leq x < \frac{1}{2}
+\frac{1}{2} \leq x \leq \frac{3}{2}
+0 \leq y < \frac{1}{4}\quad
+\frac{1}{2} \leq x < \frac{3}{2}
+ \begin{eqnarray*} F_Y(y)&=&P(Y \leq y)\\ &=&P({(X - 1)}^2 \leq y)\\ &=&P(\sqrt{{(X - 1)}^2} \leq \sqrt{y})\\ &=&P(1 - \sqrt{y} \leq X \leq 1 + \sqrt{y})\\ &=&F_X(1 + \sqrt{y}) - F_X(1 - \sqrt{y})\\ f_Y(y)&=&F'_Y(y)\\ &=&F'_X(1 + \sqrt{y}) - F'_X(1 - \sqrt{y})\\ &=&f_X(1 + \sqrt{y})\cdot(1 + \sqrt{y})' - f_X(1 - \sqrt{y})\cdot(1 - \sqrt{y})'\\ &=&1\cdot\frac{1}{2}y^{-\frac{1}{2}} - 0\cdot(1 - \sqrt{y})'\\ &=&\frac{1}{2}y^{-\frac{1}{2}} \end{eqnarray*} 
+f_X(1 - \sqrt{y}) = 0
+f_X(x) = 0
+\frac{1}{2} \leq x < 1
+\frac{1}{4} \leq y < 1\quad
+0 \leq x < \frac{1}{2}
+ \begin{eqnarray*} F_Y(y)&=&P(Y \leq y)\\ &=&P((X - 1)^2 \leq y)\\ &=&P(\sqrt{(X - 1)^2} \leq \sqrt{y})\\ &=&P(- (X - 1) \leq \sqrt{y})\\ &=&P(X \geq 1 - \sqrt{y})\\ &=&1 - P(X \leq 1 - \sqrt{y})\\ &=&1 - F_X(1 - \sqrt{y})\\ f_Y(y)&=&F'_Y(y)\\ &=&- F'_X(1 - \sqrt{y})\\ &=&- f_X(1 - \sqrt{y})\cdot(1 - \sqrt{y})'\\ &=&- 1\cdot(- \frac{1}{2}y^{-\frac{1}{2}})\\ &=&\frac{1}{2}y^{-\frac{1}{2}} \end{eqnarray*} 
+\sqrt{(X - 1)^2} = - (X - 1)
+g
+X
+0 \leq x < \frac{1}{2}
+ f_Y(y) = \begin{cases}\frac{1}{2}y^{-\frac{1}{2}} & y \in [0, \frac{1}{4}) \\ \frac{1}{2}y^{-\frac{1}{2}} & y \in [\frac{1}{4}, 1) \\ 0 & \text{otherwise} \end{cases} 
+\int_0^1 f_Y(y)\,\mathrm{d}y = 1
+Y
+(1/4,1] \cup [0,1/4]=[0,1]
+f_Y(y)= \frac{f_X(x)}{|g'(x)|}=\frac{1}{2 |x-1|}
+|x-1|= \sqrt{y}
+f_Y(y) = \frac{1}{2 \sqrt{y}} , \hspace{1cm} y\in (0,1]
+X
+\int_{-\infty}^{\infty} f_X(x) dx = \frac{3}{2}
+g(X)

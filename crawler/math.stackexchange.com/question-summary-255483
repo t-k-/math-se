@@ -1,0 +1,45 @@
+\sum_{i\geq0}\frac{x^i}{(1-x)(1-x^2)\cdots(1-x^i)}
+\prod_{i\geq1}\frac{1}{1-x^i}
+S_{n}=\sum_{i=0}^{n}a_i
+n=1
+S_0=a_0=1
+n=k
+n=k+1
+n
+a_{n}=\frac{x^{n}}{(1-x)(1-x^2)\cdots(1-x^{n})}
+ S_{n}=\frac{1}{(1-x)(1-x^2)\cdots(1-x^{n})}.
+ \begin{eqnarray} S_{k+1}&=&S_{k}+a_{k+1} \\ &=&\frac{1}{(1-x)\cdots(1-x^{k})}+\frac{x^{k+1}}{(1-x)\cdots(1-x^{k})(1-x^{k+1})} \\ &=&\frac{1-x^{k+1}}{(1-x)\cdots(1-x^{k})(1-x^{k+1})}+\frac{x^{k+1}}{(1-x)\cdots(1-x^{k})(1-x^{k+1})} \\ &=& \frac{1}{(1-x)(1-x^2)\cdots(1-x^{k+1})}, \end{eqnarray} 
+ \sum_{i=0}^{\infty}\frac{x^{i}}{(1-x)(1-x^2)\cdots(1-x^{i})}=\prod_{i=1}^{\infty}\frac{1}{1-x^{i}}. 
+(1)
+(3)
+1
+x=0
+k=0
+(3)
+1
+ \begin{align} \prod_{i=1}^k\frac1{1-x^i}-\prod_{i=1}^{k-1}\frac1{1-x^i} &=\left(\frac1{1-x^k}-1\right)\prod_{i=1}^{k-1}\frac1{1-x^i}\\ &=\frac{x^k}{1-x^k}\prod_{i=1}^{k-1}\frac1{1-x^i}\\ &=\frac{x^k}{\prod_{i=1}^k(1-x^i)}\tag{1} \end{align} 
+ \begin{align} \prod_{i=1}^n\frac1{1-x^i}-1 &=\sum_{k=1}^n\left(\prod_{i=1}^k\frac1{1-x^i}-\prod_{i=1}^{k-1}\frac1{1-x^i}\right)\\ &=\sum_{k=1}^n\frac{x^k}{\prod_{i=1}^k(1-x^i)}\tag{2} \end{align} 
+ \prod_{i=1}^n\frac1{1-x^i}-1=\sum_{k=1}^n\frac{x^k}{\prod_{i=1}^k(1-x^i)}\tag{3} 
+ \prod_{i=1}^n\frac1{1-x^i}=\sum_{k=0}^n\frac{x^k}{\prod_{i=1}^k(1-x^i)}\tag{4} 
+q
+(a,q)_n:=(1-a)(1-aq)\cdots(1-aq^{n-1})
+(q,q)_n
+\frac{1}{(q,q)_n}=\frac{1}{1-q}\frac{1}{1-q^2}\cdots\frac{1}{1-q^n}
+=\left(1+q+q^2+\cdots\right)\left(1+q^2+q^4+\cdots\right)\cdots\left(1+q^n+q^{2n}+\cdots\right).
+q^\ell
+q^\ell=q^{1\cdot j_1}q^{2\cdot j_2}\cdots q^{n\cdot j_n}
+j_i
+1\le i\le n
+(\underbrace{n,\cdots,n}_{j_n},\cdots,\underbrace{2,\cdots,2}_{j_2},\underbrace{1,\cdots,1}_{j_1})\vdash n.
+\ell
+n
+(a,q)_\infty^{-1}
+\frac{1}{(a,q)_\infty}=\prod_{k\ge0}\frac{1}{1-aq^k}=\prod_{k=0}^\infty\left(1+aq^k+a^2q^{2k}+\cdots\right).
+a^nq^\ell
+a^nq^\ell=a^{(j_0+j_1+j_2+\cdots)}(q^{0\cdot j_0}q^{1\cdot j_1}q^{2\cdot j_2}\cdots).
+j_i
+0
+(\cdots,\underbrace{3,\cdots,3}_{j_3},\underbrace{2,\cdots,2}_{j_2},\underbrace{1,\cdots,1}_{j_1})\vdash \ell.
+\frac{1}{(a,q)_\infty}=\sum_{n=0}^\infty\frac{a^n}{(a,q)_n}.
+a=q
+\frac{1}{(1-q)(1-q^2)(1-q^3)\cdots}=1+\sum_{n=1}^\infty\frac{q^n}{(1-q)(1-q^2)\cdots(1-q^n)}.

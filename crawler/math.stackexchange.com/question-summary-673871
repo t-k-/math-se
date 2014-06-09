@@ -1,0 +1,42 @@
+\{a_{n}\}
+a_{1}=\dfrac{1}{2},a_{n}=a_{n-1}+\dfrac{1}{a_{n-1}}
+(p.q)\neq (1,2),p\neq q
+a_{p}+a_{q}\notin Z
+a_{2}=\dfrac{5}{2},\Longrightarrow a_{1}+a_{2}=\dfrac{1}{2}+\dfrac{5}{2}=3\in Z
+a_{3}=a_{2}+\dfrac{1}{a_{2}}=\dfrac{5}{2}+\dfrac{2}{5}=\dfrac{29}{10}
+a_{1}+a_{3},a_{2}+a_{3}\notin Z
+a_{p}+a_{q}\notin Z,(p,q)\neq(1,2),p\neq q
+a_{p}+a_{q}=a_{p-1}+a_{q-1}+\dfrac{1}{a_{p-1}}+\dfrac{1}{a_{q-1}}=(a_{p-1}+a_{q-1})\left(1+\dfrac{1}{a_{p-1}a_{q-1}}\right)
+a_n=\frac{p_n}{q_n}
+a_{n+1} = \frac{p_{n+1}}{q_{n+1}} = \frac{p_n}{q_n}+\frac{q_n}{p_n} = \frac{p_n^2+q_n^2}{p_nq_n}
+a_n
+p_{n+1} = p_n^2+q_n^2
+q_{n+1} = p_nq_n
+\gcd(p_1, q_1)=\gcd(1, 2) =1
+\gcd(a,b\cdot c)|\gcd(a,b)\cdot\gcd(a,c)
+\gcd(a,b)=1\implies \gcd(a^2, b)=1
+\gcd(a, b) = \gcd(a, b+c\cdot a)
+c
+\frac{p_n}{q_n}
+q_{n+k} = q_n\prod_{i=0}^{k-1}p_{n+i}
+p_n|q_{n+k}
+k\gt 0
+\gcd(p_n, p_{n+k+1})
+= \gcd(p_n, p_{n+k}^2+q_{n+k}^2)
+=\gcd(p_n, p_{n+k}^2)
+\gcd(p_n, p_{n+1})
+=\gcd(p_n, p_n^2+q_n^2)
+=\gcd(p_n, q_n^2)=1
+\gcd(p_n, p_{n+k})=1
+k\gt 0
+\begin{align}\gcd(p_{n+1},q_{n+1}) &= \gcd(p_n^2+q_n^2, p_nq_n)\\ &|\ \left(\gcd(p_n^2+q_n^2,p_n)\cdot\gcd(p_n^2+q_n^2, q_n)\right)\\ &=\gcd(q_n^2, p_n)\cdot\gcd(p_n^2, q_n)\\ &=1\cdot 1 \end{align} 
+a_n+a_{n+k} = \frac{p_n}{q_n}+\frac{p_{n+k}}{q_{n+k}}
+q_{n+k} = q_n\prod_{i=0}^{k-1}p_{n+i}
+\displaystyle a_n+a_{n+k} = \frac{1}{q_n}\cdot\left(p_n+\frac{p_{n+k}}{\prod_{i=0}^{k-1}p_{n+i}}\right)
+\gcd(p_{n+k}, \prod_{i=0}^{k-1} p_{n+i})=1
+\displaystyle\frac{p_{n+k}}{\prod_{i=0}^{k-1}p_{n+i}}\not\in\mathbb{Z}
+1
+(n,k) = (1,1)
+\displaystyle\left(p_n+\frac{p_{n+k}}{\prod_{i=0}^{k-1}p_{n+i}}\right)\not\in\mathbb{Z}
+a_n+a_{n+k}
+\displaystyle=\frac{1}{q_n}\cdot\left(p_n+\frac{p_{n+k}}{\prod_{i=0}^{k-1}p_{n+i}}\right)\not\in\mathbb{Z}

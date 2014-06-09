@@ -1,0 +1,10 @@
+ \frac{1}{s} < \frac{1}{t} 
+ I \le 1 
+ \lim{I} = 1 
+ I \ge 1 
+ \begin{align} \lim_{t\to\infty}te^t\int_t^\infty\frac{e^{-s}}{s}\,\mathrm{d}s &=\lim_{t\to\infty}t\int_0^\infty\frac{e^{-s}}{t+s}\,\mathrm{d}s&&s\mapsto t+s\\ &=\lim_{t\to\infty}\int_0^\infty\frac{e^{-s}}{1+s/t}\,\mathrm{d}s\\ &=\int_0^\infty e^{-s}\,\mathrm{d}s&&\begin{array}{}\text{Dominated}\\ \text{Convergence}\end{array}\\[8pt] &=1 \end{align} 
+\int_0^\infty s^n\,e^{-s}\,\mathrm{d}s=n!
+ \begin{align} te^t\int_t^\infty\frac{e^{-s}}{s}\,\mathrm{d}s &=\int_0^\infty\frac{e^{-s}}{1+s/t}\,\mathrm{d}s\\ &=\int_0^\infty\left(1-\frac{s}{t}+\frac{s^2}{t^2}-\frac{s^3}{t^3}+\dots\right)\,e^{-s}\,\mathrm{d}s\\ &=0!-\frac{1!}{t}+\frac{2!}{t^2}-\frac{3!}{t^3}+\dots \end{align} 
+\begin{align}t e^{t} \int_t^{\infty} ds \frac{e^{-s}}{s} &= t e^t \left [ -\frac{e^{-s}}{s}\right]_{t}^{\infty} - t e^t \int_t^{\infty} ds \frac{e^{-s}}{s^2}\\ &= 1-t e^t \left [ -\frac{e^{-s}}{s^2}\right]_{t}^{\infty} + 2 t e^t \int_t^{\infty} ds \frac{e^{-s}}{s^3}\\ &= 1 -\frac{1}{t} + 2 t e^t \left [ -\frac{e^{-s}}{s^3}\right]_{t}^{\infty} - 6 t e^t \int_t^{\infty} ds \frac{e^{-s}}{s^4} \end{align}
+1/t
+1

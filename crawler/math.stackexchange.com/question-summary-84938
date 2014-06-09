@@ -1,0 +1,14 @@
+ \ N \ 
+ \lambda > 0 
+ N_t 
+\lambda t
+ P(N_t = k ) = \exp(-\lambda t) \frac{(\lambda t)^k}{k!}, \ \forall \ k \geq 0
+\  \lim_{t \to \infty} (1/\sqrt{\lambda t} ) \ E( N_t - \lambda t )^+ = \frac{1}{2 \pi}
+ \frac{1}{\sqrt{\lambda t}} E( N_t - \lambda t )^+ = \frac{1}{\sqrt{\lambda t}} \exp(-\lambda t) \  \sum_{k \geq \lambda t} \ (k - \lambda t) \frac{(\lambda t)^k}{k!}  
+ \approx \frac{1}{\sqrt{\lambda t}} \exp(-\lambda t) \  \sum_{k \geq \lambda t} \ (k - \lambda t) \frac{(\lambda t)^k}{\sqrt{2 \pi k} \left( \frac{k}{e} \right) ^k}
+f(t)
+\lambda t
+F(t)=\lfloor \lambda t\rfloor
+\lim_{t\to+\infty}\frac{f(t)}{F(t)}=0
+-f(t)+F(t)\ln\left(1+\frac{f(t)}{F(t)}\right)=-f(t)+f(t)+f(t)o(1)=f(t)o(1),
+\lim_{t\to\infty}\frac 1{\sqrt{\lambda t}}E(N_t-\lambda t)^+=\frac 1{\sqrt{2\pi}}.

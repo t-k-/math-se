@@ -1,0 +1,38 @@
+\nu
+n\in\mathbb{N}
+\lambda := \frac{1}{n}
+A_n:=\{\lambda k, k=0,\dots\}
+\nu
+A_n
+\nu_n(\{0\}):= \int_0^\lambda (1-nx)d\nu (x) \\ \nu_n(\{\lambda k\}):=\int_{(k-1)\lambda}^{(k+1)\lambda}(1-|nx-k|)d\nu(x)
+f:A_n\to\mathbb{R}
+\int g(x)d\nu_n(x)=\int F^n(g)d\nu(x) \tag{1}
+F^n(g):=(1-\kappa)g(\lfloor nx\rfloor \lambda)+\kappa g((\lfloor nx\rfloor +1)\lambda)
+g
+F^n(g)\to g
+(1)
+\mu_f=\int fd\mu
+\int gd\mu_f=\int gf d\mu
+g
+\def\R{\mathbb R}\def\abs#1{\left|#1\right|}
+x \in [k\lambda, (k+1)\lambda)
+nx \in [k, k+1)
+\def\fl#1{\lfloor#1\rfloor}\fl{nx}=k
+\kappa
+\kappa = \{nx\} := nx - \fl{nx}
+g
+g
+ \int_{\R} g\, d\nu_n = \int_{\R} F^n(g)\, d\nu 
+(g(x))_{x\in A_n}
+\nu_n
+A_n
+F^n(g)
+(g(x))_{x\in A_n}
+k\geqslant0
+g(k/n)
+\nu_n(\{k/n\})
+g(k/n)
+(1-\kappa)\nu(B_k)+\kappa\nu(B_{k-1})
+B_i=\{x\mid\lfloor nx\rfloor=i\}=[i/n,(i+1)/n)
+ \nu_n(\{k/n\})=\int_{-1/n}^{1/n}(1-n|x|)\mathrm d\nu(x). 
+ (1-\kappa)\nu(B_k)+\kappa\nu(B_{k-1})=\int_{-1/n}^{1/n}u_\kappa(x)\mathrm d\nu(x), \qquad u(x)=(1-\kappa)\mathbf 1_{x\gt0}+\kappa\mathbf 1_{x\lt0}. 

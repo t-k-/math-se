@@ -1,0 +1,24 @@
+\displaystyle\lim_{x\to 0}\frac{\tan x - \sin x}{x^n}
+n \geq 1
+\,n=1,2,3\,
+n=1:\;\;\;\;\;\;\frac{\tan x-\sin x}{x}=\frac{1}{\cos x}\frac{\sin x}{x}(1-\cos x)\xrightarrow [x\to 0]{}1\cdot 1\cdot 0=0
+n=2:\;\;\frac{\tan x-\sin x}{x^2}=\frac{1}{\cos x}\frac{\sin x}{x}\frac{1-\cos x}{x}\xrightarrow [x\to 0]{}1\cdot 1\cdot 0=0\;\;(\text{Applying L'Hospital})
+n=3:\;\;\;\frac{\tan x-\sin x}{x^3}=\frac{1}{\cos x}\frac{\sin x}{x}\frac{1-\cos x}{x^2}\xrightarrow[x\to 0]{}1\cdot 1\cdot \frac{1}{2}=\frac{1}{2}\;\;(\text{Again L'H})
+n\geq 4:\;\;\;\;\frac{\tan x-\sin x}{x^4}=\frac{1}{\cos x}\frac{\sin x}{x}\frac{1-\cos x}{x^2}\frac{1}{x^{n-3}}\xrightarrow[x\to 0]{}1\cdot 1\cdot \frac{1}{2}\cdot\frac{1}{\pm 0}=
+\,n-3\,
+\,\infty\,
+\,n\geq 4\,
+x \to 0
+ \frac{\tan x  -\sin x}{x^n} = \frac{\sin x(1-\cos x)}{x^n\cos x} = \frac{\sin x}{x}\times \frac{1-\cos x}{x^2} \times \frac{1}{\cos x}\times x^{3-n} 
+x^{3-n}
+x\to 0
+n
+n=1,2 \rightarrow L=0
+n=3 \rightarrow L=1/2
+n
+\ge 4
+\rightarrow
+n
+\ge 5
+\rightarrow L=\infty
+L=\lim_{x\to0}\frac{x^3/2+O(x^5)}{x^3} \cdot x^{(3 -n)}=\lim_{x\to0}\frac{x^{(3 -n)}}{2} 

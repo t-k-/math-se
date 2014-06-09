@@ -1,0 +1,28 @@
+         A = \begin{bmatrix}         1 & -1 \\         2 & 4 \\         \end{bmatrix} 
+x(0) = \begin{bmatrix}1 \\ 2\end{bmatrix}
+x(k) = A^kx(0)
+ x(2) = A^2x(0) = \begin{bmatrix}-1 & -5 \\ 10 & 14\end{bmatrix}\begin{bmatrix}1 \\ 2\end{bmatrix} = \begin{bmatrix}-11 \\ 38\end{bmatrix} 
+M
+z
+x = Mz
+ x(k+1) = Ax(k) \\ Mz(k+1) = AMz(k) \\ z(k+1) = M^{-1}AMz(k) 
+A
+M^{-1}AM= \Lambda
+M
+z(k) = \Lambda^kz(0)
+z(k)
+x(k) = Mz(k)
+\Lambda
+\lambda_1...\lambda_n
+M
+v_1...v_n
+A
+ \lambda_1 = 2, v_1 = \begin{bmatrix}-1 \\ 1\end{bmatrix},  \lambda_2 = 3, v_2 = \begin{bmatrix}-\frac12 \\ 1\end{bmatrix} \\ M = \begin{bmatrix}-1 & -\frac12 \\ 1 & 1\end{bmatrix}, \Lambda = \begin{bmatrix}2 & 0 \\ 0 & 3\end{bmatrix}, M^{-1} = \begin{bmatrix}-2 & -1 \\ 2 & 2\end{bmatrix}, 
+Mz(0) = x(0)
+ \begin{bmatrix}-1 & -\frac12 \\ 1 & 1\end{bmatrix}z(0) = \begin{bmatrix}1 \\ 2\end{bmatrix} 
+z(0) = \begin{bmatrix}-4 \\ 6\end{bmatrix}
+ z(2) = \Lambda^2z(0) = \begin{bmatrix}4 & 0 \\ 0 & 9\end{bmatrix}\begin{bmatrix}-4 \\ 6\end{bmatrix} = \begin{bmatrix}-8 \\ 27\end{bmatrix}\\ x(2) = Mz(2) = \begin{bmatrix}-1 & -\frac12 \\ 1 & 1\end{bmatrix}\begin{bmatrix}-8 \\ 27\end{bmatrix} = \begin{bmatrix}-\frac{11}{2} \\ -19\end{bmatrix} 
+\begin{bmatrix}-11 \\ 38\end{bmatrix}
+z(2) = \begin{bmatrix}4 & 0 \\ 0 & 9\end{bmatrix}\begin{bmatrix}-4 \\ 6\end{bmatrix} = \begin{bmatrix}-8 \\ 27\end{bmatrix}
+z(2) = \begin{bmatrix}4 & 0 \\ 0 & 9\end{bmatrix}\begin{bmatrix}-4 \\ 6\end{bmatrix} = \begin{bmatrix}-16 \\ 54\end{bmatrix}
+x(2)

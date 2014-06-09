@@ -1,0 +1,9 @@
+a,b,c,d
+ M('a') = \left[ {\begin{array}{c}  min(a,b) + min(a,c) + min(a,d) - (min(a,b,c) + min(a,b,d) + min(a,c,d) - (min(a,b,c,d)))  \\  min(a,b,c) + min(a,b,d) + min(a,c,d) - 2 * min(a,b,c,d)  \\ min(a,b,c,d) \\  \end{array} } \right] 
+min(a,b), min(a,c), min(a,d)
+b < c < d < a
+M('a') = \left[ {\begin{array}{c} d \\ c \\ b \end{array} } \right]
+x
+S(x) = \{1,\ldots,x\}
+x = |S(x)|
+S(\min(x,y,\ldots)) = S(x) \cap S(y) \cap \cdots

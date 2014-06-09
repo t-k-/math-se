@@ -1,0 +1,31 @@
+X, Y
+P(X \mid Y=y)
+X \mid Y
+y
+X, Y
+f(X \mid Y=y)
+X \mid Y
+y
+(\Omega, \Sigma, P)
+X,Y
+(\mathbb{R},\mathcal{B}(\mathbb{R}))
+P(\cdot | Y=-):\: \Sigma \times \mathbb{R} \rightarrow [0,1]
+P(\cdot | Y=-) \circ (\mathrm{id_\Sigma},Y):\: \Sigma \times \Omega \rightarrow [0,1]
+Y
+P(X \in \cdot | Y=-):\: \mathcal{B}(\mathbb{R}) \times \mathbb{R} \rightarrow [0,1], P(X \in A | Y=y) := P(\{X \in A\} | Y=y)
+X
+Y=-
+X,Y
+X,Y
+A,B \in \mathcal{B}(\mathbb{R})
+A \in \mathcal{B}(\mathbb{R})
+P(\{X \in A\} | \sigma(Y)) = P(X \in A)
+P(\{X \in A\}|Y=-)
+=P(X \in A)
+\int_{\{Y \in B\}} {P(X \in A)} \mathrm{d}P =P(X \in A) P(Y \in B) = P(X \in A, Y \in B) = \int_{\{Y \in B\}} {P(\{X \in A\} | \sigma(Y)) \mathrm{d}P}
+P(X \in \cdot | Y=-)
+y_0 \in \mathbb{R}
+A,B \in \mathcal{B}(\mathbb{R})
+B=\mathbb{R}
+P(X \in A | Y=y_0) = P(X \in A)
+P(X \in A | Y=y_0) \cdot P(Y \in B) = \int_B {P(X \in A | Y =y)} \mathrm{d}P_Y(y) = \int_{\{Y \in B\}} {P(X \in A | \sigma(Y))} \mathrm{d}P = P(X\in A, Y \in B)

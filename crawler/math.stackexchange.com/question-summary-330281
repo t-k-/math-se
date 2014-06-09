@@ -1,0 +1,37 @@
+p\in\mathbb{R}^3
+v\in\mathbb{R}^3
+p
+v
+p
+i
+n_i\in\mathbb{R}^3
+o_i\in\mathbb{R}^3
+p
+\left\|\left(\frac{n_i n_i^T}{n_i^Tn_i}\right)(p-o_i)\right\|
+p
+P_i=\frac{n_i n_i^T}{n_i^Tn_i}
+J_p
+P_i
+P_i=P_i^T
+P_i^2=P_i
+\sum_{i=1}^n P_i
+J_p= \sum_{i=1}^n \left\|\left(\frac{n_i n_i^T}{n_i^Tn_i}\right)(p-o_i)\right\|^2 
+ J_p=\sum_{i=1}^n (p-o_i)^T P_i (p-o_i) 
+ p^* = \left(\sum_{i=1}^n P_i\right)^{-1}\left(\sum_{i=1}^nP_io_i\right)
+v
+v
+n_i
+v
+n_i
+v
+v^Tv=1
+v
+A=\sum_{i=1}^n P_i 
+A
+A
+A
+A=U\Lambda U^T
+v
+U
+ J_v= \sum_{i=1}^n \left\|\left(\frac{n_i n_i^T}{n_i^Tn_i}\right) v \right\|^2 = v^T \left(\sum_{i=1}^n P_i\right) v
+ J_v=v^T A v \ge \lambda_{\mathrm{min}}(A) v^T v = \lambda_{\mathrm{min}}(A)

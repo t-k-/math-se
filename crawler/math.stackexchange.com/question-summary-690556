@@ -1,0 +1,11 @@
+O(m^{1/2}\ln(m))
+\sum_{n=1}^{m-1}\ln(n)\ln(m-n)
+\sum_{n=1}^{m-1}\ln(n)\ln(m-n)=O(\ln(m)^2)+2\sum_{n\leq m/2}\ln(n)\ln(m-n)
+=O(\ln(m)^2)+2\ln(m)\sum_{n\leq m/2}\ln(n)+2\sum_{n\leq m/2}\ln(1-\frac{n}{m})\ln(n)
+O(m\ln(m))
+ \begin{align} &\sum_{n=1}^{m-1} \ln(n)\ln(m-n) \\ &\qquad = \ln(m)\ln((m-1)!) + \sum_{n=1}^{m-1} \ln(n)\ln\left(1-\frac{n}{m}\right) \\ &\qquad = \ln(m)\ln((m-1)!) + \ln(m)\sum_{n=1}^{m-1}\ln\left(1-\frac{n}{m}\right) + \sum_{n=1}^{m-1}\ln\left(\frac{n}{m}\right)\ln\left(1-\frac{n}{m}\right) \\ &\qquad = 2\ln(m)\ln((m-1)!) - (m-1)\ln(m)^2 + \sum_{n=1}^{m-1}\ln\left(\frac{n}{m}\right)\ln\left(1-\frac{n}{m}\right). \end{align} 
+ \sum_{n=1}^{m-1}\ln\left(\frac{n}{m}\right)\ln\left(1-\frac{n}{m}\right) = m\int_0^1 \ln(x)\ln(1-x)\,dx - \epsilon(m), 
+ \epsilon(m) = \int_0^1 \left(\lceil mx\rceil - mx - \frac{1}{2}\right)\left(\frac{\ln(1-x)}{x}-\frac{\ln(x)}{1-x}\right)\,dx = O(1). 
+\epsilon(m) = o(1)
+ \int_0^1 \ln(x)\ln(1-x)\,dx = 2 - \frac{\pi^2}{6}, 
+ \sum_{n=1}^{m-1} \ln(n)\ln(m-n) = 2\ln(m)\ln((m-1)!) - (m-1)\ln(m)^2 + \left(2-\frac{\pi^2}{6}\right)m + O(1). 

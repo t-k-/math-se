@@ -1,0 +1,9 @@
+Y
+[0,1]
+X
+Y
+Y=y
+[0,y]
+P(X<0.5)
+ P(X\in B) = \int_{0}^{1} P(X\in B|Y=y)f_Y(y)dy = \int_{0}^{1} P(X\in B|Y=y)dy = \\\int_{0}^{1}\int_Bf_{X|Y}(x|y)dxdy. 
+ P(X<\frac{1}{2}) = \int_{0}^{1}\int_{0}^{\min\{\frac{1}{2},y\}}\frac{1}{y}dxdy = \int_{0}^{\frac{1}{2}}\int_{0}^{y}\frac{1}{y}dxdy + \int_{\frac{1}{2}}^{1}\int_{0}^{\frac{1}{2}}\frac{1}{y}dxdy = \\\frac{1}{2} - \frac{1}{2}\ln\frac{1}{2}. 

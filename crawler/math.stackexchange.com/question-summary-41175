@@ -1,0 +1,10 @@
+2D
+K(x) = \frac{3}{4} * \left(1 - \left(\left(\frac{x}{\sigma} \right)^2 + \left(\frac{y}{\sigma}\right)^2\right) \right)
+K(u) = \tfrac34(1 - u^2)\mathbf{1}_{\{\lvert u\rvert≤1\}}
+u^2 = (x/σ)^2 + (y/σ)^2
+K(x,y) = \begin{cases} \tfrac34 \left(1 - \left((x/σ)^2 + (y/σ)^2\right)\right) & \lvert (x/σ)^2 + (y/σ)^2\rvert≤1 \\ 0 & \text{otherwise} \end{cases} 
+\tfrac34(1 - u^2)
+\lvert u \rvert > 1
+0
+K(x,y) = \max\left\{0, \frac34 \left( 1 - \left((x/σ)^2 + (y/σ)^2\right)\right)\right\} 
+K

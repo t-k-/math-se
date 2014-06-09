@@ -1,0 +1,51 @@
+n
+y_n =\int_{0}^{1} \dfrac{x^n}{x+10} \mathrm{d}x 
+y_n + 10y_{n-1} = \int_{0}^{1} \dfrac{x^n +10x^{n-1}}{x+10} \mathrm{d}x  = \int_{0}^{1} x^{n-1}\mathrm{d}x = \dfrac{1}{n}
+(a)
+y_{n-1}
+y_n
+(b)
+\epsilon > 0
+n_0
+n_1 \geq n_0
+y_{n_1} = 0
+y_n
+\epsilon
+0 < n \leqslant n_0
+(c)
+y_{n-1} = \dfrac{1}{10} \left(\dfrac{1}{n} - y_n\right)
+(c)
+(b)
+y_{n_1} = 0
+y_{n_1-1} = \dfrac{1}{10n_1} + \alpha_1
+\alpha_n
+y_{n_1-2} = \dfrac{1}{10} \left(\dfrac{1}{n_1} - y_{n_1 - 1}\right)
+y_{n_1-2} = \dfrac{1}{10} \left(\dfrac{1}{n_1 - 1} - \left(\dfrac{1}{10n_1} + \alpha_1\right)\right) + \alpha_2 =  \dfrac{1}{10(n_1 - 1)} - \dfrac{1}{100n_1} - \dfrac{\alpha_1}{100} + \alpha_2
+y_{n_1-3} = \dfrac{1}{10} \left(\dfrac{1}{n_1 - 2} - y_{n_1 - 2}\right) + \alpha_3 =  \dfrac{1}{10(n_1 - 2)} - \dfrac{1}{100(n_1 - 1)} - \dfrac{1}{1000n_1} - \dfrac{\alpha_1}{1000} -\dfrac{\alpha_2}{100} + \alpha_3.
+n_1
+n_0 \geq 1, n_1 \geq 2, n_1 > n_0
+|\alpha_{max}|\sum_{k=0}^{n_1 - n_0 - 1} \left(\dfrac{1}{10}\right)^k= |\alpha|\dfrac{1 - {\left(\dfrac{1}{10}\right)}^{n_1 - n_0}}{1 - \dfrac{1}{10}} = \frac{10|\alpha|}{9}(1 - 10^{n_0 - n_1}).
+n_0
+\alpha
+y_{n_1 - 1} = \frac{1}{10n_1}
+\alpha
+\exists n_1
+\epsilon \in \mathbb{R}, n_0 \in \mathbb{N}, n_0 < n_1
+|\frac{1}{9n_1}(1 - 10^{n_0 - n_1})| < \epsilon
+10
+y_n
+(-10)^{-n}
+y_0=\log(11/10)
+\sum\limits_{k=1}^\infty\frac1{k(-10)^k}=-\log(11/10)
+ (-10)^{-n}y_n-(-10)^{-n+1}y_{n-1}=\frac1{n(-10)^n}\tag{1} 
+ \begin{align} (-10)^{-n}y_n &=\log(11/10)+\sum_{k=1}^n\frac1{k(-10)^k}\\ &=-\sum_{k=n+1}^\infty\frac1{k(-10)^k}\tag{2} \end{align} 
+10^n
+(3)
+ \begin{align} y_n &=-\sum_{k=n+1}^\infty\frac{(-10)^{n-k}}{k}\\ &=-\sum_{k=1}^\infty\frac{(-10)^{-k}}{n+k}\tag{3} \end{align} 
+(3)
+ \begin{align} \int_0^1\frac{x^n}{x+10}\,\mathrm{d}x &=\frac1{10}\int_0^1\left(x^n-\frac{x^{n+1}}{10}+\frac{x^{n+2}}{10^2}-\frac{x^{n+3}}{10^3}+\dots\right)\,\mathrm{d}x\\ &=\frac1{10}\sum_{k=0}^\infty\frac{(-1)^k}{(n+k+1)10^k}\tag{4} \end{align} 
+\displaystyle{y_{n} =\int_{0}^{1}{x^{n} \over x + 10}\,{\rm d}x:\quad ?}
+z \in {\mathbb C},\quad \left\vert z\right\vert < 1/10
+z
+\left\{y_{n}\right\}
+\color{#0000ff}{\large\mbox{We can easily see that the "offending terms" will be the}\ \underline{\rm powers\ of\ \ 10}\,.}

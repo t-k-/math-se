@@ -1,0 +1,20 @@
+v = (v_1,v_2) 
+ w=(w_1,w_2)
+K^2 , v \not= w
+L \subseteq K^2 
+(x1,x2)\in L \leftrightarrow det\begin{pmatrix} 1 & v_1 & v_2 \\ 1 & w_1 & w_2 \\ 1 & x_1 & x_2 \end{pmatrix}=0
+ L = \{(x_1,x_2) \in K^2 : \exists \lambda \in K : x_i = v_i + \lambda (w_i - v_i)\}
+ det\begin{pmatrix} 1 & v_1 & v_2 \\ 1 & w_1 & w_2 \\ 1 & x_1 & x_2 \end{pmatrix}= det \begin{pmatrix} (w_1-v_1) & (w_2-v_2) \\ (x_1-v_1) & (x_2 -v_2) \end{pmatrix}
+(w_1-v_1)(x_2-v_2) - (w_2-v_2)(x_1-v_1)=0
+(x_1-v_1) = (w_1-v_1) \cdot \frac{x_2-v_2}{w_2-v_2}
+x_1 = v_1 + (w_1-v_1)\cdot \lambda
+\frac{x_2-v_2}{w_2-v_2} = \lambda
+x\in L \Leftrightarrow x_i = v_i + \lambda (w_i-v_i) = (1-\lambda) v_i + \lambda w_i
+\lambda \in K
+\lambda
+(1-\lambda)\pmatrix{1 & v_1 & v_2} + \lambda \pmatrix{1 & w_1 & w_2} = \pmatrix{ 1 & x_1 & x_2}
+2
+0
+0
+v \neq w
+x=v+(1-\lambda) w

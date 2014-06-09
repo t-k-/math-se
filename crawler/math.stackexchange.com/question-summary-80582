@@ -1,0 +1,16 @@
+c_{i,j} = c_{i,j-1} + c_{i-1,j}
+c_{i,0} = c_{0,j} = 1
+c_{i,j} = c_{i,j-2} + 2c_{i-1,j-1} + c_{i-2,j-1}
+(x+y)^2
+i
+j
+c_{ij}
+c_{i0}
+c_{0j}
+i,j
+f(x,y) = \sum_{i,j} c_{ij} x^i y^j
+(x+y) f(x,y) = f(x,y) - c_{00} - \sum_{i>0}(c_{i0}-c_{i-1,0})x^i - \sum_{j>0} (c_{0j}-c_{0,j-1}) y^j
+c_{0j}=c_{i0}=1
+f(x,y) = \frac{1}{1-(x+y)}
+\frac{1}{1-(x+y)} = \sum_m (x+y)^m = \sum_{i,j} {{i+j}\choose i} x^iy^j
+c_{ij} = {{i+j}\choose i}

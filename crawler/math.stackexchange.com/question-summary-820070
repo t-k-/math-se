@@ -1,0 +1,3 @@
+p \wedge (~\neg(\neg p \vee q) \vee (p \wedge q))
+p \wedge q
+\begin{align} & p \wedge (~\neg(\neg p \vee q) \vee (p \wedge q))\\ \\  &\equiv p \land ((\lnot \lnot p \land \lnot q) \lor (p \land q))\\ \\  &\equiv p \land ((p \land \lnot q)\lor (p \land q))\\ \\ &\equiv p \land (p\land (\lnot q \lor q))\\ \\ &\equiv p \land (p \land T)\\ \\  &\equiv p\land p\\ \\ &\equiv p \end{align}

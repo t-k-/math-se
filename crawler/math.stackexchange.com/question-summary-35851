@@ -1,0 +1,23 @@
+X_1
+X_2
+\theta
+1
+H_{\theta} :\theta \leq 1
+H_1:\theta > 1
+H_0
+3X_1 \leq 4X_2
+\beta(\theta) = 1-\frac12\left(\frac34\right)^\theta
+X_1
+\theta
+1
+X_1 > \frac{1}{2}
+H_0
+H_1
+\beta(\theta) = P_\theta(X > 1/2) = \int_{1/2}^1 \frac{\Gamma(\theta + 1)}{\Gamma(\theta)\Gamma(1)}x^{\theta-1}(1-x)^{1-1}\mathrm dx
+X_{1} < 4X_{2}/3
+\beta(\theta) = P(X_{1} < 4X_{2}/3 \ | \ \theta) 
+X_{1}, X_{2}
+\beta(\theta) = E_{X_{2}} \left( P(X_{1} < 4X_{2}/3 \ | \ \theta, X_{2} = x) \right ) = E_{X_{2}} ( F_{\theta}(4x/3) ) = \int_{0}^{1} F_{\theta}(4x/3) p_{\theta}(x) dx 
+F_{\theta}, p_{\theta}
+{\rm Beta}(\theta,1)
+1 - (1/2)(3/4)^{\theta}

@@ -1,0 +1,21 @@
+f,g
+a
+g
+\operatorname{Res} \left(\frac{f(z)}{g(z)}, z=a\right) = \frac{6f'(a)g''(a)-2f(a)g'''(a)}{3[g''(a)]^2}.
+2
+\operatorname{Res}(h(z),z=a)=\lim_{z \to a} \frac{d}{dz}\left(  (z-a)^2h(z) \right)
+g(z) = (z-a)^2\left(a_2 + a_3(z-a) + (z-a)^2\cdot \tilde{g}(z)\right)
+a_2 \neq 0
+f(z) = b_0 + b_1(z-a) + (z-a)^2\cdot \tilde{f}(z).
+\begin{align} \frac{f(z)}{g(z)} &= \frac{b_0 + b_1(z-a) +(z-a)^2\tilde{f}(z)}{(z-a)^2\left(a_2 + a_3(z-a) + (z-a)^2\tilde{g}(z)\right)}\\ &= \frac{1}{a_2(z-a)^2}\frac{b_0 + b_1(z-a) + (z-a)^2\tilde{f}(z)}{1 + \frac{a_3}{a_2}(z-a) + (z-a)^2h(z)}\\ &= \frac{1}{a_2(z-a)^2}\left(b_0 + b_1(z-a)\right)\left(1-\frac{a_3}{a_2}(z-a)\right) + \tilde{h}(z)\\ &= \frac{c}{(z-a)^2} + \frac{b_1 - (b_0a_3)/a_2}{a_2(z-a)} + k(z), \end{align}
+\frac{b_1a_2 - b_0a_3}{a_2^2} = \frac{f'(a)\frac12g''(a) - f(a)\frac16g'''(a)}{\left(\frac12g''(a)\right)^2} = \frac{6f'(a)g''(a) - 2f(a)g''(a)}{3g''(a)^2}.
+a
+g(z)
+g(z) = (z-a)^2 p(z)
+p(a) \ne 0
+\operatorname*{Res}_{z=a} \frac{f(z)}{g(z)} = \left [\frac{d}{dz} \frac{f(z)}{p(z)} \right ]_{z=a}
+\frac{d}{dz} \frac{f(z)}{p(z)} = \frac{f'(z) p(z)-f(z) p'(z)}{p(z)^2}
+g(z) = \frac12 g''(a) (z-a)^2 + \frac16 g'''(a) (z-a)^3+\cdots = p(a) (z-a)^2 + p'(a) (z-a)^3+\cdots
+p(a) = \frac12 g''(a)
+p'(a) = \frac16 g'''(a)
+\operatorname*{Res}_{z=a} \frac{f(z)}{g(z)} = \frac{f'(a) \frac12 g''(a) - f(a) \frac16 g'''(a)}{\frac14 [g''(a)]^2}

@@ -1,0 +1,9 @@
+ \int {\frac{x^2}{x^2+x-2} }dx
+x^2
+\int {x^2\over x^2+x-2}dx=\int {x^2+x-2-x+2\over x^2+x-2}dx=\int1+{-x+2\over x^2+x-2}dx
+=x-{1\over2}\int{2x-4\over x^2+x-2}dx=x-{1\over2}(\int{2x+1\over x^2+x-2}-{5\over x^2+x-2}dx)
+=x-{1\over2}ln( x^2+x-2)+{5\over2}\int{1\over x^2+x-2}dx 
+\int{1\over x^2+x-2}dx=\int{1\over (x+2)(x-1)}dx 
+={1\over3} \int {1\over(x-1)}-{1\over(x+2)}dx={1\over3}(ln(x-1)-ln(x+2))+c
+=x-{1\over2}ln( x^2+x-2)+{5\over6}(ln({x-1\over x+2}))+c 
+\dfrac{x^2}{x^2+x-2} = 1 - \dfrac{x-2}{x^2+x-2}

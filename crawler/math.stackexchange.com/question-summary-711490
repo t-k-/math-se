@@ -1,0 +1,7 @@
+\nabla_x\left(\|y-Ax\|_2\right)
+\nabla_x\|y-Ax\|_2=\frac{\partial}{\partial x} \sqrt{(y-Ax)^T(y-Ax)}
+=\frac{1}{2\|y-Ax\|_2}\frac{\partial}{\partial x} (y-Ax)^T(y-Ax)
+=\frac{1}{2\|y-Ax\|_2}(2A^TAx-2A^Ty)
+=\frac{A^TAx-A^Ty}{\|y-Ax\|_2}
+Ax=y
+\|y-Ax\|_2

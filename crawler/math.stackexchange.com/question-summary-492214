@@ -1,0 +1,26 @@
+f
+[a,b]
+g
+\Bbb R
+g
+T
+g
+[0,T]
+\lim_{\lambda \to \infty} \int_a^b f(x) g(\lambda x) dx = \frac{1}{T} \int_a^b f(x) dx \int_0^T g(x) dx
+\|f\|_2^2\le\|f\|_1\|f\|_\infty
+\|g\|_2^2\le\|g\|_1\|g\|_\infty
+(4)
+(5)
+(2)
+(2)
+(6)
+\lambda=\frac{nT}{b-a}
+\lambda\to\infty
+L^2
+h(x)=g(e^x)
+ g(x)=\sum_{k\in\mathbb{Z}}a_ke^{2\pi ikx/T}\tag{1} 
+ \begin{align} \int_a^bf(x)g(\lambda x)\,\mathrm{d}x &=\sum_{k\in\mathbb{Z}}a_k\int_a^bf(x)\,e^{2\pi ik\lambda  x/T}\,\mathrm{d}x\\ &=\sum_{k\in\mathbb{Z}}a_k\hat{f}(k\lambda)\\ &=a_0\hat{f}(0)+\sum_{k\ne0}a_k\hat{f}(k\lambda)\tag{2} \end{align} 
+ \sum_{k\in\mathbb{Z}}a_k^2=\frac1T\|g\|_2^2\le\frac1T\|g\|_1\|g\|_\infty\tag{3} 
+ \sum_{k\in\mathbb{Z}}b_k^2=\sum_{k\in\mathbb{Z}}\hat{f}\left(k\frac{T}{b-a}\right)^2=\frac{\|f\|_2^2}{b-a}\le\frac{\|f\|_1\|f\|_\infty}{b-a}\tag{4} 
+ \lim_{n\to\infty}\sum_{k\ne0}b_{nk}^2=0\tag{5} 
+ \lim_{n\to\infty}\sum_{k\ne0}a_k\hat{f}\left(k\frac{nT}{b-a}\right)=0\tag{6} 

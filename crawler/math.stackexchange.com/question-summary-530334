@@ -1,0 +1,8 @@
+x \in \left[0,\frac{1}{dn}\right)
+x = \frac{1}{dn}
+1
+0
+\frac{1}{dn} \leqslant x < \frac{1}{n}
+d\sum_{k=1}^n \lfloor kx\rfloor = 0 < \lfloor dnx\rfloor \leqslant \sum_{k=1}^{dn} \lfloor kx\rfloor,
+x \geqslant \frac1n
+\begin{align} \sum_{k=1}^{dn} \lfloor kx\rfloor - d\sum_{k=1}^n \lfloor k\rfloor &= \sum_{j=0}^{d-1} \left(\sum_{k=1}^n \left(\lfloor (k+jn)x\rfloor - \lfloor kx\rfloor\right)\right)\\ &\geqslant\sum_{j=0}^{d-1} \sum_{k=1}^n\left(\lfloor kx + j\rfloor - \lfloor kx\rfloor\right)\\ &\geqslant \sum_{j=0}^{d-1} nj\\ &= n\frac{d(d-1)}{2}\\ &> 0. \end{align}

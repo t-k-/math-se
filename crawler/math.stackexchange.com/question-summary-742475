@@ -1,0 +1,16 @@
+\nabla f(x_0,y_0)
+f
+(x_0,y_0)
+\lim_{(x,y)\rightarrow (x_0,y_0)}\frac{f(x,y)-f(x_0,y_0)-\langle\nabla f(x_0,y_0),(x-x_0,y-y_0)\rangle}{\sqrt{(x-x_0)^2+(y-y_0)^2}}=0,
+f(x,y)=(1+x+2y)^2 
+(x_0,y_0)=(1,1)
+\nabla f(1,1)=(2(1+1+2),4(1+1+2))=(8,16).
+\lim_{(x,y)\rightarrow (1,1)}\frac{f(x,y)-f(1,1)-\langle\nabla f(1,1),(x-1,y-1)\rangle}{\sqrt{(x-1)^2+(y-1)^2}}=\lim_{(x,y)\rightarrow (1,1)}\frac{(1+x+2y)^2-16-8(x-1)-16(y-1)}{\sqrt{(x-1)^2+(y-1)^2}}=\lim_{(x,y)\rightarrow (1,1)}\frac{9+x^2+4y^2-6x-12y+4xy}{\sqrt{(x-1)^2+(y-1)^2}}=\text{magic trick: I highlight} (x-1)^2+(y-1)^2 \text{in the numerator}=\lim_{(x,y)\rightarrow (1,1)}\frac{(x-1)^2+(y-1)^2+3y^2-4x-10y+7+4xy}{\sqrt{(x-1)^2+(y-1)^2}}= \lim_{(x,y)\rightarrow (1,1)}\left[\sqrt{(x-1)^2+(y-1)^2}+\frac{3y^2-4x-10y+7+4xy}{\sqrt{(x-1)^2+(y-1)^2}}\right]=0, 
+(x,y)=(1+\rho\cos\theta,1+\rho\sin\theta)
+(1,1)
+  \frac{3(1+\rho\sin\theta)^2-4(1+\rho\cos\theta)-10(1+\rho\sin\theta)+7+4(1+\rho\cos\theta)(1+\rho\sin\theta)}{\rho}=\frac{O(\rho^2)}{\rho}.
+f
+f(x,y)=(1+x+2y)^2
+\bigg(2(1+x+2y),4(1+x+2y)\bigg)
+(1+x+2y)^2-\bigg(2(1+x+2y),4(1+x+2y)\bigg)\cdot (x-1,y-1)-f(1,1)=(1+x+2y)\bigg(1+x+2y-2(x-1)-4(y-1)\bigg)-16=(1+x+2y)(7-x-2y)-16
+\lim_{(x,y)\to (1,1)}{\frac{(1+x+2y)(7-x-2y)-16}{\sqrt{(x-1)^2+(y-1)^2}}}

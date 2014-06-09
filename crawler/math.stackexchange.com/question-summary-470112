@@ -1,0 +1,19 @@
+dx:=camera_x-point_x
+dy:=camera_y-point_y
+dz:=camera_z-point_z
+pitch:=atan2(\sqrt{dz*dz+dx*dx},dy))
+(dy>0)
+pitch:=-pitch
+dx:=camera_x-point_x
+dy:=camera_y-point_y
+dz:=camera_z-point_z
+pitch:=-atan2(dy, \sqrt{dx*dx+dz*dz})
+yaw:=atan2(dz,dx)-90^\circ
+(0,0,0)
+(x,y,z)
+\theta
+\phi
+(x,y,z)
+(1,1,1)
+ \theta = \arctan\left(\frac yx\right)\\ \phi = \arctan\left(\frac {\sqrt{x^2+y^2}}z\right) 
+ \theta = \arctan\left(\frac 11\right)=45˚\\ \phi = \arctan\left(\frac {\sqrt{2}}1\right) \approx 55˚ 

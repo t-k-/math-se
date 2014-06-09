@@ -1,0 +1,40 @@
+f:\mathbb{R}^{3} \rightarrow \mathbb{R}
+C^{\infty}
+g:\mathbb{R}^{3} \rightarrow \mathbb{R}
+g(x) = \frac{1}{|x|}
+g(0)
+h(x)
+ h(x) = (f \ast g)(x) = \int_{\mathbb{R}^{3}} f(y)g(x-y) dy = \int_{\mathbb{R}^{3}} f(x-y)g(y) dy 
+\int_{\mathbb{R}^{3}} f = 0
+C > 0
+h(x) \leq C/|x|^2
+|x|
+h(x) \leq C/|x|
+|x|
+\int_{\mathbb{R}^{3}} f = 0
+f
+f
+R > 0
+f(y)=0
+|y| \geq R
+ h(x) = \int_{|y|<R} f(y)g(x-y) dy. 
+g(x-y)=1/|x-y| \geq 0
+f(y) \leq f^{+}(y) := \max\{f(y),0\}
+|x| \geq \frac{c}{c-1}R
+R > |y|
+|x|/(|x|-|y|) \leq c
+|x| \geq \frac{c}{c-1}R
+ h(x) \leq \int_{|y|<R} \frac{f^{+}(y)}{|x-y|} dy \leq \sup_{|y|<R} \frac{1}{|x-y|} \int_{|y|<R} f^{+}(y) dy \leq \frac{1}{|x|} \sup_{|y|<R} \frac{|x|}{|x|-|y|}  \int_{|y|<R} f^{+}(y) dy 
+ \frac{|x|}{|x|-|y|} \leq c \quad \text{ if and only if } \quad |x| \geq \frac{c}{c-1}|y|, 
+ h(x) \leq \frac{c}{|x|} \int_{|y|<R} f^{+}(y) dy = \frac{C}{|x|} 
+f(x)=0
+|x|\ge R
+\int f(x)\;\mathrm{d}x=0
+|x|>2R
+f
+f
+L^1
+f
+\int f(x)\;\mathrm{d}x=0
+1/|x|
+ \begin{align} \left|\int_{|y|<R} \frac{f(y)}{|x-y|}\mathrm{d}y\right| &=\left|\int_{|y|<R} f(y)\left(\frac{1}{|x-y|}-\frac{1}{|x|}\right)\mathrm{d}y\right|\\ &\le\|f\|_{L^1}\left\|\frac{1}{|x-y|}-\frac{1}{|x|}\right\|_{L^\infty(|y|<R)}\\ &=\|f\|_{L^1}\left(\frac{1}{|x|-R}-\frac{1}{|x|}\right)\\ &=\|f\|_{L^1}\frac{R}{(|x|-R)|x|}\\ &\le\|f\|_{L^1}\;2R/|x|^2 \end{align} 

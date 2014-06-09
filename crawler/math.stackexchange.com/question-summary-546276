@@ -1,0 +1,28 @@
+\{s_n\}
+\mathbb{R}
+s_n \rightarrow s
+s^k_n\rightarrow s^k
+k \in\mathbb{N}
+|s^k_n - s^k| < \varepsilon
+|s_ns^{k-1}_n - ss^{k-1}|=|(s_n-s)(s^{k-1}_n + s^{k-1}) -s_ns^{k-1}+ss_n^{k-1}|
+|s_n - s| < \varepsilon?
+s_n \to s
+n_1
+|s_n-s| \le s_0 
+n  > n_1
+s_0 = \max(|s|, 1)
+s = 0
+|s_n| \le |s|+s_0
+s_n
+s
+n > n_1
+\begin{align} |s_n^k-s^k| &=|s_n-s|\big|\sum_{j=0}^{k-1} s_n^j s^{k-1-j}\big|\\ &\le|s_n-s|\sum_{j=0}^{k-1} \big|s_n^j s^{k-1-j}\big|\\ &\le|s_n-s|\sum_{j=0}^{k-1} \big|s_n^j\big| \big|s^{k-1-j}\big|\\ &\le|s_n-s|\sum_{j=0}^{k-1} \big|(|s|+s_0)^j\big| \big|s^{k-1-j}\big|\\ &\le|s_n-s|\sum_{j=0}^{k-1} (|s|+s_0)^{k-1}\\ &=|s_n-s|k (|s|+s_0)^{k-1}\\ &=b(s, k)|s_n-s|\\ \end{align} 
+b(s, k) =k (|s|+s_0)^{k-1} 
+|s_n^k-s^k| < \epsilon 
+b(s, k)|s_n-s| < \epsilon 
+|s_n-s| < \dfrac{\epsilon}{b(s, k)} 
+n
+|s_n^k-s^k|=|s_n-s|\cdot |s_n^{k-1}+s_n^{k-2}s+\dots +s_ns^{k-2}+s^{k-1}|\\\leq |s_n-s|\cdot k(|s|+|s_n-s|)^k
+f(x) = x^k
+g(x) = x
+\delta = \epsilon

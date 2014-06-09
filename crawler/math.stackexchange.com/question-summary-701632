@@ -1,0 +1,18 @@
+f(x,y,z) = (z,x,y)
+(\rho,\theta,\zeta)
+(\rho,\theta+2\pi/3,\zeta)
+f
+x=y=z
+\zeta
+g(x,y,z) = (-y-\pi/2,-x-\pi/2,-z-\pi/2)
+(\rho,\theta,\zeta)
+(\rho,-\theta,-\zeta)
+1
+M = \begin{pmatrix} 1/\sqrt2 & 1/\sqrt6 & 1/\sqrt3 & -\pi/4 \\ -1/\sqrt2 & 1/\sqrt6 & 1/\sqrt3 & -\pi/4 \\ 0 & -2/\sqrt6 & 1/\sqrt3 & -\pi/4 \\ 0 & 0 & 0 & 1 \end{pmatrix} \qquad M^{-1}=\begin{pmatrix} 1/\sqrt2 & -1/\sqrt2 & 0 & 0 \\ 1/\sqrt6 & 1/\sqrt6 & -2/\sqrt6 & 0 \\ 1/\sqrt3 & 1/\sqrt3 & 1/\sqrt3 & \pi\sqrt3/4 \\ 0 & 0 & 0 & 1 \end{pmatrix} 
+f
+ \begin{pmatrix} \rho'\cos\theta' \\ \rho'\sin\theta' \\ \zeta' \\ 1 \end{pmatrix} = M^{-1}\begin{pmatrix} 0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}M \begin{pmatrix} \rho\cos\theta \\ \rho\sin\theta \\ \zeta \\ 1 \end{pmatrix} = \begin{pmatrix} -1/2 & -\sqrt3/2 & 0 & 0 \\ \sqrt3/2 & -1/2 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} \rho\cos\theta \\ \rho\sin\theta \\ \zeta \\ 1 \end{pmatrix} 
+g
+ \begin{pmatrix} \rho''\cos\theta'' \\ \rho''\sin\theta'' \\ \zeta'' \\ 1 \end{pmatrix} = M^{-1}\begin{pmatrix} 0 & -1 & 0 & -\pi/2 \\ -1 & 0 & 0 & -\pi/2 \\ 0 & 0 & -1 & -\pi/2 \\ 0 & 0 & 0 & 1 \end{pmatrix}M \begin{pmatrix} \rho\cos\theta \\ \rho\sin\theta \\ \zeta \\ 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} \rho\cos\theta \\ \rho\sin\theta \\ \zeta \\ 1 \end{pmatrix} 
+\zeta''=-\zeta
+\rho''=\rho
+\theta''=-\theta

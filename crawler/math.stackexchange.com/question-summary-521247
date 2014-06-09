@@ -1,0 +1,42 @@
+I=\int_0^\pi\log\left(1+\sqrt{(1-\kappa^2\sin^2x)}\right)dx
+I=2\int_0^\frac{\pi}{2}\log\left(1+\sqrt{(1-\kappa^2\sin^2x)}\right)dx
+\log(1+x)=\sum\limits_{n=1}^\infty\dfrac{(-1)^{n-1}x^n}{n}
+I=2\sum\limits_{n=1}^\infty\dfrac{(-1)^{n-1}}{n}\int_0^\frac{\pi}{2}\left(\sqrt{1-\kappa^2\sin^2x}\right)^n~dx
+n=1
+E(\kappa)=\int_0^\frac{\pi}{2}\sqrt{1-\kappa^2\sin^2x}~dx
+I
+E(\kappa)
+\kappa=1
+I=2\int_0^{\pi/2}\log(1+{\cos}x)dx
+I=4C-\pi\log(2)\approx1.4868
+C
+I=\int_0^\pi\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)dx
+=\dfrac{1}{2}\int_0^{2\pi}\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)dx
+\left(\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)~\text{is a periodic function of period}~\pi\right)
+=\dfrac{1}{2}\left[x\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)\right]_0^{2\pi}-\dfrac{1}{2}\int_0^{2\pi}x~d\left(\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)\right)
+=\dfrac{\pi\ln2}{2}+\dfrac{1}{2}\int_0^{2\pi}\dfrac{\kappa^2x\sin x\cos x}{\sqrt{1-\kappa^2\sin^2x}\left(1+\sqrt{1-\kappa^2\sin^2x}\right)}dx
+=\dfrac{\pi\ln2}{2}+\dfrac{1}{2}\int_{2\pi}^0\dfrac{\kappa^2(2\pi-x)\sin(2\pi-x)\cos(2\pi-x)}{\sqrt{1-\kappa^2\sin^2(2\pi-x)}\left(1+\sqrt{1-\kappa^2\sin^2(2\pi-x)}\right)}d(2\pi-x)
+=\dfrac{\pi\ln2}{2}+\dfrac{1}{2}\int_0^{2\pi}\dfrac{\kappa^2(2\pi-x)\sin x\cos x}{\sqrt{1-\kappa^2\sin^2x}\left(1+\sqrt{1-\kappa^2\sin^2x}\right)}dx
+\therefore2I=\pi\ln2+\int_0^{2\pi}\dfrac{2\kappa^2\pi\sin x\cos x}{\sqrt{1-\kappa^2\sin^2x}\left(1+\sqrt{1-\kappa^2\sin^2x}\right)}dx
+I=\dfrac{\pi\ln2}{2}-\left[\pi\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)\right]_0^{2\pi}
+I=\dfrac{\pi\ln2}{2}
+I=\int_0^\pi\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)dx=2\int_0^\frac{\pi}{2}\ln\left(1+\sqrt{1-\kappa^2\sin^2x}\right)dx
+\dfrac{dI}{d\kappa}=-\int_0^\frac{\pi}{2}\dfrac{2\kappa\sin^2x}{\sqrt{1-\kappa^2\sin^2x}\left(1+\sqrt{1-\kappa^2\sin^2x}\right)}dx
+=-\int_0^\frac{\pi}{2}\dfrac{2\kappa\sin^2x\left(1-\sqrt{1-\kappa^2\sin^2x}\right)}{\sqrt{1-\kappa^2\sin^2x}\left(1+\sqrt{1-\kappa^2\sin^2x}\right)\left(1-\sqrt{1-\kappa^2\sin^2x}\right)}dx
+=\int_0^\frac{\pi}{2}\dfrac{2\kappa\sin^2x\left(\sqrt{1-\kappa^2\sin^2x}-1\right)}{(1-(1-\kappa^2\sin^2x))\sqrt{1-\kappa^2\sin^2x}}dx
+=\int_0^\frac{\pi}{2}\dfrac{2\kappa\sin^2x\left(\sqrt{1-\kappa^2\sin^2x}-1\right)}{\kappa^2\sin^2x\sqrt{1-\kappa^2\sin^2x}}dx
+=\int_0^\frac{\pi}{2}\dfrac{2}{\kappa}dx-\int_0^\frac{\pi}{2}\dfrac{2}{\kappa\sqrt{1-\kappa^2\sin^2x}}dx
+0\leq\kappa\leq1
+\int_0^\frac{\pi}{2}\dfrac{2}{\kappa}dx-\int_0^\frac{\pi}{2}\dfrac{2}{\kappa\sqrt{1-\kappa^2\sin^2x}}dx
+=\int_0^\frac{\pi}{2}\dfrac{2}{\kappa}dx-\int_0^\frac{\pi}{2}\dfrac{2}{\kappa}\sum\limits_{n=0}^\infty\dfrac{(2n)!\kappa^{2n}\sin^{2n}x}{4^n(n!)^2}dx
+=-\int_0^\frac{\pi}{2}\sum\limits_{n=1}^\infty\dfrac{(2n)!\kappa^{2n-1}\sin^{2n}x}{2^{2n-1}(n!)^2}dx
+\int\sin^{2n}x~dx
+n
+\int\sin^{2n}x~dx=\dfrac{(2n)!x}{4^n(n!)^2}-\sum\limits_{k=1}^n\dfrac{(2n)!((k-1)!)^2\sin^{2k-1}x\cos x}{4^{n-k+1}(n!)^2(2k-1)!}+C
+\therefore-\int_0^\frac{\pi}{2}\sum\limits_{n=1}^\infty\dfrac{(2n)!\kappa^{2n-1}\sin^{2n}x}{2^{2n-1}(n!)^2}dx
+=-\left[\sum\limits_{n=1}^\infty\dfrac{((2n)!)^2\kappa^{2n-1}x}{2^{4n-1}(n!)^4}-\sum\limits_{n=1}^\infty\sum\limits_{k=1}^n\dfrac{((2n)!)^2\kappa^{2n-1}((k-1)!)^2\sin^{2k-1}x\cos x}{2^{4n-2k+1}(n!)^4(2k-1)!}\right]_0^\frac{\pi}{2}
+=-\sum\limits_{n=1}^\infty\dfrac{((2n)!)^2\pi\kappa^{2n-1}}{16^n(n!)^4}
+\therefore I=-\sum\limits_{n=1}^\infty\dfrac{(2n)!(2n-1)!\pi\kappa^{2n}}{16^n(n!)^4}+c
+\because I(0)=\int_0^\pi\ln2~dx=[x\ln2]_0^\pi=\pi\ln2
+\therefore c=\pi\ln2
+I=\pi\ln2-\sum\limits_{n=1}^\infty\dfrac{(2n)!(2n-1)!\pi\kappa^{2n}}{16^n(n!)^4}

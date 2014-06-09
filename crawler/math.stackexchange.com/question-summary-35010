@@ -1,0 +1,36 @@
+P=\displaystyle\prod_{n=0}^{\infty }\left( \frac{2n+1}{2n+2}\right) ^{(-1)^{t_{n}}},
+\left( t_{n}\right) _{n\geq 0}=\left( 0,1,1,0,1,0,0,1,\ldots \right) 
+t_{0}=0,t_{2n}=t_{n}
+% t_{2n+1}=1-t_{n}
+n\geq 0
+\left( t_{n}\right) 
+P
+\begin{eqnarray*} P &=&\displaystyle\prod_{m=0}^{\infty }\left( \frac{8m+1}{8m+2}\frac{8m+4}{8m+3}\cdot  \frac{8m+6}{8m+5}\frac{8m+7}{8m+8}\right) ^{(-1)^{t_{m}}} \\ &=&\displaystyle\prod_{m=0}^{\infty }\left( 1-\frac{1}{32m^{2}+20m+3}\right) ^{(-1)^{t_{m}}}\displaystyle\prod_{m=0}^{\infty }\left( 1+\frac{1}{32m^{2}+52m+20}% \right) ^{(-1)^{t_{m}}}\text{.} \end{eqnarray*}
+P
+\displaystyle\prod_{n=0}^{\infty }\left( 1+b_{n}\right) 
+b_{n}\rightarrow 0,b_{n}>0
+\sum_{n=0}^{\infty }b_{n}
+b_n>0
+\displaystyle\sum b_n
+e_{n}
+-1
++1
+\begin{equation*} P^{\prime }=\displaystyle\prod_{n=0}^{\infty }\left( 1+b_{n}\right) ^{e_{n}}\qquad (\ast ) \end{equation*},
+\prod_n (z_n)^{s_n}
+z_n \in \mathbb{C}^{\times}
+s_n \in \mathbb{Z}
+z_n > 0
+s_n \in \mathbb{C}
+z_n \rightarrow 1
+s_n
+\sum_n a_n b_n
+\sum_{k=0}^n b_k
+\sum_n |a_{n+1}-a_n| < \infty
+S_n = \sum_{k=1}^n s_k
+s_k = (-1)^{t_k}
+s_{2k}+s_{2k+1}=0
+s_n = S_n - S_{n-1}
+z_n
+z_n/z_{n+1} = 1 + O(1/n^2)
+\sum_n |1-z_n/z_{n+1}| < \infty
+\begin{eqnarray*} \prod_{n=0}^N z_n^{s_n} & = & \prod_{n=0}^N z_n^{S_n-S_{n-1}} \\ & = & \prod_{n=0}^N z_n^{S_n} \prod_{n=0}^{N-1} z_{n+1}^{-S_n} \\ & = & z_N^{S_N} \prod_{n=0}^{N-1} \left( \frac{z_n}{z_{n+1}} \right)^{S_n} \end{eqnarray*}

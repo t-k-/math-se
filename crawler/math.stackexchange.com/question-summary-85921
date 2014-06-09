@@ -1,0 +1,10 @@
+\mathcal{L}_X(s)=\left(\frac{\lambda_1}{s+\lambda_1}\right)\left(\frac{\lambda_2}{s+\lambda_2}\right)\cdots\left(\frac{\lambda_n}{s+\lambda_n}\right)
+f_X(x) = \sum_{i=1}^n \alpha_i\lambda e^{-\lambda_i x}\quad\text{where}\quad  \alpha_i = \prod_{\begin{smallmatrix}1\le j\le n\\ j\neq i\end{smallmatrix}}\frac{\lambda_j}{\lambda_j - \lambda_i}.
+s=-\lambda_i
+A_i
+\lambda_j
+1\leq j\leq n
+\left(\frac{\lambda_1}{s+\lambda_1}\right)\left(\frac{\lambda_2}{s+\lambda_2}\right)\cdots\left(\frac{\lambda_n}{s+\lambda_n}\right)\equiv\sum_{i=1}^n\frac{A_i}{s+\lambda_i}.
+\lambda_1\cdots\lambda_n\equiv\sum_{i=1}^nA_i(s+\lambda_1)\cdots(s+\lambda_{i-1})(s+\lambda_{i+1})\cdots(s+\lambda_n).
+A_i=\frac{\lambda_1\cdots\lambda_n}{(\lambda_1-\lambda_i)\cdots(\lambda_{i-1}-\lambda_i)(\lambda_{i+1}-\lambda_i)\cdots(\lambda_n-\lambda_i)}=\prod_{\begin{smallmatrix}1\le j\le n\\ j\neq i\end{smallmatrix}}\frac{\lambda_j}{\lambda_j - \lambda_i}:=\alpha_i\mbox{ for }1\leq i\leq n.
+L^{-1}\Big\{\left(\frac{\lambda_1}{s+\lambda_1}\right)\left(\frac{\lambda_2}{s+\lambda_2}\right)\cdots\left(\frac{\lambda_n}{s+\lambda_n}\right)\Big\}=\sum_{i=1}^n\alpha_iL^{-1}\Big\{\frac{1}{s+\lambda_i}\Big\}=\sum_{i=1}^n\alpha_ie^{-\lambda_ix},

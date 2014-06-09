@@ -1,0 +1,46 @@
+f:\mathbb{R}\to \mathbb{R}
+f(0)=0
+M>0
+|f(x)|\le 1+M|x|
+\forall x \in \mathbb{R}
+\epsilon=1
+\delta>0
+|x-y|<\delta
+|f(x)-f(y)|<\epsilon=1
+M=\frac1 \delta
+x>0
+n
+n\delta>x
+x_k=\frac {kx}{n}
+0\le k\le n
+x_0=0
+x_n=n
+x_{k+1}-x_k=\frac x{n}<\delta
+|f(x_{ĸ+1})-f(x_k)|<1
+|f(x_n)-f(x_0)|<n
+|f(x)|<n
+(n-1)\delta\le x
+|f(x)|<\frac x\delta+1=1+M|x|
+x<0
+f
+\epsilon>0:
+x,y\in\mathbb R
+\delta_\epsilon
+\epsilon=1
+\delta_1
+\Delta x<\delta_1
+\Delta x
+f
+\frac{1}{\Delta x}
+ |x-y|<\delta_\epsilon \implies |f(x)-f(y)|<\epsilon 
+ |x-y|<\delta_1 \implies |f(x)-f(y)|<1 
+ \left|f(x+\Delta x)-f(x)\right|<1 
+ \left|\frac{f(x+\Delta x)-f(x)}{\Delta x}\right|<\frac{1}{\Delta x} 
+M=\frac1{\Delta x}
+x_0\in\mathbb R
+n=\lfloor x_0/\Delta x \rfloor
+\Delta x_0= x_0-n\Delta x
+M=\frac1{\Delta x}
+n>2
+ \begin{align} f(x_0)&=f(n\Delta x+\Delta x_0)\\ &<1+f((n-1)\Delta x+\Delta x_0)\\ &<2+f((n-2)\Delta x+\Delta x_0)\\ &<\cdots\\ &<n+f(0+\Delta x_0)\\ &<n+1 = 1+ \lfloor x_0/\Delta x \rfloor\\ &< 1 + x_0/\Delta x = 1 + Mx_0 \end{align} 
+ \begin{align} f(x_0)&=f(n\Delta x+\Delta x_0)\\ &>-1+f((n-1)\Delta x+\Delta x_0)\\ &>-2+f((n-2)\Delta x+\Delta x_0)\\ &>\cdots\\ &>-n+f(0+\Delta x_0)\\ &>-n-1 = -\left(1+ \lfloor x_0/\Delta x \rfloor\right)\\ &> \left(1 + x_0/\Delta x\right) = -\left(1 + Mx_0\right) \end{align} 

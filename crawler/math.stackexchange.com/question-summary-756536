@@ -1,0 +1,13 @@
+y(0)=0
+y'(1) = 0
+y'' + y' = f(x)
+G
+ \int\limits_0^1 y(G'' - G')dx + G(1)y(1) = \int\limits_0^1 Gfdx
+G(0) = 0
+G'(1) = 0
+G'' - G' = \delta (x-\xi)
+G(1)y(1)
+G(x,t) = 1-e^{t-x}
+y'+y = \int_0^x f(t)dt + c \implies \dfrac{d}{dx}\left(e^xy\right) = e^x \int_0^x f(t)dt + ce^x
+y = e^{-x} \int_0^x e^s \int_0^s f(t)dt ds + e^{-x} \int_0^x c e^{-s}ds + c_1
+y = \int_0^x \left(1-e^{t-x} \right) f(t) dt + e^{-x} \int_0^x c e^{-s}ds + c_1

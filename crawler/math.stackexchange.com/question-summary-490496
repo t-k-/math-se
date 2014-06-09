@@ -1,0 +1,15 @@
+\int e^{x^{1/3}} dx \stackrel{x=t^3}{=} 3\int t^2 e^t dt \stackrel{(*)}{=} 3 (t^2 - 2t + 2) e^t + C \stackrel{t=x^\frac{1}{3}}= 2(x^\frac{2}{3} - 2x^\frac{1}{3} + 2) e^{x^\frac{1}{3}} + C
+(*)
+(t^2 e^t)' = (t^2 + 2t) e^t
+\begin{align*} ((t^2 - 2t)e^t)' & = (t^2 + 2t - 2t - 2)e^t \\ ((t^2 - 2t + 2) e^t)' & = (t^2 + 2t - 2t - 2 + 2)e^t = t^2 e^t \end{align*}
+ x = t^3 \Rightarrow 
+ I = \int t^2 e^t \ dt 
+ u = t^2 \quad , dv = e^t \ dt 
+ du = 2t \ dt \quad , v = e^t 
+ \Rightarrow I = uv - \int v \ du = t^2 e^t - 2\int te^t \ dt 
+ u  = t \quad , dv = e^t \ dt 
+ du = dt \quad , v = e^t 
+ \Rightarrow I = t^2 e^t - 2\left( te^t - \int e^t \ dt \right) = t^2e^t -  2te^t + e^t + C  
+ d(uv) = u \ dv + v \ du 
+ \Rightarrow \int d(uv) = \int u \ dv + \int v \ du 
+ \Rightarrow uv = \int u \ dv + \int v \ du  \Rightarrow \int u \ dv = uv -  \int v \ du 

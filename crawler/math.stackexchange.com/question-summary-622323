@@ -1,0 +1,56 @@
+\left(\dfrac{1}{x^2+a^2}\right)^{(n)}=(-1)^{(n)}n!\dfrac{\sin{[(n+1)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+1)/2}}
+\dfrac{1}{x^2+a^2}=\dfrac{1}{2ai}\left(\dfrac{1}{x-ai}-\dfrac{1}{x+ai}\right),i=\sqrt{-1}
+\left(\dfrac{1}{x^2+a^2}\right)^{(n)}=\dfrac{(-1)^nn!}{2ai}\left(\dfrac{1}{(x-ai)^{n+1}}-\dfrac{1}{(x+ai)^{n+1}}\right)
+x=a\cot{\theta},0<\theta<\pi,
+x\pm ai=a(\cos{\theta}\pm i\sin{\theta})/\sin{\theta}
+\dfrac{1}{(x\pm ai)^{n+1}}=\dfrac{\sin^{n+1}{\theta}}{a^{n+1}}[\cos{(n+1)\theta}\mp i\sin{(n+1)\theta}]
+\left(\dfrac{1}{x^2+a^2}\right)^{(n)}=(-1)^{(n)}n!\dfrac{\sin{[(n+1)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+1)/2}}
+f(t)
+\mathcal{L}\{f(t)\}=\int_0^\infty f(t)\operatorname{e}^{-xt}\operatorname{d}t=F(x)
+f(t)=\sin(at)u(t)
+F(x)=\int_0^\infty \sin(at)\operatorname{e}^{-xt}\operatorname{d}t=\frac{a}{x^2+a^2}.
+\mathcal{L}\{t^n f(t)\}=(-1)^n F^{(n)}(x)
+\sin(at)=\frac{\operatorname{e}^{iat}-\operatorname{e}^{-iat}}{2i}
+\begin{align} \frac{(-1)^nF^{(n)}(x)}{a}=\left(\frac{1}{x^2+a^2}\right)^{(n)}&=\frac{(-1)^n\mathcal{L}\{t^n f(t)\}}{a}=\frac{(-1)^n}{a}\int_0^\infty t^n \sin(at)\operatorname{e}^{-xt}\operatorname{d}t\\  &=\frac{(-1)^n}{2ia}\left[\int_0^\infty t^n \operatorname{e}^{-(x-ia)t}\operatorname{d}t-\int_0^\infty t^n \operatorname{e}^{-(x+ia)t}\operatorname{d}t\right]\\ &=\frac{(-1)^n}{2ia}\Gamma(n+1)\left[\frac{1}{(x-ia)^{n+1}}-\frac{1}{(x+ia)^{n+1}}\right] \end{align} 
+x=a\cot{\theta},\,0<\theta<\pi,
+ x\pm ia=\frac{a}{\sin\theta}\operatorname{e}^{\pm i\theta}={(x^2+a^2)^{1/2}}\operatorname{e}^{\pm i\theta} 
+ \left(\frac{1}{x^2+a^2}\right)^{(n)}=\frac{(-1)^n}{2ia}\Gamma(n+1)\frac{\left[\operatorname{e}^{+i(n+1)\theta}-\operatorname{e}^{-i(n+1)\theta}\right]}{(x^2+a^2)^{\frac{n+1}{2}}}=(-1)^n n!\frac{\sin\left((n+1)\cot^{-1}\left(\frac{x}{a}\right)\right)}{a(x^2+a^2)^{\frac{n+1}{2}}}. 
+\operatorname{e}^{+i\varphi}-\operatorname{e}^{-i\varphi}=2i\sin\varphi
+a\operatorname{e}^{i\theta}
+ \begin{align} \left(\frac{1}{x^2+a^2}\right)^{(n)} &= (-1)^n n!\left(\frac{\sin\theta}{a}\right)^{n+2}\frac{a\operatorname{e}^{i\theta}}{a\operatorname{e}^{i\theta}}\frac{\operatorname{e}^{i\theta(n+1)}-\operatorname{e}^{-i\theta(n+1)}}{\operatorname{e}^{i\theta}-\operatorname{e}^{-i\theta}}\\ &=(-1)^n n!\left(\frac{\sin\theta}{a}\right)^{n+2}\frac{a}{\sin\theta}\frac{1}{a}\sin((n+1)\theta)\\ &=(-1)^n n!\frac{\sin\left((n+1)\cot^{-1}\left(\frac{x}{a}\right)\right)}{a(x^2+a^2)^{\frac{n+1}{2}}}. \end{align} 
+\psi(t)=\arctan(t)
+f(x)=\frac{1}{x^2+a^2}=\frac{1}{a^2}\frac{1}{1+t^2}=\frac{1}{a^2}\psi(t).
+\frac{\operatorname{d}^n f(x)}{\operatorname{d}x^n}=\frac{1}{a^{n+2}}\frac{\operatorname{d}^{n+1} \psi(t)}{\operatorname{d}t^{n+1}}
+\sin\theta=\frac{1}{\sqrt{1+t^2}}
+n
+\psi(t)
+\arctan t
+n = 1
+n = k
+n = k + 1
+n = k
+t
+\frac{\operatorname{d} \theta}{\operatorname{d}t}=-\sin^2\theta
+n\ge 1
+ \psi^{(n)}(t)=(-1)^{n-1}(n-1)!\sin^n\theta\sin(n\theta)\tag 1 
+ \psi^{(k)}(t)=(-1)^{k-1}(k-1)!\sin^k\theta\sin(k\theta)\tag 2 
+\frac{\operatorname{d}\psi^{(k)}(t)}{\operatorname{d}t}=(-1)^{k}k!\sin^{k+1}\theta[\cos\theta\sin(k\theta)+\cos(k\theta)\sin\theta]=(-1)^{k}k!\sin^{k+1}\theta\sin((k+1)\theta)
+\psi^{(k+1)}(t)= (-1)^{k}k!\sin^{k+1}\theta\sin((k+1)\theta)
+\frac{\sin\theta}{a}=\frac{1}{a\sqrt{1+t^2}}=\frac{1}{(x^2+a^2)^{1/2}}
+ \left(\frac{1}{x^2+a^2}\right)^{(n)}=\frac{1}{a^{n+2}}\psi^{(n+1)}(t)=\frac{1}{a^{n+2}}(-1)^{n}n!\sin^{n+1}\theta\sin((n+1)\theta) 
+ \left(\frac{1}{x^2+a^2}\right)^{(n)}=(-1)^n n!\frac{\sin\left((n+1)\cot^{-1}\left(\frac{x}{a}\right)\right)}{a(x^2+a^2)^{\frac{n+1}{2}}}. 
+x/a\in (0,\pi).
+n = 0
+\frac{1}{x^2+a^2}=\frac{\sin{[\mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{1/2}}
+\sin{[\mathrm{arccot}{(x/a)}]} = \frac{a}{(a^2+x^2)^{1/2}}. 
+n \Rightarrow n+1
+\left(\frac{1}{x^2+a^2}\right)^{(n)}=(-1)^{(n)}n!\frac{\sin{[(n+1)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+1)/2}}
+\left(\frac{1}{x^2+a^2}\right)^{(n+1)}=(-1)^{(n+1)}(n+1)!\frac{\sin{[(n+2)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+2)/2}}.
+\left((-1)^{(n)}n!\frac{\sin{[(n+1)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+1)/2}}\right)^\prime = (-1)^{(n+1)}(n+1)!\frac{\sin{[(n+2)\cdot \mathrm{arccot}{(x/a)}]}}{a(x^2+a^2)^{(n+2)/2}}.
+(f/g)^\prime = (f^\prime g - fg^\prime)/g^2
+ \sin(x+y) = \sin x\cos y + \sin y \cos x
+ \left(\mathrm{arccot}{(x)}\right)^\prime =-\frac{1}{1+x^2}. 
+a=1
+(n+1)
+\arctan(x)
+ \left(\frac{d}{dx}\right)^n\arctan x = \frac{1}{2}\,{2}^{n} G^{1, 3}_{3, 3}\left({x}^{2}\, \Big\vert\,^{0, 0, 1/2}_{0, (n-1)/2, n/2}\right) {x}^{1-n} 

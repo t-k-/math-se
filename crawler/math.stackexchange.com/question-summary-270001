@@ -1,0 +1,11 @@
+\left(B_{t} \right)_{t\geq0}
+\mathcal F _t 
+\mathbb R
+\left(G_{t} \right)_{t\geq0}
+ G_t = \int_0 ^t \frac{B_u}{u}du
+t
+s\leqslant t
+s\leqslant t
+\mathbb E(G_t^2)=2\int_0^t\int_0^s\mathbb E(B_uB_s)\frac{\mathrm du}u\frac{\mathrm ds}s=2\int_0^t\int_0^su\frac{\mathrm du}u\frac{\mathrm ds}s=2\int_0^ts\frac{\mathrm ds}s=2t. 
+\mathbb E(G_s(G_t-G_s))=\int_s^t\int_0^s\mathbb E(B_uB_v)\frac{\mathrm du}u\frac{\mathrm dv}v=\int_s^t\int_0^su\frac{\mathrm du}u\frac{\mathrm dv}v=s\log\left(\frac{t}s\right). 
+ \mathrm{Cov}(G_s,G_t)=2s+s\log\left(\frac{t}{s}\right). 

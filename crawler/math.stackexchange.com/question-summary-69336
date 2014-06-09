@@ -1,0 +1,12 @@
+f\in L_1(\mathbb{T})
+f(x+0) = \lim\limits_{t\to x^+} f(t)
+f(x - 0) = \lim\limits_{t\to x^-} f(t)
+\lim_{n\to\infty}\sigma_n (f) = \frac{[f(x + 0) + f(x - 0)]}{2}.
+I:= \sigma_n(f) - \frac{[f(x + 0) + f(x - 0)]}{2}.
+I = \frac1{2\pi}\int_0^\pi K_n (t)\{[f(x + t) - f(x+0)] + [f(x - t) - f(x - 0)]\}\mathrm dt.
+[\sigma_n(f)](x) - f(x) = \frac1{2\pi}\int_{-\pi}^\pi [f(x + t) - f(x)]K_n (t)\mathrm dt.
+\frac 1{2\pi}\int_{-\pi}^{\pi}K_n(t)\,dt=1
+K_n
+\displaystyle\sigma_n(f)(x)=\dfrac{1}{2\pi}\int_{-\pi}^{\pi}K_n(t)\,f(x+t)\,dt
+K_n
+\begin{align*} \sigma_n(f)-\frac{f(x+0)-f(x-0)}2&=\frac 1{2\pi}\int_{-\pi}^{\pi}K_n(t)\,f(x+t)\,dt   -\frac 1{2\pi} \int_{-\pi}^{\pi}K_n(t)\frac{f(x+0)+f(x-0)}2dt\\\ &=\frac 1{2\pi}\int_0^{\pi}K_n(t)\,f(x+t)\,dt+\frac 1{2\pi}\int_{-\pi}^0K_n(t)\,f(x+t)\,dt\\\ &\phantom{=}-\frac 1{2\pi}\int_0^{\pi}K_n(t)\left[f(x+0)+f(x-0)\right]dt\\\ &=\frac 1{2\pi}\int_0^{\pi}K_n(t)\,f(x+t)\,dt+\frac 1{2\pi}\int_0^{\pi}K_n(t)\,f(x-t)\,dt\\\ &\phantom{=}-\frac 1{2\pi}\int_0^{\pi}K_n(t)\left[f(x+0)+f(x-0)\right] dt, \end{align*}

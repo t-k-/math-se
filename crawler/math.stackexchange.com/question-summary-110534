@@ -1,0 +1,28 @@
+0=x_1,x_2<\dots<x_{2n}<x_{2n+1}=1
+x_{i+1}-x_{i}\leq h
+1\leq i \leq 2n
+\frac{1-h}{2}<\sum^n_{i=1}x_{2i}(x_{2i+1}-x_{2i-1})<\frac{1+h}{2}
+\sum^n_{i=1}x_{2i}(x_{2i+1}-x_{2i-1})=x_2(x_3-x_1)+x_4(x_5-x_3)+x_6(x_7-x_5)+\dots=x_3(x_2-x_4)+x_5(x_4-x_6)+\dots
+x_{i+1}-x_{i}\leq h
+x_{i}-x_{i-1}\leq h
+\dots
+\frac{x_{i+1}-x_{i-m}}{m+1}\leq h
+x_{2i-1}>\frac{x_{2i-1}+x_{2i-2}}{2}>x_{2i-1}x_{2i-2}>x_{2i-2}
+x_{2i}>\frac{x_{2i}+x_{2i-1}}{2}>x_{2i}x_{2i-1}>x_{2i-1}
+x_{2i-1}-x_{2i}>\frac{x_{2i-2}-x_{2i}}{2}>x_{2i-1}(x_{2i-2}-x_{2i})>x_{2i-2}-x_{2i-1}\geq -h
+\frac{1+h}{2}\geq \frac{x_i-x_{i-n}+n}{2n}=\dfrac{\dfrac{x_i-x_{i-n}}{n}+1}{2}>\frac{x_i-x_{i-n}}{n}
+p_i = x_{2i+1} - x_{2i-1}
+a_i = x_{2i} - x_{2i-1}
+b_i = x_{2i+1} - x_{2i}
+a_i + b_i = p_i
+0 \leq a_i,b_i \leq h
+a_i = p_i/2 + \delta_i
+|\delta_i| \leq h/2
+\sum_{i=1}^n p_i = 1
+|\delta_i| \leq h/2
+\sum_{i=1}^n p_i = 1.
+ x_{2i} = \sum_{j < i} p_j + a_i. 
+ |a_i - p_i/2| = |(b_i-a_i)/2| \leq h/2. 
+ x_{2i} = \sum_{j < i} p_j + p_i/2 + \delta_i. 
+ \begin{align*} \sum_{i=1}^n x_{2i} (x_{2i+1} - x_{2i-1}) &= \sum_{i=1}^n \sum_{j<i} p_i p_j + \frac{1}{2} \sum_{i=1}^n p_i^2 + \sum_{i=1}^n \delta_i p_i \\ &= \frac{1}{2}\left(\sum_{i=1}^n p_i\right)^2 + \sum_{i=1}^n \delta_i p_i \\ &= \frac{1}{2} + \sum_{i=1}^n \delta_i p_i. \end{align*} 
+ \left|\sum_{i=1}^n x_{2i} (x_{2i+1} - x_{2i-1}) - \frac{1}{2}\right| \leq \frac{h}{2}. 

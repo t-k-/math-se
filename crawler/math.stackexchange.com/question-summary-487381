@@ -1,0 +1,54 @@
+X
+B
+N \subseteq X
+x \in X
+N \subseteq B
+x \in N
+N_1, N_2 \in B
+x \in N_1 \cap N_2
+N_3 \in B
+x \in N_3 \subseteq N_1 \cap N_2 
+B
+X
+X
+X
+N
+x \in X
+D_X(x,r) = \{ y \in X : d(x,y) < r \} 
+r > 0
+X
+x \in X
+N = D_X(x,r)
+x \in N
+d(x,x) = 0 < r
+N_1 = D_X(x_1,r_1)
+N_2 = D_X(x_2,r_2)
+x \in N_1 \cap N_2
+d(x_1, x) < r_1
+d(x_2,x) < r_2
+N_3 = D_X(x_3, r_3)
+r_3 = \min(r_1,r_2)
+N_3
+d(x_3,x) < \min (r_1,r_2) \leq r_1
+x
+N_3
+N_3 \subseteq N_1 \cap N_2 
+N = D_X(x,r)
+x \in N
+d(x,x) = 0 < r 
+N_1 = D_X(x_1,r_1)
+N_2 = D_X(x_2,r_2)
+x \in N_1 \cap N_2 
+N_3
+x \in N_3 \subseteq N_1 \cap N_2 
+N_3 = D_X (x_3, r_3)
+r_3 = \min \{r_1 - d(x_1,x_3), r_2 - d(x_2,x_3)\}
+y \in N_3
+d(x_3,y) < r_3
+ d(y, x_1) \leq d(y,x_3) + d(x_3,x_1) < \min \{r_1 - d(x_1,x_3), r_2 - d(x_2,x_3)\} + d(x_3,x_1) \leq r_1 - d(x_3,x_1) + d(x_3,x_1) = r_1
+y \in N_1
+ d(y,x_2) \leq  d(y,x_3) + d(x_3,x_2) \min \{r_1 - d(x_1,x_3), r_2 - d(x_2,x_3)\} + d(x_3,x_2) \leq r_2 - d(x_2,x_3) + d(x_3,x_2) = r_2
+y \in N_2
+N_3 \subseteq N_1 \cap N_2 
+x \in N_3
+x_3 = x

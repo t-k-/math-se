@@ -1,0 +1,10 @@
+m\neq 1
+X_1, X_2\ldots
+E(X_n) = m^n, n \ge 1
+N \sim \text{Poisson}(\lambda)
+X_1, X_2\ldots
+E(Z)
+Z = X_1 + X_2 + \ldots + X_N
+\begin{align*}E[Z]&=E[X_1+\ldots+X_N]=\sum_{n=1}^{\infty}E[X_1+\ldots+X_N |N=n]P(N=n)=\\&=\sum_{n=1}^{\infty}\left(m^1+\ldots+m^n\right)e^{-\lambda}\cdot\frac{\lambda^n}{n!}=m\cdot e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^n}{n!}\sum_{k=0}^{n-1}m^k\end{align*}
+\sum_{k=0}^{n-1}m^k=\frac{1-m^n}{1-m}
+\begin{align*}E[Z]&=m\cdot e^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^n}{n!}\sum_{k=0}^{n-1}m^k=me^{-\lambda}\sum_{n=1}^{\infty}\frac{\lambda^n}{n!}\frac{1-m^n}{1-m}=\frac{me^{-\lambda}}{1-m}\left(\sum_{n=1}^{\infty}\frac{\lambda^n}{n!}-\sum_{n=1}^{\infty}\frac{(m\lambda)^n}{n!}\right)=\\&=\frac{me^{-\lambda}}{1-m}\cdot (e^{\lambda}-e^{m\lambda})=\frac{m}{1-m}\cdot(1-e^{(m-1)\lambda})=\frac{m}{m-1}\left(e^{\lambda(m-1)}-1\right)\end{align*}

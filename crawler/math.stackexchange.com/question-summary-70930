@@ -1,0 +1,15 @@
+\displaystyle [(p\lor q) \land (p \rightarrow r) \land (q \rightarrow r)] \rightarrow r
+a\rightarrow b \equiv \neg(a)\lor b
+\neg\left[(p\lor q) \land [\neg p \lor r] \land [\neg q\lor r]\right] \lor r
+\neg(p\lor q) \lor \neg(\neg p\lor r) \lor \neg(\neg q\lor r) \lor r
+(\neg p\land \neg q) \lor (p\land \neg r) \lor (q\land \neg r) \lor r
+(\neg p\land \neg q)\lor\Bigl( ( p\land \neg r)\lor (q\land \neg r)\Bigr) \lor r
+(\neg p\land \neg q)\lor\Bigl( ( p \lor q)\land \neg r\Bigr)\lor r
+(\neg p\land \neg q)\lor\Biggl( \bigl(( p\lor q)\lor r\bigr)\land (\neg r\lor r)\Biggr)
+(\neg p\land \neg q) \lor \Biggl( \bigl( (p\lor q)\lor r\bigr) \land 1\Biggr)\equiv (\neg p\land \neg q) \lor \Bigl(  (p\lor q)\lor r\Bigr)
+\Bigl( \neg p \lor p \lor q\lor r\Bigr) \land\Bigl( \neg q\lor p \lor q \lor r\Bigr)
+\Bigl( 1\lor q \lor r\Bigr) \land \Bigl( p\lor 1 \lor r\Bigr) \equiv 1\land 1 \equiv 1.
+p
+q
+r
+r

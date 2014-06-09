@@ -1,0 +1,26 @@
+u(x)=x+\int_0^x (t-x)u(t)dt
+\sin(x)
+x\cos(x)
+\ln(1+x)
+xe^{-x}
+xe^x
+x
+g(x) = \int_{a(x)}^{b(x)} f(x,t)dt
+\dfrac{dg}{dx} = \int_{a(x)}^{b(x)} \dfrac{\partial f(x,t)}{\partial x}dt + f(x,a(x)) \dfrac{da(x)}{dx} - f(x,b(x)) \dfrac{db(x)}{dx}
+a
+b
+u'(x) = 1 - \int_0^x u(t) dt
+b=1
+u(x) = a \cos(x) + \sin(x)
+a
+u'(x) = 1 + \int_0^x (-u(t)) dt + (x-x) \times u(x) \times  1 - (0-x) \times u(0) \times 0
+u'(x) = 1 - \int_0^x u(t) dt
+u''(x) = -u(x)
+u(x) = a \cos(x) + b \sin(x)
+\int_0^x (t-x)u(t)\text{d}t = \int_0^x tu(t)\text{d}t-\int_0^x xu(t)\text{d}t= \int_0^x tu(t)\text{d}t-x\int_0^x u(t)\text{d}t 
+ u(x) = x - \int_0^x (x-t)u(t) \ dt 
+ u(x) = x - u(x)*x 
+ U(s)= \frac{1}{s^2} - \frac{U(s)}{s^2} \Rightarrow U(s) = \frac{1}{s^2 + 1} 
+ \Rightarrow u(x) = \mathscr{L}^{-1} \left \{ \frac{1}{s^2 + 1} \right\} = \sin x 
+  \mathscr{L} \left\{ (f*g)(x) \right\}  = \mathscr{L} \{ f(x) \} \mathscr{L} \{g(x) \} 
+ (f*g)(x) = \int_0^x f(x)g(x-t) \ dt 

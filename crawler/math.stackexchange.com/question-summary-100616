@@ -1,0 +1,30 @@
+2i
+-2i
+\int_{0}^\infty \frac{\cos (3x)}{x^2+4}dx= \frac{\pi}{4e^6}
+\int_{0}^\infty \frac{\cos (3z)}{(z+2i)(z-2i)}dz
+f(z)=\dfrac{e^{i3z}}{(z+2i)(z-2i)},
+\lim\limits_{z\rightarrow\ 2i}(z-2i)*f(z) = \frac{e^-6}{4i}
+2\pi i*\frac{1}{4ie^6}=\frac{\pi}{2e^6}
+f(z)=\displaystyle\frac{e^{3zi}}{(z+2i)(z-2i)}
+R>0
+\gamma=\gamma_1+\gamma_2
+\gamma_1(t)=t
+-R\leq t\leq R
+\gamma_2(t)=Re^{it}
+0\leq t\leq \pi
+\int_{\gamma_1}f(z)dz=\int_{-R}^R\frac{e^{i3t}}{t^2+4}dt=\int_{-R}^R\frac{\cos(3t)}{t^2+4}dt+i\int_{-R}^R\frac{\sin(3t)}{t^2+4}dt
+\rightarrow\int_{-\infty}^\infty\frac{\cos(3t)}{t^2+4}dt+i\int_{-\infty}^\infty\frac{\sin(3t)}{t^2+4}dt\mbox{ as }R\rightarrow\infty,
+\left|\int_{\gamma_2}f(z)dz\right|=\left|\int_{0}^{\pi}\frac{e^{i3Re^{it}}}{R^2e^{2it}+4}Rie^{it}dt\right|
+\leq\int_{0}^{\pi}\frac{R|e^{i3Re^{it}}|}{R^2-4}dt= \int_{0}^{\pi}\frac{Re^{-3R\sin t}}{R^2-4}dt\leq\int_{0}^{\pi}\frac{R}{R^2-4}dt\rightarrow 0\mbox{ as }R\rightarrow\infty.
+2i
+\gamma
+-2i
+\int_{\gamma} f(z)dx=2\pi iRes(f(z),2i)
+Res(f(z),2i)=Res(\frac{e^{3zi}}{(z+2i)(z-2i)},2i)=\frac{e^{3zi}}{(z+2i)}\Big|_{z=2i}=\frac{e^{-6}}{4i}.
+\int_{-\infty}^\infty\frac{\cos(3t)}{t^2+4}dt+i\int_{-\infty}^\infty\frac{\sin(3t)}{t^2+4}dt=2\pi i\cdot\frac{e^{-6}}{4i}=\frac{\pi}{2e^6}.
+\int_{-\infty}^\infty\frac{\cos(3t)}{t^2+4}dt=\frac{\pi}{2e^6}\mbox{ and } \int_{-\infty}^\infty\frac{\sin(3t)}{t^2+4}dt=0.
+\frac{\cos(3t)}{t^2+4}
+y
+\frac{\cos(-3t)}{(-t)^2+4}=\frac{\cos(3t)}{t^2+4}
+\int_{-\infty}^\infty\frac{\cos(3t)}{t^2+4}dt=2\int_{0}^\infty\frac{\cos(3t)}{t^2+4}dt
+\int_{0}^\infty\frac{\cos(3t)}{t^2+4}dt=\frac{1}{2}\int_{-\infty}^\infty\frac{\cos(3t)}{t^2+4}dt=\frac{\pi}{4e^6},

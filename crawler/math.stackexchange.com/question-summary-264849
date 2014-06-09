@@ -1,0 +1,29 @@
+|f|_{r}<\infty
+r<0
+\lim_{p\rightarrow 0}|f|_{p}=e^{\int_{X}\log |f|d\mu}
+r<p<0
+K=\frac{r}{p}>1
+K'
+\mu(X)=1
+|f|_{p}
+p\rightarrow 0
+\int f^{p}d\mu=\int (f^{p})*1d\mu\le (\int [f^{p}]^{\frac{r}{p}})^{\frac{p}{r}}
+|f|_{p}\le |f|_{r}<\infty
+F=f^{p}
+p
+\log^{\int_{X}Fd\mu}\ge \int_{X}\log[F]d\mu
+ \int_{X}f^{p}d\mu\ge (e^{\int_{X}\log[f]d\mu})^{p} 
+|f|_{p}\ge e^{\int \log|f|d\mu}
+f^{p}=c
+f
+u>0
+k'(u)=\log(u)
+k''(u)=1/u
+k(u)
+u=1
+ k(u)=u\log(u)-u+1\ge0\tag{1} 
+(1)
+ \lim_{p\to0}\frac{x^p-1}p=\log(x)\tag{2} 
+ \begin{align} \frac{\mathrm{d}}{\mathrm{d}p}\frac{x^p-1}p &=\frac{p\log(x)x^p-x^p+1}{p^2}\\ &=\frac{k(x^p)}{p^2}\\ &\ge0\tag{3} \end{align} 
+ \begin{align} \log\left(\lim_{p\to0}\left(\int_X|f(x)|^p\,\mathrm{d}\mu\right)^{1/p}\right) &=\lim_{p\to0}\frac1p\log\left(\int_X|f(x)|^p\,\mathrm{d}\mu\right)\\ &=\lim_{p\to0}\frac1p\log\left(1+p\int_X\frac{|f(x)|^p-1}{p}\,\mathrm{d}\mu\right)\\ &=\lim_{p\to0}\frac1p\log\left(1+p\int_X\log|f(x)|\,\mathrm{d}\mu\right)\\ &=\int_X\log|f(x)|\,\mathrm{d}\mu\tag{4} \end{align} 
+ \lim_{p\to0}\left(\int_X|f(x)|^p\,\mathrm{d}\mu\right)^{1/p} =\exp\left(\int_X\log|f(x)|\,\mathrm{d}\mu\right)\tag{5} 

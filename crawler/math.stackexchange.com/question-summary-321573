@@ -1,0 +1,20 @@
+X_1,X_2,\ldots,X_n
+\theta
+\theta
+\lambda
+\lambda
+X_i
+\theta
+x=(x_1,\ldots,x_n)
+s=x_1+\cdots+x_n
+z
+f(\ \mid x)
+(n+1,s+\lambda)
+f(\theta\mid x)\propto f(x\mid\theta)f(\theta)=\theta^n\mathrm e^{-s\theta}\cdot\lambda\mathrm e^{-\lambda\theta}\propto\theta^n\mathrm e^{-(s+\lambda)\theta},
+ \int_0^{+\infty}\theta^n\mathrm e^{-z\theta}\mathrm d\theta=\frac{n!}{z^{n+1}}, 
+ f(\theta\mid x)=\frac1{n!}(s+\lambda)^{n+1}\theta^n\mathrm e^{-(s+\lambda)\theta}, 
+L(\theta)
+p(\theta)
+f(\theta|x_1,...,x_n)
+ f(\theta|x_1,...,x_n)=\frac{L(\theta)*p(\theta)}{\int_{-\infty}^\infty L(\theta)*p(\theta)d\theta}
+ f(\theta|x_1,...,x_n)=\frac{\theta^ne^{-\theta \sum_{i=1}^nX_i}*\lambda e^{-\lambda\theta}}{\int_0^\infty \theta^ne^{-\theta \sum_{i=1}^nX_i}*\lambda e^{-\lambda\theta} d\theta}

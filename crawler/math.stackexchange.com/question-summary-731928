@@ -1,0 +1,45 @@
+f\in C^2([0,1])
+f(0)=f(1)=0
+|f''(x)| \le 1
+\forall  x \in [0,1]
+|f(x)| \le \frac{1}{2}x(1-x)
+\displaystyle (1-x)\int_0^x tf''(t)\,dt -x \int_x^1 (t-1)f''(t)\,dt = -f(x)
+x \in [0,1]
+t\ge 0
+t\in [0,1]
+(t-1) \le 0
+t \in [0,1]
+|f(x)| = \displaystyle \left|(1-x)\int_0^x tf''(t)\,dt -x \int_x^1 (t-1)f''(t)\,dt\right|
+\le \displaystyle \left|(1-x)\int_0^x tf''(t)\,dt\right| + \left|-x \int_x^1 (t-1)f''(t)\,dt\right|
+\le \displaystyle \sup\limits_{t\in[0,1]}|f''(t)|. \bigg( (1-x)\int_0^x t\,dt -x \int_x^1 (t-1)\,dt \bigg)
+= \dfrac{x(1-x)}{2}.\sup\limits_{t\in[0,1]}|f''(t)| \le \dfrac{x(1-x)}{2}
+g(0)=g(x)=g(1)=0
+(0,1)
+\exists \alpha \in (0,1)
+g''(\alpha)=0
+g''(\alpha) = f''(\alpha) - \dfrac{2}{x(x-1)}f(x)=0
+|f(x)|=\dfrac{x(1-x)}{2}|f''(\alpha)| \le \dfrac{x(1-x)}{2}
+\xi_k\in[0,1]
+g(x)=f(x)-\frac12x(1-x)
+h(x)=f(x)+\frac12x(1-x)
+ f(1)=f(0)+f'(0)+\frac12f''(\xi_1) \quad\text{and}\quad f(0)=f(1)-f'(1)+\frac12f''(\xi_2) 
+ |f'(0)|\le\frac12 \quad\text{and}\quad |f'(1)|\le\frac12 
+g(0)=0
+g'(0)\le0
+g''(x)\le0
+g(x)\le0
+h(0)=0
+h'(0)\ge0
+h''(x)\ge0
+h(x)\ge0
+ \overbrace{-\frac12x(1-x)\le}^{h(x)\ge0}f(x)\overbrace{\le\frac12x(1-x)}^{g(x)\le0} 
+x
+ \exists c\ \ f(x) =\frac 12 f''(c) x(1-x) 
+c
+f'
+f
+0
+0<x<1
+ g(u) := f(u) + A_xu(1-u)\\ g(x) = 0\Leftarrow A_x = - \frac{f(x)}{x(1-x)} 
+g(1)=g(x) = g(0)
+ \exists c \ \ 0=g''(c) = f''(c)  - \frac{f(x)}{x(1-x)}(-2)\\ f(x) = -\frac 12 x(1-x)f''(c) 

@@ -1,0 +1,20 @@
+i
+n
+\mathbf{p}\in[0,1]^n
+h_i(\mathbf{p})
+D_i
+n
+D_i\in[0,1]^n
+[0,1]^n
+D_i
+i\in\{1,2,...,n\})
+p_i=h_i(\mathbf{p})
+p_i\in[0,1]
+h_i(\mathbf{p})=\frac{1}{1+D_i\mathbf{p}}
+\mathbf{p}=[h_1(\mathbf{p}),h_2(\mathbf{p}),\cdots,h_n(\mathbf{p})]^n
+Jh(\mathbf{p})
+\infty
+Jh(\mathbf{p})=\left[ \begin{array}{cccc} \frac{\partial h_1(\mathbf{p})}{\partial p_1} & \frac{\partial h_1(\mathbf{p})}{\partial p_2} & \cdots & \frac{\partial h_1(\mathbf{p})}{\partial p_n} \\ \frac{\partial h_2(\mathbf{p})}{\partial p_1} & \frac{\partial h_2(\mathbf{p})}{\partial p_2} & \cdots & \frac{\partial h_2(\mathbf{p})}{\partial p_n} \\ \vdots & \vdots & \ddots & \vdots\\ \frac{\partial h_n(\mathbf{p})}{\partial p_1} & \frac{\partial h_n(\mathbf{p})}{\partial p_2} & \cdots & \frac{\partial h_n(\mathbf{p})}{\partial p_n} \end{array} \right]
+\frac{\partial h_i(\mathbf{p})}{\partial p_j}=-\frac{D_{ij}}{(1+D_i\mathbf{p})^2}
+\left\|Jh(\mathbf{p})\right\|_\infty = \max_{i=1,...,n}\sum_{j=1}^n|-\frac{D_{ij}}{(1+D_i\mathbf{p})^2}|=\frac{\sum_{j=1}^ nD_{kj}}{(1+D_k\mathbf{p})^2}=\frac{D_k\mathbf{e}}{(1+D_k\mathbf{p})^2}
+\left\|Jh(\mathbf{p})\right\|_\infty < 1

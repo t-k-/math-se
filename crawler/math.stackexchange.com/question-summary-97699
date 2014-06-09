@@ -1,0 +1,51 @@
+M
+Z:\mathrm{Cob}(n)\to \mathrm{Vect}_k
+Z(\overline{M})\otimes Z(M)\to k
+\overline{M}
+M
+\alpha:Z(\overline{M})\to Z(M)^\vee
+^\vee
+M\coprod\overline{M}\to\emptyset
+M\times[0,1]
+\beta:Z(M)^\vee\to Z(M)^\vee\otimes Z(M)\otimes Z(\overline{M})\to Z(\overline{M})
+\emptyset\to M\coprod\overline{M}
+k\to Z(M)\otimes Z(\overline{M})
+Z(M)
+\beta
+\alpha
+V=Z(M)
+V'=Z(\overline{M})
+V^\vee=Hom(V,k)
+V
+V'
+V^\vee
+\mathrm{Cob}(M)
+e:M\coprod\overline{M}\to\emptyset
+c:\emptyset\to\overline{M}\coprod M
+1_M:M\to M\coprod\overline{M}\coprod M\to M
+1_\overline{M}:\overline{M}\to \overline{M}\coprod M\coprod \overline{M}\to \overline{M}
+c
+e
+\mathrm{Vect}_k
+c
+e
+e:V\otimes V'\to k
+c:k\to V\otimes V'
+1_V:V\to V\otimes V'\otimes V\to V
+1_{V'}:V'\to V'\otimes V\otimes V'\to V'
+eval
+coev
+V
+e
+V\otimes V'
+\alpha:V'\to V^\vee
+v'\mapsto e(-,v')
+\beta=(1_{V^\vee}\otimes c)\circ (eval\otimes 1_{V'}):V^\vee\to V^\vee\otimes V\otimes V'\to V'.
+\beta\circ\alpha=1_{V'}
+\alpha\circ\beta=1_{V^\vee}
+V'\overset{\alpha}\longrightarrow V^\vee\overset{1_{V^\vee}\otimes c}\longrightarrow V^\vee\otimes V\otimes V'\overset{eval\otimes 1_{V'}}\longrightarrow V'
+\downarrow ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\uparrow_{\alpha\otimes 1_{V}\otimes 1_{V'}}~~~~~\uparrow
+\searrow\overset{1_{V'}\otimes c}\longrightarrow\longrightarrow V'\otimes V\otimes V'\overset{e\otimes 1_{V'}}\longrightarrow\nearrow
+V^\vee\overset{1_{V^\vee}\otimes c}\longrightarrow V^\vee\otimes V\otimes V'\overset{eval\otimes 1_{V'}}\longrightarrow V'\overset{\alpha}\longrightarrow V^\vee
+\downarrow ~~~~~~~~~~~~~~~~~~~~~~\downarrow_{1_{V^\vee}\otimes 1_{V}\otimes\alpha}~~~~~~~~~~~~~~\uparrow
+\searrow\overset{1_{V^\vee}\otimes coev}\longrightarrow V^\vee\otimes V\otimes V^\vee\overset{eval\otimes 1_{V^\vee}}\longrightarrow\nearrow

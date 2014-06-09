@@ -1,0 +1,16 @@
+A\in\mathbb{K}^{n\times n}
+\mathbb{K}\in\{\mathbb{R},\mathbb{C}\}
+\chi_A(\lambda) := \text{det}(A-\lambda I_n) = \sum_{k=0}^n c_k \lambda^k
+c_n = (-1)^n,\;\;\;\;c_{n-1}=(-1)^{n-1}\text{tr}A,\;\;\;\;c_0 = \text{det}A
+A
+\text{tr}A := \sum_{k=1}^n a_{kk}
+A:=\begin{bmatrix}a&0&0\\0&b&0\\0&0&c\end{bmatrix}
+\chi_A^{Hand}(\lambda) = -\lambda^3+\lambda^2 (a+b+c)-\lambda (a+b+c) +abc
+\chi_A^{Mathematica}(\lambda)=a b c-a b \lambda -a c \lambda -b c \lambda +a \lambda ^2+b \lambda ^2+c \lambda ^2-\lambda ^3
+n=3
+c_3=(-1)^3=-1
+c_2 = (-1)^2 tr(A) = a+b+c
+c_0 = det(A) = a b c
+c_1
+c_1 = -c_2
+\lambda^1 = \lambda^{n-2}

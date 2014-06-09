@@ -1,0 +1,39 @@
+\text{(2.1)}
+\boldsymbol{z}_t=(x_{t1},x_{t2},\ldots,x_{tq})'
+\boldsymbol{\beta}=(\beta_1,\beta_2,\ldots,\beta_q)'
+'
+\text{(2.1)}
+w_t\sim \text{iid}\,\,\text{N}(0,\sigma_w^2)
+\boldsymbol{\beta}
+\beta_1,\beta_2,\ldots,\beta_q
+Q
+\boldsymbol{\beta}
+\text{(2.3)}
+\boldsymbol{\beta}
+Z\,=\,[\boldsymbol{z}_1|\boldsymbol{z}_2|\cdots|\boldsymbol{z}_n]'
+n\times q
+n
+n\times 1
+\boldsymbol{x}\,=\,(x_1,x_2,\ldots,x_n)'
+n\times 1
+x_t=\boldsymbol{\beta'}\boldsymbol{z}_t+w_t.\tag{2.2}
+Q=\sum_{t=1}^nw_t^2=\sum_{t=1}^n(x_t-\boldsymbol{\beta'}\boldsymbol{z}_t)^2,\tag{2.3}
+\left(\sum_{t=1}^n\boldsymbol{z}_t\boldsymbol{z}'_t\right)\widehat{\boldsymbol{\beta}}=\sum_{t=1}^n\boldsymbol{z}_tx_t.\tag{2.4}
+\text{(2.4)}
+Z'Z
+\text{(2.3)}
+SSE
+E(\widehat{\boldsymbol{\beta}})=\boldsymbol{\beta}
+(Z'Z)\widehat{\boldsymbol{\beta}}=Z'\boldsymbol{x}\tag{2.6}
+\widehat{\boldsymbol{\beta}}=(Z'Z)^{-1}Z'\boldsymbol{x}\tag{2.7}
+\begin{align} SSE&=\sum_{t=1}^n(x_t-\widehat{\boldsymbol{\beta}}'\boldsymbol{z}_t)^2\\ &=(\boldsymbol{x}-Z\widehat{\boldsymbol{\beta}})'(\boldsymbol{x}-Z\widehat{\boldsymbol{\beta}})\\ &=\boldsymbol{x}'\boldsymbol{x}-\widehat{\boldsymbol{\beta}}'Z'\boldsymbol{x}\\ &=\boldsymbol{x}'\boldsymbol{x}-\boldsymbol{x}'Z(Z'Z)^{-1}Z'\boldsymbol{x},\\ \end{align}\tag{2.8}
+w_t
+\widehat{\boldsymbol{\beta}}
+\boldsymbol{\beta}
+\color{red}{\boxed{\displaystyle\color{black}{\text{cov}(\widehat{\boldsymbol{\beta}})=\sigma_w^2\left(\sum_{t=1}^n\boldsymbol{z}_t\boldsymbol{z}'_t\right)^{-1}=\sigma_w^2(Z'Z)^{-1}=\sigma_w^2C,}}}\tag{2.9}
+C=(Z'Z)^{-1}\tag{2.10}
+z
+1\times n
+z^t
+n\times 1
+(1\cdot n)\times (n\cdot 1)= n\times n

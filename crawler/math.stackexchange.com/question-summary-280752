@@ -1,0 +1,18 @@
+t\in[t_0,\infty)
+x(t_f)=x_f
+t\in(-\infty,t_f]
+ \dot{x}(t) = Ax(t) + Bu(t), \; x(t_0)=x_0. 
+ x(t) = e^{A(t-t_0)}x_0 + \int_{t_0}^t e^{A(t-\sigma)}Bu(\sigma)d\sigma. 
+u
+(a,b)
+\mathbb R
+t_0\in (a,b)
+ \dot{x}(t) = Ax(t) + Bu(t), \; x(t_0)=x_0. 
+ x(t) = e^{A(t-t_0)}x_0 + \int_{t_0}^t e^{A(t_0-s)}Bu(s)ds. 
+t\in (a,b)
+t\geq t_0
+x'-Ax=Bu(t)
+e^{(t_0-t)A}
+e^{(t_0-t)A}(x'-Ax)=e^{(t_0-t)A}Bu(t)\implies \dfrac{d}{dt}e^{(t_0-t)A}x=e^{(t_0-t)A}Bu(t)
+\int_{t_0}^{t}\dfrac{d}{ds}e^{(t_0-s)A}xds=\int_{t_0}^te^{(t_0-s)A}Bu(s)ds
+ x(t) = e^{A(t-t_0)}x_0 + \int_{t_0}^t e^{A(t_0-s)}Bu(s)ds. 

@@ -1,0 +1,19 @@
+f(x_1,x_2,...,x_n)=(x_1x_2···x_n)^2
+\lVert(x_1,x_2,...,x_n)\rVert_2=r
+(r^2/n)^n
+F(x_1,x_2,...,x_n,\lambda)=(x_1x_2···x_n)^2+\lambda(\sqrt{\sum_{i=1}^nx_i^2}-r)
+ D_1F(x_1,x_2,...,x_n,\lambda)=2(x_1x_2···x_n)(x_2x_3···x_n)+\frac{\lambda x_1}{\sqrt{\sum_{i=1}^nx_i^2}}=0 
+ ... 
+ D_jF(x_1,x_2,...,x_n,\lambda)=2(x_1x_2···x_n)(x_1x_2···x_{j-1}x_{j+1}···x_n)+\frac{\lambda x_j}{\sqrt{\sum_{i=1}^nx_i^2}}=0 
+ ... 
+ D_nF(x_1,x_2,...,x_n,\lambda)=2(x_1x_2···x_n)(x_1x_2···x_{n-1})+\frac{\lambda x_n}{\sqrt{\sum_{i=1}^nx_i^2}}=0 
+ D_{n+1}F(x_1,x_2,...,x_n,\lambda)=\sqrt{\sum_{i=1}^n}x_i^2-r=0 
+x_i
+2^n
+ (x_1,x_2,...,x_n)=(\pm\frac{r}{\sqrt{n}},\pm\frac{r}{\sqrt{n}},...\pm\frac{r}{\sqrt{n}}) 
+r
+x_1···x_n
+x_i
+x_1=x_2=\ldots=x_n := x
+x
+(r^2/n)^n

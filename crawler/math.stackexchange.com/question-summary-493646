@@ -1,0 +1,18 @@
+k
+Availability~of~the~components~\geq~Desired~availability
+(1-k)
+n
+(1-k)^n
+1 - (1-k)^n \geq S
+\Rightarrow n \leq \frac{log(1-S)}{log(1-k)}
+\log(1-k) < 0
+k
+\log(1-k)
+\begin{align} 1 - (1-k)^n \ge& S\\ 1 - S \ge& (1-k)^n\\ \log(1-S) \ge& \log\left[(1-k)^n\right]\\ \log(1-S) \ge& n\log(1-k)\\ \frac{\log(1-S)}{\log(1-k)} \le& n\\ n \ge& \frac{\log(1-S)}{\log(1-k)} \end{align}
+S=.999
+k=.8
+n \ge 4.29
+n=4
+S=.9984
+n=5
+S=.99968\ge.999

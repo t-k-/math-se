@@ -1,0 +1,18 @@
+ r_t = \mu + \epsilon_t + \theta \epsilon_{t+1} ; \epsilon \text{ ~ i.i.d.} (0,{\sigma}^2 )
+ \mathbf{r} = \sum_{j=i}^k r_{t+j} 
+ cov(r_{t+i}, r_{t+j}) = \begin{cases}  (1+\theta^2)\cdot \sigma^2 \text { where } i=j; \\ \theta \cdot \sigma^2 \text { where } |i-j| = 1; \\ 0 \forall i,j \text { where } |i-j| > 1. \\  \end {cases} 
+cov(r_{t+i}, r_{t+j})
+var(r_{t+i})
+var(r_{t+j})
+ \begin{align} Var(\mathbf{r}) & = k \cdot var(r_t) + 2\cdot (k-1)\cdot cov(r_t, r_{t-1}) \\ & = k\cdot \sigma^2 + 2\cdot (k-1)\cdot \theta \cdot \sigma^2 \\ \end{align}
+ Var(\mathbf{r}) = k \cdot var(r_t) + 2\cdot (k-1)\cdot cov(r_t, r_{t-1}) + \mathbf m\cdot (k-\mathbf n) \cdot cov(r_t, r_{t-2}) 
+ cov(r_t, r_{t-i}) 
+MA(q)
+ r_t(q) = u_t + \theta_1u_{t-1} +...+ \theta_qu_{t-q}
+R_t(q,k) = \sum_{i=0}^{k}r_{t-i}
+k=q
+R_t(q,q)
+\begin{align} u_t + \theta_1&u_{t-1} +\theta_2u_{t-2}+...+ \theta_qu_{t-q} \\  +  &u_{t-1} +\theta_3u_{t-2}+...+ \theta_{q-1}u_{t-q} +\theta_{q}u_{t-q-1} \\ &+\qquad \;\;\;\;\,u_{t-2}+...+ \theta_{q-2}u_{t-q} +\theta_{q-1}u_{t-q-1} +  \theta_{q}u_{t-q-2}\\ +... \end{align} 
+R_t(q,q)= u_t + (1+\theta_{1})u_{t-1} +...+(1+\theta_{1} +...+\theta{q})u_{t-q}
++(\theta_1+...+\theta_q)u_{t-q-1} + (\theta_2+...+\theta_q)u_{t-q-2} +...+\theta_qu_{t-q-q}
+\Rightarrow \text {Var}(R_t;q,q)= \sigma^2\left\{1+\sum_{i=1}^{q}\left[\left(\sum_{j=0}^{i}\theta_{j}\right)^2 + \left(\sum_{j=i}^{q}\theta_{j}\right)^2\right]\right\} \qquad \theta_0=1

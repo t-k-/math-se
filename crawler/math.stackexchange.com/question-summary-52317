@@ -1,0 +1,40 @@
+X, Y
+[0,1]
+E\{Z|Z\leq 1\}= ?
+Z = \left\{ \begin{aligned} X+Y \quad&\text{ if }  X>\frac{1}{2} \\ \frac{1}{2} + Y \quad & \text{ if } X\leq\frac{1}{2} \end{aligned} \right.
+\displaystyle \int_0^1 E\{Z|Z = z\} P\{Z = z\}dz
+5/8
+x \in (1/2,1]
+{\rm P}(Z \leq x)
+x \in (1/2,1]
+X
+ F_{Z|Z \leq 1}(x) = {\rm P}(Z \leq x | Z \leq 1) = \frac{{{\rm P}(Z \le x)}}{{{\rm P}(Z \le 1)}}, 
+ f_{Z|Z \leq 1}(x) = \frac{{\rm d}}{{{\rm d}x}}F_{Z|Z \le 1} (x) = \frac{1}{{{\rm P}(Z \le 1)}}\frac{{\rm d}}{{{\rm d}x}}{\rm P}(Z \le x). 
+ {\rm E}[Z|Z \le 1] = \int_{1/2}^1 {xf_{Z|Z \le 1} (x)\,{\rm d}x} . 
+ {\rm E}[Z|Z \le 1] = 7/9. 
+x \in (1/2,1]
+Z
+X
+Y
+ {\rm P}(Z \leq x) = \int_0^{1/2} {{\rm P}(Z \le x|X = s)\,{\rm d}s}  + \int_{1/2}^1 {{\rm P}(Z \le x|X = s)\,{\rm d}s} . 
+ {\rm P}(Z \leq x) = \int_0^{1/2} {{\rm P}( Y \le x - 1/2)\,{\rm d}s}  + \int_{1/2}^1 {{\rm P}(Y \le x - s)\,{\rm d}s} . 
+ \int_0^{1/2} {{\rm P}( Y \le x - 1/2)\,{\rm d}s} = \frac{1}{2}{\rm P}(Y \le x - 1/2) = \frac{{x - 1/2}}{2} = \frac{x}{2} - \frac{1}{4} 
+ \int_{1/2}^1 {{\rm P}(Y \le x - s)\,{\rm d}s} = \int_{1/2}^x {{\rm P}(Y \le x - s)\,{\rm d}s}  = \int_{1/2}^x {(x - s)\,{\rm d}s}  = \frac{{x^2 }}{2} - \frac{x}{2} + \frac{1}{8}. 
+ {\rm P}(Z \leq x) = \bigg(\frac{x}{2} - \frac{1}{4}\bigg) + \bigg(\frac{{x^2 }}{2} - \frac{x}{2} + \frac{1}{8}\bigg) = \frac{{x^2 }}{2} - \frac{1}{8}. 
+ {\rm P}(Z \leq 1) = \frac{3}{8}. 
+ F_{Z|Z \leq 1}(x) = \frac{8}{3}\bigg(\frac{{x^2 }}{2} - \frac{1}{8}\bigg) = \frac{{4x^2  - 1}}{3}, 
+ f_{Z|Z \leq 1}(x) = \frac{{8x}}{3}. 
+ {\rm E}[Z|Z \le 1] = \int_{1/2}^1 {xf_{Z|Z \le 1} (x)\,{\rm d}x} = \frac{8}{3}\int_{1/2}^1 {x^2 \,{\rm d}x}  = \frac{8}{3}\bigg(\frac{{1 - 1/8}}{3}\bigg) = \frac{7}{9}. 
+(x,y)
+dP={\rm d}(x,y)
+Z
+{1\over 2}+y
+L
+x+y
+R
+Z\leq 1
+L
+R
+P(Z\leq 1)={3\over8}
+E:=E[Z\ |\ Z\leq 1]
+E=\left(\int_0^{1/2}\int_0^{1/2}\bigl({1\over2}+y\bigr)dy dx + \int_{1/2}^1\int_0^{1-x}(x+y)dy dx\right)\Bigg/{3\over8} ={{3\over16}+{5\over48}\over{3\over8}}={7\over9}\ .

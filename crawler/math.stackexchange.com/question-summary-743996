@@ -1,0 +1,19 @@
+\text{bin}
+p
+\text{bin}(p) = 0
+\text{bin}(\neg \phi) = \text{bin} (\phi)
+\text{bin}(\phi \wedge \psi) = \text{bin}(\phi) + \text{bin}(\psi) + 1
+\text{bin}(\phi \vee \psi) = \text{bin}(\phi) + \text{bin}(\psi) + 1
+\text{bin}(\phi \rightarrow \psi) = \text{bin}(\phi) + \text{bin}(\psi) + 1
+\text{bin}(\phi \leftrightarrow \psi) = \text{bin}(\phi) + \text{bin}(\psi) + 1
+S
+S(p) = \emptyset
+S(\neg \phi) = S(\phi)
+S(\phi \square \psi) = S(\phi) \cup S(\psi) \cup \{\phi, \psi\}
+\square
+\wedge, \vee, \rightarrow or\leftrightarrow
+\left|S(\phi)\right|\leq 2\text{bin}\left(\phi\right)
+\left|S(\psi)\right|\leq 2\text{bin}\left(\psi\right)
+\square
+\left|S\left(\phi \square \psi\right)\right|\leq 2\text{bin}\left(\phi \square \psi\right)
+\begin{align}  \left|S\left(\phi \square \psi\right)\right|&=\left|S(\phi)+S(\psi)+\{\phi, \psi\}\right| &\text{Definition of }S\\ &\leq  \left|S(\phi)\right|+\left|S(\psi)\right|+\left|\{\phi, \psi\}\right| &\text{Inclusion Exclusion Principle}\\ &\leq 2\text{bin}\left(\phi\right)+2\text{bin}\left(\psi\right)+2 &\text{Inductive Hypothesis}\\ &=2\left(\text{bin}\left(\phi\right)+\text{bin}\left(\psi\right)+1\right) &\text{Distributitivy of} + \text{over}\cdot\\ &=2\left(\text{bin}\left(\phi \square \psi\right)\right)&\text{Part 1}. \end{align}

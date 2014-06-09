@@ -1,0 +1,13 @@
+\lim_{n\to\infty} \int_0^1 \frac{e^{\displaystyle x^{n}}}{1+x^2}\,\mathrm{d}x
+n
+[0,1-\epsilon]
+[\epsilon,1]
+\epsilon
+n
+{1 \over 1 + x^2}
+ \lim_{n\to\infty}\int_0^1 \frac{e^{\displaystyle x^{n}}}{1+x^2}\,\mathrm{d}x = \int_0^1 \lim_{n\to\infty}\frac{e^{\displaystyle x^{n}}}{1+x^2}\,\mathrm{d}x
+= \int_0^1 \frac{\lim_{n\to\infty}e^{\displaystyle x^{n}}}{1+x^2}\,\mathrm{d}x
+= \int_0^1 \frac{e^{\displaystyle \lim_{n\to\infty}x^{n}}}{1+x^2}\,\mathrm{d}x
+= \int_0^1 \frac{e^{\displaystyle 0}}{1+x^2}\,\mathrm{d}x
+= \int_0^1 \frac{1}{1+x^2}\,\mathrm{d}x
+ = {\pi \over 4}

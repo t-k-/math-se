@@ -1,0 +1,45 @@
+V
+n \times n
+W
+A
+W
+2 \times 2
+W
+n-1
+n \times n
+ A=\left( {\begin{array}{*{20}{c}}    2 & 0 & 1  \\    0 & { - 1} & 0  \\    0 & 0 & { - 1}  \\ \end{array}} \right) \in M_3 
+a_{1,3} \ne 0
+trace(A)=0
+n=2
+\begin{align} M_2 &=\left\{  \left( {\begin{array}{*{20}{c}}    a & b  \\    c & d  \\ \end{array}} \right) | a,b,c,d \in \mathbb{R},a+d=0   \right\} \\ &=\left\{  \left( {\begin{array}{*{20}{c}}    a & b  \\    c & {-a}  \\ \end{array}} \right) | a,b,c \in \mathbb{R}   \right\} \\ &=\left\{ a \left( {\begin{array}{*{20}{c}}    1 & 0  \\    0 & {-1}  \\ \end{array}} \right) + b\left( {\begin{array}{*{20}{c}}    0 & 1  \\    0 & 0  \\ \end{array}} \right)+ c\left( {\begin{array}{*{20}{c}}    0 & 0  \\    1 & 0  \\ \end{array}} \right)| a,b,c \in \mathbb{R}   \right\}   \end{align}
+M_2
+B=\left\langle   \left( {\begin{array}{*{20}{c}}    1 & 0  \\    0 & {-1}  \\ \end{array}} \right), \left( {\begin{array}{*{20}{c}}    0 & 1  \\    0 & 0  \\ \end{array}} \right), \left( {\begin{array}{*{20}{c}}    0 & 0  \\    1 & 0  \\ \end{array}} \right)    \right\rangle.
+dim(M_2)=3=2*2-1
+n \in \mathbb{N}
+\begin{align} M_n &=\left\{  \left( {\begin{array}{*{20}{c}}    {{a_{1,1}}} &  \cdots  & {{a_{1,n}}}  \\     \vdots  &  \ddots  &  \vdots   \\    {{a_{n,1}}} &  \cdots  & {{a_{n,n}}}  \\ \end{array}} \right) | \sum\limits_{j=1}^{n}{a_{j,j}}=0  \right\} \\ &=\left\{  \left( {\begin{array}{*{20}{c}}    {{a_{1,1}}} &  \cdots  & {{a_{1,n}}}  \\     \vdots  &  \ddots  &  \vdots   \\    {{a_{n,1}}} &  \cdots  & {{a_{n,n}}}  \\ \end{array}} \right) | a_{n,n}=-\sum\limits_{j=1}^{n-1}{a_{j,j}}  \right\} \\ &=\left\{  \left( {\begin{array}{*{20}{c}}    {{a_{1,1}}} &  \cdots  & {{a_{1,n}}}  \\     \vdots  &  \ddots  &  \vdots   \\    {{a_{n,1}}} &  \cdots  & {{\sum\limits_{j=1}^{n-1}{-a_{j,j}}}}  \\ \end{array}} \right)  \right\} \\ &=\left\{ {{a_{1,1}}\left( {\begin{array}{*{20}{c}}    1 & 0 &  \cdots  & 0  \\    0 &  \vdots  &  \vdots  &  \vdots   \\     \vdots  &  \vdots  &  \vdots  & 0  \\    0 &  \ldots  & 0 & { - 1}  \\ \end{array}} \right) + {a_{1,2}}\left( {\begin{array}{*{20}{c}}    0 & 1 & 0 & 0  \\    0 & 0 &  \vdots  &  \vdots   \\     \vdots  &  \vdots  &  \vdots  & 0  \\    0 &  \ldots  & 0 & { - 1}  \\ \end{array}} \right) +  \cdots  + {a_{n,n - 1}}\left( {\begin{array}{*{20}{c}}    0 & 0 &  \cdots  & 0  \\    0 &  \vdots  &  \vdots  &  \vdots   \\     \vdots  &  \vdots  & 0 & 0  \\    0 &  \vdots  & 1 & { - 1}  \\ \end{array}} \right)} \right\} \end{align} 
+M_n
+B={\left\langle {\left( {\begin{array}{*{20}{c}}    1 & 0 &  \cdots  & 0  \\    0 &  \vdots  &  \vdots  &  \vdots   \\     \vdots  &  \vdots  &  \vdots  & 0  \\    0 &  \ldots  & 0 & { - 1}  \\ \end{array}} \right),\left( {\begin{array}{*{20}{c}}    0 & 1 & 0 & 0  \\    0 & 0 &  \vdots  &  \vdots   \\     \vdots  &  \vdots  &  \vdots  & 0  \\    0 &  \ldots  & 0 & { - 1}  \\ \end{array}} \right), \cdots ,\left( {\begin{array}{*{20}{c}}    0 & 0 &  \cdots  & 0  \\    0 &  \vdots  &  \vdots  &  \vdots   \\     \vdots  &  \vdots  & 0 & 0  \\    0 &  \vdots  & 1 & { - 1}  \\ \end{array}} \right)} \right\rangle } 
+dim(M_n)=n^2 -1
+V
+(n\times n)
+n^2
+V
+E_{ik}
+\>(1\leq i\leq n, \ 1\leq k\leq n)
+(i,k)
+W\subset V
+U
+D
+W=U\oplus D
+U
+n^2-n
+U
+E_{ik}
+i\ne k
+{\rm diag}(d_1,d_2,\ldots, d_n)\in D
+\sum_{i=1}^n d_i=0
+(n-1)
+D
+F_i:=E_{ii}-E_{nn}\qquad(1\leq i\leq n-1)
+W
+n^2-1

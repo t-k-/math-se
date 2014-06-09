@@ -1,0 +1,27 @@
+A(t) \in C[t_0, +\infty)
+\frac{dx}{dt}=A(t)x,(1)
+\int_{t_0}^{\infty} \|A(t_1)+A^T(t_1)\|< +\infty
+[t_0, \infty)
+\dot x = \frac{dx}{dt} = A(t)x \tag{1}
+x
+\langle x,\dot x \rangle = \langle x, A(t)x \rangle, \tag{2}
+\frac{d}{dt}\langle x, x \rangle = \langle \dot x, x \rangle +  \langle x,  \dot x \rangle = \langle x,\dot x \rangle +  \langle x,  \dot x \rangle = 2 \langle x,  \dot x \rangle \tag{3}
+\frac{d}{dt}\langle x, x \rangle = 2\langle x, A(t)x \rangle, \tag{4}
+\frac{d}{dt}\langle x, x \rangle = 2\langle x, A(t)x \rangle = \langle A(t)x, x \rangle + \langle x, A(t)x \rangle
+= \langle x,  A^T(t)x \rangle + \langle x, A(t)x \rangle = \langle x, (A^T(t) + A(t))x \rangle, \tag{5}
+\frac{d}{dt}\langle x, x \rangle = \langle x, (A^T(t) + A(t))x \rangle
+\le \Vert x \Vert \Vert (A^T(t) + A(t))x \Vert \le \Vert (A^T(t) + A(t)) \Vert \Vert x \Vert^2, \tag{6}
+\frac{d}{dt}\langle x, x \rangle = \frac{d}{dt}\Vert x \Vert^2 \tag{7}
+\frac{d}{dt}\Vert x \Vert^2 \le \Vert (A^T(t + A(t)) \Vert \Vert x \Vert^2, \tag{8}
+\frac{d}{dt} \ln (\Vert x \Vert^2) \le  \Vert (A^T(t)+ A(t)) \Vert, \tag{9}
+\ln (\Vert x(t) \Vert^2) - \ln (\Vert x(t_0) \Vert^2) \le \int_{t_0}^t \Vert (A^T(s)+ A(s)) \Vert ds, \tag{10}
+2\ln (\frac{\Vert x(t) \Vert}{\Vert x(t_0) \Vert}) \le \int_{t_0}^t \Vert (A^T(s)+ A(s)) \Vert ds, \tag{10}
+\Vert x(t) \Vert \le \Vert x(t_0) \Vert \exp(\frac{1}{2}\int_{t_0}^t \Vert (A^T(s)+ A(s)) \Vert ds), \tag{11}
+t \to \infty
+x(t)
+\to
+\dfrac{d}{dt} \mathrm{\left ( x^Tx \right)}=\mathrm{ x^T \dot{x}}+\mathrm{\dot{x}^Tx}=\mathrm{x^T(A+A^T)x} \implies \dfrac{d}{dt}\left ( \|x(t)\|^2 \right )=x^T(t)\left [ A(t)+A^T(t) \right ]x(t)
+\left [ t_0 , t \right ]
+\|x(t)\|^2 =\|x(t_0)\|^2 +\int_{t_0}^{t}x^T(s)\left [ A(s)+A^T(s) \right ]x(s)\mathrm{d}s
+\|x(t)\|^2 \le \|x(t_0)\|^2 +\int_{t_0}^{t}\|x^T(s)\|\left  \|A(s)+A^T(s) \right \| \|x(s)\| \mathrm{d}s  
+= \|x(t_0)\|^2 +\int_{t_0}^{t}\left  \|A(s)+A^T(s) \right \| \|x(s)\|^2\mathrm{d}s

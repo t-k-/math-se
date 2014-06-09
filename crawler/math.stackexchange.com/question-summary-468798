@@ -1,0 +1,21 @@
+X
+\mathbb{N}
+p_{ij}=\begin{cases}1\mbox{ for }i=j=0\\e^{-i}\frac{i^{j}}{j!} \mbox{ otherwise }\end{cases}.
+0
+i
+\sum_{n=1}^{\infty}\mathbb{P}(X_{n}=i|X_{0}=i)=\infty.
+\sum_{n=1}^{\infty}\sum_{k_1}\ldots\sum_{k_n}p_{k_{1}i}p_{k_{2}k_{1}}\ldots p_{ik_{n}}=\sum_{n=1}^{\infty}\sum_{k_1}\ldots\sum_{k_n}e^{-k_1}\frac{k_{1}^{i}}{i!}e^{-k_2}\frac{k_{2}^{k_1}}{k_{1}!}\ldots e^{-i}\frac{i^{k_n}}{k_{n}!}.
+i\geqslant1
+N_i=\sum\limits_{n=1}^{+\infty}\mathbf 1_{X_n=i}
+i
+P[\ \mid X_0=i]
+i\geqslant1
+s(i)=\sum\limits_{n}P[X_n=i\mid X_0=i]
+s(i)=E_i[N_i]
+s(i)=1/P[T_i=\infty\mid X_0=i]
+s(i)=1/(1-u_i)
+u_k=P[T_i\lt\infty\mid X_0=k]
+u_0=0
+k\ne i
+u_k=\mathrm e^{-k}\frac{k^i}{i!}+\mathrm e^{-k}\sum\limits_{n\ne i}\frac{k^n}{n!}u_n
+s(i)

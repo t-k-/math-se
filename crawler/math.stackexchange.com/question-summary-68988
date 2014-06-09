@@ -1,0 +1,36 @@
+\begin{align*}x&=f(t)\\y&=g(t)\end{align*}
+\begin{align*}\frac{\mathrm dy}{\mathrm dx}&=\frac{g^\prime (t)}{f^\prime (t)}\\\frac{\mathrm d^2 y}{\mathrm dx^2}&=\frac{f^\prime (t)g^{\prime\prime} (t)-g^\prime (t)f^{\prime\prime} (t)}{f^\prime (t)^3}\end{align*}
+\frac{\mathrm d^3 y}{\mathrm dx^3}=\frac{f'(t) \left(g^{(3)}(t) f'(t)-3 f''(t) g''(t)\right)+g'(t) \left(3 f''(t)^2-f^{(3)}(t)f'(t)\right)}{f'(t)^5}
+f'(t)^{2n-1}
+n
+\dfrac{\mathrm d^n y}{\mathrm dx^n}
+f(t),g(t)
+B_{nk}
+1 \leq k \leq n+1
+n \geq 1
+B_{n0} = B_{n,n+1} = 0
+B_{11} = 1/f'
+\frac{d^n y}{dx^n} = \sum_{k=1}^n B_{nk}(t) g^{(k)}(t),
+B_{n+1,k} = \frac{1}{f'} \left( B'_{nk} + B_{n,k-1} \right),
+\frac{d^n y}{dx^n} = \frac{1}{(f')^{n(n+1)/2}} \begin{vmatrix} \dfrac{d}{dt} \dfrac{f}{1!} & \dfrac{d}{dt} \dfrac{f^2}{2!} & \cdots & \dfrac{d}{dt} \dfrac{f^{n-1}}{(n-1)!} & \dfrac{dg}{dt} \\ \dfrac{d^2}{dt^2} \dfrac{f}{1!} & \dfrac{d^2}{dt^2} \dfrac{f^2}{2!} & \cdots & \dfrac{d^2}{dt^2} \dfrac{f^{n-1}}{(n-1)!} & \dfrac{d^2g}{dt^2} \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ \dfrac{d^n}{dt^n} \dfrac{f}{1!} & \dfrac{d^n}{dt^n} \dfrac{f^2}{2!} & \cdots & \dfrac{d^n}{dt^n} \dfrac{f^{n-1}}{(n-1)!} & \dfrac{d^ng}{dt^n} \end{vmatrix},
+a_{jk}(n) = (j-k+1)n - j
+1 \leq k \leq \min\{j,n-1\}
+1 \leq j \leq n
+\frac{d^n y}{dx^n} = \frac{1}{(f')^{2n-1}} \begin{vmatrix} a_{11}(n) \dfrac{f'}{1!} & 0 &  \cdots & 0 & \dfrac{g'}{0!} \\ a_{21}(n) \dfrac{f''}{2!} & a_{22}(n) \dfrac{f'}{1!} &  \cdots & 0 & \dfrac{g''}{1!} \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ a_{n-1,1}(n) \dfrac{f^{(n-1)}}{(n-1)!} & a_{n-1,2}(n) \dfrac{f^{(n-2)}}{(n-2)!} & \cdots & a_{n-1,n-1}(n) \dfrac{f'}{1!} & \dfrac{g^{(n-1)}}{(n-2)!} \\ a_{n1}(n) \dfrac{f^{(n)}}{n!} & a_{n2}(n) \dfrac{f^{(n-1)}}{(n-1)!} & \cdots & a_{n,n-1}(n) \dfrac{f''}{2!} & \dfrac{g^{(n)}}{(n-1)!} \end{vmatrix},
+f
+n
+\frac{d^n y}{dx^n}
+f'(t)
+f'(t)
+\frac{d^n y}{dx^n} = \left(\frac{1}{f'(t)} \frac{d}{dt}\right)^n g(t).
+f'(t)
+f'(t) = 1
+f'(t) = t
+f(t) = t^2/2
+n
+\phi_n(t) = \sum_{k=0}^n \frac{(2n-k)! t^k}{(n-k)! k! 2^{n-k}}.
+n
+D^0(g') = g'(t).)
+ \begin{align*} \frac{dy}{dx} &= \frac{g'(t)}{t} = \frac{\phi_0 (-t D(g'))}{t},  \\ \frac{d^2y}{dx^2} &= \frac{g''(t)t - g'(t)}{t^3} = -\frac{ \phi_1 (-t D(g'))}{t^3},  \\ \frac{d^3y}{dx^3} &= \frac{g'''(t)t^2 - 3g''(t)t + 3g'(t)}{t^5} = \frac{\phi_2 (-t D(g')}{t^5}, \\ \end{align*}
+     \frac{\mathrm{d}^n}{\mathrm{d} x^n} f^{-1}(x) = Y\left(\begin{array}{cc}      \frac{(n)_1}{ f^{-1}(x)} & -\frac{ f^{(2)}( f^{-1}(x)) }{ 2 \left(f^{-1}(x)\right)^2  } \\     \frac{(n)_2}{ f^{-1}(x)} & -\frac{ f^{(3)}( f^{-1}(x)) }{ 3 \left(f^{-1}(x)\right)^3  } \\      \vdots & \vdots \\     \frac{(n)_{n-1}}{ f^{-1}(x)} & -\frac{ f^{(n)}( f^{-1}(x)) }{ n \left(f^{-1}(x)\right)^n  } \end{array} \right)   \qquad \qquad \text{for} \quad n \ge 2 
+y = g(f^{-1}(x))

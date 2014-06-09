@@ -1,0 +1,28 @@
+A\in\mathbb{R}^{n\times n}
+\lambda_{1}\geq\lambda_{2}\geq\cdots\geq\lambda_{n}
+n
+\lambda_{k}=\max_{V,\,\dim\left(V\right)=k}\left\{ \min\frac{\left<x,Ax\right>}{\left<x,x\right>}\,:\, x\in V\,,\, x\neq0\right\} 
+e_1,\ldots,e_n
+V
+A
+A
+Ae_j=\lambda_je_j
+  \min\left\{\frac{\left<x,Ax\right>}{\left<x,x\right>}\,:\, x\in V\,,\, x\neq0\right\} = \min\left\{{\left<x,Ax\right>}\,:\, x\in V\,,\, \|x\|=1\right\} 
+x=\sum_{j=1}^nc_je_j
+\sum_jc_j^2=1
+x\in V
+\dim V=k
+W=\text{span}\{e_k,e_{k+1},\ldots,e_{n}\}
+\dim W=n-k+1
+V\cap W
+n+1
+V
+x\in V\cap W
+x=\sum_{j=k}^nc_je_j
+\sum c_j^2=1
+V
+V=\text{span}\{e_1,\ldots,e_k\}
+ \langle x,Ax\rangle = \left\langle \sum_{j=1}^nc_je_j,\sum_{j=1}^nc_j\lambda_je_j\right\rangle=\sum_{j=1}^n\lambda_j\,c_j^2. 
+ \langle x,Ax\rangle = \sum_{j=k}^n\lambda_jc_j^2\leq\lambda_k. 
+ \min\left\{{\left<x,Ax\right>}\,:\, x\in V\,,\, \|x\|=1\right\}\leq\lambda_k. 
+ \max_{\dim V=k}\left\{\min\left\{{\left<x,Ax\right>}\,:\, x\in V\,,\, \|x\|=1\right\}\right\}\leq\lambda_k. 

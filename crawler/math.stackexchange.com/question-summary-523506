@@ -1,0 +1,54 @@
+\phi(x)
+X
+N(\mu,\sigma^2)
+\mathbb{E}[e^{tX}f(X)]=e^{\mu t+\frac{\sigma^2 t^2}{2}}\mathbb{E}f(X+t\sigma^2)
+t
+f
+f
+\mathbb{E}[f(X)(X-\mu)]=\sigma^2\mathbb{E}[f'(X)]
+\mathbb{E}\phi(aX+b)=\phi(\frac{a\mu+b}{\sqrt{1+a^2\sigma^2}})
+\mathbb{E}
+\mathbb{E}[e^{tX}f(X)]=\int_{-\infty}^{\infty}e^{tx}f(x)p(x)dx
+p(x)
+p(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+e^{\mu t+\frac{\sigma^2 t^2}{2}}
+\int_{-\infty}^{\infty}e^{tx}p(x)dx
+f(x)
+\int_{-\infty}^{\infty}(x-\mu)f(x)p(x)dx=\sigma^2\int_{-\infty}^{\infty}f'(x)p(x)dx
+\int_{-\infty}^{\infty}\phi(ax+b)p(x)dx=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}(\int_{-\infty}^{ax+b}e^{-\frac{z^2}{2}}dz)p(x)dx=?
+ax+b=c
+N\left(0,1\right)
+U\sim N\left(0,1\right)
+X=\sigma U+\mu
+g
+u\mapsto f\left(\sigma u+\mu\right)
+f
+g'\left(u\right)=\sigma f'\left(\sigma u+\mu\right)
+X\sim N\left(\mu,\sigma^{2}\right)
+E\left[e^{tX}f\left(X\right)\right]=e^{\mu t}Ee^{\sigma tU}f\left(\sigma U+\mu\right)=e^{\mu t}Ee^{\sigma tU}g\left(U\right)=e^{\mu t}e^{\frac{\sigma^{2}t^{2}}{2}}Eg\left(U+\sigma t\right)=e^{\mu t+\frac{\sigma^{2}t^{2}}{2}}Ef\left(\sigma\left(U+t\sigma\right)+\mu\right)=e^{t\mu+\frac{1}{2}t^{2}\sigma^{2}}Ef\left(X+t\sigma^{2}\right)
+Ef\left(X\right)\left(X-\mu\right)=\sigma Ef\left(\sigma U+\mu\right)U=\sigma Eg\left(U\right)U=\sigma Eg'\left(U\right)=\sigma^{2}Ef'\left(\sigma U+\mu\right)=\sigma^{2}Ef'\left(X\right)
+E\phi\left(aX+b\right)=E\phi\left(a\sigma U+a\mu+b\right)=\phi\left(\frac{a\mu+b}{\sqrt{1+a^{2}\sigma^{2}}}\right)
+U\sim N\left(0,1\right)
+E\left[e^{tU}f\left(U\right)\right]=e^{\frac{1}{2}t^{2}}Ef\left(U+t\right)
+Ef\left(U\right)U=Ef'\left(U\right)
+E\phi\left(aU+b\right)=\phi\left(\frac{b}{\sqrt{1+a^{2}}}\right)
+\mu
+\sigma^{2}
+E\left[e^{tU}f\left(U\right)\right]=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{tu-\frac{1}{2}u^{2}}f\left(u\right)du
+v=u-t
+\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{tu-\frac{1}{2}u^{2}}f\left(u\right)du=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{tv-\frac{1}{2}\left(v+t\right)^{2}}f\left(v+t\right)dv=\frac{e^{-\frac{1}{2}t^{2}}}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{1}{2}v^{2}}f\left(v+t\right)dv=e^{-\frac{1}{2}t^{2}}E\left[f\left(U+t\right)\right]
+E\varphi\left(aU+b\right)
+P\left(V\leq aU+b\right)
+U,V\sim N\left(0,1\right)
+E\varphi\left(aU+b\right)=P\left(W\leq b\right)
+W=V-aU
+W\sim N\left(0,1+a^{2}\right)
+W'=\frac{W}{\sqrt{1+a^{2}}}\sim N\left(0,1\right)
+E\varphi\left(aU+b\right)=P\left(W\leq b\right)=P\left(W'\leq\frac{b}{\sqrt{1+a^{2}}}\right)=\varphi\left(\frac{b}{\sqrt{1+a^{2}}}\right)
+p'(x)=-\frac{x-\mu}{\sigma^2} p(x)
+ \mathbb{E}\{f(X) (X-\mu)\} = \int_{-\infty}^{\infty} (x-\mu) f(x) p(x) dx \\ 
+ \mathbb{E}\{f(X) (X-\mu)\} = -\int_{-\infty}^{\infty} \sigma^2 f(x) p'(x) dx \\ 
+ \mathbb{E}\{f(X) (X-\mu)\} = -\sigma^2 f(x) p(x) |_{-\infty}^\infty + \int_{-\infty}^{\infty} \sigma^2 f'(x) p(x) dx \\ 
+f(x)
+\infty
+ \mathbb{E}\{f(X) (X-\mu)\}=\sigma^2 \mathbb{E}\{f'(X)\} 

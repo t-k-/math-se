@@ -1,0 +1,12 @@
+F_i,i=1,2
+Q
+[0,\infty)
+\bar F_i=1-F_i
+\bar Q=1-Q
+c<C<1
+\bar Q(u^*)=C
+u\in[0,u^*] 
+\Psi_1(u) =-c\int_0^u\bar F_1(z)dz+\bigg[1-\frac{C-c}{\bar Q(u)}\bigg]\int_0^{u}\bar Q(z)\bar F_1(z)dz 
+\Psi_2(u) =-c\int_0^u\bar F_1(z)\bar F_2(z)dz+\bigg[1-\frac{C-c}{\bar Q(u)}\bigg]\int_0^{u}\bar Q(z)\bar F_1(z)\bar F_2(z)dz 
+\Psi_1(u)-\Psi_2(u)=-c\int_0^u\bar F_1(z)F_2(z)dz +\bigg[1-\frac{C-c}{\bar Q(u)}\bigg]\int_0^{u}\bar Q(z)\bar F_1(z)F_2(z)dz\\ \geqslant[\bar Q(u)-C]\int_0^{u}\bar F_1(z)F_2(z)dz\geqslant0 
+u^*_1=\arg\max_{u\in[0,u^*]}\Psi_1(u)\ge u^*_2=\arg\max_{u\in[0,u^*]}\Psi_2(u)

@@ -1,0 +1,31 @@
+ \sum_{k=0}^m\sum_{j=0}^n\alpha_k\beta_j\sum_{s=0}^{\min(j,k)}c_s(j,k)x^{k+j-2s} 
+c_s(j,k)
+\alpha_i=0
+\beta_i=0
+i
+a_i
+x^i
+k+j-2s=0
+s\le\min(j,k)
+k=j=s
+a_0=\sum_{i\ge 0}\alpha_i\beta_ic_i(i,i)\;.
+k+j-2s=1
+k=j+1
+s=j
+j=k+1
+s=k
+a_1=\sum_{i\ge 0}\bigg(\alpha_i\beta_{i+1}c_i(i+1,i)+\alpha_{i+1}\beta_ic_i(i,i+1)\bigg)\;.
+k+j-2s=d
+\begin{align*}k&=s,j=s+d\;;\\ k&=s+1,j=s+d-1\;;\\ k&=s+2,j=s+d-2\;;\\ &\;\vdots\\ k&=s+d,j=s\;, \end{align*}
+a_d=\sum_{s\ge 0}\sum_{i=0}^d\alpha_{s+i}\beta_{s+d-i}c_s(s+d-i,s+i)
+a_{m+n}=\sum_{s\ge 0}\sum_{i=0}^{m+n}\alpha_{s+i}\beta_{s+m+n-i}c_s(s+m+n-i,s+i)\;,
+\alpha_m\beta_nc_0(n,m)
+s=0,i=m
+\alpha
+\beta
+s+m+n
+s>0
+\alpha_{s+i}
+\beta_{s+m+n-i}
+s=0
+i\ne m

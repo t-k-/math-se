@@ -1,0 +1,12 @@
+X_1,X_2,\ldots,X_n
+f(x\mid\theta) = \theta x^{\theta-1},\quad 0\lt x \lt 1,\quad 0\lt \theta \lt \infty
+θ
+E[\theta x^{\theta-1}] = \bar X 
+\theta E[x^{\theta-1}]= \bar X
+\theta = \bar X/E[x^{\theta-1}]
+k
+\hat\theta
+(X_k)_{1\leqslant k\leqslant n}
+ E_\theta[X_k]=\int xf_\theta(x) \, \mathrm dx=\int_0^1\theta x^\theta \, \mathrm dx=\frac\theta{\theta+1}, 
+ \frac1n\sum\limits_{k=1}^nX_k=\frac{\hat\theta}{\hat\theta+1}, 
+ \hat\theta=\frac{X_1+\cdots+X_n}{n-(X_1+\cdots+X_n)}. 

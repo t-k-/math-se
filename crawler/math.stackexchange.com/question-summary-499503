@@ -1,0 +1,24 @@
+\langle -\Delta_p u, v \rangle_{(W^{1,p})', W^{1,p}} = \int_{\Omega}|\nabla u |^{p-2}\nabla u \nabla v.
+|\nabla u_1|^{p-2}\nabla u_2
+\langle-\Delta_p u_1 - \Delta_p u_2, u_1-u_2\rangle = \int(\nabla u_1 - \nabla u_2)(|\nabla u_1|^{p-2}\nabla u_1 - |\nabla u_2|^{p-2}\nabla u_2) 
+\langle Tx - Ty, x-y\rangle \geq 0.
+p \ge 2
+\def\sp#1{\left\langle#1\right\rangle}\def\abs#1{\left|#1\right|}\def\Lp{\Delta_p}\def\np#1{\abs{\nabla #1}^{p-2}}
+x\mapsto x^2
+x \mapsto x^{p-2}
+\mathbb R
+x,y\in \mathbb{R}^N
+\tag{1}|x|^{p-2}x-|y|^{p-2}y=\int_0^1\frac{d}{dt}\left(|y+t(x-y)|^{p-2}(y+t(x-y))\right)dt
+(1)
+\tag{2}|x|^{p-2}x-|y|^{p-2}y=(y-x)\int_0^1|y+t(y-x)|^{p-2}dt+\\+ (p-2)\int_0^1|y+t(y-x)^{p-4}|\langle y+t(y-x),x-y\rangle(y+t(y-x))dt
+(2)
+\tag{3}\langle |x|^{p-2}x-|y|^{p-2}y,x-y\rangle =|x-y|^2\int_0^1|y+t(y-x)|^{p-2}dt+\\ +(p-2)\int_0^1|y+t(y-x)|^{p-4}\langle y+t(y-x),x-y\rangle^2dt
+p\geq 2
+(3)
+p<2
+\int_0^1|y+t(y-x)|^{p-4}\langle y+t(y-x),x-y\rangle^2dt\leq|x-y|^2\int_0^1|y+y(y-x)|^{p-2}
+-\Delta_p
+S_+
+p\geq 2
+p<2
+\langle |x|^{p-2}x-|y|^{p-2}y,x-y\rangle \geq \left\{ \begin{array}{cc} c_p|x-y|^p  &\mbox{ if $p\geq 2$} \\  c_p\frac{|x-y|^2}{(|x|+|y|)^{2-p}}  &\mbox{if $p<2$}        \end{array} \right. 

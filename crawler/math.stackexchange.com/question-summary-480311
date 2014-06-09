@@ -1,0 +1,25 @@
+1 - 1/k^2
+s^2 = 1/(n-1)[sum(y - y(bar))^2]
+s
+s^2=\frac1{n-1}\sum_{k=1}^n\left(y_k-\bar y\right)^2\;,
+n
+y_1,y_2,\ldots,y_n
+y-\bar y
+\{1,2,\ldots,n\}
+A=\{k:|y_k-\bar y|<ks\}
+B=\{k:|y_k-\bar y|\ge ks\}
+k\in B
+(y_k-\bar y)^2=|y_k-\bar y|^2\ge k^2s^2
+\begin{align*} s^2&=\frac1{n-1}\sum_{k=1}^n\left(y_k-\bar y\right)^2\\ &=\frac1{n-1}\left(\sum_{k\in A}(y_k-\bar y)^2+\sum_{k\in B}(y_k-\bar y)^2\right)\\ &\ge\frac1{n-1}\left(\sum_{k\in A}(y_k-\bar y)^2+\sum_{k\in B}k^2s^2\right)\\ &=\frac1{n-1}\left(\sum_{k\in A}(y_k-\bar y)^2+|B|k^2s^2\right)\\ &\ge\frac{|B|k^2}{n-1}s^2\;. \end{align*}
+|B|
+B
+s^2k^2
+\frac1{k^2}\ge\frac{|B|}{n-1}\;.\tag{1}
+(\bar y-ks,\bar y+ks)
+y_k
+k\in A
+\frac{|A|}n
+(1)
+|A|+|B|=n
+(2)
+\frac{|A|}n\ge1-\frac1{k^2}\;.\tag{2}

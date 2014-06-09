@@ -1,0 +1,39 @@
+n=1
+2
+0
+3
+4
+4
+5
+0
+n
+=
+0
+3
+4
+n \in \lbrace 3,4,7,8,11,12,\ldots\rbrace
+\cos(kx)=(e^{ikx}+e^{-ikx})/2
+\begin{array}{ll} \int_0^{2\pi}\prod_{k=1}^n\cos(kx)dx & =\int_0^{2\pi} \prod_{k=1}^n \frac{e^{k i x} + e^{- k i x}}{2} dx \\  & = 2^{-n}\int_0^{2\pi} e^{-(1+2+\cdots+n) \cdot i x} \prod_{k=1}^n \left( 1 + e^{2 k i x} \right) dx  \\  & =2^{-n}\int_0^{2\pi}e^{-n(n+1)/2\cdot ix}\sum_{\sigma\in\Sigma} e^{2\sigma ix}dx \\  & =2^{-n}\sum_{\sigma\in\Sigma}\int_0^{2\pi}e^{(2\sigma -n(n+1)/2)\cdot ix}dx\end{array}
+\Sigma
+\{1,\cdots,n\}
++1
+2\sigma=n(n+1)/2
+0
+n(n+1)/4\in\Sigma
+n(n+1)/4
+\{1,\cdots,n\}
+4\mid n(n+1)\Leftrightarrow n\equiv 0,-1
+4
+n\equiv 0,-1
+4
+(1)
+n(n+1)/2
+\le2n
+n\in\{1,2\}\pmod{4}
+\dfrac{n(n+1)}{2}
+n\in\{0,3\}\pmod{4}
+\dfrac{n(n+1)}{2}
+2n
+n
+n+4
+ \frac{(n+4)(n+5)}{2}=\frac{n(n+1)}{2}+(2n+4)+(2n+6) 

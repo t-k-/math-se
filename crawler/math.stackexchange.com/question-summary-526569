@@ -1,0 +1,15 @@
+f : (0, 1] \to \mathbb{R}
+f(x) = x^a \sin(1/x^b)
+a,b
+f
+b=1
+a>b
+f
+ f'(x) = ax^{a-1}\sin(1/x^b) -bx^{a-b-1}\cos(1/x^b) 
+ \int_0^1 |f'(x)|dx \leq a\int_0^1 x^{a-1}dx + b \int_0^1 x^{a-b-1}dx < \infty 
+a\leq b
+a/b \leq 1
+f
+ 0 < x_0 < x_1 < x_2 < \ldots < x_{2N} < 1 
+ x_{2n} = (2\pi n + \pi/2)^{-1/b}, \quad\text{ and } x_{2n+1} = (2n\pi)^{-1/b} 
+ \sum_{n=1}^N |f(x_{2n+1}) - f(x_{2n})|  \geq \sum_{n=1}^N \frac{1}{(2\pi n + \pi/2)^{a/b}} 

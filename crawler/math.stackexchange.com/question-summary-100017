@@ -1,0 +1,26 @@
+m + 1
+ p_{i,j} = 0, j \leq i 
+ p_{i,j} = 1/2^{j-i}, i < j < m 
+ p_{i,j} = 1/2^{m-1-i}, j = m \quad \text{(to make the sum probabilities to 1)} 
+0
+1
+1/2
+2
+1/4
+T_{0, m}
+0
+m
+S=(s_1,\dots,s_k)
+0<s_1<\dots<s_k<m
+m
+S
+{m-1}\choose{k}
+S
+k
+k+1
+m
+2^{-(m-1)} {m-1\choose k}
+2^{-s_1} 2^{-(s_2-s_1)}\cdots 2^{-(s_k-s_{k-1})} 2^{-(m-1-s_k)} = 2^{-(m-1)}.
+ \sum_{0\le k\le m-1} 2^{-(m-1)} (k+1) {m-1\choose k} 
+= \sum_{0\le k\le m-1} 2^{-(m-1)} {m-1\choose k}+ \sum_{1\le k\le m-1} (m-1) 2^{-(m-1)} {m-2\choose k-1} 
+= \frac{m+1}{2}. 

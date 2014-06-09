@@ -1,0 +1,6 @@
+t = (x,y)
+s = (s_x,s_y)
+ M(t,s,\alpha) = \begin{bmatrix} s_x \cos(\alpha) & -s_y \sin(\alpha) & x \\ s_x \sin(\alpha) & s_y \cos(\alpha) & y \\ 0 & 0 & 1 \end{bmatrix} 
+M(t,s,\alpha) = M(t_1, s_1, \alpha_1) * M(t_2, s_2, \alpha_2)
+ M(t_1,s_1,\alpha_1) * M(t_2,s_2,\alpha_2) =  \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ 0 & 0 & 1 \end{bmatrix} 
+ \begin{align} a_{11} &= s_{1x} s_{2x} \cos(\alpha_1) \cos(\alpha_2) - s_{1y} s_{2x} \sin(\alpha_1) \sin(\alpha_2) \\ a_{12} &= -s_{1x} s_{2y} \cos(\alpha_1) \sin(\alpha_2) - s_{1y} s_{2y} \sin(\alpha_1) \cos(\alpha_2) \\ a_{13} &= s_{1x} x_2 \cos(\alpha_1) - s_{1y} y_2 \sin(\alpha_1) + x_1\\ \\ a_{21} &= s_{1x} s_{2x} \sin(\alpha_1) \cos(\alpha_2) + s_{1y} s_{2x} \cos(\alpha_1) \sin(\alpha_2) \\ a_{22} &= -s_{1x} s_{2y} \sin(\alpha_1) \sin(\alpha_2) + s_{1y} s_{2y} \cos(\alpha_1) \cos(\alpha_2) \\ a_{23} &= s_{1x} x_2 \sin(\alpha_1) + s_{1y} y_2 \cos(\alpha_1) + y_1 \end{align} 

@@ -1,0 +1,5 @@
+I=\int^\infty_0 \frac{x-1}{\ln(x)}\,e^{-x} \,dx
+x = \mathrm{e}^t
+\mathrm{d} x = \mathrm{e}^t \mathrm{d} t
+    I = \int_{-\infty}^\infty \exp( t - \mathrm{e}^t ) \frac{\mathrm{e}^t - 1}{t}  \mathrm{d} t 
+    I = \int_0^\infty \frac{x-1}{\log x} \mathrm{e}^{-x} \mathrm{d} x = \int_0^\infty \int_0^1 x^s \mathrm{e}^{-x} \mathrm{d} s \mathrm{d} x  = \int_0^1 \int_0^\infty  x^s \mathrm{e}^{-x}  \mathrm{d} x \mathrm{d} s = \int_0^1 \Gamma(1+s) \mathrm{d} s 

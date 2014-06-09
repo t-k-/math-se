@@ -1,0 +1,24 @@
+\int^R_s\frac{2r}{\sqrt{r^2-s^2}}.\frac{1}{2}(R-r)^2dr
+u = \frac{1}{2}(R-r)^2, dv = \frac{2r}{\sqrt{r^2-s^2}} 
+du = -(R-r)dr, v = 2\sqrt{r^2-s^2}
+p = r^2-s^2, dp = 2r.dr
+[uv]^R_s - \int^R_s v.du
+uv = (R-r)^2\sqrt{r^2-s^2}
+\int^R_sv.du = -2\int^R_s(R-r)\sqrt{r^2-s^2}dr = 2\int^R_sr\sqrt{r^2-s^2}dr-2R\int^R_s\sqrt{r^2-s^2}dr
+2\int^R_sr\sqrt{r^2-s^2}dr
+p = r^2-s^2, dp = 2rdr
+\int^R_s\sqrt{p.}dp
+[\frac{2u^{\frac{3}{2}}}{3}]^R_s
+[\frac{2}{3}(r^2-s^2)^{\frac{3}{2}}]^R_s
+2R\int^R_s\sqrt{r^2-s^2}dr
+r = sSecθ
+2Rs^2\int secθtan^2θdθ
+(R-r)^2
+\int_s^R dr \frac{r^k}{\sqrt{r^2-s^2}}
+k=1,2,3
+k=1
+\int_s^R dr \frac{r}{\sqrt{r^2-s^2}} = \frac12 \int_{s^2}^{R^2} \frac{du}{\sqrt{u-s^2}} = \sqrt{R^2-s^2}
+k=2
+\begin{align}\int_s^R dr \frac{r^2}{\sqrt{r^2-s^2}} &= \left [r \sqrt{r^2-s^2} \right ]_s^R - \int_s^R dr \, \sqrt{r^2-s^2}\\ &= R\sqrt{R^2-s^2} - s^2 \int_0^{\cosh^{-1}{R/s}}dt \, \sinh^2{t}\\ &= R\sqrt{R^2-s^2} -\frac12 s^2\int_0^{\cosh^{-1}{R/s}}dt \,(\cosh{2 t}-1)\\ &= \frac12 R\sqrt{R^2-s^2} + \frac12 s^2\cosh^{-1}{\frac{R}{s}}\\ &= \frac12 R\sqrt{R^2-s^2} +\frac12 s^2\log{\left (\frac{R}{s} +  \sqrt{\frac{R^2}{s^2}-1} \right )} \end{align}
+k=3
+\begin{align}\int_s^R dr \frac{r^3}{\sqrt{r^2-s^2}} &= \frac12 \int_{s^2}^{R^2} du \frac{u}{\sqrt{u-s^2}}\\ &= \frac12 \left [u \sqrt{u-s^2} \right ]_{s^2}^{R^2} - \frac12 \int_{s^2}^{R^2} du \, \sqrt{u-s^2}\\ &= \frac12 R^2\sqrt{R^2-s^2} - \frac13 \left (R^2-s^2 \right )^{3/2}\end{align}

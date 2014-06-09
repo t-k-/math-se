@@ -1,0 +1,9 @@
+0<x<1
+K(x^{-1})=x(K(x)-iK(\sqrt{1-x^2}))
+\int^{\infty}_{1}K^2(x)\frac{dx}{x}=\int^{1}_{0}K^2(x^{-1})\frac{dx}{x}\\ =\int^{1}_{0}\left(x(K(x)-iK(\sqrt{1-x^2}))\right)^2\frac{dx}{x}\\ =\int^{1}_{0}x\left(K(x)-iK(\sqrt{1-x^2})\right)^2dx\\ =\int^1_0(xK^2(x)-xK^2(\sqrt{1-x^2})-2ixK(x)K(\sqrt{1-x^2}))dx.
+\int^1_0xK^2(\sqrt{1-x^2})dx=\int^1_0yK^2(y)dy
+x\mapsto\sqrt{1-y^2}
+ \int^1_0xK(x)K(\sqrt{1-x^2})dx\stackrel?=\frac{\pi^3}{16}.
+\int^1_0x^nK(\sqrt{1-x})dx=\frac{2^{4n+1}(n!)^4}{(2n+1)!^2}
+\int^1_0x^nK(\sqrt{1-x})dx=\frac{\pi}{2}\sum_{m=0}^{\infty}\frac{(2m)!^2}{2^{4m}(m!)^4}\int^1_0x^n(1-x)^mdx\\ =\frac{\pi n!}{2}\sum_{m=0}^{\infty}\frac{(2m)!^2}{2^{4m}(m!)^3(m+n+1)!}\\ =\frac{\pi n!}{2\Gamma(n+2)}{}_2F_1(\frac12,\frac12;n+2;1)\\ =\frac{\pi n!}{2\Gamma(n+2)}\frac{\Gamma(n+2)\Gamma(n+1)}{\Gamma(n+3/2)^2}\\ =\frac{2^{4n+1}(n!)^4}{(2n+1)!^2}.
+\int^1_0xK(x)K(\sqrt{1-x^2})dx=\frac12\int^1_0K(\sqrt{x})K(\sqrt{1-x})dx\\ =\frac12\int^1_0(\frac\pi2\sum^{\infty}_{n=0}\frac{(2n)!^2}{2^{4n}(n!)^4}x^n)K(\sqrt{1-x})dx\\ =\frac\pi4\sum^{\infty}_{n=0}\frac{(2n)!^2}{2^{4n}(n!)^4}\int^1_0x^nK(\sqrt{1-x})dx\\ =\frac\pi4\sum^{\infty}_{n=0}\frac{(2n)!^2}{2^{4n}(n!)^4}\frac{2^{4n+1}(n!)^4}{(2n+1)!^2}\\ =\frac\pi2\sum^{\infty}_{n=0}\frac{1}{(2n+1)^2}=\frac{\pi}{2}\frac{\pi^2}{8}=\frac{\pi^3}{16}.

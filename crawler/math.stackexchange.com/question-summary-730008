@@ -1,0 +1,39 @@
+A' \lor B'
+A \rightarrow \lnot A
+A
+\lnot A
+\rightarrow
+\lnot A \lor \lnot B
+\lor
+B \rightarrow \lnot B
+B
+\lnot B
+\rightarrow
+\lnot A \lor \lnot B
+\lor
+A \lor B
+A \rightarrow \lnot A, \quad B \rightarrow \lnot B, \quad A \lor B \quad \vdash \lnot A \lor \lnot B
+\lor
+((A \Rightarrow A') \wedge (B \Rightarrow B')) \Rightarrow (A \vee B \Rightarrow A' \vee B')
+\begin{align} & \equiv (\neg (A \Rightarrow A') \vee \neg (B \Rightarrow B')) \vee (A \vee B \Rightarrow A' \vee B') \\ & \equiv ((A \wedge \neg  A') \vee (B \wedge \neg B')) \vee ((\neg A \wedge \neg B) \vee (A' \vee B')) \\ & \equiv (A \wedge \neg A') \vee (B \wedge \neg B') \vee (\neg A \wedge \neg B) \vee A' \vee B' \end{align}
+(p \vee \neg p) \equiv \top
+\top
+\;P \Rightarrow Q\;
+\;P \lor Q \equiv Q\;
+\;A \Rightarrow A'\;
+\;B \Rightarrow B'\;
+\;\lor\;
+\;A \lor B\;
+\;P \lor \text{true} \;\equiv\; \text{true}\;
+A \lor B
+\lnot B \Rightarrow A
+A' \lor B'
+\lnot B' \Rightarrow A'
+B \Rightarrow B'
+\lnot B' \Rightarrow \lnot B
+\lnot B' \Rightarrow \lnot B
+\lnot B \Rightarrow A
+A \Rightarrow A'
+\lnot B' \Rightarrow A'
+X \lor Y \Leftrightarrow X \lor (Y \land \neg X)
+                                                        \top \\ (A'                 \lor  B' \lor   B)         \lor    \top \\ (A'                 \lor  B' \lor   B)         \lor   (\neg A \lor A) \\  A'                 \lor  B' \lor   B          \lor    \neg A \lor A \\  A' \lor   A          \lor  B' \lor   B          \lor    \neg A \\  A' \lor   A          \lor  B' \lor   B          \lor   (\neg A \land \neg B) \\ (A' \lor   A)         \lor (B' \lor   B)         \lor   (\neg A \land \neg B) \\  A' \lor ( A \land \neg A') \lor  B' \lor ( B \land \neg B') \lor   (\neg A \land \neg B) \\        ( A \land \neg A') \lor        ( B \land \neg B') \lor   (\neg A \land \neg B)  \lor (A' \lor B') \\       \neg (\neg A \lor   A') \lor       \neg (\neg B \lor   B') \lor  \neg ( A \lor   B)  \lor (A' \lor B') \\     \neg ( (\neg A \lor   A') \land       (\neg B \lor   B') \land  ( A \lor   B)) \lor (A' \lor B') \\        (\neg A \lor   A') \land       (\neg B \lor   B') \land  ( A \lor   B)  \Rightarrow (A' \lor B') \\        ( A \Rightarrow   A') \land       ( B \Rightarrow   B') \land  ( A \lor   B)  \Rightarrow (A' \lor B') \\        ( A \Rightarrow   A') \land       ( B \Rightarrow   B') \land  ( A \lor   B)  \Rightarrow A' \lor B' 

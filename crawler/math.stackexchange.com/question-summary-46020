@@ -1,0 +1,17 @@
+x > y
+z = \frac{x - y}{1 - y}.
+x < y
+z = 1 - \frac{y - x}{y}.
+ z = \begin{cases} (x-y)/(1-y) & x > y, \\ x/y & x < y. \end{cases} 
+\frac{|x-y|+x-y}{2|x-y|} \cdot \frac{x-y}{1-y} + \frac{|x-y|+y-x}{2|x-y|} \cdot \frac{x}{y}. 
+ \frac{1}{2} \left( \frac{x-y}{1-y} + \frac{x}{y} \right) + \frac{x-y}{2|x-y|} \left( \frac{x-y}{1-y} - \frac{x}{y} \right). 
+z = f(x,y)\; \frac{x - y}{1 - y} + g(x,y)\; \frac{x}{y}
+f
+g
+ f(x,y)=   \begin{cases}    1 & x > y \\\\    0 & x < y   \end{cases} \quad \mbox{and} \quad  g(x,y)=   \begin{cases}    0 & x > y \\\\    1 & x < y   \end{cases} 
+f
+g
+x\neq y
+f(x,y) = \theta(x-y)
+g(x,y) = \theta(y-x)
+ z=   \begin{cases}    \frac{x-y}{1-y} & x > y \\\\    \frac{x}{y} & x < y   \end{cases} 

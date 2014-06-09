@@ -1,0 +1,33 @@
+\int_{-\infty}^{\infty}e^{-z^2}dz=\sqrt{\pi}
+a:=\sqrt{\pi}e^{\frac{\pi i}{4}}
+f(z) = \frac{e^{-z^2}}{1+e^{-2az}}
+a^2=\pi i
+f(z)
+(k+\frac{1}{2})a
+k\in\mathbb{Z}
+\lim_{z\rightarrow (k+\frac{1}{2})a}\frac{(z-(k+\frac{1}{2})a)e^{-z^2}}{1+e^{-2az}}=\lim_{z\rightarrow (k+\frac{1}{2})a}\frac{\frac{d}{dz}(z-(k+\frac{1}{2})a)e^{-z^2}}{\frac{d}{dz}1+e^{-2az}}=\frac{e^{-(k+\frac{1}{2})^2a^2}}{-2ae^{-2(k+\frac{1}{2})a^2}}=\frac{e^{-k^2a^2-ka^2-\frac{a^2}{4}}}{-2ae^{-2ka^2-a^2}}=\frac{e^{-\pi ik^2-\pi ik-\frac{\pi i}{4}}}{-2ae^{-2\pi ik-\pi i}}=\frac{e^{\frac{-\pi i}{4}}}{2\sqrt{\pi}e^{\frac{\pi i}{4}}}=\frac{1}{2\sqrt{\pi}i}
+f(z)-f(z+a)=e^{-z^2}
+-R
+R
+0\leq t\leq 1
+\lim_{R\rightarrow\infty}\bigg[\int_{-R}^{R}f+\int_{R+at}f+\int_{R+a}^{-R+a}f+\int_{R+a(1-t)}f\bigg]=\sum_{k\geq 0}\sqrt{\pi}
+u=z-a
+v=1-t
+R\rightarrow\infty
+\int_{-\infty}^{\infty}e^{-z^2}dz=\sum_{k\geq 0}\sqrt{\pi}
+\sqrt{\pi}
+R\rightarrow\infty
+R\rightarrow\infty
+\int_{-\infty}^{\infty}e^{-x^2}dx=z
+z=2\int_{0}^{\infty}e^{-x^2}dx
+z\geq 0
+\int_{-\infty}^{\infty}e^{-x^2}dx.\int_{-\infty}^{\infty}e^{-y^2}dy=z^2
+z^2=\int_{-\infty}^{\infty}e^{-x^2}dx.\int_{-\infty}^{\infty}e^{-y^2}dy=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-x^2}e^{-y^2}dxdy=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x+y)^2}dxdy
+x=r\cos \theta,y=r \sin \theta
+\Rightarrow dxdy=rdrd\theta
+\int_{-\pi}^{\pi}\int_{0}^{\infty}e^{-r^2}rdrd\theta
+= \frac{1}{2}\int_{-\pi}^{\pi}\int_{0}^{\infty}e^{-y}dyd\theta
+= \frac{1}{2}\int_{-\pi}^{\pi}d\theta
+=\pi
+z^2=\pi
+\Rightarrow z=\sqrt{\pi}

@@ -1,0 +1,19 @@
+A
+P(i)
+i
+P(A|i)
+i
+P(A)=\sum_{i=0}^{3} P(A|i)P(i)
+P(A|i)=\frac{i+1}{27}
+P(i)
+i
+N_i
+P(i)=\frac{N_i}{\sum_{j=0}^{3}N_j}
+i
+26-i
+\binom{4}{i}\binom{48}{26-i}
+N_0+N_1+N_2+N_3
+\binom{52}{26}=N_0+N_1+N_2+N_3+N_4
+=
+\binom{48}{26}+\binom41\binom{48}{25}+\binom42\binom{48}{24}+\binom43\binom{48}{23}
+\begin{align*} \mathrm{P}[\text{ace drawn from it}] &= \frac1{27}\binom{52}{26}^{-1}\left(\binom{48}{26}+8\binom{48}{25}+18\binom{48}{24}+16\binom{48}{23}\right)\\\\ &\approx .10088 \end{align*}

@@ -1,0 +1,15 @@
+ \sum_{i=1}^{n}\sum_{j=1}^{i}a_j = \sum_{i=1}^{n}a_i(n-i+1) 
+x_{rs}
+\sum_{i=1}^n\sum_{j=1}^nx_{ij}=\sum_{i=1}^n\sum_{j=1}^nx_{ji}\;;\tag{1}
+ \sum_{1\le i,j\le n}x_{ij}
+ x_{rs}=a_s,s \le r \;;\tag{2}
+ x_{rs}=0, s \gt r \;;\tag{3}
+\sum_{i=1}^n\sum_{j=1}^nx_{ij}=\sum_{i=1}^n\sum_{j=1}^{i}x_{ij}+\sum_{i=1}^n\sum_{j=i+1}^nx_{ij}=\sum_{i=1}^n\sum_{j=1}^{i}a_j+\sum_{i=1}^n\sum_{j=i+1}^n0=\sum_{i=1}^n\sum_{j=1}^ia_j
+\sum_{i=1}^n\sum_{j=1}^nx_{ji}=\sum_{i=1}^n\sum_{j=1}^{i-1}x_{ji}+\sum_{i=1}^n\sum_{j=i}^nx_{ji}=\sum_{i=1}^n\sum_{j=1}^{i-1}0+\sum_{i=1}^n\sum_{j=i}^na_i=\sum_{i=1}^na_i(\sum_{j=i}^n1)=\sum_{i=1}^na_i(\sum_{j=1}^n1-\sum_{j=1}^{i-1}1)=\sum_{i=1}^na_i(n-(i-1))
+\sum_{i=1}^n\sum_{j=1}^ia_j=\sum_{i=1}^n\left(a_1+a_2+\ldots+a_i\right)=a_1+(a_1+a_2)+\ldots+(a_1+\ldots+a_n)=
+na_1+(n-1)a_2+\ldots +(n-(k-1))a_k+\ldots+a_n\;,\;\text{(observe that}\;n-(n-1)=1)
+\sum_{i=1}^n\sum_{j=1}^ia_j=\sum_{j=1}^n\sum_{i=j}^na_j\;;\tag{1}
+(1)
+(n-j-1)
+a_j
+\begin{array}{c|cccccc|c} i\backslash j&1&2&3&\dots&n-1&n&\sum_{j=1}^ia_j\\ \hline 1&a_1&&&&&&\sum_{j=1}^1a_j\\ 2&a_1&a_2&&&&&\sum_{j=1}^2a_j\\ 3&a_1&a_2&a_3&&&&\sum_{j=1}^3a_j\\ \vdots&\vdots&\vdots&\vdots&\ddots&&&\vdots\\ n-1&a_1&a_2&a_3&\dots&a_{n-1}&&\sum_{j=1}^{n-1}a_j\\ n&a_1&a_2&a_3&\dots&a_{n-1}&a_n&\sum_{j=1}^ma_j\\ \hline \sum_{i=j}^na_j&\sum_{i=1}^na_1&\sum_{i=2}^na_2&\sum_{i=3}^na_3&\dots&\sum_{i=n-1}^na_{n-1}&\sum_{i=n}^na_n&\text{double sum}\atop(1) \end{array}

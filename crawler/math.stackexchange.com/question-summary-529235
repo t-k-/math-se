@@ -1,0 +1,10 @@
+B(x,r)\in\mathbb{R}^n
+x\in\mathbb{R}^n
+B(0,1)
+\displaystyle\int_{\partial B(x,r)}u\;dS(y)
+y:=x+rz
+r^n
+y\in\partial B(x,r)\Leftrightarrow |x-y|=r\Leftrightarrow |x-(x+(x+rz))|=r\Leftrightarrow |z|=1\Leftrightarrow z\in\partial B(0,1)
+\boxed{\displaystyle\int_{\partial B(x,r)}u\;dS(y)=r^n\int_{\partial B(0,1)}u(x+rz)\;dS(z)}
+y=x+rz\Leftrightarrow\left\{\begin{array} yy_1=x_1+rz_1\\ y_2=x_2+rz_2\\ \vdots \\ y_n=x_n+rz_n\end{array}\right.
+J=\left|\begin{array}{cccc}r&&&\\ &r&&\\ \vdots&&&\\ &&&r\end{array}\right|=r^n

@@ -1,0 +1,22 @@
+A_{ij}
+W_{ijkl}=R_{ijkl}-\frac{1}{n-2}(g_{ik}A_{jl}-g_{il}A_{jk}-g_{jk}A_{il}+g_{jl}A_{ik})
+A_{ij}=R_{ij}-\frac{R}{2(n-1)}g_{ij}
+C_{ijk}=\nabla_{i}A_{jk}-\nabla_{j}A_{ik}
+C_{ijk}=-\frac{n-2}{n-3}\nabla_{l}W_{ijkl}\qquad(*)
+g^{ls}\nabla_sW_{ijkl}
+g^{ls}\nabla_sR_{ijkl}=-\nabla_iR_{jk}+\nabla_jR_{ik}
+(*)
+\nabla^l A_{jl}=\nabla^l R_{jl}-\nabla^l \frac{R}{2(n-1)}g_{jl}=\nabla^l R_{jl}- \frac{1}{2(n-1)}\nabla_j R=\frac{1}{2}\nabla_j R- \frac{1}{2(n-1)}\nabla_j R=\frac{n-2}{2(n-1)}\nabla_j R \qquad(1)
+g^{ls}\nabla _sW_{ijkl}=g^{ls}\nabla_s R_{ijkl}-\frac{1}{n-2}(g_{ik}g^{ls}\nabla_s A_{jl}-g_{il}g^{ls}\nabla_s A_{jk}-g_{jk}g^{ls}\nabla_s A_{il}+g_{jl}g^{ls}\nabla_s A_{ik})
+=\nabla_iR_{jk}-\nabla_jR_{ik}-\frac{1}{n-2}(g_{ik}\nabla^l A_{jl}-g_{il}\nabla^l A_{jk}-g_{jk}\nabla^l A_{il}+g_{jl}\nabla^l A_{ik})
+=\nabla_iR_{jk}-\nabla_jR_{ik}-\frac{1}{n-2}(g_{ik}\nabla^l A_{jl}-\nabla_i A_{jk}-g_{jk}\nabla^l A_{il}+\nabla_j A_{ik})
+C_{ijk}=\nabla_{i}A_{jk}-\nabla_{j}A_{ik}
+=\nabla_iR_{jk}-\nabla_jR_{ik}-\frac{1}{n-2}(g_{ik}\nabla^l A_{jl}-g_{jk}\nabla^l A_{il}-C_{ijk})
+=\nabla_iR_{jk}-\nabla_jR_{ik}-\frac{1}{n-2}(g_{ik}\frac{n-2}{2(n-1)}\nabla_j R-g_{jk}\frac{n-2}{2(n-1)}\nabla_i R-C_{ijk})
+=\nabla_iR_{jk}-\nabla_jR_{ik}-\frac{1}{2(n-1)}g_{ik}\nabla_j R+\frac{1}{2(n-1)}g_{jk}\nabla_i R+\frac{1}{n-2}C_{ijk}
+=\nabla_i(R_{jk}+\frac{R}{2(n-1)}g_{jk})-\nabla_j(R_{ik}+\frac{R}{2(n-1)}g_{ik})+\frac{1}{n-2}C_{ijk}
+\frac{R}{2(n-1)}g_{ij}=R_{ij}-A_{ij}
+=\nabla_i(2R_{jk}-A_{jk})-\nabla_j(2R_{ik}-A_{ik})+\frac{1}{n-2}C_{ijk}
+=2\nabla_i R_{jk}-2\nabla_j R_{ik}-\nabla_iA_{ik}+\nabla_jA_{ik}+\frac{1}{n-2}C_{ijk}=-C_{ijk}+\frac{1}{n-2}C_{ijk}=-\frac{n-3}{n-2}C_{ijk}
+2\nabla_i R_{jk}-2\nabla_j R_{ik}=0
+C_{ijk}=-\frac{n-2}{n-3}g^{lk}\nabla _sW_{ijkl}=-\frac{n-2}{n-3} \nabla^l W_{ijkl}

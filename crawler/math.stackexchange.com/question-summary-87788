@@ -1,0 +1,7 @@
+t>0
+v>0
+a \in \mathbb{R}
+ f(t,v,a) = \int_0^t \frac{{\rm e}^{-a^2 z}}{\sqrt{z} (z+v)} \,dz = 2a \int_0^{a\sqrt{t}} \frac{{\rm e}^{-x^2}}{x^2+a^2 v} \,dx \;, 
+t=v
+ f(t,v,a) = \frac{\pi}{\sqrt{v}} {\rm e}^{a^2 v} {\rm erfc} \left( a \sqrt{v} \right) - \frac{4}{\sqrt{v}} {\rm e}^{a^2 v} \int_{a\sqrt{v}}^\infty \int_{\frac{\sqrt{t} q}{\sqrt{v}}}^\infty {\rm e}^{-p^2} {\rm e}^{-q^2} \,dp \,dq \;, 
+ f(v,v,a) = \frac{\pi}{2 \sqrt{v}} {\rm e}^{a^2 v} \left( 1 - \left( {\rm erf} \left( a \sqrt{v} \right) \right)^2 \right) \;, 

@@ -1,0 +1,33 @@
+\int\limits_{25\pi / 4}^{53\pi / 4}\frac{1}{(1+2^{\sin x})(1+2^{\cos x})}dx?
+f:\mathbb{R}\to\mathbb{R}
+T
+a,b\in\mathbb{R}
+k\in\mathbb{N}
+f
+ \int_{b}^{b+T} f(x)dx=\int_{a}^{a+T}f(x)dx\tag{1} 
+ k\int_{b}^{b+T} f(x)dx=\int_{a}^{a+kT}f(x)dx\tag{2} 
+ \int\limits_{-c}^c f(x)dx=\int\limits_{0}^{c}(f(x)+f(-x))dx\tag{3} 
+ \begin{align} I_1 &=\int_{25\pi/4}^{29\pi/4}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &=\int_{\pi/4+3\cdot 2\pi}^{5\pi/4+3\cdot 2\pi}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &\overset{(1)}{=}\int_{\pi/4}^{5\pi/4}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &=\int\limits_{\pi/4}^{3\pi/4}\left(\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}+\frac{1}{(1+2^{\cos (x+\pi/2)})(1+2^{\sin (x+\pi/2)})}\right)dx\\ &=\int\limits_{\pi/4}^{3\pi/4}\frac{dx}{1+2^{\cos x}}\\ &=\int\limits_{\pi/4}^{\pi/2}\left(\frac{1}{1+2^{\cos x}}+\frac{1}{1+2^{\cos (\pi-x)}}\right)dx\\ &=\int\limits_{\pi/4}^{\pi/2}dx\\ &=\frac{\pi}{4}\\ \end{align} 
+ \begin{align} I_2 &=\int_{29\pi/4}^{53\pi/4}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &=\int_{29\pi/4}^{29\pi/4+3\cdot 2\pi}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &\overset{(2)}{=}3\int_{-\pi}^{\pi}\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}dx\\ &\overset{(3)}{=}3\int\limits_{0}^{\pi} \left(\frac{1}{(1+2^{\cos x})(1+2^{\sin x})}+\frac{1}{(1+2^{\cos (-x)})(1+2^{\sin (-x)})}\right)dx\\ &=3\int\limits_{0}^{\pi}\frac{dx}{1+2^{\cos x}}\\ &=3\int\limits_{-\pi/2}^{\pi/2}\frac{dx}{1+2^{\cos (x+\pi/2)}}\\ &\overset{(3)}{=}3\int\limits_{0}^{\pi/2}\left(\frac{1}{1+2^{\cos (x+\pi/2)}}+\frac{1}{1+2^{\cos (-x+\pi/2)}}\right)dx\\ &=3\int\limits_{0}^{\pi/2}=\frac{3\pi}{2}\\ \end{align} 
+ I=I_1+I_2=\frac{7\pi}{4} 
+u(x)=1/((1+2^{\sin x})(1+2^{\cos x}))
+a=\pi/4
+x\to t
+(a,2a)
+(2a,3a)
+(3a,4a)
+(4a,5a)
+u
+(a,5a)
+(0,a)
+t
+1
+u
+(a+4na,a+4(n+1)a)
+n
+(25\pi/4,53\pi/4)
+7
+6\leqslant n\leqslant12
+ \int_a^{5a}u(x)\mathrm dx=\int_0^{a}u(t)\,(1+2^{\sin(t)}+2^{\cos(t)}+2^{\sin(t)}2^{\cos(t)})\mathrm dt. 
+ \int_a^{5a}u(x)\mathrm dx=a. 
+ \int_{25\pi/4}^{53\pi/4}u(x)\mathrm dx=7a=7\pi/4. 

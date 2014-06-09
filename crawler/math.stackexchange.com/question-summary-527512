@@ -1,0 +1,9 @@
+\Omega=\left \{ (k_x,k_y):k_x^2+k_y^2\leq K^2 \right \}
+K>0
+f(x,y)=\int_{\Omega }d^2ke^{i(xk_x+yk_y)}
+f(x,y)
+x k_x+y k_y = r \rho \cos{(\theta-\phi)}
+r=\sqrt{x^2+y^2}
+\rho=\sqrt{k_x^2+k_y^2}
+f(x,y) = \int_0^K d\rho \, \rho \int_0^{2 \pi} d\theta \, e^{i r \rho \cos{(\theta-\phi)}}
+f(x,y) = 2 \pi \int_0^K d\rho\, \rho \, J_0(r \rho) = \frac{2 \pi}{r^2} \int_0^{K r} du \, u\, J_0(u) = 2 \pi K^2 \frac{J_1(K r)}{K r}

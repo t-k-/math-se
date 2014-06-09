@@ -1,0 +1,29 @@
+\max_{\Large{B=A\uplus\{1\}\atop A\subseteq\{2,\dots,6\}}}\sum_{i\in B}\frac{i}{|B|}
+j\geq 1
+2,...6
+A
+6,...6-j+1
+1\leq j \leq 5
+j=0
+A=B={1}
+6
+j=0,...,5
+[n]=\{1,\dots,n\}
+k\in[n]
+\mathscr{B}_k=\{B\subseteq[n]:1\in B\text{ and }|B|=k\}
+\max_{1\in B\subseteq[n]}\frac1{|B|}\sum B\;,
+\begin{align*} \max_{B\in\mathscr{B}_k}\frac1k\sum B&=\frac1k\left(1+\sum_{i=n-k+2}^ni\right)\\ &=\frac1k\left(1+\frac12\Big((n-k+2)+n\Big)(k-1)\right)\\ &=\frac1k\left(1+\frac{(2n-k+2)(k-1)}2\right)\\ &=\frac{2nk-2n-k^2+3k}{2k}\\ &=n+\frac32-\left(\frac{n}k+\frac{k}2\right) \end{align*}
+\max_{k\in[n]}\left(n+\frac32-\left(\frac{n}k+\frac{k}2\right)\right)
+\min_{k\in[n]}\left(\frac{n}k+\frac{k}2\right)\;.
+f(x)=\dfrac{n}x+\dfrac{x}2
+x=\sqrt{2n}
+k
+\left\lfloor\sqrt{2n}\right\rfloor
+\left\lceil\sqrt{2n}\right\rceil
+n=6
+k=3
+k=4
+2n
+\begin{align*} &\left(\frac{n}{\left\lfloor\sqrt{2n}\right\rfloor}+\frac{\left\lfloor\sqrt{2n}\right\rfloor}2\right)-\left(\frac{n}{\left\lceil\sqrt{2n}\right\rceil}+\frac{\left\lceil\sqrt{2n}\right\rceil}2\right)\\ &\qquad=n\left(\frac1{\left\lfloor\sqrt{2n}\right\rfloor}-\frac1{\left\lceil\sqrt{2n}\right\rceil}\right)+\frac12\left(\left\lfloor\sqrt{2n}\right\rfloor-\left\lceil\sqrt{2n}\right\rceil\right)\\ &\qquad=\frac{n}{\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil}-\frac12\\\\ &\qquad\begin{cases} <0,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil>2n\\ =0,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil=2n\\ >0,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil<2n\;. \end{cases} \end{align*}
+k
+\begin{cases} \left\lfloor\sqrt{2n}\right\rfloor,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil>2n\\\\ \left\lfloor\sqrt{2n}\right\rfloor=\left\lceil\sqrt{2n}\right\rceil,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil=2n\\\\ \left\lceil\sqrt{2n}\right\rceil,&\text{if }\left\lfloor\sqrt{2n}\right\rfloor\cdot\left\lceil\sqrt{2n}\right\rceil<2n\;. \end{cases}

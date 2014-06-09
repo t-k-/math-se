@@ -1,0 +1,16 @@
+A_0
+S(n)
+\{0,1\}
+ \mathrm{E}\{A_0\mid S(n)=1\}=\frac{\mathrm{P}\{A_0=1,S(n)=1\}}{\mathrm{P}\{S(n)=1\}} 
+ \frac{\mathrm{P}\{A_0=1,S(n)=1\}}{\mathrm{P}\{S(n)=1\}}=\frac{\mathrm{E}\{A_0\cdot S(n)\}}{\mathrm{E}\{S(n)\}} 
+ \frac{\mathrm{E}\{A_0\cdot S(n)\}}{\mathrm{E}\{S(n)\}}=\mathrm{E}\{A_0\}+\frac{\mathrm{E}\{A_0\cdot S(n)\}-\mathrm{E}\{A_0\}\cdot\mathrm{E}\{S(n)\}}{\mathrm{E}\{S(n)\}} 
+ \mathrm{E}\{A_0\mid S(n)=1\}=\mathrm{E}\{A_0\}+\frac{\mathrm{E}\{A_0\cdot S(n)\}-\mathrm{E}\{A_0\}\cdot\mathrm{E}\{S(n)\}}{\mathrm{E}\{S(n)\}} 
+\mathbb P(Y\in\{0,1\})=1
+X
+\mathbb E(X\mid Y=1)=\mathbb E(XY)/\mathbb P(Y=1)
+\mathbb P(Y=1)=\mathbb E(Y)
+a
+X=A_0
+Y=S(n)
+a=E(A_0)
+ \mathbb E(X\mid Y=1)=\frac{\mathbb E(X;Y=1)}{\mathbb P(Y=1)}=\frac{\mathbb E(XY)}{\mathbb E(Y)}=a+\frac{\mathbb E(XY)-a\cdot\mathbb E(Y)}{\mathbb E(Y)}. 

@@ -1,0 +1,28 @@
+c=f(a+e^b)+g(a-e^b)
+f
+g
+a+b^2
+a-b^2
+c
+b=0
+c=0
+\frac{\partial c}{\partial b}=1+a
+f, g : \mathbb R \to \mathbb R
+c(a,b)
+c_b(a,b)
+(1)
+(5)
+(3)
+g(x)
+ c(a,b) = f(a+e^b) + g(a-e^b) 
+ c(a,0) = f(a+1) + g(a-1) = 0 \tag 1 
+ c_b(a,b) = f'(a+e^b)e^b - g'(a-e^b)e^b = e^b \left ( f'(a+e^b) - g'(a+e^b)\right) \tag 2 
+ c_b(a,0) = f'(a+1)-g'(a-1) = 1 + a \tag 3 
+ f'(a+1) + g'(a-1) = 0 \tag 4 
+ g'(a-1) = -f'(a+1) \tag 5 
+ 2f'(a+1) = a+1 
+ f'(x) = \frac x2 
+f(x) = \frac {x^2}4 + C
+ g(a-1) = -f(a+1) = -\frac {(a+1)^2}4 - C 
+ g(x) = -\frac {(x+2)^2}4 - C 
+ c(a,b) = f(a+e^b) + g(a-e^b) = \frac {\left ( a+e^b\right )^2}4 - \frac {\left ( a-e^b+2\right )^2}4 

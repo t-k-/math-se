@@ -1,0 +1,15 @@
+y_{it}=\beta_0+\beta_1x_{it}+u_{it}
+var(u)=\sigma^2
+E(u)=0
+corr(u_{it},u_{is})=0\: \forall \: t\neq s 
+corr(u_{it}-u_{it-1},u_{it-1}-u_{it-2})=-0.5
+ Cov(u_{it}-u_{it-1}, u_{it-1}-u_{it-2})=Cov(u_{it}, u_{it-1})-Cov(u_{it}, u_{it-2})-Cov(u_{it-1}, u_{it-1})+Cov(u_{it-1}, u_{it-2}) 
+ -Cov(u_{it-1}, u_{it-1})=-V(u_{it-1})=-\sigma^2. 
+ Corr(u_{it}-u_{it-1}, u_{it-1}-u_{it-2})=\frac{Cov(u_{it}-u_{it-1}, u_{it-1}-u_{it-2})}{\sqrt{V(u_{it}-u_{it-1})V(u_{it-1}-u_{it-2})}}=-\frac{\sigma^2}{\sqrt{4(\sigma^2)^2}}\\ =-\frac{1}{2}. 
+corr(u_t,  u_{s})=0
+cov(u_t,  u_{s})=0
+E(u_t u_s)=0
+corr(\Delta u_t, \Delta u_{t-1})=\frac{cov(\Delta u_t, \Delta u_{t-1})}{sd(\Delta u_t)sd(\Delta u_{t-1})}=\frac{E[( u_t- u_{t-1})( u_{t-1}- u_{t-2})}{var(\Delta u_t)}
+E(u_t u_s)=0
+-\sigma^2_u
+corr(\Delta u_t, \Delta u_{t-1})=\frac{-\sigma^2_u}{var(\Delta u_t)}=\frac{-\sigma^2_u}{2\sigma^2_u}=-0.5

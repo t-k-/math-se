@@ -1,0 +1,39 @@
+p(\theta, \phi) = r(\cos \phi \cos \theta, -\cos \phi \sin \theta,\sin \phi)
+\phi
+\theta
+0°
+0 °
+(r,0,0)
+(0,0,r)
+(x,y,z)
+(0,0,0)
+x_c = p(\theta_c, \phi_c)
+d
+d
+x_c
+C = \{x \in \mathbb{R}^3 | \|x\|=r,\ \|x-x_c\| = d \}
+C
+x = \lambda x_c + p
+p \bot x_c
+p \bot x_c
+\lambda = \frac{\langle x , x_c \rangle}{\|x_c\|^2} = \frac{\langle x , x_c \rangle}{r^2}
+d^2 = \|x-x_c\|^2 = \|x\|^2 + \|x_c\|^2 - 2 \langle x , x_c \rangle 
+\langle x , x_c \rangle = \frac{1}{2}(2 r^2 -d^2)
+\lambda = 1  - \frac{1}{2}(\frac{d}{r})^2
+p \bot x_c
+\|x\|^2 = |\lambda|^2 \|x_c\|^2 + \|p\|^2
+\|p\| = d_\bot = r\sqrt{1-\lambda^2} = d \sqrt{1-(\frac{d}{2r})^2}
+x_c
+\{x_c\}^\bot = \operatorname{sp} \{ p_1, p_2 \}
+p_i
+C
+C = \{\lambda x_c + d_\bot((\cos \alpha) p_1 + (\sin \alpha) p_2) \}_{\alpha \in [0,2 \pi)}
+x_c = p(\theta_c, \phi_c)
+p_1 = \frac{p(\theta_c, \phi_c+\frac{\pi}{2})}{\| p(\theta_c, \phi_c+\frac{\pi}{2}) \|}
+p_2 = \frac{x_c}{r} \times p_1
+\times
+n
+\lambda x_c + d_\bot((\cos (2 \pi \frac{k}{n})) p_1 + (\sin (2 \pi \frac{k}{n})) p_2)
+k = 0,...,n-1
+\phi = \arcsin \frac{z}{r}
+\theta = \operatorname{atan2}(y,x)

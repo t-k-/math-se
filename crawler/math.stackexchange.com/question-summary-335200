@@ -1,0 +1,14 @@
+\frac 2{\sqrt{x^2+y^2}}-\frac {x^2}{(x^2+y^2)^{3/2}}-\frac {y^2}{(x^2+y^2)^{3/2}}
+\frac 1{\sqrt{x^2+y^2}}
+g(r,\theta) = f(x,y) = f(r\cos(\theta), r \sin(\theta))
+g(r,\theta) = r
+\dfrac{\partial g}{\partial r} = 1
+\dfrac{\partial g}{\partial \theta} = 0
+\dfrac{\partial}{\partial r} \left(r \dfrac{\partial g}{\partial r}\right) = 1
+\Delta_{r,\theta} g = \dfrac1r \dfrac{\partial}{\partial r} \left(r \dfrac{\partial g}{\partial r}\right) + \dfrac1{r^2} \dfrac{\partial^2 g}{\partial \theta^2}
+\Delta_{r,\theta} g = \dfrac1r \implies \Delta_{x,y} f = \dfrac1{\sqrt{x^2+y^2}}
+\nabla^2\!f = \frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} . 
+f(x,y) = \sqrt{x^2+y^2}
+\begin{array}{ccc} \frac{\partial\! f}{\partial x} &=& \frac{x}{\sqrt{x^2+y^2}} \\ \frac{\partial\! f}{\partial y} &=& \frac{y}{\sqrt{x^2+y^2}} \end{array}
+\begin{array}{ccc} \frac{\partial^2 f}{\partial x^2} &=& \frac{y^2}{(x^2+y^2)^{3/2}} \\ \frac{\partial^2 f}{\partial y^2} &=& \frac{x^2}{(x^2+y^2)^{3/2}} \end{array}
+\begin{array}{ccc} \nabla^2f &=& \frac{y^2}{(x^2+y^2)^{3/2}} + \frac{x^2}{(x^2+y^2)^{3/2}} \\ &=& \frac{x^2+y^2}{(x^2+y^2)^{3/2}} \\ &\equiv& \frac{1}{\sqrt{x^2+y^2}} \end{array}

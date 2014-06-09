@@ -1,0 +1,14 @@
+F
+{4\choose 2}
+N
+k
+N
+{N\choose\lfloor N/2 \rfloor}
+N
+\lfloor \cdot \rfloor
+\lesssim
+N
+N-1
+<
+N
+\begin{align*}n \lesssim \binom{N}{N/2} & = \frac{N(N-1)(N-2) \ldots (N/2)}{(N/2)(N/2 - 1) \ldots} \\ & = \prod_{k=0}^{N/2-1} \frac{N-k}{N/2 - k} = 2^{N/2} \prod_{k=1}^{N/2-1} \frac{N-k}{N-2k} \\ & = 2^{N/2} \prod_{k=1}^{N/2 - 1} \left(1 + \frac{k}{N-2k}\right) \end{align*}

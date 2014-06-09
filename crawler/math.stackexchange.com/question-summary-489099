@@ -1,0 +1,91 @@
+a_1=1
+n \gt1, a_{n+1} = a_n + \frac{1}{a_{n}}
+20 < a_{200} < 24
+L
+a_n
+a_{n+1}
+a_n>\sqrt{2n}
+n\geqslant 3
+ (a_n)^2>2n, \qquad (n \geqslant 3). \tag{1} 
+a_n
+a_n  = \sqrt{2n + \frac{\ln (n)}{2} + O(1)} = \sqrt{2n}+ \frac{\ln (n)}{4\sqrt{2n}}+O(\frac1{\sqrt{n}}) 
+a_n^2
+a_n
+b_n = a_n^2
+b_1=1
+b_2=4
+b_{n+1} =\left(a_n+\frac1{a_n}\right)^2 =a_n^2+2+\frac1{a_n^2}  =b_n+2+\frac1{b_n}  
+\begin{align} b_n & > 2n\\ b_n &< b_k +(n-k)(2+\frac1{2k})  \quad\text{ (for } n > k)\\  b_n &< n(2+\frac1{6}) \quad\text{ (the previous line with } k=3) \\ b_n &< 2n+\frac12\ln(n-1) \\  b_n &> 2n+\frac12 \ln(n)-c  \quad\text{ where }c\text{ is a positive constant}\\  b_n & = 2n + \frac{\ln (n)}{2} + O(1)\\ \end{align} 
+b_n - \left(2n + \frac{\ln (n)}{2}\right) \to -0.2768...
+a_n - \left( \sqrt{2n}+ \frac{\ln (n)}{4\sqrt{2n}} \right) \to 0
+\sqrt{n}\left(a_n - \left( \sqrt{2n}+ \frac{\ln (n)}{4\sqrt{2n}} \right)\right) \to -0.0979138
+b_{n+1} =b_n+2+\frac1{b_n}  
+b_{n+1} -b_n=2+\frac1{b_n}  
+k
+n-1
+b_{n} -b_k =\sum_{j=k}^{n-1} \left(2+\frac1{b_j} \right) =2(n-k)+\sum_{j=k}^{n-1} \frac1{b_j}   
+b_{n}  =b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{b_j}  
+b_j > 0
+k = 2
+b_n > 2n
+n > 2
+k=2
+b_2=4
+b_{n} = 2n+\sum_{j=k}^{n-1} \frac1{b_j} 
+b_n \ge 2n
+b_n
+\begin{align} b_{n}  &= b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{b_j} \\ &< b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{b_k} \\ &< b_k +(n-k)(2+\frac1{b_k}) \\ &< b_k +(n-k)(2+\frac1{2k}) \\  \end{align} 
+k=3
+b_3 = 25/4
+\begin{align} b_{n}  &< \frac{25}{4} +(n-3)(2+\frac1{6}) \\ &= n(2+\frac1{6})-3\frac{13}{6}+\frac{25}{4} \\ &= n(2+\frac1{6})-\frac{78-75}{12}\\ &< n(2+\frac1{6}) \\ \end{align} 
+ \frac1{j+1} < \int_j^{j+1} \frac{dx}{x} = \ln(j+1)-\ln(j) < \frac1{j} 
+ \sum_{j=k}^{n-1} \frac1{j+1}  = \sum_{j=k}^{n-1} (\ln(j+1)-\ln(j)) = \ln(n)-\ln(k)  < \sum_{j=k}^{n-1} \frac1{j}  
+\sum_{j=k}^{n-1} \frac1{b_j}  <\sum_{j=k}^{n-1} \frac1{2j} =\frac12\sum_{j=k-1}^{n-2} \frac1{j+1} <\frac12(\ln(n-1)-\ln(k-1))  
+b_n =b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{b_j}  < b_k +2(n-k)+\frac12(\ln(n-1)-\ln(k-1))  
+k=2
+n > 2
+b_n < 2n+\frac12\ln(n-1) < 2n+\frac12\ln(n)  
+\frac1{1+x} > 1-x
+\begin{align} b_n  &=b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{b_j} \\ &> b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{2j+\frac12\ln(j)} \\ &= b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{2j}\frac1{1+\ln(j)/(4j)} \\  &> b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{2j}\left(1-\frac{\ln(j)}{4j}\right) \\  &> b_k +2(n-k)+\sum_{j=k}^{n-1} \frac1{2j} -\sum_{j=k}^{n-1} \frac{\ln(j)}{8j^2} \\  \end{align} 
+\sum_{j=k}^{\infty} \frac{\ln(j)}{8j^2} = c_k
+   \sum_{j=k}^{n-1} \frac1{j}  > \ln(n)-\ln(k) 
+b_n > b_k +2(n-k)+\frac12 (\ln(n)-\ln(k))-c_k 
+k=2
+b_n > 2n+\frac12 \ln(n)-(\ln(2)+c_2) 
+b_n
+b_n = 2n + \frac{\ln (n)}{2} + O(1)
+a_n = \sqrt{b_n}
+\begin{align} a_n &= \sqrt{2n + \frac{\ln (n)}{2} + O(1)}\\ &= \sqrt{2n}\sqrt{1 + \frac{(\ln (n))/2 + O(1)}{2n}}\\ &= \sqrt{2n}\left(1 + \frac{\ln (n) + O(1)}{8n}+O(\frac{(\ln(n)+O(1))^2}{n^2})\right)\\ &= \sqrt{2n}+ \frac{\ln (n)}{4\sqrt{2n}}+O(\frac1{\sqrt{n}})+O(\frac{\ln^2(n)}{n^{3/2}})\\ &= \sqrt{2n}+ \frac{\ln (n)}{4\sqrt{2n}}+O(\frac1{\sqrt{n}})\\ \end{align} 
+a_n
+\sqrt{n}
+a_n =c\sqrt{n} 
+c\sqrt{n}+1/(c\sqrt{n}) =c\sqrt{n+1} =c\sqrt{n}\sqrt{1+1/n} \approx c\sqrt{n}(1+1/(2n))  = c\sqrt{n}+c/(2\sqrt{n})  
+1/(c\sqrt{n}) \approx c/(2\sqrt{n}) 
+1/c \approx c/2
+c \approx \sqrt{2}
+a_n \approx \sqrt{2n}
+a_n > \sqrt{2n}
+a_{n+1} > \sqrt{2n}+1/\sqrt{2n} 
+a_{n+1} > \sqrt{2(n+1)}
+\sqrt{2n}+1/\sqrt{2n} > \sqrt{2(n+1)}
+2n+2+1/(2n) > 2(n+1) 
+n=200
+a_{200} > \sqrt{400} = 20
+a_n \le \sqrt{(2+k)n}
+k
+a_n^2 > 2n
+a_{n+1}^2 =a_n^2+2+1/a_n^2 < (2+k)n+2+1/(2n) 
+\le (2+k)(n+1)
+(2+k)n+2+1/(2n) \le (2+k)(n+1)
+2+1/(2n) \le 2+k
+1/(2n)\le k
+n
+a_2 = 2
+a_3 = 5/2
+a_4 = 5/2+2/5 = 29/10
+n=3
+25/4 \le 3(2+k)=6+3k
+1/4 \le 3k
+k \ge 1/12
+k \ge 1/(2n) = 1/6
+k = 1/6

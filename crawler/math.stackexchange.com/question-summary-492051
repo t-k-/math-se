@@ -1,0 +1,9 @@
+X
+  \forall t > 0, P( e^{tX} > e^{t\epsilon}  ) \le e^{-t\epsilon} E[e^{tX}]. 
+t > 0
+\{e^{tX} > e^{t\epsilon}\}
+X > \epsilon
+\begin{align} P\{e^{tX} > e^{t\epsilon}\} &= P\{X > \epsilon\}\\ &= \int_\epsilon^\infty f_X(x)\,\mathrm dx\\ &= \int_{-\infty}^\infty \mathbf 1_{x\colon x > \epsilon}\, f_X(x)\,\mathrm dx\\ &\leq \int_{-\infty}^\infty e^{t(x-\epsilon)} f_X(x)\,\mathrm dx\\ &= e^{-t\epsilon} \int_{-\infty}^\infty e^{tx} f_X(x)\,\mathrm dx\\ &=  e^{-t\epsilon} E[e^{tX}]. \end{align}
+P\left(e^{tX}\gt e^{t\xi}\right)
+\xi
+ \begin{align} \mathrm{E}\left[e^{tX}\right] &=\int_{-\infty}^\infty P\left(e^{tX}\gt e^{t\xi}\right)\,\mathrm{d}e^{t\xi}\\ &\ge\int_{-\infty}^\epsilon P\left(e^{tX}\gt e^{t\xi}\right)\,\mathrm{d}e^{t\xi}\\ &\ge\int_{-\infty}^\epsilon P\left(e^{tX}\gt e^{t\epsilon}\right)\,\mathrm{d}e^{t\xi}\\[6pt] &= e^{t\epsilon}P\left(e^{tX}\gt e^{t\epsilon}\right) \end{align} 

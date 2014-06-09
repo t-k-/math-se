@@ -1,0 +1,13 @@
+\sum\limits_{n \geq 0} S(n,k) x^n = \frac{x^k}{(1-x)(1-2x)\cdots(1-kx)}
+S(n,k) = S(n-1,k-1) + kS(n-1,k)
+S(0,0)=1
+k
+B_k(x) = \sum_n S(n,k) x^n
+B_k(x) = xB_{k-1}(x) + kxB_k(x) = \frac{x}{1-kx} B_{k-1}(x)
+k \ge 1
+B_0(x)=1
+V(x) = [1,x,x^2,x^3,...]
+[1,1,1,1,1,...]
+V(x)*S2[,0] = {1 \over 1-x}
+[1-1,2-1,4-1,8-1,16-1,...]
+V(x)*S2[,1] = {1 \over 1-2x} - {1 \over 1-x} = { (1-1x) - (1-2x) \over (1-1x)(1-2x) }  = {x \over (1-1x)(1-2x) }

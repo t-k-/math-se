@@ -1,0 +1,31 @@
+∃x∈D, T(x)∧ ∀y∈D, R(y) ∧ A(x, y)\quad
+∃x∈D, \Big(T(x)∧ ∀y∈D, (R(y) ⟹ A(y, x))\Big)
+¬∃x∈D, \Big(R(x) ⟹ ¬∃y∈D, (T(y) ∧ A(x, y))\Big)
+ \equiv \forall x \in D \Big(R(x) \implies \exists y \in D (T(y) \land A(x,y))\Big)
+x
+y
+D
+x
+x
+D
+\forall\ y\in D : R(y) \wedge A(y,x)
+x
+D
+\exists\ x\in D
+x
+T(x)
+y
+D
+\forall\ y\in D
+y
+R(y)
+\Rightarrow
+y
+x
+A(y,x)
+x
+D
+x
+y
+D
+x

@@ -1,0 +1,25 @@
+ \text{Let }f(n) = n^2+5000 \text{ and } g(n) = 5(n^2) + 100.\text{ Prove formally that }f(n) = \theta (g(n)) 
+ O(g(n)) 
+ n > \sqrt{980} 
+ n^2 + 5000 < 5n^2+100 
+ \Omega(g(n)) 
+ n < \sqrt{980} 
+n^2 + 5000 > 5n^2+100 
+ \Theta(g(n)) 
+f(n)
+O(g(n))
+c=1,n_0=40
+f(n)=n^2+5000<1(5n^2+100)=c*g(n)\forall n\geq n_0
+g(n)
+O(f(n))
+c=5,n_0=1
+g(n)=5n^2+100<5(n^2+5000)=c*f(n)\forall n\geq n_0
+n
+\color{red}{1}\cdot f(n)\leqslant g(n)\leqslant\color{red}{5}\cdot f(n)
+f(n)=\Theta(g(n))
+\lim_{n \to \infty} \frac{5000}{105n^2}=0
+f(n)=\Omega(g(n))
+f(n)=O(g(n))
+\Theta(n)
+ \lim_{n \to \infty} \frac{f(n)}{g(n)}=\lim_{n \to \infty} \frac{n^2+5000}{5n^2+100} \geq \lim_{n \to \infty} \frac{ n^2}{105n^2}=\frac{1}{105}>0 
+ \lim_{n \to \infty} \leq \lim_{n \to \infty} \frac{ 5001n^2}{5n^2}=\frac{5001}{5}>0 

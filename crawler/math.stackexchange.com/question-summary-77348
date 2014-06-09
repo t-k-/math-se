@@ -1,0 +1,28 @@
+a^x
+\begin{align*} \frac{d}{dx} a^x & = \lim_{h \to 0} \left [ \frac{a^{x+h}-a^x}{h} \right ]\\  \\ & =\lim_{h \to 0} \left [ \frac{a^x \cdot a^h-a^x}{h} \right ] \\  \\  &=\lim_{h \to 0} \left [ \frac{a^x \cdot (a^h-1)}{h} \right ] \\  \\ &=a^x \cdot \lim_{h \to 0} \left [\frac {a^h-1}{h} \right ] \end{align*}
+\ln(a)
+a=e
+\frac{1}{t} = e^h - 1
+e^h = 1+\frac{1}{t}
+h = \ln(1 + \frac{1}{t})
+h\to 0
+\frac{1}{t}\to 0
+t\to \infty
+h\to 0^+
+t\to-\infty
+h\to 0^-
+\begin{align*} \lim_{h\to 0^+}\frac{e^h-1}{h} &= \lim_{t\to\infty}\left(\frac{1/t}{\ln(1+\frac{1}{t})}\right)\\ &= \lim_{t\to\infty}\frac{1}{t\ln(1+\frac{1}{t})}\\ &= \lim_{t\to\infty}\frac{1}{\ln\left( (1+\frac{1}{t})^t\right)}\\ &= \frac{1}{\ln\left(\lim_{t\to\infty}(1 + \frac{1}{t})^t\right)}\\ &= \frac{1}{\ln(e)}\\ &= 1. \end{align*}
+\begin{align*} \lim_{t\to-\infty}\left(1 + \frac{1}{t}\right)^t &= \lim_{n\to\infty}\left(1 - \frac{1}{n}\right)^{-n}\\ &= \lim_{n\to\infty}\frac{1}{(1 + \frac{-1}{n})^n}\\ &= \frac{1}{e^{-1}}\\ &= e,\end{align*}
+\lim_{h\to 0^-}\frac{e^h-1}{h} = 1.
+\lim_{h\to 0}\frac{e^h-1}{h} = 1.
+a\gt 0
+a\neq 1
+a^h = e^{h\ln(a)}
+t = h\ln(a)
+a=h
+a
+e
+\lim_{h\to0}(e^h-1)/h)=1
+a^h=e^{h\log a}
+(a^h-1)/h=(e^{h\log a}-1)/h={e^{h\log a}-1\over h\log a}\log a
+\lim_{h\to0}(a^h-1)/h=(\log a)\lim_{h\to0}{e^{h\log a}-1\over h\log a}=\log a

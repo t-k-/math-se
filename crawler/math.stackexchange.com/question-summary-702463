@@ -1,0 +1,7 @@
+\int_a^b f^n dB_t \rightarrow \int_a^b f dB_t
+f,f^n \in L^2([a,b] \times\Omega) 
+ \int_a^b |f^n(t) - f(t)| dt \rightarrow 0 \;\;\; \text{a.s.}
+P(|\int_a^b (f^n -f) \, dB_t |> \epsilon ) 
+X_n = \int_a^b (f^n - f) dB_t
+P(|\int_a^b (f^n -f) \, dB_t |> \epsilon ) < \frac{Var(X_n)}{\epsilon^2}
+Var(X_n) = \int_a^b (f_n-f)^2 dt 

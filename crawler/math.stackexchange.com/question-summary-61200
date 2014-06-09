@@ -1,0 +1,93 @@
+\mathbf{M}
+S
+T
+R
+\mathbf{M}(R)(T)(S)=\mathbf{M^'}
+\mathbf{M^'}
+\mathbf{M^'}\vec{x}=\vec{x^{'}}
+(S)(T)(R)\mathbf{M}=\mathbf{M^'}
+C(i,j)=\sum_{k}A(i,k)B(k,j)
+C(i,j)=\sum_{k}A(i,k)B(j,k)
+C(i,j)=\sum_{k}A(k,i)B(k,j)
+C(i,j)=\sum_{k}A(k,i)B(j,k)
+C(i,j)=\sum_{k}A(j,k)B(k,i)
+C(i,j)=\sum_{k}A(j,k)B(i,k)
+C(i,j)=\sum_{k}A(k,j)B(k,i)
+C(i,j)=\sum_{k}A(k,j)B(i,k)
+a
+b
+a*b
+a
+b
+b*a
+a
+b
+c\leftarrow a
+b
+c
+\leftarrow
+a
+b
+a
+b
+A
+B
+C
+C
+AB
+AB
+A
+B
+S_4
+S_4
+(x,y,z)
+(6,4,3)
+(-6,4,3)
+(0,-8,3)
+(0,0,-9)
+  \begin{array}{rrrr} 6 & -6 & 0 & 0\\ 4 & 4 & -8 & 0\\ 3 & 3 & 3 & -9  & \\  & \\  & \\  & \\  & \end{array}  
+  \begin{array}{rrrlrrrrlrrrr} -1/2  & -1/4 & -2/3 & & 6 & -6 & 0 & 0 & & -6 & 0 & 0 & 6\\ 1/3  & 5/6 & -4/9 & \times & 4 & 4 & -8 & 0 & = & 4 &0 & 4 & -8\\ 1 & -1/2 & -1/3 & & 3 & 3 & 3 & -9 & & 3 & -9 & 3 & 3\\  & \\  & \\  & \\  & \\  & \end{array}  
+  \begin{array}{rrrlrrrrlrrrr} 1/2  & -3/4 & 0 & & 6 & -6 & 0 & 0 & & 0 & -6 & 6 & 0\\ -1  & -1/2 & 0 & \times & 4 & 4 & -8 & 0 & = & -8 & 4 & 4 & 0\\ 0 & 0 & 1 & & 3 & 3 & 3 & -9 & & 3 & 3 & 3 & -9\\  & \\  & \\  & \\  & \\  & \end{array}  
+\times 
+  \begin{array}{rrrlrrrlrrr} -1/2  & -1/4 & -2/3 & & 1/2 & -3/4 & 0 & & 0 & 1/2 & -2/3 \\ 1/3  & 5/6 & -4/9 & \times & -1 & -1/2 & 0 & & = -2/3 & -2/3 & -4/9 \\ 1 & -1/2 & -1/3 & & 0 & 0 & 0 & & 1 & -1/2 & -1/3 \\  & \\  & \\  & \\  & \\  & \end{array}  
+  \begin{array}{rrrlrrrrlrrrr} 0  & -1/2 & -2/3 & & 6 & -6 & 0 & 0 & & 0 & 0 & -6 & 6\\ -2/3  & -2/3 & -4/9 & \times & 4 & 4 & -8 & 0 & = & -8 & 0 & 4 & 4\\ 1 & -1/2 & -1/3 & & 3 & 3 & 3 & -9 & & 3 & -9 & 3 & 3\\  & \\  & \\  & \\  & \\  & \end{array}  
+\mathtt R
+s
+\mathbf t
+\mathtt T = \left[ \begin{array}{cc} s\mathtt R & \mathbf t  \\ \mathtt O& 1\end{array} \right]
+\mathtt T \cdot \left( \begin{array}{c} \mathbf x  \\  1\end{array} \right)   = \left[ \begin{array}{c} s(\mathtt R\cdot \mathbf x) + \mathbf t  \\  1\end{array} \right]
+s(\mathtt R\cdot \mathbf x)=\mathtt R(s\cdot \mathbf x)
+\mathbf y
+\mathbf y= (\mathbf x,  1)^\top 
+\mathbf y_a
+a
+b
+\mathtt T_{ba}
+b
+a
+ \mathbf y_b = \mathtt T_{ba} \mathbf y_a
+\mathbf y_a = \mathtt T_{ab}\mathtt T_{bc}\mathtt T_{cd}\mathbf y_d
+\mathtt T_{ab}
+\mathtt T_{bc}
+\mathtt T_{ai} := \mathtt T_{ab}
+i=b
+\mathtt T_{ai} := \mathtt T_{ai}\cdot \mathtt T_{bc}
+i=c
+\mathtt T_{ai} := \mathtt T_{ai}\cdot \mathtt T_{cd}
+i=d
+\mathtt T_{ai}
+\mathtt T_{ad}
+d
+a
+\mathbf y_a :=  \mathtt T_{ad} \mathbf y_d 
+\mathtt T_{ia}=\mathtt T_{ai}^{-1}.
+\mathtt T_{ia} := \mathtt T_{ab}^{-1}
+i=b
+\mathtt T_{ia} :=  \mathtt T_{bc}^{-1} \mathtt T_{ia}
+i=c
+\mathtt T_{ia} := \mathtt T_{cd}^{-1}\mathtt T_{ia}
+i=d
+\mathtt T_{ia} = \mathtt T_{da}
+d
+a
+\mathbf y_a :=  \mathtt T_{da}^{-1} \mathbf y_d 

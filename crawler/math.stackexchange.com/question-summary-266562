@@ -1,0 +1,4 @@
+\frac{1}{3}+\frac{1}{4}\cdot\frac{1}{2!}+\frac{1}{5}\cdot\frac{1}{3!}+\cdots
+\begin{align*} \frac{1}{3}+\frac{1}{4}\cdot\frac{1}{2!}+\frac{1}{5}\cdot\frac{1}{3!}+\cdots &=\sum_{n=1}^{\infty}\frac{1}{n+2}\cdot\frac{1}{n!}\\ &=\sum_{n=1}^{\infty}\frac{n+1}{(n+2)!}\\ &=\sum_{n=1}^{\infty}[\frac{1}{(n+1)!}-\frac{1}{(n+2)!}]\\ &=\frac{1}{2} \end{align*}
+\begin{align*} \frac{1}{3}+\frac{1}{4}\cdot\frac{1}{2!}+\frac{1}{5}\cdot\frac{1}{3!}+\cdots &=\sum_{n=1}^{\infty}\frac{1}{n+2}\cdot\frac{1}{n!}\\ &=\sum_{n=1}^{\infty}\int_{0}^{1}\frac{x^{n+1}}{n!}dx\\ &=\int_{0}^{1}\sum_{n=1}^{\infty}\frac{x^{n+1}}{n!}dx\\ &=\int_{0}^{1}x\sum_{n=1}^{\infty}\frac{x^{n}}{n!}dx\\ &=\int_{0}^{1}x(e^x-1)dx\\ &=\frac{-1}{2} \end{align*}
+\int^{1}_{0}x(e^{x}-1)dx=[e^{x}(x-1)-\frac{x^{2}}{2}]|^{1}_{0}=\frac{1}{2}

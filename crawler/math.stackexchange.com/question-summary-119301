@@ -1,0 +1,21 @@
+X_{1}
+X_{2}
+K = X_{1}X_{2}
+f_{K}(k) = f_{X_{1}}(x_1) \cdot f_{X_{2}}(x_2)
+X_1
+X_2
+f
+f_{X_1}
+f_{X_2}
+X_1
+X_2
+Z=X_1X_2
+z \in \Bbb R
+A_z :=\{(x_1,x_2) \mid x_1x_2 \le z\}
+A_z=\{(x_1,x_2) \mid x_1 \gt 0~~\mbox{and} x_2 \lt \frac{z}{x_1} \}\bigsqcup \{(x_1,x_2) \mid x_1 \lt 0~~\mbox{and} x_2 \gt \frac{z}{x_1} \}
+\begin{align} P(Z \le z) &= \iint_{A_z} f(x_1,x_2) dx_1 dx_2 \\&= \int _0 ^\infty \left(\int_{-\infty}^{z/x_1} f(x_1,x_2) dx_2\right)dx_1+\int_{-\infty}^0 \left(\int_{z/x_1}^\infty f(x_1,x_2) dx_2\right)dx_1\\&\overset{(1)}{=}\int _0 ^\infty \left(\int_{-\infty}^{z} \frac 1 x_1 f(x_1,\frac v x_1) dv\right)dx_1+\int_{-\infty}^0 \left(\int_{z}^{-\infty} \frac 1 x_1 f(x_1,\frac v x_1) dv\right)dx_1\\&=\int _0 ^\infty \left(\int_{-\infty}^{z} \frac 1 x_1 f(x_1,\frac v x_1) dv\right)dx_1+\int_{-\infty}^0 \left(\int_{-\infty}^z \left(-\frac 1 x_1\right) f(x_1,\frac v x_1) dv\right)dx_1 \\ &=\int_{-\infty}^\infty \left(\int_{-\infty}^z\left| \dfrac{1}{x_1} \right| f(x_1, \frac v x_1)dv \right) dx_1\\&\overset{(2)}{=}\int_{-\infty}^z \left(\int_{-\infty}^\infty\left| \dfrac{1}{x_1} \right| f(x_1, \frac v x_1)dx_1\right) dv \end{align}
+f_{X_1X_2}(z)=\int_{-\infty}^{\infty}\left| \dfrac{1}{x}\right|f(x, \frac z x) dx
+f_{X_1X_2}(z)=\int_{-\infty}^\infty \left| \frac 1 x\right| f_{X_1}(x) f_{X_2}(\frac z x) dx
+(1)
+x_2=\dfrac{v}{x_1}
+(2)

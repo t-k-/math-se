@@ -1,0 +1,20 @@
+0 \lt a \lt b,
+\lim_{t \to 0} \left(\int_0^1[bx+a(1-x)]^t \mathrm dx \right)^{1/t}
+(b-a)x+a=u
+\begin{align*} \lim_{t \to 0}\left(\frac1{b-a}\int_a^bu^t\ \mathrm du\right)^{1/t} =&\,\lim_{t \to 0}\left(\frac{1}{b-a}\,\Bigl[\frac {u^{t+1}}{t+1}\Bigr]_a^b\right)^{1/t}\\  =&\,\left(\frac{1}{b-a}\left(\lim_{t \to 0} \frac{b^{t+1}}{t+1}-\frac{a^{t+1}}{t+1}\right)\right)^{1/t} \end{align*}
+\lim_{t\to0}\bigg(\frac{1}{b-a}\int_{a}^{b}u^{t}dt\bigg)^{\frac{1}{t}}=e^{\lim_{t\to0}\frac{\ln\big(\frac{1}{b-a}\int_{a}^{b}u^{t}dt\big)}{t}}=e^{\lim_{t\to0}\frac{\ln\big(\frac{1}{(b-a)(t+1)}(b^{t+1}-a^{t+1})\big)}{t}}
+\lim_{t\to0}\frac{\ln\big(\frac{1}{(b-a)(t+1)}(b^{t+1}-a^{t+1}\big)}{t}
+=\lim_{t\to0}\frac{(b-a)(t+1)}{b^{t+1}-a^{t+1}}((b^{t+1}\ln(b)-a^{t+1}\ln(a))(b-a)(t+1))-(b^{t+1}-a^{t+1})(b-a))\frac{1}{(b-a)^{2}(t+1)^{2}}=\frac{b\ln(b)-a\ln(a)}{(b-a)}-1
+e^{\frac{b\ln(b)-a\ln(a)}{b-a}-1}
+ L := \lim_{t\to 0} \left( \frac{1}{b-a} \frac{b^{t+1} - a^{t+1}}{t+1} \right)^{1/t}. 
+1/t
+t
+ b^{t} = e^{t\log b} = 1 + t \log b + \cdots 
+a^{t}
+ \lim_{t\to 0} (1 + xt)^{1/t} = e^{x}. 
+ L = \exp\left( \frac{b\log b - a\log a}{b-a} - 1 \right). 
+0\lt a\le f(x)\le b\lt\infty
+[0,1]
+[0,1]
+ \lim_{t\to0}\frac1t\left(f(x)^t-1\right)=\log(f(x)) 
+ \begin{align} \lim_{t\to0}\left(\int_0^1f(x)^t\,\mathrm{d}x\right)^{1/t} &=\lim_{t\to0}\left(1+t\int_0^1\frac1t\left(f(x)^t-1\right)\,\mathrm{d}x\right)^{1/t}\\ &=\lim_{t\to0}\left(1+t\int_0^1\log\left(f(x)\right)\,\mathrm{d}x\right)^{1/t}\\[6pt] &=e^{\int_0^1\log\left(f(x)\right)\,\mathrm{d}x} \end{align} 

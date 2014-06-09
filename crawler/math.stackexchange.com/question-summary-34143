@@ -1,0 +1,21 @@
+\frac{dV_S}{dt}=RV_{in}-RV_{out} \; .
+V_S(t)=V_S(0)+(RV_{in}-RV_{out})t \; .
+\frac{dM_S}{dt}=RM_{in}-\frac{dM_{out}}{dt} \; .
+\frac{dM_{out}}{dt}=RV_{out} \cdot C_S \; ,
+\frac{dM_S}{dt}=RM_{in}-RV_{out} \cdot C_S \; .
+C_S=M_S/V_S
+\frac{dC_S}{dt}=\frac{d}{dt}\left(\frac{M_S}{V_S}\right)= \frac{1}{V_S}\frac{dM_S}{dt}-\frac{M_S}{V_S^2}\frac{dV_S}{dt} \; .
+\frac{dC_S}{dt} = \frac{1}{V_S}\left(\frac{dM_S}{dt} -C_S\frac{dV_S}{dt}\right) 
+\frac{dC_S}{dt} = \frac{1}{V_S}\left(RM_{in}-RV_{out} \cdot C_S-C_S(RV_{in}-RV_{out})\right) 
+\frac{dC_S}{dt} =  \frac{1}{V_S}\left(RM_{in}-C_S\cdot RV_{in}\right) 
+\frac{dC_S}{dt} =  \frac{RM_{in}-C_S\cdot RV_{in}}{V_S(0)+(RV_{in}-RV_{out})t} 
+\frac{dC_S}{RM_{in}-C_S\cdot RV_{in}} =  \frac{dt}{V_S(0)+(RV_{in}-RV_{out})t} 
+\frac{-1}{RV_{in}}\log(RM_{in}-C_S\cdot RV_{in}) =  \frac{1}{(RV_{in}-RV_{out})}\log(V_S(0)+(RV_{in}-RV_{out})t) + K 
+K
+RM_{in}-C_S\cdot RV_{in} =  A (V_S(0)+(RV_{in}-RV_{out})t)^{\frac{RV_{in}}{(RV_{out}-RV_{in})}} 
+\exp(K)=A
+A
+RM_{in}-C_S(0)\cdot RV_{in} =  A (V_S(0))^{\frac{RV_{in}}{(RV_{out}-RV_{in})}} \; .
+C_S =  \frac{RM_{in} - A (V_S(0)+(RV_{in}-RV_{out})t)^{\frac{RV_{in}}{(RV_{out}-RV_{in})}}}{RV_{in}} \; ,
+A
+C_S(t) =  \frac{RM_{in} - (RM_{in}-C_S(0)\cdot RV_{in}) (1+(\frac{RV_{in}-RV_{out}}{V_S(0)})t)^{\frac{RV_{in}}{(RV_{out}-RV_{in})}}}{RV_{in}} \; .

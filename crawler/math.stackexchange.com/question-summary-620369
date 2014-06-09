@@ -1,0 +1,8 @@
+e^z 
+r>0
+|z|,|w|\leq r \implies |e^z-e^w|\leq e^r|z-w|
+z^{n+1}-w^{n+1}=(z-w)\sum_{j=0}^{n} z^jw^{n-j}
+|e^z-e^w|=|\sum_{n=0}^{\infty} \frac{z^n}{n!} - \sum_{n=0}^{\infty} \frac{w^n}{n!}|=|\sum_{n=1}^{\infty} \frac{z^n-w^n}{n!}| \\ \leq \sum_{n=1}^{\infty}|\frac{z^n-w^n}{n!}|=\sum_{n=1}^{\infty}|(z-w)\sum_{j=0}^{n-1} \frac{z^jw^{n-1-j}}{n!}|
+|e^z-e^w|\le|z-w|\sum_{n=1}^\infty\frac1{n!}\sum_{k=0}^{n-1}\left|z^kw^{n-1-k}\right|
+\sum_{k=0}^{n-1}|z^kw^{n-1-k}|\le\sum_{k=0}^{n-1}r^{k+n-1-k}=nr^{n-1}
+|z-w|\sum_{n=1}^\infty\frac1{n!}\sum_{k=0}^{n-1}\left|z^kw^{n-1-k}\right|\le|z-w|\sum_{n=1}^\infty\frac{r^{n-1}}{(n-1)!}=|z-w|e^r

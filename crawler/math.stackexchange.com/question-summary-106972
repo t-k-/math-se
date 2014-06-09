@@ -1,0 +1,49 @@
+S_n = \{ 1, 2, 3,\dots n\}
+K_n
+\{ \{1,4\}, 6 , 2, \{5,3\} \}
+S_6
+K_n
+K_1 = \binom{1}{1} = 1
+K_2 = \binom{2}{2} + \binom{2}{2} = 2
+K_3 = \binom{3}{3} + \binom{3}{2} = 4
+K_4 = \binom{4}{4} + \binom{4}{2} + \frac{\binom{4}{2}}{2!} = 10
+K_5 = \binom{5}{5} + \binom{5}{2} + \frac{\binom{5}{2}\binom{3}{2}}{2!} = 26
+K_6 = \binom{6}{6} + \binom{6}{2} + \frac{\binom{6}{2}\binom{4}{2}}{2!} + \frac{\binom{6}{2}\binom{4}{2}}{3!} = 76
+K_n = K_{n-1} + (n-1)\cdot K_{n-2}
+n
+K_{n-1}
+K_{n-1}
+K_n
+n
+0
+K_n
+n
+n-1
+K_{n-1}
+K_n
+n
+K_{n-1}
+(n-1)K_{n-2}
+n
+K_1=1
+K_2=2
+(\ast)
+K_3
+K_4
+K_5
+K_n=K_{n-1}+(n-1)K_{n-2}.\qquad\qquad(\ast)
+n
+(n-1)
+(n-2)
+n-1
+W_{n-1}
+n-2
+W_{n-2}
+W_n=W_{n-1}+W_{n-2},
+\hat{K}(z) = \sum_{n \ge 0} K_n \frac{z^n}{n!}
+n - 1
+K_n = 1, 1, 2, 4, 5, \ldots
+ K_{n + 1} = K_n + n K_{n - 1} \qquad K_0 = K_1 = 1 
+ \hat{K}'(z) = \hat{K}(z) + z \frac{d}{dz} \int \hat{K}(z) dz 
+ \int_1^\hat{K} \frac{d \hat{K}'}{\hat{K}} = \int_0^z (1 + z) dz 
+ \hat{K}(z) = e^{z + z^2/2} 

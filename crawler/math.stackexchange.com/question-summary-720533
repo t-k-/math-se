@@ -1,0 +1,6 @@
+p(z) = E[z^X]
+\sum_{k \geq 0} Pr[X \geq k] z^k = \frac{1-zp(z)}{1-z}
+Pr[X \geq k]
+X \geq k
+ \sum_{k=0}^\infty P(X\geqslant k)z^k=\sum_{k=0}^\infty\sum_{i=k}^\infty P(X=i)z^k=\sum_{i=0}^\infty P(X=i)\sum_{k=0}^iz^k 
+ \sum_{k=0}^\infty P(X\geqslant k)z^k=\sum_{i=0}^\infty P(X=i)\frac{1-z^{i+1}}{1-z}=\frac{1-zE(z^X)}{1-z}. 

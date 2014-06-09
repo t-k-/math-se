@@ -1,0 +1,22 @@
+M:X \rightarrow C([0,1])
+t\in [0,1]
+x \mapsto (Mx)(t)
+\ell_t(x) = (Mx)(t)
+(\Rightarrow)
+(\Leftarrow)
+\lim_{n\rightarrow \infty} x_n = x
+\lim_{n\rightarrow \infty} Mx_n = y
+Mx = y
+\ell_t(x)
+\lim_{n\rightarrow \infty} \ell_t(x_n) = \lim_{n\rightarrow \infty}(Mx_n)(t) = (Mx)(t) = \ell_t(x)
+\|Mx- y\| =\sup_t|\ell_t(x) - y(t)| =   \sup_t |\lim_{n\rightarrow \infty} \ell_t(x_n) - y(t)| \leq \epsilon 
+\Leftarrow
+\sup (\ldots) \leq \varepsilon
+x \mapsto \ell_t(x)
+t \in [0,1]
+x \in X
+Mx \in C[0,1]
+M
+\sup_{t \in [0,1]} |\ell_t(x)| = \sup_{t \in [0,1]} |(Mx)(t)| \leq \|Mx\|_{\infty} < \infty
+M :=\sup_{t \in [0,1]} \|\ell_t\| < \infty
+\|Mx\|_{\infty} = \sup_{t \in [0,1]} |(Mx)(t)| \leq \underbrace{\sup_{t \in [0,1]} \|\ell_t\|}_{M} \cdot \|x\|

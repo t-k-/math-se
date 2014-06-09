@@ -1,0 +1,23 @@
+f(a,b)
+1
+0
+a \in \{1,\dots, n^4\}
+b \in \{1,\dots n\}
+P_{a,b}(f(a,b) = 1) = p
+a
+b
+i
+P_{b}(f(a,b)= 1|a=i) \leq p
+b
+f(a, b) = 1
+a \in A
+b \in B
+A \subset \lbrace 1, \dots n^4 \rbrace
+B \subset \lbrace a, \dots n \rbrace
+a
+b
+a \not\in i
+a \in A
+P(f(a, b) = 1) = P(a \in A, b \in B) = P(a \in A)P(b \in B)
+ P(f(a, b) = 1 | a= i)= \begin{cases}0 & i \not\in A \\P(b \in B)& i \in A \end{cases} 
+ p = P(a \in A)P( b \in B) \leq P(b \in B | a= i)= P(b \in B)  = P(f(a, b) = 1|a=i).  

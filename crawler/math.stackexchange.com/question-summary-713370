@@ -1,0 +1,186 @@
+A
+B
+s \in \mathbb N
+f \colon A \rightarrow B
+g \colon B \rightarrow A
+h = g \circ f
+A
+B
+n \in \mathbb N
+f \colon A \rightarrow B
+g \colon B \rightarrow A
+(a \in A, b \in B)
+f(a) = b
+g(b) = a
+E
+P
+N
+E(\text{number of pairs}) = \sum\limits_{k=0}^n k \cdot P(\text{there are exactly }k\text{ pairs})
+P(\text{there are exactly }k\text{ pairs}) = \frac {N(\text{situations with }k\text{ pairs})} {N(\text{total situations})}
+N(\text{total situations}) = (n^n)^2,
+n^n
+A
+B
+ \begin{aligned}  N & (\text{situations with }k\text{ pairs}) = \\  & = N(\text{pairs of functions }(f \colon A \rightarrow B, g \colon B \rightarrow A) \\  & \quad \text{ whose composition has exactly }k\text{ fixed points}) = \\  & = \sum [\text{over selections of }k\text{ elements from both }A\text{ and }B] \\  & \quad N(\text{pairs of functions whose composition is identity only on the selection}) = \\  & = {\binom {n} {k}}^2 \cdot k! \cdot N(\text{pairs of functions on two sets containing } \\  & \quad s = n - k\text{ elements whose composition has no fixed points}) \end{aligned} 
+N(s)
+E(\text{number of pairs}) = \frac {1} {(n^n)^2} \sum\limits_{k=0}^n k \cdot {\binom {n} {k}}^2 \cdot k! \cdot N(n - k)
+g
+f
+ \begin{multline} N(s) = \sum [\text{over all functions }g \colon B \rightarrow A] \\ N(\text{functions }f \colon A \rightarrow B\text{ such that the composition }h = g \circ f \\ \text{ has no fixed points}) \end{multline} 
+f
+a
+g^{-1}(a)
+\prod\limits_{a \in A} (n - \left|g^{-1}(a)\right|)
+\left\{g^{-1}(a)\right\}_{a \in A}
+B
+g
+f \colon A \to B
+g \colon B \to A
+\lvert A \rvert = \lvert B \rvert = n
+\lvert A \rvert = m
+\lvert B \rvert = w
+m = w = n
+w^m m^w
+(f, g)
+f\colon A \to B
+a \in A
+f(a) = b \in B
+g\colon B\to A
+g(b) = a
+\dfrac1m
+g(b)
+\left\vert{A}\right\vert = m
+f
+f
+f
+f
+f
+\operatorname{E}\left[\#\{a: g(f(a)) = a\}\right] = \sum_{a \in A} \Pr(g(f(a)) = m \frac1m = 1.
+f \colon A \to B
+g \colon B \to A
+g \circ f
+f
+\displaystyle \binom{w}{k}k! w^{m-k}
+f
+(f, g)
+w^{m-k}m^{w-k}\binom{w}{k}k!
+\frac{\frac{1}{m^k} \cdot \binom{w}{k}k! w^{m-k} + 0 \cdot \text{(the rest)}}{w^m} = \frac{\binom{w}{k}k!}{m^k w^k}
+f
+a_i
+\binom{w}{k}k!
+a
+w^{m-k}
+g
+m^{w-k}
+\begin{align} \Pr(L = \emptyset)  &= \Pr(\emptyset \subseteq L) - \binom{m}{1}\Pr(A_1 \subseteq L) + \binom{m}{2}\Pr(A_2 \subseteq L) - \binom{m}{3}\Pr(A_3 \subseteq L) + \dots \\ &= \sum_{k=0}^m (-1)^k \binom{m}{k}\binom{w}{k} k! m^{-k}w^{-k} \end{align}
+P_{m, w, 0} = \sum_{k=0}^{\infty} \frac{m^{\underline k}}{m^k} \frac{w^{\underline k}}{w^k} \frac{(-1)^k}{k!}
+\infty
+m
+m
+w
+k > m
+m^{\underline k} = 0
+k > w
+w^{\underline k} = 0
+k = \min(m, w)
+m = w = n
+(f, g)
+g \circ f
+\begin{align} T_n  &= n^{2n} P_{n,n,0} \\ &= n^{2n} \sum_{k=0}^n (-1)^k \binom{n}{k}^2 k! n^{-2k} \\ &= n^{2n} \sum_{k=0}^n \left(\frac{n^{\underline k}}{n^k}\right)^2 \frac{(-1)^k}{k!} \end{align}
+T_n
+n = 0, 1, 2, \dots
+P_{n,n,0} = \dfrac{T_n}{n^{2n}}
+1, 0, 2, 156, 16920, 2764880, 650696400, 210105425628, 89425255439744, 48588905856409920, 32845298636854828800, 27047610425293718239100, 26664178085975252011318272, 31009985808408471580603417296, 42017027730087624384021945067520, 65618911142809749231767185516069500, \dots
+1, 0, \frac18, \frac{52}{243}, \frac{2215}{8192}, \frac{552976}{1953125}, \dots
+\approx 1, 0, 0.125, 0.214, 0.258, 0.283, 0.299, 0.310, 0.318, 0.324, 0.328, 0.332, 0.335, 0.338, 0.340, 0.342, \dots
+P_{n, n, 0}
+\dfrac{1}{e} \approx 0.367879\dots
+n \to \infty
+A_k
+k
+\begin{align} \Pr(L = A_k) &= \Pr(A_k \subseteq L) - \binom{m-k}{1}\Pr(A_{k+1} \subseteq L) + \binom{m-k}{2}\Pr(A_{k+2} \subseteq L) - \dots \\ &= \sum_{r=0}^{m-k} (-1)^r \binom{m-k}{r} \binom{w}{k+r}\frac{(k+r)!}{m^{k+r}w^{k+r}} \\ &= \sum_{l=k}^m (-1)^{l-k} \binom{m-k}{l-k} \binom{w}{l} \frac{l!}{m^l w^l} \end{align}
+k
+\displaystyle \binom{m}{k}
+\begin{align} P_{m, w, k}  &= \sum_{l=k}^m (-1)^{l-k} \binom{m}{k} \binom{m-k}{l-k} \binom{w}{l}\frac{l!}{m^l w^l} \\ &= \sum_{l=k}^m (-1)^{l-k} \binom{l}{k} \binom{m}{l} \binom{w}{l} \frac{l!}{m^l w^l} \\ &= \frac{1}{k!} \sum_{l=k}^m \frac{m^{\underline l}}{m^l} \frac{w^{\underline l}}{w^l} \frac{(-1)^{l-k}}{(l-k)!} \\ &= \frac{1}{k!} \sum_{r=0}^{\infty} \frac{m^{\underline {k+r}}}{m^{k+r}} \frac{w^{\underline {k+r}}}{w^{k+r}} \frac{(-1)^r}{r!} \end{align}
+k=0
+P_{m, w, 0}
+P_{m, w, k} \to \frac{1}{k!e}
+m, w \to \infty
+1
+r=0
+\begin{align} \sum_{k=0}^m k P_{m, w, k}  &= \sum_{k=0}^m k \sum_{r=k}^{m} (-1)^{r-k} \binom{r}{k} \binom{m}{r} \binom{w}{r}\frac{r!}{m^rw^r} \\ &= \sum_{r=0}^m \binom{m}{r}\binom{w}{r}\frac{r!}{m^rw^r} (-1)^r \sum_{k=0}^r k\binom{r}{k} (-1)^{k} \\ &= 1 \end{align}
+P_{m, w, k}
+m
+w
+(m_i, w_i)
+m_i \to \infty
+w_i \to \infty
+i \to \infty
+\begin{align} \lim_{i \to \infty} P_{m_i, w_i, k}  &= \lim_{i \to \infty} \frac{1}{k!} \sum_{r=0}^{\infty} \frac{m_i^{\underline {k+r}}}{m^{k+r}} \frac{w_i^{\underline {k+r}}}{w^{k+r}} \frac{(-1)^r}{r!} \\ &= \frac{1}{k!} \sum_{r=0}^{\infty} \frac{(-1)^r}{r!} \\ &= \frac{1}{k!e} \end{align}
+0 \le n \le 7
+n^{2n}P_{n, n, k}
+f,g
+m=w=n
+f \circ g
+k
+P_{n, n, k}
+n = 10000
+\frac{1}{k!e}
+E(H)
+1
+f:\>A\to B
+E(H\,|\, f)=1
+H
+1
+f \circ g
+f \circ g = h
+N =  \{ 1, 2 , \dots, n\}
+f
+g
+f, g
+f
+g
+n! \left[ \frac{n!}{e} \right]
+h = f \circ g
+K = \{ 1, \dots, k\}
+f \circ g|_K:K \to K
+k! \left[ \frac{k!}{e} \right]
+h
+x \in N \setminus K
+h(x) \in K
+Im h
+k! \left[ \frac{k!}{e} \right] \cdot (n-k)^k 
+ \sum_{k=1}^n {n \choose k} k! \left[ \frac{k!}{e} \right] \cdot (n-k)^k 
+J\subseteq N=\{1,\dots,n\}
+P_J
+f,g:N\to N
+J
+g\circ f
+|J|=1
+J=\{1\}
+P_J=\dfrac{1}{n}
+g
+f(1)
+1
+|J|=2
+J=\{1,2\}
+J
+f(1)\ne f(2)
+\dfrac{n-1}{n}
+g(f(i))=i
+i=1,2
+\dfrac{1}{n^2}
+P_J=\dfrac{n-1}{n^3}
+J=\{1,\dots,k\}
+f(1),f(2),\dots,f(k)
+\dfrac{n!}{(n-k)!\,n^k}
+g(f(i))=i
+i=1\dots k
+\dfrac{1}{n^k}
+P_J=\dfrac{n!}{(n-k)!\,n^{2k}}
+{n\choose1}P_{\{1\}}-{n\choose2}P_{\{1,2\}}+{n\choose3}P_{\{1,2,3\}}\cdots \pm {n\choose n}P_{\{1,\dots,n\}} = \sum_{k=1}^n(-1)^{k+1}{n\choose k} \dfrac{n!}{(n-k)!\,n^{2k}}\textrm.
+1 - n^{-2 n} U(-n, 1, n^2)
+U(a,b,z)
+\dfrac{1}{\Gamma(a)}\int_0^\infty e^{-zt}t^{a-1}(1+t)^{b-a-1}\,dt
+n\to\infty
+1-\dfrac{1}{e}

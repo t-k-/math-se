@@ -1,0 +1,7 @@
+\gamma(\theta)
+e^{i\theta}
+0\le\theta\le2\pi
+\int_{\gamma}e^zdz
+\int_{\gamma}e^zdz = \int_{0}^{2\pi}e^{e^{i\theta}}\cdot ie^{i\theta}d\theta = \int_{0}^{2\pi}e^{\cos\theta+i\sin\theta}\cdot i(\cos\theta+i\sin\theta)d\theta.
+ \begin{eqnarray}   \int_0^{2 \pi} \mathrm{e}^{\cos(\theta)} \cos(\theta + \sin(\theta)) \mathrm{d} \theta &=&    \int_0^{2 \pi} \frac{\mathrm{d}}{\mathrm{d} \theta} \left( \mathrm{e}^{\cos(\theta)} \sin(\sin(\theta))  \right) \mathrm{d} \theta = \left. \mathrm{e}^{\cos(\theta)} \sin(\sin(\theta)) \right|_0^{2\pi} = 0 \end{eqnarray} 
+ \begin{eqnarray}   \mathrm{e}^{\cos(\theta)} \cos(\theta + \sin(\theta)) &=&  \mathrm{e}^{\cos(\theta)} \cos(\theta) \cos(\sin(\theta)) -  \mathrm{e}^{\cos(\theta)}  \sin(\theta) \sin(\sin(\theta) \\     &=& \mathrm{e}^{\cos(\theta)} \cdot  \frac{\mathrm{d} \sin(\sin(\theta))}{\mathrm{d} \theta} +        \frac{\mathrm{d} \mathrm{e}^{\cos(\theta)}}{\mathrm{d} \theta} \cdot \sin(\sin(\theta)) \\   &=& \frac{\mathrm{d}}{\mathrm{d} \theta} \left( \mathrm{e}^{\cos(\theta)} \sin(\sin(\theta))  \right) \end{eqnarray} 

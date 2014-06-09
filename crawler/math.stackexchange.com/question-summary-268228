@@ -1,0 +1,45 @@
+[0,1]
+X_{1}
+[0,X_{1}]
+X_{2}
+[0,X_{2}]
+X_{3}
+f(x_{1},x_{2},x_{3})
+(X_{1},X_{2},X_{3})
+X_{3}
+F(x_{1},x_{2},x_{3})=P(X_{1}\leq x_{1},X_{2}\leq x_{2},X_{3}\leq x_{3})
+X_{2}
+X_{1}
+X_{3}
+X_{1},X_{2}
+F_{Y|X}(y|x)=P(Y\leq y|X\leq x)
+3
+f_{X_1,X_2,X_3}
+X_3
+X_2
+X_2
+X_1
+f_{X_1,X_2,X_3}
+f_{X_1,X_2,X_3}(x_1,x_2,x_3) = f_{X_3|X_2,X_1}(x_3|x_2,x_1) \cdot f_{X_2|X_1}(x_2|x_1) \cdot f_{X_1}(x_1) \tag{1}
+f_{Y|Z}(y|z) := \begin{cases} \frac{f_{Y,Z}(y,z)}{f_Z(z)} & f_Z(z) \not= 0 \\ 0 & f_Z(z)=0 \end{cases} \tag{2}
+Y
+Z
+Y,Z
+(1)
+(2)
+(1)
+(1)
+f_{X_2|X_1}
+Y \hat{=} X_2
+Z \hat{=} X_1
+(2)
+f_{X_1}(x_1)=0
+x_1 \in \mathbb{R} \backslash [0,1]
+X_1
+[0,1]
+x_1 \in \mathbb{R} \backslash [0,1]
+x_1 \in [0,1]
+f_{X_2|X_1}(x_2|x_1) = 0
+f_{X_2|X_1}(x_2|x_1) = \frac{1}{x_1} \cdot 1_{[0,x_1]}(x_2)
+f_{X_2|X_1}(x_2|x_1) = \frac{1}{x_1} \cdot 1_{[0,x_1]}(x_2) \cdot 1_{[0,1]}(x_1)
+f_{X_3|X_2,X_1}

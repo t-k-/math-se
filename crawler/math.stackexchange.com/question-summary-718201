@@ -1,0 +1,12 @@
+Y = \varepsilon g(\theta,X)
+\varepsilon
+f_{\varepsilon}(x)
+F_{\varepsilon}(x)
+E[\varepsilon]=1, \sigma[\varepsilon]=\gamma
+e_i(Y) = \frac{Y}{g(\theta,X_i)}
+F(e_i(Y)|X_i,\theta,g(\theta,X_i)) = F_{\varepsilon}(e_i(Y))
+L(\theta|(x_i,y_i),f_{\varepsilon})=\prod\limits_{i=1}^n f_{\varepsilon}(e_i(Y_i))
+0=\sum\limits_{i=1}^n -\frac{Y_i \left(\frac{\partial f_{\varepsilon}(z)}{\partial z}|_{z=e_i(Y_i)}\right) \left( \frac{\partial g(\theta,X_i)}{\partial \theta} \right)}{f_{\varepsilon}(e_i(Y_i))g^2(\theta,X_i)}
+\varepsilon \sim \mathcal{N}(1,\gamma)
+0 = \frac{1}{\gamma^2}\sum\limits_{i=1}^n \left[ \frac{\frac{\partial g(\theta,X_i)}{\partial \theta}\cdot Y_i \cdot (e_i(Y_i)-1)}{g^2(\theta,X_i)} \right] 
+g(\theta, X)

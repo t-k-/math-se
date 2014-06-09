@@ -1,0 +1,40 @@
+[n]
+\{1,2\}
+|E_n|-|O_n|=(-1)^n(n-2)!
+E_n=\{\langle\pi,\sigma\rangle:\pi\text{ is an even permutation of }n\text{ and }\sigma\text{ is a cycle of }\pi\}
+O_n=\{\langle\pi,\sigma\rangle:\pi\text{ is an odd permutation of }n\text{ and }\sigma\text{ is a cycle of }\pi\}\;;
+E_n^*=\{\langle\pi,\sigma\rangle\in E_n:|\sigma|\le n-2\}
+O_n^*=\{\langle\pi,\sigma\rangle\in O_n:|\sigma|\le n-2\}
+p=\langle\pi,\sigma\rangle\in E_n^*\cup O_n^*
+i_p
+j_p
+[n]
+\sigma
+f_n\big(\langle\pi,\sigma\rangle\big)=\big\langle\pi(i_pj_p),\sigma\big\rangle\;.
+E_n^{**}\cup O_n^{**}
+\langle\pi,\sigma\rangle\in E_n\cup O_n
+\sigma
+n
+(n-1)
+\pi=\sigma
+E_n^{**}\cup O_n^{**}=\{\langle\sigma,\sigma\rangle:\sigma\text{ is a cycle of length }n\text{ or }n-1\}\;.
+n
+(n-1)
+|E_n^{**}|-|O_n^{**}|=(-1)^n(n-2)!
+\sigma(\pi)
+\pi
+c
+\pi
+\sigma(\pi) = \prod_{c\in\pi} (-1)^{|c|-1}
+\mathcal{Q}
+\mathcal{U}
+\mathcal{V}
+\mathcal{Q} = \mathfrak{P}(\mathcal{V}\mathfrak{C}_1(\mathcal{Z}) +\mathcal{U}\mathcal{V}\mathfrak{C}_2(\mathcal{Z})) +\mathcal{U}^2\mathcal{V}\mathfrak{C}_3(\mathcal{Z}) +\mathcal{U}^3\mathcal{V}\mathfrak{C}_4(\mathcal{Z}) +\mathcal{U}^4\mathcal{V}\mathfrak{C}_5(\mathcal{Z}) +\cdots)
+Q(z, u, v) = \exp\left(v\frac{z}{1}  + vu\frac{z^2}{2} + vu^2\frac{z^3}{3} + vu^3\frac{z^4}{4} + vu^4\frac{z^5}{5} +\cdots\right).
+Q(z,u,v) = \exp\left(\frac{v}{u} \left( \frac{zu}{1}  + \frac{z^2 u^2}{2}  + \frac{z^3 u^3}{3}  + \frac{z^4 u^4}{4}  + \frac{z^5 u^5}{5}  + \cdots \right)\right) \\ = \exp\left(\frac{v}{u} \log \frac{1}{1-uz}\right) = \left(\frac{1}{1-uz}\right)^{\frac{v}{u}}.
+Q_1(z, v)
+Q_2(z, v)
+Q_1(z,v) = \frac{1}{2} Q(z,+1,v) + \frac{1}{2} Q(z,-1,v) = \frac{1}{2}\left(\frac{1}{1-z}\right)^v +\frac{1}{2}\left(\frac{1}{1+z}\right)^{-v}
+Q_2(z,v) = \frac{1}{2} Q(z,+1,v) - \frac{1}{2} Q(z,-1,v) = \frac{1}{2}\left(\frac{1}{1-z}\right)^v -\frac{1}{2}\left(\frac{1}{1+z}\right)^{-v}.
+G(z, v) = \left.\frac{d}{dv} (Q_1(z,v)-Q_2(z,v))\right|_{v=1} \\= \left.\frac{d}{dv} \left(\frac{1}{1+z}\right)^{-v}\right|_{v=1} = - \left.\log \frac{1}{1+z} \left(\frac{1}{1+z}\right)^{-v}\right|_{v=1} = -(1+z)\log \frac{1}{1+z}.
+- n! [z^n] (1+z)\log \frac{1}{1+z} = - n! \left(\frac{(-1)^n}{n} + \frac{(-1)^{n-1}}{n-1}\right) \\= - n! (-1)^{n-1} \left(-\frac{1}{n} + \frac{1}{n-1}\right) = n! (-1)^n \frac{n-(n-1)}{n(n-1)} \\= n! (-1)^n \frac{1}{n(n-1)} = (-1)^n (n-2)!

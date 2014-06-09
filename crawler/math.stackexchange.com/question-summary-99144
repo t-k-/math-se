@@ -1,0 +1,5 @@
+ \int_{0}^{\infty}  \frac{\ln(t)}{\sqrt{t}}e^{-nt} \mathrm dt,n\rightarrow\infty  ?
+ \int_{0}^{\infty}  \frac{\ln(t)}{\sqrt{t}}e^{-nt} \mathrm dt =  \frac{1}{\sqrt{n}}\int_{0}^{\infty}  \frac{\ln(\frac{t}{n})}{\sqrt{t}}e^{-t} \mathrm dt 
+ \lim_{n\rightarrow\infty} \int_{0}^{\infty}  \frac{\ln(\frac{t}{n})}{\sqrt{t}}e^{-t} \mathrm dt?
+\gamma=0.5772...
+ \begin{eqnarray} \int_{0}^{\infty}\frac{\ln(t)e^{-nt}}{\sqrt{t}}  dt &=& \frac{1}{\sqrt{n}}\int_{0}^{\infty}\frac{\ln(t/n)e^{-t}}{\sqrt{t}}dt \\ &=& \frac{1}{\sqrt{n}}\int_{0}^{\infty}\frac{\ln(t)e^{-t}}{\sqrt{t}}dt - \frac{\ln(n)}{\sqrt{n}}\int_{0}^{\infty}\frac{e^{-t}}{\sqrt{t}}dt \\ &=&\frac{-\sqrt{\pi}(\gamma + \ln(4))-\ln(n)\sqrt{\pi}}{\sqrt{n}} \\ &=& -\sqrt{\frac{\pi}{n}}\left(\gamma+\ln(4n)\right), \end{eqnarray} 

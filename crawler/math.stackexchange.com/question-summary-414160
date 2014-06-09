@@ -1,0 +1,9 @@
+x=t+\dfrac{1}{t}
+y=\ln{t^2}
+(1 \le t \le 4)
+S=\int_1^4\sqrt{\bigg(\frac{dx}{dt}\bigg)^2+\bigg(\frac{dy}{dt}\bigg)^2}dt
+\frac{dx}{dt}=\frac{d}{dt}\bigg(t+\frac 1t\bigg)=1-\frac 1{t^2}
+\frac{dy}{dt}=\frac{d}{dt}\bigg(\ln(t^2)\bigg)=\frac 2{t}
+S=\int_1^4\sqrt{\bigg(t+\frac 1t\bigg)^2+\bigg(\frac 2{t}\bigg)^2}dt=\int_1^4{\frac{(1+t^2)}{t^2}}dt=\bigg(t-\frac 1t\bigg)\bigg|_1^4
+S=\frac{15}4
+\begin{align*}s&=\int_1^4\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\\&=\int_1^4\sqrt{\left(1-\frac1{t^2}\right)^2+\left(\frac2t\right)^2}dt\\&=\int_1^4\sqrt{1-\frac2{t^2}+\frac1{t^4}+\frac4{t^2}}dt\\&=\int_1^4\sqrt{\left(\frac1{t^2}\right)^2+2\left(\frac1{t^2}\right)+1}dt\\&=\int_1^4\sqrt{\left(\frac1{t^2}+1\right)^2}dt\\&=\int_1^4\left(\frac1{t^2}+1\right)dt\\&=\left[-\frac1t+t\right]_1^4\\&=-\frac14+4+1-1\\&=\frac{15}4\end{align*}

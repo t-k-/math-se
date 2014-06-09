@@ -1,0 +1,55 @@
+n \times n
+A
+A
+n
+(-1)^n
+\lambda ^n
+(-1)^{n-1}\cdot \text{Trace}(A)
+\lambda ^{n-1}
+n = 2
+A = \begin{bmatrix} a_{11} & a_{22} \\ a_{21} & a_{22} \end{bmatrix}, \tag{1}
+A - \lambda I = \begin{bmatrix} a_{11} - \lambda & a_{22} \\ a_{21} & a_{22} - \lambda\end{bmatrix}, \tag{2}
+p_A(\lambda)
+p_A(\lambda) = \det(\begin{bmatrix} a_{11} - \lambda & a_{22} \\ a_{21} & a_{22} - \lambda\end{bmatrix})
+= \lambda^2 - (a_{11} + a_{22}) \lambda + (a_{11}a_{22} - a_{12}a_{21}) = \lambda^2 - \text{Tr}(A)\lambda + \det(A); \tag{3}
+\lambda^2
+1 = (-1)^2
+\lambda = \lambda^1
+(-1)^1\text{Tr}(A) = (-1)^{2 - 1}\text{Tr}(A)
+\deg p_A(\lambda) = 2
+\deg p_A(\lambda) = k
+\lambda^k
+(-1)^k
+\lambda^{k - 1}
+p_A(\lambda)
+(-1)^{k - 1}\text{Tr}(A)
+A \in M_{k \times k}(\Bbb F)
+A \in M_{(k + 1) \times (k + 1)}(\Bbb F)
+p_A(\lambda) = \det(A - \lambda I)
+= \det(\begin{bmatrix} a_{11} - \lambda & a_{12} & \ldots & a_{1 \; k} & a_{1 \; (k + 1)} \\ a_{21} & a_{22} - \lambda & \ldots & a_{2 \; k} & a_{2 \; (k + 1)} \\ a_{31} & a_{32} & a_{33} - \lambda & \ldots & a_{3 \; (k + 1)} \\ \ldots \\ a_{(k + 1) \; 1} & a_{(k + 1) \; 2} & \ldots & a_{(k + 1) \; k} & a_{(k + 1) \; (k + 1)} - \lambda \end{bmatrix}). \tag{4}
+p_A(\lambda) = (a_{11} - \lambda) \det(\begin{bmatrix} a_{22} - \lambda & \ldots & a_{2 \; k} & a_{2 \; (k + 1)} \\ a_{32} & a_{33} - \lambda & \ldots & a_{3 \; (k + 1)} \\ \ldots \\ a_{(k + 1) \; 2} & \ldots & a_{(k + 1) \; k} & a_{(k + 1) \; (k + 1)} - \lambda \end{bmatrix}) + \Theta(\lambda), \tag{5}
+\det(\begin{bmatrix} a_{22} - \lambda & \ldots & a_{2 \; k} & a_{2 \; (k + 1)} \\ a_{32} & a_{33} - \lambda & \ldots & a_{3 \; (k + 1)} \\ \ldots \\ a_{(k + 1) \; 2} & \ldots & a_{(k + 1) \; k} & a_{(k + 1) \; (k + 1)} - \lambda \end{bmatrix})
+= (-1)^k \lambda^k + (-1)^{k - 1} \text{Tr} (A_{11}) \lambda^{k - 1} +\theta(\lambda), \tag{6}
+A_{11}
+A
+\theta(\lambda)
+k - 2
+\lambda
+\lambda^{k + 1}
+\lambda^k
+p_A(\lambda)
+(a_{11} - \lambda)((-1)^k \lambda^k + (-1)^{k - 1} \text{Tr} (A_{11}) \lambda^{k - 1})
+= (-1)^{k + 1}\lambda^{k + 1} + a_{11}(-1)^k \lambda^k + (-1)^k \text{Tr} (A_{11})\lambda^k + a_{11}(-1)^{k - 1} \text{Tr} (A_{11}) \lambda^{k - 1}
+= (-1)^{k + 1}\lambda^{k + 1} + (-1)^k \text{Tr} (A)\lambda^k + a_{11}(-1)^{k - 1} \text{Tr} (A_{11}) \lambda^{k - 1} \tag{7};
+n
+c_1,c_2,...,c_n
+\sum_{k=0}^na_k\lambda^k=\prod_{k=1}^n(\lambda-c_k)
+2
+a_k
+\lambda^k
+A
+Trace(A)=\sum_{k=1}^nc_k
+2
+\lambda^{n-1}
+\lambda^n
+(-1)^n

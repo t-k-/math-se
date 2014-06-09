@@ -1,0 +1,9 @@
+X_1,X_2
+X_i \sim e(\lambda_i)
+i=1,2
+G(x_2) = P(X_1 > x_2): \int^{\infty}_{x_2} \lambda_1 e^{-\lambda_1 x_1} \ d_{x_1} = e^{-\lambda_1 x_2}
+P((X_1,X_2) \in (X_1 > X_2)) = E[G(X_2)]
+G(x_2) = P((X_1,x_2) \in (X_1 > x_2) \mid X_2 = x_2) = P(X_1 > x_2 \mid X_2 = x_2) = P(X_1 > x_2) = e^{-\lambda_1 x_2}
+E[G(X_2)] = \int^{\infty}_0 e^{-\lambda_1x_2} e^{-\lambda_2 x_2} \ dx_2 = \frac {e^{-x^2(\lambda_1 + \lambda_2)}} {-(\lambda_1 + \lambda_2)} ]^{\infty}_0 = \frac 1 {\lambda_1 + \lambda_2}
+ {\rm E}[G(X_2)]=\int_{\mathbb{R}} g(x_2)f_{X_2}(x_2)\,\mathrm dx_2=\int_0^\infty g(x_2)\color{red}{\lambda_2}\mathrm{e}^{-\lambda_2x_2}\,\mathrm dx_2 
+\begin{align*}P(X_1>X_2)&=\int_{X_2}P(X_1>X_2|X_2=x_2)f_{X_2}(x_2)~dx_2=\int_{X_2}P(X_1>x_2)f_{X_2}(x_2)~dx_2=\\\\&=\int_{0}^{+\infty}(1-F_{X_1}(x_2))f_{X_2}(x_2)~dx=\int_{0}^{+\infty}e^{-λ_1x_2}λ_2e^{-λ_2x_2}~dx_2=\\\\&=λ_2\int_{0}^{+\infty}e^{-(λ_1+λ_2)x_2}~dx_2=λ_2\cdot \frac{1}{λ_1+λ_2}=\\\\&=\frac{λ_2}{λ_1+λ_2}\end{align*}

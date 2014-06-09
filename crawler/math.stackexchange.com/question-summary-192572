@@ -1,0 +1,25 @@
+f: \mathbb{R} \longrightarrow \mathbb{R}
+n
+f
+2^n
+x,y
+f(x)=a, f(y)=b, a \ne b
+a
+y
+2^n
+\mathbb R
+x \sim y
+x-y
+2^n
+\mathbb R
+\mathbb R
+f
+a<b
+\epsilon>0
+|f(a)-f(b)|>\epsilon
+\delta>0
+|x-y|<\delta\implies |f(x)-f(y)|<\epsilon
+n\in\mathbb Z
+2^n<\delta
+m=\lfloor|a-b|/2^n\rfloor
+\begin{align} |f(a)-f(b)|&\leq |f(a)-f(a+2^n)|+|f(a+2^n)-f(a+2\cdot 2^n)|+\cdots+|f(a+m\cdot 2^n)-f(b)|\\ &\leq |f(a+m\cdot 2^n)-f(b)|<\epsilon\\ \end{align}

@@ -1,0 +1,10 @@
+f:(0,\infty)\rightarrow\mathbb{R}
+L^p
+(0,\infty),\ p\in(1,\infty)
+F(y)=\int_{(0,1)}f(xy)d\lambda(x),\ y>0
+F\in L^p
+(0,\infty)
+||F||_p={p\over{p-1}}||f||_p
+||F||_p=[\int_{(0,\infty)}|\int_{(0,1)}f(xy)d\lambda(x)|^{p}d\lambda(y)]^{1\over p}\leq\int_{(0,1)}[\int_{(0,\infty)}|f(xy)|^{p}d\lambda(y)]^{1\over p}d\lambda(x)
+xy=z
+\int_{(0,1)}\left(\int_{(0,\infty)}|f(xy)|^{p}d\lambda(y)\right)^{1/ p}d\lambda(x)=\int_0^1\left(\int_0^\infty \frac{|f(z)|^p}{x}d\lambda(z)\right)^{1/p}d\lambda (x)

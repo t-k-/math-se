@@ -1,0 +1,17 @@
+n
+c
+k_1
+1
+k_2
+2
+k_c
+c
+m
+m
+(B_1, B_2, \ldots, B_c)
+\sum_{k=1}^c B_k = m
+[ \bullet ]
+B_r \sim \operatorname{Bin}\left(m,\frac{k_r}{n} \right)
+      \mathbb{P}\left(B_1=b_1,\ldots,B_c=b_c\right) = \frac{m!}{b_1!\cdots b_c!} \left(\frac{k_1}{n}\right)^{b_1} \cdots \left(\frac{k_c}{n}\right)^{b_c} 
+        N_c = \sum_{r=1}^c [ B_r > 0 ] 
+   \mathbb{E}\left(N_c\right) = \sum_{r=1}^c  \mathbb{E}\left( [ B_r > 0 ] \right) = \sum_{r=1}^c  \mathbb{P}\left( B_r > 0 \right) = \sum_{r=1}^c \left(1-\left(1-\frac{k_r}{n}\right)^m \right) 

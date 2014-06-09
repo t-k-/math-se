@@ -1,0 +1,5 @@
+\int_0^1\frac{x^3 - x^2}{\ln(x)}dx
+x=e^{-u}
+dx = -e^{-u} du
+\int_0^1 dx \frac{x^3-x^2}{\log{x}} = \int_0^{\infty} du \, \frac{e^{-3 u} - e^{-4 u}}{u} = \int_0^{\infty} du \,  \int_3^4 dt \, e^{-u t} \\  = \int_3^4 dt \,\int_0^{\infty} du \, e^{-u t} = \int_3^4 \frac{dt}{t} = \log{\frac{4}{3}}
+ \begin{align} \int_0^1\frac{x^3-x^2}{\log(x)}\mathrm{d}x &=\int_0^1\frac{x^4-x^3}{\log(x)}\frac{\mathrm{d}x}{x}\\ &=\lim_{a\to0}\int_a^1\frac{x^4-x^3}{\log(x)}\frac{\mathrm{d}x}{x}\\ &=\lim_{a\to0}\left(\int_a^1\frac{x^4-1}{\log(x)}\frac{\mathrm{d}x}{x} -\int_a^1\frac{x^3-1}{\log(x)}\frac{\mathrm{d}x}{x}\right)\\ &=\lim_{a\to0}\left(\int_{a^4}^1\frac{x-1}{\log(x)}\frac{\mathrm{d}x}{x} -\int_{a^3}^1\frac{x-1}{\log(x)}\frac{\mathrm{d}x}{x}\right)\\ &=\lim_{a\to0}\int_{a^4}^{a^3}\frac{x-1}{\log(x)}\frac{\mathrm{d}x}{x}\\ &=\lim_{a\to0}\int_{a^4}^{a^3}\frac1{\log(x)}\mathrm{d}x -\lim_{a\to0}\int_{a^4}^{a^3}\frac1{\log(x)}\frac{\mathrm{d}x}{x}\\ &=0-\Big[\log(\log(x))\Big]_{a^4}^{a^3}\\[6pt] &=\log(4)-\log(3)\\[12pt] &=\log(4/3) \end{align} 

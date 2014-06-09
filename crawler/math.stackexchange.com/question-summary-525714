@@ -1,0 +1,37 @@
+c(x) = c_{1}
+0 \le x \le \frac{L}{2} 
+c(x) = c_{2}
+ \frac{L}{2} < x \le L
+L
+    u_{tt} = c(x)^2 u_{xx} 
+ u(x,0) = f(x) = e^\frac{(x-\mu)^2}{2 \sigma^2}   , \:\:u(0,t) = 0\:,\:\:u(L,t) = 0, \:\: u_{t}(x,0) = -cf'(x)      
+u(x_{i},t_{m}) \approx u_{i}^{m} 
+x_{i} = i\triangle x
+t_{m}= m \triangle t
+  u^{m+1} = (2I - (c\triangle t)^2A)u^{m} - u^{m-1}  
+  u^{m+1} = (2I - C(\triangle t^2)A)u^{m} - u^{m-1}  
+ i = 0,1,2,3,...,l
+x_{l} = L
+ m = 0,1,2,3,.....
+ u^{m} =  \left[ \begin{array}{c}                                        u_{1}^{m} \\                                        u_{2}^{m} \\                                         . \\                                         . \\                                        u_{l-2}^{m} \\                                        u_{l-1}^{m}                                      \end{array}  \right] 
+A = \frac{1}{(\triangle x)^2} \left(         \begin{array}{cccccc}            2 & -1  & 0 & 0 & 0 & 0 \\           -1 & 2 & -1 & 0 & 0 & 0 \\           0 & . & . & . & 0 & 0 \\           0 & 0 & . & . & . & 0 \\           0 & 0 & 0 & -1 & 2 & -1 \\           0 & 0 & 0 & 0 & -1 & 2 \\         \end{array}       \right) 
+ C = \left(         \begin{array}{cccccccc}            c_{1}^2 & 0  & 0 & 0 & 0 & 0 & 0 & 0\\           0 & c_{1}^2 & 0 & 0 & 0 & 0 & 0 & 0 \\           0 & 0 & . & 0 & 0 & 0 & 0 & 0\\           0 & 0 & 0 & c_{1}^2 & 0 & 0 & 0 & 0\\           0 & 0 & 0 & 0 & c_{2}^2 & 0 & 0 & 0\\           0 & 0 & 0 & 0 & 0 & . & 0 & 0 \\           0 & 0 & 0 & 0 & 0 & 0 & c_{2}^2 & 0  \\           0 & 0 & 0 & 0 & 0 & 0 & 0 & c_{2}^2 \\         \end{array}       \right) 
+A 
+C
+l-2 
+X(x)T''(t)=c(x)^2X''(x)T(t) \Rightarrow\frac{T''(t)}{T(t)}=c(x)^2\frac{X''(x)}{X(x)}
+t
+x
+\frac{T''(t)}{T(t)}=c(x)^2\frac{X''(x)}{X(x)}=-\lambda
+X''(x)+\lambda c(x)^2X(x)=0, \\ X(0)=0,X(L)=0
+\lambda_n
+\mu_n(x)\ne0
+T''(t)+\lambda T(t)=0,
+T(t)=A_ne^t+Be^{-t}
+T(t)=A_n(t)\cos t+B_n\sin t
+\lambda_n
+\lambda_n > 0
+u(x,t)=\sum\limits_{n=1}^\infty( A_n\sin t+B_n\cos t)\mu_n(x)
+u(x,0)=\sum\limits_{n=1}^\infty B_n\mu_n(x)
+u'_t(x,0)=\sum\limits_{n=0}^\infty A_n\mu_n(x)
+u'_t(x,0)

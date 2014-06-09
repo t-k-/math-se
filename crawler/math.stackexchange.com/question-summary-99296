@@ -1,0 +1,13 @@
+P(X > 0.7Y)
+D = 0.7Y - X
+P(D < 0)
+\mu_D = 0.7 \times 77 - 66 = -12.1
+\sigma^2_D = 0.7^2 \times 49 + 36 + 2 \times 0.7 \times -1 \times 0.8 \times 7 \times 6 = 12.97
+P(D < 0) = F_Z(\frac{0 + 12.11}{\sqrt{12.97}}) \approx F_Z(3.36)
+F_Z(1.17)
+2ab\rho\sigma_X\sigma_Y
+\displaystyle F_Z\left(\frac{12.11}{\sqrt{107.05}}\right) = F_Z(1.17)
+\displaystyle F_Z\left(\frac{12.11}{\sqrt{12.97}}\right) = F_Z(3.36)
+\text{var}(0.7Y - X) = 60.01 + 47.04 = 107.05
+\text{var}(0.7Y - X) = 60.01 - 47.04 = 12.97.
+\eqalign{ \text{Var}(.7Y-X)&=\text{Var}(.7Y)+\text{Var}(-X)+2\text{Cov}( -X, .7Y)\cr &=(.7)^2\text{Var}( Y)+\text{Var}( X)+2(-1)(0.7)\text{Cov}(  X,  Y)\cr &=(.7)^2\text{Var}( Y)+\text{Var}( X)+2(-1)(0.7) [ \text{Corr}(  X,  Y)\sigma_X\sigma_Y]\cr &=(.7)^2 \cdot 7^2+6^2+2(-1)(0.7)(0.8)\cdot 6\cdot7\cr  &=12.97. } 

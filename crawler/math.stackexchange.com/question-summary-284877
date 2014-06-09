@@ -1,0 +1,31 @@
+A
+B
+C
+ \mathrm{corr}[A,B] = 0.9 
+ \mathrm{corr}[B,C] = 0.8 
+ \mathrm{corr}[A,C] = 0.1 
+A
+B
+C
+(A,B,C)
+\mathrm{var}(A-B+C)=\mathrm{var}(A)+\mathrm{var}(B)+\mathrm{var}(C)-2\mathrm{cov}(A,B)-2\mathrm{cov}(B,C)+2\mathrm{cov}(A,C), 
+ \mathrm{var}(A-B+C)=3-2\cdot0.9-2\cdot0.8+2\cdot0.1=-0.2\lt0, 
+\mathcal{L}^2
+|<x,y>| \leq \sqrt{<x,x><y,y>}
+-1 \leq \frac{<x,y>}{\sqrt{<x,x><y,y>}} \leq 1
+\mathbb{E}[XY]
+\frac{<X,Y>}{\sqrt{<X,X><Y,Y>}} = \text{Cor}(X,Y)
+p_{xy}
+p_{yz}
+p_{xz}
+X = <X,Y>Y + O^X_Y
+Z = <Z,Y>Y + O^Z_Y
+<\cdot,\cdot>
+O
+X,Z
+<X,Z> = p_{xz} = <p_{xy}Y+O^X_Y,p_{zy}Y+O^Z_Y> = p_{xy}p_{yz}+<O^X_Y,O^Z_Y>
+p_{x,z} \leq p_{xy}p_{yz} + \sqrt{(1-p_{x,y}^2)(1-p_{y,z}^2)}
+p_{x,z} \geq p_{xy}p_{yz} - \sqrt{(1-p_{x,y}^2)(1-p_{y,z}^2)}
+<O^X_Y,O^X_Y> = 1-p_{xy}^2
+1 = <X,X> = <p_{xy}Y + O^X_Y,p_{xy}+O^X_Y> = p_{xy}^2 + <O^X_Y,O^X_Y>
+O^Z_Y

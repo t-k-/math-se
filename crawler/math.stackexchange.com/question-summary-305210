@@ -1,0 +1,6 @@
+ \rho = \frac{\delta\psi}{\delta r}\\  \int_{a}^{b} \psi \space\delta r = 1 
+\psi = \int \rho \space\delta r - c \\  c = \frac{1-\int_{a}^{b}(\psi + c) \space\delta r}{b-a} \\  c = \frac{1- \int_{a}^{b}(\int \rho \space\delta r)\space\delta r}{b-a} \\  \psi = \int \rho \space\delta r - (\frac{1- \int_{a}^{b}(\int \rho \space\delta r) \space\delta r}{b-a}) 
+\psi(r) = \int_c^r \rho(s)\, ds - \psi(c)
+\psi(c) = \frac{1-\int_a^b (\psi(r)-\psi(c))\,dr}{b-a}
+\psi(c) = \frac{1-\int_a^b \int_c^r \rho(s)\,ds\,dr}{b-a}
+\psi(r) = \int_c^r \rho(s)\, ds - \frac{1-\int_a^b \int_c^t \rho(s)\,ds\,dt}{b-a}.

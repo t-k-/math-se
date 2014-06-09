@@ -1,0 +1,14 @@
+\theta = (\phi, \tau)
+p(\mu_{1:T}, \theta \mid y_{1:T})
+\mu_{1:T}
+(\mu_1, \mu_2, \cdots, \mu_T)
+y_{1:T}
+(y_1, y_2, \cdots, y_T)
+y_t \mid \mu_t, \theta \sim N(\mu_t, \tau^2)
+t=1, 2, \cdots, T
+\mu_{t+1} \mid \mu_t, \theta \sim N\left(\phi \mu_t, 1 \right)
+\mu_1 \mid \theta \sim N\left(0, \frac{1}{1-\phi^2} \right)
+p\left(\theta\right) \propto \frac{1}{\tau}
+(1)
+\mu_{1:T}^{(i)}
+i = 1, 2, \cdots, M

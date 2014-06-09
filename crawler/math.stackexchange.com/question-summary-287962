@@ -1,0 +1,7 @@
+\int_{0}^{\infty }{{{x}^{n}}\frac{\sinh ax}{\cosh bx}}\text{d}x=\frac{\pi }{2b}\cdot \frac{{{\text{d}}^{n}}}{\text{d}{{a}^{n}}}\tan \left( \frac{a\pi }{2b} \right)\ \ \ \ \ \left| a \right|<b
+x=a/b
+\dfrac{\sinh(ax)}{\cosh(bx)} = \dfrac{e^{ax} - e^{-ax}}{e^{bx} + e^{-bx}} = \dfrac{e^{(a-b)x} - e^{-(a+b)x}}{1 + e^{-2bx}} = \left(e^{(a-b)x} - e^{-(a+b)x}\right) \left(\sum_{k=0}^{\infty} (-1)^k e^{-2kbx} \right)
+\sum_{k=0}^{\infty} (-1)^k \left(e^{(a-2kb-b)x} - e^{-(a+2kb+b)x}\right)
+\tan(\pi x/2) = \cot(\pi/2-\pi x/2) = \cot(\pi(1-x)/2)
+\cot(\pi y) = \dfrac1{\pi} \lim_{N \to \infty}\left(\sum_{k=-N}^N \dfrac1{y+k}\right)
+\tan(\pi x/2) = \dfrac1{\pi} \lim_{N \to \infty}\left(\sum_{k=-N}^N \dfrac2{1-x+2k}\right)

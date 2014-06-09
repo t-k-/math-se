@@ -1,0 +1,32 @@
+U_1,U_2,U_3 \sim U[0,1]
+U_1 > \frac{e}{\alpha+e}
+Y=U_2^{\frac{1}{\alpha}}.
+U_3 > e^{-Y}
+Y=1-\log{U_2}
+U_3>Y^{\alpha-1}
+X
+\mathbb{P}(U_1>\frac{e}{\alpha+e})=\frac{a}{\alpha+e}
+Y=1-\log{U_2} \text{ (change of variables)} \implies f_Y(y)=e^{1-y} \mathbf{1}_{[1,\infty)}(y)
+\mathbb{P}({U_3\leq Y^{\alpha-1}})=\mathbb{P}({U_3\leq (1-\log{U_2})^{\alpha-1}})=\mathbb{E}[(1-\log{U_2})^{\alpha-1}]=\mathbb{E}[Y^{\alpha-1}]=e\Gamma(\alpha,1)
+\mathbb{P}(U_1\leq\frac{e}{\alpha+e})=\frac{e}{\alpha+e}
+Y=U_2^{\frac{1}{\alpha}} \text{ (change of variables)} \implies f_Y(y)=\alpha y^{\alpha-1}\mathbf{1}_{[0,1]}(y)
+\mathbb{P}(U_3\leq e^{{U_2}^{\frac{1}{\alpha}}}) = \mathbb{E}[e^{{U_2}^{\frac{1}{\alpha}}}]
+\displaystyle  \alpha \int_0^1 e^{-y}y^{\alpha-1}\;dy=\alpha \gamma(\alpha,1)
+\Gamma(\alpha,1):=\displaystyle \int_1^{\infty}y^{\alpha-1}e^{-y}\;dy
+\gamma(\alpha,1):=\displaystyle \int_0^1 y^{\alpha-1}e^{-y}\;dy
+f_X(y)=\frac{\alpha}{\alpha+e}\Big[ e\Gamma(\alpha,1)e^{1-y} \mathbf{1}_{[1,\infty)}(y) +(1-e\Gamma(\alpha,1))f_X(y)\Big]+
++\frac{e}{\alpha+e}\Big[ \alpha \gamma(\alpha,1) \alpha y^{\alpha-1}\mathbf{1}_{[0,1]}(y) +(1-\alpha \gamma(\alpha,1)f_X(y)\Big]
+f_X(y)=\frac{\Gamma(\alpha,1)e^{1-y} \mathbf{1}_{[1,\infty)}(y)+ \gamma(\alpha,1) \alpha y^{\alpha-1}\mathbf{1}_{[0,1]}(y)}{\Gamma(\alpha)}
+X
+g
+f_1
+U_2^{1/\alpha}
+f_2
+1-\log U_2
+g(x)=\frac{\alpha\mathrm e}{\alpha+\mathrm e} x^{\alpha-1}\mathrm e^{-x}[x\gt0]
+\alpha
+\Gamma(\alpha)^{-1}x^{\alpha-1}\mathrm e^{-x}[x\gt0]
+X
+\alpha
+ g(x)=\frac{\mathrm e}{\alpha+\mathrm e}\cdot\mathrm e^{-x}\cdot f_1(x)+\frac{\alpha}{\alpha+\mathrm e}\cdot x^{\alpha-1}\cdot f_2(x), 
+ f_1(x)=\alpha x^{\alpha-1}[0\lt x\leqslant1],\qquad f_2(x)=\mathrm e^{1-x}[x\gt1]. 

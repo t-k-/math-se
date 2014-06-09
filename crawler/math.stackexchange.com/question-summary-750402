@@ -1,0 +1,19 @@
+f(n)
+f(n) = f(\sqrt{n}) + \frac{1}{n}
+O(\lg \lg n)
+f
+ f(n) = f(\lfloor \sqrt{n} \rfloor) + \frac{1}{n}. 
+n \in \mathbb N
+m = \lfloor \lg \lg n \rfloor
+\lg = \log_2
+ 2^{2^m} \leq n < 2^{2^{m+1}}. \tag{1} 
+\{s_k\}_{k=0}^{m+1}
+s_{m+1} = n
+ s_k = \left\lfloor \sqrt{s_{k+1}} \right\rfloor, \qquad k=0,1,\ldots,m. 
+(1)
+s_0 = 1
+ s_k \geq 2^{2^{k-1}} 
+k
+f
+ \begin{align} f(n) &= f(1) + \sum_{k=1}^{m+1} \frac{1}{s_k} \\ &\leq f(1) + \sum_{k=1}^{m+1} 2^{-2^{k-1}} \\ &< f(1) + \sum_{k=0}^{\infty} 2^{-2^k}. \end{align} 
+f(n) = O(1)

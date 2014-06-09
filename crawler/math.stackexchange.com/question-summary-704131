@@ -1,0 +1,50 @@
+h(x)=|x|
+[-1,1]
+\mathbb R
+h(2+x) = h(x)
+0
+1
+h_n(x) = (1/2)^n h(2^n x)
+ g(x) = \sum_{n=0}^\infty {1\over 2^n }h(2^n x) = \sum_{n \ge 0}h_n(x)
+g'(1)
+g'({1\over 2})
+g'(x)
+x={p \over 2^k}
+p\in \mathbb Z
+k \in \mathbb N 
+x_m = 1 + {1\over 2^m}
+\begin{aligned}  {g(x_m) - g(1) \over x_m - 1} &= 2^m \sum_{n \ge 0} {1\over 2^n} h(2^n + 2^{n-m}) - 2^mg(1) \\ &=  2^mh(1 + 2^{-m}) + \sum_{n \ge 1} 2^{m-n} h(2^n + 2^{n-m}) - 2^mg(1) \\ &=  2^mh(2^{-m}) + \sum_{n \ge 1} 2^{m-n} h(2^n + 2^{n-m}) - 2^mg(1) \\ &= \sum_{n \ge 0} 2^{m-n} h(2^{n-m}) - 2^mg(1) \\ &= \sum_{n=0}^m 2^{m-n} h(2^{n-m}) - 2^mg(1) \\ &= m + 1 - 2^m g(1) \to - \infty \end{aligned}
+g'(1)
+x_m = {1\over 2} + {1 \over 2^m}
+\begin{aligned}  {g(x_m) - g({1\over 2}) \over x_m - {1\over 2}} = {g(x_m) - g({1\over 2}) \over {1\over 2^m} - {1\over 2}}  &= {2^{m+1}\over 2-2^m} \left ( \sum_{n \ge 0} {1\over 2^n} h(2^{n-1} + 2^{n-m}) - 2^mg({1\over 2}) \right )\\ &=  {2^{m+1}\over 2-2^m} \left ( \sum_{n = 0}^m {1\over 2^n} h(2^{n-m}) - 2^mg({1\over 2}) \right )\\ &=  {2 \over 2-2^m} \left ( \sum_{n = 0}^m 2^{m-n} h(2^{n-m}) - 2^m 2^mg({1\over 2}) \right )\\ &=  {2 \over 2-2^m} \left ( m+1 - 2^{2m} g({1\over 2}) \right )\\ &\to  \infty \end{aligned}
+x = {p \over 2^k}
+x_m = x + {1 \over 2^m}
+g
+x
+\begin{aligned}  {g(x_m) - g(x) \over x_m -x} = {g(x_m) - g(x) \over {1\over 2^m}} &= 2^m \sum_{n \ge 0} {1\over 2^n} h(x2^n + 2^{n-m}) - 2^mg(x) \\ &= 2^m \sum_{n \ge 0} {1\over 2^n} h(2^{n-k} + 2^{n-m}) - 2^mg(x)  \\ &= 2^m \sum_{n = 0}^{m+k} {1\over 2^n} h(2^{n-k} + 2^{n-m}) - 2^mg(x)  \\ &= \left ( \sum_{n = 0}^{m+k}  2^{m-k} + 1 \right ) - 2^mg(x)  \\ &= (m+ k + 1) 2^{m-k} + (m+ k + 1)  - 2^mg(x)  \\ &\xrightarrow{m \to \infty} \infty \end{aligned}
+h(1+2^{-m})
+h(2^{-m})
+m
+m
+h
+2
+h_n(x) = 2^{-n}h(2^nx)
+2^{1-n}
+\sum_{n=m+1}^\infty h_n(x)
+2^{-m}
+x\in\mathbb R
+h(x+2^{-m})
+h(x)
+x=p/2^k
+p
+k
+n> k
+2^nx
+h(2^nx)=0
+n=k+1,\dots,  m
+2(k+1)\max|g|
+(m-k)
+m\to\infty
+\frac{g(x+2^{-m})-g(x)}{2^{-m}} =  \sum_{n=0}^m 2^{m-n}\bigg(h (2^nx+2^{n-m})-h (2^nx)\bigg) \tag{1}
+h (2^nx+2^{n-m}) = h(2^{n-m}) = 2^{n-m}
+ \sum_{n=0}^k 2^{m-n}\bigg(h (2^nx+2^{n-m})-h (2^nx)\bigg)  +\sum_{n=k+1}^m 2^{m-n} 2^{n-m}  \tag{2}

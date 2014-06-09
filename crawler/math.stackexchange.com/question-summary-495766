@@ -1,0 +1,44 @@
+a,b
+n
+ a = \prod_{i=1}^{k} p_i^{\alpha_i}, \; \; b= \prod_{i=1}^{k} p_i^{\beta_i}, \; \; n=\prod_{i=1}^{k} p_i^{\gamma_i} 
+(a,n) = \prod_{i=1}^{k} p_i^{\min(\alpha_i, \gamma_i)} = 1
+(b,n) = \prod_{i=1}^{k} p_i^{\min(\beta_i, \gamma_i)} = 1
+(ab,n) = \prod_{i=1}^{k} p_i^{\min(\alpha_i + \beta_i, \gamma_i)} = \prod_{i=1}^{k} p_i^{\min(\alpha_i, \gamma_i)} \times \prod_{i=1}^{k} p_i^{\min(\beta_i, \gamma_i)}= 1
+p_1,\dots,p_k
+a
+b
+n
+\prod p_i^{\mu_i}
+\mu_i
+\ge 0
+p
+p^\alpha
+p^\beta
+p^\gamma
+p
+a
+b
+n
+p
+ab
+\alpha+\beta
+a
+n
+\min(\alpha,\gamma)=0
+\min(\beta,\gamma)=0
+\min(\alpha+\beta,\gamma)=0
+\gamma=0
+\gamma\ne 0
+\alpha=\beta=0
+\min(\alpha+\beta,\gamma)=0
+\min(\alpha+\beta,\gamma)\neq\min(\alpha,\gamma)+\min(\beta,\gamma)
+(n,ab)\neq 1
+p\in\mathbb{N}
+p
+n
+ab
+p
+p
+ab
+p_i^{\min(\alpha_i + \beta_i, \gamma_i)} \ne p_i^{\min(\alpha_i, \gamma_i)} \times p_i^{\min(\beta_i, \gamma_i)}.
+\alpha_i = \beta_i = \gamma_i = 2

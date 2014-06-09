@@ -1,0 +1,9 @@
+\tilde{w}_i:=\sqrt{J_i}w_i
+\tilde{v}_i:=\sqrt{J_i}v_i
+\dot{V} = -k\tilde{w}^T\tilde{w}+\tilde{w}^T\tilde{v}=-\frac{1}{2}(\sqrt{k}\tilde{w}-\frac{1}{\sqrt{k}}\tilde{v})^T(\sqrt{k}\tilde{w}-\frac{1}{\sqrt{k}}\tilde{v})+\frac{1}{k}\tilde{v}^T\tilde{v}-\frac{k}{2}\tilde{w}^T\tilde{w}\leq \frac{1}{k}\tilde{v}^T\tilde{v}-\frac{k}{2}\tilde{w}^T\tilde{w}.
+V(w(t))-V(w(0))\leq\int^t_0\frac{1}{k}\tilde{v}(\tau)^T\tilde{v}(\tau)-\frac{k}{2}\tilde{w}(\tau)^T\tilde{w}(\tau)d\tau
+V(w(t))\geq 0
+\tilde{w}^T\tilde{w}\geq J_{min}w^Tw
+\tilde{v}^T\tilde{v}\leq J_{max}v^Tv
+\frac{k}{2}||w_t||_2^2=\frac{k}{2}\int^t_0w(\tau)^Tw(\tau)d\tau\leq \frac{k}{2J_{min}}\int^t_0\tilde{w}(\tau)^T\tilde{w}(\tau)d\tau\leq \frac{1}{kJ_{min}}\int^t_0\tilde{v}(\tau)^T\tilde{v}(\tau)d\tau+V(w(0))\leq \frac{J_{max}}{kJ_{min}}\int^t_0v(\tau)^Tv(\tau)d\tau+V(w(0))=\frac{J_{max}}{kJ_{min}}||v_t||^2_2+V(w(0)).
+\frac{\sqrt{2}}{k}\sqrt{\frac{J_{max}}{J_{min}}}

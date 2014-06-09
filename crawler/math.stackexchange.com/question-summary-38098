@@ -1,0 +1,7 @@
+(P\land Q\land R)\lor (P\land\lnot Q\land R)\lor (P\land \lnot Q\land \lnot R)
+\land
+\lor
+\begin{align} &(P\land Q\land R)\lor (P\land\lnot Q\land R)\lor (P\land \lnot Q\land \lnot R) &\iff\\ &(P\land Q\land R)\lor (P\land \lnot Q\land R)\lor (P\land \lnot(Q\lor R))&\iff\\ &(P\land Q\land R)\lor (P\land \lnot(Q\lor\lnot R))\lor (P\land \lnot(Q\lor R))&\iff\\ &(P\land (Q\land R))\lor (P\land (\lnot(Q\lor\lnot R)\lor \lnot(Q\lor R)))&\iff\\ &P\land ((Q\land R)\lor (\lnot(Q\lor\lnot R)\lor \lnot(Q\lor R)))&\iff\\ &P\land ((Q\land R)\lor\lnot((Q\lor\lnot R)\land (Q\lor R)))&\iff\\ &P\land ((Q\land R)\lor\lnot(Q\lor (\lnot R\land R)))&\iff\\ &P\land ((Q\land R)\lor\lnot Q)&\iff\\ &P\land ((\lnot Q\lor Q)\land (\lnot Q\lor R))&\iff\\ &P\land (\lnot Q\lor R) \end{align}
+P
+Q
+R

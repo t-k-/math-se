@@ -1,0 +1,11 @@
+S
+\mathbb{E}[ \ e^{sB}  \vert S]
+B_i
+e^{sB}
+S
+Z
+B=S+ \sum\limits_{j=1}^{Z} B_j.
+M_B(s)=\mathbb{E}[e^{sB}]=\mathbb{E}[\ \mathbb{E}[ \ e^{sB}  \vert S] \ ].
+\mathbb{E}[ \ e^{sB}  \vert S]=\mathbb{E}[  \mathbb{E}[ \ e^{sB}  \vert S] \vert Z].
+\mathbb{E}[ \ e^{sB}  \vert S]=\mathbb{E}[  \mathbb{E}[ \ e^{sB}  \vert S,  Z]] ?
+ \begin{aligned}B^*(s) &= \mathbb E[ e^{sB} ]\\ &= \mathbb E[\mathbb E[e^{sB}|S]]\\ &= \mathbb E[\mathbb E[ \mathbb E[e^{s(S+\sum_{j=1}^Z B_j)}|S,Z]|S]]\\ &= \mathbb E[ e^{sS} \mathbb E[ \mathbb E[ e^{sB}|S,Z]^Z|S]]\\ &= \mathbb E[e^{sS}G(B^*(s))] \end{aligned}

@@ -1,0 +1,60 @@
+n
+n
+E[X]=\sum_{i=0}^{n-1}x_ip_i
+x
+i+1
+n\choose i
+n
+i=0
+n
+i=1
+n
+n
+i=n-1
+x
+E[X]\approx {n\choose 0}p_{no\ collisions}+{n\choose 1}p_{one\ collision}
+{n\choose 1}
+{n\choose 0}
+B
+A
+1/N
+N
+B
+A
+1-1/N
+n-1
+A
+(1-1/N)^{n-1}
+n(1-1/N)^{n-1}
+n\left(1-(1-1/N)^{n-1}\right)
+p_i
+p_i
+N
+n
+U_1,U_2,U_3,\dots,U_n
+U_k=1
+k
+U_k=0
+k
+X=U_1+U_2+U_3+\cdots + U_n
+X
+U_k
+U_k=1
+p
+\text{E}(U_k)=p
+k
+\text{E}(X)=np
+p=1-(1-1/N)^{n-1}
+k
+N
+k
+N
+  \begin{align}  & k \left(1 - \left(1-\frac1N\right)^{k-1}\right) \\ & = \frac{k(k-1)}{N} - \frac{k(k-1)(k-2)}{2N^2} + O\left(\frac1{N^3}\right) \\ & \approx \frac{k^2}{N}. \end{align}
+r
+2r
+ \approx \frac{k^2}{2N}.
+0
+1
+k
+ \left(1 - \frac1N\right)^k + k\frac1N\left(1 - \frac1N\right)^{k-1}
+ \begin{align} & N \left(1 - \left(1 - \frac1N\right)^k - k\frac1N\left(1 - \frac1N\right)^{k-1}\right) \\ & = \frac{k(k-1)}{2N} - \frac{k(k-1)(k-2)}{3N^2} + O\left(\frac1{N^3}\right) \\ & \approx \frac{k^2}{2N}. \end{align}

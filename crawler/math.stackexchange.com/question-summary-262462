@@ -1,0 +1,18 @@
+P = A(A^TA)^{-1}A^T
+A = \begin{bmatrix}1 \\ m\end{bmatrix}
+P = A(A^{-1}{A^T}^{-1}) A^T \implies P = (AA^{-1})({A^T}^{-1} A^T) \implies P = I
+I
+P
+A
+(A^\text{T}A)^{-1}
+ \left[A(A^\text{T}A)^{-1}A^\text{T}\right]\left[A(A^\text{T}A)^{-1}A^\text{T}\right]= A\left[(A^\text{T}A)^{-1}(A^\text{T}A)\right](A^\text{T}A)^{-1}A^\text{T}.
+A = \begin{bmatrix}1 \\ m\end{bmatrix} 
+\Rightarrow 
+A(A^TA)^{-1}A^T
+P
+P = (A(A^TA)^{-1}A^T) = (A(A^TA)^{-1}A^T)^{2} = P^{2} 
+ \frac{1}{m^2+1}\begin{bmatrix}1 & m \\ m & m^{2}\end{bmatrix}  \Rightarrow  
+ (A(A^TA)^{-1}A^T)^{2} =  
+ (\frac{1}{m^2+1})^{2}\begin{bmatrix}1 & m \\ m & m^{2}\end{bmatrix}\begin{bmatrix}1 & m \\ m & m^{2}\end{bmatrix} =  
+ (\frac{1}{m^2+1})^{2}\begin{bmatrix}1 + m^{2}& m + m^3 \\ m + m^3 & m^{2} + m^{4}\end{bmatrix} =  
+ (\frac{1}{m^2+1})\begin{bmatrix}1& m \\ m & m^2\end{bmatrix} = (A(A^TA)^{-1}A^T) 

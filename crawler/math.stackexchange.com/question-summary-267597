@@ -1,0 +1,53 @@
+t_{i}
+\frac{D}{dt}
+f:(-\epsilon,\epsilon)\times [0,a]\to M
+\frac{D}{\partial t}V(s_{0},t_{0})
+V:(-\epsilon,\epsilon)\times [0,a]\to TM
+t\mapsto f(s_{0},t)
+t_{0}
+\frac{D}{\partial s}
+c:[0,a]\to M
+f:(-\epsilon,\epsilon)\times[0,a]\to M
+c
+s
+s=0
+<
+>
+f
+\gamma
+\frac{1}{2}E'(s)=\sum_{i=0}^{k}\left.\left\langle\frac{\partial f}{\partial s},\frac{\partial f}{\partial t}\right\rangle\right|_{t_{i}}^{t_{i+1}}-\int_{0}^{a}\left\langle\frac{\partial f}{\partial s},\frac{D}{\partial t}\frac{\partial f}{\partial t}\right\rangle\operatorname{d}\!t
+\frac{1}{2}E''(s)=\sum_{i=0}^{k}\left.\frac{d}{ds}\left\langle\frac{\partial f}{\partial s},\frac{\partial f}{\partial t}\right\rangle\right|_{t_{i}}^{t_{i+1}}-\int_{0}^{a}\frac{d}{ds}\left\langle\frac{\partial f}{\partial s},\frac{D}{\partial t}\frac{\partial f}{\partial t}\right\rangle\operatorname{d}\!t
+\frac{1}{2}E''(s)=\sum_{i=0}^{k}\left.\left\langle\frac{D}{\partial s}\frac{\partial f}{\partial s},\frac{\partial f}{\partial t}\right\rangle\right|_{t_{i}}^{t_{i+1}}+\sum_{i=0}^{k}\left.\left\langle\frac{\partial f}{\partial s},\frac{D}{\partial s}\frac{\partial f}{\partial t}\right\rangle\right|_{t_{i}}^{t_{i+1}}-\int_{0}^{a}\left\langle\frac{D}{\partial s}\frac{\partial f}{\partial s},\frac{D}{\partial t}\frac{\partial f}{\partial t}\right\rangle\operatorname{d}\!t-\int_{0}^{a}\left\langle\frac{\partial f}{\partial s},\frac{D}{\partial s}\frac{D}{\partial t}\frac{\partial f}{\partial t}\right\rangle\operatorname{d}\!t
+i
+s\mapsto f(s,t_{i})
+\frac{\partial f}{\partial t}(0,t)\equiv 0
+t\mapsto\frac{D}{\partial s}\frac{\partial f}{\partial s}(s,t)
+0\leq i\leq k
+\alpha,\beta>0
+f\big|_{(-\alpha,\alpha)\times(t_{i}-\beta,t_{i}+\beta)}
+U\subseteq M
+(U,\rho)
+f(0,t_{i})
+\lambda_{1},\ldots,\lambda_{n}:(-\alpha,\alpha)\times(t_{i}-\beta,t_{i}+\beta)\to\mathbb{R}
+\lambda_{j}\big|_{(-\alpha,\alpha)\times[t_{i},t_{i}+\beta)}
+\lambda_{j}\big|_{(-\alpha,\alpha)\times(t_{i}-\beta,t_{i}]}
+\frac{\partial f}{\partial s}(s,t)=\sum_{j=1}^{n}\lambda_{j}(s,t)\frac{\partial}{\partial x_{j}}\bigg|_{f(s,t)}
+\frac{D}{\partial s}\bigg|_{(s,t)}\frac{\partial f}{\partial s}=\sum_{j=1}^{n}\frac{\partial \lambda_{j}}{\partial s}(s,t)\frac{\partial}{\partial x_{j}}\bigg|_{f(s,t)}+\sum_{j=1}^{n}\lambda_{j}(s,t)\frac{D}{\partial s}\bigg|_{(s,t)}\frac{\partial}{\partial x_{j}}\\ =\sum_{j=1}^{n}\frac{\partial \lambda_{j}}{\partial s}(s,t)\frac{\partial}{\partial x_{j}}\bigg|_{f(s,t)}+\sum_{j,m=1}^{n}\lambda_{j}(s,t)\lambda_{m}(s,t)\left(\nabla_{\frac{\partial}{\partial x_{m}}}\frac{\partial}{\partial x_{j}}\right)_{f(s,t)}
+\frac{\partial \lambda_{j}}{\partial s}(s,t_{i}^{+})=\frac{\partial \lambda_{j}}{\partial s}(s,t_{i}^{-})
+\frac{\partial \lambda_{j}}{\partial s}(s,t_{i})
+\lambda_{j}^{1}:=\lambda_{j}\big|_{(-\alpha,\alpha)\times(t_{i}-\delta,t_{i}]}
+\lambda_{j}^{2}:=\lambda_{j}\big|_{(-\alpha,\alpha)\times[t_{i},t_{i}+\delta)}
+\frac{\partial \lambda_{j}}{\partial s}(s,t_{i}^{+})=\frac{\partial \lambda_{j}^{2}}{\partial s}(s,t_{i})
+\frac{\partial \lambda_{j}}{\partial s}(s,t_{i}^{-})=\frac{\partial \lambda_{j}^{1}}{\partial s}(s,t_{i})
+t_{i}
+t_{i}
+\frac{\partial \lambda_{j}}{\partial s}(s,t_{i}^{+})=\lim_{t\downarrow t_{i}}\frac{\partial\lambda_{j}}{\partial s}(s,t)=\lim_{t\downarrow t_{i}}\frac{\partial\lambda_{j}^{2}}{\partial s}(s,t)
+\frac{\partial \lambda}{\partial s}(s,t_{i}^{-})=\lim_{t\uparrow t_{i}}\frac{\partial\lambda_{j}}{\partial s}(s,t)=\lim_{t\uparrow t_{i}}\frac{\partial\lambda_{j}^{1}}{\partial s}(s,t)
+\frac{\partial\lambda_{j}}{\partial s}(s,t_{j}^{+})=\lim_{h\to 0}\frac{\lambda_{j}^{2}(s+h,t_{i})-\lambda_{j}^{2}(s,t_{i})}{h}=\lim_{h\to 0}\frac{\lambda_{j}(s+h,t_{i})-\lambda_{j}(s,t_{i})}{h}\\ \frac{\partial\lambda_{j}}{\partial s}(s,t_{j}^{-})=\lim_{h\to 0}\frac{\lambda_{j}^{1}(s+h,t_{i})-\lambda_{j}^{1}(s,t_{i})}{h}=\lim_{h\to 0}\frac{\lambda_{j}(s+h,t_{i})-\lambda_{j}(s,t_{i})}{h}
+t_{i}
+s\mapsto f(s,t_{i})
+t\mapsto f(s,t)
+E'(0)=0
+s
+\sum_{i=0}^{k} \left\langle\frac{\partial f}{\partial s},\frac{\partial f}{\partial t}\right\rangle\bigg|_{t_{i}}^{t_{i+1}} =   \left\langle\frac{\partial f}{\partial s},\frac{\partial f}{\partial t}\right\rangle\bigg|_{0}^{a} =0
+ \frac{D}{dt}\frac{\partial f}{\partial t}\bigg|_{s=0} = \frac{D}{dt} \dot{\gamma}(t) =0 

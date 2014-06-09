@@ -1,0 +1,94 @@
+(r_i)_{i=1}^m
+\sum_i r_i < 1
+t
+u
+T(n)
+T(0) = t
+T(n) = un + \sum_i T(\lfloor r_i n \rfloor) 
+n \ge 1
+T(n) = \Theta(n)
+T(n) = O(n)
+T(n) = \Omega(n)
+L
+\lim_{n \to \infty} \dfrac{T(n)}{n} = L 
+L
+t
+u
+r_i
+r = \sum_i r_i
+s = 1-r
+0 < s < 1
+r_0 = \min_i r_i
+T(k) \le bk
+r_0n \le k < n
+T(n) \le bn
+\begin{align} T(n) &=un + \sum_i T(\lfloor r_i n \rfloor)\\ &\le un + \sum_i b r_i n\\  &= n(u + \sum_i b r_i )\\  &= n(u + b r)\\  \end{align} 
+\le bn
+n(u + b r) \le bn
+u+br \le b
+u \le b(1-r) = bs
+b \ge \dfrac{u}{s}
+n
+b \ge \max\left(\dfrac{u}{s}, \max_i \left( \dfrac{T(\lfloor r_i n \rfloor)}{\lfloor r_i n \rfloor}\right)\right) 
+T(n)
+\le bn
+r_i n < 1
+\lfloor r_i n \rfloor = 0
+n
+r_0 n \ge 1
+n \ge \dfrac1{r_0}
+T(k) \ge ak+c
+r_0n \le k < n
+T(n) \ge an+c
+c
+T(n)
+\begin{align}  T(n)  &=un + \sum_i T(\lfloor r_i n \rfloor)\\  &\ge un + \sum_i (a(\lfloor r_i n \rfloor+c)\\  &> un + \sum_i (a (r_i n-1)+c)\\  &= n(u + \sum_i (a r_i ) - \sum_i (c-a) \\  &= n(u + a r) + m(a-c)\\  \end{align}  
+\ge an+c
+n(u + a r)+m(a-c) \ge an
+n( a (1-r)-u)+m(a-c) \le 0
+n( as-u)\le m(c-a)
+as-u \le 0
+a \le \dfrac{u}{s}=v
+n
+a < \dfrac{u}{s}
+n
+n
+c \ge a
+n > \dfrac{a-c}{as-u}
+c < a
+a
+a < \dfrac{u}{s}=v
+vs = u
+a = v-d
+v > d > 0
+a > 0
+n( as-u)\le m(c-a)
+n( as-u)+am\le mc
+n( (v-d)s-u)+am\le mc
+n( -ds)+am\le mc
+-dsn < 0
+c \ge a
+c \ge v
+T(k) \ge ak+c
+r_0n \le k < n
+c = v
+a \le \dfrac{T(k)-c}{k}
+r_0 n \le k < n
+a > 0
+T(k) > c
+T(k) \ge uk
+uk > c
+k > \dfrac{c}{u}
+k > \dfrac{v}{u}
+r_0 n \le k
+r_0 n > \dfrac{v}{u}
+n > \dfrac{v}{u r_0}
+n
+a
+T(k) \ge ak+c
+r_0 n \le k < n
+T(n) \ge an+c
+n
+a
+b
+\lim_{n \to \infty} \dfrac{T(n)}{n} = v  = \dfrac{u}{s} = \dfrac{u}{1-\sum_i r_i}  

@@ -1,0 +1,17 @@
+\alpha_1+\cdots+\alpha_p = p
+\int_{s<u_1<\cdots <u_p<t} (u_1-s)^{\alpha_1/2}\cdots (u_p-u_{p-1})^{\alpha_p/2}du_1\cdots du_p
+s=0
+t-s
+x_1=u_1
+x_2=u_2-u_1
+x_p=u_p-u_{p-1}
+\Gamma
+t=\sum_i x_i
+I(t)=\int_{x_i>0,\sum_i x_i<t}x_1^{\alpha_1/2}\dots x_p^{\alpha_p/2}dx_1\dots dx_p.
+I(t)=t^{\sum_i(\alpha_i/2+1)}I(1)
+dI(t)/dt=\sum_i(\alpha_i/2+1)t^{\sum_i(\alpha_i/2+1)-1}I(1).
+J:=\int_{x_i>0}x_1^{\alpha_1/2}\dots x_p^{\alpha_p/2}e^{-\sum_i x_i}dx_1\dots dx_p
+J=\prod_i\Gamma(\alpha_i/2+1).
+J=\int_0^\infty \frac{dI(t)}{dt} e^{-t}dt=\sum_i(\alpha_i/2+1)I(1)\int_0^\infty t^{\sum_i(\alpha_i/2+1)-1}e^{-t}dt
+=\sum_i(\alpha_i/2+1)I(1)\Gamma(\sum_i(\alpha_i/2+1))=I(1)\Gamma(\sum_i(\alpha_i/2+1)+1).
+I(t)=\frac{\prod_i\Gamma(\alpha_i/2+1)}{\Gamma(\sum_i(\alpha_i/2+1)+1)}t^{\sum_i(\alpha_i/2+1)}.

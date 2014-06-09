@@ -1,0 +1,52 @@
+L(t,x,p) \in C^m([0,1] \times \mathbb{R}^n \times \mathbb{R}^n;\mathbb{R})
+m\geqslant1
+u \in C^1([0,1];\mathbb{R}^n)
+L(t,x,p)
+u_1
+u_2
+u_1(0)=u_2(0)
+u_1(1)=u_2(1)
+\mathcal{L}u_1 = \mathcal{L}u_2
+S(t,x) \in C^{m+1}([0,1]\times \mathbb{R}^n)
+    \mathcal{L}u = \int\limits_{0}^{1}L(t,u(t),u'(t)) \, dt. 
+   \mathcal{L}u = F(u(0),u(1)). 
+    L(t,x,p) = S_{t}(t,x)+\langle \nabla_{x} S(t,x),p\rangle. 
+    L(t,u(t),u'(t)) = S_{t}(t,u(t))+\langle \nabla_{x} S(t,u(t)), u'(t) \rangle = \frac{d}{dt}S(t,u(t)) 
+    \mathcal{L}u = \int\limits_{0}^{1} \frac{d}{dt}S(t,u(t))\,dt = S(1,u(1))-S(0,u(0)). 
+m \geq 2
+\delta u \in C^\infty_0([0,1])
+u\in C^1([0,1])
+\delta{\mathcal{L}}/\delta u = 0
+u\in C^1([0,1])
+ \mathcal{L}(u+\delta u) = \mathcal{L}u 
+u\in C^2([0,1]) \subseteq C^1([0,1])
+t\in [0,1]
+t\in [0,1]
+x,p,q \in \mathbb{R}^n
+n\times n
+u \in C^2([0,1])
+u(t) = x
+\dot{u}(t) = p
+\ddot{u}(t) = q
+x,p,q\in \mathbb{R}^n
+ \frac{d}{dt} L_p = L_u \iff L_{tp} + L_{up} \dot{u} - L_u + L_{pp}\ddot{u} = 0 
+ L_{tp}(t,x,p) + L_{xp}(t,x,p)\cdot p - L_x(t,x,p) + L_{pp}(t,x,p) \cdot q = 0 
+q
+(t,x,p)
+L
+p
+L(t,x,p) = M(t,x) + N(t,x)\cdot p
+N
+M
+ L_{pp}(t,x,p) = 0 
+ N_t + (p\cdot\nabla_x) N - \nabla_x M - \nabla_x(N\cdot p) = 0 
+ N_t = \nabla_x M  \tag{1}
+ \sum_{i} p^i (\partial_i N_j - \partial_j N_i) = 0 \tag{2}
+p
+\mathrm{d}_xN = 0
+\mathbb{R}^n
+N = \nabla S
+S
+M = S_t
+L_p
+C^1

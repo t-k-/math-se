@@ -1,0 +1,19 @@
+V
+L^2[-\pi, \pi] 
+k
+e_k(t)=e^{ikt}
+K
+V
+e_k
+\langle f,g\rangle=\int_{-\pi}^\pi f(x) \overline {g(x)} \, dx
+(Kf)(x)=\int_{-\pi}^\pi cos(x-t)f(t)dt
+(Kf)(x)=\mu f(x)
+e_k(t)
+\cos(x-t)=\frac{e^{i(x-t)}+e^{-i(x-t)}}{2}
+\begin{align}  Ke_k(x) &= \int_{-\pi}^\pi \frac{e^{i(x-t)}+e^{-i(x-t)}}{2} e^{ikt}dt \\  &= \frac{e^{ix}}{2}\int_{-\pi}^\pi e^{i(k-1)t}dt + \frac{e^{-ix}}{2}\int_{-\pi}^\pi e^{i(k+1)t}dt \end{align}
+\int_{-\pi}^{\pi} e^{ilt} dt = 0
+l\in \mathbb{Z}^*
+2\pi
+l=0
+{\cal F} Ke^{ik\cdot} = {\cal F}(\cos \ast e^{ik\cdot}) = {\cal F} \cos \cdot {\cal F} e^{ik\cdot} = \cal F \cos \cdot \delta_k
+K e^{ik\cdot} = \sum_{k\in\mathbb Z} ({\cal F} \cos)_j \delta_k e^{ij\cdot} = ({\cal F} \cos)_k e^{ik\cdot}

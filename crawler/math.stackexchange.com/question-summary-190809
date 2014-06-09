@@ -1,0 +1,20 @@
+U, T
+U
+(0, 2\pi)
+T
+\lambda = 1
+Y
+Y=r(U, T) = \sqrt{2T}\cos(U)
+Y
+X, Y
+\frac{e^{-t}}{2 \pi }
+P(Y \le y) = P(r(U,T) \le y) =\int_{0}^{y}\int_{0}^{\frac{y^2}{2\cdot cos^2(u) }}f_U(u)f_T(t)  \mathrm{d}t \mathrm{d}u  
+ = \int_{0}^{y}\int_{0}^{\frac{y^2}{2\cdot cos^2(u) }}\frac{e^{-t}}{2 \pi }  \mathrm{d}t \mathrm{d}u
+\int_{0}^{y} -\frac{e^{-\frac{1}{2} \text{Sec}[u]^2 y_1^2}-1}{2 \pi }\mathrm{d}u
+(u,t)
+r(u,t)\leqslant y
+\sqrt{2t}\cos u\leqslant y
+0\leqslant 2t\cos^2u\leqslant y^2
+0\leqslant u\leqslant y
+r(\pi,1)\leqslant0
+2\cdot1\cdot\cos^2(\pi)\gt1

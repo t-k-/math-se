@@ -1,0 +1,15 @@
+U(t)
+\mathbb{R}^3
+ U(t,\vec{x}-\vec{x}_0)=\int\frac{d^3p}{(2\pi)^3}e^{-i(p^2/2m)t}e^{i\vec{p}\cdot(\vec{x}-\vec{x}_0)}
+p^2=p_{x}^2+p_{y}^2+p_{z}^2
+\vec{x}, \vec{x}_0
+\vec{u}\equiv\vec{x}-\vec{x}_0
+u^2\equiv\vec{u}\cdot\vec{u}
+ U(t,\vec{u})=\left(\frac{m}{2\pi it}\right)^{3/2}e^{imu^2/2t}
+ U(t,\vec{u})=\int\frac{dp_{x}dp_{y}dp_{z}}{(2\pi)^3} \exp\left(-i\left(\frac{p_x^2+p_y^2+p_z^2}{2m}\right)t\right)\exp\left( i(p_xu_x+p_yu_y+p_zu_z)\right)\\=\int\frac{dp_x}{2\pi}\exp\left(-i\frac{p_x^2}{2m}t\right)\exp\left( ip_xu_x\right)\int\frac{dp_y}{2\pi}\exp\left(-i\frac{p_y^2}{2m}t\right)\exp\left( ip_yu_y\right)\int\frac{dp_z}{2\pi}\exp\left(-i\frac{p_z^2}{2m}t\right)\exp\left( ip_zu_z\right)=f(t,u_{x})f(t,u_{y})f(t,u_{z})
+u
+\mathcal{F}[f](u)
+f(t,u)=\int\frac{dp}{2\pi}\exp(ipu)\exp\left( -i\frac{p^2t}{2m}\right)= \mathcal{F}\left( \exp\left( i\frac{p^2t}{2m}\right)\right)(u) \propto\delta\left(u-\frac{p^2t}{2m}\right)
+\propto
+\int_{-\infty}^{\infty} \: dx e^{-i x^2} = \sqrt{\frac{\pi}{i}} = \sqrt{\pi} e^{-i \pi/4}
+\begin{align}\int_{-\infty}^{\infty}  dx\: e^{-i a x^2} e^{i b x} &= \int_{-\infty}^{\infty} \: dx e^{-i a (x^2 - b/a x)} \\ &= \underbrace{\int_{-\infty}^{\infty}  dx\: e^{-i a (x^2 - b/a x + b^2/(4 a^2))} e^{i b^2/(4 a)}}_{\text{completing the square}}\\ &= e^{i b^2/(4 a)}\int_{-\infty}^{\infty}  dx\: e^{-i a (x-b/(2 a))^2}\\ &= e^{i b^2/(4 a)} \sqrt{\frac{\pi}{i a}}\end{align}

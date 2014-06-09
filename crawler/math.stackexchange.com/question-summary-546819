@@ -1,0 +1,10 @@
+p(w,x,y,z)
+x
+w
+p(w,x,y,z)=p(w)p(z|y)p(y|x,w)p(x)
+x
+w
+p(w,x,y,z)=p(w|x,y,z)p(x|y,z)p(y|z)p(z)
+p(w,x,y,z)=p(z|w,x,y)p(w,x,y)
+p(z|y)=p(z|w,x,y)
+ p(w,x)=\sum_{y,z}p(w,x,y,z)=p(w)p(x)\sum_yp(y\mid w,x)\sum_zp(z\mid y)=\underline{\qquad} 

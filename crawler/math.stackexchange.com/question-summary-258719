@@ -1,0 +1,19 @@
+A=\sum_{i=k}^{2k-1}\binom {2k-1} ix^i(1-x)^{2k-1-i}
+B=\sum_{i=k+1}^{2k}\binom {2k} i x^i(1-x)^{2k-i}+\frac{1}{2}\binom {2k} k x^k(1-x)^k
+A=B
+\binom{2k}{k} = 2\binom{2k-1}{k}
+B=xA+(1-x)A
+j=i+1
+j=2k
+\begin{align}xA &= \sum_{i=k}^{2k-1} \binom{2k-1}{i} x^{i+1}(1-x)^{2k-1-i}\\ &= \sum_{j=k+1}^{2k} \binom{2k-1}{j-1} x^{j}(1-x)^{2k-j}\\ &= \left(\sum_{j=k+1}^{2k-1}\binom{2k-1}{j-1} x^{j}(1-x)^{2k-j} \right)+ x^{2k}\end{align}
+\begin{align}(1-x)A &= \sum_{i=k}^{2k-1}\binom{2k-1}{i}x^i(1-x)^{2k-i}\\ &=\binom{2k-1}{k}x^k(1-x)^k +\sum_{i=k+1}^{2k-1} \binom {2k-1}{i}x^i(1-x)^{2k-i} \end{align}
+i=k
+\sum
+xA
+(1-x)A
+x
+1-x
+\begin{align}(1-x)A + xA = &\binom{2k-1}{k}x^k(1-x)^k + \\ &\sum_{i=k+1}^{2k-1}\left(\binom{2k-1}{i-1}+\binom{2k-1}{i}\right)x^{i}(1-x)^{2k-i} +\\ &x^{2k} \end{align}
+x^{2k}= \binom{2k}{2k} x^{2k}(1-x)^{2k-2k}
+\binom{2k-1}{k}=\frac{1}{2}\binom{2k}{k}
+\binom{2k-1}{i}+\binom{2k-1}{i-1}=\binom{2k}{i}

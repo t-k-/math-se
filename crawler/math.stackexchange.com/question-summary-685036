@@ -1,0 +1,12 @@
+\lim\limits_{n \to \infty} a_n*b_n = ab
+\frac{a_n}{b_n} \rightarrow \frac{a}{b}
+a_n \to a
+b_n \to b
+b_n \to b
+\epsilon>0, 
+\exists N \in \mathbb{N}
+\forall n\ge N, |b_n - b|<\epsilon
+|a_n-a|\le\epsilon
+|b_n|\ge\min \{|b_1|,\cdots,|b_N|,|b|-\epsilon\}=M(say)
+|a_n|\le\max \{|a_1|,\cdots,|a_N|,|a|+\epsilon\}=m(say)
+|\frac{a_n}{b_n}-\frac{a}{b}|=|\frac{a_n}{b_n}-\frac{a_n}{b}+\frac{a_n}{b}-\frac{a}{b}|\leq|a_n||\frac{1}{b_n}-\frac{1}{b}|+|1/b||a_n-a|\leq \frac{m\epsilon}{bM}+\frac{\epsilon}{b}=\frac{\epsilon}{b}(1+\frac{m}{M})

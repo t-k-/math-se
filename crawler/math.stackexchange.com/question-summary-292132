@@ -1,0 +1,18 @@
+\int_{0}^{\infty }{\frac{{{\text{e}}^{-{{x}^{2}}}}}{{{\pi }^{2}}+{{\left( \gamma +x \right)}^{2}}}\text{d}x}
+f
+\hat{f}(k) = \int_{-\infty}^{\infty} dx \: f(x) e^{i k x}
+f
+g
+\hat{f}
+\hat{g}
+\int_{-\infty}^{\infty} dx \: f(x) g^*(x) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} dk \: \hat{f}(k) \hat{g}^*(k) 
+f(x) = e^{-x^2} \theta(x)
+g(x) = [\pi^2 + (\gamma + x)^2]^{-1}
+\theta(x)
+\hat{f}(k) = \frac{\sqrt{\pi}}{2} e^{-\frac{k^2}{4}} - i F \left ( \frac{k}{2} \right ) 
+F(z) = e^{-z^2} \int_0^z dt \: e^{t^2}
+\hat{g}(k) = e^{-i \gamma k} e^{-\pi |k|}
+k
+\frac{1}{2 \pi} \int_{-\infty}^{\infty} dk \: \left [  \frac{\sqrt{\pi}}{2} e^{-\frac{k^2}{4}} \cos{\gamma k} + F \left ( \frac{k}{2} \right ) \sin{\gamma k} \right ] e^{-\pi |k|} 
+\frac{1}{2 \pi} \int_{-\infty}^{\infty} dk \: \frac{\sqrt{\pi}}{2} e^{-\frac{k^2}{4}} e^{-\pi |k|} \cos{\gamma k} = \frac{1}{2} e^{\pi^2 - \gamma^2} \cos{2 \pi \gamma} - \frac{1}{\sqrt{\pi}} \Im{F(\gamma + i \pi)}
+\begin{align}\frac{1}{2 \pi} \int_{-\infty}^{\infty} dk \: F \left ( \frac{k}{2} \right ) e^{-\pi |k|} \sin{\gamma k} &= \frac{1}{4 \pi} \int_0^1 du \: \int_{-\infty}^{\infty} dk \: k \, e^{-\frac{(1-u^2) k^2}{4}} e^{-\pi |k|} \sin{\gamma k}\\ &= -\frac{1}{4 \pi} \frac{\partial}{\partial \gamma}  \int_0^1 du \: \int_{-\infty}^{\infty} dk \: e^{-\frac{(1-u^2) k^2}{4}} e^{-\pi |k|} \cos{\gamma k}\\  \end{align}

@@ -1,0 +1,22 @@
+G, H
+G \times H
+\mathrm{Ab}
+i_G:G \to G \times H
+i_H:H \to G \times H
+i_G:g \mapsto (g,e_H)
+i_H:h \mapsto (e_G,h)
+G \times H
+\varphi_1 :G \to Z
+\varphi_2 :H \to Z
+\psi
+\psi \circ i_G = \varphi_1
+\psi \circ i_H = \varphi_2
+\psi
+(g,h) \in G \times H
+\psi(g,h) = \psi(ge_G,he_H) = \psi(g,e_H)\psi(e_G,h) = (\psi \circ i_G(g)) \cdot (\psi \circ i_H(h)) = \varphi_1(g) \cdot \varphi_2(h)
+\psi = \varphi_1(g) \cdot \varphi_2(h)
+(g_1,h_1), (g_2,h_2) \in G \times H
+Z
+\psi(g_1,h_1) \cdot \psi(g_2,h_2) = \varphi_1(g_1) \cdot \varphi_2(h_1) \cdot \varphi_1(g_2) \cdot \varphi_2(h_2) = \varphi_1(g_1) \cdot \varphi_1(g_2) \cdot \varphi_2(h_1) \cdot \varphi_2(h_2) = \varphi_1(g_1g_2) \cdot \varphi_2(h_1h_2) = \psi(g_1g_2,h_1h_2)
+\psi
+G \times H

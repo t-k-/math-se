@@ -1,0 +1,57 @@
+\frac{\partial}{\partial\mathbf x} (\log(\mathtt A\cdot\exp(\widehat{\mathbf x})\cdot \mathtt B))^\vee \approx \mathtt{Ad_A}
+\mathtt{A,B}
+G(n)
+n\times n
+\mathbf x
+\exp(\cdot)
+\log(\cdot)
+\widehat{\cdot}
+n
+n\times n
+\mathtt{Ad_A}
+\mathtt A
+\widehat{\mathbf x} = \begin{bmatrix} 0&-x_3& x_2\\ x_3&0,&-x_1\\-x_2&x_1&0\end{bmatrix}
+(\mathtt R)^\vee= \begin{bmatrix}R_{3,2}\\R_{1,3}\\R_{2,1}\end{bmatrix}=\frac{1}{2} \begin{bmatrix}R_{3,2}-R_{2,3}\\R_{1,3}-R_{3,1}\\R_{2,1}-R_{1,2}\end{bmatrix} = -\begin{bmatrix}R_{2,3}\\R_{3,1}\\R_{1,2}\end{bmatrix} 
+Adj_\mathtt A(\widehat{\mathbf x}) := \mathtt A \widehat{\omega}  \mathtt A^{-1}
+\mathbf x
+n
+\mathtt A
+Adj_\mathtt A
+n\times n
+\mathtt{Ad_A}
+\mathtt{Ad_A}\cdot \mathbf x = (Adj_\mathtt A(\widehat{\mathbf x}))^\vee.
+\mathtt{Ad_R}\mathbf x = \mathtt R \widehat{\mathbf x} \mathtt R^\top
+\Rightarrow
+\mathtt{Ad_R=R}
+\mathtt A\exp(\mathtt B)\mathtt A^{-1}=\exp(\mathtt{ABA}^{-1})
+\exp(\widehat{\mathtt{Ad_A} \mathbf x}) = \mathtt{A} \exp(\widehat{\mathbf x}) \mathtt{A}^{-1}.
+\exp(\widehat{\mathtt{Ad_A} \mathbf x}) \mathtt A= \mathtt{A} \exp(\widehat{\mathbf x}) \quad (1)
+\text{BCH}(\mathtt{A,B) := \log(\exp(A),\exp(B))}
+\mathtt {A,B}
+\text{BCH}(\mathtt{A,B}) = \mathtt{A+B}
+t_1 = \mathtt{A+B}
+t_2 = \frac{1}{2}(\mathtt{AB-BA})
+\mathbf c := \log(\mathtt{AB})
+\frac{\partial}{\partial\mathbf x} (\log(\mathtt A\cdot\exp(\widehat{\mathbf x})\cdot \mathtt B))^\vee = \frac{\partial}{\partial\mathbf x} (\log(\exp(\widehat{\mathtt {Ad_A}\mathbf x})\mathtt A\mathtt B))^\vee
+= \frac{\partial}{\partial\mathbf x} (\text{BCH}(\widehat{\mathtt {Ad_A}\mathbf x},\mathbf c))^\vee
+\mathtt {A,B}
+\widehat{\mathtt{Ad_A}\mathbf x}
+\mathbf c
+= \frac{\partial}{\partial\mathbf x}  \mathtt{Ad_A}\mathbf x + \frac{\partial}{\partial\mathbf x} (\mathbf c)^\vee
+=   \mathtt{Ad_A} + \mathtt O= \mathtt{Ad_A}
+\mathtt{Ad_A}=\mathtt I
+\mathtt {A,B}
+\mathbf{x}
+\widehat{\mathbf{x}}
+[\mathbf{a},\mathbf{b}]:=\widehat{\mathbf{a}}\cdot\widehat{\mathbf{b}}-\widehat{\mathbf{b}}\cdot\widehat{\mathbf{a}}
+[\mathbf{a},\mathbf{b}]=\mathbf{a}\times\mathbf{b}
+\text{bch}(\mathbf{a},\mathbf{b}):=\log(\exp(\widehat{\mathbf{a}})\exp(\widehat{\mathbf{b}}))^\vee
+\left. \frac{\partial}{\partial \mathbf{x}}  \log(\mathtt{A}\exp(\mathbf{x})\mathtt{B})^\vee\right|_{\mathbf{x}=\mathbf{0}} 
+ =\left.\frac{\partial}{\partial \mathbf{x}} \log\left(\exp(\widehat{\mathtt{Ad}_\mathtt{A}\mathbf{x}})\mathtt{A}\mathtt{B}\right)^\vee\right|_{\mathbf{x}=\mathbf{0}}
+=\left.\frac{\partial}{\partial \mathbf{x}} \log\left(\exp(\widehat{\mathtt{Ad}_\mathtt{A}\mathbf{x}})\exp(\widehat{\mathbf{c}})\right)^\vee\right|_{\mathbf{x}=\mathbf{0}}
+= \left.\frac{\partial}{\partial \mathbf{x}} \text{bch}(\mathtt{Ad}_\mathtt{A}\mathbf{x},\mathbf{c})\right|_{\mathbf{x}=\mathbf{0}}
+\approx \frac{\partial}{\partial \mathbf{x}}\left( \mathtt{Ad}_\mathtt{A}\mathbf{x}+\mathbf{c}  + \frac{1}{2}[\mathtt{Ad}_\mathtt{A}\mathbf{x},\mathbf{c}]+\frac{1}{12}([\mathtt{Ad}_\mathtt{A}\mathbf{x},[\mathtt{Ad}_\mathtt{A}\mathbf{x},\mathbf{c}]]+ [\mathbf{c},[\mathbf{c},\mathtt{Ad}_\mathtt{A}\mathbf{x}]])\right)_{\mathbf{x}=\mathbf{0}}
+   =\left.\left(\frac{\partial \mathbf{y}}{\partial\mathbf{y}} + \frac{1}{2}\cdot\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}\right|_{\mathbf{y}=\mathtt{Ad}_\mathtt{A}\mathbf{0}} +\frac{1}{12}\left(\frac{\partial[\mathbf{y},[\mathbf{y},\mathbf{c}]}{\partial\mathbf{y}}-\frac{\partial[\mathbf{c},[\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}\right)_{\mathbf{y}=\mathtt{Ad}_\mathtt{A}\mathbf{0}}\right) \left.\frac{\partial \mathtt{Ad}_\mathtt{A}\mathbf{x}}{\partial \mathbf{x}}\right|_{\mathbf{x}=\mathbf{0}}
+=   \left(\mathtt{I} + \left.\frac{1}{2}\cdot\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}\right|_{\mathbf{y}=\mathbf{0}} + \frac{1}{12} \left(\frac{\partial [\mathbf{y},[\mathbf{0},\mathbf{c}]]}{\partial \mathbf{y}}+ \frac{\partial [\mathbf{0},[\mathbf{y},\mathbf{c}]]}{\partial \mathbf{y}}  -\left.\frac{\partial [\mathbf{c},\mathbf{w}]}{\partial \mathbf{w}}\right|_{\mathbf{w}=[\mathbf{0},\mathbf{c}]} \left.\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}  \right|_{\mathbf{y}=\mathbf{0}} \right)\right) \mathtt{Ad}_\mathtt{A}\nonumber
+=   \left(\mathtt{I} + \left.\frac{1}{2}\cdot\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}\right|_{\mathbf{y}=\mathbf{0}} + \frac{1}{12}\left.\frac{\partial [\mathbf{w},\mathbf{c}]}{\partial \mathbf{w}}\right|_{\mathbf{w}=\mathbf{0}} \left.\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{c}}\right|_{\mathbf{y}=\mathbf{0}}  \right)\mathtt{Ad}_\mathtt{A}
+=   \left(\mathtt{I} + \left.\frac{1}{2}\cdot\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{y}}\right|_{\mathbf{y}=\mathbf{0}} + \frac{1}{12}\left( \left.\frac{\partial [\mathbf{y},\mathbf{c}]}{\partial \mathbf{c}}\right|_{\mathbf{y}=\mathbf{0}} \right)^2 \right)\mathtt{Ad}_\mathtt{A}

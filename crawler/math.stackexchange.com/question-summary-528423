@@ -1,0 +1,20 @@
+u(x,t) = \sum_{n=1}^{\infty} B_n e^{-(n \pi C / L)^2 t} \sin(\frac{n \pi x}{L})
+B_n = \frac{2}{L} \int_0^L \sin(\frac{n \pi x}{L}) f(x) dx
+t>0
+0 \leqslant x \leqslant L
+u(0,t) = 0 = u(L,t)
+t > 0
+u(x, 0) = f(x)
+0 \leqslant x \leqslant L
+u_t = c^2 u_{xx}
+u(x,t) = X(x) T(t)
+x
+X(x) = B \sin(\frac{n \pi x}{L})
+c = \frac{n \pi}{L}
+T(t) = Ae^{-(\frac{n \pi}{L})t}
+D = AB
+T(t) = Ae^{-c^2 t}
+X(x) = B \sin(c x) + C \sin(c x)
+u(x,t) = D e^{-(\frac{n \pi}{L})^2t} \sin(\frac{n \pi x}{L})
+u(x,0) = f(x)
+B_n

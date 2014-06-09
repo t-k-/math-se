@@ -1,0 +1,11 @@
+f:[0 ,1]\mapsto(0,+\infty)
+\frac{\int_{0}^1x(f(x))^2dx}{\int_{0}^1xf(x)dx}\leq \frac{\int_{0}^1(f(x))^2dx}{\int_{0}^1f(x)dx}
+f
+n
+a_1,a_2,\ldots,a_n
+a_k = f(k/n)
+k=1,2,\ldots,n
+n
+n\to\infty
+\sum_{k=1}^{n} a_k \sum_{k=1}^{n} ka_k^2 \le \sum_{k=1}^{n} a_k^2 \sum_{k=1}^{n} ka_k
+\begin{align*} &\int_0^1 f(x)^2\;dx \int_0^1 xf(x)\;dx - \int_0^1 f(x)\;dx\int_0^1 xf(x)^2\;dx \\ &= \int_0^1\int_0^y f(y)^2xf(x)+yf(y)f(x)^2 - f(y)xf(x)^2 - yf(y)^2f(x) \;dx\;dy \\ &= \int_0^1\int_0^y f(y)f(x) [f(y)x+yf(x)-xf(x)-yf(y)] \;dx\;dy \\ &= \int_0^1\int_0^y f(y)f(x) [y-x][f(x)-f(y)] \;dx\;dy \\ &\ge 0, \end{align*}

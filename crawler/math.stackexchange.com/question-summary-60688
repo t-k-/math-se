@@ -1,0 +1,28 @@
+(X,\mathcal{E})
+\mu : \mathcal{E} \to \mathbb{R}^+
+f: X \to \mathbb{R}^m
+z \in \mathbb{R}^m
+\int_B \langle f, z \rangle d\mu = \langle \int_B f d\mu, z \rangle
+f
+f=(f_1,\ldots,f_m)
+z=(z_1,\ldots,z_m)
+\displaystyle\sum\limits_{k=1}^mz_k\int_Bf_k\text{d}\mu
+f_k
+B
+\langle\ ,\ \rangle
+\langle\ ,\ \rangle
+f
+z
+‎B
+X
+z
+z
+‎s := \max_{\xi \in B} \{z (\xi , x)\}
+\int_{B}\int_{D} g ‎(‎z - s) ‎‎‎dx ‎d‎\mu(\xi) ‎=‎ ‎\int_{B\times D}‎ g ‎‎(‎z - s) ‎‎‎dx ‎‎d‎\mu(\xi)‎‎
+‎‎‎\leq \|(‎z - s)\| \|g\|‎‎‎‎‎‎
+‎‎\leq 2 \|s\|‎ \|g\|‎‎
+‎\|‎‎z‎‎\| ‎\rightarrow ‎0‎‎‎‎
+\|s\| ‎\rightarrow 0‎‎‎
+‎‎‎\int_{B \times ‎X‎} g z ‎‎‎dx d‎\mu(\xi)‎‎ =‎‎ \int_{B \times ‎X‎} ‎g‎ ‎s ‎‎‎dx ‎d‎\mu(\xi)‎‎ ‎
+‎= \int‎_{‎X} ‎s  \int‎_{B} ‎g‎ d‎\mu(\xi)‎‎ dx  = ‎\langle ‎E[‎g]‎ ,s‎ \rangle,‎‎‎
+‎\langle ‎E[‎g]‎ ,‎E[z] - s‎ \rangle \leq \int_{‎D}\int_{‎B}‎ (z - s) d‎\mu(\xi)‎‎dx ‎\int_{‎D} \int_{B} g ‎‎‎d‎\mu(\xi)‎‎dx ‎‎ ‎‎

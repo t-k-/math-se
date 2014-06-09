@@ -1,0 +1,11 @@
+ \sum\limits_{s=0}^{\infty}{p+s \choose s}{2p+m \choose 2p+2s} = 2^{m-1} \frac{2p+m}{m}{m+p-1 \choose p}
+    g_1(z) = \sum_{s=0}^\infty \binom{p+s}{s} z^s = \frac{1}{\left(1-z\right)^{p+1}} 
+    g_2(z) = \sum_{s=0}^\infty \binom{2p+m}{s} z^s = \left(1+z\right)^{m+2p} 
+ \begin{eqnarray}   \sum_{s=0}^\infty \binom{p+s}{s} \binom{2p+m}{2p+2s} &=& \sum_{s=0}^\infty \binom{p+s}{s} \binom{2p+m}{m-2s} = [z]^m g_1(z^2) g_2(z) = [z]^m \frac{\left(1+z\right)^{m+2p}}{(1-z^2)^{p+1}} \\    &=& [z]^m \frac{\left(1+z\right)^{m+p-1}}{\left(1-z\right)^{p+1}}  \end{eqnarray}  
+ \begin{eqnarray}     [z]^m \frac{\left(1+z\right)^{m+p-1}}{\left(1-z\right)^{p+1}} &=& \sum_{s=0}^\infty \binom{p+m-1}{m-s} \binom{p+s}{s} =  \sum_{s=0}^\infty \binom{p+m-1}{p+s-1} \binom{p+s}{s}\\ &=& \sum_{s=0}^\infty \frac{(p+s) (m+p-1)!}{p! s! (m-s)!} =          \sum_{s=0}^\infty \frac{p (m+p-1)!}{p! s! (m-s)!} + \sum_{s=0}^\infty \frac{s   (m+p-1)!}{p! s! (m-s)!} \\    &=& \binom{m+p-1}{m} \left( \sum_{s=0}^\infty  \binom{m}{s} + \sum_{s=0}^\infty \frac{s}{p} \binom{m}{s}  \right) \\      &=& \binom{m+p-1}{m}  \left( 2^m + 2^{m-1} \frac{m}{p} \right)  \end{eqnarray} 
+d_s = \binom{p+s}{s} \binom{2p+m}{2p+2s}
+a = -\frac{m}{2}
+b=-\frac{m-1}{2}
+c=p+\frac{1}{2}
+  \frac{d_{s+1}}{d_s} = \frac{\left(s - m/2\right)\left(s -(m-1)/2\right)}{ (s+1)(s+p+1/2)  } = \frac{(s+a)(s+b)}{(s+1)(s+c)} 
+   \sum_{s=0}^\infty d_s = d_0 \sum_{s=0}^\infty \frac{(a)_s (b)_s}{s! (c)_s} = \binom{2p+m}{2p} {}_2 F_1\left( -\frac{m}{2}, -\frac{m-1}{2} ; p+\frac{1}{2} ; 1\right)  

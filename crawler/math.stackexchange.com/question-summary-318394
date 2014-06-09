@@ -1,0 +1,71 @@
+c_0
+\ell^\infty
+0
+c_0
+\ell^{\infty}
+\ell^1
+c_0
+\ell^{\infty}
+x\in\ell_\infty
+\{x_n:n\in\mathbb{N}\}\subset c_0
+x=\lim\limits_{n\to\infty} x_n
+\ell_\infty
+\ell_\infty
+\mathbb{N}
+x\in c_0
+x
+c_0
+c_0
+ \begin{align} \lim\limits_{k\to\infty}x(k)&=\lim\limits_{k\to\infty}\lim\limits_{n\to\infty} x_n(k)\\ &=\lim\limits_{n\to\infty}\lim\limits_{k\to\infty} x_n(k)\\ &=\lim\limits_{n\to\infty}0\quad (\text{ since } \{x_n:n\in\mathbb{N}\}\subset c_0)\\ &=0 \end{align} 
+I
+x\in\ell_1
+y\in c_0
+\Vert I(x)\Vert\leq \Vert x\Vert
+\varepsilon>0
+K\in\mathbb{N}
+\sum\limits_{k=1}^K|x(k)|>\Vert x\Vert-\varepsilon
+y'\in c_0
+\Vert y'\Vert=1
+\Vert I(x)\Vert\geq\Vert x\Vert-\varepsilon
+\varepsilon
+\Vert I(x)\Vert\geq\Vert x\Vert
+\Vert I(x)\Vert\leq \Vert x\Vert
+\Vert I(x)\Vert=\Vert x\Vert
+x
+I
+ I:\ell_1\to (c_0)^*:x\mapsto\left(y\mapsto\sum\limits_{k=1}^\infty x(k)y(k)\right) 
+ \begin{align} |I(x)(y)|&=\left|\sum\limits_{k=1}^\infty x(k)y(k)\right| \leq\sum\limits_{k=1}^\infty |x(k)y(k)| \leq\sum\limits_{k=1}^\infty \sup\{|x(k)|:k\in\mathbb{N}\}|y(k)|\\ &=\sum\limits_{k=1}^\infty \Vert x\Vert |y(k)| =\Vert x\Vert\sum\limits_{k=1}^\infty|y(k)|=\Vert x\Vert\Vert y\Vert \end{align} 
+ y'(k)= \begin{cases} \overline{x(k)}|x(k)|^{-1}&\quad\text{ if }\quad k\leq K\\ 0&\quad\text{ otherwise} \end{cases} 
+ \begin{align} |I(x)(y')|&=\left|\sum\limits_{k=1}^\infty x(k)y'(k)\right| =\sum\limits_{k=1}^K x(k)\overline{x(k)}|x(k)|^{-1} =\sum\limits_{k=1}^K |x(k)| =\sum\limits_{k=1}^K |x(k)|\Vert y'\Vert\\ &\geq (\Vert x\Vert-\varepsilon)\Vert y'\Vert\\ \end{align} 
+I
+n\in\mathbb{N}
+e_n
+c_0
+f\in(c_0)^*
+x'\in\ell_\infty
+x'(k)=f(e_k)
+K\in\mathbb{N}
+y''\in c_0
+\Vert y''\Vert=1
+K\in\mathbb{N}
+x'\in\ell_1
+\varepsilon>0
+y\in c_0
+K\in\mathbb{N}
+k>K
+|y(k)|<\varepsilon
+k>K
+\left\Vert y-\sum\limits_{n=1}^k y(n)e_n\right\Vert<\varepsilon
+\varepsilon
+y=\lim\limits_{n=1}^\infty y(n)e_n
+y\in c_0
+f=I(x')
+f\in (c_0)^*
+I
+ e_n(k)= \begin{cases} 1&\quad\text{ if }\quad k=n\\ 0&\quad\text{ otherwise } \end{cases} 
+ y''(k)= \begin{cases} \overline{f(e_k)}|f(e_k)|^{-1}&\quad\text{ if }\quad k\leq K\\ 0&\quad\text{ otherwise } \end{cases} 
+ \sum\limits_{k=1}^K |x'(k)|=\sum\limits_{k=1}^K f(e_k)y''(k)=f\left(\sum\limits_{k=1}^K y''(k)e_k\right)=f(y'')=|f(y'')|\leq\Vert f\Vert\Vert y''\Vert=\Vert f\Vert 
+ \sum\limits_{k=1}^\infty |x'(k)|\leq\Vert f\Vert 
+ f(y)=f\left(\sum\limits_{n=1}^\infty y(n)e_n\right)=\sum\limits_{n=1}^\infty y(n)f(e_n)=\sum\limits_{n=1}^\infty y(n)x'(n)=I(x')(y) 
+I
+(c_0)^*\cong\ell_1

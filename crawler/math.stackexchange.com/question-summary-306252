@@ -1,0 +1,17 @@
+dX_t=-\frac{1}{1-t}X_tdt+dW_t
+X_0=0
+f=f(t)
+Cov(X_t,X_s)
+\lim_{t\rightarrow 1}X_t
+X_t=f(t)\int_0^t\frac{dW_s}{1-s}
+g(t,x) := f(t) \cdot x
+Y_t := \int_0^t \frac{1}{1-s} \, dW_s
+X_t=g(t,Y_t)
+\underbrace{g(t,Y_t)}_{X_t} - \underbrace{g(0,Y_0)}_{0} = \int_0^t f'(s) \cdot Y_s \, ds + \int_0^t \frac{1}{1-s} \cdot f(s) \, dW_s 
+(X_t)_t
+\int_0^t f'(s) \cdot Y_s \, ds + \int_0^t \frac{1}{1-s} \cdot f(s) \, dW_s = \int_0^t - \frac{1}{1-s} \cdot f(s) \cdot Y_s \, ds + W_t
+f(s):=1-s
+X_t = (1-t) \cdot \int_0^t \frac{1}{1-s} \, dW_s
+X_0 = 0
+\lim_{t \to 1} X_t = 0
+\text{cov}(X_t,X_s) = \mathbb{E}(X_t \cdot X_s) =\mathbb{E}((X_t-X_s) \cdot X_s + X_s^2) = \ldots

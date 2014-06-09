@@ -1,0 +1,11 @@
+||A+B||_F = \sqrt{\sum_{i,j=1}^n |a_{ij}+b_{ij}|^2} \leq  \sqrt{\sum_{i,j=1}^n |a_{ij}|^2+2|a_{ij}||b_{ij}|+|b_{ij}|^2}
+|a+b| \leq |a|+|b|
+|a+b|^2 \leq |a|^2+2|a||b|+|b|^2
+\sqrt{\sum_{i,j=1}^n |a_{ij}|^2+2|a_{ij}||b_{ij}|+|b_{ij}|^2} =\sqrt{\sum_{i,j=1}^n |a_{ij}|^2 + 2\sum_{i,j=1}^n |a_{ij}||b_{ij}|+\sum_{i,j=1}^n |b_{ij}|^2}
+\sqrt{\sum_{i,j=1}^n |a_{ij}|^2 + 2\sum_{i,j=1}^n |a_{ij}||b_{ij}|+\sum_{i,j=1}^n |b_{ij}|^2} \leq \sqrt{\sum_{i,j=1}^n |a_{ij}|^2}+\sqrt{\sum_{i,j=1}^n |b_{ij}|^2} = ||A||_F+||B||_F
+\sum_{i,j=1}^n |a_{ij}||b_{ij}| \leq \sqrt{\sum_{i,j=1}^n |a_{ij}|^2|b_{ij}|^2}
+u,v\in \mathbb C
+\Vert u+v\Vert\leq \Vert u\Vert +\Vert v\Vert
+\Vert u+v\Vert^2\leq \left(\Vert u\Vert +\Vert v\Vert\right)^2.
+\begin{align}  \Vert u+v\Vert^2&=\langle u+v, u+v\rangle\\ &=\langle u,u \rangle+\langle u,v\rangle+\langle v,u\rangle+\langle v,v\rangle\\ &=\Vert u\Vert ^2+\langle u,v\rangle+\overline{\langle u,v\rangle}+\Vert v\Vert ^2\\ &=\Vert u\Vert ^2+2\Re\left(\langle u,v\rangle\right)+\Vert v\Vert ^2\\ &\leq \Vert u\Vert ^2+2|\langle u,v\rangle|+\Vert v\Vert^2\\ &=\Vert u\Vert^2+2\Vert u\Vert\Vert v\Vert+\Vert v\Vert^2\\ &=\left(\Vert u\Vert +\Vert v\Vert\right)^2. \end{align}
+\langle A, B\rangle=\text{tr}\left(B^*A\right)

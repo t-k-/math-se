@@ -1,0 +1,51 @@
+n_i
+i
+n_0=(k-1)n_k+(k-2)n_{k-1}+\dots+3n_4+2n_3+n_2+1
+T
+n_k(T)
+T
+k
+k=1
+0
+n_0(T)=1+\sum_{k\ge 2}(k-1)n_k(T)\;.\tag{1}
+1+\sum_{k\ge 1}(k-1)n_k(T)\;,
+T
+1=1
+n>1
+n
+T
+n
+v
+T
+n>1
+v
+T
+u
+v
+m
+u
+T\,'
+T
+v
+m=1
+u
+T\,'
+n_0(T\,')=n_0(T)
+T
+T\,'
+u
+(1)
+1+\sum_{k\ge 1}(k-1)n_k(T)=1+\sum_{k\ge 1}(k-1)n_k(T\,')\;.
+n_0(T\,')=n_0(T)=1+\sum_{k\ge 1}(k-1)n_k(T)=1+\sum_{k\ge 1}(k-1)n_k(T\,')\;,
+m>1
+n_0(T)=n_0(T\,')+1
+m
+m-1
+n_m(T)=n_m(T\,')+1\;,
+n_{m-1}(T)=n_{m-1}(T\,')-1\;.
+\begin{align*} (m-2)n_{m-1}(T)+(m-1)n_m(T)&=(m-2)\big(n_{m-1}(T\,')-1\big)+(m-1)\big(n_m(T\,')+1\big)\\ &=(m-2)n_{m-1}(T\,')+(m-1)n_m(T\,')+1\;. \end{align*}
+n_k(T)=n_k(T\,')
+k<m-1
+k>m
+ \begin{align*} \sum_{k\ge 1}(k-1)n_k(T)&=\sum_{k=1}^{m-2}(k-1)n_k(T)\\ &\qquad\qquad+(m-2)n_{m-1}(T)+(m-1)n_m(T)\\\\ &\qquad\qquad+\sum_{k>m}(k-1)n_k(T)\\ &=\sum_{k=1}^{m-2}(k-1)n_k(T\,')\\ &\qquad\qquad+(m-2)n_{m-1}(T\,')+(m-1)n_m(T\,')\color{red}{+1}\\\\\ &\qquad\qquad+\sum_{k>m}(k-1)n_k(T\,')\\ &=\sum_{k\ge 1}(k-1)n_k(T\,')\color{red}{+1}\;. \end{align*}
+\begin{align*} n_0(T)=n_0(T\,')+1&=\left(1+\sum_{k\ge 1}(k-1)n_k(T\,')\right)+1\\ &=1+\left(\sum_{k\ge 1}(k-1)n_k(T\,')\color{red}{+1}\right)\\ &=1+\sum_{k\ge 1}(k-1)n_k(T)\;, \end{align*}

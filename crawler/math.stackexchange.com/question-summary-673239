@@ -1,0 +1,18 @@
+\int x^3\sqrt{9-x^2} dx
+x = 3\sin\theta
+dx = 3\cos\theta d\theta
+\sqrt{9-9\sin^2\theta} = 3\cos\theta
+= \int 27\sin^3\theta (9\cos^2\theta) d\theta
+=243\int (\cos^2\theta - \cos^4\theta)\sin\theta d\theta
+u=\cos\theta
+du=-\sin\theta d\theta
+= -243\int u^2 -u^4 du
+ = -81u^3 + \frac{243u^5}{5}
+= -81(\cos\theta)^3 + \frac{243}{5} (\cos\theta)^5
+\cos\theta = \frac{\sqrt{9-x^2}}{3}
+= -27(\sqrt{9-x^2})^3 +\frac{81}{5}(\sqrt{9-x^2})^5 + C
+-\frac{1}{5}(\sqrt{9-x^2})^3(x^2+6) + C
+u=x^2\;\;,\;\;u'=2x\\v'=x\sqrt{9-x^2}\;\;,\;\;v=-\frac13(9-x^2)^{3/2}
+\int x^3\sqrt{9-x^2}\;dx=-\frac13x^2(9-x^2)^{3/2}+\frac23\int x(9-x^2)^{3/2}dx=
+=-\frac13x^2(9-x^2)^{3/2}-\frac2{15}(9-x^2)^{5/2}+C
+\int f'(x)f(x)^ndx=\frac{f(x)^{n+1}}{n+1}+C\;,\;\;\forall -1\neq n\in\Bbb R

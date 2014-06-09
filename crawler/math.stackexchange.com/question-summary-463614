@@ -1,0 +1,11 @@
+ x_n = (x-xmin)/(xmax-xmin) 
+ z(x,y) = \Sigma_{i=-1}^2\Sigma_{j=-1}^2B_{i+1}(x_n)B_{j+1}(y_n)\phi_{i,j} 
+ B_0 (t)=(1-t^3)/6 
+ B_1 (t)=(3t^3-6t^2+4)/6 
+ B_2 (t)=(-3t^3+3t^2+3t+1)/6 
+ B_3 (t)=t^3/6 
+ \vec{z} = [z_{0,0},z_{0,1},...,z_{3,3}]^T 
+ A_i = [B_0(x_i)B_0(y_i), B_0(x_i)B_1(y_i), ..., B_3(x_i)B_3(y_i)] 
+ A=[A_1^T, A_2^T, A_3^T]^T 
+ \vec{\phi} = [\phi_{0,0},\phi_{0,1},...,\phi_{3,3}]^T 
+ \vec{z} = A\vec{\phi} 

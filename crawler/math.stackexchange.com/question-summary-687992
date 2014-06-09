@@ -1,0 +1,53 @@
+X
+n
+2
+N(\mu,\sigma^2I)
+I
+2\times 2
+\mu
+\sigma^2
+X_1
+X_2
+X_i=[X_{i1},X_{i2}]
+X
+\Sigma
+\Sigma=\frac{1}{n-1}\Sigma_{i=1}^n (X_i-\bar{X})((X_i-\bar{X}))^T
+X_i=[X_{i1},X_{i2}]^T
+i
+X^T
+\bar{X}=\frac{1}{n}\Sigma_{i=1}^n X_i
+f(X|\mu,\Sigma)=\frac{1}{\sqrt|\det(2\pi\Sigma)|^n}e^{\frac{-1}{2}\sum_i (X_i-\mu)^T\Sigma^{-1}(X_i-\mu)}
+\log f(X|\mu,\Sigma)=\frac{-n}{2}\log(|\det(2\pi\Sigma)|)-\frac{1}{2}\sum_i (X_i-\mu)^T\Sigma^{-1}(X_i-\mu)
+\log f(X|\mu,\Sigma)=-n\log(2\pi)-\frac{n}{2}\log(|\det(\Sigma)|)-\frac{1}{2}\sum_i (X_i-\mu)^T\Sigma^{-1}(X_i-\mu)
+\Rightarrow \log f(X|\mu,\Sigma)=-n\log(2\pi)-\frac{n}{2}\log(|\det(\Sigma)|)-\frac{1}{2}\sum_i (X_i\Sigma^{-1} X_i^T-2\mu\Sigma^{-1} X_i^T+\mu\Sigma^{-1}\mu^T)
+\Rightarrow \frac{\partial}{\partial \mu}\log f(X|\mu,\Sigma)=-\frac{1}{2}\sum_i (-2 \Sigma^{-1} X_i+2\Sigma\mu)=0
+\Rightarrow \sum_i (-\Sigma^{-1} X_i+\Sigma^{-1}\mu)=0
+\Sigma
+\sum_i X_i=n\mu
+\hat{\mu}_{MLE}=\frac{1}{n}\sum_i X_i
+\Sigma
+\log f(X|\mu,\Sigma)=-n\log(2\pi)-\frac{n}{2}\log(|\det(\Sigma)|)-\frac{1}{2}\sum_i (X_i-\mu)^T\Sigma^{-1}(X_i-\mu)
+\Sigma
+\det(\Sigma)\geq 0
+\Rightarrow \log f(X|\mu,\Sigma)=-n\log(2\pi)-\frac{n}{2}\log(\det(\Sigma))-\frac{1}{2}\sum_i (X_i-\mu)^T\Sigma^{-1}(X_i-\mu)
+a,b \in R^k
+M \in R^{k\times k}
+a^TMb=tr(a^TMb)=tr(ba^TM)
+tr()
+\Rightarrow \log f(X|\mu,\Sigma)=-n\log(2\pi)-\frac{n}{2}\log(\det(\Sigma))-\frac{1}{2}\sum_i tr((X_i-\mu)(X_i-\mu)^T\Sigma^{-1})
+\frac{\partial}{\partial\Sigma}\log(\det(\Sigma))=(\Sigma^{-1})^T
+\Rightarrow \frac{\partial}{\partial\Sigma}\log f(X|\mu,\Sigma)=-\frac{\partial}{\partial\Sigma}\frac{n}{2}\log(\det(\Sigma))-\frac{1}{2}\sum_i \frac{\partial}{\partial\Sigma}tr((X_i-\mu)(X_i-\mu)^T\Sigma^{-1})
+\Rightarrow \frac{\partial}{\partial\Sigma}\log f(X|\mu,\Sigma)=-\frac{n}{2}(\Sigma^{-1})^T-\frac{1}{2}\sum_i \frac{\partial}{\partial\Sigma}tr((X_i-\mu)(X_i-\mu)^T\Sigma^{-1})
+\Rightarrow \frac{\partial}{\partial\Sigma}\log f(X|\mu,\Sigma)=-\frac{n}{2}(\Sigma^{-1})^T-\frac{1}{2}\sum_i \frac{1}{\partial\Sigma}tr((X_i-\mu)(X_i-\mu)^T\partial\Sigma^{-1})
+\partial\Sigma^{-1}=-\Sigma^{-1}\partial\Sigma\Sigma^{-1}
+\Rightarrow \frac{\partial}{\partial\Sigma}\log f(X|\mu,\Sigma)=-\frac{n}{2}(\Sigma^{-1})^T-\frac{1}{2}\sum_i \frac{1}{\partial\Sigma}tr((X_i-\mu)(X_i-\mu)^T(-\Sigma^{-1}\partial\Sigma\Sigma^{-1}))
+=-\frac{n}{2}(\Sigma^{-1})^T+\frac{1}{2}\sum_i \frac{1}{\partial\Sigma}tr(\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1}\partial\Sigma)
+=-\frac{n}{2}(\Sigma^{-1})^T+\frac{1}{2}\sum_i (\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1})^T
+\Rightarrow \frac{\partial}{\partial\Sigma}\log f(X|\mu,\Sigma)=-\frac{n}{2}(\Sigma^{-1})^T+\frac{1}{2}\sum_i (\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1})^T=0
+\frac{1}{2}\sum_i (\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1})^T=\frac{n}{2}(\Sigma^{-1})^T
+\Rightarrow \sum_i (\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1})=n\Sigma^{-1}
+\Sigma
+\Rightarrow \sum_i \Sigma(\Sigma^{-1}(X_i-\mu)(X_i-\mu)^T\Sigma^{-1})\Sigma=n\Sigma\Sigma^{-1}\Sigma
+\Rightarrow \sum_i (X_i-\mu)(X_i-\mu)^T=n\Sigma
+\Rightarrow \hat{\Sigma}_{MLE}=\frac{1}{n}\sum_i (X_i-\hat{\mu})(X_i-\hat{\mu})^T
+\Rightarrow \hat{\Sigma}=\frac{1}{n-1}\sum_i (X_i-\hat{\mu})(X_i-\hat{\mu})^T

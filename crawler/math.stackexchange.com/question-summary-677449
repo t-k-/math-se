@@ -1,0 +1,17 @@
+F_{-1}=1
+(F_{-1},F_0)
+(F_0,F_1)
+(a,b)
+G_n=aF_{n-1}+bF_n
+F(n) = F(n - 1) + F(n - 2)
+F(n - 1) = F(n - 1)
+ \begin{bmatrix} F(n + 1) \\ F(n) \end{bmatrix} = \begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}^n \begin{bmatrix} b \\ a \end{bmatrix}
+ \begin{bmatrix} F(n + 1) \\ F(n) \end{bmatrix} = \begin{bmatrix} 1 & 1 \\ -\frac 2 {\sqrt{5} - 1} & \frac 2 {\sqrt{5} + 1} \end{bmatrix} \begin{bmatrix} -\frac{\sqrt{5} - 1} 2 & 0 \\ 0 & \frac{\sqrt{5} + 1} 2 \end{bmatrix} ^n \begin{bmatrix} 1 & 1 \\ -\frac 2 {\sqrt{5} - 1} & \frac 2 {\sqrt{5} + 1} \end{bmatrix}^{-1} 
+F(n) = \frac {b} {\sqrt{5}} \left(\phi^n - \omega^n\right) + \frac {a} {\sqrt{5}} \left(\phi^{n-1} - \omega^{n - 1}\right)
+\phi = \frac{1 + \sqrt 5} 2
+\omega = \frac{1 - \sqrt 5 } 2
+\frac{1}{2} \left((2 b-a) F_n+a L_n\right)
+L(1)=1
+L(2)=3
+L(n) = L(n - 1) + L(n - 2)
+(a+2b)

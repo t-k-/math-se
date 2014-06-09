@@ -1,0 +1,11 @@
+\phi(t)=\sum_{k=1}^\infty a_k t^k
+x=t^m \in \mathbb{C}
+m\in \mathbb{N}
+a_0=0
+r=0,\ldots,m-1
+k=mq+r
+\tilde\phi_r(x) = \sum_{q=0}^\infty a_{mq+r}x^q
+r
+\frac{1}{R_0} = \limsup_{k\to\infty} \lvert a_k\rvert^{1/k} < \infty
+\begin{align} \limsup_{q\to\infty} \lvert a_{qm+r}\rvert^{1/q} &= \limsup_{q\to\infty} \left(\lvert a_{qm+r}\rvert^{1/(qm+r)}\right)^{m+r/q}\\ &\leqslant \limsup_{q\to\infty}\left(\lvert a_{qm+r}\rvert^{1/(qm+r)}\right)^m \cdot \limsup_{q\to\infty} \left(\lvert a_{qm+r}\rvert^{1/(qm+r)}\right)^{r/q}\\ &\leqslant \frac{1}{R_0^m}\cdot 1, \end{align}
+m

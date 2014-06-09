@@ -1,0 +1,171 @@
+q: \mathbb{N}\rightarrow \mathbb{Q}
+g: \mathbb{Q}\rightarrow \mathbb{R}
+g(q(n))=2^{-n}
+\sum_{r\in \mathbb{Q}}g(r)
+f:\mathbb{R}\rightarrow \mathbb{R}
+f(x):=\sum_{r\in \mathbb{Q}:r<x}g(r)
+f
+f
+f
+f
+x
+f_n(x):=\sum_{r\in \mathbb{Q}:r<x,\,g(r)\ge 2^{-n}}g(r)
+x
+|f(x)-f_n(x)|\le 2^{-n}
+\sum_{r\in \mathbb{Q}}g(r)
+\mathbb{Q}
+F
+\sum _{r\in F}|g(r)|
+F\subset \mathbb{Q}
+\#F< \infty
+(q^{-1}(x))_{x\in F}
+M\in \mathbb{N}
+\{q(m):m\in \mathbb{N} \text{ and } m\le M\}
+F
+F
+\mathbb{Q}
+ \sup \bigg\{\sum _{x\in F}|f(x)|:F\subset X; \#F<\infty \bigg\}<\infty 
+f
+f(x)
+x\in \mathbb{R}
+x\in \mathbb{R}
+\sum_{r\in \mathbb{Q}:r<x}g(r)\le \sum_{r\in \mathbb{Q}}g(r)
+g(r)
+f(x)
+f
+x,y\in \mathbb{R}
+x<y
+s
+x<s<y
+s
+n\in \mathbb{N}
+q(n)=s
+f(y)=\sum_{r\in \mathbb{Q}:r<y}g(r)=\sum_{r\in \mathbb{Q}:r<x}g(r) +\sum_{r\in X}g(r)
+X = \{r\in \mathbb{Q}:r<y \} \backslash \{ r\in \mathbb{Q}:r<x\}
+s\in X
+g(r)
+\sum_{r\in X}g(r)\ge g(s)=g(q(n))= 2^{-n}
+f(y) > f(x)
+f
+s
+n\in \mathbb{N}
+q(n)=s
+x
+x>s
+f(x)\ge f(s)+2^{-n}
+f
+s
+\varepsilon
+\varepsilon < 2^{-n}
+f
+\delta >0
+|f(y)-f(s)|<\varepsilon
+y
+\delta
+s
+|y-s|<\delta
+x\in (s,s +\delta)
+f(x)-f(s)\ge 2^{-n}>\varepsilon
+f
+f
+x
+x
+f_n: \mathbb{R} \rightarrow \mathbb{R}
+f_n(x):=\sum_{r\in \mathbb{Q}:r<x,\,g(r)\ge 2^{-n}}g(r)
+Q_n= \{r\in \mathbb{Q}: g(r)\ge 2^{-n}\}
+Q_n
+r \in Q_n
+g(r)\ge 2^{-n}
+r\in \mathbb{Q}
+m
+q(m)=r
+g(r)=g(q(m))= 2^{-m}\ge 2^{-n}
+m\le n
+Q_n= \{q(i): 0\le i \le n \}
+f_n
+x
+\varepsilon>0
+n\in \mathbb{N}
+\delta = \min \{\, |r-x|: r\in Q_n  \,\}
+\delta
+Q_n
+q(0)
+|r-x|
+x
+\delta>0
+\{z\in \mathbb{R}: |z-x|<\delta \}
+|f_n(z)-f_n(x)|< \varepsilon
+|f_n(z)-f_n(x)| = \Bigg|\sum_{r\in \mathbb{Q}:r<z,\,r\in Q_n}g(r)\, -\sum_{r\in \mathbb{Q}:r<x,\,r\in Q_n}g(r) \Bigg|
+\{r\in \mathbb{Q}:r<z,\,r\in Q_n\}=\{r\in \mathbb{Q}:r<x,\,r\in Q_n\}
+LHS\Rightarrow RHS
+r
+LHS
+RHS
+r
+r<z
+r\in Q_n
+r
+RHS
+r\ge x
+x
+r>x
+x<r<z
+z-x>r-x
+z-x< \delta \le r-x
+r\in Q_n
+RHS\Rightarrow LHS
+r
+RHS
+LHS
+r\ge z
+z=r
+|z-x|<\delta \le |r-x|=|z-x|
+r>z
+LHS\Rightarrow RHS
+z
+x
+f_n
+x
+|f(x)-f_n(x)|\le 2^{-n}
+f(x)=\sum_{r\in \mathbb{Q}:r<x}g(r)
+f(x)=\sum_{r\in \mathbb{Q}:r<x, r\in Q_n}g(r)+\sum_{r\in X}g(r)
+X=\{r\in \mathbb{Q}:r<x\}-\{r\in \mathbb{Q}:r<x, r\in Q_n\}
+X\subset \{r\in \mathbb{Q}: g(r)< 2^{-n}\} 
+g(r)
+f
+x
+\varepsilon>0
+N
+2^{-N}<\varepsilon
+\delta = \min \{\, |r-x|: r\in Q_N  \,\}
+y\in (x-\delta,x+\delta)
+|f_N(y)-f_N(x)|\le \varepsilon
+f
+f_n
+f
+r=q(m)
+g(r)\geq 2^{-n}
+2^{-m}\geq 2^{-n}
+m\leq n
+f_n
+n\in\mathbb{N}
+x
+x
+r
+g(r)\geq 2^{-n}
+f_n
+f_n
+x
+z\in\mathbb{R}
+|f(z)-f_n(z)|\leq 2^{-(n+1)}+2^{-(n+2)}+\cdots=2^{-n}
+g
+|f(z)-f_n(z)|=\sum_{r\in\mathbb{Q},r<z} g(r)-\sum_{r\in\mathbb{Q},r<z,g(r)\geq 2^{-n}}g(r)=\sum_{r\in\mathbb{Q},r<z,g(r)<2^{-n}}g(r)
+x
+n
+f_n
+x
+\delta
+|x-y|<\delta
+f
+x
+|f(x)-f(y)|\leq |f_n(x)-f_n(x)|+|f_n(x)-f_n(y)|+|f_n(y)-f(y)|,

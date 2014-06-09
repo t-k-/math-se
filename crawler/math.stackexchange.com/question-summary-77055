@@ -1,0 +1,113 @@
+\mathbf{x}
+n
+(\mathbf{u}_1, ..., \mathbf{u}_n)
+\mathbf{x}
+\mathbf{x} = x_1 \mathbf{u}_1 + x_2 \mathbf{u}_2 + ... + x_n \mathbf{u}_n
+x_i
+\mathbf{x}
+\mathbf{u}_i
+\mathbf{X}
+\mathbb{R}^{m\times n}
+\mathbf{X}
+r
+\mathbf{u}_1, ..., \mathbf{u}_r\in\mathbb{R}^m
+\mathbf{v}_1, ..., \mathbf{v}_r\in\mathbb{R}^n
+\mathbf{u}_i
+\mathbf{v}_i
+\sigma_i
+\mathbf{X} = \sum_{i=1}^r \sigma_i \mathbf{u}_i \mathbf{v}^T_i
+\mathbf{s}_1, ..., \mathbf{s}_r\in\mathbb{R}^m
+\mathbf{t}_1, ..., \mathbf{t}_r\in\mathbb{R}^n
+\alpha_i
+\mathbf{X} = \sum_{i=1}^r \alpha_i \mathbf{s}_i \mathbf{t}^T_i
+\mathbf{S} = [\mathbf{s}_1  ...  \mathbf{s}_r] \in \mathbb{R}^{m \times r}
+\mathbf{T} = [\mathbf{t}_1  ...  \mathbf{t}_r] \in \mathbb{R}^{n \times r}
+\mathbf{S}^T\mathbf{S}=\mathbf{T}^T\mathbf{T}=\mathbf{I}_r
+\mathbf{A} = \mathbf{S}^T \mathbf{X} \mathbf{T}
+\mbox{rank}(\mathbf{X}) = r
+\mathbf{A}
+\mathbf{X} = \mathbf{SAT}^T
+\mathbf{A}
+\alpha_i
+\mathbf{s}_i
+\mathbf{X}
+\mathbf{t}_i
+\mathbf{A}
+\mathbf{A}
+\mathbf{s}_i
+\mathbf{X}
+\mathbf{t}_i
+\mathbf{X} = \mathbf{SS}^T\mathbf{X}
+\mathbf{SS}^T
+\mathbf{X} = \mathbf{XTT}^T
+\mathbf{X} = \mathbf{SS}^T\mathbf{XTT}^T=\mathbf{SAT}^T
+\mathbf{S}
+\mathbf{T}
+ \mathbf{X} = \sum_{i=1}^r \sum_{j=1}^r a_{ij} \mathbf{s}_i \mathbf{t}_j^T 
+s_i
+t_i
+f
+f(z) = \frac{\lVert Xz \rVert}{\lVert z\rVert}
+\lVert z \rVert = \sqrt{\sum z_i^2}
+\ell^2
+f(z)
+X
+z
+X
+z
+X = \sum_{i=1}^r a_i s_i t_i'
+0\leq a_r\leq a_{r-1}\leq \cdots \leq a_1
+s_i
+t_i
+z
+f
+z = \sum c_i t_i
+s_i
+t_i
+0\leq a_i \leq a_1
+i
+z = t_1
+f(t_i) = a_i
+i
+ f(z) = \frac{\lVert \sum c_i a_i s_i\rVert}{\lVert \sum c_i t_i\rVert} = \frac{\sqrt{\sum a_i^2 c_i^2}}{\sqrt{\sum c_i^2}}. 
+ f(z) = \frac{\sqrt{\sum a_i^2 c_i^2}}{\sqrt{\sum c_i^2}} \leq \frac{\sqrt{\sum a_1^2 c_i^2}}{\sqrt{\sum c_i^2}} = \frac{a_1\sqrt{\sum c_i^2}}{\sqrt{\sum c_i^2}} = a_1. 
+f
+X
+X = \sum_{i=1}^r a_i s_i t_i'
+a_1
+t_1
+a_1
+f
+t_1
+f
+A'
+s_1
+a_1>a_2
+c_i = 0
+i\neq 1
+f
+t_1
+t_1
+t_1
+a_1 = \cdots = a_k > a_{k+1}
+k
+c_i = 0
+i>k
+f
+t_1,\ldots, t_k
+t_1
+t_1,\ldots, t_k
+\tilde{t}_1,\ldots,\tilde{t}_k
+s_1,\ldots, s_k
+\tilde{s}_i = \frac{X\tilde{t}_i}{a_i}
+X = \sum_{i=1}^r a_i \tilde{s}_i \tilde{t}_i'
+X
+t_1,\ldots,t_k
+a_{k+1}
+t_{k+1}
+s_{k+1}
+a_i
+X
+t_i
+a_i = a_{i-1}
+a_i = a_{i+1}

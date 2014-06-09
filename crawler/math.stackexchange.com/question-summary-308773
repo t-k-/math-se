@@ -1,0 +1,38 @@
+P( (A \cap B) \cup (C \cap D) ) = .8^2 + .8^2 - .8^4 = .8704
+A
+(C \cap D)
+A
+.8^2 = .64
+P( (A \cap B) \cup (C \cap D) | A^c ) = \frac{P( ((A \cap B) \cup (C \cap D)) \cap A^c )}{P(A^c)},
+\frac{P( [(A \cap B) \cup (C \cap D)] \cap A^c )}{P(A^c)} = .64 / .2 \text{ ...?}
+P( A^c | ((A \cap B) \cup (C \cap D))^c )
+P( [(A \cap B) \cup (C \cap D)] \cap A^c )
+P( [A^c \cap (A \cap B)] \cup [A^c \cap (C \cap D)] )
+P( [\emptyset] \cup [A^c \cap (C \cap D)] )
+P( [A^c \cap (C \cap D)] )
+P( A^c | [(A \cap B) \cup (C \cap D)]^c) = \frac{P( A^c \cap [(A \cap B) \cup (C \cap D)]^c)}{P([(A \cap B) \cup (C \cap D)]^c)}
+\frac{P( A^c \cap [(A \cap B) \cup (C \cap D)]^c)}{1 - P([(A \cap B) \cup (C \cap D)])}
+\frac{P( A^c \cap [(A \cap B) \cup (C \cap D)]^c)}{1 - .8704}
+\frac{P( A^c \cap [(A \cap B) \cup (C \cap D)]^c)}{.1296}
+\frac{P( A^c \cap [(A \cap B) \cup (C \cap D)]^c)}{.1296}
+\frac{P( A^c \cap [(A \cap B)^c \cap (C \cap D)^c])}{.1296}
+\frac{P( A^c \cap [(A^c \cup B^c) \cap (C^c \cup D^c)])}{.1296}
+\frac{P([A^c \cap (A^c \cup B^c)] \cap (C^c \cup D^c))}{.1296}
+\frac{P( A^c \cap (C^c \cup D^c))}{.1296}
+\frac{P( [A^c \cap C^c] \cup [A^c \cap D^c))}{.1296}
+\frac{.2*.2 + .2*.2 - (.2*.2)*(.2*.2)}{.1296}
+\frac{2*.2^2 - .2^4}{.1296}
+\frac{2*.2^2 - .2^4}{.1296}
+\frac{.0784}{.1296}
+.604938???
+.64/.2
+P(C\cap D\cap A^c)
+(.8)(.8)(.2)
+.2
+.64
+S
+S^c
+P(A^c|S^c)
+P(S)
+P(S|A^c)
+P(A^c|S^c)={P(A^c\cap S^c)\over P(S^c)}={P(S^c|A^c)P(A^c)\over P(S^c)}

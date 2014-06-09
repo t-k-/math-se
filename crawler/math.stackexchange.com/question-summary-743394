@@ -1,0 +1,37 @@
+2 \times 2
+N
+1
+\geq 1
+N
+2 \times 2
+N, x, y
+D
+\det(A) = D
+A = \left[\begin{array}{cc}x & \frac{x(N-x)-D}{y} \\ y & N - x\end{array}\right]
+x \in \{1, \ldots , N-1\}
+D < x(N-x)
+x
+D \in \{1, \ldots, x(N-x) - 1\}
+y ~\text{ divides } ~x(N-x) - D 
+\alpha(n)
+n
+N, x
+D
+\alpha(x(N-x)-D)
+N
+x
+\sum_{D=1}^{[x(N-x)-1]}\alpha(x(N-x)-D)
+N
+\sum_{x=1}^{N-1}\sum_{D=1}^{[x(N-x)-1]}\alpha(x(N-x)-D)
+N=3
+\sum_{x=1}^{2}\sum_{D=1}^{[x(3-x)-1]}\alpha(x(3-x)-D) = 
+=\sum_{D=1}^{[1(3-1)-1]}\alpha(1(3-1)-D) + \sum_{D=1}^{[2(3-2)-1]}\alpha(2(3-2)-D)=
+=\sum_{D=1}^{1}\alpha(2-D) + \sum_{D=1}^{1}\alpha(2-D)=
+=\alpha(1) + \alpha(1) = 1 + 1= 2
+N=4
+\sum_{x=1}^{3}\sum_{D=1}^{[x(4-x)-1]}\alpha(x(4-x)-D) = 
+=\sum_{D=1}^{2}\alpha(3-D) + \sum_{D=1}^{3}\alpha(4-D) + \sum_{D=1}^{2}\alpha(3-D) = 
+=2(\alpha(3-1) + \alpha(3-2)) + \alpha(4-1) + \alpha(4-2) + \alpha(4-3) =  
+=2(\alpha(2) + \alpha(1)) + \alpha(3) + \alpha(2) + \alpha(1) = 
+=2(2 + 1) + 2 + 2 + 1 = 11
+\left[\begin{array}{cc}1 & 1\\ 1 & 3\end{array}\right], \left[\begin{array}{cc}3 & 1\\ 1 & 1\end{array}\right], \left[\begin{array}{cc}1 & 2\\ 1 & 3\end{array}\right], \left[\begin{array}{cc}3 & 2\\ 1 & 1\end{array}\right], \left[\begin{array}{cc}1 & 1\\ 2 & 3\end{array}\right], \left[\begin{array}{cc}3 & 1\\ 2 & 1\end{array}\right], \left[\begin{array}{cc}2 & 1\\ 1 & 2\end{array}\right], \left[\begin{array}{cc}2 & 2\\ 1 & 2\end{array}\right], \left[\begin{array}{cc}2 & 1\\ 2 & 2\end{array}\right], \left[\begin{array}{cc}2 & 3\\ 1 & 2\end{array}\right], \left[\begin{array}{cc}2 & 1\\ 3 & 2\end{array}\right].

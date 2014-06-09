@@ -1,0 +1,11 @@
+f(x)=\begin{cases}xe^{-x} \quad \text{if } x>0\\0 \quad \text{ } Otherwise.\end{cases} 
+M(t) = E(e^{tx}) =\int e^{tx}f(x)~dx
+\int_{-\infty}^\infty e^{tx}f(x)dx
+\int u\,dv = uv - \int v\, du
+u = x
+dv = e^{(t-1)x}dx
+ \int_{-\infty}^\infty e^{tx}f(x)dx  = \int_0^\infty x e^{tx} e^{-x}dx   =\int_0^\infty x e^{(t-1)x}dx 
+ \begin{align} \int_0^\infty xe^{(t-1)x}dx &= \left[\frac{1}{t-1}x e^{(t-1)x}\right]_0^\infty  - \int_0^\infty \frac{1}{t-1} e^{(t-1)x}dx\\ &= \frac{1}{t-1} \left[x e^{(t-1)x}\right]_0^\infty -  \frac{1}{(t-1)^2}\left[e^{(t-1)x}\right]_0^\infty\\ &= \frac{1}{t-1} \cdot 0 - \frac{1}{(t-1)^2}\cdot (-1)\\ &= \frac{1}{(t-1)^2} \end{align} 
+ f(x) =\begin{cases}\begin{align} \frac{1}{\Gamma(a) \beta^a} x^{a-1} e^{-x/{\beta}}\quad \text{if}\quad  0<x<\infty \\ 0\quad \text{otherwise}\ \end{align} \end{cases}   
+\frac{1}{\left( 1-\beta t \right)^a} 
+a=2\ \text{and}\ b=1 

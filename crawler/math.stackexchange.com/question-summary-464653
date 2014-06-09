@@ -1,0 +1,21 @@
+\newcommand{\cl}{\operatorname{cl}}
+R \subset S \times S
+ \cl_\mathrm{ref} = R \cup \{ (x,x) : x \in S \} 
+ \cl_\mathrm{sym} = R \cup \{ (y,x) : (x,y) \in R \} 
+ \cl_\mathrm{trans}(R) = R \cup \{ (x_1, x_n) : (x_1, x_2), \ldots, (x_{n-1}, x_n) \in R \} = \bigcup_{i = 1}^\infty R^i. 
+ \cl_\mathrm{ref}(R) \cup \cl_\mathrm{sym}(R) \cup \cl_\mathrm{trans}(R) 
+R
+n
+f
+ \cl_\mathrm{trans}(\cl_\mathrm{sym}(\cl_\mathrm{ref}(R))). 
+\mathfrak{S}=(S,F)
+S
+F
+S
+R \subseteq S \times S
+R\circ R
+\{(x,z): (x,y),(y,z)\in R\}
+R_0=R\cup \{(x,x):x\in S\} \cup \{(y,x):(x,y)\in R\} = \mathrm{cl}_{sym}(\mathrm{cl}_{ref}(R))
+R_{n+1} = (R_n \circ R_n) \cup \{\big(f(x_1,\ldots,x_n),f(y_1,\ldots,y_n)\big):f\in F \text{ and } (x_1,y_1),\ldots, (x_n,y_n) \in R_n\}
+\displaystyle\bigcup_{i=0}^\infty R_i
+R

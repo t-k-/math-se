@@ -1,0 +1,10 @@
+\int_0^x \frac{\sin(t)}{t}dt .
+\sin\,t=t\left(1-\frac{t^2}{3!}+\frac{t^4}{5!}-\frac{t^6}{7!}+\cdots\right)
+\dfrac{\sin\,t}{t}
+\int_0^x t^k \mathrm dt=\frac{x^{k+1}}{k+1}
+\int_0^x \frac{\sin(t)}{t} \,dt
+\sin\,t=t\left(1-t^2/3!+t^4/5!-t^6/7!+\cdots\right)
+\int_0^x \frac{t}{t}\left(1-\frac{t^2}{3!}+\frac{t^4}{5!}-\frac{t^6}{7!}+\cdots\right) \,dt = \int_0^x \left(1-\frac{t^2}{3!}+\frac{t^4}{5!}-\frac{t^6}{7!}+\cdots\right) \,dt 
+\int_0^x \left(1-\frac{t^2}{3!}+\frac{t^4}{5!}-\frac{t^6}{7!}+\cdots\right) \,dt =  x-\frac{x^3}{3 * 3!}+\frac{x^5}{5*5!}-\frac{x^7}{7 * 7!}+\cdots
+\int_0^x t^k \, dt=\left.\frac{t^{k+1}}{k+1}\right|_0^x = \frac{x^{k+1}}{k+1}-\frac{0^{k+1}}{k+1} = \frac{x^{k+1}}{k+1}
+x-\frac{x^3}{3 * 3!}+\frac{x^5}{5*5!}-\frac{x^7}{7 * 7!}+\cdots = \sum_{n=0}^\infty (-1)^n\frac{x^{(2n+1)}}{(2n+1) * (2n+1)!} = Si(x)

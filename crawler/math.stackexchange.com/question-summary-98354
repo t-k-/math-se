@@ -1,0 +1,24 @@
+k=1,2,3,...
+0
+(0,1]
+\lim_{n \to \infty} \int_0^1 \frac{n+n^k x^k}{(1+\sqrt{x})^n}dx=0
+n
+k
+f_n(x)=\frac n{(1+\sqrt x)^n}+\frac{n^kx^k}{(1+\sqrt x)^n}
+(1+\sqrt x)^n\geq 1+n\sqrt x
+x\neq 0
+k\leq n
+(1+\sqrt x)^n\geq \sum_{l=0}^k\binom nl\sqrt x^l
+n
+\geq n_0
+\frac{n^k}{n(n-1)\cdots (n-k+1)}\leq 2
+n\geq n_0
+\frac n{(1+\sqrt x)^n}\leq \frac n{1+n\sqrt x}\leq \frac 1{\sqrt x},
+|f_n(x)| \le\frac 1{\sqrt x}+2k!\cdot x^{\frac k2},
+ \int_0^1 \frac{n+n^k x^k}{(1+\sqrt{x})^n}dx = {1\over n}\int_0^n \frac{2s(1+s^{2k}/n^{k+1})}{(1+s/n)^n}ds
+s
+\displaystyle\frac{2s(1+s^{2k}/n^{k+1})}{(1+s/n)^n}\downarrow 2s\exp(-s)
+n\geq 2k+3
+O(1/n)
+\int_0^\infty \frac{2s(1+s^{2k}/n^{k+1})}{(1+s/n)^n}ds<\infty.
+n \int_0^1 \frac{n+n^k x^k}{(1+\sqrt{x})^n}dx\to \int_0^\infty 2s\exp(-s)\,ds=2.

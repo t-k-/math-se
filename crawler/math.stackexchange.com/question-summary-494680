@@ -1,0 +1,22 @@
+ \dfrac{4n^4 -18n^3 +3n^2 -660}{n^2 +560n -1024} = Θ(n^2) 
+f(n)=n^2g(1/n)/h(1/n)
+g(x)=4-18x+3x^2-660x^3
+h(x)=1+560x-1024x^2
+g(x)\to4
+h(x)\to1
+x\to0
+g(1/n)/h(1/n)\to4
+n\to\infty
+N
+|g(1/n)/h(1/n)-4|\leqslant1
+n\geqslant N
+3n^2\leqslant f(n)\leqslant5n^2
+n\geqslant N
+f(n)=\Theta(n^2)
+f(n)=\frac{4n^4-18n^3+3n^2-660}{n^2+560n-1024}=4n^2+an+b+\frac{cn+d}{n^2+560n-1024}
+a,b,c,d\in\Bbb R
+\left\vert an+b+\frac{cn+d}{n^2+560n-1024}\right\vert\le n^2
+n
+n^2\le f(n)
+f(n)\le 5n^2
+n

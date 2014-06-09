@@ -1,0 +1,12 @@
+x'(t)=f(x,t), x(0)=x_0
+x(t+h)=x(t)+hf(t+\frac{1}{2} h,x(t)+\frac{1}{2} hf(t,x(t)))
+h
+h/2
+x(t+h)=x(t)+hx'(t)+Kh^2
+x'(t)\approx\frac{1}{h}(x(t+h)-x(t))
+L = x'(t)
+\phi(h) = \frac{1}{h}(x(t+h)-x(t))
+L = \phi(h)+hK+O(h^{2})
+2L = 2\phi(\frac{h}{2})+2K\frac{h}{2}+O(h^{2})
+L= 2\phi(\frac{h}{2})-\phi(h)+O(h^{2})
+2\phi(\frac{h}{2})-\phi(h) = f(t+\frac{1}{2} h,x(t)+\frac{1}{2} hf(t,x(t)))

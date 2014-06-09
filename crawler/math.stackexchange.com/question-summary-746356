@@ -1,0 +1,10 @@
+\lim_{n \rightarrow \infty}\int_{\Re^+}f_n d\mu
+f_n: \Re^+ \rightarrow \Re
+f_n(x) = sin(nx) \chi_{[0,n]}(x)
+f_n(x)= \dfrac{ne^{-nx}}{\sqrt{1+n^{2}x^{2}}}
+f_n(x)= \dfrac{ne^{-x}}{\sqrt{1+n^{2}x^{2}}}
+\displaystyle \int_0^n \sin nx \, dx
+u = nx
+du = n\, dx
+\int_0^\infty \frac{ne^{-nx}}{\sqrt{1 + n^2 x^2}}  dx = \int_0^\infty \frac{e^{-u}}{\sqrt{1 + u^2}} du.
+\infty = \int_0^\infty \frac{e^{-x}}{x}  dx = \int_0^\infty \lim_{n \to \infty} \frac{ne^{-x}}{\sqrt{1 + n^2 x^2}}  dx \le \liminf_{n \to \infty} \int_0^\infty \frac{ne^{-x}}{\sqrt{1 + n^2 x^2}}  dx.

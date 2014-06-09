@@ -1,0 +1,63 @@
+f(x)=x^r
+r
+x
+r
+f(x)
+r
+x\mapsto x^r
+r
+x
+x
+\begin{align*} \frac{d}{dx} x^r &= \lim_{h\to 0}\frac{(x+h)^r - x^r}{h} = \lim_{h\to 0}\frac{x^r + rx^{r-1}h + h^2(\text{some factors}) - x^r}{h}\\ &= \lim_{h\to 0}\frac{rxr^{-1}h + h^2(\text{some factors})}{h} = \lim_{h\to 0}\left(rx^{r-1} + h(\text{some factors})\right)\\ &= rx^{r-1} + 0 = rx^{r-1}.\end{align*}
+r= -n
+n
+x\neq 0
+x^n
+x
+1
+x\mapsto x^n
+(x^{-n})'
+\frac{1}{x^n}
+\begin{align*} 0 &= \frac{d}{dx} 1 = \frac{d}{dx}x^{-n}x^n = (x^{-n})'x^n + (x^{-n})(x^n)'\\ &= (x^{-n})'x^n + x^{-n}(nx^{n-1}) = (x^{-n})' + nx^{-1}. \end{align*}
+\frac{d}{dx} x^{-n} = -\frac{nx^{-1}}{x^n} = -nx^{-n-1} = rx^{r-1},
+x^{1/q}
+q
+(x^{1/q})'
+1 = \frac{d}{dx}x = \frac{d}{dx}(x^{1/q})^q = q(x^{1/q})^{q-1}(x^{1/q})',
+\frac{d}{dx}x^{1/q} = \frac{1}{q}x^{(1-q)/q} = \frac{1}{q}x^{(1/q) - 1}.
+x^{p/q}
+\frac{d}{dx}x^{p/q} = \frac{d}{dx}(x^p)^{1/q} = \frac{1}{q}(x^p)^{(1/q)-1}(x^p)' = \frac{p}{q}(x^{p})^{(1/q)-1}x^{p-1} = \frac{p}{q}x^{(p/q)-p+p-1} = \frac{p}{q}x^{(p/q)-1}.
+r
+x^r
+x\gt 0
+x^r = \exp(r\ln x)
+x\gt 0
+x\mapsto \ln x
+x\mapsto r\ln x
+x\mapsto \exp(r\ln x)
+\frac{d}{dx} x^r = \frac{d}{dx}\exp(r\ln x) = \exp(r\ln x)(r(\ln x)') = \frac{r}{x}\exp(r\ln x) = \frac{r}{x}(x^r) = rx^{r-1}.
+r
+r+1
+x
+r
+ \frac{d}{dx} x^r = \frac{d}{dx} e^{r\log_e x} = e^{r\log_e x} \frac{r}{x} = x^r\cdot \frac{r}{x}. 
+r
+ \frac{d}{dx}x^r = \frac{d}{dx} \frac{1}{x^{-r}} = \frac{-\frac{d}{dx}x^{-r}}{x^{-2r}} = \frac{rx^{-r-1}}{x^{-2r}} = rx^{r-1}. 
+r
+x
+x=0
+r<0
+0
+y=x^r
+\log|y|=r\log|x|
+\displaystyle\frac{y'}{y}=r\frac{1}{x}
+\displaystyle y'=r\frac{y}{x} = r\frac{x^r}{x} = rx^{r-1}
+r
+f(x)=x^r
+r
+x
+x^r
+r-1<0
+f
+0
+\displaystyle\frac{\mathrm{d}}{\mathrm{d}x} \log(x) = \frac{1}{x}

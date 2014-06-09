@@ -1,0 +1,126 @@
+\{\log \log n!\}
+n
+\{x\}
+x
+\alpha
+\{n\alpha\}
+[0,1]
+\log n
+\log[n]
+\{\log n\}
+[0,1]
+\log\log n!
+\log(n\log n)
+\log(x)
+1/x
+(1)
+\log(\log(n!))
+(2)
+n-\frac{n}{\log(n)}+O(1)
+n\to\infty
+\log(\log(n!))\sim\log(n)
+\sim n
+n
+\{\log(\log(n!))\}
+\frac{e^x}{e-1}
+[0,1]
+ \log(n!)-\log((n-1)!)=\log(n)\tag{1} 
+ \begin{align} \log(\log(n!))-\log(\log((n-1)!)) &\in\left(\frac{\log(n)}{\log(n!)},\frac{\log(n)}{\log(n!)-\log(n)}\right)\\ &=\frac{\log(n)}{n\log(n)-n+O(\log(n))}\tag{2} \end{align} 
+ \log(\log(n!))=\log(n)+\log(\log(n))-\frac{1}{\log(n)}+O\left(\frac{1}{\log(n)^2}\right)\tag{3} 
+\frac{e^x}{e-1}
+\log(\log(n!))=\log(n)+\log(\log(n))-\frac{1}{\log(n)}+O\left(\frac{1}{\log(n)^2}\right)
+\{\log(\log(n!))\}
+[0,1]
+\log(n)
+n
+ne\left(1-\frac{1}{\log(n)}\right)
+\log\left(n-\frac{n}{\log(n)}\right)+O\left(\frac{1}{n}\right)
+1
+\{\log(\log(n!))\}
+e^x
+\frac{e^x}{e-1}
+1
+I_n=\{k\in\mathbb{Z}:n-1<\log(\log(k!))\le n\}
+\phi:[0,1]\mapsto\mathbb{R}
+I_n
+\log(\log((k-1)!))
+\log(\log(k!))
+k-\frac{k}{\log(k)}+O(1)
+k\in I_n
+x=\log(\log(k!))-n+1=\log(k)+\log(\log(k))-n+1+O\left(\frac{1}{\log(k)}\right)
+x
+n\to\infty
+e^x
+[0,1]
+1
+\phi(x)=\frac{e^x}{e-1}
+ \int_a^b\phi(x)\;\mathrm{d}x=\lim_{n\to\infty}|\{k\in\mathbb{Z}:n-1+a<\log(\log(k!))\le n-1+b\}|/|I_n| 
+ k=\frac{e^{x+n-1+O(1/(x+n))}}{(x+n-1)^{1-1/(x+n)}}=\frac{e^{n-1+O(1/(x+n))}}{(x+n-1)^{1-1/(x+n)}}e^x 
+ k-\frac{k}{\log(k)}+O(1)=\frac{e^{n-1+O(1/(x+n))}}{(x+n-1)^{1-1/(x+n)}}e^x 
+\displaystyle\lim_{N\to\infty} \bigcup_{n\le N} I_n
+I_N
+|I_N|
+(e-1)\left|\bigcup_{n<N} I_n\right|
+n!=n^{n+o(n)}
+\log\log(n!)=\log(n\log n)+o(1)
+(a_n)
+(b_n)
+a_n\to\infty
+b_n\to\infty
+a_n-b_n=o(1)
+\{a_n\}
+\{b_n\}
+x_n=\{\log(n\log n)\}
+x
+n(x)
+n(x)\log n(x)\geqslant\mathrm e^x
+x
+(0,1)
+n
+x_n
+k
+n(k+1)-n(k)
+n(k+x)-n(k)
+x_n\leqslant x
+n
+[n(k),n(k+1)-1]
+x_n\leqslant x
+F_k(x)\to F^0(x)
+k\to\infty
+n\leqslant n(k)
+x_n\leqslant x
+F^0(x)
+k\to\infty
+\{x_n\}
+\{\log\log n!\}
+f^0
+(0,1)
+ F_k(x)=\frac{n(k+x)-n(k)}{n(k+1)-n(k)}. 
+ F^0(x)=\frac{\mathrm e^x-1}{\mathrm e-1}=\int\limits_0^xf^0(y)\mathrm dy,\quad f^0(x)=\frac{\mathrm e^x}{\mathrm e-1}. 
+A
+A(x)
+n
+\{x_n\}\leqslant x
+d_{n(k)}(A(x))\to F^0(x)
+k\to\infty
+(d_n(A(x))
+x=0
+x=1
+F^0(x)
+F^x(x)=\mathrm e^{1-x} F^0(x)
+A(x)
+\{x_n\}
+\alpha
+n\leqslant n(k+\alpha)
+x_n\leqslant x
+F^\alpha(x)
+k\to\infty
+F^\alpha(x)
+x
+f^\alpha
+f^\alpha
+\{\log\log(n!)\}
+ d_n(A)=\frac1n\sum\limits_{k=1}^n\mathbf 1_{k\in A}. 
+ d_{n(k+x)}\to\mathrm e^{1-x} F^0(x)>F^0(x). 
+ F^0(x)=\liminf d_n(A(x))<\limsup d_n(A(x))=F^x(x). 
+ F^\alpha(x)=\int\limits_0^xf^\alpha(y)\mathrm dy. 

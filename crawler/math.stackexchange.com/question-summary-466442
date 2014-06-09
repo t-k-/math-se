@@ -1,0 +1,24 @@
+\phi:\mathbb{R}_+\times \mathbb{R}_+\to\mathbb{R}
+\partial_1
+\partial_2
+ F(t,x,y) = \phi_1(t,x) + 2\phi_1(t,y) + \phi_2(t,x) + 2 \phi_2(t,y) + 6 \phi(t,0) - 2\phi(t,x) \phi(t,y) - \phi(t,y)^2 
+F \equiv 0
+t\in [0,\infty)
+0\leq x < y
+\mathrm{d}F = 0
+ \begin{align} \phi_{11}(t,x) + 2\phi_{11}(t,y) + \phi_{12}(t,x) + 2 \phi_{12}(t,y) + 6 \phi_1(t,0) - 2 \phi_1(t,x) \phi(t,y) - 2 \phi(t,x) \phi_1(t,y) - 2 \phi(t,y)\phi_1(t,y) &= 0 \\ \phi_{12}(t,x) + \phi_{22}(t,x) - 2\phi_2(t,x) \phi(t,y) &= 0\\ \phi_{12}(t,y) + \phi_{22}(t,y) - \phi_2(t,y) \phi(t,x) - \phi_2(t,y) \phi(t,y) &= 0 \end{align} 
+(t,x,y)
+y
+\phi
+x \to y
+\phi_2 = 0
+ \phi_2(t,x) \phi_2(t,y) = 0 
+\phi
+ \phi'(t) + 2 \phi(t) -  \phi(t)^2 = 0 
+ \frac12 (\log (2 - \phi) - \log\phi) ) + C = t \implies C e^{2t} = \frac{2-\phi}{\phi} \implies \phi(t) = \frac{2}{C e^{2t} + 1}
+C
+\phi(0)
+ C = \frac{2}{\phi(0)} - 1
+\phi
+\phi
+ \phi(t,x) = \frac{2}{\left(\frac{2}{\phi(0,0)} - 1\right) e^{2t} + 1} 

@@ -1,0 +1,39 @@
+x = 0
+x = L
+ \frac{\partial \phi(x,t)}{\partial t} = \frac{\partial f(x)}{\partial x} \frac{\partial \phi(x,t)}{\partial x}  
+\phi(x,t)
+f(x)
+\phi(0,t) = 0
+\phi(L,t) = T
+0 < f(x) < 1
+\phi(x,t)
+lim_{t \to \infty}
+t \to \infty
+C
+D
+D = 0
+C = T \left(\int_0^L \frac{dy}{f(y)} \right)^{-1}
+ \frac\partial{\partial x}\left(f(x)\frac{\partial\phi_\infty}{\partial x}\right) = 0,
+ f(x)\frac{\partial\phi_\infty}{\partial x} = C, 
+ \frac{\partial\phi_\infty}{\partial x} = \frac C{f(x)}, 
+ \phi_\infty(x) = D + C \int_0^x \frac{dy}{f(y)} ,
+ \phi_\infty(x) = T \frac{\int_0^x \frac{dy}{f(y)}}{\int_0^L \frac{dy}{f(y)}} .
+\phi(t,x) \to \phi_\infty(x)
+t \to \infty
+\psi(t,x) = \phi(t,x) - \phi_\infty(x)
+\psi(t,0) = \psi(t,L) = 0
+\psi(t,x)
+x
+x=0
+x=L
+N(t) = \int_0^L |\psi(t,y)|^2 \, dy
+F = \min_{0 \le y \le L} f(y)
+N(t) \ge 0
+N(t) \le N(0) e^{-2Ft}
+N(t) \to 0
+ \frac{\partial\psi}{\partial t} = \frac\partial{\partial x}\left(f(x)\frac{\partial\psi}{\partial x}\right) ,\tag 1
+ \frac12 \frac\partial{\partial t}\int_0^L |\psi(t,y)|^2 \, dy = - \int_0^L f(y) |\psi(t,y)|^2 \, dy .
+ \int_0^L f(y) |\psi(t,y)|^2 \, dy \ge F N(t) ,
+ \frac12 \frac{\partial N(t)}{\partial t} \le -F N(t) .
+N(t) \to 0
+\psi(t,x) \to 0

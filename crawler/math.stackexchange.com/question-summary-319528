@@ -1,0 +1,36 @@
+2N
+10^{N}A+B
+A
+B
+N
+20481024 = 10000 \cdot2048+1024
+(10^{N}A+B)\cdot (10^{N}C+D) = (10^{2N}\cdot AC + 10^{N}(AD+BC)+BD)
+10^{N}
+N
+AC,BD
+AC
+BD
+AD+BC
+(A+B)\cdot (C+D) = AC+AD+BC+BD
+T(n)
+n
+2n
+n
+AC, AD, BC, BD
+AD+BC = (A+B)\cdot(C+D)-AC-BD
+(A+B)
+(C+D)
+n+1
+2n
+n
+AC
+BD
+n+1
+(A+B)\cdot(C+D)
+2n
+T(2n)
+T((n+1)/2)
+T(n/2)
+(10^nA + B)\cdot(10^nC + D) = 10^{2n}AC + 10^n((A+B)\cdot(C+D)-AC-BD)) + BD 
+T(2n) = 2T(n) + T(n+1) + \Theta(1)
+T(n) = 3T(n/2) + \Theta(1)

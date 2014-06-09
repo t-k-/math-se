@@ -1,0 +1,23 @@
+\lambda_A
+\lambda_B
+\lambda_C
+t
+P\left(T\left(E\right) = t \right)
+t
+P\left(T\left(E\right) \leq t \right)
+T\left(E\right) = E_n - E_{n-1}
+\lambda
+P\left(T\left(E\right) = t \right) = \lambda e^{-\lambda t}
+P\left(T\left(E\right) \leq t \right) = \int_0^t \lambda e^{-\lambda \tau} \, \textrm{d}\tau = 1 - e^{-\lambda t}
+t
+P\left(T\left(E\right)\gt t\right) = 1 - \left(1 - e^{-\lambda t}\right) = e^{-\lambda t}
+t
+P\left(T\left(A\right) = t \cap T\left(B\right) \gt t \cap T\left(C\right) \gt t \right) = \lambda_A e^{-\lambda_A t} e^{-\lambda_B t} e^{-\lambda_C t} = \lambda_A e^{-\lambda t}
+\lambda = \lambda_A + \lambda_B + \lambda_C
+t
+P\left(T\left(A\right) \leq t \cap T\left(B\right) \gt t \cap T\left(C\right) \gt t \right)
+P\left(T\left(A\right) \leq t \cap T\left(B\right) \gt t \cap T\left(C\right) \gt t \right) = \left(1 - e^{-\lambda_A t}\right) e^{-\lambda_B t} e^{-\lambda_C t} = e^{-(\lambda-\lambda_A)t} - e^{-\lambda t}
+P\left(T\left(A\right) \leq t \cap T\left(B\right) \gt t \cap T\left(C\right) \gt t \right) = \int_0^t \lambda_A e^{-\lambda \tau} \, \textrm{d}\tau = \frac{\lambda_A - \lambda_A e^{-\lambda t}}{\lambda}
+T(E)
+P(T(E)=t)
+P\left(T\left(A\right) \leq t \cap T\left(B\right) \gt t \cap T\left(C\right) \gt t \right) = \left(1 - e^{-\lambda_A t}\right) e^{-\lambda_B t} e^{-\lambda_C t} = e^{-(\lambda-\lambda_A)t} - e^{-\lambda t}

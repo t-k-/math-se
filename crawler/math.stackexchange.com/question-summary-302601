@@ -1,0 +1,11 @@
+f: {R}^n \to R
+f(y) = f(x) + \nabla f(x)^T (y-x)+ \frac{1}{2} (y-x)^T \nabla^2f(z)(y-x) 
+z
+[x, y]
+\gamma(t) = t x + (1 - t) y
+g(t) = f \circ \gamma(t)
+t = 0
+s \in (0,t)
+g(1) = f \circ \gamma(1) = f(y), g(0) = f(x)
+g', g''
+ g(t) = g(0) + t g'(0) + \frac{t^2 }{2} g''(s) 

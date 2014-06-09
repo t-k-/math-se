@@ -1,0 +1,5 @@
+pde1: = \frac{{{\partial ^2}}}{{\partial {x^2}}}u\left( {x,y} \right) + \frac{{1 - {\rm{\nu }}}}{2}\frac{{{\partial ^2}}}{{\partial {y^2}}}u\left( {x,y} \right) + \frac{{1 + {\rm{\nu }}}}{2}\frac{{{\partial ^2}}}{{\partial x\partial y}}v\left( {x,y} \right) = 0
+pde2: = \frac{{{\partial ^2}}}{{\partial {y^2}}}v\left( {x,y} \right) + \frac{{1 - {\rm{\nu }}}}{2}\frac{{{\partial ^2}}}{{\partial {x^2}}}v\left( {x,y} \right) + \frac{{1 + {\rm{\nu }}}}{2}\frac{{{\partial ^2}}}{{\partial x\partial y}}u\left( {x,y} \right) = 0
+pdsolve\left( {\left\{ {pde1,pde2} \right\},\left\{ {u\left( {x,y} \right),v\left( {x,y} \right)} \right\}} \right)
+bcs: = u\left( {0,y} \right) = 0,v\left( {x,0} \right) = 0
+pdsolve\left( {\left\{ {pde1,pde2,bcs} \right\},\left\{ {u\left( {x,y} \right),v\left( {x,y} \right)} \right\}} \right)

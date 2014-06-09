@@ -1,0 +1,13 @@
+n>0
+ f(n) = (1 - n^{-1/4})^n < M(n) 
+n
+f(n)
+0
+M(n)
+M(n) = \exp(-g(n))
+g
+\sqrt{n}
+\log f(n) = n\log (1-n^{-1/4}) = - n \sum_{k=1}^\infty \frac{1}{kn^{k/4}}.
+\log f(n) < -n \frac{1}{n^{1/4}} = - n^{3/4},
+f(n) < \exp \left(-n^{3/4}\right).
+\log f(n)  < - n^{3/4} - \frac{1}{2}\sqrt{n} \Rightarrow f(n) < \exp \left(- \left(n^{3/4} + \frac{1}{2}\sqrt{n}\right)\right).

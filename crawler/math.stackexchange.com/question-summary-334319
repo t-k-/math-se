@@ -1,0 +1,12 @@
+f: X \rightarrow \mathbb{R}
+g : X \times Y \rightarrow \mathbb{R}
+ \inf_{x \in X} \left( f(x) - \inf_{y \in Y} g(x,y) \right) = \inf_{x \in X}  \sup_{y \in Y} \left( f(x) - g(x,y) \right) \text{ ?} 
+ \inf_{x \in X} \left( f(x) - \inf_{y \in Y} \left( g(x,y) - \inf_{p \in X} g(p,y) \right)  \right) = \inf_{x \in X} \sup_{y \in Y} \inf_{p \in X} \left( f(x) -  g(x,y) + g(p,y) \right)    \text{ ?}
+\inf A = - \sup (-A)
+\inf_{x \in X} \left( f(x) - \inf_{y \in Y} g(x,y) \right) = \inf_{x \in X} \left( f(x) + \sup_{y \in Y} (-g(x,y) )\right)
+f
+y
+\inf_{x \in X} \left( f(x) + \sup_{y \in Y} (-g(x,y) )\right) =\inf_{x \in X} \left( \sup_{y \in Y} (f(x)-g(x,y) )\right)
+C
+ -\sup_{y\in Y}g(y) = \inf_{y\in Y}(-g(y)), 
+ C + \sup_{y\in Y}g(y) = \sup_{y\in Y}(C+g(y)). 

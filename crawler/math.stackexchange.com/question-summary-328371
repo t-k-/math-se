@@ -1,0 +1,12 @@
+q : \mathbb{R} \rightarrow \mathbb{R^+}.
+ t \mapsto t\cdot q(t) 
+ \int_0^{x}{t\cdot q(t)dt}
+x
+x \mapsto \int_x^{\infty}{q(t)dt}
+\mathbb{R^+}
+\lim_{x \rightarrow \infty}{x\cdot\int_x^{\infty}{q(t)dt}} = 0.
+ \int_0^\infty \bigg( \int_x^\infty q(t) \, dt \bigg)\, dx = \int_0^\infty \bigg( \int_0^t dx \bigg) q(t)\,dt. 
+\int_0^\infty \int_0^\infty Q(t,x) \,dt \,dx
+ Q(t,x) = \begin{cases} q(t), &\text{if }t>x, \\ 0, &\text{if } t\le x. \end{cases} 
+\int_0^a{\int_x^{\infty}{q(t)dt}} = [x\int_x^\infty{q(t)dt}]_0^a + \int_0^a{xq(x)dx} 
+\lim_{x \rightarrow \infty}{x\cdot\int_x^{\infty}{q(t)dt}} = 0

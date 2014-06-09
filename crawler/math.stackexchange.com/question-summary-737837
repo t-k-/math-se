@@ -1,0 +1,20 @@
+f \in \mathcal{R}
+[0,A]
+A < \infty
+f(x) \rightarrow 1
+x \rightarrow + \infty
+\lim\limits_{t \rightarrow 0} \int\limits_{0}^{\infty} e^{-tx} f(x) dx = 1 \qquad (t>0)
+\epsilon > 0
+a>0
+|f(x) - 1| < \frac{1}{2} \epsilon
+x \ge a
+f
+[0,a]
+M
+|f(x)| \le M
+x \in [0,a]
+\delta
+\delta(M+1) < \frac{1}{2} \epsilon
+0 < t < \delta
+t \int\limits_{0}^{\infty} e^{-tx} \cdot 1 dx = 1
+t \int\limits_{0}^{\infty} e^{-tx} |f(x) - 1| dx \le \delta \int\limits_{0}^{a} e^{-tx} (M+1) dx + t \int\limits_{a}^{\infty} e^{-tx} \frac{1}{2} \epsilon dx \le \delta(M+1) + \frac{1}{2} \epsilon e^{-at} < \epsilon

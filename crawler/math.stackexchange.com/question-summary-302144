@@ -1,0 +1,11 @@
+i_1 < \cdots < i_n
+p_{i;j}(f_i\mid f_j)
+i>j
+     p_{i_1,\ldots,i_n}(f_1,\ldots,f_n)=p_{i_1}(f_1)p_{i_2;i_1}(f_2\mid f_1)\cdots p_{i_n;i_{n-1}}(f_n\mid f_{n-1}), 
+     p_{i_3;i_1}(f_3\mid f_1)=\int_{-\infty}^\infty p_{i_3;i_2}(f_3\mid f_2)p_{i_2;i_1}(f_2\mid f_1) \, df_2. 
+p_{i_2} (f_2) = \int_{-\infty}^\infty p_{i_2;i_1} (f_2|f_1) p_{i_1}(f_1) df_1  
+p_{i_1} (f_1)
+f_2
+n^{th}
+ p_{i_3,i_1} (f_1, f_3) = p_{i_1} (f_1) \cdot \int_{-\infty}^\infty p_{i_3;i_2} (f_3|f_2) \cdot p_{i_2;i_1}(f_2|f_1) \ df_2\\ 
+ p_{i_3,i_2, i_1} (f_1,f_2, f_3) = p_{i_3;i_2} (f_3|f_2) \cdot p_{i_2;i_1}(f_2|f_1) \cdot p_{i_1} (f_1)  

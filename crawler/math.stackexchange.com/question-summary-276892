@@ -1,0 +1,82 @@
+S = r + r^2 + r^4 + r^8 + r^{16} + r^{32} + ...... + r^{2^k}
+k
+r
+r+r^2+r^4+\cdots+r^{2^k}
+r+r^2+r^4+\cdots+r^{2^k}
+1 \; + \; r^{2^n} \; + \; r^{2 \cdot 2^n} \; + \; r^{3 \cdot 2^n} \; + \; \ldots \; + \; r^{(m-1) \cdot 2^n}
+r^m – 1
+r-1
+1 + r + r^2 + \ldots + r^{m-1}:
+r^m
+\left(r^{m} - 1 \right) + 1.
+S \;\; = \;\; \left(r – 1 \right) + 1 + \left(r^2 – 1 \right) + 1 + \left(r^4 – 1 \right) + 1 + \left(r^8 – 1 \right) + 1 + \ldots + \left(r^{2^k} – 1 \right) + 1
+(k+1)
+1
+k+1.
+S \;\; = \;\; (k+1) + \left(r – 1 \right) + \left(r^2 – 1 \right) + \left(r^4 – 1 \right) + \left(r^8 – 1 \right) + \ldots + \left(r^{2^k} – 1 \right)
+m
+r^m - 1 \; = \; \left(r-1\right) \left(1 + r + r^2 + \ldots + r^{m-1}\right).
+S \;\; = \;\; (k+1) + \left(r – 1 \right)\left[1 + \left(1 + r \right) + \left(1 + r + r^2 + r^3 \right) + \ldots + \left(1 + r + \ldots + r^{2^{k} - 1} \right) \right]
+\left(k+1\right) \cdot 1 + kr + \left(k-1\right)r^2 + \left(k-1\right)r^3 + \left(k-2\right)r^4 + \ldots + \left(k-2\right)r^7 + \left(k-3\right)r^8 + \ldots + \left(k-3\right)r^{15} + \ldots + \left(k-n\right)r^{2^n} + \dots + \left(k-n\right)r^{2^{n+1}-1} + \ldots + \left(1\right) r^{2^{k-1}} + \ldots + \left(1\right) r^{2^{k} - 1}
+(k-2)r^4 + \ldots + (k-2)r^7
+(k-2)r^4\left(1 + r + r^2 + r^3\right).
+\left(k+1\right) + \left(k\right)r + \left(k-1\right)r^2 \left(1+r\right) + \left(k-2\right)r^4\left(1+r+r^2+r^3\right) + \ldots + \;\; \left(1\right)r^{2^{k-1}} \left(1 + r + \ldots + r^{2^{k-1} -1} \right)
+\sum_{k=0}^{n-1}\frac{2^k}{x^{2^k}+1}=\frac{1}{x-1}-\frac{2^n}{x^{2^n}-1}
+\prod_{k=0}^{n-1}(x^{2^k}+1)=\frac{x^{2^n}-1}{x-1}
+\sum_{k=1}^{2^n}\binom{2^n}{k}=2^{2^n}-1
+\prod_{n=0}^\infty(1+x^{2^n})=\frac{1}{1-x}
+\sum_{n=0}^\infty \frac{2^n}{x^{2^n}+1}=\frac{1}{x-1}
+\sum_{n=0}^\infty\frac{4^nx^{2^n}}{(x^{2^n}+1)^2}=\frac{x}{(x-1)^2}
+f(n)
+C_1
+C_2
+\text{Also for |x| < 1}
+\sum_{n=0}^\infty \frac{(-1)^n2^nx^{2^n}}{x^{2^{n+1}}-x^{2^n}+1}=\frac{-2x^2}{x^4+x^2+1} 
+\text{Let $f(n)$ count how many factors of 2 n has, then we have} 
+\frac{1}{x-1}-\sum_{n=1}^\infty \frac{f(n)}{x^n}=\sum_{n=0}^\infty \frac{1}{x^{2^n}+1}
+\sum_{n=1}^\infty \frac{f(n)}{n^2}=\frac{\pi^2}{18}
+\sum_{k=1}^{2^n} f(k)=2^n-1
+\text{It was also proved by Erdős that both the constants bellow are irrational}
+\sum_{n=1}^\infty \frac{1}{2^n-1}=C_1
+\sum_{n=1}^\infty \frac{1}{2^{2^n}+1}=C_2
+\text{The constant $C_1$ is known as the Erdős-Borwein Constant}
+\text{The constant $C_2$ is less known and is talked about here:}
+\text{http://journal.ms.u-tokyo.ac.jp/pdf/jms080206.pdf}
+ \int_{0}^{\infty} r^{2^x} \mathrm dx \le \sum_{i=0}^\infty r^{2^i}\le \int_{-1}^{\infty} r^{2^x} \mathrm dx 
+ \int r^{2^x} \mathrm dx = \frac{\text{Ei}\left(2^x \log (r)\right)}{\log (2)} 
+r < 1
+0
+x\to\infty
+ -\frac{\text{Ei}\left(\log (r)\right)}{\log (2)} \le \sum_{i=0}^\infty r^{2^i} \le -\frac{\text{Ei}\left(\frac{\log (r)}{2}\right)}{\log (2)}  
+r = 1/2
+ 0.546307 \le 0.816422 \le 1.15583 
+r\to 1
+x \to \infty
+c
+ \frac{\text{Ei}\left(2^{c+1} \log (r)\right)-\text{Ei}(\log (r))}{\log (2)} \le \Sigma \le \frac{\text{Ei}\left(2^c \log (r)\right)-\text{Ei}\left(\frac{\log (r)}{2}\right)}{\log (2)} 
+ (n-m) r^{2^n} \le \sum _{k=m+1}^n r^{2^k} \le \frac{r^{2^{m+1} (n-m+1)}-r^{2^{m+1}}}{r^{2^{m+1}}-1} 
+m = -1
+ (n + 1) r^{2^n} \le \sum_{k=0}^n r^{2^k} \le \frac{r^{n+2}-r}{r-1} 
+ \sum_{k=0}^{n} r^{2^k} 
+\epsilon
+ \sum_{k=0}^{m} r^{2^k} + \sum_{k=m+1}^{n} r^{2^k} = \sum_{k=0}^{n} r^{2^k} 
+m
+\epsilon
+ \sum_{k=m+1}^{n} r^{2^k} \le \epsilon 
+ \frac{r^{2^{m+1} (n-m+1)}-r^{2^{m+1}}}{r^{2^{m+1}}-1} \le \epsilon 
+n, r,\text{and}, \epsilon
+a_n
+n=1
+a_n=1
+n>1
+a_n=-1
+a_n = 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,...
+b_n
+\sum\limits_ {n = 1}^{\infty} b_n r^n =   r + \sum\limits_ {a =          2}^{\infty} r^{a} + \sum\limits_ {a =           2}^{\infty}\sum\limits_ {b =          2}^{\infty} r^{ab} + \sum\limits_ {a =           2}^{\infty}\sum\limits_ {b = 2}^{\infty}\sum\limits_ {c =          2}^{\infty} r^{abc} + \sum\limits_ {a =           2}^{\infty}\sum\limits_ {b = 2}^{\infty}\sum\limits_ {c =           2}^{\infty}\sum\limits_ {d = 2}^{\infty} r^{abcd} + ... 
+2
+r + \sum\limits_ {a = 2}^{2} r^{a} + \sum\limits_ {a = 2}^{2}\sum\limits_ {b =          2}^{2} r^{ab} + \sum\limits_ {a = 2}^{2}\sum\limits_ {b =           2}^{2}\sum\limits_ {c =          2}^{2} r^{abc} + \sum\limits_ {a = 2}^{2}\sum\limits_ {b =           2}^{2}\sum\limits_ {c = 2}^{2}\sum\limits_ {d =          2}^{2} r^{abcd} + ... 
+r + r^{2} + r^{2*2} + r^{2*2*2} + r^{2*2*2*2} + r^{2*2*2*2*2} + ...... + r^{2^k}
+r + r^{2} + r^{4} + r^{8} + r^{16} + r^{32} + ...... + r^{2^k}
+S
+\sum\limits_ {n = 1}^{\infty} b_n r^n
+S

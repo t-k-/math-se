@@ -1,0 +1,12 @@
+\frac{\partial f(y(x)+\alpha\eta(x), y'(x)+\alpha\eta'(x), x)}{\partial \alpha}
+\eta \frac{\partial f}{\partial y}+\eta' \frac{\partial f}{\partial y'}
+f(z_1,z_2,z_3)
+f(y,y',x)
+ z_1=y\qquad  z_2=y'\qquad  z_3=x 
+ z_1=y+\alpha\eta(x)\qquad  z_2=y'+\alpha\eta'(x)\qquad  z_3=x 
+\displaystyle \frac{\partial f}{\partial z_2} = \frac{\partial f}{\partial y'}
+ \begin{align} \frac{\partial f}{\partial \alpha}&=  \frac{\partial f}{\partial z_1} \frac{\partial z_1}{\partial \alpha} + \frac{\partial f}{\partial z_2} \frac{\partial z_2}{\partial \alpha} + \frac{\partial f}{\partial z_3} \frac{\partial z_3}{\partial \alpha} \\&= \frac{\partial f}{\partial z_1} \eta(x) + \frac{\partial f}{\partial z_2} \eta'(x) + \frac{\partial f}{\partial z_3} \cdot 0 \\&= \frac{\partial f}{\partial z_1} \eta + \frac{\partial f}{\partial z_2} \eta' \end{align} 
+ \begin{align} \frac{\partial f}{\partial y} &=  \frac{\partial f}{\partial z_1} \cdot 1  +\frac{\partial f}{\partial z_2}\cdot 0 + \frac{\partial f}{\partial z_3}\cdot 0 \\&=  \frac{\partial f}{\partial z_1} \end{align} 
+ \frac{\partial f}{\partial \alpha} =  \frac{\partial f}{\partial y} \eta + \frac{\partial f}{\partial y'} \eta' 
+\frac{\partial f\Big(u(\alpha), v(\alpha)\Big)}{\partial \alpha} = \frac{\partial f}{\partial u}\frac{\partial u}{\partial \alpha} + \frac{\partial f}{\partial v}\frac{\partial v}{\partial \alpha}
+u,v

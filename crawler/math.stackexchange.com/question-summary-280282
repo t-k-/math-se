@@ -1,0 +1,78 @@
+u\in\mathbb{N}
+\displaystyle\frac{1}{2}\left(\pi-\theta_0\right)
+0\leq\theta_0<2\pi.
+0
+\theta_1
+0
+\theta_2
+n
+n=2u
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta\right)}{k^{2u+1}}\tag{$u\in\mathbb{N}$}
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_0\right)}{k}=\tan^{-1}\left(\cot\left(\theta_0/2\right)\right)
+\sum_{k=1}^{\infty}\frac{\cos\left(k\theta_1\right)-1}{k^{2}}=-\frac{\pi\theta_1}{2}+\frac{\theta_1^{2}}{4}\\\implies\sum_{k=1}^{\infty}\frac{\cos\left(k\theta_1\right)}{k^{2}}=\zeta\left(2\right)-\frac{\pi\theta_1}{2}+\frac{\theta_1^{2}}{4}
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_2\right)}{k^{3}}=\frac{\theta_2^{3}}{12}-\frac{\pi\theta_2^{2}}{4}+\zeta\left(2\right)\theta_2.
+\sum_{k=1}^{\infty}\left(\int_{0}^{\theta_{n}}\cdots\left(\int_{0}^{\theta_{2}}\left(\int_{0}^{\theta_{1}}\frac{\sin\left(k\theta_{0}\right)}{k}\,\mathrm{d}\theta_{0}\right)\,\mathrm{d}\theta_{1}\right)\cdots\,\mathrm{d}\theta_{n-1}\right)\\=\frac{1}{2}\left(\int_{0}^{\theta_{n}}\cdots\left(\int_{0}^{\theta_{2}}\left(\int_{0}^{\theta_{1}}\pi-\theta_{0}\,\mathrm{d}\theta_{0}\right)\,\mathrm{d}\theta_{1}\right)\cdots\,\mathrm{d}\theta_{n-1}\right)\\=\frac{1}{2}\left(\frac{\pi\theta_{n}^{n}}{n!}-\frac{\theta_{n}^{n+1}}{\left(n+1\right)!}\right)
+\int_0^{\theta_1}\frac{\sin(k\theta_0)}{k}\,\mathrm d\theta_0=\frac{-\cos(k\theta_1)}{k^2}+\frac{1}{0!k^2}
+\int_0^{\theta_2}\frac{-\cos(k\theta_1)}{k^2}+\frac{1}{k^2}\,\mathrm d\theta_1=\frac{-\sin(k\theta_2)}{k^3}+\frac{\theta_2}{1!k^2}
+\int_0^{\theta_3}\frac{-\sin(k\theta_2)}{k^3}+\frac{\theta_2}{1!k^2}\,\mathrm d\theta_2=\frac{\cos(k\theta_3)}{k^4}+\frac{\theta_3^2}{2!k^2}-\frac{1}{0!k^4}
+\int_0^{\theta_4}\frac{\cos(k\theta_3)}{k^4}+\frac{\theta_3^2}{2!k^2}-\frac{1}{0!k^4}\,\mathrm d\theta_3=\frac{\sin(k\theta_4)}{k^5}+\frac{\theta_4^3}{3!k^2}-\frac{\theta_4}{1!k^4}
+\int_0^{\theta_5}\frac{\sin(k\theta_4)}{k^5}+\frac{\theta_4^3}{3!k^2}-\frac{\theta_4}{1!k^4}\,\mathrm d\theta=\frac{-\cos(k\theta_5)}{k^6}+\frac{\theta_5^4}{4!k^2}-\frac{\theta_5^2}{2!k^4}+\frac{1}{0!k^6}
+\sum_{k=1}^{\infty}\left(\int_{0}^{\theta_{n}}\cdots\left(\int_{0}^{\theta_{2}}\left(\int_{0}^{\theta_{1}}\frac{\sin\left(k\theta_{0}\right)}{k}\,\mathrm{d}\theta_{0}\right)\,\mathrm{d}\theta_{1}\right)\cdots\,\mathrm{d}\theta_{n-1}\right)\\=\left(-1\right)^{n}\sum_{k=1}^{\infty}\frac{\sin\left(n\pi/2+k\theta_{n}\right)}{k^{n+1}}+\sum_{i=1}^{\lfloor\frac{n+1}{2}\rfloor}\frac{\left(-1\right)^{i+1}\theta^{n+1-2i}_{n}\zeta\left(2i\right)}{(n+1-2i)!}
+\sum_{k=1}^{\infty}\frac{\sin\left(n\pi/2+k\theta_{n}\right)}{k^{n+1}}=\frac{\left(-1\right)^{n}}{2}\left(\frac{\pi\theta_{n}^{n}}{n!}-\frac{\theta_{n}^{n+1}}{\left(n+1\right)!}\right)+\sum_{i=1}^{\lfloor\frac{n+1}{2}\rfloor}\frac{\left(-1\right)^{n+i}\theta_{n}^{n+1-2i}\zeta\left(2i\right)}{(n+1-2i)!}
+\sum_{k=1}^{\infty}\frac{\sin\left(u\pi+k\theta_{n}\right)}{k^{2u+1}}=\left(-1\right)^{u}\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{2u+1}}\\=\frac{1}{2}\left(\frac{\pi\theta_{2u}^{2u}}{(2u+1)!}-\frac{\theta_{2u}^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{\lfloor\frac{2u+1}{2}\rfloor}\frac{\left(-1\right)^{i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{2u+1}}=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{\lfloor\frac{2u+1}{2}\rfloor}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}.
+u=1:
+u=t+1.
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{2u+1}}=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{\lfloor\frac{2u+1}{2}\rfloor}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}
+=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}.
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{3}}=-\frac{1}{2}\left(\frac{\pi\theta^2}{2}-\frac{\theta^3}{6}\right)+\frac{\theta\zeta(2)}{1}=-\frac{\pi\theta^2}{4}+\frac{\theta^3}{12}+\theta\,\zeta(2)
+u=1
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{2u+1}}=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{\lfloor\frac{2u+1}{2}\rfloor}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}
+=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}.
+\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{}\right)}{k^{3}}=-\frac{1}{2}\left(\frac{\pi\theta^2}{2}-\frac{\theta^3}{6}\right)+\frac{\theta\zeta(2)}{1}=-\frac{\pi\theta^2}{4}+\frac{\theta^3}{12}+\theta\,\zeta(2)
+\int_{0}^{\theta_2}\int_{0}^{\theta_1}\sum_{k=1}^{\infty}\frac{\sin\left(k\theta_{0}\right)}{k^{2t+1}}\,\mathrm{d}\theta_{0}\,\mathrm{d}\theta_{1}=\sum_{k=1}^{\infty}\int_{0}^{\theta_2}-\frac{\cos(k\theta_1)}{k^{2t+2}}+\frac{1}{k^{2t+2}}\,\mathrm{d}\theta_1\\=-\sum_{k=1}^{\infty}\frac{\sin(k\theta_2)}{k^{2(t+1)+1}}+\theta_2\,\zeta(2(t+1))
+\int_{0}^{\theta_2}\int_{0}^{\theta_1}\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)+\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}\,\mathrm{d}\theta\,\mathrm{d}\theta_{1}\\=\int_{0}^{\theta_2}\int_{0}^{\theta_1}\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)\,\mathrm{d}\theta\,\mathrm{d}\theta_{1}+\int_{0}^{\theta_2}\int_{0}^{\theta_1}\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}\,\mathrm{d}\theta\,\mathrm{d}\theta_{1}
+\frac{\left(-1\right)^u}{2}\int_{0}^{\theta_2}\int_{0}^{\theta_1}\left(\frac{\pi\theta^{2u}}{(2u)!}-\frac{\theta^{2u+1}}{\left(2u+1\right)!}\right)\,\mathrm{d}\theta\,\mathrm{d}\theta_{1}=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta_{2}^{2(u+1)}}{(2(u+1))!}-\frac{\theta_{2}^{2(u+1)+1}}{\left(2(u+1)+1\right)!}\right)
+\int_{0}^{\theta_2}\int_{0}^{\theta_1}\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2u+1-2i}\zeta\left(2i\right)}{(2u+1-2i)!}\,\mathrm{d}\theta\,\mathrm{d}\theta_{1}=\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta^{2(u+1)+1-2i}\zeta\left(2i\right)}{(2(u+1)+1-2i)!}
+-\sum_{k=1}^{\infty}\frac{\sin(k\theta_2)}{k^{2(u+1)+1}}+\theta_2\,\zeta(2(u+1))=\frac{\left(-1\right)^u}{2}\left(\frac{\pi\theta_{2}^{2(u+1)}}{(2(u+1))!}-\frac{\theta_{2}^{2(u+1)+1}}{\left(2(u+1)+1\right)!}\right)\\+\sum_{i=1}^{u}\frac{\left(-1\right)^{u+i}\theta_{2}^{2(u+1)+1-2i}\zeta\left(2i\right)}{(2(u+1)+1-2i)!}\\\implies\sum_{k=1}^{\infty}\frac{\sin(k\theta_2)}{k^{2(u+1)+1}}=\frac{\left(-1\right)^{u+1}}{2}\left(\frac{\pi\theta_{2}^{2(u+1)}}{(2(u+1))!}-\frac{\theta_{2}^{2(u+1)+1}}{\left(2(u+1)+1\right)!}\right)\\+\sum_{i=1}^{u}\frac{\left(-1\right)^{(u+1)+i}\theta_{2}^{2(u+1)+1-2i}\zeta\left(2i\right)}{(2(u+1)+1-2i)!}+\theta_2\,\zeta(2(u+1))\\\implies\sum_{k=1}^{\infty}\frac{\sin(k\theta_2)}{k^{2(u+1)+1}}=\frac{\left(-1\right)^{u+1}}{2}\left(\frac{\pi\theta_{2}^{2(u+1)}}{(2(u+1))!}-\frac{\theta_{2}^{2(u+1)+1}}{\left(2(u+1)+1\right)!}\right)\\+\sum_{i=1}^{u+1}\frac{\left(-1\right)^{(u+1)+i}\theta_{2}^{2(u+1)+1-2i}\zeta\left(2i\right)}{(2(u+1)+1-2i)!}
+\sum_{k=1}^{\infty}\frac{\sin(k\theta_2)}{k^{2t+1}}=\frac{\left(-1\right)^{t}}{2}\left(\frac{\pi\theta_{2}^{2t}}{(2t)!}-\frac{\theta_{2}^{2t+1}}{\left(2t+1\right)!}\right)+\sum_{i=1}^{t}\frac{\left(-1\right)^{t+i}\theta_{2}^{2t+1-2i}\zeta\left(2i\right)}{(2t+1-2i)!}
+p
+x
+S(x) = \sum_{k\ge 1} \frac{\sin(kx)}{k^{2p+1}}
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
+\lambda_k = \frac{1}{k^{2p+1}}, \quad \mu_k = k  \quad \text{and} \quad g(x) = \sin x.
+g^*(s)
+g(x)
+\int_0^\infty \sin x \times x^{s-1} dx.
+\sin x  \sim x
+\Re(s)  > -1
+\sin  x
+\Re(s-1)<-1
+\Re(s)  <  0.
+\langle -1, 0 \rangle.
+Q(s)
+S(x)
+\Re(s) > -2p.
+Q(s) = \sin\left(\frac{\pi s}{2}\right)\Gamma(s) \zeta(s+2p+1) \\ \text{because}\quad \sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} =  \sum_{k\ge 1}\frac{1}{k^{2p+1}} \frac{1}{k^s} = \zeta(s+2p+1)
+g^*(s)
+\Re(s)>-2p
+\frac{1}{2\pi   i} \int_{-1/2-i\infty}^{-1/2+i\infty} Q(s)/x^s ds
+s+2p+1 =  -2q
+q\ge  1
+-2(q+p)-1
+-2p-1.
+-2p-1
+-1.
+s=-2p-1:
+\mathrm{Res}\left(Q(s)/x^s; s=-2p-1\right) = (-1)^{p+1} \frac{(-1)^{2p+1}}{(2p+1)!}\times -\frac{1}{2}  \times x^{2p+1} \\ = \frac{1}{2} \frac{(-1)^{p+1}}{(2p+1)!} \times x^{2p+1}.
+\sum_{q=0}^{p-1}  \mathrm{Res}\left(Q(s)/x^s; s=-(2q+1)\right) = \sum_{q=0}^{p-1} (-1)^{q+1} \frac{(-1)^{2q+1}}{(2q+1)!}  \zeta(2p-2q) x^{2q+1}\\ =  \sum_{q=0}^{p-1} (-1)^q \frac{\zeta(2p-2q)}{(2q+1)!} x^{2q+1}.
+\frac{1}{2} (-1)^{p+1} \left(\frac{x^{2p+1}}{(2p+1)!} - \pi \frac{x^{2p}}{(2p)!}\right) + \sum_{q=0}^{p-1} (-1)^q \frac{\zeta(2p-2q)}{(2q+1)!} x^{2q+1}.
+x\in[0,2\pi).
+\theta=0
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\sum_{k = 1}^{\infty}{\sin\pars{k\theta} \over k^{2u+1}}:\ {\large ?}\,,      \qquad u\in\mathbb{N}}
+ \mbox{Lets}\quad{\cal J}_{u}\pars{\theta} \equiv \sum_{k = 1}^{\infty}{\sin\pars{k\theta} \over k^{2u + 1}} 
+\ds{N = u - 1}
+\ds{{\cal J}_{0}\pars{\theta} = \half\pars{\pi - \theta}}

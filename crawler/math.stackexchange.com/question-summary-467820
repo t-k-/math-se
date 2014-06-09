@@ -1,0 +1,44 @@
+X_1,\ldots,X_n
+f_{X_k}(x\mid\theta)= \begin{cases}  e^{k\theta-x}& x\geq k\theta\\   0& \text{otherwise}  \end{cases} 
+T=\min_{k}\left(\frac{X_k}{k}\right)
+X_k
+Y_k=\frac{X_k}{k}
+f_{Y_k}(y\mid\theta)=\begin{cases}  ke^{k(\theta-x)}& x\geq \theta\\   0& \text{otherwise}  \end{cases} 
+k
+1\leq k\leq n
+\text{P}(T=Y_k).
+Y_k
+Y_k=y_k
+Y_k
+\text{P}(Y_1,\dots,Y_{k-1},Y_{k+1},\dots,Y_n > y_k)=\prod_{j=1,\dots,k-1,k+1,\dots,n}\int_{y_k}^{\infty}je^{j(\theta-y)} \, dy=\prod_{j=1,\dots,k-1,k+1,\dots,n}e^{j(\theta-y_k)}.
+\text{P}(T=Y_k)=\int_{\theta}^{\infty}\Big(\prod_{j=1,\dots,k-1,k+1,\dots,n}e^{j(\theta-y_k)}\Big)ke^{k(\theta-y_k)} \, dy_k = k\int_{\theta}^\infty e^{\frac{n(n+1)}{2}(\theta-y_k)} \, dy_k=\frac{2k}{n(n+1)}.
+1
+k
+1
+n
+T
+\theta
+(X_1,...,X_n)
+T
+\theta
+T
+\theta
+(X_1,\dots,X_n)
+\theta
+\theta
+T
+k
+x>\theta
+e^{\theta-x} e^{2\theta-x} e^{3\theta-x}\cdots e^{n\theta-x}
+= e^{n(n+1)\theta/2 - nx}
+\theta
+x
+ \Pr(Y_k>x) = \int_x^\infty ke^{k(\theta-w)} \,dw = e^{k(\theta-x)}. 
+ f_\min(x) = \dfrac{d}{dx}(1- e^{n(n+1)(\theta-x)/2}) = \frac{n(n+1)}2\cdot e^{n(n+1)(\theta-x)/2}. 
+T
+\theta
+T
+k
+T=Y_k
+T
+T

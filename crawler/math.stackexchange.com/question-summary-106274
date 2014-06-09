@@ -1,0 +1,22 @@
+\frac{\sqrt{3}}{2\sqrt{2}}
+2\times 2
+ \def\expect#1{\left\langle#1\right\rangle} \begin{eqnarray} \expect{\det A} &=& \expect{\sum_\pi\sigma(\pi)\prod_iA_{i\pi(i)}} \\ &=& \sum_\pi\sigma(\pi)\expect{\prod_iA_{i\pi(i)}} \\ &=& \sum_\pi\sigma(\pi)\expect{\prod_iA_{ii}} \\ &=& \expect{\prod_iA_{ii}}\sum_\pi\sigma(\pi) \\ &=& 0\;. \end{eqnarray} 
+n\times n
+ \begin{eqnarray} \expect{(\det A)^2} &=& \expect{\left(\sum_\pi\sigma(\pi)\prod_iA_{i\pi(i)}\right)^2} \\ &=& \expect{\left(\sum_\pi\sigma(\pi)\prod_iA_{i\pi(i)}\right)\left(\sum_\rho\sigma(\rho)\prod_iA_{i\rho(i)}\right)} \\ &=& \expect{\sum_{\pi,\rho}\sigma(\pi)\sigma(\rho)\prod_iA_{i\pi(i)}\prod_iA_{i\rho(i)}} \\ &=& \expect{\sum_{\pi,\rho}\sigma(\pi^{-1}\rho)\prod_iA_{ii}\prod_iA_{i(\pi^{-1}\rho)(i)}} \\ &=& n!\expect{\sum_{\pi}\sigma(\pi)\prod_iA_{ii}\prod_iA_{i\pi(i)}}\;. \\ &=& n!\sum_{\pi}\sigma(\pi)\expect{\prod_iA_{ii}\prod_iA_{i\pi(i)}}\;. \end{eqnarray} 
+n
+1/2
+1/2
+i
+\pi
+ \begin{eqnarray} \expect{(\det A)^2} &=& \frac{n!}{2^n}\sum_\pi\sigma(\pi)M_{i\pi(i)} \\ &=& \frac{n!}{2^n}\det M \end{eqnarray} 
+M_{ij}=\begin{cases}\vphantom{\frac12}1&i=j\;,\\\frac12&i\ne j\;.\end{cases}
+n-1
+1/2
+(n+1)/2
+ \begin{eqnarray} \expect{(\det A)^2} &=& \frac{n!}{2^n}\frac{n+1}{2^n} \\ &=& \frac{(n+1)!}{2^{2n}} \end{eqnarray} 
+\sqrt{\expect{(\det A)^2}}=\frac{\sqrt{(n+1)!}}{2^n}\;,
+n=2
+1/2
+\pm1
+n!
+\pm1

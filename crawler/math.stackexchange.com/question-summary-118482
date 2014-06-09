@@ -1,0 +1,22 @@
+\displaystyle\lim_{n \to \infty} \left[ \sum_{k=1}^nf(k)-\frac1 2(f(1)+f(n))- \int_1^n f(x)dx\right]
+\displaystyle\lim_{n \to \infty} \left[ \sum_{k=1}^nf(k)\int_1^n f(x)dx\right]
+x=1
+x=2
+\sum_{n\ge 1}a_n<\frac12\Big(f(1)+f(2)\Big)
+\left(\sum_{k=1}^nf(k)-\frac12\big(f(1)+f(n)\big)\right)-\int_1^nf(x)\,dx=\sum_{k=1}^na_k\;:
+f(x)=\dfrac1x
+f
+[n,n+1]
+f
+f
+(n+1,f(n+1))
+(n,f(n))
+(n+1,f(n+1))
+a_n
+x=n
+f'
+-
+ a_n\le \frac12\,(f(n)-f(n+1)+f'(n+1)). 
+\begin{align*} \sum_{k=1}^na_k&\le\frac12\,\Bigl(f(1)-f(2)+f(2)-f(3)+\dots+f(n)-f(n+1)+\sum_{k=2}^{n+1}f'(k)\Bigr)\\ &=\frac12\,\Bigl(f(1)-f(n+1)+\sum_{k=2}^{n+1}f'(k)\Bigr) \end{align*}
+ f(n+1)-f(2)=\int_2^{n+1}f'(x)\,dx=\sum_{k=2}^{n}\int_k^{k+1}f'(x)\,dx\ge\sum_{k=2}^{n}f'(k), 
+ \sum_{k=1}^na_k\le\frac12(f(1)-f(2)+f'(n+1))\le\frac12(f(1)-f(2)), 

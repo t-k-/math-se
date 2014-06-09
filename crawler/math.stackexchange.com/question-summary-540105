@@ -1,0 +1,18 @@
+I=\lim_{n\to\infty}(1+\sin{(\sqrt{4n^2+1}\cdot\pi)})^n
+I=e^{\lim_{n\to\infty}n\sin{(\sqrt{4n^2+1}\pi})}
+\sin((\sqrt{4n^2+1})\pi)=\sin(2\pi n(\sqrt{1+\frac{1}{4n^2}}))=\sin(2\pi n+2 \pi n\frac{1}{8n^2}+O(1/n^3))
+=\sin(\frac{\pi}{4n}+O(1/n^3))=\frac{\pi}{4n}+O(\frac{1}{n^3})
+I=e^{\displaystyle\lim_{n\to\infty}n\sin{(\sqrt{4n^2+1}\pi)}}=e^{\displaystyle\lim_{n\to\infty}n\sin{(\sqrt{4n^2+1}-2n)\pi}}
+\lim_{n\to\infty}n\sin{\dfrac{1}{\sqrt{4n^2+1}+2n}\pi}=\lim_{n\to\infty}\dfrac{n}{\sqrt{4n^2+1}+2n}=\dfrac{\pi}{4}
+I=\lim_{n\to\infty}(1+\sin{(\sqrt{4n^2+1}\pi)})^n=e^{\frac{\pi}{4}}
+z_n=2n\sqrt{1+1/(4n^2)}
+u\to0
+\sqrt{1+u}=1+u/2+o(u)
+z_n=2n(1+1/(8n^2)+o(1/n^2))=2n+1/(4n)+o(1/n)
+\sin(z_n\pi)=\sin(\pi/(4n)+o(1/n))=\pi/(4n)+o(1/n)
+x_n=\pi/4+o(1)
+z_n-2n
+z_n\sim2n
+z_n-2n\sim1/4n
+\lim_{n\to\infty}x_n=\pi/4. 
+ z_n-2n=\frac{z_n^2-4n^2}{z_n+2n}=\frac1{z_n+2n}. 

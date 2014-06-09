@@ -1,0 +1,9 @@
+ \frac{d}{dt} \int_0^t g(t-r) f(r) dr = g(0)f(t) + \int_0^t \frac{dg}{dt} (t-r) f(r) dr  
+\Phi(t) := (t,t)
+h(x,y) := \int_0^x g(y-r) \cdot f(r) \, dr
+\frac{d}{dt} \int_0^t g(t-r) \cdot f(r) \, dr = \frac{d}{dt}(h \circ \Phi)(t) = h'(\Phi(t))^T \cdot \Phi'(t) \\ = \begin{pmatrix} g(y-x) \cdot f(x)\bigg|_{(x,y)=\Phi(t)} & \int_0^x \frac{d}{dy} g(y-r) \cdot f(r) \, dr \bigg|_{(x,y)=\Phi(t)} \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\frac{d}{dt} \int_0^t h(r) \, dr = h(t)
+\int_0^t g(t-r) f(r) dr
+g(u,v)=\int_0^u g(v-r) f(r) dr
+u(t)=v(t)=t
+g

@@ -1,0 +1,13 @@
+g
+\mathbb{R}^2
+\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y) dxdy < \infty
+a<b
+f
+f(x,y) = g(x,y) + \int_a^b g(x,z)g(z,y)dz 
++ \int_a^b \int_a^b  g(x,z_1)g(z_1,z_2)g(z_2,y) dz_2dz_1 
++ \int_a^b \int_a^b \int_a^b g(x,z_1)g(z_1,z_2)g(z_2,z_3)g(z_3,y) dz_3dz_2dz_1 
++ \; ... 
+f
+G
+ (Gh)(x,y)=\int_a^bg(x,z)h(z,y)\,\mathrm dz\;. 
+ f = \sum_{k=0}^\infty G^kg=\frac1{1-G}g\;, 

@@ -1,0 +1,22 @@
+x \in \mathbb{R}^N
+A \in \mathbb{R}^{N \times N}
+(x^TAx)^2
+\displaystyle\frac{\partial x_l}{\partial x_i}=\delta_{li}
+\begin{array}{ll}\frac{\partial}{\partial x_i}\left(x^TAx\right)^2 & =\frac{\partial}{\partial x_i}\left(\sum_{j=1}^n\sum_{k=1}^nx_jA_{jk}x_k\right)^2 \\ & =2\left(\sum_{j=1}^n\sum_{k=1}^nx_jA_{jk}x_k\right)\left(\sum_{j=1}^n\sum_{k=1}^n \frac{\partial}{\partial x_i}(x_jA_{jk}x_k)\right) \\ & =2\left(\sum_{j=1}^n\sum_{k=1}^nx_jA_{jk}x_k\right)\left(\sum_{j=1}^n\sum_{k=1}^n \delta_{ij}A_{jk}x_k+x_jA_{jk}\delta_{ik}\right) \\ & =2\left(\sum_{j=1}^n\sum_{k=1}^nx_jA_{jk}x_k\right)\left(\sum_{l=1}^nA_{il}x_l+x_lA_{li}\right) \\ & =2\left(x^TAx\right)\left(\sum_{l=1}^nA_{il}x_l+x_lA_{li}\right) \end{array}
+\nabla (x^TAx)^2=2(x^TAx)(A^T+A)x
+f : \mathbb{R}^n \to \mathbb{R}
+f(x) = x^TAx
+g(x) = f(x)^2
+\frac{\partial g(x)}{\partial x_i} = 2f(x)\frac{\partial f(x)}{\partial x_i}
+f
+\frac{\partial f(x)}{\partial x_i} = \lim_{h\to 0}\frac{f(x+h e_i) - f(x)}{h}
+e_i
+i^{\mathrm{th}}
+\lim_{h\to 0}\frac{f(x+h e_i) - f(x)}{h} = \lim_{h\to 0}\left(e_i^TAx + x^TAe_i + he_i^TAe_i\right) = e_i^TAx + x^TAe_i
+\nabla g(x) = \left[\begin{array}{c}2f(x)\left(e_1^TAx +x^TAe_1\right)\\ \vdots \\ 2f(x)\left(e_n^TAx +x^TAe_n\right)\end{array}\right] = 2f(x)(Ax + (x^TA)^T) = 2(x^TAx)(A + A^T)x
+g(y) = y^2
+y \in \mathbb R
+h(x) = \langle x, Ax \rangle
+g'(y) = 2y
+\nabla f(x) = f'(x)^T
+\nabla f(x)

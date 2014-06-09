@@ -1,0 +1,19 @@
+c_k
+n = 1 + c_1 \Pi(n) + c_2 \Pi(\frac{n}{2})+ c_3 \Pi(\frac{n}{3})+ c_4 \Pi(\frac{n}{4})+ c_5 \Pi(\frac{n}{5})+...
+\Pi(n) = \pi(n) + \frac{1}{2}\pi(n^\frac{1}{2})+ \frac{1}{3}\pi(n^\frac{1}{3})+ \frac{1}{4}\pi(n^\frac{1}{4})+...
+\pi(n)
+C_k
+-1, \frac{1}{2}, \frac{1}{12}, \frac{1}{24}, \frac{19}{720}, \frac{3}{160},...
+d_0'(j) = 1
+n = 1
+0
+d_1'(j) = 1
+n \neq 1
+0
+d_k'(n) = \sum\limits_{j | n} d_1'(j) d_{k-1}'(n/j )
+c_k = \sum\limits_{a=0} -1^a C_a d_a'(k)
+\sum\limits_{k=1} \frac{-1^{k+1}}{k} d_k'(n) = \frac{\Lambda(n)}{\log n}
+f
+\Pi(x)=\sum_{n\leq x}\frac{\Lambda(n)}{\log n}
+\sum_{k\leq x}c_{k}\Pi\left(\frac{x}{k}\right)=\sum_{k\leq x}c_{k}\sum_{n\leq\frac{x}{k}}\frac{\Lambda(n)}{\log n}=\sum_{nk\leq x}c_{k}\frac{\Lambda(n)}{\log n}.
+\sum_{n\leq M}\left(f*\frac{\Lambda}{\log}\right)(n)=M.

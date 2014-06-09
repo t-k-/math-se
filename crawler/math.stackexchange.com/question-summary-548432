@@ -1,0 +1,39 @@
+\{b_n\}_n \subseteq \mathbb{R}^+
+\{a_n\}_n
+k
+a_n = \begin{cases}a_{n-1}+\frac{b_{n-1}}{a_{n-1}}&\text{if n>1}\\k&\text{if n=0}\end{cases}
+\{a_n\}_n \text{ is convergent  }\Leftrightarrow \sum b_n < \infty
+(\Leftarrow)
+a_n
+(a_{n+1}-a_n)
+\sum b_n = \sum a_n(a_{n+1}-a_n)
+a_n-a_{n-1}=\frac{b_{n-1}}{a_{n-1}}
+a_0\gt0
+a_n
+a_n\to A
+ \begin{align} \sum_{n=1}^\infty\frac{b_{n-1}}{A} &\le\sum_{n=1}^\infty\frac{b_{n-1}}{a_{n-1}}\\ &=\sum_{n=1}^\infty(a_n-a_{n-1})\\ &=A-k \end{align} 
+ \sum_{n=0}^\infty b_n\le A(A-k) 
+ \sum_{n=0}^\infty b_n=B\lt\infty 
+ \begin{align} \lim_{n\to\infty}a_n &=k+\sum_{n=1}^\infty(a_n-a_{n-1})\\ &=k+\sum_{n=1}^\infty\frac{b_{n-1}}{a_{n-1}}\\ &\le k+\sum_{n=1}^\infty\frac{b_{n-1}}{k}\\ &=k+\frac{B}{k} \end{align} 
+\sum a_n
+a_n \to 0
+n \to \infty
+\{a_n\}
+\epsilon > 0
+N = N(\epsilon) > 0
+|a_{n+1} - a_n| < \epsilon
+n \geq N
+ \left|\sum_{n=N(1)}a_n(a_{n+1} - a_n)\right| \leq \epsilon \sum_{n=N(1)}^\infty |a_n| = \epsilon \sum_{n=N(1)}^\infty a_n. 
+b_n=a_n(a_{n+1}-a_n)
+a_n>a_{n-1}>0
+\{a_n\}_n
+\{a_n\}_n
+a_n\to a
+0<b_n<a(a_{n+1}-a_n)
+\sum b_n<a(a-a_0)<\infty
+\{a_n\}_n
+\sum_{n=m}^\infty(a_{n+1}-a_n)=+\infty
+m
+a_{-1}=0
+1)
+\begin{align}\sum_{n=0}^\infty b_n&=\sum_{n=0}^\infty a_n(a_{n+1}-a_n)\\ &= \sum_{n=0}^\infty\sum_{m=0}^n(a_m-a_{m-1})(a_{n+1}-a_n)\\ &\stackrel{(1)}= \sum_{m=0}^\infty\sum_{n=m}^\infty(a_m-a_{m-1})(a_{n+1}-a_n)\\ &= \sum_{m=0}^\infty\left(\underbrace{(a_m-a_{m-1})}_{>0}\cdot\underbrace{\sum_{n=m}^{\infty}(a_{n+1}-a_n)}_{+\infty}\right)\\ &=+\infty\\ \end{align}

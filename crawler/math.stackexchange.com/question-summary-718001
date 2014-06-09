@@ -1,0 +1,16 @@
+\lim_{x\to0} \sqrt[x]{1+\sin x}
+e
+(0,\frac{\pi}{2})
+0
+\sin x \leq x
+\sqrt[x]{1+\sin x}\leq \sqrt[x]{1+x}
+e
+x\to 0
+x^y
+x=e
+y=1
+ \begin{align} \lim_{x\to0}\left(1+\sin(x)\right)^{1/x} &=\lim_{x\to0}\left((1+\sin(x))^{1/\sin(x)}\right)^{\lim\limits_{x\to0}\sin(x)/x}\\ &=e^1 \end{align} 
+ \begin{align} \log\left(\lim_{x\to0}\left(1+\sin(x)\right)^{1/x}\right) &=\lim_{x\to0}\frac{\sin(x)}{x}\frac1{\sin(x)}\log(1+\sin(x))\\ &=\lim_{x\to0}\frac{\sin(x)}{x}\lim_{x\to0}\frac1{\sin(x)}\log(1+\sin(x))\\ &=\lim_{x\to0}\frac{\sin(x)}{x}\log\left(\lim_{x\to0}(1+\sin(x))^{1/\sin(x)}\right)\\[6pt] &=1\log(e)\\[12pt] &=1 \end{align} 
+\lim_{x\to0}\left(1+rx\right)^{1/x}=e^r
+\frac{\sin(x)}{x}=r
+\lim_{r\to1}\left(\lim_{x\to0}\left(1+rx\right)^{1/x}\right)=\lim_{r\to1}e^r=e

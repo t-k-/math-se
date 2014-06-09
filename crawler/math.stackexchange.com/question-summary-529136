@@ -1,0 +1,14 @@
+f:\mathbb{C}\to\mathbb{C}
+z_0
+f
+D_{3r}(z_0) = \{ z : \lvert z - z_0\rvert < 3r\}
+z \in D_r(z_0)
+f(z) = \frac{1}{2\pi i}\int_{\partial D_{2r}(z_0)} \frac{f(\zeta)}{\zeta - z}\,d\zeta.\tag{1}
+z \in D_r(z_0)
+z\in D_{2r}(z_0)
+f'(z) = \frac{1}{2\pi i} \int_{\partial D_{2r}(z_0)} \frac{f(\zeta)}{(\zeta-z)^2}\,d\zeta,
+(1)
+\begin{align} \frac{1}{\zeta - z} &= \frac{1}{\zeta-z_0}\cdot \frac{1}{1- \frac{z-z_0}{\zeta-z_0}}\\ &= \sum_{n=0}^\infty \frac{(z-z_0)^n}{(\zeta-z_0)^{n+1}}. \end{align}
+f
+f(z) = \sum_{n=0}^\infty \left(\frac{1}{2\pi i}\int_{\partial D_{2r}(z_0)} \frac{f(\zeta)}{(\zeta-z_0)^{n+1}}\,d\zeta \right)(z-z_0)^n\tag{2}
+(2)

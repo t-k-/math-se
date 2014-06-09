@@ -1,0 +1,29 @@
+f(x_n)=f(x_{n-1})(1+\alpha (1/m)+\beta\epsilon_n\sqrt (1/m)) 
+f(x_n)=f(x_0)\prod_1^n(1+\alpha (1/m)+\beta\epsilon_n\sqrt (1/m)) 
+\epsilon \sim N(0,1)
+\lor n
+1\leq n\leq m
+\alpha
+\beta
+f(x_0)=1
+f(x_n)
+ln(f(x_n))=lnf(x_0)+\sum_1^n ln(1+\alpha (1/m)+\beta\epsilon_n\sqrt (1/m))
+n
+E(f(x_1))=f(x_0)+f(x_0)\alpha (1/m)+0=f(x_0)(1+\alpha (1/m))    
+E(f(x_2))=f(x_0)(1+\alpha (1/m))+f(x_0)(1+\alpha (1/m))\alpha (1/m)+0=f(x_0)(1+\alpha (1/m))^2
+E(f(x_n))=f(x_0)(1+\alpha (1/m))^n
+z_n=z_{n-1}y_n
+z_n=f(x_n)
+y_n=1+\alpha/m+\beta\epsilon_n/\sqrt{m}
+(y_n)
+E(y_1)=\gamma
+\gamma=1+\alpha/m
+\mathrm{var}(y_1)=\beta^2/m
+x_0
+(\epsilon_n)
+E(z_n)=E(z_{n-1})E(y_n)
+E(z_n^2)=E(z_{n-1}^2)E(y_n^2)
+E(z_n^2)=E(z_{0}^2)E(y_1^2)^n
+E(y_1^2)=\mathrm{var}(y_1)+E(y_1)^2
+E(f(x_n))=\gamma^nE(f(x_0)). 
+ \mathrm{var}(f(x_n))=(\gamma^2+\beta^2/m)^nE(f(x_{0})^2)-\gamma^{2n}E(f(x_{0}))^2. 

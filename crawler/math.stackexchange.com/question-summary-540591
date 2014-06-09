@@ -1,0 +1,43 @@
+x(n)
+n = x^{x!}
+x! \log{x} = \log{n}
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt
+\frac{1}{n}n'(x) = \Gamma'(x+1)\log{x} + \Gamma(x) 
+n'(x) = x^{x!}(\Gamma'(x+1)\log{x} + \Gamma(x)) 
+ \log x! + \log\log x = \log\log n. 
+\log x!
+x
+x \to \infty
+n \to \infty
+ \log x! = \log\log n - \log\log x < \log\log n 
+x
+ \log x! = x\log x + O(x) > \frac{1}{2} x\log x 
+x
+ x \log x < 2 \log\log n 
+x
+W
+ \log x < W(2\log\log n) 
+W(x\log x) = \log x
+ x < e^{W(2\log\log n)} = \frac{2\log\log n}{W(2\log\log n)} = O\left(\frac{\log\log n}{\log\log\log n}\right). 
+ W(z) = \log z + O(\log\log z) 
+ \log x! = x\log x + O\left(\frac{\log\log n}{\log\log\log n}\right), 
+ \log x! = \log\log n - \log\log x 
+ x\log x + O\left(\frac{\log\log n}{\log\log\log n}\right) = \log\log n + O(\log\log\log\log n). 
+ x\log x = \log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right). 
+ \begin{align} x &= \frac{\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)}{W\left[\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)\right]} \\ &= \frac{\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)}{\log\left[\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)\right] + O(\log\log\log\log n)} \\ &= \frac{\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)}{\log\log\log n + \log\left[1+O\left(\frac{1}{\log\log\log n}\right)\right] + O(\log\log\log\log n)} \\ &= \frac{\log\log n + O\left(\frac{\log\log n}{\log\log\log n}\right)}{\log\log\log n + O(\log\log\log\log n)} \\ &= \frac{\frac{\log\log n}{\log\log\log n} + O\left(\frac{\log\log n}{(\log\log\log n)^2}\right)}{1 + O\left(\frac{\log\log\log\log n}{\log\log\log n}\right)} \\ &= \left[\frac{\log\log n}{\log\log\log n} + O\left(\frac{\log\log n}{(\log\log\log n)^2}\right)\right]\left[1+O\left(\frac{\log\log\log\log n}{\log\log\log n}\right)\right] \\ &= \frac{\log\log n}{\log\log\log n} + O\left(\frac{(\log\log n)(\log\log\log\log n)}{(\log\log\log n)^2}\right). \end{align} 
+n \to \infty
+ x = \frac{\log\log n}{\log\log\log n} + O\left(\frac{(\log\log n)(\log\log\log\log n)}{(\log\log\log n)^2}\right) 
+ \begin{align} &\log\log n = L_2(n), \\ &\log\log\log n = L_3(n), \\ &\log\log\log\log n = L_4(n), \end{align} 
+ x = \frac{L_2(n)}{L_3(n)} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^2}\right). 
+ \begin{align} \log x! &= x \log x - x + O(\log x) \\ &= x \log x - \frac{L_2(n)}{L_3(n)} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^2}\right), \end{align} 
+\log x! = \log\log n - \log\log x
+ x\log x = L_2(n) - \frac{L_2(n)}{L_3(n)} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^2}\right), 
+ x = \frac{L_2(n) - \frac{L_2(n)}{L_3(n)} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^2}\right)}{W\left[L_2(n) - \frac{L_2(n)}{L_3(n)} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^2}\right)\right]}. 
+n \to \infty
+ x = \frac{L_2(n)}{L_3(n)} + \frac{L_2(n)(1-L_4(n))}{L_3(n)^2} + O\left(\frac{L_2(n)L_4(n)}{L_3(n)^3}\right). 
+\log(x)\sim\log(\log(\log(n)))
+\frac{\log(\log(\log(\log(n))))}{\log(\log(\log(n)))}\sim\frac1{10}
+\log(\log(\log(n)))\sim36
+n
+ \begin{align} n&=x^{x!}\\[6pt] \log(n) &=x!\log(x)\\ \log(\log(n)) &=\log(\log(x))+x\log(x)-x+\frac12\log(2\pi x)\\ &=x\log(x)\left(1-\frac1{\log(x)}+\frac1{2x}+\frac{\log(\log(x))}{x\log(x)}+\frac12\frac{\log(2\pi)}{x\log(x)}\right)\\ \log(\log(\log(n))) &=\log(x)+\log(\log(x))-\frac1{\log(x)}+O\left(\frac1{\log(x)^2}\right)\\ &=\log(x)\left(1+\frac{\log(\log(x))}{\log(x)}-\frac1{\log(x)^2}+O\left(\frac1{\log(x)^3}\right)\right)\\ \frac{\log(\log(n))}{\log(\log(\log(n)))} &=x\left(1-\frac{\log(\log(x))}{\log(x)}-\frac1{\log(x)}+O\left(\frac{\log(\log(x))}{\log(x)}\right)^2\right) \end{align} 
+ x=\frac{\log(\log(n))}{\log(\log(\log(n)))}\left(1+O\left(\frac{\log(\log(\log(\log(n))))}{\log(\log(\log(n)))}\right)\right) 

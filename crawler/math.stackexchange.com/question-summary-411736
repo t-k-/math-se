@@ -1,0 +1,54 @@
+\textbf{A.2}
+\text{(A.5)-(A.7)}
+t=0,\pm1,\pm2,\ldots,
+x_t
+\mu_x
+\gamma_x(h)
+a_j
+j=0,\pm1,\pm2,\ldots
+y_t
+y_t
+\text{(A.9)}
+\text{(1.29)}
+y_t=\sum_{j=-\infty}^\infty a_jx_{t-j}\tag{A.9}
+\color{#FF7F27}{\boxed{\color{black}{\displaystyle\,\,\sum_{j=-\infty}^\infty |a_j|<\infty.}}}\tag{A.10}
+n=1,2,\ldots,
+y_t^n
+1
+m
+n\to\infty
+n>m>0
+m
+n\to\infty
+\gamma_x(0)
+\color{#FFF200}{\underline{\color{black}{\text{is a constant}}}}
+\{a_j\}
+\color{#FF7F27}{\underline{\color{black}{\text{is absolutely summable}}}}
+y_t^n=\sum_{j=-n}^na_jx_{t-j},\tag{A.11}
+E|y_t^n-y_t^m|^2\to0
+\begin{align}E|y_t^n-y_t^m|^2&= E\,\left|\sum_{m<|j|\le n}a_jx_{t-j}\right|^2\\ &=\sum_{m<|j|\le n}\sum_{m\le|k|\le n}a_ja_kE(x_{t-j}x_{t-k})\\ &\le\sum_{m<|j|\le n}\sum_{m\le|k|\le n}|a_j||a_k||E(x_{t-j}x_{t-k})|\\ &\le\sum_{m<|j|\le n}\sum_{m\le|k|\le n}|a_j||a_k|(E|x_{t-j}|^2)^{1/2}(E|x_{t-k}|^2)^{1/2}\\ &\color{#ED1C24}{\boxed{\color{black}{=\color{#FFF200}{\boxed{\color{black}{\gamma_x(0)}}}\,\color{#FF7F27}{\boxed{\color{black}{\displaystyle\left(\sum_{m\le|j|\le n}|a_j|\right)^2}}}\to 0}}}\color{#ED1C24}{\boldsymbol{\longleftarrow} \text{Why does this part converge to zero?}} \end{align}
+\{y_t^n\}
+\text{(A.11)}
+y_t^n\to^{ms}y_t
+n\to\infty
+y_t
+\text{(A.9)}
+^1
+\text{_________}
+^1
+S
+y_t^n
+E|S-y_t|^2=E\lim \inf_{n\to\infty}|S-y_t^n|^2\le\lim\inf_{n\to\infty}E|S-y_t^n|^2=0
+y_t
+y_t^n
+\gamma_x(0)
+\{a_j\}
+\left(\sum_{m\leq|j|\leq n}|a_j|\right) \geq 1
+< 1
+\left(\sum_{m\leq|j|\leq n}|a_j|\right)
+1
+\gamma_x(0)
+0
+a_j
+\lim_{j\rightarrow\infty}|a_j|=0
+\lim_{m,n\rightarrow\infty}\left ( \sum_{m\le|j|\le n}|a_j|\right )^2=0

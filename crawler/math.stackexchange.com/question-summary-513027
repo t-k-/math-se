@@ -1,0 +1,49 @@
+L
+\{a, b\}
+S \rightarrow aSb \; | \;bR \; |\;Ra
+R \rightarrow bR \;|\;aR\;|\;\epsilon
+L
+\\
+a
+b
+a
+b
+b
+a
+A = \{a,b\}
+L
+S
++
+1
+R = (a+b)R + 1 = AR + 1
+R = A^*
+S = aSb + bA^* + A^*a
+K = bA^* + A^*a
+S = aSb + K
+   L = \{ a^nub^n \mid n \geqslant 0 \text{ and } u \in K \} 
+\newcommand{\a}{\mathtt{a}}\newcommand{\b}{\mathtt{b}}L
+v \in \{ \a , \b \}^*
+w = \a^\ell \b v \b^\ell
+S \rightarrow \a S \b
+\ell
+\a^\ell S \b^\ell
+S \rightarrow \b R
+\a^\ell \b R \b^\ell
+R
+\{ \a , \b \}
+w = \a^\ell v \a \b^\ell
+S \rightarrow R \a
+L
+S \rightarrow \a S \b
+\ell
+\ell \geq 0
+\a^\ell S \b^\ell
+S \rightarrow \b R
+\mathtt{S} \rightarrow R \a
+\a^\ell \b R \b^\ell
+\a^\ell R \a \b^\ell
+R
+v
+\a^\ell \b v \b^\ell
+\a^\ell v \a \b^\ell
+L

@@ -1,0 +1,11 @@
+1 + \dfrac 1 2 + \dfrac{n-1}{2n} + \cdots
+\varepsilon>0
+n_0
+k^{k+1}k!/n_0<\varepsilon/4
+\sum_{k=n_0+1}^\infty\frac1{k!\,2^k}<\varepsilon/2
+1-(1-k/n)^k\leq1
+k\leq n
+ \left(1+\frac1{2n}\right)^n=\sum_{k=0}^n {n \choose k}\,\frac1{(2n)}=\sum_{k=0}^n \frac{n!}{k!(n-k)!}\,\frac1{n^k}\,\frac1{2^k}=\sum_{k=0}^n \frac{n!}{(n-k)!}\,\frac1{n^k}\,\frac1{k!\,2^k}=\sum_{k=0}^n \left(1-\frac1n\right)\cdots\left(1-\frac{k}n\right)\,\frac1{k!\,2^k}. 
+ 0\leq1-\left(1-\frac1n\right)\cdots\left(1-\frac{k}n\right)\leq1-\left(1-\frac kn\right)^k =-\sum_{j=1}^k{k\choose j}(-1)^j\frac{k^j}{n^j}\leq\frac{k^{k+1}k!}n. 
+ \left|\left(1+\frac1{2n}\right)^n-\sum_{k=0}^n\frac{1}{k!\,2^k}\right|\leq\sum_{k=0}^{n_0} \left(1-\left(1-\frac kn\right)^k\right)\,\frac1{k!\,2^k}+\sum_{k=n_0+1}^n\frac1{k!\,2^k} \\ \leq\frac\varepsilon4\sum_{k=0}^{n_0}\frac1{2^k}+\frac\varepsilon2\leq\frac\varepsilon2+\frac\varepsilon2=\varepsilon. 
+ \lim_{n\to\infty}\left(1+\frac1{2n}\right)^n=\sum_{k=0}^\infty\frac1{k!\,2^k}=e^{1/2} 

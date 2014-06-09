@@ -1,0 +1,40 @@
+\qquad \small K(1)=1, K(2)=1+a, K(3)=1+a+a^2, \ldots 
+A
+B
+n
+ A_n = \sum_{k=0}^n (k+1)a^k 
+n>0
+A_0=1=\frac{a-1}{a-1}
+ A_n = a A_{n-1} + 1 + a + \cdots + a^n = a A_{n-1} + \frac{a^{n+1}-1}{a-1} 
+B
+C_n
+ B_n=A_n + a A_{n-1} + a^2 A_{n-2} + \cdots + a^n A_0 
+K(r) = (a^r-1)/(a-1)
+{d \over da} K(r) = 1 + 2a + \cdots + (r-1)a^{r-2} = A(r-1)
+A(r) = {d \over da} K(r+1)
+K(r)
+B(r), C(r)
+ {d^2 \over da^2} K(r) = 2 B(r-2) 
+ {d^3 \over da^3} K(r) = 6 C(r-3) 
+ B(r) = {1 \over 2} {d^2 \over da^2} K(r+2), C(r) = {1 \over 6} {d^3 \over da^3} K(r+3). 
+n
+a
+A_1, A_2, A_3
+A, B, C
+ A_n(r) = {1 \over n!} {d^n \over da^n} K(r+n) 
+n
+\displaystyle A_m(n) = \sum_{k=1}^{n} \binom{k+m}{m+1} a^{k-1}  = \frac1{(m+1)!} \frac{d^{m+1} K_{n+m}(a)}{da^{m+1}}
+A(n) = \sum_{k=1}^{n} ka^{k-1} = \frac{d K_n(a)}{da}
+B(n) = \sum_{k=1}^{n} \frac{k(k+1)}{2}a^{k-1} = \frac1{2!} \frac{d^2 K_{n+1}(a)}{da^2}
+C(n) = \sum_{k=1}^{n} \frac{k(k+1)(k+2)}{6}a^{k-1} = \frac1{3!} \frac{d^3 K_{n+2}(a)}{da^3}
+A_0(n) = A(n)
+A_1(n) = B(n)
+A_2(n) = C(n)
+A_n(r)=\frac1{n!}\frac{\mathrm d^n}{\mathrm da^n} \frac{a^{r+n}-1}{a-1}
+A_n(r)=\frac1{n!}\sum_{k=0}^{r+n-1} \frac{\mathrm d^na^k}{\mathrm d a^n}
+A_n(r)=\frac1{n!}\sum_{k=0}^{r+n-1} \frac{k!a^{k-n}}{(k-n)!}=\frac1{n!}\sum_{k=-n}^{r-1} \frac{(k+n)!a^k}{k!}=\frac1{n!}\sum_{k=0}^{r-1} \frac{(k+n)!a^k}{k!}
+A_n(r)=\frac{\mathrm{I}_{1-a}(n+1,r)}{(1-a)^{n+1}}=\frac{1-\mathrm{I}_a(r,n+1)}{(1-a)^{n+1}}
+\begin{align*} A_n(r)&=\frac{\mathrm{I}_{1-a}(n+1,r)}{(1-a)^{n+1}}\\ &=\frac{a^r}{(n+1)\mathrm{B}(n+1,r)}{}_2 F_1\left({{n+r+1, 1}\atop{n+2}}\mid1-a\right)\\ &=\binom{n+r}{n+1} {}_2 F_1\left({{1-r,n+1}\atop{n+2}}\mid1-a\right) \end{align*}
+A_n(r)=r\binom{n+r}{r}\sum_{k=0}^{r-1}\binom{r-1}{k}\frac{(a-1)^k}{n+k+1}
+n
+r

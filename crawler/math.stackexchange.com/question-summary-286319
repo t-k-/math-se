@@ -1,0 +1,27 @@
+\mathbf{x}' = f(\mathbf{x,u},t)
+\mathbf{x} \in \mathbb{R}^2, \mathbf{u} \in \mathbb{R}^3
+f
+\mathbf{x}
+\mathbf{u}
+\mathbf{u}^*
+t_f
+\mathbf{x}(0)
+\mathbf{x}(t_f)
+\mathbf{u} \geq 0
+\begin{bmatrix}1 & 1& 1 \end{bmatrix}\mathbf{u}=c ,c> 0
+H(\mathbf{x,u,p},t)
+H= x_1'p_1+x_2'p_2 + 1
+\mathbf{p}' = \partial{H}/\partial{\mathbf{x}}
+\partial{H} / \partial{\mathbf{u}} =0
+P = \mathbb{R}^3_{+} \cap H
+H
+[1,1,1]^T u = c
+(x^{\ast}(t),u^{\ast}(t), 0 \leqslant t \leqslant t^{\ast}_{f})
+p^{\ast}(t)
+t
+u^{\ast}(t)
+P = \mathbb{R}^3
+\frac{\partial H}{\partial u} = 0
+    \left\{ \begin{array}{l}              \dot x = f(x,u(t)), \;\;\; 0<t<t_f, \;\;\; u(t) \in P \\             x(0) = x_0, \; x(t_f)=x_1, \\             \int\limits_{0}^{t_f} dt \to \min, \\    \end{array} \right. 
+    H(x,p,u) = p \cdot f(x,u). 
+    \left\{    \begin{array}{l}     \dot p^{\ast} = - \frac{\partial H}{\partial x}(x^{\ast}(t),p^{\ast},u^{\ast}(t)), \;\;\; 0 < t < t_f^{\ast} \\    H(x^{\ast}(t),p^{\ast}(t),u^{\ast}(t)) = \sup_{u \in P} H(x^{\ast}(t),p^{\ast}(t),u) \; \text{in points $t$ of continuity of $u^{\ast}(t)$}.    \end{array}  \right. 

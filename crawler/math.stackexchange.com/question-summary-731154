@@ -1,0 +1,21 @@
+\theta=0
+\theta=0
+\mathbb{P}(A_n\text{ occurs i.o.}) = \lim_{\ell\to\infty}\lim_{k\to\infty}\mathbb{P}\left(\bigcup_{n=\ell}^{k}A_n\right)
+ \frac{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)             -\sum_{n=1}^{\ell-1}\mathbb{P}(A_n)\right)^2}            {\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)             -\sum_{1\le m,n < \ell}\mathbb{P}\mathbb(A_n\cap A_m)}\geq \frac{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)             -\sum_{n=1}^{\ell-1}\mathbb{P}(A_n)\right)^2}            {\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)} 
+l \in \mathbb{N}_1
+\lim_{k \rightarrow \infty}\sum_{n = 1}^k \mathbb{P}(A_n) = \infty
+k
+ \left(\sum_{n=1}^{k}\mathbb{P}(A_n)             -\sum_{n=1}^{\ell-1}\mathbb{P}(A_n)\right)^2 \approx \left(\sum_{n=1}^{k}\mathbb{P}(A_n)\right)^2 
+k
+ \frac{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)             -\sum_{n=1}^{\ell-1}\mathbb{P}(A_n)\right)^2}            {\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)} \approx \frac{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)\right)^2}            {\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)} = \frac{1}{\frac{\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)}{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)\right)^2}} 
+ \liminf_{k\to\infty}\frac{\sum_{1\le m,n \le k}\mathbb{P}(A_m\cap   A_n)}{\left(\sum_{n=1}^k\mathbb{P}(A_n)\right)^2} = c < \infty 
+k
+k' \geq k
+ \frac{\sum_{1\le m,n \le k'}\mathbb{P}(A_m\cap   A_n)}{\left(\sum_{n=1}^{k'}\mathbb{P}(A_n)\right)^2} \approx c  
+k
+ \mathbb{P}\left(\bigcup_{n=\ell}^{k}A_n\right) \geq \frac{1}{\frac{\sum_{1\le m,n \le k}\mathbb{P}\mathbb(A_n\cap A_m)}{\left(\sum_{n=1}^{k}\mathbb{P}(A_n)\right)^2}} \approx \frac{1}{c} 
+\mathbb{P}\left(\bigcup_{n=\ell}^{k}A_n\right)
+k
+ \lim_{k \rightarrow \infty}\mathbb{P}\left(\bigcup_{n=\ell}^{k}A_n\right) \geq \frac{1}{c} 
+l
+ \lim_{l \rightarrow \infty}\lim_{k \rightarrow \infty}\mathbb{P}\left(\bigcup_{n=\ell}^{k}A_n\right) \geq \frac{1}{c} > 0 

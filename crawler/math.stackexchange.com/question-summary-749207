@@ -1,0 +1,14 @@
+L(M) = \{w \in L(M_1) \mid w\text{ contains some string in }L(M_2)\text{ as substring} \}.
+L = \{ w \in L_1 : w\text{ has a substring which is in }L_2 \}.
+\mathtt{a}^n\mathtt{b}^n\mathtt{c}^k\mathtt{d}
+n,k \geq 1
+\mathtt{a}\mathtt{b}^\ell\mathtt{c}^\ell\mathtt{d}
+\ell \geq 1
+L_1
+L_2
+\Sigma
+\mathtt{\#}
+\Sigma
+\Sigma \cup \{ \mathtt{\#} \}
+L_1^\prime = \{ \mathtt{\#}u\mathtt{\#} : u \in L_1 \}; \quad L_2^\prime = \{ \mathtt{\#}v\mathtt{\#} : v \in L_2 \}.
+L = \{ w \in L_1^\prime : w\text{ has a substring which is in }L^\prime_2 \}.

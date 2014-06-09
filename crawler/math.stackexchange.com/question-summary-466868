@@ -1,0 +1,4 @@
+\displaystyle F_{n} (\theta) = \int_{1}^{e^{-i \theta}} \frac{(- \log z)^{n-1}}{1-z} \ dz \ (n =2,3, \ldots ) \ ,
+\displaystyle  \overline{F_{n} (\theta}) = (-1)^{n-1}\int_{1}^{e^{i \theta}} \frac{(\log z)^{n-1}}{1-z} \ dz   \ ?
+\begin{align} \overline{F_n(\theta)} &= \overline{\int_0^\theta \frac{(-\log e^{-i\varphi})^{n-1}}{1 - e^{-i\varphi}} (-ie^{-i\varphi})\, d\varphi}\\ &= \int_0^\theta \frac{(-\overline{\log e^{-i\varphi}})^{n-1}}{1-e^{i\varphi}} ie^{i\varphi}\, d\varphi\\ &= \int_0^\theta \frac{(-\log e^{i\varphi})^{n-1}}{1-e^{i\varphi}} ie^{i\varphi}\, d\varphi\\ &= \int_1^{e^{i\theta}} \frac{(-\log z)^{n-1}}{1-z}\, dz\\ &= F_n(-\theta), \end{align}
+\int_1^{e^{i\theta}} \frac{(\log z)^{n-1}}{1-z}\, dz = (-1)^{n-1}\overline{F_n(\theta)}. 

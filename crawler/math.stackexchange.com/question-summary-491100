@@ -1,0 +1,27 @@
+\mathcal{L}(t,y,y') = T(y') - V(y) = \tfrac{1}{2}my'^2 - V(y)
+\vec{v} = (y')
+<\vec{v},\vec{v}> = g(\vec{v},\vec{v})
+\mathcal{L}(t,y,y')= T(y') - V(y) = \tfrac{1}{2}my'^2 - V(y) = \tfrac{1}{2}m<\vec{v},\vec{v}> - V(y) = \tfrac{1}{2}mg(\vec{v},\vec{v}) - V(y)
+\tfrac{d}{dt}\tfrac{\partial \mathcal{L}}{\partial y'} - \tfrac{\partial \mathcal{L}}{\partial y} = 0
+\tfrac{d}{dt}\tfrac{\partial (\tfrac{1}{2}mg(\vec{v},\vec{v}) - V(y))}{\partial y'} - \tfrac{\partial (\tfrac{1}{2}mg(\vec{v},\vec{v}) - V(y))}{\partial y} = 0
+g
+y'
+y'^2
+2y'
+g(\vec{v},\vec{v}) = [y'][1][y']
+q
+g(q)
+m
+g
+q
+v
+\mathbb{R}^n
+g
+  \mathcal{L}(t,q,v) = \frac{1}{2} g(q)(v,v) - V(q),  
+  g : \mathbb{R}^n \times \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}, \quad (q,v_1,v_2) \mapsto g(q)(v_1,v_2), 
+  \frac{\partial g}{\partial q},  \frac{\partial g}{\partial v_1},\frac{\partial g}{\partial v_2} : \mathbb{R}^n \times \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}^n 
+g
+  g(q)(v_1,v_2) = g_{ij}(q)v_1^i v_2^j. 
+  \frac{\partial g}{\partial q^k}(q,v_1,v_2) = \frac{\partial g_{ij}}{\partial q^k}(q) v_1^i v_2^j,\\   \frac{\partial g}{\partial v_1^k}(q,v_1,v_2) = g_{ij}(q) \delta^i_k v_2^j = g_{kj}(q)v_2^j,\\  \frac{\partial g}{\partial v_2^k}(q,v_1,v_2) = g_{ij}(q) v^i_k \delta_k^j = g_{ik}(q)v_1^j, 
+  \frac{\partial \mathcal{L}}{\partial q^k}(t,q,v) = \frac{1}{2}\frac{\partial g_{ij}}{\partial q^k}(q) v^i v^j - \frac{\partial V}{\partial q^k}(q),\\  \frac{\partial \mathcal{L}}{\partial v^k}(t,q,v) =  \frac{g_{ik}(q)+g_{ki}(q)}{2}v^i; 
+  \frac{\partial \mathcal{L}}{\partial v^k}(t,q,v) = g_{ik}(q) v^i, 

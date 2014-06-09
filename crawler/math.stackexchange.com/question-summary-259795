@@ -1,0 +1,13 @@
+f \colon\mathbb R \to\mathbb R
+f(x)= \begin{cases}   x^2\sin(1/x); & \text{if }x\ne 0, \\   0 & \text{if }x=0. \end{cases}
+\varepsilon
+\delta
+f'(0)=0
+\vert \sin(y) \vert \leq 1
+f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}h
+f'(0) = \lim_{h \to 0} \dfrac{f(h) - f(0)}{h} = \lim_{h \to 0} \dfrac{2h^2 \sin(1/h)-0}h = \lim_{h \to 0} 2h \sin(1/h)
+\left \vert 2h \sin(1/h) \right \vert \leq \left \vert 2h \right \vert
+\lim_{h \to 0} \left \vert 2h \sin(1/h) \right \vert \leq \lim_{h \to 0} \left \vert 2h \right \vert = 0
+f'(0) = 0
+\delta<\dfrac{\varepsilon}{2}.
+\left|{\dfrac{f(h)-f(0)}{h}}\right|=\left|{\dfrac{2h^2 \sin{\dfrac{1}{h}}}{h}}\right|=2 \left|{h \sin{\dfrac{1}{h}}}\right|<2\left|h\right|<\varepsilon.

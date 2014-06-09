@@ -1,0 +1,7 @@
+\frac{\partial^2 \phi(y)}{\partial y^2}=\frac{q}{\epsilon_s}\Bigl[n(y)\dot{}exp\Bigl(\frac{\phi(y)-\phi^{old}(y)}{V_T}\Bigr)-p(y)\dot{}exp\Bigl(\frac{\phi^{old}(y)-\phi(y)}{V_T}\Bigr)+D\Bigr]
+F^{k+1}_i=a_i\phi_{i-1}^k+c_i\phi_{i+1}^k-\frac{q}{\epsilon_s}D
+G_i(\phi)=\frac{q}{\epsilon_s}\Bigl[n_i\dot{}exp\Bigl(\frac{\phi_i-\phi_i^{old}(y)}{V_T}\Bigr)-p_i\dot{}exp\Bigl(\frac{\phi_i^{old}-\phi_i}{V_T}\Bigr)\Bigr]
+b_i\phi^{k+1}_i+G(\phi_i^{k+1})-F_i^{k+1}=0
+\delta^l_i=\frac{a_i\phi_i^{(k+1)l}+G_i(\phi_i^{(k+1)l})-F_i^{k+1}}{b_i+\partial G_i/\partial \phi_i}
+\phi_i^{(k+1)(l+1)}=\phi_i^{(k+1)l}-\delta^l_i
+\delta

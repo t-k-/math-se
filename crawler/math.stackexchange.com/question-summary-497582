@@ -1,0 +1,12 @@
+V_1,V_2,\cdots,V_n,W
+f_i : V_i \to W
+f:V_1\bigoplus \cdots \bigoplus V_n \to W
+f(v_1,v_2, \cdots , v_n) = f_1 (v_1) + f_2(v_2) + \cdots +f_n(v_n)
+\text{Hom}(V_1,W) \times \cdots \times \text{Hom}(V_n,W) \xrightarrow{\sim} \text{Hom}(V_1\bigoplus \cdots \bigoplus V_n,W) 
+(f_1, f_2, \cdots ,f_n) \to f
+f
+j_i:V_i\to\bigoplus\limits_{i=1}^n V_i
+I
+J
+ I:\prod\limits_{i=1}^n\hom(V_i,W)\to\hom\left(\bigoplus\limits_{i=1}^n V_i,W\right),\prod\limits_{i=1}^n f_i\mapsto\left(\bigoplus\limits_{i=1}^n v_i\mapsto\sum\limits_{i=1}^n f_i(v_i)\right) 
+ J:\hom\left(\bigoplus\limits_{i=1}^n V_i,W\right)\to\prod\limits_{i=1}^n\hom(V_i,W): f\mapsto\prod\limits_{i=1}^n (f\circ j_i) 

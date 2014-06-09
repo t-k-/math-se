@@ -1,0 +1,5 @@
+n \in \mathbb{N}
+\sum_{r=0}^n \binom{n}{r}(-1)^{r} = 0
+\sum_{r=0}^{n+1} \binom{n+1}{r}(-1)^{r} = \sum_{r=0}^{n+1}(\binom{n}{r}+\binom{n}{r-1})(-1)^{r} = \sum_{r=0}^{n+1}\binom{n}{r}(-1)^{r}+\sum_{r=0}^{n+1}\binom{n}{r-1}(-1)^{r}
+1...n-1
+ \begin{split} \sum_{r=0}^{n+1} \binom{n+1}{r} (-1)^r  &= \binom{n+1}{0} + \binom{n+1}{n+1} (-1)^{n+1}                    + \sum_{r=1}^n \binom{n+1}{r} (-1)^r \\  &= 1 + (-1)^{n+1}        + \sum_{r=0}^{n-1} \binom{n+1}{r+1} (-1)^{r+1} \\  &= 1 + (-1)^{n+1}        - \sum_{r=0}^{n-1} \binom{n+1}{r+1} (-1)^r \\  &= 1 + (-1)^{n+1}        - \sum_{r=0}^{n-1} \binom{n}{r+1} (-1)^r       - \sum_{r=0}^{n-1} \binom{n}{r} (-1)^r \\  &= 1 + (-1)^{n+1}        + \sum_{r=0}^{n-1} \binom{n}{r+1} (-1)^{r+1}       - \sum_{r=0}^{n-1} \binom{n}{r} (-1)^r \\  &= 1 + (-1)^{n+1}        + \sum_{r=1}^n \binom{n}{r} (-1)^r       - \sum_{r=0}^{n-1} \binom{n}{r} (-1)^r \\  & \text{cancel terms in the sum indexed $1...n-1$} \\  &= 1 + (-1)^{n+1} + \binom{n}{n}(-1)^n- \binom{n}{0} \\  &= (-1)^{n+1} + (-1)^n \\  &= 0 \end{split} 

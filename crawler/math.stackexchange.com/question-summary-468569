@@ -1,0 +1,13 @@
+Y=\max(X_1,\dots,X_n)
+F_Y(a)=P(X_1 \leq a, \dots, X_n \leq a)
+F_Y(a)=P(X_1 \leq a) \cdot P(X_2 \leq a) \dots P(X_n \leq a)= (P(X_1 \leq a))^n= (F_{X_1}(a))^n
+f_Y(x)= \frac{\partial F_Y(x)}{\partial x}= n\cdot f_{X_1}(x) \cdot F_{X_1}^{n-1}(x)
+E[Y]
+E[Y]=\int yf_Y(y) \mathrm{d}y
+f(y)
+X_i\sim U(0,1)
+f_{X_1}(x)=1
+0\leq x\leq 1
+F_{X_1}(x)=x
+ E[Y]=n\int y f_{X_1}(y)F_{X_1}^{n-1}(y)\mathrm{d}y. 
+ E[Y] = n \int_0^1 y^n \mathrm{d}y = \frac{n}{n+1}. 

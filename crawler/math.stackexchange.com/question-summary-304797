@@ -1,0 +1,54 @@
+ V\colon H^{1,2}(\mathbb{R},\mathbb{R})\to\mathbb{R} 
+ V(u)=\int\limits_{-\infty}^{\infty}\left(\frac{1}{2}(\partial_x u)^2-\frac{\alpha}{2}u^2+\frac{1}{4}u^4\right)(x)\, dx. 
+\lvert Vu\rvert\leq\lVert u\rVert_{H^{1,2}}\cdot C
+C\geq 0
+\lvert Vu\rvert=\left\lvert\int\limits_{-\infty}^{\infty}\left(\frac{1}{2}(\partial_x u)^2-\frac{\alpha}{2}u^2+\frac{1}{4}u^4\right)(x)\, dx\right\rvert
+\leq\int\limits_{-\infty}^{\infty}\left\lvert\left(\frac{1}{2}(\partial_x u)^2-\frac{\alpha}{2}u^2+\frac{1}{4}u^4\right)(x)\right\rvert\, dx
+\leq\frac{1}{2}\int\limits_{-\infty}^{\infty}\lvert u'(x)^2\rvert\, dx+\frac{1}{4}\int\limits_{-\infty}^{\infty}\lvert u^4(x)\rvert\, dx+\frac{\lvert\alpha\rvert}{2}\int\limits_{-\infty}^{\infty}\lvert u^2(x)\rvert\, dx
+\leq\int\limits_{-\infty}^{\infty}\lvert u'(x)^2\rvert\, dx+\int\limits_{-\infty}^{\infty}\lvert u^4(x)\rvert\, dx+\frac{\lvert\alpha\rvert}{2}\int\limits_{-\infty}^{\infty}\lvert u^2(x)\rvert\, dx
+=\langle u',u'\rangle_{L^2}+\int\limits_{-\infty}^{\infty}\lvert u^4(x)\rvert\, dx+\frac{\lvert\alpha\rvert}{2}\langle u,u\rangle_{L^2}
+u,u_0
+H^{1,2}
+ |Vu-Vu_0|\leq \frac{1}{2}\int|(\partial_xu)^2-(\partial_xu_o)^2|dx+\frac{|\alpha|}{2}\int|u^2-u_0^2|dx+\frac{1}{4}\int|u^4-u_0^4|dx. 
+0
+u
+u_0
+H^{1,2}
+ \int|\partial_x(u-u_0)||\partial_x(u+u_0)|dx\leq \|\partial_x(u-u_0)\|_2\|\partial_x(u+u_0)\|_2\leq\|u'-u_0'\|_2\|u'+u_0'\|_2 
+ \|u-u_0\|\|u+u_0\| 
+ u^2-u_0^2=(u-u_0)(u+u_0) 
+u^4-u_0^4=(u-u_0)(u^3+u^2u_0+uu_0^2+u^3)
+\|u\|_{1,2}=\|u\|_2+\|\nabla u\|_2
+u_n\rightarrow u
+H^{1,2}
+Vu_n\rightarrow Vu
+\mathbb{R}
+f_{n_k}\rightarrow f
+|f_{n_k}|\leq h
+u_n\rightarrow u
+H^{1,2}
+u_n\rightarrow u
+L^2
+h\in L^1
+u_n\rightarrow u
+|u_n|^2\leq h
+h\in L^\infty
+H^{1,2}
+L^\infty
+u_n^4\rightarrow u^4
+g\in L^1
+|u_n|^4\leq g
+\{x: h\leq 1\}
+h^2\leq h
+h\in L^\infty
+h
+\tilde{h}
+\{x: h\geq 1\}
+u^4\leq \tilde{h}
+h
+\tilde{h}
+g
+u^4\leq g
+g\in L^1
+Vu_n\rightarrow Vu
+\mathbb{R}

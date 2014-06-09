@@ -1,0 +1,24 @@
+x=\tan u
+\int \frac{\sqrt{x^2+1}}{x}dx
+\sqrt{x^2+1}=u
+\int \frac{x\sqrt{x^2+1}}{x^2}\,dx.
+x^2+1=u^2
+2x\,dx=2u\,du
+\int \frac{u^2}{u^2-1} \, du.
+\cosh^2(t)-\sinh^2(t)=1
+x=\sinh(t)
+\int \frac{\sqrt{x^2 + 1}}{x} dx
+u = \sqrt{x^2 + 1}\implies x = \pm \sqrt{u^2-1}
+du = -(x^2 + 1)^{-\frac{1}{2}}2x dx \implies dx = -(\sqrt{x^2+1})\frac{1}{2x}du
+dx = -\left(\sqrt{u^2 - 1+1}\right)\frac{1}{\pm2\sqrt{u^2-1}}du = \mp\frac{u}{2\sqrt{u^2-1}}du
+\int \frac{u}{\pm \sqrt{u^2-1}}\left(\mp\frac{u}{2\sqrt{u^2-1}}\right)du
+\int \frac{u^2}{u^2-1}du
+\int 1 + \frac{1}{(u-1)(u+1)}du
+\frac{1}{(u-1)(u+1)} = \frac{1}{2(u-1)} - \frac{1}{2(u+1)}
+\int 1 + \frac{1}{2(u-1)} - \frac{1}{2(u+1)}du
+u + \frac{1}{2}\ln(u-1) - \frac{1}{2}\ln(u+1) + C
+u + \frac{1}{2}\ln\left(\frac{u-1}{u+1}\right) + C
+\sqrt{x^2 + 1} + \frac{1}{2}\ln\left(\frac{\sqrt{x^2 + 1}-1}{\sqrt{x^2 + 1}+1}\right) + C
+\sqrt{x^2 + 1} + \frac{1}{2}\ln\left(\frac{x^2 + 1 - 1}{\left(\sqrt{x^2 + 1}+1\right)^2}\right) + C
+\sqrt{x^2 + 1} + \frac{1}{2}\ln(x^2) - \frac{1}{2}\ln\left({\left(\sqrt{x^2 + 1}+1\right)^2}\right) + C
+\sqrt{x^2 + 1} + \ln(x) - \ln\left({\sqrt{x^2 + 1}+1}\right) + C

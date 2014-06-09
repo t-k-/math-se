@@ -1,0 +1,19 @@
+1,2,...,n
+a,b
+c=ab+a+b
+c
+n-1
+n=10
+39916799
+f: [1,n]n\in \mathbb N \rightarrow \mathbb N
+f(p)=\cases{p_0p_1+p_0+p_1, &if\ |p|=2\cr f(p_0p_1+p_0+p_1+\sum\limits_{i=2}^n i), & else}
+\mathbb R
+\mathbb N
+\mathbb N
+(n+1)!-1
+f(x,y)=xy+x+y
+q=f(f(\cdots f(f(a_1,a_2),a_3), \cdots),a_n)
+\ldots
+\text{foldl}(f,0,(1,2,\ldots,10))
+f(a,b) = a\cdot b+a+b
+\begin{array}{rcl} \text{foldl}(f,k,()) &=& k \\ \text{foldl}(f,k,(x,y,\ldots,z)) &=& \text{foldl}(f,f(k,x),(y,\ldots,z)) \end{array}

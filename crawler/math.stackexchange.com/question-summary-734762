@@ -1,0 +1,4 @@
+\nabla_A \operatorname{tr}(ABA^T C)
+  \langle A,B \rangle = \operatorname{tr}(A B^T), 
+  \operatorname{tr}((A+h)B(A+h)^T C) = \operatorname{tr}(ABA^TC) + \langle \nabla_A \operatorname{tr}(ABA^T C),h\rangle + o(\|h\|)\\ =  \operatorname{tr}(ABA^TC) + \operatorname{tr}(\nabla_A \operatorname{tr}(ABA^T C)h^T)+ o(\|h\|). 
+  \operatorname{tr}((A+h)B(A+h)^T C) = \operatorname{tr}(ABA^TC + hBA^TC + ABh^TC+hBh^TC)\\ = \operatorname{tr}(ABA^TC) +\operatorname{tr}(hBA^TC) + \operatorname{tr}(ABh^TC) + \operatorname{tr}(hBh^TC)\\ = \operatorname{tr}(ABA^TC) + \operatorname{tr}(C^TAB^Th^T) + \operatorname{tr}(CABh^T) + \operatorname{tr}(hBh^TC)\\ = \operatorname{tr}(ABA^TC) + \operatorname{tr}((C^TAB^T+CAB)h^T) + \operatorname{tr}(hBh^TC), 

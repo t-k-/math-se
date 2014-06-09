@@ -1,0 +1,59 @@
+\displaystyle (X_k)_{k\geq 1}
+\displaystyle \{1,...,n\}
+\displaystyle\tau_{n}=\inf\{m\geq 1:\{X_1,...,X_m\}=\{1,...,n\}\}
+\displaystyle\tau_{n}^{(k)}=\inf\{m\geq 1:|\{X_1,...,X_m\}|=k\}
+\displaystyle \left(\tau_{n}^{(k)}-\tau_{n}^{(k-1)}\right)_{2\leq k\leq n}
+n\rightarrow \infty
+\epsilon >0
+\frac{\tau_n}{n\log n}\rightarrow 1
+\mathbb P\left(\left|\frac{\tau_n}{n\log n}-1\right|>\epsilon\right)\rightarrow 0
+T_k=\tau_n^{(k)}
+T_1=1
+t_2\geq 1
+T_2=t_2
+t_2-1
+X_2,X_3, \ldots, X_{t_2}
+X_1
+X_{t_2+1}
+n-1
+ P(T_2=t_2)=\frac{n-1}{n^{t_2+1}} 
+t_3 \geq 1
+T_2=t_2
+T_3=t_3
+t_3-1
+X_{t_2+2},X_{t_2+3}, \ldots, X_{t_2+t_3}
+\lbrace X_1,X_{t_2+1} \rbrace
+X_{t_2+t_3+1}
+n-2
+T_3
+T_2
+ P(T_2=t_2,T_3=t_3)=\big(\frac{2}{n}\big)^{t_3-1}\frac{n-2}{n}P(T_2=t_2) 
+t_4
+T_4
+T_2
+T_3
+ P(T_2=t_2,T_3=t_3,T_4=t_4)=\big(\frac{3}{n}\big)^{t_4-1}\frac{n-3}{n}P(T_2=t_2,T_3=t_3) 
+k
+t_2,t_3, \ldots ,t_k \geq 1
+ P(T_2=t_2,T_3=t_3, \ldots ,T_k=t_k)=p_2p_3 \ldots p_k \ \text{with} \ p_j=\big(\frac{j-1}{n}\big)^{t_j-1}\frac{n-(j-1)}{n} \ (\text{for} \ 2 \leq j \leq k) 
+T_j
+P(T_j=t_j)=p_j
+2 \leq j \leq k
+T_j
+ P(T_j=t)=\big(\frac{j-1}{n}\big)^{t-1}\frac{n-(j-1)}{n}  (\text{for} \ t \geq 2) 
+j=n
+ P(\tau_n =t)=\big(\frac{n-1}{n}\big)^{t-1}\frac{1}{n}  (\text{for} \ t \geq 2) 
+ \begin{array}{lcl} P(\tau_n \geq t)&=& \sum_{s\geq t}P(\tau_n=s) =\frac{1}{n} \sum_{s\geq t}\big(\frac{n-1}{n}\big)^{s-1} =\frac{1}{n}\big(\frac{n-1}{n}\big)^{t-1} \frac{1}{1-\frac{n-1}{n}}= \big(\frac{n-1}{n}\big)^{t-1} \end{array} 
+t
+t
+\lfloor t \rfloor \leq t \leq \lceil t \rceil
+P(\tau_n \geq t)=P(\tau_n \geq \lceil t \rceil)
+ \big(\frac{n-1}{n}\big)^{t+1} \leq P(\tau_n \geq t) \leq \big(\frac{n-1}{n}\big)^{t} 
+a_n=n\log(n)(1+\varepsilon)
+ \begin{array}{lcl} P\left( \tau_n \geq a_n \right)&\leq &   \big(\frac{n-1}{n}\big)^{a_n} \\ &=& \exp(n\log(n)\log(1-\frac{1}{n})(1+\varepsilon)) \\ &\leq& \exp(n\log(n)(-\frac{1}{n})(1+\varepsilon))=\frac{1}{{(1+\varepsilon)}^{n}} \end{array} 
+P(\tau_n \geq n\log(n)(1+\varepsilon)) \to 0
+n\to \infty
+P(\tau_n \leq n\log(n)(1-\varepsilon)) \to 0
+n\to \infty
+\{ \tau_n^{(k)} - \tau_n^{(k-1)} = j \}
+X_1,...,X_{\tau_n^{(k-1)}} 

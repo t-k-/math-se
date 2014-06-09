@@ -1,0 +1,24 @@
+\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{n^2\log(1+\frac{k^2}{n^2})}=\frac{{\pi}^2}{6}.
+x
+[0,1]
+1/(1+x)^2\leqslant1/(1+x)\leqslant 1
+0
+x
+x=k^{\color{red}{\alpha}}/n^\color{red}{\alpha}
+\color{red}{\alpha}
+S_n^\color{red}{\alpha}\to\infty
+\color{red}{\alpha}\leqslant1
+\color{red}{\alpha}\gt1
+ \frac{x}{1+x}\leqslant\log(1+x)\leqslant x. 
+ S_n^\color{red}{\alpha}=\sum_{k=1}^n\frac1{n^\color{red}{\alpha}\log\left(1+\frac{k^{\color{red}{\alpha}}}{n^\color{red}{\alpha}}\right)} 
+ \sum_{k=1}^n\frac1{n^{\color{red}{\alpha}}}\frac1{\frac{k^{\color{red}{\alpha}}}{n^{\color{red}{\alpha}}}}\leqslant S_n^\color{red}{\alpha}\leqslant\sum_{k=1}^n\frac1{n^\color{red}{\alpha}}\frac{1+\frac{k^\color{red}{\alpha}}{n^\color{red}{\alpha}}}{\frac{k^\color{red}{\alpha}}{n^\color{red}{\alpha}}}, 
+ \sum_{k=1}^n\frac1{k^\color{red}{\alpha}}\leqslant S_n^\color{red}{\alpha}\leqslant\frac1{n^{\color{red}{\alpha}-1}}+\sum_{k=1}^n\frac1{k^\color{red}{\alpha}}. 
+ \lim_{n\to\infty}S_n^\color{red}{\alpha}=\sum_{k=1}^\infty\frac1{k^\color{red}{\alpha}}=\zeta(\color{red}{\alpha}). 
+\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{n^2\log(1+\frac{k^2}{n^2})}=\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{\log((1+\frac{k^2}{n^2})^{n^2})}
+\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{\log((1+\frac{k^2}{n^2})^{n^2})}=\sum_{k=1}^{\infty}\frac{1}{\log(e^{k^2})}
+\sum_{k=1}^{\infty}\frac{1}{\log(e^{k^2})}=\sum_{k=1}^{\infty}\frac{1}{k^2}=\zeta(2)=\frac{\pi^2}{6}
+\ln (x+1)=\frac{x}{1} -\frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4}+ ....=\sum \limits_{k=1}^{\infty} (-1)^{k+1} \frac{x^k}{k}
+f_n(x)=\frac{1}{n^2\ln(1+\frac{x^2}{n^2})}=\frac{1}{n^2(\frac{x^2}{n^2} - \frac{x^4}{2n^4} + \frac{x^4}{3n^6}+ \cdots)}=\frac{1}{x^2 - \frac{x^4}{2n^2} + \frac{x^6}{3n^4}+ \cdots}=\frac{1}{x^2}(\frac{1}{1 - \frac{x^2}{2n^2} + \frac{x^4}{3n^4}+ \cdots)}=\frac{1}{x^2}.({1 + \frac{x^2}{2n^2} - \frac{x^4}{12n^4}+ \cdots)}
+\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{n^2\ln(1+\frac{k^2}{n^2})}=\lim_{n\to\infty}\sum_{k=1}^n f_n(k)=\lim_{n\to\infty}\sum_{k=1}^n ({\frac{1}{k^2} + \frac{1}{2n^2} - \frac{k^2}{12n^4}+ \cdots)}=
+=\lim_{n\to\infty}\sum_{k=1}^n \frac{1}{k^2} + \lim_{n\to\infty}\frac{1}{2n^2}\sum_{k=1}^n 1 - \lim_{n\to\infty}\frac{1}{12n^4}\sum_{k=1}^n k^2+ \cdots
+\lim_{n\to\infty}\sum_{k=1}^n\frac{1}{n^2\ln(1+\frac{k^2}{n^2})}=\lim_{n\to\infty}\sum_{k=1}^n \frac{1}{k^2}=\frac{{\pi}^2}{6}

@@ -1,0 +1,14 @@
+I=\iint_{D}\cfrac{dxdy}{\sqrt{1-\cfrac{{x}^{2}}{{a}^{2}}-\cfrac{{y}^{2}}{{b}^{2}}}\times\left( {x}^{2}+{y}^{2}+1-\cfrac{{x}^{2}}{{a}^{2}}-\cfrac{{y}^{2}}{{b}^{2}}\right)^{\cfrac{3}{2}}}
+D=\left\{(x,y);\cfrac{{x}^{2}}{{a}^{2}}+\cfrac{{y}^{2}}{{b}^{2}}\leq 1,x\geq 0,y\geq 0\right\}.
+x=ar\cos t, y=br\sin  t
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\expo}{{\rm e}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}
+\large\it Hint:
+(x,y) = (ar\cos\theta,br\sin\theta)
+\mathscr{I}
+\Delta(\theta) = a^2 \cos^2(\theta) + b^2\sin^2(\theta)
+\begin{align} \mathscr{I} =  & ab \int_0^{\frac{\pi}{2}} d\theta \int_0^1 \frac{rdr}{\sqrt{1-r^2}\sqrt{\Delta(\theta) r^2 + 1 - r^2}^3}\\ = & \frac{ab}{2}\int_0^{\frac{\pi}{2}} d\theta \int_0^1 \frac{dr^2}{(1-r^2)^2}\frac{1}{\sqrt{\Delta(\theta) \frac{r^2}{1-r^2} + 1}^3} \end{align}
+u = \frac{r^2}{1-r^2}
+v = \Delta(\theta) u + 1
+t = \tan\theta
+\displaystyle du = \frac{dr^2}{(1-r^2)^2} 
+\mathscr{I} = \frac{ab}{2}\int_0^{\frac{\pi}{2}} d\theta \int_0^{\infty} \frac{du}{\sqrt{\Delta(\theta) u + 1}^3} = \frac{ab}{2}\int_0^{\frac{\pi}{2}} \frac{d\theta}{\Delta(\theta)} \int_1^{\infty} \frac{dv}{\sqrt{v}^3}\\ = ab \int_0^{\frac{\pi}{2}} \frac{d\theta}{a^2\cos^2(\theta) + b^2\sin^2(\theta)} = ab \int_0^{\infty} \frac{dt}{a^2 + b^2 t^2} = \frac{\pi}{2} 

@@ -1,0 +1,128 @@
+(3)\Longrightarrow (1)
+(2)
+M
+R
+\mathrm{E}:=\operatorname{End}(M),
+\rho\in\mathrm E
+(1)
+(\exists \sigma\in\mathrm E) \;\rho\sigma\rho=\rho;
+(2)
+\ker\rho
+\operatorname{im}\rho
+M.
+(3)
+\pi_1,\pi_2\in\mathrm E
+\ker \pi_1=\ker\rho
+\operatorname{im}\pi_2=\operatorname{im}\rho.
+(1)\Longrightarrow(2).
+\rho\sigma\rho=\rho
+\sigma\in\mathrm E
+m\in\ker\rho\cap\operatorname{im}\rho\sigma.
+m\rho=0
+m=x\rho\sigma.
+x\rho=x\rho\sigma\rho=0
+m=x\rho\sigma=0.
+\ker\rho\cap\operatorname{im}\rho\sigma=0.
+m\in M.
+(m-m\rho\sigma)\in\ker\rho
+m\rho\sigma\in\operatorname{im}\rho\sigma,
+(m-m\rho\sigma)\rho=m\rho-m\rho\sigma\rho=m\rho-m\rho=0,
+M=\ker\rho+\operatorname{im}\rho\sigma.
+M=\ker\rho\oplus\operatorname{im}\rho\sigma.
+m\in\operatorname{im}\rho\cap\ker\sigma\rho.
+m\sigma\rho=0
+m=x\rho.
+m=x\rho=x\rho\sigma\rho=0.
+\operatorname{im}\rho\cap\ker\sigma\rho=0.
+m\in M.
+m\sigma\rho\in\operatorname{im}\rho,
+(m-m\sigma\rho)\sigma\rho=m\sigma\rho-m\sigma\rho\sigma\rho=m\sigma\rho-m\sigma\rho=0,
+M=\operatorname{im}\rho+\ker\sigma\rho.
+M=\operatorname{im}\rho\oplus\ker\sigma\rho.
+(2)\Longrightarrow (1).
+M=\ker\rho\oplus K=\operatorname{im}\rho\oplus L.
+m\in M
+i :(\ker\rho\oplus K)/\ker\rho \longrightarrow\operatorname{im}\rho
+(m+\ker\rho)i=m\rho.
+m\in M
+m=a_{\ker\rho}+a_K.
+m,n\in M
+m=a_1+a_2,
+n=b_1+b_2
+a_1,b_1\in\ker\rho
+a_2,b_2\in K.
+m,n
+(\ker\rho\oplus K)/\ker\rho
+a_2=b_2.
+\sigma'':(\ker\rho\oplus K)/\ker\rho\longrightarrow \ker\rho\oplus K
+(a_{\ker\rho}+a_K+\ker\rho)\longmapsto (0+a_K)
+\sigma':\operatorname{im}\rho\longrightarrow M
+\sigma'=i^{-1}\sigma''.
+\sigma
+\sigma|_{\operatorname{im}\rho}=\sigma'
+\sigma|_L=0.
+\rho=\rho\sigma\rho.
+(2)\Longrightarrow (3).
+M=\ker\rho\oplus K=\operatorname{im}\rho\oplus L.
+\pi_1,\pi_2
+\pi_1|_{\ker\rho}=0 \text{ and }\pi_1|_K=\operatorname{id}_K,
+\pi_2|_{\operatorname{im}\rho}=\operatorname{id}_{\operatorname{im}\rho}\text{ and } \pi_2|_L=0.
+(3)\Longrightarrow (2)
+\pi:M\longrightarrow M,
+M=\operatorname{im}\pi\oplus\ker \pi.
+(1)\Longrightarrow (3),
+(1)\Longrightarrow (3)\Longrightarrow (2)\Longrightarrow (1).
+(3)\Longrightarrow (1)
+(2)
+(3)\Longrightarrow (1)
+(1) \implies (3)
+\sigma
+\rho \sigma \rho = \rho
+\pi_1 = \rho \sigma
+\ker \rho \subset \ker \rho \sigma \subset \ker \rho \sigma \rho = \ker \rho
+\ker \rho \sigma = \ker \rho
+(\rho\sigma)(\rho\sigma) = (\rho\sigma\rho)\sigma = \rho\sigma
+\pi_2 = \sigma \rho
+\operatorname{im} \rho = \operatorname{im} \rho \sigma \rho \subset \operatorname{im} \sigma \rho \subset \operatorname{im} \rho
+\operatorname{im} \rho \sigma = \operatorname{im} \rho
+(\sigma \rho)(\sigma \rho) = \sigma(\rho\sigma\rho) = \sigma\rho
+(3)
+(3')
+\pi_1, \pi_2 \in E
+\ker \pi_1 = \operatorname{im} \rho
+\operatorname{im} \pi_2 = \ker \rho
+(3') \implies (2)
+(2) \implies (3')
+(3) \implies (1)
+(2)
+\rho
+\pi_1, \pi_2
+\rho
+(3) \implies (2) \implies (1)
+\operatorname{im} \pi_2 \subset \operatorname{im} \rho
+\rho' : M \to \operatorname{im} \rho
+\pi_2' : M \to \operatorname{im} \rho
+\rho
+\pi_2
+x\in M
+x\rho = x\rho'
+x\pi_2 = x\pi_2'
+\iota : \operatorname{im} \rho \to M / \ker \rho
+x (\rho'\iota) = (x \rho) \iota = x + \ker \rho
+\rho' \iota : M \to M / \ker \rho
+\ker \rho \subset \ker \pi_1
+\tilde{\pi_1} : M/ \ker \rho \to M
+\rho'\iota\tilde{\pi_1} = \pi_1
+\sigma = \pi_2' \iota \tilde{\pi_1}
+\operatorname{im} \rho \subset \operatorname{im} \pi_2
+x \in M
+y\in M
+x \rho = y \pi_2
+x (\rho \pi_2') = (x \rho) \pi_2' = (y \pi_2) \pi_2 = y (\pi_2 \pi_2) = y \pi_2 = x \rho = x \rho'
+ \rho \sigma \rho = (\rho \pi_2') (\iota \tilde{\pi_1} \rho)  =  \rho' (\iota \tilde{\pi_1} \rho)  =  (\rho' \iota \tilde{\pi_1}) \rho  =  \pi_1 \rho 
+\pi_1\pi_1 = \pi_1
+(\pi_1 - id)\pi_1 = 0
+\ker \pi_1 \subset \ker \rho
+(\pi_1 - id)\rho = 0
+\pi_1 \rho = \rho
+\rho \sigma \rho = \rho

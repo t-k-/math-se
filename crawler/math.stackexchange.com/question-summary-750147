@@ -1,0 +1,29 @@
+\mathbb{R}^3
+ \Delta U = \frac{1}{r^2}\frac{\partial }{\partial r}\left(r^2\frac{\partial U}{\partial r}\right) + \frac{1}{r^2 \sin\vartheta}\frac{\partial }{\partial \vartheta}\left(\sin \vartheta \frac{\partial U}{\partial \vartheta}\right)+\frac{1}{r^2 \sin^2\vartheta}\frac{\partial U}{\partial\varphi}. 
+ x=r\sin\vartheta \cos\varphi\\ y=r\sin\vartheta \sin\varphi\\ z=r\cos\vartheta. 
+g=g_{ij}\tilde{d}x^i\otimes \tilde{d}x^j=\delta_{ij}\tilde{d}x^i\otimes \tilde{d}x^j
+x,y,z
+g= g_{i'j'}\tilde{d}x^{i'}\otimes \tilde{d}x^{j'}
+\bar{X}
+U
+\bar{X} = X^r \partial/{\partial r} + X^\vartheta \partial/\partial\vartheta + X^\varphi \partial/\partial\varphi,
+ \tilde{\omega }= \tilde{d}x\wedge \tilde{d}y\wedge \tilde{d}z. 
+ g_{i'j'}  = \left(       \begin{array}{ccc}         1 & 0 &   0 \\         0 & r^2 & 0 \\         0 & 0 & r^2\sin^2\vartheta       \end{array} \right) 
+ \tilde{\omega} = \big|\text{det} (g_{i'j'})\big|^{1/2}\ \tilde{d}r\wedge \tilde{d}\vartheta \wedge \tilde{d}\varphi = r^2\sin\vartheta \ \tilde{d}r\wedge \tilde{d}\vartheta \wedge \tilde{d}\varphi . 
+ \Delta U = \text{div}_{\tilde{\omega}} \bar{d}U 
+ \left(\text{div}_{\tilde{\omega}}\bar{X} \right)\tilde{\omega} = \tilde{d}\left[\tilde{\omega}(\bar{X},\ ,\ )\right], 
+ \bar{d}U = g^{-1}(\tilde{d}U,\ ). 
+ \tilde{d}\left[\tilde{\omega}(\bar{X},\ ,\ )\right]= \tilde{d}\left[r^2\sin\vartheta\left(X^r \tilde{d}\vartheta\wedge \tilde{d}\varphi + X^\vartheta \tilde{d}\varphi \wedge \tilde{d}r+ X^\varphi \tilde{d}r \wedge \tilde{d}\vartheta \right)\right]=\\ \left[\sin\vartheta \frac{\partial}{\partial r}\left(r^2 X^r\right) + r^2 \frac{\partial}{\partial\vartheta}\left( \sin\vartheta X^\vartheta\right) + r^2\sin\vartheta \frac{\partial X^\varphi}{\partial \varphi}\right]\ \tilde{d}r\wedge \tilde{d}\vartheta \wedge \tilde{d}\varphi  =  \left[\frac{1}{r^2} \frac{\partial}{\partial r}\left(r^2 X^r\right) + \frac{1}{\sin\vartheta} \frac{\partial}{\partial\vartheta}\left( \sin\vartheta X^\vartheta\right) + \frac{\partial X^\varphi}{\partial \varphi}\right]\ \tilde{\omega}. 
+ \text{div}_{\tilde{\omega}}\bar{X} = \frac{1}{r^2} \frac{\partial}{\partial r}\left(r^2 X^r\right) + \frac{1}{\sin\vartheta} \frac{\partial}{\partial\vartheta}\left( \sin\vartheta X^\vartheta\right) + \frac{\partial X^\varphi}{\partial \varphi}. 
+ \tilde{d}U = \frac{\partial U}{\partial r}\tilde{d} r+\frac{\partial U}{\partial \vartheta}\tilde{d} \vartheta +\frac{\partial U}{\partial \varphi}\tilde{d} \varphi, 
+ g^{i\ 'j'} = \left(       \begin{array}{ccc}         1 & 0 &   0 \\         0 & \frac{1}{r^2} & 0 \\         0 & 0 & \frac{1}{r^2\sin^2\vartheta}       \end{array} \right) 
+ \bar{d}U=  \frac{\partial U}{\partial r} \frac{\partial}{\partial r} + \frac{1}{r^2} \frac{\partial U}{\partial \vartheta}\frac{\partial}{\partial \vartheta} + \frac{1}{r^2\sin^2\theta}\frac{\partial U}{\partial \varphi}\frac{\partial}{\partial \varphi}. 
+ \Delta U = \text{div}_{\tilde{\omega}}\bar{d} U = \frac{1}{r^2}\frac{\partial U}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) + \frac{1}{r^2 \sin\vartheta}\frac{\partial }{\partial \vartheta}\left(\sin \vartheta \frac{\partial U}{\partial \vartheta}\right)+\frac{1}{r^2 \sin^2\vartheta}\frac{\partial U}{\partial\varphi}. 
+\hat{r},\ \hat{\vartheta},\ \hat{\varphi}
+\bar{X}
+X^{\hat{r}} = X^r
+X^{\hat{\vartheta}}=rX^\vartheta
+X^{\hat{\varphi}} = r \sin\theta X^\varphi
+ \hat{r} = \frac{\partial}{\partial r}\\ \hat{\vartheta} = \frac{1}{r}\frac{\partial}{\partial \vartheta}\\ \hat{\varphi} = \frac{1}{r\sin\vartheta}\frac{\partial}{\partial \varphi}. 
+ \text{div}_{\tilde{\omega}}\bar{X} = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2 X^{\hat{r}}\right) + \frac{1}{r \sin\vartheta}\frac{\partial}{\partial\vartheta}\left(\sin\vartheta X^{\hat{\vartheta}}\right) + \frac{1}{r \sin\vartheta}\frac{\partial X^{\hat{\varphi}}}{\partial \varphi} 
+ \bar{d}U =  \frac{\partial U}{\partial r}\hat{r} +\frac{1}{r}\frac{\partial U}{\partial\vartheta}\hat{\vartheta}+\frac{1}{r \sin\vartheta}\frac{\partial U}{\partial \varphi}\hat{\varphi}. 

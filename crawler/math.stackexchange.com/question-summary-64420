@@ -1,0 +1,17 @@
+\mathbf{A}
+\mathbf{A}=\begin{bmatrix} \mathbf{A}_{00} & \mathbf{A}_{10}^T \\ \mathbf{A}_{10} & \mathbf{A}_{11} \end{bmatrix}
+\mathbf{A}_{00}
+3\times3
+\mathbf{A}^{-1}=\begin{bmatrix} \mathbf{B}_{00} & \mathbf{B}_{10}^T \\ \mathbf{B}_{10} & \mathbf{B}_{11} \end{bmatrix}
+\mathbf{A}
+\mathbf{R}=\begin{bmatrix} \mathbf{R}_{00} & \\ \mathbf{R}_{10} & \mathbf{R}_{11} \end{bmatrix}
+\mathbf{B}_{00}
+\begin{bmatrix} \mathbf{R}_{00} & \\ \mathbf{R}_{10} & \mathbf{R}_{11} \end{bmatrix} \begin{bmatrix} \mathbf{R}_{00}^T & \mathbf{R}_{10}^T\\  & \mathbf{R}_{11}^T \end{bmatrix} \begin{bmatrix} \mathbf{B}_{00} \\ \mathbf{B}_{10} \end{bmatrix}=\begin{bmatrix}\mathbf{I}_{00} \\ \mathbf{0} \end{bmatrix}
+\begin{bmatrix} \mathbf{R}_{00} & \\ \mathbf{R}_{10} & \mathbf{R}_{11} \end{bmatrix} \begin{bmatrix} \mathbf{X}_{0} \\ \mathbf{X}_{1} \end{bmatrix} =\begin{bmatrix}\mathbf{I}_{00} \\ \mathbf{0} \end{bmatrix}
+\begin{bmatrix} \mathbf{R}_{00}^T & \mathbf{R}_{10}^T\\  & \mathbf{R}_{11}^T \end{bmatrix} \begin{bmatrix} \mathbf{B}_{00} \\ \mathbf{B}_{10} \end{bmatrix}=\begin{bmatrix}\mathbf{X}_{0} \\ \mathbf{X}_{1} \end{bmatrix}
+\mathbf{B}_{00}
+n\times 3
+\mathbf{R}
+\small \begin{array} {rcl}     \mathbf Y &=&       - ( \mathbf X_{11} \mathbf R_{10} \mathbf R_{00}^{-1} )^{-1} \\ &=& - \mathbf R_{00} \operatorname{pinv} (\mathbf R_{10})  \mathbf R_{11} \\    \mathbf X_{10} &=& \operatorname{pinv} (  \mathbf Y) \end{array}
+\small \mathbf R_{00} 
+\small \mathbf X_{00} 

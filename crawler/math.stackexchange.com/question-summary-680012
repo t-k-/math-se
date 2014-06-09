@@ -1,0 +1,9 @@
+\lim_{x \to \infty } x\,(1 - k^{1/x})
+0 < k < 1
+lim_{x \rightarrow \infty} x(1-k^{1/x}) = lim_{x \rightarrow \infty} \frac{1-k^{1/x}}{1/x} = lim_{x \rightarrow \infty} \frac{-log(x)log(k)e^{\frac{1}{x}log(k)}}{log(x)}=-log(k)
+1-k^{1/x}=1-e^{\frac{1}{x}log(k)}
+-log(x)log(k)e^{\frac{1}{x}log(k)}=-log(x)log(k)k^{1/x}.
+lim_{x \rightarrow \infty}e^{\frac{1}{x}log(k)}=lim_{x \rightarrow \infty}k^{1/x}=1.
+k^{1/x}=e^{\ln(k)/x}
+x\cdot (1-k^{1/x})=x\cdot \left(-\frac{\ln(k)}{x}-\frac{1}{2}\frac{\ln(k)^2}{x^2}-\cdots\right)= -\ln(k)-\underbrace{\frac{1}{2} \frac{\ln(k)^2}{x} - \cdots}_{\rightarrow 0}\longrightarrow -\ln(k)
+x\rightarrow \infty

@@ -1,0 +1,15 @@
+(\Omega,\mathbf{F},P )
+E|X|<+\infty
+\lim_{n\to \infty}\int_{\left(|X|>n\right)} X \ dP=0 \,?
+X_n=|X|\cdot[|X|\geqslant n]
+\lim\limits_{n\to\infty} X_n=0
+\lim\limits_{n\to\infty}\mathrm E(X_n)=\mathrm E\left(\lim\limits_{n\to\infty}X_n\right)
+A_k:=\left\{\omega\in\Omega,k\leq |X(\omega)|<k+1\right\}
+k\geq 0
+E|X|
+\sum_{k=0}^{+\infty}kP(A_k)
+(k+1)P(A_k)\sim kP(A_k)
+\sum_{k=0}^{+\infty}(k+1)P(A_k)
+kP(A_k)\leq \int_{k\leq X<k+1}|X|dP\leq (k+1)P(A_k)
+\sum_{k=0}^{+\infty}kP(A_k)\leq E|X|\leq\sum_{k=0}^{+\infty}(k+1)P(A_k).
+\int_{|X|\geq n}|X|dP=\sum_{k=n}^{+\infty}\int_{A_k}|X|dP\leq \sum_{k=n}^{+\infty}(k+1)P(A_k),

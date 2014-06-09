@@ -1,0 +1,31 @@
+6n
+2n
+3n
+2pn
+p
+f(p,k)
+k
+f(p,3n) = \sum_{i=0}^{2n} f(p-1,3n-i)
+i=0, 1, \ldots
+2n
+p-1
+3n-i
+f(2,k) = k+1,\ \mbox{if}\ 0 \le k \le 2n \quad \mbox{or} \quad (4n-k)+1,\ \mbox{if}\ 2n < k \le 4n
+f(3,3n)
+P_1
+f(p,k) = \sum_{i=0}^{\min(k,2n)} f(p-1,k-i)
+p=3
+(1)
+2n
+(3)
+x_1>2n
+y_1+y_2+y_3=3n-(2n+1)=n-1
+\binom{n+1}2
+(3)
+x_2>2n
+\binom{n+1}2
+x_3>2n
+p=3
+x_1+x_2+x_3=3n\;,\tag{3}
+\binom{(n-1)+3-1}{3-1}=\binom{n+1}2
+\begin{align*} \binom{3n+2}2-3\binom{n+1}2&=\frac12\Big((3n+2)(3n+1)-3n(n+1)\Big)\\\\ &=3n^2+3n+1\;. \end{align*}

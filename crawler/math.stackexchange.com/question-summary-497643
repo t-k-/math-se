@@ -1,0 +1,18 @@
+X
+\lambda
+(1 + X)^{-1}
+\lambda^{-1}(1 - e^{-\lambda})
+E(1 + X)^{-1} = \sum\limits_{j = 1}^\infty (1 + j)^{-1} \dfrac{\lambda^{(1 + j)^{-1}}e^{-\lambda}}{(1 + j)^{-1}!}
+= e^{-\lambda} \sum\limits_{j = 1}^\infty \dfrac{\lambda^{(1 + j)^{-1}}}{((1 + j)^{-1} - 1)!}
+= \lambda^{-1} e^{-\lambda} \sum\limits_{j = 1}^\infty \dfrac{\lambda^{(1 + j)^{-1} - 1}}{((1 + j)^{-1} - 1)!}
+= \lambda^{-1} e^{-\lambda}(e^{\lambda} - 1)
+= \lambda^{-1}(1 - e^{-\lambda})
+   \mathsf{E}\left(\frac{1}{1+X}\right) = \sum_{k=0}^\infty \frac{1}{1+k} \Pr\left(X=k\right) = \sum_{k=0}^\infty \frac{1}{1+k} \frac{\lambda^k \mathrm{e}^{-\lambda}}{k!} = \frac{\mathrm{e}^{-\lambda}}{\lambda} \sum_{k=0}^\infty \frac{\lambda^{k+1} }{(k+1)!} = \frac{\mathrm{e}^{-\lambda}}{\lambda} \left( \sum_{k=1}^\infty \frac{\lambda^{k} }{k!}  \right)  = \frac{\mathrm{e}^{-\lambda}}{\lambda} \left( \sum_{k=0}^\infty \frac{\lambda^{k} }{k!} -1 \right) = \frac{\mathrm{e}^{-\lambda}}{\lambda} \left(\mathrm{e}^\lambda -1 \right) 
+\lambda
+e^{\lambda}-1
+\sum_{n=0}^\infty \frac{1}{1+n}e^{-\lambda}\frac{\lambda^n}{n!}.
+e^{-\lambda} \sum_{n=0}^\infty \frac{\lambda^n}{(n+1)!}.
+\frac{e^{-\lambda}}{\lambda}\sum_{n=0}^\infty \frac{\lambda^{n+1}}{(n+1)!}.
+\frac{1}{\lambda}(1-e^{-\lambda}).
+1+X
+X

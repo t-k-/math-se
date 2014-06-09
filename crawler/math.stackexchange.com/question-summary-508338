@@ -1,0 +1,7 @@
+p_n = \frac{1}{1}, \frac{3}{2}, \frac{7}{5}, \frac{17}{12}, \frac{41}{29}, \frac{99}{70}, \frac{239}{169},\dots
+a,b,c
+a_n,\,b_n,\,c_n = p_{n-2}-1,\;\; p_{n-1}-1,\;\; p_n-1
+v_n=\text{Numerator}\,(a_n)\,\text{Numerator}(b_n)
+F(n) = \sqrt{\frac{a_n c_n}{a_n-c_n}-v_n}
+n>2
+\begin{array}{cc} n&F(n) \\ 4& \sqrt{2} \\  6&5\sqrt{2} \\ 8&29\sqrt{2} \\ 10&169\sqrt{2} \\  12&985\sqrt{2} \\ 14&5741\sqrt{2}\\ 16&33461\sqrt{2} \\  \vdots \\ 92&\sqrt{\text{huge number}} \\ 94&\text{integer}\sqrt{2} \\  \vdots \\ \end{array}

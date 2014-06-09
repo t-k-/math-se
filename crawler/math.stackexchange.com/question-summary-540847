@@ -1,0 +1,100 @@
+\overrightarrow{r}:\left(x,y,z\right)\longmapsto\left\langle x,y,z\right\rangle
+d\overrightarrow{r}=\left\langle dx,dy,dz\right\rangle
+\overrightarrow{r}:\left(r,\theta,\phi\right)\longmapsto\left\langle rsin\theta cos\phi,rsin\theta sin\phi,rcos\theta\right\rangle
+d\overrightarrow{r}=dr\hat{r}+rd\theta\hat{\theta}+rsin\theta d\phi\hat{\phi}
+dV=dxdydz
+V:\left(x,y,z\right)\longmapsto xyz
+e_1, e_2, e_3
+s = r e_1 + \theta e_2 + \phi e_3
+f
+f(s) = s' = r \sin \theta \cos \phi e_1 + r \sin \theta \sin \phi e_2 + r \cos \theta e_3 = x e_1 + y e_2 + z e_3
+\begin{align*} \underline f(e_1) &= e_r = \hat r \\ \underline f(e_2) &= e_\theta = r \hat \theta \\ \underline f(e_3) &= e_\phi =( r \sin \theta) \hat \phi \end{align*}
+d\ell = e_r \, dr + e_\theta \, d\theta + e_\phi \, d\phi
+\ell(t)
+\frac{d\ell}{dt} = e_r \frac{dr}{dt} + e_\theta \frac{d\theta}{dt} + e_\phi \frac{d\phi}{dt}
+d\ell/dt
+dV \equiv (e_r \, dr) \wedge (e_\theta \, d\theta) \wedge (e_\phi \, d\phi) = (e_r \wedge e_\theta \wedge e_\phi) dr \, d\theta \, d\phi
+e_r \, dr
+dr
+k
+e_r \wedge e_\theta \wedge e_\phi
+e_r \wedge e_\theta \wedge e_\phi = r^2 \sin \theta (\hat r \wedge \hat \theta \wedge \hat \phi) = \epsilon r^2 \sin \theta
+\epsilon
+\epsilon
+\pm \epsilon
+dV = (e_x \, dx ) \wedge (e_y \, dy) \wedge (e_z \, dz) = (\hat x \wedge \hat y \wedge \hat z) \, dx \, dy \, dz = \epsilon (dx \, dy \, dz)
+dV = \epsilon (dx \, dy \, dz) = \epsilon r^2 \sin \theta \, (dr \, d\theta \, d\phi)
+ dx = \cos \theta \, dr - r \sin \theta \, d\theta 
+ dy = \sin \theta \, dr + r \cos \theta \, d\theta 
+m
+n
+(m+n)
+dx \wedge dy
+dx \, dy
+2
+\omega
+\eta
+1
+\omega \eta = -\eta \omega
+\omega
+m
+\eta
+n
+\omega \eta = (-1)^{mn} \eta \omega
+(dx)^2 = 0
+1
+ \begin{align}dx \, dy &= (\cos \theta \, dr - r \sin \theta \, d\theta) (\sin \theta \, dr + r \cos \theta \, d\theta )  \\&= (\cos \theta \, dr) (\sin \theta \, dr) - (r \sin \theta \, d\theta) (\sin \theta \, dr) + \ldots \\&= \cos \theta \sin \theta \, (dr)^2 - r \sin^2 \theta  \, d\theta \, dr + \ldots \\&= (r \sin^2 \theta + r \cos^2 \theta) \, dr \, d\theta \\ &= r \, dr \, d\theta \end{align}
+E
+x
+y
+ P = (x_P, y_P) 
+x_P
+x
+P
+x(P)
+x
+(x,y)
+X \to E
+ f(r, \theta) = (r \cos \theta, r \sin \theta) 
+ f(P) = f(r_P, \theta_P) = (r_P \cos \theta_P, r_P \sin \theta_P)
+Q = f(P)
+ (x_Q, y_Q) = (r_P \cos \theta_P, r_P \sin \theta_P)
+\bar{x}
+\bar{y}
+X
+\bar{x}_P = x_{f(P)} \qquad \qquad \bar{y}_P = y_{f(P)} 
+\bar{x}, \bar{y}, r, \theta
+X
+f
+E
+X
+dx
+d\bar{x}
+dx \, dy
+E
+2
+d\bar{x} \, d\bar{y}
+X
+U,V
+X
+E
+f
+U
+V
+2
+dx \, dy
+V
+d\bar{x} \, d\bar{y}
+U
+ \begin{align} \iint_V f(x,y) \, dx \, dy &= \iint_U f(\bar{x}, \bar{y}) \, d\bar{x} \, d\bar{y} \\ &= \iint_U f(r \cos \theta, r \sin \theta) r\, dr \, d\theta \end{align}
+e_r
+X
+r
+\theta
+e_\theta
+\bar{e}_r
+\bar{e}_\theta
+E
+f_*(e_r)
+df \cdot e_r
+df

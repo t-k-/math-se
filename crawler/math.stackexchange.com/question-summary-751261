@@ -1,0 +1,19 @@
+\left\{\begin{matrix} x_{1}'(t)=3x_{1}(t)-2x_{2}(t)+e^{2t},x_{1}(0)=a & \\ x_{2}'(t)=4x_{1}(t)-3x_{2}(t),x_{2}(0)=b &  \end{matrix}\right.
+\left\{\begin{matrix} x_{1}'(t)=3x_{1}(t)-2x_{2}(t),x_{1}(0)=a & \\ x_{2}'(t)=4x_{1}(t)-3x_{2}(t),x_{2}(0)=b &  \end{matrix}\right.
+\boldsymbol{x'=Ax}
+e^{2t}
+T
+\boldsymbol{A=\begin{Bmatrix} 3 &-2  &? \\   4&-3  &0?  \end{Bmatrix}}
+x'(t) = \begin{bmatrix}x'_1(t)\\x'_2(t)\end{bmatrix} = Ax(t) + f(t) = \begin{bmatrix}3 & -2\\4 & -3\end{bmatrix}x(t) + \begin{bmatrix}e^{2t}\\0\end{bmatrix}, x(0) = \begin{bmatrix}a\\b\end{bmatrix}
+A
+A = TDT^{-1} = \begin{bmatrix}1 & 1\\2 & 1\end{bmatrix}\begin{bmatrix}-1 & 0\\0 & 1\end{bmatrix}\begin{bmatrix}-1 & 1\\2 & -1\end{bmatrix}
+x = Tz \implies z=T^{-1}x \implies z'=T^{-1}x'
+z'_1(t) = -z_1(t)-e^{2t}, z_1(0) = -a + b \\ z'_2(t) = z_2(t) + 2 e^{2t}, z_2(0) = 2a-b
+z(t)
+x(t) = Tz(t)
+x(t) = \begin{bmatrix}x_1(t)\\x_2(t)\end{bmatrix} = \begin{bmatrix}e^{-t} \left(a \left(2 e^{2 t}-1\right)+b \left(-e^{2 t}\right)+b\right)\\e^{-t} \left(2 a \left(e^{2 t}-1\right)-b \left(e^{2 t}-2\right)\right)\end{bmatrix}
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+ \dot{\vec{\rm r}}\pars{t} = A\,\vec{\rm r}\pars{t} + \vec{\fermi}\pars{t} \quad\imp\quad \expo{-At}\dot{\vec{\rm r}}\pars{t} - \expo{-At}A\,\vec{\rm r}\pars{t} = \expo{-At}\vec{\fermi}\pars{t} 
+ \totald{\bracks{\expo{-At}\vec{\rm r}\pars{t}}}{t} = \expo{-At}\vec{\fermi}\pars{t} \quad\imp\quad \expo{-At}\vec{\rm r}\pars{t} - \vec{\rm r}\pars{0} =\int_{0}^{t}\expo{-At'}\vec{\fermi}\pars{t'}\,\dd t' 
+ \vec{\rm r}\pars{t} =\expo{At} \vec{\rm r}\pars{0} + \int_{0}^{t}\expo{A\pars{t - t'}}\vec{\fermi}\pars{t'}\,\dd t' 
+\color{#00f}{% \vec{\rm r}\pars{t} =\bracks{\cosh\pars{t} + \sinh\pars{t}A}\vec{\rm r}\pars{0} + \int_{0}^{t}\bracks{% \cosh\pars{t - t'} + \sinh\pars{t - t'}A}\vec{\fermi}\pars{t'}\,\dd t'} 

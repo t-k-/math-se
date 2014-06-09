@@ -1,0 +1,23 @@
+U_1, U_2, \dots, U_n
+U_i \sim U[0,1]
+X = U_1 + U_2 + \ldots +U_n
+f(x) = \frac{1}{(n-1)!}\sum_{k=0}^n(-1)^k\binom{n}{k}(x-k)^{n-1}_{+}
+U_i
+\phi_i(x)=
+\int_{0}^{1} e^{itx}dx = \frac{e^{it}-1}{it}
+\phi_X(t)$ = E(e^{it(U_1+\ldots+U_n)}) = \left(\frac{e^{it}-1}{it} \right)^n 
+\phi_Y(t) = E(e^{iYt}) = \int_{0}^nf(x)e^{ixt}dx = \sum_{k=0}^{n} (-1)^k\binom{n}{k}\frac{1}{(n-1)!}\int_{0}^{n}(x-k)^{n-1}e^{ixt}dx
+\phi_Y(t) = \phi_X(t)
+\phi_Y(t) = \sum_{k=0}^{n} (-1)^k\binom{n}{k}\frac{1}{(n-1)!}\int_{0}^{n}(x-k)^{n-1}e^{ixt}dx
+\phi_Y(t) = \sum_{k=0}^{n} (-1)^k\binom{n}{k}\frac{1}{(n-1)!}\int_{k}^{n}(x-k)^{n-1}e^{ixt}dx
+u=x-k
+J_{n,m}=\int_{0}^{n-k}u^{n-m}e^{iut}du
+\phi_Y(t) = \sum_{k=0}^{n} (-1)^k\binom{n}{k}\frac{e^{ikt}}{(n-1)!}J_{n,1}
+J_{n,1}=\frac{1}{it}\int_{0}^{n-k}u^{n-1}de^{iut}=\frac{1}{it}\left[e^{iut}u^{n-1}|_{u=0}^{n-k}-(n-1)J_{n,2}\right]=...=
+=e^{iut}\sum_{j=1}^n(-1)^{j-1}\frac{(n-1)!}{(n-j)!(it)^j}u^{n-j}|_{u=0}^{n-k}=
+=e^{i(n-k)t}\sum_{j=1}^n(-1)^{j-1}\frac{(n-1)!}{(n-j)!(it)^j}(n-k)^{n-j}+(-1)^n\frac{(n-1)!}{(it)^n}
+\phi_Y(t)
+\sum_{k=0}^n(-1)^k\binom{n}{k}(n-k)^m=0
+m<n
+0
+\phi_Y(t) = \sum_{k=0}^{n} (-1)^k\binom{n}{k}\frac{e^{ikt}}{(n-1)!}(-1)^n\frac{(n-1)!}{(it)^n}=\frac{(e^{it}-1)^n}{(it)^n}

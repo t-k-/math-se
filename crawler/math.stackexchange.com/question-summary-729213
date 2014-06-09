@@ -1,0 +1,12 @@
+X(t)
+X(t+\Delta t)=X(t)+f(X(t),t)\Delta t+g(X(t),t)\sqrt{\Delta t}\zeta
+\zeta \sim N(0,1)
+X(s)
+X(s+\Delta s)
+t+\Delta t= s
+t=s-\Delta s
+\Rightarrow \Delta t=\Delta s
+X(t)=X(t+\Delta t)-f(X(t),t)\Delta t-g(X(t),t)\sqrt{\Delta t}\zeta.
+X(s-\Delta s)=X(s)-f(X(s-\Delta s),s-\Delta s)\Delta s-g(X(s-\Delta s),s-\Delta s)\sqrt{\Delta s}\zeta
+E[X(s)-y|X(s-\Delta s)=y]=E[f(y,s-\Delta s)\Delta s+g(y,s-\Delta s)\sqrt{\Delta s}\zeta]
+=f(y,s-\Delta s)\Delta s

@@ -1,0 +1,13 @@
+a_1, ... , a_n
+b_1, ... , b_n
+ (\sum_{j=1}^{n} a_jb_j)^2 \le (\sum_{j=1}^{n} j a_j^2)(\sum_{j=1}^{n} \frac{b_j^2}{j}) 
+a = (a_1, ... , a_n), b = (b_1, ... , b_n) \in \mathbb{R}^n
+ \sum_{j=1}^{n} a_jb_j = \langle a, b \rangle 
+ \sum_{j=1}^{n} j a_j^2 = a_1^2 + 2a_2^2 + \ldots + na_n^2 = \langle a, a \rangle + \sum_{j=1}^n (j - 1)a_j^2 
+ \sum_{j=1}^{n} \frac{b_j^2}{j} = b_1^2 + \frac{b_2^2}{2} + \ldots + \frac{b_n^2}{n} =  \langle b, b \rangle + \sum_{j = 1}^n -\frac{(j-1)b_j^2}{j} 
+\langle a, b \rangle^2 \le \langle a, a \rangle \langle b, b\rangle + stuff
+\langle a, b \rangle^2 \le \langle a, a \rangle \langle b, b\rangle
+stuff
+c_j= ja_j
+d_j = \dfrac{b_j}{j}
+ \left(\sum_{j=1}^n c_j d_j\right)^2 \le \left(\sum_{j=1}^n c_j^2\right)\left(\sum_{j=1}^n d_j^2\right) 

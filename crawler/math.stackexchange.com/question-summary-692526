@@ -1,0 +1,14 @@
+\mathbb{E}_{W_T}\left[ \frac{\int_0^T e^{\alpha W_t} dt}{\int_0^T e^{-\alpha W_t} dt + \int_0^T e^{\alpha W_t} dt} \right]
+\alpha \in \mathbb{R}
+\mathbb{E}_A[B]
+B
+A
+\mathbb{E}_{W_T}\left[ \frac{\int_0^T e^{\alpha W_t} dt}{\int_0^T e^{-\alpha W_t} dt + \int_0^T e^{\alpha W_t} dt} \right] = \mathbb{E}_{W_T}\left[ \frac{1}{\frac{\int_0^T e^{-\alpha W_t} dt}{\int_0^T e^{\alpha W_t} dt} + 1} \right]
+ \mathbb{E}_{W_T}\left[ \frac{\int_0^T e^{\alpha W_t} dt}{\int_0^T e^{-\alpha W_t} dt + \int_0^T e^{\alpha W_t} dt} \right] = 1 - \mathbb{E}_{W_T}\left[ \frac{\int_0^T e^{-\alpha W_t} dt}{\int_0^T e^{\alpha W_t} dt}\right] + ...
+\frac{\int_0^T e^{-\alpha W_t} dt}{\int_0^T e^{\alpha W_t} dt}
+\alpha
+W_T
+|W_T| \ll \alpha
+\alpha \ll |W_T|
+\alpha
+\frac{1}{2}\left(1 + \alpha\mathbb{E}_{W_T}\left[\int_0^T W_t \mathrm{d}t\right] \right) + O(\alpha^2) = \frac{1}{2} + \frac{\alpha}{4 T} W_T + O(\alpha^2)

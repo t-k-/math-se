@@ -1,0 +1,43 @@
+V
+f
+V
+\beta = \{\alpha_{1}, ..., \alpha_{n}\}
+V
+\beta' = \{\alpha_{1}', ..., \alpha_{n}'\}
+V
+f(\alpha_{i}, \alpha_{j}') = \delta_{ij}
+f_{\beta'} = (f_{\beta})^{-1}
+f
+\beta
+U
+\beta'
+U'
+x=\sum c_i \alpha_i=\sum c'_i\alpha'_i
+y=\sum d_i \alpha_i=\sum d'_i\alpha'_i
+x
+Ud=d'
+c'^TU'=c^T\Rightarrow U'^Tc'=c\Rightarrow U'c'=c
+U'=U'^T
+f(x,y)=c^TUd=c'^TU'd'
+f(x,y)=\sum_{ij} c_id'_j f(\alpha_i,\alpha'_j)=\sum_{ij} c_id'_j \delta_{ij}=\sum_i c_i d'_i=c^Td'
+x
+y
+Uc=c'
+U'd'=d
+x
+c
+U'U=I
+c=U'c'=U'(Uc)=(U'U)c
+\alpha_{i}'
+f_{\beta} = A
+\alpha
+V
+\alpha = \sum_{i=1}^{n}b_{i}\alpha_{i}
+f(\alpha, \alpha_{j}') = f(\sum_{i=1}^{n}b_{i}\alpha_{i}, \alpha_{j}') = b_{j}
+\alpha = \sum_{i} f(\alpha, \alpha_{i}')\alpha_{i}
+\alpha_{i}' = \sum_{j} f(\alpha_{i}', \alpha_{j}')\alpha_{j}
+\beta_{i} = \sum_{i} (A^{-1})_{ij}\alpha_{j}
+f(\alpha_{i}, \beta_{j}) = \delta_{ij}
+\alpha_{j}'
+\beta_{j} = \alpha_{j}'
+f_{\beta'} = (f_{\beta})^{-1}

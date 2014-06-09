@@ -1,0 +1,11 @@
+x_i
+y
+y
+\sum_{i=1}^n \beta_i \ln(x_i-\gamma_i)
+\sum_{i=1}^n p_i x_i = y
+L=\sum_{i=1}^n \beta_i \ln(x_i-\gamma_i) + \lambda \left(\sum_{i=1}^n p_i x_i - y \right)
+x_i
+\lambda
+0
+\frac{\partial L}{\partial x_i} = \frac{\beta_i}{x_i-\gamma_i} + \lambda p_i
+\frac{\partial L}{\partial \lambda} = \sum_{i=1}^n p_i x_i - y

@@ -1,0 +1,32 @@
+(q_n)_{n>0}
+0<q_n<1
+n>0
+\lim_{n\to \infty} q_n = 0
+n > 0
+X_n
+P[X_n =k]=q_n(1−q_n)^{k−1}, (k=1,2,...)
+\frac{X_n}{\mathbb{E}[X_n]}
+\mathbb{E}[X_n] = \frac{1}{q_n}
+x
+\mathbb P(X_n\gt x)=(1-q_n)^x
+Y_n=q_nX_n
+y
+x_n
+q_nx_n\leqslant y\lt q_n(x_n+1)
+q_n\to0
+q_nx_n\to y
+(1-q_n)^{x_n}\to\mathrm e^{-y}
+y
+Y
+1
+ \mathbb P(Y_n\gt y)=\mathbb P(X_n\gt x_n)=(1-q_n)^{x_n}, 
+ \mathbb P(Y_n\gt y)\to\mathbb P(Y\gt y), 
+X_n
+\Phi_{X_n}(\xi) = \sum_{k=1}^\infty \underbrace{q_n}_{(q_n-1)+1} \cdot (1-q_n)^{k-1} \cdot e^{\imath \, k \cdot \xi} = - \sum_{k=1}^\infty (1-q_n)^k \cdot (e^{\imath \, \xi})^k+e^{\imath \, \xi} \sum_{k=1}^\infty (1-q_n)^{k-1} \cdot e^{\imath \, (k-1) \cdot \xi} \\ = - \left( \frac{1}{1-(1-q_n) \cdot e^{\imath \, \xi}} - 1 \right) + e^{\imath \, \xi} \cdot \left( \frac{1}{1-(1-q_n) \cdot e^{\imath \, \xi}} \right) \\ = \frac{1}{1-(1-q_n) \cdot e^{\imath \, \xi}} \cdot (-1+(1-(1-q_n) \cdot e^{\imath \, \xi})+e^{\imath \, \xi}) = \frac{q_n \cdot e^{\imath \, \xi}}{1-(1-q_n) \cdot e^{\imath \, \xi}}
+Y_n := \frac{X_n}{\mathbb{E}X_n} = q_n \cdot X_n
+\Phi_{Y_n}(\xi) = \Phi_{X_n}(\xi \cdot q_n) = \frac{q_n \cdot e^{\imath \, q_n \cdot \xi}}{1-(1-q_n) \cdot e^{\imath \, q_n \cdot \xi}}
+n \to \infty
+ \lim_{n \to \infty} \Phi_{Y_n}(\xi) = \lim_{n \to \infty} \frac{e^{\imath \, q_n \cdot \xi} \cdot (1+q_n \cdot \imath \, \xi)}{-e^{\imath \, q_n \cdot \xi} \cdot (\imath \, \xi \cdot (1-q_n) -1)} = \frac{1}{1-\imath \xi}
+q_n \to 0
+n \to \infty
+Y_n \to \text{Exp}(1)

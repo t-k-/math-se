@@ -1,0 +1,78 @@
+f \colon \mathbb{R} \to \mathbb{R}
+V=\{af_b : a,b \in \mathbb{R}\}
+f_b\colon \mathbb{R} \to \mathbb{R}
+f_b(x)=f(x+b)
+f=\sin
+V
+\sin
+\cos
+\cos(x)=\sin(x+\frac{\pi}{2})
+c\sin(x+\phi) = s\sin x + t\cos x
+c, \phi \in \mathbb{R}
+s,t \in \mathbb{R}
+V
+\sin
+\cos
+\mathcal{C}
+\mathbb{R}
+f \in \mathcal{C}
+V = \langle f_b : b \in \mathbb{R} \rangle
+f_b
+\mathcal{C}
+B
+\mathbb{R}
+0 \in B
+B
+B
+\mathbb{R}
+f_b
+b
+f
+V
+0
+B
+B = \bigg\{ b \in \mathbb{R} : f, f_b \text{ linear dependent on }\mathcal{C} \bigg\}
+B \cap (-L,L) = \{ 0 \}
+L > 1
+f
+f_1
+V
+A : \mathbb{R} \to M_{2}(\mathbb{R})
+2 \times 2
+\mathbb{R}
+f
+f_1
+x, y \in \mathbb{R}
+\begin{pmatrix}f(x) & f(y)\\f_1(x)&f_1(y)\end{pmatrix}
+(*1)
+\begin{align} \begin{pmatrix}f_{b}\\f_{b+1}\end{pmatrix} = A(b) \begin{pmatrix}f\\f_1\end{pmatrix} \end{align}\tag{*1}
+\begin{pmatrix}f_b(x)&f_b(y)\\f_{b+1}(x)&f_{b+1}(y)\end{pmatrix} = A(b) \begin{pmatrix}f(x) & f(y)\\f_1(x)&f_1(y)\end{pmatrix}
+b
+A(b)
+b, c \in \mathbb{R}
+A
+\begin{cases} & A(b) A(c) = A(b+c) = A(c)A(b)\\ \text{ and } & A(b) A(-b) = A(-b)A(b) = A(0) = I_2\tag{*2} \end{cases}
+A(b)
+A(b)
+b
+A(0) = I_2
+\epsilon > 0
+\| A(b)-I_2 \| < \frac12
+b \in (-\epsilon, \epsilon)
+\left\| \int_0^b \left( A(t) - I_2 \right) dt \right\| \le \int_0^b \left\| A(t) - I_2 \right\| dy < \frac{b}{2}\quad\text{ for }b \in (0,\epsilon)
+\quad\displaystyle\int_0^b A(t) dt = b I_2 + \int_0^b \left(A(t) - I_2\right) dt\quad
+(0,\epsilon)
+b, c
+\int_0^{b+c} A(t) dt =    \left( \int_0^b + \int_b^{b+c} \right) A(t) dt =   I_2 \left( \int_0^b A(t) dt \right) + A(b) \left( \int_0^c A(t) dt \right)
+ \begin{align} &   \left(A(b) - I_2\right)\left( \int_0^c A(t) dt \right)     -\left(A(c) - I_2\right)\left( \int_0^b A(t) dt \right) = 0\\ \implies & \left(D(b) - D(c)\right) \left( \int_0^b A(t) dt \right) \left( \int_0^c A(t) dt \right) = 0\\ \implies & D(b) = D(c) \end{align}
+D(b)
+(0,\epsilon)
+D
+(0,\epsilon)
+A(b)
+A(b) = e^{D b}
+(*2)
+b
+A
+f
+A(b) = I_2 + D \int_0^b A(t) dt

@@ -1,0 +1,54 @@
+ \ddot x = \frac{k}{x^2}  \quad (x(0)=x_0), \  \dot{x}(0) = v_0, \ k \in \mathbb{R}.
+\dot{x}
+ \dot{x} \ddot{x} =  \frac{k \dot{x}}{x^2}.
+x(t) = \sqrt{2} x \sqrt{C - \frac{k}{x}} - \frac{ k \log \left( 2 \sqrt{C} x \sqrt{C - \frac{k}{x}} + 2Cx - k \right)}{\sqrt{2C}} + \tilde{C}. 
+C
+\tilde{C}
+C
+C = \frac{v_0^2}{2} + \frac{k}{x_0}.
+\tilde{C}
+ \ddot{x} = \frac{k}{x^2 \sqrt{2c - \frac{k}{x}}}. 
+u = x - \frac{k}{C}
+ \dot{x} = \sqrt{C-\frac{k}{x}} = \sqrt{C}\sqrt{1 - \frac{k}{Cx}}. 
+ \int \frac{1}{\sqrt{1 - \frac{k}{Cx}}}dx = \sqrt{C}t + \lambda_{1} 
+ \int \sqrt{1 + \frac{k}{Cu}}du = \sqrt{C}t + \lambda_{1}. 
+ d\bar{u} = 1,\\ v = \sqrt{1 + \frac{k}{Cu}}. 
+ \int \sqrt{1 + \frac{k}{Cu}}du = u\sqrt{1 + \frac{k}{Cu}} - \int u\frac{-\frac{k}{2Cu^{2}}}{\sqrt{1 + \frac{k}{Cu}}}du,\\ =u\sqrt{1 + \frac{k}{Cu}} + \frac{1}{2}\int \frac{1}{\sqrt{1 + \frac{k}{Cu}}}\frac{k}{Cu}du 
+ u\sqrt{1 + \frac{k}{Cu}} = \sqrt{u}\sqrt{u + \frac{k}{C}} = \sqrt{x -\frac{k}{C}}\sqrt{x},\\ =x\sqrt{1 - \frac{k}{Cx}} 
+ \frac{1}{2}\int \frac{1}{\sqrt{1 + \frac{k}{Cu}}}\frac{k}{Cu}du 
+w^{2} = 1 + \frac{k}{Cu} 
+u = \frac{k/C}{w^{2}-1}
+ \frac{1}{2}\int \frac{w^{2} - 1}{w}\left(\frac{-2(k/C) w}{\left(w^{2}-1\right)^{2}}\right)dw = -\frac{k}{C}\int \frac{1}{w^{2}-1}dw 
+ -\frac{k}{2C} \mathrm{log}\left(\frac{w-1}{w+1}\right) = \frac{k}{2C} \mathrm{log}\left(\frac{w+1}{w-1}\right) = \frac{k}{2C} \mathrm{log}\left(\frac{(w+1)^{2}}{w^{2} - 1}\right). 
+ \frac{(w+1)^{2}}{w^{2} - 1} = \frac{\frac{k}{Cu} + 2 + 2w}{\frac{k}{Cu}} = 1 + \frac{2Cu}{k} - 2w\frac{Cu}{k},\\ =\frac{2Cx - k + 2wCu}{k} = \frac{2Cx - k - 2\sqrt{1 + \frac{k}{Cu}}Cu}{k},\\ =\frac{2Cx - k + 2C\sqrt{u + \frac{k}{C}}\sqrt{u}}{k} = \frac{2Cx - k + 2Cx\sqrt{1 - \frac{k}{Cx}}}{k} 
+\lambda_{1}
+ x\sqrt{1 - \frac{k}{Cx}} +\frac{k}{2C} \mathrm{log}\left(\frac{2Cx - k + 2Cx\sqrt{1 - \frac{k}{Cx}}}{k}\right)\\ = x\sqrt{1 - \frac{k}{Cx}} +\frac{k}{2C} \mathrm{log}\left(2Cx - k + 2Cx\sqrt{1 - \frac{k}{Cx}}\right) +\frac{k}{2C}\mathrm{log}\left(\frac{1}{k}\right)\\ =\sqrt{C}t + \lambda_{1} 
+ \frac{1}{\sqrt{C}}x\sqrt{C - \frac{k}{x}} +\frac{k}{2C} \mathrm{log}\left(2Cx - k + 2\sqrt{C}x\sqrt{C - \frac{k}{x}}\right) = \sqrt{C}t + \lambda_{1} 
+\sqrt{C}
+ \sqrt{2}x\sqrt{C - \frac{k}{x}} +\frac{k}{\sqrt{2C}} \mathrm{log}\left(2Cx - k + 2\sqrt{C}x\sqrt{C - \frac{k}{x}}\right) = \sqrt{2}Ct + \lambda_{2} 
+\frac{dx}{dt}
+F(x)
+\mathbb{R}
+V = - \int F
+\ddot x = F(x)
+ \dot x \ddot x = \dot x F(x) 
+\frac{d}{dt}\left( \frac{ \dot x^2}{2}  \right)= - \frac{d}{dt} V(x)
+K = \frac{\dot x^2}{2}
+V(x)
+E
+E
+E = \frac{1}{2} v_0^2 + V(x_0)
+v_0
+\dot x(t)
+\pm
+v_0 > 0
+t
+x(t)
+t
+F(x) = \frac{-k}{x^2}
+V = -\frac{k}{x}
+ \frac{d}{dt} \left( \frac{\dot x^2}{2} + V(x) \right) = 0
+ \frac{\dot x^2}{2} + V(x) = E.
+ \dot x = \pm \sqrt{2(E-V(x(t))) }
+ t = \int_0^t \ ds =  \int_0^t \frac{ \dot x(s) }{ \sqrt{ 2(E-V(x(s)))} } \ ds = \int_0^{x(t)} \frac{1}{ \sqrt{2(E-V(x))}} \ dx
+ t = \int_0^{x(t)} \frac{1}{ \sqrt{2\left( E+ \frac{k}{x} \right)}} \ dx 

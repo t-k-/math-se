@@ -1,0 +1,15 @@
+F(n_1,...,n_{k+1};k)=\min_{1<i<k+1}\{n_{i-1}n_i n_{i+1}+F(n_1,...,n_{i-1},n_{i+1},...,n_{k+1};k-1)\}, k=1,...,h
+M_k
+n_k\times n_{k+1}, k\in\{1,...,h\}
+M_1... M_h
+F(n_1,...,n_{k+1};k)
+M_1... M_h
+M_1... M_h
+n_{i-1}\times n_i
+n_i\times n_{i+1}
+(M_1\cdot\dots\cdot M_i)
+(M_{i+1},\dots, M_{h+1})
+n_1 n_{i+1} n_{h+1}
+F(n_1, \dots, n_{i+1})
+F(n_{i+1},\dots, n_{h+1})
+F(n_1,...,n_{h+1})=\min_{1<i<h+1}\{n_{1}n_{i+1} n_{h+1} + F(n_1, \dots, n_{i+1}) + F(n_{i+1},\dots, n_{h+1})\}.

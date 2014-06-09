@@ -1,0 +1,11 @@
+\lambda
+\lambda
+\lambda
+25e^{-10}X
+E(x)
+\lambda \sim \Gamma(2,5)
+ \begin{aligned} P(X=x) &= \int_0^\infty \dfrac{e^{-\lambda} \lambda^x}{x!} f_\Gamma(\lambda) \, \mathrm{d}\lambda \\ &= \int_0^\infty \dfrac{e^{-\lambda} \lambda^x}{x!} \dfrac{\lambda e^{-\lambda/5}}{5^2 \Gamma(2)} \, \mathrm{d}\lambda \\ &= 5^x 6^{-x-2} (x+1).  \end{aligned} 
+E[X] = \sum_{x \ge 0} \dfrac{x(x+1) 5^x}{ 6^{x+2}} = 10.
+\lambda\sim \Gamma(p,b)
+E(X) = E\left(\sum_{k=0}^{\infty}k\frac{\lambda^k}{k!}\,\mathrm{e}^{-\lambda}\right) = E(\lambda) = \frac{p}{b} 
+ Var(X) = Var(\lambda) = \frac{p}{b^2} 

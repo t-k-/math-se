@@ -1,0 +1,22 @@
+S_n=\sum_{k=1}^n X_k
+(X_k)
+P(X_k=(-1))=P(X_k=1)=\frac{1}{2}
+M_n=\max(0,S_1,S_2, \ldots ,S_n)
+\mu(n,t)=P(M_n \leq t)
+ \mu(n,t)=P\bigg( -2\lfloor \frac{t}{2} \rfloor-1\leq S_{2q+1} \leq 2\lceil \frac{t}{2} \rceil-1\bigg)=\frac{1}{2^{2q+1}} \sum_{j=-\lfloor \frac{t}{2} \rfloor}^{\lceil \frac{t}{2} \rceil} \binom{2q+1}{q+j} \tag{1} 
+\binom{2q+1}{q+j} \sim_{q \to \infty} \frac{2^{2q+1}}{\sqrt{\pi q}}
+j
+t
+ \mu(n,t) \sim_{n\to \infty} (t+1) \sqrt{\frac{2}{\pi n}} \tag{2} 
+ \mu(n,t) \leq (t+1) \sqrt{\frac{2}{\pi n}} \text{ whenever } \ \mu(n,t) \ \text{is not trivial (i.e. equal to } 0 \ \text{ or } \ 1). \tag{3} 
+ \frac{\binom{2q+1}{q}}{2^{2q+1}} \leq \sqrt{\frac{1}{\pi (q+1)}} \tag{4} 
+t+1
+\binom{2q+1}{q}
+ \mu(n,t) \leq (t+1) \frac{\binom{2q+1}{q}}{2^{2q+1}} \tag{5} 
+ u_q=\frac{\binom{2q+1}{q}}{2^{2q+1}}\sqrt{q+1} \tag{5} 
+u_q \to \frac{1}{\sqrt{\pi}}
+(u_q)
+\frac{u_{q+1}}{u_q}
+ \binom{2q+3}{2q+1}=\frac{2(2q+3)}{q+2} \binom{2q+1}{q}, 
+ \frac{u_{q+1}}{u_q} =\frac{q+\frac{3}{2}}{\sqrt{(q+1)(q+2)}}, 
+\gt 1

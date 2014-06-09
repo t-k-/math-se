@@ -1,0 +1,10 @@
+\displaystyle\underline\lim_{n\rightarrow \infty} A_n =\bigcap_{\varepsilon>0} \bigcup_{N>0}\bigcap_{n\geq N}(A_n)_\varepsilon 
+f_n(x)=d(x,A_n)
+\varliminf_{n\rightarrow \infty} A_n =\{x\in E : \lim_{n\to\infty} f_n(x)=0\}
+U(n,\varepsilon)=\{x\in E : |f_n(x)|<\varepsilon\}.
+\lim_{n\to\infty} f_n(x)=0 \iff \forall\varepsilon\exists N \forall n>N: |f_n(x) |<\varepsilon \iff \forall\varepsilon\exists N \forall n>N: x\in U(n,\varepsilon).
+\forall n>N : x\in U_n \iff x\in \bigcap _{n>N}U_n
+ x\in \lim_{n\to\infty} f_n(x)=0 \iff \forall\varepsilon\exists N :  x\in \bigcap _{n>N}U(n,\varepsilon).
+\bigcup_{A\in S} A=\{x|\exists A\in S:x\in A\},
+\forall\varepsilon\exists N :  x\in \bigcap _{n>N}U(n,\varepsilon) \iff \forall\varepsilon: x\in \bigcup_{N>0} \bigcap _{n>N}U(n,\varepsilon)
+\forall\varepsilon: x\in \bigcup_{N>0} \bigcap _{n>N}U(n,\varepsilon) \iff  x\in \bigcap_{\varepsilon>0}\bigcup_{N>0} \bigcap _{n>N}U(n,\varepsilon)

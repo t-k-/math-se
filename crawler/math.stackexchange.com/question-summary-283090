@@ -1,0 +1,17 @@
+\tag 1 y'' + 3 y' + 2y = f(t), ~y(0) = y'(0) = 0, ~ \text{where f(t) is a square wave}
+(1)
+\tag 2 \mathcal L(y'') +3 \mathcal L(y') + 2\mathcal L(y) = \mathcal L(f(t))
+\tag 3 \mathcal L(y'') = s^{2}y(s) - s(0) -(0) = s^{2}y(s)
+\tag 4 3 \mathcal L(y') = 3(s y(s) -(0)) = 3 s y(s)
+\tag 5 2 \mathcal L(y) = 2 y(s)
+f(x + \omega) = -f(x)
+f(x+1) = -f(x)
+\mathcal L(f(x)) = \frac{\int_0^\omega e^{-s x} f(x) dx}{1 + e^{- \omega s}}
+\omega = 1
+\tag 6 \mathcal L(f(t)) = \Large \frac{\int_0^\omega e^{-s t} f(t) dt}{1 + e^{- \omega s}} = \frac{\int_0^1 e^{-s t} (1) dt}{1 + e^{- s}} = \frac{(\frac{1}{s})(1 - e^{-s})}{1+e^{-s}} = \frac{1}{s} \tanh \frac{s}{2}
+(3)
+(6)
+(2)
+(s^{2} + 3s +2)y(s) = \frac{1}{s} \tanh \frac{s}{2}
+y(s)
+y(s) = \frac{\tanh \frac{s}{2}}{(s)(s^2+ 3s + 2)} = \frac{\tanh \frac{s}{2}}{(s)(s+1)(s+2)}

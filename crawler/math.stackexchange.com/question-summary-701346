@@ -1,0 +1,36 @@
+a,b\in\mathbb{R}
+\int_0^\infty\frac{\ln\left(\frac{1+x^a}{1+x^b}\right)}{\ln x}\frac{dx}{1+x^2}=\int_0^\infty\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}-\int_0^\infty\frac{\ln\left(\frac{1+x^b}2\right)}{\ln x}\frac{dx}{1+x^2}.\tag1
+\begin{align}&\phantom=\underbrace{\int_0^\infty\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}}_\text{split the region}\\&=\int_0^1\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}+\underbrace{\int_1^\infty\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}}_{\text{change variable}\ y=1/x}\\&=\int_0^1\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}+\underbrace{\int_1^0\frac{\ln\left(\frac{1+y^{-a}}2\right)}{\ln\left(y^{-1}\right)}\frac1{1+y^{-2}}\left(-\frac1{y^2}\right)dy}_\text{flip the bounds and simplify}\\&=\int_0^1\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}-\underbrace{\int_0^1\frac{\ln\left(\frac{1+y^{-a}}2\right)}{\ln y}\frac{dy}{1+y^2}}_{\text{rename}\ y\ \text{to}\ x}\\&=\underbrace{\int_0^1\frac{\ln\left(\frac{1+x^a}2\right)}{\ln x}\frac{dx}{1+x^2}-\int_0^1\frac{\ln\left(\frac{1+x^{-a}}2\right)}{\ln x}\frac{dx}{1+x^2}}_\text{combine logarithms}\\&=\int_0^1\frac{\ln\left(\frac{1+x^a}{1+x^{-a}}\right)}{\ln x}\frac{dx}{1+x^2}=\underbrace{\int_0^1\frac{\ln\left(\frac{x^a\left(x^{-a}+1\right)}{1+x^{-a}}\right)}{\ln x}\frac{dx}{1+x^2}}_{\text{cancel}\ \ 1+x^{-a}}\\&=\int_0^1\frac{\ln\left(x^a\right)}{\ln x}\frac{dx}{1+x^2}=a\int_0^1\frac{dx}{1+x^2}=a\,\Big(\arctan1-\arctan0\Big)\\&=\vphantom{\Bigg|^0}\frac{\pi\,a}4.\end{align}\tag2
+\int_0^\infty\frac{\ln\left(\frac{1+x^a}{1+x^b}\right)}{\ln x}\frac{dx}{1+x^2}=\frac\pi4(a-b).\tag3
+a
+f(a) = \int_0^\infty \frac{\ln[(1+x^a)/2]}{\ln x} \frac{1}{1+x^2}dx = a\frac{\pi}{4}
+f'(a) = \int_0^\infty \frac{\ln x e^{a\ln x}}{\ln x (1+e^{a \ln x})} \frac{1}{1+x^2} dx = \pi/4
+f'(a) = \int_0^\infty \frac{x^a}{1+x^a} \frac{1}{1+x^2}dx = \int_0^\infty \left(1-\frac{1}{1+x^a} \right) \frac{1}{1+x^2}dx = \pi/4.
+f''(a) = \int_0^\infty \frac{\ln x \cdot x^a}{(1+x^a)^2}\frac{1}{1+x^2} dx = 0.
+I
+4+\sqrt{15}=a
+2+\sqrt{3}=b
+x=\tan\theta
+\theta=\pi/2-t
+\ln(\tan(\pi/2-\theta))=\ln(\cot\theta)=-\ln(\tan\theta)
+I=\int_0^{\pi/2} \frac{\ln\left(\dfrac{1+(\tan\theta)^a}{1+(\tan\theta)^b}\right)}{\ln\tan\theta}\,d\theta
+I=\int_0^{\pi/2} \frac{\ln\left(\dfrac{1+(\tan t)^a}{(1+(\tan t)^b)(\tan t)^{a-b}}\right)}{\ln\cot t}\,dt=\int_0^{\pi/2} \frac{-\ln\left(\dfrac{1+(\tan\theta)^a}{1+(\tan\theta)^b}\right)+(a-b)\ln\tan\theta}{\ln\tan\theta}\,d\theta
+2I=\int_0^{\pi/2} \frac{(a-b)\ln \tan\theta}{\ln \tan\theta}\,d\theta=\frac{\pi}{2}(a-b)
+I=\frac{\pi}{4}(a-b)
+\boxed{I=\dfrac{\pi}{4}(2+\sqrt{15}-\sqrt{3})}
+a=2n+\sqrt{4 n^2-1}
+b=n+\sqrt{n^2-1}
+f(n)=\int_0^\infty\frac{\log\left(\frac{1+x^a}{1+x^b}\right)}{\left(1+x^2\right)\log x}dx
+f(1)=\frac{1}{4} \left(1+\sqrt{3}\right) \pi
+f(2)=\frac{1}{4} \left(2-\sqrt{3}+\sqrt{15}\right) \pi
+f(3)=\frac{1}{4} \left(3-2 \sqrt{2}+\sqrt{35}\right) \pi
+f(4)=\frac{1}{4} \left(4+3 \sqrt{7}-\sqrt{15}\right) \pi
+f(5)=\frac{1}{4} \left(5-2 \sqrt{6}+3 \sqrt{11}\right) \pi
+f(6)=\frac{1}{4} \left(6-\sqrt{35}+\sqrt{143}\right) \pi
+f(7)=\frac{1}{4} \left(7-4 \sqrt{3}+\sqrt{195}\right) \pi
+f(8)=\frac{1}{4} \left(8-3 \sqrt{7}+\sqrt{255}\right) \pi
+f(9)=\frac{1}{4} \left(9-4 \sqrt{5}+\sqrt{323}\right) \pi
+f(10)=\frac{1}{4} \left(10-3 \sqrt{11}+\sqrt{399}\right) \pi
+x=\frac{1}{u}, a=4+\sqrt{15},b=2+\sqrt{3}
+ 2I = -\int_0^\infty\frac{(b-a)}{(1+u^{2})}du=(a-b)\frac{\pi}{2}. 
+ I = (a-b)\frac{\pi}{4}. 

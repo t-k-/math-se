@@ -1,0 +1,5 @@
+G=\{(x,y)\in\Bbb R^2 | 1\leq x^2 + y^2\leq16 \text{ and } 0\leq x \text{ and }0\leq y  \}
+\underset{G}{\int\int}xy^2dxdy 
+\underset{G}{\int\int}xy^2dxdy = \int_0^{\tfrac{1}{2}\pi}\int_1^4 r^4 \cos \theta \sin \theta^2 dr d\theta 
+u=\sin \theta \Rightarrow du=\cos \theta d\theta
+ \underset{G}{\int\int}xy^2dxdy = \int_0^{\tfrac{1}{2}\pi}\int_1^4 r^4 \cos \theta \sin^2 \theta dr d\theta = \int_1^4 r^4dr\int_0^1 u^2 du= \left. \frac{r^5}{5}\right|_{r=1}^4 \, \left.\frac{u^3}{3}\right|_{u=0}^1= \frac{4^5-1^5}{5}\frac{1-0}{3}=\frac{1023}{15}, 

@@ -1,0 +1,35 @@
+f:(0,\infty) \rightarrow \mathbb R
+L^p
+F(x) = \frac{1}{x} \int_0 ^x f(t)dt
+F \in L^p
+\|F\|_p \leq \frac{p}{p-1} \|f\|_p
+\left|\frac{1}{x} \int_0 ^x f(t)dt)\right|^p \leq \frac{1}{x} \int_0 ^x |f(t)|^p dt
+\int_0 ^\infty |F(x)|^p dx \leq \int_0 ^\infty \frac{1}{x} \int_0 ^x |f(t)|^p dtdx = \int_0 ^\infty \int_t ^\infty \frac{1}{x} |f(t)|^p dx dt.
+|F(x)|^p
+p\in (1,+\infty)
+q
+q
+\frac 1p+\frac 1q=1
+f\colon (0,+\infty)\to\mathbb R\in L^p(0,+\infty)
+F(x)=\frac 1x\int_{\left]0,x\right[}f(t)dt
+F\in L^p(0,1)
+\lVert F\rVert_{L^p}\leq q\lVert f\rVert f_{L^p}
+0<\alpha<\frac 1q
+|F(x)|^p\leq (1-q\alpha)^{-\frac pq}\int_{\left]0,x\right[}\left| f(t)\right|^p t^{p\alpha}dt x^{-p\alpha-1}.
+\alpha:=\frac 1{pq}<\frac 1q
+\lVert F\rVert_{L^p}\leq q\lVert f\rVert_{L^p}
+\int_{(0,+\infty)}|F(x)|^pdx \leq(1-q\alpha)^{-\frac pq}\int_{(0,+\infty)}\left|f(t)\right|^p t^{p\alpha}\frac 1{p\alpha}t^{-p\alpha}dt
+\int_{(0,+\infty)}|F(x)|^pdx\leq (1-q\alpha)^{-\frac pq}(p\alpha)^{-1}\int_{(0,+\infty)}\left| f(t)\right|^p dt.
+(1-q\alpha)^{-\frac pq}(p\alpha)^{-1} =(1-\frac 1p)^{-\frac 1q}q= q^{\frac pq}q=q^{1+p\left(1-\frac 1p\right)}=q^p,
+\left(\int_0^\infty \left| \frac1x \int_0^x f(t) \, dt\right|^p \, dx \right)^{1/p} \le \frac p{p-1} \left(\int_0^\infty |f(x)|^p \, dx \right)^{1/p}
+ \frac1x \int_0^x f(t) \, dt = \int_0^1 f(x t) \, dt 
+ \int_0^1 \left(\int_0^\infty |f(xt)|^p \, dx \right)^{1/p} \, dt = \int_0^1 t^{-1/p} \, dt \left(\int_0^\infty |f(x)|^p \, dx \right)^{1/p} 
+f(x) \ge 0
+F(x) \to 0
+x \to \infty
+\|F\|_p
+\|F\|_p^{p-1} 
+ \left(\int_0^\infty |F(x)|^p \, dx\right)^{1/p} \le p \left(\int_0^\infty |f(x)|^p \, dx \right)^{1/p} 
+ F(x) = \int_x^\infty \frac{f(t)}t \, dt 
+ |F(x)|^p = - p \int_x^\infty F'(t) |F(t)|^{p-1} \, dt 
+ - p \int_0^\infty F'(t) |F(t)|^{p-1} \int_0^t \, dx \, dt = p \int_0^\infty f(t) |F(t)|^{p-1} \, dt \le p \|f\|_p \|F\|_p^{p-1} 

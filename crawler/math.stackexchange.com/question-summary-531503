@@ -1,0 +1,16 @@
+a
+ \lim_{x \to  0}\frac{\left [ \cos(a+x)-\cos(a-x) \right ]^2}{\tan^2(3x)} 
+a
+ \lim_{x\to0}\frac{\cos(a+x)-\cos a}{x} = \cos'(a) = -\sin a 
+ \lim_{x\to0}\frac{\cos a - \cos(a-x)}{x} = \cos' a = -\sin a, 
+ \lim_{x\to0}\frac{\cos(a+x)-\cos(a-x)}{x} = 2\cos'a = -2\sin a. 
+ \lim_{x\to0}\frac{\cos(a+x)-\cos(a-x)}{\tan(3x)} = \lim_{x\to0}\frac{x}{\tan(3x)}\cdot\lim_{x\to0}\frac{\cos(a+x)-\cos(a-x)}{x}. 
+\lim_{x\to0}\frac{\cos(a+x)-\cos(a-x)}{x}=(\cos(a+x)-\cos(a-x))'\big|_{x=0}=-2\sin a
+\lim_{x\to0}\frac{\tan( 3x)}{x}=(\tan(3 x))'\big|_{x=0}=3
+ \lim_{x \to  0}\frac{\left [ \cos(a+x)-\cos(a-x) \right ]^2}{\tan^2(3x)} =\frac{4}{9}\sin^2a
+S=\lim\limits_{x\to0}\frac{\sin(x)}{x}
+S\ne0
+(1)
+x\to0
+ \begin{align} \left(\frac{\cos(a+x)-\cos(a-x)}{\tan(3x)}\right)^2 &=\left(\frac{2\sin(a)\sin(x)}{\tan(3x)}\right)^2\\ &=\left(\frac23\sin(a)\cos(3x)\frac{\sin(x)}x\frac{3x}{\sin(3x)}\right)^2\tag{1} \end{align} 
+ \begin{align} &\lim_{x\to0}\left(\frac{\cos(a+x)-\cos(a-x)}{\tan(3x)}\right)^2\\ &=\frac49\sin^2(a)\lim_{x\to0}\cos^2(3x)\left(\lim_{x\to0}\frac{\sin(x)}x\right)^2\left(\lim_{x\to0}\frac{\sin(3x)}{3x}\right)^{-2}\\ &=\frac49\sin^2(a)\cdot1\cdot S^2\cdot\frac1{S^2}\\ &=\frac49\sin^2(a)\tag{2} \end{align} 

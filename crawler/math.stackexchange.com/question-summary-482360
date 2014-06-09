@@ -1,0 +1,12 @@
+\displaystyle \int\frac{dx}{(x^2-x+1).\sqrt{x^2+x+1}}
+\displaystyle \int\frac{1}{(x^2-x+1)^{\frac{3}{2}}.\sqrt{\frac{x^2+x+1}{x^2-x+1}}}dx
+\displaystyle \frac{x^2+x+1}{x^2-x+1}=t^2\Leftrightarrow \frac{(x^2-x+1)\cdot (2x+1)-(x^2+x+1)\cdot (2x-1)}{(x^2-x+1)^2}dx = 2tdt
+\displaystyle \frac{-4x^2+2x+2}{(x^2-x+1)^2}dx = 2tdt
+1
+u=x+\sqrt{x^2+x+1}
+x=\dfrac{u^2-1}{2u+1}
+dx=\dfrac{2u(2u+1)-(u^2-1)2}{(2u+1)^2}du=\dfrac{2u^2+2u+2}{(2u+1)^2}du
+\therefore\int\dfrac{dx}{(x^2-x+1)\sqrt{x^2+x+1}}
+=\int\dfrac{\dfrac{2u^2+2u+2}{(2u+1)^2}}{\left(\left(\dfrac{u^2-1}{2u+1}\right)^2-\dfrac{u^2-1}{2u+1}+1\right)\left(u-\dfrac{u^2-1}{2u+1}\right)}du
+=\int\dfrac{\dfrac{2u^2+2u+2}{(2u+1)^2}}{\dfrac{(u^2-1)^2-(u^2-1)(2u+1)+(2u+1)^2}{(2u+1)^2}\times\dfrac{u^2+u+1}{2u+1}}du
+=2\int\dfrac{2u+1}{u^4-2u^3+u^2+6u+3}du

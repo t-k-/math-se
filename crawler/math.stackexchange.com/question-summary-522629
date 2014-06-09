@@ -1,0 +1,9 @@
+f(x,y)
+v=(v_1,v_2)
+ D_v f(x,y) = v_1 \frac{\partial f}{\partial x}(x,y)  + v_2\frac{\partial f}{\partial y}(x,y) 
+D_vf(x,y)
+f
+v
+(x,y)
+D_v f(x,y) = \lim_{h\rightarrow 0} \frac{f(x+hv_1,y+hv_2)-f(x,y)}{h} = \lim_{h\rightarrow 0} \frac{f(x+hv_1,y+hv_2) - f(x+hv_1,y) + f(x+hv_1,y)-f(x,y)}{h}
+ = v_2\lim_{h\rightarrow 0} \frac{f(x+hv_1,y+hv_2)-f(x+hv_1,y)}{v_2h} + v_1\lim_{h\rightarrow 0} \frac{f(x+hv_1,y)-f(x,y)}{v_1h} = v_1 \frac{\partial f}{\partial x}(x,y)  + v_2\frac{\partial f}{\partial y}(x,y)

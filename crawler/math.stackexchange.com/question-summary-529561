@@ -1,0 +1,87 @@
+f(k)=\sum_{n=1}^{\infty}\dfrac{n^k}{2^n},k\in N^{+}
+f(k)
+f(2)=\sum_{n=1}^{\infty}\dfrac{n^2}{2^n}=6
+f(3)=\sum_{n=1}^{\infty}\dfrac{n^3}{2^n}=26
+f(4)=\sum_{n=1}^{\infty}\dfrac{n^4}{2^n}=150
+\cdots\cdots\cdots
+f(k)
+f(k)=?
+x=1.
+S(x) = \sum_{n\ge 1} \frac{(xn)^k}{2^{xn}}
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
+g^*(s)
+g(x)
+Q(s)
+S(x)
+s=q
+q=-k
+q
+\lambda_k = 1, \quad \mu_k = k \quad \text{and} \quad g(x) = \frac{x^k}{2^x}.
+\int_0^\infty \frac{x^k}{2^x} x^{s-1} dx = \int_0^\infty \frac{1}{2^x} x^{(s+k)-1} dx.
+\int_0^\infty 2^{-x} x^{s-1} dx = \frac{1}{(\log 2)^s} \Gamma(s)
+g^*(s) = \frac{1}{(\log 2)^{s+k}} \Gamma(s+k).
+Q(s) = \frac{1}{(\log 2)^{s+k}} \Gamma(s+k) \zeta(s).
+\mathrm{Res}\left(Q(s)/x^s;s=1\right) = \frac{k!}{(\log 2)^{k+1}} \frac{1}{x}.
+\sum_{q=k}^\infty \mathrm{Res}\left(Q(s)/x^s;s=-q\right) = \sum_{q=k}^\infty \frac{(-1)^{q-k}}{(q-k)!} (\log 2)^{q-k} x^q \zeta(-q)\\ = - \sum_{q=k}^\infty \frac{(-1)^{q-k}}{(q-k)!}  (\log 2)^{q-k} x^q \frac{B_{q+1}}{q+1} = - x^k \sum_{q=0}^\infty \frac{(-1)^q}{q!}  (\log 2)^q x^q \frac{B_{q+k+1}}{q+k+1}.
+k\ge 1
+s=1
+Q(s)
+\sum_{m\ge 0} B_m \frac{t^m}{m!} = \frac{t}{e^t-1},
+\sum_{m\ge 1} \frac{B_m}{m} \frac{t^m}{m!} = \log(\exp(t)-1) -t -\log t
+\sum_{m\ge 1} \frac{B_{m+k+1}}{m+k+1} \frac{t^m}{m!}  = \left(\frac{d}{dt}\right)^{k+1} (\log(\exp(t)-1) -t -\log t) \\ =  \left(\frac{d}{dt}\right)^k \left(-1 - \frac{1}{t} + \frac{e^t}{e^t-1}\right) = (-1)^{k+1} \frac{k!}{t^{k+1}} + \left(\frac{d}{dt}\right)^k \left(\frac{e^t}{e^t-1}\right).
+S(1) = \sum_{n\ge 1}\frac{n^k}{2^n}\\ = \frac{k!}{(\log 2)^{k+1}} -\left((-1)^{k+1}  \frac{k!}{(-\log 2)^{k+1}} + \left. \left(\frac{d}{dt}\right)^k  \left(\frac{e^t}{e^t-1}\right)\right|_{t=-\log 2}\right)\\ = \frac{k!}{(\log 2)^{k+1}} -  \frac{k!}{(\log 2)^{k+1}} - \left. \left(\frac{d}{dt}\right)^k  \left(\frac{e^t}{e^t-1}\right)\right|_{t=-\log 2} = - \left. \left(\frac{d}{dt}\right)^k  \left(\frac{e^t}{e^t-1}\right)\right|_{t=-\log 2}.
+a
+p
+e^{-t}
+(1-e^{-t}).
+S(1) = - \left. \left(\frac{d}{dt}\right)^k  \left(\frac{1}{1-e^{-t}}\right)\right|_{t=-\log 2}.
+\frac{p(e^{-t})}{(1-e^{-t})^a}
+\frac{d}{dt} \frac{p(e^{-t})}{(1-e^{-t})^a} = p(e^{-t}) (-a) \frac{1}{(1-e^{-t})^{a+1}} e^{-t} + p'(e^{-t}) (-e^{-t}) \frac{1}{(1-e^{-t})^a}\\ = \frac{-ap(e^{-t})e^{-t}-p'(e^{-t})e^{-t}(1-e^{-t})}{(1-e^{-t})^{a+1}} = \frac{q(e^{-t})}{(1-e^{-t})^{a+1}}.
+-1
+e^{-t} = 2
+\left.(1-e^{-t})\right|_{t=-\log 2} = -1
+n+1
+\mathcal{P}
+\mathcal{P} = \mathfrak{C}(\mathfrak{P}_{\ge 1}(\mathcal{Z}))
+n\ge 0
+k
+n
+P(z) = \log \frac{1}{1-z} \circ (e^z-1)= \log \frac{1}{2-e^z}.
+(n+1)! [z^{n+1}] \log \frac{1}{2-e^z} = (n+1)! [z^{n+1}] \left(\log \frac{1}{2} + \log \frac{1}{1-e^z/2} \right)\\ = (n+1)! [z^{n+1}] \log \frac{1}{1-e^z/2}\\ = (n+1)! [z^{n+1}] \sum_{k\ge 1} \frac{e^{zk}}{k 2^k} = (n+1)! \sum_{k\ge 1} \frac{k^{n+1}}{(n+1)!\times k\times 2^k} = \sum_{k\ge 1} \frac{k^n}{2^k}.
+f(x)=\dfrac{1}{1-x}
+D=x\dfrac {d}{dx}
+Df(x)=\frac{x}{(1-x)^2}
+D^2f(x)=\frac{x^2+x}{(1-x)^3}
+D^3f(x)=\frac{x^3+4x^2+x}{(1-x)^4}
+\displaystyle D^k\frac{1}{1-x}=\frac{\Phi_k(x)}{(1-x)^{k+1}}
+k
+ \displaystyle \Phi_k(x)=\sum_{l\geqslant 1} \varphi_{k,l}x^l
+\varphi_{n,l}=0
+l>n
+l\leqslant 0
+\Phi_{k}(x)
+\displaystyle D^k\frac{1}{1-x}=\sum_{n\geqslant 0}n^kx^n
+\displaystyle \sum_{n\geqslant 0}\frac{n^k}{2^n}=2^{k+1}\Phi_k\left(\frac 1 2\right)
+\Phi_{n+1}=x(n+1)\Phi_n+(1-x)x\Phi'_n
+\varphi_{k+1,l}=(k-l+2)\varphi_{k,l-1}+l \varphi_{k,l}
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}
+\ds{k \choose \ell}
+\pars{1}
+\pars{1}
+{\rm f}\pars{k}
+f_k(x)
+\sum_{n=0}^\infty n^kx^n
+f'_k(x) = \sum_{n=1}^\infty n^{k+1} x^{n-1}
+xf_k'(x) = f_{k+1}(x)
+f_0(x) = \dfrac{1}{1-x}
+f_k(x) = \dfrac{g_k(x)}{(1-x)^{k+1}}
+f_k' = \dfrac{g_k'(x)}{(1-x)^{k+1}}-\dfrac{(k+1)g_k(x)}{(1-x)^{k+2}}
+g_{k+1}(x) = x\left((1-x)g_k'(x)-(k+1)g_k(x)\right)
+g_k(x)
+k
+f_k(\frac12) = 2^{k+1}g_k(\frac12)
+g_k(\frac12) = \frac nd
+d
+\leq 2^k

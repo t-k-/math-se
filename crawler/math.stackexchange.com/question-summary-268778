@@ -1,0 +1,45 @@
+\{1...n\}
+X
+1
+2
+1,6,3,5,1
+X=5
+1,6,3,2
+X=4
+P(X \geq x)
+x\geqslant1
+n^x
+x
+(n)_x=\frac{n!}{(n-x)!}
+x
+i
+j
+x-2
+i
+j
+x-1
+i
+x
+i
+j
+x(x-1)\cdot(n-2)_{x-2}
+S_x
+x
+i
+j
+x\geqslant0
+ S_x=(n)_{x}-x(x-1)\cdot(n-2)_{x-2}, 
+ \mathbb P(X\gt x)=n^{-x}S_x=\frac{n!}{(n-x)!\,n^x}\left(1-\frac{x(x-1)}{n(n-1)}\right). 
+m
+i
+m
+ A_m := \{\text{no duplicates in first $m$ trials}\} 
+ B_{m,i} := \{\text{The value $i$ has been seen in the first $m$ trials}\} \>. 
+1
+1
+ \Pr(X > m) = \Pr(A_m (B_{m,1}^c \cup B_{m,2}^c)) = \Pr(A_m B_{m,1}^c B_{m,2}^c) + 2 \Pr(A_m B_{m,1} B_{m,2}^c) \>.  
+ \Pr(A_m B_{m,1} B_{m,2}^c) = m \Pr(A_m \cap \{\text{$1$ is in the first position}\} \cap B_{m,2}^c) \>. 
+ \Pr(A_m B_{m,1}^c B_{m,2}^c) = \frac{(n-2) (n-3) \cdots (n-m-1)}{n^m} 
+ \Pr(A_m \cap \{\text{$1$ is in the first position}\} \cap B_{m,2}^c) = \frac{1 \cdot (n-2) \cdots (n-m)}{n^m} \>. 
+1 \leq m < n
+ \Pr(X > m) = \frac{(n-2)!\,(n+m-1)}{n^m (n-m-1)!} = \frac{n!}{(n-m)!\, n^m}\left(1 - \frac{m(m-1)}{n(n-1)}\right) \>. 

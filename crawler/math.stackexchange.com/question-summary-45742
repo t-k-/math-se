@@ -1,0 +1,216 @@
+\lambda
+r
+r
+T(v_1)=\lambda\cdot v_1, ...,T(v_r)=\lambda\cdot v_r
+r
+V
+n
+r
+v
+s=n-r
+w_1,...,w_s
+r+s=n
+v_1,...,v_r,w_1,...,w_s
+s
+T
+w
+v,w
+T
+v
+w
+T(w_j)
+j=1,...,s
+w_j
+s
+a_i,b_i
+T(w_j)
+j
+a_{ij},b_{ij}
+a_{ij}
+T(w_j)
+v_i
+b_{ij}
+T(w_j)
+w_i
+T
+v
+w
+T(w_1)=\text{some vector} =\sum_{i=1}^{r}a_i\cdot v_i+\sum_{i=1}^{s}b_i\cdot w_i
+T
+M
+V
+T(u)
+u
+T(u) = M\cdot u
+M
+T
+M
+T(v_1)
+T(v_2)
+r+s
+r+s
+r+s
+r
+T(v_i)
+i
+\lambda
+T(v_i)=\lambda v_i
+r
+M
+\lambda
+r
+s
+M
+T(w_j)
+r+1
+T(w_1)
+a_{i1}
+b_{i1}
+M
+r\times r
+\lambda
+\lambda \text{I}_r
+s\times s
+0
+r\times r
+a_{ij}
+\text{A}
+s\times s
+b_{ij}
+\text{B}
+\text{A}=(a_{ij})^t
+^t
+M=\begin{pmatrix} \lambda\text{I}_r & A \\ 0 & B \end{pmatrix}
+M
+p_c(M)=\det (M-x\text{I}_n)
+x=\lambda
+M
+\lambda\text{I}_r
+\lambda
+p_c(M)=(\lambda-x)^r\det(B-x\text{I}_s)=(\lambda-x\text{I}_r)^r p_c(B)
+(\lambda-x)
+r
+ \det(M-x\text{I}_n) = \begin{vmatrix} (\lambda-x)\text{I}_r & A \\ 0 & B-x\text{I}_s \end{vmatrix} 
+B
+p_c(B)
+M
+\lambda
+r
+r
+B
+p_c(B)
+\lambda
+(\lambda-x)
+p_c(M)
+B
+\lambda
+k
+(r+k)
+\lambda
+M
+k=0
+B
+\lambda
+M
+r
+ p_c(M)=(\lambda-x)^r p_c(B)=(\lambda-x)^r (\lambda-x)^k\cdots = (\lambda-x)^{r+k}\cdots 
+\text{geometric multiplicity}= r\leqslant r+k=\text{algebraic multiplicity}\; .
+T:\mathbb{R}^4\rightarrow\mathbb{R}^4
+v_1, v_2
+\lambda=2
+2=\dim\ker(T-\lambda\text{I}_4)=n-\text{rank}(T-\lambda\text{I}_4)= 4-2
+m_g(\lambda)
+T(v_1)=\lambda v_1=2v_1
+T(v_2)=2v_2
+v_1,v_2
+V=\mathbb{R}^4
+n=\dim\mathbb{R}^4=4
+n-m_g(\lambda)=2
+w_1,w_2
+\{v_1,v_2,w_1,w_2\}
+\mathbb{R}^4
+w
+\{e_1,e_2,e_3,e_4\}=\{(1,0,0,0),(0,1,0,0)...\}
+v_1,v_2
+e_i
+v_1
+v
+e
+e_i
+v
+e
+\{v_1,e_2,e_3,e_4\}
+e_1
+\mathbb{R}^4
+\{v_1,v_2,w_1,w_3\}
+w
+T
+u=c_1v_1+c_2v_2+c_3w_1+c_4w_2
+T(au+bv)=aT(u)+bT(v)
+T(v_1),T(v_2),T(w_1),T(w_2)
+a_{ij}
+b_{ij}
+T
+ T(u)=c_1T(v_1)+c_2T(v_2)+c_3T(w_1)+c_4T(w_2) 
+ \begin{align*} & T(v_1)=\lambda v_1=2v_1 \\ & T(v_2)=\lambda v_2=2v_2 \\ & T(w_1)=1\cdot v_1+2\cdot v_2 + 1\cdot w_1 + \left(\frac{-2}{3}\right)\cdot w_2 \\ & T(w_2)=3\cdot v_1+4\cdot v_2 + 3\cdot w_1 + 4\cdot w_2 \end{align*} 
+T
+T(v_1)...
+M=(T(v_1),T(v_2),T(w_1),T(w_2))
+T
+u
+ T(u)=M\cdot u= (T(v_1),T(v_2),T(w_1),T(w_2))\cdot \begin{pmatrix} c_1\\ c_2\\ c_3\\ c_4 \end{pmatrix} 
+ M=\left( \begin{array}{cccc}  2 & 0 & 1 & 3 \\  0 & 2 & 2 & 4 \\  0 & 0 & 1 & 3 \\  0 & 0 & -\frac{2}{3} & 4 \end{array} \right) 
+\lambda=2
+M
+B=\left( \begin{array}{cccc}  1 & 3 \\  -\frac{2}{3} & 4 \end{array} \right)
+ p_c(M)= \begin{vmatrix}  2-x & 0 & 1 & 3 \\  0 & 2-x & 2 & 4 \\  0 & 0 & 1-x & 3 \\  0 & 0 & -\frac{2}{3} & 4-x \end{vmatrix} = (2-x)^2 \begin{vmatrix}  1-x & 3 \\  -\frac{2}{3} & 4-x \end{vmatrix} =(2-x)^2 p_c(B) 
+\lambda\in\mathbb C
+n
+n
+A\in M_n(\mathbb C)
+k
+k
+v_1
+v_2
+\dots
+v_k
+\lambda
+k
+\lambda I-A
+n-k
+\lambda I-A
+B
+k
+(\lambda I-A)x=0
+t
+\lambda
+t I-A
+t
+C
+t
+B
+\lambda
+C
+k
+\lambda
+t-\lambda
+C
+(t-\lambda)^k
+t-\lambda
+t I-A
+C
+A
+\det(t I-A)
+(t-\lambda)^k
+tI-A
+2
+(t-2)^2
+2
+2
+\left( \begin{array}{cccc}  -t-1 & 2 & 0 & 1 \\  -\frac{2}{9} (-t-1)-\frac{2}{3} & -\frac{4}{9} & 2-t &    \frac{4}{9} \\  t-2 & 2-t & 0 & 0 \\  t-2 & 0 & 0 & 2-t \end{array} \right).
+\left| \begin{array}{cccc}  -t-1 & 2 & 0 & 1 \\  -\frac{2}{9} (-t-1)-\frac{2}{3} & -\frac{4}{9} & 2-t &    \frac{4}{9} \\  t-2 & 2-t & 0 & 0 \\  t-2 & 0 & 0 & 2-t \end{array} \right|
+g(\lambda)
+\lambda
+ \det(A-\lambda I) \cdot \det(S) = (\lambda_0-\lambda)^k \det\pmatrix{u_1,\cdots,u_k,v_{k+1}(\lambda),\cdots,v_n(\lambda)} = (\lambda_0-\lambda)^k g(\lambda) 
+\det(S) = \pm 1
+\lambda_0

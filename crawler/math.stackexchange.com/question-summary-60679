@@ -1,0 +1,23 @@
+\pi
+\pi_i \ne i,\, i = 1,2, \ldots,n.
+p(n)
+W_s(n)
+W_f(n)
+     W_T(n) = W_s(n) + \frac{1-p(n)}{p(n)}W_f(n), 
+W_s(n) = n-1
+p(n) = 1/e \approx 0.368
+W_f(n)
+W_f(n)=4.4, 49.49, 499.499, 4999.4999, 49999.49999
+n = 10^1, 10^2, 10^3,10^4,10^5.
+     W_f(n) =\sum_{k=1}^{n-2}k p_{nk}= \sum_{k=1}^{n-2}\,\prod_{i=0}^{k-1}\left(1-\frac{1}{n-i}\right). 
+ \lim_{n\rightarrow \infty} \sum_{k=1}^{n-2}\,\prod_{i=0}^{k-1}\left(1-\frac{1}{n-i}\right) = \frac{1}{2}n. 
+\frac{1}{2}n
+2n-\ln n
+     W_T(n) = n-1 + \frac{(1-1/e)}{1/e}\frac{n}{2}  = \frac{\left( e+1\right)}{2}\,n-1 \approx 1.86n . 
+\ln(kp_{nk}) = H_n-H_{n-k},\quad W_f(n) = \sum_{k=1}^{n-2} e^{H_n-H_{n-k}}
+\prod_{i=0}^{k-1}\left(1-\frac{1}{n-i}\right)=\left(1-\frac{1}{n}\right)\left(1-\frac{1}{n-1}\right)\cdots\left(1-\frac{1}{n-(k-1)}\right)
+=\frac{n-1}{n}\cdot\frac{n-2}{n-1}\cdot\frac{n-3}{n-2}\cdot\cdots\frac{n-(k-1)-1}{n-(k-1)} 
+=\frac{1}{n}\cdot\frac{n-k}{1}
+\sum_{k=1}^{n-2}\left(1-\frac{k}{n}\right)=\left(\sum_{k=1}^{n-2}1\right)-\frac{1}{n}\left(\sum_{k=1}^{n-2}k\right)
+=(n-2)-\frac{1}{n}\frac{(n-2)(n-1)}{2}
+=\frac{n-1}{2}-\frac{1}{n}

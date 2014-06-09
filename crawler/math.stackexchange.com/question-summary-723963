@@ -1,0 +1,53 @@
+K,Y,X_1,...
+K
+\sigma(Y,X_1,...)
+E[\sum_{i=1}^K X_i | K,Y] = \sum_{i=1}^K E[X_i|K,Y] = \sum_{i=1}^K E[X_i|Y]
+P[X_i|K,Y] = P[X_i|Y]
+K
+Y,X_1,...
+E[\sum_{i=1}^K X_i\ |\ K,Y] = \underbrace{E[\sum_{i=1}^K X_i\ |\ (K,Y) = (\cdot,\cdot)]}_{(1)} \circ (K,Y)
+E[\sum_{i=1}^K X_i | K=k,Y=y] = \sum_{i=1}^k E[X_i|K=k,Y=y] = \sum_{i=1}^k E[X_i|Y=y]
+E[\sum_{i=1}^K X_i\ |\ K,Y] = \sum_{i=1}^K E[X_i|Y]
+\mathbf 1_{K\geqslant k}
+\sigma(K,Y)
+U
+\mathcal G
+V
+\mathcal G
+\mathcal K
+\mathcal K
+\sigma(\sigma(X),\mathcal G)
+E(X\mid\mathcal G,\mathcal K)=E(X\mid\mathcal G)
+ S=\sum_{k=1}^\infty\mathbf 1_{K\geqslant k}\,X_k. 
+ E(S\mid K,Y)=\sum_{k=1}^\infty\mathbf 1_{K\geqslant k}\,E(X_k\mid K,Y)=\sum_{k=1}^KE(X_k\mid K,Y). 
+ E(UV\mid\mathcal G)=UE(V\mid\mathcal G). 
+K
+(Y,(X_k)_{k\geqslant1})
+X=X_k
+\mathcal G=\sigma(Y)
+\mathcal K=\sigma(K)
+k
+(X_k,Y)
+E(X_k\mid Y)
+k
+E(X_k\mid Y)=E(X_1\mid Y)
+k
+(X_k)_{k\geqslant1}
+E(X_k\mid K,Y)=E(X_k\mid Y),
+ E(S\mid K,Y)=\sum_{k=1}^KE(X_k\mid Y). 
+E(S\mid K,Y)=K\,E(X_1\mid Y),
+E(X_i|K,Y) = E(X_i|Y)
+E(\sum_{i=1}^K X_i | K,Y) = E(\sum_{k=1}^{\infty}1_{K=k}\sum_{i=1}^k  X_i |  K,Y)
+= \sum_{k=1}^{\infty}E(1_{K=k}\sum_{i=1}^k  X_i |  K,Y)
+= \sum_{k=1}^{\infty}E(1_{K=k}) \sum_{i=1}^k E(X_i |  K,Y)
+= \sum_{k=1}^{\infty}P(K=k) \cdot  k \cdot E(X_i|Y)  
+= \sum_{k=1}^{\infty}kP(K=k)E(X_1|Y) 
+=  E(X_1|Y) \sum_{k=1}^{\infty}kP(K=k)
+= E(K)E(X_1|Y).
+K
+1_{K=k}
+K
+X_i
+E(X_1)
+K
+\{1,2,3,...\}

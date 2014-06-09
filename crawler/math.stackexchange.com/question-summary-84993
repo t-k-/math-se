@@ -1,0 +1,15 @@
+ E[X(X-1)], \space X\space Bin-(n,p)-
+S_n=\sum\limits_{i=1}^nY_i
+n
+p
+k
+0\le k\le n
+ Y_i=\left\{ \begin{aligned} 1 && X_i = p\\ 0 && X_i = (1-p)  \end{aligned} \right. 
+ \mathrm P(S_n=k)={n\choose k}p^k(1-p)^{n-k}. 
+E[X(X-1)]\space?
+\begin{align*} g(x)&=\sum_{k=0}^n \mathbb{P}(S_n=k)x^k\\ &=\sum_{k=0}^n\binom{n}k p^k(1-p)^{n-k}x^k\\ &=\sum_{k=0}^n\binom{n}k(px)^k(1-p)^{n-k}\\ &=(px+1-p)^n \end{align*}
+g\;'(x)=\sum_{k=0}^n k\mathbb{P}(S_n=k)x^{k-1}\;, 
+g\;''(x)=\sum_{k=0}^n k(k-1)\mathbb{P}(S_n=k)x^{k-2}\;,
+g(x)=p(px+1-p)^n
+g\;''(1)
+g\;''(1)=\sum_{k=0}^n k(k-1)\mathbb{P}(S_n=k)=\mathbb{E}(X(X-1))

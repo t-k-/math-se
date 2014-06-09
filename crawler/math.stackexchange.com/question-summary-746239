@@ -1,0 +1,6 @@
+f:\mathbb{R^3}\rightarrow\mathbb{R},\quad g:\mathbb{R^2}\rightarrow\mathbb{R},\quad h:\mathbb{R}\rightarrow\mathbb{R}
+f,g,h
+H(x,y,z):=g(f(x,y,h(x)),\ g(z,y))
+DH(x,y,z)\ \ ``="\ Dg(f(x,y,h(x)),\ g(z,y))\cdot Df(x,y,h(x))\cdot \ Dg(z,y)\cdot Dh(x)
+DH(x,y,z)[dx, dy, dz] = Dg\left(f(x,y,h(x)),g(z,y)\right)\left[\begin{array}{c}Df(x,y,h(x))\left[\begin{array}{c}dx\\ dy\\ Dh(x)[dx]\end{array}\right]\\ Dg(z,y)\left[\begin{array}{c}dz\\dy\end{array}\right]\end{array}\right],
+(dx,dy,dz)

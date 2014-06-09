@@ -1,0 +1,52 @@
+u_0(x)
+ \frac{\partial^2z}{\partial x\partial\theta}-2z=0~;\qquad z(x,0)=u_0(x) 
+T
+\mathbb C
+(x,\theta)
+\theta = 0
+ z(x,\theta) = \int T(\lambda)\; \exp(\lambda x - 2 \theta/\lambda)\; d\lambda
+ u_0(x) = \int T(\lambda) \exp(\lambda x)\; d\lambda 
+u_0
+u_0(x) = P(\lambda) \exp(\lambda x)
+P
+z(x,\theta) = P\left(\frac{\partial}{\partial \lambda}\right) \exp(\lambda x - 2 \theta/\lambda)
+\displaystyle{% \frac{\partial^{2}\,{\rm z}\left(x,\theta\right)}{\partial x\,\partial\theta} - 2{\rm z}\left(x,\theta\right) = 0; \qquad  {\rm z}\left(x, 0\right) = {\rm u_{0}}\left(x\right)}
+k_{x}
+k_{\theta}
+k_{\theta} = -2/k_{x}
+ {\rm z}\left(x,\theta\right) \equiv \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} {{\rm d}k_{x}\,{\rm d}\theta \over \left(2\pi\right)^{2}}\, \tilde{\rm z}\left(k_{x}, k_{\theta}\right) {\rm e}^{{\rm i}\left(k_{x}\,x\ +\ k_{\theta}\,\theta\right)} \quad\Longrightarrow\quad \left(-k_{x}k_{\theta} - 2\right)\tilde{\rm z}\left(k_{x}, k_{\theta}\right) = 0 
+ {\rm z}\left(x,\theta\right) \equiv \int_{-\infty}^{\infty} {{\rm d}k_{x} \over 2\pi}\, {\rm A}\left(k_{x}\right) {\rm e}^{{\rm i}\left\lbrack k_{x}\,x\ +\ \left(-2/k_{x}\right)\,\theta\right\rbrack} 
+ {\rm u_{0}}\left(x\right) = {\rm z}\left(x,0\right) = \int_{-\infty}^{\infty}{{\rm d}k_{x} \over 2\pi}\,{\rm A}\left(k_{x}\right) {\rm e}^{{\rm i}k_{x}\,x} \quad\Longrightarrow\quad {\rm A}\left(k_{x}\right) = \int_{-\infty}^{\infty}{\rm d}x\, {\rm u_{0}}\left(x\right){\rm e}^{-{\rm i}k_{x}\,x} 
+ \begin{array}{|c|}\hline\\ {\rm z}\left(x,\theta\right) = \int_{-\infty}^{\infty}{\rm K}\left(x - x', \theta\right) {\rm u_{0}}\left(x'\right)\,{\rm d}x' \\[3mm] {\rm K}\left(x,\theta\right) \equiv \int_{-\infty}^{\infty}{{\rm d}k_{x} \over 2\pi}\, {\rm e}^{{\rm i}\left(k_{x}x - 2\theta/k_{x}\right)} = {1 \over \left\vert x\right\vert}\,\overline{\rm K}\left(2x\theta\right) \\[3mm] \overline{\rm K}\left(\mu\right) \equiv \int_{-\infty}^{\infty}{{\rm d}k_{x} \over 2\pi}\, {\rm e}^{{\rm i}\left(k_{x} - \mu/k_{x}\right)} = \overline{\rm K}^{\,*}\left(\mu\right) \\ \\ \hline \end{array} 
+\overline{\rm K}\left(\mu\right)
+{\rm z}\left(x, \theta\right)
+x
+\theta
+ z(x,\theta) = F(x)G(\theta) 
+ F'(x) = \lambda F(x), \quad G'(\theta)=\frac{2}{\lambda}G(\theta).
+ z( x,\theta ) = A e^{\lambda x } e^{\frac{2\theta}{\lambda}}\longrightarrow (1) 
+ A = u_0(x) e^{-\lambda x} \implies u_{0}(x) = Ae^{\lambda x}. 
+u_{0}(x)
+(1)
+z( x,\theta ) = u_{0}(x) e^{\frac{2\theta }{\lambda}}  .
+\begin{cases}p=\sqrt2(x+\theta)\\q=\sqrt2(x-\theta)\end{cases}
+\dfrac{\partial z}{\partial\theta}=\dfrac{\partial z}{\partial p}\dfrac{\partial p}{\partial\theta}+\dfrac{\partial z}{\partial q}\dfrac{\partial q}{\partial\theta}=\sqrt2\dfrac{\partial z}{\partial p}-\sqrt2\dfrac{\partial z}{\partial q}
+\dfrac{\partial^2z}{\partial x\partial\theta}=\dfrac{\partial}{\partial x}\left(\sqrt2\dfrac{\partial z}{\partial p}-\sqrt2\dfrac{\partial z}{\partial q}\right)=\dfrac{\partial}{\partial p}\left(\sqrt2\dfrac{\partial z}{\partial p}-\sqrt2\dfrac{\partial z}{\partial q}\right)\dfrac{\partial p}{\partial x}+\dfrac{\partial}{\partial q}\left(\sqrt2\dfrac{\partial z}{\partial p}-\sqrt2\dfrac{\partial z}{\partial q}\right)\dfrac{\partial q}{\partial x}=\sqrt2\left(\sqrt2\dfrac{\partial^2z}{\partial p^2}-\sqrt2\dfrac{\partial^2z}{\partial p\partial q}\right)+\sqrt2\left(\sqrt2\dfrac{\partial^2z}{\partial p\partial q}-\sqrt2\dfrac{\partial^2z}{\partial q^2}\right)=2\dfrac{\partial^2z}{\partial p^2}-2\dfrac{\partial^2z}{\partial q^2}
+\therefore2\dfrac{\partial^2z(p,q)}{\partial p^2}-2\dfrac{\partial^2z(p,q)}{\partial q^2}-2z(p,q)=0
+\dfrac{\partial^2z(p,q)}{\partial p^2}=z(p,q)+\dfrac{\partial^2z(p,q)}{\partial q^2}
+z(q,q)=f(q)
+z_p(q,q)=g(q)
+z(p,q)=\sum\limits_{n=0}^\infty\dfrac{(p-q)^n}{n!}\dfrac{\partial^nz(q,q)}{\partial p^n}
+z(p,q)=\sum\limits_{n=0}^\infty\dfrac{(p-q)^{2n}}{(2n)!}\dfrac{\partial^{2n}z(q,q)}{\partial p^{2n}}+\sum\limits_{n=0}^\infty\dfrac{(p-q)^{2n+1}}{(2n+1)!}\dfrac{\partial^{2n+1}z(q,q)}{\partial p^{2n+1}}
+\dfrac{\partial^4z(p,q)}{\partial p^4}=\dfrac{\partial^2z(p,q)}{\partial p^2}+\dfrac{\partial^4z(p,q)}{\partial q^2\partial p^2}=z(p,q)+\dfrac{\partial^2z(p,q)}{\partial q^2}+\dfrac{\partial^2z(p,q)}{\partial q^2}+\dfrac{\partial^4z(p,q)}{\partial q^4}=z(p,q)+2\dfrac{\partial^2z(p,q)}{\partial q^2}+\dfrac{\partial^4z(p,q)}{\partial q^4}
+\dfrac{\partial^{2n}z(p,q)}{\partial p^{2n}}=\sum\limits_{k=0}^nC_k^n\dfrac{\partial^{2k}z(p,q)}{\partial q^{2k}}
+\dfrac{\partial^3z(p,q)}{\partial p^3}=\dfrac{\partial z(p,q)}{\partial p}+\dfrac{\partial^3z(p,q)}{\partial q^2\partial p}
+\dfrac{\partial^5z(p,q)}{\partial p^5}=\dfrac{\partial^3z(p,q)}{\partial p^3}+\dfrac{\partial^5z(p,q)}{\partial q^2\partial p^3}=\dfrac{\partial z(p,q)}{\partial p}+\dfrac{\partial^3z(p,q)}{\partial q^2\partial p}+\dfrac{\partial^3z(p,q)}{\partial q^2\partial p}+\dfrac{\partial^5z(p,q)}{\partial q^4\partial p}=\dfrac{\partial z(p,q)}{\partial p}+2\dfrac{\partial^3z(p,q)}{\partial q^2\partial p}+\dfrac{\partial^5z(p,q)}{\partial q^4\partial p}
+\dfrac{\partial^{2n+1}z(p,q)}{\partial p^{2n+1}}=\sum\limits_{k=0}^nC_k^n\dfrac{\partial^{2k+1}z(p,q)}{\partial q^{2k}\partial p}
+\therefore z(p,q)=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^nf^{(2k)}(q)(p-q)^{2n}}{(2n)!}+\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^ng^{(2k)}(q)(p-q)^{2n+1}}{(2n+1)!}
+z(x,\theta)=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^nf^{(2k)}(\sqrt2(x-\theta))\theta^{2n}}{8^n(2n)!}+\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^ng^{(2k)}(\sqrt2(x-\theta))\theta^{2n+1}}{2\sqrt28^n(2n+1)!}
+\dfrac{\partial^2z}{\partial x\partial\theta}-2z=0
+z(x,0)=u_0(x)
+f(\sqrt2x)=u_0(x)
+f(x)=u_0\left(\dfrac{x}{\sqrt2}\right)
+\therefore z(x,\theta)=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^nu_0^{(2k)}(x-\theta)\theta^{2n}}{8^n(2n)!}+\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^ng^{(2k)}(\sqrt2(x-\theta))\theta^{2n+1}}{2\sqrt28^n(2n+1)!}

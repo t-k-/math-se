@@ -1,0 +1,18 @@
+\left \| f -g\right \|_{p}^{p}=
+\int_{0}^{\infty}m(|f-g|>t^{\frac{1}{p}}) dt\stackrel{c.o.v.}{=}
+p\int_{0}^{\infty}m(|f-g|>t) t^{p-1}dt\stackrel{t=|u-s|}{=}
+p\int_{0}^{\infty}m(|f-g|>t-s) |t-s|^{p-1}dt\stackrel{h=\int\frac{dh}{ds}ds}{=}
+p(p-1)\int_{0}^{\infty}\int_{0}^{t}[m(\{x:f>t\}-\{x:g>s\})+ m(\{x:g>t\}-\{x:f>s\})]|t-s|^{p-2}dsdt
+L^{p}(R^{n})
+1<p<\infty
+\left \| f-g \right \|_{p}^{p}=
+\int_{\{f>g\}}(f-g)^{p}dx+\int_{\{g>f\}}(g-f)^{p}dx
+\int_{\{f>g\}}(f-g)^{p}dx
+=p\int_{\{f>g\}}\int_{g(x)}^{f(x)}(t-g(x))^{p-1}dtdx
+\stackrel{h=\int \frac{dh}{ds}ds}{=}(-1)p(p-1)\int_{\{f>g\}}\int_{g(x)}^{f(x)}\int_{t}^{g(x)}(t-s)^{p-2}dsdtdx=
+(-1)p(p-1)\int_{\{f>g\}}\int_{0}^{\infty}\chi_{f(x)\geq t\geq g(x)}\int_{t}^{0} \chi_{g(x)\geq s} (t-s)^{p-2}dsdtdx=
+(-1)p(p-1)\int_{0}^{\infty}\int_{t}^{0}\int_{\{f>g\}} \chi_{\{f(x)>t\}\cap \{g(x)\geq s\}} (t-s)^{p-2}dsdtdx=
+(-1)p(p-1)\int_{0}^{\infty}\int_{t}^{0}m(\{f(x)>t\}\cap \{g(x)\geq s\}) (t-s)^{p-2}dsdtdx\stackrel{switch~bounds}{=}
+p(p-1)\int_{0}^{\infty}\int_{0}^{t}m(\{f(x)>t\}\cap \{g(x)\geq s\}) (t-s)^{p-2}dsdtdx
+p(p-1)\int_{0}^{\infty}\int_{0}^{t}m(\{g(x)>t\}\cap \{f(x)\geq s\}) (t-s)^{p-2}dsdtdx
+p(p-1)\int_{0}^{\infty}\int_{0}^{t}[m(\{f>t\}/\{g>s\})+ m(\{g>t\}/\{x:f>s\})]|t-s|^{p-2}dsdt

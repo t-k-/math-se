@@ -1,0 +1,36 @@
+X
+Y
+f(x,y)=e^{-(x+y)}
+x>0
+y>0
+X+Y
+P(X+Y<1)
+B\subset \mathbb{R}
+B\subset\mathbb{R}^2
+B = \{(x,y)\,\,|\,\, x+y < 1 \,\,;\,\, x,y>0\}
+ P(X\in B) = \int_B f_X(x)dx,
+  P((X,Y)\in B) = \iint_B f_{(X,Y)}(x,y)dxdy. 
+ P(X+Y<1) = \int_{0}^{1}\int_{0}^{1-y} f_{(X,Y)}(x,y)dxdy.
+f(x,y) = e^{-(x+y)}
+x, y > 0
+f(x,y) = e^{-x}e^{-y}
+x > 0
+y > 0
+X
+Y
+f(x,y)
+f(x,y) = f_{X}(x)f_{Y}(y)
+X
+Y
+X
+Y
+M(t) = \dfrac{1}{1-t}
+t < 1
+X+Y
+t < 1
+Z = X+Y
+Z
+ \begin{align*}E\left[e^{t(X+Y)}\right] = E\left[e^{tX+tY}\right] &= E\left[e^{tX}e^{tY}\right] \\ &= E\left[e^{tX}\right]E\left[e^{tY}\right] \text{ by independence} \\ &= M(t) \cdot M(t) \\ &= \dfrac{1}{(1-t)^2}\text{, $t < 1$.}\end{align*}
+z \geq 0
+f_{Z}(z) = \dfrac{1}{1^{2}\Gamma(2)}z^{2-1}e^{-z/1} = ze^{-z}\text{, $z \geq 0$.}
+\begin{align*} P(Z < 1) = \int\limits_{0}^{1}ze^{-z} \text{ d}z &= z\left(-e^{-z}\right)\Big|^{z=1}_{z=0} - \int\limits_{0}^{1}-e^{-z}\text{ d}z \\ &= -e^{-1} -\left(e^{-1}-e^{0}\right) \\ &= 1- 2e^{-1} \\ &\approx 0.264\text{.}\end{align*}

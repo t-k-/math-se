@@ -1,0 +1,22 @@
+ f(x) = \left\{\begin{array}{cc} e^{- \frac{1}{x^2}} & x \neq 0 \\ 0 & x = 0 \end{array}\right. 
+\forall_{n\in \Bbb N} f^{(n)}(0) = 0
+0
+R(x)
+x
+R'(x)+\frac{2R(x)}{x^3}
+x
+ \begin{align} \frac{\mathrm{d}}{\mathrm{d}x}\left(R(x)\,e^{-1/x^2}\right) &=\left(R'(x)+\frac{2R(x)}{x^3}\right)e^{-1/x^2} \end{align} 
+R(x)
+ \frac{\mathrm{d}^k}{\mathrm{d}x^k}e^{-1/x^2}=R(x)\,e^{-1/x^2}\tag{1} 
+R(1/x)
+x
+n
+n
+ \lim_{x\to\infty}\frac{R(1/x)}{x^{2n}}=0 
+ \begin{align} \lim_{x\to+\infty}x^ne^{-x} &=\lim_{x\to+\infty}\frac{x^n}{e^x}\\ &=\lim_{x\to+\infty}\frac{n!}{e^x}&&\text{applying L'Hospital $n$ times}\\[5pt] &=0 \end{align} 
+ \begin{align} \lim_{x\to0}R(x)\,e^{-1/x^2} &=\lim_{u\to\infty}R(1/u)\,e^{-u^2}\\ &=\lim_{u\to\infty}\frac{R(1/u)}{u^{2n}}\,\lim_{u\to\infty}u^{2n}e^{-u^2}\\ &=\lim_{u\to\infty}\frac{R(1/u)}{u^{2n}}\,\lim_{v\to+\infty}v^ne^{-v}\\[7pt] &=0\cdot0\tag{2} \end{align} 
+(1)
+(2)
+ \lim_{x\to0}\frac{\mathrm{d}^k}{\mathrm{d}x^k}e^{-1/x^2}=0\tag{3} 
+f'(0):=\lim_{x\to 0}\frac{e^{-\frac{1}{x^2}}}{x}=\lim_{x\to 0}\frac{\frac{1}{x}}{e^{\frac{1}{x^2}}}\stackrel{\text{l'Hosp.}}=0
+f''(0):=\lim_{x\to 0}\frac{\frac{2}{x^3}e^{-\frac{1}{x^2}}}{x}=\lim_{x\to 0}\frac{\frac{2}{x^4}}{e^\frac{1}{x^2}}\stackrel{\text{l'Hosp.}\times 2}=0

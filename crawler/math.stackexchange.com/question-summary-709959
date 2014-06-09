@@ -1,0 +1,39 @@
+p(z|\theta) = \frac{n!}{\prod_i z_i!} \prod_i \theta_i^{z_i}
+p(\theta|\alpha) = \frac{1}{B(\alpha)}\prod_i \theta_i^{\alpha_i-1}
+p(z|\theta) \propto \prod_i \theta_i^{z_i}
+p(\theta|\alpha) \propto \prod_i \theta_i^{\alpha_i-1}
+p(z|\theta) p(\theta|\alpha) \propto \prod_i \theta_i^{z_i+\alpha_i-1}
+p(z|\theta) p(\theta|\alpha) = \frac{1}{B(z+\alpha)} \prod_i \theta_i^{z_i+\alpha_i-1}
+\frac{1}{B(z+\alpha)}
+\Gamma(x+1)=x!
+n=\sum_i z_i
+p(z|\theta) = \frac{n!}{\prod_i z_i!} \prod_i \theta_i^{z_i} = \frac{\Gamma(\sum_i z_i+1)}{\prod_i \Gamma(z_i+1)} \prod_i \theta_i^{z_i}
+\Gamma(1+x)=x\Gamma(x)
+p(z|\theta) = \frac{\sum_i z_i\Gamma(\sum_i z_i)}{\prod_i z_i \prod_i \Gamma(z_i)} \prod_i \theta_i^{z_i} = \frac{\sum_i z_i}{\prod_i z_i} \frac{1}{B(z)} \prod_i \theta_i^{z_i}
+p(z|\theta)p(\theta|\alpha) = \frac{\sum_i z_i}{\prod_i z_i} \frac{1}{B(z)} \frac{1}{B(\alpha)}\prod_i \theta_i^{z_i+\alpha_i-1}
+p(z|\theta) = \prod_i \theta_i^{z_i}
+[1,0,0,0,0,0]
+[0,1,0,0,0,0]
+\sum_i z_i = 1
+\frac{n!}{\prod_i z_i!}
+p(z|\theta)p(\theta|\alpha) = \frac{1}{B(\alpha)}\prod_i \theta_i^{z_i+\alpha_i-1}
+ \int p(z|\theta) p(\theta|\alpha) d\theta = \frac{1}{B(\alpha)} \int \prod_i \theta_i^{z_i+\alpha_i-1} d\theta
+B(\alpha)
+p(\theta|\alpha) = \frac{1}{B(\alpha)} \prod_i \theta_i^{\alpha_i-1}  = \frac{\prod_i \theta_i^{\alpha_i-1}}{\int_{\Delta^n} \prod_i \theta_i^{\alpha_i-1} d\theta}
+\int_{\Delta^n}
+\sum_i \theta_i = 1
+\int_{\Delta^n} \prod_i \theta_i^{\alpha_i-1} d\theta = B(\alpha)
+\int \prod_i \theta_i^{z_i+\alpha_i-1} d\theta = B(\alpha+z)
+ \int p(z|\theta) p(\theta|\alpha) d\theta = \frac{B(\alpha+z)}{B(\alpha)}
+ \int p(z|\theta) p(\theta|\alpha) d\theta = \frac{\prod_i \Gamma(\alpha_i+z_i)}{\Gamma(\sum_i (\alpha_i + z_i))} \frac{\Gamma(\sum_i \alpha_i)}{\prod_i \Gamma(\alpha_i)}
+ \int p(z|\theta) p(\theta|\alpha) d\theta = \frac{\Gamma(\sum_i \alpha_i)}{\Gamma(\sum_i \alpha_i + \sum_i z_i)} \prod_i \frac{\Gamma(\alpha_i + z_i)}{\Gamma(\alpha_i)}
+i
+z
+z
+n(z)
+z
+p(z|\theta) = \frac{(\sum_k n(z_k))!}{\prod_k (n(z_k)!)} \prod_k \theta_k^{n(z_k)}
+k
+ \int p(z|\theta) p(\theta|\alpha) d\theta = \frac{(\sum_k n(z_k))!}{\prod_k (n(z_k)!)} \frac{\Gamma(\sum_k \alpha_k)}{\Gamma(\sum_k \alpha_k + \sum_k n(z_k))} \prod_k \frac{\Gamma(\alpha_k + n(z_k))}{\Gamma(\alpha_k)}
+p(z|\theta) = \prod_k \theta_k^{z_k}
+k

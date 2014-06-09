@@ -1,0 +1,7 @@
+ u(t-a) = \begin{cases} 0, & \text{if }t<a \\ 1, & \text{if }t\geq a \end{cases} 
+ f(t) = \begin{cases} \cos2t, & \text{if }0\leq t \lt 2\pi \\ 0, & \text{if }t\geq 2\pi \end{cases} 
+f(t) = [1-u(t-2\pi)]\cos2t
+f(a,b) = u(t-a)-u(t-b); a>b
+[a,b)
+g(x) =  \begin{cases} g_1(x), & \text{if } a_1<x<a_2 \\ g_2(x), & \text{if } a_2<x<a_3\\ \ldots \end{cases}
+g(x) = g_1(x)f(a_2,a_1) + g_2(x)f(a_3,a_2)+\ldots

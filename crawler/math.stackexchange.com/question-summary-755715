@@ -1,0 +1,10 @@
+x>0
+ \int_0^ \infty e^{-x\sinh(t)-\frac{1}{2}t}~dt 
+ \frac{e^{-ix}\sqrt{\frac{\pi}{2}}(-i+ie^{2ix}\text{Erfc}[(-1)^{\frac{1}{4}}\sqrt{x}]+\text{Erfi}[(-1)^\frac{1}{4}\sqrt{x}])}{\sqrt{x}}  
+\int_0^\infty e^{-x\sinh t-\frac{t}{2}}~dt
+=2\int_\infty^0e^\frac{x(e^{-t}-e^t)}{2}~d(e^{-\frac{t}{2}})
+=2\int_0^1e^{\frac{xt^2}{2}-\frac{x}{2t^2}}~dt
+=\dfrac{i\sqrt\pi}{\sqrt{2x}}\left(e^{ix}\left(\text{erfc}\left(\dfrac{(i+1)\sqrt x}{\sqrt2}\right)-\text{erfc}(+\infty)\right)+e^{-ix}\left(\text{erfc}\left(\dfrac{(i-1)\sqrt x}{\sqrt2}\right)-\text{erfc}(-\infty)\right)\right)
+=\dfrac{i\sqrt\pi}{\sqrt{2x}}\left(e^{ix}~\text{erfc}\left(\dfrac{(i+1)\sqrt x}{\sqrt2}\right)+e^{-ix}\left(\text{erfc}\left(\dfrac{(i-1)\sqrt x}{\sqrt2}\right)-2\right)\right)
+=\dfrac{i\sqrt\pi}{\sqrt{2x}}\left(e^{ix}~\text{erfc}\left(\dfrac{(1+i)\sqrt x}{\sqrt2}\right)-e^{-ix}~\text{erfc}\left(\dfrac{(1-i)\sqrt x}{\sqrt2}\right)\right)
+ \frac{2}{x}+\sqrt{2\pi}\,\frac{\cos(x)}{x^{3/2}}+\sqrt{2\pi}\frac{\sin(x)}{x^{1/2}}-\pi {\bf{J}}_{\frac{1}{2}} ( x )-\frac{\pi}{x}{ \bf{J}}_{-\frac{1}{2}} ( x ) .

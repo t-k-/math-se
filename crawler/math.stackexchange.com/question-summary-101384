@@ -1,0 +1,30 @@
+ f(x,y)=\left\lbrace\begin{array}{ccl}[x+y]^{2} &\quad&|x|,|y| <12 ,\quad xy \leq 0\\ 0 &\quad&\text{otherwise}\end{array} \right.
+\mathbb{R}^2
+f
+[\cdot]
+f
+a_{mn}\neq 0
+(m,n)\in\mathbb{Z}^2
+-N\leq m\leq N-1
+-N\leq n\leq N-1
+mn\leq 0
+f
+a_{mn}
+A_{mn}=B_{mn}\cup C_{mn}
+B_{mn}\cap C_{mn}=\varnothing
+N=12
+7008
+ A_{m,n}=\{(x,y):m\leq x<m+1,\quad n\leq y<n+1\}\qquad a_{mn}=\int_{A_{m,n}}f(x,y)d\mu(x,y) 
+ \int_{\mathbb{R}^2}f(x,y)d\mu(x,y)=\sum_{(m,n)\in\mathbb{Z}^2}a_{mn} 
+ \int_{\mathbb{R}^2}f(x,y)d\mu(x,y)=\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}a_{mn}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}a_{mn} 
+ B_{mn}=\{(x,y)\in A_{mn}:x+y<m+n+1\}\qquad C_{mn}=\{(x,y)\in A_{mn}:x+y\geq m+n+1\} 
+ f(x,y)=(m+n)^2\quad\text{for}\quad(x,y)\in B_{mn} 
+ f(x,y)=(m+n+1)^2\quad\text{for}\quad(x,y)\in C_{mn} 
+ \begin{align} a_{mn}=\int_{A_{m,n}}f(x,y)d\mu(x,y) &=\int_{B_{m,n}}f(x,y)d\mu(x,y)+\int_{C_{m,n}}f(x,y)d\mu(x,y)\\ &=(m+n)^2\mu(B_{mn})+(m+n+1)^2\mu(C_{mn})\\ &=\frac{1}{2}(m+n)^2+\frac{1}{2}(m+n+1)^2\\ &=m^2+n^2+2mn+m+n+0.5 \end{align} 
+ \int_{\mathbb{R}^2}f(x,y)d\mu(x,y)=\sum_{(m,n)\in\mathbb{Z}^2}a_{mn}= \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(m^2+n^2+2mn+m+n+0.5) 
+ \begin{align} \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(m^2) &=\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}m^2+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}m^2\\ &=N\sum\limits_{m=-N}^{-1}m^2+N\sum\limits_{m=0}^{N-1}m^2\\ &=N\sum\limits_{m=1}^{N}m^2+N\sum\limits_{m=1}^{N-1}m^2\\ &=N\frac{N(N+1)(2N+1)}{6}+N\frac{N(N-1)(2N-1)}{6}\\ &=\frac{2N^4+N^2}{3}\\ \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(m) &=\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}m+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}m\\ &=N\sum\limits_{m=-N}^{-1}m+N\sum\limits_{m=0}^{N-1}m\\ &=N\sum\limits_{n=-N}^{N-1}m=N\cdot(-N)=-N^2 \end{align} 
+ \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(n^2)=\frac{2N^4+N^2}{3} 
+ \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(n)=-N^2 
+ \begin{align} \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(mn) &=\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}mn+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}mn\\ &=\sum\limits_{m=-N}^{-1}m\sum\limits_{n=0}^{N-1}n+\sum\limits_{m=0}^{N-1}m\sum\limits_{n=-N}^{-1}n\\ &=-\sum\limits_{m=1}^{N}m\sum\limits_{n=0}^{N-1}n-\sum\limits_{m=0}^{N-1}m\sum\limits_{n=1}^{N}n\\ &=-\frac{N(N+1)}{2}\frac{N(N-1)}{2}-\frac{N(N-1)}{2}\frac{N(N+1)}{2}\\ &=-\frac{N^2(N^2-1)}{2}\\ \left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(0.5) &=\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}0.5+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}0.5\\ &=0.5N^2+0.5N^2\\ &=N^2 \end{align} 
+ \begin{align} \int_{\mathbb{R}^2}f(x,y)d\mu(x,y) &=\left(\sum\limits_{m=-N}^{-1}\sum\limits_{n=0}^{N-1}+\sum\limits_{m=0}^{N-1}\sum\limits_{n=-N}^{-1}\right)(m^2+n^2+2mn+m+n+0.5)\\ &=\frac{2N^4+N^2}{3}+\frac{2N^4+N^2}{3}-2\frac{N^2(N^2-1)}{2}-N^2-N^2+N^2\\ &=\frac{N^4+2N^2}{3} \end{align} 
+f(x,y)\ne0

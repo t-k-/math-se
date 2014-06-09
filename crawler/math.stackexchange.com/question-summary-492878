@@ -1,0 +1,13 @@
+\large\int \limits_{0}^{\frac{\pi}{2}} \ln(\sin(x)) \ln( \cos(x))\mathrm dx
+\begin{align} \int \limits_{0}^{\frac{\pi}{2}} \ln(\sin(x)) \ln( \cos(x))\,\mathrm dx&=-\sum \limits_{k=1}^\infty \frac{1}{k}\int \limits_{0}^{\frac{\pi}{2}} \sin^{2k}(x)\ln(\sin(x))\,\mathrm dx\\ &=-\sum \limits_{k=1}^\infty \frac{1}{k}\int_{0}^{\frac{\pi}{2}} \sin^{2k}(x)\ln(\sin(x))\,\mathrm dx\\ &=-\sum \limits_{k=1}^\infty \frac{1}{k}\int_{0}^{1} u^{2k}\ln(u)\frac{\mathrm du}{1-u^2}\\ &=-\sum \limits_{k=1}^\infty \frac{1}{k} \left(\int_{0}^{1} u^{2k}\ln(u)\,\mathrm du+ \sum \limits_{j=1}^\infty \frac{(2j-1)!!}{(2j)!!} \int_{0}^{1} u^{2(k+j)}\ln(u)\,\mathrm du \right)\\ &=\sum \limits_{k=1}^\infty \frac{1}{k} \left( \frac{1}{(2k+1)^2}+\sum \limits_{j=0}^\infty  \frac{(2j-1)!!}{(2j)!!} \frac{1}{(2(k+j)+1)^2} \right)\end{align}
+|\sin(x)|, |u|\le1
+ \beta(x,y) = 2\int_0`^{\frac{\pi}{2}} \sin^{2x-1}(t) \cos^{2y-1}(t) \ dt 
+ \frac{\partial }{\partial x} \beta(x,y) = 4\int_0^{\frac{\pi}{2}} \sin^{2x-1}(t)\ln(\sin t) \cos^{2y-1}(t) \ dt
+ \frac{\partial}{\partial y} \left( \frac{\partial}{\partial x} \beta(x,y) \right) = 8\int_0^{\frac{\pi}{2}} \sin^{2x-1}(t) \ln(\sin t ) \ln(\cos t) \cos^{2y-1}(t) \ dt 
+ \beta(x,y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)} 
+ x =\frac{1}{2} , y = \frac{1}{2} 
+ \psi \left(\frac{1}{2} \right) = -2\ln 2 - \gamma 
+ \psi(1) = -\gamma 
+ \psi^{(1)}(1) = \frac{\pi^2}{6} 
+ \beta \left( \frac{1}{2} , \frac{1}{2} \right) = \frac{\Gamma \left( \frac{1}{2} \right)^2}{\Gamma(1)} = \pi 
+ = \frac{\pi}{8} \left(4\ln(2)^2 - \frac{\pi^2}{6} \right) 

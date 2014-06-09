@@ -1,0 +1,33 @@
+f
+B(x_0,R)\subseteq\mathbb R^N
+x_0
+r
+{\rm d}x
+\mathbb R^N
+\mathbb R^{N-1}
+   \int_{B(x_0,R)}   {     \hspace{-20pt}     f(x)\,{\rm d} x   } =   \int_0^R   {     \hspace{-5pt}     {\rm d}r     \int_{\partial B(x_0,r)}     {       \hspace{-25pt}       f(x)\,{\rm d} x     }   } 
+\varrho(x)
+\Omega(t)=B(x_0,t)\subseteq\mathbb R^2
+\varrho\equiv 1
+t,t'
+C^2
+f(\,\cdot\,,t,t'):\Omega(t)\rightarrow\Omega(t')
+x\in\partial\Omega(t)
+\varrho(x)
+\Omega(t)=B(x_0,t)
+f(x,t,t') = x_0 + \frac{t'}{t}(x-x_0)
+x_0
+\rho(x)=1
+\forall x
+\{f(\,\cdot\,,t,t')\}_{t,t'\in(0,1]}
+   \varrho(x) =   \left|     \lim_{h\to 0^+}     {       \frac{f(x,t,t+h)-x}{h}     }   \right| =   \left|     \frac{\partial f}{\partial t'}(x,t,t)   \right| 
+\lambda
+\sigma
+\mathbb R
+\mathbb{R}^{N-1}
+\mu=\lambda\!\otimes\!\sigma
+f
+\mu'=f\,{\rm d}\mu
+\sigma'=f\,{\rm d}\sigma
+   \mu\big(B(x_0,R)\big) =   \int_{B(x_0,R)}   {     \hspace{-20pt}    {\rm d} \mu   } =   \int_{[0,R)}   {     \hspace{-15pt}     {\rm d}\lambda(r)     \int_{\partial B(x_0,r)}     {       \hspace{-25pt}       \,{\rm d} \sigma     }   } 
+   \mu\big(\Omega(t)\big) =   \int_{\Omega(t)}   {     \hspace{-13pt}     {\rm d} \mu   } =   \int_{[0,t)}   {     \hspace{-10pt}     {\rm d}\lambda(\tau)     \int_{\partial\Omega(\tau)}     {       \hspace{-15pt}       \varrho\,{\rm d} \sigma     }   } 

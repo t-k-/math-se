@@ -1,0 +1,19 @@
+ \lim_{a \to \infty} \int\limits_0^{2010} \sqrt{x(1+\cos ax)} \ dx 
+a
+M=2010
+\nu = \frac{a}{2\pi}
+L(\nu)=\int_0^M \sqrt{x(1+\cos 2\pi\nu x)}\,dx
+\lim_{\nu\to\infty}L(\nu)
+\nu
+\frac{1}M
+\lfloor \nu x \rfloor
+\lceil \nu x \rceil
+\int_0^M \sqrt{\frac{\lfloor \nu x\rfloor}{\nu}}\sqrt{1+\cos 2\pi\nu x}\,dx \le L(\nu) \le \int_0^M \sqrt{\frac{\lceil\nu x\rceil}{\nu}}\sqrt{1+\cos 2\pi\nu x}\,dx
+K \int_0^M \sqrt{\frac{\lfloor \nu x\rfloor}{\nu}}\,dx \le L(\nu) \le K \int_0^M \sqrt{\frac{\lceil\nu x\rceil}{\nu}}\,dx
+K = \int_0^1 \sqrt{1+\cos 2\pi u}\,du = \frac{1}{2\pi} \int_0^{2\pi} \sqrt{1+\cos t}\,dt
+L(\nu)
+\int_0^M \sqrt{x}\,dx
+L(\nu)
+K\int_0^M\sqrt{x}\,dx = \frac{1}{2\pi} \int_0^{2\pi} \sqrt{1+\cos t}\,dt \int_0^M\sqrt{x}\,dx = \frac{4\sqrt 2}{2\pi}\cdot\frac{2}{3}\cdot M^{3/2} 
+\lim_{\nu\to\infty} \int_a^b f(x)g(\nu x)\,dx
+g

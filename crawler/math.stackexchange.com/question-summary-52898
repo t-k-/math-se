@@ -1,0 +1,6 @@
+ \text{eqns}=(M+m)x\text{''}[t]-m l \text{Sin}[\theta [t]] \theta '[t]^2+m l \text{Cos}[\theta [t]] \theta \text{''}[t]\text{==}F[t]+d[t] \text{Cos}[\theta [t]], 
+ m x\text{''}[t] \text{Cos}[\theta [t]]+m l \theta \text{''}[t]==m g \text{Sin}[\theta [t]]+d[t]; 
+ \text{invPendulum} = \text{StateSpaceModel}[\text{eqns},\{\theta [t],\theta '[t],x[t],x'[t]\},\{F[t],d[t]\},\{\theta [t],x[t]\},t]; 
+\text{Eigenvalues}[\text{First}[\text{Normal}[\text{invPendulum}]]]\text{/.}\{M\to 5.6,m\to 0.53,l\to 1.7,g\to 9.8\};
+\text{feedbackgains} = \text{StateFeedbackGains}[\text{invPendulum},\{-1+ 5I, -1-5I, -3+I, -3-I\}, \text{Method}\to \text{Ackermann}]; 
+ \text{output}=\text{OutputResponse}[\{\text{SystemsModelStateFeedbackConnect}[\text{invPendulum},\text{feedbackgains}]\{0.12,0,0,0\}\},\{0\},\{t,4\}]; 

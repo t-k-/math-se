@@ -1,0 +1,28 @@
+\mathbb R^n
+A
+B
+x \mapsto \max(x^TAx, x^TBx)
+C = \max(A,B)
+C
+x^TCx \ge x^TAx
+x^TCx \ge x^TBx
+x
+C
+C
+\max
+\max(A,A) = A
+A
+B
+\lambda_i
+\mu_i
+\max(A,B)
+\max(\lambda_i,\mu_i)
+P
+P^T(B-A)P=\operatorname{diag}(\alpha_1,\ldots,\alpha_n)
+|B-A|
+P^T|B-A|P=\operatorname{diag}(|\alpha_1|,\ldots,|\alpha_n|)
+|B-A|=P\operatorname{diag}(|\alpha_1|,\ldots,|\alpha_n|)P^T
+\max(A,B):=\frac 12\left(A+B+|A-B|\right)
+x\in\mathbb R^n
+\operatorname{diag}(\alpha_1+|\alpha_1|,\ldots,\alpha_n+|\alpha_n|)
+x^T\max(A,B)x-x^TBx=\frac 12(P^Tx)^T(\operatorname{diag}(-\alpha_1,\ldots,-\alpha_n)+\operatorname{diag}(|\alpha_1|,\ldots,|\alpha_n|))P^Tx\geq 0.

@@ -1,0 +1,11 @@
+1 \leq \phi(m) \leq \lceil \frac{m-1}{2} \rceil ~~
+~~m~~
+\lceil \frac{m+1}{3} \rceil \leq\phi(m) \leq m-1 ~~
+~~m~~
+ m
+m=n-1
+n=2^r \cdot q_1^{r_1} \cdot q_2^{r_2} \cdots q_k^{r_k}+1 \Rightarrow 
+\Rightarrow \phi(n-1)=\phi(2^r) \cdot \phi(q_1^{r_1})\cdots \phi(q_k^{r_k})=\phi(2^r) \cdot q_1^{r_1-1}(q_1-1)\cdots q_k^{r_k-1}(q_k-1)=
+=\phi(2^r) \cdot q_1^{r_1} \frac{(q_1-1)}{q_1} \cdots  q_k^{r_k} \frac{(q_k-1)}{q_k} < \phi(2^r) \cdot \frac{n-1}{2^r}=2^{r-1}\cdot \phi(2) \cdot \frac{n-1}{2^r}=\frac{n-1}{2}= \lceil \frac{n}{2}-1 \rceil \Rightarrow
+\Rightarrow \phi(m) < \lceil \frac{m-1}{2} \rceil
+m

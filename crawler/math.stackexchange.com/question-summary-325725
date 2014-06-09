@@ -1,0 +1,31 @@
+A\in\mathcal{M}_n(\mathbb{C})
+z\neq0
+P
+A
+f(z)=\sum_{p=1}^{\infty}\mathrm{tr}(A^p)z^p
+\mathrm {tr}\,\left(\sum_{p=0}^\infty (zA)^p\right) = tr((I-zA)^{-1})
+p(x)=x^n+a_{n-1}x^{n-1}\dots a_0
+I-zA
+(I-zA)^{-1}
+x^n + \frac{a_1}{a_0}x^{n-1} + \frac{a_2}{a_0}x^{n-2}\dots + \frac{1}{a_0}
+x^{n-1}
+I-zA
+\frac{-a_1}{a_0}
+q
+A
+p(x)=\det (xI - (I-zA)) = (-z)^n \det(\frac{1-x}zI-A) = (-z)^nq(\frac{1-x}z)
+q
+p(x)=(-z)^nq(\frac{1-x}z)
+a_1
+a_0
+a_0=p(0)
+a_1=p'(0)
+-\frac{a_1}{a_0} = \frac{q'(\frac{1}{z})}{zq(\frac{1}{z})}
+A=I
+q(x)=(x-1)^n
+q'(x)=n(x-1)^{n-1}
+\frac{n}{1-z}
+B_p=\mathrm{tr}(A^p)
+A
+x^n+a_{n-1}x^{n-1}+\dots+a_0
+B_{p+n} = -\sum_{i=0}^{n-1} a_i B_{p+i}

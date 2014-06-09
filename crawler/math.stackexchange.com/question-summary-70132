@@ -1,0 +1,25 @@
+N
+p
+E[N]
+\frac{2-p}{p^2}
+E[N]
+Y=0
+Y=1
+E[N|Y=1]=1
+E[N|Y=0]=1+E[N]
+E[N]=E[E[N|Y]]=\frac{1}{p}
+E[N^2]
+\mathbb{E}(N^2 | Y=0) = \mathbb{E}((1+N)^2) = \mathbb{E}(N^2) + 1 + \frac{2}{p}
+   \mathbb{E}(N) = \mathbb{E}( \mathbb{E}(N | Y)) = p \cdot 1 + (1-p)( 1+ \frac{2}{p} + \mathbb{E}(N^2) ) \implies \mathbb{E}(N^2) = \frac{2-p}{p^2} 
+N
+N=1
+Y=1
+N=1+N'
+N'
+N
+Y=0
+N
+\mathrm P(A)=1-p
+A
+N
+ N\stackrel{(d)}{=}1+\mathbf 1_AN\qquad\qquad  (*) 

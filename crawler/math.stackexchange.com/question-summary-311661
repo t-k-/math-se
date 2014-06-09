@@ -1,0 +1,23 @@
+\displaystyle z
+\int_0^\infty\frac{\text{d}x}{x^2+(1-z^2x^2)^2}
+ \int_0^\infty\frac{\text{d}x}{x^2+(1-z^2x^2)^2}=\frac{1}{2}\int_{-\infty}^{\infty}\frac{\text{d}x}{x^2+(1-z^2x^2)^2}. 
+ \frac{1}{2}\int_{-\infty}^{\infty}\frac{\text{d}x}{x^2+(1-z^2x^2)^2}= \frac{1}{2}\int_{-\infty}^{\infty}\frac{\text{d}x}{(x^2+\alpha^2)^2+\beta^2}, 
+ \frac{1}{2}\int_{-\infty}^{\infty}\frac{e^{-ixw}\text{d}x}{(x^2+\alpha^2)^2+\beta^2}. 
+\begin{align} r_1,r_2,r_3,r_4 &= \pm\sqrt{\frac{2z^2-1\pm\sqrt{1-4z^2}}{2z^4}}\\ &=\frac{\pm1}{2z^2}\left(i\pm\sqrt{4z^2-1}\right) \end{align}
+\begin{align} \int_0^\infty \frac{dx}{x^2+(1-z^2x^2)^2} &= \frac{1}{2}\int_{-\infty}^\infty \frac{dx}{x^2+(1-z^2x^2)^2} \\ &= \frac{1}{2}\int_{-\infty}^\infty \frac{1/z^4}{x^4+(1-2z^2)x^2/z^4+1/z^4} dx \\ &= \frac{1}{2z^4}\int_{-\infty}^\infty f(x) dx \end{align}
+f(z)
+f(z)
+1/z^2
+|z|\rightarrow\infty
+\sum\mathrm{res\,\,}f
+f(x) = \frac{1}{(x-r_1)(x-r_2)(x-r_3)(x-r_4)}.
+\frac{1}{2z^4}\int_{-\infty}^\infty f(x)dx = \frac{\pi i}{z^4}\sum\mathrm{res\,\,}f
+\begin{align} r_1 &= \frac{1}{2z^2}\left(i+\sqrt{4z^2-1}\right) \\ r_2 &= -r_1 \\ r_3 &= \frac{1}{2z^2}\left(i-\sqrt{4z^2-1}\right) \\ r_4 &= -r_3 \end{align}
+z
+r_1
+r_3
+\begin{align} \sum\mathrm{res\,\,}f &= \frac{1}{(r_1-r_2)(r_1-r_3)(r_1-r_4)} + \frac{1}{(r_3-r_1)(r_3-r_2)(r_3-r_4)} \\ &= -i\frac{z^4}{2} \end{align}
+\begin{align} \int_0^\infty \frac{dx}{x^2+(1-z^2x^2)^2} &= \frac{\pi i}{z^4}\frac{-iz^4}{2} \\ &= \frac{\pi}{2} \end{align}
+z
+z
+z

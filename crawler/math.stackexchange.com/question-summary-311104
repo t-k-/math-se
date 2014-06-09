@@ -1,0 +1,9 @@
+F
+\cdot
+\sum_{n=0}^\infty a_nx^n \cdot \sum_{n=0}^\infty b_nx^n = \sum_{n=0}^\infty\bigg(\sum_{k=0}^n a_kb_{n-k}\bigg)x^n
+a_jb_kc_m
+j+k+m=n
+j
+k
+m
+\begin{align*} \sum_{n=0}^\infty a_nx^n \cdot \bigg(\sum_{n=0}^\infty b_nx^n \cdot \sum_{n=0}^\infty c_nx^n\bigg)&=\sum_{n=0}^\infty a_nx^n \cdot \sum_{n=0}^\infty\bigg(\sum_{k=0}^n b_kc_{n-k}\bigg)x^n\\ &=\sum_{n=0}^\infty \bigg(\sum_{j=0}^na_j\bigg(\sum_{k=0}^{n-j}{\color{red}{b_{k}c_{(n-j)-k}}}\bigg)\bigg)x^n\\ &=\sum_{n=0}^\infty \bigg(\sum_{j=0}^n\sum_{k=0}^{n-j}a_j{\color{red}{b_{k}c_{n-j-k}}}\bigg)x^n \end{align*}

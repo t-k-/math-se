@@ -1,0 +1,21 @@
+f(t)
+0 \le t \le T
+g(\tau ) = f(t)
+\tau \equiv T-t
+0 \le \tau \le T
+\displaystyle F(t) = \int_0^t f(\sigma) d \sigma
+\displaystyle\frac {dg(\tau)} {d\tau} = -\frac {df(t)} {dt}
+\frac {dg(\tau)} {d\tau} = \frac {dg(\tau)} {dt} * \frac {dt} {d\tau}  =\frac {df(t)} {dt} * \frac {d(T-\tau)} {d\tau} = - \frac {df(t)} {dt}
+\displaystyle F\left( t \right) = \int\limits_{T - t}^T {g\left( \sigma  \right)d\sigma } 
+\because g\left( \sigma  \right) = g\left( {T - t} \right) = f\left( t \right)
+a = T - \sigma
+\Rightarrow da =  - d\sigma
+\begin{gathered}    \Rightarrow F\left( t \right) = \int\limits_0^t {g\left( {T - \sigma } \right)d\sigma }  =  - \int\limits_T^{T - t} {g\left( a \right)da}  = \int\limits_{T - t}^T {g\left( a \right)da}   \\  \end{gathered} 
+f(t)=t^2+2
+0 \le t \le 6
+g(\tau)
+\displaystyle\frac {dg(\tau)} {d\tau}
+g\left( \tau  \right) = g\left( {T - t} \right) = f\left( t \right) = {t^2} + 2
+\frac{{dg\left( \tau  \right)}}{{d\tau }} =  - \frac{{df\left( t \right)}}{{dt}} =  - 2t
+\begin{align*}   g\left( \tau  \right) & = {\left. {f\left( t \right)} \right|_{t = T - \tau }}  \\    & = {\left. {\left( {{t^2} + 2} \right)} \right|_{t = 6 - \tau }}  \\    & = {\left( {6 - \tau } \right)^2} + 2  \\    & = 36 - 12\tau  + {\tau ^2} + 2  \\    & = {\tau ^2} - 12\tau  + 38  \\   \frac{{dg\left( \tau  \right)}}{{d\tau }} & = 2\tau  - 12   \end{align*} 
+g(\tau)=f(T-\tau)

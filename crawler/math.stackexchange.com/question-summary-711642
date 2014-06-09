@@ -1,0 +1,20 @@
+v_p(n)
+p
+n
+v_p(n!)=\sum_{t=1}^\infty \left\lfloor \frac{n}{p^t} \right\rfloor
+v_p(n!) = v_p(n) + v_p(n-1) + \cdots + v_p(2) + v_p(1)
+\sum_{t=1}^\infty \left\lfloor \frac{n}{p^t} \right\rfloor = \left\lfloor \frac{n}{p} \right\rfloor + \left\lfloor \frac{n}{p^2} \right\rfloor + \cdots +\left\lfloor \frac{n}{p^r} \right\rfloor = p^{r-1} + p^{r-2} + \cdots + p + 1
+p^r||n
+n=9
+p=2
+9!
+9! = 1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot8\cdot9.
+2
+\lfloor n/p^t\rfloor
+p^t
+1
+n
+ \begin{array}{c|ccccccccc|c}  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & \text{How many?} \\ \hline \text{multiple of }2 &&x&&x&&x&&x&& \lfloor9/2\rfloor=4 \\ \text{multiple of }4 &&&&x&&&&x&& \lfloor9/4\rfloor=2\\ \text{multiple of }8 &&&&&&&&x&& \lfloor9/8\rfloor=1 \end{array} 
+v_2(9!)
+x
+x

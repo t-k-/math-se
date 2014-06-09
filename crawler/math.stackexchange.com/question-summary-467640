@@ -1,0 +1,57 @@
+\mathcal{C}
+\phi
+\psi
+x
+y
+X
+Y
+\phi
+\forall x : X . \psi
+y : Y
+x
+\phi
+\phi
+y
+\forall
+\forall x : X . \psi
+\psi
+a
+x
+\frac{x : X, y : Y \mid \phi \vdash \psi}{y : Y \mid \phi \vdash \forall x : X . \psi}
+\frac{y : Y \mid \phi \vdash \forall x : X . \psi}{x : X, y : Y \mid \phi \vdash \psi}
+\frac{y : Y \mid \phi \vdash \forall x : X . \psi \qquad a : X}{y : Y \mid \phi \vdash \psi[a/x]},
+L
+\mathit{Form}(\vec{x})
+L
+\vec{x}
+\phi(\vec{x})
+Form(\vec{x})
+|\phi(\vec{x})|
+\phi(\vec{x})
+E_{\vec{x}}
+\mathit{Form}(\vec{x})
+|\phi(\vec{x})| \Rightarrow |\psi(\vec{x})|
+|\phi(\vec{x})| \vdash |\phi(\vec{x})|
+\Rightarrow
+E_{\vec{x}}
+(E_{\vec{x}}, \Rightarrow)
+(E_{\vec{x}, y}, \Rightarrow)
+\vec{x}
+\vec{x}, y
+y
+\vec{x}
+\vec{x}
+\vec{x}, y
+f_*
+|\phi(\vec{x})| \in E_{\vec{x}}
+|\phi(\vec{x})| \in E_{\vec{x}, y}
+f^*
+|\phi(\vec{x}, y)| \in E_{\vec{x}, y}
+|\forall y\,\phi(\vec{x}, y)| \in E_{\vec{x}}
+(f_*, f^*)
+E_{\vec{x}}
+E_{\vec{x}, y}
+f_*(|\phi(\vec{x})|) = |\psi(\vec{x},y)|\quad
+\quad|\,\phi(\vec{x})\,| = f^*(|\psi(\vec{x},y)|)
+\phi(\vec{x}) \vdash \psi(\vec{x},y)\quad
+\quad\phi(\vec{x}) \vdash \forall y\,\psi(\vec{x},y)

@@ -1,0 +1,13 @@
+n=0
+n
+ h_{n} + h_{n-1} + h_{n-2} = 2h_{n-1}+ 2h_{n-2} + h_{n-3}\leq 2h_{n-1}+ 2h_{n-2} + 2h_{n-3}\leq 2 \cdot 2 ^n = 2^{n+1}
+F_0 = F_1 = 1
+F_{n} = F_{n-1} + F_{n-2}
+n\ge 2
+F_0 = 1 \le 2^{0}=1
+F_1 = 1 \le 2^1
+F_{n+1}/F_n
+\frac{F_{n+1}}{F_n} = \frac{F_n + F_{n-1}}{F_n} = 1 + \frac{F_{n-1}}{F_n}
+n\ge 2
+\frac{F_{n+1}}{F_n} = 1 + \frac{F_{n-1}}{F_n} \le 1 + 1 = 2
+h_{n+1}/h_n

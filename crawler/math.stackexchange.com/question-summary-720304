@@ -1,0 +1,18 @@
+k
+X_1,\ldots,X_k
+E[X_1\,|\,X_1+\cdots+X_k=n]
+\frac{n}{k}
+n
+\frac{n}{k}
+P[X_1+\cdots+X_k=n] = \frac{k}{n}\sum_{j} jP[X_1=j]P[X_2+\cdots+X_k=n-j].
+E[X_1^2\,|\, X_1+\cdots+X_k=n]=(\frac{n}{k})^2
+E[X_1^2\,|\, X_1+\cdots+X_k=n]?
+\binom{k}{n}=\frac{k}{n^2}\left(\binom{k-1}{n-1}+(k-1)\binom{k-2}{n-2}\right)
+E[X_1^2|S_k=n]=\frac{1}{k}E[X_1^2+\cdots+X_k^2|S_k=n] = \frac{1}{k} E[S_k^2-2\sum_{i<j}X_iX_j|S_k=n] = \frac{1}{k}\left(n^2-k(k-1)E[X_1X_2|S_k=n]\right)
+E[X_1X_2|S_k=n] = \sum_{x,y}xyP[X_1=x,X_2=y|S_k=n] = \sum_{x,y}f(x)f(y)\frac{P[S_{k-2}=n-x-y]}{P[S_k=n]}
+E[X_1^2|S_k=n]
+E[X_1^2|S_k=n] = \sum_{x}x^2\frac{f(x)P[S_{k-1}=n-x]}{P[S_k=n]}
+f(x)=P[X_1=x]
+E[X_1^2|S_k=n]
+X_i
+p=1/2

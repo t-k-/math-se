@@ -1,0 +1,21 @@
+ \sum_{k=1}^{n} k^{1/k} \sim n
+ \int_{3}^{n+1} t^{1/t} \mathrm dt +\sqrt{2}+1 \leq \sum_{k=1}^{n} k^{1/k} \leq \int_{3}^{n} t^{1/t} \mathrm dt +3^{1/3}+\sqrt{2}+1
+ \int_{3}^{n+1} t^{1/t} \mathrm dt= (n+1)^{1+\frac{1}{n+1}}-3^{1/3+1}+\int_{3}^{n+1}(\ln(t)-1)t^{1/t-1}\mathrm dt 
+ \int_{3}^{n} t^{1/t} \mathrm dt= n^{1+\frac{1}{n}}-3^{1/3+1}+\int_{3}^{n}(\ln(t)-1)t^{1/t-1}\mathrm dt 
+ \int_{3}^{n}(\ln(t)-1)t^{1/t-1}\mathrm dt=o(n) 
+ \int_{3}^{n+1}(\ln(t)-1)t^{1/t-1}\mathrm dt=o(n) 
+ \sum_{k=1}^{n} k^{1/k}=n+\sum_{k=1}^{n} \frac{\ln(k)}{k}+O(1)
+ \sum_{k=1}^{n} \frac{\ln(k)}{k}=\frac{\ln(n)^2}{2}+o(\frac{\ln(n)^2}{2}) 
+ \sum_{k=1}^{n} \frac{\ln(k)}{k}-\frac{\ln(n)^2}{2}=O(1) 
+n \ge 4
+ \frac{1 + 1 + \dots + 1 + n^{1/3} + n^{1/3} + n^{1/3}}{n} \ge n^{1/n}
+\text{AM} \ge \text{GM}
+n-3
+1
+n^{1/3}
+ 1 - \frac{3}{n} + \frac{3}{n^{2/3}} \ge n^{1/n}
+ n \le \sum_{k=1}^{n} k^{1/k} \le C+ \sum_{k=4}^n (1 - \frac{3}{k} + \frac{3}{k^{2/3}})
+\sum_{k=1}^{n} k^{-2/3}  = \mathcal{O}(\int_{1}^{n} x^{-2/3} dx)
+\sum_{k=1}^{n} \frac{1}{k} = \mathcal{O}(\log n)
+ n \le \sum_{k=1}^{n} k^{1/k} \le n +  \mathcal{O}(n^{1/3})
+ 1 \le \frac{1}{n}\sum_{k=1}^{n} k^{1/k} \le 1 + \mathcal{O}(n^{-2/3})

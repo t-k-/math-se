@@ -1,0 +1,5 @@
+L_1=\lceil\log_2x\rceil
+x>0
+L_i = \lceil \log_2L_{i-1} \rceil
+T[1]=1
+T[x]=\sum_{i=1}^{L_1}\frac{xT[L_1-i+1]}{2^i}?

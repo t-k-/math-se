@@ -1,0 +1,14 @@
+f(at)
+F\{f(at)\}(w) = \int f(at) e^{-jwt} dt
+u = at
+du = a dt
+\frac{du}{a} = dt
+ \int f(u) e^{-j\frac{w}{a}u} \frac{du}{a} = \frac{1}{a} \int f(u) e^{-j\frac{w}{a}u} du = \frac{1}{a} F \{f(u)\}(\frac{w}{a}) 
+ \frac{1}{|a|} F \{f(u)\}(\frac{w}{a}) 
+F\{f(-t)\}(\omega)=F\{f(t)\}(-\omega)
+a<0
+a=-\vert a\vert
+F\{f(at)\}=F\{f(-\vert a\vert t)\}(\omega)=F\{f(\vert a\vert t)\}(-\omega)=\frac{1}{\vert a\vert}F\{f(t)\}(\frac{-\omega}{\vert a\vert})=\frac{1}{\vert a\vert}F\{f(t)\}(\frac{\omega}{a})
+t
+t\to at
+a

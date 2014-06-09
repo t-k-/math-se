@@ -1,0 +1,45 @@
+f'
+[a,b]
+f(a)=0
+\exists A\in\mathbb{R}\;(|f'|\le A|f|\,\text{on }[a,b])
+f = 0
+[a,b]
+x_0\in [a,b]
+M_0 = \sup |f|([a,x_0])
+M_1=\sup |f'|([a,x_0])
+x\in [a,x_0]
+M_0= 0
+f = 0
+[a,x_0]
+A(x_0 - a) < 1
+|f(x)|\le M_1(x_0 -a)\le A(x_0-a)M_0
+f(a) = y_0 > 0
+f(t)\le y_0*e^{A(t-a)}
+f(t) = 0
+t > a
+\ln (f(t))
+\beta < b
+\gamma = \min(b,\beta+\frac{1}{A})
+\beta_1\in (\beta, \gamma)
+x\in [\beta,\beta_1]
+|f(x)| = |f(x) - f(\beta)|\le M_1(x-\beta)\le A(\beta_1-\beta)M_0
+A(\beta_1-\beta) < A(\gamma-\beta)\le 1
+M_0 = \sup |f|([\beta,\beta_1]),\; M_1 = \sup |f'|([\beta,\beta_1])
+M_0 \overset{(\star)}{=} 0
+f([a,\beta_1]) = f([a,\beta]\cup [\beta,\beta_1]) = \{0\}
+\beta < \beta_1 \in [a,b]
+\beta.\;\square
+\star
+(0\le M_0 \le sM_0 \wedge s<1)\implies (0\le (1-s)M_0 \le 0)\implies (M_0=0)\tag{$\star$}
+f(t) = 0
+t > a
+c \in (a,b]
+f(c) = 0
+g(t) = f(-t)
+|g'(t)| \leq A |g(t)|
+f
+g
+[-c,-a]
+g(-c) = 0
+g\equiv 0
+g(-a) = y_0 > 0

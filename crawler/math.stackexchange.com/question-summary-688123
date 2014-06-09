@@ -1,0 +1,47 @@
+x_{i+1}=  \left( \begin{array}{ccc} 2 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{array} \right) x_i +  \left( \begin{array}{ccc} 1 & 0  \\ 0 & 1  \\ 0 & 2  \end{array} \right) u_i
+i \geq 0
+y_i=  \left( \begin{array}{ccc}  0& 1 &-1\end{array} \right) x_i
+x_f =  \left( \begin{array}{ccc}  2 & 2 & 2\end{array} \right)^T 
+x_0 =  \left( \begin{array}{ccc}  2 & 2 & 2\end{array} \right)^T 
+x_0 = 0
+x_1 = B u_0
+B
+\operatorname{im} B = \operatorname{span} \left(\begin{bmatrix} 1 & 0 & 0 \end{bmatrix}^\top,\begin{bmatrix} 0 & 1 & 2 \end{bmatrix}^\top \right) \\ = \{\begin{bmatrix} 1 & 0 & 0 \end{bmatrix}^\top a + \begin{bmatrix} 0 & 1 & 2 \end{bmatrix}^\top b\ |\ a,b \in \mathbb{R} \}
+x_f = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix}^\top
+a
+b
+x_f
+x_2 = A x_1 + B u_1 = A (A x_0 + B u_0) + B u_1 = A^2 x_0 + AB u_0 + B u_1 = AB u_0 + B u_1
+A^2 x_0
+x_0 = 0
+\operatorname{im} \begin{bmatrix} B & AB\end{bmatrix}
+\begin{bmatrix} 1 & 0 & 0 \end{bmatrix}^\top
+\begin{bmatrix} 0 & 1 & 0 \end{bmatrix}^\top
+\begin{bmatrix} 0 & 0 & 1 \end{bmatrix}^\top
+x_f
+u_0
+u_1
+u_0
+u_1
+u_0 = \begin{bmatrix} 1 & 1 \end{bmatrix}^\top
+u_1 = \begin{bmatrix} 0 & -1 \end{bmatrix}
+R_t = \begin{bmatrix} B & AB \end{bmatrix}
+x_0 = 0
+\bar{u}
+\bar{u} = R_t^\top (R_t R_t^\top)^{-1} x_f
+\bar{u} = \begin{bmatrix} u_1 & u_0 \end{bmatrix}^\top = \begin{bmatrix} 0.4 & -1 & 0.8 & 1 \end{bmatrix}^\top
+x_0 = \begin{bmatrix} 2 & 2 & 2 \end{bmatrix}^\top \neq 0
+x_0
+A^2 x_0 = \begin{bmatrix} 8 & 8 & 8 \end{bmatrix}^\top
+ABu_0 + B u_1
+\begin{bmatrix} -8 & -8 & -8 \end{bmatrix}^\top
+A^2x_0 + ABu_0 + B u_1
+\begin{bmatrix} 0 & 0 & 0 \end{bmatrix}
+x_{i+1} = A x_i + B u_i
+\begin{align} x_1 &= A x_0 + B u_0 \\ x_2 &= A x_1 + B u_1 = A^2 x_0 + A B u_0 + B u_1 \\ &\vdots \\ x_k &= A x_{k-1} + B u_{k-1} = A^k x_0 + B u_{k-1} + AB u_{k-2} + \dots + A^{k-1}B u_0 \\ x_k &= A^k x_0 + \begin{bmatrix}B &  AB & \dots & A^{k-1} B \end{bmatrix} \begin{bmatrix}u_{k-1} \\ u_{k-2} \\ \vdots \\ u_0 \end{bmatrix} \end{align}
+x_0
+x_f
+k
+k > n
+n
+n

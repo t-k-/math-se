@@ -1,0 +1,30 @@
+A\in K^{m \times m}
+B\in K^{m \times n}
+C\in K^{n \times m}
+D\in K^{n \times n}
+A
+D-CA^{-1}B
+\begin{pmatrix}   A & B \\    C & D  \end{pmatrix} \in K^{(m+n) \times (m+n)}
+A
+A A' = E
+E
+A
+A
+D - CA^{-1}B
+\begin{pmatrix}A & B\\C & D\end{pmatrix} \begin{pmatrix}I & -A^{-1}B\\0 & I\end{pmatrix} = \begin{pmatrix}A & 0\\C & D - CA^{-1}B\end{pmatrix}
+\det\begin{pmatrix}A & B\\C & D\end{pmatrix} = \det(A)\det( D - CA^{-1}B) \ne 0
+P
+Px=0
+ \begin{bmatrix} A & B \\ C & D \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}. 
+A
+x_1 = -A^{-1}Bx_2
+(D - CA^{-1}B)x_2=0
+D - CA^{-1}B
+A',B',C',D'
+A
+M=\big(D - CA^{-1}B\big)^{-1}
+C'=-MCA^{-1}
+ \begin{bmatrix} A & B \\ C & D \end{bmatrix} \begin{bmatrix} A' & B' \\ C' & D' \end{bmatrix} = \begin{bmatrix} AA'+BC' & AB'+BD' \\ CA'+DC' & DB'+DD' \end{bmatrix} 
+ \begin{cases} AA'+BC' = E_m \\ AB'+BD' = 0 \\ CA'+DC' = 0 \\ DB'+DD' = E_n \end{cases} 
+ A' = A^{-1}(E_m-BC') 
+ \begin{cases} A'=A^{-1}-A^{-1}BC' \\ AB'+BD' = 0 \\ CA^{-1} + \big(D - CA^{-1}B\big) C' = 0 \\ DB'+DD' = E_n \end{cases} 

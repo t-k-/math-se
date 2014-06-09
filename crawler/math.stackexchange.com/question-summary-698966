@@ -1,0 +1,20 @@
+I(x)
+L(x,\alpha) \in [0,1]
+I(x)
+I(x) \triangleq \begin{cases} 1, & x \geq 0 \\ 0, & x < 0 \end{cases}
+\lim_{\alpha \rightarrow + \infty} L(x,\alpha) = I(x), \quad \forall x
+\lim_{x \rightarrow - \infty} L(x,\alpha) = 0, \quad \forall \alpha
+\lim_{x \rightarrow + \infty} L(x,\alpha) = 1, \quad \forall \alpha.
+\underline{x}, \overline{x}
+0 < \underline{x} < \overline{x}
+\mathcal{Q}
+f(x)
+\mathcal{X}
+ \begin{array}{cll} \min_{x} & & f(x) + I(x-\underline{x}) \\ \mathrm{s.t.} & & x \in \mathcal{Q} \hspace{4cm} (P) \\  & & I(x-\underline{x}) \underline{x} \leq x \leq I(x-\underline{x}) \overline{x} \end{array}
+ \begin{array}{cll} \min_{x} & & f(x) + L(x-\underline{x}, \alpha) \\ \mathrm{s.t.} & & x \in \mathcal{Q} \hspace{4cm} (P_{\alpha}) \\  & & L(x-\underline{x},\alpha) \underline{x} \leq x \leq L(x-\underline{x},\alpha) \overline{x} \end{array}
+v(\cdot)
+(\cdot)
+P_{\alpha}
+P
+\alpha \rightarrow + \infty
+\lim_{\alpha \rightarrow + \infty} v(P_{\alpha}) = v(P)

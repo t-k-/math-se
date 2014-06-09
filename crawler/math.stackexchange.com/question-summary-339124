@@ -1,0 +1,66 @@
+\{X_n\}
+\{Y_n\}
+X
+Y
+X_n Y_n
+X Y
+(X_n,Y_n)
+(X,Y)
+g(x,y) = xy
+g(X_n,Y_n)
+g(X,Y)
+P(|X_nY_n-XY|>\epsilon)=P(|X_nY_n-X_nY+X_nY-XY|>\epsilon)
+\leq P(|X_n(Y_n-Y)|+|Y(X_n-X)|>\epsilon)
+n
+A>0
+X_n
+X
+Y_n
+Y
+A>0
+\mathbb{P}(|Y|\cdot|X_n-X|>\epsilon/2)
+0
+n\rightarrow\infty
+ \{|X_n(Y_n-Y)|+|Y(X_n-X)|>\epsilon\}\subset \{|X_n|\cdot|Y_n-Y|>\epsilon/2\}\cup\{|Y|\cdot|X_n-X|>\epsilon/2\}. 
+ \{|X_n|\cdot|Y_n-Y|>\epsilon/2\}\subset \{|X_n-X|>1\}\cup\{|X+1|> A\}\cup\{|Y_n-Y|>\epsilon/2(A+1)\} 
+ \limsup_{n\rightarrow\infty}\mathbb{P}(|X_n|\cdot|Y_n-Y|>\epsilon/2)\leq \mathbb{P}(|X+1|> A)\xrightarrow[A\rightarrow\infty]{}0. 
+X_n
+X
+X_n
+X
+(X_{\phi(n)}Y_{\phi(n)})
+(X_nY_n)
+XY
+X_n
+X
+\psi
+X_{\phi(\psi(n))}
+X
+Y_n
+Y
+\chi
+Y_{\phi(\psi(\chi(n)))}
+Y
+X_{\phi(\psi(\chi(n)))}Y_{\phi(\psi(\chi(n)))}
+XY
+(X_n)
+X
+d
+|\cdot|
+\mathbb{R}^d
+ X_n\to X\;\text{ in probability}\iff \lim_{n\to\infty}{\rm E}[|X_n-X|\wedge 1]=0, 
+X_n\to X
+Y_n\to Y
+n\to\infty
+ |(X_n,Y_n)-(X,Y)|=\sqrt{(X_n-X)^2+(Y_n-Y)^2}\leq |X_n-X|+|Y_n-Y|, 
+ |(X_n,Y_n)-(X,Y)|\wedge 1\leq |X_n-X|\wedge 1+|Y_n-Y|\wedge 1. 
+n\to\infty
+\eta\gt0
+u\gt0
+\varepsilon
+\eta\geqslant\alpha_{u,\varepsilon}
+\eta\gt0
+ \mathbb P(|X_nY_n-XY|\geqslant\alpha_{u,\varepsilon})\leqslant\mathbb P(|X_n-X|\geqslant\varepsilon)+\mathbb P(|Y_n-Y|\geqslant\varepsilon)+\mathbb P(|X|\geqslant u)+\mathbb P(|Y|\geqslant u). 
+ \limsup_{n\to\infty}\mathbb P(|X_nY_n-XY|\geqslant\alpha_{u,\varepsilon})\leqslant\mathbb P(|X|\geqslant u)+\mathbb P(|Y|\geqslant u). 
+ \limsup_{n\to\infty}\mathbb P(|X_nY_n-XY|\geqslant\eta)\leqslant\inf\limits_{u\gt0}\left(\mathbb P(|X|\geqslant u)+\mathbb P(|Y|\geqslant u)\right). 
+ \lim_{n\to\infty}\mathbb P(|X_nY_n-XY|\geqslant\eta)=0. 

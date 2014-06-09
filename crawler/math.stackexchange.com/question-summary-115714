@@ -1,0 +1,22 @@
+f\in C([0,1])
+\lim_{t\to\infty}\frac 1t\log\int_0^1 \cosh(tf(x))\mathrm d x.
+{1 \over 2}e^{|u|} \leq \cosh(u) \leq e^{|u|}
+M
+|f(x)|
+\lim_{t \rightarrow \infty}{1 \over t}\log\int_0^1e^{t|f(x)|}\,dx
+\lim_{t \rightarrow \infty}{1 \over t}\log\int_0^1e^{tM}e^{t(|f(x)|-M)}\,dx
+=\lim_{t \rightarrow \infty}{1 \over t}\log [e^{tM}\int_0^1e^{t(|f(x)| - M)}dx]
+= M + \lim_{t \rightarrow \infty}{1 \over t}\log\int_0^1e^{t(|f(x)| - M)}dx
+|f(x)| - M > - \epsilon
+\epsilon
+M
+t
+L^t
+L^{\infty}
+1
+||e^{|f(x)|}||_{L^t}
+e^M
+M
+f(x)
+{1 \over t}\log\int_0^1e^{t|f(x)|}\,dx = \log[(\int_0^1 e^{t|f(x)|}\,dx)^{1 \over t}] 
+=\log||e^{|f(x)|}||_{L^t}

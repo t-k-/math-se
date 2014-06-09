@@ -1,0 +1,36 @@
+F(t)= \int_{\Bbb R} f(x) \cos(tx) \, dx
+f \in L^1(\Bbb R)
+F(t)
+t \in \Bbb R
+\lim_{t\rightarrow\infty} F(t) =0
+t_n \rightarrow t
+F(t_n) \rightarrow F(t)
+f
+f
+\epsilon >0
+f
+M
+\int_{[-M,M]^C} |f| < \frac{1}{2}\epsilon
+\cos
+|t-s| \leq \frac{1}{2 M \|f\|_1}\epsilon
+|F(t)-F(s)| < \epsilon
+C_c^\infty(\mathbb{R})
+L^1(\mathbb{R})
+f \in C_c^\infty(\mathbb{R})
+t\neq 0
+\phi_t(x) = f(x) \frac{\sin(xt)}{t}
+\|\phi_t\| \leq \frac{1}{|t|} \|f\|_1
+\phi_t'(x) = f'(x)\frac{\sin(xt)}{t} + f(x) \cos(xt)
+|x|
+\phi_t(x) =0
+M
+0 = \phi_t(M)-\phi_t(-M) = \int_{-M}^M \phi_t'(x) dx = \int_{-M}^M (f'(x)\frac{\sin(xt)}{t} + f(x) \cos(xt)) dx
+\int f(x) \cos(xt) dx = -\int f'(x)\frac{\sin(xt)}{t} dx
+| \int f(x) \cos(xt) dx | \leq \frac{1}{|t|} \|f'\|_1
+\lim_{t \to \infty} \int f(x) \cos(xt) dx = 0
+f \in L^1(\mathbb{R})
+\epsilon > 0
+g \in C_c^\infty(\mathbb{R})
+\|f-g\|_1 < \frac{1}{2} \epsilon
+|t| 
+|F(t)|< \epsilon

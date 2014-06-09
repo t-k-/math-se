@@ -1,0 +1,8 @@
+\frac {d^2u}{dx^2} + 2\pi\frac {du}{dx} + \frac 54\pi^2u = g(x)
+g(x) = e^{\pi x}
+  0 \le x \lt 1
+F[u](n) = \frac{F[u''](n)}{-4\pi^2n^2}
+[.]_0^1
+0 
+ F[u'](n) = \int_0^1 u'(t) e^{-2i\pi n t }dt = [u(t) e^{-2i\pi n t }]_0^1 - \int_0^1 u(t) (-2i\pi n e^{-2i\pi n t })dt 
+ F[u'](n) = 2i\pi n \int_0^1 u(t)e^{-2i\pi n t }dt = 2i\pi n F[u](n) 

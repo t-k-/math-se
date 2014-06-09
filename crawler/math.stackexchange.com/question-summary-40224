@@ -1,0 +1,19 @@
+\mu_1
+\sigma_1
+\mu_2
+\sigma_2
+\mu_1
+\mu_2
+\sigma_1
+\sigma_2
+X_1 \sim {\rm N}(\mu_1,\sigma_1^2)
+X_2 \sim {\rm N}(\mu_2,\sigma_2^2)
+X_1 - X_2
+\Phi
+{\rm N}(0,1)
+ {\rm P}(X_1  > X_2 ) = {\rm P}(X_1  - X_2  > 0) = 1 - {\rm P}(X_1  - X_2  \le 0). 
+ \mu := {\rm E}(X_1 - X_2) = \mu_1 - \mu_2 
+ \sigma^2 := {\rm Var}(X_1 - X_2) = \sigma_1^2 + \sigma_2^2. 
+ \frac{{X_1  - X_2  - \mu}}{{\sigma}} \sim {\rm N}(0,1), 
+ {\rm P}(X_1  - X_2  \le 0) = {\rm P}\bigg(\frac{{X_1  - X_2  - \mu }}{\sigma } \le \frac{{0 - \mu }}{\sigma }\bigg) = \Phi \Big(  \frac{-\mu }{\sigma }\Big), 
+ {\rm P}(X_1  > X_2 )  = 1 - {\rm P}(X_1  - X_2  \le 0) = 1 - \Phi \Big(  \frac{-\mu }{\sigma }\Big). 

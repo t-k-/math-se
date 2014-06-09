@@ -1,0 +1,20 @@
+a_n
+a_0 = 1
+ a_{n}=a_{\left\lfloor n/2\right\rfloor}+a_{\left\lfloor n/3 \right\rfloor}+a_{\left\lfloor n/6\right\rfloor} 
+\displaystyle A(x) = \sum_{n \ge 0} a_n x^n
+ \lim_{n\to\infty}\dfrac{a_{n}}{n}=\dfrac{12}{\log{432}} 
+ A(x) = (1 + x)A(x^2) + (1 + x + x^2) A(x^3) + (1 + x + x^2 + \cdots + x^5)A(x^6) - 2 
+b_0 = a_0
+b_n = a_n - a_{n-1}
+n \ge 1
+\displaystyle B(x) = \sum_{n \ge 0} b_n x^n = (1 - x)A(x)
+(1-x)
+ (1 - x)A(x) = (1 - x^2)A(x^2) + (1 - x^3)A(x^3) + (1 - x^6)A(x^6) + 2x - 2 
+ B(x) = B(x^2) + B(x^3) + B(x^6) + 2x - 2 \tag{1} 
+ B(x) = 1 + 2 \sum_{l, m \ge 0} \sum_{d \ge 0} 2^d {l \choose d}{m \choose d} x^{2^l 3^m} 
+ a_n = 1 + 2 \sum_{d \ge 0} 2^d \sum_{l,m \ge 0}_{2^l 3^m \le n} {l \choose d} {m \choose d} \tag{2} 
+2^l 3^m \le n
+2^l 2^m \le n
+3^l 3^m \le n
+ \frac{n^{\log_3(1 + \sqrt{2}) - 1}}{2} < \frac{a_n}{n} < \frac{n^{\log_2(1 + \sqrt{2}) - 1}}{2} 
+(1 + \sqrt{2})^l (1 + \sqrt{2})^m \le n

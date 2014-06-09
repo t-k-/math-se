@@ -1,0 +1,39 @@
+X,Y,Z
+\operatorname{E}[X|X+Y+Z=1]
+\operatorname{Var}(X|X+Y+Z=1)
+1/3
+X
+Y
+Z
+(X+Y+Z)/\sqrt{3}
+(Y - Z)/\sqrt{2}
+(2X-Y-Z)/\sqrt{6}
+X = (X+Y+Z)/3 + (2X-Y-Z)/3
+\text{Var}(X|X+Y+Z=1) = (1/9) \text{Var}(2X-Y-Z) = 2/3
+\sigma,\tau
+\rho
+ \begin{bmatrix} U \\ V \end{bmatrix} \sim N\left(\begin{bmatrix} 0 \\ 0 \end{bmatrix}, \begin{bmatrix} \sigma^2, & \rho\sigma\tau \\  \rho\sigma\tau, & \tau^2 \end{bmatrix} \right) 
+ \operatorname{var}(X\mid X+Y+Z) = \left(1 - \frac13\right)\cdot 1 = \frac23. 
+A
+B
+A
+B = b
+{cov}(A,B)
+A
+B
+E[A\mid B = b] = \mu_A + \left.\left.\frac{\text{cov}(A,B)}{\sigma_B^2} \right(b - \mu_B\right), ~~  \text{var}(A\mid B = b) = \frac{\sigma_A^2\sigma_B^2  - (\text{cov}(A,B))^2}{\sigma_B^2}
+X
+Y
+Z
+X
+X+Y+Z
+E[X\mid X+Y+Z=1]
+\text{var}(X\mid X+Y+Z=1)
+X
+Y
+Z
+E[X+Y+Z]=0
+\text{var}(X+Y+Z)=3
+\text{cov}(X,X+Y+Z)=1
+\begin{align*} E[X+Y+Z] &= \mu_X + \mu_Y + \mu_Z,\\ \text{var}(X+Y+Z) &= \sigma_X^2 + \sigma_Y^2+\sigma_Z^2 +2\text{cov}(X,Y)+2\text{cov}(X,Z)+2\text{cov}(Y,Z)\\ \text{cov}(X,X+Y+Z) &= \sigma_X^2 +  \text{cov}(X,Y)+\text{cov}(X,Z) \end{align*}
+E[X\mid X+Y+Z=1] = \left.\left.\frac{1}{3}\right(1-0\right) = \frac{1}{3}, ~\text{var}(X\mid X+Y+Z=1) = \frac{1\times 3 - 1^2}{3} = \frac{2}{3}

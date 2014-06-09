@@ -1,0 +1,51 @@
+ I_n = \int_0^{\pi/4} \tan(x)^n \mathrm dx 
+ t= \tan x 
+ I_n = \int_0^1 \frac{t^n \mathrm dt}{1+t^2} = \int_0^1 \frac{(1-t)^n \mathrm dt}{t^2-2t+2} 
+ t=\frac{x}{n}
+ I_n = \frac{1}{2n}\int_0^n \frac{\left(1-\frac{x}{n}\right)^n \mathrm dx}{1-\left(\frac{x}{n}-\frac{x^2}{2n^2} \right)}
+ \left(1-\frac{x}{n}\right)^n = e^{-x} \left(1-\frac{x^2}{2n}+\frac{3x^4-8x^3}{24n^2}+\mathcal{O} \left(\frac{1}{n^3} \right) \right)
+ \frac{1}{1-\left(\frac{x}{n}-\frac{x^2}{2n^2} \right)} = 1+\frac{x}{n}+\frac{x^2}{2n^2} + \mathcal{O} \left(\frac{1}{n^3} \right) 
+ \frac{\left(1-\frac{x}{n}\right)^n }{1-\left(\frac{x}{n}-\frac{x^2}{2n^2} \right)}=e^{-x} \left( 1+\frac{x}{n}+\frac{x^2}{2n^2}-\frac{x^2}{2n}-\frac{x^3}{2n^2}+\frac{3x^4-8x^3}{24n^2} + \mathcal{O} \left(\frac{1}{n^3} \right) \right)
+ I_n = \frac{1}{2n} \int_0^n e^{-x} \left( 1+\frac{x}{n}+\frac{x^2}{2n^2}-\frac{x^2}{2n}-\frac{x^3}{2n^2}+\frac{3x^4-8x^3}{24n^2} + \mathcal{O} \left(\frac{1}{n^3} \right) \right) \mathrm dx 
+ I_n = \frac{1}{2n} \left(1+\frac{1}{n}+\frac{1}{2n^2}\times 2-\frac{1}{2n}\times 2 - \frac{1}{2n^2} \times 6 + \frac{1}{8n^2} \times 24 - \frac{1}{3n^2} \times 6+ \mathcal{O} \left(\frac{1}{n^3} \right) \right) 
+ I_n = \frac{1}{2n}-\frac{1}{2n^3}+\mathcal{O} \left(\frac{1}{n^4} \right)
+ 1-1000^2+ 2\times1000^3\int_0^{\pi/4} \tan(x)^{1000} \mathrm dx \approx 4.9\times 10^{-6}
+I_n = \sum_{k=0}^{\infty} \dfrac{(-1)^k}{n+1+2k}
+\psi(x) = \frac{\Gamma'(x)}{\Gamma(z)}
+B_{k}
+I_n
+O(\frac{1}{n^4})
+\begin{align} \psi(x) &= - \gamma -\frac{1}{x} - \sum_{k=1}^{\infty}(\frac{1}{k} - \frac{1}{x+k})\\         &\approx_{ae} \ln{x} - \frac{1}{2x} + \sum_{k=1}^{\infty}\frac{B_{2k}}{2 k\ x^{2k}} \end{align} 
+\begin{align} I_n &= \frac{1}{2}( \psi(\frac{n+1}{2})-\psi(\frac{n+1}{4}) - \ln{2})\\     &\approx_{ae} \frac{1}{2}( \frac{1}{n+1} + \sum_{k=1}^{\infty}\frac{4^k(4^k-1)B_{2k}}{2 k(n + 1)^{2k}} )\\     &\approx_{ae} \frac{1}{2}( \frac{1}{n+1}                              + \frac{1}{(n+1)^2}                              - \frac{8}{(n+1)^4}                              + \frac{144}{(n+1)^6} - \frac{4352}{(n+1)^8} + .. ) \end{align} 
+I_{n} \approx \frac{1}{2}(\frac{1}{n+1} + \frac{1}{(n+1)^2} ) \approx \frac{1}{2}( \frac{1}{n} - \frac{1}{n^3} )
+t=\tan x
+t = e^{-s}
+ \int_0^1 t^n \frac{dt}{1+t^2} = \int_0^\infty e^{-ns} \frac{ds}{e^s+e^{-s}}. 
+ \int_0^\infty e^{-ns} \frac{ds}{e^s+e^{-s}} \approx \frac{1}{2} \sum_{k=0}^{\infty} \frac{E_k}{n^{k+1}} 
+ I_{2k}=\int\limits_{0}^{1}\frac{t^{2k}}{t^2+1}dt=\int\limits_{0}^{1}(-1)^k\left(\sum\limits_{j=0}^{k-1}(-1)^{j+1}t^{2j}+\frac{1}{t^2+1}\right)dt=\\ (-1)^k\left(-\sum\limits_{j=0}^{k-1}\frac{(-1)^j}{2j+1}+\frac{\pi}{4}\right)=\sum\limits_{j=k}^\infty\frac{(-1)^{j+k}}{2j+1}=\sum\limits_{j=0}^\infty\frac{(-1)^{j}}{2j+2k+1} 
+ I_{2k+1}=\int\limits_{0}^{1}\frac{t^{2k+1}}{t^2+1}dt=\int\limits_{0}^{1}(-1)^k\left(\sum\limits_{j=0}^{k-1}(-1)^{j+1}t^{2j+1}+\frac{t}{t^2+1}\right)dt=(-1)^k\left(-\sum\limits_{j=0}^{k-1}\frac{(-1)^j}{2j+2}+\frac{1}{2}\ln2\right)=\sum\limits_{j=k}^{\infty}\frac{(-1)^{j+k}}{2j+2}=\sum\limits_{j=0}^\infty\frac{(-1)^{j}}{2j+2k+2} 
+ I_n=\sum\limits_{j=0}^\infty\frac{(-1)^{j}}{2j+n+1} 
+I_n = \int_0^1 \dfrac{t^n}{1+t^2} dt = \int_0^1 t^n \left(\sum_{k=0}^{\infty} (-t^2)^k\right) dt = \sum_{k=0}^{\infty}(-1)^k \int_0^1 t^{n+2k} dt
+\int_0^1 t^{n+2k} dt = \dfrac1{n+1+2k}
+I_n = \sum_{k=0}^{\infty} \dfrac{(-1)^k}{n+1+2k}
+ I_{n+2} = \int_0^{\pi/4} \tan(x)^{n+2} \mathrm dx = \int_0^{\pi/4} \tan(x)^{n}(\sec(x)^2-1) \mathrm dx 
+ = -\int_0^{\pi/4} \tan(x)^{n} \mathrm dx + \int_0^{\pi/4} \tan(x)^{n}\sec(x)^2 \mathrm dx 
+ \implies I_{n+2}+I_n=\frac{1}{n+1}=\frac{1}{n}-\frac{1}{n^3}+\frac{1}{n^5}-\dots
+\implies 2I_n\sim \frac{1}{n} \implies I_n \sim \frac{1}{2n}, 
+ n \to \infty. 
+x=0
+I_n = \int_0^{\pi/4} dx \: e^{n \log{\tan{\left ( \frac{\pi}{4} - x \right )}}} 
+n \rightarrow \infty
+x=0
+\log{\tan{\left ( \frac{\pi}{4} - x \right )}}
+x=0
+\log{\tan{\left ( \frac{\pi}{4} - x \right )}} \sim -2 x
+x \rightarrow \infty
+I_n \sim \int_0^{\pi/4} dx \: e^{-2 n x} \: \: (n \rightarrow \infty)
+\infty
+x=0
+I_n \sim \frac{1}{2 n} \: \: (n \rightarrow \infty)
+n
+\log{\tan{\left ( \frac{\pi}{4} - x \right )}} =-2 x -\frac{4}{3} x^3 +O(x^4) 
+I_n \sim \int_0^{\infty} dx \: e^{-2 n x} \left ( 1 - \frac{4}{3} n x^3 \right ) \: \: (n \rightarrow \infty)
+I_n \sim \frac{1}{2 n} - \frac{1}{2 n^3} \: \: (n \rightarrow \infty)

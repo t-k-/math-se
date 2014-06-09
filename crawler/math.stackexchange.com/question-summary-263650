@@ -1,0 +1,21 @@
+f(t+\Delta t, x+h)
+f(t+\Delta t, x)=f(t,x) + \Delta t \cfrac{\partial f}{\partial t}(t,x)+(\Delta t)^2 \cfrac{\partial^2 f}{\partial t^2}(t,x) + O((\Delta t)^3)
+f(t, x+h)=f(t,x) + h \cfrac{\partial f}{\partial x}(t,x)+h^2 \cfrac{\partial^2 f}{\partial x^2}(t,x) + O(h^3)
+u=(t,\,x),\;\; \Delta{u}=(\Delta{t},\,h), \;F(\lambda)=f(u+\lambda\Delta{u}) \;\;(\lambda\in \mathbb{R}).
+(*)
+F(\lambda)
+\lambda
+\lambda=1.
+f(t+\Delta{t},\, x+h)=\sum\limits_{n=0}^{\infty}{{\frac{1}{n!}}\;{\sum\limits_{k=0}^{n}{\binom{n}{k}}\frac{\partial^n{f}}{\partial{x}^k {}\partial{y}^{n-k}}(\Delta{t})^k h^{n-k}}} \tag{*}
+F(\lambda)=\sum\limits_{n=0}^{\infty}{\frac{1}{n!}}F^{(n)}(0)\,\lambda^n
+f(\vec{v})
+\vec{v}_0
+ g(s) = f(\vec{v}_0 + s (\vec{v} - \vec{v}_0)) 
+ g(s) = \sum_{n=0}^{+\infty} \frac{s^n}{n!} g^{(n)}(0) 
+g
+f
+g'(s)
+ g^{(n)}(s) = (\nabla_{\vec{v} - \vec{v}_0})^n f(\vec{v}_0 + s (\vec{v} - \vec{v}_0)) 
+\nabla_{\vec{w}} h = \vec{w} \cdot \nabla h
+ f(\vec{v}_0 + s (\vec{v} - \vec{v}_0)) = \sum_{n=0}^{+\infty} \frac{s^n}{n!} \left( \nabla_{\vec{v} - \vec{v}_0}\right)^n f (\vec{v}_0) 
+ \begin{align} f(\vec{v}) &= \sum_{n=0}^{+\infty} \frac{1}{n!} \left( \nabla_{\vec{v} - \vec{v}_0}\right)^n f (\vec{v}_0)  \\ &= \sum_{n=0}^{+\infty} \frac{1}{n!} \left( (\vec{v} - \vec{v}_0) \cdot \nabla \right)^n f (\vec{v}_0)  \end{align} 

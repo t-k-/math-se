@@ -1,0 +1,14 @@
+ \int x\sqrt{A^2 - x^2} \mathrm dx 
+A
+x
+dx
+ \int x\sqrt{A^2 - x^2} \mathrm dx = \int x(A^2 - x^2)^{1/2} \,dx
+\,u = A^2 - x^2.\;
+\,du = -2x dx \implies -\dfrac 12 du = x\,dx
+\int -\dfrac 12 u^{1/2} \,du = -\frac 12 \cdot \frac 23(u)^{3/2} + C
+-\frac 13 (A^2 - x^2)^{3/2} + C = -\frac 13(A^2 - x^2) \sqrt{A^2 -x^2} + C
+x=A\sin{t}.
+dx=A\cos{t}\;dt,\\ {A^2 - x^2}=A^2-A^2{\sin^2{t}}=A^2{\cos^2{t}},
+\int x\sqrt{A^2 - x^2}\;  dx = \int {A\sin{t}\,A{\cos{t}}}A\cos{t}\;dt =\\ = -A^3 \int {\cos^2{t}\;d(\cos{t})}=-\frac{A^3}{3}\cos^3{t}+C=  -\frac{A^3}{3} \left(1-\sin^2{t} \right)^{\tfrac{3}{2}}+C =\\ =-\frac{A^3}{3}\left({1-\frac{x^2}{A^2}}\right)^{\tfrac{3}{2}}+C=-\frac{1}{3}\left({A^2-{x^2}}\right)^{\tfrac{3}{2}}+C.
+\int x(a^2-x^2)^{1/2}dx=-\frac{1}{2}\int(-2xdx)\sqrt{a^2-x^2}=-\frac{1}{2}\frac{2}{3}(a^2-x^2)^{3/2}+C=
+-\frac{1}{3}(a^2-x^2)\sqrt{a^2-x^2}+C

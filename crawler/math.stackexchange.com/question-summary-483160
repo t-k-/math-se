@@ -1,0 +1,76 @@
+513/1943=0.26402\ldots
+\lambda
+\lambda=(10{\rm mins})^{-1}(15{\rm mins})=3/2
+n
+\lambda=3/2
+n=3
+p_3=513/1943
+ \begin{align} p_n=\frac{\lambda^n}{(n-1)!}\left(\sum_{k=0}^{n-1}\frac{\lambda^k}{k!}\right)^{-1}-\frac{\lambda^{n+1}}{n!}\left(\sum_{k=0}^n\frac{\lambda^k}{k!}\right)^{-1}. &&{\rm(1)} \end{align} 
+\lambda
+n\ge1
+n
+0\le i\le n
+p_{i,n}
+i
+n
+0\le t_1\le\cdots\le t_i\le1
+q_{i,n}(t_1,\cdots,t_i)
+i
+t_1,\ldots,t_i
+i
+n
+(t_1,t_1+\delta t_1)
+(t_i,t_i+\delta t_i)
+q_{i,n}(t_1,\ldots,t_i)\delta t_1\cdots\delta t_i
+o(\delta t_1\cdots\delta t_i)
+q_{i,n}
+\frac{d}{ds}q_{i,n}(t_1-s,\cdots,t_i-s)\vert_{s=0}
+n
+t_1=0
+1\le i\lt n
+\lambda
+i
+i+1
+q_{i,n}
+1\le i\lt n
+i
+i-1
+\lambda
+q_{i,n}(t_1,\ldots,t_i)=c\lambda^i
+c
+i
+n
+t_1,\ldots,t_i
+i
+n
+\sum_{i=0}^np_{i,n}=1
+c
+1/\sum_{i=0}^n\lambda^i/i!
+n
+n
+\lambda
+n
+n-1
+n
+p_{n-1,n-1}-p_{n,n}
+n
+p_{i,n}
+ \begin{align} \frac{d}{ds}q_{n,n}(t_1-s,\cdots,t_n-s)\vert_{s=0}=0. &&{\rm(2)} \end{align} 
+ \begin{align} \frac{d}{ds}q_{i,n}(t_1-s,\cdots,t_i-s)\vert_{s=0}-\lambda q_{i,n}(t_1,\ldots,t_i)+q_{i+1,n}(t_1,\ldots,t_i,1)=0 &&{\rm(3)} \end{align} 
+ \begin{align} q_{i,n}(0,t_1,\ldots,t_{i-1}) = \lambda q_{i-1,n}(t_1,\ldots,t_{i-1}). &&{\rm(4)} \end{align} 
+ p_{i,n}=\idotsint\limits_{0\le t_1\lt\cdots\lt t_i\le1}c\lambda^i\,dt_1\cdots dt_i=c\frac{\lambda^i}{i!}. 
+ \begin{align} p_{i,n}=\frac{\lambda^i}{i!}\left(\sum_{k=0}^n\frac{\lambda^k}{k!}\right)^{-1}. &&{\rm(5)} \end{align} 
+ p_n=\lambda(p_{n-1,n-1}-p_{n,n}). 
+n
+X(T)
+T
+Y(T)
+T
+X
+[T-1,T]
+T
+X(t)=Y(t)
+t\gt T
+X(T)=Y(T)
+[0,T]
+\mathbb{P}(X(T)\not=Y(T))

@@ -1,0 +1,33 @@
+f(x),f_n(x):[a,b]\to[c,d]
+f_n\to f
+g:[c,d]\to\mathbb R
+g(f_n(x))\to g(f(x))
+\epsilon>0
+f_n\to f
+\exists n_0\in\mathbb N
+n>n_0
+|f_n(x)-f(x)|<\epsilon
+\delta>0
+|x-x_0|<\delta
+|g(x)-g(x_0)|<\epsilon
+\forall x\in [a,b]: f_n(x),f(x)\in[c,d]
+n>n_0
+|f_n(x)-f(x)|<\delta
+|g(f_n(x))-g(f(x))|<\epsilon
+x_0
+f_n\to f
+\eta >0
+N=N_\eta
+n\geqslant N
+x\in [a,b]
+|f_n(x)-f(x)|<\eta 
+g:[c,d]\to\Bbb R
+\varepsilon >0
+\eta=\eta_\varepsilon >0
+x,x'\in [c,d]
+|x-x'|<\eta
+|g(x)-g(x')|<\varepsilon
+\varepsilon >0
+N=N_\varepsilon
+n\geqslant N
+|g\circ f_n(x)-g\circ f(x)|<\varepsilon

@@ -1,0 +1,25 @@
+\Lambda
+\sum_{p\le x}_{p\,\text{prime}}\frac{\log p}{p}=\log (x)+O(1)
+\sum_{n\le x}_{n\in\mathbb{N}}\frac{\Lambda(n)}{n}=\log (x)+O(1),
+\lambda>0
+\varepsilon>0
+M_{\varepsilon}>0
+x>M_{\varepsilon}
+O(1)=\sum_{p\le x}_{p\,\text{prime}}\frac{\log (p)}{p}-\log (x)
+\left\lvert\sum_{p\le x}_{p\,\text{prime}}\frac{\log (p)}{p}-\log (x)\right\rvert\le\lambda\lvert 1\rvert =\lambda.
+\varepsilon>0
+\Lambda
+x>M_{\varepsilon}
+P(x)
+p^k\le x, p\, \text{prime}, k\in\mathbb{N}\backslash\{1\}
+\lambda
+(1)
+\sigma_{k, x}
+\begin{align}\left\lvert\sum_{p^k\le x}_{p\,\text{prime}}_{k\in\mathbb{N}}\frac{\log (p)}{p^k}-\log (x)\right\rvert&\le\left\lvert\sum_{p\le x}_{p\,\text{prime}}\frac{\log (p)}{p}-\log (x)\right\rvert +\left\lvert\sum_{P(x)}\frac{\log (p)}{p^k}\right\rvert. \\ &\le\lambda + \left\lvert\sum_{P(x)}\frac{\log (p)}{p^k}\right\rvert \\ &=\lambda + \sum_{p^2\le x}_{p\,\text{prime}}\frac{\log p}{p^2}+\sum_{p^3\le x}_{p\,\text{prime}}\frac{\log p}{p^3}+\dots \\ &=\lambda +\sum_{k=2}^\infty\underbrace{\sum_{p^k\le x}_{p\,\text{prime}}\frac{\log p}{p^k}}_{\text{Each of these is less than }\lambda.}\tag{1} \\ &\le\sum_{k\in\mathbb{N}}\lambda.\end{align}
+\sum_{k=2}^\infty\sigma_{k, x}<\infty
+\log{p}
+S=\sum\limits_{n\leq x}\frac{\Lambda(n)}{n}=\sum\limits_{p\leq x}\log{p}\left(\sum\limits_{p^i\leq x}\frac{1}{p^i}\right)
+\frac{1}{1-\frac{1}{p}}-1=\frac{1}{p-1}
+S\leq\sum\limits_{p\leq x}\frac{\log p}{p-1}=\sum\limits_{p\leq x}\frac{\log p}{p}+\sum\limits_{p\leq x}\frac{\log p}{p^2-p}=\log x + O(1)
+S=\log x + O(1)
+\log x+O(1)=\sum\limits_{p\leq x}\frac{\log p}{p}\leq S

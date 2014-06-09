@@ -1,0 +1,82 @@
+\Phi(N) = \sum_{i=1}^N \phi(i)
+\Phi(N)
+\Phi(N)
+S_N = \sum_{i=1}^N \phi(i) \leq \sum_{i=1}^N i = \frac{N(N+1)}{2} 
+\phi(i) \leq \frac{i}{2}
+ \begin{align} S_N &= \sum_{i=1}^N \phi(i) \\ &\leq \sum_{k=1}^{\lfloor \frac{N}{2} \rfloor} \phi(2k) + \sum_{k=1}^{\lfloor \frac{N+1}{2} \rfloor} \phi(2k-1)\\ &\leq \sum_{k=1}^{\lfloor \frac{N}{2} \rfloor} \phi(k) + \sum_{k=1}^{\lfloor \frac{N+1}{2} \rfloor} \phi(2k-1)\\ &\leq \sum_{k=1}^{\lfloor \frac{N}{2} \rfloor} k + \sum_{k=1}^{\lfloor \frac{N+1}{2} \rfloor} 2k-1\\ &=\frac{1}{2} \Bigg(\bigg \lfloor \frac{N}{2} \bigg \rfloor \Bigg) \Bigg(\bigg \lfloor \frac{N}{2} \bigg \rfloor + 1\Bigg) + \Bigg(\bigg \lfloor \frac{N+1}{2} \bigg \rfloor \Bigg)^2\\ \end{align} 
+ \Phi(n) = \frac{3}{\pi^2} n^2 + O(n\log n) 
+\Phi(n)
+0 < y \leq x \leq n
+ \Phi(n) = \frac{\Psi(n)+1}{2}, 
+ \Psi(n) = \sum_{1 \leq d \leq n} \mu(d) \left\lfloor \frac{n}{d} \right\rfloor^2. 
+ \left\lfloor \frac{n}{d} \right\rfloor = \frac{n}{d} - \left\{\frac{n}{d}\right\}, 
+ \begin{align} \Psi(n) &= \sum_{1 \leq d \leq n} \mu(d)\left(\frac{n}{d} - \left\{\frac{n}{d}\right\}\right)^2 \\ &= n^2 \sum_{1 \leq d \leq n} \frac{\mu(d)}{d^2} - 2n \sum_{1 \leq d \leq n} \frac{\mu(d)}{d}\left\{\frac{n}{d}\right\} + \sum_{1 \leq d \leq n} \mu(d) \left\{\frac{n}{d}\right\}^2. \end{align} 
+ \begin{align} -2n \sum_{1 \leq d \leq n} \frac{\mu(d)}{d}\left\{\frac{n}{d}\right\} &< 2n \sum_{1 \leq d \leq n} \frac{1}{d} \\ &< 2n \left(1+\int_1^n \frac{du}{u}\right) \\ &= 2n(1+\log n) \end{align} 
+ \sum_{1 \leq d \leq n} \mu(d) \left\{\frac{n}{d}\right\}^2 < \sum_{1 \leq d \leq n} 1 = n, 
+ \Psi(n) < n^2 \sum_{1 \leq d \leq n} \frac{\mu(d)}{d^2} + 2n\log n + 3n. 
+ \begin{align} \sum_{1 \leq d \leq n} \frac{\mu(d)}{d^2} &= \sum_{1 \leq d \leq  \infty} \frac{\mu(d)}{d^2} - \sum_{n+1 \leq d \leq \infty} \frac{\mu(d)}{d^2} \\ &= \frac{6}{\pi^2} - \sum_{n+1 \leq d \leq \infty} \frac{\mu(d)}{d^2} \\ &< \frac{6}{\pi^2} + \sum_{n+1 \leq d \leq \infty} \frac{1}{d^2} \\ &< \frac{6}{\pi^2} + \int_n^\infty \frac{du}{u^2} \\ &= \frac{6}{\pi^2} + \frac{1}{n}, \end{align} 
+ \Psi(n) < \frac{6}{\pi^2} n^2 + 2n\log n + 4n 
+ \Phi(n) < \frac{3}{\pi^2} n^2 + n\log n + 2n + \frac{1}{2}. 
+\Phi(N) = \frac{3}{\pi^2}N^2 + O(N\log N).
+\frac{3}{\pi^2}N^2
+\frac38
+23.4\%
+\phi(n)
+0 < \frac{k}{n}\leqslant 1
+n
+\Phi(N)
+0 < \frac{k}{n}
+n \leqslant N
+0 < \frac{r}{s} \leqslant 1
+1 \leqslant s \leqslant N
+F(N) = \frac12 \lfloor N\rfloor(\lfloor N\rfloor+1).
+\frac{r}{s} = \frac{g\cdot \rho}{g\cdot\sigma}
+g = \gcd(r,s)
+\rho = r/g,\, \sigma = s/g
+F(N) = \sum_{g=1}^\infty \Phi\left(\frac{N}{g}\right)\tag{1}
+\Phi
+\Phi(x) := \Phi(\lfloor x\rfloor)
+(1)
+\Phi(N) = F(N) - \sum_{g=2}^\infty \Phi\left(\frac{N}{g}\right),\tag{2}
+\Phi(N/2)
+(2)
+\begin{align} \Phi(N) &= F(N) - \left(F\left(\frac{N}{2}\right) - \sum_{h=2}^\infty \Phi\left(\frac{N}{2h}\right)\right) - \sum_{g=3}^\infty \Phi\left(\frac{N}{g}\right)\\ &= F(N) - F\left(\frac{N}{2}\right) - \sum_{k=1}^\infty \Phi\left(\frac{N}{2k+1}\right).\tag{3} \end{align}
+\Phi(x) \geqslant 0
+F(N) - F\left(\frac{N}{2}\right)
+\frac38 N^2
+(3)
+\Phi\left(\frac{n}{3}\right)
+(3)
+\Phi(N) = F(N) - F\left(\frac{N}{2}\right) - F\left(\frac{N}{3}\right) + F\left(\frac{N}{6}\right) - \sum_{\substack{k\geqslant 5\\k\text{ odd}\\3\nmid k}} \Phi\left(\frac{N}{k}\right).
+F(N) - F\left(\frac{N}{2}\right) - F\left(\frac{N}{3}\right) + F\left(\frac{N}{6}\right) \geqslant \Phi(N)
+\frac13 N^2
+9.66\%
+\Phi\left(\frac{N}{5}\right)
+(3)
+\begin{align} \Phi(N) &= F(N) - F\left(\frac{N}{2}\right) - F\left(\frac{N}{3}\right) + F\left(\frac{N}{6}\right) - F\left(\frac{N}{5}\right) + F\left(\frac{N}{10}\right)\\ &\qquad - \sum_{k}' \Phi\left(\frac{N}{k}\right) + \sum_{m=1}^\infty \Phi\left(\frac{N}{15m}\right) \end{align}
+\sum\limits_{k}'
+k > 5
+3
+5
+F(N) - F\left(\frac{N}{2}\right) - F\left(\frac{N}{3}\right) + F\left(\frac{N}{6}\right) - F\left(\frac{N}{5}\right) + F\left(\frac{N}{10}\right)
+\Phi(N)
+\Phi\left(\frac{N}{15m}\right)
+\Phi\left(\frac{N}{15m-2}\right)
+\frac{191}{600} N^2
+4.7\%
+\Phi\left(\frac{N}{7}\right)
+\frac{4567}{14700}N^2
+2.21\%
+\Phi\left(\frac{N}{m}\right)
+\Phi\left(\frac{n}{j}\right)
+j < m
+\Phi\left(\frac{N}{k}\right)
+(3)
+\Phi\left(\frac{n}{15}\right)
+\Phi\left(\frac{n}{11}\right)
+\begin{align} \Phi(N) &\leqslant F(N) - F\left(\frac{N}{2}\right) - F\left(\frac{N}{3}\right) + F\left(\frac{N}{6}\right) - F\left(\frac{N}{5}\right) + F\left(\frac{N}{10}\right)\\ &\quad - F\left(\frac{N}{7}\right) + F\left(\frac{N}{14}\right) - F\left(\frac{N}{11}\right) + F\left(\frac{N}{22}\right) + F\left(\frac{N}{15}\right) - F\left(\frac{N}{30}\right) \end{align}
+\frac{183353}{592900}N^2
+1.74\%
+N
+N
+\frac{3}{\pi^2}

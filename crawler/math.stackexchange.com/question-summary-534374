@@ -1,0 +1,18 @@
+A
+f
+g
+ f \leq g \implies \int_A f dm \leq \int_A g dm 
+\leq
+<
+A
+\int_A f\,dm = \int_A g\,dm = 0
+f
+g
+m(A) > 0
+f < g \Rightarrow \int_A f\,dm < \int_A g\,dm.
+A_n = \{x \in A : g(x) > f(x) + 2^{-n}\}
+A = \bigcup A_n
+A_n
+m(A_n) > 0
+n
+\begin{align} \int_A g\,dm &= \int_{A_n} g\,dm + \int_{A\setminus A_n} g\,dm\\ &\geqslant \int_{A_n} f + 2^{-n}\,dm + \int_{A\setminus A_n} f\,dm\\ &= \int_{A_n} f\,dm + 2^{-n} m(A_n) + \int_{A\setminus A_n} f\,dm\\ &= \int_A f\,dm + 2^{-n}\cdot m(A_n)\\ &> \int_A f\,dm. \end{align}

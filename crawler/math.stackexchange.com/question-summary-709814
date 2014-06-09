@@ -1,0 +1,28 @@
+ \int \cos x \, \sqrt{1-\cos x} \, dx.
+u=\cos(x/2)
+u=\cos(x/2)
+\cos(x)=\cos^2(x/2)-\sin^2(x/2)=2\cos^2(x/2)-1=2u^2-1
+1
+1-\cos(x)=1-(2u^2-1)=2(1-u^2)
+2
+u=\cos(x/2)
+\large \frac{du}{dx}=-\frac{1}{2}\sin(x/2)=-\frac{1}{2}\sqrt{1-u^2}
+\large dx=-2\frac{du}{\sqrt{1-u^2}}
+3
+1
+2
+3
+\int \cos(x)\sqrt{1-\cos(x)}dx=\int(2u^2-1)\sqrt{2}\sqrt{1-u^2}\frac{-2}{\sqrt{1-u^2}}du=-2\sqrt{2}\int(2u^2-1)du
+\sqrt{1-u^2}
+-2\sqrt{2}\int(2u^2-1)du=-2\sqrt{2}[\frac{2u^3}{3}-u]+C
+C
+u
+\cos(x/2)
+ \int \cos(x)\sqrt{1-\cos(x)}dx= 2\sqrt{2}\cos(x/2)-\frac{4\sqrt{2}}{3}\cos^3(x/2)+C
+1-\cos(x)=2\sin^2(\frac{x}{2})
+\sin(a)\cos(b)=\frac{1}{2}(\sin(a-b)-\sin(a+b)) 
+...=\int \sqrt{2} \sqrt{\sin^2\left(\frac{x}{2}\right)}\cos(x)dx
+...=\sqrt{2} \int  \sin\left(\frac{x}{2}\right)\cos(x)dx
+...=\sqrt{2} \int  \left(\sin\left(\frac{3x}{2}\right)-\sin\left(\frac{x}{2}\right)\right)dx
+...
+...=\sqrt{2}\cos\left(\frac{x}{2}\right)-\frac{\sqrt{2}}{3}\cos\left(\frac{x}{2}\right) + C

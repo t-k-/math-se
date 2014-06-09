@@ -1,0 +1,7 @@
+H_i
+i
+\lim\limits_{n\rightarrow \infty} H_n^2 - 2\sum\limits_{i=1}^n \frac{H_i}{i}
+H_n \approx \ln n
+H_n^2 - 2\sum\limits_{i=1}^n \frac{H_i}{i} \approx \ln^2 n - 2 \int\limits_1^n \frac{\ln x}{x} dx = \ln^2 n - 2\left[\frac{\ln^2 x}{2} \right]^n_1 = -\ln^2 1
+H_n^2 - 2\sum_{i=1}^n \frac{H_i}{i} = (1 + \frac{1}{2} + \cdots + \frac{1}{n})^2 - 2(\sum_{i=1}^k \sum_{k=1}^n \frac{1}{ik}) = (1 + \frac{1}{2^2} + \cdots + \frac{1}{n^2}) + 2(\sum_{i=k+1}^n \sum_{k=1}^{n-1} \frac{1}{ik}) - 2(\sum_{i=1}^k \sum_{k=1}^n \frac{1}{ik})
+\lim_n H_n^2 - 2\sum_{i=1}^n \frac{H_i}{i} = \lim_n (1 + \frac{1}{2^2} + \cdots + \frac{1}{n^2}) = \frac{\pi^2}{6}

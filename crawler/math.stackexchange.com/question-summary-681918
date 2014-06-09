@@ -1,0 +1,6 @@
+f:[a,b]\rightarrow \mathbb{R}^{d}
+\left \| \int_{a}^{b}f(x)dx \right \|_{2}\leq \int_{a}^{b}\left \| f(x)) \right \|_{2}dx
+t_{n,i}=a+i(b-a)/n
+ \int_a^b f(x)\,dx=\lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^n f(t_{n,i}), 
+ \Big\|\sum_{i=1}^n f(t_{n,i})\Big\|_2\le \sum_{i=1}^n \|f(t_{n,i})\|_2, 
+ \lim_{n\to\infty}\frac{b-a}{n}\sum_{i=1}^n \|f(t_{n,i})\|_2=\int_a^b\|f(x)\|_2\,dx, 

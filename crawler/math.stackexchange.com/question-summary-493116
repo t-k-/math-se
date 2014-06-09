@@ -1,0 +1,42 @@
+x \equiv 0
+\epsilon >0
+\{x_{0n}\}
+\lim_{n \to \infty}x_{0n}=0,t_{0n},t_n,t_{0n} \le t_n
+\left \|F(t_n,t_{0n},x_{0n})  \right \| \ge \epsilon
+1
+\tau_{0n}=t_{0n}-\left \lfloor t_{0n} \right \rfloor \le 1
+\tau_n=t_n-\left \lfloor t_{0n} \right \rfloor \ge \tau_{0n} \ge 0;
+x_{1n}=F(0,\tau_{0n},x_{0n})
+n
+\blacksquare
+\left \|F(\tau_n,\tau_{0n},x_{0n})  \right \| =\left \|F(t_n,t_{0n},x_{0n})  \right \| \ge \epsilon; (1)
+\left \|F(\tau_n,0,x_{1n})  \right \|=\left \|F(\tau_n,\tau_{0n},x_{0n})  \right \| \ge \epsilon; (2) 
+x(t)
+y(t)=x(t+\omega)
+x(t;\tau,u)
+(\tau,u)
+\exists \delta_1>0: \left | \tau-t_0 \right |<\delta_1,\left \| u-x_0 \right \|<\delta_1, \forall t_0,\tau \in \left [ 0,\omega \right ]
+\left \| x(t;\tau,u) -x(t;t_0,x_0)\right \|<\dfrac{\eta}{2}, \forall t \in \left [ 0,\omega \right ]
+x(t;t_0,x_0)
+t
+\exists \delta_2>0
+\left | t-t_0 \right |<\delta_2 \implies \left \| x(t;t_0,x_0)-x_0 \right \|<\eta
+\delta(t_0)=\min \left \{ \delta_1,\delta_2,\eta \right \}
+\forall t' \in \left ( t_0-\delta(t_0),t_0+\delta(t_0) \right ), \left \| x_0 \right \|<\delta(t_0)
+x(t;t',x_0)
+(1)
+\left \| x(t_0;t',x_0) \right \|\le \left \|x(t_0;t',x_0)-x(t_0;t_0,x_0)  \right \|+ \left \|x(t_0;t_0,x_0)  \right \|<\dfrac{\eta}{2}+\dfrac{\eta}{2}=\eta
+ \left \| x(t;t_0,x(t_0;t',x_0)) \right \|<\epsilon
+\forall s \in \left [ 0,\omega \right ],\exists \delta (s)>0
+\forall t_0 \in \left [ s-\delta(s),s+\delta(s) \right ], \forall x_0: \left \| x_0 \right \|<\delta
+\left \| x(t;t_0,x_0) \right \|<\epsilon, \forall t\ge t_0
+\exists s_1,\ldots, s_m
+\bigcup_{s \in \left [ 0,\omega \right ]}\left ( s-\delta(s),s+\delta(s) \right )\supset \left [ 0,\omega \right ]
+\bigcup_{k=\overline{1,m}}\left ( s_k-\delta(s_k),s_k+\delta(s_k) \right )\supset \left [ 0,\omega \right ]
+\delta :=\min_{k=\overline{1,m}} \delta (s_k)>0
+x(t;t_0,x_0)
+(1)
+\left \| x_0 \right \|< \delta, \exists m \in \Bbb Z:\tau=t_0+m\omega\in \left [ 0, \omega \right ]
+y(t)=x(t-m\omega) 
+(1)
+\left \| y(\tau) \right \|=\left \| x(\tau-m\omega) \right \|=\left \| x_0 \right \|< \delta \implies \left \| y(t) \right \|<\epsilon, \forall t\ge \tau \implies \left \| x(t) \right \|<\epsilon, \forall t\ge t_0 \blacksquare 

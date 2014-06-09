@@ -1,0 +1,20 @@
+ h(u) = (1+u) \log(1+u) - u 
+ h(u) \ge \frac{ u^2 }{ 2 + \frac{2}{3} u} 
+\begin{align} h(u) &=(1+u)\log(1+u)−u\\ &=(1+u)\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^n}{n}−u\\ &=\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^n}{n} +u\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^n}{n}−u\\ &=\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^n}{n} +\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^{n+1}}{n}−u\\ &=\sum_{n=1}^{\infty} \dfrac{(-1)^{n-1}u^n}{n} +\sum_{n=2}^{\infty} \dfrac{(-1)^{n}u^{n}}{n-1}−u\\ &=u+\sum_{n=2}^{\infty} \dfrac{(-1)^{n-1}u^n}{n} +\sum_{n=2}^{\infty} \dfrac{(-1)^{n}u^{n}}{n-1}−u\\ &=\sum_{n=2}^{\infty} u^n\left(\dfrac{(-1)^{n-1}}{n} +\dfrac{(-1)^{n}}{n-1}\right)\\ &=\sum_{n=2}^{\infty} (-1)^{n}u^n\left(\dfrac{-1}{n} +\dfrac{1}{n-1}\right)\\ &=\sum_{n=2}^{\infty} (-1)^{n}u^n\left(\dfrac{1}{(n-1)n}\right)\\ &=\sum_{n=2}^{\infty} \dfrac{(-1)^{n}u^n}{(n-1)n}\\ &= \dfrac{u^2}{2}-\dfrac{u^3}{6}+\dfrac{u^4}{12} -\dfrac{u^5}{20}\pm ...\\ \end{align} 
+\dfrac{u^2}{2}-\dfrac{u^3}{6} =\dfrac{u^2}{2}(1-\dfrac{u}{3}) 
+\dfrac1{1+z} =1-z+z^2 \pm ... 
+1-\dfrac{u}{3} \sim \dfrac1{1+u/3} 
+h(u) \sim \dfrac{u^2}{2}\dfrac1{1+u/3} = \dfrac{u^2}{2+2u/3} 
+h^*(u) = \dfrac{u^2}{2}\dfrac1{1+u/3} = \dfrac{u^2}{2+2u/3} 
+\begin{align} h^*(u) &\sim \dfrac{u^2}{2}\dfrac1{1+u/3}\\ &=\dfrac{u^2}{2}(1-\dfrac{u}{3}+\dfrac{u^2}{9} -\dfrac{u^3}{27}\pm ...)\\ &=\dfrac{u^2}{2}-\dfrac{u^3}{6}+\dfrac{u^4}{18} -\dfrac{u^5}{54}\pm ... \\ \end{align} 
+\begin{align} h(u)-h^*(u) &=(\dfrac{u^4}{12} -\dfrac{u^5}{20}\pm ...) -(\dfrac{u^4}{18} -\dfrac{u^5}{54}\pm ...)\\ &=u^4(\dfrac{1}{12}-\dfrac{1}{18}) -u^5(\dfrac{1}{20}-\dfrac{1}{54})\pm ...\\ &=\dfrac{u^4}{36} -\dfrac{17u^5}{540}\pm ... \\  \end{align} 
+h(u) > h^*(u)
+h^{**}(u) = \dfrac{u^2}{2}-\dfrac{u^3}{6} 
+h(u)-h^{**}(u) =\dfrac{u^4}{12} -\dfrac{u^5}{20}\pm ... 
+f(x)=(1+x) \log(1+x) - x- \frac{ x^2 }{ 2 + \frac{2}{3} x}
+f(0)=f'(0)=f''(0)=0
+f''(x)
+x>0
+f''(x)>0
+f'(x)>0
+f(x)>0

@@ -1,0 +1,30 @@
+\tan^6 \theta
+u=\tan \theta, du=\sec^2\theta\ d\theta
+\int \tan^a d\theta= \int\tan^{a-2}\theta(\sec^2\theta-1)\ d\theta= 
+ \int \tan ^{a-2}\theta\sec^2\theta\ d\theta-\int\tan^{a-2}\theta\ d\theta=
+ \int u^{a-2} du=\frac{1}{a-2+1}u^{a-2+1}=
+\frac{1}{a-1}u^{a-1}= 
+\frac{1}{a-1}\tan^{a-1}\theta-\int \tan^{a-2}\theta\ d\theta 
+ \int u^{(a-2)-2} du=\frac{1}{(a-2)-1}u^{(a-2)-1}=
+\frac{1}{a-3}u^{a-3}= 
+\frac{1}{a-3}\tan^{a-3}\theta-\int \tan^{a-4}\theta\ d\theta 
+\frac{1}{a-1}\tan^{a-1}\theta-\frac{1}{a-3}\tan^{a-3}\theta-\frac{1}{a-5}\tan^{a-5}\theta \text {....} \theta\ d\theta 
+\frac{1}{a-1}\tan^{a-1}\theta-\big[\sum_{n=3}^{a-2} {\frac{1}{a-n}\tan^{a-n}\theta}\big] -\int \tan^{2}\theta\ d\theta\space \text{if a is even. OR}
+\frac{1}{a-1}\tan^{a-1}\theta-\big[\sum_{n=3}^{a-2} {\frac{1}{a-n}\tan^{a-n}\theta}\big] -\int \tan\ d\theta\space \text{if a is odd}.
+addendum
+n=2k-1
+k=1
+\frac {a}{2}-1
+\frac {a-1}{2}
+n
+n
+I_a=\int \tan^a d\theta= \int\tan^{a-2}(\sec^2-1)d\theta \\=\frac{1}{a-1}\tan^{a-1}\theta-\int \tan^{a-2} d\theta \\ I_a=\frac{1}{a-1}\tan^{a-1}\theta-I_{a-2}
+I_a=\frac{1}{a-1}\tan^{a-1}\theta-\frac{1}{a-3}\tan^{a-3}\theta+ \frac{1}{a-5}\tan^{a-5}\theta ....I_{2} \\=\sum_{k\ =\ 1}^{\frac{a}{2}-1}(-1)^{k+1}\frac{1}{a-(2k-1)}\tan^{a-(2k-1)}\theta+(-1)^{\frac{a}{2}}I_2
+I_a=\frac{1}{a-1}\tan^{a-1}\theta-\frac{1}{a-3}\tan^{a-3}\theta+ \frac{1}{a-5}\tan^{a-5}\theta ....I_{1} \\=\sum_{k\ =\ 1}^{\frac{a-1}{2}}(-1)^{k+1}\frac{1}{a-(2k-1)}\tan^{a-(2k-1)}\theta+(-1)^{\frac{a+1}{2}}I_2
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{\int_{0}^{\mu}\tan^{a}\pars{\theta}\,\dd\theta}
+\ds{0 \leq \verts{\Re\pars{a}} < 1}
+\ds{\tan\pars{\theta}}
+\ds{\pi}
+\ds{0 < \mu < \pi}
+ \color{#00f}{\large\int_{0}^{\mu}\tan^{a}\pars{\theta}\,\dd\theta = -\,\half\,{\rm B}_{\root{\sin\pars{\mu}}} \pars{{a \over 2} + \half,-\,{a \over 2} + \half}}\,,\quad \left\vert% \begin{array}{c} \quad\verts{\Re\pars{a}} < 1 \\[2mm] \quad0 < \mu <  \pi \end{array}\right. 

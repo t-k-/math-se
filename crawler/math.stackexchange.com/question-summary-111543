@@ -1,0 +1,23 @@
+2A
+\{0,1,..,2B\}
+2C
+W
+0\leq D \leq A
+ F(x,t)=\frac{1}{\prod_{i=0}^{2B}(1-t^ix)}. 
+ W=\frac{1}{(2A)!(2C)!}\frac{\partial^{2A+2C}F}{\partial x^{2C}\partial t^{2A}} 
+n
+[x^n]\big(a_0+a_1x+a_2x^2+\cdots\big)=a_n = \frac{1}{n!}\frac{\partial^{\,n}}{\partial x^n}\big|_{x=0}. 
+F_b(x,t)=\prod_{k=0}^b \frac{1}{1-t^kx}=\prod_{k=0}^b \left(1+t^kx+t^{2k}x^2+\cdots\right)=\sum_{n=0}^\infty \sum_{m=0}^\infty \ell_b(n,m) t^n x^m.
+\ell_b(n,m)
+m
+\{0,1,\cdots, b\}
+n
+\ell_b(n,m)=[t^n][x^m] F_b(x,t). \tag{*}
+m
+\{0,\cdots,b\}
+\ell_b(n,m)
+n
+\ell=0
+n>mb
+\square_{\,b}(m) =\left(\sum_{n=0}^{b-1} [t^{2n+1}]\right)[x^m] F(x,t).
+G(x)=\sum_{m=0}^\infty \square_{\,b}(m) x^m = \left(\sum_{n=0}^{b-1} [t^{2n+1}]\right) F(x,t). 

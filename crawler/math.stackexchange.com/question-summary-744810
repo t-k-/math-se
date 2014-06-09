@@ -1,0 +1,60 @@
+B_1(y)
+B_2(y)
+G_1
+G_2
+\vdash_Q G_1 \leftrightarrow B_2(\ulcorner G_2 \urcorner)
+\vdash_Q G_2 \leftrightarrow B_1(\ulcorner G_1 \urcorner)
+Q
+G
+G
+Q
+G_1 := \lnot G
+Q
+\vdash_Q G_1 \leftrightarrow \exists x Pf(x, \ulcorner G \urcorner)
+G_2 := \lnot G_1
+G_2
+G
+\ulcorner G \urcorner
+\ulcorner G_2 \urcorner
+\vdash_Q G_1 \leftrightarrow \exists x Pf(x, \ulcorner G_2 \urcorner)
+B_2(x)
+\vdash_Q G_1 \leftrightarrow B_2(\ulcorner G_2 \urcorner)
+\vdash_Q G \leftrightarrow \lnot \exists x Pf(x, \ulcorner G \urcorner)
+\vdash_Q G_2 \leftrightarrow \lnot \exists x Pf(x, Neg(\ulcorner G_1 \urcorner))
+B_1
+\vdash_Q G_2 \leftrightarrow B_1(\ulcorner G_1 \urcorner)
+B_1
+B_2
+E_1(x, y)
+E_2(x, y)
+e_1
+e_2
+\exists x \exists y (x = e_1 \land y = e_2 \land E_1(x, y))
+E_1(e_1, e_2)
+\exists x \exists y (x = e_1 \land y = e_2 \land E_2(x, y))
+E_2(e_1, e_2)
+B_1(x)
+B_2(x)
+E_1(x,y) := B_2(y) \land x = x
+E_2(x,y) := B_1(x) \land y = y
+\forall y(E_1(x,y) \leftrightarrow B_2(x))
+\forall x(E_2(x,y) \leftrightarrow B_1(y))
+E_1(x,y)
+E_2(x,y)
+\overline k_i
+E_i(su(x_1, x_1, x_2), su(x_2, x_1, x_2))
+G_i
+E_i(su(\overline k_1, \overline k_1, \overline k_2), su(\overline k_2, \overline k_1, \overline k_2))
+\overline k_1, \overline k_2
+x_1, x_2
+\overline k_i
+E_i(su (x_1, x_1, x_2), su(x_2, x_1, x_2))
+G_i
+\overline k_i, \overline k_1, \overline k_2
+G_i
+Q
+su(\overline k_i, \overline k_1, \overline k_2) = \ulcorner G_i \urcorner
+\vdash_Q G_1 \leftrightarrow E_1 (\ulcorner G_1 \urcorner,\ulcorner G_2 \urcorner)
+\vdash \forall y(E_1(x,y) \leftrightarrow B_2(y))
+\vdash_Q G_1 \leftrightarrow B_2(\ulcorner G_2 \urcorner)
+\vdash_Q G_2 \leftrightarrow E_2 (\ulcorner G_1 \urcorner,\ulcorner G_2 \urcorner) \leftrightarrow B_1(\ulcorner G_1 \urcorner)

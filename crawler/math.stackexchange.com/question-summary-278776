@@ -1,0 +1,15 @@
+P_0,P_1,P_2,P_3
+P_0,P_1,P_2
+\pi:\mathbb KP^1\rightarrow G
+\pi([1:0])=P_0,\pi([0:1])=P_1, \pi([1:1])=P_2, \pi([x_0:x_1])=P_3
+CR(P_0,P_1,P_2,P_3):=\frac{x_1}{x_0}
+CR(P_1,P_0,P_2,P_3)=\frac{1}{CR(P_0,P_1,P_2,P_3)}=CR(P_0,P_1,P_3,P_2)
+CR(P_2,P_1,P_0,P_3)=1-CR(P_0,P_1,P_2,P_3)=CR(P_0,P_3,P_2,P_1)
+ CR(P_0,P_1;P_2,P_3) := \frac{[P_0,P_2][P_1,P_3]}{[P_0,P_3][P_1,P_2]} 
+2\times2
+\pi
+ CR(P_0,P_1;P_2,P_3) = \frac {\begin{vmatrix}1&1\\0&1\end{vmatrix}\cdot  \begin{vmatrix}0&x_0\\1&x_1\end{vmatrix}} {\begin{vmatrix}1&x_0\\0&x_1\end{vmatrix}\cdot  \begin{vmatrix}0&1\\1&1\end{vmatrix}} = \frac{x_0}{x_1} 
+ CR(\pi P_0,\pi P_1;\pi P_2,\pi P_3) = \frac{[\pi P_0,\pi P_2][\pi P_1,\pi P_3]}{[\pi P_0,\pi P_3][\pi P_1,\pi P_2]} = \frac{\det(\pi)^2[P_0,P_2][P_1,P_3]}{\det(\pi)^2[P_0,P_3][P_1,P_2]} 
+P_0
+P_2
+ (P_2,P_1;P_0,P_3) = \frac {\begin{vmatrix}1&1\\1&0\end{vmatrix}\cdot  \begin{vmatrix}0&x_0\\1&x_1\end{vmatrix}} {\begin{vmatrix}1&x_0\\1&x_1\end{vmatrix}\cdot  \begin{vmatrix}0&1\\1&0\end{vmatrix}} = \frac{x_0}{x_0-x_1} \neq 1-\frac{x_0}{x_1} = 1-(P_0,P_1;P_2,P_3) 

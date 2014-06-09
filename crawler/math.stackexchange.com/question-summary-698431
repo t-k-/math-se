@@ -1,0 +1,42 @@
+f \in L^1
+\lim_{\omega \to \infty} \underbrace{\int_{\mathbb{R}} f(x) \cdot e^{-\imath \, x \omega} \, dx}_{=:\hat{f}(\omega)} = 0, \tag{1}
+f \in L^1
+(f_n)_{n \in \mathbb{N}}
+f_n \stackrel{L^1}{\to} f
+\|\hat{g}\|_{\infty} \leq \|g\|_{L^1}
+g \in L^1
+\begin{align*} |\hat{f}(\omega)|  &\leq |\hat{f}(\omega)-\hat{f}_n(\omega)|+|\hat{f}_n(\omega)| \\ &\leq \|f_n-f\|_{L^1} + |\hat{f}_n(\omega)|. \end{align*}
+\|f_n-f\|_{L^1} \to 0
+n \to \infty
+(1)
+f(x) = \sum_{j=1}^n c_j \cdot 1_{[x_j,x_{j+1}]}
+c_j \in \mathbb{R}
+x_j<x_{j+1}
+j=1,\ldots,n
+\hat{f}(\omega) = \sum_{j=1}^n c_j \int_{x_j}^{x_{j+1}} e^{-\imath \, x \omega} \, dx = \sum_{j=1}^n \frac{c_j}{-\imath \omega} \bigg( e^{-\imath \, x_{j+1} \omega}-e^{-\imath \, x_j \omega} \bigg) \stackrel{\omega \to \infty}{\to} 0,
+(1)
+f
+g
+L^{1}
+L^{1}
+f\in L^{1}
+         \left|\int_{-\infty}^{\infty}fe^{i\omega t}\,dt-\int_{-\infty}^{\infty}ge^{i\omega t}\,dt\right| \le \|f-g\|_{1}. 
+         \lim_{|\omega|\rightarrow\infty}\int_{-\infty}^{\infty}f(t)e^{i\omega t}\,dt=0 
+f
+\mathcal{F}
+E
+[-R,R]
+f=\chi_{E}
+\sigma
+[-R,R]
+f
+L^{1}
+         \lim_{|\omega|\rightarrow\infty}\int_{-\infty}^{\infty}f(t)e^{i\omega t}\,dt=0 
+\int\limits_{\mathbb{R}}f(x) e^{-ix\omega}dx=-\int\limits_{\mathbb{R}}f(x) e^{-i(x\omega+\pi)}dx=-\int\limits_{\mathbb{R}}f(x) e^{-i\omega\left(x+\frac{\pi}{\omega}\right)}dx=-\int\limits_{\mathbb{R}}f\left(x-\frac{\pi}{\omega}\right) e^{-i\omega x}dx
+v=x+\frac{\pi}{\omega}
+v
+x
+2\int\limits_{\mathbb{R}}f(x) e^{-ix\omega}dx=-\int\limits_{\mathbb{R}}\left[f\left(x-\frac{\pi}{\omega}\right)-f(x) \right]e^{-i\omega x}dx 
+2\left|\int\limits_{\mathbb{R}}f(x) e^{-ix\omega}dx\right|= \left|\int\limits_{\mathbb{R}}\left[f\left(x-\frac{\pi}{\omega}\right)-f(x) \right]e^{-i\omega x}\right|\leqslant \left\|f\left(x-\frac{\pi}{\omega}\right)-f(x)\right\|_{L^1}
+\lim\limits_{\omega\to \infty}\left|\int\limits_{\mathbb{R}}f(x) e^{-ix\omega}dx\right|\leqslant \frac{1}{2}\lim\limits_{\omega\to \infty}\left\|f\left(x-\frac{\pi}{\omega}\right)-f(x)\right\|_{L^1}=\frac{1}{2}\lim\limits_{h \to 0}\|f(x-h)-f(x)\|_{L^1}
+\lim\limits_{\omega\to \infty}\left|\int\limits_{\mathbb{R}}f(x) e^{-ix\omega}dx\right|\leqslant \frac{1}{2}\lim\limits_{h \to 0}\|f(x-h)-f(x)\|_{L^1}=\frac{1}{2}\cdot 0

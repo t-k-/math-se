@@ -1,0 +1,20 @@
+f:[0,1]\rightarrow\mathbb R
+f(0)=0
+f(1)=1
+ \lim_{n\rightarrow\infty}n\int_0^1f(x)x^{2n}dx. 
+nf(x)x^{2n}
+\lim
+\int
+\left( {2n + 1} \right)\int_0^1 f (x){x^{2n}}dx
+\int_0^1 {{x^{2n}}dx}  = \frac{1}{{2n + 1}}
+(2n+1)\int_0^1 {f\left( x \right){x^{2n}}dx}  - f\left( 1 \right) = \left( {2n + 1} \right)\int_0^1  ({f\left( x \right) - f\left( 1 \right)){x^{2n}}dx} 
+(2n+1)x^{2n}
+[0,\delta)
+\delta >0
+f(x)-f(1)
+x=1
+[\delta,1]
+\begin{align}\left|\int_0^1(f(x)-f(1))x^{2n}dx\right|&\leqslant\int_0^1|f(x)-f(1)|x^{2n}dx\\&=\int_0^\delta|f(x)-f(1)|x^{2n}dx+\int_\delta^1|f(x)-f(1)|x^{2n}dx\\&\leqslant M\int_0^\delta x^{2n}dx+\varepsilon\int_\delta^1x^{2n}\\&\leqslant M\int_0^\delta x^{2n}dx+\varepsilon\cdot \int_0^1x^{2n}\\&=M \int_0^\delta x^{2n}dx+\frac{\epsilon}{2n+1}\end{align}
+2n+1
+f(1)
+f(1)/2

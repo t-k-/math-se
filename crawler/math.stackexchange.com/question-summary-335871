@@ -1,0 +1,23 @@
+(B_t)_{t \geq 0}
+(B0)-(B2),(B4)
+B_t
+t_j := \frac{j}{n}
+B_{t_j}-B_{t_{j-1}}
+j=1,\ldots,n
+B_t = \sum_{j=1}^n B_{t_j}-B_{t_{j-1}}
+ \begin{align} \mathbb{E}(B_t) &= n \cdot \mathbb{E}(B_{t_j-t_{j-1}}) \tag{1} \\  \mathbb{V}(B_t) &= n \cdot \mathbb{V}(B_{t_j-t_{j-1}}) \tag{2} \end{align}
+\begin{align} B_t- \mathbb{E}B_t &\stackrel{(1)}{=} \sum_{j=1}^n (B_{t_j}-B_{t_{j-1}})- \mathbb{E}(B_{t_j-t_{j-1}}) \\ &= \sum_{j=1}^n \frac{\sqrt{\mathbb{V}(B_{t_j}-B_{t_{j-1}})}}{\sqrt{\mathbb{V}(B_{t_j}-B_{t_{j-1}})}} \cdot \bigg((B_{t_j}-B_{t_{j-1}})- \mathbb{E}(B_{t_j-t_{j-1}})\bigg) \\ &\stackrel{(2)}{=} \sqrt{\mathbb{V}(B_t)} \cdot \frac{1}{\sqrt{n}} \sum_{j=1}^n \underbrace{\frac{(B_{t_j}-B_{t_{j-1}})-\mathbb{E}(B_{t_j}-B_{t_{j-1}})}{\sqrt{\mathbb{V}(B_{t_j}-B_{t_{j-1}})}}}_{=:G_j^n} \end{align}
+G_j^n
+j=1,\ldots,n
+G_j^n \sim Z^n
+\mathbb{E}Z^n=0
+\mathbb{E}((Z^n)^2) = 1
+(G_j^n)_{j=1,\ldots,n;n \in \mathbb{N}}
+0
+n \to \infty
+\mathbb{E}((Z^n)^2)=1
+\begin{align} \frac{1}{s_n^2} \sum_{j=1}^n \int_{|G_j^n| > \varepsilon \cdot s_n} (G_j^n)^2 \, d\mathbb{P} &\stackrel{\text{iid},(3)}{=} \frac{1}{n} \cdot n \cdot \int_{|Z^n| > \varepsilon \cdot \sqrt{n}} (Z^n)^2 \, d\mathbb{P} \\ &= \int_{|B_{\frac{t}{n}}-\mathbb{E}B_{\frac{t}{n}}|>\varepsilon \cdot \sqrt{n \cdot \mathbb{V}B_{\frac{t}{n}}}} \frac{(B_{\frac{t}{n}}-\mathbb{E}B_{\frac{t}{n}})^2}{\mathbb{V}B_{\frac{t}{n}}} \, d\mathbb{P} \end{align}
+s_n^2 := \sum_{j=1}^n \mathbb{V}G_j^n = n \cdot \mathbb{E}((Z^n)^2) = n \tag{3}
+0
+Z^n
+n

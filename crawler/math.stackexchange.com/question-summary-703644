@@ -1,0 +1,22 @@
+y: \mathbb R^n \to \mathbb R
+ y(\vec x) = y(x_1,x_2,\cdots,x_n)
+ dy = \sum_{i=1}^{n}{\left(\frac{\partial y}{\partial x_i}\cdot dx_i\right)} 
+\nabla y
+ \nabla y = \left( \frac{\partial y}{\partial x_1},\frac{\partial y}{\partial x_2},\cdots,\frac{\partial y}{\partial x_n} \right) 
+ dy = \nabla y\cdot d\vec x 
+y(x)
+x_0
+y(x)= y(x_0)+\nabla y^T(x-x_0)+(x-x_0)^TH(x-x_0)+hot(x) 
+\nabla y
+H
+y(x)
+x_0
+hot(x)
+y
+y(x)\approx y(x_0)+\nabla y^T(x-x_0)+(x-x_0)^TH(x-x_0)
+\Rightarrow y(x)-y(x_0)\approx \nabla y^T(x-x_0)+(x-x_0)^TH(x-x_0)
+x \rightarrow x_0
+dx^THdx
+\nabla y^Tdx
+dy \approx \nabla y^Tdx+dx^THdx
+dy =\nabla y^Tdx

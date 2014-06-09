@@ -1,0 +1,26 @@
+3u_{tt}+10u_{xt}+3u_{xx}=\sin(x+t)
+\zeta = x+t
+\eta = x-t
+v=4u_{\zeta}+2u_{\eta}
+\zeta
+\eta
+u_{\zeta \zeta}
+u_{\eta \eta}
+u_{\zeta \eta}
+16u_{\zeta\zeta}-4u_{\eta \eta}=\left(4\frac{\delta}{\delta \zeta} -2 \frac{\delta}{\delta \eta}\right)\left(4\frac{\delta}{\delta \zeta} +2 \frac{\delta}{\delta \eta}\right)u=\sin(\zeta)
+\because3\dfrac{\partial^2}{\partial t^2}+10\dfrac{\partial^2}{\partial x\partial t}+3\dfrac{\partial^2}{\partial x^2}=\left(3\dfrac{\partial}{\partial t}+\dfrac{\partial}{\partial x}\right)\left(\dfrac{\partial}{\partial t}+3\dfrac{\partial}{\partial x}\right)
+\therefore
+\begin{cases}\zeta=x-3t\\\eta=t-3x\end{cases}
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial\zeta}\dfrac{\partial\zeta}{\partial x}+\dfrac{\partial u}{\partial\eta}\dfrac{\partial\eta}{\partial x}=\dfrac{\partial u}{\partial\zeta}-3\dfrac{\partial u}{\partial\eta}
+\dfrac{\partial^2u}{\partial x^2}=\dfrac{\partial}{\partial x}\left(\dfrac{\partial u}{\partial\zeta}-3\dfrac{\partial u}{\partial\eta}\right)=\dfrac{\partial}{\partial\zeta}\left(\dfrac{\partial u}{\partial\zeta}-3\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\zeta}{\partial x}+\dfrac{\partial}{\partial\eta}\left(\dfrac{\partial u}{\partial\zeta}-3\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\eta}{\partial x}=\dfrac{\partial^2u}{\partial\zeta^2}-3\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\left(\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\dfrac{\partial^2u}{\partial\eta^2}\right)=\dfrac{\partial^2u}{\partial\zeta^2}-6\dfrac{\partial^2u}{\partial\zeta\partial\eta}+9\dfrac{\partial^2u}{\partial\eta^2}
+\dfrac{\partial u}{\partial t}=\dfrac{\partial u}{\partial\eta}\dfrac{\partial\eta}{\partial t}+\dfrac{\partial u}{\partial\zeta}\dfrac{\partial\zeta}{\partial t}=\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}
+\dfrac{\partial^2u}{\partial t^2}=\dfrac{\partial}{\partial t}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)=\dfrac{\partial}{\partial\eta}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)\dfrac{\partial\eta}{\partial t}+\dfrac{\partial}{\partial\zeta}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)\dfrac{\partial\zeta}{\partial t}=\dfrac{\partial^2u}{\partial\eta^2}-3\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\left(\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\dfrac{\partial^2u}{\partial\zeta^2}\right)=\dfrac{\partial^2u}{\partial\eta^2}-6\dfrac{\partial^2u}{\partial\zeta\partial\eta}+9\dfrac{\partial^2u}{\partial\zeta^2}
+\dfrac{\partial^2u}{\partial x\partial t}=\dfrac{\partial}{\partial x}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)=\dfrac{\partial}{\partial\zeta}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)\dfrac{\partial\zeta}{\partial x}+\dfrac{\partial}{\partial\eta}\left(\dfrac{\partial u}{\partial\eta}-3\dfrac{\partial u}{\partial\zeta}\right)\dfrac{\partial\eta}{\partial x}=\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\dfrac{\partial^2u}{\partial\zeta^2}-3\left(\dfrac{\partial^2u}{\partial\eta^2}-3\dfrac{\partial^2u}{\partial\zeta\partial\eta}\right)=-3\dfrac{\partial^2u}{\partial\zeta^2}+10\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\dfrac{\partial^2u}{\partial\eta^2}
+\therefore3\left(\dfrac{\partial^2u}{\partial\eta^2}-6\dfrac{\partial^2u}{\partial\zeta\partial\eta}+9\dfrac{\partial^2u}{\partial\zeta^2}\right)+10\left(-3\dfrac{\partial^2u}{\partial\zeta^2}+10\dfrac{\partial^2u}{\partial\zeta\partial\eta}-3\dfrac{\partial^2u}{\partial\eta^2}\right)+3\left(\dfrac{\partial^2u}{\partial\zeta^2}-6\dfrac{\partial^2u}{\partial\zeta\partial\eta}+9\dfrac{\partial^2u}{\partial\eta^2}\right)=\sin\dfrac{\zeta+\eta}{-2}
+3\dfrac{\partial^2u}{\partial\eta^2}-18\dfrac{\partial^2u}{\partial\zeta\partial\eta}+27\dfrac{\partial^2u}{\partial\zeta^2}-30\dfrac{\partial^2u}{\partial\zeta^2}+100\dfrac{\partial^2u}{\partial\zeta\partial\eta}-30\dfrac{\partial^2u}{\partial\eta^2}+3\dfrac{\partial^2u}{\partial\zeta^2}-18\dfrac{\partial^2u}{\partial\zeta\partial\eta}+27\dfrac{\partial^2u}{\partial\eta^2}=-\sin\dfrac{\zeta+\eta}{2}
+64\dfrac{\partial^2u}{\partial\zeta\partial\eta}=-\sin\dfrac{\zeta+\eta}{2}
+\dfrac{\partial^2u}{\partial\zeta\partial\eta}=-\dfrac{1}{64}\sin\dfrac{\zeta+\eta}{2}
+u=F(\zeta)+G(\eta)+\dfrac{1}{16}\sin\dfrac{\zeta+\eta}{2}
+u=F(x-3t)+G(t-3x)-\dfrac{\sin(x+t)}{16}
+16 u_{\zeta \zeta} - 4 u_{\eta \eta} = \sin(\zeta)
+\zeta

@@ -1,0 +1,33 @@
+a,b
+\ln(xy)=\ln x +\ln y
+ \int_0^a \ln \left( \frac{b-\sqrt{a^2-x^2}}{b+\sqrt{a^2-x^2}}    \right)dx 
+ \int \ln \big(b\pm \sqrt{a^2-x^2}\big) dx 
+a\geq 0
+b\geq 0
+x= a \sin t 
+\ln
+-\int_0^{\pi/2}\frac{2 a^2 b \sin^2 t\,dt }{b^2 -a^2 \cos^2 t} .
+\pi \left(\sqrt{b^2 -a^2}  -b\right).
+0\leq a \leq b
+x= a \sin t
+dx = a \cos t\, dt
+ a \int_{0}^{\pi/2} \!dt\,\cos t\, \ln \left( \frac{b -a \cos t}{b+a \cos t} \right). 
+\cos t
+ a \sin t \, \ln \left( \frac{b -a \cos t}{b+a \cos t} \right) \Bigg|_{0}^{\pi/2} - a \int_0^{\pi/2}\!dt\, \sin t \frac{b+ a \cos t}{b -a \cos t} \frac{2 a b}{(b+ a \cos t)^2} \sin t\\ = - 2 a^2 b \int_0^{\pi/2}\!dt\, \frac{\sin^2 t}{b^2 -a ^2 \cos^2 t}.
+s= \tan t
+ds = (1+s^2) dt =\cos^{-2} t\, dt
+ -2 a^2 b \int_0^{\infty}\!\frac{ds}{1+s^2}\, \frac{\sin^2 t}{b^2 -a^2\cos^2 t} = -2 a^2 b \int_0^{\infty}\!ds\, \frac{s^2}{(1+s^2)[b^2 (1+s^2)-a^2]}.
+\alpha=1
+\alpha= \sqrt{1-(a/b)^2}
+ -2 b \int_0^\infty\frac{ds}{1+s^2} +  \frac{2(b^2-a^2)}{b} \int_0^\infty \frac{ds}{s^2 +1 - (a/b)^2}   .
+\int_0^\infty \frac{ds}{s^2+\alpha^2}  = \alpha^{-1} \arctan(s/\alpha) \big|_{0}^{\infty} = \frac{\pi}{2\alpha},
+ -\pi b + \frac{(b^2-a^2)\pi}{b \sqrt{1-(a/b)^2}} .
+\int \ln(a+\sqrt{1-x^2}) dx
+x=\sin t
+\int \ln (a+\cos t) \cos t \, dt = \ln(a+\cos t) \sin t + \int \frac{\sin^2 t}{a+\cos t} \, dt
+u = \tan t/2
+\sin t = 2u/(1+u^2)
+\cos t = (1-u^2)/(1+u^2)
+dt = 2/(1+u^2) du
+\int \frac{4u^2}{(1+u^2)^2} \frac{1}{a+(1-u^2)/(1+u^2)} \frac{2}{1+u^2}du
+\int \frac{4u^2}{(1+u^2)^2} \frac{1}{(a-1)u^2+(a+1)} \frac{2}{1+u^2}du.

@@ -1,0 +1,36 @@
+\Omega
+N
+f:\Omega\to\{0,1\}
+S\subset \Omega
+f
+S
+\#S
+S
+a(\Omega) = p
+S
+n
+   a(S):=\frac{1}{\# S}\sum_{x\in S}f(x) 
+   \mathsf Ea(S),\qquad \mathsf Ea^2(S). 
+S
+\binom Nn
+x
+n
+x
+\binom{N-1}{n-1}
+\binom{N-1}{n-1}
+f^2(x) = f(x)
+\binom{N-2}{n-2}
+f(x)f(y)
+x\neq y
+   \mathsf Ea(S) = \frac{1}{n\binom Nn}\sum_S\sum_{x\in S}f(x). 
+   \mathsf Ea(S) = \frac{\binom {N-1}{n-1}}{n\binom Nn}\sum_{x\in X}f(x) = p\frac{N\binom {N-1}{n-1}}{n \binom Nn} = p\frac{N(N-1)!n!}{nN!(n-1)!} = p. 
+   \mathsf Ea^2(S) = \frac{1}{n\binom Nn}\sum_S\sum_{x,y\in S}f(x)f(y). 
+   \mathsf Ea^2(S) = \frac{1}{n\binom Nn}\left(\binom{N-2}{n-2}\sum_{\stackrel{x,y\in X}{x\neq y}}f(x)f(y) + \binom{N-1}{n-1}\sum_{x\in X}f(x)\right) 
+   = \frac{1}{n\binom Nn}\left(\binom{N-2}{n-2}\left(\sum_{x\in X}f(x)\right)^2 + \left(\binom{N-1}{n-1} - \binom{N-2}{n-2}\right)\sum_{x\in X}f(x)\right) 
+   = \frac{1}{n\binom Nn}\left(N^2p^2\binom{N-2}{n-2} + Np\left(\binom{N-1}{n-1} - \binom{N-2}{n-2}\right)\right) 
+   \mathsf Ea^2(S) = \frac{(Np^2 + p)(n-1)}{N-1} + p. 
+S
+n
+x\in \Omega
+S
+\frac{|S|}{|\Omega|}=\frac{n}{|\Omega|}

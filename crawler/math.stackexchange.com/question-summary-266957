@@ -1,0 +1,9 @@
+\displaystyle \int_{0}^1\frac{\ln x}{x^2-x-1}\text{d}x
+x_{\pm}=\frac{1}{2}\left(1\pm\sqrt{5}\right)
+x^2-x-1
+ \frac{1}{x^2-x-1}=\frac{2}{\sqrt{5}}\left[\frac{1}{x-x_+}-\frac{1}{x-x_-}\right], 
+ \frac{1}{x-x_+} = -\frac{1}{x_+}\sum_{n=0}^\infty{\left(\frac{x}{x_+}\right)^n},\quad 0<x<1; 
+ \frac{1}{x-x_-} = -\frac{1}{x_-}\sum_{n=0}^\infty{\left(\frac{x}{x_-}\right)^n},\quad 0<x<-x_-; 
+ \frac{1}{x-x_-} = \frac{1}{x}\sum_{n=0}^\infty{\left(\frac{x_-}{x}\right)^n},\quad -x_-<x<1. 
+ \int_0^1\frac{\log(x)}{x^2-x-1}d\,x = \frac{2}{\sqrt{5}}\times\sum_{n=0}^\infty\left[-\frac{1}{x_+}\int_0^1{\log(x)\left(\frac{x}{x_+}\right)^nd\,x} + \frac{1}{x_-}\int_0^{-x_-}{\log(x)\left(\frac{x}{x_-}\right)^n d\,x} - \int_{-x_-}^1{\frac{1}{x}\log(x)\left(\frac{x_-}{x}\right)^n d\,x}\right]. 
+\pi^2/5\sqrt{5}

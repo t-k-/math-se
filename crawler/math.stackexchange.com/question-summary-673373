@@ -1,0 +1,18 @@
+t^2=\sin{x}
+I_{1}=\dfrac{1}{2}\int_{0}^{\frac{\pi}{2}}\dfrac{dx}{\sqrt{\sin{x}}}
+t^2=\tan{x}
+I_{2}=\dfrac{1}{2}\int_{0}^{\frac{\pi}{4}}\dfrac{dx}{\sqrt{\sin{x}\cos{x}}}=\dfrac{1}{2\sqrt{2}}\int_{0}^{\frac{\pi}{2}}\dfrac{dx}{\sqrt{\sin{x}}}
+\dfrac{I_{1}}{I_{2}}=\sqrt{2}
+I_1(x)=\int_x^1\frac{dt}{\sqrt{1-t^4}}=\frac{1}{\sqrt{2}}\int_{0}^{\arccos x}\frac{du}{\sqrt{1-\frac{1}{2}\sin^2u}}
+I_2(x)=\int_0^x \frac{dt}{\sqrt{1+t^4}}=\frac{1}{2}\int_{0}^{\arccos\frac{1-x^2}{1+x^2}}\frac{du}{\sqrt{1-\frac{1}{2}\sin^2u}}
+\arccos 0 = \arccos \frac{1-1^2}{1+1^2}
+\frac{I_1(0)}{I_2(1)}=\sqrt{2}
+t=\cos u
+u=\arccos t
+\frac{dt}{\sqrt{1-t^4}}=\frac{-\sin udu}{\sqrt{1-\cos^4 u}}=\frac{-\sin udu}{\sqrt{\sin^2 u(1+\cos^2 u)}}
+t=\tan\frac{u}{2}
+t^2=\frac{1}{\cos^2 \frac{u}{2}}-1=\frac{1-\cos u}{1+\cos u}
+u=\arccos \frac{1-t^2}{1+t^2}
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{x \equiv {1 \over 1 + t^{4}}\quad\iff\quad t = \pars{{1 \over x} - 1}^{1/4}}
+ \color{#00f}{\large{I_{1} \over I_{2}}} = {1/\pars{4\root{2}} \over 1/8} =\color{#00f}{\large\root{2}} 

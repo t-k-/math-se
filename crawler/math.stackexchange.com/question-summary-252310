@@ -1,0 +1,21 @@
+T_1, T_2,\ldots\sim U(0,1)
+45
+N=\min_{k\geq 1}\left(\{X_1+X_2+\dots+X_k > 3/4\} \cap \{X_1+X_2+\dots+X_{k-1} \leq 3/4\}\right). 
+ P(N=k) = \frac{(3/4)^{k-1}}{(k-1)!}-\frac{(3/4)^k}{k!},\quad k = 1,2,\dots 
+N
+N
+X_1+X_2+..+X_k = S_k
+A_k=
+(S_{k-1}<3/4)\cap(S_{k}\geq3/4)
+B=
+(S_{k-1}\geq3/4)\cup(S_k<3/4)
+B
+P(B)=P({S_{k-1}\geq3/4})+P(S_k<3/4).
+{S_{k-1}\geq 3/4}=A_{k-1}+A_{k-2}+...A_1
+R^k
+x_1+x_2+..+x_k=3/4
+x_i=0\ (i=1,2,..,k)
+P(B)=\sum_{i=1}^{k-1} A_i + \frac {(3/4)^k} {k!}
+P(A)=1-P(B)
+Mean = \sum_{i=1}^{\infty} {kP(N=k)}
+Variance = \sum_{i=1}^{\infty} {(k-Mean)^2}P(N=k)

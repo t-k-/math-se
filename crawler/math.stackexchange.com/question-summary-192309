@@ -1,0 +1,14 @@
+C
+n\times n
+b \in \mathbb{R}^n
+T: \mathbb{R}^n \rightarrow \mathbb{R}^n
+y = Tx = Cx+b
+d(x,z) = \sqrt{\sum\limits_{j=1}^n (\xi_j - \zeta_j)^2}
+T
+\sum\limits_{j=1}^n \sum\limits_{k=1}^n c_{jk}^2<1
+d(Tx,Tz) = \left[\sum\limits_{j=1}^n \left(\sum\limits_{k=1}^n c_{jk} (\xi_k-\zeta_k)\right)^2 \right]^{1/2},
+d(T(x),T(y))=||T(x)-T(y)||_{2}=||C(x-y)||_{2}\leq ||C||\cdot ||x-y||_{2}  
+\sum_{j} c_{ij}x_{j}\leq \sum_{j}|c_{ij}x_{j}|\leq \sqrt{\sum_{j}c_{ij}^2}\cdot\sqrt{\sum_{j}x_{j}^2}=\sqrt{\sum_{j}c_{ij}^2}
+||x||_{2}=1
+\sqrt{\sum_{i}\left(\sum_{j}c_{ij}x_{j}\right)^2}\leq \sqrt{\sum_{i}\sum_{j}c_{ij}^2}<1
+||C||<1

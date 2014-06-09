@@ -1,0 +1,41 @@
+n
+k
+X_i
+i
+X = \min\{X_1,\ldots,X_n\}
+k
+ Pr[X < 2\log(n)] < \frac{2}{n}. 
+ Pr[X < 2\log(n)] = Pr[\bigcup_{i=0}^n X_i < 2\log(n)] \leq n*Pr[X_1 < 2\log(n)]
+Pr[X_1 < 2\log(n)]
+X_1
+k
+1/n
+\mu = k/n
+P(X_1/k < 1/n - \epsilon) \le e^{-D k}
+D = (1/n - \epsilon) \log(1 - \epsilon n) + (1 - 1/n + \epsilon) \log(1 + \epsilon n/(n-1))
+P(Y\le y)\le a^yE(a^{-Y})
+a\ge1
+a\ge1
+Y
+y<E(Y)
+a>1
+a^yE(a^{-Y})<1
+P(Y\le y)\le \mathrm{e}^{ty}E(\mathrm{e}^{-tY})
+t\ge0
+k\le 2n\log n
+k\ge6.3n\log n
+t\ge0
+X_1
+(k,1/n)
+k=cn\log(n)
+1/n^2
+c
+t\ge0
+c\ge c^*
+2/n
+1/n
+ E(\mathrm{e}^{-tX_1})=(1-(1-\mathrm{e}^{-t})/n)^k\le\exp(-(1-\mathrm{e}^{-t})k/n). 
+ P(X_1\le2\log n)\le\exp(2t\log(n)-(1-\mathrm{e}^{-t})c\log(n)). 
+ 2t\log(n)-(1-\mathrm{e}^{-t})c\log(n)\le-2\log(n), 
+ 2t-(1-\mathrm{e}^{-t})c+2\le0, 
+ c^*=2\,\inf_{t\ge0}\frac{1+t}{1-\mathrm{e}^{-t}}<6.2924. 

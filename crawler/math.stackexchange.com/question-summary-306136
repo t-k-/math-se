@@ -1,0 +1,14 @@
+f:[x_1,x_2]\rightarrow \mathbb {R}
+g:[t_1,t_2]\rightarrow[x_1,x_2]
+g(t_1)=x_1
+g(t_2)=x_2
+g
+g(t)=kt
+\dfrac {\int _{x_1}^{x_2}f(x)dx}{x_2-x_1}=\dfrac {\int _{t_1}^{t_2}f(g(t))dt}{t_2-t_1} \quad ?
+\dfrac {\int _{x_1}^{x_2}f(x)dx}{x_2-x_1}=\dfrac {\int _{t_1}^{t_2}f(g(t))g'(t)dt}{x_2-x_1}=\dfrac {\int _{t_1}^{t_2}f(g(t))dt}{t_2-t_1}
+x=g(t)
+dx = g'(t) dt
+\frac{1}{x_2-x_1}\int_{x_1}^{x_2} dx \: f(x) = \frac{1}{x_2-x_1}\int_{t_1}^{t_2} dt \: g'(t) f(g(t))  
+g(t)=k t
+g(t) = k t^2
+\frac{1}{x_2-x_1}\int_{x_1}^{x_2} dx \: f(x) = \frac{2}{t_2^2-t_1^2}\int_{t_1}^{t_2} dt \: t f(k t^2)  

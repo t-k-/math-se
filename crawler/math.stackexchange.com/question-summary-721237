@@ -1,0 +1,8 @@
+f(x) = \sum a_{n}(x-x_{0})^n
+R
+0 < r < R_{1} < R
+|x-x_{0}| \leq r
+n > k
+|f(x) - \sum_{n=0}^{k} a_{n}(x-x_{0})^n| \leq (\frac{r}{R_{1}})^{k+1}\frac{R_{1}}{R_{1}-r}
+\left|f(x)-\sum_{n=0}^ka_n(x-x_0)^n\right|=\left|\sum_{n=k+1}^\infty a_n(x-x_0)^n\right|\le\sum_{n=k+1}^\infty |a_n||x-x_0|^n\le
+\le\sum_{n=k+1}^\infty \left(\frac r {R_1}\right)^n\stackrel{\text{Geom. Series}}=\left(\frac r{R_1}\right)^{k+1}\frac1{1-\frac r{R_1}}

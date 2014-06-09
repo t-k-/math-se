@@ -1,0 +1,32 @@
+{d^2\over dx^2}V(x)=\exp(-\beta V(x))
+V(0)=V_0
+\lim_{x\to\infty}V(x)=0
+{d^2\over dx^2}V(x)=\exp(-V(x))
+\dfrac{d^2V}{dx^2}=e^{-\beta V}
+2\dfrac{dV}{dx}\dfrac{d^2V}{dx^2}=2e^{-\beta V}\dfrac{dV}{dx}
+\int2\dfrac{dV}{dx}\dfrac{d^2V}{dx^2}dx=\int2e^{-\beta V}\dfrac{dV}{dx}dx
+\int2\dfrac{dV}{dx}d\left(\dfrac{dV}{dx}\right)=\int2e^{-\beta V}~dV
+\left(\dfrac{dV}{dx}\right)^2=\dfrac{2C_1^2}{\beta}-\dfrac{2e^{-\beta V}}{\beta}
+\dfrac{dV}{dx}=\pm\sqrt{\dfrac{2}{\beta}}\sqrt{C_1^2-e^{-\beta V}}
+\dfrac{dV}{\sqrt{C_1^2-e^{-\beta V}}}=\pm\sqrt{\dfrac{2}{\beta}}dx
+\int\dfrac{dV}{\sqrt{C_1^2-e^{-\beta V}}}=\int\pm\sqrt{\dfrac{2}{\beta}}dx
+\int\dfrac{dV}{\sqrt{C_1^2-e^{-\beta V}}}
+u=e^{-\beta V}
+V=\ln u
+dV=\dfrac{du}{u}
+\therefore\int\dfrac{dV}{\sqrt{C_1^2-e^{-\beta V}}}=\int\dfrac{du}{u\sqrt{C_1^2-u}}=C-\dfrac{2}{C_1}\tanh^{-1}\dfrac{\sqrt{C_1^2-u}}{C_1}=C-\dfrac{2}{C_1}\tanh^{-1}\dfrac{\sqrt{C_1^2-e^{-\beta V}}}{C_1}
+-\dfrac{2}{C_1}\tanh^{-1}\dfrac{\sqrt{C_1^2-e^{-\beta V}}}{C_1}=\pm\sqrt{\dfrac{2}{\beta}}x+c
+\tanh^{-1}\dfrac{\sqrt{C_1^2-e^{-\beta V}}}{C_1}=\mp\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)
+\dfrac{\sqrt{C_1^2-e^{-\beta V}}}{C_1}=\mp\tanh\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)
+\sqrt{C_1^2-e^{-\beta V}}=\mp~C_1\tanh\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)
+C_1^2-e^{-\beta V}=C_1^2\tanh^2\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)
+e^{-\beta V}=C_1^2\text{sech}^2\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)
+V=-\dfrac{1}{\beta}\ln\left(C_1^2\text{sech}^2\left(\dfrac{C_1x}{\sqrt{2\beta}}+C_2\right)\right)
+V(0)=V_0
+-\dfrac{1}{\beta}\ln\left(C_1^2\text{sech}^2C_2\right)=V_0
+C_1^2\text{sech}^2C_2=e^{-\beta V_0}
+C_1^2=e^{-\beta V_0}\cosh^2C_2
+C_1=\pm~e^{-\frac{\beta V_0}{2}}\cosh C_2
+\therefore V=-\dfrac{1}{\beta}\ln\left(e^{-\beta V_0}\cosh^2C_2~\text{sech}^2\left(\dfrac{\pm~xe^{-\frac{\beta V_0}{2}}\cosh C_2}{\sqrt{2\beta}}+C_2\right)\right)
+C_2
+V(\infty)=0

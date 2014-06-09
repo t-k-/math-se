@@ -1,0 +1,12 @@
+X_{1},X_{2},...,X_{n}
+f(x; \theta)=e^{-(x-\theta)}, \theta \le x<\infty, -\infty<\theta<\infty
+\hat {\theta}
+\theta
+\theta
+f(x; \theta)=e^{-(x-\theta)}I_{(\theta,\infty)}(x)
+L(x;\theta)=\displaystyle \prod^{n}_{i=1} f(X_{i};\theta)=e^{-(\sum^{n}_{i=1}X_{i}-n\theta)}I_{(\theta,\infty)}(X_{(1)})
+\ln L(x;\theta)=-\displaystyle \sum^{n}_{i=1} X_{i} +n\theta +\ln I_{(\theta,\infty)}(X_{(1)})
+\theta
+L(\theta |x)
+\begin{align}L(\theta |x) &=e^{-(\sum^{n}_{i=1}x_{i}-n\theta)},x_i \geq \theta,\forall i \\ &=e^{-\sum^{n}_{i=1}x_{i}}\cdot e^{n\theta},x_{(1)} \geq \theta \end{align}
+x_{(1)}=min(x_1,\dots ,x_n)

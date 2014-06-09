@@ -1,0 +1,14 @@
+r
+B
+x
+\sum_{n=0}^\infty \binom{n+k}{k}x^n=\frac{1}{(1-x)^{k+1}}
+\varphi_X(t)=\int_0^1 \! \sum_{x=0}^{\infty} \binom{x+r-1}{x}p^r(1-p)^x\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}e^{itx} \, dp
+X
+Y
+\varphi_X(t)=\int_0^1 \! \frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}\frac{p^r}{(1-(1-p)e^{it})^r} \, dp.
+\varphi_{X+Y}(t)=\int_0^1 \! \frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}\frac{p^{r_1}}{(1-(1-p)e^{it})^{r_1}} \, dp \,\,*\,\,\int_0^1 \! \frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}\frac{p^{r_2}}{(1-(1-p)e^{it})^{r_2}} \, dp
+\int_0^1 \! \binom{x+r-1}{x}p^r(1-p)^x\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}=\binom{x+r-1}{x}\frac{B(\alpha+r,\beta+x)}{B(\alpha,\beta)}=\frac{\Gamma(x+r)\Gamma(\alpha+r)\Gamma(\beta+x)\Gamma(\alpha+\beta)}{x!\Gamma(r)\Gamma(\alpha+\beta+r+x)\Gamma(\alpha)\Gamma(\beta)}
+\varphi_X(t) = \sum_{x=0}^{\infty}e^{itx} \binom{x+r-1}{x}\frac{\Gamma(\alpha+r)\Gamma(\beta+x)\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)\Gamma(\alpha+\beta+r+x)}
+\varphi_X(0)\ne0
+\varphi_X(0)=\frac{1}{B(\alpha,\beta)} \int_0^1 p^{\alpha-1}(1-p)^{\beta-1}*\frac{p^r}{(1-(1-p))^r} \, dp = 1
+B(x,y)=\int_0^1 p^{x-1}(1-p)^{y-1} \, dp

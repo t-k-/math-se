@@ -1,0 +1,11 @@
+P(Y ≤ m) = P(Y ≥ m) = 1/2
+Y_1, Y_2, . . . , Y_n
+U = Y_{(n)}
+Y_1, Y_2, . . . , Y_n
+ F_U (y)
+P(Y_{(n)} > m) = 1 − (.5)^n
+U=Y_{(n)}
+%=^{exponential \, distribution}(1-\exp(-\beta y))^n.
+F_Y(m)=P(Y\le m)=0.5
+F_{U}(u)= P(Y_{(n)}\le u)=P(\max\{Y_1,\ldots,Y_n\le u\})=P(Y_1\le u,\ldots,Y_n\le u)=^{independent}=P(Y_1\le u)\cdot\ldots\cdot P(Y_n\le u)=^{equally \,distributed}(P(Y\le u))^n=(F_Y(u))^n
+P(Y_{(n)}>m)=P(U>m)=1-P(U\le m)=1-F_U(m)=1-(F_Y(m))^n=1-0.5^n

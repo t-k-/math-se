@@ -1,0 +1,38 @@
+f(t,x)
+g(t,u)
+\frac{d}{dt}u=f(t,x)
+\frac{d}{dt}x=g(t,u)
+x
+u
+x(t)
+u(t)
+t
+u(t+h) = u(t) + h f(t,x(t))
+x(t+h) = x(t) + h g(t,u(t))
+f
+u
+g
+x
+y(t):=\bigl(u(t),x(t)\bigr)
+\dot y(t)\ =\ \bigl(f(t, u(t)),g(t,x(t))\bigr)\ .
+t\mapsto u(t)
+t\mapsto x(t)
+u(\cdot)
+x(\cdot)
+y=[u, x]
+[\dot{u},\dot{x}]=\dot{y}=z(t,x,u)
+y(t+h)=y(t)+hz\left(t+\frac{h}{2},y(t)+\frac{h}{2}z(t,y(t))\right)
+z(t,x,u) = [f(t,x), g(t,x)]
+u(t+h)=u(t)+hf\Bigl(t+\frac{h}{2},\underbrace{x(t)+\frac{h}{2}g(t,u(t))}_{\approx x(t+h/2)}\Bigr)
+x(t+h)
+-
+\ominus
+\circ
+\oplus
++
+t-h
+t-\frac{h}{2}
+t
+t+\frac{h}{2}
+t+h
+\dot u^+=u^\circ+h\dot u^\oplus\left(x^\circ+\frac{h}{2}\dot x^\circ(u^\circ)\right)

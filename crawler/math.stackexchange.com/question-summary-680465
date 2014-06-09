@@ -1,0 +1,22 @@
+S = {1,2,3,4,...15}
+a_{n,1} = n-1 \quad\text{and}\quad b_{n,1} = 1.
+a_{n,k} = a_{n-1,k} + b_{n-1,k}
+b_{n,k} = a_{n-1,k-1}.
+u^k z^{n-1}
+u^{k-1} z^{n-1}
+A(z,u)
+B(z,u)
+ A(z, u) = \sum_{n\ge 1} \sum_{k\ge 1} a_{n, k} u^k z^n \quad\text{and}\quad B(z, u) = \sum_{n\ge 1} \sum_{k\ge 1} b_{n, k} u^k z^n.
+\sum_{n\ge 2}\sum_{k\ge 1} a_{n,k} u^k z^{n-1} = \sum_{n\ge 2}\sum_{k\ge 1} a_{n-1,k} u^k z^{n-1} + \sum_{n\ge 2}\sum_{k\ge 1} b_{n-1,k} u^k z^{n-1}.
+1/z \left( A(z,u) - \sum_{k\ge 1} a_{1,k} u^k z \right) = A(z, u) + B(z, u)
+ 1/z A(z, u) = A(z, u) + B(z, u).
+\sum_{n\ge 2}\sum_{k\ge 2} b_{n,k} u^{k-1} z^{n-1} = \sum_{n\ge 2}\sum_{k\ge 2} a_{n-1,k-1} u^{k-1} z^{n-1}.
+1/u/z \sum_{n\ge 2}\sum_{k\ge 2} b_{n,k} u^k z^n = A(z,u)
+1/u/z \left(\sum_{n\ge 1}\sum_{k\ge 2} b_{n,k} u^k z^n - \sum_{k\ge 2} b_{1,k} u^k z\right) = A(z, u)
+1/u/z \left(\sum_{n\ge 1}\sum_{k\ge 1} b_{n,k} u^k z^n - \sum_{n\ge 1} b_{n, 1} u z^n \right) = A(z, u)
+1/u/z \left( B(z, u) - \frac{uz}{1-z} \right) = A(z, u).
+A(z, u) = {\frac {u{z}^{2}}{u{z}^{3}-u{z}^{2}+{z}^{2}-2\,z+1}} \quad\text{and}\quad B(z, u) = -{\frac {uz}{u{z}^{2}+z-1}}.
+a_{n,k} + b_{n,k}  = [z^n] [u^k] (A(z,u)+B(z,u)) = [z^n] [u^k] {\frac {uz}{ \left( u{z}^{2}+z-1 \right)  \left( -1+z \right) }}.
+[z^n] [u^k] \frac{uz}{(1-z-uz^2)(1-z)} = [z^n] \frac{z}{(1-z)^2} [u^k] \frac{u}{1-uz^2/(1-z)}
+[z^n] \frac{z}{(1-z)^2} [u^{k-1}] \frac{1}{1-uz^2/(1-z)} = [z^n] \frac{z}{(1-z)^2} \frac{z^{2k-2}}{(1-z)^{k-1}} = [z^n] \frac{z^{2k-1}}{(1-z)^{k+1}}
+[z^{n-(2k-1)}] \frac{1}{(1-z)^{k+1}} = {n-(2k-1)+k\choose k} = {n+1-k\choose k}.

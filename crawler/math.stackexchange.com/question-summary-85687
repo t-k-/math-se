@@ -1,0 +1,58 @@
+\begin{align*} \sum_{i\equiv 0 \mod m}f(x_0+i)=\\ f(x_0)+f(x_0+m)+f(x_0+2m)+f(x_0+3m)+\ldots \end{align*}
+\begin{align*} \sum_{i\equiv 0 \mod m}^{i = {(x_0+\lfloor \frac{x-x_0+1}{m}\rfloor m)}}f(x_0+i)=\\f(x_0)+f(x_0+m)+f(x_0+2m)+f(x_0+3m) &\quad +\ldots+f\left(x_0+\left\lfloor \frac{x-x_0+1}{m}\right\rfloor m\right) \end{align*}
+f
+S_f
+MS_f
+S_f
+S_f=\displaystyle\sum_{i=1}^{\infty}f(i)=f(1)+f(2)+\ldots
+\begin{align*}   MS_f(x_0,m)&=\sum_{i\equiv 0 \mod m}f(x_0+i)=\ f(x_0)+f(x_0+m)+f(x_0+2m)+f(x_0+3m)+\ldots   \end{align*}
+S_f(x)=\displaystyle\sum_{i=1}^{x}f(i)=f(1)+\ldots+f(x-1)+f(x),
+\begin{align*} MS_f(x,x_0,m)&=\sum_{i\equiv 0 \mod m}^{i = {(x_0+\lfloor \frac{x-x_0+1}{m}\rfloor m)}}f(x_0+i)=\\f(x_0)+f(x_0+m)+f(x_0+2m)+f(x_0+3m) &\quad +\ldots+f\left(x_0+\left\lfloor \frac{x-x_0+1}{m}\right\rfloor m\right) \end{align*}
+(x_0+\lfloor \frac{x-x_0+1}{m}\rfloor m)
+x_0+k\times m
+x
+MS_f(x,x_0,m)=\displaystyle\sum_{i=0}^{m-1}a_iS_f(w^ix)
+\displaystyle\sum_{i=0}^{m-1}a_iS_f(w^i(x+x0))
+S_f=\sum_{i=1}^{\infty}\frac{x^{i-1}}{(i-1)!}=e^x, \quad f(i)=\frac{x^{i-1}}{(i-1)!}
+\begin{align*} MS_f(x_0,m)=\sum_{i\equiv 0 \mod m}f(x_0+i)=\sum_{i\equiv 0 \mod m}\frac{x^{(x_0+i)-1}}{((x_0+i)-1)!}\implies\\ MS_f(3,2)=\sum_{i\equiv 0 \mod 2}\frac{x^{(3+i)-1}}{((3+i)-1)!}=\sum_{j=0}^{\infty}\frac{x^{3+2j-1}}{(3+2j-1)!}=\cosh (x)-1 \end{align*}
+a_i
+a_i=2^{-i}
+a_i=6/(\pi i^2),\ldots
+1= a_0+a_1+a_2+\cdot
+ a_1+a_3+a_5+\cdots? 
+e^x
+\cosh x
+\zeta
+m
+k, 0\le k <m
+n=\ell+jm
+\zeta
+ f(x)=\sum_{n=0}^\infty a_n x^n 
+ f(\zeta^k x)=\sum_{n=0}^\infty a_n (\zeta^k)^n x^n=\sum_{\ell=0}^{m-1}\zeta^{k\ell}\sum_{j=0}^\infty a_{\ell+jm}x^{\ell+jm}, 
+n
+e^x
+\cosh x
+m=2
+\zeta=-1
+\ell=0
+a_n=1/n!
+ \sum_{k=0}^{m-1}\frac{\zeta^{-k\ell}}m f(\zeta^k x)=\sum_{n\ge0, n\equiv \ell\pmod{m}}a_nx^n. 
+S=g\left( S_f(a_1, b_1), S_f(a_2, b_2), S_f(a_3, b_3), \dots, S_f(a_j, b_j) \right)
+g
+a
+b
+j
+\frac{b-a}{m}
+j
+m
+k
+a+i+km
+a+i+km+1
+j
+\{f(a+i+km), f(a+i+km+1)\}
+\{f(a+i+km)+\epsilon, f(a+i+km+1)-\epsilon\}
+S_f(a,b)
+S_f(a,b,x)
+x
+m^{th}
+S_f(a,b,x)=\sum_{i=a}^b f(i) x^i

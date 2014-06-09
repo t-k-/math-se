@@ -1,0 +1,5 @@
+\min(\max(A,\ B),\ C)
+max(A,B) = B + (A-B)_+
+min(B+(A-B)_+, C) = C - (C - B - (A-B)_+)_+
+f(x) := \min(\max(0,x),1) = x
+0\leq x  \leq 1

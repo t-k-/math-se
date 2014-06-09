@@ -1,0 +1,22 @@
+f:[0,1]\to\mathbb{R}
+\int_0^1xf(x)dx=0
+c\in(0,1)
+f(c)=(\int_c^1f(x)dx)^2
+g(x)=f(x)-(\int_x^1f(t)dt)^2
+x\in(0,1)
+g(x)>0
+x\in(0,1)
+\int_0^1xf(x)dx>0
+g(x)<0
+x
+F(x):=\int_x^1 f(t)dt
+F'(x)=-f(x)
+F(1)=0
+\int_0^1 F(x)dx=\int_0^1xf(x)dx=0
+x_0\in (0,1)
+F(x_0)=0
+G(x):=e^{\int_0^xF(t)dt}F(x)
+G(x_0)=G(1)=0
+c\in (x_0,1)
+G'(c)=0
+G'(x)=e^{\int_0^xF(t)dt}\big((\int_x^1f(t)dt)^2-f(x)\big).

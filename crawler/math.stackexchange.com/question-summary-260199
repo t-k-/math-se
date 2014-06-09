@@ -1,0 +1,30 @@
+\int \frac{ 0.287x}{x^2 - 1.456x + 1.326}dx 
+\frac 1 {1000}
+\begin{equation*} I=\int \frac{0.287x}{x^{2}-1.456x+1.326}dx \end{equation*}
+u=x-p
+\begin{equation*} x^{2}-1.456x+1.326=\left( x-0.728\right) ^{2}+0.79602. \end{equation*}
+\begin{equation*} I=k\int \frac{x}{\left( x-p\right) ^{2}+q^{2}}dx, \end{equation*}
+\begin{equation*} k=0.287,p=0.728,q^{2}=0.79602. \end{equation*}
+\begin{eqnarray*} I &=&k\int \frac{u+p}{u^{2}+q^{2}}du=k\left( \int \frac{u}{u^{2}+q^{2}} du+\int \frac{p}{u^{2}+q^{2}}du\right)  \\ &=&k\left( \frac{1}{2}\ln \left( u^{2}+q^{2}\right) +\frac{p}{q}\arctan  \frac{u}{q}\right) +C \\ &=&k\left( \frac{1}{2}\ln \left( \left( x-p\right) ^{2}+q^{2}\right) +\frac{p% }{q}\arctan \frac{x-p}{q}\right) +C. \end{eqnarray*}
+\int (0.287 x)/(x^2-1.456 x+1.326) dx
+ = 0.287 \int {x\over(x^2-1.456 x+1.326) }dx
+{x\over(x^2-1.456 x+1.326)}  as  {(2 x-1.456)\over(2 (x^2-1.456 x+1.326))}+{0.728\over(x^2-1.456 x+1.326)}:
+= 0.287 \int{(2 x-1.456)\over(2 (x^2-1.456 x+1.326))}+{0.728\over(x^2-1.456 x+1.326))} dx 
+= 0.208936 \int {1\over(x^2-1.456 x+1.326)} dx + 0.1435 \int{ (2 x-1.456)/(x^2-1.456 x+1.326)} dx 
+(2 x-1.456)/(x^2-1.456 x+1.326)
+ = x^2-1.456 x+1.326 and  du = 2 x-1.456 dx
+= 0.1435 \int {1\over u} du + 0.208936 \int {1\over(x^2-1.456 x+1.326)} dx
+1\over{(x^2-1.456 x+1.326)}
+= 0.1435 \int {1\over u }du+0.208936 \int {1\over  ((x-0.728)^2+0.796016)} dx
+1\over((x-0.728)^2+0.796016)
+= x-0.728 and  ds =  dx:
+ = 0.208936 \int {1\over(s^2+0.796016) }ds + 0.1435 \int {1\over u} du 
+= 0.208936 \int {1.25626\over(1.25626 s^2+1)} ds+ 0.1435 \int  { 1\over u }du
+= 0.262477 \int {1\over(1.25626 s^2+1)} ds + 0.1435 \int {1\over u }du
+1/(1.25626 s^2+1)
+= 0.234181 \int {1\over(p^2+1.)} dp+ 0.1435 \int {1 \over u} du
+1\over(p^2+1.)
+0.234181 tan^{(-1)}(1. p)+0.1435 \int {1\over u} du
+0.234181 tan^{(-1)}(1. p)+0.1435 log(u)+constant
+ 0.234181 tan^{(-1)}(1.12083 s)+0.1435 log(u)+constant
+ 0.1435 log(u)-0.234181 tan^{(-1)}(0.815963-1.12083 x)+constant

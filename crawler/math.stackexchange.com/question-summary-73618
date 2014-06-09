@@ -1,0 +1,4 @@
+|\Delta|
+f(q,\Delta) =\sum_{m=1}^{\infty} (-1)^m q^{m(m+1)/2 +  m \Delta}
+\begin{align*}\sum_{m=1}^{\infty} (-1)^m q^{m(m+1)/2 +  m \Delta}&=\sum_{m=2}^{\infty} (-1)^{m-1} q^{m(m-1)/2}q^{(m-1)\Delta}\\&=-q^{-\Delta}\sum_{m=2}^{\infty} (-1)^m q^{m(m-1)/2}q^{m\Delta}\\&=q^{-\Delta}-1-q^{-\Delta}\sum_{m=0}^{\infty} (-1)^m q^{m(m-1)/2}q^{m\Delta}\\&=q^{-\Delta}-1-q^{-\Delta}\sum_{m=0}^{\infty}\frac{(q;q)_m}{(q;q)_m (0;q)_m} (-1)^m q^{m(m-1)/2}q^{m\Delta}\end{align*}
+\sum_{m=1}^{\infty} (-1)^m q^{m(m+1)/2 +  m \Delta}=q^{-\Delta}-1-q^{-\Delta}{}_1 \phi_1\left({q \atop 0};q,q^\Delta\right)

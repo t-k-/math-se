@@ -1,0 +1,20 @@
+f:[0, \infty)\rightarrow\mathbb R
+\lim_{x\rightarrow\infty} f(x)=1
+ \lim_{n\rightarrow\infty}\frac{1}{n!}\int_0^\infty f(x)e^{-x}x^n\ dx = 1. 
+f
+f
+\infty
+M>0
+|f(x)|<M
+x\geq 0
+\varepsilon>0
+N>0
+x\geq N
+|f(x)-1|\leq\varepsilon
+\int_0^{\infty}e^{-x}x^n\,dx=n!
+\varepsilon
+n
+\infty
+\left|\frac{1}{n!}\int_0^{\infty}f(x)e^{-x}x^n\,dx-1\right|\leq\left|\frac{1}{n!}\int_0^Nf(x)e^{-x}x^n\,dx\right|+\left|\frac{1}{n!}\int_N^{\infty}f(x)e^{-x}x^n\,dx-1\right|\leq
+\frac{1}{n!}\int_0^NMe^{-x}N^n\,dx+\left|\frac{1}{n!}\int_N^{\infty}(f(x)-1)e^{-x}x^n\,dx\right|+\frac{1}{n!}\int_0^Ne^{-x}x^n\,dx,
+\frac{MN^n}{n!}(1-e^{-N})+\frac{1}{n!}\varepsilon\int_0^{\infty}e^{-x}x^n\,dx+\frac{N^n(1-e^{-N})}{n!},

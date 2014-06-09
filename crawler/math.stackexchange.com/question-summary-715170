@@ -1,0 +1,13 @@
+f_n
+D([0,\infty),E)
+E
+f_n \to f
+t \in [0,\infty)
+\sup_n||f_n(t)||=+\infty
+n
+\lambda_\epsilon
+ \inf_\lambda \max \left[ \sup_{|t-s|\le t/2} |\lambda(s) - s|, \sup_{|t-s|\le t/2}|f_n(\lambda(s)) - f(s)|  \right]\le \epsilon 
+ {|t-s|\le t/2}\implies |\lambda_\epsilon(s) - s|\le 2\epsilon, |f_n(\lambda_\epsilon(s)) - f(s)| \le 2\epsilon 
+t_\epsilon = \lambda_\epsilon^{-1}(t)\in  \lambda_\epsilon^{-1} ([t\pm 2\epsilon]) \subset [t\pm t/2]
+\epsilon
+ |f_n(t)| \le |f_n(\lambda_\epsilon(t_\epsilon)) - f(t_\epsilon)|  + |f(t_\epsilon)| \le M +2\epsilon \le 2M 

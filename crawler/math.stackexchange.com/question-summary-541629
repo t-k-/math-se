@@ -1,0 +1,4 @@
+ A \setminus B = A \setminus (A \cap B) 
+\;A \setminus (A \cap B) = (A \setminus A) \cup (A \setminus B) = A \setminus B.
+\begin{align} x \in A \setminus (A \cap B) & \iff x \in A \land \lnot(x \in A \land x \in B) \\ \\ & \iff x \in A \land (x \notin A \lor x \notin B) \\ \\ &\iff \underbrace{(x \in A \land x \notin A)}_{\text{FALSE}} \lor (x \in A \land x\notin B) \\ \\ &\iff x \in A \land x \notin B \\ \\ &\iff x\in (A \setminus B)\end{align}
+x\in [A\setminus(A \setminus B)] \iff x \in (A \setminus B)

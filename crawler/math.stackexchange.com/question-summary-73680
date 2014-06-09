@@ -1,0 +1,17 @@
+f(x) = \frac{1}{x^2} + 1
+g(x) = \frac{1}{x - 1}
+g(x)
+f(x)
+\frac{1}{\frac{1}{x^2}+1-1}
+(f \circ g)(x) = f(g(x))
+f(g(x)) = \frac{1}{g(x)^2}+1 = \frac{1}{\frac{1}{(x-1)^2}}+1
+(x-1)^2+1
+ f \circ g
+x = 1
+(f \circ g )(x) = (x-1)^2 + 1, \forall x \neq 1
+(g\circ f)(x) = g(f(x)) = \frac{1}{f(x)-1} = \frac{1}{\frac{1}{x^2}+1-1} = \frac{1}{\frac{1}{x^2}}
+x = 0
+(g \circ f)(x) = x^2, \forall x \neq 0
+g(x)=1/(x-1)
+x=1+1/g(x)
+f(x)=1/(1+1/g(x))^2+1=1/(1+2/g(x)+1/g^2(x))+1=g^2(x)/(g(x)+1)^2+1

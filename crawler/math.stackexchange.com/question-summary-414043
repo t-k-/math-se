@@ -1,0 +1,28 @@
+X_i \sim N(\mu, \sigma^2)
+\sum_{i=1}^n X_i \sim N(n \mu, n \sigma^2)
+\Psi_{X_i}(t) = \exp\{\mu t + \frac12 \sigma^2 t^2\}
+\Psi_{\sum_{i=1}^n X_i}(t) = \prod_{i=1}^n \exp\{\mu t + \frac12 \sigma^2 t^2\} = \exp\{n \mu t + n \frac12 \sigma^2 t^2\} 
+\mathbb{E}[\sum_{i \neq j} X_i X_j ]=0 
+\mathbb{E}X_1 = \mathbb{E}X_i \space \forall i
+n^2
+\begin{align} \operatorname{var}\left( \sum_{i=1}^n X_i \right) &= \mathbb{E} \Bigg (\sum_{i=1}^n X_i- \mathbb{E} \sum_{i=1}^n X_i \Bigg)^2\\ &= \mathbb{E} \Bigg (\sum_{i=1}^n (X_i- \mathbb{E}X_i) \Bigg)^2\\ &= \sum_{i=1}^n \mathbb{E} (X_i- \mathbb EX_i)^2 + \mathbb E\sum_{i=1}^n ~\sum_{j=1, j \neq i}^n (X_i -\mathbb{E} X_i) (X_j -\mathbb{E} X_j)\\ &=\sum_{i=1}^n\operatorname{var}(X_i)+  \sum_{i=1}^n~ \sum_{j=1, j \neq i}^n  \mathbb E(X_i -\mathbb{E} X_i)\mathbb E(X_j -\mathbb{E} X_j)\\ &= \sum_{i=1}^n\operatorname{var}(X_i) \end{align}
+Var(X+Y)=\mathbb E[(X+Y-2\mu)^2]=\mathbb E[(X-\mu)^2]+\mathbb E[(Y-\mu)^2]+\mathbb E[2XY+2{\mu}^2-2\mu(X+Y)]=Var(X)+Var(Y)+2{\mu}^2+2{\mu}^2-2\mu(\mu+\mu)= Var(X)+Var(Y)
+\mathbb E[XY]=\mathbb E[X]\mathbb E[Y]={\mu}^2
+X
+Y
+n=2
+X
+\mathbb E[(\sum_{i=1}^nX_i)^2]=\sum_{i=1}^n \mathbb E[ {X}^2_i]
+n=2
+\mathbb E[(\sum_{i=1}^nX_i)^2]=\sum_{i=1}^n \mathbb E[ {X}^2_i]+2\sum_{i\neq j}E[X_i]E[X_j]
+E[X_iX_j]=E[X_i]E[X_j]
+i\neq j
+2\sum_{i\neq j}E[X_i]E[X_j]=2\sum_{i\neq j}\mu^2=2\mu^2n(n-1)
+n
+i
+n-1
+1,\dots,n
+i
+\sum_{i=1}^n Var(X_i)=\sum_{i=1}^n\mathbb E[X^2_i]-n\mu^2
+Var(\sum_{i=1}^nX_i)=
+=\mathbb E[(\sum_{i=1}^nX_i)^2]-2n^2\mu^2+n\mu^2=\sum_{i=1}^n \mathbb E[ {X}^2_i]+2\mu^2n(n-1)-2n^2\mu^2+n\mu^2=\sum_{i=1}^n \mathbb E[ {X}^2_i]-n\mu^2,

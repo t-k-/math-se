@@ -1,0 +1,25 @@
+k
+R
+S
+I \trianglelefteq R
+J \trianglelefteq S
+I^e
+I
+R \to R \otimes_k S
+J^e
+(R \otimes_k S) / (I^e + J^e) \cong (R / I) \otimes_k (S / J)
+I S = I^e
+R J = J^e
+h (I^e) = 0
+h (J^e) = 0
+h (I^e + J^e) = 0
+\mathbf{CAlg}_k ((R / I) \otimes_k (S / J), T) \cong \mathbf{CAlg}_k (R / I, T) \times \mathbf{CAlg}_k (S / J, T)
+\mathbf{CAlg}_k (R / I, T) \cong \{ f \in \mathbf{CAlg}_k (R, T) : f (I) = 0 \}
+\mathbf{CAlg}_k (S / J, T) \cong \{ g \in \mathbf{CAlg}_k (S, T) : g (J) = 0 \}
+\mathbf{CAlg}_k (R, T) \times \mathbf{CAlg}_k (S, T) \cong \mathbf{CAlg}_k (R \otimes_k S, T)
+\mathbf{CAlg}_k ((R / I) \otimes_k (S / J), T) \cong \{ h \in \mathbf{CAlg}_k (R \otimes_k S, T) : h (I S) = 0, h (R J) = 0 \}
+\mathbf{CAlg}_k ((R / I) \otimes_k (S / J), T) \cong \mathbf{CAlg}_k ((R \otimes_k S) / (I^e + J^e), T)
+R/I \otimes S = (R \otimes S)/I^e
+R/I \otimes S/J = (R \otimes S/J)/I^e = (R \otimes S)/(J^e,I^e)
+\hom(R/I \otimes S,-) = \hom(R/I,-) \times \hom(S,-) = \{f \in \hom(R,-):f(I)=0\} \times \hom(S,-)
+ = \{h \in \hom(R \otimes S,-) : h(I \otimes 1)=0\}=\hom((R \otimes S)/I^e,-).

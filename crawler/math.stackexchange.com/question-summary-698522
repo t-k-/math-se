@@ -1,0 +1,21 @@
+f(x,y)
+S
+y=y(x)
+y'(x)=f(x,y)
+|y(x)-y_0|\leq b
+|x-x_0|\leq a
+S
+R:=\{(x,y)\in  \mathbb{R}^2: |x-x_0|\leq a,\,|y-y_0|\leq b\},
+\eta(x) := \sup_{y\in S}y(x)
+x
+h
+u_n\in S
+u_n(x)\to\eta(x)
+v_n\in S
+v_n(x+h)\to \eta(x+h)
+y_n=\max(u_n,v_n)
+y_n\in S
+y_n
+x,h
+\eta'(x)=f(x,\eta(x))
+\left|\frac{\eta(x+h)-\eta(x)}{h} - f(x,\eta(x)) \right|\le \epsilon \tag{2}

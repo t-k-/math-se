@@ -1,0 +1,33 @@
+d:X \times X\rightarrow \mathbb{R}
+(X, d)
+S \subseteq X
+\{x_n\}
+X
+x \in X
+\lim\limits_{n \to \infty} d(x_n, s) = d(x, s)
+s \in S
+\lim \limits_{n \to \infty} x_n = x
+ \begin{align} \lim_{n \to \infty} d(x_n, x)  &= \lim_{n \to \infty} d \left(x_n, \lim_{m \to \infty}  s_m \right) \\  &= \lim_{n \to \infty} \ \lim_{m \to \infty}  d(x_n, s_m) \\  &= \lim_{m \to \infty} \ \lim_{n \to \infty} \ d(x_n, s_m) & & (d \text{ is continuous)} \\  &= \lim_{m \to \infty} \ d(x, s_m) && \text{(by hypothesis)}\\  &= d(x, x) = 0. \end{align} 
+d
+S
+\epsilon > 0
+s \in S
+d(s,x) < \epsilon
+n
+x_n \to x
+ d(x_n,x) \leq d(x_n,s) + d(s,x) \leq \epsilon + \epsilon = 2\epsilon 
+d
+d(x_n,x)\to 0
+\epsilon\gt 0
+S
+X
+s\in S
+d(s,x)\lt \epsilon/4
+d(x_n,s)\to d(x,s)
+N\in\mathbb{N}
+n\geq N
+|d(x_n,s)-d(x,s)|\lt \epsilon/2
+n\geq N
+\epsilon
+d(x_n,x)\to 0
+\begin{align*} d(x_n,x) &\leq d(x_n,s)+d(s,x)\\ &= |d(x_n,s)-d(x,s)+d(x,s)|+d(s,x)\\ &\leq |d(x_n,s)-d(x,s)|+|d(x,s)|+d(s,x)\\ &= |d(x_n,s)-d(x,s)|+ 2d(s,x)\\ &\lt \frac{\epsilon}{2}+2\cdot\frac{\epsilon}{4}=\epsilon. \end{align*}

@@ -1,0 +1,25 @@
+\pi(\theta)
+\alpha, \beta
+f(x|\theta)
+\theta
+{f(x)}=\sum_i{\pi(\theta_i)f(x|\theta_i)}
+{f(x)}=\int_\Theta{\pi(\theta)f(x|\theta)} d\theta
+\int\frac{\beta^\alpha\theta^{\alpha-1}}{\Gamma(\alpha)}exp(-\beta\theta)\frac{e^{-\theta}\theta^x}{x!}d\theta
+\frac{\beta^\alpha}{\Gamma(\alpha)x!}\int\theta^{\alpha-1}e^{-\beta\theta}e^{-\theta}\theta^xd\theta
+f(x) = \frac{\beta^\alpha (x+\alpha-1)! }{(\beta+1)^{x+\alpha} \Gamma(\alpha)x!}
+X
+\Theta
+f(x|\theta)
+X=x
+\Theta=\theta
+\Theta=\theta
+X=x
+{\pi(\theta)f(x|\theta)}
+\theta
+x
+\sum_X f(x)=1
+\alpha+x, \beta+1)
+ \int_0^\infty \theta^{\alpha-1}e^{-\beta\theta}e^{-\theta}\theta^xd\theta=\int_0^\infty \theta^{\alpha+x-1}e^{-\theta(\beta+1)}d\theta 
+ \frac{\beta^\alpha}{\Gamma(\alpha)x!} \int_0^\infty \theta^{\alpha+x-1}e^{-\theta(\beta+1)}d\theta 
+ \frac{\beta^\alpha}{\Gamma(\alpha)x!} \frac{\frac{(\beta+1)^{\alpha+x}}{\Gamma(\alpha+x)}}{\frac{(\beta+1)^{\alpha+x}}{\Gamma(\alpha+x)}}\int_0^\infty \theta^{\alpha+x-1}e^{-\theta(\beta+1)}d\theta=\frac{\beta^\alpha}{\Gamma(\alpha)x!} \frac{{\Gamma(\alpha+x)}}{(\beta+1)^{\alpha+x}}\int_0^\infty \frac{(\beta+1)^{\alpha+x}}{\Gamma(\alpha+x)}\theta^{\alpha+x-1}e^{-\theta(\beta+1)}d\theta 
+ \frac{\beta^\alpha}{\Gamma(\alpha)x!} \frac{{\Gamma(\alpha+x)}}{(\beta+1)^{\alpha+x}}=\frac{\beta^\alpha}{\Gamma(\alpha)x!} \frac{{(\alpha+x-1)!}}{(\beta+1)^{\alpha+x}} 

@@ -1,0 +1,20 @@
+\{X_n: n \geq 1 \}
+\mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n) = \mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n, \ldots X_1= x_1)
+\mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n) = \mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n, X_k = x_k )
+k = 1 \ldots N-1
+ \{X_n=x_n, X_k=x_k\} 
+\sigma
+ \{X_n=x_n, \ldots,\ X_1=x_1 \},
+k< n
+ P(X_{n+1}=x_{n+1}\,|\, \sigma\{X_n,\, \ldots,\, X_1 \} )=P(X_{n+1}=x_{n+1}|\, X_n=x_n).
+k
+n
+n+1
+ H = \Big\{ X_1(\omega_1) = x_1, \ldots, X_{k-1}(\omega_{k-1}) = x_{k-1}, X_{k+1}(\omega_{k+1}) = x_{k+1}, \ldots X_{n-1}(\omega_{n-1}) = x_{n-1} \ \Big| \ \omega_1 \in \Omega_{1},\omega_{k-1} \in \Omega_{k-1},\omega_{k+1} \in \Omega_{k+1},\omega_{n-1} \in \Omega_{n-1} \Big \} 
+h
+H
+\begin{align} \mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n, X_k = x_k ) &= \sum_{h \in H} \mathbb{P}(X_{n+1} = x_{n+1}, \ h \ | \ X_n = x_n, X_k = x_k) \\  &= \sum_{h \in H} \mathbb{P}(X_{n+1} = x_{n+1} \ | \ h, X_n = x_n, X_k = x_k) \mathbb{P}(h \ | \ X_n = x_n, X_k = x_k) \\  \end{align}
+\begin{align}  \mathbb{P}(X_{n+1} = x_{n+1} \ | \ h, X_n = x_n, X_k = x_k)  &= \mathbb{P}( X_{n+1} = x_{n+1} \ | \ X_n = x_n, X_{n-1} = x_{n-1},\ldots, X_1 = x_1 ) \\ &= \mathbb{P}( X_{n+1} = x_{n+1} \ | \ X_n = x_n) \end{align}
+h
+ \begin{align} \mathbb{P}(h \ | \ X_n = x_n, X_k = x_k)  &= \mathbb{P}( X_{n-1} = x_{n-1}, \ldots, X_{k+1} = x_{k+1}, X_{k-1} = x_{k-1}, \ldots, X_1 \ | \ X_n = x_n, X_k = x_k ) \\  &= \mathbb{P}( X_{n-1} = x_{n-1}, \ldots, X_{k+1} = x_{k+1}, X_{k-1} = x_{k-1}, \ldots, X_1 ) \\  & = \mathbb{P}(h) \end{align}
+\begin{align} \mathbb{P}(X_{n+1} = x_{n+1} | X_n = x_n, X_k = x_k )  &= \sum_{h \in H} \mathbb{P}(X_{n+1} = x_{n+1} \ | \ h, X_n = x_n, X_k = x_k) \mathbb{P}(h \ | \ X_n = x_n, X_k = x_k) \\  &= \mathbb{P}(X_{n+1} = x_{n+1} \ | X_n = x_n) \sum_{h \in H}  \mathbb{P}(h) \\  &= \mathbb{P}(X_{n+1} = x_{n+1} \ | X_n = x_n) \\  \end{align}

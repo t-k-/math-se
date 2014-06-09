@@ -1,0 +1,22 @@
+f(x)=x^d
+(d\in(-1,0))
+\sum_{i=1}^n \frac{1}{n}\left(\frac{i}{n}\right)^d\xrightarrow{n\rightarrow\infty}\int_0^1x^d dx=\frac{1}{d+1}.
+\left|\int_0^1x^d dx-\sum_{i=1}^n \frac{1}{n}\left(\frac{i}{n}\right)^d\right|\in O(n^d)?
+t_i = \frac{i}{n}
+d < 0
+\left\lvert\int_0^1 x^d\,dx - \sum_{i=1}^n \frac{1}{n}t_i^d \right\rvert = \sum_{i=1}^n \int_{t_{i-1}}^{t_i} x^d - t_i^d\,dx.\tag{1}
+x^d - t_i^d = -d\int_x^{t_i}\xi^{d-1}\,d\xi
+\int_{t_{i-1}}^{t_i} x^d - t_i^d\,dx = \lvert d\rvert \int_{t_{i-1}}^{t_i} (\xi - t_{i-1})\xi^{d-1}\,d\xi. \tag{2}
+i = 1
+\int_0^{1/n} x^d - \frac{1}{n^d}\,dx = \frac{1}{1+d}\left(\frac{1}{n^{d+1}} - 0\right) - \frac1n\cdot \frac1{n^d} = \frac{\lvert d\rvert}{(1+d)n^{d+1}},
+\Omega(n^{-(1+d)})
+i \geqslant 2
+2
+\xi^{d-1}
+t_{i-1}^{d-1}
+\frac{\lvert d\rvert}{(1+d)n^{d+1}} + \sum_{i=2}^n \lvert d\rvert t_{i-1}^{d-1}\int_{t_{i-1}}^{t_i} (\xi - t_{i-1})\,d\xi = \frac{\lvert d\rvert}{(1+d)n^{d+1}} + \frac{\lvert d\rvert}{2n^{d+1}}\sum_{j=1}^{n-1} j^{d-1}.
+\zeta(1-d)
+\left\lvert\int_0^1 x^d\,dx - \sum_{i=1}^n \frac{1}{n}t_i^d \right\rvert \in \Theta(n^{-(1+d)}).
+d > -\frac12
+O(n^d)
+d < -\frac12

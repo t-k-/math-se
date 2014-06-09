@@ -1,0 +1,10 @@
+C
+P
+x = \{x_1,\ldots,x_N\}
+P(x) =  \exp(\sum_{i,j} f(x_i,x_j) )
+x_i
+P(x_i) = \sum_{x_1,\ldots,x_{i-1},x_{i+1},\ldots,x_N} P(x)
+T
+P(x)^{\frac{1}{T}} =  \exp(\frac{1}{T}\sum_{i,j} f(x_i,x_j) )
+P(x)^{\frac{1}{T}}
+x = \arg_x\max P(x)

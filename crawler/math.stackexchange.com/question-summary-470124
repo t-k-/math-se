@@ -1,0 +1,40 @@
+\text{prove quadratic equation are continuous in }\mathbb{R}^{n}\text{ and }
+\textbf{Q}_A(\vec{v})=\vec{v}^{T}\textbf{A}\vec{v}=\sum_{i}^{n}\sum_{j}^{n}\text{a}_{ij}\text{x}_{i}\text{x}_{j}\quad\text{ such as }\quad \vec{v}\in\mathbb{R}^{n}\text{ and }\textbf{A}\in\text{Mat}_{n}(\mathbb{R})
+\text{We know }\sum_{i}^{n}\sum_{j}^{n}\text{a}_{ij}\text{x}_{i}\text{x}_{j}\text{ is a polynomial with respect to } \\x_1\dots x_n \text{ and is continuous on each }x_i\in\mathbb{R}
+\text{But how to prove }\textbf{Q}_{A}(\vec{v})\text{ continuous }\text{ s.t }\vec{v}\in\mathbb{R}^{n}
+f : \mathbb{R}^n \to \mathbb{R}^n
+g: \mathbb{R}^n \to \mathbb{R}^n
+a \in \mathbb{R}^n
+\langle f, g\rangle(p) = \langle f(p), g(p) \rangle
+p
+a
+\langle f,g\rangle
+f(p)-f(a)
+g(p)-g(a)
+\langle f(p),g(a)\rangle
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|=|\langle f(p),g(p)\rangle+\langle f(p),g(a)\rangle-\langle f(p),g(a)\rangle-\langle f(a),g(a)\rangle|
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|=|\langle f(p),g(p)-g(a)\rangle-\langle f(p)-f(a),g(a)\rangle|
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|\leq |\langle f(p),g(p)-g(a)\rangle|+|\langle f(p)-f(a),g(a)\rangle|
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|\leq |f(p)||g(p)-g(a)|+|g(a)||f(p)-f(a)|
+|f(p)-f(a)| < 1
+||f(p)|-|f(a)||\leq |f(p)-f(a)|
+||f(p)|-|f(a)||<1
+-1 < |f(p)|-|f(a)| < 1
+|f(p)| < 1 + |f(a)|
+\epsilon > 0
+|f(p)-f(a)| < \min\left\{1, \frac{\epsilon}{2|g(a)|}\right\}
+|g(p)-g(a)| < \frac{\epsilon}{2(|f(a)|+1)}
+f
+a
+g
+a
+\delta_1 > 0
+|p-a|<\delta_1
+\delta_2 > 0
+|p-a|<\delta_2
+\delta = \min\{\delta_1, \delta_2\}
+|p-a|<\delta
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|\leq (1+|f(a)|)|g(p)-g(a)|+|g(a)||f(p)-f(a)|
+|\langle f(p),g(p)\rangle-\langle f(a),g(a)\rangle|<(1+|f(a)|)\frac{\epsilon}{2(1+|f(a)|)}+|g(a)|\frac{\epsilon}{2|g(a)|}=\epsilon.
+a
+Q(v)=\langle Av, v\rangle

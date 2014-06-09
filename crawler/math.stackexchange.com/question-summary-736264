@@ -1,0 +1,29 @@
+ \Phi(r) = (I\Delta - \nabla \nabla )[r\operatorname{erf}(\xi r)] 
+r = X-X_0
+\xi
+\phi
+3\times 3
+I\Delta
+\nabla \nabla
+\frac{\partial^2}{\partial x_i \partial x_j}
+i
+j
+ \hat{\Phi}(k,\hat{x_0}) = \int_{\mathbb{R}^3} \exp(ik\cdot X)(I\Delta - \nabla \nabla )[r\ \operatorname{erf}(\xi r)]d^3X 
+k
+i= \sqrt{-1}
+ \int_{\mathbb{R}^3} \exp(ik\cdot X)(I\Delta - \nabla \nabla )[r\operatorname{erf}(\xi r)]d^3X = (-I|k|^2+kk^T)\int_{\mathbb{R}^3} \exp(ik\cdot X)r\operatorname{erf}(\xi r)d^3X 
+r\operatorname{erf}(\xi r)
+\exp(ik\cdot X)
+f=\exp(ik\cdot X)
+\vec{v}=r\operatorname{erf}(\xi r)
+j
+\nabla
+f(\partial_j\partial_j v_i-\partial_i \partial_j v_j)
+\partial_j(f \partial_i v_j)=(\partial_j f)(\partial_i v_j)+f(\partial_i\partial_j v_j)
+\partial_j(f\partial_j v_i)=(\partial_j f)(\partial_j v_i)+f(\partial_j\partial_j v_i)
+f(\partial_j\partial_j v_i-\partial_i \partial_j v_j)= \partial_j(f\partial_j v_i-f \partial_i v_j)-(\partial_j f)(\partial_j v_i)+(\partial_j f)(\partial_i v_j) 
+\partial_j(f(\partial_j v_i))=(\partial_j\partial_j f)v_i+(\partial_j f)(\partial_j v_i)
+\partial_j(f(\partial_i v_j))=(\partial_j\partial_i f)v_j+(\partial_i f)(\partial_j v_j)
+f(\partial_j\partial_j v_i-\partial_i \partial_j v_j)= \partial_j(f\partial_j v_i-f \partial_i v_j)-\partial_j(f(\partial_j v_i))+(\partial_j\partial_j f)v_i +\partial_j(f(\partial_i v_j))-(\partial_j\partial_i f)v_j =(\partial_j\partial_j f)v_i-(\partial_j\partial_i f)v_j
+f=(\exp{ik\cdot X})
+=(-k_j k_j f)v_i-(-k_j k_i f)v_j=-(|k|^2I-\vec{k}\otimes \vec{k})f\vec{v}

@@ -1,0 +1,36 @@
+\displaystyle \lim_{n\rightarrow\infty}\frac{a_n}{1\cdot 2}+\frac{a_{n-1}}{2\cdot 3}+\ldots +\frac{a_1}{n(n+1)}
+\lim_{n\rightarrow\infty}a_n=a
+\displaystyle\sum_{k=1}^n\frac{a_{n-k+1}}{n^2}\le S_n\le \sum_{k=1}^n\frac{a_{n-k+1}}{k^2}
+S_n
+a
+a_{n-k+1}
+a
+\varepsilon>0
+(a_n)
+|a_n|<M
+M>0
+n\in\mathbb N
+n_0\in\mathbb N
+n\geq n_0
+|a_n-a|<\frac{\varepsilon}{6}
+n_1\in\mathbb N
+n_1>n_0
+n\geq n_1
+\sum_{k=n_1}^{\infty}\frac{1}{k(k+1)}<\frac{\varepsilon}{6M}
+n_2\in\mathbb N
+n\geq n_2
+\frac{1}{n+1}<\frac{\varepsilon}{3M}
+n\geq n_0,2n_1,n_2
+n\geq n_2
+n_1>n_0
+n-n_1+2\geq n_1
+a
+\left|\frac{a_n}{1\cdot2}+\frac{a_{n-1}}{2\cdot3}+\dots+\frac{a_1}{n(n+1)}-a\right|=
+\left|\frac{a_n-a}{1\cdot2}+\frac{a_{n-1}-a}{2\cdot3}+\dots+\frac{a_1-a}{n(n+1)}-a+\frac{a}{1\cdot2}+\frac{a}{2\cdot3}+\dots+\frac{a}{n(n+1)}\right|\leq
+\left|\frac{a_n-a}{1\cdot2}+\frac{a_{n-1}-a}{2\cdot3}+\dots+\frac{a_1-a}{n(n+1)}\right|+\left|\frac{a}{1\cdot2}+\frac{a}{2\cdot3}+\dots+\frac{a}{n(n+1)}-a\right|.
+\left|a-\frac{a}{2}+\frac{a}{2}-\frac{a}{3}+\dots+\frac{a}{n}-\frac{a}{n+1}-a\right|=\left|-\frac{a}{n+1}\right|\leq\frac{M}{n+1}<\frac{\varepsilon}{3},
+\left|\frac{a_n-a}{1\cdot2}+\frac{a_{n-1}-a}{2\cdot3}+\dots+\frac{a_1-a}{n(n+1)}\right|\leq
+\left|\frac{a_n-a}{1\cdot2}+\frac{a_{n-1}-a}{2\cdot3}+\dots+\frac{a_{n_1}-a}{(n-n_1+1)(n-n_1+2)}\right|+
+\left|\frac{a_{n_1-1}-a}{(n-n_1+2)(n-n_1+3)}+\dots+\frac{a_1-a}{n(n+1)}\right|.
+\left|\frac{\varepsilon/6}{1\cdot2}+\dots+\frac{\varepsilon/6}{(n-n_1+1)(n-n_1+2)}\right|<\frac{2\varepsilon}{6}=\frac{\varepsilon}{3},
+2M\sum_{k=n-n_1+2}^\infty\frac{1}{k(k+1)}<\frac{2M\varepsilon}{6M}=\frac{\varepsilon}{3},

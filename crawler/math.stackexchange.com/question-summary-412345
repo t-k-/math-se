@@ -1,0 +1,23 @@
+f(x, y, z) = xy^2z^3
+M = \left\{x, y, z > 0, x+2y+3z=6\right\}
+F(x, y, z, \gamma) = xy^2z^3 - \gamma(x+2y+3z-6)
+\begin{cases} \frac{\partial F}{\partial x} = y^2z^3 - \gamma = 0\\ \frac{\partial F}{\partial y}  = 2xyz^3-2\gamma = 0\\ \frac{\partial F}{\partial z} = 3xy^2z^2 -3\gamma = 0\\ \frac{\partial F}{\partial \gamma} = -x-2y-3z+6 = 0\\ \end{cases}
+P = (1, 1, 1)
+\left[\begin{array}{ccc} \frac{\partial^2 f}{\partial x^2} = 0 &\frac{\partial^2 f}{\partial x\partial y} = 2yz^3 &\frac{\partial^2 f}{\partial x\partial z} = 3y^2z^2 \\ \frac{\partial^2 f}{\partial y \partial x} = 2yz^3 &\frac{\partial^2 f}{\partial y^2} = 2xz^3 &\frac{\partial^2 f}{\partial y\partial z} = 6xyz^2 \\ \frac{\partial^2 f}{\partial z \partial x} = 3y^2z^2 &\frac{\partial^2 f}{\partial z \partial y} = 6xyz^2 &\frac{\partial^2 f}{\partial z^2} = 6xy^2z  \end{array}\right]
+\left[\begin{array}{ccc} 0&2&3\\ 2&2&6\\ 3&6&6 \end{array}\right]
+\det_{1} = 0
+(1, 1, 1)
+h(y,z) \ = \ (6 - 2y - 3z)  \cdot  y^2  \cdot  z^3 \ = \ 6y^2z^3 \ - \ 2y^3z^3 \ - \ 3y^2z^4 , 
+D \ |_{(1,1)} \ = \ [ \ h_{yy} \ h_{zz} \ - \ (h_{yz})^2 \ ] \ |_{(1,1)} 
+= \ [ \ (12z^3 - 12yz^3 - 6z^4)\cdot (36y^2z \ - 12y^3z \ - 36y^2z^2) 
+ - \ (36yz^2 - 18y^2z^2 - 24yz^3)^2 \ ]  \ |_{(1,1)} 
+ = \ (-6)(-12) \ - \ (-6)^2 \ = \ 36 \ > \ 0  \ . 
+ \ h_{yy} \ |_{(1,1)}  =  -6 \ < 0  \ , 
+ \ x \ 
+ \ x = h(y,z) \ 
+ [x=6-3\,z,y=0,z=z,\lambda_{{1}}=0,x{y}^{2}{z}^{3}=0]
+[x=-2\,y+6,y=y,z=0,\lambda_{{1}}=0,x{y}^{2}{z}^{3}=0]
+[x=1,y=1,z=1,\lambda_{{1}}=1,x{y}^{2}{z}^{3}=1].
+x+y+y+z+z+z=6
+xy^2z^3\le 1
+x=y=z=1

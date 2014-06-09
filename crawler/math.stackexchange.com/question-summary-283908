@@ -1,0 +1,80 @@
+N+M
+N
+\left(N-1\right)! {N+M \choose N}
+M
+N
+i
+k_i
+\sum_{i=0}^N k_i = M
+{{M} \choose k1 \ldots k_N}
+k_i>0
+k_i^{k_i-2}
+k_i^{k_i-1}
+\left(N-1\right)!{{N+M} \choose N}\sum_{k_1+...+k_N=M} \left( {{M} \choose k1 \ldots k_N} \prod_{i,k_i>0} k_i^{k_i-1} \right)
+N
+M
+\left(N-1\right)!{{N+M} \choose N}\sum_{k_1+...+k_N=M} \left( {{M} \choose k1 \ldots k_N} \prod_{i,k_i>0} k_i^{k_i-1} \right)
+\frac{(M+N)!}{N} \sum_{k_1+...+k_N=M} \left( \prod_{i,k_i>0} \frac{k_i^{k_i-1}}{k_i!} \right)
+[X_M]
+N
+k
+0
+ \frac{(M+N)!}{N} \cdot [x_M] \left(1 + \sum_{k=1}^\infty \frac{k^{k-1}}{k!} x^k \right)^N = \frac{(M+N)!}{N} \cdot [x_M] \left(1 - W(-x)\right)^N
+W
+N+M
+N
+\frac{(N+M)!}{N} \sum_{k_1+\ldots+k_N=M}\prod_{i,k_i>0}\left(N\frac{k_i^{k_i-1}}{k_i!}\right)
+M
+N
+M! \sum_{k_1+\ldots +k_N=M}\prod_{i,k_i>0} \frac{k_i^{k_i-1}}{k_i!}
+\mathcal{Q}
+\mathcal{T}
+\mathcal{Q}
+\mathcal{Q} = \mathfrak{C}_N (\mathcal{Z} \times (\epsilon + \mathcal{T}))
+T(z)
+W
+W(z).
+ Q(z) = \frac{\left( z \, (1 + T(z) ) \right)^N}{N},
+\mathcal{T} = \mathcal{Z} \times \mathfrak{P}(\mathcal{T}),
+ T(z) = z\,e^{T(z)},
+ T(z) = -\operatorname{LambertW}(-z),
+q_{N,M}
+Q(z) =  \frac{\left( z \, (1 - W(-z) ) \right)^N}{N}.
+ q_{N,M} = (M+N)! [z^{M+N}] \frac{\left( z \, (1 - W(-z) ) \right)^N}{N} = (M+N)! [z^M] \frac{(1 - W(-z) )^N}{N}.
+[z^M] (1 - W(-z) )^N
+N
+q
+q_{1,M}
+M
+ \begin{align} [z^M] (1-W(-z))^1 & = {\frac {{M}^{M-2}}{ \left( M-1 \right) !}} \\ [z^M] (1-W(-z))^2 & = 2\,{\frac {{M}^{M-3} \left( 2\,M-1 \right) }{ \left( M-1 \right) !}} \\ [z^M] (1-W(-z))^3 & = {\frac {{M}^{M-4} \left( 12\,{M}^{2}-15\,M+6 \right) }{ \left( M-1 \right) !}}\\ [z^M] (1-W(-z))^4 & = 4\,{\frac {{M}^{M-5} \left( 4\,M-3 \right)  \left( 2\,{M}^{2}-3\,M+2 \right) }{ \left( M-1 \right) !}}\\ [z^M] (1-W(-z))^5 & = {\frac {{M}^{M-6} \left( 80\,{M}^{4}-280\,{M}^{3}+455\,{M}^{2}-370\,M+120 \right) }{ \left( M-1 \right) !}}\\ [z^M] (1-W(-z))^6 & = {\frac {{M}^{M-7} \left( 192\,{M}^{5}-960\,{M}^{4}+2340\,{M}^{3}-3210\,{M}^{2}+2364\,M-720 \right) }{ \left( M-1 \right) !}}\\ \end{align}
+\begin{align} q_{1, M} & = {M}^{M-1} \left( M+1 \right) \\ q_{2. M} & = {M}^{M-2} \left( 2\,M-1 \right)  \left( M+1 \right)  \left( M+2 \right) \\ q_{3, M} & = {M}^{M-3} \left( 4\,{M}^{2}-5\,M+2 \right)  \left( M+1 \right)  \left( M+2 \right)  \left( M+3 \right) \\ q_{4, M} & = {M}^{M-4} \left( 4\,M-3 \right)  \left( 2\,{M}^{2}-3\,M+2 \right)  \left( M+1 \right)  \left( M+2 \right)  \left( M+3 \right)  \left( M+4 \right) \\ q_{5, M} & = {M}^{M-5} \left( 16\,{M}^{4}-56\,{M}^{3}+91\,{M}^{2}-74\,M+24 \right) \\ & * \left( M+1 \right)  \left( M+2 \right)  \left( M+3  \right)  \left( M+4 \right)  \left( M+5 \right) \\ q_{6, M} & = {M}^{M-6} \left( 32\,{M}^{5}-160\,{M}^{4}+390\,{M}^{3}-535\,{M}^{2}+394\,M-120 \right) \\ & * \left( M+1 \right)  \left( M+2 \right)  \left( M+3 \right)  \left( M+4 \right)  \left( M+5 \right)  \left( M+6 \right) \end{align}
+\frac{M^{M-1}}{M!}
+ q_{N,M} \sim M^{M-N} 2^{N-1} M^{N-1} \frac{(M+N)!}{M!} = 2^{N-1} M^{M-1} \frac{(M+N)!}{M!}.
+\mathcal{Q}_1
+q_{N,M}
+ \mathcal{Q}_1 =  \mathfrak{C}_N(\mathcal{Z} \times \mathfrak{P}(\mathcal{T})) 
+ Q_1(z) = \frac{(z \exp T(z))^N}{N} = \frac{T(z)^N}{N}.
+ q_{N,M} = (M+N)! [z^{M+N}] \frac{(- W(-z))^N}{N}.
+N=1
+M+1
+q_{1,M} = (M+1)^M
+M=0
+N
+N!/N = (N-1)!.
+\frac{q_{N,M} N}{(M+N)!} = [z^{M+N}]  \left( - W(-z)  \right)^N  = \sum_{k=N-1}^{M+N-1} [z^k]  \left(- W(-z)  \right)^{N-1}  [z^{M+N-k}] \left( - W(-z) ) \right) = \sum_{k=0}^M [z^{k+N-1}]  \left(- W(-z)  \right)^{N-1}  [z^{M-k+1}] \left( - W(-z) ) \right). 
+\sum_{k=0}^M \frac{q_{N-1,k} (N-1)}{(k+N-1)!} [z^{M-k+1}] \left( - W(-z) \right) = \sum_{k=0}^M \frac{q_{N-1,k} (N-1)}{(k+N-1)!} \frac{(M-k+1)^{M-k}}{(M-k+1)!}
+ q_{N, M} = \frac{(M+N)!}{N} \sum_{k=0}^M \frac{q_{N-1,k} (N-1)}{(k+N-1)!} \frac{(M-k+1)^{M-k}}{(M-k+1)!}.
+q_{3,3} = 2400
+q_{3,3} = 2760.
+q_{3,3}
+2760.
+ {6\choose 3} \times 3! \times 3 /3 = 120
+ {6\choose 3} \times 3! \times 3 \times 2 \times {3\choose 2} /3 = 720
+ {6\choose 3} \times 3! \times {3\choose 2} \times 2 /3 = 720
+q_{3,3}
+2760 + 120 + 720 + 720 = 4320
+1080-240 = 840
+Q_{1;3}(z;u,v,w) = \frac{(z\exp(-z + u z -z^2 + v z^2 - 3/2 z^3 + 3/2 w z^3 + T(z))^3}{3}.
+6! [z^6] Q_{1;3}(z;u,v,w) = 2160\,uv+1080\,{u}^{3}+1080\,w.
+Q_3(z;u,v,w) = \frac{\left(z \times (1 -z + u z -z^2 + v z^2 - 3/2 z^3 + 3/2 w z^3 + T(z)) \right)^3}{3}.
+6! [z^6] Q_{3}(z;u,v,w) = 1080\,w+1440\,uv+240\,{u}^{3}.

@@ -1,0 +1,12 @@
+X
+Y
+[0,1]
+f_x (a)=f_y (a)=1,0\leq a \leq 1
+X
+2Y
+f_{X+2Y} (a)
+ \begin{align*} f_{X+2Y}(a) &= \frac{d}{da} \int_{-\infty}^{+\infty} F_X(a-2y) f_Y(y) ~ dy  \\ &= \int_{-\infty}^{+\infty} \frac{d}{da} F_X(a-2y) f_Y(y) ~ dy \\ &= \int_{-\infty}^{+\infty} f_X(a-2y) f_Y(y) ~ dy \end{align*} 
+[0,1]
+ f_X(a) = f_Y(a) = \begin{cases} 1, & 0 \lt a \lt 1, \\ 0, &\text{otherwise}. \end{cases} 
+ f_{X + 2Y}(a) = \int_{-\infty}^{+\infty} f_X(a-2y) f_Y(y) ~ dy \quad \text{for } 0 \lt a \lt 1. 
+ f_{X + 2Y}(a-2) = \int_0^a dy = a. 

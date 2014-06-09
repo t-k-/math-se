@@ -1,0 +1,23 @@
+A_l
+A_r
+B = \bigvee_{i=1}^{n} p_i
+A_l \equiv A_r
+((p \vee q) \vee r) \equiv (p \vee (q \vee r))
+\bigvee_{i=1}^{n-1} p_i \equiv \bigvee_{i=1}^{n-1} p_{i+1}
+A_l = (((p_1\lor p_2) \lor p_3) ...  \lor p_{n-1}) \lor p_n
+A_r = p_1\lor(p_2 \lor (p_3 \lor ... (p_{n-1} \lor p_n)))
+p_n
+A_l
+A_r
+A_l(n-1) = A_r(n-1)
+A_l(n-1) = ((p_1\lor p_2) \lor p_3) ...  \lor p_{n-1}
+A_r(n-1) = p_1\lor(p_2 \lor (p_3 \lor ... p_{n-1}))
+n
+A_l = A_r
+A_l = A_l(n-1) \lor p_n
+A_r
+p_{n-1}
+p_{n-1} \lor p_n
+A_r
+A_l
+A_r

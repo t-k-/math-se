@@ -1,0 +1,43 @@
+m
+x,y\in [0,\dfrac{\pi}{m}]
+m
+I_m(x,y) \ge 0
+I_{m}(x,y)=\sum_{k=0}^{m-1}(e^{\cos{(x-y+2k\pi/m)}}-e^{\cos{(-x-y+2k\pi/m)}})
+m\le 12
+\sum_{i=0}^{m-1}e^{\cos{i\pi}}
+k<m
+\tau
+k
+\sum_{j=0}^{m-1}\cos^k\left(\tau+\frac{2\pi j}{m}\right)
+e^{\cos z}
+k
+m
+\sum_{j=0}^{m-1}\sin^k\left(\tau+\frac{2\pi j}{m}\right),\qquad \sum_{j=0}^{m-1}\cos^k\left(\tau+\frac{2\pi j}{m}\right)
+\frac{m}{2}\int_{0}^{2\pi}\sin^k(x)\,dx,\qquad \frac{m}{2}\int_{0}^{2\pi}\cos^k(x)\,dx.
+e^{\cos z}=\sum_{j=0}^{+\infty}\frac{\cos^j(z)}{j!},
+I_m(x,y)=\sum_{j\geq m/2}\frac{1}{(2j)!}\sum_{k=0}^{m-1}\left(\cos^{2j}\left((x-y)+\frac{2k\pi}{m}\right)-\cos^{2j}\left((x+y)-\frac{2k\pi}{m}\right)\right),
+\sum_{j=0}^{m-1}\cos^k\left(\tau+\frac{2\pi j}{m}\right)-\frac{m}{2}\int_{0}^{2\pi}\cos^k(x)\,dx
+\cos^{2j}(x)
+I_m(x,y)=4m \sum_{j\geq m/2}\frac{1}{4^j(2j)!}\sum_{h\in[1,j-1]:m|2h}\binom{2j}{j-h}\sin(2hx)\sin(2hy)
+I_m(x,y)=4m\sum_{r=1}^{+\infty}\sin(rmx)\sin(rmy)\sum_{j\geq 1+rm/2}\binom{2j}{j-rm/2}\frac{1}{4^j(2j)!}
+ c_r = \sum_{j\geq 1+rm/2}\binom{2j}{j-rm/2}\frac{1}{4^j(2j)!} 
+I_m(x,y)
+c_r
+ c_r = I_{rm}(1)-\frac{1}{2^{rm}(rm)!} = -\frac{1}{2^{rm}(rm)!}+\frac{1}{\pi}\int_{0}^{\pi}\cos(rmx)\,e^{\cos x}dx. 
+\sin(rmx)\sin(rmy)\geq -r^2 \sin(mx)\sin(mx),
+ I_m(x,y) \geq 4m\left(\sum_{j\geq 1+m/2}\binom{2j}{j-m/2}\frac{1}{4^j(2j)!}-\sum_{r\geq 2}\sum_{j\geq 1+rm/2}\binom{2j}{j-rm/2}\frac{r^2}{4^j(2j)!}\right)\sin(mx)\sin(my),
+ I_m(x,y) \geq 4m\sin(mx)\sin(my)\left(c_1-\sum_{r\geq 2}r^2\,c_r\right), 
+\heartsuit
+\quad\sum_{r=1}^{+\infty}r^2\, c_r \leq 2 c_1,\tag{$\heartsuit$} 
+ c_r = \sum_{h=1}^{+\infty}\frac{1}{4^h\,h!\,2^{rm}\,(h+rm)!}, 
+h,m\geq 1
+\spadesuit
+\quad\sum_{r=2}^{+\infty}\frac{r^2}{2^{rm}}\cdot\frac{(h+m)!}{(h+rm)!}\leq\frac{1}{2^m}\tag{$\spadesuit$}
+h
+(\heartsuit)
+\sum_{r=2}^{+\infty}\frac{r^2}{2^{rm}}\cdot\frac{(h+m)!}{(h+rm)!}\leq \sum_{r=2}^{+\infty}\frac{r^2}{2^{rm}}\cdot\frac{1}{(h+rm)(h+rm-1)}\leq \sum_{r=2}^{+\infty}\frac{r^2}{2^{rm}}\cdot\frac{1}{r^2 m^2}\leq\frac{2}{m^2\,4^m},
+(\spadesuit)
+(\heartsuit)
+I_m(x,y)\geq 0
+m
+m

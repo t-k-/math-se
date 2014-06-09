@@ -1,0 +1,16 @@
+\{B_t,t\ge0\}
+B(s)
+B(t_1)=x_1
+B(t_2)=x_2
+0<t_1<s<t_2
+B(s)=B(s)-B(t_1)+B(t_1)
+\Pr(B(s),B(t_1)=x_1,B(t_2)=x_2)
+P(B(s)-x_1+x_1,B(t_1)=x_1,B(t_2)=x_2)
+(B_t)_{t \geq 0}
+x=(x_1,x_2,x_3)
+p_{t_1,t_2}
+(B_{t_1},B_{t_2})
+\begin{equation*} (B_{t_1},B_s,B_{t_2}) \sim N(0,C) \qquad \text{mit} \, \, C:= \begin{pmatrix} t_1 & t_1 & t_1 \\ t_1 & s & s \\ t_1 & s & t_2 \end{pmatrix} \end{equation*}
+\begin{equation*} p_{t_1,s,t_2}(x) = \frac{1}{(2\pi)^{\frac{3}{2}}} \cdot\frac{1}{\sqrt{(t_2-s) \cdot (s-t_1) \cdot t_1}} \cdot \exp \left(- \frac{1}{2}\cdot\left( \frac{(x_3-x_2)^2}{t_2-s} + \frac{(x_2-x_1)^2}{s-t_1}+ \frac{x_1^2}{t_1} \right) \right) \end{equation*}
+\begin{align*} p_{s|t_1,t_2}(x) &= \frac{p_{t_1,s,t_2}(x_1,x_2,x_3)}{p_{t_1,t_2}(x_1,x_3)} \\ &= \frac{1}{\sqrt{2\pi}} \cdot \sqrt{\frac{t_2-t_1}{(t_2-s) \cdot (s-t_1)}} \cdot \exp \left( - \frac{1}{2} \cdot \left( \frac{(x_3-x_2)^2}{t_2-s} + \frac{(x_2-x_1)^2}{s-t_1} - \frac{(x_3-x_1)^2}{t_2-t_1} \right) \right) \end{align*}
+\mathbb{P}[B_s \in B|B_{t_1}=y_1,B_{t_2}=y_3] = \int 1_B(x) \cdot p_{s|t_1,t_2}(y_1,x,y_3) \, dx

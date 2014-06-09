@@ -1,0 +1,9 @@
+X
+Y
+[0,1]
+ W=Y-X 
+P(W=n) = P(Y-X=n)
+(X=0, Y=n), (X=1,Y=n+1), (X=-1,Y=n-1), \ldots, (X=k, Y=n+k),\ldots
+ P(W=n) = \sum_{i=-\infty}^{\infty} P(X=i, Y=n+i) 
+ \sum_{i=-\infty}^{\infty} P(X=i)P(Y=n+i) = \sum_{i=-\infty}^{\infty} p_X(i)p_Y(n+i) 
+CDF(W)=P(W\leq w)=P(Y-X \leq w)

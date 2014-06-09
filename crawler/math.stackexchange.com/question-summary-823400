@@ -1,0 +1,33 @@
+A,E\in \mathbb{C}^{m\times m}
+\sigma_\min>0
+A
+\|E\|<\sigma_\min
+\| \|
+\|A^{-1}E\|<1
+A+E
+b\in\mathbb{C}^{m}
+x\in\mathbb{C}^{m}
+Ax=B
+y
+(A+E)y=b
+\frac{\|x-y\|}{\|y\|}\leq \frac{1}{1-\frac{\|E\|}{\sigma_\min}}(\|A\|\|A^{-1}\|)\frac{\|E\|}{\|A\|}
+\|A^{-1}E\|<1
+\|A^{-1}\|=\frac{1}{\sigma_\min}
+(A+E)
+(A+E)^{-1}=((I+EA^{-1})A)^{-1}=A^{-1}(I+EA^{-1})^{-1}
+A+E
+(I+EA^{-1})^{-1}
+\|A^{-1}E\|<1
+(I+EA^{-1})^{-1}
+\|I-(I+EA^{-1})^{-1}\|\leq \|(I-A^{-1}E)^{-1}\|\|A^{-1}E\| \tag{**}
+x,y,b \in \mathbb{C}^m
+Ax=b
+(A+E)y=b
+\alpha = \frac{\|E \|}{\sigma_{min}}
+\| B \| = \| A^{-1} E \| \leq \alpha <1
+\| \cdot \|_2
+(I-B)
+(A+E)
+y = (A+E)^{-1}b = (I-B)^{-1} \overbrace{A^{-1}b}^{=x} \; \mathop  =  \limits^{\text{Th.1}} \; (I+B+B^2+\ldots) \, x = x + B(I+B+B^2+\ldots)x
+\tag{3} \Rightarrow x-y = -B \left( \sum_{j=0}^\infty{B^j} \right) x
+\Rightarrow \frac{\| x-y \|}{\|x\|} \leq \| A^{-1} \| \|E\| \frac{1}{1-\alpha} = \frac{1}{1-\alpha} \left( \|A\| \|{A^{-1}}\| \right) \frac{\|E\|}{\|A\|}

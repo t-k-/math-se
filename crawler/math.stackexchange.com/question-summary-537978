@@ -1,0 +1,19 @@
+u = f(x,y)
+x=e^scos(t)
+y=e^ssin(t)
+\frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2} = e^{-2s} \left[\frac{\partial^2u}{\partial s^2} + \frac{\partial^2u}{\partial t^2}\right] 
+e^{-2s}
+\left(\frac{\partial^2u}{\partial x^2} + \frac{\partial^2u}{\partial y^2}\right)e^{2s}\left(sin^2t + cos^2t\right)
+y^2\frac{\partial^2u}{\partial x^2} + x^2\frac{\partial^2u}{\partial y^2}
+\frac{\partial u}{\partial s} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial s}
+\frac{\partial u}{\partial t} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial t}.
+\begin{aligned}\frac{\partial^2u}{\partial s^2} &= \frac{\partial}{\partial s}\left(\frac{\partial u}{\partial s}\right) \\ &= \frac{1}{2}\frac{\partial x}{\partial s}\cdot\frac{\partial}{\partial x}\left(\frac{\partial u}{\partial s}\right) +  \frac{1}{2}\frac{\partial y}{\partial s}\cdot\frac{\partial}{\partial y}\left(\frac{\partial u}{\partial s}\right)\\ &= \frac{1}{2}\left[\frac{\partial^2 u}{\partial x^2}\left(\frac{\partial x}{\partial s}\right)^2+\frac{\partial^2u}{\partial x\partial y}\frac{\partial y}{\partial s}\frac{\partial x}{\partial s}\right] + \frac{1}{2}\left[\frac{\partial^2 u}{\partial y\partial x}\frac{\partial x}{\partial s}\frac{\partial y}{\partial s} +\frac{\partial^2u}{\partial y^2}\left(\frac{\partial y}{\partial s}\right)^2\right] \\ &= \frac{1}{2}\left[\frac{\partial^2u}{\partial x^2}\left(\frac{\partial x}{\partial s}\right)^2+\frac{\partial^2u}{\partial y^2}\left(\frac{\partial y}{\partial s}\right)^2\right]+\frac{\partial^2u}{\partial x\partial y}\frac{\partial x}{\partial s}\frac{\partial y}{\partial s}\end{aligned}
+\frac{\partial^2u}{\partial t^2} = \frac{1}{2}\left[\frac{\partial^2u}{\partial x^2}\left(\frac{\partial x}{\partial t}\right)^2+\frac{\partial^2u}{\partial y^2}\left(\frac{\partial y}{\partial t}\right)^2\right]+\frac{\partial^2u}{\partial x\partial y}\frac{\partial x}{\partial t}\frac{\partial y}{\partial t}
+x(s,t) = e^s\cos t
+y(s,t)=e^s\sin t
+\frac{\partial x}{\partial s} = e^s\cos t,\quad \frac{\partial x}{\partial t}=-e^s\sin t,\quad \frac{\partial y}{\partial s}=e^s\sin t,\quad\text{and}\quad \frac{\partial y}{\partial t}=e^s\cos t
+\frac{\partial^2u}{\partial x\partial y}\frac{\partial x}{\partial s}\frac{\partial y}{\partial s} = e^{2s}\cos t\sin t\frac{\partial^2u}{\partial x\partial y}
+\frac{\partial^2u}{\partial x\partial y}\frac{\partial x}{\partial t}\frac{\partial y}{\partial t} = -e^{2s}\cos t\sin t\frac{\partial^2u}{\partial x\partial y}
+\dfrac{\partial^2u}{\partial s^2}+\dfrac{\partial^2u}{\partial t^2}
+\begin{aligned}\frac{\partial^2u}{\partial s^2}+\frac{\partial^2 u}{\partial t^2} &= \frac{1}{2}\left[e^{2s}\cos^2t\frac{\partial^2u}{\partial x^2}+e^{2s}\sin^2t\frac{\partial^2u}{\partial y^2}\right] + \frac{1}{2}\left[e^{2s}\sin^2t\frac{\partial^2u}{\partial x^2}+e^{2s}\cos^2t\frac{\partial^2u}{\partial y^2}\right] \\ &= e^{2s}\left(\cos^2t+\sin^2t\right)\left(\frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2}\right)\\ &= e^{2s}\left(\frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2}\right)\end{aligned}
+\dfrac{\partial^2u}{\partial x^2}+\dfrac{\partial^2u}{\partial y^2} = e^{-2s}\left(\dfrac{\partial^2u}{\partial s^2}+\dfrac{\partial^2u}{\partial t^2}\right)

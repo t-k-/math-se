@@ -1,0 +1,17 @@
+ \binom{n}{k} \le \frac{n^n}{k^k(n-k)^{n-k}}
+0 \le k \le n/2
+k \le n
+\binom{n}{k} = \binom{n}{n-k}
+ \binom{n}{k} \le \frac{n-k+1}{k}\frac{n^n}{(k-1)^{k-1}(n-k+1)^{n-k+1}} 
+\left(1+\frac1n\right)^n
+\frac{k^k}{k!} \cdot \frac{(n-k)^{n-k}}{(n-k)!} \leqslant \frac{n^n}{n!},
+\frac{k^k}{k!}\cdot \frac{m^m}{m!} \leqslant \frac{(k+m)^{k+m}}{(k+m)!}.
+m = 0
+\frac{k^k}{k!}\cdot 1 \leqslant \frac{k^k}{k!}
+\begin{align} \frac{k^k}{k!}\cdot\frac{(m+1)^{m+1}}{(m+1)!} &= \frac{k^k}{k!}\cdot \frac{(m+1)^m}{m!}\\ &= \frac{k^k}{k!}\cdot \frac{m^m}{m!}\left(1+\frac1m\right)^m\\ &\leqslant \frac{(k+m)^{k+m}}{(k+m)!}\left(1+\frac1m\right)^m\qquad\qquad (\text{induction hypothesis})\\ &\leqslant \frac{(k+m)^{k+m}}{(k+m)!}\left(1+\frac{1}{k+m}\right)^{k+m}\qquad (\text{monotonicity})\\ &= \frac{(k+m+1)^{k+m}}{(k+m)!}\\ &= \frac{(k+m+1)^{k+m+1}}{(k+m+1)!}. \end{align}
+\left(1+\frac1n\right)^n
+n > 1
+\begin{align} \frac1n &= \frac1{n+1} + \left(\frac1n - \frac{1}{n+1}\right)\\ &= \frac{1}{n+1} + \frac{1}{n(n+1)}\\ &< \frac{1}{n+1} + \frac{1}{n^2} \end{align}
+\begin{align} \frac{n}{n+1} &= 1 - \frac{1}{n+1}\\ &< 1 - \frac1n + \frac{1}{n^2}\\ &= 1 - \frac{n-1}{n^2}\\ &< \left(1 - \frac{1}{n^2} \right)^{n-1} \qquad\qquad (\text{Bernoulli})\\ &= \frac{(n^2-1)^{n-1}}{n^{2(n-1)}}\\ &= \left(\frac{n-1}{n}\right)^{n-1} \left(\frac{n+1}{n} \right)^{n-1}, \end{align}
+\left(1 + \frac{1}{n-1}\right)^{n-1} = \left(\frac{n}{n-1}\right)^{n-1} < \left(\frac{n+1}{n}\right)^{n-1}\left(\frac{n+1}{n}\right) = \left(1 + \frac1n\right)^n.
+ n^n=(k+(n-k))^n=\sum_{j=0}^n{n\choose j}k^j(n-k)^{n-j}\ge {n\choose k}k^k(n-k)^{n-k}.

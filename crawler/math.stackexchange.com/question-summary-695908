@@ -1,0 +1,27 @@
+25\times25
+M
+0
+5\times5
+I
+5\times5
+V=\Bbb{F}_2^{25}
+X\in V
+x_i, i=1,2,3,4,5,
+\Bbb{F}_2^5
+MX=0
+x_1
+u=(1,0,1,0,1)^T
+v=(0,1,1,1,0)
+ A=\left(\begin{array}{cccccc}1&1&0&0&0\\1&1&1&0&0\\0&1&1&1&0\\0&0&1&1&1\\0&0&0&1&1\end{array}\right). 
+ M=\left(\begin{array}{cccccc}A&I&0&0&0\\I&A&I&0&0\\0&I&A&I&0\\0&0&I&A&I\\0&0&0&I&A\end{array}\right), 
+ X=\left(\begin{array}{c}x_1\\x_2\\x_3\\x_4\\x_5\end{array}\right). 
+ \left\{\begin{array}{ccccccccccc} Ax_1&+&x_2&&&&&&&=&0,\\ x_1&+&Ax_2&+&x_3&&&&&=&0,\\ &&x_2&+&Ax_3&+&x_4&&&=&0,\\ &&&&x_3&+&Ax_4&+&x_5&=&0,\\ &&&&&&x_4&+&Ax_5&=&0. \end{array}\right. 
+ \begin{aligned} x_2&=Ax_1,\\ x_3&=Ax_2+x_1=(I+A^2)x_1,\\ x_4&=Ax_3+x_2=A^3x_1,\\ x_5&=Ax_4+x_3=(I+A^2+A^4)x_1. \end{aligned} 
+ 0=Ax_5+x_4=(A+A^5)x_1. 
+ A+A^5=\left(\begin{array}{cccccc}0&1&1&0&1\\1&1&1&0&0\\1&1&0&1&1\\0&0&1&1&1\\1&0&1&1&0\end{array}\right). 
+M
+x_1,x_2,x_3,x_4
+x_5
+u
+v
+x_1

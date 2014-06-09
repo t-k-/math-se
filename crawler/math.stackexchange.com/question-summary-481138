@@ -1,0 +1,16 @@
+\log^{n}(1+z)
+\Bbb{D}
+\int_{|z|=r} \frac{\log^{n}(1+z)}{z} \, dz = \log^{n}(1+0) = 0. 
+z = r e^{i\theta}
+r \to 1^{-}
+\int_{-\pi}^{\pi} \log^{n}(1 + e^{i\theta}) \, d\theta = 0. 
+ \sum_{k=0}^{\lfloor n/2 \rfloor} (-1)^{k} \binom{n}{2k} \int_{0}^{\pi/2} \theta^{2k} \log^{n-2k} (2 \cos \theta) \, d\theta = 0. \tag{1} 
+n = 1
+(1)
+ \int_{0}^{\pi/2} \log \cos \theta \, d\theta = -\frac{\pi}{2}\log 2. \tag{2} 
+n = 2
+(1)
+ \int_{0}^{\pi/2} \log^{2}(2\cos\theta) \, d\theta = \int_{0}^{\pi/2} \theta^{2} \, d\theta = \frac{\pi^{3}}{24}. \tag{3} 
+(2)
+(3)
+ \int_{0}^{\pi/2} \log^{2} \sin\theta \, d\theta = \int_{0}^{\pi/2} \log^{2} \cos\theta \, d\theta = \frac{\pi^{3}}{24} + \frac{\pi}{2}\log^{2} 2. 

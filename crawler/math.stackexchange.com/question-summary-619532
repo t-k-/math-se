@@ -1,0 +1,23 @@
+(X_n)
+ \frac{1}{n}X_n\to 0\text{ a.e.} 
+ \mathbb{P}(\left\{\frac{1}{n}X_n\not\to 0\right\})=0. 
+\sum_{n =1}^{\infty} 1_{\{|X| \geq n\}} \leq |X|
+\sum_{n=1}^{\infty} \mathbb{P}(|X| \geq n) \leq \mathbb{E}(|X|) \tag{1}
+\sum_{n=1}^{\infty} \mathbb{P} \left( \left| \frac{X_n}{n} \right| > \varepsilon \right) < \infty.
+\varepsilon>0
+Y:=\frac{\lvert X_1\rvert}{\varepsilon}
+ A_m:=\left\{\omega\in\Omega: m\leq Y(\omega)<m+1\right\}, m\geq 1. 
+\omega\in\Omega
+Y(\omega)\in A_m
+m\geq 1
+\omega
+\omega\in\Omega
+X_1
+ Y(\omega)\geq \sum_{n=1}^m 1_{\left\{Y>n\right\}}=\sum_{n=1}^{\infty}1_{\left\{Y>n\right\}}. 
+ \Rightarrow\mathbb{E}(Y)\geq\sum_{n=1}^{\infty}\mathbb{E}(1_{\left\{Y>n\right\}})=\sum_{n=1}^{\infty}\mathbb{P}(\left\{Y>n\right\}) 
+ \mathbb{E}(Y)=\frac{1}{\varepsilon}\int_{\Omega}\lvert X_1\rvert\, d\mathbb{P}<\infty. 
+ M_n:=\left\{\omega\in\Omega: \frac{1}{n}\lvert X_n\rvert>\varepsilon\right\}. 
+ \mathbb{P}(\limsup_{n\to\infty}M_n)=\mathbb{P}(\left\{\omega\in\Omega: \omega\in M_n\text{ for infinite many }n\right\})=0. 
+ N:=\left\{\omega\in\Omega: \frac{1}{n}X_n(\omega)\not\to 0\right\}\subset\limsup_{n\to\infty}M_n, 
+ \mathbb{P}(N)\leq\mathbb{P}(\limsup_{n\to\infty}M_n)=0\Rightarrow\mathbb{P}(N)=0. 
+\frac{1}{n}X_n\to 0\text{ a.e.}~~\diamond

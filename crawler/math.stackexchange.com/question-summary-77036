@@ -1,0 +1,31 @@
+ \mathbf{r} = a(1+\cos\phi)\sin\phi \cos\theta \mathbf{i} + a(1+\cos\phi)\sin\phi \sin\theta \mathbf{j} + a(1+\cos\phi)\cos\phi \mathbf{k}
+\frac{32}{5}\pi a^2
+|\mathbf{r}_{\phi} \times \mathbf{r}_{\theta}|
+\mathbf{r} = a\sin\phi \cos\theta \mathbf{i} + a\sin\phi \sin\theta \mathbf{j} + a\cos\phi \mathbf{k}
+a
+a
+a^2
+[0,\pi]
+\phi
+f
+g
+u=1+\cos\phi
+\mathbf r = (f(\phi)\cos\theta, f(\phi)\sin\theta, g(\phi))
+f(\phi) = (1+\cos\phi)\sin\phi = \sin\phi + \sin(2\phi)
+g(\phi) = (1+\cos\phi)\cos\phi = \cos\phi + \cos(2\phi) + 1/2
+A = 2\pi \int_0^\pi f(\phi)\sqrt{f'(\phi)^2+g'(\phi)^2} \;d\phi
+\begin{align} &\big(-\sin\phi - \sin(2\phi)\big)^2 + \big(\cos\phi - \cos(2\phi)\big)^2\\ =&\sin^2\phi+\cos^2\phi + \sin^2(2\phi)+\cos^2(2\phi) + 2\Bigl(\sin\phi\sin(2\phi)+\cos\phi\cos(2\phi)\Bigr) \\ =&2+2\Bigl(\sin\phi(2\cos\phi\sin\phi)+\cos\phi(2\cos^2\phi-1)\Bigr) \\ =&2+2(2\cos\phi-\cos\phi) = 2(1+\cos\phi) \end{align}
+A = 2\pi \int_0^\pi \sqrt 2 (1+\cos\phi)^{3/2} \sin \phi\; d\phi
+{\bf r}_\theta \times {\bf r}_\phi = \begin{array}{l} (-a^2\sin^2(\phi)\cos(\theta)(3\cos(\phi)+1+2\cos^2(\phi))){\bf i}\\ (-a^2\sin^2(\phi)\sin(\theta)(3\cos(\phi)+1+2\cos^2(\phi))){\bf j}\\ (-a^2\sin(\phi)(-1+3\cos^2(\phi)+2\cos^3(\phi))){\bf k}\end{array}
+|{\bf r}_\theta \times {\bf r}_\phi| = a^2\sqrt{2}\sin(\phi)(1+\cos(\phi))^{3/2}
+0 \leq \phi \leq \pi
+0 \leq \theta \leq 2\pi
+\frac{32}{5}a^2\pi
+z
+\gamma
+(\rho,z)
+\gamma:\quad \phi\mapsto\bigl((1+\cos\phi)\sin\phi,(1+\cos\phi)\cos\phi\bigr)\qquad(0\leq\phi\leq\pi)\ ;
+\gamma:\qquad r(\phi):=1+\cos\phi\quad(0\leq\phi\leq\pi)\ .
+ds=\sqrt{r^2+r'^2}\ d\phi=\sqrt{2(1+\cos\phi)}\ d\phi\ .
+d\omega=2\pi\rho(\phi)ds=2\pi\sqrt{2}(1+\cos\phi)^{3/2}\sin\phi\ d\phi=-2\pi\sqrt{2}\bigl(r(\phi)\bigr)^{3/2}r'(\phi)\ d\phi\ .
+\omega(S)=-2\pi\sqrt{2}\int_0^\pi \bigl(r(\phi)\bigr)^{3/2}r'(\phi)\ d\phi = -2\pi\sqrt{2}{2\over5}\bigl(r(\phi)\bigr)^{5/2}\Biggr|_0^\pi ={32\pi\over5}\ .

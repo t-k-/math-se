@@ -1,0 +1,26 @@
+\Omega
+\cal{F}
+\mu
+f\in L^1(\Omega)
+\displaystyle\lim_{p\to 0} \left[ \int_{\Omega}|f|^pd\mu \right]^{\frac{1}{p}}=\exp \left[ \int_{\Omega}\log|f| d\mu  \right],
+\exp[-\infty]=0
+\log|f|\in L^1(\Omega).
+f(p):=\frac 1p\log\int_{\Omega}|f|^pd\mu-\int_{\Omega}\log|f|d\mu
+t\mapsto \log t
+f(p)\geqslant 0
+\ln(1+t)\leqslant t
+\lim_{p\to 0}\frac 1p\left(\int_{\Omega}|f|^pd\mu-1\right)-\int_{\Omega}\log|f|d\mu=0
+\{p_n\}
+0
+f_n(x):=\frac{|f(x)|^{p_n}-1}{p_n}-\log |f(x)|
+\{f_n\}
+0
+t\geq 1
+0<p<1
+s\mapsto s^{p-1}
+0<t<1
+A=\{x,  |f(x)|\geqslant 1\}
+0\leqslant f(p)\leqslant \frac 1p\left(\int_{\Omega}|f|^pd\mu-1\right)-\int_{\Omega}\log|f|d\mu.
+\left|\frac{t^p-1}p\right|=\int_1^t s^{p-1}ds\leqslant t-1
+\left|\frac{t^p-1}p\right|=\int_t^1s^{p-1}ds\leqslant \int_t^1s^{-1}ds=-\log t
+|f_n(x)|\leqslant (|f(x)|-1)\mathbf 1_A(x)-\log|f(x)|\mathbf 1_B(x)+\log|f(x)|,

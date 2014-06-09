@@ -1,0 +1,7 @@
+x\mapsto f(x):=|\sin x|
+\pi
+f
+f(x)={a_0\over2}+\sum_{k=1}^\infty a_k \cos(2kx)
+a_k={2\over\pi}\int_0^\pi f(x)\cos(2k x)\ dx={2\over\pi}\int_0^\pi \sin x\cos(2k x)\ dx\ .
+\eqalign{a_k&={1\over\pi}\int_0^\pi\left(\sin\bigl((1+2k)x\bigr)+\sin\bigl((1-2k)x\bigr)\right)\ dx\cr &={1\over\pi}\left({\cos\bigl((2k-1)x\bigr)\over 2k-1}-{\cos\bigl((2k+1)x\bigr)\over 2k+1}\right)\Biggr|_0^\pi\cr &={2\over\pi}\left({1\over 2k+1}-{1\over 2k-1}\right)=-{4\over\pi(4k^2-1)}\cr}\ .
+|\sin x|={2\over\pi}-{4\over\pi}\sum_{k=1}^\infty{\cos(2k x)\over 4k^2-1}\qquad(-\infty < x<\infty)\ .

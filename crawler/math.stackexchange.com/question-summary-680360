@@ -1,0 +1,22 @@
+X(x, y) = \begin{pmatrix} X_x \\ X_y \end{pmatrix} = \begin{pmatrix} x(7 - x - 2y) \\ y(5 - y - x) \end{pmatrix}, \tag{1}
+\mathbf r = \begin{pmatrix} x \\ y \end{pmatrix} \tag{2}
+\dot{\mathbf r} = X(\mathbf r). \tag{3}
+X
+(0, 0)
+(0, 5)
+(7, 0)
+(3, 2)
+J_X
+X
+J_X = \begin{bmatrix} \dfrac{\partial X_x}{\partial x} &  \dfrac{\partial X_x}{\partial y} \\  \dfrac{\partial X_y}{\partial x} &  \dfrac{\partial X_y}{\partial y} \end{bmatrix}. \tag{4}
+X(x, y)
+J_X = \begin{bmatrix} 7 - 2x - 2y & -2x \\ -y & 5 - 2y - x \end{bmatrix}. \tag{5}
+X
+J_X
+J_X
+J_X(0, 0) = \begin{bmatrix} 7 & 0 \\ 0 & 5 \end{bmatrix}; \; p_J(\lambda) = \lambda^2 - 12\lambda + 35; \; \lambda = 5, 7. \tag{7}
+J_X(0, 5) = \begin{bmatrix} -3 & 0 \\ -5 & -5 \end{bmatrix}; \; p_J(\lambda) = \lambda^2 + 8\lambda + 15; \; \lambda = -3, -5. \tag{8}
+J_X(7, 0) = \begin{bmatrix} -7 & -14 \\ 0 & -2 \end{bmatrix}; \; p_J(\lambda) = \lambda^2 + 9\lambda + 14; \; \lambda = -7, -2. \tag{9}
+J_X(3, 2) = \begin{bmatrix} -3 & -6 \\ -2 & -2 \end{bmatrix}; \; p_J(\lambda) = \lambda^2 + 5\lambda -6; \; \lambda = -6, 1. \tag{10}
+\Omega
+A

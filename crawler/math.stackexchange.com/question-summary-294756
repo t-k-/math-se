@@ -1,0 +1,10 @@
+\nabla\cdot(u\times v)=v\cdot(\nabla\times u)-u\cdot(\nabla\times v)
+u=(f,0,0)
+v=(g,0,0)
+u=(f,0,0)
+v=(0,g,0)
+u
+v
+u
+v
+\begin{align*} \boldsymbol{\nabla}\cdot(\mathbf{u}\times\mathbf{v}) &=\partial_i\epsilon_{ijk}u_jv_k \quad\quad\text{definition of Levi-Civita symbol} \\ &=\epsilon_{ijk}\partial_iu_jv_k \quad\quad\text{Levi-Civita symbol is constant} \\ &=\epsilon_{ijk}(v_k\partial_iu_j+u_j\partial_iv_k) \quad\quad\text{derivative of a product} \\ &=\epsilon_{kij}v_k\partial_iu_j-\epsilon_{jik}u_j\partial_iv_k \quad\quad\text{distributivity and property of Levi-Civita symbol} \\ &=v_k\epsilon_{kij}\partial_iu_j-u_j\epsilon_{jik}\partial_iv_k \quad\quad\text{commutativity} \\ &=\mathbf{v}\cdot(\boldsymbol{\nabla}\times\mathbf{u})- \mathbf{u}\cdot(\boldsymbol{\nabla}\times\mathbf{v}) \quad\quad\text{definition of Levi-Civita symbol}\end{align*}

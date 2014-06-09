@@ -1,0 +1,197 @@
+ \nabla^4 = D_x^4 + 2D_y^2D_x^2 + D_y^4. 
+D_x^4
+x
+x
+x
+u
+x
+\nabla^4 u = \lambda^4 u
+\lambda
+\lambda
+\lambda^4
+ D_x^4 u - \lambda^4 u = 0. 
+\lambda = 0
+x
+u(-1) = u(1) = u''(-1) = u''(1) = 0
+c_0 = c_1 = c_2 = c_3 = 0
+\lambda = 0
+ u = c_3 x^3 + c_2 x^2 + c_1 x + c_0. 
+\lambda \ne 0
+D_x^4 u - \lambda^4 u = 0
+u''
+x
+u(-1) = u(1) = u''(-1) = u''(1) = 0
+(1) + (2) + (3) + (4)
+c_3\cosh\lambda = 0
+\cosh\lambda > 0
+\lambda
+c_3 = 0
+ u = c_1 \cos \lambda x + c_2 \sin \lambda x + c_3 \cosh \lambda x + c_4 \sinh \lambda x. 
+ u'' = -c_1 \lambda^2 \cos \lambda x - c_2 \lambda^2 \sin \lambda x + c_3 \lambda^2 \cosh \lambda x + c_4 \lambda^2 \sinh \lambda x. 
+(1) - (2) + (3) - (4)
+c_4\sinh \lambda = 0
+\sinh\lambda = 0
+\lambda = 0
+c_4 = 0
+u
+u = c_1\cos\lambda x + c_2\sin\lambda x
+c_1
+c_2
+\cos\lambda \sin\lambda = 0
+\cos\lambda = 0
+\sin\lambda = 0
+ \det\begin{pmatrix} \cos\lambda & -\sin\lambda \\ \cos\lambda & \sin\lambda \end{pmatrix} = 0, 
+\cos\lambda = 0
+\lambda
+n\pi - \frac{\pi}2
+n \in \mathbb N
+(5)
+(6)
+c_2 = 0
+u
+u = c_1 \cos \lambda x
+\cos \lambda x
+\lambda^4
+c_2 = 1
+\sin\lambda = 0
+\lambda
+n\pi
+n \in \mathbb N
+(5)
+(6)
+c_1 = 0
+u = c_2\sin\lambda x
+\sin\lambda x
+\lambda_n = n\pi - \frac{\pi}2
+u_n = \cos \lambda_n x
+\mu_n = n\pi
+v_n = \sin \mu_n x
+(\lambda_n^4, u_n)
+(\mu_n^4, v_n)
+D_x^4
+x
+\lambda_n
+\mu_n
+\lambda_n^4
+\mu_n^4
+D_x^4
+x
+f
+\nabla^4 f
+y
+x \mapsto f(x, y)
+x
+x
+f
+a_n
+b_n
+u_n
+v_n
+(7), (8), (9), (10)
+ f(x, y) = \sum_{n=1}^n \left( a_n(y)u_n(x) + b_n(y)v_n(x) \right). \tag{11} 
+\nabla^4 f = g
+f
+g
+f
+g
+g(x, y) = 1
+x
+g
+x
+g
+c_n
+d_n
+u_n = \cos\left(\left(n - \frac 12\right)\pi x\right)
+v_n = \sin\left(n\pi x\right)
+g
+x
+y
+y
+ g = \sum_{n=1}^\infty (c_n u_n + d_n v_n) 
+g = 1
+g
+y
+D_x^4
+x
+f_{-1}(x) = f(x, -1)
+f_1(x) = f(x, 1)
+F_{-1}(x) = f_{yy}(x, -1)
+F_1(x) = f_{yy}(x, 1)
+f_{-1} = f_1 = 0
+F_{-1} = 1
+F_1 = -1
+f_{-1}
+f_1
+F_{-1} = g
+F_{-1}
+g
+F_1 = -g
+g
+f
+y
+\nabla^4 f = g
+u_n
+v_n
+y
+(12)
+(15)
+y
+p
+q
+y
+\alpha
+\alpha^4 - 2\nu^2\alpha^2 + \nu^4 = (\alpha^2 - \nu^2)^2 = (\alpha - \nu)^2(\alpha + \nu)^2
+\{\cosh\nu y, y\cosh\nu y, \sinh\nu y, y\sinh\nu y\}
+q
+p
+p(y) = p_1\cosh\nu y + p_2y\cosh\nu y + p_3\sinh\nu y + p_4y\sinh\nu y + \int K(y, \tilde y) q(\tilde y) d\tilde y
+K
+ (D_y^4 - 2\nu^2 D_y^2 + \nu^4)p = q 
+\nu
+p
+q
+(20)
+(21)
+k
+K
+\alpha_n, \beta_n, \gamma_n
+\delta_n
+y
+A_n, B_n, \Gamma_n, \Delta_n
+g = 1
+c_n = \frac{1}{\left(n - \frac{1}{2}\right)\pi}
+d_n = 0
+(18)
+(19)
+c_n
+k_n = \frac{c_n}{2\lambda_n^4}
+d_n = 0
+K_n = 0
+a_n
+b_n
+y
+a_n
+b_n
+(I1)
+(I6)
+b_n
+0
+b_n = 0
+a_n
+a_n(-1) = a_n(1) = 0
+a''_n(-1) = c_n
+a''_n(1) = -c_n
+(S1)
+\lambda_n^2
+a''_n(-1) = -c_n
+a''_n(1) = c_n
+a''_n
+(C1), (C2), (C3), (C4)
+\alpha_n, \beta_n, \gamma_n, \delta_n
+\cosh\lambda_n
+\alpha_n, \beta_n, \gamma_n
+\delta_n
+(S1)
+a_n
+(11)
+ f(x, y) = \sum_{n=1}^\infty a_n(y) u_n(x). 

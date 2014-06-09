@@ -1,0 +1,7 @@
+F(\omega)
+f(x)
+F(\omega)=\int_{-\infty}^{\infty}f(x)e^{-i\omega x}\,dx.
+i\omega
+\frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{F(\omega-a)}{i\omega}e^{i\omega x}\,d\omega ?
+ \frac{d}{dx} \frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{F(\omega-a)}{i\omega}e^{i\omega x}\,d\omega  =  \frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{F(\omega-a)}{i\omega}\frac{\partial}{\partial x}e^{i\omega x}\,d\omega\\ = \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega-a)e^{i\omega x}d\omega = \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega')e^{i(\omega'+a) x}d\omega'\\ = e^{iax} \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega')e^{i\omega' x}d\omega' = e^{-iax}f(x) 
+ \frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{F(\omega-a)}{i\omega}e^{i\omega x}\,d\omega = \int_{-\infty}^x e^{-iat}f(t)\,dt + C 

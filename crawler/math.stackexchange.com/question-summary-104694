@@ -1,0 +1,40 @@
+a_1, a_2, \ldots, a_n \in \mathbb{C}
+b_1, b_2, \ldots, b_n \in \mathbb{C}
+|\sum_{j=1}^n a_j \overline{b_j}|^2 \leq \sum_{j=1}^n |a_j|^2 \sum_{j=1}^n |b_j|^2
+\geq 0
+b_1 = b_2 = \ldots = b_n = 0
+\sum |b_j|^2 > 0
+(\sum |a_j|^2 \sum |b_j|^2 - |\sum a_j \overline{b_j}|^2) \geq 0
+ \sum (|(\sum |b_j|^2)a_j - (\sum a_j \overline{b_j})b_j|^2) = (\sum |b_j|^2)(\sum |a_j|^2 \sum |b_j|^2 - |\sum a_j \overline{b_j}|^2) 
+n-1
+n
+C = |\sum_{j=1}^{n-1} a_j \overline{b_j}|
+|C|
+ |\sum_{j=1}^n a_j \overline{b_j}|^2 = |C + a_n \overline{b_n}|^2 = |C|^2 + 2|C||a_n \overline{b_n}| + |a_n \overline{b_n}|^2
+ |\sum_{j=1}^n a_j \overline{b_j}|^2 \leq \sum_{j=1}^{n-1} |a_j|^2 \sum_{j=1}^{n-1} |b_j|^2 + 2|C||a_n||b_n| + |a_n|^2 |b_n|^2
+\geq 0
+\sum_{j=1}^n |a_j|^2 \sum_{j=1}^n |b_j|^2 = 0
+a_1 = a_2 = \ldots = a_n = 0
+b_1 = b_2 = \ldots = b_n = 0
+|\sum_{j=1}^n a_j \overline{b_j}|^2
+= 0
+|\sum_{j=1}^n a_j \overline{b_j}|
+= |\sum_{j=1}^{n-1} a_j \overline{b_j} + a_n \overline{b_n}|
+\leq |\sum_{j=1}^{n-1} a_j \overline{b_j}| + |a_n \overline{b_n}|
+\leq \sqrt{\sum_{j=1}^{n-1} |a_j|^2 \sum_{j=1}^{n-1} |b_j|^2} + |a_n \overline{b_n}|
+= \sqrt{\sum_{j=1}^{n-1} |a_j|^2} \sqrt{\sum_{j=1}^{n-1} |b_j|^2} + |a_n| |b_n|.
+|a_n|
+|b_n|
+a = \sqrt{\sum_{j=1}^{n-1} |a_j|^2}
+b = \sqrt{\sum_{j=1}^{n-1} |b_j|^2}
+c = |a_n|
+d = |b_n|
+ab + cd \leq \sqrt{a^2 + c^2} \sqrt{b^2 + d^2}
+a, b, c, d \in \mathbb{R}
+0 \leq (ad - bc)^2 = a^2 d^2 - 2abcd + b^2 c^2
+\Rightarrow 2abcd \leq a^2 d^2 + b^2 c^2
+\Rightarrow a^2 b^2 + 2abcd + c^2 d^2 \leq a^2 b^2 + a^2 d^2 + b^2 c^2 + c^2 d^2
+\Rightarrow (ab + cd)^2 \leq (a^2 + c^2)(b^2 + d^2),
+|\sum_{j=1}^n a_j \overline{b_j}| \leq \sqrt{\sum_{j=1}^{n-1} |a_j|^2} \sqrt{\sum_{j=1}^{n-1} |b_j|^2} + |a_n| |b_n|
+\leq \sqrt{\sum_{j=1}^{n-1} |a_j|^2 + |a_n|^2} \sqrt{\sum_{j=1}^{n-1} |b_j|^2 + |b_n|^2}
+= \sqrt{\sum_{j=1}^n |a_j|^2 \sum_{j=1}^n |b_j|^2},

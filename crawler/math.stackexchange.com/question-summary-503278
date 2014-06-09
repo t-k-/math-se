@@ -1,0 +1,20 @@
+\dfrac{(x-h)^2}{a^2}-\dfrac{(y-k)^2}{b^2}=1
+x
+\pm
+\cosh t
+x-h
+ \cosh^2t-\sinh^2t=1 
+ \frac {(x-h)^2}{a^2} = \cosh^2 t \\ \frac {(y-k)^2}{b^2} = \sinh^2 t 
+ x = h \pm a \cosh t \\ y = k + b \sinh t 
+Oy
+ x = h + a \cosh t \\ y = k + b \sinh t 
+ p = \lim_{x \to \infty} \frac yx = \lim_{t \to \pm \infty} \frac {k + b \sinh t}{h + a \cosh t} = \lim_{t \to \pm \infty} \frac {\frac k{\cosh t} + b \tanh t}{\frac h{\cosh t}+a} = \pm \frac ba 
+ q = \lim_{x \to \infty} (y - px) = \lim_{t \to \pm \infty} \left [k + b \sinh t \mp \frac ba \left (h + a \cosh t \right )\right ] = \\ = k \mp \frac ba h \pm b\lim_{t \to \pm \infty} \left ( \sinh |t| - \cosh |t|\right ) = k \mp \frac ba h \pm b\lim_{t \to \pm \infty} \left(\frac {e^{|t|}-e^{-|t|}}2-\frac {e^{|t|}+e^{-|t|}}2 \right ) = \\ = k \mp \frac ba h \mp b\lim_{t \to \pm \infty} e^{-|t|} = k \mp \frac ba h 
+ y = px+q = \pm \frac ba x + k \mp \frac ba h = \pm \frac ba (x - h) + k 
+a = 3
+b = 4
+h = 2
+k = -2
+ \frac {(x-2)^2}{3^2}-\frac {(y+2)^2}{4^2}=1 
+x = 2 \pm 3 \cosh t \\ y = -2 + 4 \sinh t 
+ y = \pm \frac 43 (x-2)-2 

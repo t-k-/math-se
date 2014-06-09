@@ -1,0 +1,83 @@
+ \int_{a}^b f(x)\, dx = F(b) - F(a) 
+G(x)=\int_a^{x}f(t)\,dt
+I=[x,x+h]
+f(t)
+M
+N
+Nh\leq\int_{x}^{x+h}f(t)\,dt\leq Mh
+h
+N\leq\frac{1}{h}\int_{x}^{x+h}f(t)\,dt\leq M
+\lim_{h\to 0}M=\lim_{h\to 0}N=f(x)
+G(x+h)-G(x)=\int_{a}^{x+h}f(t)\,dt-\int_{a}^{x}f(t)\,dt=\int_{x}^{x+h}f(t)\,dt.
+\frac{1}{h}(G(x+h)-G(x))=\frac{1}{h}\int_{x}^{x+h}f(t)\,dt.
+G'(x)=\lim_{h\to 0}\frac{1}{h}(G(x+h)-G(x))=\lim_{h\to 0}\frac{1}{h}\int_{x}^{x+h}f(t)\,dt=f(x).
+G(x)
+f(x)
+F(x)
+f(x)
+F(x)+C=G(x)
+G(b)-G(a)=\int_{a}^{b}f(t)\,dt
+\int_{a}^{b}f(t)\,dt=(F(b)+C)-(F(a)+C)=F(b)-F(a)
+t
+x
+\int_{a}^{b}f(x)\,dx=F(b)-F(a)
+\int f(x)\,dx=F(x)\implies F'(x)=f(x)
+F(b)-F(a)=\lim_{n\to\infty}\frac1{n}\sum_{r=na}^{nb}f\left(\frac{r}{n}\right)
+b=a+h
+h=\frac{1}{n}
+\lim_{h\to0}F(a+h)-F(a)=\lim_{n\to\infty}\frac{1}{n}\sum_{r=na}^{na+1}f\left(\frac{r}{n}\right)
+\lim_{h\to0}F(a+h)-F(a)=\lim_{n\to\infty}\frac1{n}f(a)
+\lim_{h\to0}\frac{F(a+h)-F(a)}{h}=f(a)
+F'(a)=f(a)
+G(x)=\int_a^x f(t) dt
+f
+G'(x)=f(x)
+x
+G(a)=0
+\int_a^b f(t) dt=G(b)=G(b)-G(a)
+F
+f
+[a,b]
+F
+G
+C
+F(x)=G(x)+C
+x
+F(b)-F(a)=G(b)-G(a)=\int_a^b f(t) dt
+f
+[a,b]
+[a,b]
+a = x_0 < x_1 < \cdots < x_N = b
+\Delta F_i
+F
+x_i
+x_{i+1}
+F(b) - F(a) = \sum_i \Delta F_i
+\Delta F_i \approx F'(\xi_i) \Delta x_i
+\xi_i
+[x_i,x_{i+1}]
+\Delta F_i = F'(\xi_i) \Delta x_i
+\xi_i \in (x_i, x_{i+1})
+F
+[a,b]
+(a,b)
+F' = f
+\epsilon > 0
+\delta > 0
+a = x_0 < x_1 < \ldots < x_N = b
+[a,b]
+\delta
+\xi_i \in [x_i,x_{i+1}]
+i = 0, \ldots, N - 1
+\sum_{i=0}^{N-1} f(\xi_i) \Delta x_i
+\epsilon
+\int_a^b f(x) \, dx
+a = x_0 < x_1 < \ldots < x_N = b
+[a,b]
+\delta
+\xi_i \in (x_i,x_{i+1})
+\Delta F_i = F'(\xi_i) \Delta x_i
+\epsilon
+\int_a^b F'(x) \, dx
+\epsilon > 0
+F(b) - F(a) = \int_a^b F'(x) \, dx

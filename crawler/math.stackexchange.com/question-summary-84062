@@ -1,0 +1,33 @@
+\sum_{i=0}^\infty n(n-1)^2 (n-2) z^n.
+n-1
+\sum\limits_{n=0}^\infty z^n=\frac{1}{1-z}
+k
+\dfrac{z^k}{k!}
+n
+\binom{n}{k}
+ \sum_{n=0}^\infty\binom{n}{k}z^n=\frac{z^k}{(1-z)^{k+1}}\tag{1} 
+ n(n-1)^2 (n-2)=n(n-1)(n-2)(n-3)+2n(n-1)(n-2)\tag{2} 
+ \begin{align} f(z) &=\sum_{n=0}^\infty n(n-1)^2 (n-2) z^n\\ &=\sum_{n=0}^\infty n(n-1)(n-2)(n-3)z^n + 2n(n-1)(n-2)z^n\\ &=\sum_{n=0}^\infty 24\binom{n}{4}z^n + 12\binom{n}{3}z^n\\ &=\frac{24z^4}{(1-z)^5}+\frac{12z^3}{(1-z)^4}\\ &=\frac{12z^3(1+z)}{(1-z)^5}\tag{3} \end{align} 
+ \begin{eqnarray} \sum_{n=0}^\infty n(n-1)^2 (n-2) z^n &=& z^3\sum_{n=0}^\infty n(n-1)^2 (n-2) z^{n-3} \\ &=& z^3\frac{\mathrm d^3}{\mathrm dz^3}\sum_{n=0}^\infty(n-1)z^n \\ &=& z^3\frac{\mathrm d^3}{\mathrm dz^3}z^2\sum_{n=0}^\infty(n-1)z^{n-2} \\ &=& z^3\frac{\mathrm d^3}{\mathrm dz^3}z^2\frac{\mathrm d}{\mathrm dz}\sum_{n=0}^\infty z^{n-1} \\ &=& z^3\frac{\mathrm d^3}{\mathrm dz^3}z^2\frac{\mathrm d}{\mathrm dz}\frac1{z(1-z)} \\ &=& \frac{12z^3(1+z)}{(1-z)^5} \end{eqnarray} 
+n*(n-1)^2 *(n-2) = n*(n-1)*(n-2)*(n-3+2)
+ = n*(n-1)*(n-2)*(n-3) + 2*n*(n-1)*(n-2)
+f(z)=\sum n(n-1)^2(n-2)z^n=12z^3+72z^4+240z^5+600z^6+1260z^7+\dots
+(1-z)f(z)=12z^3+60z^4+168z^5+360z^6+660z^7+\dots
+(1-z)^2f(z)=12z^3+48z^4+108z^5+192z^6+300z^7+\dots
+(1-z)^3f(z)=12z^3+36z^4+60z^5+84z^6+108z^7+\dots
+(1-z)^4f(z)=12z^3+24z^4+24z^5+24z^6+24z^7+\dots
+\sum h(n)z^n
+h
+h
+d
+(1-z)^{d+1}f(z)
+f(z)
+h
+\sum_{i=0}^\infty n*(n-1)^2*(n-2)*z^n=\sum_{i=0}^\infty (n^4-4n^3+4n^2-2n)z^n
+\sum_{i=0}^\infty n*(n-1)^2*(n-2)*z^n=\sum_{i=0}^\infty z^3\frac{d^2}{dz^2}z\frac {d^2}{dz^2}z^n
+A(z) = \sum_{n \ge 0} a_n z^n
+\mathrm{D}
+p(n)
+(z \mathrm{D})^2 \ne z^2 \mathrm{D}^2
+ z \frac{\mathrm{d}}{\mathrm{d} z} A(z) = \sum_{n \ge 0} n a_n z^n 
+ \sum_{n \ge 0} p(n) a_n z^n = p(z \mathrm{D}) A(z) 

@@ -1,0 +1,22 @@
+Y/X
+1
+\{Y < X\}
+Y/X
+(1+z)^{-n}
+z > 0
+W
+X
+(n+1)
+n
+W/X
+(1,n)
+P\{W/X > a\} = a^{-n}
+a > 1
+Y/X + 1
+\mathrm{Pareto}(1,n)
+Y/X
+Y/X \stackrel{d}{=} Z - 1
+Z
+\mathrm{Pareto}(1,n)
+  \phi_{Y/X}(t)= \mathbb{E}\left(\exp\left(i t \frac{Y}{X}\right)\right) = \mathbb{E}\left( \phi_Y\left( \frac{t}{X} \right) \right) = \mathbb{E}\left( \frac{X}{X-i t} \right) 
+ \begin{eqnarray}   \phi_{Y/X}(t) &=& \frac{1}{(n-1)!} \int_0^\infty \frac{x^n}{x - i t} \mathrm{e}^{-x} \mathrm{d} x = \frac{1}{(n-1)!} \int_0^\infty \mathrm{d} u \int_0^\infty x^n \mathrm{e}^{-x} \mathrm{e}^{-u(x - i t)} \mathrm{d} x \\    &=& \frac{1}{(n-1)!} \int_0^\infty  \mathrm{e}^{i t u} n! (1+u)^{-1-n}  \, \mathrm{d} u =    \mathrm{e}^{-i t} \int_0^\infty \mathrm{e}^{i t (u+1)} \, \frac{n}{(1+u)^{n+1}} \mathrm{d} u \\ &=& \mathrm{e}^{-i t} \phi_{\mathrm{Pareto}(1,n)}(t)  \end{eqnarray} 

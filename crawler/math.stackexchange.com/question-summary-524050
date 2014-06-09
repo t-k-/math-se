@@ -1,0 +1,16 @@
+E[x(x-1)(x-2)\ldots(x-k+1)]=E\left[x!\over k!\right]={1\over k!}\left[\sum x!p(x)\right]={1 \over k!}\left[\sum\frac{n!}{(n-x)!}p^{x}q^{n-x}\right]
+E[x(x-1)(x-2)\ldots(x-k+1)]=E\left[\frac{x!}{(x-k)!}\right]=\sum_{x} \frac{x!}{(x-k)!}p(x).
+p(x)={n\choose n-x}p^{x}q^{n-x},
+x!
+\sum_{x}\frac{x!}{(x-k)!}p(x)=\sum_{x}\frac{n!}{(n-x)!(x-k)!}p^{x}q^{n-x},
+(x-k)!
+(n-x)!
+k\leq x\leq n
+x=k
+x=n
+\frac{n!}{(n-k)!}p^{k}\left[\sum_{k\leq x\leq n}\frac{(n-k)!}{(n-x)!(x-k)!}p^{x-k}q^{n-x}\right] \\ =\frac{n!}{(n-k)!}p^{k}\sum_{0\leq x-k\leq n-k}{{n-k\choose x-k}p^{x-k}q^{(n-k)-(x-k)}}.
+x'=x-k
+(p+q)^{n-k}
+p+q=1
+\frac{n!}{(n-k)}p^{k}.
+\begin{align} E[x(x-1)(x-2)\cdots(x-k+1)] &= E\left[\frac{x!}{(x-k)!}\right]\\ &=\sum \frac{x!p(x)}{(x-k)!}\\ &=\sum \frac{x!n!}{x!(x-k)!(n-x)!}p^xq^{n-x}\\ &=\frac{n!}{(n-k)!}p^k \sum \frac{(n-k)!}{(x-k)!(n-x)!}p^{x-k}q^{n-x}\\ &=\frac{n!}{(n-k)!}p^k \end{align}

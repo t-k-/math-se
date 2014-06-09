@@ -1,0 +1,10 @@
+x'=A(t)x+g(t)
+x(1)=\left( \begin{array}{c} 1\\ 1\\ \end{array} \right)
+A(t)=\pmatrix{ \frac{1}{2t^4} & \frac{1}{t^3} \\         \mathrm{e}^{-t} & \frac{1}{1+t^2}}
+g(t)=\left( \begin{array}{c} t\mathrm{e}^{-t}\\ \frac{1}{1+t^2}\\ \end{array} \right)
+t \ge 1
+|x_{1}(t)+x_{2}(t)|<36
+x_{1}(t),x_{2}(t)
+(1,t)
+x_{1}(t)=1+\int_1^t \frac{1}{2s^4}x_{1}+ \frac{1}{s^3}x_{2}+s\mathrm{e}^{-s}\,\mathrm{d}s
+x_{2}(t)=1+\int_1^t \mathrm{e}^{-s}x_{1}+ \frac{1}{1+s^2}x_{2}+\frac{1}{1+s^2}\,\mathrm{d}s

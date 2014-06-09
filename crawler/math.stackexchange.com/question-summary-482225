@@ -1,0 +1,38 @@
+\quad
+ \qquad \qquad\text{with }x^2+bx + c \text{being a polynomial with } \alpha\pm \beta i\text{ as roots (no real roots),} 
+\qquad\qquad\text{ and using the previous variable change,}   \text{ it is a good exercise to prove that:}
+\int \left( {D+Ex \over x^2+bx+c}\right)dx = \frac E2 \ln[(x-\alpha)^2+\beta^2] + {D+E\alpha\over \beta} \arctan\left({x-\alpha\over\beta}\right) + C 
+x-\alpha = \beta t
+\frac1\beta
+\quad
+\alpha \pm \beta i
+x^2+bx+c
+(x-\alpha)^2+\beta^2
+\text{From the variable change, we get:}
+x-\alpha=\beta t\qquad x=\beta t+\alpha\qquad t={x-\alpha\over\beta}
+\int \left( {D+Ex \over x^2+bx+c}\right)dx = \int \left( {D+Ex \over (x-\alpha)^2 +\beta^2} \right)dx
+(...)=\int \left( {D+E(\alpha +\beta t) \over \beta^2 t^2 + \beta^2}\right)dt = \int \left( {D+E\alpha +E\beta t) \over \beta^2 t^2 + \beta^2}\right)dt = \int \left( {E\beta t \over \beta^2 t^2 + \beta^2} +  {D+E\alpha \over \beta^2 t^2 + \beta^2}\right)dt = \int \left( {E\beta t \over \beta^2 t^2 + \beta^2}\right)dt + \int\left({D+E\alpha \over \beta^2 t^2 + \beta^2}\right)dt
+\int \left( {E\beta t \over \beta^2 t^2 + \beta^2}\right)dt = \int \left( {E\over 2\beta} {2\beta^2 t \over\beta^2t^2 + \beta^2}\right)dt
+{f'(t)\over f(t)}
+f(t)= \beta^2 t+\beta^2
+f'(t) = 2\beta^2 t
+(...)= {E\over 2\beta} \ln|\beta^2 t+\beta^2| + C_1
+(...)= \frac E2 \frac 1\beta \ln|\beta^2 {(x-\alpha)^2\over \beta^2} + \beta^2| + C_1= \frac E2 \frac 1\beta \ln|(x-\alpha)^2 + \beta^2|+ C_1
+\quad
+\int \left({ D+E\alpha \over\beta^2t^2 + \beta^2}\right)dt = \int \left( (D+E\alpha) {1\over\beta^2t^2 + \beta^2}\right)dt = {D+E\alpha\over \beta^2}\int\left( {1\over t^2 +1}\right)dt
+{f'(t)\over f(t)^2+1}
+f(t) = t
+f'(t) = 1
+(...) = {D+E\alpha\over \beta} \frac 1\beta \arctan(t) + C_2
+(...) = {D+E\alpha\over \beta} \frac 1\beta \arctan\left({x-\alpha\over\beta}\right) + C_2
+\int \left( {D+Ex \over x^2+bx+c}\right)dx = \frac E2 \frac 1\beta \ln|(x-\alpha)^2 + \beta^2| + {D+E\alpha\over \beta} \frac 1\beta \arctan\left({x-\alpha\over\beta}\right) + C_1+ C_2 = \frac 1\beta \left[\frac E2 \ln|(x-\alpha)^2 + \beta^2| + {D+E\alpha\over \beta} \arctan\left({x-\alpha\over\beta}\right)\right] + C 
+\frac1\beta
+\beta
+\int dt
+\int dx
+(\beta t + \alpha)' = \beta
+\dfrac{dx}{dt}(t)\color{grey}{=\beta}
+\varphi
+t\mapsto \beta t+\alpha.
+\alpha = 0
+\beta = 2

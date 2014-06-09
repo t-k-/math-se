@@ -1,0 +1,22 @@
+ \begin{cases}  x_1^{'}(t)=x_1(t)+3x_2(t) \\  x_2^{'}(t)=3x_1(t)-2x_2(t)-x_3(t) \\  x_3^{'}=-x_2(t)+x_3(t)\end{cases} 
+X
+X^{'}
+A= \begin{bmatrix} 1 & 3 & 0  \\ 3 & -2 & -1 \\ 0 & -1 & 1  \\ \end{bmatrix} 
+-4,3,1
+(-3,5,1)^T (-3,-2,1)^T (1,0,3)^T
+D
+X=c_1  (-3,5,1)^T  e^{-4t}   + c_2 (-3,-2,1)^T e^{3t} + c_3 (1,0,3)^T e^{t} 
+A
+U
+U^{T}U=I
+U^{T}AU=D
+U
+U^{T}
+U
+a=x_{1}(0)
+b=x_{2}(0)
+c=x_{3}(0)
+         U = \left[             \begin{matrix}                 -\frac{3}{\sqrt{35}} & -\frac{3}{\sqrt{14}} & \frac{1}{\sqrt{10}} \\                   \frac{5}{\sqrt{35}} & -\frac{2}{\sqrt{14}} & 0 \\                  \frac{1}{\sqrt{35}} & \frac{1}{\sqrt{14}}  & \frac{3}{\sqrt{10}}             \end{matrix}\right] 
+                 U^{T}AU = \left[\begin{matrix}-4 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 1\end{matrix}\right]=D. 
+                 A = U\left[\begin{matrix}-4 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 1\end{matrix}\right]U^{T}=U DU^{T}. 
+       \left[\begin{matrix}x_{1}\\x_{2}\\x_{3}\end{matrix}\right] =       e^{tA}\left[\begin{matrix}a\\b\\c\end{matrix}\right] =        Ue^{tD}U^{T}\left[\begin{matrix}a \\ b \\ c\end{matrix}\right] =       U\left[\begin{matrix}               e^{-4t} & 0 & 0 \\               0 & e^{3t} & 0 \\               0 & 0 & e^{t}\end{matrix}\right]U^{T}        \left[\begin{matrix}a \\ b \\ c\end{matrix}\right] 

@@ -1,0 +1,16 @@
+\Large\textbf{Given Problem}
+p,q,r
+[0,L]
+p'
+p
+r
+L
+L[X] = \dfrac{(pX')' - qX}{r}
+\large{\textbf{My Attempt and Thoughts for this Problem}}
+\langle Lu,v\rangle_r = \langle u,Lv\rangle_r + \text{some boundary terms}
+r
+\langle Lu,v\rangle_r
+\begin{aligned} \langle Lu,v \rangle_r &= \int_0^L \dfrac{(pu')' - qu}{r}\cdot vr\,dx\\ &= \int_0^L (v(pu')' - vqu)\,dx\\ &= \int_0^L v(pu')'\,dx - \int_0^L vqu\,dx\\ &= vpu'\bigg\vert_{x = 0}^{x = L} - \int_0^L u'v'p\,dx - \int_0^L quv\,dx \end{aligned}
+vpu'\bigg\vert_{x = 0}^{x = L}
+\begin{aligned} \langle u,Lv\rangle_r &= \int_0^L ((pv')' - qv)u\,dx\\ &= \int_0^L u(pv')'\,dx - \int_0^L quv\,dx\\ &= upv'\bigg\vert_{x = 0}^{x = L} - \int_0^L u'v'p\,dx - \int_0^L quv\,dx \end{aligned}
+upv'\bigg\vert_{x = 0}^{x = L}

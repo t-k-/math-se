@@ -1,0 +1,24 @@
+M
+F
+A
+\det(M)=0
+\det(A)\leq0
+ A= \begin{pmatrix}  M  & F \\  F  & M \end{pmatrix} 
+ M= \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}\quad F = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} 
+ \det \begin{pmatrix} M & F \\ F & M \end{pmatrix}=1 
+\det\begin{pmatrix}  M  & F \\  F  & M \end{pmatrix}=\det(M-F)\det(M+F),
+\det\begin{pmatrix}  0  & F \\  F  & 0 \end{pmatrix}=(\det F)^2.
+A
+0=\det(\lambda\mathbb{I}-A)=\det\begin{pmatrix}  \lambda\mathbb{I}-M  & -F \\  -F  & \lambda\mathbb{I}-M \end{pmatrix}=\det(\lambda\mathbb{I}-M+F)\cdot\det(\lambda\mathbb{I}-M-F).
+M-F
+M+F
+M=0
+F
+-F
+M
+\det M=0
+M-F
+M+F
+M=\begin{pmatrix}  a  & a \\  a  & a \end{pmatrix}, F=\begin{pmatrix}  0  & -b \\  b  & 0 \end{pmatrix}
+(M-F)=(M+F)^T=\begin{pmatrix}  a  & a+b \\  a-b  & a \end{pmatrix}\text{ has real eigenvalues }a\pm\sqrt{a^2-b^2}>0\text{ if }0<b<a.
+\begin{pmatrix}  a & a & 0 & -b \\  a & a & b & 0 \\  0 & -b & a & a \\  b & 0 & a & a \end{pmatrix}\text{ has (double) real eigenvalues }a\pm\sqrt{a^2-b^2}>0\text{ if }0<b<a.

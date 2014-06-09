@@ -1,0 +1,13 @@
+ v_0=1\,\,v_1=1\,\,v_2=2 
+ v_n = v_{n-1} + v_{n-2} + v_{n-3} 
+ \begin{bmatrix}1 & 1 & 1\\1 & 0 & 0\\0 & 1 & 0 \end{bmatrix}^n \begin{bmatrix}2 \\1\\ 1\end{bmatrix} = \begin{bmatrix}v_{n+2} \\v_{n+1}\\ v_n\end{bmatrix} = \mathbf{A}^n\mathbf{x} 
+ \mathbf{A}^n = \mathbf{PD}^n\mathbf{P}^{-1}
+ D^n = \begin{bmatrix}\lambda_0^n &0&0\\0&\lambda_1^n&0\\0&0&\lambda_2^n\end{bmatrix} 
+\lambda I
+\lambda_0=0
+\lambda_1=1
+\mathbf{x}=0
+\lambda^{3} - \lambda^{2} - \lambda - 1 = 0
+\lambda = 1.8393, -0.41964 \pm .60629i
+v_{n} = A(1.8393)^{n} - B(0.41964)^{n}cos(0.60629n) - C(0.41964)^{n}sin(0.60629n)
+A, B, C

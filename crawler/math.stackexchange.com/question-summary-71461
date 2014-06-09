@@ -1,0 +1,19 @@
+ S = \sum_{k=1}^{\lceil n/2 \rceil} \binom n k \left(\frac{k}{n}\right)^{2k} \left(1 - \frac{k}{n}\right)^{2(n-k)} 
+n\to \infty
+S \to 0
+S \to 0
+A(k,n) = \binom{n}{k} \left( \frac{k}{n} \right)^{2k} \left( \frac{n-k}{n} \right)^{2(n-k)}.
+\frac{A(k,n)}{A(k-1,n)} = \frac{n-k+1}{k} \frac{k^{2k}}{(k-1)^{2k-2}} \frac{(n-k)^{2(n-k)}}{(n-k+1)^{2n-2k+2}}
+=\frac{k^{2k-1}}{(k-1)^{2k-2}} \frac{(n-k)^{2n-2k}}{(n-k+1)^{2n-2k+1}} = \frac{k}{n-k} \frac{(1+1/(k-1))^{2k-2}}{(1+1/(n-k))^{2n-2k}}
+\approx \frac{k}{n-k} \frac{e^2}{e^2} = \frac{k}{n-k} < 1
+A(k,n)
+k
+A(2,n) = \binom{n}{2} 16/n^4 (1-2/n)^{2n-4} \leq (n^2/2) (16/n^4) = 8/n^2
+\leq A(1,n) + (n/2 -1) A(2,n) \leq n \cdot n^{-2} (1-1/n)^{2n-2} + (n/2) (8/n^2) \leq n^{-1} + 4 n^{-1}
+k
+A(k,n) \approx (n^k/k!) k^{2k}/n^{2k} = n^{-k} (\mbox{constant})
+k
+n \to \infty
+k
+k=0.01 n
+k=0

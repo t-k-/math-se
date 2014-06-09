@@ -1,0 +1,30 @@
+\alpha < 0
+ x \rightarrow +\infty 
+ \cos \theta -1 < 0 
+\theta \in [ -\pi , \pi ] \setminus\{0\}
+e^{x ( \cos \theta   -1) } \rightarrow 0 
+\theta \in [ -\pi , \pi ] \setminus\{0\}
+\theta = 0 
+e^{x ( \cos \theta   -1) } = 1
+x
+ x \rightarrow \infty 
+\varepsilon
+ \int_{- \pi }^{\pi } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta
+  \int_{- \pi }^{\pi } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta =  \int_{ | \theta | < \varepsilon  } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta +  \int_{ \varepsilon \leq |\theta | \leq \pi } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta   
+ \int_{ | \theta | < \varepsilon  } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta 
+x \to \infty\,,\quad \alpha < 0
+ \begin{array}{c}\hline\\ \int_{-\pi}^{\pi}\!\!\left\vert\theta\right\vert^{\,\alpha}\, {\rm e}^{x\left[\cos\left(\theta\right) - 1\right]}\,{\rm d}\theta = \overbrace{2\int_{0}^{\pi/2}\!\!\!\theta^{-\left\vert\alpha\right\vert}\, {\rm e}^{-x\left[1 - \cos\left(\theta\right)\right]}\,{\rm d}\theta} ^{\equiv\ {\cal J}_{-}}\ +\ \overbrace{2\int_{0}^{\pi/2}\!\!\!\theta^{-\left\vert\alpha\right\vert}\, {\rm e}^{-x\left[1 + \cos\left(\theta\right)\right]}\,{\rm d}\theta} ^{\equiv\ {\cal J}_{+}} \\ \\ \hline \end{array} 
+{\bf\mbox{Let's analyze the first term}}\ \left(~{\cal J}_{-}~\right)
+x \to \infty
+\theta \gtrsim 0
+cos\left(\theta\right) \approx 1 - \theta^{2}/2
+\theta \equiv \sqrt{2/x\,}\,t^{1/2}.\quad {\rm d}\theta = \sqrt{2/x\,}\,\left(t^{-1/2}/2\right)\,{\rm d}t
+ {\cal J}_{-} \approx 2\int_{0}^{\infty}\theta^{-\left\vert\alpha\right\vert}\, {\rm e}^{-x\,\theta^{2}/2}\,{\rm d}\theta 
+ {\cal J}_{-} \approx 2\int_{0}^{\infty} \left(2 \over x\right)^{-\left\vert\alpha\right\vert/2}t^{-\left\vert\alpha\right\vert/2} {\rm e}^{-t} \left(2 \over x\right)^{1/2}\,{t^{-1/2} \over 2}\,{\rm d}t = \left(2\over x\right)^{\left(1 - \left\vert\alpha\right\vert\right)/2} \int_{0}^{\infty}t^{-\left(1 + \left\vert\alpha\right\vert\right)/2} {\rm e}^{-t}\,{\rm d}t 
+ \begin{array}{c}\hline\\ {\cal J}_{-} \approx \left(2\over x\right)^{\left(1 - \left\vert\alpha\right\vert\right)/2} \Gamma\left(1 - \left\vert\alpha\right\vert \over 2\right) \\ \\ \hline \end{array} 
+{\bf\mbox{Let's consider the second term}}\ \left(~{\cal J}_{+}~\right)
+ \begin{array}{c}\hline\\ {\cal J}_{+} \approx 2\left(\pi \over 2\right)^{-\left\vert\alpha\right\vert}\, {{\rm e}^{-x} \over x} \\ \\ \hline \end{array} 
+ \begin{array}{|c|}\hline\\ \color{#ff0000}{\large\quad% \int_{-\pi}^{\pi}\left\vert\theta\right\vert^{\,\alpha}\, {\rm e}^{x\left[\cos\left(\theta\right) - 1\right]}\,{\rm d}\theta \color{#000000}{\ \approx\ } \left(2\over x\right)^{\left(1 - \left\vert\alpha\right\vert\right)/2} \Gamma\left(1 - \left\vert\alpha\right\vert \over 2\right) + 2\left(\pi \over 2\right)^{-\left\vert\alpha\right\vert}\, {{\rm e}^{-x} \over x} \quad} \\[3mm]\color{#0000ff}{\large% \left\vert\alpha\right\vert < 1\,, \qquad x \to \infty} \\ \\ \hline \end{array} 
+\alpha < 0
+\left\vert\alpha\right\vert < 1
+ \int_{- \pi }^{\pi } | \theta |^{ \alpha}  e^{x ( \cos \theta   -1) } d \theta=2\int_{0 }^{\pi } \theta^{ \alpha}  e^{x ( \cos \theta -1) } d \theta. 

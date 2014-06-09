@@ -1,0 +1,52 @@
+(*)
+n
+\dagger
+a
+n
+\Leftrightarrow
+\exists k:a^k\equiv0\pmod n
+a
+n
+a^{\varphi(n)+1} \equiv a \pmod{n},
+a^{\lambda(n)+1} \equiv a \pmod{n},
+p
+n
+p \nmid a
+v_p(a) \geqslant v_p(n)
+v_p(k)
+p
+k
+p^{v_p(k)} \mid k
+p^{v_p(k)+1} \nmid k
+p
+n
+k = v_p(n)
+\varphi(p^k) = (p-1)p^{k-1}
+\lambda(n)
+\varphi(n)
+a
+p \nmid a
+a^{\lambda(n)} \equiv a^{\varphi(n)} \equiv 1 \pmod{p^k}
+a^{\lambda(n)+1} \equiv a^{\varphi(n)+1} \equiv a \pmod{p^k}
+p\mid a
+v_p(a^{\lambda(n)}) \stackrel{\varphi(p^k)\mid\lambda(n)}\geqslant v_p(a^{\varphi(p^k)}) \stackrel{p\mid a}\geqslant \varphi(p^k) = p^{k-1}(p-1) \geqslant p^{k-1} \geqslant k,
+a^{\lambda(n)} \equiv 0 \pmod{p^k}
+a^{\lambda(n)+1} \equiv 0 \pmod{p^k}
+a^{\varphi(n)+1}\equiv 0 \pmod{p^k}
+p \mid a
+a^{\lambda(n)+1} \equiv a \pmod{p^k} \iff a \equiv 0 \pmod{p^k}
+\varphi(n)
+a^e \equiv a \pmod{n}
+a^e \equiv a \pmod{p^{v_p(n)}}
+n
+p \nmid n
+a^e \equiv a \pmod{p^0}
+\begin{align}   a^{\phi(n)+1} &\equiv a \pmod n \quad(*) \\\Leftrightarrow a^{\phi(n)} &\equiv 1 \pmod{n/\gcd(n,a)} \end{align}
+g:=\gcd(n,a)
+m:=n/g
+\begin{align}   \phi(n) &= \phi(m\cdot g) \\ &= \phi(m)\cdot\underbrace{\frac{\phi(g)\gcd(m,g)}{\phi(\gcd(m,g))}}_{=:k} \end{align}
+a^k
+m
+k=\phi(n)/\phi(m)
+m=n/\gcd(n,a)
+(*)\Leftrightarrow \left(a^k\right)^{\phi(m)} \equiv 1\pmod m

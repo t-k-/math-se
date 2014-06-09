@@ -1,0 +1,15 @@
+T_1
+T_2
+\Theta
+\operatorname{Var}(T_2) = \operatorname{Var}(T_1)
+\Theta^2
+T_1^2\text{ or }T_1 * T_2
+\begin{align} & E(T_{1}^2) = \operatorname{Cov}(T_1,T_1)+E(T_1)*E(T_1) = Var(T_1)+\Theta^2\\  \implies & \operatorname{Bias}(T_1^2) = E(T_1^2)-\Theta^2=Var(T_1) \end{align}
+\begin{align} & E(T_1 * T_2) = \operatorname{Cov}(T_1,T_2) +E(T_1)*E(T_2) = \Theta^2 \\  \implies & \operatorname{Bias}(T_1*T_2) = 0 \end{align}
+\begin{align} \operatorname{MSE}(T_{1}^2) &= \operatorname{Var}(T_{1}^2) + \operatorname{Bias}^2(T_1^2) = \operatorname{Var}(T_{1}^2)+ \operatorname{Var}^{2}(T_{1}) \\ \operatorname{MSE}(T_{1}*T_2) &= \operatorname{Var}(T_{1}*T_{2}) + \operatorname{Bias}(T_1*T_2) = ... = 2\Theta^2Var(T_1) +\operatorname{Var}^2(T_1) \end{align} 
+\operatorname{Var}(T_{1}^2)
+2\Theta^2\operatorname{Var}(T_1)
+\Theta
+T_1T_2
+T_1^2
+MSE

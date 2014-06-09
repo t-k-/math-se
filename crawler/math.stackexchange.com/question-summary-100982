@@ -1,0 +1,26 @@
+2^{400}
+400
+2^{10}=1024=-1\pmod{25}
+396=39\times10+6
+25\times16=400
+2^{396}\times16=2^{400}
+ 2^{396}=(-1)^{39}\times2^6=-64=11\pmod{25}. 
+ 2^{400}=16\times2^{396}=16\times11=176\pmod{400}. 
+\rm \phi(25) = 20\ \ \Rightarrow\ \ mod\ 25:\ \ 2^{20}\: \equiv\ 1\ \Rightarrow\ 2^{396}\ \equiv \frac{(2^{20})^{20}}{4^2}\ \equiv\ \left(\frac{1}{4}\right)^2\ \equiv\ (-6)^2\ \equiv\ 11\quad  
+\rm\ a\:b\ \equiv\ a\: (b\ mod\ m)\ \equiv\ 16\cdot 11 \pmod{16\cdot 25}\:.
+(*)
+400_{10}=110010000_2=2^4+2^7+2^8
+2^{400}=2^{(2^4+2^7+2^8)}=2^{2^4}\cdot2^{2^7}\cdot2^{2^8}.
+\begin{align} 2^{2^1}&\equiv 4\mod 400 \\ 2^{2^2}\equiv 4^2&\equiv 16\mod 400\qquad(*) \\ 2^{2^3}\equiv 16^2\equiv 256&\equiv-144\mod 400 \\ 2^{2^4}\equiv (-144)^2\equiv 336&\equiv-64\mod 400 \\ 2^{2^5}\equiv (-64)^2&\equiv 96\mod 400 \\ 2^{2^6}\equiv 96^2&\equiv 16\equiv2^{2^2}\mod 400\qquad(*) \\ 2^{2^7}\equiv2^{2^3}&\equiv-144\mod 400 \\ 2^{2^8}\equiv2^{2^3}&\equiv-64\mod 400 \end{align}
+\begin{align} 2^{400}&\equiv2^{2^4}\cdot2^{2^7}\cdot2^{2^8}\mod400 \\ &\equiv(-64)(-144)(-64)\mod400 \\ &\equiv176\mod400. \end{align}
+x
+16
+ x:=2^{400}\bmod400. 
+ 2^{400}\equiv0\bmod16. 
+ 2^{400}\bmod25, 
+ \phi(25)=20\quad\text{and}\quad400\equiv0\bmod20. 
+ 2^{400}\equiv1\bmod25, 
+ x\equiv0\bmod16 
+ x\equiv1\bmod25, 
+ 1+1\cdot25,\quad1+2\cdot25,\quad1+3\cdot25,\quad\dots. 
+ x=176. 

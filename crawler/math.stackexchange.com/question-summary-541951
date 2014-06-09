@@ -1,0 +1,11 @@
+\phi : [a, b] \rightarrow \mathbb{R}^n
+\psi : [c, d] \rightarrow \mathbb{R}^n
+C^1
+\gamma : [a, b] \rightarrow [c, d]
+\gamma(a) = c
+\gamma(b) = d
+(\psi \circ \gamma )(t) = \phi(t)
+t \in [a, b]
+\ell(\phi) = \ell(\psi)
+\ell(\phi) = \int_a^b \lVert(\phi)'(t)\rVert dt
+\ell(\psi) = \int_a^b \lVert(\psi \circ \gamma)'(t)\rVert dt = \int_a^b \lVert(\psi'(\gamma(t)) \cdot \gamma'(t)\rVert dt

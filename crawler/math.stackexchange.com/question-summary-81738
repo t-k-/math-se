@@ -1,0 +1,23 @@
+ \lim \limits_{n\to\infty}\prod \limits_{j=1}^n \left( 1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) \right)
+ \exp\left({\int_0^1 \frac{\cos(tx)-x}{x} \, dx}\right) . 
+a_n:=\prod \limits_{j=1}^n \left( 1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) \right)
+x-\frac{x^2}2\leq \ln(1+x)\leq x
+x>-1
+c_n:=\sum_{j=1}^n\frac 1j\left(\cos\left(\frac{tj}n\right)-1\right)
+f(x)=\frac{\cos (tx)-1}x
+\left[0,1\right]
+\lim_{n\to\infty}c_n=\int_0^1f(x)dx=\int_0^1\frac{\cos (tx)-1}xdx
+\frac 1n
+n\to\infty
+0
+b_n:=\ln a_n=\sum_{j=1}^n\ln\left(1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right)\right).
+\sum_{j=1}^n\frac 1j\left(\cos\left(\frac{tj}n\right)-1\right)-\frac 12\sum_{j=1}^n\frac 1{j^2}\left(\cos\left(\frac{tj}n\right)-1\right)^2\leq b_n\leq \sum_{j=1}^n\frac 1j\left(\cos\left(\frac{tj}n\right)-1\right).
+ c_n=\frac1n\sum_{j=1}^n\frac nj\left(\cos\left(\frac{tj}n\right)-1\right)=\frac 1n\sum_{k=1}^nf\left(\frac kn\right),
+\sum_{j=1}^n\frac 1{j^2}\left(\cos\left(\frac{tj}n\right)-1\right)^2=\frac 1{n^2}\sum_{j=1}^n\frac {n^2}{j^2}\left(\cos\left(\frac{tj}n\right)-1\right)^2
+a_n=\lim \limits_{n\to\infty}\prod \limits_{j=1}^n \left[ 1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) \right]
+\to \ln a_n=\lim \limits_{n\to\infty}\sum_{j=1}^n \ln\left[ 1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) \right]
+\ln(1+x)=x+O(x)
+ \ln\left[ 1+\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) \right]=\frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right)+O(\cdots)
+\to \ln a_n=\lim \limits_{n\to\infty}\sum_{j=1}^n \left[ \frac{1}{j} \left(\cos \left(\frac{tj}{n} \right)-1 \right) +O(\cdots)\right] =\int_{0}^{1}\frac{\cos(tx)-1}{x}dx
+\int_{0} ^{1} \left(\cos(tx)-1\right) dx\leq 3
+\int_{0}^{1}\frac{\cos(tx)-1}{x}dx

@@ -1,0 +1,29 @@
+T_k \sim E(q_k)
+ \ \ \mathbb{P}(T_k\geq t\text{ and } T_j>T_k\text{ for all } j\neq k) = \int_t^\infty q_k e^{-q_ks} \mathbb{P}(T_j > s \text{ for all } j\neq k) ds, 
+X
+(Y_i)_i
+(Y_i)_i
+X
+X
+f
+z
+ \mathrm P(X\geqslant z, Y_i\geqslant X\ \mbox{for all}\ i)=\int_z^{+\infty}\mathrm P(Y_i\geqslant x\ \mbox{for all}\ i)\,f(x)\,\mathrm dx. 
+Y=\inf_iY_i
+Y
+(Y_i)_i
+\mu
+Y
+X
+Y
+x
+ \mathrm P(X\geqslant z, Y_i\geqslant X\ \mbox{for all}\ i)=\mathrm P(Y\geqslant X\geqslant z)=\iint[y\geqslant x\geqslant z]\,f(x)\,\mathrm dx\,\mu(\mathrm dy). 
+ \int[y\geqslant x]\,\mu(\mathrm dy)=\mu([x,+\infty))=\mathrm P(Y\geqslant x)=\mathrm P(Y_i\geqslant x\ \mbox{for all}\ i), 
+k=1
+F(t_2, \dotsc, t_n)
+T_2, \dotsc, T_n
+ F(t_2, \dotsc, t_n) = \prod_{m=2}^nq_m e^{-q_mt_m}. 
+ q_1e^{-q_1t_1}F(t_2, \dotsc, t_n). 
+ \int_{\Omega}q_1e^{-q_1t_1}F(t_2, \dotsc, t_n) dt_1 \cdots dt_n 
+\Omega
+ \Omega = \{ (t_1, \dotsc, t_n) \mid t_1 \geq t \textrm{ and } t_m \geq t_1 \textrm{ for } m = 2, \dotsc, n \} 
+ \int_t^{\infty} \int_{t_1}^{\infty} \cdots \int_{t_1}^{\infty} q_1e^{-q_1t_1}F(t_2, \dotsc, t_n) dt_n \cdots dt_2 dt_1 = \\ \int_t^{\infty} q_1e^{-q_1t_1} \int_{t_1}^{\infty} \cdots \int_{t_1}^{\infty} F(t_2, \dotsc, t_n) dt_n \cdots dt_2 dt_1 = \\ \int_t^{\infty} q_1e^{-q_1t_1} \mathbb{P}(T_m \geq t_1 \textrm{ for } m=2, \dotsc, n) dt_1 

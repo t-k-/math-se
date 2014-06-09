@@ -1,0 +1,12 @@
+\int_{0}^{1}{\sqrt{{{x}^{3}}-{{x}^{4}}}dx}
+\int_{0}^{1}{x\sqrt{{{x}^{3}}-{{x}^{4}}}dx}
+I:=\int_0^1 x\sqrt {x^3-x^4}\,dx=\int_0^1 x^2\sqrt{x-x^2}\,dx=\int_0^1x^2\sqrt{\frac{1}{4}-\left(\frac{1}{2}-x\right)^2}\,dx=
+=\frac{1}{2}\int_0^1x^2\sqrt{1-\left(1-2x\right)^2}\,dx 
+\sin u=1-2x\Longrightarrow \cos u\,du=-2\,dx\,,\,x=0\Longrightarrow u=\frac{\pi}{2}\;\;,\;x=1\Longrightarrow u=\frac{3\pi}{2}\,\,,\,\text{thus:}
+I=-\frac{1}{4}\int_{\pi/2}^{3\pi/2}\left(\frac{1-\sin u}{2}\right)^2\sqrt{1-\sin^2u}\cos u\,du=
+-\frac{1}{16}\int_{\pi/2}^{3\pi/2}\left(\cos^2u-2\sin u\cos^2u+\cos^2u\sin^2u\right)du=\ldots\,\,etc.
+x
+x\sqrt{x-x^2}
+x^2\sqrt{x-x^2}
+x-x^2=\frac{1}{4}-(x-\frac{1}{2})^2
+x-\frac{1}{2}=\frac{1}{2}u

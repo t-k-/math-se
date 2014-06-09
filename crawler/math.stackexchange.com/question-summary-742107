@@ -1,0 +1,23 @@
+\mathbb{R}
+\mathbb{R}
+g
+x < 1
+x \in [n,n+2^{-n})
+x \in [n+2^{-n},n+2^{-n+1}]
+g
+2^{n-1}
+2^{-n}
+-2^{n-1}
+2^{-n}
+   g(x) = \begin{cases}     0 &\text{if $x < 1$} \\     2^{n-1} &\text{if $x \in [n,n+2^{-n})$} \\     -2^{n-1} &\text{if $x \in [n+2^{-n},n+2^{-n+1}]$} \\     0 &\text{otherwise,}   \end{cases} 
+g
+x < 1
+x \in [n,n+2^{-n+1}]
+f \geq 0
+\int_{\mathbb{R}} f = \sum_{i=1}^\infty 2^{-n} = 1
+f
+   \int_{\mathbb{R}} g^+ = \int_{\mathbb{R}} g^- = \sum_{i=1}^\infty 2^{n-1} 2^{-n} = \infty \text{.} 
+   f(x) = \int_0^x g(t) \,dt = \begin{cases}     0 &\text{if $x < 1$} \\     \frac{1}{2} - 2^{n-1}|n + 2^{-n} - x| &\text{if $x \in [n,n+2^{-n+1}]$} \\     0 &\text{otherwise.}   \end{cases} 
+   \int_{[n,n+1]} f = \int_n^{n+2^{-n+1}} 1 - 2^n|n + 2^n - x|\,dx = 2^{-n} \text{,} 
+f'
+\int f' = \lim_{x\to\infty} \left(f(x) - f(-x)\right)

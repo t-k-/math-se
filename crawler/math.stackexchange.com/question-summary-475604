@@ -1,0 +1,19 @@
+x
+ \text{arccot} \frac{1-x}{1+x} 
+x=\tan \theta \implies \theta=\arctan x
+\frac{1-x}{1+x}=\frac{1-\tan\theta}{1+\tan\theta}=\frac{\tan\frac\pi4-\tan\theta}{1+\tan\theta\tan \frac\pi4}\text{ as } \tan\frac\pi4=1
+=\tan\left(\frac\pi4-\theta\right)=\cot\{\frac\pi2-\left(\frac\pi4-\theta\right)\}=\cot\left(\frac\pi4+\theta\right)=\cot\left(\frac\pi4+\arctan x\right)
+ \text{arccot} \left(\frac{1-x}{1+x}\right) =?
+ y= \text{arccot} \frac{1-x}{1+x}\implies \cot y=\frac{1-x}{1+x} 
+\implies x=\frac{\tan y-\tan\frac\pi4}{1+\tan\frac\pi4\tan y}=\tan\left(y-\frac\pi4\right)\text{ using }\tan(A-B)=\frac{\tan A-\tan B}{1+\tan A\tan B}
+y,
+ \frac{dx}{dy}=\frac{d  \tan\left(y-\frac\pi4\right)}{d(y-\frac\pi4)}\cdot\frac {d(y-\frac\pi4)}{dy}=\sec^2\left(y-\frac\pi4\right)=1+\tan^2\left(y-\frac\pi4\right)=1+x^2
+u = \frac{1 - x}{1 + x}
+\frac{d}{du} arc\cot{u} = \frac{-1}{1 + u^{2}}.
+\frac{d}{dx} arc\cot\frac{1-x}{1+x} = \frac{d}{du} arc\cot{u}\cdot\frac{d}{dx}u
+= \frac{-1}{1 + \frac{(1 - x)^{2}}{(1 + x)^2}}\frac{-2}{(1 + x)^{2}}
+= \frac{1}{1 + x^{2}.}
+v=\frac{x+1}{x-1}
+f=\text{arccot}(v)
+\frac{df}{dx}=\frac{df}{dv}\frac{dv}{dx}
+\frac{dv}{dx}

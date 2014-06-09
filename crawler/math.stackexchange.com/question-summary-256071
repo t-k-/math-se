@@ -1,0 +1,54 @@
+a
+s
+\Phi
+\Psi
+a\neq0
+s\neq0
+f(x)=\int_Ce^{xu}K(u)~du
+(\int_Ce^{xu}K(u)~du)''+2ax(\int_Ce^{xu}K(u)~du)'-2s\int_Ce^{xu}K(u)~du=0
+\int_Cu^2e^{xu}K(u)~du+2ax\int_Cue^{xu}K(u)~du-2s\int_Ce^{xu}K(u)~du=0
+\int_C(u^2-2s)e^{xu}K(u)~du+\int_C2aue^{xu}K(u)~d(xu)=0
+\int_C(u^2-2s)e^{xu}K(u)~du+\int_C2auK(u)~d(e^{xu})=0
+\int_C(u^2-2s)e^{xu}K(u)~du+[2aue^{xu}K(u)]_C-\int_Ce^{xu}~d(2auK(u))=0
+\int_C(u^2-2s)e^{xu}K(u)~du+[2aue^{xu}K(u)]_C-\int_Ce^{xu}(2auK'(u)+2aK(u))~du=0
+[2aue^{xu}K(u)]_C-\int_Ce^{xu}(2auK'(u)-(u^2-2a-2s)K(u))~du=0
+\therefore 2auK'(u)-(u^2-2a-2s)K(u)=0
+2auK'(u)=(u^2-2a-2s)K(u)
+\dfrac{K'(u)}{K(u)}=\dfrac{u}{2a}+\left(-\dfrac{s}{a}-1\right)\dfrac{1}{u}
+\int\dfrac{K'(u)}{K(u)}du=\int\left(\dfrac{u}{2a}+\left(-\dfrac{s}{a}-1\right)\dfrac{1}{u}\right)du
+\ln K(u)=\dfrac{u^2}{4a}+\left(-\dfrac{s}{a}-1\right)\ln u+c_1
+K(u)=cu^{-\frac{s}{a}-1}e^{\frac{u^2}{4a}}
+\therefore f(x)=\int_Ccu^{-\frac{s}{a}-1}e^{\frac{u^2}{4a}+xu}~du
+u
+\therefore f_n(x)=\int_{a_n}^{b_n}c_n(m_nt)^{-\frac{s}{a}-1}e^{\frac{(m_nt)^2}{4a}+xm_nt}~d(m_nt)={m_n}^{-\frac{s}{a}}c_n\int_{a_n}^{b_n}t^{-\frac{s}{a}-1}e^{\frac{{m_n}^2t^2}{4a}+m_nxt}~dt
+x
+a_n
+b_n
+x
+m_n
+\lim\limits_{t\to a_n}t^{-\frac{s}{a}}e^{\frac{{m_n}^2t^2}{4a}+m_nxt}=\lim\limits_{t\to b_n}t^{-\frac{s}{a}}e^{\frac{{m_n}^2t^2}{4a}+m_nxt}
+\int_{a_n}^{b_n}t^{-\frac{s}{a}-1}e^{\frac{{m_n}^2t^2}{4a}+m_nxt}~dt
+1
+a>0
+s<0
+n=1
+a_1=0
+b_1=\infty
+m_1=\pm i
+\therefore f(x)=C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{-\frac{t^2}{4a}}\cos xt~dt
+C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{-\frac{t^2}{4a}}\sin xt~dt
+f(x)=C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{-\frac{t^2}{4a}}\sin xt~dt+C_2\int_0^\infty t^{-\frac{s}{a}-1}e^{-\frac{t^2}{4a}}\cos xt~dt
+2
+a<0
+s>0
+n=1
+a_1=0
+b_1=\infty
+m_1=\pm1
+\therefore f(x)=C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{\frac{t^2}{4a}}\cosh xt~dt
+C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{\frac{t^2}{4a}}\sinh xt~dt
+f(x)=C_1\int_0^\infty t^{-\frac{s}{a}-1}e^{\frac{t^2}{4a}}\sinh xt~dt+C_2\int_0^\infty t^{-\frac{s}{a}-1}e^{\frac{t^2}{4a}}\cosh xt~dt
+\Phi\left(-\dfrac{s}{2a},\dfrac{1}{2},-ax^2\right)\propto\int_0^1t^{-\frac{s}{2a}-1}(1-t)^{\frac{s}{2a}-\frac{1}{2}}e^{-ax^2t}~dt
+\dfrac{1}{2}>-\dfrac{s}{2a}>0
+\Psi\left(-\dfrac{s}{2a},\dfrac{1}{2},-ax^2\right)\propto\int_0^\infty t^{-\frac{s}{2a}-1}(1+t)^{\frac{s}{2a}-\frac{1}{2}}e^{ax^2t}~dt
+-\dfrac{s}{2a}>0

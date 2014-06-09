@@ -1,0 +1,16 @@
+\{v_1,....,v_n\}
+\{e_1,...,e_n\}
+e_i
+\{v_1,....,v_n\}
+v
+e
+\newcommand{\inner}[2]{\langle #1 \mspace{-3mu}\mid\mspace{-3mu} #2\rangle}
+e_1 = \frac{1}{\lVert v_1\rVert}\cdot v_1 \leadsto v_1 = \lVert v_1\rVert\cdot e_1 \leadsto \begin{pmatrix}\lVert v_1\rVert\\0\\\vdots\\0\end{pmatrix}
+e_1,\,\dotsc,\, e_i
+i
+w_{i+1} = v_{i+1} - \inner{e_1}{v_{i+1}}e_1 - \inner{e_2}{v_{i+1}}e_2 - \dotsc - \inner{e_i}{v_{i+1}}e_i; e_{i+1} := \frac{1}{\lVert w_{i+1}\rVert}w_{i+1}
+v_{i+1} = \inner{e_1}{v_{i+1}}e_1 + \inner{e_2}{v_{i+1}}e_2 + \dotsc + \inner{e_i}{v_{i+1}}e_i + \lVert w_{i+1}\rVert e_{i+1}
+\begin{pmatrix}\inner{e_1}{v_{i+1}}\\\vdots\\\inner{e_i}{v_{i+1}}\\ \lVert w_{i+1}\rVert\\0\\ \vdots \\0 \end{pmatrix}
+i
+\{e_1,...,e_n\}
+v_i

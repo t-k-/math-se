@@ -1,0 +1,11 @@
+\lim_{n\to\infty}\frac{x^3 \sin(x)}{\ln(1+x^4)}
+x\to\infty
+x^3/\log(1+x^4)
+\infty
+x\to0
+\sin t
+\log(1+t)
+0
+t\in(-1,1)
+ \frac{x^3\sin x}{\log (1+x^4)}=\frac{x^3\,\displaystyle\sum_{k=0}^\infty\frac{(-1)^kx^{2k+1}}{(2k+1)!}}{\displaystyle\sum_{k=0}^\infty\frac{(-1)^k(x^4)^{k+1}}{k+1}}=\frac{\,\displaystyle\sum_{k=0}^\infty\frac{(-1)^kx^{2k}}{(2k+1)!}}{\displaystyle\sum_{k=0}^\infty\frac{(-1)^kx^{4k}}{k+1}}=\frac{1+\displaystyle\sum_{k=1}^\infty\frac{(-1)^kx^{2k}}{(2k+1)!}}{1+\displaystyle\sum_{k=1}^\infty\frac{(-1)^kx^{4k}}{k+1}}\to\frac11=1 
+ \frac{x^3\sin x}{\log (1+x^4)}=\frac{x^3(x-O(x^3))}{x^4-O(x^6)}=\frac{x^4-O(x^6))}{x^4-O(x^8)}=\frac{x^4(1-O(x^2))}{x^4(1-O(x^4))}=\frac{1-O(x^2)}{1-O(x^4)}\to\frac11=1. 

@@ -1,0 +1,28 @@
+D=\{{x^{2}+xy+y^{2}\leq 1}\}
+D=\{{x^{2}+y^{2}\leq x}\}
+u=r\cos{t}-(1/2)r\sin{t}
+v=r\sin{t}
+0\leq r\leq
+0\leq t \leq 2\pi
+(53\pi)/96
+(4\pi)/(3\sqrt{3})
+\int \int_{D}(x^{2}+y^{2})dxdy
+\int \int_{D}\sqrt{x^{2}+y^{2}}dxdy
+D=\{{(x+1/2y)^{2}+3/4y^{2}\leq 1}\}
+D
+D = \left \{ \left ( r, \phi\right )\ \left |\ 0 \le r \le 1, 0 \le \phi \le 2\pi \right .\right \}
+ x = \frac u{\sqrt 3} - v; \qquad y = \frac u{\sqrt 3} + v 
+ x^2+xy+y^2= \frac {u^2}3 - 2\frac{uv}{\sqrt 3} + v^2 + \frac {u^2}3 - v^2 + \frac{u^2}3 + 2 \frac{uv}{\sqrt 3} + v^2 = u^2 + v^2 \leq 1 
+ u = r \cos \phi; \qquad v = r \sin \phi 
+dx\ dy = J_1\ du\ dv
+J
+(x,y) \rightarrow (u, v)
+du\ dv = J_2\ dr\ d\phi
+J_2
+(u, v) \rightarrow (r, \phi)
+J_2 = r
+J_1
+dx\ dy = \frac {2r}{\sqrt 3} dr\ d\phi
+ x^2+y^2 = \frac {u^2}3 - 2\frac{uv}{\sqrt 3} + v^2 + \frac{u^2}3 + 2 \frac{uv}{\sqrt 3} + v^2 = \frac {2u^2}3 + 2v^2 
+ J_1 = \text{det} \left [ \begin{array}{cc} \frac 1{\sqrt 3} & -1 \\ \frac 1{\sqrt 3} & 1 \end{array} \right ] = \frac 2{\sqrt 3} 
+ I_1 = \frac 2{\sqrt 3}\int_0^{2\pi} \int_0^1 \left ( \frac {2r^2 \cos^2 \phi}3 + 2 r^2 \sin^2 \phi\right) r dr d\phi = \frac 4{3\sqrt 3}\int_0^{2\pi} \left ( \left . \frac {r^4}4 \right |_0^1\right )\left( cos^2 \phi + 3 \sin^2 \phi \right)d\phi = \frac 1{3 \sqrt 3} \int_0^{2\pi} \left ( 2 - \cos 2\phi\right ) = \frac {4\pi}{3\sqrt 3} 

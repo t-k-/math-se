@@ -1,0 +1,19 @@
+Y
+f_{Y}
+ = \int_0^{\infty}(\int_{0}^{x}\ dy) f_{Y}(x)\ dx
+y
+x
+xy
+y
+x
+y
+x
+y
+y
+f_Y(x)
+y
+ \int_0^{\infty} P(Y > y) dy  
+ \int_0^{\infty} P(Y > y) dy = \int_0^{\infty} \int_y^{\infty} f_Y(x) \, dx \, dy. 
+ \{ (x,y) \, | \,0 \le y \le x \} 
+ \int_0^{\infty} \int_y^{\infty} f_Y(x) \, dx \, dy = \int_0^{\infty} \int_0^x f_Y(x) \, dy \, dx. 
+ \int_0^{\infty} \int_0^x f_Y(x) \, dy \, dx = \int_0^{\infty} \left( \int_0^x \, dy \right) f_Y(x) \, dx = \int_0^{\infty} x \, f_Y(x) \, dx = \mathbb E [ Y ], 

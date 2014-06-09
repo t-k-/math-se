@@ -1,0 +1,14 @@
+x_n \to  x
+y_n \to y
+\big( M,p \big)
+lim_{n \to \infty} p(x_n, y_n) = p(x,y)
+p(x_n,x)<{\epsilon\over 2}
+p(y_n,y)<{\epsilon\over 2}
+d(p(x_n,y_n),p(x,y))=|p(x_n,y_n)-p(x,y)|
+|p(x_n,y_n)-p(x,y)|=|p(x_n,y_n)-p(x_n,y)+p(x_n,y)-p(x,y)|\le|p(x_n,y_n)-p(x_n,y)|+|p(x_n,y)-p(x,y)|\le|p(y,y_n)|+|p(x_n,x)|\le{\epsilon\over 2}+{\epsilon\over 2}=\epsilon
+p:X\times X\to \mathbb R
+X\times X
+d((x,y),(x',y'))=d(x,x')+d(y,y')
+\mathbb R
+p(x_n,y_n)\leq p(x_n,x)+p(x,y)+p(y,y_n)
+p(x,y)\leq p(x,x_n)+p(x_n,y_n)+p(y_n,y)

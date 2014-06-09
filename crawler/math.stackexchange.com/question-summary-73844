@@ -1,0 +1,15 @@
+(n+1)(n-2)a_n=n(n^2-n-1)a_{n-1}-(n-1)^3a_{n-2}
+a_2=a_3=1
+b_n=(n+1)a_n
+(n-2)b_n=(n^2-n-1)b_{n-1}-(n-1)^2b_{n-2}
+n-1
+\begin{align*} \left(1-\frac{1}{n-1}\right)b_n&=\left(n-\frac{1}{n-1}\right)b_{n-1}-(n-1)b_{n-2}\\ &=\left(n-1+1-\frac{1}{n-1}\right)b_{n-1}-(n-1)b_{n-2}\\ &=(n-1)(b_{n-1}-b_{n-2})+b_{n-1}\left(1-\frac{1}{n-1}\right) \end{align*}
+\left(1-\frac{1}{n-1}\right)(b_n-b_{n-1})=(n-1)(b_{n-1}-b_{n-2})
+p_n=b_n-b_{n-1}
+b_2=3,b_3=4
+p_3=1
+\begin{align*} &\left(1-\frac{1}{n-1}\right)p_n =(n-1)p_{n-1} \implies\\ &p_n=\frac{(n-1)^2}{n-2}p_{n-1}\implies\\ &p_n=\prod\limits_{k=4}^n{\frac{(k-1)^2}{k-2}}=\frac{n-1}{2}\frac{(n-1)!}{2} \implies\\ &b_n-b_{n-1}=\frac{n!-(n-1)!}{4} \implies\\ &b_n=4+\sum\limits_{k=4}^n{\frac{k!-(k-1)!}{4}}=4+\frac{1}{4}(n!-6)=\frac{10+n!}{4} \implies\\ &a_n=\frac{10+n!}{4(n+1)} \end{align*}
+b_n=(n+1)a_n
+b_{n-1}=na_{n-1}
+b_{n-2}=(n-1)a_{n-2}
+(n-2)b_n=(n^2-n-1)b_{n-1}-(n-1)^2b_{n-2}

@@ -1,0 +1,58 @@
+{\mathbb{R}^ + } \times \mathbb{R}
+\left\{ \begin{gathered}   {u_t} - k{u_{xx}} + b{u_x} + cu = 0 \\   u\left( {0,x} \right) = g\left( x \right) \\  \end{gathered}  \right.
+v\left( {t,x} \right) = u\left( {t,x} \right){e^{ct}}
+\left\{ \begin{gathered}   {v_t} - k{v_{xx}} + b{v_x} = \left( {{u_t} + cu - k{u_{xx}} + b{u_x}} \right){e^{ct}} = 0 \\   v\left( {0,x} \right) = g\left( x \right) \\  \end{gathered}  \right.
+b{v_x}
+k,b,c
+v\left( {t,x} \right) = u\left( {t,x} \right){e^{\left( {c + \frac{{{b^2}}} {{4k}}} \right)t - \frac{b} {{2k}}x}}
+\left\{ \begin{gathered}   {v_t} - k{v_{xx}} = 0 \\   v\left( {0,x} \right) = g\left( x \right){e^{ - \frac{b} {{2k}}x}}\\  \end{gathered}  \right.
+v\left( {t,x} \right) = \frac{1} {{\sqrt {4\pi kt} }}\int_{ - \infty }^{ + \infty } {{e^{ - \frac{{{{\left( {x - y} \right)}^2}}} {{4kt}}}}g\left( y \right){e^{ - \frac{b} {{2k}}y}}} dy
+u\left( {t,x} \right) = {e^{ - \left( {c + \frac{{{b^2}}} {{4k}}} \right)t + \frac{b} {{2k}}x}}\frac{1} {{\sqrt {4\pi kt} }}\int_{ - \infty }^{ + \infty } {{e^{ - \frac{{{{\left( {x - y} \right)}^2}}} {{4kt}}}}g\left( y \right){e^{ - \frac{b} {{2k}}y}}} dy
+1
+k=0
+b=0
+u_t+cu=0
+\dfrac{du}{dt}=-cu
+\dfrac{du}{u}=-c~dt
+\int\dfrac{du}{u}=\int-c~dt
+\ln u(t,x)=-ct+f(x)
+u(t,x)=F(x)e^{-ct}
+u(0,x)=g(x)
+F(x)=g(x)
+\therefore u(t,x)=g(x)e^{-ct}
+2
+k=0
+b\neq0
+u_t+bu_x+cu=0
+u_t+bu_x=-cu
+\dfrac{dt}{ds}=1
+t(0)=0
+t=s
+\dfrac{dx}{ds}=b
+x(0)=x_0
+x=bs+x_0=bt+x_0
+\dfrac{du}{ds}=-cu
+u(0)=f(x_0)
+u(t,x)=f(x_0)e^{-cs}=f(x-bt)e^{-ct}
+u(0,x)=g(x)
+f(x)=g(x)
+\therefore u(t,x)=g(x-bt)e^{-ct}
+3
+k\neq0
+u_t-ku_{xx}+bu_x+cu=0
+u(t,x)=T(t)X(x)
+T'(t)X(x)-kT(t)X''(x)+bT(t)X'(x)+cT(t)X(x)=0
+T'(t)X(x)=(kX''(x)-bX'(x)-cX(x))T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{kX''(x)-bX'(x)-cX(x)}{X(x)}=-\dfrac{4k^2s^2+b^2+4kc}{4k}
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\dfrac{4k^2s^2+b^2+4kc}{4k}\\kX''(x)-bX'(x)+\dfrac{4k^2s^2+b^2}{4k}X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\frac{t(4k^2s^2+b^2+4kc)}{4k}}\\X(x)=\begin{cases}c_1(s)e^{\frac{bx}{2k}}\sin xs+c_2(s)e^{\frac{bx}{2k}}\cos xs&\text{when}~s\neq0\\c_1xe^{\frac{bx}{2k}}+c_2e^{\frac{bx}{2k}}&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(t,x)=\int_0^\infty C_1(s)e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\sin xs~ds+\int_0^\infty C_2(s)e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\cos xs~ds
+u(0,x)=g(x)
+\int_0^\infty C_1(s)e^{\frac{bx}{2k}}\sin xs~ds+\int_0^\infty C_2(s)e^{\frac{bx}{2k}}\cos xs~ds=g(x)
+e^{\frac{bx}{2k}}\int_0^\infty C_1(s)\sin xs~ds=g(x)-e^{\frac{bx}{2k}}\int_0^\infty C_2(s)\cos xs~ds
+e^{\frac{bx}{2k}}\int_0^\infty C_2(s)\cos xs~ds=g(x)-e^{\frac{bx}{2k}}\int_0^\infty C_1(s)\sin xs~ds
+\mathcal{F}_{s,s\to x}\{C_1(s)\}=g(x)e^{-\frac{bx}{2k}}-\mathcal{F}_{c,s\to x}\{C_2(s)\}
+\mathcal{F}_{c,s\to x}\{C_2(s)\}=g(x)e^{-\frac{bx}{2k}}-\mathcal{F}_{s,s\to x}\{C_1(s)\}
+C_1(s)=\mathcal{F}^{-1}_{s,x\to s}\left\{g(x)e^{-\frac{bx}{2k}}\right\}-\mathcal{F}^{-1}_{s,x\to s}\{\mathcal{F}_{c,s\to x}\{C_2(s)\}\}
+C_2(s)=\mathcal{F}^{-1}_{c,x\to s}\left\{g(x)e^{-\frac{bx}{2k}}\right\}-\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}
+\therefore u(t,x)=\int_0^\infty \mathcal{F}^{-1}_{s,x\to s}\left\{g(x)e^{-\frac{bx}{2k}}\right\}e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\sin xs~ds-\int_0^\infty\mathcal{F}^{-1}_{s,x\to s}\{\mathcal{F}_{c,s\to x}\{C_2(s)\}\}e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\sin xs~ds+\int_0^\infty C_2(s)e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\cos xs~ds~\text{or}~\int_0^\infty C_1(s)e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\sin xs~ds+\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\left\{g(x)e^{-\frac{bx}{2k}}\right\}e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\cos xs~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}e^{\frac{2bx-t(4k^2s^2+b^2+4kc)}{4k}}\cos xs~ds

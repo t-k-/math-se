@@ -1,0 +1,29 @@
+h:[0,\infty) \to \mathbb{R}
+[0,t]
+t \geq 0
+H_t = \int_0^t h(s)\;dB_s
+(B_t)_{t\geq0}
+\operatorname{Cov}(H_s,H_t)=\int_0^sh^2(u)\;du,\text{ for }s<t
+\mathcal{N}
+H_t \sim \mathcal{N(0,\int_0^th^2(u)\;du)}
+\int_s^t h(u)\;dB_u
+\mathcal{F}_s
+\mathcal{F}_{t\geq 0}
+B_t
+\int_s^t h(u)\;dB_u
+\int_0^{\infty}\displaystyle\sum_{k=1}^{N_k}a_k\mathbf{1}_{(s_k,t_k]}dB_u
+\displaystyle \sup_{t\geq 0}||\cdot||_2
+a_k's
+s_1 > s
+\mathcal{F}_s
+\displaystyle \sup_{t\geq 0}||\cdot||_2
+ X_tY_t = X_0Y_0 + \int_0^t X_s dY_s + \int_0^t Y_s dX_s + [X,Y]_s 
+s < t
+X_t = \int_0^t h(u) dB_u = H_t
+Y_t = \int_0^t 1_{[0,s]}(u) h(u)  dB_u = H_s
+dX_u = h(u) dB_u
+dY_u = h(u)1_{[0,s]}(u) dB_u
+ H_tH_s = 0  +  \int_0^t \left[\int_0^u h(v) dB_u \right] h(u)1_{[0,s]}(u) dB_u + \int_0^t \ldots dB_v + \int_0^t h(u)^2 1_{[0,s]}(u) du 
+h
+E(H_t) = 0
+ E(H_tH_s) - E(H_t)E(H_s) = E(\int_0^t h(u)^2 1_{[0,s]}(u) du) - 0 = E(\int_0^s h(u)^2 du)

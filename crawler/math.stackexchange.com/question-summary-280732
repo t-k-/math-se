@@ -1,0 +1,9 @@
+\int_{0}^{t_c} \frac{\sin(\lambda_c (t - \tau))}{\pi (t - \tau)} d \tau
+u = \lambda_c(t - \tau)
+\frac{1}{\pi} \int_{\lambda_c(t - t_c)}^{\lambda_c t} \frac{\sin(u)}{u} du
+\tau = 0
+u
+u = \lambda_c (t - \tau) = \lambda_c (t-0) = \lambda_c t
+-1
+du=-\lambda_c \,d\tau
+ \int_{0}^{t_c} \frac{\sin(\lambda_c (t - \tau))}{\pi (t - \tau)} d \tau \ \  \buildrel{u=\lambda_c(t-\tau)}\over={1\over\pi}\ \  \int_{u=\lambda_c\tau}^{u=\lambda_c(t-t_c)}{\sin (u)\over u/\lambda_c}\cdot\underbrace{{-du\over\lambda_c}}_{d\tau} ={1\over\pi}\int_{\lambda_c(t-t_c)}^{\lambda_ct}{\sin(u)\over u}\,du  

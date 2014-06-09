@@ -1,0 +1,13 @@
+z_1=f_1(x,y), (x,y) \in \mathbb{R}
+z_2=f_2(x,y), (x,y) \in \mathbb{R}
+\overrightarrow{F}=M \hat{i}+N \hat{j}+P \hat{k}
+\hat{n}=\hat{i} \cos{a}+\hat{j} \cos{b} +\hat{k} \cos{c}
+\int \int_S{\overrightarrow{F} \hat{n}} d \sigma=\int \int_S{(M \cos{a}+N \cos{b}+P \cos{c})}d \sigma=\int \int \int_D{(\frac{\partial{M}}{\partial{x}}+\frac{\partial{N}}{\partial{y}}+\frac{\partial{P}}{\partial{z}})dxdydz}
+\int \int_S{M \cos{a}}d \sigma=\int \int \int_D{\frac{\partial{M}}{\partial{x}}}dxdydz
+\int \int_S{N \cos{b}}d \sigma=\int \int \int_D{\frac{\partial{N}}{\partial{y}}}dxdydz
+\int \int_S{P \cos{c}}d \sigma=\int \int \int_D{\frac{\partial{P}}{\partial{z}}}dxdydz
+\int \int_S{P \cos{c}}d \sigma=\int \int_{S1}{P \cos{c} d} \sigma+\int \int_{S2}{P \cos{c}}d \sigma
+\hat{k} \cdot \hat{n_2}=\cos{c_2}>0
+\cos{c_2}d \sigma=dxdy
+\cos{c_1}<0
+\cos{c_1}d \sigma =-dxdy

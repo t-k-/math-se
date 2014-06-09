@@ -1,0 +1,47 @@
+\vert\sin x\vert
+(-\pi, \pi)
+ \sum_{n\: =\: 1}^{\infty}\:\ \frac{1}{4n^2-1}
+ \sum_{n\: =\: 1}^{\infty}\:\ \frac{(-1)^n}{4n^2-1}
+\phi (X) = 1/2 A_0 +  \sum_{n\: =\: 1}^{\infty}\:\ A_n \cos\left(\frac{n\pi x}{l}\right)
+A_m = \frac{2}{l} \int_{0}^{l} \phi (X) \cos\left(\frac{m\pi x}{l}\right) dx 
+A_0 = \frac{4}{l}
+|\sin(x)|
+2\sin(x)\cos(y)=\sin(x+y)+\sin(x-y)
+ \int_{-\pi}^\pi|\sin(x)|\cos(kx)\;\mathrm{d}x=2\int_0^\pi\sin(x)\cos(kx)\;\mathrm{d}x 
+f(x) = |\sin(x)| \quad \Rightarrow\quad f(x) = \left\{    \begin{array}{l l}     -\sin(x) & \quad \forall x \in [- \pi, 0\space]\\    \sin(x) & \quad \forall x \in [\space 0,\pi\space ]\\   \end{array} \right.
+a_n= \frac{1}{\pi}\int_{-\pi}^\pi f(x) \cos(nx)\, dx = \frac{1}{\pi} \left[\int_{-\pi}^0 -\sin (x) \cos(nx)\, dx + \int_{0}^\pi \sin(x) \cos(nx)\, dx\right], \quad n \ge 0
+b_n= \frac{1}{\pi}\int_{-\pi}^\pi f(x) \sin(nx)\, dx = \frac{1}{\pi} \left[\int_{-\pi}^0 -\sin (x) \sin(nx)\, dx + \int_{0}^\pi \sin(x) \sin(nx)\, dx\right], \quad n \ge 1
+a_n
+b_n
+n
+((-1)^n+1) = 0
+n
+((-1)^n+1) = 2
+\cfrac {a_0}{2} + \sum^{\infty}_{n=1}\left [ a_n \cos(nx) + b_n \sin (nx) \right ]
+= \cfrac {2}{\pi}\left ( 1 + \sum^{\infty}_{n=1} \cfrac{(\cos(\pi n)+1)}{(1-n^2)}\cos(nx)\right )
+= \cfrac {2}{\pi}\left ( 1 + \sum^{\infty}_{n=1} \cfrac{((-1)^n+1)}{(1-n^2)}\cos(nx)\right )
+= \cfrac {2}{\pi}\left ( 1 + \sum^{\infty}_{n=1} \cfrac{2}{(1-4n^2)}\cos(2nx)\right )
+x = \cfrac \pi 2
+\cos (2nx) = cos(n \pi) = (-1)^n
+f \left (\cfrac \pi 2 \right) = \left |\sin \left (\cfrac \pi 2\right )\right | = \cfrac {2}{\pi}\left ( 1 + 2\sum^{\infty}_{n=1} \cfrac{(-1)^n}{(1-4n^2)}\right ) =1
+\sum^{\infty}_{n=1} \cfrac{(-1)^n}{(1-4n^2)} = \cfrac {1}{4}(\pi -2)
+\boxed {\displaystyle\sum^{\infty}_{n=1} \cfrac{(-1)^n}{(4n^2 -1)}= -\sum^{\infty}_{n=1} \cfrac{(-1)^n}{(1-4n^2)} = \cfrac {1}{4}(2-\pi)}
+f(x)
+2\pi
+f(x) \sim \sum a_ne^{inx}
+\sum a_n e^{inx}
+a_n
+a_n = \frac{1}{2\pi}\int_{-\pi}^\pi f(x)e^{-inx} dx
+\frac{1}{2\pi} \left(\int_{-\pi}^0 -\sin x e^{-inx} dx + \int_0^\pi \sin x e^{-inx} dx\right).
+\sin x = \frac{e^{inx} - e^{-inx}}{2i}
+a_n
+f(x)
+f(x) \sim \sum_{n \in \Bbb{Z}} \frac{(1 + (-1)^n)e^{inx}}{\pi (1- n^2)} 
+f(x) = \sum_{n \in \Bbb{Z}} \frac{(1 + (-1)^n)e^{inx}}{\pi (1- n^2)}. 
+n
+f(x) = \sum_{n \in \Bbb{Z}}  \frac{2e^{2inx}}{\pi (1- (2n)^2)}.
+x = \pi
+f(\pi) =0.
+\begin{eqnarray*} 0 = \sum_{n \in \Bbb{Z}}  \frac{2e^{2in\pi}}{\pi (1- (2n)^2)} &=& \sum_{n\in\Bbb{Z}} \frac{2}{\pi (1- (2n)^2)} \\ &=&\frac{2}{\pi} + \sum_{n\in\Bbb{Z}, n \geq 1}\frac{4}{\pi (1- (2n)^2)} \\ \implies \sum_{n\in\Bbb{Z}, n \geq 1}\frac{1}{4n^2 - 1} &=& \frac{2}{\pi}\cdot \frac{\pi}{4}\\ &=& \frac{1}{2}. \end{eqnarray*}
+x = \pi
+x = \pi/2

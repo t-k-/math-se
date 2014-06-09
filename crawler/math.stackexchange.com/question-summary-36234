@@ -1,0 +1,63 @@
+\log{(p(n, k))}
+p(n, k) = \sum_{\substack{x_1 + x_2 + \cdots + x_k = n \\\ x_i \in \mathbb{N}}} x_1^{x_1} x_2^{x_2} \cdots x_k^{x_k},
+A
+k
+a_1, \cdots, a_k
+k
+p_k
+x = \langle a_{i_1}, \cdots, a_{i_n} \rangle
+s_i
+a_i
+x
+x
+A
+x
+\log(\frac{1}{p^A(x)})
+A
+p_1 = \frac{s_1}{n}, \cdots, p_k = \frac{s_k}{n}
+ p^A(x) = \prod_{i = 1}^n p_{k_i} = \prod_{i = 1}^k p_i^{s_i}, 
+A
+x
+A
+x
+A_x
+u(x) = p^{A_x}(x)
+k^n
+1
+A_x
+p(x)
+ p(x) = \frac{u(x)}{\sum_{y \in k^n} u(y)} = \frac{\prod_{i = 1}^k s_i^{s_i}}{\sum_{t_1 + \cdots + t_k = n} \prod_{i = 1}^k t_i^{t_i}}. 
+q
+A
+p_1, \cdots, p_k
+p_1 + \cdots + p_k = 1
+x
+A_{p_1, \cdots, p_k}
+q(A_{p_1, \cdots, p_k})
+x
+q
+x
+s_i
+a_i
+p, q
+n^{\underline{n}} \approx \sqrt{2\pi n}(\frac{n}{e})^n
+q' = q\;e^{-n} (2\pi)^{k/2}
+ b(x) = \int_{p_1 + \cdots + p_n = 1, p_i \geq 0} p^{A_{p_1, \cdots, p_k}}(x) q(A_{p_1, \cdots, p_k}). 
+ b(x) = \frac{\int_{p_1 + \cdots + p_k = 1, p_i \geq 0} \prod_{i = 1}^k p_i^{s_i}}{\mathit{Vol}(\Delta_k)} = \frac{\Gamma(k) \prod_{i = 1}^k\Gamma(s_i + 1)}{\Gamma(\sum_{i = 1}^k (s_i + 1))}. 
+p(x) = p \prod_{i = 1}^k s_i^{s_i}
+q(x) = q \prod_{i = 1}^k s_i^{\underline{s_i}}
+q(x) \approx q' \prod_{i=1}^k s_i^{s_i+\frac{1}{2}}
+p(x)
+b(x)
+\log(x^x)
+n^n
+k
+k \mid n
+(n/k)^n
+\binom{n+k-1}{k-1}
+(n/k)^{n+k}
+k
+ kn^n + \left(\binom{n+k-1}{k-1} - k\right)(n/k)^n \leq S \leq \binom{n+k-1}{k-1} n^n \approx (n/k)^k n^n. 
+k
+ n\log n + \log k \leq \log S \stackrel{<}{\sim} (n + k) \log n. 
+ 1 \leq \frac{\log S}{n \log n} \leq 2. 

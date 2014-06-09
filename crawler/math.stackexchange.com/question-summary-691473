@@ -1,0 +1,12 @@
+(B_t)_{t\geq 0}
+(B_t^{\tau})_{t\geq \tau}
+B_t^{\tau}= B_t-B_{t-\tau}
+\tau
+\Pi=\{t_0=\tau, t_1, \cdots, t_n=t\}
+[\tau,t]
+t\geq \tau
+\|\Pi\|=\max_{1\leq i\leq n}(t_i-t_{i-1})
+\langle B, {B}^{\tau}\rangle_t = \lim_{\|\Pi\| \rightarrow 0} \sum_{i=1}^n (B_{t_{i}}- B_{t_{i-1}})({B}_{t_{i}}^{\tau}- {B}^{\tau}_{t_{i-1}})
+[\tau,t]
+t-\tau
+\langle B, {B}^{\tau}\rangle_t = \lim_{\|\Pi\| \rightarrow 0} \sum_{i=1}^n (B_{t_{i}} -B_{t_{i-1}})^2 - \lim_{\|\Pi\| \rightarrow 0} \sum_{i=1}^n (B_{t_{i}} -B_{t_{i-1}}) (B_{t_{i}-\tau}- B_{t_{i-1}-\tau})\\ = (t-\tau) - \lim_{\|\Pi\| \rightarrow 0} \sum_{i=1}^n (B_{t_{i}} -B_{t_{i-1}}) (B_{t_{i}-\tau}- B_{t_{i-1}-\tau}) 

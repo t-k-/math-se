@@ -1,0 +1,29 @@
+ \int^{1}_{-1} (e^x+x)^2 \ dx 
+ \int^{1}_{-1} e^{2x} + 2xe^x+x^2 \ dx 
+ \int^{1}_{-1} (e^x+x) (e^x+x) \ dx 
+\displaystyle \int e^{2x} \ dx
+\displaystyle \int 2xe^x \ dx
+\displaystyle \int x^2 \ dx
+\int(e^x+x)^2 \ dx
+=\int e^{2x}+2xe^x+x^2 \ dx
+=\int e^{2x} \ dx + \int 2xe^x \ dx + \int x^2 \ dx
+\int e^{2x} \ dx
+u = 2x
+du = 2 \ dx
+\int e^{2x} \ dx
+=\int \frac{e^u}{2} \ du
+=\frac{1}{2}\int e^u \ du
+=\frac{1}{2}e^u + C
+=\frac{e^u}{2} + C
+=\frac{e^{2x}}{2} + C
+\int 2xe^x \ dx
+u = 2x
+dv = e^x
+v = e^x
+du = 2
+\int 2xe^x \ dx
+=2xe^x - \int 2e^x \ dx
+=2xe^x - 2\int e^x \ dx
+=2xe^x - 2e^x + C
+\int x^2 \ dx = \frac{x^3}{3} + C
+\int (e^x + x)^2 \ dx = \frac{e^{2x}}{2} + 2xe^x - 2e^x + \frac{x^3}{3} + C

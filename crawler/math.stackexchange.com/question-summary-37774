@@ -1,0 +1,14 @@
+d(n)
+n
+\gamma
+G(x) = \sum_{n \le x} g(x)
+\sum_{n \le x} \frac{d(n)}{n} = \frac{1}{2}\log(x)^2 + 2\gamma \log(x) + O(1)
+\sum_{n \le x}(f * g)(n) = \sum_{n \le x} f(n) G\left(\frac{x}{n}\right)
+f(x) = \log x / x
+x
+ \sum_{n \leq x} \frac{d(n)}{n} = \sum_{n \leq x} \frac{1}{n} \left( \log \left( \frac{x}{n} \right) + \gamma + O\left( \frac{n}{x}\right) \right).
+ \begin{eqnarray*} & = & \sum_{n \leq x} \left( \frac{1}{n}(\log x + \gamma) - \frac{\log n}{n} + O\left( \frac{1}{x}\right) \right) \\ & = & (\log x + \gamma)(\log x + \gamma + O(1/x)) + O(1) - \sum_{n \leq x} \frac{\log n}{n} \\ & = & \log^2 x + 2\gamma \log x + O(1) - \sum_{n \leq x} \frac{\log n}{n}. \end{eqnarray*}
+ \sum_{n \leq x} \frac{\log n}{n} = \int_{1}^{x} \frac{\log u}{u} \, du + O(1) = \frac{1}{2}\log^2 x + O(1), 
+f*g
+d(n)/n
+\sum_{n \le x} \frac{d(n)}{n} = \sum_{n \le x} \sum_{a \, b = n} \frac{1}{n} =  \sum_{a \, b \le x} \frac{1}{ab}

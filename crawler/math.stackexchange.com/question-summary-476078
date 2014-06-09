@@ -1,0 +1,9 @@
+|u| < 1
+ \log \left\lvert E_h(u) \right\rvert \leq \frac{1}{h+1} |u|^{h+1}+\frac{1}{h+2}|u|^{h+2}+\dots
+E_h(u)=(1-u)e^{u+\frac{1}{2}u^2+ \dots\frac{1}{h}u^h} 
+u
+h
+\neq 0
+\lvert u\rvert < 1
+\begin{align} \log E_h(u) &= \left(u + \frac12u^2 + \dotsb \frac{1}{h}u^h\right) + \log (1-u)\\ &= \sum_{k=1}^h \frac{u^k}{k} - \sum_{k=1}^\infty \frac{u^k}{k}\\ &= \sum_{k=h+1}^\infty \frac{u^k}{k}. \end{align}
+\log \lvert E_h(u)\rvert \leqslant \sum_{k=h+1}^\infty \frac{\lvert u\rvert^k}{k}.

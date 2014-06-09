@@ -1,0 +1,32 @@
+F = [y ; x^2y; y^2z]
+F
+D = \{1 \le z \le 2 - x^2 - y^2\}
+\nabla \cdot F = x^2 + y^2
+\int_{D} x^2 + y^2 = \int_{A} \int_1^{2-x^2-y^2} x^2 + y^2 dz = 
+\int_{A} (x^2 + y^2)(1 - x^2 - y^2) dxdy= \int_0^1\int_0^{2\pi} \rho ^3(1-\rho^2)) d\rho d\theta = \frac{\pi}{6}
+D
+r_{up} = [x ; y ; 2 - x^2 - y^2]
+r_{down} = [x ; y; 1]
+n_{up} = r_x \wedge r_y = [2x ; 2y ; 1]
+n_{down} = r_x \wedge r_y = [0; 0; -1]
+dxdy
+n
+\int_{D} F \cdot n_{up} = \int_{D} 2xy + 2x^2y^2 + y^2z = \frac{\pi}{8}
+\int_{A} F \cdot n_{down} = \int_{A} -y^2 = -\frac{\pi}{4}
+n_{down}
+D
+(0, 0, -1)
+G=ydy\wedge dz+x^2ydz\wedge dx+y^2z dx\wedge dy
+dG=({\rm div}\; F)dx\wedge dy\wedge dz=(x^2+y^2)dx\wedge dy\wedge dz
+S_1
+(r\cos t,r\sin t,1)
+0\leqslant r \leqslant 1
+0\leqslant t\leqslant 2\pi
+S_2
+(r\cos t,r\sin t ,2-r^2)
+dz=0
+\int\limits_{{S_1}} G  = \int\limits_0^{2\pi } {\int\limits_0^1 {{r^3}{{\sin }^2}tdrdt} }  = \frac{\pi }{4}
+\eqalign{   & dy = \sin tdr + r\cos tdt  \cr    & dx = \cos tdr -  r\sin tdt   \cr    & dz =  - 2rdr \cr} 
+dx\wedge dy=rdr\wedge dt\\ dy\wedge dz=2r^2\cos tdr\wedge dt\\dz\wedge dx=2r^2\sin tdr\wedge dt
+\eqalign{   & \int_0^1 {\int_0^{2\pi } {\left( {r\sin t\left( {2{r^2}\cos t} \right) + {r^3}{{\cos }^2}t\sin t\left( {2{r^2}\sin t} \right) + {r^2}{{\sin }^2}t\left( {2 - {r^2}} \right)r} \right)dtdr} }  =   \cr    & \int_0^1 {\int_0^{2\pi } {\left( {2{r^5}{{\cos }^2}t{{\sin }^2}t + {{\sin }^2}t\left( {2 - {r^2}} \right){r^3}} \right)dtdr} }  =   \cr    & \int_0^{2\pi } {\left( {\frac{2}{6}{{\cos }^2}t{{\sin }^2}t + {{\sin }^2}t\frac{1}{3}} \right)dt}  = \frac{2}{6}\frac{\pi }{4} + \frac{\pi }{3} = \frac{\pi }{{12}} + \frac{\pi }{3} =\frac{5\pi}{12}\cr} 
+\frac{5\pi}{12}-\frac{\pi}4=\frac{5\pi}{12}-\frac{3\pi}{12}=\frac{2\pi}{12}=\frac \pi 6

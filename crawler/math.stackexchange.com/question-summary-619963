@@ -1,0 +1,23 @@
+x
+f(x):=\lim_{\epsilon\to0}\int_\epsilon^{\infty} \dfrac{e^{xt}}{t^t} \, dt 
+f(x)
+x
++\infty
+\lim_{x\to+\infty} \dfrac{\ln(f(x))}{P(x)} 
+\lim_{x\to+\infty} \dfrac{f(x)}{P(x)} 
+P(x)
+f(z)
+f
+\frac{d f(x)}{d x^k} = \lim_{\epsilon\to0}\int_\epsilon^\infty \frac{e^{xt}}{t^{t-k}}\,dt.
+f(x)
+ f(x) = \int_0^\infty \exp\left\{x t - t\log t\right\}\,dt. 
+g(t) = xt - t\log t
+t = e^{x-1}
+ t = e^{x-1}(1+s), 
+ f(x) = \exp\left\{e^{x-1} + x - 1\right\} \int_{-1}^{\infty} \exp\left\{e^{x-1} \Bigl[s - s\log(1+s) - \log(1+s)\Bigr]\right\}\,ds. 
+ s - s\log(1+s) - \log(1+s) \sim -\frac{1}{2}s^2, 
+ \begin{align} &\int_{-1}^{\infty} \exp\left\{e^{x-1} \Bigl[s - s\log(1+s) - \log(1+s)\Bigr]\right\}\,ds \\ &\qquad \sim \int_{-\infty}^{\infty} \exp\left\{-\frac{1}{2}e^{x-1}s^2\right\}\,ds \\ &\qquad = \sqrt{2\pi} e^{-(x-1)/2} \end{align} 
+x \to \infty
+ f(x) \sim \sqrt{2\pi} \exp\left\{e^{x-1} + \frac{x-1}{2}\right\} 
+ f(x) = \sqrt{2\pi} \exp\left\{e^{x-1} + \frac{x-1}{2}\right\} \left[1 + \frac{5}{24}e^{1-x} + O\left(e^{-2x}\right)\right] 
+x \to \infty

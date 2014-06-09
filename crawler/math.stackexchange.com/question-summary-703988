@@ -1,0 +1,17 @@
+p_N
+\displaystyle\lim_{x\rightarrow\infty}[e^x-(a_0+a_1x+a_2x^2+\dots+a_Nx^N)]=\infty
+\displaystyle\lim_{x\rightarrow\infty}\left[\frac{e^x}{a_0+ax+\dots+a_Nx^N}\right]=\infty
+\dfrac{\lim\limits_{x\rightarrow\infty} e^x}{\lim\limits_{x\rightarrow\infty}(a_0+ax+\dots+a_Nx^N)}=\infty
+\displaystyle\lim_{x\rightarrow\infty}[e^x-(a_0+a_1x+a_2x^2+\dots+a_Nx^N)]\ne\infty
+K
+-\infty
+e^x
+[e^x-(a_0+a_1x+a_2x^2+\dots+a_Nx^N)]\le K
+x \ge 0
+e^x-\left(a_nx^n+a_{n-1}x^{n-1}+\ldots+a_1x+a_0)\right)=x^n\left(\frac{e^x}{x^n}-a_n-\frac{a_{n-1}}x-\ldots-\frac{a_0}{x^n}\right)
+\;\frac{e^x}{x^n}\xrightarrow[x\to\infty]{}\infty\;
+x \to \infty
+\infty
+e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x^1+\frac{1}{2!}x^2+\frac{1}{3!}x^3+\ldots+\frac{1}{N!}x^N+\ldots
+e^x-p_N(x)=x^N\frac{e^x-p_N(x)}{x^N}=x^N\frac{\sum_{n=0}^{N}\left(\frac{1}{n!}-a_n\right)x^n+\sum_{n=N+1}^{\infty}\left(\frac{1}{n!}x^{n-N}\right)}{x^N}=\\=x^N\cdot\frac{\sum_{n=0}^{N}\left(\frac{1}{n!}-a_n\right)x^n}{x^N}+\sum_{n=N+1}^{\infty}\left(\frac{1}{n!}x^{n-N}\right)
+\infty \cdot \left(\frac{1}{N!}-a_N\right)=\infty

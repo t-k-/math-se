@@ -1,0 +1,32 @@
+\iint_S (x^2z+y^2z)\,dS
+S
+z=4+x+y
+x^2+y^2=4
+\iint_S f(x,y,z)\,dS = \iint_D f\left(\vec r\left(u, v\right)\right) \left\lVert\vec r_u \times \vec r_v \right\rVert \,dA
+ r^2 = 4 
+ r = 2 
+ z = 4 + 2cos(\theta)+2sin(\theta) 
+S
+z=4+x+y
+x^2+y^2=4
+S
+\vec r=\vec r(u,v)
+z=4+\rho\cos{\phi}+\rho\sin{\phi}=4+\rho(\cos{\phi}+\sin{\phi})
+\rho=2
+S
+\vec{r}(\rho,\phi)=\langle\rho\cos{\phi},\rho\sin{\phi},4+\rho(\cos{\phi}+\sin{\phi})\rangle,~~~0\leq\rho\leq2,0\leq\phi\leq2\pi.
+\vec{r}_\rho=\langle\cos{\phi},\sin{\phi},\cos{\phi}+\sin{\phi}\rangle
+\vec{r}_\phi=\langle-\rho\sin{\phi},\rho\cos{\phi},\rho(\cos{\phi}-\sin{\phi})\rangle
+\vec{r}_\rho\times\vec{r}_\phi=\langle-\rho,-\rho,\rho\rangle.
+\|\vec{r}_\rho\times\vec{r}_\phi\|=\sqrt{3}\rho
+f(x,y,z)=x^2z+y^2z=(x^2+y^2)z=\rho^2z.
+S
+z=4+\rho(\cos{\phi}+\sin{\phi})
+f(\vec{r}(\rho,\phi))=\rho^2(4+\rho(\cos{\phi}+\sin{\phi})).
+I=\iint_{S}f(\vec{r})\,dS=\iint_{D}f(\vec{r}(\rho,\phi))\|\vec{r}_\rho\times\vec{r}_\phi\|\,dA\\ =\sqrt{3}\int_{0}^{2\pi}\int_{0}^{2}\rho^3(4+\rho(\cos{\phi}+\sin{\phi}))\,d\rho\,d\phi
+\cos\phi+\sin\phi
+\phi
+2\pi
+I=\sqrt{3}\int_{0}^{2\pi}\int_{0}^{2}\rho^3(4+\rho(\cos{\phi}+\sin{\phi}))\,d\rho\,d\phi=\sqrt{3}\int_{0}^{2}\int_{0}^{2\pi}(4\rho^3+\rho^4(\cos{\phi}+\sin{\phi}))\,d\phi\,d\rho\\ =\sqrt{3}\int_{0}^{2}\int_{0}^{2\pi}4\rho^3\,d\phi\,d\rho\\ =2\sqrt{3}\pi\int_{0}^{2}4\rho^3\,d\rho\\ =2\sqrt{3}\pi(2^4)\\ =2^5\sqrt{3}\pi.
+{\bf x}(x,y)=(x,y,z)=(x,y,4+x+y),\ x^2+y^2\leq 4
+{\bf x}_x,\ {\bf x}_y

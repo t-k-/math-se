@@ -1,0 +1,10 @@
+f \colon [0,1] \to \mathbb{R}
+f(0) = 0
+f' \in L^p([0,1])
+p
+p
+f
+\Rightarrow
+f(x)=f(x)-f(0)=\int_{[0,x]}f^\prime(y)\;\mathrm{d}y
+ |x^{-\frac{1}{2}}f(x)|\le x^{-\frac{1}{2}}\cdot \int_{[0,x]}|1\cdot f^\prime(y)|\;\mathrm{d}y\le x^{-\frac{1}{2}}\cdot(\int_{[0,x]}1^2\;\mathrm{d}y)^{\frac{1}{2}}(\int_{[0,x]}|f^\prime(y)|^2\;\mathrm{d}y)^{\frac{1}{2}}\\=x^{-\frac{1}{2}}\cdot x^{\frac{1}{2}}(\int_{[0,x]}|f^\prime(y)|^2\;\mathrm{d}y)^{\frac{1}{2}}=\|f^\prime\chi_{[0,x]} \|_2 
+f^\prime \in L^2([0,1])

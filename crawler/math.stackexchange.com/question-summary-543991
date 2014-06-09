@@ -1,0 +1,37 @@
+p_3=e_1 p_2 - e_2 p_1 + 3e_3
+p_3-3e_3 =e_1 p_2 - e_2 p_1 = p_1(p_2-e_2)
+p_1= x+y+z = e_1
+p_2= x^2+y^2+z^2
+p_3= x^3+y^3+z^3
+e_2 = xy + xz + yz
+e_3 = xyz
+x, y, z
+\lambda
+(*1)
+(\lambda - x)(\lambda - y)(\lambda - z) = \lambda^3 - a\lambda^2+b\lambda-c\tag{*1}
+\begin{cases}a = x + y +z\\ b = xy + yz + xz \\ c = x y z\end{cases}
+x^3 + y^3 + z^3 - a(x^2+y^2+z^2) + b(x+y+z) - 3c = 0
+\begin{align}   x^3+y^3+z^3 - 3xyz = & x^3+y^3+z^3 - 3c\\ = & a(x^2+y^2+z^2) - b(x+y+z)\\ = & (x+y+z)(x^2+y^2+z^2 -xy - yz -zx) \end{align}
+x^3+y^3+z^3-3xyz=x^3+y^3+3x^2y+3xy^2+z^3-3xyz-3x^2y-3xy^2=(x+y)^3+z^3-3xy(x+y+z)=(x+y+z)((x+y)^2+z^2-(x+y)z)-3xy(x+y+z)=(x+y+z)(x^2+2xy+y^2+z^2-xy-xz-3xy)=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)
+\mathbb{Q}[x,y,z]
+\mathbb{Q}[x,y][z]
+z
+\mathbb{Q}[x,y]
+p(z)=z^3-3xy \cdot z +x^3+y^3
+1
+z-u(x,y)
+u(x,y)
+p(z)
+x^3+y^3
+(x+y)(x^2-xy+y^2)
+(x+y), -(x+y), (x^2-xy+y^2), -(x^2-xy+y^2)
+u(x,y)
+p(-x-y)=0
+z-(-x-y)
+         \begin{vmatrix}         x & y & z \\         z & x & y \\         y & z & x \\         \end{vmatrix}=x^3+y^3+z^3-3xyz 
+         \begin{vmatrix}         x+y+z & x+y+z & x+y+z \\         z & x & y \\         y & z & x \\         \end{vmatrix}=(x+y+z)\begin{vmatrix}         1 & 1 & 1 \\         z & x & y \\         y & z & x \\         \end{vmatrix}=(x+y+z)(x^2+y^2+z^2-xy-xz-yz) 
+\underbrace{x^3+y^3}+z^3-3xyz = \underbrace{(x+y)^3-3xy(x+y)}+z^3-3xyz
+=\underbrace{(x+y)^3+z^3}-\underbrace{3xy(x+y)-3xyz} 
+=\underbrace{\{(x+y)+z\}}\{(x+y)^2-(x+y)z+z^2\}-3xy\underbrace{\{(x+y)+z\}} \left(\text{ using } a^3+b^3=(a+b)(a^2-ab+b^2)\text{ for the first two terms }\right) =(x+y+z)\{(x+y)^2-(x+y)z+z^2-3xy\}
+\displaystyle (x+y)^2-(x+y)z+z^2-3xy=x^2+y^2+z^2-xy-yz-zx
+x+y+z

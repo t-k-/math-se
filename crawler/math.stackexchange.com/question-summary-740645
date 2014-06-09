@@ -1,0 +1,21 @@
+X_i\sim Poisson(\lambda p_i), N=\sum^{k}_{i=1}X_i
+\xi_i=\lambda p_i
+x_i
+p(x_i)=\frac{\xi_i^{x_i}e^{-\xi_i}}{x_i!}
+\xi_i
+\frac{dp(x_i)}{d\xi_i}=\frac{x_i\xi_i^{x_1-1}e^{-\xi_i}-\xi_i^{x_i}e^{-\xi_i}}{x_1!}
+\xi_i
+\xi_{i,MLE}=\hat{\lambda}_{MLE}\hat{p}_{i,MLE}
+\xi_i
+\frac{x_i\xi^{x_1-1}_{i,MLE}e^{-\xi_{i,MLE}}-\xi^{x_i}_{MLE}e^{-\xi_{i,MLE}}}{x_1!}=0\Rightarrow(x_i-\xi_{i,MLE})=0\Rightarrow\xi_{i,MLE}=x_i
+\hat{\lambda}_{MLE}\hat{p}_{i,MLE}=\xi_{i,MLE}=x_i\Rightarrow \hat{p}_{i,MLE}=\frac{x_i}{\hat{\lambda}_{MLE}}
+\sum_{i=1}^kp_i=1
+\sum_{i=1}^k\hat{p}_{i,MLE}=1
+\sum_{i=1}^k\frac{x_i}{\hat{\lambda}_{MLE}}=1\Rightarrow \hat{\lambda}_{MLE}=\sum_{i=1}^kx_i
+\hat{\lambda}_{MLE}
+x_i
+p_i
+\hat{p}_{MLE}=[\hat{p}_{1,MLE},\hat{p}_{2,MLE},...,\hat{p}_{k,MLE}]
+x=[x_1,x_2,...,x_k]
+\hat{p}_{i,MLE}=\frac{x_i}{\sum_{i=1}^kx_i}
+\hat{p}_{MLE}=\frac{x}{\sum_{i=1}^kx_i}

@@ -1,0 +1,6 @@
+\begin{align} p_{ij}(k, k+n) =& \Pr\left\{X_{k+n}=j\mid X_k=i\right\}\\ =& \sum_{r=1}^R \Pr\left\{X_{k+n}=j\mid X_u=r\color{red}, X_k=i\right\}\Pr\left\{X_u=r\mid X_k=i\right\} \end{align}
+X_u
+X_k
+X_u
+\begin{align} \Pr\left[X_{k+n}=j\mid X_k=i\right] =& \frac{\Pr[X_{k+n}=j, X_k=i]}{\Pr[X_k=i]}\\ =& \frac{\sum_r\Pr[X_{k+n}=j, X_k=i, X_u=r]}{\Pr[X_k=i]}\\ =& \sum_r\frac{\Pr[X_{k+n}=j\mid X_k=i, X_u=r]\Pr[X_k=i, X_u=r]}{\Pr[X_k=i]}\\ =& \sum_r\Pr[X_{k+n}=j\mid X_k=i, X_u=r]\Pr[X_u=r\mid X_k=i] \end{align}
+X_u

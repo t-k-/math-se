@@ -1,0 +1,11 @@
+ \int \frac{x^4}{x^2-16}\ dx 
+ \frac{x^4}{x^2-16} = x^2+16 + \frac{256}{x^2-16} 
+ \int \frac{x^4}{x^2-16}\ dx 
+ \int x^2\ dx + \int 16\ dx +\ 256\int \frac{1}{x^2-16}\ dx
+ \frac{x^3}{3} + 16x + 256\  ln\ |x^2-16| + C 
+ \frac{x^3}{3} + 16x + 32\ \ln\ |x-4| - 32\ \ln\ |x+4| + C 
+\int\frac{1}{x^2-16}dx=\int\frac{1}{(x-4)(x+4)}dx=\int\frac{1}{8}[\frac{1}{x-4}-\frac{1}{x+4}]dx
+=\frac{1}{8}[ln(x-4)-ln(x+4)]
+\int\frac{x^4}{x^2-16}=\frac{x^3}{3} + 16x + 256.\frac{1}{8}[ln(x-4)-ln(x+4)]+C
+=\frac{x^3}{3} + 16x +32ln(x-4)-32ln(x+4)+C
+\frac{x^4}{x^2-16} = x^2 +16-\frac{32}{x+4}+\frac{32}{x-4}

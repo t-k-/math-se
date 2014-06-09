@@ -1,0 +1,18 @@
+y'' +2y' +2y = \delta(t - \pi)
+y(0) =1,  y'(0) =0
+(s^2Y(s) - s) + 2(sY(s) -2) +2Y(s) = e^{-\pi s}
+Y(s)
+Y(s) = \frac{e^{-\pi s} +s + 2}{s^2 + 2s +2}
+(e^{-\pi} + s +2) \dot\ e^{-t}sint
+y = e^{-t}cost + e^{-t}sint + u_\pi(t)e^{-(t-\pi )}sin(t-\pi )
+\hat{y}
+\hat{y}(s) = \frac{e^{-\pi s}+(s+1)+1}{(s+1)^2+1} = \frac{e^{-\pi s}}{(s+1)^2+1} + \frac{(s+1)}{(s+1)^2+1} + \frac{1}{(s+1)^2+1}
+t \geq 0
+x_1(t) = e^{-t} \cos t
+\hat{x}_1(s) = \frac{(s+1)}{(s+1)^2+1}
+x_2(t) = e^{-t} \sin t
+\hat{x}_2(s) = \frac{1}{(s+1)^2+1}
+x_3(t) = x_2(t-\pi)u(t-\pi)
+\hat{x}_3(s) = \frac{e^{-\pi s}}{(s+1)^2+1}
+y(t) = x_1(t)+x_2(t)+x_3(t)
+y(t) = e^{-t} \cos t + e^{-t} \sin t + e^{-(t-\pi)} \sin (t-\pi) u(t-\pi)

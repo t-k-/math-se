@@ -1,0 +1,12 @@
+t_1,\ldots,t_n
+n
+[l_i,u_i]
+t_i \succ t_j
+t_i
+t_j
+\Pr(t_i \succ t_j) = \Pr(t_i\succ t_j \succ t_k \succ t_m) + \Pr(t_i \succ t_j \succ t_m \succ t_k)
+ \left \{ \begin{array}{l} t_1 = [1, 3] \\ t_2 = [2, 4] \\ t_3 = [5, 9] \\ t_4 = [7, 12] \end{array} \right . 
+ \Pr(t_4 \succ t_3) = \Pr(t_4 \succ t_3 \succ t_1 \succ t_2)+\Pr(t_4 \succ t_3 \succ t_2 \succ t_1) 
+t_i = t_2
+t_j = t_1
+\mathbb{Pr}(t_2 \succ t_1) = \mathbb{Pr}(t_4 \succ t_3 \succ t_2 \succ t_1) + \mathbb{Pr}(t_3 \succ t_4 \succ t_2 \succ t_1)

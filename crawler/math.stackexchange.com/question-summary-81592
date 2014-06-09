@@ -1,0 +1,34 @@
+(x,y,z)
+(q,r,s)
+(a,b,c,d)
+ax+by+cz=d \Longrightarrow z=dx+\frac{-b}{c}y-\frac{a}{c}
+dist = \sqrt{(x-q)^2+(y-r)^2+(z-s)^2}
+dist^2 = f(x,y) = (x-q)^2+(y-r)^2+\Bigl((dx+\frac{-b}{c}y+(\frac{a}{c}-s)\Bigr)^2
+x = 2(x-q)+r^2(dx+\frac{-b}{c}y+(\frac{a}{c}-s))=2x-2q+r^2dx+r^2\frac{-b}{c}y+r^2(\frac{a}{c}-s)
+x = (2x+r^2dx+r^2\frac{-b}{c}y) + 2q+r^2(\frac{a}{c}-s)
+x = (2+r^2d)x+(r^2\frac{-b}{c})y + 2q+r^2(\frac{a}{c}-s)
+x = \frac{r^2\frac{-b}{c}}{-((2+r^2d)-1)}y+2q+r^2\frac{\frac{a}{c}-s}{-((2+r^2d)-1)}
+y = (x-q)^2+(y-r)^2+(dx+\frac{-b}{c}y+(\frac{a}{c}-s))^2
+y = 2(y-r)+q^2(dx+\frac{-b}{c}y+(\frac{a}{c}-s))
+y = 2y-2r+q^2dx+\frac{-b}{c}q^2y+(\frac{a}{2}-s)q^2
+y = (2y+q^2dx+\frac{-b}{c}q^2y) + 2r+(\frac{a}{2}-s)q^2
+y = (2+\frac{-b}{c}q^2)y + q^2dx + 2r+(\frac{a}{2}-s)q^2
+y = \frac{q^2d}{1+\frac{-b}{c}q^2}x + \frac{2r+(\frac{a}{2}-s)q^2}{1+\frac{-b}{c}q^2}
+m=2q+r^2\frac{\frac{a}{c}-s}{-((2+r^2d)-1)}
+g=\frac{r^2\frac{-b}{c}}{-((2+r^2d)-1)}
+n=\frac{2r+(\frac{a}{2}-s)q^2}{1+\frac{-b}{c}q^2}
+h=\frac{q^2d}{1+\frac{-b}{c}q^2}
+y = h(gy+m)+n
+y = hgy+hm+n
+y = \frac{hm+n}{-(hg-1)}
+x = gy+m
+(q,r,s)
+(q,r,s)
+(a,b,c)
+t
+t=\frac{d-qa-rb-sc}{a^2+b^2+c^2}
+t\mapsto (q,r,s)+t(a,b,c) = (q+ta, r+tb, s+tc)
+(q+ta)a + (r+tb)b + (s+tc)c = d
+z
+z=(d-ax-by)/c
+\TeX

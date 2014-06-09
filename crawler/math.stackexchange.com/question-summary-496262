@@ -1,0 +1,24 @@
+\partial_t u(x,t) - \partial_x u(x,t) = a(x)\cdot b(t)
+1
+\dfrac{dt}{ds}=1
+t(0)=0
+t=s
+\dfrac{dx}{ds}=-1
+x(0)=x_0
+x=-s+x_0=-t+x_0
+\dfrac{du}{ds}=a(x)b(t)=a(x_0-s)b(s)
+u(x,t)=f(x_0)+\int_k^sa(x_0-r)b(r)~dr=f(x+t)+\int_k^ta(x+t-s)b(s)~ds
+2
+\dfrac{dx}{ds}=1
+x(0)=0
+x=s
+\dfrac{dt}{ds}=-1
+t(0)=t_0
+t=-s+t_0=-x+t_0
+\dfrac{du}{ds}=a(x)b(t)=-a(s)b(t_0-s)
+u(x,t)=f(t_0)-\int_k^sa(r)b(t_0-r)~dr=f(x+t)-\int_k^xa(s)b(x+t-s)~ds
+\newcommand{\sgn}{\operatorname{sgn}}
+\begin{align}   \partial_t u(x,t) - \partial_x u(x,t) &= a(x)\cdot b(t) \quad\Big|\quad \frac1{4\pi^2}\iint_{\mathbb R^2}dx\,dt\,e^{-i(\omega t + kx)} \\ i\omega u_p(k,\omega) - ik u_p(k,\omega) &= -a(k)\cdot b(\omega) \\\Rightarrow u_p(k,\omega) &= -i\frac{a(k)b(\omega)}{k-\omega} \\ u_p(x,t) &= -i\iint_{\mathbb R^2}\frac{a(k)b(\omega)}{k-\omega}e^{i\omega t + ikx}\, dk\,d\omega \\ &= -\frac{i}{4\pi^2}\iint_{\mathbb R^2}\iint_{\mathbb R^2}\frac{a(x')b(t')}{k-\omega}\exp\left[i\left(k(x-x')+\omega(t-t')\right)\right]\,dk\,d\omega\,dx'\,dt' \\ &= -\frac{i}{4\pi^2}\iint_{\mathbb R^2}\int_{\mathbb R}a(x')b(t') \underbrace{\int_{\mathbb R}\frac{e^{ik(x-x')}}{k-\omega}dk}_{=-i\pi e^{-i\omega(x-x')}\sgn(x-x')}\, e^{i\omega(t-t')}\,d\omega\,dx'\,dt' \\ &= \frac12\iint_{\mathbb R^2}a(x-h)b(t')\underbrace{\frac1{2\pi}\int_{\mathbb R}e^{i\omega(t-t'-h)}d\omega}_{=\delta(t-t'-h)}\sgn(h)\,dh\,dt' \quad\Big|\quad h\equiv x-x' \\ &= \frac12\int_{\mathbb R}\sgn(h)a(x-h)b(t-h)dh \\\Rightarrow u(x,t) &= u_h(x+t) + \frac12\int_0^\infty[a(x-h)b(t-h)-a(x+h)b(t+h)]dh \end{align}
+\lim\limits_{h\to\infty}[a(h)b(h)-a(-h)b(-h)]=0
+a(x)
+b(t)

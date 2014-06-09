@@ -1,0 +1,7 @@
+\overline{y}_S
+\overline{x}_S
+m = \overline{x}_S \overline{y}_S
+E(m)
+\mathrm{Var}(m)
+g(x,y) \simeq g(\mu_x, \mu_y) + (x-\mu_x) \dfrac{\partial g}{\partial x}\bigg|_{x = \mu_x, y = \mu_y} + (y-\mu_y)\dfrac{\partial g}{\partial y}\bigg|_{x = \mu_x, y = \mu_y} + \dfrac{1}{2}(x-\mu_{x})^{2}\dfrac{\partial^{2}g}{\partial x^{2}}\bigg|_{x = \mu_x, y = \mu_y} + \dfrac{1}{2!}(y-\mu_{y})^{2}\dfrac{\partial^{2}g}{\partial{y}^{2}}\bigg|_{x = \mu_x, y = \mu_y}+ \dfrac{1}{2!}(x-\mu_{x})(y-\mu_{y})\dfrac{\partial^{2}g}{\partial x \partial y}\bigg|_{x = \mu_x, y = \mu_y} + \dfrac{1}{2!}(y-\mu_y)(x-\mu_x)\dfrac{\partial^{2}g}{\partial y \partial x}\bigg|_{x = \mu_x, y = \mu_y}
+E(g(X,Y)) \simeq g(\mu_x, \mu_y) + \dfrac{1}{2!}\left[V(x)\dfrac{\partial^{2}g}{\partial x^{2}} + 2\mathrm{Cov}(X,Y)\dfrac{\partial^{2}g}{\partial x \partial y} + V(Y)\dfrac{\partial^{2}g}{\partial y^{2}}\right]

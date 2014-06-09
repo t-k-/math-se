@@ -1,0 +1,205 @@
+(G, H) \in \mathbb R^2_{\geqslant 0}
+n
+a = (a_1, a_2, \ldots, a_n) \in \mathbb R^n_{\geqslant 0}
+n
+(G, H)
+ \begin{align*} \operatorname{AM}(a) &= 1, \\  \operatorname{GM}(a) &= G, \\ \operatorname{HM}(a) &= H. \end{align*} 
+\ast
+ \quad 1 \geqslant G \geqslant H \geqslant 0.\tag{$\ast$}
+n=3
+G
+x
+H
+y
+\log
+HM\le GM\le AM
+ \frac{1}{\int\frac{1}{x}\;\mathrm{d}\mu}\le\exp\left(\int\log(x)\;\mathrm{d}\mu\right)\le\int x\;\mathrm{d}\mu\tag{1} 
+\log
+(2)
+(3)
+(4)
+AM
+HM
+\log
+(5)
+(6)
+(7)
+a
+b
+(8)
+(2)
+(3)
+(8)
+x
+(9)
+b
+(2)
+x
+(11)
+\lambda
+(12)
+\lim\limits_{a\to0}\frac{\lambda}{a}=\lim\limits_{a\to1}\frac{1-\lambda}{1-a}=1
+ \int x\;\mathrm{d}\mu=1\quad\text{(arithmetic mean }=1\text{)}\tag{2} 
+ \int\frac{\mathrm{d}\mu}{x}=\frac{1}{h}\quad\text{(harmonic mean }=h\text{)}\tag{3} 
+ \int\log(x)\;\mathrm{d}\mu\tag{4} 
+ \int\delta x\;\mathrm{d}\mu=0\tag{5} 
+ \int\frac{\delta x}{x^2}\mathrm{d}\mu=0\tag{6} 
+ \int\frac{\delta x}{x}\mathrm{d}\mu=0\tag{7} 
+ \frac{1}{x}=a+\frac{b}{x^2}\tag{8} 
+ 1=a+\frac{b}{h}\tag{9} 
+ x=\frac{1\pm\sqrt{1-4ha(1-a)}}{2a}\tag{10} 
+ \lambda\frac{1+\sqrt{1-4ha(1-a)}}{2a}+(1-\lambda)\frac{1-\sqrt{1-4ha(1-a)}}{2a}=1\tag{11} 
+ \lambda=\frac{1}{2}\left(1+\frac{2a-1}{\sqrt{1-4ha(1-a)}}\right)\quad\text{and}\quad a=\frac{1}{2}\left(1+\frac{2\lambda-1}{\sqrt{1+4\frac{h}{1-h}\lambda(1-\lambda)}}\right)\tag{12} 
+h
+x
+\lambda
+(10)
+(12)
+h\in[0,1]
+g(h,\lambda)
+\lambda
+\lambda
+g(h,\lambda)
+h
+1
+n
+\lambda
+\frac{1}{n}\dots \frac{n-1}{n}
+h
+g(h,\frac{1}{n})
+g(h,\frac{n-1}{n})
+ \begin{align} g(h,\lambda) &=\left(\frac{1+\sqrt{1-4ha(1-a)}}{2a}\right)^\lambda\left(\frac{1-\sqrt{1-4ha(1-a)}}{2a}\right)^{1-\lambda}\\ &=\frac{\left(\sqrt{1+4\frac{h}{1-h}\lambda(1-\lambda)}+1\right)^\lambda\left(\sqrt{1+4\frac{h}{1-h}\lambda(1-\lambda)}-1\right)^{1-\lambda}}{\sqrt{1+4\frac{h}{1-h}\lambda(1-\lambda)}+2\lambda-1}\tag{13} \end{align} 
+ \lim_{\lambda\to0}g(h,\lambda)=h\qquad\text{and}\qquad\lim_{\lambda\to1}g(h,\lambda)=1\tag{14} 
+\mathbf{n}
+\mathbf{=1}
+h
+(13)
+(15)
+(15)
+(17)
+\eta
+\theta
+0\le\lambda\le1
+-\eta\le\theta\le\eta
+(21)
+(22)
+\cos(\theta)
+t=\dfrac{\cos(\eta)}{\cos(\theta)}
+(22)
+(23)
+t=0
+-\eta\le\theta\le\eta
+t\ge\cos(\eta)=\sqrt{1-h}
+(22)
+(21)
+ \Delta=\sqrt{1+4\frac{h}{1-h}\lambda(1-\lambda)}\tag{15} 
+ g(h,\lambda)=\frac{(\Delta+1)^\lambda(\Delta-1)^{1-\lambda}}{\Delta+2\lambda-1}\tag{16} 
+ (1-h)\Delta^2+h(2\lambda-1)^2=1\tag{17} 
+ \begin{align} \sin(\eta)&=\sqrt{h}\\ \cos(\eta)&=\sqrt{1-h} \end{align}\tag{18} 
+ \begin{align} \sin(\theta)&=\sin(\eta)\;(2\lambda-1)\\ \cos(\theta)&=\cos(\eta)\;\Delta \end{align}\tag{19} 
+ \begin{array}{ccccc} \cos(\eta)(\Delta+1)&=&\cos(\theta)+\cos(\eta)&=&2\cos\left(\frac{\eta+\theta}{2}\right)\cos\left(\frac{\eta-\theta}{2}\right)\\ \cos(\eta)(\Delta-1)&=&\cos(\theta)-\cos(\eta)&=&2\sin\left(\frac{\eta+\theta}{2}\right)\sin\left(\frac{\eta-\theta}{2}\right)\\ \sin(\eta)2\lambda&=&\sin(\eta)+\sin(\theta)&=&2\sin\left(\frac{\eta+\theta}{2}\right)\cos\left(\frac{\eta-\theta}{2}\right)\\ \sin(\eta)2(1-\lambda)&=&\sin(\eta)-\sin(\theta)&=&2\cos\left(\frac{\eta+\theta}{2}\right)\sin\left(\frac{\eta-\theta}{2}\right) \end{array}\tag{20} 
+ \begin{align} &\left(\frac{1}{\sin(\eta)}\frac{(\Delta+1)^\lambda(\Delta-1)^{1-\lambda}}{\Delta+2\lambda-1}\right)^{2\sin(\eta)}\\ &\vphantom{\Huge{\dfrac{A}{A}}}=\frac{(\cos(\theta)+\cos(\eta))^{\sin(\eta)+\sin(\theta)}(\cos(\theta)-\cos(\eta))^{\sin(\eta)-\sin(\theta)}}{\left(\sin(\eta)\cos(\theta)+\cos(\eta)\sin(\theta)\right)^{2\sin(\eta)}}\\ &\vphantom{\Huge{\dfrac{A}{A}}}=\frac{(2\cos(\frac{\eta+\theta}{2})\cos(\frac{\eta-\theta}{2}))^{\sin(\eta)+\sin(\theta)}(2\sin(\frac{\eta+\theta}{2})\sin(\frac{\eta-\theta}{2}))^{\sin(\eta)-\sin(\theta)}}{\sin(\eta+\theta)^{2\sin(\eta)}}\\ &\vphantom{\Huge{\dfrac{A}{A}}}=\frac{(\sin(\eta+\theta)\sin(\eta-\theta))^{\sin(\eta)}(\cot(\frac{\eta+\theta}{2})\cot(\frac{\eta-\theta}{2}))^{\sin(\theta)}}{\sin(\eta+\theta)^{2\sin(\eta)}}\\ &\vphantom{\Huge{\dfrac{A}{A}}}=\left(\frac{\sin(\eta-\theta)}{\sin(\eta+\theta)}\right)^{\sin(\eta)}\left(\frac{\cos(\theta)+\cos(\eta)}{\cos(\theta)-\cos(\eta)}\right)^{\sin(\theta)}\tag{21} \end{align} 
+ \begin{align} &\frac{\mathrm{d}}{\mathrm{d}\theta}\left(\sin(\eta)\log\left(\frac{\sin(\eta-\theta)}{\sin(\eta+\theta)}\right)+\sin(\theta)\log\left(\frac{\cos(\theta)+\cos(\eta)}{\cos(\theta)-\cos(\eta)}\right)\right)\\ &\vphantom{\Huge{A}}=\sin(\eta)(-\cot(\eta-\theta)-\cot(\eta+\theta))\\ &+\cos(\theta)\log\left(\frac{\cos(\theta)+\cos(\eta)}{\cos(\theta)-\cos(\eta)}\right)\\ &+\sin(\theta)\left(\frac{-\sin(\theta)}{\cos(\theta)+\cos(\eta)}+\frac{\sin(\theta)}{\cos(\theta)-\cos(\eta)}\right)\\ &\vphantom{\Huge{\dfrac{A}{A}}}=-2\cos(\eta)+\cos(\theta)\log\left(\frac{\cos(\theta)+\cos(\eta)}{\cos(\theta)-\cos(\eta)}\right)\tag{22} \end{align} 
+ -2t+\log\left(\frac{1+t}{1-t}\right)=0\tag{23} 
+a_1, a_2, \ldots, a_n
+(n \geq 3)
+0 \leq x_1 \leq x_2 \leq \cdots \leq x_n
+E = x_1^q + x_2^q +\cdots+x_n^q
+ x_1+x_2+\cdots+x_n = a_1+a_2+\cdots+a_n,
+x_1^p + x_2^p +\cdots+x_n^p = a_1^p + a_2^p +\cdots+ a_n^p,
+p \leq 0
+p=0
+x_1x_2\cdots x_n = a_1a_2\cdots a_n > 0
+q \in (p,0) \cup (1, \infty)
+E
+0 \lt x_1 = x_2 = \cdots = x_{n-1} \leq x_n
+0 < x_1 \leq x_2 = x_3 = \cdots = x_n
+q \in (-\infty,p) \cup (0,1)
+E
+0 \lt x_1 = x_2 = \cdots = x_{n-1} \leq x_n
+0 < x_1 \leq x_2 = x_3 = \cdots = x_n
+p=0
+q = -1
+x_i
+(x,y,z)
+x=y=z
+PQ=n^2
+x
+y
+z
+f:=ax+by+cz
+(a,b,c)
+g:=a x^{-1} + b y^{-1} + c z^{-1}
+(-a x^{-2}, -b y^{-2}, -c z^{-2})
+x
+y
+z
+f=P
+g=Q
+(a,b,c) \times (-a x^{-2}, -b y^{-2}, -c z^{-2}) = {\LARGE (} bc (y^{-2} - z^{-2}), ac (z^{-2} - x^{-2}), ab(x^{-2} - y^{-2}) {\LARGE )} \quad (\ast)
+x^a y^b z^c
+h:= \log(x^a y^b z^c) = a \log x + b \log y + c \log z
+h
+(\ast)
+abc (x^{-1} y^{-2} - x^{-1} z^{-2} + y^{-1} z^{-2} - y^{-1} x^{-2} + z^{-1} x^{-2} - z^{-1} y^{-2} ) = \frac{abc}{x^2 y^2 z^2} (x-y)(x-z)(y-z). \quad (\ast\ast).
+x
+y
+z
+(\ast \ast)
+f=P
+g=Q
+h
+(x,y,z)
+\square
+(x_1, \ldots, x_n)
+n
+y
+z
+y+(n-1) z = \sum x_i
+y^{-1} + (n-1) z^{-1} = \sum x_i^{-1}
+y<z
+y z^{n-1} \geq \prod x_i
+(y,z,z,z,\ldots, z)
+\prod x_i
+\sum x_i
+\sum x_i^{-1}
+n-2
+(x_1, x_2, \ldots, x_n)
+\prod x_i
+\sum x_i
+\sum x_i^{-1}
+x_1=x_2=\cdots = x_k > x_{k+1}, \ldots, x_n
+k
+k=n-1
+x_{k+3}
+x_n
+(x_1, \ldots, x_{k+2})
+\prod_{i=1}^{k+2} x_i
+\sum_{i=1}^{k+2} x_i
+\sum_{i=1}^{k+2} x_i^{-1}
+k+1
+n-1
+z+(n-1) (P - (n-1) z) = Q z(P-(n-1) z)
+z
+y^{1/n} z^{(n-1)/n}
+P/n
+n/Q
+\begin{matrix} y+(n-1) z &=& P \\ y^{-1} + (n-1) ^{-1} &=& Q \end{matrix}
+x_i
+x^{(n-1)/n} y^{1/n}
+x
+y
+x>y
+(1/n) x + (n-1)/n y = AM \quad 1/n x^{-1} + (n-1)/n y^{-1} = HM^{-1}
+GM \leq \theta AM + (1-\theta) HM
+\lambda=1/n
+(AM, GM, HM)
+\theta
+\frac{GM-HM}{AM-HM}
+GM=1
+(x,y)
+(e^{-(1-\lambda) t}, e^{\lambda t})
+\lambda
+AM= \lambda x + (1-\lambda) y \quad GM = x^{\lambda} y^{1-\lambda} \quad HM = (\lambda x^{-1} + (1-\lambda) y^{-1})^{-1}.
+\sup_{t} \frac{GM-HM}{AM-HM} < 1.
+t=0

@@ -1,0 +1,11 @@
+D_{i}
+i
+1-P\left[\text{D}_{1}^{c}\cap\cdots\cap D_{K}^{c}\right]=1-\prod_{i=1}^{K}P\left[D_{i}^{c}\right]=1-\prod_{i=1}^{K}\frac{365-i}{365}=1-365^{-K}\frac{364!}{\left(364-K\right)!}
+K<365
+\sum_{i=1}^{K}P\left[D_{1}^{c}\cap\cdots\cap D_{i-1}^{c}\cap D_{i}\cap D_{i+1}^{c}\cap\cdots\cap D_{K}^{c}\right]=\sum_{i=1}^{K}\left(\prod_{j=1}^{K}\frac{365-j}{365}\right)\times\frac{1}{365-i}=365^{-K}\frac{364!}{\left(364-K\right)!}\sum_{i=1}^{K}\frac{1}{365-i}
+K=365
+P\left[D_{1}^{c}\cap\cdots\cap D_{364}^{c}\right]=365^{-364}364!
+1-\frac{364}{365}\frac{363}{365}...\frac{365-k}{365}=1-\frac{364!}{(364-k)!365^k}
+\frac{1}{365}\frac{363}{365}\frac{362}{365}...\frac{365-k}{365} + \frac{364}{365}\frac{1}{365}\frac{362}{365}...\frac{365-k}{365}+\frac{364}{365}\frac{363}{365}\frac{1}{365}...\frac{365-k}{365}=
+\frac{364}{365}\frac{363}{365}\frac{362}{365}...\frac{365-k}{365}(\frac{1}{364}+\frac{1}{363}+\frac{1}{362}+...+\frac{1}{365-k})
+\frac{364!}{(364-k)!365^k}\sum^{364}_{n=365-k}\frac1n

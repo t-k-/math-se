@@ -1,0 +1,8 @@
+I=\int_{|z|=2}(e^{\sin z}+\bar z)dz.
+I=\int_{|z|=2}e^{\sin z}dz+\int_{|z|=2}\bar zdz.
+0
+\int_{|z|=2}\bar zdz = \int_0^{2\pi}e^{-i\theta}\cdot 2 d\theta=-\int_0^{-2\pi}e^{i\tau}\cdot 2 d\tau=\int_0^{2\pi}e^{i\tau}\cdot 2 d\tau=\int_{|z|=2}zdz=0
+z = 2e^{i \theta}
+\bar{z} dz = 2e^{-i \theta}2i e^{i \theta} d \theta = 4i d \theta
+\int_{\vert z \vert = 2} \bar{z} dz = \int_0^{2 \pi} 4i d \theta = 8 \pi i
+ \begin{align*} \int_{|z|=2}\bar z\,dz &= \int_{|z|=2} \frac{z \bar z}{z} \,dz \\ &= \int_{|z| = 2} \frac{|z|^2}{z}\,dz \\ &= \int_{|z| = 2} \frac{4}{z}\,dz \\ &= 4 \cdot 2\pi i \\ &= 8 \pi i. \end{align*} 

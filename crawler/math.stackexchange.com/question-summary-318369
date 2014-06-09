@@ -1,0 +1,16 @@
+=\displaystyle \int_{0}^{1}x^m.(1-x)^{15-m}dx
+m\in \mathbb{N}
+x=\sin^2 \theta
+dx = 2\sin \theta.\cos \theta.d\theta
+ = \displaystyle \int_{0}^{\frac{\pi}{2}}\sin^{2m}\theta.\cos^{30-2m}\theta.2\sin \theta.\cos \theta d\theta
+ = \displaystyle 2\int_{0}^{\frac{\pi}{2}} \sin^{2m+1}\theta.\cos^{31-2m}\theta d\theta
+f(m,n)=\int_0^1 x^m(1-x)^ndx
+(m+1)f(m,n)=n\,f(m+1,n-1)
+(m+2)(m+1)f(m,n)=n(n-1)\,f(m+2,n-2)
+\cdots
+(m+n)\cdots (m+1)\,f(m,n)=n!\,f(m+n,0)
+\text{i.e}
+(m+n)!f(m,n)=n!\,m!\,f(m+n,0)
+f(m+n,0)=\int_0^1 t^{m+n}dt=\frac{1}{m+n+1}
+f(m,n)=\frac{n!\,m!}{(m+n+1)!}
+n=15-m

@@ -1,0 +1,67 @@
+|A∪B∪C| = |A| + |B| + |C| − |A∩B| − |A∩C| − |B∩C| + |A∩B∩C|
+−(|A∩B|+|A∩C|+|B∩C|)
++|A∩B∩C|
+|A|+|B|+|C|+|D|+|E|
+|A∪B∪C∪D∪E|
+|A|+|B|+|C|+|D|+|E| −\left({|A∩B|+|A∩C|+|A∩D|+|A∩E|+|B∩C|+ \atop |B∩D|+|B∩E|+|C∩D|+|C∩E|+|D∩E|}\right).
+\{A_i : 1 ≤ i ≤ k \}
+\{ 1, \ldots, n \}
+R_m = \left|\;\; \sum_{r=m}^k (-1)^r \sum_{I \in \Large\binom{[k]}{r}} \left| \bigcap \{ A_i : i \in I \}\right|\;\; \right|
+R
+j
+R_2 ≤ R_3 ≤ \cdots ≤ R_j ≥ R_{j+1} ≥ \cdots ≥ R_k
+x
+A_i
+n \geq 1
+i \in [k] := \{1,\ldots,k\}
+n
+x
+R_m
+R_m
+ \left| \bigcup_{i=1}^k A_i \right| - \left( \sum_{r=1}^m (-1)^{r+1} \sum_{I \in \binom{[k]}{r}} \left| \bigcap_{i \in I} A_i \right| \right)
+n \geq 1
+x
+1
+| \bigcup_{i =1}^k A_i |
+r
+r
+I
+[k]
+x \in \bigcap_{i \in I} A_i
+\binom{n}{r}
+n
+i
+x \in A_i
+x
+R_m
+ 1 - \left[ \binom{n}{1} - \binom{n}{2} + \ldots \pm \binom{n}{m} \right] = \sum_{r = 0}^m (-1)^r \binom{n}{r} = (-1)^m \binom{n-1}{m}
+\binom{a+1}{b+1} = \binom{a}{b} + \binom{a}{b+1}
+x
+R_m
+m \sim (n-1)/2
+0
+m \geq n
+N
+A_i
+10
+i \in [k]
+A_i
+100
+i \in [k]
+|R_m|
+m=4,5
+N
+m \sim 50
+R_m
+N
+m=10
+c_n \geq 0
+n
+n=1,2,\ldots,k
+R_m  = (-1)^m \sum_{n=1}^k c_n \binom{n-1}{m}
+\begin{array}{clcr} 0      & 0      & 0      & 0      & 0      & 0      & 0      & \cdots \\ 1      & 0      & 0      & 0      & 0      & 0      & 0      & \cdots \\ 2      & 1      & 0      & 0      & 0      & 0      & 0      & \cdots \\ 3      & 3      & 1      & 0      & 0      & 0      & 0      & \cdots \\ 4      & 6      & 4      & 1      & 0      & 0      & 0      & \cdots \\ 5      & 10     & 10     & 5      & 1      & 0      & 0      & \cdots \\ 6      & 15     & 20     & 15     & 6      & 1      & 0      & \cdots \\ \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \ddots \end{array}
+7
+20,19,20,15,6,1,0
+\eqalign{A_1&=A_2=\lbrace a,b,c,d,e,f,g,h,i,j,k\rbrace\cr A_3&=\lbrace g,h,i,j,k\rbrace\cr A_4&=A_5=A_6=A_7=\lbrace k\rbrace\cr}
+7
+11

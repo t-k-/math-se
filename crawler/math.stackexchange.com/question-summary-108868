@@ -1,0 +1,48 @@
+2003^{2002^{2001}}
+k^n
+k, n
+k^n
+2^n
+4\cdot 5 = 20
+20\cdot 5 =100
+k
+2003^n \equiv 3^n \mod 1000
+3
+1000
+\mathbb{Z}/1000\mathbb{Z}
+(\mathbb{Z}/1000\mathbb{Z})^\times
+\varphi(1000) = 1000 * 1/2 * 4/5 = 400
+3^{400} \equiv 1 \mod 1000
+3^n \equiv 3^{n \mod 400} \mod 1000
+2003^{2002^{2001}} \mod 1000
+2002^{2001} \mod 400
+2002^n \equiv 2^n \mod 400
+2
+400 = 2^4 * 25
+n \geq 4
+2^n
+2^4
+2^n \mod 400 = (2^4*2^{n-4}) \mod (2^4*25) = 2^4*(2^{n-4} \mod 25)
+2
+(\mathbb{Z}/25\mathbb{Z})^\times
+\varphi(25) = 25*4/5 = 20
+2^{20} \equiv 1 \mod 25
+2^n \equiv 2^{n \mod 20} \mod 25
+2002^{2001} \mod 400 = 2^{2001} \mod 400 = 2^4 * (2^{1997} \mod 25) = 2^4 * (2^{1997 \mod 20} \mod 25) 
+=2^4 * (2^{17} \mod 25) = 2^4 * (131072 \mod 25) = 2^4 * 22 = 352
+2003^{2002^{2001}} \mod 1000 = 3^{352} \mod 1000 = 241
+~241~
+\displaystyle2003^{(2002^{2001})}\equiv3^{(2002^{2001})}\pmod{1000}
+\displaystyle 3^{(2002^{2001})}\equiv3^{(2002^{2001}\pmod{100})}\pmod{1000}
+\displaystyle  2002^{2001}\pmod{100}\equiv2^{2001}\pmod{100}
+\displaystyle(2^{2001},100)=2^2,
+\displaystyle2^{2001-2}\pmod{\frac{100}{2^2}}
+\displaystyle2^{1999}\pmod{25}
+\displaystyle\phi(25)=20,2^{20}\equiv1\pmod{25},
+\displaystyle2^{2000}\equiv1\pmod{25}\implies\displaystyle2^{1999}\equiv2^{-1}
+\displaystyle2\cdot13=26\equiv1\pmod{25},2^{1999}\equiv13
+\displaystyle\implies2^{2001}=2^2\cdot2^{1999}=2^2\cdot13\pmod{2^2\cdot25}\equiv52
+\displaystyle\implies3^{(2002^{2001})}\equiv3^{52}\pmod{1000}
+\displaystyle3^{52}=(3^2)^{26}=(10-1)^{26}=(1-10)^{26}\equiv1-\binom{26}110+\binom{26}210^2\pmod{1000}
+\displaystyle\binom{26}2=\frac{26\cdot25}2=13\cdot25=325\equiv5\pmod{10}
+\displaystyle\implies(1-10)^{26}\equiv1-260+5\cdot10^2\pmod{1000}\equiv1-260+500

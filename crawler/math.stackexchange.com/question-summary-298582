@@ -1,0 +1,45 @@
+a_{1},...,a_{m}
+\mathbb{R}^n
+n
+v_{1},...,v_{n}
+a_{1},...,a_{m}
+(c\sqrt{n})v_{1},-(c\sqrt{n})v_{1},...,(c\sqrt{n})v_{n},-(c\sqrt{n})v_{n}
+c
+i
+u_{i}
+a_{i}
+c\sqrt{n}
+n\geq 3
+m = n+1
+a_1 = (0, 0, \ldots, 0, n)
+a_2 = (1, 0, \ldots, 0, 1)
+a_3 = (0, 1, \ldots, 0, 1)
+\vdots
+a_n = (0, 0, \ldots, 1, 1)
+a_m = (1, 1, \ldots, 1, 0)
+a_1 = \frac{n}{n-1}(a_2 + \cdots + a_n - a_m)
+a_2 = \frac{n-2}{n}a_1 - a_3 - a_4 - \cdots - a_n + a_m
+a_3 = \frac{n-2}{n}a_1 - a_2 - a_4 - \cdots - a_n + a_m
+\vdots
+a_m = -\frac{n-1}{n}a_1 + a_2 + \cdots + a_n
+O(n)
+\|(a_1)_{\beta_1}\|_1 = \|\frac{n}{n-1}(1, 1, \ldots, 1, -1)\|_1 = n^2/(n-1)
+\|(a_2)_{\beta_2}\|_1 = \|(\frac{n-2}{n}, -1, \ldots, -1, 1)\|_1 = (n^2-2)/n
+\|(a_3)_{\beta_3}\|_1 = \|(\frac{n-2}{n}, -1, \ldots, -1, 1)\|_1 = (n^2-2)/n
+\vdots
+\|(a_m)_{\beta_3}\|_1 = \|(-\frac{n-1}{n}, 1, \ldots, 1, 1)\|_1 = (n^2-1)/n
+\beta_i = (a_1, \ldots, a_{i-1}, a_{i+1}, \ldots, a_m)
+a_i
+\ell^1
+k
+k\{a_j\}_{j\neq i}
+a_i
+k
+O(n)
+\{v_j\} = \{a_j\}_{j\neq i}
+c
+c\sqrt{n}\{v_j\}
+\{a_i\}
+\{v_j\}
+n
+cn

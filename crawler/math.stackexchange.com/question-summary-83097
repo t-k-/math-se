@@ -1,0 +1,10 @@
+f
+g = f'
+r
+0
+r
+h(x) = \sum_{n=1}^\infty \frac{\sin(2\pi n x)}{ n \pi} = \frac{1}{2} - \{ x \}
+  \mathcal{I}_f = \int_0^r f(x,r) \mathrm{d} x =  \int_0^r x (r-x) \exp\left(-i \frac{\pi}{2} \frac{x^2}{r}\right) \mathrm{d} x = i \frac{r}{\pi } \left( \sqrt{r} C\left(\sqrt{r}\right)-i \sqrt{r} S\left(\sqrt{r}\right)-    r\right) 
+ \begin{eqnarray}   \mathcal{I}_g &=& \int_0^r h(x) g(x,r) \mathrm{d} x = \sum_{k=0}^{r-1} \int_0^1 h(k+x) g(k+x,r) \mathrm{d} x = \sum_{k=0}^{r-1} \int_0^1 \left( \frac{1}{2} -x \right) g(k+x,r) \mathrm{d} x \\   &=& \phantom{+} \sum_{k=0}^{r-1} \frac{1}{2\pi} (k-r+1)(\pi(k+1)-2 i r) \exp\left( -i \frac{\pi}{2} \frac{(k+1)^2}{r} \right) \\   &\phantom{=}& + \sum_{k=0}^{r-1} \frac{1}{2\pi} (k-r)( \pi k + 2i r) \exp\left( -i \frac{\pi}{2} \frac{k^2}{r} \right) \\   &\phantom{=}& + \sum_{k=0}^{r-1} \frac{1+i}{2 \pi} r^{3/2} \left( \operatorname{erf}\left( \frac{1+i}{2} \sqrt{\frac{\pi}{r}} k \right) - \operatorname{erf}\left( \frac{1+i}{2} \sqrt{\frac{\pi}{r}} (k+1) \right)  \right)   \end{eqnarray} 
+r
+    \mathcal{I}_f - \mathcal{I}_g = \sum_{k=1}^r k (r-k) \exp\left( -i \frac{\pi}{2} \frac{k^2}{r} \right) 

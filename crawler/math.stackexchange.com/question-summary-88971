@@ -1,0 +1,29 @@
+f,f_k\colon E\rightarrow \mathbb{R}^+
+\displaystyle\forall x \in E\setminus N: \lim_{k \to \infty}f_k(x)=f(x)
+\lambda(N)=0
+E,N \subset \mathbb{R}^n
+\displaystyle\lim_{k \rightarrow \infty}\int_E f_k(x) d\lambda=\int_E f(x) d\lambda
+\lim_{k \rightarrow \infty}\int_E |f-f_k(x)|d\lambda=0 ?
+f_k
+f
+f_k
+f
+\int  f_k \rightarrow \int  f 
+f_k
+f
+| f_k-f\,|\le  f_k + f \quad \Rightarrow\quad f_k + f -|f_k-f\,|\ge 0.
+\int f_k\rightarrow\int f
+ \tag{2}\liminf_{k\to \infty} \int ( f_k + f -|f_k-f\,|\,)= 2\int  f -\limsup_{k\to \infty}\int|f_k-f\,|. 
+f_k\rightarrow  f
+ \tag{3}\int \liminf_{k\to \infty} \, (f_k + f -|f_k-f\,|\,)= \int  2 f. 
+ 2\int  f -\limsup_{k\to \infty}\int|f_k-f\thinspace|\ge\int 2 f\ ; 
+ \limsup_{k\to \infty}\int|f_k-f|\le0. 
+g_k^+:=(f_k-f)_+
+g_k^-:=(f-f_k)_+
+|f-f_k|=g_k^+ + g_k^-
+f_k-f=g_k^+ - g_k^-
+g_k^- \le f
+f
+g_k^- \to 0
+\int g_k^-\to 0
+\int (g_k^+ + g_k^-) = \int(f_k-f+2g_k^-) = \int f_k - \int f + 2\int g_k^- \to 0

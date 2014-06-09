@@ -1,0 +1,19 @@
+a_{n-1}, a_{n-2}...
+a_{n+2}=4a_{n+1}-4a_{n}
+a_{0}=3
+a_{1}=8
+ \begin{align} A(x)&=\sum\limits_{n>=0}a_{n}x^{n} \\ &= \sum\limits_{n>=0}(a_{n+1}-\frac{1}{4}a_{n+2})x^{n} \\ &= \sum\limits_{n>=0}(a_{n+1})x^{n}-\frac{1}{4}\sum\limits_{n>=0}(a_{n+2})x^{n} \\ &= \sum\limits_{n>=1}(a_{n})x^{n+1}-\frac{1}{4}\sum\limits_{n>=2}(a_{n})x^{n+2} \\ &= \frac{1}{x}\sum\limits_{n>=1}(a_{n})x^{n}-\frac{1}{4x^{2}}\sum\limits_{n>=2}(a_{n})x^{n} \\ &= \frac{1}{x}[\sum\limits_{n>=0}(a_{n})x^{n} - 3]-\frac{1}{4x^{2}}[\sum\limits_{n>=0}(a_{n})x^{n} - 3 - 8x] \\ &= \frac{1}{x}[A(x) - 3]-\frac{1}{4x^{2}}[A(x) - 3 - 8x] \end{align} 
+A(x)=\frac{-4x+3}{4x^{2}-4x+1}
+x^{2}-4x+4
+A(x)=\sum_{n=0}^\infty a_nx^n
+a_n
+a_{n+2}-4a_{n+1}+4a_n=0
+p(x)=1-4x+4x^2
+n\geq2
+b_n=a_{n+2}-4a_{n+1}+4a_n=0
+ B(x) = \sum_{n=0}^\infty b_nx^n=p(x)A(x) 
+ p(x)A(x) = b_0+b_1 x 
+ A(x) = \frac{b_0+b_1 x}{1-4x+4x^2}=\frac{a_0+(a_1-4a_0) x}{1-4x+4x^2}=\frac{3-4x}{1-4x+4x^2} 
+ a_{n+2}=4a_{n+1}-4a_{n} 
+ \begin{align} f(x)&=\sum_{k=0}^\infty a_kx^k\\ xf(x)&=\sum_{k=1}^\infty a_{k-1}x^k\\ x^2f(x)&=\sum_{k=2}^\infty a_{k-2}x^k\\ \end{align} 
+ \begin{align} f(x)(1-4x+4x^2)&=a_0+a_1x-4a_0x+\sum_{k=2}^\infty(a_k-4a_{k-1}+4a_{k-2})x^k\\ &=a_0+(a_1-4a_0)x\\[18pt] f(x)&=\frac{a_0+(a_1-4a_0)x}{1-4x+4x^2}\\ &=\frac{3-4x}{1-4x+4x^2} \end{align} 

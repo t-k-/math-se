@@ -1,0 +1,8 @@
+X \sim N(\theta, \Sigma), X\in \mathbb{R}^p 
+p(x) \propto \exp \{-\frac1 2 x^T\Sigma^{-1}x + x^T\Sigma^{-1}\theta\} 
+ p(x) = \left(\frac{1}{2\pi}\right)^{n/2} \frac{1}{\sqrt{\det \Sigma}} \exp \{(x-\theta)^T\Sigma^{-1}(x-\theta) \} 
+x^\intercal\Sigma^{-1}\theta=(x^\intercal\Sigma^{-1}\theta)^\intercal=\theta^\intercal\Sigma^{-1}x
+\Sigma
+ p(x)\propto \exp\left[(x-\theta)^\intercal\Sigma^{-1}(x-\theta)\right] 
+ \begin{align} (x-\theta)^\intercal\Sigma^{-1}(x-\theta)&=x^\intercal\Sigma^{-1}x+\theta^\intercal\Sigma^{-1}\theta-x^\intercal\Sigma^{-1}\theta-\theta^\intercal\Sigma^{-1}x\\ &=x^\intercal \Sigma^{-1}x+\theta^\intercal\Sigma^{-1}\theta-2x^\intercal\Sigma^{-1}\theta \end{align} 
+ p(x)\propto\exp\left[x^\intercal\Sigma^{-1}x-2x^\intercal\Sigma^{-1}\theta\right]\propto\exp\left[-\frac12 x^\intercal\Sigma^{-1}x+x^\intercal\Sigma^{-1}\theta\right]. 

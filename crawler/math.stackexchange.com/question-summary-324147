@@ -1,0 +1,79 @@
+n
+i_1, \cdots, i_n \in \{ 0, \cdots , n-1\} 
+n
+i_j
+i_1 \neq i_2, \cdots i_n
+ 0 
+ n(n-1)
+n
+i_1
+(1 + x + x^2 + \cdots x^{n-1})^{mn}
+m = 0 , \cdots , n-1
+\ell\in\{1,2,\ldots,n-2\}
+n
+i_1
+\ell
+j
+i_j
+i_1
+i_j
+n-\ell-2
+i_j
+i_j
+i_1+\cdots+i_n
+n
+A_\ell=n^{n-\ell-1}
+\ell=n-1
+i_1=i_2=i_3=\cdots=i_n
+i_2
+\dots
+i_n
+i_1
+i_j
+ni_1
+n
+i_1
+A_{n-1}=n
+A_\ell
+(*)
+r,s\in\mathbb Z
+0\leq r\leq n-1
+0\leq s\leq n-1
+A_{r,s}
+n
+(i_1,\dots,i_n)\in\{0,1,\dots,n-1\}^n
+i_1=r, i_1+i_2+\cdots+i_n=sn
+i_j\ne r
+j=2,\dots,n
+A_{r,s}
+A_{r,s}
+\bigl\{(j_1,\dots,j_{n-1})\in\{0,1,\dots,n-1\}^{n-1}: j_1+\cdots j_{n-1}=sn-r,
+j_k\ne r\ \mathrm{for}\ k=1,\dots,n-1\bigr\}\,;
+(n-1)
+(j_1,\dots,j_{n-1})\in\mathbb N^{n-1}
+j_1+\cdots+j_{n-1}=sn-r\ 
+j_k=r\ 
+\ j_k\geq n\ 
+k
+K
+\{1,\dots,n-1\}
+B_K=B_{r,s,K}=\bigl\{(j_1,\dots,j_{n-1})\in\mathbb N^{n-1}: j_1+\cdots j_{n-1}=sn-r,
+j_k\in\{r,n,n+1,\dots\}\ \mathrm{for}\ k\in K\bigr\}\,.
+S
+K
+S=\emptyset
+B_{S,K}=\bigl\{(j_1,\dots,j_{n-1})\in B_K: j_k=r\ \mathrm{for}\ k\in S, j_k\geq n\ \mathrm{for}\ k\in K\setminus S\bigr\}\subseteq B_K
+a=r
+a\geq n
+B_{S,K}
+\bigl\{(t_1,\dots,t_{n-1-|S|})\in\mathbb N^{n-1-|S|}: t_1+\cdots+t_{n-1-|S|}=sn-r-r\cdot|S|-n\cdot|K\setminus S|\bigr\}\,,
+\binom{\bigl(n-1-|S|\,\bigr)+\bigl(sn-r-r\cdot|S|-n\cdot|K\setminus S|\,\bigr)-1}{\bigl(n-1-|S|\,\bigr)-1}\,,
+|S|
+|K|\,
+B_K
+|B_K|=\sum_{S\subseteq K}|B_{S,K}|=\sum_{p=0}^{|K|}\sum_{\substack{S\subseteq K\\ |S|=p}}|B_{S,K}|=\sum_{p=0}^{|K|}\binom{|K|}p\binom{n-2-p+sn-r-rp-n\cdot|K|+np}{n-2-p}=b_{|K|}\,.
+|B_K|
+|K|\,
+\sum_{q=1}^{n-1}(-1)^{q-1}\sum_{\substack{K\subseteq\{1,\dots,n-1\}\\|K|=q}}|B_K|=\sum_{q=1}^{n-1}(-1)^{q-1}\binom{n-1}qb_q=c_{r,s}\,.
+|A_{r,s}|=\bigl|\,\bigl\{(j_1,\dots,j_{n-1})\in\mathbb N^{n-1}: j_1+\cdots+j_{n-1}=sn-r\bigr\}\bigr|-c_{r,s}=\binom{(n-1)+(sn-r)-1}{(n-1)-1}-c_{r,s}=d_{r,s}\,.
+\sum_{0\leq r,s\leq n-1}d_{r,s}\,.

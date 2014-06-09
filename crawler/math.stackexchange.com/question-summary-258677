@@ -1,0 +1,17 @@
+\sqrt{2}f(x) =\lim_{\delta \to 0^{+}}\left[x-i\delta-\int_{-1}^{1} \frac{|f(y)|^2}{y-i\delta-x}dy\right]
+f\colon(-1,1) \to\mathbb{C}
+[-1,1]
+|f(y)|^2
+f(y)
+|x| <1
+\sqrt{2} f(x) = x - \int_{-1}^1  |f(y)|^2 \left[i\pi \delta(y-x) + \mathcal{P} \frac{1}{y-x}\right] dy = x- i \pi |f(x)|^2 - \int_{-1}^1 \mathcal{P} \frac{|f(y)|^2 dy}{y-x}. 
+f(x) = u(x) + i v(x)
+ \sqrt{2} v(x) = -\pi [u(x)^2 + v(x)^2] \qquad(1)
+ \sqrt{2} u(x)= x- \int_{-1}^1 \mathcal{P} \frac{[u(y)^2+v(y)^2] dy}{y-x}.\qquad(2)
+u
+-\sqrt{2}/\pi\leq v\leq 0
+v=-1/\sqrt{2}\pi + \delta v
+\theta(x)
+ 2 \pi^2 (u^2 + \delta v^2) = 1.
+ u= \frac1{\sqrt{2} \pi} \cos\theta \qquad \text{and}\qquad \delta v= v+\frac{1}{\sqrt{2}\pi} =\frac1{\sqrt{2} \pi} \sin \theta.
+ \cos \theta(x) = \pi x + \int_{-1}^1\mathcal{P} \frac{\sqrt{2} v(y)dy}{y-x} = \pi x + \frac1\pi \log\left| \frac{1+x}{1-x} \right|+ \frac{1}{\pi}\int_{-1}^1\mathcal{P} \frac{\sin\theta(y)dy}{y-x} .

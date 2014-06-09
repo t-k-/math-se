@@ -1,0 +1,22 @@
+ F(s)=\frac{2 \omega^3}{(s^2+\omega^2)^2} 
+L(e^{at})=\frac1{s-a}
+a=ib,L(e^{ibt})=\frac1{s-ib}
+L(\cos bt)+iL(\sin bt)=\frac{s+ib}{s^2+b^2}
+L(\cos bt)=\frac s{s^2+b^2}
+L(\sin bt)=\frac b{s^2+b^2}
+L(t^n)=\frac{n!}{s^{n+1}}
+L\{e^{ctf(t)}\}=F(s-c)
+F(s)=L\{f(t)\},
+L(t^ne^{ibt})=\frac{n!}{(s-ib)^{n+1}}=\frac{n!(s+ib)^{n+1}}{(s-ib)^{n+1}(s+ib)^{n+1}}=\frac{n!(s+ib)^{n+1}}{(s^2+b^2)^{n+1}}
+n=1,L(te^{ibt})=\frac{(s+ib)^2}{(s^2+b^2)^2}\implies L(t\cos bt)=\frac{s^2-b^2}{(s^2+b^2)^2}
+\frac1{(s^2+b^2)^2}=A\frac1{s^2+b^2}+B\frac{s^2-b^2}{(s^2+b^2)^2}
+1=A(s^2+b^2)+B(s^2-b^2)=s^2(A+B)+b^2(A-B)
+A+B=0, b^2(A-B)=1\implies -B=A=\frac1{2b^2}
+L^{-1}\left(\frac1{(s^2+b^2)^2}\right)=\frac1{2b^2}\left(\frac{\sin bt}b-t\cos bt\right)
+ F(s)=\frac{2w^3}{(s^2+w^2)^2}=2w.(\frac{w}{s^2+w^2}).(\frac{w}{s^2+w^2}) 
+ f(t)=2w.\sin(wt)*\sin(wt)=2w \int_0^t  \sin(w(t-\tau))\sin(w \tau) d \tau 
+ \sin(w(t-\tau))\sin(w \tau)=\frac{1}{2}\left[ \cos(wt-2w \tau) -\cos(w \tau) \right] 
+ f(t)=w \int_0^t \cos(wt-2w \tau) -\cos(w \tau) d\tau
+ f(t)=w \left[ \int_0^t\cos(wt)\cos(2w\tau)d\tau  + \int_0^t \sin(wt) \sin(2w\tau) d\tau -  \int_0^t \cos(wt)d\tau   \right] 
+ f(t)=w \left[ \frac{\cos(wt)\sin(2wt)}{2w}+\frac{-\sin(wt)\left[\cos(2wt)-1 \right]}{2w}  -t\cos(wt)\right] 
+ f(t)=\sin(wt)-wt \cos(wt) 

@@ -1,0 +1,40 @@
+\lambda_i
+S
+\mathbb{R}^n
+d\sigma
+\int\limits_S \exp\left\{\sum_{i=1}^n \lambda _ix_i\right\} \, d\sigma
+\sum _{i=1}^n x_i=1
+\forall _i0\leq x_i\leq 1,
+x_1 = u_1
+x_2 = (1-u_1)u_2
+x_{n-1} = (1-u_1)(1-u_2)\cdots (1-u_{n-2}) u_{n-1}
+x_{n} = (1-u_1)(1-u_2)\cdots (1-u_{n-2})(1- u_{n-1})
+(1-u_1)^{n-1} (1-u_2)^{n-2} \cdots (1-u_{n-2})
+    \int_0^1 du_1 \cdots \int_0^1 du_{n-1} (1-u_1)^{n-1} (1-u_2)^{n-2} \cdots (1-u_{n-2}) \; \mathrm{e}^{ \lambda_1 u_1 + \lambda_2 (1-u_1)u_2 + \cdots + \lambda_{n} (1-u_1)\cdots (1-u_{n-1}) } 
+u_{n-1}
+u_{n-1}
+ (1-u_1)\cdots (1-u_{n-2})(\lambda_{n-1} u_{n-1} + \lambda_{n} (1-u_{n-1}))
+u_{n-1}
+    \int_0^1 du_1 \cdots \int_0^1 du_{n-2} (1-u_1)^{n-2} (1-u_2)^{n-3} \cdots (1-u_{n-3}) \; \mathrm{e}^{ \lambda_1 u_1 + \lambda_2 (1-u_1)u_2 + \cdots + \lambda_{n-2} (1-u_1)\cdots (1-u_{n-3}) } f 
+f = \frac{1}{\lambda_{n} -\lambda_{n-1}} ( e^{(1-u_1)(1-u_2)\cdots (1-u_{n-2}) \lambda_{n}} - e^{(1-u_1)(1-u_2)\cdots (1-u_{n-2}) \lambda_{n-1}}) 
+    \sum_{k=1}^{n}  \frac{e^{\lambda_k}}{\prod_{k\not= m} (\lambda_k - \lambda_m)} 
+\lambda_i
+\qquad\quad\qquad\quad\qquad\quad\qquad\quad\qquad\quad\qquad\quad\displaystyle \sum_i\mathrm{e}^{\lambda_i}\prod_{j\ne i}\frac1{\lambda_i-\lambda_j}. 
+J_{n+1}(\lambda_1,\ldots,\lambda_{n+1})
+n+1
+\mu_i=\lambda_i-\lambda_{n+1}
+i\le n
+x_{n}
+0\le x_{n}\le 1-x_{1}-\cdots-x_{n-1}
+\mu'_i=\mu_i-\mu_n=\lambda_i-\lambda_{n}
+i\le n-1
+J_{n+1}
+J_n
+n
+ J_{n+1}(\lambda_1,\ldots,\lambda_{n+1})=\int_{[0,1]^n}\mathrm{e}^{\lambda_1x_1+\cdots+\lambda_nx_n+\lambda_{n+1}(1-x_1-\cdots-x_n)}\mathbf{1}_{0\le x_1+\cdots+x_n\le1}\text{d}x_1\cdots\text{d}x_n. 
+ J_{n+1}(\lambda_1,\ldots,\lambda_{n+1})=\mathrm{e}^{\lambda_{n+1}}K_n(\mu_1,\ldots,\mu_n), 
+ K_n(\mu_1,\ldots,\mu_n)=\int_{[0,1]^n}\mathrm{e}^{\mu_1x_1+\cdots+\mu_nx_n}\mathbf{1}_{0\le x_1+\cdots+x_n\le1}\text{d}x_1\cdots\text{d}x_n. 
+ \int_0^{1-s}\mathrm{e}^{\mu_{n}x_{n}}\mathrm{d}x_{n}=\frac1{\mu_{n}}(\mathrm{e}^{\mu_{n}(1-s)}-1), 
+ K_{n}(\mu_1,\ldots,\mu_{n})=\frac1{\mu_n}(\mathrm{e}^{\mu_n}K_{n-1}(\mu'_1,\ldots,\mu'_{n-1})-K_{n-1}(\mu_1,\ldots,\mu_{n-1})). 
+ J_{n+1}(\lambda_1,\ldots,\lambda_{n+1})=\frac1{\mu_n}(J_{n}(\lambda_1,\ldots,\lambda_{n})-J_{n}(\lambda_1,\ldots,\lambda_{n-1},\lambda_{n+1})), 
+ J_2(\lambda_1,\lambda_2)=\mathrm{e}^{\lambda_1}\frac1{\lambda_1-\lambda_2}+\mathrm{e}^{\lambda_2}\frac1{\lambda_2-\lambda_1}, 

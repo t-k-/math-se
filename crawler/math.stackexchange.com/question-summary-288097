@@ -1,0 +1,58 @@
+x \in \mathbb{R}^n
+x_{[i]}
+i
+x
+r
+x
+x \in \mathbb{R}^n
+y \in \mathbb{R}^n
+ x_{[1]} \geq x_{[2]} \geq x_{[3]}\ge\cdots 
+ f(x)= \sum_{i=1}^r x_{[i]} 
+ y^Tx \leq f(x) 
+ 0 \leq y_i \leq 1 \hspace{2mm}\forall i=1,2,\ldots,n \\ \sum_{i=1}^n y_i = r 
+f(x)
+[i]
+(1,2,3,\dots,n)
+x_{[i]}\ge x_{[i+1]}
+\color{#00A000}{\ge0}
+\color{#C00000}{\le0}
+ \begin{align} f(x)-y^Tx &=\sum_{i=1}^rx_{[i]}-\sum_{i=1}^ny_{[i]}x_{[i]}\\ &=\sum_{i=1}^r\left(x_{[i]}-y_{[i]}x_{[i]}\right) +\sum_{i=r+1}^n\left(0-y_{[i]}x_{[i]}\right)\\ &=\sum_{i=1}^rx_{[i]}\left(1-y_{[i]}\right) -\sum_{i=r+1}^nx_{[i]}\left(y_{[i]}\right)\\ &=\sum_{i=1}^r\color{#00A000}{\left(x_{[i]}-x_{[r]}\right)}\color{#0000FF}{\left(1-y_{[i]}\right)} -\sum_{i=r+1}^n\color{#C00000}{\left(x_{[i]}-x_{[r]}\right)}\color{#0000FF}{\left(y_{[i]}\right)}\\[6pt] &\ge0 \end{align} 
+x_{[r]}
+ \sum_{i=1}^r\color{#0000FF}{\left(1-y_{[i]}\right)} -\sum_{i=r+1}^n\color{#0000FF}{\left(y_{[i]}\right)} =r-\sum_{i=1}^ny_{[i]}=0 
+ x_1 \geq x_2 \geq \dots \geq x_n 
+x_i
+ x_1 > x_2 > \dots > x_n .
+y=(y_1,y_2,\dots,y_n) \in S
+ y^Tx = \sup_{w \in S} w^Tx
+ S = \{ (y_1,y_2,\dots,y_n) : y_i \in [0,1], \sum y_i = r \}
+y_i = 1
+ 1 \leq i \leq r 
+0 \leq y_j < 1
+ 1 \leq j \leq r 
+\sum_{i=1}^r y_i < r
+ \sum_{i=r+1}^{n} y_i = r - \sum_{i=1}^r y_i > 0
+k
+ r+1 \leq k \leq n
+y_k > 0
+ \epsilon > 0
+ y_j + \epsilon \leq 1
+ y_k - \epsilon \geq 0
+z = (y_1, \dots, y_{j-1},y_{j}+\epsilon, y_{j+1}, \dots , y_k - \epsilon , \dots , y_n )
+z \in S
+z^{T}x - y^Tx = (x_j - x_k ) \epsilon > 0.
+y
+y_1 = y_2 = \dots = y_r = 1
+S
+x
+x
+\sup_{w \in S} w^Tx = \sum_{i=1}^{r} x_i
+x = (x_1,x_2, \dots, x_n)
+x_1 \geq x_2 \dots \geq x_n
+x^{k} = (x_1, x_2 - \frac{1}{k}, x_3 - \frac{2}{k} , \dots , x_{n} - \frac{n-1}{k} )
+x^{k}
+x^k \to x
+k \to \infty
+x_1^k > x_2^k > \dots > x_n^k
+y \in S
+k \to \infty
+ y^Tx^k \leq \sum_{i=1}^{r} x_i^k,

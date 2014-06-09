@@ -1,0 +1,53 @@
+\frac{dy}{dt} = - \frac{∂H}{∂z}, \frac{dz}{dt}= \frac{∂H}{∂y}
+y
+z
+H(y,z)
+H(y,z) =Ay^2 + 2Hyz + Bz^2
+A,B,H
+ y_{n+1} = y_{n} - h z_{n}
+ z_{n+1} = z_{n} + h y_{n}
+ y^{2}_{n+1}+z^{2}_{n+1} = (1+h^{2}) (y^{2}_{n} + z^{2}_{n})
+H(y,z) =Ay^2 + 2Hyz + Bz^2
+ y_{n+1} = y_{n} - h z_{n}
+ z_{n+1} = z_{n} + h y_{n+1}
+ y^{2}_{n}+z^{2}_{n} = (1-h^{2}+h^{4}) (y^{2}_{n+1}- 2h^{3} y_{n+1} z_{n+1}+(1+h^{2}) z^{2}_{n})
+H(y,z) =Ay^2 + 2Hyz + Bz^2
+A= 1-h^{2}+h^{4}, H= -h^{3}, B=1+h^{2}
+AB-H^{2}= (1-h^{2}+h^{4})(1+h^{2})-(-h^{3})
+= 1-h^{2}+h^{4}+h^{2}-h^{4}+h^{6}+h^{6}
+= 1+2h^{6}
+AB-H^{2}=\lambda_{1} \lambda_{2}
+a= \frac{1}{\sqrt{\lambda_{1}}} , b=\frac{1}{\sqrt{\lambda_{2}}}
+\frac{\pi}{\sqrt{(1+2h^{6})}}
+ellipse = \pi a b)
+\dfrac{dH}{dt} = \dfrac{\partial H}{\partial y}\dfrac{dy}{dt} + \dfrac{\partial H}{\partial z}\dfrac{dz}{dt} \tag{1}
+\dfrac{dy}{dt} = - \dfrac{∂H}{∂z}, \tag{2}
+\dfrac{dz}{dt}= \dfrac{∂H}{∂y}; \tag{3}
+\dfrac{dH}{dt} = -\dfrac{\partial H}{\partial y} \dfrac{\partial H}{\partial z} + \dfrac{\partial H}{\partial z} \dfrac{\partial H}{\partial y} = 0 \tag{4}
+H(y, z)
+H(x, y)
+H(y, z) = Ay^2 + 2Hyz + Bz^2 = \text{constant} \tag{5}
+A, B, H
+H(y, z)
+H(y, z) = (y, z) \begin{bmatrix} A & H \\ H & B \end{bmatrix} \begin{pmatrix} y \\ z \end{pmatrix} = \begin{pmatrix} y \\ z \end{pmatrix}^T \begin{bmatrix} A & H \\ H & B \end{bmatrix} \begin{pmatrix} y \\ z \end{pmatrix}. \tag{6}
+M = \begin{bmatrix} A & H \\ H & B \end{bmatrix} \tag{7}
+O
+O^T M O = \begin{bmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{bmatrix}; \tag{8}
+\lambda_1
+\lambda_2
+M
+\lambda^2 - (A + B)\lambda + (AB - H^2) = 0, \tag{9}
+x_1
+x_2
+y
+z
+O
+H(x_1, x_2) = (x_1, x_ 2) \begin{bmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{bmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} =  \lambda_1 x_1^2 + \lambda_2 x_2^2; \tag{10}
+H(x_1, x_2) = \lambda_1 x_1^2 + \lambda_2 x_2^2 = \text{constant} \tag{11}
+\det M = AB - H^2 = \lambda_1 \lambda_2 > 0. \tag{12}
+H(y, z)
+x_1
+x_2
+\lambda_1 \lambda_2 < 0
+H(y, z)
+H(y, z)

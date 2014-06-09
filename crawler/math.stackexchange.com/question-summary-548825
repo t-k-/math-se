@@ -1,0 +1,20 @@
+\bullet
+Y(t)=\displaystyle\int_{t}^{t+1}(W(s)-W(t))\;ds
+W(s)-W(t)\thicksim N(0,s-t)
+\mathbb{E}[Y(t)]=\displaystyle\int_{t}^{t+1}\mathbb{E}[W(s)-W(t)]\;ds=\displaystyle\int_{t}^{t+1}0\; ds=0
+\mathbb{E}[Y(t)^2]<\infty
+\mathbb{E}[Y(t)^2]= \Gamma_Y (t,t)
+\Gamma_Y(s,t)
+s \leq t
+\mathbb{E}((W_u-W_s) \cdot (W_v-W_t)) = 0
+s \leq u \leq t \leq v
+\mathbb{E}(Y_t \cdot Y_s)=0
+s \leq t-1
+t-1 \leq s \leq t
+\begin{align*} \mathbb{E}(Y_t \cdot Y_s) &= \int_t^{t+1} \int_t^{s+1} \mathbb{E}\big(((W_u-W_t)+(W_t - W_s)) \cdot (W_v-W_t)\big) \, du \, dv\\ &=\int_t^{t+1} \int_t^{s+1} \mathbb{E}\big((W_u - W_t) \cdot (W_v-W_t)\big) \, du \, dv \\ &=\int_0^{1} \int_0^{(s+1)-t} \mathbb{E}\big((W_{u+t} - W_t) \cdot (W_{v+t}-W_t)\big) \, du \, dv\end{align*}
+W_v-W_t
+W_t-W_s
+0
+B_u := W_{t+u}-W_t
+u\geq0
+\mathbb{E}(Y_t \cdot Y_s) =  \int_0^{s+1-t} \int_0^1 \underbrace{\text{cov}(B_u,B_v)}_{\min\{u,v\}} \, dv \, du

@@ -1,0 +1,10 @@
+\int_S(\nabla \times {\bf F}) \cdot d{\bf S}
+z = (x^2 + y^2)^{1/2},x^2 + y^2 \leq 1
+{\bf F} = (z^2, z, y^2)
+{\bf p}(u, v) = (u, v, (u^2 + v^2)^{1/2})
+\frac{\partial {\bf p}}{\partial u} \times \frac{\partial {\bf p}}{\partial v} = \left( \frac{-u}{(u^2 + v^2) ^ {1/2}}, \frac{-v}{(u^2 + v^2) ^ {1/2}}, 1 \right) 
+\int_S(\nabla \times {\bf F}) \cdot d{\bf S} = \int_u\int_v (\nabla \times {\bf F})({\bf p}(u, v)) \cdot \left( \frac{\partial {\bf p}}{\partial u} \times \frac{\partial {\bf p}}{\partial v} \right) du dv
+u,v
+-1 \leq u \leq1 \\ -\sqrt{1-u^2} \leq v \leq +\sqrt{1-u^2} .
+\mathbf{p}(r,\theta)=(r \cos \theta,r \sin \theta,r) 
+0 \leq r \leq 1 \\ 0\leq \theta\leq 2 \pi. 

@@ -1,0 +1,16 @@
+f
+\displaystyle f^*(x) = \text{sup}_{x\in B} \frac{1}{m(B)}\int_B|f(y)|dy
+x
+m(\{x\in \mathbb{R}^d:f^*(x)>\alpha\}) \leq \frac{A}{\alpha}||f||_{L^1(\mathbb{R}^d)}
+A=3^d
+E_\alpha = \{x\in \mathbb{R}^d:f^*(x)>\alpha\}
+K
+E_\alpha
+m(K) \leq \frac{A}{\alpha}||f||_{L^1(\mathbb{R}^d)} 
+K
+E_\alpha
+U
+\mathbb{R}^d
+U = \bigcup_{n=0}^\infty K_n,
+K_n \subset \overset{\circ}{K}_{n+1}
+m(E_\alpha) = \int_{\mathbb{R}^d} \chi_{E_\alpha} \, dm = \int_{\mathbb{R}^d} \lim_{n\to\infty}\chi_{K_n}\, dm = \lim_{n\to\infty} \int_{\mathbb{R}^d} \chi_{K_n}\, dm \leqslant \frac{A}{\alpha} \lVert f\rVert_1.

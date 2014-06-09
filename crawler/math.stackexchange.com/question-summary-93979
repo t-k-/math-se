@@ -1,0 +1,67 @@
+V
+\mathfrak{V}=\{v_1, \ldots, v_n\}
+\mathfrak{W}=\{w_1,\ldots,w_n\}
+T:V \to V
+M_\mathfrak{V}^\mathfrak{V}(T)=A
+M_\mathfrak{W}^\mathfrak{W}(T)=B
+T
+\mathfrak{V}
+\mathfrak{W}
+A
+B
+C
+A=CBC^{-1}
+w_i
+\mathfrak{V}
+w_i=c_{1i}v_1+c_{2i}v_2+\cdots+c_{ni}v_n\;.
+C=\pmatrix{c_{11}&c_{12}&c_{13}&\dots&c_{1n}\\ c_{21}&c_{22}&c_{23}&\dots&c_{2n}\\ c_{31}&c_{32}&c_{33}&\dots&c_{3n}\\ \vdots&\vdots&\vdots&\ddots&\vdots\\ c_{n1}&c_{n2}&c_{n3}&\dots&c_{nn}}\;.
+x=a_1w_1+a_2w_2+\cdots+a_nw_n
+x
+\mathfrak{W}
+\langle a_1,a_2,\dots,a_n\rangle
+C\pmatrix{a_1\\a_2\\a_3\\\vdots\\a_n}=\pmatrix{c_{11}a_1+c_{12}a_2+c_{13}a_3+\cdots+c_{1n}a_n\\ c_{21}a_1+c_{22}a_2+c_{23}a_3+\cdots+c_{2n}a_n\\ c_{31}a_1+c_{32}a_2+c_{33}a_3+\cdots+c_{3n}a_n\\ \vdots\\ c_{n1}a_1+c_{n2}a_2+c_{n3}a_3+\cdots+c_{nn}a_n}\;.
+x
+\mathfrak{V}
+\begin{align*} x&=\sum_{i=1}^na_iw_i\\ &=\sum_{i=1}^na_i(c_{1i}v_1+c_{2i}v_2+\cdots+c_{ni}v_n)\\ &=\sum_{i=1}^n(c_{1i}a_iv_1+c_{2i}a_iv_2+\cdots+c_{ni}a_iv_n)\\ &=\sum_{i=1}^n\sum_{j=1}^nc_{ji}a_iv_j\\ &=\sum_{j=1}^n\sum_{i=1}^nc_{ji}a_iv_j\\ &=\sum_{j=1}^nv_j(c_{j1}a_1+c_{j2}a_2+\cdots+c_{jn}a_n)\\ &=(c_{11}a_1+c_{12}a_2+\cdots+c_{1n}a_n)v_1\\ &\qquad\qquad+(c_{21}a_1+c_{22}a_2+\cdots+c_{2n}a_n)v_2\\ &\qquad\qquad+(c_{31}a_1+c_{32}a_2+\cdots+c_{3n}a_n)v_3\\ &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\vdots\\ &\qquad\qquad+(c_{n1}a_1+c_{n2}a_2+\cdots+c_{nn}a_n)v_n\;. \end{align*}
+CBC^{-1}x
+x\in V
+\mathfrak{V}
+C^{-1}
+\mathfrak{W}
+B
+\mathfrak{W}
+T(x)
+C
+\mathfrak{V}
+\mathfrak{V}
+T(x)
+x
+\mathfrak{V}
+A
+CBC^{-1}x=Ax
+x
+CBC^{-1}=A
+X = \begin{pmatrix}v_1\vdots & \cdots & \vdots v_n\end{pmatrix}
+\mathfrak{V}
+Y = \begin{pmatrix}w_1\vdots & \cdots & \vdots w_n\end{pmatrix}
+\mathfrak{W}
+A=XTX^{-1}
+X^{-1}
+T
+X
+\mathfrak{V}
+B=YTY^{-1}
+A = XTX^{-1} = X(YTY^{-1})X^{-1} = (XY)T(XY)^{-1}
+T:V\to W
+A\subset V,B\subset W
+ {}_BT_A. 
+({}_CU_B)({}_BT_A)={}_C(UT)_A
+T:V\to V
+A,B\subset V
+I
+V
+{}_BI_B
+{}_BI_A
+{}_AI_B
+ ({}_BT_B)=({}_BI_A)({}_AT_A)({}_AI_B) 
+ ({}_BI_A)({}_AI_B)={}_BI_B. 

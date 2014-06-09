@@ -1,0 +1,26 @@
+Y_1
+Y_2
+Y_n
+θ
+f (y | θ)=\begin{cases} (θ + 1)y^θ, &  0 < y < 1; θ > −1,\\ 0 ,& elsewhere.\end{cases}
+μ = \frac{\theta + 1}{\theta + 2} 
+n
+Y_1, Y_2, \cdots, Y_n
+(1)
+(2)
+(3)
+ \text{E}\left[Y^n\right]=\frac{1}{n}\sum_{i=1}^n y_i^n.\tag1 
+ \overline{y}=\frac{1}{n}\sum_{i=1}^n y_i.\tag2 
+ \begin{align} \mu&=\text{E}[Y]\\ &=\int_{y=0}^1 yf(y|\theta)\ dy\\ &=\int_{y=0}^1 y(\theta+1)y^\theta\ dy\\ &=(\theta+1)\int_{y=0}^1 y^{\theta+1}\ dy\\ &=(\theta+1)\cdot\left.\frac{y^{\theta+2}}{\theta+2}\right|_{y=0}^1\\ &=\frac{\theta+1}{\theta+2}.\tag3 \end{align} 
+ \begin{align} \frac{\hat{\theta}+1}{\hat{\theta}+2}&=\overline{y}\\ \hat{\theta}+1&=\overline{y}(\hat{\theta}+2)\\ \hat{\theta}+1&=\overline{y}\hat{\theta}+2\overline{y}\\ \hat{\theta}-\overline{y}\hat{\theta}&=2\overline{y}-1\\ \hat{\theta}(1-\overline{y})&=2\overline{y}-1\\ \hat{\theta}&=\frac{2\overline{y}-1}{1-\overline{y}}\\ &=-\frac{2\overline{y}-1}{\overline{y}-1}. \end{align} 
+\\
+\Large\color{blue}{\text{# }\mathbb{Q.E.D.}\text{ #}}
+\theta
+\bar{y}
+\mu = \int_0^1y*(\theta +1)*y^{\theta}dy = \int_0^1(\theta +1)*y^{\theta+1}dy = \frac{\theta +1}{\theta +2}*(y^{\theta+2}|_0^1 = \frac{\theta+1}{\theta +2}
+\mu
+\bar{y} = \frac{1}{n}\sum_{i=1}^nY_i
+\bar{y} = \frac{\theta+1}{\theta +2}
+\theta
+\bar{y}
+\hat{\theta} = \frac{1-2\bar{y}}{\bar{y}-1}

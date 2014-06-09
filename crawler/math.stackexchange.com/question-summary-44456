@@ -1,0 +1,22 @@
+p > 1
+\{a_j\}_{j=1}^\infty
+n\in  N
+ \sum\limits_{k=1}^n\left(\frac{\sum_{i=1}^ka_i}{k}\right)^p\le \left(\frac{p}{p-1}\right)^p \sum\limits_{k=1}^n a_k^p
+(\mathbb{R}^{+},\frac{dt}{t})
+\frac{dt}{t}
+g:\mathbb{R}^{+}\to [0,\infty)
+h:\mathbb{R}^{+}\to [0,\infty)
+g(x)=\left|f(x)\right|x^{1-\frac{b}{p}}
+h(x)=x^{-\frac{b}{p}}\chi_{[1,\infty)}(x)
+F=g\star h
+x\in\mathbb{R}^{+}
+ \left\|h\right\|_{L^1(\mathbb{R}^{+},\frac{dt}{t})}= \int_{1}^{\infty} t^{-\frac{b}{p}-1}dt=\frac{p}{b} 
+\left\|g\right\|_{L^p(\mathbb{R}^{+},\frac{dt}{t})}=\left(\int_{0}^{\infty} \left|f(t)\right|^p t^{p-b-1} dt \right)^{\frac{1}{p}} 
+g:\mathbb{R}^{+}\to [0,\infty), h:\mathbb{R}^{+}\to [0,\infty)
+g(x)=\left|f(x)\right|x^{1+\frac{b}{p}}
+h(x)=x^{\frac{b}{p}}\chi_{(0,1]}(x)
+F=g\star h
+ F(x)= \int_{0}^{\infty} \left|f(t)\right|t^{1+\frac{b}{p}}\;\;\frac{x^{\frac{b}{p}}}{t^{\frac{b}{p}}}\chi_{(0,1]}\left(\frac{x}{t}\right)\frac{dt}{t}      = x^{\frac{b}{p}}\int_{x}^{\infty} \left|f(t)\right| dt 
+x\in\mathbb{R}^{+}
+ \left\|h\right\|_{L^1(\mathbb{R}^{+},\frac{dt}{t})}=\int_{0}^{1} t^{\frac{b}{p}-1} dt                                                     = \frac{p}{b} 
+\left\|g\right\|_{L^p(\mathbb{R}^{+},\frac{dt}{t})}=\left(\int_{0}^{\infty} \left|f(t)\right|^p t^{p+b-1} dt \right)^{\frac{1}{p}} 

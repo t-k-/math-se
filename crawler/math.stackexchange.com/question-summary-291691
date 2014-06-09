@@ -1,0 +1,29 @@
+5⋅2.4^{n-1}\le p(n)\le 5⋅2.5^{n-1}
+p(n)
+p(n+1)=2\Big(p(n)+p(n-1)-p(n-2)\Big)\tag{1}
+p(1)=5,p(2)=12
+p(3)=30
+(1)
+\begin{align*}p_1(n)&=p_1(n-1)+p_2(n-1)+p_3(n-1)\\&=p(n-1)-\big(p_1(n-1)+p_2(n-1)\big)\\&=p(n-1)-\Big(\big(p_1(n-2)+p_2(n-2)+p_3(n-2)\big)+\big(p_1(n-2)+p_2(n-2)\big)\Big)\\&=p(n-1)-\Big(2p_1(n-2)+2p_2(n-2)+p_3(n-2)\Big)\\&=p(n-1)-p(n-2)\;,\end{align*}
+n\ge 1
+d_n=\dfrac{p(n+1)}{p(n)}
+p(1)=\dfrac{12}5=2.4
+p(2)=\dfrac{30}{12}=2.5
+n\ge 3
+1\le k<n
+\frac{12}5\le d_k\le\frac52
+\begin{align*} d_n&=\frac{p(n+1)}{p(n)}\\\\ &=2+\frac{2p(n-1)-2p(n-2)}{p(n)}\\\\ &=2+\frac2{d_{n-1}}-\frac{2p(n-2)}{p(n-1)}\cdot\frac{p(n-1)}{p(n)}\\\\ &=2+\frac2{d_{n-1}}-\frac2{d_{n-1}d_{n-2}}\\\\ &=2+\frac2{d_{n-1}}\left(1-\frac1{d_{n-2}}\right)\;. \end{align*}
+\frac7{12}\le 1-\frac1{d_{n-2}}\le\frac35\quad\text{and}\quad\frac45\le\frac2{d_{n-1}}\le\frac56\;,
+2.4<2+\frac7{15}=2+\frac7{12}\cdot\frac45\le d_n\le 2+\frac35\cdot\frac56=\frac52\;,
+2.4\le d_n\le 2.5
+n\ge 1
+p(1)=5
+5(2.4)^{n-1}\le p(n)\le 5(2.5)^{n-1}
+n\ge 1
+p_i(n)
+i
+i=1,2,3,4,5
+p_1(n)=p_5(n)
+p_2(n)=p_4(n)
+p(n)=2p_1(n)+2p_2(n)+p_3(n)
+\left(\begin{matrix} p_1(n)\\p_2(n)\\p_3(n)\end{matrix}\right)=\left(\begin{matrix}1&1&1\\1&1&0\\2&0&0\end{matrix}\right)^{n-1}\left(\begin{matrix} 1\\1\\1\end{matrix}\right)

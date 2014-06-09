@@ -1,0 +1,22 @@
+\dfrac{dy}{dx}=\begin{pmatrix}0&1\\-1&0 \end{pmatrix}y + \begin{pmatrix}\sin(\omega x)\\0 \end{pmatrix} , (\omega \neq \pm 1)
+\omega
+\dfrac{dy}{dx}= \begin{pmatrix}0&1\\-1&0 \end{pmatrix}y\\ y_p(x)=\begin{pmatrix}\cos(x) & \sin(x)\\ - \sin(x) & \cos(x) \end{pmatrix}
+\begin{pmatrix} \sin(\omega x)\\0\end{pmatrix}
+\begin{pmatrix} y_1\\y_2\end{pmatrix}
+y_1
+y_2
+\displaystyle \frac{dy_1}{dx} = y_2 + \sin(\omega x)
+\displaystyle \frac{dy_2}{dx} = -y_1
+x
+\displaystyle \frac{d^2y_1}{dx} = \frac{dy_2}{dx} + \omega \cos(\omega x) = -y_1 + \omega \cos(\omega x)
+\displaystyle \frac{d^2y_2}{dx} = -\frac{dy_1}{dx} = -y_2 - \sin(\omega x)
+\displaystyle \frac{d^2y_1}{dx} + y_1 = \omega \cos(\omega x)
+\displaystyle \frac{d^2y_2}{dx} + y_2 = - \sin(\omega x)
+y_1
+y_1^h = A \sin(x) + B \cos(x)
+y_1^p = \kappa_1 \cos(\omega x)
+\kappa_1
+\displaystyle \kappa_1 = \frac{\omega}{1-\omega^2}
+\displaystyle y_1 = A \sin(x) + B \cos(x) + \frac{\omega}{1-\omega^2} \cos(\omega x)
+y_2
+\displaystyle y_2 = \frac{dy_1}{dx} - \sin(\omega x) = A \cos(x) - B \sin(x) - \frac{1}{1-\omega^2} \sin(\omega x)

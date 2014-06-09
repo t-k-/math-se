@@ -1,0 +1,12 @@
+f(x)
+[0,a]
+\lim_{x\to+\infty} f(x)=1
+\lim_{t\to 0+}\int_0^{\infty}t\text{e}^{-tx}f(x)\text{d}x=1
+g:z\mapsto\sup\limits_{x\geqslant z}|f(x)-1|
+z
+z
+g
+0
++\infty
+ \left|\int_0^{+\infty}t\mathrm e^{-tx}f(x)\mathrm dx-1\right|\leqslant(1-\mathrm e^{-tz})\cdot g(0)+\mathrm e^{-tz}\cdot g(z)\leqslant t\cdot z\cdot g(0)+ g(z) 
+ \limsup\limits_{t\to0}\ \left|\int_0^{+\infty}t\mathrm e^{-tx}f(x)\mathrm dx-1\right|\leqslant g(z). 

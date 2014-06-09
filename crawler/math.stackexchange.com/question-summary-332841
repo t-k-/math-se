@@ -1,0 +1,40 @@
+f
+[-\pi,\pi]
+2\pi
+f(x+)
+f(x-)
+x
+\lim_{N\rightarrow \infty}\sigma_N(f;x)=\frac{1}{2}[f(x+)+f(x-)].
+F_N
+ 2\pi\,\sigma_N (f;x) = \int_{-\pi}^{\pi} f(x-t)F_N(t)\,dt = \int_0^{\pi}f(x-t)F_N(t)\,dt + \int_0^{\pi}f(x+t)F_N(t)\,dt 
+\pi\, f(x-)
+\pi\, f(x+)
+x=0
+(t\ne0)
+(t=0)
+2\pi
+0
+t
+g(t)=f(t)+u(t)
+u(t):={f(t)- f(-t)\over2}
+u
+\sigma_{u,N}
+N
+g(t):=\cases{{f(t)+f(-t)\over2}\quad&$(t\ne0)$\cr &\cr  \lim_{t\to 0+}{f(t)+f(-t)\over2}&$(t=0)$ \cr}\ .
+\lim_{N\to\infty}\sigma_{g,N}(0)=g(0)=\lim_{t\to 0+}{f(t)+f(-t)\over2}\ .
+\lim_{N\to\infty}\sigma_{f,N}(0)=\lim_{N\to\infty}\sigma_{g,N}(0)=\lim_{t\to 0+}{f(t)+f(-t)\over2}\ ,
+0< \delta < \pi
+0 \leq F_n(x) \leq (n\sin(x/2)^2)^{-1}
+ \limsup_{n\to\infty}  \left|\int_0^\pi f(x+t)F_n(t)\,dt - \int_0^\delta f(x+t)F_n(t)\,dt\right| \leq \limsup_{n\to\infty}\int_\delta^\pi|f(x+t)|F_n(t)\,dt = 0 
+\int_0^\pi F_n(t)\,dt = \frac{1}{2}\int_{-\pi}^\pi F_n(t)\,dt = \pi
+ \limsup_{n\to\infty}\left|\pi\, f(x+)-\int_0^\delta f(x+)F_n(t)\,dt\right| = 0 
+ \limsup_{n\to\infty} \left|\pi\, f(x+)-\int_0^\pi f(x+t)F_n(t)\,dt\right| \leq \limsup_{n\to\infty} \int_0^\delta|f(x+t)-f(x+)|F_n(t)\,dt 
+f(x+t)
+t
+\epsilon > 0
+\delta > 0
+ \sup_{0 < t < \delta}|f(x+t)-f(x+)| \leq \epsilon 
+\epsilon > 0
+ \limsup_{n\to\infty} \left|\pi\, f(x+)-\int_0^\pi f(x+t)F_n(t)\,dt\right| \leq \epsilon \,\limsup_{n\to\infty} \int_0^\delta F_n(t)\,dt \leq \pi\epsilon 
+ \lim_{n\to\infty} \int_0^\pi f(x+t)F_n(t)\,dt = \pi\,f(x+) 
+ \lim_{n\to\infty} \int_0^\pi f(x-t)F_n(t)\,dt = \pi\,f(x-) 

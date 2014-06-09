@@ -1,0 +1,21 @@
+\int_0^\infty\left[\frac{1}{2} - \cos\left(x\right)\right]\,{\rm dx \over x}
+\lim_{x\rightarrow\infty} -Ci(x) + Ci(1/x) +\ln(x)
+\gamma
+ Ci(x) = \gamma + \ln x + \int_0^x \frac{\cos t -1}{t} dt 
+\gamma
+\int_0^{+\infty}\left(\frac 1 2 - \cos x\right)\frac {dx} x = \gamma
+\bbox[0.2ex,border:0.5pt solid black]{\int_0^1 \frac {1-\cos(y)}y\,dy -\int_1^{+\infty} \frac {\cos(y)} y\,dy=\gamma}
+n
+\begin{align} A(n)  &= \int_0^{n\pi} \frac{1-\cos (y)}{y} dy - \ln ( n\pi ) \\ &= \int_0^1 \frac{1-\cos (y)}{y} dy + \int_1^{n\pi} \frac{1-\cos (y)}{y} dy - \ln ( n\pi ) \\ &= \int_0^1 \frac{1-\cos(y)}{t} dy - \int_1^{n\pi} \frac{\cos(y)}{y} dy \end{align}
+x = 2 \pi ny
+\begin{align} \int_0^{n\pi} \frac{1-\cos(x)}{x} xy  &= \int_0^{\frac{1}{2}} \frac{1 - \cos (2\pi ny)}{y} dy \\ &= \pi \int_0^{\frac{1}{2}} \frac{1 - \cos (2 \pi ny)}{\sin(\pi y)} dy + \int_0^{\frac{1}{2}} g(y) dy - \int_0^{\frac{1}{2}} g(y) \cos ( 2 \pi ny) dy \end{align}
+g(y) = \frac{1}{y} - \frac{\pi}{\sin (\pi y)}
+[0,\frac{1}{2}]
+g(0) = 0
+\int_0^\frac{1}{2} g(y) \cos ( 2 \pi n y ) dy \rightarrow 0 \text{ for } n \rightarrow + \infty
+\begin{align} \int_0^\frac12 g(y) dy  &= \lim_{s \to 0^+} \int_s^\frac12 \left( \frac 1y - \frac \pi{\sin(\pi y)} \right) dy \\ &= \lim_{s \to 0^+} \left[ \ln \left( \frac{y}{\tan ( \pi/2\;y )} \right) \right]_s^{\frac{1}{2}} = \ln ( \pi ) - 2 \ln (2) \end{align}
+\begin{align} \pi \int_{0}^{\frac{1}{2}} \frac{1 - \cos ( 2 \pi n y)}{\sin ( \pi y )} dy &= 2\pi \int_{0}^{\frac{1}{2}} \sum_{k=1}^{n} \sin ( (2k-1) \pi y ) dy \\ &= \sum_{k=1}^{n} \frac{2}{2k-1}  ={\ln (n) + 2 \ln (2) + \gamma + o(1)} \end{align}
+A(n) = \gamma + o(1)
+\pars{1}
+\pars{2}
+\color{#00f}{\large% \lim_{\epsilon \to 0^{+}}\int_{\epsilon}^{1/\epsilon}\bracks{% \half - \cos\pars{x}}\,{\dd x \over x} = \gamma} 

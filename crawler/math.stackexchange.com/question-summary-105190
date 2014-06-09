@@ -1,0 +1,4 @@
+f(t,x,k)
+dX(t)=\mu(t)dt+\sigma(t)dB(t)
+dK(t)=\nu(t)dt+\theta(t)dW(t)
+ \begin{align}df(t,X(t),K(t))=\left(\frac{\partial f}{\partial t} + \mu(t)\frac{\partial f}{\partial x}+\nu(t)\frac{\partial f}{\partial k}+\frac{1}{2}\sigma(t)^{2}\frac{\partial ^{2}f}{\partial x^{2}}+\frac{1}{2}\theta(t)^{2}\frac{\partial ^{2}f}{\partial k^{2}}\right)dt + \sigma(t)\frac{\partial f}{\partial x}dB(t) + \theta(t)\frac{\partial f}{\partial k}dW(t) + \frac{\partial^2 f}{\partial x\partial k}dB(t)dW(t) \end{align} 

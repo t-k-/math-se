@@ -1,0 +1,29 @@
+M=max\{W_t; 0\leq t <\infty\}
+W_0=0
+M\geq 0
+P(M>x)=P(T_x<\infty)
+T_x
+e^{2\mu W_t/\sigma^2}
+E[e^{2\mu W_{T_x}/\sigma^2}]=1
+E[e^{2\mu W_{T_x}/\sigma^2}]=e^{2\mu x / \sigma^2}P(T_x<\infty)+0 P(T_x=\infty) \Rightarrow P(M>x)=e^{2x\mu/\sigma^2}
+W_t := \sigma B_t - \mu \cdot t
+\mu>0
+T_x := \inf\{t \geq 0; W_t \geq x\}.
+(B_t)_{t \geq 0}
+\left(\exp\left[\frac{2\mu W_t}{\sigma^2}\right]\right)_{t \geq 0}
+\mathbb{E} \bigg( \exp \bigg[ \frac{2\mu W_{t \wedge T_x}}{\sigma^2} \bigg] \bigg) = 1
+t \geq 0
+\begin{align*}\mathbb{E} \bigg( \exp \bigg[ \frac{2\mu W_{t \wedge T_x}}{\sigma^2} \bigg] \bigg) &= \mathbb{E} \bigg( \exp \bigg[ \frac{2\mu W_{t}}{\sigma^2} \bigg] \cdot 1_{\{T_x=\infty\}} \bigg) + \mathbb{E} \bigg( \exp \bigg[ \frac{2\mu W_{t \wedge T_x}}{\sigma^2} \bigg] \cdot 1_{\{T_x<\infty\}} \bigg) \\ &=:I_1+I_2. \end{align*}
+I_2
+\exp\left(\frac{2\mu x}{\sigma^2}\right)
+T_x \wedge t \to T_x
+t \to \infty
+I_2 \stackrel{t \to \infty}{\to} \mathbb{E} \bigg( \exp \bigg[ \frac{2\mu W_{T_x}}{\sigma^2} \bigg] \cdot 1_{\{T_x<\infty\}} \bigg) = \exp \left(\frac{2\mu x}{\sigma^2} \right) \cdot \mathbb{P}(T_x<\infty).
+I_1 \to 0
+t \to \infty
+\frac{B_t}{t} \to 0 \qquad \text{as} \, t \to \infty.
+W_t = t \cdot \left( \sigma \frac{B_t}{t}- \mu \right) \to - \infty, \qquad t \to \infty.
+I_1 \to 0
+t \to \infty
+1 = \lim_{t \to \infty} (I_1+I_2) = \exp \left(\frac{2\mu x}{\sigma^2} \right) \cdot \mathbb{P}(T_x<\infty),
+\mathbb{P}(T_x<\infty) = \exp \left(-\frac{2\mu x}{\sigma^2} \right).

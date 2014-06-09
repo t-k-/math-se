@@ -1,0 +1,10 @@
+A
+A
+B
+B
+k
+a
+a \to b
+r_b \in \{1,3,7,9\}
+a
+ \small \begin{array} {}     a_1 & = & 5a+1 \\    A & = & \operatorname{valuation}(a_1,2) &  \text{// gives the exponent of 2 in the primefactorization of } z \\    b & = & a_1/2^A \\  \hline \\    B & = & \lfloor (A-1) / 4 \rfloor \\    k & = & \lfloor b/10 \rfloor \\  \hline \\    & & \text{ Now check the formula using the}&\text{parameters: }\\    r_b & = & b \operatorname{mod} 10 \\    r_a&=& [3,0,1,0,0,0,11,0,7][r_b] &  \text{// $r_b \in \{1,3,7,9\}$ is the index into a vector of residuals} \\    C &=& [4,0,1,0,0,0, 3,0,2][r_b] &  \text{//     ... and of exponents } C \\    x & = & (r_a + 2^C \cdot 2k)\cdot 16^B + 3{16^B-1 \over 16-1} & \text{// this should equal $a$: } a=x \end{array}

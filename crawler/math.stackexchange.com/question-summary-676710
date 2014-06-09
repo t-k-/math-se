@@ -1,0 +1,13 @@
+ \sum_{p\leq x} \frac{p\ln\left(p\right)}{x^2} 
+\leqslant x
+\pi(n) - \pi(n-1)
+\pi
+n
+\begin{align} \sum_{p\leqslant x} p\log p &= \sum_{n\leqslant x} \bigl(\pi(n)-\pi(n-1)\bigr)n\log n\\ &= \sum_{n \leqslant x} \pi(n)n\log n - \sum_{n\leqslant x-1} \pi(n)(n+1)\log (n+1)\\ &= \pi(x)x\log x - \sum_{n\leqslant x} \pi(n)\left[\log (n+1) + \underbrace{n \log \left(1+\frac{1}{n}\right)}_{1 + O(1/n)}\right] + O(x)\tag{1}\\ &= x^2 - \sum_{n\leqslant x} \underbrace{\pi(n)\log n}_{n + O(n/\log n)} - \underbrace{\sum_{n\leqslant x} \pi(n)}_{O(x^2/\log x)}  + O(x^2/\log x)\tag{2}\\ &= x^2 - \sum_{n\leqslant x} n + O(x^2/\log x)\\ &= \frac{x^2}{2} + O\left(\frac{x^2}{\log x}\right). \end{align}
+x^2
+(1)
+\pi(x)x\log x - \pi\left(\lfloor x\rfloor\right)\lfloor x+1\rfloor \log \lfloor x+1\rfloor \in O(x),
+(2)
+\pi(x) - \frac{x}{\log x} \in O\left(\frac{x}{(\log x)^2}\right)
+\sum_{2 \leqslant n \leqslant x} \frac{n}{\log n} \in O\left(\frac{x^2}{\log x}\right).
+\sum_{n\leqslant x} n = \frac{1}{2} \lfloor x\rfloor\cdot \lfloor x+1\rfloor = \frac{x^2}{2} + O(x).

@@ -1,0 +1,15 @@
+\lim_{n\to\infty}\int_0^1 \frac{1-\sin(\frac{n}{x})}{\sqrt{x^2+1/n}}dx\;.
+\lim_{n\to\infty}\int_1^{2011} \frac{1-\sin(\frac{n}{x})}{\sqrt{x^2+1/n}}dx\;.
+|\frac{1-\sin(\frac{n}{x})}{\sqrt{x^2+1/n}}|\le \frac{2}{\sqrt{x^2+1/n}}
+\delta=\pi n^{-3/2}
+(5)
+(2)
+(4)
+O\left(\frac1n\right)
+(4)
+\delta
+\frac1{\sqrt{1+x^2}}\frac1x
+(5)
+\frac12\log(n)
+ \begin{align} \lim_{n\to\infty}\int_0^1\frac{1-\sin(\frac{n}{x})}{\sqrt{x^2+1/n}}\mathrm{d}x &=\lim_{n\to\infty}\int_1^\infty\frac{1-\sin(nx)}{\sqrt{1+x^2/n}}\frac1x\,\mathrm{d}x\tag{1}\\ &=\lim_{n\to\infty}\int_{1/\sqrt{n}}^\infty\frac{1-\sin(n^{3/2}x)}{\sqrt{1+x^2}}\frac1x\,\mathrm{d}x\tag{2}\\ &=\lim_{n\to\infty}\int_{1/\sqrt{n}-\delta}^\infty\frac{1+\sin(n^{3/2}x)}{\sqrt{1+(x+\delta)^2}}\frac1{x+\delta}\,\mathrm{d}x\tag{3}\\ &=\lim_{n\to\infty}\int_{1/\sqrt{n}}^\infty\frac{1+\sin(n^{3/2}x)}{\sqrt{1+x^2}}\frac1x\,\mathrm{d}x\\ &+O\left(\frac1n\right)\tag{4}\\ &=\lim_{n\to\infty}\int_{1/\sqrt{n}}^\infty\frac1{\sqrt{1+x^2}}\frac1x\,\mathrm{d}x\\ &+O\left(\frac1n\right)\tag{5}\\ \end{align} 
+ \lim_{n\to\infty}\int_0^1\frac{1-\sin(\frac{n}{x})}{\sqrt{x^2+1/n}}\mathrm{d}x=\infty\tag{6} 

@@ -1,0 +1,90 @@
+p
+0<i<p
+p
+\large p\choose i
+\large \frac{p!}{i!(p-i)!}
+p
+p
+p
+q=p^n
+p
+\large q\choose i
+v_p(n)
+p
+n
+v_p\left({p^n \choose i}\right) = n-v_p(i)
+i=0
+i=p^n
+n
+v_p(n!)=\sum_{k=1}^\infty \left\lfloor \frac{n}{p^k}\right\rfloor.
+v_p(q!)-v_p(i!)-v_p((q-i)!)
+q=p^n
+v_p(q!) = \frac{p^n-1}{p-1}
+x \in \mathbb{R}
+\lfloor -x \rfloor + \lfloor x \rfloor =\begin{cases} 0 && \text{if } x \in \mathbb{Z} \\ -1 && \text{otherwise.}\end{cases}
+\begin{align}v_p((q-i)!)+v_p(i!) &= \sum_{k=1}^n \left\lfloor\frac{p^n-i}{p^k}\right\rfloor + \left\lfloor\frac{i}{p^k}\right\rfloor \\ &=\sum_{k=1}^n \left(p^{n-k} + \left\lfloor\frac{-i}{p^k}\right\rfloor + \left\lfloor\frac{i}{p^k}\right\rfloor\right) \\&=\frac{p^n-1}{p-1}-(n-v_p(i)).\end{align}
+v_p\left({p^n \choose i}\right) = n-v_p(i)
+(x+y)^p = x^p + y^p
+p
+(x+y)^q = x^q + y^q
+q = p^n
+\binom qi=\frac{\prod_{k=0}^{i-1}(q-k)}{\prod_{k=1}^i k}=\frac qi\prod_{k=1}^{i-1}\frac{q-k}k\;.
+p
+q/i
+p
+\frac{q-k}k=\frac{p^n-ap^j}{ap^j}=\frac{(p^{n-j}-a)p^j}{ap^j}\;,
+p\nmid p^{n-j}-a
+j<n
+\binom{m}{n}
+p
+m
+n
+p
+m=m_0 + m_1p + \ldots +m_dp^d
+n=n_0+n_1p+\ldots + n_c p^c
+ \binom{m}{n} \equiv \prod_i \binom{m_i}{n_i} \pmod{p}.
+m=p^r
+1<n<p^r
+n_i \neq 0
+i<r
+\binom{m_i}{n_i} = \binom{0}{n_i} = 0
+\binom{m}{n} \equiv 0 \pmod{p}.
+\binom{p^n}{i} \equiv 0 \pmod{p}
+0<i<p^n
+M
+p^n
+p
+i
+M
+C_{p^n}
+p^n
+M
+i
+M
+0<i<p^n
+i
+C_{p^n}
+i
+M
+C_{p^n}
+p
+\binom{p^n}{i} \equiv 0
+p
+\rm {\:k\:\choose \:i\:}\ =\ \frac{k}{i}\ \frac{k-1}{i-1}\ \cdots \frac{k-i+1}{1} 
+p
+v_{p}(ab)=v_{p}(a)+v_{p}(b)
+\displaystyle v_{p}(\binom{p^n}{i})=v_{p}(\frac{p^n}{i}\binom{p^n-1}{i-1})=v_{p}(\frac{p^n}{i})+v_{p}(\binom{p^n-1}{i-1})\geq v_{p}(\frac{p^n}{i})>0
+B
+v_{p}(B)\geq0
+p
+p|\binom{p^k}{i}
+1\le i\le p^k-1
+\lfloor x+y\rfloor\ge\lfloor x\rfloor+\lfloor y\rfloor
+p
+i!(p^k-i)!
+p
+p^k!
+p
+\binom{p^k}{i}
+\sum_{j=1}^{k}\left(\left\lfloor\frac{i}{p^j}\right\rfloor+\left\lfloor\frac{p^k-i}{p^j}\right\rfloor\right)\le\sum_{j=1}^{k}\left\lfloor\frac{p^k}{p^j}\right\rfloor.
+\left\lfloor\frac{i}{p^k}\right\rfloor=\left\lfloor\frac{p^k-i}{p^k}\right\rfloor = 0, \left\lfloor\frac{p^k}{p^k}\right\rfloor=1,

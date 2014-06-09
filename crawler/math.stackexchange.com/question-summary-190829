@@ -1,0 +1,27 @@
+\int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\Biggl(\iint_{\mathbb{R}^2}\frac{\mathrm{d}^2\vec{t}_\perp}{(2\pi)^2}\exp\biggl[-\frac{t_\perp^2Q_s^2}{4}\biggr]\frac{e^{i\xi'\vec{k}_\perp\cdot\vec{t}_\perp}}{t_\perp^2} - \frac{1}{(2\pi)^2}\iint_{\mathbb{R}^2}\mathrm{d}^2\vec{r}'_\perp\frac{e^{-i\vec{k}_\perp\cdot \vec{r}'_\perp}}{r'^2_\perp}\Biggr)
+\mathbb{R}^2
+\vec{r}'_\perp
+-\xi'\vec{t}_\perp
+\mathrm{d}\xi'\mathrm{d}^2\vec{r}'  = \begin{vmatrix}\frac{\partial\xi'}{\partial\xi'} & \frac{\partial\xi'}{\partial t_x} & \frac{\partial\xi'}{\partial t_y} \\ \frac{\partial r'_x}{\partial\xi'} & \frac{\partial r'_x}{\partial t_x} & \frac{\partial r'_x}{\partial t_y} \\ \frac{\partial r'_y}{\partial\xi'} & \frac{\partial r'_y}{\partial t_x} & \frac{\partial r'_y}{\partial t_y}\end{vmatrix}\mathrm{d}\xi'\mathrm{d}^2\vec{t}  = \begin{vmatrix}1 & 0 & 0 \\ -t_x & -\xi' & 0 \\ -t_y & 0 & -\xi'\end{vmatrix}\mathrm{d}\xi'\mathrm{d}^2\vec{t}  = \xi'^2\mathrm{d}\xi'\mathrm{d}^2\vec{t}
+\xi'
+\xi'
+\begin{gather}\int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\Biggl(\iint_{\mathbb{R}^2}\frac{\mathrm{d}^2\vec{t}_\perp}{(2\pi)^2}\exp\biggl[-\frac{t_\perp^2Q_s^2}{4}\biggr]\frac{e^{i\xi'\vec{k}_\perp\cdot\vec{t}_\perp}}{t_\perp^2} - \frac{1}{(2\pi)^2}\iint_{\mathbb{R}^2}\mathrm{d}^2\vec{t}'_\perp\frac{e^{i\xi'\vec{k}_\perp\cdot \vec{t}'_\perp}}{t'^2_\perp}\Biggr)\\ \int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\iint_{\mathbb{R}^2}\frac{\mathrm{d}^2\vec{t}_\perp}{(2\pi)^2}\biggl(\exp\biggl[-\frac{t_\perp^2Q_s^2}{4}\biggr] - 1\biggr)\frac{e^{i\xi'\vec{k}_\perp\cdot\vec{t}_\perp}}{t_\perp^2}\end{gather}
+\begin{gather}\int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\int_0^{2\pi}\mathrm{d}\theta_t\int_0^\infty\frac{\mathrm{d}t_\perp\,t_\perp}{(2\pi)^2}\biggl(\exp\biggl[-\frac{t_\perp^2Q_s^2}{4}\biggr] - 1\biggr)\frac{e^{i\xi' k_\perp t_\perp\cos\theta_t}}{t_\perp^2}\\ \int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\int_0^\infty\frac{\mathrm{d}t_\perp}{2\pi t_\perp}\biggl(\exp\biggl[-\frac{t_\perp^2Q_s^2}{4}\biggr] - 1\biggr)J_0(\xi' k_\perp t_\perp)\\ -\int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\frac{1}{4\pi}\Gamma\biggl(0, \frac{k^2 \xi'^2}{Q_s^2}\biggr) \end{gather}
+-\int_0^1\mathrm{d}\xi'\frac{1 + \xi'^2}{(1 - \xi')_+}\frac{1}{4\pi}\biggl[\Gamma\biggl(0, \frac{k^2 \xi'^2}{Q_s^2}\biggr) {\color{red}{+ \ln\xi'^2}}\biggr]
+\mathbb{R}^2
+t=ax
+a
+\varepsilon\rightarrow 0
+|t_\perp|>\varepsilon
+|r'_{\perp}|>\varepsilon
+\varepsilon
+0
+\varepsilon
+\xi' \varepsilon
+\varepsilon\rightarrow 0
+1
+ \int_{0}^{1}\frac{dx}{x}-\int_{0}^{1}\frac{dt}{t}. 
+ \int_{0}^{1}\frac{dx}{x}-\int_{0}^{1/a}\frac{dx}{x}=\int_{1/a}^{1}\frac{dx}{x}=\ln x\Big\vert_{1/a}^{1}=\ln a, 
+ \int_{\varepsilon}^{1}\frac{dx}{x}-\int_{\varepsilon}^{1}\frac{dt}{t} 
+ \int_{\varepsilon}^{\xi'\varepsilon}\frac{dt_\perp}{2\pi t_\perp} J_0\left(\xi'k_\perp t_\perp\right). 
+ \frac{1}{2\pi}\ln \xi' = \frac{1}{4\pi}\ln\xi'^2, 

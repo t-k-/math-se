@@ -1,0 +1,67 @@
+\binom {2n}{n} p^n(1-p)^n
+p
+0
+n
+\infty
++1
+-1
+0
+n
+\infty
+{2n \choose n}p^n(1-p)^n \rightarrow 0
+n \rightarrow \infty
+a_n = {2n \choose n}p^n(1-p)^n
+p
+4p(1-p) \leqslant 1
+p \neq \frac{1}{2}
+p = \frac{1}{2}
+ \lim_{n \rightarrow \infty}\frac{a_{n+1}}{a_n} = \lim_{n \rightarrow \infty} p(1-p) \frac{(2n+2)(2n+1)}  {(n+1)^2} = 4p(1-p) 
+p \notin \{0,1\}
+t
+x_0
+X_t
+t
+i
+x_0 + i - (t-i) = x_0 + 2i - t
+i \in \{0,1,...,t\}
+i
+t
+i<t
+a_t = {t \choose i}p^i(1-p)^{t-i}
+0< p < 1
+|(1-p)| < 1
+ \mathbb{P}(X_t = x_0 - t + 2i) =  \begin{cases} {t \choose i}p^i(1-p)^{t-i} & \mbox{for $i \in \{0,1,...,t\}$} \\ 0 & \mbox{otherwise} \end{cases} 
+ \lim_{t \rightarrow \infty}\frac{a_{t+1}}{a_t} = \lim_{t \rightarrow \infty} (1-p) \frac{t+1}  {t+1-i} = (1-p) 
+p=0
+p=1
+t
+\lim_{n\to \infty} \frac{a_{n+1}}{a_n}=a 
+|a|<1
+\lim_{n\to \infty}{a_n}=0
+ a_n = \binom {2n}{n} p^n(1-p)^n \implies \frac{a_{n+1}}{a_n}= {\frac { 2p(1-p)\left( 2\,n+1 \right)  }{(n+1)}}. 
+ \lim_{n\to \infty} \frac{a_{n+1}}{a_n}= 4 p(1-p).
+f(p)=4p(1-p)<1
+0<p<1
+p\neq \frac{1}{2}
+p=\frac{1}{2}
+\lim_{n\to \infty} \frac{a_{n+1}}{a_n} = 1
+p(1-p)\le \frac14
+{2n\choose n}4^{-n}\to 0
+n
+2n
+n+k
+{2n\choose n+k}4^{-n}={2n\choose n}4^{-n}\cdot \frac{n(n-1)\cdots(n-k+1)}{(n+1)(n+2)\cdots (n+k)}
+k
+1
+n\to\infty
+n
+n
+{2n\choose n+k}4^{-n}>\frac12 {2n\choose n}4^{-n}
+k
+(1+\frac k2){2n\choose n}4^{-n}<1
+n
+C_n
+p(1-p) \le \frac{1}{4}
+0\le p\le 1
+\binom {2n}{n} = 4^n \left(\frac{1}{\sqrt{n \pi}}+ O\left(n^{-\frac{3}{2}}\right)\right)
+\binom {2n}{n} p^n(1-p)^n = \binom {2n}{n} \left(p(1-p)\right)^n  \le \frac{1}{\sqrt{n \pi}}

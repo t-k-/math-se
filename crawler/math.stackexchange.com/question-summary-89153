@@ -1,0 +1,57 @@
+z = \zeta + 1/\zeta
+\zeta = e^{i\theta}
+\alpha
+U_\infty
+\Gamma
+ F(\zeta) = U_\infty \left( \zeta e^{-i \alpha} + \frac{e^{i \alpha}} {\zeta} \right) -\frac{i \Gamma}{2 \pi} \log \zeta 
+  F(z) = U_\infty \left( z \cos \alpha - i (z^2 - 4)^{1/2} \sin \alpha \right) - \frac{i \Gamma}{2 \pi} \log \left[\frac{1}{2}\left( z + (z^2-4)^{1/2} \right)\right] 
+z = -2
+z = 2
+\zeta = e^{i \theta}
+\zeta
+ F_x - i F_y = \frac{i \rho}{2} \oint \left( \frac{dF(z)}{dz} \right)^2 dz 
+\zeta
+\frac{1}{1-1/\zeta^2}
+z=\pm1
+z=0
+0
+z
+ F_x - i F_y = \frac{i \rho}{2} \oint \left( \frac{dF(\zeta)}{d\zeta} \frac{d\zeta}{dz} \right)^2 \frac{dz}{d\zeta} d\zeta = \frac{i \rho}{2} \oint \left( \frac{dF(\zeta)}{d\zeta} \right)^2 \frac{1}{1-1/\zeta^2} d\zeta 
+\zeta=\pm 1
+\zeta = 0
+\zeta
+\zeta
+\zeta
+A(\zeta)
+\zeta
+B(\zeta)
+A(\zeta) = A(-\zeta)
+B(\zeta) = -B(-\zeta)
+ F_x - i F_y = \frac{i \rho}{2} \oint \left( \frac{dF(\zeta)}{d\zeta} \right)^2 \frac{1}{1-1/\zeta^2} d\zeta = \frac{i \rho}{2} \oint \left( \frac{dF(\zeta)}{d\zeta} \right)^2 \frac{\zeta^2}{\zeta^2-1} d\zeta 
+ \frac{dF(\zeta)}{d\zeta} = U_\infty \left( e^{-i \alpha} - \frac{e^{i \alpha}} {\zeta^2} \right) -\frac{i \Gamma}{2 \pi \zeta} 
+ \left( \frac{dF(\zeta)}{d\zeta} \right)^2 = U_\infty^2 \left( e^{-2 i \alpha} - \frac{2}{\zeta^2} +\frac{e^{2 i \alpha}} {\zeta^4} \right) -\frac{i U_\infty \Gamma}{\pi} \left( \frac{e^{-i \alpha}}{\zeta} - \frac{e^{i \alpha}}{\zeta^3} \right) -\frac{\Gamma^2}{4 \pi \zeta^2} = A(\zeta) + B(\zeta) 
+ A(\zeta) = U_\infty^2 \left( e^{-2 i \alpha} - \frac{2}{\zeta^2} +\frac{e^{2 i \alpha}} {\zeta^4} \right) -\frac{\Gamma^2}{4 \pi \zeta^2}, \qquad B(\zeta) = -\frac{i U_\infty \Gamma}{\pi} \left( \frac{e^{-i \alpha}}{\zeta} - \frac{e^{i \alpha}}{\zeta^3} \right) 
+\zeta = 0, \pm 1
+ F_x - i F_y = \frac{i \rho}{2} \oint \left( \frac{dF(\zeta)}{d\zeta} \right)^2 \frac{\zeta^2}{\zeta^2-1} d\zeta = \frac{i \rho}{2} \oint \frac{(A(\zeta) + B(\zeta))\zeta^2}{(\zeta+1)(\zeta-1)} d\zeta 
+ F_x - i F_y = \frac{i \rho}{2} (2 \pi i) \sum_k \text{Res} \left( \frac{(A(\zeta) + B(\zeta))\zeta^2}{(\zeta+1)(\zeta-1)},a_k \right) 
+\zeta = 0
+1/\zeta
+\frac{i U_\infty \Gamma}{\pi} \left(\frac{e^{i \alpha}}{{\zeta (\zeta+1) (\zeta-1)}} \right)
+\zeta = \pm 1
+(0)
+\zeta^2/(\zeta^2-1)
+ \text{Res}(0) = -\frac{i U_\infty \Gamma e^{i \alpha}}{\pi}  
+ \text{Res}(1) = \frac{A(1) + B(1)}{2} 
+ \text{Res}(-1) = \frac{A(-1) + B(-1)}{-2} = \frac{-A(1) + B(1)}{2} 
+ \sum_k \text{Res} \left( a_k \right) = B(1) - \frac{i U_\infty \Gamma e^{i \alpha}}{\pi} = -\frac{i U_\infty \Gamma}{\pi} \left( e^{-i \alpha} - e^{i \alpha} \right) - \frac{i U_\infty \Gamma e^{i \alpha}}{\pi} = -\frac{i U_\infty \Gamma e^{-i \alpha}}{\pi} 
+ F_x - i F_y = \frac{i \rho}{2} (2 \pi i) \left(-\frac{i U_\infty \Gamma e^{-i \alpha}}{\pi}\right) = i \rho \Gamma U_\infty e^{-i \alpha} 
+ F_x = \rho \Gamma U_\infty \sin \alpha = \rho \Gamma U_{\infty,y}, \qquad F_y = -\rho \Gamma U_\infty \cos \alpha = -\rho \Gamma U_{\infty,x} 
+x
+F_\perp
+F_\parallel
+F_x
+F_y
+e^{i \alpha}
+F_\parallel = 0
+F_\perp = -\rho \Gamma U_\infty
+ e^{i \alpha} (F_x - i F_y) = (F_x \cos \alpha + F_y \sin \alpha) - i(-F_x \sin \alpha + F_y \cos \alpha ) = F_\parallel - i F_\perp  = i \rho \Gamma U_\infty 

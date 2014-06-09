@@ -1,0 +1,60 @@
+ \nabla (\vec{F} \cdot \vec{G}) = \vec{F} \times (\nabla \times \vec{G} ) + \vec{G} \times (\nabla \times \vec{F}) + (\vec{F} \cdot \nabla ) \vec{G} + (\vec{G} \cdot \nabla ) \vec{F} 
+ \nabla \times (\vec{F} \times \vec{G}) = ( \vec{G} \cdot \nabla )\vec{F} - (\vec{F} \cdot \nabla ) \vec{G} + \vec{F}( \nabla \cdot \vec{G} ) - \vec{G} ( \nabla \cdot \vec{F}) 
+\mathcal{CL^3}
+e_1,e_2,e_3
+F = f_i e_i, G = g_ie_i, \partial =  e_i \frac{\partial}{\partial x_i} =  e_i \partial_i 
+ \nabla(F\cdot G) = \partial(F\cdot G) = \dot \partial (\dot F \cdot G) + \dot \partial(F\cdot \dot G) 
+X = G, Y = \dot \partial, Z = \dot F
+ G\cdot(\dot \partial\wedge \dot F) = \dot F(G\cdot \dot \partial) - \dot \partial(G\cdot \dot F) = (G\cdot \dot \partial) \dot F - \partial( \dot F\cdot G) 
+ \partial( \dot F\cdot G) = (G\cdot \dot \partial) \dot F  - G\cdot(\dot \partial\wedge \dot F) 
+\partial(  F\cdot \dot G)
+ \partial(  F\cdot G) = (G\cdot \dot \partial) \dot F  + (F\cdot \dot \partial) \dot G - G\cdot(\dot \partial\wedge \dot F) - F\cdot(\dot \partial\wedge \dot G) 
+ (G\cdot \dot \partial) \dot F = (G\cdot \nabla)F 
+ - G\cdot(\dot \partial\wedge \dot F) = G\times ( \nabla \times F) 
+\partial
+ G\times (\nabla \times F) = -(G\cdot \nabla)F - G\cdot \nabla F 
+ \nabla (F\cdot G) = F \cdot \nabla G + G \cdot \nabla F 
+\nabla \times (F\times G)
+\dot \partial
+ -\partial \cdot (F\wedge G) =-\dot \partial \cdot (\dot F\wedge G) - \dot \partial \cdot ( F\wedge \dot G) 
+\varepsilon_{ijk}
+\varepsilon_{ijk}=\varepsilon_{jki}=\varepsilon_{kij}
+\varepsilon_{ijk}\varepsilon^{ilm}=\delta^l_j\delta^m_k-\delta^l_k\delta^m_j
+F\times G=\varepsilon^{ijk}F_jG_k
+\begin{align} \text{rhs}&=F\times(\nabla\times G)+(F\cdot\nabla)G+G\times(\nabla\times F)+(G\cdot\nabla)F\\ &=\varepsilon^{ijk}F_j\varepsilon_{klm}\partial^l G^m+F_j\partial^j G^i+\varepsilon^{ijk}G_j\varepsilon_{klm}\partial^l F^m+G_j\partial^j F^i\\ &=\varepsilon^{kij}\varepsilon_{klm}F_j\partial^l G^m+F_j\partial^j G^i+\varepsilon^{kij}\varepsilon_{klm}G_j\partial^l F^m+G_j\partial^j F^i\\ &=(\delta^i_l\delta^j_m-\delta^i_m\delta^j_l)F_j\partial^l G^m+F_j\partial^j G^i+(\delta^i_l\delta^j_m-\delta^i_m\delta^j_l)G_j\partial^l F^m+G_j\partial^j F^i\\ &=F_j\partial^iG^j+G_j\partial^iF^i\\ &=\partial^i(F_jG^j)\\ &=\nabla(F\cdot G)=\text{lhs} \end{align}
+ \begin{align} \text{lhs}&=\nabla\times(F\times G)\\ &=\varepsilon^{ijk}\partial_j\varepsilon_{klm}F^l G^m\\ &=\varepsilon^{kij}\varepsilon_{klm}\partial_j(F^l G^m)\\ &=(\delta^i_l\delta^j_m-\delta^i_m\delta^j_l)\partial_j(F^l G^m)\\ &=\partial_j(F^i G^j)-\partial_j(F^j G^i)\\ &=G^j\partial_jF^i+F^i\partial_jG^j-\partial_jF^j G^i-F^j\partial_jG^i\\ &=(G\cdot\nabla)F+(\nabla\cdot G)F-(\nabla\cdot F)G-(F\cdot\nabla)G=\text{rhs} \end{align}
+F
+F_a
+F^a = g^{ab} F_b
+F
+G
+£_F
+i_F
+(F\cdot\nabla)G
+(F\cdot\nabla)G = F^a\nabla_a G_b
+F^a G_a
+F
+G
+£_F  = i_Fd+di_F 
+i_F G = i_G F = F\cdot G
+i_FG = F\cdot G
+d(i_F G)
+£_F G = F^a\nabla_a G_b + G_a\nabla_bF^a.
+\nabla_b(F^a G_a)=G_a\nabla_b F^a + F_a\nabla_b G^a.
+£_F G + £_G F -d(i_F G) = (F\cdot\nabla)G+(G\cdot\nabla)F. 
+dG = *(\nabla\times G)
+i_F*H = *(H\wedge F)=-F\times H,
+-i_FdG = *(F\wedge * dG)= F\times(\nabla\times G) 
+d(i_F G) = -i_FdG+£_FG 
+d(i_G F) = -i_GdF+£_GF 
+ 2d(i_F G) = -i_FdG-i_GdF + £_FG+£_GF
+\boxed{d(i_FG) = *(F\wedge*dG)+*(G\wedge*dF)+£_FG+£_GF-d(i_FG)} 
+ d(i_F G) = \frac12(*(F\wedge*dG)+*(G\wedge*dF) + £_FG+£_GF)
+F^a
+F_b
+\epsilon
+n
+n=3
+*d*(F\wedge G)
+*F = i_F \epsilon,
+\boxed{*d*(F\wedge G) = [G,F]^\flat +(*d*G)\wedge F - (*d*F)\wedge G }

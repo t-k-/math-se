@@ -1,0 +1,79 @@
+ x^{T}Ax 
+dy=d(x^{T}Ax)=d(Ax\cdot x)=d(\sum_{i=1}^{n}(Ax)_{i}x_{i})=d(\sum_{i=1}^{n}\sum_{j=1}^{n}a_{i,j}x_{j}x_{i})=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{i,j}x_{i}dx_{j}+\sum_{i=1}^{n}\sum_{j=1}^{n}a_{i,j}x_{j}dx_{i}
+=\sum_{i=1}^{n}(Ax)dx_{i}+\sum_{i=1}^{n}(Adx)x_{i}=(dx)^{T}Ax+x^{T}Adx=(dx)^{T}Ax+(dx)^{T}A^{T}x=(dx)^{T}(A+A^{T})x
+u(x)=x^TAx
+u(x+h)=u(x)+x^T(A+A^T)h+r_x(h)
+r_x(h)=h^TAh
+h^TAx=x^TA^Th
+m=h^TAx
+1\times1
+m^T=m
+ u(x+h)=(x+h)^TA(x+h)=x^TAx+h^TAx+x^TAh+h^TAh, 
+r_x(h)=o(\|h\|)
+h\to0
+u
+x
+\nabla u(x):\mathbb R^n\to\mathbb R
+h\mapsto x^T(A+A^T)h
+z
+\nabla u(x)(h)=z^Th
+h
+\mathbb R^n
+z=(A+A^T)x
+g
+h
+\mathbb R^n
+\mathbb R^m
+f(x) = \langle g(x), h(x) \rangle
+x \in \mathbb R^n
+\Delta x \in \mathbb R^n
+g(x) = x
+h(x) = Ax
+x^TAx
+A
+n\times n
+A = [a_{ij}]
+x \in \mathbb{R}^n
+x = (x_1, \dots, x_n)^T
+y = \displaystyle\sum_{i=1}^n\sum_{j=1}^na_{ij}x_ix_j
+(x^TA)_k
+k^{\text{th}}
+x^TA
+(Ax)_k
+k^{\text{th}}
+Ax
+Ax
+x^TA^T
+k^{\text{th}}
+Ax
+\dfrac{\partial y}{\partial x_k} = (x^TA)_k + (x^TA^T)_k
+\nabla y = x^TA + x^TA^T = x^T(A + A^T).
+\nabla(f)
+f: E\rightarrow \mathbb{R}
+.
+E
+\nabla(f)(x).h=Df_x(h)
+Df_x
+f
+x
+f:x\in\mathbb{R}^n \rightarrow x^TAx\in\mathbb{R}
+Df_x(h)=h^TAx+x^TAh=x^T(A+A^T)h
+u.v=u^Tv
+Df_x(h)=((A+A^T)x).h
+\nabla(f)(x)=(A+A^T)x
+\nabla(f)=A+A^T
+f:X\in\mathcal{M}_n(\mathbb{R}) \rightarrow Trace(X^TAX)\in\mathbb{R}
+Trace
+Df_X(H)=Trace(H^TAX+X^TAH)=Trace(X^T(A+A^T)H)
+U.V=Trace(U^TV)
+Df_X(H)=((A+A^T)X).H
+\nabla(f)(X)=(A+A^T)X
+\nabla(f)=(A+A^T)\otimes I
+f:X\in\mathcal{M}_n(\mathbb{R}) \rightarrow \det(X)\in\mathbb{R}
+Df_X(H)=Trace(adjoint(X)H)=adjoint(X)^T.H
+\nabla(f)(X)=adjoint(X)^T
+f:X\in\mathcal{M}_n(\mathbb{R}) \rightarrow X^TAX\in\mathcal{M}_n(\mathbb{R})
+Df_X(H)=H^TAX+X^TAH
+f
+n^2
+\nabla(f_{i,j})

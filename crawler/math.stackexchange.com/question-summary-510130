@@ -1,0 +1,157 @@
+(r_i)_{i=1}^m
+\sum_i r_i < 1
+t
+T(n)
+T(0) = t
+T(n) = \sum_i T(\lfloor r_i n \rfloor) 
+n \ge 1
+T(n) = o(n)
+\lim_{n \to \infty} \dfrac{T(n)}{n} = 0 
+T(n) = O(n)
+T(n)/n \to 0
+r_k
+p
+p\ge 2,
+r_k = 1/p^{q_k}
+q_k\ge 1
+q_k
+ T(n) = \sum_{k=1}^m T(\lfloor n/p^{q_k} \rfloor).
+D = \max_{k} q_k
+S(n) = T(p^n)
+0\le n < D.
+S(n) = \sum_{k=1}^m S(n-q_k)
+ T(n) = S(\lfloor\log_p n\rfloor).
+S(n)
+|\lambda|=R
+R\ge 2
+\lambda
+>
+\lambda^D = \sum_{k=1}^m \lambda^{D-q_k}.
+\left| \sum_{k=1}^m \lambda^{D-q_k} \right| \le \sum_{k=1}^m |\lambda|^{D-q_k} = \sum_{k=1}^m R^{D-q_k} \le \sum_{d=0}^{D-1} R^d = \frac{R^D-1}{R-1}.
+ \frac{R^D-1}{R-1} < R^D 
+ R^D - 1 < R^{D+1} - R^D \quad\text{or}\quad 2R^D < R^{D+1} + 1,
+\rho
+c
+a
+\rho
+1<\rho<2.
+\rho
+S(n)
+S(n)
+S(n) \sim c n^{a-1} \rho^n
+T(n):
+T(n)/n\to 0
+\rho/p
+\log_p n
+\log_p n
+\rho<2
+p\ge 2.
+ T(n) \sim c \lfloor\log_p n\rfloor^{a-1} \rho^{\lfloor\log_p n\rfloor}.
+\frac{T(n)}{n} \in  \Theta\left( \lfloor\log_p n\rfloor^{a-1}  \left(\frac{\rho}{p}\right)^{\lfloor\log_p n\rfloor}\right).
+T(n)/n
+0 < c < 1
+A
+B
+B
+T(n)
+T(n)/n < c
+n > (1/c)^A/B
+r = \sum_i r_i
+s = 1-r
+0 < s < 1
+r_0 = \min_i r_i
+T(k) \le bk
+r_0n \le k < n
+T(n) \le bnr
+n
+T(k) \le bk
+r_0n \le k < n 
+T(n) \le bn 
+\begin{align}  T(n)  &=\sum_i T(\lfloor r_i n \rfloor)\\  &\le \sum_i b r_i n\\  &= n\sum_i b r_i \\  &= nb r\\ \end{align}  
+T(n)/n
+r
+r^2
+n_0 = n
+n_1
+r_0 n_1 = n_0
+r_0 n_1
+n_1-1
+r
+n_1 = n_0/r_0
+n_2 = n_1/r_0
+r^2
+n_k = n_{k-1}/r_0 = n_0/r_0^k
+T(n)/n < b r^k
+n > n_k
+s = 1/r_0
+s > 1
+s
+n_k  = n_{k-1}s  = n_0 s^k
+T(n)/n < b r^k
+n > n_k
+r^k
+n_0 s^k 
+b
+c
+0 < c < 1
+b r^k < c
+k > \dfrac{\log (c/b)}{\log r}
+r < 1
+c
+\begin{align} n_0 s^{\frac{\log (c/b)}{\log r}}  &=n_0 \exp(\log s(\log (c)-\log(b))/(\log r)\\ &=n_0 \exp\left(\frac{\log s\log c}{\log r}-\frac{\log s\log b}{\log r}\right)\\  &=n_0 \exp\left(\frac{\log s\log c}{\log r}\right)/K\\  &=n_0 \exp\left(\frac{\log s\log (1/c)}{\log (1/r)}\right)/K\\  &=n_0 (1/c)^{(\log s)/(\log (1/r))}/K\\  \end{align} 
+K  = \exp\left(\frac{\log s\log b}{\log r}\right) = b^{\log s/\log r}  
+c
+T(n)/n
+c=0.01
+r
+s
+b
+T(n)/n
+T(n)/n
+T(n)
+r_k = 1/p_k
+k
+\sum_k 1/p_k < 1
+p_k\ge 2
+k\ge 2
+T(0) = 1.
+p_k
+n
+s
+l
+l
+n
+q> \lfloor n/p_k \rfloor
+q\le n
+p_k
+a_{l,q}
+D_l(s) = \left(\sum_k \frac{1}{p_k^s}\right)^l = \sum_q \frac{a_{l,q}}{q^s}
+n
+T(n) = \sum_k \sum_{l=0}^{\lfloor \log_2 n \rfloor} \sum_{\lfloor n/p_k \rfloor < q \le n} a_{l, q}.
+a_{l,q}
+q>n
+D_l(s)
+(\min_k p_k)^{\lfloor \log_2 p_k \rfloor + 1} > n.
+T(n) = \sum_k \sum_{l=0}^\infty \sum_{\lfloor n/p_k \rfloor < q \le n} a_{l, q}
+D(s) = \sum_{l\ge 0} D_l(s) =  \sum_{l\ge 0} \left(\sum_k \frac{1}{p_k^s}\right)^l = \frac{1}{1 - \sum_k \frac{1}{p_k^s}} = \sum_q \frac{a_q}{q^s}
+T(n) = \sum_k\sum_{\lfloor n/p_k \rfloor < q \le n} a_q.
+M(n)
+s>0
+s<1
+\rho.
+T(n)
+\rho-1<0.
+M(n) = \sum_{q=1}^n a_q
+T(n) = \sum_k (M(n) - M(\lfloor n/p_k \rfloor).
+1-\sum_k \frac{1}{p_k^s}
+\frac{1}{1-\sum_k \frac{1}{p_k^s}}
+\operatorname{Res} \left(\frac{1}{1-\sum_k \frac{1}{p_k^s}}; s=\rho\right) =  \frac{1}{\sum_k \frac{\log p_k}{p_k^\rho}}.
+M(n) \sim \left(\sum_k \frac{\log p_k}{p_k^\rho}\right)^{-1} \frac{n^\rho}{\rho}
+T(n) \sim \left(\sum_k \frac{\log p_k}{p_k^\rho}\right)^{-1}  \sum_k\left(\frac{n^\rho}{\rho} - \frac{(n/p_k)^\rho}{\rho}\right)\\ = \left(\sum_k \frac{\log p_k}{p_k^\rho}\right)^{-1}  \frac{n^\rho}{\rho}\sum_k\left(1 - (1/p_k)^\rho\right) = (m-1) \left(\sum_k \frac{\log p_k}{p_k^\rho}\right)^{-1}  \frac{n^\rho}{\rho}.
+\frac{T(n)}{n}\in\Theta(n^{\rho-1})
+\frac{T(n)}{n}\to 0
+p_k
+p_k
+n
+T(n).
+p_k.

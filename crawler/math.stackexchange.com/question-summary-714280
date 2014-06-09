@@ -1,0 +1,52 @@
+2^n
+X
+1
+K
+2^n/2=2^{n-1}
+50\%
+2^n/4=2^{n-2}
+25\%
+50\%
+25\%
+X+2^0\frac X2+2^1\frac X4+2^2\frac X6+2^3\frac X8+2^4 \frac X{10}+\ldots+2^{n-2}\frac X{2\cdot(n-1)}=K
+X+2^0\frac X2+2^1\frac X4+2^2\frac X6+2^3\frac X8+2^4 \frac X{10}+\ldots+2^{n-3}\frac X{2\cdot(n-2)}=K
+50\%
+25\%
+\begin{align*}K&=X\left(1+2^0\frac 12+2^1\frac 14+2^2\frac 16+2^3\frac 18+2^4 \frac 1{10}+\ldots+2^{n-2}\frac 1{2\cdot(n-1)}\right)=\\\\&=X\left(1+\sum_{k=0}^{n-2}\frac{2^k}{2(k+1)}\right)=\\&=X\left(1+\sum_{k=0}^{n-2}\frac{2^{k-1}}{(k+1)}\right)\end{align*}
+X=\frac{K}{\left(1+\sum_{k=0}^{n-2}\frac{2^{k-1}}{(k+1)}\right)}=K\cdot\left(1+\sum_{k=0}^{n-2}\frac{2^{k-1}}{(k+1)}\right)^{-1}\tag1
+\begin{align*}&\phantom{11}X\left(1+2^0\frac 12+2^1\frac 14+2^2\frac 16+2^3\frac 18+2^4 \frac 1{10}+\ldots+2^{n-3}\frac 1{2\cdot(n-2)}\right)=\\\\&=X\left(1+\sum_{k=0}^{n-3}\frac{2^k}{2(k+1)}\right)=\\&=X\left(1+\sum_{k=0}^{n-3}\frac{2^{k-1}}{(k+1)}\right)\end{align*}
+X=\frac{K}{\left(1+\sum_{k=0}^{n-3}\frac{2^{k-1}}{(k+1)}\right)}=K\cdot\left(1+\sum_{k=0}^{n-3}\frac{2^{k-1}}{(k+1)}\right)^{-1}\tag2
+K
+n
+K
+X
+X
+K
+K/2
+2^n=32=2^5
+K=800
+25\%
+2^2=2^{5-3}=2^{n-3}
+\frac X6
+X=300
+K
+n
+K
+K=803
+X=800\cdot\left(1+2^0\frac{1}{2}+2^1\frac{1}{4}+2^2\frac{1}{6}\right)^{-1}=800\cdot(6/16)^{-1}=800\cdot(16/6)=300
+X=800\cdot\left(1+2^0\frac{1}{2}+2^1\frac{1}{4}+2^2\frac{1}{6}+2^3\frac{1}{8}\right)^{-1}=800\cdot(11/3)^{-1}=800\cdot(3/11)=218.18
+X=803\cdot\frac{3}{11}=219
+2^n
+2^n/2=2^{n-1}
+50\%
+2^n/4=2^{n-2}
+25\%
+2^{k-2}
+50\%
+k
+k=n
+25\%
+k=n-3
+50\%
+m_i
+M=m_1+m_2+m_32^{3-2}+m_42^{4-2}+\ldots+m_n2^{n-2}=m_1+m_2+2(m_3+m_42^{4-3}+\ldots+m_n2^{n-3})=m_1+m_2+2(m_3+2(m_4+\ldots+m_n2^{n-4}))

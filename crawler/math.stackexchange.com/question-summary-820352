@@ -1,0 +1,16 @@
+ \int_0^2 \sqrt[3]{\frac{x^2}{2-x}} \, dx  
+ \int_0^2 x^{\frac{2}{3}}\left(2-x\right)^{-\frac{1}{3}} \, dx 
+ \frac{2}{3}+1-\frac{1}{3}=\frac{4}{3}
+\frac{\Gamma\left[\frac{1}{2} \right]\Gamma\left[\frac{2}{3} \right]  }{\Gamma\left[\frac{7}{6} \right] } 
+I
+x^2=t \Rightarrow dx=\frac{1}{2}t^{-1/2}\,dt
+\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}
+I=\int_0^2 \frac{x^{2/3}}{(2-x)^{1/3}}\,dx
+I=\int_0^2 \frac{(2-x)^{2/3}}{x^{1/3}}\,dx
+2I=\int_0^2 \frac{2}{x^{1/3}(2-x)^{1/3}}\,dx \Rightarrow I=\int_0^2\frac{1}{x^{1/3}(2-x)^{1/3}}\,dx=2\int_0^1 \frac{dx}{x^{1/3}(2-x)^{1/3}}
+\Rightarrow I=2\int_0^1 \frac{dx}{(1-x)^{1/3}(1+x)^{1/3}}=2\int_0^1 (1-x^2)^{-1/3}\,dx
+I=\int_0^1 t^{-1/2}(1-t)^{-1/3}=B\left(\frac{1}{2},\frac{2}{3}\right)=\frac{\Gamma\left(\frac{1}{2}\right)\Gamma\left(\frac{2}{3}\right)}{\Gamma\left(\frac{7}{6}\right)}
+\int \sqrt[3]{\frac{x^2}{2-x}} \, dx=\frac{3}{4} \sqrt[3]{\frac{x^2}{2-x}} \left(2^{2/3} \sqrt[3]{2-x} \,    _2F_1\left(\frac{1}{3},\frac{2}{3};\frac{5}{3};\frac{x}{2}\right)+x-2\right)
+I(a)=\int_0^a \sqrt[3]{\frac{x^2}{2-x}} \, dx
+I(1)=\frac{3}{4} \left(\frac{\sqrt{\pi } \Gamma \left(\frac{5}{3}\right)}{\Gamma    \left(\frac{7}{6}\right)}-1\right)
+I(2)=\frac{\sqrt{\pi } \Gamma \left(\frac{2}{3}\right)}{\Gamma \left(\frac{7}{6}\right)}

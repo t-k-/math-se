@@ -1,0 +1,64 @@
+R
+A
+S
+B
+T
+ A \times B
+((a_1,b_1),(a_2,b_2)) \in T \leftrightarrow (a_1,a_2) \in R
+(b_1,b_2) \in S
+T
+T
+R
+R
+(\forall x \in S)(x,x) \in R]
+(\forall x,y \in S)[(x,y) \in R \rightarrow (y,x) \in R]
+(\forall x, y, z \in S)[((x,y) \in R \land (y,z) \in R) \rightarrow (x,z) \in R]
+x = (a_1,b_1), y = (a_2,b_2),
+z=(a_3,b_3)
+T
+(\forall (a_1),(b_1) \in S)[((a_1,b_1),(a_1,b_1)) \in T 
+T
+(\forall (a_1,b_1),(a_2,b_2) \in S)[(a_1,b_1),(a_2,b_2) \in T \rightarrow (a_2,b_2),(a_1,b_1) \in T
+T
+(\forall (a_1,b_1),(a_2,b_2),(a_3,b_3) \in S]((a_1,b_1),(a_2,b_2) \in T \land ((a_2,b_2),(a_3,b_3)) \in T \rightarrow ((a_1,b_1), (a_3,b_3)) \in T
+T
+T
+\sim_{T}, \sim_{R}, \sim_{S}
+T,R
+S
+T
+(a,b) \sim_{T} (a,b)
+(a,b) \in A \times B
+R
+S
+a \sim_{R} a
+a \in A
+b \sim_{S} b
+b \in B
+(a,b) \sim_{T} (a,b)
+(a,b) \in A \times B
+(a_{1},b_{1}) \sim_{T} (a_{2},b_{2})
+R
+a_{1} \sim_{R} a_{2}
+a_{2} \sim_{R} a_{1}
+a_{1},a_{2} \in A
+b_{1} \sim_{S} b_{2}
+b_{2} \sim_{S} b_{1}
+b_{1},b_{2} \in B
+(a_{2},b_{2}) \sim_{T} (a_{1},b_{1})
+T
+(a_{1},b_{1}) \sim_{T} (a_{2},b_{2})
+(a_{2},b_{2}) \sim_{T} (a_{3},b_{3})
+R
+a_{1} \sim_{R} a_{2}
+a_{2} \sim_{R} a_{3}
+a_{1} \sim_{R} a_{3}
+a_{1},a_{2},a_{3} \in A
+S
+b_{1} \sim_{S} b_{2}
+b_{2} \sim_{S} b_{3}
+b_{1} \sim_{S} b_{3}
+b_{1},b_{2},b_{3} \in B
+(a_{1},b_{1}) \sim_{T} (a_{3},b_{3})
+T
+A \times B

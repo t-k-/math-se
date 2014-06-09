@@ -1,0 +1,12 @@
+\mu:P(\mathbb R) \to [0,+\infty]
+ \mu (\{ \tfrac 1n \})= \tfrac 1n 
+\mu(E)=0
+E \cap \{ \tfrac 1n \}_{n \in  N_0} =\emptyset
+\int_{\mathbb R} x \,d\mu (x)
+K := \{0\} \cup \{\tfrac 1n \mid n \in \mathbb N\}
+\displaystyle\qquad \int_{\mathbb R} x \,d\mu = \int_K x\,d\mu + \int_{\mathbb R\setminus K} x \,d\mu =  \int_K x\,d\mu
+\mu(\mathbb R \setminus K) = 0
+K_0 = \{0\}
+K_n = K_{n-1} \cup \{\tfrac1n\}
+K = \cup_{n\in\mathbb N_0} K_n
+f_n(x) = x \cdot 1_{K_n}(x)

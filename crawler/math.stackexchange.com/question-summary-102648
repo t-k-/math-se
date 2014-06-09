@@ -1,0 +1,16 @@
+\deg \le 5
+5n
+\phi(i)
+5
+i
+<4
+4
+m
+\phi(i) - \phi(i-1) = \begin{cases} 0 & \text{if the inserted node has $<4$ siblings} \\ 1 & \text{if the inserted node has $4$ siblings} \\ -m & \text{if we have to rebalance $m$ times} \end{cases}
+3
+<4
+4
+m
+t(i)- t(i-1) = \begin{cases} 1 & \text{if the inserted node has $<4$ siblings} \\ 1 & \text{if the inserted node has $4$ siblings} \\ 1+4m & \text{if we have to rebalance $m$ times} \end{cases}
+[t(i)+4\phi(i)]- [t(i-1)+4\phi(i-1)] \le 5
+t(n) \le t(n) + 4\phi(n) \le 5n + t(0) + 4\phi(0) = 5n

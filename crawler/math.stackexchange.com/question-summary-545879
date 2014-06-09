@@ -1,0 +1,59 @@
+n
+k
+{n\choose k}
+k
+k
+k-1
+k(k-1)
+k+k(k-1)=k^2
+k
+0
+n
+k
+\sum_{k=0}^n k^2 {n\choose k}
+n
+n-1
+2^{n-1}
+n2^{n-1}
+n
+n-1
+n-2
+2^{n-2}
+n(n-1)2^{n-2}
+n2^{n-1}+n(n-1)2^{n-2}=n(n+1)2^{n-2}
+\sum_{k=0}^n k^2 {n\choose k}=n(n+1)2^{n-2}
+\sum_{k=0}^n k^2 {n\choose k}=n(n+1)2^{n-2}.
+x
+x
+x
+x=1
+(1+x)^n=\sum_{k=0}^n {n\choose k}x^k.
+n(1+x)^{n-1}=\sum_{k=1}^n k{n\choose k}x^{k-1}.
+n(1+x)^{n-1}+nx(n-1)(1+x)^{n-2}=\sum_{k=1}^nk^2{n\choose k}x^{k-1}.
+n(n+1)2^{n-2}=\sum_{k=1}^n k^2{n\choose k}.
+ \frac{1}{2^n} {n \choose k}
+n
+=1/2
+n
+p=1/2
+n p = n/2
+n p (1-p)= n/4
+ E[X^2]=\frac{1}{2^n} \sum_{k=0}^n {n \choose k} k^2 = (E[X])^2+\sigma^2_X = n^2 \frac{1}{4} + n \frac{1}{4} = 2^{-2}(n^2+n)
+k^2
+P(z) = \sum_{k=0}^n a_k z^k
+z
+z\frac{d}{dz}
+z^k
+k
+\left(z\frac{d}{dz}\right)^m P(z) = \sum_{k=0}^n a_k k^m z^k
+z = 1
+\begin{align} \sum_{k=0}^n \binom{n}{k} k^2 z^k = & \sum_{k=0}^n \binom{n}{k} \left(z\frac{d}{dz}\right)^2 z^k = \left(z\frac{d}{dz}\right)^2 \sum_{k=0}^n \binom{n}{k} z^k\\ = & \left(z\frac{d}{dz}\right)^2 (1+z)^n = z\frac{d}{dz} nz(1+z)^{n-1}\\ = & z \left( n(1+z)^{n-1} + n(n-1)z(1+z)^{n-2}\right) \end{align}
+\sum_{k=0}^n \binom{n}{k} k^2 = n 2^{n-1} + n(n-1) 2^{n-2} = (n^2 + n) 2^{n-2}
+\sum_{k=0}^{n+1} \binom {n+1}k k^2=\sum_{k=0}^{n+1} \binom {n}k k^2+ \sum_{k=0}^{n+1} \binom {n}{k-1} k^2=\sum_{k=0}^{n+1} \binom {n}k k^2+ \sum_{j=0}^{n} \binom {n}{j} (j+1)^2
+P(n)
+\sum_{j=0}^{n} \binom {n}{j} (j+1)^2=\sum_{j=0}^{n} \binom {n}{j} j^2+2\sum_{j=0}^{n} \binom {n}{j} j+\sum_{j=0}^{n} \binom {n}{j} 1
+\sum_{j=0}^{n} \binom {n}{j} j^2
+\sum_{j=0}^{n} \binom {n}{j}
+P(n+1)
+\sum_{j=0}^{n} \binom {n}{j} j=\mbox{something} \,.
+\binom {n+1}{j}=\binom {n}{j}+\binom {n}{j-1}

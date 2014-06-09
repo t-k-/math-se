@@ -1,0 +1,17 @@
+1 + e^{-X\theta}
+1 + e^{X\theta}
+\frac{\delta}{\delta\theta}\left[-y\log(1 + e^{-X\theta}) + (1 - y)\left[-X\theta - \log(1 + e^{-X\theta})\right]\right]
+= -y\left(\frac{-X}{1 + e^{-X\theta}}\right) + (1 - y)\left(-X - \frac{-X}{1 + e^{-X\theta}}\right)
+-X
+\frac{1}{1 + e^{-X\theta}}
+\frac{\delta}{\delta\theta}\left(-y\log(1 + e^{-X\theta})\right) = -y\frac{-X\frac{1}{e^{X\theta}}}{1 + e^{-X\theta}} = -y\frac{-X}{1 + e^{X\theta}}
+1+e^{-X\theta}
+\frac{d}{du}\log u=\frac{1}{u}
+1+e^{-X\theta}
+-X\,e^{-X\theta}
+\frac{\partial}{\partial\theta}\left[-y \log(1 + e^{-X\theta})\right] =-y \frac{-X\,e^{-X\theta}}{1 + e^{-X\theta}}
+\frac{\partial}{\partial\theta}\left[ (1 - y)\left[-X\theta - \log(1 + e^{-X\theta})\right]\right] = (1 - y)\left\{-X -\frac{-X\,e^{-X\theta}}{1 + e^{-X\theta}}\right\} 
+ \frac{-X\,e^{-X\theta}}{1 + e^{-X\theta}} = \frac{-X }{ e^{X\theta}+1} 
+\frac d{d\theta}\bigg(-y\log(1 + e^{-X\theta})\bigg)=-y\frac d{d\theta}\bigg(\log(1 + e^{-X\theta})\bigg)=-y\frac 1{1+e^{-X\theta}}\frac d{d\theta}\bigg(1 + e^{-X\theta}\bigg)
+=-y\frac {e^{-X\theta}}{1+e^{-X\theta}}\frac d{d\theta}\bigg(-X\theta\bigg)=-y\frac {-Xe^{-X\theta}}{1+e^{-X\theta}}
+-y\frac {-Xe^{-X\theta}}{1+e^{-X\theta}}=-y\frac {-X}{\big(1+e^{-X\theta}\big)e^{X\theta}}=-y\frac {-X}{e^{X\theta}+1}

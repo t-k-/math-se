@@ -1,0 +1,22 @@
+x = n + \delta,
+n \in \mathbb Z
+0 \leq \delta < 1.
+n!
+\delta,
+\delta
+n
+\delta,
+n=1,
+1.
+(n+1)
+\delta = 1,
+ \lfloor x \rfloor! = x^{\lfloor x \rfloor} e^{1-x} e^{\int_{1}^{x} \text{frac}(t)/t \ dt}.
+  n! = (n + \delta)^n \; e^{1-n} \; e^{-\delta} \;  e^{\int_{1}^{n} \text{frac}(t)/t \ dt} \;  e^{\int_{n}^{n + \delta} \text{frac}(t)/t \ dt}  
+  {\int_{n}^{n + \delta} \text{frac}(t)/t \ dt} = \delta + n \log \left( \frac{n}{n+\delta} \right)  
+   (n + \delta)^n \;  e^{-\delta}  \;  e^{\int_{n}^{n + \delta} \text{frac}(t)/t \ dt} =  (n + \delta)^n \;  e^{-\delta}  \;  e^{\delta}   \; \left( \frac{n}{n+\delta} \right)^n = n^n 
+  n! = n^n \; e^{1-n} \;  e^{\int_{1}^{n} \text{frac}(t)/t \ dt}  .
+ RHS_{n+1} = (n+1)^{n+1} \; e^{-n} \;   e^{\int_{1}^{n} \text{frac}(t)/t \ dt} \;   e^{\int_{n}^{n+1} \text{frac}(t)/t \ dt}.   
+  {\int_{n}^{n+1} \text{frac}(t)/t \ dt} = 1 + n \log \left( \frac{n}{n+1} \right)  
+  RHS_{n+1} = (n+1) \; (n+1)^n \; e^{-n} \;  e^{\int_{1}^{n} \text{frac}(t)/t \ dt} \; \cdot e \cdot \; \left( \frac{n}{n+1} \right)^n   
+  RHS_{n+1} = (n+1) \; n^n \; e^{1-n} \;  e^{\int_{1}^{n} \text{frac}(t)/t \ dt}  
+  RHS_{n+1} = (n+1) \; n!  

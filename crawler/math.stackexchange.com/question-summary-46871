@@ -1,0 +1,26 @@
+\mathbb{R}^2
+(\epsilon_1,\epsilon_2)=\begin{pmatrix}1&0\\0&1\end{pmatrix}
+A=\begin{pmatrix}1&0&\frac{\sqrt{2}}{2}&\frac{\sqrt{2}}{2}\\0&1&\frac{\sqrt{2}}{2}&-\frac{\sqrt{2}}{2}\end{pmatrix}
+(e_1,e_2,e_3,e_4)=(\epsilon_1,\epsilon_2)A
+(\tilde{e}_1,\tilde{e}_2,\tilde{e}_3,\tilde{e}_4)=(\epsilon_1,\epsilon_2)B
+x=(1,1)^T
+x
+\{e_j\}
+\{\tilde{e}_j\}
+B
+\|\alpha\|_2
+\alpha
+x=\sum_{j}\langle x,\tilde{e}_j\rangle e_j=AB^Tx=\sum_j\alpha_j e_j
+A=U\Sigma V^T= \begin{pmatrix}0&1\\1&0\end{pmatrix} \cdot \begin{pmatrix}\sqrt{2}&0&0&0\\0&\sqrt{2}&0&0\end{pmatrix} \cdot \begin{pmatrix}0 & \frac{1}{\sqrt{2}} & \frac{1}{2} & -\frac{1}{2} \\  \frac{1}{\sqrt{2}} & 0 & \frac{1}{2} & \frac{1}{2} \\  -\frac{1}{2} & \frac{1}{2} & 0 & \frac{1}{\sqrt{2}} \\  -\frac{1}{2} & -\frac{1}{2} & \frac{1}{\sqrt{2}} & 0\end{pmatrix}
+\beta=V^T\alpha
+\begin{pmatrix}\sqrt{2}&0&0&0\\0&\sqrt{2}&0&0\end{pmatrix} \cdot\begin{pmatrix}\beta_1\\\beta_2\\\beta_3\\\beta_4\end{pmatrix} =\begin{pmatrix}1\\1\end{pmatrix}\qquad\cdots\cdots(*)
+\beta_1=\beta_2=\frac{1}{\sqrt{2}}
+\alpha=V\beta=\left(\frac{1}{2}-\frac{\beta _3}{2}-\frac{\beta _4}{2},\frac{1}{2}+\frac{\beta _3}{2}-\frac{\beta _4}{2},\frac{1}{\sqrt{2}}+\frac{\beta _4}{\sqrt{2}},\frac{\beta _3}{\sqrt{2}}\right)^T
+\beta_3=0
+\beta_4=1
+\alpha=(0,0,\frac{1}{\sqrt{2}},0)^T
+(*)
+AB^T=I
+\begin{pmatrix}\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\\1\end{pmatrix} =\begin{pmatrix}\frac{1}{\sqrt{2}}&0\\0&\frac{1}{\sqrt{2}}\\0&0\\0&1\end{pmatrix} \cdot \begin{pmatrix}1\\1\end{pmatrix}=\tilde{B}^T\begin{pmatrix}1\\1\end{pmatrix}
+\tilde{B}^T
+B=\left(V\tilde{B}^TU^T\right)^T=\begin{pmatrix}  0 & -\frac{1}{2} & \frac{3}{2 \sqrt{2}} & \frac{1}{2 \sqrt{2}} \\  0 & \frac{1}{2} & \frac{1}{2 \sqrt{2}} & -\frac{1}{2 \sqrt{2}} \end{pmatrix}

@@ -1,0 +1,67 @@
+n
+m
+m
+\mathbb{P}(X = k) = p (1-p)^k
+k \geq 0
+n p = \lambda
+x = \frac{k}{n}
+n
+   1 = \sum_{k=0}^\infty \mathbb{P}(X = k) = \sum_{k=0}^\infty \lambda \left(\left(1 -  \frac{\lambda}{n} \right)^{n \cdot k/n} \frac{1}{n} \right) \stackrel{n \to \infty}\rightarrow \int_0^\infty \lambda \mathrm{e}^{-\lambda x} \mathrm{d} x 
+\lambda
+     \mathcal{M}(p, t) = \frac{p}{1-\mathrm{e}^t (1-p)} 
+    \lim_{n \to \infty} \mathcal{M}\left( \frac{\lambda}{n}, \frac{t}{n} \right) =     \lim_{n \to \infty} \frac{\lambda}{n - \mathrm{e}^{t/n}\left(n - \lambda\right)} =    \lim_{n \to \infty} \frac{\lambda}{n \left(1 - \mathrm{e}^{t/n}\right) + \lambda \mathrm{e}^{t/n} } = \frac{\lambda}{\lambda-t} 
+X_\lambda
+\lambda\mathrm e^{-\lambda x}
+x\geqslant0
+\lambda
+a
+Y_a
+X_\lambda/a
+[Y_a=n]=[na\leqslant X_\lambda\lt (n+1)a]
+\mathrm P(Y_a=n)=\mathrm e^{-\lambda na}-\mathrm e^{-\lambda (n+1)a}
+\mathrm P(Y_a=n)=p_a^n(1-p_a)
+Y_a
+p_a
+\lambda
+p
+(0,1)
+p=p_a
+a
+(Z_p)_p
+Z_p
+p
+Z_p\leqslant Z_q
+p\geqslant q
+Z_p
+Z_p=Y_{\alpha(p)}
+X_\lambda\leqslant aY_a\lt X_\lambda+a
+aY_a\to X_\lambda
+a\to0
+\alpha(p)Z_p\to X_\lambda
+p\to1
+\log(1/p)Z_p
+X_1=X_\lambda/\lambda
+ p_a=\mathrm e^{-\lambda a}. 
+ \alpha(p)=\log(1/p)/\lambda. 
+\log(1/p)\sim1-p
+p\to1
+(1-p)Z_p
+X_1
+(T_p)_{0\lt p\lt1}
+T_p
+p
+(1-p)T_p
+p\to1
+T
+p
+p
+P(x) = p (1-p)^{x-1}
+F(x) = 1 - (1-p)^x
+x
+T-1
+T
+p T
+p \to 0+
+1
+x \ge 0
+ P(p T \le x) = F(x/p) = 1 - (1-p)^{\lfloor x/p\rfloor} \to 1 - e^{-x} 

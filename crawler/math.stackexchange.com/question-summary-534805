@@ -1,0 +1,33 @@
+p
+X\sim p
+\log p(X)
+p(x,y)=\frac{1}{2\pi}\exp\left(-\frac{1}{2}\left(x^2+y^2\right)\right)
+r
+p_r(r)=r\exp\left(-\frac{1}{2}r^2\right)
+\log p = -\frac{1}{2}r^2 - \log 2\pi
+\log p
+(-\infty,-\log 2\pi]
+p_{\log p}(\log p) = 2\pi\exp(\log p)
+p
+2
+T=\log p(X)
+X=(X_1,X_2)
+p
+q
+\mathrm e^t=p(q(t,s),s)
+u
+(t,s)=(\log p(x_1,x_2),x_2)
+(x_1,x_2)=(q(t,s),s)
+\mathrm dx_1\mathrm dx_2=\partial_1q(t,s)\mathrm dt\mathrm ds
+D=\{\log p(x_1,x_2)\mid (x_1,x_2)\in\mathbb R^2,p(x_1,x_2)\ne0\}
+T
+ E[u(T)]=\iint u(\log p(x_1,x_2))p(x_1,x_2)\mathrm dx_1\mathrm dx_2. 
+ E[u(T)]=\iint u(t)\mathrm e^t\partial_1q(t,s)\mathrm dt\mathrm ds. 
+ f_T(t)=\mathrm e^t\mathbf 1_{t\in D}\int\partial_1q(t,s)\mathrm ds. 
+(t,s)=(\log p(x_1,y),y)
+(x_1,y)=(q(t,s),s)
+\mathrm dx_1\mathrm dy=\partial_1q(t,s)\mathrm dt\mathrm ds
+D=\{\log p(x)\mid x\in\mathbb R^n,p(x)\ne0\}
+T
+ E[u(\log p(X))]=\iint u(t)\mathrm e^t\partial_1q(t,s)\mathrm dt\mathrm ds. 
+ f_T(t)=\mathrm e^t\mathbf 1_{t\in D}\iint\partial_1q(t,s_2,\ldots,s_n)\mathrm ds_2\cdots\mathrm ds_n. 

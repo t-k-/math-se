@@ -1,0 +1,39 @@
+M
+g(t)=g_t
+[0, \delta]
+\{(t,v)\in [0, \delta] \times TM \mid g_t(v,v)=1\}
+t
+M
+F : [0,\delta]\times UTM \to [0,\delta] \times TM
+F(t,u) = (t,(g_t(u,u))^{-1/2}u)
+UTM = \{ u \in TM : g_0(u,u)=1 \}
+g_t
+[0,\delta] \times UTM
+g_t(v)
+v
+UTM=\{v\in TM \mid g_0(v)=1\}
+\displaystyle\max_{v\in UTM} g_t(v)
+\displaystyle\min_{v\in UTM} g_t(v)
+t
+UTM
+M=\displaystyle \max_{t\in [0,\delta]} \max_{v\in UTM} g_t(v)
+\mu=\displaystyle \min_{t\in [0,\delta]} \min_{v\in UTM} g_t(v)
+v\in UTM
+\mu \le g_t(v) \le M
+t
+UTM
+w
+g_t(w)=1
+w
+\lambda>0
+\lambda w=v
+v\in UTM
+\mu\le g_t(v)=g_t(\lambda w)=\lambda g_t(w)=\lambda \le M
+w=\frac{1}{\lambda}v
+\frac{1}{M} \le \frac{1}{\lambda} \le \frac{1}{\mu}
+(t,w)
+\Sigma
+(t,w)
+[0, \delta] \times \{v\in TM \mid \frac{1}{M} \le g_0(v) \le \frac{1}{\mu} \}
+\Sigma
+\Sigma

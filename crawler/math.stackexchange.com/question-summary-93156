@@ -1,0 +1,18 @@
+m
+x_{n+1} = x_n -m \bigl[f(x_n)/f'(x_n)\bigr].
+f(x) = (x-a)^m g(x)
+g(a)\ne 0
+\phi(x) = x - m {f(x) \over f'(x)} = x - { (x-a) g(x) \over g(x) + {1\over m} (x-a) g'(x)} 
+x_{n+1} = \phi(x_n)
+y_n = x_n - a
+y_{n+1} = y_n \left( 1 - {1 \over 1 + {1\over m} y_n {g'(a+y_n)\over g(a+y_n)}}\right).
+y_{n+1} \simeq y_n^2 {1\over m} {g'(a+y_n)\over g(a+y_n)},
+m
+y_{n+1} \simeq y_n \left( {m-1\over m} + {1\over m} y_n {g'(a+y_n)\over g(a+y_n)} \right) \simeq {m-1\over m} y_n,
+x
+f(x_k)=(x_k-x)^mf^{(m)}(x)/m!+O((x_k-x)^{m+1})
+f'(x_k)=m(x_k-x)^{m-1}f^{(m)}(x)/m!+O((x_k-x)^m)
+x_{k+1}=x_k-m[f(x_k)/f'(x_k)]
+x_{k+1}-x=x_k-f(x_k)/f'(x_k)-x
+=x_k-x-(x_k-x)/m+O((x_k-x)^2)
+x_k-x-m(x_k-x)/m+O((x_k-x)^2)=O((x_k-x)^2)

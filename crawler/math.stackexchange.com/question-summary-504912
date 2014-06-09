@@ -1,0 +1,30 @@
+\dfrac{dx}{dt}=A(t)x \tag{I}
+A(t)=(a_{ij}(t))_{n \times n} \in C(\mathbb{R}^+,\mathbb{R}^{n \times n})
+X(t_0)=E
+x(t)=X(t)x_0
+X(t)
+x \equiv 0
+\left \| x(t) \right \|=\left \| X(t)x_0 \right \| \le \left \| X(t) \right \| \left \| x_0 \right \| \le M\left \| x_0 \right \|<\epsilon, \text{for}\left \| x_0 \right \|<\delta:=\frac{\epsilon}{M}
+x \equiv 0
+\left \| X(t)  \right \| \le M:=\dfrac{\epsilon}{\delta} \blacksquare 
+\forall \varepsilon >0, \exists \delta >0 \ \text{such that}\  \left \| x_0 \right \| \le \delta \implies \left \| x(t) \right \| = \left \| X(t)x_0 \right \| < \epsilon, \forall t \ge t_0
+\left \| X(t)\alpha  \right \|=\left \| X(t)\alpha  \cdot \dfrac{\delta}{\left \| \alpha \right \|}\right \|\cdot \dfrac{\left \| \alpha \right \|}{\delta}<\dfrac{\epsilon}{\delta}\left \| \alpha \right \|, \forall \alpha \in \mathbb{R}^n
+(I)
+x(t)=K(t,s)x_0
+ \dot x(t)=A(t)x(t)\\ x(s)=x_0. 
+x(t)=K(t,s)x_0=X(t)X^{-1}(s)x_0
+X^{-1}(s)x_0
+\iff
+||x(t)||< M 
+\iff
+|| X(t)X^{-1}(s)x_0 ||=||X(t)||\cdot||X^{-1}(s)x_0||<M
+\iff
+ || X(t)||<\frac{M}{||X^{-1}(s)x_0||}=P 
+P
+\iff
+||x(t)||< Me^{-ct}, \, c>0, \, t>s 
+\iff
+|| X(t)X^{-1}(s)x_0 ||=||X(t)||\cdot||X^{-1}(s)x_0||<Me^{-ct}
+\iff
+ || X(t)||<\frac{Me^{-ct}}{||X^{-1}(s)x_0||}=Pe^{-ct} 
+\displaystyle\lim_{t\to\infty}Pe^{-ct}=0

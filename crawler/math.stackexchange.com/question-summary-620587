@@ -1,0 +1,30 @@
+\int\frac{x\sin^{-1}(x)}{\sqrt{1+x^{2}}}\mathrm{d}x
+x^2
+\sin^{-1}(x)
+u = \sin^{-1} x \implies du = \dfrac {dx}{\sqrt{1-x^2}}
+dv = \dfrac x{\sqrt{1 + x^2}}\implies v = \sqrt{1 + x^2}
+I = uv - \int u'v
+\int\dfrac{x\sin^{-1}x}{\sqrt{1+x^2}}dx
+=\int\dfrac{\sin^{-1}x}{2\sqrt{1+x^2}}d(x^2)
+=\int\sin^{-1}x~d(\sqrt{1+x^2})
+=\sqrt{1+x^2}\sin^{-1}x-\int\sqrt{1+x^2}~d(\sin^{-1}x)
+=\sqrt{1+x^2}\sin^{-1}x-\int\dfrac{\sqrt{1+x^2}}{\sqrt{1-x^2}}dx
+=\sqrt{1+x^2}\sin^{-1}x-\int\dfrac{\sqrt{1+\sin^2u}}{\sqrt{1-\sin^2u}}d(\sin u)
+(\text{Let}~x=\sin u)
+=\sqrt{1+x^2}\sin^{-1}x-\int\sqrt{1+\sin^2u}~du
+=\sqrt{1+x^2}\sin^{-1}x-\int\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!\sin^{2n}u}{4^n(n!)^2(1-2n)}du
+=\sqrt{1+x^2}\sin^{-1}x-\int\left(1+\sum\limits_{n=1}^\infty\dfrac{(-1)^n(2n)!\sin^{2n}u}{4^n(n!)^2(1-2n)}\right)du
+\int\sin^{2n}u~du
+n
+\int\sin^{2n}u~du=\dfrac{(2n)!u}{4^n(n!)^2}-\sum\limits_{k=1}^n\dfrac{(2n)!((k-1)!)^2\sin^{2k-1}u\cos u}{4^{n-k+1}(n!)^2(2k-1)!}+C
+\therefore\sqrt{1+x^2}\sin^{-1}x-\int\left(1+\sum\limits_{n=1}^\infty\dfrac{(-1)^n(2n)!\sin^{2n}u}{4^n(n!)^2(1-2n)}\right)du
+=\sqrt{1+x^2}\sin^{-1}x-u-\sum\limits_{n=1}^\infty\dfrac{(-1)^n((2n)!)^2u}{16^n(n!)^4(1-2n)}-\sum\limits_{n=1}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^n((2n)!)^2((k-1)!)^2\sin^{2k-1}u\cos u}{4^{2n-k+1}(n!)^4(2k-1)!(1-2n)}+C
+=\sqrt{1+x^2}\sin^{-1}x-\sum\limits_{n=0}^\infty\dfrac{(-1)^n((2n)!)^2u}{16^n(n!)^4(1-2n)}-\sum\limits_{n=1}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^n((2n)!)^2((k-1)!)^2\sin^{2k-1}u\cos u}{4^{2n-k+1}(n!)^4(2k-1)!(1-2n)}+C
+=\sqrt{1+x^2}\sin^{-1}x-\sum\limits_{n=0}^\infty\dfrac{(-1)^n((2n)!)^2\sin^{-1}x}{16^n(n!)^4(1-2n)}-\sum\limits_{n=1}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^n((2n)!)^2((k-1)!)^2x^{2k-1}\sqrt{1-x^2}}{4^{2n-k+1}(n!)^4(2k-1)!(1-2n)}+C
+I=\int\frac{x\sin^{-1}x}{\sqrt{1-x^2}}dx
+\sin^{-1}x=\phi\implies \sin\phi=x, \cos\phi=+\sqrt{1-x^2}
+\sin^{-1}x
+\left[-\frac\pi2,\frac\pi2\right]
+I=\int\phi\sin\phi d\phi 
+I=\int\phi\sin\phi d\phi=\phi\int\sin\phi d\phi-\int\left(\frac{d\phi}{d\phi}\cdot\int\sin\phi d\phi\right)d\phi 
+=-\phi\cdot\cos\phi+\int \cos\phi d\phi=\cdots

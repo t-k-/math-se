@@ -1,0 +1,22 @@
+X
+T \in L(X,X)
+||T||<1
+L(X,X)
+\sum_{n=0}^{\infty}T^n
+L(X,X)
+L(X,X)
+m
+S_m = \sum_{n = 0}^m T^n; \tag{1}
+S_m
+k > l
+S_k - S_l = \sum_{n = l + 1}^k T^n = T^{l + 1} \sum_{n = 0}^{k -  l - 1} T^n = T^{l + 1}S_{k - l -1}; \tag{2}
+\Vert S_k - S_l \Vert = \Vert T^{l + 1}S_{k - l -1} \Vert \le \Vert T^{l + 1} \Vert \Vert S_{k - l -1} \Vert \le \Vert T \Vert^{l + 1} \Vert S_{k - l -1} \Vert. \tag{3}
+\Vert S_{k - l -1} \Vert
+\Vert S_{k - l -1} \Vert = \Vert \sum_{n = 0}^{k -  l - 1} T^n \Vert \le \sum_{n = 0}^{k -  l - 1} \Vert T^n \Vert \le \sum_{n = 0}^{k -  l - 1} \Vert T \Vert^n
+\le \sum_{n = 0}^\infty \Vert T \Vert^n = \dfrac{1}{1 - \Vert T \Vert}, \tag{4}
+\sum_{n = 0}^\infty \Vert T \Vert^n
+\Vert T \Vert < 1
+(1 - \Vert T \Vert)^{-1}
+\Vert S_k - S_l \Vert \le \dfrac{\Vert T \Vert^{l + 1}}{(1 - \Vert T \Vert)}; \tag{5}
+(I - T)^{-1} = \sum_{n = 0}^\infty T^n; \tag{6}
+(I - T)\sum_{n = 0}^m T^n = I - T^{m + 1} \tag{7}

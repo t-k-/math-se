@@ -1,0 +1,29 @@
+ \begin{align*} T &:= \inf \sum_{k=1}^{n}(x_{k}-x_{k-1})\cdot \sup_{x_k-1 \lt x\lt x_{k}} f(x), \\ t &:= \sup \sum_{k=1}^{n}(x_{k}-x_{k-1})\cdot \inf_{x_k-1\lt x \lt x_{k}} f(x), \\ \epsilon_{n} & = \sup_{x\in G}{\ | f_{n}(x)-f(x)|} \end{align*} 
+b,a \in G
+f_{n}(x) - \epsilon_{n} \le f(x) \le f_{n}(x) + \epsilon_{n} \ \forall x\in G, n\in \mathbf{N}
+\Rightarrow \int f_{n}(x)\,dx - \epsilon_{n}(b-a) \le t \le T \le \int f_{n}(x)\,dx + \epsilon_{n}(b-a) \ \forall n \in \mathbf{N}
+0\le T-t \le 2\epsilon_{n}(b-a) 
+\Leftrightarrow  \lim\limits_{n\to \infty}\ \sup\limits_{x\in G}\ |f_{n}-f| = 0
+n\to \infty : T=t
+f
+G
+f
+G
+t_{0} \in G
+U
+t_{0}
+f_{n}
+f
+G\cap U
+f_{n}
+G\cap U
+t_{0}
+f
+G \cap U
+t_{0}
+f
+t_{0}
+G\cap U
+f
+G
+G

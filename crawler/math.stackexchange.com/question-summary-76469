@@ -1,0 +1,12 @@
+A=\begin{pmatrix}  0 & \cdots & 0& -a_{0} \\  1 & \cdots & 0 & -a_{1}\\ \vdots &\ddots & \vdots &\vdots \\ 0 &\cdots & 1 & -a_{n-1} \end{pmatrix}
+A\in M_{n}
+p_{A}=t^{n}+a_{n-1}t^{n-1}+\cdots +a_{0}
+A_{1}\in M_{n-1}
+A_{1}
+A\in M_{n}
+\mathrm{det}(tI_n-A) = \mathrm{det} \begin{pmatrix}  t &  0 & \cdots & 0 & a_0 \\                                          -1 &  t & \cdots & 0 & a_1 \\                                        \vdots & \ddots & \ddots & \vdots & \vdots  \\                                           0 &  0 & \cdots & -1 & t+a_{n-1} \end{pmatrix} = 
+ t \cdot \mathrm{det} \; \begin{pmatrix} t &  0 & \cdots & 0 & a_1 \\                    -1 &  t & \cdots & 0 & a_2 \\                   \vdots & \ddots & \ddots & \vdots & \vdots  \\                     0 &  0 & \cdots & -1 & t+a_{n-1} \end{pmatrix} +    (-1)^{1+n} a_0 \cdot \mathrm{det} \begin{pmatrix} -1 &  t & 0 & \cdots & 0 \\                                0 & -1 & t & \cdots & 0 \\                   \vdots & \vdots & \ddots & \vdots & \vdots  \\                     0 &  0 & \cdots & 0 & -1 & \end{pmatrix} 
+a_1+a_2t+\cdots+a_{n-1}t^{n-2}+t^{n-1}
+(-1)^{n-1}
+t(a_1+a_2t+\cdots+a_{n-1}t^{n-2}+t^{n-1})+(-1)^{n+1}(-1)^{n-1}a_0
+a_0+a_1t+\cdots+a_{n-1}t^{n-1}+t^n

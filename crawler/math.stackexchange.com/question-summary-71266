@@ -1,0 +1,30 @@
+\text{bin}(n,p)
+n
+np
+n
+p
+λ
+λ>1000
+λ
+λ
+\sqrt{\lambda}
+λ
+10
+P(X ≤ x)
+x
+P(X ≤ x + 0.5)
+              F_\mathrm{Poisson}(x;\lambda) \approx F_\mathrm{normal}(x;\mu=\lambda,\sigma^2=\lambda)\, 
+L_2
+X\sim\mathrm{Poisson}(\lambda)
+(X-\lambda)/\sqrt{\lambda}
+\lambda\to\infty
+X\sim\mathrm{Bin}(n,\lambda/n)
+X
+\lambda
+n\to\infty
+X\sim\mathrm{Poisson}(\lambda)
+Y\sim\mathrm{Poisson}(\mu)
+X
+Y
+X+Y\sim\mathrm{Poisson}(\lambda+\mu)
+ \begin{align} & \Pr(X+Y= w) \\ & = \Pr\Big( (X=0\ \& \ Y=w)\text{ or }(X=1\ \&\ Y=w-1)\text{ or }(X=2\ \&\ Y=w-2)\text{ or }\ldots \\ & {}\qquad\qquad\qquad\ldots\text{ or }(X=0\ \&\ Y=w)\Big) \\ & = \sum_{u=0}^w \Pr(X=u)\Pr(Y=w-u)\qquad(\text{independence was used here}) \\ & = \sum_{u=0}^w \frac{\lambda^u e^{-\lambda}}{u!} \cdot \frac{\mu^{w-u} e^{-\mu}}{(w-u)!} \\ & = e^{-(\lambda+\mu)} \sum_{u=0}^w \frac{1}{u!(w-u)!} \mu^u\lambda^{w-u} \\ & = \frac{e^{-(\lambda+\mu)}}{w!} \sum_{u=0}^w \frac{w!}{u!(w-u)!} \mu^u\lambda^{w-u} \\ & = \frac{e^{-(\lambda+\mu)}}{w!} (\lambda+\mu)^w \end{align} 

@@ -1,0 +1,39 @@
+f: \mathbb{R}^d \to \mathbb{R}^m
+x_0 \in U \subseteq \mathbb{R}^d 
+U
+T: \mathbb{R}^d \to \mathbb{R}^m
+ \lim_{h \to 0 } \frac{f(x_0 + h) - f(x_0) - T(h)}{||h||} = 0 
+T
+ T(x) = \lim_{t \to 0^+} \frac{ f(x_0 + tx) - f(x_0) }{t } 
+f \, : \, U \subset \mathbb{R}^{d} \, \longrightarrow \, \mathbb{R}^m
+x_{0}
+U
+\mathbb{R}^d
+x_{0}
+ f(x_{0}+h) = f(x_{0}) + T_{x_{0}}f(h) + \Vert h \Vert \varepsilon(h) 
+T
+f
+x_{0}
+T_{x_{0}}f(h)
+T(h)
+\varepsilon
+\displaystyle \lim \limits_{h \to 0} \varepsilon(h) = 0
+v
+U
+t
+h=tv
+ f(x_{0}+tv) = f(x_{0}) + T_{x_{0}}f \big( tv \big) + \Vert tv \Vert \varepsilon(tv) 
+T_{x_{0}}f
+ f(x_{0}+tv) = f(x_{0}) + t T_{x_{0}}f(v) + \vert t \vert \Vert v \Vert \varepsilon(tv) 
+\displaystyle \lim \limits_{t \to 0} \varepsilon(tv) = 0
+ T_{x_{0}}f(v) = \lim \limits_{t \to 0} \frac{f(x_{0}+tv) - f(x_{0})}{t} 
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)-T(tx)}{|tx|} = 0 
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{|tx|} - \frac{T(tx)}{|tx|}  = 0 
+ \frac{1}{|x|}\lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{|t|} - \frac{tT(x)}{|t|}  = 0 
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{|t|} - \frac{tT(x)}{|t|}  = 0 
+t>0
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{t} - \frac{tT(x)}{t}  = 0 
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{t} - T(x)  = 0 
+ T(x) = \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{t} 
+t<0
+ \lim_{t \to 0} \frac{f(x_0+tx) - f(x_0)}{-t} - \frac{tT(x)}{-t}  = 0 

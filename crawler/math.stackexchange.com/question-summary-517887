@@ -1,0 +1,35 @@
+\nabla^2 \phi=0
+\Gamma_1 =-V
+\Gamma_2 = V
+\Gamma_0 = 0
+\phi(x,y) = \phi_1(x,y)+\phi_2(x,y)
+\nabla^2 \phi_1 = 0
+\phi_1(x,0) = 0
+\phi_1(x,d)=0
+\phi_1(0,y) = -V
+\phi_1(w,y) = 0
+\nabla^2 \phi_2 = 0
+\phi_2(x,0) = 0
+\phi_2(x,d)=0
+\phi_2(0,y) = 0
+\phi_2(w,y) = V
+\phi_1(x,y) = X(x) Y(y)
+\frac{X''}{X} = -\frac{Y''}{Y} = k^2
+Y(y) = A \cos{k y} + B \sin{k y}
+y
+A=0
+k = n \pi/d
+x
+X(x) = C_n \cosh{\frac{ n \pi (w-x)}{d}} + D_n \sinh{\frac{ n \pi (w-x)}{d}}
+C=0
+x=w
+\phi_1(x,y) = \sum_{n=1}^{\infty} D_n \sinh{\frac{ n \pi (w-x)}{d}} \sin{\frac{ n \pi y}{d}}
+D_n
+x=0
+D_n = \frac{2}{d \sinh{\frac{ n \pi w}{d}}} \int_0^d dy (-V) \sin{\frac{ n \pi y}{d}} = -\frac{2 V}{n \pi \sinh{\frac{ n \pi w}{d}}} \left ( 1-\cos{n \pi}\right )
+\phi_2
+\phi_2(x,y) = \sum_{n=1}^{\infty} C_n \sinh{\frac{ n \pi x}{d}} \sin{\frac{ n \pi y}{d}}
+C_n
+x=w
+D_n = \frac{2}{d \sinh{\frac{ n \pi w}{d}}} \int_0^d dy (V) \sin{\frac{ n \pi y}{d}} = \frac{2 V}{n \pi \sinh{\frac{ n \pi w}{d}}} \left ( 1-\cos{n \pi}\right )
+\phi(x,y) = \frac{4 V}{\pi} \sum_{k=0}^{\infty} \frac{\sinh{\frac{(2 k+1) \pi x}{d}}-\sinh{\frac{(2 k+1) \pi (w-x)}{d}}}{(2 k+1) \sinh{\frac{(2 k+1) \pi w}{d}}} \sin{\frac{(2 k+1) \pi y}{d}} 

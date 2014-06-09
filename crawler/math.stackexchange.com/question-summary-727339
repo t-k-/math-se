@@ -1,0 +1,40 @@
+X=0,1,2,\ldots
+P(X=x)=\sum_{t=0}^x\binom{n}{t}p^t(1-p)^{n-t}\binom{m-t}{x-t}q^{x-t}(1-q)^{m-x}\tag{1}
+0<p,q<1
+n\gg0
+m=an
+a>1
+p=2\times10^{-3}
+q=10^{-4}
+n=10^5
+a=30
+m=3\times10^6
+p
+2\times 10^6
+n
+10^6
+m
+X
+F_X(s)=\sum_{x=0}^{s}P(X=x)
+s
+X
+\sum_{x=0}^s\hat{p}(x)
+\hat{p}(x)=\int_{0}^{x}\frac{\exp\left[-\frac{(t-np)^2}{2np(1-p)}\right]}{\sqrt{2\pi     np(1-p)}}\frac{\exp\left[-\frac{(x-t-(m-t)q)^2}{2(m-t)q(1-q)}\right]}{\sqrt{2\pi     (m-t)q(1-q)}}dt
+r=p+q-pq
+X=Y+Z
+Y
+(n,r)
+Z
+(m-n,q)
+Y
+Z
+U_n\to U
+V_{m-n}\to V
+U
+V
+W_{m,n}\to W
+W
+Y=nr+\sqrt{nr(1-r)}\,U_n, 
+Z=(m-n)q+\sqrt{(m-n)q(1-q)}\,V_{m-n},
+X=np(1-q)+mq+\varrho W_{m,n},
+ \varrho^2=nr(1-r)+(m-n)q(1-q). 

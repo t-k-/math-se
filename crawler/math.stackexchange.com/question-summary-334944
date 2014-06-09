@@ -1,0 +1,19 @@
+f(x)
+2L
+f(x)
+g(n)
+n
+f(x) = \frac{a_0}{2} + \sum_{n=1}^\infty a_n\cos(n\pi x/L)+\sum_{n=0}^\infty b_n\sin(n\pi x/L),
+f(x) = \frac{a_0}{2} + \sum_{n=1}^\infty a_n\cos(g(n)\pi x/L)+\sum_{n=0}^\infty b_n\sin(g(n)\pi x/L),
+4L
+4L
+2L
+a_n
+\psi(x,t) = \sum_{n=0}^\infty a_ne^{-\kappa\lambda_n^2t}\cos(\lambda_nx),
+\lambda_n = (1+2n)\frac{\pi}{2L},
+\psi(x,0) = \phi(x),
+\phi(x)=\frac{RL^2}{2k}\left[1-\frac{x^2}{L^2}\right].
+\sum_{n=0}^\infty a_n\cos(\lambda_nx) = \phi(x).
+\int_{-2L}^{2L}\cos(\lambda_nx)\cos(\lambda_kx)dx = \cases{2L, \quad n = k\\0, \quad n \neq k},
+a_k2L = \int_{-2L}^{2L}\phi(x)\cos(\lambda_kx)dx
+\Rightarrow a_k = -\frac{8 L^2 R}{k\pi^2(1 + 2n)^2}.

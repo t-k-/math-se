@@ -1,0 +1,15 @@
+f:\mathbb{R}^2\to \mathbb{R}
+f(x,y) = \begin{cases}                   y & \text{if } x=0                   \\                   x^2+x^2\sin(\frac{1}{x}) & \text{if } x\neq 0                   \end{cases}
+(0,0)
+y
+(0,0)
+x
+(0,0)
+\frac{\partial f}{\partial y}\Biggm|_{(x,y)=(0,0)} = \lim_{y\to 0}\frac{f(0,y) - f(0,0)}{y-0} = \lim_{y\to 0}\frac{y-0}{y-0} = 1.
+\frac{\partial f}{\partial x}\Biggm|_{(x,y)=(0,0)} = \lim_{x\to 0}\frac{f(x,0)-f(0,0)}{x-0} = \lim_{x\to 0}\frac{x^2+x^2\sin(1/x) - 0}{x-0} = \lim_{x\to 0}\left(x+x\sin\frac{1}{x}\right)=0.
+\mathbf{u}=(a,b)
+a=0
+y
+a\neq 0
+D_{\mathbf{u}}f(0,0) = \lim_{h\to 0}\frac{f(ha,hb) - f(0,0)}{h}.
+D_{\mathbf{u}}f(0,0) = \lim_{h\to 0}\frac{1}{h}\left(h^2a^2 + h^2a^2\sin(1/h^2a^2)\right) = \lim_{h\to 0}\left(ha^2 + ha^2\sin(1/h^2a^2)\right)=0.

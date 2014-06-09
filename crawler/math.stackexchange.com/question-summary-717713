@@ -1,0 +1,7 @@
+\mathcal{L}\left\{e^{-t^2}\right\}
+=\int_0^\infty e^{-t^2-st}~dt
+=\int_0^\infty e^{-(t^2+st)}~dt
+=\int_0^\infty e^{-\left(t^2+st+\frac{s^2}{4}-\frac{s^2}{4}\right)}~dt
+=e^\frac{s^2}{4}\int_0^\infty e^{-\left(t+\frac{s}{2}\right)^2}~dt
+=e^\frac{s^2}{4}\int_\frac{s}{2}^\infty e^{-t^2}~dt
+=\dfrac{\sqrt\pi}{2}e^\frac{s^2}{4}~\text{erfc}\left(\dfrac{s}{2}\right)

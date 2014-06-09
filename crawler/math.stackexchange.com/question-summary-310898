@@ -1,0 +1,11 @@
+\lim_{x\to+\infty}\left(\left(x^3+\frac{x}2-\tan \frac1{x}\right)\text{e}^{\frac1{x}}-\sqrt{1+x^6}\right)
+\tan\frac{1}{x}
+e^{1/x}
+e^{1/x} \to 1+1/x+O(1/x^2)
+\sqrt{1+x^6} = x^3\sqrt{1+x^{-6}} \to x^3(1+x^{-6}/2 + O(x^{-12})) = x^3 + x^{-3}/2 + O(x^{-9}) 
+\tan(1/x) \to 1/x + O(1/x^2)
+\begin{align} (x^3+x/2-\tan(1/x))e^{1/x}-\sqrt{1+x^6} &\to (x^3+x/2-1/x+O(1/x^2))(1+1/x+O(1/x^2)) \\ &-(x^3 + x^{-3}/2 + O(x^{-9}))\\ &=x^3+x/2-1/x+O(1/x^2) + x^2+1/2-1/x^2+O(1/x^3)+O(x) \\ &-(x^3 + x^{-3}/2 + O(x^{-9}))\\ &= x^2+x/2+1/2 + O(x) \\ &= x^2+O(x) \\ \end{align} 
+x^3
+x^2
+x/2
+\tan(1/x)

@@ -1,0 +1,24 @@
+\int_0^{\infty}  {x^2 \over (x^2+A)^n} \ dx \ \ \text{for} \ \  A \gt 0 
+ {2\over(n-1)(n-2)(n-3)A^{n-3}}
+\int_0^{\infty}  {x^5 \over (x^2+A)^n} \ dx \ \ \text{for} \ \  A \gt 0 
+\displaystyle I_m = \int \frac1{(1+t^2)^m}dt
+\displaystyle I_m = \frac1{2(m-1)}\left[(2m-3)I_{m-1} + \frac{t}{(1+t^2)^{m-1}}\right]
+x=\sqrt{A}\,t
+dx=\sqrt{A}\,dt
+x^2=At^2
+\int_0^\infty \frac{A^{3/2}}{A^n}\frac{t^2\,dt}{(1+t^2)^n}.
+\frac{t^2}{(1+t^2)^n}=\frac{1+t^2}{(1+t^2)^n}-\frac{1}{(1+t^2)^{n}}=\frac{1}{(1+t^2)^{n-1}}-\frac{1}{(1+t^2)^n}.
+x=\sqrt{A \frac{u}{1-u}}
+0<u<1
+\operatorname{B}(a,b)
+    \int_0^\infty \frac{x^2}{(x^2+A)^n}\mathrm{d}x = \frac{a^{3-2n}}{2}\int_0^1 u^{1/2} (1-u)^{n-5/2} \mathrm{d}u = \frac{a^{3-2n}}{2} \operatorname{B}\left(\frac{3}{2},n-\frac{3}{2}\right) = \frac{\sqrt{\pi}}{4} a^{3-2n} \frac{\Gamma\left(n-\frac{3}{2}\right)}{\Gamma(n)} 
+I=\int_0^{\infty}  {x^2 \over (x^2+A)^n} \ dx \hspace{10mm}  \text{suppose  :  } A=a^2 
+ I= \frac{1}{2} \int_{-\infty}^{\infty}  {x^2 \over (x^2+a^2)^n} \ dx=\frac{1}{2}\oint_{c^+} \frac{z^2}{(z^2+a^2)}dz =\frac{1}{2} \left[ 2 \pi i \sum_{i=1}^n R_i^+    \right]=\frac{1}{2}(2 \pi i. R_1)
+  c^+ : \text{ Upper  half plane of complex plane (uhp)} 
+  c^- : \text{ Lower  half plane of complex plane (lhp)} 
+ R_i^+ \rightarrow \text{ Residue of function in singularity  ponits ( that   placed in uhp)}
+ \text{Singularites : } z^2+a^2=0 \rightarrow  \begin{cases} z_1=ia  &\mbox{Acceptable (uhp)}   \\ z_2=-ia  & \mbox{Ineligible (lhp) } \end{cases} \text{poles of order of n}
+ R_1=Residue(\frac{z^2}{(z^2+a^2)},z=ia,\text{pole of order of n}) 
+ R_1=\frac{1}{(n-1)!}\lim_{z \rightarrow ia } \left[ \frac{d^{n-1}}{dz^{n-1}}(\frac{(z-ia)^n z^2}{(z-ia)^n (z+ia)^n }) \right]
+ R_1=\frac{1}{(n-1)!}\lim_{z \rightarrow ia } \left[ \frac{d^{n-1}}{dz^{n-1}}(\frac{ z^2}{ (z+ia)^n }) \right] 
+ \frac{d^{n}}{dz^{n}}(\frac{ z^2}{ (z+ia)^n })= \frac{ \left[ 2 (iaz)+(n-1) a^2 \right](-1)^{n+1}(n)!}{(z+ia)^{n+2}} 

@@ -1,0 +1,26 @@
+n \in \mathbb{N}_1 := \{1, 2, \dots\}
+B:\Omega \times [0, \infty) \rightarrow \mathbb{R}^n
+n
+(\Omega, \mathcal{F}, P)
+t \in (0, \infty)
+ S := \{(\omega, x) \in \Omega\times\mathbb{R}^n \mid: \exists s \in [0,t], x = B(\omega, s)\} 
+S
+\mathcal{F} \otimes \mathcal{B}_n
+\mathcal{B}_n
+\mathbb{R}^n
+n=2
+(B_s)_{s \geq 0}
+2
+t=1
+k,j \in \mathbb{Z}
+m \in \mathbb{N}
+A_{k,j}^m := \left[ \frac{k}{2^m}, \frac{k+1}{2^m} \right) \times \left[ \frac{j}{2^m}, \frac{j+1}{2^m} \right)
+B_{k,j}^m := \left[ \frac{k-1}{2^m}, \frac{k+2}{2^m} \right] \times \left[ \frac{j-1}{2^m}, \frac{j+2}{2^m} \right].
+X_m(x,\omega) := \sum_{\ell=0}^{2^{8m}} \sum_{k,j} 1_{B_{k,j}^m}(x) \cdot 1_{A_{k,j}^m}(B(\ell/2^{8m},\omega)).
+(x,\omega)
+\ell \in \{0,\ldots,2^{8m}\}
+\{X \neq 0\}=S
+B(\cdot,\omega)
+B([0,1],\omega)
+X := \limsup_{m \to \infty} X_m \in [0,\infty]
+(x,\omega) \in S \Leftrightarrow x \in B([0,1],\omega) \Leftrightarrow d:=d(x,B([0,1],\omega))=0.

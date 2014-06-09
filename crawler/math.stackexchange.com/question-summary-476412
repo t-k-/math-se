@@ -1,0 +1,18 @@
+\textbf{Problem}
+2n \times 2n
+M=\left[ {\begin{array}{cc}               A & B \\              C & D \\                 \end{array} } \right]
+n \times n
+A
+AC=CA
+\det M= \det(AD-CB)
+AC \neq CA
+\textbf{Proof}
+A,B,C,D,X \in \textbf{M}_n(K)
+A+BX
+Y \in \textbf{M}_n(K)
+\left[ {\begin{array}{cc}              I_n & 0 \\              Y & I_n \\                 \end{array} } \right] \left[ {\begin{array}{cc}              A & B \\              C & D \\                 \end{array} } \right] \left[ {\begin{array}{cc}              I_n & 0 \\              X & I_n \\                 \end{array} } \right]= \left[ {\begin{array}{cc}              A+BX & B \\              YA+C+(YB+D)X & YB+D \\                 \end{array} } \right].
+Y=-(C+DX)(A+BX)^{-1}
+YA+C+(YB+D)X=Y(A+BX)+(C+DX)=0.
+\det\left[ {\begin{array}{cc}              I_n & 0 \\              Y & I_n \\                 \end{array} } \right]= \det\left[ {\begin{array}{cc}              I_n & 0 \\              X & I_n \\                 \end{array} } \right]= (\det(I_n))^2=1
+X=0
+A = \begin{bmatrix} 2 & 0 & 1 & 0 \\ 0 & 1 & 2 & 1 \\ 2 & 1 & 1 & 1 \\ 1 & 1 & 1 & 2 \end{bmatrix}.

@@ -1,0 +1,6 @@
+ \begin{array}{ccccccc}  X & Y & Z \\  0 & 0 & 0  \\  0 & 1 & 0  \\  0 & 2 & 1  \\  1 & 0 & 0  \\  1 & 1 & 1  \\  1 & 2 & 1  \\  2 & 0 & 1  \\  2 & 1 & 1  \\  2 & 2 & 1  \\ \end{array} 
+f:(X,Y) \rightarrow Z
+f
+f(X,Y)=\left\lceil\dfrac{\left\lfloor\dfrac{X+Y}{2}\right\rfloor}{2}\right\rceil
+f(\alpha)=\frac18\alpha^4-\frac{13}{12}\alpha^3+\frac{23}8\alpha^2-\frac{23}{12}\alpha
+\alpha = X + Y

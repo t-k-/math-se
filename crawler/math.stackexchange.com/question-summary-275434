@@ -1,0 +1,45 @@
+A
+x_0
+t
+A
+ A = \begin{pmatrix}  a & b & 0 & 0 & ... \\ b & a & b & 0 & ... \\ 0 & b & a & b & ... \\ 0 & 0 & b & a & ... \\ \vdots &&\ddots&\ddots&\ddots\end{pmatrix} 
+A
+x_0
+x_t = e^{A t}x_0
+A
+A = F D F^\top
+x_t = (F e^{D t} F^\top) x_0
+x_0
+O(n^2)
+O(n^3)
+a
+b
+A
+t = t_f
+x'(t) = Ax(t)
+x(0) = x_0
+K + 1
+0 = t_0 < t_1 < \cdots < t_K = t_f
+h = (t_f - t_0)/K
+x_k
+t_k
+x_{k + 1} = x_k + hAx_k
+O(3n)
+O(n)
+K + 1
+O(nK)
+O(h) = O(K^{-1})
+O(n^3)
+a
+b
+A
+a \neq 0
+A
+\lambda_j=b+2a \cos(\frac{j\pi}{n+1}), \, j=1,...,n
+{{\bf{v}}_j} = \left[ {\begin{array}{*{20}{c}}{\sin \left( {\frac{{1j\pi }}{{n + 1}}} \right)}\\{\sin \left( {\frac{{2j\pi }}{{n + 1}}} \right)}\\ \vdots \\{\sin \left( {\frac{{nj\pi }}{{n + 1}}} \right)}\end{array}} \right], \, j=1,...,n
+F
+D
+D
+A
+e^D
+A=\operatorname{tridiag}_n(-1,\alpha,-1)

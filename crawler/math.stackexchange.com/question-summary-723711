@@ -1,0 +1,22 @@
+f \in L^{\infty}
+g \in L^1
+f \star g
+g
+(x_n) \rightarrow x
+(f \star g)(x_n)
+h_n(y) = g(x_n-y)
+h_n(y) \rightarrow g(x-y)
+(f \star g)(x_n) \rightarrow (f \star g)(x)
+\epsilon > 0
+h(x)
+||h-g||_1 < \epsilon
+L^1
+|(f \star g) (x_1) - (f \star g) (x_2)| \leq \int |f(y)||g(x_1 -y) - g(x_2 - y)| dy
+\leq \int |f(y)||g(x_1 -y) - h(x_1 - y)|dy 
++ \int |f(y)||h(x_1 -y) - h(x_2 - y)|dy 
+ + \int |f(y)||h(x_2 -y) - g(x_2 - y)|dy
+\leq ||f||_\infty 2 \epsilon + ||f||_\infty\int|h(x_1 -y) - h(x_2 - y)|dy
+h
+\delta > 0
+\int |h(x_1 -y) - h(x_2 - y)|dy < \epsilon
+|x_1 - x_2| < \delta

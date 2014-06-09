@@ -1,0 +1,15 @@
+f:[a,b] \rightarrow  \mathbb R
+f(a) = f(b) = 0
+\ell_2
+\|f\| = \sqrt{(\int_a^b f^2)dx}
+\|f\| \leq \|f'\|\frac{b-a}{\sqrt{2}}
+|\int_a^b f'| \leq \sqrt{\int_a^b f'^2} * \sqrt{b-a}
+|\int_a^b f'|
+f
+f
+x\in[a,b]
+f'
+x=b
+|f(x)|^2=(|f(a)+\int_a^x f'|)^2 \leq (\int _a^x |f'(s)| ds)^2\leq (\int_a^x |f'(s)|^2 ds) (x-a)
+\int_a^b |f(x)|^2 dx \leq \int_a^b (\int_a^x |f'(s)|^2 ds) (x-a) dx \leq ||f'||^2 (b-a)^2/2
+\int_a^b (x-a) dx= \frac{1}{2} (x^2-ax)|_a^b=\frac{1}{2}(b-a)^2

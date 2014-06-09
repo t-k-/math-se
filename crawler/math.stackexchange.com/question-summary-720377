@@ -1,0 +1,12 @@
+ \sum_{n=1}^{\infty} \frac{sin(2 \pi n x)}{\pi n}
+x - [x] -\frac{1}{2} 
+-1<s<0
+\int_{0}^{1} \sum_{n=1}^{\infty} \frac{sin(2 \pi n x)}{\pi n} \frac{1}{x^{s+1}}dx
+\sum_{n=1}^{\infty} \int_{0}^{1}  \frac{sin(2 \pi n x)}{\pi n} \frac{1}{x^{s+1}} dx
+\alpha
+\int_{0}^{\alpha} \sum_{n=1}^{\infty} \frac{sin(2 \pi n x)}{\pi n} \frac{1}{x^{s+1}}dx
+\sum_{n=1}^{\infty} \int_{0}^{\alpha}  \frac{sin(2 \pi n x)}{\pi n} \frac{1}{x^{s+1}} dx
+(0,1)
+\alpha\to 0
+ \int_{0}^{\alpha}  \frac{\sin(2 \pi n x)}{\pi n} \frac{1}{x^{s+1}} dx  = - \left[  \frac{\cos(2 \pi n x)-1}{2 \pi^2 n^2} \frac{1}{x^{s+1}}\right]_0^\alpha - (s+1) \int_{0}^{\alpha}  \frac{\cos(2 \pi n x)-1}{\pi^2 n^2} \frac{1}{x^{s+2}} dx 
+ \int_{0}^{\alpha}  \frac{\cos(2 \pi n x)-1}{\pi^2 n^2} \frac{1}{x^{s+2}} dx = \int_{0}^{1/n}  \frac{\cos(2 \pi n x)-1}{\pi^2 n^2} \frac{1}{x^{s+2}} dx + \int_{1/n}^{\alpha}  \frac{\cos(2 \pi n x)-1}{\pi^2 n^2} \frac{1}{x^{s+2}} dx .

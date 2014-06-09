@@ -1,0 +1,30 @@
+(B_t)_{t \geq 0}
+T:=\inf\{t \geq 0: B_t=at-b\}
+a,b>0
+\mathbb{E}[T]
+X_t := B_t-at
+\tau:= \inf\{t \geq 0; B_t=at-b\} = \inf\{t \geq 0; X_t = -b\}.
+-b=\mathbb{E}(X_{\tau}) = \underbrace{\mathbb{E}(B_{\tau})}_{0}-a \mathbb{E}\tau,
+\mathbb{E}(\tau)=\frac{b}{a}
+\mathbb{E}\tau<\infty
+\tau_n := \inf\{t \geq 0; X_t \notin [-b,n]\}.
+(M_{t \wedge \tau_n})_{t \geq 0}
+\tau_n \uparrow \tau \qquad \qquad |X_{t \wedge \tau_n}| \leq \max\{b,n\}. \tag{1}
+M_t := \exp\big(2aX_t \big)
+\mathbb{E}M_{t \wedge \tau_n} = \mathbb{E}\exp\big(2a X_{t \wedge \tau_n}\big) = 1.
+(1)
+\mathbb{E}\exp\big(2aX_{\tau_n}\big)=1. \tag{2}
+\mathbb{E}\exp\big(2a X_{\tau_n}\big) = e^{-2ab} \cdot \mathbb{P}(X_{\tau_n}=-b)+e^{2an} \cdot \mathbb{P}(X_{\tau_n}=n). \tag{3}
+(2)
+(3)
+p_n := \mathbb{P}(X_{\tau_n}=-b) = 1- \mathbb{P}(X_{\tau_n}=n)= \frac{e^{-2an}-1}{e^{-2a(b+n)}-1}. \tag{4}
+(B_{t \wedge \tau_n})_{t \geq0}
+\mathbb{E}(B_{t \wedge \tau_n})=0
+\mathbb{E}(X_{t \wedge \tau_n}) = \mathbb{E}(B_{t \wedge \tau_n})-a \mathbb{E}(t \wedge \tau_n)= -a \cdot \mathbb{E}(t \wedge \tau_n).
+(1)
+\mathbb{E}\tau_n = \sup_{t \geq 0} \mathbb{E}(t \wedge \tau_n) = - \frac{1}{a} \mathbb{E}(X_{\tau_n}) \stackrel{(4)}{=} - \frac{1}{a} \bigg(-b \cdot p_n + n \cdot (1-p_n)\bigg).
+n (1-p_n) \to 0
+p_n \to 1
+n \to \infty
+\tau_n \uparrow \tau
+\mathbb{E}\tau = \sup_{n \in \mathbb{N}} \mathbb{E}\tau_n = \frac{b}{a}.

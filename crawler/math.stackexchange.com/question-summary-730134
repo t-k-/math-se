@@ -1,0 +1,44 @@
+A
+A = D + s^T s
+D = \DeclareMathOperator{diag}{diag} \diag\{\lambda_1,\ldots,\lambda_n\}
+s = [s_1,\ldots,s_n] \neq 0
+s^Ts
+|s|^2 = s_1^2+\cdots+s_n^2
+D
+\lambda_i
+A
+s^T s
+\lambda
+\lambda+|s|^2
+\lambda
+\det A = \lambda^{n-1} (\lambda+|s|^2)
+D
+\det(D + s^Ts) = \prod\limits_{i=1}^n \lambda_i + \sum_{i=1}^n s_i^2 \prod\limits_{j\neq i} \lambda_j 
+\lambda_i \neq 0
+v
+v_i = s_i/\lambda_i
+ \det(D+s^Ts) = \det(I+s^Tv)\det(D) = (1 + \sum\limits_{i=1}^n s_i^2/\lambda_i) \prod\limits_{i=1}^n \lambda_i 
+\det(I+s^Tv)
+(1 + \mu_i)
+\mu_i
+s^Tv
+1
+s^T v
+s_i^2/\lambda_i
+\lambda_i
+\lambda_i
+\lambda_i
+n
+D
+D
+\det(I+AB)=\det(I+BA)
+\det(I+xy^T)=1+y^Tx
+D
+D
+\det(D+ss^T)=0
+D_{n,n}
+\delta_r=\det(D)/D_{r,r}
+     \det(D+ss^T) = \det(D(I+D^{-1}ss^T)) = \det(D) \det(I+D^{-1}ss^T) = (1+s^TD^{-1}s) \det(D). 
+     \det(D+ss^T) = \det(D) \left(1+\sum_r \frac{s_r^2}{d_r}\right) 
+     \det(D+ss^T) = s_n^2\prod_{r=1}^{n-1} D_{r,r}. 
+     \det(D+ss^T) = \sum_r \delta_r s_r^2, 

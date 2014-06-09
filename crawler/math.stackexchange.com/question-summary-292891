@@ -1,0 +1,16 @@
+x
+x^2-2=0
+x_0 = 1.4
+x_{k+1} = x_k + \frac{1}{x_k} - \frac{x_k}{2}
+N
+|x_N-\sqrt{2}| \leq 10^{-100}
+|x_k - \sqrt{2}|\leq\delta<0.1 \implies |x_{k+1}-\sqrt{2}|\leq \frac{\delta^2}{2}
+|x_{k+1}-\sqrt2|\leqslant\frac12(x_k-\sqrt2)^2
+|x_k-\sqrt2|\leqslant2\delta_k
+|x_{k+1}-\sqrt2|\leqslant2\delta_{k+1}
+\delta_{k+1}=\delta_k^2
+\delta_0\lt10^{-2}
+\delta_k\leqslant10^{-2^{k+1}}
+k
+2\delta_6\lt2\cdot10^{-128}
+100

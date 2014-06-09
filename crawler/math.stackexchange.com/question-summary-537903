@@ -1,0 +1,31 @@
+\int_0^1\frac{\ln(x)}{x^2-1}dx=\frac{\pi^2}{8}
+\int_0^1\frac{\ln(x)}{x^2-1}dx=\sum_{n=0}^{\infty}\int_0^1(-x^{2n}\ln(x))dx=\sum_{n=0}^{\infty}\frac{1}{(2n+1)^2}=\frac{\pi^2}{8}
+\begin{align}\int_0^1\frac{\ln(x)}{x^2-1}dx&=\frac{1}{2}\left(\int_0^1\frac{\ln(u)}{u^2-1}du+\int_0^1\frac{\ln(v)}{v^2-1}dv\right)\\ &=\frac{1}{2}\left(\int_0^1\frac{\ln(u)}{u^2-1}du+\int_1^{\infty}\frac{\ln(v)}{v^2-1}dv\right)\\ &=\frac{1}{2}\left(\int_0^1\frac{\ln(u)}{u^2-1}du+\int_0^{\infty}\frac{\ln(u)}{u^2-1}du-\int_0^{1}\frac{\ln(u)}{u^2-1}du\right)\\ &=\frac{1}{2}\int_0^{\infty}\frac{\ln(u)}{u^2-1}du=\frac{1}{2}\times\frac{1}{2}\int_0^{\infty}\frac{\ln(u^2)}{u^2-1}du =\frac{1}{4}\int_0^{\infty}\frac{1}{1-u^2}\ln\left(\frac{1}{u^2}\right)du\\ &=\frac{1}{4}\int_0^{\infty}\frac{1}{1-u^2}\left[\ln\left(\frac{1+v}{1+u^2v}\right)\right]_{v=0}^{v=\infty}du\\ &=\frac{1}{4}\int_0^{\infty}\frac{1}{1-u^2}\left(\int_0^{\infty}\left(\frac{1}{1+v}-\frac{u^2}{1+u^2v}\right)dv\right)du\\ &=\frac{1}{4}\int_0^{\infty}\int_0^{\infty}\frac{1}{(1+v)(1+u^2v)}dv\,du=\frac{1}{4}\int_0^{\infty}\left(\frac{1}{1+v}\int_0^{\infty}\frac{1}{1+u^2v}du\right)dv\\ &=\frac{1}{4}\int_0^{\infty}\left(\frac{1}{1+v}\left[\frac{\tan^{-1}(\sqrt{v}u)}{\sqrt{v}}\right]_{u=0}^{u=\infty}\right)dv=\frac{1}{4}\times\frac{\pi}{2}\int_0^{\infty}\frac{1}{\sqrt{v}(1+v)}dv\\ &=\frac{\pi}{8}\int_0^{\infty}\frac{2w}{w(1+w^2)}dw=\frac{\pi}{8}\times2\left[\tan^{-1}(w)\right]_0^{\infty}=\frac{\pi}{8}\times2\times\frac{\pi}{2}=\frac{\pi^2}{8}.\end{align}
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}%  \newcommand{\yy}{\Longleftrightarrow}
+I = \int_0^{\infty} dx \frac{\log{x}}{x^2-1}
+x=1
+\oint_{C'} dz \frac{\log^2{z}}{z^2-1}
+C'
+C'
+\oint_{C'} dz \frac{\log^2{z}}{z^2-1} = -i 4 \pi  \int_0^{\infty} dx \frac{\log{x}}{x^2-1} + 4 \pi^2 \int_0^{\infty} dx \frac{1}{x^2-1}
+i 2 \pi
+C'
+z=-1
+\begin{align}\oint_{C'} dz \frac{\log^2{z}}{z^2-1} &= i 2 \pi \frac{\log^2{(-1)}}{2 (-1)} \\ &= i 2 \pi  \frac{\pi^2}{2}\end{align}
+x=1
+\begin{align}PV \int_0^{\infty} dx \frac{1}{x^2-1} &= \lim_{\epsilon \rightarrow 0} \left [\int_0^{1-\epsilon} dx \frac{1}{x^2-1} + \int_{1+\epsilon}^{\infty} dx \frac{1}{x^2-1}\right]\\ &= \lim_{\epsilon \rightarrow 0} \left [\int_0^{1-\epsilon} dx \frac{1}{x^2-1} + \int_0^{1/(1+\epsilon)} \left (-\frac{dx}{x^2} \right ) \frac{1}{(1/x^2)-1} \right ]\\ &= \lim_{\epsilon \rightarrow 0} \left [\int_0^{1-\epsilon} dx \frac{1}{x^2-1} - \int_0^{1-\epsilon}  \frac{dx}{x^2-1} \right ] \\ &= 0\end{align}
+x=1+\epsilon e^{i \phi}
+\phi \in [\pi,0]
+4 \pi^2 i \epsilon \int_{-\pi}^0 d\phi \frac{e^{i \phi}}{2 \epsilon e^{i \phi}} = i \frac{\pi}{2} 4 \pi^2
+-i 4 \pi \int_0^{\infty} dx \frac{\log{x}}{x^2-1} = i 2 \pi \frac{\pi^2}{2} - i \frac{\pi}{2} 4 \pi^2 = -i 2 \pi \frac{\pi^2}{2}
+I = \int_0^{\infty} dx \frac{\log{x}}{x^2-1} = \frac{\pi^2}{4}
+\int_0^{1} dx \frac{\log{x}}{x^2-1} = \frac12 I = \frac{\pi^2}{8}
+\mathrm{Li}_2:
+\mathrm{Li}_2(0)=0
+\ln(x)\ln(x+1)
+x=0
+x=1
+f(x):=\int\frac{\ln(x)}{x^2-1}dx=\int\frac{1}{2}\left(\frac{\ln(x)}{x-1}- \frac{\ln(x)}{x+1}\right) dx \\ =\frac{1}{2} \int \frac{\ln(x) dx}{x-1}- \frac{1}{2} \int \frac{\ln(x)dx }{x+1} =-\frac{1}{2}\mathrm{Li}_2(1-x) -\frac{1}{2} \left(\mathrm{Li}_2(-x) + \ln(x)\ln(x+1)\right)
+f(0) = -\frac{1}{2}\mathrm{Li}_2(1)= -\frac{\pi^2}{12}
+f(1) = -\frac{1}{2}\mathrm{Li}_2(-1)= \frac{\pi^2}{24}
+ \int_0^1\frac{\ln(x)}{x^2-1}dx=\frac{\pi^2}{24}+\frac{\pi^2}{12} = \frac{\pi^2}{8} 

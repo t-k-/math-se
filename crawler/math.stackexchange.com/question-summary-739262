@@ -1,0 +1,58 @@
+f(x)
+|f(x)|\leq \gamma
+x\in X
+\gamma
+f
+f
+f
+\|x\|\to +\infty
+\mbox{minimize} \;\; f(x):\;\;\; \mbox{subject to }\; x\in X.
+f(x)=\sum_{i=1}^pw_i \|x-a_i\|
+\sum_{i=1}^p w_i=0
+f
+x
+\|x\|
+x
+\varphi(x)=\|x\|
+\varphi
+x\neq 0
+\nabla \varphi(x) = \frac{x}{\|x\|} \;\; \mbox{ and }\; \; \nabla^2\varphi(x) = \frac{1}{\|x\|^3}\left(\|x\|^2I - xx^{T}\right).
+\varphi
+\varphi(x-a)\approx \varphi(x)- \langle \nabla\varphi(x), a\rangle + \frac{1}{2}\langle \nabla^2\varphi(x)a, a\rangle.
+\|x-a\| \approx \|x\| - \langle \frac{x}{\|x\|}, a \rangle + \frac{1}{2} \langle \dfrac{\|x\|^2I - xx^{T}}{\|x\|^3}a, a\rangle 
+\; \; \; \approx  \|x\| -\langle \frac{x}{\|x\|}, a \rangle + \frac{1}{2}(\dfrac{\|a\|^2}{\|x\|} - \dfrac{|\langle x, a\rangle|^2}{\|x\|^3})
+|\langle x, a\rangle|^2 \leq \|x\|^2 \|a\|^2
+\|x\|
+\|x-a\|  \approx  \|x\| -\bigg\langle \frac{x}{\|x\|}, a\bigg \rangle.
+f(x)
+\|x\|
+\sum_{i=1}^p w_i \|x\| - \langle \frac{x}{\|x\|}, \sum_{i=1}^p w_ia_i\rangle 
+\sum_{i=1}^p w_i=0
+\langle \frac{x}{\|x\|}, \sum_{i=1}^p w_ia_i\rangle
+\langle \frac{x}{\|x\|}, \sum_{i=1}^p w_ia_i\rangle \leq \|\sum_{i=1}^p w_ia_i\|.
+x=t\sum_{i=1}^p w_ia_i, \; t>0
+f
+-\|\sum_{i=1}^p w_ia_i\|
+x
+v=\sum_{i=1}^p w_ia_i
+f(x+h)=\ldots
+x
+h
+0
+x+h
+x
+x
+a_i
+\frac{|a_i|}{|x|}\le\epsilon
+|x-a_i|^2=|x|^2-2x\cdot a_i+|a_i|^2
+\bar{w}=\sum\limits_{i=1}^p|w_i|
+\bar{a}=\sum\limits_{i=1}^pw_ia_i
+(1)
+f
+-|\bar{a}|
+\bar{a}
+ |x-a_i|=|x|\left(1-\frac{x\cdot a_i}{|x|^2}+O\left(\epsilon^2\right)\right)\tag{1} 
+ \begin{align} f(x) &=\sum_{i=1}^pw_i|x-a_i|\\ &=-\frac{x}{|x|}\cdot\bar{a}+|x|\bar{w}\,O\left(\epsilon^2\right)\tag{2} \end{align} 
+         |\,\|x\|-\|y\|\,| \le \|x-y\| 
+      |\,\|x-a\|-\|x-b\|\,| \le \|(x-a)-(x-b)\|=\|b-a\|. 
+ \begin{align}    |\,\|x-a\|+\|x-b\|-2\|x-c\|\,| & \le |\,\|x-a\|-\|x-c\|\,|+|\,\|x-b\|-\|x-c\|\,| \\       & \le \|a-c\|+\|b-c\|. \end{align} 

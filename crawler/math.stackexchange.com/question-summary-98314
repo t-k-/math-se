@@ -1,0 +1,17 @@
+p_1
+p_2
+ \begin{equation} \begin{array}{lcl} E & = & \sum_{x=K}^{\infty} x \cdot p(x)\\ \\     & = & \sum_{x=K}^{\infty} x \cdot\{ {{x-1}\choose{K-1}} p_1^{K-1}(1-p_1)^{x-K}p_1{{x} \choose {K}} p_2^{K}\\     \\     &    & + {{x-1}\choose{K-1}} p_2^{K-1}(1-p_2)^{x-K}p_2{{x} \choose {K}} p_1^{K}\\     \\     &    & - {{x-1}\choose{K-1}} p_1^{K-1}(1-p_1)^{x-K}p_1 {{x-1}\choose{K-1}} p_2^{K-1}(1-p_2)^{x-K}p_2\}\\     \\     & = & \sum_{x=K}^{\infty} \{ {{x-1}\choose{K-1}} x  {{x} \choose {K}} p_1^K p_2^K (1-p_1)^{x-K}\\     \\     &    & + {{x-1}\choose{K-1}} x  {{x} \choose {K}} p_1^K p_2^K (1-p_2)^{x-K}\\     \\     &    & - {{x-1}\choose{K-1}} x  {{x-1} \choose {K-1}} p_1^K p_2^K (1-p_1)^{x-K} (1-p_2)^{x-K}\}\\     \\     & = & \sum_{x=K}^{\infty} \{ K{{x}\choose{K}} {{x} \choose {K}} p_1^K p_2^K (1-p_1)^{x-K}\\     \\     &    & + K{{x}\choose{K}} {{x} \choose {K}} p_1^K p_2^K (1-p_2)^{x-K}\\     \\     &    & - K{{x}\choose{K}} {{x-1} \choose {K-1}} p_1^K p_2^K (1-p_1)^{x-K} (1-p_2)^{K-k}\}\\     \\     & = & K p_1^K p_2^K \sum_{x=K}^{\infty} \{ {{x}\choose{K}} {{x} \choose {K}}  (1-p_1)^{x-K}     + {{x}\choose{K}} {{x} \choose {K}} (1-p_2)^{x-K}\\     \\     &    & - {{x}\choose{K}} {{x-1} \choose {K-1}}  (1-p_1)^{x-K} (1-p_2)^{x-K}\}\\ \end{array} \end{equation} 
+X_n
+n
+(k_A,k_B)
+k_A
+k_B
+A
+B
+     \Omega = \{ (k_A,k_B) \colon \min(k_A, k_B) = k \} 
+T = \inf\{n \colon X_n \in \Omega, X_{n-1} \not\in \Omega \}
+\mathbb{E}(T)
+T
+n
+\Omega \not\ni X_{n-1} \to X_n \in \Omega
+ \begin{eqnarray}    \mathbb{P}\left(T=n\right) &=& \mathbb{P}(K_A=k-1)\mathbb{P}(K_B \geqslant k) p_1 \\ &\phantom{=}& + \mathbb{P}(K_B=k-1)\mathbb{P}(K_A \geqslant k) p_2\\ &\phantom{=}& +     \mathbb{P}(K_A=k-1) \mathbb{P}(K_B=k-1) p_1 p_2 \\     &=& \binom{n-1}{k-1} p_1^{k} q_1^{n-k} \sum_{m=k}^{n-1} \binom{n-1}{m} p_2^m q_2^{n-1-m} \\ &+&  \binom{n-1}{k-1} p_2^{k} q_2^{n-k} \sum_{m=k}^{n-1} \binom{n-1}{m} p_1^m q_1^{n-1-m} \\    &+& \binom{n-1}{k-1} p_2^{k} q_2^{n-k} \binom{n-1}{k-1} p_1^{k} q_1^{n-k} \end{eqnarray} 

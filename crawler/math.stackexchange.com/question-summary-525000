@@ -1,0 +1,20 @@
+p \in \mathbb{R}
+u_0 = 1
+\forall k\in \mathbb{N}, u_{k+1} = (-2p+1)u_k + (p-2)(-1)^k
+u_k
+u_{k+1} = a u_k + b
+u_{k+1}-u_k
+b
+k
+v_{k+1} = (-2p+1)v_k - p(-1)^k
+v_0=0
+u_{k+1} = -(p+1)u_k-(p-2)v_k
+v_{k+1} = -pu_k-(p-1)v_k
+ u_k = u_0(1-2p)^k + \frac{(-1)^k(p-2)}{2(p-1)} - \frac{(1-2p)^k (p-2)}{2(p-1)} 
+ u_{k+1} = (1 - 2p)u_k + (p-2)(-1)^k 
+  A(x) =\sum_{k=0}^{\infty} u_{k}x^{k} = u_0 + \sum_{k=1}^{\infty} u_kx^k  = 1 + \sum_{k=1}^{\infty} u_kx^k
+ = 1 + (1-2p)x\sum_{k=1}^{\infty} u_{k-1}x^{k-1} - (p-2)\sum_{k=1}^{\infty} (-x)^k
+ = 1 + (1 - 2p)xA(x) + \frac{x(p-2)}{x + 1} \Rightarrow A(x) = \frac{1 + \frac{x(p-2)}{x+1}}{1 - x + 2px} = \frac{x+1 +x(p-2)}{(x+1)(1 + (2p-1)x)}
+ A(x) = \frac{\frac{p-2}{2(p-1)}}{x+1} + \frac{\frac{p}{2(p-1)}}{1 + (2p-1)x}  = \sum_{k=0}^{\infty} \frac{p-2}{2(p-1)}(-1)^k x^k + \sum_{k=0}^{\infty} \frac{p(1-2p)^k}{2(p-1)} x^k
+ = \sum_{k=0}^{\infty} \left(\frac{p-2}{2(p-1)}(-1)^k + \frac{p(1-2p)^k}{2(p-1)} \right) x^k 
+ \Rightarrow u_k = \frac{p-2}{2(p-1)}(-1)^k + \frac{p(1-2p)^k}{2(p-1)}  

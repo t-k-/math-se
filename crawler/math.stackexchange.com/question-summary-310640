@@ -1,0 +1,33 @@
+C\dfrac{\partial^2f}{\partial x^2}+D\dfrac{\partial^2f}{\partial y^2}-E(y-F)\dfrac{\partial f}{\partial y}+G\left(\dfrac{\partial f}{\partial x}+y\right)-H=0
+C,D,E,F,G,H\geq0
+B>0
+(0,B)\times\mathbb{R}
+f(x,y):[0,B]\times\mathbb{R}\rightarrow\mathbb{R}
+y\in\mathbb{R}
+\dfrac{\partial f}{\partial x}(0,y)=-y, \quad  \dfrac{\partial f}{\partial x}(B,y)=0
+C,D\neq0
+C\dfrac{\partial^2f}{\partial x^2}+D\dfrac{\partial^2f}{\partial y^2}-E(y-F)\dfrac{\partial f}{\partial y}+G\left(\dfrac{\partial f}{\partial x}+y\right)-H=0
+C\dfrac{\partial^2f}{\partial x^2}+D\dfrac{\partial^2f}{\partial y^2}-E(y-F)\dfrac{\partial f}{\partial y}+G\dfrac{\partial f}{\partial x}+Gy-H=0
+f=g+\dfrac{x^2y}{2B}-xy
+\dfrac{\partial f}{\partial x}=\dfrac{\partial g}{\partial x}+\dfrac{xy}{B}-y
+\dfrac{\partial^2f}{\partial x^2}=\dfrac{\partial^2g}{\partial x^2}+\dfrac{y}{B}
+\dfrac{\partial f}{\partial y}=\dfrac{\partial g}{\partial y}+\dfrac{x^2}{2B}-x
+\dfrac{\partial^2f}{\partial y^2}=\dfrac{\partial^2g}{\partial y^2}
+\therefore C\biggl(\dfrac{\partial^2g}{\partial x^2}+\dfrac{y}{B}\biggr)+D\dfrac{\partial^2g}{\partial y^2}-E(y-F)\biggl(\dfrac{\partial g}{\partial y}+\dfrac{x^2}{2B}-x\biggr)+G\left(\dfrac{\partial g}{\partial x}+\dfrac{xy}{B}-y\right)+Gy-H=0
+C\dfrac{\partial^2g}{\partial x^2}+\dfrac{Cy}{B}+D\dfrac{\partial^2g}{\partial y^2}-E(y-F)\dfrac{\partial g}{\partial y}-\dfrac{Ex^2(y-F)}{2B}+Ex(y-F)+G\dfrac{\partial g}{\partial x}+\dfrac{Gxy}{B}-Gy+Gy-H=0
+C\dfrac{\partial^2g}{\partial x^2}+D\dfrac{\partial^2g}{\partial y^2}-E(y-F)\dfrac{\partial g}{\partial y}+G\dfrac{\partial g}{\partial x}=\dfrac{Ex^2(y-F)}{2B}-Ex(y-F)-\dfrac{Gxy}{B}-\dfrac{Cy}{B}+H
+\dfrac{\partial g}{\partial x}(0,y)=0
+\dfrac{\partial g}{\partial x}(B,y)=0
+C\dfrac{\partial^2g}{\partial x^2}+D\dfrac{\partial^2g}{\partial y^2}-E(y-F)\dfrac{\partial g}{\partial y}+G\dfrac{\partial g}{\partial x}=0
+g(x,y)=X(x)Y(y)
+CX''(x)Y(y)+DX(x)Y''(y)-E(y-F)X(x)Y'(y)+GX'(x)Y(y)=0
+(CX''(x)+GX'(x))Y(y)=-(DY''(y)-E(y-F)Y'(y))X(x)
+\dfrac{CX''(x)+GX'(x)}{X(x)}=-\dfrac{DY''(y)-E(y-F)Y'(y)}{Y(y)}=-\dfrac{4C^2t^2+G^2}{4C}
+\begin{cases}CX''(x)+GX'(x)+\dfrac{4C^2t^2+G^2}{4C}X(x)=0\\DY''(y)-E(y-F)Y'(y)-\dfrac{4C^2t^2+G^2}{4C}Y(y)=0\end{cases}
+\therefore
+g(x,y)=\sum\limits_{n=0}^\infty C(n,y)e^{-\frac{Gx}{2C}}\cos\dfrac{n\pi x}{B}
+\dfrac{\partial g}{\partial x}(0,y)=0
+\dfrac{\partial g}{\partial x}(B,y)=0
+df(x,y)=g(x,y)dx+h(x,y)dy
+g(0,y)=-y\qquad g(B,y)=0\Rightarrow g(x,y)=y\frac{x-B}{B}
+\frac{\partial^2 f}{\partial x^2}=\frac{\partial g}{\partial x}=\frac{y}{B}

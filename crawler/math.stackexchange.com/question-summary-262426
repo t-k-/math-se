@@ -1,0 +1,49 @@
+n
+x_1,\ldots,x_n
+x_i
+a_i
+p_i
+0
+1-p_i
+P(x_1+\cdots+x_n\le k)
+s_1,...,s_r
+r
+\{a_{i_1},...,a_{i_m}\}
+r
+a_1,...,a_n
+n+1
+2^n
+r=n+1
+a_1=a_2=...=a_n
+r=2^n
+\{a_{(1)},...,a_{(n)}\}
+\forall i: \sum\limits_{1\le j<i}a_{(j)}\le a_{(i)}
+a_i=2^{i-1}
+r<2^n
+a_i=ln(prime(i))
+a_{i_1}+...+a_{i_m}
+r=2^n
+\{s_1,...,s_r\}
+s_1=0
+s_r=\sum\limits_i a_i
+x_i=0
+x_i=a_i
+[1;n]\setminus\{i_j\}
+P(0)
+(1-p_i)
+[1;n]
+P(s_1)=P(0)=\prod\limits_i (1-p_i)
+P(s_r)=P\left(\sum\limits_i a_i\right)=\prod\limits_i p_i
+P(s_k)=\sum\limits_{i_1,...,i_m|a_{i_1}+...+a_{i_m}=s_k}\left(\prod\limits_{j\in\{i_1,...,i_m\} } p_j\times\prod\limits_{j\in[1;n]\setminus\{i_1,...,i_m\} } (1-p_j)\right)=\\P(0)\times\sum\limits_{i_1,...,i_m|a_{i_1}+...+a_{i_m}=s_k}\left(\prod\limits_{j\in\{i_1,...,i_m\} }\frac{p_j}{1-p_j}\right)
+x_i
+p_i
+P\{\sum_{i=1}^n x_i = k\}
+z^k
+(1-p_1+p_1z)(1-p_2+p_2z)\cdots(1-p_n+p_nz)
+P(x_1+⋯+x_n≤k)=∑ ^ n _{m=0}∑  _{A\epsilon T_m } \Pi_{i \epsilon A} p_i  \Pi_{i \epsilon A^c  } (1-p_i) 
+T_m=
+r_1
+r_m
+ a_{r_1}+...+a_{r_m}<=k
+A^c
+A

@@ -1,0 +1,69 @@
+2^{m+2}\nmid\lfloor(1+\sqrt{3})^{2m+1} \rfloor
+m
+2^{m+1}\mid\lfloor(1+\sqrt{3})^{2m+1} \rfloor
+m
+x_0=2, x_1=20
+x_n=8x_{n-1}-4x_{n-2}
+n \geq 2
+x^2-8x+4
+4 \pm 2\sqrt{3}=(1 \pm \sqrt{3})^2
+x_n=a(1+\sqrt{3})^{2n}+b(1-\sqrt{3})^{2n}
+a, b
+x_0, x_1
+2=a+b
+20=a(1+\sqrt{3})^2+b(1-\sqrt{3})^2=4(a+b)+2\sqrt{3}(a-b)=8+2\sqrt{3}(a-b)
+a-b=\frac{12}{2\sqrt{3}}=2\sqrt{3}
+a=\frac{2+2\sqrt{3}}{2}=1+\sqrt{3}, b=\frac{2-2\sqrt{3}}{2}=1-\sqrt{3}
+x_n=(1+\sqrt{3})^{2n+1}+(1-\sqrt{3})^{2n+1}
+x_n
+-1<(1-\sqrt{3})^{2n+1}<0
+\lfloor(1+\sqrt{3})^{2n+1}\rfloor=\lfloor x_n-(1-\sqrt{3})^{2n+1} \rfloor=x_n
+2^{n+1} \| x_n
+n=0
+2^1 \|2=x_0
+n=1
+2^2 \|20=x_1
+0 \leq n \leq k, k \geq 1
+2^{k} \|x_{k-1}
+2^{k+1}\|x_k
+x_{k+1}=8x_k-4x_{k-1} \equiv 2^{k+2} \pmod{2^{k+3}}
+2^{k+2} \|x_{k+1}
+\alpha=1+\sqrt3
+\overline{\alpha}=1-\sqrt3=-\alpha(2-\sqrt3)
+-1<\overline{\alpha}<0
+\alpha^{2m+1}+\overline{\alpha}^{2m+1}\in\mathbb{Z}
+x_m:=\lfloor(1+\sqrt{3})^{2m+1} \rfloor=\alpha^{2m+1}+\overline{\alpha}^{2m+1}= \alpha^{2m+1}\left(1-(2-\sqrt3)^{2m+1}\right).\qquad(*)
+R=\mathbb{Z}[\sqrt3]=\{a+b\sqrt3\mid a,b\in\mathbb{Z}\}
+R
+2
+R
+(2)=(\alpha)^2
+\alpha^2
+2
+2+\sqrt3
+R
+(2+\sqrt3)(2-\sqrt3)=1
+I=2R=(\alpha)^2\subset R
+I=2R
+R
+0,1,\sqrt3,1+\sqrt3
+2-\sqrt3\equiv\sqrt3\pmod{I}.
+\sqrt3^2=3\equiv1\pmod I
+m
+(*)
+q_m
+R
+R
+\alpha\mid q_m
+\alpha^2\nmid q_m
+ \alpha^2=4+2\sqrt3=2(2+\sqrt3) 
+ (2-\sqrt3)^{2m+1}\equiv\sqrt3\pmod I 
+ x_m=\alpha^{2m+1}q_m, 
+ q_m\equiv 1+\sqrt3 \pmod I. 
+\alpha^{2m+2}
+\alpha
+x_m
+\alpha^2
+2
+2^{m+1}
+x_m

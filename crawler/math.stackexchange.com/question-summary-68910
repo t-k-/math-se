@@ -1,0 +1,28 @@
+0 < \alpha < 1
+f \in \Lambda^\alpha(\mathbb{T})
+k\neq 0
+|\widehat{f}(k)| \leq \pi^\alpha \frac{\|f\|_{\Lambda^1}}{k^\alpha}
+k^\alpha
+f\in L_p(\mathbb T^d)
+\|\sigma_n (f) - f\|_p \to 0
+\sigma_n(f) = \frac1{n}\sum\limits_{j=0}^{n-1} D_j
+ \begin{align*} |\widehat{f}(k)| &= \left|\frac1{2\pi}\int_{-\pi}^\pi f(t)e^{ikt}\mathrm dt\right|\\ &\leq \frac1{2\pi}\int_{-\pi}^\pi |f(t)|\cdot|e^{ikt}|\mathrm dt\\ &= \frac1{2\pi}\int_{-\pi}^\pi |f(t)|\mathrm dt\\ &= \frac1{2\pi}\int_{-\pi}^\pi |f(t+\pi) + f(t) - f(t+\pi)|\mathrm dt\\ &\leq \frac1{2\pi}\int_{-\pi}^\pi |f(t + \pi)| + |f(t +\pi) - f(t)|\mathrm dt\\ &= \frac{\pi^\alpha}{2\pi}\int_{-\pi}^\pi \frac{|f(t + \pi)|}{\pi^\alpha} + \frac{|f(t +\pi) - f(t)|}{\pi^\alpha}\mathrm dt\\ &\leq \frac{\pi^\alpha}{2\pi}\int_{-\pi}^\pi |f(t + \pi)| + \frac{|f(t +\pi) - f(t)|}{\pi^\alpha}\mathrm dt\\ &\leq \frac{\pi^\alpha}{2\pi}\int_{-\pi}^\pi \|f\|_{\Lambda^{\alpha}}\mathrm dt\\ &= \pi^\alpha \|f\|_{\Lambda^\alpha} \end{align*} 
+k\ne0
+c_k
+ c_k=\frac{1}{2\pi}\int_{0}^{2\pi}f(t)e^{-ikt}dt= -\frac{1}{2\pi}\int_{0}^{2\pi}f(t)e^{ik(t-\pi/k)}dt= -\frac{1}{2\pi}\int_{0}^{2\pi}f\left(t+\frac\pi k\right)e^{ikt}dt. 
+ |c_k|=\frac{1}{4\pi}\left|\int_{0}^{2\pi}\left(f(t)-f\left(t+\frac\pi k\right)\right)e^{-ikt}dt\right|\leq\frac{1}{4\pi}\int_{0}^{2\pi}\left|f(t)-f\left(t+\frac\pi k\right)\right|dt\leq 
+ \frac{||f||_{\Lambda^{\alpha}}}{4\pi}\int_0^{2 \pi } \left|\frac{\pi }{k}\right|^{\alpha } \, dt= \frac{\pi^\alpha}{2|k|^\alpha}||f||_{\Lambda^{\alpha}}. 
+f
+\hat{f}
+f
+\Delta_s f
+\Delta_s f(t)=f(t+s)-f(t)
+|e^{2\pi iks}-1|=|2\sin(\pi ks)|\ge|4ks|
+|ks|\le\frac{1}{2}
+s=\frac{1}{2k}
+|ks|\le\frac{1}{2}
+(3)
+ \hat{f}(k)(e^{2\pi iks}-1)=\int_{\mathbb{T}}(f(t+s)-f(t))\;e^{-2\pi ikt}\;\mathrm{d}t\tag{1} 
+ \begin{align} |\hat{f}(k)||e^{2\pi iks}-1| &\le\int_{\mathbb{T}}|f(t+s)-f(t)|\;\mathrm{d}t\\ &\le |s|^\alpha\|f\|_{\Lambda(\alpha)}\tag{2} \end{align} 
+ |\hat{f}(k)|\le \frac{|s|^{\alpha-1}}{|4k|}\|f\|_{\Lambda(\alpha)}\tag{3} 
+ |\hat{f}(k)|\le \frac{1}{2^{\alpha+1}|k|^\alpha}\|f\|_{\Lambda(\alpha)}\tag{4} 

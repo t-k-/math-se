@@ -1,0 +1,9 @@
+X, Y
+\sim \mathcal{U}[0,10]
+E[X+Y] = E[X] + E[Y] = 5 + 5 = 10
+E[2X] = 2 E[X] = 10 \Rightarrow E[X+Y] = E[2X].
+E\left[(X+Y-10)_+\right] = E\left[(2X-10)_+\right]
+ \frac{1}{10} \int_0^{10} (2x-10)^+dx    = \frac{1}{10} \int_5^{10} (2x-10)dx = 2.5 
+ \begin{split} \frac{1}{100} \int_0^{10} \int_0^{10} (x+y-10)^+ dydx  &= \frac{1}{100} \int_0^{10} \int_{10-x}^{10} (x+y-10) dydx \\  &= \frac{1}{100} \int_0^{10} \left[ x(x-10) + 50 - (10-x)^2/2 \right] dx \\  &= \frac{1}{100} \frac{500}{3} = \frac{5}{3}. \end{split} 
+X+X
+X+Y

@@ -1,0 +1,11 @@
+ \exp \left( -\frac{x^2}{4Dt} \right)
+u=-\frac{x^2}{4Dt}=-\frac{1}{4}x^2D^{-1}t^{-1}
+z=\mathrm{exp}(u)
+\frac{\partial z}{\partial x} = \frac{dz}{du}\frac{\partial u}{\partial x} = \mathrm{exp}(u) \cdot \left(-\frac{1}{2}xD^{-1}t^{-1} \right) = -\frac{x\cdot \mathrm{exp}\left(-\frac{x^2}{4Dt}\right)}{2Dt}
+\frac{\partial z}{\partial t} = \frac{dz}{du}\frac{\partial u}{\partial t} = \mathrm{exp}(u) \cdot \left(\frac{1}{4}x^2D^{-1}t^{-2} \right) = \frac{x^2\cdot \mathrm{exp}\left(-\frac{x^2}{4Dt}\right)}{4Dt^2}
+D
+\frac{\partial z}{\partial D} = \frac{dz}{du}\frac{\partial u}{\partial D} = \mathrm{exp}(u) \cdot \left(\frac{1}{4}x^2D^{-2}t^{-1} \right) = \frac{x^2\cdot \mathrm{exp}\left(-\frac{x^2}{4Dt}\right)}{4D^2t}
+D
+x
+t
+\frac{dz}{dt} = \frac{dz}{du}\frac{\partial u}{\partial x}\frac{dx}{dt} + \frac{dz}{du}\frac{\partial u}{\partial t}\frac{dt}{dt} =   -\frac{x\cdot \mathrm{exp}\left(-\frac{x^2}{4Dt}\right)}{2Dt}\cdot x'(t) + \frac{x^2\cdot \mathrm{exp}\left(-\frac{x^2}{4Dt}\right)}{4Dt^2}\cdot 1

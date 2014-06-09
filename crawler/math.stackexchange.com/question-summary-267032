@@ -1,0 +1,29 @@
+\Phi(840)
+2^{1930}
+840
+\Phi(840) = \Phi(2^3*3*5*7) = 480
+\operatorname{gcd}(2, 840)
+1
+n \geq 1
+\operatorname{gcd}(a, n) = 1
+a^{\Phi(n)}
+1 (\operatorname{mod} n)
+2^{1930} \equiv 0 \pmod{8}
+2^{1930} \pmod{105}
+2^{1930} \pmod {840}
+2^{1930}=840r+s\implies s=8(2^{1927}-105r)\implies 8\mid s,s=8t
+2^{1927}\equiv t\pmod {105}
+\phi(105)=\phi(3)\phi(5)\phi(7)=2\cdot4\cdot6=48\implies 2^{48}\equiv1\pmod{105}--->(1)
+\lambda(105)=lcm(\lambda(3),\lambda(5),\lambda(7))
+=lcm(\phi(3),\phi(5),\phi(7))=lcm(2,4,6)=12 \implies 2^{12}\equiv1\pmod {105}--->(2)
+2^{1920}=(2^{48})^{40}\equiv1^{40}\pmod{105}=1
+(1)
+2^{1920}=(2^{12})^{160}\equiv1^{160}\pmod{105}=1
+(2)
+2^{1920}=1+105u
+u
+2^{1930}=2^{10}\cdot2^{1920}=2^{10}(1+105u)
+\equiv2^{10}\pmod{2^{10}\cdot105}\equiv1024\pmod{2^{10}\cdot105}\equiv 1024\pmod{840}\equiv184
+1927\equiv7\pmod {48}\equiv7\pmod {12}
+2^{1927}\equiv 2^7\pmod {105}\equiv128\equiv 23
+2^{1930}\equiv 2^3\cdot 23\pmod {840}\equiv 184

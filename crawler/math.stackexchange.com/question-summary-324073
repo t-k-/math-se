@@ -1,0 +1,20 @@
+f(x) = \begin{cases}0 & \text{if }-\pi<x<0, \\ \sin(x) & \text{if }0<x<\pi. \end{cases}
+f(x) = \sum_{n=-\infty}^{+\infty} C_{n}e^{inx}
+C_{n} = \frac {1}{2\pi} \int_{0}^{\pi} \frac {e^{ix}-e^{-ix}}{2i} e^{-inx} \,\mathrm dx = \frac {1}{\pi}\left(\frac {1}{1-n^2}\right)
+n
+n
+ C_0 = \frac {1}{2\pi} \int_{0}^{\pi} \sin(x)\, \mathrm dx = \frac {1}{\pi}  
+ f(x) = \frac{1}{\pi} + \frac {1}{\pi} \left(\frac {e^{i2x}}{1-2^2} + \frac {e^{i4x}}{1-4^2}+\frac {e^{i6x}}{1-6^2}+\cdots\right) + \frac {1}{\pi} \left(\frac {e^{-i2x}}{1-2^2} + \frac {e^{-i4x}}{1-4^2}+\frac {e^{-i6x}}{1-6^2}+\cdots\right) 
+ f(x) = \frac{1}{\pi} + \frac {2}{\pi} \left(\frac {\cos(2x)}{1-2^2} + \frac {\cos(4x)}{1-4^2}+\frac {\cos(6x)}{1-6^2}+\cdots\right) 
+ f(x) = \frac{1}{\pi} + \frac{1}{2} \sin(x)+ \frac {2}{\pi} \left(\frac {\cos(2x)}{2^2-1} + \frac {\cos(4x)}{4^2-1}+\frac {\cos(6x)}{6^2-1}+\dotsb\right)
+-1
+\sin
+n=1
+\cos(x)
+-
+n=1
+\int_0^\pi \sin(x) e^{inx}\, \mathrm{d} x = \frac{1+ e^{i \pi n}}{1-n^2}
+n=1
+\int_0^\pi \sin(x) \exp(x)\, \mathrm{d}x=\frac{i \pi }{2}
+C_1
+ C_1 = \frac {1}{2\pi} \int_{0}^{\pi} \sin(x) e^{-ix} dx \neq 0. 

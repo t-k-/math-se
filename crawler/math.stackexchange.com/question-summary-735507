@@ -1,0 +1,14 @@
+\begin{split} \frac{dx}{dt}&=−3x+y\\ \frac{dy}{dt}&￼=x−3y \end{split}
+\begin{split} \frac{dx}{dt} &= −3x+y \\ \frac{dy}{dt} &￼= x−3y \end{split}
+x(0) = 6, y(0) = 2
+\begin{bmatrix} x'(t) \\ y'(t)\end{bmatrix} = A x(t) = \begin{bmatrix} -3 & 1 \\ 1 & -3\end{bmatrix} \begin{bmatrix} x(t) \\ y(t)\end{bmatrix}
+|A - \lambda I| = 0
+[A - \lambda_i I]v_i = 0
+\lambda_1 = -4, v_1 = (-1,1), ~ \lambda_2 = -2, v_2 = (1,1)
+\begin{bmatrix} x(t) \\ y(t)\end{bmatrix} = c_1 e^{\lambda_1 t} v_1 + c_2 e^{\lambda_2 t} v_2
+\begin{bmatrix} x(0) \\ y(0)\end{bmatrix} = \begin{bmatrix} 6 \\ 2 \end{bmatrix} 
+\begin{bmatrix} x(t) \\ y(t)\end{bmatrix} = \begin{bmatrix} 2 e^{-4 t} \left(2 e^{2 t}+1\right) \\ 2 e^{-4 t} \left(2 e^{2 t}-1\right)\end{bmatrix}
+(x, y) = (0,0)
+\vec{z}' = Az
+\vec{z} = \pmatrix{x\\y} \quad \text{ and } \quad A = \pmatrix{-3 & 1 \\ 1 & -3}
+A

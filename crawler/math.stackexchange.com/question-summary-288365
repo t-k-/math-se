@@ -1,0 +1,8 @@
+ \int \frac {1}{\sin x + \cos x} dx
+t = \tan(x/2)
+\dfrac{2}{2-(t-1)^2}
+\sin(x) = \dfrac{2 \tan(x/2)}{1+\tan^2(x/2)} = \dfrac{2t}{1+t^2}; \,\,\,\,\, \cos(x) = \dfrac{1-\tan^2(x/2)}{1+\tan^2(x/2)} = \dfrac{1-t^2}{1+t^2}
+dt = \dfrac{\sec^2(x/2) dx}2 \implies dx = \dfrac{2dt}{1+t^2}
+I = \int \dfrac{dx}{\sin(x) + \cos(x)} = \int \dfrac{2dt}{1-t^2 + 2t} = \int\dfrac{2dt}{2-(t-1)^2}
+\dfrac2{2-(t-1)^2} = \dfrac1{\sqrt{2}(t+\sqrt{2}-1)} - \dfrac1{\sqrt{2}(t-\sqrt{2}-1)}
+\int \dfrac{dt}{t+c} = \log(\vert t+c \vert) + \text{ constant}

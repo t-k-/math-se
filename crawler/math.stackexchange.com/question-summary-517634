@@ -1,0 +1,23 @@
+\dot{x} = f(x)
+x \in \mathbb{R}^n
+x(0) = x_0
+f : \mathbb{R}^n \rightarrow \mathbb{R}^n
+\phi(t; x_0)
+a \in \mathbb{R}^n
+a
+\lim_{t \rightarrow\infty}\phi(t; x_0) = a
+\phi(t,x_0) \rightarrow a
+\dot{x} \rightarrow 0
+x \rightarrow a
+a
+f
+\varepsilon_0>0
+ f(x)=f(a)+O(|x-a|) 
+ |\phi(t,x_0)-a|<\varepsilon_0 \;\;\mbox{ if } t>t_0 
+ |\phi'(t)-f(a)|=|f(\phi(t,x_0))-f(a)|\le M|\phi(t,x_0)-a|<M\varepsilon_0\; \mbox{ if } t>t_0 
+t_1
+t_2>t_0
+\varepsilon_0
+f(a)=0
+ 2\varepsilon_0>|\phi(t_1,x_0)-\phi(t_1,x_0)|=\left|\int_{t_1}^{t_2}\phi'(t)\,dt\right|\ge\left|\int_{t_1}^{t_2}f(a)\,dt\right|-\left|\int_{t_1}^{t_2}\phi'(t)-f(a)\,dt\right|\\ >|f(a)(t_2-t_1)|-M\varepsilon_0|t_2-t_1| 
+ |f(a)|<\frac{2\varepsilon_0+M\varepsilon_0|t_2-t_1|}{|t_2-t_1|} 

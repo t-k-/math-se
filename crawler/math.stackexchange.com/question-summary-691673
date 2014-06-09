@@ -1,0 +1,51 @@
+f: U\subseteq \mathbb{R}^3 \to \mathbb{R}^2
+a\in U
+{\partial f \over {\partial (x_2, x_3)}}(a)
+2  \times 2  
+V
+W
+\mathbb{R}^3
+a\in W
+C^1
+h: V \to W
+f \circ h(x) = (x_2, x_3)
+x\in V
+F(x) = (x_1, f(x))
+{\partial f \over {\partial (x_2, x_3)}}(a)
+f
+C^1
+V
+W
+F(x)
+\frac{\partial F}{\partial \mathbf{x}}
+\frac{\partial f}{\partial (x_2,x_3)}
+\frac{\partial F_1}{\partial x_1} = 1
+F
+f
+\frac{\partial f}{\partial x} = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} & \color{red}{\frac{\partial f_1}{\partial x_2}} & \color{red}{\frac{\partial f_1}{\partial x_3}} \\ \frac{\partial f_2}{\partial x_1} & \color{red}{\frac{\partial f_2}{\partial x_2}} & \color{red}{\frac{\partial f_2}{\partial x_3}} \end{pmatrix}.
+F(x) \stackrel{\textrm{def}}{=} \begin{pmatrix} x_1 \\ f(x) \end{pmatrix}
+J_F(x) \stackrel{\textrm{def}}{=}\frac{\partial F}{\partial x} = \begin{pmatrix} 1 & 0 & 0 \\ \frac{\partial f_1}{\partial x_1} & \color{red}{\frac{\partial f_1}{\partial x_2}} & \color{red}{\frac{\partial f_1}{\partial x_3}} \\ \frac{\partial f_2}{\partial x_1} & \color{red}{\frac{\partial f_2}{\partial x_2}} & \color{red}{\frac{\partial f_2}{\partial x_3}} \end{pmatrix}.\tag{1}
+\begin{align*}\det \frac{\partial F}{\partial x} &= 1\cdot \det \begin{pmatrix}  \color{red}{\frac{\partial f_1}{\partial x_2}} & \color{red}{\frac{\partial f_1}{\partial x_3}} \\  \color{red}{\frac{\partial f_2}{\partial x_2}} & \color{red}{\frac{\partial f_2}{\partial x_3}} \end{pmatrix} + 0\cdot \det \begin{pmatrix}\frac{\partial f_1}{\partial x_1} &  \color{red}{\frac{\partial f_1}{\partial x_3}} \\ \frac{\partial f_2}{\partial x_1} &  \color{red}{\frac{\partial f_2}{\partial x_3}}  \end{pmatrix} + 0 \cdot \det \begin{pmatrix}\frac{\partial f_1}{\partial x_1} &  \color{red}{\frac{\partial f_1}{\partial x_2}} \\ \frac{\partial f_2}{\partial x_1} &  \color{red}{\frac{\partial f_2}{\partial x_2}}  \end{pmatrix} \\ &= \det \begin{pmatrix}  \color{red}{\frac{\partial f_1}{\partial x_2}} & \color{red}{\frac{\partial f_1}{\partial x_3}} \\  \color{red}{\frac{\partial f_2}{\partial x_2}} & \color{red}{\frac{\partial f_2}{\partial x_3}} \end{pmatrix} \\  &\neq 0. \end{align*}
+F
+F
+U
+F
+p
+F^{-1}
+p
+J_{F^{-1}}(F(p)) = \left[J_F(p)\right]^{-1},
+p
+F
+W
+V
+F^{-1}
+V
+W
+y \in V
+x \in V
+x_1,x_2,x_3
+g_1,g_2,g_3 : \mathbb{R}^3 \to \mathbb{R}
+F\circ F^{-1}(y) = y.
+F^{-1} \stackrel{\textrm{def}}{=} \begin{pmatrix} g_1 \\ g_2 \\ g_3\end{pmatrix}\\ F^{-1}(y) = \begin{pmatrix} g_1(y_1,y_2,y_3) \\ g_2(y_1,y_2,y_3) \\ g_3(y_1,y_2,y_3)\end{pmatrix} \\ F(F^{-1}(y)) = \begin{pmatrix} g_1 \\ f_1(g_1,g_2,g_3) \\ f_2(g_1,g_2,g_3) \end{pmatrix} = \begin{pmatrix} y_1 \\ y_2 \\ y_3\end{pmatrix}\\ \implies \begin{align*} g_1(y_1,y_2,y_3) &= y_1, \\ f_1(g(y)) &= y_2,\\ f_2(g(y)) &= y_3.\end{align*} 
+f
+C^1

@@ -1,0 +1,22 @@
+f: X \rightarrow [0, \infty]
+\mu(X) < \infty
+\int f \; d\mu < \infty
+\sum_{n=1}^\infty 2^n \mu(x \in X : f(x) \geq 2^n) < \infty.
+∫fdμ<∞
+2^nμ(x∈X:f(x)≥2^n)\leq ∫fdμ<∞
+n
+μ(x∈X:f(x)≥2^n)\rightarrow 0
+n\rightarrow 0
+μ(x∈X:f(x)≥2^n)\rightarrow 0
+n\rightarrow 0
+A_n:=\{x \in X | f(x)\geq2^n\}
+\{f=\infty\}
+\mu(X/\cap _nA_n) =\mu(X)<\infty
+f(x)
+X/\cap _nA_n
+A_n = \{x\in X\ |\ f(x)\geq 2^n\}
+A_0 = X
+\displaystyle X = \bigsqcup_{n=1}^{\infty} (A_{n-1}\setminus A_n)
+ \int_X f d\mu = \sum_{n=1}^{\infty} \int_{A_{n-1}\setminus A_n} f d\mu 
+ \displaystyle \int_X f d\mu \geq \sum_{n=1}^{\infty} \int_{A_{n}\setminus A_{n+1}} f d\mu \geq \sum_{n=1}^{\infty} 2^n(\mu(A_n) - \mu(A_{n+1})) = \mu(A_1) + \sum_{n=1}^{\infty} 2^{n-1} \mu(A_n) 
+ \displaystyle \int_X f d\mu = \sum_{n=1}^{\infty} \int_{A_{n-1}\setminus A_n} f d\mu \leq \sum_{n=1}^{\infty} 2^n \mu(A_{n-1}) = 2\mu(X) + 2\sum_{n=1}^{\infty} 2^n \mu(A_n) 

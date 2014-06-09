@@ -1,0 +1,12 @@
+N =(N_t)_{t\geq0}
+\lambda > 0
+(T_n)_{n\geq 1}
+t \geq 0
+Z_t = t- T_{N_t} \mathbb 1 _{\{ t \geq T_1\}}
+N
+W_t = T_{N_t+1} -t
+N
+\mathbb P \{ Z_t >z, W_t >w \}
+ P \{ Z_t >z, W_t >w \} = P \{  T_{N_t} \mathbb 1 _{\{ t \geq T_1\}} < t-z, T_{N_t+1}  > t+w \}  \\ = \sum_{n\geq 0} P \{  T_{n} \mathbb 1 _{\{ t \geq T_1\}} < t-z, T_{n+1}  > t+w \ | \ N_t=n \}
+T_n \sim \Gamma(n,\lambda), \ \forall n\geq 1 
+(T_{n+1} -T_n) \overset{\text{iid}}{\sim}  \mathcal E (\lambda), \ \forall n\geq 0  

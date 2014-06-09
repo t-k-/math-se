@@ -1,0 +1,29 @@
+\frac{d}{dx} \int_0^x \int_0^x f(y,z) \;dy\; dz
+\phi(\alpha)=\int_{u_1}^{u_2}f(x,\alpha)dx, ~~a\leq\alpha\leq b
+u_1
+u_2
+\alpha
+\frac{d\phi}{d\alpha}=\int_{u_1}^{u_2}f_{\alpha}dx+f(u_2,\alpha)\frac{du_2}{d\alpha}-f(u_1,\alpha)\frac{du_1}{d\alpha}
+x
+\alpha
+\int_0^{x}f(y,z)dy
+g(x,z)
+x
+\frac{d}{dx}
+\begin{align}\frac{d}{dx} \int_{0}^{x} dy \left[\int_{0}^{x} f(y,z) dz \right] &=\int_{0}^{x} f(x,z) dz + \int_{0}^{x} dy \frac{\partial}{\partial x}\left[\int_{0}^{x} f(y,z) dz \right]\\ &= \int_{0}^{x} f(x,z) dz + \int_{0}^{x} dy \left[f(y,x) + \int_{0}^{x} \frac{\partial f(y,z)}{\partial x} dz\right]\\ &= \int_{0}^{x} f(x,z) dz + \int_{0}^{x} f(y,x) dy \end{align}
+\frac{d}{dx} \int_{a(x)}^{b(x)} g(x,y) dy = g(x,b(x)) b'(x) - g(x,a(x)) a'(x) + \int_{a(x)}^{b(x)} \frac{\partial g(x,y)}{\partial x} dy
+I(x)
+I(x)
+f(y,z)
+(0,0)
+x
+I(x)
+x
+x+\Delta x
+\Delta I
+(y=x, z=0)
+(y=x, z=x)
+(y=0, z=x)
+\Delta I=\Delta x \times (\int_0^xf(x,z)dz + \int_0^xf(y,x)dy)
+\Delta I
+\Delta x

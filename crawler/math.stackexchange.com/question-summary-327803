@@ -1,0 +1,38 @@
+n
+a
+b
+r
+|B(a, r)\cap B(b, r)|
+n
+n
+0
+1
+a
+b
+m
+S(a,r)\cap S(b,s)
+a
+v
+r
+a
+s
+b
+r
+a
+v
+r
+1
+s
+b
+m
+b
+i
+m-i
+n-m
+s-i
+(m - i) + (s-i) = r
+m+s-r
+i = (m+s-r)/2
+b = (\underbrace{1,\ldots,1}_{m\text{ times}},\underbrace{0\,\ldots,0}_{n-m\text{ times}}).
+\left|S(a,r)\cap S(b,s)\right| = \begin{cases}0 & \text{if }m-(s+r)\text{ odd,}\\\binom{m}{(m+s-r)/2}\binom{n-m}{(m-s-r)/2}&\text{if }m\text{ even.}\end{cases}
+\left|B(a,r)\cap B(b,r)\right| = \sum_{i=0}^r \sum_{\substack{j=0\\m+i-j\text{ even}}}^r \binom{m}{(m+i-j)/2}\binom{n-m}{(m-i-j)/2}.

@@ -1,0 +1,16 @@
+\begin{aligned} task 1: &200 \\ task 2: &500 \\ task 3: &300 \\ \end{aligned}
+\begin{aligned} person 1: &500 \\ person 2: &600 \\ \end{aligned}
+x_{ij}
+i
+j
+x_{ij}
+x_{ij} \in \{0,1\}
+\begin{align} \text{maximize } & x_{11} + x_{12} + x_{21} + x_{22} + x_{31} + x_{32} + x_{41} + x_{42} \\ s.t. & x_{11} + x_{12} \leq 1 \\      & x_{21} + x_{22} \leq 1 \\      & x_{31} + x_{32} \leq 1 \\      & x_{41} + x_{42} \leq 1 \\      & 200x_{11} + 500x_{21} + 300x_{31} + 700x_{41} \leq 500 \\      & 200x_{12} + 500x_{22} + 300x_{32} + 700x_{42} \leq 600 \\ \end{align}
+600 < 700
+ x_{11} = 0\\ x_{12} = 1\\ x_{21} = 1\\ x_{22} = 0\\ x_{31} = 0\\ x_{32} = 1\\ x_{41} = 0\\ x_{42} = 0\\ 
+\begin{align} \text{minimize } & y_1 + y_2 + y_3 + y_4 + 500y_5 + 600y_6 \\ s.t. & y_1 + 200y_5 \geq 1 \\      & y_1 + 200y_6 \geq 1 \\      & y_2 + 500y_5 \geq 1 \\      & y_2 + 500y_6 \geq 1 \\      & y_3 + 300y_5 \geq 1 \\      & y_3 + 300y_6 \geq 1 \\      & y_4 + 700y_5 \geq 1 \\      & y_4 + 700y_6 \geq 1 \\      & y_1, \cdots ,y_6 \geq 0 \\ \end{align}
+ y_1 = 1\\ y_2 = 1\\ y_3 = 1\\ y_4 = 1\\ y_5 = 0\\ y_6 = 0\\ 
+x
+x_{42}=0.14286
+y_4
+x_{41}+x_{42}<1

@@ -1,0 +1,12 @@
+n\times n
+(1, x, x^2, ..., x^{n-1})
+x
+0,1,...,n-1
+(A|I)\to (I|A^{-1})
+A
+I
+\mathbf V(x_0,\dots,x_n)=\begin{pmatrix}1&1&\cdots&1\\x_0&x_1&\cdots&x_n\\\vdots&\vdots&\ddots&\vdots\\x_0^n&x_1^n&\cdots&x_n^n\end{pmatrix}
+\mathbf D_k=\mathrm{diag}\left(\underbrace{1,\dots,1}_{k+1},\frac1{x_{k+1}-x_0},\dots,\frac1{x_n-x_{n-k-1}}\right)
+\mathbf L_k(h)=\left(\begin{array}{ccc|cccc} 1&&&&&&\\&\ddots&&&&&\\&&1&&&&\\\hline&&&1&&&\\&&&h&\ddots&&\\&&&&\ddots&\ddots&\\&&&&&h&1\end{array}\right)
+k\times k
+\mathbf V^{-1}=\left(\mathbf L_0(1)^\top\cdot\mathbf D_0\cdots \mathbf L_{n-1}(1)^\top\cdot\mathbf D_{n-1}\right)\left(\mathbf L_{n-1}(x_{n-1})\cdots\mathbf L_1(x_1)\cdot\mathbf L_0(x_0)\right)

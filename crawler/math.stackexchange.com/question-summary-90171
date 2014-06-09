@@ -1,0 +1,37 @@
+|x-1|<1
+y= \displaystyle \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n} (x-1)^n
+y=\ln x
+e^y=x
+x=e^{f(x)}
+(2)
+(3)
+(3)
+(4)
+g(x)=e^{f(x)}
+g(1)=1
+(6)
+(7)
+g(1)=1
+C=1
+(1)
+f'(1)=1
+ f(x)=-\sum_{n=1}^\infty\frac{(1-x)^n}{n}\tag{1a} 
+ f(1-x)=-\sum_{n=1}^\infty\frac{x^n}{n}\tag{1b} 
+ \begin{align} f((1-u)(1-v)) &=f(1-(u+v-uv))\\ &=-\sum_{n=1}^{\infty}\frac{(u+v-uv)^n}{n}\\ &=-\sum_{n=1}^{\infty}\frac{(u(1-v)+v)^n}{n}\\ &=-\sum_{n=1}^{\infty}\sum_{k=0}^n\frac{1}{n}\binom{n}{k}(u(1-v))^kv^{n-k}\\ &=-\sum_{n=1}^\infty\frac{1}{n}v^n-\sum_{k=1}^\infty\sum_{n=k}^\infty\frac{1}{k}\binom{n-1}{k-1}(u(1-v))^kv^{n-k}\\ &=-\sum_{n=1}^\infty\frac{1}{n}v^n-\sum_{k=1}^\infty\frac{1}{k}\left(\frac{u(1-v)}{1-v}\right)^k\\ &=-\sum_{n=1}^\infty\frac{1}{n}v^n-\sum_{k=1}^\infty\frac{1}{k}u^k\\ &=f(1-u)+f(1-v)\tag{2} \end{align} 
+ f(xy)=f(x)+f(y)\tag{3} 
+ f(1)=f(x\cdot1)-f(x)=0\tag{4} 
+ \begin{align} f'(x) &=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\\ &=\lim_{h\to0}\frac{f(x(1+h/x))-f(x)}{h}\\ &=\frac{1}{x}\lim_{h\to0}\frac{f(1+h/x)-f(1)}{h/x}\\ &=\frac{1}{x}f'(1)\tag{5} \end{align} 
+ \begin{align} g'(x) &=g(x)f'(x)\\ &=g(x)\frac{1}{x}f'(1)\tag{6} \end{align} 
+ \begin{align} x^{f'(1)+1}\left(x^{-f'(1)}g(x)\right)' &=-f'(1)g(x)+xg'(x)\\ &=0\tag{7} \end{align} 
+ x^{-f'(1)}g(x)=C\tag{8} 
+ g(x)=x^{f'(1)}\tag{9} 
+ g(x)=x\tag{10} 
+|x-1| < 1
+|x-1| < 1
+y = \log(x) + c
+x=1
+y=0
+c=0
+ \begin{align} y = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} (x-1)^n \end{align} 
+ \begin{align} \frac{dy}{dx} = \sum_{n=1}^{\infty} (-1)^{n-1} (x-1)^{n-1} = \sum_{n=1}^{\infty} (1-x)^{n-1} = \frac1{1-(1-x)} = \frac1x \end{align} 
+x = e^y

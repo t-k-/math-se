@@ -1,0 +1,26 @@
+\lim_{n\rightarrow\infty} \sum_{k=0}^n \frac{x^k}{k!} = \operatorname{exp}(x)
+\operatorname{exp}(x)
+\mu
+\rho
+\bar x
+x_n
+\lim_{n \rightarrow \infty}\frac{|\bar x-x_{n+1}|}{|\bar x - x_{n}|^\rho}=\mu>0,
+R_{n+1}(x)
+R_n(x)
+1
+lim_{n\rightarrow\infty}\frac{R_{n+1}(x)}{R_n(x)} \in (0,\infty)
+\lim_{n \rightarrow \infty}\frac{|R_{n+1}(x)|}{|R_n(x)|^\rho}=\mu.
+\lim_{n \rightarrow \infty}\frac{R_{n+1}(x)}{R_n(x)}=\mu.
+1
+x
+x > 0
+ R_{n+1}(x)=\sum_{k=n+2}^{\infty} \frac{x^k}{k!} =\sum_{k=n+2}^{\infty} \frac{x^{k-1}}{(k-1)!}\frac{x}{k} \leq \sum_{k=n+2}^{\infty} \frac{x^{k-1}}{(k-1)!}\frac{x}{n+2}= \frac{x}{n+2} R_n(x). 
+0 \leq \frac{R_{n+1}(x)}{R_n(x)} \leq \frac{x}{n+2}
+(\frac{R_{n+1}(x)}{R_n(x)}) \to 0
+ R_n(x) = \frac{1}{n!} \int_0^x e^t (x-t)^n\,dt. 
+0 \leq t \leq x
+1 \leq e^t \leq e^x
+ \frac{x^{n+1}}{(n+1)!} \leq R_n(x) \leq \frac{x^{n+1} e^x}{(n+1)!}. 
+ \frac{R_{n+1}(x)}{R_n(x)^{1+\epsilon}} \geq \frac{\left(\frac{x^{n+2}}{(n+2)!}\right)}{\left(\frac{x^{n+1} e^x}{(n+1)!}\right)^{1+\epsilon}} = \frac{xe^{-(1+\epsilon)x}}{n+2} \left(\frac{(n+1)!}{x^{n+1}}\right)^\epsilon, 
+\epsilon > 0
+ \lim_{n \to \infty} \frac{R_{n+1}(x)}{R_n(x)^{1+\epsilon}} = \infty. 

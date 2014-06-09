@@ -1,0 +1,16 @@
+f(x)=\sin(x^2)
+[1, \infty[
+|f|
+\frac{1}{x^\alpha}
+x\mapsto\sqrt{x}
+N\to\infty
+[1,\infty]
+\frac32\gt1
+ \lim_{N\to\infty}\int_0^N\sin(x^2)\,\mathrm{d}x 
+ \begin{align} &\lim_{N\to\infty}\int_0^N\sin(x^2)\,\mathrm{d}x\\ &=\int_0^1\sin(x^2)\,\mathrm{d}x +\lim_{N\to\infty}\frac12\int_1^{N^2}\frac{\sin(x)}{x^{1/2}}\,\mathrm{d}x\\ &=\int_0^1\sin(x^2)\,\mathrm{d}x +\lim_{N\to\infty}\frac12\left[\frac{1-\cos(x)}{x^{1/2}}\right]_1^{N^2} +\lim_{N\to\infty}\frac14\int_1^{N^2}\frac{1-\cos(x)}{x^{3/2}}\,\mathrm{d}x\\ \end{align} 
+ \int_0^1\sin(x^2)\,\mathrm{d}x 
+ \lim_{N\to\infty}\frac12\left[\frac{1-\cos(x)}{x^{1/2}}\right]_1^{N^2}=\frac{\cos(1)-1}2 
+ \left|\frac{1-\cos(x)}{x^{3/2}}\right|\le\frac2{x^{3/2}} 
+f(u)=\frac{1}{4\sqrt u}
+\int_1^\infty \frac{du}{\sqrt u}
+\int_1^\infty \frac{|\sin u|}{2\sqrt u}du> \int_1^\infty \frac{1}{4\sqrt u}du

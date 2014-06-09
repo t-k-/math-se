@@ -1,0 +1,18 @@
+W \in \mathbb R^{mxn}
+\| W \|_{op} \le 1, \quad U^TW = 0, \quad WV = 0,
+A = U \Sigma V^T
+A
+U \in \mathbb R^{m \times r}
+\Sigma \in \mathbb R^{r \times r}
+V \in \mathbb R^{n \times r}
+\| UV^T + W \|_{op} \le 1.
+W\in\mathbb{R}^{m\times n}
+B=UV^T+W
+\tilde{V}\in\mathbb{R}^{n\times {n-r}}
+[V,\tilde{V}]\in\mathbb{R}^{n\times n}
+\tilde{V}^TV=0
+B^TB
+\|W\|\leq 1, \quad U^TW=0,\quad WV=0.
+B^TB=(VU^T+W^T)(UV^T+W)=VV^T+W^TW.
+ [V,\tilde{V}]^TB^TB[V,\tilde{V}]=\begin{bmatrix}I&0\\0&\tilde{V}^TW^TW\tilde{V}\end{bmatrix} 
+ \|B\|=\max\{1,\|W\tilde{V}\|\}\leq\max\{1,\|W\|\}=1. 

@@ -1,0 +1,27 @@
+G
+i \in \{1,2\}: p_i:G \twoheadrightarrow G_i
+H_i = ker(p_i), H_1 \cap H_2 = \{1\}
+p: G \rightarrow G_1 \times G_2
+p(g) = (p_1(g),p_2(g))
+K_1 = p_1(H_2) = p_1(H)\lhd G_1
+K_2 = p_2(H_1)= p_2(H)\lhd G_2
+H= H_1 \cdot H_2 \lhd G
+p(H) = K_1 \times K_2
+p^{-1}_1(K_1)= H
+p_2^{-1}(K_2)=H
+\bar{p_i}: G/H \rightarrow G_i/K_i
+gH \mapsto p_i(g)\cdot K_i
+p
+G \rightarrow L=\{(x_1,x_2) \in G_1 \times G_2 | f_1(x_1)=f_2(x_2)\}
+f_i: G_i \rightarrow G/H, f_i=\bar{p_i}^{-1} \circ \pi: G_i \overset{\pi}\twoheadrightarrow G_i/K_i \overset{\bar{p_i}^{-1}} \rightarrow G/H
+\bar{p}: G/H \rightarrow (G_1/K_1, G_2/K_2)
+gH \mapsto (p_1(g)\cdot K_1, p_2(g)\cdot K_2)
+f_1(x_1) = f_2(x_2) \iff p_1(g) = p_2(g)
+ p: G\rightarrow L=\{(x_1,x_2) \in G_1 \times G_2 | f_1(x_1)=f_2(x_2)\}  \subset G_1\times G_2
+p
+g\in G: p(g)=(p_1(g),p_2(g))
+f_1(p_1(g)) = \bar{p_1}^{-1} \circ \pi (p_1(g)) = \pi(g) = f_2(p_2(g)) \Rightarrow p(g)\in L.
+(x_1,x_2)\in L, x_i := p_i(g_i), g_i\in G:
+\pi(g_1) = \bar{p_1}^{-1}\circ\pi\circ p_1(g_1) = f_1\circ p_1(g_1) = f_1(x_1) = f_2(x_2) = \pi(g_2) 
+\Rightarrow g_1^{-1}g_2 \in H = ker(\pi) = H_1\cdot H_2 \Rightarrow g_1^{-1}g_2=h_1h_2, h_i\in H_i, g:=g_1h_1 =g_2h_2^{-1},
+\Rightarrow p(g) = (p_1(g),p_2(g)) = (p_1(g_1h_1), p_2(g_2h_2^{-1})) = (p_1(g_1), p_2(g_2)) = (x_1,x_2)

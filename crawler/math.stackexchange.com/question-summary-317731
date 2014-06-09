@@ -1,0 +1,40 @@
+g(t)
+y(\cdot)
+g(\cdot)
+\gamma
+\gamma
+y(t)
+g(t)
+ \dot{y}(t) = \gamma \left(g(t) - y(t)\right),\quad \gamma > 0, 
+\gamma
+\gamma
+E(t) = g(t) - y(t)
+t_1 > 0
+\lim_{\gamma \rightarrow \infty}E(t_1) = 0
+\gamma
+ y(t) = y(0)e^{-\gamma t} + \gamma e^{-\gamma t} \int_{0}^{t}g(t)e^{\gamma t'}\text{d}t'. 
+ \lim_{\gamma \rightarrow \infty}E(t_1) = \lim_{\gamma \rightarrow \infty} \left(g(t_1) - y(t_1)\right) = \lim_{\gamma\rightarrow\infty}\left[g(t_{1})-\gamma e^{-\gamma t}\int_{0}^{t_{1}}g(t)e^{\gamma t'}\text{d}t'\right]. 
+M
+g
+E(t)=g(t)-\gamma e^{-\gamma t}\int_0^t e^{\gamma \tau} g(\tau) d\tau
+lim_{\gamma->\infty} ||E(t)|| = lim_{\gamma->\infty} ||\gamma e^{-\gamma t}\int_0^t e^{\gamma \tau} g(t)d\tau-\gamma e^{-\gamma t}\int_0^t e^{\gamma \tau} g(\tau)d\tau
+lim_{\gamma->\infty} ||\gamma e^{-\gamma t}\int_0^t e^{\gamma \tau} [g(t)-g(\tau)]d\tau ||
+||g(t)-g(\tau)||<M|t-\tau|
+\leq lim_{\gamma->\infty} ||\gamma e^{-\gamma t}\int_0^t e^{\gamma \tau}M |t-\tau|d\tau|| 
+t>\tau
+\leq lim_{\gamma->\infty} ||M\gamma e^{-\gamma t}[\int_0^t te^{\gamma \tau}d\tau-\int_0^t\tau e^{\gamma \tau}d\tau]|| 
+lim_{\gamma->\infty} ||M\gamma e^{-\gamma t}[(t/\gamma)e^{\gamma t}-(t/\gamma)e^{\gamma t}-\int_0^t (1/\gamma)e^{\gamma \tau}d\tau]|| 
+lim_{\gamma->\infty} ||M\gamma e^{-\gamma t}[ (1/\gamma^2)e^{\gamma t}]|| 
+= 0
+\gamma->\infty
+\gamma t
+\gamma
+\gamma<0
+\gamma>0
+\gamma
+g(t)
+g(t)
+y(t)\rightarrow g(t)
+t\rightarrow\infty
+y(t)\rightarrow g(t)
+g(t)

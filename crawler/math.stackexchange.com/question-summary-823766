@@ -1,0 +1,15 @@
+X,Y\sim U(0,1)
+W=\max (X,Y)
+W
+f_W
+u:\mathbb{R}\to\mathbb{R}
+ {\rm E}[u(W)]=\int_\mathbb{R}u(w)f_W(w)\,\mathrm dw\tag{1} 
+f_W
+u
+g
+W
+W
+u
+(1)
+ \begin{align} {\rm E}[u(W)]&={\rm E}[u(\max(X,Y))]=\int_{\mathbb{R}^2} u(\max(x,y)) f_{X,Y}(x,y)\,\mathrm dx\,\mathrm dy\\ &=\int_{[0,1]^2} u(\max(x,y)) \,\mathrm dx\,\mathrm dy=2\int_{[0,1]^2} u(x)\mathbf{1}_{x>y}\,\mathrm dx\,\mathrm dy. \end{align} 
+ \int_{\mathbb{R}} u(w)g(w)\,\mathrm dw 

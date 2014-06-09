@@ -1,0 +1,36 @@
+x_2
+x_3
+x_1
+x_2
+c_1,c_2
+c_3
+x_1
+x_3
+\begin{cases} c_1a_{11} + c_2 a_{21} + c_3 a_{31} = 0\\                 c_1a_{13} + c_2 a_{23} + c_3 a_{33} = 0 \end{cases}
+c_1
+c_2
+c_3
+c_1 = \left|\begin{array} {cc} a_{21} & a_{31}\\                                 a_{23} & a_{33}  \end{array} \right|
+c_2 = -\left|\begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{33} \end{array}   \right|
+c_3 = \left| \begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{23}\end{array}\right|
+(c_1 a_{12} + c_2 a_{22} + c_3 a_{32})x_2 = c_1b_1 + c_2b_2 + c_3b_3
+\begin {array} {cc} \left[ a_{12} \left|\begin{array} {cc} a_{21} & a_{31}\\                                 a_{23} & a_{33}  \end{array} \right| - a_{22} \left|\begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{33} \end{array}   \right| +a_{32} \left| \begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{23}\end{array}\right| \right] x_2 \\ =   b_1 \left|\begin{array} {cc} a_{21} & a_{31}\\                                 a_{23} & a_{33}  \end{array} \right| - b_2 \left|\begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{33} \end{array}   \right| +b_3 \left| \begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{23}\end{array}\right| \end{array} 
+x_2
+x_1
+x_1
+x_2
+x_3
+x_2
+\left|\begin{array} {ccc} a_{12} & a_{11} & a_{13}\\                             a_{22} & a_{21} & a_{23}\\                             a_{32} & a_{31} & a_{33}                                 \end{array} \right|
+x_1
+c_3
+ c_3 = \left| \begin{array} {cc} a_{11} & a_{21} \\ a_{13} & a_{23} \end{array}  \right|
+c_3
+x_2
+a_{12} \left|\begin{array} {cc} a_{21} & a_{31}\\                                 a_{23} & a_{33}  \end{array} \right| - a_{22} \left|\begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{33} \end{array}   \right| +a_{32} \left| \begin{array} {cc} a_{11} & a_{21} \\                                   a_{13} & a_{23}\end{array}\right| \\ = a_{12}(a_{21}a_{33} -a_{23}a_{31}) - a_{22}(a_{11}a_{33} - a_{31}a_{13}) + a_{32}(a_{11}a_{23} - a_{13}a_{21}) \\ = a_{11}(a_{32}a_{23} - a_{22}a_{33}) - a_{21}(a_{32}a_{13}-a_{12}a_{33}) + a_{31}(a_{22}a_{13} - a_{12}a_{23}) \\ = - \left| \begin{array} {ccc} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\\ \end{array} \right|
+-1
+x_1
+-1
+x_2
+b_1 \left|  \begin{array}{cc} a_{21} & a_{31}\\ a_{23} & a_{33}\\ \end{array} \right|- b_2 \left| \begin{array} {cc} a_{11} & a_{31} \\                                   a_{13} & a_{33} \\ \end{array}   \right| +b_3 \left| \begin{array} {cc} a_{11} & a_{21} \\                                   a_{13} & a_{23}\\ \end{array}\right| \\ = b_1(a_{21}a_{33} - a_{31}a_{23}) - b_2(a_{11}a_{33} - a_{31}a_{13}) + b_3(a_{11}a_{23} - a_{21}a_{13}) \\ = -a_{11}(b_2a_{33} - b_3a_{23}) + a_{21}(b_1a_{33}-b_3a_{13}) - a_{31}(b_1a_{33} - b_2a_{13}) \\ =- \left| \begin{array} {ccc} a_{11} & b_1 & a_{13} \\ a_{21} & b_2 & a_{23} \\ a_{31} & b_3 & a_{33}\\ \end{array} \right|
+x_2

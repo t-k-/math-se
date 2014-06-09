@@ -1,0 +1,20 @@
+B_t,t\geq 0
+u(t,x)
+\frac{\partial }{\partial t}\Bbb{E}(u(t,B_t))=0
+u(t,B_t)
+u(t,B_t)
+\frac{\partial u}{\partial t}+\frac{1}{2}\frac{\partial^2 u}{\partial x^2}=0.
+u(t,B_t)
+p(t,x)
+t
+\frac{\partial}{\partial t} p(t,x) = \frac{1}{2} \frac{\partial^2}{\partial x^2} p(t,x) \qquad (x \in \mathbb{R},t>0) \tag{1}
+\begin{align*} \mathbb{E}(M_t^u-M_s^u \mid \mathcal{F}_s) &= \mathbb{E} \left( u(t,B_t)-u(s,B_s) - \int_s^t Lu(r,B_r) \, dr \mid \mathcal{F}_s \right) \\ &= \mathbb{E} \left( u(t,B_{t-s}+z)-u(s,B_0+z) - \int_0^{t-s} Lu(r+s,B_r+z) \, dr \right) \bigg|_{z=B_s} \\ &= \mathbb{E} \bigg( \underbrace{\varphi(t-s,B_{t-s}) - \varphi(0,B_s) - \int_0^{t-s} L\varphi(r,B_{r}) \, dr}_{M_{t-s}^{\varphi}-M_0^{\varphi}} \bigg) \bigg|_{z=B_s}  \end{align*}
+\varphi(t,x) := u(t+s,x+z)
+0
+(1)
+\mathbb{E}(M_t^{\varphi}-M_{\varepsilon}^{\varphi}) = \int (p(t,x) \cdot \varphi(t,x)-p(\varepsilon,x) \cdot \varphi(\varepsilon,x)) \, dx \\ - \int_{\varepsilon}^t p(r,x) \cdot \left( \frac{\partial}{\partial t} + \frac{1}{2} \frac{\partial^2}{\partial x^2}  \right) \varphi(r,x) \, dx \, dr = 0
+t > \varepsilon>u
+\mathbb{E}(M_t^{\varphi}-M_0^{\varphi}) = \lim_{\varepsilon \to 0} \mathbb{E}(M_t^{\varphi}-M_{\varepsilon}^{\varphi}) = 0
+X_t := (t,B_t)
+A
+A = \frac{\partial}{\partial t} + \frac{1}{2} \frac{\partial^2}{\partial x^2}.

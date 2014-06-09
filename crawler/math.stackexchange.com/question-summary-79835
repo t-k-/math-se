@@ -1,0 +1,47 @@
+(x,y,z)
+x \leq y \leq z
+x + y + z \leq 100
+0 \leq x \leq 33
+3x \leq x+y+z \leq 100
+0 \leq x \leq 33
+3x
+(y-x)+(z-x) \leq 100-3x \,.
+a:= y-x ,\;, b := z-x
+0 \leq a \leq b
+a+b \leq 100-3x
+x
+0 \leq a \leq \frac{100-3x}{2}
+0 \leq (b-a) \leq 100-3x-2a
+0 \leq x \leq 33, x
+0 \leq a \leq \frac{100-3x}{2}
+0 \leq (b-a) \leq 100-3x-2a
+x
+0 \leq a \leq \frac{99-3x}{2}
+0 \leq (b-a) \leq 100-3x-2a
+0 \leq x \leq 33, x
+0 \leq a \leq \frac{99-3x}{2}
+0 \leq (b-a) \leq 100-3x-2a
+a,b-a,x
+x \leq y \leq z
+ \left[ \sum_{k=0}^{16} \sum_{a=0}^{\frac{100-6k}{2}} 100-6k-2a+1 \right]+\left[\sum_{k=0}^{16} \sum_{a=0}^{\frac{99-3(2k+1)}{2}} 100-6k-3-2a+1 \right] \,.
+\left[ \sum_{k=0}^{16} \sum_{a=0}^{\frac{100-6k}{2}} 100-6k-2a+1 \right]= \sum_{k=0}^{16} \frac{100-6k}{2}\cdot (100-6k+1) - 2 \cdot\frac{\frac{100-6k}{2}(\frac{100-6k}{2})}{2} \,
+\sum_{k=0}^{16} \frac{100-6k}{2}\cdot (100-6k+1 -(\frac{100-6k}{2}+1))=\frac{1}{4}\sum_{k=0}^{16}(100-6k)^2 
+y
+0\leq y\leq50
+y
+S:=\bigl\{(x,z)\ \bigm|\ x\leq y,\ z\geq y,\ x+z\leq 100-y\bigr\}\ .
+3y<100
+y+1
+101-2y
+101-3y
+(101-{5\over2}y)(y+1)
+S
+3y>100
+S
+101-2y
+101-2y
+(51-y)(101-2y)
+S
+N
+30 787
+N\ =\sum_{y=0}^{33} (101-{5\over2}y)(y+1)\ +\ \sum_{y=34}^{50} (51-y)(101-2y)\ ,

@@ -1,0 +1,14 @@
+X_1, X_2, ...
+EX_1<\infty
+\frac{X_n}{n}\rightarrow 0
+a > 0
+X
+X_n
+m \geq 1
+A_m
+am \leq X \lt a(m+1)
+\newcommand{\E}{\mathbf{E}}
+(1)
+A_m
+m
+ \begin{eqnarray*} \sum\limits_{n=1}^{\infty} \Pr\left[\frac{X_n}{n} \geq a \right]  &=& \sum\limits_{n=1}^{\infty} \Pr\left[X \geq an \right]  \\ &=& \sum\limits_{n=1}^{\infty} \sum_{m=n}^{\infty} \Pr[am \leq X < a(m+1)]  \\ &=& \sum\limits_{n=1}^{\infty} \sum_{m=n}^{\infty} \Pr[A_m]  \\ &=& \sum\limits_{m=1}^{\infty} m \Pr[A_m]   \ \ \ \ \ \text{switching the order of summations} \\ &=& \frac{1}{a}\sum\limits_{m=1}^{\infty} am \Pr[A_m]  \\ &\leq& \frac{1}{a}\sum\limits_{m=1}^{\infty} \E[X \cdot \mathbf{1}_{A_m}]  \\ &=& \frac{1}{a} \E \left[X \cdot \sum\limits_{m=1}^{\infty} \mathbf{1}_{A_m} \right]  \\ &\stackrel{(1)}{\leq}& \frac{\E X}{a} < \infty. \end{eqnarray*} 

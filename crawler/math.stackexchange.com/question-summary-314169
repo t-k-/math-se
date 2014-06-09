@@ -1,0 +1,27 @@
+\underset{u \in [0,1]^N} \min \lVert Au-f \rVert_2^2
+u \in \mathbb{R}^N
+A \in \mathbb{R}^{N \times N}
+f \in \mathbb{R}^N
+u^{k+1}=\max \{ \min \{ D^{-1} (f - R u^k), 1 \},0 \}
+A=D+R
+D
+A
+\max
+\min
+A
+f
+A= \frac{1}{10}\begin{bmatrix} 20 & 10 \\ 10 & 21 \end{bmatrix}
+f = \frac{1}{160}\begin{bmatrix} 505 \\ 278 \end{bmatrix}
+\hat{u} = \frac{1}{2} \begin{bmatrix} 2 \\ 1 \end{bmatrix}
+\phi(u) = \frac{1}{2} \|Au -f\|_2^2
+\phi
+\nabla \phi(u) = A^T(Au -f)
+\nabla( \hat{u}) = \begin{bmatrix} -1 \\ 0 \end{bmatrix}
+\langle \nabla \phi(u), u - \hat{u} \rangle \geq 0 
+u \in [0,1]^2
+\hat{u}
+D= \frac{1}{10}\begin{bmatrix} 20 & 0 \\ 0 & 21 \end{bmatrix}
+R = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
+u_+ = D^{-1}(f-R \hat{u})) = \frac{1}{1344}\begin{bmatrix} 1785 \\ 472 \end{bmatrix}
+[0,1]^2
+\frac{1}{1344}\begin{bmatrix} 1344 \\ 472 \end{bmatrix} \neq \hat{u}

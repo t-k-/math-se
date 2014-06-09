@@ -1,0 +1,21 @@
+ F' = (( A \lor \lnot B) \land C) \to ( \lnot A \land C) 
+ \equiv \lnot(( A \lor \lnot B) \land C) \lor ( \lnot A \land C) 
+ \equiv ( \lnot ( A \lor \lnot B) \lor \lnot C) \lor ( \lnot A \land C) 
+ \equiv (( \lnot A \land \lnot \lnot B) \lor \lnot C) \lor ( \lnot A \land C) 
+ \equiv (( \lnot A \land B) \lor \lnot C) \lor ( \lnot A \land C) 
+ \equiv (( \lnot C \lor \lnot A) \land (\lnot C \lor B)) \lor (\lnot A \land C) 
+ \equiv ((\lnot A \land C) \lor (\lnot C \lor \lnot A)) \land ((\lnot A \land C) \lor (\lnot C \lor B)) 
+F' \equiv ((\neg A \wedge B) \vee \neg C) \vee (\neg A \wedge C)
+\equiv ((\neg A \vee \neg C) \wedge (B \vee \neg C)) \vee (\neg A \wedge C)
+\equiv ((\neg A \vee \neg C) \vee (\neg A \wedge C)) \wedge ((B \vee \neg C) \vee (\neg A \wedge C))
+\equiv ((\neg A \vee (\neg A \vee \neg C)) \wedge (C \vee (\neg A \vee \neg C))) \wedge ((B \vee \neg C) \vee (\neg A \wedge C))
+\equiv (\neg A \vee \neg A \vee \neg C) \wedge (C \vee \neg A \vee \neg C) \wedge ((B \vee \neg C) \vee (\neg A \wedge C))
+\equiv (\neg A \vee \neg A \vee \neg C) \wedge (C \vee \neg A \vee \neg C) \wedge ((\neg A \vee (B \vee \neg C)) \wedge (C \vee (B \vee \neg C)))
+\equiv (\neg A \vee \neg A \vee \neg C) \wedge (C \vee \neg A \vee \neg C) \wedge (\neg A \vee B \vee \neg C) \wedge (C \vee B \vee \neg C)
+\equiv (\neg A \vee \neg C) \wedge (\neg A \vee B \vee \neg C)
+C_1\land C_2\land\cdots\land C_n
+C_i
+L_1\lor L_2\lor\cdots\lor L_n
+L_i
+ (A\lor\lnot B)\land (\lnot A\lor B \lor C) \land (B\lor C\lor \lnot D)
+X_1 \land X_2

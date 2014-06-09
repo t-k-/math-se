@@ -1,0 +1,21 @@
+\left(\sum_{n=0}^\infty a_nr^n\right)\left(\sum_{n=0}^\infty b_nr^n\right)=\sum_{n=0}^\infty\sum_{k=0}^n a_kb_{n-k}r^n
+ \begin{multline}\int_{-1}^{1}\left(\sum_{n_1-l_1=0}^{\infty}C_{n_1-l_1}^{l_1+1}(x)r^{n_1-l_1}\right)\left(\sum_{n_2-l_2=0}^{\infty}C_{n_2-l_2}^{l_2+1}(x)r^{n_1-l_1}\right)\times\\ \left(\sum_{n_3-l_3=0}^{\infty}C_{n_3-l_3}^{l_3+1}(x)r^{n_3-l_3}\right)(1-x^2)^{(l_1+l_2+l_3+1)/2}dx \end{multline} 
+ =\sum_{i=0}^{\infty}\sum_{j=0}^{i}\sum_{k=0}^{i-j}r^{i}\int_{-1}^{1}C_{j}^{l_1+1}(x)C_{k}^{l_2+1}(x)C_{i-j-k}^{l_3+1}(x)(1-x^2)^{(l_1+l_2+l_3+1)/2}dx 
+L=l_1+l_2+l_3
+(1-r^2)^{-(L+3)}=(1-r^2)^{-(l_1+1)}(1-r^2)^{-(l_2+1)}(1-r^2)^{-(l_3+1)}
+ (1-2xr+r^2)^{-\lambda}=\sum_{n=0}^{\infty}C_{n}^{\lambda}(x)r^n\ \ \ ,\left|r\right|<1 
+ =\int_{-1}^{1}(1-2xr+r^2)^{-(L+3)}(1-x^2)^{(L+3)/2} 
+ =\sqrt{\pi}\frac{\Gamma(\frac{L+3}{2})}{\Gamma(\frac{L+4}{2})}(1-r^2)^{-(L+3)} 
+ \begin{multline} \sqrt{\pi}\frac{\Gamma\left(\frac{L+3}{2}\right)}{\Gamma\left(\frac{L+4}{2}\right)}\left(\sum_{n=0}^{\infty}\left(-1\right)^n\left(\begin{array}{c}-l_1-1\\n\end{array}\right)r^{2n}\right)\times\\ \left(\sum_{n=0}^{\infty}\left(-1\right)^n\left(\begin{array}{c}-l_2-1\\n\end{array}\right)r^{2n}\right)\left(\sum_{n=0}^{\infty}\left(-1\right)^n\left(\begin{array}{c}-l_3-1\\n\end{array}\right)r^{2n}\right) \end{multline} 
+ =\sum_{n=0}^{\infty}\sum_{l=0}^{n}\sum_{m=0}^{n-l}r^{2n}(-1)^n\left(\begin{array}{c}-l_1-1\\l\end{array}\right)\left(\begin{array}{c}-l_2-1\\m\end{array}\right)\left(\begin{array}{c}-l_3-1\\n-l-m\end{array}\right)\sqrt{\pi}\frac{\Gamma\left(\frac{L+3}{2}\right)}{\Gamma\left(\frac{L+4}{2}\right)} 
+i,j,k
+n,l,m
+i=2n
+r
+\bf{FINAL\ RESULT}
+ \begin{multline} \sum_{j=0}^{i}\sum_{k=0}^{i-j}\int_{-1}^{1}C_{j}^{l_1+1}(x)C_{k}^{l_2+1}(x)C_{i-j-k}^{l_3+1}(x)(1-x^2)^{(l_1+l_2+l_3+1)/2}dx\\=\sum_{l=0}^{n}\sum_{m=0}^{n-l}(-1)^n\left(\begin{array}{c}-l_1-1\\l\end{array}\right)\left(\begin{array}{c}-l_2-1\\m\end{array}\right)\left(\begin{array}{c}-l_3-1\\n-l-m\end{array}\right)\sqrt{\pi}\frac{\Gamma\left(\frac{L+3}{2}\right)}{\Gamma\left(\frac{L+4}{2}\right)} \end{multline} 
+ \begin{align} i=2n\\j=l=n_1-l_1\\k=m=n_2-l_2\\i-j-k=n_3-l_3 \end{align} 
+ \int_{-1}^{1}C_{n_1-l_1}^{l_1+1}(x)C_{n_2-l_2}^{l_2+1}(x)C_{n_3-l_3}^{l_3+1}(x)(1-x^2)^{(l_1+l_2+l_3+1)/2}dx= 
+ (-1)^{(N-L)/2}\left(\begin{array}{c}-l_1-1\\ n_1-l_1\end{array}\right)\left(\begin{array}{c}-l_2-1\\n_2-l_2\end{array}\right)\left(\begin{array}{c}-l_3-1\\-\frac{1}{2}((n_1-l_1)+(n_2-l_2)-(n_3-l_3))\end{array}\right)\sqrt{\pi}\frac{\Gamma\left(\frac{L+3}{2}\right)}{\Gamma\left(\frac{L+4}{2}\right)} 
+i=2n
+ \begin{multline*} \sum_{j=0}^{i}\sum_{k=0}^{i-j}\int_{-1}^{1}C_{j}^{l_1+1}(x)C_{k}^{l_2+1}(x)C_{i-j-k}^{l_3+1}(x)(1-x^2)^{(l_1+l_2+l_3+1)/2}dx\\=\sum_{l=0}^{i/2}\sum_{m=0}^{i/2-l}(-1)^{i/2}\left(\begin{array}{c}-l_1-1\\l\end{array}\right)\left(\begin{array}{c}-l_2-1\\m\end{array}\right)\left(\begin{array}{c}-l_3-1\\i/2-l-m\end{array}\right)\sqrt{\pi}\frac{\Gamma\left(\frac{L+3}{2}\right)}{\Gamma\left(\frac{L+4}{2}\right)} \end{multline*} 

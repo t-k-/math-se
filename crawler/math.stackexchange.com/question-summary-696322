@@ -1,0 +1,45 @@
+\sec^4
+ \int (\sec^2{x})^2dx = \int (\tan^2+1)^2dx 
+u=\tan^2+1
+x = \arctan(\sqrt{u-1})
+ \int (\sec^2{x})^2dx = \int (\tan^2+1)^2dx = \int u^2 \frac{1}{2u\sqrt{u-1}} dx = \frac{1}{2}\int u (u-1)^{\frac{-1}{2}} dx  
+\begin{align*} \int u (u-1)^{\frac{-1}{2}} dx &= \frac{1}{2}(2u(u-1)^{\frac{1}{2}} - \int 2(u-1)^{\frac{1}{2}})\\\\ &= \frac{1}{2}(2u(u-1)^{\frac{1}{2}}-\frac{4}{3}(u-1)^{3/2}) \\\\ &= \frac{1}{2}(2(\tan^2{x}+1)(\tan^2{x})^{\frac{1}{2}}-\frac{4}{3}(\tan^2{x})^{3/2}) \end{align*}
+ 1 + \tan^2 x = u 
+x
+u
+ \pi n \pm \arctan \sqrt{u-1} 
+n
+\pi n
+\tan(z + n \pi) = \tan(z)
+d(z + n \pi) = dz
+\pi n 
+s
+1
+-1
+ x = \pi n + s \arctan \sqrt{u-1} 
+s
+s
+s
+ds = 0
+ \tan x = s \sqrt{u - 1} 
+s
+s^2 = 1
+x
+ \tan x = s \sqrt{u-1} 
+ \sec^2 x \, dx = s \frac{1}{2} (u-1)^{-1/2} du 
+\sec^2 x = u
+\sec^2x = \frac{d}{dx} (\tan x)
+u = \sec^2 x \implies\,du = 2\sec^2 x \tan x\,dx
+dv = \sec^2 x \,dx\implies \, v = \tan x
+\int \sec^4 x \,dx = \sec^2x\tan x - 2\int \tan^2 x \sec^2 x
+w = \tan x,\;\implies dw = \sec^2 x
+2\int \tan^2 x \sec^2 x \,dx = 2\int w^2 \,dw = \dfrac 23 w + c
+\int \sec^4 x \,dx = \sec^2x\tan x - \frac 23 \tan^3 x + C
+\frac{1}{2}\Big(2(\underbrace{\tan^2{x}+1}_{\sec^2 x})\underbrace{(\tan^2{x})^{\frac{1}{2}}}_{|\tan x|}-\frac{4}{3}\underbrace{(\tan^2{x})^{3/2}}_{|\tan^3 x|}\Big) = \sec^2 |\tan x| - \frac 23 |\tan^3 x| + C
+\sec^2x \,dx = d(tan x)
+\int \sec^4 x \,dx
+= \int sec^2x\sec^2x \,dx
+= \int sec^2x \,d(tan x)
+= \int (1 + tan^2x)\,d(tan x)
+= \int d(tan x) + \int tan^2x \,d(tan x)
+= ...

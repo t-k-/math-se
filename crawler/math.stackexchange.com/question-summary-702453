@@ -1,0 +1,28 @@
+\frac{\partial ^2}{\partial x^2} u(x,t)=\frac{\partial}{\partial t} u(x,t)  
+u(0,t)=0;\,\,u(1,t)=u_0;\,\,\,t\gt 0
+u(x,0)=0; \,\,0\lt x\lt 1
+u(x,t)=w(x,t)+v(x)
+v(x)=u_0x
+w(0,t)=w(1,t)=0; w(x,0)=-v(x)=-u_0x
+\frac{\partial ^2}{\partial x^2} w(x,t)=\frac{\partial}{\partial t} w(x,t)  
+W''(x,s)=sW(x,s)+u_0x
+W(x,s)=Wh+Wp=c_1e^{-x\sqrt{s}}+c_2e^{x\sqrt{s}} - \frac{u_0x}{s}
+c_2=0
+\mathcal{L}^{-1}(W(x,s))=c_1\frac{xe^{-x^2/4t}}{2\sqrt{\pi}t^{3/2}} -u_0x =w(x,t)
+w(1,t)\neq0
+erfc(\frac{2n+1\pm x}{2\sqrt{t}})
+u(x,t)=\sum_{n=1}^{\infty}[\frac{u_0(-1)^{n+1}}{\pi n}] \sin{(\pi n x)}e^{(\pi n)^2t/4} + u_0x
+C_2
+C_2 e^{\sqrt s x}
+u(x,t)
+\mathcal{L}(u'')=\mathcal{L}(\dot u) \rightarrow U''(x,s)=sU(x,s)-u(x,0)
+U''(x,s)=sU(x,s)\rightarrow U(x,s)=c_1e^{x\sqrt{s}}+c_2e^{-x\sqrt{s}}
+U(0,s)=0=c_1e^{0\sqrt{s}}+c_2e^{-0\sqrt{s}}\rightarrow c_2=-c_1
+\rightarrow U(x,s)=c_1(e^{x\sqrt{s}}-e^{-x\sqrt{s}})
+U(1,s)=\frac {u_0}s=c_1(e^{1\sqrt{s}}-e^{-1\sqrt{s}})\rightarrow c_1=\frac {u_0} {s(e^{\sqrt{s}}-e^{-\sqrt{s}})}
+U(x,s)=\frac {u_0(e^{x\sqrt{s}}-e^{-x\sqrt{s}})} {s(e^{\sqrt{s}}-e^{-\sqrt{s}})}\rightarrow U(x,s)=(\frac {u_0}{se^{\sqrt s}})(\frac {1}{(1-e^{-2\sqrt s})})(e^{x\sqrt{s}}-e^{-x\sqrt{s}})
+ \frac {1}{1-q}=\sum_{n=0}^\infty\,q^n
+q=e^{-2\sqrt s}
+ \frac {1}{1-e^{-2\sqrt s}}=\sum_{n=0}^\infty \, (e^{-2\sqrt s})^n=\sum_{n=0}^\infty \, e^{-2n\sqrt s}
+U(x,s)=\sum_{n=0}^\infty(\frac {u_0}{s} e^{-(1+2n+x)\sqrt s} -\frac {u_0}{s} e^{-(1+2n-x)\sqrt s})
+u(x,t)=\sum_{n=0}^\infty erfc(\frac {1+2n\pm x}{2\sqrt t})

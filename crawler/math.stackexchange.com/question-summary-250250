@@ -1,0 +1,21 @@
+\int_{0}^{2\pi} \frac{1}{a-\cos(x)}dx, \text{ with } a > 1.
+\cos x = \frac{e^{i x}+e^{-ix}}{2}
+\int_0^{2\pi} \frac{dx}{a-\frac{e^{i x}+e^{-ix}}{2}} = \oint_C \frac{1}{a-\frac{z+z^{-1}}{2}} \frac{dz}{iz} = - i\oint_C \frac{dz}{az-\frac{z^2+1}{2}} = 2i\oint_C \frac{dz}{z^2-2az+1}
+C
+|z|=1
+e^{iz}
+0\le z\le 2\pi
+f(z)=\frac{1}{z^2-2az+1}
+f
+z=a\pm\sqrt{a^2-1}
+a>1
+C
+\operatorname*{Res}_{z = a-\sqrt{a^2-1}}f(z)= \lim_{z\to a-\sqrt{a^2-1}}\frac{z-a+\sqrt{s^2+1}}{z^2-2az+1}= \lim_{z\to a-\sqrt{a^2-1}}\frac{1}{2z-2a}=- \frac{1}{2\sqrt{a^2-1}}
+\int_0^{2\pi} \frac{dx}{a-\cos x} = 2i\oint_C \frac{dz}{z^2-2az+1} = 2i\left(-\frac{2\pi i }{2\sqrt{a^2-1}}\right) = \frac{2\pi}{\sqrt{a^2-1}}
+\blacksquare
+\tan(x/2) = t
+\cos(x) = \dfrac{1-\tan^2(x/2)}{1+\tan^2(x/2)} = \dfrac{1-t^2}{1+t^2}
+x
+\sec^2(x/2) dx = 2dt \implies dx = \dfrac{2dt}{1+t^2}
+I = \int \dfrac{2dt}{(a+1) t^2 + (a-1)} = \dfrac2{a+1} \int \dfrac{dt}{t^2 + \dfrac{a-1}{a+1}} = \dfrac2{\sqrt{a^2-1}} \arctan \left(t\sqrt{\dfrac{a+1}{a-1}}\right) + c
+I = \dfrac2{\sqrt{a^2-1}} \arctan \left(\tan(x/2)\sqrt{\dfrac{a+1}{a-1}}\right) + c

@@ -1,0 +1,15 @@
+\lfloor 4x \rfloor =  \lfloor x \rfloor + \lfloor x+\frac{1}4 \rfloor + \lfloor x+\frac{1}2 \rfloor + \lfloor x+\frac{3}4 \rfloor
+0 \le x-\lfloor x \rfloor \lt \frac 1 4
+\frac 1 4 \le x-\lfloor x \rfloor \lt \frac 1 2
+\frac 1 2 \le x-\lfloor x \rfloor \lt \frac 3 4
+\frac 3 4 \le x-\lfloor x \rfloor \lt 1
+\epsilon = x-\lfloor x \rfloor
+4\lfloor x \rfloor
+0 \leq 4\epsilon \lt 1
+\lfloor x \rfloor \leq x < x + \frac 1 4 < x + \frac 1 2 < x + \frac 3 4 = \lfloor x \rfloor + \epsilon + \frac 3 4
+0 \leq \epsilon + \frac 3 4 < \frac 1 4 + \frac 3 4 =1
+\lfloor x \rfloor
+0 \le x-\lfloor x \rfloor = \epsilon \lt \frac 1 4
+0 \le 4x-4\lfloor x \rfloor = 4\epsilon \lt 1
+\lfloor 4x \rfloor =  \lfloor 4\lfloor x \rfloor +4\epsilon \rfloor = 4\lfloor x \rfloor
+\lfloor x \rfloor + \lfloor x+\frac{1}4 \rfloor + \lfloor x+\frac{1}2 \rfloor + \lfloor x+\frac{3}4 \rfloor = 4\lfloor x \rfloor

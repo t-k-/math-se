@@ -1,0 +1,58 @@
+{k, p \in \mathbb{R}}
+\sum_{m,n \in \mathbb{N}} \frac{1}{m^p + n^k}
+p, k \gt 1
+m^p\ge n^k
+p\left(1-\frac1k\right)\gt1
+\frac1p+\frac1k\lt1
+ \sum_{m=1}^\infty\sum_{n=1}^\infty\frac1{m^p+n^k} =\color{#C00000}{\sum_{m=1}^\infty\sum_{n=1}^{\left\lfloor m^{p/k}\right\rfloor}\frac1{m^p+n^k}} +\color{#00A000}{\sum_{n=1}^\infty\sum_{m=1}^{\left\lceil n^{k/p}-1\right\rceil}\frac1{m^p+n^k}}\tag{1} 
+ \frac12\sum_{m=1}^\infty\sum_{n=1}^{\left\lfloor m^{p/k}\right\rfloor}\frac1{m^p} \le\sum_{m=1}^\infty\sum_{n=1}^{\left\lfloor m^{p/k}\right\rfloor}\frac1{m^p+n^k} \le\sum_{m=1}^\infty\sum_{n=1}^{\left\lfloor m^{p/k}\right\rfloor}\frac1{m^p}\tag{2} 
+ \sum_{m=1}^\infty\sum_{n=1}^{\left\lfloor m^{p/k}\right\rfloor}\frac1{m^p} =\sum_{m=1}^\infty\frac{\left\lfloor m^{p/k}\right\rfloor}{m^p}\tag{3} 
+n^k\gt m^p
+k\left(1-\frac1p\right)\gt1
+\frac1p+\frac1k\lt1
+ \frac12\sum_{n=1}^\infty\sum_{m=1}^{\left\lceil n^{k/p}-1\right\rceil}\frac1{n^k} \le\sum_{n=1}^\infty\sum_{m=1}^{\left\lceil n^{k/p}-1\right\rceil}\frac1{m^p+n^k} \le\sum_{n=1}^\infty\sum_{m=1}^{\left\lceil n^{k/p}-1\right\rceil}\frac1{n^k}\tag{4} 
+ \sum_{n=1}^\infty\sum_{m=1}^{\left\lceil n^{k/p}-1\right\rceil}\frac1{n^k} =\sum_{n=1}^\infty\frac{\left\lceil n^{k/p}-1\right\rceil}{n^k}\tag{5} 
+(1)
+\frac1p+\frac1k\lt1
+p,k>1
+a_{m,n}=\frac{1}{m^p+n^k},
+m\ge 1
+b_m=m^{-p(1-\frac{1}{k})}\quad\text{and}\quad S_m=\sum_{n=1}^\infty a_{m,n}<\infty.
+m^\frac{p}{k}\ge 3
+1\le n\le m^\frac{p}{k}
+\frac{m^{-p}}{2} \le a_{m,n}\le m^{-p}\Longrightarrow \frac{b_m}{6}= \frac{m^\frac{p}{k}}{3}\cdot\frac{m^{-p}}{2} \le A_m\le m^\frac{p}{k}\cdot m^{-p}=b_m\,; \tag{3}
+n>m^\frac{p}{k}
+\frac{n^{-k}}{2} \le a_{m,n}\le n^{-k}\Longrightarrow \frac{b_m}{2^k(k-1)}=\int_{2m^\frac{p}{k}}^\infty\frac{dx}{2x^k}\le B_m\le\int_{\frac{1}{2}m^\frac{p}{k}}^\infty\frac{dx}{x^k}= \frac{2^{k-1} b_m}{k-1}. \tag{4}
+(1)
+(3)
+(4)
+(2)
+(1)
+\sum_{m=1}^\infty m^{-p(1-\frac{1}{k})}<\infty \iff p(1-\frac{1}{k})>1.
+\sum_{m,n} \frac{1}{m^k+n^p}\leq \sum_{l} \#\{m,n:\ 2^{l-1}\leq m^k+n^p \leq 2^l \} 2^{-(l-1)}
+\{m,n:\  m^k \leq 2^l, n^p \leq 2^l\}
+2^{l/k+l/p}
+\sum_l 2^{1/k+1/p-1}
+1/k+1/p < 1
+\sum_{m,n} \frac{1}{m^k+n^p}\geq \sum_{l} \#\{m,n:\ 2^{l-1}\leq m^k+n^p \leq 2^l \} 2^{-l}
+\{m,n:\ 2^{l-2}\leq m^k \leq 2^{l-1}, 2^{l-2} \leq n^p \leq 2^{l-1}\}
+(2^{-1/k}-2^{-2/k})(2^{-1/p}-2^{-2/p})2^{l/k+l/p}
+1/k+1/p > 1
+p>1
+k>1
+\{(x,y):x \ge 1, y \ge 1 \} 
+\{(r,\phi): r\ge 1, \phi \ge \phi_1(r)=\arcsin(1/r), \phi \le \phi_2(r)=\pi/2-\arcsin(1/r)\} \subset
+ \{(r,\phi):r\ge 1,\, \phi \ge 0, \,\phi \le \pi/2\}.
+p>1,\,k>1.
+\sum_{m=1}^\infty \sum_{n=1}^\infty \frac 1 {m^p+n^k}=\sum_{m=2}^\infty \sum_{n=2}^\infty \frac 1 {m^p+n^k}+\sum_{m=1}^\infty \frac 1 {m^p+1}+\sum_{n=2}^\infty \frac 1 {n^k+1}.
+ \sum_{m=2}^\infty \sum_{n=2}^\infty \frac 1 {m^p+n^k}\le \sum_{m=2}^\infty \sum_{n=2}^\infty \int_{m-1}^{m} \int_{n-1}^{n} \frac {dx\,dy} {x^p+y^k}=\int_1^\infty \int_1^\infty \frac {dx\, dy} {x^p+y^k}.
+ \left\{ x={r}^{2/p} \left( \cos \left( \phi \right)  \right) ^{2/p},y={r}^{2/k} \left( \sin \left( \phi \right)  \right) ^{2/k} \right\}.  
+  with(VectorCalculus):
+simplify(Jacobian([r^{2/p}*cos(phi)^{2/p}, r^{2/k}*sin(phi)^{2/k}], [r, phi], 'determinant')[2], trig, power);
+4\,{r}^{-{\frac {pk-2\,k-2\,p}{pk}}} \left( \cos \left( \phi \right)  \right) ^{-{\frac {p-2}{p}}} \left( \sin \left( \phi \right)  \right) ^{-{\frac {-2+k}{k}}}{p}^{-1}{k}^{-1}.  
+ \int_1^\infty \int_1^\infty \frac {dx\, dy} {x^p+y^k}\le
+\int_1^\infty r^{-{\frac {pk-2\,k-2\,p}{pk}}-2} \,dr\int_{\phi_1(r)}^{\phi_2(r)}\left( \cos \left( \phi \right)  \right) ^{-{\frac {p-2}{p}}} \left( \sin \left( \phi \right)  \right) ^{-{\frac {-2+k}{k}}}{p}^{-1}{k}^{-1}\,d\phi \le 
+ \int_1^\infty r^{-{\frac {pk-2\,k-2\,p}{pk}}-2} \,dr\int_{0}^{\pi/2}\left( \cos \left( \phi \right)  \right) ^{-{\frac {p-2}{p}}} \left( \sin \left( \phi \right)  \right) ^{-{\frac {-2+k}{k}}}{p}^{-1}{k}^{-1}\,d\phi. 
+ \int_0^{\pi/2}\left( \cos \left( \phi \right)  \right) ^{-{\frac {p-2}{p}}} \left( \sin \left( \phi \right)  \right) ^{-{\frac {-2+k}{k}}}{p}^{-1}{k}^{-1}\,d\phi
+ \int_1^\infty r^{-{\frac {pk-2\,k-2\,p}{pk}}-2} \,dr
+\frac 1 p +\frac 1 k <1. 

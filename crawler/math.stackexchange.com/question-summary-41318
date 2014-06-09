@@ -1,0 +1,67 @@
+X_1, X_2, \dots, X_n
+f(x) = (\lambda / 2 \pi x^3)^{-1/2} \exp(-\lambda/2x)
+x > 0
+f(x) = 0
+\tau > 0
+b < n
+\tau
+b
+n
+f_{X_{(j)},X_{(k)}}(x,y)dx\,dy=n!{[F_X(x)]^{j-1}\over(j-1)!}{[F_X(y)-F_X(x)]^{k-1-j}\over(k-1-j)!}{[1-F_X(y)]^{n-k}\over(n-k)!}f_X(x)f_X(y)\,dx\,dy
+0 \leq x \leq y \leq x + \tau
+b
+X_{(1)} \dots X_{(b)}
+X_{(n-b+1)} \dots X_{(n)}
+\tau
+f_{X_{(1)},\ldots,X_{(n)}}(x_1,\ldots,x_n)\,dx_1\cdots dx_n=n!f_X(x_1)\cdots f_X(x_n)\,dx_1\cdots dx_n
+X_{(i+b-1)} > X_{(i)}+r
+i=1\ldots n-b+1
+n! f(x_1) \ldots f(x_n)
+ x_{b-1} > x_{b-2}> \ldots >x_2 > x_1>0 
+ x_b > \max(x_{b-1}, x_1 + r), \ldots, x_n > \max(x_{n-1}, x_{n-b+1} + r). 
+b
+n
+\tau
+x\le y
+g(x,y)=P(x\le X_1\le y)
+f
+X_1
+x
+y
+I
+\{1,2,\ldots,n\}
+b
+A_I=[R_I\le\tau]
+R_I
+(X_k)
+I
+[x\le\min\{X_k;k\in I\},\max\{X_k;k\in I\}\le y]
+g(x,y)^b
+P(A_I)=\alpha_b
+I
+b
+ A_I=[R_I\le\tau],\qquad R_I=\max\{X_k;k\in I\}-\min\{X_k;k\in I\}. 
+ \alpha_b=\int bf(x)g(x,x+\tau)^{b-1}\mathrm{d}x. 
+A
+\tau
+b
+n
+I
+\{1,2,\ldots,n\}
+b
+I
+b
+P(A_I)=\alpha_b
+I\ne J
+b
+A_I
+A_J
+I\cap J=\emptyset
+P(A_I\cap A_J)\ge \alpha_b^2
+ A=\bigcup_IA_I,\quad A_I=[R_I\le\tau], 
+ S-S'\le P(A)\le S,\quad S=\sum_{I}P(A_I),\ S'=\sum_{I\ne J}P(A_I\cap A_J). 
+ {n\choose b}\alpha_b-\frac12\left({n\choose b}^2-{n\choose b}\right)\alpha_b^2\le P(A)\le{n\choose b}\alpha_b. 
+p-\frac12p^2\le P(A)\le p
+p=\displaystyle{n\choose b}\alpha_b
+P(A)
+p

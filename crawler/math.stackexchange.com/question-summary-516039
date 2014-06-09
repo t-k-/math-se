@@ -1,0 +1,19 @@
+\sum _{n=0}^{\infty}\binom{3n}{2n}\frac{1}{8n}=
+ \frac{1}{2\pi i} \sum_{n=0}^{\infty}\int_{C_R}\frac{(1+z)^{3n}}{z^{2n+1}}\frac{1}{8^n}dz=\frac{1}{2\pi i}\int_{C_R}\sum_{n=0}^\infty [\frac{(1+z)^3}{8z^2}]^n\frac{1}{z}dz=\frac{1}{2\pi i} \int _{C_R}\frac{1}{1-\frac{(1-z)^3}{8z^2}}\frac{1}{z}dz =\frac{1}{2\pi i} \int_{C_R}\frac{8z^2}{8z^2-(1-z)^3}\frac{dz}{z}
+=\frac{1}{2\pi i} \int_{C_R}\frac{8z}{8z^2-(1-z)^3}dz
+-0.2
+4.2=2+\sqrt{5}
+8 z^2-(1-z)^3 = z^3+5 z^2+3 z-1
+z=-1
+z^3+5 z^2+3 z-1 = (z+1)(z^2+4 z-1)
+z_{\pm}=-2\pm\sqrt{5}
+\operatorname*{Res}_{z=z_0} \frac{8 z}{z^3+5 z^2+3 z-1} = \frac{8 z_0}{3 z_0^2+10 z_0+3}
+z=z_0
+\operatorname*{Res}_{z=-1} \frac{8 z}{z^3+5 z^2+3 z-1} = 2
+\operatorname*{Res}_{z=\sqrt{5}-2} \frac{8 z}{z^3+5 z^2+3 z-1} = \frac{3}{\sqrt{5}}-1
+\operatorname*{Res}_{z=-\sqrt{5}-2} \frac{8 z}{z^3+5 z^2+3 z-1} = -\frac{3}{\sqrt{5}}-1
+R
+0 < R < \sqrt{5}-2 \implies 0
+\sqrt{5}-2 < R < 1 \implies \frac{3}{\sqrt{5}}-1
+1 < R < \sqrt{5}+2 \implies \frac{3}{\sqrt{5}}-1 + 2 = \frac{3}{\sqrt{5}}+1
+R > \sqrt{5} + 2 \implies \frac{3}{\sqrt{5}}-1 + 2 - \frac{3}{\sqrt{5}}-1 = 0

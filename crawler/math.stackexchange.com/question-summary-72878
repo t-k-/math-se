@@ -1,0 +1,11 @@
+\mu
+\max\{\mu/2 , X\}
+f_X(t)
+X
+X\sim\mathcal E(\mu)
+f_X(t) = 0
+t<0
+f_X(t) = \mu\mathrm e^{-\mu t}
+t\geq 0
+ \mathsf E g(X) = \int\limits_{-\infty}^\infty g(t)f_X(t)\,dt 
+ \mathsf E\max\{\mu/2,X\}= \int\limits_{0}^\infty \max\{\mu/2,t\}\mu\mathrm e^{-\mu t}\,dt = \int\limits_{0}^{\mu/2} \frac12\mu^2\mathrm e^{-\mu t}\,dt+\int\limits_{\mu/2}^\infty t\mu\mathrm e^{-\mu t}\,dt. 

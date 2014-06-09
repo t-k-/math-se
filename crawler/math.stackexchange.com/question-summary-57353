@@ -1,0 +1,24 @@
+\int_0^{\infty} e^{-a^2 t^2 - b t} \sin c t \;\mathrm dt
+I(a,b) = \int_0^{+\infty} \exp(-a t^2-bt)dt
+a\in \mathbb{R}_+
+b\in\mathbb{C}
+I(a,b) = \int_0^{+\infty} \exp\left[ -a\left(t+\frac{b}{2a}\right)^2+\frac{b^2}{4a} \right]dt
+=\exp\left(\frac{b^2}{4a}\right) \int_0^{+\infty} \exp\left[ -a\left(t+\frac{b}{2a}\right)^2\right]dt
+=\exp\left(\frac{b^2}{4a}\right)\int_{b/2a}^\infty e^{-au^2}du
+=\frac{1}{2} \sqrt{\frac{\pi}{a}}\exp\left(\frac{b^2}{4a}\right) \mathrm{erfc}\left(\frac{b}{2\sqrt{a}}\right).
+(*)=\frac{I(a^2,b-ci)-I(a^2,b+ci)}{2i}.
+J(a,z)=\displaystyle\int_0^{+\infty}\exp(-a^2t^2+zt)\mathrm{d}t
+z=-b+\mathrm{i}c
+J(a,z)
+a
+z
+\mathrm{e}^{zt}
+t
+u=a^2t^2
+\Gamma
+\frac12(n+1)
+k
+ J(a,z)=\sum_{n\ge0}\frac{z^n}{n!}\int_0^{+\infty}\exp(-a^2t^2)t^n\mathrm{d}t. 
+ J(a,z)=\frac1{2a}\sum_{n\ge0}j_n\left(\frac{z}a\right)^n,\qquad j_n=\frac1{n!}\Gamma\left(\frac{n+1}2\right). 
+ j_{2k}=\frac{\sqrt\pi}{2^{2k}}\frac1{k!},\quad j_{2k+1}=\frac{k!}{(2k+1)!}. 
+ \frac1{4\mathrm{i}}\sum_{n\ge0}(-1)^n\frac{j_n}{a^{n+1}}((b-\mathrm{i}c)^n-(b+\mathrm{i}c)^n). 

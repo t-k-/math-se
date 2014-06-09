@@ -1,0 +1,40 @@
+\text{Prove normal matrix is diagonalizable over }\mathbb{C}
+\textbf{If }\textbf{A}^\ast\textbf{A}=\textbf{A}\textbf{A}^\ast
+\textbf{Then }\textbf{A}=\textbf{P}^\ast\Lambda\textbf{P}
+\text{Proof}
+\textbf{A}\text{ is normal matrix}
+\Rightarrow\textbf{A} = \textbf{P}^\ast\Delta\textbf{P}\tag{1}
+\Delta\text{ is upper triangle matrix }\textbf{(Schur decomposition)}
+\textbf{P}\text{ is unitary matrix}
+\text{First we need to show if }\textbf{A}\text{ is }\textbf{normal}\text{ then }\Delta\text{ is }\textbf{normal}
+\textbf{A} = \textbf{P}^\ast\Delta\textbf{P}\tag{2}
+\Rightarrow\textbf{A}^\ast = (\textbf{P}^\ast\Delta\textbf{P})^\ast
+\Rightarrow\textbf{A}^\ast = \textbf{P}^\ast(\textbf{P}^\ast\Delta)^\ast
+\Rightarrow\textbf{A}^\ast = \textbf{P}^\ast(\Delta^\ast\textbf{P})\tag{3}
+\text{from (2) and (3)}
+\Rightarrow\textbf{A}\textbf{A}^\ast = (\textbf{P}^\ast\Delta\textbf{P})(\textbf{P}^\ast\Delta^\ast\textbf{P})
+\Rightarrow\textbf{A}\textbf{A}^\ast = \textbf{P}^\ast\Delta(\textbf{P}\textbf{P}^\ast)\Delta^\ast\textbf{P}
+\textbf{P} \text{ is unitary matrix}
+\Rightarrow\textbf{P}^\ast = \textbf{P}^{-1}
+\Rightarrow\textbf{A}\textbf{A}^\ast = \textbf{P}^\ast\Delta\Delta^\ast\textbf{P}\tag{4}
+\Rightarrow\textbf{A}^\ast\textbf{A} = \textbf{P}^\ast\Delta^\ast\textbf{P}\textbf{P}^\ast\Delta\textbf{P}
+\Rightarrow\textbf{A}^\ast\textbf{A} = \textbf{P}^\ast\Delta^\ast\Delta\textbf{P}\tag{5}
+\textbf{From (4) and (5)}
+\Rightarrow\textbf{A}\textbf{A}^\ast - \textbf{A}^\ast\textbf{A} = \textbf{P}^\ast\Delta\Delta^\ast\textbf{P}-\textbf{P}^\ast\Delta^\ast\Delta\textbf{P}
+\Rightarrow\textbf{A}\textbf{A}^\ast - \textbf{A}\textbf{A}^\ast = \textbf{P}^\ast(\Delta\Delta^\ast-\Delta^\ast\Delta)\textbf{P} = \textbf{0}
+\Rightarrow \Delta\Delta^\ast-\Delta^\ast\Delta = \textbf{0}
+\Rightarrow\Delta\Delta^\ast = \Delta^\ast\Delta\tag{6}
+\Rightarrow\Delta \textbf{ is normal matrix}
+\textbf{From (6)}
+\Rightarrow\vec{e_i}^\ast\Delta\Delta^\ast\vec{e_i} = \vec{e_i}^\ast\Delta^\ast\Delta\vec{e_i}
+\Rightarrow\langle\Delta^\ast\vec{e_i},\Delta^\ast\vec{e_i}\rangle = \langle\Delta\vec{e_i}, \Delta\vec{e_i}\rangle
+\Rightarrow\lVert\Delta^\ast\vec{e_i}\rVert^{2} = \lVert\Delta\vec{e_i}\lVert^{2}
+\Rightarrow\lVert\Delta^\ast\vec{e_i}\rVert = \rVert\Delta\vec{e_i}\lVert
+\Rightarrow\textbf{The length of ith column and ith row in }\Delta\textbf{ are same} \tag{7}
+\Delta\textbf{ is upper triangle matrix}
+\textbf{Let i to be the first row with nonzero off-diagonal element}
+ \Delta_{n,n} =  \begin{pmatrix} a_{1,1}     &     0     & \cdots & 0      & \cdots & 0      \\    0        & a_{2, 2}  & \cdots & 0      & \cdots & 0      \\    0        &     0     & a_{i,i}& \ast   & \cdots & \ast   \\ \vdots      &   \vdots  & \vdots & \vdots & \cdots & \vdots \\    \cdot    &    \cdot  & \cdot  & \vdots & \vdots & a_{n,n} \end{pmatrix} 
+\textbf{If }\Delta\textbf{ is not diagonal matrix, then the ith column is }\lvert a_{i,i} \rvert \neq \lvert a_{i,i} \rvert + \lvert \ast \rvert + \cdots + \rvert \ast \lvert
+\textbf{This contracts our previous (7), therefore }\Delta\textbf{ must be diagonal matrix}
+\textbf{Therefore }\textbf{A}\textbf{A}^\ast = \textbf{A}^\ast\textbf{A}\Rightarrow\textbf{A}=\textbf{P}^\ast\Lambda\textbf{P}\quad\square
+\mathbb{C}

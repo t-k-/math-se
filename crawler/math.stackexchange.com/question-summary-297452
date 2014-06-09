@@ -1,0 +1,14 @@
+\phi
+2k\pi
+k
+\sum_{t=0}^{n} \sin{(\theta + t \phi)}=\frac{\sin({\frac{(n+1)\phi}2})\sin{(\theta+\frac{n \phi}2)}}{\sin{(\frac{\phi}2)}}
+\sum_{t=0}^{n}\cos{(\theta+t\phi)}
+\theta
+\sum_{t=0}^{n}\cos^{2}{(2t\theta)}
+\sum_{t=0}^{n}\sin^{2}{(2t\theta)}
+\cos{(\theta + t \phi)} = \frac{1}{2} \left ( e^{i (\theta + t \phi)} + e^{- (\theta + t \phi)} \right ) = \Re{[e^{i (\theta + t \phi)}]}
+\sin{(\theta + t \phi)} = \frac{1}{2 i} \left ( e^{i (\theta + t \phi)} - e^{- (\theta + t \phi)} \right ) = \Im{[e^{i (\theta + t \phi)}]}
+\begin{align}\sum_{t=0}^{n} \sin{(\theta + t \phi)} &= \Im{ \left [e^{i \theta} \sum_{t=0}^{n} e^{i t \phi} \right ]} \\ &= \Im{ \left [e^{i \theta} \frac{1-e^{i(n+1) \phi}}{1-e^{i\phi}} \right ]} \\ &=\Im{ \left [e^{i \theta} \frac{e^{i (n+1) \phi/2}}{e^{i \phi/2}} \frac{i 2 \sin{(n+1) \phi/2}}{i 2 \sin{\phi/2}} \right ]}\\ &= \Im{ \left [e^{i (\theta+n \frac{\phi}{2})} \right ]} \frac{\sin{\left [(n+1) \frac{\phi}{2} \right ]}}{\sin{\left (\frac{\phi}{2} \right )}}\\ &= \sin{ \left(\theta+n \frac{\phi}{2}\right)}  \frac{\sin{\left [(n+1) \frac{\phi}{2} \right ]}}{\sin{\left (\frac{\phi}{2} \right )}}\\\end{align}
+\sum_{t=0}^{n}\cos^{2}{(2t\theta)}
+\cos^{2}{(2t\theta)} = 1/2 + (1/2) \cos{(4 t \theta)}
+\sin^{2}{(2t\theta)}

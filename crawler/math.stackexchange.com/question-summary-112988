@@ -1,0 +1,19 @@
+\begin{align} \int_C \vec F \cdot d\vec r &= \int_C \vec F \cdot \vec T \: ds \\ &= \int_a^b \vec F\left(\vec r(t)\right) \cdot \frac{\vec r'(t)}{\left\lVert \vec r'(t) \right\rVert} \left\lVert \vec r'(t) \right\rVert \: dt \\ &= \int_a^b \vec F\left(\vec r(t)\right) \cdot \vec r'(t) \: dt \end{align}
+\vec V = \vec V(x,y)
+u
+v
+\Rightarrow \vec V(x,y) = u(x,y) \; \vec i + v(x,y) \; \vec j 
+(0.0274,0.0386)\: (0.0926,0.0386) \: (0.0926,0.1184) \: (0.0274,0.1184)
+\begin{align} C_1: \: \: r_1(t) = t \; \vec i + 0.0386 \; \vec j \hspace{2cm} for\hspace{1cm}  0.0274 \le t \ge 0.0926 \\ C_2: \: \: r_2(t) = 0.0926 \; \vec i + t \; \vec j \hspace{2cm} for\hspace{1cm}  0.0386 \le t \ge 0.1184 \\ -C_3: \: \: r_3(t) = t \; \vec i + 0.1184 \; \vec j \hspace{2cm} for\hspace{1cm}  0.0274 \le t \ge 0.0926 \\ -C_4: \: \: r_4(t) = 0.0274 \; \vec i + t \; \vec j \hspace{2cm} for\hspace{1cm}  0.0386 \le t \ge 0.1184  \end{align}
+\begin{align} r_1'(t) &= 1 \; \vec i + 0 \; \vec j \\ r_2'(t) &= 0 \; \vec i + 1 \; \vec j \\ r_3'(t) &= 1 \; \vec i + \; \vec j \\ r_4'(t) &= 0 \; \vec i + 1 \; \vec j   \end{align}
+\begin{align} \Gamma = \int_C \vec V(x,y) \cdot d\vec r &= \\ &= \int_{C_1} \vec V(x,y) \cdot d\vec r + \int_{C_2} \vec V(x,y) \cdot d\vec r - \int_{-C_3} \vec V(x,y) \cdot d\vec r - \int_{-C_4} \vec V(x,y) \cdot d\vec r \\ &= \int^{b_1}_{a_1} \vec V(\vec r_1(t)) \cdot r_1'(t) dt + \int^{b_2}_{a_2} \vec V(\vec r_2(t)) \cdot r_2'(t) dt \\ &- \int^{b_3}_{a_3} \vec V(\vec r_3(t)) \cdot r_3'(t) dt -\int^{b_4}_{a_4} \vec V(\vec r_4(t)) \cdot r_4'(t) dt \end{align}
+\vec V(\vec r(t)) = \vec V(x(t),y(t))
+t
+r(t)
+x
+y
+u(x,y)
+v(x,y)
+r_i'(t)
+\vec V
+\int^{b_1}_{a_1} \vec V(\vec r_1(t)) \cdot r_1'(t) \; dt =\int^{b_1}_{a_1} u(\vec r_1(t)) \; dt

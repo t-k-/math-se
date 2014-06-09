@@ -1,0 +1,13 @@
+120 = 2^3 \times 15
+68 = 2^2 \times 17
+81 = 2^0 \times 81
+1
+a_1
+3
+a_3
+n = a_11 + a_33 + a_55 + \dots
+a_i
+n =  (2^{b_{11}}+2^{b_{12}}+...)1 + (2^{b_{31}}+2^{b_{32}}+...)3 + \dots
+D(n)
+O(n)
+ \begin{align} \sum_{n\ge0}D(n)x^n &= (1+x)(1+x^2)(1+x^3)(1+x^4)(1+x^5) \\ &= \frac{1-x^2}{1-x}\frac{1-x^4}{1-x^2}\frac{1-x^6}{1-x^3}\frac{1-x^8}{1-x^4}\frac{1-x^{10}}{1-x^5}\dots \\  &= \frac{1}{(1-x)(1-x^3)(1-x^5)\dots} \\  &= (1+x+x^{1+1}+\dots)(1+x^3+x^{3+3}+\dots)(1+x^5+x^{5+5}+\dots) \\  &= \sum_{n\ge0}O(n)x^n \end{align} 

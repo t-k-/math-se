@@ -1,0 +1,23 @@
+(B_t)_{t}
+F \in L^2(\Omega,\mathcal{F}_T,\mathbb{P})
+X
+F=\mathbb{E}F+\int_0^T X_s \, dB_s \tag{1}
+F=f(W(h_1),\ldots,W(h_n))
+f
+W(h_j) := \int_0^T h_j(s) \, dB_s
+h_j \in L^2
+X_s = \mathbb{E}(D_s F|\mathcal{F}_s)
+D_t F =\sum_{i=1}^n \partial_i f(W(h_1),\ldots,W(h_n)) \cdot h_i(t)
+f
+F := f(B_T)
+W(h_1) := \int_0^T \underbrace{1}_{=:h_1} \, dB_s = B_T \qquad F=f(W(h_1))
+D_t F = f'(B_T) \cdot 1 \\ \Rightarrow F = \mathbb{E}F + \int_0^T f'(B_T) \, dB_s \tag{2}
+\underbrace{f(B_T)}_{F}-f(0) = \int_0^T f'(B_s) \, dB_s + \frac{1}{2} \int_0^T f''(B_s) \, ds \tag{3}
+f
+f(x) := x
+F= \mathbb{E}F+ \int_0^t \mathbb{E}(f'(B_T)|\mathcal{F}_s) \, dB_s \tag{4}
+f(x):=x^2
+F=f(B_T)=B_T^2
+\begin{align} B_T^2=F &\stackrel{4}{=} \underbrace{\mathbb{E}F}_{T} + \int_0^T \underbrace{\mathbb{E}(2 B_T|\mathcal{F}_s)}_{B_s} \, dB_s = T +2 \int_0^T B_s \, dB_s \\ &= T + 2\int_0^T B_s \, dB_s \end{align}
+f
+f(x):=x^2

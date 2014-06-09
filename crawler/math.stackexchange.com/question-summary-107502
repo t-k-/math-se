@@ -1,0 +1,14 @@
+e^x \tan(x)
+\text{Im}(x) < 0
+\tan(x) = -i \frac{1-e^{-2ix}}{1+e^{-2ix}} = -i - 2 i \sum_{k=1}^\infty (-1)^k e^{-2ikx}
+\begin{align} \int e^x \tan(x)\ dx &= -i e^x - 2 i \sum_{k=1}^\infty (-1)^k \int e^{(1-2ik)x}\ dx \\ &= -i e^x -2i \sum_{k=1}^\infty \frac{(-1)^k}{1-2ik} e^{(1-2ik)x} + C \\ &= -i{{ e}^{x}}-{\rm LerchPhi} \left( -{{ e}^{-2ix}},1,1+i/2  \right) {{ e}^{(1-2i)x}} + C \end{align}
+_2
+_1
+{\rm LerchPhi} \left( z,1,1+\frac{i}{2} \right) = \frac{ 4-2i  }{5} \ {\mbox{$_2$F$_1$}\left(1,1+\frac{i}{2};2+\frac{i}{2};z\right)}
+e^x \tan(x)
+\tan(x)
+_2
+_1
+_2
+_1
+-i \left( -{{\rm e}^{x}} {\mbox{$_2$F$_1$}(1,-i/2;1-i/2;\,-{{\rm e}^{2ix}})}+ \left(  1/5-2i/5 \right) {{\rm e}^{ \left( 1+2i \right) x}} {\mbox{$_2$F$_1$}(1,1-i/2;2-i/2;\,-{{\rm e}^{2ix}})}  \right)

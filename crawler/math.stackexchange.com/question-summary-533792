@@ -1,0 +1,17 @@
+f(n) = f(n - 1) + 2(n - 1)
+f(n) = f(n - 2) + 2(n - 2) + 2(n - 1)
+f(1) = 1
+n - a = 1
+f(n) = 1 + 2(n - (n - 2)) + … + 2(n - 1)
+f(n) = 1 + 2(1) + … + 2(n - 1)
+1
+n - 1
+n-1
+\dfrac{n^2 + n}2
+1 + 2\left(\dfrac{(n-1)^2+(n-1)}{2}\right)
+1 + (n - 1)^2 + n - 1
+(n - 1)^2 + n
+n^2 - 2n + 1 + n
+n^2 + 1 - n
+(n - 1)n + 1
+\begin{align*} f(n)&=f(n-1)+2(n-1)\\ &=f(n-2)+2(n-2)+2(n-1)\\ &=f(n-3)+2(n-3)+2(n-2)+2(n-1)\\ &\;\vdots\\ &=f(n-k)+2(n-k)+2\big(n-(k-1)\big)+\ldots+2(n-2)+2(n-1)\\ &\;\vdots\\ &=f(1)+2\big(n-(n-1)\big)+2\big(n-(n-2)\big)+\ldots+2(n-2)+2(n-1)\\ &=1+\sum_{k=1}^{n-1}2k\\ &=1+2\sum_{k=1}^{n-1}k\\ &\overset{*}=1+2\left(\frac{n(n-1)}2\right)\\ &=1+n(n-1)\\ &=n^2-n+1\;. \end{align*}

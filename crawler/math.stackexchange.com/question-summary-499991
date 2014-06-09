@@ -1,0 +1,24 @@
+E_k
+n
+E_{k,h}
+h
+A_1, A_2, \ldots, A_k
+E_{k,h} = \emptyset
+k<h
+E_{n,i}
+E_{n,j}
+i\ne j
+\bigcup^n_{i=1}A_i = \bigcup^n_{i=1}E_{n,i}
+n=1
+A_1=E_{1,1}
+n=k
+k\in\mathbb N
+n=k+1
+E_{k+1,i}
+i
+A_1, A_2, \ldots, A_k
+A_{k+1}
+i-1
+A_1, A_2, \ldots, A_k
+A_{k+1}
+\begin{align} \bigcup^{k+1}_{i=1}A_i =& \bigcup^{k}_{i=1}A_i\cup A_{k+1}\\ =& \left(\bigcup^{k}_{i=1}A_i\cap \overline{A_{k+1}}\right) \cup \left(\bigcup^{k}_{i=1}A_i\cap A_{k+1}\right) \cup \left(\overline{\bigcup^{k}_{i=1}A_i}\cap A_{k+1}\right)\\ =& \left(\bigcup^{k}_{i=1}E_{k,i}\cap \overline{A_{k+1}}\right) \cup \left(\bigcup^{k}_{i=1}E_{k,i}\cap A_{k+1}\right) \cup \left(E_{k,0}\cap A_{k+1}\right)\\\ =& \left(\bigcup^{k}_{i=1}E_{k,i}\cap \overline{A_{k+1}}\right) \cup \left(\bigcup^{k}_{i=0}E_{k,i}\cap A_{k+1}\right)\\ =& \left(\bigcup^{k+1}_{i=1}E_{k,i}\cap \overline{A_{k+1}}\right) \cup \left(\bigcup^{k+1}_{i=1}E_{k,i-1}\cap A_{k+1}\right)\\ =& \bigcup^{k+1}_{i=1}\left[\left(E_{k,i}\cap \overline{A_{k+1}}\right) \cup \left(E_{k,i-1}\cap A_{k+1}\right)\right]\\ =& \bigcup^{k+1}_{i=1}E_{k+1,i}\\ \end{align}

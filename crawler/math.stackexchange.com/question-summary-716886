@@ -1,0 +1,38 @@
+m,n
+m\ge n
+\{1,...,m\}
+\{1,...,n\}
+n^m
+n^m
+\binom{n}{1}(n-1)^m
+\binom{n}{2}(n-2)^m
+1 \le i \le n
+A_i = \{\rho \colon M \to N \text{ a mapping such that } i \notin \rho(M)\}.
+S = \{\rho \colon M \to N\} \setminus \bigcup_{i=1}^n A_i
+|\{\rho \colon M \to N\}| = n^m
+|A_{i_1} \cap \dots \cap A_{i_k}| = (n-k)^m
+{n \choose k}
+|S| = |\{\rho \colon M \to N\}| - \sum_{1 \le i_1 \le n} |A_i| + \sum_{1 \le i_1 < i_2 \le n} |A_{i_1} \cap A_{i_2}| - \dots \pm |A_1 \cap \dots \cap A_n|.
+A_{i_1} \cap \dots \cap A_{i_k} = \{\rho \colon M \to N \text{ a mapping such that } \{i_1,\dots,i_k\} \cap \rho(M) = \emptyset\},
+|S| = n^m - {n \choose 1}(n-1)^m + {n \choose 2}(n-2)^m - \dots \pm {n \choose n}(n-n)^m.
+m\geq n
+\phi(m,n)
+m
+n
+\phi(m,1)=1
+\phi(m,2)=2^m-2
+\phi(m,3)
+3^m
+\binom 32 \phi(m,2)+\binom 31 \phi(m,1)
+\begin{align} \phi(m,n)&=n^m-\sum_{j=1}^{n-1}\binom nj\phi(m,j)=\\ &=n^m-\binom n{n-1}(n-1)^m+\sum_{j=1}^{n-2}\binom nj\phi(m,j)=\\ &=\sum_{j=0}^{n-1}(-1)^j\binom n{n-j}(n-j)^m \end{align}
+\{1,\ldots,m\}
+m!
+m-1
+n-1
+n
+{m-1 \choose n-1}
+1
+2
+\{1,\ldots,m\}
+\{1,\ldots,n\}
+ {m-1 \choose n-1}m! 

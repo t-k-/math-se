@@ -1,0 +1,46 @@
+n
+n!
+[\frac n4]
+ \lim_{n\to \infty} \frac{E_5(n!)}{[\frac n4]} =1
+E_5(n!)= \sum_{k=1}^\infty [\frac{n}{5^k}]
+n!
+E_5(n!)
+E_5(n!) \le \frac n5+\frac {n}{5^2}+...=n\frac{\frac 15}{1-\frac 15}= \frac n4
+(??\le \frac{E_5(n!)}{[\frac n4]} \le 1 )
+\frac{[n/4]-C(n)}{[n/4]}\le \frac{E_5(n!)}{[n/4]} \le 1
+\frac{C(n)}{[n/4]} =0
+E_5(n!) + C(n) \ge [\frac{n}{4}]
+C(n) + [n/5]+[n/5^2]+....\ge [n/5+n/5^2+...]
+E_5(n!)
+1+[x_1]+[x_2]\ge[x_1+x_2]
+k-1+[x_1]+[x_2]+...+[x_k]\ge [x_1+x_2+...+x_k]
+[n/5^k]
+log_5
+[n/5]+[n/5^2]+...+[n/5^K]\ge[n/5+n/5^2+..+n/5^K]
+n/5^{K+1}+n/5^{K+2}+...= n/5^{K+1} * (\frac{1}{1-1/5}) < 1 * 5/4 = 5/4 
+[n/5]+[n/5^2]+...+[n/5^K]\ge[n/5+n/5^2+..+n/5^K+....]
+\sigma_5(n)\le4(\lfloor\log_5(n)\rfloor+1)
+(2)
+(3)
+ \frac n4-\lfloor\log_5(n)\rfloor-1\le\frac{n-\sigma_5(n)}{4}\le\frac n4\tag{2} 
+ \lim_{n\to\infty}\frac{\log_5(n)}{n}=0\tag{3} 
+n!
+n!
+n!
+⌊\frac{n}{5}⌋
+⌊\frac{n}{25}⌋
+\frac{\frac{1}{5}n}{1-\frac{1}{5}} = \frac{1}{4}n
+n
+T(n)
+n
+n
+ n = \sum_{k=0}^{\lfloor \log_5 n\rfloor} d_k 5^k.
+E_5(n!) = -n + \sum_{k\ge 0} \Big\lfloor \frac{n}{5^k} \Big\rfloor = -n + \sum_{j=0}^{\lfloor \log_5 n\rfloor} \sum_{k=j}^{\lfloor \log_5 n\rfloor} d_k 5^{k-j}.
+T(n) = \sum_{j=0}^{\lfloor \log_5 n\rfloor} \sum_{k=j}^{\lfloor \log_5 n\rfloor} d_k 5^{k-j}.
+ T(n) \ge \sum_{j=0}^{\lfloor \log_5 n\rfloor} 5^{\lfloor \log_5 n\rfloor-j} = 5^{\lfloor \log_5 n\rfloor} \sum_{j=0}^{\lfloor \log_5 n\rfloor} 5^{-j} = \frac{1}{4} 5^{\lfloor \log_5 n\rfloor+1} - \frac{1}{4}  = \frac{5}{4} n  \left(5^{\lfloor \log_5 n\rfloor-\log_5 n} - \frac{1}{5n}\right) = \frac{5}{4} n  \left(1 - \frac{1}{5n}\right). 
+ T(n) \le \sum_{j=0}^{\lfloor \log_5 n\rfloor} 4 \sum_{k=j}^{\lfloor \log_5 n\rfloor} 5^{k-j} = \frac{1}{4} 5^{\lfloor \log_5 n\rfloor+2} -\lfloor \log_5 n\rfloor - \frac{9}{4}  = \frac{5}{4} n \left(5^{\lfloor \log_5 n\rfloor+1-\log_5 n}  -\frac{4}{5}\frac{\lfloor \log_5 n\rfloor}{n} - \frac{9}{5n}\right). 
+ n= 5^{\lfloor \log_5 n\rfloor+1} -1.
+ 5^{\lfloor \log_5 n\rfloor+1-\log_5 n} = 5^{\lfloor \log_5 n\rfloor+1-\log_5 \left(5^{\lfloor \log_5 n\rfloor+1} -1\right) } = \frac{5^{\lfloor \log_5 n\rfloor+1}}{5^{\lfloor \log_5 n\rfloor+1}-1} \\ = \frac{1}{1-1/5^{\lfloor \log_5 n\rfloor+1}} = 1 + \left(\frac{1}{5^{\lfloor \log_5 n\rfloor+1}}\right) + \left(\frac{1}{5^{\lfloor \log_5 n\rfloor+1}}\right)^2 + \left(\frac{1}{5^{\lfloor \log_5 n\rfloor+1}}\right)^3 + \cdots.
+  T(n) \le \frac{5}{4} n \left(1 + \left(\frac{1}{5^{\lfloor \log_5 n\rfloor+1}}\right) + \left(\frac{1}{5^{\lfloor \log_5 n\rfloor+1}}\right)^2+\cdots -\frac{4}{5}\frac{\lfloor \log_5 n\rfloor}{n} - \frac{9}{5n}\right).
+ T(n) \sim \frac{5}{4} n 
+ E_5(n!) \sim \frac{1}{4} n.

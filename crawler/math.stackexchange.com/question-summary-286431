@@ -1,0 +1,21 @@
+a
+b
+a_{11}u_{xx}+2a_{12}u_{xy}+a_{22}u_{yy}+b_{1}u_{x}+b_{2}u_{y}+cu=0
+a(u_{xx} + u_{yy}) + bu = 0
+x'=x\cos A-y\sin A
+y'=x\sin A+y\cos A
+u_{xx}\;,\;u_{xy}\;,\;u_{yy}
+x'
+y'
+u_{x'y'}
+\frac{\partial u}{\partial x} = \frac{\partial x'}{\partial x} \frac{\partial u}{\partial x'} + \frac{\partial y'}{\partial x} \frac{\partial u}{\partial y'} = \cos{A} \, u_{x'} + \sin{A} \, u_{y'} 
+\frac{\partial u}{\partial y} = \frac{\partial x'}{\partial y} \frac{\partial u}{\partial x'} + \frac{\partial y'}{\partial y} \frac{\partial u}{\partial y'} = -\sin{A} \, u_{x'} + \cos{A} \, u_{y'} 
+\frac{\partial^2 u}{\partial x^2} = \cos^2{A} \, u_{x'x'} + \sin^2{A} \, u_{y'y'} + 2 \sin{A} \cos{A} u_{x'y'} 
+\frac{\partial^2 u}{\partial y^2} = \sin^2{A} \, u_{x'x'} + \cos^2{A} \, u_{y'y'} - 2 \sin{A} \cos{A} u_{x'y'} 
+\frac{\partial^2 u}{\partial x \partial y} = -\cos{A} \sin{A} \, u_{x'x'} + (\cos^2{A}-\sin^2{A}) \, u_{x'y'} + \cos{A} \sin{A} \, u_{y'y'} 
+u_{x'y'}
+(a_{11} - a_{22}) \sin{2 A} + 2 a_{12} \cos{2 A} = 0
+A
+u_{x'x'}
+u_{y'y'}
+\left [ 1 + \frac{a_{12}}{\sqrt{a_{12}^2 + (a_{11}-a_{22})^2}} \right ] u_{x'x'} + \left [ 1 - \frac{a_{12}}{\sqrt{a_{12}^2 + (a_{11}-a_{22})^2}} \right ] u_{y'y'}

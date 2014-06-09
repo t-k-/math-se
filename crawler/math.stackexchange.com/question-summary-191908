@@ -1,0 +1,44 @@
+f(x,y)
+A
+A
+I
+A
+I
+\mathbf{1}_A (x,y)
+(x,y)
+A
+A
+A
+x_i
+S:=\sum_{i=1}^n X_i-W<0
+A
+S>0
+A
+n
+{\bf X}:=(X_1,\ldots, X_n)
+X
+x_i:=X_i-y_i
+y_i
+\geq 0
+\sum_{i=1}^n y_i\leq S
+g(y_1,\ldots ,y_n):=f(X_1-y_1,\ldots, X_n-y_n)
+n
+y
+1
+\Delta
+n-1
+y_i
+(n-1)
+S
+\Delta'
+y_n
+(y_1,\ldots ,y_{n-1})\in \Delta'
+0\leq y_n\leq S-(y_1 +\ldots+y_{n-1})
+g_1(y_1,\ldots,y_{n-1})
+n-1
+y_i
+\Delta'
+\Delta:=\left\{(y_1,\ldots,y_n)\ \biggm|y_i\geq 0\ (1\leq i\leq n),\ \sum_{i=1}^n y_i\leq S\right\}
+J:=\int_A f({\bf x})\ {\rm d}({\bf x})=\int_\Delta g({\bf y})\ {\rm d}({\bf y})\ .
+\Delta':=\left\{(y_1,\ldots,y_{n-1})\ \biggm|\ y_i\geq 0\ (1\leq i\leq n-1), \ \sum_{i=1}^{n-1} y_i\leq S\right\}
+J=\int_{\Delta'}\left(\int_0^{S-(y_1+\ldots+y_{n-1})} g({\bf y})\ dy_n\right)\ {\rm d}({\bf y}')\ .

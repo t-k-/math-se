@@ -1,0 +1,17 @@
+\int\sqrt{\dfrac1{1+x^3}}\mathrm dx
+x^3+1=(x+1)(x^2-x+1)
+x=\frac{-1+\sqrt{(-1)^2-(-1)+1}+(-1-\sqrt{(-1)^2-(-1)+1})v}{1+v}=\frac{2\sqrt{3}}{1+v}-(1+\sqrt{3})
+\int\frac{\mathrm dx}{\sqrt{x^3+1}}=-2\int\frac{\mathrm dv}{\sqrt{(1-v^2)(2\sqrt{3}-3+(2\sqrt{3}+3)v^2)}}
+\mathrm{sn}^2(u|m)+\mathrm{cn}^2(u|m)=1
+v=\mathrm{sn}(u|m)
+v=\mathrm{cn}(u|m)
+\mathrm dv=-\mathrm{sn}(u|m)\mathrm{dn}(u|m)\mathrm du
+2\int\frac{\mathrm{sn}(u|m)\mathrm{dn}(u|m)\mathrm du}{\sqrt{(1-\mathrm{cn}^2(u|m))(2\sqrt{3}-3+(2\sqrt{3}+3)\mathrm{cn}^2(u|m))}}
+2\int\frac{\mathrm{dn}(u|m)\mathrm du}{\sqrt{2\sqrt{3}-3+(2\sqrt{3}+3)\mathrm{cn}^2(u|m)}}
+m
+m=\frac{2+\sqrt{3}}{4}
+2\int\frac{\mathrm{dn}(u|m)\mathrm du}{\sqrt{2\sqrt{3}-3+(2\sqrt{3}+3)\mathrm{cn}^2(u|m)}}=\int\frac{\mathrm du}{\sqrt[4]{3}}
+u=F(\arccos(v)|m)
+v=\frac{2\sqrt{3}}{1+\sqrt{3}+x}-1
+\int\frac{\mathrm dx}{\sqrt{x^3+1}}=\frac1{\sqrt[4]{3}}F\left(\arccos\left(\frac{2\sqrt{3}}{1+\sqrt{3}+x}-1\right)\mid\frac{2+\sqrt{3}}{4}\right)+C
+\frac{\mathrm d}{\mathrm d\phi}F(\phi|m)=\frac1{\sqrt{1-m\sin^2\phi}}

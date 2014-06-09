@@ -1,0 +1,7 @@
+S_3=\frac11+\frac12+\frac13+\frac1{1\cdot2}+\frac1{2\cdot3}+\frac1{3\cdot1}+\frac1{1\cdot2\cdot3}
+=\left(1+\frac11\right)\left(1+\frac12\right)\left(1+\frac13\right)-1
+n\ge1
+S_n=\prod_{1\le r\le n}\left(1+\frac1r\right)-1=\prod_{1\le r\le n}\left(\frac{r+1}r\right)-1
+=\frac{2\cdot3\cdots n\cdot(n+1)}{1\cdot2\cdots(n-1)\cdot n}-1=\frac{n+1}1-1=n
+S_3=\sum f(r_i)+\sum f(r_i)f(r_j)+\sum f(r_i)f(r_j)f(r_k)=-1+\prod_{1\le i\le 3}\{1+f(r_i)\}
+S_n=-1+\prod_{1\le i\le n}\{1+f(r_i)\}

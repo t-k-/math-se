@@ -1,0 +1,23 @@
+\int_{0}^{1}(\arcsin{x})(\sin{\frac{\pi}{2}x})dx
+\begin{align}\int_{0}^{1} dx \:(\arcsin{x})(\sin{\frac{\pi}{2}x}) = \underbrace{-\frac{2}{\pi} \left [ \cos{\left ( \frac{\pi}{2} x\right)} \arcsin{x} \right ]_0^1}_{\text{this}=0} + \frac{2}{\pi} \int_0^1 \frac{dx}{\sqrt{1-x^2}} \cos{\left ( \frac{\pi}{2} x\right)}\end{align}
+\int_{-1}^1 dx \: \frac{e^{i k x}}{\sqrt{1-x^2}} = \pi J_0(k)
+J_0
+\int_{0}^{1} dx \:(\arcsin{x})(\sin{\frac{\pi}{2}x}) = J_0{\left(\frac{\pi}{2}\right)}
+k y''+y'+k y=0
+y(0)=1
+k y''+y'+k y=k \int_{-1}^1 dx \; \sqrt{1-x^2} e^{i k x} + i \int_{-1}^1 dx \; \frac{x}{\sqrt{1-x^2}} e^{i k x}
+\frac{1}{\pi} \int_{-1}^1 dx \: \frac{1}{\sqrt{1-x^2}} = 1
+\pi/2
+\int_0^1 dx \: (\arcsin{x})(\sin{k x}) = \frac{\pi}{2 k} [J_0(k)-\cos{k}] 
+ \int_{0}^{1}(\arcsin{x})(\sin{\frac{\pi}{2}x})dx = \frac{2}{\pi}\,\int_{0}^{1}\!{\frac{\cos \left( \frac{\pi x }{2} \right) }{\sqrt {1- {x}^{2}}}}{dx}
+ = \frac{2}{\pi} \sum_{k=0}^{\infty}\frac{(-1)^k\left(\frac{\pi}{2}\right)^{2k}}{(2k)!}\int_{0}^{1}\frac{x^{2k}}{\sqrt{1-x^2}}dx 
+ = \frac{2}{\pi} \sum_{k=0}^{\infty}\frac{(-1)^k\left(\frac{\pi}{2}\right)^{2k} }{(2k)!}\frac{1}{2}\beta\left(k+\frac{1}{2},\frac{1}{2}\right)
+ = \frac{1}{\pi} \sum_{k=0}^{\infty}\frac{(-1)^k\left(\frac{\pi}{2}\right)^{2k} }{(2k)!}{\frac {\Gamma\left(\frac{1}{2}\right) \Gamma\left( k+\frac{1}{2} \right) }{\Gamma \left( k+1 \right) }}
+ = \frac{1}{\sqrt{\pi}} \sum_{k=0}^{\infty}\frac{(-1)^k \left(\frac{\pi}{2}\right)^{2k} }{(2k)!}{\frac { \Gamma\left( k+\frac{1}{2} \right) }{\Gamma \left( k+1 \right) }}
+ = \frac{1}{\sqrt{\pi}} \sum_{k=0}^{\infty}\frac{(-1)^k \left(\frac{\pi}{2}\right)^{2k} }{{\frac {{2}^{2k}\Gamma  \left( k +1\right) \Gamma  \left( k+1/2 \right)}{\sqrt{\pi}}}}{\frac{\Gamma\left(k+\frac{1}{2}\right)}{\Gamma\left(k+1\right)}} 
+ = {{J_{0}}\left(\frac{\pi}{2} \right)}, 
+ (2k)! = \frac {{2}^{2k}\Gamma  \left(k+1\right) \Gamma\left( k+1/2 \right) }{\sqrt {\pi }} ,
+ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m+\alpha+1)} {\left(\frac{x}{2}\right)}^{2m+\alpha}.  
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\int_{0}^{1}\arcsin\pars{x}\sin\pars{{\pi \over 2}\,x}\,\dd x:\ {\large ?}}
+\color{#00f}{\large\int_{0}^{1}\arcsin\pars{x}\sin\pars{{\pi \over 2}\,x}\,\dd x = {\rm J}_{0}\pars{\pi \over 2}} \approx 0.4720 

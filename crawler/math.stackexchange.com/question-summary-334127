@@ -1,0 +1,17 @@
+a >0
+\frac{\sin(ax)}{x}
+\int_{-\infty}^{\infty} \cos(kx) \sin(ax) \frac{dx}{x}. 
+\cos(kx)\sin(ax) = \frac{\sin((a-k)x)}{2}+\frac{\sin((a+k)x)}{2}
+\int_{\Bbb{R}}\frac{\cos(kx)\sin(ax)}{x}dx = \int_{\Bbb{R}}\frac{\sin((a-k)x)+\sin((a+k)x)}{2x} ~~dx
+\mathcal{L}[\sin(ax)](s) = \frac a {s^2 +a^2},
+\mathcal{L} 
+\int_{\Bbb{R}^+}\frac{f(t)}{t} = \int_{\Bbb{R}^+}\mathcal{L}\{f\}
+\int_{\Bbb{R}}\frac {\sin(ax)}{x} = \int_{\Bbb{R}}\frac a {x^2 + a^2} = \arctan(\frac x a)\Big|_{-\infty}^\infty = \pi \operatorname{sgn}(a)
+\frac{\pi(\operatorname{sgn}(a-k)+\operatorname{sgn}(a+k))}2
+f(x)\longmapsto \hat{f}(\omega)=\int_{-\infty}^\infty e^{-i\omega x}f(x)\,dx.
+\sin(ax)
+-ix
+\delta(\omega)
+\sin(ax)=\frac{1}{2i}(e^{iax}-e^{-iax})\longmapsto\hat{f}(\omega)=\frac{1}{2i}(2\pi\delta(\omega-a)-2\pi\delta(\omega+a))=\frac{\pi}{i}(\delta(\omega-a)-\delta(\omega+a)),
+H(\omega)
+g(x)=\frac{\sin(ax)}{x}\longmapsto \hat{g}(\omega)=-\pi\int_{-\infty}^\omega (\delta(u-a)-\delta(u+a))\,du=\pi(H(\omega+a)-H(\omega-a)),

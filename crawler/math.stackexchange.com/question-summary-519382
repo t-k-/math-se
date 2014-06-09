@@ -1,0 +1,30 @@
+f'(x)
+f(x-h), f(x)
+f(x+3h)
+f(x+h)  =f(x)+hf'(x)+h^2f''(x)/2+h^3f'''(x)/6+... 
+f(x-h)  =f(x)-hf'(x)+h^2f''(x)/2-h^3f'''(x)/6+... 
+f(x+3h)  =f(x)+3hf'(x)+9h^2f''(x)/2+27h^3f'''(x)/6+... 
+f(x), f(h-x)
+f(x+3h)
+f'(x)
+g(x) =af(x)+bf(x-h)+cf(x+3h) 
+g(x) =(a+b+c)f(x) +(-b+3c)hf'(x) +(b+9c)h^2f''(x)/2 +(-b+27c)h^3f'''(x)/6 +... 
+a+b+c=0
+-b+3c = 1
+b+9c=0
+g(x) =hf'(x)+O(h^3)
+\frac{g(x)}{h} = f'(x) + O(h^2) 
+c = 1/12
+b = -3/4
+a = 2/3
+-b+27c =-3/4+27/12 =-9/12+27/12 =18/12 =3/2 
+\begin{align} \dfrac{\frac{2}{3}f(x)-\frac{3}{4}f(x-h)+\frac1{12}f(x+3h)}{h} &=\dfrac{g(x)}{h}\\ &=f'(x)+h^2f''(x)(3/2)/6+O(h^3)\\ &=f'(x)+h^2f''(x)/4+O(h^3)\\ \end{align} 
+\alpha+\beta+\gamma = 0
+3\gamma - \alpha = 1
+\alpha + 9\gamma = 0
+12\gamma = 1
+\gamma = \frac 1{12}
+\alpha = -\frac 34
+\beta = \frac 23
+ \frac 1h \bigl(\alpha f(x-h) + \beta f(x) + \gamma f(x+3h)\bigr)    = \frac 1h (\alpha + \beta + \gamma)f(x) + (3\gamma - \alpha)f'(x) + \frac h2(\alpha + 9\gamma)f''(x) + O(h^2) 
+ f'(x) = \frac{-9f(x-h) + 8f(x) + f(x+3h)}{12 h} + O(h^2)

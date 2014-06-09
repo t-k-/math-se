@@ -1,0 +1,24 @@
+\mu
+x
+y
+y|x
+\exp(x)
+p(y|x) = x\exp(-xy)
+y > 0
+x|\mu
+\exp(\mu)
+p(x|\mu) = \mu\exp(-\mu x)
+x > 0
+\mu
+y
+\hat{\mu}(y)
+p(y|\mu)
+\begin{align} p(y|\mu) &= \int_x p(y|x,\mu)p(x|\mu)\; \mathrm dx      \\ &= \int_x p(y|x)p(x|\mu)\; \mathrm dx \\  &= \int_0^\infty x\mu \exp(-x(y+\mu))\; \mathrm dx \\ &= \frac{y}{(y+\mu)^2} \\ \end{align}
+p(y|\mu)
+\mu = y
+\hat{\mu}(y) = y
+\begin{align}Bias(\hat{\mu}(y)) &= \mathbb{E}_y[\hat{\mu}(y) - \mu] \\ &= \int_y (\hat{\mu}(y) - \mu)p(y|\mu)\; \mathrm dy  \\ &= \int_0^\infty (y - \mu)\frac{y}{(y+\mu)^2}\; \mathrm dy   \\ &= \infty \\ \end{align}
+p(y|\mu)
+1/y
+p(y|\mu) = \frac{\mu}{(y+\mu)^2} \hspace{1cm} (y \ge 0)
+p(y|x,\mu) = p(y|x)

@@ -1,0 +1,7 @@
+y=\beta X +\epsilon
+\epsilon \sim \text{ Normal}(o,\sigma^2I_n)
+\beta \sim \text{ Normal}( \beta_0, k(X^TX)^{-1})
+\beta
+p(\beta) \propto \exp \{-\frac{1}{2} k^{-1} (\beta^TX^TX\beta-2\beta^TX^TX\beta_0) \} 
+p(\beta | y,X,\sigma^2) \propto p(y|X,\beta, \sigma^2)\cdotp(\beta) 
+p(\beta|y,X,\sigma^2) \propto \exp\{-\frac{1}{2}(k^{-1}+\sigma^{-2})\beta^TX^TX\beta -2\beta^TX^TX\beta_0 \}

@@ -1,0 +1,12 @@
+(7)
+s\to is
+x
+ P_x(is)=\sum_{p<x} \frac{1}{p^{is}} = \sum_{p<x} \exp(-is\ln p) 
+ \begin{eqnarray} \int_{-\infty}^\infty P_x(is)\exp(i2\pi s \omega) ds &=&\sum_{p<x} \int_{-\infty}^\infty \exp(-is\ln p) \exp(i2\pi s \omega)ds \\ &=&\sum_{p<x} \int_{-\infty}^\infty \exp\biggr(is(2\pi  \omega-\ln p)\biggr) ds\\ &=&\sum_{p<x}\delta( \omega -\ln p)\tag{8} \end{eqnarray} 
+{\bf r}\text{abbit's } {\bf h}\text{ole} {\bf s}
+(7)
+ \begin{eqnarray} \color{green}{\int_{-\infty}^\infty ds e^{i2\pi s \omega}}P_x(is)  &=& \sum_{n=1}^{\infty}\frac{ \mu (n)}{n} \sum_{z\in\{1,\rho\}}(-1)^{1-\delta_{1z}} \underbrace{ \left( \color{green}{\int_{-\infty}^\infty ds e^{i2\pi s \omega}} \left[{\rm li}(t^{\frac zn-s}) \right]^{x}_2 \right) }_{\uparrow} \tag{9} \end{eqnarray} 
+\sum_{n=1}^{\infty}\frac{ \mu (n)}{n} \sum_{z\in\{1,\rho\}}(-1)^{1-\delta_{1z}}
+{\rm li}(x^y)
+{\rm li}(z)={\rm Ei}(\ln z)
+ \begin{eqnarray} \int_{-\infty}^\infty \exp(2\pi i\omega y){\rm li}(x^{y}) dy&=& \int_{-\infty}^\infty \exp(2\pi i\omega y){\rm Ei}(y\ln x) dy\\  &=&\left[\frac{\exp(2\pi i\omega y)}{2\pi i\omega}{\rm Ei}(y\ln x)\right]_{-\infty}^{\phantom{-}\infty} -\int_{-\infty}^\infty \exp(2\pi i\omega y)\frac{\exp(y\ln x)}{y} dy\\  &=&\left[\frac{\exp(2\pi i\omega y)}{2\pi i\omega}{\rm Ei}(y\ln x)\right]_{-\infty}^{\phantom{-}\infty} -\frac{{\rm Ei}\biggr(y(2\pi i \omega-\ln x)\biggr)}{2\pi i\omega}, \end{eqnarray} 

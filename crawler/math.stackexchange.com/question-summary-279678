@@ -1,0 +1,27 @@
+ \lim _{\alpha \rightarrow \infty } \sup_{t \in \left [0,T \right]} \left | e^{-\alpha t} \int _ 0 ^t e^{\alpha s} ~ dB_s \right | =0, \ \ \text{a.e.} 
+\left (B_s \right)_{s\geq 0}
+\left ( \int _ 0 ^t e^{\alpha s} ~ dB_s \right)_{t\geq 0}
+ \mathcal N \left(0,\int _ 0 ^t e^{2\alpha s} ~ ds \right)
+\left ( e^{-\alpha t}\int _ 0 ^t e^{\alpha s} ~ dB_s \right)_{t\geq 0}
+C>0
+\{X_t,t\geq 0\}
+\{B_{C_t},t\geq 0\}
+X_t = \int_0^{t}e^{\alpha s}dB_s
+ C_t = \int_0^t e^{2\alpha s}ds = \frac{e^{2\alpha t}-1}{2\alpha}. 
+\mathcal C^1
+[0,T]
+[0,T]
+t\mapsto B_t
+\epsilon >0
+\left ( B_t ^\epsilon\right)_{t \in \left[0,T \right] }
+\mathcal C^1
+\sup _ {t \in \left[0,T \right] } \left | B_t-B_t^\epsilon\right | < \epsilon.
+ \int_0 ^t  e^{\alpha s} ~dB_s = e^{\alpha t}B_t - \int_0 ^t B_s \alpha e^{\alpha s}ds
+ \int_0 ^t  e^{\alpha s} ~dB_s ^\epsilon= e^{\alpha t}B_t ^\epsilon - \int_0 ^t B_s  ^\epsilon \alpha e^{\alpha s}ds\qquad\text{a.s.}
+\left |e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s - e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s ^\epsilon\right| \leq 2\epsilon\qquad\text{a.s.} 
+t\in[0,T]
+\epsilon\gt0
+  \left| e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s ^\epsilon\right|\le\frac {\left \| \dot{B^\epsilon}\right\|_\infty }{\alpha} \left( 1 - e^{-\alpha t} \right)\le\frac {\left \| \dot{B^\epsilon}\right\|_\infty }{\alpha}\qquad\text{a.s.} 
+  \sup _ {t \in \left[0,T \right] }\left |e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s \right| \leq 2\epsilon+\frac {\left \| \dot{B^\epsilon}\right\|_\infty }{\alpha}\qquad\text{a.s.} 
+ \limsup_{\alpha\to\infty} \sup _ {t \in \left[0,T \right] }\left |e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s \right| \leq 2\epsilon\qquad\text{a.s.} 
+ \lim_{\alpha\to\infty} \sup _ {t \in \left[0,T \right] }\left |e^{-\alpha t}\int_0 ^t  e^{\alpha s} ~dB_s \right| =0\qquad\text{a.s.} 

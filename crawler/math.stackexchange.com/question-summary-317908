@@ -1,0 +1,16 @@
+attendees\left(j\right) = \sum_{i=0}^{1000} attend_{i,j}
+Savings\left(j\right) = \left(\left(\left|\frac{attendees\left(j\right)}{attendees\left(j\right)}\right| \cdot \left(-1\right)\right) + 1 \right) * p_{j}
+0
+p_{j}
+\sum_{j=0}^{8} Savings\left(j\right)
+\sum_{i=0}^{1000} sum_{j=0}^{8} attend_{i,j} \cdot c_{i,j}
+\left(\sum_{i=0}^{1000} \sum_{j=0}^{8} attend_{i,j} \cdot c_{i,j}\right) - \left(\sum_{j=0}^{8} Savings\left(j\right)\right)
+y_j=1
+> 0
+1-y_j
+1/300
+y_j
+y_j = 0
+ x_{ij} = \begin{cases} 1 & \text{if child } i \text{ attends school } j \\ 0 & \text{otherwise.} \end{cases} 
+ y_j = \begin{cases} 1 & \text{if } \sum_i x_{ij} = 0 \\ 0 & \text{otherwise.} \end{cases} 
+ \sum_i \sum_j x_{ij} c_{ij} - \sum_j y_j p_j. 

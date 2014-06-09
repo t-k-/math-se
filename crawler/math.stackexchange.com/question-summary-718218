@@ -1,0 +1,17 @@
+X \in Bin(n,p)
+K
+\mu
+\{1,...,m\}
+m \leq n
+G(n)
+G(n):=P[X  \geq  K]
+G(n)=P[X  \geq K]= \sum_{k=1}^m P[X \geq  k] P[K=k] = E[P[X \geq K]] = E[ \sum_{k=K}^n {{n} \choose {k}} p^k (1-p)^{n-k} ]
+\sum_{k=\mu}^n {{n} \choose {k}} p^k (1-p)^{n-k} = P[X \geq \mu]
+E[\sum_{k=K} ...]
+\sum_{k=\mu} ...
+\mu
+G(n)=E[b_n(K)]
+ G(n)=E\left[ \sum_{k=K}^n a_n(k) \right],\qquad a_n(k)={n\choose k} p^k (1-p)^{n-k}. 
+ \sum_{k=0}^n a_n(k)\mathbf 1_{K\leqslant k}, 
+ G(n)=\sum_{k=0}^n a_n(k)P(K\leqslant k). 
+ b_n(i)=\sum_{k=i}^na_n(k). 

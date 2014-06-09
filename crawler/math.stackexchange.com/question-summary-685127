@@ -1,0 +1,34 @@
+\int_{-\infty}^\infty x e^{\frac{-x^2}{2}} dx
+-e^{\frac{-x^2}{2}}\mid_{-\infty}^\infty
+u
+u=-\frac{x^2}{2}
+du=-x\,dx
+ \int -e^u\, du. 
+u=x^2/2
+du=xdx
+ \int xe^{-x^2/2} dx = \int e^{-u} du = -e^{-u} 
+x
+x
+k
+k = 0
+I(0) = \sqrt{\pi/2}
+k = 1
+k
+u = x^{k-1}
+du = (k-1)x^{k-2} \, dx
+dv = x e^{-x^2/2} \, dx
+v = -e^{-x^2/2}
+v
+I(1)
+k = 2n
+f(2n;x) = f(2n;-x)
+k = 2n+1
+f(2n+1;x) = -f(2n+1;x)
+I(k) = \int_{x=0}^\infty f(k;x) \, dx, \quad f(k;x) = x^k e^{-x^2/2}.
+\int_{x=0}^\infty \int_{y=0}^\infty e^{-(x^2+y^2)/2} \, dy \, dx.
+u = x^2/2, \quad du = x \, dx
+I(1) = \int_{u=0}^\infty e^{-u} \, du = \lim_{L \to \infty} \left[ -e^{-u} \right]_{u=0}^L = 0 - (-1) = 1.
+\begin{align*} I(k) &= \lim_{L \to \infty} \left[ -x^{k-1} e^{-x^2/2} \right]_{x=0}^L + (k-1) \int_{x=0}^\infty x^{k-2} e^{-x^2/2} \, dx \\ &= (k-1) I(k-2).\end{align*}
+\begin{align*} I(2n) &= \sqrt{\frac{\pi}{2}} \prod_{j=1}^n (2j-1) = \sqrt{\frac{\pi}{2}} \frac{(2n)!}{2^n n!}, \\ I(2n+1) &= \prod_{j=1}^n 2j = 2^n n!. \end{align*}
+\int_{x=-\infty}^\infty f(2n;x) \, dx = 2I(2n).
+\int_{x=-\infty}^\infty f(2n+1;x) \, dx = 0.

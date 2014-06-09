@@ -1,0 +1,22 @@
+p
+\sum\frac{1}{p}
+\left(1+\frac{1}{p}\right)\sum_{k=0}^n\frac{1}{p^{2k}}=\sum_{k=0}^{2n+1}\frac{1}{p^k}
+\prod_{p<N}\left(1+\frac{1}{p}\right)\sum_{k<N}\frac{1}{k^2}\ge\sum_{n<N}\frac{1}{n}.
+p
+n \neq 0
+v_p(n) = \max \{ k \geqslant 0 : p^k \mid n\}
+0 < m \leqslant N
+\mathbb{P}
+S(m,N) := \bigl\{ k: 1 \leqslant k < N,\; \bigl(\forall p \in \mathbb{P}\bigr) \bigl(p \geqslant m \Rightarrow v_p(k) \equiv 0 \pmod{2}\bigr)\bigr\}.
+S(2,N)
+< N
+\sum_{n \in S(2,N)} \frac1n \leqslant \sum_{k<N} \frac{1}{k^2},
+S(N,N) = \{n : 1 \leqslant n < N\}
+S(p_k,N) \cup p_k\cdot S(p_k,N) \supset S(p_{k+1},N),
+n \in S(p_{k+1},N)
+v_{p_k}(n) \equiv 0 \pmod{2}
+n \in S(p_k,N)
+v_{p_k}(n) \equiv 1 \pmod{2}
+n/p_k \in S(p_k,N)
+\left(1 + \frac{1}{p_k}\right)\sum_{n \in S(p_k,N)} \frac1n = \sum_{n \in S(p_k,N) \cup p_k\cdot S(p_n,N)} \frac1n \geqslant \sum_{n\in S(p_{k+1},N)} \frac1n,
+\begin{align} \prod_{j=1}^{\pi(N-1)}\left(1 +\frac{1}{p_j}\right)\sum_{k < N} \frac{1}{k^2} &\geqslant \prod_{j=1}^{\pi(N-1)}\left(1 +\frac{1}{p_j}\right)\sum_{n \in S(2,N)} \frac1n\\ &\geqslant \prod_{j=2}^{\pi(N-1)}\left(1 +\frac{1}{p_j}\right)\sum_{n \in S(p_2,N)} \frac1n\\ &\geqslant \dotsb\\ &\geqslant \sum_{n\in S(p_{\pi(N-1)+1},N)} \frac1n\\ &= \sum_{n < N} \frac1n. \end{align}

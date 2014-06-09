@@ -1,0 +1,10 @@
+u(z_1,z_2)=\left (-\log\left | z_1 \right |  \right )^\alpha\cdot \left ( \left | z_2 \right |^2-1 \right )
+\alpha \in \left (0,1 \right )
+\alpha \ge \dfrac{1}{2}
+I=\bf\int_{{B(0,\epsilon)}\setminus \{z_1=0\}}\det\left(\text{Hessian}_u(z)\right)\mathrm{d}V=\infty
+I=\int_{{B(0,\epsilon)}\setminus \{z_1=0\}}\dfrac{\alpha(-\log\left | z_1 \right |)^{2\alpha-2}(1-\alpha-\left | z_2 \right |^2) }{4\left | z_1 \right |^2}\mathrm{d}V
+\dfrac{1}{2}\le \alpha <1
+I=\int_{{B(0,\epsilon)}\setminus \{z_1=0\}}\dfrac{\alpha(-\log\left | z_1 \right |)^{2\alpha-2}(1-\alpha-\left | z_2 \right |^2) }{4\left | z_1 \right |^2}\mathrm{d}V=\infty
+z=(z_1,z_2) \in {B(0,\epsilon)}\setminus \{z_1=0\} \implies \left | z \right |^2=\left | z_1 \right |^2+\left | z_2 \right |^2 < \epsilon^2
+1-\alpha-\left | z_2 \right |^2>1-\alpha-\epsilon^2+\left | z_1 \right |^2
+\begin{align*}\\ I&=\int_{{B(0,\epsilon)}\setminus \{z_1=0\}}\dfrac{\alpha(-\log\left | z_1 \right |)^{2\alpha-2}(1-\alpha-\left | z_2 \right |^2) }{4\left | z_1 \right |^2}\mathrm{d}V\\ &> \int_{{B(0,\epsilon)}\setminus \{z_1=0\}}\dfrac{\alpha(-\log\left | z_1 \right |)^{2\alpha-2}(1-\alpha-\epsilon^2+\left | z_1 \right |^2) }{4\left | z_1 \right |^2}\mathrm{d}V \end{align*}

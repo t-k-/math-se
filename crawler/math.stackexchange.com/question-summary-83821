@@ -1,0 +1,33 @@
+f(x,y)
+g(x)
+h(x) := f(x,g(x))
+h'(x)
+x
+x
+t
+z=f(x,y)
+x=t
+y=g(t)
+\frac{dz}{dt} = \frac{\partial z}{\partial x}\frac{dx}{dt} + \frac{\partial z}{\partial y}\frac{dy}{dt} = f_x(t,g(t)) \cdot 1 + f_y(t,g(t)) \cdot g'(t)
+H(u,v) = f(x(u,v),y(u,v))
+x
+y
+u
+v
+f
+\begin{align*} \frac{\partial H}{\partial u} &= \frac{\partial f}{\partial x}\,\frac{\partial x}{\partial u} + \frac{\partial f}{\partial y}\,\frac{\partial y}{\partial u},\\ \frac{\partial H}{\partial v} &= \frac{\partial f}{\partial x}\,\frac{\partial x}{\partial v} + \frac{\partial f}{\partial y}\,\frac{\partial y}{\partial v}. \end{align*}
+\begin{array}{ccccccccc}   &  &  &  &  &  f\\   &  &  &  & \swarrow & & \searrow\\   &  &  & x &         & &  & y\\   &  &\swarrow &  & \searrow & & \swarrow & & \searrow\\   & u &  & & & v & u & & & v \end{array}
+x
+y
+x
+\frac{\partial f}{\partial g}
+f
+y
+y
+g(x)
+\frac{\partial f}{\partial x}
+x
+y
+y
+g(x)
+H'(x) = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y}\frac{dy}{dx} = \frac{\partial f}{\partial x} + \frac{\partial f}{\partial g}\frac{dg}{dx},

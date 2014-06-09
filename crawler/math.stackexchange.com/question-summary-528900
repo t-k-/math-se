@@ -1,0 +1,15 @@
+{80 \choose k}{ k+1 \choose 31}
+\frac{80!}{k!(80-k)!} \cdot \frac{(k+1)!}{31!(k-30)!}
+(k+1)!
+k!
+k+1
+50!
+(k+1)\frac{80!\cdot50!}{50!\cdot(80-k)!\cdot31!\cdot(k-30)!}=(k+1)\binom{50}{80-k}\frac{80!}{50!\cdot31!}
+31
+31!
+(k+1)\binom{50}{80-k}\binom{80}{50}\frac{1}{31}
+k\mapsto80-k
+(81-k)\binom{50}{k}\binom{80}{50}\frac{1}{31}
+k
+\frac{1}{31}\binom{80}{50}\sum_{k=0}^{k=50}(81-k)\binom{50}{k}
+\frac{1}{31}\binom{80}{50}\left(81\cdot2^{50}-50\cdot2^{49}\right)=\frac{1}{31}\binom{80}{50}\cdot2^{49}\cdot112=\frac{112\cdot2^{49}}{31}\binom{80}{50}

@@ -1,0 +1,13 @@
+ {\rm T}\left(n\right) ={\rm T}\left(\left\lfloor{n \over 2}\right\rfloor\right) +{\rm T}\left(\left\lfloor{n \over 4}\right\rfloor\right) +{\rm T}\left(\left\lfloor{n \over 8}\right\rfloor\right) +n 
+T(k) \leq Ck
+k<n
+C \geq 8
+C = 8
+T(0) \leq 8n
+T(n) \leq 8n
+T(n) \geq cn
+c
+T(n) \geq n
+ \begin{align} T(n) &=  T\left(\left\lfloor{n \over 2}\right\rfloor\right) +T\left(\left\lfloor{n \over 4}\right\rfloor\right) +T\left(\left\lfloor{n \over 8}\right\rfloor\right) +n\\ & \leq C\left(\left\lfloor{n \over 2}\right\rfloor\right) +C\left(\left\lfloor{n \over 4}\right\rfloor\right) +C\left(\left\lfloor{n \over 8}\right\rfloor\right) +n\\ & \leq C\left({n \over 2}\right) +C\left({n \over 4}\right) +C\left({n \over 8}\right) +n\\ &= \frac{7}{8}C\,n + n = \left(\frac{7}{8} C + 1\right)n \leq Cn \end{align} 
+ T(0) = 3T(0) + 0 \implies T(0) = 0 
+ T(n) = O(n) 

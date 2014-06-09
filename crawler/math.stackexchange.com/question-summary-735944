@@ -1,0 +1,11 @@
+n \gg 1, s \gg 1, t \ll n, t \ll s.
+t\ll n-s
+t
+n-s
+s
+t=o(s^{2/3})
+t=o\left((n-s)^{2/3}\right)
+ \begin{align} \log\left(\left[1-\tfrac1s\right]\left[1-\tfrac2s\right]\cdots\left[1-\tfrac{t-1}s\right]\right) &=-\left(\tfrac1s+\tfrac2s+\dots+\tfrac{t-1}s\right)+O\left(\frac{t^3}{s^2}\right)\\ &=-\frac{t(t-1)}{2s}+O\left(\frac{t^3}{s^2}\right) \end{align} 
+ \begin{align} \log\left(\left[1-\tfrac1{n-s}\right]\left[1-\tfrac2{n-s}\right]\cdots\left[1-\tfrac{t-1}{n-s}\right]\right) &\sim-\left(\tfrac1{n-s}+\tfrac2{n-s}+\dots+\tfrac{t-1}{n-s}\right)+O\left(\frac{t^3}{(n-s)^2}\right)\\ &=-\frac{t(t-1)}{2(n-s)}+O\left(\frac{t^3}{(n-s)^2}\right) \end{align} 
+ \begin{align} &\log\left(\frac{\left[1-\tfrac1s\right]\left[1-\tfrac2s\right]\cdots\left[1-\tfrac{t-1}s\right]}{\left[1-\tfrac1{n-s}\right]\left[1-\tfrac2{n-s}\right]\cdots\left[1-\tfrac{t-1}{n-s}\right]}\right)\\[6pt] &=\frac{t(t-1)}2\frac{2s-n}{s(n-s)}+O\left(\frac{t^3}{s^2}\right)+O\left(\frac{t^3}{(n-s)^2}\right) \end{align} 
+ \frac{\left[1-\tfrac1s\right]\left[1-\tfrac2s\right]\cdots\left[1-\tfrac{t-1}s\right]}{\left[1-\tfrac1{n-s}\right]\left[1-\tfrac2{n-s}\right]\cdots\left[1-\tfrac{t-1}{n-s}\right]} \sim\exp\left(\frac{t(t-1)}2\frac{2s-n}{s(n-s)}\right) 

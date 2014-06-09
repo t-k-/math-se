@@ -1,0 +1,14 @@
+L(f)(s)
+f(t)=t\int_0^{t} \tau e^{-\tau}
+\tau
+t
+t/s*L[t*e^{-t}]
+ f(t)=t\int_0^{t} \tau e^{-\tau} = t g(t), 
+ \mathcal{L} \left(\int_{0}^{t} h(\tau) d\tau \right)(s) = \frac{H(s)}{s}, 
+H(s)
+h
+ \mathcal{L}( t^n g(t) ) = (-1)^n G^{(n)}(s), 
+G(s)
+g(t)
+\int_0^t d\tau \, \tau \, e^{-\tau} = \left [-\tau \, e^{-\tau} \right ]_0^t + \int_0^t d\tau \, e^{-\tau} = 1-(1+t) e^{-t}
+\begin{align}\int_0^{\infty} dt \, f(t) \, e^{-s t} &= \int_0^{\infty} dt \, t \, e^{-s t} - \int_0^{\infty} dt \,(t+t^2) e^{-(s+1) t}\\ &= \frac1{s^2} - \frac1{(s+1)^2}-\frac{2}{(s+1)^3}\end{align}

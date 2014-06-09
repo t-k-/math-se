@@ -1,0 +1,31 @@
+f(x,y,z)=xyz \: wrt, h_1(x,y,z)=x+y+z-45=0,\: h_2(x,y,z)= 2x-y=0
+\bigtriangledown f(x,y,z)= \lambda_1h_1(x,y,z) + \lambda_2h_2(x,y,z) 
+yz= \lambda_1 +2\lambda_2 \\xy = \lambda_1 - \lambda_2 \\xy = \lambda_1 \\x+y+z = 45\\y=2x
+\displaystyle \begin{align} 	\underset{x,y,z}{\text{minimize}} \quad & f(x,y,z) = xyz 	\\ 	\\ \text{subject to} \quad & h_1(x,y,z) = x+y+z - 45 = 0 	\\ & h_2(x,y,z) = 2x - y = 0 \end{align}
+\displaystyle \begin{align} 	\nabla f(x, y, z) - \sum_{k = 1}^{M} \lambda_k \nabla h_k(x,y,z) & = 0 \\ 	\nabla f(x, y, z) & = \lambda_1 \nabla h_1(x,y,z) + \lambda_2 \nabla h_1(x,y,z) \\ 	\begin{pmatrix} yz \\ xz \\ xy \end{pmatrix} & = \lambda_1 \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} + \lambda_2 \begin{pmatrix} 2 \\ -1 \\ 0 \end{pmatrix} \end{align}
+yz = \lambda_1 + 2 \lambda_2
+xz = \lambda_1 - \lambda_2
+xy = \lambda_1
+2x = y
+x + y + z = 45
+2xz = \lambda_1 + 2 \lambda_2
+2x^2 = \lambda_1
+3x + z = 45
+x = \pm \frac{\sqrt{2}}{2} \sqrt{\lambda_1}
+y = \pm \sqrt{2} \sqrt{\lambda_1}
+z = 45 \mp 3 \frac{\sqrt{2}}{2} \sqrt{\lambda_1}
+\lambda_1 = 0
+(x, y, z) = (0, 0, 45)
+h_2
+y=2x
+h_1
+z=45-x-y=45-x-2x=45-3x
+f(x,y,z)
+f'(x)=-18x^2+180x
+x=0
+x=10
+f''(x)
+x=0
+y=0
+z=45
+f(x,y,z) = xyz = x2x(45-3x)=2x^2(45-3x)=-6x^3+90x^2=f(x)

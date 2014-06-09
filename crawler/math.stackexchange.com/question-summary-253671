@@ -1,0 +1,17 @@
+\lim_{n\to\infty}\int_0^1\frac{dx}{(1+x/n)^n}=1-\exp(-1)
+n>1
+\int_0^1\frac{dx}{(1+x/n)^n}=\int_0^1\left(1+\frac{x}n\right)^{-n}dx=\left[\frac{n}{n+1}\left(1+\frac{x}n\right)^{-n+1}\right]_0^1\;;
+u=1+ \frac{x}{n}
+du=\frac{dx}{n}
+n>1
+\int\frac{dx}{(1+\frac{x}{n})^n}=n\int\frac{du}{u^n}=\frac{n}{1-n}u^{-n+1}=\frac{n}{1-n}(1+\frac{x}{n})^{-n+1}
+n\to \infty
+\frac{n}{1-n}=\frac{1}{\frac1n-1}\to -1
+e=\lim_{n\to \infty}(1+\frac{1}{n})^{n}
+\int_0^1\frac{dx}{(1+\frac{x}{n})^n}=\frac{n}{1-n}(1+\frac{1}{n})^{-n+1}-\frac{n}{n-1}
+\frac {1}{(1+x/n)^n}
+g
+g(x)=1
+x\in [0,1]
+\int_0^1\frac{dx}{\left(1+\frac{x}{n}\right)^n}=n\int_0^1\left(1+\frac{x}{n}\right)^{-n}\left(\frac{1}{n}dx\right)=\left.\frac{n}{1-n}\left(1+\frac{x}{n}\right)^{1-n}\;\right|_0^1=
+=\frac{n}{1-n}\left[\left(1+\frac{1}{n}\right)^{1-n}-1\right]=\frac{n}{1-n}\left(\left(1+\frac{1}{n}\right)\left(\left(1+\frac{1}{n}\right)^n\right)^{-1}-1\right)\xrightarrow [n\to\infty]{} (-1)\left(1\cdot e^{-1}-1\right)=1-e^{-1}

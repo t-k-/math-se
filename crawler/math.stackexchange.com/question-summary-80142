@@ -1,0 +1,12 @@
+G=(V,E)
+s,t \in V
+V / 2  
+s
+t
+< V/2+1
+< V/2
+V' = \{s, t\} \cup \{ v_+, v_- | v \neq s, t\}
+E' = \{(x_-, y_+) | xy \in E\} \cup \{(x_+, x_-)| \{x_+, x_-\} \subset V' \} \cup \{(s, x_+)|sx \in E\} \cup        \{(x_-, t) | xt \in E\}
+s
+t
+x_+\rightarrow x_-

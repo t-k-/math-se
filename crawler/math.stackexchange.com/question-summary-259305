@@ -1,0 +1,39 @@
+(x_n)_{n \in \mathbb{N}}
+s_n = 2^{n+1}-7x_{n-1}^2, n > 0
+ x_0 = 0\\ x_1 = 1\\ x_{n+2}+x_{n+1}+2x_{n}=0 
+s_n
+x_{n-2}
+x_{n-3}
+ x_2=-1\\ x_3=-1\\ x_4=3\\ x_5=-1\\ x_6=-5\\ x_7=7\\ x_8=3\\ x_9=-17\\ 
+ s_1 = 2^2\\ s_2 = 1^2\\ s_3 = 3^2\\ s_4 = 5^2\\ s_5 = 1^2\\ s_6 = 11^2\\ s_7 = 9^2\\ 
+ x_{n-1} = -x_{n-2}-2x_{n-3}, n > 3\\ x_{n-1}^2=x_{n-2}^2 + 4x_{n-3}^2 + 4x_{n-2}x_{n-3}\\ 
+ x_{n-2}^2=x_{n-3}^2 + 4x_{n-4}^2 + 4x_{n-3}x_{n-4}\\ x_{n-3}^2=x_{n-4}^2 + 4x_{n-5}^2 + 4x_{n-4}x_{n-5}\\ 
+ x_{n-1}^2=x_{n-3}^2 + 4x_{n-4}^2 + 4x_{n-3}x_{n-4}+4x_{n-3}^2 + 4x_{n-2}x_{n-3}\\ x_{n-1}^2=5x_{n-3}^2 + 4x_{n-4}^2 + 4x_{n-2}x_{n-3} + 4x_{n-3}x_{n-4} \\ x_{n-1}^2=5(x_{n-4}^2 + 4x_{n-5}^2 + 4x_{n-4}x_{n-5}) + 4x_{n-4}^2 + 4x_{n-2}x_{n-3} + 4x_{n-3}x_{n-4}\\ x_{n-1}^2=9x_{n-4}^2 + 20x_{n-5}^2 +  4x_{n-2}x_{n-3} + 4x_{n-3}x_{n-4} + 20x_{n-4}x_{n-5}\\ 
+x_n
+A
+B
+\lambda_\pm
+x^2 + x + 2
+x_0 = 0
+x_1 = 1
+A
+B
+x_n
+\lambda_+\lambda_- = 2
+\lambda_+\lambda_- = 2
+\lambda_+^{n-1} + \lambda_-^{n-1}
+\alpha_n = \lambda_+^n + \lambda_-^n
+n
+\alpha_0 = 2
+\alpha_1 = -1
+\alpha_{n+2} + \alpha_{n+1} + 2\alpha_n = 0
+n\geq 2
+\alpha_n
+n
+x_n = A\lambda_+^n + B\lambda_-^n,
+\lambda_\pm = \frac{-1 \pm i\sqrt{7}}{2}.
+ A = -B = \frac{-i}{\sqrt{7}}.
+ x_n = \frac{-i}{\sqrt{7}}(\lambda_+^n - \lambda_-^n).
+s_n = 2^{n+1} - 7x_{n-1}^2 = 2^{n+1} + (\lambda_+^{n-1} - \lambda_-^{n-1})^2 = 2^{n+1} + \lambda_+^{2(n-1)} + \lambda_-^{2(n-1)} - 2(\lambda_+\lambda_-)^{n-1}.
+s_n = \lambda_+^{2(n-1)} + \lambda_-^{2(n-1)} + 2^n.
+s_n = \lambda_+^{2(n-1)} + \lambda_-^{2(n-1)} + 2(\lambda_+\lambda_-)^{n-1} = (\lambda_+^{n-1} + \lambda_-^{n-1})^2.

@@ -1,0 +1,36 @@
+\sum_{i=0}^m [w^{(i)}[(c-a^{(i)})-\frac{d^{(i)}(c-a^{(i)})\cdot d^{(i)}}{dis^2}]]=0
+a,b
+d
+d=b-a
+|d|=dis
+a,b
+a,d
+a^{(i)},d^{(i)}
+dis
+3
+\cdot
+c-a
+d
+w^{(i)}
+a^{(i)}
+d^{(i)}
+c
+i
+0
+m
+a^{(i)},b^{(i)}
+(x_1,y_1,z_1)^{(i)},(x_2,y_2,z_2){(i)}
+c
+(x_0,y_0,z_0)
+[A][X] = [B]
+X
+c
+(x_0,y_0,z_0)
+\bar{d}_i
+d_i
+c-a_i
+a_i
+Ax=b
+ \sum_{i=1}^n w_i\left(\begin{bmatrix} | \\ (c-a_i)\\ | \end{bmatrix} - \begin{bmatrix} | \\ \bar{d}_i\\ | \end{bmatrix}\begin{bmatrix} - &d_i^T&- \end{bmatrix} \begin{bmatrix} | \\ (c-a_i)\\ | \end{bmatrix} \right)=0 
+ \sum_{i=1}^n w_i \underbrace{\left( I - \begin{bmatrix} | \\ \bar{d}_i\\ | \end{bmatrix}\begin{bmatrix} - &d_i^T&- \end{bmatrix} \right)}_{P_i}\begin{bmatrix} | \\ (c-a_i)\\ | \end{bmatrix}=0 
+ \underbrace{\begin{bmatrix} w_1I &w_2I &\dots w_nI \end{bmatrix} \begin{bmatrix} P_1\\P_2\\ \vdots \\P_n \end{bmatrix}}_{A}\underbrace{\begin{bmatrix}|\\c\\|\end{bmatrix}}_{x} =  \underbrace{\begin{bmatrix} w_1I &w_2I &\dots w_nI \end{bmatrix} \begin{bmatrix} P_1 & & \\ &P_2\\ &&\ddots \\&&&P_n \end{bmatrix} \begin{bmatrix} a_1\\a_2\\ \vdots \\a_n \end{bmatrix}}_{b} 

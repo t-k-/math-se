@@ -1,0 +1,29 @@
+x=\rho\cos\varphi
+y=\rho\sin\varphi
+z=z
+g_{ij}=diag(1,1,1)
+g^{ij}=g_{ij}
+dx^{2}=\left[d(\rho\cos\varphi)\right]^{2}
+\tilde{g}_{ij}=diag(1,\rho^{2},1)
+\tilde{g}^{ij}=diag(1,\frac{1}{\rho^{2}},1)
+ ds^{2}=g_{ij}dx^{i}dx^{j}=\tilde{g}_{ij}d\tilde{x}^{i}d\tilde{x}^{j} 
+ ds^{2}=dx^{2}+dy^{2}+dz^{2} 
+ ds^{2}=d\rho^{2}+\rho^{2}d\varphi^{2}+dz^{2} 
+\phi
+\mathbf{e}_{\left(i\right)}
+i
+\mathbf{e}_{\left(2\right)}=\mathbf{e}_{\varphi}
+ \nabla\phi=\left(\partial^{i}\phi\right)\mathbf{e}_{\left(i\right)}=\tilde{g}^{ij}\left(\partial_{i}\phi\right)\mathbf{e}_{\left(j\right)}=\tilde{g}^{\rho\rho}\left(\partial_{\rho}\phi\right)\mathbf{e}_{\rho}+\tilde{g}^{\varphi\varphi}\left(\partial_{\varphi}\phi\right)\mathbf{e}_{\varphi}+\tilde{g}^{zz}\left(\partial_{z}\phi\right)\mathbf{e}_{z}. 
+ \nabla\phi=\frac{\partial\phi}{\partial\rho}\mathbf{e}_{\rho}+\frac{1}{\rho^{2}}\frac{\partial\phi}{\partial\varphi}\mathbf{e}_{\varphi}+\frac{\partial\phi}{\partial z}\mathbf{e}_{z} 
+\nabla
+f(r) = r' = \rho e_1 + \varphi e_2 + z e_3
+e_i
+\phi'(r') = \phi(r)
+\phi
+a
+a \cdot \nabla \phi = [(a \cdot \nabla )f] \cdot \nabla' \phi'
+a \cdot \nabla \phi = \underline f(a) \cdot \nabla' \phi'
+a \cdot \nabla \phi = a \cdot \overline f(\nabla') \phi' = a \cdot \overline f(\nabla') \phi
+\nabla = \overline f(\nabla')
+\nabla = e^\rho \partial_\rho + e^\varphi \partial_\varphi  + e^z \partial_z
+\underline g(a) = \overline f^{-1} \underline f^{-1}(a)

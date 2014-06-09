@@ -1,0 +1,15 @@
+f
+\mathbb{R}
+ \int_{-\infty}^{\infty} |f(t)|^{2} \ dt = \int_{-\infty}^{\infty} |\hat{f} (\omega)|^{2} d \ \omega .
+ \int_{0}^{\infty} \frac{|f(x)|^{2}}{x} \ dx = \frac{1}{2 \pi}\int_{-\infty}^{\infty} |F(it)|^{2} \ d t
+F(s)
+f(t)
+ \displaystyle \int_{-\infty}^{\infty} \Gamma(a+it) \Gamma(a-it) \ dt
+x = e^u
+g(u) = f(e^u)
+\int_0^\infty \lvert f(x)\rvert^2\, \frac{dx}{x} = \int_{-\infty}^\infty \lvert f(e^u)\rvert^2\,du = \int_{-\infty}^\infty \lvert g(u)\rvert^2\,du.
+\begin{align} F(it) &= \int_0^\infty x^{-it} f(x)\,\frac{dx}{x}\\ &= \int_{-\infty}^\infty e^{-iut} f(e^u)\,du\\ &= \int_{-\infty}^\infty g(u)e^{-iut}\,du\\ &= \sqrt{2\pi}\cdot \mathscr{F}[g](t), \end{align}
+\mathscr{F}[h](\omega) = \frac{1}{\sqrt{2\pi}}\int h(u)e^{-iu\omega}\,du
+L^2(\mathbb{R})
+\frac{1}{2\pi}\int_{-\infty}^\infty \lvert F(it)\rvert^2\,dt = \lVert \mathscr{F}[g]\rVert_{L^2}^2 = \lVert g\rVert_{L^2}^2 = \int_0^\infty \lvert f(x)\rvert^2\,\frac{dx}{x}
+g

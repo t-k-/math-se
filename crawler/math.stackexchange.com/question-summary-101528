@@ -1,0 +1,16 @@
+A
+R_A(x) = \frac{(Ax, x)}{\|x\|^2}
+z
+(Ax, x)
+w
+R(z + tw)
+t=0
+t
+\frac{(Aw, z) + (Az, w)}{\|z\|^2} - (Az, z) \frac{(w, z) + (z, w)}{\|z\|^4} = 0
+t
+w
+f(t):=R(z+tw)
+t=0
+f(t)=\frac{||w||^2t^2+2t\Re (Aw,z)+(Az,z)}{||w||^2t^2+2t\Re (z,w)+||z||^2}.
+f'(t)=\frac{2t||w||+2\Re (Aw,z)}{||w||^2t^2+2t\Re (z,w)+||z||^2}-\frac{||w||^2t^2+2t\Re (Aw,z)+(Az,z)}{(||w||^2t^2+2t\Re (z,w)+||z||^2)^2}(2t||w||^2+2\Re (Aw,z)),
+\frac{2\Re (Aw,z)}{||z||^2}-2\frac{(Az,z)}{(||z||^2)^2}\Re (Aw,z)=0,

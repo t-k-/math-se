@@ -1,0 +1,43 @@
+f
+\mathbb{R}_+
+g, h
+\mathbb{R}_+
+g
+|h(t)|
+0 \leq s < t < \infty
+n \to \infty
+\prod \limits_{j=k+1}^{r} \left[ \sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}+f(\frac{j}{n})h(\frac{j}{n})\sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}\right] \times \prod \limits_{j\notin \{k+1, \ldots, r \}}\left(1+\frac{1}{n}f(\frac{j}{n})\right) 
+\frac{k}{n}< s \leq \frac{k+1}{n} \leq \frac{r}{n} \leq t < \frac{r+1}{n}
+\exp\left[\int_{0}^{\infty}f(x)dx + \int_{s}^{t} \left(-\frac{1}{2}|g(x)|^2  + f(x)(h(x)-1)\right) dx\right]
+\frac1n
+f(\frac{j}{n})h(\frac{j}{n})
+f
+f(x)
+x> L
+L>t
+j\notin\{k+1,\ldots,r\}
+Ln
+|f|
+{\Bbb R}_+
+O()
+j
+ =O(\frac1n) + \sum_{j\notin\{k+1,\ldots,r\},\ j\le Ln} \frac1n f(\frac jn). 
+\int_0^s f(x) \, dx+\int_t^L f(x) \, dx.
+ \sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}+\frac1nf(\frac{j}{n})h(\frac{j}{n})\sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2},
+ \sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}\left(1+\frac1nf(\frac{j}{n})h(\frac{j}{n})\right).
+ \int_s^t -\frac12 |g(x)|^2 + f(x)h(x) \, dx. 
+g
+O()
+j
+(2)
+(1)
+f
+g
+h
+O()
+j
+(3)
+ T_{jn}:=\sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}+\frac1n \left(h(\frac{j}{n})+f(\frac{j}{n})h(\frac{j}{n})\sqrt{1- \frac{1}{n}| g(\frac{j}{n})|^2}\right).\ \ (1)
+ \sqrt{1-\frac{1}{n} |g(\frac{j}{n})|^2}=1-\frac{1}{2n} |g(\frac{j}{n})|^2+O(\frac{1}{n^2}).\qquad (2) 
+ T_{jn}=1-\frac{1}{2n} |g(\frac{j}{n})|^2+\frac1n h(\frac jn) + \frac1n f(\frac jn) h(\frac jn) + O(\frac{1}{n^2}), 
+ \log T_{jn}=-\frac{1}{2n} |g(\frac{j}{n})|^2+\frac1n h(\frac jn) + \frac1n f(\frac jn) h(\frac jn) +O(\frac{1}{n^2}).\qquad (3) 

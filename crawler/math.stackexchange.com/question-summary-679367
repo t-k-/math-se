@@ -1,0 +1,14 @@
+D
+D
+x \le y \le 3x
+1 \le xy \le 2
+x \le y \le 3x \implies 1 \le \frac{y}{x} \le 3
+u = \frac{y}{x} = y x^{-1}
+v = xy
+\implies \{1 \le u \le 3\}, \{1 \le v \le 2\}
+J = $$         \begin{vmatrix}         u'_x & u'_y \\         v'_x & v'_y \\         \end{vmatrix} = $$         \begin{vmatrix}         -yx^{-2} &  x^{-1} \\          y & x \\         \end{vmatrix} = -yx^{-2}x - yx^{-1} = -yx^{-1}-yx^{-1} = -2yx^{-1}. 
+         \begin{vmatrix}         u'_x & u'_y \\         v'_x & v'_y \\         \end{vmatrix} = 
+\implies dx\,dy = \frac{1}{J}du\,dv = -\frac{1}{2u}du\,dv
+D
+-\frac{1}{2} \int_1^2\int_1^3\frac{1}{u}dudv = -\frac{1}{2}\int^2_1 \big|^3_1\ln u \, dv = -\frac{1}{2}\int_1^2(\ln3 -\ln1)\,dv = -\frac{1}{2}(\ln 3-\ln1) \big|^2_1 v =-\ln3-\ln1 + \frac{1}{2}(\ln3-\ln1).
+\ln (\sqrt 3)

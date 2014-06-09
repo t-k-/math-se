@@ -1,0 +1,42 @@
+k^* = \sqrt{1 - k^2}
+E
+K
+     K(k) E(k^*)+ E(k) K(k^*) - K(k) K(k^*) = \frac{\pi}{2} 
+ K(k) = \int_0^{\pi/2} \frac{\mathrm{d}\theta}{\sqrt{1-k^2 \sin^2\theta}}\ ,\quad E(k) = \int_0^{\pi/2}\sqrt {1-k^2 \sin^2\theta}\ \mathrm{d}\theta\,. 
+k \frac{d E(k)}{dk} = E(k)-K(k)
+ k(k^{*})^{2} \frac{d K(k)}{d k} = E(k) - (k^{*})^{2} K(k) .
+ \frac{d}{dk} \left( K(k) E(k^*)+ E(k) K(k^*) - K(k) K(k^*)  \right) =0 .
+k
+0
+\frac{\pi}{2}
+k=0
+E(k) =  \frac{\pi}{2}  + \mathcal{O}(k^{2})
+K(k) = \frac{\pi}{2}+   \mathcal{O}(k^{2}) 
+E(k^{*}) = 1+ \mathcal{O}(k^{2}) 
+ K(k^{*}) = 2 \ln 2 -\ln k +  \mathcal{O}(k^2)
+(x^2-1) \frac{d}{dx}(x \frac{dE(x)}{dx})=xE(x)
+E(k^{*})
+K(k^{*})
+k^{*}
+ \frac{d E(k^{*})}{dk} = \frac{d E(k^{*})}{dk^{*}} \frac{d k^{*}}{dk} =  \frac{E(k^{*})-K(k^{*})}{k^{*}} \frac{-k}{\sqrt{1-k^{2}}}
+ = \frac{E(k^{*})-K(k^{*})}{k^{*}} \frac{-k}{k^{*}} = -\frac{k}{(k^{*})^{2}} \left( E(k^{*})-K(k^{*}) \right) 
+ \frac{d K(k^{*})}{dk} = \frac{d K(k^{*})}{dk^{*}} \frac{d k^{*}}{dk} = \frac{E(k^{*}) - k^{2} K(k^{*})}{k^{*} k^{2}} \frac{-k}{k^{*}}
+ = - \frac{1}{k(k^{*})^{2}} \left( E(k^{*}) - k^{2} K(k^{*}) \right)
+ \frac{d}{dk} \left( K(k) E(k^*)+ E(k) K(k^*) - K(k) K(k^*)  \right)
+ = \frac{E(k) - (k^{*})^{2}K(k)}{k (k^{*})^{2}}E(k^{*}) + K(k) \frac{-k}{(k^{*})^{2}} \left( E(k^{*})-K(k^{*}) \right)
+ + \frac{E(k)-K(k)}{k} K(k^{*}) + E(k) \frac{-1}{k(k^{*})^{2}} \left( E(k^{*}) - k^{2} K(k^{*}) \right) 
+ - \frac{E(k) - (k^{*})^{2}K(k)}{k (k^{*})^{2}} K(k^{*}) - K(k) \frac{-1}{k(k^{*})^{2}} \left( E(k^{*})-k^{2}K(k^{*}) \right)
+ = E(k) E(k^{*}) \left( \frac{1}{k (k^{*})^{2}} - \frac{1}{k (k^{*})^{2}} \right) + K(k) E(k^{*}) \left(- \frac{1}{k} - \frac{k}{(k^{*})^{2}} + \frac{1}{k(k^{*})^{2}}\right) 
+ + K(k) K(k^{*}) \left( \frac{k}{(k^{*})^{2}} - \frac{1}{k} + \frac{1}{k} - \frac{k}{(k^{*})^{2}}\right) + E(k) K(k^{*}) \left( \frac{1}{k} + \frac{k}{(k^{*})^{2}} - \frac{1}{k (k^{*})^{2}} \right)
+ = K(k) E(k^{*}) \left(- \frac{1}{k} - \frac{k}{(k^{*})^{2}} + \frac{1}{k(k^{*})^{2}}\right)  - E(k) K(k^{*}) \left( -\frac{1}{k} - \frac{k}{(k^{*})^{2}} + \frac{1}{k (k^{*})^{2}} \right)
+ - \frac{1}{k} - \frac{k}{(k^{*})^{2}} + \frac{1}{k(k^{*})^{2}} = \frac{-(k^{*})^{2} - k^{2} +1}{k(k^{*})^{2}} = \frac{-(1-k^{2})-k^{2}+1}{k(k^{*})^{2}} = 0
+ \frac{d}{dk} \left( K(k) E(k^*)+ E(k) K(k^*) - K(k) K(k^*)  \right) =0 
+ 
+E(k^{*})
+K(k^{*})
+k=0
+E(k^{*}) =1 
+k=0
+ \displaystyle K(k^{*}) \le \int_{0}^{\pi/2} \frac{1}{\sqrt{k^{2}}} \ d \theta = \frac{\pi}{2k}
+\lim_{k \to 0} \Big( K(k) E(k^*)+ E(k) K(k^*) - K(k) K(k^*) \Big) = \frac{\pi}{2} (1) + \lim_{k \to 0} \Big[  \Big( E(k) -K(k) \Big) K(k^{*}) \Big] 
+ = \frac{\pi}{2} + \lim_{k \to 0} \mathcal{O}(k^{2}) \frac{\pi}{2k} = \frac{\pi}{2} + 0 = \frac{\pi}{2}

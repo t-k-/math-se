@@ -1,0 +1,31 @@
+\mathbb C(x_1,...,x_r,x'_1,...,x'_p,u_0,...,u_r,u'_0,...,u'_p)
+r,p\in \mathbb N
+\displaystyle{\sum_{i=1}^r \left(   \frac{\prod_{j=0}^r (u_j-x_i) \prod_{j=1}^p (x'_j-x_i) }{  \prod_{1\leq j\leq r, j\neq i     }(x_j-x_i) \prod_{j=0}^p (u'_j-x_i)}      \right)}-\displaystyle{\sum_{i=0}^p \left(   \frac{\prod_{j=0}^r (u'_i-u_j) \prod_{j=1}^p (u'_i-x'_j) }{  \prod_{0\leq j\leq p, j\neq i     }(u'_i-u'_j) \prod_{j=1}^r (u'_i-x_j)}      \right)}=\displaystyle{\sum_{i=1}^p x'_i +\sum_{i=0}^r u_i -\sum_{i=1}^r x_i-\sum_{i=0}^p u'_i}
+\spadesuit
+(N-1)
+N
+(z_i,f_i)
+i=1,\ldots, N
+L(z)=\sum_{i=1}^{N} f_i\prod_{j\neq i}^{N}\frac{z-z_j}{z_i-z_j}.\tag{$\spadesuit$}
+N-1
+\clubsuit
+2N
+z_1,\ldots,z_{N}
+z_1',\ldots,z_N'
+z=z_i
+P(z)=\prod_{i=1}^{N}(z-z'_i)-\prod_{i=1}^{N}(z-z_i),\tag{$\clubsuit$}
+P(z_i)=\prod_{j=1}^N(z_i-z'_j).
+\spadesuit
+f_i=P(z_i)
+\diamondsuit
+z^{N-1}
+\diamondsuit
+\heartsuit
+\sum_{i=1}^N\prod_{k=1}^N(z_i-z'_k)\prod_{j\neq i}^{N}\frac{z-z_j}{z_i-z_j}= \prod_{i=1}^{N}(z-z'_i)-\prod_{i=1}^{N}(z-z_i).\tag{$\diamondsuit$}
+\sum_{i=1}^N\frac{\prod_{j=1}^N(z_i-z'_j)}{ \prod_{j\neq i}^N(z_i-z_j)}= \sum_{i=1}^N z_i-\sum_{i=1}^Nz'_i.\tag{$\heartsuit$}
+N=r+p+1
+\{z_i\}
+\{z'_i\}
+\heartsuit
+\heartsuit
+\blacksquare

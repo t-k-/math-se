@@ -1,0 +1,37 @@
+n
+ f(p_1,\ldots,p_n) = \sum_{i=2}^{n-1} \left ( (1-p_i)(1-p_{i-1})^i (1-p_{i+1})^{n-i} + p_i {n \choose i} \right ) 
+p_1,\ldots,p_n \in [0,1].
+(1-p_i)^t \leq e^{-p_i t}
+f
+p_1,\ldots,p_n
+f(p_1,\ldots,p_n)
+x_i=1-p_i
+x_i\in[0,1]
+ T = \sum_{i=2}^{n-1} x_i x_{i-1}^i x_{i+1}^{n-i} - \left(\begin{array}{c} n \\ i\end{array}\right) x_i 
+n\le 2
+T=0
+n=3
+T=x_2 x_1^2 x_3 - 3 x_2
+x_2=1
+x_1x_3=0
+n=3
+p_2 = 0
+p_1=1
+p_3=1
+ \mbox{If $n=3$, then $p_2 = 0$ and either $p_1=1$ or $p_3=1$.}  
+n\ge 4
+x_i
+(2)
+(4)
+x_2=x_{n-1}=1
+(5)
+1
+x_n=0
+(1)
+2x_1
+x_1=0
+n\ge 4
+p_1=p_n=1
+p_i=0
+i
+ \mbox{If $n\ge 4$, then $p_1=p_n=1$ and $p_i=0$ for other $i$.} 

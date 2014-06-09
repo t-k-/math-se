@@ -1,0 +1,15 @@
+\_
+\_
+t(1,1)=1
+t(\text{n$\_$},\text{k$\_$})\text{:=}t(n,k)=\text{If}\left[n\geq k,\exp \left(-\sum _{i=1}^{k-1} t(n-i,k)\right),1\right]
+n
+k
+t(n,k)=\exp \left(-\sum _{i=1}^{k-1} t(n-i,k)\right)
+t(n,k)=1
+t(n,k)
+\begin{array}{llllll}  1 & 1 & 1 & 1 & 1 & 1 \\  \frac{1}{e} & 1 & 1 & 1 & 1 & 1 \\  e^{-1/e} & \frac{1}{e^2} & 1 & 1 & 1 & 1 \\  e^{-e^{-1/e}} & e^{-1-\frac{1}{e^2}} & \frac{1}{e^3} & 1 & 1 & 1 \\  e^{-e^{-e^{-1/e}}} & e^{-\frac{1}{e^2}-e^{-1-\frac{1}{e^2}}} & e^{-2-\frac{1}{e^3}} & \frac{1}{e^4} & 1 & 1 \\  e^{-e^{-e^{-e^{-1/e}}}} & e^{-e^{-1-\frac{1}{e^2}}-e^{-\frac{1}{e^2}-e^{-1-\frac{1}{e^2}}}} & e^{-1-\frac{1}{e^3}-e^{-2-\frac{1}{e^3}}} & e^{-3-\frac{1}{e^4}} & \frac{1}{e^5} & 1 \end{array}
+\lim_{n->\infty}\text{LambertW(k)/k} = t(n,k)
+\sqrt{\frac{W(n)}{n}}
+\sqrt[3]{\frac{W\left(\frac{n}{2}\right)}{\frac{n}{2}}}
+\left(\frac{W(n)}{n}\right)^2
+\frac{W(\log (n))}{\log (n)}

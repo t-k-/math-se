@@ -1,0 +1,27 @@
+\int \frac{6x-1}{3x^3-4} \, dx
+\frac{1}{4}\int \frac{6x-1}{\frac{3}{4}x^3-1} \, dx
+\frac{3}{4}x^3=u^3
+\sqrt[3]{\frac{3}{4}}x=u
+\sqrt[3]{\frac{4}{3}}u=x
+\sqrt[3]{\frac{4}{3}}du=dx
+\frac{\sqrt[3]{\frac{4}{3}}}{4}\int \frac{6\sqrt[3]{\frac{4}{3}}u-1}{u^3-1} \, du=\frac{\sqrt[3]{\frac{4}{3}}}{4}\int \frac{A}{u-1} +\frac{B}{u-\epsilon}+\frac{C}{u-\epsilon^2}\, du
+\epsilon=e^{\frac{2\pi i}{3} }=-\frac{1}{2}+i\frac{\sqrt3}{2}
+\epsilon^2=e^{\frac{4\pi i}{3} }=-\frac{1}{2}-i\frac{\sqrt3}{2}
+\frac{6\sqrt[3]{\frac{4}{3}}u-1}{u^3-1}=\frac{A}{u-1} +\frac{B}{u-\epsilon}+\frac{C}{u-\epsilon^2}
+f(u)=6\sqrt[3]{\frac{4}{3}}u-1
+A=f(1)=6\sqrt[3]{\frac{4}{3}}-1
+B=f(\epsilon)=6\epsilon\sqrt[3]{\frac{4}{3}}-1
+C=f(\epsilon^2)=6\epsilon^2\sqrt[3]{\frac{4}{3}}-1
+\frac{\sqrt[3]{\frac{4}{3}}}{4}\int \frac{A}{u-1} +\frac{B}{u-\epsilon}+\frac{C}{u-\epsilon^2}\, du=
+\frac{A\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-1} \, du+\frac{B\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-\epsilon}\, du+\frac{C\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-\epsilon^2}\, du=
+\frac{A\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-1} \, du+\frac{B\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-\epsilon}\, du+\frac{C\sqrt[3]{\frac{4}{3}}}{4}\int \frac{1}{u-\epsilon^2}\, du=
+\frac{A\sqrt[3]{\frac{4}{3}}}{4}\ln {(u-1)} +\frac{B\sqrt[3]{\frac{4}{3}}}{4}\ln {(u-\epsilon)}+\frac{C\sqrt[3]{\frac{4}{3}}}{4}\ln {(u-\epsilon^2)}+c=
+\frac{A\sqrt[3]{\frac{4}{3}}}{4}\ln {(\sqrt[3]{\frac{3}{4}}x-1)} +\frac{B\sqrt[3]{\frac{4}{3}}}{4}\ln {(\sqrt[3]{\frac{3}{4}}x-\epsilon)}+\frac{C\sqrt[3]{\frac{4}{3}}}{4}\ln {(\sqrt[3]{\frac{3}{4}}x-\epsilon^2)}+c=
+\ln
+arctan
+\arctan x = \frac{1}{2}i\left(\ln\left(1-i\,x\right)-\ln\left(1+i\,x\right)\right) 
+A
+Bx+C
+3x^3-4=3(x^3-4/3)=3(x-(4/3)^{1/3})(x^2+(4/3)^{1/3}x+(4/3)^{2/3}),
+A,B,C
+\ln(u),\arctan(u)

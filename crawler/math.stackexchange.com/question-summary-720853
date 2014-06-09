@@ -1,0 +1,19 @@
+m
+m
+m
+u = \cos x
+du = -\sin x dx
+m
+ \int_0^{\frac{\pi}{2}} \cos^mx \sin^mx dx = -\int_0^{\frac{\pi}{2}} \cos^m x \sin^{m-1} x(-\sin x) dx 
+ = -\int_0^{\frac{\pi}{2}} \cos^mx (\sin^2 x)^{\frac{m-1}{2}}(-\sin x) dx 
+ = -\int_0^{\frac{\pi}{2}} \cos^mx (1 - \cos^2 x)^{\frac{m-1}{2}}(-\sin x) dx 
+ = -\int_1^0u^m(1 - u^2)^{\frac{m-1}{2}} du 
+ = \int_0^1u^m(1 - u^2)^{\frac{m-1}{2}} du 
+ = \int_0^1u^m \Sigma_{k = 0}^{\frac{m-1}{2}} {{\frac{m-1}{2}} \choose k} (-1)^k u^{2k} du 
+\cos^m x \sin^m x=(\cos x \sin x)^m=2^{-m}\sin^m (2x)
+t=2x
+x=\frac12t
+dx=\frac12dt
+I(m)=\int_{0}^{\pi/2}dx\,\cos^m{x}\sin^m{x}=2^{-m}\int_{0}^{\pi/2}dx\,\sin^m{2x}\\ =2^{-m}\int_{0}^{\pi}\frac12dt\,\sin^m{t}
+u=t-\frac{\pi}{2}
+t=u+\frac{\pi}{2}

@@ -1,0 +1,81 @@
+a_i
+b_i
+i = 1,2,3,\ldots,n
+n
+2
+0\lt a_1\le a_2 \le \ldots\le a_n \ \ and \ \ 0\lt b_1\le b_2 \le\ldots\le b_n \tag{i}
+\sum^n_{i=1} a_i = \sum^n_{j=1} b_j \tag{ii}
+\exists
+k \in \Bbb Z
+1 \le k\le n-1
+a_k\le b_1 \le b_2 \le \ldots \le b_n \le a_{k+1} \tag{iii}
+\prod^n_{i=1} a_i \le \prod^n_{j=1} b_j \tag{iv}
+GM \le AM
+(a_k)_k
+b_i:=a_i
+i=j,k
+j<k
+b_j:=a_j+\varepsilon
+b_k:=a_k-\varepsilon
+a_k>a_j+\varepsilon
+\varepsilon\le \displaystyle\frac{a_k-a_j}2 
+a_j<a_k
+b_jb_k=(a_j+\varepsilon)(a_k-\varepsilon) = a_ja_k+\varepsilon\,(a_k-a_j\, -\varepsilon) \ > \ a_ja_{k}
+n
+(b_k)
+(a_k)
+I
+f
+I
+x_1, \ldots, x_n
+y_1, \ldots, y_n
+I
+(x_1, \ldots, x_n)
+(y_1, \ldots, y_n)
+f(x_1)+\cdots+f(x_n) \ge f(y_1)+\cdots+f(y_n) \tag{1}
+x_1+\cdots+x_n = y_1+\cdots+y_n \tag{2}
+x_1, \ldots, x_n
+y_1, \ldots, y_n
+x_1 \ge x_2 \ge \cdots \ge x_n \ and\ y_1\ge y_2\ge\cdots\ge y_n, \tag{3}
+x_1+\cdots+x_i \ge y_1+\cdots+y_i \ \  \forall \ \ i \in \{1,2, \ldots, n-1\} \tag{4}
+(x_1, x_2, \ldots, x_n) = (a_n, a_{n-1}, \ldots, a_1)
+(y_1, y_2, \ldots, y_n) = (b_n, b_{n-1}, \ldots, b_1)
+\sum^n_{i=1} a_i = \sum^n_{j=1} b_j \implies x_1+\cdots+x_n = y_1+\cdots+y_n \tag{a}
+a_n \ge a_{n-1} \ge \cdots \ge a_1 \ and\ b_n\ge b_{n-1}\ge\cdots\ge b_1 
+\implies x_1 \ge x_2 \ge \cdots \ge x_n \ and\ y_1\ge y_2\ge\cdots\ge y_n
+X_i = x_1+\cdots+x_i
+Y_i = y_1+\cdots+y_i \ \  \forall \ \ i \in \{1,2, \ldots, n\}
+a_{j} \ge b_{j} \ \  \forall \ \ j \in \{k+1, k+2, \ldots, n\}
+\implies a_n + a_{n-1} + \cdots + a_{j} \ge b_n + b_{n-1} + \cdots + b_{j} \ \  \forall \ \ j \in \{k+1, k+2, \ldots, n\}
+\implies x_1+\cdots+x_i \ge y_1+\cdots+y_i \ \  \forall \ \ i \in \{1,2, \ldots, n-k\} \tag{b}
+a_{j} \le b_{j} \ \  \forall \ \ j \in \{1, 2, \ldots, k\}
+\implies X_i-X_{i-1} \le Y_i - Y_{i-1} \ \  \forall \ \ i \in \{n-k+1, n-k+2, \ldots, n\} \tag{c}
+Y_i
+X_i
+\{n-k+1, n-k+2, \ldots, n\} 
+Y_n = X_n
+Y_{n-k} \le X_{n-k}
+\implies X_i \ge Y_i \ \  \forall \ \ j \in \{n-k+1, n-k+2, \ldots, n-1\} \tag{d}
+l \in \{n-k+1, n-k+2, \ldots, n-1\}
+X_i \lt Y_i
+Y_n
+X_n
+\implies x_1+\cdots+x_i \ge y_1+\cdots+y_i \ \  \forall \ \ i \in \{n-k+1,n-k+2, \ldots, n-1\} \tag{e}
+\implies x_1+\cdots+x_i \ge y_1+\cdots+y_i \ \  \forall \ \ i \in \{1, 2, \ldots, n-1 \}
+(x_1, \ldots, x_n)
+(y_1, \ldots, y_n)
+f(x) = -ln(x) \ \ \forall \ \ x \in \mathbb {R^+}
+f(x)
+\mathbb {R^+}
+f(x)
+f'(x) = - \frac1x \lt 0 \ \ \forall \ \ x \in \mathbb {R^+} \tag{f}
+f(x)
+f''(x) = \frac1{x^2} \gt 0 \ \ \forall \ \ x \in \mathbb {R^+}
+f(x_1)+\cdots+f(x_n) \ge f(y_1)+\cdots+f(y_n) 
+\implies f(a_n)+\cdots+f(a_1) \ge f(b_n)+\cdots+f(y_1) 
+\implies -ln(a_n)-\cdots-ln(a_1) \ge -ln(b_n)-\cdots-ln(b_1) 
+\implies ln(a_n)+\cdots+ln(a_1) \le ln(b_n)+\cdots+ln(b_1) 
+\implies ln(\prod^n_{i=1} a_i) \le ln(\prod^n_{j=1} b_j) \tag{g}
+f(x) = -ln(x)
+-f(x) = ln(x)
+ \prod^n_{i=1} a_i \le \prod^n_{j=1} b_j 

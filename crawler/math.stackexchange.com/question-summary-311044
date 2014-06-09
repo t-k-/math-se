@@ -1,0 +1,20 @@
+M
+\vec{v}
+a
+b
+x
+\vec{v}^T(M+(ax+b)I)^{-1}\vec{v} - x\vec{v}^T(M+(ax+b)I)^{-2}\vec{v}-(ax+b) = 0
+w_i
+M
+\lambda_i
+\alpha_i = v\cdot w_i
+x
+M
+[M+(ax+b)I]w_i = [\lambda_i + (ax+b)]w_i.
+\sum_i \frac{\alpha_i^2}{\lambda_i + (ax+b)} - x\sum_i \frac{\alpha_i^2}{[\lambda_i + (ax+b)]^2} - (ax+b) = 0
+\sum_i \frac{\alpha_i^2[(a-1)x+\lambda_i+b]}{(ax+\lambda_i+b)^2} - (ax+b) = 0,
+a=\frac{n-1}{n}
+\vec{v}\in\mathbb{R}^n
+M\in\mathbb{R}^{n\times n}
+b = -\mathrm{Tr}M/n
+\displaystyle\sum_i \frac{\alpha_i^2\left(-x+n\lambda_i-\sum_i \lambda_i\right)}{\left((n-1)x+n\lambda_i-\sum_i \lambda_i\right)^2} = (n-1)x-\sum_i \lambda_i

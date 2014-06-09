@@ -1,0 +1,9 @@
+ r= 4(1-\sin{\phi})
+-\frac{\pi}{2}\leq\phi\leq\frac{\pi}{2}
+\sqrt{32} \displaystyle\int_\frac{-\pi}{2}^\frac{\pi}{2} \sqrt{-\sin{\phi}}d\phi
+l=\int_\alpha^\beta\sqrt{r^2+(r')^2}d\phi
+r'=-4\cos{\phi}
+l=\int_\frac{-\pi}{2}^\frac{\pi}{2}\sqrt{4^2(1-\sin{\phi})^2+(-4\cos{\phi})^2}d\phi=\int_\frac{-\pi}{2}^\frac{\pi}{2}\sqrt{16-32\sin{\phi}+16\sin^2{\phi}+16\cos^2{\phi}}d\phi=\cdots
+=\displaystyle\int_\frac{-\pi}{2}^\frac{\pi}{2}\sqrt{-32\sin{\phi}}d\phi
+16-32\sin\phi +16(\sin^2(\phi)+\cos^2(\phi))=32(1-\sin\phi)
+\int{\sqrt{1-\sin x}}dx=\int{\frac{\sqrt{1-\sin^2(x)}}{\sqrt{1+\sin x}}}dx=\int{\frac{\cos x}{\sqrt{1+\sin x}}}dx=2\sqrt{1+\sin x}+C

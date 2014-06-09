@@ -1,0 +1,11 @@
+y = \beta_1x + \beta_0
+l(\beta_0, \beta_1, \sigma^2) = -\frac{n \log(2\pi)}{2} - n \log \sigma - \frac{1}{2 \sigma^2} \sum_{i=1}^{n} (y-\beta_0 - \beta_1 x_i)^2
+\beta_1
+\frac{\partial}{\partial \beta_1} = \frac{1}{\sigma^2} \sum_{i=1}^{n} x_i(y-\beta_0-\beta_1x_i)
+\sum_{i=0}^{n} x_i(y-\beta_0-\beta_1x_i) = 0
+\displaystyle \sum_{i=0}^n x_iy - \beta_0\sum_{i=0}^nx_i-\beta_1\sum_{i=0}^nx_i=0
+\beta_1
+\displaystyle \beta_1=\frac{\sum_{i=0}^nx_iy-n\beta_0}{\sum_{i=0}^n x_i}=y-\frac{n}{\sum_{i=0}^nx_i}\beta_0\space\space\space\space---(A)
+\beta_0
+\beta_0
+\beta_0

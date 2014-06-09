@@ -1,0 +1,20 @@
+T(n)
+\Theta(f(n))
+T(n) = 2T(\frac{n}{4}) + c
+c
+T(1)
+n = 4^k
+\begin{align} T(4^k) &= 2&T(4^k) & &+ c \\        &= 2&(2T(4^{k-1}) &+ c) &+c \\        &= 2&(2T(2T(4^{k-2}) + c) &+ c) &+c \end{align}
+x_k = T(4^k)
+x_{k+1} = 2 x_k +c
+x_k = 2^k x_o + c (2^k-1)
+T(4^k) = 2^kT(1)+c(2^k-1)
+n = 4^k
+2^k = \sqrt{n}
+T(n) = \sqrt{n}T(1) + c(\sqrt{n}-1)
+n \in \{ 4^k \}_{k \in \mathbb{N}}
+T(0)=0
+ T(n) =  \sum_{j=0}^{\lfloor \log_4 n \rfloor} (2^j \times c) = c \left(2^{\lfloor \log_4 n \rfloor+1} -1\right).
+ \log_4 n - 1 < \lfloor \log_4 n \rfloor \le \log_4 n
+2^{\log_4 n} < 2^{\lfloor \log_4 n \rfloor+1} \le 2n^{\log_4 n} \quad \text{and} \quad c(\sqrt n-1) < T(n) \le c(2\sqrt n-1).
+T(n) \in \Theta(\sqrt n).

@@ -1,0 +1,19 @@
+x(t)
+X
+x(at)
+a = 0
+x(0)
+x(at)
+a>0, a<0
+\mathbb{R}
+y=ax
+\mathbb{T}=\mathbb{R}/\mathbb{Z}
+a\in\mathbb{Z}
+ \hat{f}(\xi)=\int_{-\infty}^\infty f(x)\,e^{-2\pi i x\cdot\xi}\,\mathrm{d}x 
+ \begin{align} \int_{-\infty}^\infty f(ax)e^{-2\pi i x\cdot\xi}\,\mathrm{d}x &=\frac1{|a|}\int_{-\infty}^\infty f(y)\,e^{-2\pi i y\cdot\xi/a}\,\mathrm{d}y\\ &=\frac1{|a|}\hat{f}(\xi/a) \end{align} 
+(a,n)=b
+a
+a\not=0
+ \begin{align} \color{#C00000}{\sum_{k=0}^{a-1}e^{-2\pi ink/a}} &=b\sum_{k=0}^{a/b-1}e^{-2\pi i(n/b)k/(a/b)}\\ &=\color{#00A000}{b\frac{e^{-2\pi in/b}-1}{e^{-2\pi in/a}-1}}\\ &=\left\{\begin{array}{cl}\color{#C00000}{a}&\color{#C00000}{\text{if }a\;|\;n}\\\color{#00A000}{0}&\color{#00A000}{\text{if }a\!\not|\;n}\end{array}\right. \end{align} 
+ c(n)=\int_0^1f(x)\,e^{-2\pi inx}\,\mathrm{d}x 
+ \begin{align} \int_0^1f(ax)\,e^{-2\pi inx}\,\mathrm{d}x &=\frac1{a}\int_0^af(y)\,e^{-2\pi iny/a}\,\mathrm{d}y\\ &=\frac1{a}\sum_{k=0}^{a-1}\int_0^1f(y)\,e^{-2\pi in(y+k)/a}\,\mathrm{d}y\\ &=\frac1{a}\sum_{k=0}^{a-1}e^{-2\pi ink/a}\int_0^1f(y)\,e^{-2\pi iny/a}\,\mathrm{d}y\\ &=\left\{\begin{array}{cl}c(n/a)&\text{if }a\;|\;n\\0&\text{if }a\!\not|\;n\end{array}\right. \end{align} 

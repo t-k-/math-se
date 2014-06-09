@@ -1,0 +1,29 @@
+N!
+4N
+4N
+p \leqslant N
+N!
+m_p(N) = \sum_{k=1}^{\left\lfloor\frac{\log N}{\log p}\right\rfloor} \left\lfloor \frac{N}{p^k}\right\rfloor,
+N!
+\frac{N}{p}-1 \leqslant m_p(N) < \frac{N}{p-1}
+\sum_{p\leqslant N} \left(\frac{N}{p}-1\right) < \Omega(N!) = \sum_{p\leqslant N} m_p(N) < \sum_{p \leqslant N} \frac{N}{p-1}.
+\sum_{p\leqslant N} \frac{1}{p} \sim \log \log N \sim \sum_{p\leqslant N} \frac{1}{p-1},
+\Omega(N!) \sim N\log \log N
+p
+N!
+N
+\sim \dfrac{N}{\log(N)}
+\displaystyle \sum_{p \leq N} \dfrac1p \sim \ln(\ln(N))
+\sim N \ln(\ln(N))
+\left\lfloor \dfrac{N}p \right\rfloor + \left\lfloor \dfrac{N}{p^2} \right\rfloor + \cdots \sim \dfrac{N}{p-1}
+\sum_{p \leq N} \dfrac{N}{p-1} \sim N \ln(\ln(N))
+N
+10^m
+2
+10^m
+5
+10^m
+\dfrac{N}2 + \dfrac{N}{2^2} + \cdots \dfrac{N}{2^m} = \dfrac{N}2 \dfrac{1-1/2^m}{1-1/2} = N - \dfrac{N}{2^m}
+\dfrac{N}5 + \dfrac{N}{5^2} + \cdots \dfrac{N}{5^m} = \dfrac{N}5 \dfrac{1-1/5^m}{1-1/5} = \dfrac{N}4 - \dfrac{N}{4 \cdot 5^m}
+N = 10^m
+\dfrac{5N}4 - 5^m - 2^{m-2}

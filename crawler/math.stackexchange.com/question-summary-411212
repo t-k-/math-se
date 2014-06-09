@@ -1,0 +1,15 @@
+\left(\sin \frac{1}{n} \cdot \sin \frac{2}{n} \cdots \sin 1\right)^{\frac{1}{n}}?
+\ln \left((\sin \frac{1}{n} \cdot \sin \frac{2}{n} \cdots \sin 1)^{\frac{1}{n}} \right)=\frac{1}{n} \sum_{k=1}^n \ln \left( \sin(\frac{k}{n})\right)
+\lim _{n \rightarrow \infty}  \frac{1}{n} \sum_{k=1}^n \ln \left( \sin(\frac{k}{n})\right) = \int_0^1 \ln(\sin(x)) \, dx \text{ (Riemann integral)}
+\lim_{n \rightarrow \infty} (\sin \frac{1}{n} \cdot \sin \frac{2}{n} \cdots \sin 1)^{\frac{1}{n}}?
+ \displaystyle \lim _{n \rightarrow \infty}  \frac{1}{n} \sum_{k=1}^n \ln \left( \sin(\frac{k}{n})\right) 
+ \displaystyle \int_{0}^{1} \ln (\sin x) \ dx 
+-\ln (\sin x)
+(0,1]
+ \displaystyle S_{n} = \frac{1}{n} \sum_{k=1}^n \ln \left( \sin(\frac{k}{n})\right)
+ - \displaystyle S_{n} < -\int_{0}^{1} \ln (\sin x) \ dx < - \int_{0}^{\frac{1}{n}} \ln (\sin x) \ dx - S_{n} 
+ \displaystyle \implies  0 < -\int_{0}^{1} \ln (\sin x) \ dx + S_{n} < -\int_{0}^{\frac{1}{n}} \ln(\sin x) \ dx
+ \displaystyle \implies 0 < -\int_{0}^{1} \ln (\sin x) \ dx + \lim_{n \to \infty} S_{n} < 0 
+ \displaystyle \implies 0 < \int_{0}^{1} \ln (\sin x) \ dx - \lim_{n \to \infty} S_{n} < 0 
+ exp \left( ln \left(\sin \frac{1}{n} \cdot \sin \frac{2}{n} \cdots \sin 1\right)\frac{1}{n} \right).
+exp \left( ln \left( \frac{(n-1)!}{n^{n-1}}+ o\left( \frac{1}{n^{n-1}}\right) \right)\frac{1}{n} \right)=exp \left(\frac{n-1}{n}ln\left(\frac{n-1}{en}\right)+o(1) \right) \rightarrow \frac{1}{e}.

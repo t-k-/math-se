@@ -1,0 +1,39 @@
+\int_{-\pi}^{\pi}\sin{mx}\,\sin{nx}\, d x =\begin{cases} 0&\text{if }m\neq n,\\ \pi&\text{if }m=n. \end{cases}
+\int_{-\pi}^{\pi}\sin{mx}\,\sin{nx} \, d x=-\left(\frac{n}{n^2-m}\right)\sin{mx}\cos{nx}+\left(\frac{m}{n^2-m}\right)\cos{mx}\sin{nx}+C
+=-2\left(\frac{n}{n^2-m}\right)\sin{m\pi}\cos{n\pi}+2\left(\frac{m}{n^2-m}\right)\cos{m\pi}\sin{n\pi}
+n=m
+z
+=-2\left(\frac{z}{z^2-z}\right)\sin{z\pi}\cos{z\pi}+2\left(\frac{z}{z^2-z}\right)\cos{z\pi}\sin{z\pi}
+\frac{1}{2}\int\cos{((n-m)x)}\ dx-\frac{1}{2}\int\cos{((n+m)x)}\ dx=\frac{\sin{((n-m)x)}}{2(n-m)}-\frac{\sin{((n+m)x)}}{2(n+m)}
+n=m
+2\sin mx\sin nx=\cos(m-n)x-\cos(m+n)x
+\cos(m-n)x-\cos(m+n)x=\begin{cases} 1-\cos2nx&\text{ if }m=n,\\ \cos2nx-1&\text{if }m+n=0. \end{cases} 
+\int\cos axdx=\frac{\sin ax}a
+\,\sin kx\,
+\,\sin mx\sin nx\,
+\int\limits_{-\pi}^\pi\sin mx\sin nx\,dx=2\int\limits_0^\pi\sin mx\sin nx\,dx
+u=\sin mx\;,\;\;u'=m\cos mx\\v'=\sin nx\;,\;\;v=-\frac{1}{n}\cos nx
+\text{J:}=2\int\limits_0^\pi\sin mx\sin nx\,dx=\stackrel{\text{this is zero}}{\overbrace{\left.-\frac{2}{n}\sin mx\cos nx\right|_0^\pi}}+\frac{2m}{n}\int\limits_0^\pi\cos mx\cos nx\,dx
+u=\cos mx\;,\;\;u'=-m\sin mx\\v'=\cos nx\;,\;\;v=\frac{1}{n}\sin nx\;\;\;\Longrightarrow
+\text{J}=\left.-\frac{2m}{n^2}\sin nx\cos mx\right|_0^\pi+\frac{2m^2}{n^2}\int\limits_0^\pi\sin mx\sin nx\,dx\Longrightarrow
+\left(\frac{n^2-m^2}{n^2}\right)\text{J}=0\;,\;\text{and thus} \;n\neq m\Longrightarrow \text{J}\,=0\,
+\,n=m\,
+2\int\limits_0^\pi\sin mx\sin mx\,dx=2\int\limits_0^\pi\cos mx\cos mx\,dx\Longrightarrow
+2\text{ J}\,=2\int\limits_0^\pi\left(\cos mx\cos mx+\sin mx\sin mx\right)\,dx=2\int\limits_0^\pi \cos[(m-m)x]\,dx=
+=2\int\limits_0^\pi dx=2\pi\Longrightarrow\,\text{ J}\,=\pi
+\sin kx:=\frac{e^{ikx}-e^{-ikx}}{2i}\;,\;\;k,x\in\Bbb R\Longrightarrow
+\text{ J}\,=2\int\limits_0^\pi\sin mx\sin nx\,dx=-\frac{1}{2}\int\limits_0^\pi\left(e^{imx}-e^{-imx}\right)\left(e^{inx}-e^{-inx}\right)dx=
+-\frac{1}{2}\int\limits_0^\pi\left[\left(e^{ix(m+n)}+e^{-ix(m+n)}\right)-\left(e^{ix(m-n)}+e^{-ix(m-n)}\right)\right] dx=
+=\int\limits_0^\pi\left(\cos(m-n)x-\cos(m+n)x\right)dx=
+=\begin{cases}\int\limits_0^\pi(dx-\cos2mx)dx=\pi-\left.\frac{1}{2m}\sin 2mx\right|_0^\pi=\pi\;\;,\;\;\;\;m=n\\{}\\{}\\ \left.\left(\frac{1}{m-n}\sin(m-n)x-\frac{1}{m+n}\sin(m+n)x\right)\right|_0^\pi=0\;\;,\;\;\;\;m\neq n\end{cases}
+\sin nx = \frac{1}{2i}(e^{inx} - e^{-inx})
+ \int_{-\pi}^\pi e^{ikx} \,dx = \begin{cases}0 &\text{ if } k \ne 0 \\ 2\pi & \text{ if } k = 0\end{cases} 
+n \ne m
+n \ne -m
+I
+0
+n = m
+ I = -\frac{1}{4}(-2\pi -2\pi) = \pi 
+n = -m
+ I = -\frac{1}{4}(2\pi + 2\pi) = -\pi 
+n, m \ge 0

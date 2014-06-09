@@ -1,0 +1,28 @@
+\sum_{i=0}^n\mu_i=\frac13\Big(\mu_{n+2}+2\mu_n+\mu_{n-1}+2\mu_0+\mu_1-\mu_3\Big)\;,\tag{1}
+\mu_0,\mu_1,\mu_2,\mu_3
+\mu_n=\mu_{n-1}+\mu_{n-2}+\mu_{n-3}+\mu_{n-4}
+n\ge 4
+(39)
+k=0,\dots,n
+\mu_k+\mu_{k+1}+\mu_{k+2}=\mu_{k+2}-\mu_{k+1}
+\sum_{k=0}^n\mu_k+\left(\sum_{k=0}^n\mu_k+\mu_{n+1}-\mu_0\right)+\left(\sum_{k=0}^n\mu_i+\mu_{n+1}+\mu_{n+2}-\mu_0-\mu_1\right)=\mu_{n+4}-\mu_3
+3\sum_{k=0}^n\mu_k+2\mu_{n+1}+\mu_{n+2}-2\mu_0-\mu_1=\mu_{n+4}-\mu_3\;,
+\begin{align*} 3\sum_{k=0}^n\mu_k&=\mu_{n+4}-2\mu_{n+1}-\mu_{n+2}-\mu_3+2\mu_0+\mu_1\\ &=(\mu_{n+3}+\mu_{n+2}+\mu_{n+1}+\mu_n)-2\mu_{n+1}-\mu_{n+2}+2\mu_0+\mu_1-\mu_3\\ &=\mu_{n+3}-\mu_{n+1}+\mu_n+2\mu_0+\mu_1-\mu_3\\ &=(\mu_{n+2}+\mu_{n+1}+\mu_n+\mu_{n-1})-\mu_{n+1}+\mu_n+2\mu_0+\mu_1-\mu_3\\ &=\mu_{n+2}+2\mu_n+\mu_{n-1}+2\mu_0+\mu_1-\mu_3\;, \end{align*}
+\mu_0=\mu_1=\mu_2=0
+\mu_3=1
+(1)
+\sum_{i=0}^n\mu_i=\frac13\Big(\mu_{n+2}+2\mu_n+\mu_{n-1}-1\Big)\;.
+\qquad \small T=\begin{bmatrix} 0&0&0&1\\1&0&0&1 \\0&1&0&1 \\0&0&1&1\\ \end{bmatrix} 
+\qquad \small S_k = A \cdot U_k 
+\qquad \small S_k = [26, 50, 94, 180] 
+t(n)
+t(n+a),t(n+b),t(n+c),t(n+d)
+ \sum_{k=0}^n t(k) = \frac{t(n) - t(n+1) + t(n+3) - 1}{3}. 
+t(n)
+A,B,C,D
+E
+ t(n) = c_1 \lambda_1^n + c_2 \lambda_2^n + c_3 \lambda_3^n + c_4 \lambda_4^n, 
+ \sum_{k=0}^n t(k) = \frac{c_1}{\lambda_1 - 1} \lambda_1^{n+1} + \cdots + \frac{c_4}{\lambda_4 - 1} \lambda_4^{n+1} - \left( \frac{c_1}{\lambda_1 - 1} + \cdots + \frac{c_4}{\lambda_4 - 1} \right). 
+ \sum_{k=0}^n = A t(n) + B t(n+1) + C t(n+2) + D t(n+2) + E 
+ \begin{align*} \frac{c_1}{\lambda_1 - 1} \lambda_1 &= A + B\lambda_1 + C\lambda_1^2 + D\lambda_1^3 \\ \cdots \\ \frac{c_4}{\lambda_4 - 1} \lambda_4 &= A + B\lambda_4 + C\lambda_4^2 + D\lambda_4^3 \end{align*} 
+ E = - \left( \frac{c_1}{\lambda_1 - 1} + \cdots + \frac{c_4}{\lambda_4 - 1} \right). 

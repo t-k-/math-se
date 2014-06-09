@@ -1,0 +1,11 @@
+n \geq 0, k \geq 1
+A(n,k) = k \cdot A(n-1,k) + (n-k+1) \cdot A(n-1,k-1)
+ \begin{array}{l|r} \text{Permutation} & \text{#} \\ 12 & 0 \\ 21 & 1 \\ \end{array} 
+ \begin{array}{l|r|l|r}  \text{Permutation} & \text{#} & \text{Permutation} & \text{#} \\ 123 & 0 & 132 & 1 \\ 213 & 1 & 231 & 1 \\ 312 & 1 & 321 & 2 \end{array} 
+ \begin{array}{l|r|l|r|l|r}  \text{Permutation} & \text{#} & \text{Permutation} & \text{#} & \text{Permutation} & \text{#}  \\ 1234 & 0 & 1243 & 1 & 1324 & 1 \\ 1342 & 1 & 1432 & 2 & 1423 & 1 \\ \hline 2134 & 1 & 2143 & 2 & 2314 & 1 \\ 2341 & 1 & 2413 & 1 & 2431 & 2 \\ \hline 3124 & 1 & 3142 & 2 & 3214 & 2 \\ 3241 & 2 & 3412 & 1 & 3421 & 2 \\ \hline 4123 & 1 & 4132 & 2 & 4231 & 2 \\ 4213 & 2 & 4312 & 2 & 4321 & 3  \end{array} 
+\begin{array}{lllll} A(4,1) & = 1  \cdot A(3,1) & + 4 \cdot A(3,0) & =  1 \cdot 1  + 4 \cdot 0 & = 1 \\ A(4,2) & = 2 \cdot A(3,2) & + 3 \cdot A(3,1) & = 2 \cdot 4 + 3 \cdot 1 & = 11 \\ A(4,3) & = 3 \cdot A(3,3) & + 2 \cdot A(3,2) & = 3 \cdot 1 + 2 \cdot 4 & = 11 \\ A(4,4) & = 4 \cdot A(3,4) & + 1 \cdot A(3,3) & = 4 \cdot 0 + 1 \cdot 1 & = 1 \end{array}
+n-1
+k-1
+n
+k-1
+n

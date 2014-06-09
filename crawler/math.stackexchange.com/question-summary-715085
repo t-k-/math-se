@@ -1,0 +1,55 @@
+\vec{m} + s\vec{k}
+\vec{n} + t\vec{j}
+s
+t
+\begin{cases} m_x + sk_x = n_x + tj_x \\ m_y + sk_y = n_y + tj_y \\ \end{cases}
+k_x
+j_x
+k_y
+j_y
+ A = \begin{bmatrix} lk_x & lk_y & -l(m_xk_x + m_yk_y) \\ -lk_y & lk_x & l(m_xk_y - m_yk_x) \\ 0 & 0 & 1 \\ \end{bmatrix} 
+ l = \frac{1}{|k|^2} 
+\vec{n}
+\vec{j}
+(Aj)_y = 0
+\vec{m} + s\vec{k}
+\vec{n} + t\vec{j}
+(t, s)
+\vec{m} + s\vec{k} = \vec{n} + t\vec{j}; \tag{1}
+\vec m - \vec n = t \vec j - s \vec k, \tag{2}
+\vec m - \vec n = [\vec j \; -\vec k] \begin{pmatrix} t \\ s \end{pmatrix}, \tag{3}
+[\vec j \; -\vec k]
+2 \times 2
+\vec j
+-\vec k
+[\vec j \; -\vec k] = \begin{bmatrix} j_x & -k_x \\ j_y & -k_y \end{bmatrix}. \tag{4}
+\det [\vec j \; -\vec k] = j_y k_x - j_x k_y, \tag{5}
+[\vec j \; -\vec k]^{-1} = \dfrac{1}{j_y k_x - j_x k_y} \begin{bmatrix} -k_y & k_x \\ -j_y & j_x \end{bmatrix}, \tag{6}
+\det [\vec j \; -\vec k] \ne 0
+\begin{pmatrix} t \\ s \end{pmatrix} = [\vec j \; -\vec k]^{-1}(\vec m - \vec n) \tag{7}
+s
+t
+\det [\vec j \; -\vec k] = 0
+[\vec j \; -\vec k]
+\vec j
+\vec k
+\vec m - \vec n
+\vec j
+\vec k
+\vec j \ne 0
+\vec k = \alpha \vec j
+t\vec j - s \vec k = t\vec j - s\alpha \vec j = \vec m - \vec n
+(t - \alpha s) \vec j = \vec m - \vec n
+\beta
+\vec m - \vec n = \beta \vec j
+t - \alpha s = \beta
+t = \beta + \alpha s
+\vec k \ne 0
+\vec m - \vec n
+\vec j
+\vec k
+ \left(\begin{pmatrix}m_x\\m_y\\1\end{pmatrix}\times \begin{pmatrix}k_x\\k_y\\0\end{pmatrix}\right)\times \left(\begin{pmatrix}n_x\\n_y\\1\end{pmatrix}\times \begin{pmatrix}j_x\\j_y\\0\end{pmatrix}\right) 
+s
+t
+\vec p
+ s=\frac{\langle\vec p-\vec m,\vec k\rangle}{\lVert\vec k\rVert^2} =\frac{(p_x-m_x)k_x + (p_y-m_y)k_y}{k_x^2+k_y^2} \qquad t=\frac{\langle\vec p-\vec n,\vec j\rangle}{\lVert\vec j\rVert^2} 

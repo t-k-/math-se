@@ -1,0 +1,15 @@
+\displaystyle\left\lvert \exp(x) - 1 - x - \frac{x^2}{2!} - \frac{x^3}{3!}\right\rvert| < \frac{e}{24}
+\forall x \in [-1,1]
+\exp(x) = \displaystyle \sum_{n=0}^{\infty} \dfrac{x^n}{n!}
+| \exp(x) - 1 - x - \frac{x^2}{2!} - \frac{x^3}{3!}| = \left | \displaystyle \sum_{n=4}^\infty \dfrac{x^n}{n!} \right | \leq \displaystyle\sum_{n=4}^\infty \left |\dfrac{x^n}{n!} \right |  
+|x| \leq 1 
+e = 2.718...
+\displaystyle\sum_{n=4}^\infty \left |\dfrac{x^n}{n!} \right | \leq \displaystyle\sum_{n=4}^\infty \left |\dfrac{e^n}{n!} \right | < e^4/24 < e/24
+\exp(x) = 1 + x + x^2/2! + x^3/3! + e^\theta x^4/4!
+\theta \in (0,1)
+|x| \leq 1
+\dfrac{e^\theta}{4!}|x^4| \leq e^\theta/24 < e/24
+\theta\in(0,1)
+x\in[-1,1]
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{e^{\theta x}}{4!}x^4
+e^{\theta x}x^4\le e^{|\theta x|}\le e^1=e

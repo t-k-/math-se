@@ -1,0 +1,41 @@
+f\colon[a,b] \to \mathbb{R}
+\mathcal{C}^1
+ X \subset [a,b] 
+f(X)
+ f,g:[a,b] \to \mathbb{R}
+ X = \left\{x\ \left|\ f(x) \ne g( x)\right\}\right. 
+\int_a^b f( x )\,dx  = \int_a^b g( x )\,dx
+X
+[a,b]-X
+L>0
+f
+I
+[a,b]
+\alpha:=\inf_{x\in I}f(x)
+\beta:=\sup_{x\in I}f(x)
+f(I)\subset I':=[\alpha,\beta]
+X\subset [a,b]
+\epsilon>0
+I_k\subset [a,b]
+X\subset\bigcup_k I_k
+\sum_k|I_k|\leq \epsilon/L
+I_k
+I_k'
+f(I_k)\subset I_k'
+|I_k'|\leq L\>|I_k|
+f(X)\subset\bigcup_k I_k'
+(*)
+\sum_k|I_k'|\leq\epsilon
+|I'|=\beta-\alpha\leq \sup_{x,y\in I}|f(y)-f(x)|\leq L\>|I|\ .\qquad(*)
+\epsilon>0
+[a,b]=\bigcup I_k
+[a,b]
+\xi_k\in I_k
+X
+\xi_k\in I_k
+f(\xi_k)=g(\xi_k)
+f
+g
+|\int_a^b f(x)\ dx -\int_a^b g(x)\ dx|<2\epsilon\ 
+\epsilon>0
+\Bigl|\int_a^b f(x)\ dx-\sum_k f(\xi_k)\ |I_k|\Bigr|<\epsilon,\qquad  \Bigl|\int_a^b g(x)\ dx-\sum_k g(\xi_k)\ |I_k|\Bigr|<\epsilon\ .

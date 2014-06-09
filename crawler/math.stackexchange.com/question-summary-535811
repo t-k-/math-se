@@ -1,0 +1,11 @@
+x,y,z
+x\sim\exp(\lambda), y\sim\exp(\mu), z\sim\exp(\gamma)
+u=\min(x,y), v=\min(y,z)
+p(U>u,V>v)
+u>v,v>u
+p(U>u,V>v):
+u>v \implies \exp[-(\mu+\lambda)u]\exp[-(\gamma)v]
+v>u \implies \exp[-(\mu+\gamma)v]\exp[-(\lambda)u]
+p(U>u,V>v)
+g(u,v)
+\begin{align} \text{(a)}& \text{Find }P(U>u,V>v) \text{ for } u,v>0.\text{ Consider the cases }u>v\text{ and }u<v\text{ separately.}\\ \text{(b)}&\text{Differentiate (a) with respect to }u \text{ and }v,\text{ obtaining a "joint density" function,}\\ &g(u,v) \text{ say}.\\ \text{(c)}&\text{Show that }\int_0^\infty\int_0^\infty g(u,v)\text{ }du\text{ }dv\text{ }= (\gamma+\lambda)/(\gamma + \lambda + \mu).\text{ Why isn't this integral}\\ &\text{equal to 1?} \end{align}

@@ -1,0 +1,36 @@
+N
+ {2N \choose N } < 2^N {N \choose N/2 } < 2 {2N \choose N } 
+\frac{2^N {N \choose N/2 }}{{2N \choose N }} \to \sqrt{2} 
+N
+n
+\{1,\dots, 2n\}
+\{1, \dots, n\}
+\{n+1, \dots, 2n\}
+n
+2^n
+{n \choose \lfloor n/2 \rfloor}
+{2n \choose n} <2^n{n \choose \lfloor n/2 \rfloor}
+{2n \choose n} = \sum_{k=0}^n{n\choose k}^2 \leq {n\choose \lfloor n/2 \rfloor}\sum_{k=0}^n {n\choose k} = 2^n {n\choose \lfloor n/2 \rfloor}.
+2^{2N}
+2N
+N
+\frac{1}{2^{2N}}\binom{2N}{N} <\frac{1}{2^N} \binom{N}{N/2},
+2n
+2n-2
+2n
+n-2
+2n-2
+2n-2
+\binom{2n+1}{n} = \frac{2n+1}{n+1}\binom{2n}{n} < 2\binom{2n}{n}
+ 2^n \binom{n}{n/2} < \binom{2n+1}{n} 
+\frac{2^{n} {N\choose\lfloor\frac{N}{2}\rfloor}}{{2N\choose N}}=2^n\frac{N!}{\lfloor\frac{N}{2}\rfloor!\left(N-\lfloor\frac{N}{2}\rfloor\right)!}\cdot\frac{N!N!}{\left(2N\right)!}
+=2^N\cdot\frac{\left(N\cdot N-1\cdots \lfloor\frac{N}{2}\rfloor+1\right)\left(N\cdot N-1\cdots \lceil\frac{N}{2}\rceil+1\right)}{(2N)\cdot (2N-1)\cdots (N+1)}
+N
+N
+N
+=2^N\cdot\frac{(N)\cdot (N-1)\cdots(\frac{N}{2}+1)}{(2N)\cdot (2N-2)\cdots (N+2)}\cdot\frac{(N)\cdot (N-1)\cdots(\frac{N}{2}+1)}{(2N-1)\cdot (2N-3) \cdots (N+1)}
+=2^N\cdot\frac{1}{2^{\frac{N}{2}}}\cdot\frac{1}{2^{\frac{N}{2}}}\prod^{N}_{k=\frac{N}{2}+1}\left(1 - \frac{1}{2k}\right)^{-1}
+=\prod^{N}_{k=\frac{N}{2}+1}\left(1 - \frac{1}{2k}\right)^{-1}
+N
+=\prod_{k=\frac{N+1}{2}+1}^{N}\left(1 - \frac{1}{2k}\right)^{-1}
+P=\prod_{k=1}^{n}\left(1 - \frac{1}{2k}\right)

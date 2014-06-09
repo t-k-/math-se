@@ -1,0 +1,6 @@
+ f(x) = (5-x) / 10
+E(x)= \sum_{x=1}^4 f(x)\cdot x
+E(X) = .4 * 200 + .3 * 400 + .2 * 500 + .1 * 600 = 360
+\operatorname{Pay}(x) =\begin{cases} 200x & 1\leq x \leq 2 \\ 400+100(x-2) & 3\leq x \leq 4\end{cases}
+\operatorname{Pay}(\operatorname{E}[X]) = \operatorname{Pay}\left(\sum\limits_{x=1}^4 x f(x)\right)
+\operatorname{E}[\operatorname{Pay}(X)] = \sum\limits_{x=1}^4 \operatorname{Pay}(x) f(x)

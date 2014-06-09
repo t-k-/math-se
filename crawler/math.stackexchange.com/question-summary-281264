@@ -1,0 +1,25 @@
+\sum_{r=1}^n \sin{\frac{r \pi}{n}} = \Im{\sum_{r=1}^n e^{i r \frac{\pi}{n}}} 
+ = \Im{\left [ \frac{e^{i \frac{\pi}{n}} - e^{i \frac{(n+1)\pi}{n}}}{1-e^{i \frac{\pi}{n}}} \right ]}
+ = \Im{\left [ \frac{1 - e^{i \frac{n \pi}{n}}}{e^{-i \frac{\pi}{n}}-1} \right ]}
+ = \frac{2}{4 \sin^2{\frac{\pi}{2 n}}} \Im{\left [e^{i \frac{\pi}{n}}-1 \right ]} 
+ = \frac{2}{4 \sin^2{\frac{\pi}{2 n}}} \sin{\frac{\pi}{n}} 
+ = \cot{\frac{\pi}{2 n}} 
+n \rightarrow \infty
+\cot{\frac{\pi}{2 n}} \sim \frac{2 n}{\pi} (n \rightarrow \infty)
+ \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{r=1}^n \sin{\frac{r \pi}{n}} 
+\frac{2}{\pi}
+L
+\log{L} = \lim_{n \rightarrow \infty} \frac{1}{n} \sum_{k=0}^n k \log{\left ( 1 + \frac{k^2}{n^2} \right )} 
+ = \lim_{n \rightarrow \infty} n \int_0^1 dx \: x \log(1+x^2) 
+ L = \lim_{n\to\infty}\left[\left(1+\frac1{n^2}\right){\left(1+\frac{2^2}{n^2}\right)}^2\cdots{\left(1+\frac{n^2}{n^2}\right)}^n\right]^{\frac1{n^2}} 
+ \log{L} = \int_0^1 dx \: x \log(1+x^2) = \log{2} - \frac{1}{2} 
+L = \frac{2}{\sqrt{e}} 
+\lfloor n/2\rfloor
+\frac{2}{\pi}x\le \sin x\le x, \space x\in[0,\pi/2]
+{‎‎‎‎\int_‎a^b}{f(x)} \ dx  = \frac{b-a}{n}\lim‎_{n‎‎‎‎\to\infty‎}\sum_{‎i=0‎‎}‎^n f(a+i\frac{b-a}{n})‎‎‎‎
+‎f(x)=\sin(\pi x) , ‎b=‎1‎ , ‎a=0
+‎\lim_{n\to\infty}\sum_{‎i=0‎‎}‎^n \sin\frac{‎i ‎\pi‎}{‎n‎} =‎ ‎‎‎‎{\int_0^1}‎ ‎{sin \pi ‎x‎} ‎\ dx = ‎‎‎‎\frac{2}{‎\pi‎}‎‎
+f(x)=x \ln(1+x^2)
+b=1
+a=0
+ \lim_{n\to\infty}\frac1n\sum_{i=1}^n\frac in\ln\left(1+(\frac{i}{n})^2\right)=\int_0^1x\ln(1+x^2)\,\mathrm{d}x =\frac{2}{\sqrt e}

@@ -1,0 +1,21 @@
+f(x)
+g(x)
+\left(f\circ g(x)\right)' = f'\circ g(x)\cdot g'(x)
+\mathop {\lim }\limits_{\Delta x \to 0} \frac{{f\left( {g\left( {x + \Delta x} \right)} \right) - f\left( {g\left( x \right)} \right)}}{{\Delta x}}
+\mathop {\lim }\limits_{\Delta x \to 0} \frac{{f\left( {g\left( {x + \Delta x} \right)} \right) - f\left( {g\left( x \right)} \right)}}{{g\left( {x + \Delta x} \right) - g\left( x \right)}}\frac{{g\left( {x + \Delta x} \right) - g\left( x \right)}}{{\Delta x}}
+g\left( {x + \Delta x} \right) - g\left( x \right) = \Delta g\left( x \right)
+\mathop {\lim }\limits_{\Delta x \to 0} \frac{{f\left( {g\left( x \right) + \Delta g\left( x \right)} \right) - f\left( {g\left( x \right)} \right)}}{{\Delta g\left( x \right)}}\frac{{g\left( {x + \Delta x} \right) - g\left( x \right)}}{{\Delta x}}
+\Delta x \to 0 \Rightarrow \Delta g\left( x \right) \to 0
+{\Delta g\left( x \right)}
+g\left( {x + \Delta x} \right) - g\left( x \right) = \Delta g
+\mathop {\lim }\limits_{\Delta x \to 0} \frac{{\Delta f\left( {g\left( x \right)} \right)}}{{\Delta g\left( x \right)}}\frac{{\Delta g\left( x \right)}}{{\Delta x}}
+\frac{{df}}{{dx}} = \frac{{df}}{{dg}}\frac{{dg}}{{dx}}
+f'(x)
+f(x + \epsilon) = f(x) + \epsilon f'(x) + o(\epsilon).
+f(x + \epsilon) \approx f(x) + \epsilon f'(x).
+g(x + \epsilon) \approx g(x) + \epsilon g'(x).
+f(g(x+\epsilon)) \approx f(g(x) + \epsilon g'(x)) \approx f(g(x)) + \epsilon g'(x) f'(g(x)).
+(f \circ g)'(x) = f'(g(x)) g'(x).
+y \approx z \Longrightarrow f(y) \approx f(z), 
+\Delta x \rightarrow 0 \implies \Delta g \rightarrow 0
+g

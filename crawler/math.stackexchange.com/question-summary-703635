@@ -1,0 +1,9 @@
+x\sin(4x+5y)=y\cos(x)
+4x\cos(4x+5y)=-y\sin(x)
+x
+y
+\begin{align}\frac{d}{dy}(x\sin(4x+5y)) &\stackrel{\text{product rule}}{=} \left(\frac{d}{dy}x\right)\sin(4x+5y)+x\frac{d}{dy}\sin(4x+5y)\\ &\stackrel{\text{chain rule}}{=} \frac{dx}{dy}\sin(4x+5y) + x\cos(4x+5y)\cdot\frac{d}{dy}(4x+5y)\\ &= \frac{dx}{dy}\sin(4x+5y)+x\cos(4x+5y)\left(4\frac{dx}{dy}+5\right)\end{align}
+\frac{d}{dx}\left(x\sin(4x+5y)=y\cos(x)\right)\\ \implies \sin(4x+5y)+x\frac{d}{dx}\sin(4x+5y)=\cos(x)\frac{dy}{dx}+y\frac{d}{dx}\cos(x)
+\frac{d}{dx}\sin(4x+5y)=\frac{d}{d(4x+5y)}(\sin(4x+5y))\cdot\left(20y+20x\frac{dy}{dx}\right)=\\20\cos(4x+5y)\left(y+x\frac{dy}{dx}\right)
+\frac{d}{dx}\cos(x)=-\sin(x)
+\sin(4x+5y)+x\frac{d}{dx}\sin(4x+5y)=\cos(x)\frac{dy}{dx}+y\frac{d}{dx}\cos(x)\\ \implies\sin(4x+5y)+20x\cos(4x+5y)\left(y+x\frac{dy}{dx}\right)=\cos(x)\frac{dy}{dx}-y\sin(x)\\ \implies \sin(4x+5y)+20x\cos(4x+5y)y+y\sin(x)=\left(\cos(x)-20x^2\cos(4x+5y)\right)\frac{dy}{dx}\\ \implies\boxed{\dfrac{dy}{dx}=\dfrac{\sin(4x+5y)+20x\cos(4x+5y)y+y\sin(x)}{\cos(x)-20x^2\cos(4x+5y)}}

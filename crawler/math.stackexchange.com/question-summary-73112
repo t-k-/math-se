@@ -1,0 +1,24 @@
+e^{At}
+A = \begin{bmatrix} 1 & -1 & 1 &  0\\ 1 &  1 & 0 &  1\\ 0 &  0 & 1 & -1\\ 0 &  0 & 1 &  1\\ \end{bmatrix}
+e^{A}
+A = \begin{bmatrix} B & I_{2}\\ 0_{22} & B\\ \end{bmatrix}
+B = \begin{bmatrix} 1 & -1\\ 1 &  1\\ \end{bmatrix}
+A = \mathrm{diag}(B,B) + \begin{bmatrix}0_{22} & I_{2}\\ 0_{22} & 0_{22}\end{bmatrix}
+S = \mathrm{diag}(B,B)
+N = \begin{bmatrix}0_{22} & I_{2}\\ 0_{22} & 0_{22}\end{bmatrix}
+N^2
+0_{44}
+e^{N} = \frac{N^{0}}{0!} + \frac{N}{1!} + \frac{N^2}{2!} + \cdots = I_{4} + N + 0_{44} + ... = I_{4} + N
+e^{S} = \mathrm{diag}(e^{B}, e^{B})
+e^{A} = e^{S + N} = e^{S}e^{N} = \mathrm{diag}(e^{B}, e^{B})\cdot[I_{4}  + N]
+e^B
+{a+bi\in\mathbb C \mapsto \pmatrix{a&-b \\ b&a}\in\mathbb R^{2\times 2}}
+e^{t\pmatrix{1+i & 1\\ 0 & 1+i}}=e^{\pmatrix{t+ti & t\\ 0 & t+ti}}=e^{t+ti}e^{\pmatrix{0&t\\0&0}}=(e^{t+ti})\pmatrix{1&t\\0&1}
+\pmatrix{e^t\cos t & -e^t\sin t & t e^t \cos t & -t e^t \sin t \\ e^t \sin t & e^t \cos t & t e^t \sin t & t e^t \cos t \\ 0 & 0 & e^t\cos t & -e^t\sin t \\ 0&0& e^t\sin t & e^t\cos t }
+M(t) = \exp(t A)
+M^\prime(t) = A \cdot M(t)
+n(t)
+n(t) = t \exp(t B)
+ M(t) = \left(\begin{array}{cc} \exp(t B) & n(t) \\ 0_{2 \times 2} & \exp(t B) \end{array} \right). 
+    n^\prime(t) = \mathbb{I}_{2 \times 2}  \cdot \exp(t B) + B \cdot n(t) 
+   \frac{\mathrm{d}}{\mathrm{d} t} \left( \exp(-t B) n(t) \right) = \mathbb{I}_{2 \times 2} 

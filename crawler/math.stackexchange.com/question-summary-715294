@@ -1,0 +1,16 @@
+x_1,\ldots,x_n
+y_1,\ldots,y_n
+y_i=2(x_i+3)=2x_i+6
+i
+\bar{y}=2\bar{x}+6
+y_1,\ldots,y_n
+ \bar{x}=\frac1n\sum_{i=1}^n x_i=22,\quad \sigma_x=\sqrt{\frac1n\sum_{i=1}^n(x_i-\bar{x})^2}=6. 
+ y_i-\bar{y}=2x_i+6-(2\bar{x}+6)=2(x_i-\bar{x}). 
+ \sigma_y=\sqrt{\frac1n\sum_{i=1}^n(y_i-\bar{y})^2}=\sqrt{4\frac1n\sum_{i=1}^n(x_i-\bar{x})^2}=2\sigma_x. 
+ \mathbb{E}(aX + b) = \mathbb{E}(aX) + \mathbb{E}(b) = a\mathbb{E}(X) + b 
+\mathbb{E}(\mathbb{E}(Y)) = Y
+\sigma_X
+\sqrt{\mathbb{V}(X)}
+ \begin{eqnarray} \mathbb{V}(X) &=& \mathbb{E}((X-\mathbb{E}(X))^2) \\ &=& \mathbb{E}(X^2 -2X\mathbb{E}(X) + (\mathbb{E}(X))^2) \\ &=& \mathbb{E}(X^2) - \underbrace{\mathbb{E}(2X\mathbb{E}(X))}_{=2\mathbb{E}(X)\mathbb{E}(\mathbb{E}(X))} + (\mathbb{E}(X))^2) \\ &=& \mathbb{E}(X^2) - (\mathbb{E}(X))^2 \end{eqnarray} 
+ \begin{eqnarray} \mathbb{V}(aX + b) &=& \mathbb{E}((aX+b)^2) - (\mathbb{E}(aX+b))^2 \\ &=& \mathbb{E}(a^2X^2 + 2abX + b^2) - (a\mathbb{E}(X) + b)^2 \\ &=& a^2\mathbb{E}(X)^2 + 2ab\mathbb{E}(X) + b^2 - (a^2(\mathbb{E}(X))^2 + 2ab\mathbb{E}(X) + b^2) \\ &=& a^2\mathbb{E}(X)^2 - a^2(\mathbb{E}(X))^2 \\ &=& a^2\mathbb{V}(X) \end{eqnarray} 
+   \sigma_{aX + b} = \sqrt{\mathbb{V}(aX+b)} = \sqrt{a^2\mathbb{V}(X)} = a\sqrt{\mathbb{V}(X)} = a\sigma_X. 

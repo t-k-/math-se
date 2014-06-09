@@ -1,0 +1,22 @@
+R
+\mathbb{Q}
+r \in R
+n \in \mathbb{N}
+\binom{r}{n}
+\binom{r}{0}=1
+\binom{r}{n+1}=\frac{r-n}{n+1} \cdot \binom{r}{n}
+r,s \in R
+n \in \mathbb{N}
+\binom{r+s}{n}=\sum_{p+q=n} \binom{r}{p} \cdot \binom{s}{q}
+R
+n
+\prod_{k=0}^{n-1} (r+s-k)=\sum_{p=0}^{n} \binom{n}{p} \cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{n-p-1} (s-j).
+r,n
+R
+R
+\Lambda^n(r)
+\Lambda^n(r+s) \cong \oplus_{p+q=n} \Lambda^p(r) \otimes \Lambda^q(s)
+\Lambda^n(r)
+r \in \mathbb{N}
+\Lambda^n(R^r)
+\begin{align*} (r+s-n)\prod_{k=0}^{n-1} (r+s-k) & =\sum_{p=0}^{n} \binom{n}{p} \left([r-p]+[s-(n-p)]\right)\cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{n-p-1} (s-j) \\ & =\sum_{p=0}^{n} \binom{n}{p} \cdot \prod_{i=0}^{\color{red}{p}} (r-i) \cdot \prod_{j=0}^{n-p-1} (s-j) \\&\phantom{=}+ \sum_{p=0}^{n} \binom{n}{p} \cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{\color{red}{n-p}} (s-j) \\ &=\binom{n}{n} \cdot \prod_{i=0}^{n} (r-i) + \sum_{p=\color{red}{1}}^{\color{red}{n}} \binom{n}{\color{red}{p-1}} \cdot \prod_{i=0}^{\color{red}{p-1}} (r-i) \cdot \prod_{j=0}^{\color{red}{n-p}} (s-j) \\&\phantom{=}+ \binom{n}{0}\prod_{j=0}^{n} (s-j) +\sum_{p=1}^{n} \binom{n}{p} \cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{n-p} (s-j) \\ &=\binom{n+1}{n+1} \cdot \prod_{i=0}^{n} (r-i) \\ &\phantom{=}+ \sum_{p=1}^{n} \left[\binom{n}{p-1}+\binom{n}{p}\right] \cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{n\color{red}{+1}-p\color{red}{-1}} (s-j) \\&\phantom{=}+ \binom{n+1}{0}\prod_{j=0}^{n} (s-j)  \\ &= \sum_{p=0}^{n+1} \binom{n+1}{p} \cdot \prod_{i=0}^{p-1} (r-i) \cdot \prod_{j=0}^{n+1-p-1} (s-j). \end{align*}

@@ -1,0 +1,11 @@
+\phi(x)
+[0,1]
+M
+(i,j)^{th}
+\mathbb E(x^{i+j})
+ M_{ij} := \int_0^1 x^{i+j}\phi(x)dx, 
+z^T Mz = \begin{bmatrix} \sum_{i=1}^n M_{i1}z_i & \cdots & \sum_{i=1}^nM_{in}z_i \end{bmatrix} \begin{bmatrix} z_1\\\vdots\\z_n \end{bmatrix} 
+= \left( \sum_{i=1}^nM_{i1}z_i \right) z_1 + \cdots + \left( \sum_{i=1}^nM_{in}z_i \right) z_n 
+= \left( \sum_{i=1}^n\mathbb E(x^{i+1})z_i \right) z_1 + \cdots + \left( \sum_{i=1}^n\mathbb E(x^{i+n})z_i \right) z_n
+M = \int_0^1 \begin{bmatrix} x \\ \vdots \\ x^n\end{bmatrix}  \begin{bmatrix} x & \cdots & x^n\end{bmatrix} \phi(x) dx
+\langle v , Mv \rangle = \int_0^1 (\langle v , \begin{bmatrix} x \\ \vdots \\ x^n\end{bmatrix} \rangle )^2 \phi(x) dx \ge 0

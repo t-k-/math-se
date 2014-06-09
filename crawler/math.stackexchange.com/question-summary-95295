@@ -1,0 +1,32 @@
+\sigma=\frac{x_1 dx_2 \wedge dx_3 + x_2dx_3\wedge dx_1+ x_3 dx_1 \wedge dx_2}{(x_1^2+x_2^2+x_3^2)^{3/2}}.
+d\alpha
+\alpha=f_1dx_1+f_2dx_2+f_3dx_3,
+d\alpha=\displaystyle\sum_i df_i\wedge dx_i=\sigma.
+df_i=\frac{\partial f_i}{\partial x_1}dx_1+\frac{\partial f_i}{\partial x_2}dx_2+\frac{\partial f_i}{\partial x_3}dx_3,
+\left(\frac{\partial f_2}{\partial x_1}-\frac{\partial f_1}{\partial x_2}\right)dx_1\wedge dx_2+\left(\frac{\partial f_3}{\partial x_2}-\frac{\partial f_2}{\partial x_3}\right)dx_2\wedge dx_3+\left(\frac{\partial f_1}{\partial x_3}-\frac{\partial f_3}{\partial x_1}\right)dx_3\wedge dx_1.
+\mathbb{S}^2
+r=1
+(x_1,x_2,x_3)=(r\sin\phi\cos\theta,r\sin\phi\sin\theta,r\cos\phi),0<\theta<2\pi,0<\phi<\pi.
+(x_1,x_2,x_3)=(\sin\phi\cos\theta,\sin\phi\sin\theta,\cos\phi),
+dx_1|_{\mathbb{S}^2}=-\sin\phi\sin\theta\,d\theta+\cos\phi\cos\theta\,d\phi,
+dx_2|_{\mathbb{S}^2}=\sin\phi\cos\theta\,d\theta+\cos\phi\sin\theta\,d\phi,
+dx_3|_{\mathbb{S}^2}=-\sin\phi\,d\phi.
+dx_1\wedge dx_2\big|_{\mathbb{S}^2}=-\sin\phi\cos\phi\,d\theta\wedge d\phi,
+dx_2\wedge dx_3\big|_{\mathbb{S}^2}=-\sin^2\phi\cos\theta\,d\theta\wedge d\phi,
+dx_3\wedge dx_1\big|_{\mathbb{S}^2}=-\sin^2\phi\sin\theta\,d\theta\wedge d\phi.
+\sigma
+\sigma\big|_{\mathbb{S}^2}=\Big(\frac{x_1 dx_2 \wedge dx_3 + x_2dx_3\wedge dx_1+ x_3 dx_1 \wedge dx_2}{(x_1^2+x_2^2+x_3^2)^{3/2}}\Big)\Big|_{\mathbb{S}^2}
+=\big(x_1 dx_2 \wedge dx_3 + x_2dx_3\wedge dx_1+ x_3 dx_1 \wedge dx_2\big)\big|_{\mathbb{S}^2}
+=-\sin^3\phi\cos^2\theta\,d\theta\wedge d\phi-\sin^3\phi\sin^2\theta\,d\theta\wedge d\phi-\sin\phi\cos^2\phi\,d\theta\wedge d\phi
+=-\sin\phi\,d\theta\wedge d\phi.
+\sigma
+\sigma=df
+f
+\partial \mathbb{S}^2=\varnothing
+\mathbb{S}^2
+\int_{\mathbb{S}^2}\sigma=\int_{\mathbb{S}^2}df=\int_{\partial \mathbb{S}^2}f=0
+\int_{\mathbb{S}^2}\sigma=-\int_{0}^\pi\int_0^{2\pi}\sin\phi\,d\theta d\phi=-4\pi, 
+d\sigma = 0
+ \int_S d\alpha = \int_{\partial S} \alpha = 0 \ . 
+S
+\int_S \sigma \neq 0

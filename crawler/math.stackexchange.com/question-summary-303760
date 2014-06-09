@@ -1,0 +1,6 @@
+\displaystyle\sum_{k=1}^\infty\frac{\sin^2k}{k}
+0
+\begin{align} \sin^2(k) + \sin^2(k+1) &= \frac12(1-\cos(2k)) + \frac12(1-\cos(2k+2))\\ &= 1 - \cos(1)\cos(2k+1)\\ &\ge 1 - \cos(1)\end{align}
+\infty
+N \to \infty
+ \sum_{k=1}^{2N} \frac{\sin^2(k)}{k} = \sum_{k=1}^N\left(\frac{\sin^2(2k-1)}{2k-1} + \frac{\sin^2(2k)}{2k}\right) \ge \frac{1-\cos(1)}{2}\sum_{k=1}^N\frac{1}{k} 

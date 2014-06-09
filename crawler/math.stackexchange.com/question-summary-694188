@@ -1,0 +1,23 @@
+Y
+u_0>0
+u>0
+Y(nu) = \sum_{k=1}^n Y(ku)-Y((k-1)u)
+u
+Y
+Y(nu)/n
+Y(nu)/n \leq Y((n+1)u)/(n+1)
+\lim_{n \to \infty} \sup_{u \leq u_0} \left| \frac{Y(nu)}{n}-u \right|=0 \quad \text{a.s.}
+p_n := \mathbb{P} \left( \sup_{u \leq u_0} \left| \frac{Y(nu)}{n}-u\right| > 3\varepsilon \right) \leq 3\sup_{u \leq u_0} \mathbb{P} \left( \left| \frac{Y(nu)}{n}-u\right|>\varepsilon \right). \tag{1}
+(2)
+C>0
+|\lambda| \leq 1
+\sum_{n \in \mathbb{N}} p_n<\infty; \tag{2}
+\mathbb{E}e^{\lambda \tilde{Y}_t} \leq e^{Ct \lambda^2}, \tag{3}
+\tilde{Y}_t :=Y_t-t
+(1)
+\begin{align*} p_n &\leq 3\sup_{u \leq u_0} \mathbb{P} \bigg(  Y(nu)-nu>\varepsilon n\bigg)+3\sup_{u \leq u_0} \mathbb{P} \bigg( -(Y(nu)-nu)>\varepsilon n \bigg) \\ &\leq 3 \sup_{u \leq u_0} \bigg[ \exp \left(\lambda \tilde{Y}(nu)-\varepsilon n \lambda\right)+ \exp \left(-\lambda \tilde{Y}(nu)-\varepsilon n \lambda\right) \bigg]. \end{align*}
+\lambda=\frac{1}{\sqrt{n}}
+(2)
+p_n \leq 6 \exp \left( C u_0-\varepsilon \sqrt{n} \right).
+(2)
+\lim_{n \to \infty} \sup_{u \leq u_0} \left| \frac{Y(nu)}{n}-\mathbb{E}Y_1 \cdot u \right|=0 \quad \text{a.s.}

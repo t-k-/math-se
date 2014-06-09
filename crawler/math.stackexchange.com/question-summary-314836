@@ -1,0 +1,60 @@
+^{*n}
+n
+z
+n
+2\sinh(z)
+\exp(z)-\exp(-z)
+\text{arc2sinh}
+n
++\infty
+\text{arc2sinh}^{*n}(\exp(2\sinh^{*n}(z)))  = f(z)
+z
+f(z)
+g^{[n]}(x) = \begin{cases}\underbrace{g(g(\cdots(g(x)))}_{n\,\text{times}} & n > 0\\x & n = 0\\ \overbrace{g^{[-1]}(g^{[-1]}(\cdots(g^{[-1]}(x)))}^{|n|\,\text{times}} & n < 0\end{cases}
+\frac{d}{dx}g^{[-1]}(x) = \frac{1}{\sqrt{x^2+4}}
+g^{[-1]}
+\mathbb{R}
+|g^{[-1]}(x_1) - g^{[-1]}(x_2)| \le \frac12 |x_1 - x_2|,\,\,\,\forall x_1,x_2\in\mathbb{R}
+x > 0
+g(x) > 2 x
+\begin{align} & g^{[n]}(x) > 2^n x\\ \implies & g^{[n+1]}(x) < \exp(g^{[n]}(x)) = g^{[n+1]}(x) + e^{-g^{[n]}(x)} < g^{[n+1]}(x) + e^{-2^n x}\\ \implies &  g(x) < g^{[-n]}(\exp(g^{[n]}(x))) < g(x) + 2^{-n} e^{-2^n x} \end{align}
+n \to \infty
+f(x) = \lim_{n\to\infty} g^{[-n]}(\exp(g^{[n]}(x))) = g(x)
+x > 0
+x \le 0
+g(x) \le -2|x|
+\begin{align} &g^{[n]}(x) \le -2^n|x|\\ \implies & 0 \le \exp(g^{[n]}(x)) \le e^{-2^n|x|}\\ \implies & 0 \le g^{[-n]}(\exp(g^{[n]}(x))) \le 2^{-n} e^{-2^n|x|} \end{align}
+f(x) = 0
+x \le 0
+f(z)
+z = 0
+z \in \mathbb{C} \setminus \mathbb{R}
+R_{n}
+I_{n}
+R_{n} = \{ z \in \mathbb{C} : g^{[n]}(z) \in \mathbb{R} \} \,\,\,\text{ and } \,\,\,   I_{n} = \{ z \in \mathbb{C} : g^{[n]}(z) \in i \mathbb{R} \}
+R = \cup_{n=1}^{\infty} R_n
+I = \cup_{n=1}^{\infty} I_n
+R_n
+I_n
+n > 1
+R_n
+I_n
+z
+g(z)
+z \sim 0
+z
+g^{[n]}(z)
+0
+R_n
+I_n
+g(z)
+\pm z_{st} \sim \pm 1.895494267 i
+k
+g^{[k]}(z)
+g
+\pm z_{st}
+g^{[-n]}
+f
+f(z) = 0
+g^{[-n]}(\exp(g^{[n]}(z))
+f(z)

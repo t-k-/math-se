@@ -1,0 +1,34 @@
+X_i
+i
+0\le x\le1
+Y(x)
+X_i
+x
+e(x)=\Bbb E [Y(x)]
+e(x)
+X_1
+y>x
+y\le x 
+\tag{1} e(x)=\int_0^1 \Bbb E [ Y(x) | X_1=y]\, dy. 
+\tag{2}\Bbb E [ Y(x) | X_1=y] = \cases{1,& $y>x$\cr 1+e(x-y),& $y\le x $}.
+(2)
+(1)
+\tag{3} e(x)=1+\int_0^x e(u)\,du. 
+(3)
+x
+e(x)
+e(1)
+N
+1
+N
+P(N > n)
+n=1,2,3,\dots
+P(N = n) = P(N > n-1) - P(N > n)
+(N > n)
+n
+1
+P(N > n) = P(U_1 + U_2 + \dots + U_n < 1)
+\frac{1}{n!}
+P(N = n) = \frac{1}{(n-1)!} - \frac{1}{n!} = \frac{n-1}{n!}
+n=1,2,3\dots
+E(N) = \sum_{n=1}^{\infty} n P(N=n) = \sum_{n=1}^{\infty} \frac{n(n-1)}{n!} = \sum_{n=0}^{\infty} \frac{1}{n!} = e

@@ -1,0 +1,25 @@
+n\ge 3
+|S^{n-1}|
+x
+n
+\delta_0(x)
+\Gamma(x)=\frac{1}{(n-2)|S^{n-1}||x|^{n-2}}
+-\Delta \Gamma(x)=\delta_{0}(x)
+T_{\Gamma}:\phi \to \int_{\mathbb{R}^n}\Delta\Gamma(x)\phi(x)dx
+\phi\in D(\mathbb{R})
+R
+\phi(x)\equiv 0
+|x|>R
+\phi \in D(\mathbb{R})
+-\phi(0)
+\begin{align*} T_{\Gamma}(\phi)&=\int_{\mathbb{R}^n}\Delta\Gamma(x)\phi(x)dx=\int_{\mathbb{R}^n}\Gamma(x)\Delta\phi(x)dx\\&=\int_{B_{R}(0)}\Gamma(x)\Delta\phi(x)dx=\lim_{\epsilon\to 0}\int_{B_{R}(0)\backslash B_{\epsilon}(0)}\Gamma(x)\Delta\phi(x)dx \end{align*}
+\Gamma
+\triangle \Gamma = 0
+ \int_{B_R} \triangle \Gamma \phi \mathrm{d}x = \int_{B_R\setminus B_\epsilon} \triangle \Gamma \phi \mathrm{d}x + \int_{B_\epsilon} \triangle \Gamma \phi \mathrm{d}x 
+ = - \int_{B_\epsilon} \nabla \Gamma \cdot \nabla \phi \mathrm{d}x + \int_{\partial B_\epsilon} \nabla \Gamma \cdot \vec{n} \phi \mathrm{d}\sigma = \int_{B_\epsilon} \Gamma \triangle \phi \mathrm{d}x + \int_{\partial B_\epsilon} \nabla \Gamma \cdot \vec{n} \phi - \Gamma \nabla \phi\cdot \vec{n}\mathrm{d}\sigma 
+\Gamma
+\epsilon \to 0
+ \lim_{\epsilon \to 0} \int_{\partial B_\epsilon} \nabla \Gamma \cdot \vec{n} \phi \mathrm{d}x \tag{1}
+\nabla \Gamma \cdot \vec{n} = \partial_r \Gamma = -\frac{1}{|S^{n-1}| |x|^{n-1}}
+\phi
+-\phi(0)

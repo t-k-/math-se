@@ -1,0 +1,7 @@
+\lim_{n \to \infty} \left(\frac {f(1+\frac 1n)}{f(1)}\right)^{\frac 1n}
+\lim_{x \to 1} \left(\frac {f(x)}{f(1)}\right)^{\frac 1{\log x}}
+f(1+\frac{1}{n})\sim_\infty f(1)+ \frac{f'(1)}{n}
+\log(1+x)\sim_0 x
+\left(\frac {f(1+\frac 1n)}{f(1)}\right)^{\frac 1n}=\exp\left(\frac 1n\log\left(\frac {f(1+\frac 1n)}{f(1)}\right)\right)\sim_\infty\exp\left(\frac{f'(1)}{f(1)n^2}\right)\to 1
+\left(\frac {f(x)}{f(1)}\right)^{\frac 1{\log x}}=\exp\left(\frac 1{\log x}\log\left(\frac {f(x)}{f(1)}\right)\right)\sim_1 \exp\left(\frac 1{\log x}\left(\frac{f'(1)}{f(1)}(x-1)\right)\right)\sim_1\exp\left(\frac{f'(1)}{f(1)}\right)
+f\left(1+\cfrac{1}{n}\right)=f(1)+f'(1)\cfrac{1}{n}+o\left(\cfrac{1}{n}\right)

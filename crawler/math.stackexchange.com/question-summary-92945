@@ -1,0 +1,19 @@
+\displaystyle\qquad \lim\limits_{n \to \infty} \frac{4^n}{\binom{2n}{n}\sqrt{n}}.
+a_n
+b_n
+0
+n\to\infty
+b_n
+\lim_{n\to\infty}\frac{a_n}{b_n}=\lim_{n\to\infty}\frac{a_{n+1}-a_n}{b_{n+1}-b_n}
+a_n
+b_n
+b_n
+\lim_{n\to\infty}\frac{a_n}{b_n}=\lim_{n\to\infty}\frac{a_{n+1}-a_n}{b_{n+1}-b_n}
+\ln a_n
+n\to\infty
+a_n=\frac{4^n}{\binom{2n}n\sqrt n}
+\ln a_{n+1}-\ln a_n=\frac12\ln(n+1)-\ln(n+\frac12)+\frac12\ln n=-\frac1{4n^2}+O\left(\frac1{n^3}\right)\tag1
+S=\lim_{n\to\infty}\ln a_n
+a_n-S
+\ln a_n=S-\sum_{k\ge n}(\ln a_k-\ln a_{k+1})
+a_n^2=\left(\frac{(2n-1)!!}{(2n)!!}\right)^2(2n+1)\cdot\frac n{2n+1}\to\frac1\pi

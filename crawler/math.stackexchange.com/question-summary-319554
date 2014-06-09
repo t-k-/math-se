@@ -1,0 +1,28 @@
+x_{0}
+x_{0} = a
+x_{1} = x_{0} + \frac{1}{1}(x_{0} + x_{0}(b - 1))
+x_{2} = x_{1} + \frac{1}{2}(x_{0} + x_{1}(b - 1))
+x_{n} = x_{n-1} + \frac{1}{n}(x_{0} + x_{n-1}(b - 1))
+z
+f(z):=x_0 + x_1z + x_2z^2 + \cdots
+z^n
+n=0
+\infty
+1/n
+n=1
+\infty
+f(z)-x_0
+zf(z)
+-x_0\log(1-z)
+1/(1-z)
+c_1
+f(0)=x_0
+c_1=bx_0/(b-1)
+x_nz^n = x_{n-1}z^n + \frac{b-1}{n}x_{n-1}z^n + \frac{x_0}{n}z^n.
+\sum_{n=1}^\infty x_nz^n = \sum_{n=1}^\infty x_{n-1}z^n + \sum_{n=1}^\infty\frac{b-1}{n}x_{n-1}z^n + \sum_{n=1}^\infty \frac{x_0}{n}z^n.
+\frac{x_0}{1}z + \frac{x_1}{2}z^2 + \cdots = \int_0^z (x_0 + x_1w + x_2w^2 + \cdots)\,dw = \int_0^z f(w)\,dw.
+f(z)-x_0 = zf(z) + (b-1)\int_0^z f(w)\,dw -x_0\log(1-z),
+f'(z) = zf'(z) + f(z)+(b-1)f(z) + \frac{x_0}{1-z},
+(1-z)f'(z)=bf(z) + \frac{x_0}{1-z}. 
+f(z)=\frac{-x_0}{(b-1)(1-z)} + c_1(1-z)^{-b},
+ f(z)=\frac{x_0}{b-1}\left(\frac{-1}{1-z}+b(1-z)^{-b}\right).

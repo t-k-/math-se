@@ -1,0 +1,15 @@
+\begin{matrix} X_k= \underbrace{\sum \limits_{m=0}^{N/2-1} x_{2m}   e^{-\frac{2\pi i}{N/2} mk}}_{\mathrm{DFT\;of\;even-indexed\;part\;of\;} x_m} {} +  e^{-\frac{2\pi i}{N}k} \underbrace{\sum \limits_{m=0}^{N/2-1} x_{2m+1} e^{-\frac{2\pi i}{N/2} mk}}_{\mathrm{DFT\;of\;odd-indexed\;part\;of\;} x_m} =  E_k + e^{-\frac{2\pi i}{N}k} O_k.\end{matrix}
+\begin{matrix} X_k & =& \left\{\begin{matrix}E_k + e^{-\frac{2\pi i}{N}k} O_k & \mbox{if } k < N/2 \\ \\E_{k-N/2} - e^{-\frac{2\pi i}{N} (k-N/2)} O_{k-N/2} & \mbox{if }k \geq N/2. \end{matrix} \right. \end{matrix}
+X_k = \sum_{n=0}^{N-1} x_n e^{-\frac{2\pi i}{N} nk}
+X_0 = 0 + 1
+X_1 = 0 + e^{-\pi i}
+E_0=x_0=0
+O_0=x_1=1
+N/2=1
+k=0
+k=1
+k=0
+X_0=E_0+O_0=x_0+x_1=0+1
+k=1
+x_1=E_0-O_0=x_0-x_1=0-1
+\mathrm e^{-\pi i}=-1

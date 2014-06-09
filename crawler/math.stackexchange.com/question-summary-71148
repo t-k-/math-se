@@ -1,0 +1,51 @@
+(X, \mathcal{A}, \mu)
+\mu(x) < \infty
+f:\mathbb{R} \to \mathbb{R}
+ F (u) = f \circ u
+1\leq p < \infty
+ F: L^p(X) \to L^p(X)
+(u_n)_{n\in \mathbb{N}}
+ \| u_n - u \|_p \to 0.
+ \| F(u_n) - F(u) \|_p \to 0.
+f
+M\in \mathbb{R}
+|f(x)| < M 
+x\in \mathbb{R}
+h_n(x) = | f( u_n(x) ) - f(u(x))|^p 
+g(x) = (2M)^p 
+ \int_X (2M)^p dx = (2M)^p \int_X d\mu = (2M)^p \mu(X) < \infty 
+f
+p
+(u_n)_{n\in \mathbb{N}}
+ \| u_n - u \|_p \to 0
+(u_{n_k}) 
+u_{n_k}
+u
+N
+0
+0
+\mu(N) = 0
+ \lim_{n\to\infty} \int_X  | f( u_n(x) ) - f(u(x))|^p dx = \int_X \lim_{n\to\infty}  | f( u_n(x) ) - f(u(x))|^p  dx. 
+ \lim_{n\to\infty} \int_X  | f( u_n(x) ) - f(u(x))|^p dx = \int_X  | f( \lim_{n\to\infty}  u_n(x) ) - f(u(x))|^p  dx. 
+ \int_X| f( \lim_{n\to\infty}  u_{n_k}(x) ) - f(u(x))|^p  dx = \int_{X/N} 0 dx + \int_N | f( \lim_{n\to\infty}  u_{n_k} (x) ) - f(u(x))|^p  dx =0
+L^p
+u\in L^p
+F
+u
+\{u_n\}\in L^p(X)
+\delta >0
+\{u_{n_k}\}
+F
+g_k\colon x\mapsto |f(u(x))-f(u_{n_k}(x))|^p
+g_k\in L^1(X)
+\lVert u-u_n\rVert_p \mbox{ converges to } 0 \mbox{ and }\lVert F(u)-F(u_n)\rVert_p\geq \delta\mbox{ for all }n.
+|g_k(x)|\leq \left(2\sup_{t\in\mathbb R}|f(t)|\right)^p
+X
+N\in\mathcal A
+x\in X\setminus N
+\lim_{k\to +\infty}u_{n_k}(x)=u(x)
+f
+\lim_{k\to +\infty}f\circ u_{n_k}(x)=f\circ u(x)
+x\in X\setminus N
+\lim_{k\to \infty}\lVert F(u_{n_k})-F(u)\rVert_p=0
+\lVert F(u_{n_k})-F(u)\rVert_p\geq \delta

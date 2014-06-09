@@ -1,0 +1,9 @@
+F(x)=\int_0^x e^{it^k}dt
+ \lim_{x\to\infty}F(x)=e^{\pi i/2k}\int_0^{\infty}e^{-t^k}dt, 
+\lim_{x\to-\infty}F(x) = -e^{(-1)^k\pi i/2k}\int_0^{\infty}e^{-t^k}dt
+r>0
+k \in \mathbb{N}, k \ge 2
+ f_k: \Omega_k:=\left\{z \in \mathbb{C}:\ |z|\le r,\ 0\le \arg z\le \theta_k:=\frac{\pi}{2k} \right\} \to \mathbb{C},\ f_k(z)=\exp(iz^k). 
+ \sin x\ge \frac{x}{2}\quad \forall x\in [0,\frac{\pi}{2}], 
+ \lim_{r\to \infty}B_k(r)=0. 
+ \int_0^\infty e^{it^k}\,dt=\int_0^\infty f_k(x)\,dx=e^{i\theta_k}\int_0^\infty e^{-t^k}\,dt=e^{i\frac{\pi}{2k}}\int_0^\infty e^{-t^k}\,dt. 

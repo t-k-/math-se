@@ -1,0 +1,26 @@
+\sum_{k=0}^m \binom{n}{k}, \quad  m<n
+\sum\limits_{k=0}^n \binom{k}{m}
+ \binom{n}{m+1} {}_2F_1(1,m+1-n;m+2;-1) = \binom{n}{m+1} \sum_{k=0}^{\infty} \frac{1^{\overline{k}} (m+1-n)^{\overline{k}} (-1)^k}{(m+2)^{\overline{k}} k!}
+= \binom{n}{m+1} \left[ 1 - \frac{1(m+1-n)}{(m+2)1} + \frac{2!(m+1-n)(m+2-n)}{(m+2)(m+3)2!} \mp \cdots \right]
+= \frac{n!}{(m+1)!(n-m-1)!} \left[ 1 + \frac{n-m-1}{m+2} + \frac{(n-m-1)(n-m-2)}{(m+2)(m+3)} + \cdots \right]
+= \binom{n}{m+1} + \binom{n}{m+2} + \binom{n}{m+3} + \cdots 
+= \sum_{k=m+1}^n \binom{n}{k}.
+\sum_{k=0}^n\binom{n}{k} = 2^n
+\sum_{k=0}^m \binom{n}{k} = 2^n - \binom{n}{m+1} {}_2F_1(1,m+1-n;m+2;-1)
+\sum \binom{n}{k} \delta k,
+(-1)^k
+q(k)
+n-k
+Q(k) = n-2k
+R(k)=n
+d
+\deg(p) - \deg(Q) = -1
+s(k)
+\binom{n}{k}
+H(\alpha) = \alpha \log_2 \frac{1}{\alpha} + (1-\alpha) \log_2 (\frac{1}{1-\alpha})
+\alpha \leq \frac{1}{2}
+\sum_{k \leq \alpha n} \binom{n}{k} = 2^{n H(\alpha) - \frac{1}{2} \log_2 n + O(1)},
+\alpha \geq \frac{1}{2}
+2^n
+2^{n-1}
+\sum_{k \leq \alpha n} \binom{n}{k} = 2^{n + O(1)},

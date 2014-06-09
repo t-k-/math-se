@@ -1,0 +1,51 @@
+P(x)
+Q(x)
+\deg(Q) \geq \deg(P) + 2
+a
+z_1,\,\ldots\,,z_m
+P(x)/Q(x)
+a>0
+a<0
+e^{iz}
+   J = \int_{-\infty}^\infty \frac{e^{iz}}{z^2+1} 
+ML
+R
+|e^{iz}|=R
+|a+b|\leq|a|-|b|
+R \to \infty
+e^{-iz}
+|e^{-iz}|
+R
+I(a) = \int_{-\infty}^\infty \frac{P(x)}{Q(x)}e^{iax}\,dx,
+Q
+R
+-2\pi i \sum_{\operatorname{Im} \zeta < 0} \operatorname{Res} \left(\frac{P(z)}{Q(z)}e^{iaz};\zeta\right) = \int_{-R}^R \frac{P(x)}{Q(x)}e^{iax}\,dx - \int_{C_R} \frac{P(z)}{Q(z)}e^{iaz}\,dz,
+C_R
+0
+R
+-R
+R
+\lim_{R\to\infty} \int_{C_R} \frac{P(z)}{Q(z)}e^{iaz}\,dz = I(a) + 2\pi i \sum_{\operatorname{Im} \zeta < 0} \operatorname{Res} \left(\frac{P(z)}{Q(z)}e^{iaz};\zeta\right),
+a > 0
+0
+a > 0
+I(a) = 2\pi i \operatorname{Res}\left(\frac{e^{iaz}}{z^2+1}; i\right) = 2\pi i \frac{e^{-a}}{2i} = \frac{\pi}{e^a}
+\lim_{R\to\infty} \int_{C_R} \frac{P(z)}{Q(z)}e^{iaz}\,dz = \frac{\pi}{e^a} + 2\pi i \operatorname{Res}\left(\frac{e^{iaz}}{z^2+1}; -i\right) = \frac{\pi}{ e^a} +2\pi i \frac{e^a}{-2i} = -2\pi\sinh a.
+0
+I(a)
+\lim_{R\to\infty} \int_{C_R} \frac{P(z)}{Q(z)}e^{iaz}\,dz = 0
+\lvert e^{iaz}\rvert = e^{-a\operatorname{Im} z}
+O(R^{-2})
+O(R^{-1})
+ML
+e^{iaz}
+\lvert \operatorname{Im} z\rvert \to +\infty
+\lim_{R\to\infty} \int_{C_R} \left\lvert \frac{P(z)}{Q(z)}e^{iaz}\right\rvert\,\lvert dz\rvert = +\infty,
+\frac{c}{\lvert z\rvert^2}
+e^{\lvert a\operatorname{Im} z\rvert}
+z=R e^{i \theta}
+\theta \in [0,\pi]
+e^{i z} = e^{i R \cos{\theta}} \, e^{-R \sin{\theta}}
+\frac{R}{R^2-1} \int_0^{\pi} d\theta \, e^{-R \sin{\theta}} \le \frac{2R}{R^2-1} \int_0^{\pi/2} d\theta \, e^{-2 R \theta/\pi} \le \frac{\pi}{R^2-1}
+e^{-i z} = e^{-i R \cos{\theta}} \, e^{R \sin{\theta}}
+R \to \infty

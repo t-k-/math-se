@@ -1,0 +1,6 @@
+\sum_{i=3}^n \frac{1}{i(i+3)} 
+\sum_{i=3}^{n} \frac{1}{i(i+3)} =  \frac{1}{3} \sum_{i=3}^{n}  \frac{1}{i} - \frac{1}{i+3}
+\displaystyle\sum_{i=3}^n \dfrac{1}{i(i+3)}=\dfrac{1}{3}\sum_{i=3}^n \left(\dfrac{1}{i}-\dfrac{1}{i+3}\right)=\dfrac{1}{3}\sum_{i=3}^n \left(\dfrac{1}{i}-\dfrac{1}{i+1}+\dfrac{1}{i+1}-\dfrac{1}{i+2}+\dfrac{1}{i+2}-\dfrac{1}{i+3}\right)
+\displaystyle=\dfrac{1}{3}\sum_{i=3}^n \left(\dfrac{1}{i}-\dfrac{1}{i+1}\right)+\dfrac{1}{3}\sum_{i=3}^n \left(\dfrac{1}{i+1}-\dfrac{1}{i+2}\right)+\dfrac{1}{3}\sum_{i=3}^n \left(\dfrac{1}{i+2}-\dfrac{1}{i+3}\right)
+=\dfrac{1}{3}\left(\dfrac{1}{3}-\dfrac{1}{n+1}+\dfrac{1}{4}-\dfrac{1}{n+2}+\dfrac{1}{5}-\dfrac{1}{n+3}\right)
+=\dfrac{(n-2)(47n^2+196n+189)}{180(n+1)(n+2)(n+3)}

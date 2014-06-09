@@ -1,0 +1,43 @@
+2
+\frac{f(a)+f(b)}{2}\frac{(b-a)}{1!}+\frac{f'(a)-f'(b)}{2^2}\frac{(b-a)^2}{2!}+\frac{f''(a)+f''(b)}{2^3}\frac{(b-a)^3}{3!}+\cdots
+f^{(k)}(a)+(-1)^kf^{(k)}(b)
+\frac12(\phi(1)+\phi(0))
+\phi(\frac12)
+\phi
+0 \le t \le 1
+f
+a
+f
+b
+\phi(t)
+\phi(t) = \sum_{n \ge 0}\frac{(b-a)^{n+1}}{(n+1)!} \left( f^{(n)}(a) \cdot t^{n+1} + f^{(n)}(b) \cdot (-1)^n (1-t)^{n+1}\right).
+\phi(t) = \int_a^bf(x) \, dx
+\int_a^bf(x) \, dx = \int_a^{a(1-t)+bt}f(x) \, dx + \int_{a(1-t)+bt}^bf(x) \, dx
+x \in [a,b]
+f(x) = f(a)+f'(a)(x-a)+\frac{1}{2!}f''(a)(x-a)^2+\cdots
+f(x) = f(b)+f'(b)(x-b)+\frac{1}{2!}f''(b)(x-b)^2+\cdots
+-
+f(a), f'(a), f''(a), ...
+f
+f(b), f'(b), f''(b), ...
+f^{(n)}(b)
+f^{(N)}(a)
+N
+\frac{(b-a)^{N+1}}{(N+1)!}
+f(x) = f(a)+f'(a)\cdot(x-a)+\frac{1}{2!}f''(a)\cdot(x-a)^2+\cdots = \sum_n \frac{f^{(n)}(a)}{n!}(x-a)^n
+f^{(n)}(x) =     f^{(n)}(a) +     f^{(n+1)}(a)\cdot(x-a) +     \frac{1}{2!}f^{(n+2)}(a)\cdot(x-a)^2 +     \cdots =   \sum_m \frac{f^{(m)}(a)}{(m-n)!}(x-a)^{m-n},
+f^{(N)}(a)
+\frac{(b-a)^{N+1}}{(N+1)!}
+\sum_{n \ge 0}\frac{(b-a)^{n+1}}{(n+1)!} \left( f^{(n)}(a) \cdot \frac12 + f^{(n)}(b) \cdot (-1)^n \cdot\frac12\right).
+\sum_{n \ge 0}\frac{(b-a)^{n+1}}{(n+1)!} \left( \frac12 f^{(n)}(a) + \frac12 (-1)^n     \sum_m \frac{f^{(m)}(a)}{(m-n)!}(b-a)^{m-n} \right).
+  \frac12 \frac{(b-a)^{N+1}}{(N+1)!} +     \frac12 (-1)^0 \frac{(b-a)^{0+1}}{(0+1)!} \frac{(b-a)^{N-0}}{(N-0)!} +     \frac12 (-1)^1 \frac{(b-a)^{1+1}}{(1+1)!} \frac{(b-a)^{N-1}}{(N-1)!} +     \cdots +     \frac12 (-1)^N \frac{(b-a)^{N+1}}{(N+1)!} \frac{(b-a)^{N-N}}{(N-N)!} 
+  \frac12 \frac{(b-a)^{N+1}}{(N+1)!}     \left(         1 +         (-1)^0 \binom{N+1}{1} +         \cdots +         (-1)^N \binom{N+1}{N+1}     \right) .
+  (-1)^0 \binom{c}{0} +     (-1)^1 \binom{c}{1} +     \cdots +     (-1)^c \binom{c}{c}   = (1-1)^c   = 0 
+\frac{(b-a)^{N+1}}{(N+1)!}
+  \frac{(b-a)^{N+1}}{(N+1)!}     \left(         \frac{1}{2^{N+1}} +         \frac{(-1)^0}{2^1}\binom{N+1}{1} +         \frac{(-1)^1}{2^2} \binom{N+1}{2} +         \cdots +         \frac{(-1)^N}{2^{N+1}} \binom{N+1}{N+1}     \right) 
+f
+F
+{1\over2}\bigl(F(a)-F(b)\bigr)
+\eqalign{{1\over2}\sum_{k=0}^\infty \bigl(F^{(k)}(a)-(-1)^kF^{(k)}(b)\bigr){(b-a)^k\over k!}&={1\over2}\sum_{k=0}^\infty F^{(k)}(a){(b-a)^k\over k!}  -{1\over2}\sum_{k=0}^\infty F^{(k)}(b){(a-b)^k\over k!}\cr &={1\over2}\bigl(F(b)-F(a)\bigr)\ ,\cr}
+-{1\over2}\bigl(F(a)-F(b)\bigr)+\sum_{k=0}^\infty \bigl(F^{(k)}(a)-(-1)^k F^{(k)}(b)\bigr)\>{\bigl({b-a\over2}\bigr)^k\over k!}
+={1\over2}\bigl(F(b)-F(a)\bigr)+F\left({a+b\over2}\right)-F\left({a+b\over2}\right)={1\over2}\bigl(F(b)-F(a)\bigr)\ .

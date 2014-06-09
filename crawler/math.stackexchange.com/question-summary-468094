@@ -1,0 +1,22 @@
+\hat H=\hat H_1+\hat H_2
+q_1
+q_2
+\hat H
+\hat H_1
+\hat H_2
+\hat H
+f(x_1,x_2) = \Psi_1(x_1)\Psi_2(x_2)
+  \mathcal{F}\{\Psi_1(x_1)\Psi_2(x_2)\}(k_1,k_2) = \int_{\mathbb{R}^{n_1+n_2}}\Psi_1(x_1)\Psi_2(x_2)e^{2\pi i (x_1,x_2) \cdot (k_1,k_2)} d^{n_1}x_1 d^{n_2}x_2\\ = \left(\int_{\mathbb{R}^{n_1}} \Psi_1(x_1) e^{2\pi i x_1 \cdot k_1} d^{n_1}x_1\right)\left(\int_{\mathbb{R}^{n_2}} \Psi_2(x_2) e^{2\pi i x_2 \cdot k_2} d^{n_2}x_2\right)\\  = \mathcal{F}\{\Psi_1(x_1)\}(k_1) \mathcal{F}\{\Psi_2(x_2)\}(k_2), 
+\hat{H}_1 \otimes I + I \otimes \hat{H}_2
+\mathcal{F}_1 \otimes \mathcal{F}_2
+\mathcal{F}_j
+  L^2(\mathbb{R}^{n_1},d^{n_1}x_1) \otimes L^2(\mathbb{R}^{n_2},d^{n_2}x_2) \cong L^2(\mathbb{R}^{n_1+n_2},d^{n_1}x_1 d^{n_2}x_2), 
+  \mathcal{F} : L^2(\mathbb{R}^{n_1+n_2},d^{n_1}x_1 d^{n_2}x_2) \cong L^2(\mathbb{R}^{n_1},d^{n_1}x_1) \otimes L^2(\mathbb{R}^{n_2},d^{n_2}x_2)\\ \to L^2(\mathbb{R}^{n_1},(2\pi)^{-n_1/2}d^{n_1}k_1) \otimes L^2(\mathbb{R}^{n_2},(2\pi)^{-n_2/2}d^{n_2}k_2) \cong L^2(\mathbb{R}^{n_1+n_2},(2\pi)^{-(n_1+n_2)/2}d^{n_1}k_1 d^{n_2}k_2) 
+  \mathcal{F}_j : L^2(\mathbb{R}^{n_j},d^{n_j}x_j) \to L^2(\mathbb{R}^{n_j},(2\pi)^{-n_j/2}d^{n_j}k_j) 
+  \mathcal{F} (\hat{H}_1 \otimes I + I \otimes \hat{H}_2) \mathcal{F}^{-1} = (\mathcal{F}_1 \hat{H}_1 \mathcal{F}_1^{-1}) \otimes I + I \otimes (\mathcal{F}_2 \hat{H}_2 \mathcal{F}_2^{-1}) 
+  L^2(\mathbb{R}^{n_1},(2\pi)^{-n_1/2}d^{n_1}k_1) \otimes L^2(\mathbb{R}^{n_2},(2\pi)^{-n_2/2}d^{n_2}k_2) \cong L^2(\mathbb{R}^{n_1+n_2},(2\pi)^{-(n_1+n_2)/2}d^{n_1}k_1 d^{n_2}k_2). 
+(f_1 \otimes f_2)(x_1,x_2) := f_1(x_1)f_2(x_2)
+\mathcal{F} = \mathcal{F}_1 \otimes \mathcal{F}_2
+  \hat{H}_1 f_1(x_1) = E_1 f_1(x_1), \quad \hat{H}_2 f_2(x_2) = E_2 f_2(x_2), 
+  (\hat{H}_1 \otimes I + I \otimes \hat{H}_2)(f_1 \otimes f_2)(x_1,x_2) = (E_1+E_2)(f_1 \otimes f_2)(x_1,x_2); 
+  \mathcal{F}(f_1 \otimes f_2)(k_1,k_2) = \mathcal{F}_1\{f_1\} \otimes \mathcal{F}_2\{f_2\}(k_1,k_2) = \mathcal{F}_1\{f_1\}(k_1)\mathcal{F}_2\{f_2\}(k_2), 

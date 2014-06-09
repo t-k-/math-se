@@ -1,0 +1,25 @@
+\int_{\alpha}^{\beta}I_0(a\sqrt{1-x^2})dx
+\alpha
+\beta
+a
+30
+I_0
+15
+I_0
+x
+\sqrt{1-x^2}
+I_0(a\sqrt{1-x^2})
+(\alpha,\sqrt{1-(15/a)^2})
+(\sqrt{1-(15/a)^2},\beta)
+I_0(a\sqrt{1-x^2})\simeq \frac{e^{-a\sqrt{1-x^2}}}{(1-x^2)^{1/4}}p(a\sqrt{1-x^2})
+p
+(\sqrt{1-(15/a)^2},\beta)
+I_0(a\sqrt{1-x^2})
+(\sqrt{1-(15/a)^2},\beta)
+I_0(z)=\frac1{\pi}\int_0^\pi \exp(z\cos\,u)\mathrm du
+\int_\alpha^\beta I_0(a\sqrt{1-x^2})~dx
+=\int_\alpha^\beta\sum\limits_{n=0}^\infty\dfrac{a^{2n}(1-x^2)^n}{4^n(n!)^2}dx
+=\int_\alpha^\beta\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{a^{2n}C_k^n(-1)^kx^{2k}}{4^n(n!)^2}dx
+=\int_\alpha^\beta\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^ka^{2n}x^{2k}}{4^nn!k!(n-k)!}dx
+=\left[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^ka^{2n}x^{2k+1}}{4^nn!k!(n-k)!(2k+1)}\right]_\alpha^\beta
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^ka^{2n}(\beta^{2k+1}-\alpha^{2k+1})}{4^nn!k!(n-k)!(2k+1)}

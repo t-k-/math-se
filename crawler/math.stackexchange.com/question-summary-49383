@@ -1,0 +1,22 @@
+ \mathrm{Re}(s) < 1 
+\sum_{p\leq x}p^{-s}=\int_{2}^{x}t^{-s}d\left(\pi(t)\right)=t^{-s}\pi(t)\biggr|_{2}^{x}+s\int_{2}^{x}t^{-s-1}\pi(t)dt.
+\int_{2}^{x}t^{-s}d\left(\text{li}(t)\right)
+\int_{2}^{x}t^{-s}d\left(\pi(t)\right)-\int_{2}^{x}t^{-s}d\left(\text{li}(t)\right)=t^{-s}\left(\pi(t)-\text{li}(t)\right)\biggr|_{2}^{x}+s\int_{2}^{x}t^{-s-1}\left(\pi(t)-\text{li}(t)\right)dt
+s
+=O\left(|s|xe^{-c\sqrt{\log x}}\int_2^x t^{-\text{Re(s)}-1}dt\right)=O\left(\frac{|s|}{\text{Re}(s)}x^{1-\text{Re}(s)}e^{-c\sqrt{\log x}}\right).
+\sum_{p\leq x}p^{-s}=\int_{2}^{x}\frac{t^{-s}}{\log t}dt+O\left(\frac{|s|}{\text{Re}(s)}x^{1-\text{Re}(s)}e^{-c\sqrt{\log x}}\right).
+t=u^{\alpha}
+\int_{2}^{x^\frac{1}{\alpha}}\frac{u^{-\alpha s}u^{\alpha-1}}{\log u}du+O(1).
+-\alpha s+\alpha-1=0
+\alpha=\frac{1}{1-s}
+\int_{2}^{x}\frac{t^{-s}}{\log t}dt=\int_{2}^{x^{1-s}}\frac{1}{\log u}du=\text{li}\left(x^{1-s}\right)+O(1).
+O(1)
+\text{Re}(s)\neq 1
+\sum_{p\leq x}p^{-s}=\text{li}\left(x^{1-s}\right)+O\left(\frac{|s|}{\text{Re}(s)}x^{1-\text{Re}(s)}e^{-c\sqrt{\log x}}\right).
+s
+\sum_{p\leq x}p^{-s}\sim\frac{x^{1-s}}{(1-s)\log x}.
+\text{Re}(s)=1
+s=1
+\log\log x
+s=-k
+\sum_{p\leq x}p^{k}=\text{li}\left(x^{k+1}\right)+O\left(x^{k+1}e^{-c\sqrt{\log x}}\right).

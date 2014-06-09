@@ -1,0 +1,8 @@
+\mathbb{R}
+x^{2n}-2x^n+2
+x^{2n}-2x^n+2=(x^n-1)^2+1=(x^n-1+i)(x^n-1-i)=(x^n-2^{0.5}e^{\frac{-i\pi}{4}})(x^n-2^{0.5}e^{\frac{i\pi}{4}})
+x^n-2^{0.5}e^{\frac{-i\pi}{4}}=\prod_{k=1}^n(x-2^{\frac{1}{2n}}e^{\frac{-i\pi}{4}+\frac{-2\pi ik}{n}})
+x^n-2^{0.5}e^{\frac{i\pi}{4}}=\prod_{k=1}^n(x-2^{\frac{1}{2n}}e^{\frac{i\pi}{4}+\frac{2\pi ik}{n}})
+x^{2n}-2x^n+2=\prod_{k=1}^n(x-2^{\frac{1}{2n}}e^{\frac{i\pi}{4}+\frac{2\pi ik}{n}})(x-2^{\frac{1}{2n}}e^{\frac{-i\pi}{4}+\frac{-2\pi ik}{n}})
+x^{2n}-2x^n+2=\prod_{k=1}^n(x^2-(2^{\frac{1}{2n}}e^{\frac{i\pi}{4}+\frac{2\pi ik}{n}}+2^{\frac{1}{2n}}e^{\frac{-i\pi}{4}+\frac{-2\pi ik}{n}})x+2^{\frac{1}{n}})
+x^{2n}-2x^n+2=\prod_{k=1}^n(x^2-2(2^{\frac{1}{2n}}\cos({\frac{\pi}{4}+\frac{2\pi k}{n}}))x+2^{\frac{1}{n}})

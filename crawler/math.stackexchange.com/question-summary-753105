@@ -1,0 +1,41 @@
+E_{\pi(x)}[X]
+(x_0,x_1,...)
+\pi(x)
+T(x_i|x_{i-1})
+E_{\pi(x)}[X] \approx \frac{1}{N-N_0} \sum_{i=N_0}^{N} x_i
+N_0
+p(x_{N_0})
+\pi(x)
+x_0
+p(x_0)
+x_i
+T(x_i|x_{i-1})
+\frac{1}{N-N_0} \sum_{i=N_0}^{N} x_i \rightarrow E_{\pi(x)}[X]
+N \rightarrow \infty
+x_0
+N_0
+S_N = \frac{1}{N} \sum_{i=0}^{N-1} x_i
+x_0
+\pi(x_0)
+x_i
+T(x_i|x_{i-1})
+(x_0,x_1,...)
+P(|S_N - E_{\pi(x)}[X]| \geq \epsilon) \rightarrow 0
+ N \rightarrow \infty
+\epsilon > 0
+S_N
+P(|S_N - E[S_N]| \geq \epsilon) \leq \frac{V[S_N]}{\epsilon^2}
+V[S_N]
+S_N
+\epsilon > 0
+S_N
+E[S_N]
+E_{\pi(x)}[X]
+x_i
+\pi(x)
+E[S_N]=E[\frac{1}{N} (x_0 + x_1 + ... + x_{N-1})] = \frac{1}{N} (E[x_0] + E[x_1] + ... + E[x_{N-1}]) = \frac{1}{N} (E_{\pi(x)}[x] + E_{\pi(x)}[x] + ... + E_{\pi(x)}[x]) = E_{\pi(x)}[x]
+S_N
+V[S_N]
+V[S_N]
+E[S_N]
+(x_0,x_1,...)

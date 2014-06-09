@@ -1,0 +1,15 @@
+\dfrac{dy}{dt} = 0.5y - 2.5\sin(t),~~  0 <t \le 12
+y(t)
+y(0) = 2
+w_{i+1}
+t_{i+1}
+y(t)= 2 \cos(t) + \sin(t)
+h
+t_i
+ \begin{align} y_{n+3} &= y_{n+2}  \\  +& h\frac{23}{12} (0.5y_{n+2} - 2.5\sin(t_{n+2})) \\  -& h\frac43 (0.5y_{n+1} - 2.5\sin(t_{n+1})) \\  +& h\frac{5}{12}(0.5y_{n} - 2.5\sin(t_{n})) \end{align} 
+ \begin{align} w_{i+1} &= w_{i}  \\  +& h\frac{23}{12} (0.5w_{i} - 2.5\sin(t_{i})) \\  -& h\frac43 (0.5w_{i-1} - 2.5\sin(t_{i-1})) \\  +& h\frac{5}{12}(0.5w_{i-2} - 2.5\sin(t_{i-2})) \end{align} 
+3
+h
+i
+t_i=i\cdot h
+ w_0 = 2\cos(t_0) + \sin(t_0)=2\\ w_1 = 2\cos(t_1) + \sin(t_1)\\ w_2 = 2\cos(t_2) + \sin(t_2) 

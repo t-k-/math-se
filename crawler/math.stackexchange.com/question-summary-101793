@@ -1,0 +1,17 @@
+P\left(\bigcup_{i=1}^{{2^n-n}}E_i\right)
+\sum_{i=1}^{2^n-n} P(E_i)+...
+P\left(\bigcup_{i=1}^{{2^n-n}}E_i\right) \le \sum_{i=1}^{2^n-n} P(E_i)
+\sum_{i=1}^{2^n-n} P(E_i) - \sum_{i=2}^{2^n-n} \sum_{j=1}^{i-1} P(E_i \cap E_j) + \sum_{i=3}^{2^n-n} \sum_{j=2}^{i-1} \sum_{k=1}^{j-1} P(E_i \cap E_j\cap E_k) -\cdots
+i,j,k,\ldots
+ P\left(\bigcup_{i=1}^{{2^n-n}}E_i\right) = P(E_1)+P(E_2 \cap E_1^C)+ P(E_3 \cap E_2^C \cap E_1^C) + \cdots
+\le P(E_1)+P(E_2)+ P( E_3) + \cdots =  \sum_{i=1}^{2^n-n} P(E_i) 
+\eqalign{ P\Bigl(\bigcup_{i=1}^n E_i\Bigr) =  \sum_{i\le n} P(E_i) - &\sum_{i_1<i_2}\underbrace{ P(E_{i_1}\cap E_{i_2})}_{ {\text {two at a time}}}    +\sum_{i_1<i_2<i_3} \underbrace{ P(E_{i_1}\cap E_{i_2}\cap E_{i_3})}_{\text {three at a time}} - \cr 	&\cdots+ (-1)^{n}\sum_{i_1<i_2<\cdots<i_{n-1} }  	\underbrace{ P(E_{i_1}\cap\cdots\cap E_{i_{n-1}} )}_{(n-1)\text {  at a time}}  \cr  &\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ + (-1)^{n+1}P(E_1\cap E_2\cap\cdots\cap E_n)} 
+\sum\limits_{i_1<i_2}  P(E_{i_1}\cap E_{i_2})  
+P(E_1\cap E_2)
+P(E_2\cap E_1) \thinspace 
+n
+2^n-n
+\{E_i\}
+P(\cup E_i )=\sum P(E_i)
+P(\cup E_i )\le\sum P(E_i)
+E_i

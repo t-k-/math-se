@@ -1,0 +1,30 @@
+f
+\mathbb{R}
+y(0) = y_0, y'(0) = 0
+\phi\colon[0,\infty)\to\mathbb{R}
+[0,a]
+z\in C([a,b])
+T
+f
+ y''+\frac{1}{x}\,y'=\phi,\quad y(0)=y_0,\quad y'(0)=0. 
+ \psi(x)=y_0+\int_0^x\frac{1}{t}\Bigl(\int_0^ts\,\phi(s)\,ds\Bigr)\,dt. 
+ |\psi(x)-y_0|\le\frac{\sup_{0\le t\le x}|\phi(t)|}{4}\,x,\quad x\ge0. 
+ (Tz)(x)=y_0+\int_0^x\frac{1}{t}\Bigl(\int_0^ts\,f(z(s))\,ds\Bigr)\,dt. 
+L
+M
+f
+a>0
+a^2<4/L
+X
+[0,a]
+X
+C([a,b])
+ \sup_{0\le x\le a}|z(x)-y_0|\le\frac{M\,a^2}{4}. 
+T
+X
+z\in X
+z_1,z_2\in X
+x\in[0,a]
+ |(Tz)(x)-y_0|\le\int_0^a\frac{1}{t}\Bigl(\int_0^ts\,|f(z(s))|\,ds\Bigr)\,dt\le\frac{M\,a^2}{4}. 
+\begin{align} |(Tz_1)(x)-(Tz_2)(x)|&\le\int_0^a\frac{1}{t}\Bigl(\int_0^ts\,|f(z_1(s))-f(z_2(s))|\,ds\Bigr)\,dt\\ &\le\frac{L\,a^2}{4}\sup_{0\le x\le a}|z_1(x)-z_2(x)| \end{align}
+ \frac{L\,a^2}{4}<1. 

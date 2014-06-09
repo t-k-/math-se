@@ -1,0 +1,8 @@
+\int\ {\sin^{-1}(x)}
+ u={\sin^{-1}}, du=\frac{1}{\sqrt{1-x^2}},dv=dx,  v=x ? 
+\int\ {\sin^{-1}(x)}= x\sin^{-1} - \int\left( \frac{x}{\sqrt{1-x^2}} \right) dx
+ \int\left( \frac{x}{\sqrt{1-x^2}} \right) dx?
+ J= \int\left( \frac{x}{\sqrt{1-x^2}} \right) dx.
+ J=\int\left( \color{green}{x} \cdot \color{red}{\frac{1}{\sqrt{1-x^2}}} \right) \color{green}{dx}.
+t=1-x^2 \implies \frac{dt}{dx}=-2x \iff \color{green}{xdx}= -\frac{1}{2}dt
+J=-\frac{1}{2}\int \color{red}{\frac{1}{\sqrt{t}}}dt=-\frac{1}{2} \int t^{-1/2}dt=-t^{1/2}+C=\underbrace{-\sqrt{t}+C=\boxed{-\sqrt{1-x^2}+C}}_{\text{since} \ t:=1-x^2}

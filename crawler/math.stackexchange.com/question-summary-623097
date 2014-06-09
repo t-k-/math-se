@@ -1,0 +1,20 @@
+D(\textbf{x}, \boldsymbol \mu, \Sigma) = (\textbf{x}-\boldsymbol \mu)^T\Sigma^{-1}(\textbf{x}-\boldsymbol \mu)
+\textbf{x} = (x_1, ..., x_n) \in \mathbb R^n, \;\boldsymbol \mu = (\mu_1, ..., \mu_n) \in \mathbb R^n
+\Sigma = \left( \begin{array}{ccc} E[(X_1-\mu_1)(X_1-\mu_1)] & \cdots & E[(X_1-\mu_1)(X_n-\mu_n)] \\ \vdots & \ddots & \vdots \\ E[(X_n-\mu_n)(X_1-\mu_1)] & \cdots & E[(X_n-\mu_n)(X_n-\mu_n)] \end{array} \right)
+\;
+D
+\boldsymbol\mu
+\Sigma
+\frac{\partial D}{\partial \boldsymbol \mu} \;\;\text{and}\;\;\frac{\partial D}{\partial \Sigma}
+\eqalign{ \boldsymbol{z} &= \boldsymbol{x-\mu} \cr \boldsymbol{B} &= \boldsymbol{\Sigma}^{-1} \cr } 
+\boldsymbol B
+\eqalign{ \boldsymbol{dz} &= \boldsymbol{dx = -d\mu} \cr \boldsymbol{dB} &= \boldsymbol{-B \cdot dB^{-1} \cdot B} \cr                 &= \boldsymbol{-B \cdot d\Sigma \cdot B} \cr } 
+ 
+\eqalign{ D &= \boldsymbol{B:zz} \cr dD &= \boldsymbol{dB:zz + 2B:z\,dz} \cr    &= \boldsymbol{zz:dB + 2(B\cdot z)\cdot dz} \cr } 
+\eqalign{ \frac{\partial D}{\partial \boldsymbol z} &= \boldsymbol{0 + 2(B\cdot z)} \cr   \cr \frac{\partial D}{\partial \boldsymbol B} &= \boldsymbol{zz + 0} \cr } 
+ 
+\boldsymbol\mu
+\boldsymbol\Sigma
+\eqalign{ dD &= \frac{\partial D}{\partial \boldsymbol z}\cdot \boldsymbol{dz} \cr    &= \boldsymbol{2(B\cdot z)\cdot (-d\mu)} \cr   \cr \frac{\partial D}{\partial \boldsymbol \mu} &= \boldsymbol{-2(B\cdot z)} \cr    &= \boldsymbol{-2\Sigma^{-1}\cdot (x-\mu)} \cr } 
+ 
+\eqalign{ dD &= \frac{\partial D}{\partial \boldsymbol B}: \boldsymbol{dB} \cr    &= \boldsymbol{zz:(-B\cdot d\Sigma\cdot B)} \cr    &= \boldsymbol{(-B\cdot zz\cdot B):(d\Sigma)} \cr   \cr \frac{\partial D}{\partial \boldsymbol \Sigma} &= \boldsymbol{-B\cdot zz\cdot B} \cr    &= \boldsymbol{-\Sigma^{-1}\cdot (x-\mu)(x-\mu)\cdot \Sigma^{-1}} \cr } 

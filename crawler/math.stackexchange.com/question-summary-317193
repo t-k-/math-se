@@ -1,0 +1,40 @@
+x \geq \frac{y}{z-\ln{x}}
+x
+z > \ln x
+x
+z = 2\ln{x}
+y = x\ln x
+\text{LambertW(n)} \sim \ln(n)
+ \ln{n} \geq \text{LambertW(n)} >\ln/2
+n \geq e
+\ln
+z > \ln x
+ \begin{align} x \geq \frac{y}{z - \ln x} \quad &\Longleftrightarrow \quad \ln x - z \leq - \frac{y}{x} \\ &\Longleftrightarrow \quad x e^{-z} \leq e^{-y/x} \\ &\Longleftrightarrow \quad -ye^{-z} \geq - \frac{y}{x} e^{-y/x}. \end{align} 
+w = -y/x
+-y e^{-z} \geq w e^w
+w e^w
+w=-1
+-1/e
+-y e^{-z} < -1/e
+y > e^{z-1}
+W
+W_0
+W_{-1}
+ W_{-1}(-ye^{-z}) \leq -\frac{y}{x} \leq W_0(-ye^{-z}) 
+ - \frac{y}{W_{-1}(-ye^{-z})} \leq x \leq - \frac{y}{W_{0}(-ye^{-z})} 
+ \frac{y}{z-\ln y + \ln(z-\ln y)} \leq x. 
+x
+W_0(z)
+z=0
+ \begin{align} -\frac{1}{W_0(-z)} &= \frac{1}{z} - 1 - \frac{1}{2}z-\frac{2}{3}z^2-\frac{9}{8}z^3-\frac{32}{15}z^4-\frac{625}{144}z^5 - \cdots \\ &= \frac{1}{z} - \sum_{n=0}^{\infty} {c_n} z^n, \end{align} 
+0 < z < 1/e
+c_n
+ -\frac{1}{W_0(-z)} \geq \frac{1}{z} - \left(\sum_{n=0}^{N} {c_n} z^n\right) - 2 c_{N+1} z^{N+1} 
+ -\frac{1}{W_0(-z)} \geq \frac{1}{z} - 1 - z 
+0 < z \leq 0.307
+ - \frac{y}{W_0(-ye^{-z})} \geq e^z - y - y^2 e^{-z} 
+0 \leq y \leq 0.307 e^z
+O(y^3 e^{-2z})
+ x \geq \frac{y}{z - \ln x} 
+ \frac{y}{z-\ln y + \ln(z-\ln y)} \leq x \leq e^z - y - y^2 e^{-z} 
+0 \leq y \leq 0.307 e^z

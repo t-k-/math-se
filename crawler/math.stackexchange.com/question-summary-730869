@@ -1,0 +1,34 @@
+I\propto \int_0^\infty x^{n-3/2}dx
+ I=\int_0^\infty \frac{ \ln^2(1+x)}{x^{3/2}} dx=8\pi \ln 2 
+ \ln(1+x)=\sum_{n=1}^\infty \frac{(-1)^{n+1}x^n}{n}, \ |x| < 1. 
+ \int_{0}^{\infty} \frac{\log^{2}(1+x)}{x^{3/2}} \ dx = - \frac{2 \log^{2}(1+x)}{\sqrt{x}} \Big|^{\infty}_{0} + 4 \int_{0}^{\infty} \frac{\log (1+x)}{(1+x) \sqrt{x}} \ dx
+ =4 \int_{0}^{\infty} \frac{\log (1+x)}{(1+x) \sqrt{x}} \ dx 
+x = u^{2}
+ = 8 \int_{0}^{\infty} \frac{\ln (1+u^{2})}{1+u^{2}} \ du = 8 (\pi \ln 2) = 8 \pi \ln 2
+\int_0^{\infty}\frac{\ln(x^2+1)}{x^2+1}dx
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\int_{0}^{\infty}{\ln^{2}\pars{1 + x} \over x^{3/2}}\,\dd x = 8\pi\ln\pars{2}:      \ {\large ?}}
+\ds{t \equiv {1 \over x + 1}\quad\iff\quad x = {1 \over t} - 1}
+\,x=t^2\;\Rightarrow\;dx=2t\,dt
+\beta=0
+I_\beta(0)=0
+\text{C}_1=0
+I_\beta(1)
+I'(\alpha)
+\alpha=0
+I_\alpha(0)=0
+\text{C}_2=0
+ \begin{align} I(\alpha)&=\int_0^\infty\frac{\ln^2(1+\alpha x)}{x^{\frac{3}{2}}}dx\\ \frac{dI(\alpha)}{d\alpha}&=\int_0^\infty\frac{2x\ln(1+\alpha x)}{x^{\frac{3}{2}}(1+\alpha x)}dx\\ I'(\alpha)&=2\int_0^\infty\frac{\ln(1+\alpha x)}{\sqrt{x}(1+\alpha x)}dx. \end{align} 
+ \begin{align} I'(\alpha)&=2\int_0^\infty\frac{\ln(1+\alpha t^2)}{t(1+\alpha t^2)}\cdot2t\,dt\\ &=4\int_0^\infty\frac{\ln(1+\alpha t^2)}{(1+\alpha t^2)}dt. \end{align} 
+ \begin{align} I(\beta)&=\int_0^\infty\frac{\ln(1+\alpha\beta t^2)}{(1+\alpha t^2)}dt\\ \frac{dI(\beta)}{d\beta}&=\int_0^\infty\frac{\alpha t^2}{(1+\alpha\beta t^2)(1+\alpha t^2)}dt\\ I'(\beta)&=\int_0^\infty\left[\frac{1}{(\beta-1)(1+\alpha t^2)}-\frac{1}{(\beta-1)(1+\alpha\beta t^2)}\right]dt\\ &=\frac{1}{\beta-1}\int_0^\infty\left[\frac{1}{1+\alpha t^2}-\frac{1}{1+\alpha\beta t^2}\right]dt. \end{align} 
+ \int_0^\infty\frac{1}{1+k y^2}dy=\frac{\pi}{2\sqrt{k}}. 
+ \begin{align} I'(\beta)&=\frac{1}{\beta-1}\left(\frac{\pi}{2\sqrt{\alpha}}-\frac{\pi}{2\sqrt{\alpha\beta}}\right)\\ &=\frac{\pi}{2\sqrt{\alpha}}\left(\frac{\sqrt{\beta}-1}{\sqrt{\beta}(\beta-1)}\right)\\ &=\frac{\pi}{2\sqrt{\alpha}}\left(\frac{\left(\sqrt{\beta}-1\right)}{\sqrt{\beta}(\beta-1)}\cdot\frac{\left(\sqrt{\beta}+1\right)}{\left(\sqrt{\beta}+1\right)}\right)\\ &=\frac{\pi}{2\sqrt{\alpha}}\left(\frac{1}{\sqrt{\beta}\left(\sqrt{\beta}+1\right)}\right)\\ \frac{dI(\beta)}{d\beta}&=\frac{\pi}{2\sqrt{\alpha}}\left(\frac{1}{\sqrt{\beta}}-\frac{1}{\sqrt{\beta}+1}\right)\\ I(\beta)&=\frac{\pi}{2\sqrt{\alpha}}\int\left(\frac{1}{\sqrt{\beta}}-\frac{1}{\sqrt{\beta}+1}\right)d\beta\\ &=\frac{\pi}{2\sqrt{\alpha}}\left(2\sqrt{\beta}-2\sqrt{\beta}+2\ln\left(\sqrt{\beta}+1\right)+\text{C}_1\right)\\ &=\frac{\pi}{2\sqrt{\alpha}}\left(2\ln\left(\sqrt{\beta}+1\right)+\text{C}_1\right).\\ \end{align} 
+ I_\beta(1)=\int_0^\infty\frac{\ln(1+\alpha t^2)}{(1+\alpha t^2)}dt=\frac{\pi\ln 2}{\sqrt{\alpha}}. 
+ \begin{align} I'(\alpha)&=4\cdot\frac{\pi\ln 2}{\sqrt{\alpha}}\\ \frac{dI(\alpha)}{d\alpha}&=4\pi\ln 2\cdot\alpha^{-\frac{1}{2}}\\ I(\alpha)&=4\pi\ln 2\int\alpha^{-\frac{1}{2}}\,d\alpha\\ &=(4\pi\ln 2)\left(2\alpha^{\frac{1}{2}}+\text{C}_2\right) \end{align} 
+ I_\alpha(1)=\int_0^\infty\frac{\ln^2(1+x)}{x^{\frac{3}{2}}}dx=\boxed{\color{blue}{\large8\pi\ln 2}} 
+\Large\color{blue}{\text{# }\mathbb{Q.E.D.}\text{ #}}
+I=I(1,1)
+ I(\alpha,\beta)=\int_0^\infty\frac{\ln(1+\alpha x)\ln(1+\beta x)}{x^{\frac{3}{2}}}dx. 
+ \frac{\partial^2I(\alpha,\beta)}{\partial\alpha\partial\beta}=\int_0^\infty\frac{\sqrt{x}}{(1+\alpha x)(1+\beta x)}dx=\frac{\pi}{\alpha\sqrt{\beta}+\sqrt{\alpha}\beta}  
+ \frac{\partial I(\alpha,1)}{\partial\alpha}=\int_0^1 \frac{\pi}{\alpha\sqrt{\beta}+\sqrt{\alpha}\beta}d\beta=2\pi\frac{\log(1+\frac{1}{\sqrt{\alpha}})}{\sqrt{\alpha}} 
+ I(1,1)=\frac{\partial I(\alpha,1)}{\partial\alpha}=2\pi\int_0^1\frac{\log(1+\frac{1}{\sqrt{\alpha}})}{\sqrt{\alpha}}d\alpha=8\pi\ln 2. 

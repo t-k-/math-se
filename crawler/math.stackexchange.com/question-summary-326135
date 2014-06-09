@@ -1,0 +1,13 @@
+F_n(z)=\frac{z^n}{z^n-3^n},\  n=1,2,...,\ 
+|z|<3
+1
+|z|>3
+|z|<3
+1
+|z|>3
+\frac{z^n}{z^n-3^n}=1+\frac{3^n}{z^n-3^n}=\begin{cases}1+\left(\frac{3}{z}\right)^n\frac{1}{1-\left(\frac{3}{z}\right)^n}\xrightarrow[n\to\infty]{}1+0\cdot\frac{1}{1-0}=1\;,\;\;|z|>3\\{}\\1-\frac{1}{1-\left(\frac{z}{3}\right)^n}\xrightarrow[n\to\infty]{}1-\frac{1}{1-0}=0\;,\;\;|z|<3\end{cases}
+F_n(z) = \bigg({z \over 3}\bigg)^n {1  \over \big({z \over 3}\big)^n - 1} = {1 \over 1 - \big({3 \over z}\big)^n}
+|z|>3
+\lim_n \left|z/3\right|^n=\infty
+\lim_n F(z)=1
+\left|F(z)-1\right|=\left|\frac{3^n}{z^n-3^n}\right|=\left|\frac{1}{(z/3)^n-1}\right|\leq \frac{1}{\left|\,|z/3|^n-1\,\right|}

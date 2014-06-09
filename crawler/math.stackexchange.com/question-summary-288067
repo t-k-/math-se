@@ -1,0 +1,31 @@
+\phi : U \to \mathbb{R}^l
+U \subseteq \mathbb{R}^k
+\phi
+C^1
+q
+q \in U
+\displaystyle q_n \to q
+\displaystyle \phi(q_n) \to \phi(q)
+\displaystyle n \to \infty
+D\phi(q)
+ \lim_{n \to \infty} \frac{D\phi (q) (q_n - q)}{||q_n -q||} = \lim_{n \to \infty} \frac{\phi (q_n) - \phi(q)}{||q_n -q||} \text{?} 
+\phi(x) = x
+q=0
+q_n = (-1)^n\frac{1}{n}
+\frac{q_n-q}{\|q_n-q\|} = (-1)^n
+\frac{D\phi(q)(q_n-q)}{\|q_n-q\|} = (-1)^n
+n \to \infty
+\lim_n (\frac{\phi(q_n)-\phi(q)}{\|q_n-q\|} - \frac{D\phi(q)(q_n-q)}{\|q_n-q\|}) = 0
+D\phi(q)
+\epsilon>0
+\delta>0
+\|q'-q\|< \delta
+\|\phi(q')-\phi(q) - D\phi(q)(q'-q)\| \leq \epsilon \|q'-q\|
+\epsilon >0
+n
+\|q_n-q\| < \delta
+\|\phi(q_n)-\phi(q) - D\phi(q)(q_n-q)\| \leq \epsilon \|q_n-q\|
+q_n \neq q
+n
+\|\frac{\phi(q_n)-\phi(q)}{\|q_n-q\|} - \frac{D\phi(q)(q_n-q)}{\|q_n-q\|}\| \leq \epsilon
+\lim_n (\frac{\phi(q_n)-\phi(q)}{\|q_n-q\|} - \frac{D\phi(q)(q_n-q)}{\|q_n-q\|}) = 0

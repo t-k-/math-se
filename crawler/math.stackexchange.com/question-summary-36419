@@ -1,0 +1,33 @@
+x_{k+1} =A(\theta_{k})x_k + B(\theta_{k})u_k, \quad x_0=\bar{x_0}
+y_k=C(\theta_{k})x_k+e_k
+u_k
+y_k
+e_k
+\Gamma, v_k, q_k
+k
+A(\theta)= \begin{bmatrix} 0 & -a_2 \\ 1 & -a_1 \end{bmatrix} \quad , \quad B(\theta)= \begin{bmatrix} b_1\\ b_0 \end{bmatrix} \quad , \quad C(\theta)= \begin{bmatrix} 0 &  1 \end{bmatrix}
+a_i
+b_j
+A(q^{-1})
+B(q^{-1})
+z_{k+1}=\mathcal{F}(z_k,u_k)
+y_k=\mathcal{H}(z_k)+e_k
+\mathcal{F}(z_k,u_k)= \begin{bmatrix} A(\theta_k)x_k+B(\theta_k)u_k\\ \theta_k \end{bmatrix} \quad, \quad \mathcal{H}(z_k)=C(\theta_k)x_k
+\hat{z}_{k|k-1}=\mathcal{F}(\hat{z}_{k-1|k-1},u_{k-1})
+P_{k|k-1}=\mathcal{F}^*_{k-1}P_{k-1|k-1}\mathcal{F}^{*^T}_{k-1}
+L_k=P_{k|k-1}\mathcal{H}^{*^T}_{k}(\mathcal{H}^{*}_{k}P_{k|k-1}\mathcal{H}^{*^T}_{k}+\sigma^2_e)^{-1}
+\hat{z}_{k|k}=\hat{z}_{k|k-1}+L_k[y_k-\mathcal{H}(\hat{z}_{k|k})]
+P_k=(I-L_k\mathcal{H}^{*}_{k})P_{k|k-1}
+\mathcal{F}^*_{k-1}=\begin{bmatrix} A(\theta_{k-1|k-1}) & R_1\\ 0 & I \end{bmatrix} \quad , \quad \mathcal{H}^*_{k}=\begin{bmatrix} C(\hat{\theta}_{k|k-1}) & R_2 \end{bmatrix}
+R_1=\frac{\partial[A(\theta_k)x_k+B(\theta_k)u_k]}{\partial\theta_k}\bigg|_{\hat{z}_{k-1|k-1}}
+R_2=\frac{\partial C(\theta_k)}{\partial\theta_k}\bigg|_{\hat{\theta}_{k|k-1}}
+R_1
+R_2
+\mathcal{H}^{*}_{k}
+\mathcal{F}^{*}_{k}
+R_1=\begin{bmatrix} 0 & -x_{2,k}\\ -x_{2,k} & 0\\ 0 & u_k\\ u_k & 0 \end{bmatrix}\bigg|_{\hat{z}_{k-1|k-1}} \quad , \quad R_2=\begin{bmatrix} 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 \end{bmatrix}\bigg|_{\hat{\theta}_{k|k-1}}
+R_2
+\mathcal{H}^*_{k}
+C(\theta_k)
+R_1
+R_2

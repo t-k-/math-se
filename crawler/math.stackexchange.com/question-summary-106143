@@ -1,0 +1,21 @@
+L_n = \alpha^n + \beta^n \forall n\geq 1
+\sum_{i=1}^n L_n = \alpha^n + \beta^n
+a_{n+2}=a_{n+1}+a_n
+\begin{pmatrix}L_0 \\ L_1 \end{pmatrix} = \begin{pmatrix}1 & 1 \\ \alpha & \beta \end{pmatrix} \begin{pmatrix} u \\ v\end{pmatrix} =\begin{pmatrix} 2 \\ 1\end{pmatrix}. 
+u=v=1
+L_n=\alpha^n+\beta^n
+\sum L_k
+L(z) = \sum_{n \ge 0} L_n z^n
+z^n
+n  \ge 0
+ \frac{L(z) - L_0 - L_1 z}{z^2} = \frac{L(z) - L_0}{z} + L(z) 
+L_0 = 2
+L_1 = 1
+1 - z - z^2 = (1 - \phi z) (1 - \hat{\phi} z)
+\phi \hat{\phi} = -1
+ L(z) = \frac{2 - z}{1 - z - z^2}      = \frac{1}{1 - \phi z} + \frac{1}{1 - \hat{\phi} z} 
+ \begin{align*} \phi       &= \frac{1 + \sqrt{5}}{2} \\ \hat{\phi} &= \frac{1 - \sqrt{5}}{2} \end{align*} 
+ L_n = \phi^n + \hat{\phi}^n 
+ \frac{L(z)}{1 - z} - \frac{L_0}{1 - z}   = -\frac{\phi}{\hat{\phi}} \cdot \frac{1}{1 - \phi z}       - \frac{\hat{\phi}}{\phi} \cdot \frac{1}{1 - \hat{\phi} z}       - \frac{1}{1 - z}       - 2 \frac{1}{1 - z} 
+ \begin{align*} \frac{\phi}{\hat{\phi}} &= - \phi^2 \\ \frac{\hat{\phi}}{\phi} &= -\hat{\phi}^2 \end{align*} 
+ \sum_{1 \le k \le n} L_k    = \phi^2 \cdot \phi^n + \hat{\phi}^2 \cdot \hat{\phi}^n - 3   = \phi^{n + 2} + \hat{\phi}^{n + 2} - 3 

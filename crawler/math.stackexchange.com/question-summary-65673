@@ -1,0 +1,7 @@
+T_n
+n
+ T_n=\sum_kk\binom{n-2}{k-1}T_kT_{n-k} \tag{1}
+ T_n= \frac{n}{2} \  \sum\binom{n-2}{k-1}T_kT_{n-k} .
+(1)
+T_n=\frac{n}{2}\sum_k\binom{n-2}{k-1}T_kT_{n-k}.
+\begin{eqnarray}2T_n&=&\sum_k(k+(n-k))\binom{n-2}{k-1}T_kT_{n-k}\\ &=&\sum_k\left(k\binom{n-2}{k-1}T_kT_{n-k}+(n-k)\binom{n-2}{n-k-1}T_{n-k}{T_k}\right)\\&=&\sum_kk\binom{n-2}{k-1}T_kT_{n-k}+\sum_jk\binom{n-2}{j-1}T_jT_{n-j}\\ &=&2\sum_kk\binom{n-2}{k-1}T_nT_{n-k}.\end{eqnarray}

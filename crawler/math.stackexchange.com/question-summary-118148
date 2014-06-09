@@ -1,0 +1,47 @@
+f''(x)
+[0,1]
+f(0)=f(1)=0
+f(x)\neq 0
+x \in(0,1)
+\int_0^1 \left| \frac{f''(x)}{f(x)} \right| dx \geq 4.
+f
+f(0) = f(1) = 0
+f
+(0,1)
+c \in (0,1)
+f'(c) = 0
+f
+c
+x \in [0,1]
+x = 0
+x = 1
+f(0) = f(1) = 0
+\int_0^c|f''(t)|\,dt \leq (1-c) I
+\int_c^1|f''(t)|\,dt \leq c I
+(2)
+(1)
+ \sup_{x \in [0,1]}{|f(x)|} \leq \frac{1}{4}I,\quad \text{where} \quad I := \int_0^1|f''(x)|\,dx. \tag{1} 
+ f(x) = f(c) + f'(c)(x-c) + \int_c^x (x - t)f''(t)\,dt  = f(c) + \int_0^c (x - t)f''(t)\,dt, 
+ f(c) = -\int_0^c tf''(t)\,dt = -\int_c^1 (1-t)f''(t)\,dt, 
+ |f(c)| \leq c\int_0^c |f''(t)|\,dt \quad \text{and} \quad |f(c)| \leq (1-c) \int_c^1 |f''(t)|\,dt. \tag{2} 
+ \int_0^c|f''(t)|\,dt + \int_c^1|f''(t)|\,dt = I = (1-c)I + cI, 
+ |f(c)| \leq c(1-c)I = \frac{1}{4}I - \left(\frac{1}{2} - c\right)^2I \leq \frac{1}{4}I, 
+f(x)\ge0
+[0,1]
+f''(x)\le0
+f
+g
+g
+f
+g(x)\not=f(x)
+g''(x)=0
+\int_0^1\left|\frac{g''(x)}{g(x)}\right|\,\mathrm{d}x\le\int_0^1\left|\frac{f''(x)}{f(x)}\right|\,\mathrm{d}x
+f'(0)=a
+f'(1)=-b
+f
+f(x)\le ax
+f(x)\le b(1-x)
+\min\limits_{\mathbb{R^+}}\frac{(1+t)^2}{t}=4
+ \max_{[0,1]}f(x)\le\frac{ab}{a+b}\tag{1} 
+ \begin{align} \int_0^1|f''(x)|\,\mathrm{d}x &\ge\left|\int_0^1f''(x)\,\mathrm{d}x\right|\\[6pt] &=|f'(1)-f'(0)|\\[6pt] &=a+b\tag{2} \end{align} 
+ \begin{align} \int_0^1\left|\frac{f''(x)}{f(x)}\right|\,\mathrm{d}x &\ge\frac{1}{\max\limits_{[0,1]}f(x)}\int_0^1|f''(x)|\,\mathrm{d}x\\ &\ge\frac{(a+b)^2}{ab}\\ &=\frac{(1+b/a)^2}{b/a}\\ &\ge4\tag{3} \end{align} 

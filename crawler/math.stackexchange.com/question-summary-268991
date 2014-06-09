@@ -1,0 +1,31 @@
+x
+y
+\sin(3x) + \sin(3y) = 0
+\sin(5x) + \sin(5y) = 0
+x_0
+f(x)=0
+x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}
+f\left(\left[ \begin{array}{c}   x \\   y  \end{array}\right]\right)=\left[\begin{array}{c}   f_1(x,y) \\   f_2(x,y)  \end{array}\right]=\left[\begin{array}{c}   \sin(3x)+\sin(3y) \\   \sin(5x)+\sin(5y)  \end{array}\right]
+f
+J=\left[\begin{array}{cc}   \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\   \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y}  \end{array}\right].
+f'(x)
+\left[ \begin{array}{c}   x_{n+1} \\   y_{n+1}  \end{array}\right]=\left[ \begin{array}{c}   x_n \\   y_n  \end{array}\right]-\left[\begin{array}{cc}   \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\   \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y}  \end{array}\right]^{-1}_{(x_n,y_n)}*f \left(\left[ \begin{array}{c}   x_n \\   y_n  \end{array}\right]\right)
+(x_n,y_n)
+f
+f(x)
+x_0
+x_0
+x = x_1
+f(x_1) \sim 0
+f(x)=0
+ f(x) \sim f(x_0) + (x - x_0) f'(x_0) 
+ f(x_0) + (x - x_0) f'(x_0) = 0
+f
+g
+f(x,y) \sim f(x_0, y_0) + f_1(x_0, y_0) (x - x_0) + f_2(x_0, y_0) (y - y_0)
+g(x,y) \sim g(x_0, y_0) + g_1(x_0, y_0) (x - x_0) + g_2(x_0, y_0) (y - y_0)
+(x,y) = (x_1,y_1)
+f(x_1,y_1) \sim 0
+g(x_1,y_1) \sim 0
+f_1
+f

@@ -1,0 +1,97 @@
+S
+n
+V
+2^n
+f : 2^S \rightarrow \mathbb{C}
+\phi : V \rightarrow V
+f : 2^S \rightarrow \mathbb{C}
+\phi(f) : 2^S \rightarrow \mathbb{C}
+(\phi(f))(T) = \sum_{T \subseteq Y \subseteq S}f(Y),\quad T \subseteq S .
+\phi
+g : 2^V \rightarrow \mathbb{C}
+\phi^{-1} : V \rightarrow V
+\phi^{-1}(g)(T) = \sum_{T \subseteq Y \subseteq S}(-1)^{\# (Y\setminus T)}g(Y), T \subseteq S .
+n=1
+S
+S=\{a\}
+2^S
+S
+\emptyset
+S
+f\colon\{\emptyset, \{a\}\}\to\mathbb{C}
+f\colon\{\emptyset, \{a\}\}\to\mathbb{C}
+\emptyset
+\{a\}
+(f(\emptyset),f(\{a\})) = (x,y)
+\phi(f)
+\phi(f)
+\{\emptyset,\{a\}\}
+\phi(f)
+S
+\phi
+(x,y)
+(x+y,y)
+V
+\begin{align*} \phi(f)(\emptyset) &= \sum_{\emptyset\subseteq Y\subseteq S} f(Y) = f(\emptyset) + f(\{a\}) = x+y.\\ \phi(f)(\{a\}) &= \sum_{\{a\}\subseteq Y\subseteq S}f(Y) = f(\{a\}) = y. \end{align*}
+\phi
+(f+\alpha g)(Y) = f(Y)+\alpha g(Y)
+T
+S
+\phi(f+\alpha g)(T) = \phi(f)(T) + \alpha\phi(g)(T)
+\sum_{T\subseteq Y\subseteq S}(f+\alpha g)(Y) = \sum_{T\subseteq Y\subseteq S}f(Y) + \alpha\sum_{T\subseteq Y\subseteq S}g(Y),
+\phi(f+\alpha g) = \phi(f) + \alpha\phi(g)
+\phi^{-1}
+g
+(r,s)
+g(\emptyset) = r
+g({a}) = s
+\phi(g)
+(r-s,s)
+\begin{align*} \phi^{-1}(g)(\emptyset) &= \sum_{\emptyset\subseteq Y\subseteq S}(-1)^{\#(Y-\emptyset)}g(Y)\\ &= (-1)^{0}g(\emptyset) + (-1)^1g(\{a\}) = r-s,\\ \phi^{-1}(g)(\{a\}) &= \sum_{\{a\}\subseteq Y\subseteq S}(-1)^{\#(Y-\{a\})}g(Y)\\ &= (-1)^0g(\{a\}) = s. \end{align*}
+f
+(x,y)
+\phi
+(x+y,y)
+\phi^{-1}
+(x,y)
+f
+(r,s)
+\phi^{-1}
+(r-s,s)
+\phi
+(r,s)
+S
+S=\{a,b\}
+2^S
+f
+2^S = \{\emptyset,\{a\},\{b\},\{a,b\}\}
+\mathbb{C}
+\phi(f)
+\phi^{-1}(f)
+\begin{align*} \phi(f)(\emptyset) &= \sum_{\emptyset\subseteq Y\subseteq S}f(Y)\\ &= f(\emptyset) + f(\{a\}) + f(\{b\}) + f(\{a,b\}).\\ \phi(f)(\{a\}) &= \sum_{\{a\}\subseteq Y\subseteq S}f(Y)\\ &= f(\{a\}) + f(\{a,b\}).\\ \phi(f)(\{b\}) &= \sum_{\{b\}\subseteq Y\subseteq S}f(Y)\\ &= f(\{b\}) + f(\{a,b\}).\\ \phi(f)(\{a,b\}) &= \sum_{\{a,b\}\subseteq Y\subseteq S}f(Y)\\ &= f(\{a,b\}). \end{align*}
+\begin{align*} \phi^{-1}(f)(\emptyset) &= \sum_{\emptyset\subseteq Y\subseteq S}(-1)^{\#(Y-\emptyset)}f(Y)\\ &= (-1)^0f(\emptyset) + (-1)^1f(\{a\}) + (-1)^1f(\{b\}) + (-1)^2f(\{a,b\})\\ &= f(\emptyset) - (f(\{a\}) + f(\{b\})) + f(\{a,b\}).\\ \phi^{-1}(f)(\{a\}) &= \sum_{\{a\}\subseteq Y\subseteq S}(-1)^{\#(Y-\{a\})}f(Y)\\ &= (-1)^0f(\{a\}) + (-1)^1f(\{a,b\})\\ &= f(\{a\}) - f(\{a,b\}).\\ \phi^{-1}(f)(\{a,b\}) &= \sum_{\{b\}\subseteq Y\subseteq S}(-1)^{\#(Y-\{b\})}f(Y)\\ &= (-1)^0f(\{b\}) + (-1)^1f(\{a,b\})\\ &= f(\{b\}) - f(\{a,b\}).\\ \phi^{-1}(f)(\{a,b\}) &= \sum_{\{a,b\}\subseteq Y\subseteq S}(-1)^{\#(Y-\{a,b\})}f(Y)\\ &= f(\{a,b\}). \end{align*}
+f(\emptyset) = 2
+f(\{a\}) = i
+f(\{b\}) = \frac{1}{3}+\sqrt{2}i
+f(\{a,b\}) = e+\pi i
+\phi(f)
+\begin{align*} \phi(f)(\emptyset) &= 2 + i + \frac{1}{3}+\sqrt{2}i + e+\pi i = \left(2+\frac{1}{3}+e\right) + \left(\sqrt{2}+\pi\right)i.\\ \phi(f)(\{a\}) &= i + e+\pi i = e + (\pi+1)i.\\ \phi(f)(\{b\}) &= \frac{1}{3}+\sqrt{2}i + e+\pi i = \left(\frac{1}{3}+e\right) + \left(\sqrt{2}+\pi\right)i.\\ \phi(f)(\{a,b\}) &= e + \pi i.\\ \phi^{-1}(f)(\emptyset)&= 2 -\left( i + \frac{1}{3}+\sqrt{2}i\right) + e+\pi i\\ &= \left(2 - \frac{1}{3} + e\right) + \left(-1 - \sqrt{2}+\pi\right)i.\\ \phi^{-1}(f)(\{a\}) &= i - (e+\pi i) = -e + (1-\pi)i.\\ \phi^{-1}(f)(\{b\}) &= \frac{1}{3} + \sqrt{2}i - (e+\pi i)\\ &= \left(\frac{1}{3}-e\right) + \left(\sqrt{2}-\pi\right)i.\\ \phi^{-1}f(\{a,b\}) &= e+\pi i. \end{align*}
+\{\emptyset,\{a\},\{b\},\{a,b\}\}
+\mathbb{C}
+4
+\emptyset
+\{a\}
+\{b\}
+\{a,b\}
+\phi
+(x,y,z,w)
+(x+y+z+w, y+w, z+w, w)
+\phi^{-1}
+(r,s,t,u)
+(r-s-t+u, s-u, t-u, u)
+\phi
+\phi^{-1}
+\phi^{-1}
+f
+f
+\phi^{-1}(\phi(f))

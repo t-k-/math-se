@@ -1,0 +1,8 @@
+\Bbb{R}^3
+R_x(\alpha)R_y(\beta)R_y(\gamma)
+R_x
+\begin{alignat}{1} R_x(\theta) &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & \cos \theta & -\sin \theta \\[3pt] 0 & \sin \theta  & \cos \theta \\[3pt] \end{bmatrix} \\[6pt] R_y(\theta) &= \begin{bmatrix} \cos \theta & 0 & \sin \theta \\[3pt] 0 & 1 & 0 \\[3pt] -\sin \theta & 0 & \cos \theta \\ \end{bmatrix} \\[6pt] R_z(\theta) &= \begin{bmatrix} \cos \theta & -\sin \theta & 0 \\[3pt] \sin \theta & \cos \theta & 0\\[3pt] 0 & 0 & 1\\ \end{bmatrix}. \end{alignat} 
+R_y(\beta)R_y(\gamma)(a \times b) = R_y(\beta)R_y(\gamma)a \times R_y(\beta)R_y(\gamma) b
+\begin{bmatrix} \cos \theta & -\sin \theta & 0 \\[3pt] \sin \theta & \cos \theta & 0\\[3pt] 0 & 0 & 1\\ \end{bmatrix}\begin{bmatrix} a_1 \\[3pt] a_2\\[3pt] a_3\\ \end{bmatrix} \times \begin{bmatrix} \cos \theta & -\sin \theta & 0 \\[3pt] \sin \theta & \cos \theta & 0\\[3pt] 0 & 0 & 1\\ \end{bmatrix}\begin{bmatrix} b_1 \\[3pt] b_2\\[3pt] b_3\\ \end{bmatrix}=\\ \begin{bmatrix} -a_3b_2\cos\theta +a_2b_3\cos\theta - a_3b_1\sin\theta + a_1b_3\sin\theta\\[3pt] a_3b_1\cos\theta -a_1b_3\cos\theta - a_3b_2\sin\theta + a_2b_3\sin\theta\\[3pt] -a2b1\cos^2\theta + a_1b_2\cos^2\theta-a_2b_1\sin^2\theta +a_1b_2\sin^2\theta\\ \end{bmatrix}=\\ \begin{bmatrix}  (-a_3b_2+a_2b_3)\cos\theta+(-a_3b_1+a_1b_3)\sin\theta\\[3pt]  (a_3b_1-a_1b_3)\cos\theta+(-a_3b_2+a_2b_3)\sin\theta\\[3pt] a_1b_2-a_2b_1\\[3pt] \end{bmatrix} 
+ \begin{bmatrix} \cos \theta & -\sin \theta & 0 \\[3pt] \sin \theta & \cos \theta & 0\\[3pt] 0 & 0 & 1\\ \end{bmatrix}\left(\begin{bmatrix} a_1 \\[3pt] a_2\\[3pt] a_3\\ \end{bmatrix}\times\begin{bmatrix} b_1 \\[3pt] b_2\\[3pt] b_3\\ \end{bmatrix}\right) 
+q=q({\bf R})

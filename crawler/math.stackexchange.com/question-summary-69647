@@ -1,0 +1,47 @@
+X
+ \min_Z\; \langle X-Z,X-Z \rangle
+ \|Z\| = \max_i\; \sigma_i(Z) \le 1 
+\langle A,B \rangle = \mathrm{tr}(AB^\top)
+X
+1
+\ell_\infty
+\def\tr{\operatorname{tr}}\def\sc#1#2{\langle#1,#2\rangle}\def\scc#1{\sc{#1}{#1}}
+\sc AB= \tr(AB^*)
+Z
+X=U\Sigma V^*
+Z=S\Lambda T^*
+U
+V
+S
+T
+\Sigma
+\Lambda
+\Sigma,\Lambda\ge0
+\Lambda\le1
+ \begin{align} \scc{X-Z} &=\scc{U\Sigma V^*-S\Lambda T^*} \\ &= \scc{U\Sigma V^*}+\scc{S\Lambda T^*}-\sc{S\Lambda T^*}{U\Sigma V^*}-\sc{U\Sigma V^*}{S\Lambda T^*} \\ &= \tr U\Sigma V^*V\Sigma^* U^*+\tr S\Lambda T^*T\Lambda^* S^*-\tr S\Lambda T^*V\Sigma^* U^*-\tr U\Sigma V^*T\Lambda^* S^* \\ &= \tr\Sigma\Sigma^*+\tr \Lambda\Lambda^*-2\Re\tr S\Lambda T^*V\Sigma^* U^*\;. \end{align} 
+M=U^*S
+N=T^*V
+M
+N
+M=\mathrm e^{\mathrm iH}
+N=\mathrm e^{\mathrm iK}
+H
+K
+H
+K
+\Re\tr M\Lambda N\Sigma^*
+H
+\Re\tr\mathrm iP_{kl}M\Lambda N\Sigma^*=0
+P_{kl}
+\Re\tr\mathrm iP_{kl}\Sigma^*M\Lambda N=0
+K
+\Sigma
+\Re\tr\mathrm i(P_{kl}\Sigma^*\pm\Sigma^*P_{kl})M\Lambda N=0
+M\Lambda N
+M\Lambda N=\Lambda
+M
+N
+S=U
+T=V
+Z
+ \scc{X-Z} =\scc{U\Sigma V^*-U\Lambda V^*}=\scc{\Sigma-\Lambda}\;, 

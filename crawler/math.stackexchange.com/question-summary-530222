@@ -1,0 +1,38 @@
+n
+{1\over8}p(n-3)
+p(n-3)
+n-3
+k
+k-1
+k-2
+p(k)={1\over2}p(k-1)+{1\over4}p(k-2)+{1\over2^k}
+P(n) = {1\over2}P(n-1)+{1\over4}P(n-2)+{1\over2^n}
+P(1)=P(2)=0
+P(3)={1\over8}
+P(4)={1\over2}P(3)+{1\over16}={1\over8}
+P(5)={1\over2}P(4)+{1\over4}P(3)+{1\over32}={1\over8}
+2
+{0\over2},{0\over4},{1\over8},{2\over16},{4\over32},{7\over64},{12\over128},{20\over256},{33\over512},{54\over1024},\ldots
+S
+S
+\{0,1,2,3\}
+n
+n
+0010012231
+S
+\theta
+3
+u_i=E_i(s^\theta)
+i
+i
+P[S=n]
+s^n
+u_0
+u_0
+a=\sqrt5-1
+b=\sqrt5+1
+n\geqslant3
+ u_0=\tfrac12s(u_0+u_1),\quad u_1=\tfrac12s(u_0+u_2),\quad u_2=\tfrac12s(1+u_2), 
+ u_0=\frac{s^3}{(2-s)(4-2s-s^2)}. 
+ u_0=1-\frac{2}{2-s}+\frac1{\sqrt5}\frac{a}{a-s}-\frac1{\sqrt5}\frac{b}{b+s}, 
+ P[S=n]=[s^n]u_0=-\frac1{2^n}+\frac1{\sqrt5}\frac1{a^n}-\frac1{\sqrt5}(-1)^n\frac1{b^n}\sim\frac1{\sqrt5}\frac1{a^n}. 

@@ -1,0 +1,12 @@
+X \sim \operatorname{Binom}[(n,p)]
+Y \sim \operatorname{Poisson}[f(X)]
+Y
+Y
+\theta
+\mathcal{M}_Y(\theta)
+   \mathbb{P}(Y \ge t) \le \mathrm{e}^{-\theta t} \mathcal{M}_Y(\theta)   =  \mathbb{E} \left( \mathrm{e}^{-\theta t + f(X) \left( \mathrm{e}^\theta - 1 \right))}  \right) 
+\theta
+g_\theta^{\prime\prime}(X) \le 0
+X \ge 0
+  0 \ge  g_\theta^{\prime\prime}(x) = g(x) \left\{ \left( f^\prime(x) ( \mathrm{e}^{\theta} - 1) \right)^2 + f^{\prime\prime}(x) ( \mathrm{e}^{\theta} - 1)  \right\} 
+   \mathbb{P}(Y > t) \le \frac{1}{t} \mathbb{E}(Y) = \frac{1}{t} \mathbb{E}(f(X)) 

@@ -1,0 +1,21 @@
+\sum_{k=1}^\infty \frac{(-1)^{k-1}}{k}\left((-1)^{k-1} (n-1) + \sum_{j=1}^{k-1}\frac{(-1)^{j+k-1}n (\log n)^j}{j!}\right)
+\sum_{k=1}^\infty \frac{(\log n)^k}{k! k}
+\operatorname{li}(n) = \log \log n + \gamma + \sum_{k=1}^\infty \frac{(\log n)^k}{k! k}
+\gamma
+n
+\exp\,z
+\frac1{k}\left(-1+\exp\,z\sum_{j=0}^{k-1}\frac{(-z)^j}{j!}\right)
+\exp(-u)\sum_{j=0}^{k-1}\frac{u^j}{j!}=\frac1{(k-1)!}\int_u^\infty t^{k-1} \exp(-t)\mathrm dt
+-\frac1{k}+\frac1{k!}\int_{-z}^\infty t^{k-1} \exp(-t)\mathrm dt
+-\frac{(k-1)!}{k!}+\frac1{k!}\int_{-z}^\infty t^{k-1} \exp(-t)\mathrm dt
+\frac1{k!}\left(-\int_0^\infty t^{k-1} \exp(-t)\mathrm dt+\int_{-z}^\infty t^{k-1} \exp(-t)\mathrm dt\right)
+\frac1{k!}\int_{-z}^0 t^{k-1} \exp(-t)\mathrm dt
+\sum_{k=1}^\infty \frac1{k!}\int_{-z}^0 t^{k-1} \exp(-t)\mathrm dt
+\int_{-z}^0\left(\sum_{k=1}^\infty \frac{t^{k-1}}{k!}\right)\exp(-t)\mathrm dt
+\int_{-z}^0\left(\frac{\exp\,t-1}{t}\right)\exp(-t)\mathrm dt=\int_{-z}^0\frac{1-\exp(-t)}{t}\mathrm dt=-\int_z^0\frac{1-\exp\,t}{-t}\mathrm dt=\int_0^z\frac{\exp\,t-1}{t}\mathrm dt
+\int_0^z\frac{\exp\,t-1}{t}\mathrm dt=\sum_{j=1}^\infty \frac{z^j}{j! j}
+1 = \sum_{j=0}^{\infty} (-1)^{j} n \frac{\log^j n}{j!}
+   (-1)^{k-1} (n-1) + \sum_{j=1}^{k-1} (-1)^{j+k-1} n \frac{\log^j n}{j!} =    (-1)^k \left( 1 -  \sum_{j=0}^{k-1} (-1)^{j} n \frac{\log^j n}{j!} \right) 
+\sum_{k=1}^\infty \sum_{j=k}^\infty \to \sum_{j=1}^\infty \sum_{k=1}^{j}
+  \mathcal{S} = \sum_{k=1}^\infty \frac{1}{k} \sum_{j=k}^{\infty} (-1)^{j} n \frac{\log^j n}{j!} 
+   \mathcal{S} = \sum_{j=1}^\infty  \sum_{k=1}^{j} \frac{1}{k} (-1)^{j} n \frac{\log^j n}{j!} =  n \sum_{j=1}^\infty (-1)^{j} H_j  \frac{\log^j n}{j!} 

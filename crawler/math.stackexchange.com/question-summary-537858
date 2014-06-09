@@ -1,0 +1,40 @@
+X = C[a,b]
+L_{1}
+k(x,y)
+Tf(x) =  \int_a^b k(x,y)f(y)\,dy
+\|T\| \le \operatorname{max}_{a\le x \le b} \int_a^b |k(x,y)|\,dy
+k
+x_{0}
+x_{0}
+\operatorname{max}_{a\le x \le b} \int_a^b |k(x,y)|\,dy = \int_a^b |k(x_{0},y)|\,dy
+f_{n} = \frac{n}{\pi(1+n^2(x-x_{0})^2)}
+\|T\| \ge \operatorname{max}_{a\le x \le b} \int_a^b |k(x,y)|\,dy
+f_n
+\phi(t) = \max(1-|t|,0)
+\phi_n(t) = n \phi(n t)
+\phi_n \ge 0
+\int \phi_n = 1
+\operatorname{supp} \phi_n = [-\frac{1}{n}, \frac{1}{n}]
+\overline{K} = \sup_t \int |k(s,t)| ds
+\epsilon>0
+t_0
+\int |k(s,t_0)| ds > \overline{K}-\frac{\epsilon}{2}
+t_o \in (a,b)
+a,b
+k
+[a,b]^2
+k
+\delta>0
+|t-t_0| < \delta
+|k(s,t)-k(s,t_0)| < \frac{\epsilon}{2(b-a)}
+s
+f_n(t) = \phi_n(t-t_0)
+n
+\operatorname{supp} f_n \subset B(t_0,\delta)
+\|f_n\|_1 = 1
+\int k(s,t_0) f_n(t) dt = k(s,t_0)
+|\int k(s,t) f_n(t) dt| \ge |\int k(s,t_0) f_n(t) dt|-\frac{\epsilon}{2(b-a)} = |k(s,t_0)|-\frac{\epsilon}{2(b-a)} 
+\int|Tf_n| = \int |\int k(s,t) f_n(t) dt| ds \ge \int |k(s,t_0)| ds- \frac{\epsilon}{2} \ge \overline{K} - \epsilon
+\epsilon>0
+\|T\| \ge \overline{K}
+\|T\| \le \overline{K}

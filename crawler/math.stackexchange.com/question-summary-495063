@@ -1,0 +1,64 @@
+q_n
+q_n = \sum_{k=2}^{2^n} k \left \lfloor \frac{1}{1 + \text{Abs} \left (n-\left \lfloor \frac{1}{a(k)} \right \rfloor b (k) \right )} \right \rfloor
+a(x) = \sum_{k=1}^{x-1} \left \lfloor \frac{k \left \lfloor \frac{x}{k} \right \rfloor }{x} \right \rfloor 
+b(x) = \sum_{k=2}^{x} \left \lfloor \frac{1}{a(k)} \right \rfloor
+\left \lfloor x \right \rfloor
+\text{Floor}(x)
+n \geq 3 \implies q_n = p_{n+1}
+p_n
+n
+\cdots
+1
+\ast)=0
+0
+\ast)=0
+\ast=0
+x\geq2
+a(x)
+k=1
+1
+a(x)
+\lfloor 1/a(x)\rfloor=1
+a(x)=1
+0
+a(x)>1
+a(x)=1
+k=2,\dots, x-1
+a(x)
+0
+k\lfloor x/k\rfloor/x<1
+\lfloor x/k\rfloor<x/k
+a(x)=1
+\{2,3,\dots,x-1\}
+x
+a(x)=1
+x
+a(x)>1
+q_n
+n\geq3
+(\ast)=n
+k
+\lfloor1/(1+
+(\ast))\rfloor=\lfloor1(n+1)\rfloor=0
+q_n
+k
+k\geq2
+n-\lfloor1/a(k)\rfloor b(k)=n-b(k)
+a(x)
+b(k)
+k
+n-b(k)>0
+k
+n
+k=p_j
+j<n
+n-b(k)>0
+(*)>0
+q_n
+0
+q_n
+k=p_n
+(\ast)=0
+(\cdots)=1
+q_n=p_n
+p_{n+1}

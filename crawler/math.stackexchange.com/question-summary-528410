@@ -1,0 +1,26 @@
+z(t)
+Z(\omega) = a [- \frac{1}{i\omega}+\pi \delta(\omega)]
+Z
+\omega =0
+z(t) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} d\omega \, Z(\omega) \, e^{-i \omega t}
+Z
+z_1(t) = \frac{1}{2 \pi} a \pi \int_{-\infty}^{\infty} d\omega \, \delta(\omega) \, e^{-i \omega t} = \frac{a}{2}
+1/\omega
+-\frac{a}{i 2 \pi}\oint_C dz \frac{e^{-i t z}}{z}
+t \gt 0
+C
+R
+\epsilon
+R \to \infty
+\epsilon \to 0
+-\frac{a}{i 2 \pi} \int_{-\epsilon}^{-R} dx  \frac{e^{-i t x}}{x} -\frac{a}{i 2 \pi} i R \int_{-\pi}^0 d\theta \, e^{i \theta} \frac{e^{t R \sin{\theta}} e^{-i t R \cos{\theta}}}{R e^{i \theta}} \\ -\frac{a}{i 2 \pi} \int_{R}^{\epsilon} dx  \frac{e^{-i t x}}{x} -\frac{a}{i 2 \pi} i \epsilon \int_0^{-\pi} d\phi \, e^{i \phi} \frac{e^{-i t \epsilon e^{i \phi}}}{\epsilon e^{i \phi}}
+R \to \infty
+\frac{a}{2 \pi} 2 \int_0^{\pi/2} d\theta \, e^{-t R \sin{\theta}} \le \frac{a}{\pi} \int_0^{\pi/2} d\theta \, e^{-2 t R \theta/\pi} \le \frac{a}{2 R t}
+-PV \int_{-\infty}^{\infty} d\omega \frac{e^{-i \omega t}}{\omega} - i \pi = 0
+t \gt 0
+t \lt 0
+t \lt 0
+PV \int_{-\infty}^{\infty} d\omega \frac{e^{-i \omega t}}{\omega} - i \pi = 0
+z_2(t) = \left (-i \pi \text{sgn}(t)\right ) \left (- \frac{a}{i 2 \pi} \right ) = \frac{a}{2} \text{sgn}(t)
+z(t) = z_1(t) + z_2(t) = \frac{a}{2} [1+\text{sgn}(t)] = a \theta(t)
+\theta

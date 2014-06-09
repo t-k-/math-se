@@ -1,0 +1,52 @@
+ A = \left[ {\begin{array}{cc}  1 & c  \\  0 & d  \\  \end{array} } \right] 
+c
+d
+A^n
+n
+ A^n = \left[ {\begin{array}{cc}  1 & c^{n-2}(dc + c)  \\  0 & d^n  \\  \end{array} } \right] 
+A^{n+1} = A^n A
+ \left[ {\begin{array}{cc}  1 & c^{n-2}(dc + c)  \\  0 & d^n  \\  \end{array} } \right] \left[ {\begin{array}{cc}  1 & c  \\  0 & d  \\  \end{array} } \right]  
+c
+d
+\begin{align*} A&= \left(\begin{array}{cc}1&c\\0&d\end{array}\right)\\ A^2 &= \left(\begin{array}{cc}1&c\\0&d\end{array}\right)\left(\begin{array}{cc}1&c\\0&d\end{array}\right) = \left(\begin{array}{cc}1 & c+cd\\0&d^2\end{array}\right).\\ A^3 &= \left(\begin{array}{cc} 1&c+cd\\ 0 &d^2\end{array}\right) \left(\begin{array}{cc} 1 & c\\ 0 & d\end{array}\right) = \left(\begin{array}{cc} 1 & c+cd+cd^2\\ 0 & d^3 \end{array}\right).\\ A^4 &= \left(\begin{array}{cc} 1&c+cd+cd^2\\ 0 & d^3 \end{array}\right)\left(\begin{array}{cc} 1 & c\\0 & d\end{array}\right) = \left(\begin{array}{cc} 1 & c + cd + cd^2 + cd^3\\ 0 & d^4 \end{array}\right). \end{align*}
+n=1
+k
+k+1
+k+1
+k
+k+1
+\begin{align*} A^{k+1} & = A^kA\\ &= \left(\begin{array}{cc} 1 & c(1+d+\cdots + d^{k-1})\\0 & d^k\end{array}\right) \left(\begin{array}{cc} 1 & c\\0 & d\end{array}\right)\\ &= \left(\begin{array}{cc} 1 & c + cd(1+d+\cdots + d^{k-1})\\ 0 & d^{k+1}\end{array}\right)\\ &= \left(\begin{array}{cc} 1 & c(1 + d(1+d+\cdots + d^{k-1}))\\ 0 & d^{k+1}\end{array}\right)\\ &= \left(\begin{array}{cc} 1 & c(1+d+d^2+\cdots + d^k)\\ 0 & d^{k+1}\end{array}\right). \end{align*}
+n=1
+n=k
+n=k+1
+n
+a_n
+A^n
+A^n
+d^n
+[1,0]^T
+A^{n+1} = A^n A = \left[ {\begin{array}{cc}  1 & a_n  \\  0 & d^n  \\  \end{array} } \right] \left[ {\begin{array}{cc}  1 & c  \\  0 & d  \\  \end{array} } \right]
+a_{n+1} = c + d a_n
+a_1=c
+a_n = c + cd + cd^2 + ... + cd^{n-1} = c\frac{d^n-1}{d-1}
+A^n = \left[ {\begin{array}{cc}  1 & c\frac{d^n-1}{d-1}  \\  0 & d^n  \\  \end{array} } \right]
+2\times 2
+A^n=(SDS^{-1})^n= SD^nS^{-1}
+D=\operatorname{diag}(d_1,d_2,\ldots, d_k)
+D^n=\operatorname{diag}(d^n_1,d^n_2,\ldots, d^n_k)
+d\neq 1
+D=\pmatrix{1 & 0 \\ 0 & d}
+S=\pmatrix{1 & \frac{c}{d-1} \\ 0 & 1}
+A^n=\pmatrix{1 & \frac{c}{d-1} \\ 0 & 1}\pmatrix{1 & 0 \\ 0 & d^n}\pmatrix{1 & \frac{-c}{d-1} \\ 0 & 1}
+\mathbb R^2
+(x,y)
+(x',y')
+(c, d-1)
+y
+\frac{d-1}{c}
+x
+y
+A
+(x,y) \mapsto (x,y)+y(c,d-1) \mapsto ((x,y)+ y(c,d-1)) + dy(c,d-1) \mapsto \ldots
+(x,y) \mapsto (x,y)+(1+d+d^2+\ldots)y(c,d-1)
+(x,y) \mapsto (x,y) + y(c\sum d^k,d^{n}-1)

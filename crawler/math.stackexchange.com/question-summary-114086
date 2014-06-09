@@ -1,0 +1,47 @@
+ \int_0^\infty \frac{ \sin \pi x}{x(1-x^2)} \; \textrm{d}x
+x
+\gamma
+-\infty-i\epsilon
++\infty-i\epsilon
+\mathbb{R}
+ \frac{1/2}{x(1-x^2)}=\frac{1/2}{x}+\frac{1/4}{1-x}-\frac{1/4}{1+x} 
+\gamma_+
+-N-\frac iN
++N-\frac iN
+-\frac iN
++N-\frac iN
+-N-\frac iN
+\gamma_-
+-N-\frac iN
++N-\frac iN
+-\frac iN
++N-\frac iN
+-N-\frac iN
+N\to\infty
+\gamma
+\frac{1/2}{x(1-x^2)}\sin(\pi x)=\frac{1/2}{x(1-x^2)}\dfrac{e^{i\pi x}-e^{-i\pi x}}{2i}
+ \frac{1}{2i}\oint_{\gamma_+}\left(\frac{1/2}{z}+\frac{1/4}{1-z}-\frac{1/4}{1+z}\right)e^{i\pi z}\mathrm{d}z-\frac{1}{2i}\oint_{\gamma_-}\left(\frac{1/2}{z}+\frac{1/4}{1-z}-\frac{1/4}{1+z}\right)e^{-i\pi z}\mathrm{d}z 
+\gamma_-
+0
+-1,0,\text{and }1
+\dfrac{1}{4i}2\pi i+\dfrac{1}{8i}2\pi i+\dfrac{1}{8i}2\pi i=\pi
+ \frac{1}{2i}\oint_{\gamma_+}\left(\frac{1/2}{z}+\frac{1/4}{1-z}-\frac{1/4}{1+z}\right)e^{i\pi z}\mathrm{d}z 
+ \int_0^\infty\frac{\sin(\pi x)}{x(1-x^2)}\mathrm{d}x=\pi 
+f(x)=\frac{\sin\pi x}{x(1-x^2)}
+ \int\limits_{\mathbb{R}_+}f(x)dx= \frac{1}{2}\int\limits_{\mathbb{R}}f(x)dx= \frac{1}{2}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x(1-x^2)}dx= 
+ \frac{1}{2}\int\limits_{\mathbb{R}}\sin\pi x\left(\frac{1}{x}-\frac{1}{2(x-1)}-\frac{1}{2(x+1)}\right)dx= 
+ \frac{1}{2}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx- \frac{1}{4}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x-1}dx- \frac{1}{4}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x+1}dx= 
+ \int\limits_{\mathbb{R}}\frac{\sin\pi x}{x-1}dx=\{t=x-1\}= \int\limits_{\mathbb{R}}\frac{\sin\pi (t+1)}{t}dt= -\int\limits_{\mathbb{R}}\frac{\sin\pi t}{t}dt= -\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx 
+ \int\limits_{\mathbb{R}}\frac{\sin\pi x}{x+1}dx= \{t=x+1\}= \int\limits_{\mathbb{R}}\frac{\sin\pi (t-1)}{t}dt= -\int\limits_{\mathbb{R}}\frac{\sin\pi t}{t}dt= -\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx 
+ \int\limits_{\mathbb{R}_+}f(x)dx= \frac{1}{2}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx- \frac{1}{4}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x-1}dx- \frac{1}{4}\int\limits_{\mathbb{R}}\frac{\sin\pi x}{x+1}dx= \int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx 
+ \int\limits_{\mathbb{R}}\frac{\sin\pi x}{x}dx= \{t=\pi x\}= \int\limits_{\mathbb{R}}\frac{\sin t}{t}dt=\pi 
+f(z) = \frac{e^{\pi iz}}{z(1-z^2)}
+C
+0
+\pm 1
+0=\oint_C f(z)\, dz = P.V.\int_{-\infty}^\infty f(z)\, dz-i \pi\operatorname*{Res}_{z=0}f-i \pi\operatorname*{Res}_{z=1}f-i \pi\operatorname*{Res}_{z=-1}f\tag{1}
+\operatorname*{Res}_{z=0}f = 1
+\operatorname*{Res}_{z=-1}f = \frac 12
+\operatorname*{Res}_{z=1}f = \frac 1 2
+(1)
+\int_0^\infty \frac{\sin (\pi x)}{x(1-x^2)}\,dx=\pi

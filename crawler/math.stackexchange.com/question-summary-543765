@@ -1,0 +1,8 @@
+\hat\theta
+f(x;\theta) = (1/2)\exp(-|x-\theta|)
+-\infty \leq x < \infty
+-\infty \leq x < \infty
+L(x;\theta)=\prod\limits_{i=1}^n\frac{1}{2}e^{-|x_i-\theta|}=\frac{1}{2^n}e^{-\sum\limits_{i=1}^n|x_i-\theta|}
+\ln L(x;\theta)=-n\ln2-\sum_{i=1}^{n}|x_i-\theta|
+|x|'=\text{sign }x,x\ne0
+\frac{\partial\ln L(x;\theta)}{\partial\theta}=\sum_{i=1}^n \text{sign } (x_i-\theta)

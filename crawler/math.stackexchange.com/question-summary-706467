@@ -1,0 +1,25 @@
+J(u)=\frac12 \|u\|^2+\int_0^1 F(t,Ku(t))dt
+F(t,u)=\int_0^u f(t,\xi) d\xi
+\displaystyle Ku(t)=\int_0^1 G(t,s)u(s) ds
+G(t,s)=\begin{cases} s(1-t),&0\leq s \leq t\leq 1\\t(1-s), &0\leq t\leq s \leq 1\end{cases}
+N_f : H\rightarrow H
+N_{f}u(t)=f(t,u(t)),\ t\in [0,1]
+J'(u)v=(u-KN_fK u,v)
+\tau>0
+h\in H
+\nabla J(\tau u)=J'(\tau u)
+\displaystyle\lim_{s\rightarrow 0} \frac{J(\tau u+sh)-J(\tau u)}{s}=(J'(\tau u),h)
+\frac{d}{d\tau}J(\tau u)=(J'(\tau u),u)
+J \colon H \to \mathbb{R}
+u \in H
+J'(u) \in H^*
+u
+\nabla J(u) \in H
+J
+u
+\ell'(\tau)=u
+\ell
+\tau
+ \phi \colon \tau \xrightarrow{\ell}\tau u \xrightarrow{J}J(\tau u), 
+ \phi'(\tau) = \langle \nabla J(\tau u), u \rangle, 
+ \frac{d}{d\tau}J(\tau u)=\langle \nabla J(\tau u),u \rangle. 

@@ -1,0 +1,8 @@
+\mathcal{B} (n, \lambda /n)
+\lambda > 0
+ \lim_{n \to \infty} \mathbb{P}[X_n = k] = e^{-\lambda} \frac{\lambda^k}{k!} 
+X \sim \mathcal{B}(n,p)
+p = \lambda/n
+e^{-\lambda}
+ \mathbb{P}[X = k] = \binom{n}{k}p^k (1-p)^{n-k}. 
+ \begin{split} \mathbb{P}[X = k]   &= p^n \binom{n}{k} \left(\frac{p}{1-p}\right)^k \\   &= (1-p^n \frac{n!}{(n-k)!k!} \left(\frac{p}{1-p}\right)^k \\   &= \left(1 - \frac{\lambda}{n}\right)^n      \frac{n!}{(n-k)!k!} \left(\frac{p}{1-p}\right)^k \\   &= \left(1 - \frac{\lambda}{n}\right)^n      \frac{n!}{(n-k)!k!} \left(\frac{\lambda/n}{1-\lambda/n}\right)^k \\   &= \left(1 - \frac{\lambda}{n}\right)^n      \frac{n!}{(n-k)!k!} \left(\frac{\lambda}{n-\lambda}\right)^k \\   &= \left(1 - \frac{\lambda}{n}\right)^n      \frac{n!}{(n-k)!(n- \lambda)^k} \frac{\lambda^k}{k!} \end{split} 

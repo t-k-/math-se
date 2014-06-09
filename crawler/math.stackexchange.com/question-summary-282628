@@ -1,0 +1,13 @@
+f=f\left(t,u(t)\right)
+\frac{df}{dt}=\frac{df}{dt}+\frac{df}{du}\frac{du}{dt}
+\frac{d^2f}{d^2t}=\left[\frac{df}{dtdu}\frac{du}{dt}+\frac{d^2f}{d^2t}\right]+\left[\frac{d^2u}{d^2t}\frac{df}{du}+\frac{du}{dt}\left(\frac{d^2f}{d^2u}\frac{du}{dt}+\frac{df}{dudt}\right)\right]
+\frac{df}{dt}
+\frac{d^2f}{d^2t}=\frac{d^2f}{d^2t}+2\frac{du}{dt}\frac{df}{dudt}+\frac{d^2f}{d^2u}\left(\frac{du}{dt}\right)^2
+(0,0)
+t
+t^2
+\frac{\partial f}{\partial u}u''
+f(t,u)=f_1 t + f_2 u+\frac{f_{11}}{2}t^2+\frac{f_{22}}{2}u^2+f_{12}t u + \dots
+u=u_1 t + \frac{u_2}{2}t^2 + \dots
+ \begin{align}f(t,u(t)) & = f_1 t + f_2 \left(u_1 t + \frac{u_2}{2}t^2\right)+\frac{f_{11}}{2}t^2+\frac{f_{22}}{2}(u_1 t)^2+f_{12}t (u_1 t) + \dots \\  &= (f_1 t + f_2 u_1 ) t + \frac{1}{2}(f_2u_2+ f_{11} + f_{22}u_1^2  + 2f_{12}u_1)\, t^2 + \dots  \end{align}
+\frac{\partial f}{\partial u}u'' + \frac{\partial^2 f}{\partial t^2} + \frac{\partial^2 f}{\partial u^2}(u')^2  + 2\frac{\partial^2 f}{\partial t\partial u}u'

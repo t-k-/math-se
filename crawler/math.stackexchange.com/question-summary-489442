@@ -1,0 +1,26 @@
+I_{1}=\int_{0}^{\dfrac{\pi}{2}}\cos{(\sin{x})}dx,I_{2}=\int_{0}^{\dfrac{\pi}{2}}\sin{(\sin{x})}dx
+I_{1}
+I_{2}
+\int_{0}^{\dfrac{\pi}{2}}f(\sin{x})dx=\int_{0}^{\dfrac{\pi}{2}}f(\cos{x})dx
+I_{2}=\int_{0}^{\dfrac{\pi}{2}}\sin{(\sin{x})}dx=\int_{0}^{\dfrac{\pi}{2}}\sin{(\cos{x})}dx
+\sin{(\cos{x})}<\cos{x}<\cos{(\sin{x})}
+\sin{x}<x
+I_{1}>I_{2}
+\cos{(\sin{x})}-\sin{(\sin{x})}>1-\dfrac{\sin^2{x}}{2}-x
+I_{1}-I_{2}>\int_{0}^{\dfrac{\pi}{2}}\left(1-x-\dfrac{\sin^2{x}}{2}\right)dx>0
+I_1-I_2 = \int_0^1 {\cos u-\sin u\over\sqrt{1-u^2}}du
+0\lt u\lt \pi/4
+\pi/4\lt u\lt 1
+I_1\gt I_2
+\int_0^{\pi/4} {\cos u-\sin u\over\sqrt{1-u^2}}du\gt \int_{\pi/4}^1 {\sin u-\cos u\over\sqrt{1-u^2}}du
+\int_0^{\pi/4} {\cos u-\sin u\over\sqrt{1-u^2}}du\gt \int_0^{\pi/4}(\cos u-\sin u)du = (\sin u+\cos u)\big|_0^{\pi/4}=\sqrt2-1\approx0.4141
+\begin{align} \int_{\pi/4}^1 {\sin u-\cos u\over\sqrt{1-u^2}}du&\lt (\sin(1)-\cos(1))\int_{\pi/4}^1 {1\over\sqrt{1-u^2}}du\cr &=(\sin(1)-\cos(1))(\arcsin(1)-\arcsin(\pi/4))\cr &\approx0.2010 \end{align}
+1\lt\pi/3
+\pi/4\gt1/\sqrt2
+\begin{align} (\sin(1)-\cos(1))\int_{\pi/4}^1 {1\over\sqrt{1-u^2}}du&\lt(\sin(\pi/3)-\cos(\pi/3))(\arcsin(1)-\arcsin(1/\sqrt2))\cr &=\left({\sqrt3-1\over2} \right)\left({\pi\over2}-{\pi\over4} \right)\cr &\approx0.2875 \end{align}
+10^{-3}
+int(cos(sin(x)), x = 0 .. (1/2)*Pi, numeric, epsilon = 10^{-3}); 
+ 1.201969715
+int(sin(sin(x)), x = 0 .. (1/2)*Pi, numeric, epsilon = 10^{-3}) 
+ 0.8932437411 .
+I_1 - I_2 = \frac{\pi}{2}J_0(1)- \frac{\pi}{2}\mathbf{H}_0(1) \approx 0.308725974342

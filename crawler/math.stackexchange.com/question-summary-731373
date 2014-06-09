@@ -1,0 +1,15 @@
+\int_0^{\pi/2} \frac{1}{(\sinh t)^{2}+(\sin{\theta)^{2}}} d\theta
+t>0
+z=e^{i\theta}
+\pi/\sinh(2t)
+z = e^{i\theta}
+4
+(\sin\theta)^2
+\sin^2\theta = \frac{1}{2}(1 - \cos (2\theta)),
+\begin{align} \int_0^{\pi/2} \frac{d\theta}{(\sinh t)^2 + (\sin\theta)^2} &= \int_0^{\pi/2} \frac{2\,d\theta}{2(\sinh t)^2 + 1 - \cos (2\theta)}\\ &= \int_0^\pi \frac{d\varphi}{1+2(\sinh t)^2 - \cos \varphi}\\ &= \int_0^\pi \frac{d\varphi}{(\cosh t)^2 + (\sinh t)^2 - \cos\varphi}\\ &= \int_0^\pi \frac{d\varphi}{\cosh (2t) - \cos\varphi}. \end{align}
+\cos
+\int_0^{\pi/2} \frac{d\theta}{(\sinh t)^2 + (\sin \theta)^2} = \frac{1}{2}\int_{-\pi}^\pi \frac{d\varphi}{\cosh (2t) - \cos\varphi}.
+z = e^{i\varphi}
+\begin{align} \int_0^{\pi/2} \frac{d\theta}{(\sinh t)^2 + (\sin \theta)^2} &= \frac{1}{2}\int_{\lvert z\rvert = 1} \frac{1}{\cosh (2t) - \frac{1}{2}(z + z^{-1})}\frac{dz}{iz}\\ &= \frac{1}{i} \int_{\lvert z\rvert = 1} \frac{dz}{2\cosh (2t)z - z^2 - 1}\\ &= i \int_{\lvert z\rvert = 1} \frac{dz}{z^2 - 2\cosh (2t)z + 1}\\ &= i \int_{\lvert z\rvert = 1} \frac{dz}{(z-\cosh (2t))^2 - (\sinh (2t))^2}\\ &= i \int_{\lvert z\rvert = 1} \frac{dz}{(z-\cosh (2t) - \sinh (2t))(z-\cosh (2t) + \sinh (2t))}. \end{align}
+\cosh (2t) + \sinh (2t)
+\begin{align} \int_0^{\pi/2} \frac{d\theta}{(\sinh t)^2 + (\sin \theta)^2} &= i\frac{2\pi i}{(\cosh (2t) - \sinh (2t)) - (\cosh (2t) + \sinh (2t))}\\ &= \frac{-2\pi}{-2\sinh (2t)}\\ &= \frac{\pi}{\sinh (2t)}. \end{align}

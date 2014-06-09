@@ -1,0 +1,38 @@
+n
+(0,1)
+f_{\mathbb{X}}(x) = {1\over {b-a}}, a=0, b=1
+f_{\mathbb{X}}(x) = {1\over {1-0}}, 1
+x
+n
+\mathbb{Z}
+F_{\mathbb{Z}}(x) = \Pi_{i=1}^{n} F_{\mathbb{X}_i}(x) = x^n
+\mathbb{Y}
+F_{\mathbb{Z}}(x) = 1-\Pi_{i=1}^{n} 1- F_{\mathbb{X}_i}(x) = 1-(1-x)^n
+(0,1)
+F(1)-F(0)
+E(\mathbb{Z}) = F_{\mathbb{Z}}(1)-F_{\mathbb{Z}}(0) = 1^n - 0^n = 1
+E(\mathbb{Y}) = F_{\mathbb{Y}}(1)-F_{\mathbb{Y}}(0) = (1-(1-1)^n) - (1-(1-0)^n) = (1-0)-(1-1) = 1
+E(\mathbb{Z}) = {n \over {n+1}}
+E(\mathbb{Y}) = {1\over n}
+f_z(x)=nx^{n-1}
+E(\mathbb{Z})=\int_0^1{xnx^{n-1}dx}=\int_0^1{nx^n}=\frac{nx^{n+1}}{n+1}|_0^1=\frac{n}{n+1}
+X
+ {\rm E}[X] = \int_{x = -\infty}^{\infty} x f_X(x) \, dx,
+ {\rm E}[X] = \int_{x=0}^\infty (1-F_X(x)) \, dx = \int_{x=0}^\infty S_X(x) \, dx.
+Y = \min(X_1, \ldots, X_n)
+Z = \max(X_1, \ldots, X_n)
+X_i \sim {\rm Uniform}(0,1)
+Y
+n
+[0,1]
+n+1
+n/(n+1)
+1/(n+1)
+{\rm E}[Z] = \int_{z=0}^\infty (1-F_Z(z)) \, dz = \int_{z=0}^1 (1 - z^n) \, dz= \frac{n}{n+1},
+{\rm E}[Y] = \int_{y=0}^\infty (1 - F_Y(y)) \, dy = \int_{y=0}^1 (1-y)^n \, dy = \frac{1}{n+1}.
+f_Z(x)=nx^{n-1}
+EZ=\int_0^1 x nx^{n-1}dx=n\int_0^1x^ndx=n\left(\frac{x^{n+1}}{n+1}|_0^1\right)=\frac{n}{n+1}
+f_Y(x)=n(1-x)^{n-1}
+EY=\int_0^1 x n(1-x)^{n-1}dx=n\int_0^1x(1-x)^{n-1}dx
+=-\int_0^1xd(1-x)^{n}=-x(1-x)^n|_0^1+\int_0^1(1-x)^ndx=-\int_0^1(1-x)^nd(1-x)
+=-\frac{(1-x)^{n+1}}{n+1}|_0^1=\frac{1}{n+1}

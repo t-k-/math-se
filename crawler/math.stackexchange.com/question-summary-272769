@@ -1,0 +1,10 @@
+J(x, y, z) = x^a + y^b + z^c
+J
+ x + y + z = D
+H(x,y,z,\lambda):=x^a+y^b+z^c-\lambda(x+y+z-D)
+H_x'=H_y'=H_z'=H_\lambda'=0\;\;\ldots
+C(x,y,z) = x+y+z-D=0
+L(x,y,z,\lambda) := J(x,y,z) = J(x,y,z)-\lambda \cdot C(x,y,z)
+\nabla L=0
+\frac{\partial L}{\partial x}=0 \\  \frac{\partial L}{\partial y}=0 \\ \frac{\partial L}{\partial z}=0 \\ 
+ \frac{\partial L}{\partial \lambda}=C(x,y,z)=0 \\ 

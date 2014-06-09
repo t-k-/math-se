@@ -1,0 +1,21 @@
+y = e^x(A \cos x + B \sin x)
+ \frac{dy}{dx} = e^x(A \cos x + B \sin x) + e^x(-A \sin x + B \cos x) = y +e^x(-A \sin x + B \cos x)
+ \frac{d^2 y}{dx^2} = \frac{dy}{dx} + e^x(-A \sin x + B \cos x) + e^x(-A \cos x - B \sin x) = \frac{dy}{dx}+\left(\frac{dy}{dx} - y\right) - y ,
+ \frac{d^2y}{dx^2} - 2\frac{dy}{dx} + 2y = 0 
+y = cx + c^2
+c
+ \frac{dy}{dx} = c
+ \frac{d^2y}{dx^2} = 0 
+y = Ae^{3x} + Be^{2x}
+ \frac{dy}{dx} = 3Ae^{3x} + 2Be^{2x}
+ \frac{d^2y}{dx^2} = 9Ae^{3x} + 4Be^{2x}
+c
+ y = y'x + (y')^2 
+y = cx + c^2
+A
+B
+\mathbb{R}^3
+ \begin{pmatrix} y \\ y' \\ y'' \end{pmatrix} = A \begin{pmatrix} e^{3x} \\ 3e^{3x} \\ 9e^{3x} \end{pmatrix} + B \begin{pmatrix} e^{2x}  \\ 2e^{2x}  \\ 4e^{4x} \end{pmatrix} 
+\mathbb{R}^3
+ \begin{vmatrix} y   &   e^{3x}    &  e^{2x}  \\ y'  &  3e^{3x}    &  2e^{2x}  \\ y'' &  9e^{3x}    &  4e^{2x} \end{vmatrix} = 0 
+ 0 =  y  \begin{vmatrix} 3e^{3x}   &   2e^{2x}  \\ 9e^{3x}   &   4e^{2x} \end{vmatrix} -y'  \begin{vmatrix} e^{3x}    &   e^{2x}  \\ 9e^{3x}   &  4e^{2x} \end{vmatrix} +y''  \begin{vmatrix} e^{3x}    &   e^{2x}  \\ 3e^{3x}   &  2e^{2x} \end{vmatrix} 

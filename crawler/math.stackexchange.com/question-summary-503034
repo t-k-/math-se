@@ -1,0 +1,44 @@
+(X,d)
+E\subseteq X
+x\in X
+x
+E
+(x,E)
+x
+\text{dist}(x,E) := \inf\{d(x,y) : y\in E\}.
+(\forall \epsilon>0)( \exists \delta>0)\text{ such that } d(x,a) < \delta \implies d(\text{dist}(x,E),\text{dist}(a,E)) < \epsilon
+d
+d
+\delta = \epsilon
+\epsilon > 0
+\delta
+\delta = \epsilon
+d(b,c) < \delta
+b,c \in X
+(x,E):= \inf\{d(x,y) : y\in E\}
+(x,E) < d(x,y_1) + \epsilon
+x\in X
+y_1\in E
+(a,E) < d(a,y_2) + \epsilon
+a\in X
+y_2\in E
+y_1,y_2\in E\subseteq X
+d(x,y_1) < \delta
+d(a,y_2)< \delta
+\text{dist}(x,E)< \delta
+\text{dist}(a,E)< \delta
+\text{dist}(x,E) - \text{dist}(a,E)< \delta - \delta = 0 < \epsilon.
+|\text{dist}(x,E) - \text{dist}(a,E)|< \epsilon.
+dist(x,E) = d(x,x_1)
+dist(a,E) = d(a,x_2)
+\epsilon > 0
+d(x,x_1) \ge d(a,x_2)
+|d(x,x_1) - d(a,x_2)| \le |d(x,x_2) - d(a,x_2)| \le d(x,a) < \epsilon
+d(x,x_1) < d(a,x_2)
+|d(a,x_2) - d(x,x_1)| \le |d(a,x_1) - d(x,x_1)| \le d(x,a) < \epsilon
+\exists \delta = \epsilon
+d(x,a) < \delta
+|dist(x,E) - dist(a,E)| < \epsilon
+\epsilon > 0
+dist(x,E) < d(x,y_1) + \epsilon
+d(x,y_1) < \delta

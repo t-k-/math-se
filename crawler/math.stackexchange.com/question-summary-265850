@@ -1,0 +1,11 @@
+\lim_{n \to \infty} \left(1+\frac{\lambda}{n} + o(n^{-1})\right)^n = \exp(\lambda)
+\lim_{n \to \infty} n\log \left(1+\frac{\lambda}{n} + o(n^{-1})\right) = \lambda
+m=n^{-1}
+\lim_{m \to 0} m^{-1} \log \left(1+\lambda m + o(m)\right) = \lambda
+f(n) = o(n^{-1})
+A = \lim_{n \to \infty} \left(1+\frac{\lambda}{n} + f(n)\right)^n
+\log(A) = n\log\left( \lim_{n \to \infty} \left(1+\frac{\lambda}{n} + f(n)\right)\right)
+\lim_{n \to \infty} |f(n)| \leq \lim_{n \to \infty}\epsilon/n = 0
+\log(A) = \log \left( \lim_{n \to \infty} \left(1+\frac{\lambda}{n}\right)^n\right)
+ A = \exp(\lambda)
+\forall t\geqslant 0,\quad t-\frac{t^2}2\leqslant \log(1+t)\leqslant t.

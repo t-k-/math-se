@@ -1,0 +1,16 @@
+\frac{dx}{dt} - 2tx=t^3
+\mathrm{e}^{-t^2}
+\frac{t^3}{\mathrm{e}^{-t^2}}
+e^{-t^2}x'-2te^{-t^2}x=(e^{-t^2}x)'=t^3e^{-t^2}
+e^{-t^2}x=\int t^3e^{-t^2}dt
+u=t^2,du=2tdt
+\int t^3e^{-t^2}dt=\frac12\int ue^{-u}du=
+-\frac12ue^{-u}+\frac12\int e^{-u}du=-\frac12e^{-u}(u+1)
+e^{-t^2}x=-\frac12e^{-t^2}(t^2+1)+C
+x=-\frac12(t^2+1)+Ce^{t^2}
+u=t^2\implies du=2tdt
+\int \frac{t^3}{e^{-t^2}}dt = \int t^3e^{t^2}dt
+\frac{1}{2}\int t^2e^udu=\frac{1}{2}\int ue^udu
+    t^3  = \frac{\mathrm{d} x(t)}{\mathrm{d} t} - 2 t x(t) = \mathrm{e}^{t^2} \frac{\mathrm{d}}{\mathrm{d} t} \left( \mathrm{e}^{-t^2} x(t) \right) 
+       \mathrm{e}^{-t^2} x(t) = x_0 + \int_0^t \mathrm{e}^{-s^2} s^3 \mathrm{d} s = x_0 + \int_0^t \mathrm{e}^{-s^2} s^2 \mathrm{d} \left( \frac{s^2}{2} \right) \stackrel{u = s^2}{=} x_0 + \frac{1}{2} \int_0^{t^2} \mathrm{e}^{-u} u \mathrm{d} u  
+     x(t) = \left(x_0 + \frac{1}{2} \right) \mathrm{e}^{t^2} - \frac{1+t^2}{2} 

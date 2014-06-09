@@ -1,0 +1,20 @@
+X\sim
+[0,1]
+Y\sim
+[0,1]
+f_{X+Y}(Z) = \int_0^Z f_X(x) f_Y(Z-x)\;dx \neq Z
+Z
+P(X_1+X_2\le 2)
+f_{X+Y}(z)=\int_0^z f_X(x)f_Y(z-x)dx
+[0,2]
+f_X
+f_Y
+f_{X+Y}(z)=\int_{\max(0,z-2)}^{\min(1,z)} f_X(x)f_Y(z-x)dx = \int_{\max(0,z-2)}^{\min(1,z)} \frac{1}{2} dx 
+f_{X+Y}(z) = \begin{cases} z/2 &\mbox{if } 0 \le z \le 1 \\ 1/2 &\mbox{if } 1 \le z \le 2 \\  (3-z)/2 &\mbox{if } 2 \le z \le 3. \end{cases}  
+P(X_1+X_2\le 2) = \int_0^2 f_{X+Y}(z)dz = \int_0^1 f_{X+Y}(z)dz + \int_1^2 f_{X+Y}(z)dz = \frac14+\frac12 =\frac34.
+[0,1]
+f_X
+f_Y
+f_{X+Y}(z)=\int_{\max(0,z-1)}^{\min(1,z)} f_X(x)f_Y(z-x)dx = \int_{\max(0,z-1)}^{\min(1,z)} 1 \, dx 
+f_{X+Y}(z) = \begin{cases} z &\mbox{if } 0 \le z \le 1 \\ 2-z &\mbox{if } 1 \le z \le 2. \end{cases}  
+P(X_1+X_2\le 2) = \int_0^2 f_{X+Y}(z)dz = \int_0^1 f_{X+Y}(z)dz + \int_1^2 f_{X+Y}(z)dz = \frac12+\frac12 =1

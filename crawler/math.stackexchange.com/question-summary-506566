@@ -1,0 +1,18 @@
+\mu
+\sigma
+\Sigma_t
+X_t=X_0+\int_0^t\mu_sds+\int_0^t\sigma_sdW_s
+\frac{d}{ds} E(X_s|\Sigma_t)|_{s=t}= \mu_t 
+\frac{d}{ds} Var(X_s|\Sigma_t)|_{s=t}= \sigma_t\sigma_t^T
+\frac{d}{ds} E(X_s|\Sigma_t)|_{s=t}= \frac{d}{ds} E(X_0+\int_0^s\mu_sds+\int_0^s\sigma_sdW_s|\Sigma_t)|_{s=t}
+=\frac{d}{ds} E(X_0|\Sigma_t)+\frac{d}{ds}E(\int_0^s\mu_sds)+\frac{d}{ds}E(\int_0^s\sigma_sdW_s|\Sigma_t))
+\sigma_s
+(t,\omega) \mapsto \int_0^t \sigma_r \, dW_r
+s \geq t
+\begin{align*} \mathbb{E}(X_s \mid \Sigma_t) &= \mathbb{E}(X_0 \mid \Sigma_t) + \mathbb{E} \left( \int_0^s \mu_r \, dr \mid \Sigma_t \right) + \int_0^t \sigma_r \, dW_r \end{align*}
+\mathbb{E} \left( \int_0^s \mu_r \, dr \mid \Sigma_t \right) = \int_0^s \mathbb{E}(\mu_r \mid \Sigma_t) \, dr
+\frac{d}{ds} \mathbb{E}(X_s \mid \Sigma_t) = \frac{d}{ds} \int_0^s \mathbb{E}(\mu_r \mid \Sigma_t) \, dr
+\mathbb{E}(\mu_r \mid \Sigma_t)
+\frac{d}{ds} \mathbb{E}(X_s \mid \Sigma_t) \bigg|_{t=s} = \mathbb{E}(\mu_s \mid \Sigma_t) \bigg|_{t=s} = \mu_t
+\mu
+\Sigma_t

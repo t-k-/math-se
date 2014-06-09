@@ -1,0 +1,29 @@
+[(\forall x)(P(x)) \land (\exists x)(\lnot Q(x))] \implies \{(\forall x)(P(x)) \iff [\lnot(\forall x)(R(x)) \lor (\exists x)(S(x))]\}
+(\forall x)(P(x))
+(\forall x)(Q(x))
+(\exists x)(\lnot R(x))
+(\exists x)(S(x))
+V_0\implies F_0
+\lnot \{(\forall x)(P(x)) \iff [\lnot(\forall x)(R(x)) \lor (\exists x)(S(x))]\}
+P \iff Q
+(P \land \lnot Q) \lor (\lnot P \land Q)
+\{(\forall x)(P(x)) \land \lnot[\lnot(\forall x)(R(x)) \lor (\exists x)(S(x))]\} \lor \{\lnot(\forall x)(P(x)) \land [\lnot(\forall x)(R(x)) \lor (\exists x)(S(x))]\}
+\{(\forall x)(P(x)) \land [(\forall x)(R(x)) \land \lnot (\exists x)(S(x))]\} \lor \{\lnot(\forall x)(P(x)) \land [\lnot(\forall x)(R(x)) \lor (\exists x)(S(x))]\}
+\{(\forall x)(P(x)) \land [(\forall x)(R(x)) \land (\forall x)(\lnot S(x))]\} \lor \{(\exists x)(\lnot P(x)) \land [(\exists x)(\lnot R(x)) \lor (\exists x)(S(x))]\}
+(\exists x)(\lnot P(x))
+(\forall x)(P(x))
+\{(\forall x)(P(x)) \land [(\forall x)(R(x)) \land (\forall x)(\lnot S(x))]\}
+(\forall x)(P(x)) \land (\exists x)(\lnot Q(x)) \land (\forall x)(R(x)) \land (\forall x)(\lnot S(x))
+(\forall x)(P(x)) \equiv V_0
+(\forall x)(Q(x)) \equiv  F_0
+(\exists x)(\lnot R(x)) \equiv  F_0
+(\exists x)(S(x)) \equiv  F_0
+ p = (\forall x) P(x)
+q = (\forall x) Q(x)
+ r = (\forall x) R(x) 
+s = (\exists x) S(x)
+ p \equiv T, \ q \equiv F, \ r\equiv T, \  s \equiv F
+(\forall x) P(x) \equiv T
+(\forall x) Q(x) \equiv F
+\neg (\forall x) R(x) \equiv (\exists x)(\neg R(x)) \equiv F
+(\exists x) S(x) \equiv F

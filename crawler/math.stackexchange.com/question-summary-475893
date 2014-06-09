@@ -1,0 +1,11 @@
+\frac{2}{\pi^2} \sum_{n=1}^\infty \frac{\sin n\pi x \sin n\pi y}{n^2}
+x \leqslant y, \qquad (1-y)x
+x >y, \qquad (1-x)y
+x,y \in [0,1]
+n=0
+\lim\limits_{x \rightarrow 0} \frac{\sin x}{x} = 1
+ \frac{\sin n\pi x\ \sin n\pi y}{n^2}\bigg|_{n=0} = \pi^2 xy 
+ \begin{align*} \frac{2}{\pi^2} \sum_{n=1}^\infty \frac{\sin n\pi x \sin n\pi y}{n^2}  &= \sum_{n=-\infty}^\infty \frac{1}{\pi^2} \frac{\sin n\pi x \sin n\pi y}{n^2} - xy \\ &= 4\cdot \sum_{n=-\infty}^\infty\frac{1}{(2n\pi)^2}\bigg[ \sin^2(2n\pi \frac{x+y}{4}) - \sin^2(2n\pi \frac{x-y}{4})\bigg] - xy\\  &= \frac{4}{2\pi}\sum_{\nu = -\infty}^\infty \pi \bigg(\frac{x+y}{4} - \frac{|\nu|}{2}\bigg) - \frac{4}{2\pi}\sum_{\nu=-\infty}^\infty \pi\bigg(\frac{|x-y|}{4} -\frac{|\nu|}{2}\bigg) - xy \\ &=\begin{cases} (1 - y)x \qquad & x\leq y \quad \text{note: } x,y \in [0,1]\\ (1-x)y \qquad & x >y \end{cases} \end{align*} 
+\frac{\pi-x}{2}
+\sin \alpha \sin \beta = \frac12\left( \cos (\alpha- \beta) - \cos(\alpha +\beta) \right)
+\sum_{n=1}^{\infty} \frac{\cos nx}{n^2} = \frac{x^2}{4} - \frac{\pi x}{2} + \frac{\pi^2}{6}, \quad 0 \le x \le \pi,

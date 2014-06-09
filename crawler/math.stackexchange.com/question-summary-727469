@@ -1,0 +1,25 @@
+\mu
+\sigma
+\mathbb{R}
+f(z)
+\mu
+\alpha \in \mathbb{R}
+\mu(A) = \left\{ 	\begin{array}{ll} 		 1 & \mbox{if } \alpha \in A \\ 		 0 & \mbox{if } \alpha \not \in A 	\end{array} \right. 
+\mu
+i=\sqrt{-1}
+f(z):=\int_{\mathbb{R}} \frac{1}{t-z} d\mu(t) z\in \frac{\mathbb{C}}{\mathbb{R}}
+\lim_{y\rightarrow 0}iyf(iy)=-\mu(\lbrace 0 \rbrace)
+\mu 
+f(z):=\int_{\mathbb{R}} \frac{1}{t-z} d\mu(t) =\frac{1}{\alpha - z}
+iy f(iy)=\int_{\mathbb{R}} \frac{iy}{t-iy} d\mu(t)=\int_{\mathbb{R}} \frac{1}{\frac{t}{iy}-1} d\mu(t)
+\left|\frac{1}{\frac{t}{iy}-1}\right|\le 1
+\mu
+g(t)=\lim_{y\rightarrow 0} \frac{1}{\frac{t}{iy}-1}
+t\in\mathbb{R}
+t\not=0
+-1
+t=0
+g(t)=0
+t\not=0
+g(0)=-1
+\begin{align} \lim_{y\rightarrow\infty} iy f(iy) &= \int_{\mathbb{R}} \lim_{y\rightarrow 0} \frac{1}{\frac{t}{iy}-1} d\mu(t)=\int_\mathbb{R} g(t) d\mu(t)=\int_{\{0\}}g(t)d\mu(t)+\int_{\mathbb{R}\backslash\{0\}}g(t)d\mu(t)\\ &= \int_{\{0\}} -1\cdot d\mu(t)+\int_{\mathbb{R}\backslash\{0\}} 0\cdot d\mu(t)=-\int_{\{0\}}d\mu(t)=-\mu(\{0\}) \end{align} 

@@ -1,0 +1,7 @@
+\int\frac{\sin^3x}{\cos x}dx
+\sin^3x=(1-\cos^2x)(\sin x)
+\int \tan(x)(1-\cos^2x)
+u = \cos x \implies du = -\sin x\,dx
+\begin{align} \int \dfrac{\sin^3x}{\cos x} \,dx & = -\int \dfrac{-\sin x\sin^2 x}{\cos x}\,dx \\ \\ & = -\int \dfrac{-\sin x(1 - \cos^2 x)}{\cos x}\,dx \\ \\ & = -\int \dfrac{(1 - u^2)}{u}\,du \\ \\ & = \int u \,du - \int\dfrac 1u \,du\\ \\ & = \frac{u^2}{2} - \ln |u| + C \\ \\ & = \frac 12 \cos^2 x - \ln |\cos x| + C\end{align}
+\int (\tan x-\sin x\cos x)dx
+\int\frac{\sin^3x}{\cos x}dx = \int\frac{\sin x(1-\cos^2x)}{\cos x}dx = \int (\tan x - \sin x\cos x) dx = \int (\tan x - \frac{1}{2}\sin 2x)dx

@@ -1,0 +1,10 @@
+F: \mathbb R^2 \to \mathbb R
+g: [a,b] \to \mathbb R
+g(t) = \int_{a}^t F(x,g(x)) dx
+g'(t)= F(t,g(t))
+ g'(t) = \lim_{\varepsilon \to 0} { g(t + \varepsilon) - g(t) \over \varepsilon} = \lim_{\varepsilon \to 0} { \int_a^{t+\varepsilon} F(x,g(x)) dx- \int_a^t F(x,g(x)) dx \over \varepsilon} = \lim_{\varepsilon \to 0} { \int_t^{t+\varepsilon} F(x,g(x)) dx \over \varepsilon}
+H(z) =  \int_a^{z} F(x,g(x)) dx
+H
+[a,b] \to \mathbb R
+H'(x) = F(x,g(x))
+  g'(t) = \lim_{\varepsilon \to 0} {H(t + \varepsilon) - H(t) \over \varepsilon} = H'(t) = F(t,g(t))

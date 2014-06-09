@@ -1,0 +1,9 @@
+ I=\int\limits_0^1{\int\limits_0^1{\ln\Gamma\left({x+{y^3}}\right)}}dxdy =-\frac{7}{{16}}+\frac{1}{2}\ln 2\pi
+\Gamma{(a)}=\int_{0}^{\infty}x^{a-1}e^{-x}dx
+I=\int_{0}^{1}\int_{0}^{1}\ln{\left(\int_{0}^{\infty}t^{x+y^3-1}e^{-t}dt\right)}dxdy
+\displaystyle\;\;f(u) = \int_0^1 \log\Gamma(z+u) dz,\;\;
+f'(u) = \int_0^1 \frac{\Gamma'(z+u)}{\Gamma(z+u)}dz = \Big[\log\Gamma(z+u)\Big]_{z=0}^{1} = \log\frac{\Gamma(u+1)}{\Gamma(u)} = \log u
+f(u) = f(0) + u\log u - u
+f(0) = \int_0^1\log\Gamma(z)dz = \frac12\int_0^1\log(\Gamma(z)\Gamma(1-z))dz =\frac12 \int_0^1\log\frac{\pi}{\sin\pi z} dz =\frac12\left(\log\pi - \frac{1}{\pi}\int_0^{\pi}\log \sin\theta d\theta\right) \stackrel{\color{blue}{[1]}}{=} \frac12\log(2\pi) 
+f(u) = \frac12\log(2\pi) + u\log u - u
+\begin{align} I = \int_0^1 f(y^3) dy   = & \int_0^1 \big(\frac12\log(2\pi) + y^3 \log(y^3) - y^3\big) dy\\   = & \frac12\log(2\pi) + \left[\frac{3}{16}y^4(\log(y^4)-1) - \frac14 y^4\right]_0^1\\   = & \frac12\log(2\pi) - \frac{7}{16} \end{align}

@@ -1,0 +1,23 @@
+I(\theta) = \int_0^{\pi}\ln(1+\theta \cos x)dx
+|\theta|<1
+ I'(\theta) = \int^{\pi}_0 \frac{\cos x}{1+ \theta \cos x} dx .
+\theta I'(\theta) = \int^{\pi}_0 1 - \frac{1}{1+\theta \cos x} dx= \pi -  \int^{\pi}_0 \frac{1}{1+\theta \cos x} dx
+ \[\begin{aligned} I & = \int_{0}^{\pi} \frac{1}{a+b\cos{x}}\;{dx} \\&   = \int_{0}^{\pi} \frac{1}{a\left(\sin^2\frac{1}{2}x+\cos^2\frac{1}{2}x\right)+b\left(\cos^2\frac{1}{2}x-\sin^2\frac{1}{2}x\right)}\;{dx} \\& =\int_{0}^{\pi}\frac{1}{(a-b)\sin^2\frac{1}{2}x+(a+b)\cos^2\frac{1}{2}x}\;{dx} \\& =\int_{0}^{\pi}\frac{\sec^2{\frac{1}{2}x}}{(a+b)+(a-b)\tan^2\frac{1}{2}x}\;{dx} \\& = 2\int_{0}^{\infty}\frac{1}{(a+b)+(a-b)t^2}\;{dt} \\& =  2\int_{0}^{\infty}\frac{1}{(\sqrt{a+b})^2+(\sqrt{a-b})^2t^2}\;{dt}\\& = \frac{2}{{\sqrt{a^2-b^2}}}\tan^{-1}\bigg(\frac{\sqrt{a-b}}{\sqrt{a+b}}~t \bigg)\bigg|_{0}^{\infty} \\& = \frac{\pi}{\sqrt{a^2-b^2}}.\end{aligned}\] 
+\begin{aligned} I & = \int_{0}^{\pi} \frac{1}{a+b\cos{x}}\;{dx} \\&   = \int_{0}^{\pi} \frac{1}{a\left(\sin^2\frac{1}{2}x+\cos^2\frac{1}{2}x\right)+b\left(\cos^2\frac{1}{2}x-\sin^2\frac{1}{2}x\right)}\;{dx} \\& =\int_{0}^{\pi}\frac{1}{(a-b)\sin^2\frac{1}{2}x+(a+b)\cos^2\frac{1}{2}x}\;{dx} \\& =\int_{0}^{\pi}\frac{\sec^2{\frac{1}{2}x}}{(a+b)+(a-b)\tan^2\frac{1}{2}x}\;{dx} \\& = 2\int_{0}^{\infty}\frac{1}{(a+b)+(a-b)t^2}\;{dt} \\& =  2\int_{0}^{\infty}\frac{1}{(\sqrt{a+b})^2+(\sqrt{a-b})^2t^2}\;{dt}\\& = \frac{2}{{\sqrt{a^2-b^2}}}\tan^{-1}\bigg(\frac{\sqrt{a-b}}{\sqrt{a+b}}~t \bigg)\bigg|_{0}^{\infty} \\& = \frac{\pi}{\sqrt{a^2-b^2}}.\end{aligned}
+ \theta I'(\theta) = \pi \left(1 - \frac{1}{\sqrt{1-\theta^2}} \right).
+I'(\theta).
+-\ln2\approx-0.693147180559945
+\theta=\pm1
+\left(-2.17758608788, 1.09713268507 \times 10^{-06}\right)
+I(\theta) = \int_0^{\pi}\ln(1+\theta \cos x)dx
+I'(\theta) = \int_0^{\pi}\frac{\cos x}{1+\theta \cos x}dx
+\frac{\cos x}{1+\theta \cos x}=A+\frac{B}{1+\theta \cos x}
+A+B=0
+A.\theta=1
+A=\frac{1}{\theta}
+B=\frac{-1}{\theta}
+I'(\theta) = \int_0^{\pi}\frac{\cos x}{1+\theta \cos x}dx=\int_0^{\pi}A+\frac{B}{1+\theta \cos x}dx=\int_0^{\pi}\frac{1}{\theta}+\frac{\frac{-1}{\theta}}{1+\theta \cos x}dx
+I'(\theta) = \frac{\pi}{\theta}-\frac{1}{\theta}\int_0^{\pi}\frac{1}{1+\theta \cos x}dx
+\tan(x/2)=u
+\cos(x)=\frac{1-u^2}{1+u^2}
+dx=\frac{2}{1+u^2} du

@@ -1,0 +1,34 @@
+M/M/\infty
+\lambda,\mu
+M
+P
+P(n,m)=\sum_{i=0}^{min(m,n)} {n\choose i}(1-p)^ip^{n-i}q^{m-i}(1-q)
+n\in\mathbb{N}
+O^n:\mathbb{N}^*\rightarrow \mathbb{N}
+n
+O^n(w)=\left\{\begin{array}{ll}\sum_{i=0}^{l}w_i& \exists l,\forall i<l,w_i>n ~and~ w_l\leq n\\\bot& otherwise\end{array}\right.
+\mathcal{E}^n
+E(O^n|O^n\neq\bot)
+B\in\mathbb{R}
+\forall n\in\mathbb{N},\mathcal{E}^n\leq B
+M/M/\infty
+n
+q^n(1-q)
+p
+n\in \mathbb{N}
+\begin{array}{rcl} \sum_{m\in\mathbb{N}}P(n,m)&=&\sum_{m\in\mathbb{N}}\sum_{i=0}^{min(m,n)} {n\choose i}(1-p)^ip^{n-i}q^{m-i}(1-q)\\ &=&\sum_{i=0}^{n}\sum_{m\geq i}{n\choose i}(1-p)^ip^{n-i}q^{m-i}(1-q)\\ &=&\sum_{i=0}^{n}{n\choose i}(1-p)^ip^{n-i}\sum_{m\geq i}q^{m-i}(1-q)\\ &=&\sum_{i=0}^{n}{n\choose i}(1-p)^ip^{n-i}\sum_{m\geq 0}q^{m}(1-q)\\ &=&\sum_{i=0}^{n}{n\choose i}(1-p)^ip^{n-i}\\ &=&1 \end{array}
+\lambda
+n
+\mu^n(1-\mu)
+R(s)=\text{number of process in }s
+0\rightarrow n\rightarrow 0
+\lambda^0\mu^n(1-\mu)*\lambda^n*(1-\mu)
+0+n+0
+x_1 \rightarrow x_2 \rightarrow .. \rightarrow x_k
+x_1=n
+\forall i\in [2,k-1], x_i>n
+x_k\leq n
+n
+M/M/\infty
+n
+M/M/\infty

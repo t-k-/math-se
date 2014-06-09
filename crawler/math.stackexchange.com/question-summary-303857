@@ -1,0 +1,18 @@
+A=\sum_{1}^{\infty}a_{n}
+n
+b_{n}=\frac{a_{1}+2a_{2}+...+na_{n}}{n(n+1)}.
+\sum_{1}^{\infty}b_{n}
+\sum_{n=1}^\infty b_n=\sum_{n=1}^\infty \frac{1}{n(n+1)}\sum_{k=1}^n k a_k = \sum_{n=1}^\infty  na_n \left( \frac{1}{n(n+1)}+\frac{1}{(n+1)(n+2)}+\cdots\right)=\sum_{n=1}^\infty a_n.
+\sum a_n =L
+\left| \frac{1}{N+1}\sum_{n=1}^N (N+1-n) a_n-L  \right|\le \frac{|L|}{N+1}+\frac{1}{N+1} \sum_{n=1}^N |a_1+a_2+\cdots +a_n -L|
+\varepsilon>0
+M
+n>M
+|a_1+a_2+\cdots +a_n -L|<\varepsilon
+N>M
+\sum_{n=1}^N |a_1+a_2+\cdots +a_n -L| \le \sum_{n=1}^M |a_1+a_2+\cdots +a_n -L|+\sum_{n=M+1}^N \varepsilon
+\left| \frac{1}{N+1}\sum_{n=1}^N (N+1-n) a_n-L  \right|\le \frac{|L|}{N+1}+\frac{1}{N+1}  \sum_{n=1}^M |a_1+a_2+\cdots +a_n -L|+\frac{N+1-M}{N+1}\varepsilon
+N\to\infty
+\lim_{N\to\infty}\left| \frac{1}{N+1}\sum_{n=1}^N (N+1-n) a_n-L  \right|\le \varepsilon
+\varepsilon>0
+\sum b_n=L

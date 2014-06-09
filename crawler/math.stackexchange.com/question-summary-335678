@@ -1,0 +1,31 @@
+(Lu)(x)= -\frac{d}{dx}\big(\frac{1}{x} \frac{du}{dx} )
+u(x)
+[1,2]
+G(x,t)
+h(x)
+[1,2]
+Lu=h
+1\le x \le2
+u(1)=u^{'}(2)=0 
+u(x)=\int_1^2G(x,t)h(t)dt= \int_1^xG(x,t)h(t)dt+\int_x^2G(x,t)h(t)
+h(x)=x
+G(x,t)
+u(x)
+\frac{1}{x}\frac{du}{dx}=A
+\frac{du}{dx}=Ax
+du=Axdx
+u(x)=\frac{Ax^2}{2}+B
+u(1)=\frac{A}2+B=0 \Rightarrow B=-\frac{A}2
+u(x)=\frac{Ax^2}{2}-\frac{A}2
+u_1(x)=\frac{x^2}2
+u^{'}(x)=2Ax
+u^{'}(2)=4A=0 \Rightarrow A=0
+U_2(x)=B=1
+ c=p(x)   \begin{vmatrix}         u_1 & u_2  \\         u_1^{'}  & u_2^{'} \\         \end{vmatrix}
+p(x)=-\frac1{x}
+c= -\frac1{x} \begin{vmatrix}         \frac{x^2}2 & 1  \\         2x  & 0 \\         \end{vmatrix}=-\frac1{x}(-x)=1
+G(x,t)=\begin{cases} \frac1{c}u_1(t)u_2(x)  & \text 1 \le t \le x\\ \frac1{c}u_1(x)u_2(t)  & \text x \le t \le 2\\ \end{cases}
+G(x,t)=\begin{cases} (\frac1{1})\frac{t^2}2 (1)  & \text 1 \le t \le x\\ (\frac1{1})\frac{x^2}2 (1)  & \text x \le t \le 2\\ \end{cases}
+h(t)=t
+u(x)=\int_1^2G(x,t)h(t)dt= \int_1^x\frac{t^2}2tdt+\int_x^2\frac{x^2}2t dt
+u(x)=\frac{x^4}8-\frac{x^2}8+x^2-\frac{x^4}4

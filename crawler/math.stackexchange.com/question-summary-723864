@@ -1,0 +1,27 @@
+V
+v=\{\eta_j\}_{j=1}^\infty
+\lim_{j\rightarrow\infty}\eta_j
+V
+\|v\|=\sup_{j\in \mathbb{N}}\eta_j
+T:l^2\rightarrow V
+Tu = (\xi_1,\xi_1+\frac{1}{2}\xi_2,\xi_1+\frac{1}{2}\xi_2+\frac{1}{3}\xi_3,...) 
+u=\{\xi_j\}\in l^2
+l^2
+l^2
+\|Tu\|=\sup_{j\in \mathbb{N}}|\sum_{i=1}^j\xi_i|\leq\sup_{j\in \mathbb{N}}\sum_{i=1}^j|\xi_i|
+\|Tu\|\leq C\|u\|_{l^2}=C(\sum_{i=1}^j|\xi_i|^2)^\frac{1}{2}
+\|Tu\|^2\leq(\sup_{j\in \mathbb{N}}\sum_{i=1}^j|\xi_i|)^2=(\sum_{i=1}^\infty|\xi_i|)^2
+=\sum_{i=1}^\infty\frac{|\xi_i|^2}{i^2}+\sum_{i=1,i\neq j}^\infty(\frac{|\xi_i|}{i}\sum_{j=1}^\infty\frac{|\xi_j|}{j})\leq\sum_{i=1}^\infty |\xi_i|^2+\sum_{i=1,j= 1}^\infty\frac{|\xi_i|}{i}\frac{|\xi_j|}{j}
+=\|u\|_{l^2}^2+\sum_{i=1,j= 1}^\infty\frac{|\xi_i|}{i}\frac{|\xi_j|}{j}
+\|Tu\|=\sup_{j\in \mathbb{N}}|\sum_{n=1}^j\frac{\xi_n}{n}|\leq \sup_{j\in \mathbb{N}}\{(\sum_{n=1}^j |\xi_n|^2)^\frac{1}{2}(\sum_{n=1}^j\frac{1}{n^2})^\frac{1}{2}\}=(\sum_{n=1}^\infty |\xi_n|^2)^\frac{1}{2}(\sum_{n=1}^\infty\frac{1}{n^2})^\frac{1}{2}
+=\frac{\pi}{\sqrt{6}}\|u\|_{l^2}
+\|T\|\leq\frac{\pi}{\sqrt{6}}
+w=\{w_n\}_{n\in \mathbb{N}}
+ w_n = \frac{\sqrt{6}}{n\pi}
+\|w\|_{l^2}=1
+\|T\|=\sup_{\|u\|_{l^2}=1}\|Tu\|\geq\|Tw\|=\frac{\sqrt{6}}{\pi}\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi}{\sqrt{6}}
+\|T\|\leq\frac{\pi}{\sqrt{6}}
+\|T\|\geq\frac{\pi}{\sqrt{6}} \Rightarrow \|T\|=\frac{\pi}{\sqrt{6}} 
+\|Tu\|\leq \frac\pi{\sqrt6}\,\|u\|
+\|T\|\leq\pi/\sqrt6
+ \left|\sum_{k=1}^n\frac{\xi_k}k\right|\leq\left(\sum_{k=1}^n|\xi_k|^2\right)^{1/2}\left(\sum_{k=1}^n\frac1{k^2}\right)^{1/2}\leq\left(\sum_{k=1}^\infty|\xi_k|^2\right)^{1/2}\left(\sum_{k=1}^\infty\frac1{k^2}\right)^{1/2}=\|u\|\,\frac\pi{\sqrt 6}, 

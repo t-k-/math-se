@@ -1,0 +1,9 @@
+u(t) \in L^{2}(0, 1)
+J(u) = \int_0^1 tu(t) \int_0^t u(s)dsdt
+ \begin{split} J(u + h) - J(u) &= \int_0^1t(u(t) + h(t))\int_0^t u(s) + h(s) dsdt - \int_0^1tu(t)\int_0^t u(s) dsdt \\ &= \int_0^1th(t)\int_0^t u(s) + h(s) dsdt + \int_0^1 tu(t) \int_0^t h(s) dsdt \\ &= \int_0^1th(t)\int_0^t h(s) dsdt + \int_0^1th(t)\int_0^t u(s) dsdt + \int_0^1 tu(t)\int_0^t h(s)dsdt \end{split} 
+ \begin{split} \int_0^1 tu(t)\int_0^t h(s)dsdt &= \int_{t = 0}^1 \int_{s = 0}^t tu(t)h(s)dsdt\\  &= \int_{s = 0}^1 h(s) \int_{t = 0}^s tu(t)dtds \\  &= \int_{t = 0}^1 h(t) \int_{s = 0}^s su(s)dsdt \end{split} 
+ J(u + h) - J(u) = \int_0^1th(t)\int_0^t h(s) dsdt + \int_0^1h(t)\int_0^t u(s)(t + s) dsdt 
+o(\|h\|_{L_2})
+DJ(u)(h)
+0\le s\le t
+s\le t\le 1

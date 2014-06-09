@@ -1,0 +1,10 @@
+r = a a^* b + b^* c b
+S \rightarrow S_1 | S_2
+S_1 \rightarrow a A b
+A \rightarrow a A | a
+S_2 \rightarrow b S_2 | c b
+r = a a^* b + b^* c b = (a a^*  + b^* c )b
+S \rightarrow P b
+P \rightarrow Q_1 | Q_2 
+Q_1 \rightarrow a | Q_1 a
+Q_2 \rightarrow c | b Q_2 

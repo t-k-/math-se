@@ -1,0 +1,11 @@
+f(z)=u(x,y)+iv(x,y)
+u_x
+u_y
+u_{xy}=u_{yx}
+u_x,u_y
+u_{xy}=\displaystyle{\lim\limits_{\Delta y\to 0}\frac{\left[\lim\limits_{\Delta x\to 0}\frac{u(y+\Delta y,x+\Delta x)-u(y+\Delta y,x)}{\Delta x}-\lim\limits_{\Delta x\to 0}\frac{u(y,x+\Delta x)-u(y,x)}{\Delta x}\right]}{\Delta y}}
+u_{yx}=\displaystyle{\lim\limits_{\Delta x\to 0}\frac{\left[\lim\limits_{\Delta y\to 0}\frac{u(y+\Delta y,x+\Delta x)-u(y,x+\Delta x)}{\Delta y}-\lim\limits_{\Delta y\to 0}\frac{u(y+\Delta y,x)-u(y,x)}{\Delta y}\right]}{\Delta x}}
+\lim\limits_{\Delta x,\Delta y\to 0}\frac{u(x+\Delta x,y+\Delta y)-u(x+\Delta x,y)-u(x,y+\Delta y)+u(x,y)}{\Delta x.\Delta y}
+ \lim_{\Delta x, \Delta y \to 0} 
+ \lim_{\Delta x\to 0}\;\lim_{\Delta y \to 0} 
+ \lim_{\Delta y\to 0}\;\lim_{\Delta x \to 0} 

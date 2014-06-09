@@ -1,0 +1,15 @@
+f(z)=\frac{1}{1+z^{2}}
+z_{0}
+Im(z_{0})<0
+r=\left | z_{0} + i\right |
+R=\left | z_{0} - i\right |
+f(z)=\frac{1}{1+z^{2}}=\frac{1}{2i}\frac{1}{z-i}-\frac{1}{2i}\frac{1}{z+i}
+r<\left | z-z_{0} \right |<R
+r<\left | z-z_{0} \right |
+\left | z_{0} +i\right |<\left | z-z_{0} \right |
+\Leftrightarrow 1 >\frac{z_{0}+i}{z-z_{0}}
+-\frac{1}{2i}\frac{1}{z+i}=\frac{1}{2i}\sum_{v<0} \left ( -\frac{z_{0}+i}{z-z_{0}} \right )^v
+\left | z-z_{0} \right |<R \Leftrightarrow \left | z-z_{0} \right | <\left | z_{0}-i \right |\Leftrightarrow \frac{\left | z-z_{0} \right |}{\left | z_{0}-i \right |}<1
+\frac{1}{2i}\frac{1}{z-i}=\frac{1}{2i}\frac{1}{z-z_{0}}\frac{1}{1-\frac{i-z_{0}}{z-z_{0}}}=\frac{1}{2i}\sum_{v<0} \frac{(z-z_{0})^{v}}{(i-z_{0})^{(v+1)}}
+\begin{align} \frac{1}{z+i} &= \frac{1}{(z-z_0) + (z_0+i)}\\ &= \frac{1}{z-z_0}\cdot \frac{1}{1 + \frac{z_0+i}{z-z_0}}\\ &= \frac{1}{z-z_0}\sum_{\nu = 0}^\infty \left(-\frac{z_0+i}{z-z_0}\right)^\nu\\ &= \sum_{\nu=0}^\infty (-1)^\nu\frac{(z_0+i)^\nu}{(z-z_0)^{\nu+1}} \end{align}
+\begin{align} \frac{1}{z-i} &= \frac{1}{(z-z_0) + (z_0-i)}\\ &= \frac{1}{z_0-i}\cdot \frac{1}{1 + \frac{z-z_0}{z_0-i}}\\ &= \frac{1}{z_0-i}\sum_{\nu=0}^\infty \left(-\frac{z-z_0}{z_0-i}\right)^\nu\\ &= \sum_{\nu=0}^\infty (-1)^\nu \frac{(z-z_0)^\nu}{(z_0-i)^{\nu+1}} \end{align}

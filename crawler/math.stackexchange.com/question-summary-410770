@@ -1,0 +1,30 @@
+\Lambda(n)=\log p 
+n=p^m
+\Lambda(n)=0
+\theta(x)=\sum_{p\leq x}\log p,
+\psi(x)=\sum_{n\leq x}\Lambda(n)
+\theta(x)=\psi(x)+O(\sqrt{x})
+\pi(x)=\frac{\psi(x)}{\log x}+O(\frac{x}{\log^2x})
+\pi(x)=\sum_{p\leq x}1
+x
+\binom{2n}{n}=\frac{(2n)!}{n!^2}, \text{ is always an integer}
+\text{no integer between }  1 \text{ and } n \text{ is divisible by a prime between n} \text{ and } 2n 
+n
+2n
+\implies\frac{(2n)!}{n!^2}=\binom{2n}{n} \text{ is divisible by all the primes between $n$ and $2n$}
+\implies\binom{2n}{n}\ge\prod_{n<p\leq 2n}p
+\prod_{n<p\leq 2n}p\leq\binom{2n}{n}\leq 4^n
+4^n=(1+1)^{2n}=\sum_{k=0}^{2n}\binom{2n}{k}\ge\binom{2n}{n}
+\prod_{n<p\leq 2n}p\leq 4^n
+\implies \prod_{\frac{n}{2}<p\leq n}p\leq 2^n
+\theta(n)-\theta(\frac{n}{2})\leq \ln(2)n
+\implies \theta(n)=(\theta(n)-\theta(\frac{n}{2}))+( \theta(\frac{n}{2})-\theta(\frac{n}{4}) )...\leq (1+\frac{1}{2}+\frac{1}{4}...)\ln(2)n
+\implies \theta(n)\leq 2\ln(2)n=n\ln(4)
+\theta(x)\leq x\ln(4)
+\theta(x)=O(x)
+\psi(x)=\sum_{p\leq x}\ln(p)+\sum_{p^2\leq x}\ln(p)+\sum_{p^3\leq x}\ln(p)...
+=\theta(x)+\theta(x^\frac{1}{2})+\theta(x^\frac{1}{3})+...
+=\theta(x)+O(\theta(x^{1/2}))=\theta(x)+O(x^{1/2})
+\psi(x)=\theta(x)+O(\sqrt{x})
+\pi(x)+O(\sqrt{x})=\sum_{1<n\leq x}\frac{\Lambda(n)}{\ln(n)}=\frac{\psi(x)}{\ln(x)}+\int_{2}^x\frac{\psi(t)}{t\ln(t)^2} dt=\frac{\psi(x)}{\ln(x)}+O(\frac{x}{\ln(x)^2})
+\pi(x)=\frac{\psi(x)}{\ln(x)}+O(\frac{x}{\ln(x)^2})

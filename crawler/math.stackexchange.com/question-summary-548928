@@ -1,0 +1,7 @@
+\displaystyle \int_0^{1/2} (\arcsin(x))^2 dx
+u=(\arcsin{x})^2
+\mathrm{d}v = \mathrm{d}x
+\displaystyle \int (\arcsin(x))^2 \mathrm{d}x = x(\arcsin{x})^2 - 2\int\frac{x\arcsin{x}}{\sqrt{1-x^2}}\,\mathrm{d}x
+u=\arcsin{x}
+\displaystyle{\mathrm{d}v=\frac{x}{\sqrt{1-x^2}}}\mathrm{d}x
+\Biggl|2\sqrt{1-x^2}\arcsin{x} + x(\arcsin{x})^2 - 2x\Biggr|^{1\over2}_0= \frac{\pi\sqrt{3}}{6}+ \frac{\pi^2}{72} -1

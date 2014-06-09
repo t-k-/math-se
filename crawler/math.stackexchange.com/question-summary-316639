@@ -1,0 +1,19 @@
+\begin{align*} u &=& \cos(2x)\\ u\prime &=& -2 \sin(2x)\\ v &=& e^x\\ v\prime&=&e^x  \end{align*}
+\int e^x \cos(2x)dx = e^x \cos(2x) +2 \int e^x \sin(2x)dx 
+\begin{align*} u &=& \sin(2x)\\ u\prime &=& 2 \cos(2x)\\ v &=& e^x\\ v\prime&=&e^x  \end{align*}
+\int e^x \sin(2x)dx = e^x \sin(2x) -2 \int e^x \cos(2x)dx
+\begin{align*} \int e^x \cos(2x)dx &=& e^x \cos(2x) +2 \int e^x \sin(2x)dx \\ &=&e^x \cos(2x) + 2[e^x \sin(2x) -2 \int e^x \cos(2x)dx]\\ &=&e^x \cos(2x) + 2e^x \sin(2x) -4 \int e^x \cos(2x)dx \end{align*}
+\begin{align*} \int e^x \cos(2x)dx &=&e^x \cos(2x) + 2e^x \sin(2x) -4 \int e^x \cos(2x)dx\\ 5\int e^x \cos(2x)dx &=&e^x(\cos(2x) + 2 \sin(2x))\\ \int e^x \cos(2x)dx &=&\frac{e^x( \cos(2x) + 2 \sin(2x))}{5} \end{align*}
+(A\cos 2x+B\sin 2x)e^x
+-2A+B=0
+2B+A=1
+A=\frac{1}{5}
+B=\frac{2}{5}
+(A\cos 2x+B\sin 2x)e^x+C
+A
+B
+(A\cos 2x+B\sin 2x)e^x+(-2A\sin 2x+2B\cos 2x)e^x.
+\cos(2x)
+e^{2ix}
+\int e^xe^{2ix}dx 
+\int e^xe^{2ix}dx=\frac{1}{2i+1}e^{(2i+1)x}+C=\frac{e^x}{5}(1-2i)(\cos(2x)+i\sin(2x))+C\\=\frac{1}{5}(e^x\cos2x+2e^x\sin2x)+C+i(\text{imaginary part}).

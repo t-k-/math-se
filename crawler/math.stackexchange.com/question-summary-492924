@@ -1,0 +1,9 @@
+ \text{at most one of } P, Q, R \text{ is true} 
+ ((P \equiv Q) \land (Q \not\equiv R)) \:\:\equiv\:\: R 
+\;\equiv\;
+\;\land\;
+ \text{exactly one of } P,Q,R \text{ is true} 
+ (P \equiv Q \equiv R) \;\land\; \lnot(P \land Q \land R) 
+ \lnot[(P\land Q)\lor(Q\land R)\lor(R\land P)] 
+ (\lnot P\lor\lnot Q)\land(\lnot Q\lor\lnot R)\land(\lnot R\lor\lnot P) 
+ \color{lightgray}((P \equiv R) \lor (Q \equiv R)\color{lightgray}) \;\not\equiv\; R \\ \color{lightgray}((P \not\equiv R) \land (Q \not\equiv R)\color{lightgray}) \;\equiv\; R \\ 

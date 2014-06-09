@@ -1,0 +1,29 @@
+y''+y=t;  y(0)=0, y(1)=1
+x(t)=c_1 \cos(t)+c_2 \sin(t)
+y_1=\cos(t), y_2=\sin(t)
+W(y_1,y_2)=-1
+\sin(1)
+\cos(1)
+(x)t=\int^t_0 (s\cos(t) \sin(s))\:\mathrm{d}s - \sin(t) \int^1_t (s\cos(s))\:\mathrm{d}s
+-\cos(t)\sin(t)+t\cos^2 (t)-\sin(t)\cos(1)-\sin(t)\sin(1)+\sin(t)\cos(t)+t\sin^2 (t)
+y_1(t)
+y_2(t)
+y_1(t)
+y_2(t)
+y(0)=0, y(1)=1
+y_c(t) = c_1 \cos t + c_2 \sin t
+y_1(t) = \sin t \implies y_1(0) = \sin (0) = 0 ~ \checkmark
+y_2(1) = 1
+y_2(t) = \cos t \implies y_2(1) = \cos(1) \ne 1
+y_2(t)
+y_2(1) = 1
+y_2(t) = \cos(t - 1) \implies y_2(1) = \cos(1-1) = \cos(0) = 1 ~ \checkmark
+y_1(t) = \sin t, ~ y_2(t) = \cos(t-1)
+W(y_1(t),y_2(t))(s) = -\cos(1)
+G(t,s) =  \begin{cases} \dfrac{y_1(s)y_2(t)}{W(y_1(t),y_2(t))(s)},  & a \le s \le t \le b  \\ \dfrac{y_1(t)y_2(s)}{W(y_1(t),y_2(t))(s)},  & a \le t \le s \le b  \\ \end{cases}
+ =  \begin{cases} \dfrac{\sin(s) \cos(t-1)}{-\cos(1)},  & 0 \le s \le t  \\ \dfrac{\sin(t) \cos(s-1)}{-\cos(1)},  & t \le s \le 1  \\ \end{cases}
+y(t) = y_c(t) + y_p(t) = y_c(t) + \int_a^t \dfrac{y_1(s)y_2(t)f(s)}{W(y_1(t),y_2(t))(s)}~ds + \int_t^b \dfrac{y_1(t)y_2(s)f(s)}{W(y_1(t),y_2(t))(s)}~ds
+\displaystyle y(t) = c_1 \cos t + c_2 \sin t + \int_0^t \dfrac{\sin(s) \cos(t-1)s}{-\cos(1)}~ds + \int_t^1 \dfrac{\sin(t) \cos(s-1)s}{-\cos(1)}~ds
+y(t) = c_1 \cos t + c_2 \sin t + t + \sin t
+c_1 = 0, c_2 = -1
+y(t) = t

@@ -1,0 +1,45 @@
+ f 
+[0, 1] 
+\int_0^1 \int_0^1 |f (x)+f (y)| dx dy \ge \int_0^1 |f (x)| dx 
+[0,1]^2
+P=\{x:f(x)>0\}
+N=\{x:f(x)\le 0\}
+g(x,y)=|f(x)+f(y)|
+[0,1]
+\lambda
+\begin{align}\int_0^1 \int_0^1 |f(x)+f(y)| dx dy &= \int_{P\times P} g + \int_{P\times N} g + \overbrace{\int_{N\times P} g}^{=\int_{P\times N} g} + \int_{N\times N} g\\ &= 2\lambda(P) \int_{P} |f|+2\int_{P\times N} g + 2\lambda(N)\int_N |f|\tag{1}\\ \end{align}
+(1)
+(2)
+\int_{P\times N} g\ge \left|\int_{P\times N} f(x)+f(y) d(x,y)\right|\tag{2} =\left| \lambda(N) \int_P |f| - \lambda(P) \int_N |f|\right| 
+\begin{align} \int_0^1 \int_0^1 |f(x)+g(x)| dx dy &\ge 2\lambda(P)\int_P |f| + 2\left| \lambda(N) \int_P |f| - \lambda(P) \int_N |f|\right|+2\lambda(N)\int_N |f|\tag{3} \end{align} 
+\lambda(P)\ge \lambda(N)
+f
+-f
+\int_P |f|+\int_N |f|=\int_0^1 f(x) dx
+f(x)=0
+[0,1]
+f(x)
+[0,1]
+F(1)=\int_0^1\int_0^1|f(x)+f(y)|dxdy
+F(0)\geq\int_0^1|f(x)|dx
+F(\alpha)
+\alpha
+f(x)
+[0,1]
+\inf\{f(x)^2+2\alpha f(x)f(y)+f(y)^2\}>0
+\alpha\in(0,1)
+f(x)
+[0,1]
+C=\sup\{f(x)^2+2\alpha f(x)f(y)+f(y)^2\}>0
+F(0)\leq F(1)
+P=\{x\in[0,1]\,\vert\,f(x)\ge 0\}
+N=\{x\in[0,1]\,\vert\,f(x)<0\}
+[0,1]\times[0,1]=(P\times P)\cup(P\times N)\cup(N\times P)\cup(N\times N).
+x_{i}\in R
+\sum_{1\le i,j\le n}|x_{i}+x_{j}|\ge n\sum_{k=1}^{n}|x_{k}|
+x_{i}\to f(x_{i}),x_{j}\to f(x_{j})
+n\to \infty
+\Longrightarrow \dfrac{1}{n^2}\sum_{i,j=1}^{n}|f(x_{i})+f(x_{j})|\ge\dfrac{1}{n}\sum_{i=1}^{n}|f(x_{i})|
+\Longrightarrow \dfrac{1}{n^2}(n^2-n)\int_{0}^{1}\int_{0}^{1}|f(x)+f(y)|dxdy+\dfrac{2n}{n^2}\int_{0}^{1}|f(x)|dx\ge\dfrac{n}{n}\int_{0}^{1}|f(x)|dx
+\int_{0}^{1}\int_{0}^{1}|f(x)+f(y)|dxdy\ge\dfrac{n-2}{n-1}\int_{0}^{1}|f(x)|dx
+\int_{0}^{1}\int_{0}^{1}|f(x)+f(y)|dxdy\ge\int_{0}^{1}|f(x)|dx

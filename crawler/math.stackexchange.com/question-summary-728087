@@ -1,0 +1,38 @@
+32
+0
+1
+p
+k
+k
+2^{32}
+p = P(\text{card 1 succeeds}) + P(\text{card 2 succeeds and card 1 fails}) + \cdots + P(\text{card } k \text{ succeeds and cards } 1 \ldots k - 1 \text{ fails})
+p = P(\text{card 1 succeeds}) + P(\text{card 2 succeeds} | \text{card 1 fails}) P(\text{card 1 fails}) + \cdots + P(\text{card } k \text{ succeeds} | \text{cards } 1 \ldots k - 1 \text{ fails}) P(\text{cards } 1 \ldots k - 1 \text{ fails})
+P(A \cap B) = P(A|B)P(B)
+P(\text{card 1 succeeded}) = \dfrac{1}{2^{32}}
+P(\text{card 2 succeeded|card 1 failed}) = \dfrac{1}{2^{32} - 1}
+P(\text{card 1 failed}) = 1 - P(\text{card 1 succeeded}) = 1 - \dfrac{1}{2^{32}} = \dfrac{2^{32}-1}{2^{32}}
+P(\text{card 2 succeeded }\cap \text{ card 1 failed}) = \dfrac{1}{2^{32} - 1} \cdot \dfrac{2^{32}-1}{2^{32}} = \dfrac{1}{2^{32}}
+P(\text{card 3 succeeded|cards 1, 2 failed}) = \dfrac{1}{2^{32} - 2}
+P(\text{cards 1, 2 failed}) = 1 - P(\text{card 2 succeeded }\cap\text{ card 1 failed})
+= 1 - \dfrac{1}{2^{32}} = \dfrac{2^{32} - 1}{2^{32}}
+P(\text{card 3 succeeded }\cap \text{ cards 1, 2 failed}) = \dfrac{1}{2^{32} - 2} \cdot \dfrac{2^{32}-1}{2^{32}} = \dfrac{2^{32}-1}{(2^{32}-2)(2^{32})}
+P(\text{card 4 succeeded|cards 1, 2, 3 failed}) = \dfrac{1}{2^{32} - 3}
+P(\text{cards 1, 2, 3 failed}) = 1 - P(\text{card 3 succeeded }\cap\text{ cards 1, 2 failed})
+= 1 - \dfrac{2^{32}-1}{(2^{32}-2)(2^{32})} = \dfrac{(2^{32}-2)(2^{32})-(2^{32} - 1)}{(2^{32}-2)(2^{32})}
+A_i
+i
+P(A_i)=1/2^{32}
+A_i
+ \sum_i P(A_i) = \frac{k}{2^{32}}, 
+3
+2
+1
+i
+  \mbox{Prob(card $3$ succeeds)}\times \mbox{Prob(card $2$ fails)}\times\mbox{Prob(card $1$ fails)} = \frac{1}{2^{32}-2}\frac{2^{32}-2}{2^{32}-1}\frac{2^{32}-1}{2^{32}} = \frac{1}{2^{32}}. 
+ \frac{1}{2^{32}}. 
+k
+ \frac{k}{2^{32}}, 
+\frac 1{2^{32}}
+k
+k
+\frac k{2^{32}}

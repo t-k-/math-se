@@ -1,0 +1,26 @@
+f:D \rightarrow \mathbb C
+\gamma
+D
+z \in D
+z
+\gamma
+f
+\gamma
+f
+F
+ f(z) = \frac{1}{2\pi i}\int_\gamma \! \frac{f(\zeta)}{\zeta-z} \, d\zeta 
+ F(z) = \int_\gamma \! \frac{f(\zeta)}{\zeta-z} \, d\zeta. 
+\gamma
+|z|<1
+\zeta\in\mathbb{T}
+\bar{\zeta}\zeta=|\zeta|^2 =1
+\bar{\zeta}=1/\zeta
+\zeta
+\zeta=e^{it}
+d\zeta=ie^{it}dt =i\zeta dt
+F
+f
+\frac{1}{\zeta-z}=\frac{1}{\zeta}\frac{1}{1-\bar{\zeta}z}=\frac{1}{\zeta}\sum_{k=0}^\infty \bar{\zeta}^kz^k
+\frac{1}{2\pi i}\int_\mathbb{T} \frac{f(\zeta)}{\zeta-z}d\zeta =  \frac{1}{2\pi i}\int_\mathbb{T} \frac{1}{\zeta}\sum_{k=0}^\infty f(\zeta)\bar{\zeta}^kz^k d\zeta
+F(z)=\frac{1}{2\pi}\int_{-\pi}^\pi \sum_{k=0}^\infty f(e^{it})e^{-ikt}z^k dt
+F(z)=\sum_{k=0}^\infty\frac{1}{2\pi}\int_{-\pi}^\pi  f(e^{it})e^{-ikt}z^k dt =\sum_{k=0}^\infty\hat{f}(k)z^k

@@ -1,0 +1,59 @@
+a^b\,\bmod c
+a
+c
+0<b<\phi(c)
+ \begin{eqnarray}    5^4 \equiv 5 \times 5^3 \equiv 5 \times 24 \equiv 19 &\pmod{101}\\    19^4 \equiv (19^2)^2 \equiv 58^2 \equiv (-43)^2 \equiv 1849 \equiv 31 &\pmod{101} \\    31^4 \equiv (31^2)^2 \equiv (961)^2 \equiv 52^2 \equiv 2704 \equiv 78 &\pmod{101} \\    5^{69} \equiv 5 \times 5^4 \times ((5^4)^4)^4 \equiv 5 \times 19 \times 78 \equiv 5 \times 19 \times (-23)\\  \equiv 19 \times (-14) \equiv -266 \equiv  37 & \pmod{101}  \end{eqnarray} 
+a
+c
+g = \gcd(a,c)
+a = g \times d
+c = g \times f
+b > 1
+\gcd(6,14) = 2
+2^{102} \times 3^{103} \mod 7
+\phi(7) = 6
+102 \equiv 0 \mod 6
+2^{102} \times 3^{103} \equiv 3 \mod 7
+6^{103} \equiv (2 \times 3) \equiv 6 \mod 14 
+    a^b \bmod c = g^b \times d^b \bmod (g \times f) = ( g \times (g^{b-1} d^b \bmod f) ) \bmod c 
+5^{844325} \mod 21
+5
+1
+5
+844325
+5
+6
+844325
+140720
+5
+5^6
+140720
+1
+5
+5
+17
+ \begin{align} 5^0 & & & \equiv 1 \\ 5^1 & & &\equiv 5 \\ 5^2 & \equiv 25 & & \equiv 4 \\ 5^3 & \equiv 4\cdot 5 & & \equiv 20 \\ 5^4 & \equiv 20\cdot 5 & & \equiv 16 \\ 5^5 & \equiv 16\cdot 5 & & \equiv 17 \\ 5^6 & \equiv 17\cdot 5 & & \equiv 1 \end{align} 
+5^{844325} \equiv 17 \mod 21
+O(\log(b) \cdot \log(n))
+\bmod n
+O(\log (n))
+b
+n
+\varphi(n)
+b \pmod {\varphi(n)}
+a^b \bmod n= a^{b \mod \varphi(n)} \bmod n
+21
+(3-1) \cdot (7-1)=12
+n
+n = \prod{(p_i)^{k_i-1} \cdot (p_i-1)}
+p_i^{k_i}
+n
+a^{\Phi(c)}=1 \mod c
+\Phi(c)
+c
+c
+c=21=7\cdot 3
+\Phi(c)=(7-1)\cdot(3-1)=12
+a^4=(a^2)^2, a^8=(a^4)^2
+a^n\cdot a^m=a^{n+m}
+a^{69}=a^{64}\cdot a^4\cdot a^1

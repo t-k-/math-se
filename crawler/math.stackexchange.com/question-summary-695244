@@ -1,0 +1,14 @@
+T(n) = 2\cdot \sqrt{n} \cdot T(\sqrt{n}) + \Theta (\lg n)
+n = 2^k
+S(k) = T(2^n)
+S(k/2) = T(2^{n/2})
+S(k) = 2^{1+k/2} \cdot S(k/2) + c \cdot \lg(k)  
+T(n)=2⋅\sqrt{n}⋅T(\sqrt{n})+Θ(\lg n)
+n=a^{2^k}\ \text{ and }\ S(k)=T(a^{2^k})⋅a^{-2^k}⋅2^{-k}
+a>1
+S(k)⋅a^{2^k}⋅2^k=2⋅a^{2^{k-1}}⋅S(k-1)⋅a^{2^{k-1}}⋅2^{k-1}+Θ(2^k⋅\lg a)
+S(k)=S(k-1)+a^{-2^k}⋅Θ(\lg a),
+S(k)=S(0)+\sum_{j=1}^k a^{-2^j}⋅Θ(\lg a)
+S(k)
+k=\log_2(\log_a(n))
+T(n)=n⋅\log_a(n)⋅S(\log_2(\log_a(n)))=Θ(n⋅\log_a(n))

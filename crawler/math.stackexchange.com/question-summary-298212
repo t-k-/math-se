@@ -1,0 +1,9 @@
+\prod\limits_{n=1}^\infty \left(\frac{f^{H_{n}}}{f + f^{H_{n}}}\right)
+f > 1
+H_{n} = {\sum\limits_{i=1}^n{\frac{1}{i}}}
+H_n = \ln(n) + \gamma + O(1/n)
+n \to \infty
+f^{H_n} = f^\gamma n^{\ln(f)} (1+O(1/n))
+\ln(f) > 1
+f > e
+ 1 - \frac{f^{H_n}}{f + f^{H_n}} = \frac{f}{f + f^{\gamma} n^{\ln(f)} (1 + O(1/n))} \approx f^{1-\gamma} n^{-\ln(f)}

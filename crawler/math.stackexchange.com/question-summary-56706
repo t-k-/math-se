@@ -1,0 +1,68 @@
+X
+X=\sum_{i=1}^{100}X_i
+X_i
+i
+\mathbb{E}(X_i)=100/199
+i
+\mathbb{E}(X)=100\times {100 \over 199}=50.251.
+\mathbb{E}(X_i X_j)=(100/199)(99/197)
+i\neq j
+ \mathbb{E}(X^2)=\sum_i \mathbb{E}(X_i)+\sum_{i\neq j} \mathbb{E}(X_i X_j) =\left(100\times {100 \over 199}\right)+\left(100\times 99\times {100\over199}{99\over 197}\right).
+\mbox{Var}(X)=\mathbb{E}(X^2)- \mathbb{E}(X)^2= {196020000\over 7801397}=   25.12626905.
+\mathbb{P}(X\leq 30)\leq {\mathbb P}(|X-\mathbb{E}(X)|\geq 30-50.251)\leq  {\mbox{Var}(X)\over(30-50.251)^2}=.0612.
+1\leq m \leq 100
+m
+\mathbb{E}(X_{1}X_{2}\cdots X_{m})={100\over 199}\times{99\over 197}\times \cdots\times{101-m\over 201-2m}.
+\binom{100}{k}
+k
+100-k
+k
+\binom{k}{n}
+n
+k-n
+k
+\binom{100-k}{n}
+n
+100-k-n
+100-k
+\binom{100}{k} \binom{k}{n} \binom{100-k}{n}
+100-2n
+k
+200
+100
+\binom{200}{100}
+100-2n
+100-2n
+n=35\dots50
+30
+p=.000046649665489730847082
+ \begin{align} \sum_k\sum_n \binom{100}{k} \binom{k}{n} \binom{100-k}{n} &= \sum_k \binom{100}{k} \binom{100}{k}\\ &= \binom{200}{100} \end{align} 
+ \begin{align} \sum_k \binom{100}{k} \binom{k}{n} \binom{100-k}{n} &= \sum_k \binom{100}{2n} \binom{2n}{n} \binom{100-2n}{k-n}\\ &= \binom{100}{2n} \binom{2n}{n} 2^{100-2n} \end{align} 
+ \frac{\binom{100}{2n} \binom{2n}{n} 2^{100-2n}}{\binom{200}{100}} 
+48
+p=.40103407701938908115
+50
+p=.55961680234890506571
+n
+n
+k_{m,m}
+k_{w,w}
+k_{m,w}
+k_{w,m}
+k_{m,m}+k_{w,w}+k_{m,w}+k_{w,m} = n
+2 k_{m,m} + k_{m,w}+k_{w,m} = n
+2 k_{w,w} + k_{m,w}+k_{w,m} = n
+k_{m,m}=k_{w,w}
+n
+\binom{n}{2 k_{m,m}}
+2 k_{m,m} + (n-2k_{m,m})
+2 k_{m,m}
+(2k_{m,m})!
+(n-2k_{m,m})!
+n
+\mathrm{multinom}(k_{m,m},k_{w,w}, k_{m,w}, k_{w,m})
+  (2n)! = \sum_{k_{m,m}, k_{m,w}, k_{w,m} >=0 } \chi_{2 k_{m,m}+k_{m,w}+k_{w,m}=n}  \left( \binom{n}{2 k_{m,m}} (2k_{m,m})! (n- 2k_{m,m})! \right)^2 \mathrm{multinom}(k_{m,m},k_{w,w}, k_{m,w}, k_{w,m}) 
+    1 = \frac{1}{\binom{2n}{n}} \sum_{k_{m,m}, k_{m,w}, k_{w,m} >=0 } \chi_{2 k_{m,m}+k_{m,w}+k_{w,m}=n} \mathrm{multinom}(k_{m,m},k_{w,w}, k_{m,w}, k_{w,m}) 
+k_{m,w}+k_{w,m} <= 30
+0.0000466497
+P(X\leq 30)\leq \frac{Var(X)}{Var(X)+(E(X)-30)^2}\approx \frac{25.12}{25.12+410.10}\approx 0.0577

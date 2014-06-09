@@ -1,0 +1,49 @@
+f
+[a,b]
+g:[a,b]\rightarrow\Bbb R
+g(x)=\int_{a}^{x}f(t)dt
+f
+x_0 \in [a,b] \implies g'(x_0)=f(x_0)\Rightarrow g'(x_0)-f(x_0) = 0 
+g(x) =\int_a^x f(t)\ dt 
+g(x+h)-g(x) =\int_a^{x+h} f(t)\ dt-\int_a^{x} f(t)\ dt =\int_x^{x+h} f(t)\ dt 
+\dfrac{g(x+h)-g(x)}{h} =\dfrac1{h}\int_x^{x+h} f(t)\ dt 
+f
+x
+x+h
+h
+f
+f(t) \sim f(x)
+t
+x
+x+h
+\dfrac1{h}\int_x^{x+h} f(t)\ dt \sim \dfrac1{h}\int_x^{x+h} f(x)\ dt = \dfrac1{h}f(x)\int_x^{x+h}  dt = \dfrac{f(x)}{h}(h ) = f(x) 
+h
+\dfrac{g(x+h)-g(x)}{h} \sim f(x) 
+g
+x
+h \to 0
+\begin{align} \dfrac{g(x+h)-g(x)}{h} &=\dfrac1{h}\int_x^{x+h} f(t)\ dt\\ &=\dfrac1{h}\int_x^{x+h} (f(x) +(f(t)-f(x)))\ dt\\ &=\dfrac1{h}\int_x^{x+h} f(x)\ dt +\dfrac1{h}\int_x^{x+h}(f(t)-f(x))\ dt\\ &=f(x) +\dfrac1{h}\int_x^{x+h}(f(t)-f(x))\ dt\\ \end{align} 
+\delta-\epsilon
+\dfrac1{h}\int_x^{x+h}(f(t)-f(x))\ dt \to 0 
+h \to 0
+0
+h \to 0
+0
+h \to 0
+g
+f
+x
+\big|\dfrac{f(x+h)-f(x)}{h}- g(x)\big| \to 0 
+h \to 0
+f(x) = x^2
+\dfrac{f(x+h)-f(x)}{h} =\dfrac{(x+h)^2-x^2}{h} =\dfrac{(x^2+2xh+h^2)-x^2}{h} =\dfrac{2xh+h^2}{h} =2x+h 
+g(x) = 2x
+\big|\dfrac{f(x+h)-f(x)}{h}-g(x)\big| =|(2x+h)-2x| =|h| 
+0
+h \to 0
+x_0 \in [a,b], f
+x_0 \implies (\forall \epsilon>0) (|x-x_0|<\delta \implies |f(x)-f(x_0)|<\epsilon) 
+-\delta<h<0
+\left|{g(x_0 +h) - g(x_0)\over{h}} -f(x_0)\right| = \left|{\int_a^{x_0+h}f(t)dt - \int_a^{x_0}f(b)dt\over{h}} -f(x_0)\right| = \left|{\int_a^{x_0+h}f(t)dt +\int_{x_0}^{a}f(t)dt\over{h}} -f(x_0)\right| = \left|{\int_{x_0}^{x_0+h}f(t)dt \over{h}} -{f(x_0)\over{h}}\right|=\left|{\int_{x_0}^{x_0+h}f(t)dt  -f(x_0) \int_{x_0}^{x_0+h}dt}\over{h}\right|=\left|{\int_{x_0}^{x_0+h}f(t)dt - \int_{x_0}^{x_0+h}f(x_0)dt}\over{h}\right| = \left|{1\over{h}}{\int_{x_0}^{x_0+h}[f(t) -f(x_0)]dt}\right| = {{1\over{|h|}}\left|{\int_{x_0}^{x_0+h}[f(t)-f(x_0)]dt}\right|\le}{{1\over{|h|}}{\int_{x_0}^{x_0+h}|f(t)-f(x_0)|dt}}\lt{{1\over{h}}{\int_{x_0}^{x_0+h}\epsilon dt}}={{\epsilon\over{h}}{\int_{x_0}^{x_0+h}dt}} = {{\epsilon\over{h}}{(x_0+h-x_0)}}=\epsilon
+\lim_{h\to0}{g(x_0+h)-g(x_0)\over{h}} \rightarrow g'(x_0)=f(x_0)
+{1\over{-h}}{\int_{x_0+h}^{x_0}\epsilon dt}={\epsilon\over{-h}}{(x_0-x_0-h)} = \epsilon

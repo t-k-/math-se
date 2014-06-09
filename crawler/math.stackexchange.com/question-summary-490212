@@ -1,0 +1,20 @@
+\{x_n\}_{n\in\mathbb{N}}
+\lim\limits_{n\to\infty}x_n = a
+\{t_n\}_{n\in\mathbb{N}}
+\lim\limits_{n\to\infty}t_1+t_2+\ldots+t_n = +\infty
+\lim_{n\to\infty}\frac{t_1x_1+t_2x_2+\ldots+t_nx_n}{t_1+t_2+\ldots+t_n} = a
+(t_1+\ldots+t_n)\min\{x_n: n\in\mathbb{N}\}\leq t_1x_1+\ldots+t_nx_n \leq (t_1+\ldots+t_n)\max\{x_n: n\in\mathbb{N}\}
+\lim\limits_{n\to\infty}\min\{x_n: n\in\mathbb{N}\} = \lim\limits_{n\to\infty}\max\{x_n: n\in\mathbb{N}\} = \lim\limits_{n\to\infty}x_n
+t_n>0
+n
+\lim_{n\to\infty}\frac{t_1x_1+t_2x_2+\ldots+t_nx_n}{t_1+t_2+\ldots+t_n} = \lim_{n\to\infty}\frac{t_nx_n}{t_n}. 
+t_n>0
+\varepsilon>0
+n_0
+|x_n-a|<\varepsilon
+n>n_0
+\limsup
+\varepsilon
+\left|\frac{t_1x_1+t_2x_2+\ldots+t_nx_n}{t_1+t_2+\ldots+t_n} -a\right|=\left|\frac{t_1(x_1-a)+\cdots +t_n(x_n-a)}{t_1+\cdots+t_n}\right|\leq\left|\frac{t_1(x_1-a)+\cdots +t_{n_0}(x_{n_0}-a)}{t_1+\cdots+t_n}\right|+\left|\frac{t_{n_0+1}(x_{n_0+1}-a)+\cdots +t_n(x_n-a)}{t_1+\cdots+t_n}\right| \\ \leq\left|\frac{t_1(x_1-a)+\cdots +t_{n_0}(x_{n_0}-a)}{t_1+\cdots+t_n}\right|+ \frac{t_{n_0+1}|x_{n_0+1}-a|+\cdots +t_n|x_n-a|}{t_1+\cdots+t_n}\\ \leq\left|\frac{t_1(x_1-a)+\cdots +t_{n_0}(x_{n_0}-a)}{t_1+\cdots+t_n}\right|+ \varepsilon \,\frac{t_{n_0+1}+\cdots +t_n}{t_1+\cdots+t_n}\\ \leq \frac{(|a|+\max\{|x_n|\})(|t_1|+\cdots+|t_{n_0}|)}{t_1+\cdots+t_n}+\varepsilon. 
+ \limsup_n\left|\frac{t_1x_1+t_2x_2+\ldots+t_nx_n}{t_1+t_2+\ldots+t_n} -a\right| \leq\varepsilon. 
+ \lim_n\left|\frac{t_1x_1+t_2x_2+\ldots+t_nx_n}{t_1+t_2+\ldots+t_n} -a\right|=0. 

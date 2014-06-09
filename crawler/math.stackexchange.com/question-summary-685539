@@ -1,0 +1,24 @@
+X
+X
+X
+Y
+Y
+X
+X
+Y
+Y
+X
+Y
+X
+Y(t)
+X(t-5)
+X(t)
+P(X>5)=0.1
+P(X>4)=0.2
+P(X>3)=0.25
+P(X>2)=0.35
+P(X>1)=0.5
+P(X>0)=0.75
+X(t)
+Y(t)=\sum_{i=0}^5 \begin{cases} 1\qquad&X(t-i)>i\\ 0&\text{else} \end{cases}
+E[Y(t>5)]=\sum_{i=0}^5P(X>i)=2.15

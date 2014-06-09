@@ -1,0 +1,31 @@
+ u_t - u_{xx}-2 u_x=0  
+1
+\text{Re}(t)\geq0
+u(x,t)=X(x)T(t)
+X(x)T'(t)-X''(x)T(t)-2X'(x)T(t)=0
+X(x)T'(t)=X''(x)T(t)+2X'(x)T(t)
+X(x)T'(t)=(X''(x)+2X'(x))T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{X''(x)+2X'(x)}{X(x)}=-(f(s))^2-1
+\begin{cases}\dfrac{T'(t)}{T(t)}=-(f(s))^2-1\\X''(x)+2X'(x)+((f(s))^2+1)X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-t((f(s))^2+1)}\\X(x)=\begin{cases}c_1(s)e^{-x}\sin(xf(s))+c_2(s)e^{-x}\cos(xf(s))&\text{when}~f(s)\neq0\\c_1xe^{-x}+c_2e^{-x}&\text{when}~f(s)=0\end{cases}\end{cases}
+\therefore u(x,t)=C_1xe^{-x-t}+C_2e^{-x-t}+\int_sC_3(s)e^{-x-t((f(s))^2+1)}\sin(xf(s))~ds+\int_sC_4(s)e^{-x-t((f(s))^2+1)}\cos(xf(s))~ds~\text{or}~C_1xe^{-x-t}+C_2e^{-x-t}+\sum\limits_sC_3(s)e^{-x-t((f(s))^2+1)}\sin(xf(s))+\sum\limits_sC_4(s)e^{-x-t((f(s))^2+1)}\cos(xf(s))
+2
+\text{Re}(t)\leq0
+u(x,t)=X(x)T(t)
+X(x)T'(t)-X''(x)T(t)-2X'(x)T(t)=0
+X(x)T'(t)=X''(x)T(t)+2X'(x)T(t)
+X(x)T'(t)=(X''(x)+2X'(x))T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{X''(x)+2X'(x)}{X(x)}=(f(s))^2-1
+\begin{cases}\dfrac{T'(t)}{T(t)}=(f(s))^2-1\\X''(x)+2X'(x)+(1-(f(s))^2)X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{t((f(s))^2-1)}\\X(x)=\begin{cases}c_1(s)e^{-x}\sinh(xf(s))+c_2(s)e^{-x}\cosh(xf(s))&\text{when}~f(s)\neq0\\c_1xe^{-x}+c_2e^{-x}&\text{when}~f(s)=0\end{cases}\end{cases}
+\therefore u(x,t)=C_1xe^{-x-t}+C_2e^{-x-t}+\int_sC_3(s)e^{-x+t((f(s))^2-1)}\sinh(xf(s))~ds+\int_sC_4(s)e^{-x+t((f(s))^2-1)}\cosh(xf(s))~ds~\text{or}~C_1xe^{-x-t}+C_2e^{-x-t}+\sum\limits_sC_3(s)e^{-x+t((f(s))^2-1)}\sinh(xf(s))+\sum\limits_sC_4(s)e^{-x+t((f(s))^2-1)}\cosh(xf(s))
+u(x,t)=\begin{cases}C_1xe^{-x-t}+C_2e^{-x-t}+\int_sC_3(s)e^{-x-t((f(s))^2+1)}\sin(xf(s))~ds+\int_sC_4(s)e^{-x-t((f(s))^2+1)}\cos(xf(s))~ds&\text{when}~\text{Re}(t)\geq0\\C_1xe^{-x-t}+C_2e^{-x-t}+\int_sC_3(s)e^{-x+t((f(s))^2-1)}\sinh(xf(s))~ds+\int_sC_4(s)e^{-x+t((f(s))^2-1)}\cosh(xf(s))~ds&\text{when}~\text{Re}(t)\leq0\end{cases}
+\begin{cases}C_1xe^{-x-t}+C_2e^{-x-t}+\sum\limits_sC_3(s)e^{-x-t((f(s))^2+1)}\sin(xf(s))+\sum\limits_sC_4(s)e^{-x-t((f(s))^2+1)}\cos(xf(s))&\text{when}~\text{Re}(t)\geq0\\C_1xe^{-x-t}+C_2e^{-x-t}+\sum\limits_sC_3(s)e^{-x+t((f(s))^2-1)}\sinh(xf(s))+\sum\limits_sC_4(s)e^{-x+t((f(s))^2-1)}\cosh(xf(s))&\text{when}~\text{Re}(t)\leq0\end{cases}
+u_t-u_{xx}-2u_x=0
+f(s)
+f(s)
+u(x,t) = X(x)T(t)
+\frac{T'}{T} = \frac{X''}{X} + 2 \frac{X'}{X}
+t
+x
+\lambda

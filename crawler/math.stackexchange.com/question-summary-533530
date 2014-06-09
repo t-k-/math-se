@@ -1,0 +1,33 @@
+z = f(x)
+dz = f'(x) dx
+x
+f(x)
+0
+1
+x_0
+x_1
+x_0 = 0.576412723\ldots
+x_1 = 0.807626251\ldots
+I = \int_{x_0}^{x_1} f(x) e^{f(x)}f^{(-1)}(f(x)) f'(x) dx = \int_{x_0}^{x_1} x f'(x)f(x)e^{f(x)} dx
+u = x f(x),\quad du = (f(x) + x f'(x)) dx
+dv = f'(x) e^{f(x)} dx ,\quad v = e^{f(x)}
+I = x_1f(x_1)e^{f(x_1)}-x_0f(x_0)e^{f(x_0)}-\int_{x_0}^{x_1}f(x)e^{f(x)} dx - \int_{x_0}^{x_1} x f'(x)e^{f(x)} dx
+f(x_0) = 0
+f(x_1) = 1
+I = x_1 -\int_{x_0}^{x_1}f(x)e^{f(x)} dx - \int_{x_0}^{x_1} x f'(x)e^{f(x)} dx
+u = x ,\quad du = dx
+dv = f'(x) e^{f(x)} dx ,\quad v = e^{f(x)}
+I = x_1 - x_1e^{f(x_1)}+x_0e^{f(x_0)}- \int_{x_0}^{x_1}f(x)e^{f(x)} dx+\int_{x_0}^{x_1}e^{f(x)} dx
+e^{f(x)} = \frac{x}{\cos x} e^{x\tan x}
+\int e^{f(x)} dx = e^{x \tan x}\cos x
+I = x_0+ e^{x_1 \tan x_1}\cos x_1-e^{x_0 \tan x_0}\cos x_0 - \int_{x_0}^{x_1} f(x)e^{f(x)} dx
+[x_0,x_1]
+f(x) e^{f(x)} = \frac{x e^{x\tan(x)}}{\cos x}\left(\ln\left(\frac{x}{\cos x}\right)+x\tan x\right)
+f(x) e^{f(x)} = \left(\frac{x^2 \sin x}{\cos^2x}+\frac{x}{\cos x}\ln\left(\frac{x}{\cos x}\right)\right)e^{x\tan x}
+J = \int_{x_0}^{x_1} \frac{x^2 \sin x}{\cos^2x}e^{x\tan x} dx
+K = \int_{x_0}^{x_1} \ln\left(\frac{x}{\cos x}\right)e^{x\tan x} dx
+x_0
+x_1
+f(x)
+\cos x_1 e^{x_1 \tan x_1} = x_1 e^{-1+2 x_1 \tan x_1}
+\cos x_10 e^{x_0 \tan x_0} = x_0 e^{2 x_0 \tan x_0}

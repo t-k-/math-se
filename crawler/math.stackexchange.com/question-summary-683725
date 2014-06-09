@@ -1,0 +1,5 @@
+W
+ \begin{align} \mathrm{d}S_1 &= 2S_1(t)dt +3S_1(t) dW\\ \mathrm{d}S_2 &= 4S_2(t)dt +5S_2(t) dW \end{align} 
+A(t)=t+S_1 S_2^{-1}
+\begin{split} dS_2^{-1}  &= -S_2^{-2}\left(dS_2\right) + \frac{1}{2}\cdot 2S_2^{-3} \left(dS_2\right)^2 \\  &= -\frac{dS_2}{S_2^2} + \frac{\left(dS_2\right)^2}{S_2^3} \\  &= -\frac{4S_2dt + 5S_2dW}{S_2^2} + \frac{25 S_2^2 dt}{S_2^3} \\  &= \frac{21dt - 5dW}{S_2} \end{split}
+\begin{split} dA  &= dt + d\left[S_1 S_2^{-1}\right] \\  &= dt + S_2^{-1} dS_1 + S_1 d S_2^{-1} + \frac{1}{2} dS_1 dS_2^{-1}\\  &= dt + \frac{S_1(2dt + 3dW)}{S_2}        + S_1 \frac{21dt - 5dW}{S_2}        + \frac{S_1(2dt + 3dW)(21dt - 5dW)}{2S_2} \\  &= dt + \frac{S_1}{S_2} \left(2dt + 3dW + 21dt - 5dW - \frac{15}{2} dt\right) \end{split}

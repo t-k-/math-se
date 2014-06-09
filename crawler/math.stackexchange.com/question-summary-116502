@@ -1,0 +1,10 @@
+a_n=\frac{a+na_{n-1}}{a-n}
+a_0=1
+a_n=a\int_0^1{x^{a-n-1}(2-x)^ndx}
+a_n
+x^{y-1}
+y
+ \textstyle a_n=\frac{a}{a-n}+\frac{ n(n-1)a}{(a-n)(a-(n-1))}+\frac{n(n-1)(n-2)a}{(a-n)(a-(n-1))(a-(n-2))}+ ... +\frac{n!(a+a_0)(a-n)!}{(a-1)!} 
+\begin{eqnarray} a_n&=&\int_0^1 ( ax^{a-n-1}+nax^{(a-n)(a-(n-1))-1}\\ &&+n(n-1)ax^{(a-n)(a-(n-1))(a-(n-2))-1}+\dots\\ &&+n!(a+a_0)x^{\frac{(a-1)!}{(a-n)!}-1})dx\\ &=&\int_0^1 a_0 n!x^{\frac{(a-1)!}{(a-n)!}-1}  + \sum_{k=0}^n k! {n\choose k} x^{k! {a-1\choose k}-1 } \text dx \end{eqnarray} 
+a_n
+n

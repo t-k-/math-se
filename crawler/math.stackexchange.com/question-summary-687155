@@ -1,0 +1,47 @@
+Question:
+x_n
+\
+ is the monthly repayment and 
+x_n
+\
+ to be repaid over 
+5\%
+\
+ to be repaid over 
+ years is 
+295.64
+My
+answer
+so
+far:
+\
+. We need to derive an equation for 
+ which will be the amount owed after 
+ years. Thus, 
+ is the loan amount owed after 
+ years. So we know that 
+ is the amount owed from the previous year. Also, 
+ (the amount owed for the 
+ year) is related to 
+ (the amount owed for the previous year). $$x_n = f(x_{n-1}) = x_{n-1} + adjustments$$ We make 
+ monthly payments of 
+, so we substract 
+: $$x_n =x_{n-1} -12m + adjustments$$ Then we are charged 
+x_n = f(x_{n-1}) = x_{n-1} + adjustments
+x_n =x_{n-1} -12m + adjustments
+x_n = x_{n-1} - 12m + r x_{n-1}
+x_n=(1+r)x_{n-1} - 12m
+y_1
+y_1 = x_n \left (1+\frac{r}{12}\right ) - m
+y_2 = y_1 \left (1+\frac{r}{12}\right ) - m = x_n \left (1+\frac{r}{12}\right )^2 - m \left (1+\frac{r}{12}\right ) - m
+y_3 = y_2 \left (1+\frac{r}{12}\right ) - m = x_n \left (1+\frac{r}{12}\right )^3 - m \left [ \left (1+\frac{r}{12}\right )^2 + \left (1+\frac{r}{12}\right ) +1\right ]
+\cdots
+y_{12} = y_{11} \left (1+\frac{r}{12}\right ) - m = x_n \left (1+\frac{r}{12}\right )^{12} - m \left [ \left (1+\frac{r}{12}\right )^{11}+\cdots + \left (1+\frac{r}{12}\right ) +1\right ]
+x_{n+1} = \left (1+\frac{r}{12}\right )^{12} x_n - 12 m \frac{\left (1+\frac{r}{12}\right )^{12}-1}{r}
+x_{n+1} = a x_n+b
+x_n = A a^n + \frac{b}{1-a}
+A
+x_n
+0
+m
+25 \cdot 12

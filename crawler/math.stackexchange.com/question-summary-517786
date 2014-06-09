@@ -1,0 +1,25 @@
+f(x)
+[a,b]
+x\in (a,b)
+\lim_{h\to 0}\dfrac{f(x+h)-f(x-h)}{h}
+\lim_{h\to 0}\dfrac{f(x+h)-f(x-h)}{h}\ge 0.
+f(a)\le f(b)
+\epsilon>0
+x\in(a,b)
+f_\epsilon(x):=f(x)+\epsilon x,\quad \forall x\in[a,b].
+\lim_{h\to 0}\frac{f_\epsilon(x+h)-f_\epsilon(x-h)}{h}=2\epsilon+\lim_{h\to 0}\frac{f(x+h)-f(x-h)}{h} \ge 2\epsilon.\tag{1}
+\epsilon
+f(a)\le f(b)
+f_\epsilon(a)\le f_\epsilon(b)
+f_\epsilon(a)> f_\epsilon(b)
+y\in (f_\epsilon(b),f_\epsilon(a))
+f_\epsilon
+x_y\in (a,b)
+f_\epsilon(x)\ge y
+x\in[a,x_y]
+x\in(x_y,b]
+x'\in (x_y,x)
+f_\epsilon(x')<y
+x_y:=\inf\,\{x\in[a,b]: f_\epsilon(x)<y\}.
+(1)
+\liminf_{h\to 0}\frac{f_\epsilon(x_y+h)-f_\epsilon(x_y-h)}{h}\le 0,

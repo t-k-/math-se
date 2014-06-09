@@ -1,0 +1,22 @@
+\lim\limits_{x \to \infty}\left(1+\frac{a}{x}+\frac{b}{x^2}\right)^{2x}=e^2
+a
+b
+\lim\limits_{x \to \infty}\left( 1+\frac{1}{x}\right)^x= e
+2 = \lim_{x \to \infty} 2 x \log{\left ( 1+ \frac{a}{x} + \frac{b}{x^2}\right)}
+\log{(1+y)} \sim y - (y^2)/2
+y \to 0
+2 = \lim_{x \to \infty} \left ( 2 a + \frac{2 b-a^2}{x}\right)
+a=1
+b
+O(1/x^2)
+\begin{align}\log{\left ( 1+ \frac{a}{x} + \frac{b}{x^2}\right)} &= \frac{a}{x} + \frac{b}{x^2} - \frac12 \left ( \frac{a}{x} + \frac{b}{x^2} \right )^2 + O\left(\frac{1}{x^3}\right)\\ &=  \frac{a}{x} + \frac{b}{x^2} - \frac{a^2}{2 x^2} - \frac{a b}{x^3} - \frac{b^2}{2 x^4}+ O\left(\frac{1}{x^3}\right)\\ &= \frac{a}{x} + \frac{b}{x^2} - \frac{a^2}{2 x^2} + O\left(\frac{1}{x^3}\right) \end{align}
+ 1^\infty
+ 1^\infty
+  if \lim\limits_{x\to a}{f(x)}^{g(x)}\ is\ of\ the\  form\ 1^\infty, 
+ the\ limit\ is\ equal\ to\  e^{\lim\limits_{x\to a}{(f(x)-1)*g(x)}} 
+ f(x)\ is\ 1+\frac{a}{x}+\frac{b}{x^2} 
+ g(x)\ is\ {2x} 
+ e^{{\lim\limits_{x\to \infty}}{(1+\frac{a}{x}+\frac{b}{x^2}-1)}{2x}} 
+ e^{{\lim\limits_{x\to \infty}}{(\frac{a}{x}+\frac{b}{x^2})}{2x}} 
+ e^{{\lim\limits_{x\to \infty}}{({2a}+\frac{2b}{x})}} 
+ e^{2a}=e^2 

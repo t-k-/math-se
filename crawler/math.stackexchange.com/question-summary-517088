@@ -1,0 +1,43 @@
+X_1, X_2, \dots X_n
+\overline{X}=\frac{1}{n}\sum\limits_{i=1}^{n}X_i
+\mu
+\begin{align}  E(\overline{X}) &= \int\limits_{\overline{X}} \bar{x} f(\bar{x})\,\, d\bar{x} \\ &=\int\limits_{\overline{X}} \left(\frac{1}{n} \sum\limits_{i=1}^n X_i \right) f(\bar{x}) \, d\bar{x} \end{align}
+\begin{array} {cc}  &=& \frac{1}{n} \left( \int\limits_{\overline{X}}X_1f(\bar{x}) \, d\bar{x} + \int\limits_{\overline{X}}X_2f(\bar{x}) \, d\bar{x}+ \dots + \int\limits_{\overline{X}}X_nf(\bar{x}) \, d\bar{x}\right) \end{array}
+\int\limits_{\overline{X}}X_if(\bar{x}) \, d\bar{x}
+\mu
+E[\frac 1n \sum_{i=1}^{n}X_i] = \int_D g(\mathbf x)f_{\mathbf X}(\mathbf x)d\mathbf x
+E[\frac 1n \sum_{i=1}^{n}X_i] = \int_{S_{X_n}}...\int_{S_{X_1}}\left[\frac 1n \sum_{i=1}^{n}x_i\right]f_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_n 
+ = \frac 1n\int_{S_{X_n}}...\int_{S_{X_1}}x_1f_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_n \; + ...\\ ...+\frac 1n\int_{S_{X_n}}...\int_{S_{X_1}}x_nf_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_n 
+\frac 1n\int_{S_{X_n}}...\int_{S_{X_1}}x_1f_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_n = \\\frac 1n\int_{S_{X_1}}x_1\int_{S_{X_n}}...\int_{S_{X_2}}f_{X_1,...,X_n}(x_1,...,x_n)dx_2...dx_ndx_1
+\frac 1n\int_{S_{X_n}}...\int_{S_{X_j}}...\int_{S_{X_1}}x_jf_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_j...dx_n =
+=\frac 1n\int_{S_{X_j}}x_j\int_{S_{X_n}}...\int_{S_{X_{j-1}}}\int_{S_{X_{j+1}}}...\int_{S_{X_1}}f_{X_1,...,X_n}(x_1,...,x_n)dx_1...dx_{j-1}dx_{j+1}......dx_ndx_j
+\frac 1n\int_{S_{X_j}}x_jf_{X_j}(x_j)dx_j
+E[\frac 1n\sum_{i=1}^{n} X_i ] = \frac 1n\int_{S_{X_1}}x_1f_{X_1}(x_1)dx_1 +...+\frac 1n\int_{S_{X_n}}x_nf_{X_n}(x_n)dx_n 
+= E[\frac 1n\sum_{i=1}^{n} X_i ] = \frac 1nE(X_1) + ...+\frac 1nE(X_n) =  \frac 1nE(X) + ...+\frac 1nE(X)
+= \frac 1n nE(X) = E(X)
+f_X(4)
+f_Y(4)
+4
+X
+Y
+\bar X
+\bar x
+ \mathbb E(\bar X) = \int_{-\infty}^\infty \bar x f(\bar x)\,d\bar x, 
+ \mathbb E(\bar X) = \int_{-\infty}^\infty x f_{\bar X}(x)\,dx. 
+i
+j
+k
+j
+k
+j
+k
+ \sum_{j=1}^3 (i^2 j^3) \text{ and } \sum_{k=1}^3 (i^2 k^3) 
+ i^2 1^3 + i^2 2^3 + i^2 3^3, 
+f
+\bar X
+f
+\bar X
+\bar X
+X_1
+n
+ \mathbb E\left(\frac{X_1+\cdots+X_n}{n}\right) = \frac1n\mathbb E(X_1+\cdots+X_n) = \frac1n((\mathbb E X_1)+\cdots+(\mathbb E X_n)) 

@@ -1,0 +1,24 @@
+P(X = n) \le 1
+p_{n,r}
+n
+r
+p_{n,0}=0
+n>0
+r=1
+r=K=5
+\tag1 p_{n+1,r}=\frac rK p_{n,r} + \left(1-\frac{r-1}K\right)p_{n,r-1}
+p_{0,r}=\begin{cases}1&\text{if }r=0\\0&\text{otherwise}.\end{cases} 
+ P(X=n) = \frac 1Kp_{n-1,K-1}
+ E[X]=\sum_{n=1}^\infty nP(X=n)=\frac1K\sum_{n=0}^\infty n p_{n,K-1}.
+ p_{1,1}=1\qquad p_{n+1,1}=\frac 1Kp_{n,1}
+ p_{n,1}=\begin{cases}0&\text{if }n=0,\\K^{1-n}&\text{if }n>0.\end{cases}
+E(K,p)
+K
+1-p
+K
+E(K,1)
+K-1
+E(0,p)=0
+ E(K,p) = 1+(1-p) E(K,p) +p E(K-1,(1-1/K)p)
+ E(K,p) = \frac1p + E(K-1,(1-1/K)p)
+ E(K,1) = 1+\frac1{1-1/K}+\frac1{(1-1/K)(1-2/K)}+\ldots + \frac1{(1-1/K)(1-2/K)\cdots(1-(K-1)/K)}\\= 1+\frac K{K-1} +\frac{K^2}{(K-1)(K-2)}+\ldots +\frac{K^{K-1}}{(K-1)!}\\=\sum_{r=0}^K\frac{K^{K-r}r!}{K!}

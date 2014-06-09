@@ -1,0 +1,35 @@
+y
+f
+g
+f
+g
+ \begin{cases} u_{xx} + u_{yy} &= 0 \\ u(0,y) &= f(y) \\ u_x(0,y) &= g(y). \end{cases} 
+y
+\hat{u}(x,\xi ) = A(\xi )e^{-\xi x} + B(\xi ) e^{\xi x}
+ \begin{cases} \hat{u}_{xx} -\xi ^2 \hat{u} &= 0 \\ \hat{u}(0,\xi ) &= \hat{f}(\xi ) \\ \hat{u}_x(0,\xi ) &= \hat{g}(\xi ). \end{cases} 
+\hat{u}
+\xi \to \pm \infty 
+x
+x>0
+A(\xi ) = 0
+\xi <0
+B(\xi ) = 0
+\xi > 0
+\mathcal{F}^{-1}[e^{-|\xi |x}](x,y)
+g
+\hat{g}
+ \hat{u}(x,\xi ) = C(\xi )e^{-|\xi | x} = \hat{f}(\xi )e^{-|\xi | x}.  
+x>0
+A(\xi)=0
+A
+B
+    \hat u(0,\xi)=A(\xi)+B(\xi)=\hat f(\xi) 
+    \hat u_x(0,\xi)=-\xi A(\xi)+\xi B(\xi)=\hat g(\xi). 
+u(x,y)=\dfrac{f(y+ix)+f(y-ix)}{2}-\dfrac{i}{2}\int_{y-ix}^{y+ix}g(t)~dt
+\mathcal{F}_{y\to\xi}\{u_{xx}(x,y)\}+\mathcal{F}_{y\to\xi}\{u_{yy}(x,y)\}=0
+\hat{u}_{xx}(x,\xi)-\xi^2\hat{u}(x,\xi)=0
+\hat{u}(x,\xi)=A(\xi)e^{-x\xi}+B(\xi)e^{x\xi}
+u(x,y)=\mathcal{F}^{-1}_{\xi\to y}\{A(\xi)e^{-x\xi}\}+\mathcal{F}^{-1}_{\xi\to y}\{B(\xi)e^{x\xi}\}
+u(x,y)=\dfrac{1}{2\pi}\int_{-\infty}^\infty A(\xi)e^{-x\xi}e^{iy\xi}~d\xi+\dfrac{1}{2\pi}\int_{-\infty}^\infty B(\xi)e^{x\xi}e^{iy\xi}~d\xi
+u(x,y)=\dfrac{1}{2\pi}\int_{-\infty}^\infty A(\xi)e^{i(y+ix)\xi}~d\xi+\dfrac{1}{2\pi}\int_{-\infty}^\infty B(\xi)e^{i(y-ix)\xi}~d\xi
+u(x,y)=C_1(y+ix)+C_2(y-ix)

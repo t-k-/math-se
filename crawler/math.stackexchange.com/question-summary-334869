@@ -1,0 +1,14 @@
+T
+P_T(t) = \lambda e^{-\lambda t}
+k
+T - k
+\lambda
+P(T \le t) = 1 - e^{-\lambda t}
+P(T - k \le t | T > k) = \frac{P(T \le t + k)P(k < T \le t + k)}{P(T > k)}.
+P(T \le t + k) = 1 - e^{-\lambda(t + k)}
+P(k < T \le t + k) = P(T \le t + k) - P(T \le k) = e^{-\lambda k} - e^{-\lambda (t + k)} = e^{-\lambda k}(1 - e^{-\lambda t})
+P(k > T) = 1 - P(T \le k) = 1 - (1 - e^{-\lambda k}) = e^{-\lambda k}
+P(T - k \le t | T > k) = (1 - e^{-\lambda(t + k)})(1 - e^{-\lambda t}).
+P(T - k \le t| T > k) = 1 - e^{-\lambda t}
+P(\{T\leq t+k\}\cap \{T>k\})
+P(T-k\leq t\mid T>k)=\frac{P(T\leq t+k,\, T>k)}{P(T>k)}.

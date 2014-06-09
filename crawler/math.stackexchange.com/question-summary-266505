@@ -1,0 +1,21 @@
+p
+\frac1p
+k^{\mathrm{th}}
+\frac{n}{n-k+1}
+ \begin{align} \mathrm{E}[r] &=\color{#C00000}{\sum_{r=1}^\infty}\sum_{k=0}^n(-1)^k\binom{n}{k}\color{#C00000}{r\left[\left(1-\frac kn\right)^r-\left(1-\frac kn\right)^{r-1}\right]}\\ &=\sum_{k=1}^n(-1)^k\binom{n}{k}\color{#C00000}{\left(-\frac nk\right)}\\ &=n\sum_{k=1}^n(-1)^{k-1}\color{#00A000}{\binom{n}{k}}\frac1k\\ &=n\sum_{k=1}^n(-1)^{k-1}\color{#00A000}{\sum_{j=k}^n\binom{j-1}{k-1}}\frac1k\\ &=n\sum_{j=1}^n\sum_{k=1}^j(-1)^{k-1}\binom{j-1}{k-1}\frac1k\\ &=n\sum_{j=1}^n\color{#0000FF}{\sum_{k=1}^j(-1)^{k-1}\binom{j}{k}}\frac1j\\ &=n\sum_{j=1}^n\frac1j \end{align} 
+ \sum_{k=1}^n\frac{n}{n{-}k{+}1}=n\sum_{k=1}^n\frac1{k} 
+k
+n
+t
+\left(\frac{n-k}{n}\right)^t
+p = 1 - \binom{n}{1}\left(\frac{n-1}{n}\right)^t + \binom{n}{2}\left(\frac{n-2}{n}\right)^t - ...
+P(k, r)
+P(k, r)
+k
+r
+P(0, r) = 1
+P(k + 1, 0) = 0
+P(k + 1, r + 1) = \frac{k + 1}{n} P(k, r) + \left( 1 - \frac{k + 1}{n} \right) P(k + 1, r)
+P(k + 1, r + 1) = \sum_{s = 0}^{r} \left( 1 - \frac{k + 1}{n} \right)^s \frac{k + 1}{n} P(k, r - s)
+P(1, r) = 1 - \left( 1 - \frac{1}{n} \right)^r
+P(k, r) = \sum_{l=0}^{k} (-1)^l \frac{k!}{(k-l)! l!} \left(1 - \frac{l}{n}\right)^r

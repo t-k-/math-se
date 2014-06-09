@@ -1,0 +1,9 @@
+\int \sin^n x\ dx
+n
+n
+n
+\begin{eqnarray}    \sin^n(x) &=& \left( \frac{\exp(i x) - \exp(-i x)}{2i}\right)^n = \frac{1}{2^n i^n} \sum_{m=0}^n \binom{n}{m} (-1)^m \exp\left( i \left(n-2m\right)x \right) \\ &=& \frac{1}{2^n i^n} \sum_{m=0}^n \binom{n}{m} (-1)^m \left(\cos\left(\left(n-2m\right)x \right) + i \sin\left( \left(n-2m\right)x \right) \right)  \end{eqnarray} 
+\begin{eqnarray}     \sin^{2n}(x) &=& \frac{1}{2^{2n}} \sum_{m=0}^{2n} \binom{2n}{m}\left(-1\right)^{n-m} \cos\left(\left(2n-2m\right)x\right) \\ &\stackrel{\text{symmetry}}{=}&  \frac{1}{2^{2n}} \binom{2n}{n} + \frac{1}{2^{2n-1}} \sum_{m=0}^{n-1} \binom{2n}{m}\left(-1\right)^{n-m} \cos\left(2 \left(n-m\right)x\right) \\  &\stackrel{m\to n-m} =& \frac{1}{2^{2n}} \binom{2n}{n} + \frac{1}{2^{2n-1}} \sum_{m=1}^n \binom{2n}{n+m} (-1)^n \cos(2 m x) \tag{1} \end{eqnarray}
+    \sin^{2n+1}(x) = \frac{1}{2^{2n}} \sum_{m=0}^n \binom{2n+1}{n+1+m} (-1)^m \sin\left((2m+1)x\right) \tag{2} 
+    \int \sin^{2n}(x) \, \mathrm{d}x = \frac{1}{2^{2n}} \binom{2n}{n} x + \frac{1}{2^{2n-1}} \sum_{m=1}^n \binom{2n}{n+m} (-1)^n \frac{\sin(2 m x)}{2m} + \text{const.} 
+    \int \sin^{2n+1}(x) \, \mathrm{d}x = -\frac{1}{2^{2n}} \sum_{m=0}^n \binom{2n+1}{n+1+m} (-1)^m \frac{\cos\left((2m+1)x\right)}{2m+1} + \text{const.} 

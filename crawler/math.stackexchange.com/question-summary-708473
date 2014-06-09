@@ -1,0 +1,7 @@
+{\int_0^{1000} e^{x-[x]}dx}
+\int_0^{1000} e^{x-[x]} dx = 1000 \times \int_0^1 e^{x-[x]} dx.
+1000 \times {1.(1-1)} = 0
+{1000(e-1)}
+0
+\int_0^1e^{x-[x]}dx =\int_0^1e^{x }dx=e-1. 
+\int_0^{1000}e^{x-\lfloor x\rfloor}dx=\sum_{k=0}^{999}\int_k^{k+1}e^{x-\lfloor x\rfloor}dx=\sum_{k=0}^{999}\int_k^{k+1}e^{x-k}dx=\sum_{k=0}^{999}e^{x-k}\big|_k^{k+1}=\sum_{k=0}^{999}(e-1)=1000(e-1)

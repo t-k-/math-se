@@ -1,0 +1,17 @@
+\begin{pmatrix}1 & 2 & 3 & 4 &.... & a \\ 2 & 4 & 6 & 8  & .... &2a \\ 3 & 6 & 9 & 12 & .... & 3a\\4 & 8 & 12 & 16 & .... & 4a\\.&.&.&.&.&.\\.&.&.&.&.&. \\a&2a&3a&4a&....&a^2\end{pmatrix}
+k\equiv b \pmod a
+k
+\gcd(k,a)=d
+d
+d\mid b
+ \begin{align} \sum_{d\mid b}\sum_{\gcd(k,a)=d}d&=\sum_{d\mid\gcd(b,a)}d\sum_{\gcd(k,a)=d}1\\ &= \sum_{d\mid\gcd(b,a)}d\,\phi(a/d)\;. \end{align} 
+a=p_1^{k_1}\cdots p_n^{k_n}
+\gcd(b,a)=p_1^{s_1}\cdots p_n^{s_n}
+ \begin{align} \sum_{r_1=0}^{s_1}\cdots\sum_{r_n=0}^{s_n}p_1^{r_1}\cdots p_n^{r_n}\phi\left(p_1^{k_1-r_1}\cdots p_n^{k_n-r_n}\right)\;. \end{align} 
+\phi
+ \prod_{i=1}^n\sum_{r_i=0}^{s_i}p_i^{r_i}\phi\left(p_i^{k_i-r_i}\right)\;. 
+p_i^{k_i}-p_i^{k_i-1}
+r_i\lt k_i
+p_i^{k_i}
+r_i=k_i
+ \begin{align} \prod_{i=1}^n\left((s_i+1)\left(p_i^{k_i}-p_i^{k_i-1}\right)+\delta_{s_ik_i}p_i^{k_i-1}\right) &= \prod_{i=1}^np_i^{k_i}\left((s_i+1)\left(1-p_i^{-1}\right)+\delta_{s_ik_i}p_i^{-1}\right) \\ &= a\prod_{i=1}^n\left((s_i+1)\left(1-p_i^{-1}\right)+\delta_{s_ik_i}p_i^{-1}\right)\;. \end{align} 

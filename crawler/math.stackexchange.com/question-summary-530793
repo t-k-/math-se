@@ -1,0 +1,18 @@
+f,g: \mathbb{R}^n \to \mathbb{R}
+\delta
+\mathbb{R}^n
+g^{-1}(0)
+ \int\limits_{\mathbb{R}^n} f(r) \delta(g(r))\ dr  \ \ \ = \int\limits_{g^{-1}(0)} ?\ dr 
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}%  \newcommand{\yy}{\Longleftrightarrow}
+ \int{\rm f}\pars{\vec{r}}\delta\pars{{\rm g}\pars{\vec{r}}}\,\dd^{n}\vec{r} = \int{\rm f}\pars{\vec{r}} \bracks{% \int_{-\infty}^{\infty}\expo{\ic k{\rm g}\pars{\vec{r}}} \,{\dd k \over 2\pi}}\dd^{n}\vec{r} = \int_{-\infty}^{\infty}{\dd k \over 2\pi}\bracks{% \int{\rm f}\pars{\vec{r}}\expo{\ic k{\rm g}\pars{\vec{r}}}\,\dd^{n}\vec{r}} 
+{\rm g}
+\delta\pars{{\rm g}\pars{\vec{r}}}
+n = 3
+ \delta\pars{\vec{r}} = {1 \over r^{2}}\delta\pars{r}\delta\pars{\cos\pars{\theta}}\delta\pars{\phi} 
+k=1
+\delta(P,\phi) = \int_{P=0}\phi dx
+P
+g=0
+g^{-1}(0)
+g=0
+\int_{g^{-1}(0)}f(r)dx

@@ -1,0 +1,48 @@
+f:[0,1] \to \mathbb{R}
+f > 0
+\{E_n\}
+[0,1]
+\displaystyle \lim_{n \to \infty}\int_{E_n} f \,dm = 0
+\displaystyle \lim_{n \to \infty} m(E_n) = 0
+\displaystyle \lim_{n \to \infty} m(E_n) \neq 0
+\epsilon > 0
+\{n_k\}
+m(E_{n_k}) \ge \epsilon
+k
+\displaystyle \lim_{k \to \infty}\int_{E_{n_k}} f \,dm \neq 0
+E \subseteq [0,1]
+\displaystyle \nu(E) = \int_E f \,dm
+[0,1]
+k,n  \in \mathbb{N}
+\int_{E_n} f \, dm \geq \int_{E_n \cap \left[f>\frac{1}{k}\right]} f \, dm \geq \frac{1}{k} \cdot m \left( E_n \cap \left[f> \frac{1}{k} \right] \right) \geq 0
+\int_{E_n} f \, dm \to 0
+n \to \infty
+m \left( E_n \cap \left[f> \frac{1}{k} \right] \right) \to 0 \qquad (n \to \infty)
+k \in \mathbb{N}
+m(E_n) \leq m \left( E_n \cap \left[f> \frac{1}{k} \right] \right) + m \left( \left[f > \frac{1}{k} \right]^c \right) \to m \left( \left[f > \frac{1}{k} \right]^c \right) \qquad (n \to \infty)
+m \left( \left[f > \frac{1}{k} \right]^c \right) \to 0 \qquad (k \to \infty)
+f>0
+m(E_n) \to 0
+n \to \infty
+\epsilon > 0
+m(E_n) = m(E_n \cap \{f \ge \epsilon\}) + m(E_n \cap \{f < \epsilon\})
+\lim_{n\to\infty} m(E_n)>0
+E_{n_k}
+m(E_{n_k})>\epsilon
+\bigcap E_{n_k}=E
+m(E)>\epsilon/2
+\int_{E_n}f(x)dm(x)\geq\int_E f(x)dm(x)>0
+\lim \int_{E_n}fdm\neq 0
+m(E_n)>\epsilon
+F=\bigcup E_n
+k
+m(F\setminus (E_1\cup\ldots\cup E_k))<\epsilon/4
+\delta>0
+h>0
+m(E_j\cap E_l)<\delta
+j=1,\ldots, k
+l>h
+\delta<\epsilon/4k
+m(F\setminus (E_1\cup\ldots\cup E_k))\leq \epsilon/4
+m((E_1\cup\ldots\cup E_k)\cap E_l)\leq \epsilon/4
+m(E_l\cap(F\setminus (E_1\cup\ldots\cup E_k)))\geq 3\epsilon/4

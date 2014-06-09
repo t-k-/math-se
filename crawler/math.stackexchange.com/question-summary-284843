@@ -1,0 +1,28 @@
+I(X;Y)
+p(x)
+p(y|x)
+p(y|x)
+p(x)
+I(X;Y)
+I(X;Y)=\sum_{x \in X} \sum_{y \in Y} p(x,y) ln \frac{p(x,y)}{p(x)p(y)}
+f=I(X;Y)
+D_1 = 0, D_2 = 0, D_3=0
+p(x),p(y),p(x,y)
+f
+p(x,y)=p(x|y)p(y)
+p(x|y)
+p(y_j|x_l)
+j
+f = \sum_i \sum_j p(y_j|x_i) ln \frac{p(y_j|x_i)}{p(y_j)}
+x
+y
+p(x_i)
+\ell
+p(y_j\mid x_\ell)
+j
+I
+p(x)
+p(y\mid x)
+k
+\ell
+ \frac{\partial^2 I(X;Y)}{\partial p(y_\ell \mid x_k)^2}= \frac{p(x_k) \sum_{i\not=k} p(y_\ell \mid x_i) p(x_i)} {p(y_\ell \mid x_k) \sum_i p(y_\ell \mid x_i)p(x_i)} \ge0. 

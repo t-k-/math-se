@@ -1,0 +1,27 @@
+\tilde{p} = (x,y,z)
+p = (x/z, y/z)
+\tilde{p}
+R(\theta)
+\tilde{u}
+\tilde{p} = R\tilde{u}
+\frac{\partial p}{\partial \theta}
+\frac{\partial p}{\partial \theta} = \frac{\partial p}{\partial \tilde{p}} \frac{\partial \tilde{p}}{\partial \theta}
+\frac{\partial \tilde{p}}{\partial \theta} = \frac{\partial}{\partial \theta}R\tilde{u}
+\frac{\partial p}{\partial \tilde{p}} = \frac{\partial [x/z\quad y/z]}{\partial [x\quad y\quad z]} = \begin{bmatrix} 1/z & 0 & -x/z^{2} \\ 0 & 1/z & -y/z^{2} \end{bmatrix}
+x,y,z
+\tilde{u}
+\frac{\partial}{\partial \theta}R\tilde{u}
+f
+g
+h
+h'(\theta)=\bigl(\xi'(\theta), \eta'(\theta)\bigr)
+f:\quad {\mathbb R}\to{\mathbb R}^3,\qquad \theta\mapsto \tilde p(\theta):=R(\theta)\tilde u\, 
+g:\quad {\mathbb R}^3\to{\mathbb R}^2,\qquad \tilde p\mapsto p\ ,
+h:=g\circ f:\quad{\mathbb R}\to{\mathbb R}^2,\qquad \theta \mapsto g\bigl(f(\theta)\bigr) \ .
+\theta\mapsto \tilde p(\theta)=\bigl(x(\theta),y(\theta),z(\theta)\bigr)\ ,
+(x,y,z)\mapsto\cases{\xi:=x/z \cr \eta:=y/z \cr}\ .
+\theta\mapsto\cases{\xi(\theta):=x(\theta)/z(\theta) \cr \eta(\theta):=y(\theta)/z(\theta) \cr}\ ,
+\bigl[dg\bigr]_{(x,y,z)}
+dh(\theta)=dg\bigl(f(\theta)\bigr)\circ df(\theta)\ .
+h'(\theta)= dh(\theta).1=dg\bigl(f(\theta)\bigr)\circ df(\theta).1 =dg\bigl(f(\theta)\bigr).f'(\theta)\ .
+\bigl[dg\bigr]_{x,y,z)}=\left[\matrix{{\partial\xi\over\partial x}&{\partial\xi\over\partial y}&{\partial\xi\over\partial z} \cr {\partial\eta\over\partial x}&{\partial\eta\over\partial y}&{\partial\eta\over\partial z}\cr}\right]_{(x,y,z)} =\left[\matrix{1/z&0&-x/z^2 \cr 0 &1/z&-y/z^2\cr}\right]\ .

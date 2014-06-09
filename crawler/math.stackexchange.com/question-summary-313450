@@ -1,0 +1,7 @@
+ X_{1},X_{2},X_{3},\ldots 
+ \mathbf{Pr}(X_{i} = k) = p(1 - p)^{k - 1} 
+ \displaystyle Z_{r} \stackrel{\text{def}}{=} \sum_{i=1}^{r} X_{i} 
+ \displaystyle \lim_{k \to \infty} \sum_{r=1}^{\infty} \mathbf{Pr}(Z_{r} = k) 
+ \displaystyle F(k) \stackrel{\text{def}}{=} \min_{r} (Z_{r} ~|~ Z_{r} \geq k) 
+ \displaystyle \lim_{k \to \infty} \mathbf{Pr}(F(k)-k=5) 
+P(Z_r=k)={{k-1} \choose {r-1}} p^{r-1} (1-p)^{k-r} p,\ k=r,r+1,\ldots\\ \sum_{r=1}^{\infty}P(Z_r=k)=\sum_{r=1}^{k}P(Z_r=k)=p\sum_{r=1}^{k}{{k-1} \choose {r-1}} p^{r-1} (1-p)^{k-r}=p\\ \lim_{k\to \infty}\sum_{r=1}^{\infty}P(Z_r=k)=p 

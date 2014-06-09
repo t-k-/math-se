@@ -1,0 +1,97 @@
+q
+\{1,...,p\}
+p
+\{1,...,p\}
+q-1
+\{1,...,p\}
+p-1
+ p(p-1)^{q-1}
+\Omega_n
+n
+\{1,\ldots,n\}
+\Omega_{n,k}
+n
+\{1,\ldots,n\}
+k
+n
+k \le \frac{n}{2}
+|\Omega_{n}|=\sum_{k=1}^{\lfloor \frac{n}{2}\rfloor }|\Omega_{n,k}|
+k
+n-k
+\{1,\ldots,n\}
+n (n-1)^{n-k-1}
+k
+\binom{n-k}{k}
+|\Omega_{n,k}|=\binom{n-k}{k}n(n-1)^{n-k-1}
+|\Omega_{n}|=\sum_{k=1}^{\lfloor \frac{n}{2}\rfloor }\binom{n-k}{k}n(n-1)^{n-k-1}
+n=3
+12
+n=4
+120
+n=5
+1520
+a_{n,k}
+b_{n,k}
+c_{n,k}
+\Sigma^k
+|\Sigma|=n,
+v
+w
+a_{n,k} = (n-1) a_{n,k-1} + (n-1) v b_{n,k-1} + (n-1) c_{n,k-1}, 
+b_{n,k} = a_{n,k-1} \quad\text{and}\quad  c_{n,k} = w b_{n,k-1} + c_{n,k-1}.
+\Sigma^k
+a_{n,k} + v b_{n,k} + w c_{n,k}.
+a_{n,1} = 1
+b_{n,1} = c_{n,1} = 0.
+c_{n,k} = w \sum_{q=1}^{k-1} b_{n,q} = w \sum_{q=1}^{k-2} a_{n,q}.
+a_{n,k}:
+a_{n,k} = (n-1) a_{n,k-1} + (n-1) v a_{n,k-2} + (n-1) w \sum_{q=1}^{k-3} a_{n,q}. 
+G_n(z) = \sum_{k\ge 1} a_{n,k} z^k.
+z^k
+k\ge 4:
+a_{n,1} = n, \; a_{n,2} = n(n-1)
+G_n(z),
+b_{n,k}
+H_n(z)
+a_{n,k} + v b_{n,k} + w c_{n,k}
+v=1
+M_n(z)
+\sum_{k\ge 4} a_{n,k} z^k =  (n-1) z \sum_{k\ge 4} a_{n,k-1} z^{k-1} +  (n-1) vz^2 \sum_{k\ge 4} a_{n,k-2} z^{k-2} \\+  \sum_{k\ge 4} (n-1) w z^k [z^{k-3}] \frac{1}{1-z} G_n(z). 
+a_{n,3} = n(n-1)^2 + n(n-1)v.
+ G_n(z) - (n(n-1)^2 + n(n-1)v)z^3 - n(n-1)z^2 -nz \\= (n-1)z (G_n(z) - n(n-1)z^2 -nz)  + (n-1)vz^2 (G_n(z) - nz) \\ + (n-1)w z^3 \sum_{k\ge 4} z^{k-3} [z^{k-3}] \frac{1}{1-z} G_n(z).
+(n-1)w z^3 \frac{1}{1-z} G_n(z).
+G_n(z) = -{\frac {nz \left( -1+z \right) }{-nz+n{z}^{2}-{z}^{2}-v{z}^{2}n+v{z}^{3}n+v{ z}^{2}-v{z}^{3}-w{z}^{3}n+w{z}^{3}+1}}.
+z G_n(z) \quad\text{and the one for}\; c_{n,k} \; \text{is}\quad \frac{wz^2}{1-z} G_n(z).
+\left(1 + vz + \frac{w z^2}{1-z}\right) G_n(z)
+H_n(z) = -{\frac {zn \left( -1+z-vz+v{z}^{2}-w{z}^{2} \right) }{-nz+n{z}^{2}-{z}^{2}-v{z}^{2}n+v{z}^{3}n+v{z}^{2}-v{z}^{3}-w{ z}^{3}n+w{z}^{3}+1}}.
+[w^0] H_n(z) = -{\frac { \left( vz+1 \right) nz}{v{z}^{2}n-v{z}^{2}+nz-z-1}}.
+[w^0] H_n(z) - [v^0] [w^0] H_n(z) = {\frac {v{z}^{2}n}{ \left( nz-z-1 \right)  \left( v{z}^{2}n-v{z}^{2}+nz-z-1  \right) }}
+M_n(z) = {\frac {n{z}^{2}}{ \left( nz-z-1 \right)  \left( n{z}^{2}-{z}^{2}+nz-z-1  \right) }}.
+-{\frac {n}{ \left( n-1 \right)  \left( n{z}^{2}-{z}^{2}+nz-z-1 \right) }}+{ \frac {n}{ \left( n-1 \right)  \left( nz-z-1 \right) }}.
+M_n(z)
+k
+n
+[z^k] M_n(z)
+n
+k
+n=2
+k=1
+n=7
+\rho_0 = \frac{1}{n-1} \quad\text{and}\quad  \rho_{1,2} = -\frac{1}{2} \pm \frac{\sqrt{n^2+2n-3}}{2(n-1)}.
+ [z^k] M_n(z) = n\frac{\rho_0^2 \rho_1 \rho_2}{(\rho_0-\rho_1)(\rho_0-\rho_2)} \rho_0^{-k}\\ + n\frac{\rho_0\rho_1^2 \rho_2}{(\rho_1-\rho_0)(\rho_1-\rho_2)} \rho_1^{-k} + n\frac{\rho_0\rho_1 \rho_2^2}{(\rho_2-\rho_0)(\rho_2-\rho_1)} \rho_2^{-k}.
+ [z^n] M_n(z) =  \sum_{k=1}^{\lfloor n/2 \rfloor} {n-k\choose k} n (n - 1)^{n-k-1}.
+0, 2, 4, 8, 14, 24, 40, 66, 108, 176.
+0, 7, 84, 798, 6804, 54684, 423360, 3194856, 23668848, 172939536.
+H_n(z)
+n^k
+v
+w
+3^4=81
+4
+3
+5^6=15625
+6
+5
+3+6+6 = 15
+[z^4] H_3(z) =  6\,{v}^{2}+36\,v+15\,w+24
+[z^6] H_5(z) = 80\,{v}^{3}+1920\,{v}^{2}+520\,vw+20\,{w}^{2}+6400\,v+1565\,w+5120

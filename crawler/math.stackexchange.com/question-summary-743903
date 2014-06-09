@@ -1,0 +1,29 @@
+\mathbf{N}_k = N_k \mathbf{e}_k = n_k \mathbf{v}_k
+1
+(1)
+\mathbf{F}_1
+9
+6
+n_k
+mg
+(2)
+\begin{pmatrix} 	F_{1.x}\\F_{1.y}\\F_{1.z} \\	F_{2.x}\\F_{2.y}\\F_{2.z} \\	F_{3.x}\\F_{3.y}\\F_{3.z} \\	F_{4.x}\\F_{4.y}\\F_{4.z} \end{pmatrix} = \begin{pmatrix}    e_{1.x} & e_{2.x} & e_{3.x} \\ e_{1.y} & e_{2.y} & e_{3.y} \\ e_{1.z} & e_{2.z} & e_{3.z} \\-e_{1.x} &         &         & e_{4.x} & e_{5.x} \\-e_{1.y} &         &         & e_{4.y} & e_{5.y} \\-e_{1.z} &         &         & e_{4.z} & e_{5.z} \\         &-e_{2.x} &         &-e_{4.x} &         & e_{6.x} \\         &-e_{2.y} &         &-e_{4.y} &         & e_{6.y} \\         &-e_{2.z} &         &-e_{4.z} &         & e_{6.z} \\         &         &-e_{3.x} &         &-e_{5.x} &-e_{6.x} \\         &         &-e_{3.y} &         &-e_{5.y} &-e_{6.y} \\         &         &-e_{3.z} &         &-e_{5.z} &-e_{6.z} \end{pmatrix} \begin{pmatrix} 	N_1\\N_2\\N_3\\N_4\\N_5\\N_6 \end{pmatrix}
+\begin{pmatrix} 	F_{1.x}\\F_{1.y}\\F_{1.z} \\	F_{2.x}\\F_{2.y}\\F_{2.z} \\	F_{3.x}\\F_{3.y}\\F_{3.z} \\	F_{4.x}\\F_{4.y}\\F_{4.z} \end{pmatrix} = \begin{pmatrix}    v_{1.x} & v_{2.x} & v_{3.x} \\ v_{1.y} & v_{2.y} & v_{3.y} \\ v_{1.z} & v_{2.z} & v_{3.z} \\-v_{1.x} &         &         & v_{4.x} & v_{5.x} \\-v_{1.y} &         &         & v_{4.y} & v_{5.y} \\-v_{1.z} &         &         & v_{4.z} & v_{5.z} \\         &-v_{2.x} &         &-v_{4.x} &         & v_{6.x} \\         &-v_{2.y} &         &-v_{4.y} &         & v_{6.y} \\         &-v_{2.z} &         &-v_{4.z} &         & v_{6.z} \\         &         &-v_{3.x} &         &-v_{5.x} &-v_{6.x} \\         &         &-v_{3.y} &         &-v_{5.y} &-v_{6.y} \\         &         &-v_{3.z} &         &-v_{5.z} &-v_{6.z} \end{pmatrix} \begin{pmatrix} 	n_1\\n_2\\n_3\\n_4\\n_5\\n_6 \end{pmatrix}\tag{1}
+\mathbf{F}_j = -m_j\mathbf{g}_j \quad\text{for}\quad j > 0
+\underbrace{\begin{pmatrix}   -v_{1.x} &         &         & v_{4.x} & v_{5.x} \\-v_{1.y} &         &         & v_{4.y} & v_{5.y} \\-v_{1.z} &         &         & v_{4.z} & v_{5.z} \\         &-v_{2.x} &         &-v_{4.x} &         & v_{6.x} \\         &-v_{2.y} &         &-v_{4.y} &         & v_{6.y} \\         &-v_{2.z} &         &-v_{4.z} &         & v_{6.z} \\         &         &-v_{3.x} &         &-v_{5.x} &-v_{6.x} \\         &         &-v_{3.y} &         &-v_{5.y} &-v_{6.y} \\         &         &-v_{3.z} &         &-v_{5.z} &-v_{6.z} \end{pmatrix}}_{\mathbf{A}} \begin{pmatrix} 	n_1\\n_2\\n_3\\n_4\\n_5\\n_6 \end{pmatrix} = \underbrace{\begin{pmatrix} 	0 \\ 0 \\ m g \\	0 \\ 0 \\ m g \\	0 \\ 0 \\ m g \end{pmatrix}}_{\mathbf{f}=mg\mathbf{f}^*}
+\begin{pmatrix}    1   &     &   & 2 & 1 \\ 0.5 &     &   & 0 & 1.5 \\-1   &     &   & 0 & 0 \\     &-1   &   &-2 &     &-1 \\     & 0.5 &   & 0 &     & 1.5 \\     &-1   &   & 0 &     & 0 \\     &     & 0 &   &-1   & 1 \\     &     &-1 &   &-1.5 &-1.5 \\     &     &-1 &   & 0   & 0 \end{pmatrix} \begin{pmatrix} 	n_1^*\\n_2^*\\n_3^*\\n_4^*\\n_5^*\\n_6^* \end{pmatrix} = \begin{pmatrix} 	0 \\ 0 \\ 1 \\	0 \\ 0 \\ 1 \\	0 \\ 0 \\ 1 \end{pmatrix} \quad\text{where}\quad n_k^* = \frac{n_k}{m g}\tag{2}
+(2)
+n_k^*
+N_k = n_k \|\mathbf{v}_k\| = mg\,n_k^* \|\mathbf{v}_k\|
+n_k
+(1)
+\mathbf{F}_j
+j=1
+\mathbf{R}_j
+j
+\mathbf{R}_j = -(\mathbf{F}_j + m_j\mathbf{g}_j) \quad\text{for a grounded joint $j$}
+(2)
+(nJ')\times (K+1)
+\mathbf{A}\|\mathbf{f}^*
+\mathbf{A}
+\mathbf{A}\|\mathbf{f}

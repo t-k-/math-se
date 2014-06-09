@@ -1,0 +1,24 @@
+ \lim_{x \to 10^-} \frac{[x^3] - x^3}{[x] - x}
+[\cdot]
+ [x] := \begin{cases} x && x \in \mathbb{Z} \\      \text{biggest integer smaller than }x && \text{otherwise} \end{cases}
+x^3 - 1 \leq [x^3] \leq x^3
+-1 \leq [x^3] - x^3 \leq 0
+ \lim_{x \to 10^-} \frac{1}{x - [x]} \leq \lim_{x \to 10^-} \frac{[x^3] - x^3}{[x] - x} \leq 0
+x=N+\delta
+[N+\delta]-N=N+[\delta]-N=[\delta]=-1
+-\frac 12\leq\delta<0
+a(\delta)=3N^2\delta+3N\delta^2+\delta^3
+a(\delta)<0
+\delta<0
+|\delta|
+\geq -1
+N\in\mathbb N
+\lim_{x\to N^-}\frac{[x^3]-x^3}{[x]-x}=\lim_{\delta\to 0^-}\frac{[(N+\delta)^3]-(N+\delta)^3}{[N+\delta]-(N+\delta)}.
+[(N+\delta)^3]-(N+\delta)^3=[N^3+3N^2\delta+3N\delta^2+\delta^3]-(N^3+3N^2\delta+3N\delta^2+\delta^3)=[a(\delta)]-a(\delta),
+\lim_{x\to N^-}\frac{[x^3]-x^3}{[x]-x}=1.
+\small x=N-\delta 
+\small \delta \to 0
+\qquad \small    { (N-\delta)^3 - [(N-\delta)^3 ] \over (N-\delta) - [N-\delta]} 
+\qquad \small    { (10- \delta)^3 - [1000- \epsilon ] \over (10- \delta) - 9} =  { (1000-300\delta+30\delta^2-\delta^3) - 999 \over 1-\delta} =  { 1-300\delta+30\delta^2-\delta^3 \over 1-\delta} 
+\small 0= -\delta + \delta 
+\qquad \small   { 1-\delta + \delta - 300\delta+30\delta^2-\delta^3 \over 1-\delta} =1 + \delta \cdot { 1 - 300+30\delta-\delta^2 \over 1-\delta} =1 - \delta \cdot { 299 -30\delta +\delta^2 \over 1-\delta} 

@@ -1,0 +1,10 @@
+ y_n = \int_0^1 \frac{x^n}{x+5}\,dx, n = 0,1,\dots 
+ y_0 = \log{6} - \log{5} 
+ y_n = \frac{1}{n} - 5y_{n-1}, n = 1,... 
+ y_n = 1 - 5\log6 + 5\log5 = \left.(x- 5\log(x+5))\right|_0^1 = \int_0^1 \frac{x}{x+5}\,dx 
+(n \longrightarrow n+1)
+ \frac{1}{n+1} - 5 y_n = \frac{1}{n+1} -5\left(\frac{1}{n}-5y_{n-1}\right)= \frac{1}{n+1} - \frac{5}{n} + 25 y_{n-1} = -5\left(\frac{1}{-5(n+1)}+\frac{1}{n}-5y_{n-1}\right) = \frac{1}{n+1} -5\left(\int_0^1 \frac{x^n}{x+5}\,dx\right) = ...? 
+y_n=\int_0^1\frac{x^{n-1}(x+5-5)}{x+5}dx=\int_0^1x^{n-1}\left[\frac{x+5}{x+5}-\frac{5}{x+5}\right]=
+=\int_0^1x^{n-1}dx-5\int_0^1\frac{x^{n-1}}{x+5}dx=\frac{1}{n}-5y_{n-1}
+y_n+5y_{n-1}=\frac1n\text{ for } n>0
+y_0=\ln\frac65

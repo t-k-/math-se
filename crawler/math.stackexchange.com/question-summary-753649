@@ -1,0 +1,21 @@
+\begin{align}dx(t)&=(1+x(t))dt + x(t) dw(t)\\x(0)&=1\end{align}
+\begin{align}dy(t)&=y(t)dt + y(t) dw(t)\\y(o)&=1\end{align}
+(y(t)z(t))
+z(t)=\int_0^t \frac{1}{y(s)} ds
+d(y(t)z(t))=z(t)dY(t)+dt.
+x(t)
+x(t)=y(t) (1+z(t))
+z(t)
+z(t)=\int_0^t \frac{1}{y(s)} ds
+dX_t = b(X_t) \, dt + \sigma(X_t) \, dW_t
+b
+\sigma
+dX_t = (1+X_t) \, dt+ X_t \, dW_t
+(Y_t)_t
+dY_t = Y_t \, dt + Y_t \, dW_t \tag{1}
+Z_t := \int_0^t \frac{1}{Y_s} \, ds
+dZ_t = \frac{1}{Y_t} \, dt.
+d(Y_t \cdot Z_t) = Z_t \, dY_t + dt \tag{2}
+\begin{align*} d(Y_t(1+Z_t)) &= dY_t + d(Y_t \cdot Z_t) \stackrel{(2)}{=} (1+Z_t) \, dY_t + dt \\ &= (1+Z_t) Y_t \, dW_t + (1+Z_t) Y_t \, dt + dt \\ &\stackrel{(1)}{=} (1+Z_t) Y_t \, dW_t + ((1+Z_t)Y_t+1) \, dt. \end{align*}
+A_t := (1+Z_t) Y_t
+dA_t = A_t \, dW_t + (A_t+1) \, dt.

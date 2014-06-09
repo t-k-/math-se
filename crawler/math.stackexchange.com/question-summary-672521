@@ -1,0 +1,10 @@
+X\sim N(0,1)
+Y\sim Uniform\{-1,1\}
+Z = XY
+F_Z(Z<z) = P(Z<z) = P(XY<z) = P(Y<\frac{z}{X})
+\Rightarrow F_Z(Z<z) = > \displaystyle\int_{-\infty}^{\infty}{F_Y\left(\frac{z}{x}\right)f_X(x)dx}
+\Rightarrow F_Z(Z<z) = > \displaystyle\int_{-\infty}^{-z}{F_Y\left(\frac{z}{x}\right)f_X(x)dx}+\displaystyle\int_{-z}^{0}{F_Y\left(\frac{z}{x}\right)f_X(x)dx}+\displaystyle\int_{-0}^{z}{F_Y\left(\frac{z}{x}\right)f_X(x)dx}+\displaystyle\int_{z}^{\infty}{F_Y\left(\frac{z}{x}\right)f_X(x)dx}
+\Rightarrow F_Z(Z<z) = > \displaystyle\int_{-\infty}^{-z}{\left(\frac{\frac{z}{x}+1}{2}\right)f_X(x)dx}+\displaystyle\int_{0}^{z}{f_X(x)dx}+\displaystyle\int_{z}^{\infty}{\left(\frac{\frac{z}{x}+1}{2}\right)f_X(x)dx}
+\Rightarrow F_Z(Z<z) = > \displaystyle\int_{-\infty}^{-z}{\left(\frac{z}{2x}\right)f_X(x)dx}+\displaystyle\int_{z}^{\infty}{\left(\frac{z}{2x}\right)f_X(x)dx}+\displaystyle\int_{0}^{z}{f_X(x)dx}+\displaystyle\int_{z}^{\infty}{\left(\frac{1}{2}\right)f_X(x)dx}+\displaystyle\int_{-\infty}^{-z}{\left(\frac{1}{2}\right)f_X(x)dx}
+f_X(x)
+F_Z(Z<z) = \displaystyle\int_{0}^{\infty}{f_X(x)dx}

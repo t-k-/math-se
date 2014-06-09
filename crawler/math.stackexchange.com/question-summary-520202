@@ -1,0 +1,9 @@
+0 \ldots x
+x
+f(x) = e^x-1
+J^1 f = J^{1/2} J^{1/2} f
+ J^1f(x) = e^x-x-1, \\ f_2(x):= J^{1/2}f(x) = \frac{e^x \sqrt{\pi}\;\text{erf}\sqrt{x} - 2\sqrt{x}}{\sqrt{\pi}}\\ J^{1/2}f_2(x) = \frac{1}{\pi}\int_0^x\frac{e^t \sqrt{\pi}\;\text{erf}\sqrt{t} - 2\sqrt{t}}{\sqrt{x-t}}\;dt . 
+ \frac{1}{\pi}\int_0^x\frac{e^t \sqrt{\pi}\;\text{erf}\sqrt{t} - 2\sqrt{t}}{\sqrt{x-t}}\;dt = e^x-x-1 
+ \int_0^{\int_0^x f(u) du} f(t) dt 
+ \int_0^x \left( \int_0^t f(u) du \right) dt 
+ \displaystyle \begin{array}{lllllrrr} \phantom{aaaaa}&f_2(x,x_0=0) &=& (J^1 f){\Large |}_{x_0}^x &=& \int_{x_0}^x  f(t) dt &\phantom{aaaaaaaaaa}&\phantom{aaaaa}&(4) \end{array}

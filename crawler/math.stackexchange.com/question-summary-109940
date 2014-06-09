@@ -1,0 +1,5 @@
+n>0
+0\leq m \leq 2^n
+ \sum\limits_{k=0}^n \begin{pmatrix} n \\ k  \end{pmatrix} e^{-\frac{m}{2^k} } 
+ 2^n e^{-\frac{m}{2^n}} 
+ \sum\limits_{k=0}^n \begin{pmatrix} n \\ k  \end{pmatrix} e^{-\frac{m}{2^k} } =\sum\limits_{i=0}^\infty \frac{(-m)^i}{i!} \sum\limits_{k=0}^n  \begin{pmatrix} n \\ k  \end{pmatrix} \left(\frac{1}{2^i}\right)^k = \sum\limits_{i=0}^\infty \frac{(-m)^i}{i!} \left(1+\frac{1}{2^i}\right)^n = ... 

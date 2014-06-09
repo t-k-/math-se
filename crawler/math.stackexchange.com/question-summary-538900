@@ -1,0 +1,21 @@
+Z = X + Y
+\frac{L}{2}< z < \frac{3L}{2}
+f_{X+Y}(z)=f_{Z}(z) = \int f_{X}(x)f_{Y}(z-x)dx
+X
+Y
+f_{Z}(z)
+\frac{L}{2}< z < L
+L< z < \frac{3L}{2}
+X
+X
+\frac{L}{2}
+f_{Z}(z) = \int_{0}^{z} f_{X}(y-z)f_{Y}(y)dy
+f_{Z}(z) = \int_{z}^{\frac{3L}{2}} f_{X}(X=\frac{L}{2})f_{Y}(z-\frac{L}{2})dy
+P(X+Y \le z)=P(X\le z-Y)
+F(z) = \int_{L/2}^L P(X \le z-y) \frac{2}{L} dy
+P(X \le z-y) = 0 \text{ when } z-y<0
+P(X \le z-y) = \frac{2(z-y)}{L} \text{ when } 0\le z-y \le \frac{L}{2}
+P(X \le z-y) = 1 \text { when } z-y \ge \frac{L}{2}
+F(z) = 0 \text{ when } z \le \frac{L}{2}
+F(z) = \int_{L/2}^L  \frac{2(z-y)}{L} \frac{2}{L} dy \text{ when } \frac{L}{2} \le z \le L
+F(z) = \int_{L/2}^L   \frac{2}{L} dy \text{ when } L \le z \le \frac{3L}{2}

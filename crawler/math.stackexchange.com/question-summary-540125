@@ -1,0 +1,15 @@
+I=\int_{-\pi}^{+\pi}\dfrac{x\sin{x}\arctan{e^x}}{1+\cos^2{x}}dx
+I=\int_{-\pi}^{0}\dfrac{x\sin{x}\arctan{e^x}}{1+\cos^2{x}}dx+\int_{0}^{+\pi}\dfrac{x\sin{x}\arctan{e^x}}{1+\cos^2{x}}dx=I_{1}+I_{2}
+I_{2}
+x=-t
+x=-t,
+I_1=\int_{-\pi}^0\frac{x\sin x\arctan(e^x)}{1+\cos^2x}dx
+=\int_{\pi}^0\frac{(-t)\sin(-t)\arctan(e^{-t})}{1+\cos^2(-t)}(-dt)
+=-\int_{\pi}^0\frac{t\sin t\arctan(e^{-t})}{1+\cos^2t}dt
+=\int_0^{\pi}\frac{t\sin t\arctan(e^{-t})}{1+\cos^2t}dt
+\arctan \frac1x=\text{arccot} x=\frac\pi2-\arctan x
+\implies I_1=\int_0^{\pi}\frac{t\sin t\left(\frac\pi2-\arctan(e^t)\right)}{1+\cos^2t}dt 
+\implies I=I_1+I_2=\frac\pi2 \int_0^{\pi}\frac{t\sin t}{1+\cos^2t}dt 
+\text{Applying }\int_a^bf(x)dx=\int_a^bf(a+b-x)dx\text{ on }I \text{ with }a=0,b=\pi
+ I=\frac\pi2\int_0^{\pi}\frac{t\sin t}{1+\cos^2t}dt=\frac\pi2\int_0^{\pi}\frac{(\pi-t)\sin(\pi- t)}{1+\cos^2(\pi-t)}dt=\frac\pi2\int_0^{\pi}\frac{(\pi-t)\sin t}{1+\cos^2t}dt
+\implies I=\frac{\pi}2\left(\int_0^{\pi}\frac{\pi\sin t}{1+\cos^2t}dt-I\right)

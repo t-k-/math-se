@@ -1,0 +1,8 @@
+ \int \frac{\sin(n\theta(x)))}{\sin(\theta(x))} dx. 
+\theta
+x
+x = 0
+x = \pi/2
+\theta(x)
+ \sin(x)=\frac1{2i}\left(e^{ix}-e^{-ix}\right) 
+ \begin{align} \frac{\sin(n\theta)}{\sin(\theta)}&=\frac{e^{in\theta}-e^{-in\theta}}{e^{i\theta}-e^{-i\theta}}\\ &=\frac{\left(e^{i\theta}\right)^n-\left(e^{-i\theta}\right)^n}{e^{i\theta}-e^{-i\theta}} \\ &= \sum_{k=0}^{n-1}\left(e^{i\theta}\right)^{n-1-2k}\\ &= \sum_{k=0}^{n-1}e^{i(n-1-2k)\theta}\\ &=  \begin{cases} 1+2\sum_{k=1}^{(n-1)/2} \cos(2k\theta) & n\text{ is odd}\\ 2\sum_{k=1}^{n/2} \cos((2k-1)\theta) & n\text{ is even} \end{cases} \end{align} 

@@ -1,0 +1,17 @@
+{a_0 \over 2} + \sum_{n=1}^N[a_n cos({2\pi n x \over P}) + b_n sin({2\pi n x \over P})]
+\sum_{n=-N}^N c_n e^{i{2\pi n x \over P}}
+a_n
+b_n
+c_n
+\begin{align} a_n & = c_n + c_{-n} \\[12pt] b_n & = i(c_n - c_{-n}) \\[12pt] c_n & = \begin{cases} \frac{1}{2}(a_n - i b_n) & \text{for } n \ne 0, \\[12pt] \frac{1}{2}a_0 & \text{for }n = 0. \end{cases} \end{align}
+a_1 cos(...) + b_1 sin(...)
+n > 0
+n = 0
+n
+-n
+\begin{align} c_n e^{2\pi inx/P} + c_{-n} e^{-2\pi inx/P} &= c_n (\cos (2\pi nx/P) + i\sin (2\pi nx/P)) + c_{-n}(\cos (2\pi nx/P) - i \sin (2\pi nx/P))\\ &= (c_n + c_{-n})\cos (2\pi nx/P) + i(c_n - c_{-n})\sin (2\pi nx/P), \end{align}
+a_n = c_n + c_{-n}
+b_n = i(c_n - c_{-n})
+\begin{align} a_n \cos (2\pi nx/P) + b_n\sin (2\pi nx/P) &= \frac{a_n}{2}\left(e^{2\pi inx/P} + e^{-2\pi inx/P}\right) + \frac{b_n}{2i}\left(e^{2\pi inx/P} - e^{-2\pi inx/P}\right)\\ &= \frac{a_n - ib_n}{2}e^{2\pi inx/P} + \frac{a_n + ib_n}{2}e^{-2\pi inx/P} \end{align},
+c_n = \frac{a_n-ib_n}{2}
+c_{-n} = \frac{a_n + ib_n}{2}

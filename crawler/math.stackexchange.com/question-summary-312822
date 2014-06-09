@@ -1,0 +1,27 @@
+g:\mathbb{R}\to \mathbb{R} 
+f:[0,T]\to \mathbb{R}
+ \lim_{n\to\infty}\int_0^Tf\left(x\right)g\left(nx\right)\mathrm{dx}=\frac{1}{T}\cdot\int_{0}^{T}f\left(x\right)\mathrm{dx}\cdot\int_{0}^{T}g\left(x\right)\mathrm{dx}  
+\,T=2\pi\;,\;g(x)=\cos x\;,\;f(x)=1\,
+\lim_{n\to\infty}f(x)g(nx)=\lim_{n\to\infty}\cos nx\neq\frac{1}{2\pi}\int\limits_0^{2\pi}dx\int\limits_0^{2\pi}\cos x\,dx=\left.\frac{1}{2\pi}(2\pi)\sin x\right|_0^{2\pi}=0
+f
+[0,T]
+\epsilon>0
+n
+|f(x)-f(x')|\leq\epsilon
+|x-x'|\leq{T\over n}
+{1\over T}\int_0^T g(x)\ dx=:\bar g
+[0,T]
+n
+I_k:=[x_{k-1},x_k]
+\ (1\leq k\leq n)
+(1)
+-f(x_k)
+\Theta
+\leq1
+\int_{I_k} g(nx)\ dx=\int_{I_k}\bar g\ dx\ .\tag{1}
+\int_{I_k} f(x) g(nx)\ dx=\bar g\int_{I_k} f(x)\ dx + \int_{I_k} \bigl(f(x)-f(x_k)\bigr)\bigl( g(nx)-\bar g\bigr)\ dx
+\int_{I_k} f(x) g(nx)\ dx- \bar g\int_{I_k} f(x)\ dx =\epsilon\ \int_{I_k} \Theta \ \bigl(|g(nx)|+|\bar g|\bigr)\ dx\ ,\tag{2}
+n
+(2)
+\epsilon>0
+\int_0^T f(x)g(nx)\ dx -\bar g\int_0^T f(x)\ dx=\epsilon\ 2\Theta\int_0^T|g(x)|\ dx\ .

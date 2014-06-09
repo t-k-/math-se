@@ -1,0 +1,46 @@
+\displaystyle\lim_{n\rightarrow\infty}\left({2\sqrt n}-\sum_{k=1}^n\frac{1}{\sqrt k}\right)
+\sqrt{n} = \sum_{k=1}^n \left( \sqrt{k} - \sqrt{k-1} \right)
+ \begin{eqnarray}   2 \sqrt{n} - \sum_{k=1}^n \frac{1}{\sqrt{k}} &=& \sum_{k=1}^n \left( 2 \sqrt{k} - 2 \sqrt{k-1} - \frac{1}{\sqrt{k}} \right) = \sum_{k=1}^n \frac{1}{\sqrt{k}}  \left( \sqrt{k}-\sqrt{k-1} \right)^2\\  &=& \sum_{k=1}^n \frac{1}{\sqrt{k}} \left( \frac{(\sqrt{k}-\sqrt{k-1})(\sqrt{k}+\sqrt{k-1})}{(\sqrt{k}+\sqrt{k-1})} \right)^2 \\   &=& \sum_{k=1}^n \frac{1}{\sqrt{k} \left(\sqrt{k}+\sqrt{k-1}\right)^2}  \end{eqnarray} 
+\lim_{n \to \infty} \left( 2 \sqrt{n} - \sum_{k=1}^n \frac{1}{\sqrt{k}} \right) = \sum_{k=1}^\infty  \frac{1}{\sqrt{k} \left(\sqrt{k}+\sqrt{k-1}\right)^2}
+-\zeta\left(\frac{1}{2} \right) \approx 1.4603545
+   2 \sqrt{n} - \sum_{k=1}^n \frac{1}{\sqrt{k}} = 2 \sqrt{n} - \left( \zeta\left(\frac{1}{2}\right) - \zeta\left(\frac{1}{2}, n+1\right)\right) \sim -\zeta\left(\frac{1}{2}\right) - \frac{1}{2\sqrt{n}} + o\left( \frac{1}{n} \right)  
+f
+f(1)
+f
+S(n)
+S(x) = \sum_{k\ge 1} \left(\frac{1}{\sqrt k}-\frac{1}{\sqrt{x+k}}\right)
+S(n) = \sum_{q\ge 1}^n \frac{1}{\sqrt{q}}
+S(x) = \sum_{k\ge 1} \frac{1}{\sqrt k} \left(1-\frac{1}{\sqrt{x/k+1}}\right).
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
+\lambda_k = \frac{1}{\sqrt{k}}, \quad \mu_k = \frac{1}{k} \quad \text{and} \quad g(x) = 1 - \frac{1}{\sqrt{1+x}}.
+1/2-s > 1
+s < -1/2.
+\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} = \sum_{k\ge 1} \frac{1}{\sqrt{k}} k^s = \zeta(1/2-s)
+g^*(s)
+g(x)
+\langle -1, 0 \rangle,
+g^*(s)
+\int_0^\infty \left(1 - \frac{1}{\sqrt{1+x}}\right) x^{s-1} dx
+g^*(s) = - \frac{1}{\sqrt\pi} \Gamma(s)\Gamma(1/2-s)
+Q(s)
+S(x)
+Q(s) = - \frac{1}{\sqrt\pi} \Gamma(s)\Gamma(1/2-s) \zeta(1/2-s).
+\frac{1}{2\pi i} \int_{-3/4-i\infty}^{-3/4+i\infty} Q(s)/x^s ds
+s=-1/2
+s=0
+s=1/2
+B_1
+\mathrm{Res}(Q(s)/x^s; s=-1/2) =   -\frac{1}{\sqrt\pi} \Gamma(-1/2)\Gamma(1)\times -1 \times \sqrt{x} = -2\sqrt{x}.
+\mathrm{Res}(Q(s)/x^s; s=0) =  -\frac{1}{\sqrt\pi} \Gamma(1/2) \zeta(1/2) = -\zeta(1/2).
+\mathrm{Res}(Q(s)/x^s; s=1/2) = - \frac{1}{\sqrt\pi} \Gamma(1/2) \times -1 \times \zeta(0) \times \frac{1}{\sqrt x} = -\frac{1}{2\sqrt{x}}.
+s=1/2+q
+q\ge 1
+\mathrm{Res}(Q(s)/x^s; s=1/2+q) = - \frac{1}{\sqrt\pi} \Gamma(1/2+q) \times \frac{(-1)^{q+1}}{q!} \times \zeta(-q)\times \frac{1}{x^{1/2+q}} \\ = \frac{1}{\sqrt\pi} \frac{2^{1-2q} \sqrt{\pi} \Gamma(2q)}{\Gamma(q)} \times \frac{(-1)^{q+1}}{q!} \times \frac{B_{q+1}}{q+1}\times \frac{1}{x^{1/2+q}} \\= -2 \times \left(-\frac{1}{4}\right)^q \times {2q-1\choose q} \frac{B_{q+1}}{q+1} \times \frac{1}{x^{1/2+q}}.
+x=n
+S(n) = \sum_{k=1}^n \frac{1}{\sqrt{k}} \sim 2\sqrt{n} + \zeta(1/2) + \frac{1}{2\sqrt{n}} + 2\times \sum_{q\ge 1} \left(-\frac{1}{4}\right)^q \times {2q-1\choose q} \frac{B_{q+1}}{q+1} \times \frac{1}{n^{1/2+q}}.
+2\sqrt{n} + \zeta(1/2) + \frac{1}{2\sqrt{n}} -1/24\,{n}^{-3/2}+{\frac {1}{384}}\,{n}^{-7/2}-{\frac {1}{1024}}\,{n}^ {-11/2}+{\frac {143}{163840}}\,{n}^{-15/2}\\-{\frac {1105}{786432}}\,{n} ^{-19/2}+{\frac {223193}{62914560}}\,{n}^{-23/2}-{\frac {1300075}{ 100663296}}\,{n}^{-{\frac {27}{2}}}+{\frac {137514723}{2147483648}}\,{ n}^{-{\frac {31}{2}}} + \cdots
+\lim_{n\to\infty} \left(2\sqrt{n} - \sum_{k=1}^n\frac{1}{\sqrt{k}}\right) = -\zeta(1/2).
+\sum_{k=1}^n\frac{1}{\sqrt{k}} = \frac{1}{2\sqrt{n}} + \frac{1}{2\pi i} \int_{3/4-i\infty}^{3/4+i\infty} \zeta(s+1/2) n^s\frac{ds}{s}
+2\sqrt{n} + \zeta(1/2) + \frac{1}{2\sqrt{n}}

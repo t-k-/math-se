@@ -1,0 +1,29 @@
+n
+n
+k
+1
+X
+ Pr(X=k) \approx \binom{n}{k}\left(\frac{1}{e}\right)^{k}\left(1-\frac{1}{e}\right)^{n-k} 
+1/e
+(1-1/n)^{n-1}
+n
+n
+n<5
+80
+  p_n(k) = \binom{n}{k} \sum_{i=k}^n (-1)^{i-k} \binom{n-k}{i-k} \mathbb{P}(A_1  \ldots  A_i) 
+A_1
+1
+A_1 A_2
+  \begin{eqnarray}    \mathbb{P}(A_1) &=& \binom{n}{1} \frac{1}{n} \left( 1 - \frac{1}{n} \right)^{n-1} = \left( 1 - \frac{1}{n} \right)^{n-1} \\    \mathbb{P}(A_1 A_2) &=& \binom{n}{1,1,n-2} \frac{1}{n^2} \left( 1- \frac{2}{n} \right)^{n-2} = \frac{n-1}{n} \left( 1- \frac{2}{n} \right)^{n-2} \\     \mathbb{P}(A_1 \ldots A_i) &=& \binom{n}{i} i! \frac{1}{n^i} \left( 1 - \frac{i}{n} \right)^{n-i}  \end{eqnarray} 
+    p_n(k) = \binom{n}{k} \sum_{i=k}^n (-1)^{i-k} \binom{n-k}{i-k} \binom{n}{i} i! \frac{1}{n^i} \left( 1 - \frac{i}{n} \right)^{n-i} 
+X \ge k
+1
+\begin{pmatrix} n \\ k \end{pmatrix}\begin{pmatrix} n \\ k \end{pmatrix}
+k!
+n-k
+n-k
+(n-k)^{n-k}
+n^n
+\mathbb P(X=k)
+\mathbb P(X \ge k) - \mathbb P(X \ge {k+1})
+ \mathbb P(X\ge k) = \frac{ \begin{pmatrix} n \\ k \end{pmatrix}\begin{pmatrix} n \\ k \end{pmatrix} k! (n-k)^{n-k} }{n^n}. 

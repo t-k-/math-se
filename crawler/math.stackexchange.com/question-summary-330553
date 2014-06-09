@@ -1,0 +1,11 @@
+p=\dfrac{r}{N}
+f(x)=\frac{\binom{r}{x} \binom{N-r}{n-x}}{\binom{N}{n}}\;,
+\lim_{N \rightarrow \infty} f(x)=\binom{n}{x} p^x (1-p)^{n-x}\;.
+N
+N
+r/N
+n
+x
+\begin{eqnarray}  \frac{\binom{r}{x} \binom{N-r}{n-x}}{\binom{N}{n}} &=& \frac{r!}{\color\green{x!} \cdot (r-x)!} \frac{(N-r)!}{\color\green{(n-x)!} \cdot (N-n -(r-x))!} \cdot \frac{\color\green{n!} \cdot (N-n)!}{N!} \\   &=& \color\green{\binom{n}{x}} \cdot \frac{r!/(r-x)!}{N!/(N-x)!} \cdot \frac{(N-r)! \cdot (N-n)!}{(N-x)! \cdot (N-r-(n-x))!} \\   &=& \binom{n}{x} \cdot \frac{r!/(r-x)!}{N!/(N-x)!} \cdot \frac{(N-r)!/(N-r-(n-x))!}{(N-n+(n-x))!/(N-n)! } \\   &=& \binom{n}{x} \cdot \prod_{k=1}^x \frac{(r-x+k)}{(N-x+k)} \cdot \prod_{m=1}^{n-x}\frac{(N-r-(n-x)+m)}{(N-n+m) } \end{eqnarray} 
+    \lim_{N \to \infty} \frac{(r-x+k)}{(N-x+k)} = \lim_{N \to \infty}  \frac{r}{N} = p 
+   \lim_{N \to \infty} \frac{(N-r-(n-x)+m)}{(N-n+m) } = \lim_{N \to \infty}  \frac{N-r}{N} = 1-p 

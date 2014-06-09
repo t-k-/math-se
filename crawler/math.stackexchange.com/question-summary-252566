@@ -1,0 +1,38 @@
+(X,\mathcal A, \mu)
+f,g\in L^p(X)
+p\in(1,+\infty)
+F
+F'(0)
+ F:\mathbb{R} \ni t \mapsto \int_X \vert f(x)+tg(x) \vert^p d\mu = \Vert f+tg \Vert_p^p 
+F
+F'(0)
+ \lim_{t \to 0}\frac{F(t)-F(0)}{t}=\lim_{t \to 0} \frac{\int_X \vert f+tg\vert^p-\vert f \vert^pd\mu}{t} 
+F
+\mathbb{R}
+r>0
+s
+x
+\phi^x
+G_r \in L^1(X)
+ \phi: X\times(-r,r) \to [0,\infty],\ \phi(x,t)=s(f(x)+tg(x))=:\phi^x(t), 
+ s: \mathbb{R} \to [0,\infty),\ s(t)=|t|^p. 
+ s'(t)=\begin{cases} p|t|^{p-2}t &\text{ for } t \ne 0\\ 0 &\text{ for } t=0 \end{cases}, 
+ \Omega:=\{x \in X:\ |f(x)|<\infty\}\cap\{x \in X:\ |g(x)|<\infty\} 
+ (\phi^x)'(t)=\partial_t\phi(x,t)=g(x)s'(f(x)+tg(x)) \quad \forall\ t \in (-r,r). 
+ |\partial_t\phi(x,t)| \le G_r(x):=\max(1,r^{p-1})|g(x)|(|f(x)|+|g(x)|)^{p-1}  \quad \forall\ (x,t) \in \Omega\times(-r,r) 
+ \int_XG_r\,d\mu=\max(1,r^{p-1})\int_X|g|(|f|+|g|)^{p-1}\le \max(1,r^{p-1})\|g\|_{L^p(X)}\|(|f|+|g|)\|^{p-1}_{L^p(X)}, 
+t_0 \in (-r,r)
+\{t_n\} \subset (-r,r)
+t_n \to t_0
+\alpha=\alpha(t_0,t_n) \in [0,1]
+\{\tilde{\phi}_n\}
+t_0 \in (-r,r)
+ \tilde{\phi}_n(x,t_0)=\frac{\phi(x,t_0)-\phi(x,t_n)}{t_0-t_n} \quad \forall x \in \Omega, n \in \mathbb{N}.  
+ \lim_n\tilde{\phi}(x,t_0)=\partial_t\phi(x,t_0) \quad \forall\ x\in \Omega. 
+ |\tilde{\phi}_n(x,t_0)|=|\partial_t\phi(x,\alpha t_0+(1-\alpha)t_n)|\le G_r(x) \quad \forall\ x \in \Omega, n \in \mathbb{N}. 
+ \int_X\partial_t\phi(x,t_0)d\mu(x)=\int_X\lim_n\tilde{\phi}_n(x,t_0)d\mu(x)=\lim_n\int_X\tilde{\phi}_n(x,t_0)=\lim_n\frac{F(t_0)-F(t_n)}{t_0-t_n}= F'(t_0). 
+ F'(0)=\int_X g(x)s'(f(x))=\int_X fg|f|^{p-2}. 
+\partial_tF(t,x)=|g(x)|\cdot |f(x)+tg(x)|^{p-1}\operatorname{sgn}(f(x)+tg(x))
+t
+t
+x

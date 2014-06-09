@@ -1,0 +1,35 @@
+I
+\pi
+e
+\text{erfi}({\sqrt{x}})=\frac{2}{\sqrt{\pi}} \sqrt{x} \int_0^1 dt \, e^{x t^2}
+\int_{-\infty}^{\infty} dx \, \theta(x) \, \text{erfi}(\sqrt{x}) \, e^{-\sqrt{2} x} \, e^{i k x}
+\theta(x)
+1
+x \gt 0
+0
+x \lt 0
+\begin{align}\int_{0}^{\infty} dx \, \text{erfi}(\sqrt{x}) \, e^{-\sqrt{2} x} \, e^{i k x} &=\frac{2}{\sqrt{\pi}} \int_0^1 dt \, \int_{0}^{\infty} dx \, \sqrt{x} e^{x t^2} \, e^{-\sqrt{2} x} \, e^{i k x}\\ &= \frac{2}{\sqrt{\pi}} \int_0^1 dt \, \int_{0}^{\infty} dx \, \sqrt{x} e^{-(\sqrt{2}-t^2-i k) x}\\ &= \int_0^1 \frac{dt}{(\sqrt{2}-i k - t^2)^{3/2}} \\ &=\frac{1}{\sqrt{2}-i k} \frac{1}{\sqrt{\sqrt{2}-1-i k}}\end{align} 
+\int_0^{\infty} dx \, \sqrt{x} e^{-a x} = \frac{\sqrt{\pi}}{2 a^{3/2}}
+\sqrt{2}-i k
+b^2
+\sin{x}/x
+\pi
+|k| \lt 1
+0
+f
+g
+F
+G
+\int_{-\infty}^{\infty} dx \, f(x) g(x) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} dk \, F(k) G(k)
+f(x) =  \text{erfi}(\sqrt{x}) \, e^{-\sqrt{2} x}\, \theta(x) 
+g(x) = \frac{\sin{x}}{x}
+F(k) = \frac{1}{\sqrt{2}-i k} \frac{1}{\sqrt{\sqrt{2}-1-i k}}
+G(k) = \begin{cases}\pi & |k| \lt 1 \\ 0 & k \gt 1\end{cases}
+\frac12 \int_{-1}^1 \frac{dk}{\sqrt{2}-i k} \frac{1}{\sqrt{\sqrt{2}-1-i k}}
+v^2=\sqrt{2}-1-i k
+-i \int_{\sqrt{\sqrt{2}-1-i}}^{\sqrt{\sqrt{2}-1+i}} \frac{dv}{1+v^2}
+-i \left [\arctan{\sqrt{\sqrt{2}-1+i}} - \arctan{\sqrt{\sqrt{2}-1-i}} \right ] 
+\tanh ^{-1}\left(\frac{\sqrt{2 \left(1-\sqrt{2}+\sqrt{4-2    \sqrt{2}}\right)}}{1+\sqrt{4-2 \sqrt{2}}}\right) 
+\frac12 \log{\left [\frac{1+\sqrt{4-2 \sqrt{2}}+\sqrt{2 \left(1-\sqrt{2}+\sqrt{4-2    \sqrt{2}}\right)}}{1+\sqrt{4-2 \sqrt{2}}-\sqrt{2 \left(1-\sqrt{2}+\sqrt{4-2    \sqrt{2}}\right)}}\right ]} \approx 0.625774
+a>1
+\int_0^\infty\frac{\sin(x)\ \operatorname{erfi}\left(\sqrt x\right)\ e^{-a x}}x dx=\ln\sqrt{\frac{\sqrt{a^2-2a+2}+\sqrt2\sqrt{\sqrt{a^2-2a+2}-a+1}+1}{\sqrt{a^2-2a+2}-\sqrt2\sqrt{\sqrt{a^2-2a+2}-a+1}+1}}.

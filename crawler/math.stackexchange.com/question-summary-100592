@@ -1,0 +1,18 @@
+O(x)+O(x^2)=O(x^2)
+x\to\infty
+O(x)
+|f_1(x)|\leq |C_1 \cdot g_1(x)|
+g_1(x)=x
+O(x^2)
+|f_2(x)|\leq |C_1 \cdot g_2(x)|
+g_2(x)=x^2
+C_1 x + C_2 x^2 \leq (C_1+C_2) x^2
+O(x^2)
+C_3=C_1+C_2
+f(x) = O(g(x)) \space \leftrightarrow \exists c_1,x_0\in\mathbb{R}\space such\space that\space\forall x>x_0\space we \space have\space|f(x)| \leq C_1*|g(x)|
+f(x) = O(g(x))and\space for \space constant \space k\in\mathbb{R}\rightarrow O(k*f(x)) = O(g(x))
+x>k
+O(g(x))\le O(x*f(x))
+O(g(x)) +O(x*O(g(x))) \le O(x*O(g(x)))+O(x*O(g(x))) (1)\space and\space O(x*O(g(x))) = O(2*x*O(g(x))) (2)
+O(g(x))+O(x*O(g(x))) = O(x*O(g(x)))
+O(x*O(x)) = O(x^2)

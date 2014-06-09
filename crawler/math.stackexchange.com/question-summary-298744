@@ -1,0 +1,12 @@
+1\times1\times1, 2\times2\times2, 4\times4\times4, 8\times8\times8, 16\times16\times16, \ldots, 2^k \times 2^k \times 2^k
+k\ge 0
+A\times B\times C
+A, B, C
+k
+2^k\le \min\{A,B,C\}
+\lfloor \frac A{2^k}\rfloor \cdot \lfloor \frac B{2^k}\rfloor \cdot \lfloor \frac C{2^k}\rfloor 
+2^k
+(A\bmod 2^k)\times B \times C
+(2^k\lfloor \frac A{2^k}\rfloor)\times (B\bmod 2^k)\times C
+(2^k\lfloor \frac A{2^k}\rfloor)\times (2^k\lfloor \frac B{2^k}\rfloor)\times (C\bmod 2^k)
+\le 2^{k-1}

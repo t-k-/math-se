@@ -1,0 +1,11 @@
+H(t)
+H(\tau-1/2)\neq 0
+\tau>1/2
+H(t-\tau+1/2) \neq 0
+t-\tau > -1/2 \implies \tau < t + 1/2
+t\geq 0
+0
+t<0
+t>0
+ \begin{align} H(t-1/2) * H(t+1/2) &= \int_{-\infty}^\infty H(\tau-1/2)H(t-\tau+1/2)\,d\tau \\ &= \int_{1/2}^{t+1/2} H(\tau-1/2)H(t-\tau+1/2)\,d\tau \\ &= \int_{1/2}^{t+1/2} 1\,d\tau = t \end{align} 
+ H(t-1/2) * H(t+1/2) =  \begin{cases} t & t \geq 0\\ 0 & t < 0 \end{cases} = t\,H(t) 

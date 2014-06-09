@@ -1,0 +1,56 @@
+\frac{X/n_1}{Y/n_2}
+X
+Y
+n_1
+n_2
+F
+\frac{X}{Y + k}
+k
+\newcommand{\G}{\Gamma}X\sim \G(r_1, \lambda)
+Y \sim \G(r_2, \lambda)
+\G(r,\lambda)
+ f(x\;;r,\lambda) = \frac{\lambda^r x^{r-1}}{\Gamma(r)} e^{-\lambda x} \mathbf{1}_{(x > 0)} \> . 
+\beta > 0
+Z \sim \G(r, \lambda)
+\beta
+ \newcommand{\e}{\mathbb{E}} \e(Z^\beta) = \lambda^{-\beta} \frac{\G(r+\beta)}{\G(r)} \> . 
+n
+\Gamma(n/2, 1/2)
+U = X / (Y + k)
+V = Y
+(X,Y) \mapsto (U,V)
+X = U(V+k)
+Y = V\,
+v > 0
+k > 0
+|J| = J = v + k
+ J =  \left| \begin{matrix} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} \\ \end{matrix}  \right|  = \left| \begin{matrix} v+k & u \\ 0 & 1 \\ \end{matrix}  \right|   = v+k \> , 
+(U,V)
+\{(u,v): u > 0, v > 0\}
+ f_{U,V}(u,v) = |J| f_{X,Y}(x,y) = \frac{\lambda^{r_1 + r_2}}{\G(r_1)}  u^{r_1 - 1} e^{-\lambda k u} \cdot \frac{(v+k)^{r_1} v^{r_2-1}}{\G(r_2)} e^{-\lambda(1+u)v} \> . 
+v
+f_U(u)
+u > 0
+ f_U(u) =  \frac{\lambda^{r_1}}{\G(r_1)}  u^{r_1 - 1} (1+u)^{-r_2} e^{-\lambda k u} \cdot \int_0^\infty (v+k)^{r_1} \frac{v^{r_2-1} (\lambda(1+u))^{r_2}}{\G(r_2)} e^{-\lambda(1+u)v} \,\mathrm{d}v \> . 
+Z_u \sim \G(r_2, \lambda(1+u))
+ \e(Z_u+k)^{r_1} = \int_0^\infty (v+k)^{r_1} \frac{v^{r_2-1} (\lambda(1+u))^{r_2}}{\G(r_2)} e^{-\lambda(1+u)v} \,\mathrm{d}v \> , 
+ \e(Z_u+k)^{r_1} = \e Z_u^{r_1} = (\lambda(1+u))^{-r_1} \frac{\G(r_1+r_2)}{\G(r_2)} 
+ f_U(u) = \frac{\G(r_1+r_2)}{\G(r_1)\G(r_2)} u^{r_1 - 1} (1+u)^{-(r_1+r_2)} \> . 
+r_1 = n_1/2
+r_2 = n_2/2
+\lambda = 1/2
+\frac{X/n_1}{Y/n_2} = \frac{n_2}{n_1}\frac{X}{Y+k} \sim F(n_1,n_2)
+r_1
+\e(Z_u^i)
+ \e(Z_u+k)^{r_1} = \sum_{i=0}^{r_1} {r_1 \choose i} k^{r_1-i} \e(Z_u^i) \>, 
+Z=X/(Y+c)
+F_Z(x) = P( X/(Y+c) < x ) = P(X < Yx + cx)
+F_Z(x) = \int_0^\infty P(X < xy + cx) f_Y(y) \mathrm d y = \int_0^\infty F_X( x(y+c) ) f_Y(y) \mathrm d y
+x
+Z
+f_Z(x) = \int_0^\infty f_X( x(y+c) ) (y+c) f_Y(y) \mathrm d y
+f_Z(x) = \frac{1}{2^k \gamma(k/2)^2} \int_0^\infty [x(y + c)/2]^{k/2-1} \mathrm e^{-x(y+c)/2} y^{k/2-1} \mathrm e^{-y/2} \mathrm d y
+f_Z(x) = \frac{2^{\frac{1}{2}-k} c^{\frac{1}{2} (-1+k)} e^{\frac{1}{4} (c-c x)} \sqrt{\pi } (1+x)^{\frac{1}{2}-\frac{k}{2}} \text{BesselK}\left[\frac{1}{2} (-1+k),\frac{1}{4} c (1+x)\right] \text{Csc}\left[\frac{k \pi }{2}\right]}{\text{Gamma}\left[1-\frac{k}{2}\right] \text{Gamma}\left[\frac{k}{2}\right]^2}
+X
+Y
+k

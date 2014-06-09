@@ -1,0 +1,20 @@
+f:E^2\to\mathbb{R}
+f(x,y)=\begin{cases}\frac{xy}{|x|+|y|} &  , \ \text{if} \ (x,y)\ne(0,0)\\  0 &  , \ \text{if} \ (x,y)=(0,0). \end{cases}
+\frac{\partial f}{\partial x} = \begin{cases} \frac{y(|x|+|y|)\pm xy|y|}{(|x|+|y|)^2}, &  x>0\\   \frac{y(|x|+|y|)\pm xy|y|}{(|x|+|y|)^2}, & x<0. \end{cases}
+\frac{\partial f}{\partial y} = \begin{cases} \frac{x(|x|+|y|)\pm xy|x|}{(|x|+|y|)^2}, &  y>0\\   \frac{x(|x|+|y|)\pm xy|x|}{(|x|+|y|)^2}, & y<0. \end{cases}
+(x,y)\ne (0,0),
+\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}
+f
+(x,y)\ne (0,0)
+(x,y)=(0,0)
+\frac{xy}{|x|+|y|} \leq \frac{\max(x^2,y^2)}{\max(|x|,|y|)} \leq \max(|x|,|y|) \rightarrow 0
+x,y \rightarrow 0
+\lim \frac{f(h) - f(0) - Df(0) \cdot h}{h}
+h \equiv (h, 0)
+\lim \frac{f(h) - f(0) - Df(0) \cdot h}{h} = \lim -D_{1}f(0) = 0
+D_{1}f(0) = 0
+D_{2}f(0) = 0
+h \equiv (h, h)
+f(h,h) = |h|/2
+\lim \frac{f(h) - f(0) - Df(0) \cdot h}{|(h,h)|} = \lim \frac{|h|/2}{\sqrt{2}\cdot|h|} = \frac{1}{2\sqrt{2}} \neq 0
+f

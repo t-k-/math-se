@@ -1,0 +1,41 @@
+n
+n
+A
+v
+w
+n
+A
+v
+w
+-1
+1
+Av = Au
+\mathcal{F}
+n
+A
+\mathcal{F}
+\tilde{u}, \tilde{v}
+u, v \in \mathcal{F}
+u = (u_1, \ldots, u_n)
+v = (v_1, \ldots, v_n)
+\omega = ( \omega_1, \ldots, \omega_n )
+u, v, \omega
+\;\theta(u,v) = \left| \{ u_i \ne v_i : 1 \le i \le n \}\right|\;
+u
+v
+u_i = v_i
+i
+\omega^t (u - v) = 0
+\omega_i
+\omega^t(u - v) = 0
+i
+u_i \ne v_i
+i'
+\omega_{i'} = u_{i'}
+i''
+\omega_{i''} = v_{i''}
+\begin{align} \text{Prob}\left[\;A\tilde{u} = A\tilde{v} \mid A \in \mathcal{F}^n \;\right] &= \text{Prob}\left[\; \omega^t \tilde{u} = \omega^t \tilde{v} \mid \omega \in \mathcal{F} \;\right]^n\\ &= \text{Prob}\left[\; \omega^t (\tilde{u} - \tilde{v}) = 0   \mid \omega \in \mathcal{F} \;\right]^n \end{align} 
+\text{Prob}\big[\;\theta(u,v) = k \mid u, v \in \mathcal{F}\;\big] = 2^{-n}\binom{n}{k}
+\text{Prob}\big[\;\omega^t (u - v) = 0 \mid \theta(u, v) = k; u, v, \omega \in \mathcal{F}\;\big] = \begin{cases}2^{-k}\binom{k}{k/2},& k \text{ even }\\0,& k \text{ odd}\end{cases}
+\text{Prob}\big[\;A u = A v \mid \theta(u, v) = k; u, v \in \mathcal{F}, A \in \mathcal{F}^n\;\big] = \begin{cases} 2^{-nk}\binom{k}{k/2}^n,& k \text{ even }\\0,& k \text{ odd}\end{cases}
+\text{Prob}\big[\;A u = A v \mid u, v \in \mathcal{F}, A \in \mathcal{F}^n\;\big]  = \sum_{k=0}^{\lfloor n/2 \rfloor} 2^{-n(2k+1)} \binom{n}{2k}\binom{2k}{k}^n

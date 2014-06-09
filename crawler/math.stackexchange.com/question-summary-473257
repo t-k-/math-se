@@ -1,0 +1,42 @@
+k
+\mathbb P\Big( \max_{1\le k\le n} \Big | \frac{S_k}{\sqrt{k}} \Big | \ge t\Big) = \mathbb P\Big( \bigcup_k \Big\{ \Big|\frac{S_k}{\sqrt{k}} \Big | \ge t \Big\} \Big)
+I_Z
+Z= \Big( \bigcup_k \Big\{ \Big|\frac{S_k}{\sqrt{k}} \Big |\ge t \Big\} \Big)
+I_1,..., I_n
+\Big\{ \Big|\frac{S_1}{\sqrt{1}} \Big |\ge t \Big\},...\Big\{ \Big|\frac{S_n}{\sqrt{n}} \Big |\ge t \Big\} 
+I_Z =0
+I_i,\; i=1,...,n
+I_Z=1
+I_m
+v = \text{argmax}_k \Big | \frac{S_k}{\sqrt{k}} \Big |
+\Big | \frac{S_v}{\sqrt{v}} \Big |
+I_Z =1
+I_Z=\max\Big \{I_1,...,I_n\Big \}
+I_m =1 \Rightarrow \Big|\frac{S_m}{\sqrt{m}} \Big |\ge t 
+\Big | \frac{S_v}{\sqrt{v}} \Big |\ge \Big|\frac{S_m}{\sqrt{m}} \Big |\ge t
+I_Z=0
+I_Z=1
+h>0
+I_Z \le \exp \left \{h\left (\Big | \frac{S_v}{\sqrt{v}} \Big |-t\right) \right \}
+\mathbb P\Big( \max_{1\le k\le n} \Big | \frac{S_k}{\sqrt{k}} \Big | \ge t\Big) = \mathbb P\Big( \bigcup_k \Big\{ \Big|\frac{S_k}{\sqrt{k}} \Big | \ge t \Big\} \Big) = EI_Z \le E\exp \left \{h\left (\Big | \frac{S_v}{\sqrt{v}} \Big |-t\right) \right \}
+\Rightarrow \mathbb P\Big( \max_{1\le k\le n} \Big | \frac{S_k}{\sqrt{k}} \Big | \ge t\Big)   \le e^{-ht} E\exp \left \{h \Big | \frac{S_v}{\sqrt{v}} \Big | \right \} \qquad [1] 
+Y
+EY=0,\;a\le Y \le b
+\lambda
+ E\left (e^{\lambda Y} \right) \le \exp \left(\frac{\lambda ^2 (b-a)^2}{8} \right) \qquad [2]
+\Big | \frac{S_v}{\sqrt{v}} \Big | = \frac{1}{\sqrt{v}}\Big |X_1 +...+ X_v\Big | \le \frac{1}{\sqrt{v}}\Big (\Big |X_1 \Big | +...+ \Big | X_v\Big | \Big) \le \frac{1}{\sqrt{v}}v = \sqrt{v}
+v\le n
+b-a = \sqrt{n} -E\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big) + E\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big) = \sqrt{n} 
+\lambda = h 
+0\le \Big | \frac{S_v}{\sqrt{v}} \Big | \le \sqrt{n} \Rightarrow -E\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big) \le \Big | \frac{S_v}{\sqrt{v}} \Big | - E\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big) \le \sqrt{n} -E\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big) 
+ E\exp \Big \{h\Big | \frac{S_v}{\sqrt{v}} \Big | - hE\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big)\Big \} \le \exp \left(\frac{nh^2}{8} \right) 
+\Rightarrow E\exp \Big \{h\Big | \frac{S_v}{\sqrt{v}} \Big | \Big \} \le    \exp \left(\frac{nh^2}{8} \right)\exp\Big \{hE\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big)\Big \} \qquad [3]
+ \Big | \frac{S_v}{\sqrt{v}} \Big | \le \sqrt{n} \Rightarrow E\Big | \frac{S_v}{\sqrt{v}} \Big | \le \sqrt{n} \Rightarrow \exp\Big \{hE\Big(\Big | \frac{S_v}{\sqrt{v}} \Big |\Big)\Big \} \le \exp\Big \{h\sqrt{n}\Big \} \le \exp\Big \{h^2n\Big \} \; [4] 
+[4]
+[3]
+[1]
+h
+h^* = \frac {4}{9n}t
+[5]
+ \mathbb P\Big( \max_{1\le k\le n} \Big | \frac{S_k}{\sqrt{k}} \Big |\Big )= \mathbb P\Big( \Big | \frac{S_v}{\sqrt{v}} \Big | \ge t\Big) \le \exp \left(-ht +\frac{9nh^2}{8} \right) \qquad [5]
+ \mathbb P\Big( \max_{1\le k\le n} \Big | \frac{S_k}{\sqrt{k}} \Big |\Big )=\mathbb P\Big( \Big | \frac{S_v}{\sqrt{v}} \Big | \ge t\Big) \le \exp\Big \{-\frac{2}{9n}t^2\Big \}  \qquad [6] 

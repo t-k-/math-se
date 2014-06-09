@@ -1,0 +1,13 @@
+X = \pmatrix{-2 & -1 & 0 & 1 & 2 \\ .05 & .2 & .3 & .4 & .05} 
+F(X) =  \begin{cases} 0 & X \le -2 \\  .05 & -2 \le X < -1 \\  .25 & -1 \le X < 0 \\  .55 & 0 \le X < 1 \\  .95 & 1 \le X < 2 \\  1 & 2 \le X \end{cases} 
+ P(X > -2.1\ |\ X < 1.3) \\  
+ P(A|B) = \frac{P(B|A) \times P(A)}{P(B)} 
+P(A) = P(X > -2.1) = 1 - F(-2.1) = 1
+P(B) = P(X<1.3) = F(1.3) = \frac{95}{100}
+P(B|A)
+X
+[-2,2]
+X
+-2.1
+\mathbb{P}[X<1.3] \neq 0
+\mathbb{P}[X>-2.1|X<1.3]=1

@@ -1,0 +1,49 @@
+\sum_{n=2}^{\infty} (-1)^n \frac{\ln n}{n}=\gamma \ln 2- \frac{1}{2}(\ln 2)^2
+L=\lim_{n\to\infty} F(n)=\lim_{n\to\infty}\left[a_1+a_2+\cdots+a_n-\int_1^n\! f(x)\,\mathrm{d}x\right]
+\{a_n\}
+f(x)
+f(n)=a_n
+\gamma
+a_n=\frac{ 1}{n}
+L=\lim_{n\to\infty}\left[\frac{\ln 2}{2}+\frac{\ln 3}{3}+\cdots+\frac{\ln n}{n}-\int_2^n\! \frac{\ln x}{x}\,\mathrm{d}x\right]
+=\lim\left[\frac{ \ln 2}{2}+\cdots+\frac{ \ln n}{n}-\left.\frac{ \ln^2x}{2}\right|_2^n\right]
+\left(\frac{\ln^2n}{2}-\frac{\ln^2}{2}\right)+L+o(1)
+-S_{2n}=\frac{ -\ln 2}{2}+\frac{ \ln 3}{3}-\frac{\ln 4}{4}+\frac{\ln 5}{5}-\cdots
+=\frac{\ln 2}{2}+\frac{\ln 3}{3}+\cdots+\frac{\ln 2n}{2n}-2\left(\frac{\ln 2}{2}+\frac{\ln 4}{4}+\cdots+\frac{\ln 2n}{2n}\right)
+ \frac{\ln 2}{2}+\frac{\ln 4}{4}+\cdots+\frac{\ln 2n}{2n}=\frac{\ln 2}{2}+\frac{\ln 2 +\ln 2}{4}+\frac{\ln 2+\ln 3}{6}+\cdots+\frac{\ln 2+\ln n}{2n}
+=\frac{1}{2}\left(\ln 2\left(1+\frac{ 1}{2}+\cdots+\frac{ 1}{n}\right)+\left(\frac{ \ln 2}{2}+\frac{ \ln 3}{3}+\cdots+\frac{ \ln n}{n}\right)\right)
+-S_{2n}=\left(\frac{\ln 2}{2}+\cdots+\frac{ \ln 2n}{2n}\right)-\ln 2\left(1+\frac{ 1}{2}+\cdots+\frac{ 1}{n}\right)-\left(\frac{ \ln 2}{2}+\frac{ \ln 3}{3}+\cdots+\frac{ \ln n}{n}\right)
+=\frac{ \ln^2(2n)}{2}-\frac{ \ln^2 2}{2}+L+o(1)-\ln 2\left(\ln n +\gamma+o(1)\right)-\left(\frac{ \ln^2 n}{2}-\frac{ \ln^2 2}{2}+L+o(1)\right)
+=\frac{ (\ln 2 +\ln n)^2}{2}-(\ln 2)(\ln n)-\gamma\ln 2-\frac{ \ln^2 n}{2}+o(1)
+=\frac{ \ln^2 2}{2}+(\ln 2)(\ln n)+\frac{ \ln^2 n}{2}-(\ln 2)(\ln n)-\gamma \ln 2 - \frac{ \ln^2 n}{2}+o(1)
+-S_{2n}\to\frac{ \ln^2}{2}-\gamma\ln 2
+\sum_2^{\infty}(-1)^n \frac{ \ln n}{n}=\gamma\ln 2 -\frac{ \ln^2 2}{2}
+n
+f
+C^1
+[0, 1]
+n \to \infty
+H_n = \sum_{k=1}^{n} \frac{1}{k}
+ A_{r,n} = \sum_{k=1}^{n} \frac{1}{n} \frac{\left( \log ( 1 + \frac{k}{n} ) \right)^{r}}{1 + \frac{k}{n}}.
+ \sum_{k=1}^{2n} \frac{(-1)^{k} \log k}{k} = (H_n - \log n) \log 2 + (\log 2 - A_{0, n}) \log n - A_{1,n}.
+\lim_{n\to\infty} n \left( \sum_{k=1}^{n} f\left( \frac{k}{n}\right) \frac{1}{n} - \int_{0}^{1} f(x) \; dx \right) = \frac{f(1) - f(0)}{2}.
+ \sum_{k=1}^{\infty} \frac{(-1)^{k} \log k}{k} = \gamma \log 2 - \frac{1}{2} (\log 2)^{2}.
+ \sum_{k=1}^{2n} \frac{(-1)^{k} \log k}{k} = \sum_{k=1}^{n} \frac{\log (2k)}{k} - \sum_{k=1}^{2n} \frac{\log k}{k},
+ \frac{\ln(2k)}{2k} - \frac{\ln(2k+1)}{2k+1}
+\kappa(s)=\sum_{n=2}^{\infty} \frac{(-1)^{n+1}\ln n}{n^s}
+s=1
+s\geq 1
+s>1
+\kappa(s)
+\psi'(s)= \kappa(s)
+\psi(s)=\sum_{n=1}^{\infty} (-1)^{n+1} \frac{1}{n^s}
+\psi'(1+)
+\phi(s)=(1-2^{1-s})\zeta(s)
+\zeta(s)
+\gamma = \lim_{s\rightarrow 1+} \zeta(s) - \frac{1}{s-1}
+\zeta(s)=\gamma+\left(\frac{1}{s-1}\right)+O({s-1})
+1- 2^{1-s}=1-e^{\ln 2^{1-s}}=(s-1) \ln 2 - \frac{(s-1)^2 \ln ^2 2 }{2} + \cdots
+s\rightarrow 1^+
+\displaystyle 1-2^{1-s}=(s-1) \ln 2 - \frac{(s-1)^2 \ln ^2 2 }{2}+O(s^3)
+\psi(s)=(1-2^{1-s})\zeta(s)=\left((s-1) \ln 2 - \frac{(s-1)^2 \ln ^2 2 }{2}+ O(s^3)\right)\left(\gamma+\left(\frac{1}{s-1}\right)+O({s-1})\right)
+s\rightarrow 1^+

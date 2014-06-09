@@ -1,0 +1,32 @@
+f
+C^1
+\mathbb{R} \to \mathbb{R}
+f,f' \in C_0(\mathbb{R}) \cap L^1(\mathbb{R})
+g_h(t) = (1/h)(f(t+h)- f(t))
+h \neq 0
+g_h \to f'
+h \to 0
+g_h \overset{L^1}{\to} f'
+g \colon \mathbb{R} \to \mathbb{R}
+\tau_tg (x) = g(x+t)
+t \in \mathbb{R}
+\tau_t
+L^1(\mathbb{R})
+f \in C_c(\mathbb{R})
+\lim\limits_{t\to 0} \lVert \tau_t f - f\lVert_1 = 0
+\{\tau_t : t\in \mathbb{R}\}
+\lim\limits_{t\to 0} \lVert \tau_t f - f\lVert_1 = 0
+f \in L^1(\mathbb{R})
+L^1
+h > 0
+g \in L^1
+\mu_h(g)(x) := \frac{1}{h}\int_0^h g(x+t)\,dt
+h
+g
+\begin{align} \lVert \mu_h(g) - g\rVert_1 &= \int_\mathbb{R} \lvert \mu_h(g)(x) - g(x)\rvert \,dx\\ &= \frac{1}{h}\int_\mathbb{R} \left\lvert \int_0^h g(x+t)-g(x)\,dt\right\rvert\,dx\\ &\leqslant \frac{1}{h} \int_\mathbb{R}\int_0^h \lvert g(x+t) - g(x)\rvert\,dt\,dx\\ &= \frac{1}{h} \int_0^h \int_\mathbb{R} \lvert g(x+t)-g(x)\rvert\,dx\,dt\\ &= \frac{1}{h}\int_0^h \lVert \tau_t g - g\rVert_1\,dt \end{align}
+0
+h\to 0
+\tau_t
+\lim\limits_{h \to 0} \lVert \mu_h(g) - g\rVert_1 = 0
+\frac{f(x+h) - f(x)}{h} = \frac{1}{h} \int_0^h f'(x+t)\,dt = \mu_h(f')(x),
+L^1

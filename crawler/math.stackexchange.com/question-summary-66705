@@ -1,0 +1,41 @@
+\theta =
+\phi =
+R
+(\theta, \phi)
+\theta, \ln(\tan(\phi/2 + \pi/4))
+(\theta_0, \phi_0)
+\alpha
+\theta = \theta_0 - t \sin(\alpha)
+\ln(\tan(\phi/2 + \pi/4)) = \ln(\tan(\phi_0/2 + \pi/4)) + t \cos(\alpha)
+\phi = 2 \arctan \left( e^{t \cos(\alpha)} \tan(\phi_0/2 + \pi/4) \right)
+(\theta_0, \phi_0)
+\theta_1, \phi_1)
+R \sec(\alpha) (\phi_1 - \phi_0)
+d
+\phi_1 = \phi_0 + \frac{d}{R} \cos(\alpha)
+t = \sec(\alpha) \ln \left( \frac{\tan(\phi_1/2 + \pi/4)}{\tan(\phi_0/2 + \pi/4)}\right)
+\theta_1 = \theta_0 - \tan(\alpha) \ln \left( \frac{\tan(\phi_1/2 + \pi/4)}{\tan(\phi_0/2 + \pi/4)}\right)
+\mathrm ds
+\alpha
+\alpha=0°
+\alpha=90°
+\mathrm ds\cdot\sin\alpha
+x
+\mathrm ds\cdot\cos\alpha
+y
+\begin{pmatrix}\mathrm dx\\\mathrm dy\end{pmatrix} = \mathrm ds\cdot\begin{pmatrix}\sin\alpha\\\cos\alpha\end{pmatrix}
+\phi
+\lambda
+R
+y
+\cos\phi
+\phi
+\begin{pmatrix}\mathrm dx\\\mathrm dy\end{pmatrix} = \mathrm ds\cdot\begin{pmatrix}\sin\alpha\\\cos\alpha\end{pmatrix} = R\cdot\begin{pmatrix} \cos\phi\cdot\mathrm d\lambda \\ \mathrm d\phi \end{pmatrix}
+\phi(t) = \phi_0+\int_0^t\frac{\cos\alpha}R\,\mathrm ds = \phi_0 + \frac tR\cos\alpha
+\phi
+\lambda(t) = \lambda_0 + \int_0^t\frac{\sin\alpha}{R\cdot\cos\big(\phi(s)\big)}\,\mathrm ds = \lambda_0 + \int_0^t\frac{\sin\alpha}{R\cdot\cos\big(\phi_0+\frac sR\cos\alpha\big)}\,\mathrm ds
+\int\frac{\sin(\alpha)}{R\,\cos\left(\phi_0+\frac{s\,\cos(\alpha)}{R}\right)}\,\mathrm ds =\\ \tan(\alpha)\left(\log\left(\cos\left(\frac{R\,\phi_0+s\,\cos(\alpha)}{2\,R}\right)+\sin\left(\frac{R\,\phi_0+s\,\cos(\alpha)}{2\,R}\right)\right)\\-\log\left(\cos\left(\frac{R\,\phi_0+s\,\cos(\alpha)}{2\,R}\right)-\sin\left(\frac{R\,\phi_0+s\,\cos(\alpha)}{2\,R}\right)\right)\right)+C
+\beta=\frac{R\,\phi_0+s\,\cos(\alpha)}{2\,R}=\frac{\phi(s)}2
+ \tan\alpha\cdot\log\frac{\cos\beta+\sin\beta}{\cos\beta-\sin\beta}+C 
+ \frac{\cos\beta+\sin\beta}{\cos\beta-\sin\beta} = \tan\left(\beta+\frac\pi4\right) 
+\tan\alpha\cdot\log\left(\tan\left(\frac{\phi(s)}{2}+\frac\pi4\right)\right)+C

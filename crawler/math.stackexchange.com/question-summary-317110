@@ -1,0 +1,6 @@
+\lim_{n\to\infty}\left(\frac{\prod_{k=1}^{n}\displaystyle\frac{n^2+k}{n^2-k}}{e}\right)^n
+P=\lim_{n\to\infty}\left(\frac{\prod_{k=1}^{n}\displaystyle\frac{n^2+k}{n^2-k}}{e}\right)^n
+\begin{align}\log{P} &= \lim_{n\to\infty} n \left[-1 + \sum_{k=1}^n \log{\left ( \frac{n^2+k}{n^2-k} \right ) }\right ]\\ &=  \lim_{n\to\infty} n \left[-1 + \sum_{k=1}^n \left \{ \log{\left ( 1 + \frac{k}{n^2} \right )} - \log{\left ( 1 - \frac{k}{n^2} \right )} \right \}\right ]\\ &= \lim_{n\to\infty} n \left[-1 + \frac{2}{n^2}\sum_{k=1}^n k\right ]\\ &= \lim_{n\to\infty} n \left[-1 + \frac{2}{n^2} \frac{n (n+1)}{2} \right]\\ &= 1\end{align}
+\log{(1\pm y)} \sim \pm y
+y \rightarrow 0
+\therefore P=e

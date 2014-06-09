@@ -1,0 +1,15 @@
+ \frac {1 + \Theta(\frac 1 {2n})} {(1 + \Theta(1/n))^2} = 1 + O(1 / n) 
+ \binom {2n} n = \frac {2 ^ {2n}} {\sqrt {\pi n}} (1 + O(1 / n)) 
+ n! = \sqrt {2\pi n} \left(\frac n e\right)^n \left(1 + \Theta({\frac 1 n})\right).
+Bx\le\Theta(x)\le Cx
+\Theta
+ \begin{align} \frac{1+\Theta(\frac{1}{2n})}{(1+\Theta(\frac{1}{n}))^2} &\le\frac{1+\frac{C}{2n}}{(1+\frac{B}{n})^2}\\ &=(1+\frac{C}{2n})(1-2\frac{B}{n}+O(\frac{1}{n^2}))\\ &=(1+(\frac{C}{2}-2B)\frac{1}{n}+O(\frac{1}{n^2}))\\ &=1+O(\frac{1}{n}) \end{align} 
+ \begin{align} \frac{1+\Theta(\frac{1}{2n})}{(1+\Theta(\frac{1}{n}))^2} &\ge\frac{1+\frac{B}{2n}}{(1+\frac{C}{n})^2}\\ &=(1+\frac{B}{2n})(1-2\frac{C}{n}+O(\frac{1}{n^2}))\\ &=(1+(\frac{B}{2}-2C)\frac{1}{n}+O(\frac{1}{n^2}))\\ &=1+O(\frac{1}{n}) \end{align} 
+1 + \Theta(\frac{1}{2n}) = 1 + \Theta(\frac{1}{n})
+\left(1 + \Theta(\frac{1}{n})\right)^2 = 1 + \Theta(\frac{1}{n}) + \Theta(\frac{1}{n^2}) = 1 + \Theta(\frac{1}{n})
+1
+O(\frac{1}{n})
+O(1)
+\frac {1 + \Theta(\frac{1}{2n})} {\left(1 + \Theta(\frac{1}{n})\right)^2} = \frac{1 + \Theta(\frac{1}{n})}{1 + \Theta(\frac{1}{n})} = 1 + \frac{O(\frac{1}{n})}{1 + \Theta(\frac{1}{n})} = 1 + O\left(\frac{1}{n}\right),
+\Theta(\frac{1}{2n}) = \Theta(\frac{1}{n})
+\frac{1}{2}

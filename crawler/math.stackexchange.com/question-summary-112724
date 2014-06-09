@@ -1,0 +1,21 @@
+X
+Y
+n \times n
+ X = \left[\begin{matrix} A & B\\ C & D \end{matrix}\right],  Y = \left[\begin{matrix} E & F\\ G & H \end{matrix}\right] 
+n/2 \times n/2
+XY
+ XY = Z = \left[\begin{matrix} AE + BG & AF + BH\\ CE + DG & CF + DH \end{matrix}\right] 
+Z_{ij} = \sum_{k=1}^n X_{ik} Y_{kj}
+Z_{ij}
+Z
+n
+ Z_{1,1} = \sum_{k=1}^n X_{1,k}Y_{k,1} = \sum_{k=1}^{n/2}X_{1,k}Y_{k,1} + \sum_{k=n/2+1}^{n} X_{1,k}Y_{k,1} =\\ \sum_{k=1}^{n/2} A_{1,k}E_{k,1} + \sum_{k=1}^{n/2} B_{1,k}G_{k,1} = (AE)_{1,1} + (BG)_{1,1} 
+\mathbb{R}^n
+\mathbb{R}^{n/2} \times \mathbb{R}^{n/2}
+X: \mathbb{R}^n \rightarrow \mathbb{R}^n
+\mathbb{R}^{n/2} \rightarrow \mathbb{R}^{n/2}
+ X: (v, w) \mapsto (Av + Bw, Cv + Dw). 
+ Y: (v, w) \mapsto (Ev + Fw, Gv + Hw). 
+X \circ Y
+v
+w

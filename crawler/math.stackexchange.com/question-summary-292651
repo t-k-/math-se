@@ -1,0 +1,83 @@
+9<n<100
+n^2
+n
+n(n-1)=n^2-n\equiv0\pmod{100}
+\gcd(n,n-1)=1
+n
+n-1
+4
+25
+(1)
+n=4x
+n-1=25y
+(2)
+n=25y
+n-1=4x
+ \begin{align} 4x-25y=+1\tag{1}\\ 4x-25y=-1\tag{2} \end{align} 
+(1)
+(x,y)=(-6+25k,-1+4k)
+(2)
+(6+25k,1+4k)
+4x
+25y
+9
+99
+(19,3)
+(6,1)
+(19,3)
+(1)
+n=4x=76
+76^2=5776\equiv76\pmod{100}
+(6,1)
+(2)
+n=25y=25
+25^2=625\equiv25\pmod{100}
+25
+76
+n^2\equiv n\equiv{100}\iff 100\mid n(n-1)
+(n.n-1)=1
+100=2^25^2
+100\mid n\implies n=100k
+k\ge0
+0<100k<100\implies 0<k<1
+100\mid (n-1)\implies n=100k+1
+k\ge0
+0<100k+1<100\implies 0<k<1
+4\mid n
+25\mid (n-1)
+n\equiv0\pmod 4
+n\equiv1\pmod{25}
+n\equiv0\cdot b_1\cdot\frac{25\cdot4}4+1\cdot b_2\cdot\frac{25\cdot4}{25}\pmod{100}\equiv4b_1\pmod{100}
+b_1\cdot\frac{25\cdot4}4\equiv1\pmod4
+b_2\cdot\frac{25\cdot4}{25}\equiv1\pmod{25}
+b_1
+0
+4b_2\equiv1\pmod{25}\implies b_2\equiv4^{-1}\pmod{25}
+\frac61\implies 25\cdot1-4\cdot6=1\implies 4^{-1}\equiv-6\pmod{25}
+\implies b_2\equiv(-6)\pmod{25}\implies x\equiv4(-6)\pmod{100}\equiv-24
+n=4d,n-1=25e\implies 4d-25e=1
+\implies 25e=4d-1 \implies 25(e+1)=4(d+6)\implies \frac{4(d+1)}{25}=e+1
+25\mid(d+6)
+(25,4)=1
+\implies d=25f-6
+f
+\implies n=4d=4(25f-6)=100f-24
+(a)
+(b),
+9<100f-24<100\implies  1\le f<2\implies f=1\implies n=76
+4\mid (n-1)
+25\mid n\implies n-1=4a,n=25b\implies 25b-4a=1
+(a),(b)
+n=100c+25 
+9<100c+25<100\implies  0\le c<1\implies c=0\implies n=25
+4,25,
+\rm\,p, q\,
+\rm\,n,n\!-\!1\,
+\rm pq\,|\,n(n\!-\!1)\ \Rightarrow\ p\,|\,n\ \ or\ \ p\,|\,n\!-\!1\ \ \ and\ \ \ q\,|\,n\ \ or\ \ q\,|\,n\!-\!1
+4
+\rm\: n \equiv (a,b)\,\ (mod\ p,q)\:
+\rm\:n\equiv a\,\ (mod\ p),\ n\equiv b\,\ (mod\ q)
+\begin{eqnarray}\rm p,q\,|\,n &\iff&\,\rm n \equiv (0,0)\ \ (mod\ p,q)\\ \rm p,q\,|\,n\!-\!1 &\iff&\,\rm n \equiv (1,1)\ \ (mod\ p,q)\\ \rm p\,|\,n,q\,|\,n\!-\!1 &\iff&\,\rm n \equiv (0,1)\ \ (mod\ p,q)\\ \rm p\,|\,n\!-\!1,q\,|\,n &\iff&\,\rm n \equiv (1,0)\ \ (mod\ p,q)\\ \end{eqnarray}
+\rm\ mod\ pq\!:\ (0,0) \equiv 0,\:
+\rm\:(1,1)\equiv 1,\:
+\rm\begin{eqnarray}(1,0) \!&\equiv&\rm\, q(q^{-1}\ mod\ p)\,\ (mod\ pq)\ [\equiv 25(25^{-1}\ mod\ 4)\equiv \color{#C00}{25}\,\ (mod\ 100)\ \ if\ \ p,q = 4,25]\\ \\ \Rightarrow\ \ \rm (0,1)\! &\equiv& (1,1)-(1,0)\:[\equiv 1-25\equiv -24 \equiv \color{#C00}{76}]\end{eqnarray}

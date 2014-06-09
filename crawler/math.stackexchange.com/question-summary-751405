@@ -1,0 +1,21 @@
+N
+n
+\mathrm{Var}(\bar{y})=\frac{1}{n}\left(1-\frac{n}{N}\right)S^2
+S^2
+I_i =1
+y_i
+I_i=0
+\bar{y}  =  \frac{1}{n}\sum_{i=1}^{n}y_i   =  \frac{1}{n}\sum_{i=1}^{N}y_i I_i
+\mathrm{Var}(\bar{y})=\mathrm{Cov}(\bar{y},\bar{y}) = \mathrm{Cov}\left(\frac{1}{n}\sum_{i=1}^{N}y_iI_i, \frac{1}{n}\sum_{j=1}^{N}y_jI_j\right).
+\mathrm{Var}(\bar{y})=\frac{1}{n^2}\left(\sum_{i=1}^{N}\sum_{j=1}^{N}y_iy_j\right)\mathrm{E}\left(I_iI_j-\mathrm{E}(I_i)I_j-I_i \mathrm{E}(I_j)+\mathrm{E}(I_i) \mathrm{E}(I_j) \right).
+i
+j
+\binom{N-2}{n-2}
+i
+j
+i\neq j
+\mu=\frac{1}{N}\sum\limits_{i=1}^N y_i
+ \mathrm{Var}(\bar{y})=\frac{1}{n^2}\left[\sum_{i=1}^ny_i^2\mathrm{Var}(I_i)+\sum_{i=1}^n\sum_{j=1,j\neq i}^ny_iy_j\mathrm{Cov}(I_i,I_j)\right]. 
+ {\rm E}[I_iI_j]=P(I_i=1,I_j=1)=\frac{\binom{N-2}{n-2}}{\binom{N}{n}}\frac{n(n-1)}{N(N-1)}. 
+ \mathrm{Cov}(I_i,I_j)={\rm E}[I_iI_j]-{\rm E}[I_i]{\rm E}[I_j]=\frac{n(n-1)}{N(N-1)}-\left(\frac{n}{N}\right)^2=-\frac{n(1-n/N)}{N(N-1)} 
+ \begin{align} \mathrm{Var}(\bar{y})&=\frac{1}{n^2}\left[\sum_{i=1}^n y_i^2\frac{n}{N}\left(1-\frac{n}{N}\right)-\sum_{i=1}^n\sum_{j\neq i}y_iy_j\frac{n(1-n/N)}{N(N-1)}\right]\\ &=\frac{1}{n}\left(1-\frac{n}{N}\right)\frac{1}{N}\left[\sum_{i=1}^n y_i^2-\frac{1}{N-1}\sum_{i=1}^n\sum_{j\neq i}y_iy_j\right]\\ &=\frac{1}{n}\left(1-\frac{n}{N}\right)\frac{1}{N-1}\sum_{i=1}^n (y_i-\mu)^2\\ &=\left(1-\frac{n}{N}\right)\frac{S^2}{n}, \end{align} 

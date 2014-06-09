@@ -1,0 +1,16 @@
+R_{ijkl;m} + R_{ijlm;k} + R_{ijmk;l} = 0.
+X
+Rc
+(\text{div}Rc)(X) = (\text{tr}_g\nabla Rc)(X),
+\frac{1}{2}(\nabla S)(X) = \frac{1}{2}\nabla_XS = \frac{1}{2}\nabla_X(\text{tr}_gRc) = \frac{1}{2}\text{tr}_g(\nabla_XRc).
+(\text{tr}_g\nabla Rc)(X) = \frac{1}{2}\text{tr}_g(\nabla_XRc),
+(M,\langle \cdot, \cdot \rangle)
+\nabla
+\text{Ric}
+(1,1)
+\text{Ric}(v) = \sum R(v,e_i)e_i
+\{e_i\}
+S
+S = \text{tr}(\text{Ric}) = \sum \langle \text{Ric}(e_i), e_i \rangle
+\nabla S = dS
+\begin{align*} dS(X)(p) = XS(p) & = X \sum \langle \text{Ric}(E_i), E_i \rangle \\ & = X \sum \langle R(E_i, E_j)E_j, E_i\rangle \\ & = \sum \langle \nabla_X [R(E_i, E_j)E_j], E_i \rangle \\ & = \sum \langle (\nabla_X R)(E_i, E_j)E_j, E_i \rangle \\ & = -\sum \langle (\nabla_{E_j}R)(X, E_i)E_j, E_i \rangle - \sum \langle (\nabla_{E_i}R)(E_j,X)E_j, E_i \rangle \\ & = -\sum (\nabla_{E_j}R)(X, E_i, E_j, E_i) - \sum (\nabla_{E_i}R)(E_j, X, E_j, E_i) \\ & = \sum (\nabla_{E_j}R)(E_j, E_i, E_i, X) + \sum (\nabla_{E_j} R)(E_i, E_j, E_j, X) \\ & = 2 \sum (\nabla_{E_j}R)(E_j, E_i, E_i, X) \\ & = 2 \sum \nabla_{E_j}(R(E_j, E_i, E_i, X) \\ & = 2 \sum \nabla_{E_j} \langle \text{Ric}(E_j), X \rangle \\ & = 2 \sum \nabla_{E_j} \langle \text{Ric}(X), E_j \rangle \\ & = 2 \sum \langle \nabla_{E_j}(\text{Ric}(X)), E_j) \rangle \\ & = 2 \sum \langle (\nabla_{E_j}\text{Ric})(X), E_j \rangle \\ & = 2\,\text{div}(\text{Ric})(X)_p. \end{align*}

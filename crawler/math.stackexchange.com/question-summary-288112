@@ -1,0 +1,28 @@
+\newcommand{\var}{\operatorname{var}}
+X_1,X_2,X_3
+x\le \theta
+ f(x\mid \theta) = \begin{cases} {e^{-(x-\theta)}}  & \text{for } x>\theta\\[10pt] 0 &\text{for $x\le \theta$} \end{cases} 
+\theta
+\hat\theta_1=X_3-1
+\hat\theta_2=Y_1=\min\{X_1,X_2,X_3\}
+\hat\theta_3 = {1\over3}(X_1+X_2+X_3)-1
+E(\hat\theta_i)
+\operatorname{Var}(\hat\theta_i)
+i=1,2,3
+\theta
+E(\hat\theta_1)=\theta,\quad  E(\hat\theta_2)=\theta+1, \quad E(\hat\theta_3)=\theta
+\var(\hat\theta_1)=e, \quad \var(\hat\theta_2)={5\over9},\quad \var(\hat\theta_3)={1\over3}
+\hat\theta_2
+\hat\theta_3
+{d \over d\theta}\ln L(\theta)=3
+L(\theta)
+\hat\theta=Y_1=\min\{X_1,X_2,X_3\}
+\hat\theta_2
+\newcommand{\var}{\operatorname{var}}
+\hat\theta_3
+\hat\theta_1
+1
+\var\hat\theta_2=\dfrac19
+x\ge\theta
+\Pr(\min>x)=\Pr(X_1>x\ \&\ X_2>x\ \&\ x_3>x)=(\Pr(X_1>x))^3 = (e^{\theta-x})^3 =e^{3(\theta-x)}.
+f_\min(x)=\frac{d}{dx}\Pr(\min\le x)=\frac{d}{dx}(1-e^{3(\theta-x)}) = 3e^{3(\theta-x)}\text{ for }x>\theta.

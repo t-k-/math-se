@@ -1,0 +1,20 @@
+k
+\sum_{i=0}^{k} \dfrac{\dbinom{r}{i} \cdot \dbinom{n - r}{k - i}}{\dbinom{n}{k}} \cdot i = \dfrac{r}{n} \cdot k
+LHS = \sum_{i=0}^{k + 1} \dfrac{\dbinom{r}{i} \cdot \dbinom{n - r}{k + 1 - i}}{\dbinom{n}{k + 1}} \cdot i
+ = \sum_{i=0}^{k} \dfrac{\dbinom{r}{i} \cdot \dbinom{n - r}{k - i}}{\dbinom{n}{k}} \cdot i  			+ \dfrac{\dbinom{r}{k + 1} \cdot \dbinom{n - r}{k + 1 - (k + 1)}}{\dbinom{n}{k+1}} \cdot (k + 1)
+ = \dfrac{rk}{n} + \dfrac{\dbinom{r}{k + 1} \cdot \dbinom{n - r}{0}}{\dbinom{n}{k+1}} \cdot (k + 1)
+ = \dfrac{rk}{n} + \dfrac{\dbinom{r}{k + 1}}{\dbinom{n}{k+1}} \cdot (k + 1)
+\dfrac{\dbinom{r}{k + 1}}{\dbinom{n}{k + 1}}
+k + 1 \leq r \leq n
+X_i = 1
+i
+E[Y] = \sum_{i=1}^k E[X_i] = \sum_{i=1}^k P(X_i \text{ is red}) = \sum_{i=1}^k \frac{r}{n} = \frac{kr}{n}.
+k-1
+n-1
+r-1
+i
+i
+1
+\begin{align} \sum_{i=0}^{k} \dfrac{\dbinom{r}{i} \dbinom{n - r}{k - i}}{\dbinom{n}{k}} i &= \sum_{i=1}^{k} \frac{r! k! (n-k)!}{(i-1)! (r-i)!  n!} \binom{n-r}{k-i} \\ &= \frac{kr}{n} \sum_{i=1}^{k} \frac{(r-1)! (k-1)! (n-k)!}{(i-1)! (r-i)!  (n-1)!} \binom{n-r}{k-i} \\ &= \frac{kr}{n} \sum_{i=1}^{k} \frac{\dbinom{r-1}{i-1} \dbinom{n-r}{k-i}}{\dbinom{n-1}{k-1}} \\ &= \frac{kr}{n} \sum_{i=0}^{k-1} \frac{\dbinom{r-1}{i} \dbinom{(n-1)-(r-1)}{k-1-i}}{\dbinom{n-1}{k-1}} \\ &= \frac{kr}{n}, \end{align}
+\dfrac{\dbinom{r}{i} \dbinom{n - r}{k+1 - i}}{\dbinom{n}{k+1}}i,
+\dfrac{\dbinom{r}{i} \dbinom{n - r}{k - i}}{\dbinom{n}{k}}i.

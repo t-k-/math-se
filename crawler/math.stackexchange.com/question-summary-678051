@@ -1,0 +1,37 @@
+u_k(n) = \sum_{i=1}^n w_k(i)
+w_k(i)
+k
+i!
+w_k(n)
+v_k(p)
+k
+p.
+u_k(n) = \sum_{q=1}^n w_k(q).
+u_k(n) = \sum_{q=1}^n \sum_{p=1}^q v_k(p)
+k
+k
+k
+k
+m
+r
+r
+m^r|k
+u_k(n) = w_k(n) + \sum_{q=1}^{n-1} \sum_{p=1}^q v_k(p).
+w_k(n) =  \sum_{p=1}^n v_k(p) = \sum_{m=1}^{\lfloor \log_k n \rfloor} \lfloor n/k^m \rfloor \le n \sum_{m=1}^{\lfloor \log_k n \rfloor} 1/k^m = \frac{n}{k} \frac{1-1/k^{\lfloor \log_k n \rfloor}}{1-1/k} \\= \frac{n}{k-1} (1-1/k^{\lfloor \log_k n \rfloor}).
+w_k(n) =  \sum_{p=1}^n v_k(p) = \sum_{m=1}^{\lfloor \log_k n \rfloor} \lfloor n/k^m \rfloor \ge \sum_{m=1}^{\lfloor \log_k n \rfloor} (n/k^m-1) \\ = \frac{n}{k-1} (1-1/k^{\lfloor \log_k n \rfloor})- \lfloor \log_k n \rfloor.
+w_k(n) \sim \frac{n}{k-1}
+u_k(n) \sim \frac{1}{k-1} \sum_{q=1}^n q = \frac{1}{2} \frac{1}{k-1} n (n+1).
+u_k(n) \sim \frac{1}{2} \frac{1}{m-1} \frac{1}{r} n (n+1).
+k
+L_k(s)
+s=1
+s=0
+s=-1
+\frac{2\pi i q}{\log k}
+q
+s=1
+u_k(n) = w_k(n) + \frac{n}{2\pi i} \int_{c-i\infty}^{c+i\infty} L_k(s) n^s \frac{ds}{s(s+1)}
+L_k(s) = \sum_{q\ge 1} \frac{v_k(q)}{q^s}.
+L_k(s) = \prod_p \frac{1}{1-1/p^s} \times (1-1/k^s) \times \sum_{q\ge 0} \frac{q}{k^{qs}}
+L_k(s) = \zeta(s) \times (1-1/k^s) \times \frac{1/k^s}{(1-1/k^s)^2} = \zeta(s) \frac{1/k^s}{1-1/k^s} = \zeta(s) \frac{1}{k^s-1}.
+n\times \frac{1}{k-1} \times n \times \frac{1}{1\times 2} = \frac{1}{2} \frac{1}{k-1} n^2.

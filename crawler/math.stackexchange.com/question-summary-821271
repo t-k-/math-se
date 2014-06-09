@@ -1,0 +1,46 @@
+(y_1, ..., y_n)
+y_i \in \mathbb{R}^p
+V
+p \times q
+q
+\min_{V} \sum^N_{i=1} || y_i - V V^T y_i ||^2
+p-q
+YY^T
+V
+VV^Ty
+y
+V
+y-VV^Ty
+y
+V
+p=q
+y^W
+y
+W
+||y-VV^Ty||=||y^W||
+W
+V
+W
+p-q
+w_i,\dots,w_{p-q}
+W
+\min_V=\sum_i||y_i-VV^Ty_i||^2=\min_W\sum_i||y_i^W||^2
+||y^W||^2=\sum_j\langle y,w_j\rangle^2=\sum_j\langle y\langle y,w_j\rangle,w_j\rangle
+Y
+y_i
+YY^Tw_j=\sum_iy_i\langle y_i,w_j\rangle
+\sum_i||y_i^W||^2=\sum_{i,j}\langle y_i\langle y_i,w_j\rangle,w_j\rangle=\sum_j\langle\sum_i y_i\langle y_i,w_j\rangle,w_j\rangle=\sum_j\langle YY^Tw_j,w_j\rangle
+\min_{w_1,\dots,w_{p-q}}\sum_j\langle Aw_j,w_j\rangle
+A=YY^T
+p-q
+A
+A=YY^T
+A
+\langle Ax,x\rangle=\langle Y^Tx,Y^Tx\rangle
+\lambda_1\leq\lambda_2\leq\dots\leq\lambda_p
+A
+p-q
+A=YY^T
+\lambda_1+\dots+\lambda_{p-q}
+YY^T
+Y

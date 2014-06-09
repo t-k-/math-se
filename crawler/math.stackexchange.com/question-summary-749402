@@ -1,0 +1,40 @@
+\mathbb{R}^3
+A \in \mathbb{R}^{3 \times 3}
+\mathop{\rm tr}(A) := \sum_{i=1}^3 a_{ii} = 0
+x,y \in \mathbb{R}^3
+e_i
+i
+\text{tr}(A)=0
+x,y
+A
+B
+\mathbb{R}^3
+v \in \mathbb{R}^{3 \times 1}
+e_i
+i=1,2,3
+v \times e_i = C_i v
+C_i
+C_i^T = - C_i
+ C_1 = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & -1 & 0 \end{bmatrix}, \quad C_2 = \begin{bmatrix} 0 & 0 & -1 \\ 0 & 0 & 0 \\ 1 & 0 & 0 \end{bmatrix}, \quad C_3 = \begin{bmatrix} 0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} 
+e_i \times y = -(y \times e_i)
+ \begin{split} x^T A y &= \sum_{i=1}^3 (x \times e_i)^T A^T (e_i \times y) = - \sum_{i=1}^3 (x \times e_i)^T A^T (y \times e_i) = - \sum_{i=1}^3 (C_i x)^T A^T (C_i y) \\ &= - \sum_{i=1}^3 x^T \underbrace{C^T_i}_{ = - C_i} A^T C_i y = \sum_{i=1}^3 x^T C_i A^T C_i y = x^T \underbrace{\left( \sum_{i=1}^3 C_i A^T C_i \right)}_{=B} y \end{split} 
+B
+ x^T A y = x^T B y \iff x^T(A-B)y = 0 
+x,y \in \mathbb{R}^{3 \times 1}
+A-B=\mathbf{O}
+\mathbf{O}
+I_3
+A-B=\mathbf{O} \Longrightarrow \text{tr}(A - B)=0
+(*)
+D=A-B
+ \sum_{i=1}^3 C_i^2 = -2 I_3 
+ (*) \quad \text{tr}(B) = -2 \text{tr}(A) 
+ \text{tr}(D) = 3 \text{tr}(A) 
+\text{tr}(A)=0
+ a_{ij} = b_{ij} \quad \forall i \neq j 
+B
+A
+A
+D = A - B
+A
+ D = \begin{bmatrix} \text{tr}(A) & 0 & 0 \\ 0 & \text{tr}(A) & 0 \\ 0 & 0 & \text{tr}(A) \end{bmatrix} = \text{tr}(A) I_3 

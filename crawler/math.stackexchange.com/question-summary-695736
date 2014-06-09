@@ -1,0 +1,21 @@
+f
+E^2
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)
+\{(x,y)\in E^2 : x\in[a,b], \ y\in[c,d]\}
+f
+\int^b_a\left(\int^d_c\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)dy\right)dx=\int^b_a\left(\int^d_c\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)dy\right)dx.
+\begin{align} \int_a^b \left(\int_c^d \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)(x,y)\,dy\right)\,dx &= \int_a^b \left(\frac{\partial f}{\partial x}(x,d) - \frac{\partial f}{\partial x}(x,c)\right)\,dx\\ &= \bigl( f(b,d) - f(a,d)\bigr) - \bigl( f(b,c) - f(a,c)\bigr)\tag{1} \end{align}
+\frac{\partial}{\partial y} \left(\frac{\partial f}{\partial x}\right)
+\frac{\partial f}{\partial x}
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)
+\begin{align} \int_a^b \left(\int_c^d \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)(x,y)\,dy\right)\,dx &= \int_c^d \left(\int_a^b \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)(x,y)\,dx\right)\,dy\\ &= \int_c^d \left(\frac{\partial f}{\partial y}(b,y) - \frac{\partial f}{\partial y}(a,y)\right)\,dy\\ &= \bigl( f(b,d) - f(b,c)\bigr) - \bigl(f(a,d) - f(a,c)\bigr)\tag{2} \end{align}
+(1)
+(2)
+g
+\lim_{(b,d)\to(a,c)} \frac{1}{(b-a)(d-c)}\int_a^b\int_c^d g(x,y)\,dy\,dx = g(a,c),
+(1)
+(2)
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)(a,c) = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)(a,c),
+(a,c)
+E^2

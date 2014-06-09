@@ -1,0 +1,18 @@
+I_n(a)=\int_{-\infty}^{\infty}x^6e^{-x^2}\operatorname{sech}^n(ax)dx
+\operatorname{sech}(x)=\frac{2}{e^x+e^{-x}}
+I_n(a)
+n=2,4,6
+I_n(a)
+I_n(a)
+a
+a\in[-\epsilon,\epsilon]
+\epsilon
+g(x)=x^6e^{-x^2}
+g(x)
+\int_{-\infty}^{\infty}|g(x)|dx
+0<\operatorname{sech}(x)\leq1
+g(x)
+|x^6e^{-x^2}\operatorname{sech}^n(ax)|\leq g(x)
+\lim_{a\rightarrow a_0} I_n(a)=I_n(a_0)
+a_0\in[-\epsilon,\epsilon]
+\begin{array}{rcl}\lim_{a\rightarrow a_0}I_n(a)&=&\lim_{a\rightarrow a_0}\int_{-\infty}^{\infty}x^6e^{-x^2}\operatorname{sech}^n(ax)dx\\ &=&\int_{-\infty}^{\infty}x^6e^{-x^2}\lim_{a\rightarrow a_0}\operatorname{sech}^n(ax)dx\\ &=&\int_{-\infty}^{\infty}x^6e^{-x^2}\operatorname{sech}^n(a_0x)dx\\ &=&I_n(a_0) \end{array}

@@ -1,0 +1,7 @@
+ \int \frac{\mathrm dx}{\sqrt{x}(1+\sqrt[3]{x})}
+\displaystyle\mathrm{gcd}\left(\frac12,\frac13\right)=\frac1{\mathrm{lcm}(2,3)}=\frac16
+\displaystyle y=x^{\frac16}\implies \sqrt x=y^3,\sqrt[3]x=y^2
+\displaystyle x=y^6
+ \int\frac{dx}{\sqrt x\left(1+\sqrt[3]{x}\right)}=\int\frac{dx}{\sqrt[6]x^{3}\left(1+\sqrt[6]{x^2}\right)}=|\sqrt[6]{x}=t\Rightarrow x=t^6\Rightarrow dx=6t^5dt| 
+ =\int\frac{6t^5dt}{t^3\left(1+t^2\right)}=6\int\frac{t^2dt}{1+t^2}=6\int\frac{t^2+1-1}{1+t^2}dt=6\int\left(1-\frac{1}{1+t^2}\right)dt 
+ =6\int dt-6\int \frac{1}{1+t^2}dt=6t-6\arctan t=6(\sqrt[6]{x}-\arctan \sqrt[6]{x})+C 

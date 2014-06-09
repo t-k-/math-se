@@ -1,0 +1,35 @@
+S: U \mapsto V
+T:V\mapsto W.
+TS
+U \mapsto W.
+ \mathcal{M(T)} = \begin{pmatrix} a_{1,1}& \ldots & a_{1,n}\\ \vdots & & \vdots \\ a_{m,1}& \ldots & a_{m,n} \end{pmatrix}
+ \mathcal{M(S)} = \begin{pmatrix} b_{1,1}& \ldots & b_{1,p}\\ \vdots & & \vdots \\ b_{n,1}& \ldots & b_{n,p} \end{pmatrix}
+\begin{align} \mathcal{TS}u_k =& \mathcal{T} \left(\sum_{r=1}^n b_{r,k}v_r \right) \\=& \sum_{r=1}^n b_{r,k} \sum_{j=1}^m a_{j,r} w_j \\=&\sum_{j=1}^m \left(\sum_{r=1}^n a_{j,r} b_{r,k} \right)w_j\end{align}
+B = \{u_{1}, \dots, u_{p}\}
+U
+B' = \{v_{1}, \dots, v_{n}\}
+V
+S:U \to V
+b_{r,k}
+r = 1, \dots, n
+k=1, \dots, p
+S
+B
+B'
+b_{r,k}
+r
+k
+S
+u
+U
+u = \sum_k c_{k} u_{k}
+c_{k}
+S
+r
+S(u)
+r
+S
+u
+B
+ S(u_{k}) = \sum_{r=1}^{n} b_{r,k} v_{r}. 
+ S(u) = \sum_{k=1}^{p} c_{k} S(u_{k})   = \sum_{k=1}^{p} c_{k} \sum_{r=1}^{n} b_{r,k} v_{r}   = \sum_{r=1}^{n} \left(\sum_{k=1}^{p} b_{r,k} c_{k} \right) v_{r}. 

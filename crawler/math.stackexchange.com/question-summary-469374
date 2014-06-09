@@ -1,0 +1,48 @@
+\psi(z)
+z= 0
+\psi(z+1)
+z=0
+\displaystyle\psi(z + 1) = \frac{1}{z} + \psi(z) = \psi(1) + \psi'(1)x + \mathcal{O}(z^{2}) = -\gamma + \zeta(2) + \mathcal{O}(z^{2}) = -\gamma + \frac{\pi^{2}}{6}z + \mathcal{O}(z^{2})
+ \implies \psi(z) = -\frac{1}{z} - \gamma + \frac{\pi^{2}}{6} z + \mathcal{O}(z^{2}) 
+\psi(z)
+\psi(z)
+-1
+ \displaystyle\frac{-1}{z+n}
+ \displaystyle \psi(z) = - \frac{1}{z+n} + (H_{n} - \gamma)+ \Big( H_{n}^{(2)} + \zeta(2) \Big) (z+n) + \Big( H_{n}^{(3)} - \zeta(3) \Big) (z+n)^{2} +  \Big( H_{n}^{(4)} + \zeta(4) \Big) (z+n)^{3}  + \Big( H_{n}^{(5)} - \zeta(5) \Big) (z+n)^{4} + \ldots
+ = - \frac{1}{z+n} + \psi_{1}(n+1) + \Big( H_{n}^{(2)} + \zeta(2) \Big) (z+n) + \psi_{3}(n+1) \frac{(z+n)^{2}}{2!} + \Big( H_{n}^{(4)} + \zeta(4) \Big) (z+n)^{3} + \psi_{5}(n+1) \frac{(z+n)^{4}}{4!} + \ldots
+ \displaystyle\lim_{z \to -n} \Big( \psi(z) + \frac{1}{z+n} \Big)
+ \displaystyle \psi(z) + \frac{1}{z+n} 
+ \displaystyle = \psi(z+1) - \frac{1}{z} + \frac{1}{z+n} 
+ \displaystyle = \psi(z+2) - \frac{1}{z+1} - \frac{1}{z} + \frac{1}{z+n} 
+ \displaystyle = \ ... \ = \psi(z+n+1) - \frac{1}{z+n} - \frac{1}{z+n-1} - \ldots - \frac{1}{z+1} - \frac{1}{z} + \frac{1}{z+n}
+ \displaystyle \lim_{z \to -n} \Big( \psi(z) + \frac{1}{z+n} \Big) = \psi(1) + 1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{n} = \psi(1) + H_{n} = H_{n} - \gamma
+(z+n)
+\displaystyle \lim_{z \to -n} \frac{\psi(z) + \frac{1}{z+n} - H_{n} + \gamma}{z+n}
+ \displaystyle  \psi_{1}(z) = \psi_{1}(z+n+1) + \frac{1}{(z+n)^{2}} + \frac{1}{(z+n-1)^{2}} +  \ldots + \frac{1}{z^2} 
+ \displaystyle \lim_{z \to -n} \frac{\psi(z) + \frac{1}{z+n} - H_{n} + \gamma}{z+n} = \lim_{z \to -n} \Big(\psi_{1}(z) - \frac{1}{z+n^{2}} \Big) = \psi_{1}(1) + H_{n}^{(2)} =  H_{n}^{(2)} + \zeta(2)
+ 
+(z+n)^{2}
+ \displaystyle  \lim_{z \to -n} \frac{\psi(z) + \frac{1}{z+n} - H_{n} + \gamma -\big( H_{n}^{(2)} + \zeta(2) \big) (z+n)}{(z+n)^{2}} 
+ \displaystyle \psi_{2}(z) = \psi_{2} (z+n+1) - \frac{2}{(z+n)^{3}} - \frac{2}{(z+n-1)^{3}} - \ldots - \frac{2}{z^{3}}
+ \displaystyle \lim_{z \to -n} \frac{\psi(z) + \frac{1}{z+n} - H_{n} + \gamma -\big( H_{n}^{(2)} + \zeta(2) \big) (z+n)}{(z+n)^{2}} = \lim_{z \to -n} \frac{\psi_{1}(x) - \frac{1}{(z+n)^{2}} -H_{n}^{(2)} - \zeta(2)}{2(z+n)} 
+ \displaystyle = \lim_{z \to -n} \frac{\psi_{2}(x) + \frac{2}{(z+n)^{3}}}{2} = \frac{1}{2} \Big( \psi_{2}(1) + 2 H_{n}^{(3)} \Big) = H_{n}^{(3)} - \zeta(3)
+ \ 
+x=0
+\psi_0(x)=-\frac{1}{x}-\gamma-\sum_{k\geq 1}\zeta(k+1)(-x)^k
+\tag{1}\psi_0(x+N)=-\frac{1}{x+N}-\gamma-\sum_{k\geq 1}(-1)^k\zeta(k+1)(x+N)^k
+\tag{2} \psi_0(x+N)=\psi_0(x)+\sum_{k=0}^{N-1}\frac{1}{x+k}
+\psi_0(x+N)=\psi_0(x)-\sum_{m \geq 0} H^{(m+1)}_{N} (x+N)^{m}
+\psi_0(x)-\sum_{m \geq 1}  H^{(m+1)}_{N} (x+N)^{m}=-\frac{1}{x+N}-\gamma-\sum_{k\geq 1}(-1)^k\zeta(k+1)(x+N)^k
+\psi_0(x)=-\frac{1}{x+N}-\gamma-\sum_{k\geq 1}(-1)^k\zeta(k+1)(x+N)^k+\sum_{m \geq 0} H^{(m+1)}_{N} (x+N)^{m}
+\psi_0(-x)=\frac{1}{x-N}-\gamma-\sum_{k\geq 1}\zeta(k+1)(x-N)^k+\sum_{m \geq 0}(-1)^m H^{(m+1)}_{N} (x-N)^{m}
+\psi_0(-x)+\gamma=\frac{1}{x-N}+H_N+\sum_{k\geq 1}((-1)^kH^{(k+1)}_{N}-\zeta(k+1))(x-N)^k
+\psi_0(x+N)=\psi_0(x)+\sum_{k=0}^{N-1}\frac{1}{x+k}
+N=1
+\psi_0(x+1)=\psi_0(x)+\frac{1}{x}
+\psi_0(x+1)=-\gamma+\sum_{n\geq 1}\frac{x}{n(n+x)}
+\psi_0(x+N)=\psi_0(x)+\sum_{k=0}^{N-1}\frac{1}{x+k}
+\psi_0(x+N+1)=\psi_0(x+N)+\frac{1}{x+N+1}=\psi_0(x)+\sum_{k=0}^{N}\frac{1}{x+k}
+ \Psi \left( x \right) = -{x}^{-1}-\gamma+1/6\,{\pi }^{2}x-\zeta   \left( 3 \right) {x}^{2}+{\frac {1}{90}}\,{\pi }^{4}{x}^{3}-\zeta   \left( 5 \right) {x}^{4}+{\frac {1}{945}}\,{\pi }^{6}{x}^{5}+O  \left( {x}^{6} \right)  
+ \Psi \left( x \right) =- \left( x+1 \right) ^{-1}+1-\gamma+ \left( 1+ 1/6\,{\pi }^{2} \right)  \left( x+1 \right) + \left( 1-\zeta  \left( 3  \right)  \right)  \left( x+1 \right) ^{2}+ \left( {\frac {1}{90}}\,{ \pi }^{4}+1 \right)  \left( x+1 \right) ^{3}+ \left( 1-\zeta  \left( 5  \right)  \right)  \left( x+1 \right) ^{4}+ \left( {\frac {1}{945}}\,{ \pi }^{6}+1 \right)  \left( x+1 \right) ^{5}+O \left(  \left( x+1  \right) ^{6} \right)  
+ \Psi \left( x \right) =- \left( x+2 \right) ^{-1}+{\frac {3}{2}}- \gamma+ \left( {\frac {5}{4}}+1/6\,{\pi }^{2} \right)  \left( x+2  \right) + \left( {\frac {9}{8}}-\zeta  \left( 3 \right)  \right)   \left( x+2 \right) ^{2}+ \left( {\frac {1}{90}}\,{\pi }^{4}+{\frac { 17}{16}} \right)  \left( x+2 \right) ^{3}+ \left( {\frac {33}{32}}- \zeta  \left( 5 \right)  \right)  \left( x+2 \right) ^{4}+ \left( { \frac {1}{945}}\,{\pi }^{6}+{\frac {65}{64}} \right)  \left( x+2  \right) ^{5}+O \left(  \left( x+2 \right) ^{6} \right)  
+ \Psi \left( x \right) =- \left( x+3 \right) ^{-1}+{\frac {11}{6}}- \gamma+ \left( {\frac {49}{36}}+1/6\,{\pi }^{2} \right)  \left( x+3  \right) + \left( {\frac {251}{216}}-\zeta  \left( 3 \right)  \right)   \left( x+3 \right) ^{2}+ \left( {\frac {1}{90}}\,{\pi }^{4}+{\frac { 1393}{1296}} \right)  \left( x+3 \right) ^{3}+ \left( {\frac {8051}{ 7776}}-\zeta  \left( 5 \right)  \right)  \left( x+3 \right) ^{4}+  \left( {\frac {1}{945}}\,{\pi }^{6}+{\frac {47449}{46656}} \right)   \left( x+3 \right) ^{5}+O \left(  \left( x+3 \right) ^{6} \right)  

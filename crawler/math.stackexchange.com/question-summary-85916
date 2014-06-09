@@ -1,0 +1,23 @@
+f: \mathbb{R} \to \mathbb{R}
+x > 0
+\epsilon > 0
+c_\epsilon \in (\epsilon, x)
+c \in (0,x)
+f(x) - f(\epsilon) = f'(c_\epsilon)(x - \epsilon)
+f(x) - f(0) = f'(c)(x - 0) = f'(c)x
+\lim_{\epsilon \to 0} \, f'(c) - f'(c_\epsilon) = 0
+\lim_{\epsilon \to 0} \frac{f'(c) - f'(c_\epsilon)}{\epsilon}
+\lim_{\epsilon \to 0} \frac{f'(c) - f'(c_\epsilon)}{\epsilon} = 0
+f
+t \in (\epsilon, x)
+f(x) - f(\epsilon) = f'(t)(x - \epsilon) := L(x - \epsilon)
+f \in C^1(\mathbb{R})
+f'^{-1}(L)
+(\epsilon, x)
+c_\epsilon
+t
+c
+c_\epsilon \in f'^{-1}(L)
+\begin{array}{lcl} f'(c) & = & \frac{f(x)-f(0)}{x} & \text{by definition} \\  & = & \frac{\lim_{\epsilon \to 0^+}(f(x))-f(\lim_{\epsilon \to 0^+}\epsilon)}{\lim_{\epsilon \to 0^+}(x)-\lim_{\epsilon \to 0^+}(\epsilon)} \\  & = & \frac{\lim_{\epsilon \to 0^+}(f(x))-\lim_{\epsilon \to 0^+}(f(\epsilon))}{\lim_{\epsilon \to 0^+}(x)-\lim_{\epsilon \to 0^+}(\epsilon)} & \text{because} \ f\ \text{is differentiable, therefore continuous, at} \ 0^+ \\  & = & \frac{\lim_{\epsilon \to 0^+}(f(x)-f(\epsilon))}{\lim_{\epsilon \to 0^+}(x-\epsilon)} \\  & = & \lim_{\epsilon \to 0^+}\frac{f(x)-f(\epsilon)}{x-\epsilon} \\  & = & \lim_{\epsilon \to 0^+}f'(c_\epsilon) & \text{by definition} \end{array}
+0 = f'(c) - \lim_{\epsilon \to 0^+}f'(c_\epsilon) = \lim_{\epsilon \to 0^+}f'(c) - \lim_{\epsilon \to 0^+}f'(c_\epsilon) = \lim_{\epsilon \to 0^+}(f'(c) - f'(c_\epsilon))
+\begin{array}{lcl} \lim_{\epsilon \to 0} \frac{f'(c) - f'(c_\epsilon)}{\epsilon} & = & \lim_{\epsilon \to 0} \frac{\frac{f(x)-f(0)}{x} - \frac{f(x)-f(\epsilon)}{x-\epsilon}}{\epsilon} & \text{by definition} \\  & = & \lim_{\epsilon \to 0} \left( \frac{f(0)-f(x)}{x (x - \epsilon)} + \frac{f(\epsilon)-f(0)}{\epsilon (x - \epsilon)} \right ) & \text{by algebra} \\  & = & \frac{f(0)-f(x)}{x^2} + \lim_{\epsilon \to 0} \frac{f(\epsilon)-f(0)}{\epsilon x} \\  & = & -\frac{f'(c)}{x} + \frac{f'(0)}{x} \\  & = & \frac{f'(0) - f'(c)}{x} \\ \end{array}

@@ -1,0 +1,40 @@
+ f(x) = \sum_{k=1}^\infty \frac{\sin((k + 1)!\;x )}{k!}
+\gamma_k(x)=\sin((k+1)!x)
+f(x)=\sum_k \frac{\gamma_k(x)}{k!}
+x\in\mathbb R
+(x_n)_n
+f
+x
+\lim_{n\to\infty} x_n = x \quad\land\quad \lim_{n\to\infty} \left|\frac{f(x_n)-f(x)}{x_n-x}\right| = \infty
+x'_n
+x
+|\gamma_n(x'_n)-\gamma_n(x)|=1
+x''_n
+x
+\gamma_n(x''_n)=\gamma_n(x'_n)
+x_n
+x_n
+|x_n-x|<\frac{2\pi}{(n+1)!}
+\lim x_n=x
+x_n
+|\Delta q| = \frac{1}{n!}
+f(x) = \underbrace{\sum_{k=1}^{n-1}\frac{\gamma_k(x)}{k!}}_{p(x)}+ \underbrace{\frac{\gamma_n(x)}{n!}}_{q(x)}+ \underbrace{\sum_{k=n+1}^{\infty} \frac{\gamma_k(x)}{k!}}_{r(x)}
+\underbrace{f(x_n)-f(x)}_{\Delta f} = \underbrace{p(x_n)-p(x)}_{\Delta p} + \underbrace{q(x_n)-q(x)}_{\Delta q} + \underbrace{r(x_n)-r(x)}_{\Delta r}
+r(x)
+\sum 1/n! = e
+\frac{e}{(n+1)!}
+|\Delta r| \le \frac{2e}{(n+1)!}
+\Delta p
+\Delta q
+p
+[x'_n, x''_n]
+p(x'_n)-p(x)
+p(x''_n)-p(x)
+q(x'_n)=q(x''_n)
+x_n
+\Delta p
+\Delta q
+|\Delta p+\Delta q|\ge|\Delta q|=\frac{1}{n!}
+n
+|\Delta f| \ge \frac{1}{2n!} - \frac{2e}{(n+1)!} = \frac{1}{n!}\left(\frac{1}{2}-\frac{2e}{n+1}\right)
+\left|\frac{f(x_n)-f(x)}{x_n-x}\right| \ge \frac{(n+1)!}{2\pi}|\Delta f| \ge \frac{n+1}{2\pi}\left(\frac{1}{2}-\frac{2e}{n+1}\right) = \frac{n+1}{4\pi}-\frac{e}{\pi} \to \infty

@@ -1,0 +1,33 @@
+\lim_{\Delta x\rightarrow 0}\frac{f(x+\Delta x)-f(x)}{\Delta x} 
+x\gt 0
+x\lt 0
+x=0
+|x|=\left\{\begin{array}{ll} x & \text{if }x\geq 0;\\ -x & \text{if }x\lt 0, \end{array}\right.
+x\gt0
+\Delta x
+0
+x+\Delta x\gt 0
+f(x)= |x| = x
+f(x+\Delta x) = |x+\Delta x| = x+\Delta x
+\lim_{\Delta x\to 0}\frac{f(x+\Delta x) - f(x)}{\Delta x} = \lim_{\Delta x\to 0}\frac{|x+\Delta x|-|x|}{\Delta x} = \lim_{\Delta x\to 0}\frac{(x+\Delta x)-x}{\Delta x}.
+x\lt 0
+\Delta x
+x+\Delta x\lt 0
+f(x) = -x
+f(x+\Delta x) = -(x+\Delta x)
+x=0
+\Delta x\to 0^+
+x+\Delta x = \Delta x\gt 0
+\Delta x \to 0^-
+x+\Delta x = \Delta x\lt 0
+\dfrac{d}{dx}|x|
+=\lim\limits_{\Delta x\to 0}\dfrac{|x+\Delta x|-|x|}{\Delta x}
+=\lim\limits_{\Delta x\to 0}\dfrac{(|x+\Delta x|-|x|)(|x+\Delta x|+|x|)}{\Delta x(|x+\Delta x|+|x|)}
+=\lim\limits_{\Delta x\to 0}\dfrac{|x+\Delta x|^2-|x|^2}{\Delta x(|x+\Delta x|+|x|)}
+=\lim\limits_{\Delta x\to 0}\dfrac{(x+\Delta x)^2-x^2}{\Delta x(|x+\Delta x|+|x|)}
+=\lim\limits_{\Delta x\to 0}\dfrac{x^2+2x\Delta x+(\Delta x)^2-x^2}{\Delta x(|x+\Delta x|+|x|)}
+=\lim\limits_{\Delta x\to 0}\dfrac{2x+\Delta x}{|x+\Delta x|+|x|}
+=\dfrac{x}{|x|}
+=\dfrac{x|x|}{|x|^2}
+=\dfrac{x|x|}{x^2}
+=\dfrac{|x|}{x}

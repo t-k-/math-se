@@ -1,0 +1,107 @@
+t
+g(t)
+g(t) = f(x)h(y)
+P(T = t) = \int f(\tau)h(t-\tau) d \tau
+x
+y
+t
+h(-\tau)
+\tau
+f
+h
+x
+y
+t
+t
+h
+t \mapsto h_t
+u = 1_{\{0\}}
+t = 0
+u = \sum u_k 1_{\{k\} }
+u=(u_0,u_1,...)
+ u_k 1_{\{k\} }
+t
+ u_0 1_{\{0\} }
+u_0 h_{t-0}
+t
+ u_1 1_{\{1\} }
+u_1 h_{t-1}
+t
+ u_k 1_{\{k\} }
+u_k h_{t-k}
+y_t = \sum h_{t-k} u_k
+u(t) = \int u(\tau) \delta(t-\tau) d \tau
+\tau
+t \mapsto u(\tau) \delta(t-\tau)
+t \mapsto u(\tau) h(t-\tau)
+y(t) =\int u(\tau) h(t-\tau) d \tau
+\def\nR{\mathbb{R}}\def\rmC{{\mathrm C}}\def\rmu{{\rm u}}\def\sS{{\Sigma}}\def\sF{{\mathcal{F}}}\def\l{\left}\def\r{\right}\def\di{d}\def\sinc{\operatorname{sinc}}\def\ltag#1{\tag{#1}\label{#1}}
+x:\nR\rightarrow\nR
+\sS
+S
+x
+y
+y=S(x)
+x_1,x_2\in \sS
+\lambda\in\nR
+S(x_1+\lambda x_2)=S(x_1)+\lambda S(x_2)
+\l(x_\tau\r)_{\tau\in\nR}\in\sS
+\lambda(\tau)
+ S\l(\int_\nR \lambda_\tau x_\tau \di\tau\r) = \int_\nR \lambda_\tau S(x_\tau)\di\tau 
+\tau\in\nR
+x\in\sS
+x(\bullet-\tau)
+x(\bullet-\tau)(t)=x(t-\tau)
+t\in\nR
+S(x(\bullet-\tau)) = S(x)(\bullet-\tau)
+\l(\delta(\bullet-\tau)\r)_{\tau\in\nR}
+\sS
+\sS
+x\in\sS
+\delta(\bullet-\tau)
+\lambda_\tau
+x
+t
+\sS
+S
+\bar h(\bullet-\tau)
+\lambda_\tau
+\tau\in\nR
+h
+h_\rmC
+h
+\bar h_\rmC
+\tau
+\bar h'_\rmC=0
+h
+\tau=t
+h
+\lambda_\tau = x(\tau)
+\bar G:= S(\bar h)
+\bar G
+\bar h
+\tau
+x
+x(t) = \int_{-\infty}^\infty x(\tau) \delta(t-\tau) d\tau = (x*\delta)(t)
+\delta
+\Delta:=\sF(\delta)
+\delta
+X
+x
+\sS
+x
+X
+\Delta
+\Delta(\omega)=1
+\omega\in\nR
+\omega_\rmu>0
+X
+x\in\sS
+[-\omega_\rmu,\omega_\rmu]
+\Delta(\omega)
+\omega\in[-\omega_\rmu,\omega_\rmu]
+\delta(\bullet-\tau) = \frac{\omega_\rmu}{\pi} \sinc(\omega_\rmu (\bullet-\tau))
+L^2
+\omega_\rmu
+\delta_{\omega_\rmu}
+(\omega_\rmu\rightarrow\infty)

@@ -1,0 +1,17 @@
+\lim_{N \to \infty}\frac{\sum\limits_{i=1}^{N}\frac{\log i}{i}}{(\log N)^2}.
+\sum\limits_{i=1}^{N}\frac{\log i}{i}
+ \sum_{i=1}^{N}\frac{\ln(i)}{i}\sim\int_{1}^{N}\frac{\ln(x)}{x}dx = \frac{1}{2}\ln(N)^2=\frac{1}{2}(\ln(N))^2.
+a(n) = 1
+f(n) = \dfrac{\log(n)}{n}
+n \in \mathbb{Z}^+
+A(t) = \displaystyle \sum_{n \leq t} a(n) = \lfloor t \rfloor
+\displaystyle \sum_{n \leq x} \frac{\log n}{n} = \int_{1^-}^x f(t) dA(t) = \int_{1^-}^x \dfrac{\log(t)}{t} d (\lfloor t \rfloor)
+C = \displaystyle \int_{1^-}^{\infty} \frac{(1 - \log(t)) \{t\}}{t^2} dt
+\displaystyle \left \lvert C \right \rvert \leq \int_1^{\infty} \frac{1 + \log(t)}{t^2} dt = 2
+I = \displaystyle \int_x^{\infty} \frac{(\log(t) - 1) \{ t \}}{t^2} dt
+I = \mathcal{O} \displaystyle \left( \frac{\log(x)}{x} \right)
+I > 0
+x
+x > e
+0 \leq \{t\} < 1
+I = \displaystyle \int_x^{\infty} \frac{(\log(t) - 1) \{ t \}}{t^2} dt < \int_x^{\infty} \frac{\log(t) -1}{t^2} dt = \int_x^{\infty} \frac{d}{dt} \left( -\frac{\log(t)}{t} \right) dt = \frac{\log(x)}{x}.

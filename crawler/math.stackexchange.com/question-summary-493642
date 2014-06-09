@@ -1,0 +1,9 @@
+A(x)
+\Delta u
+u \in \mathrm{R}^{n}\times (0,\infty)
+u_{t} = \sum_{i,j=1}^{n} a_{ij}(x) \frac{\partial^{2}u}{\partial x_{i} \partial x_j}
+a_{ij}(x)
+A(x)
+u_{t} = \sum_{i,j=1}^{n} \frac{\partial}{\partial x_{i}}\left(a_{ij}(x) \frac{\partial u}{\partial x_j}\right) = \text{div}(A(x)\nabla u)
+ a_{ij} \partial_i \partial_ju = \partial_i(a_{ij}\partial_ju) - (\partial_ia_{ij})(\partial_j u) 
+ \text{Tr}(A\nabla(\nabla u))=a_{ij} \partial_i \partial_ju =\partial_i(a_{ij}\partial_ju) - (\partial_ia_{ij})(\partial_j u) = \text{div}(A\nabla u) - \text{div}(A)\cdot\nabla u 

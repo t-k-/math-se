@@ -1,0 +1,25 @@
+f(n) = n + 2 f(n-1)
+...(6 + 2 ( 5 + 2 ( 4 + 2 (  3 +2 ( 2 \cdot 1 ) ) ) ) ... )
+T(n) = f(n) + n + 2
+f(n) = T(n) - n -2
+T(n) = 2^{n-1} T(1)
+T(1) = f(1) + 1 + 2 = 4
+T(n) = 2^{n+1}
+ \begin{align} T(n) - n -2 & = n + 2 \left(T(n-1) - (n-1) -2 \right)\\ & = n + 2 T(n-1) - 2n -2\\ & = 2 T(n-1) -n - 2\\ T(n) & = 2T(n-1) \end{align} 
+f(n) = 2^{n+1} - n - 2.
+F(x)=\sum_{n=1}^\infty f(n)x^n
+x^n
+f(n)
+f(n)=2^{n+1}-n-2
+\begin{align*} F(x)&=\left(\sum_{n=2}^\infty (n+2f(n-1))x^n\right)+x\\ &=\left(\frac{x}{(1-x)^2}-x+2x\sum_{n=1}^\infty f(n)x^n\right)+x\\ &=\frac{x}{(1-x)^2}+2xF(x) \end{align*}
+F(x)=\frac{x}{(1-x)^2(1-2x)}=\frac{1}{x-1}-\frac{1}{(1-x)^2}+2\left(\frac{1}{1-2x}\right)
+\frac{1}{x-1}=-\sum_{n=0}^\infty x^n
+\frac{1}{(1-x)^2}=\sum_{n=0}^\infty (n+1)x^n
+2\left(\frac{1}{1-2x}\right)=2\sum_{n=0}^\infty (2x)^n
+F(x)=\sum_{n=0}^\infty (-1-(n+1)+2^{n+1})x^n
+f(n) = 2^n \cdot g(n)
+2^n \cdot g(n) = n + 2^n \cdot g(n-1)
+g(n) - g(n-1) = n \cdot 2^{-n}
+g(n) = g_0 + \sum_{k=0}^n k \cdot 2^{-k}
+g_0 = \frac{1}{2}
+    f(n) = 2^n \cdot g(n) = 2^{n-1} + \sum_{k=0}^n k \cdot 2^{n-k} 

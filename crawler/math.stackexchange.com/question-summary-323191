@@ -1,0 +1,12 @@
+\lim_{(x,y)\to 0,0}\frac{e^{xy}-1}y
+0
+z = xy
+\displaystyle \tag 1 \lim_{(x,y)\to 0,0}\frac{e^{xy}-1}{y}
+z = xy
+(1)
+\tag 2 \frac{e^{xy}-1}{y} = x \cdot \frac{e^{z} -1}{z}
+\lim_{(x,y)\to 0,0} x = 0
+\lim_{z\to 0}\frac{e^{z} -1}{z} = 1
+\lim_{(x,y)\to 0,0}\frac{e^{xy}-1}{y} = \left(\lim_{(x,y)\to 0,0} x \right) \cdot \left(\lim_{z\to 0}\frac{e^{z}-1}{z} \right) = (0) \cdot (1) = 0.
+(x,y) \to 0, \ e^{xy}=1+xy+O((xy)^2)
+ \lim_{x,y \to 0}\frac{e^{xy}-1}{y}=\lim_{x,y \to 0} \frac{xy+O((xy)^2)}{y}=\lim_{x,y \to 0}x+O(x^2y)=0 

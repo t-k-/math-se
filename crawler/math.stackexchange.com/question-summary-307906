@@ -1,0 +1,31 @@
+f(n,k,s)
+n
+\{1,\ldots,k\}
+s
+f(10,12,70)
+f(n,k,s)=0
+s>n
+nk<s
+f(n,k,s)=\sum_{j=1}^{\min\{k,s\}}f(n-1,j,s-j)
+f(1,k,s)=\begin{cases}1&\text{if }k\geq s\\0&\text{if }k<s\end{cases}.
+70
+10
+1,2,\ldots,12
+0
+71\times11
+A
+A[i,j]
+0\leq i\leq 70
+0\leq j\leq 10
+i
+j
+A[0,0]=1
+0
+k
+A
+i,j
+A[i,j]
+k
+k
+k=1,2,\ldots,12
+9160

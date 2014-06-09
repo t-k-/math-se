@@ -1,0 +1,23 @@
+\int (x^{15}\ln x)dx 
+\ln(x) = t
+x = e^t \implies dx = e^t dt
+n=15
+1
+\int x^{15}\ln x dx=\frac1{16}\int(x^{16})^{\prime}\ln x dx
+\frac{d}{dx}(x \log{x} - x ) = \log{x}
+\int dx \: x^k \log{x} = x^{k+1} (\log{x} - 1) - k \int dx \: x^k \log{x} + k \int dx \: x^k
+ (k+1) \int dx \: x^k \log{x} = x^{k+1} (\log{x} - 1) + \frac{k}{k+1} x^{k+1}
+k=15
+u=\dfrac{x^{16}}{16}
+dv=\dfrac{1}{x}\,dx
+\displaystyle\int \dfrac{x^{16}}{16}\dfrac{1}{x}\,dx
+\displaystyle\int\dfrac{x^{15}}{16}\,dx
+x
+\ln x
+\ln x
+\int x\ln xdx
+u=x^8,du=8x^7dx
+\int x^{15}\ln xdx=\frac18\int u\ln u^\frac18du=\frac1{64}\int u\ln udu
+\dfrac{d}{dt} x^t = x^t \ln(x)
+\displaystyle\int x^t \ dx = \dfrac{x^{t+1}}{t+1} + c
+\int  x^t \ln(x)\ dt = \dfrac{d}{dt} \dfrac{x^{t+1}}{t+1} = \dfrac{(t+1) x^{t+1} \ln(x) - x^{t+1}}{(t+1)^2} + c

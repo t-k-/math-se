@@ -1,0 +1,24 @@
+{\rm f}:{\mathbb N}\times{\mathbb N} \rightarrow  {\mathbb N}
+ \begin{array}{rrcl} a) & {\rm f}\left(n,n\right) & = & n \\[2mm] b) & {\rm f}\left(n,m\right) & = & {\rm f}\left(m,n\right)      \quad\forall\ m,n\ \in {\mathbb N} \\[2mm] c) & {{\rm f}\left(m,n + m\right) \over {\rm f}\left(m,n\right)} & = & {m + n \over n}\quad \forall\ m,n\ \in\ {\mathbb N} \end{array} 
+g(n,m)=\cfrac{nm}{f(n,m)}
+g(n,n)=\cfrac{n^2}{f(n,n)}=\cfrac{n^2}{n}=n
+g(m,n)=\cfrac{mn}{f(m,n)}=\cfrac{nm}{f(n,m)}=g(n,m)
+g(m,m+n)=\cfrac{m(m+n)}{f(m,m+n)}=\cfrac{m(m+n)}{\cfrac{m+n}{n}f(m,n)}=\cfrac{mn}{f(m,n)}=g(m,n)
+g(m,n \mod m)=g(m,n)
+P_n:"\forall k \le n, \forall x \in \Bbb N, g(k,x)=n \land x"
+P_1
+g(1,x)=g(1,x-1)=\dots = g(1,1)=1=1\land x
+P_n
+k\le n+1
+x\in \Bbb N
+k\le n
+g(k,x)=k\land x
+x\le n
+g(k,x)=g(x,k)=x\land k = k\land x
+k=n+1\le x
+g(k,x)=g(k,x\mod k)=k \land (x\mod k)=k\land x
+x\mod k \le n
+P_n \implies P_{n+1}
+\boxed{\forall n,m \in \Bbb N, g(n,m)=n\land m}
+nm= (n\land m)(n\lor m)
+\boxed{\forall n,m \in \Bbb N, f(n,m)=n\lor m}

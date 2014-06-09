@@ -1,0 +1,11 @@
+N
+\lambda
+X
+N,p
+N
+P(X=k| N)={N\choose k}p^k(1-p)^{N-k}
+X
+X
+\lambda p
+P(X=k)=\sum_{r=0}^\infty P(X=k+r|N=k+r) = \sum P(X=k|N=k+r)P(X=k+r) = \sum {k+r \choose k}p^k(1-p)^re^{-\lambda}\frac{(\lambda p)^{k+r}}{(k+r)!}
+= \frac{e^{-\lambda p^k}}{k!}e^{\lambda(1-p)}= e^{-\lambda p}\frac{(\lambda p)^k}{k!}

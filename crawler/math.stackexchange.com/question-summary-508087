@@ -1,0 +1,6 @@
+\int_0^\infty(5x^5+x)\text{erfc}(x^5+x)~dx
+=\int_0^\infty\text{erfc}(x^5+x)~d\left(\dfrac{5x^6}{6}+\dfrac{x^2}{2}\right)
+=\left[\left(\dfrac{5x^6}{6}+\dfrac{x^2}{2}\right)\text{erfc}(x^5+x)\right]_0^\infty-\int_0^\infty\left(\dfrac{5x^6}{6}+\dfrac{x^2}{2}\right)d(\text{erfc}(x^5+x))
+=\int_0^\infty\left(\dfrac{5x^6}{6}+\dfrac{x^2}{2}\right)(5x^4+1)\dfrac{2e^{-x^2(x^8+1)}}{\sqrt\pi}dx
+=\dfrac{2}{\sqrt\pi}\int_0^\infty e^{-(\sinh^\frac{1}{2}x)(\sinh^2x+1)}\left(\dfrac{5\sinh^\frac{3}{2}x}{6}+\dfrac{\sinh^\frac{1}{2}x}{2}\right)(5\sinh x+1)~d(\sinh^\frac{1}{4}x)
+=\dfrac{1}{2\sqrt\pi}\int_0^\infty e^{-\sinh^\frac{1}{2}x\cosh^2x}~\left(\dfrac{5\sinh^\frac{3}{2}x}{6}+\dfrac{\sinh^\frac{1}{2}x}{2}\right)(5\sinh x+1)\sinh^{-\frac{3}{4}}x\cosh x~dx

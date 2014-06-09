@@ -1,0 +1,37 @@
+A \in \mathbb{R}^{n \times p}, B \in \mathbb{R}^{n \times k}
+y \in \mathbb{R}^n, u \in \mathbb{R}^p, v \in \mathbb{R}^k
+ {\text{argmin}_{u, v}}\|y - (A u * Bv)\|^2
+*
+y
+A, B
+A
+B
+A, B
+\alpha \in \mathbb{R}^p, \ \beta \in \mathbb{R}^k
+  \begin{equation}  \text{argmin}_{\alpha,\beta}\|y - \bar{y} \|_2^2,   \ \ \ (1)  \end{equation} 
+\bar{y} = (A\alpha \odot B\beta)
+   \bar{y}_i = \left( A_i \alpha \right)\left(B_i \beta\right), 
+A_i
+B_i
+i^\text{th}
+ \begin{align}   \bar{y}_i & = \left(\begin{array}{l l l}   a_{i,1} B_i, \ldots, a_{i,p} B_i \end{array}  \right) \left( \begin{array}{}  \alpha_1 \beta \\  \vdots \\  \alpha_p \beta \end{array} \right), \end{align} 
+  (A\alpha \odot B\beta)_i = (A_i \otimes B_i)(\alpha \otimes \beta),  
+\otimes
+ H_i = (A_i \otimes B_i )
+x = (\alpha \otimes \beta)
+  \text{argmin}_{x}\|y - Hx\|_2^2, 
+x
+x
+\alpha
+\beta
+ X = \left( \begin{array}{lcr}             \alpha_1 \beta_1 & \ldots & \alpha_1 \beta_k \\             \alpha_2 \beta_1 & \ldots & \alpha_2 \beta_k\\             \vdots & \ddots  & \vdots \\             \alpha_p \beta_1 & \ldots & \alpha_p \beta_k            \end{array}     \right) = \alpha \beta^T  
+  X=U\Sigma V^T, 
+Rank(X)=1
+u
+v
+\sigma
+  \bar{\alpha} = \gamma\sqrt\sigma u, \ \ \text{and} \ \ \bar{\beta} = \frac{1}{\gamma}\sqrt\sigma v, 
+\gamma
+\alpha
+\beta
+|\gamma|>0

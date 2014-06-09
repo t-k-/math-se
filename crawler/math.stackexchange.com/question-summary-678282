@@ -1,0 +1,13 @@
+(X, M, \mu)
+\{f_{n}\} \in L^{+}, f_{n} \rightarrow f
+\int f = \lim \int f_{n} < \infty
+\int_{E} f = \lim \int_{E} f_{n}
+E \in M
+\int f = \lim \int f_{n} = \infty
+\int_E f \leq \liminf_{n \to \infty} \int_E f_n. \tag{1}
+\int_{X \backslash E} f \leq \liminf_{n \to \infty} \int_{X \backslash E} f_n. \tag{2}
+\int f = \lim_{n \to \infty} \int f_n
+\begin{align*} \int_{E} f &= \int f - \int_{X \backslash E} f \\ &\stackrel{(2)}{\geq} \lim_{n \to \infty} \int f_n - \liminf_{n \to \infty} \int_{X \backslash E} f_n \, d\mu \\ &= \limsup_{n \to \infty} \left( \int f_n - \int_{X \backslash E} f_n \right) = \limsup_{n \to \infty} \int_E f_n.  \tag{3}\end{align*}
+(1)
+(3)
+\int_E f \leq \liminf_{n \to \infty} \int_E f_n \leq \limsup_{n \to \infty} \int_E f_n \leq \int_E f.

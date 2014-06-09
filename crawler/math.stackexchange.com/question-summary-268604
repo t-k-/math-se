@@ -1,0 +1,37 @@
+\alpha^2U_{xx}(x,t)-U_t(x,t)=-F(x,t), \quad -\infty\lt x \lt\infty \quad \mathrm{and} \quad  0\lt t\lt \infty,\\ U(x,0)=f(x), \\  \lim_{x\to \infty}U(x,t)=\mathrm{finite,} \quad\lim_{x\to -\infty}U(x,t)=\mathrm{finite,}
+F(x,t)
+f(x)
+F(x,t)=\sin(2\pi t) \ \mathrm{and}\ f(x)=0 .
+F(x,t)=0 \ \mathrm{and}\ f(x)=\delta(x), \quad \mathrm{where}\ \delta(x) \ \mathrm{is\ the Dirac\ impulse\ function}. 
+U(x,t)=V(x,t)-\dfrac{\cos2\pi t}{2\pi}
+U_x(x,t)=V_x(x,t)
+U_{xx}(x,t)=V_{xx}(x,t)
+U_t(x,t)=V_t(x,t)+\sin2\pi t
+\therefore\alpha^2V_{xx}(x,t)-V_t(x,t)-\sin2\pi t=-\sin2\pi t
+\alpha^2V_{xx}(x,t)-V_t(x,t)=0
+V(x,t)=X(x)T(t)
+\alpha^2X''(x)T(t)-X(x)T'(t)=0
+X(x)T'(t)=\alpha^2X''(x)T(t)
+\dfrac{T'(t)}{\alpha^2T(t)}=\dfrac{X''(x)}{X(x)}=-s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\alpha^2s^2\\X''(x)+s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\alpha^2ts^2}\\X(x)=\begin{cases}c_1(s)\sin xs+c_2(s)\dfrac{\pi xs}{L}&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore U(x,t)=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds+\int_0^\infty C_2(s)e^{-\alpha^2ts^2}\cos xs~ds-\dfrac{\cos2\pi t}{2\pi}
+U(x,0)=0
+\int_0^\infty C_1(s)\sin xs~ds+\int_0^\infty C_2(s)\cos xs~ds-1=0
+\int_0^\infty C_2(s)\cos xs~ds=1-\int_0^\infty C_1(s)\sin xs~ds
+\mathcal{F}_{c,s\to x}\{C_2(s)\}=1-\mathcal{F}_{s,s\to x}\{C_1(s)\}
+C_2(s)=\delta(s)-\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}
+\therefore U(x,t)=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds+\int_0^\infty\delta(s)e^{-\alpha^2ts^2}\cos xs~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}e^{-\alpha^2ts^2}\cos xs~ds-\dfrac{\cos2\pi t}{2\pi}=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}e^{-\alpha^2ts^2}\cos xs~ds-\dfrac{\cos2\pi t}{2\pi}+1
+U(x,t)=X(x)T(t)
+\alpha^2X''(x)T(t)-X(x)T'(t)=0
+X(x)T'(t)=\alpha^2X''(x)T(t)
+\dfrac{T'(t)}{\alpha^2T(t)}=\dfrac{X''(x)}{X(x)}=-s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\alpha^2s^2\\X''(x)+s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\alpha^2ts^2}\\X(x)=\begin{cases}c_1(s)\sin xs+c_2(s)\dfrac{\pi xs}{L}&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore U(x,t)=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds+\int_0^\infty C_2(s)e^{-\alpha^2ts^2}\cos xs~ds
+U(x,0)=\delta(x)
+\int_0^\infty C_1(s)\sin xs~ds+\int_0^\infty C_2(s)\cos xs~ds=\delta(x)
+\int_0^\infty C_2(s)\cos xs~ds=\delta(x)-\int_0^\infty C_1(s)\sin xs~ds
+\mathcal{F}_{c,s\to x}\{C_2(s)\}=\delta(x)-\mathcal{F}_{s,s\to x}\{C_1(s)\}
+C_2(s)=\dfrac{1}{\pi}-\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}
+\therefore U(x,t)=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds+\dfrac{1}{\pi}\int_0^\infty e^{-\alpha^2ts^2}\cos xs~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}e^{-\alpha^2ts^2}\cos xs~ds=\int_0^\infty C_1(s)e^{-\alpha^2ts^2}\sin xs~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_1(s)\}\}e^{-\alpha^2ts^2}\cos xs~ds+\dfrac{e^{-\frac{x^2}{4\alpha^2t}}}{2\alpha\sqrt{\pi t}}

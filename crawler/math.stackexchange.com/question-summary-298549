@@ -1,0 +1,15 @@
+f,g:[0,1]\rightarrow \mathbb{R}
+x_{0}(t)=g(t),0\leq t\leq 1
+(x_n)
+[0,1]
+g
+\displaystyle x_{n}(t)=f(t)+ \int_{0}^{t}x_{n-1}(s)ds\quad 0\leq t\leq 1,\;n=1,2,\cdots ,
+h(t)= f(t)+ \int_0^t f(s)ds + \sum\limits_{i \geq 1} \int_0^t \int_0^{x_1}...\int_0^{x_i} f(s)ds dx_i...dx_1
+h
+\int_0^t \int_0^{x_1} ... \int_0^{x_i} f(s)dsdx_i...dx_1 \leq ||f||_{\infty} \frac{t^{i+1}}{(i+1)!}
+x_n(t)= f(t)+ \int_0^t f(s)ds + \sum\limits_{i =1}^{n-2} \int_0^t \int_0^{x_1}...\int_0^{x_i} f(s)ds dx_i...dx_1 + \int_0^t\int_0^{x_1}...\int_0^{x_{n-1}} g(s)dsdx_{n-1}...dx_1
+h(t)-x_n(t) \leq ||g||_{\infty} \frac{t^{n-1}}{(n+1)!} + ||f||_{\infty} \sum\limits_{i \geq n-1} \frac{t^{i+1}}{(i+1)!} 
+||h-x_n||_{\infty} \leq \frac{||g||_{\infty}}{(n+1)!}+||f||_{\infty} \sum\limits_{i \geq n-1} \frac{1}{(i-1)!} 
+x_n \to h
+h
+g

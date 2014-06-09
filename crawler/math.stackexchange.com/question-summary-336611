@@ -1,0 +1,39 @@
+(F \wedge G)\models F \tag{1}
+F\models (F \vee G) \tag{2}
+(F\wedge ¬ F )\models G \tag{3}
+\begin{array}[b]{cccc} F & G & (F\wedge G) & (F\wedge G)\models F\\  0 & 0 & 0 & 1\\ 0 & 1 & 0 & 1\\ 1 & 0 & 0 & 1\\ 1 & 1 & 1 & 1  \end{array}
+(1)
+(2)
+(3)
+\models
+\begin{array}[b]{ccc} F' & G' & F'\models G'\\ 0 & 1 & 1\\ 1 & 1 & 1  \end{array}  
+\models
+\Phi \models \Psi
+\Phi
+\top
+1
+\Psi
+\top
+\begin{array}{cc|c|c} F & G & F \wedge G & F \\ \hline \top & \top & \top & \top \\ \top & \bot & \color{red}{\bot} & \color{red}{\top} \\ \bot & \top & \color{red}{\bot} & \color{red}{\bot} \\ \bot & \bot & \color{red}{\bot} & \color{red}{\bot} \end{array}
+F \wedge G
+F
+\top
+F \wedge G \models F
+F
+\top
+F \vee G
+\top
+F \models F \vee G
+\begin{array}{cc|c|c} F & G & F & F \vee G \\ \hline \top & \top & \top & \top \\ \top & \bot & \top & \top \\ \bot & \top & \color{red}{\bot} & \color{red}{\top} \\ \bot & \bot & \color{red}{\bot} & \color{red}{\bot} \end{array}
+F \lor G
+F=\top, G= \bot
+\top
+F \lor G
+F \models G
+F
+G
+\models
+F
+G
+F \models G
+F \rightarrow G

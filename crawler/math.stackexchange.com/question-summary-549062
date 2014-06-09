@@ -1,0 +1,43 @@
+(0,0,0),(R,0,0),(0,R,0),(0,0,R),(R,R,0),(0,R,R),(R,0,R),(R,R,R)
+R^3
+\int\int_{S_R}v\cdot n
+dA
+v(x,y,z) = (3x + z^2, 2y, R-z)
+(\pm1,0,0), (0,\pm1,0) ,(0,0,\pm1)
+x
+x = R
+ \int_0^R\int_0^R 3R+z^2dydz = \frac{R^3}{2} + \frac{R^4}{3} 
+x=0
+\frac{R^3}{2}
+ \int_0^R\int_0^R -z^2dydz = -\frac{R^4}{3} 
+y
+y=R
+0
+y=0
+z=0
+ \int_0^R\int_0^R 2Rdxdz = R^3/3 
+ \int_0^R\int_0^R -Rdxdy=-\frac{R^3}{6}  
+\frac{R^3}{6}
+R^3
+{\bf v}(x,y,z):=(3x+z^2,2y, R-z)
+S_1:\ x=0
+{\bf n}=(-1,0,0)
+S_2:\ x=R
+{\bf n}=(1,0,0)
+S_3:\ y=0
+{\bf n}=(0,-1,0)
+S_4:\ y=R
+{\bf n}=(0,1,0)
+S_5:\ z=0
+{\bf n}=(0,0,-1)
+S_6:\ z=R
+{\bf n}=(0,0,1)
+\int_{S_1}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R -z^2\ dz\>dy=-{R^4\over3}\ .
+\int_{S_2}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R (3R+z^2)\ dz\>dy=3R^3+{R^4\over3}\ .
+\int_{S_3}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R 0\ dx\>dz=0\ .
+\int_{S_4}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R 2R\ dx\>dz=2R^3\ .
+\int_{S_5}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R -R\ dx\>dy=-R^3\ .
+\int_{S_6}{\bf v}\cdot{\bf n}\ {\rm d}\omega=\int_0^R\int_0^R 0\ dx\>dy=0\ .
+\int_{\partial C}{\bf v}\cdot{\bf n}\ {\rm d}\omega=4R^3\ .
+{\rm div}\>{\bf v}(x,y,z)=3+2-1=4\qquad\forall\ (x,y,z)\in{\mathbb R}^3\ .
+\int_C {\rm div}\>{\bf v}(x,y,z)\ {\rm d}(x,y,z)=4{\rm vol}(C)=4R^3\ ,

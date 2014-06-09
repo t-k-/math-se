@@ -1,0 +1,62 @@
+F
+c
+F(x,x)+F(x,c-x)-F(c-x,x)-F(c-x,c-x)=0 \text{ for all } x,y 
+x,y
+c
+x
+F
+c
+x
+F
+x
+c-x
+F(x,y)
+g(x,c)
+ g(x,c) = F(x,x)+F(x,c-x)-F(c-x,x)-F(c-x,c-x) 
+\exists c
+\forall x,\ g(x,c)=0
+x=z+\frac{c}2
+\hat F(x,y)=F(x+\frac{c}2,y+\frac{c}2)
+c=0
+\hat g(z,0)=0
+\hat g(x,c)=\hat g(x,0)=G(x)
+B(x,x)=0
+B(x,y)
+\hat F(x,y)
+y
+x
+\hat F(x,y)
+B(x,y)
+B(x,y)=0
+c
+c
+c=\frac{-2D}{2A+C}
+x
+y
+x
+2A+C
+c
+ \hat g(z,c)=g(z+\frac{c}2,c)=\hat F(z,z)+\hat F(z,-z)-\hat F(-z,z)-\hat F(-z,-z) 
+ \hat F(x,y) = A(x,y)+B(x,y)+C(x,y)+D(x,y) 
+A(x,y)=A(-x,y)=A(x,-y)\\B(x,y)=-B(-x,y)=B(x,-y)\\C(x,y)=C(-x,y)=-C(x,-y)\\D(x,y)=-D(-x,y)=-D(x,-y)
+\begin{align} G(x)=&A(x,x)+A(x,-x)-A(-x,x)-A(-x,-x)\\&+B(x,x)+B(x,-x)-B(-x,x)-B(-x,-x)\\&+C(x,x)+C(x,-x)-C(-x,x)-C(-x,-x)\\&+D(x,x)+D(x,-x)-D(-x,x)-D(-x,-x)\\ =&4B(x,x) \end{align}
+ B(x,y)=\frac{\hat F(x,y)-\hat F(-x,y)+\hat F(x,-y)-\hat F(-x,-y)}4 
+ \tilde F(x,y)=\begin{cases}\frac{3\hat F(x,x)+\hat F(-x,x)-\hat F(x,-x)+\hat F(-x,-x)}4 & x=y\\ \hat F(x,y) & \text{otherwise} \end{cases} 
+ \tilde F(x,y) = \frac{3\hat F(x,y)+\hat F(-x,y)-\hat F(x,-y)+\hat F(-x,-y)}4 
+ F(x,y)=\tilde F\left(x-\frac{c}2,y-\frac{c}2\right) 
+ F(x,y)=Ax^2+By^2+Cxy+Dx+Ey+F 
+ \hat F(x,y) = Ax^2+By^2+Cxy-\frac{2BD-CD+E(2A+C)}{2A+C}y+\frac{C^2F+4ACF+4A^2F−CDE−2ADE+BD^2−AD^2}{(2A+C)^2} 
+{\mathbb R}^2
+{\mathbb R}^2=A \cup B_- \cup B_+ \cup C
+ \begin{array}{lcl} A &=& \lbrace (x,c-x) | x\in{\mathbb R} \rbrace \\ B_{-} &=& \lbrace (x,x) | x < \frac{c}{2} \rbrace \\ B_{+} &=& \lbrace (x,x) | x > \frac{c}{2} \rbrace \\ C &=& {\mathbb R}^2 \setminus (A \cup B_- \cup B_+) \end{array} 
+A
+B_-
+B_+
+f:{\mathbb R}\to \mathbb R
+g:(-\infty,\frac{c}{2}) \to \mathbb R
+ F(x,y)=\left\lbrace\begin{array}{lcl} f(x) &\text{if} & (x,y)\in A \\ g(x) &\text{if} & (x,y)\in B_{-} \\ g(c-x)+f(c-x)-f(x)  &\text{if} & (x,y)\in B_{+} \\ \text{anything you like } &\text{if} & (x,y)\in C \\ \end{array}\right. 
+F
+x
+y
+F(x,y) = xy
+c^2

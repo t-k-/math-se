@@ -1,0 +1,2 @@
+\int_0^\pi \bigg|\dfrac{\sin nx}{x}\bigg|\mathrm{d}x \ge \dfrac{2}{\pi}\bigg(1+\dfrac12+\cdots+\dfrac{1}{n}\bigg)
+ \begin{align} I &=\sum_{i=0}^{n-1} \int_{i\pi/n}^{(i+1)\pi/n} \frac{|\sin{nx}|}{|x|}\,dx \\ &=\sum_{i=0}^{n-1} \int_{0}^{\pi/n} \frac{|\sin{nx}|}{i\pi/n+ x}\,dx \\ &\gt \sum_{i=1}^{n} \int_{0}^{\pi/n} \frac{|\sin{nx}|}{i\pi/n}\,dx \\ &= \sum_{i=1}^{n} \frac{2/n}{i\pi/n} \\ &= \frac{2}{\pi}\sum_{i=1}^{n} \frac{1}{i} \end{align} 

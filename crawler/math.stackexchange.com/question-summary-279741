@@ -1,0 +1,47 @@
+[(p \rightarrow q) \land (q\rightarrow r)] \rightarrow (p\rightarrow r) \equiv T
+\vdots
+\vdots
+\equiv (p\land \lnot q) \lor (q \land \lnot r) \lor (\lnot p \lor r)\tag{picking up...}
+\equiv [[(p\land \lnot q) \lor q] \land [(p \land \lnot q) \lor \lnot r]] \lor (\lnot p \lor r)\quad \tag{distributivity x 2}
+\equiv [[(p\lor q) \land (\lnot q \lor q)] \land [(p\lor \lnot r)\land (\lnot q \lor \lnot r)]] \lor(\lnot p \lor r)\quad \quad\quad \quad\tag{distributivity x 2}
+\lnot q \lor q \equiv T
+\equiv [(p \lor q) \land T \land (p \lor \lnot r) \land (\lnot q \lor \lnot r)] \lor (\lnot p \lor r)\quad  \tag{$\lnot q \lor q \equiv T$}
+(p \lor q) \land T \equiv (p \lor q)
+\equiv [(p \lor q) \land (p \lor \lnot r) \land (\lnot q \lor \lnot r)] \lor (\lnot p \lor r)\quad \quad \quad \quad \tag{$(p \lor q) \land T \equiv (p \lor q)$} 
+\lnot q \lor q \equiv T
+T
+[(p \rightarrow q) \land (q\rightarrow r)] \rightarrow (p\rightarrow r) \equiv T
+\vdots
+\vdots
+(p \lor q) \land T \equiv (p \lor q)
+\equiv [(p \lor q) \land (p \lor \lnot r) \land (\lnot q \lor \lnot r)] \lor (\lnot p \lor r)\quad \quad \quad \quad \tag{$(p \lor q) \land T \equiv (p \lor q)$} 
+\equiv [(p \lor q) \land (\lnot q \lor \lnot r) \land (p\lor \lnot r)] \lor (\lnot p \lor r)\quad\quad\quad\quad \tag{Commutative property}
+\equiv[[(p \lor q) \land \lnot q] \lor [(p \lor q) \land \lnot r] \land (p \lor \lnot r)] \lor (\lnot p \lor r)\quad\quad\quad\quad \tag{distributivity x 2}
+\equiv[[(p\land \lnot q) \lor (q \land \lnot q) \lor (p \land \lnot r) \lor (q \land \lnot r)] \land (p \land \lnot r)] \lor (\lnot p \lor r) \quad\quad\quad\quad\quad \tag{distributivity}
+q \land \lnot q \equiv F
+\equiv [[(p \land \lnot q) \lor F \lor (p\land \lnot r) \lor (q \land \lnot r)]  \land (p \land \lnot r)] \lor (\lnot p \lor r)\quad\quad\quad\quad\quad\quad\tag{$q \land \lnot q \equiv F$}
+(p \land \lnot r) \lor F \equiv p \land \lnot r)
+\equiv [[(p \land \lnot q) \lor \color{red}{\bf{(p\land \lnot r)}}\lor (q \land \lnot r)] \land \color{red}{\bf{(p \land \lnot r)}}] \lor (\lnot p \lor r) \quad\quad\quad\quad\quad\quad\quad\quad\quad \quad\quad\quad \tag{$(p \land \lnot r) \lor F \equiv p \land \lnot r)$}
+\equiv \color{red}{\bf{(p \land \lnot r)}} \lor (\lnot p \lor r)\quad\quad\quad\quad \tag{?}
+\equiv (\lnot \lnot p \land \lnot r) \lor (\lnot p \lor r)\quad\quad\quad\quad\tag{Double negation}
+\equiv \lnot( \lnot p \lor r) \lor (\lnot p \lor r) \quad\quad\quad \tag{DeMorgan's Law}
+\lnot a \lor a \equiv T
+\quad \equiv T \quad\quad\quad\quad \tag{$\lnot a \lor a \equiv T$}
+[(p \rightarrow q) \land (q\rightarrow r)] \rightarrow (p\rightarrow r) \equiv T
+[(p \rightarrow q) \land (q \rightarrow r)] \rightarrow (p \rightarrow r)
+p
+q
+r
+(p \rightarrow q) \land (q \rightarrow r)
+p \rightarrow r
+p \rightarrow q
+(q \rightarrow r)
+p
+r
+q
+p
+q
+r
+\;\rightarrow\;
+\;\lnot p\;
+\;r\;

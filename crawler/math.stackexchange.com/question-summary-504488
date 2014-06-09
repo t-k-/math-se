@@ -1,0 +1,24 @@
+U\subset\mathbb{R}^n
+f:U\to\mathbb{R}
+C^\infty_c(U)
+\frac{f(x+te_i)-f(x)}{t}\to\frac{\partial f}{\partial x_i}(x)\text{ uniformly as }h\to 0\;\;\;[\#]
+\varepsilon>0
+\delta>0
+\varepsilon
+x
+x,x+te_i\in U, \; 0<|t|<\delta \Rightarrow \left|\frac{f(x+te_i)-f(x)}{t}-\frac{\partial f}{\partial x_i}(x)\right|<\varepsilon
+g(x)=\left\{\begin{matrix} f(x), &\text{if } x\in U\\  0, & \text{if }x\in\mathbb{R}^n\backslash U \end{matrix}\right.\;\;\;(1)
+g\in C^1_c(\mathbb{R}^n)
+\frac{\partial g}{\partial x_i}\in C^1_c(\mathbb{R}^n)
+\frac{\partial g}{\partial x_i}
+\varepsilon>0
+\delta>0
+\varepsilon
+x
+y,x\in\mathbb{R}^n,\;\|y-x\|<\delta\Rightarrow \left|\frac{\partial g}{\partial x_i}(y)-\frac{\partial g}{\partial x_i}(x)\right|<\varepsilon\;\;\;(2)
+x\in\mathbb{R}^n
+t\in\mathbb{R}
+\theta_{x,t}\in (0,1)
+\frac{\partial g}{\partial x_i}(x+\theta_{x,t}te_i)=\frac{g(x+te_i)-g(x)}{t}\;\;\;(3)
+\begin{align*}   x\in\mathbb{R}^n,\;0<|t|<\delta &\Rightarrow\|(x+\theta_{x,t}te_i)-x\|<|t|<\delta\\            &\overset{(2)}\Rightarrow \left|\frac{\partial g}{\partial x_i}(x+\theta_{x,t}te_i)-\frac{\partial g}{\partial x_i}(x)\right|<\varepsilon\\            &\overset{(3)}\Rightarrow \left|\frac{g(x+te_i)-g(x)}{t}-\frac{\partial g}{\partial x_i}(x)\right|<\varepsilon \end{align*}
+\begin{align*} x,x+te_i\in U,\;0<|t|<\delta &\Rightarrow  \left|\frac{g(x+te_i)-g(x)}{t}-\frac{\partial g}{\partial x_i}(x)\right|<\varepsilon \\ &\overset{(1)}\Rightarrow \left|\frac{f(x+te_i)-f(x)}{t}-\frac{\partial f}{\partial x_i}(x)\right|<\varepsilon \end{align*}

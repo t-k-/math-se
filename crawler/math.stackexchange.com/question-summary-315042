@@ -1,0 +1,14 @@
+x_t
+y_t
+C
+R
+ V = [y_t-Cx_t]^TR^{-1}[y_t-Cx_t] 
+V(C) = (Cx-y)^T R^{-1} (Cx-y)
+DV(C)(\Delta) = 2 (Cx-y)^T R^{-1} \Delta x
+DV(C)(\Delta) = 2\operatorname{tr}(x (Cx-y)^T R^{-1} \Delta)
+R
+dC
+V
+dC_{i,j} = \delta_m(i)\delta_n(j)
+\frac{\partial V}{\partial C_{m,n}}.
+dV = (-dCx_t)^TR^{-1}(y_t-Cx_t) + (y_t-Cx_t)^TR^{-1}(-dCx_t) = -2x_t^T(dC)^TR^{-1}(y_t-Cx_t),

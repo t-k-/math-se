@@ -1,0 +1,78 @@
+ax^n
+p
+\displaystyle\int_{-\infty}^{\infty}\sin ax^n\,dx
+p(x)\sim ax^n
+x
+\sin p(x)\sim \sin ax^n
+\displaystyle\int_{-\infty}^{\infty}\sin p(x)\,dx
+\displaystyle \int_{-\infty}^{\infty}\sin ax^n\,dx
+n>1
+ax^n
+p
+x,\;p(x)\sim ax^n
+\sin p(x)\sim \sin ax^n
+a>0
+\mathbb{R}^+
+\int_{0}^{\infty} \sin ax^n\,dx
+t=ax^n:
+ \int_0^{\infty} \sin x^n\,dx=\frac{1}{\sqrt[n]{a}n}\int_0^{ \infty} t^{\frac{1}{n}-1}\sin t\,dt
+\pi,
+t=w+k\pi:
+\sum_{k\geq 0} \frac{1}{\sqrt[n]{a}n} \int_{k\pi}^{(k+1)\pi} t^{\frac{1}{n}-1}\sin t\,dt=\sum_{k\geq 0} \frac{(-1)^k}{\sqrt[n]{a}n}\underbrace{\int_0^{\pi}\frac{\sin w}{(w+k\pi)^{ 1-\frac{1}{n}}}\,dw}_{s_k}
+0<s_k<\int_0^{\pi}\frac{dw}{(w+k\pi)^{1-\frac{1}{n}}}=n\sqrt[n]{\pi}\Big((k+1)^{\frac{1}{n}}-k^{\frac{1}{n}}\Big)\to 0\;\;\text{as}\;k\to \infty
+\sin w>0
+w\in (0,\pi):
+\Big(w+(k+1)\pi\Big)^{\frac{1}{n}-1}<\Big(w+k\pi\Big)^{\frac{1}{n}-1}\Rightarrow s_{k+1}<s_k
+s_k
+ \displaystyle\sum_{k\geq 0} (-1)^k s_k
+f(x)
+\lim_{x \to \infty}f(x)=\infty
+f'(x)
+[N, \infty)
+N>0
+>1
+x_1>N
+f(x_0)=2 k \pi
+k \in \mathbb{N}
+f
+\infty
+m \in \mathbb{N}
+x_m
+x
+x_m
+x_{m+1}
+\int_{x_0}^x \sin(f(t))dt
+\int_{x_0}^{x_m} \sin(f(t))dt
+\int_{x_0}^{x_{m+1}} \sin(f(t))dt
+x_m
+u=f(t)
+ \int_{x_0}^{\infty} \sin \left(f(x)\right) dx  
+ f(x_m)= (2k+m)\pi. 
+ \sum_{m=1}^{\infty} \int_{x_m}^{x_{m+1}} \sin(f(t))dt. 
+\int_{x_m}^{x_{m+1}} \sin(f(t))dt = \int_{(2k+m)\pi}^{(2k+m+1)\pi} \frac{\sin(u)}{f'(f^{-1}(u))} du.
+f
+f'(f^{-1}(u))
+m
+f'(x)\to \infty
+ |\int_{x_m}^{x_{m+1}} \sin(f(t))dt | > |\int_{x_{m+1}}^{x_{m+2}} \sin(f(t))dt| 
+ \lim_{m\to\infty} \int_{(2k+m)\pi}^{(2k+m+1)\pi} \frac{\sin(u)}{f'(f^{-1}(u))} du =0, 
+N
+p'(x) \neq 0
+|x| > N
+\int_N^{\infty} \sin p(x)\,dx
+\int_{-\infty}^{-N} \sin p(x)\,dx
+M > N
+p'(x)\sin p(x)
+-\cos p(x)
+{1 \over p'(x)}
+M \rightarrow \infty
+|\cos(p(M))| \leq 1
+p'(M) \rightarrow \infty
+M \rightarrow \infty
+{\displaystyle {p''(x) \over p'(x)^2}}
+p(x)
+2
+|\cos p(x)| \leq 1
+\int_N^M \sin p(x)\,dx = \int_N^M p'(x)\sin p(x) {1 \over p'(x)}\,dx
+\int_N^M p'(x)\sin p(x) {1 \over p'(x)}\,dx = -{\cos p(M) \over p'(M)} + {\cos p(N) \over p'(N)} - \int_N^M \cos p(x){p''(x) \over p'(x)^2}\,dx
+\int_N^{\infty} \sin p(x) \,dx =  {\cos p(N) \over p'(N)} - \int_N^{\infty} \cos p(x){p''(x) \over p'(x)^2}\,dx

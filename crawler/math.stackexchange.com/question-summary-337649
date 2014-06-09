@@ -1,0 +1,31 @@
+C
+  \sqrt{1-x^2-y^2}=z, \quad 4x^2+9y^2 = 1. 
+x=\frac{1}{2}\cos\varphi
+y=\frac{1}{3}\sin\varphi
+z=\sqrt{1-\frac{\cos^2\varphi}{4}-\frac{\sin^2\varphi}{9}}
+\varphi
+0
+2\pi
+\int_0^{2\pi}F(\varphi)\,d\varphi
+F(\varphi)
+z
+\frac{z\arctan(z)}{\sqrt{1+z^2}}
+x
+z^3
+y
+z^3
+ \int_C\dots = \int_C + (y-z^3)\,dx - (2x+z^3)\,dy. 
+ \int_C\dots = \int_C  y\,dx - (2x+z^3)\,dy = \int_C y\,dx - 2x\,dy. 
+ \int_C y\,dx - 2x\,dy = \int_0^{2\pi}-\frac{1}{6}\sin^2\varphi -2\frac{1}{6}\cos^2\varphi \, d\varphi = -\frac{1}{6}\int_0^{2\pi}1+\cos^2\varphi\,d\varphi = -\frac{\pi}{2} 
+-\frac{\pi}{2}
+C
+W:=\int_C \bigl(P\ dx+Q\ dy+ R\ dz\bigr)
+P
+Q
+R
+\tilde R(-\phi)=\tilde R(\phi)
+W=-{\pi\over2}
+x(\phi+\pi)=-x(\phi),\quad y(\phi+\pi)=-y(\phi),\quad z(\phi)=z(-\phi)=z(\phi+\pi)\ .
+\dot x(\phi+\pi)=-\dot x(\phi),\quad \dot y(\phi+\pi)=-\dot y(\phi),\quad \dot z(-\phi)=-\dot z(\phi)\ .
+\eqalign{\int_C P\ dx&=\int_0^{2\pi}(y(\phi)-z^3(\phi))\dot x(\phi)\ d\phi=\int_0^{2\pi}y(\phi)\ \dot x(\phi)\ d\phi=-{1\over6}\int_0^{2\pi}\sin^2\phi\ d\phi=-{\pi\over6},\cr \int_C Q\ dy&=\int_0^{2\pi}(-2x(\phi)-z^3(\phi))\dot y(\phi)\ d\phi=-2 \int_0^{2\pi}x(\phi)\ \dot y(\phi)\ d\phi=\ldots=-{\pi\over3},\cr \int_C R\ dz&=\int_{-\pi}^\pi \tilde R(\phi)\dot z(\phi)\ d\phi=0\cr}
+-1.5707963267948961 \approx -\pi/2

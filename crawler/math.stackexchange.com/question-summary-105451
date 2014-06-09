@@ -1,0 +1,36 @@
+(X,\mu)
+(Y,\nu)
+\sigma
+L^2(X)
+L^2(Y)
+\{f_n\}
+L^2(X)
+\{g_m\}
+L^2(Y)
+\{f_n g_m\}
+L^2(X\times Y)
+h\in L^2(X\times Y)
+h(x,y) = \sum_m \sum_n \langle h , f_n g_m\rangle = \sum_m \sum_n \int_X \int_Y h(x,y) f_n(x)g_m(y) d\nu d\mu
+x\mapsto h(x,y) \in L^2(X)
+y
+y\mapsto h(x,y)
+h(x,y) = \sum_{m=1} ^\infty (\int_X [\sum_{n=1} ^\infty (\int_Y h(x,y)g_n(y) d\nu)g_n(y) f_m(x)] d\mu)  f_m(x)
+\{f_n\times g_m\}
+ \langle f_n\times g_m, f_s\times g_t\rangle = \langle f_n,f_s\rangle\,\langle g_m,g_t\rangle =\delta_{n,s}\,\delta_{m,t} = \delta_{(n,m),(s,t)}. 
+\langle h, f_n\times g_m\rangle = 0 
+n,m
+n
+x\mapsto\int_Y h(x,y)\,g_m(y)\,d\nu(y)
+m
+E_m
+E
+E
+x\in X\setminus E
+h(x,y)=0
+|h|^2
+h=0
+L^2(X\times Y)
+ 0=\int_X\left(\int_Y h(x,y)\,g_m(y)\,d\nu(y)\right)\,f_n(x)\,d\mu(x); 
+ E_m=\{x\in X: \int_Y h(x,y)\,g_m(y)\,d\nu(y)\ne0\}. 
+ \int_Y h(x,y)\,g_m(y)\,d\nu(y)=0\ \ \ \mbox{for all } m. 
+ \int_{X\times Y} |h(x,y)|^2\, d(\mu\times\nu)=\int_X\int_Y|h(x,y)|^2\,d\nu(y)\,d\mu(x) =\int_{X\setminus E}\int_Y|h(x,y)|^2\,d\nu(y)\,d\mu(x)=0. 

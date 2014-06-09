@@ -1,0 +1,7 @@
+x\in\big(\frac{1}{k+1},\frac{1}{k}\big]
+\frac{1}{x}\in[k,k+1)
+\left\lfloor{1\over x}\right\rfloor=k
+ \left\lfloor{1\over x}\right\rfloor^{-1}=\frac{1}{k}, \quad \text{for all}\,\, x\in\Big(\frac{1}{k+1},\frac{1}{k}\Big]. 
+ \int_{1/n}^1{\left\lfloor{1\over x}\right\rfloor}^{-1}dx=\sum_{k=1}^{n-1} \int_{1/(k+1)}^{1/k}{\left\lfloor{1\over x}\right\rfloor}^{-1}dx=\sum_{k=1}^{n-1} \int_{1/(k+1)}^{1/k}\frac{1}{k}dx=\sum_{k=1}^{n-1}\frac{1}{k}\cdot\frac{1}{k(k+1)}, 
+ \int_0^1 {\left\lfloor{1\over x}\right\rfloor}^{-1}dx=\lim_{n\to\infty} \int_{1/n}^1{\left\lfloor{1\over x}\right\rfloor}^{-1}dx= \sum_{n=1}^\infty \frac{1}{n^2(n+1)}. 
+ \sum_{n=1}^\infty \frac{1}{n(n+1)}=\sum_{n=1}^\infty\left(\frac{1}{n}-\frac{1}{n+1}\right)=1 \quad\text{and}\quad \frac{1}{n^2}-\frac{1}{n(n+1)}=\frac{1}{n^2(n+1)}. 

@@ -1,0 +1,19 @@
+f \in C^\infty\bigl(\mathbb R^n \times (0,+\infty)\bigr)
+x
+h
+\alpha>0
+F(t) = \int_\Omega f(x,t) \, dx
+\alpha = 0
+\alpha > 0
+    f(x,t) \sim t^{-\alpha} e^{ith(x)} \sum\limits_{k=0}^{+\infty} a_k(x)t^{-k}, \quad t \to + \infty, \;\text{uniformly w.r.t. $x$} 
+    F_k(t) = \int\limits_{\Omega} e^{it h(x)}a_k(x) \, dx, \quad \Omega \Subset \mathbb R^n, 
+    F_k(t) \sim t^{-\alpha} e^{i t \lambda } \sum\limits_{l=0}^\infty b_{k,l} t^{-l}, \quad t \to + \infty, \;\; \lambda \in \mathbb R, \;\; k \in \mathbb N \cup \{0\}. 
+t
+\Omega
+t
+N
+F_k(t)
+F(t)
+ \left| {F\left( t \right) - \sum\limits_{k = 0}^{N - 1} {F_k \left( t \right)t^{ - k - \alpha } } } \right| = \left| {\int_\Omega  {\left( {f\left( {x,t} \right) - \sum\limits_{k = 0}^{N - 1} {a_k \left( x \right)e^{ith\left( x \right)} t^{ - k - \alpha } } } \right)dx} } \right| 
+  \le \int_\Omega  {\left| {f\left( {x,t} \right) - \sum\limits_{k = 0}^{N - 1} {a_k \left( x \right)e^{ith\left( x \right)} t^{ - k - \alpha } } } \right|dx}  \le \int_\Omega  {C_N \left| {e^{ith\left( x \right)} } \right|t^{ - N - \alpha } dx}  = {\mathop{\rm Vol}\nolimits} \left( \Omega  \right)C_N t^{ - N - \alpha } , 
+ F\left( t \right) = \sum\limits_{k = 0}^{N - 1} {F_k \left( t \right)t^{ - k - \alpha } }  + \mathcal{O}\left( {t^{ - N - \alpha } } \right), 

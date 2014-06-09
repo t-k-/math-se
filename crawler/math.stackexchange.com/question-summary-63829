@@ -1,0 +1,6 @@
+A(a)=\int_{-\infty}^{\infty}e^{-x^2/2}\log\left(\int_{x-a}^{x+a}e^{-t^2/2}dt\right)dx
+\begin{align} A(a)&=\int_{-\infty}^{0}e^{-x^2/2}\log\left(\int_{x-a}^{x+a}e^{-t^2/2}dt\right)dx+\int_{0}^{\infty}e^{-x^2/2}\log\left(\int_{x-a}^{x+a}e^{-t^2/2}dt\right)dx\\ &=\int_{-\infty}^{0}e^{-x^2/2}\log\left(2ae^{-y_0^2/2}\right)dx+\int_{0}^{\infty}e^{-x^2/2}\log\left(2ae^{-y_1^2/2}\right)dx\\ &~~~~~~~~\text{where }y_0,y_1\in[x-a,x+a]\text{ in respective integrals by MVT}\\ &\geq \sqrt{2\pi}\log(2a)+\int_{-\infty}^{0}e^{-x^2/2}\log\left(e^{-(x-a)^2/2}\right)dx+\int_{0}^{\infty}e^{-x^2/2}\log\left(e^{-(x+a)^2/2}\right)dx\\ \end{align} 
+y_0=x-a
+y_1=x+a
+[x-a,x+a]
+ \sqrt{2 \pi} \left(\ln(2a) - \frac{1}{2} - \frac{a^4}{36} + \frac{a^6}{81} - \frac{37 a^8}{5400} + \frac{31 a^{10}}{6075} - \frac{128831 a^{12}}{26790750} + \ldots \right) 

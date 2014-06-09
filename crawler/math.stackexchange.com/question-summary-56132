@@ -1,0 +1,62 @@
+81,123,167,229,295,381,473,587, 709, 855,1011,1193,1387,1609,1845,2111,2393,2707,3039,..
+ 42 ,44 ,62, 66 ,86 ,92,114, 122,146, 156,   182 ,    194,  222,….
+ 2 ,   18,    4 ,   20,     6,   22,      8 ,    24,    10,    26,     12,      28,,…
+16 ,  -14,  16,  -14,  16,    -14,   16,    -14 ,   16 ,   -14,    16,…
+-30,   30 , -30 ,   30,   -30,   30,    -30,   30,      -30 , 30,…
+81,167,295,473,709,1011,\dots
+123,229,381,587,855,1193,\dots
+86,128,178,236,302,\dots
+42,50,58,66,\dots
+8,8,8,\dots
+106,152,206,268,338,\dots
+46,54,62,70,\dots
+8,8,8,\dots
+x_0,x_1,\dots
+\Delta x_0,\Delta x_1,\dots
+\Delta^{(2)} x_0,\Delta^{(2)} x_1,\dots
+8
+\Delta^{(2)} x_n = 42 + 8n
+\begin{align*} \Delta x_n &= 86 + \sum\limits_{k=0}^{n-1} (42 + 8k)\\ &= 86 + 42n + 8\sum\limits_{k=0}^{n-1}k\\ &= 86 + 42n + 8 \left(\frac{n(n-1)}{2}\right)\\ &= 86 + 42n + 4n(n-1)\\ &= 86 + 38n + 4n^2. \end{align*}
+\begin{align*} x_n &= 81 + \sum\limits_{k=0}^{n-1}(86 + 38k + 4k^2)\\ &= 81 + 86n + 38\sum\limits_{k=0}^{n-1}k + 4\sum\limits_{k=0}^{n-1}k^2\\ &= 81 + 86n + 19n(n-1) + 4\left(\frac{(n-1)n(2n-1)}{6}\right)\\ &= 81 + 67n + 19n^2 + \frac{2}{3}n(2n^2-3n+1)\\ &= 81 + \frac{203}{3}n + 17n^2 + \frac{4}{3}n^3. \end{align*}
+y_n = 123+\frac{257}{3}n+19n^2+\frac{4}{3}n^3
+a_0,a_1,\dots
+x_n = a_{2n}
+y_n = a_{2n+1}
+n
+  
+n
+18-(-1)^n
+17
+n
+19
+n
+230-27(-1)^n
+203
+n
+257
+n
+102-21(-1)^n
+81
+n
+123
+n
+\left\lfloor \frac{n}{2} \right\rfloor = \frac{n}{2}+\frac{(-1)^n-1}{4} = \frac{2n-1+(-1)^n}{4}
+a_n
+a_n = p(n)+(-1)^nq(n)
+p
+q
+a_{2n} = 81 + \frac{203}{3}n + 17n^2 + \frac{4}{3}n^3,
+a_{2n+1} = 123+\frac{257}{3}n+19n^2+\frac{4}{3}n^3.
+a_n = 81 + \frac{203}{3}\left\lfloor \frac{n}{2} \right\rfloor + 17 \left\lfloor \frac{n}{2} \right\rfloor^2 + \frac{4}{3} \left\lfloor \frac{n}{2} \right\rfloor^3
+a_n =$  $123 + \frac{257}{3} \left\lfloor \frac{n}{2} \right\rfloor + 19 \left\lfloor \frac{n}{2} \right\rfloor^2 + \frac{4}{3} \left\lfloor \frac{n}{2} \right\rfloor^3
+a_n = 102-21(-1)^n + \frac{230-27(-1)^n}{3}\left\lfloor \frac{n}{2} \right\rfloor + (18-(-1)^n)\left\lfloor \frac{n}{2} \right\rfloor^2 + \frac{4}{3}\left\lfloor \frac{n}{2} \right\rfloor^3.
+\Delta a_n = a_{n+1} - a_n
+\Delta^{(k)}a_n = \Delta^{(k-1)} a_{n+1} - \Delta^{(k-1)} a_n
+k^{\text{th}}
+ \Delta^{(k-1)}a_n = \sum_{i=1}^{n-1} \Delta^{(k)}a_i + \Delta^{(k-1)}a_1 
+2, 18, 4, 20, 6, 22, ...
+ \Delta^{(2)}a_n = n+1 + 15 \left( \frac{1 + (-1)^n}2 \right) 
+ \Delta^{(1)}a_n = \sum_{i=1}^{n-1} \Delta^{(2)} a_i + 42 = \sum_{i=1}^{n-1} \left( i+1 + 15 \left( \frac{1 + (-1)^i}2 \right) \right) + 42 
+a_n
+ \Delta a_n = n^2 + 8n + \frac{67}2 - \frac{15}2 \left( \frac{1+(-1)^n}2 \right). 
+ \sum_{i=1}^k i = \frac{k(k+1)}2, \qquad \sum_{i=1}^k i^2 = \frac{k(k+1)(2k+1)}6, \qquad \sum_{i=1}^{n-1} (-1)^i = - \left( \frac{1 + (-1)^n}2 \right) 

@@ -1,0 +1,36 @@
+e^{tA}
+(0,1)
+ (-1,0)
+e^{tA}
+ \frac{d}{dt} Y(t) = AY(t), \quad t\in\Bbb R,\\Y(0)=I. 
+ \frac{d}{dt} \begin{pmatrix}x(t)\\y(t)\end{pmatrix}  = A \begin{pmatrix}x(t)\\y(t)\end{pmatrix}=\begin{pmatrix}y(t)\\-x(t)\end{pmatrix}, \quad t\in\Bbb R,\\x(0)=1,\quad y(0)=0\tag{1}. 
+ \frac{d}{dt} \begin{pmatrix}x(t)\\y(t)\end{pmatrix}  = A \begin{pmatrix}x(t)\\y(t)\end{pmatrix}=\begin{pmatrix}y(t)\\-x(t)\end{pmatrix}, \quad t\in\Bbb R,\\x(0)=0,\quad y(0)=1\tag{2}. 
+x^2(t)+y^2(t)=1
+\begin{pmatrix}x_1(t)\\y_1(t)\end{pmatrix}=\begin{pmatrix}\cos t\\-\sin t\end{pmatrix},\quad \begin{pmatrix}x_2(t)\\y_2(t)\end{pmatrix}=\begin{pmatrix}\sin t\\ \cos t\end{pmatrix}.
+Y(t)=e^{tA} =  \begin{pmatrix}\cos t&\sin t\\-\sin t&\cos t\end{pmatrix}.
+\begin{bmatrix} 0&1\\ -1&0\\ \end{bmatrix}^2=\begin{bmatrix} -1&0\\0&-1 \end{bmatrix}.
+ \begin{aligned} e^{tA}=\sum_{n=0}^\infty \frac{A^n}{n!}t^n &= \sum_{n=0}^\infty \frac{A^{2n}}{(2n)!} t^{2n}+\sum_{n=0}^\infty \frac{A^{2n+1}}{(2n+1)!} t^{2n+1}\\ &=\sum_{n=0}^\infty \frac{(-1)^n I}{(2n)!}t^{2n} + \sum_{n=0}^\infty \frac{(-1)^n A}{(2n+1)!} t^{2n+1} \end{aligned}
+A=\begin{bmatrix}0&1\\-1&0\\\end{bmatrix}, \,I=\begin{bmatrix}1&0\\0&1\end{bmatrix}.
+e^{tA}=I\cos t + A\sin t = \begin{bmatrix}\cos t&-\sin t\\ \sin t&\cos t\end{bmatrix}.
+e^{tA}=\sum\limits_{k=0}^\infty \cfrac{A^k}{k!}
+A^k
+P
+PAP^{-1}=D+N
+D
+N
+e^{tA}=P^{-1}e^{tD}e^{tN}P
+e^{tD}
+e^{tN}
+N=0
+A^2=-I
+\def\i{\mathbf i}\i,-\i
+v_1=\binom 1{-\i}
+v_2=\binom1\i
+\exp(tA)\cdot v_1=e^{t\i}v_1
+\exp(tA)\cdot v_2=e^{-t\i}v_2
+e_1,e_2
+e_1=\frac12(v_1+v_2)
+e_2=\frac\i2(v_1-v_2)
+  \begin{align}  \exp(tA)\cdot e_1=\frac12(e^{t\i}v_1+e^{-t\i}v_2)  &=\frac{e^{t\i}+e^{-t\i}}2e_1+\frac{-\i e^{t\i}+\i e^{-t\i}}2e_2  \\&=\cos(t)e_1+\sin(t)e_2 \end{align} 
+  \begin{align}  \exp(tA)\cdot e_2=\frac\i 2(e^{t\i}v_1-e^{-t\i}v_2)  &=\frac{\i e^{t\i}-\i e^{-t\i}}2e_1+\frac{ e^{t\i}+ e^{-t\i}}2e_2  \\&=-\sin(t)e_1+\cos(t)e_2. \end{align} 
+ \exp(tA)=\begin{pmatrix}\cos(t)&-\sin(t)\\\sin(t)&\cos(t)\end{pmatrix}. 

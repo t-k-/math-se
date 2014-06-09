@@ -1,0 +1,34 @@
+n 
+0
+\sum_{i=0}^k \frac{(-1)^{k-i}k! (n+i)^{k-1}}{i!(k-i)!}
+0
+L
+\mathbb{N}
+a
+L
+a = (a_k)_{k\in\mathbb{N}} \quad\mapsto\quad L(a)_k = a_{k+1},\;k \in \mathbb{N} 
+ \sum_{i=0}^k (-1)^{k-i} \binom{k}{i} (n+i)^{k-1} = \sum_{i=0}^k (-1)^{k-i} \binom{k}{i} L^i(n^{k-1}) = (L - 1)^k(n^{k-1}) = 0
+n^{k-1}
+n
+k-1
+k^{th}
+P(n)
+m
+P(n)
+P(n+1) - P(n)
+m-1
+k \ge 2
+Q_1(z)=0
+z
+z
+ P_k(z):=\sum_{i=0}^k\frac{(-1)^{k-i}k!(z+i)^{k-1}}{i!(k-i)!}=(-1)^k\sum_{i=0}^k(-1)^i{k\choose i}(z+i)^{k-1}=(-1)^kQ_k(z), 
+ Q_k(z)=\sum_{i=0}^k(-1)^i{k\choose i}(z+i)^{k-1}. 
+ Q_1(z)=1-1=0 \quad \forall z 
+ Q_k(z)=Q_{k-1}(z)-Q_{k-1}(z+1)=0 \quad \forall k \ge 2, \forall z. 
+ P_k(z)=0 \quad \forall k \ge 1. 
+(1)
+(2)
+m\lt n
+\displaystyle\binom{m}{j}\begin{Bmatrix}j\\n\end{Bmatrix}=0
+m\lt n
+ \begin{align} \sum_{k=0}^n(-1)^{n-k}\binom{n}{k}(x+k)^m &=\sum_{k=0}^n\sum_{j=0}^m(-1)^{n-k}\binom{n}{k}\binom{m}{j}x^{m-j}k^j\\ &=\sum_{k=0}^n\sum_{j=0}^m\sum_{i=0}^j(-1)^{n-k}\binom{n}{k}\binom{m}{j}x^{m-j}\binom{k}{i}\begin{Bmatrix}j\\i\end{Bmatrix}i!\\ &=\sum_{j=0}^m\sum_{i=0}^j\binom{m}{j}x^{m-j}\,[n=i]\,\begin{Bmatrix}j\\i\end{Bmatrix}i!\\ &=\sum_{j=0}^m\binom{m}{j}x^{m-j}\begin{Bmatrix}j\\n\end{Bmatrix}n!\\ &=0 \end{align} 

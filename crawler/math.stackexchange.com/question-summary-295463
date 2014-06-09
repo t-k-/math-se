@@ -1,0 +1,8 @@
+z = f(x,y)
+\frac{\partial z}{\partial x} = \frac{f(x+h,y)-f(x,y)}{h}
+\frac{\partial z}{\partial y} = \frac{f(x,y+h)-f(x,y)}{h}
+\frac{\partial z}{\partial x} \approx\frac{f(x+h,y)-f(x,y)}{h}
+\frac{\partial z}{\partial y} \approx \frac{f(x,y+h)-f(x,y)}{h}
+\frac{\partial z}{\partial y} \approx \frac{f(x,y+h)-f(x,y)}{h}\approx \frac{f(x,y)-f(x,y-h)}{h}\approx \frac{f(x,y+h)-f(x,y-h)}{2h}
+\frac{\partial z}{\partial x} =\lim_{h\rightarrow 0}\frac{f(x+h,y)-f(x,y)}{h}
+\frac{\partial z}{\partial y}= \lim_{h\rightarrow 0}\frac{f(x,y+h)-f(x,y)}{h}

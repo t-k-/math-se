@@ -1,0 +1,11 @@
+U:SIM(n)=\mathbb{R}^n \rtimes(\mathbb{R}_*^+ \times SO(n)) \longrightarrow L^2(\mathbb{R}^n, d^nx)
+[U(b,a,R)s](x)=a^{-n/2}s(a^{-1}R^{-1}(x-b))
+\psi \in L^2(\mathbb{R}^n, d^nx)
+c_\psi=(2 \pi)^n A_{n-1} \int_{\mathbb{R}^n}|\hat{\psi}(k)|^2 \frac{d^n k}{|k|^n}<\infty
+|k|^2=k.k
+A_{n-1}= \prod_{k=2}^{n-1} \frac{2\pi^{k/2}}{\Gamma(k/2)}
+SO(n-1)
+I=\int_{SIM(n)} |\langle U(b,a,R)\psi|\psi\rangle|^2 \frac{da}{a^{n+1}}dRd^nb= \int_{SIM(n)} |\langle \widehat{U(b,a,R)\psi}|\hat{\psi}\rangle|^2 \frac{da}{a^{n+1}}dRd^nb= \\ \int_0^{\infty} \int_{SO(n)}\int_{\mathbb{R}^n} |\langle \widehat{U(b,a,R)\psi}|\hat{\psi}\rangle|^2d^nb\frac{da}{a^{n+1}}dR. 
+\int_{\mathbb{R}^n} |\langle \widehat{U(b,a,R)\psi}|\hat{\psi}\rangle|^2d^nb= \int_{\mathbb{R}^n} \langle \widehat{U(b,a,R)\psi}|\hat{\psi}\rangle \langle \hat{\psi}|\widehat{U(b,a,R)\psi}\rangle d^nb=\int_{\mathbb{R}^n}(\int_{\mathbb{R}^n}a^{n/2}\hat{\psi}(aR^{-1}x)\overline{\hat{\psi}(x)}e^{-i \langle x|b \rangle}d^nx \int_{\mathbb{R}^n}a^{n/2}\overline{\hat{\psi}(aR^{-1}y)} \hat{\psi}(y) e^{-i \langle y|b \rangle}d^ny)d^nb = a^n (2\pi)^n \int_{\mathbb{R}^n} \hat{\Psi}(b) \overline{\hat{\Psi}(b)} d^nb = a^n (2\pi)^n \int_{\mathbb{R}^n} |\hat{\Psi}(b)|^2 d^nb = a^n (2\pi)^n \int_{\mathbb{R}^n} |\Psi(x)|^2 d^nx,
+\Psi(x)= \hat{\psi}(aR^{-1}x)\overline{\hat{\psi}(x)}. 
+I= (2\pi)^n \int_0^{\infty} \int_{SO(n)}\int_{\mathbb{R}^n} |\hat{\psi}(aR^{-1}x)|^2 |\hat{\psi}(x)|^2 d^nx \frac{da}{a}dR= (2\pi)^n \int_{\mathbb{R}^n} |\hat{\psi}(x)|^2 \int_0^{\infty} \int_{SO(n)} |\hat{\psi}(aR^{-1}x)|^2\frac{da}{a}dR d^nx= ??? 

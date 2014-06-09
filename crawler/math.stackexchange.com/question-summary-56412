@@ -1,0 +1,17 @@
+x_t
+{\large dx_t = \theta (\mu - x_t ) dt + \sigma dW_t }
+\theta,\mu, \sigma > 0
+W_t
+\mu, \sigma
+\theta
+{\large x_t = x_0 e^{-\theta t} + \mu (1 - e^{-\theta t}) + \displaystyle\int_{0}^{t} \sigma e^{\theta(s-t)} dW_s}
+{\large E(x_t) = x_o e^{-\theta t} + \mu (1 - e^{-\theta t}) } 
+\mu = \mu(t)
+\mu
+t
+y_t=\mathrm{e}^{\theta t}x_t
+u
+u(t)=E(x_t)
+ \mathrm{e}^{\theta t}x_t = x_0 + \int_{0}^{t} \theta\, \mathrm{e}^{\theta s}\mu(s)\,\mathrm{d}s +\sigma \int_{0}^{t} \mathrm{e}^{\theta s}\, \mathrm{d}W_s, 
+ E(x_t) = x_0 \mathrm{e}^{-\theta t} + \int_{0}^t\theta\, \mathrm{e}^{\theta (s-t)}\mu(s)\,\mathrm{d}s. 
+ u'(t)=\theta\cdot(\mu(t)-u(t)),\quad u(0)=x_0. 

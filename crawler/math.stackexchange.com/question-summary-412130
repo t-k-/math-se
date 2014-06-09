@@ -1,0 +1,8 @@
+n
+\forall i,p_i=\frac{1}{n}
+n\epsilon\ll 1
+(\underbrace{\frac{1}{n},\ldots,\frac{1}{n}}_{n-2\text{ times}},\frac{1}{n}+\frac{\epsilon}{2},\frac{1}{n}-\frac{\epsilon}{2})
+(\underbrace{\frac{1}{n}-\frac{\epsilon}{n},\ldots,\frac{1}{n}-\frac{\epsilon}{n}}_{n/2\text{ times}},\underbrace{\frac{1}{n}+\frac{\epsilon}{n},\ldots,\frac{1}{n}+\frac{\epsilon}{n}}_{n/2\text{ times}})
+\sum_{i=1}^n|\frac{1}{n}-p_i|=\epsilon
+H(p_1,\ldots,p_n)=-\sum_{i=1}^np_i\log_2p_i
+H=-(n-2)\frac 1n \log_2 \frac 1n-(\frac 1n + \frac {\epsilon}2)\log_2 (\frac 1n + \frac {\epsilon}2)- (\frac 1n - \frac {\epsilon}2)\log_2 (\frac 1n - \frac {\epsilon}2) \\=-(n-2)\frac 1n \log_2 \frac 1n-(\frac 1n + \frac {\epsilon}2)[\log_2 \frac 1n +\log_2 (1+\frac {n\epsilon}2)]- (\frac 1n - \frac {\epsilon}2)[\log_2 \frac 1n - \log_2 (1-\frac {n\epsilon}2)] \\ \approx-\log_2\frac 1n-\frac {n\epsilon^2}{2 \ln 2}

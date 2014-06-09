@@ -1,0 +1,30 @@
+\tag{1}\sum_{\nu}(-1)^{\nu}\displaystyle \binom{a}{\nu}\binom{n-\nu}{r}=\binom{n-a}{n-r} .
+\tag{2}\sum_{\nu}\binom{a}{\nu}\binom{b}{n-\nu}=\binom{a+b}{n}. 
+\tag{3} \binom{-a}{k} = (-1)^k\binom{a+k-1}{k}.
+(1)
+a
+(3)
+n-\nu
+r
+(1)
+ \begin{align} (-1)^\nu\binom{n-\nu}{r} &=(-1)^\nu\binom{n-\nu}{n-\nu-r}\\ &=(-1)^{n-r}\binom{-r-1}{n-\nu-r}\tag{1} \end{align} 
+ \begin{align} \sum_{\nu}(-1)^{\nu}\binom{a}{\nu}\binom{n-\nu}{r} &=(-1)^{n-r}\sum_{\nu}\binom{a}{\nu}\binom{-r-1}{n-\nu-r}\\ &=(-1)^{n-r}\binom{a-r-1}{n-r}\\ &=\binom{n-a}{n-r}\tag{2} \end{align} 
+f_{n,a,p,r}
+(-1)^p \binom{a}{p} \binom{n-p}{r}
+S_u
+u
+(S_a f)_{n, a, p, r} = f_{n, a+1, p, r}
+g
+\sum_{p=0}^a f_{n,a,p,r}
+g'
+\binom{n-a}{r-a}
+g=g'
+ \left((1+r)S_r+p+r-n\right)f + (S_p - 1)\left(\frac{-p - n p + p^2}{1 + r}f\right) = 0
+ \left((1+r)S_r+p+r-n\right)g + \underbrace{\left[\frac{-p - n p + p^2}{1 + r}f\right]_{p=0}^{a+1}}_{=0} = 0
+g
+g'
+n
+r
+g
+g'
+g=g'

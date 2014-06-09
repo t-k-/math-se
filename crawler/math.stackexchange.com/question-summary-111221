@@ -1,0 +1,20 @@
+f(x)
+g(x)
+H(f,g)=1-\int_\Omega(dx\sqrt{f(x)g(x)})
+f(x)
+g(x)
+f(x;\lambda_1,k_1) =  \begin{cases}\frac{k_1}{\lambda_1}\left(\frac{x}{\lambda_1}\right)^{k_1-1}e^{-(x/\lambda_1)^{k_1}} & x\geq0 ,\\0 & x<0 ,\end{cases}
+f(x;\lambda_2,k_2) =  \begin{cases}\frac{k_2}{\lambda_2}\left(\frac{x}{\lambda_2}\right)^{k_2-1}e^{-(x/\lambda_2)^{k_2}} & x\geq0 ,\\0 & x<0 ,\end{cases}
+\lambda
+k
+f(x;\theta_i)
+g(x;\tilde\theta_i)
+P(x;\theta_i,\tilde\theta_i)=\sqrt{f(x;\theta_i)g(x;\tilde\theta_i)}
+\frac{\partial H}{\partial\theta_i}=-\frac{1}{2}\int_\Omega dxP(x;\theta_i,\tilde\theta_i)\frac{\partial}{\partial\theta_i}\ln f(x;\theta_i)
+\frac{\partial H}{\partial\tilde\theta_i}=-\frac{1}{2}\int_\Omega dxP(x;\theta_i,\tilde\theta_i)\frac{\partial}{\partial\tilde\theta_i}\ln g(x;\tilde\theta_i)
+\frac{\partial^2 H}{\partial\theta_i\partial\theta_j}=-\frac{1}{2}\int_\Omega dxP(x;\theta_i,\tilde\theta_i)\left[\frac{\partial^2}{\partial\theta_i\partial\theta_j}\ln f(x;\theta_i)+\frac{1}{4}\frac{\partial}{\partial\theta_i}\ln f(x;\theta_i)\frac{\partial}{\partial\theta_j}\ln f(x;\theta_i)\right]
+\frac{\partial^2 H}{\partial\tilde\theta_i\partial\tilde\theta_j}=-\frac{1}{2}\int_\Omega dxP(x;\theta_i,\tilde\theta_i)\left[\frac{\partial^2}{\partial\tilde\theta_i\partial\tilde\theta_j}\ln g(x;\tilde\theta_i)+\frac{1}{4}\frac{\partial}{\partial\tilde\theta_i}\ln g(x;\tilde\theta_i)\frac{\partial}{\partial\tilde\theta_j}\ln g(x;\tilde\theta_i)\right].
+\frac{\partial^2 H}{\partial\theta_i\partial\tilde\theta_j}=-\frac{1}{4}\int_\Omega dxP(x;\theta_i,\tilde\theta_i)\frac{\partial}{\partial\theta_i}\ln f(x;\theta_i)\frac{\partial}{\partial\tilde\theta_j}\ln g(x;\tilde\theta_i).
+H
+h_{ij}(\theta,\tilde\theta)
+ds^2=h_{ij}(\theta,\tilde\theta)d\theta_id\tilde\theta_j

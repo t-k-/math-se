@@ -1,0 +1,23 @@
+(1)
+n=p_1\cdot p_2\cdots p_n\cdot k
+k
+p_k
+ k\in\{1,2,...,n\}
+\mu(a)
+k|b
+a
+(2)
+a
+k|b
+S
+\{p_1,p_2,...,p_n\}
+|S|
+\mu(a)=-1
+\mu(a)=1
+\sum_{n|d}\mu(d)\frac{n}{d}=\sum_{ab=n}\mu(a)b
+\displaystyle (-1)^nk\left(1+\sum_{\begin{matrix} 1\le a,b \le n\\  a<b \end{matrix} }p_ap_b+\sum_{\begin{matrix} 1\le a,b,c,d \le n\\  a<b<c<d \end{matrix}}p_ap_bp_cp_d+\cdots\right)
+\displaystyle (-1)^{n+1}k\left(\sum_{ 1\le a \le n}p_a+\sum_{\begin{matrix} 1\le a,b,c \le n\\  a<b<c \end{matrix} }p_ap_bp_c+\cdots\right)
+=\displaystyle (-1)^nk\left(1-\sum_{ 1\le a \le n}p_a+\sum_{\begin{matrix} 1\le a,b \le n\\  a<b \end{matrix} }p_ap_b-\sum_{\begin{matrix} 1\le a,b,c \le n\\  a<b<c \end{matrix} }p_ap_bp_c+\sum_{\begin{matrix} 1\le a,b,c,d \le n\\  a<b<c<d \end{matrix}}p_ap_bp_cp_d-\cdots\right)
+=\displaystyle (-1)^nn\left(\frac{1}{p_1\cdots p_n}-\sum_{ 1\le a \le n}\frac{p_a}{p_1\cdots p_n}+\sum_{\begin{matrix} 1\le a,b \le n\\  a<b \end{matrix} }\frac{p_ap_b}{p_1\cdots p_n}-\sum_{\begin{matrix} 1\le a,b,c \le n\\  a<b<c \end{matrix} }\frac{p_ap_bp_c}{p_1\cdots p_n}+\cdots\right)
+\sum_{ab=n}\mu(a)b=\varphi(n)
+\displaystyle(-1)^n\left(\frac{1}{p_1\cdots p_n}-\sum_{ 1\le a \le n}\frac{p_a}{p_1\cdots p_n}+\sum_{\begin{matrix} 1\le a,b \le n\\  a<b \end{matrix} }\frac{p_ap_b}{p_1\cdots p_n}-\sum_{\begin{matrix} 1\le a,b,c \le n\\  a<b<c \end{matrix} }\frac{p_ap_bp_c}{p_1\cdots p_n}+\cdots\right)=\prod_{k=1}^n\left(1-\frac{1}{p_k}\right), 

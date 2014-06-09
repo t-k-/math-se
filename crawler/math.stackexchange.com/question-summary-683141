@@ -1,0 +1,14 @@
+\sum_{k=m+1}^{n} (-1)^k \binom {n} {k} \binom {k-1} {m} = (-1)^{m+1}
+(-1)^{m+1}
+\sum_{k=m+1}^{n} (-1)^{k-m-1} \binom {n} {k} \binom {k-1} {m}
+k-m-1
+p
+\sum_{p=0}^{n-(m+1)} (-1)^{p} \binom {n} {k} \binom {k-1} {p} = 1
+\binom {k-1} {m} = \binom {k-1}{k-1-m}
+k-m-1=p
+\sum_{k=m+1}^{n} (-1)^k \binom {n} {k} \binom {k-1} {m} = \sum_{k=m+1}^{n} (-1)^k \dfrac{n!}{(n-k)!k!}\dfrac{(k-1)!}{(k-1-m)!m!} 
+k>m
+p=k-m
+ \dfrac{n!}{(n-k)!k!}\dfrac{(k-1)!}{(k-1-m)!m!}= \dfrac{p}{k}\dfrac{n!}{m!(n-m)!}\dfrac{(n-m)!}{(n-m-p)!p!}=\dfrac{p}{p+m} {n\choose m} {n-m\choose p}
+\sum_{k=m+1}^{n} (-1)^k \binom {n} {k} \binom {k-1} {m} = (-1)^{m+1}{n\choose m}\sum_{p=1}^{(n-m)}\dfrac{p}{p+m} (-1)^{p-1} {n-m\choose p} 
+\dfrac{1}{{n\choose m}} = \dfrac{1}{{n\choose n-m}} = \sum_{p=1}^{(n-m)}\dfrac{p}{p+m} (-1)^{p-1} {n-m\choose p} 

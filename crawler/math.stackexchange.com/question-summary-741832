@@ -1,0 +1,22 @@
+ax + by = c\tag{1}
+\begin{align}x' = x_0 + s\\y' = y_0 + t\end{align}\tag{2}
+s, t \in \mathbb{Z}
+x', x_0
+y', y_0
+x', y'
+(1)
+\begin{eqnarray} & ax' + by' &= c\\\implies &a(x_0 + s) + b(y_0 + t) &= c\\\implies &ax_0 + by_0 + as + bt &= c\\\implies & c + as + bt &= c\\\implies &as + bt &= 0\\\implies&\frac{s}{t} &= -\frac{b}{a} \\\implies&\frac{s'}{t'}&= -\frac{b'}{a'} \text{ (lowest form)}\tag{3}\end{eqnarray}
+b' = \frac{b}{\gcd{(a, b)}}
+a' = \frac{a}{\gcd{(a, b)}}
+s'
+t'
+(3)\implies \begin{matrix}s' &= &-b' &\implies &s = s'\gcd(s, t) &= &-b'\gcd(s, t)\\t' &= &a' &\implies &t = t'\gcd(s, t) &= &a'\gcd(s, t)\end{matrix}
+(2)
+\begin{matrix}x' = x_0 + s = x_0 -b'\gcd(s, t) = x_0 - (b/d)n\\y' = y_0 + t = y_0 + a'\gcd(s, t) = y_0 + (a/d)n\end{matrix}\tag{4}
+d = \gcd(a,b)
+n = \gcd(s, t)
+x'
+y'
+(1)
+n \in \mathbb{Z}
+(4)

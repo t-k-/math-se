@@ -1,0 +1,43 @@
+\begin{align}     x_0  &= 4,\\     x_1  &= 23,\\      x_n &= 11x_{n−1} − 30x_{n−2} \mbox{ for } n \geq  2. \end{align}
+x_n
+n
+x_0=4
+x_1=23
+x_n=11x_{n-1}-30x_{n-2}
+x_n=c^n
+c
+c^n=11c^{n-1}-30c^{n-2}
+c^2-11c+30=0
+c
+c_1
+c_2
+Ac_1^n+Bc_2^n
+A
+B
+A
+B
+x_0=4
+x_1=23
+\rm\qquad\qquad 0\ =\ f(n+2) - 11\ f(n+1) + 30\ f(n)
+\rm\qquad\qquad\ \ \ =\ (S^2 - 11\ S + 30)\ f(n)
+\rm\qquad\qquad \ \ \ =\ (S-5)\ (S-6)\ f(n) 
+\rm\:(S-6)\ f(n) = 0\ \iff\ f(n+1) = 6\ f(n)\ \iff\ f(n) = c\:6^n\ 
+\rm\:c\:
+\rm\:S\:c = c\:.
+\rm\:\ \ (S-5)\ f(n) = 0\ \iff\ f(n+1) = 5\ f(n)\ \iff\ f(n) = d\:5^n\ 
+\rm\:d\:
+\rm\:S-5\:
+\rm\:S-6\:
+\rm\: c\ 6^n + d\ 5^n\:
+\rm\:c,d\:.\:
+\rm\:f(0) = x_0,\ f(1) = x_1\:
+\rm\:c,d\:.
+X(z) = \sum_{n \ge 0} x_n z^n
+z^n
+n
+n \ge 0
+X(z)
+ x_{n + 2} = 11 x_{n + 1} - 30 x_n 
+ \frac{X(z) - x_0 - x_1 z}{z^2} = 11 \frac{X(z) - x_0}{z} - 30 X(z) 
+ X(z) = \frac{3}{1 - 6 z} + \frac{1}{1 - 5 z} 
+ x_n = 3 \cdot 6^n + 5^n 

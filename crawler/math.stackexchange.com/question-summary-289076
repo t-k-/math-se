@@ -1,0 +1,14 @@
+ (a)~~f(x_1,x_2)=x_1^2x_2~~~~~~~~~~(b)~~f(x_1,x_2,x_3)=(x_1-x_2)\exp(x_3) 
+\eta
+x\in\mathbb{R}^2
+h\in\mathbb{R}^2
+ \eta=Df(x)[h]=x_1\cdot (2x_2h_1+x_1h_2). 
+\lim\limits_{t\to 0}\frac{f(x+th)-f(x)}{t}=\lim\limits_{t\to 0}\left[\frac{x_1\exp(x_3+th_3)}{t}+h_1\exp(x_3+th_3)-\frac{x_2\exp(x_3+th_3)}{t}-h_2\exp(x_3+th_3)-\frac{(x_1-x_2)\exp(x_3)}{t}\right]
+t \mapsto x+th
+t=0
+\phi(t) = f(x+th)
+df(x;h) = \phi'(0)
+\phi(t) = (x_1+h_1 t)^2 (x_2+h_2 t)
+df(x;h) = \phi'(0) = x_1(2 h_1 x_2+h_2 x_1)
+\phi(t) = (x_1-x_2-h_2 t+h_1 t) e^{(x_3+h_3 t)}
+df(x;h) = \phi'(0) =(h_1-h_2+h_3(x_1-x_2))e^{x_3}

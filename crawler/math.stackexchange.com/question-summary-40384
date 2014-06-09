@@ -1,0 +1,45 @@
+f
+[a,b]
+f'
+ f(x)=f(a)+\int_a^xf'(s)\,ds\qquad\text{($f'$ defined almost everywhere)} 
+ \left|f(y)-f(x)\right|=\left|\int_x^yf'(s)ds\right|\leq\int_x^y\left|f'(s)\right|\,ds 
+f
+g
+\varepsilon>0
+\delta>0
+m(A)<\delta
+\int_A|g|<\varepsilon
+h
+M>0
+\int_a^b|g-h|<\frac{\varepsilon}{2}
+\delta = \frac{\varepsilon}{2M}
+|\int_x^y g|<\varepsilon
+|x-y|<\delta
+f'
+\|f'\|_{L^1} = \int_{a}^{b} |f'|\,dt \lt \infty
+A_{n} = \{x \,:\,|f'(x)| \leq n\}
+g_{n} = [A_{n}] f'
+[A_n]
+A_n
+g_{n} \to f'
+\int_{a}^{b} |g_n - f'|\,dt \to 0
+n \to \infty
+2|f'|
+\varepsilon \gt 0
+n
+\int_{a}^{b} |g_n - f'|\,dt \lt \varepsilon /2
+|g_{n}|
+n
+|\int_{x}^{y} g_{n}(t)\,dt| \leq n|y-x|
+\delta = \frac{\varepsilon}{2n}
+x,y
+|y-x| \lt \delta
+f
+\left\vert \int_{x}^{y} f'(t)\,dt\right\vert \leq \left\vert\int_{x}^{y} |f'-g_n|\,dt\right\vert + \left\vert \int_{y}^{x} |g_n(t)|\,dt\right\vert \leq \varepsilon/2 + n \cdot |y-x|
+|f(y) - f(x)| = \left\vert \int_{x}^{y} f'(t)\,dt \right\vert \leq \varepsilon/2 + \delta n \lt \varepsilon
+\mu(E) \lt \delta
+\int_{E} |f'|\,dt \lt \varepsilon
+f
+f(x) = \sqrt{x}
+f'(x) = \frac{1}{2\sqrt{x}}
+[0,1]

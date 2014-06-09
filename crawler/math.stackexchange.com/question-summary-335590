@@ -1,0 +1,15 @@
+\sin(x)=\sum^{\infty}_{n=0}(-1)^n \frac{x^{2n+1}}{(2n+1)!}\ , \ x\in \mathbb{R}
+\cos(x)=\sum^{\infty}_{n=0}(-1)^n \frac{x^{2n}}{(2n)!}\ , \ x\in \mathbb{R}
+\lim_{h\to\infty}\frac{\sin(x+h)-\sin(x)}{h}
+\frac{d}{dx}\sin x = \frac{d}{dx} \sum^{\infty}_{n=0}(-1)^n \frac{x^{2n+1}}{(2n+1)!} = \sum^{\infty}_{n=0}(-1)^n \frac{d}{dx} \frac{x^{2n+1}}{(2n+1)!} = \sum^{\infty}_{n=0}(-1)^n  \frac{x^{2n}}{(2n)!} = \cos x
+\frac{\sin(x+h)-\sin x}{h} = \frac{\sum^{\infty}_{n=0}(-1)^n \frac{(x+h)^{2n+1}}{(2n+1)!}-\sum^{\infty}_{n=0}(-1)^n \frac{x^{2n+1}}{(2n+1)!}}{h} = \sum^{\infty}_{n=0}(-1)^n \frac{1}{(2n+1)!}\frac{(x+h)^{(2n+1)}-x^{(2n+1)}}{h}
+\lim_{h \to 0} \frac{(x+h)^{(2n+1)}-x^{(2n+1)}}{h} = (2n+1)x^{2n}
+(x+h)^p-x^p = \sum_{k=1}^p \binom{p}{k}x^{p-k}h^k = p x^{p-1}h + \sum_{k=2}^p \binom{p}{k}x^{p-k}h^k
+h
+h \to 0
+\frac{d}{dx} x^p = p x^{p-1}
+\lim
+\sum
+\sin(x+h)-\sin(x)
+h
+h\to 0

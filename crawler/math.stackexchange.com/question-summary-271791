@@ -1,0 +1,14 @@
+n
+x_1,x_2 , \ldots , x_n
+M
+M(i,j) = e^{\lambda_j x_i} 
+\lambda_1 \lt \lambda_2 \lt \ldots \lt \lambda_n \in \mathbb{R}
+n=1
+n=2
+\left(e^{\lambda_1x_i}\,,\,e^{\lambda_2x_i}\,,\ldots,e^{\lambda_nx_i}\right)=\sum_{k=1}^{i-1}a_k\left(e^{\lambda_1x_k}\,,\,e^{\lambda_2x_k}\,,\ldots,e^{\lambda_nx_k}\right)\,\,,\,\,a_k\in\Bbb R
+\,1\leq t\leq n\,
+\sum_{k=1}^{i-1}a_ke^{\lambda_tx_k}=e^{\lambda_tx_i}\Longrightarrow\Phi(\lambda_t):=\sum_{k=1}^{i-1}a_ke^{\lambda_tx_k}-e^{\lambda_tx_i}=0\Longrightarrow
+ \Phi'(\lambda_t)=\sum_{k=1}^{i-1}a_kx_ke^{\lambda_tx_k}-x_ie^{\lambda_tx_i}=0
+\sum_{k=1}^{i-1}a_kx_ke^{\lambda_tx_k}=x_ie^{\lambda_tx_i}=x_i\sum_{k=1}^{i-1}a_ke^{\lambda_tx_k}\Longrightarrow
+\sum_{k=1}^{i-1}a_k(x_k-x_i)e^{\lambda_tx_k}=0\Longrightarrow a_1=a_2=...=a_{i-1}=0
+\,(x_k-x_i)e^{\lambda_tx_k}\neq 0\,\,\,,\,\forall\,\,1\leq k\leq i-1

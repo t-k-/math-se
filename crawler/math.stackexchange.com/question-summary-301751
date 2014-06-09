@@ -1,0 +1,38 @@
+\newcommand{\var}{\operatorname{var}}
+\newcommand{\E}{\mathbb E}
+\{0,1,2,3,\ldots\}
+X
+p
+ X = \begin{cases} 0 & \text{with probability }p \\ 1 & \text{with probability }p(1-p) \\ 2 & \text{with probability }p(1-p)^2 \\ 3 & \text{with probability }p(1-p)^3 \\ \vdots & {}\qquad \vdots \end{cases} 
+\Pr(X\ge w+x\mid X\ge w)=\Pr(X>x)
+\displaystyle A=\begin{cases} 1, & \text{if }X\ge 1 \\[6pt] 0, & \text{if }X=0. \end{cases}
+ \E(X) = E(E(X\mid A)) = E\left.\begin{cases} 0 & \text{if }A=0 \\ 1+\E(X) & \text{if }A=1 \end{cases}\right\} = p\cdot0+(1-p)(1+\E(X)). 
+ \E(X) = 1-p+(1-p)\E(X). 
+ \E(X) = \frac{1-p}{p}. 
+ \var(X) = \var(\E(X\mid A)) + \E(\var(X\mid A)) 
+ = \var\left.\begin{cases} 0 & \text{if }A=0 \\  1 + \E(X) & \text{if }A=1 \end{cases}\right\} + \E\left.\begin{cases} 0 & \text{if }A=0 \\  \var(X) & \text{if }A=1 \end{cases}\right\} 
+ = \var\left.\begin{cases} 0 & \text{if }A=0 \\  1/p & \text{if }A=1 \end{cases}\right\} + p\cdot0 + (1-p)\var(X) 
+ = \frac{1-p}{p} + p\cdot0 + (1-p)\var(X) = (1-p)\left(\frac1p+\var(X)\right). 
+ \var(X) = (1-p)\left(\frac1p+\var(X)\right). 
+ \var(X) = \frac{1-p}{p^2}. 
+X=0
+p
+1-p
+X=1+X'
+X'
+X
+ X=U\cdot(1+X'),\qquad U\sim\mathrm{Ber}(1-p),\qquad U\ \text{independent of}\ X'. 
+X
+E[U]=1-p
+x
+(0,1]
+n
+s=1
+X
+ E[X]=E[U]\cdot(1+E[X])\implies E[X]=\frac{E[U]}{1-E[U]}=\frac{1-p}p. 
+ E[X^2]=E[U^2]\cdot E[(1+X)^2]=E[U]\cdot(1+2E[X]+E[X^2]), 
+  E[X^2]=\frac{E[U]}{1-E[U]}\cdot\frac{1+E[U]}{1-E[U]}, 
+ \mathrm{var}(X)=\frac{E[U]}{(1-E[U])^2}=\frac{1-p}{p^2}. 
+ E[s^X]=E[s^{U(1+X)}]=p+(1-p)E[s^{1+X}]\implies E[s^X]=\frac{p}{1-(1-p)s}, 
+ E[X(X-1)\cdots(X-n+1)s^X]=n!\,\frac{p(1-p)^n}{(1-(1-p)s)^{n+1}}, 
+ E[X(X-1)\cdots(X-n+1)]=n!\,\frac{(1-p)^n}{p^n}, 

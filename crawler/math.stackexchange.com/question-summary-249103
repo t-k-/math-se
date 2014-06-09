@@ -1,0 +1,24 @@
+f(x)= \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{\beta^\alpha}{\sqrt{\pi}} \frac{x^{\alpha-1}}{\sqrt{1-\beta x}}
+0<x<\beta
+\alpha>0
+\beta>0
+\Gamma
+X
+(1-\beta x)
+f(x)
+ \operatorname{E}[X] = \int_{-\infty}^\infty x f(x)\, \operatorname{d}x .
+ E[X] = \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{\beta^\alpha}{\sqrt{\pi}}\int_{0}^\beta   \frac{x^{\alpha}}{\sqrt{1-\beta x}}\, \operatorname{d}x  
+ E[X] =  \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{\beta^\alpha}{\sqrt{\pi}}\int_{0}^\beta x^{\alpha}(1-\beta x)^{-\frac{1}{2}}\, \operatorname{d}x . 
+y=\beta x
+ E[X] = \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{\beta^\alpha}{\sqrt{\pi}}\int_{0}^1 \frac{y^{\alpha}}{{\beta}^{\alpha}}(1- y)^{-\frac{1}{2}}\, \frac{dx}{\beta}
+=\frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{\beta^\alpha}{\sqrt{\pi}}\int_{0}^1 \frac{y^{\alpha}}{{\beta}^{\alpha}}(1- y)^{-\frac{1}{2}}\, \frac{dx}{\beta} 
+  = \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{1}{\beta\sqrt{\pi}} \int_{0}^1 y^{\alpha}(1- y)^{-\frac{1}{2}}\, \frac{dx}{\beta}
+ = \frac{\Gamma (\alpha+\frac{1}{2})}{\Gamma (\alpha)} \frac{1}{\beta\sqrt{\pi}} \frac{\Gamma(\alpha+1)\Gamma(\frac{1}{2})}{\Gamma(\alpha + \frac{3}{2})}=\frac{\alpha}{\beta(\alpha+\frac{1}{2})}. 
+ \int_{0}^1 t^{u-1}(1- t)^{v-1}\, dt=\frac{\Gamma(u)\Gamma(v)}{\Gamma(u+v)}. 
+X
+f(x)
+\beta < 1
+\beta > 1
+\beta = 1
+X
+Beta(\alpha, \frac 12)

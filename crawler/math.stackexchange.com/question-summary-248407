@@ -1,0 +1,30 @@
+X,Y
+\lambda,\mu
+M=\text{min}(X,Y)
+E[MX\;|\;M=X]
+E[X\;|\;B]
+X
+B
+E[M X \mid M = X]
+E[X^2 \mid X < Y]
+ E[X^2 \mid X < Y] = \int_0^\infty x^2 p(x \mid X < Y) dx. 
+p(x \mid X < Y)
+p(x \mid X < Y) = \frac{p(X < Y \mid x) p(x)}{p(X < Y)}.
+P(X < Y \mid X = x)
+P(Y > x) = 1 - P(Y \le x) = e^{-\mu x}
+p(x) = \lambda e^{-\lambda x}
+p(X < Y)
+ p(X < Y) = \int_0^\infty \int_0^\infty I(x<y) \lambda e^{-\lambda x} \mu e^{-\mu y} dy dx \\ = \int_0^\infty \lambda e^{-\lambda x} \left( \int_x^\infty \mu e^{-\mu y} dy \right) dx \\ = \int_0^\infty \lambda e^{-\lambda x} e^{-\mu x} dx \\ = \int_0^\infty \lambda e^{-(\lambda + \mu) x} dx \\ = \frac{\lambda}{\lambda + \mu}. 
+E[X^2 \mid X < Y]
+\lambda + \mu
+Z
+ p(x \mid X < Y) = e^{-\mu x} \lambda e^{-\lambda x} \frac{\lambda + \mu}{\lambda} = (\lambda + \mu) e^{-(\lambda + \mu) x}, 
+E[Z^2] = Var[Z] + E[Z]^2 = \frac{2}{(\lambda + \mu)^2}.
+E[X^2 \mid X < Y] = E[Y^2 \mid Y < X]
+B
+p(B_i)
+B
+E[X|B]=\sum_i p(B_i)E[X(B_i)]
+E[X(B_i)]
+X
+B=B_i

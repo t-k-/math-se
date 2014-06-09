@@ -1,0 +1,8 @@
+\int_{0}^{\infty}\frac{dx}{(x^2+1)(x^2+4)}
+\frac1{(x^2+1)(x^2+4)} = \frac13 \left (\frac1{x^2+1}-\frac1{x^2+4} \right ) 
+\frac1{(x^2+1)(x^2+4)}=\frac{Ax+B}{x^2+1}+\frac{Cx+D}{x^2+4}\iff
+1=(Ax+B)(x^2+4)+(Cx+D)(x^2+1)
+\;x\;
+\begin{align*}I&x^3:&\;\;0=A+C\implies& A=-C\\{}\\ II&x^2:&\;\;0=B+D\implies& B=-D\\{}\\ III&x:&\;\;0=4A+C\implies& C=-4A\\{}\\ IV&x^0:&\;\;1=4B+D\end{align*}
+\begin{cases}I+III\implies A=C=0\\{}\\ II+IV\implies B=\frac13=-D\end{cases}
+\int\limits_0^\infty\frac{dx}{(x^2+1)(x^2+4)}=\frac13\int\limits_0^\infty\frac{dx}{1+x^2}-\frac13\int\limits_0^\infty\frac{\frac14dx}{1+\left(\frac x4\right)^2}

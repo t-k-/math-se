@@ -1,0 +1,38 @@
+I=\frac{1}{2}\int_{0}^{\frac{\pi }{2}}\frac{\ln(\sin y)\ln(\cos y)}{\sin y\cos y}dy
+\sin(y) = t
+\cos^2(y) = 1-t^2
+\cos(y) dy = dt
+I = \dfrac14 \int_0^1 \dfrac{\ln(\sin(y)) \ln(\cos^2(y)) \cos(y) dy}{\sin(y) \cos^2(y)}
+4I = \int_0^1 \dfrac{\ln(t) \ln(1-t^2) dt}{t (1-t^2)}
+\dfrac{\ln(t) \ln(1-t^2)}{t (1-t^2)} = -\dfrac{\ln(t)}{t(1-t^2)} \sum_{k=1}^{\infty} \dfrac{t^{2k}}k = - \sum_{k=1}^{\infty}\dfrac{\ln(t)}{(1-t^2)} \dfrac{t^{2k-1}}k
+\dfrac{\ln(t)}{(1-t^2)} \dfrac{t^{2k-1}}k = \dfrac1k \sum_{l=0}^{\infty}t^{2k+2\ell-1} \ln(t)
+\dfrac{\ln(t) \ln(1-t^2)}{t (1-t^2)} = -\sum_{k=1}^{\infty} \dfrac1k\sum_{l=0}^{\infty}t^{2k+2\ell-1} \ln(t)
+\int_0^1 t^m \log(t) dt = -\dfrac1{(m+1)^2}
+4I = \sum_{k=1}^{\infty} \sum_{\ell=0}^{\infty} \dfrac1k \dfrac1{(2k+2 \ell)^2} = \dfrac14 \sum_{k=1}^{\infty} \sum_{\ell=0}^{\infty} \dfrac1k \dfrac1{(k+\ell)^2} = \dfrac14 2 \zeta(3)
+I = \dfrac{\zeta(3)}8
+S = \sum_{k=1}^{\infty} \sum_{l=0}^{\infty} \dfrac1k\dfrac1{(k+l)^2}
+S = \underbrace{\sum_{k=1}^{\infty} \sum_{l=k}^{\infty} \dfrac1k\dfrac1{l^2} = \sum_{l=1}^{\infty} \sum_{k=1}^l \dfrac1k\dfrac1{l^2}}_{\text{Change order of summation}} = \sum_{l=1}^{\infty} \dfrac{H_l}{l^2}
+S = \sum_{k=1}^{\infty} \dfrac1k\dfrac1{k^2} + \sum_{k=1}^{\infty} \sum_{l=1}^{\infty} \dfrac1k\dfrac1{(k+l)^2} = \zeta(3) + \sum_{k=1}^{\infty} \sum_{l=1}^{\infty} \dfrac1k\dfrac1{(k+l)^2}
+S = \sum_{n=1}^{\infty} \frac{H_{n}}{n^2} = \zeta(3) + \frac{1}{2}\sum_{k=1}^{\infty} \frac{H_{k}}{k^2}
+S = 2 \zeta(3)
+dx
+dy
+t = \sin^2 y
+dt = 2 \sin y \cos y \, dy
+I = \frac{1}{16} \int_{0}^{1} \frac{\log t \log(1-t)}{t(1-t)} \, dt. 
+ \frac{\log(1-t)}{t} = -\sum_{n=1}^{\infty} \frac{t^{n-1}}{n}, 
+m
+n
+ \sum_{n=1}^{\infty} \frac{H_n}{n^2} x^n. 
+ \sum_{n=1}^{\infty} H_n x^n = -\frac{\log(1-x)}{1-x}. 
+ \mathrm{Li}_s (x) = \sum_{n=1}^{\infty} \frac{x^n}{n^s}. 
+I(x)
+\mathrm{Li}_2 (x)
+ \mathrm{Li}_2 (x) + \mathrm{Li}_2 (1-x) = \zeta(2) - \log x \log (1-x), 
+x
+I(x)
+I(x)
+ I(x) = \zeta(3) - \mathrm{Li}_3 (1-x) + \{ \zeta(2) - \mathrm{Li}_2 (x) \} \log (1 - x) - \frac{1}{2} \log^2 (1-x) \log x. 
+x = 1
+ I(1) = \zeta(3).
+ \sum_{n=1}^{\infty} \frac{H_n}{n^2} = 2 \zeta(3)

@@ -1,0 +1,7 @@
+x
+\alpha\neq1
+f'(x)=\lim_{c\to 0} {{f(x+c)-f(x+\alpha c)}\over{c-\alpha c}}.
+ \lim_{c\to0}{{f(x+c)-f(x+\alpha c)}\over{c-\alpha c}}=\frac{1}{1-\alpha}\lim_{c\to0}{{f(x+c)-f(x)}\over{c}}-\frac{\alpha}{1-\alpha}\lim_{\alpha c\to0}{{f(x+\alpha c)-f(x)}\over{\alpha c}}\\=\frac{f'(x)}{1-\alpha}-\frac{\alpha f'(x)}{1-\alpha}=f'(x) 
+\frac{f(x+c)-f(x+\alpha c)}{c(1-\alpha)}=\frac{f(x+c)-f(x)+f(x)-f(x+\alpha c)}{c(1-\alpha)}=\\\frac{1}{1-\alpha}\frac{f(x+c)-f(x)}{c}-\frac{1}{1-\alpha}\frac{f(x+\alpha c)-f(x)}{c};
+f(x+\alpha c)-f(x)=f'(x)\alpha c+O(c^2),
+\lim_{c\rightarrow 0}\frac{f(x+c)-f(x+\alpha c)}{c(1-\alpha)}= \frac{1}{1-\alpha}f'(x)-\frac{\alpha}{1-\alpha}\lim_{c\rightarrow 0}\frac{f'(x)c+O(c^2)}{c}=\left(\frac{1}{1-\alpha}-\frac{\alpha}{1-\alpha}\right)f'(x)=f'(x).

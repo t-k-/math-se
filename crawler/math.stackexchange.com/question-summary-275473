@@ -1,0 +1,27 @@
+f
+g
+0
+g
+f(x)=o(g(x))~as~x \rightarrow0
+\int_0^xf(t)dt=o\left(\int_0^xg(t)dt\right)
+f'(x)=o(g'(x))
+\lim_{x\to0}\frac{\int_0^xf(t)dt}{\int_0^xg(t)dt}=\lim_{x\to0}\frac{xf(x)-\int_0^xtf'(t)dt}{\int_0^xg(t)dt}
+0
+0
+0
+0
+o
+\epsilon>0
+\delta>0
+|f(x)|\le \epsilon \, g(x) \quad \text{for all }\ x\in (-\delta,\delta) \tag1
+\left|\int_0^x f(t)\,dt\right|\le \int_0^x |f(t)|\,dt \le \epsilon\,\int_0^x g(t)\,dt
+f(x)=\sin x
+g(x)=x+1
+f=o(g)
+f'=o(g')
+F(x)=\int_0^xf(t)dt
+G(x)=\int_0^xg(t)dt
+\lim_{h\to 0}\frac{F(x+h)-F(x)}{h}=F'(x)+o(1)
+\lim_{h\to 0}\frac{G(x+h)-G(x)}{h}=G'(x)+o(1)
+0=\lim_{x\to0}\frac{f(x)}{g(x)}=\lim_{x\to 0}\frac{F'(x)+o(1)}{G'(x)+o(1)}
+\int_0^xf(t)dt=o\left(\int_0^xg(t)dt\right)

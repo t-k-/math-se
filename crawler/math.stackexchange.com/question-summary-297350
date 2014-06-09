@@ -1,0 +1,18 @@
+K
+\vec{l}_p
+p=1,2, \cdots ,n
+ \lambda_p
+E
+K
+E
+ K = \frac{ \vec{l}_p \vec{l}^T_p}{\lambda_p} ;\qquad E = \vec{l}_p \vec{l}^T_p 
+E-\lambda K =\frac{\lambda_p-\lambda}{\lambda_p}\vec{l}_p \vec{l}^T_p
+(E-\lambda K)^{-1} =\frac{\lambda_p}{\lambda_p - \lambda}\vec{l}_p \vec{l}^T_p
+(E-\lambda K)^{-1}(E-\lambda K) =\frac{\lambda_p}{\lambda_p - \lambda}\cdot \frac{\lambda_q-\lambda}{\lambda_q}\vec{l}_p \color{blue}{\vec{l}^T_p \vec{l}_q} \vec{l}^T_q = \frac{\lambda_p}{\lambda_p - \lambda}\cdot \frac{\lambda_q-\lambda}{\lambda_q}\vec{l}_p \color{blue}{\delta_{pq}} \vec{l}^T_q = E
+ K \rightarrow K(x,x) = \vec{x}^T \frac{ \vec{l}_p \vec{l}^T_p}{\lambda_p} \vec{x} 
+E \rightarrow E(x,x)
+y_p= l_{qp} x_q
+\vec{y}=L\vec{x}
+ K(x,x)=y^T \frac{L\vec{l}_p \vec{l}^T_p L^T}{\lambda_p} y = \sum_{p=1}^n \frac{\vec{y}^T \vec{y}}{\lambda_p}
+\big(E(x,x)-\lambda K(x,x)\big)^{-1} = \vec{x}^T \frac{\lambda_p}{\lambda_p - \lambda} \vec{l}_p \vec{l}^T_p \vec{x}= \vec{y}^T \frac{\lambda_p}{\lambda_p - \lambda} \color{green}{L\vec{l}_p \vec{l}^T_p L^T} \vec{y} =\sum_p^n \frac{\lambda_p}{\lambda_p - \lambda} y_p^2
+ L=(l_{pq})

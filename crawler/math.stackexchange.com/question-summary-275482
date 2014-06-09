@@ -1,0 +1,6 @@
+\int_{-\infty}^\infty \frac{{\rm d} x}{x^{2n}+1}?
+2 \int_{0}^\infty \frac{1}{x^{2n}+1}dx
+ \int_0^1 \frac{1}{x^{2n}+1} dx  + \int_1^\infty\frac{1}{x^{2n}+1} dx \\ = \int_0^1 \sum_{k=0}^\infty (-1)^k (x)^{2kn} + \int_1^\infty \frac{1}{x^{2n}} \sum_{k=0}^\infty  (-1)^kx^{-2nk} \\ = \sum_{k=0}^\infty (-1)^k \left[\frac{(x)^{2kn+1}}{2kn+1}\right]_0^1 + \sum_{k=0}^{\infty}(-1)^k \left[ \frac{x^{-2nk-2n+1}}{-2nk-2n+1}\right]_1^\infty \\ 
+ 
+=\sum_{k=0}^\infty(-1)^k \frac{1}{2kn+1} + \sum_{k=0}^\infty (-1)^k \frac{1}{2nk+2n-1} \\ =\sum_{k=0}^\infty (-1)^k \left( \frac{1}{2kn+1} + \frac{1}{2n(k+1) - 1}\right)
+ \int_{-\infty}^\infty \frac{{\rm d} x}{x^{2n}+1}? = 2 \sum_{k=0}^\infty (-1)^k \left( \frac{1}{2kn+1} + \frac{1}{2n(k+1) - 1}\right)

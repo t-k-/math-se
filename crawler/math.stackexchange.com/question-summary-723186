@@ -1,0 +1,18 @@
+f_{1}, f_{2}
+f_{3}
+f_{1}(n) \in O(f_{2}(n))
+f_{2}(n) \in O(f_{3}(n))
+f_{1}(n) \times f_{2}(n) \in O(f_{3}(n)^{2})
+\begin{cases}\left|\frac{f_1(n)}{f_2(n)}\right|\le M_1\\{}\\\left|\frac{f_2(n)}{f_3(n)}\right|\le M_2\end{cases}\;\;\implies \left|\frac{f_1(n)f_2(n)}{f_3(n)^2}\right|=\left|\frac{f_1(n)}{f_3(n)}\right|\left|\frac{f_2(n)}{f_3(n)}\right|\le \ldots\ldots?
+x\in{\mathbb R}
+f_1(x)=O\bigl(f_2(x)\bigr)
+C_1
+x_1
+f_2(x)=O\bigl(f_3(x)\bigr)
+C_2
+x_2
+x>\max\{x_1,x_2\}
+C:=C_1C_2^2
+f_1(x)\leq C_1 f_2(x)\qquad(x>x_1)\ .
+f_2(x)\leq C_2 f_3(x)\qquad(x>x_2)\ .
+f_1(x)\>f_2(x)\leq C_1 f_2(x)\cdot C_2f_3(x)\leq C_1C_2 f_3(x)\cdot C_2 f_3(x)=C\bigr(f_3(x)\bigr)^2

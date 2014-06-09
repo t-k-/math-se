@@ -1,0 +1,22 @@
+\{P_n\}
+\le 5
+P_n(x)
+0
+x
+[0,1]
+P_n(x)
+0
+x_k \in [0,1]
+V = \begin{bmatrix} 1 & x_1 & \cdots & x_1^5 \\ 1 & x_2 & \cdots & x_2^5 \\ \vdots & & & \vdots \\ 1 & x_6 & \cdots & x_6^5 \end{bmatrix} 
+V
+\pi(x) = p_1+p_2x + \cdots + p_6 x^5
+V p = \begin{bmatrix} \pi(x_1) \\ \vdots \\ \pi(x_6)\end{bmatrix}
+p =V^{-1} \begin{bmatrix} \pi(x_1) \\ \vdots \\ \pi(x_6)\end{bmatrix}
+r_n = V^{-1} \begin{bmatrix} P_n(x_1) \\ \vdots \\ P_n(x_6)\end{bmatrix}
+r_n \to 0
+|P_n(x)| \le  6\|r_n\|_\infty
+x \in [0,1]
+P_n(x) = \sum_{k=1}^6 [r_n]_k x^{k-1}
+|P_n(x)| \le  \sum_{k=1}^6 |[r_n]_k| 
+|x| \le 1
+|P_n(x)| \le 6 \|r_n\|_\infty

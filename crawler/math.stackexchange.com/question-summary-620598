@@ -1,0 +1,19 @@
+\vec{x}(t)=\left(\begin{smallmatrix}x_{1}(t) \\ \vdots \\ x_{n}(t)\end{smallmatrix}\right)
+\frac{\mathrm{d}^{2}\vec{x}}{\mathrm{d}t^{2}}=-\mathbf{M}\vec{x}
+\mathbf{M}
+\mathbf{M}=\mathbf{P}\mathbf{\Lambda}\mathbf{P}^{-1}
+\mathbf{\Lambda}=\operatorname{diag}(\lambda_{1},\dots,\lambda_{n})
+\vec{x}(t)=\mathbf{P}\vec{\eta}(t)
+\frac{\mathrm{d}^{2}\vec{\eta}}{\mathrm{d}t^{2}}=-\mathbf{\Lambda}\vec{\eta} \implies \frac{\mathrm{d}^{2}\eta_{i}}{\mathrm{d}t^{2}}=-\lambda_{i}\eta_{i}
+\eta_{i}=\begin{cases}A_{i}\cos(2\sqrt{\lambda_{i}}t)+B_{i}\sin(2\sqrt{\lambda_{i}}t) & \lambda_{i} > 0 \\ A_{i}t+B_{i} & \lambda_{i} = 0 \\ A_{i}e^{2\sqrt{\lambda_{i}}t}+B_{i}e^{-2\sqrt{\lambda_{i}}t} & \lambda_{i} < 0\end{cases}
+\vec{x}
+\mathbf{P}\vec{\eta}
+\vec{x}
+\mathbf{M}
+\eta_{i}
+\lambda_{i}
+\mathbf{P}
+\vec{x}
+\mathbf{M}=\left(\begin{smallmatrix}k & l \\ l & k\end{smallmatrix}\right)
+\mathbf{\Lambda}=\operatorname{diag}(k-l,k+l)
+\mathbf{P}=\frac{1}{\sqrt{2}}\left(\begin{smallmatrix}-1 & 1 \\ 1 & 1\end{smallmatrix}\right)

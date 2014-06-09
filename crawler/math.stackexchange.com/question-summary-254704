@@ -1,0 +1,12 @@
+k=\text{lcm}(\text{lcm}(a,b),c)
+c\mid k
+\text{lcm}(a,b)\mid k
+l=\text{lcm}(a,b)
+a\mid l\,\,\text{and}\,\, b\mid l
+c\mid k\,\,,a\mid k\,\,\text{and}\,\, b\mid k
+\text{lcm}(b,c)\mid k
+\text{lcm}(a,\text{lcm}(b,c))\mid k
+\begin{eqnarray}\rm a,b\:\mid\, n&&\rm \iff  [\,a,b\,]\,\mid\: n\quad\ for\ \quad [\,a,b] := \ lcm(a,b)\\ \\ \rm a,b \le n&&\rm \iff \lceil a,b\rceil\!\le n\quad\ for\ \quad \lceil a,b\rceil := max(a,b)\end{eqnarray}
+\begin{eqnarray} &&\rm[\ [\,a,b],\,c]\,\mid\, n\iff [\,a,b\,],c\,\mid\, n\iff a,b,c\,\mid \,n\iff a,[\,b,c\,]\,\mid\, n\iff [\,a,[\,b,c\,]\,]\,\mid\, n\\ \\ \rm  &&\rm\lceil\lceil a,b\rceil,c\rceil\! \le\! n\iff \lceil a,b\rceil,c \le\! n\iff a,b,c \le\!n\iff a,\lceil b,c\rceil\! \le n\iff \lceil a,\lceil b,c\rceil\rceil\!\le n\end{eqnarray}
+\rm\: a,b,c\mid n\:
+\rm\:a\mid n\:\land\: b\mid n\:\land\: c\mid n.\: 

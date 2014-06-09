@@ -1,0 +1,27 @@
+100 \times 0.98^x
+x_1
+x_2
+x_1 \geq 0
+x_1 \lt x_2 \lt 40
+a = 0.98
+y = x \ln a
+C
+C
+ \int a^x dx = \int e^{x \ln a} dx = \frac{e^{x \ln a}}{\ln a} + C = \frac{a^x}{\ln a} + C. 
+ \int e^y dy = e^y + C. 
+40
+100, 100 a, 100 a^2, \ldots, 100 a^{40-1}
+n_1
+n_2
+a = 0.98
+ \frac{100 a^{n_1 - 1} + 100 a^{n_1 + 1 - 1} + \ldots + 100 a^{n_2 - 1}}{n_2 - n_1 + 1}. 
+ \frac{100}{1-a} \times \frac{a^{n_1-1} \cdot (1 - a^{n_2 - n_1 +1})}{n_2 - n_1 +1}. 
+ 5000 \times \frac{0.98^{n_1-1} \cdot (1 - 0.98^{n_2 - n_1 +1})}{n_2 - n_1 +1}. 
+\frac{d}{dx}\left(e^x\right)=e^x
+\frac{d}{dx}\left(e^{ax}\right)=ae^{ax}
+\int e^{ax}\,dx=\frac{e^{ax}}{a}+C
+a\not=0
+[0,40]
+f(x)=100\cdot 0.98^x
+\frac{1}{40}\int_0^{40} 100 \cdot 0.98^x\,dx=\frac{100}{40}\int_0^{40} e^{x\cdot ln(0.98)}\,dx=\frac{5}{2}\cdot \frac{1}{ln(0.98)}e^{x\cdot ln(0.98)}\big\vert_0^{40}
+=\frac{5}{2\cdot ln(0.98)}\left(0.98^{40}-1\right)

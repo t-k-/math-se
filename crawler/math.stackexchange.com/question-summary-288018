@@ -1,0 +1,27 @@
+X_1, ...  , X_n
+uniform(0,\theta)
+\theta
+\theta
+Y_n = max\{X_1, ... , X_n\}
+Y_n
+F_{Y_n}(t) = 1
+t>\theta
+F_{Y_n}(t) = \frac{t^n}{\theta^n}
+0 < t \leq \theta
+F_{Y_n}(t) = 0
+Y_n
+f_{Y_n}(t) = \frac{nt^{n-1}}{\theta^n}
+0 < t \leq \theta
+f_{Y_n}(t) = 0
+E(Y_n) = (n/(n+1))\theta
+Y_n
+\theta
+Y_n
+Y_n
+\theta
+Y_n
+\theta
+E(Y_n) \rightarrow \theta
+Y_n
+\theta
+\begin{align}P[|Y_{(n)}-\theta|< \epsilon] &=P[\theta-\epsilon<Y_{(n)}<\theta+\epsilon]\\ &= F_{Y_{(n)}}(\theta+\epsilon)- F_{Y_{(n)}}(\theta-\epsilon)\\&= 1-(\frac{\theta-\epsilon}{\theta})^n, 0< \epsilon <\theta \\&=1-0,\epsilon  \geq\theta \\& \rightarrow 1 ~\text{as}~ n \to \infty\end{align}

@@ -1,0 +1,28 @@
+ f(x_1 , x_2 , x_3) = x_1^2 + x_2^2 + 5x_3^2 -2x_1x_2 + 6x_1x_2+ 3x_2x_3
+f(x)= x^t Qx
+Q_{ij}
+\begin{pmatrix}x_1 & x_2 & x_3\end{pmatrix}\begin{pmatrix}Q_{11} & Q_{12} & Q_{13} \\ Q_{21} & Q_{22} & Q_{23} \\ Q_{31} & Q_{32} & Q_{33}  \end{pmatrix}\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} = {x_1}^2+{x_2}^2+5{x_3}^2−2x_1x_2+6x_1x_3+3x_2x_3
+\sum_{i=1}^3\sum_{j=1}^3 x_i x_j Q_{ij}
+{x_1}^2
+Q_{11}{x_1}^2
+Q_{11} = 1
+x_1x_2
+(Q_{12} + Q_{21})x_1 x_2 = -2x_1 x_2
+Q
+Q_{12} = Q_{21} = -1
+Q
+Q
+Q
+x^t Q x
+Q = S + A
+S
+S_{ij} = S_{ji}
+A
+A_{ij} = - A_{ji}
+\sum_{i=1}^3\sum_{j=1}^3 x_i x_j (S_{ij} + A_{ij}) = \sum_{i=1}^3\sum_{j=1}^3 x_j x_i (S_{ji} - A_{ji}) = \sum_{i=1}^3\sum_{j=1}^3 x_i x_j (S_{ij} - A_{ij})
+\sum_{i=1}^3\sum_{j=1}^3 x_i x_j A_{ij} = -\sum_{i=1}^3\sum_{j=1}^3 x_i x_j A_{ij}
+\sum_{i=1}^3\sum_{j=1}^3 x_i x_j A_{ij} = 0
+Q
+x^TQx = Tr(Qxx^T) = \sum Q_{ij} (xx^T)_{ij}
+x_i
+Q

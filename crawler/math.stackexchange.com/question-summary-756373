@@ -1,0 +1,46 @@
+2\times2
+ \det \Big(A^2+B^2+(A-B)^2\Big)\ge 3\det(AB-BA) 
+{\bf Lemma~1.}
+R
+S
+2\times 2
+ \Re(\det(R+iS))=\det(R )-\det(S).
+Proof.
+R_1,R_2
+R
+S_1,S_2
+S
+\qquad\square
+\eqalign{ \det(R+iS)&=\det(R_1+iS_1,R_2+iS_2)\cr &=\det(R)-\det(S)+i(\det(R_1,S_2)+\det(R_2,S_1)).} 
+{\bf Lemma~2.}
+T
+U
+2\times 2
+*
+ \vert \det(T+iU) \vert^2=\det(T^2+U^2 )-\det(TU-UT).
+\det(TU-UT)\leq \det(T^2+U^2 ).\tag{$*$}
+Proof.
+R=T^2+U^2
+S=TU-UT
+\qquad\square
+\eqalign{ \vert \det(T+iU) \vert^2&=\det(T-iU)\det(T+iU)\cr&=\det((T-iU) (T+iU)) \cr&=\det(T^2+U^2+i(TU-UT)) } 
+(*)
+T=\sqrt{3}(A-B),\quad U= A+B 
+\eqalign{ TU-UT&=2\sqrt{3}(AB-BA)\cr T^2+U^2&=2(A^2+B^2+(A-B)^2).} 
+T=\sqrt{3}(A-B)
+U=A+B
+2\times2
+A
+B
+\renewcommand{\tr}{\operatorname{tr}}
+\renewcommand{\adj}{\operatorname{adj}}
+ \det(T^2+U^2)\ge\det(TU-UT). 
+t=\tr(T\adj(U))=\tr(U\adj(T))
+(A,B)=(T,U),\ (T,-U)
+\left(TU-UT,\ U^2-T^2\right)
+(1)
+(A,B)=(T^2,U^2)
+(T^2,-U^2)
+(1)
+ -\det(T^2-U^2) = \det(TU-UT) + t^2 - (\det(T)+\det(U))^2.\tag{3} 
+ \det(T^2+U^2) + \det(T^2-U^2) = 2\det(T)^2+2\det(U)^2. 

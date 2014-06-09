@@ -1,0 +1,17 @@
+\int_\infty^\infty dx\int_\infty^\infty dy \frac{1}{(A+x y+i \epsilon ) (A+x (y-b)+i \epsilon )}
+A, b, \epsilon
+i
+x = -\frac{A+i \epsilon }{y}, \frac{A+i \epsilon }{b-y}
+y<0
+y>b
+0<y<b
+\int_0^b dy \frac{2 i \pi }{b (A+i \epsilon )} = \frac{2 i \pi }{(A+i \epsilon )}
+y = \frac{-A-i \epsilon }{x}, \frac{-A+b x-i \epsilon }{x}
+A, x
+\epsilon \ne 0
+1/|x|
+x \approx 0
+x=0
+R
+    \int_{-\infty}^{\infty}\frac{1}{|A+xy+i\epsilon||A+x(y-b)+i\epsilon|}\,dy=          \frac{1}{|x|}\int_{-\infty}^{\infty}\frac{1}{|A+y+i\epsilon||A+y-bx+i\epsilon|}\,dy, 
+         \lim_{R\uparrow\infty}\int_{-R}^{R}\int_{-\infty}^{\infty}\frac{1}{(A+xy+i\epsilon)(A+x(y-b)+i\epsilon)}\,dy\,dx = \\     \lim_{R\uparrow\infty}\int_{-\infty}^{\infty}\int_{-R}^{R}\frac{1}{(A+xy+i\epsilon)(A+x(y-b)+i\epsilon)}\,dx\,dy= \\ %%    \lim_{R\uparrow\infty}\int_{-\infty}^{\infty}\frac{1}{x}\int_{-Rx}^{Rx}\frac{1}{(A+y'+i\epsilon)(A+y'-bx+i\epsilon)}\,dy'\,dx. 

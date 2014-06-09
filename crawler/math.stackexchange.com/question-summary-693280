@@ -1,0 +1,12 @@
+(x + \Delta x)^n = x^n + nx^{n-1} \Delta x + O((\Delta x)^2)
+O((\Delta x)^2)
+(x + \Delta x)^2
+x^2 + 2x\Delta x + \Delta x^2
+\Delta x
+k>2
+(\Delta x)^2
+(\Delta x)^k,
+k>2
+\begin{align*}(x+\Delta x)^n=&\dbinom{n}{n}x^n(\Delta x)^0+\dbinom{n}{n-1}x^{n-1}(\Delta x)^1+\dbinom{n}{n-2}x^n\cdot(\Delta x)^2+\\+&\dbinom{n}{n-3}x^n\cdot(\Delta x)^3+\ldots\end{align*}
+(\Delta x)^2>>(\Delta x)^k
+(x+\Delta x)^n=\sum_{k=0}^n{n\choose k} x^{n-k}(\Delta x)^k ={n\choose 0}x^n+{n\choose 1}x^{n-1}\Delta x+\underbrace{\sum_{k=2}^n{n\choose k} x^{n-k}(\Delta x)^k}_{O((\Delta x)^2)}\\=x^n+nx^{n-1}\Delta x+O((\Delta x)^2)

@@ -1,0 +1,12 @@
+\frac{2012!}{2^{2010}}-\sum^{2010}_{k=1} \frac{k^2k!}{2^k}-\sum^{2010}_{k=1} \frac{k\cdot k!}{2^k}
+\frac{(k+1)^2(k+1)!}{2^{k+1}} ; \frac{(k+1)(k+1)!}{2^{k+1}}
+\frac{(k-1)^2(k-1)!}{2^{k-1}};  \frac{(k-1)(k-1)!}{2^{k-1}}
+\sum^{2010}_{k=1} \frac{k^2k!}{2^k}+\sum^{2010}_{k=1} \frac{k\cdot k!}{2^k}=\sum^{2010}_{k=1} \frac{k!(k+1)k}{2^k}=\sum^{2010}_{k=1} \frac{k(k+1)!}{2^k}
+=\sum^{2010}_{k=1} \frac{(k+2-2)(k+1)!}{2^k}=\sum^{2010}_{k=1} \frac{(k+2)!}{2^k}-\sum^{2010}_{k=1} \frac{(k+1)!}{2^{k-1}}
+=\frac{2012!}{2^{2010}}-2
+\frac{2012!}{2^{2010}}-\sum^{2010}_{k=1} \frac{k^2k!}{2^k}-\sum^{2010}_{k=1} \frac{k\cdot k!}{2^k}
+n
+ \frac{(n+2)!}{2^n}-\sum^{n}_{k=1} \frac{k^2k!}{2^k}-\sum^{n}_{k=1} \frac{k\cdot k!}{2^k} 
+\begin{align} \sum^{n}_{k=1} \frac{k^2k!}{2^k}+\sum^{n}_{k=1} \frac{k\cdot k!}{2^k} &=\sum^{n}_{k=1} \frac{k^2k!+k\cdot k!}{2^k}\\ &=\sum^{n}_{k=1} k!\frac{k^2+k}{2^k}\\ &=\sum^{n}_{k=1} k!\frac{k(k+1)}{2^k}\\ &=\sum^{n}_{k=1} (k+1)!\frac{k}{2^k}\\ &=\sum^{n}_{k=1} (k+1)!\frac{(k+2)-2}{2^k} \quad \text{This is Kunnysan's very ingenious key step}\\ &=\sum^{n}_{k=1} \frac{(k+2)!}{2^k} -\sum^{n}_{k=1} \frac{(k+1)!}{2^{k-1}}\\ &=\sum^{n+1}_{k=2} \frac{(k+1)!}{2^{k-1}} -\sum^{n}_{k=1} \frac{(k+1)!}{2^{k-1}}\\ &=\frac{(n+2)!}{2^{n}} -\frac{(2)!}{2^{0}}\\ &=\frac{(n+2)!}{2^{n}} -2\\ \end{align} 
+2
+n

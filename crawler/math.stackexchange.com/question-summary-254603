@@ -1,0 +1,19 @@
+X_t
+Y_t
+0
+S_t=\int_0^tX_s\,dY_s-\int_0^tY_s\,dX_s
+E[e^{i\lambda S_t}]=E[\cos(\lambda S_t)]
+E[\sin(\lambda S_t)]=0
+\sin(\lambda S_t)
+d\sin(\lambda S_t)=\lambda\cos(\lambda S_t)dS_t-\frac{\lambda^2}{2}\sin(\lambda S_t)\,d\langle S,S\rangle_t
+d\langle S,S\rangle_t
+d\langle S,S\rangle_t=(X_t^2+Y_t^2)\,dt
+S_t
+E[\sin(\lambda S_t)]=-\frac{\lambda^2}{2}E\left[\int_0^t(X_t^2+Y_t^2)\sin(\lambda S_t)\,dt\right]
+(X,Y)
+(X,-Y)
+S=(S_u)_{u\geqslant0}
+\mathbb E(\varphi(S))=0
+\varphi
+t\geqslant0
+\varphi:(x_u)_{u\geqslant0}\mapsto\sin(\lambda x_t)

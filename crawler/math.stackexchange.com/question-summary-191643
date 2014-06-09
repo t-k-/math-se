@@ -1,0 +1,25 @@
+A\subset\mathbb{R}
+A^2=\{x^2 \in \mathbb{R} \,|\, x \in A\}
+f:A\to A^2
+A
+A^2
+f
+\mathbb{R}
+m(f(A)) = 0
+f(x) = x^2
+A
+A_n = A \cap [0, N]
+m(f(A_N)) = 0
+f(A) = \bigcup_n(f(A_n))
+A_N \subset A
+\epsilon > 0
+\{I_n\}
+A_N \subset \bigcup_n{I_n}
+\sum_n{m(I_n}) < \frac{\epsilon}{2N}
+I_n = (a_n,b_n)
+m(I_n) = b_n-a_n
+m(f(A_n)) = 0
+f(A) = 0
+m(f(I_n)) = b_n^2 - a_n^2 = (b_n-a_n)(b_n+a_n).
+\sum_n{m(f(I_n))} = \sum_n{(b_n - a_n)(b_n + a_n)} \leq \sum_n{(b_n - a_n)*2N} = \sum_n{m(I_n)*2N} <  \epsilon
+m(X) = \lim_{R \to \infty} m(X \cap [-R,R])

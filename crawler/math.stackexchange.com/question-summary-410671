@@ -1,0 +1,40 @@
+\int^{\frac{\pi}{2}}_0 \frac{\cos^2x\,dx}{\cos^2x+4\sin^2x}
+\int^{\frac{\pi}{2}}_0 \frac{\cos^2x\,dx}{\cos^2x+4(1-\cos^2x)}
+=\int^{\frac{\pi}{2}}_0 \frac{\cos^2xdx}{4 - 3\cos^2x}
+=\int^{\frac{\pi}{2}}_0 \frac{1}{3}\{\frac{4-3\cos^2x-4}{4 - 3\cos^2x}\}\,dx
+=\int^{\frac{\pi}{2}}_0 \frac{1}{3}\{ 1- \frac{4}{4 - 3\cos^2x}\}\,dx
+=\int^{\frac{\pi}{2}}_0 \frac{1}{3} 1\,dx- \int^{\frac{\pi}{2}}_0 \frac{1}{3} \frac{4\sec^2x}{4\sec^2x - 3}\,dx
+=\int^{\frac{\pi}{2}}_0 \frac{1}{3} 1\,dx- \int^{\frac{\pi}{2}}_0 \frac{1}{3} \frac{4 \sec^2x}{4(1+\tan^2x) - 3}\,dx
+\tan x = t
+\sec^2x \,dx =dt
+\int^{\frac{\pi}{2}}_0 \frac{\cos^2x\,dx}{\cos^2x+4\sin^2x}
+\cos^2x
+=\int^{\frac{\pi}{2}}_0 \frac{dx}{1 +4\tan^2x}
+=\int^{\frac{\pi}{2}}_0 \frac{dx}{(4)\{\frac{1}{4} +\tan^2x\}}
+=\int^{\frac{\pi}{2}}_0 \frac{dx}{(4)\{\{\frac{1}{2}\}^2 +(\tan x)^2\}}
+\int \frac{1}{a^2+x^2}dx = \frac{1}{a}\tan^{-1}\frac{x}{a}
+3 \int_0^{\pi/2} dx \frac{\cos^2{x}}{\cos^2{x}+4 \sin^2{x}} = 3 \int_0^{\pi/2} dx \frac{\cos^2{x}}{4-3 \cos^2{x}} = 4 \int_0^{\pi/2} \frac{dx}{4-3 \cos^2{x}} - \int_0^{\pi/2} dx
+4 \int_0^{\pi/2} \frac{dx}{4-3 \cos^2{x}} = 2 \int_0^{2 \pi} \frac{dy}{5-3 \cos{y}}
+z=e^{i y}
+dy = -i dz/z
+2 \int_0^{2 \pi} \frac{dy}{5-3 \cos{y}} = -i 4 \oint_{|z|=1} \frac{dz}{10z-3(z^2+1)}
+z=1/3
+z=3
+z=1/3
+(i 2 \pi) \frac{-i 4}{10-6 (1/3)} = \pi
+\int_0^{\pi/2} dx \frac{\cos^2{x}}{\cos^2{x}+4 \sin^2{x}} = \frac{\pi-(\pi/2)}{3} = \frac{\pi}{6}
+t=\tan{(y/2)}
+dy = 2 dt/(1+t^2)
+\cos{y} = (1-t^2)/(1+t^2)
+2 \int_0^{2 \pi} \frac{dy}{5-3 \cos{y}} = \int_0^{\infty} \frac{dt}{(1/4)+t^2} = \frac{\pi}{2} 2 = \pi
+\sec^{4}(x)
+1+\tan^{2}(x)=\sec^{2}(x)
+\sec^{2}(x) + 4 \tan^{2}(x) \sec^{2}(x)
+\sec^{2}(x)
+\sec^{2}(x) \cdot \left(1+4\tan^{2}(x)\right) = (1+\tan^{2}(x))\cdot(1+4\tan^{2}(x))
+t=\tan(x)
+\int_{0}^{\infty} \frac{dt}{(1+t^{2}) \cdot (1+4t^{2})} = \int_{0}^{\infty} \left\{ \frac{1}{1+t^2} -\frac{4}{1+4t^2}\right\} \ dt
+t = \tan(x)
+dt = \sec^{2}(x) \ dx 
+dx = \frac{dt}{(1+t^{2})}
+\int_{0}^{\pi/2} \frac{dx}{1+4\tan^{2}(x)}

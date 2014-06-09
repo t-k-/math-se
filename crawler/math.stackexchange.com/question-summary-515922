@@ -1,0 +1,12 @@
+L_p
+(\mathbb{R}^n,\|{\cdot}\|_p)
+(\mathbb{R}^n,\|{\cdot}\|_q)
+\frac{1}{p}+\frac{1}{q}=1
+(y_1,\dots,y_n)
+\|y\|_* \le \|y\|_q
+ \|y\|_* = \sup_{\|x\|_p\le 1} \sum_{i=1}^n x_i y_i \tag1 
+ \sum_{i=1}^n x_i y_i \le \|x\|_p \|y\|_q 
+\tilde x
+\tilde x_i=|y_i|^{q-2} y_i/\|y\|_q^{q-1}
+\|x\|_p=\frac{1}{\|y\|_q^{q-1}} \left(\sum_{i=1}^n |y_i|^{p (q-1)}\right)^{1/p} =\frac{1}{\|y\|_q^{q-1}} \|y\|_{q}^{q/p} = 1 
+ \|y\|_* \ge  \sum_{i=1}^n \tilde x_i y_i =\frac{1}{\|y\|_q^{q-1}} \sum_{i=1}^n |y_i|^{q} =\frac{\|y\|_q^{q}}{\|y\|_q^{q-1}} = \|y\|_q 

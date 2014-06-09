@@ -1,0 +1,9 @@
+F(x)=\int_{-x}^{x}\frac{1-e^{-xy}}{y}dy, x>0
+F(x)=\int_{v(x)}^{u(x)} f(t)dt
+F'(x)=(f\circ v)(x)v'(x)-(f\circ u)(x)u'(x)
+F(x) = \int_{u(x)}^{v(x)} f(x,t) dt
+ F'(x) = f(x,v(x))v'(x) -f(x,u(x))u'(x) + \int_{u(x)}^{v(x)} \frac{\partial f(x,t)}{\partial x}dt
+\frac{1-e^{-x y}}{y} = \int_0^x dt \: e^{-t y} = x \int_0^1 dt \: e^{-t x y} 
+ F(x) = \int_0^1 dt \: x \int_{-x}^{x} dy \: e^{-t x y} 
+ F(x) = \int_{-1}^1 dt \: \frac{\mathrm{sinh}{\: x t}}{t} 
+F'(x) = \int_{-1}^1 dt \: \mathrm{cosh}{\: x t} = 2 \frac{\mathrm{sinh}{\: x}}{x} 

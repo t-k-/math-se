@@ -1,0 +1,61 @@
+X_1, \ldots, X_n \sim X
+\theta = \mathbb{P}(X > t)
+t > 0
+\hat{\theta}_1 = 1 - F_n(t)
+\theta
+F_n
+X_1, \ldots, X_n
+\lambda
+\theta
+X_1
+X_1/\sum_{i=1}^n X_i
+X_1/\sum_{i=1}^n X_i
+(n-1)(1-x)^{n-2} \mathbb{I}_{ x \in (0,1) }
+ \hat{\theta}_1 = 1 - F_n(t) = \frac{1}{n} \sum_{i=1}^{n} \mathbb{I}_{\{X_i > t \}} 
+n \hat{\theta}_1 \sim \mathrm{Binomial}(n, 1 - F_X(x))
+ \mathbb{E}(\hat{\theta}_1) = \frac{1}{n}\mathbb{E}(n\hat{\theta}_1) = 1 - F_X(x) = \mathbb{P}(X > x) = \theta \qquad \mathrm{(unbiased)} 
+ \mathrm{MSE}(\hat{\theta}_1) = \mathbb{V}(\hat{\theta}_1) = \frac{1}{n^2}\mathbb{V}(n\hat{\theta}_1) = \frac{\theta(1-\theta)}{n} 
+\hat{\theta}_1
+\theta = e^{-t/ \lambda}
+S = \sum_{i=1}^n X_i
+\lambda
+U = \mathbb{E}(\hat{\theta}_1 \, | \, S)
+\theta
+U
+W=\mathbb{I}_{\{X_1>t\}}
+\theta
+\mathbb{E}(W\mid S)
+S
+\mathbb{E}(W\mid S) = > \Pr(X_1>t\mid S)
+\mathbb{E}(\hat{\theta}_1 \mid S)
+X_1
+S = s
+f_{X_1 | S = s}(x) = \frac{f_{X_1,S}(x,s)}{f_S(s)} 
+S
+n
+f_S(s) = \frac{\lambda^{-n} s^{n-1} e^{-s/\lambda}}{(n-1)!} 
+f_{X_1,S}(x,s) = f_{X_1}(x)f_{S | X_1 = x}(s)
+\sum_{i=2}^n X_i
+ \begin{align} \mathbb{P}(S \leq s | X_1 = x) &= \mathbb{P} \left(\left. x + \sum_{i=2}^n X_i \leq s \; \right|\; X_1 = x \right) \\ &= \mathbb{P} \left(\left. \sum_{i=2}^n X_i \leq s -x \; \right|\; X_1 = x\right) \\ &= \mathbb{P} \left(\sum_{i=2}^n X_i \leq s -x\right)  \end{align} 
+ f_{S | X_1 = x}(s) = f_{\sum_{i=2}^n X_i}(s-x) = \frac{\lambda^{-(n-1)} (s-x)^{n-2}e^{-(s-x)/\lambda}}{(n-2)!} 
+S = s
+0 \leq X_1 \leq s
+ f_{X_1 | S = s}(x) = (n-1) \frac{(s-x)^{n-2}}{s^{n-1}} \,  \, \mathbb{I}_{\{0 \leq x \leq s\}} 
+ \mathbb{P}(X_1 > t | S = s) = \int_{t=1}^S (n-1)\frac{(s-x)^{n-2}}{s^{n-1}} \, \mathrm{d}x = \frac{n-1}{s^{n-1}}\left[- \frac{(s-x)^{n-1}}{n-1} \right]^{s}_{t} = \left(1 - \frac{t}{s}\right)^{n-1}
+W=\mathbb{I}_{\{X_1>t\}}
+\theta
+\mathbb{E}(W\mid S)
+S
+\mathbb{E}(W\mid S) = \Pr(X_1>t\mid S)
+X_1>t
+t>S
+\Pr(X_1>t\mid S)=0
+t>S
+Y=X_1/S\sim\operatorname{Beta}(1,n-1)
+X_1
+ \begin{align} & {} \Pr(X_1>t\mid S)=\Pr\left(\left.\frac{X_1}{S} >\frac{t}{S}\; \right|\; S\right) = \Pr\left(\left.Y>\frac{t}{S} \;\right|\; S\right) = \int_{t/S}^1 (n-1)(1-x)^{n-2} \;dx. \\  \\ & = \left[-(1-x)^{n-1}\right]_{x=t/S}^{x=1} = \left(1-\frac{t}{S}\right)^{n-1}. \end{align} 
+ \begin{cases} \left(1-\frac{t}{S}\right)^{n-1} & \text{if }S>t, \\  \\  \\ 0 & \text{if } S<t. \end{cases} 
+\lambda
+S/n
+\theta=e^{-t/\lambda}
+e^{-nt/S}

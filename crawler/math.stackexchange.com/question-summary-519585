@@ -1,0 +1,12 @@
+S
+conv(S)
+S
+f:\mathbb{R}^{n+1} \to \mathbb{R}^n 
+g_k:\mathbb{R}^{n+1} \to \mathbb{R}^n
+k =1,2,3,...,m 
+\dot{x}(t) = f(x,t),\, x(t_i) = x_i, x \in \mathbb{R}^n, t \in \mathbb{R} 
+k = 1,2,3,...,m 
+ \dot{y}_k(t) = g_k(y_k,t),\, y_k(t_i) = y_{ik}, y_k \in \mathbb{R}^n, t \in \mathbb{R} 
+\forall p \in \mathbb{R}^{n+1}, \,f(p) \in conv(\{g_1(p),g_2(p),...g_m(p)\})  
+x_i \in conv(\{y_{i1},y_{i2},...,y_{im}\})
+\forall t>t_i: x(t) \in conv(\{y_1(t),y_2(2),...,y_m(t)\})

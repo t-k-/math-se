@@ -1,0 +1,27 @@
+y(x)
+{d\over dx}f(x,y(x))
+f
+x
+y
+\frac{d}{dx}f(x,y(x)) = \frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}\frac{dy}{dx}.
+f(x,y,\ldots,z)
+x,y,\ldots,z
+t
+\frac{d}{dt}f(x(t),y(t),\ldots, z(t)) = \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial y}{\partial t}+\cdots+\frac{\partial f}{\partial z}\frac{dz}{dt}.
+x(t) = t
+f(x,y) = \sqrt{x^2+y^2}
+y(x) = x^2
+f(x,y(x)) = \sqrt{x^2+(x^2)^2} = \sqrt{x^2+x^4}.
+f
+\frac{df}{dx} = \frac{2x+4x^3}{2\sqrt{x^2+x^4}} = \frac{x+2x^3}{\sqrt{x^2+x^4}}.
+\frac{df}{dx} = \frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}\frac{dy}{dx} = \frac{x}{\sqrt{x^2+y^2}}+\frac{y(x)}{\sqrt{x^2+y^2}}\cdot 2x = \frac{x+2xy(x)}{\sqrt{x^2+y^2}} = \frac{x+2x^3}{\sqrt{x^2+x^4}}.
+\mathrm{d}f(x,z)
+x,z
+ \mathrm{d} f(x,z) = f_1(x,z) \mathrm{d}x + f_2(x,z) \mathrm{d}z 
+z = y(x)
+ \mathrm{d}z = y'(x) \mathrm{d}x 
+\begin{align} \mathrm{d} f(x, y(x))  &= f_1(x, y(x)) \mathrm{d}x + f_2(x, y(z)) y'(x) \mathrm{d} x \\&= \left(f_1(x, y(x)) + f_2(x, y(z)) y'(x) \right)\mathrm{d} x \end{align}
+ \frac{\mathrm{d} f(x, y(x))}{\mathrm{d} x} = f_1(x, y(x)) + f_2(x, y(z)) y'(x) 
+c(t)=(t,y(t))
+f
+(f\circ c)'(t)=\langle \nabla f(c(t),c'(t)\rangle

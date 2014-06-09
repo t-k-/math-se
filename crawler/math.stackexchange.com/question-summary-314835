@@ -1,0 +1,12 @@
+ \sum_{i=0}^{+\infty} \sum_{j=0}^{+\infty} \binom{n+i-1}{i} n^{i+j} .
+|n|<1
+\sum_{i\geq 0}\binom{n+i-1}{i}n^i
+ \lvert \binom{n+i-1}{i}n^i\rvert\leq\frac{|n|(|n|+1)\cdots(|n|+i-1)}{i!}|n|^i\leq \frac{i!}{i!}|n|^i=|n|^i 
+|n|<1
+\sum_{j\geq 0}n^j
+1/(1-n)
+|n|<1
+n^{i+j}=n^in^j
+\sum_{i\geq 0}\sum_{j\geq 0}\binom{n+i-1}{i}n^{i+j} =\left(\sum_{i\geq 0}\binom{n+i-1}{i}n^i\right) \left(\sum_{j\geq 0}n^j\right)
+=\frac{1}{1-n}\sum_{i\geq 0}\binom{n+i-1}{i}n^i. 
+ \sum_{i=0}^{+\infty} \sum_{j=0}^{+\infty} \binom{n+i-1}{i} n^{i+j}=  \sum_{i=0}^{+\infty} \binom{n+i-1}{n-1}n^i \sum_{j=0}^{+\infty} n^{j} 

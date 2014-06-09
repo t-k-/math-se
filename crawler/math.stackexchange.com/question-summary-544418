@@ -1,0 +1,9 @@
+\frac{1}{x^{2}\sqrt{x^{2}+7}}
+x=1/u
+dx=-du/u^2
+v=u^2
+\begin{align}\underbrace{\int \frac{dx}{x^2 \sqrt{x^2+7}}}_{u=1/x} &= -\int \frac{du}{u^2} \frac{u^2}{\sqrt{1/u^2+7}} \\ &= -\underbrace{\int du \frac{u}{\sqrt{1+7 u^2}}}_{v=u^2} \\ &= -\frac12 \underbrace{\int \frac{dv}{\sqrt{1+7 v}}}_{y=7 v}\\ &= -\frac{1}{14} \int \frac{dy}{\sqrt{1+y}}\\ &= -\frac17 \sqrt{1+y}+C\\&= -\frac{\sqrt{x^2+7}}{7 x}+C\end{align}
+x^2+7=t^2x^2\implies 2xdx=2xt^2dx+2tx^2dt\implies dx=\frac {xt dt}{1-t^2}
+I=\int\frac { \frac {xt dt}{1-t^2}}{\frac {7}{t^2-1}.xt}=-\int\frac {dt}{7}=- \frac t7+c=\sqrt {1+\frac {7}{x^2}}+c
+\frac {\sqrt {x^2+7}}{\sqrt 7}=\sqrt {1+\frac{x^2}{7}}\geq 1
+\arcsin \frac {\sqrt {x^2+7}}{\sqrt 7}

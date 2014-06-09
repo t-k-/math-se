@@ -1,0 +1,29 @@
+a,b,c,d,e
+\dfrac{a-b}{b+c}+\dfrac{b-c}{c+d}+\dfrac{c-d}{d+e}+\dfrac{d-e}{e+a}+\dfrac{e-a}{a+b}\ge 0
+a,b,c,d
+a=c
+b=d
+\dfrac{a-b}{b+c}+\dfrac{b-c}{c+d}+\dfrac{c-d}{d+a}+\dfrac{d-a}{a+b}\ge 0
+\dfrac{1}{b+c}+\dfrac{1}{d+a}\ge\dfrac{4}{(b+c)+(d+a)},\dfrac{1}{c+d}+\dfrac{1}{a+b}\ge\dfrac{4}{(c+d)+(a+b)}
+\dfrac{a-b}{b+c}+\dfrac{b-c}{c+d}+\dfrac{c-d}{d+a}+\dfrac{d-a}{a+b}\ge\dfrac{4(a+c)}{(b+c)+(d+a)}+\dfrac{4(b+d)}{(c+d)+(a+b)}-4=0
+n
+x_i > 0
+x_{n+k}=x_k
+\sum_i \dfrac{x_i - x_{i+1}}{x_{i+1} + x_{i+2}} \geqslant 0 \iff \sum_i \left( \dfrac{x_i - x_{i+1}}{x_{i+1} + x_{i+2}} +\frac12 \right) \geqslant \frac{n}2 \iff \sum_i \dfrac{2x_i - x_{i+1}+x_{i+2}}{x_{i+1} + x_{i+2}}  \geqslant n 
+\sum_i \dfrac{2x_i - x_{i+1}+x_{i+2}}{x_{i+1} + x_{i+2}} \geqslant   \dfrac{ \left(\sum_i (2x_i - x_{i+1}+x_{i+2}) \right)^2}{\sum_i \left( (x_{i+1} + x_{i+2}) (2x_i - x_{i+1}+x_{i+2} ) \right)} = \dfrac{ 4\left(\sum_i x_i \right)^2}{2\sum_i (x_i x_{i+1} + x_i x_{i+2})} 
+n=5
+x_i
+\left(\sum_{i=1}^5 x_i \right)^2 - \dfrac{5}2 \sum_{i=1}^5 x_i (x_{i+1}+x_{i+2}) = \frac14 \sum_{i=1}^5 (x_i - x_{i+1})^2 + \frac14 \sum_{i=1}^5 (x_i - x_{i+2})^2 \geqslant 0
+n=6
+a=x_1 + x_4, b = x_2 + x_5, c = x_3+x_6
+x_i
+i
+x_i
+i
+\left(\sum_{i=1}^6 x_i \right)^2 - \dfrac{6}2 \sum_{i=1}^6 x_i (x_{i+1}+x_{i+2}) = (a+b+c)^2 - 3(ab+bc+ca) \geqslant 0
+x_i \in [\frac1{\sqrt3}, \sqrt3]
+a_i b_i
+i
+a_1=-1, a_2=1, b_1=2
+b_2=4
+\sum \frac{a_i}{b_i} \ge \frac{\big(\sum a_i \big)^2}{\sum a_i b_i}

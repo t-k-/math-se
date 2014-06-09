@@ -1,0 +1,11 @@
+\{X_n\}
+\text{E}(|X_1|)< \infty
+\dfrac{\max(X_1,\cdots,X_n)}{n}\xrightarrow{a.s} 0
+P\left[\left|\dfrac{\max(X_1,\cdots,X_n)}{n}\right|> \epsilon\right]\to 0
+X_n \ge 0
+N \to \infty
+\int_0^\infty P[X_n \ge x] \, dx = \int_0^\infty \int_{\{X_n \ge x\}} 1 \, dP \, dx = \int_\Omega \int_{0}^{X_n(\omega)} 1 \, dx \, dP = E[X_n] < \infty.
+\sum_{n=1}^\infty P[X_n \ge \varepsilon n] \le \int_0^\infty P[\frac{X_n}{\varepsilon} \ge x] \, dx = E[X_n]/\varepsilon < \infty.
+P\left[\frac{\max(X_1,\dots,X_N)}{N} \ge \varepsilon\right] \le \sum_{n=1}^N P[X_n \ge \varepsilon N].
+\sum_{n=1}^N P[X_n \ge \varepsilon N] \le \sum_{n=1}^\infty P[X_n \ge \varepsilon n],
+P\left[\frac{\max(X_1,\dots,X_N)}{N} \ge \varepsilon\right] \to 0.

@@ -1,0 +1,4 @@
+PDF= \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x- \mu)^2/2\sigma^2}
+\int_{-\infty}^{\infty} e^{tx} \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x- \mu)^2/2\sigma^2}dx
+=\int_{-\infty}^{\infty} \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x^2 -2x(\mu+t\sigma^2)+ \mu^2)/2\sigma^2}dx
+=e^{((\mu+t\sigma^2)^2-\mu^2)/2\sigma^2}\int_{-\infty}^{\infty} \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x -(\mu+t\sigma^2))^2/2\sigma^2}dx

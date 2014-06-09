@@ -1,0 +1,17 @@
+N
+ \sum_{i=1}^{N} \frac{(x_i - b_i)^2}{c_i^2} = 1 
+ \sum_{i=1}^{N} \frac{(x_i - b'_i)^2}{c_i'^2} = 1 
+x
+(x-x_a)^T A (x-x_a) \le 1
+(x-x_b)^T B (x-x_b) \le 1
+A
+B
+x_a
+x_b
+ \sum_{i=1}^{N} \frac{(x_i - b_i)^2}{c_i^2} = 1 
+ \sum_{i=1}^{N} x_i^2 = 1 
+x_1 = \sqrt{1 - \sum_{i=2}^{N} x_i^2} 
+ \sum_{i=2}^{N} \frac{(x_i - b_i)^2}{c_i^2} + \frac{(\sqrt{1 - \sum_{i=2}^{N} x_i^2} - b_1)^2}{c_1^2} = 1
+c_1^2
+ c_1^2 \cdot \sum_{i=2}^{N} \frac{(x_i - b_i)^2}{c_i^2} +  1 - \sum_{i=2}^{N} x_i^2 - 2\cdot \sqrt{1 - \sum_{i=2}^{N} x_i^2}\cdot b_1 + b_1^2 = c_1^2 
+ \left( \frac{c_1^2 \cdot \sum_{i=2}^{N} \frac{(x_i - b_i)^2}{c_i^2} +  1 - \sum_{i=2}^{N} x_i^2 + b_1^2 - c_1^2}{2\cdot b_1}\right)^2 = 1 - \sum_{i=2}^{N} x_i^2

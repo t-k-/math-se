@@ -1,0 +1,38 @@
+g(n)
+h(n)
+n
+G(x)
+H(x)
+g(n) = h(n-1)
+g_n = [z^n] \sum_{k=1}^n \left(\frac{z}{1-z^2}\right)^k
+h_n = [z^n] \sum_{k=1}^n \left(z+z^2\right)^k.
+z
+k
+z^n
+g_n = [z^n] \sum_{k=1}^\infty \left(\frac{z}{1-z^2}\right)^k
+h_n = [z^n] \sum_{k=1}^\infty \left(z+z^2\right)^k.
+G(z) = \frac{z}{1-z^2} \frac{1}{1-z/(1-z^2)} = \frac{z}{1-z^2-z}
+H(z) = (z+z^2) \frac{1}{1-(z+z^2)} = \frac{z+z^2}{1-z-z^2}
+G(z) = \frac{z}{1-z-z^2} \quad\text{and}\quad H(z) = \frac{z+z^2}{1-z-z^2}.
+G(z)
+g_n = h_{n-1}.
+g_n = F_n \quad\text{and}\quad h_n = F_n + F_{n-1} = F_{n+1}.
+\mathcal{O}
+O(z) = z + z^3 + z^5 + \dots = \dfrac{z}{1-z^2}
+G(z) = \sum_{n \ge 0} g(n) z^n
+\mathcal{G}
+\mathcal{G} = \operatorname{S\scriptsize EQ}(\mathcal{O}) \implies G(z) = \frac{1}{1-O(z)} = \frac{1}{1-\frac{z}{1-z^2}} = \frac{1-z^2}{1-z-z^2}
+\mathcal{C}
+1
+2
+C(z) = z+z^2
+1
+2
+H(z) = \sum_{n \ge 0} h(n) z^n
+\mathcal{H}
+\mathcal{H} = \operatorname{S\scriptsize EQ}(\mathcal{C}) \implies H(z) = \frac{1}{1-C(z)} = \frac{1}{1-z-z^2}
+g(n) = h(n-1)
+n \ge 1
+g(n+1) = h(n)
+n \ge 0
+\sum_{n \ge 0}g(n+1)z^n = \frac{G(z) - g(0)}{z} = \frac1z \left( \frac{1-z^2}{1-z-z^2} - 1\right) = \frac{1}{1-z-z^2} = H(z)

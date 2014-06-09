@@ -1,0 +1,30 @@
+f(x, y) = 6x^2y
+0\le x\le 1
+0\le y\le 1
+P\{X < Y\}
+P\{X < 2Y\}
+P\{X < Y\}
+\int_0^1\int_0^Y6x^2y\,dx\,dy
+6\int_0^1y\,dy\int_0^Yx^2\,dx
+3\int_0^Yx^2\,dx
+y^3
+P\{X < 2Y\}
+\int_0^1\int_0^{2Y}6x^2y\,dx\,dy
+6\int_0^1y\,dy\int_0^{2Y}x^2\,dx
+8y^3
+P\{X < 2Y\} = \begin{cases} 8y^3,  & 0 \le Y \le 1/2 \\ 1, & 1/2 \le Y \le 1  \\ \end{cases}
+Y
+y
+P(X<2Y)
+\mathbb{R}^2
+0 \leq x \leq 1
+0 \leq y \leq 1
+(X,Y)
+x=2y
+y=1/2 x
+(1, 1/2)
+x < 2y
+dxdy
+dydx
+ P(X<2Y)=\int_0^{1/2} \int_0^{2y} 6x^2 y\,dxdy + \int_{1/2}^1 \int_0^1 6x^2y \,dxdy 
+ P(X<2Y)=\int_0^1 \int_{\frac{1}{2}x}^1 6x^2y \,dydx 

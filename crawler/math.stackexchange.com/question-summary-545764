@@ -1,0 +1,9 @@
+f
+g
+\forall f\forall g:B(f)\wedge B(g)\rightarrow B(g\circ f)
+X:=dom(f), Y:=codom(f)=dom(g), Z:=codom(g)
+f
+g
+ S(g)\leftrightarrow\forall z\in Z\exists y\in Y:g(y)=z 
+ S(g)\wedge S(f)\longrightarrow (g\circ f)(x)=g(f(x))=g(y)=z, 
+ \forall g(\forall z(\exists y:g(y)=z)\wedge\forall f(\forall y(\exists x:f(x)=y))\longrightarrow \forall z\exists y\exists x: g(y)=z\wedge f(x)=y. 

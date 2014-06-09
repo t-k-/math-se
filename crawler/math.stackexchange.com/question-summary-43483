@@ -1,0 +1,24 @@
+\left\{\begin{matrix}  \left.\begin{matrix}\left.\begin{matrix} u_{tt}(t,x) = a^2u_{xx}(t,x)\\ u(0,x) = \varphi(x)\\ u_t(0,x) = \psi(x) \end{matrix}\right\}\end{matrix}\right|\;  \left\{\begin{matrix} a > 0\\ t > 0\\ 0 < x < L \end{matrix}\right.\\  u(t,0) =  u(t,L) = 0 \;|\; t \geq 0 \end{matrix}\right.\qquad,
+\frac{\ddot{T}(t)}{a^2T(t)} = \frac{\ddot{X}(x)}{X(x)} := -\lambda \in \mathbb{R}\;,
+\lambda_n = (n\pi/L)^2
+\left.\begin{matrix} u(t,x) = \sum_{n=1}^{\infty} \left(A_n \cos\frac{n\pi a}{L}t + B_n \sin\frac{n\pi a}{L}t\right)\sin\frac{n\pi}{L}x \end{matrix}\;\right|\; A_n \wedge B_n \in \mathbb{R}\quad,
+t = 0
+\left.\begin{matrix}\left.\begin{matrix} \varphi(x) = \sum_{n=1}^{\infty} A_n \sin\frac{n\pi}{L}x \\ \psi(x) = \sum_{n=1}^{\infty} \frac{n\pi a}{L}B_n\sin\frac{n\pi}{L}x \\ \end{matrix}\right\}\end{matrix}\right|  \;0 \leq x\leq L\quad,
+\left\{\begin{matrix} A_n = \frac{2}{L}\int_{0}^{L} \varphi(x)\left(\sin\frac{n\pi}{L}x\right)dx \\ B_n = \frac{2}{n\pi a}\int_{0}^{L} \psi(x)\left(\sin\frac{n\pi}{L}x\right)dx \\ \end{matrix}\right.\quad.
+f_v(t,x) = -\beta u_t(t,x)
+\beta > 0
+u_{tt}(t,x) + \beta u_t(t,x)= a^2u_{xx}(t,x)\;,
+\frac{\ddot{T}(t)}{a^2\beta T(t)} + \frac{\dot{T}(t)}{a^2T(t)} = \frac{\ddot{X}(x)}{\beta X(x)} := -\lambda \in \mathbb{R}
+\lambda_n = (n\pi/L)^2/\beta
+u(t,x) = \sum_{1 \leq n < \frac{\beta L}{2\pi a}} \left(A_n \exp\left\{\!\!\frac{\beta}{2} \left[\sqrt{1 - \left(\frac{2n \pi a}{\beta L}\right)^{\!\!2}} - 1\right] t\right\}\right. +
++\; \left.B_n \exp\left\{\!\!- \frac{\beta}{2} \left[\sqrt{1 - \left(\frac{2n \pi a}{\beta L}\right)^{\!\!2}}  + 1\right]t\right\}\right) \sin\frac{n\pi}{L}x +
++\, \mathbb{I}_{n = \frac{\beta L}{2\pi a}} (C_n + D_nt) \exp\left(\!\!-\frac{\beta}{2}t\right) \sin\frac{\beta}{2a}x +
++ \sum_{n > \frac{\beta L}{2\pi a}} \left[E_n \cos\frac{\beta}{2}\sqrt{\left(\frac{2n \pi a}{\beta L}\right)^{\!\!2} \!- 1}\;t \,+\,  F_n \sin\frac{\beta}{2}\sqrt{\left(\frac{2n \pi a}{\beta L}\right)^{\!\!2} \!- 1}\;t\right] \exp\left(\!\!-\frac{\beta}{2}t\right) \sin\frac{n\pi}{L}x\quad.
+A_n
+F_n
+\varphi(x)
+\psi(x)
+t=0
+u
+u_t
+2\times2

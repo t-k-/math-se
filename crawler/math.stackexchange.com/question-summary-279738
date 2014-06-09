@@ -1,0 +1,14 @@
+\prod_{j=1}^k \left(a + \dfrac{j}n \right)^n = a^{nk} \prod_{j=1}^k \left(1 + \dfrac{j}{an} \right)^n
+S_n = a^{-nk} \prod_{j=1}^k \left(a + \dfrac{j}n \right)^n = \prod_{j=1}^k \left(1 + \dfrac{j}{an} \right)^n
+\lim_{n \to \infty} S_n = \underbrace{\prod_{j=1}^k \lim_{n \to \infty} \left(1 + \dfrac{j}{an} \right)^n = \prod_{j=1}^k \exp(j/a)}_{\text{By using the fact that }\lim_{n \to \infty} \left(1 + \frac{x}n\right)^n = e^x} = \exp\left(\dfrac{\sum_{j=1}^k j}{a} \right) = \exp\left(\dfrac{k(k+1)}{2a} \right)
+ \begin{align} \log\left(a^{-nk}\prod_{j=1}^k(a+j/n)^n\right) &=n\left(-k\log(a)+\sum_{j=1}^k\log(a+j/n)\right)\\ &=n\sum_{j=1}^k\log\left(1+\frac{j}{an}\right)\\ &=n\sum_{j=1}^k\left(\frac{j}{an}+O\left(\frac1{n^2}\right)\right)\\ &=\frac{k(k+1)}{2a}+O\left(\frac1n\right) \end{align} 
+ \lim_{n\to\infty}a^{-nk}\prod_{j=1}^k(a+j/n)^n=\exp\left(\frac{k(k+1)}{2a}\right) 
+\ln(1+x)
+\ln(1+x) = \sum_{n=1}^{\infty} (-1)^{n-1}x^n/n 
+0 < x < 1
+x > \ln(1+x) > x - x^2/2
+\sum_{j=1}^k\ln\left(1+\frac{j}{an}\right) < \sum_{j=1}^k \frac{j}{an} = \frac{1}{a n}\frac{k(k+1)}{2} 
+\sum_{j=1}^k\ln\left(1+\frac{j}{an}\right) > \sum_{j=1}^k \left( \frac{j}{an} - \frac{j^2}{2a^2 n^2}\right) = \frac{1}{a n}\frac{k(k+1)}{2} - \frac{1}{2a^2 n^2}\frac{k(k+1)(2k+1)}{6} 
+\log\left(a^{-nk}\prod_{j=1}^k(a+j/n)^n\right) < \frac{1}{a }\frac{k(k+1)}{2} 
+\log\left(a^{-nk}\prod_{j=1}^k(a+j/n)^n\right) > \frac{1}{a }\frac{k(k+1)}{2} - \frac{1}{2a^2 n}\frac{k(k+1)(2k+1)}{6} 
+n \to \infty

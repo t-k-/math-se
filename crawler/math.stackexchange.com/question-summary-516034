@@ -1,0 +1,11 @@
+Z_t = X \cos\left(2 \pi t + \theta \right)
+X
+\theta
+ p_{X} (x) = \begin{cases} 0 & \text{if } x < 0 \\ xe^{-\frac{x^2}{2}} & \text{if } x \geq 0 \end{cases} 
+\theta
+[0,2\pi]
+t
+Z_t
+ \begin{align*} C_{Z_t} (h) & = E \left[ e^{j h Z_t} \right] \\ & = E \left[ e^{j h X \cos\left(2\pi t + \theta \right)} \right] \\ & = E \left[ E \left[ e^{j h X \cos\left(2\pi t + \theta \right)} | \theta \right] \right] \\ & = E \left[ C_X \left( h \cos\left(2\pi t + \theta \right) \right) \right] \end{align*} 
+ \begin{align*} C_X (h) &= E \left[ e^{j h X} \right] \\ &= \int_{-\infty}^{\infty} e^{j h x} p_X (x) \text{d}x \\ &= \int_{0}^{\infty} x e^{j h x - \frac{x^2}{2}} \text{d}x \\ E[f(\theta)] &= \int_{-\infty}^{\infty} f(\theta) p_\theta (\theta) \text{d} \theta \\ &= \frac{1}{2\pi} \int_{0}^{2\pi} f(\theta) \text{d} \theta \end{align*} \\ \therefore C_{Z_t} (h) = \frac{1}{2\pi} \int_{0}^{2\pi} \int_{0}^{\infty} x \cdot \exp\left( j h x \cos\left(2\pi t + \theta \right) - \frac{x^2}{2} \right) \text{d}x \text{d}\theta 
+Z_t

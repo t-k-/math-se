@@ -1,0 +1,16 @@
+\{\dot{x}=f(t,x)~,~x(t_0)=x_0\}
+f
+x(t)
+M
+x_0 \in M
+h>0
+\mathrm{dist}(x_0+hf(t_0,x_0),M)\leq |x_0+hf(t_0,x_0)-x(t_0+h)|_2.
+\varepsilon > 0
+\delta >0
+h\in (0,\delta]
+\mathrm{dist}(x_0+hf(t_0,x_0),M)\leq \left| h\dot{x}(t_0)-\int_{t_0}^{t_0+h}\dot{x}(s)ds \right| _2\color{red}{\leq}\varepsilon h,
+\lim_{h \searrow 0}\frac{1}{h}\mathrm{dist}(x+hf(t,x),M)=0
+ t\in\mathbb{R},x\in M
+\left| h\dot{x}(t_0)-\int_{t_0}^{t_0+h}\dot{x}(s)ds \right| _2\overset{\color{red}{\text{ed.:wrong!}}}{\neq}{\scriptsize h\dot{x}(t_0)-\dot{x}(t_0+h)+\dot{x}(t_0)=\underbrace{(h+1)}_{\to 1}\dot{x}(t_0)-\dot{x}(\underbrace{t_0+h}_{\to t_0})\overset{?}{\to}0}
+x\in \mathring{M}
+\left| h\dot{x}(t_0)-\int_{t_0}^{t_0+h}\dot{x}(s)ds \right| _2=h\dot{x}(t_0)-(x(t_0+h)-x(t_0))=h\bigg(\dot{x}(t_0)-\underbrace{\frac{x(t_0+h)-x(t_0)}{h}}_{\longrightarrow\dot{x}(t_0)\text{ for } h\searrow 0}\bigg)

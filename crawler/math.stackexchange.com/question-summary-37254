@@ -1,0 +1,35 @@
+L
+A
+B
+A
+[0,L]
+L/2
+A
+B
+L/4
+L/2
+3L/4
+n=3
+L=1
+0 \leq x_1 < x_2 < x_3 \leq 1
+ \int_0^{x_1 } {(x_1  - u)\,du}  + \int_{x_1 }^{\frac{{x_1  + x_2 }}{2}} {(u - x_1 )\,du}  + \int_{\frac{{x_1  + x_2 }}{2}}^{x_2 } {(x_2  - u)\,du}  
+  + \int_{x_2 }^{\frac{{x_2  + x_3 }}{2}} {(u - x_2 )\,du}  + \int_{\frac{{x_2  + x_3 }}{2}}^{x_3 } {(x_3  - u)\,du}  + \int_{x_3 }^1 {(u - x_3 )\,du} , 
+ \int_0^{x_1 } {u\,du}  + \int_0^{\frac{{x_2  - x_1 }}{2}} {u\,du}  + \int_0^{\frac{{x_2  - x_1 }}{2}} {u\,du}  + \int_0^{\frac{{x_3  - x_2 }}{2}} {u\,du}  + \int_0^{\frac{{x_3  - x_2 }}{2}} {u\,du}  + \int_0^{1 - x_3 } {u\,du},  
+ \frac{{x_1^2 }}{2} + \frac{{(x_2  - x_1 )^2 }}{4} + \frac{{(x_3  - x_2 )^2 }}{4} + \frac{{(1 - x_3 )^2 }}{2}. 
+n=3
+x_1 < x_2 < x_3
+(0,x_1),(x_1,(x_1+x_2)/2),((x_1+x_2)/2,x_2),(x_2,(x_2+x_3)/2),((x_2+x_3)/2),x_3),
+(x_3,1)
+x_1, x_2
+x_3
+E
+E
+x_1=\frac{1}{6}, x_2=\frac{1}{2},
+x_3=\frac{5}{6}
+ 2 E=x_1^2+\left( \frac{x_1+x_2}{2} - x_1\right)^2 +\left( x_2 - \frac{x1+x2}{2}\right)^2 + \left( \frac{x_2+x_3}{2}-x_2 \right)^2  
++ \left( x_3 - \frac{x_2+x_3}{2}\right)^2 + (1-x_3)^2
+=\frac{3}{2}x_1^2-x_1 x_2 + x_2^2 - x_2 x_3 + \frac{3}{2} x_3^2 -2 x_3+1
+n
+n
+L
+\frac{1}{2n}L,  \frac{3}{2n}L, \frac{5}{2n}L, \ldots , \frac{2n-1}{2n}L.

@@ -1,0 +1,29 @@
+y
+x
+ \frac{d^2 y}{dx^2} = f \Big( {\frac{dy}{dx},y,x} \Big), 
+s=g(x)
+\frac{d^2 y}{dx^2}, \frac{dy}{dx}
+ \frac{dy}{dx} = \frac{dy}{ds}\frac{ds}{dx}. 
+ \frac{d^2 y}{dx^2}  = \frac{d}{dx} \Big( \frac{dy}{dx} \Big)  = \frac{d}{dx} \left( \frac{dy}{ds} \frac{ds}{dx} \right)  = \frac{ds}{dx} \cdot \frac{d}{dx} \Big( \frac{dy}{ds} \Big) +  \frac{dy}{ds} \cdot \frac{d}{dx} \Big( \frac{ds}{dx} \Big) .
+ \frac{ds}{dx} \cdot \left( \frac{d}{dx} \Big( \frac{dy}{ds} \Big) \right)  = \frac{ds}{dx} \cdot \left( \frac{d}{ds} \Big( \frac{dy}{ds} \Big) \cdot \frac{ds}{dx} \right)  = \frac{d^2 y}{ds^2} \Big( \frac{ds}{dx} \Big)^2 , 
+ \frac{dy}{ds} \cdot \frac{d^2 s}{dx^2}. 
+ \frac{d^2 y}{dx^2}  = \frac{d^2 y}{ds^2} \Big( \frac{ds}{dx} \Big)^2   + \frac{dy}{ds} \cdot \frac{d^2 s}{dx^2} 
+s= g(y)
+\frac{dy}{dx}
+x
+ \begin{align*} s &= g(y) \\  \frac{ds}{dx} &= \frac{dg}{dy} \cdot \frac{dy}{dx}  \end{align*}
+y
+s
+s=g(y)
+\frac{ds}{dx} = \frac{ds}{dy}\frac{dy}{dx} = g'(y)\frac{dy}{dx}
+\frac{d^2s}{dx^2} = g''(y) \frac{dy}{dx} + g'(y)\frac{d^2y}{dx^2}
+\frac{d^2s}{dx^2} = g''(y)\frac{dy}{dx}+g'(y)f\left(\frac{dy}{dx},y,x\right)
+\frac{dy}{dx}
+\frac{ds}{dx}/g'(y)
+g'(y) \not=0
+\frac{d^2s}{dx^2} = g''(y)\left(\frac{ds}{dx}/g'(y)\right)+g'(y)f\left(\frac{ds}{dx}/g'(y),y,x\right)
+g(y)
+s
+y
+y=g^{-1}(s)
+\frac{d^2s}{dx^2} = g''(g^{-1}(s))\left(\frac{ds}{dx}/g'(g^{-1}(s))\right)+g'(g^{-1}(s))f\left(\frac{ds}{dx}/g'(g^{-1}(s)),g^{-1}(s),x\right)

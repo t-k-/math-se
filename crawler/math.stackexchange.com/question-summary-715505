@@ -1,0 +1,11 @@
+\lim_{n\to\infty}\int_{0}^{2\pi}\left(\dfrac{\sin{(nx)}}{x^2+n^2}+\dfrac{\cos{(nx)}}{1+x}\right)dx 
+\dfrac{\sin(nx)}{x^{2}+n^{2}} \rightarrow 0
+x \in [0,2\pi]
+n \rightarrow \infty.
+\lim_{n\rightarrow \infty} \int_{0}^{2\pi}{\frac{\sin(nx)}{x^{2}+n^{2}}dx}= \int_{0}^{2\pi}{0 \,dx}=0
+\left|\int_{0}^{2\pi}{\frac{\cos(nx)}{1+x}dx} \right|\leq\frac{1}{n}\int_{0}^{2\pi}{\frac{dx}{|1+x|^{2}}}=\frac{1}{n}\cdot\left|\frac{2\pi}{1+2\pi}\right|\rightarrow 0
+\pi^/n
+\pi/n
+\pi /n
+\dfrac{\sin nx}{x^2+n^2}\to 0
+\int_0^{2\pi}\dfrac{\cos nx}{1+x}dx=\int_0^{\pi/n}\dfrac{\cos nx}{1+x}dx+\int_{\pi/n}^{2\pi/n}\dfrac{\cos nx}{1+x}dx+\dots=\int_0^{\pi/n}{\cos nx}\dfrac 1{1+x}-\dfrac{1}{1+\pi/n+x}dx+\int_{2\pi/n}^{3\pi/n}{\cos nx}\dfrac 1{1+x}-\dfrac{1}{1+\pi/n+x}dx+\int_{4\pi/n}^{5\pi/n}{\cos nx}\dfrac 1{1+x}-\dfrac{1}{1+\pi/n+x}dx+\dots\leq \pi^2/n

@@ -1,0 +1,19 @@
+I=\int x^2\sin^{-1}(x)\ dx
+\sin^{-1}(x)
+\sin(x)
+u=\sin^{-1}(x)
+x=\sin(u)
+dx=\cos(u)\ du
+I=\int u\cos(u)\sin^2(u)\ du
+v=\pi-u
+dv=-du
+\cos(\pi-v)=-\cos(v)
+\sin(\pi-v)=\sin(v)
+I=-\int (\pi-v)\cos(\pi-v)\sin^2(\pi-v)\ dv
+I=\int (\pi-v)\cos(v)\sin^2(v)\ dv
+I=\int\pi\cos(v)\sin^2(v)\ dv-I=\frac{\pi\sin^3(v)}{3}-I=\frac{\pi x^3}{3}-I
+I=\frac{\pi x^3}{6}+C
+u\in(-\frac{\pi}{2},\frac{\pi}{2})
+u\in(\frac{\pi}{2},\frac{3\pi}{2})
+\int v\cos(v)\sin^2(v)\ dv
+I

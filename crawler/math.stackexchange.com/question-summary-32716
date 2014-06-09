@@ -1,0 +1,12 @@
+\left\{x \right\}= x-\left\lfloor x \right\rfloor 
+x_k
+1/x
+k
+[x_{k+1},x_k]
+n
+b > 0
+n = \lfloor 1/b \rfloor
+\int_a^b x \text{frac}(1/x)\ dx = \int_0^b x \text{frac}(1/x)\ dx - \int_0^a x \text{frac}(1/x)\ dx
+\int_{1/(n+1)}^{1/n} x \text{frac}(1/x)\ dx = \int_{1/(n+1)}^{1/n} x (1/x - n)\ dx =  \frac{1}{2n(n+1)^2}
+\int_0^{1/n} x \text{frac}(1/x)\ dx = \sum_{j=n}^\infty \frac{1}{2j(j+1)^2} = \frac{1}{2n} - \frac{\Psi(1,n+1)}{2}
+\int_0^b x \text{frac}(1/x)\ dx =  \frac{1}{2(n+1)} - \frac{\Psi(1,n+2)}{2} + \int_{1/(n+1)}^b x (1/x - n-1)\ dx =  \frac{1 - (b(n+1)-1)^2}{2(n+1)} - \frac{\Psi(1,n+2)}{2}

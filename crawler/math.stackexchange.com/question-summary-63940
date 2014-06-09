@@ -1,0 +1,46 @@
+p
+N_n
+n
+n
+N_n
+S_n
+n
+ P(S_n=k) = {{k-1}\choose{n-1}} (1-p)^{k-n}p^n.
+F_n
+n
+ P(F_n=k) = {{k-1}\choose{n-1}} p^{k-n}(1-p)^n.
+N_n = \min\{S_n, F_n\}.
+N_n
+n
+2n-1
+k
+n
+2n-1
+\{N_n = k\}
+k
+k-1
+n-1
+k-n \leq n-1
+k
+k-1
+n-1
+k-n \leq n-1
+\binom{k-1}{n-1}
+S
+NeBi(n, p)
+F
+NeBi(n, 1-p)
+   \mathbb{P}(N_n = k) = \frac{\mathbb{P}( \left. S = k-n \right| S < n) \mathbb{P}(S < n) + \mathbb{P}( \left. F = k-n \right| F < n)\mathbb{P}(F < n)}{ \mathbb{P}(S < n)  + \mathbb{P}(F < n) } 
+B_p(a,b)
+   \begin{eqnarray}   \mathbb{P}(N_n = k) &=& \left( p^n (1-p)^{k-n} \binom{k-1}{n-1} +(1-p)^n p^{k-n} \binom{k-1}{n-1}  \right)    \frac{B(n,n) \chi_{n \le k < 2 n}  }{B_p(n,n) + B_{1-p}(n,n) }    \end{eqnarray} 
+k
+n
+k-n
+ P(S_n=k) = {{k}\choose{n}} (1-p)^{k-n}p^n.
+S_n
+F_n
+ P(N_n=k) = P(S_n=k) + P(F_n=k) 
+S_n=k
+F_n=k
+k=2n-1
+k \in [n,2n-1]

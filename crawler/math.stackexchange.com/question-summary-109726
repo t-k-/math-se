@@ -1,0 +1,38 @@
+\{x_n:n\in\mathbb{N}\}\subset X
+x\in X
+\{y_n:n\in\mathbb{N}\}\subset X
+y\in X
+\varepsilon >0
+K\in\mathbb{N}
+L\in\mathbb{N}
+k>K
+l>L
+N=\max(M,L)
+k>N
+l>L
+\varepsilon >0
+ d(x_k,x_0)<\varepsilon/2\qquad\qquad d(y_l,y_0)<\varepsilon/2 
+ |d(x_k,y_l)-d(x_0,y_0)|\leq d(x_k,x_0)+d(y,y_0)<\varepsilon 
+ \lim\limits_{k,l\to\infty}d(x_k,y_l)=d(x_0,y_0). 
+p,q,r,s\in X
+ |d(p,q)-d(r,s)|\leq d(p,r)+d(q,s) 
+ d(p,q)\leq d(p,r)+d(r,q)\leq d(p,r)+d(r,s)+d(s,q)\Longrightarrow 
+ d(p,q)-d(r,s)\leq d(p,r)+d(q,s) 
+ d(r,s)\leq d(r,p)+d(p,q)\leq d(r,p)+d(p,q)+d(q,s)\Longrightarrow 
+ d(r,s)-d(p,q)\leq d(r,p)+d(q,s) 
+ |d(p,q)-d(r,s)|\leq d(p,r)+d(q,s) 
+d
+X\times X
+(x_i,y_i)\to (x,y)
+X\times X
+d(x_i,y_i)\leq d(x_i,x)+d(x,y)+d(y,y_i)
+d(x_i,x)+d(x_i,y_i)\geq d(x,y_i)
+d(x,y_i)+d(y,y_i)\geq d(x,y)
+d(x,y)
+x_i\to x
+y_i\to y
+d(x_i,x),d(y,y_i)\to 0
+d(x_i,y_i)\to 0
+d(x_i,y_i)\geq d(x,y_i)-d(x_i,x) \geq d(x,y)-d(x_i,x)-d(y,y_i)
+d(x,y)-d(x_i,x)-d(y,y_i)\leq d(x_i,y_i)\leq d(x_i,x)+d(x,y)+d(y,y_i)
+ \color{red}{0\leqslant|d(x_i,y_j)-d(x,y)|\leqslant d(x_i,x)+d(y_j,y)\longrightarrow0} 

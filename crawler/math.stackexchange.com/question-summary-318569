@@ -1,0 +1,10 @@
+\int_0^1\frac{\ln x\ln (1-x^2)}{1-x^2}\text{d}x
+\beta=0
+\alpha
+\psi(1/2) = -\gamma - 2 \log(2)
+\psi^{(1)}(1/2) = \frac{\pi^2}{2}
+\psi^{(2)}(1/2) = -14 \zeta(3)
+\begin{eqnarray}    \int_0^1 \frac{\log(x) \log(1-x^2)}{1-x^2} \mathrm{d}x &\stackrel{u=x^2}{=}& \frac{1}{4} \int_0^1 \frac{\log(u)}{\sqrt{u}} \frac{\log(1-u)}{1-u} \mathrm{d}u \\     &=& \frac{1}{4} \lim_{\alpha\to \frac{1}{2}} \lim_{\beta \downarrow 0^+} \frac{\mathrm{d}}{\mathrm{d} \alpha} \frac{\mathrm{d}}{\mathrm{d} \beta} \int_0^1 u^{\alpha-1} (1-u)^{\beta-1}\mathrm{d}u \\ &=& \frac{1}{4} \lim_{\alpha\to \frac{1}{2}} \lim_{\beta \downarrow 0^+} \frac{\mathrm{d}}{\mathrm{d} \alpha} \frac{\mathrm{d}}{\mathrm{d} \beta} \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha+\beta)} \\ \\ &=& \frac{1}{4} \lim_{\alpha\to \frac{1}{2}} \lim_{\beta \downarrow 0^+} \frac{\mathrm{d}}{\mathrm{d} \alpha} \frac{\mathrm{d}}{\mathrm{d} \beta} \frac{\Gamma(\alpha) \Gamma(\beta+1)}{\beta \, \Gamma(\alpha+\beta)} \end{eqnarray} 
+   \frac{\Gamma(\alpha) \Gamma(\beta+1)}{\beta \, \Gamma(\alpha+\beta)} = \frac{1}{\beta} + \left(-\gamma - \psi(a)\right) + \frac{\beta}{2} \left( \frac{\pi^2}{6} + \gamma^2+2 \gamma \psi(a) + \psi(a)^2 -\psi^{(1)}(a) \right) + \mathcal{o}(\beta) 
+  \int_0^1 \frac{\log(x) \log(1-x^2)}{1-x^2} \mathrm{d}x = \frac{1}{4} \lim_{\alpha \to \frac{1}{2}} \left(  \gamma \psi^{(1)}(a) + \psi(a) \psi^{(1)}(a) - \frac{1}{2} \psi^{(2)}(a)  \right) 
+    \int_0^1 \frac{\log(x) \log(1-x^2)}{1-x^2} \mathrm{d}x = \frac{1}{4}  \left( 7 \zeta(3) - \pi^2 \log(2) \right) 

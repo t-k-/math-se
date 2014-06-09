@@ -1,0 +1,69 @@
+k_1, k_2, k_3
+x
+ f(x) =  \begin{cases} 0 & if x = 1\\ k_1f(x-1) + k_2x + k_3 & if x \ge 2\\ \end{cases} 
+x
+ f(1) = 0\\ f(2) = 2k_2 + k_3\\ f(3) = k_1(2k_2 + k_3) + 3k_2 + k_3\\ f(4) = k_1^2(2k_2 + k_3)+ k_1(3k_2 + k_3) + 4k_2 + k_3\\ f(5) = k_1^3(2k_2 + k_3)+ k_1^2(3k_2 + k_3) + k_1(4k_2 + k_3) + 5k_2 + k_3\\ \vdots\\ f(x) = \sum_{i=1}^{x-1}k_1^{i-1}(ik_2 + k_3) 
+ f(x) = \sum_{i=1}^{x-1}ik_2k_1^{i-1} + k_3k_1^{i-1}\\ f(x) = \sum_{i=1}^{x-1}ik_2k_1^{i-1} + \sum_{i=1}^{x-1}k_3k_1^{i-1}\\ f(x) = k_2(\sum_{i=1}^{x-1}ik_1^{i-1}) + k_3(\sum_{i=1}^{x-1}k_1^{i-1})\\ f(x) = k_2(\frac{\sum_{i=1}^{x-1}ik_1^i}{k_1}) + k_3(\frac{\sum_{i=1}^{x-1}k_1^i}{k_1})\\ f(x) = \frac{k_2}{k_1}(\frac{k_1 - xk_1^x + (x - 1)k_1^{x+1}}{(1 - k_1)^2}) +         \frac{k_3}{k_1}(\frac{k_1 - k_1^x}{1 - k_1})\\ \vdots\\ f(x) = \frac{(k_1-1)k_1^xk_2x+((k_1-1)k_1^x-k_1^2+k_1)k_3+(k_1^{x+1}+k_1)k_2)}{(k_1^3-2k_1^2+k_1)}\\ 
+k_1 = 0
+k_1 = 1
+k_1
+k_2
+k_3
+\in \Bbb Z
+k_1 = 2
+k_2 = 2
+k_3 = 2
+f(1)=0
+f(n)=k_1f(n-1)+k_2n+k_3
+n\in{\Bbb N}^{\ge2}
+f(n)
+g(n)=k_1^{-n}f(n)
+k_1^ng(n)=k_1^ng(n-1)+k_2n+k_3\implies g(n)=g(n-1)+k_1^{-n}(k_2n+k_3),
+g(n)=\sum_{i=2}^n k_1^{-i}(k_2i+k_3)
+f(n)=\sum_{i=2}^n k_1^{n-i}(k_2i+k_3)
+2
+f(2)
+\begin{align} \sum_{i=0}^{n-1} a^i&=\frac{1-a^n}{1-a} \\ \sum_{i=0}^{n-1}ia^i&=\frac{a-na^n+(n-1)a^{n+1}}{(1-a)^2}, \end{align}
+\begin{align}f(n)&=\sum_{i=2}^n k_1^{n-i}(k_2i+k_3) \\ &=\sum_{i=0}^{n-2} k_1^i(k_2(n-i)+k_3) \\ &=(k_2n+k_3)\sum_{i=0}^{n-2} k_1^i-k_2\sum_{i=0}^{n-2}ik_1^i \\ &=(k_2n+k_3)\frac{1-k_1^{n-1}}{1-k_1}-k_2\frac{k_1-(n-1)k_1^{n-1}+(n-2)k_1^n}{(1-k_1)^2} \\ &=\frac{-k_1^{n-1} (k_2+k_3)+k_1^n (2 k_2+k_3)-k_1 (k_2 n+k_2+k_3)+k_2 n+k_3}{(k_1-1)^2}, \end{align}
+n
+f(n)=A\alpha^n+Bn+C
+f(1)=0=A\alpha+B+C
+\begin{align}f(n)=A\alpha^n+Bn+C&=k_1(A\alpha^{n-1}+B(n-1)+C)+k_2n+k_3 \\ &=\frac{k_1A}\alpha\alpha^n+(k_1B+k_2)n+k_1(C-B)+k_3 \end{align}
+A=-\frac1\alpha(B+C)
+k_1=\alpha
+k_1B+k_2=B
+C=k_1(C-B)+k_3
+B
+C
+f(x)=B(n-k_1^{n-1})+C(1-k_1^{n-1})
+k_1B+k_2=B\implies B=\frac{k_2}{1-k_1}
+C=k_1\left(C-\frac{k_2}{1-k_1}\right)+k_3\implies C=\frac{k_3(1-k_1)-k_1k_2}{(1-k_1)^2},
+f(n)=(1-k_1^{n-1})\frac{k_3(1-k_1)-k_1k_2}{(1-k_1)^2}+(n-k_1^{n-1})\frac{k_2}{1-k_1},
+2D=k_2\implies D=\frac{k_2}2
+B=D-k_3=\frac{k_2}2-k_3
+D+B+C=0\implies 
+C=k_3-k_2
+f(n)\Big|_{k_1=1}=\frac12(k_2n^2+(k_2-2k_3)n+2(k_3-k_2)).
+f(n)
+k_1\to1
+n,k_1,k_2,k_3\in{\Bbb R}
+k_1\ne1
+k_1=1
+k_1=1
+(n,k_1,k_2,k_3)\in{\Bbb R}^4
+f_0(x) = Ck_1^x
+f_1(x)=ax+b
+a
+b
+a=k_1a+k_2, \ \ b=-k_1a+k_1b+k_3
+f_0+f_1
+C
+f(1)=0
+f(x) = k_1f(x-1).
+ ax+b =  k_1[a(x-1)+b] + k_2x + k_3.  
+f(n) = \sum_{i=0}^{n-2}k_1^i((n-i)k_2+k_3)
+\displaystyle\frac{k_1^n(2k_2+k_3)-k_1^{n-1}(k_2+k_3)-k_1(k_2(n+1)+k_3)+k_2n+k_3}{(k_1-1)^2}
+n= 10
+k_1 = k_2 = k_3 = 2
+2^{10}(2(2)+2) - 2^{9}(2+2)-2(2(11)+2)+2(10)+2 = 2^{10}(6)-2^{9}(4)-48+22
+ = 6144-2048 -26 = 4070

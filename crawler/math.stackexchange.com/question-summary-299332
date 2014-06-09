@@ -1,0 +1,17 @@
+f
+v
+f(v)=\begin{cases}C&\text{if } v\ge C\\ \gamma v &\text{otherwise}\end{cases}
+v\sim N(v_0,\sigma_v)
+C
+f
+f
+E[f(V)] = \frac{\gamma}{\sqrt{2 \pi} \sigma_0} \int_{-\infty}^C dv \: v \exp{\left [ - \frac{(v-v_0)^2}{2 \sigma_0^2} \right ]} + \frac{C}{\sqrt{2 \pi} \sigma_0} \int_{C}^{\infty} dv \: \exp{\left [ - \frac{(v-v_0)^2}{2 \sigma_0^2} \right ]} 
+V
+E[f(V)^2] = \frac{\gamma^2}{\sqrt{2 \pi} \sigma_0} \int_{-\infty}^C dv \: v^2 \exp{\left [ - \frac{(v-v_0)^2}{2 \sigma_0^2} \right ]} + \frac{C^2}{\sqrt{2 \pi} \sigma_0} \int_{C}^{\infty} dv \: \exp{\left [ - \frac{(v-v_0)^2}{2 \sigma_0^2} \right ]} 
+\mathrm{Var}[f(V)] = E[f(V)^2] - E[f(V)]^2
+\beta = \dfrac{C-v_0}{\sigma_v}
+b=\phi(\beta)
+B=\Phi(\beta)
+E[f] = B \gamma \left(  v_0 - \frac{b}{B} \sigma_v \right) +(1-B)C
+f
+ B \gamma^2 \left(\sigma_v \left( 1 - \frac{b \beta}{ B} -\frac{b^2}{B^2} \right) +  \left(v_0 - \frac{b}{B} \sigma_v\right)^2\right) +(1-B)C^2

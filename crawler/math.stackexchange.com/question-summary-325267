@@ -1,0 +1,25 @@
+X_1, \dots, X_n
+X_j \sim N(j\theta, \sigma^2)
+j = 1,\dots, n \ 
+\ \sigma^2 > 0 \ 
+ \bar{X} = \frac{\sum^n_{j = 1}X_j}{n} \ and \ \bar{X^*} = \frac{\Biggl [\sum^n_{j = 1}\frac{X_j}{j} \Biggr ]}{n}. 
+\theta
+\bar{X}
+\bf{My \ thoughts:}
+E[\bar{X}] = j\theta.
+ V[\bar{X}] = \frac{\sigma^2}{n}
+\bar{X} \sim N(j\theta,\frac{\sigma^2}{n}).\\
+ 0.95 = P[-1.96 \leq Z \leq 1.96]\\ = P[-1.96 \leq \frac{\bar{X} - j\theta}{\frac{\sigma}{\sqrt{n}}} \leq 1.96] \\ = P[-1.96 \bigl(\frac{\sigma}{\sqrt{n}} \bigr) \leq \bar{X} - j\theta \leq 1.96\bigl(\frac{\sigma}{\sqrt{n}} \bigr) ]\\ = P \bigl[-1.96 \bigl(\frac{\sigma}{\sqrt{n}} \bigr)- \bar{X}  \leq - j\theta \leq 1.96\bigl(\frac{\sigma}{\sqrt{n}} \bigr) - \bar{X} \bigr]\\ = P \Biggl[\frac{-1.96 \bigl(\frac{\sigma}{\sqrt{n}} \bigr)- \bar{X}}{-j}  \leq \theta \leq \frac{1.96 \bigl(\frac{\sigma}{\sqrt{n}} \bigr)- \bar{X}}{-j} \Biggr].
+\theta
+\bar{X^*}
+\bf{My \ thoughts:}
+E[\bar{X^*}] = \theta.
+ V[\bar{X^*}] = \frac{\sigma^2}{n^2}\sum^n_{j=1}\frac{1}{j^2}
+\bar{X^*} \sim N \biggl(\theta, \frac{\sigma^2}{n^2}\sum^n_{j=1}\frac{1}{j^2} \biggr).
+0.95 = P[-1.96 \leq Z \leq 1.96]\\ = P[-1.96 \leq \frac{\bar{X^*} - \theta}{\sqrt{\frac{\sigma^2}{n^2}\sum^n_{j=1}\frac{1}{j^2}}} \leq 1.96]
+\bar{X}^\ast
+\mu=\frac1n\sum\limits_{j=1}^n \frac{j\theta}{j}=\theta
+v=\frac{\sigma^2}{n^2}\sum\limits_{j=1}^n \frac1{j^2}
+95\%
+N(\mu,v)
+\bar{X}

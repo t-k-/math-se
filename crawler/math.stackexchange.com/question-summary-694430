@@ -1,0 +1,12 @@
+ \begin{bmatrix}\dot{x}_1 \\\dot{x}_2\end{bmatrix}=\begin{bmatrix} \cos t & -\sin t\\ \sin t & \cos t   \end{bmatrix}\begin{bmatrix}x_1\\x_2\end{bmatrix}
+x\in\mathbb R^2
+A(t)\in C(\mathbb R;\mathbb R^{2\times 2})
+(1)
+ x'=A(t)x, 
+ A(s)A(t)=A(t)A(s). \tag{1} 
+ x'=A(t)x,\,\,\,x(0)=\xi_0, 
+ x(t)=\exp \Big(\int_{0}^t A(s)\,ds\Big)\,\xi_0. 
+ A(t)=\left(\begin{matrix}\cos t & -\sin t\\ \sin t&\cos t\end{matrix}\right), 
+ \int_0^tA(s)\,ds=\left(\begin{matrix}\sin t & \cos t-1\\ 1-\cos t&\sin t\end{matrix}\right). 
+ \exp\left(\begin{matrix}a & -b\\ b&a\end{matrix}\right)= \left(\begin{matrix}\mathrm{e}^a\cos b & -\mathrm{e}^a\sin b\\  \mathrm{e}^a\sin b&\mathrm{e}^a\cos b\end{matrix}\right), 
+ x(t)=\left(\begin{matrix}\mathrm{e}^{\sin t}\cos(1-\cos t) &  -\mathrm{e}^{\sin t}\sin(1-\cos t)\\  \mathrm{e}^{\sin t}\sin(1-\cos t)&\mathrm{e}^{\sin t}\cos(1-\cos t)\end{matrix}\right)\,\xi_0. 

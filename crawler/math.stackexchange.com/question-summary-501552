@@ -1,0 +1,26 @@
+I = [0,1]
+\text{erfi}(t) = \frac{2}{\sqrt{\pi}} \int_0^t e^{z^2} dz \quad\implies\quad \text{erfi}(\sqrt{t}) = \frac{2}{\sqrt{\pi}}\sqrt{t} \int_I e^{tz^2} dz
+\mathscr{I}
+x^2 + y^2 + z^2
+I^3
+3
+a > 3
+\begin{align} \mathscr{I}  = & \int_0^\infty e^{-at} \sqrt{t}^3 \left(\int_I e^{tz^2}dz\right)^3 dt\\ = & \frac{8}{\sqrt{\pi}^3} \int_{I^3} dx dy dz\left[\int_0^\infty \sqrt{t}^3e^{-(a-x^2-y^2-z^2)t}) dt\right]\\ = & \frac{8}{\sqrt{\pi}^3} \Gamma(\frac52) \int_{I^3} \frac{dx dy dz}{\sqrt{a - x^2 - y^2 - z^2}^5}\\ = & \frac{8}{\pi} \frac{\partial^2}{\partial a^2}  \int_{I^3} \frac{dx dy dz}{\sqrt{a - x^2 - y^2 - z^2}} \end{align}
+I^3
+x, y, z
+1 \ge x \ge y \ge z \ge 0
+(\rho,\lambda,\mu) \in I^3
+(x, y, z) = (\rho,\rho\lambda,\rho\lambda\mu)
+\begin{align} \mathscr{I} = & \frac{48}{\pi} \frac{\partial^2}{\partial a^2} \int_{I^3}  \frac{\rho^2 \lambda d\rho d\lambda d\mu}{\sqrt{a - \rho^2 - \lambda^2 \rho^2 ( 1 + \mu^2})}\\ = & \frac{48}{\pi} \frac{\partial^2}{\partial a^2} \int_{I^2}  \frac{\rho^2 d\rho d\mu}{\rho^2(1+\mu^2)} \left[ - \sqrt{a - \rho^2 - \lambda^2 \rho^2 ( 1 + \mu^2}) \right]_{\lambda=0}^1\\ = & \frac{48}{\pi} \frac{\partial^2}{\partial a^2} \int_{I^2}  \frac{\rho^2 d\rho d\mu}{\rho^2(1+\mu^2)} \left[ \sqrt{a - \rho^2 } - \sqrt{a - \rho^2 ( 2 + \mu^2}) \right]\\ = & \frac{24}{\pi} \frac{\partial}{\partial a} \int_{I^2} \frac{d\rho d\mu}{1+\mu^2}  \left[  \frac{1}{\sqrt{a - \rho^2 }} -  \frac{\frac{1}{\sqrt{2+\mu^2}} }{\sqrt{\frac{a}{2+\mu^2} - \rho^2})}  \right]\\ = & \frac{24}{\pi} \frac{\partial}{\partial a} \int_{I} \frac{d\mu}{1+\mu^2}  \left[  \arcsin(\frac{1}{\sqrt{a}}) - \frac{1}{\sqrt{2+\mu^2}} \arcsin(\sqrt{\frac{2+\mu^2}{a}}) \right]\\ = & \frac{24}{\pi} \int_{I} \frac{d\mu}{1+\mu^2}  \left[  \frac{-\frac{1}{2\sqrt{a}^3}}{\sqrt{1 - \frac{1}{a}}} - \frac{-\frac{1}{2\sqrt{a}^3}}{\sqrt{1 - \frac{2+\mu^2}{a}}} \right]\\ = & \frac{12}{\pi a } \int_{I} \frac{d\mu}{1+\mu^2}  \left[ \frac{1}{\sqrt{a-2-\mu^2}} - \frac{1}{\sqrt{a-1}} \right]\\ \stackrel{\color{blue}{[1]}}{=} & \frac{12}{\pi a} \left[   \frac{1}{\sqrt{a-1}}\arctan \frac{\sqrt{a-1} \mu}{\sqrt{a - 2 -\mu^2}}   - \frac{1}{\sqrt{a-1}} \arctan \mu \right]_{\mu=0}^1 \\ = & \frac{12}{\pi a\sqrt{a-1}} \left[ \arctan\left(\sqrt{\frac{a-1}{a-3}}\right) - \frac{\pi}{4} \right]\\ = & \frac{12}{\pi a\sqrt{a-1}} \arctan\left( \frac{\sqrt{\frac{a-1}{a-3}}-1}{\sqrt{\frac{a-1}{a-3}}+1} \right)\\ \stackrel{\color{blue}{[2]}}{=} &  \frac{6}{\pi a\sqrt{a-1}} \arctan\frac{1}{\sqrt{(a-1)(a-3)}} \end{align}
+\color{blue}{[2]}
+u = \sqrt{\frac{a-1}{a-3}}
+\begin{align} 2\arctan\frac{u-1}{u+1}  = & \arctan\frac{2\frac{u-1}{u+1}}{1-\left(\frac{u-1}{u+1}\right)^2} = \arctan\frac{u^2 - 1}{2u}\\ = & \arctan\frac{\frac{a-1}{a-3}-1}{2\sqrt{\frac{a-1}{a-3}}} = \arctan\frac{1}{\sqrt{(a-1)(a-3)}} \end{align}
+a>3
+a=3
+\arctan
+\frac{\pi}{2}
+I(a)=\frac{6}{a\sqrt{\pi}}\int_0^{\infty}e^{(1-a)x^2}\operatorname{erfi}^2 x\;dx,
+\sqrt{x} = t
+a \ge 3
+ \int_0^\infty 2 \exp(-a t^2)\; \text{erfi}(t)^3 t\ dt
+ \dfrac{6}{a \sqrt{\pi}} \int_0^\infty \exp((1-a)t^2) \; \text{erfi}(t)^2\ dt

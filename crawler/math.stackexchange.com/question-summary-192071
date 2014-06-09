@@ -1,0 +1,14 @@
+|q| = \sqrt{q_1^2 + q_2^2}
+ \ddot{q_1} = - \frac{q_1}{|q|^3} 
+ \ddot{q_2} = - \frac{q_2}{|q|^3} 
+\dot{q} = p
+ \dot{p_1} = - \frac{q_1}{|q|^3} 
+ \dot{p_2} = - \frac{q_2}{|q|^3} 
+ \dot{q} = p 
+\dot{y}_{n+1} = y_n + \Delta t f(y_{n+1})
+\dot{p} = f(q)
+y_1 = q_1
+y_2 = \dot{q}_1
+y_3 = q_2
+y_4 = \dot{q}_2
+\dot{\mathbf{y}} = f(t,\mathbf{y}) = \begin{pmatrix} y_2 \\ -\frac{y_1}{(y_1+y_3)^{3/2}} \\ y_4 \\ \frac{y_3}{(y_1+y_3)^{3/2}}\end{pmatrix}.

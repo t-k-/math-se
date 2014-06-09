@@ -1,0 +1,25 @@
+T
+t \geq 0
+0 \leq a \leq 1
+L > 0
+u > 0
+ P(T>t) = ae^{-L t} + (1-a) e^{-ut}, 
+T
+F(t)=P(T≤t)
+F(t)=P(T≤t)
+F(t)=P(T>t)
+T\geqslant0
+ T=\int_0^{+\infty}\mathbf 1_{T\gt t}\,\mathrm dt \quad\implies\quad \mathbb E(T)=\int_0^{+\infty}\mathbb P(T\gt t)\,\mathrm dt. 
+ T^2=\int_0^{+\infty}2t\,\mathbf 1_{T\gt t}\,\mathrm dt \quad\implies\quad \mathbb E(T^2)=\int_0^{+\infty}2t\,\mathbb P(T\gt t)\,\mathrm dt. 
+f(t) := \mathbb{P}(T \leq t)
+f
+f(0)=0
+T \geq 0
+\mathbb{P}_T
+T
+1_{[0,\infty)}(x) \cdot f'(x)
+\mathbb{P}[T \leq t] = f(t) = \int_0^t f'(x) \, dx
+\mathbb{E}T = \int_{[0,\infty)} x \cdot f'(x) \, dx \qquad \qquad \text{var} \, \, T = \int_{[0,\infty)} (x-\mathbb{E}T)^2 \cdot f'(x) \, dx \tag{1}
+f
+(1)
+f'(t) = \frac{d}{dt} \big(a \cdot e^{-L \cdot t}+(1-a) \cdot e^{-u \cdot t} \big)

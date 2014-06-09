@@ -1,0 +1,15 @@
+\int_{\theta=0}^{\pi/2}\int_{r=0}^3\int_{x=0}^{\frac{rcos\theta}{3}}r^2sin\theta dxdrd\theta
+ \ x-
+ \  xy - \ \text{and} \ \ yz-
+ \ y = 3x \ 
+ \ yz-
+ \ x-
+ \  \int_0^3 \int_0^{\sqrt{9 - y^2}} \int_0^{y/3}  \ \ dx \ dz \ dy \ \ = \ \ \int_0^3 \int_0^{\sqrt{9 - y^2}} \ x \ \vert_0^{y/3}  \ \  dz \ dy  
+ = \ \ \frac{1}{3} \ \int_0^3 \int_0^{\sqrt{9 - y^2}} \ y   \ \  dz \ dy \ \ = \ \ \frac{1}{3} \ \int_0^3 \ yz \ \vert_0^{\sqrt{9 - y^2}}   \ \   dy \ \ = \ \ = \ \ \frac{1}{3} \ \int_0^3 \ y \ \sqrt{9 - y^2}  \ \   dy \ \ . 
+ \ u \ = \ 9 - y^2 \ , \ du \ = \ - 2y \ dy \ \ \Rightarrow \ \ y \ dy \ = \ -\frac{1}{2} du \  
+  \rightarrow \ \ \frac{1}{3} \ \int_9^0 \  \sqrt{u}  \ \  \left( -\frac{1}{2} du  \right) \ \ = \ \ \frac{1}{6} \ \cdot \ \frac{2}{3} u^{3/2} \ \vert_0^9  \ \ = \ \frac{1}{9}  \cdot \  9^{3/2} \ = \ \frac{27}{9} \ = \ 3 \ \ . 
+  \int_0^{\pi / 2} \int_0^3 \int_0^{(r \cos \theta)/ 3} \ \ dx \ \ r \ dr \ \ d \theta \ \ = \ \  \int_0^{\pi / 2} \int_0^3 \ \frac{1}{3}   r \cos \theta \ \  r \ dr \ \ d \theta 
+ = \ \  \frac{1}{3}  \ \int_0^{\pi / 2} \int_0^3 \   r^2 \cos \theta  \ \ dr \ d \theta \ \ = \ \  \frac{1}{3}  \ \int_0^{\pi / 2}  \   \frac{1}{3} r^3 \cos \theta \ \vert_{r=0}^{r=3} \ \  d \theta 
+ = \ \  \frac{1}{9}  \ \int_0^{\pi / 2} \  3^3 \ \cos \theta \  \ \  d \theta \ \ = \ \  3  \  \sin \theta \ \vert_0^{\pi / 2} \ = \ 3 \ (1 - 0 ) \ = \ 3 \ \ .  
+ \ \tan \phi \ = \ \frac{1}{3} \ \Rightarrow \ \phi \ \approx \ 18.4º 
+ \ \frac{18.4º}{360º} \ \cdot \ \frac{2 \pi}{3} \ \cdot \ 3^3 \ \approx \ \frac{1}{20} \ \cdot \ \frac{2 \pi}{3} \ \cdot \ 27 \ = \ \frac{54 \pi}{60} \  \approx \ 2.83 \ \ .  

@@ -1,0 +1,32 @@
+\frac{\Gamma \vdash_N B}{\Gamma, A \vdash_N B}
+\Gamma, A = \Gamma \cup \{A\}
+\Gamma \vdash_N B
+B \in \Gamma
+\Gamma \vdash_N A → (B → A)
+\Gamma \vdash_N (A → (B → C)) → ((A → B) → (A → C))
+\Gamma \vdash_N (\neg B → \neg A) → (A → B)
+\Gamma \vdash_N B
+ B \in \Gamma
+B \in \Gamma \cup \{A\} 
+\frac{\Gamma \vdash_N C ; \Gamma \vdash_N C → B}{\Gamma \vdash_N B} 
+\Gamma, D \vdash_N C
+\Gamma, D \vdash_N C → B
+\Gamma, D \vdash_N C
+\Gamma, D \vdash_N C → B
+\Gamma, D \vdash_N B
+D
+A = D
+\Gamma, A \vdash_N B
+\Gamma\vdash B
+B
+Con(\Gamma)
+\mathcal{B}_1=\{A_0,A_1,A_2,A_3\}\cup \Gamma
+\{MP\}
+\Gamma,A\vdash B
+B
+Con(\Gamma \cup \{A\})
+\mathcal{B}_2=\{A_0,A_1,A_2,A_3\}\cup \Gamma \cup \{A\}
+\{MP\}
+\mathcal{B}_1 \subseteq \mathcal{B}_2
+Con(\Gamma)\subseteq Con(\Gamma \cup \{A\})
+\Gamma\vdash B\Rightarrow\Gamma,A\vdash B

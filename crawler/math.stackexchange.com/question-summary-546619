@@ -1,0 +1,42 @@
+f(x)
+c
+x
+f(x)(x^2-1)+xf'(x)=c
+f'(x)
+M>0
+|f'(x)|\le M,x\in R
+y(x^2-1)+x\dfrac{dy}{dx}=c
+\dfrac{dy}{dx}+\dfrac{x^2-1}{x}y=\dfrac{c}{x}
+y=e^{-\int \dfrac{x^2-1}{x}dx}\left(\int \dfrac{c}{x}e^{\int \dfrac{x^2-1}{x}dx}dx+C\right)
+y=\dfrac{x}{e^{\frac{1}{2}x^2}}\left(\int\dfrac{ce^{\frac{1}{2}x^2}}{x^2}dx+C\right)
+f'(x) = a(x) f(x) + b(x)
+f(x_0)
+ f(x) = e^{\int_{x_0}^x a(s)ds}\left( f(x_0)   + \int_{x_0}^x b(s) e^{-\int_{x_0}^s a(t)dt} ds \right) 
+a(x) = \frac{1-x^2}{x} = \frac{1}{x} - x
+b(x) = \frac{c}{x}
+\int_{x_0}^x a(s)ds = \ln(x) - \frac{1}{2}x^2 + \text{const}
+\epsilon = \pm 1
+ e^{\epsilon \int_{x_0}^x a(s)ds} = x^{\epsilon}e^{-\frac{\epsilon}{2}x^2} 
+\kappa_1
+ f(x) = \kappa_1 xe^{-\frac{1}{2}x^2}\left( f(x_0) + \int_{x_0}^x \frac{c}{s^2}e^{\frac{1}{2}s^2} ds \right) 
+0 << |x_0|<|x|
+x_0
+=
+x
+u=s^{-3}
+dv = se^{s^2/2}
+\kappa_2
+C_i
+x
+f(x)
+f'(x) = a(x) f(x) + b(x)
+|x| \to \infty
+|x| > |x_0| >> 0
+f''(x)
+f'(x)
+\{x : |x| \leq R\}
+R
+ \int_{x_0}^x s^{-2}e^{s^2/2}ds = \int_{x_0}^x s^{-3}(s e^{s^2/2})ds = x^{-3}e^{x^2/2} + 3\int_{x_0}^xs^{-4}e^{s^2/2}ds+\kappa_2 
+ \left| e^{-x^2/2} \int_{x_0}^x h(s) e^{s^2/2} ds \right| \leq e^{-\frac{1}{2}\big(x^2 - \frac{(x-x_0)^2}{2}\big)} \int_{x_0}^{(x-x_0)/2} |h(s)| ds + \int_{(x-x_0)/2}^x |h(s)|ds \\ \leq e^{-x^2/4}\int_{x_0}^x |h(s)|ds + \int_{(x-x_0)/2}^x |h(s)|ds. 
+ |f(x)| \leq C_1 |x| e^{-x^2/2} + C_2 |x|^{-2}+C_3 |x| e^{-x^2/4}\int_{x_0}^x s^{-4} ds  + C_4 |x| \int_{(x-x_0)/2}^x s^{-4}ds \\ \leq C_1 |x|e^{-x^2/2} + C_2 |x| e^{-x^2/4} + C_3 |x|^{-2} 
+ |f'(x)| \leq  \left( \frac{1}{|x|} + |x| \right) |f(x)| + \frac{|c|}{|x|}  

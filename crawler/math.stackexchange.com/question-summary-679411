@@ -1,0 +1,24 @@
+\sum_{k=1}^{m+n} \binom {m+n}k k^m (-1)^k=0 , \forall m,n\in \mathbb N
+H_1 (x,r)=rx(1+x)^{r-1}
+H_{m+1}(x,r)=x \dfrac d {dx} {H_m (x,r)}
+H_m (x,r)=\sum_{k=1}^{r} \binom {r}k k^m x^k
+m
+H_m (x,r)=\sum_{i=1}^m f(x,r,i)(1+x)^{r-i}
+f
+r>m
+H_m (-1,r)=0
+H_m (-1,m+n)=0
+m+n>n
+ 0\notin \mathbb N
+0\not\in\mathbb{N}
+m+n=1
+m\gt0
+m+n
+k^m
+0
+ \sum_{k=0}^{m+n}\binom{m+n}{k}k^m(-1)^k=0\tag{1} 
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{\sum_{k = 1}^{m + n}{m + n \choose k}k^{m}\pars{-1}^{k} = 0:\ {\Large ?}      \,,\quad\forall\ m,n\ \in\ \mathbb N}
+ \pars{1 - z}^{m + n}=\sum_{k = 1}^{m + n}{m + n \choose k}z^{k}\pars{-1}^{k} 
+ \pars{z\,\partiald{}{z}}^{m}\pars{1 - z}^{m + n} =\sum_{k = 1}^{m + n}{m + n \choose k}k^{m}z^{k}\pars{-1}^{k} 
+ \!\!\!\!\!\color{#00f}{\large\sum_{k = 1}^{m + n}{m + n \choose k}k^{m}\pars{-1}^{k}} =\lim_{z \to 1^{-}}\bracks{\pars{z\,\partiald{}{z}}^{m}\pars{1 - z}^{m + n}} =\lim_{z \to 0^{-}}\partiald[m]{\bracks{\pars{1 - \expo{z}}^{m + n}}}{z} =\color{#00f}{\large 0} 

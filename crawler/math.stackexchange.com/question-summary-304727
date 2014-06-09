@@ -1,0 +1,75 @@
+p=a^2+b^2\equiv1\pmod4
+a
+b
+m
+1
+p-1
+ \phi(m)=\sum_{x=1}^{p-1}\bigg(\frac{x^3-mx}{p}\bigg) \tag{1} 
+S=\sum_{m=1}^{p-1} \phi(m)^2
+y
+[1,p-1]
+x\in [1,p-1]
+x'\in [1,p-1]
+x' \equiv yx \ ({\sf mod} \ p)
+\phi(m)
+ \phi(m)=\sum_{x'=1}^{p-1}\bigg(\frac{(\frac{x’}{y})^3-m\frac{x'}{y}}{p}\bigg) =\sum_{x'=1}^{p-1}\bigg(\frac{y}{p}\bigg)\bigg(\frac{(x')^3-my^2x’}{p}\bigg) 
+ \phi(m)=\bigg(\frac{y}{p}\bigg) \phi(m{y^2}) \ (\text{for any} \ m,y\in [1,p-1])\tag{2} 
+\phi^2
+r
+s
+ S=\frac{p-1}{2} (\phi(r)^2+\phi(s)^2) \tag{3} 
+ S=\sum_{m,x,y} \bigg(\frac{x^3-mx}{p}\bigg) \bigg(\frac{y^3-my}{p}\bigg) =\sum_{x,y} \bigg(\frac{xy}{p}\bigg) \sum_{m} \bigg(\frac{(m-x^2)(m-y^2)}{p}\bigg) \tag{4} 
+\psi(d)
+p
+-1
+1
+-1
+p-1
+ \psi(d)=\sum_{m=1}^{p} (m^2-d)^{\frac{p-1}{2}} \equiv (-1) \ ({\sf mod}\ p) 
+ \sum_{d=0}^{p-1} \psi(d)= \sum_{m=1}^{p-1}\sum_{d=0}^{p-1}\bigg(\frac{m^2-d}{p}\bigg)=0 
+\psi
+p-1
+-1
+\psi(0)=p-1
+S
+ S=\sum_{x,y} \bigg(\frac{xy}{p}\bigg) (p-1-p \bigg(\frac{(x^2-y^2)^2}{p}\bigg)^2)= 
+S_1,S_2,S_3
+(x,y)
+y=x, y=(-x) {\sf mod}\ p
+x^2-y^2 \neq  0\ {\sf mod}\ p
+S_1=(p-1)^2
+S_2=\bigg(\frac{-1}{p}\bigg)(p-1)^2
+S_3=(1+\bigg(\frac{-1}{p}\bigg)) (p-1)
+S=(1+\bigg(\frac{-1}{p}\bigg)) p(p-1)
+p \equiv 1 \ ({\sf mod}\ 4)
+S=2p(p-1)
+ p=(\frac{\phi(r)}{2})^2+(\frac{\phi(s)}{2})^2, 
+ T=\sum_{m=1}^{p} (m^2-d)^{\frac{p-1}{2}}, 
+T_k=\sum_{m=1}^{p} m^{k}
+x \mapsto x+1
+\frac{\mathbb Z}{p{\mathbb Z}}
+\sum_{m=1}^{p}(m+1)^{k+1}-m^k=0
+(m+1)^{k+1}
+ \begin{array}{lcl} T &=& \sum_{m=1}^{p} \sum_{j=0}^{q}\binom{q}{j}(m^2)^jd^{q-j})  \\ &=& \sum_{m=1}^{p} \Bigg(d^q+\sum_{j=1}^{q}\binom{q}{j}(m^2)^jd^{q-j})\Bigg)  \\ &=& \sum_{m=1}^{p} \Bigg(\sum_{j=1}^{q}\binom{q}{j}(m^2)^jd^{q-j}\Bigg) \ ({\sf mod} \ p)  \\ &=& \sum_{m=1}^{p} \sum_{j=1}^{q}\binom{q}{j}d^{q-j}(m^{2j}) \\ &=&  \sum_{j=1}^{q} \binom{q}{j}d^{q-j} T_{2j} \tag{*}, \end{array} 
+ \sum_{j=0}^{k} \binom{k+1}{j} T_j=0  
+k+1
+p
+ T_k=-\frac{1}{k+1} \big( \sum_{j=0}^{k-1} \binom{k+1}{j} T_j \big) 
+T_k
+T_0=(-1)
+T_k=0
+0<k<p-1
+k=p-1
+T_{p-1}=(-1)
+T_k
+1
+m=p
+j=q
+T=(-1)
+ \begin{array}{lcl} S_3 &=& \sum_{y\neq x,y \neq (p-x) } \bigg(\frac{xy}{p}\bigg)(p-1-p)\\ &=&  -\sum_{y\neq x,y \neq (p-x) } \bigg(\frac{xy}{p}\bigg)  \\ &=&  -\sum_{x,y} \bigg(\frac{xy}{p}\bigg)+\sum_{y=x} \bigg(\frac{xy}{p}\bigg)+\sum_{y=p-x} \bigg(\frac{xy}{p}\bigg) \\ &=&  -\big(\sum_{x} \bigg(\frac{x}{p}\bigg) \big) \big(\sum_{y} \bigg(\frac{y}{p}\bigg) \big)+\sum_{x} \bigg(\frac{x^2}{p}\bigg)+\sum_{x} \bigg(\frac{-x^2}{p}\bigg) \\ &=&  -0 \times 0 +\sum_{x} 1+\sum_{x} \bigg(\frac{-1}{p}\bigg) \\ &=& (p-1)(1+\bigg(\frac{-1}{p}\bigg)).  \end{array} 
+ \begin{array}{lcl} \phi(1) &=& \sum_{x=1}^{p-1} \bigg( \frac{x^3-x}{p}\bigg) \\ &=& \sum_{x=1}^{p-1} \bigg( \frac{x(x-1)(x+1)}{p}\bigg) \\ &=& \sum_{x=2}^{p-2} \bigg( \frac{x(x-1)(x+1)}{p}\bigg) \\ &=& \sum_{j=1}^{p-3} \bigg( \frac{j(j+1)(j+2)}{p}\bigg) \end{array} 
+\eta(j)=j(j+1)(j+2)
+\eta(-j)=-\eta(j-2)
+ \bigg( \frac{\eta(-j)}{p}\bigg)=\bigg( \frac{-1}{p}\bigg)\bigg( \frac{\eta(j-2)}{p}\bigg)= \bigg( \frac{\eta(j-2)}{p}\bigg) 
+ \begin{array}{lcl} \phi(1) &=&  \sum_{j=1}^{2t-1} \bigg( \frac{\eta(j)}{p}\bigg)+ \sum_{j=2t}^{4t-2} \bigg( \frac{\eta(j)}{p}\bigg) \\ &=& \sum_{j=1}^{2t-1} \bigg( \frac{\eta(j)}{p}\bigg)+ \sum_{k=3}^{2t+1} \bigg( \frac{\eta(p-k)}{p}\bigg) \\ &=& \sum_{j=1}^{2t-1} \bigg( \frac{\eta(j)}{p}\bigg)+ \sum_{k=3}^{2t+1} \bigg( \frac{\eta(k-2)}{p}\bigg) \\ &=& 2\sum_{j=1}^{2t-1} \bigg( \frac{\eta(j)}{p}\bigg) \end{array} 
+\frac{\phi(1)}{2}

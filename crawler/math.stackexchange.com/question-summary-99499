@@ -1,0 +1,25 @@
+\sum_{n \in \mathbb{N}} ||f_{n}-f||_{1} < \infty
+f_{n}
+f
+g_n:=|f_n-f|
+\delta>0
+\sum_{n\in\mathbb N}\lVert g_n\rVert_{L^1}<\infty
+N_k
+\sum_{n\geq N_k}\lVert g_n\rVert_1\leq \delta 4^{-k}
+A_k:=\left\{x\in X:\sup_{n\geq N_k}g_n(x)>2^{1-k}\right\}
+A_k\subset\bigcup_{n\geq N_k}\left\{x\in X: g_n(x)\geq 2^{-k}\right\}
+\mu(A_k)\leq \delta 2^{-k}
+A:=\bigcup_{k\geq 1}A_k
+\mu(A)\leq \sum_{k\geq 1}\mu(A_k)\leq \delta\sum_{k\geq 1}2^{-k}=\delta
+x\notin A
+k
+\sup_{n\geq N_k}g_n(x)\leq 2^{1-k}
+\sup_{n\geq N_k}\sup_{x\notin A}g_n(x)\leq 2^{1-k}
+g_n\to 0
+A^c
+\varepsilon>0
+k
+2^{1-k}
+n\geq N_k
+\sup_{x\notin A}g_n(x)\leq\varepsilon
+2^{-k}\mu(A_k)\leq \sum_{n\geq N_k}2^{-k}\mu\left\{x\in X: g_n(x)\geq 2^{-k}\right\}\leq \sum_{n\geq N_k}\lVert g_n\rVert_1\leq \delta 4^{-k},

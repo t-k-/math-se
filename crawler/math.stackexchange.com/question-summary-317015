@@ -1,0 +1,35 @@
+\varphi
+\varphi = \exp{\psi}
+\psi(\lambda) = i \lambda a - \frac{\sigma^2 \lambda^2}{2} + \int_{\mathbb R} \left(\exp(i \lambda x) - 1 - \frac{i\lambda x}{1+x ^2}\right)\frac{1+x^2}{x^2} \nu(dx)
+\nu
+\mathbb R
+\nu\{0\}=0
+(a,\sigma^2,\nu)
+X(t)
+X(1)\sim Exp(1)
+\nu
+\mathbb{R}
+\nu(\{0\})=0
+a,\sigma^2 \in \mathbb{R}
+\psi
+\psi(\lambda) = i \lambda a - \frac{\sigma^2 \lambda^2}{2} + \int_{\mathbb R} \left(\exp(i \lambda x) - 1 - \frac{i\lambda x}{1+x ^2}\right)\frac{1+x^2}{x^2} \nu(dx) \tag{1}
+(X_t)_t
+\mathbb{E}e^{\imath \, \lambda \cdot X_1} = \exp(\psi(\lambda))
+\mathbb{E}e^{\imath \, \lambda \cdot X_t} = \exp(t \cdot \psi(\lambda))
+\nu
+b, \sigma^2 \in \mathbb{R}
+\log
+(-\pi,\pi]
+\exp(\psi(\lambda)) = \mathbb{E}e^{\imath \, \lambda \cdot X_1} = \mathbb{E}e^{\imath \, \lambda \cdot \text{Exp}(1)} = \frac{1}{1-\imath \, \lambda} = \exp(-\log(1-\imath \lambda))
+\nu
+-\log(1-\imath \, t)
+\begin{align} -\log(1-\imath \, \lambda) &= \imath \int_0^{\lambda} \frac{1}{1-\imath \, t} \, dt = \imath \int_0^{\lambda} \int_0^{\infty} e^{-x \cdot (1-\imath \, t)} \, dx \, dt \\ &= \imath \, \int_0^{\infty} \int_0^{\lambda} e^{-x \cdot (1-\imath \, t)} \, dt \, dx = \int_0^{\infty} \frac{e^{\imath \, \lambda \cdot x}-1}{x} \cdot e^{-x} \, dx \tag{2} \end{align}
+(1)
+\begin{align} - \log(1-\imath \, t) &\stackrel{(2)}{=} \int_0^{\infty} \frac{e^{\imath \, \lambda \cdot x}-1}{x} \cdot e^{-x} \, dx = \int_0^{\infty} \left(e^{\imath \, \lambda \cdot x}-1 - \frac{\imath \, \lambda \cdot x}{1+x^2} \right) \cdot \frac{e^{-x}}{x} \, dx + \imath \, \lambda \cdot a \end{align}
+a := \int_0^{\infty} \frac{e^{-x}}{1+x^2} \, dx
+- \log(1-\imath \, \lambda) = \psi(\lambda)
+\nu
+\nu(\{0\})=0
+(X_t)_t
+X_1 \sim \text{Exp}(1)
+\begin{align} a &= \int_0^{\infty} \frac{e^{-x}}{1+x^2} \, dx \\ \sigma^2 &= 0 \\ \nu(dx) &:= \frac{x}{1+x^2} \cdot e^{-x} \cdot 1_{(0,\infty)}(x) \, dx \end{align}

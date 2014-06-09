@@ -1,0 +1,20 @@
+c>0
+I(2n)>0,I(2n+1)<0,\forall n\in\mathbb N.
+I(k)=\int_{k}^{k+2}\frac{(\sin {\pi x})^c}{x} dx,
+c=1,
+c>1?
+I(k)=\int_{k}^{k+2}\frac{\sin {\pi x}}{x} dx \\ =\int_{k}^{k+1}\frac{\sin {\pi x}}{x} dx+\int_{k+1}^{k+2}\frac{\sin {\pi x}}{x} dx \\  =\int_{k}^{k+1}\frac{\sin {\pi x}}{x} dx+\int_{k}^{k+1}\frac{\sin {\pi (x+1)}}{x+1} dx \\ =\int_{k}^{k+1}(\frac{1}{x}-\frac{1}{x+1}) \sin {\pi x} dx =\int_{k}^{k+1}\frac{\sin {\pi x}}{x(x+1)} dx,
+\sin pi x > 0
+2n < x < 2n+1
+\sin \pi x < 0
+2n+1 < x < 2(n+1)
+\sin \pi x = \lvert\sin \pi x\rvert
+[2n,2n+1]
+\sin \pi x = -\lvert\sin\pi x\rvert
+[2n+1,2n+2]
+\begin{align} I(2n) &= \int_{2n}^{2n+1} \frac{\lvert \sin \pi x\rvert^c}{x}\, dx - \int_{2n+1}^{2(n+1)} \frac{\lvert \sin \pi x\rvert^c}{x}\,dx\\ &= \int_0^1 \lvert \sin \pi x\rvert^c \left(\frac{1}{2n+x} - \frac{1}{2n+1+x}\right)\,dx\\ &> 0. \end{align}
+I(2n+1)
+\lvert \sin \pi x\rvert^c
+1
+\frac1x
+\sin \pi x

@@ -1,0 +1,15 @@
+ \frac{z}{\alpha -1}\left(\int_0^1 \frac{t^{\frac{1}{\alpha}}}{1-tz} dt -\alpha \int_0^1 \frac{v}{1-vz} dv\right) = \int_0^1 t^{\frac{1}{\alpha}} \left(\int_0^1 \frac{vz}{1-tvz}dv\right)dt 
+\alpha = \frac{1}{2}
+z = \frac{1}{2}
+   I_1 = \int_0^1 \frac{t^{1/\alpha}}{1- t z} \mathrm{d} t = \int_0^1 \frac{t^2}{1-t/2} \mathrm{d} t = \int_0^1 \left( \frac{8}{2 - t} - 4 - 2 t \right) \mathrm{d} t = 8 \cdot \log 2 - 5 
+    I_2 = \int_0^1 \frac{v}{1- v z} \mathrm{d} v = \int_0^1 \frac{v}{1-v/2} \mathrm{d} v =       \int_0^1 \left( \frac{4}{2-v} -2 \right) \mathrm{d} v = 4 \cdot \log 2 - 2 
+ \begin{eqnarray}    I_3 &=& \int_0^1 \int_0^1 t^{1/\alpha} \left( \frac{v z}{1- t v z} \mathrm{d} v \right) \mathrm{d} t = \int_0^1 \int_0^1 t^2 \left( \frac{v z}{1- t v z} \mathrm{d} v \right) \mathrm{d} t = \int_0^1 \int_0^1 \left( -t + \frac{t}{1-t v/2} \right) \mathrm{d} v \, \mathrm{d} t \\   &=& \int_0^1 \left( -t - 2 \cdot \log(1-t/2)   \right) \mathrm{d} t = \frac{3}{2} - 2 \cdot \log 2 \end{eqnarray} 
+    \frac{z}{\alpha -1} \left( I_1 - \alpha I_2 \right) = \frac{1}{2} I_2 - I_1 = 4 - 6 \cdot \log 2 \not= I_3 = \frac{3}{2} - 2 \cdot \log 2 
+|z|\lt1
+z
+n\geqslant1
+z^n
+(-1)
+  \frac1{\alpha -1}\left(\int_0^1 t^{1/\alpha+n-1} dt -\alpha \int_0^1 v^n dv\right)\quad\text{and}\quad\int_0^1 t^{1/\alpha} \left(\int_0^1 t^{n-1}v^ndv\right)dt.  
+  \frac1{\alpha -1}\left(\frac1{1/\alpha+n} -\alpha\frac1{n+1}\right)\quad\text{and}\quad\frac1{n+1}\int_0^1 t^{1/\alpha+n-1}dt,  
+ \frac{-\alpha n}{(n+1)(1+\alpha n)}\quad\text{and}\quad\frac{\alpha n}{(n+1)(1+\alpha n)}. 

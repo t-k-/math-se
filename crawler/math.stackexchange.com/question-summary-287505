@@ -1,0 +1,32 @@
+A
+n \times n
+A
+\mathbb{R}^n
+A
+v
+v
+\sum v_i = 1
+\frac{dv}{dA_{ij}}
+A
+v(A) = A^{-1}*1^T
+v(A) = \frac{A^{-1}*1^T}{1*A^{-1}*1^T}
+\frac{dv}{dA_{ij}} = (\frac{d(1*A^{-1}*1^T)^{-1}}{dA_{ij}}) A^{-1}*1^T + (1*A^{-1}*1^T)^{-1}(\frac{d(A^{-1}*1^T)}{dA_{ij}})
+ = (-\frac{d(1*A^{-1}*1^T)}{dA_{ij}})^{-2} A^{-1}*1^T + (1*A^{-1}*1^T)^{-1}(\frac{dA^{-1}}{dA_{ij}})*1^T
+ = (-\frac{d(1*A^{-1}*1^T)}{dA_{ij}})^{-2} A^{-1}*1^T + (1*A^{-1}*1^T)^{-1}(\frac{dA^{-1}}{dA_{ij}})*1^T
+ = (-1*\frac{dA^{-1}}{dA_{ij}}*1^T)^{-2} A^{-1}*1^T + (1*A^{-1}*1^T)^{-1}(\frac{dA^{-1}}{dA_{ij}})*1^T
+ = (-1*\frac{dA^{-1}}{dA_{ij}}*1^T)^{-2} A^{-1}*1^T + (1*A^{-1}*1^T)^{-1}(\frac{dA^{-1}}{dA_{ij}})*1^T
+ = (1*A^{-1}*\frac{dA}{dA_{ij}}*A^{-1}*1^T)^{-2} A^{-1}*1^T - (1*A^{-1}*1^T)^{-1}(A^{-1}*\frac{dA}{dA_{ij}}*A^{-1}*1^T)
+A^{-1}*\frac{dA}{dA_{ij}}*A^{-1}*1^T = (\sum_{y=1}^n A^{-1}_{jy}) (A^{-1}_{*i})
+ = (1*(\sum_{y=1}^n A^{-1}_{jy}) (A^{-1}_{*i}))^{-2} A^{-1}*1^T - (1*A^{-1}*1^T)^{-1}(\sum_{y=1}^n A^{-1}_{jy}) (A^{-1}_{*i})
+ = ((\sum_{y=1}^n A^{-1}_{jy}) (\sum_{x=1}^n A^{-1}_{xi}))^{-2} A^{-1}*1^T - (\sum_{x=1}^n \sum_{y=1}^n A^{-1}_{xy})^{-1}(\sum_{y=1}^n A^{-1}_{jy}) (A^{-1}_{*i})
+q=A^{-1}1
+n=q/(1^Tq)
+E_{ij}
+1
+(i,j)
+0
+\partial n/\partial A_{ij}
+A_{ij}
+'
+\frac{\partial q}{\partial A_{ij}}=\frac{\partial A^{-1}}{\partial A_{ij}}1=A^{-1}\frac{\partial A}{\partial A_{ij}}A^{-1}1=A^{-1}E_{ij}A^{-1}1,
+n'=\left(\frac q{1^Tq}\right)'=\frac{q'(1^Tq)-q(1^Tq)'}{(1^Tq)^2}=\frac{(1^Tq)q'-q1^Tq'}{(1^Tq)^2}=\left(I-\frac{q1^T}{1^Tq}\right)\frac{q'}{1^Tq}=\big(I-n1^T\big)\frac{q'}{1^Tq}.

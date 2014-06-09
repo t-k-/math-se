@@ -1,0 +1,29 @@
+n\times n
+C= [c_{ij}]
+c_{ij}=c_{ji}\ \forall i,j
+c_{ij} \neq 0\ \forall i,j
+\left(\begin{array}{cccccc}  \left(\sum_{i=1}^n\sum_{j=1}^n c_{ij}\right)^2 & \left(\sum_{j=1}^nc_{1j}\right)^2 & \left(\sum_{j=1}^nc_{2j}\right)^2 &\dots & \left(\sum_{j=1}^nc_{nj}\right)^2\\\left(\sum_{j=1}^nc_{1j}\right)^2 & c_{11}^2 & c_{12}^2 & \dots &c_{1n}^2\\ \left(\sum_{j=1}^nc_{2j}\right)^2 & c_{21}^2 & c_{22}^2 & \dots &c_{2n}^2\\ \vdots & \vdots &\vdots & \dots &\vdots \\ \left(\sum_{j=1}^nc_{nj}\right)^2 & c_{n1}^2 & c_{n2}^2 & \dots &c_{nn}^2   \end{array}\right)
+n=2
+2(c_{11}c_{22}-c_{12}^2)^3
+c_{12}=c_{21}
+(n+1) \times (n+1) 
+(v^TB)=(Bv)^T
+v^TBv\in\mathbb{R}
+ A=\left(\sum_{i=1}^{n}\sum_{i=1}^{n} c_{ij}\right)^2,  \quad v^T= \left(\left(\sum_{j=1}^{n}c_{1j}\right)^2, \dots,\left(\sum_{j=1} c_{nj}\right)^2\right) 
+ v=\begin{pmatrix} \left(\sum_{j=1}^{n}c_{1j}\right)^2\\ \vdots \\ \left(\sum_{j=1}^{n}c_{nj}\right)^2 \end{pmatrix}, \quad B = \begin{pmatrix} c_{11}^2&\dots&c_{1j}^2&\dots&c_{1n}^2\\ \vdots&     &\vdots&     &\vdots \\ c_{i1}^2&\dots&c_{ij}^2&\dots&c_{in}^2\\ \vdots&     &\vdots&     &\vdots \\ c_{n1}^2  &\dots& c_{nj }^2&\dots&c_{nn}^2 \\ \end{pmatrix} 
+A
+D
+C
+B
+n\times n
+n\times m
+m\times n
+m\times m
+\det\begin{pmatrix}A& 0\\ C& B\end{pmatrix} = \det\begin{pmatrix}A& D\\ 0& B\end{pmatrix} = \det(A) \det(B) . 
+ \begin{pmatrix}A& D\\ C& B\end{pmatrix} = \begin{pmatrix}A& 0\\ C& I\end{pmatrix} \begin{pmatrix}I& A^{-1} D\\ 0& B - C A^{-1} D\end{pmatrix}
+\det\begin{pmatrix}A& D\\ C& B\end{pmatrix} = \det(A) \det(B - C A^{-1} D) .
+\det\begin{pmatrix}A& D\\ C& B\end{pmatrix} = \det(B) \det(A - D B^{-1} C) .
+\det(C)= \det(B)\cdot( A-v^TB^{-1}v)
+v^TB^{-1}v, A\in\mathbb{R}
+ \left(\left(\sum_{j=1}^{n}c_{1j}\right)^2, \dots,\left(\sum_{j=1} c_{nj}\right)^2\right) B^{-1} \begin{pmatrix} \left(\sum_{j=1}^{n}c_{1j}\right)^2\\ \vdots \\ \left(\sum_{j=1}^{n}c_{nj}\right)^2 \end{pmatrix} \in\mathbb{R}
+ \det(C)= \det(B)\left[ \left(\sum_{i=1}^{n}\sum_{i=1}^{n} c_{ij}\right)^2   - \left(\left(\sum_{j=1}^{n}c_{1j}\right)^2, \dots,\left(\sum_{j=1} c_{nj}\right)^2\right) B^{-1} \begin{pmatrix} \left(\sum_{j=1}^{n}c_{1j}\right)^2\\ \vdots \\ \left(\sum_{j=1}^{n}c_{nj}\right)^2 \end{pmatrix} \right] 

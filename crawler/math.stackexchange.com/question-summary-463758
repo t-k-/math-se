@@ -1,0 +1,14 @@
+\prod_{k=0}^{\infty} \biggl(1+ {\frac{1}{2^{2^k}}}\biggr)
+(1+1/2)(1+1/4)(1+1/16)(1+1/256)\cdots
+(1-1/2)
+(1-1/2)(1+1/2)=1-1/4
+(1-1/4)(1+1/4)=1-1/16
+(1-1/16)(1+1/16)=1-1/256
+1+ {\frac{1}{2^{2^k}}}=\cfrac{1- {\cfrac{1}{2^{2^{k+1}}}}}{1- {\cfrac{1}{2^{2^k}}}}=\frac{u_{k+1}}{u_k}
+\prod_{k=0}^{\infty} \biggl(1+ {\frac{1}{2^{2^k}}}\biggr)=\frac{1}{u_0}=2
+(1-1/2)(1+1/2)=1-1/2^2
+(1-1/2^2)(1+1/2^2)=1-1/2^4
+(1-1/2)\prod_{k=0}^{n}(1+ 1/2^{2^k})=1- 1/2^{2^{k+1}}
+\begin{align} \prod_{k=0}^\infty\left(1+{1\over2^{2^k}}\right) &= \left(1+{1\over2^1}\right)\left(1+{1\over2^2}\right)\left(1+{1\over2^4}\right)\cdots\\  &= 1+{1\over2^1}+{1\over2^2}+\cdots+{1\over2^{1+2}}+{1\over2^{1+4}}+\cdots+{1\over2^{1+2+4}}+{1\over2^{1+2+8}}+\cdots\\ &=1+{1\over2}+{1\over4}+{1\over8}+\cdots\\ &=2 \end{align}
+2
+2

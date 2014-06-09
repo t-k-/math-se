@@ -1,0 +1,33 @@
+f(x)
+x = 0
+a > 0
+\int_{0}^{a}f(x)\,dx = \lim_{\epsilon \to 0+}\int_{\epsilon}^{a}f(x)\,dx
+g(x) = \int_{x}^{a}\frac{f(t)}{t}\,dt
+\int_{0}^{a}g(x)\,dx = \int_{0}^{a}f(x)\,dx
+g'(x) = -f(x)/x
+0 < \epsilon < a
+\int_{\epsilon}^{a}g(x)\,dx = [xg(x)]_{x = \epsilon}^{x = a} - \int_{\epsilon}^{a}xg'(x)\,dx
+\int_{\epsilon}^{a}g(x)\,dx = -\epsilon g(\epsilon) + \int_{\epsilon}^{a}f(x)\,dx
+\lim_{\epsilon \to 0+}\epsilon g(\epsilon) = 0
+g(x)
+f(t)
+t = 0
+t
+g(\epsilon)
+\delta\in(0, a]
+x\in(0,\delta)
+M_\delta=\max_{x,y\in[0,\delta]}|h(x)-h(y)|.
+|g(x)-\frac{h(x)}{a}|\le \int_x^\delta\frac{|h(x)-h(t)|}{t^2}dt+\int_\delta^a\frac{|h(x)-h(t)|}{t^2}dt\le \frac{M_\delta}{x}+\frac{M_a}{\delta}.
+\lim\limits_{x\to0}xg(x)= 0
+\epsilon > 0
+ x_0
+ 0<x<x_0 \implies |\int_x^{x_0}f(t)\, dt|<\epsilon
+ x 
+ xg(x) = x\int_{x_0}^a\frac{f(t)}{t}dt+x\int_{x}^{x_0}\frac{f(t)}{t}dt
+\to 0
+x\to 0^+
+ F(x) = \int_x^{x_0}f(t)\,dt
+ \int_{x}^{x_0}\frac{f(t)}{t}dt =\frac{-F(t)}{t}\bigg |_{x}^{x_0}-\int_{x}^{x_0}\frac{F(t)}{t^2}dt
+|F|<\epsilon 
+|x\int_{x}^{x_0}\frac{f(t)}{t}dt| < 3\epsilon 
+\limsup\limits_{x\to 0^+} |xg(x)|\le 3\epsilon

@@ -1,0 +1,58 @@
+\sum \limits_{j=0}^{r}{m\choose j}{q-m\choose r-j}={q\choose r}\tag a
+{n+1\choose p+1}=\sum \limits_{k=0}^{n-p}{n-k\choose p}\tag 1
+d
+\displaystyle {n+1\choose p+1}
+d=0
+0 \le d \le p-1
+{n+1\choose p+1}=\sum \limits_{k=0}^{n-p}{d+k\choose d}{n-d-k\choose p-d}\tag 2
+d
+(2)
+k\gt n-p
+\longrightarrow
+n-d-k\lt p-d
+ \longrightarrow \sum \limits_{k=0}^{n-p}{d+k\choose d}{n-d-k\choose p-d}=\sum \limits_{k=0}^{n}{d+k\choose d}{n-d-k\choose p-d}
+m = d + k; j = d; q = n; r = p
+0\leq k\leq n
+\longrightarrow
+d\leq d+k\leq n+d
+\longrightarrow
+j\leq m\leq q+j
+\sum \limits_{k=0}^{n}{d+k\choose d}{n-d-k\choose p-d}=\sum \limits_{m=j}^{q+j}{m\choose j}{q-m\choose r-j}
+m<j
+\longrightarrow
+\displaystyle{m\choose j}=0
+m>q
+\longrightarrow
+\displaystyle{q-m\choose r-j}=0
+ \longrightarrow \sum \limits_{m=j}^{q+j}{m\choose j}{q-m\choose r-j}=\sum \limits_{m=0}^{q}{m\choose j}{q-m\choose r-j}
+(b)
+\sum \limits_{m=0}^{q}{m\choose j}{q-m\choose r-j}={q+1\choose r+1}={n+1\choose p+1}
+{n+1\choose p}=\sum \limits_{k=0}^p{n-k\choose p-k}\tag 3
+d
+\displaystyle {n+1\choose p}
+d=0
+0 \le d \le n-p-1
+{n+1\choose p}=\sum \limits_{k=0}^p {d+k\choose k}{n-d-k\choose p-k}\tag 4
+d
+(4)
+\sum \limits_{k=0}^p {d+k\choose k}{n-d-k\choose p-k}=\sum \limits_{k=0}^p {d+k\choose d}{n-d-k\choose n-p-d}
+k\gt p
+\longrightarrow
+n-d-k\lt n-p-d
+ \longrightarrow \sum \limits_{k=0}^{p}{d+k\choose d}{n-d-k\choose n-p-d}=\sum \limits_{k=0}^{n}{d+k\choose d}{n-d-k\choose n-p-d}
+m = d + k; j = d; q = n; r = n-p
+0\leq k\leq n
+\longrightarrow
+d\leq d+k\leq n+d
+\longrightarrow
+j\leq m\leq q+j
+\sum \limits_{k=0}^{n}{d+k\choose d}{n-d-k\choose n-p-d}=\sum \limits_{m=j}^{q+j}{m\choose j}{q-m\choose r-j}
+m<j
+\longrightarrow
+\displaystyle{m\choose j}=0
+m>q
+\longrightarrow
+\displaystyle{q-m\choose r-j}=0
+ \longrightarrow \sum \limits_{m=j}^{q+j}{m\choose j}{q-m\choose r-j}=\sum \limits_{m=0}^{q}{m\choose j}{q-m\choose r-j}
+(b)
+\sum \limits_{m=0}^{q}{m\choose j}{q-m\choose r-j}={q+1\choose r+1}={n+1\choose n-p+1}={n+1\choose p}

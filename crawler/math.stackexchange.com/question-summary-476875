@@ -1,0 +1,31 @@
+\displaystyle \lim \limits_{x\rightarrow \infty } \frac{x^3}{e^x}
+\displaystyle e^x = 1+x+\frac{x^2}{2!} + \frac{x^3}{3!} + \ldots  = \sum\limits_{i=0}^{\infty}\frac{x^i}{i!}
+e^x
+e^x
+\infty
+(5)
+n\mapsto n+1
+ \begin{align} \lim_{x\to\infty}\frac{x^n}{e^x} \le&\lim_{x\to\infty}\frac{x^n}{1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots+\frac{x^n}{n!}+\frac{x^{n+1}}{(n+1)!}}\\ =&\lim_{x\to\infty}\frac1{\frac1{x^n}+\frac1{x^{n-1}}+\frac1{2x^{n-2}}+\frac1{6x^{n-3}}+\dots+\frac1{n!}+\frac{x}{(n+1)!}}\\ \le&\lim_{x\to\infty}\frac{(n+1)!}{x}\\[14pt] =&0\tag{6} \end{align} 
+(6)
+e^x
+x=\infty
+ \begin{align} \lim_{x\to\infty}\frac{x^n}{e^x} \le&\lim_{x\to\infty}\frac{x^n}{1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots+\frac{x^{n-1}}{(n-1)!}+\frac{x^n}{n!}}\\ =&\lim_{x\to\infty}\frac1{\frac1{x^n}+\frac1{x^{n-1}}+\frac1{2x^{n-2}}+\frac1{6x^{n-3}}+\dots+\frac1{x(n-1)!}+\frac1{n!}}\\[4pt] =&n!\tag{7} \end{align} 
+(6)
+e^x
+x=\infty
+ \begin{align} \lim_{x\to\infty}\frac{x^n}{e^x} \le&\lim_{x\to\infty}\frac{x^n}{1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots+\frac{x^{n-2}}{(n-2)!}+\frac{x^{n-1}}{(n-1)!}}\\ =&\lim_{x\to\infty}\frac1{\frac1{x^n}+\frac1{x^{n-1}}+\frac1{2x^{n-2}}+\frac1{6x^{n-3}}+\dots+\frac1{x^2(n-2)!}+\frac1{x(n-1)!}}\\ =&\lim_{x\to\infty}x\cdot\lim_{x\to\infty}\frac1{\frac1{x^{n-1}}+\frac1{x^{n-2}}+\frac1{2x^{n-3}}+\frac1{6x^{n-4}}+\dots+\frac1{x(n-2)!}+\frac1{(n-1)!}}\\ =&\lim_{x\to\infty}x\cdot(n-1)!\\[9pt] =&\infty\tag{8} \end{align} 
+(6)
+(7)
+(8)
+ \lim_{x\to\infty}\frac{x^n}{e^x}\le\min(0,n!,\infty)=0\tag{9} 
+e^x
+\infty
+n
+e^x=\sum_{k\geqslant 0}\frac{x^k}{k!}\geqslant \frac{x^n}{n!}
+x^m
+n>m
+\frac{x^m}{e^x}\leqslant n!{x^{m-n}}\to 0
+x\to\infty
+-
+x\to 0
+x\to\infty

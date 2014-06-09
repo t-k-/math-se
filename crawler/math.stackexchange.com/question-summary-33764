@@ -1,0 +1,42 @@
+B
+[a,b]
+m \times n
+B
+ \| Y \| = \sup \left\{|Y(t)| \exp\left(-K \int_a^t |P(s)|ds\right) : K > 1 \text{ and constant, } a \leq t \leq b\right\} 
+\| Y \| = \sup \left\{|Y(t)| \exp\left(- \int_a^t |P(s)|ds\right) : a \leq t \leq b\right\}
+r < \| Y \|
+r < |Y(t)|\exp\left(- K\int_a^t |P(s)|ds\right)
+K > 1
+a \leq t \leq b
+r < |Y(t)|\exp\left( - \int_a^t |P(s)|ds\right)
+r
+\| Y \| = \sup \left\{|Y(t)|f(t) : a \leq t \leq b\right\}
+f : [a,b] \to [r,1]
+r = \exp\left(-\int_a^b |P(s)|ds\right)
+\langle Y_n : n\in \mathbb{N}\rangle
+\|\cdot\|
+Y_n
+C[a,b]
+i,j
+(Y_n)_{i,j}
+\lim _{N\to\infty}\sup\{\sup\{|(Y_m)_{i,j}(x) - (Y_n)_{i,j}(x)| : x \in [a,b]\} : m,n > N\} = L
+L > 0
+N > 0
+m,n > N
+\sup _{x\in [a,b]}|(Y_m)_{i,j}(x) - (Y_n)_{i,j}(x)| > L
+x \in [a,b]
+|(Y_m)_{i,j}(x) - (Y_n)_{i,j}(x)| > L
+|(Y_m-Y_n)(x)|>L
+|(Y_m-Y_n)(x)|f(x) > Lr
+\|Y_m - Y_n\| > Lr
+Y_n
+Y
+Y_n
+Y
+\|\cdot\|
+i,j
+\lim _n |Y_{i,j}(x) - (Y_n)_{i,j}(x)| = 0
+0
+n
+\infty
+\|Y - Y_n\| \leq \sup _{x \in [a,b]}|Y(x) - Y_n(x)| \leq \sum_{i,j} \sup_x |Y_{i,j}(x) - (Y_n)_{i,j}(x)|

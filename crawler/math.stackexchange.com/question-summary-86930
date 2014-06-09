@@ -1,0 +1,27 @@
+\mathbb{R}^4
+\mathbb{R}^3
+x(u,v) = (\cos u, \sin u, \cos v, \sin v)
+x(u,v) = ( (R + r \cos u)\cos v, (R + r \cos u)\sin v, r \sin u)
+f(x,y,z,w) = ((R + r x)z, (R + r x)w, r y)
+R
+r
+0
+X(u, v)
+x
+R > r > 0
+\frac{\partial X}{\partial(u, v)} = \left[ \begin{array}{cc} -\sin u & 0 \\ \cos u & 0 \\ 0 & -\sin v \\ 0 & \cos v \end{array} \right] 
+\frac{\partial f}{\partial(x, y, z, w)} = \left[ \begin{array}{cccc} rz & 0 & R + rx & 0 \\ rw & 0 & 0 & R + rx \\ 0 & r & 0 & 0 \end{array} \right] 
+\mathbb{R}^3
+f \circ X
+ \frac{\partial f}{\partial(x,y,z,w)}\frac{\partial X}{\partial(u,v)}  = \left[ \begin{array}{cc} -rz\sin u & -(R + rx)\sin v \\ -rw\sin u & (R+rx)\cos v \\ r\cos u & 0  \end{array} \right] = \left[ \begin{array}{cc} -r\cos v\sin u & -(R + r\cos u)\sin v \\ -r\sin v\sin u & (R+r\cos u)\cos v \\ r\cos u & 0  \end{array} \right]  
+f
+\mathrm{im} X
+f \circ X
+u, v \in [0, 2\pi)
+f
+f \circ X
+f( X(u,v) ) = f(X(u', v'))
+X(u,v) = X(u', v')
+\mathbb{R}
+\mathbb{R}^2
+\mathbb{R}^n

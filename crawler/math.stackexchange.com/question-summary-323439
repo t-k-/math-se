@@ -1,0 +1,13 @@
+T(n) = 3T\left(\tfrac n5\right) + \sqrt n
+T(n)=\Theta(\sqrt n)
+5
+n.
+T(0) = 0
+n = \sum_{k=0}^{\lfloor \log_5 n \rfloor} d_k 5^k
+ T(n) = T(3 n/5) +  \lfloor \sqrt n \rfloor.
+n:
+ T(n) = \sum_{j=0}^{\lfloor \log_5 n \rfloor} 3^j \Bigg\lfloor\sqrt{\sum_{k=j}^{\lfloor \log_5 n \rfloor} d_k 5^{k-j}}\Bigg\rfloor.
+ T(n) \le \sum_{j=0}^{\lfloor \log_5 n \rfloor} 3^j \Big\lfloor\sqrt{5^{\lfloor \log_5 n \rfloor -j +1}-1} \Big\rfloor < \sum_{j=0}^{\lfloor \log_5 n \rfloor} 3^j \sqrt{5}^{\lfloor \log_5 n \rfloor -j +1} = \sqrt{5}^{\lfloor \log_5 n \rfloor +1}  \sum_{j=0}^{\lfloor \log_5 n \rfloor} \left(\frac{3}{\sqrt 5}\right)^j \\ = \sqrt{5}^{\lfloor \log_5 n \rfloor +1}  \frac{\left(\frac{3}{\sqrt 5}\right)^{\lfloor \log_5 n \rfloor +1}-1}{\frac{3}{\sqrt 5}-1} = \frac{3^{\lfloor \log_5 n \rfloor +1}-\sqrt{5}^{\lfloor \log_5 n \rfloor +1}}{\frac{3}{\sqrt 5}-1}.
+1/5\, \left( 3/5\,\sqrt {5}-1 \right) ^{-1}-1/2>0.
+ T(n) \ge  \sum_{j=0}^{\lfloor \log_5 n \rfloor} 3^j \lfloor\sqrt{5^{\lfloor \log_5 n \rfloor-j}}\rfloor > \sum_{j=0}^{\lfloor \log_5 n \rfloor} 3^j \left(\sqrt{5^{\lfloor \log_5 n \rfloor-j}} - 1\right) \\ =  \sqrt{5}^{\lfloor \log_5 n \rfloor}  \sum_{j=0}^{\lfloor \log_5 n \rfloor} \left(\frac{3}{\sqrt 5}\right)^j - \frac{1}{2} \left( 3^{\lfloor \log_5 n \rfloor+1} - 1\right) \\= \sqrt{5}^{\lfloor \log_5 n \rfloor}  \frac{\left(\frac{3}{\sqrt 5}\right)^{\lfloor \log_5 n \rfloor+1}-1}{\frac{3}{\sqrt 5}-1} - \frac{1}{2} \left( 3^{\lfloor \log_5 n \rfloor+1} - 1\right)\\= \frac{1}{5}  \frac{3^{\lfloor \log_5 n \rfloor+1}-\sqrt{5}^{\lfloor \log_5 n \rfloor +1}} {\frac{3}{\sqrt 5}-1} - \frac{1}{2} \left( 3^{\lfloor \log_5 n \rfloor+1} - 1\right) 
+ T(n) \in \Theta\left(3^{\lfloor \log_5 n \rfloor}\right) = \Theta\left(3^{\log_5 n}\right) = \Theta\left(5^{\log_5 3 \log_5 n}\right) = \Theta\left(n^{\log_5 3}\right).

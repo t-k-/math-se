@@ -1,0 +1,18 @@
+f(x)=(x^{2}+4)e^{2x}
+f(x)
+x=0
+f(x)=x^2e^{2x}+4e^{2x}
+ e^x=1+x+\frac{x^2}{2!}+\ldots+\frac{x^n}{n!}+\ldots 
+ e^{2x}=1+(2x)+\frac{(2x)^2}{2!}+\ldots+\frac{(2x)^n}{n!}+\ldots 
+ (x^2+4)e^{2x}=\sum_{n=0}^\infty(x^2+4)\frac{(2x)^n}{n!}=\sum_{n=0}^\infty\frac{2^n}{n!}x^{n+2}+\sum_{n=0}^\infty \frac{2^{n+2}}{n!}x^n
+x=0
+x^{1000}
+1000!
+ 1000!\left[\frac{2^{998}}{998!}+\frac{2^{1002}}{1000!}\right] 
+ f(x)=(x^2+4)e^{2x}=\sum_{k=0}^{\infty} \frac{2^kx^{k+2}}{k!} + \sum_{k=0}^{\infty} \frac{2^{k+2}x^{k}}{k!}
+ = \sum_{k=2}^{\infty} \frac{2^{k-2}x^{k}}{(k-2)!} + \sum_{k=2}^{\infty} \frac{2^{k+2}x^{k}}{k!} +4+8x 
+= 4+8x+\sum_{k=2}^{\infty} \left(\frac{2^{k-2}}{(k-2)!}+\frac{2^{k+2}}{k!}\right)x^k 
+ \implies \frac{f^{(k)}(0)}{k!} = \frac{2^{k-2}}{(k-2)!}+\frac{2^{k+2}}{k!},\quad k\geq2 
+ \implies f^{(k)}(0) = k! \left(\frac{2^{k-2}}{(k-2)!}+\frac{2^{k+2}}{k!}\right),\quad k\geq2 
+ \implies \frac{{2}^{k}}{4} \left( {k}^{2}-k+16 \right)  
+k=1000

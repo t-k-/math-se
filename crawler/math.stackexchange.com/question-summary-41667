@@ -1,0 +1,33 @@
+\begin{align*} F_0&=0\\ F_1&=1\\ F_2&=F_0+F_1\\ &\vdots\\ Fn&=F_{n-1} + F_{n-2}\end{align*}
+n
+K=2
+K
+n
+\begin{align*} K=2&\Rightarrow F_n= F_{n-1} + F_{n-2},\\ K=3&\Rightarrow F_n= F_{n-1} + F_{n-2} + F_{n-3},\\ \end{align*}
+n
+K
+K > 2
+n
+O(\log(n))
+\mathfrak{F}_n = {F_n\choose F_{n-1}}
+\mathfrak{F}_{n+1} = \begin{pmatrix}F_{n+1} \\\\ F_n \end{pmatrix} = \begin{pmatrix}F_n + F_{n-1} \\\\ F_n \end{pmatrix} = \begin{pmatrix} 1&1 \\\\ 1&0 \end{pmatrix} \begin{pmatrix} F_n \\\\ F_{n-1} \end{pmatrix} = M_F\mathfrak{F}_n 
+M_F
+2\times2
+\begin{pmatrix} 1&1 \\\\ 1&0 \end{pmatrix}
+F_n
+M_F^n\mathfrak{F}_0
+M_F^2, M_F^4=(M_F^2)^2, \ldots
+F_{2n}
+F_n
+F_{n-1}
+M_F
+M_T
+3\times3
+T_n
+n
+\mathfrak{T}_{n+1} =  \begin{pmatrix} T_{n+1} \\\\ T_n \\\\ T_{n-1} \end{pmatrix} = \begin{pmatrix} T_n+T_{n-1}+T_{n-2} \\\\ T_n \\\\ T_{n-1} \end{pmatrix} = \begin{pmatrix} 1&1&1 \\\\ 1&0&0 \\\\ 0&1&0 \end{pmatrix} \begin{pmatrix} T_n \\\\ T_{n-1} \\\\ T_{n-2} \end{pmatrix} = M_T\mathfrak{T}_n
+n
+n
+n
+\sqrt{5}
+\sqrt{5}

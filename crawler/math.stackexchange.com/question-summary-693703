@@ -1,0 +1,38 @@
+X
+A
+ E(X | A)
+E(X) = E(X|A)Pr(A) + E(X|A^C)Pr(A^C) 
+Pr(A^C)
+Pr(A^C) = \sum_{k=1}^\infty Pr(A^C|N=k) Pr(N=K) = \sum_{k=1}^{\infty} (1-\frac{2}{6})^{k-1}(\frac{5}{6})^{k-1}(\frac{1}{6}) = \frac{3}{8}
+Pr(A^C) = \sum_{k=1}^\infty \frac{1}{6} (1 - \frac{2}{6})^{k-1}=\frac{1}{2} 
+N
+\mathbb{E}\left(X\mid A\right)
+\mathbb{E}X=\mathbb{E}\left(X\mid A\right)P\left(A\right)+\mathbb{E}\left(X\mid A^{c}\right)P\left(A^{c}\right)=\mathbb{E}\left(X\mid A\right)\left(1-P\left(A^{c}\right)\right)+\mathbb{E}\left(X\mid A^{c}\right)P\left(A^{c}\right)
+\mathbb{E}X
+P\left(A^{c}\right)
+\mathbb{E}\left(X\mid A^{c}\right)
+N
+\left\{ 0,1,2,\dots\right\} 
+P\left[N=n\right]=\left(\frac{5}{6}\right)^{n}\frac{1}{6}
+B
+\mathbb{E}N=\mathbb{E}\left(N\mid B\right)P(B)+\mathbb{E}\left(N\mid B^{c}\right)P(B^{c})=0\times\frac{1}{6}+\left(1+\mathbb{E}N\right)\times\frac{5}{6}
+\mathbb{E}N=5
+X
+N=n
+n
+\frac{1}{5}
+\mathbb{E}X=\mathbb{E}\left(\mathbb{E}\left(X\mid N\right)\right)=\mathbb{E}\frac{1}{5}N=1
+\left(X\mid A^{c}\right)
+N=n
+n
+\frac{1}{4}
+\mathbb{E}\left(X\mid A\right)=\frac{5}{4}
+P\left(A^{c}\right)
+P\left(A^{c}\right)=\sum_{n=0}^{\infty}P\left(A^{c}\mid N=n\right)P\left(N=n\right)=\sum_{n=0}^{\infty}\left(\frac{4}{5}\right)^{n}\times\left(\frac{5}{6}\right)^{n}\frac{1}{6}=\frac{1}{2}
+A^c
+A
+P(A)=P(A^c)
+P(A)+P(A^c)=1
+P(A^c)=\frac{1}{2}
+1=\mathbb{E}\left(X\mid A\right)\times\frac{1}{2}+\frac{5}{4}\times\frac{1}{2}
+\mathbb{E}\left(X\mid A\right)=\frac{3}{4}

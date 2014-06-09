@@ -1,0 +1,18 @@
+r
+r(t) = e^{y(t)}\quad\text{with}\quad dy(t) = k(θ −y(t)) \mathrm dt+\sigma \mathrm  dW(t),
+ r(0)\sim\log(\mu,\sigma) 
+\mu=\exp\left(\theta + \frac{\sigma^2}{4k}\right)
+\sigma=\exp\left(2\theta + \frac{\sigma^2}{2k}\right) \left[ \exp\left(\frac{\sigma^2}{2k}\right)−1\right]
+\theta=0
+dY_t = - k Y_t \, dt + \sigma dW_t
+Y_t = e^{-kt} Y_0 +\sigma\int_0^t e^{-k(t-r)} \, dW_r.
+r(0) \sim \log(\mu,\varrho^2)
+r(0)= e^{Y_0}
+Y_0 \sim N(\mu,\varrho^2)
+(W_t)_{t \geq 0}
+(Y_t)_{t \geq 0}
+\mathbb{E}Y_t = e^{-k t} \mu
+\mathbb{V}Y_t = e^{-2kt} \varrho^2+ \frac{\sigma^2}{2k} \left(1-e^{-2kt} \right).
+\begin{align*}\mathbb{E}r_t &= \mathbb{E}e^{Y_t} = \exp \left( \mathbb{E}Y_t+  \frac{1}{2} \mathbb{V}Y_t \right) = \exp \left( e^{-kt} \mu + e^{-2kt} \varrho^2+ \frac{\sigma^2}{2k} \left(1-e^{-2kt} \right) \right). \end{align*}
+(r_t)_{t \geq 0}
+t

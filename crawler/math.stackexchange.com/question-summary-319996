@@ -1,0 +1,28 @@
+A = \begin{pmatrix} \lambda & 0 &0\\ 1 & \lambda&0 \\ 0&1& \lambda  \end{pmatrix},
+e^{tA}
+X^{'}
+X(0)
+X_{0}
+(x_{0},y_{0},z_{0})
+\lambda
+X_{0}
+X(t)
+\infty
+e^{tA}
+\lambda <0
+A = \begin{pmatrix} \lambda & 0 &0\\ 1 & \lambda&0 \\ 0&1& \lambda  \end{pmatrix} =  \lambda\begin{pmatrix} 1 & 0 &0\\ 0 & 1&0 \\ 0&0& 1  \end{pmatrix}+ \begin{pmatrix} 0& 0 &0\\ 1 & 0&0 \\ 0&1& 0  \end{pmatrix} = \lambda I_3 + N
+e^A = e^{\lambda I_3 + N}
+(\lambda I_3) N = N(\lambda I_3)
+e^A = e^{\lambda I_3}e^{N}
+e^{\lambda I_3}=\sum\limits_{n=0}^{+\infty}\cfrac{\left(\lambda I_3\right)^n}{n!}=\sum\limits_{n=0}^{+\infty}\cfrac{\lambda^n  I_3^n}{n!}=\sum\limits_{n=0}^{+\infty}\cfrac{\lambda^n  I_3}{n!}=\left(\sum\limits_{n=0}^{+\infty}\cfrac{\lambda^n  }{n!}\right)I_3 = e^\lambda I_3
+N^2=\begin{pmatrix} 0& 0 &0\\ 1 & 0&0 \\ 0&1& 0  \end{pmatrix}\begin{pmatrix} 0& 0 &0\\ 1 & 0&0 \\ 0&1& 0  \end{pmatrix} = \begin{pmatrix} 0& 0 &0\\ 0 & 0&0 \\ 1&0& 0  \end{pmatrix}
+N^3=N N^2 =\begin{pmatrix} 0& 0 &0\\ 1 & 0&0 \\ 0&1& 0  \end{pmatrix}\begin{pmatrix} 0& 0 &0\\ 0 & 0&0 \\ 1&0& 0  \end{pmatrix} = \begin{pmatrix} 0& 0 &0\\ 0 & 0&0 \\ 0&0& 0  \end{pmatrix} = 0_3
+e^N = \sum\limits_{n=0}^{+\infty}\cfrac{\left(\lambda N\right)^n}{n!}=\sum\limits_{n=0}^{2}\cfrac{\left(\lambda N\right)^n}{n!}+\sum\limits_{n=3}^{+\infty}\cfrac{\left(\lambda N\right)^n}{n!}=\sum\limits_{n=0}^{2}\cfrac{\left(\lambda N\right)^n}{n!} = \cfrac{I_3}{0!}+\cfrac{N}{1!}+\cfrac{N^2}{2!}=\begin{pmatrix} 1 & 0 &0\\ 0 & 1&0 \\ 0&0& 1  \end{pmatrix}+\begin{pmatrix} 0& 0 &0\\ 1 & 0&0 \\ 0&1& 0  \end{pmatrix}+\cfrac{1}{2}\begin{pmatrix} 0& 0 &0\\ 0 & 0&0 \\ 1&0& 0  \end{pmatrix}=\cfrac{1}{2}\begin{pmatrix} 2 & 0 &0\\ 2 & 2&0 \\ 1&2& 2  \end{pmatrix}
+e^A = e^{\lambda I_3}e^{N}=\cfrac{e^{\lambda}}{2}\begin{pmatrix} 2 & 0 &0\\ 2 & 2&0 \\ 1&2& 2  \end{pmatrix}
+e^{tA}=e^{t\lambda I_3 + tN}=e^{t\lambda I_3}e^{tN}=\cfrac{e^{\lambda t}}{2}\begin{pmatrix} 2 & 0 &0\\ 2t & 2&0 \\ t^2&2t& 2  \end{pmatrix}
+X(0)=X_0=\begin{pmatrix} x_0\\ y_0 \\ z_0  \end{pmatrix}
+X'=AX\tag{E}
+X(t)=e^{tA}X_0=\cfrac{e^{\lambda t}}{2}\begin{pmatrix} 2 & 0 &0\\ 2t & 2&0 \\ t^2&2t& 2  \end{pmatrix}\begin{pmatrix} x_0\\ y_0 \\ z_0  \end{pmatrix}=\cfrac{e^{\lambda t}}{2}\begin{pmatrix} 2x_0\\ 2tx_0+2y_0 \\ t^2 x_0 + 2t y_0 + 2z_0  \end{pmatrix}=\begin{pmatrix} e^{\lambda t}x_0\\ e^{\lambda t}\left(tx_0+y_0\right) \\ e^{\lambda t}\left(\cfrac{t^2}{2} x_0 + t y_0 + z_0\right)  \end{pmatrix}
+\begin{pmatrix} e^{\lambda t}x_0\\ e^{\lambda t}\left(tx_0+y_0\right) \\ e^{\lambda t}\left(\cfrac{t^2}{2} x_0 + t y_0 + z_0\right)  \end{pmatrix}\underset{t\to +\infty}{\longrightarrow} \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+3 < +\infty
+\begin{pmatrix} e^{\lambda t}x_0\\ e^{\lambda t}\left(tx_0+y_0\right) \\ e^{\lambda t}\left(\cfrac{t^2}{2} x_0 + t y_0 + z_0\right)  \end{pmatrix}\underset{t\to +\infty}{\longrightarrow} \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\Leftrightarrow \left\{     \begin{array}{ll}         e^{\lambda t}x_0 \underset{t\to +\infty}{\longrightarrow}0 \\         e^{\lambda t}\left(tx_0+y_0\right)\underset{t\to +\infty}{\longrightarrow}0\\         e^{\lambda t}\left(\cfrac{t^2}{2} x_0 + t y_0 + z_0\right)\underset{t\to +\infty}{\longrightarrow}0     \end{array} \right.\Leftrightarrow \left\{     \begin{array}{ll}         \lambda < 0 \mbox{ or } x_0 = 0\\         \lambda < 0 \mbox{ or } x_0=y_0 = 0\\         \lambda < 0 \mbox{ or } x_0=y_0=z_0 = 0     \end{array} \right.\Leftrightarrow \lambda < 0 \mbox{ or } x_0=y_0=z_0 = 0

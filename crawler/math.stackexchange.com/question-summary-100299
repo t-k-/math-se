@@ -1,0 +1,63 @@
+\begin{align}  \left| \bigcup\limits_{i=1}^n A_i \right| =   + \left( \sum\limits_{i=0}^n | A_i | \right)   - \left( \sum\limits_{i,j:1 \le i<j \le n} \right. &| A_i \cap A_j |   +\cdots \\ & \cdots + (-1)^{n-1} | A_1 \cap A_2  \cap \ldots  \cap A_{n-1}  \cap A_n |\huge)  \end{align}
+ \{ | C_i |, | B_i |, | C_i \cap B_i |, | A_i |, | A_i \cap C_i |, | A_i \cap B_i |, | A_i \cap B_i \cap C_i | \}
+ \left|\bigcup\limits_{i=1}^3 A_i\right| = + | C_i | + | B_i | - | C_i \cap B_i | + | A_i | - | A_i \cap C_i | - | A_i \cap B_i | + | A_i \cap B_i \cap C_i | 
+S
+(-1)^{\lvert S\rvert-1}
+[1,n]
+\{1,2,\ldots,n\}
+[1,n]
+ \left\lvert\bigcup_{i\in[1,n]}A_i\right\rvert+{\sum_{S\subseteq[1,n]}}'(-1)^{\lvert S\rvert}\left\lvert\bigcap_{i\in S}A_i\right\rvert=0. 
+ \left\lvert\left(\bigcup_{i\in[1,n]}A_i\right)'\right\rvert=\sum_{S\subseteq[1,n]}(-1)^{\lvert S\rvert}\left\lvert\bigcap_{i\in S}A_i\right\rvert=0. 
+\{S(i)\}_{i=1}^m
+N(j)
+j
+S(i)
+N(0)
+k
+S(i)
+ \sum_{j=0}^m(-1)^{j-k}\binom{j}{k}N(j)\tag{5} 
+n
+S(i)
+\binom{n}{j}
+N(j)
+\binom{n}{j}
+j
+n
+(5)
+n = k
+\quad\square
+\binom{-1}{n}=(-1)^n
+ \sum_{k=0}^n(-1)^k\binom{j}{k}=(-1)^n\binom{j-1}{n}\tag{6} 
+k
+S(i)
+ \sum_{j=0}^m(-1)^{j-k}\binom{j-1}{k}N(j)\tag{7} 
+S(i)
+(5)
+S(i)
+S(i)
+ \underbrace{N(0)\vphantom{\sum_j\binom{j}{0}}}_{\text{size of universe}}-\underbrace{\sum_{j=0}^m(-1)^{j}\binom{j}{0}N(j)}_{\text{number of elements in none of the $S(i)$}}=\underbrace{\sum_{j=1}^m(-1)^{j-1}N(j)\vphantom{\binom{j}{0}}}_{\text{number of elements in at least one of the $S(i)$}} 
+N(\supseteq S)
+N_r
+t
+\binom{t}{r}
+N_r
+r
+N_r
+e_t
+N(z)
+e_0 = E(0) = N(-1)
+ \begin{align*} N_r &= \sum_{\lvert \mathcal{S} \rvert = r} N(\supseteq \mathcal{S}) \\     &= \sum_{\lvert \mathcal{S} \rvert = r}          \sum_{\substack{\omega \in \Omega \\                \mathcal{S} \subseteq P(\omega)}} 1 \\     &= \sum_{\omega \in \Omega}          \sum_{\substack{\lvert \mathcal{S} \rvert = r \\                          \mathcal{S} \subseteq P(\omega)}} 1 \\     &= \sum_{\omega \in \Omega} \binom{\lvert P(\omega) \rvert}{r} \end{align*} 
+ N_r = \sum_{t \ge 0} \binom{t}{r} e_t 
+ \begin{align*} N(z) &= \sum_{k \ge 0} N_k z^k \\ E(z) &= \sum_{k \ge 0} e_k z^k \end{align*} 
+ \begin{align*} N(z) &= \sum_{r \ge 0} \left( \sum_{t \ge 0} \binom{t}{r} e_t \right) z^r \\      &= \sum_{t \ge 0} e_t \left(\sum_{r \ge 0} \binom{t}{r} z^r \right) \\      &= \sum_{t \ge 0} e_t (1 + z)^t \\      &= E(1 + z) \end{align*} 
+ E(z) = N (z - 1) 
+n
+\Omega
+i
+i
+\mathcal{S}
+e_0 = E(0) = N(-1)
+ N(\supseteq \mathcal{S}) = (n - \lvert \mathcal{S} \rvert)! 
+ N_r = \sum_{\lvert \mathcal{S} \rvert = r} N(\supseteq \mathcal{S})     = \binom{n}{r} (n - r)!     = \frac{n!}{r!} 
+ N(z) = n! \sum_{0 \le r \le n} \frac{z^r}{r!} 
+ e_0 = n! \sum_{0 \le r \le n} \frac{(-1)^r}{r!} 

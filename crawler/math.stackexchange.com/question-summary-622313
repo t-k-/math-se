@@ -1,0 +1,21 @@
+\displaystyle \int^{\frac{\pi}{2}}_{0}\cos^{n}x\cos (nx)\ dx 
+n\in \mathbb{N}
+\bf{My\; Try}::
+\displaystyle \cos (x) = \frac{e^{ix}+e^{-ix}}{2}
+\displaystyle \int_{0}^{\frac{\pi}{2}} \left(\frac{e^{ix}+e^{-ix}}{2}\right)^n\cdot \left(\frac{e^{inx}+e^{-inx}}{2}\right)dx
+\displaystyle  = \frac{1}{2^n}\bf{Re\left\{\int_{0}^{\frac{\pi}{2}} \left(e^{ix}+e^{-ix}\right)^n\cdot e^{inx}dx\right\}}
+\displaystyle =\frac{1}{2^n}\bf{Re\left\{\int_{0}^{\frac{\pi}{2}}\left(e^{2ix}+1\right)^ndx\right\}}
+z=e^{4ix}
+\displaystyle e^{4ix}dx = \frac{1}{4i}\cdot dz\Rightarrow dx = \frac{dz}{4iz}
+\displaystyle  = \frac{1}{4\cdot 2^n}\bf{Re\left\{\int_{C}\left(\sqrt{z}+1\right)\cdot \frac{dz}{iz}\right\}}
+\cos
+\int_0^{\pi/2} \cos^n x \cos (nx)\,dx = \frac12 \int_{-\pi/2}^{\pi/2} \cos^n x\cos (nx)\,dx.
+\cos (nx)
+e^{inx}
+\begin{align} \int_0^{\pi/2} \cos^n x \cos (nx)\,dx &= \frac12\int_{-\pi/2}^{\pi/2}\cos^n x \, e^{inx}\,dx\\ &= \frac{1}{2^{n+1}} \int_{-\pi/2}^{\pi/2} \left(e^{ix}+e^{-ix}\right)^n e^{inx}\,dx\\ &= \frac{1}{2^{n+1}} \int_{-\pi/2}^{\pi/2} \left(e^{2ix}+1\right)^n\,dx. \end{align}
+\varphi = 2x
+ \int_0^{\pi/2} \cos^n x \cos (nx)\,dx = \frac{1}{2^{n+2}} \int_{-\pi}^\pi \left(e^{i\varphi}+1\right)^n\,d\varphi. 
+z = e^{i\varphi}
+\begin{align} \int_0^{\pi/2} \cos^n x \cos (nx)\,dx &= \frac{1}{2^{n+2}} \int_{\lvert z\rvert = 1} (z+1)^n\,\frac{dz}{iz}\\ &= \frac{\pi}{2^{n+1}} \end{align}
+I_n=\int_{0}^{\frac{\pi}{2}}\cos^nx\cos (nx)dx=\int_{0}^{\frac{\pi}{2}}\cos^{n-1}x\cos[(n-1)x]dx-\int_{0}^{\frac{\pi}{2}}\cos^{n-1}x\sin(nx)\sin xdx=I_{n-1}+\int_{0}^{\frac{\pi}{2}}\sin(nx)d(\frac{\cos^nx}{n})=I_{n-1}-I_{n} 
+\to I_n=\frac{1}{2}I_{n-1}=\cdots=\frac{1}{2^{n}}I_0=\frac{\pi}{2^{n+1}}

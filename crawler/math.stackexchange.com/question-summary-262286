@@ -1,0 +1,31 @@
+\lambda
+\mu
+\lambda
+ P(N = n) = \left( \frac{\lambda}{\lambda + \mu} \right) \left(\frac{\mu}{\lambda + \mu} \right)^n  
+n = 0, 1, 2, ... 
+P(N = n) = P(N = n | T = t) P(T = t) 
+= \int_0^{\infty} P(N = n) \cdot \lambda e^{- \lambda t}
+P(N = n)
+ \int_0^{\infty} \frac{e^{-\mu t}(\mu t)^n}{n!} \cdot \lambda \cdot e^{-\lambda t} dt
+ \frac{\lambda \mu^n}{n!} \int_0^{\infty} e^{-(\lambda + \mu)t} t^n dt 
+ \frac{\lambda \mu^n}{n!} \frac{1}{(\lambda + \mu)^{n+1}} \int_0^{\infty} u^n e^{-u} du = \lambda \mu^n \frac{1}{(\lambda + \mu)^{n + 1}} = \frac{\lambda}{\lambda + \mu} \left(\frac{\mu}{\lambda + \mu} \right)^n
+u = (\lambda + \mu) t
+du = \frac{dt}{\lambda + \mu}
+t = \frac{u}{\lambda + \mu}
+ \frac{\lambda \mu^n}{n!} \frac{1}{(\lambda + \mu)^2} \int_0^{\infty} u^n e^{-u} du
+dt=\dfrac{du}{\lambda+\mu}
+t^n
+\dfrac{u^n}{(\lambda+\mu)^n}
+\dfrac{1}{\lambda+\mu}
+\dfrac{u^n}{(\lambda+\mu)^n}
+(\lambda+\mu)^{n+1}
+\int_0^\infty u^n e^{-u}\,du
+F(n)
+F(n)
+F(n-1)
+v=u^n
+dw=e^{-u}\,du
+dv=nu^{n-1}\,du
+w=-e^{-u}
+F(n)=nF(n-1)
+F(n)=n!

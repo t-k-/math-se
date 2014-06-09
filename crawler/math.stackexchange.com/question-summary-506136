@@ -1,0 +1,35 @@
+ \sum_{i = 1}^{n} \sum_{j = 1}^{i} f(i, j) = \sum_{j = 1}^{n} \sum_{i = j}^{n} f(i, j)  
+ f(1,1) + f(2, 2) ... 
+j
+j
+n
+1\leq j\leq n
+i\geq j
+n
+ f(1,1)+f(2,1)+f(2,2)+f(3,1)+f(3,2)+f(3,3)+f(4,1)+f(4,2)+f(4,3)+f(4,4)+f(5,1)+\cdots+f(n,n-1)+f(n,n). 
+ 1\leq i\leq n, \ 1\leq j\leq i. 
+ 1\leq j\leq n, \ \ j\leq i\leq n. 
+A = \{ (i,j) | 1\le i \le n, \ 1 \le j \le i \}
+B = \{ (i,j) | 1\le j \le n, \ j \le i \le n \}
+A=B
+(i,j) \in A
+1\le i \le n, \ 1 \le j \le i
+1 \le j \le i \le n
+j \le i \le n
+(i,j) \in B
+A \subset B
+(i,j) \in B
+1\le j \le n, \ j \le i \le n
+1\le i \le n
+1 \le j \le i
+(i,j) \in A
+B \subset A
+\sum_{(i,j) \in A} f(i,j)
+n = 2
+ \sum_{j=1}^1 + \sum_{j=1}^2 = f(1,1) + \left[ f(2,1) + f(2,2) \right] 
+ \sum_{i=1}^2 + \sum_{i=2}^2 = \left[ f(1,1) + f(2,1) \right] + f(2,2) 
+\sum_{i = 1}^{n} \sum_{j = 1}^{i} f(i, j) ,n=8
+f(1,1)+(f(2,1)+f(2,2))+(f(3,1)+f(3,2)+f(3,3))+(f(4,1)+f(4,2)+f(4,3)+f(4,4))+..
+ \sum_{j = 1}^{n} \sum_{i = j}^{n} f(i, j),n=8
+(f(1,1)+f(2,1)+f(3,1)+f(4,1)+f(5,1)+f(6,1)+f(7,1)+f(8,1))+ (f(2,2)+f(3,2)+f(4,2)+f(5,2)+f(6,2)+f(7,2))+f(8,2))+(f(3,3)+f(4,3)....)...
+\sum_{i = 1}^{n} \sum_{j = 1}^{i} f(i, j) = \sum_{1\le j \le i \le n} f(i,j) = \sum_{j = 1}^{n} \sum_{i = j}^{n} f(i, j)

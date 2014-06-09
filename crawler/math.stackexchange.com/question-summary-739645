@@ -1,0 +1,31 @@
+\lim_{x\to π/2} \frac{1-\sin x+\cos x}{\sin 2x -\cos x}
+\lim_{x\to\dfrac\pi2} \frac{1-\sin x+\cos x}{\sin 2x -\cos x}
+=\lim_{x\to\dfrac\pi2} \frac{1-\sin x+\cos x}{\cos x}\cdot\frac1{\lim_{x\to\dfrac\pi2}(2\sin x-1)}
+1
+\text{For the first , }\lim_{x\to\dfrac\pi2} \frac{1-\sin x+\cos x}{\cos x}=1+\lim_{x\to\dfrac\pi2}\dfrac{1-\sin x}{\cos x}
+\displaystyle\cos x\ne0 \text{ as }x\ne\dfrac\pi2\text{ as }x\to\dfrac\pi2
+L=\lim_{x\to\dfrac\pi2}\frac{1-\sin x}{\cos x}=\lim_{x\to\dfrac\pi2}\frac{(1-\sin x)(1+\sin x)}{\cos x}\cdot\frac1{\lim_{x\to\dfrac\pi2}(1+\sin x)}
+=\lim_{x\to\dfrac\pi2}\cos x\cdot\frac1{1+\sin\dfrac\pi2}=0\cdot\frac1{1+1}
+L=\lim_{x\to\dfrac\pi2}\frac{1-\sin x}{\cos x}=\lim_{x\to\dfrac\pi2}\frac{\left(\cos\dfrac x2-\sin\dfrac x2\right)^2}{\cos^2\dfrac x2-\sin^2\dfrac x2}
+=\lim_{x\to\dfrac\pi2}\frac{\cos\dfrac x2-\sin\dfrac x2}{\cos\dfrac x2+\sin\dfrac x2}
+\displaystyle \cos\dfrac x2-\sin\dfrac x2\ne0\iff\tan\dfrac x2\ne1\iff\dfrac x2\frac\pi4\iff x\ne\dfrac\pi2
+x\to\dfrac\pi2
+\displaystyle\implies L=\lim_{x\to\dfrac\pi2}\frac{\cos\dfrac x2-\sin\dfrac x2}{\cos\dfrac x2+\sin\dfrac x2}=0
+x=\frac\pi2-t
+\cos x=1-2\sin^2\frac x2, \sin 2x=2\sin x\cos x
+\lim_{x\to π/2} \frac{1-\sin x+\cos x}{\sin 2x -\cos x}=\lim_{x\to 0} \frac{1-\cos x+\sin x}{\sin 2x -\sin x}= \lim_{x\to 0} \frac{2\sin^2\frac x2+\sin x}{2\sin x\cos x -\sin x} 
+\sin x=2\sin \frac x2\cos \frac x2
+\frac{2\sin^2\frac x2+\sin x}{2\sin x\cos x -\sin x} =\frac{2\sin^2\frac x2+2\sin \frac x2\cos \frac x2}{4\sin \frac x2\cos \frac x2\cos x -2\sin \frac x2\cos \frac x2}\\=\frac{2\sin\frac x2+2\cos \frac x2}{4\cos \frac x2\cos x -2\cos \frac x2} \to \frac2{4-2}=1(x\to 0)
+x = \dfrac{\pi}{2} - t
+\sin x = \cos t, \cos x = \sin t
+\sin 2x = \sin (\pi - 2t) = \sin 2t
+x \to \pi/2
+t \to 0
+\begin{aligned}L &= \lim_{x \to \pi/2}\frac{1 - \sin x + \cos x}{\sin 2x - \cos x}\\ &= \lim_{t \to 0}\frac{1 - \cos t + \sin t}{\sin 2t - \sin t}\\ &= \lim_{t \to 0}\frac{1 - \cos t + \sin t}{\sin t(2\cos t - 1)}\\ &= \lim_{t \to 0}\frac{1 - \cos t + \sin t}{\sin t\cdot 1}\\ &= \lim_{t \to 0}\frac{1 - \cos t}{\sin t} + 1\\ &= \lim_{t \to 0}\frac{1 - \cos t}{t^{2}}\cdot t\cdot \frac{t}{\sin t} + 1\\ &= \frac{1}{2}\cdot 0\cdot 1 + 1 = 1\end{aligned}
+t=\tan \frac x2
+\sin x=\cfrac {2t}{1+t^2}, \cos x=\cfrac {1-t^2}{1+t^2}
+\sin 2x = 2\sin x \cos x
+t
+\tan \frac {\pi}4 =1
+t-1
+t=1

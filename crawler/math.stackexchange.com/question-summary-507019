@@ -1,0 +1,34 @@
+N
+K
+N
+E_{i}
+1\le i\le k
+\displaystyle \vert \overline{E_{1}}\cap\cdots\cap\overline{E_{n}}\vert=\vert S\vert-\sum_{i}\vert E_{i}\vert+\sum_{i<j}\vert E_{i}\cap E_{j}\vert-\cdots 
+\;\;\;\displaystyle=N!-\binom{k}{1}(N-1)!+\binom{k}{2}(N-2)!-\cdots+(-1)^k\binom{k}{k}(N-k)!
+D(n, k)
+n
+n
+k
+D(n, 0) = n!
+D(n, 1) = (n-1) (n-1)!
+k>1
+n-1
+n-1
+i
+i
+k-1
+(n-1)D(n-1, k-1)
+i
+i\le k
+n-2
+k-2
+(k-1)D(n-2,k-2)
+i
+i > k
+n-2
+k-1
+(n-k)D(n-2,k-1)
+k>1
+D(n,k) = (n-1)D(n-1,k-1) + (k-1)D(n-2,k-2) + (n-k)D(n-2,k-1)
+n
+D(n,k) \approx \frac{n-k}{n-k+1}n!

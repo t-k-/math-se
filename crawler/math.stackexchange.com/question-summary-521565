@@ -1,0 +1,32 @@
+\mathbb{R^n}
+T: V \to U
+\mathbb{R^n}
+f
+U
+\int_U f dx_1 \cdots dx_k = \int_V (f \circ T) |\det(dT)|dy_1 \cdots dy_k.
+ dT_1 \wedge … \wedge dT_n = J(T) dy_1 \wedge … \wedge dy_n
+J(T)
+T^∗dx_1···dT_n = dT_1 \wedge … \wedge dT_n = (\sum_i^n\frac{∂T_1}{∂y_{i_1}} dy_{i_1})\wedge ···\wedge (\sum_i^n\frac{∂T_n}{∂y_{i_n}} dy_{i_n})  = 
+\sum_{1=i_1,…,1_n}^n\prod_{j=1}^n (\frac{∂T_j}{∂y_{i_1}}) dy_{i_1}\wedge ···\wedge dy_{i_n} = 
+\sum_{σ \in S_n} \prod_{j=1}^n (\frac{∂T_j}{∂y_{σ(j)}}) dy_{σ(1)}\wedge ···\wedge dy_{σ(n)} = 
+\sum_{σ \in S_n} \epsilon(σ) \prod_{j=1}^n (\frac{∂T_j}{∂y_{σ(j)}}) dy_{1}\wedge ···\wedge dy_{n} =
+ det (\frac{∂T_j}{∂y_{j}})_{i,j} dy_{1}\wedge ···\wedge dy_{n} =
+ J(T) dy_{1}\wedge ···\wedge dy_{n}
+\mathbb{R^n}
+\mathbb{R^n}
+T_1, · · · , T_n
+x_1, · · · , x_n
+\mathbb{R^n}
+T^∗(dx_1 ···dx_n) = dT_1 ···dT_n = J(T)d_x1 ···dx_n
+J(T)
+π
+(1, · · · , n)
+dx_idx_j = −dx_jdx_i
+dx_{π(1)} · · · dx_{π(n)} = sgn(π)dx_1 · · · dx_n
+sgn(π)
+(dx_i)^2 = 0
+dT_1···dT_n = (s\sum_j\frac{∂T_1}{∂xj} dx_j)···(s\sum_j\frac{∂T_n}{∂x_j} dx_j)  =
+s\sum_π \frac{∂T_1}{∂x_{π(1)}} ··· \frac{∂T_n}{∂x_{π(n)}}
+dx_{π(1)} · · · dx_{π(n)} = J(T)dx_1 ···dx_n
+(T^∗(ω ∧ ω )=T^∗(ω )∧T^∗(ω ))
+ dT_1 \wedge … \wedge dT_n = J(T) dy_1 \wedge … \wedge dy_n

@@ -1,0 +1,14 @@
+ \sum_{n=0}^\infty t^n \sin(nx)= F(x,t) 
+ \sum_{n=0}^\infty t^n \cos(nx)= G(x,t) 
+  \sum_{n=0}^\infty a(n) \cos(nx)= \int_0^\infty dt \, g(t)G(x,t) 
+ a(n)= \int_0^\infty dt \, t^{n}g(t) 
+\sum_{n=0}^{\infty} t^n e^{i n x} = \frac{1}{1-t e^{i x}}
+\sum_{n=0}^{\infty} t^n \cos{n x} = \Re{\frac{1}{1-t e^{i x}}}
+\sum_{n=0}^{\infty} t^n \sin{n x} = \Im{\frac{1}{1-t e^{i x}}}
+t \in \mathbb{R}
+\begin{align}\frac{1}{1-t e^{i x}} &= \frac{1}{1-t \cos{x} - i t \sin{x}} \\ &= \frac{1-t \cos{x} + i t \sin{x}}{(1-t \cos{x})^2 + t^2 \sin^2{x}}\\ &=  \frac{1-t \cos{x}}{1-2 t \cos{x} + t^2} + i \frac{t \sin{x}}{1-2 t \cos{x} + t^2} \end{align}
+\rm H(x,t) = G(x,t) + i F(x,t)
+ \rm H(x,t) = \sum_{n = 0}^{\infty} \cos(nx) + i\sin(nx) = \sum_{n=0}^{\infty} (te^{ix})^n = \frac{1}{1- e^{ix}}
+\rm G(x,t) = \mathfrak{Re}(\rm H(x,t)) = \frac{1 - t\cos x}{1 - 2t\cos x + t^2}
+\mathfrak{Re}
+\rm F(x,t) = \frac{t\sin x}{1 - 2t\cos x + t^2}

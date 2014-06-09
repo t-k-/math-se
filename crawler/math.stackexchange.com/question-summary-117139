@@ -1,0 +1,29 @@
+x_1, \dots, x_4
+f
+4
+ f: \mathbb{R}^4 \rightarrow \mathbb{R}^6, \quad x_1, x_2, x_3, x_4 \rightarrow (0, x_1 + x_3, 2 \cdot x_1 + x_4, 0, x_2 + x_3, 2 \cdot x_2 + x_4) 
+f
+\mathbf{y} = (y_1, y_2, \dots, y_6)
+g
+g:\mathbb{R}^6 \rightarrow \mathbb{R}^6, (y_1, y_2, \dots, y_6) \rightarrow (\exp(-y_1), \exp(-y_2), \dots, \exp(-y_6))
+h
+g
+\mathbf{z} = (z_1, z_2, \dots, z_6)
+h: \mathbb{R}^6 \rightarrow \mathbb{R}
+h
+h
+x_1, \dots, x_4
+h
+x_2
+ \frac{\partial h}{\partial x_4} = \frac{dh}{d\mathbf{z}} \cdot \frac{dg}{d\mathbf{y}} \cdot \frac{\partial f}{\partial x_2} 
+h
+g
+x_2
+K:\mathbb R^4\to\mathbb R
+K=h\circ g\circ f
+f
+g
+h
+f:\mathbb R^4\to\mathbb R^6
+g:\mathbb R^6\to\mathbb R^6
+h:\mathbb R^6\to\mathbb R

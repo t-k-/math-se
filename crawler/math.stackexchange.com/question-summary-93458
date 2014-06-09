@@ -1,0 +1,11 @@
+\lfloor (2+\sqrt{3})^n \rfloor 
+2^{n+1}
+\lfloor (1+\sqrt{3})^{2n} \rfloor+1 
+ u_{n}=(2+\sqrt{3})^n+(2-\sqrt{3})^n=\sum_{k=0}^n{n \choose k}2^{n-k}(3^{k/2}+(-1)^k3^{k/2})\in\mathbb{2N} 
+ 0\leq (2-\sqrt{3})^n \leq1
+ (2+\sqrt{3})^n\leq u_{n}\leq 1+(2+\sqrt{3})^n 
+ (2+\sqrt{3})^n-1\leq u_{n}-1\leq (2+\sqrt{3})^n 
+ \lfloor (2+\sqrt{3})^n \rfloor=u_{n}-1\in\mathbb{2N}+1 
+f(0)=1, f(1)=3
+f(n)=4f(n-1)-f(n-2)+2
+f(n)=5f(n-1)-5f(n-2)+f(n-3)

@@ -1,0 +1,16 @@
+f(x)=\sum\limits_{k=1}^{\infty} \dfrac{x^{k}+\sin(k)}{k^{2}}
+f(x)
+L^{p}
+L^{p}
+L^{p}
+|f(x)|=|\sum_{k=1}^\infty\frac{x^k+sin(k)}{k^2}|\leq\sum_{k=1}^\infty|\frac{x^k+sin(k)}{k^2}|\leq \sum_{k=1}^\infty|\frac{x^k}{k^2}|+\sum_{k=1}^\infty\frac{1}{k^2}=\sum_{k=1}^\infty|\frac{x^k}{k^2}|+\frac{\pi^2}{6}
+x\in[0,\frac{1}{2})
+|f(x)|\leq\sum_{k=1}^\infty|\frac{x^k}{k^2}|+\frac{\pi^2}{6}\leq \sum_{k=1}^\infty x^k+\frac{\pi^2}{6}=\frac{1}{1-x}+\frac{\pi^2}{6}
+\|f\|_p=(\int |f|^pdx)^{\frac{1}{p}}
+L^1
+\|f\|_1=\int_0^\frac{1}{2}|f(x)|dx=\int_0^\frac{1}{2}\frac{1}{1-x}+\frac{\pi^2}{6}dx=(-\ln(1-x)+\frac{\pi^2}{6}x)|_0^1=-\ln{\frac{1}{2}}+\frac{\pi^2}{6}=\ln(2)+\frac{\pi^2}{6}\lt\infty
+f\in L^1
+|x|\le 1
+|f(x)|=|\sum_{k=1}^\infty\frac{x^k+sin(k)}{k^2}|\leq\sum_{k=1}^\infty|\frac{x^k+sin(k)}{k^2}|\leq\sum_{k=1}^\infty\frac{2}{k^2}=\frac{\pi^2}{3}
+\int_{-1}^{1}|f(x)|^pdx\leq\int_{-1}^{1}(\frac{\pi^2}{3})^pdx=2(\frac{\pi^2}{3})^p\lt\infty
+f\in L^p([-1,1])

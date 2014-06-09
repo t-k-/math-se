@@ -1,0 +1,19 @@
+ A\rightarrow B.
+(A \rightarrow B)\land (\lnot A \rightarrow \lnot B)
+\equiv (A\rightarrow B) \land (B \rightarrow A)\tag{contrapositive}
+\equiv A \leftrightarrow B) 
+\not\equiv (A\rightarrow B)
+A
+\,B\,
+\,A \iff B
+A\,\leftrightarrow B
+A \subseteq B
+a\in A \rightarrow b\in B
+b\in B \rightarrow b \in A
+\lnot p \lor q \equiv p \rightarrow q
+\lnot A\; \text{ XOR}\;\; B \equiv (\lnot A \lor B)\land \lnot(\lnot A \land B)\quad\quad\quad\quad\tag{1: unpack XOR}
+\equiv (A \rightarrow B) \land (A \lor \lnot B)\quad\quad\quad\quad\quad\tag{2: $\lnot p \lor q \equiv p \rightarrow q$; 3: DeMorgan's }
+\equiv (A\rightarrow B) \land (\lnot A \rightarrow \lnot B)\quad\quad\quad\tag{4: same reason as 2}
+\equiv (A\rightarrow B) \land (B\rightarrow A) \tag{as shown above}
+\equiv A \leftrightarrow B\quad\quad\quad\quad\quad\tag{see top}
+A\leftrightarrow B

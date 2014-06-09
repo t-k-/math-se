@@ -1,0 +1,10 @@
+n,x\in\mathbb{N}
+\alpha,\beta,\lambda\in\mathbb{R}^+
+\alpha,\beta<1
+s_0=\alpha n+\lambda
+s_1=s_0+\beta\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}(\alpha k+\lambda)
+s_2=s_1+\beta^2\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}\sum_{l=x+1}^\infty\frac{(\alpha k+\lambda)^l e^{-\alpha k-\lambda}}{l!}(\alpha l+\lambda)
+s_3=s_2+\beta^3\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}\sum_{l=x+1}^\infty\frac{(\alpha k+\lambda)^l e^{-\alpha k-\lambda}}{l!}\sum_{m=x+1}^\infty\frac{(\alpha l+\lambda)^m e^{-\alpha l-\lambda}}{m!}(\alpha m+\lambda)
+\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}\alpha k
+\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}\lambda
+\sum_{k=x+1}^\infty \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!}=1-\sum_{k=0}^x \frac{(\alpha n+\lambda)^k e^{-\alpha n-\lambda}}{k!},

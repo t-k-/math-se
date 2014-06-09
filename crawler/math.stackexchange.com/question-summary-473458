@@ -1,0 +1,88 @@
+\varphi \in H^1(\mathbb{R}^3, \mathbb{R})
+\alpha_j
+\vert w \vert=1
+\theta \in \mathbb{R}
+ w \times dw = d\varphi + \sum_{j=1}^3\alpha_jdx_j, \tag{1}
+ w(x)= \exp i \left(\varphi(x)+\sum_{j=1}^3 \alpha_j x_j + \theta\right). \tag{2}
+w \times dw= \sum_{i=1}^3 (w_1 \partial_i w_2 - w_2 \partial_i w_1) dx_i
+w=w_1 +i w_2 : \mathbb{R}^3 \to \mathbb{C}.
+w \times dw
+\wedge
+\times
+\Bbb R^3
+w \times dw
+w \times dw = \sum_{i = 1}^3 (w_1 \partial_i w_2 - w_2 \partial_i w_2)dx_i
+w \times dw = \sum_{i = 1}^3 (w_1 \partial_i w_2 - w_2 \partial_i w_2)dx_i = w_1dw_2 - w_2dw_1
+dw_i
+\times
+w = (w_1, w_2, 0)^T
+dw = (dw_1, dw_2, 0)^T
+\times
+w \times dw = \det \begin {bmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\w_1 & w_2 & 0 \\ dw_1 & dw_2 & 0 \end{bmatrix} =  (w_1dw_2 - w_2dw_1) \mathbf{k}
+w \times dw = w_1dw_2 - w_2dw_1
+w = w_1 + i w_2 = \exp i(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)
+= \cos(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta) + i \sin(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)
+dw_1 = -\sin(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)(d\varphi + \sum_{j = 1}^3 \alpha_j dx_j)
+dw_2 = \cos(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)(d\varphi + \sum_{j = 1}^3 \alpha_j dx_j)
+w_1 dw_2 = \cos^2(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)(d\varphi + \sum_{j = 1}^3 \alpha_j dx_j)
+w_2 dw_1 = -\sin^2(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta)(d\varphi + \sum_{j = 1}^3 \alpha_j dx_j)
+w \times dw = w_1dw_2 - w_2dw_1
+= (\cos^2(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta) + \sin^2(\varphi(x) + \sum_{j = 1}^3 \alpha_j x_j + \theta))(d\varphi + \sum_{j = 1}^3 \alpha_j dx_j)
+= d\varphi + \sum_{j = 1}^3 \alpha_j dx_j
+\cos^2 \beta + \sin^2 \beta = 1
+w \times dw = d\varphi + \sum_{j = 1}^3 \alpha_j dx_j
+\vert w \vert = 1
+w = \cos \psi + i \sin \psi = \exp(i\psi)
+w_1 = \cos \psi
+w_2 = \sin \psi
+dw_1 = -\sin \psi d\psi
+dw_2 = \cos \psi d\psi
+w \times dw = w_1dw_2 - w_2dw_1 = (\cos^2 \psi + \sin^2 \psi) d\psi = d\psi
+d\psi = w \times dw = d\varphi + \sum_{j = 1}^3 \alpha_j dx_j
+\psi = \varphi + \sum_{j = 1}^3 \alpha_j x_j + \theta
+\theta
+d\psi - (d\varphi + \sum_{j = 1}^3 \alpha_j dx_j) = d(\psi - (\varphi + \sum_{j = 1}^3 \alpha_j x_j)) = 0
+\psi = \varphi + \sum_{j = 1}^3 \alpha_j x_j + \theta
+w = \exp (i\psi)
+\vert w \vert = 1
+\vert w \vert \ne 1
+w = r \exp(i\psi)
+r
+dw_1 = \cos \psi dr - r \sin \psi d \psi
+dw_2 = \sin \psi dr + r \cos \psi d \psi
+w \times dw
+w_1 dw_2 - w_2 dw_1 = r^2 d \psi
+d(w \times dw) = 2 r dr \wedge d \psi \ne 0
+w \times dw
+r \ne 1
+\psi = r^{-2}(\varphi + \sum_{j = 1}^3 \alpha_j x_j) + \theta
+w = r \exp (i( r^{-2}(\varphi + \sum_{j = 1}^3 \alpha_j x_j) + \theta))
+\vert w \vert = r \ne 1
+d \varphi
+\varphi \in H^1(\Bbb{R}^3, \Bbb{R})
+\psi
+\tan \psi = \frac{\sin \psi}{\cos \psi}  = \frac{w_2}{w_1}
+\psi
+w_1
+w_2
+g(\psi, w_1, w_2) = \tan \psi - w_1^{-1}w_2
+\psi(w_1, w_2)
+g(\psi(w_1, w_2), w_1, w_2) = \tan \psi(w_1, w_2) - w_1^{-1}w_2 = 0
+\frac{\partial g}{\partial \psi} = \frac{\partial \tan \psi}{\partial \psi} = \sec^2 \psi = \cos^{-2} \psi = w_1^{-2} \ne 0
+w_1^2 + w_2^2 = 1
+w_1 = 0
+w_2 \ne 0
+\cot \psi
+\tan \phi
+w_1
+w_2
+\psi
+\psi(w_1, w_2)
+\exp(i \psi(w_1, w_2)) = w_1 + iw_2
+d\psi = w \times dw = d\varphi + \sum_{j = 1}^3 \alpha_j dx_j
+\psi = \varphi + \sum_{j = 1}^3 \alpha_j x_j + \theta
+\theta
+d\psi - (d\varphi + \sum_{j = 1}^3 \alpha_j dx_j) = d(\psi - (\varphi + \sum_{j = 1}^3 \alpha_j x_j)) = 0
+w \times dw
+w \times dw = w_1 dw_2 - w_2 dw_1
+w_1 d w_2 - w_2 dw_1 = w_1^2 d(w_1^{-1}w_2) = w_1^2d(\tan \psi)

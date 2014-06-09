@@ -1,0 +1,10 @@
+\frac{1}{zsin(z)}
+D_1(0)
+\,D_1(0)=S^1=\{z\in\Bbb C\;;\;|z|=1\}\,
+\,z=0\,
+f(z):=\frac{1}{z\sin z}=\frac{1}{z}\cdot\csc z=\frac{1}{z}\left(\frac{1}{z}+\frac{z}{6}+\frac{7}{360}z^3+\ldots\right)=\frac{1}{z^2}+\frac{1}{6}+\frac{7}{360}z+\ldots
+Res_{z=0}(f)=0\Longrightarrow\oint\limits_{S^1}f(z)\,dz=0
+\csc z=\frac{1}{\sin z}=\frac{1}{\left(z-\frac{z^3}{6}+\frac{z^5}{120}-\ldots\right)}=\frac{1}{z}\frac{1}{\left(1-\left(\frac{z^2}{6}-\mathcal O(z^4)\right)\right)}=
+=\frac{1}{z}\left(1+\frac{z^2}{6}+\mathcal O(z^4)\right)=\frac{1}{z}+\frac{z}{6}+\mathcal O(z^3)
+\,z^{-1}\,
+\frac{1}{1-z}=1+z+z^2+\ldots\,\,\,,\,\,\text{for}\;\;|z|<1\;\;\text{(this is where the "close to zero" part kicks in)}

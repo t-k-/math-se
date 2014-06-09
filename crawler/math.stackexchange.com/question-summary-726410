@@ -1,0 +1,10 @@
+X,Y
+X=\begin{Bmatrix} 1 \text{ if the number of white marbles is even} \\ 0 \text{ if the number of white marbles is odd}  \end{Bmatrix}
+Y= \text{ number of black marbles extracted}
+Y  \sim \mathcal{Hypergeometric} (3,10,6)
+P(X=1)=P(Y=1)+P(Y=3)= 7/15
+P(X=0) = 1- P(X=1) = 8/15
+E[XY]
+P(X=x,Y=y)
+x,y \in \{0,1,2\}
+E[XY]=\suṃ_{x=0}^3\suṃ_{y=0}^3X.Y.P(X=x,Y=y)

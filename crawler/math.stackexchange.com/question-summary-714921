@@ -1,0 +1,21 @@
+f(x)=\sum_{k\in\mathbb N}\frac1k\sin\frac x{2^k}
+|\frac1k\sin\frac x{2^k}|<|\frac x{2^k}|
+\sum\frac x{2^k}
+N
+y\in\text{range}\,f
+|y|<N
+a_k=\frac1k
+b_k=\sin\frac x{2^k}
+|\sum a_kb_k|\leq\sqrt{\sum|a_k|^2\sum|b_k|^2}
+a_k>0
+k
+a_k=|a_k|
+|a_k|^2=\frac1{k^2}
+\sum\frac1{k^2}=\frac{\pi^2}6
+\sum|b_k|^2
+x_m = \frac{2^{3m}}7 2\pi
+f(x_m)
+ \sin\Big( \frac n72\pi \Big) \approx \begin{cases} 0.781831, &\text{if }n\equiv1\pmod 7, \\ 0.974928, &\text{if }n\equiv2\pmod 7, \\ -0.433884, &\text{if }n\equiv4\pmod 7. \end{cases} 
+x\in[0,2\pi]
+ \left\lvert\,\sin\frac x{2^k}\right\rvert\le \frac{\lvert x\rvert}{2^k}\le \frac{2\pi}{2^k}, 
+\lvert\, f(x)\rvert\le \sum_{k\in\mathbb N}\left|\frac1k\sin\frac x{2^k}\right|\le \sum_{k=1}^\infty \frac{2\pi}{k2^k}<2\pi. 

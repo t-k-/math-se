@@ -1,0 +1,35 @@
+ \int_{-\infty}^{\infty}  \frac{\cos(ux)}{(x^{2}+a^{2})^{s}} dx
+u
+a
+s=1
+e^{iuz}/(z^2+a^2)^s
+u
+e^{iuz}
+\mathrm{Im}(z) \to \infty
+z = ia
+s
+s
+\Gamma
+h(z) = e^{iuz}(z+ia)^{-s}
+s
+s = 1
+\pi e^{-au}/a
+s = 2
+ \oint_\Gamma \frac{e^{iuz}dz}{(z^2-a^2)^s}  = \oint_\Gamma \frac{e^{iuz}dz}{(z-ia)^s(z+ia)^s} = \oint_\Gamma \frac{h(z)dz}{(z-ia)^s} 
+ \frac{2\pi i}{(s-1)!} h^{(s-1)}(ia) 
+ \frac{d^k e^{iuz}}{dz^k}=(iu)^k e^{iuz} 
+ \frac{d^{s-1} h(z)}{dz^{s-1}}  = \sum_{k=0}^{s-1} {s-1 \choose k} (-1)^k (iu)^{s-1-k} e^{iuz} \frac{s!}{(s-k)!} (z+ia)^{-s-k} 
+ \frac{2\pi i}{(s-1)!} e^{-au} \sum_{k=0}^{s-1} {s-1 \choose k} (-1)^k (iu)^{s-1-k} \frac{s!}{(s-k)!} (2ia)^{-s-k} 
+ \frac{\pi e^{-au}}{2a^3} \left(au + 1 \right) 
+e^{-au}
+s-1
+u
+I_s(a)=\int \frac{\cos(ux)}{(x^2 + a^2)^s} \ \mathrm{d}x
+ \begin{eqnarray} \frac{\mathrm{d}I_s(a)}{\mathrm{d}a}  &=& \frac{d}{da}\int_{-\infty}^\infty \frac{\cos(ux)}{(x^2 + a^2)^s} \ \mathrm{d}x \\ &=& -2as \int_{-\infty}^\infty \frac{\cos(ux)}{(x^2 + a^2)^{s+1}} \ \mathrm{d}x \\ &=& -2as I_{s+1}(a) \end{eqnarray} 
+I_1(a) = \pi e^{-au}/a
+s = 2
+ \begin{eqnarray} I_2(a) &=& \frac{-1}{2as}\pi(-u/a - 1/a^2)e^{-au} \\ &=& \frac{\pi e^{-au}}{2a^3s} (au+1) \\ \end{eqnarray} 
+I_{s+1}(a) = \frac{\pi}{2^{s}s!}\left(\frac{-1}{a}\frac{\mathrm{d}}{\mathrm{d}a}\right)^{s}  \ \frac{e^{-au}}a
+J_n(x) = \left(\frac{-1}{x}\frac{\mathrm{d}}{\mathrm{d}x}\right)^{n} J_0(x)
+n\ge 0
+ \begin{eqnarray} I_s(a) &=& \frac{2\pi i}{(s-1)!} e^{-au} \sum_{k=0}^{s-1} {s-1 \choose k} (-1)^k (iu)^{s-1-k} \frac{s!}{(s-k)!} (2ia)^{-s-k} \\ &=&\frac{\pi u^{s-1} e^{-au}}{2^{s-1}a^{s}}  \sum_{k=0}^{s-1} \frac{(-1)^k s! }{(s-k)\, k!\, {(s-1-k)!}^2}\frac{1}{(2au)^k} \end{eqnarray} 

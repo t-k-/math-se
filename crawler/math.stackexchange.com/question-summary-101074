@@ -1,0 +1,43 @@
+z
+0
+x+y
+y
+0
+1-x
+x
+0
+1
+dz\;dy\;dx
+dy\;dx\;dz
+x
+1-x
+y
+x+y
+y
+0
+1
+x
+0
+1-y
+z
+0
+1
+0\le z \le x+y
+0\le y \le 1-x
+0 \le x \le 1
+0 \le y \le 1-x \le 1
+0 \le z \le x+y \le x+1-x =1
+z-x \le y \le 1-x
+\max(0, z-x) \le y \le 1-x
+0 \le x \le 1
+0\le z \le 1
+\int_{x=0}^1 \int_{y=0}^{1-x} \int_{z=0}^{x+y} dz \, dy \, dx =  \int_{z=0}^{1} \int_{x=0}^1 \int_{y=\max(z-x,0)}^{1-x}  dy \, dx \,  dz  
+x
+z
+z-x \le y \le 1-x
+0 \le x \le z
+0\le z \le 1
+0 \le y \le 1-x
+z \le x \le 1
+0\le z \le 1
+\int_{x=0}^1 \int_{y=0}^{1-x} \int_{z=0}^{x+y} dz \, dy \, dx =  \int_{z=0}^{1} \int_{x=0}^z \int_{y=z-x}^{1-x}  dy \, dx \,  dz +  \int_{z=0}^{1} \int_{x=z}^1 \int_{y=0}^{1-x}  dy \, dx \,  dz 

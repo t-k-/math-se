@@ -1,0 +1,6 @@
+a(n) = \sum_{i \geq 0} a_i n^{-i}
+a(n)^n
+O(n^{-2})
+ a(n) = a_0 + a_1 n^{-1} + a_2 n^{-2} + O(n^{-3}) 
+ \begin{align} \log a(n) &= \log a_0 + \log\left(1 + \frac{a_1}{a_0} n^{-1} + \frac{a_2}{a_0} n^{-2} + O(n^{-3})\right) \\ &= \log a_0 + \frac{a_1}{a_0} n^{-1} + \frac{a_2}{a_0} n^{-2} + O(n^{-3}) \\ &\qquad - \frac{1}{2} \left(\frac{a_1}{a_0} n^{-1} + \frac{a_2}{a_0} n^{-2} + O(n^{-3})\right)^2 + O(n^{-3}) \\ &= \log a_0 + \frac{a_1}{a_0} n^{-1} + \left(\frac{a_2}{a_0} - \frac{a_1^2}{2a_0^2}\right)n^{-2} + O(n^{-3}) \end{align} 
+ \begin{align} a(n)^n &= \exp\left[n \log a(n)\right] \\ &= \exp\left[n \log a_0 + \frac{a_1}{a_0} + \left(\frac{a_2}{a_0} - \frac{a_1^2}{2a_0^2}\right)n^{-1} + O(n^{-2})\right] \\ &= \exp\left[n \log a_0 + \frac{a_1}{a_0} + \left(\frac{a_2}{a_0} - \frac{a_1^2}{2a_0^2}\right)n^{-1}\right] \exp\Bigl[O(n^{-2})\Bigr] \\ &= \exp\left[n \log a_0 + \frac{a_1}{a_0} + \left(\frac{a_2}{a_0} - \frac{a_1^2}{2a_0^2}\right)n^{-1}\right] \Bigl(1+O(n^{-2})\Bigr), \end{align} 

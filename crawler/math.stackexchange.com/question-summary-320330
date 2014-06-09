@@ -1,0 +1,11 @@
+x\in\mathbb{R}^3
+\Im \sqrt{z}>0
+y
+\mathbb{R}^3
+f(x)=\frac{e^{i\sqrt{z}|x-y|}}{4\pi|x-y|}
+\tilde{f}(\xi)=\frac{1}{(2\pi)^{\frac{3}{2}}}\frac{e^{-i\xi\cdot y}}{|\xi|^2-z}
+t\cdot\xi=|t||\xi|\cos\theta
+\int dx\frac{e^{i\sqrt{z}|x-y|}}{4\pi|x-y|}e^{-ix\cdot\xi}=\int dx\frac{e^{i\sqrt{z}|t|}}{4\pi|t|}e^{-i(y+t)\cdot\xi}=\frac{e^{-iy\cdot\xi}}{4\pi}\int dx\frac{e^{i\sqrt{z}|t|}}{4\pi|t|}e^{-it\cdot\xi}
+\frac{e^{-iy\cdot\xi}}{2}\int_{0}^{\infty}dr e^{i\sqrt{z}r}\int_{0}^{\pi}d\theta e^{-ir|\xi|\cos\theta}\sin\theta
+\int_{0}^{\pi}d\theta e^{-ir|\xi|\cos\theta}\sin\theta=\frac{i}{|\xi|r}(e^{-ir|\xi|}-e^{ir|\xi|})
+\frac{ie^{-i\xi\cdot y}}{2|\xi|}\bigg[\int_{0}^{\infty}dre^{i(\sqrt{z}-|\xi|)r}-\int_{0}^{\infty}dre^{i(\sqrt{z}+|\xi|)r}\bigg]

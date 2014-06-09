@@ -1,0 +1,12 @@
+X_t
+X_t=\int_0^t sB_s \,   \mathrm{d}s
+\begin{align} Y_s &= s^2B_s \\\\ dY_s &= 2sB_sds+s^2dBs+sds \\\\ \int_0^t \, \mathrm{d}Y_s &= 2\int_0^t sB_s\, \mathrm{d}s+\int_0^t s^2\mathrm{d}Bs+\int_0^t s\, \mathrm{d}s \\\\ \frac{t^2 B_t-\int_0^t s^2dBs-\int_0^t sds }{2} &= \int_0^t sB_s\, \mathrm{d}s  \end{align}
+X_t = \int_0^t s B_s \mathrm{d}s
+X_t
+X_t
+X_t
+\mathbb{E}\left(B_{s_1} B_{s_2}\right) = \min(s_1, s_2)
+X_t \sim \mathcal{N}\left(0, t^2 \sqrt{\frac{2 t}{15}} \right)
+     \mathbb{E}\left(X_t\right) \stackrel{\text{linearity}}{=} \int_0^t s \, \underbrace{\mathbb{E}\left(B_s\right)}_0 \, \mathrm{d}s  = 0 
+    \mathbb{Var}\left(X_t\right) = \mathbb{E}\left(X_t^2\right) = \mathbb{E}\left( \int_0^t s_1 B_{s_1} \mathrm{d}s_1  \int_0^t s_2 B_{s_2} \mathrm{d}s_2 \right)  \stackrel{\text{linearity}}{=} \int_0^t \int_0^t s_1 s_2 \mathbb{E}\left(B_{s_1} B_{s_2}\right) \mathrm{d}s_1 \mathrm{d}s_2 
+   \mathbb{Var}\left(X_t\right) = \int_0^t \int_0^t s_1 s_2 \min(s_1, s_2) \mathrm{d}s_1 \mathrm{d}s_2 = \frac{2 t^5}{15} 

@@ -1,0 +1,13 @@
+\chi\left(\sum_i x_i = n\right)
+n
+(p^n)^{\chi\left(\sum_i x_i = n\right)} \cdot \left( p^{\sum_i x_i} (1-p)^{n - \sum_i x_i} \right)^{1-\chi\left(\sum_i x_i = n\right)}
+     \mathbb{P}\left( X_1=x_1, \ldots, X_n=x_n \right)=p^{x_1}(1-p)^{1-x_1} \cdots p^{x_n} (1-p)^{x_n} = p^{\sum_i x_i} (1-p)^{n - \sum_i x_i} 
+\bar{x}=\frac{1}{n} \sum_{i=1}^n x_i
+\mu
+\exp(-\frac{n}{2} \left( \mu - \bar{x} \right)^2 )
+\bar{x}
+\mathrm{Var}(\bar{x}) = \frac{1}{n^2} \sum_i \mathrm{Var}(x_i) =  \frac{1}{n^2} \cdot n = \frac{1}{n}
+\mathcal{I}(\mu) = \frac{1}{\mathrm{Var}(\bar{x})} = n
+\theta
+\theta
+    f = 2^n \chi_{\theta-\frac{1}{4} \le \min(x_1,\ldots, x_n)} \chi_{\theta+\frac{1}{4} \ge \max(x_1,\ldots,x_n)} = 2^n \chi_{ \max(x_1,\ldots,x_n) -\frac{1}{4} \le \theta \le \min(x_1, \ldots,x_n) + \frac{1}{4} }  

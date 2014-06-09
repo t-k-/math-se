@@ -1,0 +1,42 @@
+\int_U |Du|^2\,dx\leqslant C\left(\int_Uu^2\, dx\right)^{\frac{1}{2}}\left(\int_U|D^2u|^2\,dx\right)^{\frac{1}{2}}
+u\in C^\infty_c(U)
+u\in H^2(U)\cap H_0^1(U)
+u
+C^\infty_c(U)
+H_0^1(U)
+u
+C^\infty(closure(U))
+u
+H^2(U)
+v \in C^\infty_c(U)
+w\in C^\infty(\bar{U})
+ \left(\int_U |Dv \cdot Dw| \mathrm{d}x\right)^2 \leq C \int_U |v|^2 \mathrm{d}x \int_U |D^2 w|\mathrm{d}x \tag{*}
+v
+u \in H^1_0(U) \cap H^2(U)
+v_i \to u
+H^1_0
+w_i \to u
+H^2(U)
+v_i \in C^\infty_c(U)
+w_i \in C^\infty(U)
+H^1_0
+H^2
+f\in L^2
+ \lim_{\ell \to \infty}\int_U \partial_{x^j} v_\ell f \mathrm{d}x = \lim_{\ell \to \infty}\int_{U} \partial_{x_j} (v_\ell - u + u) f \mathrm{d}x = \int_{U} \partial_{x^j} u f \mathrm{d}x + \lim_{\ell\to\infty}\int_{U} (\partial_{x_j}v_\ell - \partial_{x_j}u) f \mathrm{d}x 
+v_\ell\to u
+ \lim_{\ell \to \infty}\int_U \partial_{x_j} w_\ell f \mathrm{d}x = \int_{U} \partial_{x_j} u f \mathrm{d}x 
+ \int_U |Du|^2 \mathrm{d}x = \lim_{i,j\to \infty} \int_U |Dv_i \cdot D w_j| \mathrm{d}x \leq \lim_{i,j\to\infty} C \|v_i\|_{L^2} \|D^2 w_j\|_{L^2} 
+v_i \to u
+H^1_0
+v_i \to u
+L^2
+w_j \to u
+H^2
+D^2w \to D^2 u
+L^2
+ \lim_{i,j\to\infty} C \|v_i\|_{L^2} \|D^2 w_j\|_{L^2} = C\|u\|_{L^2} \|D^2 u\|_{L^2}
+u \in H^2 (U) \cap H_0^1 (U).
+ \int_U |Du_i |^2 \longrightarrow  \int_U |Du|^2
+ \int_U u_i^2 \longrightarrow \int_U u^2 
+ \exists u_i \in C_c^\infty (U)\;\; s.t. \;\; \| u - u_i \|_{H_0^1} \longrightarrow 0 
+ \exists u_j \in C^\infty (\overline U) \;\;s.t. \;\; \| u - u_j \|_{H^2} \longrightarrow 0.

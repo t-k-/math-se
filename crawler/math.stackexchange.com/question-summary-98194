@@ -1,0 +1,42 @@
+C
+r(u,v)= (u, \cosh u \cos v, \cosh u \sin v), u\in \mathbb{R}, v\in(-\pi, \pi)
+v
+C
+p
+dN_p (v)=\lambda v
+N
+N= \frac{r_u\times r_v}{|r_u\times r_v|}
+N
+C
+r(u,v)= (u, \cosh u \cos v, \cosh u \sin v)
+r_u(u,v)= (1, \sinh u \cos v, \sinh u \sin v),
+r_v(u,v)= (0, -\cosh u \sin v, \cosh u \cos v).
+r_u\times r_v=(\sinh u\cosh u,-\cosh u\cos v,-\cosh u \sin v).
+|r_u\times r_v|=\cosh u\sqrt{(\sinh u)^2+1}=(\cosh u)^2
+N=\frac{r_u\times r_v}{|r_u\times r_v|}=\frac{1}{\cosh u}(\sinh u,-\cos v,-\sin v).
+p\in C
+p=r(u_0,v_0)
+p
+\alpha:(-\epsilon,\epsilon)\rightarrow C
+\beta:(-\epsilon,\epsilon)\rightarrow C
+\alpha(t)=r(u_0+t,v_0)
+\alpha(t)=r(u_0,v_0+t)
+p
+\alpha(0)=\beta(0)=r(u_0,v_0)=p
+\alpha'(0)=\frac{d}{dt}r(u_0,v_0+t)\Big|_{t=0}=r_u(u_0,v_0)\in T_pC,
+\beta'(0)=\frac{d}{dt}r(u_0+t,v_0)\Big|_{t=0}=r_v(u_0,v_0)\in T_pC.
+N(\alpha(t))
+t
+(2)
+dN_{\alpha(0)}(\alpha'(0))=dN_{p}(\alpha'(0))
+\displaystyle\frac{1}{\cosh^2(u_0)}\alpha'(0)
+(1)
+(3)
+\alpha
+\cosh^2(u_0)
+\frac{d}{dt}N(\alpha(t))\Big|_{t=0}=\frac{d}{dt}\left(\frac{1}{\cosh(u_0+t)}(\sinh(u_0+t),-\cos v_0,-\sin v_0)\right)\Big|_{t=0}
+=\left(-\frac{\sinh(u_0+t)}{\cosh^2(u_0+t)}(\sinh(u_0+t),-\cos v_0,-\sin v_0) \right)\Big|_{t=0}
++\left(\frac{1}{\cosh(u_0+t)}(\cosh(u_0+t),0,0)\right)\Big|_{t=0}
+=\frac{1}{\cosh^2(u_0)}(1,\sinh u_0\cos v_0,\sinh u_0\sin v_0).
+dN_{p}(\alpha'(0))=\frac{1}{\cosh^2(u_0)}\alpha'(0),
+\beta

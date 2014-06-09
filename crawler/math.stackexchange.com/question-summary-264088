@@ -1,0 +1,9 @@
+r>0
+a>0
+a-\epsilon>0
+ \int_{\mathcal{S}}x_1^r \, \mathrm dx_1\ldots  \, \mathrm dx_n 
+ \mathcal{S} = \left\{(x_1,\ldots,x_n):a-\epsilon\leq x_1+\ldots+x_n\leq a,\;x_1\ldots,x_n\geq0\right\} 
+I = \int_{\mathcal{S}}x_1^r\,dx_1\ldots dx_n  =  \int_{-\infty}^\infty d\lambda \int_{\mathcal{S}} \delta(\lambda-\sum_i x_i)  x_1^r\,d^n x = \int_{a-\epsilon}^a d\lambda \int_{x_i\ge 0}\delta(\lambda-\sum_i x_i)  x_1^r\,d^nx. 
+\delta
+\delta(\lambda-\sum_i x_i) = \int_{c-i\infty}^{c+i\infty} \frac{ds}{2\pi i} e^{s(\lambda-\sum_i x_i)}
+\begin{align}I&=  \int_{c-i\infty}^{c+i\infty}\frac{ds}{2\pi i} \int_{a-\epsilon}^a d\lambda\int_{x_i\ge 0} e^{s(\lambda-\sum_i x_i)} x_1^r\,d^nx\\ &= \int_{c-i\infty}^{c+i\infty}\frac{ds}{2\pi i} \int_{a-\epsilon}^a d\lambda e^{s\lambda} \int_0^\infty dx_1 x_1^r e^{-s x_1} \left(\int_0^\infty dx e^{-s x}\right)^{n-1}\\ &=\int_{c-i\infty}^{c+i\infty}\frac{ds}{2\pi i} \frac{e^{a s}-e^{s (a-\epsilon )}}{s} \frac{\Gamma(1+r)}{s^{r+1}}  \frac{1}{s^{n-1}}\\ &= \frac{\Gamma (r+1) \left(a^{n+r}-(a-\epsilon )^{n+r}\right)}{\Gamma (n+r+1)}.  \end{align}

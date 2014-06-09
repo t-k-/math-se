@@ -1,0 +1,6 @@
+\int \sec (x-a) \sec (x-b)\ dx?
+b - a = (x - a) - (x -b)
+{1 \over \sin(b - a)} \int {\sin(b - a) \over \cos(x - a)\cos(x - b)}\,dx
+\sin(b - a) = \sin(x - a)\cos(x - b) - \sin(x - b)\cos(x - a)
+{1 \over \sin(b - a)} \bigg(\int \tan(x - a)\,dx- \int \tan( x - b)\,dx\bigg)
+ = {1 \over \sin(b - a)} \bigg(-\ln(\cos(x - a)) + \ln(\cos(x - b))\bigg) + C

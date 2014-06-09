@@ -1,0 +1,13 @@
+u_{tt} = c^2 u_{xx}
+x\pm ct=\mathrm{const}
+\mu=x+ct
+\eta=x-ct
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial\mu}\dfrac{\partial\mu}{\partial x}+\dfrac{\partial u}{\partial\eta}\dfrac{\partial\eta}{\partial x}=\dfrac{\partial u}{\partial\mu}+\dfrac{\partial u}{\partial\eta}
+\dfrac{\partial^2u}{\partial x^2}=\dfrac{\partial}{\partial x}\left(\dfrac{\partial u}{\partial\mu}+\dfrac{\partial u}{\partial\eta}\right)=\dfrac{\partial}{\partial\mu}\left(\dfrac{\partial u}{\partial\mu}+\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\mu}{\partial x}+\dfrac{\partial}{\partial\eta}\left(\dfrac{\partial u}{\partial\mu}+\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\eta}{\partial x}=\dfrac{\partial^2u}{\partial\mu^2}+\dfrac{\partial^2u}{\partial\mu\eta}+\dfrac{\partial^2u}{\partial\mu\eta}+\dfrac{\partial^2u}{\partial\eta^2}=\dfrac{\partial^2u}{\partial\mu^2}+2\dfrac{\partial^2u}{\partial\mu\eta}+\dfrac{\partial^2u}{\partial\eta^2}
+\dfrac{\partial u}{\partial t}=\dfrac{\partial u}{\partial\mu}\dfrac{\partial\mu}{\partial t}+\dfrac{\partial u}{\partial\eta}\dfrac{\partial\eta}{\partial t}=c\dfrac{\partial u}{\partial\mu}-c\dfrac{\partial u}{\partial\eta}
+\dfrac{\partial^2u}{\partial t^2}=\dfrac{\partial}{\partial t}\left(c\dfrac{\partial u}{\partial\mu}-c\dfrac{\partial u}{\partial\eta}\right)=\dfrac{\partial}{\partial\mu}\left(c\dfrac{\partial u}{\partial\mu}-c\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\mu}{\partial t}+\dfrac{\partial}{\partial\eta}\left(c\dfrac{\partial u}{\partial\mu}-c\dfrac{\partial u}{\partial\eta}\right)\dfrac{\partial\eta}{\partial t}=c^2\dfrac{\partial^2u}{\partial\mu^2}-c^2\dfrac{\partial^2u}{\partial\mu\eta}-c^2\dfrac{\partial^2u}{\partial\mu\eta}+c^2\dfrac{\partial^2u}{\partial\eta^2}=c^2\dfrac{\partial^2u}{\partial\mu^2}-2c^2\dfrac{\partial^2u}{\partial\mu\eta}+c^2\dfrac{\partial^2u}{\partial\eta^2}
+\therefore c^2\dfrac{\partial^2u}{\partial\mu^2}-2c^2\dfrac{\partial^2u}{\partial\mu\eta}+c^2\dfrac{\partial^2u}{\partial\eta^2}=c^2\dfrac{\partial^2u}{\partial\mu^2}+2c^2\dfrac{\partial^2u}{\partial\mu\eta}+c^2\dfrac{\partial^2u}{\partial\eta^2}
+4c^2\dfrac{\partial^2u}{\partial\mu\eta}=0
+\dfrac{\partial^2u}{\partial\mu\eta}=0
+u=C_1(\mu)+C_2(\eta)
+u=C_1(x+ct)+C_2(x-ct)

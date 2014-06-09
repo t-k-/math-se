@@ -1,0 +1,90 @@
+f
+\gamma
+[0,1]\rightarrow\mathbb{C}
+=
+f(z)=
+\forall z\in {\rm Img}(\gamma)
+\bigg|\int_\gamma f(z)\text{d}z\bigg|\le\int_\gamma\big|f(z)||\text{d}z|
+f(z)
+{\rm Img}(\gamma)
+\bigg|\int_0^1f(\gamma(t))\gamma'(t)\text{d}t\bigg|\le\int_0^1|f(\gamma(t))||\gamma'(t)|dt.
+g:[0,1]\to\mathbb{C}
+=
+\left|\int_0^1g(t)dt\right|\le \int_0^1|g(t)|dt,\tag{1}
+(1)
+g
+[0,1]
+I=\int_0^1g(t)dt
+I=0
+(1)
+=
+g=0
+I\ne 0
+\alpha\in\mathbb{C}
+|\alpha|=1
+I=|I|\alpha
+=
+\mathrm{Re}(\overline{\alpha}g(t))=|g(t)|
+t\in[0,1]
+g(t)=\alpha|g(t)|
+t\in[0,1]
+=
+(1)
+\alpha\in\mathbb{C}
+|\alpha|=1
+g(t)=\alpha|g(t)|
+t\in[0,1]
+g(t)=f(\gamma(t))\gamma'(t)
+|I|=\overline{\alpha}I=\mathrm{Re}(\overline{\alpha}I)=\mathrm{Re}\int_0^1\overline{\alpha}g(t)dt=\int_0^1\mathrm{Re}(\overline{\alpha}g(t))dt\le\int_0^1|g(t)|dt.
+a,b:[0,1]\to\mathbb{R}
+p=1/2
+0<p<1
+a=\pm|a|
+b=\pm|b|
+t
+a^2=\lambda^2 b^2
+\lambda
+a+ib=(\lambda + i)b
+\bigg|\int_0^1f(\gamma(t))\gamma'(t)\text{d}t\bigg|\le\int_0^1|f(\gamma(t))||\gamma'(t)|dt
+A=\int_0^1a(t)dt\qquad B=\int_{0}^1b(t)dt\;,
+\sqrt{A^2+B^2}=\int_0^1(a^2(t)+b^2(t))^{1/2}dt
+A^2+B^2= \left(\int_{0}^{1}(a^2(t)+b^2(t))^{1/2}dt\right)^2=\|a^2+b^2\|_{1/2}
+A^2+B^2=\left(\int_0^1 a(t)dt\right)^2+\left(\int_{0}^1b(t)dt\right)^2=\left(\int_0^1 \sqrt{a^2(t)}dt\right)^2+\left(\int_0^1 \sqrt{b^2(t)}dt\right)^2=\left(\int_{0}^{1}(a^2(t)+b^2(t))^{1/2}dt\right)^2
+A^2+B^2\le\|a^2\|_{1/2}+\|b^2\|_{1/2}\le\|a^2+b^2\|_{1/2}
+f(\gamma(t))\gamma'(t)
+e^{i\alpha}\phi(t)
+\alpha\in\mathbb{R}
+\phi:[0,1]\to\mathbb{R^+}
+f(\gamma(t))=\frac{e^{i\alpha}\phi(t)}{\gamma'(t)}\;.
+\gamma
+\mathcal{C}^1
+|\gamma'(t)|=1
+\gamma'(t)=e^{i\beta(t)}
+f
+\beta'(t)
+\gamma
+f(\gamma(t))=e^{i\alpha-i\beta(t)}\phi(t)
+f(\gamma(t))=e^{-i\beta(t)}\phi(t)
+\frac{df}{dz}(\gamma(t))e^{i\beta(t)}=f'(\gamma(t))\gamma'(t)=\frac{d}{dt}f(\gamma(t))=-i\beta'(t)e^{-i\beta(t)}\phi(t)+e^{-i\beta(t)}\phi'(t)
+\frac{df}{dz}(\gamma(t))=e^{-2i\beta(t)}(-i\beta'(t)\phi(t)+\phi'(t))
+(2)\ge(3)
+ g(t)=f(\gamma(t))\gamma'(t)\tag{1} 
+ \int_0^1|g(t)|\,\mathrm{d}t =\sup_{|u(z)|=1}\mathrm{Re}\left(\int_0^1g(t)u(t)\,\mathrm{d}t\right)\tag{2} 
+ \left|\,\int_0^1g(t)\,\mathrm{d}t\,\right| =\sup_{\substack{|u(z)|=1\\u\text{ constant}}}\mathrm{Re}\left(\int_0^1g(t)u(t)\,\mathrm{d}t\right)\tag{3} 
+(3)\ge(2)
+u_0\in\partial D
+u:[0,1]\mapsto\partial D
+(4)
+\left|\frac1{u(t)}\right|=1
+|u_0|=1
+\mathrm{Re}\left(1-\frac1{u(t)}u_0\,\right)\ge0
+(6)
+t\in[0,1]
+g(t)=0
+u(t)=u_0
+g(t)
+t\in[0,1]
+ \mathrm{Re}\left(\int_0^1g(t)u(t)\,\mathrm{d}t\right)\le\mathrm{Re}\left(\int_0^1g(t)u_0\,\mathrm{d}t\right)\tag{4} 
+ u(t)=\left\{\begin{array}{} \frac{|g(t)|}{g(t)}&\text{when }g(t)\ne0\\ 1&\text{when }g(t)=0 \end{array}\right.\tag{5} 
+ \begin{align} \int_0^1|g(t)|\,\mathrm{Re}\left(1-\frac1{u(t)}u_0\,\right)\,\mathrm{d}t &=\int_0^1\,\mathrm{Re}\left(\,g(t)u(t)-g(t)u_0\,\right)\,\mathrm{d}t\\ &\le0\tag{6} \end{align} 
+ g(t)=\frac{|g(t)|}{u_0}\tag{7} 

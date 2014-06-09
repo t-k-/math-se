@@ -1,0 +1,43 @@
+g : [0, \infty) \rightarrow \mathbb R
+\phi :\mathbb R \rightarrow \mathbb R
+0\leq \phi(x) \leq 1
+\phi(x)=1
+ x \in [0,1]
+\phi(x)=0
+x\geq 2
+ \lim_{x \rightarrow 0^-} \sum_{n=1}^\infty \frac{1}{2^n} \phi(-nx) g(-nx)=g(0). 
+f(x)=\sum_{n=1}^\infty \frac{1}{2^n} \phi(-nx) g(-nx)
+x \leq 0
+\varepsilon>0
+n_0 \in \mathbb N
+\sum_{n\geq n_0} \frac{1}{2^n} \leq \frac{\varepsilon}{2|g(0)|}
+x<0
+m(x) \in \mathbb N
+m(x)> n_0
+\phi(-nx)=0
+n>m(x)
+\phi(0)=1
+\sum_{n=1}^\infty \frac{1}{2^n}=1
+\frac{\varepsilon}{2}
+m(x)
+x
+ |f(x)-f(0)|\leq \sum_{n=1}^\infty \frac{1}{2^n} |\phi(-nx)g(-nx)-\phi(0)g(0|= \sum_{n=1}^{m(x)} +\sum_{n\geq m(x)} 
+h(x)=\phi(x)g(x)
+h\colon[0,\infty)\to\mathbb R
+M
+h(x)=0
+x\ge2
+\epsilon>0
+\delta
+x<\delta
+|h(x)-h(0)|<\frac\epsilon3
+m\in \mathbb N
+m<\frac\delta x
+\left|\frac1{2^m}h(0)\right|\le \frac M{2^m}
+m>\log_2(\frac {3M}\epsilon)
+x
+x<\min\{\delta,\frac Mm\}
+\sum_{n=1}^\infty \frac1{2^n} h(nx)-h(0)=\sum_{n=1}^{m} \frac1{2^n} (h(nx)-h(0))+\sum_{n=m+1}^\infty \frac1{2^n} h(nx)-\frac1{2^m}h(0)
+\left |\sum_{n=1}^{m} \frac1{2^n} (h(nx)-h(0))\right |<\sum_{n=1}^\infty \frac 1{2^n}\frac\epsilon3=\frac\epsilon3.
+\left|\sum_{n=m+1}^\infty \frac1{2^n} h(nx)\right|<\frac M{2^m}
+\left|\sum_{n=1}^\infty \frac1{2^n} h(nx)-h(0)\right|<\epsilon

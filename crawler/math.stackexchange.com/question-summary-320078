@@ -1,0 +1,51 @@
++=
+(n - 1, z) \cdot
+((1.0f - t), n - 1 - z) \cdot
+(t, z) \cdot
+z
++=
+( n - 2, z ) \cdot
+(1.0f - t, n - 2 - z) \cdot
+(t, z) \cdot (n - 1) \cdot
+z + 1
+z
+0
+t
+x
+t
+(x,y)
+t
+P(t)
+A
+B
+C
+D
+P(t) = (1-t)^3A + 3t(1-t)^2B + 3t^2(1-t)C + t^3D \quad (0 \le t \le 1)    
+Q(t) = 3(1-t)^2(B-A) + 6t(1-t)(C-B) + 3t^2(D-C) \quad (0 \le t \le 1)    
+A
+B
+C
+D
+x
+(x,y)
+x
+t
+P
+Q
+(x,y)
+t
+P
+Q
+A
+B
+C
+D
+B-A
+C-B
+D-C
+Q
+P
+A = (0,0)
+B=(32,12)
+Q
+3(B-A) = (96,36)

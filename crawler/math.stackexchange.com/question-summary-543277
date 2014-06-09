@@ -1,0 +1,12 @@
+\left(\frac{\log x}{x}\right)^n
+D^n\left(\frac{\log(x)}{x}\right)=(-1)^nn!\frac{\log(x)-H_n}{x^{n+1}}
+D^n=\frac{d^n}{dx^n}
+n,k \in \mathbb{N}_0
+\text{H}_{0,n}=1 \quad\forall \;n\in \mathbb{N}_0
+\text{H}_{k,n}=0 \quad\text{if } n<k
+\text{H}_{k,n}:=\text{H}_{k,n-1}+1/n\cdot\text{H}_{k-1,n-1} \quad\text{for } n,m\geq1
+\text{H}_{1,n}
+n,m \geq 1
+D^n \left(\log x\right)^m=\frac{m\left(-1\right)^{n-1}\left(n-1\right)!}{x^n}\left(\sum\limits_{k=1}^m (-1)^{k+1}H_{ k-1,n-1}\; {}^{m-1}P_{m-k} \;\left(\log x\right)^{m-k}\right)
+{}^{m-1}P_{m-k}:=\frac{(m-1)!}{(m-k)!}
+\text{H}_{m,n}

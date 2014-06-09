@@ -1,0 +1,16 @@
+\hat{\beta_1}
+\beta_1
+Y_i=\beta_0+\beta_1 X_i+\epsilon_i
+\hat{\beta_1}=\frac{\sum(X_i-\bar{X})(Y_i-\bar{Y})}{\sum(X_i-\bar{X})^2}
+\operatorname{Var}(\epsilon_i)=\sigma^2
+\operatorname{Var}(\hat{\beta_1})=\operatorname{Var}(\frac{\sum(X_i-\bar{X})(Y_i-\bar{Y})}{\sum(X_i-\bar{X})^2})=[\frac{\sum(X_i-\bar{X})}{\sum(X_i-\bar{X})^2}]^2\operatorname{Var}(Y_i-\bar{Y})=\frac{\sigma^2}{\sum(X_i-\bar{X})^2}
+\newcommand{\var}{\operatorname{var}} \newcommand{\cov}{\operatorname{cov}}
+i
+1
+n
+\cov(Y_j,\bar Y)
+Y_j
+Y_k
+\bar Y
+\bar Y
+\begin{align} \text{Var}(\hat{\beta_1})  &= \text{Var}\left(\frac{\sum_{i} (x_i - \bar{x})(y_i - \bar{y})}{\sum_i (x_i - \bar{x})^2}\right)  \\&= \text{Var}\left(\frac{\sum_{i} x_i (y_i - \bar{y}) - \sum_{i} \bar{x}(y_i - \bar{y})}{\sum_{i} (x_i - \bar{x})^2}\right)  \\&= \text{Var}\left(\frac{\sum_{i} x_i (y_i - \bar{y}) - \bar{x}\sum_{i} (y_i - \bar{y})}{\sum_{i} (x_i - \bar{x})^2}\right)  \\&= \text{Var}\left(\frac{\sum_{i} x_i (y_i - \bar{y})}{\sum_{i} (x_i - \bar{x})^2}\right)  \\&= \sum_{i=1}^{n} \left(\frac{x_i}{(x_i - \bar{x})^2}\right)^2 \text{Var}(y_i - \bar{y}) \,\,, \end{align}

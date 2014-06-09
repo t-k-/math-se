@@ -1,0 +1,26 @@
+ \int_{0}^{\infty}dx\psi(x+1)x^{s-1}=\frac{-\pi}{\sin (\pi s)}\zeta(1-s) 
+ \Psi(x+1)= -\sum_{n=0}^{\infty}(-z)^{n}\zeta (k+1)
+ \zeta (1)= \gamma 
+\psi(t) = \int_0^\infty \left({e^{-s} \over s }- {e^{-s t} \over {1 - e^{-s}}}\right)ds 
+M_x (\psi(x+1)) = \int_0^\infty t^{x-1} \psi(t+1) dt = \int_0^\infty \int_0^\infty t^{x-1} \left({e^{-s} \over s }- {e^{-s t} \over {1 - e^{-s}}}\right) ds dt
+M_x (\psi(x+1)) = \int_0^\infty \int_0^\infty {{t^{x-1} e^{-s} (1 - s e^{-s t} - e^{-s})} \over {s (1 - e^{-s})}} ds dt
+\sum_{n=1}^\infty e^{-n s} = {e^{-s} \over {1 - e^{-s}}}
+M_x(\psi(x+1)) = \sum_{n=1}^\infty \int_0^\infty \int_0^\infty {{t^{x-1} e^{-n s} (1 - s e^{-s t} - e^{-s})} \over {s }} ds dt
+\int_0^\infty \int_0^\infty {{t^{x-1} e^{-n s} (1 - s e^{-s t} - e^{-s})} \over {s }} ds dt =
+ \int_0^\infty \int_0^\infty {{t^{x-1}  ( e^{-s n} - e^{-s (n+1)})} \over {s }} ds dt - \int_0^\infty \int_0^\infty {{t^{x-1} e^{-s ( n + t)}} } ds dt 
+{\int_0^\infty {{e^{-a t} - e^{-b t}} \over t }} = {\log \left({b \over a} \right)}
+\int_0^\infty \int_0^\infty {{t^{x-1}  ( e^{-s n} - e^{-s (n+1)})} \over {s }} ds dt = \lim_{\alpha \to 0} \int_0^\infty \int_0^\infty {{t^{x-1} e^{-\alpha (s+t)} ( e^{-s n} - e^{-s (n+1)})} \over {s }} ds dt
+\int_0^\infty \int_0^\infty {{t^{x-1}  ( e^{-s n} - e^{-s (n+1)})} \over {s }} ds dt = \lim_{\alpha \to 0} \int_0^\infty \int_0^\infty {{t^{x-1} e^{-\alpha t} ( e^{-s( n + \alpha)} - e^{-s (n+1+\alpha)})} \over {s }} ds dt = ...
+\rightarrow \lim_{\alpha \to 0}  \int_0^\infty {{t^{x-1} e^{- \alpha t} \log \left({{\alpha + n + 1}\over {\alpha + n}}\right)}} dt = \lim_{\alpha \to 0} {\Gamma(x) \over \alpha^x} \log\left({{\alpha + n + 1} \over {\alpha + n}}\right)
+\lim_{\alpha \to 0} \sum_{n=1}^\infty {{\Gamma (x) \over \alpha^x} \log \left({{\alpha + n + 1} \over {\alpha + n}}\right)} = \lim_{\alpha \to 0}  {{\Gamma (x) \over \alpha^x} \log \left({ \prod_{n=1}^\infty {{\alpha + n + 1} \over {\alpha + n}}}\right)}
+ \lim_{\alpha \to 0} \log \left({ \prod_{n=1}^\infty {{\alpha + n + 1} \over {\alpha + n}}}\right) = \log \left( {\prod_{n=1}^\infty {{n + 1} \over {n}}}\right) = \log \left({\pi \over 2} \right) 
+x<0
+\lim_{\alpha \to 0} {\Gamma (x) \over \alpha^x} \log \left({\pi \over 2}\right) \rightarrow 0 , x<0 
+x<0
+- \int_0^\infty \int_0^\infty {{t^{x-1} e^{-s ( n + t )}} } ds dt = - n^{x-1} \Gamma(x) \Gamma(1-x) 
+1-x>1 \rightarrow x<0
+\sum_{n=1}^\infty - n^{x-1} \Gamma(x) \Gamma(1-x) = - \zeta(1-x) \Gamma(x) \Gamma(1-x)
+M_x(\psi(x+1)) =  - \zeta(1-x) \Gamma(x) \Gamma(1-x)
+ \zeta(s) = 2^{s} \pi^{s-1} \sin \left({\pi s \over 2}\right) \Gamma(1-s) \zeta(1-s) 
+\Gamma(s) \Gamma(1-s) ={ \pi \over \sin\left(\pi s\right)}
+M_x(\psi(x+1)) =  - {\pi \over \sin(\pi x)} \zeta(1-x)

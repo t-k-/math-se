@@ -1,0 +1,4 @@
+\int_{0}^{1}\int_{x}^{1} e^{x/y}
+\int_0^1 \int_x^1 e^{x/y} dy dx = \int_0^1 \int_0^y e^{x/y} dx dy
+\int_0^y e^{x/y} dx = y e^{x/y} |_0^y = y e^1 - y e^0
+ \begin{align} \int_0^1\int_x^1e^{x/y}\,\mathrm{d}y\,\mathrm{d}x &=\int_0^1\int_x^1e^t\frac{x}{t^2}\,\mathrm{d}t\,\mathrm{d}x&&y=\frac xt\\ &=\int_0^1\int_0^te^t\frac{x}{t^2}\,\mathrm{d}x\,\mathrm{d}t&&\text{swap order}\\ &=\int_0^1e^t\frac{\frac12t^2}{t^2}\,\mathrm{d}t&&\text{inner integral}\\[4pt] &=\frac12(e-1)&&\text{outer integral} \end{align} 

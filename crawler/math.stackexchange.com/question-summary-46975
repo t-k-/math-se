@@ -1,0 +1,11 @@
+\Sigma
+S = \{s_i\}
+A \subseteq S
+\delta : S \times \Sigma \rightarrow S
+T = \{t_j\}
+B \subseteq T
+\zeta : T \times \Sigma \rightarrow T
+U = S \times T
+\eta((s_i, t_j), \sigma) = (\delta(s_i, \sigma), \zeta(t_j, \sigma))
+(A \times B) \cup ((S \setminus A) \times (T \setminus B))
+O(ST\Sigma)

@@ -1,0 +1,4 @@
+e(n)=e^{2 \pi i n}
+\alpha \not \in \mathbb{Z}
+\sum_{|j| \leq J} (J-|j|) e(j \alpha) = \left| \sum_{j=1}^J e(j \alpha) \right|^2,
+\left \vert \sum_{j=1}^J e^{2\pi i j \alpha}\right \vert^2 = \left(\sum_{j=1}^J e^{2\pi i j \alpha}\right) \left(\sum_{k=1}^J e^{-2\pi i k \alpha}\right) = \sum_{j,k=1}^{J} e^{2 \pi i (j-k) \alpha} = \sum_{k=1}^J \sum_{m=1-k}^{J-k} e^{2 \pi i m \alpha} = \sum_{\vert m \vert < J} \sum_{k=1}^{J-\vert m \vert} e^{2 \pi i m \alpha} = \sum_{\vert m \vert < J} (J - \vert m \vert) e^{2 \pi i m \alpha}

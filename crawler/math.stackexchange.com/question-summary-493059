@@ -1,0 +1,26 @@
+(p \lor q) \oplus (\lnot p \land \lnot q)  
+p \oplus q \equiv (p \land \lnot q) \lor (\lnot p \land q)
+a= p \lor q
+b=(\lnot p \land \lnot q)
+ ((p \lor q)\land \lnot(\lnot p \land \lnot q)) \lor (\lnot(p \lor q) \land (\lnot p \land q) )
+ \equiv (p\lor q) \lor (p \land \lnot q) \land (\lnot p \land q) 
+ \equiv (p\lor q) \lor ((p\land\lnot p)\land(\lnot q \land q))  
+ \equiv (p\lor q) \lor (F\land F)  
+ \equiv (p\lor q) \lor F  
+ \equiv (p\lor q)  
+a\oplus b\equiv(a\land\neg b)\lor(\neg a\land b)
+a=p\lor q
+b=\neg p\land\neg q
+\Big((p\lor q)\land\neg(\neg p\land\neg q)\Big)\lor\Big(\neg(p\lor q)\land(\neg p\land\neg q)\Big)\;;
+\neg p\land q
+(p\lor q)\lor\Big(\neg p\land\neg q)\land(\neg p\land q)\Big)
+(p\lor q)\lor\Big(\neg p\land\neg q)\land(\neg p\land\neg q)\Big)\;,
+(p\lor q)\lor(\neg p\land\neg q)\equiv(p\lor q)\lor\neg(p\lor q)
+\neg p\land\neg q\equiv\neg(p\lor q)
+(p\lor q)\oplus\neg(p\lor q)
+r\oplus\neg r
+\;\oplus\;
+\;\not\equiv\;
+(0)
+\;p \oplus q \;\equiv\; p \equiv \lnot q\;
+(0) \;\;\; p \not\equiv q \:\:\equiv\:\: p \equiv \lnot q

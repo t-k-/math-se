@@ -1,0 +1,8 @@
+\int ln(x)^n dx = x ln(x)^n - n \int ln(x)^{n-1}dx
+\int ln(x)^n dx = x ln(x)^n - n \int ln(x)^{n-1}dx - \int ln(x)^{n-1} - \left[xln(x)^{n-1} - (n-1) \int ln(x)^{n-2}dx\right]
+\int ln(x)^{n-1} = xln(x)^{n-1} - (n-1) \int ln(x)^{n-2}dx
+\displaystyle \int (\ln x)^ndx=I_n
+\displaystyle I_n=(\ln x)^n\int dx-\int\left(\frac{d (\ln x)^n}{dx}\int dx\right)dx
+\displaystyle=x(\ln x)^n-n\int(\ln x)^{n-1}dx
+\displaystyle\implies I_n=x(\ln x)^n-nI_{n-1} 
+n=m-1

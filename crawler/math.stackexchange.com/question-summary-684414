@@ -1,0 +1,15 @@
+(t - 3)\cdot u(t-3)
+t
+f_2(t) = t f_1(t)
+\hat{f_2}(s) = - f_1'(s) = {1 \over s^2}
+f_3(t) = f_2(t-3)u(t-3) = f_2(t-2)
+\hat{f_3}(s) = e^{-3s} \hat{f_2}(s) = { e^{-3 s} \over s^2 }
+g_2(t) = g_1(t-3)u(t-3)
+\hat{g_2}(s) = e^{-3s} \hat{g_1}(s) = { e^{-3 s} \over s^2 }
+h_2(t) = h_1(t-3)
+\hat{h_2}(s) = e^{-3s} {1 \over s}
+t-3
+h_3(t) = (t-3) h_2(t) = t h_2(t)-3 h_2(t)
+\hat{h_3}(s) = - \hat{h_2}'(s) -3 \hat{h_2}(s) = { e^{-3s} \over s^2}
+t \gt 3
+\int_3^{\infty} dt \, (t-3) \, e^{-s t} = e^{-3 s} \int_0^{\infty} du \, u \, e^{-s u}  = \frac{e^{-3 s}}{s^2}

@@ -1,0 +1,30 @@
+T: L^2(\mathbb{R})\to L^2(\mathbb{R})
+(Tf)(x)=\int_{\mathbb{R}}\frac{f(y)}{1+|x|+|y|}dy
+f_n(y)=\frac{1}{\sqrt{n}}1_{[0,n]}
+\{||Tf_n||_2\} 
+T
+f_n(y)=\frac{1}{\sqrt{n}}1_{[0,n]}
+(Tf_n)(x)=\frac{1}{\sqrt{n}}\int_0^n\frac{1}{1+|x|+y}dy
+||Tf_n||_2^2=\int_{\mathbb{R}^1}\frac{1}{n}|\int_0^n\frac{1}{1+|x|+y}dy|^2dx=\int_{\mathbb{R}^1}\frac{1}{n}(ln(1+|x|+y)|_{y=0}^{y=n})^2dx=\int_{\mathbb{R}^1}\frac{1}{n}(ln(\frac{1+|x|+n}{1+|x|}))^2dx=\frac{2}{n}\int_0^{\infty}(ln(\frac{1+x+n}{1+x}))^2dx=\frac{2}{n}\int_1^{\infty}(ln(1+\frac{n}{y}))^2dy\overset{z=\frac{n}{y}}{=}2\int_{0}^n\frac{ln(1+z)^2}{z^2}dz\leq 2\int_{0}^{\infty}\frac{ln(1+z)^2}{z^2}dz
+z\to 0, \frac{ln(1+z)^2}{z^2}\to 1; z\to\infty, \frac{ln(1+z)^2}{z^2}\leq \frac{1}{z^{1+\epsilon}}, \forall 0<\epsilon<1
+T
+f_n(y)=\frac{1}{\sqrt{n}}1_{[0,n]}
+\|f_n\|_2=1
+\{Tf_n\}
+L^2(\mathbb{R})
+n\in\mathbb{N}
+m\gg n
+m\ge 144n
+m\le |x|\le 2m
+Tf_n(x)=\frac{1}{\sqrt{n}}\log(1+\frac{n}{1+|x|}).
+|Tf_m(x)|\ge\frac{1}{\sqrt{m}}\log(1+\frac{m}{1+2m})\ge\frac{1}{3\sqrt{m}},
+|Tf_n(x)|\le \frac{1}{\sqrt{n}}\log(1+\frac{n}{m})\le\frac{\sqrt{n}}{m}\le\frac{1}{12\sqrt{m}}.
+m\le |x|\le 2m
+|Tf_m(x)-Tf_n(x)|\ge\frac{1}{4\sqrt{m}}
+(2)
+\{f_{n_k}\}
+\{f_n\}
+\{Tf_{n_k}\}
+L^2(\mathbb{R})
+T
+||Tf_m-Tf_n||_2\ge 2\big(\int_m^{2m}|Tf_m-Tf_n|^2dx\big)^{\frac{1}{2}}\ge \frac{1}{2}.\tag{2}

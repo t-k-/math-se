@@ -1,0 +1,17 @@
+\log(n)=\lim_{s\to 1} \, \left(1-\frac{1}{n^{s-1}}\right) \zeta (s)
+T = \begin{bmatrix} 0&0&0&0&0&0&0 \\ 1&-1&1&-1&1&-1&1 \\ 1&1&-2&1&1&-2&1 \\ 1&1&1&-3&1&1&1 \\ 1&1&1&1&-4&1&1 \\ 1&1&1&1&1&-5&1 \\ 1&1&1&1&1&1&-6 \end{bmatrix}
+T(n,k) = -(n-1)\; \text{ if }\; n|k, \;\text{ else } \;1,
+\log(a(n))= \lim_{s\to 1} \, \zeta (s) \sum _{k=1}^n \frac{T(n,k)}{k^{s-1}}
+a(n)=\frac{n^n}{n!}
+a(n) =
+\left\{1,2,\frac{9}{2},\frac{32}{3},\frac{625}{24},\frac{324}{5},\frac{117649}{720},\frac{131072}{315},\frac{4782969}{4480},\frac{1562500}{567},\frac{25937424601}{3628800},\frac{35831808}{1925}\right\}
+\frac{x}{W(x)} = 1+x-\frac{x^2}{2}+\frac{2 x^3}{3}-\frac{9 x^4}{8}+\frac{32 x^5}{15}-\frac{625 x^6}{144}+\frac{324 x^7}{35}+O\left(x^8\right)
+a(n)
+\frac{x}{W(x)} = \frac{(-1)^n n^n x^{n+1}}{(n+1)!}
+a(n)=\frac{n^n}{n!}
+\left\{\frac{1}{2},\frac{2}{3},\frac{9}{8},\frac{32}{15},\frac{625}{144},\frac{324}{35},\frac{117649}{5760},\frac{131072}{2835},\frac{4782969}{44800},\frac{1562500}{6237},\frac{25937424601}{43545600},\frac{35831808}{25025}\right\}
+\sum _{n=1}^{\infty} \frac{x (-x)^n \exp \left(\lim_{s\to 1} \, \zeta (s) \sum _{k=1}^n \frac{1-\text{If}[k \bmod n=0,n,0]}{k^{s-1}}\right)}{n+1}+x+1 =1+x-\frac{x^2}{2}+\frac{2 x^3}{3}-\frac{9 x^4}{8}+\frac{32 x^5}{15}-\frac{625 x^6}{144}+\frac{324 x^7}{35}-\frac{117649 x^8}{5760}+\frac{131072 x^9}{2835}-\frac{4782969 x^{10}}{44800}+\frac{1562500 x^{11}}{6237}-\frac{25937424601 x^{12}}{43545600}+\frac{35831808 x^{13}}{25025}-...
+4
+n
+ N(T)= \frac{T}{2\pi}\log\left(\frac{T}{2\pi e}\right) 
+ T= \frac{2 \pi n}{W(ne^{-1})} 

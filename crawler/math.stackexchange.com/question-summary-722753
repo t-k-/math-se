@@ -1,0 +1,44 @@
+J(x,y')=\int_1^2 xy'(x)+(y'(x))^2dx
+y
+ J = \int\left(xy' + y'^2\right)dx = \int\mathcal{L}(y, y', x)dx 
+y
+x
+\mathcal{L}
+y
+\frac{\partial \mathcal{L}}{\partial y} = 0
+ \frac{d}{dx}\left(\frac{\partial \mathcal{L}}{\partial y'}\right) = 0 
+y'
+ \frac{\partial \mathcal{L}}{\partial y'} = x + 2y' = \alpha 
+ 2y' = \alpha - x \\ 2y = \alpha x - \frac{x^2}{2} + \beta \\ y = \alpha x - \frac{x^2}{4} + \beta \\ y = -\frac{1}{4}\left(x^2 - 2\alpha x\right) + \beta \\ y = -\frac{1}{4}\left(x - \alpha\right)^2 + \beta - \alpha^2 \\ y = -\frac{1}{4}\left(x - \alpha\right)^2 + \beta 
+\alpha
+\beta
+\beta - \alpha^2
+\beta
+\beta
+\alpha^2
+\alpha
+\beta
+ y(1) = 2 = -\frac{1}{4}(1 - \alpha)^2 + \beta \\ y(2) = 4 = -\frac{1}{4}(2 - \alpha)^2 + \beta \\ 
+\alpha
+ 2 = -\frac{1}{4}\left((2 - \alpha)^2 - (1 - \alpha)^2\right) \\ -8 = 4 + \alpha^2 - 4\alpha - (1 + \alpha^2 - 2\alpha) \\ -8 = 3 - 2\alpha \rightarrow \alpha = \frac{11}{2} 
+\beta
+ 2 = -\frac{1}{4}\left(1 - \frac{11}{2}\right)^2 + \beta \\ \beta = 2 + \frac{1}{4}\cdot\frac{9^2}{2^2} = \frac{113}{16} 
+ y(x) = -\frac{1}{4}\left(x - \frac{11}{2}\right)^2 + \frac{113}{16} = \frac{113 - (2x - 11)^2}{16}\\ y' = -\frac{2x - 11}{4} \rightarrow y'^2 = \frac{(2x - 11)^2}{16} 
+y(x)
+J = \int_A^B f(x, y, y') dx
+\frac{\partial f}{\partial y} - \frac{d}{dx}\left(\frac{\partial f}{\partial y'}\right) = 0.
+x + 2y'
+x
+1 + 2y'' = 0
+\frac{\partial f}{\partial y} = 0 \quad \text{and} \quad \frac{\partial f}{\partial y'} = x + 2y',
+1 + 2y'' = 0,
+y(x) = -\frac{x^2}{4} + Ax + B.
+y(x)
+(1, 2)
+(2, 4)
+A = 9/4 - B
+B
+B = -1/2
+A = 9/4 + 1/2 = 11/4
+y(1) = 2 = -\frac{1}{4} + A + B \quad \text{and} \quad y(2) = 4 = -1 + 2A + B.
+4 = -1 + 2\left(\frac{9}{4} - B\right) + B.

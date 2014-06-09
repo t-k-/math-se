@@ -1,0 +1,35 @@
+\operatorname*{erf}(x+i y) = \operatorname*{erf}{x} + \frac{e^{-x^2}}{2 \pi x} [(1-\cos{2 x y})+i \sin{2 x y}]\\ + \frac{2}{\pi} e^{-x^2} \sum_{k=1}^{\infty} \frac{e^{-k^2/4}}{k^2+4 x^2}[f_k(x,y)+i g_k(x,y)] + \epsilon(x,y) 
+f_k(x,y) = 2 x (1-\cos{2 x y} \cosh{ n y}) +  n \sin{2 x y} \sinh{n y}
+g_k(x,y) = 2 x \sin{2 x y} \cosh{n y} + n \cos{2 x y} \sinh{n y}
+\left |\epsilon(x,y) \right | \le 10^{-16}  |\operatorname*{erf}{(x+i y)}| 
+\operatorname*{erf}{z} = \frac{2}{\sqrt{\pi}} \int_{\Gamma} d\zeta \, e^{-\zeta^2}
+\Gamma
+\zeta = 0
+\zeta=z
+\Gamma
+0
+x
+x
+z=x+i y
+\operatorname*{erf}{(x+i y)} = \operatorname*{erf}{x} + i \frac{2}{\sqrt{\pi}} e^{-x^2} \int_0^y du \, e^{u^2} \cos{2 x u} \\ + \frac{2}{\sqrt{\pi}} e^{-x^2} \int_0^y du \, e^{u^2} \sin{2 x u}
+\phi(t)
+\Phi(\xi) = \int_{-\infty}^{\infty} dt \, \phi(t) \, e^{-i 2 \pi \xi t}
+\sum_{n=-\infty}^{\infty} \phi(n+t) = \sum_{n=-\infty}^{\infty}e^{i 2 \pi n t} \Phi(n)
+\phi(t) = e^{-a^2 t^2}
+a \gt 0
+u= a t
+\sum_{n=-\infty}^{\infty} e^{-(u+n a)^2} = \frac{\sqrt{\pi}}{a} \left [1+2 \sum_{n=1}^{\infty} e^{-n^2 \pi^2/a^2} \cos{\left (2 \pi n \frac{u}{a} \right )} \right ]
+a
+a
+\epsilon(u)
+|\epsilon(u)| = 2 \left |\sum_{n=1}^{\infty} e^{-n^2 \pi^2/a^2} \cos{\left (2 \pi n \frac{u}{a} \right )}\right | \le \sum_{n=1}^{\infty} e^{-n^2 \pi^2/a^2}  
+a=1/2
+\left |\epsilon(u)\right | \le e^{-4 \pi^2} + e^{-16 \pi^2} + \cdots \approx 5 \cdot 10^{-17} 
+e^{u^2} [1+\epsilon(u)] = \frac{a}{\sqrt{\pi}} \left [1+2 \sum_{n=1}^{\infty} e^{-n^2 a^2} \cosh{2 n a u} \right ]
+\begin{align}\frac{2}{\sqrt{\pi}}\int_0^y du \, e^{u^2} \sin{2 x u} &\approx \frac{2}{\sqrt{\pi}} \int_0^y  du \frac{a}{\sqrt{\pi}} \left [1+2 \sum_{n=1}^{\infty} e^{-a^2 n^2} \cosh{2 n a u} \right ] \sin{2 x u}\\ &= 2 a \frac{1-\cos{2 x y}}{2 \pi x} + \frac{4 a}{\pi} \sum_{n=1}^{\infty} e^{-a^2 n^2} \int_0^y du \, \cosh{2 a n u}\, \sin{2 x u}\\ &= 2 a \frac{1-\cos{2 x y}}{2 \pi x} \\ &+ \frac{2 a}{\pi}\sum_{n=1}^{\infty} e^{-a^2 n^2} \frac{x (1-\cos{2 x y} \cosh{2 a n y})+ a n \sin{2 x y} \sinh{2 a n y}}{x^2+a^2 n^2} \end{align} 
+\frac{2}{\sqrt{\pi}}\int_0^y du \, e^{u^2} \cos{2 x u} \approx \\2 a \frac{\sin{2 x y}}{2 \pi x} + \frac{2 a}{\pi}\sum_{n=1}^{\infty} e^{-a^2 n^2} \frac{x \sin{2 x y} \cosh{2 a n y}+ a n \cos{2 x y} \sinh{2 a n y}}{x^2+a^2 n^2}
+a=1/2
+z
+\Im{z}
+10^{-16}
+ \text{Re}\;\text{erf}(a+ib) = \frac{\text{erf}(a+ib)+\text{erf}(a-ib)}{2} 

@@ -1,0 +1,23 @@
+k:[0,1] \times [0,1] \to \mathbb{R}
+x(t) = \int_0^t k(t,s)x(s)ds
+0 \leq t \leq 1
+Tx(t) = \int_0^t k(t,s)x(s)ds
+sup_{0 \leq t, s \leq 1}|k(t,s)|= M
+Tx
+x
+T^{(n)}
+T
+n \in \mathbb{N}
+0 \leq t \leq 1
+|T^{(n)}x(t)-T^{(n)}y(t)|\leq \frac{M^n t^n}{n!} sup_{0 \leq s \leq 1}|x(s)-y(s)
+n=1
+|Tx(t) - Ty(t)| = |\int_0^t k(t,s)x(s)ds - \int_0^t k(t,s)y(s)ds|
+= |\int_0^t k(t,s)(x(s)-y(s))ds|
+\leq |M\int_0^t(x(s) - y(s)ds|
+t
+n = k
+|T^{(k)}x(t)-T^{(k)}y(t)|\leq \frac{M^k t^k}{k!} sup_{0 \leq s \leq 1}|x(s)-y(s)|
+n = k+1
+|T{(k+1)}x(t) - T^{(k+1)}y(t)| = |T \circ T^k x(s) - T \circ T^k y(s)|
+ \leq T(\frac{M^k t^k}{k!} sup_{0 \leq s \leq 1}|x(s)-y(s)|
+T

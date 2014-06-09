@@ -1,0 +1,118 @@
+\sin{k}/k
+f(x) = \begin{cases}\\ \pi & |x|<1\\0&|x|>1 \end{cases}
+f(x) = \sum_{k=-\infty}^{\infty} c_k e^{i k x}
+c_k = \frac{1}{2 \pi} \int_{-\pi}^{\pi} dx \: f(x) e^{i k x} = \frac{\sin{k}}{k}
+\sum_{k=-\infty}^{\infty} \frac{\sin^2{k}}{k^2} = \frac{1}{2 \pi} \int_{-\pi}^{\pi} dx \: |f(x)|^2 = \frac{1}{2 \pi} \int_{-1}^{1} dx \: \pi^2 = \pi 
+\sum_{k=-\infty}^{\infty} \frac{\sin^2{a k}}{k^2} = \pi\, a
+a \in[0,\pi)
+f(x) = \begin{cases}\\ \pi & |x|<a\\0&|x|>a \end{cases}
+a\in\left[0,\frac\pi2\right]
+(1)
+(2)
+\dfrac{\sin(ka)}{ka}=1
+k=0
+a=1
+ \begin{align} \int_0^a\frac{\sin(2kx)}{k}\mathrm{d}x &=\int_0^a\frac{2\sin(kx)}{k^2}\mathrm{d}\sin(kx)\\ &=\left.\frac{\sin^2(kx)}{k^2}\right]_0^a\\ &=\frac{\sin^2(ka)}{k^2}\tag{1} \end{align} 
+ \begin{align} \sum_{k=1}^\infty\frac{\sin(2kx)}{k} &=\sum_{k=1}^\infty\frac{e^{i2kx}-e^{-i2kx}}{2ik}\\ &=\frac1{2i}\left(-\log(1-e^{i2x})+\log(1-e^{-i2x})\right)\\ &=\frac1{2i}\log(-e^{-i2x})\\[4pt] &=\frac\pi2-x\quad\text{for }x\in\left(0,\pi\right)\tag{2} \end{align} 
+ \begin{align} \sum_{k=1}^\infty\frac{\sin^2(ka)}{k^2} &=\int_0^a\left(\frac\pi2-x\right)\,\mathrm{d}x\\ &=\frac\pi2a-\frac{a^2}2\tag{3} \end{align} 
+ \sum_{k\in\mathbb{Z}}\left(\frac{\sin(ka)}{ka}\right)^2=\frac\pi a\tag{4} 
+(4)
+a
+a=\frac1n
+(5)
+ \sum_{k\in\mathbb{Z}}\frac{\sin^2(k/n)}{(k/n)^2}\frac1n=\pi\tag{5} 
+ \int_{-\infty}^\infty\frac{\sin^2(x)}{x^2}\,\mathrm{d}x=\pi\tag{6} 
+(2)
+x=\frac a2
+\frac{\sin(ka)}{ka}=1
+k=0
+(7)
+a
+a=\frac1n
+(8)
+ \sum_{k\in\mathbb{Z}}\frac{\sin(ka)}{ka}=\frac\pi a\tag{7} 
+ \sum_{k\in\mathbb{Z}}\frac{\sin(k/n)}{k/n}\frac1n=\pi\tag{8} 
+ \int_{-\infty}^\infty\frac{\sin(x)}{x}\,\mathrm{d}x=\pi\tag{9} 
+S
+f(1).
+f(x)
+s=-1
+s=0
+s=-2.
+S
+ S = 1 + 2 \sum_{k\ge 1} \frac{\sin(k)^2}{k^2}.
+ f(x) = \sum_{k\ge 1} \frac{\sin(xk)^2}{k^2}
+ f(x) = - \frac{1}{4} \sum_{k\ge 1} \frac{e^{2ixk}-2+e^{-2ixk}}{k^2} = \frac{1}{2}\sum_{k\ge 1} \frac{1}{k^2} - \frac{1}{4}   \sum_{k\ge 1} \frac{e^{2ixk}+e^{-2ixk}}{k^2} \\= \frac{\pi^2}{12} - \frac{1}{4}  \sum_{k\ge 1} \frac{e^{2ixk}+e^{-2ixk}}{k^2}.
+\mathfrak{M}\left(\sum_{k\ge 1}\frac{e^{2ixk}}{k^2};s\right)= \Gamma(s) \sum_{k\ge 1} \frac{1}{(2ik)^s k^2} = \frac{1}{(2i)^s}\Gamma(s) \zeta(s+2).
+\mathfrak{M}\left(\sum_{k\ge 1}\frac{e^{-2ixk}}{k^2};s\right)= \Gamma(s) \sum_{k\ge 1} \frac{1}{(-2ik)^s k^2} = \frac{1}{(-2i)^s}\Gamma(s) \zeta(s+2).
+ \frac{1}{(2i)^s} + \frac{1}{(-2i)^s} = e^{-s \log(2i)} + e^{-s \log(-2i)} = e^{-s \log 2 -s i\pi/2} + e^{-s \log 2 + s i\pi/2} \\ = 2^{-s} 2 \cos(s\pi/2)
+ \mathfrak{M}\left(\sum_{k\ge 1}\frac{e^{2ixk}+e^{-2ixk}}{k^2};s\right) = g^*(s)= 2 \times 2^{-s}  \cos(s\pi/2) \Gamma(s) \zeta(s+2).
+ \operatorname{Res}(g^*(s)x^{-s}; s=0) = \frac{\pi^2}{3},
+ \operatorname{Res}(g^*(s)x^{-s}; s=-1) = -2\pi x,
+ \operatorname{Res}(g^*(s)x^{-s}; s=-2) = 2 x^2.
+ \mathfrak{M}^{-1}(g^*(s);x) = \int_{1-i\infty}^{1+i\infty} g^*(s) x^{-s} ds = 2 x^2 - 2\pi x + \frac{\pi^2}{3}.
+S = 1 + 2\left(\frac{\pi^2}{12}-\frac{1}{4} \left( 2-2\pi + \frac{\pi^2}{3}\right) \right) = 1 + 2\left(-\frac{1}{4} \left( 2-2\pi \right) \right) = 1 - \frac{1}{2} (2-2\pi) =\pi. 
+\operatorname{sinc}{x}
+ \begin{align} \sum_{m = -\infty}^\infty& \left(\frac{\sin{(m)}}{m}\right)^n \tag{0}\\ & = \frac{(-1)^{n}\pi}{2^{n}(n-1)!}\sum_{\ell = -\lfloor n/(2\pi)\rfloor}^{\lfloor n/(2\pi)\rfloor}\left(\sum_{k = 0}^n(-1)^k{n\choose k} (2\pi \ell - n+2k)^{n-1}\operatorname{sign}(2\pi \ell-n+2k)\right). \end{align} 
+f
+f
+f(x) = \operatorname{sinc}^2{x}
+ \sum_{n = -\infty}^\infty f(x+n) = \sum_{\ell = -\infty}^\infty \hat{f}(2\pi \ell) e^{2\pi i \ell x}. 
+ \hat{f}(t) = \int_{-\infty}^\infty f(x)e^{-itx}\,dx 
+\pi(1-|x|/2)
+|x| < 2
+0
+x \in \mathbb{R}
+x = 0
+ \begin{align} \int_{-\infty}^\infty (\operatorname{sinc}{x})^2e^{-itx}\,dx = \int_{-\infty}^\infty \left(\frac{\sin{x}}{x}\right)^2e^{-itx}\,dx = \frac{\pi}{4}(|x-2| + |x+2| - 2|x|). \tag{1} \end{align} 
+ \sum_{n = - \infty}^\infty \left(\frac{\sin{(x+n)}}{x+n}\right)^2 = \pi, 
+(1)
+g = (1/2)\chi_{[-1,1]}
+[-1,1]
+\operatorname{sinc}{x}
+(1)
+ \operatorname{sinc}{x} = \frac{\sin{x}}{x} = \frac{1}{2}\int_{-1}^1 e^{-ixt}\,dt = \hat{g}(x), 
+ \widehat{g*g}(x) = \left(\frac{\sin{x}}{x}\right)^2. 
+ \int_{-\infty}^\infty \left(\frac{\sin{x}}{x}\right)^2e^{itx}\,dx = 2\pi (g*g)(t) = \frac{\pi}{2}\int_{-\infty}^\infty \chi_{[-1,1]}(t-y)\chi_{[-1,1]}(y)\,dy. 
+\operatorname{sign}(t)
+0
+t = 0
+t/|t|
+\operatorname{sign}(t)
+\lim_{k\to \infty} \chi_{(0,k]}(t) - \chi_{[-k,0)}(t)
+v
+u_n = (-1)^{n-1}(n-1)!^{-1}\partial^{n-1} u_1
+(\operatorname{sinc}{x})^n
+ \hat{u}_1(t) = -i\pi \operatorname{sign}(t), 
+ \widehat{\partial^k v} = (it)^k \hat{v}. 
+ \hat{u}_n(t) = \frac{(-1)^{n-1}}{(n-1)!}\widehat{\partial^n u_1}(t) = \frac{(-1)^{n-1}}{(n-1)!}(it)^{n-1}\hat{u}_1(t) = \frac{(-1)^{n}i^n\pi}{(n-1)!}t^{n-1} \operatorname{sign}(t). \tag{3} 
+ \widehat{e^{ihx}u_n}(t) = \hat{u}_n(x-h). \tag{4} 
+(\sin{x})^n
+n
+(\sin{x})^n
+e^{ix}
+(3)
+(4)
+(2)
+ (\operatorname{sinc}{x})^n = (\sin{x})^n x^{-n} = (\sin{x})^nu_n 
+ (\sin{x})^nu_n = \frac{1}{(2i)^n} \sum_{k = 0}^n(-1)^k{n\choose k}e^{i(n-2k)x}u_n. 
+ \begin{align} \widehat{\operatorname{sinc}^n}\,(t) &= \frac{1}{(2i)^n} \sum_{k = 0}^n(-1)^k{n\choose k}\widehat{e^{i(n-2k)x}u_n}(t) \\ & = \frac{1}{(2i)^n} \sum_{k = 0}^n(-1)^k{n\choose k}\hat{u}_n(t-n+2k)\\ & = \frac{1}{(2i)^n} \sum_{k = 0}^n(-1)^k{n\choose k}\frac{(-1)^{n}i^n\pi}{(n-1)!}(t-n+2k)^{n-1}\operatorname{sign}(t-n+2k). \end{align} 
+x=e^{2\theta i}
+\sum_{k=1}^\infty\frac{x^k}{k}=-\ln(1-x)
+\theta=0
+C=-\frac{\pi^2}{12}
+\theta=1
+\sum_{k=-\infty}^\infty\frac{\sin^2(ak)}{k^2}
+ \sum_{k=-\infty}^\infty\frac{\sin^2k}{k^2}=1+2\sum_{k=1}^\infty \frac{\sin^2k}{k^2}=1+\sum_{k=1}^\infty\frac{1-\cos(2k)}{k^2}=1+\frac{\pi^2}{6}-\sum_{k=1}^\infty\frac{\cos(2k)}{k^2}.
+ \sum_{k=1}^\infty\frac{1}{k}(\cos(2k\theta)+i\sin(2k\theta))=-\ln(1-\cos(2\theta)-i\sin(2\theta)). 
+ \sum_{k=1}^\infty\frac{1}{k}\sin(2k\theta)=-\Im\ln(1-\cos(2\theta)-i\sin(2\theta))=-\arctan(-\cot \theta)=\frac{\pi}{2}-\theta. 
+ -\sum_{k=1}^\infty\frac{1}{2k^2}\cos(2k\theta)=\frac{\pi}{2}\theta-\frac{1}{2}\theta^2+C. 
+ \sum_{k=1}^\infty\frac{1}{k^2}\cos(2k\theta)=-\pi \theta+\theta^2+\frac{\pi^2}{6}. 
+ \sum_{k=1}^\infty\frac{\cos(2k)}{k^2}=-\pi+1+\frac{\pi^2}{6} 
+ \sum_{k=-\infty}^\infty\frac{\sin^2k}{k^2}=1+\frac{\pi^2}{6}-\sum_{k=1}^\infty\frac{\cos(2k)}{k^2}=1+\frac{\pi^2}{6}-(-\pi+1+\frac{\pi^2}{6})=\pi.
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}%  \newcommand{\yy}{\Longleftrightarrow}
+ \!\!\!\!\!\sum_{k=-\infty}^{\infty}{\sin^{2}\pars{k} \over k^{2}} = \sum_{k=-\infty}^{\infty}\int_{-\infty}^{\infty}{\sin^{2}\pars{x} \over x^{2}}\, \delta\pars{x - k}\,\dd x = \int_{-\infty}^{\infty}{\sin^{2}\pars{x} \over x^{2}} \bracks{\sum_{k=-\infty}^{\infty}\delta\pars{x - k}}\,\dd x\tag{1} 
+\pars{3}
+\pars{1}
+\ds{{\sin\pars{x} \over x} = \half\int_{-1}^{1}\expo{\ic tx}\,\dd t}.\quad
+\pars{4}

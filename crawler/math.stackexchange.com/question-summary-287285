@@ -1,0 +1,20 @@
+(X,d)
+d \colon X \times X \to \mathbf{R}
+a
+b
+a < b
+d^{-1} (a,b)
+ d^{-1} (a,b) :=  \{ (x, y) \in X \times X | a < d(x,y) < b \} 
+X \times X
+(X,d)
+a, b ∈ ℝ
+(x,y) ∈ d^{-1} (a..b)
+a < d(x,y) < b
+ε
+U_{2ε} (d(x,y)) ⊂ (a..b)
+U_ε (x) × U_ε (y)
+(x',y') ∈ U_ε (x) × U_ε (y)
+a < d(x,y) - 2ε < d(x',y') < d(x,y) + 2ε < b
+d(x',y') ≤ d(x',x) + d(x,y) + d(y,y') < d(x,y) + 2ε
+d(x,y) ≤ d(x,x') + d(x',y') + d(y',y) < d(x',y') + 2ε
+U_{ε} (x) × U_{ε} (y) ⊂ d^{-1} (a..b)

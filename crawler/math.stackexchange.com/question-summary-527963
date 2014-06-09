@@ -1,0 +1,78 @@
+\{\mathbf{u}_{1},\mathbf{u}_{2}\cdots,\mathbf{u}_{6}\}
+\mathcal{S}
+\mathbb{R}^{m}
+\{\mathbf{u}_{1}+\mathbf{u}_{2},\mathbf{u}_{2}+\mathbf{u}_{3}\cdots,\mathbf{u}_{6}+\mathbf{u}_{1}\}
+\mathcal{S}
+\mathbf{u_i}
+\mathbb{R}^6
+\mathbf{e_1},\ldots,\mathbf{e_6}
+\left(1,-1,1,-1,1,-1\right)
+ A = \left[ \begin{matrix} \mathbf{u_1} \\ \mathbf{u_2} \\ \cdots \\ \mathbf{u_6} \end{matrix} \right] 
+ B = \left[ \begin{matrix} \mathbf{u_1} + \mathbf{u_2}  \\ \mathbf{u_2} + \mathbf{u_3} \\ \cdots \\ \mathbf{u_6} + \mathbf{u_1} \end{matrix} \right] 
+B
+A
+B
+ B = \left[ \begin{matrix} 1 & 1 & 0 & \cdots & 0 \\ 0 & 1 & 1 & \cdots & 0 \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & 0 & 0 & \cdots & 1 \end{matrix} \right] A 
+C
+C
+C
+B
+A
+C
+ C^{-1} B = A
+A
+B
+A
+B
+\mathbf{v}
+\mathbf{x}
+ \mathbf{v} A = \mathbf{x} B 
+ \mathbf{v} A = \mathbf{x} C A 
+ (\mathbf{v} - \mathbf{x} C) A = 0 
+\mathbf{x}
+\mathbf{w}
+(\mathbf{v} - \mathbf{x} C) = \mathbf{w}
+\mathbf{w}
+A
+\mathbf{v} = \mathbf{w} + \mathbf{x} C
+\mathbf{v}
+ \text{NS}(A) + \text{RS}(C) = \mathbb{R}^6 
+\text{NS}(A)
+A
+\text{RS}(C)
+C
+\mathbf{w}
+\text{NS}(A)
+\mathbf{x} C
+\text{RS}(C)
+\mathbf{C}
+5
+A
+C
+5
+6
+C
+ \mathbf{u} = \left[ \begin{matrix} 1 \\ -1 \\ 1 \\ -1 \\ 1 \\ -1 \end{matrix} \right] 
+\mathbf{u}
+C
+\mathbf{y}
+C
+\mathbf{y} \mathbf{u} = 0
+A
+B
+\mathbf{x}
+\mathbf{x}A = 0
+\mathbf{xu} \neq 0
+N \mathbf{u} \neq \mathbf{0}
+N
+A
+S = u_1 \wedge u_2 \wedge \ldots \wedge u_6
+S' = (u_1 + u_2) \wedge (u_2 + u_3) \wedge \ldots \wedge (u_6 + u_1)
+2^6 = 64
+(u_1 + u_2) \wedge (u_2 + u_3) = u_1 \wedge u_2 + u_1 \wedge u_3 + u_2 \wedge u_3
+\begin{align*}S' &= (u_1 \wedge u_2 + u_1 \wedge u_3 + u_2 \wedge u_3) \\ &\wedge (u_3 \wedge u_4 + u_3 \wedge u_5 + u_4 \wedge u_5) \\ &\wedge (u_5 \wedge u_6  + u_5 \wedge u_1 + u_6 \wedge u_1)\end{align*}
+S' = u_1 \wedge u_2 \wedge u_3 \wedge u_4 \wedge u_5 \wedge u_6 + u_2 \wedge u_3 \wedge u_4 \wedge u_5 \wedge u_6 \wedge u_1
+u_1
+S' = 0
+S
+u_6 + u_1 = (u_5 + u_6) - (u_4 + u_5) + (u_3 + u_4) - (u_2 + u_3) + (u_1 + u_2)

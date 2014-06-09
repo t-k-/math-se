@@ -1,0 +1,28 @@
+ a_n 
+ X^n 
+ (1+X+X^2)^n 
+ a_n=\sum\limits_{k=0}^{k=\lfloor n/2\rfloor} \frac{n!}{(k!)^2(n-2k)!}
+ (0,0) 
+ (n,0) 
+a_n
+(0,0)
+(n,0)
+n = 4
+9
+13
+a_{n}=\sum_{k=0}^{k=\lfloor{n/2}\rfloor} \frac{n!}{(k!)^2(n-2k)!}
+X^n
+(1+X+X^2)^n
+k
+X^n
+k
+1
+n - 2k
+X
+k
+X^2
+k \leq n/2
+X^n
+b_n = \sum_{k=0}^{[n/2]}\frac{n!}{k!k!(n-2k)!} = \sum_{k=0}^{[n/2]} \binom{n}{k,k,n-2k}
+c_n = \sum_{k=0}^{[n/2]}\frac{n!}{(k-1)!(k+1)!(n-2k)!} = \sum_{k=0}^{[n/2]} \binom{n}{k-1,k+1,n-2k}
+\begin{array}{rcl} a_n &=& b_n - c_n \\ &=& \sum_{k=0}^{[n/2]}\frac{n!}{k!k!(n-2k)!} - \sum_{k=0}^{[n/2]}\frac{n!}{(k-1)!(k+1)!(n-2k)!} \\ &=& \sum_{k=0}^{[n/2]} \frac{n!}{(k-1)!k!(n-2k)!} \left(\frac{1}{k} - \frac{1}{k+1}\right) \\ &=& \sum_{k=0}^{[n/2]} \frac{n!}{(k-1)!k!(n-2k)!} \left(\frac{1}{k(k+1)}\right) \\ &=& \sum_{k=0}^{[n/2]} \frac{n!}{k!(k+1)!(n-2k)!} \\ &=& \frac{1}{n+1} \sum_{k=0}^{[n/2]} \binom{n+1}{k,k+1,n-2k} \end{array}

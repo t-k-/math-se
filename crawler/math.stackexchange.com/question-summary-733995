@@ -1,0 +1,13 @@
+s_n = \displaystyle \sum_{0}^{\lfloor\frac{n-1}{2}\rfloor}\binom{n-1-r}{r} \text{ for } n \in \mathbb{N} \tag{1}
+s_{n+2} = s_{n+1} + s_{n} \tag{2}
+P(n): s_n = \frac{1}{\sqrt{5}}\left(\frac{1 + \sqrt{5}}{2}\right)^n - \frac{1}{\sqrt{5}}\left(\frac{1 - \sqrt{5}}{2}\right)^n \text{ true } \forall n \in \mathbb{N}\tag{3}
+P(1)
+P(2)
+P(n)
+P(n+1)
+\begin{aligned}s_{n+2} & = s_{n+1} + s_{n} \\ & = \frac{1}{\sqrt{5}}\left(\frac{1 + \sqrt{5}}{2}\right)^{n+1} - \frac{1}{\sqrt{5}}\left(\frac{1 - \sqrt{5}}{2}\right)^{n+1} + \frac{1}{\sqrt{5}}\left(\frac{1 + \sqrt{5}}{2}\right)^n - \frac{1}{\sqrt{5}}\left(\frac{1 - \sqrt{5}}{2}\right)^n \\ & = \frac{1}{\sqrt{5}}\left(\frac{1 + \sqrt{5}}{2}\right)^n\left(\frac{3 + \sqrt{5}}{2}\right) - \frac{1}{\sqrt{5}}\left(\frac{1 - \sqrt{5}}{2}\right)^n\left(\frac{3 - \sqrt{5}}{2}\right) \\ & = \frac{1}{\sqrt{5}}\left(\frac{1 + \sqrt{5}}{2}\right)^{n+2} - \frac{1}{\sqrt{5}}\left(\frac{1 - \sqrt{5}}{2}\right)^{n+2} \\ & \implies P(n+2) \text{ true }\end{aligned}
+ \blacksquare
+n
+n
+(3)
+s_n

@@ -1,0 +1,4 @@
+\sum\limits_{i,j\in[|1,n|]}\frac{\max\left(i,j\right)}{\min\left(i,j\right)}
+\sum\limits_{i,j\in[|1,n|]}\frac{\max \left(i,j\right)}{\min\left(i,j\right)}=\sum\limits_{j=1}^{n}\sum\limits_{i=1}^{j}\frac{j}i+\sum\limits_{j=1}^{n}\sum\limits_{i=j+1}^{n}\frac{i}j=\sum\limits_{i=1}^{n}\frac{1}i\sum\limits_{j=i}^{n}j+\sum\limits_{j=1}^{n}\frac{1}j\sum\limits_{i=j+1}^{n}i
+\sum\limits_{i,j\in[|1,n|]}\frac{\max{i,j}}{\min{i,j}}=\sum\limits_{i=1}^{n}\frac{1}i\frac{\left(n-i+1\right)n}2+\sum\limits_{j=1}^{n}\frac{1}j\frac{\left(n-j\right)n}2=\frac{-n}2+\sum\limits_{i=1}^{n}\frac{n^2+n}{2i}-\frac{n}2+\sum\limits_{j=1}^{n}\frac{n^2}{2j}
+-n+n^2\frac{n}2\sum\limits_{i=1}^{n}\frac{1}i

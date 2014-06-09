@@ -1,0 +1,22 @@
+S,T\in\mathbb R
+0\leq S<T<\infty
+X:\mathbb R\times \Omega\to\mathbb R
+s\in \mathbb R
+\mathsf P
+\Omega
+[S,T]
+\mu_n = \max\limits_{j=0,\dots,n-1}\Delta t^n_j = \max\limits_{j=0,\dots,n-1}(t^n_{j+1} - t_j^n)
+1_A(t)
+A
+\sup
+(1)
+ \lim\limits_{t\to s}\int_\Omega (X(t,\omega)-X(s,\omega))^2\mathsf P(d\omega) = 0 \quad (1) 
+ \mathscr T^n =  \{S = t_0^n<t_1^n<\dots<t_n^n = T\} 
+ \lim\limits_{\mu_n\to 0}\int\limits_S^T\left(\int_\Omega (X(t,\omega) - X^n(t,\omega))^2\mathsf P(d\omega)\right)dt = 0 
+ X^n_t = \sum\limits_{j=0}^{n-1}X(t_j,\omega)1_{[t_j^n,t_{j+1}^n)}(t) 
+ \int\limits_S^T\left(\int_\Omega (X(t,\omega) - X^n(t,\omega))^2\mathsf P(d\omega)\right)dt\leq (T-S)\cdot \sup\limits_j\sup\limits_{t\in [t_j^n,t_{j+1}^n)}\int_\Omega (X(t,\omega)-X(t^n_j,\omega))^2\mathsf P(d\omega) 
+\lim\limits_{t\to s}m(t,s) = 0
+s\in \mathbb R
+\mu_n
+ m(t,s) = \int_\Omega (X(t,\omega)-X(s,\omega))^2\mathsf P(d\omega) 
+ \sup\limits_j\sup\limits_{t\in [t_j^n,t_{j+1}^n)}m(t,t_j) 

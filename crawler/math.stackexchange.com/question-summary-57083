@@ -1,0 +1,15 @@
+i
+n
+s-1
+\sum_{k=0}^{m(s-1)}{\binom{m}{k}}_{s}x^{k}=(1 + x + ... + x^{s-1})^{m}\,
+ \sum_{k=0}^{m(s-1)}{\binom{m}{k}}_{s}x^{k}=\sum_{k=0}^{\infty}{\binom{m}{k}}_{s}x^{k}=\left(\frac{1-x^{s}}{1-x}\right)^{m}=(1-x^{s})^{m}(1-x)^{-m}\,
+(1-x^{s})^{m}=\sum_{i=0}^{m}(-1)^{i}\binom{m}{i}x^{si}
+(1-x)^{-m}=\sum_{j=0}^{\infty}\binom{m+j-1}{j}x^{j}
+ \sum_{k=0}^{\infty}{\binom{m}{k}}_{s}x^{k}=\sum_{i=0}^{m}(-1)^{i}\binom{m}{i}x^{si}\sum_{j=0}^{\infty}\binom{m+j-1}{j}x^{j}=
+=\sum_{j=0}^{\infty}\sum_{i=0}^{m}(-1)^{i}\binom{m}{i}\binom{m+j-1}{j}x^{si+j}=
+ =\sum_{k=0}^{\infty}\sum_{i=0}^{m}(-1)^{i}\binom{m}{i}\binom{m+k-si-1}{k-si}x^{k}\,
+si+j=k
+j=k-si
+{\binom{m}{k}}_{s}=\sum_{i=0}^{m}(-1)^{i}\binom{m}{i}\binom{m+k-si-1}{m-1}\,
+s=3
+    (x^2+x+1)^n = \sum_{m=0}^\infty C_m^{(-n)}(-\frac{1}{2}) x^m 

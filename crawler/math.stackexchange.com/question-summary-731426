@@ -1,0 +1,38 @@
+\mathbf{X}\in {{R}^{m\times n}}
+\mathbf{a,b}\in {{R}^{m\times 1}}
+f(\mathbf{{{X}^{T}}a})
+\mathbf{{{X}^{T}}a=v}
+f
+f\left( x \right)=1/\left( 1+{{e}^{-x}} \right)
+\partial \mathbf{w^T w} / \partial \mathbf{X}
+\mathbf{w}^T\mathbf{w}=\sum_{k=1}^nf(v_k)^2
+\frac{d\mathbf{w}^T\mathbf{w}}{dv_g}=2f(v_g)\frac{df(v_g)}{dv_g}
+f(x)=1/(1+e^{-x})
+\frac{df(v_g)}{dv_g}=\frac{e^{-v_g}}{(1+e^{-v_g})^2}
+\frac{d\mathbf{w}^T\mathbf{w}}{dv_g}=2f(v_g)\frac{e^{-v_g}}{(1+e^{-v_g})^2}
+v_g
+g
+\mathbf{X}^T
+\mathbf{a}
+v_g=\sum_{k=1}^mX_{k,g}a_k
+X_{k,g}
+\mathbf{X}
+k\in \{1,2,..,m\}
+g\in \{1,2,..,n\}
+f\in \{1,2,..,m\}
+\frac{dv_g}{dX_{f,g}}=a_f
+\frac{d\mathbf{w}^T\mathbf{w}}{dX_{f,g}}=\frac{d\mathbf{w}^T\mathbf{w}}{dv_g}\frac{dv_g}{dX_{f,g}}=2f(v_g)\frac{e^{-v_g}}{(1+e^{-v_g})^2}a_f
+\mathbf{X}
+\frac{d\mathbf{w}^T\mathbf{w}}{d\mathbf{X}}=\mathbf{AD}
+\mathbf{A}
+m\times n
+n
+m
+[a_1,a_2,\cdots,a_m]
+\mathbf{A}=\left( \begin{array}{cccc} a_1 & a_1 & \cdots & a_1  \\ a_2 & a_2 & \cdots & a_2 \\ a_3 & a_3 & \cdots & a_3 \\ \vdots & \vdots & \ddots & \vdots \\ a_m & a_m & \cdots & a_m \end{array} \right)
+\mathbf{D}
+n\times n
+r
+2f(v_r)\frac{e^{-v_r}}{(1+e^{-v_r})^2}
+r\in\{1,2,..,n\}
+\mathbf{D}=\left( \begin{array}{cccc} 2f(v_1)\frac{e^{-v_1}}{(1+e^{-v_1})^2} & 0 & 0 & 0  \\ 0 & 2f(v_2)\frac{e^{-v_2}}{(1+e^{-v_2})^2} & 0 & 0 \\ 0 & 0 & \ddots & 0 \\ 0 & 0 & 0 & 2f(v_n)\frac{e^{-v_n}}{(1+e^{-v_n})^2} \end{array} \right)

@@ -1,0 +1,32 @@
+\mu 
+% %TCIMACRO{\U{211d} }% %BeginExpansion \mathbb{R} %EndExpansion ^{d}
+\mu \left( B\left( a,r\right) \right) \leq Cr^{n}
+n\in (0,d]
+B\left( a,r\right) 
+% %TCIMACRO{\U{211d} }% %BeginExpansion \mathbb{R} %EndExpansion ^{d}
+\int_{% %TCIMACRO{\U{211d} }% %BeginExpansion \mathbb{R} %EndExpansion ^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu \left( x\right) =\infty 
+\int_{% %TCIMACRO{\U{211d} }% %BeginExpansion \mathbb{R} %EndExpansion ^{d}}\frac{1}{\left\vert x\right\vert ^{n}}d\mu \left( x\right) \geq \int_{% %TCIMACRO{\U{211d} }% %BeginExpansion \mathbb{R} %EndExpansion ^{d}\backslash B\left( 0,1\right) }\frac{1}{\left\vert x\right\vert ^{n}}% d\mu \left( x\right) =\sum_{k=0}^{\infty }\int_{B\left( 0,2^{k+1}\right) \backslash B\left( 0,2^{k}\right) }\frac{1}{\left\vert x\right\vert ^{n}}% d\mu \left( x\right) \geq \sum_{k=0}^{\infty }\frac{1}{\left( 2^{k+1}\right) ^{n}}\mu \left( B\left( 0,2^{k+1}\right) \backslash B\left( 0,2^{k}\right) \right) 
+r
+n
+s
+m
+n
+(*)
+ \frac1{r^n}=\int_r^{+\infty}n\frac{\mathrm ds}{s^{1+n}}, 
+ \int_{\mathbb R^d}\frac1{\|x\|^n}\mathrm d\mu(x)=\int_{\mathbb R^d}\int_{\|x\|}^{+\infty}n\frac{\mathrm ds}{s^{1+n}}\,\mathrm d\mu(x)=n\int_0^{+\infty}m(s)\frac{\mathrm ds}{s^{1+n}}=(*), 
+ m(s)=\mu(B(O,s)). 
+(*)
+0
+m(s)\leqslant Cs^a
+s\to0
+a\gt n
+(*)
+m(s)\leqslant Cs^b
+s\to\infty
+b\lt n
+m(s)\geqslant Cs^n
+s\to0
+s\to\infty
+(*)
+n\leqslant d
+n

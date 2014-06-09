@@ -1,0 +1,30 @@
+ q(n,n+1) = -q(n,n)= \lambda n
+d/dt.p_t(n,n) = -\lambda n p_t(n,n)
+p_0(n,n) = 1
+d/dt p_t(n,n+k) = -\lambda (n+k) p_t(n,n+k) + \lambda (n+k-1) p_t(n,n+k-1)
+p_0(n,n+k)=0
+n=1 
+q_t(k) = p_t(1,1+k)
+d/dt q_t(k) =  -\lambda (1+k) q_t(k) + \lambda k q_t(k-1) 
+ q_t(0) = e^{-\lambda t}
+q_t(k) = (exp(\lambda t) -1)^k exp(-(k+1)\lambda t) 
+q_t(k)
+q_t(k-1)
+q_t(0)
+q_t(1)
+q_t(0)
+q_t(1)
+q_t(1)
+q_t(2)
+q_t(1)
+q_t(2)
+q_t(k)
+u
+u(t)=q_t(1)
+u'(t)=-2\lambda u(t)+\lambda q_0(t)
+u(0)=0
+(\mathrm e^{2\lambda t}u(t))'=\mathrm e^{2\lambda t}\lambda q_0(t)=\lambda \mathrm e^{\lambda t}
+\mathrm e^{2\lambda t}u(t)=\mathrm e^{\lambda t}+C
+C
+u(0)=0
+q_t(1)=\mathrm e^{-\lambda t}-\mathrm e^{-2\lambda t}

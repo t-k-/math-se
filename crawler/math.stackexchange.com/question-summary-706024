@@ -1,0 +1,35 @@
+A
+B
+A
+B
+B
+A
+36
+1\dots 36
+A
+ P(winning)=P(A>36\mid B=36)+P(A>35\mid B=35)+\cdots+P(A>4\mid B=4) 
+ P(winning)=P(A>36)P(B=36)+P(A>35)P(B=35)+\cdots+P(A>4)P(B=4) 
+P(A>n)=\sum_{k=n+1}^{36} P(A=k)
+ P(winning)=0\cdot P(B=36)+P(A=36)P(B=35)+\cdots+[P(A=36)+\cdots+P(A=4)]P(B=4)\\ 
+ P(winning)=\sum_{n=4}^{36}\left(P(B=n)\sum_{k=n+1}^{36} P(A=k)\right). 
+A
+B
+A
+\frac 1{6^6}
+36
+B
+36
+\frac 1{4^9}
+\frac 1{6^6}(1-\frac 1{4^9})
+A
+B
+9 \cdot 2.5=22.5
+A
+50\%
+23
+23
+p
+\frac p2
+ G(x)={\left(\dfrac{x^{6} + x^{5} + x^{4} + x^{3} + x^{2} + x}{6}\right)}^{6} {\left(\dfrac{\dfrac{1}{x} + \dfrac{1}{x^{2}} + \dfrac{1}{x^{3}} + \dfrac{1}{x^{4}}}{4}\right)}^{9} 
+ \dfrac{725864657}{2038431744}\approx 0.356089753378566 
+\approx 0.35643

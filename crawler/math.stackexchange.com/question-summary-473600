@@ -1,0 +1,46 @@
+a\in\mathbb{R}
+b\in(0,\infty)
+f^{\prime}
+f
+g(x):=f(x)-a
+y=2x-1
+(-1,1)
+g''=g'g/b,\quad g(1/2) =0,\quad g'(1/2)=\sqrt {2\pi b}.
+h(y):=g((y+1)/2),\quad 4h''(y) = g'' ((y+1)/2),\quad \quad 2h'(y) = g' ((y+1)/2).
+h''(y)= \frac{h(y)h'(y)}{2b},\quad h(0) =0,\quad h'(0)=\frac{\sqrt {2\pi b}}{2}. 
+C
+C= h'(0)=\frac{\sqrt {2\pi b}}{2}>0
+\tan x'= \tan^2 x+1
+h'(y) = \frac{h^2}{4b}+C,\quad h(0) =0,\quad h'(0)=\frac{\sqrt {2\pi b}}{2}.
+h(y) = A\tan(By),
+   h' (y) =   AB(\tan^2(By)+1)=  \frac BA h^2(y) +AB= \frac{h^2}{4b}+ \frac{\sqrt {2\pi b}}{2}.
+A
+B
+h
+f
+\frac BA =\frac{1}{4b},
+ AB=   \frac{\sqrt {2\pi b}}{2},
+ sol := dsolve({diff(f(x), x, x)-(f(x)-a)*(diff(f(x), x))/b = 0, f(1/2) = a, (D(f))(1/2) = sqrt(2*Pi*b)})
+f ( x ) =1/2\, \left( 2\,\tan \left( 1/4\,{\frac {\sqrt{\sqrt {2}\sqrt {\pi \,b}b} \left( 2\,x-1 \right) \sqrt {2}}{b}}  \right) \sqrt {\sqrt{2}\sqrt {\pi \,b}b}+\sqrt {2}a \right) \sqrt {2}.  
+f(\frac{1}{2})
+f'(\frac{1}{2})
+f''(\frac{1}{2}) = 0
+f(x)
+x = \frac{1}{2}
+f(x) = \frac{f(  \frac{1}{2} )}{0!} + \frac{f'(  \frac{1}{2} )}{1!}x + \frac{f''(  \frac{1}{2} )}{2!}x^2 
+f(x)_{x = \frac{1}{2}} \approx a + x\sqrt{2πb}
+f
+f'(x)=g(f)
+f''(x) =\frac{dg}{dx} = \frac{dg}{df}\frac{df}{dx}
+ \frac{dg}{df}f'(x)-\frac{f-a}{b}f'(x)=0\\ \frac{dg}{df}=\frac{f-a}{b} 
+g
+ g'' = \frac{g}{2b} g'
+ g(0)=0
+ g'(0)=\frac{\sqrt{2 \pi b}}{2} 
+g''=f(g)g'
+g=g(x)
+ \int \frac{dg}{F(g) + C_1}=C_2 + x 
+C_1
+C_2
+F(g)=\int f(g) dg
+tan

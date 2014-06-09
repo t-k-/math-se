@@ -1,0 +1,23 @@
+4
+2
+d(x,x_1,y,y_1)=(x−x_1)^2+(y−y_1)^2
+\frac{(x+h)^2}{a^2}+\frac{(y+k)^2}{b^2}= 1
+\frac{(x_1+h_1)^2}{a_1^2}+\frac{(y_1+k_1)^2}{b_1^2}= 1
+x
+x_1
+y
+y_1
+h
+k
+a
+b
+h_1
+k_1
+a_1
+b_1
+\mathcal{E}_1 := \displaystyle\left\{ (x_1, y_1) \in \mathbb{R}^2 : \left(\frac{ x_1 - x_{10}}{a_1}\right)^2 + \left(\frac{ y_1 - y_{10}}{b_1}\right)^2 = 1 \right\}
+\mathcal{E}_2 := \displaystyle\left\{ (x_2, y_2) \in \mathbb{R}^2 : \left(\frac{ x_2 - x_{20}}{a_2}\right)^2 + \left(\frac{ y_2 - y_{20}}{b_2}\right)^2 = 1 \right\}
+\gamma_1, \gamma_2 : [0, 2 \pi] \to \mathbb{R}^2
+\gamma_1 (\theta_1) = \left[\begin{array}{c} x_{10} + a_1 \cos(\theta_1)\\ y_{10} + b_1 \sin(\theta_1)\end{array}\right]
+\gamma_2 (\theta_2) = \left[\begin{array}{c} x_{20} + a_2 \cos(\theta_2)\\ y_{20} + b_2 \sin(\theta_2)\end{array}\right]
+\displaystyle\min_{(\theta_1, \theta_2)} \| \gamma_1 (\theta_1) - \gamma_2 (\theta_2)\|_2^2 \quad{} \text{subject to} \quad{} (\theta_1, \theta_2) \in [0, 2 \pi]^2

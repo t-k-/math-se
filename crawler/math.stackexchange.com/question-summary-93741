@@ -1,0 +1,25 @@
+\int_{-\infty}^{\infty}\frac{e^{-x^2}(2x^2-1)}{1+x^2}dx.
+I=\int_{-\infty}^\infty\frac{e^{-x^2}}{1+x^2}dx
+\int_{-\infty}^\infty\frac{e^{-x^2}(2x^2+2-3)}{1+x^2}dx=2\sqrt{\pi}-3I.
+I
+t\geq 0
+I(t)=\int_{-\infty}^\infty\frac{e^{-tx^2}}{1+x^2}dx.
+I(0)=\arctan{\infty}-\arctan{(-\infty)} = \pi
+I'(t)=\int_{-\infty}^\infty\frac{-x^2e^{-tx^2}}{1+x^2}dx.
+I(t)
+I(t)-I'(t)=\int_{-\infty}^\infty e^{-tx^2}dx = \sqrt{\frac{\pi}{t}}.
+e^{-t}
+-\frac{d}{dt}(e^{-t}I(t)) = e^{-t}\sqrt{\frac{\pi}{t}}.
+t=0
+t
+-e^{-t}I(t)+I(0) = \sqrt{\pi} \int_0^t \frac{e^{-t}}{\sqrt t}dt =  2\sqrt{\pi} \int_0^\sqrt{t}e^{-u^2} du = \pi \text{ erf}\sqrt{t}
+I(0)=\pi
+I(t)=e^t(\pi - \pi \text{ erf}(\sqrt{t})) = e^{t}\pi \text{ erfc}(\sqrt{t}).
+I=\int_{-\infty}^\infty \frac{e^{-x^2}}{1+x^2}dx.
+\frac{1}{1+x^2}= \int_0^\infty e^{-s(1+x^2)}ds,
+I=\int_{-\infty}^\infty e^{-x^2} \int_{0}^\infty e^{-s(1+x^2)}ds\:  dx.
+\int_{0}^\infty e^{-s} \int_{-\infty}^\infty e^{-x^2(1+s)}dx\:  ds = \int_{0}^\infty e^{-s} \sqrt{\frac{\pi}{1+s}} ds = e\sqrt{\pi}\int_{0}^\infty  \frac{e^{-(s+1)}}{\sqrt{1+s}} ds = e\pi \text{ erfc}(1).
+\sqrt\pi \text{ erfc}(1)
+u=\sqrt{1+s}
+du= \frac{ds}{2\sqrt{1+s}}
+x^2 = t

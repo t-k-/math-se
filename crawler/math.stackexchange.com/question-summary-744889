@@ -1,0 +1,13 @@
+Y_t:= e^{\mu t}X_t
+dY_t = [\mu e^{\mu t}X_t -  e^{\mu t}\mu X_t + e^\mu t \sigma dW_t] 
+dY_t = [ -  e^{\mu t}\mu X_t + e^\mu t \sigma dW_t] 
+e^{\mu t}\mu X_t
+\{W_t\}_{t\geq0}
+\mu, \sigma, X_0
+dX_t = - \mu X_t \, dt + \sigma \, dW_t \tag{1}
+Y_t := e^{\mu t} X_t
+df(t,X_t)= \frac{\partial}{\partial x} f(t,X_t) \, dX_t + \frac{\partial}{\partial t} f(t,X_t) \, dt + \frac{1}{2} \frac{\partial^2}{\partial x^2} f(t,X_t) \, d\langle X \rangle_t. \tag{2}
+f(t,x) = e^{\mu t} \cdot x
+\begin{align*} \frac{\partial}{\partial x} f(t,x) = e^{\mu t} \qquad \quad \frac{\partial^2}{\partial x^2} f(t,x) = 0 \qquad \quad \frac{\partial}{\partial t} f(t,x) = \mu e^{\mu t}  x. \end{align*}
+(2)
+\begin{align*} dY_t &= e^{\mu t} dX_t + \mu e^{\mu t} X_t \, dt \stackrel{(1)}{=} - \mu e^{\mu t} X_t \, dt + \sigma e^{\mu t} dW_t + \mu e^{\mu t} X_t\end{align*}

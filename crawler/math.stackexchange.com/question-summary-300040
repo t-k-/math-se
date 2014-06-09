@@ -1,0 +1,19 @@
+tx'(t)=(2t^2+1)x(t)+t^2,t>0
+t\rightarrow \infty
+\mu(t)
+t
+ tx' - (2t^2 + 1)x = t^2 
+ \mu x' - (2t + 1/t)\mu x = t\mu \;\;\;\;\;(1)
+\mu(t)
+-(2t+1/t)\mu = \mu'
+ \mu x' + \mu' x = t\mu
+ \frac{d}{dt} (\mu x) = t\mu
+\mu x = \int t\mu dt
+ x(t) = \frac{\int t\mu(t) dt}{\mu(t)} \;\;\;\;\;\;\;(3) 
+-(2t + 1/t) = \mu'/\mu = d/dt\ln(\mu)
+\mu(t)
+ \ln(\mu) = \int -(2t + 1/t) \;dt = -t^2 - \ln(t) + C 
+ \mu(t) = e^{-t^2 - \ln(t) + C} = Ce^{-t^2}/t \;\;\;\;\;(4)
+ x(t) = \frac{\int t Ce^{-t^2}/t \;dt}{Ce^{-t^2}/t} = \frac{\int e^{-t^2} \;dt}{e^{-t^2}/t}
+x(t)
+ x(t) = \frac{\frac{1}{2}t\sqrt{\pi}\;\mathrm{erf}(t) + Ct}{e^{-t^2}}

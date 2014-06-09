@@ -1,0 +1,12 @@
+ u_n = \int_0^1 \ln(1+t^n) \mathrm dt 
+ u_n \sim \frac{\pi^2}{12n}
+I(n)
+l=0
+\log(1+t^n) = \sum_{k=1}^{\infty} \dfrac{(-1)^{k-1} t^{nk}}{k}
+I(n) = \int_0^1 \log(1+t^n) dt = \sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}k \int_0^1 t^{nk} dt
+\int_0^1 t^{nk} dt = \dfrac1{nk+1}
+I(n) = \sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}{k(nk+1)} = \sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}{nk^2(1+1/(nk))}
+\dfrac1{1 + \dfrac1{nk}} = \sum_{l=0}^{\infty} \left(- \dfrac1{nk}\right)^l
+\sum_{k=1}^{\infty} \dfrac{(-1)^{k-1}}{k^{2+l}} = \left(\dfrac{2^{l+1}-1}{2^{l+1}} \right) \zeta(l+2)
+\color{red}{\boxed{ I(n) = \displaystyle \sum_{l=0}^{\infty} \dfrac{(-1)^l}{n^{l+1}}\left(\dfrac{2^{l+1}-1}{2^{l+1}} \right) \zeta(l+2)}}
+\color{blue}{\boxed{ I(n) \sim \dfrac{(-1)^0}{n^{0+1}}\left(\dfrac{2^{0+1}-1}{2^{0+1}} \right) \zeta(0+2) = \dfrac{1}{n}\left(\dfrac{2-1}{2} \right) \zeta(2) = \dfrac{\zeta(2)}{2n} = \dfrac{\pi^2}{12n}}}

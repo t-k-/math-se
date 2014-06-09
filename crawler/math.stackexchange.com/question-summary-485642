@@ -1,0 +1,21 @@
+\Omega
+[0,1]
+\mathbb{R}
+\mathcal{P}
+X_t(\omega):=\omega_t
+\mu=(\mu_t)_{0\leq t\leq 1}
+\int_{\mathbb{R}}x\mu_s(dx)=\int_{\mathbb{R}}x\mu_t(dx),\ \ \forall s, t\in [0,1]
+\mathcal{P}(\mu)=\{\mathbb{P}\in\mathcal{P}: \mathbb{P}\circ X_t^{-1}=\mu_t,\ \ \forall t\in [0,1]\}
+\mathcal{P}^n(\mu)=\{\mathbb{P}\in\mathcal{P}: \mathbb{P}\circ X_{t_k}^{-1}=\mu_{t_k},\ \ \forall 0\leq k\leq 2^n\}
+t_k=\frac{k}{n},\ \ 0\leq k\leq 2^n
+\mathbb{P}\in\mathcal{P}(\mu)
+X_t
+\mu_t
+\mathbb{P}\in\mathcal{P}^n(\mu)
+X_{t_k}
+\mu_{t_k}
+\bigcap_{n\geq 1}\mathcal{P}^n(\mu)=\mathcal{P}(\mu)
+f
+\Omega
+\lim_{n\rightarrow\infty}\sup_{\mathbb{P}\in\mathcal{P}^n(\mu)}E^{\mathbb{P}}[f(X)]=\sup_{\mathbb{P}\in\mathcal{P}(\mu)}E^{\mathbb{P}}[f(X)] (\ast)
+(\ast)

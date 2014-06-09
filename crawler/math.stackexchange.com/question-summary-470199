@@ -1,0 +1,16 @@
+\int_0^\infty\sin(x^{1+a})dx
+\int_0^\infty\sin(x^{1+a})dx=\frac{\sqrt{\pi}2^{\frac{2}{2+2a}}\Gamma(\frac{1}{2}+\frac{1}{2+2a})}{(2+2a)\Gamma(1-\frac{1}{2+2a})}
+1
+a
+0
+a > 0
+t = x^{1+a}
+ \dfrac{1}{1+a} \int_0^\infty \sin(t)\; t^{-a/(1+a)}\ dt
+a/(1+a) = b
+0 < b < 1
+\rm{Re}(r) > 0
+r \to  i
+-
+ \int_0^\infty  e^{-r t}\ t^{-b}\ dt = r^{b-1} \Gamma(1-b)
+ \int_0^\infty e^{ -i t} t^{-b}\ dt = (i)^{b-1} \Gamma(1-b) = e^{i\pi (b-1)/2} \Gamma(1-b)
+ \int_{0}^\infty \sin(t) t^{-b}\ dt = - \sin(\pi (b-1)/2) \Gamma(1-b) 

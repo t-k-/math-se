@@ -1,0 +1,17 @@
+x^2 + y^2 + w^2 \le 1
+V_n(r)
+n
+\int_{-r}^r \! V_n\left(\sqrt{r^2 - x^2}\right)\mathrm{d}x = V_{n+1}(r)
+t = \dfrac{x}{r}
+\begin{align}V_{n+1}(r) &= \int_{-r}^r \! V_n\left(\sqrt{r^2 - x^2}\right)\mathrm{d}x \\ &= r\int_{-1}^1 \! V_n\left(\sqrt{1-t^2}\right)\mathrm{d}x\end{align}
+V_3(r) = \frac{4}{3}\pi  r^3
+\begin{align}V_{4}(r) &= \frac{4\pi r^4}{3}\int_{-1}^1\!\left(\sqrt{1-t^2}\right)^3 \mathrm{d}t \\ &=  \frac{4\pi r^4}{3}\underbrace{\int_{-1}^1\!\sqrt{1-t^2}}_{\text{Half unit circle}} \, \mathrm{d}t  - \frac{4\pi r^4}{3}\underbrace{\int_{-1}^1t^2\!\sqrt{1-t^2}}_{\text{Even function}} \,\mathrm{d}t \\ &= \frac{4\pi r^4}{3}\cdot\frac{\pi}{2} - \frac{8\pi r^4}{3}\int_{0}^1\!t^2\sqrt{1-t^2}\, \mathrm{d}t\end{align}
+\displaystyle \int \! t^2\sqrt{1-t^2} \, \mathrm{d}t
+t = \sin(u)
+\displaystyle \int \! \sin^2(u)\cos^2(u) \, \mathrm{d}u = \int \! \sin^2(u)(1-\sin^2(u)) \, \mathrm{d}u =  \int \! \sin^2(u) \, \mathrm{d}u +  \int \! \sin^4(u)\, \mathrm{d}u
+\displaystyle \int \! \sin^2(u)\cos^2(u) \, \mathrm{d}u = \frac{1}{8}\left(u + 2\sin^3(u)\cos(u)-\sin(u)\cos(u)\right) + C
+\displaystyle \int \! t^2\sqrt{1-t^2} \, \mathrm{d}t = \frac{1}{8}\left(\sin^{-1}(t) + 2t^3\sqrt{1-t^2}-t\sqrt{1-t^2}\right) + C
+\sin^{-1}(t)
+\displaystyle \int_{0}^1 \! t^2\sqrt{1-t^2} \, \mathrm{d}t = \frac{\sin^{-1}(1)}{8} = \frac{\pi}{16}.
+\begin{align}V_{4}(r) &= \frac{4\pi r^4}{3}\cdot\frac{\pi}{2} - \frac{8\pi r^4}{3}\int_{0}^1\!t^2\sqrt{1-t^2}\, \mathrm{d}t \\ &= \frac{2\pi^2 r^4}{3} - \frac{\pi^2 r^4}{6} \\ &= \frac{\pi^2r^4}{2}\end{align}
+\boxed{V_4(1) = \dfrac{\pi^2}{2}}

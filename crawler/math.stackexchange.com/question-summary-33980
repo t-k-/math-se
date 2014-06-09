@@ -1,0 +1,55 @@
+\log n =\sum_{d|n} \Lambda(n)
+\sum_{n\leq x} \log n=\sum_{n\leq x}\sum_{d|n} \Lambda(d)=\sum_{d\leq x} \Lambda(d)\lfloor x/d\rfloor =x\sum_{d\leq x} \frac{\Lambda(d)}{d}+O\left(\psi(x) \right)
+\theta(x)=\psi (x)+O(\sqrt{x})
+\psi(x)=O(x)
+\sum_{n\leq x} \log n= x\log x + O(x)
+\frac{\Lambda(d)}{d}
+\sum_{d\leq x} \frac{\Lambda(d)}{d}=\log x+O(1).
+\sum_{p\leq x}\frac{\log p}{p}=\log x+O(1).
+(N,2N]
+\theta(2N)-\theta(N)\leq N\log4.
+N
+N=2^{r}.
+\binom{2N}{N}.
+\prod_{N<p\leq2N}p\leq\binom{2N}{N}
+\binom{2N}{N}\leq(1+1)^{2N}=4^{N},
+\prod_{N<p\leq2N}p\leq4^{N},
+\theta\left(2\right)-\theta\left(1\right)\leq\log4
+\theta\left(4\right)-\theta\left(2\right)\leq2\log4
+\theta\left(8\right)-\theta\left(4\right)\leq4\log4
+\theta(2^{r})-\theta\left(2^{r-1}\right)\leq2^{r-1}\log4
+ \theta\left(2^{r+1}\right)-\theta\left(2^{r}\right)\leq2^{r}\log4.
+r
+x
+(2^{r},2^{r+1}]
+\theta(x)\leq\theta(2^{r+1})
+x>2^{r}
+\theta\left(2^{r+1}\right)-\theta\left(1\right)\leq\left(2^{r}+\cdots+1\right)\log4\leq2^{r+1}\log4
+\theta(x)\leq2^{r+1}\log4\leq x\cdot2\log4<3x
+x \geq 1
+\sum\limits_{ n \leq x} \frac{a(n)}{n} = \log{x} + \mathcal{O}(1)
+A >0
+x_{0} > 0
+x \geq 1
+\sum\limits_{ n \leq x} a(n) \leq Bx
+A>0
+x_{0}>0
+x \geq x_{0}
+\sum\limits_{ n \leq x} a(n) \geq Ax
+p^{m} \leq x
+p \leq x
+\displaystyle \Bigl[\frac{x}{p^{m}}\Bigr]=0
+p >x
+\sum\limits_{p \leq x}\ \sum\limits_{m=1}^{\infty}\biggl[\frac{x}{p^{m}}\biggr]\log{p}=\sum\limits_{p \leq x} \biggl[\frac{x}{p}\biggr]\log{p} + \sum\limits_{p \leq x} \ \sum\limits_{m=2}^{\infty} \biggl[\frac{x}{p^{m}}\biggr]\log{p}
+\mathcal{O}(x)
+a(n)= \Lambda_{1}(n)
+\Lambda_{1}(n) = \biggl\{ \begin{array}{cc} \log{p} & \text{if} \ n \ \text{is a prime} \\\ 0 & \text{otherwise}\end{array}
+\sum\limits_{n \leq x} \Lambda_{1}(n) \biggl[\frac{x}{n}\biggr] = x\log{x} + \mathcal{O}(x)
+\sum\limits_{p \leq x} \frac{\log{p}}{p} = \log{x} + \mathcal{O}(1)
+\pi(x) \sim x/\log x
+O(1)
+x \to \infty
+\operatorname{li}(x)
+ \sum_{p \leq x} {\log p \over p} 	= \sum_{n \leq x} {\log n \over n} \Big\{{\pi(n) - \pi(n-1)}\Big\} 	= \int_2^x {\log t \over t} d\pi(t), 
+ \sum_{p \leq x} {\log p \over p} 	= {{\log t \over t} \pi(t)}\Bigg|_2^x - \int_2^x {1 - \log t \over t^2} \pi(t) dt. \tag{1} 
+ \pi(x) = \operatorname{li}(x) + O\Big({x e^{-c\sqrt{\log x}}}\Big), \tag{2} 

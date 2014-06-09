@@ -1,0 +1,29 @@
+I(x,y)
+F(x,y,I,\nabla I) = F(x,y,I,I_x,I_y) = \|\nabla I\|^2
+I
+\nabla I
+ E(I) = \int_\Omega \|\nabla I\|^2 d\Omega 
+ \begin{align*} \frac{\partial F}{\partial I} &= div \left( \frac{\partial F}{\partial \nabla I} \right)\\\\\\\\ \frac{\partial \| \nabla I \|^2}{\partial I} &= \frac{\partial \| \nabla I \|^2}{\partial I_{xx}} + \frac{\partial \| \nabla I \|^2}{\partial I_{yy}} \end{align*} 
+ \frac{\partial I}{\partial t} = div \left( \nabla I \right) = \Delta I 
+t
+E
+E(I)=\frac12\int\|\nabla I\|^2dx
+I\in H^1(\Omega)
+\delta I\in H^1(\Omega)
+\delta I=0
+\Omega
+I\in H^2(\Omega)
+E
+L^2
+\nabla E(I)= -\Delta I
+ E'(I)\delta I = \int_\Omega \nabla I \cdot \nabla \delta I\ dx. 
+ E'(I) = - \int_\Omega div(\nabla I)\delta I\ dx. 
+I_k
+I_{k+1}
+I_k
+t=k\cdot h
+I:\mathbb R\to H^1(\Omega)
+h\searrow 0
+ I_{k+1} = I_k + h \nabla E(I_k) = I_k + t_k (-\Delta I_k). 
+ \frac1h(I_{k+1}-I_k) = -\Delta I_k, 
+ \frac{\partial I}{\partial t} = -\Delta I. 

@@ -1,0 +1,31 @@
+f:\mathbb R \longrightarrow \mathbb R
+P
+\frac{1}{P}\int_0^Pf(x)dx=N.
+\lim_{x\to 0^+}\frac 1x\int_0^x f\left(\frac{1}{t}\right)dt=N.
+f\in L^1([0,P])
+ F(x)=\int_0^x(f(t)-N)\;\mathrm{d}t\tag{1} 
+M=\max\limits_{[0,P]}|F|
+ \begin{align} \lim_{x\to0^+}\frac 1x\int_0^x f\left(\frac{1}{t}\right)dt &=\lim_{x\to0^+}\frac1x\int_\frac1x^\infty\frac{f(t)}{t^2}\mathrm{d}t\tag{2a}\\ &=\lim_{x\to\infty}x\int_x^\infty\frac{f(t)}{t^2}\mathrm{d}t\tag{2b}\\ &=N+\lim_{x\to\infty}x\int_x^\infty\frac{f(t)-N}{t^2}\mathrm{d}t\tag{2c}\\ &=N+\lim_{x\to\infty}x\int_x^\infty\frac{1}{t^2}\mathrm{d}F(t)\tag{2d}\\ &=N+\lim_{x\to\infty}x\left(-\frac{F(x)}{x^2}+2\int_x^\infty\frac{F(t)}{t^3}\mathrm{d}t\right)\tag{2e}\\ &=N\tag{2f} \end{align} 
+\hskip{5mm}(\mathrm{2a})
+t\mapsto1/t
+\hskip{5mm}(\mathrm{2b})
+x\mapsto1/x
+\hskip{5mm}(\mathrm{2c})
+\displaystyle N=x\int_x^\infty\frac{N}{t^2}\mathrm{d}t
+\hskip{5mm}(\mathrm{2e})
+\hskip{5mm}(\mathrm{2f})
+\displaystyle\left|-\frac{F(x)}{x^2}+2\int_x^\infty\frac{F(t)}{t^3}\mathrm{d}t\right|\le\frac{2M}{x^2}
+g(t)=f\left(\frac P{2\pi}t\right)
+f
+2\pi
+P_n
+f
+f
+e^{ipt}
+p\in\mathbb Z
+p=0
+p\neq 0
+\int_0^{2\pi}f(t)dt=\frac 1p(e^{i2\pi p}-1)=0
+\left|\frac 1x\int_0^xf\left(\frac 1t\right)dt-\frac 1{2\pi}\int_0^{2\pi}f(t)dt\right|\leq 2\sup_{s\in\mathbb R}|f(s)-P_n(s)|+\left|\frac 1x\int_0^xP_n\left(\frac 1t\right)dt-\frac 1{2\pi}\int_0^{2\pi}P_n(t)dt\right|,
+\frac 1x\int_0^xf\left(\frac 1t\right)dt=\frac 1x\int_{1/x}^{+\infty}\frac{e^{ips}}{s^2}dx=\int_1^{+\infty}\frac{e^{ip\frac yx}}{y^2}dy,
+\left|\frac 1x\int_0^xf\left(\frac 1t\right)dt\right|\leq \frac x{|p|}\left(1+2\int_1^{+\infty}t^{-3}dt\right)=2\frac x{|p|},

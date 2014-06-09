@@ -1,0 +1,20 @@
+pred
+\lambda xgh.(h (g x)).
+K = \lambda xy.x
+I = \lambda x.x
+(G f)(K x)
+\beta
+(G f)((G f)(K x))
+\beta
+pred
+\lambda nfx.(n (G f) (K x) I)
+pred
+\alpha\beta
+(G f) = (\lambda xgh.(h (g x))) f
+= \lambda gh.(h(gf))
+(K x) = (\lambda xy.x) x
+= \lambda y.z
+(\alpha sub)
+(G f)(K x) = (\lambda gh.(h(g f))) \lambda y.z
+= \lambda h.(h((\lambda y.z) f))
+= \lambda h.(h (z))

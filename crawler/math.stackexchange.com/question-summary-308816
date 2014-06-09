@@ -1,0 +1,22 @@
+Y_1, Y_2, \ldots
+S_n:= Y_1+\cdots+Y_n
+E(Y_1\mid\sigma(S_n, S_{n+1}, \ldots))=S_n/n
+n \geq 1
+E(Y_1\mid\sigma(S_n, S_{n+1}, \ldots))=E(Y_k\mid \sigma(S_n, S_{n+1}, \ldots))
+k\leq n
+Y_i
+Y_j
+i,j\in\{1,\ldots,n\}
+ (Y_1,\ldots,Y_n, S_n, S_{n+1},\ldots) 
+ (*) E(Y_i|\sigma(S_n,S_{n+1},\ldots)) = E(Y_j|\sigma(S_n,S_{n+1},\ldots)) 
+ S_n = E(S_n |\sigma(S_n,S_{n+1},\ldots)) = \sum_{i=1}^n E(Y_i | \sigma(S_n,S_{n+1},\ldots)), 
+    S_n = n E(Y_1| \sigma(S_n,S_{n+1},\ldots)). 
+(Y_j)_{j \geq 1}
+j \leq n
+\mathbb{E}(Y_j \mid \sigma(S_n,S_{n+1},S_{n+2},\ldots)) = \mathbb{E}(Y_j \mid \sigma(S_n,Y_{n+1},Y_{n+2},\ldots))= \mathbb{E}(Y_j \mid \sigma(S_n))
+\mathbb{E}(Y_1 \cdot 1_B(S_n)) = \int \ldots \int_{y_1+\ldots+y_n \in B}y_1 \, \underbrace{d\mathbb{P}_{Y_1}(y_1)}_{d\mathbb{P}_{Y_j}(y_1)} \, d\mathbb{P}_{Y_2}(y_2) \ldots \underbrace{d\mathbb{P}_{Y_j}(y_j)}_{d\mathbb{P}_{Y_1}(y_j)} \ldots d\mathbb{P}_{Y_n}(y_n) \\ = \int \ldots \int_{y_1+\ldots+y_n \in B} y_1 \, d\mathbb{P}_{Y_j}(y_1) \, d\mathbb{P}_{Y_2}(y_2) \ldots d\mathbb{P}_{Y_1}(y_j) \ldots d\mathbb{P}_{Y_n}(y_n) = \mathbb{E}(Y_j \cdot 1_B(S_n))
+B \in \mathcal{B}(\mathbb{R})
+j \leq n
+j \leq n
+\mathbb{E}(Y_1 \mid \sigma(S_n)) = \mathbb{E}(Y_j \mid \sigma(S_n))
+S_n = \mathbb{E}(S_n \mid \sigma(S_n)) = n \cdot \mathbb{E}(Y_1 \mid \sigma(S_n)) = n \cdot \mathbb{E}(Y_1 \mid \sigma(S_n,S_{n+1},\ldots))

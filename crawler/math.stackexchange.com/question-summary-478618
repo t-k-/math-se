@@ -1,0 +1,29 @@
+u=x^2
+dv=\cos x\,dx
+dx
+du=2x\,dx
+v=\sin x
+\int_0^{\pi/2}x^2\cos x\,dx=\left[x^2\sin x\right]_0^{\pi/2}-2\int_0^{\pi/2}x\sin x\,dx\;.
+u=x
+dv=\sin x\,dx
+du=dx
+v=-\cos x
+\int_0^{\pi/2}x\sin x\,dx=\left[-x\cos x\right]_0^{\pi/2}+\int_0^{\pi/2}\cos x\,dx\;.
+\left[x^2\sin x\right]_0^{\pi/2}=\frac{\pi^2}4
+\left[-x\cos x\right]_0^{\pi/2}=0
+\int_0^{\pi/2}x^2\cos x\,dx=\frac{\pi^2}4-2\int_0^{\pi/2}\cos x\,dx\;,
+\begin{align*} \int_0^{\pi/2}x^n\cos x\,dx&=\left[x^n\sin x\right]_0^{\pi/2}-n\int_0^{\pi/2}x^{n-1}\sin x\,dx\\ &=\left(\frac{\pi}2\right)^n-n\int_0^{\pi/2}x^{n-1}\sin x\,dx\;. \end{align*}
+u=x^{n-1}
+dv=\sin x\,dx
+du=(n-1)x^{n-2}\,dx
+v=-\cos x
+\begin{align*} \int_0^{\pi/2}x^{n-1}\sin x\,dx&=\left[-x^{n-1}\cos x\right]_0^{\pi/2}+(n-1)\int_0^{\pi/2}x^{n-2}\cos x\,dx\\ &=(n-1)\int_0^{\pi/2}x^{n-2}\cos x\,dx\;, \end{align*}
+\begin{align*} \int_0^{\pi/2}x^n\cos x\,dx&=\left(\frac{\pi}2\right)^n-n\int_0^{\pi/2}x^{n-1}\sin x\,dx\\ &=\left(\frac{\pi}2\right)^n-n(n-1)\int_0^{\pi/2}x^{n-2}\cos x\,dx\;. \end{align*}
+n\ge 2
+\int_0^{\pi/2}x^n\cos x\,dx
+n
+n
+\int_0^{\pi/2}\cos x\,dx\;,
+\int_0^{\pi/2}x\cos x\,dx
+\begin{align*} \int_0^{\pi/2}x^8\cos x\,dx&=\left(\frac{\pi}2\right)^8-8\cdot7\int_0^{\pi/2}x^6\cos x\,dx\\ &=\left(\frac{\pi}2\right)^8-56\left(\left(\frac{\pi}2\right)^6-6\cdot 5\int_0^{\pi/2}x^4\cos x\,dx\right)\\ &=\left(\frac{\pi}2\right)^8-56\left(\frac{\pi}2\right)^6+56\cdot30\left(\left(\frac{\pi}2\right)^4-\int_0^{\pi/2}x^2\cos x\,dx\right)\\ &=\left(\frac{\pi}2\right)^8-56\left(\frac{\pi}2\right)^6+1680\left(\frac{\pi}2\right)^4-1680\int_0^{\pi/2}x^2\cos x\,dx\;, \end{align*}
+\int_0^{\pi/2}\cos x\,dx

@@ -1,0 +1,10 @@
+F(X)=tr(XX^TXX^T)
+\|H\|=\sqrt{tr(HH^T)}
+\displaystyle\lim_{H\to 0}O(H)=0
+E_{ij}=[\delta_{ij}]_{n\times m}
+ \frac{\partial}{\partial V}F(X)=\mathcal{D}F(X)\cdot V 
+ \frac{\partial}{\partial E_{ij}}F(X)=\mathcal{D}F(X)\cdot E_{ij}. 
+\frac{\partial}{\partial X_{ij}} \mathop{\rm tr}(X X^T X X^T) =\frac{\partial}{\partial X_{ij}} ( X_{kl} X_{ml} X_{mn} X_{kn}), 
+\frac{\partial}{\partial X_{ij}} X_{mn} =\delta_{im} \delta_{jn}
+\begin{align}\frac{\partial}{\partial X_{ij}} \mathop{\rm tr}(X X^T X X^T) &= \delta_{ik} \delta_{jl} X_{ml} X_{mn} X_{kn}  + \delta_{im} \delta_{jl} X_{kl} X_{mn} X_{kn} + \delta_{im} \delta_{jn} X_{kl} X_{ml}  X_{kn} + \delta_{ik} \delta_{jn}  X_{kl} X_{ml} X_{mn} \\ &= X_{mj} X_{mn} X_{in}+X_{kj} X_{in} X_{kn}  + X_{kl} X_{il}  X_{kj} +X_{il} X_{ml} X_{mj}\\ &=4(X X^T X)_{ij} . \end{align}
+\frac{\partial}{\partial X} \mathop{\rm tr}(X X^T X X^T) = 4 X X^T X.

@@ -1,0 +1,26 @@
+A
+B
+(X_A, Y_A)
+(X_B, Y_B)
+w_A
+h_A
+w_B
+h_B
+(x, y)
+A
+B
+A
+x_A = x - X_A
+y_A = Y_A - y
+A
+r_x = \frac{x_A}{w_A}
+r_y = \frac{y_A}{h_A}
+B
+(x_B, y_B)
+x'_B = w_B \times r_x
+y'_B = h_B \times r_y
+(x_B, y_B)
+x' = X_B + x'_B
+y' = Y_B - y'_B
+x' = X_B + w_B\frac{x - X_A}{w_A}
+y' = Y_B - h_B\frac{Y_A - y}{h_A}

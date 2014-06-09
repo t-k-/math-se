@@ -1,0 +1,37 @@
+x^2=10^2+7^2-20*7\cos(\theta)
+x
+\theta
+10cm
+7cm
+12:00
+12:05
+12:10
+12:15
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+ \begin{array}{rcrcr} \mbox{'hour hand'} & \to & r_{\rm hh}\cos\pars{\omega_{\rm hh}t}\,\hat{x} & + & r_{\rm hh}\sin\pars{\omega_{\rm hh}t}\,\hat{y} \\ \mbox{'minute hand'} & \to & r_{\rm mh}\cos\pars{\omega_{\rm mh}t}\,\hat{x} & + & r_{\rm mh}\sin\pars{\omega_{\rm mh}t}\,\hat{y} \end{array}\,,\quad \left\vert% \begin{array}{rcr} r_{\rm hh} & \equiv & 7\ \mbox{cm.} \\[2mm] r_{\rm mh} & \equiv & 10\ \mbox{cm.} \\[2mm] \omega_{\rm hh} & \equiv & {2\pi \over 12\ \mbox{hours}} \\[2mm] \omega_{\rm mh} & \equiv & {2\pi \over 1\ \mbox{min.}} \end{array}\right. 
+ {\rm d}\pars{t} \equiv \sqrt{\bracks{% r_{\rm hh}\cos\pars{\omega_{\rm hh}t} - r_{\rm mh}\cos\pars{\omega_{\rm mh}t}}^{2} + \bracks{% r_{\rm hh}\sin\pars{\omega_{\rm hh}t} - r_{\rm mh}\sin\pars{\omega_{\rm mh}t}}^{2}} 
+\ds{{\rm D}\pars{t} \equiv {\dd\pars{t} \over r_{\rm mh}}}
+\ds{\mu \equiv {r_{\rm hh} \over r_{\rm mh}} < 1}
+ {\rm D}^{2}\pars{t} =1 + \mu^{2}  - 2\mu\cos\pars{\omega t}\,,\qquad \omega \equiv \omega_{\rm mh} - \omega_{\rm hh} 
+\ddot{{\rm D}}\pars{t} = 0
+ 4\mu^{2}\omega^{2}\sin^{2}\pars{\omega t} =2{\rm D}^{2}\pars{t}\bracks{2\dot{\rm D}^{2}\pars{t}} =2{\rm D}^{2}\pars{t}\bracks{2\mu\omega^{2}\cos\pars{\omega t}} 
+ \mu\bracks{1 - \cos^{2}\pars{\omega t}} =\bracks{1 + \mu^{2} - 2\mu\cos\pars{\omega t}}\cos\pars{\omega t} =\pars{1 + \mu}^{2}\cos\pars{\omega t} -2\mu\cos^{2}\pars{\omega t} 
+ \mu\cos^{2}\pars{\omega t} - \pars{1 + \mu^{2}}\cos\pars{\omega t} + \mu = 0 \quad\imp\quad\cos\pars{\omega t} = \mu 
+t_{n}
+ \omega t_{n} = \arccos\pars{\mu} + 2n\pi\,,\qquad n\ \in\ {\mathbb Z}  
+\left\lbrace% \begin{array}{rcl} {\rm D}_{n}\pars{t} & = & \root{1 - \mu^{2}} \\ \dot{\rm D}_{n}\pars{t} & = & {\mu^{2} \over \root{1 - \mu^{2}}}\,\omega \end{array}\right. 
+12:00
+12:01
+\delta x=3-\sqrt{149-140\cos 5.5}\approx-0.11
+12:05
+12:06
+\delta x=\sqrt{149-140\cos27.5}-\sqrt{149-140\cos33}\approx-0.64
+12:10
+12:11
+\delta x \approx -0.66
+12:15
+12:16
+\delta x\approx -0.57
+12:10
+1
+(C)\,12:10

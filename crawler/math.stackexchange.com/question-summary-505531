@@ -1,0 +1,59 @@
+\mathbb{C}
+\tilde{\mathbb{R}^2}
+\tilde{\mathbb{R}^2}
+\mathbb{R}^2
+\mathbb{C}
+\tilde{\mathbb{R}^2}
+ (u,v),(u',v') \in \tilde{\mathbb{R}^2} \\ (u,v)\cdot_{\tilde{\mathbb{R}^2}}(u',v'):=(uu'-vv',uv'+vu').
+ \varphi:\mathbb{C}\rightarrow\tilde{\mathbb{R}^2} \\ z\mapsto(Re(z),Im(z)).
+f:\mathbb{C}\supset D\rightarrow \mathbb{C}
+\varphi \circ f
+\varphi
+\varphi
+g = \varphi\circ f\circ\varphi^{-1}
+\varphi(D)
+a\in\mathbb{C}
+ g'(z_0) := \lim_{z\rightarrow z_0} \frac{g(z) - g(z_0)}{z-z_0} 
+\varphi^{-1}
+\varphi
+g'(z_0) =
+\varphi
+\lim \varphi(\dots) = \varphi(\lim \dots)
+\varphi^{-1}
+z \rightarrow z_0
+\varphi^{-1}(z) \rightarrow \varphi^{-1}(z_0)
+\varphi
+\varphi\circ f \circ \varphi^{-1}
+ =\lim \frac{\varphi(f\circ\varphi^{-1}(z) - f\circ\varphi^{-1}(z_0))}{\varphi\circ\varphi^{-1}(z-z_0)} \\ = \lim \varphi\left (\frac{f\circ\varphi^{-1}(z) - f\circ\varphi^{-1}(z_0)}{\varphi^{-1}(z) - \varphi^{-1}(z_0)}\right ) 
+\forall z_0\in\mathbb{C}
+z_0
+\varphi(z)
+\varphi(z_0)
+\epsilon \gt 0
+B = B_{\delta}(z_0)
+\varphi(B) \subset B_{\epsilon}(\varphi(z_0))
+\mathbb G^{(2,0)}
+e_1, e_2
+\mathbb C
+\mathbb G^{(2,0)}_+
+\varphi
+\varphi(x+iy) \mapsto x + y e_1 e_2
+e_1 e_2 = -e_2 e_1
+e_1 e_1 = e_2 e_2 = 1
+(x + y e_1 e_2)(u + v e_1 e_2) = xu + xv e_1 e_2 + uy e_1 e_2 - vy = (xu - yv) + (xv + yu) e_1 e_2
+e_1 e_2
+i
+(e_1 e_2)^2 = -1
+\nabla = e_1 \partial_x + e_2 \partial_y
+\nabla (\varphi \circ f)(x + iy)
+f = g + ih
+g, h
+\begin{align*}\nabla \varphi[g(x,y) + i h(x,y) ] &= \nabla (g + h e_1 e_2) \\ &= e_1 \partial_x g + e_2 \partial_y g + e_2 \partial_x h - e_1 \partial_y h  \\ &= e_1 (\partial_x g - \partial_y h) + e_2 (\partial_y g + \partial_x h) \\ &= 0 \quad (\text{by C-R})\end{align*}
+\Phi: \mathbb C \to \mathbb G^{(2,0)}; \quad  \Phi(x + iy) = x e_1 - y e_2
+f
+\mathbb C
+\Phi \circ f
+\begin{align*}\nabla (\Phi \circ f)(x + iy) &= \nabla [g e_1 - h e_2] \\ &= e_1 e_1 \partial_x g + e_2 e_1 \partial_y g - e_2 e_2 \partial_y h - e_1 e_2 \partial_x h \\ &= (\partial_x g - \partial_y h) + e_1 e_2 (\partial_y g + \partial_x h) \\ &= 0 \end{align*}
+\Phi
+F = g e_1 - h e_2
+\nabla \cdot F = 0, \quad \nabla \wedge F = 0 \implies \nabla F = 0

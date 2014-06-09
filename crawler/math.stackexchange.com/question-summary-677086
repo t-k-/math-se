@@ -1,0 +1,28 @@
+A = (a_{ij})
+1 \leq i \leq m
+1 \leq j \leq n
+m \times n
+A: \mathbb{R}^n \to \mathbb{R}^m
+ A(x) = A(x_1,\dots,x_n) = \left( \sum_{j=1}^n a_{1j}x_j,\dots, \sum_{j=1}^n a_{mj}x_j \right) 
+ ||A(x)||_{\infty} \leq C ||x||_{\infty}.
+A
+|| A(x) - A(y) || = || A(x-y)|| \leq C ||x-y|| \;\;\;\;\; \forall x,y \in \mathbb{R}^n .
+A
+A = (a_{i,j})_{\substack{1 \leq i \leq m \\ 1 \leq j \leq n}}
+m \times n
+\mathbb{R}^{m}
+\Vert \cdot \Vert_{\infty, \mathbb{R}^{m}}
+ \forall x \in \mathbb{R}^{m}, \; \Vert x \Vert_{\infty , \mathbb{R}^{m}} = \max \limits_{1 \leq i \leq m} \vert x_{i} \vert 
+\Vert \cdot \Vert_{\infty,\mathbb{R}^{n}}
+\mathbb{R}^{n}
+ \begin{align*} \Vert Ax \Vert_{\infty,\mathbb{R}^{m}} & = {} \max \limits_{1 \leq i \leq m} \Big\vert \sum_{j=1}^{n} a_{i,j}x_{j} \Big\vert \\  &\leq \max \limits_{1 \leq i \leq m} \sum_{j=1}^{n} \vert a_{i,j} \vert \vert x_{j} \vert \\  &\leq \Big( \max \limits_{1 \leq i \leq m} \sum_{j=1}^{n} \vert a_{i,j} \vert \Big) \Vert x \Vert_{\infty,\mathbb{R}^{n}} \end{align*} 
+\displaystyle C=\max \limits_{1 \leq i \leq m} \sum_{j=1}^{n} \vert a_{i,j} \vert
+\star
+\forall x \in \mathbb{R}^{n}, \; \Vert Ax \Vert_{\infty} \leq C \Vert x \Vert_{\infty} \tag{$\star$}
+ \forall x \in \mathbb{R}^{m}, \; c_{1} \Vert x \Vert_{\infty,\mathbb{R}^{m}} \leq \Vert x \Vert_{\mathbb{R}^{m}} \leq c_{2} \Vert x \Vert_{\infty,\mathbb{R}^{m}} 
+ \forall x \in \mathbb{R}^{m}, \; d_{1} \Vert x \Vert_{\infty,\mathbb{R}^{n}} \leq \Vert x \Vert_{\mathbb{R}^{n}} \leq d_{2} \Vert x \Vert_{\infty,\mathbb{R}^{n}} 
+(\star)
+C'>0
+ \forall x \in \mathbb{R}^{n}, \; \Vert Ax \Vert_{\mathbb{R}^{m}} \leq C' \Vert x \Vert_{\mathbb{R}^{n}} 
+A
+ \forall (x,y) \in \big( \mathbb{R}^{n} \big)^{2}, \; \Vert Ax - Ay \Vert_{\mathbb{R}^{m}} \leq C' \Vert x - y \Vert_{\mathbb{R}^{n}} 

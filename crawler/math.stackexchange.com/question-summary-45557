@@ -1,0 +1,37 @@
+1 \leq a \leq m+n, 1 \leq b \leq m+n, a \neq b
+ P(x=a, y=b) = \frac{1}{(m+n)(m+n-1)},
+1 \leq a \leq m+n
+ P(x=a) = P(y=a) = \frac{1}{m+n},
+Cov(x,y)
+ Cov(x,y) = E[xy] - E[x]E[y] 
+ = \sum_{1 \leq a \leq m+n, 1 \leq b \leq m+n, a \neq b} \frac{ab}{(m+n)(m+n-1)} - \left(\frac{m+n+1}{2}\right)^2
+\displaystyle Cov(x,y) = -\frac{m+n+1}{12}
+m,n
+N = m + n
+m
+n
+\sum_{1\leq a\leq N, 1\leq b\leq N, a\neq b} ab
+a=b
+\sum_{1\leq a\leq N, 1\leq b\leq N} ab - \sum_{1\leq a=b\leq N} ab
+\left(\sum_{a=1}^N a\right) \left( \sum_{b=1}^N b\right) - \sum_{a=1}^N a^2
+1
+N
+1
+N
+\sum_{a=1}^N a = \frac{1}{2} N (N+1) \qquad \sum_{a=1}^N a^2 = \frac{1}{6}N(N+1)(2N+1)
+XY
+X=a
+a
+Y
+X=a
+E(XY|(X=a))=aE(Y|(X=a))
+E(Y|(X=a))
+X=a
+N-1
+Y
+1
+N
+a
+N-1
+N(N+1)/2-a
+E(XY)= \sum_{a=1}^N E(XY|(X=a))P(X=a)

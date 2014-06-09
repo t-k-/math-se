@@ -1,0 +1,12 @@
+p\in [1,\infty)
+\Omega=(0,1)^N\subset\mathbb{R}^N
+W^{1-1/p,p}(\Omega)=\left\{u\in L^p(\Omega): \ \int_\Omega\int_\Omega\frac{|u(x)-u(y)|^p}{|x-y|^{N-1+p}}dxdy<\infty\right\}
+W^{1-1/p,p}(\Omega)
+\|u\|=\|u\|_p+\left(\int_\Omega\int_\Omega\frac{|u(x)-u(y)|^p}{|x-y|^{N-1+p}}dxdy\right)^{1/p}
+|u|=\|u\|_p+\sum_{j=1}^{N}\left(\int_0^1\int_{S_j^h}\frac{|u(x_1,...,x_j+h,...,x_N)-u(x_1,...,x_j,...,x_N)|^p}{h^p}dxdh\right)^{1/p}
+S_j^h=\{x=(x_1,...,x_N)\in \Omega:\ 0\leq x_j\leq 1-h\}
+c>0
+\|u\|\leq c|u|
+u\in W^{1-1/p,p}(\Omega)
+\|\cdot\|
+|\cdot|

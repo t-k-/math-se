@@ -1,0 +1,6 @@
+\sum_{k=0}^n\frac{\cos(kx)}{(\cos(x))^k}
+\cos(kx) = \Re(e^{ikx})
+\frac{\cos(kx)}{\cos(x)^k}=\frac{(e^{-ikx}+e^{ikx})}{2\cos(x)^k}=\frac{1}{2}((\frac{e^{-ix}}{\cos(x)})^k+(\frac{e^{ix}}{\cos(x)})^k)
+=\frac{1}{2}((1-i\tan(x))^k+(1+i\tan(x))^k)
+\sum_{k=0}^n\frac{\cos(kx)}{\cos(x)^k}=\frac{1}{2}\sum_{k=0}^n(1-i\tan(x))^k+(1+i\tan(x))^k
+=\frac{1}{2}((1-i\tan(x))^n+(1+i\tan(x))^n)+\frac{i\cot(x)}{2}((1-i\tan(x))^n-(1+i\tan(x))^n)

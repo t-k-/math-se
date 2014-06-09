@@ -1,0 +1,20 @@
+A
+B
+C
+x
+A
+B+xC
+ \operatorname{Corr}(A, B+xC) = \frac{\langle A, B + xC \rangle}{||A|| \cdot ||B + x C||} 
+x
+ \frac{\langle A,C \rangle \langle B, B \rangle - \langle A, B \rangle \langle B, C \rangle + x (\langle A, C \rangle \langle B, C \rangle - \langle A, B \rangle \langle C, C \rangle)}{||A|| \cdot ||B + x C||^3} 
+ x = \frac{\langle A,C \rangle \langle B, B \rangle - \langle A, B \rangle \langle B, C \rangle}{\langle A, B \rangle \langle C, C \rangle - \langle A, C \rangle \langle B, C \rangle} = \frac{||B||}{||C||} \cdot \frac{\operatorname{Corr}(A,C) - \operatorname{Corr}(A,B) \operatorname{Corr}(B,C)}{\operatorname{Corr}(A,B) - \operatorname{Corr}(A,C) \operatorname{Corr}(B,C)}. 
+x
+A
+-A
+ \frac{\langle A, B + xC \rangle + t \langle A, C \rangle}{||A|| \cdot \left(||B + x C||^2 + 2t \langle B + xC, C \rangle + O(t^2)\right)^{1/2}} = 
+ \frac{\langle A, B + xC \rangle + t \langle A, C \rangle}{||A|| \cdot ||B + x C|| \cdot \left(1 + t \frac{\langle B + xC, C \rangle}{||B+xC||^2} + O(t^2)\right)} = 
+ \frac{\langle A, B + xC \rangle + t \langle A, C \rangle}{||A|| \cdot ||B + x C||} \left(1 - t \frac{\langle B + xC, C \rangle}{||B+xC||^2} + O(t^2)\right) = 
+ \frac{\langle A, B + xC \rangle}{||A|| \cdot ||B + x C||} + t \left( \frac{\langle A, C \rangle}{||A|| \cdot ||B + x C||} - \frac{\langle A, B + xC \rangle \langle B + xC, C \rangle}{||A|| \cdot ||B + x C||^3}\right) + O(t^2) 
+x
+ \frac{\langle A, C \rangle}{||A|| \cdot ||B + x C||} - \frac{\langle A, B + xC \rangle \langle B + xC, C \rangle}{||A|| \cdot ||B + x C||^3} 
+x^2

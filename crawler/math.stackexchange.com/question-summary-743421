@@ -1,0 +1,18 @@
+(x-\alpha)^2+y^2+z^2 \leq R^2
+(x+\alpha)^2+y^2+z^2 \leq R^2
+R \geq \alpha
+R
+\alpha
+R \to \alpha
+\alpha =0
+x=0
+z^2+y^2=R^2-a^2
+y=r cos(\phi), z=r sin(\phi)
+ \int^{2\pi}_0 d\phi \int^{\sqrt{R^2-a^2}}_0 r dr \int^{a+\sqrt{R^2-r^2}}_{a-\sqrt{R^2-r^2}} dx 
+ =\int^{2\pi}_0 d\phi \int^{\sqrt{R^2-a^2}}_0 r\left[a+\sqrt{R^2-r^2}-a+\sqrt{R^2-r^2}\right] dr=
+ =2\int^{2\pi}_0 d\phi \int^{\sqrt{R^2-a^2}}_0 r\left[\sqrt{R^2-r^2}\right] dr 
+ =-2\int^{2\pi}_0 d\phi \int^{\sqrt{R^2-a^2}}_0 \left[\sqrt{R^2-r^2}\right] d(R^2-r^2) 
+ =-2\int^{2\pi}_0 d\phi \frac{2}{3}\sqrt{(R^2-r^2)^3}|^{\sqrt{R^2-a^2}}_0  
+ =-\frac{4}{3}\int^{2\pi}_0  \sqrt{(a^2)^3} - \sqrt{(R^2)^3} d\phi 
+ =\frac{4}{3}\int^{2\pi}_0  R^3 - a^3 d\phi 
+ =\frac{8\pi}{3}(R^3 - a^3) 

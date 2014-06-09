@@ -1,0 +1,44 @@
+\mathbb{C}
+[0,1]
+d(f,g)=\int_{0}^{1}\frac{\vert f-g\vert}{1+\vert f-g\vert}dx
+L^{0}
+f\in C_{\mathbb{C}}[0,1]
+C_{\mathbb{C}}[0,1]
+L^{p}
+0<p<1
+L^{0}
+L^{p}
+C_{\mathbb{C}}[0,1]
+L^{p}
+U
+0\in U
+\delta > 0
+B_\delta(0) = \{ f : d(f,0) < \delta\} \subset U
+n > 2/\delta
+0 \leqslant k \leqslant n
+\varphi_k(x) = \begin{cases} n\left(x - \frac{k-1}{n}\right) &, \frac{k-1}{n}\leqslant x \leqslant \frac{k}{n}\\ n\left(\frac{k+1}{n}-x\right) &, \frac{k}{n} \leqslant x \leqslant \frac{k+1}{n}\\ \qquad 0 & x < \frac{k-1}{n} \lor x > \frac{k+1}{n}\end{cases}
+k = 0
+k = n
+[0,1]
+\sum_{k=0}^n \varphi_k(x) = 1
+x\in [0,1]
+f\colon [0,1]\to\mathbb{C}
+f = \sum_{k=0}^n \frac{1}{n+1}\cdot \underbrace{\left((n+1)\cdot \varphi_k\cdot f\right)}_{\psi_k}.\tag{1}
+d(\psi_k,0) = \int_0^1 \frac{\lvert \psi_k(x)\rvert}{1+\lvert\psi_k(x)\rvert}\,dx = \int_{(k-1)/n}^{(k+1)/n} \frac{\lvert \psi_k(x)\rvert}{1+\lvert\psi_k(x)\rvert}\,dx < \int_{(k-1)/n}^{(k+1)/n}\,dx = \frac{2}{n} < \delta
+1 \leqslant k < n
+0
+1
+k = 0
+k = n
+d(\psi_0,0) < \delta
+d(\psi_n,0) < \delta
+(1)
+f
+B_\delta(0) \subset U
+U
+f\in U
+f
+U = C([0,1],\mathbb{C})
+\varnothing
+C([0,1],\mathbb{C})
+d

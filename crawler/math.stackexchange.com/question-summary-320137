@@ -1,0 +1,46 @@
+p_n(x_1, ..., x_n) = \displaystyle\prod_{\sigma \in \{ -1 , 1 \}^{n-1} } (x_1 + \displaystyle\sum_{i=2}^n \sigma_{i-1} \cdot x_i ) ,
+n\ge 3.
+\sigma_i
+i
+\sigma .
+2^{n-1},
+x_i^{2^{n-1}}
+x_i^2x_j^{2^{n-1}-2}
+1
+-2^{n-2},
+\left[x_1^{e_1}x_2^{e_2}\ldots x_n^{e_n}\right]p_n(x_1,x_2,\ldots,x_n)
+x_1^{e_1}x_2^{e_2}\ldots x_n^{e_n}
+p_n(x_1,x_2,\ldots,x_n)
+x_n,
+x_n
+[f(x_1,x_2,\ldots,x_{n-1}]^2-x_n^2.
+n\ge3,
+x_j
+j
+\left[x_1^{2^{n-1}-2}x_2^2\right]p_n(x_1,x_2,\ldots,x_n)
+-2^{n-2}
+-2^{n-3}.
+\left[x_1^{2^{n-1}-2j}x_2^{2j}\right]p_n(x_1,x_2,\ldots,x_n)=(-1)^j\binom{2^{n-2}}{j}.
+\begin{aligned}\left[x_1^{2^{n-1}-2j}x_2^{2j}\right]p_n(x_1,x_2,\ldots,x_n)&=\left[x_1^{2^{n-1}-2j}x_2^{2j}\right]p_n(x_1,x_2,0,\ldots,0)\\ &=\left[x_1^{2^{n-1}-2j}x_2^{2j}\right](x_1+x_2)^{2^{n-2}}(x_1-x_2)^{2^{n-2}}\\ &=\left[x_1^{2^{n-1}-2j}x_2^{2j}\right](x_1^2-x_2^2)^{2^{n-2}}.\end{aligned}
+i+j+k=2^{n-2}.
+i
+j
+k
+\left[x_1^{2i}x_2^{2j}x_3^{2k}\right]p_n(x_1,x_2,\ldots,x_n)=(-1)^{j+k}\binom{i+j+k}{i,j,k}\prod_{\ell=0}^{k-1} \frac{i-j+k-2\ell-1}{i+j+k-2\ell-1},
+n\ge4,
+i,j,k,\ell\ge0,
+i+j+k+\ell=2^{n-2},
+i,j,k,\ell,
+\begin{aligned}&\left[x_1^{2i}x_2^{2j}x_3^{2k}x_4^{2\ell}\right]p_n(x_1,x_2,\ldots,x_n)\\ &\quad=(-1)^{j + k + l} \binom{i+j+k+\ell}{i,j,k,\ell}\frac{1}{\prod_{m=0}^{\ell-1}(i+j+k+\ell - 4 m - 2)}\\ &\quad\phantom{=}\times\sum_{t=0}^{\ell} 2^t t! \binom{k}{t}\binom{l}{t}\prod_{m=0}^{t-1}(     i+j+k+\ell-4m) \prod_{m=0}^{\ell-t-1}(i+j+k+\ell-4k-4m-2)\\ &\quad\phantom{=\times\sum}\times\frac{\prod_{m=t}^{k+\ell-t-1}(i+j+k+\ell-2j-2m-1)}{     \prod_{m=0}^{k+\ell-t-1}(i+j+k+\ell-2m-1)}.\end{aligned}
+\pm x_1 \pm x_2 \pm \ldots \pm x_n
+r_1=-(x_1+x_2+x_3+ \ldots +x_{n-1}+x_n)
+r_{2^n}=-r_1
+R=\lbrace r_k | 1 \leq k \leq 2^n\rbrace
+P(X)=\prod_{r\in R}(X-r)
+P
+ P=X^{2m}-(mS_2)X^{2m-2}+(\binom{m}{2}S_4+m(m-3)S_{2,2})X^{2m-4} -(\binom{m}{3}S_6+\frac{m(m-2)(m-5)}{2}S_{2,4}+m(m^2-9m+30)S_{2,2,2})X^{2m-6} + (...) 
+m=2^{n-1}
+i_1 \leq i_2 \leq \ldots \leq i_t
+S_{i_1,i_2, \ldots ,i_t}
+(i_1,i_2, \ldots ,i_t)
+x_1,x_2, \ldots ,x_n

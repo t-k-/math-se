@@ -1,0 +1,30 @@
+\int_{1}^{\infty}\sin(x\log x)dx 
+\int_{1}^{\infty}\sin(x)dx 
+\int_{1}^{\infty}\sin(x^2)dx 
+\int_{1}^{\infty}\sin(x^p)dx 
+p>0
+n
+\int_n^{\infty} \sin(x\log(x))\,dx
+f(x) = x\log(x)
+\lim_{x \rightarrow \infty} f'(x) = \infty
+f''(x) > 0
+x
+N
+f'(x)
+\infty
+x
+\infty
+|\cos(f(N))| \leq 1
+f''(x) > 0
+f'(N) \rightarrow \infty
+N
+\infty
+N
+\int_n^{\infty} \cos(f(x)) {f''(x) \over (f'(x))^2}
+\int_n^{\infty} \sin(f(x))\,dx = \int_n^{\infty} f'(x) {\sin(f(x)) \over f'(x)}\,dx
+= \lim_{N \rightarrow \infty} \int_n^{N} (f'(x) \sin(f(x)){1  \over f'(x)}\,dx
+\int_n^{N} (f'(x) \sin(f(x)){1  \over f'(x)}\,dx = -{\cos(f(N)) \over f'(N)} + {\cos(f(n)) \over f'(n)} + \int_n^N \cos(f(x)){d \over dx}{1 \over f'(x)}
+= -{\cos(f(N)) \over f'(N)} + {\cos(f(n)) \over f'(n)} - \int_n^N \cos(f(x)) {f''(x) \over (f'(x))^2}
+\int_n^N\bigg|{f''(x) \over (f'(x))^2}\bigg|\,dx
+\int_n^N{f''(x) \over (f'(x))^2}\,dx
+{1 \over f'(N)} - {1 \over f'(n)}

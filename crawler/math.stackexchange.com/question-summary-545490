@@ -1,0 +1,46 @@
+F(s)=\log(\frac{s+1}{s})
+\displaystyle \lim_{R\to\infty} \int_{a-iR}^{a+iR} \frac{1}{2\pi i}\log\left(\frac{s+1}{s}\right) e^{st}ds 
+\displaystyle \log\left(\frac{s+1}{s}\right)=\sum_{n=1}^{\infty} \frac{ (-1)^{n+1} }{n} (1/s)^n 
+|s|>1
+|s|>1
+1
+\displaystyle \sum_{n=1}^{\infty} \lim_{R\to\infty} \int_{a-iR}^{a+iR} \frac{1}{2\pi i}\frac{ (-1)^{n+1} }{n} (1/s)^n  e^{st}ds 
+R \to \infty
+s=-1
+s=0
+\log{(1+1/s)} - \log{(1+s)}-\log{s}
+\int_{c-i R}^{c+iR} ds \, \log{(1+s)} \, e^{s t}
+R \to \infty
+c \gt 0
+\oint_C dz \, \log{(1+z)} \, e^{z t}
+C
+[c-i R,c+i R]
+R
+c+i R
+c-i R
+z=-1
+z=-1
+z=-1
+\int_{c-i R}^{c+iR} ds \, \log{(1+s)} \, e^{s t} + i R \int_{\pi/2}^{\pi} d\theta\, e^{i \theta} \, \log{(1+R e^{i \theta})}\, e^{R t \cos{\theta}} \, e^{i R t \sin{\theta}} \\ + e^{i \pi} \int_R^{1 + \epsilon} dx \, \log{(1+x e^{i \pi})} + i \epsilon \int_{\pi}^{-\pi} d\phi \, e^{i \phi} \,\log{(1+\epsilon e^{i \phi})} e^{\epsilon e^{i \phi}t}\\ + e^{-i \pi} \int_{1 + \epsilon}^R dx \, \log{(1+x e^{-i \pi})} + i R \int_{-\pi}^{-\pi/2} d\theta\, e^{i \theta} \, \log{(1+R e^{i \theta})}\, e^{R t \cos{\theta}} \, e^{i R t \sin{\theta}}
+\epsilon \to 0
+0
+\int_{c-i R}^{c+iR} ds \, \log{(1+s)} \, e^{s t} = \int_1^{R} dx \left [\log{(1+x e^{-i \pi})}-\log{(1+x e^{i \pi})} \right ] \, e^{-x t} \\ + i 2 R \int_0^{\pi/2} d\theta \, \Im{\left [e^{i(\theta+R t \cos{\theta})} \log{\left ( 1+R e^{i \theta} \right )} \right ]} e^{-R t \sin{\theta}}
+x=0
+2 \pi
+\pm i \pi
+\int_1^{R} dx \left [\log{(1+x e^{-i \pi})}-\log{(1+x e^{i \pi})} \right ] \, e^{-x t} = \int_1^{R} dx \left [-i \pi +\log{(x-1)}- i \pi - \log{(x-1)} \right ] \, e^{-x t} \\ = -i 2 \pi \int_1^{R} dx\, e^{-x t}
+\frac{1}{i 2 \pi}\int_{c-i R}^{c+iR} ds \, \log{(1+s)} \, e^{s t} = -\frac{e^{-t} - e^{-R t}}{t}\\ + i 2 R \int_0^{\pi/2} d\theta \, \Im{\left [e^{i(\theta+R t \cos{\theta})} \log{\left ( 1+R e^{i \theta} \right )} \right ]} e^{-R t \sin{\theta}}
+R \to \infty
+z=0
+z=-1
+\frac{1}{i 2 \pi}\int_{c-i R}^{c+iR} ds \, \log{s} \, e^{s t} = -\frac{1-e^{-R t}}{t}\\ + i 2 R \int_0^{\pi/2} d\theta \, \Im{\left [e^{i(\theta+R t \cos{\theta})} \log{\left ( i R e^{i \theta} \right )} \right ]} e^{-R t \sin{\theta}}
+i 2 R \int_0^{\pi/2} d\theta \, \Im{\left [e^{i(\theta+R t \cos{\theta})} \log{\left (1+ \frac{i}{R} e^{-i \theta} \right )} \right ]} e^{-R t \sin{\theta}}
+R
+\log{(1+y)} \sim y
+y
+i 2 \int_0^{\pi/2} d\theta \, \cos{(R t \cos{\theta})} \, e^{-R t \sin{\theta}}
+2 \int_0^{\pi/2} d\theta \, e^{-R t \sin{\theta}} \le 2 \int_0^{\pi/2} d\theta \, e^{-2 R t \theta/\pi} \le \frac{\pi}{R t}
+R \to \infty
+\frac{1}{i 2 \pi}\int_{c-i \infty}^{c+i\infty} ds \, \log{\left (1+\frac{1}{s}\right)} \, e^{s t} = \frac{1-e^{-t}}{t}
+z=0
+z=-1

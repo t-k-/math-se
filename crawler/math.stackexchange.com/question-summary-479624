@@ -1,0 +1,17 @@
+a
+b
+b > a + 1
+\sum_{n=0}^{\infty} \frac{\Gamma(n+a)}{\Gamma(n+b)}?
+\sum_{n=0}^{\infty} \frac{\Gamma(n+3/2)}{\Gamma(n+3)} = \sqrt{\pi} = \Gamma(1/2)
+\sum_{n=0}^{\infty} \frac{\Gamma(n+4/3)}{\Gamma(n+4)} = \frac{3}{10}\Gamma(4/3)
+\beta
+ \mathrm{\beta}(x,y) = \int_0^1t^{x-1}(1-t)^{y-1}\,dt ,  
+ \frac{\Gamma(n+a)}{\Gamma(n+b)} =  \frac{\beta(n+a,b-a)}{\Gamma(b-a)}=\frac{1}{\Gamma(b-a)}\int_{0}^{1} t^{n+a-1}(1-t)^{b-a-1}dt   
+ \implies \sum_{n=0}^{\infty} \frac{\Gamma(n+a)}{\Gamma(n+b)}=\frac{1}{\Gamma(b-a)}\int_{0}^{1} t^{a-1}(1-t)^{b-a-2}dt = \frac{\beta(a,b-a-1)}{\Gamma(b-a)} 
+= {\frac {\Gamma  \left( a \right) }{ \left( b-a-1 \right) \Gamma \left( b-1 \right) }} =  {\frac {(b-1)\Gamma\left( a \right) }{ \left( b-a-1 \right) \Gamma \left( b \right) }}.
+\sum_{k=0}^{\infty}\dfrac{\Gamma{(a+k)}\Gamma{(b+k)}}{k!\Gamma{(c+k)}}=\dfrac{\Gamma{(a)}\Gamma{(b)}\Gamma{(c-a-b)}}{\Gamma{(c-a)}\Gamma{(c-b)}}
+I=\int_{0}^{1}x^{b-1}(1-x)^{c-b-1}(1-x)^{-a}dx=B(b,c-a-b)=\dfrac{\Gamma{(b)}\Gamma{(c-a-b)}}{\Gamma{(c-a)}}
+(1-x)^{-a}=\sum_{k=0}^{\infty}\binom{a-1+k}{k}x^k
+\sum_{k=0}^{\infty}\dfrac{\Gamma{(a+k)}\Gamma{(b+k)}}{k!\Gamma{(c+k)}}=\dfrac{\Gamma{(a)}\Gamma{(b)}\Gamma{(c-a-b)}}{\Gamma{(c-a)}\Gamma{(c-b)}}
+b=1
+\sum_{k=0}^{\infty}\dfrac{\Gamma{(a+k)}}{\Gamma{(c+k)}}=\dfrac{\Gamma{(a)}\Gamma{(c-a-1)}}{\Gamma{(c-1)}}

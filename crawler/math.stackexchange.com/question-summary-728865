@@ -1,0 +1,22 @@
+C
+A
+B
+C
+A
+B
+A=\begin{pmatrix}1 & 3 & 5 \\ 2 & 4 & 1 \\ 3 & 7 & 9\end{pmatrix}
+B=\begin{pmatrix}4 & 4 & 3 \\ 9 & 10 & 11 \\ 12 & 15 & 13\end{pmatrix},
+C=\begin{pmatrix}1 & 4 & 3\\ 2 & 10 & 11 \\ 3 & 15 & 13\end{pmatrix}.
+E_{ij}
+0
+i^{th}
+j^{th}
+1
+C=AE_{1,1}+B(E_{2,2}+E_{3,3})
+C=\underbrace{A\begin{bmatrix}1 & 0 & 0\\ 0 & 0 & 0\\ 0 & 0 & 0\end{bmatrix}}_{\text{Saves first column of }A}+\underbrace{B\begin{bmatrix}0 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}}_{\text{Saves last two columns of }B}
+A=\left[a_1,a_2,a_3\right],\quad B=\left[b_1,b_2,b_3\right],
+C=\left[a_1,b_2,b_3\right].
+C
+A
+B
+ \begin{align*} A &= \begin{bmatrix}\mathbf{a}_1 & \mathbf{a}_2 & \mathbf{a}_3 \end{bmatrix}, \\ B &= \begin{bmatrix}\mathbf{b}_1 & \mathbf{b}_2 & \mathbf{b}_3 \end{bmatrix}, \\ C &= \begin{bmatrix}\mathbf{a}_1 & \mathbf{b}_2 & \mathbf{b}_3 \end{bmatrix}. \end{align*} 

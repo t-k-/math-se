@@ -1,0 +1,7 @@
+f : [0,1] \rightarrow \mathbb{R}
+ T(f(x)) = \dfrac{1}{\sqrt{\pi}} \int_0^x \dfrac{f(t)}{\sqrt{x-t}} dt .
+ T(T(f(x))) = \int_0^x f(t) dt. 
+T(T(f(x)) = \frac{1}{\pi} \int_0^x dt \, (x-t)^{-1/2} \, \int_0^t dt' \, (t-t')^{-1/2} \, f(t')
+T(T(f(x)) = \frac{1}{\pi} \int_0^x dt' \, f(t') \, \int_{t'}^x dt \, (x-t)^{-1/2} (t-t')^{-1/2}
+\pi
+\int_0^1 dv \, v^{-1/2} (1-v)^{-1/2} = \pi

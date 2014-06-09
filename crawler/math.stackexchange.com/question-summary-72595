@@ -1,0 +1,47 @@
+(0,0)
+(a,b)
+(x_0,y_0)
+N
+N
+N-1
+n
+(x,y)
+n
+4^n
+p_n(x,y)
+n
+(x,y)
+p_0(x,y) = \chi(x,y)
+\chi(x,y)
+1
+0
+n
+p_{n+1}(x,y) = \chi(x,y) \frac{p_n(x-1,y) + p_n(x+1,y) + p_n(x,y-1) + p_n(x,y+1)}{4}.
+\chi(x,y)
+p_0
+(1,1)
+(a-1, b-1)
+p_0(x,y) = f(x)g(y)
+f(x) = \begin{cases} \phantom{+}0 & \text{if }x = ka, k \in \mathbb Z \\ \phantom{+}1 & \text{if }(2k+0)a < x < (2k+1)a, k \in \mathbb Z \\ -1 & \text{if }(2k+1)a < x < (2k+2)a, k \in \mathbb Z \end{cases}
+g(y) = \begin{cases} \phantom{+}0 & \text{if }y = kb, k \in \mathbb Z \\ \phantom{+}1 & \text{if }(2k+0)b < y < (2k+1)b, k \in \mathbb Z \\ -1 & \text{if }(2k+1)b < y < (2k+2)b, k \in \mathbb Z.\end{cases}
+\chi(x,y)
+p_n(x,y) = 0
+x
+a
+y
+b
+p_{n+1}
+n \ge 0
+p_{n+1} = p_n * K
+K
+K(1,0) = K(0,1) = K(-1,0) = K(0,-1) = \frac 1 4
+K(u,v) = 0
+u
+v
+p_{n+1}(x,y) = \sum_{u,v \in \mathbb Z} p_n(x-u,y-v) K(u,v),
+(x_{1},y_{1})
+x_{1} = x_{0}
+y_{1} = y_{0}+1
+(x_{0},y_{0})
+(x_{2},y_{2}) = (x_{0},y_{0}) 
+ \left \{ (x_{0},y_{0}), (x_{1},y_{1}) \right \}

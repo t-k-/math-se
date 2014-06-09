@@ -1,0 +1,10 @@
+T(n,k)=1-n1_{\{n\mid k\}}
+\vert x\vert < 1
+x
+\sum_{k=1}^\infty T(n,k)/k
+0 < x < 1
+n\nmid k
+ \begin{align} \sum_{k=1}^\infty\frac{T(n,k)}{k}x^k&=\sum_{k=1}^\infty\frac{x^k}{k}-\sum_{k=1}^\infty1_{\{n\mid k\}}\frac{nx^k}{k}\\ &=\sum_{k=1}^\infty\frac{x^k}{k}-\sum_{k=1}^\infty\frac{x^{nk}}{k}\\ &=-\log(1-x)+\log(1-x^n)\\ &=\log\left(\frac{1-x^n}{1-x}\right)\\ &=\log(1+x+\cdots+x^{n-1}). \end{align}. 
+ \lim_{x\uparrow1}\sum_{k=1}^\infty\frac{T(n,k)}{k}x^k=\log n. 
+ \left\vert\sum_{k=1}^{jn-1}\frac{T(n,k)}{k}x^k-\log(1+x+\cdots+x^{n-1})\right\vert \le \frac{-T(n,jn)}{jn}x^{jn}\le \frac1j. 
+ \left\vert\sum_{k=1}^{jn-1}\frac{T(n,k)}{k}-\log n\right\vert\le\frac1j. 

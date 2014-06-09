@@ -1,0 +1,20 @@
+f:D\to \mathbb C
+D=\{z:|z|\leq 1\}.
+l_2(A)
+A\subseteq \mathbb C
+G=f(D).
+f(z)=\sum_{n=0}^\infty c_nz^n.
+l_2(G)=\pi\sum_{n=1}^\infty n|c_n|^2.
+\pi
+\phi
+l_2(G)=\iint_D |f\,'(z)|^2dxdy.
+f\,'(z)=\sum_{n=1}^\infty nc_nz^{n-1},
+ \begin{align*} \iint_D |f'(z)|^2 ~ dx\,dy  &= \int_0^1 \int_0^{2\pi} r\left|f'(re^{i\theta})\right|^2 ~ d\theta \, dr \\ &= \int_0^1 \int_0^{2\pi} r \left(\sum_{n = 1}^\infty nc_nr^{n-1} e^{i(n-1)\theta}\right)\left(\sum_{n = 1}^\infty n\overline{c_n}r^{n-1} e^{-i(n-1)\theta}\right)  ~ d\theta \, dr \\ &= \int_0^1\left( \sum_{n=1}^\infty 2\pi n^2|c_n|^2 r^{2n-1} \right)~dr \\ &= \sum_{n=1}^\infty \frac{2\pi n^2}{2n} |c_n|^2 \\ &= \pi \sum_{n=1}^\infty n|c_n|^2 \end{align*} 
+\int_0^{2\pi} e^{ik\theta} ~d\theta = \begin{cases} 2\pi & k = 0\\ 0 & k\ne 0\end{cases}
+|f\,'(z)|^2=\sum_{n=1}^\infty\sum_{m=1}^\infty nmc_n\overline{c_m}z^{n-1}\overline{z^{m-1}}
+=\sum_{n=1}^\infty n^2|c_n|^2r^{2n}+2\sum_{n\ge m} nmc_nc_m r^{2m-1}z^{n-m}.
+\iint z^k dxdy=0
+k\ge1
+(-z)^k=-z^k
+(iz)^k=-z^k)
+\int_0^{2\pi} \int_0^1 \sum_{n=1}^\infty n^2|c_n|^2r^{2(n-1)}\cdot rdrd\theta=\pi\sum_{n=1}^\infty n|c_n|^2. 

@@ -1,0 +1,18 @@
+\theta(n^2)
+T(n) = T(n-2) + n^2
+n^2 + T(n-2) + T(n-4) +...
+n^2 + (n-2)^2 + (n-i) ^2
+T(n) = T(n-2) + n^2 = T(n-4) + (n-2)^2 + n^2 = T(n-2k) + \sum\limits_{i = 0}^{k - 1}(n - 2i)^2
+n - 2k \ge 0
+n
+n
+k = \frac{n}{2}
+T(n) = T(0) + \sum\limits_{i = 0}^{\frac{n}{2} - 1}(n - 2i)^2 = \sum\limits_{i = 0}^{\frac{n}{2} - 1}(n^2 - 4ni + 4i^2) + C
+T(n) = n^2\cdot\left(\frac{n}{2}-1\right) - 4n\cdot\frac{1}{2}\cdot\frac{n}{2}\cdot\left(\frac{n}{2} - 1\right) + 4\cdot\frac{1}{6}\cdot\left(\frac{n}{2} - 1\right)\cdot\frac{n}{2}\cdot n + C
+\therefore \ T(n) = \Theta(n^3)
+n=2k
+C=T(2)+T(1) -2^2-1^2
+\sum_{i=0}^n i^2 = \frac{n(n+1)(2n+1)}{6}
+T(n) \sim T(n-1)
+ T(n)+T(n-1) = n^2+(n-1)^2+ \cdots+4^2+3^2 + T(2)+T(1) =\frac{n(n+1)(2n+1)}{6} + C. 
+ T(n) \sim n^3/12. 

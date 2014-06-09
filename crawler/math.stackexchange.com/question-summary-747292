@@ -1,0 +1,13 @@
+\vec{F}
+C
+t = 0
+t = 1
+ \vec{F}(x,y,z) = (2xe^y + 2x)\vec{i} + (x^2e^y)\vec{j} + (3z^2)\vec{k} \\ C: \;\vec{r}(t) = f(t)\vec{i} + g(t)\vec{j} + h(t)\vec{k} = \frac{2t}{1+t^2}\vec{i} + (t-t^3)\vec{j} + \frac{2}{1+t^2}\vec{k} 
+ W = \int_a^b \vec{F}(f(t), g(t), h(t)) \cdot \vec{r}\;'(t) \; \operatorname d\!t 
+ \;\vec{r}\;'(t) = f(t)'\vec{i} + g(t)'\vec{j} + h(t)'\vec{k} = \frac{-2(t^2-1)}{(1+t^2)^2}\vec{i} + (1-3t^2)\vec{j} + \frac{-4t}{(1+t^2)^2}\vec{k} \\ \vec{F}(f(t), g(t), h(t)) = \frac{4t(1+e^{t-t^3})}{1+t^2}\vec{i} + (\frac{2t}{1+t^2})^2e^{t-t^3}\vec{j} + \frac{12}{(1+t^2)^2}\vec{k} 
+ W = \int_0^1 \vec{F}(f(t), g(t), h(t)) \cdot \vec{r}\;'(t) \; \operatorname d\!t \\ W = \int_0^1 \left(\frac{4t(1+e^{t-t^3})}{1+t^2}\vec{i} + (\frac{2t}{1+t^2})^2e^{t-t^3}\vec{j} + \frac{12}{(1+t^2)^2}\vec{k}\right) \cdot \left(\frac{-2(t^2-1)}{(1+t^2)^2}\vec{i} + (1-3t^2)\vec{j} + \frac{-4t}{(1+t^2)^2}\vec{k}\right) \; \operatorname d\!t \\ W = \int_0^1 \left(\frac{4t(1+e^{t-t^3})}{1+t^2}\frac{-2(t^2-1)}{(1+t^2)^2} + (\frac{2t}{1+t^2})^2e^{t-t^3}(1-3t^2) + \frac{12}{(1+t^2)^2}\frac{-4t}{(1+t^2)^2}\right)\; \operatorname d\!t 
+U(\vec{r})
+\vec{F}=-\nabla U
+W=\int\limits_{A}^{B}\vec{F}d\vec{r}=-\int\limits_{A}^{B}\nabla U d\vec{r} = -\int\limits_{A}^{B}dU=U(A)-U(B)
+U
+\vec{F}

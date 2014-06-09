@@ -1,0 +1,30 @@
+ \theta = tan^{-1}(\frac{p1.y-p0.y}{p1.x-p0.x}) 
+z
+p0
+v,v+w,v+w+h
+v+h
+v
+h
+w
+r_0, r_1, r_2
+r_3
+r_0
+y
+h_r
+w_r
+ \begin{align*}    h_r&=\sqrt{\left(r_3^{(x)}-r_0^{(x)}\right)^2+\left(r_3^{(y)}-r_0^{(y)}\right)^2}\\    w_r&=\sqrt{\left(r_1^{(x)}-r_0^{(x)}\right)^2+\left(r_1^{(y)}-r_0^{(y)}\right)^2} \end{align*} 
+s
+r_0
+\theta
+ \begin{align*}   \cos\theta&=\frac{r_1^{(x)}-r_0^{(x)}}{w_r}\\   \sin\theta&=\frac{r_0^{(y)}-r_1^{(y)}}{w_r} \end{align*} 
+R
+ R=\begin{bmatrix} \cos\theta&-\sin\theta\\\sin\theta&\cos\theta \end{bmatrix}. 
+c_r
+c
+ \begin{align*}   c_r^{(x)}&=\frac14\sum\limits_{i=1}^4r_i^{(x)},\\   c_r^{(y)}&=\frac14\sum\limits_{i=1}^4r_i^{(y)}, \end{align*} 
+c^{(x)}=v^{(x)}+w/2 \qquad c^{(y)}=v^{(y)}+h/2.
+r_k
+c_r
+c
+2\times1
+ r_k^{new}=sR(r_k-c_r)+c, 

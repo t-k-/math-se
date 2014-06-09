@@ -1,0 +1,41 @@
+\sum_{k=0}^n k^2{n \choose k} = {(n+n^2)2^{n-2}}
+\sum_{k=0}^n {n \choose k} = {2^n}
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+\begin{align*} \binom{k}{r} \binom{n}{k} &= \frac{k!}{r! \, (k-r)!} \cdot \frac{n!}{k! \, (n-k)!} = \frac{n!}{r! \, (n-r)!} \cdot \frac{(n-r)!}{(k-r)! \, (n-k)!} \\ &= \binom{n}{r} \binom{n-r}{k-r}. \end{align*}
+S_1 = \sum_{k=0}^n k \binom{n}{k} = \sum_{k=1}^n \binom{k}{1}\binom{n}{k} = \binom{n}{1} \sum_{k=1}^n \binom{n-1}{k-1} = n 2^{n-1}.
+S_2 = \sum_{k=0}^n k(k-1) \binom{n}{k} = 2 \sum_{k=2}^n \binom{k}{2} \binom{n}{k} = 2 \binom{n}{2} \sum_{k=2}^n \binom{n-2}{k-2} = n(n-1) 2^{n-2}.
+\sum_{k=0}^n k^2 \binom{n}{k} = S_1 + S_2 = n(n+1)2^{n-2}.
+\sum_{k=0}^n k^m \binom{n}{k},
+\sum_{k=r}^n \binom{k}{r}\binom{n}{k} = \binom{n}{r} 2^{n-r}.
+(1+x)^n = \sum_{k=0}^n {n \choose k} x^k
+x
+\sum_{k=0}^n k {n \choose k} x^{k-1}
+x = 1
+n
+1
+\sum_1^n k^2\binom{n}{k}
+0
+1
+1
+n2^{n-1}
+n(n-1)2^{n-2}
+(n)2^{n-1}+n(n-1)2^{n-2}=(2n)2^{n-2}+n(n-1)2^{n-2}=(n^2+n)2^{n-2}
+(1)
+(2)
+ (1+x)^n=\sum_{k=0}^n\binom{n}{k}x^k, 
+ n(1+x)^{n-1}=\sum_{k=0}^n k\binom{n}{k}x^{k-1} \quad\Longrightarrow\quad  n2^{n-1}=\sum_{k=0}^n k\binom{n}{k} \tag{1} 
+ n(n-1)(1+x)^{n-2}=\sum_{k=0}^n k(k-1)\binom{n}{k}x^{k-2} \Longrightarrow\ n(n-1)2^{n-2}=\sum_{k=0}^n k(k-1)\binom{n}{k}. \tag{2} 
+ n(n+1)2^{n-2}=\sum_{k=0}^n k^2\binom{n}{k}. 
+n
+k
+2
+k
+2
+n^2 + n
+n+1
+\dbinom{a}k = \frac{a}k \dbinom{a-1}{k-1}
+\sum_{k = 0}^{n+1} k^2 \dbinom{n+1}k
+ = 0+1 \dbinom{n+1}1 + 4 \dbinom{n+1}2 + 9 \dbinom{n+1}3 + \cdots + (n+1)^2 \dbinom{n+1}{n+1}
+ = 0+(n+1) \dbinom{n}0 + 2(n+1) \dbinom{n}1 + 3 \dbinom{n}2 + \cdots + (n+1) \dbinom{n}n
+ = (n+1) \left( \sum_{k = 0}^{n} (k+1) \dbinom{n}k \right)
+x(1+x)^n

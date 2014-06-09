@@ -1,0 +1,23 @@
+F_n
+F_0 = 0
+F_1 = 1
+F_n = F_{n-1} + F_{n-2}
+n \geq 2
+F_{2n-1} = F_{n}^2 + F_{n-1}^2
+F_r=\frac{a^r-b^r}{a-b}
+a,b
+x^2-x-1=0\implies ab=-1,a+b=1
+F_n^2+F_{n-1}^2=\frac{(a^n-b^n)^2+(a^{n-1}-b^{n-1})^2}{(a-b)^2}
+=\frac{a^{2n}+b^{2n}+a^{2n-2}+b^{2n-2}-2(ab)^{n-1}(ab+1)}{(a-b)^2}
+=\frac{a^{2n-1}\left(a+\frac1a\right)+b^{2n-1}\left(b+\frac1a\right)}{(a-b)^2}\text{ as } ab=-1
+=\frac{a^{2n-1}(a-b)+b^{2n-1}(b-a)}{(a-b)^2} \text{ as } \frac1a=-b,\frac1b=-a
+=\frac{a^{2n-1}-b^{2n-1}}{(a-b)}=F_{2n-1}
+\left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right ) ^k = \left ( \begin{array} \\ F_{k+1} & F_k\\F_k & F_{k-1} \\ \end{array} \right )
+\begin{align} \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right ) ^m \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right ) ^n &= \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right ) ^{m+n} \\ &= \left ( \begin{array} \\ F_{m+1} & F_m\\F_m & F_{m-1} \\ \end{array} \right ) \left ( \begin{array} \\ F_{n+1} & F_n\\F_n & F_{n-1} \\ \end{array} \right )\\ &= \left ( \begin{array} \\ F_{m+n+1} & F_{m+n}\\F_{m+n} & F_{m+n-1} \\ \end{array} \right ) \end{align} 
+F_{m+n-1} = F_m F_n + F_{m-1} F_{n-1}
+m=n
+\left ( \begin{array} \\F_{k+2} \\ F_{k+1} \\ \end{array} \right ) = \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right ) \left ( \begin{array} \\F_{k+1} \\ F_k \\ \end{array} \right )
+k
+\left ( \begin{array} \\F_{k+2} \\ F_{k+1} \\ \end{array} \right ) = \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right )^k \left ( \begin{array} \\F_{2} \\ F_1 \\ \end{array} \right ) = \left ( \begin{array} \\ 1 & 1\\1 & 0 \\ \end{array} \right )^k \left ( \begin{array} \\1 \\ 1 \\ \end{array} \right )
+F_{k+2}= F_{k+1}+ F_k
+ F_{k+1} = F_k +  F_{k-1}

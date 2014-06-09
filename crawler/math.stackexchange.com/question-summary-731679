@@ -1,0 +1,13 @@
+C(\Omega)
+\rho(f,g):= \sum_{m=1}^\infty \frac{1}{2^m} \frac{\max_{x \in \bar{\Omega}_m}|f(x)-g(x)|}{1+\max_{x \in \bar{\Omega}_m}|f(x)-g(x)|}
+\mathcal{C}(\Omega)
+(f_n)
+\rho(f_n,f_m)\rightarrow 0 
+n \rightarrow \infty
+\rho(f_n,f_m)=\sum\frac{1}{2^m} \frac{\max}{1+\max}=\sum \frac{1}{2^m}(1-\frac{1}{1+\max})=\sum \frac{1}{2^m} -\sum \frac{1}{2^m} \frac{1}{1+\max}=
+=1 - \sum_{m=1}^\infty \frac{1}{1+\max_{x\in \bar{\Omega}_m} \|f_n-f_m\|} \geq 1-\sum \frac{1}{2^m} \frac{1}{1+\max_{x\in \bar{\Omega}_1}}= 1 - \frac{1}{1+\max_{x \in \bar{\Omega}_1} \|f_n - f_m \|} \rightarrow 0
+\Rightarrow \max_{x \in \bar{\Omega}_1} \|f_n -f_m\| \rightarrow 0
+f_m|_{\bar{\Omega}_1}
+\|\cdot\|_{\infty (\bar{\Omega}_1)}
+\Rightarrow f_1|_{\bar{\Omega}_1} \rightarrow f|_{\bar{\Omega}_1}
+\max_{x \in \bar{\Omega}_m}\|f-g\|\leq \max_{x \in \bar{\Omega}_m+k}\|f-g\|

@@ -1,0 +1,17 @@
+\lim_{t \to \infty}t^m e^{-\alpha t} = 0
+m \in \mathbb{N}
+\alpha \in \mathbb{C}
+Re(\alpha) \gt 0
+\lim_{t \to \infty}t^m e^{-\alpha t}= \lim_{t \to \infty}\frac{e^{-\alpha t}}{\frac{1}{t^m}}=\lim_{t \to \infty}\frac{-\alpha e^{-\alpha t}}{\frac{-m}{t^{m+1}}}=\lim_{t \to \infty}\frac{\alpha ^2e^{-\alpha t}}{\frac{m(m+1)}{t^{m+2}}}=...=\lim_{t \to \infty}\frac{(-1)^n\alpha ^ne^{-\alpha t}}{\frac{(-1)^nm(m+1)\dot{}\dot{}\dot{}(m+n-1)}{t^{m+n}}}
+=\lim_{t \to \infty}\frac{t^{m+n}(-1)^n\alpha^ne^{-\alpha t}}{(-1)^nm(m+1)\dot{}\dot{}\dot{}(m+n-1)}
+\lim_{t \to \infty}t^m e^{-\alpha t}= \lim_{t \to \infty}\frac{t^m}{\frac{1}{e^{-\alpha t}}}
+ \frac{\delta^m}{\delta t^m}(t^m)=m! \quad\text{and}\quad \frac{\delta^m}{\delta t^m}\left(\frac{1}{e^{-\alpha t}}\right)=\frac{\alpha^m}{e^{-\alpha t}} 
+\lim_{t \to \infty}\frac{t^m}{\frac{1}{e^{-\alpha t}}}=\lim_{t \to \infty}\frac{m!e^{-\alpha t}}{\alpha ^m}=0 \quad\text{since m fixed}
+t^m
+m^{\text{th}}
+e^{\alpha t}
+t^m
+\large \lim_{t\to \infty}\dfrac{t^m}{e^{\alpha t}}
+\frac{\infty}{\infty}
+\lim_{t\to \infty}\dfrac{t^m}{e^{\alpha t}}=\frac{m}{\alpha}\lim_{t\to \infty}\dfrac{t^{m-1}}{e^{\alpha t}}=\frac{m(m-1)}{\alpha^2}\lim_{t\to \infty}\dfrac{t^{m-2}}{e^{\alpha t}}=\frac{m(m-1)(m-2)}{\alpha^3}\lim_{t\to \infty}\dfrac{t^{m-3}}{e^{\alpha t}}=...\\=\frac{m!}{\alpha^m}\lim_{t\to \infty}\dfrac{1}{e^{\alpha t}}=\frac{m!}{\alpha^m}*0=0
+Re(\alpha)>0

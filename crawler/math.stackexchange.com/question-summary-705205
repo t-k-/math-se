@@ -1,0 +1,8 @@
+C_n=\int_0^L f(x)\sin(\frac{n\pi}{L}x)\,dx
+C_n
+\sin{\left (m \pi x/L \right )}
+x
+\sum_{n=0}^{\infty} C_n \int_0^L dx \, \sin{\frac{m \pi x}{L}} \, \sin{\frac{n \pi x}{L}} = \int_0^L dx \, f(x) \sin{\frac{m \pi x}{L}}
+\int_0^L dx \, \sin{\frac{m \pi x}{L}} \, \sin{\frac{n \pi x}{L}} = \begin{cases} 0 & m \ne n \\ \frac{L}{2} & m = n \end{cases}
+C_m
+C_m = \frac{2}{L} \int_0^L dx \, f(x) \sin{\frac{m \pi x}{L}}

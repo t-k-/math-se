@@ -1,0 +1,26 @@
+n = pq
+p,q
+|p| = |q|
+\gcd(e, (p-1)(q-1)) = 1
+f_{n,e}(x) = x^e \mod n,
+x
+f(x)
+n,e
+p,q
+y^d \mod n
+ed \mod (p-1)(q-1) = 1
+y^d \mod n = x^{ed} \mod n = x^{ed \mod (p-1)(q-1)} \mod n.
+x^{ed} \mod n = x^{ed \mod (p-1)(q-1)} \mod n
+ed \equiv 1 \mod (p-1)(q-1)
+a
+ed = a(p-1)(q-1) + 1
+x
+p
+x^{a(p-1)(q-1) + 1} = x \, x^{a(p-1)(q-1)} \equiv 0 \equiv x \mod p
+x^{a(p-1)(q-1) + 1} = x \, \left(x^{a(q-1)}\right)^{p-1} \equiv x \mod p
+x^{a(p-1)(q-1) + 1} \equiv x \mod q
+p
+q
+x^{a(p-1)(q-1) + 1} \equiv x \mod pq
+y^d \equiv x \mod n
+   y^d \equiv x^{ed} \equiv x^{a(p-1)(q-1) + 1} \mod n 

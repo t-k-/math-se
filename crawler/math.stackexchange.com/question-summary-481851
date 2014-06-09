@@ -1,0 +1,27 @@
+R
+S
+\phi : R \rightarrow S
+\phi(1_R) = 1_S
+s_1, ..., s_n \in S
+\bar{\phi} : R[x_1, ..., x_n \rightarrow S
+\bar{\phi} | R = \phi
+\bar{\phi}(x_i) = s_i
+i = 1, 2, ..., n
+R[x_1, ..., x_n]
+\bar{\phi}
+\bar{\phi}(f) = \phi f(s_1, ..., s_n)
+\phi f(s_1, ..., s_n)
+f = \displaystyle\sum_{i = 0}^{m} a_{i} x_{1}^{k_{i1}}...x_{n}^{k_{in}}
+\phi f(s_1, ..., s_n) = \displaystyle\sum_{i = 0}^{m} \phi(a_{i}) s_{1}^{k_{i1}}...s_{n}^{k_{in}}
+\bar{\phi}
+\bar{\phi}(f + g) = \bar{\phi}(f) + \bar{\phi}(g)
+f = \sum_{i=1}^s f_i
+g = \sum_{j=1}^t g_j
+\overline{\phi}(f_i g_j) = \overline{\phi}(f_i)\overline{\phi}(g_j)
+\phi
+ f_i = a_ix_1^{k_{i1}}x_2^{k_{i2}}\ldots x_n^{k_{in}} 
+ g_j = b_jx_1^{l_{j1}}x_2^{l_{j2}}\ldots x_n^{l_{jn}} 
+ \overline{\phi}(fg) = \sum_{i,j}\overline{\phi}(f_i g_j) 
+ f_ig_j = a_ib_jx_1^{k_{i1}+l_{j1}}x_2^{k_{i2}+l_{j2}}\ldots x_n^{k_{in}+l_{jn}} 
+ \Rightarrow \overline{\phi}(f_jg_j) = \phi(a_ib_j)s_1^{k_{i1}+l_{j1}}s_2^{k_{i2}+l_{j2}}\ldots s_n^{k_{in}+l_{jn}} 
+ \overline{\phi}(f_i)\overline{\phi}(g_j) = \phi(a_i)s_1^{k_{i1}}s_2^{k_{i2}}\ldots s_n^{k_{in}}\phi(b_j)s_1^{l_{j1}}s_2^{l_{j2}}\ldots s_n^{l_{jn}} 

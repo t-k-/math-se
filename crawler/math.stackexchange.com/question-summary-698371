@@ -1,0 +1,54 @@
+x_n
+N
+(x_1, x_2, x_3, \dots, x_{42})
+x_1 + x_2 + x_3 + \dots + x_{42} = 2014,
+N \pmod {1000}
+x_n = 2a_n + 1
+a_n \geq 0
+a_1 + a_2 + a_3 + \dots + a_{42} = 986
+{1027 \choose 41}
+\pmod {1000}
+5
+2
+5
+2
+2
+2^{10} = 1024
+\dfrac1{p^k}\binom{n}{m}\equiv(-1)^k\left(\dfrac{n_0!}{m_0!r_0!}\right)\left(\dfrac{n_1!}{m_1!r_1!}\right)\cdots\left(\dfrac{n_d!}{m_d!r_d!}\right)\pmod{p}
+r = n -m
+n_i, m_i, r_i
+i
+p
+n, m, r
+k
+p
+\binom{n}{m}
+n=1027, m = 41, r = 986
+p=5
+n = (13102)_5, m = (00131)_5, r = (12421)_5
+\begin{align}\frac{1}{5^k}\binom{1027}{41} &\equiv (-1)^k\left(\frac{1!}{0!1!}\right)\left(\frac{3!}{0!2!}\right)\left(\frac{1!}{1!4!}\right)\left(\frac{0!}{3!2!}\right)\left(\frac{2!}{1!1!}\right) \mod{5}\\&\equiv (-1)^k \left(\frac{1}{1}\right) \left(\frac{6}{2}\right)\left(\frac{1}{24}\right)\left(\frac{1}{12}\right)\left(\frac{2}{1}\right) \mod{5}\\&\equiv (-1)^k \cdot 1 \cdot 3 \cdot 4 \cdot 3 \cdot 2 \mod{5}\\&\equiv (-1)^k \cdot 2 \mod{5}\end{align}
+\begin{align}\frac{1}{5^2}\binom{1027}{41} &\equiv (-1)^2 \cdot 2 \mod{5}\\\iff \frac{1}{5^2}\binom{1027}{41}&=5j + 2 \text{ where } j \in \mathbb{N}\\\iff\binom{1027}{41} &= 125j + 50\\\iff\binom{1027}{41} &\equiv 50 \mod{125}\end{align}
+p=2
+\begin{align}\binom{1027}{41} &\equiv 0 \mod{8}\end{align}
+\begin{align}x&\equiv \binom{1027}{41} (\text{mod }{1000})\equiv 50 (\text{mod }{125})\equiv 0 (\text{mod }{8})\\\implies x &\in \{50, 175, 300, 425, 550, 675, \color{green}{800}, 975\} \cap \{0, 8, 16, \cdots, 792, \color{green}{800}, 808, \cdots 992\}\\\implies x &= {800}\end{align}
+\sum_{i = 1}^{\infty} \left \lfloor \frac{1027}{5^i} \right \rfloor - \left \lfloor \frac{41}{5^i} \right \rfloor - \left \lfloor \frac{1027-41}{5^i} \right \rfloor= 2
+1000
+\sum_{i = 1}^{\infty} \left \lfloor \frac{1027}{2^i} \right \rfloor - \left \lfloor \frac{41}{2^i} \right \rfloor- \left \lfloor \frac{1027-41}{2^i} \right \rfloor >3
+ \dbinom{1027}{41} \equiv 0 \pmod 8
+125
+\dbinom{1027}{41} = \frac{1027 \cdot 1026 \cdot 1025 \cdots 1001}{986 \cdot 985 \cdot 984 \cdots 960} \dbinom{1000}{959} \equiv \frac{27!}{111 \cdot 110 \cdots 85} \dbinom{1000}{959} 
+\dbinom{1000}{959} = \frac{1000}{959} \dbinom{999}{958} = \frac{42}{959} \dbinom{1000}{958}
+\dbinom{1000}{959} = \frac{42 \cdot 43 \cdots 125}{959 \cdot 958 \cdots 876} \dbinom{1000}{875}
+\dbinom{ap}{bp} \equiv \dbinom{a}{b} \pmod {p^3}
+\dbinom{1000}{875} \equiv \dbinom{8}7 \equiv 8 \pmod {125}
+\frac{27! \cdot 42 \cdot 43 \cdots 125}{111 \cdot 110 \cdots 85 \cdot 876 \cdots 958 \cdot 959} \pmod {125}
+\frac{27! \cdot 42 \cdot 43 \cdots 125}{111!} \pmod {125}
+\frac{27! \cdot 42 \cdot 43 \cdots 125}{111!} \equiv \frac{ 112 \cdot 113 \cdots 125}{28 \cdot 29 \cdots 41} \pmod {125}
+\frac{112 \cdot 113 \cdots 124 \cdot 125}{28 \cdot 29 \cdots 41} \equiv \frac{(-1)(13!) \cdot 125}{28 \cdot 29 \cdots 41} \pmod {125}
+28 \cdot 29 \cdots 41 = 5^3K
+K \equiv 12 \pmod {125}
+\frac{(-1)(13!) \cdot 125}{28 \cdot 29 \cdots 41} \equiv \frac{-13!}{12} \equiv 100 \pmod {125}
+\dbinom{1027}{41} \equiv 8 \cdot 100 \equiv 50 \pmod {125}
+N \equiv 0 \pmod 8, N \equiv 50 \pmod {125}
+N \equiv 800 \pmod {1000}
+8

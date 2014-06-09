@@ -1,0 +1,9 @@
+R^2
+ V = \left[\begin{matrix} \frac 1n \sum_{i=1}^{n}x_i^2 - \bar x^2 & \frac 1n \sum_{i=1}^{n}x_iy_i - \bar x \bar y \\ \frac 1n \sum_{i=1}^{n}x_iy_i - \bar x \bar y & \frac 1n \sum_{i=1}^{n}y_i^2 - \bar y^2 \\ \end{matrix} \right]
+x_i
+y_i
+A=(x_1,y_1), B=(x_2,y_2)
+C=\frac{A+B}{2}
+D=\sqrt{\frac{(A-C)^2+(B-C)^2}{2}}
+\begin{pmatrix}         D(1)\cdot{D}(1) & D(1)\cdot{D}(2)\\         D(1)\cdot{D}(2) & D(2)\cdot{D}(2)\\ \end{pmatrix} 
+D=\sqrt{\frac{(A-C)^2+(B-C)^2}{n-1}}=\sqrt{(A-C)^2+(B-C)^2}

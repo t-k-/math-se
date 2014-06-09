@@ -1,0 +1,23 @@
+f
+[a,b]
+(a,b)
+g
+[a,b]
+[a,b]
+n
+|Diff_{\frac{1}{n}}f|\leq g
+\int_a^b f'=f(b)-f(a),
+Diff_hf=\frac{f(x+h)-f(x)}{h}.
+(\Delta_h f) (x) = \frac{f(x+h)-f(x)}{h}
+h >0
+\Delta_h f
+[a,b-h]
+f
+\lim_{h \downarrow 0} \int_a^{b-h} \Delta_h f = f(b)-f(a)
+\lim_{h \downarrow 0} (\Delta_h f)(x) = f'(x)
+\phi_h(x) = \begin{cases} (\Delta_h f) (x), & x \in [a,b-h] \\ 0, & \text{otherwise}\end{cases}
+\int_a^b \phi_h = \int_a^{b-h} \Delta_h f
+\lim_{h \downarrow 0} \phi_h (x) = f'(x)
+|\phi_{\frac{1}{n}} | \le g
+\lim_{n \to \infty} \int_a^b \phi_{\frac{1}{n}} = \int_a^b \lim_{n \to \infty} \phi_{\frac{1}{n}}(x) dx
+\int_a^b f' = f(b)-f(a)

@@ -1,0 +1,31 @@
+g_1(x)=1
+h_1(x)=\int_0^xg_1(y)dy + \int_0^x\int_0^yg_1(z)dzdy + \int_0^x\int_0^y\int_0^zg_1(t)dtdzdy + \cdots
+g_2(x)=h_1(1)-h_1(x)
+h_2(x)=\int_0^xg_2(y)dy + \int_0^x\int_0^yg_2(z)dzdy + \int_0^x\int_0^y\int_0^zg_2(t)dtdzdy + \cdots
+g_3(x)=h_2(1)-h_2(x)
+\cdots
+h_{i}(x)=\int_0^xg_i(y)dy + \int_0^x\int_0^yg_i(z)dzdy + \int_0^x\int_0^y\int_0^zg_i(t)dtdzdy + \cdots
+g_{i+1}(x)=h_i(1)-h_i(x)
+h_i(x)
+h_i(x)
+M
+C
+M
+C
+M=C=1
+a\in\mathbb R
+h(x)=ax
+f(x)=a(1-x)
+h_i(x)=\int_0^x(f_i(y)+h_i(y))\,\mathrm dy\;,
+f_{i+1}(x)=h_i(1)-h_i(x)
+h_{i+1}(x)=\int_0^x(h_i(1)-h_i(y)+h_{i+1}(y))\,\mathrm dy\;,
+h(x)=\int_0^xh(1)\,\mathrm dy=h(1)x=:ax
+f(x)=a-h(x)=a(1-x)\;.
+a
+f
+ \begin{align} \int_0^1f_{i+1}(x)\,\mathrm dx &= \int_0^1(h_i(1)-h_i(x))\,\mathrm dx \\ &= h_i(1)-\int_0^1h_i(x)\,\mathrm dx \\ &= \int_0^1(f_i(x)+h_i(x))\,\mathrm dx-\int_0^1h_i(x)\,\mathrm dx \\ &= \int_0^1f_i(x)\,\mathrm dx\;. \end{align} 
+\int_0^1f_1(x)\,\mathrm dx=1
+\int_0^1f(x)\,\mathrm dx=a/2
+a=2
+h(x)=2x
+f(x)=2(1-x)

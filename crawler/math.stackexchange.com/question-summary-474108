@@ -1,0 +1,14 @@
+Ax+c
+A
+x
+c
+x=\arg \min_x var(Ax+c)
+y = [1/N; 1/N; \dots; 1/N]
+y^{\mathrm{T}}\left(Ax+c\right)
+(Ax+c)
+\Vert (Ax+c) - y^{\mathrm{T}}\left(Ax+c\right) \Vert_2^2
+x
+\vec{1}\in\mathbb{R}^m
+y\in\mathbb{R}^m
+ Ax = \vec{1}y^{\mathrm{T}}(Ax+c) - c 
+ \begin{array}{c} \left(A^{\mathrm{T}}A - A^{\mathrm{T}}\vec{1}y^{\mathrm{T}}A\right)x = A^{\mathrm{T}} \, \vec{1}y^{\mathrm{T}} c - A^{\mathrm{T}}c \\ \Rightarrow x = \left(A^{\mathrm{T}}A - A^{\mathrm{T}}\vec{1}y^{\mathrm{T}}A\right)^{-1} \left( A^{\mathrm{T}} \,\vec{1}y^{\mathrm{T}} c - A^{\mathrm{T}}c \right) \end{array} 

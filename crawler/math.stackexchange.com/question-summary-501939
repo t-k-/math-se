@@ -1,0 +1,27 @@
+2
+f_X(x)=\sqrt{\frac{2}{\pi}}\exp(-\frac{1}{2}x^2),x>0
+Z ∼ N(0, 1)
+|Z|
+S
++1
+-1
+SX
+I\{S=1\}\equiv I_1
+1
+S=1
+0
+S=-1
+S=1 \Rightarrow Z = X
+S=-1 \Rightarrow Z = -X
+Z
+Z= XI_1 - X(1-I_1) = X(2I_1-1)
+X
+S
+E(Z) = E\left(X(2I_1-1)\right) =  E(X)E(2I_1-1) = \sqrt{\frac{2}{\pi}}\cdot(2E(I_1)-1)
+E(I_1) = P(S=1) = 1/2
+E(Z) =   \sqrt{\frac{2}{\pi}}\cdot(2\frac 12-1) = 0
+ \text {Var}(Z) = E(Z^2) = E\left(X^2(2I_1-1)^2\right) = E\left(X^2\right)E\left(4I_1^2 - 4I_1+1\right)
+\text {Var}(X) = E(X^2) - \left[E(X)\right]^2 \Rightarrow E(X^2) = \text {Var}(X) + \left[E(X)\right]^2 = 1-\frac {2}{\pi} + \frac {2}{\pi} = 1
+ \text {Var}(Z) =  1\cdot E\left(4I_1^2 - 4I_1+1\right)= 4E\left(I_1^2\right) - 4P(S=1)+1 = 4E\left(I_1^2\right) - 1
+I_1^2= I_1\cdot I_1 = \min \{I_1,I_1\} = I_1
+\text {Var}(Z) = 4E\left(I_1\right) - 1 = 4P(S=1) - 1 = 2 - 1 = 1

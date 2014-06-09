@@ -1,0 +1,17 @@
+ \sum_{k=1}^{\infty} \ln{\left(1 + \frac{1}{4 k^2}\right)}
+\displaystyle \sum\limits_{k=1}^{+ \infty} \ln \left(1+ \frac{1}{4k^2} \right)= \ln \left( \frac{2}{\pi} \sinh \left( \frac{\pi}{2} \right) \right)
+f(x)=\ln\left(1+\frac{1}{4x^2}\right)
+[1,+\infty)
+f'(x)=-\frac{1}{2x^3(1+1/4x^2)}
+[1,+\infty)
+f(x)
+\displaystyle{\sum_{k=1}^{+\infty}\ln\left(1+\frac{1}{4k^2}\right)}
+\int_1^{+\infty}\ln\left(1+\frac{1}{4x^2}\right)dx
+\int_1^{+\infty}\ln\left(1+\frac{1}{4x^2}\right)dx=[-2\ln(2)x+x\ln(4+1/x^2)+\arctan(2x)]\big|_{x=1}^{+\infty}\\=2\ln(2)-\arctan(2)-\ln(5)+(1/2)\pi
+\displaystyle{u=\ln\left(1+\frac{1}{4x^2}\right)}
+dv=dx
+z=i\pi/2
+ \ln\Bigl(\frac{2}{\pi}\sinh\Bigl(\frac{\pi}{2}\Bigr)\Bigr)=\ln\Bigl(\frac{e^{\pi/2}-e^{-\pi/2}}{\pi}\Bigr). 
+ \sin z=z\,\prod_{k=1}^\infty\Bigl(1-\frac{z^2}{\pi^2n^2}\Bigr),\qquad z\in\mathbb{C}. 
+\log\left(1+\frac{1}{4k^2}\right) = \sum_{n=0}^\infty \frac{(-1)^n}{n+1} \frac{1}{4^{n+1} k^{2n+2}}
+\begin{eqnarray}    \sum_{k=1}^\infty \log\left(1+\frac{1}{4k^2}\right) &=& \sum_{n=0}^\infty \frac{(-1)^n}{n+1} \frac{\zeta(2n+2)}{4^{n+1}} = \sum_{n=1}^\infty \frac{\pi^{2n}}{2n} \frac{B_{2n}}{(2n)!} \\ &=& \sum_{n=1}^\infty \frac{\pi^{n}}{n} \frac{B_{n}}{(n)!} + \frac{\pi}{2} \\&=& \frac{\pi}{2} + \int_0^1 \left(\sum_{n=1}^\infty \pi^{n} t^{n-1}\frac{B_{n}}{(n)!}\right) \mathrm{d} t \\ &=& \frac{\pi}{2} + \int_0^1 \left(\frac{\pi}{\mathrm{e}^{\pi t}-1} - \frac{1}{t} \right) \mathrm{d} t \\ &=& \frac{\pi}{2} + \int_0^\pi \left(\frac{1}{\mathrm{e}^{u}-1} - \frac{1}{u} \right) \mathrm{d} u \\ &=&   \frac{\pi}{2} + \left. \log\left(\frac{1-\mathrm{e}^{-u}}{u}\right) \right|_{0}^{\pi} = \frac{\pi}{2} + \log\left(\frac{1-\exp(-\pi)}{\pi}\right) = \log\left(\frac{2}{\pi} \cdot \sinh\frac{\pi}{2}\right) \end{eqnarray} \tag{1} 

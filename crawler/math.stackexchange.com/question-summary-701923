@@ -1,0 +1,83 @@
+f(n,m,k)
+n
+\,0
+1
+m\,
+1
+k
+f(n,m,k)
+ F_k(x,y)=\sum_{n,m\ge0}f(n,m,k)x^ny^m \,\,\,\,\,\,\,\,\ (k=1,2,...). 
+ F_k = \frac{1-x^ky^k}{1-x-xy-x^{k+1}y^k} 
+m,n,k
+0\le k\le m \le n
+k\lt n
+n
+m
+1
+k
+0
+f(n-1,m, k)
+0
+f(n-1,m, k)
+1
+f(n-1,m-1, k)
+k-1
+1
+k\lt n
+0
+k-1
+\,1
+k
+10\cdots0
+f(n-k-1,\,m-k,\,k)
+0\le m \le n
+k > m
+f(n,m,k) = \binom{n}m
+1
+1
+n
+m
+1
+f(n,m,k) = 0
+f(n,m,k) = f(n-1,m,k) + f(n-1,m-1,k) - f(n-k-1,\,m-k,\,k)
+\binom{n}m = 0
+m\gt n
+m=n\ge k
+f(n,m,k)=0
+\omega
+ \begin{align} F_k(x,y) & = \sum_{n,m\ge0}f(n,m,k) x^n y^m \\ & = \sum_{n=0}^{\infty}\sum_{m=0}^{n}f(n,m,k) x^n y^m \\ & = \sum_{n=0}^{k-1}\sum_{m=0}^{n}f(n,m,k) x^n y^m + \sum_{n=k}^{\infty}\sum_{m=0}^{k-1}f(n,m,k) x^n y^m + \sum_{n=k}^{\infty}\sum_{m=k}^{n}f(n,m,k) x^n y^m \\ & = \sum_{n=0}^{k-1}\sum_{m=0}^{n}\binom{n}m x^n y^m + \sum_{n=k}^{\infty}\sum_{m=0}^{k-1}\binom{n}m x^n y^m + \sum_{n=k}^{\infty}\sum_{m=k}^{n}f(n,m,k) x^n y^m \end{align} 
+ \begin{align} & \sum_{m=0}^{k-1}\sum_{n=0}^{\infty}\binom{n}m x^n y^m + \sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n,m,k) x^n y^m \\ =& \sum_{m=0}^{k-1} \frac{x^m}{(1-x)^{m+1}} y^m + \sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n,m,k) x^n y^m \\ =& \frac{1}{1-x} \cdot \omega(x,y) + \sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n,m,k) x^n y^m  \end{align} 
+\omega(x,y) := \frac{1 - (\frac{xy}{1-x})^k}{1 - \frac{xy}{1-x}}.
+ \begin{align} \sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n,m,k) x^n y^m & = A + B - C  \end{align} 
+ \begin{align} A & =\sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n-1,m,k) x^n y^m \\ & = x\sum_{n=k}^{\infty}\sum_{m=k}^{n}f(n,m,k) x^n y^m \\ & = x\left(\sum_{n=0}^{\infty}\sum_{m=0}^{n}f(n,m,k) x^n y^m -  \sum_{n=0}^{k-1}\sum_{m=0}^{n}f(n,m,k) x^n y^m - \sum_{n=k}^{\infty}\sum_{m=0}^{k-1}f(n,m,k) x^n y^m \right)\\ & = x\left(F_k(x,y) -  \sum_{n=0}^{k-1}\sum_{m=0}^{n}\binom{n}m x^n y^m - \sum_{n=k}^{\infty}\sum_{m=0}^{k-1}\binom{n}m x^n y^m \right)\\ & = x\left(F_k(x,y) -  \sum_{m=0}^{k-1}\sum_{n=0}^{\infty}\binom{n}m x^n y^m\right)\\ & = xF_k(x,y) - \frac{x}{1-x} \cdot \omega(x,y)\\ \\ B & =\sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n-1,m-1,k) x^n y^m \\ & = xy\sum_{n=k}^{\infty}\sum_{m=k-1}^{n-1}f(n,m,k) x^n y^m \\ & = xy\left(\sum_{n=0}^{\infty}\sum_{m=0}^{n}f(n,m,k) x^n y^m -  \sum_{n=0}^{k-1}\sum_{m=0}^{n}f(n,m,k) x^n y^m - \sum_{n=k}^{\infty}\sum_{m=0}^{k-2}f(n,m,k) x^n y^m \right)\\ & = xy\left(F_k(x,y) -  \sum_{n=0}^{k-1}\sum_{m=0}^{n}\binom{n}m x^n y^m - \sum_{n=k}^{\infty}\sum_{m=0}^{k-2}\binom{n}m x^n y^m \right)\\ & = xy\left(F_k(x,y) -  \sum_{m=0}^{k-2}\sum_{n=0}^{\infty}\binom{n}m x^n y^m - x^{k-1}y^{k-1}\right)\\ & = xyF_k(x,y) -  xy\sum_{m=0}^{k-2}\sum_{n=0}^{\infty}\binom{n}m x^n y^m - x^ky^k\\ & = xyF_k(x,y) -  xy\sum_{m=0}^{k-2}\frac{x^m}{(1-x)^{m+1}} y^m - x^ky^k\\ & = xyF_k(x,y) + 1 - \omega(x,y) - x^ky^k\\ \\ C & =\sum_{n=k+1}^{\infty}\sum_{m=k}^{n-1}f(n-k-1,\,m-k,\,k) x^n y^m = x^{k+1}y^kF_k(x,y) \end{align} 
+ F_k = \frac{1}{1-x} \cdot \omega + xF_k - \frac{x}{1-x} \cdot \omega + xyF_k + 1 - \omega - x^ky^k - x^{k+1}y^kF_k 
+ F_k = \frac{1-x^ky^k}{1-x-xy-x^{k+1}y^k} 
+m > n
+m \le n
+k > m
+{n \choose m}
+{n-1 \choose m} + {n-1 \choose m-1} + 0
+n = 0
+m = n = 0
+m \le n
+k \le m
+k < n
+m \le n
+k \le m
+k \ge n
+k = m = n
+0
+0 + 1 - 0 = 1
+\omega
+x^{n+1}y^m
+\frac{1}{x}
+x^n y^m
+f(n,m,k)
+x^{n+1} y^m
+N = n + 1 -m
+x^m y^m
+ \left(1 + xy + x^2y^2 + \cdots + x^{k-1}y^{k-1}\right)^{n+1-m} = \frac{(1 - x^k y^k)^{n+1-m}}{(1 - xy)^{n+1-m}} 
+\frac{1}{(1 - xy)^{n+1-m}}
+(1 - x^k y^k)^{n+1-m}
+x^{n+1} y^m
+f(m,n,k)

@@ -1,0 +1,15 @@
+(1+x)^n=\sum_{k=0}^{n}\binom{n}{k}x^k
+(1+x)^{n+1}=(1+x)\sum_{k=0}^{n}\binom{n}{k}x^k=
+=\sum_{k=0}^{n}\binom{n}{k}x^k+x\sum_{k=0}^{n}\binom{n}{k}x^k
+=\sum_{k=0}^{n}\binom{n}{k}x^k+\sum_{k=0}^{n}\binom{n}{k}x^{k+1}=
+=\sum_{k=0}^{n}\binom{n}{k}x^k+\sum_{k=1}^{n+1}\binom{n}{k-1}x^{k}=
+=\sum_{k=0}^{n+1}\binom{n}{k}x^k+\sum_{k=0}^{n+1}\binom{n}{k-1}x^{k}=
+\binom{n}{k}=0
+k<0,k>n
+=\sum_{k=0}^{n+1}\left(\binom{n}{k}+\binom{n}{k-1}\right)x^k=
+=\sum_{k=0}^{n+1}\binom{n+1}{k}x^k
+n = 0
+n = k
+n = k
+n = k+1
+n

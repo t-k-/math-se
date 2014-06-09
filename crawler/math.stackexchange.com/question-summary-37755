@@ -1,0 +1,14 @@
+\int_0^\infty \frac{x^k}{1+\cosh(x)} \mathrm{d}x 
+\zeta(k)
+\zeta
+\int \frac{x^{k-1}}{e^x+1} \mathrm{d}x
+k > -1
+\eta(s) = (1 - 2^{1-s})\zeta(s)
+s \in \mathbb{C}
+ \frac{1}{1 + \cosh x}  = \frac{2e^{-x}}{(1 + e^{-x})^2} = 2 \frac{d}{dx} \frac{1}{1 + e^{-x}} = 2 \sum_{n = 1}^{\infty} (-1)^{n-1} n e^{-n x}.
+ \begin{eqnarray*}\int_{0}^{\infty} \frac{x^k}{1 + \cosh x} \, dx & = & 2 \sum_{n = 1}^{\infty} (-1)^{n-1} n \int_{0}^{\infty} x^{k} e^{-n x} \, dx \\ & = & 2 \sum_{n = 1}^{\infty} (-1)^{n-1} \frac{\Gamma(k+1)}{n^k} \\ & = & 2 (1 - 2^{1-k}) \zeta(k) \Gamma(k+1). \end{eqnarray*}
+\int\limits_0^\infty \frac{x^{s-1}}{e^x-1}dx=\zeta(s)\Gamma(s)
+\int\limits_0^\infty \frac{x^{s-1}}{e^x+1}dx=\eta(s)\Gamma(s)
+\int\limits_0^\infty \frac{x^{s}e^x}{(e^x-1)^2}dx=\zeta(s)\Gamma(s+1)
+\int\limits_0^\infty \frac{x^{s}e^x}{(e^x+1)^2}dx=\eta(s)\Gamma(s+1)
+\int\limits_0^1 \frac{x^s}{1-x}\log x dx = \sum\limits_{k=0}^\infty \frac{1}{(k+s)^2}

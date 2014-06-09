@@ -1,0 +1,24 @@
+\displaystyle \int_{-\infty}^{\infty} \frac{\cos x}{x^2+1}~dx
+\int_{-\infty}^{\infty}\frac{\cos x}{x^2+1}dx=\Re\int_C\frac{e^{iz}}{z^2+1}dz=\Re 2\pi iRes|_{z=i}=\Re 2\pi i\frac{e^{-1}}{2i}=\frac{\pi}{e}.
+C_R:=[-R,R]\cup \Gamma_R:=\{z\in\Bbb C\;;\;z=Re^{it}\,,\;0\le t\le \pi\,\,,\,\,R>0\}
+\left|\;\int\limits_{\Gamma_R}\frac{e^{iz}}{z^2+1}dz\;\right|\le \sup_{z\in\Gamma_R}\frac{e^{-R\sin t}}{R^2-1}R\pi\xrightarrow[R\to\infty]{}0\;,\;\;\text{since}\;\;R\sin t>0
+\int\limits_{-R}^R\frac{e^{ix}}{x^2+1}dx\xrightarrow[R\to\infty]{}\int\limits_{-\infty}^\infty\frac{\cos t+i\sin t}{x^2+1}dx
+\oint\limits_{C_R}f(z):=\frac{e^{iz}}{z^2+1}\,dz=2\pi iRes_{z=i}(f)=2\pi i\frac{e^{-1}}{2i}=\frac{\pi}{e}
+\displaystyle f(t) = \int_{0}^{\infty} \frac{\cos (tx)}{1+x^{2}} \ dx
+\displaystyle \mathcal{L} [f(t)] = \int_{0}^{\infty} \int_{0}^{\infty} \frac{\cos (tx)}{1+x^{2}} \ e^{-st} \ dx \ dt
+ \displaystyle= \int_{0}^{\infty} \int_{0}^{\infty} \frac{1}{1+x^{2}} \ \cos(xt) e^{-st} dt \ dx
+ \displaystyle = \int_{0}^{\infty} \frac{1}{1+x^{2}} \frac{s}{s^{2}+x^{2}}\ dx = \frac{s}{1-s^{2}} \int_{0}^{\infty} \Big(\frac{1}{s^{2}+x^{2}} - \frac{1}{1+x^{2}} \Big) \ dx 
+ \displaystyle = \frac{s}{1-s^{2}} \Big(\frac{\pi}{2s} - \frac{\pi}{2}\Big) = \frac{\pi}{2(1+s)} 
+f(t)  = \mathcal{L}^{-1} [\mathcal{L} \ f(t) ] = \mathcal{L}^{-1} \Big(\frac{\pi}{2(1+s)} \Big) 
+ \displaystyle= \frac{\pi}{2} \mathcal{L}^{-1} \Big(\frac{1}{1+s} \Big) = \frac{\pi}{2}e^{-t}
+\displaystyle \int_{-\infty}^{\infty} \frac{\cos x}{1+x^{2}} \ dx = 2 \displaystyle\int_{0}^{\infty} \frac{\cos x}{1+x^{2}} \ dx = 2f(1) = \frac{\pi}{e}
+x\mapsto e^{-|x|}
+\mathbb{R}
+x = 1
+2
+ \begin{align} \int_{-\infty}^\infty e^{-|x|}e^{-itx}\,dx& = \int_0^\infty e^{-x(1+it)}\,dx + \int_{-\infty}^0 e^{x(1-it)}\,dx \\ & = \frac{1}{1+it} + \frac{1}{1-it} \\ & = \frac{2}{1+t^2} \end{align} 
+ \int_{-\infty}^\infty \frac{2}{1+t^2}e^{ixt}\,dt = 2\pi e^{-|x|}. 
+z=i, -i
+R>i
+R \rightarrow \infty
+0

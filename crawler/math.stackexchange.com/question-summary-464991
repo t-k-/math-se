@@ -1,0 +1,14 @@
+ C, D 
+ S, T 
+ C, D 
+ C\times D [S \times T^{-1}] \cong C [S^{-1} ] \times D [T^{-1}] 
+E
+\phantom{~~~} \hom(C[S^{-1}] \times D[T^{-1}],E)
+\cong \hom(C[S^{-1}],\hom(D[T^{-1}],E))
+\cong \{F \in \hom(C,\hom(D[T^{-1}],E)) : F(S) \subseteq \mathrm{Iso}(\hom(D[T^{-1}],E))\}
+\cong \{F \in \hom(D[T^{-1}],\hom(C,E)) : F(D[T^{-1}])(S) \subseteq \mathrm{Iso}(E)\}
+\cong \{F \in \hom(D,\hom(C,E)) : F(T) \subseteq \mathrm{Iso}(\hom(C,E)), \,F(D)(S) \subseteq \mathrm{Iso}(E)\}
+=\{F \in \hom(C \times D,E) : F(C \times T) \subseteq \mathrm{Iso}(E),\, F(S \times D) \subseteq \mathrm{Iso}(E)\}
+=\{F \in \hom(C \times D,E) : F(S \times T) \subseteq \mathrm{Iso}(E)\}
+\cong \hom((C \times D)[(S \times T)^{-1}],E).
+C[S^{-1}] \times D[T^{-1}] \cong (C \times D)[(S \times T)^{-1}]

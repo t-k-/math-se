@@ -1,0 +1,28 @@
+ \int_a^x f'(t)dt = f(x) - f(a) \tag 1 
+ f(x) = f(a) + \int_a^x f'(t)dt \tag 2 
+ f(x) =f(a) + R_o(x) \tag 3
+ f(x) 
+ f(a) 
+R_o(x)
+ u= f'(t), du=f''(t) \tag 4
+ dv = dt, v=-(x-t) \tag 5
+f'(t)
+f'(t)
+dt
+v= -(x-t)
+t
+v = -(x-t)
+v=t
+v = -(x - t)
+f''(t)
+(x-t)
+dv = ((x-t)/1!)dt
+v = -(x-t)^2/2!
+v = -(x-t)^2/2!
+-(x-t)^3/3!
+f(x) = f(a) +xf'(x) - af'(a) -\int_a^xf''(t)tdt
+f(x) = f(a) + \int_a^xf'(t)dt
+f(x) = f(a) + f'(x)[-(x-x)] - f'(a)[-(x-a)] - \int_a^xf''(t)[-(x-t)]dt
+f(x) = f(a) + (x-a)f'(a) + \int_a^x(x-t)f''(t)dt
+f(x) = f(a) + (x-a)f'(a) + \frac{(x-a)^2}{2!}f''(a) + \int_a^x\frac{(x-t)^2}{2!}f'''(t)dt
+f(x) = \sum_{k=0}^n\frac{(x-a)^k}{k!}f^{(k)}(a) + \int_a^x\frac{(x-t)^n}{n!}f^{(n+1)}(t)dt

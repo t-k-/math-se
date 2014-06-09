@@ -1,0 +1,20 @@
+\sum_{n\ge0} nx^n\text{, where }\lvert x \rvert<1
+\sum_{n\ge0} x^n=(1-x)^{-1} \\ \frac{d}{d x} \sum_{n\ge0} x^n = \frac{d}{d x} (1-x)^{-1} \\ \sum_{n\ge0} nx^{n-1} = (1-x)^{-2} \\ x \sum_{n\ge0} n x^{n-1} = x(1-x)^{-2} \\ \sum_{n\ge0} nx^n=\frac x{(1-x)^2}
+\sum_{n\ge0}nx^n=\sum_{n\ge0}x\frac d{dx}x^n= x\frac d{dx}\sum\limits_{n\ge0}x^n=x\frac d{dx}\frac1{1-x}=\frac x{(1-x)^2}
+\begin{align} \sum\limits_{n\ge0}nx^n&=\sum\limits_{n\ge0}x(x^n)' &\text{integrate } nx^{n-1}\\ &=x\sum\limits_{n\ge0}(x^n)' &\text{factor } x \,\text{out}\\ &=x\left(\sum\limits_{n\ge0}(x^n)\right)' &\text{differentiate the whole series} \\ &=x\left(\frac1{1-x}\right)' &|x|<1\\ &=\frac x{(1-x)^2} &\text{differentiate }\frac {1}{1-x} \end{align}
+\frac{d}{dx}
+\sum
+n x^n
+x \dfrac{d}{dx} x^n
+n^2 x^n
+x \dfrac{d}{d x} \left(x \dfrac{d}{d x} x^n \right)
+D
+\dfrac{d}{d x}
+n x^n = x D x^n
+n^2 x^n = (x D)^2 x^n
+n^k x^n = (x D)^k x^n
+p(\cdot)
+p(n) x^n = p(x D) x^n
+A(x) = \sum_{n \ge 0} a_n x^n
+A(x)
+ \sum_{n \ge 0} p(n) a_n x^n = p(x D) A(x) 

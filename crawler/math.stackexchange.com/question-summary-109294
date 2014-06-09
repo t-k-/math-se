@@ -1,0 +1,15 @@
+H=\ \left[ \begin{array}{cc|r} 1 & 1  \\ 1 & -1  \end{array} \right]
+H_2
+S=\sum_{k=0}^{N}{\frac{H^k}{k!}}
+D=\det(S)
+A
+H = A \begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix} A^{-1}
+S = A \begin{pmatrix} \sum_{k=0}^N 2^k/k! & 0 \\ 0 & \sum_{k=0}^N (-2)^k/k! \end{pmatrix} A^{-1}
+\det S = \left( \sum_{k=0}^N 2^k/k! \right) \left( \sum_{k=0}^N (-2)^k/k! \right).
+N
+e^2
+e^{-2}
+1
+\sum_{k=0}^N 2^k/k! \approx e^2 - 2^{N+1}/(N+1)!
+\left( \sum_{k=0}^N 2^k/k! \right) \left( \sum_{k=0}^N (-2)^k/k! \right) \approx (e^2 - 2^{N+1}/(N+1)!)(e^{-2} - (-2)^{N+1}/(N+1)!)
+\approx 1 - \frac{2^{N+1}}{(N+1)!}(e^{-2} + (-1)^{N+1} e^2) + \mbox{lower order terms}.

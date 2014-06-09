@@ -1,0 +1,11 @@
+X_1, X_2,\dots, X_N
+F(x)=e^{-e^{-x}}
+U_i=X_i+\delta_i
+i\in\{1,2,\dots N\}
+\delta_i
+U_1=max_i\{U_i\}
+\int_{-\infty}^{\infty}{\prod_{i=2}^{N}{F(x+\delta_1-\delta_i)}\mathrm{d}F(x)}
+\int_{-\infty}^{\infty}{\prod_{i=2}^{N}{e^{-e^{-(x+\delta_1-\delta_i)}}}e^{-x}e^{-e^{-x}}\mathrm{d}x}
+\int_{-\infty}^{\infty}{e^{-e^{-x}\sum_{i=1}^{N}{e^{-(\delta_1-\delta_i)}}}e^{-x}\mathrm{d}x}
+=\frac{1}{\sum_{i=1}^{N}{e^{-(\delta_1-\delta_i)}}}\int_{-\infty}^{\infty}{\mathrm{d}e^{-e^{-x}\sum_{i=1}^{N}{e^{-(\delta_1-\delta_i)}}}}
+=\frac{e^{\delta_1}}{\sum_{i=1}^{N}{e^{\delta_i}}}

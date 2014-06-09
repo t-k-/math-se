@@ -1,0 +1,30 @@
+f(z, v, t)
+\Psi(z, t)
+ \frac{\partial f}{\partial t} + v \frac{\partial f}{\partial z} - g(v) \frac{\partial \Psi}{\partial z} = 0 \tag{1} 
+ \frac{\partial^2 \Psi}{\partial z^2}=\int_{-\infty}^{\infty}f(z, v, t)\,\text{d}v \tag{2} 
+g(v)
+0
+v\to \pm \infty
+f
+\Psi
+\pm\infty
+ f(z, v, t) = \sum_{n= 0}^{\infty}f_{n}(z, v)t^{n} 
+ \Psi(z, t) = \sum_{n= 0}^{\infty}\Psi_{n}(z)t^{n} 
+(1)
+ \sum_{n=0}^{\infty}(n+1) f_{n+1} t^{n}  + v \sum_{n=0}^{\infty}\frac{\partial f_{n}}{\partial z}t^{n} - g(v)\sum_{n= 0}^{\infty}\Psi_{n}'t^{n} = 0 
+ (n+1) f_{n+1} + v \frac{\partial f_{n}}{\partial z} - g(v) \Psi_{n}' = 0 
+(2)
+ \frac{\partial^{2} }{\partial z^{2}} \sum_{n= 0}^{\infty}\Psi_{n}(z)t^{n} = \int_{-\infty}^{\infty} \sum_{n= 0}^{\infty}f_{n}(z, v)t^{n} \,\text{d}v 
+ \Psi_{n}''(z) = \int_{-\infty}^{\infty} f_{n}(z, v) \,\text{d}v 
+ \Psi_{n}'(z) = \int_{-\infty}^{z} \int_{-\infty}^{\infty} f_{n}(\xi, v) \,\text{d}v\text{d}\xi 
+ (n+1) f_{n+1} + v \frac{\partial f_{n}}{\partial z} - g(v) \int_{-\infty}^{z} \int_{-\infty}^{\infty} f_{n}(\xi, v) \,\text{d}v\text{d}\xi = 0 
+f_{0}(z, v)
+f_{n}(z, v)
+f(z, v ,t)
+f_n
+v
+v
+0
+\Psi_{n}''=0
+\Psi_{n}'
+f_n

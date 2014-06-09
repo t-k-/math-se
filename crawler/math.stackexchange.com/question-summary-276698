@@ -1,0 +1,16 @@
+f\in C^{1}[0,1]
+0\leq i\leq n-1,i\in \mathbf{N}
+\xi_1,\xi_2 \in [1/n,1/(n+1)]
+(\star)
+(\dagger)
+\xi_1 , \xi_2 \in [i/n,(i+1)/n]
+n \to \infty
+\xi_1 \to \xi_2
+f \in C^1
+f(x) = f(i/n) + (x-i/n)f'(\xi_1) \,\,\,\,\,\,\,\,\, (\star)
+f(x) = f((i+1)/n) + (x-(i+1)/n)f'(\xi_2) \,\,\,\,\,\,\,\,\, (\dagger)
+f(x) = \dfrac{f(i/n) + f((i+1)/n)}2 + \dfrac12(x-i/n)f'(\xi_1) + \dfrac12(x-(i+1)/n)f'(\xi_2)
+\int_{i/n}^{(i+1)/n} f(x) dx = \dfrac{f(i/n) + f((i+1)/n)}{2n} + \dfrac{f'(\xi_1)}{4n^2} - \dfrac{f'(\xi_2)}{4n^2}
+n^2 \left(\int_{i/n}^{(i+1)/n} f(x) dx - \dfrac{f(i/n) + f((i+1)/n)}{2n} \right) = \dfrac{f'(\xi_1)-f'(\xi_2)}{4}
+\overbrace{\lim_{n \to \infty} n^2 \left(\int_{i/n}^{(i+1)/n} f(x) dx - \dfrac{f(i/n) + f((i+1)/n)}{2n} \right) = \lim_{\xi_1 \to \xi_2}\dfrac{f'(\xi_1)-f'(\xi_2)}{4}}^{\text{Because $\xi_1 , \xi_2 \in [i/n,(i+1)/n]$ and hence as $n \to \infty$, we get that $\xi_1 \to \xi_2$}}
+\underbrace{\lim_{\xi_1 \to \xi_2}\dfrac{f'(\xi_1)-f'(\xi_2)}{4} = 0}_{\text{Because $f \in C^1$}}

@@ -1,0 +1,11 @@
+2\times 2
+x
+C=I
+A=B+(B+B^T)x+Bx^2
+B=\begin{pmatrix}0&1\\0&0\end{pmatrix}
+A=\begin{pmatrix}0&1+x+x^2\\x&0\end{pmatrix}
+-x(1+x+x^2)\neq 0=\det B(1+2x+x^2)
+x
+1+Tr(C)x+\det(C)x^2=\det(I+xC)
+A=(I+Cx)B(I+C^tx)=B+BC^tx+CBx+CBC^tx^2=B+(CB+BC^T)x+CBC^Tx^2
+\det(A)=\det(B)\det(I+Cx)\det((I+Cx)^T)=\det B(\det(I+Cx))^2=\det B(1+Tr(C) x+\det(C)x^2)

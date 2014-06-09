@@ -1,0 +1,41 @@
+n\geq k\geq m\geq r
+\binom{n}{k}\binom{k}{m}\binom{m}{r} = \binom{n}{r}\binom{n-r}{n-m}\binom{n-m}{k-m}
+n
+k
+m
+r
+r
+m-r
+k-m
+n-k
+r
+n-m
+n-r
+(n-r)-(n-m)=m-r
+n-m
+k-m
+k-m
+(n-m)-(k-m)=n-k
+n
+r
+m-r
+k-m
+n-k
+n
+r
+m
+m
+k
+k
+\binom{a}{b} = \binom{a}{a-b}
+m-r
+n-r
+\binom{n-r}{n-m} = \binom{n-r}{(n-r)-(n-m)} = \binom{n-r}{m-r};
+\begin{pmatrix} n \\ k \end{pmatrix} = \frac {n!}{k! (n-k)!}
+k!
+m!
+(n-r)!
+(n-m)!
+ \frac {n!}{k! (n-m)!} \frac{k!}{m! (k-m)!} \frac{m!}{r!(m-r)!} = \frac{n!}{r!(n-r)!} \frac{(n-r)!}{(n-m)!(m-r)!} \frac{(n-m)!}{(k-m)!(n-k)!} 
+ \frac{n!}{r!(n-m)!(k-m)!(m-r)!} = \frac{n!}{r!(m-r)!(k-m)!(n-k)!} 
+\begin{align*} \text{RHS} &=\frac{n!}{r!(n-r)!}\frac{(n-r)!}{(n-m)!(m-r)!}\frac{(n-m)!}{(n-k)!(k-m)!}\\ &= \frac{n!}{r!(m-r)!(n-k)!(k-m)!}\\ &=\frac{n!}{k!(n-k)!}\frac{k!}{m!(k-m)!}\frac{m!}{r!(m-r)!}\\ &= \text{LHS} \end{align*}

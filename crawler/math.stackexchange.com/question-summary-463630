@@ -1,0 +1,16 @@
+\sigma_a(x)
+\zeta(s)\zeta(s-a)
+\sum_{n=1}^\infty \frac{\sigma_a(n)}{n^s}= \prod_{\text{p prime}}\sum_{k=0}^\infty \frac{\sigma_a(p^k)}{p^{ks}}
+=\prod_{\text{p prime}}\sum_{k=0}^\infty \frac{\frac{p^{(k+1)a}-1}{p^a-1}}{p^{ks}}
+=\prod_{\text{p prime}}\sum_{k=0}^\infty \frac{1}{p^a-1}\left[\frac{p^{(k+1)a}}{p^{ks}}-\frac{1}{p^{ks}}\right]
+=\prod_{\text{p prime}} \frac{1}{p^a-1}\left[p^a\zeta(s-a)-\zeta(s)\right]
+=\zeta(a)\prod_{\text{p prime}} \left[\zeta(s-a)-p^{-a}\zeta(s)\right]
+\sigma_a=f\ast g
+f(n)=1
+g(n)=n^a
+ \sum_{n=1}^{\infty}\sigma_a(n)n^{-s}=\sum_{n=1}^{\infty}n^{-s}\sum_{n=1}^{\infty}n^an^{-s}=\zeta(s)\zeta(s-a). 
+c(n)=\sigma_a(n)
+n=jk
+k^a
+n^{-s}
+\zeta(s)\zeta(s-a)=\sum_j(1/j^s)\sum_k(k^a/k^s)=\sum_n c(n)/n^s

@@ -1,0 +1,12 @@
+\alpha
+\beta
+n
+ \int_{-\infty}^{\infty}x^ne^{-\beta x}\left(1 + \alpha e^{-\beta x}\right)^{-1/\alpha}\,dx 
+\int_{-\infty}^\infty e^{-\beta x}\left(1+\alpha e^{-bx}\right)^{-\frac{1}{\alpha}}~dx
+\int_{-\infty}^\infty e^{-\beta x}\left(1+\alpha e^{-bx}\right)^{-\frac{1}{\alpha}}~dx
+=\int_\infty^0x^\frac{\beta}{b}~(1+\alpha x)^{-\frac{1}{\alpha}}~d\left(-\dfrac{\ln x}{b}\right)
+=\dfrac{1}{b}\int_0^\infty x^{\frac{\beta}{b}-1}(1+\alpha x)^{-\frac{1}{\alpha}}~dx
+=\dfrac{1}{b}\int_0^\infty\left(\dfrac{x}{\alpha}\right)^{\frac{\beta}{b}-1}(1+x)^{-\frac{1}{\alpha}}~d\left(\dfrac{x}{\alpha}\right)
+=\dfrac{1}{\alpha^\frac{\beta}{b}~b}\int_0^\infty x^{\frac{\beta}{b}-1}(1+x)^{-\frac{1}{\alpha}}~dx
+=\dfrac{1}{\alpha^\frac{\beta}{b}~b}B\left(\dfrac{\beta}{b},\dfrac{1}{\alpha}-\dfrac{\beta}{b}\right)
+\therefore\int_{-\infty}^\infty x^ne^{-\beta x}\left(1+\alpha e^{-\beta x}\right)^{-\frac{1}{\alpha}}~dx=(-1)^n\dfrac{d^n}{d\beta^n}\left(\dfrac{1}{\alpha^\frac{\beta}{b}~b}B\left(\dfrac{\beta}{b},\dfrac{1}{\alpha}-\dfrac{\beta}{b}\right)\right)(b=\beta)

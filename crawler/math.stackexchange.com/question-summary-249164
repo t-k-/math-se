@@ -1,0 +1,35 @@
+C_b([0,\infty])
+||f||_a=(\int_{0}^{\infty}e^{-ax}|f(x)|^2)^{\frac{1}{2}}
+C_b([0,\infty])
+||f+g||_a=(\int_{0}^{\infty}e^{-ax}|f(x)+g(x)|^2)^{\frac{1}{2}}
+C_1,C_2
+||f||_a\le C_1||f||_b
+||f||_b\le C_2||f||_a
+a>b>0
+||.||_a
+||.||_b
+e^{-\alpha \cdot x} \cdot |f(x)+g(x)|^2 = \left|e^{-\frac{\alpha}{2} \cdot x} \cdot f(x)+ e^{-\frac{\alpha}{2} \cdot x} \cdot g(x) \right|^2
+L^2
+a>b>0
+e^{-a \cdot x} \cdot |f(x)|^2 \leq e^{-b \cdot x} \cdot |f(x)|^2 
+\|f\|_a \leq \|f\|_b
+\|f\|_b \leq C \cdot \|f\|_a
+c \in (b,a)
+f_n(x) := \min\{n,e^{c \cdot x}\} (\in C_b)
+\|f_n\|_a < \infty
+\|f_n\|_a \to c<\infty
+\|f_n\|_b \to \infty
+0<a<b
+e^{-bx}\leqslant e^{-ax}
+f\in C_b([0,+\infty))
+\lVert f\rVert_b\leqslant \lVert f\rVert_a
+f_n
+e^{b/2x}
+[0,n]
+0
+x\geqslant n+1
+[n,n+1]
+\|f\|_a=\|e^{-ax/2}f\|_2
+ f_n(x)=\begin{cases}e^{bx/2},&\text{ if } x\in[0,n] \\ \text{line},&\text{ if } x\in[n,n+e^{-bn/2}] \\ 0,&\text{ if }x>n+e^{-bn/2}\end{cases} 
+ \|f_n\|_a\leq\left(\int_0^ne^{(b-a)x}\,dx +1\right)^{1/2}\leq\left(\frac1{b-a}+1\right)^{1/2}, 
+ \|f_n\|_b\geq\left(\int_0^n 1\right)^{1/2}=\sqrt n 

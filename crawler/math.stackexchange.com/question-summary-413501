@@ -1,0 +1,41 @@
+q\Rightarrow r \models (p\land q) \Rightarrow (p \land r)
+(1)\; q\rightarrow r \quad\text{premise}
+(2)\; p\land q\quad\text{Assumption}
+(3)\; p \quad\text{Conjunction Elimination}, (2)
+(4)\; q\quad \text{Conjunction Elimination}, (2)
+(5)\; r \quad \text{Modus Ponens}, (1), (4)
+(6)\; p\land r\quad \text{Conjunction Introduction}, (3),(5)
+(7) \;(p \land q) \rightarrow (p\land r) \quad\text{Conditional Introduction}, (2 - 6)
+\leftrightarrow I
+\phi
+\psi
+\psi
+\phi
+\phi \to \psi
+\psi\to\phi
+\lor E
+\lnot P, P \lor Q / Q
+  \begin{array}{c} \phi \\ \hline \phi \lor \psi \end{array}\lor I_L \qquad  \begin{array}{c} \psi \\ \hline \phi \lor \psi \end{array}\lor I_R \qquad  
+\rho
+\phi
+\psi
+\phi\lor\psi
+\rho
+ \begin{array}{ccc}  & [\phi] & [\psi] \\  & \vdots & \vdots \\ \phi\lor\psi & \rho & \rho \\ \hline & \rho \end{array}\lor E 
+(\lnot p \land \lnot q) \leftrightarrow \lnot(p \lor q)
+p \land q
+\land \mathcal E_1
+p
+\land \mathcal E_2
+q
+q \implies r
+\implies \mathcal E
+r
+\land \mathcal I
+p \land r
+\implies \mathcal I
+p \land q \implies p \land r
+\lor
+\implies
+\lnot
+\land

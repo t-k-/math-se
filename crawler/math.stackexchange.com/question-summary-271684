@@ -1,0 +1,28 @@
+n \log \left( 1 + \frac{|f(x)|^2}{n} \right) \leq n \log \left( 1 + \frac{|f(x)|}{n} \right)^2 = 2n \log \left( 1 + \frac{|f(x)|}{n} \right) \leq 2n \frac{|f(x)|}{n} = 2|f(x)|.
+n \log \left( 1 + \frac{|f(x)|^2}{n} \right)
+2|f(x)|
+\lim_{n \rightarrow \infty} \frac{\log \left( 1 + \frac{|f(x)|^2}{n} \right)}{1/n} = \frac{0}{0}.
+\lim_{n \rightarrow \infty} \frac{\log \left( 1 + \frac{|f(x)|^2}{n} \right)}{1/n} = \lim_{n \rightarrow \infty} \frac{\frac{-|f(x)|^2}{n^2} (-n^2)}{ 1 + \frac{|f(x)|^2}{n} } = |f(x)|^2.
+\lim_{n \rightarrow \infty} \int_X n \log \left( 1 + \frac{|f(x)|^2}{n} \right) \,dm(x) = \int_X |f(x)|^2 \,dm(x).
+g_n=n\log(1+|f|^2/n)
+\log(1+t)\leqslant t
+t
+g_n\leqslant|f|^2
+f
+L^2
+(g_n)
+g_n\to|f|^2
+\int\limits_Xg_n\to\int\limits_X|f|^2
+f
+L^2
+A(C)=\{|f|\leqslant C\}
+C\gt0
+g_n\geqslant n\log(1+|f|^2/n)\mathbf 1_{A(C)}
+\log(1+t)\geqslant t\log2
+t\leqslant1
+n\geqslant C^2
+g_n\geqslant(\log2)|f|^2\mathbf 1_{A(C)}
+\liminf\limits_{n\to\infty}\int\limits_Xg_n\geqslant\int\limits_{A(C)}(\log2)|f|^2
+C
+\int\limits_{A(C)}|f|^2
+\int\limits_Xg_n\to+\infty

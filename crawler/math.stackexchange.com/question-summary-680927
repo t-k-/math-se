@@ -1,0 +1,22 @@
+\int \frac{x}{2 \sqrt{x+2}} dx
+u
+x
+dv
+x(x+2)^{1/2} dx
+\frac{1}{2} \int x(x+2)^{-1/2} dx
+P(x) = Q(x)
+f(x)=x
+g(x)=(x+2)^{-1/2}
+f(x)
+f'(x)=1
+g(x)
+\int (x+2)^{-1/2} dx= \frac{(x+2)^{-\frac{1}{2}+1}}{-\frac{1}{2}+1}+c=2\sqrt{x+2}+c
+\int \frac{x}{2 \sqrt{x+2}} dx = \frac{1}{2} \int x(x+2)^{-1/2} dx = \frac{1}{2} \left[ x \left(2\sqrt{x+2} \right) - \int 2\sqrt{x+2} dx \right]
+\int 2\sqrt{x+2} dx = 2\frac{(x+2)^{\frac{1}{2}+1}}{\frac{1}{2}+1} +c = \frac{4}{3}(x+2)^{\frac{3}{2}}+c
+x\sqrt{x+2}-\frac{2}{3}(x+2)\sqrt{x+2} +c= \sqrt{x+2} \left( x-\frac{2}{3}(x+2) \right) +c=\frac{1}{3} \sqrt{x+2}(x-4) +c
+u = x + 2
+u = x+2 \implies du = dx
+dv
+dv = \frac 12 (x + 2)^{-1/2} dx \implies v = \sqrt{x+2}
+\int \dfrac x{2\sqrt{x + 2}}\,dx = x\sqrt{x+2} - \int \sqrt{x + 2} dx
+\begin{aligned}  \ \int \frac{x}{2\sqrt{x+2}} dx &= x\sqrt{x+2} - \int \sqrt{x+2} dx \\  \ &= x\sqrt{x+2} -\frac{2}{3}(x+2)^{3/2} \\ \ &= \sqrt{x+2}\left( x-\frac{2}{3}[x+2]\right) \\ \ &= \sqrt{x+2}\left(\frac{1}{3}x - \frac{4}{3}\right) \\ \ &= \frac{1}{3}(x-4)\sqrt{x+2} \\ \end{aligned} 

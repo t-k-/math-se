@@ -1,0 +1,12 @@
+N
+X
+\mathrm{B}(N,\theta)
+P(\lambda)
+x|N \sim \mathrm{B}(N,θ) \text{ so }\Pr(X=x|N) = \begin{pmatrix} N \\ x \end{pmatrix} \theta^x \,(1-\theta)^{N-x}
+\Pr(N) = \exp(-\lambda)\dfrac{\lambda^N}{N!},
+\Pr(X=x,N=n)= \begin{pmatrix} N \\ x \end{pmatrix} \theta^x \,(1-\theta)^{N-x} \cdot  \exp(-\lambda)\dfrac{\lambda^N}{N!}
+Pr(X) = \sum_{n=0}^{+\infty}Pr(X=x,N=n).
+X ~ \mathrm{Poisson} (\lambda\theta)
+\lambda\theta
+\Pr(X=x) = \sum_{n=0}^{+\infty}\Pr(X=x,N=n)=\sum_{n\geqslant x} {n\choose x} \theta^x \,(1-\theta)^{n-x} \cdot  \mathrm e^{-\lambda}\dfrac{\lambda^n}{n!}
+\Pr(X=x)= \frac{\theta^x}{x!} \lambda^x\mathrm e^{-\lambda}\sum_{n\geqslant x}\frac{(1-\theta)^{n-x}\lambda^{n-x}}{(n-x)!}= \frac{(\lambda\theta)^x}{x!}\mathrm e^{-\lambda}\mathrm e^{\lambda(1-\theta)}=\text{____}

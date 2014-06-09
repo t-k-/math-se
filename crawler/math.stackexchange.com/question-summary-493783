@@ -1,0 +1,12 @@
+\int_0^\infty x^{-\frac{1}{2}}e^{-\frac{x}{2}}\,dx
+x=w^{2}
+\,dx=2wdw
+\int_{0}^{\infty}\frac{1}{w}e^{-\frac{w^{2}}{2}}(2w)dw=2\int_{0}^{\infty}e^{-(\frac{w}{\sqrt{2}})^{2}}dw
+u=\frac{w}{\sqrt{2}}
+\,du=\frac{1}{\sqrt{2}}dw
+2\sqrt{2}\int_{0}^{\infty}e^{-u^{2}}du=2\sqrt{2}\frac{\sqrt{\pi}}{2}=\color{blue}{\sqrt{2\pi}}
+\sqrt{x} = t
+x=t^2 \implies dx = 2t dt
+I = \int_0^{\infty} \dfrac{e^{-x/2}}{\sqrt{x}}dx
+I = \int_0^{\infty} \dfrac{e^{-t^2/2} 2tdt}{t} = 2 \int_0^{\infty}e^{-t^2/2}dt = 2 \times \sqrt{\dfrac{\pi}2} = \sqrt{2 \pi}
+ \int_{0}^{\infty}x^{-1/2}{\rm e}^{-x/2}\,{\rm d}x = \sqrt{\vphantom{\large A}2\,}\int_{0}^{\infty}x^{1/2\ -\ 1}\,{\rm e}^{-x} \,{\rm d}x = \sqrt{\vphantom{\large A}2\,} \quad \overbrace{\ \Gamma\left(1 \over 2\right)\ }^{\sqrt{\vphantom{\large A}\pi\,}} = \color{#ff0000}{\large\sqrt{\vphantom{\Large A}2\pi\,}} 

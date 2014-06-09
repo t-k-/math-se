@@ -1,0 +1,50 @@
+\sigma(x)
+\frac{1}{1 + e^{-x}}
+f(y)
+h(y)
+y
+(\alpha, \beta, f)
+ h(y) = \sigma(\alpha + \beta y) f(y). 
+\alpha = a, \beta = b, f = g
+g
+1
+(\alpha, \beta, f)
+h(y)
+ \sigma(\alpha + \beta y) f(y) = \sigma(a + by) g(y), 
+ \int \frac{\sigma(\alpha + \beta y)}{\sigma(a + by)} f(y) \ dy = \int \frac{h(y)}{\sigma(a + by)} \ dy= 1, 
+e^{-\alpha} = A
+f(y) = (1+Ae^{-\beta y})h(y)
+\int_0^{\infty}f(y)dy = \int_0^{\infty}(1+Ae^{-\beta y})h(y) dy = 1 
+H_1(A,\beta) = 1
+\beta >0
+\int_0^{\infty}h(y)dy = I_h, \int_0^{\infty}e^{-\beta y}h(y)dy = I_{b}
+I_h+e^{-\alpha}.I_b = 1
+\alpha = \ln\left(\frac{I_b}{1-I_h}\right)
+I_h<1
+\beta
+\alpha
+(\alpha,\beta)
+f(y)
+y_1
+y_2
+K
+\alpha,\beta
+\int_{y_1}^{y_2}f(y)dy = \int_{y_1}^{y_2}(1+Ae^{-\beta y})h(y) dy = H_2(A,\beta)= K 
+\alpha,\beta
+y_1,y_2
+Ae^{-\beta y}
+[y_1,y_2]
+[y_1,y_2]
+\alpha,\beta
+\int f(y)dy \approx \int h(y)dy
+(1+Ae^{-\beta y})h(y)
+D
+(A,\beta)
+\alpha,\beta
+f(y) = \frac{h(y)}{\sigma(\alpha,\beta)} 
+\min_{(A,\beta)\in D} (H_1(A,\beta)-1)^2 +(H_2(A,\beta)-K)^2
+f
+N
+f(y) = \sum_0^N a_iy^i
+A,\beta,a_i
+h(y) = \frac{\sum a_iy^i}{1+Ae^{-\beta y}}

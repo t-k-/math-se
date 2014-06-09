@@ -1,0 +1,28 @@
+\Phi(t)
+\Phi(0) = \begin{pmatrix} 1&0 \\ 0&1  \end{pmatrix}
+x(t)=\Phi(t)x_0
+ \pmatrix{\frac{s+2}{s+1}\\ \frac{3s+1}{s+1}}-A\pmatrix{\frac{s+2}{s(s+1)}\\ \frac{3s+1}{s(s+1)}} =\pmatrix{1\\3}  \implies \pmatrix{\frac{1}{s+1}\\ \frac{-2}{s+1}}=A \pmatrix{\frac{s+2}{s(s+1)}\\ \frac{3s+1}{s(s+1)}} \implies \pmatrix{1\\ -2}=A \pmatrix{1 + \frac{2}{s}\\ 3 + \frac{1}{s}} 
+\mathcal{L}(\dot x) = sX(s)-x(0)
+s
+a(s+2)+b(3s+1) = s
+c(s+2) + d(3s+1) = -2s
+s
+ x(t) = e^{At} x(0) \text{ or}\quad X(s) = (sI-A)^{-1}x(0)  
+ \pmatrix{\frac{2}{s} - \frac{1}{s+1}\\\frac{1}{s}+\frac{2}{s+1}} = \pmatrix{\frac{s+2}{s(s+1)}\\ \frac{3s+1}{s(s+1)}}=(sI-A)^{-1} \pmatrix{1\\3}
+ (sI-A)\pmatrix{\frac{s+2}{s(s+1)}\\ \frac{3s+1}{s(s+1)}} =\pmatrix{1\\3} \implies \pmatrix{\frac{1}{s+1}\\\frac{-2}{s+1}}= A\pmatrix{\frac{s+2}{s(s+1)}\\ \frac{3s+1}{s(s+1)}}
+A = \pmatrix{a &b\\c&d}
+ \pmatrix{1 &3\\2 &1}\pmatrix{a\\b} = \pmatrix{1\\0}\ , \ \pmatrix{1 &3\\2 &1}\pmatrix{c\\d} = \pmatrix{-2\\0} 
+a,b,c,d
+ A = \pmatrix{\frac{-1}{5} &\frac{2}{5}\\\frac{2}{5} &\frac{-4}{5}} 
+A
+\beta(t)=\pmatrix{1\\e^{-t}}
+AX\beta(t)=XD\beta(t)
+t
+AX=XD
+A=XDX^{-1}
+x(t) = \pmatrix{2&-1\\1&2}\beta(t) \text{ and } \frac{d}{dt}\beta(t)=\pmatrix{0&0\\0&-1}\beta(t)
+X = \pmatrix{2&-1\\1&2}, \qquad D=\pmatrix{0&0\\0&-1}
+\frac{d}{dt}x(t) = \frac{d}{dt}X\beta(t) = X\frac{d}{dt}\beta(t) = XD\beta(t)
+\Phi(t) = e^{tA}
+\beta(t)=\pmatrix{1&0\\0&e^{-t}}\beta(0)=e^{tD}\beta(0)
+x(t)=X\beta(t)=Xe^{tD}\beta(0)=Xe^{tD}X^{-1}X\beta(0)=Xe^{tD}X^{-1}x(0)=e^{tXDX^{-1}}x(0)

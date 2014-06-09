@@ -1,0 +1,14 @@
+\sum_{n=1}^\infty \frac1{(2n-1)}\sin{((2n-1)x)}
+x\in (0,\pi)
+(-2\sqrt{\frac{2}{\pi}})^{-1}
+x
+x \in (0, \pi)
+\sum_{n=1}^\infty \frac1{(2n-1)}\sin{((2n-1)x)} = \sum_{n=1}^\infty \frac{1}{n}\sin{nx} - \frac12 \sum_{n=1}^\infty \frac{1}{n}\sin{2nx}
+\sum_{n=1}^\infty \frac{1}{n}\sin{nx} = \frac{\pi-x}{2}
+\sin((2n-1)x) = \text{Imag}(e^{i(2n-1)x})
+T = \text{Imag}\left(\sum_{n=1}^{\infty} \dfrac{e^{i(2n-1)x}}{2n-1}\right)
+S(a) = \sum_{n=1}^{\infty} \dfrac{a^{2n-1}}{2n-1}
+S'(a) = \sum_{n=1}^{\infty} a^{2n-2} = \dfrac1{1-a^2}
+S(a) = \dfrac12 \log \left(\dfrac{1+a}{1-a}\right)
+\sum_{n=1}^{\infty} \dfrac{e^{i(2n-1)x}}{2n-1} = \dfrac12 \log \left(\dfrac{1+e^{ix}}{1-e^{ix}}\right) = \dfrac12 \log \left(i \cot\left(\dfrac{x}2\right)\right) = \dfrac12 \log \left(\cot \left(\dfrac{x}2\right)\right) + i \dfrac{\pi}4
+T = \dfrac{\pi}4

@@ -1,0 +1,14 @@
+f(z) = e^{iz^2}
+\gamma_2 = \{ z : z = Re^{i\theta}, 0 \leq \theta \leq \frac{\pi}{4} \} 
+R \to \infty
+ \left| \int_{\gamma_2} e^{iz^2}\mathrm{d}z \right| 
+\theta=0
+\pi R e^{0}/4 = \pi R / 4
+(0,\pi/4)
+       \left| \int_{\gamma_2} e^{iz^2}\mathrm{d}z \right|   \leq \frac{R\pi}{4} \max_{\theta \in [0,\pi/4]} \left| e^{iR\exp(i2\theta)} \right|  \leq \frac{R\pi}{4} \max_{\theta \in [0,\pi/4]} e^{-R^2 \sin 2 \theta} 
+ML
+[0\frac\pi4]
+[0\frac\pi2]
+\left\vert\int_{\gamma_2} e^{iz^2}dz\right\vert\leq R\,\int_0^{\frac\pi4} e^{-R^2\sin 2\theta} d\theta\, . 
+\sin 2\theta \geq \frac4\pi \, \theta\, ,
+\left\vert\int_{\gamma_2} e^{iz^2}dz\right\vert\leq R\,\int_0^{\frac\pi4} e^{-\frac{4R^2}\pi \theta} d\theta=R\times\frac{\pi}{4R^2}(1-e^{-R^2})\leq \frac{\pi}{4R}\, ,

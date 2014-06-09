@@ -1,0 +1,29 @@
+P[(A\cup\overline{B}\cup C)\cap(A\cup C \cup \overline{D})]
+(P(A) + 1 - P(B) + P(C))(P(A) + P(C) + 1 - P(D))
+1
+(x+y)(x+z) = x + yz
+G= A \cup C
+H = \overline{B}\cap\overline{D}
+\begin{align*} F &= (A\cup\overline{B}\cup C)\cap(A\cup C \cup \overline{D})\\ &= ((A\cup C)\cup\overline{B})\cap((A\cup C) \cup \overline{D})\\ &= (A \cup C) \cup (\overline{B}\cap\overline{D}) = G \cup H \end{align*}
+ \begin{align*} P(F) &= P(G \cup H) = P(G) + P(H) - P(G\cap H)\\ &= P(A\cup C) + P(\overline{B}\cap\overline{D}) - P((A\cup C)\cap(\overline{B}\cap\overline{D})) \end{align*} 
+P(A \cup C) = P(A) + P(C) - P(A \cap C) = P(A) + P(C) - P(A)P(C)
+A
+C
+P(\overline{B}\cap\overline{D}) = P(\overline{B})P(\overline{D})
+\overline{B}
+\overline{D}
+P((A\cup C)\cap(\overline{B}\cap\overline{D})) = P(A\cup C)P(\overline{B}\cap\overline{D})
+A\cup C
+\overline{B}\cap\overline{D}
+A \cup C
+A
+\overline{A} \cap C
+ \begin{align*} P((A\cup C)\cap(\overline{B}\cap\overline{D}))  &= P((A\cup (\overline{A} \cap C))\cap(\overline{B}\cap\overline{D}))\\ &= P(A\cap\overline{B}\cap\overline{D}) + P(\overline{A} \cap C \cap \overline{B}\cap\overline{D})\\ &= P(A)P(\overline{B})P(\overline{D}) + P(\overline{A})P(C)P(\overline{B})P(\overline{D})\\ &= [P(A) + P(\overline{A})P(C)]P(\overline{B})P(\overline{D})\\ &=[P(A) + (1 - P(A))P(C)]P(\overline{B})P(\overline{D})\\ &= P(A\cup C)P(\overline{B}\cap\overline{D})  \end{align*} 
+P(X \cap Y) \neq P(X) P(Y)
+X
+Y
+X = A \cup \bar{B} \cup C
+Y = A \cup C \cup \bar{D}
+A\cup C
+P(X \cup Y) = 1 - P(\bar{X} \cap \bar{Y}) = 1 - (1-P(X)) (1-P(Y)) \neq P(X) + P(Y)
+X,Y

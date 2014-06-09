@@ -1,0 +1,19 @@
+\sum \limits_{i=1}^{69} \sqrt{\left( 1+\frac{1}{i^2}+\frac{1}{(i+1)^2}\right)}?
+\sum \limits_{k=1}^n \sqrt{\color{red}1+\color{Green}{\frac{1}{k^2}}+\color{Blue}{\frac{1}{(k+1)^2}}}
+=\sum_{k=1}^n\sqrt{\frac{\color{red}{k^2(k+1)^2}+\color{Green}{(k+1)^2}+\color{Blue}{k^2}}{k^2(k+1)^2}}
+=\sum_{l=1}^n \sqrt{\frac{k^4+2k^3+3k^2+2k+1}{k^2(k+1)^2}}
+=\sum_{k=1}^n\sqrt{\frac{\color{Red}1k^4+(\color{Red}1+\color{Green}1)k^3+(\color{Red}1+\color{Green}1+\color{Blue}1)k^2+(\color{Green}1+\color{Blue}1)k+\color{Blue}1}{k^2(k+1)^2}} 
+=\sum_{k=1}^n\sqrt{\frac{\color{Red}{k^2(k^2+k+1)}+\color{Green}{k(k^2+k+1)}+\color{Blue}{(k^2+k+1)}}{k^2(k+1)^2}} 
+n=69
+69+1-1/70=4899/70
+=\sum_{k=1}^n\sqrt{\frac{(k^2+k+1)^2}{k^2(k+1)^2}}
+=\sum_{k=1}^n\frac{\color{Purple}{k^2+k}+\color{Blue}1}{k^2+k}
+=\sum_{k=1}^n \left(\color{Purple}1+\color{Blue}{\frac{1}{k(k+1)}}\right) 
+=\sum_{k=1}^n \left(1+\frac{1}{k}-\frac{1}{k+1}\right)
+=n+1-\frac{1}{n+1}.
+\frac{1}{k(k+a)}=\frac{1}{a}\frac{(k+a)-k}{k(k+a)}=\frac{1}{a}\left(\frac{1}{k}-\frac{1}{k+a}\right).
+1+\frac{1}{i^{2}}+\frac{1}{(i+1)^{2}}=\frac{i^{2}(i+1)^{2}+(i+1)^{2}+i^{2}}{i^{2}(i+1)^{2}} 
+=\frac{i^{4}+2i^{3}+3i^{2}+2i+1}{i^{2}(i+1)^{2}}=\frac{(i^{2}+i+1)^{2}}{i^{2}(i+1)^{2}}.
+\sum_{i=1}^{69}\frac{i^{2}+i+1}{i(i+1)}=\sum_{i=1}^{69}\left(\frac{i^{2}+2i+1}{i(i+1)}-\frac{i}{i(i+1)}\right) 
+=\sum_{i=1}^{69}\frac{i+1}{i}-\frac{1}{i+1}=69+\sum_{i=1}^{69}\left(\frac{1}{i}-\frac{1}{i+1}\right).
+69+1-\frac{1}{70}=70-\frac{1}{70}=\frac{4899}{70}.

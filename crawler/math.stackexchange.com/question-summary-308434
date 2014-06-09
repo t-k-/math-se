@@ -1,0 +1,22 @@
+A, V
+X
+A \setminus (V \cap A) = A\cap(X \setminus V)
+A \setminus (V \cap A)= (A \setminus V) \cup (A \setminus A)  = A \setminus V = A\cap X \setminus V
+x\in A-(V\cap A).\;
+x\in A,~\wedge~ x\in (V\cap A)'
+x\in A,~\wedge~ x\in (V'\cup A')
+x\in A,~\wedge~ (x\in V'\vee x\in A')
+(x\in A,~\wedge~ x\in V')\vee (x\in A, ~\wedge~ x\in A')
+x\in(A\cap V')~\vee~x\in\emptyset
+x\in A\cap(X-V)
+x\in A\setminus(V\cap A)\tag{1}
+\implies \; x\in A\;\land\;  x\notin (V\cap A)\tag{Definition: Set Minus}
+\iff \; x\in A\;\land\; (x\notin V \,\lor\, x \notin A)\tag{De Morgan's}
+\iff (x\in A\,\land\, x\notin V)\;\lor \;(x\in A \,\land\, x\notin A)\tag{Distributivity}
+\iff (x\in A\,\land\, x\notin V)\,\lor \,x \in \varnothing\;\tag{why?}
+\iff \; (x\in A\,\land\, x\notin V)\tag{why?}
+\iff \;x \in A\, \land \,(x \in X \,\land\, x \notin V)\;\tag{why?}
+\iff \; x\in A \,\land\, x\in X\setminus V\tag{Definition, set minus}
+(2)
+\iff\; x\in A\cap(X\setminus V) \tag{Definition, intersection $(2)$}
+\therefore\quad A \setminus (V \cap A) = A\cap(X \setminus V)

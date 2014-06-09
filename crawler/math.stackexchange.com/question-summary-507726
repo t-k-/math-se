@@ -1,0 +1,24 @@
+F(x)=x^2\sin\left(\frac{1}{x^2}\right)\quad\forall x\in(0,1]
+G(x)=F'(x)=2x\sin\left(\frac{1}{x^2}\right)-2\frac{1}{x}\cos\left(\frac{1}{x^2}\right)\quad\forall (0,1].
+\lim_{t\searrow0}\int_t^1\left|G(x)\right|\,\mathrm{d}x=+\infty.
+|G(x)|
+0
+x
+2x\sin\left(\dfrac{1}{x^2}\right)
+\int\limits_{a_{k+1}}^{a_k} \left\lvert \frac{2}{x}\cos \left(\frac{1}{x^2}\right)\right\rvert\, dx
+a_k
+\cos (1/x^2)
+a_k = 1/\sqrt{(k-\frac12)\pi}
+\cos (1/x^2)
+0
+I_k = \int\limits_{b_k}^{c_k} \left\lvert\frac{2}{x}\cos\left(\frac{1}{x^2}\right) \right\rvert\,dx
+b_k = \frac{1}{\sqrt{(k+\frac13)\pi}},\quad c_k = \frac{1}{\sqrt{(k-\frac13)\pi}},
+\lvert\cos (1/x^2)\rvert \geqslant \frac12
+b_k\leqslant x \leqslant c_k
+I_k \geqslant \frac{1}{c_k}\left(c_k - b_k\right).
+k
+k
+\frac{1}{c_k} \geqslant A\sqrt{k},\quad c_k - b_k \geqslant \frac{B}{k\sqrt{k}},
+\sum_{k\geqslant K} I_k
+K
+\lim_{t\to 0} \int_t^1 \lvert G(x)\rvert\,dx = +\infty.

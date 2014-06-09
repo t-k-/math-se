@@ -1,0 +1,11 @@
+f(x) = x^x
+p(x)
+p(x) = \frac {f(x+1)}{f(x)} - \frac {f(x)}{f(x-1)}
+x
+p(x)
+e
+\lim_{x\rightarrow \infty} p(x) = e
+\frac {f(x+1)}{f(x)} = (x+1)\left(\frac {x+1}x \right)^x
+g(x) = (1+1/x)^x
+g(x) = \exp(\log(g(x))) = \exp(x \log(1+x^{-1})) \\ = \exp(x (x^{-1} - x^{-2}/2 + O(x^{-3})) \\ = \exp(1 - x^{-1}/2 + O(x^{-2})) = e - (e/2)x^{-1} + O(x^{-2})
+\lim_{x\rightarrow\infty}\bigg(1+\frac{1}{x}\bigg)^x = e

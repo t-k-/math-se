@@ -1,0 +1,16 @@
+maximize \space \sum_{p\epsilon P}^{ }  {f_{p}}
+subject \space to \space
+\sum_{p:e\epsilon P}^{ }  {f_{p}} \leq c_{e}, e \epsilon E
+f_{p} \geq 0, p \epsilon P
+minimize \space \sum_{e\epsilon E}^{ }  {c_{e}d_{e}}
+subject \space to
+\sum_{u,v \epsilon V}^{ }  {d_{v,u}} \geq 1
+d_{v,w} \leq d_{v,r}+d_{r,w} \space \forall v,u,r \epsilon V
+d_{v,r} \leq d_{v,w}+d_{w,r} \space \forall v,u,r \epsilon V
+d_{w,r} \leq d_{w,v}+d_{v,r} \space \forall v,u,r \epsilon V
+d_{v,w} \geq 0 \space \forall v,u \epsilon V
+c_{e}
+e
+d_{e} = 1
+e
+s-t

@@ -1,0 +1,22 @@
+\|\cdot\|
+\mathbb{R}^n
+\Omega
+\mathbb{R}^n
+G:\Omega \rightarrow \mathbb{R}^n
+C^1
+Q(a,\delta)=\{x\in\mathbb{R}^n : \|x-a|\|\leq \delta\}
+Q(a,\delta)\subset \Omega
+\|G(x)-G(a)\|\leq \delta \sup_{y\in Q(a,\delta)} \max_{1\leq i \leq n} \sum_{j=1}^n |D_j G_i(y)|
+x\in Q(a,\delta)
+\sup_{y\in Q(a,\delta)} \max_{1\leq i \leq n} \sum_{j=1}^n |D_j G_i(y)| < \infty
+G
+C^1
+[x,y] \subset \Omega
+G(x) -G(y) = \left( \int_0^1 DG(y+t(x-y)) dt \right) (x-y)
+\|G(x)-G(y)\| \le \| \int_0^1 DG(y+t(x-y)) dt \| \|x-y\|
+L = \sup_{x \in Q(a,\delta)} \| DG(x) \|
+\|G(x)-G(y)\| \le L \delta
+L < \infty
+x \mapsto \|DG(x)\|
+Q(a,\delta)
+\|M\|_{i,\infty} = \max_{i \in \{1,...,n\}} \sum_{j \in \{1,...,n\}} [M]_{ij}

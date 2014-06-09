@@ -1,0 +1,27 @@
+6
+10
+A
+B
+E(6AB)
+E(6AB) = 6E(AB)
+E(AB)
+n(n-1)\cdot\text{probability of }A\text{ occurring}\cdot\text{probability of }B\text{ occurring}
+A
+6\left(\dfrac16\right)^3
+B
+6\left(\dfrac16\right)^2 \left(\dfrac56\right)
+E(6AB)
+6
+E(AB) = 10 \cdot 9 \cdot 6 \left(\frac16\right)^3 \cdot 6 \left(\frac16\right)^2 \cdot \frac56
+25/4
+C
+A+B+C=10
+\{A,B,C\}
+n=10
+p_1 = \frac{6}{6^3} = \frac{1}{36}
+p_2 = \frac{3 \cdot 6 \cdot 5}{6^3} = \frac{5}{12}
+p_3 = \frac{6 \cdot 5 \cdot 4}{6^3} = \frac{5}{9}
+p_1 + p_2 + p_3 = 1
+\phi(t_1,t_2,t_3) = \left( p_1 \mathrm{e}^{t_1} + p_2 \mathrm{e}^{t_2}  + p_3 \mathrm{e}^{t_3}  \right)^{10}
+\mathrm{E}(A B) = \left. \partial_{t_1} \partial_{t_2} \phi(t_1,t_2, t_3)\right\vert_{t_i=0} = 10 \cdot 9 \cdot p_1 p_2 \cdot \mathrm{e}^{t_1+t_2} \cdot \left( p_1 \mathrm{e}^{t_1} + p_2 \mathrm{e}^{t_2}  + p_3 \mathrm{e}^{t_3}  \right)^7\vert_{t_i=0} = 90 p_1 p_2 
+\mathrm{E}(6 A B) = 6 \mathrm{E}(A B) = 6 \cdot 90 \cdot p_1 p_2 = \frac{25}{4}

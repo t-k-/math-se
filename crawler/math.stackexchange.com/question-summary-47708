@@ -1,0 +1,73 @@
+x
+dt
+I_1=\int_1^{\infty}\exp\left(-\left(\frac{x(2n-x)}{b}\right)^2\right)\mathrm dx,
+t=\frac{x(2n-x)}{b},
+I_1=\frac{b}{2 n} \int_1^{\infty} e^{-t^2}\left(1-\frac{bt}{n^2}\right)^{\frac12}\mathrm dt.
+\left(1-\frac{bt}{n^2}\right)^{\frac12} \approx 1+\frac{bt}{2n^2}
+I_1 \approx \frac{b}{2n}\left(\frac{\sqrt{\pi}(1-\mathrm{erf}(1))}{2}+\frac{b}{4n^2e}\right).
+t
+t
+t
+t
+\int \frac{e^{-t^2}}{\sqrt{1-\frac{b t}{n^2}}} \, dt
+\int e^{-t^2} \sqrt{1-\frac{b t}{n^2}} \, dt
+n
+b
+n
+b
+1
+n=0
+\int_1^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+=\int_1^\infty e^{-\frac{x^4}{b^2}}~dx
+=\int_\frac{1}{b^2}^\infty e^{-\frac{\bigl(\sqrt{|b|}\sqrt[4]x\bigr)^4}{b^2}}~d\left(\sqrt{|b|}\sqrt[4]x\right)
+=\dfrac{\sqrt{|b|}}{4}\int_\frac{1}{b^2}^\infty x^{-\frac{3}{4}}e^{-x}~dx
+=\dfrac{\sqrt{|b|}}{4}\Gamma\left(\dfrac{1}{4},\dfrac{1}{b^2}\right)
+2
+n\neq0
+\int e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+\int e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+=\int e^{-\frac{x^2(2n-x)^2}{b^2}}~dx
+=\int\sum\limits_{m=0}^\infty\dfrac{(-1)^mx^{2m}(2n-x)^{2m}}{b^{2m}m!}dx
+=\int\sum\limits_{m=0}^\infty\sum\limits_{k=0}^{2m}\dfrac{(-1)^mx^{2m}C_k^{2m}(-1)^kx^k(2n)^{2m-k}}{b^{2m}m!}dx
+=\int\sum\limits_{m=0}^\infty\sum\limits_{k=0}^{2m}\dfrac{(-1)^{m+k}2^{2m-k}n^{2m-k}(2m)!x^{2m+k}}{b^{2m}m!k!(2m-k)!}dx
+=\sum\limits_{m=0}^\infty\sum\limits_{k=0}^{2m}\dfrac{(-1)^{m+k}2^{2m-k}n^{2m-k}(2m)!x^{2m+k+1}}{b^{2m}m!k!(2m-k)!(2m+k+1)}+C
+\infty
+\int_1^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+\int_1^ae^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx+\int_a^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+\int_1^ae^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+a
+\int_a^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+a
+n
+b
+\int_a^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+=\int_{a-n}^\infty e^{-\left(\frac{(n+x)(n-x)}{b}\right)^2}~d(n+x)
+=\int_{a-n}^\infty e^{-\frac{(n^2-x^2)^2}{b^2}}~dx
+=\int_{a-n}^\infty e^{-\frac{x^4-2n^2x^2+n^4}{b^2}}~dx
+=e^{-\frac{n^4}{b^2}}\int_{a-n}^\infty e^{-\frac{x^2(x^2-2n^2)}{b^2}}~dx
+\because\int_0^\infty e^{-\frac{x^2(x^2-2n^2)}{b^2}}~dx
+=\int_0^{\sqrt2|n|}e^{-\frac{x^2(x^2-2n^2)}{b^2}}~dx+\int_{\sqrt2|n|}^\infty e^{-\frac{x^2(x^2-2n^2)}{b^2}}~dx
+=\int_0^\frac{\pi}{2}e^{-\frac{(\sqrt2|n|\sin x)^2((\sqrt2|n|\sin x)^2-2n^2)}{b^2}}~d(\sqrt2|n|\sin x)+\int_0^\infty e^{-\frac{(\sqrt2|n|\cosh x)^2((\sqrt2|n|\cosh x)^2-2n^2)}{b^2}}~d(\sqrt2|n|\cosh x)
+=\sqrt2|n|\left(\int_0^\frac{\pi}{2}e^{-\frac{2n^2(\sin^2x)(2n^2\sin^2x-2n^2)}{b^2}}\cos x~dx+\int_0^\infty e^{-\frac{2n^2(\cosh^2x)(2n^2\cosh^2x-2n^2)}{b^2}}\sinh x~dx\right)
+=\sqrt2|n|\left(\int_0^\frac{\pi}{2}e^\frac{4n^4\sin^2x\cos^2x}{b^2}\cos x~dx+\int_0^\infty e^{-\frac{4n^4\sinh^2x\cosh^2x}{b^2}}\sinh x~dx\right)
+=\sqrt2|n|\left(\int_0^\frac{\pi}{2}e^\frac{n^4\sin^22x}{b^2}\cos x~dx+\int_0^\infty e^{-\frac{n^4\sinh^22x}{b^2}}\sinh x~dx\right)
+=\sqrt2|n|\left(\int_0^\frac{\pi}{2}e^\frac{n^4(1-\cos4x)}{2b^2}\cos x~dx+\int_0^\infty e^{-\frac{n^4(\cosh 4x-1)}{2b^2}}\sinh x~dx\right)
+=\sqrt2|n|e^\frac{n^4}{2b^2}\left(\int_0^\frac{\pi}{2}e^{-\frac{n^4\cos4x}{2b^2}}\cos x~dx+\int_0^\infty e^{-\frac{n^4\cosh 4x}{2b^2}}\sinh x~dx\right)
+=\sqrt2|n|e^\frac{n^4}{2b^2}\left(\int_0^{2\pi}e^{-\frac{n^4\cos x}{2b^2}}\cos\dfrac{x}{4}d\left(\dfrac{x}{4}\right)+\int_0^\infty e^{-\frac{n^4\cosh x}{2b^2}}\sinh\dfrac{x}{4}d\left(\dfrac{x}{4}\right)\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{2\sqrt2}\left(\int_0^{2\pi}e^{-\frac{n^4\cos x}{2b^2}}\cos\dfrac{x}{4}dx+\int_0^\infty e^{-\frac{n^4\cosh x}{2b^2}}\sinh\dfrac{x}{4}dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{2\sqrt2}\left(\int_{-\pi}^\pi e^{-\frac{n^4\cos(\pi+x)}{2b^2}}\cos\dfrac{\pi+x}{4}d(\pi+x)+\int_0^\infty e^{-\frac{n^4\cosh x}{2b^2}}\sinh\dfrac{x}{4}dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{2\sqrt2}\left(\int_{-\pi}^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{\pi}{4}\cos\dfrac{x}{4}dx-\int_{-\pi}^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{\pi}{4}\sin\dfrac{x}{4}dx+\int_0^\infty e^{-\frac{n^4\cosh x}{2b^2}}\sinh\dfrac{x}{4}dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{4}\left(\int_{-\pi}^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx-\int_{-\pi}^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx+\dfrac{1}{\sqrt2}\int_0^\infty e^{\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx-\dfrac{1}{\sqrt2}\int_0^\infty e^{-\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{4}\left(\int_{-\pi}^0e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx+\int_0^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx-\int_{-\pi}^0e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx-\int_0^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx+\dfrac{1}{\sqrt2}\int_0^\infty e^{\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx-\dfrac{1}{\sqrt2}\int_0^\infty e^{-\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{4}\left(\int_\pi^0e^\frac{n^4\cos(-x)}{2b^2}\cos\dfrac{-x}{4}d(-x)+\int_0^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx-\int_\pi^0e^\frac{n^4\cos(-x)}{2b^2}\sin\dfrac{-x}{4}d(-x)-\int_0^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx+\dfrac{1}{\sqrt2}\int_0^\infty e^{\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx-\dfrac{1}{\sqrt2}\int_0^\infty e^{-\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{4}\left(\int_0^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx+\int_0^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx+\int_0^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx-\int_0^\pi e^\frac{n^4\cos x}{2b^2}\sin\dfrac{x}{4}dx+\dfrac{1}{\sqrt2}\int_0^\infty e^{\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx-\dfrac{1}{\sqrt2}\int_0^\infty e^{-\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx\right)
+=\dfrac{|n|e^\frac{n^4}{2b^2}}{4}\left(2\int_0^\pi e^\frac{n^4\cos x}{2b^2}\cos\dfrac{x}{4}dx+\dfrac{1}{\sqrt2}\int_0^\infty e^{\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx-\dfrac{1}{\sqrt2}\int_0^\infty e^{-\frac{x}{4}-\frac{n^4\cosh x}{2b^2}}~dx\right)
+\therefore a
+n
+\int_n^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx=\dfrac{|n|\pi e^{-\frac{n^4}{2b^2}}}{4}\left(I_\frac{1}{4}\left(\dfrac{n^4}{2b^2}\right)+I_{-\frac{1}{4}}\left(\dfrac{n^4}{2b^2}\right)\right)
+n
+b
+\int_1^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+=\int_1^ne^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx+\int_n^\infty e^{-\left(\frac{x(2n-x)}{b}\right)^2}~dx
+=\left[\sum\limits_{m=0}^\infty\sum\limits_{k=0}^{2m}\dfrac{(-1)^{m+k}2^{2m-k}n^{2m-k}(2m)!x^{2m+k+1}}{b^{2m}m!k!(2m-k)!(2m+k+1)}\right]_1^n+\dfrac{|n|\pi e^{-\frac{n^4}{2b^2}}}{4}\left(I_\frac{1}{4}\left(\dfrac{n^4}{2b^2}\right)+I_{-\frac{1}{4}}\left(\dfrac{n^4}{2b^2}\right)\right)
+=\sum\limits_{m=0}^\infty\sum\limits_{k=0}^{2m}\dfrac{(-1)^{m+k}2^{2m-k}n^{2m-k}(2m)!(n^{2m+k+1}-1)}{b^{2m}m!k!(2m-k)!(2m+k+1)}+\dfrac{|n|\pi e^{-\frac{n^4}{2b^2}}}{4}\left(I_\frac{1}{4}\left(\dfrac{n^4}{2b^2}\right)+I_{-\frac{1}{4}}\left(\dfrac{n^4}{2b^2}\right)\right)

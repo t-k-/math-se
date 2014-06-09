@@ -1,0 +1,19 @@
+P
+Q
+f_{P,Q}(p,q)=\frac{1}{2\sqrt{(2\pi)}\sigma}\exp[-\frac{1}{2}{(\frac{\frac{p+q}{2}-\mu}{\sigma})^2}] \times\theta\exp[-\theta(\frac{p-q}{2})],\quad -\infty<p,q<\infty
+P
+Q
+f_{P,Q}(p,q)
+f_{P,Q}(p,q)=\frac{\theta}{2\sqrt{(2\pi)}\sigma}\exp[-\frac{\mu}{\sigma^2}]\exp[-\frac{p^2}{8\sigma^2}-\frac{p\mu}{2\sigma^2}-\frac{\theta p}{2}]\exp[-\frac{q^2}{8\sigma^2}-\frac{q\mu}{2\sigma^2}+\frac{\theta q}{2}]\exp[-\frac{pq}{4\sigma^2}],\quad -\infty<p,q<\infty
+P
+f_{P}(p)=\int_{-\infty}^{\infty}f_{P,Q}(p,q)dq
+=\frac{\theta}{2\sqrt{(2\pi)}\sigma}\exp[-\frac{\mu}{\sigma^2}]\exp[-\frac{p^2}{8\sigma^2}-\frac{p\mu}{2\sigma^2}-\frac{\theta p}{2}]\int_{-\infty}^{\infty}\exp[-\frac{q^2}{8\sigma^2}-\frac{q\mu}{2\sigma^2}+\frac{\theta q}{2}-\frac{pq}{4\sigma^2}]dq
+[0,\infty]
+A(q^2, q)
+\int_{-\infty}^{\infty}A(q^2, q)dq = \int_{-\infty}^{0}A(q^2, q)dq+\int_{0}^{\infty}A(q^2, q)dq 
+\int_{-\infty}^{0}A(q^2, q)dq =  \int_{\infty}^{0}A((-q)^2, -q)dq = -\int_{0}^{\infty}A(q^2, -q)dq
+\int_{-\infty}^{\infty}A(q^2, q)dq =\int_{0}^{\infty}A(q^2, q)dq -  \int_{0}^{\infty}A(q^2, -q)dq
+q^2
+q
+-q
+\int_0^{\infty} \exp \left \{-\frac{1}{4b}x^2-cx\right \}dx= \sqrt {\pi b}\exp \left \{bc^2\right \}\Big[1-erf(c\sqrt b)\Big] \qquad b>0

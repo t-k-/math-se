@@ -1,0 +1,39 @@
+ f:[a,b]\rightarrow \mathbb{R} 
+ f(x) \geq 0 \space
+ x \in [a,b] 
+ M=sup\{f(x):x\in[a,b]\} 
+ \{[\int_a^b[f(x)]^n\,dx]^{1/n}\}_{n=1}^\infty 
+[a,b]
+x_0\in[a,b]
+f(x_0)=M=\max_{[a,b]}f(x)\geq 0
+f
+x_0
+\epsilon>0
+\delta
+\epsilon>0
+M-f(x)\leq|f(x)-M|=|f(x)-f(x_0)|<\epsilon\mbox{ whenever }x\in (x_0-\delta,x_0+\delta)\cap[a,b].
+\left(\int_a^b(f(x))^ndx\right)^{\frac{1}{n}}\geq \left(\int_{(x_0-\delta,x_0+\delta)\cap[a,b]}(f(x))^ndx\right)^{\frac{1}{n}}\geq (M-\epsilon)\cdot\Big( m\big((x_0-\delta,x_0+\delta)\cap[a,b]\big)\Big)^{\frac{1}{n}}
+\lim_{n\rightarrow\infty}\left(\int_a^b(f(x))^ndx\right)^{\frac{1}{n}}\geq (M-\epsilon)\cdot\lim_{n\rightarrow\infty}\Big( m\big((x_0-\delta,x_0+\delta)\cap[a,b]\big)\Big)^{\frac{1}{n}}=M-\epsilon.
+\lim_{n\rightarrow\infty}\left(\int_a^b(f(x))^ndx\right)^{\frac{1}{n}}\leq M\cdot \lim_{n\rightarrow\infty}\Big( m\big([a,b]\big)\Big)^{\frac{1}{n}}=M.
+\lim_{n\rightarrow\infty}\left(\int_a^b(f(x))^ndx\right)^{\frac{1}{n}}=M.
+0 \leq g \leq f
+\int_{a}^{b} g^n
+\sup g
+\sup f
+M = 0
+M > 0
+M = f(x)
+c \in [a, b]
+M > \epsilon > 0
+\delta > 0
+|f(x) - M| \leq \epsilon
+|x - c| \leq \delta
+0 \leq g \leq f
+|[c-\delta, c+\delta] \cap [a, b]| \geq \delta
+I_n = \left( \int_{a}^{b} f(x)^n \; dx \right)^{1/n}
+\epsilon
+ g(x) = (M-\epsilon) \chi_{[c-\delta, c+\delta]}(x) = \begin{cases} M-\epsilon & |x - c| \leq \delta \\ 0 & \mathrm{otherwise}.\end{cases}
+\int_{a}^{b} g(x)^n \; dx \geq (M-\epsilon)^n \delta. 
+ (M-\epsilon) \delta^{1/n} \leq I_n \leq M(b-a)^{1/n}.
+ M-\epsilon \leq \liminf_{n\to\infty} I_n \leq \limsup_{n\to\infty} I_n \leq M.
+ \liminf_{n\to\infty} I_n = M =  \limsup_{n\to\infty} I_n,

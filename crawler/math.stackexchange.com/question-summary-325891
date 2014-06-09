@@ -1,0 +1,61 @@
+\left \| \cdot  \right \|
+A\in\mathbb{C}^{n\times n}
+\left \| A \right \|=\sup_{||x||=1} \left \| Ax \right \|
+\left \| A \right \|<1
+I-A
+\left \| \left ( I-A \right )^{-1} \right \|\leq \frac{1}{1-\left \| A \right \|}
+\|A\| < 1
+(I-A)
+x \neq 0
+Ax=x
+x
+\|x\|=1
+\|Ax\| = 1
+\sup_{\|x\|=1} \|Ax\| \geq 1
+\|(I-A)^{-1}\| = \sup_{\|y\|=1} \|(I-A)^{-1}y\| = \sup_{\|y\|=1} \|x_y\|
+x_y := (I-A)^{-1}y
+y = (I-A) x_y
+\|x_y\| \leq 1/(1 - \|A\|)
+\sup
+ 1 = \|y\| = \|(I-A) x_y\| = \|x_y - A x_y\| \geq \|x_y\| - \|A x_y\| \geq \|x_y\| - \|A\| \|x_y\| = (1 - \|A\|) \|x_y\|. 
+I+A
+(I+A)
+\|(I+A)^{-1}b\|=\|x\| \leq \frac{1}{1-\| A \|} \|(I+A)x\|   =\frac{1}{1-\| A \|} \cdot \| b \|
+\ker T
+\begin{aligned}\frac{\|v\|}{\|S^{-1}\|_\text{op}} &=\frac{1}{\|S^{-1}\|_\text{op}}\|S^{-1}(S(v))\|\\ &\leqslant \frac{\|S^{-1}\|_\text{op}}{\|S^{-1}\|_\text{op}}\|S(v)\|\\ &= \|S(v)\|\\ &\leqslant \|(S-T)(v)\|+\|T(v)\|\\ &\leqslant\|S-T\|_\text{op}\|v||+\|T(v)\|\\ &=\|T-S\|_{\text{op}}\|v\|+\|T(v)\|\end{aligned}
+\left(\frac{1}{\|S^{-1}\|_\text{op}}-\|T-S\|_\text{op}\right)\|v\|\leqslant\|T(v)\|\quad\mathbf{(1)}
+v\ne0
+\|v\|>0
+\mathbf{(1)}
+\|T(v)\|
+T(v)\ne0
+T
+\blacksquare
+S=I
+T=I-A
+I-A
+A-I
+I-A
+I - A
+x \not= 0
+(I - A)x \not= 0
+x - Ax \not= 0
+x \not= Ax
+I - A
+A
+\| Ax \| \le \| A \| \| x \|
+\| A \| < 1
+\| Ax \| < \| x \|
+A
+\| A \| < 1
+A
+-Ax
+x
+\| AB \| \le \| A \| \| B \|
+\|A + B\| \le \|A\| + \|B\|
+B = I - A
+\| I \| - \|A \| \le \| I - A \|
+ (I-A)^{-1} = \sum_{n=0}^{\infty}A^n 
+\implies  ||(I-A)^{-1}|| = ||\sum_{n=0}^{\infty}A^n||\leq \sum_{n=0}^{\infty}||A^n||\leq \sum_{n=0}^{\infty}||A||^n=\frac{1}{1-||A||}  
+ \implies ||(I-A)^{-1}|| \leq \frac{1}{1-||A||}. 
+ ||A^n||\leq ||A||^n .

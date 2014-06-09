@@ -1,0 +1,14 @@
+0 < u_k<1
+\sum_{k=1}^n u_k = 1
+y > 0
+\Omega_{n-1}
+J = \left(v_{n-1}\right)^{n-2}
+      x_k = y \cdot u_k 
+     J = y^{n-1} 
+     \int_0^\infty \cdots \int_0^\infty F\left(\sum_{k=1}^n x_k\right) \mathrm{d}x_1 \cdots \mathrm{d}x_n = \int_0^\infty y^{n-1} F\left(y \right) \mathrm{d}y \cdot \underbrace{\int_{u_k > 0, u_1+\cdots+u_{n-1} \leqslant 1} \mathrm{d}u_1 \cdots \mathrm{d}u_{n-1}}_{\Omega_{n-1}} 
+    u_{n-1} = 1 - v_{n-1} \quad u_{k} = v_{n-1} v_{k} \quad \text{for } 1 \leqslant k < n-1 
+    \Omega_{n-1} = \underbrace{\int_0^1 v_{n-1}^{n-2} \mathrm{d} v_{n-1}}_{\frac{1}{n-1}} \cdot \underbrace{\int_{v_k >0, v_1+\cdots+v_{n-2} < 1} \mathrm{d}v_1 \cdots \mathrm{d}v_{n-2}}_{\Omega_{n-2}} 
+     \Omega_{n-1} = \frac{1}{n-1} \Omega_{n-2} 
+    \Omega_{n-1} = \frac{1}{n-1}\cdot \frac{1}{n-2} \cdots \frac{1}{2} \Omega_1 = \frac{1}{(n-1)!} 
+\displaystyle{\large% \int_{0}^{\infty}\cdots\int_{0}^{\infty} {\rm F}\left(\sum_{i = 1}^{k}x_{i}\right){\rm d}x_{k}\ldots {\rm d}x_{1} = \int_{0}^{\infty}{y^{k - 1} \over \left(k - 1\right)!}{\rm F}\left(y\right)\, {\rm d}y }
+------------------------------------

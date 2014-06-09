@@ -1,0 +1,25 @@
+\mu
+X
+\int_X \mu(dx) = 1
+f_i:X \rightarrow \mathbb{R}_{\geq 0}
+i = 1,2,...
+ \limsup_{i\rightarrow \infty} \int_X  f_i(x) \mu(dx) \ - \  \lim_{n \rightarrow \infty} \limsup_{i \rightarrow \infty} \int_{X_n} f_i(x) \mu(dx) \ \ = \ \ 0   
+\{X_n\}_{n=1}^{\infty}
+X
+\lim_{n \rightarrow \infty} X_n = X
+\int_{X_n}f_i(x)\mu(dx)=\int_Xf_i(x)\mu(dx)-\int_{X\setminus X_n}f_i(x)\mu(dx)
+\varepsilon>0
+R>0
+i
+\int_{f_i\geq R}f_i(x)\mu(dx)\leq \varepsilon
+\limsup
+n
+\varepsilon
+n\to +\infty
+\varepsilon>0
+\int_{X\setminus X_n}f_i(x)\mu(dx)=\int_{X\setminus X_n\cap\{f_i\geq R\}}f_i(x)\mu(dx)+\int_{X\setminus X_n\cap\{f_i<R\}}f_i(x)\mu(dx)\leq \varepsilon+R\mu(X\setminus X_n)
+\int_{X_n}f_i(x)\mu(dx)\geq \int_{X}f_i(x)\mu(dx)-\varepsilon-R\mu(X\setminus X_n)
+\limsup_i\int_{X_n}f_i(x)\mu(dx)\geq \limsup_i\int_{X}f_i(x)\mu(dx)-\varepsilon-R\mu(X\setminus X_n),
+0\leq \limsup_i\int_{X}f_i(x)\mu(dx)-\limsup_i\int_{X_n}f_i(x)\mu(dx)\leq \varepsilon+R\mu(X\setminus X_n).
+0\leq \limsup_i\int_{X}f_i(x)\mu(dx)-\limsup_i\int_{X_n}f_i(x)\mu(dx)\leq \varepsilon,
+\lim_{n\to\infty}\left(\limsup_i\int_{X}f_i(x)\mu(dx)-\limsup_i\int_{X_n}f_i(x)\mu(dx)\right)=0.

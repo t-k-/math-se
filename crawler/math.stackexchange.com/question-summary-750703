@@ -1,0 +1,13 @@
+Y_1, Y_2,\ldots,Y_n
+(θ, θ + 1)
+ \hat{\theta}_2 = Y_{(n)} - \frac{n}{n+1}
+θ^1
+θ^2
+ \text{Var}\left[\hat{\theta}_{2}\right]=\text{Var}\left[Y_{(n)}-\frac{n}{n+1}\right]=\text{Var}\left[Y_{(n)}\right]=\text{E}\left[Y_{(n)}^2\right]-\left(\text{E}\left[Y_{(n)}\right]\right)^2. 
+ \begin{align} \text{E}\left[Y_{(n)}\right]&=n\left[\frac{y(y-\theta)^n}{n+1}-\frac{\theta(y-\theta)^n}{n(n+1)}\right]_{y=\theta}^{\theta+1}\\ &=\frac{n(\theta+1)}{n+1}+\frac{\theta}{n+1}\\ &=\theta+\frac{n}{n+1}. \end{align} 
+E(Y_{(n)}^2)
+E(Y_{(n)}^2) = ny^2(y-\theta)^{n-1} = n\left[\left.y^2\frac{(y-\theta)^n}{n} \right|_\theta^{\theta+1} - \frac{2}{n} \int_\theta^{\theta+1} y(y-\theta)^n  \,dy\right]
+= \left.(\theta+1)^2 - 2\left(y\frac{(y-\theta)^{n+1}}{n+1} \right|_\theta^{\theta+1} - \int_\theta^{\theta+1} \frac{(y-\theta)^{n+1}}{n+1} dy\right) = (\theta+1)^2 -2 \left(\frac{\theta+1}{n+1} - \left.\frac{(y-\theta)^{n+2}}{(n+1)(n+2)}\right|_\theta^{\theta+1}\right)
+= (\theta+1)^2- 2\frac{\theta +1}{n+1} - \frac{1}{(n+1)(n+2)}
+\\
+\Large\color{blue}{\text{# }\mathbb{Q.E.D.}\text{ #}}

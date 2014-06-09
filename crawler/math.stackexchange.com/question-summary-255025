@@ -1,0 +1,39 @@
+f(1), f(2), f(3), \ldots, f(n)
+f(n) = af(n-10) + bf(n-9) + \cdots+ jf(n-1)
+n-10
+f
+r
+x_1, \ldots, x_r
+f(n) = x_1 f(n-r) + x_2 f(n-r+1) + \ldots + x_r f(n-1)
+n > r
+r+1, r+2, \ldots, 2r
+ \begin{pmatrix} f(1) &  f(2)  & \ldots & f(r)\\ f(2)  &  f(3)& \ldots & f(r+1)\\ \vdots & \vdots & \ddots & \vdots\\ f(r)  &   f(r+1)      &\ldots & f(2r-1) \end{pmatrix}\begin{pmatrix} x_1\\x_2\\\vdots \\x_r \\ \end{pmatrix}=\begin{pmatrix} f(r+1)\\f(r+2)\\\vdots \\f(2r)\\ \end{pmatrix}.
+f
+f
+f
+x_1, \ldots, x_r
+x_1f(r+1) + \ldots x_r f(2r) = f(2r+1)
+f
+1, 5, 23, 105, 479, 2185, 9967, 45465, 207391
+r=2
+\begin{pmatrix} f(1) & f(2)\\ f(2) & f(3)\\ \end{pmatrix}\begin{pmatrix} x_1\\x_2\\ \end{pmatrix} = \begin{pmatrix} f(3)\\f(4)\\ \end{pmatrix}
+\begin{pmatrix} 1 & 5\\ 5 & 23\\ \end{pmatrix}\begin{pmatrix} x_1\\x_2\\ \end{pmatrix} = \begin{pmatrix} 23\\105\\ \end{pmatrix}
+\begin{pmatrix} x_1\\x_2 \end{pmatrix} = \begin{pmatrix} 1 & 5\\ 5 & 23\\ \end{pmatrix}^{-1}\begin{pmatrix} 23\\105 \end{pmatrix} = \begin{pmatrix} -2\\5 \end{pmatrix}
+f(n) = -2f(n-2) + 5f(n-1)
+k
+(n+1-k) \times k
+A
+A_{ij} = f(i+j-1)
+k
+(c_0, \ldots, c_{k-1})
+A
+c_0 f(j) + c_1 f(j-1) + \ldots + c_k f(j-k) = 0
+1, 5, 23, 105, 479, 2185, 9967, 45465, 207391
+k=2
+A
+2
+k=3
+2 f(j) - 5 f(j+1) + f(j+2) = 0
+f(i) = 5 f(i-1) - 2 f(i-2)
+ A = \pmatrix{1&5&23\cr 5&23&105\cr 23&105&479\cr 105&479&2185 \cr 479&2185&9967\cr 2185&9967&45465 \cr 9967&45465&207391\cr } \ \text{has rank } 2
+ \pmatrix{2\cr -5\cr 1\cr}

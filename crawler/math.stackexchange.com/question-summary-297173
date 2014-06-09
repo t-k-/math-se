@@ -1,0 +1,20 @@
+\mu
+\mathbb{R}^n_{+}
+r>0
+N \in \mathbb{N}
+P_{N}(y) \in \mathbb{R}[y]
+N
+C^{\infty}(0,\mathbb{R}^n_{+})
+    \int\limits_{\mathbb{R}^n_{+}}  e^{r|x|} \, \mu(dx) < \infty. 
+     \int\limits_{\mathbb{R}^n_{+}} e^{-x \cdot y} \, \mu(dx) - P_{N}(y) = o(|y|^{N}), \;\;\; y \to 0, \; y \in \mathbb{R}^n_{+}. 
+e^{- x \cdot y}
+(x \cdot y)^n
+n
+y \neq 0
+(1)
+    \int\limits_{\mathbb{R}^n_{+}} e^{-x \cdot y} \, \mu(dx) = \mu(\mathbb{R}^n_{+})+ \sum\limits_{k=1}^{\infty} \frac{(-1)^k}{k!} \int\limits_{\mathbb{R}^{n}_{+}} (x \cdot y)^k \, \mu(dx)  \tag{1} 
+    P_{N}(y) = \sum\limits_{k=0}^{N} \frac{(-1)^k}{k!} \int\limits_{\mathbb{R}^n_{+}} (x \cdot y)^k \, \mu(dx). 
+    \sum\limits_{k=N+1}^{\infty} \frac{(-1)^k}{k!} \int\limits_{\mathbb{R}^n_{+}} (x \cdot y)^k \, \mu(dx) = o (|y|^N), \;\;\; y \to 0 
+\sum_{k\geqslant N+1}\frac{|y|^k}{k!r^k}\leqslant |y|^{N+1}e^{r|y|}
+\left|\int_{\Bbb R^n_+}(x\cdot y)^k\mu(dx)\right|\leqslant \frac{|y|^k}{r^k}\int_{\Bbb R^n_+}e^{r|x|}\mu(dx),
+\sum_{k\geqslant N+1}\frac{|y|^k}{k!r^k}=o(y^N).

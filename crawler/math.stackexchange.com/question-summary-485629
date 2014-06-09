@@ -1,0 +1,11 @@
+^\dagger
+\gamma \equiv \int_1^\infty \frac{1}{\lfloor z\rfloor} - \frac{1}{z}dz  \quad\stackrel{?}{=}\quad -\int_0^1 \frac{e^{-z}-1}{z}dz-\int_1^\infty \frac{e^{-z}}{z}dz
+z\to0
+\int_0^1 \frac{e^{-1/z}+e^{-z}-1}{z}dz
+\Tiny^\dagger\text{ From the collected papers of L. Landau. }
+[(1-e^{-z}) \log{z}]_0^{1} -\int_0^1 dz \, e^{-z} \, \log{z} = -\int_0^1 dz \, e^{-z} \, \log{z}
+-[e^{-z} \log{z}]_1^{\infty} - \int_1^{\infty}dz \, e^{-z} \, \log{z} =  - \int_1^{\infty}dz \, e^{-z} \, \log{z}
+-\int_0^{\infty} dz \, e^{-z} \, \log{z} = -\left [\frac{d}{ds} \int_0^{\infty} dz \, e^{-z} \, z^s\right ]_{s=1} = -\left [\frac{d}{ds} \Gamma(s)\right]_{s=1} = -\gamma 
+\alpha > 0
+\begin{align} F(\alpha) &:= \int_0^1 \frac{e^{-z}-1}{z^{1-\alpha}}\,dz + \int_1^\infty \frac{e^{-z}}{z^{1-\alpha}}\,dz\\ &= \int_0^\infty z^{\alpha-1}e^{-z}\,dz - \int_0^1 z^{\alpha-1}\,dz\\ &= \Gamma(\alpha) - \frac{1}{\alpha}\\ &= \frac{\alpha\Gamma(\alpha) - 1}{\alpha}\\ &= \frac{\Gamma(1+\alpha) - \Gamma(1)}{\alpha} \xrightarrow{\alpha\to 0} \Gamma'(1) = -\gamma. \end{align}
+\lim_{\alpha\to 0} F(\alpha) = \int_0^1 \frac{e^{-z}-1}{z}\,dz + \int_1^\infty \frac{e^{-z}}{z}\,dz.

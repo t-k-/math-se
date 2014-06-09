@@ -1,0 +1,34 @@
+ tr[(AXBX^TC-D)^T(AXBX^TC-D)] 
+X
+A
+X^\top
+C
+X
+M
+\operatorname{tr}(B^\top M)
+B
+M
+(1)
+f(B)
+B
+2(A^\top ABCC^\top - A^\top DC^\top)
+A
+C
+A
+C
+2(X^\top A^\top AXBX^\top CC^\top X - X^\top A^\top DC^\top X).
+f(B) = \operatorname{tr}(ABC-D)^T(ABC-D))
+Q(B) = C^TB^TA^T ABC-D^T ABC-C^TB^TA^TD+D^TD
+DQ(B)(\Delta) = C^T\Delta^TA^T ABC+ C^TB^TA^T A\Delta C-D^T A\Delta C-C^T\Delta^TA^TD
+Q(B+\Delta) = Q(B) +  C^T\Delta^TA^T ABC+ C^TB^TA^T A\Delta C-D^T A\Delta C-C^T\Delta^TA^TD + C^T\Delta^TA^T A\Delta C 
+\operatorname{tr}
+Df(B)(\Delta) = \operatorname{tr}(DQ(B)(\Delta))
+Df(B)(\Delta) = \operatorname{tr} (2( X^T A^T (AXBX^TC -D  ) C^T X )^T \Delta )
+\phi(\Delta) = \operatorname{tr} (F^T \Delta) 
+\phi(E_{ij}) = [F]_{ij}
+E_{ij}
+i,j
+\frac{\partial f(B)}{\partial B_{ij}} = Df(B)(E_{ij}) = [ 2( X^T A^T (AXBX^TC -D  ) C^T X ]_{ij}
+\langle X, Y \rangle_F = \operatorname{tr}(X^T Y)
+Df(B)(\Delta) = \langle 2 X^T A^T (AXBX^TC -D  ) C^T X, \Delta \rangle_F
+\nabla f(B) = 2 X^T A^T (AXBX^TC -D  ) C^T X

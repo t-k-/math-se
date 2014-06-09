@@ -1,0 +1,43 @@
+a_i\in \mathbb{R}
+n
+2n \left(\sum_{i=1}^{2n} a_i^2\right) \geq \left(\sum_{i=1}^{2n} a_i\right)^2+\left(\sum_{i=1}^{2n} a_i (-1)^i\right)^2?
+\{u_1, \dots ,u_{2n}\}
+u,v \in V
+u= \sum_{i=1}^{2n}a_iu_i
+v= \sum_{i=1}^{2n}a_iu_i
+|\langle u,v \rangle|^2 \leq \langle u,u \rangle\langle v,v \rangle
+\langle u,v \rangle = \sum_{i=1}^{2n} a_ib_i,\quad \langle u,u \rangle = \sum_{i=1}^{2n} a_i^2,\quad \langle v,v \rangle = \sum_{i=1}^{2n} b_i^2,
+\left(\sum_{i=1}^{2n} a_i^2\right)\left(\sum_{i=1}^{2n} b_i^2\right) \geq \left(\sum_{i=1}^{2n} a_ib_i\right)^2
+b_i=1
+i
+2n\left(\sum_{i=1}^{2n} a_i^2\right) \geq \left(\sum_{i=1}^{2n} a_i\right)^2
+(\sum_{i=1}^{2n} a_i (-1)^i)^2 \geq 0
+b_i=(-1)^i
+\left(\sum_{i=1}^{2n} a_i^2\right)\left(\sum_{i=1}^{2n} ((-1)^2)^i\right) \geq \left(\sum_{i=1}^{2n} a_i(-1)^i\right)^2
+\Rightarrow 2n\left(\sum_{i=1}^{2n} a_i^2\right) \geq \left(\sum_{i=1}^{2n} a_i(-1)^i\right)^2
+\Rightarrow 4n\left(\sum_{i=1}^{2n} a_i^2\right) \geq \left(\sum_{i=1}^{2n} a_i\right)^2 + \left(\sum_{i=1}^{2n} a_i(-1)^i\right)^2.
+2n
+n
+E := \sum \limits_{i \text{ even}} a_i
+O := \sum \limits_{i \text{ odd}} a_i,
+1 \leqslant i \leqslant 2n
+i
+\sum \limits_i a_i = E+ O
+\sum \limits_i (-1)^ia_i = E - O
+\color{Red}{(\ast)}
+\{ a_1, a_3, \ldots, a_{2n-1} \}
+\{ a_2, a_4, \ldots, a_{2n}\}
+ \begin{eqnarray*} \text{RHS}  &=& (E+O)^2 + (E-O)^2 \\ &=& 2(E^2 + O^2) \\ &\stackrel{\color{Red}{(\ast)}}{\leqslant}& 2 \left(n\sum_{i \text{ even}} a_i^2 + n\sum_{i \text{ odd}} a_i^2 \right) \\ &=& 2n \sum_{i=1}^{2n} a_i^2 , \end{eqnarray*} 
+A=(a_i), B=(b_i),C=(c_i)
+b_i=1,c_i=(-1)^n
+\|B\|^2=\|C\|^2=2n
+B\cdot C = 0
+B'=B/\|B\|
+C'=C/\|C\|
+V
+B
+C
+\sum a_i^2 = \|A\|^2 \geq \|\operatorname{proj}_V(A)\|^2 = \| (A\cdot B')B' + (A\cdot C')C' \|^2 = (A\cdot B')^2 + (A\cdot C')^2.
+2n= \|B\|^2=\|C\|^2
+A=\operatorname{proj}_V(A)
+A\in \operatorname{span}(B,C)

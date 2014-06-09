@@ -1,0 +1,145 @@
+(n^2 \alpha \bmod 1)
+\alpha \in \mathbb{R} \setminus \mathbb{Q}
+T: (x,y) \mapsto (x + \alpha, y + 2x + \alpha)
+2
+\mathbb{T}^2
+\lambda \times \lambda
+T
+A \subset \mathbb{T}^2
+T
+(\lambda \times \lambda)(A) \in \{0, 1\}
+\forall f \in L^2( \mathbb{T}^2)
+f
+T
+f
+  \begin{align} f(x,y) &= \sum_{j,k \in \mathbb{Z}} c_{jk} e^{ijx} e^{iky} \\ &\stackrel{f = f\circ T}{=} \sum_{j,k \in \mathbb{Z}} c_{jk} e^{ij(x + \alpha)} e^{ik(y + 2x + \alpha)}  \\ &= \sum_{j,k \in \mathbb{Z}} c_{jk} e^{ij\alpha + ik\alpha} e^{ijx + ik2x}e^{iky} \\ &\stackrel{j \rightarrow j-2k}{=} \sum_{j,k \in \mathbb{Z}} c_{(j-2k)k} e^{i(j-k)\alpha} e^{ijx}e^{iky} . \end{align}
+c_{jk} = c_{(j-2k)k} e^{i(j-k)\alpha}
+|c_{jk}| = |c_{(j-2k)k}| = |c_{(j-4k)k}| = \cdots
+|c_{(j-4k)k}| \; \xrightarrow{k \rightarrow \infty} \; 0
+c_{jk}
+0
+x \in \mathbb{T}
+(n \alpha \bmod 1)
+ \frac{1}{m} \sum_{n=1}^m T^n_\ast (\delta_x \times \lambda) \rightarrow \lambda \times \lambda
+  \begin{align} \frac{1}{m} \sum_{n=1}^m \delta_x \times \lambda (T^n(A \times B))  &=  \frac{1}{m} \sum_{n=1}^m \delta_x \times \lambda ( (A + \alpha n) \times (B + \alpha n) ) \\ &= \frac{1}{m} \sum_{n=1}^m \delta_x (A + \alpha n) \lambda(B + \alpha n) \\ &= \frac{1}{m} \sum_{n=1}^m \chi_{A + \alpha n}(x) \lambda(B + \alpha n) . \end{align} 
+\lambda
+ \begin{align} \frac{1}{m} \sum_{n=1}^m \chi_{A + \alpha n}(x) \lambda(B + \alpha n) =  \frac{1}{m} \sum_{n=1}^m \chi_{A + \alpha n}(x) \lambda(B) . \end{align} 
+ \begin{align} \frac{1}{m} \sum_{n=1}^m \chi_{A + \alpha n}(x) \lambda(B)= \lambda(B) \int_{\mathbb{T}} \chi_{A + \alpha n} (x) d \lambda(x) = \lambda(B)\lambda(A) = \lambda \times \lambda (A \times B) . \end{align} 
+\eta \in (0,1)
+x,y \in \mathbb{T}
+  \begin{align*} \mu_m &=  \frac{1}{m} \sum_{n=1}^m T^n_\ast \left(\delta_x \times \left(\frac{1}{2 \eta} \left. \lambda \right \vert_{[y-\eta, y + \eta]} \right) \right) \\ \nu_m &=  \frac{1}{m} \sum_{n=1}^m T^n_\ast \left(\delta_x \times \left( \frac{1}{1 - 2 \eta} \left. \lambda \right\vert_{\mathbb{T} \smallsetminus [y-\eta, y + \eta]} \right) \right) \end{align*} 
+^\ast
+\mathbb{N}
+\mu
+\nu
+2 \eta \mu + (1 - 2 \eta) \nu = \lambda \times \lambda
+^\ast
+\mu
+\mu_n = \frac{1}{n}\sum_{j=0}^{n-1} T_\ast^j \nu_n
+\mu = T_\ast \mu
+ 2 \eta \lim_{m \to \infty} \frac{1}{m} \sum_{n=1}^m T_\ast^n \left(\delta_x \times \left( \frac{1}{2 \eta} \left. \lambda \right\vert_{[y- \eta, y + \eta]} \right) \right) +  (1 - 2 \eta) \lim_{m \to \infty} \frac{1}{m} \sum_{n=1}^m T_\ast^n \left( \delta_x \times \left( \frac{1}{1- 2 \eta} \left.  \lambda \right\vert_{\mathbb{T} \smallsetminus [y- \eta, y + \eta]} \right) \right) , 
+ \left. \lambda \times \lambda \right\vert_{[y - \eta , y + \eta]} +  \left. \lambda \times \lambda \right \vert_{\mathbb{T} \smallsetminus [y - \eta , y + \eta]} = \lambda \times \lambda. 
+\mu = \lambda \times \lambda
+\eta \geq \frac{1}{2}
+\eta < \frac{1}{2}
+\eta < \frac{1}{2}
+\lambda \times \lambda = 2 \eta \mu + (1 - 2 \eta) \nu
+2 \eta < 1
+\lambda \times \lambda = \mu = \nu
+\eta \geq \frac{1}{2}
+[y - \eta , y + \eta] = \mathbb{T}
+ \begin{align} \mu(A \times B) &= \lim_{m \to \infty} \mu_m (A \times B)  \\ &= \lim_{m \to \infty} \frac{1}{m} \frac{1}{2 \eta} \sum_{n=1}^m \chi_A(x + \alpha n) \lambda \mid_{[y - \eta , y + \eta]} (B) \\ &\stackrel{b)}{=} \frac{1}{ 2 \eta} \lambda \times \lambda \end{align}
+\mu_m \to \lambda \times \lambda
+x_n
+y \neq x
+x
+x_n
+\mu_m \to \mu = \lambda \times \lambda
+f \in C(\mathbb{T}^2)
+\varepsilon > 0
+\eta > 0
+  \left\vert \int f d \mu_m - \int f d \omega_m  \right\vert < \varepsilon ,
+ \omega_m = \frac{1}{m} \sum_{n=1}^m T^n_\ast (\delta_x \times \delta_y) .
+T^n(x,y) = (x + n\alpha, y + 2nx + n^2\alpha)
+e^{2\pi ijx}
+e^{ijx}
+f\circ T = f
+c_{j,k} = c_{j-2k,k}e^{2\pi i(j-k)\alpha}
+k\neq 0
+|c_{j,k}| = |c_{j-2nk,k}|
+n
+c_{j,k} = 0
+k = 0
+k = 0
+c_{j,0} = c_{j,0}e^{2\pi ij\alpha}
+j\neq 0
+e^{2\pi ij\alpha}\neq 1
+c_{j,0} = 0
+f
+c_{0,0}
+f
+n\alpha
+f\in C(\mathbb{T}^2)
+g\in C(\mathbb{T})
+\lambda
+\mathbb{T}
+n\alpha
+m^{-1}\sum_{n=1}^mT^n_*(\delta_x\times\lambda)\to \lambda\times\lambda
+g(x) = \int_{\mathbb{T}} f(x,y)\,d\lambda(y).
+\frac{1}{m}\sum_{n=1}^m\int_{\mathbb{T}^2}f\circ T^n\,d(\delta_x\times \lambda) = \frac{1}{m}\sum_{n=1}^m\int_\mathbb{T}f(x+n\alpha,y + 2nx + n^2\alpha)\,d\lambda(y) = \frac{1}{m}\sum_{n=1}^mg(x + n\alpha).
+\frac{1}{m}\sum_{n=1}^m\int_{\mathbb{T}^2} f\circ T^n\,d(\delta_x\times \lambda) = \frac{1}{m}\sum_{n=1}^mg(x + n\alpha)\to \int_\mathbb{T}g\,d\lambda = \int_{\mathbb{T}^2} f\,d(\lambda\times\lambda).
+\eta\in (0,1/2)
+\mu_m
+\nu_m
+\eta\in (0,1/2)
+m_k
+\mu_{m_k}
+\mu
+m_{k_l}
+m_k
+\nu_{m_{k_l}}
+\nu
+2\eta\mu_{m_{k_l}} + (1 - 2\eta)\nu_{m_{k_l}}\to \lambda\times\lambda
+2\eta\mu_{m_{k_l}} + (1 - 2\eta)\nu_{m_{k_l}}\to 2\eta\mu + (1-2\eta)\nu
+\lambda\times\lambda = 2\eta\mu + (1-2\eta)\nu
+\lambda\times \lambda = 2\eta\mu + (1-2\eta)\nu
+\lambda\times\lambda
+\mu
+\nu
+\lambda\times\lambda
+\mu = \nu = \lambda\times\lambda
+\mu
+\mu_m
+\lambda\times\lambda
+\mu_m
+\mu_m\to \lambda\times \lambda
+\mathbb{T}
+\mathbb{R}
+\mathbb{T}^2
+d
+f
+\epsilon
+\mathbb{T}^2
+f
+\eta>0
+\eta<1/2
+(x,y),(x',y')\in \mathbb{T}^2
+d((x,y),(x',y'))\leq\eta
+|f(x,y) - f(x',y')|<\epsilon
+T^n(x,z) = (x + n\alpha, z + 2nx + n^2\alpha)
+T^n(x,y) = (x + n\alpha, y + 2nx + n^2\alpha)
+z\in [y-\eta,y + \eta]
+d(T^n(x,z), T^n(x,y))\leq\eta
+z\in [y-\eta,y + \eta]
+|f\circ T^n(x,z) - f\circ T^n(x,y)|<\epsilon
+\epsilon
+\epsilon
+\left|\int_{\mathbb{T}^2} f\,d\mu_m - \int_{\mathbb{T}^2}f\,d\omega_m\right|\leq \frac{1}{m}\sum_{n=1}^m\frac{1}{2\eta}\left|\int_{\mathbb{T}} f\circ T^n(x,z) - f\circ T^n(x,y)\,d\lambda|_{[y-\eta,y+\eta]}(z)\right|.
+\omega_m\to \lambda\times\lambda
+x,y\in \mathbb{T}
+x = y = 0
+g\in C(\mathbb{T})
+f\in C(\mathbb{T}^2)
+f(x,y) = g(y)
+\omega_m\to \lambda\times\lambda
+\frac{1}{m}\sum_{n=1}^m g(n^2\alpha) = \frac{1}{m}\sum_{n=1}^m f(n\alpha, n^2\alpha)\to \int_{\mathbb{T}^2}f\,d(\lambda\times\lambda) = \int_\mathbb{T}g\,d\lambda.

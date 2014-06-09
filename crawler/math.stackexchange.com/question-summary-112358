@@ -1,0 +1,16 @@
+T: X \to Y
+||T||=\sup\{||T(x)||: x\in X , ||x||<1 \}
+||T||= \sup \{||T(x)||: x\in X ,||x|| \leq1 \}
+||T|| \geq \sup\{||T(x)||: x\in X , ||x||<1 \}
+B_X:=\{x\in X:\Vert x\Vert\leq 1\}
+B_X^\circ:=\{x\in X: \Vert x\Vert <1\}
+\Vert T\Vert=\sup\limits_{x\in B_X}\Vert Tx\Vert
+\{x_n\}_{n=1}^\infty\subset B_X
+\Vert T\Vert =\lim\limits_{n\to\infty}\Vert Tx_n\Vert
+y_n=(1-2^{-n})x_n
+\{x_n\}_{n=1}^\infty\subset B_X
+\{y_n\}_{n=1}^\infty\subset B_X^\circ
+\sup\limits_{x\in B_X^\circ}\Vert Tx\Vert\geq \Vert T\Vert
+\sup\limits_{x\in B_X^\circ}\Vert Tx\Vert\leq\sup\limits_{x\in B_X}\Vert Tx\Vert=\Vert T\Vert
+ \lim\limits_{n\to\infty}\Vert Ty_n\Vert=\lim\limits_{n\to\infty}\Vert (1-2^{-n})Tx_n\Vert=\lim\limits_{n\to\infty}(1-2^{-n})\cdot\lim\limits_{n\to\infty}\Vert Tx_n\Vert=\Vert T\Vert. 
+ \Vert T\Vert=\sup\limits_{x\in B_X^\circ}\Vert Tx\Vert=\sup\{\Vert Tx\Vert:x\in X,\Vert x\Vert<1\} 

@@ -1,0 +1,15 @@
+\int_{0}^{\pi/2}{\frac{{{\ln }^{2}}\cos x{{\ln }^{2}}\sin x}{\cos x\sin x}}\,\mathrm{d}x=\frac{1}{4}\left( 2\zeta \left( 5 \right)-\zeta \left( 2 \right)\zeta \left( 3 \right) \right)
+ I = \int_{0}^{\frac{\pi }{2}}{\frac{{{\ln }^{2}}\cos x{{\ln }^{2}}\sin x}{\cos x\sin x}}\text{d}x = \frac{1}{4}\,\int _{-\infty }^{0}\!{\frac {{t}^{2} \left( \ln  \left( 1-{ {\rm e}^{2\,t}} \right)\right) ^{2}}{1-{{\rm e}^{2t}}}}{dt}.
+ 1-e^{2t}=z 
+\frac{1}{4}\,\int _{-\infty }^{0}\!{\frac {{t}^{2} \left( \ln  \left( 1-{ {\rm e}^{2\,t}} \right)  \right) ^{2}}{1-  {{\rm e}^{2t}}  }}{dt}= \frac{1}{32}\,\int _{0}^{1}\!{\frac { \left( \ln  \left( 1-z \right)   \right) ^{2} \left( \ln  \left( z \right)  \right) ^{2}}{z \left( 1- z\right) }}{dz}
+= \frac{1}{32}\,\int _{0}^{1}\!{\frac { \left( \ln  \left( 1-z \right)   \right) ^{2} \left( \ln  \left( z \right)  \right) ^{2}}{z }}{dz}+\frac{1}{32}\,\int _{0}^{1}\!{\frac { \left( \ln\left( 1-z \right)   \right) ^{2} \left( \ln  \left( z \right)  \right) ^{2}}{ \left( 1- z\right) }}{dz} 
+ \implies I = \frac{1}{16}\,\int _{0}^{1}\!{\frac { \left( \ln  \left( 1-z \right)   \right) ^{2} \left( \ln  \left( z \right)  \right) ^{2}}{z }}{dz}\longrightarrow (1). 
+ \frac{1}{16}\,\int _{0}^{1}\!{\frac { \left( \ln  \left( 1-z \right)   \right)^{2} \left( \ln  \left( z \right)  \right)^{2}}{z }}{dz}=\frac{1}{16} \lim_{w\to 0}\lim_{s\to 0^+}\frac{d^2}{dw^2}\frac{d^2}{ds^2}\int_{0}^{1} (1-z)^{w}z^{s-1}dz 
+ = \frac{1}{16}\lim_{w\to 0}\lim_{s\to 0^+}\frac{d^2}{dw^2}\frac{d^2}{ds^2}\beta(s,w+1)=\frac{1}{16}\lim_{w\to 0}\lim_{s\to 0^+}\frac{d^2}{dw^2}\frac{d^2}{ds^2}\frac{\Gamma(s)\Gamma(w+1)}{\Gamma(s+w+1)}
+ I=\frac{1}{4}\left( 2\zeta \left( 5 \right)-\zeta \left( 2 \right)\zeta \left( 3 \right) \right) \longrightarrow (*), 
+ \frac{1}{16}\,\int _{0}^{1}\!{\frac { \left( \ln  \left( 1-z \right)   \right)^{2} \left( \ln  \left( z \right)\right)^{2}}{z }}{dz}=\frac{1}{24}\,\int _{0}^{1}\!{\frac{ \ln\left( 1-z \right)\left( \ln  \left( z \right) \right)^{3}}{1-z}}{dz} 
+ = -\sum_{n=0}^{\infty}(\psi(n+1)+\gamma)\int_{0}^{1}z^n\ln^3(z)dz = \frac{1}{4}\sum_{n=0}^{\infty}\frac{\psi(n+1)+\gamma}{(n+1)^4}. 
+ I= \frac{1}{4}\sum_{n=1}^{\infty}\frac{\psi(n)}{n^4}+\frac{\gamma}{4}\zeta(4)\sim 0.02413779000 \longrightarrow (**). 
+ I=\frac{1}{4}\sum_{n=1}^{\infty}\frac{H_{n-1}}{n^4} \longrightarrow (***). 
+ I=\frac{1}{16}\sum_{n=1}^{\infty}\frac{H^2_{n}}{n^3}+\frac{1}{16}\sum_{n=1}^{\infty}\frac{\psi'(n+1)}{n^3}-\frac{1}{16}\zeta(2)\zeta(3)\longrightarrow (****). 
+\frac{\ln(1-z)}{1-z}= -\sum _{n=0}^{\infty } \left( \psi \left( n+1 \right) + \gamma \right){x}^{n}=-\sum _{n=0}^{\infty } H_{n}{x}^{n}. 

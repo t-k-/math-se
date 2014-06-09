@@ -1,0 +1,8 @@
+P \lor (Q \land R) \iff [(P \lor Q) \land (P \land Q)]\tag{A}
+P \land (Q \lor R) \iff [(P \land Q) \lor (P\land R)]\tag{B}
+(A)
+(1)\quad (p∨q∨¬r)∧(p∨¬q∨¬s)∧(p∨¬r∨¬s)∧ (¬p ∨ ¬q ∨ ¬s) ∧ (p ∨ q ∨ ¬s)
+\equiv [(p \lor q) \lor (\lnot r \land \lnot s)] \land [(\lnot q \lor \lnot s) \lor \underbrace{(p \land \lnot p)}_{\text{false}}] \land (\lnot p \lor \lnot q \lor \lnot s)
+\equiv [(p \lor q) \lor (\lnot r \land \lnot s)] \land (\lnot q \lor \lnot s) \land (\lnot p \lor \lnot q \lor \lnot s)
+\equiv [(p\lor q) \lor (\lnot r \land \lnot s)] \land (\lnot p \lor \lnot q \lor \lnot s)\tag{absorption}
+\equiv \;\cdots 

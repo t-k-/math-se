@@ -1,0 +1,12 @@
+\frac{N\log{N}}{k\log{k}}\approx  \log_{k!}{N!}\quad?
+k = e
+N = 2
+\log _{k!} N! = \frac{{\log N!}}{{\log k!}}
+n
+k
+ \frac{{N\log N}}{{k\log k}} \approx \frac{{\log N!}}{{\log k!}}. 
+ \frac{{\frac{{\log N!}}{{\log k!}}}}{{\frac{{N\log N}}{{k\log k}}}} \approx 1, 
+ n\log n - n + 1 \le \log n! \le (n + 1)\log (n + 1) - n, 
+ \frac{{N\log N - N + 1}}{{(k + 1)\log (k + 1) - k}} \le \frac{{\log N!}}{{\log k!}} \le \frac{{(N + 1)\log (N + 1) - N}}{{k\log k - k + 1}}. 
+ \frac{{\frac{{N\log N - N + 1}}{{(k + 1)\log (k + 1) - k}}}}{{\frac{{N\log N}}{{k\log k}}}} \le \frac{{\frac{{\log N!}}{{\log k!}}}}{{\frac{{N\log N}}{{k\log k}}}} \le \frac{{\frac{{(N + 1)\log (N + 1) - N}}{{k\log k - k + 1}}}}{{\frac{{N\log N}}{{k\log k}}}}, 
+ \frac{{N\log N - N + 1}}{{N\log N}}\frac{{k\log k}}{{(k + 1)\log (k + 1) - k}} \le \frac{{\frac{{\log N!}}{{\log k!}}}}{{\frac{{N\log N}}{{k\log k}}}} \le \frac{{(N + 1)\log (N + 1) - N}}{{N\log N}}\frac{{k\log k}}{{k\log k - k + 1}}. 

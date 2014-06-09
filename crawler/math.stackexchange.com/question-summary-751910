@@ -1,0 +1,28 @@
+z(t)=y(t)+t
+z(t)
+\dots
+y'(t)=\sin(y+t)\text{.}
+\sin(y+t)=\sin[2\tan^{-1}(-1-\frac2{t+c})]=2\sin[\tan^{-1}(-1-\frac2{t+c})]\cos[\tan^{-1}(-1-\frac2{t+c})]=
+2\tan[\tan^{-1}(-1-\frac2{t+c})]\cos^2[\tan^{-1}(-1-\frac2{t+c})]=
+\dfrac{2\tan[\tan^{-1}(-1-\frac2{t+c})]}{1+\tan^2[\tan^{-1}(-1-\frac2{t+c})]}=\dfrac{-2-\frac4{t+c}}{1+(-1-\frac2{t+c})^2}=-\dfrac{2+\frac4{t+c}}{2+\frac4{t+c}+\frac4{(t+c)^2}}
+y'=\frac d{dt}[2\tan^{-1}(-1-\frac2{t+c})-t]=\dfrac{\frac4{(t+c)^2}}{1+(-1-\frac2{t+c})^2}-\dfrac{1+(-1-\frac2{t+c})^2}{1+(-1-\frac2{t+c})^2}=
+\dfrac{\frac4{(t+c)^2}-2-\frac4{t+c}-\frac4{(t+c)^2}}{2+\frac4{t+c}+\frac4{(t+c)^2}}=-\dfrac{2+\frac4{t+c}}{2+\frac4{t+c}+\frac4{(t+c)^2}}
+y=z-t
+z'(t)-1=\sin z(t), 
+\int \frac{\mathrm{d}z}{1+\sin z}=\int \mathrm{d}t.
+\frac{2}{\cot (z/2)+1}=t+c, 
+z= 2 \text{ arccot } \left(\frac{2}{t+c}-1 \right). 
+ y=2 \text{ arccot } \left(\frac{2}{t+c}-1 \right)-t.
+y'_x=f(x)\sin(\lambda y+g(x))
+w=\lambda y+g(x)
+\ldots
+w'_x=\lambda f(x)\sin(w)+g'_x(x)
+f(x)\equiv 1
+\lambda=1
+g(x)=\mathrm{Id}(x)
+{y=2\text{arccot}\left(\frac{2}{t+c}-1\right)-t}\ ,\quad{c\in\mathbb{R}}
+\sin(y+t)= \sin\left[2\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]= 2\sin\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]\cos\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]
+=2\sin^2\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]\cot\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]=
+=\dfrac{2\cot\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]}{1+\cot^2\left[\cot^{-1}\left(\dfrac2{t+c}-1\right)\right]}= \dfrac{-2+\dfrac4{t+c}}{1+\left(\dfrac2{t+c}-1\right)^2}= \dfrac{-2+\dfrac4{t+c}}{2-\dfrac4{t+c}+\dfrac4{\left(t+c\right)^2}}
+y'=\dfrac d{dt}\left[2\cot^{-1}\left(\dfrac2{t+c}-1\right)-t\right]= \dfrac{\dfrac4{\left(t+c\right)^2}}{1+\left(\dfrac2{t+c}-1\right)^2}-\dfrac{1+\left(\dfrac2{t+c}-1\right)^2}{1+\left(\dfrac2{t+c}-1\right)^2}=
+=\dfrac{\dfrac4{\left(t+c\right)^2}-2+\dfrac4{t+c}-\dfrac4{\left(t+c\right)^2}}{2-\dfrac4{t+c}+\dfrac4{\left(t+c\right)^2}}= \dfrac{-2+\dfrac4{t+c}}{2-\dfrac4{t+c}+\dfrac4{\left(t+c\right)^2}}

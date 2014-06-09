@@ -1,0 +1,9 @@
+B(t)
+Z
+Z \sim \text{normal}(0,\int_0^1t\,dt)
+ Z(\omega) = \int_0^1B_t(\omega)\,dt\quad ?
+Z
+Z
+Z \sim \mathcal{N}\left(\mu = 0, \sigma = \frac{1}{\sqrt{3}}\right)
+    \mathbb{E}\left(Z\right) = \int_0^1 \mathbb{E}\left(B_t\right) \mathrm{d}t = 0 
+    \mathbb{Var}\left(Z\right) = \int_0^1 \int_0^1 \mathbb{Cov}\left(B_s, B_t\right) \mathrm{d}t \mathrm{d} s = \int_0^1 \int_0^1 \min\left(t,s\right) \, \mathrm{d}t \mathrm{d} s = \frac{1}{3} 

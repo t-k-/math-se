@@ -1,0 +1,9 @@
+f(x) \in C^1 [-a,a]
+\displaystyle \int_{-a}^{a} \left[\frac{f(x)}{1+e^x} + f'(x)\log(1+e^x) \right]dx
+f'(x)
+f(x)
+f'(x)
+\int_{-a}^{a}f'(x) = 0
+u=\log(1+e^x)\;,\;\;\;u'=\frac{e^x}{1+e^x}=1-\frac{1}{1+e^x}\\v'=f'(x)\;,\;\;v=f(x)
+\left.\int\limits_{-a}^af'(x)\log(1+e^x)\,dx=f(x)\log(1+e^x)\right|_{-a}^a-\int_{-a}^a\left(f(x)-\frac{f(x)}{1+e^x}\right)dx=
+=f(a)\overbrace{\left(\log\frac{1+e^a}{1+e^{-a}}\right)}^{\color{red}{\text{this equals}\; a}}+\int\limits_0^af(x)\,dx

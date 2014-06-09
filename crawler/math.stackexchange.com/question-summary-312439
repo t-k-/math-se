@@ -1,0 +1,31 @@
+p(x)
+\leq 5
+p^{(r)}(x_i)=y_i^{(r)},\ i=1,2 ;\   r=0,1,2
+p(x)
+l(x_2)=l'(x_2)=l''(x_2)=0
+l(x)=(x-x_2)^3g(x)
+g(x)
+\leq 2
+g(x)
+\tag 1 \displaystyle P(x) = f(x_0)L_{n,0}(x) + \cdots + f(x_n)L_{n,n}(x) = \sum_{k=0}^{n} f(x_k)L_{n,k}(x), \text{where}
+\tag 2 \displaystyle L_{n,k}(x) = \frac{(x-x_0)(x-x_1)\cdots (x-x_{k-1})(x-x_{k+1}) \cdots (x-x_n)}{(x_k - x_0)(x_k - x_1) \cdots (x_k-x_{k-1})(x_k-x_{k+1}) \cdots (x_k-x_n)} = \prod_{i=0, i \ne k}^n \frac{(x-x_1)}{(x_k-x_i)}
+k = 0, 1, \cdots, n.
+r
+\tag 3 \displaystyle L_{2,0}(x) = \frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}
+L_{2,0}'(x)
+\tag 4 \displaystyle L_{2,1}(x) = \frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}
+L_{2,1}'(x)
+\tag 5 \displaystyle L_{2,2}(x) = \frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}
+L_{2,2}'(x)
+\tag 6 H_{2n+1}(x) = \sum_{j=0}^{n} f(x_j)H_{n,j}(x) + \sum_{j=0}^{n} f'(x_j) \hat H_{n,j}(x)
+\tag 7 H_{n,j}(x) = [1 - 2(x-x_j)L'_{n,j}(x_j)]L^2_{n,j}(x)
+\tag 8 \hat H_{n,j}(x) = (x - x_j)L^2_{n,j}(x).
+f(x_k)
+f(x_k)
+f'(x_k)
+\tag 9 \displaystyle H_5(x) = f(x_0)H_{2,0}(x) + f(x_1)H_{2,1}(x) + f(x_2)H_{2,2}(x) + f'(x_0) \hat H_{2,0}(x) + f'(x_1) \hat H_{2,1}(x) + f'(x_2) \hat H_{2,2}(x).
+n
+x_0, x_1, \ldots, x_n:
+\tag {10} \displaystyle P_n(x) = f[x_0] + \sum_{k=1}^{n} f[x_o, x_1, \ldots, x_k](x-x_0) \cdots (x-x_{k-1})
+\begin{array}{c|c|c} \text{z} & \text{f(z)} & \text{1st divided differences} & \text{2nd divided differences}\\  \hline \\z_0 = x_0 & f[z_0] = f(x_0) &   &   \\  &  & f[z_0, z_1] = f'(x_0) &  \\z_1 = x_0 & f[z_1] = f(x_0) &  & f[z_0, z_1, z_2] = \frac{f[z_1, z_2]-f[z_0,z_1]}{z_2-z_0} \\ &  & f[z_1, z_2] = \frac{f[z_2]-f[z_1]}{z_2-z_1} &  \\z_2 = x_1 & f[z_2] = f(x_1) &  & f[z_1, z_2, z_3] = \frac{f[z_2, z_3]-f[z_1,z_2]}{z_3-z_1} \\ &  & f[z_2, z_3] = f'(x_1) &  \\z_3 = x_1 & f[z_3] = f(x_1) &  & f[z_2, z_3, z_4] = \frac{f[z_3, z_4]-f[z_2,z_3]}{z_4-z_2} \\ &  & f[z_3, z_4] = \frac{f[z_4]-f[z_3]}{z_4-z_3} &  \\z_4 = x_2 & f[z_4] = f(x_2) &  & f[z_3, z_4, z_5] = \frac{f[z_4, z_5]-f[z_3,z_4]}{z_5-z_3} \\ &  & f[z_4, z_5] = f'(x_2) &  \\z_5 = x_2 & f[z_5] = f(x_2) &  &  \end{array}
+H_5(x) = P(x)

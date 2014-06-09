@@ -1,0 +1,51 @@
+\{B(t):t\geq0\}
+\tau
+P(B(t+\tau)\leq y | \mathcal{F}_{\tau})=P(B(t+\tau)\leq y|B(\tau))
+y \in \mathbb{R}
+\cdot
+\hat{B}(t):=B(\tau+t)-B(\tau)
+t\geq0
+\mathcal{F}_{\tau}
+\cdot
+0\leq \forall s < \forall t
+\hat{B}(t)-\hat{B}(s)
+N(0, t-s)
+\cdot
+0\leq \forall s < \forall t
+\hat{B}(t)-\hat{B}(s)
+\hat{B}(u),\,u\in[0,s]
+\cdot
+\forall \omega \in \Omega
+t \mapsto B(t,\omega)
+\cdot
+0\leq \forall s < \forall t
+B(t)-B(s)
+N(0, t-s)
+\cdot
+0\leq \forall s < \forall t
+B(t)-B(s)
+B(u),\,u\in[0,s]
+\tau_j := \frac{\lfloor 2^j \tau \rfloor+1}{2^j}, \qquad j \in \mathbb{N}.
+\tau_j
+\tau_j \downarrow \tau
+j \to \infty
+B(\tau) = \lim_{j \to \infty} B(\tau_j)
+\xi,\eta \in \mathbb{R}
+\begin{align*} \mathbb{E}\bigg( e^{\imath \, \xi \cdot (B(\tau+t)-B(\tau))} \cdot e^{\imath \, \eta B(\tau)} \bigg) &= \lim_{j \to \infty} \mathbb{E}\bigg( e^{\imath \, \xi \cdot (B(\tau_j+t)-B(\tau_j))} \cdot e^{\imath \, \eta B(\tau_j)} \bigg) \\ &= \lim_{j \to \infty} \sum_{k=1}^{\infty} \mathbb{E} \bigg( e^{\imath \, \xi (B(k \cdot 2^{-j} +t)-B(k \cdot 2^{-j}))} \cdot e^{\imath \, \eta B(k \cdot 2^{-j})} \cdot 1_{\{\tau_j = k \cdot 2^{-j}\}} \bigg) \end{align*}
+\tau_j
+B(k \cdot 2^{-j}+t)-B(k \cdot 2^{-j})
+B(k \cdot 2^{-j}) \cdot 1_{\{\tau_j=k2^{-j}\}}
+\begin{align*} \mathbb{E}\bigg( e^{\imath \, \xi \cdot (B(\tau+t)-B(\tau))} \cdot e^{\imath \, \eta B(\tau)} \bigg) &= \mathbb{E}\bigg(e^{\imath \, \xi B(t)} \bigg) \lim_{j \to \infty} \sum_{k=1}^{\infty} \mathbb{E} \bigg( e^{\imath \, \eta B(k 2^{-j})} \cdot 1_{\{\tau_j=k \cdot 2^{-j}\}} \bigg) \\ &= \mathbb{E}\bigg(e^{\imath \, \xi B(t)} \bigg) \cdot \mathbb{E}\bigg(e^{\imath \, \eta B(\tau)} \bigg). \end{align*}
+\eta = 0
+ \mathbb{E}\bigg( e^{\imath \, \xi \cdot (B(\tau+t)-B(\tau))} \bigg) = \mathbb{E}\bigg(e^{\imath \, \xi B(t)} \bigg);
+ \mathbb{E}\bigg( e^{\imath \, \xi \cdot (B(\tau+t)-B(\tau))} \cdot e^{\imath \, \eta B(\tau)} \bigg)= \mathbb{E}\bigg(e^{\imath \, \xi (B(\tau+t)-B(\tau))} \bigg) \cdot \mathbb{E}\bigg(e^{\imath \, \eta B(\tau)} \bigg)
+B(\tau+t)-B(\tau)
+B(\tau)
+\begin{align*} \mathbb{E}\bigg(1_F e^{\imath \, \xi (B(\tau+t)-B(\tau))} \bigg) &= \mathbb{E}\bigg(1_F \mathbb{E} \bigg[ e^{\imath \, \xi (B(\tau+t)-B(\tau))} \mid \mathcal{F}_{\tau} \bigg] \bigg) \\ &= \mathbb{E}\bigg(1_F \mathbb{E} \bigg[ e^{\imath \, \xi (B(\tau+t)-B(\tau))} \mid B_{\tau} \bigg] \bigg)\\ &= \mathbb{P}(F) \cdot \mathbb{E}\bigg(e^{\imath \, \xi (B(\tau+t)-B(\tau))} \bigg) \end{align*}
+F \in \mathcal{F}_{\tau}
+B(\tau+t)-B(\tau)
+\mathcal{F}_{\tau}
+\mathbb{E} \left( \exp \left( \imath \sum_{j=1}^n \xi_j \cdot (B(\tau+t_j)-B(\tau+t_{j-1})) \right) \right) = \prod_{j=1}^n \mathbb{E}e^{\imath \, \xi_j B(t_j-t_{j-1})}
+\xi_j \in \mathbb{R}
+0 \leq t_0 < \ldots \leq t_n
+(B(\tau+t_j)-B(\tau+t_{j-1}))_{j=1,\ldots,n}

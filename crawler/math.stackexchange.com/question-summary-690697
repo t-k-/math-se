@@ -1,0 +1,20 @@
+\frac{d^n}{dx^n}\left(\frac{\sin x}{x}\right)=\frac{1}{x^{n+1}}\int_0^x y^n\cos\left(y+\frac{n\pi}{2}\right) \, dy,\: n\in \mathbb{N}
+ \frac{d^n}{dx^n}\cos(tx) = t^n\cos(tx+n\pi/2) 
+\frac{\sin x}{x}
+ \frac{\sin x}{x} = \int_{0}^{1} \cos (tx) dt \implies \left(\frac{\sin x}{x}\right)^{(n)} = \int_{0}^{1} t^n\cos(tx+n\pi/2) dt, 
+xt=y
+ \left(\frac{\sin x}{x}\right)^{(n)} = \frac{1}{x^{n+1}}\int_{0}^{x} y^n\cos(y+n\pi/2) dy. 
+\frac{d^n}{dx^n}\left(\frac{\sin x}{x}\right)=\frac{d}{dx}\frac{d^{n-1}}{dx^{n-1}}\left(\frac{\sin x}{x}\right)
+=\frac{d}{dx}\frac{1}{x^{n}}\int_{0}^{x} y^{n-1}\cos\left(y+\frac{(n-1)\pi}{2}\right)dy
+=\frac{-n}{x^{n+1}}\int_{0}^{x} y^{n-1}\cos\left(y+\frac{(n-1)\pi}{2}\right)dy+\frac{1}{x^n}\frac{d}{dx}\int_{0}^{x} y^{n-1}\cos\left(y+\frac{(n-1)\pi}{2}\right)dy
+=\frac{-n}{x^{n+1}}\int_{0}^{x} y^{n-1}\cos\left(y+\frac{(n-1)\pi}{2}\right)dy+\frac{1}{x^n}x^{n-1}\cos\left(x+\frac{(n-1)\pi}{2}\right)
+=\frac{-n}{x^{n+1}}\left(|\frac{1}{n}y^n\cos\left(y+\frac{(n-1)\pi}{2}\right)|_0^x+\int_{0}^{x} \frac{1}{n}y^{n}\sin\left(y+\frac{(n-1)\pi}{2}\right)dy\right)+\frac{1}{x^n}x^{n-1}\cos\left(x+\frac{(n-1)\pi}{2}\right)
+=\frac{-1}{x^{n+1}}\left(x^n\sin\left(x+\frac{n\pi}{2}\right)-\int_0^x y^n\cos\left(y+\frac{n\pi}{2}\right)dy\right)+\frac{1}{x^n}x^{n-1}\sin\left(x+\frac{n\pi}{2}\right)
+=\frac{1}{x^{n+1}}\int_0^x y^n\cos\left(y+\frac{n\pi}{2}\right)dy
+f_n(x)=\int_0^x y^n \cos(y+n\pi/2) dy
+\int_0^z \frac{1}{x^{n+1}} f_n(x) dx =  -\frac{1}{nz^n} f_n(z)  + \frac{1}{n} \sin(z+n\pi/2).
+f_n(z)
+\frac{1}{z^n} \int_0^z y^{n-1} \sin(y+n\pi/2)dy.
+\sin(y+n\pi/2) = \cos(y+(n-1)\pi/2)
+\sin(a+b)=\sin a \cos b + \sin b \cos a
+\int_0^z \frac{1}{x^{n+1}} f_n(x) dx = \frac{1}{z^n} f_{n-1}(z).

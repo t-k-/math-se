@@ -1,0 +1,25 @@
+q
+ \binom{n}{m_1,m_2,\dots,m_r}_q=\binom{n-1}{m_1-1,m_2,\dots,m_r}_q+q^{m_1}\binom{n-1}{m_1,m_2-1,\dots,m_r}_q+\cdots 
+ \hspace{1.8in}\cdots+q^{m_1+\cdots+m_{r-1}}\binom{n-1}{m_1,m_2,\dots,m_r-1}_q. 
+n=m_1+m_2+\cdots+m_r
+[n]_q=[m_1]_q+q^{m_1}[m_2]_q+q^{m_1+m_2}[m_3]_q+\cdots+q^{m_1+\cdots+m_{r-1}}[m_r]_q. \tag{a}
+[n]_q=q^0+q^1+q^2+\cdots+q^{n-1}
+m_1
+m_2
+m_r
+q
+[m_i]_q
+i=1,\dots,r
+(a)
+[n]_q
+q
+\frac{[m_1]_q}{[n]_q}{n\choose m_1,\dots,m_r}+\cdots+\frac{q^{m_1+\cdots+m_{r-1}}[m_r]_q}{[n]_q}{n\choose m_1,\dots,m_r}. \tag{b}
+[a]_q!=[a]_q\cdot[a-1]_q
+q
+q
+\small \binom{n}{m_1,m_2,\dots,m_r}_q=\binom{n-1}{m_1-1,m_2,\dots,m_r}_q+\cdots q^{m_1+\cdots+m_{r-1}}\binom{n-1}{m_1,m_2,\dots,m_r-1}_q.
+(a)
+n=9, m_{1,2,3}=2,3,4
+[9]_q=\color{Red}{1+q}+\color{Green}{q^2+q^3+q^4}+\color{Blue}{q^5+q^6+q^7+q^8}
+=(\color{Red}{1+q})+q^2(\color{Green}{1+q+q^2})+q^5(\color{Blue}{1+q+q^2+q^3})
+=[2]_q+q^2[3]_q+q^{2+3}[4]_q.

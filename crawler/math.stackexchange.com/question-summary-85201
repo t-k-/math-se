@@ -1,0 +1,47 @@
+\int_{1}^{2}\frac{1}{t}dt
+1\leq t\leq 2
+n
+n
+\int_{1}^{2}\frac{1}{t}dt
+5(10^{-6}) 
+\sum_{j=1}^{n}\frac{1}{n+j}< \int_{1}^{2}\frac{1}{t}dt< \sum_{j=0}^{n-1}\frac{1}{n+j}
+1+1/n, 1+2/n,1+3/n,\ldots,2
+1 , 1+1/n,1+2/n,\ldots,1-(n-1)/n
+f(t)={1\over t}
+[1,2]
+A_i
+[1+(i-1)/n, 1+i/n]
+f(1+i/n)={1\over 1+{i\over n}}
+f
+A_i
+A_1, A_2, \ldots, A_n,
+ L=\sum_{i=1}^n\underbrace{ {1\over 1+{i\over n}}}_{{\rm height\ of\ }A_i }\cdot  \underbrace{1\over n}_{{\rm width\ of\ }A_i }=\sum_{i=1}^n {1\over n+i}. 
+L
+A_i
+f(1+(i-1)i/n)={1\over 1+{(i-1)\over n}}
+f
+A_i
+U=\sum_{i=1}^n\underbrace{ {1\over 1+{i-1\over n}}}_{{\rm height\ of\ }A_i }\cdot  \underbrace{1\over n}_{{\rm width\ of\ }A_i }=\sum_{i=1}^n {1\over n+i-1} =\sum_{i=0}^{n-1} {1\over n+i } . 
+U
+b)
+E
+n
+{1\over 2n}\le5\cdot10^{-6}
+ |E|\le U-L=\sum_{i=0}^{n-1} {1\over n+i }-\sum_{i=1}^n {1\over n+i}={1\over n}-{1\over 2n}={1\over 2n} 
+[1,2]
+n
+[1+\frac{j-1}{n},1+\frac{j}{n}]
+1\leq j\leq n
+\frac{1}{t}
+1\leq j\leq n
+\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{1+\frac{j}{n}}dt<\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{t}dt<\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{1+\frac{j-1}{n}}dt
+\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{1+\frac{j}{n}}dt=\frac{1}{1+\frac{j}{n}}\cdot\Big[(1+\frac{j}{n})-(1+\frac{j-1}{n})\Big]=\frac{1}{1+\frac{j}{n}}\cdot\frac{1}{n}=\frac{1}{n+j}
+\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{1+\frac{j-1}{n}}dt=\frac{1}{1+\frac{j-1}{n}}\cdot\Big[(1+\frac{j}{n})-(1+\frac{j-1}{n})\Big]=\frac{1}{1+\frac{j-1}{n}}\cdot\frac{1}{n}=\frac{1}{n+j-1}.
+\frac{1}{n+j}<\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{t}dt<\frac{1}{n+j-1}\mbox{ for }1\leq j\leq n.
+\sum_{j=1}^n\frac{1}{n+j}<\sum_{j=1}^n\int_{1+\frac{j-1}{n}}^{1+\frac{j}{n}}\frac{1}{t}dt=\int_1^2\frac{1}{t}dt<\sum_{j=1}^n\frac{1}{n+j-1}=\sum_{j=0}^{n-1}\frac{1}{n+j}.
+\int_1^2\frac{1}{t}dt
+5(10^{−6})
+\sum_{j=1}^n\frac{1}{n+j}
+n\geq 10^5
+0<\int_1^2\frac{1}{t}dt-\sum_{j=1}^n\frac{1}{n+j}<\sum_{j=0}^{n-1}\frac{1}{n+j}-\sum_{j=1}^n\frac{1}{n+j}=\frac{1}{n}-\frac{1}{2n}=\frac{1}{2n}.
+\frac{1}{2n}\leq 5(10^{−6}),

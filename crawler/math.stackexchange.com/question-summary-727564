@@ -1,0 +1,30 @@
+R,S,T
+R(S\cup T)=RS\cup ST
+(a,b)\in R(S\cup T)⇒((a,x)\in R)∧((x,b)\in S∨(x,b)\in T)⇒(a,b)\in RS∨(a,b)\in RT
+R
+S
+(x,y)\in R ∨ (x,y)\in S
+(x,y)\in R ∧ (x,y)\in S
+(a,b) \in RZ \iff (a,x)\in R \land (x,b) \in Z
+a
+b
+RZ
+x
+a
+x
+R
+x
+b
+Z
+(a,b) \in S\cup T \iff (a,b) \in S \lor (a,b) \in T
+a
+b
+S
+T
+a
+b
+S
+a
+b
+T
+(a,b) \in R(S\cup T) \\ \iff (a,x)\in R \land (x,b) \in (S\cup T) \\ \iff (a,x)\in R \land \Bigl((x,b) \in S \lor (x,b) \in T\Bigr) \\ \iff \Bigl((a,x)\in R\land (x,b) \in S\Bigr)\lor\Bigl((a,x)\in R \land (x,b) \in T\Bigr) \\ \iff (a,b) \in RS \lor (a,b)\in RT \\ \iff (a,b)\in RS\cup RT \\\therefore R(S\cup T)\equiv RS\cup RT

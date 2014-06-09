@@ -1,0 +1,14 @@
+\int_0^{\pi/4} \frac {\sin x + \cos x}{\sin^4x+\cos^2x}dx
+\int e^x\cot x(\csc x-1)dx
+\begin{align}\int_0^{\pi/4} dx \frac{\sin{x}+\cos{x}}{\sin^4{x}+\cos^2{x}} &= \underbrace{\int_0^{\pi/4} dx \frac{\sin{x}}{1-\cos^2{x}+\cos^4{x}}}_{u=\cos{x}} + \underbrace{\int_0^{\pi/4} dx \frac{\cos{x}}{1-\sin^2{x}+\sin^4{x}}}_{u=\sin{x}}\\ &= \int_{1/\sqrt{2}}^1 \frac{du}{1-u^2+u^4} + \int_0^{1/\sqrt{2}}\frac{du}{1-u^2+u^4}\\ &= \int_0^{1}\frac{du}{1-u^2+u^4}\end{align}
+u^2=e^{\pm i \pi/3}
+\begin{align}\frac1{1-u^2+u^4} &= \frac1{(u^2-e^{i \pi/3})(u^2-e^{-i \pi/3})}\\ &= \frac1{i 2 \sin{(\pi/3)}} \left [\frac1{u^2-e^{i \pi/3}} - \frac1{u^2-e^{-i \pi/3}} \right ]\\ &= \frac{2}{\sqrt{3}} \Im{\left [\frac1{u^2-e^{i \pi/3}} \right ]}\end{align}
+\int \frac{du}{u^2-a^2} = \frac1{2 a} \log{\left ( \frac{u-a}{u+a}\right )}+C
+a=e^{i \pi/6}
+\begin{align}\int_0^1 \frac{du}{1-u^2+u^4} &= \frac{2}{\sqrt{3}} \Im{\left [\int_0^1 \frac{du}{u^2-e^{i \pi/3}} \right ]} \\ &= \frac{2}{\sqrt{3}} \Im{\left [\frac{1}{2 e^{i \pi/6}} \left [\log{\left ( \frac{u-e^{i \pi/6}}{u+e^{i \pi/6}}\right )} \right ]_0^1 \right ]}\\&= \frac{2}{\sqrt{3}} \Im{\left [\frac{1}{2 e^{i \pi/6}} \left [\log{\left ( \frac{1-e^{i \pi/6}}{1+e^{i \pi/6}}\right )} - \log{(-1)} \right ]\right ]}\\&= \frac{2}{\sqrt{3}} \Im{\left [\frac{1}{2 e^{i \pi/6}} \left [\log{\left ( (-i)\tan{\left ( \frac{\pi}{12}\right)}\right )} - \log{(-1)} \right ]\right ]}\\ &= \frac{1}{\sqrt{3}} \Im{\left [e^{-i \pi/6} \left (\log{\tan{\frac{\pi}{12}}} + i \frac{\pi}{2} \right )\right ] }\\ &= \frac{\pi}{4} + \frac{\log{(2+\sqrt{3})}}{2 \sqrt{3}} \end{align}
+\int_0^{\pi/4} dx \frac{\sin{x}+\cos{x}}{\sin^4{x}+\cos^2{x}} = \frac{\pi}{4} + \frac{\log{(2+\sqrt{3})}}{2 \sqrt{3}}
+\frac{1}{12} \left(3 \pi +\sqrt{3} \log \left(7+4 \sqrt{3}\right)\right)
+\log{(-i)} = \log{(-1)} + i \pi/2
+-1
+i
+\pi/2

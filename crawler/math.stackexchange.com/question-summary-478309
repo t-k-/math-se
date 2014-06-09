@@ -1,0 +1,24 @@
+N_1
+N_2
+µ_i=E[N_i]
+σ_i^2=Var[N_i]
+c = Cov(N_1, N_2)
+E[e^{N_1} I(N_2>0)]
+(N_1,N_2)
+a
+b
+d
+N
+N_2
+E[\mathrm e^{bN}]=\mathrm e^{b^2/2}
+(a,b,d)
+(a,b,d)
+N_2
+\mu_2+\sigma_2N
+(u,v)
+ N_1=aN_2+bN+d, 
+ E[\mathrm e^{bN}\mathrm e^d\mathrm e^{aN_2}:N_2\gt0]=E[\mathrm e^{bN}]\mathrm e^dE[\mathrm e^{aN_2}:N_2\gt0], 
+ \mu_1=a\mu_2+d,\qquad\sigma_1^2=a^2\sigma_2^2+b^2,\qquad c=a\sigma_2^2, 
+ E[\mathrm e^{aN_2}:N_2\gt0]=\mathrm e^{a\mu_2}E[\mathrm e^{a\sigma_2N}:N\gt-\mu_2/\sigma_2]. 
+ E[\mathrm e^{uN}:N\gt v]=\int_v^\infty\mathrm e^{ux}\varphi(x)\mathrm dx=\mathrm e^{u^2/2}\int_v^\infty\varphi(x-u)\mathrm dx=\mathrm e^{u^2/2}\Phi(u-v), 
+ E[\mathrm e^{N_1}:N_2\gt0]=\exp(\mu_1+\tfrac12\sigma_1^2)\cdot\Phi(\sigma_2^{-1}(c+\mu_2)). 

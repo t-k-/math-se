@@ -1,0 +1,20 @@
+\dfrac{dx}{dt}=3x + 3 y - 2 z + e^t
+\dfrac{dy}{dt} = x+y+ 2 z
+\dfrac{dz}{dt}=x+3y+e^t
+\dfrac{dx}{dt}=3x + 3 y - 2 z + e^t
+\dfrac{dy}{dt} = x+y+ 2 z
+\dfrac{dz}{dt}=x+3y+e^t
+X'(t) = A x(t) + F[t]
+A = \begin{bmatrix} 3& 3 & -2 \\ 1 & 1 & 2 \\ 1 & 3 & 0 \end{bmatrix}, ~~ F[t] = \begin{bmatrix} e^t \\ 0 \\ e^t \end{bmatrix}
+X_h(t) = \begin{bmatrix} x_h(t) \\ y_h(t) \\ z_h(t) \end{bmatrix} = c_1e^{4t} \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} + c_2 e^{-2t} \begin{bmatrix}1 \\ -1 \\ 1 \end{bmatrix} + c_3e^{2t} \begin{bmatrix} -1 \\ 1 \\ 1 \end{bmatrix}
+X(t) = e^{At}X_0 + \int_{t_0}^t e^{A(t-s)}F(s)~ds
+X(t) = X_h(t) + X_p(t)
+2x2
+3x3
+x' =  Ax(t) + f(t) = \begin{bmatrix} 6/7 & -15/14 \\ -5/7 & 37/14 \end{bmatrix}~x(t) + \begin{bmatrix} e^{2t} \\ e^{-t} \end{bmatrix}, x(0) = \begin{bmatrix} 4 \\ -1 \end{bmatrix}
+e^{At} = \begin{bmatrix} \dfrac{6}{7}e^{t/2} + \dfrac{1}{7}e^{3t} & \dfrac{3}{7}e^{t/2}- \dfrac{3}{7}e^{3t} \\ \dfrac{2}{7}e^{t/2}- \dfrac{2}{7}e^{3t}  & \dfrac{1}{7}e^{t/2} + \dfrac{6}{7}e^{3t}  \end{bmatrix}
+e^{At}x(0) = \begin{bmatrix} 3e^{t/2} + e^{3t} \\ e^{t/2}-2e^{3t} \end{bmatrix}
+e^{A(t-s)} = \begin{bmatrix} \dfrac{6}{7}e^{(t-s)/2} + \dfrac{1}{7}e^{3(t-s)} & \dfrac{3}{7}e^{(t-s)/2}- \dfrac{3}{7}e^{3(t-s)} \\ \dfrac{2}{7}e^{(t-s)/2}- \dfrac{2}{7}e^{3(t-s)}  & \dfrac{1}{7}e^{(t-s)/2} + \dfrac{6}{7}e^{3(t-s)}  \end{bmatrix}
+e^{A(t-s)} \cdot f(s) = \begin{bmatrix} \dfrac{6}{7}e^{(t-s)/2} + \dfrac{1}{7}e^{3(t-s)} & \dfrac{3}{7}e^{(t-s)/2}- \dfrac{3}{7}e^{3(t-s)} \\ \dfrac{2}{7}e^{(t-s)/2}- \dfrac{2}{7}e^{3(t-s)}  & \dfrac{1}{7}e^{(t-s)/2} + \dfrac{6}{7}e^{3(t-s)}  \end{bmatrix} \cdot \begin{bmatrix} e^{2s} \\ e^{-s} \end{bmatrix}
+\displaystyle \int_0^t e^{A(t-s)} \cdot f(s)~ds = \begin{bmatrix} \dfrac{3}{7}e^{2t} -\dfrac{5}{28}e^{-t} -\dfrac{2}{7}e^{t/2} + \dfrac{1}{28}e^{3t} \\  \dfrac{10}{21}e^{2t} -\dfrac{13}{42}e^{-t} -\dfrac{2}{21}e^{t/2} - \dfrac{1}{14}e^{3t} \end{bmatrix}
+\displaystyle x(t) = e^{At}x(0) + \int_0^t e^{A(t-s)} \cdot f(s)~ds = \begin{bmatrix} 3e^{t/2} + e^{3t} \\ e^{t/2}-2e^{3t} \end{bmatrix} + \begin{bmatrix} \dfrac{3}{7}e^{2t} -\dfrac{5}{28}e^{-t} -\dfrac{2}{7}e^{t/2} + \dfrac{1}{28}e^{3t} \\  \dfrac{10}{21}e^{2t} -\dfrac{13}{42}e^{-t} -\dfrac{2}{21}e^{t/2} - \dfrac{1}{14}e^{3t} \end{bmatrix} = \begin{bmatrix} \dfrac{3}{7}e^{2t} -\dfrac{5}{28}e^{-t} +\dfrac{19}{7}e^{t/2} + \dfrac{29}{28}e^{3t} \\  \dfrac{10}{21}e^{2t} -\dfrac{13}{42}e^{-t} +\dfrac{19}{21}e^{t/2} - \dfrac{29}{14}e^{3t} \end{bmatrix}

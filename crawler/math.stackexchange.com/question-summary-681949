@@ -1,0 +1,33 @@
+\sqrt{8}=1+\dfrac34+\dfrac{3\cdot5}{4\cdot8}+\dfrac{3\cdot5\cdot7}{4\cdot8\cdot12}+\ldots
+(1+x)^{\alpha}
+x=0
+f(x)=(1+x)^{\alpha}
+x
+\alpha(1+x)^{\alpha-1}
+\alpha(\alpha-1)(1+x)^{\alpha-2}
+n
+\frac{d^n}{dx^n} (1+x)^{\alpha} = \alpha(\alpha-1)\cdots(\alpha-n+1)(1+x)^{\alpha-n}
+\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} x^n= \sum_{n=0}^\infty \frac{\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-n+1)}{n!} x^n
+\alpha
+n
+{\alpha\choose n}
+\alpha
+1
+(1+x)^{\alpha}
+(1+x)^{\alpha} = \sum_{n=0}^\infty {\alpha\choose n} x^n
+|x|<1
+x=-\frac{1}{2}
+\alpha=-3/2
+{-3/2\choose n}=\frac{(-1)^n}{n!2^n} 3\cdot 5\cdots (2n+1)
+\begin{align} \sqrt{8} &=(1-1/2)^{-3/2} = \sum_{n=0}^\infty \frac{(-1)^n}{n!2^n} 3\cdot 5\cdots (2n+1) \frac{1}{(-2)^n} = \sum_{n=0}^\infty \frac{3\cdot 5\cdots (2n+1)}{n! 4^n}\\ &= 1 + \frac{3}{4} + \frac{3\cdot 5}{4\cdot 8} + \frac{3\cdot 5\cdot 7}{4\cdot 8\cdot 12} + \cdots \end{align} 
+\displaystyle (1 + x)^{\alpha} = \sum_{n = 0}^{\infty} \binom{\alpha}{n}x^n
+|x| < 1
+s(x)
+\begin{align} (1 + x)s'(x) &= (1 + x)\sum_{n = 0}^{\infty} n\binom{\alpha}{n}x^{n-1} \\ &= \sum_{n = 0}^{\infty} (n+1)\binom{\alpha}{n+1}x^n + \sum_{n = 0}^{\infty}n\binom{\alpha}{n}x^n \\ &= \sum_{n = 0}^{\infty}  \left[(n+1)\binom{\alpha}{n+1} + n\binom{\alpha}{n}\right]x^n \\ &= \alpha \sum_{n = 0}^{\infty} \binom{\alpha}{n}x^n = \alpha \; s(x) \end{align}
+f(x) := (1+x)^{-\alpha} s(x)
+\displaystyle f'(x) = -\alpha(1+x)^{-\alpha - 1} s(x) + (1+x)^{-\alpha} s'(x) = -(1+x)^{-\alpha} s'(x) + (1+x)^{-\alpha} s'(x) = 0
+f(x)
+f(0) = 1
+f(x) = 1
+(1+x)^{-\alpha} s(x) = 1
+(1+x)^{\alpha}

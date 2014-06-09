@@ -1,0 +1,23 @@
+A
+\mathbf{b}
+c
+x_0
+\mathbf{x_0} + \alpha \mathbf{d_0}
+Q(\mathbf{x})
+Q(\mathbf{x}) = \tfrac{1}{2}\mathbf{x}^TA\mathbf{x} - \mathbf{b}^T\mathbf{x} + c
+Q'(\mathbf{x}) = 0
+A\mathbf{\tilde{x}} - \mathbf{b} = 0
+\mathbf{\tilde{x}} = A^{-1} \mathbf{b}
+x_{n+1} = x_n - \alpha f'(x_n)
+\mathbf{x_1} = \mathbf{x_0} + \alpha (A\mathbf{x_0}-\mathbf{b})
+\mathbf{x_1} = \mathbf{\tilde{x}}
+\mathbf{x_0} + \alpha (A\mathbf{x_0}-\mathbf{b}) = A^{-1} \mathbf{b} \ \  \ \ \ \ \  \forall \mathbf{x_0},\alpha \in \mathbb{R}
+A
+Ax=b
+x_1
+Ax_0-b
+A
+Ax_0-b=0
+Ax_0-b
+A
+ 0=Ax_1-b=A(x_0 - \alpha(Ax_0-b))-b = (I-\alpha A)(Ax_0-b) 

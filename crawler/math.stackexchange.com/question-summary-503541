@@ -1,0 +1,11 @@
+e^{tA}
+\begin{cases}  & \text{  } \dot{x}(t)=\dfrac{dx}{dt}= 4x-y\\   & \text{  } \dot{y}(t)=\dfrac{dy}{dt}= 3x+y-z\\   & \text{  } \dot{z}(t)=\dfrac{dz}{dt}= x+z \end{cases} \tag{I}
+v=\begin{bmatrix} x\\  y\\  z\\ \end{bmatrix}
+A=\begin{pmatrix}  & 4 &-1&0 \\   & 3 &1&-1 \\   & 1 & 0&1 \end{pmatrix}
+\dot{v}=Av
+\left | A-\lambda I \right |=0 \implies \lambda_{1,2,3}=2
+e^{tA}=P\cdot e^{tJ}\cdot P^{-1}
+e^{tJ}(2)=e^{tJ^1}\cdot \exp(2t)=\exp(2t)\cdot \begin{pmatrix}  & 1 &t&\dfrac{t^2}{2} \\   & 0 &1&t \\   & 0 &0&1  \end{pmatrix}
+P
+P^{-1}
+e^{tA} = \dfrac{e^{2 t}}{2}\begin{bmatrix} t^2+4 t+2 & -t^2-2 t & t^2 \\ 2 (t^2+3 t) & -2 (t^2+t-1) & 2 (t^2-t) \\ t^2+2 t & -t^2 & t^2-2 t+2 \end{bmatrix}

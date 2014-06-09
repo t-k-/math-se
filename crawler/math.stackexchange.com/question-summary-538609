@@ -1,0 +1,15 @@
+A_n,n\in\mathbb{N}
+E_m, m\geq 1
+ A^+:=\limsup_{n\to\infty}A_n:=\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty}A_k,~~~~~E_m:=\bigcup_{n\geq m}A_n. 
+ E_m=A^+\uplus\biguplus_{n\geq m}(E_n\setminus E_{n+1}). 
+E_m
+ E_m=A_m\uplus\biguplus_{i=m+1}^{\infty}A_i\setminus\bigcup_{j=m}^{i-1}A_j=A_m\uplus\biguplus_{i=m+1}^{\infty}\bigcap_{j=m}^{i-1}A_i\setminus A_j 
+ A^+=\bigcap_{n=1}^{\infty}E_n. 
+\subseteq
+x\in A_n~\forall~n\geq m
+x\in\bigcup_{k=n}^{\infty}A_k~\forall~n\in\mathbb{N}
+x\in\bigcap_{n\geq 1}\bigcup_{k\geq n}A_k=A^+
+ x\in\bigcup_{j\geq n}A_j\wedge x\in\bigcup_{i\geq n+1}A_i~\forall~n\in\mathbb{N}\\\Rightarrow\not\exists~n\geq m: x\notin E_n\setminus E_{n+1}\\\Rightarrow x\notin\biguplus_{n\geq m}(E_n\setminus E_{n+1}) 
+\supseteq
+x\in A^+\uplus\biguplus_{n\geq m}(E_n\setminus E_{n+1})
+\Box

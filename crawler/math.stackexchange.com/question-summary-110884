@@ -1,0 +1,24 @@
+x=\sinh(\theta)
+y=\cosh(\theta)
+(1+x^{2})y'-2xy=(1+x^{2})^{2}
+y''+Py'+Qy=F(x) \tag{1}
+y = A u(x) + B v(x) \tag{2}
+A = A(x)
+B = B(x)
+y
+y' = A'u\left( x \right) + B'v\left( x \right) + Au'\left( x \right) + Bv'\left( x \right) \tag{3}
+A'u\left( x \right) + B'v\left( x \right)=0 \tag{4}
+\begin{align*} y' &= Au'\left( x \right) + Bv'\left( x \right) \\ y'' &= Au''\left( x \right) + Bv''\left( x \right) + A'u'\left( x \right) + B'v'\left( x \right)\end{align*}\tag{5}
+Au''\left( x \right) + Bv''\left( x \right) + A'u'\left( x \right) + B'v'\left( x \right) + P\left( {Au'\left( x \right) + Bv'\left( x \right)} \right) + Q\left( {Au\left( x \right) + Bv\left( x \right)} \right) = F(x).
+y
+Au''\left( x \right) + Bv''\left( x \right) + P\left( {Au'\left( x \right) + Bv'\left( x \right)} \right) + Q\left( {Au\left( x \right) + Bv\left( x \right)} \right) = 0 \tag{7}
+\begin{align*}   A'u'\left( x \right) + B'v'\left( x \right) &= F(x) \cr    A'u\left( x \right) + B'v\left( x \right) &= 0 \end{align*}. \tag{8}
+\eqalign{     & A' = \frac{{ - vF}}{{uv' - u'v}}  \cr      & B' = \frac{{uF}}{{uv' - u'v}} \cr} 
+u
+v
+W(u,v) = uv'-u'v
+\eqalign{     & A' = \frac{{ - vF}}{{W\left( {u,v} \right)}}  \cr      & B' = \frac{{uF}}{{W\left( {u,v} \right)}} \cr} 
+\eqalign{     & A =  - \int {\frac{{vF}}{{W\left( {u,v} \right)}}} dx +C_1 \cr      & B = \int {\frac{{uF}}{{W\left( {u,v} \right)}}} dx +C_2 \cr} 
+y = v\left( x \right)\int {\frac{{uF}}{{W\left( {u,v} \right)}}} dx - u\left( x \right)\int {\frac{{vF}}{{W\left( {u,v} \right)}}} dx + C_1v\left( x \right) - {C_2}u\left( x \right)
+y = v\int {\frac{{u \cdot F}}{W}} dx - u\int {\frac{{v \cdot F}}{W}} dx + C_1v - C_2u
+C_1v - C_2u

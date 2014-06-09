@@ -1,0 +1,29 @@
+ f(x;\lambda)=\begin{cases} \lambda e^{-\lambda x} &\text{if } x \geq 0 \\ 0 & \text{if } x<0 \end{cases} 
+ \mathcal{L}(\lambda,x_1,\dots,x_n)=\prod_{i=1}^n f(x_i,\lambda)=\prod_{i=1}^n \lambda e^{-\lambda x}=\lambda^ne^{-\lambda\sum_{i=1}^nx_i} 
+ \frac{d\ln\left(\mathcal{L}(\lambda,x_1,\dots,x_n)\right)}{d\lambda}\overset{!}{=}0 
+\lambda
+ \begin{align} \frac{d\ln\left(\mathcal{L}(\lambda,x_1,\dots,x_n)\right)}{d\lambda} &= \frac{d\ln\left(\lambda^ne^{-\lambda\sum_{i=1}^nx_i}\right)}{d\lambda} \\ &= \frac{d\ln\left(n\ln(\lambda)-\lambda\sum_{i=1}^n x_i\right)}{d\lambda} \\ &= \frac{n}{\lambda}-\sum_{i=1}^n x_i \end{align} 
+\lambda = \frac{n}{\sum_{i=1}^n x_i}
+ \lim_{n\to\infty}\mathbb{P}\left(\mathcal{L}(\lambda,x_1,\dots,x_n)-\lambda\right)=0 
+ \Lambda_n=\frac{n}{\sum\limits_{k=1}^nX_k} 
+ P\left(\lim\sup_{n\to\infty}\left|\frac{1}{\Lambda_n}-\frac{1}{\lambda}\right|=0\right)=P\left(\lim\sup_{n\to\infty}\left|\frac{\sum\limits_{k=1}^nX_k}{n}-\frac{1}{\lambda}\right|=0\right)=1 
+\Lambda_n
+\lambda
+\lambda
+(X_n)_{n\geqslant1}
+\lambda
+\Lambda_n\to\lambda
+\Lambda_n
+\varepsilon
+\mathrm P(|\Lambda_n-\lambda|\geqslant\varepsilon)\to0
+n\to\infty
+ \Lambda_n=\frac{n}{\sum\limits_{k=1}^nX_k}. 
+\frac1{\Lambda_n}\to\frac1\lambda
+n\to\infty
+E\left\{ x\right\}=\frac{1}{\lambda}
+E\left\{ x^2\right\}=\frac{2}{\lambda^2}
+x_i
+\lim_{n\rightarrow \infty} E\{\hat\lambda - \lambda\}=0
+ \begin{aligned} E\left\{ \frac{n}{\sum_{i=1}^n x_i} \right\} - \lambda=  \frac{n}{E\left\{\sum_{i=1}^n x_i \right\}} - \lambda=  \frac{n}{nE\left\{ x\right\}} - \lambda=  \frac{n}{nE\left\{ x\right\}} - \lambda= \lambda - \lambda=0 \end{aligned} 
+\lim_{n\rightarrow \infty}E\left\{\left(\hat\lambda - E\{\hat\lambda\}\right)^2\right\}=0 
+ \begin{aligned} E\left\{\left(\hat\lambda - E\{\hat\lambda\}\right)^2\right\}&=E\left\{\hat\lambda^2\right\} - E\left\{\hat\lambda\right\}^2=E\left\{\frac{n^2}{(\sum_{i=1}^n x_i)(\sum_{i=1}^n x_i)}\right\} -\lambda^2 \\ &=  E\left\{\frac{n^2}{\sum_{i,j=1}^n x_ix_j}\right\} -\lambda^2=  E\left\{\frac{n^2}{\sum_{i=j} x_ix_j +\sum_{i\neq j}^n x_ix_j}\right\} -\lambda^2 \\ &=  \frac{n^2}{nE\left\{x^2\right\}+ n(n-1) E\left\{x\right\}^2} -\lambda^2  =  \frac{n}{\frac{2}{\lambda^2}+  \frac{n-1}{\lambda^2}} -\lambda^2 =\frac{n}{n+1}\lambda^2-\lambda^2\\ &\Rightarrow  \lim_{n\rightarrow \infty} \frac{n}{n+1}\lambda^2-\lambda^2 =0 \end{aligned} 

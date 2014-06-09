@@ -1,0 +1,11 @@
+\int_{-\infty}^{\infty} \exp(-\log^2(|\omega|/\omega_0)) \; \exp(i \omega t) \; d\omega
+\omega_0 > 0
+\omega
+\infty
+\int_{-\infty}^\infty \exp(-\log^2 \vert \omega/\omega_0 \vert ) \exp(i \omega t) \mathrm{d} \omega = 2 \int_{0}^\infty \exp(-\log^2( \omega/\omega_0 ) ) \cos(\omega t) \mathrm{d} \omega = 2 \omega_0 \mathfrak{Re}\left( \mathcal{I}(\omega_0 t) \right)
+   \mathcal{F}(\omega_0, t) = \omega_0 \mathcal{I}(\omega_0 t) = \omega_0 \int_0^\infty \exp(-\log^2(\omega)) \exp( i \omega  \omega_0 t) \mathrm{d} \omega 
+\mathcal{I}(t)
+\mathcal{I}(t)
+t=0
+\begin{eqnarray}    \mathcal{I}(t) &=& \int_0^\infty \exp(-\log^2(\omega)) \exp( i \omega t) \mathrm{d} \omega \stackrel{\omega = \exp(u)}{=} \int_{-\infty}^\infty \exp(u-u^2) \exp(i t \mathrm{e}^u ) \mathrm{d} u   \\    & \stackrel{\mathrm{formal}}{=}& \sum_{k=0}^\infty \frac{(i t)^k}{k!} \int_{-\infty}^\infty \exp( (k+1) u - u^2) \mathrm{d} u = \sum_{k=0}^\infty \frac{(i t)^k}{k!} \exp\left( \frac{k^2}{4} \right) \end{eqnarray} 
+   \mathcal{I}^{(k)}(0) = i^k \int_0^\infty \omega^k \exp(-\log^2 \omega) \mathrm{d} \omega \stackrel{\omega = \exp(u)} = i^k \exp\left( \frac{k^2}{4} \right)  

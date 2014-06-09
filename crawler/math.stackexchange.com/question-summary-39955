@@ -1,0 +1,28 @@
+j \in \mathbb{N}
+n_j \sim \mbox{Poisson}(\alpha_j)
+\displaystyle \alpha_j:=\frac{\nu}{\lambda j} \left (\frac{\lambda}{\mu} \right )^j
+n_j
+j
+\displaystyle N:=\sum_j n_j
+\displaystyle M:=\sum_j j n_j
+\displaystyle E(N|M)=\sum_{i=1}^M \frac{\rho}{\rho+i-1}
+\displaystyle \rho:=\frac{\nu}{\lambda}
+\beta = \lambda/\mu
+P(x,y)
+x^N y^M
+N,M
+\exp(\alpha_j(xy^j-1))
+x
+x
+x = 1
+x=1
+Q(y)
+(1-\beta y)^{-\rho}
+y^M
+ P = \exp\left( \sum_{j=1}^\infty \frac{\rho}{j} \beta^j (xy^j - 1) \right). 
+ \sum_{j=1}^\infty \frac{\rho}{j} \beta^j = -\rho\log(1-\beta). 
+ P = (1-\beta)^\rho \exp\left( x \sum_{j=1}^\infty \frac{\rho}{j} (\beta y)^j \right) = (1-\beta)^\rho \exp(-x\rho\log(1-\beta y)). 
+ \frac{\partial}{\partial x} P = (1-\beta)^\rho \exp(-x\rho\log(1-\beta y)) (-\rho \log(1-\beta y)).
+ Q = \rho (1-\beta)^\rho (1-\beta y)^{-\rho} \sum_{j=1}^\infty \frac{\beta^j y^j}{j}. 
+ Q = \rho (1-\beta)^\rho \sum_{i=0}^\infty \binom{i+\rho-1}{\rho-1} \beta^i y^i \sum_{j=1}^\infty \frac{\beta^j y^j}{j}. 
+ \rho (1-\beta)^\rho \sum_{j=1}^M \binom{M-j+\rho-1}{\rho-1} \beta^{M-j} \frac{\beta^j}{j} = \rho (1-\beta)^\rho \beta^M \sum_{j=1}^M \frac{\binom{M-j+\rho-1}{\rho-1}}{j}. 

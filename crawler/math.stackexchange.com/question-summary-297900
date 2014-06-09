@@ -1,0 +1,14 @@
+f(\pi).
+ f(x) = \sum_{k\ge 1} e^{- k^2 x} \left(\pi k^2 - \frac{1}{4} \right),
+f^*(s)
+f(x)
+x=\pi
+s=3/2
+s=1/2
+x=\pi
+ f^*(s) = \mathfrak{M}\left(f(x); s\right) =  \Gamma(s)  \sum_{k\ge 1} \left(\frac{\pi}{k^{2(s-1)}} - \frac{1}{4} \frac{1}{k^{2s}} \right) = \Gamma(s) \left(\pi \zeta(2(s-1)) - \frac{1}{4} \zeta(2s) \right).
+\frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} f^*(s) x^{-s} ds = \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \Gamma(s) \left(\pi \zeta(2(s-1)) - \frac{1}{4} \zeta(2s) \right) x^{-s} ds.
+ \operatorname{Res}\left(\Gamma(s) \pi \zeta(2(s-1)) x^{-s}; s=3/2\right) = 1/2\,{\frac {\Gamma \left( 3/2 \right) \pi }{{x}^{3/2}}}.
+ \operatorname{Res}\left(\Gamma(s) \frac{1}{4} \zeta(2s) x^{-s}; s=1/2\right) = 1/8\,{\frac {\Gamma \left( 1/2 \right) }{\sqrt {x}}}.
+ f(x) = 1/2\,{\frac {\Gamma \left( 3/2 \right) \pi }{{x}^{3/2}}} -  1/8\,{\frac {\Gamma \left( 1/2 \right) }{\sqrt {x}}}.
+\frac{1}{\sqrt{\pi}} \left(1/2\Gamma(3/2)-1/8\Gamma(1/2)\right) = \frac{1}{\sqrt{\pi}} \left(1/4\Gamma(1/2)-1/8\Gamma(1/2)\right) = \frac{1}{8} \frac{1}{\sqrt{\pi}} \Gamma(1/2) = \frac{1}{8}.

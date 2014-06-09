@@ -1,0 +1,83 @@
+P :  V \rightarrow V
+\mathbf u_i \in V
+P(\mathbf v) = (\mathbf u_i \otimes \mathbf u_i) \cdot \mathbf v
+\left(\sum_i \mathbf u_i \otimes \mathbf u_i\right)\cdot\mathbf v = \sum_i \mathbf u_i (\mathbf u_i \cdot\mathbf v) := P_{tot}(\mathbf v)
+P_{tot}(\mathbf v)\neq 0_V
+u_i
+Proj_{u_i}(v) = (u_i \cdot v)u_i
+u_i \cdot v
+u_i
+v
+u_i
+u_i
+u_i
+u_i
+u_i
+v
+L(v) = \sum_{i=1}^k Proj_{u_i}(v)
+v \neq 0
+v \notin \text{span}\{u_1, \dots , u_k \}
+v=u_j
+j \in \{ 1,2,\dots , k\}
+\{ u_1, \dots u_k\}
+r <k
+\beta = \{ u_1, \dots , u_r \}
+W = \text{span} \{ u_1, \dots , u_k \}
+\beta
+\beta \cup \{ w_1, \dots, w_{n-r} \}=\gamma
+W
+\gamma
+w_i \cdot u_j=0
+w_i \cdot w_j = \delta_{ij}
+v = x+y
+x \in W
+y \in W^{\perp} = \text{span}\{ w_1, \dots ,w_{n-r}\}
+L
+L|_W = Id_W
+L|_{W^{\perp}}=0
+P \neq L
+P
+v \notin W
+P(v)=0
+v \in W
+v = \sum_{j=1}^k v_j u_j
+L(v)=v
+u_1 = -\sum_{j=2}^k u_j
+u_1
+ \sum_{i=1}^k u_i=u_1+ \cdots u_k=0  
+ L(v) = \sum_{i=1}^k Proj_{u_i}(v) = \sum_{i=1}^k (u_i \cdot v)u_i 
+ L(u_j) = \sum_{i=1}^k (u_i \cdot j)u_i = \sum_{i=1}^k \delta_{ij}u_i = u_j 
+ L(v) = L(x+y) = L(x)+L(y) 
+ L(x) = L( \sum_{i=1}^r x_iu_i) = \sum_{i=1}^r x_iL( u_i)=\sum_{i=1}^r x_iu_i=x. 
+ L(y) = L( \sum_{j=1}^{n-r} y_jw_j) = \sum_{j=1}^{n-r} y_j \sum_{i=1}^r(u_i \cdot w_j)u_i=\sum_{j=1}^{n-r} y_j \sum_{i=1}^r(0)u_i=0. 
+ P(v) = \sum_{i=1}^k (u_i \cdot v)u_i=\sum_{i=1}^r (u_i \cdot v)u_i+\sum_{i=r+1}^k (u_i \cdot v)u_i=L(v) + \sum_{i=r+1}^k (u_i \cdot v)u_i
+P_{tot}(\mathbf v) = \lambda \mathbf v
+\dim(V) = d
+U^\prime = \{\mathbf u_1,...\mathbf u_d\}
+U = \{\mathbf u_1,...\mathbf u_d, -\mathbf u_1, ... -\mathbf u_d\}
+\sum_i \mathbf u_i = 0_v
+|\mathbf u_i| = 1 \,\,\forall i
+V^\prime \subset V
+V
+\forall \,\, \mathbf v \in V^\prime 
+\mathbf v \cdot \mathbf u_1 = 0
+P_{tot}
+P_{tot}(\mathbf v) = 2\sum_{i=2}^d (\mathbf u_i \cdot \mathbf v) \mathbf u_i.
+\mathbf u_1\cdot\mathbf v=0
+(\mathbf u_{i+d}\cdot\mathbf v)\mathbf u_{i+d} = (-\mathbf u_{i}\cdot\mathbf v)(-\mathbf u_{i}) = (\mathbf u_{i}\cdot\mathbf v)\mathbf u_{i}
+d<i\leq n
+\text{span}(P_{tot}(V^\prime)) \subset \text{span}(V)
+\mathbf u_1
+U^\prime
+V
+\mathbf w \in \text{span}(P_{tot}(V^\prime))
+\mathbf w = \sum_{j=2}^d w^j\mathbf u_j \neq 0
+\mathbf w = \lambda \mathbf v
+\mathbf w \cdot \mathbf u_1 = 0
+\mathbf w \cdot \mathbf u_1 = \sum_{j=2}^d w^j\mathbf u_j\cdot \mathbf u_1,
+U^\prime
+\mathbf w \cdot \mathbf u_1 = w^2\mathbf u_1 \cdot \mathbf u_2 \neq 0
+\mathbf w = P_{tot}(\mathbf v)
+\mathbf w = \lambda \mathbf v
+P_{tot}(\mathbf v) = \frac{n}{2}\mathbf v
+\mathbb R^2

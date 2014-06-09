@@ -1,0 +1,46 @@
+F''(x)
+F: \mathbb R ^n \rightarrow \mathbb R^m
+ \left( \begin{array}{ccc} \frac{\partial f_1}{\partial x_1}(x) & ... & \frac{\partial f_1}{\partial x_n}(x) \\ ... & ... & ... \\ \frac{\partial f_m}{\partial x_1}(x) & ... & \frac{\partial f_m}{\partial x_n}(x) \end{array} \right) 
+G: \mathbb R^n \rightarrow \mathbb R^{n \times m}
+x
+f:\mathbb{R}^n\to\mathbb{R}^m
+f':\mathbb{R}^n\to L(\mathbb{R}^n,\mathbb{R}^m)
+ L(\mathbb{R}^n,\mathbb{R}^m)
+\mathbb{R}^n
+\mathbb{R}^m
+M_{n\times m}
+\mathbb{R}^n\times \mathbb{R}^m
+\mathbb{R}^{n+m}
+f':\mathbb{R}^n\to\mathbb{R}^{n+m}
+f'(x)
+x
+f'(x)u=A_x u
+A_x
+f'':\mathbb{R}^n\to L(\mathbb{R}^n, L(\mathbb{R}^n,\mathbb{R}^m))
+f''
+x
+f''(x)
+\mathbb{R}^n
+ L(\mathbb{R}^n,\mathbb{R}^m)
+g(x)
+g(x):\mathbb{R}^n\times \mathbb{R}^n\to\mathbb{R}^m
+g(x)uv=f''(x)uv
+f''(x)uv=[f'(x)u]'v
+f''(x)
+f''(x)uv=[A_xu]'v
+[A_xu]'=\left( \begin{array}{ccc} \frac{\partial \sum_{i=1}^n\frac{\partial f_1}{\partial x_i}u_i}{\partial x_1} & ... & \frac{\partial \sum_{i=1}^n\frac{\partial f_1}{\partial x_i}u_i}{\partial x_n} \\  ... & ... & ... \\ \frac{\partial \sum_{i=1}^n\frac{\partial f_m}{\partial x_i}u_i}{\partial x_1} & ... &\frac{\partial \sum_{i=1}^n\frac{\partial f_m}{\partial x_i}u_i}{\partial x_n} \end{array} \right)
+f(x,y)=(x^2-y,x+y^2)
+f'(x,y)= \left( \begin{array}{cc} 2x & -1  \\ 1 & 2y \end{array} \right) = (2x,1,-1,2y)
+f'(x,y)(u,v)=\left( \begin{array}{cc} 2x & -1  \\ 1 & 2y \end{array} \right)\left( \begin{array}{c} u   \\ v  \end{array} \right)
+f''(x,y)(u,v)(z,w)=[f'(x,y)(u,v)]'(z,w)
+f'(x,y)(u,v)=(2xu-v,u+2yv)
+(u,v)
+f''(x,y)(u,v)=\left( \begin{array}{cc} 2u & 0  \\ 0 & 2v \end{array} \right)
+f''(x,y)(u,v)(z,w)=(2uz,2vw)
+f^{(n)}
+n
+(n+1)
+N
+(N+1)
+G(x) =\nabla^2 f(x)
+G_{ijk} = \frac{\partial^2}{\partial x_j\partial x_k}f_i(x)

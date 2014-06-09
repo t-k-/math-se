@@ -1,0 +1,19 @@
+f_Y(y) = \begin{cases}4y^3, & 0 < y < 1, \\  0, &\text{elsewhere}.\end{cases}
+-2 \ln (Y^4)
+X_{(2)}^2
+W:=-2\ln(Y^4)
+0<y
+\chi^2_{(2)}
+y>0
+\begin{align*}F_W(y)&=P(W\le y)=P(-2\ln(Y^4)\le y)=P(-8\ln Y \le y)=P(\ln Y \ge \frac{y}{-8})=\\&=P(Y\ge e^{-\frac{y}{8}})=1-P(Y\le e^{-\frac{y}{8}})=\\&=1-F_Y(e^{-\frac{y}{8}})\end{align*}
+\begin{align*}f_W(y)&=\frac{d}{dy}F_W(y)=\frac{d}{dy}\left(1-F_Y(e^{-\frac{y}{8}})\right)=-f_y(e^{-\frac{y}{8}})\cdot(e^{-\frac{y}{8}})'=\frac{1}{8}\cdot4\left(e^{-\frac{y}{8}}\right)^3e^{-\frac{y}{8}}=\\&\\&=\frac{1}{2}\left(e^{-\frac{y}{8}}\right)^4=\frac{1}{2^{\frac{2}{2}}\Gamma(\frac{2}{2})}y^{\frac{2}{2}-1}e^{-\frac{y}{2}}\end{align*}
+g(x) = \frac{f\bigl( h^{-1}(x) \bigr)}{\bigl|h'\bigl(h^{-1}(x)\bigr)\bigr|},
+f
+g
+h
+h(y)=-2 \log y^4=-8\log y
+h
+h^{-1}
+\exp(-x/8)
+g(x)
+\chi_2^2

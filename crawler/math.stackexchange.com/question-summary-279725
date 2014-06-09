@@ -1,0 +1,9 @@
+\int_{[0,1]×[0,1]} \max\{x, y\} dxdy
+ \begin{align*} \int_0^1 \int_0^1 \max(x, y) dx dy &= \int_0^1 \int_0^y y dx dy + \int_0^1 \int_y^1 x dx dy \\ &= \int_0^1 y^2 dy + \int_0^1\frac{1 - y^2}{2} dy \\ &= \frac{1}{2}\int_0^1 (y^2 + 1) dy \\ &= \frac{1}{2}\left( \frac{1}{3} + 1\right) = \frac{2}{3} \end{align*}
+[0,1]^n
+n
+I_n = \int_{[0,1]^n} \max\{x_1,x_2,\ldots,x_n\} dx_1 dx_2 \ldots dx_n
+I_n = n \int_{x_1=0}^1 \int_{0\leq x_2,x_3,\ldots,x_n \leq x_1} x_1 dx_1 dx_2 \cdots dx_n = n \int_{x_1=0}^1 x_1^n dx_1 = \dfrac{n}{n+1}
+\max\{x_1,x_2,\ldots,x_n\} = \begin{cases} x_1; & x_k \leq x_1\\ x_2; & x_k \leq x_2\\ \vdots& \vdots\\  x_n; & x_k \leq x_n\end{cases}
+x > y
+x \le y

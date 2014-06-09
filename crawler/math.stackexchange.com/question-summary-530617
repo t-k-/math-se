@@ -1,0 +1,77 @@
+d=(a,b)
+a=1109
+b=4999
+d
+a
+b
+d=1
+d
+a
+b
+2=-65*4999+293*1109
+1=522*4999-2353*1109
+d
+a
+b
+ 2353 \cdot 1109 - 522 \cdot 4999 = -1.   
+ -2353 \cdot 1109 + 522 \cdot 4999 = 1.   
+a_i,
+ \langle a_0; a_1,a_2,a_3,a_4,a_5 \rangle. 
+x_0 = \frac{4999}{1109} \approx 4.5077664563,
+x_0 - \lfloor x_0 \rfloor \approx 0.5077664563,
+ \langle 4; 1,1,32,8,2 \rangle. 
+ a_0 = \lfloor x_0 \rfloor = 4.
+ x_1 = \frac{1}{x_0 - \lfloor x_0 \rfloor} \approx  \frac{1}{0.5077664563} \approx 1.969804617  
+x_1 - \lfloor x_1 \rfloor \approx 0.969804617,
+ a_1 = \lfloor x_1 \rfloor = 1.
+ x_2 = \frac{1}{x_1 - \lfloor x_1 \rfloor} \approx  \frac{1}{0.969804617} \approx 1.031135532.  
+x_2 - \lfloor x_2 \rfloor \approx 0.031135532,
+ a_2 = \lfloor x_2 \rfloor = 1.
+ x_3 = \frac{1}{x_2 - \lfloor x_2 \rfloor} \approx  \frac{1}{0.031135532} \approx 32.11764617.  
+x_3 - \lfloor x_3 \rfloor \approx 0.11764617,
+ a_3 = \lfloor x_3 \rfloor = 32.
+ x_4 = \frac{1}{x_3 - \lfloor x_3 \rfloor} \approx  \frac{1}{0.11764617} \approx 8.500064218.  
+ \frac{0}{1}, \; \frac{1}{0}, \; \color{magenta}{\frac{4}{}}, \; \frac{4}{1}, \; \color{magenta}{\frac{1}{}}, \; \frac{5}{1}, \; \color{magenta}{\frac{1}{}}, \; \frac{9}{2}, \; \color{magenta}{\frac{32}{}}, \;  \frac{293}{65}, \; \color{magenta}{\frac{8}{}}, \; \frac{2353}{522}, \; \color{magenta}{\frac{2}{}}, \;\frac{4999}{1109}.
+ 0 + 1 \cdot 4 = 4, \;  1 + 4 \cdot 1 = 5, \;  4 + 5 \cdot 1 = 9, \;  5 + 9 \cdot 32 = 293, \;  9 + 293 \cdot 8 = 2353, \;  293 + 2353 \cdot 2 = 4999.  
+ 1 + 0 \cdot 4 = 1, \;  0 + 1 \cdot 1 = 1, \;  1 + 1 \cdot 1 = 2, \;  1 + 2 \cdot 32 = 65, \;  2 + 65 \cdot 8 = 522, \;  65 + 522 \cdot 2 = 1109.  
+  x_0 = \frac{4999}{1109} = 4 + \frac{563}{1109},  
+  x_1 = \frac{1109}{563} = 1 + \frac{546}{563},  
+  x_2 = \frac{563}{546} = 1 + \frac{17}{546},  
+  x_3 = \frac{546}{17} = 32 + \frac{2}{17},  
+  x_4 = \frac{17}{2} = 8 + \frac{1}{2},  
+  x_5 = \frac{2}{1} = 2.  
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}
+\pars{4}
+\pars{5}
+2
+ 8\times 546 - 17 = 256\times 17 - \color{#ff0000}{\large 1} \quad\imp\quad 8\times 546 = 257\times 17 - \color{#ff0000}{\large 1}\tag{7} 
+\pars{3}
+\pars{7}
+17
+ 257\times 563 - 8\times 546 = 257\times 546 + \color{#ff0000}{\large 1} \quad\imp\quad 257\times 563 = 265\times 546 + \color{#ff0000}{\large 1}\tag{8} 
+\pars{2}
+\pars{8}
+546
+ \!\!\!\!\!\!\!1109\times 265 - 257\times 563 = 265\times 563 - \color{#ff0000}{\large 1} \quad\imp\quad 1109\times 265 = 522\times 563 - \color{#ff0000}{\large 1}\tag{9} 
+\pars{1}
+\pars{9}
+563
+ 4999\times 522 - 1109\times 265 = 2088\times 1109 + \color{#ff0000}{\large 1} \quad\imp\quad \color{#ff0000}{\large1 = 522\times \color{#0000ff}{4999} - 2353\times \color{#0000ff}{1109}}  
+4999=4*1109+563
+563=4999-4*1109=b-4a
+1109=1*563+546
+546=1109-563=a-(b-4a)=5a-b
+563=1*546+17
+17=563-546=(b-4a)-(5a-b)=2b-9a
+546=32*17+2
+2=546-32*17=(5a-b)-32(2b-9a)=293a-65b
+17=8*2+1
+1=17-8*2=(2b-9a)-8(293a-65b)=522b-2353a=522*4999-2353*1109
+4999=5*1109-546
+546=5*1109-4999=5a-b
+1109=2*546+17
+17=1109-2*546=a-2(5a-b)=2b-9a
+546=32*17+2
+2=546-32*17=(5a-b)-32(2b-9a)=293a-65b
+17=8*2+1
+1=17-8*2=(2b-9a)-8(293a-65b)=522b-2353a=522*4999-2353*1109

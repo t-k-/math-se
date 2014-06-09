@@ -1,0 +1,12 @@
+ \int_{-\infty}^{\infty} \! \left[\frac{\sin\left(x\right)}{x}\right]^n \, \mathrm{d}x. 
+n=1
+ I_n = \int_{-\infty}^{+\infty}\frac{\sin^n(x)}{x^n}dx = \frac{1}{(n-1)!}\int_{-\infty}^{+\infty}\frac{\frac{d^{n-1}}{dx^{n-1}}(\sin^n(x))}{x}dx.
+ \forall n\in\mathbb{N}_0,\quad \int_{-\infty}^{+\infty}\frac{\sin(nx)}{x}dx=\pi.
+\frac{d^{n-1}}{dx^{n-1}}\sin^n(x)=\frac{d^{n-1}}{dx^{n-1}}\left(\frac{e^{ix}-e^{-ix}}{2i}\right)^n = \frac{1}{(2i)^n}\frac{d^{n-1}}{dx^{n-1}}\left(\sum_{j=0}^{n}\binom{n}{j}(-1)^j e^{(n-2j)ix}\right) =\frac{1}{2^{n-1}}\sum_{j=0}^{\lfloor n/2 \rfloor}\binom{n}{j}(-1)^j (n-2j)^{n-1} \sin((n-2j)x) 
+I_n = \frac{\pi}{2^{n-1}(n-1)!}\sum_{j=0}^{\lfloor n/2 \rfloor}\binom{n}{j}(-1)^j (n-2j)^{n-1}.
+a
+b
+a\ge b>c, c=a-b \bmod 2, \lfloor x\rfloor
+0^0
+1
+ \int_0^\infty \frac{\sin^ax}{x^b}dx=\frac{\pi^{1-c}(-1)^{\lfloor(a-b)/2\rfloor}}{2^{a-c}(b-1)!}\sum_{k=0}^{\lfloor a/2\rfloor-c}(-1)^k\binom ak(a-2k)^{b-1}[\ln(a-2k)]^c \tag{37}

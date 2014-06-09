@@ -1,0 +1,36 @@
+T \in L(X,Y)
+\lim_{h \rightarrow 0} \frac{f(x_0 + hv) - f(x_0)}{h} = Tv
+v
+f(x_0+h)=f(x_0)+ Th + o(h)
+X
+f
+X
+f(x_0 + hv)
+v
+X
+\frac{f(x_0 + hv) - f(x_0)}{h}
+Tv
+\lVert v\rVert
+X
+X
+B_X = \{ v\in X : \lVert v\rVert \leqslant 1\}
+q(h) := \sup_{v \in B_X} \left\lVert \frac{f(x_0 + hv) - f(x_0)}{h} - Tv\right\rVert\tag{1}
+\lim\limits_{h\downarrow 0} q(h) = 0
+r(w) := f(x_0+w) - f(x_0) - Aw
+o(w)
+\lim_{w\to 0} \frac{r(w)}{\lVert w\rVert} = 0,
+\varepsilon > 0
+\delta > 0
+\lVert w\rVert < \delta \Rightarrow \lVert r(w)\rVert \leqslant \varepsilon\cdot \lVert w\rVert,
+w_0 = \frac{1}{\lVert w\rVert}\cdot w
+w \neq 0
+\sup_{\lVert w_0\rVert = 1,\, h < \delta} \left\lVert \frac{f(x_0 + hw_0) - f(x_0)}{h} - Aw_0\right\rVert \leqslant \varepsilon.\tag{2}
+v = t\cdot v_0
+\lVert v_0\rVert = 1
+t\in [0,1]
+(1)
+\begin{align} \left\lVert \frac{f(x_0 + htv_0)-f(x_0)}{h} - T(tv_0)\right\rVert &= t\cdot \left\lVert \frac{f(x_0+htv_0) - f(x_0)}{th} - Tv_0\right\rVert\\ &\leqslant \left\lVert \frac{f(x_0+htv_0) - f(x_0)}{th} - Tv_0\right\rVert, \end{align}
+\sup_{h < \delta} \sup_{\lVert v\rVert \leqslant 1}\left\lVert \frac{f(x_0+hv) - f(x_0)}{h} - Tv\right\rVert = \sup_{h < \delta} \sup_{\lVert v\rVert = 1}\left\lVert \frac{f(x_0+hv) - f(x_0)}{h} - Tv\right\rVert,\tag{3}
+\lim\limits_{h\downarrow 0} q(h) = 0
+(3)
+(2)

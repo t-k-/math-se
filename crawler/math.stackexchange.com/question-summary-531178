@@ -1,0 +1,28 @@
+z
+n
+A
+z_{i}
+\bar z_{i}
+\delta(g(x))=\sum_{i}\frac{\delta (x-x_{i})}{|g'(x_{i})|}
+p(z_1,z_2,...,\bar{z_1},...,\bar{z_n})
+\bar{z}Az = \sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}\bar{z_i}z_j = p(z,\bar{z})
+\bar{z}Az = b
+\int d\bar z\, dz\, \delta (\bar z \cdot A \cdot z-b)\,f(\bar z,z) = \int_Vf(\bar z, z)d\bar z\,dz
+V \subset \mathbb{C}^{2n}
+p(z,\bar z) -b
+n=1
+n
+A_{11}=a
+d\bar z d z \to 2 i dx dy \to 2 i r dr d\phi.
+\begin{eqnarray*} \int d\bar z\, dz\, \delta (\bar z \cdot A\cdot z-b)\,f(\bar z,z) &=& 2i\int r dr d\phi \, \delta(a r^2 - b)f(r e^{-i\phi},re^{i\phi}). \end{eqnarray*}
+\delta(a r^2 - b) = \frac{\delta(r-\sqrt{b/a})}{2\sqrt{a b}}
+\begin{eqnarray*} \int d\bar z\, dz\, \delta (\bar z \cdot A\cdot z-b)\,f(\bar z,z) &=& \frac{i}{a}\int d\phi \, f\left(\textstyle\sqrt{\frac{b}{a}}e^{-i\phi},\sqrt{\frac{b}{a}}e^{i\phi}\right). \end{eqnarray*}
+n
+A
+z = U \xi
+\bar z \cdot A\cdot z = \xi^\dagger U^\dagger A U \xi = \xi^\dagger D \xi
+D = \mathrm{diag}(\lambda_1,\ldots,\lambda_n)
+\lambda_1 \ne 0
+(\bar \xi_1,\xi_1)
+n=1
+\begin{eqnarray*} \int d\bar z\, dz\, \delta (\bar z \cdot A\cdot z-b)\,f(\bar z,z) &=& \int d\bar \xi\, d\xi\, \delta (\bar \xi \cdot D\cdot \xi-b)\,f(\overline{U \xi},U\xi) \\ &=& \int d\bar \xi_1\, d\xi_1\, \left(\prod_{k=2}^n d\bar \xi_k\, d\xi_k\right) \delta \left(\lambda_1|\xi_1|^2+\sum_{k=2}^n \lambda_k|\xi_k|^2-b\right)\, f(\overline{U \xi},U\xi). \end{eqnarray*}

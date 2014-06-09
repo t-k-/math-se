@@ -1,0 +1,30 @@
+B_n
+f(x)=e^{e^x-1}
+B_3
+e^{f(x)}=1+f(x)+\frac{f(x)^2}{2!}+\frac{f(x)^3}{3!}+\ldots
+\frac{x^3}{3!}
+15
+\begin{align}e^{(e^x-1)} &= \exp\left(x+\frac{x^2}{2}+\frac{x^3}{6}+O(x^4)\right)\\ &=1+\left(x+\frac{x^2}{2}+\frac{x^3}{6}+O(x^4)\right) +\frac{1}{2}\left(x+\frac{x^2}{2}+\frac{x^3}{6}+O(x^4)\right)^2 +\frac{1}{6}\left(x+\frac{x^2}{2}+\frac{x^3}{6}+O(x^4)\right)^3+O(x^4)\\ &=1+\left(x+\frac{x^2}{2}+\frac{x^3}{6}+O(x^4)\right)+\frac{1}{2}\left(x^2+2(x)\left(\frac{x^2}{2}\right)+O(x^4)\right)+\frac{1}{6}\left(x^3+O(x^4)\right)\\ &=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^2}{2}+\frac{x^3}{2}+\frac{x^3}{6}+O(x^4)\\ &=1+x+x^2+\frac{5x^3}{6}+O(x^4) \end{align}
+(e^x-1)^n
+e^x
+x^4/4!
+n
+x^4
+x^4
+\dfrac{15x^4}{4!}
+n
+F^{(n)}(0)
+F(x)
+F^{(n)}
+n
+F
+F(x)=e^{f(x)}
+f(x)=e^x-1
+e^{f(0)}=1
+f^{(n)}(0)=1
+n \ge 1
+B_0=B_1=1
+B_2=2
+B_3=5
+B_4=15
+ F(0)=e^{f(0)} \\ F'(0)=f'(0)e^{f(0)} \\ F''(0)=(f''(0)+f'(0)^2)e^{f(0)} \\ F'''(0)=(f'''(0)+3f''(0)^2 f'(0) + f'(0)^3)e^{f(0)} \\ F^{(4)}(0)=(f^{(4)}(0)+f'''(0)f'(0)+6f'''(0)f''(0)f'(0)+3f''(0)^2+3f''(0)f'(0)^2+f'(0)^4)e^{f(0)} 

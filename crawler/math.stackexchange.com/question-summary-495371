@@ -1,0 +1,39 @@
+n
+k
+0\le k \le\frac n2
+\sum_{j=k}^{\lfloor\frac n2\rfloor}{\binom{n}{2j}}{\binom{j}{k}}=\frac{n}{n-k}\cdot2^{n-2k-1}{\binom{n-k}{k}}
+\cos{n\theta}=n\sum_{l=0}^{\lfloor\frac{n}{2}\rfloor}\{(-1)^l\cdot2^{n-2l-1}\cdot\frac{\binom{n-l}{l}}{n-l}\cos^{n-2l}{\theta}\}\ \ \ \cdots(\star),
+\sin{n\theta}=\sum_{l=0}^{\lfloor\frac{n-1}{2}\rfloor}\{(-1)^l\cdot2^{n-2l-1}\cdot\binom{n-l-1}{l}\cos^{n-2l-1}{\theta}\sin\theta\}\ \ \ \cdots(\star\star).
+(\star)
+n
+(\star\star)
+(\star)
+(\star)
+\cos^{n-2l}\theta
+n\cdot(-1)^l\cdot2^{n-2l-1}\cdot\frac{\binom{n-l}{l}}{n-l}.
+\sum_{k=l}^{\lfloor\frac{n}{2}\rfloor}\binom{n}{2k}\cdot\binom{k}{l}=n\cdot2^{n-2l-1}\cdot\frac{\binom{n-l}{l}}{n-l}
+\displaystyle\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}=2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k-1}{k-1}\bigg]
+\;\;
+0\le k\le\frac{n}{2}
+\displaystyle\sum_{j\ge0}\binom{n}{2j+1}\binom{j}{k}=2^{n-2k-1}\binom{n-k-1}{k}
+\;\;
+0\le k\le\frac{n-1}{2}
+n=1
+k=0
+n\in\mathbb{N}
+\displaystyle\sum_{j\ge0}\binom{n+1}{2j}\binom{j}{k}=\sum_{j\ge0}\bigg[\binom{n}{2j}+\binom{n}{2j-1}\bigg]\binom{j}{k}=\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}+\sum_{j\ge0}\binom{n}{2j-1}\binom{j}{k}
+\;\;\;\displaystyle=\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}+\sum_{l\ge0}\binom{n}{2l+1}\binom{l+1}{k}
+\;\;\;\displaystyle=\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}+\sum_{l\ge0}\binom{n}{2l+1}\bigg[\binom{l}{k}+\binom{l}{k-1}\bigg]
+\;\;\;\displaystyle=\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}+\sum_{l\ge0}\binom{n}{2l+1}\binom{l}{k}+\sum_{l\ge0}\binom{n}{2l+1}\binom{l}{k-1}
+\;\;\;\displaystyle=2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k-1}{k-1}\bigg]+2^{n-2k-1}\binom{n-k-1}{k}+2^{n-2k+1}\binom{n-k}{k-1}
+\;\;\;\displaystyle=2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k-1}{k-1}+\binom{n-k-1}{k}+4\binom{n-k}{k-1}\bigg]
+\;\;\;\displaystyle=2^{n-2k-1}\bigg[\binom{n-k+1}{k}+\binom{n-k}{k}+\binom{n-k}{k-1}+2\binom{n-k}{k-1}\bigg]
+\;\;\;\displaystyle=2^{n-2k-1}\bigg[2\binom{n-k+1}{k}+2\binom{n-k}{k-1}\bigg]=2^{n-2k}\bigg[\binom{n-k+1}{k}+\binom{n-k}{k-1}\bigg]
+\;\;\;\;
+n+1
+\displaystyle\sum_{j\ge0}\binom{n+1}{2j+1}\binom{j}{k}=\sum_{j\ge0}\bigg[\binom{n}{2j+1}+\binom{n}{2j}\bigg]\binom{j}{k}=\sum_{j\ge0}\binom{n}{2j+1}\binom{j}{k}+\sum_{j\ge0}\binom{n}{2j}\binom{j}{k}
+\;\;\;\displaystyle=2^{n-2k-1}\binom{n-k-1}{k}+2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k-1}{k-1}\bigg]
+\;\;\;\displaystyle=2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k-1}{k}+\binom{n-k-1}{k-1}\bigg]=2^{n-2k-1}\bigg[\binom{n-k}{k}+\binom{n-k}{k}\bigg]
+\;\;\;\displaystyle=2^{n-2k}\binom{n-k}{k}
+\;\;\;
+n+1

@@ -1,0 +1,21 @@
+2\times 3
+(x,y)
+x' = a x + by + c, y' = d x + e y + f
+ M = \pmatrix{a &b &c\\ d &e &f}  
+4\times 4
+2\times 3
+\pmatrix{x'\\y'\\1}=\pmatrix{a&b&c\\d&e&f\\0&0&1}\pmatrix{x\\y\\1}\;.
+2\times3
+4\times4
+\pmatrix{x'\\y'\\1}=\pmatrix{1&0&c\\0&1&f\\0&0&1}\pmatrix{a&b&0\\d&e&0\\0&0&1}\pmatrix{x\\y\\1}\;.
+\pmatrix{a&b\\d&e}
+A=\pmatrix{a&b\\d&e}=\pmatrix{p\\&r}\pmatrix{1\\q&1}\pmatrix{\cos\phi&\sin\phi\\-\sin\phi&\cos\phi}
+ \begin{eqnarray} p&=&\sqrt{a^2+b^2}\;,\\ r&=&\frac{\det A}p=\frac{ae-bd}{\sqrt{a^2+b^2}}\;,\\ q&=&\frac{ad+be}{\det A}=\frac{ad+be}{ae-bd}\;,\\ \phi&=&\operatorname{atan}(b,a)\;, \end{eqnarray} 
+\operatorname{atan}
+p\ne0
+(x, y, 1)
+M
+M \left[\begin{array}{c}x\\y\\1\end{array}\right] = \left[\begin{array}{cc} a& b\\ d&e\end{array}\right]\left[\begin{array}{c}x\\y\end{array}\right] + \left[\begin{array}{c}c\\f\end{array}\right].
+(c,f)
+\theta = \arctan\left(\frac{d}{a}\right).
+\begin{align*}\left[\begin{array}{cc}a & b\\d & e\end{array}\right] &= \left[\begin{array}{cc} \cos \theta &-\sin \theta \\ \sin\theta &\cos \theta\end{array}\right]\left[\begin{array}{cc} \sqrt{a^2+d^2} & b\cos \theta + e\sin \theta\\0 & e\cos \theta - b\sin \theta\end{array}\right]\\ &=\left[\begin{array}{cc} \cos \theta &-\sin \theta \\ \sin\theta &\cos \theta\end{array}\right]\left[\begin{array}{cc}1 & \frac{b\cos \theta + e\sin\theta}{e\cos \theta-b\sin\theta}\\0 & 1\end{array}\right]\left[\begin{array}{cc}\sqrt{a^2+d^2} & 0\\0 & e\cos\theta - b\sin\theta\end{array}\right],\end{align*}

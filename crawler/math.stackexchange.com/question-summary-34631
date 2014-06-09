@@ -1,0 +1,14 @@
+ \begin{array} \textrm{Given:} & [(P \to Q) \land (\lnot R \lor S) \land (P \lor R)] \to (\lnot Q \to S) \\ \end{array} 
+ \begin{array} \textrm{1.} & \lnot (\lnot Q \to S) & (\textrm{assumption, PC from 12}) \\ 2. & \lnot Q \land \lnot S & (\textrm{Lemma: }\lnot (A \to B) \to A \land \lnot B(1)) \\ 3. & \lnot S & (\land E(2)) \\ 4. & \lnot R \lor S & (\land E(Given)) \\ 5. & \lnot R & (\lor E(3,4)) \\ 6. & P \to Q & (\land E(Given)) \\ 7. & \lnot Q & (\land E(2)) \\ 8. & \lnot P & (\textrm{Modus tollens: }[(A \to B) \land \lnot B] \to \lnot A(6,7)) \\ 9. & P \lor R & (\land E(Given)) \\ 10. & R & (\lor E(8,9)) \\ 11. & \lnot R \land R & (\land I(5,10)) \\ 12. & \lnot Q \to S & (PC(1,11), \lnot E(5,9,11)) \\ \end{array} 
+\lnot E
+\land I
+Q
+S
+(\lnot Q \to S)
+\lnot E
+[(P \rightarrow Q) \land (\lnot R \lor S) \land (P \lor R)] \rightarrow (\lnot Q \rightarrow S).
+\lnot (\lnot Q \rightarrow S)
+(\lnot \land \lnot S
+(p \rightarrow q)
+\lnot p \lor q)
+\lnot(\lnot Q \rightarrow S) \iff \lnot(\lnot\lnot Q \lor S) \iff \lnot(Q \lor S) \iff (\lnot Q and \lnot S)

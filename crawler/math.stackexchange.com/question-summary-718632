@@ -1,0 +1,21 @@
+\binom{k}{n} = \frac{k}{n}\binom{k-1}{n-1}
+\binom{k}{n}=A\binom{k-1}{n-1}+B\binom{k-2}{n-2}
+A
+B
+n
+k
+\binom{k}{n}=\sum_{i=1}^M A_i\binom{k-i}{n-i}
+M
+A_i
+A_i >0
+k > n
+k/n - 1 > 0
+k > n
+{k-1\choose n-1}
+A_i
+>0
+k = n
+A_i = 1/M
+{k \choose n} = \frac{k}{n}{k-1\choose n-1} = \left(\frac{k}{n} -1\right){k-1\choose n-1} + {k-1\choose n-1}
+ {k \choose n} = \left(\frac{k}{n} -1\right){k-1\choose n-1} + \frac{k-1}{n-1}{k-2 \choose n-2} 
+ {k \choose n} = \left[\sum_{i=1}^{M-1} \left(\frac{k-i+1}{n-i+1} - 1 \right){k-i \choose n -i}\right] + \frac{k-M+1}{n-M+1}{k-M \choose n-M}

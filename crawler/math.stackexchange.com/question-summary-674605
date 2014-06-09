@@ -1,0 +1,20 @@
+f(x) = \sum_{n=1}^{\infty} \frac{x}{n+x^2} \sin{\frac{x}{n}}
+\sin{\frac{x}{n}} < \frac{x}{n}
+x
+x \in [0,1]
+\left|\frac{x}{n+x^2} \sin{\frac{x}{n}}\right| \le \left|\frac{x^2}{n^2 + nx^2}\right| \le \left|\frac{1}{n^2}\right|
+[0, \infty)
+[0,\infty)
+N\in\mathbb{N}
+x=N
+x=N
+ \min\{\sin\frac{x}{n}:N\le n\le2\,N\}=\sin\frac12>0. 
+ \sum_{n=N}^{2N}\frac{x}{n+x^2}\sin\frac{x}{n}\ge\sin\frac12\sum_{n=N}^{2N}\frac{N}{n+N^2}\ge (N+1)\frac{N}{2\,N+N^2}\sin\frac12>\frac12\sin\frac12>0. 
+\epsilon=(1/2)\sin(1/2)>0
+[1,\infty)
+N_\epsilon
+N_\epsilon\le m<n
+m=N>N_\epsilon
+n=2\,N
+x=N
+ \Bigl|\sum_{k=m}^n\frac{x}{n+x^2}\sin\frac{x}{n}\Bigr|\le\epsilon\quad\forall x\ge1. 

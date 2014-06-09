@@ -1,0 +1,35 @@
+p
+3
+\gcd(a,24\cdot p)=1
+a^{p-1} \equiv 1 \pmod {24\cdot p}
+n=p_1^{k_1}\cdot p_2^{k_2} \ldots \cdot p_r^{k_r} \Rightarrow \phi(n)=p_1^{k_1}\cdot\left(1-\frac{1}{p_1}\right)\cdot p_2^{k_2}\cdot\left(1-\frac{1}{p_2}\right)\ldots p_r^{k_r}\cdot \left(1-\frac{1}{p_r}\right)
+\phi(24 \cdot p)=2^3\cdot \left(1-\frac{1}{2}\right)\cdot3^1\cdot\left(1-\frac{1}{3}\right)\cdot p\cdot\left(1-\frac{1}{p}\right)=8\cdot(p-1)
+\gcd(a,n)=1
+a^{\phi(n)} \equiv 1 \pmod n
+a^{\phi(n)}-1 \equiv 0 \pmod n \Rightarrow a^{\phi(24\cdot p)}-1=a^{8\cdot(p-1)}-1 \equiv 0 \pmod{24\cdot p} \Rightarrow
+\Rightarrow \left(a^{p-1}\right)^8-1=(a^{p-1}-1)\cdot \displaystyle \sum_{i=0}^7 a^{(p-1)\cdot i} \equiv 0\pmod{24\cdot p}
+(a^{p-1}-1) \equiv 0 \pmod {24\cdot p}
+\displaystyle \sum_{i=0}^7 a^{(p-1)\cdot i} \equiv 0\pmod{24\cdot p}
+\displaystyle \sum_{i=0}^7 a^{(p-1)\cdot i} \not\equiv 0\pmod{24\cdot p}
+a^{p-1}\equiv 1\pmod 8
+a^{p-1}\equiv 1\pmod 3
+a^{p-1}\equiv 1\pmod p
+\rm\ \ \lambda(8\cdot3\cdot p) = lcm(\lambda(8),\lambda(3),\lambda(p)) = lcm(\phi(8)/2,\phi(3),\phi(p)) = lcm(2,2,p-1) = p-1\ 
+\rm\quad gcd(n,24\:p) = 1\ \ \Rightarrow\ \ 1\ \equiv\ n^{\:\lambda(24\:p)}\: \equiv \ n^{p-1}
+(a,24\cdot p)=1
+(a,p)=(a,3)=(a,8)=1
+a^{p-1}\equiv 1\pmod{p}
+a^2\equiv 1\pmod{3}
+a^4\equiv 1\pmod{8}
+a^4\equiv 1\pmod{8}
+a\equiv 1,3,5,7\pmod{8}
+a^2\equiv 1\pmod{8}
+p-1
+a^{p-1}\equiv 1
+a^{p-1}\equiv (a^2)^{(p-1)/2}\equiv 1^{(p-1)/2}\pmod{3,8}
+a^{p-1}-1
+3
+8
+p
+\mathrm{lcm}(3,8,p)=24\cdot p
+a^{p-1}\equiv 1\pmod{24\cdot p}

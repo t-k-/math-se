@@ -1,0 +1,22 @@
+n \geq 0
+v_{n} \in \mathbb{Z}^4
+n
+v_0 = (1,0,0,0)
+M
+4 \times 4
+v_n
+a_n
+n
+234
+M
+a_n
+a_0
+10
+234
+79850040
+M = \begin{pmatrix} 9 & 8 & 8 & 0 \\ 1 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 10 \end{pmatrix}
+v_{n+1} = M v_n.
+ a_n = \begin{pmatrix}0 & 0 & 0 & 1 \end{pmatrix} \, M^n \, \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}.
+ M^4 - 20 M^3 + 100 M^2 + M - 10
+ a_{n+4} = 20 a_{n+3} - 100 a_{n+2} - a_{n+1} + 10 a_n.
+0, 0, 0, 1, 20, 300, 3999, 49970, 599400, 6990001, 79850040.

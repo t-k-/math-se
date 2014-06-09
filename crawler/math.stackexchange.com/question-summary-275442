@@ -1,0 +1,12 @@
+\{a_n\}
+a_n=\sum \limits_{p=1}^n\frac{1}{n+p}
+a_n\le a_{n+1}
+a_n\ge a_{n+1}
+\sum \limits_{p=1}^n\frac{1}{n+p}\le\sum \limits_{p=1}^{n+1}\frac{1}{(n+1)+p}
+or
+\sum \limits_{p=1}^n\frac{1}{n+p}\ge\sum \limits_{p=1}^{n+1}\frac{1}{(n+1)+p}
+(p+1) = q
+a_{n+1} = \sum_{p=1}^{n+1}\frac{1}{n+1+p} = \sum_{q=2}^{n+2} \frac{1}{n+q} \\ = \sum_{q=1}^{n} \frac{1}{n+q} + \frac{1}{n + n+1}+\frac{1}{2n+2} - \frac{1}{n+1} = a_n + A
+\frac{1}{n + n+1}+\frac{1}{2n+2} - \frac{1}{n+1} > \frac{1}{2n+2}+\frac{1}{2n+2} - \frac{1}{n+1} = 0
+a_{n+1} > a_n
+\{ a_n\}

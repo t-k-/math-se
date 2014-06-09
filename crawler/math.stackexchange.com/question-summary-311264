@@ -1,0 +1,15 @@
+\Omega \subset R
+q \in L^{\infty}(\Omega)
+q\geq 0
+\Omega
+f :\mathbb{R}\rightarrow \mathbb{R}
+|f(t)|\leq a+b|t|^p, 1<p<\infty
+f(t)t \leq 0
+(f(t)-f(s))(t-s)\leq 0, \forall t,s \in \mathbb{R}
+h\in L^2(\Omega)
+-u'+q(x)u=f(u)+h(x)\, in \Omega ; u=0\,on \, \partial\Omega 
+F(t)=\int_0^1 f(s) ds
+J:H_0^1 \rightarrow\mathbb{R}
+J(u)=\displaystyle \frac12 \int_{\Omega}|u''|^2 dx +\frac12\int_\Omega q(x)u^2 dx - \int_{\Omega} F(u)dx -\int_{\Omega} hudx
+(J'(u)-J'(v))(u-v)=||u-v||^2-\int_{\Omega}(f(u)-f(v))(u-v) dx
+(J'(u)-J'(v))(u-v)=\int_{\Omega} (u'-v')^2+q(x) (u-v)^2 dx-\int_{\Omega}(f(u)-f(v))(u-v) dx

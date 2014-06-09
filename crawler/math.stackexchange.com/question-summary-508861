@@ -1,0 +1,30 @@
+ \frac{1}{\alpha}\frac{\partial T}{\partial t} = \frac{\partial^2 T}{\partial t^2} + \frac{p}{r} \frac{\partial T}{\partial r} \; \; \; \text{for} \; r\neq0 \\ \frac{1}{\alpha}\frac{\partial T}{\partial t} = (1+p)\frac{\partial^2 T}{\partial r^2} \; \; \; \text{for} \; r=0 \\ 
+T
+t
+r
+p
+p
+\alpha
+ \alpha = \frac{k}{\rho C_p} 
+k
+\rho
+C_p
+ \left.\begin{matrix} \frac{\partial T}{\partial r} \end{matrix}\right|_{r=0} = 0 \; \; \; \text{for center node}\\ \left.\begin{matrix} k\frac{\partial T}{\partial r} \end{matrix}\right|_{r=R} = h(T_\infty - T_S) \; \; \; \text{for surface node} 
+i=0
+ \left [ 1 + 2(1+p) Fo \right ]T_0^{\;n+1} - 2(1+p)FoT_1^{\;n+1} = T_0^{\;n} 
+i=1,2,...,M-1
+ Fo\left ( 1-\frac{p}{2i} \right )T_{i-1}^{\;n+1}+(1+2Fo)T_i^{\;n+1}-Fo\left ( 1+\frac{p}{2i} \right )T_{i+1}^{\;n+1}=T_i^{\;n} 
+i=M
+ -2FoT_{M-1}^{\;n+1}+\left [ 1+2Fo \left (1+Bi+Bi\frac{p}{2M}  \right ) \right ] T_M^{\;n+1} = T_M^{\;n} + 2FoBi\left ( 1+\frac{p}{2M} \right )T_\infty 
+n
+n+1
+Fo=\alpha\Delta t/\Delta r^2
+Bi=h\Delta r/k
+ \begin{bmatrix} 1+2(1+p)Fo & -2(1+p) & 0 & 0 & 0\\  Fo\left ( 1-\frac{p}{2i} \right ) & 1+2Fo & Fo\left ( 1+\frac{p}{2i} \right ) & 0 & 0\\  0 & Fo\left ( 1-\frac{p}{2i} \right ) & 1+2Fo & Fo\left ( 1+\frac{p}{2i} \right ) & 0\\  0 & 0 & Fo\left ( 1-\frac{p}{2i} \right ) & 1+2Fo & Fo\left ( 1+\frac{p}{2i} \right )\\  0 & 0 & 0 & -2Fo & 1+2Fo \left (1+Bi+Bi\frac{p}{2M}  \right ) \end{bmatrix} \begin{bmatrix} T_0^{\;n+1}\\  T_1^{\;n+1}\\  T_2^{\;n+1}\\  T_3^{\;n+1}\\ T_4^{\;n+1}  \end{bmatrix} = \begin{bmatrix} T_0^{\;n}\\  T_1^{\;n}\\  T_2^{\;n}\\  T_3^{\;n}\\  T_4^{\;n}+2FoBi\left ( 1+\frac{p}{2M} \right )T_\infty \end{bmatrix} 
+\Delta H
+\frac{\partial \rho}{\partial t}
+ \frac{1}{\alpha}\frac{\partial T}{\partial t} = \frac{\partial^2 T}{\partial t^2} + \frac{p}{r} \frac{\partial T}{\partial r} + \frac{\Delta H \frac{\partial \rho}{\partial t}}{k} \; \; \; \text{for} \; r\neq0 \\ \frac{1}{\alpha}\frac{\partial T}{\partial t} = (1+p)\frac{\partial^2 T}{\partial r^2} + \frac{\Delta H \frac{\partial \rho}{\partial t}}{k} \; \; \; \text{for} \; r=0 \\ 
+\frac{\partial \rho}{\partial t}
+T
+ K = A\;e^{\frac{-E}{RT}} \\ \frac{\partial \rho}{\partial t} = -(K_1+K_2+K_3)\, \rho 
+A,E,R

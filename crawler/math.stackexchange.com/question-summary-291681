@@ -1,0 +1,27 @@
+T(n) = 3T \left(\frac{n}{2}\right) + 4n
+T(n) = 3T \left(\frac{n}{2}\right) + 4n \Rightarrow 4n \cdot \left(\frac{3}{2}\right)^0
+T\left(\frac{n}{2}\right) = 3T \left (\frac{n}{4} \right) + 4\left(\frac{n}{2}\right) \Rightarrow 4n \cdot \left(\frac{3}{2}\right)^1
+T\left(\frac{n}{4}\right) = 3T \left (\frac{n}{8} \right) + 4\left(\frac{n}{4}\right) \Rightarrow 4n \cdot \left(\frac{3}{2}\right)^2
+T\left(\frac{n}{8}\right) = 3T \left (\frac{n}{16} \right) + 4\left(\frac{n}{8}\right) \Rightarrow 4n \cdot \left(\frac{3}{2}\right)^3
+\sum_{x=0}^{log_2n} 4n \cdot \left(\frac{3}{2}\right)^x
+9\cdot 3^{log_2n} = 9n^{log_23} = 9n^{1.58} = O(n^{1.58})
+a^{lg\, b} = b^{lg\, a}\: \text{and}\: log_2 3 \approx 1.58
+\sum_{x=0}^{n}r^x = \frac{r^{n+1}-1}{r-1}
+\sum_{x=0}^{n}r^x = \frac{r^{n+1}-1}{r-1} = \sum_{x=0}^{log_2 n} 4n \cdot \left(\frac{3}{2}\right)^x 
+= 4\left(n\cdot \frac{\frac{3}{2}^{lg_2n+1}-1}{\frac{3}{2}-1}\right) = 4\left(n \cdot \frac{\frac{3}{2}^{log_2n+1}-1}{\frac{1}{2}}\right)  = 2\left(n \cdot \frac{3}{2}^{log_2n+1}+1\right) 
+=2n \cdot 3^{log_2n+1} + 2
+r>1
+ (\frac32)^{(\log_2 n) +1} 
+ 3^{(\log_2 n )+ 1}. 
+ \sum_{x=0}^n r^x = O(r^n) \qquad \qquad\text{if $r>1$}, 
+ O(n (\frac32)^{\log_2 n})=O(n e^{(\ln n) \frac{\ln \frac32}{\ln 2}}) = O(n^{1+\frac{\ln \frac32}{\ln 2}}). 
+ 1 + \frac{\ln \frac32}{\ln 2} = \frac{\ln 3}{\ln 2} = \log_2 3 = 1.58496... 
+n.
+T(0)=0
+n
+n = \sum_{k=0}^{\lfloor \log_2 n \rfloor} d_k 2^k
+ T(n) = 4 \sum_{j=0}^{\lfloor \log_2 n \rfloor} 3^j \sum_{k=j}^{\lfloor \log_2 n \rfloor} d_k 2^{k-j} = 4 \sum_{j=0}^{\lfloor \log_2 n \rfloor}  \left( \frac{3}{2} \right)^j \sum_{k=j}^{\lfloor \log_2 n \rfloor} d_k 2^k.
+ T(n) \le 4 \sum_{j=0}^{\lfloor \log_2 n \rfloor}  \left( \frac{3}{2} \right)^j \sum_{k=j}^{\lfloor \log_2 n \rfloor} 2^k = 4 \sum_{j=0}^{\lfloor \log_2 n \rfloor} \left( \frac{3}{2} \right)^j  \left( 2^{\lfloor \log_2 n \rfloor + 1} - 2^j\right) 
+ 4 \left( 2^{\lfloor \log_2 n \rfloor + 1} \frac{(3/2)^{\lfloor \log_2 n \rfloor + 1}-1}{3/2-1} - \sum_{j=0}^{\lfloor \log_2 n \rfloor}3^j \right) = 4 \left(2 \left( 3^{\lfloor \log_2 n \rfloor + 1} - 2^{\lfloor \log_2 n \rfloor + 1}\right)  - \frac{3^{\lfloor \log_2 n \rfloor + 1}-1}{3-1} \right) = 2\times 3^{\lfloor \log_2 n \rfloor + 2} - 2^{\lfloor \log_2 n \rfloor + 4} + 2.
+ T(n) \ge 4 \sum_{j=0}^{\lfloor \log_2 n \rfloor}  \left( \frac{3}{2} \right)^j 2^{\lfloor \log_2 n \rfloor} = 2^{\lfloor \log_2 n \rfloor + 2} \frac{(3/2)^{\lfloor \log_2 n \rfloor + 1}-1}{3/2-1} = 4\times 3^{\lfloor \log_2 n \rfloor + 1} - 2^{\lfloor \log_2 n \rfloor + 3} .
+ T(n) \in \Theta\left(3^{\lfloor \log_2 n \rfloor}\right) = \Theta\left(2^{\log_2 3 \lfloor \log_2 n \rfloor} \right) = \Theta\left(n^{\log_2 3}\right).

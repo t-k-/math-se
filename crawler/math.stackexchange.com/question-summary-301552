@@ -1,0 +1,15 @@
+a^{2^n} \equiv 1\pmod{2^{n+2}}
+a^{2^k} \equiv 1 \pmod {2^{k+2}}
+a^{2^{k+1}} \equiv 1 \pmod{2^{k+3}}
+a
+n > 0
+c
+ a^{2^k} \equiv 1 \pmod{2^{k+2}}  
+ a^{2^{k}} = 1 + c 2^{k+2}, 
+a
+a^{2^{k}}=t 2^{k+2} + 1
+t
+a^{2^{k+1}}=(a^{2^{k}})^{2}=(t 2^{k+2} + 1)^2=t^2 2^{2k+4} + t2^{k+3} + 1
+2^{2k+4} \equiv 0 \mod(2^{k+3})
+t^2 2^{2k+4} + t2^{k+3} + 1 \equiv 1 \mod(2^{k+3})
+\begin{eqnarray}\rm{\bf Proof}\quad k>0,\,\ \color{#0A0}{2^k}\!&\mid&\rm\color{#0A0}{b-1}\:\Rightarrow\: \color{#C00}2\cdot \color{#0A0}{2^{k}}\!\mid \color{#0A0}{(b-1)}(\color{#C00}{b+1})\,=\,b^2\!-1\\  \\ \rm since\ \ \ \ 2&\mid&\rm b-1\:\Rightarrow\:\color{#C00}2\mid\color{#C00}{b+1} =(b-1) + 2\end{eqnarray}

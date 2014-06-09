@@ -1,0 +1,14 @@
+\varphi(x)=\exp(-{1\over 2}x^2)
+r(\cdot)
+\{r=0\}
+\theta \to +\infty
+\frac{\int_0^\infty r(x)\varphi(x-\theta)\ dx}{\int_{-\infty}^0 \varphi(x-\theta)\ dx}\to \infty
+r(\cdot)
+r(x)=\exp(-{1\over 2}x^2)
+0/0
+\begin{align*} \int_{(0,\infty)} \varphi(x-\theta) \cdot r(x) \, dx &\geq \int_{(0,\theta)} \varphi(x-\theta) \cdot r(x) \, dx \\ &\geq \inf_{x \in [0,\theta]} \varphi(x-\theta) \cdot \int_{(0,\theta)} r(x) \, dx \\ &= \exp \left( - \frac{\theta^2}{2} \right) \cdot \int_{(0,\theta)} r(x) \, dx \tag{1} \end{align*}
+\theta \geq 0
+\begin{align*} \int_{(-\infty,0)} \varphi(x-\theta) \, dx &= \int_{(\theta,\infty)} \varphi(x) \, dx \\ &\leq \int_{(\theta,\infty)} \frac{x}{\theta} \cdot \varphi(x) \, dx \\ &= \frac{1}{\theta} \cdot \exp \left( -\frac{\theta^2}{2} \right) \tag{2} \end{align*}
+(1)
+(2)
+\frac{\int_{(0,\infty)} \varphi(x-\theta) \cdot r(x) \, dx}{\int_{(-\infty,0)} \varphi(x-\theta) \, dx} \geq \theta \cdot \int_{(0,\theta)} r(x) \, dx \stackrel{\theta \to \infty}{\to} \infty

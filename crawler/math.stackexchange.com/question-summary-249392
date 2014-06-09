@@ -1,0 +1,30 @@
+D
+D : R_2[t] \rightarrow R_2[t]
+D(p) = \frac{d}{dt}p
+A = \{1 + t, 1- t, t^2\}
+B = \{1 + t, 1 - t\}
+D
+A
+B
+p(t) = a + bt + ct^2
+A
+a + bt +ct^2 = x(1 + t) + y(1 - t) +zt^2
+[p(t)]_A = \left(\frac{a+b}{2}, \frac{a-b}{2}, c\right)
+D(p(t)) = b + 2c
+[D(p(t))] = (b, 2c) = \begin{bmatrix} b \\ 2c \\ \end{bmatrix} 
+ [D(p(t))] =  \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 2 \\ \end{bmatrix} \begin{bmatrix} a \\ b \\ c \\ \end{bmatrix}
+ [D(p(t))]_A =  \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 2 \\ \end{bmatrix} \begin{bmatrix} \frac{a+b}{2} \\ \frac{a-b}{2} \\ c \\ \end{bmatrix}
+A
+B
+A
+1 + t \mapsto 1
+1 - t \mapsto -1
+t^2 \mapsto 2t
+\beta = \{ 1 + t, 1 - t \}
+\frac{1}{2}[(1+t) + (1 - t)] = 1
+D(1+t)_\beta = (\frac{1}{2},\frac{1}{2})^t
+D(1-t)_\beta = (-\frac{1}{2},-\frac{1}{2})^t
+2t
+(1+t)-(1-t)
+D(t^2)_\beta = (1,-1)^t
+M = \begin{pmatrix} \frac{1}{2} & -\frac{1}{2} & 1 \\ \frac{1}{2} & -\frac{1}{2} & -1 \end{pmatrix}

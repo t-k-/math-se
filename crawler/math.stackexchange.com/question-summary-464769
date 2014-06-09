@@ -1,0 +1,38 @@
+\int_0^1 \tan^{-1}\left[\frac{\tanh^{-1}x-\tan^{-1}x}{\pi+\tanh^{-1}x-\tan^{-1}x}\right]\frac{dx}{x}
+=\frac{\pi}{8}\ln\frac{\pi^2}{8}?
+S(x)=\tanh^{-1}(x)-\tan^{-1}(x)
+I=\int_0^1 \tan^{-1}\left[\frac{S(x)}{\pi+S(x)}\right]\left(\frac{d\ln x}{dx}\right)dx
+I = \tan^{-1}\left[\frac{S(x)}{\pi+S(x)}\right]\ln x\Big|_0^1 - \int_0^1 \frac {d\tan^{-1}\left[\frac{S(x)}{\pi+S(x)}\right]}{dx}\ln xdx
+= 0-\int_{0}^{1}\frac{\pi}{(\pi+S(x))^{2}+S(x)^{2}}\frac {dS(x)}{dx}\ln xdx
+\frac {dS(x)}{dx}=\frac {2x^2}{1-x^4}
+Z=S(X)
+\frac{1}{(\pi+z)^{2}+z^{2}} 
+m
+\gamma >0
+m=-\pi/2,\;\; \gamma = \pi/2
+f_Z(z) = \frac 1{\pi}\frac {\gamma}{(z-m)^2+\gamma^2} 
+f_Z(z;m=-\pi/2,\gamma=\pi/2) = \frac 1{\pi}\frac {\pi/2}{(z+\pi/2)^2+\pi^2/4}=\frac{1}{(\pi+z)^{2}+z^{2}}
+Z=S(X)
+(m=-\pi/2,\gamma=\pi/2)
+Z
+X
+X=S^{-1}(Z)
+S(x)
+Z = (S^{-1})^{-1}(X) = S(X)
+f_X(x) = \left|\frac {dS(x)}{dx}\right|\cdot f_Z(S(x)) = \frac {dS(x)}{dx}\cdot f_Z(S(x))=\frac {dS(x)}{dx}\frac{1}{(\pi+S(x))^{2}+S(x)^{2}}
+I = -\pi\int_{0}^{1}f_X(x)\ln xdx
+\int_{0}^{1}f_X(x)dx = \int_{0}^{\infty}f_Z(z)dz = \int_{0}^{\infty}\frac{1}{(\pi+z)^{2}+z^{2}}dz 
+\int_{0}^{\infty}f_Z(z)dz = \frac 14 = \int_{0}^{1}f_X(x)dx \Rightarrow \int_{0}^{1}4f_X(x)dx =1
+\tilde f_X(x) = 4f_X(x)
+[0,1]
+I = -\frac {\pi}{4}\int_{0}^{1}4f_X(x)\ln xdx = -\frac {\pi}{4}E[\ln X]
+I =\frac{\pi}{8}\ln\frac{\pi^2}{8}
+X
+[0,1]
+-\frac{1}{2}\ln\frac{\pi^2}{8}
+a^*>0,b^*>0
+ -\frac {\pi}{4}\Big(\psi(a^*) - \psi(a^*+b^*)\Big) = \frac{\pi}{8}\ln\frac{\pi^2}{8}\qquad [A]
+\frac {x^{a^*-1}(1-x)^{b^*-1}}{\operatorname{B}(a^*,b^*)} = \frac{4}{(\pi+S(x))^{2}+S(x)^{2}}\frac {2x^2}{1-x^4},\;\; \forall x\in [0,1]\qquad [B]
+x\in [0,1]
+X
+\ln X

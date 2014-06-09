@@ -1,0 +1,43 @@
+P
+I
+ \begin{cases} \frac{\mathrm{d}I}{\mathrm{d}t}=& \alpha_I+\lambda_IP- \gamma_II -\delta_IPI;\\ \frac{\mathrm{d}P}{\mathrm{d}t}=&\alpha_P+\theta_PP-\delta_PPI \end{cases} 
+D
+P
+T
+ \begin{cases} \theta_P &=0.15 \\  \delta_P&=0.01 \end{cases}\quad\text{ and }\quad  \begin{cases} \alpha_I&=0.4  \\ \gamma_I&=0.1 \\ \delta_I&=0.05 \\ \lambda_I&=0.05 \end{cases} 
+\alpha_P = \begin{cases} &\dfrac{D}{T} &\mbox{if } t\leq T \\ \\ &0 & \mbox{otherwise.} \end{cases}
+\delta t<<1
+\alpha_I+P\lambda_I
+I\gamma_I-PI\delta_I
+ P\theta_P
+ PI\delta_P
+t<T
+\begin{eqnarray}\frac{d}{dt}\mathbb{P}(I,P) & = & \mathbb{T}(I,P|I-1,P)\cdot \mathbb{P}(I-1,P) - \mathbb{T}(I+1,P|I,P)\cdot \mathbb{P}(I,P) \\ & & + \mathbb{T}(I,P|I+1,P)\cdot \mathbb{P}(I+1,P) - \mathbb{T}(I-1,P|I,P)\cdot \mathbb{P}(I,P) \\ & & + \mathbb{T}(I,P|I,P-1)\cdot \mathbb{P}(I,P-1) - \mathbb{T}(I,P+1|I,P)\cdot \mathbb{P}(I,P) \\ & & + \mathbb{T}(I,P|I,P+1)\cdot \mathbb{P}(I,P+1) - \mathbb{T}(I,P-1|I,P)\cdot \mathbb{P}(I,P) \; . \end{eqnarray}
+\begin{eqnarray} \mathbb{T}(I+1,P|I,P) & = & \alpha_I+P\lambda_I\\ \mathbb{T}(I-1,P|I,P) & = & I\gamma_I-PI\delta_I\\ \mathbb{T}(I,P+1|I,P) & = & \alpha_P+P\theta_P\\ \mathbb{T}(I,P-1|I,P) & = & PI\delta_P \end{eqnarray}
+\mathbb{E}(I)=\sum_{I,P} I\cdot \mathbb{P}(I,P)
+\mathbb{E}(P)=\sum_{I,P} P \cdot\mathbb{P}(I,P)
+I
+P
+I
+P
+\begin{cases} \frac{\mathrm{d}\mathbb{E}(I)}{\mathrm{d}t}=& \alpha_I+\lambda_I\mathbb{E}(P)- \gamma_I\mathbb{E}(I) -\delta_I\mathbb{E}(PI) \\ \frac{\mathrm{d}\mathbb{E}(P)}{\mathrm{d}t}=&\alpha_P+\theta_P\mathbb{E}(P)-\delta_P\mathbb{E}(PI) \end{cases}
+PI
+P
+E(P)
+P
+P
+P
+P
+\omega_i
+i
+P(\omega_i)
+\omega_i
+\omega_i
+P(\omega_i)
+E(P)
+E(P)
+\omega_i
+P
+E(P)
+P
+E(P)=\sum_{\omega_i}P(\omega_i)\text{Prob}(\omega_i) \; .

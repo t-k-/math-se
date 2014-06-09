@@ -1,0 +1,11 @@
+\int_0^\infty e^{\left(-\frac{x^2}{y^2}-y^2\right)}\,{\rm d}x
+y
+e^{-y^2}
+F(y) = \int_0^\infty e^{-x^2/y^2}\,dx,
+0 < y < \infty
+F'(y) = \int_0^\infty \frac{2x^2}{y^3}e^{-x^2/y^2}\,dx,
+\begin{align} \int_0^\infty \frac{2x^2}{y^3}e^{-x^2/y^2}\,dx &= \frac{1}{y}\int_0^\infty x\left(\frac{2x}{y^2}e^{-x^2/y^2}\right)\,dx\\ &= \frac{1}{y}\left(\left[xe^{-x^2/y^2}\right]_0^\infty - \int_0^\infty e^{-x^2/y^2}\,dx\right)\\ &= -\frac{1}{y}F(y). \end{align}
+F(1) = \int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
+F'(y) = - \frac{1}{y} F(y)
+F(y) = \frac{\sqrt{\pi}}{2y}.
+\int_0^\infty e^{\left(-\frac{x^2}{y^2} - y^2\right)}\,dx = \frac{\sqrt{\pi}}{2y}e^{-y^2}.

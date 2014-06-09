@@ -1,0 +1,12 @@
+x \in \mathbb{R}
+g_1 = \dfrac{x}{1+x^4}
+g_n(x) = -\dfrac{x^5}{(1+nx^4)(1+(n-1)x)}
+ n \geq 2
+s_m(x) = \displaystyle\sum_{n=1}^m g_n(x)
+s(x) = \displaystyle\sum_{n=1}^\infty g_n(x)
+s_m'(0) = 1 = \displaystyle\sum_{n=1}^m g_n'(0)
+ s'(0) = 0 \not = \displaystyle\sum_{n=1}^\infty g_n'(0)
+s_m'(0) = 1 = \displaystyle\sum_{n=1}^m g_n'(0)
+s(x) = \displaystyle \lim_{m\to \infty} s_m(x)
+s_m = \displaystyle \sum_{n=2}^m \left (\dfrac{x}{nx^4 + 1} - \dfrac{x}{1+(n-1)x^4} \right ) + g_1(x) = \dfrac{x}{mx^4+1}
+\displaystyle \lim_{m\to \infty} s_m(x) = 0 = s(x)

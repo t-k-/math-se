@@ -1,0 +1,104 @@
+ \left[ \begin{array}{ccc} 0.47 & 0.11 & 0.19 & 0.34\\\ 0.20 & 0.43 & 0.11 & 0.26\\\ 0.00 & 0.06 & 1.12 & 0.01\end{array} \right]  \left[ \begin{array}{ccc} R \\\ G \\\ B \\\ A \end{array} \right] = \left[ \begin{array}{ccc} X \\\ Y \\\ Z \end{array} \right] 
+ \left[ \begin{array}{cccc} 43.74282392 & -2.642812728 & -5.823745503 & -0.26554119\\\ -2.642812728 & 8.563382072 & -0.969894212 & -0.946563019\\\ -5.823745503 & -0.969894212 &  62.81754221 & -2.393057209\\\ -0.26554119 & -0.946563019 & -2.393057209 &  8.136438369\end{array} \right] 
+ \left[ \begin{array}{ccc} \langle RR \rangle - \langle R \rangle\langle R \rangle & \langle RG \rangle - \langle R \rangle\langle G \rangle & \langle RB \rangle - \langle R \rangle\langle B \rangle & \langle RA \rangle - \langle R \rangle\langle A \rangle\\\ \langle RG \rangle - \langle R \rangle\langle G \rangle & ... & ... & ...\\\ ... & ... & ... & ...\\\ ... & ... & ... & ...\end{array} \right] 
+ \left[ \begin{array}{cccc|c} 0.490449254 & 0.100440581 & 0.221653947 & 0.343906601 & 0.75\\\ 0.204678363 & 0.421052632 & 0.16374269 & 0.210526316 & 1.00\\\ -0.011955512 & 0.07388664 & 1.464803251 & -0.012677086 & 0.75\end{array} \right] 
+u + Av
+Q
+ \begin{eqnarray} \mu &=& -\frac{\sum_{\alpha,\beta}M_{\alpha\beta}x_\alpha y_\beta}{\sum_{\alpha,\beta}M_{\alpha\beta}y_\alpha y_\beta} \;. \end{eqnarray} 
+x
+y
+M_{\alpha\beta}x_\alpha y_\beta
+ \begin{eqnarray} A &=& -\frac{\sum_{\alpha,\beta}M_{\alpha\beta}x_\alpha y_\beta}{\sum_{\alpha,\beta}M_{\alpha\beta}y_\alpha y_\beta} \;. \end{eqnarray} 
+M_{\alpha\beta}
+I(\lambda)=\sum_\alpha c_\alpha I_\alpha(\lambda)\;,
+\alpha
+c_\alpha
+\alpha
+I_\alpha(\lambda)
+\alpha
+ \def\ave#1{\left\langle#1\right\rangle} \begin{eqnarray} Q &=& \ave{I^2}-\ave{I}^2 \\ &=& \ave{\left(\sum_\alpha c_\alpha I_\alpha\right)^2}-\ave{\sum_\alpha c_\alpha I_\alpha}^2 \\ &=& \sum_{\alpha,\beta}M_{\alpha\beta}c_\alpha c_\beta\;, \end{eqnarray} 
+\ave f=\frac{\int f(\lambda)\mathrm d\lambda}{\int \mathrm d\lambda}
+M_{\alpha\beta}
+M_{\alpha\beta}=\ave{I_\alpha I_\beta}-\ave{I_\alpha}\ave{I_\beta}\;.
+d_\gamma=\sum_\alpha T_{\gamma\alpha}c_\alpha\;,
+\gamma
+\alpha
+c_\alpha=x_\alpha+\mu y_\alpha
+\mu
+Q
+ \begin{eqnarray} Q &=& \sum_{\alpha,\beta}M_{\alpha\beta}c_\alpha c_\beta \\ &=& \sum_{\alpha,\beta}M_{\alpha\beta}(x_\alpha+\mu y_\alpha)(x_\beta+\mu y_\beta)\;, \\ \frac{\mathrm d Q}{\mathrm d\mu} &=& 2\mu\sum_{\alpha,\beta}M_{\alpha\beta}y_\alpha y_\beta + 2\sum_{\alpha,\beta}M_{\alpha\beta}x_\alpha y_\beta \\ &=&0\;, \\ \mu &=& -\frac{\sum_{\alpha,\beta}M_{\alpha\beta}x_\alpha y_\beta}{\sum_{\alpha,\beta}M_{\alpha\beta}y_\alpha y_\beta} \;. \end{eqnarray} 
+Q
+\mu
+X
+Y
+.04X\le Y\le.4 X
+X
+Y
+\pmatrix{1&1\\.04&.4}
+\pmatrix{1&1&1\\.04&.4&0.12}\;.
+2\times3
+X
+Y
+\pmatrix{1&1&1\\.04&.4&0.12}\pmatrix{B\\R\\W}=\pmatrix{X\\Y}\;,
+B
+R
+W
+.04
+\pmatrix{1&1&1\\0&.36&0.08}\pmatrix{B\\R\\W}=\pmatrix{X\\Y-.04X}\;.
+W
+.36R+.08W=Y-.04X\;,
+R=\frac{25}9Y-\frac19X-\frac29W\;,
+B+R+W=X\;,
+B=X-R-W=\frac{10}9X-\frac{25}9Y-\frac79W\;.
+\pmatrix{B\\R\\W}=\pmatrix{\frac{10}9X-\frac{25}9Y\\\frac{25}9Y-\frac19X\\0}+W\pmatrix{-\frac79\\-\frac29\\1}\;.
+W
+B
+R
+W
+X
+Y
+B
+R
+W
+0
+ \pmatrix{ 0.47 & 0.11 & 0.19 & 0.34\\ 0.20 & 0.43 & 0.11 & 0.26\\ 0.00 & 0.06 & 1.12 & 0.01 } \pmatrix{ R \\ G \\ B \\ A } = \pmatrix{ X \\ Y \\ Z } 
+0.20/0.47
+ \pmatrix{ 0.47 & 0.11 & 0.19 & 0.34\\ 0.00 & 0.38 & 0.03 & 0.12\\ 0.00 & 0.06 & 1.12 & 0.01 } \pmatrix{ R \\ G \\ B \\ A } = \pmatrix{ X \\ Y-0.43X \\ Z } 
+0.06/0.38
+ \pmatrix{ 0.47 & 0.11 & 0.19 & 0.34\\ 0.00 & 0.38 & 0.03 & 0.12\\ 0.00 & 0.00 & 1.12 & -0.01 } \pmatrix{ R \\ G \\ B \\ A } = \pmatrix{ X \\ Y-0.43X \\ Z-0.07X-0.16Y } 
+A
+A
+B
+1.12B-0.01A=Z-0.07X-0.16Y\;,
+B=\frac{Z-0.07X-0.16Y+0.01A}{1.12}\;.
+G
+R
+A
+A
+\pmatrix{R\\G\\B\\A}=\pmatrix{\ldots\\\ldots\\(Z-0.07X-0.16Y)/1.12\\0}+A\pmatrix{\ldots\\\ldots\\0.01/1.12\\1}\;,
+X
+Y
+Z
+u+Av
+u
+v
+A
+A
+M_{\alpha\beta}
+\ave{I_\alpha}
+\alpha
+\ave{I_\alpha I_\beta}
+\alpha
+\beta
+M_{\alpha\beta}
+x_\alpha
+y_\alpha
+\mu
+Q
+XYZ
+M
+ \underbrace{\pmatrix{\cdot&\cdot&\cdot&a\\\cdot&\cdot&\cdot&b\\\cdot&\cdot&\cdot&c}}_{M}\begin{bmatrix}R\\G\\B\\Am\end{bmatrix} =  \begin{bmatrix}X\\Y\\Z\end{bmatrix} 
+Am
+a,b,c
+X,Y,Z
+Am = aR+bG+cB

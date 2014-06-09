@@ -1,0 +1,8 @@
+f\colon \mathbb R^{n} \to \mathbb R^{m}
+\{(x,f(x)) \mid x \in \mathbb{R}^n\}
+\mathbb R^{n+m}
+\{B_k\}_{k \in \mathbb{N}}
+\mathbb{R}^m
+\operatorname{graph}f = \left\{(x,y) \in \mathbb{R}^{n+m} \mid y = f(x)\right\}.
+ \begin{align*} y \neq f(x) &\iff  \exists k \in \mathbb{N}\colon (f(x) \in B_k) \land (y \notin B_k) \\ &\iff \exists k \in \mathbb{N}\colon (x,y) \in f^{-1}(B_k) \times B_{k}^c \end{align*} 
+\mathbb{R}^{n+m} \setminus \operatorname{graph}f = \bigcup_{k \in \mathbb{N}} f^{-1}(B_k) \times B_{k}^c.

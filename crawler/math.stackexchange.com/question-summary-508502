@@ -1,0 +1,11 @@
+ \forall x \lnot ( \forall y ~ \operatorname{eats}(x,y) \lnot \operatorname{killedby}(x,y)) \lor \operatorname{food}(y) 
+ \forall x  \forall y \lnot(\operatorname{eats}(x,y) \land \lnot \operatorname{killedby}(x,y)) \lor \operatorname{food}(y) 
+\forall x \forall y[\operatorname{eats}(x,y) \land \lnot \operatorname{killedby}(x,y) \to \operatorname{food}(y)]
+\quad\quad\quad \quad\quad \quad\quad\quad \quad\{\forall x \forall y \operatorname{eats}(x,y)\} \land \lnot \operatorname{killedby}(x,y) \to \operatorname{food}(y)
+\forall x \forall y[\neg[\operatorname{eats}(x,y) \land \lnot \operatorname{killedby}(x,y)] \lor \operatorname{food}(y)]
+\forall y \forall x[\neg[\operatorname{eats}(x,y) \land \lnot \operatorname{killedby}(x,y)] \lor \operatorname{food}(y)]
+\forall x(\varphi(x) \lor C)
+(\forall x\varphi(x) \lor C)
+C
+x
+\forall y [\forall x\neg[\operatorname{eats}(x,y) \land \lnot \operatorname{killedby}(x,y)] \lor \operatorname{food}(y)]

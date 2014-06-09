@@ -1,0 +1,21 @@
+p(\mu \mid \sigma, \boldsymbol{w}, \boldsymbol{y}) \propto \exp\left[-\frac{1}{2\sigma^2}\sum_{t=1}^T\left(\frac{(y_t-\mu)^2}{w_t^2}\right) \right]
+\boldsymbol{w} = (w_1, w_2, \cdots, w_t)
+\boldsymbol{y} = (y_1, y_2, \cdots, y_t)
+p(\mu \mid \sigma, \boldsymbol{w}, \boldsymbol{y}) \propto \exp\left[-\frac{\sum_{t=1}^T(1/w_t^2)}{2\sigma^2}\left(\mu-\frac{\sum_{t=1}^T(y_t/w_t^2)}{\sum_{t=1}^T(1/w_t^2)} \right)^2  \right]
+\displaystyle \mu \mid \sigma, \boldsymbol{w}, \boldsymbol{y} \sim N\left(\frac{\sum_{t=1}^T(y_t/w_t^2)}{\sum_{t=1}^T(1/w_t^2)}, \frac{\sigma^2}{\sum_{t=1}^T(1/w_t^2)} \right) 
+\mu
+A_T
+B_T
+C_T
+A_T
+\mu
+C_T
+\mu=0
+(-2B_T)
+\mu
+\mu=0
+ \sum_{t}\frac{(y_t-\mu)^2}{w_t^2}=A_T\mu^2-2B_T\mu+C_T=A_T\left(\mu-\frac{B_T}{A_T}\right)^2+C_T-\frac{B_T^2}{A_T}, 
+ A_T=\sum_{t}\frac{1}{w_t^2}. 
+ C_T=\sum_{t}\frac{y_t^2}{w_t^2}. 
+ B=\sum_{t}\frac{y_t}{w_t^2}. 
+ p(\mu\mid\sigma,y,w)\propto\exp\left(-\frac{A_T}{2\sigma^2}\left(\mu-\frac{B_T}{A_T}\right)^2\right). 

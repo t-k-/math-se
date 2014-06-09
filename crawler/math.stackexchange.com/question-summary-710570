@@ -1,0 +1,31 @@
+ (a+b)^n = \sum \limits_{k=0}^{n}\binom{n}{k}a^{n-k}b^{k} 
+ (a+b)^{n+1} = (a+b)(a+b)^n=\dotsb = a^{n+1} + b^{n+1} + \sum_{k=1}^{n}\binom{n}{k}a^{n+1-k}b^{k} + \sum_{k=1}^{n}\binom{n}{k-1}a^{n-1-k}b^{k} 
+ \sum_{k=1}^{n}\binom{n}{k}a^{n+1-k}b^{k} + \sum_{k=1}^{n}\binom{n}{k-1}a^{n-1-k}b^{k} = \sum_{k=1}^{n}\binom{n+1}{k}a^{n+1-k}b^{k} 
+a^{n+1-k}
+(a+b)^{n+1}=a^{n+1} + b^{n+1} + \sum_{k=1}^{n}\binom{n}{k}a^{n+1-k}b^{k} + \sum_{k=1}^{n}\binom{n}{k-1}a^{n+1-k}b^{k}
+\binom{n}{k}+\binom{n}{k-1}=\binom{n+1}{k}
+(a+b)^{n+1} = (a+b)(a+b)^n = \text{(use induction)} = (a+b)\sum_{k=0}^n{n\choose k}a^{n-k}b^k=\\ =a\sum_{k=0}^n{n\choose k}a^{n-k}b^k + b\sum_{k=0}^n{n\choose k}a^{n-k}b^k =\\ =\sum_{k=0}^n{n\choose k}a^{n-k+1}b^k+\sum_{k=0}^n{n\choose k}a^{n-k}b^{k+1}\\
+(a+b)^{n+1} = \left[a^{n+1}+\sum_{k=1}^n{n\choose k}a^{n-k+1}b^k\right] + \left[\sum_{k=0}^{n-1}{n\choose k}a^{n-k}b^{k+1} + b^{n+1}\right]=\\ =\sum_{k=1}^n{n\choose k}a^{n-k+1}b^k +\sum_{k=0}^{n-1}{n\choose k}a^{n-k}b^{k+1} + a^{n+1}+b^{n+1}.
+0
+n-1
+k
+l=k+1
+k=l-1
+\sum_{k=0}^{n-1}{n\choose k}a^{n-k}b^{k+1} =\sum_{l=1}^{n}{n\choose l-1}a^{n-l+1}b^{l}.
+(a+b)^{n+1} = \sum_{k=1}^n{n\choose k}a^{n-k+1}b^k +\sum_{l=1}^{n}{n\choose l-1}a^{n-l+1}b^{l} + a^{n+1}+b^{n+1}.
+k
+l
+1
+n
+2
+(a+b)^{n+1} = a^{n+1}+b^{n+1} +\sum_{k=1}^n\left({n\choose k} + {n\choose k-1}\right)a^{n-k+1}b^k
+{n\choose k}+{n\choose k-1}={n+1\choose k},
+(a+b)^{n+1} = a^{n+1}+b^{n+1} +\sum_{k=1}^n{n+1\choose k}a^{n-k+1}b^k
+\binom{n}{k}=0
+k\notin\left\{ 0,\dots,n\right\} 
+k\in\mathbb{Z}
+\binom{n}{k-1}+\binom{n}{k}=\binom{n+1}{k}
+k
+\mathbb{Z}
+\left(a+b\right)^{n+1}=\left(a+b\right)\sum\binom{n}{k}a^{k}b^{n-k}=\sum\binom{n}{k}a^{k+1}b^{n-k}+\sum\binom{n}{k}a^{k}b^{n+1-k}
+=\sum\left[\binom{n}{k-1}+\binom{n}{k}\right]a^{k}b^{n+1-k}=\sum\binom{n+1}{k}a^{k}b^{n+1-k}

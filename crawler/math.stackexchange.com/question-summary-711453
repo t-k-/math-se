@@ -1,0 +1,30 @@
+ e_{i} = b_{i} - \sum_{j=1}^na_{i,j}x_{j} \\(i=1,2,...m)  
+a_{i,j}
+(1 \leq i \leq m\,,\ 1 \leq\  j \leq n)
+b_{i}
+(1 \leq i \leq m)
+x_{1}, ...,x_{n}
+|e_{j}|
+i
+j
+e=\begin{bmatrix}e_1\\\vdots\\ e_m\end{bmatrix}
+b=\begin{bmatrix}b_1\\\vdots\\ b_m\end{bmatrix}
+A=\begin{bmatrix}a_{11}&\ldots&a_{1n}\\\vdots\\ a_{m1}&\ldots&a_{mn}\\\end{bmatrix}
+x=\begin{bmatrix}x_1\\\vdots\\ x_n\end{bmatrix}
+e=b-Ax
+t
+\max_j |e_j|
+e_j\leq t~~\forall j=1,\ldots,m\\ -e_j\leq t ~~\forall j=1,\ldots,m
+\bf{1}= \begin{bmatrix}1\\\vdots\\ 1\end{bmatrix}
+m
+1
+e\leq t1\\ -e\leq t1
+\leq
+b-Ax\leq t1\\ Ax-b\leq t1
+\max_{x,t} ~~t\quad\text{subject to}\\b-Ax\leq t1 \\ Ax-b\leq t1
+\max_{x,t} ~~t\quad\text{subject to}\\-Ax-t1\leq -b \\ Ax-t1\leq b
+z=[x^T~~t]^T
+c=[\underbrace{0\ldots 0}_{n \text{ times}}~~1]^T
+d=[-b^T~~b^T]^T
+H=\begin{bmatrix}-A& -1\\A& -1\\\end{bmatrix}
+\max_{z} ~~c^Tz\quad\text{subject to}\\Hz\leq d

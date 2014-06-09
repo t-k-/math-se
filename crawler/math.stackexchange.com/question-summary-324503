@@ -1,0 +1,12 @@
+ \lim_{n\rightarrow\infty}{\frac{n!}{n^{n}}\left(\sum_{k=0}^{n}{\frac{n^{k}}{k!}}-\sum_{k=n+1}^{\infty}{\frac{n^{k}}{k!}}  \right)} 
+e^{n}=1+n+\frac{n^{2}}{2!}+\cdots+\frac{n^{n}}{n!}+\frac{1}{n!}\int_{0}^{n}{e^{x}(n-x)^{n}dx}
+ \lim_{n\rightarrow\infty}{\frac{n!}{n^{n}}\left(e^{n}-2\frac{1}{n!}\int_{0}^{n}{e^{x}(n-x)^{n}dx}  \right)      }
+\int_0^n dx \: e^x (n-x)^n = n^{n+1} \int_0^1 du \: e^{n u} (1-u)^n = n^{n+1}\int_0^1 du \: e^{n [u+\log(1-u)]} 
+n \rightarrow \infty
+u=0
+n^{n+1} \int_0^{\infty} du e^{-n u^2/2} = n^{n+1} \sqrt{\frac{2 \pi}{n}} 
+u+\log{(1-u)} \approx -u^2/2-u^3/3
+n^{n+1} \int_0^{\infty} du e^{-n u^2/2} e^{-n u^3/3}
+u \sim 1/\sqrt{n}
+n u^3 \sim 1/\sqrt{n}
+n^{n+1} \int_0^{\infty} du\: e^{-n u^2/2} \left (1-\frac{n u^3}{3}\right) = n^{n+1} \left (\sqrt{\frac{2 \pi}{n}} - \frac{2}{3 n} \right )

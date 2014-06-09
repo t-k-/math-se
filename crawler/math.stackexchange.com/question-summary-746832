@@ -1,0 +1,5 @@
+\lim_{n\to\infty} \sum_{k=1}^{n/2} \left(\frac{en}{2k}\right)^{2k} \frac{1}{\sqrt{\pi k}}^{\frac{3n}{\log_2{n}}}\,?
+0
+f(t)=\left(\frac{en}t\right)^t
+n
+  \sum_{k=1}^{n/2} \left(\frac{en}{2k}\right)^{2k} \frac{1}{\sqrt{\pi k}}^{\frac{3n}{\log_2{n}}}\leq \frac{1}{\sqrt{\pi }}^{\frac{3n}{\log_2{n}}}\,\sum_{k=1}^{n/2} \left(\frac{en}{2k}\right)^{2k}  =\pi^{-\frac{3n}{2\log_2n}}\,\sum_{k=1}^{n/2} \left(\frac{en}{2k}\right)^{2k}\\ \leq\pi^{-\frac{3n}{2\log_2n}}\,\frac n2\, \left(\frac{en}{2(n/2)}\right)^{2(n/2)} =\pi^{-\frac{3n}{2\log_2n}}\,\frac n2\, e^{n} \leq\pi^{-\frac{3n}{2\log_2n}}\,\pi^n\\ =\pi^{n-\frac{3n}{2\log_2n}}\leq\pi^{-n}\to0 

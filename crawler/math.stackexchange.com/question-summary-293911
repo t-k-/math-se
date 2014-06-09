@@ -1,0 +1,31 @@
+A(x)=\int_{-2}^{x} f(t)\ \mathrm{d}t
+f(t)=-1
+t<0
+f(t)=1
+t \geq 0
+\epsilon
+\delta
+\lim_{x \rightarrow 0} A(x)
+L
+\epsilon>0
+\delta>0
+\left|A(x)-L\right|<\epsilon
+0<\vert x\vert<\delta
+L=-2
+\delta=\epsilon
+x=\frac{1}{2}\epsilon<\delta
+\lim_{x \rightarrow 0} A(x)=L=-2
+\left|A(x)-L\right|=\left|\int_{-2}^{\frac{1}{2}\epsilon} f(t)\ \mathrm{d}t+2\right|=\left|\int_{-2}^{0} -1\ \mathrm{d}t+\int_{0}^{\frac{1}{2}\epsilon} 1\ \mathrm{d}t+2\right| = \left|\frac{1}{2}\epsilon\right|=\frac{1}{2}\epsilon<\epsilon
+x=\frac12\epsilon
+\forall x\in \mathbb{R}^*
+x=\frac12\epsilon
+x\to 0^-
+A(0)=-2
+x>0
+x<0
+\epsilon>0
+\delta=\epsilon
+A(x)=\int_{-2}^0f(t)\, dt+\int_0^xf(t)\, dt=\int_{-2}^0-1\, dt+\int_0^xf(t)\, dt=-2+\int_0^xf(t)\, dt
+A(x)=-2+\int_0^xf(t)\, dt=-2+\int_0^x1\, dt=-2+\left|x\right|
+A(x)=-2+\int_0^xf(t)\, dt=-2+\int_0^x-1\, dt=-2-x=-2+\left|x\right|
+\left|x\right|<\delta\implies \left|A(x)-A(0)\right|=\left|-2+\left|x\right|+2\right|=\left|x\right|<\delta=\epsilon

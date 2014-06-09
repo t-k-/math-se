@@ -1,0 +1,52 @@
+A(s)
+s
+A:\mathbb{R}\to \mathbb{R}^{N^2}
+ \frac{d}{ds} \det A(s) = \operatorname{Tr} \left(\tilde{A}(s) A'(s)\right)
+A'(s) = \frac{d}{ds}A(s)
+\tilde{A}(s)
+A(s)
+A:\mathbb{R}^d\to \mathbb{R}^{N^2}
+d
+\operatorname{Tr}\left(\tilde{A}(s) A''(s)\right)
+A'(s)
+d = 1
+N = 2
+A(s) = s I
+A
+ \tilde{A} = [ \det M_{kl} ] 
+ \frac{\partial}{\partial x_i} \det A = \mathrm{Tr}\left( [ \det M_{kl} ] \frac{\partial A}{\partial x_i} \right)
+ \frac{\partial^2}{\partial x_i \partial x_j} \det A = \mathrm{Tr}\left( \tilde{A} \frac{\partial^2 A}{\partial x_i \partial x_j} + \left[ \mathrm{Tr}\left( \tilde{M}_{kl} \frac{\partial M_{kl}}{\partial x_j} \right) \right]_{kl} \frac{\partial A}{\partial x_i} \right) 
+ k 
+ l 
+\partial \tilde{A}_{ij} = \partial \det A_{\hat{i}\hat{j}}
+A_{\hat{i}\hat{j}}
+i
+j
+A(0)
+i\neq j
+A_{\hat{i}\hat{j}}
+N-2
+\partial\tilde{A}_{ij} = 0
+\partial\tilde{A}(0)
+A(0)
+A_{\hat{i}\hat{j}}
+\partial \tilde{A}(0) = 0
+\partial^2 \det A (0) = 0
+A
+N-2
+A_{11}(0) = A_{22}(0) = 0
+i > 2
+\partial\tilde{A}_{ii}(0) = 0
+\partial\tilde{A}_{11}
+ \partial \det A_{\hat{1}\hat{1}}(0) = \partial A_{22}\prod_{i = 3}^N A_{ii}(0) 
+ \partial^2_{\mu\nu} \det A(0) = (\partial_{\mu} A_{11} \partial_\nu A_22 + \partial_\nu A_{22} \partial_\mu A_{11}) \prod_{i = 3}^N A_{ii} 
+d\geq 3
+d = 1
+A_{11}'A_{22}' \neq 0
+d = 2
+\nabla A_{11}
+\nabla A_{22}
+\det A \neq 0
+\tilde{A} = (\det A) A^{-1}
+ \partial^2_{\mu\nu} \det(A) = \operatorname{Tr} (\tilde{A}\partial^2_{\mu\nu}A) + \frac{1}{\det A} \left( \operatorname{Tr} X_\mu \operatorname{Tr} X_\nu - \operatorname{Tr}(X_\mu X_\nu)\right) 
+X_\mu = \tilde{A}\partial_\mu A

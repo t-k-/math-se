@@ -1,0 +1,38 @@
+\frac{f(x+h)-f(x)}{h} = f'(c)
+c
+x
+x+h
+\frac 1h\Delta_h f(x) = f'(c)
+\Delta_h f(x) =f(x+h)-f(x)
+c
+x
+x+nh
+\frac{1}{h^n}\Delta_h^nf(x) = f^{(n)}(c)
+\left. \Delta_h^n ( f(x) - P(x) )\right|_{x=a} =\sum_{k=0}^n (-1)^{n-k} \binom{n}{k}( f(a+kh)-P(a+kh) ) = 0 
+\left.\Delta_h^n f(x)\right|_{x=a} = \left.\Delta_h^n P(x)\right|_{x=a} = h^n P^{(n)}(a)\tag{*1}
+a < x_1 < a+h < x_2 < a+2h < \cdots a + (n-1)h < x_n < a+nh
+f'(x) - P'(x)
+x_i
+(n-1)
+b \in (a, a+nh)
+f^{(n)}(b) - P^{(n)}(b) = 0 \quad\iff\quad f^{(n)}(b) = P^{(n)}(b)\tag{*2}
+P(x)
+n
+P^{(n)}(x)
+P^{(n)}(a) = P^{(n)}(b)
+(*1)
+(*2)
+\frac{1}{h^n}\left.\Delta_h^n f(x)\right|_{x=a} = f^{(n)}(b)\quad\text{ for some }b \in (a, a + nh)
+\frac{1}{h^{2}}\Delta_{h}^{2}f(x) = 2f''(d) - f''(c)
+c
+x
+x+h
+d
+x
+x + 2h
+x
+h
+2h
+f(x+h) = f(x) + hf'(x) + \frac{f''(c)}{2!}h^{2}
+f(x+2h) = f(x) + 2hf'(x) + \frac{f''(d)}{2!}(2h)^{2}
+\Delta_{h}

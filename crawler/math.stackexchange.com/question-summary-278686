@@ -1,0 +1,6 @@
+\int^{\infty}_{-\infty}\int^{x}_{-\infty}xe^{-x^2}e^{-y^2}dydx
+\int^{\infty}_{-\infty}e^{-x^2}dx
+ \int_{-\infty}^\infty \int_{-\infty}^x x e^{-x^2} e^{-y^2}\ dy\ dx = \int_{-\infty}^\infty e^{-y^2} \int_{y}^\infty x e^{-x^2}\ dx\ dy 
+ \begin{eqnarray} \int_{-\infty}^{\infty} x e^{-x^2} \left(\int_{-\infty}^{x} e^{-y^2} dy\right) dx &=& -\frac{1}{2}\int_{-\infty}^{\infty} \left(\int_{-\infty}^{x} e^{-y^2} dy\right)d(e^{-x^2}) \\ &=&\frac{1}{2}\int_{-\infty}^{\infty}e^{-x^2}d\left(\int_{-\infty}^{x} e^{-y^2} dy\right) \\ &=&\frac{1}{2}\int_{-\infty}^{\infty}e^{-x^2}\left(e^{-x^2}dx\right) \\ &=&\frac{1}{2}\int_{-\infty}^{\infty}e^{-2x^2}dx \\ &=&\frac{1}{2}\sqrt{\frac{\pi}{2}}. \end{eqnarray} 
+\int_{-\infty}^\infty xe^{-x^2} \int_{-\infty}^x e^{-y^2}\, dy \, dx =  \frac{\sqrt \pi}{2} \int_{-\infty}^\infty xe^{-x^2} \left[\operatorname{erf}x \right]_{-\infty}^x \, dx =  \frac{\sqrt \pi}{2}\int_{-\infty}^\infty (\operatorname{erf} x+1)x e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2\sqrt 2}
+\frac{d}{dx}\operatorname{erf} x = \frac{2e^{-x^2}}{\sqrt{\pi}}

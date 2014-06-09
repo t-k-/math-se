@@ -1,0 +1,42 @@
+\lim_{n\to\infty}\left(\dfrac{1}{2}+\dfrac{3}{2^2}+\cdots+\dfrac{2n-1}{2^n}\right)
+S=\dfrac{1}{2}+\dfrac{3}{2^2}+\cdots+\dfrac{2n-1}{2^n}
+\dfrac{1}{2}S=0+\dfrac{1}{2^2}+\cdots+\dfrac{2n-3}{2^n}+\dfrac{2n-1}{2^{n+1}}
+\dfrac{1}{2}S=\dfrac{1}{2}+\dfrac{2}{2^2}+\dfrac{2}{2^3}+\cdots+\dfrac{2}{2^n}-\dfrac{2n-1}{2^{n+1}}
+S=3-\dfrac{4}{2^n}-2\cdot\dfrac{n}{2^n}+\dfrac{1}{2^n}\longrightarrow 3,n\longrightarrow 3
+S=\sum_{n=1}^{\infty}nx^n,|x|<1|
+S=x\sum_{n=1}^{\infty}nx^{n-1}=x\left(\sum_{n=1}^{\infty}x^n\right)'=x\left(\dfrac{x}{1-x}\right)'
+T(x)
+x=1
+T(x) = \sum_{n\ge 1}\frac{2n-1}{2^{xn}} = \frac{1}{\sqrt{2}^x} \sum_{n\ge 1}\frac{2n-1}{2^{xn-x\times1/2}} = \frac{1}{\sqrt{2}^x} \frac{1}{x} \sum_{n\ge 1}\frac{x(2n-1)}{\sqrt{2}^{x(2n-1)}}.
+S(x) = \sum_{n\ge 1}\frac{x(2n-1)}{\sqrt{2}^{x(2n-1)}}
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
+g^*(s)
+g(x)
+Q(s)
+S(x)
+s=1
+q
+\lambda_k = 1, \quad \mu_k = 2k-1 \quad \text{and} \quad g(x) = x\sqrt{2}^{-x}.
+\int_0^\infty x\sqrt{2}^{-x} x^{s-1} dx = \int_0^\infty \sqrt{2}^{-x} x^{(s+1)-1} dx = \frac{1}{(1/2\log 2)^{s+1}}\Gamma(s+1).
+\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} = \sum_{k\ge 1} \frac{1}{(2k-1)^s} = (1-2^{-s})\zeta(s).
+Q(s) = \frac{1}{(1/2 \log 2)^{s+1}} (1-2^{-s}) \Gamma(s+1) \zeta(s).
+\frac{1}{2\pi i}\int_{3/2-i\infty}^{3/2+i\infty} Q(s)/x^s ds.
+\mathrm{Res}(Q(s)/x^s; s=1) =  \frac{1}{x} \frac{1}{(1/2 \log 2)^2} (1-2^{-1})\Gamma(1) = \frac{2}{x(\log 2)^2}.
+- \sum_{q\ge 1} (1/2 \log 2)^{q-1} (1-2^q) \frac{(-1)^{q-1}}{(q-1)!}  \frac{B_{q+1}}{q+1} x^q.
+- x \sum_{q\ge 1} (1/2 \log 2)^{q-1} (1-2^q) (-1)^{q-1} \frac{B_{q+1}}{(q+1)!} q x^{q-1}.
+t
+t=-1/2\log 2 \times x
+t=-\log 2 \times x
+x=1
+\frac{t}{e^t-1} = \sum_{m\ge 0} B_m \frac{t^m}{m!}.
+-1 + \frac{t}{e^t-1} =  t \sum_{m\ge 1} B_m \frac{t^{m-1}}{m!}
+\left(-\frac{1}{t} + \frac{1}{e^t-1}\right)' = \sum_{m\ge 2} \frac{B_m}{m!} (m-1) t^{m-2} = \sum_{m\ge 1} \frac{B_{m+1}}{(m+1)!} m t^{m-1}.
+\frac{1}{t^2} - \frac{e^t}{(e^t-1)^2} = \sum_{m\ge 1} \frac{B_{m+1}}{(m+1)!} m t^{m-1}.
+-x \left(\frac{1}{x^2 (1/2\log 2)^2} - \frac{1/\sqrt{2}^x}{(1/\sqrt{2}^x-1)^2}\right).
+-2x \left(\frac{1}{x^2 (\log 2)^2} - \frac{1/2^x}{(1/2^x-1)^2}\right).
+ \frac{2}{x(\log 2)^2} - \frac{1}{x (1/2\log 2)^2} + x\frac{1/\sqrt{2}^x}{(1/\sqrt{2}^x-1)^2} + \frac{2}{x (\log 2)^2} - 2x\frac{1/2^x}{(1/2^x-1)^2}.
+S(x) = x\frac{1/\sqrt{2}^x}{(1/\sqrt{2}^x-1)^2} - 2x\frac{1/2^x}{(1/2^x-1)^2}.
+T(x) = \frac{1/2^x}{(1/\sqrt{2}^x-1)^2} - \frac{2}{\sqrt{2}^x} \frac{1/2^x}{(1/2^x-1)^2}.
+T(1) = \frac{1/2}{(1/\sqrt{2}-1)^2} - \sqrt{2}\frac{1/2}{(1/2-1)^2} = \frac{1/2 ((1/\sqrt{2}+1)^2)}{(1/2-1)^2} - 2\sqrt{2} \\ = 2 ((1/\sqrt{2}+1)^2) -2\sqrt{2} = 2 (3/2+2/\sqrt{2}) -2\sqrt{2} = 3.

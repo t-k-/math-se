@@ -1,0 +1,47 @@
+\mathbb{R}^n
+\mathbb{R}^n
+N
+a_j<b_j
+c_j<d_j
+ \mathcal{S}_1: \{ p_i \big|\forall j,i,k: a_j < p_i < b_k\}, \mathcal{S}_2: \{ h_i \big|\forall j,i,k: c_j < h_i < d_k \} 
+\mathcal{C}_1
+\mathcal{C}_2
+ \mathcal{C}_1: \bigg\{\sum_{i=1}^N \omega_i p_i \bigg| \forall i: \omega_i > 0 \wedge \sum_{i=1}^N \omega_i =1\bigg\}, \mathcal{C}_2: \bigg\{\sum_{i=1}^N \sigma_i h_i \bigg| \forall i: \sigma_i > 0 \wedge \sum_{i=1}^N \sigma_i =1\bigg\} 
+ \mathcal{C}_1: \{ \hat p \big|\forall i,\hat p,k: a_i < \hat p < b_k\}, \mathcal{C}_2: \{ \hat h \big|\forall i,\hat h,k: c_i < \hat h < d_k \} 
+ \mathcal{C}_1 \cap \mathcal{C}_2 \neq \emptyset  \wedge \bigg(\exists f(x) \big| f(x) = \sum_{n=1}^N \lambda_n x_n  \wedge \forall \hat p,x,\hat h: \hat p < f(x) < \hat h \bigg) 
+\mathcal{C}_1 \cap \mathcal{C}_2 \neq \emptyset 
+ \exists \mathcal{D} \big| \mathcal{D}\subset\mathcal{C}_1,\mathcal{C}_2 \equiv \exists \hat p, \hat h \big| \hat p = \hat h 
+p
+h
+ \forall \hat p,x,\hat h: \hat p \leq f(x) \leq \hat h 
+x\in \mathcal{C}_1, \mathcal C_2
+ \forall \hat p,x,\hat h: \hat p < f(x) <\hat h 
+H
+C_1 \subset H
+C_2 \subset H^c
+C_1 \cap C_2 = \varnothing
+H \cap H^c = \varnothing
+d
+C_1
+C_2
+\mathbb{R}^n
+C_1
+C_2
+p_1
+p_2
+|p_1 - p_2| = d
+d > 0
+\vec{v} = p_1 - p_2
+P \perp \vec{v}
+p_0 = p_2 + \frac{\vec{v}}{2} \in P
+C_1
+C_2
+\mathrm{dist}(C_i,P) = \frac{d}{2}
+d = \inf_{p_1 \in C_1,\ p_2 \in C_2}|p_1 - p_2|.
+L
+B = B(p_0, \frac{d}{2}) \ni p_i
+p_0
+\frac{d}{2}
+r_i \in L_i \cap B
+\mathrm{dist}(r_i,p_0) < \frac{d}{2}
+\mathrm{dist}(r_i,p_{2-i}) \leq \mathrm{dist}(r_i,p_0) + \mathrm{dist}(p_0,p_{2-i}) < d

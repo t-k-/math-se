@@ -1,0 +1,69 @@
+C_n
+n
+\frac{1}{n+1}\binom{2n}{n}
+2^{2n + 1}
+0
+3
+1
+n
+i
+2i
+C_i\cdot 2^{2n-2i}
+C_i
+2^{2n-2i}
+(2i + 1)
+i
+2^{2n + 1}
+ \sum_{i = 0}^n 2^{2n-2i}C_i = \sum_{i = 0}^n \frac{2^{2n-2i}}{i+1}\binom{2i}{i} 
+N=2 n+1
+S_k= \sum_{i=1}^k X_i 
+X_i
++1, -1
+S_0=0
+A=\max_{1 \leq k \leq N} S_k \geq 1
+N
+l
+T_l
+l
+A
+T_1 \leq N
+P(T_l \leq r) = 2 P(S_r \geq l) - P(S_r = l)
+ P(T_1 \leq N) = 2 P(S_N \geq 1 ) - P(S_N=1)= 
+ =1- \binom {2n+1}{n+1} \ 2^{-(2n+1)} . 
+(S_r>l) \subset (T_l \leq r)
+P(S_r >l)
+(T_l = r \cap S_r < l) = (T_l = r \cap S_r > l) = \emptyset
+ P(T_l \leq r \cap S_r < l ) = P(T_l \leq r \cap S_r > l ). 
+ P(T_l < r \cap S_r <l) = \sum_{k=1}^{r-1} P(T_l=k \cap S_r<l) = \sum_{k=1}^{r-1} P(T_l=k \cap S_r-S_k<0) 
+T_l=k
+S_k=l
+(T_l=k) \in \sigma\{X_1,...,X_k\}
+S_r-S_k <0 \in \sigma \{X_{k+1},...,X_r\}
+S_r-S_k
+ P(T_l=k \cap S_r-S_k<0) = P(T_l=k)P(S_r-S_k<0)=P(T_l=k)P(S_r-S_k>0) 
+ P(T_l \leq r) = P(T_l \leq r \cap S_r \geq l) + P(T_l \leq r \cap S_r < l)= 
+ =P(S_r \geq l) + P(S_r > l )=2 P(S_r \geq l) - P(S_r = l ). 
+2n+1
+U_T
+2n+2
+U_T
+U_H
+\sigma\in U
+U_T\cap U_H=\varnothing
+|U_T|=\frac12\binom{2n+2}{n+1}
+\sigma\in U_T
+\sigma
+2n+1
+2n+1
+U_T
+\frac12\binom{2n+2}{n+1}
+2^{n+1}
+2n+1
+2^{n+1}-\frac12\binom{2n+2}{n+1}
+2n+1
+2^{2n+1}
+n+1\le t\le 2n+1
+\displaystyle\sum_{t=n+1}^{2n+1} \bigg[\binom{2n+1}{t}-\binom{2n+1}{t+1}\bigg]=
+\big[\binom{2n+1}{n+1}-\binom{2n+1}{n+2}\big]+\big[\binom{2n+1}{n+2}-\binom{2n+1}{n+3}\big]+\big[\binom{2n+1}{n+3}-\binom{2n+1}{n+4}\big]+\cdots+\big[\binom{2n+1}{2n+1}-\binom{2n+1}{n+2}\big]
+=\binom{2n+1}{n+1}
+1-\binom{2n+1}{n+1}/2^{2n+1}

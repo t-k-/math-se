@@ -1,0 +1,52 @@
+z: \mathbb{R}^n \rightarrow \mathbb{R}
+ z^*(x) := \limsup_{x' \rightarrow x}\ z(x') 
+P
+[0,T]
+V^P: [0,T]\times \mathbb{R}^2 \rightarrow \mathbb{R}
+mesh(P)
+ \bar{V}(t,x,y) := \limsup_{mesh(P)\rightarrow 0, (t',x',y')\rightarrow (t,x,y)} V^P(t',x',y') 
+f_n: \mathbb{R}^n \rightarrow \mathbb{R}
+ g(x) := \limsup_{n\rightarrow \infty}\ \sup_{x'\in\mathbb{R}^n} f_n(x') 
+\epsilon
+\delta
+(x_\alpha)_{\alpha\in I}
+(I,\preceq)
+\limsup x_\alpha = \lim_{\alpha\in I} \sup_{\beta\succeq\alpha} x_\beta=\inf_{\alpha\in I} \sup_{\beta\succeq\alpha} x_\beta.
+x'\to x
+\mathbb R^n
+\mathbb R^n\setminus\{x\}
+x'\le y'
+\Leftrightarrow
+d(y',x)\le d(x',x)
+\mathbb R^n
+(P,t',x',y')
+P
+t'\ne t
+x'\ne x
+y'\ne y
+(P_1,t'_1,x'_1,y'_1)\le (P_2,t'_2,x'_2,y'_2)
+\Leftrightarrow
+mesh(P_2)\le mesh(P_1)
+(t'_2,x'_2,y'_2)
+(t,x,y)
+(t'_1,x'_1,y'_1)
+\limsup
+\lim
+(P,x)\mapsto V(P,x)
+P\mapsto m(P)
+x
+P
+m
+m
+L
+V(P,x)
+x\to x_0
+m(P)\to0
+(\alpha,\mu)
+\alpha\gt0
+\mu\gt0
+(\alpha,\mu)\mapsto W(\alpha,\mu)
+ \forall\varepsilon\gt0, \exists\alpha\gt0, \exists \mu\gt0, \forall (x,P), [|x-x_0|\leqslant\alpha, m(P)\leqslant\mu ]\implies [|V(P,x)-L|\leqslant\varepsilon ]. 
+ \color{red}{\limsup V(P,x)=\lim_{(\alpha,\mu)\to(0,0)}W(\alpha,\mu)}, 
+ \color{purple}{W(\alpha,\mu)=\sup\mathcal V} \quad\text{where}\quad\color{purple}{\mathcal V=\{V(P,x);|x-x_0|\leqslant\alpha, m(P)\leqslant\mu\}}. 
+ \color{brown}{\lim_{(\alpha,\mu)\to(0,0)}W(\alpha,\mu)=\inf\mathcal W} \quad\text{where}\quad\color{brown}{\mathcal W=\{W(\alpha,\mu); \alpha>0,\mu>0\}}. 

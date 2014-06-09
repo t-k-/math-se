@@ -1,0 +1,29 @@
+cos(x) = 1-\frac{x^2}{2!}+\frac{x^4}{4!}-...= \sum\nolimits_{i=0}^\infty \frac{(-1)^nx^{2n}}{(2n)!}
+cos(x+\frac{\pi}{2})=\sum\nolimits_{i=0}^\infty \frac{(-1)^n(x+\frac{\pi}{2})^{2n}}{(2n)!}
+(x+\frac{\pi}{2})^{2n}
+x^k
+2n-k
+k
+k
+2n-k
+\cos(x+\pi/2) = \sum_{n\ge 0} (-1)^n \frac{(x+\pi/2)^{2n}}{(2n)!}.
+\sum_{2n\ge k} \frac{(-1)^n}{(2n)!} \binom{2n}{k} (\pi/2)^{2n-k} = \frac{1}{k!} \sum_{2n\ge k} \frac{(-1)^n}{(2n-k)!} (\pi/2)^{2n-k}.
+\frac{1}{k!} \sum_{q\ge 0} \frac{(-1)^{q+k/2}}{(2q)!} (\pi/2)^{2q} = \frac{(-1)^{k/2}}{k!} \sum_{q\ge 0} \frac{(-1)^q}{(2q)!} (\pi/2)^{2q} = \frac{(-1)^{k/2}}{k!} \cos(\pi/2) = 0.
+\frac{1}{k!} \sum_{q\ge 0} \frac{(-1)^{q+(k+1)/2}}{(2q+1)!} (\pi/2)^{2q+1} \\= \frac{(-1)^{(k+1)/2}}{k!} \sum_{q\ge 0} \frac{(-1)^q}{(2q+1)!} (\pi/2)^{2q+1} = \frac{(-1)^{(k+1)/2}}{k!} \sin(\pi/2) = \frac{(-1)^{(k+1)/2}}{k!}.
+\cos(x+\pi/2) = \sum_{m\ge 0} \frac{(-1)^{m+1}}{(2m+1)!} x^{2m+1} = -\sin(x).
+j
+j
+(2)
+(3)
+(1)
+ \begin{align} \cos\left(x+\frac\pi2\right) &=\sum_{k=0}^\infty\frac{(-1)^k}{(2k)!}\left(x+\frac\pi2\right)^{2k}\\ &=\sum_{k=0}^\infty\sum_{j=0}^{2k}\frac{(-1)^k}{(2k)!}\binom{2k}{j}x^j(\pi/2)^{2k-j}\\ &=\sum_{j=0}^\infty\sum_{k=\lceil j/2\rceil}^\infty\frac{(-1)^k}{(2k)!}\binom{2k}{j}x^j(\pi/2)^{2k-j}\\ &=\sum_{j=0}^\infty\sum_{k=\lceil j/2\rceil}^\infty\frac{(-1)^k}{(2k-j)!j!}x^j(\pi/2)^{2k-j}\\ &=\sum_{j=0}^\infty\frac{x^j}{j!}\sum_{k=\lceil j/2\rceil}^\infty\frac{(-1)^k}{(2k-j)!}(\pi/2)^{2k-j}\tag{1} \end{align} 
+ \begin{align} \sum_{k=\lceil j/2\rceil}^\infty\frac{(-1)^k}{(2k-j)!}(\pi/2)^{2k-j} &=\sum_{k=0}^\infty\frac{(-1)^{k+j/2}}{(2k)!}(\pi/2)^{2k}\\ &=(-1)^{j/2}\cos(\pi/2)\\[12pt] &=0\tag{2} \end{align} 
+ \begin{align} \sum_{k=\lceil j/2\rceil}^\infty\frac{(-1)^k}{(2k-j)!}(\pi/2)^{2k-j} &=\sum_{k=0}^\infty\frac{(-1)^{k+(j+1)/2}}{(2k+1)!}(\pi/2)^{2k+1}\\ &=(-1)^{(j+1)/2}\sin(\pi/2)\\[12pt] &=(-1)^{(j+1)/2}\tag{3} \end{align} 
+ \begin{align} \cos\left(x+\frac\pi2\right) &=-\sum_{j=0}^\infty\frac{(-1)^j}{(2j+1)!}x^{2j+1}\\ &=-\sin(x)\tag{4} \end{align} 
+\cos(x+y)=\cos x\cos y-\sin x\sin y
+y
+f=\sin x+\cos \left(x+\dfrac \pi 2\right)
+\sin \dfrac \pi 2=1
+\cos \dfrac\pi 2=0
+\dfrac \pi 2
+\inf\{x>0:\cos x=0\}

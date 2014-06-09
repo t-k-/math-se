@@ -1,0 +1,102 @@
+G = \displaystyle\prod_{i=1}^n p^{k_i}\mathbb{Z}_{p^k}
+k,k_1,...,k_n
+(x_1,...,x_n) \in G
+p
+\displaystyle \prod_{i=1}^n \mathbb{Z}_{p^k}
+G
+(h_1,\ldots,h_n)
+n
+\sigma\in S_n
+\{1,\ldots,n\}
+0\leq j_1\leq\cdots\leq j_n\leq k
+\alpha_{ij}
+\begin{align*} h_{\sigma(1)} &\equiv 0 \pmod{p^{j_1}}\\ h_{\sigma(2)} &\equiv \alpha_{21}h_{\sigma(1)} \pmod{p^{j_2}}\\ h_{\sigma(3)} &\equiv \alpha_{31}h_{\sigma(1)} + \alpha_{32}h_{\sigma(2)} \pmod{p^{j_3}}\\ &\vdots\\ h_{\sigma(n)} &\equiv \alpha_{n1}h_{\sigma(1)} + \alpha_{n2}h_{\sigma(2)} + \cdots + \alpha_{n(n-1)}h_{\sigma(n-1)} \pmod{p^{j_n}} \end{align*}
+H
+\displaystyle \prod_{i=1}^n \mathbb{Z}_{p^k}
+n
+n=1
+H
+\mathbb{Z}_{p^k}
+p^{j_1}\mathbb{Z}_{p^k}
+j_1
+0\leq j_1 \leq k
+(h_1)\in H
+h_1\equiv 0\pmod{p^{j_1}}
+n
+\mathbb{Z}_{p^k}
+H
+\displaystyle \prod_{i=1}^{n+1}\mathbb{Z}_{p^k}
+H=\{e\}
+H
+h_i\equiv 0\pmod{p^{k}}
+i=1,\ldots,n
+H
+n+1
+j
+H
+n
+\mathbb{Z}_{p^k}
+h_j\equiv 0\pmod{p^k}
+\mathbb{Z}_{p^k}
+p^{r_i}\mathbb{Z}_{p^k}
+0\leq r_i\lt k
+\sigma(1)
+r_i
+0
+j_1 = r_{\sigma(1)}
+\mathbf{a}_1
+H
+\sigma(1)
+p^{j_1}
+j_1
+\mathbf{a}_{1}
+b_{\sigma(1)}=1
+b_i
+\mathbf{a}_1 = (a_1,\ldots,a_n) = p^{j_1}(b_1,\ldots,b_n) = a_{\sigma(1)}(b_1,\ldots,b_n)
+K
+H
+\sigma(1)
+\sigma(1)
+0
+p^{k}
+\sigma\colon \{2,\ldots,n+1\}\to\{1,\ldots,n+1\}-\{\sigma(1)\}
+\gamma_{rs}
+2\leq r\leq n+1
+1\leq s\lt r
+j_2\leq\cdots\leq j_{n+1}\leq k
+K
+j_1
+j_1\leq j_2
+\begin{align*} k_{\sigma(1)} &\equiv 0 \pmod{p^k}\\ k_{\sigma(2)} &\equiv 0 \pmod{p^{j_2}}\\ k_{\sigma(3)} &\equiv \gamma_{32}k_{\sigma(2)} \pmod{p^{j_3}}\\ &\vdots\\ k_{\sigma(n+1)} &\equiv \gamma_{(n+1)2}k_{\sigma(2)} + \cdots + \gamma_{(n+1)n}k_{\sigma(n)}\pmod{p^{j_{n+1}}}. \end{align*}
+K\cap\langle \mathbf{a}_1\rangle = \{e\}
+K+\langle \mathbf{a}_1\rangle\subseteq H
+H = K\oplus\langle\mathbf{a}_1\rangle
+\mathbf{h}\in H
+\sigma(1)
+\mathbf{h}
+p^{j_1}
+\sigma(1)
+m
+\mathbf{h}- m\mathbf{a}_1 \in K
+h\in K\oplus\langle\mathbf{a}_1\rangle
+\mathbf{h}=(h_1,\ldots,h_{n+1})\in \displaystyle\prod_{i=1}^{n+1}\mathbb{Z}_{p^k}
+\mathbf{h}\in H
+h_{\sigma(1)} = ma_{\sigma(1)} = mp^{j_1}
+\mathbf{h}
+K
+m
+h_{\sigma(1)}
+h_{\sigma(1)} \equiv 0 \pmod{p^{j_1}}.
+\begin{align*} h_{\sigma(2)} -ma_{\sigma(2)}&\equiv 0 \pmod{p^{j_2}}\\ h_{\sigma(3)} -ma_{\sigma(3)}&\equiv \gamma_{32}\bigl(h_{\sigma(2)}-ma_{\sigma(2)}\bigr) \pmod{p^{j_3}}\\ &\vdots\\ h_{\sigma(n+1)}-ma_{\sigma(n+1)} &\equiv \gamma_{(n+1)2}\bigl(h_{\sigma(2)}-ma_{\sigma(2)}\bigr) + \cdots + \gamma_{(n+1)n}\bigl(h_{\sigma(n)}-ma_{\sigma(n)}\bigr)\pmod{p^{j_{n+1}}} \end{align*}
+a_{\sigma(i)} = p^{j_1}b_{\sigma(i)} = a_{\sigma(1)}b_{\sigma(i)}
+ma_{\sigma(1)} \equiv h_{\sigma(1)} \pmod{p^{k}}
+i
+2\leq i\leq n+1
+j_i\leq k
+h_{\sigma(1)}b_{\sigma(k)}
+b_1,\ldots,b_n
+\gamma_{ij}
+\alpha_{ij}
+\mathbf{h}
+ma_{\sigma(i)} = ma_{\sigma(1)}b_{\sigma(i)} \equiv h_{\sigma(1)}b_{\sigma(i)}\pmod{p^{k}}.
+\begin{align*} h_{\sigma(1)} &\equiv 0 \pmod{p^{j_1}}\\ h_{\sigma(2)} -h_{\sigma(1)}b_{\sigma(2)}&\equiv 0 \pmod{p^{j_2}}\\ h_{\sigma(3)} -h_{\sigma(1)}b_{\sigma(3)} &\equiv \gamma_{32}\bigl(h_{\sigma(2)}-h_{\sigma(1)}b_{\sigma(2)}\bigr) \pmod{p^{j_3}}\\ &\vdots\\ h_{\sigma(n+1)}-h_{\sigma(1)}b_{\sigma(n+1)}  &\equiv \gamma_{(n+1)2}\bigl(h_{\sigma(2)}-h_{\sigma(1)}b_{\sigma(2)}\bigr) \\ &\qquad\qquad\mathop{+} \cdots  \mathop{+} \gamma_{(n+1)n}\bigl(h_{\sigma(n)}-h_{\sigma(1)}b_{\sigma(n)}\bigr)\pmod{p^{j_{n+1}}} \end{align*}

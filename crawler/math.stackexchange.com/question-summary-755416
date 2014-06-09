@@ -1,0 +1,13 @@
+m\geq n
+\mathrm{h}(n,m) \leq 2\mathrm{h}(n,\lfloor m/2 \rfloor)+\mathrm{h}(n-1,m-1)
+\mathrm{h}(1,m)=m \\ \mathrm{h}(n,m)=0,\quad \text{if} \quad n > m
+h(n,m)\leq m^{1+\log_2(n)}
+\mathrm{h}(n,m)\leq (2n)^{\log(m)}
+\mathrm{h}(n,m)\leq m^{1+\log_2(n)}
+n,m \geq 2
+ \mathrm{h}(n,m)\leq 2 \mathrm{h}(n,\lfloor m/2 \rfloor)+\mathrm{h}(n-1,m-1) \leq 2\sum_{i=2}^n \mathrm{h}(i,\lfloor m/2\rfloor) + \mathrm{h}(1,m) 
+\leq 2(n-1)(2n)^{m-1} + m \leq (2n)^{\log(m)}
+x = (2n)^{\log_2(m)}
+y = m^{1 + \log_2(n)}
+\begin{align}\log_2(x) &= \log_2\left((2n)^{\log_2(m)}\right)\\ &=\left(\log_2(m)\right) \cdot \left(\log_2(2n)\right) \text{ since } \log a^b = b\log a\\&=\left(\log_2(m)\right) \cdot \left(\log_2(2) + \log_2(n)\right) \text{ since } \log ab = \log a + \log b\\&=\left(\log_2(m)\right) \cdot \left(1 + \log_2(n)\right)\end{align}
+\begin{align}\log_2 (y) &= \log_2\left(m^{1 + \log_2(n)}\right)\\ &=\left(1 + \log_2(n)\right) \cdot \left(\log_ 2(m)\right)\\&=\log_2(x)\\\iff y &= x\end{align}

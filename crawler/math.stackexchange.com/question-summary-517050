@@ -1,0 +1,7 @@
+\displaystyle \int_{0}^{2\pi} \cos(x)^n \cos(nx)dx .
+\displaystyle \pi/2^n
+(\cos x)^n = \left(\frac{e^{ix}+e^{-ix}}{2}\right)^n = \frac{1}{2^n}\sum_{k=0}^n \binom{n}{k} e^{i(n-2k)x}.
+\int_0^{2\pi} e^{imx}\cos (nx)\,dx = 0
+m \neq \pm n
+\{ \cos (nx) : n \in \mathbb{N}\} \cup \{\sin (nx) : n \in \mathbb{Z}^+\}
+\begin{align} \int_0^{2\pi} (\cos x)^n \cos (nx)\,dx &= \frac{1}{2^n}\int_0^{2\pi} \left(e^{inx} + e^{-inx}\right)\cos (nx)\,dx\\ &= \frac{1}{2^{n-1}}\int_0^{2\pi} \cos^2 (nx)\,dx\\ &= \frac{\pi}{2^{n-1}}. \end{align}

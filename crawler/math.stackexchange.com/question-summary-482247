@@ -1,0 +1,13 @@
+tx''(t) - tx'(t) - x(t) = 0 , \\ x(0)=0, \\ x'(0)=1
+x(t) = \sum_{n=0}^{\infty}a_nt^n
+x'(t) = \sum_{n=0}^{\infty}na_nt^{n-1} \\ x''(t) = \sum_{n=0}^{\infty}n(n-1)a_nt^{n-2}
+tx''(t) - tx'(t) - x(t) = 0
+\sum_{n=2}^{\infty} n(n-1)a_nt^{n-2} - \sum_{n=1}^{\infty}n a_nt^{n} - \sum_{n=0}^{\infty}a_nt^{n} = 0
+n \ge 2
+ x(t)=\sum_{n=0}^\infty a_nt^n 
+ tx''-tx'-x=0, 
+ 0=t\sum_{n=2}^\infty n(n-1)a_nt^{n-2}-t\sum_{n=1}^\infty na_nt^{n-1}-\sum_{n=0}^\infty a_nt^n=\sum_{n=0}^\infty(n+1)\left[na_{n+1}-a_n\right]t^n. 
+ na_{n+1}-a_n=0 \quad \forall n \ge 0 
+ a_0=x(0)=0,\ a_1=x'(0)=1. 
+ a_n=\frac{1}{n-1}\ldots\frac{1}{2-1}a_{2-1}=\frac{1}{(n-1)!}. 
+ x(t)=t+\sum_{n=2}^\infty\frac{1}{(n-1)!}t^n=t+t\sum_{n=1}^\infty\frac{1}{n!}t^n=t+t(e^t-1)=te^t. 

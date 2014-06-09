@@ -1,0 +1,20 @@
+\{\hat{e}_r,\hat{e}_{\theta}\}
+\{\hat{e}_r,\hat{e}_{\theta}\}
+(\bar{T}^i) = (\tfrac{\partial \bar{x}^i}{\partial x^j}T^j)
+\vec{A} = (A^x,A^y) = (x^2,y^2) = (\tfrac{d r}{\partial x}x(r,\theta ) +    \tfrac{\partial r}{\partial y} y(r, \theta ),\tfrac{d \theta    }{\partial x} x(r,\theta ) + \tfrac{\partial \theta}{\partial y}y(r,    \theta ) ) = (r^2(\cos^3(\theta ) +    \sin^3(\theta)),r\sin(\theta)\cos(\theta)(\sin(\theta)-\cos(\theta))) = (A^r,A^\theta).
+ \vec{r}(x,y)_{Euc} = x \hat{e}_x + y \hat{e}_y
+ \vec{r}(r,\theta)_{Euc} = r\cos(\theta) \vec{e}_r + r\sin(\theta)e_{\theta}
+\hat{e}_r = \tfrac{\tfrac{\partial \vec{r_{Euc}}}{\partial r}}{||\tfrac{\partial \vec{r_{Euc}}}{\partial r}||} = \cos(\theta) \hat{e}_x + \sin(\theta) \hat{e}_y
+\hat{e}_r = \tfrac{\tfrac{\partial \vec{r_{Euc}}}{\partial \theta}}{||\tfrac{\partial \vec{r_{Euc}}}{\partial \theta}||} = - \sin(\theta) \hat{e}_x + \cos(\theta) \hat{e}_y
+\hat{e}_x = \cos(\theta)\hat{e}_r - \sin(\theta)\hat{e}_\theta
+\hat{e}_y = \sin(\theta)\hat{e}_r + \cos(\theta)\hat{e}_\theta
+d\vec{A}
+d\vec{A} = \tfrac{\partial \vec{A}}{\partial x}dx + \tfrac{\partial \vec{A}}{\partial y}dy = \tfrac{\partial \vec{A}}{\partial r}dr + \tfrac{\partial \vec{A}}{\partial \theta}d \theta
+d\vec{A}_{Euc} = d(A^x \hat{e}_x + A^y \hat{e}_y) = dA^x \hat{e}_x + dA^y \hat{e}_y + A^x d \hat{e}_x + A^y d \hat{e}_y 
+d\vec{A}_{Pol} = d(A^r \hat{e}_r + A^\theta \hat{e}_\theta) = dA^r \hat{e}_r + dA^\theta \hat{e}_\theta + A^r d \hat{e}_r + A^\theta d \hat{e}_\theta
+\tfrac{\partial \vec{A}_{Euc}}{\partial x} = \tfrac{\partial A^x}{\partial x} \hat{e}_x + \tfrac{ \partial A^y}{\partial x} \hat{e}_y + A^x \tfrac{\partial \hat{e}_x}{\partial x} + A^y \tfrac{\partial \hat{e}_y}{\partial x} = 2x\hat{e}_x
+\tfrac{\partial \vec{A}_{Pol}}{\partial r} = \tfrac{\partial A^r}{\partial r} \hat{e}_r + \tfrac{\partial A^\theta}{\partial r} \hat{e}_\theta + A^r \tfrac{\partial \hat{e}_r}{\partial r} + A^\theta \tfrac{\partial \hat{e}_\theta}{\partial r}
+\tfrac{\partial \hat{e}_r}{\partial r} = 0
+\tfrac{\partial \hat{e}_\theta}{\partial r} = 0
+\tfrac{\partial \vec{A}_{Pol}}{\partial r} = (2r(\cos^3(\theta ) +    \sin^3(\theta)),\sin(\theta)\cos(\theta)(\sin(\theta)-\cos(\theta)))  
+\tfrac{\partial \vec{A}_{Pol}}{\partial r} = (2r(\cos^3(\theta ) +    \sin^3(\theta)),2\sin(\theta)\cos(\theta)(\sin(\theta)-\cos(\theta)))

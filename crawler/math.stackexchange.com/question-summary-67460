@@ -1,0 +1,103 @@
+GF(2)
+Ax=b
+A
+m\times n
+b
+m\times n
+m
+n
+ \begin{align} A=&(A_{ij})_{m\times m}\\ A_{ij}=& \begin{cases} (1)_{n\times n}&\text{if }i=j\quad\text{(a matrix where entries are all 1's)}\\ I_n&\text{if }i\ne j\quad\text{(the identity matrix)} \end{cases} \end{align} 
+m=2,n=3
+b=(0, 1, 0, 0, 1, 0)^T
+x=(1, 0, 1, 0, 1, 0)^T
+ A= \begin{pmatrix}  1 & 1 & 1 & 1 & 0 & 0 \\  1 & 1 & 1 & 0 & 1 & 0 \\  1 & 1 & 1 & 0 & 0 & 1 \\  1 & 0 & 0 & 1 & 1 & 1 \\  0 & 1 & 0 & 1 & 1 & 1 \\  0 & 0 & 1 & 1 & 1 & 1 \end{pmatrix} 
+x^T = (x_1^T, \ldots, x_m^T)
+x_i
+n
+b^T = (b_1^T, \ldots, b_m^T)
+J
+u
+n
+n
+n
+Jb_i=\beta_iu
+Ax=b
+\ Jx_i=\alpha_iu
+\alpha_i\in GF(2)
+x_i
+(\dagger)
+ (\dagger): (J-I)x_i+\sum_{j=1}^m x_j= b_i\quad \forall i. 
+ (*): x_i = \sum x_j + b_i + \alpha_iu\quad \forall i. 
+n
+\sum\alpha_j = \sum \beta_j + \beta_i
+\beta_1=\ldots=\beta_m=\beta
+(**)
+\sum\alpha_j = \beta
+n
+\beta_1=\ldots=\beta_m
+\sum \alpha_j=\lambda
+\sum \alpha_j=\sum \beta_j
+ \sum b_j=\lambda u\ \Rightarrow\ \sum Jb_j=\lambda Ju\ \Rightarrow\ \sum\beta_j=\lambda, 
+n
+(n-1)\alpha_i+\beta_i
+\alpha_i+\beta_i=c
+c
+\sum \alpha_ju=\lambda u=\sum b_j
+J
+0=\sum \beta_ju
+\sum \beta_j=0
+\sum \alpha_ju=\lambda u
+\alpha_i=\beta_i
+i
+\lambda=0
+\alpha_i=1-\beta_i
+i
+\lambda=1
+\det(A) = (-1)^{(m-1)(n-1)} (n+m-1)(n-1)^{m-1}(m-1)^{n-1}
+\det(A) \equiv 0 \mod 2
+m
+n
+m=n=1
+A
+m
+n
+GF(2)
+m
+n
+A^2
+U
+n \times n
+U^2 = n U
+(i,i)
+A^2
+U^2 + (m-1) I = n U + (m-1) I
+(i,j)
+i \ne j
+2 U + (m-2) I
+m
+n
+(i,i)
+I
+(i,j)
+0
+A
+GF(2)
+A
+n
+b
+n
+1
+n+1
+2n+1
+(m-1)n+1
+\pmatrix{1&1&1&1\\0&0&0&0\\0&0&0&0\\0&0&0&0}, \pmatrix{1&0&0&0\\1&1&0&0\\1&0&1&0\\1&0&0&1}
+\pmatrix{n\bmod 2&1&1&1\\0&0&0&0\\0&0&0&0\\0&0&0&0}, \pmatrix{1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1}
+m
+m\times n
+n\times n
+2m\times 2m
+n-2
+m\times m
+\pmatrix{0&1&1&1\\0&0&0&0\\0&0&0&0\\0&0&0&0}, \pmatrix{1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1}
+\pmatrix{0&1&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0}, \pmatrix{1&0&0&0\\0&1&1&1\\0&0&1&0\\0&0&0&1}
+\pmatrix{0&1&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0}, \pmatrix{1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1}

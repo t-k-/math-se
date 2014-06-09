@@ -1,0 +1,83 @@
+F'(x) = H(x, g(x)) \cdot g'(x)
+H(x,t)
+g(x)
+H(x,t)=x+t
+g(x)= x 
+a=0
+F'(x) = 3x
+G(x,y)=\int_0^y (x+t)dt
+F(x)=G(x,x)
+F(x) = \int_a^{x} (x+t)dt = \left( xt + \frac{t^2}{2}\right)_0^{x} = x(x)+\frac{(x)^2}{2} = \frac{3x^2}{2}.
+H(x,g(x))\cdot g'(x)=(x+x)\cdot 1=2x \neq 3x = F'(x).
+G(x,y)=\int_0^y (x+t)dt = \left( xt + \frac{t^2}{2}\right)_0^{y}=xy+\frac{y^2}{2},
+\frac{\partial G}{\partial x}(x,y) = y,\quad \frac{\partial G}{\partial y}(x,y) = x+y.
+F'(x) = \frac{\partial G}{\partial x}(x,g(x))+g'(x)\frac{\partial G}{\partial y}(x,g(x)) = x + 1\cdot (x+x) = x+2x=3x,
+G(x,y)=\int_a^y H(x,t) dt
+F(x)=G(x,g(x))
+F'(x)=\frac{\partial G}{\partial x}(x,g(x))+g'(x)\frac{\partial G}{\partial y}(x,g(x))
+y
+H
+\varphi(a)
+\varphi
+\psi
+\varphi
+v
+\mathbb R^n
+\varepsilon > 0
+x:=a+tv
+U
+|t| < \varepsilon
+\varphi(a+tv)v=\psi(a+tv)v
+0 < |t| < \varepsilon
+\varphi
+\psi
+a
+\varphi(a)v=\psi(a)v
+v
+\varphi(a)=\psi(a)
+b
+V
+\mathbb R^k
+g:V\to\mathbb R^m
+f(U)
+V
+f(a)
+b
+f
+a
+g
+b
+g\circ f
+a
+(g\circ f)'(a)=g'(f(a))\circ f'(a).
+f(t)=ta
+a=(a_1,\dots,a_k)\in\mathbb R^k
+\frac{d}{dt}\ g(ta)=\sum_{i=1}^k\  a_i\ \frac{\partial g}{\partial x_i}(ta).
+a_i=1
+i
+\frac{d}{dt}\ g(t,\dots,t)=\sum_{i=1}^k\ \frac{\partial g}{\partial x_i}(t,\dots,t).
+0\in U\subset\mathbb R^n
+f:U\to\mathbb R
+f(0)=0=f'(0)
+f(x)=|x|\varepsilon(x)
+\varepsilon(x)
+0
+x
+0
+f(x)
+\varphi(x)\cdot x
+u\cdot v
+\mathbb R^n
+\varphi(x)
+\mathbb R^n
+0
+x
+0
+\varphi(x)
+x\not=0
+\varphi(x):=\varepsilon(x)|x|^{-1}x
+F(x) = G(g(x),x)
+G(u,x) = \int_a^u H(x,t)\ dt
+F(x+\delta) = \int_{a}^{g(x+\delta)} H(x+\delta,t) dt
+F(x+\delta) -  F(x) = \int_{a}^{g(x)} [ H(x+\delta,t) - H(x,t)] dt + \int_{g(x)}^{g(x+\delta)} H(x+\delta,t) dt
+ F'(x)=\lim_{\delta \to 0} \frac{F(x+\delta) -  F(x)}{\delta} = \int_{a}^{g(x)} \frac{\partial H(x,t)}{\partial x}  dt + H(x,g(x)) \; g'(x)

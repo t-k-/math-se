@@ -1,0 +1,37 @@
+f_1(x)=\frac{M}{C}
+f_2(x)=\frac{\int_0^xf_1(y)dy}{C} + \frac{\int_0^x\int_0^yf_1(z)dzdy}{C^2} + \frac{\int_0^x\int_0^y\int_0^zf_1(t)dtdzdy}{C^3} + \cdots
+f_3(x)=\frac{\int_0^xf_2(y)dy}{C} + \frac{\int_0^x\int_0^yf_2(z)dzdy}{C^2} + \frac{\int_0^x\int_0^y\int_0^zf_2(t)dtdzdy}{C^3} + \cdots
+f_{i+1}(x)=\frac{\int_0^xf_i(y)dy}{C} + \frac{\int_0^x\int_0^yf_i(z)dzdy}{C^2} + \frac{\int_0^x\int_0^y\int_0^zf_i(t)dtdzdy}{C^3} + \cdots
+f_{\infty}(x) = ? 
+i\geqslant0
+x\geqslant0
+f_i(x)\to0
+x\geqslant0
+ f_i(x)=\frac{M}C\mathrm e^{x/C}\sum_{k=i}^{+\infty}\frac{(-1)^{k-i}}{C^k}\frac{x^k}{k!}. 
+x_i\gt0
+i\geqslant3x_i/C
+K_i
+f_i(x)\leqslant K_ix^i
+x\leqslant x_i
+K_i
+x_i
+f_i(x)\sim Mx^i/(C^{i+1}i!)
+x\to0
+f_i
+j\geqslant i
+Cf_{j+1}'=f_j+f_{j+1}
+f_{j+1}(0)=0
+f_{j+1}(x)\leqslant K_{j+1}x^{j+1}
+x\leqslant x_i
+j\geqslant i
+K_j\leqslant K_i/(2x_i)^{j-i}
+f_j(x)\leqslant K_jx^j\leqslant K_ix^i/2^{j-i}
+x\leqslant x_i
+f_j\to0
+(0,x_i)
+x_i
+ K_{j+1}=\frac{K_j}{C\cdot(j+1)-x_i}\leqslant\frac{K_j}{2x_i}. 
+Cf_{\infty}'=2f_\infty
+f_\infty(x)=K_\infty\mathrm e^{2x/C}
+K_\infty=f_\infty(0)
+K_\infty=0

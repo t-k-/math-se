@@ -1,0 +1,73 @@
+S(N)=\sum_{k=0}^{+\infty}\frac{1}{\sum_{n=0}^{N}k^n}?
+N=1
+S(1) = \displaystyle\sum_{k=0}^{+\infty}\frac{1}{1 + k} = \displaystyle\sum_{k=1}^{+\infty}\frac{1}{k}
+S (1) = \infty
+N=2
+S(2)=\sum_{k=0}^{+\infty}\frac{1}{1+k+k^2}
+S(2)=-1+\frac{1}{3}\sqrt 3 \pi \tanh(\frac{1}{2}\pi\sqrt 3)\approx 0.798
+N=3
+S(3)=\frac{1}{4}\Psi(I)+\frac{1}{4I}\Psi(I)-\frac{1}{4I}\pi\coth(\pi)+\frac{1}{4}\pi\coth(\pi)+\frac{1/}{4}\Psi(1+I)-\frac{1}{4I}\Psi(1+I)-\frac{1}{2}+\frac{1}{2}\gamma \approx 0.374
+T(N) = S(N-1)
+ \begin{align*}T(n)  &= 1 + \frac{1}{n} + \sum_{k=2}^{\infty} \frac{1}{k^{n-1}+k^{n-2}+\cdots+k+1} \\ &= 1 + \frac{1}{n} + \sum_{k=2}^{\infty} \frac{k - 1}{k^n - 1} \\ &= 1 + \frac{1}{n} + \sum_{k=2}^{\infty} \frac{1}{n} \sum_{l=1}^{n-1} \frac{\omega_l (\omega_l - 1)}{k - \omega_l}  \\ &= 1 + \frac{1}{n} + \sum_{k=0}^{\infty} \frac{1}{n} \sum_{l=1}^{n-1} \frac{\omega_l (\omega_l - 1)}{k + 2 - \omega_l}, \end{align*}
+\omega_l = \exp\left(\tfrac{2\pi l i}{n}\right)
+ \frac{1}{n} \sum_{l=0}^{n-1} \omega_l (\omega_l - 1) = 0, 
+ \begin{align*}T(n)  &= 1 + \frac{1}{n} + \sum_{k=0}^{\infty} \frac{1}{n} \sum_{l=1}^{n-1} \omega_l (\omega_l - 1) \left( \frac{1}{k + 2 - \omega_l} - \frac{1}{k+1} \right) \\ &= 1 + \frac{1}{n} + \frac{1}{n} \sum_{l=1}^{n-1} \omega_l (\omega_l - 1) \sum_{k=0}^{\infty} \left( \frac{1}{k + 2 - \omega_l} - \frac{1}{k+1} \right) \\ &= 1 + \frac{1}{n} - \frac{1}{n} \sum_{l=1}^{n-1} \omega_l (\omega_l - 1) \left( \gamma + \psi_0 (2 - \omega_l) \right) \\ &= 1 + \frac{1}{n} - \frac{1}{n} \sum_{l=1}^{n-1} \omega_l (\omega_l - 1) \psi_0 (2 - \omega_l). \end{align*}
+ S(N)=1+\frac1{N+1}+\sum_{k=1}^{+\infty}\left(\zeta((N+1)k-1)-\zeta((N+1)k)\right) 
+S(N) = 1 + \frac{1}{N+1} + \sum_{k\ge 2} \frac{1}{\sum_{n=0}^N k^n} = 1 + \frac{1}{N+1} + \sum_{k\ge 2} \frac{k-1}{k^{N+1}-1} \\= 1 + \frac{1}{N+1} + \sum_{k\ge 2} \frac{k}{k^{N+1}-1} - \sum_{k\ge 2} \frac{1}{k^{N+1}-1}.
+S_2(1, N+1)-S_1(1, N+1).
+S_1(x, M) = \sum_{k\ge 2} \frac{1}{(xk)^M-1} \quad\text{and}\quad S_2(x, M) = \sum_{k\ge 2} \frac{k}{(xk)^M-1}
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
+k\ge 2
+S_1
+S_2
+\lambda_k = 1, \quad \mu_k = k  \quad \text{and} \quad g(x) = \frac{1}{x^M-1}.
+g^*(s)
+g(x)
+M =  N+1 > 2
+N=1.
+\int_0^\infty \frac{1}{x^M-1} x^{s-1} dx.
+\langle 0,M\rangle.
+\langle 0, M-1\rangle
+2\pi/M.
+R
+\Theta(R)
+\Theta(1/R^M\times R^{(M-1)-1}) = \Theta(1/R^2).
+x=1
+x=\exp(2\pi i/M),
+\Gamma_1
+g^*(s)
+\Gamma_2
+\Gamma_3
+x=\exp(2\pi i/M)t
+\int_{\Gamma_3} \frac{1}{x^M-1} x^{s-1} dx \\= \exp(2\pi i/M) \int_\infty^0 \frac{1}{(\exp(2\pi i/M) t)^M-1}  (\exp(2\pi i/M) t)^{s-1} dt \\ = - \exp(2\pi i/M) \int_0^\infty \frac{1}{t^M-1}  (\exp(2\pi i/M) t)^{s-1} dt \\= - \exp(2\pi i \times s/M) \int_0^\infty \frac{1}{t^M-1} t^{s-1} dt = - \exp(2\pi i \times s/M) \times g^*(s).
+g^*(s)
+g^*(s) = \left(1-e^{2\pi i \times s/M}\right) = \pi i \left( \mathrm{Res}\left(\frac{1}{x^M-1} x^{s-1}; x=1\right)+ \mathrm{Res}\left(\frac{1}{x^M-1} x^{s-1}; x=\exp(2\pi i/M)\right) \right).
+1/(M x^{M-1})
+g^*(s)
+ \pi i  \left(\frac{1}{M} +  \frac{1}{M \exp(2\pi i/M)^{M-1}}  \exp(2\pi i \times (s-1)/M)\right).
+\frac{\pi i}{M} \left(1 + \exp(2\pi i \times (s-1-(M-1))/M)\right) \\= \frac{\pi i}{M} \left(1 + \exp(2\pi i \times (s-M)/M)\right) \\= \frac{\pi i}{M} \left(1 + \exp(2\pi i \times s/M)\right).
+g^*(s) = \frac{\pi i}{M} \frac{1 + e^{2\pi i \times s/M}}{1-e^{2\pi i \times s/M}} = \frac{\pi}{M} \frac{i(e^{-\pi i \times s/M} + e^{\pi i \times s/M})} {e^{-\pi i \times s/M}-e^{\pi i \times s/M}} = - \frac{\pi}{M} \cot(\pi s/M).
+Q_1(s)
+S_1(x,M)
+\Re(s) > 1.
+Q_1(s) = - \frac{\pi}{M} \cot(\pi s/M) (-1+\zeta(s)) \\ \text{because}\\ \sum_{k\ge 2} \frac{\lambda_k}{\mu_k^s} =  \sum_{k\ge 2} \frac{1}{k^s} = -1+\zeta(s)
+Q_2(s)
+S_2(x,M)
+\Re(s) > 2.
+Q_2(s) = - \frac{\pi}{M} \cot(\pi s/M) (-1+\zeta(s-1)) \\ \text{because}\\ \sum_{k\ge 2} \frac{\lambda_k}{\mu_k^s} =  \sum_{k\ge 2} k \times \frac{1}{k^s} = -1+\zeta(s-1)
+\frac{1}{2\pi i} \int_{3/2-i\infty}^{3/2+i\infty} Q_1(s)/x^s ds
+\frac{1}{2\pi i} \int_{5/2-i\infty}^{5/2+i\infty} Q_2(s)/x^s ds
+s=M
+M\ge 3>5/2>3/2
+q
+\frac{1}{2\pi i} \int_{5/2-i\infty}^{5/2+i\infty}  (Q_2(s)-Q_1(s))/x^s ds
+\frac{1}{2\pi i} \int_{5/2-i\infty}^{5/2+i\infty}  \frac{\pi}{M} \cot(\pi s/M) (\zeta(s-1)-\zeta(s))/x^s ds.
+\mathrm{Res}\left(\cot(\pi s/M); s=qM\right) = \frac{M}{\pi}
+s  = qM
+x=1
+S_2(1, M)-S_1(1, M)
+\sum_{q\ge 1} \frac{\pi}{M} \frac{M}{\pi} (\zeta(qM-1)-\zeta(qM)) = \sum_{q\ge 1} (\zeta(qM-1)-\zeta(qM)).
+N
+S(N) = 1 + \frac{1}{N+1}  + \sum_{q\ge 1} (\zeta(q(N+1)-1)-\zeta(q(N+1))).

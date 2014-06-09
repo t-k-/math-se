@@ -1,0 +1,24 @@
+\dot{x}(t)=f(x(t))+g(x(t))u(t),
+f:\mathbb{R}^n\to\mathbb{R}^n
+g:\mathbb{R}^n\to\mathbb{R}^{n\times m}
+L:\mathbb{R}^n\times \mathbb{R}^n\to [0,\infty)
+||u||^2_{L_2}
+x
+x(t_0)=x_0
+x(t_f)=x_f
+t_f\geq t_0
+L(x_o,x_f):=\text{The minimum amount of control energy (that is, $||u||^2_{L_2}$) required to }
+\text{drive $x$ from $x(t_0)=x_0$ to $x(t_f)=x_f$, for any $t_f\geq t_0$.}
+L(x_0,x_f):=\inf_{t_0\leq t_f}\left(\inf_{u\in A_{t_0,t_f}} \int_{t_0}^{t_f}||u(t)||^2dt\right),\quad\quad (*)
+A_{t_0,t_f}:=\{u\in L_2([t_0,t_f],\mathbb{R}^m) : \quad x(t_0)=x_0,\quad x(t_f)=x_f\}.
+L(x_0,x_f):=\inf_{u\in B} \int_{-\infty}^{0}||u(t)||^2dt,\quad\quad (**)
+B:=\{u\in L_2((-\infty,0],\mathbb{R}^m): \quad \lim_{t\to-\infty}x(t)=x_0,\quad x(0)=x_f\}.
+(*)=(**)
+u_1
+u_2
+(*)
+(**)
+u_1
+u_2
+x_1
+x_2

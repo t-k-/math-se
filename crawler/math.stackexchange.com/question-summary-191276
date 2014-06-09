@@ -1,0 +1,34 @@
+\frac{\partial c}{\partial t} = \nabla \cdot (D\nabla c) - \nabla \cdot (vc) + R
+c
+v=(v_1 ,v_2 ,v_3 )
+x, y, z
+t
+ \begin{align*} \frac{\partial c}{\partial t} & = D\left(\frac{\partial^2 c}{\partial x^2} + \frac{\partial^2 c}{\partial y^2} + \frac{\partial^2 c}{\partial z^2}\right) + \frac{\partial D}{\partial x}\frac{\partial c}{\partial x} + \frac{\partial D}{\partial y}\frac{\partial c}{\partial y} + \frac{\partial D}{\partial z}\frac{\partial c}{\partial z} - \frac{\partial (cv_1)}{\partial x} - \frac{\partial (cv_2)}{\partial y} - \frac{\partial (cv_3)}{\partial z} + R\\ & = D\left(\frac{\partial^2 c}{\partial x^2} + \frac{\partial^2 c}{\partial y^2} + \frac{\partial^2 c}{\partial z^2}\right) + \left(\frac{\partial D}{\partial x} - v_1\right)\frac{\partial c}{\partial x} + \left(\frac{\partial D}{\partial y} - v_2\right)\frac{\partial c}{\partial y} + \left(\frac{\partial D}{\partial z} - v_3\right)\frac{\partial c}{\partial z} - c\left(\frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + \frac{\partial v_3}{\partial z}\right) + R \end{align*} 
+D
+D
+0
+\frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + \frac{\partial v_3}{\partial z}
+0
+ \frac{\partial c}{\partial t} = D\left(\frac{\partial^2 c}{\partial x^2}\right) + \left(\frac{\partial D}{\partial x} - v_1\right)\frac{\partial c}{\partial x} - c\left(\frac{\partial v_1}{\partial x}\right) + R 
+ \frac{\partial c}{\partial t} = A(x)\frac{\partial^2 c}{\partial x^2} + B(x)\frac{\partial c}{\partial x} + C(x)c + D(x). 
+x
+t \ge 0
+A
+B
+C
+D
+M
+ M = A\frac{\partial^2}{\partial x^2} + B\frac{\partial}{\partial x} + C. 
+ \frac{\partial c}{\partial t} = Mc + D. 
+x
+A
+c(x, t) = \sum_{n=1}^\infty c_n(t)u_n(x)
+Mu_n = \lambda_n u_n
+D(x)
+D(x) = \sum_{n=1}^\infty D_nu_n(x)
+c_n(t)
+x
+x \ge 0
+x \in \mathbb R
+A, B, C, D
+t

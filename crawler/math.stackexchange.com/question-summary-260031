@@ -1,0 +1,32 @@
+ f_L(l) = 0.4 (0 \leq l \leq 2) \\ f_L(l) = -0.4l + 1.2 (2 < l \leq 3) 
+ E(l) = \int_0^3 l f_L(l) dl \approx 1.27 
+E(max(l1, l2))
+E(max(l_1, l_2))
+X
+T
+[T\gt t]
+t
+t\gt0
+X
+f_X(t)=\frac25
+0\lt t\lt 2
+f_X(3-t)=\frac25t
+0\lt t\lt 1
+u(t)=\frac25t
+0\lt t\lt 2
+v(3-t)=\frac15t^2
+0\lt t\lt 1
+ \mathbb P(T\gt t)=\mathbb P(X\gt t)^3+3\mathbb P(X\gt t)^2\mathbb P(X\lt t), 
+ \mathbb P(T\gt t)=1-3u(t)^2+2u(t)^3=v(t)^2(3-2v(t)), 
+ u(t)=\mathbb P(X\lt t),\qquad v(t)=1-u(t)=\mathbb P(X\gt t). 
+ \mathbb E(T)=\int_0^{+\infty}\mathbb P(T\gt t)\mathrm dt. 
+ \mathbb E(T)=\int_0^2(1-3u(t)^2+2u(t)^3)\mathrm dt+\int_0^1v(3-t)^2(3-2v(3-t))\mathrm dt, 
+ \mathbb E(T)=\int_0^2(1-\tfrac{12}{25}t^2+\tfrac{16}{125}t^3)\mathrm dt+\int_0^1\tfrac1{25}t^4(3-\tfrac25t^2)\mathrm dt, 
+ \mathbb E(T)=\left[t-\tfrac{4}{25}t^3+\tfrac{4}{125}t^4\right]_{t=0}^{t=2}+\left[\tfrac3{125}t^5-\tfrac2{125}\tfrac17t^7\right]_{t=0}^{t=1}, 
+ \mathbb E(T)=2-\tfrac{32}{25}+\tfrac{64}{125}+\tfrac3{125}-\tfrac2{125\cdot7}=\tfrac{1097}{875}=1.253\overline{714285}. 
+f(\ell)
+1_{\ell}A
+A
+ f \left( \ell \right) = \frac{2}{5} 1_{\ell} \left[ 0, 2 \right) + \left(    - \frac{2}{5} \ell + \frac{6}{5} \right) 1_{\ell} \left[ 2, 3 \right) 
+ 1_{\ell} \left( A \right) = \left\{ \begin{array}{lll}      1 &  & \text{if } \ell \in A\\      0 &  & \text{otherwise}    \end{array} \right. 
+ F( \ell)= \frac{2 \ell}{5} 1_{\ell} \left[ 0, 2    \right) + \frac{1}{5} \left( - \ell^2 + 6 \ell - 4 \right) 1_{\ell} \left[    2, 3 \right) + 1_{\ell} \left[ 3, \infty \right) 

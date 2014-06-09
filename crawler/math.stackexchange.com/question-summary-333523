@@ -1,0 +1,19 @@
+X_t = \exp( \int_t ^T \phi_s ds)
+\phi
+ d\phi_t = \mu dt+ \sigma dW_t \ ,
+g_T(t,x) := \int_t ^T x(s) ds
+x
+t
+T
+X_t = f_T(t,\phi) :=\exp(g_T(t,\phi))
+\partial_x f_T(t,\phi)
+dX_t =df_T(t,\phi) = (\partial_t +\frac{\sigma}{2}\partial_{xx}^2) f_T(t,\phi) dt +\partial_x f_T(t,\phi) dW_t
+X
+dX_t =\partial_t  f_T(t,\phi) dt =-\phi_tX_tdt
+h(\phi_t)
+\int_0^t\phi_s\mathrm ds
+\psi \in C([0,\infty))
+f(t):=\exp(g(t))
+   \mathrm d\left(\int_0^t\phi_s\mathrm ds\right) = \phi_t\mathrm dt. 
+   g(t):=\int_t^T\psi(s)\mathrm ds \in C^1([0,\infty)) 
+   \mathrm df(t) = f'_t(t)\mathrm dt = f(t)g'_t(t)\mathrm dt = -f(t)\psi(t)\mathrm dt. 

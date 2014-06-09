@@ -1,0 +1,26 @@
+m
+n
+A\in\mathbb C^{m\times n}
+M=\max_i\sum_{j=1}^n|A_{ij}|
+N=\max_j\sum_{i=1}^m|A_{ij}|
+x\in\mathbb C^m
+y\in\mathbb C^n
+\left\vert x^TAy\right\vert\leq\sqrt{MN}|x||y|
+|x^TAy|=\left|\sum_{i,j}A_{ij}x_iy_j\right|\leq\sqrt{\sum_j\left(\sum_iA_{ij}x_i\right)^2\cdot\sum_jy_j^2}\leq\left|y\right|\sqrt{\sum_j\left(\sum_iA_{ij}^2\cdot\sum_ix_i^2\right)}=|x||y|\sqrt{\sum_{ij}A_{ij}^2}
+\sum_{ij}A_{ij}^2\leq MN
+A
+\left\Vert X\right\Vert
+X
+\left\Vert \cdot\right\Vert_{p\to p}
+\ell_p
+\left\Vert X\right\Vert_{p\to p}=\max_{v\neq 0} \frac{\left\Vert Xv\right\Vert_p}{\left\Vert v\right\Vert_p}.
+v
+A^*A
+\ell_2
+A^*Av=\sigma^2 v
+\sigma^2=\left\Vert A^*A\right\Vert=\left\Vert A\right\Vert^2
+\frac{\left\Vert A^*Av\right\Vert_1}{\left\Vert v\right\Vert_1}=\frac{\left\Vert \left\Vert A\right\Vert^2v\right\Vert_1}{\left\Vert v\right\Vert_1}=\left\Vert A\right\Vert^2.
+M=\left\Vert A\right\Vert_{\infty\to \infty}
+N=\left\Vert A\right\Vert_{1\to 1}
+\left\vert x^*Ay\right\vert\leq\left\Vert A\right\Vert\left\Vert x\right\Vert\left\Vert y\right\Vert
+\left\Vert A\right\Vert^2\leq\left\Vert A^*A\right\Vert_{1\to 1}=\max_{u,v\neq 0}\frac{\left\vert u^*A^*Av\right\vert}{\left\Vert u\right\Vert_\infty\left\Vert v\right\Vert_1}\\ \leq \max_{u,v\neq 0}\frac{\left\Vert Au\right\Vert_\infty\left\Vert Av\right\Vert_1}{\left\Vert u\right\Vert_\infty\left\Vert v\right\Vert_1}=\left\Vert A\right\Vert_{\infty\to\infty}\cdot \left\Vert A\right\Vert_{1\to 1}.

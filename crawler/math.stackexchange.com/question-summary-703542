@@ -1,0 +1,25 @@
+\int_{-\infty}^{\infty} \displaystyle \frac{\cos{5x}}{x^4+1}dx
+f(z) = \displaystyle\frac{e^{(-5iz)}}{2(z^4+1)}+\displaystyle\frac{e^{(5iz)}}{2(z^4+1)}
+\gamma_{1}= \text{The contour taken to be the top half of the circle in the counter clockwise direction}
+f(z)
+\gamma_{2}= \text{The contour taken from 
+ to 
+ on the real axis}
+\gamma_{3}= \text{The contour taken to be the bottom half of the circle in the clockwise direction}
+f(z)
+\gamma_{1}
+\gamma_{3}
+0
+R
+0
+\gamma=[-R,R]\cup Re^{i[0,\pi]}
+\frac{1+i}{\sqrt2}
+\frac{-1+i}{\sqrt2}
+\gamma
+ \begin{align} \int_{-\infty}^\infty\frac{\cos(5x)}{x^4+1}\mathrm{d}x &=\mathrm{Re}\left(\int_\gamma\frac{e^{i5z}}{z^4+1}\mathrm{d}z\right)\\ &=\mathrm{Re}\left(2\pi i\left(\left[\frac{e^{i5z}}{4z^3}\right]_{z=\frac{1+i}{\sqrt2}} +\left[\frac{e^{i5z}}{4z^3}\right]_{z=\frac{-1+i}{\sqrt2}}\right)\right)\\ &=\mathrm{Re}\left(\frac{\pi}{2i}e^{-5/\sqrt2}\left(\frac{1+i}{\sqrt2}e^{i5/\sqrt2} -\frac{1-i}{\sqrt2}e^{-i5/\sqrt2} \right)\right)\\ &=\pi e^{-5/\sqrt2}\mathrm{Im}\left(\frac{1+i}{\sqrt2}e^{i5/\sqrt2}\right)\\ &=\pi e^{-5/\sqrt2}\mathrm{Im}\left(e^{i(5/\sqrt2+\pi/4)}\right)\\ &=\pi e^{-5/\sqrt2}\sin\left(\frac5{\sqrt2}+\frac\pi4\right) \end{align} 
+\cos 5x = \operatorname{Re} e^{5ix}
+C_R^+
+R \to \infty
+|e^{5iz}| \le 1
+ f(z) = \frac{e^{5iz}}{z^4+1} 
+ \left| \int_{C_R^+} \frac{e^{5iz}}{z^4+1} \right| \le \frac{1}{R^4-1} \cdot \pi R \to 0 

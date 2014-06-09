@@ -1,0 +1,49 @@
+\mathbb{Z}_n
+f(x,y) = c\cdot xy + g(y)
+c
+g
+\omega_n
+n
+h : \mathbb{Z_n} \to \mathbb{C}
+h(x) = \sum_{y\in \mathbb{Z}_n} \omega_n^{f(x,y)}
+h
+h
+n
+f
+xy+y^2
+\mathbb{Z_5}
+h(x)
+h(0) = \omega_n^{0} + \omega_n^{1} + \omega_n^{4} + \omega_n^{4} + \omega_n^{1}
+h(1) = \omega_n^{0} + \omega_n^{2} + \omega_n^{1} + \omega_n^{2} + \omega_n^{0}
+h(2) = \omega_n^{0} + \omega_n^{3} + \omega_n^{3} + \omega_n^{0} + \omega_n^{4}
+h(3) = \omega_n^{0} + \omega_n^{4} + \omega_n^{0} + \omega_n^{3} + \omega_n^{3}
+h(4) = \omega_n^{0} + \omega_n^{0} + \omega_n^{2} + \omega_n^{1} + \omega_n^{2}
+h(1) = h(4) = \omega_n^{1}\cdot h(0)
+h(2) = h(3) = \omega_n^{4}\cdot h(0)
+h(0)
+h(x)
+x^2
+\mathbb{Z_5}
+g
+h
+f
+h
+g
+h
+g
+n>2
+n=p
+a_0,a_1,a_2\in\Bbb{Z}_p,a_2\neq0
+h
+x
+t=y+(a_1+cx)/(2a_2)
+y
+\Bbb{Z}_p
+t
+h
+x
+ g(x)=a_2x^2+a_1x+a_0 
+ cxy+g(y)=a_2y^2+(a_1+cx)y+a_0=a_2\left(y+\frac{a_1+cx}{2a_2}\right)^2+a_0-\frac{(a_1+cx)^2}{4a_2}. 
+ \begin{aligned} h(x)&=\sum_{t\in\Bbb{F}_p}\omega^{a_2t^2+a_0-((a_1+cx)/(2a_2))^2}\\ &=\omega^{a_0-(a_1+cx)^2/(4a_2)}\sum_{t\in\Bbb{Z}_p}\omega^{a_2t^2}\\ &=\omega^{p(x)} S(a_2), \end{aligned} 
+ p(x)=-\frac{c^2}{4a_2}x^2-\frac{ca_1}{2a_2}x-\frac{a_1^2-4a_0a_2}{4a_2}\in\Bbb{Z}_p[x] 
+ S(a_2)=\sum_{t\in\Bbb{Z}_p}\omega^{a_2t^2} 

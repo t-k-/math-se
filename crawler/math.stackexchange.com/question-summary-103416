@@ -1,0 +1,43 @@
+A
+k\ge2
+ A_k= \text{the second 7 occurs on the }k\text{th roll, and the first }(k-1)\text{rolls did not have both 5 and 4} 
+P(A)=1-\sum\limits_{k=2}^\infty P(A_k)
+A_k
+F_k
+G_k
+H_k
+k
+\ \ \ F_k
+k-1
+\ \ \ G_k
+k-1
+\ \ \ H_k
+k-1
+P(A_k)=P(F_k)+P(G_k)-P(H_k)
+P(F_k)
+(k-1)
+(k-1)
+k
+k-1
+ P(F_k)= (k-1)\cdot(6/36)^2\cdot(27/36)^{k-2 } 
+ P(G_k)= (k-1)\cdot(6/36)^2\cdot(26/36)^{k-2 } 
+ P(H_k)= (k-1)\cdot(6/36)^2\cdot(23/36)^{k-2 } 
+ P(A_k)= (k-1)\cdot(6/36)^2\bigl[ (27/36)^{k-2 }+ (26/36)^{k-2 }-(23/36)^{k-2 } \bigr] 
+\eqalign{P(A)&=1-\sum\limits_{k=2}^\infty  (k-1)\cdot(6/36)^2\bigl[ (27/36)^{k-2 }+ (26/36)^{k-2 }-(23/36)^{k-2 } \bigr]\cr &= 1-\sum\limits_{k=2}^\infty  (k-1)\cdot(1/36) \bigl[ (3/4)^{k-2 }+ (13/18)^{k-2 }-(23/36)^{k-2 } \bigr]\cr &= 1-{1\over36}\biggl[ \sum\limits_{k=2}^\infty  (k-1)   (3/4)^{k-2 }+  \sum\limits_{k=2}^\infty (k-1) (13/18)^{k-2 }-  \sum\limits_{k=2}^\infty(k-1) (23/36)^{k-2 } \biggr]\cr  &= 1-{1\over36}\biggl[ {1\over\bigl( 1-(3/4)\bigr)^2}+   {1\over\bigl( 1-(13/18)\bigr)^2}-  {1\over\bigl( 1-(23/36)\bigr)^2}\biggr]\cr  &= 1-{1\over36}\biggl[ 16+  {18^2\over 25}-  {36^2\over 13^2}\biggr]\cr  &= 1-  {22489\over38025} \cr  &={15536\over 38025}\cr &\approx 0.4085733} 
+|x|<1
+ \sum_{k=2}^\infty x^{k-1}={x\over 1-x} 
+ \Downarrow 
+ \sum_{k=2}^\infty (k-1) x^{k-2} = {d\over dx}{x\over 1-x}={1\over (1-x)^2}. 
+k
+7
+(k+1)(6/36)^2(30/36)^k
+\Pr( \text{roll } 4 \text{ and } 5 \text{ in } k \text{ rolls}|\text{no } 7 \text{s})  =  1- \Pr( \text{don't roll } 4 \text{ or don't roll  } 5 \text{ in } k \text{ rolls}|\text{no } 7 \text{s}) 
+= 1 -  \Pr( \text{don't roll } 4  \text{ in } k \text{ rolls}|\text{no } 7 \text{s}) -  \Pr( \text{don't roll } 5  \text{ in } k \text{ rolls}|\text{no } 7 \text{s})  
++ \Pr( \text{don't roll } 4 \text{ and don't roll  } 5 \text{ in } k \text{ rolls}|\text{no } 7 \text{s}) 
+= 1 - (27/30)^k - (26/30)^k + (23/30)^k.
+\sum_{k=0}^\infty (k+1)(6/36)^2(30/36)^k(1 - (27/30)^k - (26/30)^k + (23/30)^k)
+15536/38025 \approx 0.4085733
+(0/7)^k =0
+k=0
+(0/7)^0 =1
+\sum_{k=0}^\infty (k+1)(6/13)^2(7/13)^k(1 - (3/7)^k - (4/7)^k + (0/7)^k)

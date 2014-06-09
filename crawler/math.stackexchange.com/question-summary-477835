@@ -1,0 +1,20 @@
+p
+n! = \prod_{p\leq n}p^{\lfloor \frac{n}{p}\rfloor}
+\binom{n}{r} = \prod_{p\leq r}p^{\lfloor n/p \rfloor -\lfloor (n-r)/p \rfloor - \lfloor r/p \rfloor} \times ...
+n-r \lt p \leq n
+r \lt p \leq n-r
+  n! = \prod_{p\,\,prime}\prod_{k\geq 1}p^{\lfloor \frac{n}{p^k}\rfloor}
+k_p(n)
+p
+n
+k_p(n) = \sum_{k\geq 1} \lfloor \frac{n}{p^k}\rfloor
+ n! = \prod_{p\,\,prime}p^{k_p(n)}
+k
+p \leq n
+\binom{n}{r}
+r \lt n-r
+ \binom{n}{r} = (\prod_{n-r\lt p\leq n} p^{k_p(n)})(\prod_{r\lt p\leq n-r} p^{k_p(n) - k_p(n-r)})(\prod_{p\leq r}p^{k_p(n)-k_p(n-r)-k_p(r)}) 
+r \lt n-r
+n-r
+r
+\binom{n}{n-r} = \binom{n}{r}

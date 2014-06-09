@@ -1,0 +1,19 @@
+\dot y(t) + \frac{1}{a}y(t)=\sum_i w_i \sum_{t_i} \delta(t-t_i)
+w_i
+\dot y(t) = -\frac{1}{a}y(t) \implies y(t) = y_0 exp(- \frac{t-t_0}{a})
+ y_p(t) = e^{-\frac{t}{a}} \int_{t_0}^t exp(\frac{\tau}{a}) \sum_i w_i \sum_{t_i} \delta(\tau-t_i) d\tau = e^{-\frac{t}{a}} \sum_i w_i \sum_{t_i}\int_{t_0}^t\delta(\tau-t_i)exp(\frac{\tau}{a})d\tau 
+ = e^{-\frac{t}{a}}\sum_i w_i \sum_{t_i}exp(\frac{t_i}{a}) = \sum_i w_i \sum_{t_i}exp(-\frac{t-t_i}{a}) 
+ t_0 <t_i < t ~~~\forall i
+y(t) = y_0 exp(- \frac{t-t_0}{a}) + \sum_i w_i \sum_{t_i}exp(-\frac{t-t_i}{a})
+\sum_i w_i \sum_{t_i} \delta(t-t_i)
+i
+t_i
+\sum_i w_i \delta(t-t_i)
+\delta(t-t_i)
+H(t-t_i)
+f
+\delta
+t_i
+ f(t) \delta_(t-t_i) =  f(t_i) \delta_(t-t_i) =  \frac{d}{dt}(f(t_i) H(t-t_i)) \tag{1}
+t_0
+t

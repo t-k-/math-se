@@ -1,0 +1,62 @@
+p_n
+n p_n \to \lambda > 0
+s_n(x) = \left(1+\frac xn \right)^n
+x
+s_n(x)
+e^x
+x
+s_n
+x_n
+-n p_n
+x = -\lambda
+s(x) = e^x
+x_n
+\delta > 0
+N_1
+n,m > N_1
+|x_m - x_n| < \delta
+|x_m - x| < \delta
+\{s_n\}
+\varepsilon > 0
+\delta > 0
+|x - y| < \delta \Rightarrow |s_n(x) - s_n(y)| < \frac{\varepsilon}3
+N_1
+(x,y) = (x_n, x_m)
+(x,y) = (x_m, x)
+\varepsilon/3
+n > N_2
+s_n \to s
+N = \max \{ N_1, N_2 \}
+ \left( 1 - p_n \right)^n \to e^{-\lambda}. 
+ (1-p_n)^n = \left( 1 + \frac{-np_n}n \right)^n  
+ \forall \varepsilon > 0, \quad \exists N \quad s.t. \quad \forall n > N, \quad |s_n(x_n) - s(x)| < \varepsilon. 
+ |s_n(x_n) - s(x)| \le |s_n(x_n) - s_n(x_m)| + |s_n(x_m) - s_n(x)| + |s_n(x) - s(x)|. 
+n\log(1-p_n)\to-\lambda
+\log(1-x)\le -x
+x
+(0,1)
+n\log(1-p_n)\le-np_n
+np_n\to\lambda
+\limsup n\log(1-p_n)\le-\lambda
+\log(1-x)\ge-x-x^2
+x
+(0,\frac12)
+n
+p_n\le\frac12
+n\log(1-p_n)\ge-np_n-np_n^2
+np_n^2\to0
+\liminf n\log(1-p_n)\ge-\lambda
+l
+\lim_{n \rightarrow \infty} (1-\frac{l}{n})^n = e^{-l}
+M > \lambda
+n
+(1-p_n)^n \geq (1-\frac{M}{n})^n
+\epsilon > 0
+n
+(1-p_n)^n \geq e^{-M} - \epsilon
+m < \lambda
+\epsilon > 0
+n
+(1-p_n)^n \leq e^{-m} + \epsilon
+n
+\begin{align*}(1-p_n)^n&=\sum_{j\geq 0}{n\choose j}(-p_n)^j\\\\&= \sum_{j\geq 0}\left[n(n-1)\cdots(n-j+1)\over n^j\right](-np_n)^j/j!\\\\ &\to \sum_{j\geq 0}(-\lambda)^j/j!\\\\&=\exp(-\lambda).\end{align*} 

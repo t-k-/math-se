@@ -1,0 +1,6 @@
+ x_{k}=2^{k} \cdot  \sin \frac{\pi}{2^{k}}
+ x_{1}'=2, x'_{2}=2 \sqrt{2}, x_{k+1}=x_{k} \sqrt{\frac{2x_{k}}{x_{k}+x_{k-1}}}
+x_{k+1}=x_{k} \sqrt{\frac{2x_{k}}{x_{k}+x_{k-1}}}= 2^{k} \cdot  \sin \frac{\pi}{2^{k}} \sqrt{\frac{2^{k+1} \cdot  \sin \frac{\pi}{2^{k}}}{2^{k} \cdot  \sin \frac{\pi}{2^{k}}+2^{k-1} \cdot  \sin \frac{\pi}{2^{k}}}}=2^{k} \cdot  \sin \frac{\pi}{2^{k}} \sqrt{\frac{2}{1+\cos \frac{\pi}{2^{k}}}}
+\cos (2x) = \cos^2 x - \sin^2 x,
+1 - \cos \frac{\pi}{2^k} = 1 - \cos^2 \frac{\pi}{2^{k+1}} + \sin^2 \frac{\pi}{2^{k+1}} = 2\sin^2 \frac{\pi}{2^{k+1}}.
+\sqrt{\frac{2}{1+\cos \frac{\pi}{2^k}}} = \sqrt{\frac{2(1 - \cos \frac{\pi}{2^k})}{1 - \cos^2 \frac{\pi}{2^{k}}}} = \sqrt{\frac{4\sin^2 \frac{\pi}{2^{k+1}}}{\sin^2 \frac{\pi}{2^k}}} = \frac{2\sin \frac{\pi}{2^{k+1}}}{\sin \frac{\pi}{2^k}},

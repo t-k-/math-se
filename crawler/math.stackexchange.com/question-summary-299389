@@ -1,0 +1,5 @@
+\int_{0}^{\infty }{\frac{\left( 1-{{\text{e}}^{-px}} \right)\left( 1-{{\text{e}}^{-qx}} \right)\left( 1-{{\text{e}}^{-rx}} \right)}{{{\text{e}}^{x}}}}\text{d}x,\ \ \ p>0,\ q>0,\ r>0
+e^{-x}=t
+\int_{0}^{1}(1-t^p)(1-t^q)(1-t^r)dt
+=\int_0^1(-t^{p+q+r}+t^{p+q}+t^{p+r}-t^p+t^{q+r}-t^q-t^r+1) dt
+=1+\frac{1}{p+q+1}+\frac{1}{p+r+1}+\frac{1}{q+r+1}-\frac{1}{p+q+r+1}-\frac{1}{p+1}-\frac{1}{q+1}-\frac{1}{r+1}

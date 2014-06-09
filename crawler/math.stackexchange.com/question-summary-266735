@@ -1,0 +1,12 @@
+k
+\int^{2\pi}_{0}\cos^k(x)dx
+k
+k
+I_m = \displaystyle \int_0^{\pi/2} \cos^{2m}(x) dx
+I_0 = \int_0^{\pi/2} 1 dx = \dfrac{\pi}2
+\int_0^{2\pi} \cos^{2m}(x) dx = 4 \int_0^{\pi/2} \cos^{2m}(x) dx
+I_{2m} = \dfrac{2m-1}{2m} \cdot \dfrac{2m-3}{2m-2} \cdots \dfrac34 \cdot \dfrac12 I_0
+I_{2m} = \dfrac{2m-1}{2m} \cdot \dfrac{2m-3}{2m-2} \cdots \dfrac34 \cdot \dfrac12 \dfrac{\pi}2
+\int_0^{2\pi} \cos^{2m}(x) dx = 2 \pi \left(\dfrac{2m-1}{2m} \cdot \dfrac{2m-3}{2m-2} \cdots \dfrac34 \cdot \dfrac12 \right) = 2\pi \dfrac{(2m)!}{4^m \cdot  m! \cdot m!} = \dfrac{2 \pi}{4^m} \dbinom{2m}m
+\dbinom{2m}m \sim \dfrac{2^{2m+1}}{\sqrt{4 \pi m}} = \dfrac{4^m}{\sqrt{\pi m}}
+\int_0^{2\pi} \cos^{2m}(x) dx \sim \dfrac{2 \pi}{\sqrt{\pi m}} = \dfrac{2 \sqrt{\pi}}{\sqrt{m}}

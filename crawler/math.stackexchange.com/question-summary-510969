@@ -1,0 +1,30 @@
+X,Y,Z\sim {N}(0,1)
+(X^2+Y^2+Z^2)\sim \text{Gamma} (0.5\cdot 3 , 0.5)=\text{Gamma} (1.5,0.5)
+T
+T= \frac{X^2 }{ X^2+Y^2+Z^2} 
+T\sim\text{Beta} (0.5,1)
+g
+T
+g
+u
+T=X^2/(X^2+Y^2+Z^2)
+(X,Y,Z)
+f
+ E[u(T)]=\int u(t)g(t)\mathrm dt. 
+ E[u(T)]=\int\!\!\!\int\!\!\!\int  u(x^2/(x^2+y^2+z^2))f(x)f(y)f(z)\mathrm dx\mathrm dy\mathrm dz, 
+x=r\cos a
+y=r\sin a\cos b
+z=\sin a\sin b
+r\gt0
+a
+[0,\pi]
+b
+[-\pi,\pi]
+x^2+y^2+z^2=r^2
+\mathrm dx\mathrm dy\mathrm dz=r^2\sin a\mathrm dr\mathrm da\mathrm db
+t=\cos^2a
+\sin a\mathrm da\propto\mathrm d(\cos a)\propto\mathrm d(\sqrt{t})\propto\mathrm dt/\sqrt{t}
+ E[u(T)]=\int\!\!\!\int\!\!\!\int  u(\cos^2a)\mathrm e^{-r^2/2}r^2\sin a\mathrm dr\mathrm da\mathrm db, 
+ E[u(T)]\propto\int_0^\pi u(\cos^2a)\sin a\mathrm da\propto\int_0^{\pi/2} u(\cos^2a)\sin a\mathrm da. 
+ E[u(T)]\propto\int_0^1 u(t)\frac{\mathrm dt}{\sqrt{t}}, 
+ g(t)\propto\frac{\mathbf 1_{0\lt t\lt1}}{\sqrt{t}}. 

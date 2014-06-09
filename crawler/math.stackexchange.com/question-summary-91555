@@ -1,0 +1,44 @@
+C
+X ( t ) = ( 1 + 3 \sin(t)) I + ( 1 + 3 \sin^2(t) ) J + ( 1 + 5\sin^3(t) ) K
+0 ≤ t ≤ π/2
+F
+F ( x, y, z ) = xI + y J + z K
+F
+C
+x
+y
+z
+t
+x = 1 + 3\sin(t)
+x = 1 + 3\sin(t), y = 1 + 3\sin^2(t), z = 1+5\sin^3(t)
+dx = 3\cos(t), dy = 3\sin(2t), dz = 15\sin^2(t)\cos(t)
+X(t) = x(t){\bf i}+y(t){\bf j}+z(t){\bf k}
+a \leq t \leq b
+x
+x(t)
+y
+y(t)
+z
+z(t)
+d{\bf X}
+{\bf X}'(t)\,dt
+F({\bf X}(t)) {\bf \cdot} {\bf X}'(t)
+t
+a
+b
+ \int_C F {\bf \cdot} d{\bf X} = \int_a^b F({\bf X}(t)) {\bf  \cdot} {\bf X}'(t)\;dt =  \int_a^b F(x(t),y(t),z(t)) {\bf  \cdot} {\bf X}'(t)\;dt 
+P\;dx+Q\;dy+R\;dz
+x(t)
+x
+y(t)
+y
+z(t)
+z
+x'(t)dt
+dx
+y'(t)dt
+dy
+z'(t)dt
+dz
+ \int_C Pdx+Qdy+Rdz = \int_a^b \Big(P(x(t),y(t),z(t))x'(t) + \qquad \qquad \quad\qquad \qquad \qquad \quad\qquad \quad
+ \qquad \qquad \qquad Q(x(t),y(t),z(t))y'(t) + R(x(t),y(t),z(t))z'(t) \Big)dt 

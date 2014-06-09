@@ -1,0 +1,118 @@
+L_1
+x^n
+\mathbb R
+\{1,x,\ldots,x^{n-1}\}
+[0,1]
+\| x^n - p(x) \| > 0
+< n
+h(n)
+\| x^n - p(x) \| > h
+h
+r
+h(r)
+h(r)
+h
+n
+L_1
+\prod_{k=1}^n (x-\cos^2(\pi k/(2n+2))
+f
+f
+0 < \rho_1 < \rho_2 < \cdots < \rho_n <1
+\rho_0=0
+\rho_{n+1}=1
+g
+<n
+\epsilon
+f + \epsilon g
+n
+(0,1)
+\rho_i(\epsilon)
+f'(\rho_k) \neq 0
+\rho_0(\epsilon)=0
+\rho_{n+1}(\epsilon) = 1
+|f+\epsilon g|_1 = \sum_{k=0}^n (-1)^{n-k} \int_{\rho_k(\epsilon)}^{\rho_{k+1}(\epsilon)} f+\epsilon g
+ = \sum_{k=0}^n (-1)^{n-k} \left( \int_{\rho_k}^{\rho_{k+1}} f+\epsilon g + \int_{\rho_k}^{\rho_k(\epsilon)} f+\epsilon g -  \int_{\rho_{k+1}}^{\rho_{k+1}(\epsilon)} f+\epsilon g \right)
+=|f|_1 +  \epsilon \sum_{k=0}^n (-1)^{n-k} \int_{\rho_k}^{\rho_{k+1}} g + \mbox{error}
+\rho_k
+\rho_k(\epsilon)= \rho_k + O(\epsilon)
+O(\epsilon)
+f(\rho_k) =0
+f
+f(x) = O(\epsilon)
+x \in (\rho_k, \rho_k+O(\epsilon))
+g
+g=O(1)
+\int_{\rho_k}^{\rho_k + O(\epsilon)} \left( O(\epsilon) + \epsilon O(1) \right) = O(\epsilon^2).
+|f+\epsilon g|_1 = |f|_1 + \epsilon \sum_{k=0}^n (-1)^{n-k} \int_{\rho_k}^{\rho_{k+1}} g + O(\epsilon^2).
+g=x^{k-1}
+1 \leq k \leq n
+\frac{1}{k} \left( \alpha_1^k - (\beta_1^k-\alpha_1^k) + (\alpha_2^k-\beta_1^k) - \cdots +(1-\beta_m^k) \right)=0.
+2 \sum \frac{\alpha_i^k}{k} + \frac{1}{k} = 2 \sum \frac{\beta_i^k}{k} \ \mathrm{for} \ 1 \leq k \leq n.
+n
+\prod(1-\alpha_i x) = 1+a_1 x + a_2 x^2 + \cdots + a_m x^m
+\prod(1-\beta_i x) = 1+b_1 x + b_2 x^2 + \cdots + b_m x^m
+\sum \frac{\alpha_i^k x^k}{k} + \frac{1}{2} \sum \frac{x^k}{k} = \sum \frac{\beta_i^k x^k}{k} + O(x^{n+1}).
+\sum \log \frac{1}{1-\alpha_i x} + \frac{1}{2} \sum \log \frac{1}{1-x} = \sum \log \frac{1}{1-\beta_i x} + O(x^{n+1})
+\prod (1-\alpha_i x) \sqrt{1-x} = \prod (1-\beta_i x) + O(x^{n+1}).
+\left( 1+a_1 x + a_2 x^2 + \cdots + a_m x^m \right) \sqrt{1-x} = \left( 1+b_1 x + b_2 x^2 + \cdots + b_m x^m \right) + O(x^{n+1}).
+f
+h
+[0,1] \to \{ -1 , 1 \}
+\cos^2(\pi k/(2n+2))
+h
+x=\cos^2 t
+h(\cos^2 t)
+k \pi/(2n+2)
+\sigma
+\sigma(u)
+\pm 1
+\pi
+u=2 t
+\int_0^{\pi/2} h(\cos^2 t) g(\cos^2 t) (2 \sin t \cos t) dt=0.
+\int_{0}^{\pi/2} \sigma( (2n+2) t) g((\cos (2t)+1)/2) \sin(2t) dt=0.
+\int_{-\pi}^{\pi} \sigma( (n+1) u)  g((\cos u+1)/2) \sin u \ du=0.
+g
+<n
+\hat{g}(w) := g((u+1)/2)
+<n
+\hat{g}
+<n
+\int_{-\pi}^{\pi} \sigma((n+1) u) \hat{g}(\cos u) \sin u \ du=0
+\hat{g}_0
+\hat{g}_{n-1}
+\hat{g}_m(\cos u) = \cos (mu)
+\int_{- \pi}^{\pi} \sigma((n+1) u) \cos (mu) \sin u \ du=0 \ \mathrm{for} \ 0 \leq m < n
+\frac{1}{2} \int_{- \pi}^{\pi} \sigma((n+1) u)  \left( \sin ((m+1) u) - \sin((m-1) u) \right) du \ \mathrm{for} \ 0 \leq m < n.
+\sigma(v)
+\sin(v) + \frac{1}{3} \sin 3 v + \frac{1}{5} \sin (5v) + \cdots
+\sigma((n+1)u)
+\sin((n+1)u) + \cdots
+\sigma((n+1) u)
+\sin (ru)
+r \leq n
+a_k
+k=0\dots n-1
+ \int_0^1\left|x^n-a_{n-1}x^{n-1}-a_{n-2}x^{n-2}-\dots-a_0\right|\;\mathrm{d}x\tag{1} 
+ \int_0^1\operatorname{sgn}(x^n-a_{n-1}x^{n-1}-a_{n-2}x^{n-2}-\dots-a_0)\;x^k\tag{2}\;\mathrm{d}x=0 
+P(x)=x^n-a_{n-1}x^{n-1}-a_{n-2}x^{n-2}-\dots-a_0
+n
+(0,1)
+Q(x)
+< n
+P(x)
+x\in[0,1]
+\epsilon>0
+\int_0^1|P(x)-\epsilon Q(x)|\mathrm{d}x<\int_0^1|P(x)|\mathrm{d}x
+0< x_1< x_2<\dots< x_n<1
+P(x)
+(2)
+k=0\dots n-1
+k=1\dots n
+(3)
+j=1\dots n
+\displaystyle \operatorname{Re}\left(\frac{1}{e^{ix}+1}\right)=\frac12
+ \frac{1}{k+1}\left[(x_1^{k+1}-0)-(x_2^{k+1}-x_1^{k+1})+(x_3^{k+1}-x_2^{k+1})-\dots+(-1)^{n-1}(1-x_n^{k+1})\right]=0 
+ x_n^k-x_{n-1}^k+x_{n-2}^k-\dots+(-1)^{n-1}x_1^k=\tfrac12\tag{3} 
+ x_j=\sin^2\left(\frac{\pi}{2}\frac{j}{n+1}\right)\tag{4} 
+ \begin{align} &\sum_{j=1}^n(-1)^{n-j}\sin^{2k}\left(\frac{\pi}{2}\frac{j}{n+1}\right)\\ &=(-\tfrac14)^k\sum_{j=1}^n(-1)^{n-j}\sum_{m=0}^{2k}\binom{2k}{m}(-1)^m\exp\left(i\pi\frac{(k-m)j}{n+1}\right)\\ &=(-\tfrac14)^k(-1)^{n}\sum_{m=0}^{2k}\binom{2k}{m}(-1)^m\left(\frac{(-1)^{k-m+n}-1}{\exp\left(i\pi\frac{k-m}{n+1}\right)+1}-1\right)\\ &=(\tfrac14)^k\sum_{m=0}^{2k}\binom{2k}{m}(-1)^{k-m+n}\frac{(-1)^{k-m+n}-1}{\exp\left(i\pi\frac{k-m}{n+1}\right)+1}\\ &=(\tfrac14)^k\sum_{m=0}^{2k}\binom{2k}{m}\frac{1-(-1)^{k-m+n}}{\exp\left(i\pi\frac{k-m}{n+1}\right)+1}\\ &=(\tfrac14)^k\sum_{m=0}^{2k}\binom{2k}{m}\frac12\left(1-(-1)^{k-m+n}\right)\\ &=(\tfrac14)^k\sum_{m=0}^{2k}\binom{2k}{m}\frac12\\ &=\frac12\tag{5} \end{align} 
+ P(x)=\prod_{j=1}^n\left(x-\sin^2\left(\frac{\pi}{2}\frac{j}{n+1}\right)\right)\tag{6} 

@@ -1,0 +1,35 @@
+(X,d)
+A
+X
+x\in X
+x
+A
+d(x,A)=inf\{d(x,a) | a\in A\}
+d(x,A)=\inf\{d(x,a):a\in A\}\le \inf\{d(x,y):y\in A\}+\inf\{d(y,a):a\in A\}
+d(x,A)=\inf\{d(x,a):a\in A\}\le \inf\{d(x,y):y\in A\}+ d(y,A)
+d(x,A)-  d(y,A)\le \inf\{d(x,y):y\in A\}<d(x,y)
+\varepsilon >0
+x,y \in X
+z_x,z_y\in A
+x
+y
+\varepsilon \to 0
+d(\cdot,A)
+ d(z_x,x)\leq d(x,A)+\varepsilon\ \  \wedge\ \ d(z_y,y)\leq d(y,A)+\varepsilon 
+ d(x,A)-d(y,A)\leq d(x,y)+\varepsilon 
+ d(y,A)-d(x,A)\leq d(x,y)+\varepsilon 
+ |d(x,A)-d(y,A)|\leq d(x,y)+\varepsilon 
+U, V
+M
+\{x_i\}
+U
+\{y_i\}
+V
+D(x_i, x_0) < \delta
+\delta > 0
+N_\delta(x_0) \subset U
+D(f(x_i), y_0) < \epsilon
+\epsilon > 0
+f(N_\delta(x)) \subset N_\epsilon(y_0) \subset V
+f
+x_0, y_0

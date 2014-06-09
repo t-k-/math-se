@@ -1,0 +1,7 @@
+\lim_{s\rightarrow\infty}\left(\frac{1}{(2-e^{t/\sqrt{2s}})e^{t/\sqrt{2s}}}\right)^{s}
+f(s) = (2 - e^{t/\sqrt{2s}}) e^{t/\sqrt{2s}}
+s \to \infty
+e^{t/\sqrt{2s}} = 1 + \frac{t}{\sqrt{2s}} + \frac{t^2}{4s} + O(s^{-3/2})
+f(s) = 1 - \frac{t^2}{2s} + O(s^{-3/2})
+\ln f(s) = - \frac{t^2}{2s} + O(s^{-3/2})
+\left(\frac{1}{f(s)}\right)^s = e^{-s \ln f(s)} \to e^{t^2/2}

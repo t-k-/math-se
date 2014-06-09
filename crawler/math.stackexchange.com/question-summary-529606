@@ -1,0 +1,15 @@
+\int_{1}^{\infty}\dfrac{1}{x}e^{-x}(e^{-x}-1)dx
+e^x = t
+ \int_e^\infty \frac{1-t}{t^3 \ln t} dt = \int_e^\infty \frac{1}{t^3 \ln t} dt - \int_e^\infty \frac{1}{t^2 \ln t} dt 
+\int_e^\infty \frac{1}{t^3 \ln t}dt \leqslant  \int_e^\infty \frac{1}{t^3} dt \in \mathbb{R}
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}%  \newcommand{\yy}{\Longleftrightarrow}
+\ds{% \int_{1}^{\infty}x^{\mu}\pars{2\expo{-2x} - \expo{-x}}\,\dd x }
+\Gamma\pars{z,\alpha}
+\it\mbox{Incomplete Gamma function}
+\mu
+\mu \to 0
+\ds{% \Gamma\pars{0,2} - \Gamma\pars{0,1} = -\int_{1}^{2}{\expo{-x} \over x}\,\dd x}
+{\large% \int_{1}^{\infty}{1 \over x}\,\expo{-x}\pars{\expo{-x} - 1}\,\dd x = -\int_{1}^{2}{\expo{-x} \over x}\,\dd x} 
+{\rm Ei}\pars{-1} - {\rm Ei}\pars{-2} = -0.170483
+{\rm Ei}
+\it\mbox{Exponential Integral}

@@ -1,0 +1,23 @@
+f: \mathbb R^2  \to \mathbb R
+f(x,y) = \frac{x^3\sin(x+y) - y^4\ln(x^2+y^2)}{x^2+y^2}
+(x,y) \neq  (0,0)
+f(0,0)=0
+f
+(0,0)
+f
+(0,0)
+df_{(0,0)}=0
+|\sin z|\leq |z|
+ \frac{|f(x,y)|}{\sqrt{x^2+y^2}}\leq \frac{|x|^3|x+y|}{(x^2+y^2)^{3/2}}+\frac{|y|}{(x^2+y^2)^{1/2}}\frac{|y^3\ln(x^2+y^2)|}{x^2+y^2}. 
+0
+\sqrt{x^2+y^2}
+0
+ \frac{|x|^3|x+y|}{(x^2+y^2)^{3/2}}\leq \frac{|x|^3\sqrt{2}\sqrt{x^2+y^2}}{(x^2+y^2)^{3/2}}=\frac{|x|^3\sqrt{2}}{x^2+y^2}\leq \frac{\sqrt{2}|x| (x^2+y^2)}{x^2+y^2}=\sqrt{2}|x|\leq \sqrt{2}\sqrt{x^2+y^2} 
+ \frac{|y|}{(x^2+y^2)^{1/2}}\leq \frac{\sqrt{x^2+y^2}}{(x^2+y^2)^{1/2}}=1 
+ \frac{|y^3\ln(x^2+y^2)|}{x^2+y^2}=\frac{y^2}{x^2+y^2}\cdot|y\ln(x^2+y^2)|\leq \sqrt{x^2+y^2}\ln(x^2+y^2). 
+0
+\sqrt{x^2+y^2}
+0
+\lim_{u\rightarrow 0^+}\sqrt{u}\ln u=0
+ \frac{|y|}{(x^2+y^2)^{1/2}}\frac{|y^3\ln(x^2+y^2)|}{x^2+y^2}\leq \sqrt{x^2+y^2}\ln(x^2+y^2) 
+ \lim_{(x,y)\rightarrow(0,0)} \frac{|f(x,y)-f(0,0)-0|}{\sqrt{x^2+y^2}}=0 

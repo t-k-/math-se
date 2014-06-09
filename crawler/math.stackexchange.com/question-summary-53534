@@ -1,0 +1,15 @@
+p(x)=c_n x^n +\cdots +c_1 x+c_0
+\mathbf C=\begin{pmatrix}-\frac{c_{n-1}}{c_n}&\cdots&-\frac{c_1}{c_n}&-\frac{c_0}{c_n}\\1&&&\\&\ddots&&\\&&1&\end{pmatrix}
+\mathbf T\mathbf C\mathbf T^{-1}=\begin{pmatrix}&&&-\frac{c_0}{c_n}\\1&&&-\frac{c_1}{c_n}\\&\ddots&&\vdots\\&&1&-\frac{c_{n-1}}{c_n}\end{pmatrix}
+\mathbf T
+\mathbf T=\begin{pmatrix}1&\frac{c_{n-1}}{c_n}&\cdots&\frac{c_1}{c_n}\\&\ddots&\ddots&\vdots\\&&\ddots&\frac{c_{n-1}}{c_n}\\&&&1\end{pmatrix}
+c_n u_{k+n}+\dots+c_1 u_{k+1}+c_0 u_k=0
+p(x)
+u_k
+u_k=w_1 \mu_1^k+\dots+w_n \mu_n^k
+\begin{pmatrix}u_{k+1}\\u_k\\\vdots\\u_{k-n+2}\end{pmatrix}=\begin{pmatrix}-\frac{c_{n-1}}{c_n}&\cdots&-\frac{c_1}{c_n}&-\frac{c_0}{c_n}\\1&&&\\&\ddots&&\\&&1&\end{pmatrix}\cdot\begin{pmatrix}u_k\\u_{k-1}\\\vdots\\u_{k-n+1}\end{pmatrix}
+\frac{\mathbf e_1^\top\mathbf C\mathbf u_j}{\mathbf e_1^\top\mathbf u_j}
+\mathbf e_1
+\mathbf T\mathbf u_0=\mathbf d
+\mathbf d=(c_1\quad 2c_2\quad \cdots\quad n c_n)^\top
+p^\prime(x)

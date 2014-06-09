@@ -1,0 +1,6 @@
+ \int_{0}^{\infty}x\,\left\{\vphantom{\LARGE A}% 1- \left[\vphantom{\Large A}1- \exp(-a\,x^{\alpha}) \right]^M \right\}\,{\rm d}x \qquad \mbox{with}\quad \alpha > 0\quad\mbox{and}\quad a,M > 0.  
+M
+\beta=1/\alpha
+x\to x^\beta
+\Gamma(2/\alpha)
+ \begin{align} \int_0^\infty x\left[1-(1-\exp(-ax^\alpha))^M\right]\mathrm{d}x &=\int_0^\infty \beta x^{2\beta-1}\left[1-(1-\exp(-ax))^M\right]\mathrm{d}x\\ &=\int_0^\infty \beta x^{2\beta-1}\left[\sum_{k=1}^M(-1)^{k-1}\binom{M}{k}\exp(-akx)\right]\mathrm{d}x\\ &=\beta\;a^{-2\beta}\;\Gamma(2\beta)\;\sum_{k=1}^M(-1)^{k-1}k^{-2\beta}\binom{M}{k} \end{align} 

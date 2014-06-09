@@ -1,0 +1,8 @@
+\frac{\partial^2f}{\partial x \partial y} = \frac{\partial^2f}{\partial y \partial x}
+\frac { \partial } {\partial x} [\frac { \partial } {\partial y} f ]= \frac { \partial } {\partial y} [\frac { \partial } {\partial x} f ] 
+L(x,y) = \frac { \partial } {\partial y} f = \lim_{h\to 0} \frac{f(x,y+h) - f(x,y)}{h} 
+M(x,y) = \frac { \partial } {\partial x} f = \lim_{h\to 0} \frac{f(x+h,y) - f(x,y)}{h}
+ \frac{\partial}{\partial x} L = \lim_{h\to 0} \frac{L(x+h,y) - L(x,y)}{h}
+ \frac{\partial}{\partial y} M = \lim_{h\to 0} \frac{M(x,y+h) - M(x,y)}{h}
+ \frac{\partial}{\partial x} L = \lim_{h_1\to 0} \lim_{h_2 \to 0} \frac{(\frac{f(x+h_1,y+h_2) - f(x+h_1,y)}{h_2}) - (\frac{f(x,y+h_2) - f(x,y)}{h_2})}{h_1}
+ \frac{\partial}{\partial y} M = \lim_{h_1\to 0} \lim_{h_2\to 0} \frac{(\frac{f(x+h_2, y+h_1) - f(x,y+h_1)}{h_2}) - (\frac{f(x+h_2, y) - f(x,y)}{h_2})}{h_1}

@@ -1,0 +1,15 @@
+f(x) = \sqrt{x^2-3x}
+g(x) = x
+\lim_{x\to0}f(x)\\ =\lim_{x\to0}\sqrt{x^2-3x}=0
+\lim_{x\to-\infty}\frac{f(x)}{g(x)}\\ =\lim_{x\to-\infty}\frac{\sqrt{x^2-3x}}{x}=\sqrt{1-\frac{3}{x}}=1
+\lim_{x\to+\infty}(f(x)-g(x))
+\sqrt{x^2}=-x
+x<0
+ \lim_{x\to-\infty}\frac{\sqrt{x^2-3x}}{x}=\lim_{x\to-\infty}\frac{\sqrt{x^2-3x}}{-\sqrt{x^2}}=\lim_{x\to-\infty}-\sqrt{1-\frac{3}{x}}=-1 
+\lim_{x\to\infty}\{f(x)-g(x)\}=\lim_{x\to\infty}\{\sqrt{x^2-3x}-x\}
+=\lim_{h\to0}\frac{\sqrt{1-3h}-1}h(\text{ putting } x=\frac1h)
+\lim_{h\to0}\frac{(1-3h)^{\frac12}-1}h=\lim_{h\to0}\frac{1-3h\cdot\frac12+O(h^2)-1}h=-\frac32
+\lim_{h\to0}\frac{(1-3h)^{\frac12}-1}h=\lim_{h\to0}\frac{\frac12\cdot\frac1{\sqrt{1-3h}}\cdot(-3)}1=-\frac32
+\lim_{h\to0}\frac{\sqrt{1-3h}-1}h=\lim_{h\to0}\frac{(1-3h)-1}{h(\sqrt{1+3h}+1)}
+=\lim_{h\to0}\frac{-3}{\sqrt{1+3h}+1}(\text{ Cancelling } h\text{ as }h\ne0\text{ as }h\to0  )
+=-\frac32

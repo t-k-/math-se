@@ -1,0 +1,41 @@
+\textbf{Problem:}
+f: [0,1] \rightarrow \mathbb{R}
+\lambda
+[0,1]
+f
+\sum^{\infty}_{n=1} \lambda(\{x: f(x) \geq n\})
+\textbf{Solution:}
+f
+\int f \> d\lambda
+E_n=\{x: f(x) \geq n\}
+\sum^{\infty}_{n=1} \lambda(E_n)
+n
+n\chi_{E_n} \leq f
+\lambda(E_n) \rightarrow 0
+n \rightarrow \infty
+\sum^{\infty}_{n=1} \lambda(E_n)
+ n \int \chi_{E_n} \> d\lambda \leq \int f \> d\lambda
+ n \lambda(E_n) \leq \int f \> d\lambda
+\lambda(E_n) \leq \frac{1}{n} \int f \> d\lambda
+\>\>\>
+E_n=\{x: f(x) \geq n\}
+\sum^{\infty}_{n=1} \lambda(E_n)
+(\phi_n)
+f
+\lim \int \phi_n \> d\lambda
+\int f \> d\lambda
+\blacksquare
+\phi_n = \sum^{n}_{k=1}  \chi_{E_k}.
+\int f \> d\lambda = \lim \int \phi_n \> d\lambda.
+\lim \int \phi_n \> d\lambda = \lim_{n} \sum^{n}_{k=1} \lambda(E_k) = \sum^{\infty}_{n=1} \lambda(E_n),
+f
+\int_{[0,1]} f\, d\lambda=\int_0^\infty \lambda(\{ x;\; f(x)\geq t\})\, dt 
+\int_{[0,1]}f\, d\lambda=\sum_{n=0}^\infty \int_n^{n+1}\lambda(\{ x;\; f(x)\geq t\})\, dt
+n\geq 0
+\lambda(E_{n+1})\leq \lambda(\{ x;\; f(x)\geq t\})\, dt\leq \lambda(E_n)
+t\in [n,n+1]
+\lambda(E_{n+1})\leq \int_n^{n+1}\lambda(\{ x;\; f(x)\geq t\})\, dt\leq\lambda(E_n)
+f
+\int f\, d\lambda<\infty
+\sum \lambda(E_n)
+\sum_{n=1}^\infty \lambda(E_n)\leq\int_{[0,1]} f\, d\lambda\leq \sum_{n=0}^\infty \lambda (E_n)\, , 

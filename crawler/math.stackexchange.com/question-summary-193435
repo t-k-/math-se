@@ -1,0 +1,29 @@
+\int\cos^n x \ dx = \frac{1}n \cos^{n-1}x \sin x + \frac{n-1}{n}\int\cos^{n-2} x \ dx
+I_n := \int\cos^n x \ dx = \int\cos^{n-1} x \cos x \ dx \tag{1}
+u = \cos^{n-1} x, dv = \cos x \ dx \implies du = (n-1)\cos^{n-2} x \cdot -\sin x, v = \sin x
+I_n = \sin x \ \cos^{n-1} x +\int\sin^2 x (n-1) \ \cos^{n-2} x \ dx \tag{2}
+(n-1)
+I_n = \sin x \ \cos^{n-1} x +(n-1)\int\sin^2 x \ \cos^{n-2} x \ dx\tag{3}
+\sin^2 x + cos^2 x = 1 \implies \sin^2 x = 1-\cos^2 x
+I_n = \sin x \ \cos^{n-1} x + (n-1)\int(1-\cos^2 x) \ \cos^{n-2} x \ dx \tag{4}
+I_n = \sin x \ \cos^{n-1} x + (n-1) \int \cos^{n-2} x \ dx - (n-1)\int(\cos^n x) \ dx \tag{5}
+I_n = \sin x \ \cos^{n-1} x + (n-1) I_{n-2} x  - (n-1) I_{n} \tag{6}
+I_n
+\cos^2 x = \frac{1}{2} \cos(2x) + \frac{1}{2} 
+\int 1 \ dx - \int \frac{1}{2} \cos (2x) + \frac{1}{2} \ dx
+\frac{x}{2} - \frac{1}{4} \sin(2x)
+I_n = \sin x \ \cos^{n-1} x + (n-1) I_{n-2} x \left(-(n-1) (\frac{x}{2} - \frac{1}{4} \sin 2x) \right) \tag{7}
+I_{something}
+\int\cos^n x \ dx = \frac{1}n \cos^{n-1}x \sin x + \frac{n-1}{n}\int\cos^{n-2} x \ dx
+I_n = \sin x \ \cos^{n-1} x + (n-1)\int(1-\cos^2 x) \ \cos^{n-2} x \ dx \tag{4}
+\int(1-\cos^2 x) \ \cos^{n-2} x \ dx =\int \cos^{n-2} x \ dx-\int \cos^2 x\; \cos^{n-2} x \ dx \\=\int \cos^{n-2} x \ dx-\int \cos^{n} x \ dx 
+I_n = \sin x \ \cos^{n-1} x + (n-1)\int \cos^{n-2} x \ dx-(n-1)\int \cos^{n} x \ dx 
+I_n = \sin x \ \cos^{n-1} x + (n-1)I_{n-2}-(n-1)I_n
+nI_n = \sin x \ \cos^{n-1} x + (n-1)I_{n-2}
+I_n =\frac{ \sin x \ \cos^{n-1} x}n + \frac{n-1}nI_{n-2}
+C
+\int_0^x \cos^n t dt = \frac{1}{n} \cos^{n-1} x \sin x + \frac{n-1}{n} \int^x_0 \cos^{n-2} t dt + C
+\cos^2 x + \sin^2 x = 1
+RHS = \frac{n-1}{n} \cos^{n-2} x (-\sin x) \sin x + \frac{1}{n} \cos^{n-1} x \cos x + \frac{n-1}{n} \cos^{n-2} x,
+RHS = \frac{n-1}{n} (1-\sin^2 x) \cos^{n-2} x + \frac{1}{n} \cos^n x
+RHS = \frac{n-1}{n}\cos^n x+\frac{1}{n} \cos^nx = \cos^n x,

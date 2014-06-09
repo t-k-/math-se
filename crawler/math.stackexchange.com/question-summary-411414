@@ -1,0 +1,34 @@
+z = 4x^2 + y^2
+z = 8x + 4y - 4
+(x, y, 3z)\,dS
+S
+S
+r=(\frac{1}{2}r\cos t, r\sin t, r^2)
+0\leq t < 2\pi
+r^2 \leq 4r\cos t + 4r\sin t - 4
+z = 4x^2 +y^2
+z=4x^2+y^2
+z=8x+4y−4
+n_C =(-8/9,-4/9,1/9)
+C
+S
+V
+F = (x,y,3z)
+S
+n_S = -n
+C
+0<r<1
+t\in (0,2\pi)
+z = 8(1+r\cos t) + 4(2+ \sqrt{2}\,r \sin t) -4
+J
+F
+5
+ \{(x,y,z): (x-1)^2 + (y-2)^2/2 = 1,\; z=8x+4y−4\}. 
+ C = \{(x,y,z): (x-1)^2 + (y-2)^2/2 < 1,\; z=8x+4y−4\}. 
+ S = \{(x,y,z): (x-1)^2 + (y-2)^2/2 < 1,\; z=4x^2+y^2\}. 
+ \int_V \nabla \cdot F\,dV = \int_{\partial V} F\cdot n \,dS = \int_{C} F\cdot n_C \,dS + \int_{S} F\cdot n_S \,dS, 
+ \int_{S} F\cdot n_S \,dS = \int_{C} F\cdot n_C \,dS - \int_V \nabla \cdot F\,dV.\tag{1} 
+ F\cdot n_C\bigg|_C = -\frac{8}{9}x - \frac{4}{9}y + \frac{1}{3}z = \frac{2}{9}z - \frac{4}{9}, 
+\begin{cases} x - 1 = r\cos t, \\ y-2 = \sqrt{2}\,r \sin t,\end{cases}\tag{2}
+ \int_{C} F\cdot n_C \,dS = \int^{2\pi}_0\int^1_0\left( \frac{2}{9}\big(8(1+r\cos t) + 4(2+ \sqrt{2}\,r \sin t) -4\big) - \frac{4}{9}\right) |J| \,dr\,dt.\tag{3} 
+ \begin{aligned} &\int_V \nabla \cdot F\,dV = 5 \iint_{(x-1)^2 + (y-2)^2/2 < 1}\int^{8x+4y-4}_{4x^2+y^2}\,dz\,dx\,dy \\ =&  5 \iint_{(x-1)^2 + (y-2)^2/2 < 1} \left( \big(8x+4y-4\big) - \big(4x^2+y^2\big)\right)\,dx\,dy \\ =& 5 \iint_{(x-1)^2 + (y-2)^2/2 < 1} \left( 2 - 2(x-1)^2 - (y-2)^2\right)\,dx\,dy \\ =& 5\int^{2\pi}_0\int^1_0 \left( 2 - 2r^2 \cos^2 t - 2r^2 \sin^2 t\right) |J|\,dr\,dt.\tag{4} \end{aligned} 

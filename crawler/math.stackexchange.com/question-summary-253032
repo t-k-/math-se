@@ -1,0 +1,3 @@
+ \\ I_{(m,n)}\; =\;\int x^m(x+a)^ndx\; = \; \frac{x^m(x+a)^{n+1}}{m+n+1}-\frac{ma}{m+n+1}I_{(m-1,n)}\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;m,n \in N 
+ \begin{align} I_{(m,n)}\; =\;\frac{x^{m+1}(x+a)^n}{m+1}-\frac{n}{m+1}I_{(m+1,n-1)}\\ I_{(m,n)}\; =\;\frac{x^{m}(x+a)^{n+1}}{n+1}-\frac{m}{n+1}I_{(m-1,n+1)} \end{align} 
+I(m,n)=\int x^m(x+a)^ndx=\int x^{m-1}(x+a-a)(x+a)^{n}dx=\int x^{m-1}(x+a)^{n+1}dx-a\int x^{m-1}(x+a)^{n}dx=I(m-1,n+1)-aI(m-1,n)

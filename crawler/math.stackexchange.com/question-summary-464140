@@ -1,0 +1,6 @@
+\int_0^1{\frac{x^n}{\sqrt{x+1}} dx}
+I_n=\int\frac{x^ndx}{\sqrt{x+1}}=\int\frac{x^{n-1}(1+x-1)dx}{\sqrt{x+1}} 
+=\int x^{n-1}\sqrt{x+1}dx-\int\frac{x^{n-1}dx}{\sqrt{x+1}}=\int x^{n-1}\sqrt{x+1}dx-I_{n-1}
+\int x^{n-1}\sqrt{x+1}dx= \sqrt{x+1}\frac{x^n}n-\int \frac{x^n}{2n\sqrt{x+1}}dx=\sqrt{x+1}\frac{x^n}n-\frac{I_n}{2n}
+\implies I_n=\sqrt{x+1}\frac{x^n}n-\frac{I_n}{2n}-I_{n-1}
+I_n

@@ -1,0 +1,17 @@
+\sqrt{1}=\sum\limits_{n=1}^{\infty } \left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)
+\sqrt{1}+\sqrt{2}=\sum\limits_{n=1}^{\infty}\left(\frac{1}{\sqrt{n}}+\frac{1}{\sqrt{n+1}}-\frac{2}{\sqrt{n+2}}\right)
+\sqrt{1}+\sqrt{2}+\sqrt{3}=\sum\limits_{n=1}^{\infty } \left(\frac{1}{\sqrt{n}}+\frac{1}{\sqrt{n+1}}+\frac{1}{\sqrt{n+2}}-\frac{3}{\sqrt{n+3}}\right)
+\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}=\sum _{n=1}^{\infty } \left(\frac{1}{\sqrt{n}}+\frac{1}{\sqrt{n+1}}+\frac{1}{\sqrt{n+2}}+\frac{1}{\sqrt{n+3}}-\frac{4}{\sqrt{n+4}}\right)
+\cdots
+\sum\limits_{n=1}^{\infty } \left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)=\lim_{N\to\infty}\sum\limits_{n=1}^{N} \left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)=\lim_{N\to\infty}\sum\limits_{n=1}^{N} \frac{1}{\sqrt{n}}-\sum\limits_{n=2}^{N+1}\frac{1}{\sqrt{n}}\\=\lim_{N\to\infty}\frac{1}{\sqrt{1}}-\frac{1}{\sqrt{N+1}}=\frac{1}{\sqrt{1}}
+ \begin{align} \sum_{n=1}^\infty\left(\left(\sum_{k=0}^{m-1}\frac1{\sqrt{n+k}}\right)-\frac{m}{\sqrt{n+m}}\right) &=\lim_{N\to\infty}\sum_{n=1}^N\sum_{k=0}^{m-1}\left(\frac1{\sqrt{n+k}}-\frac1{\sqrt{n+m}}\right)\\ &=\lim_{N\to\infty}\sum_{k=0}^{m-1}\sum_{n=1}^N\left(\frac1{\sqrt{n+k}}-\frac1{\sqrt{n+m}}\right)\\ &=\lim_{N\to\infty}\sum_{k=0}^{m-1}\left(\sum_{n=k+1}^{k+N}\frac1{\sqrt{n}}-\sum_{n=m+1}^{m+N}\frac1{\sqrt{n}}\right)\\ &=\lim_{N\to\infty}\sum_{k=0}^{m-1}\left(\sum_{n=k+1}^m\frac1{\sqrt{n}}-\sum_{n=k+N+1}^{m+N}\frac1{\sqrt{n}}\right)\\ &=\sum_{k=0}^{m-1}\sum_{n=k+1}^m\frac1{\sqrt{n}}\\ &=\sum_{n=1}^m\sum_{k=0}^{n-1}\frac1{\sqrt{n}}\\ &=\sum_{n=1}^m\sqrt{n} \end{align} 
+\infty
+m
+m
+\infty
+\sqrt{1}-\frac{1}{\sqrt{m+1}}
+\sqrt{1}+\sqrt{2}+H_m^{\left(\frac{1}{2}\right)}+H_{m+1}^{\left(\frac{1}{2}\right)}-2    H_{m+2}^{\left(\frac{1}{2}\right)}
+\sqrt{1}+\sqrt{2}+\sqrt{3}+H_m^{\left(\frac{1}{2}\right)}+H_{m+1}^{\left(\frac{1}{2}\right)}+H_{m+2}^{\left(\frac{1}{2}\right)}-3 H_{m+3}^{\left(\frac{1}{2}\right)}
+\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+H_m^{\left(\frac{1}{2}\right)}+H_{m+1}^{\left(\frac{1}{2}\right)}+H_{m+2}^{\left(\frac{1}{2}\right)}+H_{m+3}^{\left(\frac{1}{2}\right)}-4    H_{m+4}^{\left(\frac{1}{2}\right)}
+\begin{align*}     \sum_{n=1}^\infty \left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)         &= \sum_{n=1}^\infty \frac{1}{\sqrt{n}}-\sum_{n=1}^\infty\frac{1}{\sqrt{n+1}} \\         &= \sum_{n=1}^\infty \frac{1}{\sqrt{n}}-\sum_{n=2}^\infty\frac{1}{\sqrt{n}} \\         &= \frac{1}{\sqrt{1}}\\         &= \sqrt{1}. \end{align*}
+\begin{align*}     \sum_{n=1}^\infty \left(\frac{1}{\sqrt{n}}+\frac{1}{\sqrt{n+1}}-\frac{2}{\sqrt{n+2}}\right)         &=\sum_{n=1}^\infty \left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)              +\sum_{n=1}^\infty\left(\frac{2}{\sqrt{n+1}}-\frac{2}{\sqrt{n+2}}\right)\\         &= \sqrt{1} + 2\sum_{n=2}^\infty\left(\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}\right)\\         &= \sqrt{1} + \frac{2}{\sqrt{2}} \\         &= \sqrt{1} + \sqrt{2}. \end{align*}

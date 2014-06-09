@@ -1,0 +1,33 @@
+(X,\Sigma,\mu)
+f:X\rightarrow [0,\infty]
+0<A<\infty
+\alpha>0,
+\int_X f(x)d\mu(x)=A,
+\lim_{n\rightarrow\infty} \int_X n\log\left(1 + \left(\frac{f(x)}{n}\right)^{\alpha} \right)d\mu(x)=\begin{cases} \infty&\mbox{if }0<\alpha<1\\\ A&\mbox{if } \alpha=1\\\ 0&\mbox{if }\alpha>1. \end{cases}
+n
+\alpha<1
+n=1/t
+f(x)
+\alpha<1
+f(x)
+\alpha=1
+\alpha>1
+I_n(\alpha):=\int_X n\log\left(1+\left(\frac{f(x)}n\right)^{\alpha}\right)d\mu (x)
+0<\alpha<1
+\int_X fd\mu>0
+\beta>0
+\mu(\{f\geq \beta\})>0
++\infty
+\alpha=1
+x-\frac{x^2}2\leq \ln(1+x)\leq x
+\alpha>1
+\nu=f\mu
+\phi(x)=x\ln (1+x^{-\alpha})
+\phi'(x)=\ln(1+x^{-\alpha})-\alpha\frac{x^{-\alpha}}{1+x^{-\alpha}}
+\phi''(x)=\frac{-\alpha x^{-1-\alpha}}{1+x^{-\alpha}}-\frac 1{(1+x^{-\alpha})^2}(-\alpha x^{-\alpha-1})\alpha=-\alpha\frac{x^{-1-\alpha}}{1+x^{-\alpha}}x^{-\alpha}<0
+x>0
+\phi
+(X,\Sigma,\mu)
+\sigma
+I_n(\alpha)=\int_X\phi\left(\frac n{f(x)}\right)d\nu,
+I_n(\alpha)=\int_X\phi\left(\frac n{f(x)}\right)d\nu\leq \phi\left(\int_X\frac n{f(x)}d\nu\right)\leq \left(\int_X\frac n{f(x)}d\nu\right)^{1-\alpha},

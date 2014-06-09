@@ -1,0 +1,21 @@
+X_1
+\frac{1}{\theta}
+X_2,\ldots,X_n
+\frac{2}{\theta}
+X_1,X_2,\ldots,X_n
+X_1
+X_1,X_2,\ldots,X_n
+ \Pr(x < X_2\  \&\  x<X_3\  \&\  \cdots\  \&\  x<X_n) = \Pr(x<X_2)\cdots\Pr(x<X_n) = \left( e^{-\theta x/2} \right)^{n-1}. 
+ \begin{align} & {} \quad \Pr(X_1 < X_2\  \&\  X_1<X_3\  \&\  \cdots\  \&\  X_1<X_n) \\  \\ &  = \mathbb{E}(\Pr(X_1 < X_2\  \&\  X_1<X_3\  \&\  \cdots\  \&\  X_1<X_n \mid X_1)) = \mathbb{E}\left( \left(e^{-\theta X_1/2}\right)^{n-1} \right) \\  \\ & = \int_0^\infty \left( e^{-\theta x/2}\right)^{n-1} \cdot e^{-\theta x} \; \theta\;dx = \int_0^\infty e^{-(n+1)\theta x/2} \; \theta\;dx= \int_0^\infty e^{-(n+1)u} \; 2 \; du = \frac{2}{n+1}. \end{align} 
+X_1
+Y
+Z
+\frac{2}{\theta}
+Y
+Z
+\frac{1}{\theta}
+X_1
+Y
+Z
+Y,Z, X_2,\ldots, X_n
+\frac{2}{n+1}

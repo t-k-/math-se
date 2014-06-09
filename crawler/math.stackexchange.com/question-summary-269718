@@ -1,0 +1,11 @@
+(y^1,...,y^n):\mathbb R^n \rightarrow \mathbb R^n
+f\in C^\infty(\mathbb R^n)
+\mathbb R^n
+\nabla_{\mathbb R^n} = \sum_{j=1}^n(\frac{\partial}{\partial x^j})^2
+f
+\nabla_{\mathbb R^n} f(y^1(x^1,...,x^n),...y^n(x^1,...x^n)) = (\widetilde{\nabla}f)(y^1(x^1,...,x^n),...,y^n(x^1,...,x^n))
+\widetilde{\nabla} = \sum_{i,j=1}^n g^{ij}((\frac{\partial}{\partial y^i} \frac{\partial}{\partial y^j}) - \sum_{k=1}^n \Gamma_{ij}^k \frac{\partial}{\partial y^k})
+g^{ij}=\sum_{l=1}^n \frac{\partial y^i}{\partial x^l}\frac{\partial y^j}{\partial x^l}
+\Gamma_{ij}^k = \sum_{l=1}^n \frac{\partial y^k}{\partial x^l} \frac{\partial ^2 x^l}{\partial y^i \partial y^j}
+\nabla_{\mathbb R^n} f(y^1(x^1,...,x^n),...y^n(x^1,...x^n)) = \sum_{j=1}^n (\frac{\partial}{\partial x^j})^2(f) = \sum_{j=1}^n \frac{\partial}{\partial x^j}(\frac{\partial f}{\partial y^j}\frac{\partial y^j}{\partial x^j}) = \sum_{j=1}^n \frac{\partial ^2 f}{\partial (y^j)^2}(\frac{\partial y^j}{\partial x^j})^2 + \frac{\partial f}{\partial y^j}\frac{\partial ^x y^j}{\partial (x^j)^2}
+ \nabla_{\mathbb{R}^n}f(y^1(\ldots), \ldots , y^n(\ldots)) = \sum_{i,j ,k = 1}^{n} \frac{\partial^2 f}{\partial y^i \partial y^j} \frac{\partial y^j}{\partial x^k} \frac{\partial y^i}{\partial x^k} + \sum_{i,j = 1}^n \frac{\partial f}{\partial y^j} \frac{\partial^2 y^j}{\partial x^i \partial x^i} 

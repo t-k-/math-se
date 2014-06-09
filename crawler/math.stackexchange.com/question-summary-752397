@@ -1,0 +1,20 @@
+X_t=B_t-t^2+t
+B_t
+Q
+t
+\mathrm{d}Y_t = \mathrm{d}B_t + \mathrm{d}t
+Y_t = B_t + t
+Z_t = \left( \begin{array}{c}  Y_t \\  t \\ \end{array} \right)
+ A f(y,t) = \frac{\partial f}{\partial t} + \frac{\partial f}{\partial y}+\frac{1}{2} \frac{\partial^2 f}{\partial y^2}
+ Q_{t_0} g(x) = \lim_{s\downarrow t_0} \frac{E^x_{t_0}[g(X_s)]-g(x)}{s-t_0} = \left(\lim_{h \downarrow 0}\frac{E^{y,t}[g(Y_h-(t+h)^2)]-g(y-t^2)}{h}\right)_{y = x+t_0^2,t=t_0}
+ =\left(A g(y-t^2)\right)_{y = x+t_0^2,t=t_0}
+ =-2 t_0 g'(x) + g'(x) + \frac{1}{2}g''(x)
+X_t := B_t-t^2+t = \int_0^t \, dB_s + \int_0^t (-2s+1) \, ds.
+f \in C^2
+\begin{align*} f(X_t)-f(X_{t_0}) &= \int_{t_0}^t f'(X_s) \, dX_s + \frac{1}{2} \int_{t_0}^t f''(X_s) \, d\langle X \rangle_s \\ &= \int_{t_0}^t f(X_s) \, dB_s + \int_{t_0}^t f'(X_s) (-2s+1) \, ds + \frac{1}{2} \int_{t_0}^t f''(X_s) \, ds. \end{align*}
+\int_{t_0}^t f(X_s) \, dB_s
+\begin{align*} &\frac{1}{t-t_0} \bigg(\mathbb{E}^{t_0,x}f(X_t)-f(x)\bigg) \\ &= \frac{1}{t-t_0} \int_{t_0}^t \mathbb{E}^{t_0,x}(f'(X_s)) (-2s+1) \, ds + \frac{1}{2(t-t_0)} \int_0^t \mathbb{E}^{t_0,x}(f''(X_s)) \, ds. \end{align*}
+s \mapsto \mathbb{E}^{t_0,x}(f'(X_s))
+s \mapsto \mathbb{E}^{t_0,x}(f''(X_s))
+\begin{align*} \frac{1}{t-t_0} \int_{t_0}^{t} \mathbb{E}^{t_0,x}(f'(X_s)) (-2s+1) \, ds &\stackrel{t \to t_0}{\to} \mathbb{E}^{t_0,x}(f'(X_{t_0})) (-2 \cdot t_0+1) = f'(x)(-2t_0+1) \\ \frac{1}{2t-t_0} \int_{t_0}^t \mathbb{E}^{t_0,x}(f''(X_s))&\stackrel{t \to t_0}{\to} \frac{1}{2} \mathbb{E}^{t_0,x}(f''(X_{t_0})) = \frac{1}{2} f''(x) \end{align*}
+Q_{t_0}f(x) = \lim_{t \downarrow t_0} \frac{1}{t-t_0} \bigg(\mathbb{E}^{t_0,x}f(X_t)-f(x)\bigg) \to f'(x)(-2t_0+1)+ \frac{1}{2} f''(x).

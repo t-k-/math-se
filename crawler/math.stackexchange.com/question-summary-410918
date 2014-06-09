@@ -1,0 +1,32 @@
+F(t,x,\frac{dx}{dt},...,\frac{d^{n}x}{dt^{n}})=0
+\alpha
+m
+F(\lambda t, \lambda^{m}x,\lambda^{m-1}\frac{dx}{dt},...,\lambda^{m-n}\frac{d^{n}x}{dt^{n}})=\lambda^{\alpha}F(t,x,\frac{dx}{dt},...\frac{d^{n}x}{dt^{n}})
+t=e^s
+x=e^{ms}w
+w=w(s)
+x=x(t(s))
+x=x(w(s))
+G(w,\frac{dw}{ds},...,\frac{d^{n}w}{ds^{n}})=0
+z(w)=\frac{dw}{ds}(s(w))
+\frac{d^{k}x}{dt^{k}}=e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}})
+k=0,...,n
+h_{k}(y_{1},...,y_{k+1})
+k=1,...,n
+h_{k}(y_{1},...,y_{k+1})=(m-k+1)h_{k-1}(y_1,...,y_{k})+ \sum_{j=1}^{k} y_{j+1}\frac{\delta_{k-1}(y_{1},...,y_{k})}{\delta (y_{j})}\hspace{1cm}
+h_{0}(y_{1})=y_{1}
+F(t,x,\frac{dx}{dt},...,\frac{d^{n}x}{dt^{n}})=0
+G(w,\frac{dw}{ds},...,\frac{d^{n}w}{ds^{n}})=0
+4t^{2}x^{3}\frac{d^{2}x}{dt^{2}}=t^{2}-x^{4}
+\frac{dx}{dt} \frac{dt}{ds} = \frac{dx}{ds} + \frac{dx}{dw} \frac{dw}{ds}
+\frac{dx}{dt}
+\frac{dt}{ds}=e^{s}
+\frac{dx}{ds}=me^{ms} w
+\frac{dx}{dw}=e^{ms}
+\frac{dx}{dt} = me^{(m-1)s}w + e^{(m-1)s}\frac{dw}{ds} \Rightarrow \frac{dx}{dt}=em^{(m-1)s}(mw+\frac{dw}{ds}) = e^{(m-1)s}h_{1}(w,\frac{dw}{ds})\hspace{1cm}
+h_{1}(w,\frac{dw}{ds})=mw+\frac{dw}{ds}
+h_{1}(w,\frac{dw}{ds})=h_{1}(y_{1},y_{2})=mw+\frac{dw}{ds}=mh_{0}(y_{1})+\sum_{j=1}^{1}y_{j+1}\frac{\delta h_{0}(w)}{\delta w}
+\frac{d^{k}x}{dt^{k}}=e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}})
+\frac{d^{k+1}}{dt^{k+1}}=\frac{d}{dt}(e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}}))
+\frac{d}{dt}(e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}})) = \frac{d}{ds}(e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}}))\frac{ds}{dt} 
+\frac{d^{k+1}}{dt^{k+1}}=\frac{d}{ds}(e^{(m-k)s}h_{k}(w,\frac{dw}{ds},...,\frac{d^{k}w}{ds^{k}}))\frac{1}{e^{s}}

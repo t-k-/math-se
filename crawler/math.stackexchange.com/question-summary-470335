@@ -1,0 +1,43 @@
+{x_{1},...,x_{n}}
+x_{n+1}
+x_{n+1}
+x_{l}
+l=\max\left\{ k\in\{1...n\}\;st\;x_{k}<x_{n+1}\right\}
+d
+d=n+1-l
+d
+d
+P\left(x_{n+1}\geq x_{n}\right)=1/2
+E\left[d\right]=2
+x_{n+1}
+x_{n}
+d
+E\left[d\right]
+x_{i}
+n
+E\left[d\right]
+E\left[d\right]=\sum_{k=1...n}kP\left(d=k\right)
+\begin{eqnarray*} P\left(d=k\right) & = & P\left(x_{n-k}<x_{n+1}\cap x_{n-k+1}\geq x_{n+1}\cap...\cap x_{n}\geq x_{n+1}\right)\\  & = & \forall\lambda_{1},\lambda_{2}\in\mathbb{R}\int_{\lambda_{1}<\lambda_{2}}P\left(x_{n-k}<\lambda_{1}\cap x_{n+1}\in\left[\lambda_{1};\lambda_{2}\right]\cap\bigcup_{j=n-k+1...n}x_{j}\geq\lambda_{2}\right)d\lambda_{1}d\lambda_{2}\\  & = & \int_{\lambda_{1}<\lambda_{2}}P\left(x_{n-k}<\lambda_{1}\right)P\left(x_{n+1}\in\left[\lambda_{1};\lambda_{2}\right]\right)\sum_{j=n-k+1...n}P\left(x_{j}\geq\lambda_{2}\right)d\lambda_{1}d\lambda_{2}\\  & = & \int_{\lambda_{1}<\lambda_{2}}F_{X}\left(\lambda_{1}\right)\left(F_{X}\left(\lambda_{2}\right)-F_{X}\left(\lambda_{1}\right)\right)\sum_{j=n-k+1...n}\left(1-F_{X}\left(\lambda_{2}\right)\right)d\lambda_{1}d\lambda_{2} \end{eqnarray*}
+P(d>k)=\tfrac1{k+1}
+k\in[0,n]
+k+1
+k+1
+P(d>k)=\tfrac1{k+1}
+d
+n+1
+E[d]=\sum_{k\ge 0}P(d>k)=H_{n+1}\simeq \ln n.
+n\ge k\ge 1
+n-1\ge k\ge 0
+d
+d
+P(d=0)=1/2
+-2+\tfrac1{n+1}
+P(d=k)=\frac{1}{k(k+1)}
+P(d=n+1)=\frac{1}{n+1},
+P(d=k)=\frac{1}{k^2+3k+2}=\frac{1}{(k+1)(k+2)}
+\begin{eqnarray*} \int_{-\infty}^\infty F'(y)F(y)(1-F(y))^kdy &=& \int_{-\infty}^\infty F'(y)(1-F(y))^kdy - \int_{-\infty}^\infty F'(y)(1-F(y))^{k+1}dy \\ &=& \frac1{k+1}-\frac1{k+2}, \end{eqnarray*}
+P(d=k)
+\begin{eqnarray*} P(d=k) &=& P(x_{n-k}<y\ \cap x_{n-k+1}\geq y\ \cap\ldots\cap x_n\geq y) \\ &=& \int_{x_{n-k}<y,\ x_{n-k+1}\geq y,\ldots,x_n\geq y}\varphi(x_1,\ldots,x_n,y)dx_1\ldots dx_ndy \\ &=&\int_{-\infty}^\infty \varphi(y)dy \left(\int_{-\infty}^y\varphi(x_{n-k})dx_{n-k}\int_y^\infty\varphi(x_{n-k+1})dx_{n-k+1}\ \ldots\ \int_y^\infty\varphi(x_n)dx_n\right) \\ &=&\int_{-\infty}^\infty F'(y)F(y)(1-F(y))^kdy \\ &=&\int_{-\infty}^\infty F'\left(\sum_{i=0}^k(-1)^iC_k^iF^{i+1}\right)dy \\ &=&\int_{-\infty}^\infty \left(\sum_{i=0}^k\frac{(-1)^iC_k^i}{i+2}F^{i+2}\right)'dy \\ &=&\sum_{i=0}^k\frac{(-1)^iC_k^i}{i+2}=\frac{1}{k^2+3k+2} \end{eqnarray*}
+d
+\Theta(\ln n)
+Ed=\sum_{k=0}^{n-1}\frac{k}{k^2+3k+2}=H_{n+1}+\frac{1}{n+1}-2

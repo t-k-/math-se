@@ -1,0 +1,42 @@
+\Gamma_{\varepsilon, M}
+M
+M+i\frac{\pi}{2}
+-M+i\frac{\pi}{2}
+-M
+\varepsilon
+i\frac{\pi}{2}
+\cosh z=0
+ I_n = \int_{-\infty}^{+\infty}\mathrm{d}x\frac{x^{2n}}{\cosh^2 x}. 
+ I_0 = \int_{-\infty}^{+\infty}\mathrm{d}x\frac{1}{\cosh^2 x}=\left[\tanh x\right]_{-\infty}^{+\infty}=2. 
+ I_1 = \int_{-\infty}^{+\infty}\mathrm{d}x\frac{x^{2}}{\cosh^2 x}. 
+ \oint_{\Gamma_{\varepsilon, M}} \mathrm{d}z\frac{z^{2}}{\cosh^2 z} = 0. 
+O(\frac{1}{\varepsilon})
+ \int_{0}^{-\pi} \mathrm{d}\theta i\varepsilon e^{i\theta}\frac{(i\frac{\pi}{2}+\varepsilon e^{i\theta})^{2}}{\cosh^2 (i\frac{\pi}{2}+\varepsilon e^{i\theta})} = \int_{0}^{-\pi} \mathrm{d}\theta i\varepsilon e^{i\theta} \frac{-\frac{\pi^2}{4} + O(\varepsilon)}{\varepsilon^2e^{2i\theta}+O(\varepsilon^3)}. 
+ \oint_{\Gamma_{\varepsilon, M}} \mathrm{d}z\frac{(z-i\frac{\pi}{2})^{2}}{\cosh^2 z}=0. 
+ \int \mathrm{d}x\frac{(x-i\frac{\pi}{2})^{2}}{\cosh^2x}-\int \mathrm{d}x\frac{x^{2}}{\cosh^2(x-i\frac{\pi}{2})}=0 
+ \int \mathrm{d}x\left(\frac{x^2}{\cosh^2x}+\frac{x^2}{\sinh^2x}\right) = \frac{\pi^2}{2} 
+\cosh(x+i\frac{\pi}{2}) = i\sinh x
+\Im{z} = \pi
+C
+\pm R
+\pm R+i \pi
+\oint_C dz \frac{z^{2 n+1}}{\cosh^2{z}}
+\int_{-R}^R dx \frac{x^{2 n+1}}{\cosh^2{x}} + i \int_0^{\pi} dy \frac{(R+i y)^{2 n+1}}{\cosh^2{(R + i y)}} \\ + \int_R^{-R} dx \frac{(x+i \pi)^{2 n+1}}{\cosh^2{x}} + i \int_{\pi}^0 dy \frac{(-R+i y)^{2 n+1}}{\cosh^2{(-R + i y)}}
+R \to \infty
+\int_{-\infty}^{\infty} dx \frac{x^{2 n+1}-(x+i \pi)^{2 n+1}}{\cosh^2{x}}
+x^{2 n}
+-i \pi (2 n+1)\int_{-\infty}^{\infty} dx \frac{x^{2 n}}{\cosh^2{x}} +i \sum_{k=0}^{n-1} (-1)^k \binom{2 n+1}{2 k} \pi^{2 (n-k)+1}\int_{-\infty}^{\infty} dx \frac{x^{2 k}}{\cosh^2{x}}
+i 2 \pi
+z=i \pi/2
+\operatorname*{Res}_{z=i \pi/2} \frac{z^{2 n+1}}{\cosh^2{z}} = \lim_{z\to i \pi/2} \frac{d}{dz}\frac{(z-i \pi/2)^2 z^{2 n+1}}{\cosh^2{z}} = (-1)^{n+1} (2 n+1) \left ( \frac{\pi}{2}\right )^{2 n}
+ \lim_{z\to i \pi/2} \frac{d}{dz}\frac{(z-i \pi/2)^2 z^{2 n+1}}{\cosh^2{z}} = \lim_{u\to 0} \frac{d}{dz}\frac{u^2 (u+i\pi/2)^{2 n+1}}{-\sinh^2{u}} = \lim_{u\to 0} (u+i\pi/2)^n\ \frac{-\left((2n+1)u^2+2(u+i\pi/2)u\right)2\sinh u+2(u+i\pi/2)u^2\cosh u}{\sinh^3u} = \lim_{u\to 0} (u+i\pi/2)^n\ \frac{-(2n+3)u^3-i\pi u +2u^3 + i\pi u + O(u^4)}{u^3+O(u^4)}= (-1)^{n+1}(2n+1)\left(\frac{\pi}{2}\right) ^{2n}. 
+k
+0
+n
+I_k = \int_{-\infty}^{\infty} dx \frac{x^{2 k}}{\cosh^2{x}}
+R_k = (-1)^{k} (2 k+1) \left ( \frac{\pi}{2}\right )^{2 k}
+(2 n+1) I_n - \sum_{k=0}^{n-1} (-1)^k \binom{2 n+1}{2 k} \pi^{2 (n-k)} I_k = 2 R_n
+(2 n-1) I_{n-1} - \sum_{k=0}^{n-2} (-1)^k \binom{2 n-1}{2 k} \pi^{2 (n-1-k)} I_k = 2 R_{n-1}
+\cdots
+3 I_1 - \pi^2 I_0 = 2 R_1
+I_0 = 2 

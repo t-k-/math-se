@@ -1,0 +1,102 @@
+\mathbb{N}^k
+\mathbb{N}
+\Psi_k
+\begin{align*} (x_1,\dots,x_n)\in\mathbb N^n\mapsto&\,\binom{n-1+\sum_{r=1}^nx_r}{n}+\sum_{i=1}^{n-1}\binom{n-1-i+\sum_{r=i+1}^nx_r}{n-i}\\ =&\,\sum_{i=0}^{n-1}\binom{n-1-i+\sum_{r=i+1}^nx_r}{n-i}\,. \end{align*}
+\sum_{i=0}^{n-1}a_i=\sum_{i=0}^{n-1}a_{n-1-i}
+\begin{align*} \sum_{i=0}^{n-1}\binom{n-1-(n-1-i)+\sum_{r=(n-1-i)+1}^nx_r}{n-(n-1-i)}=&\,\sum_{i=0}^{n-1}\binom{i+\sum_{r=n-i}^nx_r}{i+1}\\ =&\,\sum_{i=1}^n\binom{i-1+\sum_{r=n-i+1}^nx_r}{i}\,. \end{align*}
+(y_1,\dots,y_n)\in\mathbb N^n\mapsto(y_n,y_{n-1},\dots,y_1)
+y_r
+y_{n+1-r}
+\mathbb N^n
+\begin{align*} (x_1,\dots,x_n)\in\mathbb N^n\mapsto&\,\sum_{i=1}^n\binom{i-1+\sum_{r=n-i+1}^nx_{n+1-r}}{i}\\ =&\,\sum_{i=1}^n\binom{i-1+x_1+\cdots+x_i}{i}\,, \end{align*}
+\Psi_n(x_1,\dots,x_n)
+[m]=\{1,\dots,m\}, \mathbf x=(x_1,\dots,x_n)\in\mathbb N^n
+|\mathbf x|=x_1+\cdots+x_n
+<
+\mathbb N^n
+\mathbf y<\mathbf x
+|\mathbf y|<|\mathbf x|
+|\mathbf y|=|\mathbf x|
+i
+1\leq i\leq n-1
+y_r=x_r
+r>i+1
+y_{i+1}>x_{i+1}
+|\mathbf y|=|\mathbf x|
+y_r=x_r
+r\geq2
+\mathbf y=\mathbf x
+\mathbf y\neq\mathbf x
+|\mathbf y|=|\mathbf x|
+\max\{j: y_j\ne x_j\}=i+1
+1\leq i\leq n-1
+f:\mathbb N\to\mathbb N
+f(\mathbf x)=
+\mathbf x
+\mathbb N^n
+\mathbb N
+\mathbf x
+\mathbf y
+|\mathbf y|<|\mathbf x|
+\bigl(j+\sum_{t=1}^jy_t\bigr)_{j=1}^n\subseteq[n-1+x_1+\cdots+x_n]
+\mathbf y
+n
+[n-1+x_1+\cdots+x_n]
+\binom{n-1+x_1+\cdots+x_n}{n}
+i=1,\dots,n-1
+\mathbf y
+|\mathbf y|=|\mathbf x|, y_r=x_r
+r>i+1
+y_{i+1}>x_{i+1}
+\bigl[j+\sum_{t=1}^jy_t\bigr]_{j=1}^i\subseteq[i-1+x_1+\cdots+x_i]
+\mathbf y
+i
+[i-1+x_1+\cdots+x_i]
+\binom{i-1+x_1+\cdots+x_i}{i}
+i=1,\dots,n
+i
+\begin{align*} \{c_1<\cdots<c_i\}\subseteq&\,[i-1+x_1+\cdots+x_i]\\[3mm] \mapsto&\,\bigl(\ c_1-1\ \boldsymbol,\ c_2-c_1-1\ \boldsymbol,\ c_3-c_2-1\ \boldsymbol,\ \dots\ \boldsymbol,\ c_i-c_{i-1}-1\ \boldsymbol,\\[3mm] &\,\underbrace{x_1+\cdots+x_{i+1}-c_i+i}_{(i+1)\text{-th entry}}\ \ \boldsymbol,\\[3mm] &\,x_{i+2}\ \boldsymbol,\ x_{i+3}\ \boldsymbol,\ \dots\ \boldsymbol,\ x_n\ \bigr)\in\mathbb N^n\,. \end{align*}
+\mathbf x
+\sum_{i=1}^n\binom{i-1+x_1+\cdots+x_i}{i}\,.
+\ell_\infty
+\ell_1
+0\in\mathbb N
+\ell_1
+r\in\mathbb N
+x=(x_1,\dots,x_n)\in\mathbb N^n
+x_1+\cdots+x_n=r
+S(x)
+\{1,\dots,r+n-1\}
+(n-1)
+\{1,\dots,r+n-1\}
+\binom{r+n-1}{n-1}
+\{c_1<\cdots<c_{n-1}\}
+\sum_{i=1}^{n-1}\binom{r+n-1-c_i}{n-i}
+I\in\mathbb N
+k=\|I\|_1
+J
+\|J\|_1<k
+\sum_{r=0}^{k-1}\binom{r+n-1}{n-1}=\binom{k+n-1}{n}
+k=x_1+\cdots+x_n
+c_j=j+\sum_{i=1}^jx_i\,.
+S(x)=\{c_1<c_2<\cdots<c_{n-1}\}\,, \text{where}\ c_j=j+\sum_{i=1}^jx_i\,.
+(x_1,\dots,x_n)\in\mathbb N^n\mapsto\binom{k+n-1}{n}+\sum_{i=1}^{n-1}\binom{k+n-1-c_i}{n-i}\,,
+f_2:\mathbb N^2 \to \mathbb N
+n
+n=2^km
+m
+f_3:\mathbb N^3\to\mathbb N
+k\in\mathbb N
+f_k:\mathbb N^k\to\mathbb N
+f_2(n_1,n_2)=2^{n_1}(2n_2+1) - 1
+f_3(n_1,n_2,n_3)=f_2(n_1,f_2(n_2,n_3))
+f_k(n_1,...,n_k)=f_{k-1}(n_1,...,n_{k-2},f_2(n_{k-1},n_k))
+\mathbb{N}\times \mathbb{N} 
+ \mathbb{N}
+k(n) = \left\lceil \frac{\sqrt{1+8n}-1}{2} \right\rceil
+j(n,k) = \frac{k (k+1)}{2}-n+1
+\beta:\mathbb{N} \rightarrow \mathbb{N}\times \mathbb{N}
+\beta^{-1}: \mathbb{N}\times \mathbb{N} \rightarrow \mathbb{N}
+\beta(n) = (j(n,k(n)), k(n)-j(n,k(n))+1)
+ \beta^{-1}(j, l) = \frac{(l+j-1)(l+j)}{2}-j+1
+\Psi_k(n_1, \dots, n_k) = \sum_{i=1}^{k}\binom{i-1+n_1+\dots +n_i}{i}

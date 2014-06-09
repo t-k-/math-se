@@ -1,0 +1,21 @@
+M_i(x_i, y_i, z_i)
+n
+M(x, y, z)
+x^2 + y^2 + z^2 = 1
+n
+ \sum_{i = 1}^{n} \|M - M_i\| \rightarrow \min_{M} \\ x^2 + y^2 + z^2 = 1 
+ L(M, \nu) = \sum_{i = 1}^{n} \|M - M_i\| + \nu (\|M\|^2 - 1) \\ \nabla_M L(M, \nu) = \sum_{i = 1}^{n} \frac{M - M_i}{\|M - M_i \|} + 2\nu M = 0 
+M
+\dots
+ \sum_{i = 1}^{n} \|M - M_i\|^2_2 \rightarrow \min_{M} \\ x^2 + y^2 + z^2 = 1 
+L_2
+ \text{minimize}_M ~~\sum_{i = 1}^{n} (M - M_i)^T(M - M_i)\\ \text{subject to} \\ M^TM = 1 
+\sum_{i = 1}^{n} (M - M_i)^T(M - M_i)=nM^TM-(2\sum_i M_i)^TM+\sum_i M_i^TM_i
+ \text{minimize}_M ~~ nM^TM-(2\sum_i M_i)^TM\\ \text{subject to} \\ M^TM = 1 
+M^TM = 1
+ M^*=\arg\max~~ (\sum_i M_i)^TM\\ \text{subject to} \\ M^TM = 1 
+M
+(\sum_i M_i)^TM
+M
+\sum_i M_i
+ M^*=\frac{\sum_i M_i}{\|\sum_i M_i\|_2} 

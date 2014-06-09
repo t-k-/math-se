@@ -1,0 +1,31 @@
+A,B\subset \Bbb R
+E,F\subset \Bbb R
+A\subset E ,B\subset F
+m(E\cap F)=0
+m^{*}(A\cup B)=m^{*}(A)+m^{*}(B)
+m^{*}(A\cup B)\geq m^{*}(A)+m^{*}(B)
+m^*(A)=m^*(A \cap F)+m^*(A \cap F^c)
+A \cap F \subset E \cap F
+m^*(A \cap F)=0
+m^*(A)=m^*(A \cap F^c)
+m^*(A \cup B)=m^*((A \cup B)\cap F)+m^*((A \cup B) \cap F^c)=m^*((A \cap F)\cup (B \cap F))+m^*((A \cap F^c) \cup (B \cap F^c)=m^*((A \cap F) \cup B)+m^*(A \cap F^c) \geq m^*(B)+m^*(A)
+ B \subset (A \cap F) \cup B
+B \cap F^c 
+F
+m^*(A \cap F) \leq m^*(E \cap F) = 0
+m^*(A) = m^*(A\cap F) + m^*(A - F)
+m^*(A) = m^*(A - F)
+m^*(B) = m^*(B - E)
+E
+(*)
+m^*(B - E) = m^*(B)
+F
+m^*(A - F) = m^*(A)
+(**)
+(A \cap F)\cup(B \cap E) \subset F \cap E
+m^*(A \cup B) = m^*((A \cup B) \cap E) + m^*((A \cup B) - E)\qquad (*)
+m^*((A \cup B) \cap E) = m((A \cap E) \cup (B \cap E)) = m(A \cup (B \cap E))
+ m^*((A \cup B) - E) = m^*((A - E)\cup (B - E)) = m^*(B - E)
+m^*(A \cup B) =  m^*(A \cup (B \cap E)) + m^*(B - E) \qquad (**)
+m^*(A \cup (B \cap E)) = m^*([A \cup (B \cap E)] \cap F) + m^*([A \cup (B \cap E)] - F) \\ m^*((A \cap F)\cup(B \cap E)) + m^*(A - F)
+m^*(A \cup B) =  m^*(A) + m^*(B)  +  m^*((A \cap F)\cup(B \cap E))\qquad (***)

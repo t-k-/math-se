@@ -1,0 +1,16 @@
+  X_t = x e^{-\lambda t} + \sigma \int_0^t e^{-\lambda(t-s)} d W_s \,. 
+\{X_t\}
+s=t
+\mathcal{F}_t
+\{W_t\}
+  E[X_{t'} | \mathcal{F}_t] = X_t e^{-\lambda {t'}} \neq X_t , \qquad 0 \leq t < t'. 
+d X_t = -\lambda X_t\,d t + \sigma \, dW_t
+(B_t)_{t \geq 0}
+a \in \mathbb{R}
+a \neq 0
+(X_t)_{t \geq 0}
+(B_t)_{t \geq 0}
+X_t := B_t +a \cdot t, \qquad t \geq 0
+\mathbb{E}(X_t \mid \mathcal{F}_s) = B_s +a \cdot t \neq X_s.
+\begin{align*} \mathbb{E}(f(X_t) \mid \mathcal{F}_s) &= \mathbb{E}(f(B_t-B_s+B_s+at) \mid \mathcal{F}_s) \\ &= \mathbb{E}(f(B_{t-s}+y+at)) \big|_{y=B_s} \\ &= \mathbb{E}(f(B_{t-s}+y+a(t-s)))) \big|_{y=X_s}, \end{align*}
+(X_t)_{t \geq 0}

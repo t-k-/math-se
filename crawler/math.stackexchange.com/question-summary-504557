@@ -1,0 +1,5 @@
+\int_{0}^{L}\frac{1}{a+bx}\cos(\frac{i\pi x}{L})^2dx
+\cos(cx)^2/(a + bx)
+\frac{\cos(cx)^2}{a+bx}=\frac{1}{a+\text{bx}}-\frac{c^2 x^2}{a+\text{bx}}+\frac{c^4 x^4}{3 (a+\text{bx})}-\frac{\left(2 c^6\right) x^6}{45 (a+\text{bx})}+\frac{c^8 x^8}{315 (a+\text{bx})}-\frac{\left(2 c^{10}\right) x^{10}}{14175 (a+\text{bx})}+O\left(x^{11}\right)
+\left(a\neq 0\land b\neq 0\land L\neq 0\land \Re{(\frac{a}{b L})}\geq 0\right)\lor \Re{(\frac{a}{b L})}<-1\lor \frac{a}{b L}\notin \mathbb{R}
+ \begin{eqnarray} \int_{0}^{L}\frac{\cos(\frac{i\pi x}{L})^2}{a+bx}dx&=&\frac{1}{4}\int_{0}^{L}\frac{\left(e^{i\frac{i\pi x}{L}}+e^{-i\frac{i\pi x}{L}}\right)^2}{a+bx}dx=\\ &=&\frac{1}{4}\int_{0}^{L}\frac{e^{\frac{2\pi x}{L}}}{a+bx}dx+\frac{1}{4}\int_{0}^{L}\frac{e^{-\frac{2\pi x}{L}}}{a+bx}dx+\frac{1}{4}\int_{0}^{L}\frac{2}{a+bx}dx=\\ &=&\frac{e^{-\frac{2 \pi  a}{b L}} \left(\text{Ei}\left(2 \left(\frac{a}{b L}+1\right) \pi \right)-\text{Ei}\left(\frac{2 a \pi }{b L}\right)\right)}{b}+\\ &+&\frac{e^{\frac{2 \pi  a}{b L}} \left(\text{Ei}\left(-\frac{2 (a+b L) \pi }{b L}\right)-\text{Ei}\left(-\frac{2 a \pi }{b L}\right)\right)}{b}+\frac{\log(1+\frac{b L}{a})}{b} \end{eqnarray} 

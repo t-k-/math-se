@@ -1,0 +1,7 @@
+\{f_k\}
+f(x)=\sum_{k=1}^\infty f_k x^k
+K_n:=\left[\left(\frac{d}{dx}\right)^n e^{f(x)}\right]_{x=0}
+K_0 =1 \\ K_1=f_1 \\ K_2=f_1^2+2f_2 \\ K_3=f_1^3+6f_1f_2+6f_3^3 \\ K_4=f_1^4+12f_1^2 f_2+24 f_1f_3+24f_4
+ \frac{d}{dx} \exp f(x) = f'(x)\exp f(x) 
+ \frac{d^{n+1}}{dx^{n+1}} \exp f(x)\left.\right|_{x=0} =\frac{d^{n}}{dx^{n}}f'(x)\exp f(x)\left.\right|_{x=0}\\ =\sum_{k=0}^n \binom nk f^{(n-k+1)}(0)\frac{d^{k}}{dx^{k}}\exp f(x)\left.\right|_{x=0} 
+ K_{n+1} = \sum_{k=0}^n \binom nk f_{n-k+1}(n-k+1)! K_k =\sum_{k=0}^n (n-k+1)\frac{n!}{k!} f_{n-k+1}K_k 

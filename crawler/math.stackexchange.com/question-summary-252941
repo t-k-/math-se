@@ -1,0 +1,18 @@
+X,Y
+E\subset X
+Y
+f:E\rightarrow Y
+\limsup_{x\to a} f(x) \triangleq \inf \{\sup \{f(x)\in Y|x\in U\cap E \setminus \{a\}\}\in Y|U \text{ is open}, U\cap E \setminus \{a\} ≠ \emptyset, a\in U\} \\ \liminf_{x\to a} f(x) \triangleq \sup \{\inf \{f(x)\in Y|x\in U\cap E \setminus \{a\}\}\in Y|U \text{ is open}, U\cap E \setminus \{a\} ≠ \emptyset, a\in U\}
+E\subset \mathbb{R}
+f:E\rightarrow \mathbb{R}
+a
+E
+\limsup_{x\to a} = \lim_{\epsilon\to 0} \sup\{f(x)\in \overline{\mathbb{R}}|x\in B(x,\epsilon)\cap E \setminus \{a\}\} \\ \liminf_{x\to a} = \lim_{\epsilon\to 0} \inf\{f(x)\in \overline{\mathbb{R}}|x\in B(x,\epsilon)\cap E \setminus \{a\}\}
+\overline{\mathbb{R}} = \mathbb{R} \cup \{+\infty,-\infty\}
+E
+\limsup_{x\to\infty}= \lim_{\epsilon\to\infty} \sup\{f(x)\in \overline{\mathbb{R}}| \epsilon < x\in E\} \\ \liminf_{x\to\infty}= \lim_{\epsilon\to\infty} \inf\{f(x)\in \overline{\mathbb{R}}| \epsilon < x\in E\}
+f:E\rightarrow \mathbb{R}
+E\subset \mathbb{R}
+\limsup_{x\to a} f(x) = \liminf_{x\to a} f(x)=A
+\lim_{x\to a} f(x)=A
+  \limsup_{x\to a} f(x) = \sup_{\substack{(x_n) \in (E\setminus\{a\})^{\mathbb N}\\ x_n \to a}} \limsup_{n \to \infty} f(x_n). 

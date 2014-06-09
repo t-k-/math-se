@@ -1,0 +1,12 @@
+f(z) = \sum_0^{\infty} (1+2i+(2+i)(-1)^k)^{-k}z^k
+|z| < \sqrt{2} 
+f(z) = \sum_0^{\infty} 3^{-2k}(1+i)^{-2k}z^{2k} + \sum_0^{\infty} (-1+i)^{-2k-1}z^{2k+1} 
+\sum_0^{\infty} 3^{-2k}(1+i)^{-2k}z^{2k} = \frac{18}{18+iz^2}
+\sum_0^{\infty} (-1+i)^{-2k-1}z^{2k+1}
+\displaystyle\frac1{-1+i}=\frac{-1-i}{(-1)^2-i^2}=\frac{-i-i}2
+(-1+i)^{-2(k+1)}z^{2k+1}=\left(\frac z{-1+i}\right)^{2k+1}=\left(\frac {-z(1+i)}2\right)^{2k+1}=-\left(\frac {z(1+i)}2\right)^{2k+1}
+\left|\frac{z}{-1+i}\right|<1
+|z|<\sqrt2
+(-1+i)^{-2k-1}z^{2k+1}=\frac{z^{2k+1}}{(-1+i)^{2k+1}}=\left(\frac{z}{-1+i}\right)^{2k+1}= \left(\frac{z}{-1+i}\right) \left[\left(\frac{z}{-1+i}\right)^2\right]^k
+ \sum_{k=0}^{+\infty}(-1+i)^{-2k-1}z^{2k+1}= \left(\frac{z}{-1+i}\right) \sum_{k=0}^{+\infty}\left[\left(\frac{z}{-1+i}\right)^2\right]^k 
+ \left(\frac{z}{-1+i}\right)\frac{1}{1-\left(\frac{z}{-1+i}\right)^2}= \left(\frac{z}{-1+i}\right)\frac{(-1+i)^2}{(-1+i)^2-z^2}=\frac{z(-1+i)}{-2i-z^2} 

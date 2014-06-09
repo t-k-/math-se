@@ -1,0 +1,31 @@
+f(i, j)
+(i, j)
+f(i, j) = -\infty
+(i, j)
+\max_{1 \leq j \leq M}{f(N, j)}
+f(i, j)
+(i, j)
+(i - 1, j - 1)
+(i - 1, j + 1)
+C(i, j)
+M := \max \{f(i - 1, j - 1) - C(i, j), f(i - 1, j + 1) - C(i, j)\}
+f(i, j) = \begin{cases} \min \{M, 100\} &\mbox{if } M \geq 0 \\ -\infty &\mbox{if } M < 0\end{cases}
+M+1
+ K, K, \ldots, K
+p
+p\to v
+p
+p\to n
+p
+ f(x,y)=\begin{cases}-1&\text{if }y\le0\text{ or }y-x< 0\\100&\text{if }y-x\ge 100\\y-x&\text{otherwise}\\\end{cases}
+i=1,\ldots, N
+p\to v:=0
+z=-1
+j=1,\ldots,M
+c=C[i,j]
+p\to v := \max\{f(c,p\to v),f(c,p\to n\to n\to v)\}
+z:=\max\{z,p\to v\}
+p:=p\to n
+z
+-1
+0

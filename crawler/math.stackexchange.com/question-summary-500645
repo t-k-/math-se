@@ -1,0 +1,36 @@
+T
+T(\phi) \leq \textrm{const} ~\| \tilde{\phi}\|_1
+\phi \in S(\mathbb{R})
+\tilde{\phi}=\mathcal{F}(\phi)
+\phi
+\|\cdot \|_1
+L^1
+\phi_a(x)=\phi(ax)
+\| \tilde{\phi}_a\|_1=\| \tilde{\phi}\|_1
+T(\phi_a)\leq \textrm{const} ~\| \tilde{\phi}\|_1
+T
+T(\phi)\leq \textrm{const} ~\sup_{x\in\mathbb{R}} |\phi(x)|
+T
+t=1
+\phi \in \mathcal{D}(K)
+K\subset \mathbb{R}
+\| \tilde{\phi} \|_1 = \int d p \frac{1}{1+|p|^t} (1+|p|^t) |\tilde{\phi}(p)| \leq \left(\int d p \frac{1}{(1+|p|^t)^2}  \right)^{1/2} \left( \int d p (1+|p|^t)^2 |\tilde{\phi}(p)|^2\right)^{1/2} \leq \textrm{const} \left( \int d p ||p|^t\tilde{\phi}(p)|^2\right)^{1/2} \leq \textrm{const} \left( \int d p |\mathcal{F}(\phi')(p)|^2\right)^{1/2}=\textrm{const} \left( \int d p |\mathcal{F}(\phi')(p)|^2\right)^{1/2} = \textrm{const} \left( \int d x |\phi'(x)|^2\right)^{1/2} \leq \textrm{const} \sup_{x} |\phi'(x)|
+||p|^t\tilde{\phi}(p)|
+1/2<t<1
+t=1
+||p|^t\tilde{\phi}(p)|< |\mathcal{F}(\phi')(p)|
+\phi \in \mathcal{S}
+\text{spt} \, \phi \subseteq K
+K
+\|\tilde{\phi}\|_{L^2} = c_1 \|\phi\|_{L^2}. \tag{1}
+c_1
+\tilde{\phi}
+\begin{align*} \int_{\mathbb{R} \backslash [-1,1]} |\tilde{\phi}(\xi)| \, d\xi \leq \underbrace{\left( \int_{\mathbb{R} \backslash [-1,1]} \frac{1}{\xi^2} \, d\xi \right)^{\frac{1}{2}}}_{=:c_2} \cdot \left( \int \xi^2 \cdot |\tilde{\phi}(\xi)|^2 \, d\xi \right)^{\frac{1}{2}} =  c_2 \cdot \|\widetilde{\partial_x \phi}\|_{L^2} \stackrel{(1)}{=} c_1 \, c_2 \, \|\partial_x \phi\|_{L^2}\end{align*}
+-\imath \xi \tilde{\phi}(\xi) = \widetilde{\partial_x \phi}(\xi)
+\partial_x \phi(x) := \frac{d}{dx} \phi(x)
+\begin{align*}	 	\int_{-1}^1 |\tilde{\phi}(\xi)| \, d\xi &\leq 2 \cdot \|\tilde{\phi}\|_{\infty} \leq 2 \|\phi\|_{L^1} \end{align*}
+|T\phi| \leq c \|\tilde{\phi}\|_{L^1} \leq c \cdot \left(c_1 \cdot c_2  \|\partial_x \phi\|_{L^2}+2 \|\phi\|_{L^1} \right)
+|T\phi| \leq C (\|\phi'\|_{\infty}+\|\phi\|_{\infty}) \cdot (\sqrt{\lambda(K)}+\lambda(K))
+\lambda
+T
+2

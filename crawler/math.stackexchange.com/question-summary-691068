@@ -1,0 +1,20 @@
+\mathbf{y}(t)=\left[ y_1(t) \quad y_2(t) \right]^T
+y_0(t)
+\operatorname{sign}(y_k(t))
+ (K_{pa}+K_r)y_1(t)-K_ry_2(t)+C_0sign(\dot{y}_1(t))\lvert\dot{y}_1(t)\rvert^\alpha = K_{pa}y_0(t) 
+ -K_ry_1(t)+2K_ry_2(t)+C_0sign(\dot{y}_2(t))\lvert\dot{y}_2(t)\rvert^\alpha = 0 
+ \dot{y}_1=sign\left(\frac{-(K_r+K_{pa})y_1+K_ry_2+K_{pa}y_0}{C_0}\right)\lvert\frac{-(K_r+K_{pa})y_1+K_ry_2+K_{pa}y_0}{C_0}\rvert^{1/\alpha} 
+ \dot{y}_2=sign\left(\frac{K_ry_1-2K_ry_2}{C_0}\right)\lvert\frac{K_ry_1-2K_ry_2}{C_0}\rvert^{1/\alpha} 
+sign(u)\,|u|^α=v
+sign(u)=sign(v)
+|u|^α=|v|
+ u=sign(v)\,|v|^{1/α} 
+\alpha>0
+x\ge0
+x<0
+\alpha
+p_\alpha(x)=x^\alpha
+p_\alpha(\dot y_k)=\text{something}
+\dot y_k=p_{1/\alpha}(\text{something})
+ p_\alpha(x)=\operatorname{sign}(x)|x|^\alpha\text{ is equal to }\begin{cases} x^\alpha &\text{if $x\ge0$}\\-|x|^\alpha &\text{if $x<0$.}\end{cases} 
+ p_\alpha^{-1}=p_{1/\alpha}. 

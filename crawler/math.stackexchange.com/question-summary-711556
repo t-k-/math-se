@@ -1,0 +1,12 @@
+f(x,y) = 1/\pi r^2
+x^2+y^2 \leq r^2
+-\sqrt{1-x^2}
+\sqrt{1-x^2}
+\int \frac{x}{\pi r^2} dx
+E[X]
+E[Y]
+X
+Y
+E[X]=E[Y]
+E[XY]=\int_{X}\int_{Y} xyf(x,y)\mathrm{dy\,dx}=\int_{-r}^{r}\int_{-\sqrt{r^2-x^2}}^{\sqrt{r^2-x^2}}\frac{xy}{\pi r^2} \mathrm{dy\,dx} 
+E[X]=\int_{X}xf_X(x)dx=\int_{X}x\left(\int_{Y}f(x,y)dy\right)dx=\int_{-r}^{r}x\left(\int_{-\sqrt{r^2-x^2}}^{\sqrt{r^2-x^2}}\frac{1}{\pi r^2}dy\right)dx

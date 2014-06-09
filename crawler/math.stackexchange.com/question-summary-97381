@@ -1,0 +1,22 @@
+X_1, X_2,\dots,X_n
+n
+p
+P(X_i=k)=(1-p)^{k-1}p
+Y_i=X_i-\mathbb{E}(X_i) = X_i-\frac{1}{p}
+Y_1,\dots,Y_n
+S_k=Y_1+\dots+Y_k
+S_k^+=\max(0,S_k)
+\mathbb{E}(S_k^+)
+X
+\mu
+Y = \max\{0, X-\mu\}
+X = \sum_{j=1}^k X_j
+(k,p)
+\frac{k}{p}
+k/p
+0
+E[X-\mu] = 0 = \sum_i (u_i - \mu) p_X(u_i) = \sum_{i\colon u_i > \mu} (u_i - \mu) p_X(u_i) + \sum_{i\colon u_i < \mu} (u_i - \mu) p_X(u_i),
+\sum_{i\colon u_i > \mu} (u_i - \mu)p_X(u_i)  = \sum_{i\colon u_i < \mu} (\mu - u_i) p_X(u_i) 
+\begin{align*} E[Y] &= \sum_i \max\{0, u_i - \mu\} p_X(u_i)\\ &= \sum_{i\colon u_i > \mu} (u_i - \mu)p_X(u_i)\\ &= \sum_{i\colon u_i < \mu} (\mu - u_i) p_X(u_i). \end{align*}
+p_X(n) = \binom{n - 1}{k-1} p^k (1 - p)^{n-k}, ~~ n = k, k+1, k+2, \ldots 
+\begin{align*} E[S_k^+] &= E\left[\max\left\{0, X-\frac{k}{p}\right\}\right]\\ &= \sum_{n = \lceil \frac{k}{p}\rceil}^\infty  \left(n - \frac{k}{p}\right)\binom{n - 1}{k-1} p^k (1 - p)^{n-k}\\ &= \sum_{n = k}^{\lfloor \frac{k}{p}\rfloor}  \left(\frac{k}{p}- n \right)\binom{n - 1}{k-1} p^k (1 - p)^{n-k}. \end{align*}

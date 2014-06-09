@@ -1,0 +1,17 @@
+-\frac{\sqrt{\pi}}{6}
+f(t):= \frac{e^{-\frac{t}{4}}}{(4\pi t)^{\frac{1}{2}}} \int_0^\infty \frac{x e^{-\frac{x^2}{4t}}}{\sinh(\frac{x}{2})}dx.
+t=0
+ \partial_t(f(t))_{t=0} = \lim_{t \rightarrow 0} \partial_t(f(t))= \lim_{t\rightarrow 0 } -\frac{f(t)}{4} + \frac{1}{2\sqrt{\pi}}\cdot\{\text{Limit above}\}.
+\underset{t \rightarrow 0}{\lim} f(t) =1
+\frac{0}{0}
+\frac{1}{t}
+\frac{0}{0}
+ \int_0^\infty\frac{xe^{-x^2/4t}}{\sinh(x/2)}\,dx = 4t\int_0^\infty \frac{x e^{-x^2}}{\sinh(x\sqrt{t})}\,dx. 
+|t| \leq 1
+ \frac{xe^{- x^2}}{\sinh(x\sqrt{t})} = \frac{xe^{-x^2}}{x\sqrt{t}}\left(1 - x^2\frac{t}{6} + O(t^2e^{2x})\right) 
+ \int_0^\infty \frac{x e^{-x^2}}{\sinh(x\sqrt{t})}\,dx = \sqrt{\frac{\pi}{4t}}\left(1 - \frac{t}{12} + O(t^2)\right). 
+ e^{-t/4} = 1 - \frac{t}{4} + O(t^2) 
+t \to 0
+ \frac{e^{-t/4}}{(4\pi t)^{3/2}}\int_0^\infty\frac{xe^{-x^2/4t}}{\sinh(x/2)}\,dx  = \frac{1}{4\pi t}\left(1 - \frac{t}{3} + O(t^2)\right). 
+ \int_{0}^{\infty}{\rm f}\left(x\right){\rm e}^{-x^{2}/\left(4t\right)}\,{\rm d}x = 2t^{1/2}\int_{0}^{\infty}{\rm f}\left(2t^{1/2}x\right){\rm e}^{-x^{2}}\,{\rm d}x \approx 2t^{1/2}\left\lbrack\lim_{x \to 0}{\rm f}\left(x\right)\right\rbrack\ \overbrace{\quad\int_{0}^{\infty}{\rm e}^{-x^{2}}\,{\rm d}x\quad}^{\sqrt{\pi}\,/\,2} 
+ \mbox{Then}\quad \int_{0}^{\infty}{\rm f}\left(x\right){\rm e}^{-x^{2}/\left(4t\right)}\,{\rm d}x \approx \sqrt{\pi}\,t^{1/2}\lim_{x \to 0}{\rm f}\left(x\right) \quad\mbox{when}\quad t \gtrsim 0 

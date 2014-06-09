@@ -1,0 +1,37 @@
+\ell^p \setminus \cup_{1\leq q <p}\ell^q
+\ell^p=L^p(\mathbb{N})
+p=+\infty
+x(n)=1
+n\in \mathbb{N}
+p=1
+p\in(1,+\infty)
+x\in l^p
+q\in[1,p)
+p>q
+u_0>3
+x\notin l^q
+q\in[1,p)
+x\in l^p\setminus\left(\bigcup\limits_{1\leq q<p} l^q\right)
+ x(n)=\frac{1}{(n+2)^{1/p}\log(n+2)} 
+ \Vert x\Vert_p= \left(\sum\limits_{n=1}^\infty\frac{1}{(n+2)\log^p(n+2)}\right)^{1/p}\leq \left(\int\limits_{0}^\infty\frac{du}{(u+2)\log^p(u+2)}\right)^{1/p}= 
+ \left(\int\limits_{2}^\infty\frac{du}{u\log^p u}\right)^{1/p}= \left(\int\limits_{2}^\infty\frac{du}{u\log^p u}\right)^{1/p}= \left((1-p)^{-1}\log^{1-p} 2\right)^{1/p}< +\infty 
+ \Vert x\Vert_q= \left(\sum\limits_{n=1}^\infty\frac{1}{(n+2)^{q/p}\log^q(n+2)}\right)^{1/q}\geq \left(\int\limits_{1}^\infty\frac{du}{(u+2)^{q/p}\log^q(u+2)}\right)^{1/q}= \left(\int\limits_{3}^\infty\frac{du}{u^{q/p}\log^q u}\right)^{1/q} 
+ \lim\limits_{u\to\infty}\frac{u^{\frac{p-q}{2p}}}{\log^q u}=+\infty 
+\frac{u^{\frac{p-q}{2p}}}{\log^q u}>1 
+ \int\limits_{u_0}^\infty\frac{du}{u^{q/p}\log^q u}= \int\limits_{u_0}^\infty \frac{u^{\frac{p-q}{2p}}}{\log^q u}\frac{du}{u^{1-\frac{p-q}{2p}}}>\int\limits_{u_0}^\infty \frac{du}{u^{1-\frac{p-q}{2p}}}=+\infty 
+ \Vert x\Vert_q\geq \left(\int\limits_{3}^\infty\frac{du}{u^{q/p}\log^q u}\right)^{1/q}> \left(\int\limits_{u_0}^\infty\frac{du}{u^{q/p}\log^q u}\right)^{1/q}=+\infty 
+\ell^p
+F_n
+\ell^p=\bigcup_nF_n
+\bigcup_{1\leqslant q\lt p}\ell^q=\ell^p
+x\in \ell^{p-\frac 1{n_0}}
+\lVert x\rVert_{p-\frac 1n}\leqslant\lVert x\rVert_{p-\frac 1{n_0}}
+n\geqslant n_0
+n
+n^{p-\frac 1n}\geqslant\lVert x\rVert_{p-\frac 1{n_0}}
+F_n:=\left\{x\in\ell^p\mid \sum_{k=1}^\infty|x_k|^{p-\frac 1n}\leqslant n\right\}.
+\ell^p
+\ell^{p_0}
+p_0\lt p
+(n^\alpha)_{n\in\mathbb{N}}
+\alpha\in\mathbb{R}

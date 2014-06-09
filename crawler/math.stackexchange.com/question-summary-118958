@@ -1,0 +1,48 @@
+u\in L^1(\Omega)
+\Omega\subset \mathbb{R}^n
+ \sup \{ \int_\Omega u \; \mathrm{div} g \; dx:\; g \in C_c^1(\Omega,\mathbb{R}^n), \; \lvert g(x) \rvert \leq 1,\; x \in \Omega \} 
+u
+L^1
+\int_\Omega \lvert \nabla u \rvert\; dx
+\epsilon > 0
+f
+C^\infty(\Omega) \cap BV(\Omega)
+\|u-f\|_{L^1(\Omega)} < \epsilon
+\Big|\int_\Omega |Du|- \int_\Omega |Df|\Big| < \epsilon
+g
+\frac{1}{\lvert \nabla f \rvert} \nabla f
+\epsilon \to 0
+ \begin{aligned} \int_\Omega |Df|&=  \sup\{ \int_\Omega f\text{ div}g \mid g\in C_0^1(\Omega, \mathbb{R}^n)|g| \leq 1\}\\     &=\sup\{ \int_\Omega -\nabla f \cdot g \mid g\in C_0^1(\Omega, \mathbb{R}^n),\ |g| \leq 1\}\\   &=\sup\{ \int_\Omega \nabla f \cdot g \mid g\in C_0^1(\Omega, \mathbb{R}^n)\, |g| \leq 1\} = \|\nabla f\|_{L^1({\Omega})}\\ \end{aligned} 
+\Omega\subset\mathbb{R}^n
+u\in W^{1,1}(\Omega)
+\nabla u
+\int_\Omega |Du|
+ \int_\Omega |Du| = \int_\Omega |\nabla u|\;dx. 
+\leq
+ \int_\Omega u \; \text{div}g \; dx = - \int_\Omega \nabla u \cdot g \; dx \leq \int_\Omega |\nabla u|\; dx 
+|g|\leq 1
+\geq
+(g_\epsilon)
+C_c^1
+\frac{\nabla u}{|\nabla u|}
+\epsilon
+\int_\Omega |Du| \leq \int_\Omega |\nabla u|\,dx
+\epsilon > 0
+f_\epsilon \in C^\infty(\Omega) \cap W^{1,1}(\Omega)
+\|u - f_\epsilon\|_{W^{1,1}} < \epsilon
+f_\epsilon
+C^1
+t > 0
+S_t = \{x \in \Omega \mid d(x,\partial\Omega) > t \text{ and }|\nabla u(x)| > t\}
+x  \in S_{2\epsilon}
+x \in \Omega \setminus S_\epsilon
+g_\epsilon
+|g_\epsilon(x)| \leq 1
+x \in \Omega
+ g_\epsilon(x) = \begin{cases}      \frac{\nabla f_\epsilon(x)}{|\nabla f_\epsilon(x)|}, &\text{$x  \in S_{2\epsilon}$}\newline                            0, &\text{$x \in \Omega \setminus S_\epsilon$} \end{cases} 
+\begin{aligned} \int_\Omega |Df_\epsilon| = &\sup\{\int_\Omega f_\epsilon \text{ div}g \mid g\in C_0^1(\Omega, \mathbb{R}^n), |g| \leq 1\}\\ \end{aligned}
+= \sup\{\int_\Omega -\nabla f_\epsilon \cdot g \mid g\in C_0^1(\Omega, \mathbb{R}^n), |g| \leq 1\}
+= \sup\{\int_\Omega \nabla f_\epsilon \cdot g \mid g\in C_0^1(\Omega, \mathbb{R}^n), |g| \leq 1\}
+\geq \int_\Omega \nabla f_\epsilon \cdot g_\epsilon
+\geq \int_{S_{2\epsilon}} |\nabla f_{\epsilon}|\,dx - \int_{{S_\epsilon}\setminus{S_{2\epsilon}}}1\,dx
+\int_\Omega|Du| =\lim_{\epsilon\to 0} \int_\Omega |Df_\epsilon| \geq  \lim_{\epsilon \to 0} \int_\Omega |\nabla f_{\epsilon}|\,dx = \int_\Omega |\nabla u|\,dx.

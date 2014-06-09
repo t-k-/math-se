@@ -1,0 +1,63 @@
+\{1,\ldots,n\}
+X
+1,6,3,2, 5,1
+X=6
+Y
+1
+2
+Y=4
+\lim_{n\to\infty}n\,\mathbb P(X\gt Y)=2.
+x\geqslant2
+[Y\leqslant x,X=x+1]
+x
+1
+2
+x+1
+x
+1
+2
+x-2
+1
+2
+x-1
+1
+2
+x
+x+1
+[Y\leqslant x,X=x+1]
+x+1
+n^{x+1}
+y=n-x
+N_n
+n
+n-N_n=\sqrt{n}Z_n
+Z_n\to Z
+Z
+\mathbb E(Z^3:Z\geqslant0)=2/\sqrt{2\pi}
+ (n-2)_{x-2}\cdot(x-1)\cdot x\cdot x. 
+ \mathbb P(Y\lt X)=\sum_{x=2}^n\mathbb P(Y\leqslant x,X=x+1)=t_n, 
+ t_n=\sum_{x=2}^n\frac{(x-1)x^2(n-2)_{x-2}}{n^{x+1}}=\frac{(n-2)!}{n^{n+1}}\sum_{y=0}^{n-2}\frac{(n-y-1)(n-y)^2n^y}{y!}, 
+ t_n=\frac{(n-2)!}{n^{n+1}}\mathrm e^n\mathbb E((n-N_n-1)(n-N_n)^2:n-N_n\geqslant2). 
+ t_n\sim\frac{(n-2)!}{n^{n+1}}\mathrm e^nn^{3/2}\mathbb E(Z^3:Z\geqslant0). 
+x\geqslant2
+1-\mathbb P(X\gt Y)=1-t_n
+\mathbb P(X\geqslant x)
+\mathbb P(X\geqslant x\mid X\lt Y)
+ \mathbb P(X\geqslant x\mid X\lt Y)=\frac{\mathbb P(X\geqslant x,X\lt Y)}{\mathbb P(X\lt Y)}=\frac{\mathbb P(X\geqslant x)-\mathbb P(X\geqslant x,X\gt Y)}{\mathbb P(X\lt Y)}. 
+ \mathbb P(X\geqslant x,X\gt Y)=\sum_{y=x-1}^{n}\mathbb P(Y\leqslant y,X=y+1), 
+ \mathbb P(Y\leqslant y,X=y+1)=\frac{(y-1)y^2(n-2)_{y-2}}{n^{y+1}}, 
+0 \leq i \leq n-2
+P(X<Y)
+P(A(i) \to A(i+1)) =   (n-i-2)/n
+P(A(i) \to B(i)) =          2/n
+P(A(i) \to D) = i/n
+P(B(i) \to B(i+1)) =  (n-i-2)/n
+P(B(i) \to D) =  (i+1)/n
+P(B(i) \to M) =  (n-i-2)/n
+A(0) \to B(0) \dots B(j-1) \to M
+A(0) \to A(1) \to B(1) \dots B(j-1) \to M
+\dots
+A(0) \to A(1) \dots A(j-1) \to B(j-1) \to M
+2(n-2)(n-3) \dots (n-j) / n^{j+1}
+P(X=j+1 | X < Y) =  2j(n-2)(n-3) \dots (n-j) / n^{j+1}
+P(X<Y) = 2 \sum_{i=1}^{n-1} \frac{i(n-2)!}{(n-1-i)!n^{i+1}}

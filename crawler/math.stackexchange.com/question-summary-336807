@@ -1,0 +1,9 @@
+\{ R_{ij} \subseteq U_i \times U_j \mid i,j \in I \}
+\langle I, \leq \rangle
+R_{ik} = R_{ij} \cdot R_{jk}
+i \leq j \leq k
+\mathcal{P}(\uplus_{i \in I} \, U_i)
+H \subseteq \uplus_{i \in I} \, U_i
+\forall_{i} \exists_{j \geq i} \exists_{u \in U_j} \ u \in H
+\forall_{u,v \in H} \exists_{i,j,k \in I} \exists_{w \in H} \ u R_{i,k} w \ \wedge \ v R_{j,k} w
+\forall_{i \leq j} \forall_{u \in U_i} \forall_{v \in U_j} (u R_{i,j} v \ \wedge \ v \in H) \ \Rightarrow \ u \in H

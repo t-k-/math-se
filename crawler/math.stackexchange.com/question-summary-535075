@@ -1,0 +1,27 @@
+\alpha: \mathcal{A} \rightarrow \mathcal{D}
+d^{C(\alpha)}_n=
+\begin{bmatrix} -d^{\mathcal{A}}_{n-1} & 0 \\\alpha_{n-1} & d^{\mathcal{D}}_{n-1} \end{bmatrix}
+d^{C(\alpha)}_n \circ d^{C(\alpha)}_{n+1} =0
+d^{C(\alpha)}_n \circ d^{C(\alpha)}_{n+1} =  \begin{bmatrix} -d^{\mathcal{A}}_{n-1} & 0 \\\alpha_{n-1} & d^{\mathcal{D}}_{n-1} \end{bmatrix} \begin{bmatrix} -d^{\mathcal{A}}_{n} & 0 \\\alpha_{n} & d^{\mathcal{D}}_{n} \end{bmatrix} = \begin{bmatrix} -d^{\mathcal{A}}_{n-1} \circ d^{\mathcal{A}}_n & 0 \\\alpha_{n-1} \circ -d^{\mathcal{A}}_n + d^{\mathcal{D}}_{n-1} \circ \alpha_n & d^{\mathcal{D}}_{n-1} \circ d^{\mathcal{D}}_n \end{bmatrix}
+-d^{\mathcal{A}}_{n-1} \circ d^{\mathcal{A}}_n
+d^{\mathcal{D}}_{n-1} \circ d^{\mathcal{D}}_n
+\alpha_{n-1} \circ -d^{\mathcal{A}}_n + d^{\mathcal{D}}_{n-1} \circ \alpha_n=0
+x \in A_{n}
+(\alpha_{n-1} \circ -d^{\mathcal{A}}_n + d^{\mathcal{D}}_{n-1} \circ \alpha_n)(a)
+=(\alpha_{n-1} \circ -d^{\mathcal{A}}_n)(a) + (d^{\mathcal{D}}_{n-1} \circ \alpha_n)(a)
+=\alpha_{n-1}(-d^{\mathcal{A}}_n(a)) + d^{\mathcal{D}}_{n-1}(\alpha_n(a))
+d^{\mathcal{A}}_n(a) \in A_{n+1}
+\alpha_{n-1}: A_{n-1} \rightarrow D_{n-1}
+\alpha_{n-1}(-d^{\mathcal{A}}_n(a))
+\alpha_n(a) \in D_n
+d^{\mathcal{D}}_{n-1}: D_{n-1} \rightarrow D_n
+d^{\mathcal{D}}_{n-1}(\alpha_n(a))
+d^{C(\alpha)}_n
+d^A
+\alpha
+(2,2)
+\alpha
+(2,1)
+d^{C(\alpha)}_n = \begin{pmatrix} -d^A_{n-1} & 0 \\ \alpha_{n-1} & d^B_n \end{pmatrix}.
+d^{C(\alpha)}_n \circ d^{C(\alpha)}_{n+1} = \begin{pmatrix} d_{n-1}^A \circ d_n^A & 0 \\ -\alpha_{n-1} \circ d_n^A + d_n^B \circ \alpha_n & d_n^B \circ d_{n+1}^B \end{pmatrix}.
+\require{AMScd} \begin{CD} \cdots @>>> A_n @>{d^A_n}>> A_{n-1} @>>> \cdots\\  \ @V{\alpha_n}VV @V{\alpha_{n-1}}VV \ \\ \cdots @>>> B_n @>{d^B_n}>> B_{n-1} @>>> \cdots \end{CD}

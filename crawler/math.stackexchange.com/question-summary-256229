@@ -1,0 +1,11 @@
+P(z)
+C
+|z-a|=R
+-2\pi i R^2 P'(a)
+\int_{C}^{} P(z)d\overline{z} 
+d\overline{z} = -R^2 \frac{dz}{(z-a)^2} 
+z=a+Re^{it}\Rightarrow \overline z=a+Re^{-it}\Rightarrow d\overline z=-iRe^{-it}dt
+\int_{C} P(z)d\overline z=-i\int_{0}^{2\pi}P(a+Re^{it})Re^{-it}dt
+=-iR^2\int_{0}^{2\pi}{P(a+Re^{it})\over R^2e^{2it}}Re^{it}dt
+=-iR^2\int_{C}{P(z) dz\over (z-a)^2}=-2i\pi R^2 P'(a)
+f^{(n)} (a)={n!\over 2\pi i}\int_{C}{f(z) dz\over (z-a)^{n+1}}

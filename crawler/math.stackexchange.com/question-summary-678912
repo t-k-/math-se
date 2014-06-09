@@ -1,0 +1,32 @@
+Z_1
+Z_2
+X
+X = 5Z_1 - Z_2,
+\to
+\to
+\begin{align}F_X(x)  &= P(5Z_1 - Z_2 \le x)\\ &= P(Z_1 \le (X+Z_2)/5)\\ &= E[F_{Z_1}(X+Z_2)/5]\end{align}
+f_X(x) = F'X(x)
+f_X(x)
+X
+f_X(x)=E[f_{Z_1} (X+Z_2)/5 * 1/5]
+F_X(x)
+x
+f_X(x)
+Z_1
+Z_2
+f_{1,2}(z_1, 5z_1-x)
+f_1(z_1)f_2(5z_1-x)
+X
+ F_X(x) = P\{X \leq x\} = P\{5Z_1-Z_2 \leq x\} = \int_{z_1 = -\infty}^\infty \int_{z_2 = 5z_1-x}^\infty f_{1,2}(z_1,z_2) \,\mathrm dz_2 \,\mathrm dz_1\\ 
+\begin{align}f_X(x) &= \frac{\partial F_X(x)}{\partial x}\\ &=\frac{\partial}{\partial x} \int_{z_1 = -\infty}^\infty\left[ \int_{z_2 = 5z_1-x}^\infty f_{1,2}(z_1,z_2) \,\mathrm dz_2\right] \,\mathrm dz_1\\ &= \int_{z_1 = -\infty}^\infty\left[ \frac{\partial}{\partial x} \int_{z_2 = 5z_1-x}^\infty f_{1,2}(z_1,z_2) \,\mathrm dz_2\right] \,\mathrm dz_1\\ &= \int_{-\infty}^\infty f_{1,2}(z_1,5z_1-x)\,\mathrm dz_1. \end{align}
+X = 5Z_1-Z_2
+E[X] =5E[Z_1] - E[Z_2]
+\operatorname{var}(X) = 5^2\operatorname{var}(Z_1) + \operatorname{var}(Z_2)
+Z_1,Z_2
+X
+X
+X
+X
+X
+E(X)=\mu
+V(X)=\sigma^2

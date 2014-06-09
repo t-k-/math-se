@@ -1,0 +1,12 @@
+D(n)
+\sigma \in S_n
+D(n) = n \cdot D(n-1) + (-1)^n
+n \geq 2
+D(n) = (n-1)(D(n-1) + D(n-2))
+n \geq 3
+n \leq 1 \rightarrow
+n = 2
+n = 3
+n = 4
+(n-1)
+ \begin{align*} D(n) &= (n-1)(D(n-1)+D(n-2)) \\ &= (n-1)((n-1)D(n-2)+(-1)^{n-1} + D(n-2)) \\ &= (n-1)(nD(n-2) + (-1)^{n-1}) \\ &= n(n-1)D(n-2) + (n-1)(-1)^{n-1} \\ &= n((n-1)D(n-2) + (-1)^{n-1}) - (-1)^{n-1} \\ &= nD(n-1) + (-1)^n. \end{align*} 

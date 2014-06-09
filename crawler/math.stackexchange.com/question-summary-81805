@@ -1,0 +1,40 @@
+s_n=\binom{n+1}{0}+\binom{n}{1}+\binom{n-1}{2}+\cdots
+\binom{n-k+1}{k}=\binom{n-k}{k}+\binom{n-k-1}{k}
+n+1
+k
+\binom{n-k+1}k=\binom{n-k}k+\binom{n-k-1}k
+k=0
+n\geq1
+(s_n)_{n\geq-1}
+s_{-1}=\binom00=1
+s_n
+n\in\mathbf N
+s_{-1}=s_0=1
+s_n=F_{n+2}
+n\geq-1
+\begin{aligned}   s_{n-1}&=\sum_{k=0}^{\lfloor\frac n2\rfloor}\binom{n-k}k\\  &= 1+\sum_{k=1}^{\lfloor\frac n2\rfloor}(\binom{n-1-k}k+\binom{n-1-k}{k-1})\\  &= 1+\sum_{k=1}^{\lfloor\frac {n-1}2\rfloor}\binom{n-1-k}k      +\sum_{k=1}^{\lfloor\frac n2\rfloor}\binom{n-1-k}{k-1}\\  &= s_{n-2}+\sum_{k=0}^{\lfloor\frac n2\rfloor-1}\binom{n-2-k}k\\  &= s_{n-2}+s_{n-3},\\  \end{aligned} 
+s_n
+\binom{n+1}0
++1
+ F_n=\sum_{k=0}^{\lfloor\frac{n-1}2\rfloor}\binom{n-1-k}k   \qquad\text{for }n\geq1. 
+\sum_{k\ge0} \binom{n-k}k=F_{n+1}
+1^\circ
+n=-1,0,1,2
+2^\circ
+n>1
+n+1
+0,1,\dots,n
+\sum_{k\ge0} \binom{n+1-k}k=\sum_{k\ge0} \binom{n-k}k + \sum_{k\ge0} \binom{n-k}{k-1}= \sum_{k\ge0} \binom{n-k}k + \sum_{k\ge0} \binom{n-1-(k-1)}{k-1}= \sum_{k\ge0} \binom{n-k}k + \sum_{j\ge0} \binom{n-1-j}{j}= F_{n+1}+F_n = F_{n+2}.
+k
+(k-1)
+(k-2)
+ \binom{n+1}{k+1} = \binom{n}{k+1} + \binom{n}{k}. 
+ s_n=\binom{n+1}{0}+\binom{n}{1}+\binom{n-1}{2}+\cdots 
+ s_n= \underbrace{\color{blue}{\binom{n}{0}} + \color{grey}{\binom{n}{-1}}}_{\text{first term}} + \underbrace{\color{blue}{\binom{n-1}{1}} + \color{brown}{\binom{n-1}{0}}}_{2\text{nd term}} + \underbrace{\color{blue}{\binom{n-2}{2}} + \color{brown}{\binom{n-2}{1}} }_{3\text{rd term}} + \cdots  
+\color{blue}{s_{n-1}}
+\color{brown}{s_{n-2}}
+s_{n-1}
+s_{n-2}
+ s_n = \color{blue}{s_{n-1}} + \color{brown}{s_{n-2}} 
+\binom{n}{-1}
+0

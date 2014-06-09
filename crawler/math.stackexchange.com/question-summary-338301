@@ -1,0 +1,7 @@
+L^1(\mathbb{R}^k) 
+C =
+f \in L^1 (\mathbb{R}^k) : f(x) = e^{-a\cdot ||x||^2}, a>0 
+f, g \in C
+f * g \in C
+(f * g )(x) = \int\limits_{\mathbb{R}^k} f (x-y) g(y) dl_k(y) = \int\limits_{\mathbb{R}^k} e ^{-a||x-y||^2} e^ {-b ||y||^2} dl_k(y) 
+=\int\limits_{\mathbb{R}^k} e^{-a ((y_1 -x_1)^2 + ... + (y_k - x_k)^2) - b(y_1^2 +... y_k^2)} dl_k(y) 

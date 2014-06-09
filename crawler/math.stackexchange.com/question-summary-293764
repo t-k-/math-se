@@ -1,0 +1,17 @@
+T>0
+P^{n}:=\lbrace0=t_{0}^{n}<t_{1}^{n}<...<t_{m_{n}}^{n}=T\rbrace
+n
+[0,T]
+\delta(P^{n})\to0
+n\to\infty
+\delta(P^{n})=\text{max}\lbrace |t_{k+1}^{n}-t_{k}^{n}|:k=0,1,...,m_{n}-1\rbrace
+L^{2}(\Omega)
+L^{2}(\Omega):=\lbrace X:\Omega\to\mathbb{R}: \ \mathbb{E}|X|^{2}<\infty\rbrace
+\lbrace W(t)\rbrace
+\sum_{k=0}^{m_{n}-1}(W(t_{k+1}^{n})-W(t_{k}^{n}))^{2}\to T 
+S_2^{P^n}(W) := \sum_{j=1}^{m_n-1} (W(t_{j+1}^n)-W(t_j^n))^2
+\mathbb{E}S_2^{P^n}(W) = \mathbb{E} \left(\sum_{j=1}^{m_n-1} (W(t_{j+1}^n)-W(t_j^n))^2\right) = \sum_{j=1}^{m_n-1} (t_{j+1}^n-t_{j}^n)=T
+\begin{align} \mathbb{E}\big((S_2^{P_n}(W)-T)^2 \big) &= \text{var}(S_2^{P_n}) \stackrel{(1)}{=} \sum_{j=1}^{m_n-1} \underbrace{\text{var}((W(t_{j+1}^n)-W(t_j^n)^2)}_{\mathbb{E} \bigg( \big( (W(t_{j+1}^n)-W(t_j^n))^2-(t_{j+1}^n-t_j^n) \big)^2 \bigg)} \\ &\stackrel{(2)}{=} \sum_{j=1}^{m_n-1} \mathbb{E} \bigg( \big( W(t_{j+1}^n-t_j^n)^2-(t_{j+1}^n-t_j^n) \big)^2 \bigg) \\ &\stackrel{W_t \sim \sqrt{t} \cdot W_1}{=} \sum_{j=1}^{m_n-1} (t_{j+1}^n-t_j^n)^2 \cdot \underbrace{\mathbb{E}((W_1^2-1)^2)}_{2} \\ &\leq 2 \cdot \delta(P^n) \cdot T \to 0 \qquad (n \to \infty) \end{align}
+L^2-\lim_{n \to \infty} S_2^{P_n}(W)
+[0,T]
+T

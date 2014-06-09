@@ -1,0 +1,15 @@
+|xy - x_0y_0| < \epsilon.
+|x-x_0| < \min\left(\frac{\epsilon}{2(|y_0| + 1)}, 1\right)
+|y-y_0| < \frac{\epsilon}{2(|x_0| + 1)},
+6
+|x-x_0|\lt 1
+8
+|x-x_0|\lt \frac{\epsilon}{2(|y_0|+1)}
+|y-y_0|\leq\frac{\epsilon}{2(|x_0|+1)}
+\frac{|y_0|}{|y_0|+1}\lt 1
+\begin{align*} |xy-x_0y_0| &= |xy-xy_0 + xy_0 - x_0y_0|\\ &= |x(y-y_0) + (x-x_0)y_0|\\ &\leq |x(y-y_0)| + |y_0||x-x_0|\\ &= |(x-x_0)(y-y_0) + x_0(y-y_0)| + |y_0||x-x_0|\\ &\leq |x-x_0||y-y_0| + |x_0||y-y_0| + |y_0||x-x_0|\\ &\leq |y-y_0| + |x_0||y-y_0| + |y_0||x-x_0| \\ &= (1+|x_0|)|y-y_0| + |y_0||x-x_0|\\ &\lt (1+|x_0|)\left(\frac{\epsilon}{2(|x_0|+1)}\right) + |y_0|\left(\frac{\epsilon}{2(|y_0|+1)}\right)\\ &= \frac{\epsilon}{2} +\left(\frac{|y_0|}{|y_0|+1}\right)\left(\frac{\epsilon}{2}\right)\\ &\lt \frac{\epsilon}{2} + \frac{\epsilon}{2}\\ &= \epsilon. \end{align*}
+xy-x_0y_0=(x-x_0)(y-y_0)+y_0(x-x_0)+x_0(y-y_0)
+|x-x_0|
+|y-y_0|
+y_0
+x_0

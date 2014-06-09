@@ -1,0 +1,38 @@
+\min \Vert MA-B \Vert_F^2-x^HMy\;\;s.t.\;\;M^HM=I
+A
+B
+N\times L
+M
+N\times N
+x,y
+N\times 1
+\max\Re\left\{tr\left(MAB^H \right)\right\}+\frac{1}{2} x^HMy\;\;s.t.\;\;M^HM=I
+f(M)=-2trace(AB^TM)-x^TMy
+M\in O(n)
+O(n)
+M
+O(n)
+TS=\{MH|H\text{ is skew-symmetric}\}
+D_Mf:K\rightarrow -2trace(AB^TK)-x^TKy=-trace((2AB^T+yx^T)K)
+M\in O(n)
+K\in TS
+D_Mf(K)=0
+H
+-trace((2AB^T+yx^T)MH)=0
+U=2AB^T+yx^T
+UM
+Skew-Sym
+UM
+UM=M^TU^T
+M
+M=(I-Z)(I+Z)^{-1}
+Z
+-1
+U(I-Z)(I+Z)^{-1}=(I-Z)^{-1}(I+Z)U^T
+Z
+(I-Z)U(I-Z)
+n(n-1)/2
+2
+n(n-1)/2
+x^HMy
+Re(x^HMy)

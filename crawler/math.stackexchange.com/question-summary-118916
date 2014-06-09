@@ -1,0 +1,5 @@
+ \begin{align} S &= \prod_{a=1}^{N-1} \prod_{b=a+1}^{N} (1+x_{ab}) \\   &= \prod_{a<b} (1+x_{ab}) \\   &= (1+x_{12})(1+x_{13})(1+x_{14})\cdots(1+x_{23})(1+x_{24})\cdots(1+x_{N-1,N}) \end{align}.
+ \begin{align} S &= (1+x_{12}+x_{13}+x_{12}x_{13})(1+x_{14})\cdots(1+x_{N-1,N})\\ &=(1+x_{12}+x_{13}+x_{14}+x_{12}x_{13}+x_{12}x_{14}+x_{13}x_{14}+x_{12}x_{13}x_{14})\cdots(1+x_{N-1,N})\\ &=1+\sum_{a<b} x_{ab} + \sum_{?} x_{ab}x_{cd} + \sum_{?}x_{ab}x_{cd}x_{ef} + \cdots + x_{12}x_{13}x_{14}\cdots{}x_{N-1,N} \end{align}.
+\displaystyle\sum_{?} x_{ab}x_{cd}
+\displaystyle\sum_{\substack{a<b\\c<d}} x_{ab}x_{cd}
+\displaystyle\sum_{a<b<c<d} x_{ab}x_{cd}

@@ -1,0 +1,16 @@
+f: \mathbb{R}^{k \times k} \to \mathbb{R}
+f(C) = b^T Ca
+Df(C)(H) = f(H) = b^T H a
+C: \mathbb{R}^k \to \mathbb{R}^{k \times k}
+\phi = f \circ C
+C
+x
+DC(x) : \mathbb{R}^k \to \mathbb{R}^{k \times k}
+x \in \mathbb{R}^k
+h
+D\phi(x)(h) = D f(C(x)) (D C(x) (h))
+DF(C)
+D\phi(x)(h) = f(DC(x)(h)) = b^T (DC(x)(h)) a
+DC(x)(h) = \sum_{i=1}^k  h_i DC(x)(e_i)
+DC(x)(e_i) = {\partial C(x) \over \partial x_i}
+D\phi(x)(h) = \sum_{i=1}^k  h_i {\partial C(x) \over \partial x_i}

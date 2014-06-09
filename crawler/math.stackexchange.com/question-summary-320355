@@ -1,0 +1,51 @@
+f = f(x,y,z)
+h = h(x,y,z)
+\nabla\cdot (\nabla f\times \nabla h)=0,
+\nabla \cdot (\nabla f \times r) = 0
+\nabla f =(f_x,f_y,f_z)
+\nabla h=(h_x,h_y,h_z)
+(a,b,c) \times (u,v,w)=\hat{i} (bw-cv)+\hat{j}(cu-aw)+\hat{k} (av-bu) 
+(a,b,c) \times (x,y,z) = (bw-cv,cu-aw,av-bu)
+a,b,c,u,v,w
+(\nabla f\times \nabla h)
+\nabla \cdot (\nabla f\times \nabla h)
+f_{yz}=f_{zy}
+f
+h
+(\nabla f\times \nabla h)=\hat{i}(f_yh_z-f_zh_y)+\hat{j}(f_zh_x-f_xh_z)+\hat{k}(f_xh_y-f_yh_x)
+\nabla \cdot (\nabla f\times \nabla h)= \frac{\partial}{\partial x}(f_yh_z-f_zh_y)+\frac{\partial}{\partial y}(f_zh_x-f_xh_z)+\frac{\partial}{\partial z}(f_xh_y-f_yh_x)
+=(f_{yx}h_z+f_yh_{zx}-f_{zx}h_y-f_zh_{yx})+(f_{zy}h_x+f_zh_{xy}-f_{xy}h_z - f_xh_{zy})+(f_{xz}h_y+f_xh_{yz}-f_{yz}h_x-f_yh_{xz})
+\nabla \cdot (\nabla f\times \nabla h)=0
+r
+\phi
+r=\nabla \phi
+\nabla\cdot (\nabla f\times r)=\nabla\cdot (\nabla f\times \nabla \phi)=0
+\nabla\bullet\nabla f\times\vec{r}=0
+\vec{r}\times\nabla h=\vec{0}
+\vec{r}//\nabla h
+\nabla f\times\nabla h\\=\left(\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)f\right)\times\left(\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)h\right)\\=\left(\hat{x}\frac{\partial f}{\partial x}+\hat{y}\frac{\partial f}{\partial y}+\hat{z}\frac{\partial f}{\partial z}\right)\times\left(\hat{x}\frac{\partial h}{\partial x}+\hat{y}\frac{\partial h}{\partial y}+\hat{z}\frac{\partial h}{\partial z}\right)\\=\begin{vmatrix}\hat{x}&\hat{y}&\hat{z}\\\frac{\partial f}{\partial x}&\frac{\partial f}{\partial y}&\frac{\partial f}{\partial z}\\\frac{\partial h}{\partial x}&\frac{\partial h}{\partial y}&\frac{\partial h}{\partial z}\end{vmatrix}\\=\left(\hat{x}\frac{\partial f}{\partial y}\frac{\partial h}{\partial z}+\hat{y}\frac{\partial f}{\partial z}\frac{\partial h}{\partial x}+\hat{z}\frac{\partial f}{\partial x}\frac{\partial h}{\partial y}\right)-\left(\hat{x}\frac{\partial f}{\partial z}\frac{\partial h}{\partial y}+\hat{y}\frac{\partial f}{\partial x}\frac{\partial h}{\partial z}+\hat{z}\frac{\partial f}{\partial y}\frac{\partial h}{\partial x}\right)
+=\left(\hat{x}\tfrac{\partial f}{\partial y}\tfrac{\partial h}{\partial z}+\hat{y}\tfrac{\partial f}{\partial z}\tfrac{\partial h}{\partial x}+\hat{z}\tfrac{\partial f}{\partial x}\tfrac{\partial h}{\partial y}\right)-\left(\hat{x}(\tfrac{\partial f}{\partial z}\tfrac{\partial h}{\partial y})(\tfrac{\partial y}{\partial z}\tfrac{\partial z}{\partial y})+\hat{y}(\tfrac{\partial f}{\partial x}\tfrac{\partial h}{\partial z})(\tfrac{\partial z}{\partial x}\tfrac{\partial x}{\partial z})+\hat{z}(\tfrac{\partial f}{\partial y}\tfrac{\partial h}{\partial x})(\tfrac{\partial x}{\partial y}\tfrac{\partial y}{\partial x})\right)
+=\left(\hat{x}\frac{\partial f}{\partial y}\frac{\partial h}{\partial z}+\hat{y}\frac{\partial f}{\partial z}\frac{\partial h}{\partial x}+\hat{z}\frac{\partial f}{\partial x}\frac{\partial h}{\partial y}\right)-\left(\hat{x}\frac{\partial f}{\partial y}\frac{\partial h}{\partial z}+\hat{y}\frac{\partial f}{\partial z}\frac{\partial h}{\partial x}+\hat{z}\frac{\partial f}{\partial x}\frac{\partial h}{\partial y}\right)=\vec{0}
+\nabla\bullet\nabla f\times\nabla h=\nabla\bullet\vec{0}=0
+\nabla\times(\nabla f\times\nabla h)=\nabla\times\vec{0}=\vec{0}
+D\subset \mathbb{R}^3
+D
+ \iiint_D \nabla \cdot (\nabla f\times \nabla h) \,dV = \iint_{\partial D} \nabla f\times \nabla h\cdot d\mathbf{S} = \iint_{\partial D} \nabla f\times \nabla h\cdot\mathbf{n} \,dS 
+ \iint_{\partial D} \nabla f\times \nabla h\cdot\mathbf{n} \,dS = \iint_{\partial D} \nabla h\times \mathbf{n}\cdot \nabla f\, dS =  \iiint_D\Big(\nabla h\cdot \nabla\times(\nabla f) - \nabla f\cdot \nabla \times(\nabla h)\Big)dV = 0 
+ \nabla \cdot (\nabla f\times \nabla h) = 0. 
+\mathbf{v} = \nabla h\times\nabla f
+\mathbf{v}\perp \nabla h
+\mathbf{v}\perp \nabla f
+\nabla \cdot (\nabla f \times \nabla h) = \nabla \cdot [-i (\nabla f \wedge \nabla h)] = -i [\nabla \wedge (\nabla f \wedge \nabla h)]
+\nabla \cdot (\nabla f \times \nabla h) = -i [(\nabla \wedge \nabla f) \wedge \nabla h - \nabla f \wedge (\nabla \wedge \nabla h)]
+\nabla \wedge \nabla g = 0
+g
+i
+-i [(\nabla \wedge \nabla f) \wedge \nabla h - \nabla f \wedge (\nabla \wedge \nabla h)] = (\nabla \times \nabla f) \cdot \nabla h - \nabla f \cdot (\nabla \times \nabla h)
+\nabla \times \nabla g = 0
+r = \nabla \frac{1}{2} |r|^2
+\epsilon^{ijk}
+\partial^2 / \partial x^{i}\partial x^{j}
+ \epsilon^{ijk} \frac{\partial f^2}{\partial x^{i} \partial x^{j}} \frac{\partial h}{\partial x^{k}} = -\epsilon^{jik} \frac{\partial f^2}{\partial x^{j} \partial x^{i}} \frac{\partial h}{\partial x^{k}}, 
+ \nabla \cdot (\nabla f \times \nabla h) = 0. 
+\mathrm{r} = \nabla (\frac{1}{2} r^2) 

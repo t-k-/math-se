@@ -1,0 +1,15 @@
+100!
+24
+100!
+5
+20
+25
+4
+100!
+n!
+2
+n=32000
+ T_n=\sum_{k=1}^{\infty}\left\lfloor{\frac{n}{5^{k}}}\right\rfloor. 
+ L_n=\log_{10}n!=n\log_{10} n - \frac{n}{\ln 10}+O(\ln n). 
+ Z_{n}\sim T_n + \frac{1}{10}\left(L_n - T_n\right)=\frac{9}{10}\sum_{k=1}^{\infty}\left\lfloor{\frac{n}{5^{k}}}\right\rfloor+\frac{1}{10}n\log_{10}n-\frac{n}{10\ln 10}+O(\ln n). 
+ \begin{matrix} \text{n} & \text{Estimate} & \text{Exact} & \text{Abs. Error}\\ \hline 1000 & 481 & 472 & 9\\ 2000 & 1022 & 1025 & 3\\ 4000 & 2166 & 2143 & 23\\ 8000 & 4573 & 4645 & 72 \\ 16000 & 9631 & 9560 & 71 \\ 32000 & 20226 & 20227 & 1 \end{matrix} 

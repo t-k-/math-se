@@ -1,0 +1,12 @@
+60,000.  A random sample of 35 specialists is drawn from this population.  How would I find the probability that the mean salary of the sample is less than \
+\mu = \
+, and standard deviation 
+6,500
+\{x_1, \ldots, x_m \}
+m
+x_i
+\mathcal{N}(\mu, \sigma)
+   \mathbb{P}\left( \frac{1}{m} \left( x_1 + \cdots + x_m \right) \le z \right) 
+   \mu_m = \mathbb{E}\left( \frac{1}{m} \left( x_1 + \cdots + x_m \right)  \right) = \frac{1}{m} \left( \underbrace{\mu + \cdots + m}_{\text{m times}} \right) = \mu 
+   \sigma_m^2 = \mathbb{Var} \left( \frac{1}{m} \left( x_1 + \cdots + x_m \right)  \right) = \frac{1}{m^2} \left( \underbrace{\sigma^2 + \cdots + \sigma^2}_{\text{m times}} \right) = \frac{\sigma^2}{m} 
+ \begin{eqnarray}   \mathbb{P}\left( \frac{1}{m} \left( x_1 + \cdots + x_m \right) \le z \right) &=& \Phi\left( \frac{z - \mu_m }{\sigma_m} \right) = \Phi\left( \frac{z-\mu}{\sigma} \sqrt{m} \right) \\ &=&   \Phi\left( \frac{57,000 -60,000}{6,500} \sqrt{35} \right) = \Phi(-2.73) = 0.0032 \end{eqnarray} 

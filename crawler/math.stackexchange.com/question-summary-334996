@@ -1,0 +1,12 @@
+\{Y_n\}
+\{X_n\}
+\text{E}(Y_{n+1}|X_1,\ldots,X_n) = Y_n
+\text{E}(Y_{n+a}|X_1,\ldots,X_n) = Y_n
+a \geq 1
+\text{E}(Y_{n+a}|X_1,\ldots,X_n) = \{\text{by definition of }Y_{n+a}\} = \text{E}( \text{E}(Y_{n+a+1}|X_1, \ldots, X_{n+a})|X_1,\ldots,X_k) = (\text{by the law of total expectation}) = \text{E}(Y_{n+a+1})
+\mathbb{E}(Y)=\mathbb{E}(\mathbb{E}(Y|X))
+Y_{n+m-1}
+Y_{n+1}
+\mathbb{E}(Y_{n+m}|X_1,\dots,X_n)=\mathbb{E}\big[\mathbb{E}(Y_{n+m}|X_1,\dots,X_{n+m-1})|X_1,\dots,X_n\big]
+\mathbb{E}(Y_{n+m}|X_1,\dots,X_n)=\mathbb{E}(Y_{n+m-1}|X_1,\dots,X_n)
+\mathbb{E}(Y_{n+m}|X_1,\dots,X_n)=\mathbb{E}(Y_{n+1}|X_1,\dots,X_n)=Y_n.

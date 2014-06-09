@@ -1,0 +1,16 @@
+(\mu,\lambda)
+p_X(x)=\sqrt\frac{\lambda}{2\pi x^3}\exp\left[\frac{-\lambda}{2\mu^2x}(x-\mu)^2\right];\quad x>0,\lambda,\mu>0
+\phi_X(t)
+\phi_X(t)=\mathbb E(e^{itX})=\int_0^\infty e^{itx}\sqrt\frac{\lambda}{2\pi x^3}\exp\left[\frac{-\lambda}{2\mu^2x}(x-\mu)^2\right] \, dx
+\phi_X(t)=\sqrt\frac{\lambda}{2\pi}e^{\lambda/\mu}\int_0^\infty x^{\frac{-3}{2}}\exp\left[-\left(\frac{\lambda}{2\mu^2}+\frac{\lambda}{2x^2}-it\right)x\right]dx
+ = \sqrt\frac{\lambda}{2\pi}e^{\lambda/\mu}\int_0^\infty x^{\frac{-3}{2}}\exp\left[\left(it-\frac{\lambda}{2\mu^2}\right)x-\frac{\lambda}{2x}\right]dx  
+ \sqrt\frac{\lambda}{2\pi}e^{\lambda/\mu}\int_0^\infty x^{\frac{-3}{2}}\exp\left[\left(it-\frac{\lambda}{2\mu^2}\right)x-\frac{\lambda}{2x}\right]dx  \\ =C\int_0^\infty x^{-\frac{1}{2}-1}\exp\left(-\frac{1}{2}\left(\left(\frac{\lambda}{\mu^2}-2it\right)x+\frac{\lambda}{x}\right)\right)dx 
+C=\sqrt\frac{\lambda}{2\pi}e^{\lambda/\mu}
+~a=\frac{\lambda}{\mu^2}-2it
+~b=\lambda
+~p=-\frac{1}{2}
+C\frac{2\mathcal{K}_p(\sqrt{ab})}{(a/b)^{p/2}}\int_0^\infty \frac{(a/b)^{p/2}}{2\mathcal{K}_p(\sqrt{ab})}x^{p-1}\exp\left(-\frac{1}{2}\left(ax+\frac{b}{x}\right)\right)dx\\ =C\frac{2\mathcal{K}_p(\sqrt{ab})}{(a/b)^{p/2}}=\sqrt\frac{\lambda}{2\pi}e^{\lambda/\mu}\frac{2\mathcal{K}_{1/2}(\sqrt{ab})}{(a/b)^{1/4}}
+\mathcal{K}_p
+\mathcal{K}_{1/2}(u)=\sqrt{\frac{\pi}{2u}}\exp(-u)
+X\sim \operatorname{InverseGaussian}(\mu, \lambda)
+f(x)

@@ -1,0 +1,7 @@
+E_k=\int_{\mathbb{R}^3}|F(k,\Theta,\Phi)|^2k^2 \sin(\Theta)\,dk\,d\Theta\, d\Phi
+E_r=\int_{\mathbb{R}^3}|f(r,\theta,\phi)|^2r^2 \sin(\theta)\,dr\,d\theta \,d\phi?
+E_r
+f(r, \theta, \phi) = \int_{\mathbb{R}^3}F(k, \Theta,\Phi)e^{i\mathbf{k}\cdot\mathbf{r}}k^2 \sin(\Theta)dk\,d\Theta\, d\Phi
+\begin{multline} E_r=\int_{\mathbb{R}^3}dr\,d\theta \,d\phi \left[ \int_{\mathbb{R}^3}F(k, \Theta,\Phi)e^{i\mathbf{k}\cdot\mathbf{r}}k^2 \sin(\Theta)dk\,d\Theta\, d\Phi\right]\\ \times \left[\int_{\mathbb{R}^3}F(k', \Theta',\Phi')^* e^{-i\mathbf{k'}\cdot\mathbf{r}}k'^2 \sin(\Theta')dk'\,d\Theta'\, d\Phi' \right]r^2 \sin(\theta) \end{multline}.
+\int_{\mathbb{R}^3} e^{i \mathbf{k} \cdot \mathbf{r}} d^3 r = (2\pi)^3\delta^3(\mathbf{k}) = \frac{\delta(k) \delta(\Theta) \delta(\Phi)}{k^2 \sin(\Theta)}
+E_r= (2\pi)^3 \int_{\mathbb{R}^3} |F(k,\Theta,\Phi)|^2 k^2 \sin(\Theta)\,dk\,d\Theta\,d\Phi =(2\pi)^3 E_k.

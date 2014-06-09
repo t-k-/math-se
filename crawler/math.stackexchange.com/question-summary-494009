@@ -1,0 +1,33 @@
+a(x) = a_{ij}(x)
+n \times n
+u_t = \sum_{i,j=1}^n \frac{\partial}{\partial x_i}\left( a_{ij}(x) \frac{\partial u}{\partial x_j} \right)
+\Omega
+u=u_0(x)
+t=0
+u=g
+\partial \Omega
+u
+\int_{\Omega}uu_t= \frac12 \frac{d}{dt}\int_{\Omega}u^2 = \int_{\Omega} u \sum_{i,j=1}^n \frac{\partial}{\partial x_i}\left( a_{ij}(x) \frac{\partial u}{\partial x_j} \right),
+u_1
+u_2
+\frac{d}{dt}\int_{\Omega}u^2 dx \leq 0
+a(x)
+\int_{\Omega} -\langle a(x)\vec{v}, \vec{v}\rangle
+\frac12 \frac{d}{dt}\int_{\Omega}u^2 = \int_{\Omega} u \sum_{i,j=1}^n \left( \frac{\partial a_{ij}}{\partial x_i} \frac{\partial u}{\partial x_j} + a_{ij}(x)\frac{\partial^2 u}{\partial x_i \partial x_j}\right),
+ \sum_{i,j=1}^n \partial_i(a_{ij} \partial_j u) =\text{div}(a \nabla u),  
+ -\int_{\Omega} \langle \nabla u, a \nabla u \rangle dx \leq 0. 
+u(x,0)=0
+x\in \Omega
+u(y,t)=0
+y\in \partial \Omega
+t>0
+u\equiv 0
+u
+ \frac{1}{2}\frac{d}{dt} \int_{\Omega} |u|^2 dx = \int_{\Omega} u \text{div}(a\nabla u) dx. 
+v=a\nabla u
+uv
+ \int_{\Omega}u \text{div}(v)dx= -\int_{\Omega}\langle \nabla u, v \rangle dx + \int_{\partial \Omega}\langle uv,\nu \rangle d \sigma. 
+u(y,t)=0
+y\in \partial \Omega
+t
+ \frac{1}{2}\frac{d}{dt}\int_{\Omega} |u|^2 dx =- \int_{\Omega} \langle \nabla u,a\nabla u\rangle dx \leq 0. 

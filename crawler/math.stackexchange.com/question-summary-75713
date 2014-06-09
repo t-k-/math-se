@@ -1,0 +1,16 @@
+z=\int_0^x \sin(x-s)f(s) \, \mathrm ds
+z'=\frac{\mathrm d}{\mathrm dx}\int_0^x \sin(x-s)f(s) \, \mathrm ds
+z'=\frac{\mathrm d}{\mathrm dx}\int_0^x \! f(s,x) \, \mathrm ds
+z(x) = \int_0^x \sin(x-s) f(s) \mathrm{d} s
+z(x+ \delta x)-z(x)
+\lim_{\delta x \to 0} \frac{z(x+\delta x)-z(x)}{\delta x}
+ \begin{eqnarray}  z(x+ \delta x)-z(x) &=& \int_0^{x+\delta x} \sin(x+\delta x-s) f(s) \mathrm{d} s - \int_0^x \sin(x-s) f(s) \mathrm{d} s \\   &=& \int_0^{x+\delta x} \sin(x+\delta x-s) f(s) \mathrm{d} s - \int_0^x \sin(x+\delta x-s) f(s) \mathrm{d} s + \\&& \int_0^x \sin(x+\delta x-s) f(s) \mathrm{d} s - \int_0^x \sin(x-s) f(s) \mathrm{d} s \\   &=& \int_{x}^{x+\delta x} \sin(x+\delta x-s) f(s) \mathrm{d} s + \int_0^x \left( \sin(x+\delta x -s) - \sin(x-s) \right) f(s) \mathrm{d} s \\   &\sim& \delta x \left( \sin(\delta x) f(x) + \int_0^x \cos(x-s) f(s) \right)  \end{eqnarray} 
+    z^\prime(x) = \int_0^x \cos(x-s) f(s) \mathrm{d} s 
+z
+f:\mathbb R ^2 \to \mathbb R
+g:\mathbb R \to \mathbb R ^2
+z(x)=(f\circ g)(x)
+g'=(1,1)
+f(x,y)=\int _a ^y p(x,t)\text d t,\qquad g(x)=(x,x).
+z'(x)=\partial _x f (x,x)+\partial _y(x,x),
+z'(x)=\int _a ^x \partial _x p(x,t)\text d t+p(x,x).

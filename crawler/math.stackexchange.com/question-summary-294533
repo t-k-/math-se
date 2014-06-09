@@ -1,0 +1,14 @@
+k = (k_1^2+k_2^2+k_3^2)^{1/2}
+ \widetilde{f}= \frac{1}{(k^6-\alpha*k^2-\alpha*k_3^2)} 
+\vec{k} =k_1 \vec{e_1}+k_2 \vec{e_2}+k_3 \vec{e_3}
+\vec{x} =x_1 \vec{e_1}+x_2 \vec{e_2}+x_3 \vec{e_3}
+ \widetilde{f} = F(f) = \int_{R^3} f(\vec{x})e^{-i \vec{k}\vec{x}} \mathrm{d}^3\vec{x} 
+ f =F^{-1}(\widetilde{f})=\frac{1}{8 \pi^3}\int_{R^3} \widetilde{f}(\vec{k})e^{-i \vec{k}\vec{x}} \mathrm{d}^3\vec{k} 
+k_1 = k \sin{\theta} \cos{\phi}
+k_2 = k \sin{\theta} \sin{\phi}
+k_3 = k \cos{\theta}
+\mathrm{d^3}\vec{k} = k^2 \sin{\theta} \, dk \, d \theta \, d \phi 
+\int_0^{2 \pi} e^{i y \cos{(\phi - \phi')}} = 2 \pi J_0(y)
+J_0
+f(\vec{x}) = \frac{1}{(4 \pi)^2} \int_0^{\infty} dk \: \int_0^{\pi} d \theta \: \sin{\theta} \frac{J_0(k r_{\perp} \sin{\theta}) e^{-i k z \cos{\theta}}}{k^4 - \alpha \sin^2{\theta}}
+r_{\perp} = \sqrt{x^2+y^2}

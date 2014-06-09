@@ -1,0 +1,11 @@
+\dfrac{1}{\pi}\int_{0}^{\pi}\dfrac{\sin{t}}{\cos{t}-\cos{x}}f'(x)dx=\dfrac{1}{2\pi}\int_{0}^{2\pi}\cot{\dfrac{x-t}{2}}g'(x)dx
+g
+2\pi
+f
+R
+\sin{t}=\sin{\left(\dfrac{t+x}{2}+\dfrac{t-x}{2}\right)}=\sin{\dfrac{t+x}{2}}\cos{\dfrac{t-x}{2}}+\sin{\dfrac{t-x}{2}}\cos{\dfrac{t+x}{2}}
+\cos{t}-\cos{x}=2\sin{\dfrac{x-t}{2}}\sin{\dfrac{t+x}{2}}
+\dfrac{\sin{t}}{\cos{t}-\cos{x}}=\dfrac{1}{2}\cot{\dfrac{x-t}{2}}-\dfrac{1}{2}\cot{\dfrac{t+x}{2}}
+I=\dfrac{1}{\pi}\int_{0}^{\pi}\dfrac{\sin{t}}{\cos{t}-\cos{x}}f'(x)dx
+I=\dfrac{1}{2\pi}\int_{0}^{\pi}\cot{\dfrac{x-t}{2}}f'(x)dx-\dfrac{1}{2\pi}\int_{0}^{\pi}\cot{\dfrac{t+x}{2}}f'(x)dx
+ \begin{align} \int_{0}^{\pi}\cot{\dfrac{t+x}{2}}f'(x)dx =\{x:=-s\} &=\int_{0}^{-\pi}\cot{\dfrac{t-s}{2}}f'(-s)(-ds)\\ &=\int_{-\pi}^{0}\cot{\dfrac{t-s}{2}}f'(-s)ds\\ &=-\int_{-\pi}^{0}\cot{\dfrac{s-t}{2}}f'(-s)ds\\ &=-\int_{-\pi}^{0}\cot{\dfrac{s-t}{2}}g'(s)ds\\ &=-\int_{-\pi}^{0}\cot{\dfrac{x-t}{2}}g'(x)dx\\ \end{align} 

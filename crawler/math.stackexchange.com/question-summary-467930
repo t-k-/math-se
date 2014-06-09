@@ -1,0 +1,15 @@
+\oint_C \frac{dz}{1+z^{1000}}
+C
+R
+\pi/500
+C
+z=e^{i \pi/1000}
+\left (1-e^{i \pi/500}\right) \int_0^{\infty} \frac{dx}{1+x^{1000}} = i 2 \pi \frac{1}{1000 e^{i 999 \pi/1000}} = -i \frac{\pi}{500} e^{i \pi/1000}
+R \to \infty
+\int_0^{\infty} \frac{dx}{1+x^{1000}} = \frac{\pi/1000}{\sin{(\pi/1000)}}
+\oint_C \frac{dz}{1+z^{1000}} = \int_0^{R} \frac{dx}{1+x^{1000}} + i R \int_0^{\pi/500} d\theta \, e^{i \theta} \frac{1}{1+R^{1000} e^{i 1000 \theta}} + \\ e^{i \pi/500} \int_R^0 \frac{dt}{1+t^{1000} e^{i 1000 \pi/500}}
+R\to\infty
+\frac{\pi/500}{R^{999}}
+R\to\infty
+ \begin{equation} \int\limits_{0}^{+\infty}\frac{dx}{1 + x^{1000}} = \frac{1}{1000}\beta\left( \frac{1}{1000},\frac{999}{1000} \right) \end{equation}
+=\frac{1}{1000}{\Gamma \left( \frac{1}{1000} \right)}\Gamma \left( \frac{999}{1000} \right)\sim 1.000001645.  

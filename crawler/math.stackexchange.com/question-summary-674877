@@ -1,0 +1,4 @@
+\pi(k)=\frac{k}{\log(k)}\left(1+O\left(\frac1{\log(k)}\right)\right)
+\int_2^{n-1}\frac{\mathrm{d}x}{x\log(x)}
+\int_3^n\frac{\mathrm{d}x}{x\log(x)}
+ \begin{align} \sum_{p\le n}\frac1p &=\sum_{k=1}^n\frac{\pi(k)-\pi(k-1)}{k}\\ &=\sum_{k=1}^n\frac{\pi(k)}{k}-\sum_{k=0}^{n-1}\frac{\pi(k)}{k+1}\\ &=\frac{\pi(n)}{n}+\sum_{k=1}^{n-1}\frac{\pi(k)}{k(k+1)}\\ &=\frac{\pi(n)}{n}+\sum_{k=1}^{n-1}\frac{\pi(k)}{k^2}-\sum_{k=1}^{n-1}\frac{\pi(k)}{k^2(k+1)}\\ &=\sum_{k=3}^{n-1}\frac{\pi(k)}{k^2}+O(1)\\ &=\sum_{k=3}^{n-1}\left[\frac1{k\log(k)}+O\left(\frac1{k\log(k)^2}\right)\right]+O(1)\\[9pt] &=\log(\log(n))+O(1) \end{align} 

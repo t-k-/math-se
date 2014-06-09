@@ -1,0 +1,70 @@
+\sum a_n
+\lambda(N)
+1/N
+\sum 1/n^k
+k
+\alpha = 1/k
+\sum a_n
+\Delta\lambda(N) = \lambda(N+1)-\lambda(N)
+\lambda(N)=O(N^\alpha)
+\sum \Delta\lambda(N)/N
+\begin{align*} \sum_{N=1}^{n-1}\frac{1}{N}(\lambda(N+1)-\lambda(N)) &=\frac{\lambda(n)}{n}-\lambda(1)+\sum_{N=1}^{n-1}\lambda(N+1)\left(\frac{1}{N}-\frac{1}{N+1}\right)\\ &\leq\frac{\lambda(n)}{n}+\sum_{N=1}^{n-1}\frac{\lambda(2N)}{N^2}\\ &\leq\frac{M}{n^{1-\alpha}}+M\cdot2^\alpha\sum_{N=1}^{n-1}\frac{1}{N^{2-\alpha}} \end{align*}
+n
+\sum_{N=1}^\infty\frac{1}{N}(\lambda(N+1)-\lambda(N))\leq M\cdot2^\alpha\sum_{N=1}^\infty\frac{1}{N^{2-\alpha}}<\infty.
+\sum a_n\leq c+\sum \Delta\lambda(N)/N
+c
+1
+k\ge0
+a_n
+2^{-(k+1)}\le a_n\le 2^{-k}
+\lambda(2^{k+1})
+2^{-k}
+\lambda(1)
+a_n
+a_n\ge1
+a_n
+a_n\le1
+\lambda(N)\le c\cdot N^a
+N
+\lambda(2^{k+1})\le c\cdot2^{a(k+1)}
+k
+a<1
+2^{-(1-a)}<1
+ \sum_{k=0}^{+\infty}\sum_na_n\cdot[2^{-(k+1)}\le a_n\le 2^{-k}]\le\sum_{k=0}^{+\infty}\lambda(2^{k+1})2^{-k}. 
+ \displaystyle2^ac\cdot\sum_k2^{-(1-a)k}, 
+\lambda(1)\le\lambda(N)
+N\ge1
+\lambda(N)=O(N^a)
+\lambda(N)
+N
+f(n):=a_n
+\lambda(N)
+\mathbb R
+\lambda(t)=\#\{n:f(n)>1/t\}
+\#
+F_f(t)=\lambda(1/t)=\#\{n:f(n)>t\}
+F_f(t)
+f
+F_f(1/N)=O(N^{\alpha})
+f
+>1
+f
+ \sum_{n=1}^{\infty}f(n)=\int_0^{\infty}F_f(t)\,\mathrm dt. 
+\lceil t^{-1}\rceil^{-1}\leq t<2\lceil t^{-1}\rceil^{-1}
+t\leq 1
+F_f(1/N)
+F_f(t)
+C
+F_f(t)=O(t^{-\alpha})
+f
+\ell^{\alpha}
+M
+f
+0<\alpha<1
+F_f(t)\leq F_f(\lceil t^{-1}\rceil^{-1})\leq C\lceil t^{-1}\rceil^{\alpha}\leq C2^{\alpha} t^{-\alpha}\qquad(0<t\leq1),
+ \int_0^{\infty}F_f(t)\,\mathrm dt = \int_0^MF_f(t)\,\mathrm dt \leq C'\int_0^1t^{-\alpha}\,\mathrm dt + C'MF_f(1) <\infty, 
+p=\alpha
+q=\infty
+\{a_n\}
+r=1
+\{a_n\}\in \ell^1

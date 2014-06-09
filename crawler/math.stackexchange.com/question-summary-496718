@@ -1,0 +1,16 @@
+L_1, L_2, ....., L_N
+N
+A
+A
+S=\left\{L_1,\dots,L_n\right\}
+M
+M
+\forall M \in \Bbb R^2, D_M=\left\{L\in S\mid M \in L\right\}
+M
+\forall M \in \Bbb R^2, n\left(M\right)=\left|D_M\right|
+A=\left\{M \in \Bbb R^2 \mid n\left(M\right)\ge 3\right\}
+A=\left\{M \in \Bbb R^2 \mid \Big|\left\{L\in \left\{L_1,\dots,L_n\right\}\mid M \in L\right\}\Big|\ge 3\right\}
+A=\cup_{S \in [N]^3:|S|=3} \cap_{i \in S} L_i
+A=\cup_{1 \leq i < j < k \leq N} L_i \cap L_j \cap L_k.
+A=\cup_{i=1}^N \cup_{j=i+1}^N \cup_{k=j+1}^N \cap_{l \in \{i,j,k\}} L_l.
+A=\bigcup\nolimits_{K\in{[N]\choose3}}\left(\bigcap\nolimits_{i\in K}L_i\right)\ .

@@ -1,0 +1,17 @@
+(X,Y)
+(a,b)
+X=aY+bZ
+Z
+Y
+(a,b)
+E(X^2)=a^2E(Y^2)+b^2
+E(XY)=aE(Y^2)
+ E[\mathrm e^X\mid Y]=\mathrm e^{aY}E[\mathrm e^{bZ}]=\mathrm e^{aY+b^2/2}. 
+X=\sigma B_t
+Y=\int\limits_0^1B_s\mathrm ds
+E(X^2)=\sigma^2t
+E(Y^2)=\int\limits_0^1\int\limits_0^1\min(u,v)\mathrm du\mathrm dv=\frac13
+t\leqslant1
+E(XY)=\sigma\int\limits_0^1\min(t,s)\mathrm ds=\sigma t(1-\frac12t)
+Y_t=\int\limits_0^tB_s\mathrm ds
+ E[\mathrm e^{\sigma B_t}\mid Y]=1+a\mathrm e^{b^2/2}\int_0^t\mathrm e^{aY_s}B_s\mathrm ds. 

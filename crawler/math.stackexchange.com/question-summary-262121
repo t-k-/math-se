@@ -1,0 +1,79 @@
+H: \mathbb{R} \rightarrow \mathbb{R}
+H(x) = 0
+x < 0
+H(x) = 1
+x \ge 0
+\sum_{n=1}^\infty a_n
+\{x_n\} \subset \mathbb{R}
+f: \mathbb{R} \rightarrow \mathbb{R}
+f(x) = \sum_{n=1}^\infty [a_n H(x - x_n)]
+f
+\sum a_n
+f
+x \in \mathbb{R}
+f
+x_n
+f
+\mathbb{R} - \{x_n\}
+\fbox{First Proof Attempt}
+n \in \mathbb{N}
+f_n = a_n H(x-x_n)
+x < x_n
+f_n(x) = 0
+x \ge x_n
+f_n(x) = a_n
+n \in \mathbb{N}
+|f_n| \le a_n
+\sum a_n \le M
+0 < M \in \mathbb{R}
+\sum f_n \rightarrow f
+\sum_{i=1}^n f_n = g_n
+g_n \rightarrow f
+g_n
+\forall x \in \mathbb{R}
+\underset{t \rightarrow x+}{lim} \underset{n \rightarrow \infty}{lim} g_n(t) = \underset{n \rightarrow \infty}{lim}  \underset{t \rightarrow x+}{lim} g_n(t)
+f_n
+g_n
+\underset{t \rightarrow x+}{lim} f(t) = f(x)
+f
+b \in \mathbb{R} - \{a_n\}
+f_n
+b
+f_n
+b
+g_n
+b
+g_n \rightarrow f
+\underset{t \rightarrow b}{lim} \underset{n \rightarrow \infty}{lim} g_n(t) = \underset{n \rightarrow \infty}{lim}  \underset{t \rightarrow b}{lim} g_n(t)
+\underset{t \rightarrow b}{lim} f(t) = f(x)
+f
+b
+x_k \in \{x_n\}
+f_k
+x_k
+f_k
+x_k
+g_N
+N \ge k
+x_k
+g_n \rightarrow f
+\underset{t \rightarrow x_k}{lim} \underset{n \rightarrow \infty}{lim} g_n(t) = \underset{n \rightarrow \infty}{lim}  \underset{t \rightarrow x_k}{lim} g_n(t)
+\underset{t \rightarrow x_k}{lim} f(t) = \underset{n \rightarrow \infty}{lim}  \underset{t \rightarrow x_k}{lim} g_n(t) = undefined
+\underset{t \rightarrow x_k}{lim} g_n(t)
+\fbox{John Mangual's Proof}
+x_n
+f
+ f(x_n - \delta) = \sum_{i \in S} a_i \ne a_n + \sum_{i \in S} a_i = f(x_n + \delta) 
+S = \{i : x_i < x_n - \delta\}
+x_n = \frac{k}{M}
+M >> 1
+a_n = f(x_n)
+\color{#EEEEEE}{[x_n, x_{n+1})}
+x_n
+x_i
+\epsilon > 0
+S =\{ i: x_i < x_n - \epsilon\}
+f
+f_n
+f_n \to f
+ \displaystyle \sum_{n=1}^\infty \frac{1}{n^2} H\left(x - \frac{1}{n}\right) 

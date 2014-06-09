@@ -1,0 +1,40 @@
+a,b\in\mathbb{F}_{2^{m}}
+2
+B(a,b)=tr(\displaystyle\sum_{i=1}^{(m-1)/2}(a+b)^{1+2^{i}})-tr(\displaystyle\sum_{i=1}^{(m-1)/2}a^{1+2^{i}})-tr(\displaystyle\sum_{i=1}^{(m-1)/2}b^{1+2^{i}}),
+tr:\mathbb{F}_{2^{m}}\rightarrow\mathbb{F}_2
+i
+a,b
+m=2k+1
+(m-1)/2=k
+tr(x)=tr(x^2)
+m-i
+a
+a
+B(a,b)
+a\in \mathbb{F}_{2^m}
+b=1
+R=\{0,1\}
+b\in\mathbb{F}_{2^m}
+b\neq0,1
+x
+b\neq0,1
+b^{2^{m-1}}\neq0,1
+tr(b)+b^{2^{m-1}}\neq0
+B(x,b)
+2^{m-1}
+x
+B(x,b)=0
+2^{m-1}
+x
+a
+\mathbb{F}_{2^m}
+B(a,b)\neq0
+a
+ (a+b)^{1+2^i}-a^{1+2^i}-b^{1+2^i}=a^{2^i}b+ab^{2^i}. 
+ tr(ab^{2^i})=tr(a^{2^{m-i}}(b^{2^i})^{2^{m-i}})=tr(a^{2^{m-i}}b^{2^m})=tr(a^{2^{m-i}}b). 
+ \sum_{i=1}^k(a^{2^i}b+ab^{2^i})=\left(\sum_{i=1}^k(a^{2^i}+a^{2^{m-i}})\right)b. 
+ \sum_{i=1}^k(a^{2^i}+a^{2^{m-i}})=\sum_{i=0}^{m-1}a^{2^i}-a=tr(a)-a=tr(a)+a, 
+ B(a,b)=tr(tr(a)b+ab)=tr(ab)+tr(a)tr(b). 
+ R=\{b\in\mathbb{F}_{2^m}\mid B(a,b)=0\ \text{for all $a\in \mathbb{F}_{2^m}$}\} 
+ B(a,1)=tr(a\cdot1)+tr(a)tr(1)=tr(a)+tr(a)\cdot m=tr(a)(1+2k+1)=0. 
+ B(x,b)=tr(xb)+tr(x)tr(b)=\sum_{i=0}^{m-1}b^{2^i}x^{2^i}+\sum_{i=0}^{m-1}tr(b)x^{2^i} =\sum_{i=0}^{m-1}(tr(b)+b^{2^i})x^{2^i}. 

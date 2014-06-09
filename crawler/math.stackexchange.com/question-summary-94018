@@ -1,0 +1,50 @@
+ \left( x^n \ln x \right)^{(n)}=  n! \left(\ln x + 1 + \frac{1}{2} +\cdots +\frac{1}{n} \right), \quad x>0, \quad n\ge 1, \tag{a}
+ \left( \frac{\ln x}{x} \right)^{(n)}= (-1)^n \ n! \ x^{-n-1}  \left( \ln x - 1 - \frac{1}{2} - \cdots -\frac{1}{n} \right), \quad x>0,\quad n\ge 1, \tag{b}
+(\cdot )^{(n)}
+n
+x
+\sum_{k=1}^n \binom{n}{k}\frac{(-1)^k}{k}=-\sum_{k=1}^n \frac1{k}=-H_n
+n=1
+\sum_{k=1}^{n+1} \binom{n+1}{k}\frac{(-1)^k}{k}-\sum_{k=1}^n \binom{n}{k}\frac{(-1)^k}{k}
+\begin{align*} &\frac{(-1)^{n+1}}{n+1}+\sum_{k=1}^n \binom{n+1}{k}\frac{(-1)^k}{k}-\sum_{k=1}^n \binom{n}{k}\frac{(-1)^k}{k}\\ &\frac{(-1)^{n+1}}{n+1}+\sum_{k=1}^n \left(\binom{n+1}{k}-\binom{n}{k}\right)\frac{(-1)^k}{k}\\ &\frac{(-1)^{n+1}}{n+1}+\frac1{n+1}\sum_{k=1}^n (-1)^k\binom{n+1}{k}\\ &\frac{(-1)^{n+1}}{n+1}+\frac1{n+1}\left(-1-(-1)^{n+1}+\sum_{k=0}^{n+1} (1)^{n-k+1}(-1)^k\binom{n+1}{k}\right)\\ &\frac{(-1)^{n+1}}{n+1}+\frac1{n+1}\left(-1-(-1)^{n+1}+(1-1)^{n+1}\right)=-\frac1{n+1}\\ \end{align*}
+-H_{n+1}-(-H_n)=-\dfrac1{n+1}
+\dfrac{\mathrm d^n}{\mathrm dx^n}\dfrac1{x}=\dfrac{(-1)^n n!}{x^{n+1}}
+\begin{align*} \frac{\mathrm d^n}{\mathrm dx^n}\frac{\ln\,x}{x}&=\frac{(-1)^n n!}{x^{n+1}}\ln\,x+\sum_{k=1}^n\binom{n}{k}\left(\frac{\mathrm d^k}{\mathrm dx^k}\ln\,x\right)\left(\frac{\mathrm d^{n-k}}{\mathrm dx^{n-k}}\frac1{x}\right)\\ &=\frac{(-1)^n n!}{x^{n+1}}\ln\,x+\sum_{k=1}^n\frac{n!}{\color{blue}{k!}\color{magenta}{(n-k)!}}\left(\frac{\color{red}{(-1)^{k-1}}\color{blue}{(k-1)!}}{\color{orange}{x^k}}\right)\left(\frac{\color{red}{(-1)^{n-k}}\color{magenta}{(n-k)!}}{\color{orange}{x^{n-k+1}}}\right)\\ &=\frac{(-1)^n n!}{x^{n+1}}\ln\,x+\frac{\color{red}{(-1)^{n-1}} n!}{\color{orange}{x^{n+1}}}\sum_{k=1}^n\frac1{\color{blue} k}=\frac{(-1)^n n!}{x^{n+1}}\left(\ln\,x-\sum_{k=1}^n\frac1{k}\right) \end{align*}
+(fg)' = f'g + fg'
+n
+m
+f_1,\ldots,f_m
+n
+m^n
+n
+x^n\ln x
+n+1
+n
+x
+\ln x
+n
+n
+n
+x''=0
+k
+n
+\ln x
+n-k
+T_k
+T_n
+n!
+n!\ln x
+k < n
+T_k
+n(n-1)\cdots(n-k+1) \binom{n}{k}
+m > 0
+(\ln x)^{(m)} = (-1)^{m+1} (m-1)! x^{-m}
+m = n-k
+T_k
+(-1)^{n-k+1} (n-k-1)!
+T_k
+(-1)^{n-k+1} n!/(n-k) \binom{n}{k}
+n
+ \begin{align*} &n!\ln x + n!\sum_{k=0}^{n-1} (-1)^{n-k+1} \frac{1}{n-k} \binom{n}{k} \\ =&n!\ln x + n!\sum_{k=1}^n (-1)^{k+1} \frac{1}{k} \binom{n}{k}. \end{align*} 
+ \sum_{k=1}^n (-1)^{k+1} \frac{1}{k} \binom{n}{k} = \sum_{k=1}^n \frac{1}{k}. 
+y = 1/x

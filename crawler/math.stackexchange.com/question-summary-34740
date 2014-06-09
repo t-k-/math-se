@@ -1,0 +1,36 @@
+\frac{\Gamma (p)\Gamma (p)}{\Gamma (2p)} = 2\int_0^{1/2}x^{p-1}(1-x)^{p-1}\mathrm dx
+\Gamma (2p)\Gamma\left(\frac12\right) = 2^{2p-1}\Gamma (p)\Gamma\left(p-\frac12\right)
+ B(\alpha,\beta)=\frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha+\beta)}.
+ \Gamma(\alpha) = \int_0^{\infty} x^{\alpha} e^{-x} \frac{\mathrm dx}{x} 
+x=y^2
+\Gamma
+ x=r\cos(\theta), y=r\sin(\theta) 
+z=\sin(\theta)^2 
+ \Gamma(\alpha) = 2 \int_0^{\infty} y^{2\alpha-1} e^{-y^2}\mathrm dy. 
+\Gamma(\alpha) \Gamma(\beta) = 4 \int_0^{\infty} \int_0^{\infty} x^{2\alpha-1} y^{2\beta-1} e^{-(x^2+y^2)}\mathrm dx\mathrm dy. 
+ \Gamma(\alpha) \Gamma(\beta) = 4 \int_0^{\frac{\pi}{2}} \int_0^{\infty} r^{2(\alpha+\beta)-1} \cos(\theta)^{2\alpha-1} \sin(\theta)^{2\beta-1} e^{-r^2}\mathrm dr\mathrm d\theta 
+ = \left(2 \int_0^{\frac{\pi}{2}} \cos(\theta)^{2\alpha-1} \sin(\theta)^{2\beta-1} \mathrm d\theta \right) \left( 2\int_0^{\infty} r^{2(\alpha+\beta)-1} e^{-r^2}\mathrm dr \right) 
+ = \left(2 \int_0^{\frac{\pi}{2}} \cos(\theta)^{2\alpha-1} \sin(\theta)^{2\beta-1} \mathrm d\theta \right) \Gamma(\alpha+\beta). 
+ \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha+\beta)} = 2 \int_0^{\frac{\pi}{2}} \cos(\theta)^{2\alpha-1} \sin(\theta)^{2\beta-1}\mathrm d\theta 
+ \frac{\Gamma(\alpha) \Gamma(\beta)}{\Gamma(\alpha+\beta)} = \int_0^1 (1-z)^{\alpha-1} z^{\beta-1}\mathrm dz.
+\alpha, \beta
+\Gamma (p)\Gamma (q)=\Gamma (p+q)B(p,q)\qquad (1)
+1^{st}
+t=u/(1+u)
+B(p,q)
+B(p,q)=\int_{0}^{1}t^{p-1}(1-t)^{q-1}\ \mathrm{d}t\qquad (2)
+B(p,q)=\int_{0}^{\infty }\frac{u^{p-1}}{(1+u)^{p+q}}.\ \mathrm{d}u\qquad (3)
+2^{nd}
+t=vu
+\Gamma (p)=\int_{0}^{\infty }t^{p-1}e^{-t}\ \mathrm{d}t\qquad (4)
+\Gamma (p)=\int_{0}^{\infty }v^{p}u^{p-1}e^{-vu}\ \mathrm{d}u.
+\Gamma (p)\Gamma (q)=\int_{0}^{\infty }u^{p-1}\left( \int_{0}^{\infty }v^{p+q-1}e^{-v-vu}\ \mathrm{d}v\right) \ \mathrm{d}u.
+(4)
+3^{rd}
+v=w/(1+u)
+\int_{0}^{\infty }v^{p+q-1}e^{-v-vu}\ \mathrm{d}v=\frac{\Gamma (p+q)}{% (1+u)^{p+q}},\qquad (5)
+(3)
+\Gamma (p)\Gamma (q)=\Gamma (p+q)\int_{0}^{\infty }\frac{u^{p-1}}{% (1+u)^{p+q}}\ \mathrm{d}u=\Gamma (p+q)B(p,q).\qquad\square
+u=4t(t-1)
+B(p,p)=2\int_{0}^{1/2}\left[ t(t-1)\right] ^{p-1}\ \mathrm{d}t
+B(p,p)=2^{1-2p}B(p,1/2).

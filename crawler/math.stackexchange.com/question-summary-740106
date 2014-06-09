@@ -1,0 +1,16 @@
+\sum_{n=1}^{\infty}(e-(1+{{1}\over{n}})^n)^p = \sum_{n=1}^{\infty}a_n
+a_n
+a_n = (e-(1+{{1}\over{n}})^n)^p = (\sum_{k=0}^{\infty}{{1}\over k!} - \sum_{k=0}^{n}\dbinom{n}{k}{1\over n^k})^p = {1\over n^p}(const.+O({1\over n}))^p
+(1+{{1}\over{n}})^n = \sum_{k=0}^{n}\dbinom{n}{k}{1\over n^k} = {1\over k!}(1 - {1\over n})(1-{2\over n})...(1-{k-1\over n})< \sum_{k=0}^{n}({1\over k!}-{1\over nk!})
+e-(1+{{1}\over{n}})^n
+\sum_{n=1}^{\infty}{1\over k!}(1 - (1 - {1\over n})(1-{2\over n})...(1-{k-1\over n}))> \sum_{k=0}^{n}{1\over nk!}>{2\over n}
+\sum_{n=1}^{\infty}(e-(1+{{1}\over{n}})^n)^p
+\sum_{n=1}^{\infty}({2\over n})^p
+p \leq 1
+e-(1+{{1}\over{n}})^n < (1+{{1}\over{n}})^n-(1+{{1}\over{n}})^{n+1}= {(1+{{1}\over{n}})^n \over n} \leq {e\over n}
+\sum_{n=1}^{\infty}(e-(1+{{1}\over{n}})^n)^p
+\sum_{n=1}^{\infty}({e\over n})^p
+p>1
+(e-e^{n\ln(1+1/n)})^p \sim (e-e^{n(\frac{1}{n}-\frac{1}{2n^2}+o(1/n^3))})^p =(e-e^{1-\frac{1}{2n}+o(1/n^2)})^p \sim e^p(1-(1+\frac{1}{2n }+o(1/n^2)+ o(X))^p\sim e^p\frac{1}{2^pn^p}
+o(X)
+e^{n(\frac{1}{n}-\frac{1}{2n^2}+o(1/n^3))})

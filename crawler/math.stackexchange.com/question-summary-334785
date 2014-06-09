@@ -1,0 +1,7 @@
+f(z)
+z=e^{i\theta}
+ f(z)=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(e^{i\theta})d\theta+\frac{1}{2\pi}\sum_{n=1}^{\infty}\int_{-\pi}^{\pi}f(e^{i\theta})\left[\left(\frac{z}{e^{i\theta}}\right)^{n}+\left(\frac{e^{i\theta}}{z}\right)^{n}\right] d\theta 
+ f(z)=\sum_{n=1}^{\infty}\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{f(e^{i\theta})}{e^{in\theta}}d\theta \cdot z^{n}+\sum_{n=1}^{\infty}\int_{-\pi}^{\pi}f(e^{i\theta})e^{in\theta}d\theta\cdot z^{-n} 
+n=0
+\frac{z^n}{e^{in\theta}}=\left(\frac z{e^{i\theta}}\right)^n,
+n=0

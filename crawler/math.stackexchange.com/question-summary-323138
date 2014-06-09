@@ -1,0 +1,28 @@
+P(T) = \frac { 1 + T + T^2 + \cdots + T^m}{ 1 - T^2( 1 + T + T^2 + \cdots + T^n)} = \sum _{i = 0}^\infty \beta_n T^n
+\alpha
+\beta_n \leq \alpha^n
+\forall n \geq 1
+\begin{align} P(T) &= \frac { 1 + T + T^2 + \cdots + T^m}{ 1 - T^2( 1 + T + T^2 + \cdots + T^n)}\\ &= \frac{(1-T^{m+1})/(1-T)}{1-T^2(1-T^{n+1})/(1-T)}\\ &= \frac{1-T^{m+1}}{(1-T)-T^2(1-T^{n+1})}\\ &= \frac{1-T^{m+1}}{1-T-T^2+T^{n+3}}\\ \end{align} 
+r(T) =\frac{1-T-T^2+T^{n+3}}{1-T} = 1-T^2\frac{1-T^{n+1}}{1-T} 
+r(0) = 1
+1-T^n \ge 1-T
+r(T) \le 1-T^2
+r(1) = -n < 0
+r
+\frac{1-T^{n+1}}{1-T} = 1+T+...+T^{n} \le n+1
+r(T) \ge 1-(n+1)T^2
+r
+1/\sqrt{n+1}
+P(T) = \frac{1-T^{m+1}}{1-T-T^2+T^{n+3}} =\sum_{i=0}^{\infty} a_i T^i 
+\begin{align} 1-T^{m+1} &= (1-T-T^2+T^{n+3})\sum_{i=0}^{\infty} a_i T^i \\ &= \sum_{i=0}^{\infty} a_i T^i -\sum_{i=0}^{\infty} a_i T^{i+1} -\sum_{i=0}^{\infty} a_i T^{i+2} +\sum_{i=0}^{\infty} a_i T^{i+n+3}\\ &= \sum_{i=0}^{\infty} a_i T^i -\sum_{i=0}^{\infty} a_{i-1} T^i -\sum_{i=0}^{\infty} a_{i-2} T^i +\sum_{i=0}^{\infty} a_{i-n-3} T^i\\ &= \sum_{i=0}^{\infty} (a_i-a_{i-1}-a_{i-2}+a_{i-n-3}) T^i \end{align} 
+a_i
+i=0
+a_0=1
+a_j=0
+j < 0
+i=m+1
+-1 = a_i-a_{i-1}-a_{i-2}+a_{i-n-3}
+i
+a_i-a_{i-1}-a_{i-2}+a_{i-n-3} = 0
+T
+P(T)

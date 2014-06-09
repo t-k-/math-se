@@ -1,0 +1,20 @@
+\min L(x,y) = (x-5.1)^2+y^2
+(x-3)^2+y^2\geq1
+(x-5.3)^2+y^2\geq1
+(x-7)^2+y^2\geq1
+x^*=4.3,y^*=0
+g_1(x)+s_1=-(x-3.0)^2+s_1=-1
+g_2(x)+s_2=-(x-5.3)^2+s_2=-1
+g_3(x)+s_3=-(x-7.0)^2+s_3=-1
+s_1,s_2,s_3\ge 0
+Z=L(x)+\lambda_1(r_1-g_1(x)-s_1)+\lambda_2(r_2-g_2(x)-s_2)+\lambda_3(r_3-g_3(x)-s_3)
+r_1=r_2=r_3=-1
+\frac{\partial Z}{\partial x}= \frac{\partial L}{\partial x}-\lambda_1\frac{\partial g_1}{\partial x}-\lambda_2\frac{\partial g_2}{\partial x}-\lambda_3\frac{\partial g_3}{\partial x}=0
+\frac{\partial Z}{\partial \lambda_1}= r_1-g_1-s_1=0
+\frac{\partial Z}{\partial \lambda_2}= r_2-g_2-s_2=0
+\frac{\partial Z}{\partial \lambda_3}= r_3-g_3-s_3=0
+s_1\cdot \frac{\partial Z}{\partial s_1}= -s_1\lambda_1=0
+s_2\cdot \frac{\partial Z}{\partial s_2}= -s_2\lambda_2=0
+s_3\cdot \frac{\partial Z}{\partial s_3}= -s_3\lambda_3=0
+s_1,s_2,s_3\ge0
+x=4.3\quad \lambda_1=0\quad \lambda_2=-0.8\quad \lambda_3=0\quad s_1=0.69\quad s_2=0\quad s_3=6.29

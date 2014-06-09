@@ -1,0 +1,10 @@
+f
+f(x) = a+\frac{c}{e} + xf'(0) + O(x^2) = a+\frac{c}{e}+\frac{ac+be+d}{e}x + O(x^2).
+f
+f
+0
+O(x)
+x\to 0
+x\to\infty
+\frac{1}{1 + x}
+\begin{align} f(x) &=a+bx+\frac{c+dx}{e+fx^2}e^{ax} \\ &= a + bx + \frac{1}{e} \cdot \frac{c+dx}{1 + \frac{f}{e}x^2} \cdot \left(1 + ax + \frac{a^2}{2} x^2 + O(x^3)\right) \\  &= a + bx + \frac{1}{e} \cdot (c+dx) \cdot \left(1 - \frac{f}{e}x^2 + O(x^4)\right) \cdot \left(1 + ax + \frac{a^2}{2} x^2 + O(x^3)\right) \\  &= a + bx + \frac{1}{e} \cdot \left(c + (ac + d)x + \left(\frac{a^2 c}{2} + ad - \frac{cf}{e}\right)x^2 + O(x^3)\right) \\ &= \left(a + \frac{c}{e}\right) + \left(b + \frac{ac + d}{e}\right)x + \left(\frac{a^2 c}{2e} + \frac{ad}{e} - \frac{cf}{e^2}\right)x^2 + O(x^3). \end{align}

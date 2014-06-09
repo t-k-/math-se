@@ -1,0 +1,12 @@
+(X_i)_{i=1,...,n}
+p_x
+1\{X_i\leq u\}\sim Ber(F_x(u))
+F_x(u):=P(X_i\leq u)
+Y:=\sum_{i=1}^n 1\{X_i\leq u\}\sim Bin(n,F_x(u)),
+X_{[i]}
+X_{[j]}\leq u\Leftrightarrow X_{[i]}\leq u ~(\forall i\leq j) \Leftrightarrow \sum_{i=1}^n 1\{X_i\leq u\} \geq j.
+P(X_{[j]}\leq u)=P(Y\geq j)=\sum_{k=j}^n \binom{n}{k}F_x^k(u)\left(1-F_x(u)\right)^{n-k}.
+p_x
+X_i
+P(X_i=X_j)\neq 0
+i\neq j

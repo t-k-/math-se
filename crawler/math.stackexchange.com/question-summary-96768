@@ -1,0 +1,9 @@
+\epsilon
+\epsilon
+W,H \geq 0
+K(V||WH)
+H_{ak}^{t+1} = H_{ak}^{t} \left(\frac{\sum_{i}V_{ik} W_{ia}}{\sum_{i} W_{ia} \left(\sum_{b} W_{ib} H_{bk}^{t} \right)} \right)
+W_{ia}^{t+1} = H_{ia}^{t} \left(\frac{\sum_{i}H_{ak} V_{ik}}{\sum_{i} \left(\sum_{b} W_{ib} H_{bk}^{t} \right) H_{ak}} \right)
+K(V||WH)
+H_{ak}^{t+1} = H_{ak}^{t} \left(\frac{\sum_{i} \left(\frac{V_{ik}}{\sum_{b} W_{ib} H_{bk}^{t}} \right) W_{ia}}{\sum_{i} W_{ia}} \right)
+W_{ia}^{t+1} = W_{ia}^{t} \left(\frac{\sum_{i} \left(\frac{V_{ik}}{\sum_{b} W_{ib}^{t} H_{bk}} \right) H_{ak}}{\sum_{k} H_{ak}} \right)

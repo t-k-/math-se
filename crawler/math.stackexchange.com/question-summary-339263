@@ -1,0 +1,32 @@
+m \times m
+A
+m \times m
+\lambda_1, \lambda_2, ... ,\lambda_m
+m
+m \times m
+A
+\det(A) = \lambda_1 ... \lambda_m
+\text{trace}(A) = \lambda_1 + ... + \lambda_m
+m \times m
+m
+T:Mat_{m\times m}(F)_F\to Mat_{m\times m}(F)_F:B\mapsto AB
+\{E_{ij}=(e_{pq})\in Mat_{m\times m}(F):i,j=1,2,...,m\}
+Mat_{m\times m}(F)
+i=p,j=q
+e_{pq}=\begin{cases}1\text{ if $i=p,j=q$ ;}\\0\text{ otherwise.}\end{cases}
+T(E_{ij})=AE_{ij}.
+A=(a_1, a_2,...,a_m)
+T(E_{11})=(a_1,0,0,...,0)=a_{11}E_{11}+a_{21}E_{21}+...+a_{m1}E_{m1}\\T(E_{12})=(0,a_1,0,...,0)=a_{11}E_{12}+a_{21}E_{22}+...+a_{m1}E_{m2}\\...\\T(E_{1m})=(0,0,0,...,a_1)=~...\\T(E_{21})=(a_2,0,0,...,0)=~...\\...\\T(E_{2m})=(0,0,0,...,a_2)=~...\\...\\...\\T(E_{m1})=(a_m,0,0,...,0)=~...\\...\\T(E_{mm})=(0,0,0,...,a_m)=~...\\
+I
+m.
+\DeclareMathOperator{tr}{Tr}
+\tau : M_n(F) \cong F^n \otimes_F F^n
+\tau : S \mapsto \sum_{i,j=1}^n S_{ij} e_i \otimes e_j
+L_A \in L(M_n(F))
+A
+  \tau(L_A S) = \sum_{i,j=1}^n (AS)_{ij} e_i \otimes e_j = \sum_{i,j=1}^n \left(\sum_{k=1}^n A_{ik}S_{kj}\right)e_i \otimes e_j = \sum_{k,j=1}^n S_{kj}\left(\sum_{i=1}^n A_{ik}e_i\right) \otimes e_j\\ = \sum_{k,j=1}^n S_{kj} \left(Ae_k \otimes e_j\right) = (A \otimes I_n) \tau(S), 
+  \tr L_A = \tr(A \otimes I_n) = \tr(A)\tr(I_n) = n\tr(A),\\ \det L_A = \det(A \otimes I_n) = \det(A)^n\det(I_n)^n = \det(A)^n. 
+T:X\mapsto AX
+\operatorname{vec}(X)\mapsto (I\otimes A)\operatorname{vec}(X)
+\operatorname{tr}(T) = \operatorname{tr}(I\otimes A) = m\operatorname{tr}(A)
+\det(T) = \det(I\otimes A) = \det(A)^m

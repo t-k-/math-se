@@ -1,0 +1,33 @@
+f
+(0, \infty)
+p > 1/2
+g(x) = (x^p + x^{−p})f(x)
+g ∈ L^2(0,\infty)
+f ∈ L^1(0,\infty)
+(x^p + x^{−p})^2
+0
+\phi(x) = \frac{1}{x^{-p}+x^p}
+|\phi(x)| \le 1 
+x \in (0,1]
+|\phi(x)| \le x^{-p}
+x >1
+2p>1
+\phi \in L^2
+f(x) = g(x) \phi(x)
+\|f\|_1 \le \|g\|_2 \|\phi \|_2
+0<a<b
+\int_a^b|f(x)|dx \leq \sqrt{\int_a^b\left(f(x)(x^p+x^{-p})\right)^2}dx + \sqrt{\int_a^b\frac{dx}{(x^p+x^{-p})^2}}.
+a\to 0,b\to\infty
+a=0
+\int_1^\infty\frac{dx}{x^{2p}}
+2p>1
+\int_a^b\frac{x^{2p}}{x^{4p}+2x^{2p}+1}dx
+g\in L^2(0,\infty)
+\int_0^\infty(x^p + x^{−p})^{-2}dx<\infty
+f\in L^1(0,\infty)
+(1)
+\int_0^\infty|f(x)|dx=\int_0^\infty|g(x) (x^p + x^{−p})^{-1}|dx\leq  \left(\int_0^\infty|g(x)|^2dx\right)^{\frac{1}{2}}\left( \int_0^\infty(x^p + x^{−p})^{-2}dx\right)^{\frac{1}{2}} \tag{1}.
+p>1/2
+\int_0^\infty(x^p + x^{−p})^{-2}dx= \int_0^\infty\frac{1}{x^{2p} + x^{−2p}+2}dx
+ =\int_0^1\frac{1}{x^{2p} + x^{−2p}+2}dx+\int_0^\infty\frac{1}{x^{2p} + x^{−2p}+2}dx 
+\leq \int_0^1\frac{1}{2}dx+\int_1^\infty\frac{1}{x^{2p}}dx=\frac{1}{2}-\frac{1}{2p-1}\frac{1}{x^{2p-1}}\big|_1^\infty=\frac{1}{2}+\frac{1}{2p-1}<\infty

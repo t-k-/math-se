@@ -1,0 +1,12 @@
+f(x, y) = \left(\frac{x}{y} - a\right)^2 \left(\frac{y}{x} - \frac{1}{a}\right)^2
+\{(x,y): x, y \in \mathbb{R}, x >0, y >0 \}\quad?
+x
+y
+f(x,y)
+f''_{xx}=\frac{2(x^2 - 3 a^2y^2 + 2xay)}{ayx^4}
+ f''_{xx} = \frac{3a^2y^2}{x^4} +\frac{1}{a^2y^2} - \frac{4ay}{x^3} 
+f(x,y)=g(x/y)
+\nabla f = \langle y^{-1} g', -xy^{-2}g'\rangle 
+f
+ D^2f = \begin{pmatrix}   y^{-2} g'' & -xy^{-3}g'' - y^{-2}g' \\  -xy^{-3}g'' - y^{-2}g' & x^2y^{-4} g'' + 2xy^{-3}g' \end{pmatrix} \tag1
+ \det D^2f =  x^2y^{-6} (g'')^2+2xy^{-5}g''g' - (xy^{-3}g'' + y^{-2}g')^2  = -y^{-4} (g')^2 \tag2

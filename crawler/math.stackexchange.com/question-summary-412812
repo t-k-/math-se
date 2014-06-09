@@ -1,0 +1,29 @@
+F
+G
+F=G
+\operatorname{Dom}(F)=\operatorname{Dom}(G)
+\forall X (X\in \operatorname{Dom}(F)\rightarrow F(X)=G(X))
+\Longrightarrow
+1)F=G\Longrightarrow \forall X(X\in F \longleftrightarrow X\in G)
+``="
+2)\Longrightarrow \forall X(\exists A \exists B (X=(A,B)\wedge X\in F) \longleftrightarrow X\in G)
+3)\Longrightarrow \forall (A,B)(\exists A \exists B ((A,B)\in F \longleftrightarrow (A,B)\in G) 
+``="
+4)\Longrightarrow \forall (A,B)((A,B)\in F \longleftrightarrow (A,B)\in G)
+5)\Longrightarrow \forall A\forall B (A\in \operatorname{Dom}(F)\wedge F(A)\in \operatorname{Ran}(F) \longleftrightarrow A\in \operatorname{Dom}(G)\wedge F(A)\in \operatorname{Ran}(G) \wedge F(A)=G(A))
+6)\Longrightarrow \forall A\forall B (A\in \operatorname{Dom}(F)\longleftrightarrow A\in \operatorname{Dom}(G))\wedge \forall A\forall B (A\in \operatorname{Dom}(F) \longrightarrow F(A)=G(A))
+\wedge
+\exists
+\wedge
+\longleftrightarrow
+7)\Longrightarrow \operatorname{Dom}(F)=\operatorname{Dom}(G) \wedge\forall A (A\in \operatorname{Dom}(F) \longrightarrow F(A)=G(A))
+\forall
+``="
+\mathsf{Func}(F)
+F
+\forall F:\mathsf{Func}(F) \leftrightarrow ((\forall X \in F:\exists a,b:X = \langle a,b\rangle )\land (\forall a,b,b': (\langle a,b\rangle \in F\land \langle a,b'\rangle \in F) \to b=b') )
+a \in \mathsf{Dom}(f)
+\exists b: \langle a,b\rangle \in F
+F
+G
+(\forall a, b: \langle a,b\rangle \in F\leftrightarrow \langle a,b\rangle \in G)\to (\mathsf{Dom}(F) = \mathsf{Dom}(G))

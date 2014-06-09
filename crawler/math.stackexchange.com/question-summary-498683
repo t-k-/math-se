@@ -1,0 +1,34 @@
+x
+y
+(y^2 -yx^2)dy + (y^2 + xy^2)dx =0
+(y^2-yx^2)~dy+(y^2+xy^2)~dx=0
+x
+y
+1
+(y^2-yx^2)~dy+(y^2+xy^2)~dx=0
+y^2(x+1)~dx=(yx^2-y^2)~dy
+(x+1)\dfrac{dx}{dy}=\dfrac{x^2}{y}-1
+u=x+1
+x=u-1
+\dfrac{dx}{dy}=\dfrac{du}{dy}
+\therefore u\dfrac{du}{dy}=\dfrac{(u-1)^2}{y}-1
+u\dfrac{du}{dy}=\dfrac{u^2-2u+1}{y}-1
+u\dfrac{du}{dy}=\dfrac{u^2}{y}-\dfrac{2u}{y}+\dfrac{1}{y}-1
+u=\dfrac{1}{v}
+\dfrac{du}{dy}=-\dfrac{1}{v^2}\dfrac{dv}{dy}
+\therefore-\dfrac{1}{v^3}\dfrac{dv}{dy}=\dfrac{1}{yv^2}-\dfrac{2}{yv}+\dfrac{1}{y}-1
+\dfrac{dv}{dy}=\dfrac{(y-1)v^3}{y}+\dfrac{2v^2}{y}-\dfrac{v}{y}
+2
+(y^2-yx^2)~dy+(y^2+xy^2)~dx=0
+(y^2-yx^2)~dy=-(x+1)y^2~dx
+(y-x^2)\dfrac{dy}{dx}=-(x+1)y
+u=y-x^2
+y=u+x^2
+\dfrac{dy}{dx}=\dfrac{du}{dx}+2x
+\therefore u\left(\dfrac{du}{dx}+2x\right)=-(x+1)(u+x^2)
+u\dfrac{du}{dx}+2xu=-(x+1)u-x^3-x^2
+u\dfrac{du}{dx}=-(3x+1)u-x^3-x^2
+u=\dfrac{1}{v}
+\dfrac{du}{dx}=-\dfrac{1}{v^2}\dfrac{dv}{dx}
+\therefore-\dfrac{1}{v^3}\dfrac{dv}{dx}=-\dfrac{3x+1}{v}-x^3-x^2
+\dfrac{dv}{dx}=(x^3+x^2)v^3+(3x+1)v^2

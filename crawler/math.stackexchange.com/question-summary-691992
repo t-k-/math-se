@@ -1,0 +1,39 @@
+n\times 1
+\mathbf v
+n\times n
+\mathbf M
+x
+\mathbf v
+\mathbf M
+x
+\Large \frac{\partial \mathbf{v^TMv}}{\partial x}
+\Large \frac{\partial \mathbf{v^TMv}}{\partial x} = \Large \frac{\partial \mathbf{v^TMv}}{\partial \mathbf{v}} \frac{\partial \mathbf{v}}{\partial x} + \Large \frac{\partial \mathbf{v^TMv}}{\partial \mathbf{M}} \frac{\partial \mathbf{M}}{\partial x}
+{\Large \frac{\partial \mathbf{v^TMv}}{\partial \mathbf{v}}} = (\mathbf{M}+\mathbf{M}^T)\mathbf{v}
+n\times1
+\Large \frac{\partial \mathbf{v}}{\partial x}
+n\times1
+n\times1
+n\times1
+\mathbf{v}
+x
+\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v} / \partial \mathbf{v}
+\Bbb{R}^{n} \to \Bbb{R}
+ \frac{\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v}}{\partial \mathbf{v}} = \left[ \mathbf{u} \mapsto \mathbf{v}^{T} (\mathbf{M} + \mathbf{M}^{T}) \mathbf{u} \right] 
+\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v} / \partial \mathbf{v}
+(1 \times n)
+ \frac{\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v}}{\partial \mathbf{v}} \frac{\partial \mathbf{v}}{\partial x} = \mathbf{v}^{T} (\mathbf{M} + \mathbf{M}^{T}) \frac{\partial \mathbf{v}}{\partial x}. 
+\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v} / \partial \mathbf{M}
+\mathrm{Mat}_{n\times n}(\Bbb{R}) \to \Bbb{R}
+ \frac{\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v}}{\partial \mathbf{M}} = \left[ \mathbf{N} \mapsto \mathbf{v}^{T} \mathbf{N} \mathbf{v} \right]. 
+ \frac{\partial \mathbf{v}^{T} \mathbf{M} \mathbf{v}}{\partial \mathbf{M}} \frac{\partial \mathbf{M}}{\partial x} = \mathbf{v}^{T} \frac{\partial \mathbf{M}}{\partial x} \mathbf{v}. 
+ \frac{d (\mathbf v^T\mathbf M\mathbf v)}{d x}=\frac{d \mathbf v^T}{d x}\,\mathbf M\mathbf v+\mathbf v^T\,\frac{d (\mathbf M\mathbf v)}{d x}=\frac{d \mathbf v^T}{d x}\,\mathbf M\mathbf v+\mathbf v^T\,\left(\frac{d (\mathbf M)}{d x}\mathbf v+\mathbf M\frac{d\mathbf v}{dx}\right)\\ =\frac{d \mathbf v^T}{d x}\,\mathbf M\mathbf v+\mathbf v^T\,\frac{d (\mathbf M)}{d x}\mathbf v+\mathbf v^T\,\mathbf M\frac{d\mathbf v}{dx} 
+\dfrac{∂(v^TMv)}{∂x}=\dfrac{∂(v^TMv)}{∂v}\dfrac{∂v}{∂x}+\dfrac{∂(v^TMv)}{∂M}\dfrac{∂M}{∂x}
+\dfrac{∂(v^TMv)}{∂v}\dfrac{∂v}{∂x}:x\rightarrow  \dfrac{∂v}{∂x}=h\rightarrow h^TMv+v^TMh=v^T(M+M^T)h
+f:v\rightarrow v^TMv
+Df_v: h\rightarrow v^T(M+M^T)h
+(M+M^T)v
+v^T(M+M^t)
+\nabla_v(f)
+(\nabla_v(f),h)=Df_v(h)
+(k,h)=k^Th
+\nabla_v(f)=(M+M^T)v

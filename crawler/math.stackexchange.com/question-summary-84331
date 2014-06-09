@@ -1,0 +1,27 @@
+f:=\Vert\cdot\Vert_\mathrm{eucl}
+v\in \mathbb R^n-\{0\}
+Dh(v)=2v
+Dg(x)={1\over 2}x^{-{1\over2}}\implies Dg[h(v)]={1\over 2}\Vert v\Vert_\mathrm{eucl}^{-{1\over2}}
+Df=Dg[h(v)]\circ Dh(v)
+g(x):= \sqrt x;\qquad h(v):=\Vert v\Vert_\mathrm{eucl}^2
+Df(v)={1\over 2}\Vert2v\Vert^{-{1\over 2}}
+\|\cdot\|=g\circ h(\cdot)
+g(\cdot)=\sqrt{\cdot}
+h(\cdot)=\|\cdot\|^2
+g'(x)=\frac{1}{2}x^{-1/2}
+h
+\nabla h\,(\vec{v})=2\vec{v}
+\nabla(g\circ h)=g'(h(\vec{v}))\cdot\nabla h(\vec{v})
+=\frac{1}{2}(\|\vec{v}\|^2)^{-1/2}\cdot2\vec{v}=\frac{\vec{v}}{\|\vec{v}\|}. 
+\textbf{x}
+||\textbf{x}||_2 = \sqrt{(x_1^2 + x_2^2 + ... + x_n^2)}
+\textbf{x} = [x_1,x_2,...x_n]^\top
+\textbf{x}
+f : R^n \rightarrow R
+\nabla
+i^{th}
+\frac{\partial}{\partial x_i}||\textbf{x}|| = \frac{\partial}{\partial x_i}\sqrt{(x_1^2 + x_2^2 + ... + x_n^2)} = \frac{1}{2} \frac{2x_i}{(x_1^2 + x_2^2 + ... + x_n^2)^{1/2}}= \frac{x_i}{\sqrt{(x_1^2 + x_2^2 + ... + x_n^2)}}
+\frac{d}{dx}f(x)^n = nf(x)^{n-1}\frac{d}{dx}f(x)
+(x_i)
+\nabla_\textbf{x}||\textbf{x}||_2 = [\frac{\partial}{\partial x_1}||\textbf{x}||_2, \frac{\partial}{\partial x_2}||\textbf{x}||_2, ... \frac{\partial}{\partial x_n}||\textbf{x}||_2]^\top
+\nabla_\textbf{x}||\textbf{x}||_2 = \frac{\textbf{x}}{||\textbf{x}||_2}

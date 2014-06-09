@@ -1,0 +1,116 @@
+A_-:=\{n\in \mathbb{N}: a_n< 0\}
+A_+:=\{n\in \mathbb{N}: a_n\ge 0\}
+\sum _{n\in A_-}a_n
+\sum _{n\in A_+}a_n
+f_-: \mathbb{N}\rightarrow A_-
+f_+: \mathbb{N}\rightarrow A_+
+\sum_{n=0}^\infty a_{f_-(n)}
+\sum_{n=0}^\infty a_{f_+(n)}
+n_0,n_1,..,n_j
+n_i
+i<j
+n_j
+\sum_{0\le i <j}a_{n_i}< L
+n_j:= \text{min} \{n\in A_+: \forall i<j.\ n\not=n_i\}
+\sum_{0\le i <j}a_{n_i}\ge L
+n_j:= \text{min} \{n\in A_-:\forall i<j.\ n\not=n_i\}
+i \mapsto n_i
+k\not=j
+k<j
+\sum_{0\le i<j}a_{n_i}<L
+\sum_{0\le i<j}a_{n_i}\ge L
+n_j:= \text{min} \{n\in A_+: \forall i<j.\ n\not=n_i\}
+n_j \not= n_i
+i<j
+n_j\not=n_k
+n_j\not=n_k
+k
+j>k
+\sum_{i=0}^j a_{n_i}<L
+j>k
+n_j\in A_+
+j>k
+\sum_{i=0}^k a_{n_i}+\sum_{i=k+1}^j a_{n_i}<L
+\sum_{i=k+1}^j a_{n_i}<L-\sum_{i=0}^k a_{n_i}
+j\ge k+1
+a_{n_j}\ge 0
+n_{k+1}\in A_+
+\ell \in \mathbb{N}
+f_+(\ell)=n_{k+1}
+m\ge \ell
+j> k
+f(m)=n_j
+m= \ell
+m\ge \ell
+f_+(m+1)>f_+(m)=n_j
+\sum_{i=k+1}^j a_{n_i}<L-\sum_{i=0}^k a_{n_i}
+\sum_{i=0}^j a_{n_i}<L
+n_{j+1}= \text{min} \{n\in A_+:\forall i<j.\ n\not=n_i\}
+f_+(m+1)\not= n_j
+f_+(m+1)\not= n_i
+i< j+1
+f_+(m+1)\in \{n\in A_+: \forall i<j.\ n\not=n_i\}
+f_+(m+1)=n_{j+1}
+M\ge k
+n_M*= f_+(M)
+M
+i \mapsto n_i
+i\in \mathbb{N} = A_+ \sqcup A_-
+i\not= n_j
+j
+i
+\{n\in A_+: \forall i<j.\ n\not=n_i\}
+\{n\in A_-: \forall i<j.\ n\not=n_i\}
+j
+i\in \{n\in A_+: \forall i<j.\ n\not=n_i\}
+k\in \mathbb{N}
+f_+(k)=i > f(k-1)
+i\not= n_j
+j
+I
+k+1
+a_{n_j}\rightarrow 0
+a_n\rightarrow 0
+\varepsilon>0
+N(\varepsilon)\ge 0
+|a_n|\le \varepsilon
+n\ge N(\varepsilon)
+\{i \in \mathbb{N}: n_i\le N(\varepsilon)\, \}
+K
+j> K
+n_j> N(\varepsilon)
+j\ge K
+|a_{n_j}| \le \varepsilon
+ \text{Lim}_{j\rightarrow \infty} \sum_{0\le i <j}a_{n_i} =L
+S_N= \sum_{i=0} ^N a_{n_i}
+u_i, \ell_i
+i<j
+u_j, \ell_j
+u_j= \text{min}\{n\in \mathbb{N}: S_n\ge L, S_{n+1}< L, \text{ and } u_i\not= n \text{ for all } i<j\,\}
+\ell_j= \text{min}\{n\in \mathbb{N}: S_n< L, S_{n+1}\ge L, \text{ and } \ell_i\not= n \text{ for all } i<j\,\}
+S_{\ell_i}<L
+S_{\ell_i}+a_{n_{\ell_i+1}}\ge L
+S_{u_i}\ge L
+S_{u_i}+a_{n_{u_i+1}}< L
+i
+L-a_{n_{\ell_i+1}}\le S_{\ell_i}<L\le S_{u_i}< L-a_{n_{u_i+1}}
+a_{n_{\ell_i+1}},a_{n_{u_i+1}} \rightarrow 0
+a_{n_i}
+S_{\ell_i},S_{u_i}\rightarrow L
+u_i < \ell_i
+u_i \le k \le \ell_i
+S_{\ell_i}\le S_k \le S_{u_i}
+L
+ \ell_i< u_i
+ \ell_i\le k\le u_i
+S_{\ell_i}\le S_k \le S_{u_i}
+L
+L
+a_{n_j}
+L
+a_{n_j}
+a_{n_j}
+a_{n_j}
+L
+a_{n_j}\to 0
+L

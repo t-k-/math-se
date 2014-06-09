@@ -1,0 +1,32 @@
+A
+V
+A
+ Q_A(t) = \mathrm{det}\ (A - tI) =  \begin{vmatrix} a^1_1 - t & a^1_2      & \dots & a^1_n \\ a^2_1     & a^2_2 - t  & \dots & a^2_n \\ \vdots    & \vdots     & \ddots & \vdots \\ a^n_1     & a^2_2      & \dots & a^n_n - t \end{vmatrix} 
+n-2
+ Q_A(t) = (a^1_1 -t)\cdot \dots \cdot (a^n_n - t) + \quad \text{sums of products with at most $n-2$ terms in the diagonal} \quad \ . 
+ Q_A(t) = (-1)^n t^n +(-1)^{n-1} (a^1_1 + \dots + a^n_n) t^{n-1} + \quad ( \text{terms of degree}\ \leq n-2 ) \ . 
+A
+t^{n-1}
+A
+Q_A(t)
+Q_A(t)
+B
+A
+B
+B= S^{-1}A S
+S
+ Q_B(t) = \mathrm{det}\ (S^{-1}A S - tI ) = \mathrm{det}\ (S^{-1}A S - S^{-1}tIS ) = \mathrm{det}\ (S^{-1}(A  - tI)S ) 
+ Q_B(t) = \mathrm{det}\ (S^{-1}) \ \mathrm{det}\ (A  - tI )\ \mathrm{det}\ (S) = \mathrm{det}\ (A  - tI ) = Q_A(t) \ . 
+T
+ATA^{-1}
+A
+\operatorname{tr}(AB)=\operatorname{tr}(BA)
+\operatorname{tr}(ATA^{-1}) = \operatorname{tr}(A^{-1}AT) = \operatorname{tr}T
+n \times n
+A, B
+ \operatorname{tr}(AB) = \operatorname{tr}(BA). 
+\operatorname{End}(V) \approx V \otimes V^\vee
+\operatorname{End}(V)
+V \otimes V^\vee
+V
+V^\vee

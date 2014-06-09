@@ -1,0 +1,14 @@
+\sin x\cos y+\cos x\sin y=\sin(x+y)
+\sin x=\sum_{n=0}^{\infty }\frac{(-1)^n\cdot x^{2n+1}}{(2n+1)!}
+\cos x=\sum_{n=0}^{\infty }\frac{(-1)^n\cdot x^{2n}}{2n!}
+ \begin{align} & \phantom{{}={}}\sin x\cos y+\cos x\sin y \\[10pt] & =\sum_{n=0}^{\infty }\frac{(-1)^n\cdot x^{2n+1}}{(2n+1)!}\sum_{n=0}^{\infty }\frac{(-1)^n\cdot y^{2n}}{2n!}+\sum_{n=0}^{\infty }\frac{(-1)^n\cdot x^{2n}}{2n!}\sum_{n=0}^{\infty }\frac{(-1)^n\cdot y^{2n+1}}{(2n+1)!} \\[10pt] & =\sum_{n}^{\infty }\sum_{k}^{n}\frac{(-1)^kx^{2k+1}}{(2k+1)!}\frac{(-1)^{n-k}y^{2(n-k)}}{2(n-k)!}+\sum_{n}^{\infty }\sum_{k}^{n}\frac{(-1)^kx^{2k}}{2k!}\frac{(-1)^{n-k}y^{2(n-k)+1}}{(2(n-k)+1)!} \\[10pt] & =\text{ ?} \end{align} 
+ \begin{align} \sin(x+y) & = \sum_{n=0}^\infty (-1)^n\frac{(x+y)^{2n+1}}{(2n+1)!} \\[10pt] & = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!} \sum_{k=0}^n \binom n k x^k y^{n-k} \\[10pt] & = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!} \left(n!\sum_{k=0}^n \frac{x^k}{k!}\cdot \frac{y^{n-k}}{(n-k)!}\right) \end{align} 
+ \sum_{n=0}^\infty \sum_{k=0}^n a_k b_{n-k} = \sum_{\ell=0}^\infty \sum_{m=0} ^\infty (a_\ell b_m) = \sum_{\ell=0}^\infty \left( a_\ell \sum_{m=0}^\infty b_m\right) 
+a_\ell
+m
+0
+\infty
+\ell
+0
+\infty
+ \left(\sum_{\ell=0}^\infty a_\ell\right)\left(\sum_{m=0}^\infty b_m\right) 

@@ -1,0 +1,41 @@
+V
+\mathbb{R}^3
+A
+V
+\mathbf{n}
+\mathbf{n}
+F(\mathbf{x}, t)
+\mathbf{u} \in \mathbb{R}^3
+\mathbb{R}^3
+V \to 0
+ \frac{DF}{Dt}= \frac{\partial F}{\partial t} + \frac{\partial F}{\partial x_i} u_i 
+D/Dt
+ \frac{D}{Dt} \int_V F \ dV= \int_V \frac{\partial F}{\partial t}\ dV + \int_A  (\mathbf{u} \cdot \mathbf{n})\ F \ dA, 
+A
+V
+ \int_A  (\mathbf{u} \cdot \mathbf{n})\ F \ dA = \int_A (F \mathbf{u}) \cdot \mathbf{n} \ dA  = \int_V \nabla \cdot (F\mathbf{u}) \ dV. 
+ \int_V \nabla \cdot (F\mathbf{u}) \ dV =  \int_V \nabla F \cdot \mathbf{u} \ dV + \int_V (\nabla \cdot \mathbf{u})F \ dV. 
+V
+\mathbf{x}
+ \lim_{V \to 0} \ \int_V F(\mathbf{x}, t) \ dV = F(\mathbf{x}, t) 
+ \frac{DF}{Dt} = \frac{\partial F}{\partial t} + \frac{\partial F}{\partial x_i} u_i +  \lim_{V \to 0} \int_V (\nabla \cdot \mathbf{u})F \ dV. 
+ \lim_{V \to 0} \int_V F(\mathbf{x}) \,dV = F(\mathbf{x}) 
+V \to 0
+F
+F
+V
+F
+ \lim_{V \to 0}\frac{1}{V} \int_V F(\mathbf{x}) \,dV = F(\mathbf{x}). 
+ \frac{d}{dt} \int_{V(t)} F \,dV = \int_{V(t)} \frac{\partial F}{\partial t}dV +  \int_{V(t)} \nabla F \cdot \mathbf{u} \,dV + \int_{V(t)} F \nabla \cdot \mathbf{u} \,dV, 
+V \to 0
+\frac{dF}{dt} = \frac{DF}{Dt}
+ \frac{d}{dt} \int_{V(t)} F \,dV =  \frac{d}{dt} F \int_{V(t)} \,dV = V\frac{dF}{dt} + F \frac{dV}{dt} 
+ \frac{dF}{dt} + F \lim_{V \to 0} \frac{1}{V}\frac{dV}{dt} = \frac{\partial F}{\partial t} + u_i \frac{\partial F}{\partial t} + F\frac{\partial u_i}{\partial x_i} 
+ \lim_{V \to 0} \frac{1}{V}\frac{dV}{dt} = \frac{\partial u_i}{\partial x_i}, 
+V\to 0
+V
+(\nabla\cdot{\bf u})F
+{\bf u}
+F=1
+{\bf u}={\bf x}
+V

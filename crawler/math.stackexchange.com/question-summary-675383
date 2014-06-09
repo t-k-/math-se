@@ -1,0 +1,60 @@
+\lim_{a\downarrow 0}\lim_{b\uparrow\infty}
+s = (1+k)x
+\int_a^b x^\alpha e^{-(1+k)x}\,dx
+\frac{1}{(1+k)^{\alpha+1}} \int_{(1+k)a}^{(1+k)b} s^\alpha e^{-s}\,ds,
+(0,\infty)
+x = \frac{t}{1-t}
+\begin{align} \int_0^\infty \frac{x^\alpha}{e^x-1}\,dx &= \int_0^1 \frac{t^\alpha}{(1-t)^{\alpha+2} (e^{t/(1-t)}-1)}\,dt\\ &= \int_0^1 \frac{t^\alpha}{(1-t)^{\alpha+2}}\sum_{k=1}^\infty \exp\left(-\frac{kt}{1-t}\right)\,dt. \end{align}
+f(t) = \frac{t^\alpha}{(1-t)^{\alpha+2}(e^{t/(1-t)}-1)}
+[0,1]
+f(0) = f(1) = 0
+f_N(t) = \frac{t^\alpha}{(1-t)^{\alpha+2}}\sum_{k=1}^N  \exp\left(-\frac{kt}{1-t}\right),
+s = kt/(1-t)
+\int_0^\infty \frac{x^\alpha}{e^x-1}\,dx = \sum_{k=1}^\infty \frac{1}{k^{\alpha+1}}\int_0^\infty s^\alpha e^{-s}\,ds = \Gamma(\alpha+1)\zeta(\alpha+1).
+f \colon (0,\infty) \to [0,\infty)
+\limsup\limits_{x\searrow 0} f(x) < \infty
+\sup_{0 < a < b < \infty} \int_a^b f(x)\,dx < \infty.
+(f_n)
+(0,\infty) \to [0,\infty)
+f_n(x) \leqslant f_{n+1}(x)
+f_n(x) \to f(x)
+x\in (0,\infty)
+\int_0^\infty f(x)\,dx;\qquad \int_0^\infty f_n(x)\,dx
+\int_0^\infty f(x)\,dx = \lim_{n\to\infty} \int_0^\infty f_n(x)\,dx.
+\varepsilon > 0
+0 < a_\varepsilon < b_\varepsilon < \infty
+\int_0^{a_\varepsilon} f(x)\,dx < \frac{\varepsilon}{3},\qquad \int_{b_\varepsilon}^\infty f(x)\,dx < \frac{\varepsilon}{3},
+f_n
+f
+[a_\varepsilon,b_\varepsilon]
+n
+\int_{a_\varepsilon}^{b_\varepsilon} \lvert f(x)- f_n(x)\rvert\,dx < \frac{\varepsilon}{3}.
+\int_0^\infty x^\alpha \sum_{k=1}^\infty e^{-kx}\,dx = \sum_{k=1}^\infty \int_0^\infty x^\alpha e^{-kx}\,dx
+\mathbb{N}
+\sigma
+(a_n^{(k)})_{n\in\mathbb{N}}
+k\in \mathbb{N}
+n,k
+a_n^{(k)} \leqslant a_n^{(k+1)}
+a_n = \lim\limits_{k\to\infty} a_n^{(k)}
+\sum_{n=0}^\infty a_n = \lim_{k\to\infty} \sum_{n=0}^\infty a_n^{(k)}.
+a_n^{(k)}\leqslant a_n
+n,k
+S_k := \sum_{n=0}^\infty a_n^{(k)} \leqslant \sum_{n=0}^\infty a_n =: S
+k
+S_k \leqslant S_{k+1}
+\lim\limits_{k\to\infty} S_k \leqslant S
+K < S
+N\in\mathbb{N}
+\sum_{n=0}^N a_n > K,
+k\in\mathbb{N}
+a_n^{(k)} > a_n - \frac{1}{2(N+1)}\left(\sum_{n=0}^N a_n - K\right)
+0 \leqslant n \leqslant N
+S_k \geqslant \sum_{n=0}^N a_n^{(k)} > \sum_{n=0}^N\left(a_n - \frac{1}{2(N+1)}\left(\sum_{n=0}^N a_n - K\right)\right) = \frac{1}{2} \left(K + \sum_{n=0}^N a_n\right) > K,
+\lim\limits_{k\to\infty} S_k > K
+K < S
+\lim\limits_{k\to\infty} S_k = S
+a_m \searrow 0
+b_m \nearrow\infty
+S_m := \int_{a_m}^{b_m} \frac{x^\alpha}{\exp(x) -1} \, dx=\sum_{k=0}^\infty\int_{a_m}^{b_m} x^\alpha \exp(-(1+k)x) \, dx=\sum_{k=0}^\infty\frac{1}{(1+k)^\alpha}\int_{(1+k)a_m}^{(1+k)b_m} s^\alpha\exp(-s) \, ds
+\lim_{m\to\infty} \frac{1}{(1+k)^\alpha}\int_{(1+k)a_m}^{(1+k)b_m} s^\alpha\exp(-s) \, ds = \frac{\Gamma(\alpha+1)}{(1+k)^{\alpha+1}}

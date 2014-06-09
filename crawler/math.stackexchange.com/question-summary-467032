@@ -1,0 +1,11 @@
+A
+a_{ii} = 1
+\forall i
+tr(Qe^{t\Lambda}Q^{-1})= tr(e^{t\Lambda}) = \sum\limits_{i=0}^n e^{t\lambda_i}
+\Rightarrow
+\int_0^1 \sum\limits_{i=0}^n e^{t\lambda_i} dt= \sum\limits_{i=0}^n\int_0^1 e^{t\lambda_i} dt= \sum\limits_{i=0}^n \frac{e^{\lambda_i} - 1}{\lambda_i} 
+\operatorname{tr}(e^{tA}) = e^{\operatorname{tr}(tA)}
+\exp(tA) = \sum_{n\geq 0} A^n \frac{t^n}{n!}
+A
+\exp
+ \operatorname{tr} \int_0^1 e^{tA}\,\mathrm{d}t = \operatorname{tr} \int_0^1  \sum_{n\geq 0} A^n\, \frac{t^n}{n!}\,\mathrm{d}t = \operatorname{tr}\sum_{n\geq 0} A^n \int_0^1 \frac{t^n}{n!} \,\mathrm d t = \operatorname{tr}\sum_{n\geq 0} \frac{A^n}{(n+1)!} = \operatorname{tr}\left(\frac{e^A-1}{A}\right).

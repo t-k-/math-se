@@ -1,0 +1,42 @@
+A
+B
+A∩B = A-(A-B)
+x
+A-(A-B)
+x
+A
+A-B
+x
+A∩B
+x
+A
+x
+B
+x
+A
+B
+x
+A-B
+x
+A∩B
+x
+A∩B
+x
+A
+B
+x
+A-B
+x
+A
+B
+x
+A
+A-B
+x
+A-(A-B)
+A - (A - B) = A \cap (A - B)^c
+= A \cap (A \cap B^c)^c
+= A \cap (A^c \cup B)
+= (A \cap A^c) \cup (A \cap B)
+= A \cap B
+\begin{eqnarray} &x\in A-(A-B)\\\iff &x\in A\land x\notin(A-B)\\\iff& x\in A\land\neg(x\in A\land x\notin B)\\\iff& x\in A\land(x\notin A\lor x\in B)\\ \iff& (x\in A\land x\notin A)\lor (x\in A \land x\in B)\\ \iff& \bot\lor (x\in A \land x\in B)\\ \iff& x\in A \land x\in B\\ \iff& x\in A\cap B\\ \end{eqnarray}

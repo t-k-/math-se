@@ -1,0 +1,4 @@
+\sum_{i=0}^{n} \frac{i n^i}{i!} = \sum_{i=1}^{n} \frac{n^i}{(i-1)!} = \sum_{i=0}^{n-1} \frac{ n^{i+1}}{i!} = n\sum_{i=0}^{n-1} \frac{ n^{i}}{i!} 
+e^{-n}\sum_{k=0}^n\frac{n^k}{k!} =\frac12+O(n^{-1/2}) 
+\sum_{i=0}^{n} \frac{i n^i}{i!} = n(\sum_{i=0}^{n} \frac{ n^{i}}{i!}-\frac{ n^{n}}{n!}), 
+\begin{align} e^{-n}\sum_{i=0}^{n} \frac{i n^i}{i!} &= e^{-n}n(\sum_{i=0}^{n} \frac{ n^{i}}{i!}-\frac{ n^{n}}{n!})\\ &=n(1/2 +O(n^{-1/2})) - n e^{-n}\frac{ n^{n}}{n!}\\ &= n/2 + O(n^{1/2}) - n \frac{(n/e)^n}{\sqrt{\pi}(1+O(1/n)) n^{n+1/2}/e^n}\\ &= n/2 + O(n^{1/2}) - n (n/e)^n/(\sqrt{\pi}(1+O(1/n)) n^{n+1/2}/e^n)\\ &= n/2 + O(n^{1/2}) - n^{1/2}(1+O(1/n))/\sqrt{\pi}\\ &= n/2 + O(n^{1/2}) \end{align} 

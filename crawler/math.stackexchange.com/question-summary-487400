@@ -1,0 +1,9 @@
+s_{ij}\in[0,\infty]
+i,j\in\mathbb{N}
+(t_n)
+t_1=s_{11}, t_2=s_{12}+s_{21},t_3=s_{13}+s_{22}+s_{31},\ldots
+\sum_{n=1}^{\infty}{t_n}=\sum_{i=1}^{\infty}(\sum_{j=1}^{\infty}{s_{ij}})
+\sum_{n=1}^{\infty}{x_n}\in[0,\infty]
+\begin{array}{cc} \color{blue}{s_{11}}&\color{red}{s_{12}}&\color{green}{s_{13}}&\ldots&s_{1,n}&\ldots&s_{1,2n-3}&s_{1,2n-2}&\color{brown}{s_{1,2n-1}}\\ \color{red}{s_{21}}&\color{green}{s_{22}}&s_{23}&\ldots&s_{2,n}&\ldots&s_{2,2n-3}&\color{brown}{s_{2,2n-2}}&s_{2,2n-1}\\ \color{green}{s_{31}}&s_{32}&s_{33}&\ldots&s_{3,n}&\ldots&\color{brown}{s_{3,2n-3}}&s_{3,2n-2}&s_{3,2n-1}\\ \vdots&\vdots&\vdots&\ddots&\vdots&\ddots&\vdots&\vdots&\vdots\\ s_{n,1}&s_{n,2}&s_{n,3}&\ldots&\color{brown}{s_{n,n}}&\ldots&s_{n,2n-3}&s_{n,2n-2}&s_{n,2n-1}\\ \vdots&\vdots&\vdots&\ddots&\vdots&\ddots&\vdots&\vdots&\vdots\\ s_{2n-3,1}&s_{2n-3,2}&\color{brown}{s_{2n-3,3}}&\ldots&s_{2n-3,n}&\ldots&s_{2n-3,2n-3}&s_{2n-3,2n-2}&s_{2n-3,2n-1}\\ s_{2n-2,1}&\color{brown}{s_{2n-2,2}}&s_{2n-1,3}&\ldots&s_{2n-2,n}&\ldots&s_{2n-2,2n-3}&s_{2n-2,2n-2}&s_{2n-2,2n-1}\\ \color{brown}{s_{2n-1,1}}&s_{2n-1,2}&s_{2n-1,3}&\ldots&s_{2n-1,n}&\ldots&s_{2n-1,2n-3}&s_{2n-1,2n-2}&s_{2n-1,2n-1} \end{array}
+\begin{align*} &\color{blue}{t_1=s_{11}}\\ &\color{red}{t_2=s_{12}+s_{21}}\\ &\color{green}{t_3=s_{13}+s_{22}+s_{31}}\\ &\quad\,\,\vdots\\ &\color{brown}{t_n=s_{1n}+s_{2,n-1}+\ldots+s_{n-1,2}+s_{n1}} \end{align*}
+\sum_{i=1}^n\sum_{j=1}^ns_{ij}\;,\quad\sum_{i=1}^nt_i\;,\quad\text{and}\quad\sum_{i=1}^{2n-1}\sum_{j=1}^{2n-1}s_{ij}\;.

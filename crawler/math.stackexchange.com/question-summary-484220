@@ -1,0 +1,9 @@
+a_n
+b_n
+s_k = \sum_{n=1}^ka_n
+s_0= 0
+\sum_{n=M}^N a_n b_n= \sum_{k=M}^{N-1}s_k(b_k-b_{k+1})+s_Nb_N-s_{M-1}b_M.
+\sum_{n=M}^N a_n b_n= a_Mb_M+\dots+a_Nb_N
++
+a_n = s_n - s_{n-1}
+\begin{align} \sum_{n=M}^N a_n b_n &= \sum_{n=M}^N (s_n - s_{n-1})b_n\\ &= \sum_{n=M}^N s_n b_n - \sum_{k=M-1}^{N-1} s_kb_{k+1}\\ &= s_Nb_N + \sum_{n=M}^{N-1} s_nb_n - \sum_{k=M}^{N-1} s_kb_{k+1} - s_{M-1}b_M\\ &= s_Nb_N + \sum_{k=M}^{N-1}s_k(b_k - b_{k+1}) - s_{M-1}b_M. \end{align}

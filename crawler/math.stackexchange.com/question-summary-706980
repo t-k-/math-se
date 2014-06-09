@@ -1,0 +1,44 @@
+f(z)
+z_0
+z_0 = x_0 + iy_0
+g(z) = \overline{f(\overline{z})}
+\overline z_0
+\lim_{z \to z_0} { f(\bar{z})-f(\bar{z_0}) \over \bar{z} - \bar{z_0} } = f'(\bar{z_0})
+{ g(z) -g(z_0) \over z - z_0} = \overline{\left( { f(\bar{z})-f(\bar{z_0}) \over \bar{z} - \bar{z_0} } \right) }
+g'(z_0) = \lim_{z \to z_0}  { g(z) -g(z_0) \over z - z_0} = \overline{ \left( \lim_{z \to z_0}{ f(\bar{z})-f(\bar{z_0}) \over \bar{z} - \bar{z_0} } \right) }  = \overline{f'(\bar{z}_0)}
+f(z)=f(x+iy)=u(x,y)+iv(x,y)
+f(\bar{z})=f(x-iy)=u(x,-y)+iv(x,-y)\Rightarrow \overline{f(\bar{z})}=u(x,-y)-iv(x,-y)
+u_{1}(x,y)=u(x,-y)
+v_1(x,y)=-v(x,-y)
+\frac{\partial}{\partial x}u_1=\frac{\partial }{\partial x}u(x,-y)=\frac{\partial }{\partial x}u(x,-y)
+\frac{\partial}{\partial y}v_1=-\frac{\partial }{\partial y}v(x,-y)
+f
+\frac{\partial }{\partial x}u(x,-y)=\frac{\partial }{\partial y}v(x,-y)=-\frac{\partial}{\partial y}v(x,-y)
+\frac{\partial u_1}{\partial x}=\frac{\partial v_1}{\partial y}
+\frac{\partial u_1}{\partial y}=-\frac{\partial v_1}{\partial x}
+f(z)
+\overline{f(\overline{z})}
+f(z)=u(x,y)+iv(x,y)
+u
+v
+\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
+f
+z_0
+g
+\bar z_0=x_0-iy_0
+f
+z_0
+g
+z_0
+g(z)=\overline{f(\bar z)}=u(x,-y)-iv(x,-y),
+\frac{\partial u}{\partial x},\;\;\frac{\partial u}{\partial(-y)},\;\;\frac{\partial(-v)}{\partial x},\;\;\text{and}\;\;\frac{\partial(-v)}{\partial(-y)}.
+\begin{aligned} \frac{\partial u}{\partial x}(x_0),& &&\frac{\partial u}{\partial(-y)}(-y_0)=-\frac{\partial u}{\partial y}(y_0),\\[1em] \frac{\partial(-v)}{\partial x}(x_0)=-\frac{\partial v}{\partial x}(x_0),& &&\frac{\partial(-v)}{\partial(-y)}(-y_0)=\frac{\partial v}{\partial y}(y_0). \end{aligned}
+f
+z_0
+g
+\bar z_0
+a\in{\mathbb C}
+f(z_0+\zeta)=f(z_0)+ a\zeta +o(\zeta)\qquad(\zeta\to0)\ .
+g
+g'(\bar z_0)=\bar a
+g(\bar z_0+\zeta)=\overline{f(z_0+\bar\zeta)}= \overline{f(z_0)}+\overline{a\bar\zeta}+\overline{o(\bar\zeta)}=\overline{f(z_0)}+\bar a\>\zeta+o(\zeta)\qquad(\zeta\to0)\ .

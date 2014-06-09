@@ -1,0 +1,14 @@
+\lim_{x\to 0} ({1 - \sin x})^{\cot2x}
+\lim_{x\to 0} ({1 - \sin x})^{\cot2x} = \lim_{x\to 0} e^{(1 - \sin x)\ln{\cot2x}} = \lim_{x\to 0} \frac{\ln{\cot{2x}}}{\frac{1}{1 - \sin x}}
+y= ({1 - \sin x})^{\cot 2x}
+\ln y=\cot 2x\ln(1-\sin x)=-\frac12 \frac{\cos 2x}{\cos x} \frac{\ln(1-\sin x)}{-\sin x} 
+\lim_{x\to 0}\ln y=-\frac12 \lim_{x\to 0}\frac{\cos 2x}{\cos x} \lim_{x\to 0}\frac{\ln(1-\sin x)}{-\sin x}
+\lim_{x\to 0}\frac{\ln(1-\sin x)}{-\sin x}=\lim_{z\to 0}\frac{\ln(1+z)}z=1
+z=-\sin x
+z\to 0
+x\to 0
+\lim_{x\to 0}\ln y=-\frac12
+\lim_{x\to 0} y=e^{-\frac12}
+\lim_{x\to 0} ({1 - \sin x})^{\cot2x}=\lim_{x\to 0} ({1 - \sin x})^{{1\over \sin x}\cot2x\sin x}
+=\exp(-\lim_{x\to 0}\cot2x\sin x)=\exp\left(-\lim_{x\to 0}\frac{\cos2x}{\sin2x}\sin x\right)=
+=\exp\left(-\lim_{x\to 0}\frac{\cos^2x-\sin^2}{2\sin x\cos x}\sin x\right)=\exp\left(-\lim_{x\to 0}\frac{\cos^2x-\sin^2x}{2\cos x}\right)=e^{-1/2}

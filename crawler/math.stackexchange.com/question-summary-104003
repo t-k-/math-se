@@ -1,0 +1,7 @@
+X_n
+E|X|^q < \infty
+ \frac{1}{n} \sum^n (X_i - \bar{X})^q \to E((X-EX)^q) \quad \text{in probability} 
+\frac{1}{n} \sum^n (X_i - \bar{X})^q 
+ \frac{1}{n} \sum^n (X_i - \bar{X})^q \quad \overrightarrow{Slutsky} \quad \frac{1}{n} \sum^n (X_i - EX)^q \quad\overrightarrow{WLLN} \quad E(X-EX)^q 
+q
+\begin{eqnarray*} {1\over n}\sum_{i=1}^n(X_i-\bar X)^q &=&{1\over n}\sum_{i=1}^n \sum_{j=0}^q {q\choose j} X_i^j(-\bar X)^{q-j}\\ &=&\sum_{j=0}^q {q\choose j}{1\over n}\sum_{i=1}^n X_i^j(-\bar X)^{q-j}\\ &\to&\sum_{j=0}^q {q\choose j} \mathbb{E}(X^j) (-\mathbb{E}(X))^{q-j}\\ &=&\mathbb{E}\left[(X-\mathbb{E}(X))^q\right] \\ \end{eqnarray*}

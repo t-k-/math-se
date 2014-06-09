@@ -1,0 +1,13 @@
+P \in [0,1]^{(n \times n)}
+P_{ij} > 0 ~ \forall i,j
+\sum_{j}P_{ij} = 1~ \forall i
+P
+P_{ij} + P_{ji} = \frac{1}{n} ~\forall i \neq j
+P
+\sum_i \sum_j P_{ij} = \sum_i 1 = n,
+n = 2 \sum_j P_{jj} - 2n + n^2,
+n^2 - 3n + 2 \sum_j P_{jj} = 0.
+s := \sum_j P_{jj}
+n = \frac{3 \pm \sqrt{9 - 8s}}{2} \le 3. \tag{*}
+n = 3
+P = \begin{bmatrix} 0 & x & 1-x \\ 1-x & 0 & x \\ x & 1-x & 0 \end{bmatrix}, \ x \in [0,1]

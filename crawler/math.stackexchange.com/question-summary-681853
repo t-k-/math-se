@@ -1,0 +1,12 @@
+  f(x, y) = \begin{cases} \frac{x^3}{x^2 + y^2},  & \text{if 
+} \\ 0, & \text{if (x, y) = (0, 0)}  \\ \end{cases}
+f(x, y)
+(0, 0)
+f
+(0,0)
+\lim_{(x, y) \to (0, 0)} \frac{f(x, y) - xf'_x(0,0) - yf'_y(0, 0) - f(0, 0)}{\sqrt{x^2 + y^2}} = 0
+f'_x(0, 0) = 1
+f'_y(0, 0) = 0
+\color{red}{\text{Move to polar coordinates}}
+x = r\cos\theta, y = r\sin\theta, x^2 + y^2 = r^2.
+\lim_{(x, y) \to (0, 0)} \bigg(\frac{x^3}{x^2 + y^2} - x - 0\bigg) \cdot \frac{1}{\sqrt{x^2 + y^2}} = \lim_{r \to 0} \bigg(\frac{r^3\cos^3\theta}{r^2} - r\cos\theta\bigg)\cdot\frac{1}{r} \\= \lim_{r\to0}\cos^3\theta-\cos\theta \ne 0

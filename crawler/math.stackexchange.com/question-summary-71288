@@ -1,0 +1,14 @@
+n\times n
+\mathbb F_2
+1
+\mathbb F_2
+0
+1
+\mathbb{F}_2
+1
+\frac{|SL_n(\mathbb{F}_2)|}{|\mathcal{M}_n(\mathbb{F}_2)|} = \frac{\displaystyle\prod_{k=0}^{n-1}(2^n - 2^k)}{2^{n^2}} = \prod_{k=1}^{n} \Big(1 - \frac{1}{2^k} \Big).
+\mathbb{F}_q
+\frac{|SL_n(\mathbb{F}_q)|}{|\mathcal{M}_n(\mathbb{F}_q)|} = \frac{\frac{1}{q-1}\displaystyle\prod_{k=0}^{n-1}(q^n - q^k)}{q^{n^2}} = \frac{1}{q-1}\prod_{k=1}^{n} \Big(1 - \frac{1}{q^k} \Big).
+n\rightarrow \infty.
+\begin{align} \log \left(\prod_{n \in \mathbb{Z}_+}(1 - \frac{1}{q^n}) \right)  &= \sum_{n \in \mathbb{Z}_+} \log \Big(1 - \frac{1}{2^n} \Big)  \\ &= -\sum_{n \in \mathbb{Z}_+} \sum_{k \in \mathbb{Z}_+} \frac{1}{k} \left( \frac{1}{q^n} \right)^k  \\ &= -\sum_{k \in \mathbb{Z}_+} \frac{1}{k} \left(\sum_{n \in \mathbb{Z}_+} \Big(\frac{1}{q^{k}} \Big)^n \right)  \\ &= -\sum_{k \in \mathbb{Z}_+} \frac{1}{k} \left(\frac{q^{-{k}}}{1 - q^{-{k}}} \right)  \\ &=  -\sum_{k \in \mathbb{Z}_+} \frac{1}{k} \left(\frac{1}{q^{k} -1} \right) \\ &\gt -q\sum_{k \in \mathbb{Z}_+}  \frac{1}{k} \Big(\frac{1}{q} \Big)^k  \\ &= \log(1/q^q).   \end{align} 
+\displaystyle\prod_{n \in \mathbb{Z}_+} \Big(1 - \frac{1}{q^n} \Big) > 1/q^q

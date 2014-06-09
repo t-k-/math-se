@@ -1,0 +1,66 @@
+z_1,z_2,\ldots,z_n
+D=\left|\begin{array}[cccc]  11&1&\cdots&1\\ z_1&z_2&\cdots&z_n\\ z_1^2&z_2^2&\cdots&z_n^2\\ \vdots&\vdots&\ddots&\vdots\\ z_1^{n-1}&z_2^{n-1}&\cdots&z_n^{n-1} \end{array}\right|
+z_j
+\Bbb C
+D
+z_j
+0+1+\cdots+(n-1)=\frac{1}{2}n(n-1)
+D
+z_j=z_k
+k\neq j
+D
+z_j-z_k
+j\neq k
+\prod_{j<k}(z_j-z_k)
+D
+D
+z_j=z_k
+k\neq j
+z_j=z_k
+(z_j-z_k)
+z_k
+k=j
+1+2+\cdots+(k-1)
+k<n
+\prod_{1 \leq j < k \leq n } (z_k - z_j).
+z_k = z_j
+z_1,\ldots,z_n
+1 + 2 + \ldots + (n-1) =\frac{n(n-1)}{2}
+\prod_{1 \leq j < k} (z_k - z_j)
+\prod_{1 \leq j < k \leq n } (z_k - z_j)
+n
+j < k
+\binom{n}{2} = \frac{n!}{(n-2)!2!} = \frac{n(n-1)}{2}.
+z_n's
+x_n's
+V_n
+n \times n
+n \times n
+n=2
+(V_n)
+n=k
+n=k+1
+ \text{det}(V_n) = \prod_{1\leq i < j \leq n} (x_j - x_i). 
+\begin{array}{ccccc} \text{det} (V_{k+1}) &=& \text{det} \left[ \begin{array}{ccccc} 1& x_1 & x_1^2& \ldots& x_1^{k} \\ 1 &x_2 & x_2^2 & \ldots& x_2^{k} \\ \vdots &&&& \vdots \\  1&x_{k+1} & x_{k+1}^2 &\ldots &x_{k+1}^{k}  \end{array} \right]   \\&=&  \text{det}\left[ \begin{array}{ccccc} 1& 0 & 0& \ldots& 0\\ 1 &x_2 - x_1 & x_2(x_2 - x_1) & \ldots& x_2^{k-1}(x_2 - x_1) \\ \vdots &&&& \vdots \\  1&x_{k+1} - x_1& x_{k+1}(x_{k+1} - x_1) &\ldots &x_{k+1}^{k-1}(x_{k+1} - x_1)  \end{array} \right]   \\ \\ &=& \prod_{i=2}^{k+1}(x_i - x_1) \text{det}  \left[ \begin{array}{ccccc} 1& 0 & 0& \ldots& 0\\ 1 &1 & x_2 & \ldots& x_2^{k-1} \\ \vdots &&& \vdots \\  1&1& x_{k+1} &\ldots &x_{k+1}^{k-1}  \end{array} \right]  \\ \\ &=&  \Bigg[ \prod_{i=2}^{k+1}(x_i - x_1) \Bigg] \prod_{2 \leq i<j \leq k+1} (x_j -x_i) \quad (\text{ induction hypothesis}) \\ \\ &=& \prod_{1 \leq i<j \leq k+1} (x_j - x_i). \end{array} 
+C
+V
+\mathbf{v}_i
+i
+V
+\mathbf{c}_k
+k
+\ne
+k=i
+   \mathbf{v_i}^\top\mathbf{c_k} = \cases{0 \quad &for k $\ne$ i \\ \det(V) & for $k=i$} \tag{1}
+x
+(x - z_k)
+k \ne i
+p_i(x) = C_{0k} +C_{1k}z + C_{2k}z^2 + \dots
+\prod_{k\ne i}(x-z_k)
+\Delta
+p_i(x) = \Delta\prod_{k\ne i}(x-z_k)
+p_i(z_i) = \det(V)
+p_i(z_i) = \det(V) =\Delta\prod_{k\ne i}(z_i - z_k)
+z_i = z_k
+k \ne i
+\Delta

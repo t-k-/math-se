@@ -1,0 +1,36 @@
+X_i \in Be(p_i)
+p_i
+E[p_i]= \mu
+Var[p_i]=\sigma
+p_i
+X:= \sum_{i=1}^n X_i
+x_i
+X \in Bin(n,p)
+X_i
+p_i
+X_i
+E[X]=\sum_{i=1}^n p_i
+Var[X]=\sum_{i=1}^n p_i (1-p_i)
+Y:=\sum_{i=1}^n Y_i
+Y_i \in Be(\mu)
+Z:=\sum_{i=1}^n Z_i
+Z_i \in Be(p)
+p
+X
+E[X]
+E[Y]
+n \rightarrow \infty
+X
+Y
+n=2
+X_1 \sim Be(p_1)
+X_2 \sim Be(p_2)
+p_1
+p_2
+F(x)
+[0,1]
+P(X_1+X_2=0)=P(X_1=0)P(X_2=0)=(\int_0^1 P(X_1=0|p_1=u)P(p_1 =u))(\int_0^1 P(X_2=0|p_2=u)P(p_2 =u))
+=(\int_0^1uP(p_1=u))(\int_0^1uP(p_2=u))=(Ep_1)(Ep_2)=\mu^2
+P(X_1+X_2=2)=P(X_1=1)P(X_2=1)=(\int_0^1 P(X_1=1|p_1=u)P(p_1 =u))(\int_0^1 P(X_2=1|p_2=u)P(p_2 =u))
+=(\int_0^1(1-u)P(p_1=u))(\int_0^1(1-u)P(p_2=u))=(E(1-p_1))(E(1-p_2))=(1-\mu)^2
+P(X_1+X_2=1)=1-\mu^2-(1-\mu)^2=2\mu(1-\mu)

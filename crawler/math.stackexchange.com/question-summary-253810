@@ -1,0 +1,8 @@
+f
+\frac{d}{dx}\left( \int_x^b f(t)dt\right)= -f(x).
+ F(x)=\int_{b}^{x}f(t) dt \implies F(x+h)= \int_{b}^{x+h}f(t) dt= \int_{b}^{x}f(t) dt + \int_{x}^{x+h}f(t) dt 
+ \left|\frac{F(x+h)-F(x)}{h}-f(x)\right| = \left|\frac{1}{h}\int_{x}^{x+h}f(t) dt - \frac{1}{h}\int_{x}^{x+h}f(x) \right| 
+\left|\frac{F(x+h)-F(x)}{h}-f(x)\right| = \left|\frac{1}{h}\int_{x}^{x+h}(f(t)-f(x)) dt  \right| \leq \frac{1}{h}\int_{x}^{x+h}|f(t)-f(x)| dt 
+ x<t<x+h  
+f
+\int_{x}^{b} f(t)dt=-\int_{b}^{x}f(t)dt

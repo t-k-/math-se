@@ -1,0 +1,10 @@
+1
+\widehat {f*g}(n)=\hat f(n)\cdot \hat g(n)
+\hat x(n)
+x
+y*z
+y
+z
+f, g
+f,g
+\eqalign{ (\widehat{f\star g  })(n) &={1\over T}\int_{-T/2}^{T/2} (f\star g)(t) e^{-in\omega t}\,dt\cr &={1\over T}\int_{-T/2}^{T/2} \int_{-T/2}^{T/2} f(u)g(t-u)\,du \ e^{-in\omega  t}\,dt \cr &={1\over T}\int_{-T/2}^{T/2} \int_{-T/2}^{T/2} f(u)g(t-u) \ e^{-in\omega   t} \,dt\,\,du \cr &={1\over T}\int_{-T/2}^{T/2}\Bigl[ \int_{-T/2}^{T/2} g(t-u)  e^{-in\omega   (t-u)}\,dt \Bigr] e^{-in\omega   u}f(u)   \,du \cr &=T\cdot {1\over T} \Bigl[ \int_{-T/2}^{T/2} g(t-u)  e^{-in\omega   (t-u)}\,dt \Bigr] {1\over T} \Bigl[\int_{-T/2}^{T/2}e^{-in\omega   u}f(u)   \,du \Bigr]\cr &=T\cdot\hat f(n)\hat g(n). } 

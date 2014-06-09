@@ -1,0 +1,23 @@
+X_i
+Poisson(\lambda)
+i=0,1,2,...,m
+\lambda = n_ip
+X_i
+Poisson(n_ip)
+p
+m
+n_i
+p
+ \hat{\lambda} = n_ip = \frac{\sum_{i=1}^mX_i}{m} 
+ \hat{p} = \frac{\sum_{i=1}^mX_i}{n_im} 
+X_1,\ldots,X_m
+X_i\sim\mathrm{po}(pn_i)
+n_1,\ldots,n_m
+p>0
+x_1,\ldots,x_m
+X_1,\ldots,X_m
+p
+ L(p)=\prod_{i=1}^m \frac{(p n_i)^{x_i}}{x_i!}\exp(-pn_i), 
+ l(p)=\log L(p)=\sum_{i=1}^m\log(n_i^{x_i}/x_i!)+\sum_{i=1}^m x_i\log(p)-\sum_{i=1}^mpn_i. 
+ l'(p)=\frac1p\sum_{i=1}^mx_i-\sum_{i=1}^m n_i 
+ \hat{p}=\frac{\sum\limits_{i=1}^m x_i}{\sum\limits_{i=1}^m n_i}. 

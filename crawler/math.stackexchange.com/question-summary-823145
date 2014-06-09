@@ -1,0 +1,33 @@
+f\ :\ x\in(a,b)\ \mapsto\ f(x)
+I_f = f\big((a,b)\big)\subseteq\mathbb{R}
+f
+g\ :\ I_f\ \mapsto\ [0,1)
+f(x) = e^{ -\left(\frac{x-\mu}{\sigma}\right)^2 }
+x\in(a,b)
+g(x) = 1 - \frac{|f^\prime(x)|}{\max_t |f^\prime(t)|}
+g(x)
+f(x)
+f
+g(x)
+f(x)
+ g_\epsilon(t) = \mu\Bigl(\{x : |f(x) - t| < \varepsilon\}\Bigr), 
+g_\epsilon
+f
+\mu
+ G_\epsilon(t) = \frac{g_\epsilon(t)}{\int_{-\infty}^{\infty} g_\epsilon(s)\,ds}, 
+ G(t) = \lim_{\epsilon \to 0} G_\epsilon(t) 
+f(x) = x^2
+0 < x < 1
+ |x^2 - t| < \epsilon \quad \Longleftrightarrow \quad \sqrt{\max\{0,t-\epsilon\}} < x < \sqrt{\min\{t+\epsilon,1\}}, 
+ g_\epsilon(t) = \sqrt{\min\{t+\epsilon,1\}} - \sqrt{\max\{0,t-\epsilon\}}. 
+g_\epsilon(t)
+ \int_{-\infty}^{\infty} g_\epsilon(s)\,ds = 2\epsilon + O(\epsilon^{3/2}) 
+\epsilon > 0
+0 < t < 1
+ G(t) = \lim_{\epsilon \to 0} G_\epsilon(t) = \lim_{\epsilon \to 0} \frac{\sqrt{t+\epsilon} - \sqrt{t-\epsilon}}{2\epsilon} = \frac{1}{2\sqrt{t}}. 
+f(x)
+t
+G(t)
+f(x)
+t
+G(t)

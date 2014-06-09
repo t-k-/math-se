@@ -1,0 +1,34 @@
+P_{x_n}(z) = \prod_{i=1}^n\frac{1+z+z^2+...+z^{i-1}}{i}
+Variance \space X_n = P_{x_n}''(1) + P_{x_n}'(1) - (P_{x_n}'(1))^2
+P_{x_n}'(z)=\sum_{i=1}^n(\prod_{j\neq i}\frac{1+z+...+z^{j-1}}{j})(\frac{1+2z+3z^2+...+(i-1)z^{i-2}}{i})
+P_{x_n}''(z)=\sum_{i=1}^n(\prod_{j\neq i}\frac{1+z+...+z^{j-1}}{j})(\frac{2+6z+...+(i-1)(i-2)z^{i-3}}{i}) + \sum_{i=1}^n \sum_{j\neq i}(\prod_{k\neq j}\frac{1+z+...+z^{k-1}}{k})(\frac{1+2z+3z^2+...+(j-1)z^{j-2}}{j})(\frac{1+2z+3z^2+...+(i-1)z^{i-2}}{i}) 
+z=1
+P_{x_n}''(1)=\sum_{i=1}^n(\frac{2+6+...+(i-1)(i-2)}{i}) + \sum_{i=1}^n \sum_{j\neq i}(\frac{1+2+3+...+(j-1)}{j})(\frac{1+2+3+...+(i-1)}{i}) 
+2,6,12,20,...
+\space 2+6+12+20+...+(n-1)n = \frac{n(n+1)(n+2)}{3}
+\sum_{i=1}^n i = \frac{n(n+1)}{2}
+P_{x_n}''(1)=\sum_{i=1}^n(\frac{(i-1)i(i+1)}{3i}) + \sum_{i=1}^n \sum_{j\neq i}(\frac{j-1}{2})(\frac{i-1}{2}) 
+P_{x_n}''(1)=\frac{1}{3}\sum_{i=1}^n((i-1)(i+1)) + \sum_{i=1}^n \sum_{j\neq i}(\frac{j-1}{2})(\frac{i-1}{2}) 
+P_{x_n}''(1)=\frac{1}{3}\sum_{i=1}^{n}(i^2-1) + \sum_{i=1}^n \sum_{j\neq i}(\frac{j-1}{2})(\frac{i-1}{2}) 
+\sum_{i=1}^ni^2 =\frac{n(n+1)(2n+1)}{6}
+P_{x_n}''(1)=\frac{1}{3}(\frac{n(n+1)(2n+1)}{6} - n) + \sum_{i=1}^n \sum_{j\neq i}(\frac{j-1}{2})(\frac{i-1}{2}) 
+P_{x_n}''(1)=\frac{1}{3}(\frac{n(n+1)(2n+1)}{6} - n) + \sum_{i=1}^n \sum_{j=1}^n(\frac{j-1}{2})(\frac{i-1}{2}) - \sum_{i=1}^n\frac{(i-1)^2}{4} 
+P_{x_n}''(1)=\frac{1}{3}(\frac{n(n+1)(2n+1)}{6} - n) + \frac{n(n-1)}{4}\frac{n(n-1)}{4} - \frac{1}{4}(\frac{(n-1)n(2(n-1)+1)}{6}) 
+Var \space X_n = P_{X_n}''(1)+P_{X_n}'(1)-(P_{X_n}'(1))
+Var \space X_n = \frac{1}{3}(\frac{n(n+1)(2n+1)}{6} - n) + \frac{n(n-1)}{4}\frac{n(n-1)}{4} - \frac{1}{4}(\frac{(n-1)n(2(n-1)+1)}{6}) + \frac{n(n-1)}{4} - (\frac{n(n-1)}{4})^2
+Var \space X_n = \frac{2n^3+39n^2-42n}{72}
+Var \space X_n = \frac{1}{3}(\frac{n(n+1)(2n+1)}{6} - n) + \frac{n(n-1)}{4}\frac{n(n-1)}{4} - \frac{1}{4}(\frac{(n-1)n(2(n-1)+1)}{6}) - \frac{n(n-1)}{4} - (\frac{n(n-1)}{4})^2
+- \frac{n(n-1)}{4}
+Var \space X_n = \frac{2n^3+3n^2-5n}{72} = \frac{(n-1)n(2n+5)}{72}
+-2\frac{n(n-1)}{4}
+P_{x_n}(1) = 1
+z = 1
+p''(z) = \sum_{i=1}^n a_i(z)
+P_{x_n}(z) = \prod_{i=1}^n \frac{1-z^i}{i(1-z)} = \exp \Bigl( -\log n! - n \log (1-z) + \sum_{i=1}^n \log (1-z^i) \Bigr) = \exp p_{x_n}(z),
+p_{x_n}(z) = -\log n! - n \log(1-z) + \sum_{i=1}^n \log(1-z^i).
+\begin{align*} P'(z) &= p'(z) P(z), \\ P''(z) &= p''(z) P(z) + p'(z) P'(z) \\ &= (p''(z) + (p'(z))^2)P(z).\end{align*}
+P''(1) - (P'(1))^2 = p''(1).
+\begin{align*} p'_{x_n}(z) &= \frac{n}{1-z} - \sum_{i=1}^n \frac{iz^{i-1}}{1-z^i}; \\ p''_{x_n}(z) &= \frac{n}{(1-z)^2} - \sum_{i=1}^n \frac{iz^{i-2}(i-1+z^i)}{(1-z^i)^2}. \end{align*}
+a_i(z) = \frac{1}{(1-z)^2} - \frac{iz^{i-2}(i-1+z^i)}{(1-z^i)^2}.
+\lim_{z \to 1} a_i(z) = \frac{(i-1)(i-5)}{12},
+p''_{x_n}(1) = \frac{1}{72} (n-1) n (2 n-13).

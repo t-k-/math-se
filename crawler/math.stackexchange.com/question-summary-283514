@@ -1,0 +1,18 @@
+\forall n,k \in \mathbb{N}^+ . k<n\to \binom{n-1}{k-1}\binom{n}{k+1}\binom{n+1}{k}=\binom{n-1}{k}\binom{n}{k-1}\binom{n+1}{k+1}
+\binom{n-1}{k-1}\binom{n}{k+1}\binom{n+1}{k}
+=\frac{(n-1)!}{(n-k)!(k-1)!}\frac{n!}{(k+1)!(n-k-1)!}\frac{(n+1)!}{k!(n+1-k)!}
+ n-k-1=n-1-k,n+1-k=n-(k-1),n-k=(n+1)-(k+1)
+=\frac{(n-1)!}{k!(n-1-k)!}\frac{n!}{(k-1)!\{n-(k-1)\}!}\frac{(n+1)!}{(k+1)!\{(n+1)-(k+1)\}!}
+=\binom{n-1}k\binom n{k-1}\binom{n+1}{k+1}
+\binom m r=0
+r<0
+r>m\implies \binom m r>0
+0<r<m
+\binom{n-1}k>0
+0\le k\le n-1
+\binom n{k-1}>0
+0\le k-1\le n\iff 1\le k\le n+1
+\binom {n+1}{k+1}>0
+0\le k+1\le n+1\iff 0\le k\le n
+>0
+\text{max}(0,1,0)\le k\le \text{min}(n-1,n+1,n)\implies 1\le k\le n-1

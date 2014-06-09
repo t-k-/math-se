@@ -1,0 +1,53 @@
+G
+f
+f
+f(G(f)) = G(f)
+f
+\alpha
+f
+\alpha
+G(f)
+f:x\mapsto x^2
+f
+x
+x^2
+\lambda x.x^2
+x
+x^2
+(\lambda x.x^2)(2) = 4
+(\lambda x.x^2) 2 = 4
+f = \lambda x.x^2
+f\; 2 = 4
+Y = \lambda f. (\lambda x. f (x\;x)) \; (\lambda x. f (x\;x))
+\begin{align} Y\; g & = (\lambda f. (\lambda x. f (x\;x)) \; (\lambda x. f (x\;x))) \; g \\ & = (\lambda x. g (x\;x)) \; (\lambda x. g (x\;x)) \\ & = (\lambda y. g (y\;y)) \; (\lambda x. g (x\;x)) \\ & = g \; (\lambda x. g (x\;x)) (\lambda x. g (x\;x)) \\ & = g\; (Y\; g) \end{align}
+Y
+f
+\lambda x.f(xx)
+Y(f)
+f
+Y(f)
+f(Y(f))
+a
+aa = f(aa)
+a
+a
+a
+a
+a
+Y
+aa=f(aa)
+a=\lambda a.f(aa)
+a=\lambda x.f(xx)
+Y=\lambda f.aa=\lambda f.(\lambda x.f(xx))(\lambda x.f(xx))
+Y
+ \begin{align} A &= \lambda \text{self}.\lambda f.f\ (\text{self}\ \text{self}\ f);\\ Y &= A\ A. \end{align} 
+A
+A\ A\ f
+Y
+F_r
+F = Y\ F_r
+ F\ x\ y = F\ y\ x\ F 
+ F\ x\ y = F\ y\ x\ F 
+ F = \lambda x.\lambda y.F\ y\ x\ F, 
+ F = (\lambda \text{self}.\lambda x.\lambda y.\text{self}\ y\ x\ \text{self}) F. 
+ F_r = \lambda \text{self}.\lambda x.\lambda y.\text{self}\ y\ x\ \text{self}. 

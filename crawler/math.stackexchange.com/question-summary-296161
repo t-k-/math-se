@@ -1,0 +1,13 @@
+p(x)=a
+(1,0),(2,0),(3,0),(4,10)
+a
+\left\Vert \begin{bmatrix}a\\ a\\ a\\ a \end{bmatrix}-\begin{bmatrix}0\\ 0\\ 0\\ 10 \end{bmatrix}\right\Vert 
+\mathbf{y}=\begin{bmatrix}y_{1}\\ y_{2}\\ y_{3}\\ y_{4} \end{bmatrix},\mathbf{\Delta y}=\begin{bmatrix}\Delta y_{1}\\ \Delta y_{2}\\ \Delta y_{3}\\ \Delta y_{4} \end{bmatrix}
+\mathbf{\Delta y}
+\min_{a}\left\Vert \mathbf{a-(y+\Delta y)}\right\Vert ^{2}	=	\min_{a}\sum_{i=1}^{4}\left[a-\left(y_{i}+\Delta y_{i}\right)\right]{}^{2} 	=	\min_{a}\sum_{i=1}^{4}\left[a^{2}-2a(y_{i}+\Delta y_{i})+(y_{i}+\Delta y_{i})^{2}\right] 	=	\min_{a}\left[4a^{2}-\left(2\sum_{i=1}^{4}(y_{i}+\Delta y_{i})\right)a+(y_{i}+\Delta y_{i})^{2}\right]  
+y_i
+y_i+\Delta y_i
+a
+y_i/4
+\frac{\sum_{i=1}^{4}(y_{i}+\Delta y_{i})}{4}
+\min_{a}\left\Vert \mathbf{a-(y+\Delta y)}\right\Vert _{1}=\min_{a}\sum_{i=1}^{4}\left|a-(y_{i}+\Delta y_{i})\right|

@@ -1,0 +1,74 @@
+\mathbb{E}\mathsf{nd}(X)
+\mathbb{E}\mathsf{nd}(X)
+X
+X
+\mathcal{J}
+\mathbb{1}
+X
+\mathcal{C}
+\mathcal{C} = \textbf{Set}
+\mathbb{E}\mathsf{nd}(X)
+X^Y \to X
+\textrm{End}(X)(Y) = \int_{j : \mathcal{J}} (X j)^{\mathcal{C}(Y, X j)}
+\textrm{End}(X)(Y) = X^{X^Y}
+T
+\mathsf{Set}.
+X,~TX=\mathscr P(X)
+f:X\to Y,~Tf:\mathscr P(X)\to\mathscr P(Y)
+A\subset X
+Tf(A)=f(A)
+\eta:1_{\mathsf{Set}}\Rightarrow T
+\mu:T^2\Rightarrow T
+X
+x\in X
+X
+\lbrace A_i\mid i\in I\rbrace
+X
+\eta_X(x)=\lbrace x\rbrace\text{ and }\mu_X\Big(\lbrace A_i:i\in I\rbrace\Big)=\bigcup_{i\in I} A_i
+T
+X
+\theta:TX\rightarrow X
+X
+X
+T
+\mu
+\eta
+x\in X
+\mathscr{A}=\lbrace A_i: i\in I\rbrace
+X
+\theta\Big(\bigcup_{i\in I}A_i\Big)=\theta\Big(\lbrace\theta(A_i):i\in I\rbrace\Big)
+\theta(\eta_X(x))=\theta(\lbrace x\rbrace)=x \text{ and } \theta\big(\mu_X(\mathscr A)\big)=\theta\big(T\theta(\mathscr A)\big)
+x\in X,~x\preceq x
+\theta(\lbrace x,x\rbrace)=\theta(\lbrace x\rbrace)=x
+\preceq
+x\preceq y
+y\preceq x
+x=\theta(\lbrace x,y\rbrace)=y
+\preceq
+x\preceq y
+y\preceq z
+x\preceq z
+\preceq
+(X,\preceq)
+\begin{array}{ccccc} \theta(\lbrace x,y,z\rbrace)&=&\theta(\mu_X(\lbrace \lbrace x,y\rbrace,\lbrace y,z\rbrace\rbrace))\\ &&\Vert&&\\ &&\theta(T\theta(\lbrace\lbrace x,y\rbrace,\lbrace y,z\rbrace\rbrace))&=\theta(\lbrace y,z\rbrace)&=&z\end{array}
+\begin{array}{ccccc}\theta(\lbrace x,z\rbrace)&=&\theta(T\theta(\lbrace\lbrace x\rbrace,\lbrace y,z\rbrace\rbrace))\\ &&\Vert&&\\ &&\theta(\mu_X(\lbrace\lbrace x\rbrace,\lbrace y,z\rbrace\rbrace))&=&\theta(\lbrace x,y,z\rbrace)=z\end{array}
+A\subset X,~\theta(A)\in X
+A=\emptyset
+a\in A,
+a\in A,~a\preceq \theta(A)
+b\in X
+a\preceq b
+a\in A
+A
+b,~\theta(A)\preceq b
+\theta(A)
+A
+(X,\preceq)
+\begin{array}{ccccc} \theta(\lbrace a,\theta(A)\rbrace)&=&\theta( T\theta(\lbrace \lbrace a\rbrace,A\rbrace))&&\\ &&\Vert&&\\ &&\theta(\mu_X(\lbrace \lbrace a\rbrace,A\rbrace))&=&\theta(\lbrace a\rbrace\cup A)=\theta(A) \end{array}
+\begin{array}{c} \theta(\lbrace \theta(A),b\rbrace)&=&\theta(T\theta(\lbrace A,\lbrace b\rbrace\rbrace))&&\\ &&\Vert&&\\ &&\theta(\mu_X(\lbrace A,\lbrace b\rbrace\rbrace))&&\\ &&\Vert&&\\ &&\theta(A\cup\lbrace b\rbrace)&=&\theta(\bigcup_{a\in A}\lbrace a,b\rbrace)\\ &&&&\Vert\\ &&&&\theta(\mu_X(\lbrace \lbrace a,b\rbrace:a\in A\rbrace))\\ &&&&\Vert\\ &&&&\theta(T\theta(\lbrace \lbrace a,b\rbrace:a\in A\rbrace))\\ &&&&\Vert\\ &&&&\theta(\lbrace \underbrace{\theta(\lbrace a,b\rbrace)}_{=b}:a\in A\rbrace)&=& \theta(\lbrace b\rbrace)=b \end{array}
+(X,\leq)
+\bigvee
+X
+X,
+A\mapsto \bigvee A
+T

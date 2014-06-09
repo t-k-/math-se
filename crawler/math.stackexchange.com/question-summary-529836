@@ -1,0 +1,11 @@
+(n \log n) + \frac{\lfloor (\log n)^2\rfloor + \log n}{2} = \Theta(n \log n)
+   \begin{aligned}     c_1 \cdot (n \log n) \le\,& (n \log n) + \frac{\lfloor(\log n)^2\rfloor + \log n}{2} \le c_2 \cdot (n \log n) &(\text{Divide by } n \log n)\\     c_1 \cdot 1 \le\,& 1 + \frac{1}{2} \cdot \left\lfloor \frac{\log n + 1}{n} \right\rfloor \le c_2 \cdot 1    \end{aligned} 
+c_1 = 1
+\le (1 + x + y )
+x,y \ge 0
+c_2 = 4 \ge ( 1 + x + y )
+0 < x,y < 1
+(n \log n) + \frac{\lfloor(\log n)^2\rfloor + \log n}{2} = \Theta(n \log n)
+\frac{\lfloor (\log n)^2\rfloor + \log n}{2} = o(n \log n)
+g(n) = o(f(n))
+f(n) + g(n) = \Theta(f(n)) 

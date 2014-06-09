@@ -1,0 +1,13 @@
+(0, \infty)
+X_1
+f_1(t_1), t_1 \in (0, \infty)
+X_2
+f_2(t_2), t_2 \in (0, \infty)
+Y = X_1+X_2
+f_Y(y) = \int^{y}_{0}f_1(t_1)*f_2(y-t_1)dt_1
+F_Y(y)=P(Y \le y)
+F_Y(y) = \int^{y}_{0}\int^{y-t_1}_{0}f_1(t_1)*f_2(t_2)dt_2dt_1
+=\int^{y}_{0}f_1(t_1)*[F_2(y-t_1)-F_2(0)]dt_1
+=\int^{y}_{0}f_1(t_1)*[F_2(y-t_1)-F_2(0)]dt_1
+y
+=\frac{d}{dy}[\int^{y}_{0}f_1(t_1)*[F_2(y-t_1)-F_2(0)]dt_1]

@@ -1,0 +1,13 @@
+\displaystyle \int_0^n \left[\frac x {x+1} + \frac x {2x+4} + \frac x {3x+9} + \cdots \right] \, dx
+x>0
+\displaystyle f_k(x)=\frac x{kx+k^2}
+x>0
+\displaystyle \int_0^n \frac x{kx+k^2}=1-\log(2)
+ \begin{align} \int_0^n\sum_{k=1}^\infty\frac{x}{kx+k^2}\,\mathrm{d}x &=\log(\Gamma(n+1))-\log(\Gamma(1))+\gamma n\\ &=\log(n!)+\gamma n \end{align} 
+I_n = \int_0^n f(x) dx = \int_0^n \int_0^1 \dfrac{1-t^x}{1-t} dt dx = \int_0^1 \dfrac{n + \dfrac{1-t^n}{\log(t)}}{1-t}dt
+k=1,2,3,4,5
+I_n = \displaystyle \sum_{k=1}^n J_k
+J_k = \int_0^1 \left(\dfrac1{1-t} + \dfrac{t^{k-1}}{\log(t)} \right) dt = \gamma + \log(k)
+I_n = \sum_{k=1}^n J_k = n \gamma + \log(n!)
+ \begin{array}{|c|}\hline\\ \color{#ff0000}{% \int_{0}^{n}\sum_{k = 1}^{n}{x\,{\rm d}x \over kx + k^{2}} = 1 - \ln\left(2\right) + \left\lbrack\Psi\left(n\right) + \gamma\right\rbrack n - \ln\Gamma\left(2n\right) + \ln\left(n\right) + 2\ln\Gamma\left(n\right)} \\ \\ \hline \end{array} 
+ \begin{array}{|c|}\hline\\ \color{#ff0000}{\large% \int_{0}^{n}\sum_{k = 1}^{n}{x \over kx + k^{2}}\,{\rm d}x\ \sim\ n\,\ln\left(n\right)\,, \qquad n \gg 1} \\ \\ \hline \end{array} 

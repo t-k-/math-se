@@ -1,0 +1,56 @@
+s
+x:\mathbb{N}\to \mathbb{F}
+\mathbb{F}
+\mathbb{R}
+\mathbb{C}
+s
+x, y\in s
+d
+s
+s
+s
+\mathbb{N}
+ d(x,y) := \sum_{n=0}^\infty 2^{-n}\frac{|x(n)-y(n)|}{1+|x(n)-y(n)|}. 
+\langle x_n:n \in \omega \rangle
+s
+\langle x_n:n \in \omega \rangle
+\langle x_n(k):k\in\omega\rangle
+\mathbb{F}
+\epsilon > 0
+n_\epsilon \in \omega
+d(x_m,x_n) < \epsilon
+m,n \ge n_\epsilon
+k \in \omega
+m,n \ge n_\epsilon
+2^{-k}\frac{|x_m(k)-x_n(k)|}{1+|x_m(k)-x_n(k)|} \le d(x_m,x_n) < \epsilon
+|x_m(k)-x_n(k)| < 2^k\epsilon (1 + |x_m(k)-x_n(k)|),
+(1-2^k\epsilon)|x_m(k)-x_n(k)| < 2^k\epsilon.
+k \in \omega
+\epsilon
+2^{-k}
+1-2^k\epsilon > 0
+m,n \ge n_\epsilon
+\lim\limits_{\epsilon\to 0^+} \left(\frac{1}{1-2^k\epsilon}-1\right) = 0
+k\in\omega
+\langle x_n(k):n\in\omega\rangle
+\mathbb{F}
+\mathbb{F}
+\langle x_n(k):n\in\omega\rangle
+x(k) \in \mathbb{F}
+\langle x_n:n \in \omega \rangle
+s
+x:\omega\to\mathbb{F}:k \mapsto x(k)
+|x_m(k)-x_n(k)| < \frac{2^k\epsilon}{1-2^k\epsilon} = \frac{1}{1-2^k\epsilon}-1
+\epsilon > 0
+m_0 \in \omega
+2^{-m_0} < \epsilon/2
+m_1 \in \omega
+k \le m_0
+n \ge m_1
+n > m_1
+\langle x_n:n \in \omega \rangle \to x
+s
+d(x_n,x) = \sum\limits_{k\ge 0}2^{-k}\frac{|x_n(k)-x(k)|}{1+|x_n(k)-x(k)|}.
+\sum\limits_{k>m_0}2^{-k}\frac{|x_n(k)-x(k)|}{1+|x_n(k)-x(k)|} < \sum\limits_{k>m_0}2^{-k} = 2^{-m_0} < \epsilon/2.
+|x_n(k)-x(k)|< \frac{\epsilon}{2(m_0+1)}
+\begin{align*} d(x_n,x) &= \sum\limits_{k=0}^{m_0}\frac{2^{-k}}{1+|x_n(k)-x(k)|}|x_n(k)-x(k)|+\sum\limits_{k>m_0}2^{-k}\frac{|x_n(k)-x(k)|}{1+|x_n(k)-x(k)|}\\ &< \sum\limits_{k=0}^{m_0}|x_n(k)-x(k)|+\epsilon/2\\ &< (m_0+1)\frac{\epsilon}{2(m_0+1)} + \frac{\epsilon}{2}\\ &= \epsilon \end{align*}

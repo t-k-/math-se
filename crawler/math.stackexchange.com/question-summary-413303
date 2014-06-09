@@ -1,0 +1,12 @@
+ \begin{array}{r|rr} &\text{probability}& \text{quantity of card}\\ \hline \text{Heart}&0.5\%& 1\\ \text{Spade}&5\hphantom{.0}\%& 9\\ \text{Diamond}& 50\hphantom{.0}\% & 30 \\ \text{Clubs}& 44.5\%& 30 \end{array} 
+X
+P(X)
+X
+1,2,...,70
+ \begin{array}{c|c} X & P(X) \\ \hline \\ 1 & 0.005 \\ 2 & (0.995)(0.005) \\ 3 & (0.995)^2(0.005) \\ 4 & (0.995)^3(0.005) \\ \vdots & \vdots \\ 69 & (0.995)^{68}(0.005) \\ 70 & ? \end{array} 
+1
+69
+ P(X<70)=\sum_{x=1}^{69} 0.005(0.995)^{x-1} = \dfrac{0.005(1-0.995^{69})}{1-0.995} =  1-0.995^{69}\approx 0.2924 
+70
+ P(X=70)=1-P(X<70) \approx 1 - 0.2924 = 0.7076 
+ E(X) = \sum_{x=1}^{70} xP(x) = 70(0.7076) + \sum_{x=1}^{69} x[0.005(0.995)^{x-1}] \approx 59.2 

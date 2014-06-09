@@ -1,0 +1,96 @@
+[A\rightarrow(B\rightarrow C)]\rightarrow[(A\rightarrow B)\rightarrow(A\rightarrow C)]
+ (P \to (Q \to R)) \to ((P \to Q) \to (P  \to R)) 
+ (P \to (Q \to R)) \to ((P \to Q) \to (P  \to R)) 
+ (P \to (Q \to R)) \to ((P \to Q) \to (P  \to R)) 
+ (P \to (Q \to R)) \to ((P \to Q) \to (P  \to R)) 
+ P = Q = 2
+ R = 3 
+ (P \to (Q \to R)) \to ((P \to Q) \to (P  \to R)) 
+ \vdash A, \vdash A \to B 
+ \vdash B 
+ \vdash A \to B , \vdash B \to C 
+ \vdash A \to C 
+ A \to (( A \to B ) \to B) 
+p \supset q =_{def} \lnot p \lor q
+\rightarrow
+A
+A \rightarrow B
+B
+\vdash (A\rightarrow B)
+\vdash (A\lor C)
+\vdash (B\lor C)
+\vdash (A\lor B)
+\vdash (B\lor A)
+\vdash A \lor \lnot A
+\vdash ((A \lor A) \rightarrow A) \rightarrow [((A \lor A) \lor \lnot A) \rightarrow (A \lor \lnot A)]
+A \lor A/A; A/B; \lnot A/C
+\vdash  (A \lor A) \rightarrow A
+\vdash A \rightarrow \lnot \lnot A
+\lnot A/A
+\rightarrow
+\vdash \lnot \lnot A \rightarrow A
+\vdash (\lnot A \rightarrow \lnot \lnot \lnot A) \rightarrow ((\lnot A \lor A) \rightarrow (\lnot \lnot \lnot A \lor A))
+\vdash A \rightarrow C
+\vdash B \rightarrow C
+\vdash (A \lor B) \rightarrow C
+\vdash B \rightarrow C
+\vdash A \rightarrow C
+\vdash C \lor C \rightarrow C
+\vdash A \rightarrow C
+\vdash \lnot A \rightarrow C
+\vdash C
+\vdash A \rightarrow C
+\vdash A \rightarrow (C \lor B)
+\vdash A \rightarrow (B \lor C)
+\vdash A \rightarrow B
+\vdash [(A \lor B) \lor C] \rightarrow [A \lor (B \lor C)]
+\vdash A \rightarrow [A \lor (B \lor C)]
+\vdash B \rightarrow (B \lor C)
+\vdash B \rightarrow [A \lor (B \lor C)]
+\vdash (A \lor B) \rightarrow [A \lor (B \lor C)]
+\vdash C \rightarrow (B \lor C)
+\vdash C \rightarrow [A \lor (B \lor C)]
+\vdash [(A \lor B) \lor C] \rightarrow [A \lor (B \lor C)]
+\vdash (A \lor B) \lor C
+\vdash A \lor (B \lor C)
+\vdash (A \rightarrow B)
+\vdash A \rightarrow (B \rightarrow C)
+\vdash A \rightarrow C
+\vdash A \rightarrow B
+\vdash A \rightarrow (B \rightarrow C)
+\vdash \lnot A \lor (\lnot B \lor C)
+\rightarrow
+\vdash (\lnot B \lor C) \lor \lnot A
+\vdash \lnot B \lor (C \lor \lnot A)
+\vdash B \rightarrow (C \lor \lnot A)
+\rightarrow
+\vdash \lnot A \lor (C \lor \lnot A)
+\rightarrow
+\vdash (C \lor \lnot A) \lor \lnot A
+\vdash C \lor (\lnot A \lor \lnot A)
+\vdash (\lnot A \lor \lnot A) \lor C
+\vdash \lnot A \lor C
+\vdash (\lnot A \lor \lnot A) \rightarrow \lnot A
+\vdash A \rightarrow C
+\rightarrow
+\vdash A \rightarrow (\lnot A \rightarrow B)
+\vdash (A \lor B) \rightarrow (\lnot A \rightarrow B)
+\vdash (A \rightarrow \lnot \lnot A) \rightarrow ((A \lor B) \rightarrow (\lnot \lnot A \lor B))
+\vdash (A \lor B) \rightarrow (\lnot A \rightarrow B)
+\rightarrow
+\vdash (\lnot A \rightarrow B) \rightarrow (A \lor B)
+(p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q) \rightarrow (p \rightarrow r))
+\vdash (p \lor q) \rightarrow (\lnot p \rightarrow q)
+\vdash (\lnot p \rightarrow q) \rightarrow ((p \rightarrow q) \rightarrow q)
+\vdash (q \rightarrow p) \rightarrow [((q \lor p) \lor r) \rightarrow (p \lor r)]
+q/p; p/q
+\vdash (q \rightarrow p) \rightarrow [(p \lor (q \lor r)) \rightarrow (p \lor r)]
+\vdash (q \lor p) \rightarrow [((p \lor (\lnot q \lor r)) \rightarrow (p \lor r)]
+\vdash (p \lor q) \rightarrow [(p \lor (q \rightarrow r)) \rightarrow (p \lor r)]
+\vdash (p \lor (q \rightarrow r)) \rightarrow ((p \lor q) \rightarrow (p \lor r))
+\lnot p/p; q/q; r/r
+\vdash (p \rightarrow (q \rightarrow r)) \rightarrow ((p \rightarrow q) \rightarrow (p \rightarrow r))
+\vdash (p \lor (q \lor r)) \rightarrow ((p \lor q) \lor r))
+\vdash p \lor r \rightarrow q \lor (p \lor r)
+p \lor r/p; q/r
+\vdash p \lor (q \lor r) \rightarrow (q \lor (p \lor r))

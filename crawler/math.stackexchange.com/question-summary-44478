@@ -1,0 +1,20 @@
+\displaystyle \int_0^{\frac{\pi }{2}} \frac{1}{\sqrt {1 - k^2\sin^2{x}}}\;{dx} = \frac{\pi}{2}\sum_{n \ge 0}k^{2n}\left({\frac{{1 \cdot 3 \cdots \left( {2n - 1} \right)}} {{2 \cdot 4 \cdots \cdot 2n}}} \right)
+ -1 < k < 1
+\displaystyle \begin{aligned}\int_0^{\frac{\pi }{2}} \frac{1}{{\sqrt {1 - k^2\sin^2{x}}}}\;{dx} & = \int_{0}^{\pi/2}\sum_{n \ge 0} \frac{k^{2n}}{2^{2n}}\binom{2n}{n}\sin^{2n}{x}\;{dx} \\& = \sum_{n \ge 0}\int_{0}^{\pi/2} \frac{k^{2n}}{2^{2n}}\binom{2n}{n}\sin^{2n}{x}\;{dx}  \\& = \frac{\pi}{2} \sum_{n \ge 0} ~ k^{2n} \bigg(\frac{1}{2^{2n}}\binom{2n}{n}\prod_{1 \le r \le n}\frac{2r-1}{2r} \bigg) \\& = \frac{\pi}{2} \sum_{n \ge 0} ~ k^{2n} \bigg(\prod_{1 \le r \le n}\frac{2r-1}{2r} \cdot \prod_{1 \le r \le n}\frac{2r-1}{2r} \bigg) \\& = \frac{\pi}{2}\sum_{n \ge 0}k^{2n}\bigg(\prod_{1 \le r \le n}\frac{2r-1}{2r}\bigg)^2.\end{aligned}
+(2n
+n)
+(-1/2
+n)
+1/2
+(1+X)^M
+M=-1/2
+X=-k^2\sin^2 x
+(-1)^n
+(-1/2
+n)
+(-1/2)(-3/2)\dots (-n+1/2) / n!
+(-1)^n
+(1/2)(3/2)\dots (n-1/2)/n!
+(1/2)(3/2)\dots (n-1/2)/n!
+\pi/2
+\int_0^{\pi/2} dx\,\sin^2 x

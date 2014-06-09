@@ -1,0 +1,12 @@
+g(x)
+f(x)
+\int_0^{f(x)}f(t)dt=g(x)
+f[f(x)]\frac{d}{dx}f(x)=\frac{d}{dx}g(x)
+z=f^{-1}(t)
+dz=\frac{d}{dt}f^{-1}(t)dt.
+\int_{f^{-1}(0)}^x f[f(z)]\left[\frac{d}{dt}f^{-1}(t)\right]^{-1}_{t=f(z)}dz=\int_{f^{-1}(0)}^x f[f(z)]\frac{d}{dz}f(z)dz=g(x)
+f[f(x)]f(x)-\int_{f^{-1}(0)}^x f(z)\frac{df[f(z)]}{dz}\frac{df(z)}{dz}dz=g(x)
+f[f(x)]f(x)-[f(x)]^2\frac{df[f(x)]}{dx}+\int_{f^{-1}(0)}^x f(z)\frac{d}{dz}\left\{f(z)\frac{df[f(z)]}{dz}\frac{df(z)}{dz}\right\}dz=g(x).
+f
+f(x)
+f[f(x)]f(x)\approx g(x)

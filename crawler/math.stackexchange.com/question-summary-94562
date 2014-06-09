@@ -1,0 +1,41 @@
+\mathbf{x},\boldsymbol{\mu}
+n\times 1
+\boldsymbol{\Sigma}
+n\times n
+\frac{d}{d\boldsymbol{\mu}}\left( (\mathbf{x} - \boldsymbol{\mu})^\top\boldsymbol{\Sigma} (\mathbf{x} - \boldsymbol{\mu})\right)
+\frac{d}{d\boldsymbol{\mu}}\left( \mathbf{x}^\top\boldsymbol{\Sigma} \mathbf{x} - \mathbf{x}^\top\boldsymbol{\Sigma} \boldsymbol{\mu} - \boldsymbol{\mu}^\top\boldsymbol{\Sigma} \mathbf{x} + \boldsymbol{\mu}^\top\boldsymbol{\Sigma} \boldsymbol{\mu} \right) 
+(\mathbf{x} + \boldsymbol{\mu})^\top\boldsymbol{\Sigma} + \boldsymbol{\Sigma}(\boldsymbol{\mu} - \mathbf{x})
+1\times n + n\times 1
+n = 1
+(x-\mu)^{\top} \Sigma (x-\mu) = \sigma (x-\mu)^2
+\sigma
+\mu
+2 \sigma(\mu-x)
+n
+\mu
+x = (x_1, \dots, x_n)
+\mu = (\mu_1, \dots, \mu_n)
+\Sigma = (\sigma_{ij})
+k^{\text{th}}
+1 \le k \le n
+\delta_{ij} = 0
+i \neq j
+1
+i=j
+\nabla f = \left( \frac{ \partial f}{\partial \mu_1} , \dots, \frac{ \partial f}{\partial \mu_n}\right)
+\Sigma(\mu-x) +  \Sigma^{\top} (\mu-x)
+A
+2\Sigma(\mu-x)
+ f(\mu) = (x-\mu)^{\top} \Sigma (x-\mu) = \sum_{i=1}^n \sum_{j=1}^n (x_i - \mu_i)(x_j - \mu_j)\sigma_{ij}. 
+\begin{align*} \frac{\partial f}{\partial\mu_{k}} &= \sum_{i=1}^n \sum_{j=1}^n \left( -\delta_{ik} (x_j - \mu_j) \sigma_{ij} \right) + \left( (x_i -\mu_i) (-\delta_{jk}) \sigma_{ij} \right)\\ &= \sum_{j=1}^n (\mu_j - x_j) \sigma_{kj} + \sum_{i=1}^n (\mu_i - x_i) \sigma_{ik}, \end{align*}
+\frac{\partial x^TAx }{\partial x}=(A+A^T)x
+A
+\frac{\partial (x-\mu)^T\Sigma(x-\mu) }{\partial \mu}=\frac{\partial (x-\mu)^T\Sigma(x-\mu) }{\partial (x-\mu)}\frac{\partial (x-\mu)}{\partial \mu}
+\frac{\partial (x-\mu)^T\Sigma(x-\mu) }{\partial (x-\mu)}=(\Sigma +\Sigma^T)(x-\mu)
+\frac{\partial (x-\mu)}{\partial \mu}=-1
+\frac{\partial (x-\mu)^T\Sigma(x-\mu) }{\partial \mu}=(\Sigma +\Sigma^T)(\mu-x)
+\frac{\partial}{\partial u_k}\left(\sum_{i,j=1}^n \sigma_{ij}(x_i-u_i)(x_j-u_j)\right)=\sum_{i,j=1}^n\sigma_{ij}\left[-\delta_{ik}(x_j-u_j)-(x_j-u_j)\delta_{jk}\right]
+=-\sum_{l=1}^n (\sigma_{kl}+\sigma_{lk})(x_l-u_l)=\left[(\Sigma+\Sigma^T)(\vec{u}-\vec{x})\right]_k.
+\Sigma^T(u-x)
+(x+u)^T\Sigma
+a^T\Phi b=b^T\Phi^T a

@@ -1,0 +1,19 @@
+\gcd(x, y, z) = 1
+\ a,b,c \gt 2; \ \ x,y,z \gt 1
+r
+s
+rx^a + sy^b = 1
+y^b \nmid z^cr - 1
+x^a \nmid z^cs - 1
+\gcd(x,y,z) = 1
+\gcd(x^a, y^b, z^c) = 1
+X = x^a, Y = y^b
+\gcd(X,Y) = 1
+r
+s
+ r_0 X + s_0 Y = 1 \\ r_1 X + s_1 Z = 1 \\ r_2 Y + s_2 Z = 1 
+ Z(r_0 X + s_0 Y = 1) \text{ and } X + Y = Z \\ \implies (r_0 Z - 1)X + (s_0 Z - 1)Y = 0 
+   Y \mid (r_0 Z - 1) \text{  and  } X \mid (s_0 Z -1) 
+ r_0 X + s_0 Y = 1 \\ r_1 X + s_0 Z = 1 \\ r_2 Y + r_0 Z = 1 
+(r_0 - r_1)X = s_0(Z-Y)
+s_0 = r_0 - r_1

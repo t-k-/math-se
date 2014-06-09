@@ -1,0 +1,91 @@
+\delta (x) = \int_{-∞}^{∞} \frac{1}{t(t-x)} dt
+I=\int_{-∞}^{∞} f(x)\delta(x) dx
+t=x
+\int_{-∞}^{∞} f(x)\delta(x) dx=f(0)
+f(x)=x
+f(x)=1
+\frac{1}{(t+ i \epsilon_1) (t-x+ i \epsilon_2)} = \frac{1}{x+ i(\epsilon_1-\epsilon_2) } \left(\frac{1}{t-x+i\epsilon_2}- \frac{1}{t+ i \epsilon_1}  \right).
+t
+\epsilon_1
+\epsilon_2
+I
+\delta
+\int_{-\infty}^\infty \left(\frac{1}{t-x+i\epsilon_2}- \frac{1}{t+ i \epsilon_1}  \right)dt = \begin{cases} 2\pi i & \epsilon_1 >0 , \epsilon_2 <0,\\ -2\pi i & \epsilon_1 <0 , \epsilon_2 >0,\\ 0 & \text{else}. \end{cases}
+\epsilon_1 \epsilon_2 <0
+I = \frac{2\pi i \mathop{\rm sgn}(\epsilon_1) }{x+ i(\epsilon_1-\epsilon_2) } = 2\pi i \mathop{\rm sgn}(\epsilon_1) \left( \mathcal{P} \frac{1}{x}  + i \pi \mathop{\rm sgn}(\epsilon_2-\epsilon_1) \delta(x) \right)
+I
+\epsilon_1
+\epsilon_2
+\delta
+f(0)=0\;
+0
+\delta
+f_o
+f_o(0)=1
+f
+\delta_\epsilon(f)=\delta_\epsilon(f-f(0)\cdot f_o)+f(0)\cdot \delta_\epsilon(f_o)\;
+\delta_\epsilon(f_o)
+f_o(x)=e^{-x^2}
+\Delta
+u
+C^\infty
+K>0
+u
+|x|>K
+\Delta_\epsilon, \epsilon>0
+\Delta=\lim_{\epsilon\to 0}\Delta_\epsilon
+<\Delta,u> = \int_{-\infty}^{+\infty} \Delta(x)u(x) \,dx,
+\lim_{\epsilon\to 0}<\Delta_\epsilon,u> \quad \hbox{exists for all test functions }\,u,
+<\Delta,u>=\lim_{\epsilon\to 0}<\Delta_\epsilon,u>.
+\epsilon>0
+x=0
+\delta_\epsilon(x) = \int_{-\infty}^{x-\epsilon}\frac{dt}{t(t-x)}+\int_{x+\epsilon}^{+\infty}\frac{dt}{t(t-x)}.
+\delta_\epsilon(x) = \frac{1}{x}\log\left|\frac{x+\epsilon}{x-\epsilon}\right|.
+\delta_\epsilon
+\mathbb{R}
+\epsilon
+\Delta_\epsilon
+\Delta_\epsilon
+\delta_\epsilon
+x=\epsilon
+<\delta_\epsilon,u>
+u
+\lim_{\epsilon\to 0}<\delta_\epsilon,u>
+cu(0)
+c
+u
+\delta=\lim_{\epsilon\to 0}\delta_\epsilon
+c\delta_{Dirac}=c\times
+u
+u
+\xi_x
+x
+u(x)=u(0)+u'(0)x+\frac{u''(\xi_x)}{2}x^2,
+<\delta_\epsilon,u> = I_1 + I_2 + I_3,
+\delta_\epsilon
+I_2=0
+I_1
+I_3
+u
+|x|>K
+M
+u
+[-K,K]
+\epsilon>0
+\epsilon\to 0
+|I_3|\leq M \int_0^K x^2\delta_\epsilon(x)dx =M\int_0^K x\log\left|\frac{x+\epsilon}{x-\epsilon}\right|dx.
+I_1
+x=\epsilon t
+x=\epsilon/t
+c\simeq 4.93
+u
+c\delta_{Dirac}
+\lim_{\epsilon\to0} <\delta_\epsilon,u> = c u(0),
+{{{}}}
+I
+\delta
+I =  \lim_{\epsilon\to 0} \mathop{\rm Re}I_\epsilon
+I = \int_{-\infty}^\infty \mathcal{P} \frac{1}{t(t-x)} dt
+\begin{align} I_\epsilon&= \int_{-\infty}^\infty \mathcal{P} \frac{1}{t(t-x + i\epsilon)}dt =\int_{0}^\infty \left[\frac{1}{t(t-x + i\epsilon)}  + \frac{1}{t(t+x - i\epsilon)}\right]dt\\ &= \int_0^\infty\frac{2}{t^2 - (x-i \epsilon)^2}\\ &=  \frac{\pi}{i(x-i\epsilon)} \end{align}
+\mathop{\rm Re}I_e= \frac{\pi \epsilon}{x^2+\epsilon^2} 
+ I = \pi^2 \delta(x).

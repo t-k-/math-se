@@ -1,0 +1,33 @@
+\int_0^{2\pi}ae^{x\cos a}da
+[0,2\pi]
+\cos a
+0,2\pi
+\int_0^{\epsilon}ae^{x\cos a} da+\int_{2\pi-\epsilon}^{2\pi}ae^{x\cos a}da
+\cos a=1-\frac{a^2}{2}+O(a^4)
+\cos a
+a = 0
+a = 2\pi
+\epsilon > 0
+ \int_0^{2\pi} a e^{x\cos a}\,da = \int_0^\epsilon a e^{x\cos a}\,da + \int_{2\pi-\epsilon}^{2\pi} a e^{x\cos a}\,da + \int_{\epsilon}^{2\pi-\epsilon} a e^{x\cos a}\,da. \tag{1} 
+x \to \infty
+ \begin{align} \left|\int_{\epsilon}^{2\pi-\epsilon} a e^{x\cos a}\,da\right| &\leq \int_{\epsilon}^{2\pi-\epsilon} a e^{x\cos \epsilon}\,da \\ &= (2\pi^2-2\pi\epsilon) e^{x\cos \epsilon}. \tag{2} \end{align} 
+a
+2\pi-a
+(1)
+ \int_0^{2\pi} a e^{x\cos a}\,da = 2\pi \int_0^\epsilon e^{x\cos a}\,da + O\left(e^{x\cos\epsilon}\right) \tag{3} 
+x \to \infty
+[0,\epsilon]
+(3)
+a = 0
+ \cos a = 1 - \frac{a^2}{2} + O(a^4). 
+ \cos a = 1 - b, 
+ \int_0^\epsilon e^{x\cos a}\,da = \frac{e^x}{\sqrt{2}} \int_0^{1-\cos\epsilon} b^{-1/2} \left(1-\frac{b}{2}\right)^{-1/2} e^{-xb}\,db. 
+ \left(1-\frac{b}{2}\right)^{-1/2} = \sum_{n=0}^{\infty} \binom{-1/2}{n}\left(-\frac{b}{2}\right)^n, 
+ \begin{align} &\frac{e^x}{\sqrt{2}} \int_0^{1-\cos\epsilon} b^{-1/2} \left(1-\frac{b}{2}\right)^{-1/2} e^{-xb}\,db \\ &\qquad \approx \frac{e^x}{\sqrt{2}} \sum_{n=0}^{\infty} \binom{-1/2}{n} \left(-\frac{1}{2}\right)^n \Gamma\left(n+\frac{1}{2}\right) x^{-n-1/2} \end{align} 
+x \to \infty
+(3)
+O(e^{x\cos\epsilon})
+x \to \infty
+e^x x^\lambda
+ \int_0^{2\pi} a e^{x\cos a}\,da \approx \sqrt{2}\pi e^x \sum_{n=0}^{\infty} \binom{-1/2}{n} \left(-\frac{1}{2}\right)^n \Gamma\left(n+\frac{1}{2}\right) x^{-n-1/2} 
+x \to \infty

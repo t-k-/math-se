@@ -1,0 +1,17 @@
+f
+f
+ \sum_{i=2}^{\infty}\frac{1}{i \cdot f(i)} 
+f(i) \gtrsim i^c
+c>0
+f(i)
+f(i) = 2^{\sqrt{\log(i)}}
+f(i) = \log(i)
+f
+ f^{\circ0}(x)=x\quad\text{and}\quad f^{\circ k+1}(x)=f\circ f^{\circ k}(x) 
+n>0
+n\ge0
+a>0
+ f_n(x)=\prod_{k=1}^n\log^{\circ k}(x) 
+ \begin{align} \int_{\exp^{\circ n}(1)}^\infty\frac{\mathrm{d}x}{xf_n(x)\log^{\circ n}(x)^a} &\stackrel{\hphantom{\text{induction}}}=\int_{\exp^{\circ n}(1)}^\infty\frac{\mathrm{d}\log(x)}{f_n(x)\log^{\circ n}(x)^a}\\ &\stackrel{\substack{x\mapsto e^x\\\hphantom{\text{induction}}}}=\int_{\exp^{\circ n-1}(1)}^\infty\frac{\mathrm{d}x}{xf_{n-1}(x)\log^{\circ n-1}(x)^a}\\ &\stackrel{\text{induction}}=\int_1^\infty\frac{\mathrm{d}x}{x^{a+1}}\\ &\stackrel{\hphantom{\text{induction}}}=\frac1a \end{align} 
+ \int_{\exp^{\circ n}(1)}^\infty\frac{\mathrm{d}x}{xf_n(x)} 
+ \int_{\exp^{\circ n}(1)}^\infty\frac{\mathrm{d}x}{xf_n(x)\log^{\circ n}(x)^a} 

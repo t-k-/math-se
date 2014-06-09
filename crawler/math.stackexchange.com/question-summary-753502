@@ -1,0 +1,22 @@
+y={(1+e^x)}^{0.5} =f(x)
+\frac{dy}{dx}= \lim_{h\to0}\frac {f(x+h)-f(x)}{h}
+\lim_{h\to0}\frac{(1+e^xe^h)^{0.5}-(1+e^x)^{0.5}}{h}
+\lim_{h\to0}{e^h-1\over h}=1
+\begin{align} {(1+e^xe^h)^{0.5}-(1+e^x)^{0.5}\over h}&={(1+e^xe^h)^{0.5}-(1+e^x)^{0.5}\over h}\cdot{(1+e^xe^h)^{0.5}+(1+e^x)^{0.5}\over(1+e^xe^h)^{0.5}+(1+e^x)^{0.5}}\\ &={(1+e^xe^h)-(1+e^x)\over h\left((1+e^xe^h)^{0.5}+(1+e^x)^{0.5}\right)}\\ &={e^x\over(1+e^xe^h)^{0.5}+(1+e^x)^{0.5}}\cdot{e^h-1\over h} \end{align}
+e^x/2(1+e^x)^{0.5}
+(e^h-1)/h
+e^x
+e^x
+\lim\limits_{h\to0}\frac{e^h-1}h=1
+\begin{align*} \lim_{h\to0}\frac{f(x+h)-f(x)}h & = \lim_{h\to0}\frac{\sqrt{1+e^{x+h}}-\sqrt{1+e^x}}h \\  & = \lim_{h\to0}\frac{\sqrt{1+e^{x+h}}-\sqrt{1+e^x}}h\cdot\dfrac{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}\\  & = \lim_{h\to0} \dfrac{1+e^{x+h}-1-e^{x}}{h}{\cdot}\dfrac{1}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}} \\ & = \lim_{h\to0} \dfrac{e^x(e^h-1)}{h}{\cdot}\dfrac{1}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}} \\ &= e^x\cdot\lim_{h\to0} \dfrac{e^h-1}{h}{\cdot}\dfrac{1}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}\\ &= \frac{e^x}{2\sqrt{1+e^{x}}} \end{align*}
+e^x\cdot\lim_{h\to0}\frac{e^h-1}h\overset{}=\lim_{h\to0}\dfrac{e^{x+h}-e^h}{h}=e^x
+\lim_{h\to0}\dfrac{1}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}=\dfrac{1}{\sqrt{1+e^{x}}+\sqrt{1+e^x}}=\dfrac{1}{2\sqrt{1+e^{x}}}.
+\sqrt{x}
+(1+e^x)^{0.5}
+e^x
+\frac{1}{2\sqrt{x}}
+\frac{dy}{dx} = \frac{1}{(1+e^x)^{0.5}} \cdot e^x
+\sqrt{1+e^{x+h}}-\sqrt{1+e^x}=\frac{1+e^{x+h}-(1+e^x)}{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}
+\implies \frac{\sqrt{1+e^{x+h}}-\sqrt{1+e^x}}h=e^x\cdot\frac1{\sqrt{1+e^{x+h}}+\sqrt{1+e^x}}\cdot\frac{e^h-1}h
+\implies \lim_{h\to0}\frac{\sqrt{1+e^{x+h}}-\sqrt{1+e^x}}h=e^x\cdot\frac1{\lim_{h\to0}(\sqrt{1+e^{x+h}}+\sqrt{1+e^x})}\cdot\lim_{h\to0}\frac{e^h-1}h
+ \begin{align} \frac{f(x)-f(x_0)}{x-x_0}&=\frac{\sqrt{1+e^x}-\sqrt{1+e^{x_0}}}{x-x_0}=\frac{1+e^x-1-e^{x_0}}{x-x_0}\frac{1}{\sqrt{1+e^x}+\sqrt{1+e^{x_0}}}\\ &= \frac{e^x-e^{x_0}}{x-x_0}\frac{1}{\sqrt{1+e^x}+\sqrt{1+e^{x_0}}} \xrightarrow{x \to x_0}e^{x_0}\frac{1}{2\sqrt{1+e^{x_0}}} \end{align} 

@@ -1,0 +1,19 @@
+ \frac{\partial}{\partial W}W^TW 
+W \in \mathbb{R}^{n\times m}
+ \frac{\partial}{\partial W}\|W^TW\|_\mathcal{F}^2 
+ \frac{\partial}{\partial X}\|X\|_\mathcal{F}^2 = \frac{\partial}{\partial X}Tr(XX^T) = 2X 
+W
+\frac{\partial}{\partial A}B
+A
+B
+\frac{\partial}{\partial A_{ij}}B_{kl}
+(W^TW)_{kl}=W_{mk}W_{ml}
+ \begin{align} \left[\frac{\partial}{\partial W}(W^TW)\right]_{ijkl} & = \frac{\partial}{\partial W_{ij}}(W_{mk}W_{ml}) \\ & = \frac{\partial W_{mk}}{\partial W_{ij}} W_{ml} + W_{mk} \frac{\partial W_{ml}}{\partial W_{ij}} \\ & = \delta_{im} \delta_{jk} W_{ml} + \delta_{im}\delta_{jl}W_{mk} \\ & = \delta_{jk} W_{il} + \delta_{jl} W_{ik} \end{align} 
+j
+k
+ \begin{align} \delta_{jj} W_{il} + \delta_{jl} W_{ij} & = (n+1) W_{il} \end{align} 
+n=\delta_{jj}
+\|X\|_\mathcal{F}^2 = \text{Tr}(X X^{T}) = \sum_{kl}X_{kl}^2
+X
+\left[\frac{\partial}{\partial X}\left(\text{Tr}(X X^{T})\right)\right]_{ij} = \frac{\partial}{\partial X_{ij}}\left(\sum_{kl}X_{kl}^2\right) = \sum_{kl}2 X_{kl} \delta_{ik}\delta_{jl} = 2 X_{ij} \; .
+\frac{\partial}{\partial W}W^TW \; .

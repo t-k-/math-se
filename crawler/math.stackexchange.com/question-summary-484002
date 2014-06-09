@@ -1,0 +1,13 @@
+\int_{0}^{2}\frac{t-1}{\sqrt{a^2+b^2-2ab(t-1)}}dt~~(0<a<b)
+I=\int_{0}^{2}\frac{t-1}{\sqrt{a^2+b^2-2ab(t-1)}}dt~~(0<a<b)
+t-1=u
+I=\int_{-1}^1\frac{u}{\sqrt{a^2+b^2-2abu}}du~~(0<a<b)
+a^2+b^2-2abu=v^2,
+\displaystyle  u=\frac{a^2+b^2-v^2}{2ab}
+\displaystyle du=-\frac {vdv}{ab}
+I=-\frac1{2a^2b^2}\int_{b+a}^{b-a}\frac{a^2+b^2-v^2}{v}vdv~~(0<a<b)
+2a^2b^2\cdot I=\int_{b-a}^{b+a}(a^2+b^2-v^2)dv~~(0<a<b)
+=(a^2+b^2)v\big |_{b-a}^{b+a}-\frac{v^3 \big |_{b-a}^{b+a}}3
+=(a^2+b^2)\{(b+a)-(b-a)\}-\frac{(b+a)^3-(b-a)^3}3
+=2a(a^2+b^2)-\frac{2a(3b^2+a^2)}3=\frac{2a\{3(a^2+b^2)-(3b^2+a^2)\}}3=\frac{4a^3}3 
+\implies I=\frac{\frac{4a^3}3}{2a^2b^2}=\frac{2a}{3b^2}

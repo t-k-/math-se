@@ -1,0 +1,6 @@
+\lim_{n\to\infty}\sum_{j=1}^{n^2}\dfrac{n}{n^2+j^2}
+S_{n}=\sum_{j=1}^{n^2}\dfrac{n}{n^2+j^2}=\sum_{j=1}^{n^2}\dfrac{1}{1+\left(\dfrac{j}{n}\right)^2}\dfrac{1}{n}
+\int_{\dfrac{j}{n}}^{\dfrac{j+1}{n}}\dfrac{dx}{1+x^2}<\dfrac{1}{1+\left(\dfrac{j}{n}\right)^2}\cdot\dfrac{1}{n}<\int_{\dfrac{j-1}{n}}^{\dfrac{j}{n}}\dfrac{dx}{1+x^2}
+\int_{\dfrac{1}{n}}^{\dfrac{n^2+1}{n}}\dfrac{dx}{1+x^2}<S_{n}<\int_{0}^{n}\dfrac{dx}{1+x^2}
+\lim_{n\to\infty}\int_{\dfrac{1}{n}}^{\dfrac{n^2+1}{n}}\dfrac{dx}{1+x^2}=\lim_{n\to\infty}\int_{0}^{n}\dfrac{dx}{1+x^2}=\int_{0}^{infty}\dfrac{dx}{1+x^2}=\dfrac{\pi}{2}
+\lim_{n\to\infty}\sum_{j=1}^{n^2}\dfrac{n}{n^2+j^2}=\dfrac{\pi}{2}

@@ -1,0 +1,25 @@
+0/0
+\lim_{x\to -\infty}\left(\frac{-2}{\pi}\cdot\arctan{x}\right)^x
+x\lt0
+\arctan x=-\arctan(1/x)-\pi/2
+(1+u(x))^x
+u(x)=(2/\pi)\arctan(1/x)\sim2/(\pi x)
+a
+(1+a/x)^x\to\mathrm e^a
+x\to\infty
+\mathrm e^{2/\pi}
+\frac{-2}{\pi}\cdot\arctan x=1-y
+\implies \arctan x=-(\frac\pi2-\frac\pi 2y)
+\implies x=\tan \{-(\frac\pi2-\frac\pi 2y)\}=-\tan(\frac\pi2-\frac\pi 2y)=-\cot \frac\pi2y
+x\to-\infty\implies\cot \frac\pi2y=\infty\implies y\to 0
+\lim_{x\to -\infty}\left(\frac{-2}{\pi}\cdot\arctan{x}\right)^x
+=\lim_{y\to0}(1-y)^{-\cot \frac{\pi y}2}
+=(\lim_{y\to0}(1-y)^{-y})^{\frac{\lim_{y\to0}\cos\frac{\pi y}2}{\lim_{y\to0}\frac{\sin \frac{\pi y}2}y}}=e^{\frac2\pi}
+\arctan x=y-\frac\pi2\implies x=\tan(y-\frac\pi2)=-\tan(\frac\pi2-y)=-\cot y
+x\to-\infty, \cot y=\infty\implies y\to 0
+\lim_{x\to -\infty}\left(\frac{-2}{\pi}\cdot\arctan{x}\right)^x
+=\lim_{y\to 0}\{\frac{-2}{\pi}(y-\frac\pi2)\}^{-\cot y}=\lim_{y\to 0}\left(1-\frac y{\frac\pi2}\right)^{-\cot y}
+z=\left(1-\frac y{\frac\pi2}\right)^{-\cot y}
+\implies \log z=-\cot y\log\left(1-\frac y{\frac\pi2}\right)=\frac{\cos y}{\left(\frac{-\sin y}{-y}\right)}\frac{\log\left(1-\frac y{\frac\pi2}\right)}{\frac{-y}{\frac\pi2}}\frac2\pi
+\lim_{y\to 0}\log z=\frac2\pi \frac{\lim_{y\to 0}\cos y}{\lim_{y\to 0}\left(\frac{-\sin y}{-y}\right)}\cdot \lim_{y\to 0}\frac{\log\left(1-\frac y{\frac\pi2}\right)}{\frac{-y}{\frac\pi2}}=\frac2\pi
+\lim_{y\to 0}z=e^{\frac2\pi}

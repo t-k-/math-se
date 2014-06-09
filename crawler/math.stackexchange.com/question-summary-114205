@@ -1,0 +1,51 @@
+p(0,0)=\frac{1}{18}
+p(0,1)=\frac{3}{18}
+p(1,0)=\frac{4}{18}
+p(1,1)=\frac{3}{18}
+p(2,0)=\frac{6}{18}
+p(2,1)=\frac{1}{18}
+E[X|Y]= E[X]
+E[Y]= E[Y|X]
+E[X|Y]
+E[X]
+E[X]=E[E[X|Y]]
+E[Y]=E[E[Y|X]]
+X
+Y
+X
+Y
+X
+Y
+X
+p(x,y)
+X
+0
+1
+2
+X
+X
+\eqalign{ p_X(0)=P[X=0]&=\textstyle P[X=0 ,Y=0]+P[X=0,Y=1]= {1\over 18}+{3\over18}={4\over 18}\cr p_X(1)=P[X=1]&=\textstyle P[X=1 ,Y=0]+P[X=1,Y=1]= {4\over 18}+{3\over18}={7\over 18}\cr p_X(2)=P[X=2]&=\textstyle P[X=2 ,Y=0]+P[X=2,Y=1]= {6\over 18}+{1\over18}={7\over 18}. } 
+p_X(0)+p_X(1)+p_X(2)=1
+E[X]
+\tag{1} E[X]=0\cdot{4\over18}+1\cdot{7\over18}+2\cdot{7\over18}={14\over18}. 
+Y
+Y
+0
+1
+Y
+\eqalign{ p_Y(0)=P[Y=0]&=\textstyle P[Y=0 ,X=0]+P[Y=0,X=1]+P[Y=0,X=2]\cr &= {1\over 18}+{4\over18}+ {6\over 18}\cr & ={11\over18}\cr p_Y(1)=P[Y=1]&=\textstyle P[Y=1 ,X=0]+P[Y=1,X=1]+P[Y=0,X=2]\cr &=  {3\over 18}+{3\over18}+ {1\over 18}\cr & ={7\over18}.\cr } 
+p_Y(0)+p_Y(1) =1
+Y
+ E[Y]=0\cdot{11\over18}+1\cdot{7\over18} ={7\over18}. 
+X
+Y
+ \matrix{ X\backslash Y & 0&1  \cr  0\ \ \ \ \ &{1\over18}&{3\over18}  \cr                         1\ \ \ \ \ &{4\over18} &{3\over18} \cr \cr  2\ \ \ \ \  &{6\over18} &{1\over18}   }  
+\eqalign{ \Bbb E[X|Y=0]&= 0\cdot P[X=0|Y=0]+1\cdot P[X=1|Y=0]+2\cdot P[X=2|Y=0]\cr              &=0+{p(1,0)\over p_Y(0)}+{p(2,0)\over p_Y(0)}\cr              &={4/18\over11/18}+{6/18\over11/18}\cr              &={10\over11}. } 
+\eqalign{ \Bbb E[X|Y=1]&= 0\cdot P[X=0|Y=1]+1\cdot P[X=1|Y=1]+2\cdot P[X=2|Y=1]\cr              &=0+{p(1,1)\over p_Y(1)}+{p(2,1)\over p_Y(1)}\cr              &={3/18\over7/18}+{1/18\over7/18}\cr              &={4\over7}. } 
+E[X|Y]
+Y
+(1)
+\eqalign{ E[E[X|Y]]&= \sum_y E[X|Y=y]\cdot P[Y=y]\cr  &=      E[X|Y=0]\cdot P[Y=0]+ E[X|Y=1]\cdot P[Y=1]                      \cr  &={10\over11}\cdot {11\over18}+{4\over7}\cdot{7\over18}={14\over18}; } 
+E[Y]=E[E[Y|X]]
+E[X] = E(E[X|Y])
+E[Y] = E(E[Y|X])

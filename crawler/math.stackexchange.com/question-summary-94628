@@ -1,0 +1,56 @@
+a,b,c,d \in \mathbb R
+a<b
+c<d
+f: [a,b]\times [c,d] \to \mathbb R
+\partial_1 f: [a,b]\times [c,d]\to\mathbb R
+t\in [a,b]
+\frac{\mathrm d}{\mathrm dt}\int_c^d f(t,x) \, \mathrm dx = \int_c^d \partial_1 f(t,x)\, \mathrm dx
+f(t',x) - f(t,x) = \int_{t}^{t'} \partial_1f(s,x)\, \mathrm ds
+ \begin{align} \int_c^d f(t',x)-f(t,x) \, \mathrm dx &= \int_c^d \int_{t}^{t'} \partial_1f(s,x)\, \mathrm ds \, \mathrm dx \\ &= \int_{t}^{t'} \int_c^d \partial_1f(s,x)\, \mathrm dx \, \mathrm ds \end{align} 
+ \begin{align} \frac{\mathrm d}{\mathrm dt}\int_c^d f(t,x) \, \mathrm dx  &= \lim_{t'\to t} \frac{1}{t'-t}\int_c^d f(t',x)-f(t,x) \, \mathrm dx \\ &= \lim_{t'\to t} \frac{1}{t'-t}\int_{t}^{t'} \int_c^d \partial_1f(s,x)\, \mathrm dx \, \mathrm ds \\ &= \int_c^d \partial_1f(t,x)\, \mathrm dx \end{align} 
+t \mapsto \int_c^d \partial_1f(t,x)\, \mathrm dx
+L^1
+t
+t
+t\in [a,b]
+t\mapsto \int_c^d \partial_1f(t,x)\, \mathrm dx
+\frac{\mathrm d}{\mathrm dt} \infty = 0
+\infty
+\partial_1f(t,x)
+|\partial_1f(t,x)|\le g(x)
+x,t
+t'\to t
+t
+\partial_1f(t,x)
+[c,d]
+t\in [a,b]
+\int_c^d f(t,x) \, \mathrm dx
+t
+\frac{\mathrm d}{\mathrm dt}\int_c^d f(t,x) \, \mathrm dx  = \lim_{t'\to t} \frac{1}{t'-t}\int_c^d f(t',x)-f(t,x) \, \mathrm dx 
+t_n
+t
+\lim g_n(x)=\partial_1 f(t,x)
+g_n(x)=\frac{f(t_n,x)-f(t,x)}{t_n-t}
+g_n(x)
+|g_n(x)|\le \sup_{t\in [a,b]}|\partial_1 f(t,x)|\le g(x)
+\lim_{t_n\to t} \frac{1}{t_n-t}\int_c^d [f(t_n,x)-f(t,x)]\mathrm dx
+ \int_c^d \lim_{t_n\to t}\frac{f(t_n,x)-f(t,x)}{t_n-t}\mathrm dx=\int_c^d \partial_1f(t,x) \, \mathrm dx
+I = [0,1]
+f \in L^1(I\times I)
+t
+t
+f: I\times I\to \mathbb R_{\ge 0}
+f(t,x) = \sum_{n=1}^\infty \chi_{I_n}(x) \beta_n(t)
+\beta_n
+t=0
+x
+f(t,x)
+\partial_1f(t,x) = \sum_{n=1}^\infty \chi_{I_n}(x) \beta_n'(t)
+f, \partial_1f \in L^1(I\times I)
+m\in \mathbb N
+\partial_1f(0,x) = \sum_n \chi_{I_n}(x) \underbrace{\beta_n'(0)}_{=0\; \forall n} = 0
+ \begin{align} \int_0^1\int_0^1 |\partial_1f(t,x)|\, dt\, dx  &=  \int_0^1\int_0^1 \left(\sum_{n = 1}^\infty \chi_{I_n}(x)\beta_n'(t)\right) \, dt\, dx\\ &= \sum_{n=1}^\infty |I_n| (\beta_n(1) - \beta_n(0)) \\ &= \sum_{n=1}^\infty 2^{-n} \frac{2^n}{n(n+1)} \\ &= \sum_{n=1}^\infty \left(\frac1n - \frac1{n+1}\right) \\ &= 1 < \infty \end{align} 
+ \int_0^1\int_0^1 |f(t,x)|\, dt\, dx \le 1 < \infty 
+ \begin{align} \int_0^1 \frac{f(1/m, x)-f(0,x)}{1/m} \, dx  &= m \int_0^1 \left(\sum_{n=1}^\infty \chi_{I_n}(x)[\beta_n(1/m) - \beta_n(0)]\right)\, dx \\ &= m\sum_{n=1}^\infty |I_n|\beta_n(1/m) \\ &\ge m \sum_{n=m}^\infty 2^{-n} \frac{2^n}{n(n+1)} \\ &= m\cdot \frac{1}{m} = 1 \end{align} 
+\limsup_{t\to 0} \int_0^1 \frac{f(t, x)-f(0,x)}{t} \, dx \ge 1 \ne 0 = \int_0^1 \partial_1f(0,x) \, dx
+f

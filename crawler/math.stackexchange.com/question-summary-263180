@@ -1,0 +1,44 @@
+a_i
+\sum_{i =1}^{26} \frac{a_i}{\sum_{j =0}^{i} a_j^2} \leq \sqrt{26}
+a_0 = 1
+\frac{a_1}{(1+a_{1}^2)} + \frac{a_2}{(1+ a_{1}^2 + a_{2}^2)} + \cdots + \frac{a_{26}}{(1+ a_1^2+ \cdots + a_{26}^2)}
+a_1, \ldots, a_n
+\mathbb{R}
+   \sum_{i=1}^n \frac{a_i}{1 + \sum_{j=1}^i a_j^2} \leq \sqrt{n}. 
+S_n
+a_i \geq 0
+S_n
+i
+f : [n] \to \mathbb{R}^+
+S_n \leq f(1)
+f(1) = \max_{t_1, \ldots, t_n} S_n
+   a_i = t_i \sqrt{1 + a_1^2 + \cdots + a_{i-1}^2} 
+   \frac{a_i}{1 + \sum_{j=1}^{i-1} a_j^2 + a_i^2} = \frac{1}{\sqrt{1 + \sum_{j=1}^{i-1} a_j^2}} \frac{t_i}{1 + t_i^2} 
+   \frac{1}{\sqrt{1 + \sum_{j=1}^{i-1} a_j^2}} = \prod_{j=1}^{i-1} \frac{1}{\sqrt{1 + t_j^2}}. 
+   S_n = \sum_{i=1}^n \frac{t_i}{1 + t_i^2} \prod_{j=1}^{i-1} \frac{1}{\sqrt{1 + t_j^2}}. 
+   S_n = \frac{t_1}{1 + t_1^2} + \frac{1}{\sqrt{1 + t_1^2}} \left( \frac{t_2}{1 + t_2^2} + \frac{1}{\sqrt{1 + t_2^2}} \left( \cdots \right)\right) 
+   f(n) = \max_{t_n \geq 0} \frac{t_n}{1 + t_n^2} 
+   f(k) = \max_{t_k \geq 0} \frac{t_k}{1 + t_k^2} + f(k+1) \frac{1}{\sqrt{1 + t_k^2}}. 
+M
+f(k+1)
+f(k)
+k
+n
+   \max_{t_k \geq 0} \frac{t_k}{1 + t_k^2} + M \frac{1}{\sqrt{1 + t_k^2}} 
+   f(k) \leq \sqrt{n+1-k} 
+m \geq 1
+t \geq 0
+(1, mt^2)
+   f(n) = \max_{t_n \geq 0} \frac{t_n}{1 + t_n^2} \leq \frac{1}{2}. 
+   \frac{t}{1 + t^2} + \sqrt{m} \frac{1}{\sqrt{1 + t^2}} \leq \sqrt{m+1} 
+   \frac{t}{1 + t^2} \leq \frac{t}{\sqrt{1 + t^2}} 
+   \frac{t + \sqrt{m}}{\sqrt{1 + t^2}} \leq \sqrt{m+1}. 
+   \frac{t^2 + 2 t \sqrt{m} + m}{1 + t^2} \leq m + 1 
+   t^2 + 2 t \sqrt{m} + m \leq m + 1 + (m + 1) t^2 
+   2 t \sqrt{m} \leq 1 + m t^2. 
+n
+x\in \mathbb{R}^{n+1}
+\|x\|\ge 1
+\sum_{k=0}^n |x_k| \le \left(\sum_{k=0}^n x^2_k\right)^{1/2}  \left(\sum_{k=0}^n 1\right)^{1/2} = \sqrt{n+1}\|x\|  
+\sum_{k=0}^n {|x_k|\over {\|x\|^2}} \le {\sqrt{n+1}\over \|x\|}
+ \sum_{k=0}^n {|x_k|\over {\|x\|^2}} \le \sqrt{n+1}

@@ -1,0 +1,25 @@
+0<x<1
+K(x)\sim -\frac{1}{2}\ln(1-x)
+K(x)=\int\limits_0^{\pi /2} \frac{ds}{\sqrt{1-x\sin^2s}}
+f(x)= (1-x\sin^2s)^{-1/2}
+x=1
+f(x)\approx f(1)+f'(1)(x-1)
+K(x)\sim \left[\frac{5-x}{4}\ln|\sec s + \tan s|\right]_0^{\pi/2} - \left[\frac{1-x}{4}\sec s \tan s \right]_0^{\pi/2}
+s=\pi/2
+K(x) = \frac{\pi}{2}\,_2F_1(\frac12,\frac12;1;x)\tag{*1}
+\gamma = \alpha + \beta
+\alpha
+\beta \ne 0, -1, -2, \ldots
+|\arg(1-x)| < \pi
+|1-x| < 1
+x = 1
+(*1)
+x
+1
+O((1-x)\log(1-x))
+K(x) \sim -\frac12 \left\{ 2\psi(\frac{1}{2}) - 2\psi(1) + \log(1-x)\right\}           = \log 4 - \frac12\log(1-x)
+2^{nd}
+\delta \to 0
+o(1)$$\color{blue}{^{[1]}}
+\begin{align} K(x)  = & \frac{1}{\sqrt{x}}\int_0^{\frac{\pi}{2}} \frac{ds}{\sqrt{\delta^2 + \cos^2\!s}}\\ = & \frac{1}{\sqrt{x}}\int_0^1 \frac{du}{\sqrt{\delta^2 + u^2}\sqrt{1-u^2}}\\ = & \frac{1}{\sqrt{x}}\left\{ \int_0^1  \frac{du}{\sqrt{\delta^2 + u^2}} +  \int_0^1 \frac{1-\sqrt{1-u^2}}{\sqrt{\delta^2+u^2}} \frac{du}{\sqrt{1 - u^2}} \right\}\\ = & \frac{1}{\sqrt{x}}\left\{ \int_0^1 \frac{du}{\sqrt{\delta^2 + u^2}} + \int_0^{\frac{\pi}{2}}\frac{1-\sin s}{\sqrt{\delta^2 + \cos^2\!s}} ds \right\}\\ = & \frac{1}{\sqrt{x}}\left\{ \int_0^{\sinh^{-1}\frac{1}{\delta}} d\theta + \int_0^{\frac{\pi}{2}}\frac{1-\sin s}{\sqrt{\delta^2 + \cos^2\!s}} ds \right\}\\ \end{align}
+\color{blue}{^{[1]}}$, we find: 

@@ -1,0 +1,19 @@
+a_1,a_2,a_3,\ldots
+a_1=1
+a_2=2
+a_{n+2}=\frac2{a_{n+1}}+a_n\;;
+\frac{a_{2012}2^{2009}}{2011}
+a_{n+2}=\frac2{a_{n+1}}+a_n\iff a_{n+2}a_{n+1}=a_{n+1}a_n+2
+\implies a_{n+2}a_{n+1}=2n+a_2a_1=2n+2\ \ \ \ (1)
+\text{Replacing }n\text{ with } n-1,\implies a_{n+1}a_n=2n
+\implies a_{n+2}a_{n+1}\cdot2n=a_{n+1}a_n(2n+2)
+\implies a_{n+2} =a_n\frac{(n+1)}n
+n=2m-2\implies a_{2m} =a_{2m-2}\frac{(2m-1)}{2m-2}
+ a_{2m} =\frac{(2m-1)(2m-3)\cdots3}{(2m-2)(2m-4)\cdots4}a_2
+a_2=2
+\text{Now,} \frac{(2m-1)(2m-3)\cdots3}{(2m-2)(2m-4)\cdots4}=2\frac{(2m-1)(2m-2)\cdots4\cdot3\cdot2\cdot1}{2^{m-1}\cdot (m-1)! ((2m-2)\cdot4\cdot2)}=\frac{(2m-1)!}{2^{2m-2} \{(m-1)!\}^2}
+a_{n+2}a_{n+1}=2n+2
+a_2=2
+ \begin{align} \frac{a_{n+2}}{a_n} &=\frac{a_{n+2}}{a_{n+1}}\frac{a_{n+1}}{a_n}\\ &=\frac{n+1}{n} \end{align} 
+ \begin{align} \frac{a_{2n}}{a_2} &=\frac{2n-1}{2n-2}\frac{2n-3}{2n-4}\cdots\frac32\\ &=\color{#C00000}{\frac1{4^{n-1}}\frac{(2n-1)!}{(n-1)!(n-1)!}}\\ &=\frac{n}{2^{2n-1}}\binom{2n}{n} \end{align} 
+ a_{2n}=\frac{n}{4^{n-1}}\binom{2n}{n} 

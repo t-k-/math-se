@@ -1,0 +1,28 @@
+f:\mathbb R→\mathbb R
+f(0)=0
+F(x,y)=xf(y)+yf(x)
+F
+\frac{\partial f}{\partial x}(0,0)
+\frac{\partial f}{\partial y}(0,0)
+\frac{\partial f}{\partial x}(0,0)=0=\frac{\partial f}{\partial y}(0,0)
+F
+\lim_{(x,y)\rightarrow (0,0)} \frac {|F(x,y)-(F(0,0)+<∇F(0,0),(x,y)>)|} {||(x,y)||}
+0
+\lim_{(x,y)\rightarrow (0,0)} \frac {|xf(y)+yf(x)|} {||(x,y)||}
+0
+0
+xf(y)+yf(x)
+<(x,y),(f(y),f(x)>
+|<(x,y),(f(y),f(x)>|\le||(x,y)||||(f(y),f(x))||
+0\le\lim_{(x,y)\rightarrow (0,0)} \frac {|xf(y)+yf(x)|} {||(x,y)||}\le\lim_{(x,y)\rightarrow (0,0)} \frac {||(x,y)||||(f(y),f(x))||} {||(x,y)||}
+\lim_{(x,y)\rightarrow (0,0)} \frac {||(x,y)||||(f(y),f(x))||} {||(x,y)||}=\lim_{(x,y)\rightarrow (0,0)} ||(f(y),f(x))||=||(f(0),f(0))||=0
+\lim_{(x,y)\rightarrow (0,0)} \frac {|F(x,y)-(F(0,0)+<∇F(0,0),(x,y)>)|} {||(x,y)||}
+0
+F
+(0,0)
+$$ $0\le\lim_{(x,y)\rightarrow (0,0)} \frac {|xf(y)+yf(x)|} {||(x,y)||}\le\lim_{(x,y)\rightarrow (0,0)} \frac {||(x,y)||||(f(y),f(x))||} {||(x,y)||}$. The last expression is $\lim_{(x,y)\rightarrow (0,0)} \frac {||(x,y)||||(f(y),f(x))||} {||(x,y)||}=\lim_{(x,y)\rightarrow (0,0)} ||(f(y),f(x))||=||(f(0),f(0))||=0$. By the squeeze theorem, I can conclude that  $\lim_{(x,y)\rightarrow (0,0)} \frac {|F(x,y)-(F(0,0)+<∇F(0,0),(x,y)>)|} {||(x,y)||}$=$0$, which means that $F$ is differentiable at the point $(0,0)$. 
+\Delta f(0,0)=A\Delta x+B\Delta y+o\left(\sqrt{(\Delta x)^2+(\Delta y)^2}\right)
+A
+B
+(\Delta x,\Delta y)
+\Delta F(0,0)=F(\Delta x,\Delta y)-F(0,0)=F(\Delta x, \Delta y)=\Delta xf(\Delta y)+\Delta yf(\Delta x)

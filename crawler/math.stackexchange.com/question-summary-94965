@@ -1,0 +1,17 @@
+[1, N]
+1/6
+1/2
+N^3
+(N^3-N)/6
+\frac{1}{2}+\frac{1}{2N^2}
+X_1
+X_2
+X_3
+[1,n]
+k_2=k_3
+k_2< k_3
+k_2 > k_3
+\min(n,k_2+k_3)
+n
+ \begin{eqnarray}    p = \mathbb{P}\left( \left[ \begin{array}{c} X_1+X_2 \geqslant X_3 \\ X_1+X_3 \geqslant X_2 \\  X_2+X_3 \geqslant X_1 \end{array}\right] \right) &=& \sum_{k_3=1}^n \sum_{k_2=1}^{n} \sum_{k_1=1}^{n} \frac{1}{n^3} \left[ \begin{array}{c} k_1+k_2 \geqslant k_3 \\ k_1+k_3 \geqslant k_2 \\  k_2+k_3 \geqslant k_1 \end{array}\right] \\  &=&    \sum_{k_3=1}^n \sum_{k_2=1}^{n} \sum_{k_1=\max(1,|k_3-k_2|)}^{\min(n, k_2+k_3)} \frac{1}{n^3} \\    &=& \sum_{k_3=1}^n \sum_{k_2=1}^{n} \frac{ \min(n,k_2+k_3) - \max(1,|k_3-k_2|) + 1}{n^3} \\ \end{eqnarray} 
+   p = \frac{1}{2} + \frac{3n-2}{2 n^2} 

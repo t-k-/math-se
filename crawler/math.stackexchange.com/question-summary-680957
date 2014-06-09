@@ -1,0 +1,15 @@
+F_1=F_2=1
+F_{n+2}=F_n+F_{n+1}
+n\ge 1
+\sum_{i=1}^n  F_i= F_{n+2} - 1
+n
+\sum_{k=1}^n F_k = \color{red}{\sum_{k=1}^{n-1} F_k} + F_n = \color{red}{F_{n+1}-1}+F_n = F_{n+2}-1
+\rm\ g(n)\ =\ \sum_{i\: =\: 1}^n\:\ f(i)\ \  \iff\ \ \  g(n) - g(n\!-\!1)\ =\ f(n)\ \ for\ \ n> 1,\,\ \ g(1)=f(1)
+\rm\ f(n) = F_n,\ \ g(n) = F_{n+2}-1,\, 
+\rm\,g(n)-g(n\!-\!1) = F_{n+2}-F_{n+1} = F_n = f(n),\ 
+\rm\ g(1) = f(1) 
+\rm \underbrace{\overbrace{g(1)}^{\large f(1)}\phantom{-g(1)}}_{\large =\  0}\!\!\!\!\!\!\!\!\!\!\!\!\!\overbrace{-\,g(1)\!+\!\phantom{g(2)}}^{\large f(2)}\!\!\!\!\!\!\!\!\! \underbrace{g(2) -g(2)}_{\large =\ 0}\!\!\!\!\!\!\!\!\!\!\!\!\!\!\overbrace{\phantom{-g(2)}+ g(3)}^{\large f(3)}\!\!\!\!\!\!\!\!\!\!\underbrace{\phantom{g(3)}-g(3)}_{\large =\ 0}\!+\:\cdots +\!g(n)\ =\ g(n) 
+F_{n + 2} = F_n + F_{n + 1}
+F_n = F_{n + 2} - F_{n + 1}\\ \sum_{i = 1}^nF_n = \sum_{i = 1}^n \left(F_{n + 2} - F_{n + 1}\right)\\ \sum_{i = 1}^nF_n = F_{n + 2} - F_2\\ \sum_{i = 1}^nF_n = F_{n + 2} - 1
+i = 1
+n

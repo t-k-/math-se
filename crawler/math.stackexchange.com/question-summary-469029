@@ -1,0 +1,18 @@
+(X,d)
+A
+X
+d_A:X\to\mathbb R:x\mapsto\displaystyle\inf_{a\in A} d(x,a)
+c\in X
+\delta>0.
+\exists~\epsilon>0
+x\in B(c,\epsilon)\implies |d_A(x)-d_A(c)|<\delta.
+\displaystyle\epsilon=\frac{\delta}{2}.
+x\in B(c,\epsilon)
+a\in A,~|d(x,a)-d(a,c)|\le d(x,c)<\epsilon
+-\epsilon<d(x,a)-d(a,c)<\epsilon.
+\forall~x\in B(c,\epsilon)
+\forall~a\in A,~-\epsilon+d(a,c)<d(x,a)\\\implies -\epsilon+d_A(c)< d(a,x)\\\implies d_A(c)\le d_A(x)+\epsilon\\\implies d_A(c)-d_A(x)\le\epsilon\cdots(1)
+\forall~x\in B(c,\epsilon)
+\forall~a\in A,~d_A(x)\le d(x,a)<\epsilon+d(a,c)\\\implies d_A(x)-\epsilon<d(a,c)\\\implies d_A(x)-\epsilon\le d_A(c)\\\implies-\epsilon\le d_A(c)- d_A(x)\cdots(2)
+|d_A(x)-d_A(c)|\le\epsilon<\delta.
+d_A

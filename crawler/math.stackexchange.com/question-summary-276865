@@ -1,0 +1,13 @@
+ A\colon L^2([0,1])\to L^2([0,1]), x\mapsto\int\limits_0^t x(s)\, ds 
+ \sigma_j=\frac{1}{(j-1/2)\pi},~~~~~v_j(x)=\sqrt{2}\cos((j-1/2)\pi x),~~~~~u_j(x)=\sqrt{2}\sin((j-1/2)\pi x). 
+A^*
+x\mapsto\int\limits_t^1 x(s)\, ds
+Av_j=\sigma_ju_j
+A^*u_j=\sigma_jv_j
+\omega=(j-1/2)\pi x
+\langle v_j,v_j\rangle_{L^2([0,1])}=\frac{2}{(j-1/2)\pi}\int\limits_0^{(j-1/2)\pi}\lvert\cos(\omega)\rvert^2\, d\omega=1
+\langle u_j,u_j\rangle_{L^2([0,1])}=1
+k\neq j
+\langle v_j,v_k\rangle_{L^2([0,1])}=\int\limits_0^1 v_j(x)\overline{v_k(x)}\, dx=\int\limits_0^1 v_j(x)v_k(\overline{x})\, dx=\int\limits_0^1 v_j(x)v_k(x)\, dx
+x\in [0,1]
+\langle u_j,u_k\rangle_{L^2([0,1])}=0

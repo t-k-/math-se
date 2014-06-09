@@ -1,0 +1,13 @@
+a, b, c, d,\ldots
+n
+\operatorname{lcm}(a, b, c,\ldots)
+\sum_{i=1}^{\lfloor k/a\rfloor}ai + \sum_{i=1}^{\lfloor k/b\rfloor}bi + \sum_{i=1}^{\lfloor k/c\rfloor}ci + \cdots-\sum_{i=1}^{\lfloor k/\operatorname{lcm}(a,b,c,\ldots)\rfloor}\operatorname{lcm}(a,b,c,\ldots)i
+a
+b
+c
+a
+b
+c
+\operatorname{lcm}(x)
+\sum_i^{\frac{k}{a}} ai +\sum_i^{\frac{k}{b}}bi + ... \left( \text{one element sums} \right) - \left( \sum_i^{\frac{k}{ \text{lcm}(a,b)}} \text{lcm}(a,b)i + \left( \text{two element sums} \right) \right) +
+ \left( \sum_i^{\frac {k}{\text {lcm} (a,b,c)}} \text{lcm}(a,b,c)i + \text{three element sums} \right) - \left( \text{four element sums} \right) ... 

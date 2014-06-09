@@ -1,0 +1,13 @@
+f
+[\alpha,\beta]
+Q: \alpha = a_0 < a_1 < ... < a_N = \beta 
+[\alpha,\beta]
+\underline{\int_{\alpha}^{\beta}}f \,dx = \sum \limits_{i = 1}^{N} \underline{\int_{\alpha_{i-1}}^{\alpha_i}}f \,dx
+\forall \epsilon > 0, \exists \delta > 0
+||Q|| < \delta \implies \underline{\int_{\alpha}^{\beta}}f \,dx \geq L(Q,f) > \underline{\int_{\alpha}^{\beta}}f \,dx - \epsilon 
+\underline{\int_{\alpha}^{\beta}}f \,dx \leq \sum \limits_{i = 1}^{N} \underline{\int_{\alpha_{i-1}}^{\alpha_i}}f \,dx
+\underline{\int_{\alpha}^{\beta}}f \,dx \geq \sum \limits_{i = 1}^{N} \underline{\int_{\alpha_{i-1}}^{\alpha_i}}f \,dx
+Q
+P_i = \{{a_i,a_{i-1}}\}
+||P_i|| \leq ||Q|| < \delta
+ \underline{\int_{a_{i-1}}^{a_i}}f \,dx \geq L(P_i,f) > \underline{\int_{a_{i-1}}^{a_i}}f \,dx - \epsilon 

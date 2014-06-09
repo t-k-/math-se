@@ -1,0 +1,45 @@
+f:\{-1,1\}^n\to\{-1,1\}
+i
+f
+x
+\{-1,1\}^n
+\hat x_i
+x
+i
+x=(1,1,1,1,-1)
+\hat x_3=(1,1,-1,1,-1)
+\operatorname{Inf}_i(f)=\Pr_{x}[f(x)\neq f(\hat x_i)]
+J_k
+k
+f\in J_k
+f
+Inf_i(f)>0
+1\leq i\leq k
+Inf_i(f)=0
+i>k
+0\leq \epsilon \leq 1
+\epsilon
+\Pr_{f\in J_k}[\forall i\quad Inf_i(f)< \epsilon]=?
+i
+m
+i
+2^{k-1}\choose m
+k-1
+m
+2
+(-1,1)
+(1,-1)
+2
+(-1,-1)
+(1,1)
+2^{2^{k-1}}
+m
+2^{k-1}\choose m
+i
+\operatorname{Inf}_i(f)=\Pr_{x}[f(x)\neq f(\hat x_i)]=\frac{1-2^{-n}\sum_xf(x)f(\hat x_i)}2\;.
+f
+f(x)=\sum_j a_jf_j(x)\;,
+ \begin{align} \operatorname{Inf}_i(f) &=\frac{1-2^{-n}\sum_x(\sum_j a_jf_j(x))(\sum_{j'} a_{j'}f_{j'}(\hat x_i))}2\\ &=\frac{1-2^{-n}\sum_j\sum_{j'}a_ja_{j'}\sum_xf_j(x)f_{j'}(\hat x_i)}2\\ &=\frac{1-2^{-n}\sum_j\sum_{j'}a_ja_{j'}\sum_xf_j(x)(\pm f_{j'}(x))}2\\ &=\frac{1-\sum_j(\pm a_j^2)}2\;,\\ \end{align} 
+f_j
+x_i
+a_j

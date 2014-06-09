@@ -1,0 +1,20 @@
+f
+\forall x>0, f^{\prime}(x)\rightarrow 0
+x\rightarrow\infty
+g(x)=f(x+1)-f(x)
+g(x)\rightarrow 0
+x\rightarrow\infty
+g(x)=\frac{f(x+1)-f(x)}{(x+1)-x}=\frac{f(x+1)-f(x)}{1}
+\lim_{n\rightarrow\infty} f'(x)=0\implies \forall\varepsilon >0, \exists N>0 \space\space\text{s.t.}\space\space\space |f'(x)|<\varepsilon \space\space\forall x>N
+\left| \lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}\right| < \varepsilon \space\space\forall x>N
+h
+1
+g(x)
+\varepsilon
+\varepsilon>0
+R=R(\varepsilon)>0
+x \ge R
+\lim_{x\to \infty}g(x)=0
+ \lim_{x\to \infty}f'(x)=0, 
+ |f'(x)|\le \varepsilon \quad \forall x \ge R. 
+ \vert g(x)\vert=\vert f(x+1)-f(x)\vert=\left\vert\int_x^{x+1}f'(t)\,dt\right\vert \le \int_x^{x+1}|f'(t)|\,dt \le \int_x^{x+1}\varepsilon\,dt=\varepsilon, 

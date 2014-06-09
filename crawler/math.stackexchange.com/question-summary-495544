@@ -1,0 +1,7 @@
+1+q\int_{0}^{1}x^{1-qx}dx=\sum_{k=0}^{\infty}\left(\dfrac{q}{k+1}\right)^k\cdots\cdots(1)
+\int_{0}^{1}x^{-qx}dx=\sum_{n=0}^{\infty}\dfrac{q^n}{(n+1)^{n+1}}
+\int_{0}^{1}x^{-qx}=\int_{0}^{1}e^{qx\ln{\frac{1}{x}}}dx=\sum_{n=0}^{\infty}\frac{q^n}{n!}\int_{0}^{1}x^n\ln^n{\frac{1}{x}}dx
+\ln{\dfrac{1}{x}}=t\Longrightarrow \int_{0}^{1}x^n\ln^n{\dfrac{1}{x}}dx=\int_{0}^{\infty}e^{-(n+1)t}t^ndt=\dfrac{\Gamma{(n+1)}}{(n+1)^{n+1}}
+\int_{0}^{1}x^{-qx}dx=\sum_{n=0}^{\infty}\dfrac{q^n}{(n+1)^{n+1}}
+ \begin{align} \int_0^1 x^{1-qx}dx &=\int_0^1 xe^{-qx}dx\\ &=\int_0^1 x\sum\limits_{n=0}^\infty \frac{(qx\ln x^{-1})^n}{n!}dx\\ &=\sum\limits_{n=0}^\infty\frac{q^n}{n!}\int_0^1 x^{n+1}\ln^n x^{-1}dx\qquad\{\ln x^{-1}=t\}\\ &=\sum\limits_{n=0}^\infty\frac{q^n}{n!}\int_{+\infty}^0 e^{-(n+1)t}t^n (-e^{-t})dt\\ &=\sum\limits_{n=0}^\infty\frac{q^n}{n!}\int_0^\infty e^{-(n+2)t}t^n dt\qquad \{(n+2)t=s\}\\ &=\sum\limits_{n=0}^\infty\frac{q^n}{n!}\int_0^\infty e^{-s}(n+2)^{-n}s^n (n+2)^{-1}ds\\ &=\sum\limits_{n=0}^\infty\frac{q^n}{(n+2)^{n+1}} \end{align} 
+ \begin{align} 1+q\int_0^1 x^{1-qx}dx &=1+q\sum\limits_{n=0}^\infty\frac{q^n}{(n+2)^{n+1}}\\ &=1+\sum\limits_{n=0}^\infty\frac{q^{n+1}}{(n+2)^{n+1}}\qquad\{k=n+1\}\\ &=\frac{q^0}{(0+1)^0}+\sum\limits_{k=1}^\infty\frac{q^k}{(k+1)^k}\\ &=\sum\limits_{k=0}^\infty\left(\frac{q}{k+1}\right)^k\\ \end{align} 

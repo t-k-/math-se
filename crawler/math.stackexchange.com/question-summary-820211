@@ -1,0 +1,21 @@
+X_1, \cdots, X_n
+iid
+\mu
+\sigma^2
+E[\Phi(\bar X)]
+\bar X:=\frac{\sum_{i=1}^nX_i}{n}
+\Phi(\mu)
+Y:= \bar X
+\mu
+\frac{\sigma^2}{n}
+E[\Phi(\bar X)] = \int_{-\infty}^\infty \Phi(y) f_Y(y) dy.
+z=\frac{y-\mu}{\sigma/\sqrt{n}}
+\int_{-\infty}^\infty \Phi(\mu+\frac{\sigma z}{\sqrt{n}}) \phi(z) dz
+Y = \Phi(X)
+X \sim N(\mu, \sigma^2)
+Z\sim N(0,1)
+X
+(1)
+\begin{align} E[Y] = E[\Phi(X)] &= \int_{-\infty}^\infty \Phi(x)f_X(x)\,\mathrm dx \tag{1} \end{align}
+P\{Z \leq x\mid X = x\} = P\{Z \leq x\} = \Phi(x)
+\begin{align} E[\Phi(X)] &= \int_{-\infty}^\infty \Phi(x)f_X(x)\,\mathrm dx\\ &= \int_{-\infty}^\infty P\{Z \leq x\mid X = x\}f_X(x)\,\mathrm dx\\ &= P\{Z \leq X\}&{\scriptstyle{\text{by the continuous version of the law of total probability}}}\\ &= P\{Z-X \leq 0\}\\ &= \Phi\left(\frac{0-(-\mu)}{\sqrt{1 + \sigma^2}}\right) &{\scriptstyle{\text{this follows because}~ Z-X \sim N(-\mu,1+\sigma^2)}}\\ &= \Phi\left(\frac{\mu}{\sqrt{1 + \sigma^2}}\right) \end{align}

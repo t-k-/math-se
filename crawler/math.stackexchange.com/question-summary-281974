@@ -1,0 +1,17 @@
+\Gamma
+Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0
+\Gamma
+\mathbf{C} = \begin{bmatrix} A & B/2 & D/2\\ B/2 & C & E/2\\ D/2 & E/2 & F \end{bmatrix}.
+(x_\text{c}, y_\text{c})
+(x_-, y_-)
+(x_+, y_+)
+(x_0, y_0)
+\Gamma
+\Gamma
+\begin{cases} Ax_\text{c} + B(y_\text{c}/2) + D/2 = 0\\ B(x_\text{c}/2) + Cy_\text{c} + E/2 = 0. \end{cases}
+\left\{\begin{split} Ax_-^2 + Bx_-y_- + Cy_-^2 + Dx_- + Ey_- + F &= 0\\ Ax_+^2 + Bx_+y_+ + Cy_+^2 + Dx_+ + Ey_+ + F &= 0. \end{split}\right.
+\begin{gather} \begin{bmatrix} x_0 & y_0 & 1 \end{bmatrix}\mathbf{C} \begin{bmatrix} x_- \\ y_- \\ 1 \end{bmatrix} = 0 = \begin{bmatrix} x_0 & y_0 & 1 \end{bmatrix}\mathbf{C} \begin{bmatrix} x_+ \\ y_+ \\ 1 \end{bmatrix}\\ \implies \begin{cases} Ax_0x_- + B(x_0y_- + y_0x_-)/2 + Cy_0y_- + D(x_0 + x_-)/2 + E(y_0 + y_-)/2 + F = 0\\ Ax_0x_+ + B(x_0y_+ + y_0x_+)/2 + Cy_0y_+ + D(x_0 + x_+)/2 + E(y_0 + y_+)/2 + F = 0\end{cases} \end{gather}
+ \begin{bmatrix} x_\text{c} & \frac{y_\text{c}}{2} & 0 & \frac{1}{2} & 0 & 0\\ 0 & \frac{x_\text{c}}{2} & y_\text{c} & 0 & \frac{1}{2} & 0\\ x_-^2 & x_-y_- & y_-^2 & x_- & y_- & 1\\ x_+^2 & x_+y_+ & y_+^2 & x_+ & y_+ & 1\\ x_0x_- & \frac{x_0y_- + y_0x_-}{2} & y_0y_- & \frac{x_0 + x_-}{2} & \frac{y_0 + y_-}{2} & 1\\ x_0x_+ & \frac{x_0y_+ + y_0x_+}{2} & y_0y_+ & \frac{x_0 + x_+}{2} & \frac{y_0 + y_+}{2} & 1 \end{bmatrix} \begin{bmatrix} A \\ B \\ C \\ D \\ E \\ F \end{bmatrix} = \mathbf{0} 
+\begin{bmatrix}A & B & C & D & E & F\end{bmatrix}^\intercal
+[A\;B\;C\;D\;E\;F]^⊺? 
+(x_c, y_c)

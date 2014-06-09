@@ -1,0 +1,10 @@
+n=1
+n \leadsto n+1
+\sum_{i=1}^{n+1} x_i \frac{\partial f}{\partial x_i}(x_1, \dots , x_n, x_{n+1}) = \dots  
+g(t)=f(tx)
+g(t)=t^kf(x),
+g'(1)=kf(x)
+ g'(t)=\frac{d}{dt}f(tx)=\frac{d}{dt}f(tx_1,\ldots,tx_n)=x_1f_{x_1}(tx_1,\ldots,tx_n)+\cdots+ x_nf_{x_n}(tx_1,\ldots,tx_n), 
+ g'(1)=x_1f_{x_1}(x_1,\ldots,x_n)+\cdots+x_nf_{x_n}(x_1,\ldots,x_n)=x\cdot\nabla f(x). 
+ x\cdot\nabla f(x)=kf(x). 
+ \frac{d}{dt}f\big(g_1(t),\cdots,g_n(t)\big)=g'_1(t)f_{x_1}\big(g_1(t),\cdots,g_n(t)\big)+\cdots+ g'_n(t)f_{x_n}\big(g_1(t),\cdots,g_n(t)\big). 

@@ -1,0 +1,48 @@
+\frac{\partial V}{\partial t}(t,x) + g(x)\frac{\partial V}{\partial x}(t,x) + q(x)\frac{\partial^{2} V}{\partial x^{2}}(t,x) + h(x) =0 
+V(T,x) = \Phi(x)
+t\le T
+V(t,x)
+1
+g(x)=q(x)=0
+\dfrac{\partial V(t,x)}{\partial t}+h(x)=0
+\dfrac{\partial V(t,x)}{\partial t}=-h(x)
+V(t,x)=C(x)-h(x)t
+V(T,x)=\Phi(x)
+C(x)-h(x)T=\Phi(x)
+C(x)=\Phi(x)+h(x)T
+\therefore V(t,x)=\Phi(x)+h(x)T-h(x)t=\Phi(x)+h(x)(T-t)
+2
+g(x)\neq0
+q(x)=0
+\dfrac{\partial V(t,x)}{\partial t}+g(x)\dfrac{\partial V(t,x)}{\partial x}+h(x)=0
+\dfrac{\partial V(t,x)}{\partial t}+g(x)\dfrac{\partial V(t,x)}{\partial x}=-h(x)
+V(t,x)=C\biggl(\int^x\dfrac{1}{g(x)}dx-t\biggr)-\int^x\dfrac{h(x)}{g(x)}dx
+V(T,x)=\Phi(x)
+C\biggl(\int^x\dfrac{1}{g(x)}dx-T\biggr)-\int^x\dfrac{h(x)}{g(x)}dx=\Phi(x)
+C\biggl(\int^x\dfrac{1}{g(x)}dx-T\biggr)=\Phi(x)+\int^x\dfrac{h(x)}{g(x)}dx
+C(x)=\Phi\biggl(\biggl(\int^x\dfrac{1}{g(x)}dx-T\biggr)^{-1}(x)\biggr)+\int^{\left(\int^x\frac{1}{g(x)}dx-T\right)^{-1}(x)}\dfrac{h(x)}{g(x)}dx
+\therefore V(t,x)=\Phi\biggl(\biggl(\int^x\dfrac{1}{g(x)}dx-T\biggr)^{-1}\biggl(\int^x\dfrac{1}{g(x)}dx-t\biggr)\biggr)+\int^{\left(\int^x\frac{1}{g(x)}dx-T\right)^{-1}\left(\int^x\frac{1}{g(x)}dx-t\right)}\dfrac{h(x)}{g(x)}dx-\int^x\dfrac{h(x)}{g(x)}dx
+3
+q(x)\neq0
+\dfrac{\partial V(t,x)}{\partial t}+g(x)\dfrac{\partial V(t,x)}{\partial x}+q(x)\dfrac{\partial^2V(t,x)}{\partial x^2}+h(x)=0
+V(t,x)=V_c(t,x)+V_p(t,x)
+V_p(t,x)
+V_p(t,x)
+g(x)\dfrac{dV(x)}{dx}+q(x)\dfrac{d^2V(x)}{dx^2}+h(x)=0
+V_p(t,x)=-\int^xe^{-\int^x\frac{g(x)}{q(x)}dx}\int^x\dfrac{h(x)}{q(x)}e^{\int^x\frac{g(x)}{q(x)}dx}~dx~dx
+V(t,x)=V_c(t,x)-\int^xe^{-\int^x\frac{g(x)}{q(x)}dx}\int^x\dfrac{h(x)}{q(x)}e^{\int^x\frac{g(x)}{q(x)}dx}~dx~dx
+\dfrac{\partial V_c(t,x)}{\partial t}+g(x)\dfrac{\partial V_c(t,x)}{\partial x}+q(x)\dfrac{\partial^2V_c(t,x)}{\partial x^2}=0
+V_c(t,x)=T(t)X(x)
+T'(t)X(x)+g(x)T(t)X'(x)+q(x)T(t)X''(x)=0
+T'(t)X(x)=-(q(x)X''(x)+g(x)X'(x))T(t)
+\dfrac{T'(t)}{T(t)}=-\dfrac{q(x)X''(x)+g(x)X'(x)}{X(x)}=f(s)
+\begin{cases}\dfrac{T'(t)}{T(t)}=f(s)\\q(x)X''(x)+g(x)X'(x)+f(s)X(x)=0\end{cases}
+\therefore V(t,x)=\sum_sC_1(s)e^{tf_s(s)}X_{s,1}(x,s)+\sum_sC_2(s)e^{tf_s(s)}X_{s,2}(x,s)+\int_sC_3(s)e^{tf_g(s)}X_{g,1}(x,s)~ds+\int_sC_4(s)e^{tf_g(s)}X_{g,2}(x,s)~ds-\int^xe^{-\int^x\frac{g(x)}{q(x)}dx}\int^x\dfrac{h(x)}{q(x)}e^{\int^x\frac{g(x)}{q(x)}dx}~dx~dx
+V(t,x)=\sum_sC_1(s)e^{tf_s(s)}X_{s,1}(x,s)+\sum_sC_2(s)e^{tf_s(s)}X_{s,2}(x,s)+\sum_sC_3(s)e^{tf_g(s)}X_{g,1}(x,s)+\sum_sC_4(s)e^{tf_g(s)}X_{g,2}(x,s)-\int^xe^{-\int^x\frac{g(x)}{q(x)}dx}\int^x\dfrac{h(x)}{q(x)}e^{\int^x\frac{g(x)}{q(x)}dx}~dx~dx
+V(T,x)=\Phi(x)
+s
+g
+s
+q(x)X''(x)+g(x)X'(x)+f(s)X(x)=0
+s
+q(x)X''(x)+g(x)X'(x)+f(s)X(x)=0

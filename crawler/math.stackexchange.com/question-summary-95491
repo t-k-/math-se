@@ -1,0 +1,57 @@
+\binom{n}{k}\bmod m
+n
+k
+m
+n_j
+N_j
+e_j
+(s!)_p\pmod{p^q}
+k\lt p^q
+m
+q=1
+n_0
+m_0
+n
+m
+p
+\binom{r}{s}=0
+r\lt s
+\binom{n}{m} \equiv \binom{\lfloor\frac{n}{p}\rfloor}{\lfloor\frac{m}{p}\rfloor}\binom{n_0}{m_0}\pmod{p},
+x=\binom{n}{k}
+m_1,\ldots,m_r
+a_1,\ldots,a_r
+\begin{align*} x&\equiv a_1\pmod{m_1}\\ x&\equiv a_2\pmod{m_2}\\ &\vdots\\ x&\equiv a_r\pmod{m_r} \end{align*}
+x\bmod {m_1\times\cdots\times m_r}
+i=1,\ldots,r
+i
+\gcd(m_i,M_i)=1
+s_i
+t_i
+i
+x
+m_1\times\cdots\times m_r
+x
+m_1\times\cdots\times m_r
+M_i\equiv 0\pmod{m_j}
+i\neq j
+s_iM_i\equiv 1\pmod{m_i}
+M_i = \frac{m_1\times\cdots\times m_r}{m_i}.
+1 = s_iM_i + t_im_i.
+a_1s_1M_1 + a_2s_2M_2 + \cdots +a_rs_rM_r.
+a_1s_1M_1+\cdots + a_rs_rM_r \equiv a_is_iM_i \equiv a_i\pmod{m_i}\quad\text{for each }i=1,2,\ldots,r.
+B=\binom{456}{51}
+m=30 = 2\times 3\times 5
+B\bmod 2
+B\bmod 3
+B\bmod 5
+x
+30
+M_1 = 15
+M_2 = 10
+M_3 = 6
+x=0M_1 + 1M_2 + 3M_3 = 10+18 = 28\bmod{30}
+\begin{align*} 456 &= 0 + 0\times 2^1 + 0\times 2^2 + 1\times 2^3 + 0\times 2^4 + 0\times 2^5 + 1\times 2^6 + 1\times 2^7 + 1\times 2^8\\  &= 0 + 2\times 3^1 + 2\times 3^2 + 1\times 3^3 + 2\times 3^4 + 1\times 3^5\\  &= 1 + 1\times 5 + 3\times 5^2 + 3\times 5^3\\ 51 &= 1 + 1\times 2 + 0\times 2^2 + 0\times 2^3 + 1\times 2^4 + 1\times 2^5\\ &= 0 + 2\times 3 + 2\times 3^2 + 1\times 3^3\\ &= 1 + 0\times 5 + 2\times 5^2 \end{align*}
+\begin{align*} \binom{456}{51} &\equiv \binom{0}{1}\binom{0}{1}\binom{0}{0}\binom{1}{0}\binom{0}{1}\binom{0}{1}\binom{1}{0}\binom{1}{0}\binom{1}{0}\pmod{2}\\ &\equiv 0\pmod{2}\\ \binom{456}{51}&\equiv \binom{0}{0}\binom{2}{2}\binom{2}{2}\binom{1}{1}\binom{2}{0}\binom{1}{0}\pmod{3}\\ &= 1\pmod{3}\\ \binom{456}{51} &\equiv \binom{1}{1}\binom{1}{0}\binom{3}{2}\binom{3}{0}\pmod{5}\\ &=3\pmod{3}. \end{align*}
+\begin{align*} x&\equiv 0\pmod{2}\\ x&\equiv 1\pmod{3}\\ x&\equiv 3\pmod{5}. \end{align*}
+1=M_1 -7m_1,\quad 1 = M_2-3m_2,\quad 1=M_3-m_3.
+\binom{456}{31}\equiv 28\pmod{30}

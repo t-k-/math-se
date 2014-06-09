@@ -1,0 +1,36 @@
+15 km
+600 km/h
+5 km
+0 km/h
+rad/h?
+x(t)
+y(t)
+x(t) = 15 km
+x'(t) = 600 km/h
+y(t) = 5 km
+y'(t) = 0 km/h
+\theta
+ tan(\theta) = \frac{y(t)}{x(t)} \leftrightarrow \theta = arctan\left(\frac{y(t)}{x(t)}\right)
+\theta
+rad/h
+ \frac{1}{1+\left(\large\frac{y(t)}{x(t)}\right)^2} \times \left(\frac{y'(t)x(t)-y(t)x'(t)}{x(t)^2}\right) = 0.0075~rad/h
+x(0)=15, y(0)=5
+ x(0)=15\\  y(0)=5\\  \frac{dx}{dt}=x'(t)=600\\\frac{dy}{dt}=y'(t)=0 
+x(t)=600t+15
+y(t)=5
+\frac{d\theta}{dt}
+\frac{dx}{dt}
+\frac{d\theta}{dx}
+dx
+\frac{dx}{dt}
+\frac{d\theta}{dx}
+\begin{align*} tan(\theta) & = \frac{y(t)}{x(t)} \\    & = \frac{5}{x} \\ \end{align*}   
+\theta = arctan(\frac{5}{x})\\ \begin{align*}\frac{d\theta}{dx} & = \frac{-5}{x^2}\cdot\frac{1}{1+(\frac{5}{x})^2}\\ & = \frac{-5}{x^2}\cdot\frac{1}{\frac{1}{x^2}(x^2+25)}\\ & = \frac{-5x^2}{x^2(x^2+25)}\\ & = \frac{-5}{x^2+25} \end{align*}
+\frac{dx}{dt}\cdot\frac{d\theta}{dx}=\frac{d\theta}{dt}
+\begin{align*} \frac{d\theta}{dt} & = \frac{-5\cdot600}{x^2+25}\\ & = \frac{-3000}{(600t+15)^2+25}\\ & = \frac{-3000}{360000t^2+18000t+225+25}\\ & = \frac{-3000}{360000t^2+18000t+250}\\ & = \frac{-60}{7200t^2+3600t+5} \end{align*}
+t=0
+\frac{d\theta}{dt}
+\begin{align*} \frac{d\theta}{dt} & = \frac{-60}{5}\\ & = -12\\ \end{align*}
+t=0
+\theta
+x(t)=15+600t

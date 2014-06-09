@@ -1,0 +1,20 @@
+\sum_{n=1}^{\infty} \frac{e - \left(1 + \frac{1}{n}\right)^n}{\sqrt{n}}
+e^{O(n^{-2})} \to 1
+n \to \infty
+\left(1 + \frac{1}{n}\right)^n = e^{n \ln\left(1 + \frac{1}{n}\right)} = e^{n\left(\frac{1}{n} - \frac{1}{2n^2} + O(n^{-3})\right)} = ee^{-\frac{1}{2n}}e^{O(n^{-2})} 
+ e - \left(1 + \frac{1}{n}\right)^n \approx e - ee^{-\frac{1}{2n}} = e(1 - e^{-\frac{1}{2n}}) = e\left(\frac{1}{2n} + O(n^{-2})\right) = O(n^{-1})
+\frac{e - \left(1 + \frac{1}{n}\right)^n}{\sqrt{n}} = O(n^{-3/2})
+n=\infty
+c_k
+K
+N
+O
+2.5912775703968337633
+ \frac{e-(1+\frac1n)^n}{\sqrt n} = \frac e2n^{-3/2} - \frac{11e}{24}n^{-5/2} + \frac{7e}{16}n^{-7/2} + \cdots = \sum_{k=0}^\infty c_k n^{-k-3/2} 
+n^{\underline k}
+\left[ k\atop j\right]
+\begin{eqnarray*} e - \left(1 + \frac{1}{n}\right)^n  &=& \sum_{k=0}^\infty \frac{1}{k!} - \sum_{k=0}^n {n\choose k} \frac{1}{n^k} \\ &=& \sum_{k=0}^\infty \frac{1}{k!} \left(1-\frac{n!}{(n-k)!}\frac{1}{n^k}\right) \\ &=& \sum_{k=1}^\infty \frac{1}{k!} \left(1-\frac{n^{\underline k}}{n^k}\right),  \end{eqnarray*}
+n^{\underline k} = \sum_{j=1}^k (-1)^{k-j} \left[ k\atop j\right] n^j,
+\begin{eqnarray*} e - \left(1 + \frac{1}{n}\right)^n  &=& -\sum_{k=2}^\infty \frac{1}{k!} \sum_{j=1}^{k-1}     (-1)^{k-j} \left[ k\atop j\right] \frac{1}{n^{k-j}}, \end{eqnarray*}
+\begin{eqnarray*} \sum_{n=1}^{\infty} \frac{e - \left(1 + \frac{1}{n}\right)^n}{\sqrt{n}} &=& \sum_{k=2}^\infty      \underbrace{\frac{1}{k!} \sum_{j=1}^{k-1}     (-1)^{k-j+1} \left[ k\atop j\right] \zeta(k-j+\textstyle \frac{1}{2})}_{a_k}. \end{eqnarray*}
+\begin{array}{cl} N & \sum_{k=2}^N a_k \\ \hline 10 & 2.5912768743966448667041943446771083714079106923575 \\ 20 & 2.5912775703968337622590116959919424146275651059115 \\ 30 & 2.5912775703968337632934326247597530975932248904119 \\ 40 & 2.5912775703968337632934326247597625731591505820979 \\ 50 & 2.5912775703968337632934326247597625731591505821009 \end{array}

@@ -1,0 +1,37 @@
+\frac{1}{50}
+1
+\frac{1}{50}
+\frac{49}{50}
+2
+0
+\left( \frac{49}{50} \right)\left( \frac{49}{50} \right)
+2
+\left( \frac{1}{50} \right)\left( \frac{1}{50} \right)
+1
+2\left( \frac{1}{50} \right)\left( \frac{49}{50} \right)
+1
+2
+0
+1
+k
+n
+\binom{n}{k}
+k
+n
+p
+k
+p^k
+(1-p)^{(n-k)}
+\binom{n}{k}p^k(1-p)^{(n-k)}
+1
+x = p
+y = 1-p
+n
+35
+ (x+y)^n = \sum\limits_{k = 0}^n x^ky^{n-k} 
+ (p+1-p)^n = \sum\limits_{k = 0}^n p^k(1-p)^{n-k} = 1 
+ \sum\limits_{k = 1}^n p^k(1-p)^{n-k} = 1 - p^0(1-p)^{n-0} = 1 - (1-p)^n \\ 1-(1-p)^n = 1 - \left(\frac{49}{50}\right)^n \ge \frac{1}{2} \\ \frac{1}{2} \ge \left(\frac{49}{50}\right)^n \\ \ln{\frac{1}{2}} \ge n \ln \frac{49}{50} \\ \frac{\ln{1} - \ln{2}}{\ln{49} - \ln{50}} \le n \\ n \ge \frac{\ln{2}}{\ln{50} - \ln{49}} 
+P_{all}=(\frac{49}{50})^N
+1-P_{all} \ge 50\%
+0.5 \ge (\frac{49}{50})^N
+ N \ge \lceil\frac{ln(0.5)}{ln(49/50)}\rceil = 35

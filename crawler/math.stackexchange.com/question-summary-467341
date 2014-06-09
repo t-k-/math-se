@@ -1,0 +1,33 @@
+X\sim\mathcal{P}(\lambda)
+Y\sim\Gamma(w,1)
+P(X\ge w)=P(Y\le \lambda)
+w
+\Gamma(a,b)
+n
+\Gamma(n)=(n-1)!
+n
+ P(X\geqslant w)=1-P(X\leqslant w-1)=1-e^{-\lambda}\sum_{k=0}^{w-1}\frac{\lambda^k}{k!}. 
+ \Gamma(a,b)=\int_b^\infty t^{a-1}e^{-t}\,\mathrm dt, 
+ \Gamma(n,b)=(n-1)!e^{-b}\sum_{k=0}^{n-1}\frac{b^k}{k!} 
+ P(X\geqslant w)=1-\frac{\Gamma(w,\lambda)}{\Gamma(w)}. 
+ \begin{align} P(X\geqslant w)&=\frac{\Gamma(w)-\Gamma(w,\lambda)}{\Gamma(w)}=\frac{1}{\Gamma(w)}\left(\int_0^\infty t^{w-1}e^{-t}\,\mathrm dt-\int_\lambda^\infty t^{w-1}e^{-t}\,\mathrm dt\right)\\ &=\frac{1}{\Gamma(w)}\int_0^\lambda t^{w-1}e^{-t}\,\mathrm dt=P(Y\leqslant\lambda). \end{align} 
+X\sim\mathcal{P}(\lambda)
+Y\sim\Gamma(w,1)
+P(X\ge w)=P(Y\le \lambda)
+\lambda
+\lambda
+\lambda
+\lambda
+\operatorname{Poisson}(\lambda)
+0
+e^{-\lambda}
+\lambda
+e^{-\lambda}
+1
+\leq \lambda
+1
+\lambda
+w=2
+\begin{align} P(Y_2 \leq \lambda) &= \frac{1}{1!} \int_0^\lambda xe^{-x} dx\\                     &=  \left[xe^{-x}\right]_0^\lambda - \int_0^\lambda e^{-x} \\ &= 1 - \lambda e^{-\lambda} - e^{-\lambda}  \\ &= P(X \geq 2) \end{align}
+\frac{1}{(w-1)!} \int_0^\lambda x^{w-1} e^{-x} dx = -\lambda^{w-1}e^{-\lambda}/(w-1)!+ \frac{1}{(k-2)!} \int_0^\lambda x^{w-2} e^{-x} dx
+P(Y_w <= \lambda) = P(Y_{w-1} <= \lambda) - P(X = w-1)

@@ -1,0 +1,48 @@
+n=5,~ \lambda=(1,1,3),~ f_\lambda(1)=2,~ a_\lambda(1)=2
+f_\lambda(1)
+f_\lambda(3)
+\lambda
+\sum_k f_\lambda(k)=\sum_k a_\lambda(k)
+k
+\sum_\lambda f_\lambda(k)=\sum_\lambda a_\lambda(k)
+p(x)=(1+x+x^2+\dotso)(1+x^2+x^4+\dotso)(1+x^3+x^6+\dotso)\dots=\prod_m\frac1{1-x^m}\;.
+k
+n
+k
+ \begin{align} f_k(x) &=\left(0+1x^k+2(x^k)^2+3(x^k)^3+\dotso\right)\prod_{m\neq k}\frac1{1-x^m}\\ &=\left(x^k\frac{\mathrm d}{\mathrm d(x^k)}\left(1+x^k+(x^k)^2+(x^k)^3+\dotso\right)\right)\prod_{m\neq k}\frac1{1-x^m}\\ &=\left(x^k\frac{\mathrm d}{\mathrm d(x^k)}\frac1{1-x^k}\right)\prod_{m\neq k}\frac1{1-x^m}\\ &=\frac{x^k}{(1-x^k)^2}\prod_{m\neq k}\frac1{1-x^m}\\ &=\frac{x^k}{1-x^k}\prod_m\frac1{1-x^m}\\ &=p(x)\frac{x^k}{1-x^k}\;.\\ \end{align} 
+k
+k=2
+\begin{align} g_2(x,y) &=\left(1+x+y(x^2+x^3+\dotso)\right)\left(1+x^2+y((x^2)^2+(x^2)^3+\dotso)\right)\dots\\ &=\left(1+x+\frac{yx^2}{1-x}\right)\left(1+x^2+\frac{y(x^2)^2}{1-x^2}\right)\dots\\ &=\frac{1-x^2+yx^2}{1-x}\frac{1-(x^2)^2+y(x^2)^2}{1-x^2}\dots\\ &=p(x)\left(1-x^2+yx^2\right)\left(1-(x^2)^2+y(x^2)^2\right)\dots\;,\\ g_k(x,y) &=\prod_m\left(\sum_{l=0}^{k-1}(x^m)^l+y\sum_{l=k}^\infty(x^m)^l\right)\\ &=p(x)\prod_m\left(1-(x^k)^m+y(x^k)^m\right)\;. \end{align} 
+y
+k
+y
+x^n
+j
+y^jx^n
+y
+y
+1
+x^n
+\begin{align} \left.\frac{\mathrm d}{\mathrm dy}g_k(x,y)\right|_{y=1} &=\left.\frac{\mathrm d}{\mathrm dy}p(x)\prod_m\left(1-(x^k)^m+y(x^k)^m\right)\right|_{y=1}\\ &=\left.p(x)\sum_{l=1}^\infty(x^k)^l\prod_{m\neq l}\left(1-(x^k)^m+y(x^k)^m\right)\right|_{y=1}\\ &=p(x)\sum_{l=1}^\infty(x^k)^l\\ &=p(x)\frac{x^k}{1-x^k}\;,\\ \end{align}
+n
+k
+k
+f_\lambda(i)\geqslant k
+\rho_i(\lambda)
+k
+i
+i
+k
+i\times k
+\lambda
+\rho_5
+k=3
+\rho_i(\lambda)=\lambda\:-<\!\!i^k\!\!>+<\!\!k^i\!\!>
+\rho_i(\lambda)
+i
+k
+\mu
+f_\mu(k)=j
+j
+\lambda_1,\dots,\lambda_j
+\rho_i(\lambda_i)=\mu

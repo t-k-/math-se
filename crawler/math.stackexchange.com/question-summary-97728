@@ -1,0 +1,26 @@
+\Phi(\cdot,0,1)
+\phi(\cdot,0,1)
+y=F_\text{mix}(x,\mu,\sigma)=\sum\limits_{i=1}^{K}\lambda_i\Phi\left(\frac{x-\mu_i}{\sigma_i},0,1\right).
+x=Q(y)
+F_\text{mix}
+\mu_i=\bar{\mu_i}'w,\qquad \sigma_i^2 =w'\Sigma_i w.
+Q(y)
+w
+x=Q(y)
+x=Q(y,\mu,\sigma)
+\mu
+\sigma
+F_\text{mix}
+x
+\mu_i
+\sigma_i^2
+w
+\Sigma_i
+\bar{\mu_i}
+ \def\deriv#1#2{\frac{\mathrm d#1}{\mathrm d#2}}\def\pderiv#1#2#3{\left.\frac{\partial#1}{\partial#2}\right|_{#3}}\deriv{Q(y,\mu,\sigma)}w = \pderiv x\mu{y,\sigma} \deriv\mu w+\pderiv x\sigma{y,\mu}\deriv\sigma w\;. 
+x
+y
+ \begin{eqnarray} 0 &=& \pderiv y\mu{y,\sigma} \\ &=& \pderiv yx{\mu,\sigma}\pderiv x\mu{y,\sigma}+\pderiv y\mu{x,\sigma}\pderiv \mu\mu{y,\sigma}+\pderiv y\sigma{x,\mu}\pderiv \sigma\mu{y,\sigma} \\ &=& \pderiv yx{\mu,\sigma}\pderiv x\mu{y,\sigma}+1\cdot\pderiv y\mu{x,\sigma}+0\cdot\pderiv y\sigma{x,\mu} \\ &=& \pderiv yx{\mu,\sigma}\pderiv x\mu{y,\sigma}+\pderiv y\mu{x,\sigma}\;, \end{eqnarray} 
+\partial x/\partial\sigma
+ \pderiv x\mu{y,\sigma}=-\pderiv y\mu{x,\sigma}\left(\pderiv yx{\mu,\sigma}\right)^{-1}\;, 
+\deriv{Q(y,\mu,\sigma)}w =-\left(\pderiv yx{\mu,\sigma}\right)^{-1}\left( \pderiv y\mu{x,\sigma} \deriv\mu w+\pderiv y\sigma{x,\mu}\deriv\sigma w\right)\;. 

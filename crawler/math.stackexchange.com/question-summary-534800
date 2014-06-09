@@ -1,0 +1,43 @@
+A
+B
+M
+A
+N
+B
+M>N
+A_{m,n}
+A
+B
+A
+B
+m
+n
+A_{m,n}=1
+m\ge 2
+n < 3
+A_{m,n}=0
+m \le 2
+n\ge 3
+A_{0,0}
+ A_{m,n}=\frac{1}{4}\left(A_{m+1,n+1} + A_{m+1,0} + A_{0,n+1}+A_{0,0}\right); 
+ \begin{eqnarray} A_{0,0} &=& \frac{1}{4}A_{1,1} + \frac{1}{4}A_{1,0} + \frac{1}{4}A_{0,1} + \frac{1}{4}A_{0,0}\\ A_{0,1} &=& \frac{1}{4}A_{1,2} + \frac{1}{4}A_{1,0} + \frac{1}{4}A_{0,2} + \frac{1}{4}A_{0,0} \\ A_{1,0} &=& \frac{1}{2} + \frac{1}{4}A_{0,1} + \frac{1}{4}A_{0,0} \\ A_{1,1} &=& \frac{1}{2} + \frac{1}{4}A_{0,2} + \frac{1}{4}A_{0,0} \\ A_{0,2} &=& \frac{1}{4}A_{1,0} + \frac{1}{4}A_{0,0} \\ A_{1,2} &=& \frac{1}{4} + \frac{1}{4}A_{0,0}, \end{eqnarray} 
+ \left(\begin{matrix}3/4 & -1/4 & -1/4 & -1/4 & 0 & 0 \\ -1/4 & 1 & -1/4 & 0 & -1/4 & -1/4 \\ -1/4 & -1/4 & 1 & 0 & 0 & 0 \\ -1/4 & 0 & 0 & 1 & -1/4 & 0 \\ -1/4 & 0 & -1/4 & 0 & 1 & 0 \\ -1/4 & 0 & 0 & 0 & 0 & 1 \end{matrix}\right)\times\left(\begin{matrix} A_{0,0} \\ A_{0,1} \\ A_{1,0} \\ A_{1,1} \\ A_{0,2} \\ A_{1,2} \end{matrix}\right)  = \left(\begin{matrix} 0 \\ 0 \\ 1/2 \\ 1/2 \\ 0 \\ 1/4 \end{matrix}\right), 
+ A_{0,0} = \frac{1257}{1699} \approx 0.7398, 
+a_n
+b_n
+A
+n
+a_1=b_1=1/2
+a_n
+b_n
+P_A(n)
+A
+n^{th}
+P_A(n)=\frac{a_{n-1}}{2}
+B
+P_B(n)
+\left\{ \begin{array} \\a_n=\frac{b_{n-1}}{2} \\ b_n=\frac{a_{n-1}+b_{n-1}}{2}\end{array}\right.
+P
+A
+B
+P=\sum_{j>k}P_A(j)P_B(k)

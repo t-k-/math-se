@@ -1,0 +1,38 @@
+X_1,X_2,\dots,X_n
+\lambda
+N
+\lambda
+X_is
+S_N= X_1 + X_2+\dots+X_N
+S_N
+Y= \sum_{i=1}^n 2\lambda X_i
+Y
+N=n
+S_N
+S_n
+S_n
+N
+X_1,\ldots,X_n
+n\geq 1
+t\mapsto \E[e^{tX_1}]
+t\in(-\infty,\lambda)
+t
+\E[e^{tX_1}]=\frac{\lambda}{\lambda-t}
+\tag{1} \DeclareMathOperator{\E}{\mathbb{E}}\E\bigl[\E[e^{tS_N}\mid N]\bigr]=\E[e^{tS_N}]. 
+ \E[e^{tS_N}\mid N=n]=\E[e^{tS_n}\mid N=n]=\E[e^{tS_n}], 
+ \E[e^{tS_n}]=\E[e^{tX_1}\cdots e^{tX_n}]=\prod_{i=1}^{n}\E[e^{tX_i}]=(\E[e^{tX_1}])^n 
+ \E[e^{tX_1}]=\int_0^{\infty}\lambda e^{-\lambda x}e^{tx}\,dx. 
+n\geq 1
+t<\lambda
+n=0
+S_0=0
+\E[e^{tS_0}]=1=\left(\frac{\lambda}{\lambda-t}\right)^0
+ \E[e^{tS_N}\mid N=n]=\left(\frac{\lambda}{\lambda-t}\right)^n. 
+t<\lambda
+\E[S_N]
+\phi(x)
+S_N
+\E[S_N]=\phi'(0)=1
+ \begin{align} \E[e^{tS_N}]&=\sum_{n=0}^{\infty}\E[e^{tS_N}\mid N=n]\cdot P(N=n)\\ &=\sum_{n=0}^{\infty}\left(\frac{\lambda}{\lambda-t}\right)^n\frac{e^{-\lambda}\lambda^n}{n!}\\ &=\exp\left[\frac{t\lambda}{\lambda-t}\right]. \end{align} 
+\E[S_N]
+\E[N]\cdot\E[X_i]=\lambda\cdot\lambda^{-1}

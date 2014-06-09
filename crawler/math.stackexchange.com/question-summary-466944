@@ -1,0 +1,15 @@
+\sum_{k\geq 1} \frac{1}{2^k k^2}=\frac{\pi^2}{12}-\frac{1}{2}\log(2)^2
+\operatorname{Li}_2\left( \frac{1}{2} \right)
+ \sum_{k\geq 1}x^{k-1}=\frac{1}{1-x}\Rightarrow \sum_{k\geq 1}\frac{1}{2^kk^2}=-\int_0^{\frac{1}{2}} \frac{\ln (1-x)}{x}\,dx
+\begin{aligned}\int_0^{\frac{1}{2}} \frac{\ln (1-x)}{x}\,dx\overset{x\to \frac{x}{2}}=\int_0^1 \frac{\ln (1-\frac{x}{2})}{x}\,dx \overset{ \text{IBP}}=\int_0^1 \frac{\ln x}{2-x}\,dt \overset{x\to 1-x}=\int_0^1 \frac{\ln (1-x)}{1+x}\,dx\end{aligned}
+-f(1)
+f(t)=\int_0^1 \frac{\ln (1-tx)}{1+x}\,dx
+\begin{aligned} f'(t) &= \int_0^1 \frac{x\,dx}{(tx-1)(1+x)} \\&= \int_0^1 \frac{dx}{tx-1}+\int_0^1 \frac{dx}{(t+1)(1+x)}-\int_0^1 \frac{t\,dx}{(tx-1)(t+1)}\\& =\frac{\ln (1-t)}{t}+\frac{\ln 2}{t+1} -\frac{\ln (1-t)}{1+t}\end{aligned}
+f(1) =\int_0^1 \frac{\ln (1-t)}{t}\,dt+\int_0^1\frac{\ln 2}{t+1}\,dt-\underbrace{\int_0^1 \frac{\ln (1-t)}{1+t}\,dt}_{f(1)}
+\Rightarrow -f(1) =\frac{1}{2}\left(-\int_0^1 \frac{\ln (1-t)}{t}\,dt-\int_0^1\frac{\ln 2}{t+1}\right)\,dt=\frac{\pi^2}{12}-\frac{\ln^2 2}{2}
+ \mathrm{Li}_2(1-x) = -\mathrm{Li}_2 \left( {1-\frac {1}{x}} \right)- \frac{1}{2}\, \ln^2 \left( \frac{1}{x} \right)-\zeta(2) ,
+x=\frac{1}{2}
+ \mathrm{Li}_2\left(\frac{1}{2}\right) = -\mathrm{Li}_2 \left( {-1} \right)- \frac{1}{2}\, \ln^2 \left( 2 \right)-\zeta(2)
+ = \frac{\zeta(2)}{2}- \frac{1}{2}\, \ln^2 \left( {2} \right)-\zeta(2)
+\implies  \mathrm{Li}_2\left(\frac{1}{2}\right)= \frac{1}{2}\ln^2\left( {2} \right)-\frac{\zeta(2)}{2}.  
+ \mathrm{Li}_2(-1)= \sum_{k=1}^{\infty}\frac{(-1)^k}{k^2}= -\frac{\zeta(2)}{2}. 

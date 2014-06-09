@@ -1,0 +1,32 @@
+1/
+\Omega
+\mathbb{C}
+f : \Omega \to \mathbb{C}
+\omega
+\log \left | f \right |\in SH(\Omega)
+f \in \text{Holomorphic}(\Omega) \implies f
+\Omega
+\forall \alpha \in \mathbb{R}: \{z \in \Omega: \log \left | f(z) \right |< \alpha \}=\{z \in \Omega: \left | f(z) \right |< e^\alpha \}
+ =\{z \in \Omega:  f(z) \in B(0,e^\alpha) \}=\{z \in \Omega: z \in f^{-1}(B(0,e^\alpha)) \}
+2/
+SH(\Omega)
+\alpha,\beta>0
+u,v \in SH(\Omega)
+\alpha u +\beta v \in SH(\Omega)
+(II)
+u,v \in SH(\Omega)
+ \alpha u(\omega)  \le \dfrac{1}{2\pi} \int_{0}^{2\pi} (\alpha u ) (\omega+re^{i\theta}) \mathrm{d}\theta \tag{1}
+ \beta v(\omega) \le \dfrac{1}{2\pi} \int_{0}^{2\pi} ( \beta v) (\omega+re^{i\theta}) \mathrm{d}\theta \tag{2}
+3/
+\Omega
+\mathbb{C}
+u,v \in SH(\Omega)
+\max \{u,v\} \in SH(\Omega)
+w(z):=\max \{u(z),v(z)\}
+\forall \omega \in \Omega, \exists \rho >0
+\forall 0 \le r < \rho 
+u,v \in SH(\Omega)
+w(\omega) \le \dfrac{1}{2\pi} \int_{0}^{2\pi} w(\omega+re^{i\theta}) \mathrm{d}\theta \tag{III}
+u(\omega) \le \dfrac{1}{2\pi} \int_{0}^{2\pi} u(\omega+re^{i\theta}) \mathrm{d}\theta \le \dfrac{1}{2\pi} \int_{0}^{2\pi} w(\omega+re^{i\theta}) \mathrm{d}\theta \tag{6}
+v(\omega) \le \dfrac{1}{2\pi} \int_{0}^{2\pi} v(\omega+re^{i\theta}) \mathrm{d}\theta \le \dfrac{1}{2\pi} \int_{0}^{2\pi} w(\omega+re^{i\theta}) \mathrm{d}\theta \tag{7}
+w(\omega) \le \dfrac{1}{2\pi} \int_{0}^{2\pi} w(\omega+re^{i\theta}) \mathrm{d}\theta \tag{8}

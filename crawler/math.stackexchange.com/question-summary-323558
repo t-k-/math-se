@@ -1,0 +1,71 @@
+\{a_{n}\}
+\displaystyle \varlimsup_{n\rightarrow\infty}{\sqrt[n]{a_{n}}}=1 
+ \varlimsup_{n\rightarrow\infty}{\sqrt[n]{a_{1}+a_{2}+\cdots+a_{n}}}=1 
+\alpha = \limsup_{n\to\infty} \sqrt[n]{a_n}
+\{ a_n \}
+ \limsup_{n\to\infty} \sqrt[n]{a_1 + \cdots + a_n} = \max \{ \alpha, 1 \}. 
+ \limsup_{n\to\infty} \left( \sum_{k=1}^{n} a_k \right)^{1/n} \geq \limsup_{n\to\infty} \sqrt[n]{a_n} = \alpha. 
+\alpha = \infty
+\alpha < \infty
+\epsilon > 0
+N
+a_n \leq (\alpha + \epsilon)^{n}
+n \geq N
+ \sum_{k=1}^{n} a_k \leq \left( \sum_{k=1}^{N} a_k \right) +  (\alpha + \epsilon)^{N+1} \cdot \frac{(\alpha + \epsilon)^{n-N} - 1}{(\alpha + \epsilon) - 1} 
+\alpha + \epsilon > 1
+ \limsup_{n\to\infty} \left( \sum_{k=1}^{n} a_k \right)^{1/n} \leq \alpha + \epsilon. 
+\epsilon > 0
+ \limsup_{n\to\infty} \left( \sum_{k=1}^{n} a_k \right)^{1/n} \leq \alpha. 
+\alpha \geq 1
+ \sum_{k=1}^{n} a_k \leq \sum_{k=1}^{n} C \beta^{k} \leq \frac{C\beta}{1-\beta} < \infty. 
+a_n > 0
+n
+ 0 < C' \leq \sum_{k=1}^{n} a_k 
+C' > 0
+n
+ \limsup_{n\to\infty} \sqrt[n]{a_1 + \cdots + a_n} = 1. 
+ f(z) = \sum_{n=0}^{\infty} a_n z^n 
+R
+ \frac{1}{R} = \limsup_{n\to\infty} \sqrt[n]{a_n} = \alpha,
+1/\infty = 0
+1/0 = \infty
+ \sum_{n=0}^{\infty} \left( \sum_{k=0}^{n} a_k \right) z^{n} = \frac{f(z)}{1-z} 
+\min \{R, 1 \}
+z = 1
+ \limsup_{n\to\infty} \sqrt[n]{a_1 + \cdots + a_n} = \frac{1}{\min \{1, R \}} = \max \{1, \alpha \}.
+\{a_n\}
+\epsilon>0
+N
+n\gt N
+\epsilon
+ \limsup_{n\to\infty}\sqrt[n]{a_1+a_2+\ldots+a_n}\ge\limsup_{n\to\infty}\sqrt[n]{a_n}=1 
+ a_n\le(1+\epsilon)^n 
+ \begin{align} &\limsup_{n\to\infty}\sqrt[n]{a_1+a_2+\ldots+a_n}\\ &=\limsup_{n\to\infty}\left(\sum_{k=1}^Na_k+\sum_{k=N+1}^na_k\right)^{1/n}\\ &\le\limsup_{n\to\infty}\left(\sum_{k=1}^Na_k+(n-N)(1+\epsilon)^n\right)^{1/n}\\ &=\limsup_{n\to\infty}\left(1+\frac{\sum_{k=1}^Na_k}{(n-N)(1+\epsilon)^n}\right)^{1/n}(n-N)^{1/n}(1+\epsilon)\\[6pt] &=1\cdot1\cdot(1+\epsilon)\\[16pt] &=1+\epsilon \end{align} 
+ \limsup_{n\to\infty}\sqrt[n]{a_1+a_2+\ldots+a_n}=1 
+\sum_1^{n} a_k\geq a_n
+\limsup\sqrt[n]{\sum_1^{n} a_k}\geq1
+n>N
+ a_n\leq(1+\epsilon)^n
+\sum_{k=1}^Na_k=A
+\limsup\sqrt[n]{\sum_{k=1}^na_k}\leq1+\epsilon
+\sum_{k=1}^na_k\leq A+(1+\epsilon)^N\dfrac{(1+\epsilon)^{n-N+1}-1}{\epsilon}
+\sqrt[n]{\sum_{k=1}^na_k}\leq(1+\epsilon)( (A -\frac 1\epsilon)(1+\epsilon)^{-n}+1)^{\frac 1 n}
+\epsilon>0
+N
+C=\sum_{k=1}^{N-1}a_k
+ \sqrt[n]{a_n}\leq 1+\epsilon\quad\Rightarrow\quad a_n\leq (1+\epsilon)^n\qquad\forall n\geq N. 
+ \sum_{k=1}^Ka_k =\sum_{k=1}^{N-1}a_k+\sum_{k=N}^Ka_k\leq C+\sum_{k=N}^K(1+\epsilon)^k=C+ (K-N+1)(1+\epsilon)^K\leq C+K(1+\epsilon)^K 
+ \sqrt[K]{\sum_{k=1}^Ka_k }\leq (1+\epsilon)\left(C +\frac{K}{(1+\epsilon)^K}\right)^\frac{1}{K} \longrightarrow 1+\epsilon. 
+ \limsup \sqrt[K]{\sum_{k=1}^Ka_k }\leq 1+\epsilon\quad\forall\epsilon>0\quad\Rightarrow \quad\limsup \sqrt[K]{\sum_{k=1}^Ka_k }\leq 1. 
+\epsilon>0
+K
+ \lim \sqrt[n_k]{a_{n_k}}=1. 
+ \sqrt[n_k]{a_{n_k}}\geq 1-\epsilon\quad\Rightarrow \quad a_{n_k}\geq (1-\epsilon)^{n_k}\quad\forall k\geq K. 
+ \sum_{n=1}^{n_k}a_n\geq a_{n_K}\geq (1-\epsilon)^{n_k}\quad\forall k\geq K. 
+ \sqrt[n_K]{\sum_{n=1}^{n_k}a_n}\geq 1-\epsilon \quad\forall k\geq K. 
+ \limsup \sqrt[N]{\sum_{n=1}^{N}a_n}\geq 1-\epsilon\quad\forall\epsilon>0\quad \limsup \sqrt[N]{\sum_{n=1}^{N}a_n}\geq 1. 
+ \limsup \sqrt[N]{\sum_{n=1}^{N}a_n}= 1. 
+\epsilon>0
+ a_n<(1+\epsilon)^n, \forall n\geq  n_0 
+n_0\in\mathbb N
+1\leq\limsup_{n\rightarrow\infty}\sqrt[n]{a_{1}+a_{2}+\cdots+a_{n}}\leq 1+\epsilon.

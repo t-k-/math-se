@@ -1,0 +1,129 @@
+X
+Y
+U \subset X
+V \subset Y
+\phi : U \stackrel{\sim}{\to} V
+u \sim \phi(u)
+u \in U
+\newcommand{Spec}{\mathrm{Spec}\ }
+X_1 = \Spec k[x]
+X_2 = \Spec k[y]
+U_1 = \{ (x - a) : a \ne 0 \} \subset X_1
+U_2 = \{ (y - b) : b \ne 0 \} \subset X_2
+\phi : U_1 \to U_2
+X
+X_1
+X_2
+\phi
+X_1
+X_2
+\sim
+(x - a)
+(y - a)
+a \ne 0
+\bar{U_i} \subset X
+U_i
+X_i \to X
+\bar{U_1} \cap \bar{U_2} = \{ [(x - a)] : a \ne 0 \}
+X
+\Spec k
+X_1 \times_k X_1
+X_2 \times_k X_1
+X \times_k X_1
+X_1 \times_k X_2
+X_2 \times_k X_2
+X \times_k X_2
+X \times_k X
+X_1 \times_k X_1 = \Spec k[x] \otimes k[x] \cong \Spec k[t_1, t_2]
+X_2 \times_k X_1 = \Spec k[y] \otimes k[x] \cong \Spec k[t_3, t_4]
+p_1
+X_1 \times_k X_1
+p_1
+[(x-a)] = \{(x - a), (y - a)\} \in X
+(x - a) \in X_1
+[(0)] = \{(0)\}
+(0) \in X_1
+U_1' = p_1^{-1} (\bar{U_1} \cap \bar{U_2}) = \{ (t_1 - a, t_2 - b) : a \ne 0, b \in k \}
+U_2' = p_2^{-1} (\bar{U_1} \cap \bar{U_2}) = \{ (t_3 - a, t_4 - b) : a \ne 0, b \in k \}
+p_2
+X_2 \times_k X_1
+X_1 \times_k X_1
+X_2 \times_k X_1
+\phi' : U_1' \to U_2'
+X \times_k X_1
+X_1 \times_k X_1
+X_2 \times_k X_1
+(t_1 - a, t_2 - b)
+(t_3 - a, t_4 - b)
+a \ne 0, b \in k
+X \times_k X_2
+X_1 \times_k X_2
+X_2 \times_k X_2
+(t_1 - a, t_2 - b)
+(t_3 - a, t_4 - b)
+a \in k, b \ne 0
+X \times_k X_1
+X \times_k X_2
+q_1
+q_2
+X \times_k X_1
+X \times_k X_2
+q_1
+[(t_1 - a, t_2 - b)]
+[(t_3 - a, t_4 - b)]
+(x - b) \in X_1
+q_2
+(y - b) \in X_2
+U_1'' = q_1^{-1} (\bar{U_1} \cap \bar{U_2})
+[(t_1 - a, t_2 - b)] = [(t_3 - a, t_4 - b)]
+a \ne 0
+b \ne 0
+[(t_1, t_2 - b)]
+[(t_3, t_4 - b)]
+b \ne 0
+U_2'' = q_2^{-1} (\bar{U_1} \cap \bar{U_2})
+[(t_1 - a, t_2 - b)] = [(t_3 - a, t_4 - b)]
+a \ne 0, b \ne 0
+[(t_1 - a, t_2)]
+[(t_3 - a, t_4)]
+a \ne 0
+\phi'' : U_1'' \to U_2''
+[(t_1 - a, t_2 - b)] \mapsto [(t_1 - b, t_2 - a)]
+[(t_3 - a, t_4 - b)] \mapsto [(t_3 - b, t_4 - a)]
+X \times_k X_1
+X \times_k X_2
+\phi''
+X \times_k X
+f : X \to S
+g : Y \to S
+X \times_S Y
+(x,y,s,\mathfrak{p})
+(x,y,s)
+x \in X, y \in Y, s \in S
+f(x)=s=g(y)
+\mathfrak{p}
+\kappa(x) \otimes_{\kappa(s)} \kappa(y)
+X \times_S Y
+\mathrm{Spec}(\kappa(x) \otimes_{\kappa(s)} \kappa(y))
+(x,y,s)
+\mathfrak{p}
+\mathfrak{q}
+\mathcal{O}_{X,x} \otimes_{\mathcal{O}_{S,s}} \mathcal{O}_{Y,y}
+\mathcal{O}_{X,x}
+\mathcal{O}_{Y,y}
+\mathcal{O}_{S,s}
+f^\#_x
+g^\#_y
+U \times_T V
+U \subseteq X, V \subseteq Y, T \subseteq S
+f(U) \subseteq T \supseteq g(V)
+f \in \mathcal{O}_X(U) \otimes_{\mathcal{O}_S(T)} \mathcal{O}_Y(V)
+\Omega(U,V,T,f) \subseteq X \times_S Y
+(x,y,s,\mathfrak{q})
+x \in U, y \in V, s \in T
+f
+\mathcal{O}_{X,x} \otimes_{\mathcal{O}_{S,s}} \mathcal{O}_{Y,y}
+\mathfrak{q}
+X \times_S Y
+\mathcal{O}_{X \times_S Y,(x,y,s,\mathfrak{q})} = (\mathcal{O}_{X,x} \otimes_{\mathcal{O}_{S,s}} \mathcal{O}_{Y,y})_{\mathfrak{q}}
+\mathcal{O}_{X \times_S Y}

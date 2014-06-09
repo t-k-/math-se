@@ -1,0 +1,42 @@
+\Theta(n \lg n)
+T(n) = T(\lceil n/2 \rceil) + T(\lfloor n/2 \rfloor) + \Theta(n)
+O(n \lg n)
+\Omega(n \lg n)
+\Theta(n \lg n)
+O(n \lg n)
+T(m) \leq cn \lg n
+c > 0
+m > 0
+m > n
+m = n/2
+ T(n/2) \leq cn/2 \lg(n/2) 
+\begin{aligned} T(n) &\leq c n/2 \lg(n/2) + c n/2 \lg(n/2) + \Theta(n) \\\\ &= cn \lg(n) - (cn - \Theta(n)) \end{aligned}
+\Theta(n)
+kn
+\lceil n/2 \rceil
+\lfloor n/2 \rfloor
+n/2
+T(n) = 2T(n/2) + f(n)
+T(n) = T(\lceil n/2 \rceil) + T(\lfloor n/2 \rfloor) + f(n)
+f(n) = \theta(n)
+C \gt 0
+f(n) \le Cn
+n
+T(n) = \mathcal{O}(n \log n)
+2
+T(1) = 0
+k \lt n
+T(k) \le D k\log k
+D
+\lceil n/2 \rceil + \lfloor n/2 \rfloor = n
+T(n) \le Dn \log \lceil n/2 \rceil + f(n) \le Dn\log (\frac{n+1}{2}) + Cn
+\log(n+1) \le \log n + \frac{1}{n}
+T(n) \le Dn\log n + D + Cn - Dn
+D
+Dn \gt Cn + D
+n \gt 2
+D \gt 2C
+D
+n=1,2
+T(n) = \mathcal{O}(n \log n)
+T(n) = \Omega(n\log n)

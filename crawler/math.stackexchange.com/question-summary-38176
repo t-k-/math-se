@@ -1,0 +1,14 @@
+Y_i\sim \mathcal{N}(\theta_0 + \theta_1 x_i, \sigma_i^2)
+x_i
+\sigma_i^2
+i = 1,\ldots,n
+Y_1,\ldots,Y_n
+\theta_0
+\overline{x}=0.
+\theta_1
+\exp{\frac{\sum_i 2y_i(\theta_0 + \theta_1 x_i) - (\theta_0+\theta_1 x_i)^2}{2\sigma_i^2}}.
+L(\theta_0, \theta_1) = \exp\left( -\sum_i \frac{(y_i - \theta_0 - \theta_1 x_i)^2}{2\sigma_i^2}\right)
+\frac{\partial L}{\partial\theta_0} = \left(\sum_i \frac{y_i - \theta_0 - \theta_1 x_i}{\sigma_i^2} \right) L(\theta_0,\theta_1)
+\frac{\partial L}{\partial\theta_1} = \left(\sum_i \frac{(y_i - \theta_0 - \theta_1 x_i)x_i}{\sigma_i^2} \right) L(\theta_0,\theta_1)
+\theta_0 \sum_i \frac{1}{\sigma_i^2} + \theta_1 \sum_i \frac{x_i}{\sigma_i^2} = \sum_i \frac{y_i}{\sigma_i^2}
+\theta_0 \sum_i \frac{x_i}{\sigma_i^2} + \theta_1 \sum_i \frac{x_i^2}{\sigma_i^2} = \sum_i \frac{x_iy_i}{\sigma_i^2}

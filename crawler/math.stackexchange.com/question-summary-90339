@@ -1,0 +1,24 @@
+n(x) = \frac{e^{-x^2/2}}{\sqrt{2\pi}}
+\mathbb{R}
+x_i
+\nu_i
+n_{SPH} = \sum_{i=0}^N \nu_i W(x-x_i,h)
+n(x)
+W(x-x_i,h)
+\int_\mathbb{R} W(x,h) dx= 1
+\int_\mathbb R W(x-x',h)f(x')dx' \rightarrow f(x) 
+h\rightarrow 0
+x_i
+\nu_i
+x_i
+f(\nu_1,\nu_2,\ldots,\nu_N) = \int_\mathbb R dx (n(x)-n_{SPH}(x))^2 =\int_\mathbb R dx (n(x)-\sum_{i=0}^N \nu_i W(x-x_i,h))^2
+\nu_i \geq 0
+||Ex-f||
+x\geq 0
+g(\vec x) = N_0 - <\vec N,\vec x> + <\vec x, M \vec x>
+M_{ij}=\int_\mathbb R W(x-x_i,h)W(x-x_j,h)
+N_i = \int_\mathbb R n(x)W(x-x_i,h)
+N_0 = \int_\mathbb R n(x)^2
+ M = E^T E 
+ \vec N = 2 E^T f 
+ N_0 = ||f||^2 

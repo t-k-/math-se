@@ -1,0 +1,22 @@
+A = \displaystyle \int_{0}^{3} \left[- \frac {x^2}{4} - 8\right] \,dx
+[a,b]
+n
+\Delta x = \dfrac{b-a}{n}
+a=x_0<x_1<\ldots<x_n=b
+[a,b]
+x_{i+1}-x_i=\Delta x
+x_1=a+\Delta x
+x_2=a+2\Delta x
+x_i=a+i\Delta x
+1\leq i\leq n
+x_k^{\ast}=x_k=a+k\Delta
+f(x_k^{\ast})\Delta x
+\int_a^b f(x)\,dx =\lim_{n\to\infty}\sum_{k=1}^nf(x_k^{\ast})\Delta x = \lim_{n\to\infty}\frac{b-a}{n}\sum_{k=1}^n f\left(a+\frac{k}{n}(b-a)\right)
+f(x)=-\frac{1}{4}x^2-8
+[0,3]
+\Delta x=\dfrac{3}{n}
+S_n = \sum_{k=1}^n f(x_k^{\ast})\Delta x = \frac{3}{n}\sum_{k=1}^n\left( -\frac{1}{4}\left(\frac{3k}{n}\right)^2 - 8\right)=\ldots
+n\to\infty
+x_k^{\ast}=x_k,\, 1\leq k\leq n
+x_k^{\ast}=x_{k-1},\, 1\leq k\leq n
+x_k^{\ast} = \frac{1}{2}\left(x_{k-1}+x_k\right),\, 1\leq k\leq n

@@ -1,0 +1,48 @@
+ \mbox{Minimize }  tr(Y) + \frac{1}{\eta} tr(Z) 
+  \begin{pmatrix} Y & X \\  X & Z+\varepsilon I \end{pmatrix}  \succeq 0 \mbox{, } %  \begin{pmatrix}  I & X \\   X & Z  \end{pmatrix}  \succeq 0
+ \langle A_i,X\rangle = 0\mbox{, } i=1,\cdots,m \mbox{, } \; \; 1\leq tr(X) \leq \sqrt{n} \mbox{, } \; \; X\succeq 0
+X,Y,Z
+n \times n
+A_i
+n \times n
+\varepsilon
+\eta
+\langle A,X\rangle = \sum a_{ij}x_{ij}
+     \begin{array}{rll} {\displaystyle\min_{X \in \mathbb{S}^n}} & \langle C, X \rangle_{\mathbb{S}^n} & \\ \text{subject to} & \langle A_i, X \rangle_{\mathbb{S}^n} = b_i, \quad i = 1,\ldots,m & (P) \\ & X \succeq 0 & \end{array} 
+     \begin{array}{rll} {\displaystyle\max_{y \in \mathbb{R}^m}} & \langle b, y \rangle_{\mathbb{R}^m} & \\  & & (D) \\ \text{subject to} & {\displaystyle\sum_{i=1}^m} y_i A_i \preceq C & \end{array} 
+P \succeq Q
+P-Q \succeq 0
+(P')
+b=(b_1, ..., b_l)^T
+b^Ty=\langle b, y \rangle_{\mathbb{R}^m}
+ E^{(k, l)} \in S^ {5n\times 5n} 
+k,l=1,..., 5n)
+(k, l)
+(l, k)
+= 1
+k=l
+ E^{(k, k)} 
+k,k)
+E^{(l,k)}=E^{(k,l)}
+(k,l).
+W=(w_{i,j}) \in S^{5n\times 5n},
+W=\sum_{k=1}^{5n} \sum_{l=k}^{5n} w_{k,l}E^{(k,l)},
+ \langle E^{(k, l)}, W \rangle  = w_{k,l}+w_{l,k} = 2w_{k,l}
+k\not=l,
+ \langle E^{(k, k)}, W \rangle  = w_{k,k}. 
+E^{(\cdot, \cdot)},
+W'  \succeq 0 
+ W' =\begin{pmatrix}                                      X  &  0  &   0  & 0 & 0\\                                      0  &  I  &  X   & 0 & 0  \\                                      0  &  X  &  Z   & 0 & 0   \\                                      0  &  0  &  0   & Y & X  \\                                      0  &  0  &  0   & X & Z+\varepsilon I                                      \end{pmatrix}    \succeq 0 . 
+ \begin{array} & &W & \succeq  & 0 ,   \\ 1& \langle E^{(i, ~n+j)}, W \rangle &  = & 0,  ~~i = 1, ..., n, j=1,..., 4n,  \\  2& \langle E^{(n+i, ~3n+j)}, W \rangle & = & 0,  ~~i,j = 1, ..., 2n,  \\   3& \langle E^{(n+i, ~n+j)}, W \rangle & = &  0, ~ i=1, ..., n-1, j=i+1,...,   n,    \\   4& \langle E^{(n+i, ~n+i)}, W \rangle & = &  1, ~ i=1,..., n,   \\   5& \langle E^{(i,j)}-E^{(n+i, ~2n+j)}, W \rangle & = & 0, ~~ i=1,..., n-1, ~ j=i+1, ...,   n, \\    6& \langle E^{(j,i)}-E^{(n+j, ~2n+i)}, W \rangle  & = & 0, ~i=1,..., n-1, ~j=i+1, ..., n, \\   7& \langle 2 E^{(i,i)}-E^{(n+i, ~2n+i)}, W \rangle  & = & 0, ~~ i =1, ...,   n, \\   8& \langle E^{(n+i,2n+j)}-E^{(3n+i, ~4n+j)}, W \rangle & = & 0, ~~ i,j=1, ..., n,  \\   9& \langle E^{(4n+i, ~4n+j)}- E^{(2n+i, ~2n+j)} , W \rangle  & = & 0,  ~~i=1,..., n-1,   j =i+1,..., n   , \\   10& \langle E^{(4n+i, ~4n+i)}- E^{(2n+i, ~2n+i)} , W \rangle &  = & \varepsilon,  ~~i=1, ..., n , \end{array} 
+W'
+I
+n\times n 
+X
+Z
+Z+\varepsilon I
+ P, P_0 , E^{(\cdot,\cdot)}
+P_i
+\alpha_i
+-\beta_i
+\Phi
+Q

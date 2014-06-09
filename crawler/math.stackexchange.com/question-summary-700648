@@ -1,0 +1,14 @@
+\sum_{k=1}^p\| I_{k} - M_{k}A \|^2
+\ell^2
+\bf v
+\Vert {\bf v} \Vert^2=\sum_{j=1}^n v_j^2 = {\bf v}^\top {\bf v}
+{\bf i}
+n
+M
+\Vert {\bf i}-M {\bf a}\Vert^2  = ({\bf i}-M{\bf a})^\top ({\bf i} -M{\bf a})={\bf i}^\top {\bf i} - 2 {\bf i}^\top M{\bf a} + {\bf a}^\top M^\top M {\bf a}.
+f({\bf a})
+{\bf a}
+\begin{align}f({\bf a})  &= \sum_{k=1}^p \Vert {\bf i}_k - M_k {\bf a}\Vert^2  \\&= \sum_{k=1}^p \left( {\bf i}_k^\top {\bf i}_k - 2 {\bf i}_k^\top M_k{\bf a} + {\bf a}^\top M_k^\top M_k {\bf a} \right) \\&= \left(\sum_{k=1}^p {\bf i}_k^\top {\bf i}_k\right) - 2 \left(\sum_{k=1}^p {\bf i}_k^\top M_k\right) {\bf a} + {\bf a}^\top \left( \sum_{k=1}^p M_k^\top M_k \right) {\bf a} . \end{align} 
+\nabla f({\bf a}) = \sum_{k=2}^p -2 M_k^\top ({\bf i}_k - M_k {\bf a}),
+\nabla^2 f({\bf a}) = \sum_{k=1}^p 2 M_k^\top M_k.
+\nabla f({\bf a})=\vec 0

@@ -1,0 +1,13 @@
+i=k
+i=k+1
+\begin{align*} (x+y)^n &= (x+y)(x+y)^{n-1}\\ &= (x+y)\sum_{k=0}^{n-1}\binom{n-1}{k}x^{n-1-k}y^k\\ &= x\sum_{k=0}^{n-1}\binom{n-1}{k}x^{n-1-k}y^k + y\sum_{k=0}^{n-1}\binom{n-1}{k}x^{n-1-k}y^k\\ &= \sum_{i=0}^{n-1}\binom{n-1}{k}x^{n-k}y^k + \sum_{k=0}^{n-1}\binom{n-1}{k}x^{n-1-k}y^{k+1} \end{align*}
+ (x+y)^n = \sum_{i=0}^{n-1}\binom{n-1}{i}x^{n-i}y^i + \sum_{i=1}^n\binom{n-1}{i-1}x^{n-i}y^i
+k
+i=k
+1
+n
+\sum_{i=0}^{n-1}\binom{n-1}{i}x^{n-i}y^i = \sum_{j=0}^{n-1}\binom{n-1}{j}x^{n-j}y^j.
+a_1+a_2+a_3+\cdots +a_{10}
+\sum_{i=1}^{10}a_i,
+\sum_{j=0}^{9}a_{j+1}
+\sum_{k=2}^{11}a_{k-1}.

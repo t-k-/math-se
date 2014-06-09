@@ -1,0 +1,32 @@
+X
+\mathrm{Poisson}(5)
+P(X \in A) = \sum_{j\in A} \frac{e^{-5}5^j}{j!}
+L(X) = \sum^\infty_{j=0} \left(\frac{e^{-5}5^j}{j!}\right)\delta_j
+E(f(X)) = \sum_{j=0}^\infty\frac{f(j)e^{-5}5^j}{j!}
+f : \mathbb{R} \rightarrow \mathbb{R}
+\int fd\mu = \sum_i \beta_i \int f \, d\mu_i,
+X \sim \mathrm{Poisson}(5)
+E[X]=\lambda
+E[X^2]=\lambda+\lambda^2
+E[e^{3X}]= e^{2 \lambda}
+\lambda = np
+n \to \infty
+1
+p(y) = {n \choose y} p^y (1-p)^{n-y}.
+\lim_{n \to \infty} {n \choose y} p^y (1-p)^{n-y} = \lim_{n \to \infty} \frac{n(n-1) \cdots (n-y+1)}{y!} \left(\frac{\lambda}{n}\right)^y \left(1 - \frac{\lambda}{n}\right)^{n-y}
+= \lim_{n \to \infty} \frac{\lambda^y}{y!} \left(1 - \frac{\lambda}{n}\right)^n \frac{n(n-1) \cdots (n-y+1)}{n^y} \left(1 - \frac{\lambda}{n}\right)^{-y}
+= \frac{\lambda^y}{y!} \lim_{n \to \infty} \left(1 - \frac{\lambda}{n}\right)^n \left(1 - \frac{\lambda}{n}\right)^{n-y} \left(1 - \frac{1}{n}\right) \left(1 - \frac{2}{n}\right) \cdots \left(1 - \frac{y-1}{n}\right).
+\lim_{n \to \infty} \left(1 - \frac{\lambda}{n}\right)^n = e^{-\lambda},
+p(y) = \frac{\lambda^y}{y!}e^{-\lambda}.
+\lambda
+z = y - 1
+1
+\lambda
+E(Y) = \sum_{y=0}^\infty y\frac{\lambda^y e^{-\lambda}}{y!} = \sum_{y=1}^\infty \frac{\lambda^y e^{-\lambda}}{(y-1)!}.
+E(Y) = \lambda \sum_{z=0}^\infty \frac{\lambda^z e^{-\lambda}}{z!}.
+E(Y)^2 = \lambda^2
+E(Y^2)
+V(Y) = E(Y^2) - E(Y)^2.
+E(Y^2) = \sum_{y=0}^\infty y^2 \frac{\lambda^y e^{-\lambda}}{y!}
+E(Y^2) = \lambda^2 + \lambda.
+V(Y) = \lambda

@@ -1,0 +1,33 @@
+\begin{align*} a_1 &= 1,\\ a_2 &= 2,\\ a_n &= a_{n-1} + a_{n-2}  \end{align*}
+\begin{align*} a_1 &= 1,\\ a_2 &= 2,\\ a_n &= a_{n-1} + a_{n-2} \end{align*}
+a_n
+(1)
+x^n
+n\ge 0
+\begin{align*} \sum_na_nx^n&=\sum_na_{n-1}x^n+\sum_na_{n-2}x^n+\sum_n[n=0]x^n\\ &=x\sum_na_{n-1}x^{n-1}+x^2\sum_na_{n-2}x^{n-2}+x^0\\ &=x\sum_na_nx^n+x^2\sum_na_nx^n+1\;. \end{align*}
+g(x)=\sum_na_nx^n
+g(x)=xg(x)+x^2g(x)+1
+\varphi=\frac12(1+\sqrt5)
+\hat\varphi=\frac12(1-\sqrt5)
+g(x)=\frac1{1-x-x^2}=\frac1{(1-\varphi x)(1-\hat\varphi x)}\;,
+\begin{align*}g(x)&=\frac1{5+\sqrt5}\left(\frac{3+\sqrt5}{1-\varphi x}+\frac2{1-\hat\varphi x}\right)\\ &=\frac1{5+\sqrt5}\left((3+\sqrt5)\sum_n\varphi^nx^n+2\sum_n\hat\varphi^nx^n\right)\\ &=\frac1{5+\sqrt5}\sum_n\Big((3+\sqrt5)\varphi^n+2\hat\varphi^n\Big)x^n\;, \end{align*}
+\begin{align*}a_n&=\frac1{5+\sqrt5}\Big((3+\sqrt5)\varphi^n+2\hat\varphi^n\Big)\\ &=\frac{5+\sqrt5}{10}\varphi^n+\frac{5-\sqrt5}{10}\hat\varphi^n\\ &=\frac{\sqrt5+1}{2\sqrt5}\varphi^n+\frac{\sqrt5-1}{2\sqrt5}\hat\varphi^n\\ &=\frac1{\sqrt5}\left(\varphi^{n+1}-\hat\varphi^{n+1}\right)\;. \end{align*}
+a_n=F_{n+1}
+(n+1)
+F(x)
+F(x)=[\sum_{k=0}^{\infty}( A(k)x^k )]
+[\sum_{k=0}^{\infty}( A(k)x^k )] = [\sum_{k=0}^{\infty}( (A(k-1)+A(k-2))x^k )]
+1+2+[\sum_{k=3}^{\infty}(A(k)x^k)]=F(x)
+x/(1-x-x^2)
+A(z) = \sum_{n \ge 0} a_n z^n
+a_0 = 1
+ a_{n + 2} = a_{n + 1} + a_n \qquad a_1 = 1 a_2 = 2 
+z^n
+n \ge 0
+1 - z - z^2 = (1 - \phi z) (1 - \hat{\phi} z)
+a_n = F_{n + 1}
+ \frac{A(z) - a_0 - a_1 z}{z^2} = \frac{A(Z) - a_0}{z} + A(z) 
+ A(z) = \frac{1}{1 - z - z^2} 
+ \begin{align*} \phi           &= \frac{1 + \sqrt{5}}{2} \\ \hat{\phi} &= \frac{1 - \sqrt{5}}{2} \end{align*} 
+ A(z) = \frac{\phi}{\sqrt{5}} \cdot \frac{1}{1 - \phi z}         + \frac{\hat{\phi}}{\sqrt{5}} \cdot \frac{1}{1 - \hat{\phi} z} 
+ a_n = \frac{1}{\sqrt{5}} \left( \phi^{n + 1} + \hat{\phi}^{n + 1} \right) 

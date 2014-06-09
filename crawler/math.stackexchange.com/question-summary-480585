@@ -1,0 +1,25 @@
+\{a_{n}\}
+n\ge 2001,na_{n}\le 1
+m\ge 2001,x\in R
+\left|\sum_{k=2001}^{m}a_{k}\sin{(kx)}\right|\le 1+\pi 
+\frac{1-\cos\left(\frac{Nx}{2}\right)}{2\sin(x/2)}
+\frac{N}{I_0(1)}<\frac{4N}{5}
+m
+ \sum_{k=2001}^m a_k\sin(k x) = a_m \sum_{k=2001}^{m}\sin(k x)+(a_{m-1}-a_m)\sum_{k=2001}^{m-1}\sin(k x)+\ldots+(a_{2002}-a_{2003})\sum_{k=2001}^{2002}\sin(k x)+(a_{2001}-a_{2002})\sin(2001x),
+ \sum_{k=2001}^m \sin(kx) = \frac{\cos\left(\frac{4001x}{2}\right)-\cos\left(\frac{(2m+1)x}{2}\right)}{2\sin(x/2)},
+ \sum_{k=2001}^m a_k\sin(k x) = a_{2001}\cdot\frac{\cos\left(\frac{4001x}{2}\right)-1}{2\sin(x/2)}+a_m\cdot \frac{1-\cos\left(\frac{(2m+1)x}{2}\right)}{2\sin(x/2)}+\sum_{k=2001}^{m-1}(a_k-a_{k+1})\frac{1-\cos\left(\frac{(2k+1)x}{2}\right)}{2\sin(x/2)}.
+ \sum_{k=2001}^m a_k\sin(k x) \leq 2m a_m+\sum_{k=2001}^{m-1}2k(a_k-a_{k+1})\leq 2+2\left(\sum_{k=2001}^{m-1}k a_k-\sum_{k=2001}^{m-1}k a_{k+1}\right),
+\left|\sum_{k=2001}^m a_k\sin(k x)\right| \leq 2+2\log\left(\frac{m}{2001}\right)
+x\in[0,\pi]
+x=\frac{4}{2h+1}
+h\geq m
+x=\frac{4}{2h+1}
+h\in(2001,m-1]
+x\in\left[0,\frac{4}{2m+1}\right]
+x
+x\geq\frac{4}{4003}
+ 0\leq \frac{1-\cos\left(\frac{2n+1}{2}x\right)}{2\sin(\frac{1}{2}x)}\leq\min\left(\frac{(2n+1)^2}{8}x,\frac{1}{\sin(x/2)}\right).
+\sum_{k=2001}^{m-1}(a_k-a_{k+1})\frac{1-\cos\left(\frac{(2k+1)x}{2}\right)}{2\sin(x/2)}\leq \frac{4}{2h+1}\sum_{k=2001}^{m-1}(a_k-a_{k+1})\frac{(2k+1)^2}{8}\leq \frac{2(m-k)}{2h+1}\leq 1.
+\sum_{k=2001}^{m-1}(a_k-a_{k+1})\frac{1-\cos\left(\frac{(2k+1)x}{2}\right)}{2\sin(x/2)}\leq 1+\frac{a_h-a_m}{2\sin(x/2)}\leq 1+\frac{1}{2h\sin\left(\frac{2}{2h+1}\right)}\leq 2,
+\sum_{k=2001}^{m-1}(a_k-a_{k+1})\frac{1-\cos\left(\frac{(2k+1)x}{2}\right)}{2\sin(x/2)}\leq\frac{a_{2001}}{2\sin\left(\frac{2}{2003}\right)}\leq\frac{1}{2002 \sin\left(\frac{2}{2003}\right)}\leq 1.
+ \left|\sum_{k=2001}^m a_k \sin(kx)\right|<4+\frac{1}{2001}<1+\pi.

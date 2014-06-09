@@ -1,0 +1,28 @@
+f
+[a,b]
+f \geq 0
+[a,b]
+\lim_n M_n = \sup \{ f(x) \mid x \in [a,b] \}
+   M_n = \left( \int_a^b f (x)^n dx \right)^{1/n}. 
+M=\sup\{f(x):x\in [a,b]\}
+ M_{n}\leq \left(\int_{a}^{b}M^{n}\right)^{1/n}=(M^{n}(b-a))^{1/n}=M(b-a)^{1/n}.
+n\rightarrow\infty
+\lim M_{n}\leq M
+y\in [a,b]
+f(y)=M
+\epsilon>0
+\delta>0
+|x-y|\leq\delta
+f(x)\geq M-\epsilon
+M_{n}=\left(\int_{a}^{b}f^{n}\right)^{1/n}\geq \left(\int_{[y-\delta,y+\delta]}f^{n}\right)^{1/n}\geq \left(\int_{[y-\delta,y+\delta]}(M-\epsilon)^{n}\right)^{1/n}=(M-\epsilon)(2\delta)^{1/n}.
+n\rightarrow \infty
+\lim M_{n}\geq M-\epsilon
+\epsilon
+\lim M_{n}\geq M
+s=\sup\limits_{[a,b]}\{f(x):x\in[a,b]\}
+c\lt s
+c\lt s
+ \begin{align} \left(\int_a^bf(x)^n\,\mathrm{d}x\right)^{1/n} &\le \left(\int_a^bs^n\,\mathrm{d}x\right)^{1/n}\\ &=s(b-a)^{1/n} \end{align} 
+ \begin{align} \left(\int_a^bf(x)^n\,\mathrm{d}x\right)^{1/n} &\ge c\,|\{x:f(x)\ge c\}|^{1/n}\\ \end{align} 
+ c\le\lim_{n\to\infty}\left(\int_a^bf(x)^n\,\mathrm{d}x\right)^{1/n}\le s 
+ \lim_{n\to\infty}\left(\int_a^bf(x)^n\,\mathrm{d}x\right)^{1/n}=\sup_{[a,b]}\{f(x):x\in[a,b]\} 

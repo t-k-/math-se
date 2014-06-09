@@ -1,0 +1,6 @@
+(0,\infty)(\Re)
+  f(t,x)=\sum_{n=-\infty}^\infty e^{-\large \frac{(x-2\pi n)^2}{2t}}\frac{1}{\sqrt{2\pi t}} 
+ \left\lvert e^{\large\frac{-(x+re^{i\theta}-2\pi n)^2}{2t}}\right\rvert = e^{\large\frac{r^2\sin(\theta)^2-(x+r\cos(\theta))^2}{2t}}e^{\large 2\pi n\frac{(x+r\cos(\theta))-\pi n}{t} }
+ \int_{\gamma} f(t,x) ds=0 
+\int_{\theta=0}^{2\pi} f d\theta = 0 \Rightarrow \int_{\theta=0}^{2\pi} | f| d\theta = 0 \Rightarrow
+ \frac{1}{\sqrt{2\pi t}}\int_{\theta=0}^{2\pi}\sum_{n=-\infty}^\infty \left\lvert e^{\large\frac{-(x+re^{\large i\theta}-2\pi n)^2}{2t}}\right\rvert d\theta = \frac{1}{\sqrt{2\pi t}}\int_{\theta=0}^{2\pi}\sum_{n=-\infty}^\infty e^{\large \frac{r^2\sin(\theta)^2-(x+r\cos(\theta))^2}{2t}}e^{2\pi n\large\frac{(x+r\cos(\theta))-\pi n}{t} } d\theta 

@@ -1,0 +1,12 @@
+x_1, x_2,\ldots, x_n
+\mathrm{Pr}\left(\sum_{i=1}^nx_i>\beta\mu\right)\le e^{-g(\beta)\mu}
+\beta>1
+\mu=E\left(\sum_{i=1}^nx_i\right)
+g(\beta)=\beta\times \ln(\beta)-\beta+1
+P(\sum_{i=1}^n x_i > \beta \mu) = P(\beta^{\sum_{i=1}^n x_i} > \beta^{\beta \mu})
+\leq \frac{E[\beta^{\sum_{i=1}^n x_i}]}{\beta^{\beta \mu}} = \frac{\prod_{i=1}^nE[\beta^{x_i}]}{\beta^{\beta \mu}}=\frac{\prod_{i=1}^nE[\beta^{x_i}]}{e^{(\beta \ln \beta) \mu}}
+E[\beta^{x_i}] = 1 + p_i(\beta-1)
+p_i
+\prod_{i=1}^nE[\beta^{x_i}] = \prod_{i=1}^n(1 + p_i(\beta-1)) \leq \prod_{i=1}^n e^{p_i(\beta-1)}
+= e^{(\beta - 1)\sum_{i=1}^n p_i} = e^{(\beta - 1)\mu}
+P(\sum_{i=1}^n x_i > \beta \mu) \leq e^{(-\beta \ln \beta +\beta -1)\mu} = e^{-g(\beta)\mu}

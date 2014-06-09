@@ -1,0 +1,110 @@
+\begin{align} a \le b + c \quad b \le c + a \quad c \le a + b \quad &\implies \qquad |b-c| \le a \le b+c\\ &\implies b^2 + c^2 - 2 b c \le a^2 \le b^2 + c^2 + 2 b c \\ &\implies \exists\;\theta, \; 0 \leq \theta \leq \pi \quad \text{s.t.} \quad a^2 = b^2 + c^2 - 2 b c \cos\theta  \end{align}
+\theta
+W
+X
+Y
+Z
+A
+B
+C
+W
+D
+E
+F
+W
+W^2 = X^2 + Y^2 + Z^2 - 2 Y Z \cos A - 2 Z X \cos B - 2 X Y \cos C
+A
+Y
+Z
+W \leq X + Y + Z
+\begin{align} Y^2 + Z^2 - 2 Y Z \cos A \quad &= H^2 = \quad W^2 + X^2 - 2 W X \cos D \\ Z^2 + X^2 - 2 Z X \cos B \quad &= J^2 = \quad W^2 + Y^2 - 2 W Y \cos E \\ X^2 + Y^2 - 2 X Y \cos C \quad &= K^2 = \quad W^2 + Z^2 - 2 W Z \cos F  \end{align}
+W^2 + X^2 + Y^2 + Z^2 = H^2 + J^2 + K^2 \qquad(1)
+81 V^4
+V
+W
+X
+Y
+Z
+H
+J
+K
+(1)
+(2)
+(3)
+A_1 \hat{n}_1 + A_2 \hat{n}_2 + A_3 \hat{n}_3 + A_4 \hat{n}_4 = \vec{0}
+\hat{n}_i
+P_i, i = 1,\ldots, 4
+P_i = \Big\{\; \vec{x} \in \mathbb{R}^3 : \vec{x} \cdot \vec{n}_i = \frac{1}{A_i}\;\Big\}
+\vec{x}_1 = P_2 \cap P_3 \cap P_4,\;\;   \vec{x}_2 = P_3 \cap P_4 \cap P_1,\;\;   \vec{x}_3 = P_4 \cap P_1 \cap P_2,\;\;   \vec{x}_4 = P_1 \cap P_2 \cap P_3
+\vec{x}_2, \vec{x}_3, \vec{x}_4
+P_1
+\vec{x}_i \cdot \hat{n}_1 = \frac{1}{A_1}
+i \ne 1
+\vec{x}_i \cdot \hat{n}_j = \frac{1}{A_j}
+i \ne j
+\vec{x_1} \cdot \hat{n}_1 = -\frac{1}{A_1} \vec{x_1} \cdot ( A_2 \hat{n}_2 + A_3 \hat{n}_3 + A_4 \hat{n}_4 ) = -\frac{1}{A_1} \left( \frac{A_2}{A_2} + \frac{A_3}{A_3} + \frac{A_4}{A_4} \right) = -\frac{3}{A_1}
+\vec{x}_1
+P_1
+\frac{4}{A_1}
+X
+\vec{x}_1, \vec{x}_2, \vec{x}_3
+\vec{x}_4
+\vec{x}_1
+P_1
+\frac{4}{A_1}
+\vec{x}_2, \vec{x}_3
+\vec{x}_4
+X
+ \text{Area}(X\cap P_1) : \text{Area}(X\cap P_2) : \text{Area}(X\cap P_3) : \text{Area}(X\cap P_4) = A_1 : A_2 : A_3 : A_4
+X
+A_1, A_2, A_3, A_4
+A_i
+\hat{n}_i
+A_1 = |A_1 \hat{n}_1 | = |A_2 \hat{n}_2 + A_3 \hat{n}_3 + A_4 \hat{n}_4| < A_2 + A_3 + A_4
+A_i
+(*1)
+\begin{cases} A_1 < A_2 + A_3 + A_4\\ A_2 < A_3 + A_4 + A_1\\ A_3 < A_4 + A_1 + A_2\\ A_4 < A_1 + A_2 + A_3\tag{*1} \end{cases}
+(*1)
+\theta \in [0,\pi]
+f(\theta)
+(A_1 + A_2)^2 - (A_3 - A_4)^2 > 0\quad\text{ and }\quad(A_1 - A_2)^2 - (A_3 + A_4)^2 < 0
+f(\theta) = (A_1^2 + 2A_1A_2\cos\theta + A_2^2) - (A_3^2 - 2A_3A_4\cos\theta + A_4^2)
+f(0) > 0
+f(\pi) < 0
+\theta \in (0,\pi)
+f(\theta) = 0
+\hat{n}_1
+\hat{n}_3
+\hat{n}_1
+\theta
+\hat{n}_2
+\hat{n}_3
+\pi - \theta
+\hat{n}_4
+\hat{n}_3
+\hat{n}_4
+A_1, A_2, A_3, A_4
+\begin{align}|A_1 \hat{n}_1 + A_2 \hat{n}_2|^2 = & (A_1^2 + 2A_1A_2\cos\theta + A_2^2) = (A_3^2 - 2A_3A_4\cos\theta + A_4^2)\\ = & |A_3 \hat{n}_3 + A_4 \hat{n}_4|^2\end{align}
+a<b+c+d
+b<c+d+a
+c<d+a+b
+d<a+b+c
+a,b,c,d
+a>b, a>c, a>d
+a
+A
+(x,y,z)
+b,c,d
+H_b,H_c,H_d
+AH_b/2=b
+V
+O-PQR
+OP=p, OQ=q, OR=r, QR=l, RP=m, PQ=n
+144V^2=p^2l^2(-p^2+q^2+r^2-l^2+m^2+n^2)+q^2m^2(p^2-q^2+rc^2+l^2-m^2+n^2)+r^2n^2(p^2+q^2-r^2+l^2+m^2-n^2)-l^2q^2r^2-p^2m^2r^2-p^2q^2n^2-l^2m^2n^2.
+F(p, q, r; l, m, n)
+OPQ, ORQ, PRQ, OPR
+F(p, q, r; l, m, n)>0.
+4a=\sqrt{(p^2+q^2+n^2)^2-2(p^4+q^4+n^4)}, 4b=\sqrt{(q^2+r^2+l^2)^2-2(q^4+r^4+l^4)},
+4c=\sqrt{(l^2+m^2+n^2)^2-2(l^4+m^4+n^4)}, 4d=\sqrt{(p^2+r^2+m^2)^2-2(p^4+r^4+m^4)}.
+F
+a,b,c,d

@@ -1,0 +1,10 @@
+y=x^s
+dy=s x^{s-1} dx
+dx={s^{-1}dy x^{1-s}}
+x=y^{1/s}
+x^{d-1}=y^{(d-1)/s}
+\alpha\equiv d/s-1
+ \int_0^\infty x^{d-1}e^{x^s}dx. 
+ I\equiv\int_0^\infty x^{d-1}e^{-x^s}dx=\frac{1}{s}\Gamma\big(\frac{d}{s}\big),\  \Re(s)>0, \ \Re(d)>0. 
+ I=\int_0^\infty y^{(d-1)/s}e^{-y}\frac{y^{(1-s)/s}}{s}dy=\frac{1}{s}\int_0^\infty y^{d/s-1} e^{-y}dy. 
+ I=\frac{1}{s}\int_0^\infty y^{\alpha} e^{-y} dy=\frac{1}{s}\Gamma(1+\alpha)=\frac{1}{s}\Gamma\big(\frac{d}{s}\big). 

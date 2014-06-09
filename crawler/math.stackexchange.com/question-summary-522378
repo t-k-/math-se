@@ -1,0 +1,14 @@
+\bigtriangledown_x{}err
+\textbf{x}
+\ln{(x)}
+\frac{1}{\textbf{x}}
+err=\frac{1}{N}\left[\textbf{y}^T\ln{\textbf{x}}+(\textbf{1}-\textbf{y})^T\ln{(\textbf{1}-\textbf{x})}\right]
+\textbf{x} = [x_{1},\ldots,x_{n}]^{T}
+\ln(1-\textbf{x}) = [\ln(1-x_{1}),\ldots,\ln(1-x_{n})]^{T}
+\displaystyle\nabla_{x}\ln(1-\textbf{x}) = \left[\frac{\text{d}}{\text{d}x_{1}}\ln(1-x_{1}), \ldots, \frac{\text{d}}{\text{d}x_{n}}\ln(1-x_{n})\right]^{T}
+\nabla_{x}\ln(\textbf{x})
+\ln(\textbf{x})
+\textbf{x}
+\nabla_{x}\text{err} = \displaystyle\frac{1}{N} [\textbf{y}^{T}\nabla_{x}\ln(\textbf{x}) + (1-\textbf{y})^{T}\nabla_{x}\ln(1-\textbf{x})]
+1/\textbf{x}
+\textbf{z} = \nabla_{x}\ln(\textbf{x}) = [1/x_{1},\ldots,1/x_{n}]

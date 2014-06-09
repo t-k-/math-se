@@ -1,0 +1,43 @@
+\lim_{n\to\infty} \sum_{k=1}^{n^2} \frac{n}{n^2+k^2} 
+f:\mathbb{R}\to\mathbb{R}
+N>1
+N=n^2
+f(x)=n/(n^2+x^2)
+n\to\infty
+ \int\limits_1^{N+1}f(x)dx\leq \sum\limits_{k=1}^{N}f(k)\leq \int\limits_0^N f(x)dx 
+ \arctan\frac{n^2+1}{n}-\arctan \frac{1}{n}\leq\sum\limits_{k=1}^{n^2}\frac{n}{n^2+k^2}\leq\arctan n 
+ \lim\limits_{n\to\infty}\sum\limits_{k=1}^{n^2}\frac{n}{n^2+k^2}=\frac{\pi}{2} 
+f(x) = \frac{1}{1+x^2}
+\int_0^a f(x) dx \approx \sum_{k=0}^{na} \frac{1}{n}f\left(\frac{k}{n}\right)
+f(x)
+\frac{f(0)-f(a)}n
+<\frac1n
+a
+a=n
+\int_0^\infty f(x) dx
+x=k/n
+\mathrm{d}x=1/n
+m
+n
+\epsilon>0
+m_\epsilon\ge\frac1{\large\epsilon}
+m\ge m_\epsilon
+n_\epsilon\ge m_\epsilon
+n\ge n_\epsilon
+m_\epsilon\ge\frac1{\large\epsilon}
+(4)
+(7)
+n\ge n_\epsilon
+\epsilon
+ S_m(n)=\sum_{k=0}^{mn}\frac{n}{n^2+k^2}=\sum_{k=0}^{mn}\frac{1}{1+(k/n)^2}\frac1{\vphantom{k^2}n}\tag{1} 
+ I_m=\int_0^m\frac{\mathrm{d}x}{1+x^2}\tag{2} 
+ \sum_{k>mn}\frac{n}{n^2+k^2}\le\sum_{k>mn}\frac{n}{k(k-1)}=\frac1m\tag{3} 
+ S_m(n)\le S_\infty(n)=\lim_{m\to\infty}S_m(n)\le S_m(n)+\frac1m\tag{4} 
+ I_\infty=\lim\limits_{m\to\infty}I_m=\int_0^\infty\frac{\mathrm{d}x}{1+x^2}\tag{5} 
+ I_\infty-\epsilon\le I_m=\lim_{n\to\infty}S_m(n)\le I_\infty\tag{6} 
+ I_\infty-2\epsilon\le S_{m_\epsilon}(n)\le I_\infty+\epsilon\tag{7} 
+ I_\infty-3\epsilon\le S_n(n)\le I_\infty+2\epsilon\tag{8} 
+ \lim_{n\to\infty}S_n(n)=I_\infty\tag{9} 
+ \lim_{n\to\infty}\sum_{k=0}^{n^2}\frac{n}{n^2+k^2}=\int_0^\infty\frac{\mathrm{d}x}{1+x^2}=\frac\pi2\tag{10} 
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\lim_{n \to \infty}\sum_{k = 1}^{n^{2}}{n \over n^{2} + k^{2}}:\ {\large ?}}

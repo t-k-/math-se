@@ -1,0 +1,94 @@
+f:[0,T]\rightarrow R^+
+S=\int_0 ^ T f(x)dx
+R=\frac S T
+[a,b]
+0\leq a \leq b \leq T
+b-a\geq \frac T 2
+x\in [a,b]
+f(x) \geq R
+f
+\frac 1 T \int_0 ^T f(x)dx \leq f(\frac T 2)
+ a := \inf \left\{ x \in [0,T] \; : \; f(x) \geq R \right\} 
+ b := \sup\left\{ x \in [0,T] \; : \; f(x) \geq R \right\} 
+f(a) = f(b) = R
+a
+b
+[0,T]
+T_a, T_b > 0
+T
+ f(x) \leq T_a(x-a) + R 
+ f(x) \leq T_b(b-x) + R 
+x \in [0,T]
+ X := \left\{ (x,y) \in \mathbb{R}^2 \; : \; 0 \leq x \leq a, \; f(x) \leq y \leq R \right\} 
+ Y := \left\{ (x,y) \in \mathbb{R}^2 \; : \; a \leq x \leq b, \; R \leq y \leq f(x) \right\} 
+ Z := \left\{ (x,y) \in \mathbb{R}^2 \; : \; b \leq x \leq T, \; f(x) \leq y \leq R \right\} 
+R
+f
+\mathscr{L}^2(Y) = \mathscr{L}^2(X) + \mathscr{L}^2(Z)
+\mathscr{L}^2
+\mathscr{L}^2(Y)
+y = T_a(x-a)+R
+y = T_b(b-x)+R
+y = R
+ \mathscr{L}^2(Y) \leq \frac{1}{2} \frac{(b-a)^2 T_a T_b}{T_a+T_b} 
+\mathscr{L}^2(X)
+x = 0
+y = R
+y = T_a(x-a)+R
+\mathscr{L}^2(Z)
+x = T
+y = R
+y = T_b(b-x)+R
+ \mathscr{L}^2(X) + \mathscr{L}^2(Z) \geq \frac{1}{2} a^2 T_a + \frac{1}{2} (T-b)^2 T_b 
+\mathscr{L}^2(Y) = \mathscr{L}^2(X) + \mathscr{L}^2(Z)
+ \frac{1}{2} \frac{(b-a)^2 T_a T_b}{T_a + T_b} \geq \frac{1}{2} a^2 T_a + \frac{1}{2} (T-b)^2 T_b 
+\frac{1}{2}
+\frac{T_a+T_b}{T_a T_b}
+ (b-a)^2 \geq a^2 \frac{T_a + T_b}{T_b} + (T-b)^2 \frac{T_a + T_b}{T_a} = a^2 + (T-b)^2 + a^2 \frac{T_a}{T_b} + (T-b)^2 \frac{T_b}{T_a} 
+x^2 + y^2 \geq 2xy
+ (b-a)^2 \geq a^2 + (T-b)^2 + 2a(T-b) = (T-b+a)^2 
+b-a \geq \frac{1}{2} T
+f(a) = f(b) = R
+f(a)
+f(b)
+R
+f(a) = R
+f(b) > R
+b = T
+a
+0
+b
+T
+x = 0
+y = R
+y = T_a(x-a)+R
+x = T
+y = R
+y = T_a(x-a)+R
+a \leq \frac{1}{2} T
+b = T
+\frac 1 T \int_0 ^T f(x)dx \leq f(\frac T 2)
+(0,T)
+x_0
+x_0
+[\frac{T}{2},T]
+[0, \frac{T}{2}]
+f(x)=R
+[a,b]
+b-a \geq \frac{T}{2}
+[0,x_0]
+[x_0,T]
+a \leq \frac{x_0}{2}
+b \geq \frac{x_0+T}{2}
+T=S=1
+f
+f(0)=0
+f
+0< a<b\leq 1
+f\geq\frac12
+[a,b]
+b-a\geq\frac12
+a=\inf\lbrace x\in [0,1] \text{ such that }f(x)\geq\frac{1}{2}\rbrace
+b=\sup\lbrace x\in [0,1] \text{ such that }f(x)\geq\frac{1}{2}\rbrace
+b-a\geq \frac12
+f\neq0

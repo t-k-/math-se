@@ -1,0 +1,104 @@
+A
+x=0
+(0,0)
+B
+x=b
+(b,0)
+A
+v
+B
+B
+y
+u
+v
+u
+w=v+u
+w
+u+v
+v+u
+v
+B
+v
+v_1
+u
+u_1
+v
+B
+u
+v
+w = u+v
+w
+ \tan \theta = \frac{dy}{dx}
+v+u
+|| v+u||(t) = \frac{ds}{dt}
+\frac{dy}{dt} = f(t) 
+\frac{dx}{dt} = g(t) 
+|u|
+|v|
+(b.0)
+|v|^2=v_x^2+v_y^2
+(1)
+1
+(1)
+1
+y
+u_y=|u|
+u_x=0
+y
+x
+(4)
+(b-x)^2
+(5)
+\sqrt{1+\left(\frac{y}{b-x}\right)^2}
+ \frac{v_y}{v_x}=\frac{-y}{b-x}\tag{1} 
+ \begin{array}{} v_x=|v|\frac{b-x}{\sqrt{(b-x)^2+y^2}}&\text{and}&v_y=|v|\frac{-y}{\sqrt{(b-x)^2+y^2}} \end{array}\tag{2} 
+ \begin{align} \frac{\mathrm{d}y}{\mathrm{d}x} &=\frac{v_y+u_y}{v_x+u_x}\\ &=\frac{v_y+|u|}{v_x}\\ &=\frac{|u|\sqrt{(b-x)^2+y^2}-|v|y}{|v|(b-x)}\tag{3} \end{align} 
+ |v|((b-x)\;\mathrm{d}y-y\;\mathrm{d}(b-x))=-|u|\sqrt{(b-x)^2+y^2}\;\mathrm{d}(b-x)\tag{4} 
+ 0=|v|\;\mathrm{d}\frac{y}{b-x}+|u|\sqrt{1+\left(\frac{y}{b-x}\right)^2}\;\mathrm{d}\log\left(b-x\right)\tag{5} 
+ |v|\;\mathrm{d}\operatorname{arcsinh}\left(\frac{y}{b-x}\right)+|u|\;\mathrm{d}\log(b-x)=0\tag{6} 
+ |v|\operatorname{arcsinh}\left(\frac{y}{b-x}\right)+|u|\log(b-x)=C|v|\tag{7} 
+ \begin{align} y &=(b-x)\sinh\left(C-\frac{|u|}{|v|}\log(b-x)\right)\\ &=(b-x)\sinh\left(\frac{|u|}{|v|}\log\left(\frac{b}{b-x}\right)\right)\\ &=\frac{b-x}{2}\left[\left(\frac{b}{b-x}\right)^{|u|/|v|}-\left(\frac{b-x}{b}\right)^{|u|/|v|}\right]\tag{8} \end{align} 
+ \lim_{x\to b^-}y=\left\{\begin{array}{}0&\text{if }|u|<|v|\\b/2&\text{if }|u|=|v|\\\infty&\text{if }|u|>|v|\end{array}\right.\tag{9} 
+\dfrac{|u|}{|v|}=1
+\dfrac{|u|}{|v|}=1
+\frac12
+(2)
+(8)
+|u|=0
+T=\dfrac{b}{|v|}
+|u|\to|v|
+T\to\infty
+ \begin{align} T &=\int_0^b\frac{\mathrm{d}x}{v_x}\\ &=\frac{1}{|v|}\int_0^b\frac{\sqrt{(b-x)^2+y^2}}{b-x}\;\mathrm{d}x\\ &=\frac{1}{|v|}\int_0^b\sqrt{1+\left(\frac{y}{b-x}\right)^2}\;\mathrm{d}x\\ &=\frac{1}{|v|}\int_0^b\sqrt{1+\frac14\left[\left(\frac{b}{b-x}\right)^{|u|/|v|}-\left(\frac{b-x}{b}\right)^{|u|/|v|}\right]^2}\;\mathrm{d}x\\ &=\frac{1}{2|v|}\int_0^b\left[\left(\frac{b}{b-x}\right)^{|u|/|v|}+\left(\frac{b-x}{b}\right)^{|u|/|v|}\right]\;\mathrm{d}x\\ &=\frac{1}{2|v|}\left[\frac{b}{1-|u|/|v|}+\frac{b}{1+|u|/|v|}\right]\\ &=\frac{b}{|v|}\frac{1}{1-(|u|/|v|)^2}\tag{10} \end{align} 
+w>0
+A
+y=0
+(0,0)
+B
+y=w
+(b,w)
+A
+B
+B
+v
+b
+A
+u
+(x(t),y(t))
+t
+(x,y)
+B
+(b-x,w-y)
+v
+V=(V_x,V_y)
+x(0)=y(0)=0
+z=w-y
+t=b-x
+B
+v
+B
+ \frac{v}{r}\,(b-x,w-y),\quad r=\sqrt{(b-x)^2+(w-y)^2}. 
+ V_x=\frac{v}{r}\,(b-x)-u,\quad V_y=\frac{v}{r}\,(w-y). 
+\begin{align*} x'&=\frac{v}{r}\,(b-x)-u,\\ y'&=\frac{v}{r}\,(w-y), \end{align*}\tag1
+ \frac{dy}{dx}=\frac{w-y}{b-x-\dfrac{u}{v}\,\sqrt{(b-x)^2+(w-y)^2}},\quad y(0)=0.\tag2 
+ v\,\frac{b}{\sqrt{b^2+w^2}}<u\implies \frac{dx}{dt}(t=0)<0, 
+-u

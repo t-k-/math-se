@@ -1,0 +1,60 @@
+n \geq 2
+p
+p^e
+p
+n
+\binom{n}{p^e}
+p
+ \binom{n}{r} = (\prod_{n-r\lt p\leq n} p^{k_p(n)})(\prod_{r\lt p\leq n-r} p^{k_p(n) - k_p(n-r)})(\prod_{p\leq r}p^{k_p(n)-k_p(n-r)-k_p(r)}) 
+p
+p \leq r= p^e
+k_p(n) - k_p(n-p^e) - k_p(p^e) = 0
+k_p(n) = \sum_{k\geq 1} \lfloor \frac{n}{p^k}\rfloor
+k_p(n) = k_p(mp^e) = m + mp + mp^2 + ... mp^{e-1}
+ k_p(n - p^e) = k_p((m - 1)p^e) 
+m-1
+\ell p^k
+k
+n-k
+p
+\binom{n}{p^e}
+n-k = mp^e - \ell p^i
+i \lt e
+e = i, \ e \gt i,
+e \lt i
+e \leq i
+p^e - k = p^e(1 - \ell p^{i-e})
+p^e-k
+e \gt i
+(m-k) = (p^e - k)
+(n-k) = (p^em - k)
+p^i
+p^{i+1}
+m-k = p^e - k
+p
+\binom{a_kp^k+\cdots+a_1p+a_0}{b_kp^k+\cdots+b_1p+b_0}\equiv\binom{a_k}{b_k}\binom{a_{k-1}}{b_{k-1}}\cdots\binom{a_1}{b_1}\binom{a_0}{b_0}\mod p.
+0\le a_i,b_j<p
+\binom{ap+r}{bp+s}\equiv\binom{a}{b}\binom{r}{s}\mod p,
+\sum_{b,s} \binom{ap+r}{bp+s}X^{bp+s}\equiv(1+X)^{ap+r}\equiv(1+X^p)^a(1+X)^r\equiv\sum_{b,s} \binom{a}{b}\binom{r}{s}X^{ap+r},
+b
+0\le b\le a
+s
+0\le s<p
+b<a
+0\le s\le r
+b=a
+\binom{mp^e}{p^e}\equiv\binom{m}{1}\equiv m\not\equiv0\mod p.
+n
+p^e
+p
+n
+e
+0
+1\le d< p
+0
+p^e
+e
+1
+(e+1)
+\binom{d}{1}=d<p
+\binom{n}{p^e}\equiv d\not\equiv 0 \pmod{p}

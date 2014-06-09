@@ -1,0 +1,26 @@
+F(z)=\int_{-\infty}^{\infty}\frac{e^{uz}}{1+e^u} \mathrm{d}u=\frac{\pi}{\sin(\pi z)}
+F(z)
+0<z<1
+\frac{e^{uz}}{1+e^u}
+2\pi i
+[0,1]\times S
+S=\{u\in\mathbb C: |Im z|\le\pi, |u|\ge r\}
+ \displaystyle f(s) = \frac{e^{zs}}{1+e^{s}} 
+2 \pi
+\int_{-\infty}^{\infty} f(x) \ dx + \lim_{R \to \infty}\int^{2 \pi}_{0} f(R+it) i dt  + \int_{\infty}^{-\infty} f(t+2\pi i) \ dt + \lim_{R \to \infty} \int^{2 \pi}_{0} f(-R+it) i   dt
+= 2 \pi i \text{Res} [f(s), s= \pi i] = 2 \pi i \lim_{s \to \pi i} \frac{e^{sz}}{e^{s}} = -2 \pi i e^{\pi i z}
+ \int_{-\infty}^{\infty} \frac{e^{zx}}{1+e^{s}} - \int_{-\infty}^{\infty} \frac{e^{2 \pi i z}e^{zt}}{1+e^{t}} \ dt = - 2 \pi i e^{z \pi i} 
+ \implies \int_{-\infty}^{\infty} \frac{e^{zx}}{1+e^{x}} \ dx = \frac{-2 \pi i e^{\pi i z}}{1-e^{2 \pi i z}} = \frac{2 \pi i}{e^{\pi i z} -e^{\pi i z}} = \frac{\pi}{\sin \pi z}
+e^u=x^2
+e^udu=2xdx
+e^{uz}=x^{2z}
+x^{z}=\exp(z\log x)
+x
+\mathbb C\smallsetminus\{it:t\le 0\}
+c_1\cup c_2\cup c_3\cup c_4
+ \int_{-\infty}^\infty \frac{e^{zu}\,du}{1+e^u}=\int_{-\infty}^\infty \frac{x^{2z-1}dx}{1+x^2}. 
+ c_1(t)=t,\,\,t\in[\varepsilon,R],\quad c_2(t)=Re^{it}, t\in[0,\pi],\quad c_3(t)=t,\,\,t\in[-R,-\varepsilon], \quad c_4(t)=\varepsilon\,e^{i(\pi-t)}, \,\, t\in [0,\pi]. 
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{{\rm F}\pars{z} \equiv      \int_{-\infty}^{\infty}{\expo{uz} \over 1 + \expo{u}}\,\dd u     = {\pi \over \sin\pars{\pi z}}:\ {\Large ?}.\qquad z\ \in\ \pars{0,1}}
+\ds{\quad t \equiv {1 \over 1 + \expo{u}}\ \iff\ \expo{u} = {1 \over t} - 1\,,\ u = \ln\pars{1 - t} - \ln\pars{t}}
+\frac{e^{u z} \, _2F_1\left(1,z,z+1,-e^u\right)}{z}

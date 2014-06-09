@@ -1,0 +1,6 @@
+n
+\int^{\infty}_0 x^n e^{-cx} dx = \frac{n!}{c^{n+1}}
+I_n=\int^{\infty}_0 x^n e^{-cx} dx
+=x^n\int^{\infty}_0e^{-cx} dx-\int^{\infty}_0\left(\frac{d x^n}{dx}\cdot \int e^{-cx} dx\right)dx
+=x^n\frac{e^{-cx}}{-c}\big|_0^{\infty}+\frac nc\int^{\infty}_0x^{n-1}e^{-cx}dx=\frac ncI_{n-1} 
+I_0=\int^{\infty}_0 e^{-cx} dx=\frac1c

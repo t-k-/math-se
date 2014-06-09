@@ -1,0 +1,22 @@
+\Omega=\mathbb{R}^2_+=\{(x,y) \in \mathbb{R}^2; y > 0\}
+f \in L^2(\Omega)
+\lambda \in \mathbb{R}^*_+
+A=(a_{ij})_{1\leq i,j \leq 2}
+a_{ij} \in \mathbb{R}
+\alpha > 0
+\sum_{1\leq i,j \leq 2} a_{ij} \xi_i \xi_j \geq \alpha ||\xi||^2,\quad \forall \xi=(\xi_1,\xi_2)\in \mathbb{R}^2
+v \in H^1_0(\Omega)
+h \neq 0
+\forall \varphi \in \mathcal{D}(\Omega):\iint_{\Omega} D_h v \varphi = - \iint_{\Omega} v D_{-h} \varphi
+\iint_{\Omega} |D_h v|^2 dx dy \leq \iint |\dfrac{\partial v}{\partial x}(x,y)|^2 dx dy
+D_h(\dfrac{\partial v}{\partial x}) = \dfrac{\partial}{\partial x}(D_h v)
+D_h(\dfrac{\partial v}{\partial y}) = \dfrac{\partial}{\partial y}(D_h v)
+D_h v = \dfrac{v(x+h,y)-v(x,y)}{h}
+V=H^1_0(\Omega)
+v_h = D_h u
+\iint A \nabla v_h \nabla \varphi + \lambda \iint v_h \varphi = - \iint f D_{-h} \varphi
+u \in H^1_0(\Omega)
+\iint A \nabla u \cdot \nabla v + \lambda \iint u v = \iint f v
+\left\lVert D_h(\dfrac{\partial u}{\partial x})\right\rVert_{L^2(\Omega)} \leq C ||f||_{L^2(\Omega)}
+\left\lVert D_h(\dfrac{\partial u}{\partial y})\right\rVert_{L^2(\Omega)} \leq C ||f||_{L^2(\Omega)}
+\varphi=D_h v_h

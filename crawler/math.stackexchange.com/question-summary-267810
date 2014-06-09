@@ -1,0 +1,26 @@
+T(n) =\sum_{j=2}^{n}\Theta(j) = \Theta(n^2) 
+ \sum_{j=2}^{n}\Theta(j) = \frac{n(n-1)}2 - \frac{1(1 - 1)}{2} =  \frac{n(n-1)}2
+ \frac{n^2-n}2 
+ \frac{n^2-n}2 = \frac12n^2 - \frac12 n =  \Theta(n^2) 
+n(n-1)/2
+ \sum_{j=2}^n j = \left(\sum_{j=1}^n j\right)-1=\frac{n(n+1)}{2}-1=\frac{n^2+n-2}{2} 
+\Theta(j)
+j
+f(m)\in\Theta(j)
+c, d
+M
+f
+ c\; j\le f(m)\le d\; j\text{, for all }m\ge M 
+\sum_{j=2}^n\Theta(j)
+f_j(m)
+c_j, d_j
+M_j
+\sum_{j=2}^n\Theta(j)=\sum_{j=2}^n f_j(m)
+\hat{c}=\min_{2\le j\le n}\{c_j\}
+\hat{d}=\max_{2\le j\le n}\{d_j\}
+\Theta
+ c_j\; j\le f_j(m)\le d_j\; j\text{, for all }m\ge M_j 
+ \sum_{j=2}^n c_j j\le\sum_{j=2}^n f_j\le\sum_{j=2}^n d_j j 
+ \hat{c}\sum_{j=2}^n j\le\sum_{j=2}^n c_j j\quad\text{ and }\quad\sum_{j=2}^n d_j j\le\hat{d}\sum_{j=2}^n j 
+ \hat{c}\frac{n^2+n-2}{2}\le\hat{c}\sum_{j=2}^n j\le\sum_{j=2}^n f_j\le \hat{d}\sum_{j=2}^n j\le\hat{d}\frac{n^2+n-2}{2} 
+ \sum_{j=2}^n f_j=\sum_{j=2}^n\Theta(j)=\Theta\left(\frac{n^2+n-2}{2}\right)=\Theta(n^2) 

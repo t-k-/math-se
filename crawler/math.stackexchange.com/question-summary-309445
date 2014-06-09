@@ -1,0 +1,21 @@
+\frac{(x+\frac{1}{2})} {x}
+m \ge 1, m \in \mathbb N
+ \left \lfloor \frac {x+\frac 12}x \right \rfloor = \left \lfloor 1 + \frac 1{2x} \right \rfloor = 1 + \left \lfloor \frac 1{2x} \right \rfloor = \left \{ \begin{array}{lcl} 1 & \text{if} & x \in \left (+\frac 12, +\infty \right ) \\ 0 & \text{if} & x \in \left (-\infty, -\frac 12 \right ] \\ m & \text{if} & m-1 \le \frac 1{2x} < m \\ -m & \text{if} & -m-1 \le \frac 1{2x} <-m \end{array}\right . 
+x-1\leq \operatorname{floor}(x+\frac{1}{2})\leq x+1 
+ \frac{x-1}{x}=1-\frac{1}{x}\leq \frac{\operatorname{floor}(x+\frac{1}{2})}{x} \leq \frac{x+1}{x}=1+\frac{1}{x}
+\left\lfloor\cfrac{x+\frac12}x\right\rfloor=\left\lfloor1+\frac1{2x}\right\rfloor=1+\left\lfloor\frac1{2x}\right\rfloor.
+n=\left\lfloor\frac1{2x}\right\rfloor
+n\le\frac1{2x}<n+1.
+0\leq \frac1{2x}<1
+1<2x
+x>\frac12
+-1\le\frac1{2x}<0
+2x\le -1
+x\le-\frac12
+n\neq0,-1
+\left\lfloor\cfrac{x+\frac12}x\right\rfloor=1+0=1.
+\left\lfloor\cfrac{x+\frac12}x\right\rfloor=1+-1=0,
+n\leq\frac1{2x}<n+1
+\frac1{n+1}<2x\le\frac1n
+x\in\left(\frac1{2(n+1)},\frac1{2n}\right].
+\left\lfloor\cfrac{x+\frac12}x\right\rfloor=\begin{cases}1 & x\in\left(\frac12,\infty\right),\\0 & x\in\left(-\infty,-\frac12\right],\\1+n & n\in\Bbb Z\smallsetminus\{-1,0\},x\in\left(\frac1{2(n+1)},\frac1{2n}\right].\end{cases}

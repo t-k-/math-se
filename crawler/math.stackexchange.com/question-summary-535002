@@ -1,0 +1,24 @@
+n
+k
+r
+S_r(n,k)
+r
+n
+k
+r
+r
+[v^0]
+r
+[z^n]
+[u^k]
+n
+k
+r
+{n\brace k}
+r
+G(z,u) = \exp(u(\exp(z)-1))
+n! [z^n][u^k] G(z, u) = {n \brace k}.
+H(z,u) = \exp\left(uv\frac{z^r}{r!} - u \frac{z^r}{r!} + u(\exp(z)-1)\right) = \exp\left(uv\frac{z^r}{r!} - u \frac{z^r}{r!}\right)G(z,u).
+[v^0] H(z, u) = [v^0]   \exp\left(uv\frac{z^r}{r!} \right)  \exp\left(-u\frac{z^r}{r!} \right) G(z,u) \\=  \exp\left(-u\frac{z^r}{r!} \right) G(z,u) .
+n! \sum_{q=0}^{\lfloor n/r\rfloor} \frac{1}{q!} \left(-\frac{u}{r!}\right)^q [z^{n-qr}] G(z, u) .
+n! \sum_{q=0}^{\min(k, \lfloor n/r\rfloor)}  \frac{(-1)^q}{q!\times (r!)^q} [u^{k-q}] [z^{n-qr}] G(z, u)  \\=  n! \sum_{q=0}^{\min(k, \lfloor n/r\rfloor)} \frac{1}{(n-qr)!} \frac{(-1)^q}{q!\times (r!)^q} [u^{k-q}] (n-qr)! [z^{n-qr}] G(z, u) \\ = n! \sum_{q=0}^{\min(k, \lfloor n/r\rfloor)} \frac{1}{(n-qr)!} \frac{(-1)^q}{q!\times(r!)^q} {n-qr \brace k-q}.

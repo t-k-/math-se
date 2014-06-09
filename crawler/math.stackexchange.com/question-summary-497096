@@ -1,0 +1,23 @@
+\sum_{n=1}^\infty \sum_{k=1}^n 2^{-n}
+\sum_{k=1}^\infty \sum_{n=k}^\infty 2^{-n}
+ \sum_{k=1}^\infty\sum_{n=k}^\infty 2^{-n}=\sum_{k=1}^\infty 2^{k-1}=2 
+ \sum_{n=1}^\infty\sum_{k=1}^n2^{-n}=\sum_{n=1}^\infty n2^{-n}=\sum_{n=1}^\infty nx^n \Big|_{x=1/2}=2 
+ \sum_{n=1}^\infty nx^n =x\sum_{n=1}^\infty nx^{n-1}=x \, \left(\sum_{n=0}^\infty x^n \right)'=x\,(\frac{1}{1-x})'=x\frac{1}{(1-x)^2} 
+a_{n,k}
+\sum_{n=1}^\infty\sum_{k=1}^na_{nk}=\sum_{k=1}^\infty\sum_{n=k}^\infty a_{n,k}
+S=\{(n,k)\in(\mathbb Z^+)^2: 1\leq k\leq n\}
+S=\{(n,k)\in(\mathbb Z^+)^2: n\geq k\}
+k\in\mathbb Z^+
+S
+k
+\geq k
+\sum_{n=1}^\infty \sum_{k=1}^n 2^{-n}=\sum_{k=1}^\infty \sum_{n=k}^\infty 2^{-n} \quad ?
+\Theta_{m,n} = 1
+m \geq n
+\Theta_{m,n} = 0
+m < n
+ \sum_{n=1}^\infty \sum_{k=1}^n f(n,k)=\sum_{k=1}^\infty \sum_{n=k}^\infty f(n,k) 
+ n\left\{ \overbrace{\begin{pmatrix} f(1,1)&0&0&0&\cdots\\ f(2,1)&f(2,2)&0&0&\cdots\\ f(3,1)&f(3,2)&f(3,3)&0&\cdots\\ \vdots&\ddots&\ddots&\ddots&\ddots \end{pmatrix}}^k \right. 
+|x|<2
+ \sum_{n=1}^\infty\sum_{k=1}^n\frac1{2^n}=\sum_{n=1}^\infty\frac n{2^n}=\lim_{x\to1^-}\sum_{n=1}^\infty\,\frac {nx^{n-1}}{2^n}=\lim_{x\to1^-}\sum_{n=1}^\infty\,\frac1{2^n}\frac{d}{dx}\!x^n=\lim_{x\to1^-}\frac{d}{dx}\sum_{n=1}^\infty\,\frac1{2^n}\!x^n=\lim_{x\to1^-}\frac{d}{dx}\frac{x/2}{1-x/2}=\lim_{x\to1^-}\frac{d}{dx}\frac{x}{2-x}=\lim_{x\to1^-}\frac{d}{dx}\left(-1+\frac{2}{2-x}\right)=\lim_{x\to1^-}\frac{2}{(2-x)^2}=2. 
+ \sum_{k=1}^\infty\sum_{n=k}^\infty\frac1{2^n}=\sum_{k=1}^\infty\frac1{2^{k-1}}=2\,\sum_{k=1}^\infty\frac1{2^k}=2 

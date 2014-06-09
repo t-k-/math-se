@@ -1,0 +1,39 @@
+u(x,0)=2x^\frac{3}{2}
+ u_x^3-u_y=0~, 
+u(x,0)=\dfrac{1}{2}(1-x^2)
+ u=xu_x+yu_y+\frac{1}{2}(u_x^2+u_y^2)~, 
+1.
+u_x^3-u_y=0
+u_{xy}-3u_x^2u_{xx}=0
+v=u_x
+v_y-3v^2v_x=0
+v(x,0)=3\sqrt x
+\dfrac{dy}{dt}=1
+y(0)=0
+y=t
+\dfrac{dv}{dt}=0
+v(0)=v_0
+v=v_0
+\dfrac{dx}{dt}=-3v^2=-3v_0^2
+x(0)=f(v_0)
+x=-3v_0^2t+f(v_0)=-3v^2y+f(v)
+v=F(x+3v^2y)
+v(x,0)=3\sqrt x
+F(x)=3\sqrt x
+\therefore v=3\sqrt{x+3v^2y}
+v^2=9(x+3v^2y)
+v^2=9x+27v^2y
+v^2-27v^2y=9x
+v^2(1-27y)=9x
+v^2=\dfrac{9x}{1-27y}
+v=\pm\dfrac{3\sqrt x}{\sqrt{1-27y}}
+u_x=\pm\dfrac{3\sqrt x}{\sqrt{1-27y}}
+u(x,y)=\pm\dfrac{2x^\frac{3}{2}}{\sqrt{1-27y}}+g(y)
+u_y=\pm\dfrac{27x^\frac{3}{2}}{(1-27y)^\frac{3}{2}}+g_y(y)
+\therefore\pm\dfrac{27x^\frac{3}{2}}{(1-27y)^\frac{3}{2}}\mp\dfrac{27x^\frac{3}{2}}{(1-27y)^\frac{3}{2}}-g_y(y)=0
+g_y(y)=0
+g(y)=C
+\therefore u(x,y)=\pm\dfrac{2x^\frac{3}{2}}{\sqrt{1-27y}}+C
+u(x,0)=2x^\frac{3}{2}
+C=0
+\therefore u(x,y)=\dfrac{2x^\frac{3}{2}}{\sqrt{1-27y}}

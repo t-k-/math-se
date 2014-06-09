@@ -1,0 +1,45 @@
+I
+\mathbb{R}
+f:\mathbb{R} \to \mathbb{R}
+x \mapsto \exp^{tx}\,f(x)
+t \in I
+h:I \to \mathbb{R}
+h(t) = \int_{\mathbb{R}}\,\exp^{tx}\,f(x)\,\lambda(dx).
+h
+h'(t) = \int_{\mathbb{R}}\,x\,\exp^{tx}\,f(x)\,\lambda(dx),
+t \in I
+\exp^{u}
+|\exp^u - 1| \leq |u|\,\exp^{|u|}
+u \in \mathbb{R}
+\int\;f\;d\mu = \lim_{t\to{}^+\infty}\;\int\;f_t\;d\mu
+(X,\mathcal{A},\mu)
+g
+[0,{}^+\infty]
+X
+f
+f_t
+t \in [0,{}^+\infty]
+\mathcal{A}
+X
+f(x) = \lim_{t\to {}^+\infty}\;f_t(x)
+|f_t(x)| \leq g(x)
+t\in [0,{}^+\infty]
+x \in X
+|\exp^u-1| \leq |u|\;\exp^{|u|} \Longleftrightarrow \frac{1}{2!}|u|^2 + \frac{1}{3!}|u|^3 + \cdots \leq |u|^2 + \frac{1}{2!}|u|^3 + \cdots
+g(x,t):=\exp(tx)f(x)
+g
+t_0\in I
+\delta_t
+|\partial_t g(x,u)|\leq G(x)
+u\in (t-\delta_t,t+\delta_t)
+x\in\Bbb R
+G
+\partial_t g(x,u)=x\exp(xu)f(x)
+r
+(t-r;t+r)\subset I
+x\geq 0
+x<0
+x\mapsto \chi_{\Bbb R_+}(x)\exp(x(t_0+2r))|f(x)|
+x\mapsto \chi_{\Bbb R_-}\exp(x(t_0-2r))|f(x)|
+|\partial_t g(x,u)|=|x|\exp(x(u+r))e^{-rx}|f(x)|\\ \leq C_r \exp(x(u+r))|f(x)|\leq C_r\exp(x(t_0+2r))|f(x)|
+|\partial_tg(x,u)|=|x|\exp(x(u-r))e^{rx}|f(x)|\leq C_r\exp(x(t_0-2r))|f(x)|.

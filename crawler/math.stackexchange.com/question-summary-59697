@@ -1,0 +1,52 @@
+t\in[0,1]
+Z_t
+Z_t
+Z_s
+s\neq t
+0\leq t_1\leq \ldots\leq t_k\leq 1
+X = \sum_{j=1}^k Z_{t_j}^2
+k-1
+Y = \int_{0}^1 Z_t^2 dt?
+Y_n = \frac{1}{n} \sum_{i=1}^n Z_i^2
+Y_n
+\frac{1}{n} \chi^2_{n}
+ m_r(Y_n) = \frac{1}{n^r} \prod_{k=1}^r (n+2k) = \prod_{k=1}^r ( 1+ \frac{2k}{n}) 
+\lim_{n \to \infty} m_r(Y_n) = 1
+\exp(i t)
+\Delta t_k = \frac{2 k}{n (n+1)}
+\sum_{k=1}^n \Delta t_k = 1
+Y^{(1)}_n
+     Y^{(1)}_n =\sum_{k=1}^n Z_k^2 \frac{2k}{n (n+1)}  
+    \phi_{Y^{(1)}_n}(t) = \prod_{k=1}^n \phi_{\chi^2_1} \left(  \frac{2 t k}{n (n+1)} \right) = \left( \left( \frac{-4 i t}{n (n+1)} \right)^n \frac{ \Gamma( 1 + n + \frac{ i n(n+1)}{4 t} )}{\Gamma(1 + \frac{ i n (n+1)}{4 t} )} \right)^{-\frac{1}{2}} 
+n
+   \phi_{Y^{(1)}_n}(t) \approx \exp\left( i t - \frac{4}{3} \frac{t^2}{n} + o\left(\frac{1}{n}\right) \right)    
+t
+U_t=(Z_t)^2
+Y
+(U_t)
+S=[0,+\infty)
+S
+S
+P=\{(s_k,t_k)\}_k
+[0,1]
+Y(P)
+P
+s_k
+[t_{k-1},t_k]
+k
+E(U_s)=1
+\text{Var}(U_s)=3
+s
+E(Y(P))=1
+(U_{s_k})
+Y(P)\to1
+L^2
+\text{mesh}(P)\to0
+m\to0
+(P_n)
+Y(P_n)\to1
+L^2
+\text{mesh}(P_n)\to0
+ Y(P)=\sum\limits_k(t_k-t_{k-1})U_{s_k}. 
+ \text{Var}(Y(P))=3\sum\limits_k(t_k-t_{k-1})^2\le3\text{mesh}(P). 
+ \sup\{\|Y(P)-1\|_2\mid\text{mesh}(P)\le m\}\to0 

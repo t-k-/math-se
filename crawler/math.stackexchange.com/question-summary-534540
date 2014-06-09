@@ -1,0 +1,12 @@
+n!
+1-1/e \sqrt{n}
+O(n^{3/2}log(n))
+x
+n!
+O(nlog(n))
+n! = (1-1/e\sqrt{n})^x 
+x = \frac{nln(n) - n + O(ln(n))}{ln(1-1/e \sqrt{n})}
+O(nlog(n))
+\ln \left(1 - \frac{1}{e\sqrt{n}}\right) = -\frac{1}{e\sqrt{n}} + O(1/n),
+\ln (1-x) = -\left(x + \frac{x^2}{2} + \frac{x^3}{3} + \frac{x^4}{4} + \dotsb \right).
+x = \frac{\ln n!}{\ln\left(1-\frac{1}{e\sqrt{n}}\right)} = -e\cdot n^{3/2}\ln n + O(n^{3/2}).

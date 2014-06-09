@@ -1,0 +1,20 @@
+f:\mathbb{R}\rightarrow\mathbb{R}
+\mathtt{f}
+f
+f
+\mathtt{f}:\mathbb{Z}\rightarrow \mathbb{R}
+\mathtt{f}[n]=\int_{n-\frac{1}{2}}^{n+\frac{1}{2}} f(x)\ dx
+\mathtt{f}[n]=\text{rect}(x)\ast \ (\ \text{comb}(x)\cdot(\text{rect}(x)\star f(x))\ ) \text{  evaluated at }n
+\text{rect}
+[-\frac{1}{2},\frac{1}{2}]
+\text{comb}
+\text{(i.e., } \Sigma_{k\in\mathbb{Z}}\delta(x-k) \text{ ).}
+\star
+n\in\mathbb{Z}
+ \mathtt{f}[n]=\int_{n-\frac12}^{n+\frac12}f(x)\,\mathrm{d}x 
+ \mathrm{rect}(x)=\left\{\begin{array}{l} 1&\text{if }x\in\left[-\tfrac12,\tfrac12\right]\\ 0&\text{otherwise} \end{array}\right. 
+ \begin{align} \mathtt{f}[n] &=\mathrm{rect}\ast f(n)\\[9pt] &=\int_{-\infty}^\infty\mathrm{rect}(n-x)f(x)\,\mathrm{d}x\\ &=\int_{n-\frac12}^{n+\frac12}f(x)\,\mathrm{d}x\\ \end{align} 
+z
+(comb \ast rect)(x) = 1,
+(f\ast rect(\cdot-n))(x) =\int_{n-1/2}^{n+1/2}f(x-y)dy, 
+\int_{\Bbb R}dx  \int_{n-1/2}^{n+1/2}f(x-y)dy = \int_{\Bbb R}f(x)dx.

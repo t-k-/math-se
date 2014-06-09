@@ -1,0 +1,12 @@
+f(n)\geq\beta \sum_{i=0}^{n-1}f(i)
+f(n)
+f(1)
+f(n) \ge \beta g(n)
+g(n) = f(n-1) + g(n-1)
+f(n) \ge \beta g(n) = \beta f(n-1) + \beta g(n-1) \ge \beta^2 g(n-1)+\beta g(n-1) = \beta(\beta+1)g(n-1)
+\implies f(n) \ge \beta(\beta+1)\left(f(n-2)+g(n-2) \right) 
+\implies f(n) \ge \beta(\beta+1)^2g(n-2)
+...
+\implies f(n) \ge \beta (\beta+1)^{n-1} g(1)
+g(1) = f(0)
+f(n) \ge \beta (\beta+1)^{n-1} f(0)

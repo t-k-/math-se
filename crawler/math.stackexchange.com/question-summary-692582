@@ -1,0 +1,8 @@
+w
+f(w)
+\int^{+\infty}_{-\infty}\mathrm{ln}(1+e^w)f(w)dw\\=\int^0_{-\infty}\ln(1+e^w)f(w)+\int^\infty_0[\ln(1+e^{-w})+w]f(w)dw
+1+e^{-w}=1+\frac{1}{e^{w}}=\frac{1+e^{w}}{e^{w}}
+\ln(1+e^{-w})=\ln(\frac{1+e^{w}}{e^{w}})=\ln(1+e^{w})-\ln(e^{w})=\ln(1+e^{w})-w
+\ln(1+e^{w})=\ln(1+e^{-w})+w
+\int_0^\infty \ln(1+e^{w}) f(w) dw =\int_0^\infty (\ln(1+e^{-w})+w) f(w) dw
+\ln(1+e^w)=\ln\left(e^w\left(e^{-w}+1\right)\right)=\ln\left(e^w\right)+\ln\left(1+e^{-w}\right) =  \ln\left(1+e^{-w}\right) +w 

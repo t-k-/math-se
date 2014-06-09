@@ -1,0 +1,18 @@
+f: \mathbb{N} \rightarrow \mathbb{R}
+f(n)= \frac{1}{n} \sum_{i=1}^{n-1} \frac{1}{i}
+f
+\forall n \geq 3
+ \begin{align} f(n+1) - f(n) &= \frac{1}{n+1} \sum_{i=1}^{n} \frac{1}{i} - \frac{1}{n} \sum_{i=1}^{n-1} \frac{1}{i} \\ &= \frac{n}{n+1}\frac{1}{n} \left(\sum_{i=1}^{n-1} \frac{1}{i} + \frac{1}{n}\right) - \frac{1}{n} \sum_{i=1}^{n-1} \frac{1}{i} \\ &= (\frac{n}{n+1} - 1)\frac{1}{n} \sum_{i=1}^{n-1} \frac{1}{i} + \frac{1}{n(n+1)} \\ & = \frac{1}{n(n+1)} \left(1 - \sum_{i=1}^{n-1} \frac{1}{i}\right) < 0 \end{align} 
+\displaystyle f(n) \gt \frac{1}{n}
+n \gt 2
+\displaystyle (n+1)f(n+1) - nf(n) = \frac{1}{n} \lt f(n)
+f(n) \gt f(n+1)
+f(n)>f(n+1)
+\frac{1+\frac12+\dots+\frac1{n-1}}n>\frac{1+\frac12+\dots+\frac1{n}}{n+1}
+n+\frac{n+1}2+\dots+\frac{n+1}{n-1}+1>n+\frac n2+\dots+\frac n{n-1}+1
+n+1
+n
+1
+n\geq2
+\begin{align*} n(n+1)(f(n)-f(n+1))&=n(n+1)\left(\frac{1}{n}\sum_{i=1}^{n-1}\frac{1}{i}-\frac{1}{n+1}\sum_{i=1}^{n}\frac{1}{i}\right)\\ &=\sum_{i=1}^{n-1}\left(\frac{n+1}{i}-\frac{n}{i}\right) - 1\\ &=\sum_{i=1}^{n-1}\frac{1}{i} - 1\\ &\geq 0\end{align*}
+f(n)-f(n+1)\geq0

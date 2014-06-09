@@ -1,0 +1,140 @@
+W
+w_{i, j}
+i
+j
+x^k
+P_n(x)
+k
+k=0
+n
+n=0
+P_n(x)
+P_{n-1}(x)
+n-1
+(3)
+P_0(x)=0
+(3)
+(2)
+ P_{n-1}(x)+\frac{1-x^n}{1-x}\tag{1} 
+ P_n(x)=\frac{1+x}2\left(P_{n-1}(x)+\frac{1-x^n}{1-x}\right)\tag{2} 
+ P_n(x)=\frac{1+x}{(1-x)^2}\left(1-2\left(\frac{1+x}{2}\right)^{n+1}+x^{n+1}\right)\tag{3} 
+(3)
+w_{m+1,n+1}
+x^m
+P_n(x)
+(4)
+ 2m+1-\frac1{2^n}\sum_{k=0}^m(k+1)\binom{n+2}{m-k}\tag{4} 
+Q_n(x)=\left(\frac2{1+x}\right)^nP_n(x)
+(2)
+\left(\frac2{1+x}\right)^n
+\left(\frac{1+x}2\right)^n
+(3)
+ \begin{align} Q_n(x) &=Q_{n-1}(x)+\frac{1-x^n}{1-x}\left(\frac2{1+x}\right)^{n-1}\\ &=Q_{n-1}(x)+\frac12\frac{1+x}{1-x}\left(1-x^n\right)\left(\frac2{1+x}\right)^n\\ &=Q_{n-1}(x)+\frac12\frac{1+x}{1-x}\left(\left(\frac2{1+x}\right)^n-\left(\frac{2x}{1+x}\right)^n\right)\tag{5} \end{align} 
+ \begin{align} Q_n(x) &=\frac12\frac{1+x}{1-x}\sum_{k=1}^n\left(\left(\frac2{1+x}\right)^k-\left(\frac{2x}{1+x}\right)^k\right)\\ &=\frac12\frac{1+x}{1-x}\left(\frac2{1+x}\frac{\left(\frac2{1+x}\right)^n-1}{\frac2{1+x}-1}-\frac{2x}{1+x}\frac{\left(\frac{2x}{1+x}\right)^n-1}{\frac{2x}{1+x}-1}\right)\\ &=\frac{1+x}{1-x}\left(\frac{\left(\frac2{1+x}\right)^n-1}{1-x}+x\frac{\left(\frac{2x}{1+x}\right)^n-1}{1-x}\right)\\ &=\frac{1+x}{(1-x)^2}\left(\left(\frac2{1+x}\right)^n-1+x\left(\frac{2x}{1+x}\right)^n-x\right)\\ &=\frac{1+x}{(1-x)^2}\left(\left(\frac2{1+x}\right)^n\left(1+x^{n+1}\right)-(1+x)\right)\tag{6} \end{align} 
+ P_n(x)=\frac{1+x}{(1-x)^2}\left(1+x^{n+1}-2\left(\frac{1+x}2\right)^{n+1}\right)\tag{7} 
+ W=\small \begin{bmatrix}   0 & . & . & . & . & . \\   1/2 & 1/2 & . & . & . & . \\   3/4 & 3/2 & 3/4 & . & . & . \\   7/8 & 17/8 & 17/8 & 7/8 & . & . \\   15/16 & 5/2 & 25/8 & 5/2 & 15/16 & . \\   31/32 & 87/32 & 61/16 & 61/16 & 87/32 & 31/32  \end{bmatrix}
+ X= \small \begin{bmatrix}   1 & . & . & . & . & . \\   3/2 & 3/2 & . & . & . & . \\   7/4 & 5/2 & 7/4 & . & . & . \\   15/8 & 25/8 & 25/8 & 15/8 & . & . \\   31/16 & 7/2 & 33/8 & 7/2 & 31/16 & . \\   63/32 & 119/32 & 77/16 & 77/16 & 119/32 & 63/32  \end{bmatrix} 
+ Y =\small \begin{bmatrix}   1 & . & . & . & . & . \\   3 & 3 & . & . & . & . \\   7 & 10 & 7 & . & . & . \\   15 & 25 & 25 & 15 & . & . \\   31 & 56 & 66 & 56 & 31 & . \\   63 & 119 & 154 & 154 & 119 & 63  \end{bmatrix} 
+r
+c
+c \le r
+ w_{r,c} = 1+2c - {\sum_{k=0}^c \binom{r+2}{k}\cdot(1+c-k)\over 2^r}
+X
+Y
+ x_{r,c} = 2\cdot(1+c) - {\sum_{k=0}^c \binom{r+2}{k}\cdot(1+c-k)\over 2^r}
+ y_{r,c} = 2^{r+1}\cdot(1+c) - \sum_{k=0}^c \binom{r+2}{k}\cdot(1+c-k)
+U_0
+V_1=[1/2,1/2,0,0,...]
+U_1
+U_1=[3/2,3/2,0,0,0...]
+L
+L^0 + L^1 + L^2 + ... + L^K
+k+1
+ L = \small \begin{bmatrix}0&1&0&0&0&0&...\\0&0&1&0&0&0&...\\0&0&0&1&0&0&... \\ \vdots & & & & & &\ddots \end{bmatrix} 
+ U_0 \cdot M  + U_0 \cdot (L^0 + L^1) = U_1 
+ U_0 \cdot (M  +  (L^0 + L^1)) = U_1 
+ U_1 \cdot (M  +  (L^0 + L^1 + L^2)) = U_2 
+ U_0 \cdot (M^2 + (L^0 + L^1)M+ (L^0 + L^1 + L^2)) = U_2 
+M=I + L
+M
+L
+R
+M
+M
+S
+S=2R
+ U_0 \cdot ( R( M^k + M^{k-1}+ M^{k-2} +...I)     \\  -R(L^1 M^k + L^2 M^{k-1}+ L^3 M^{k-2} +...+L^{k+1})) = U_k 
+ S= (I - M)^-1 =\small \begin{matrix} 2&2&2&... \\ 0&2&2& ...\\ 0&0&2&...\\ ... \end{matrix}
+W=1
+w_{i,j}
+(i,j)
+i
+j
+i
+(i+j)
+w_{0,0}=1
+w_{i,j}=0
+i<0
+j<0
+w_{i,j}=\frac{1}{2^{i+j}}\binom{i+j}{i}
+n
+\frac{1}{2^n}
+ w_{i,j}=\frac{w_{i-1,j}+w_{i,j-1}}{2} 
+(i,j)
+(i,j)
+(i,j)
+P=\{0,...,i\}\times\{0,...,j\}
+(s,t)\in P
+(i,j)
+(x,y)=(i-s,j-t)\in P
+(s,t)\mapsto (i-s,j-t)
+P
+w_{i,j}
+ w_{i,j}+1=\sum_{x=0}^i\sum_{y=0}^j\frac{1}{2^{x+y}}\binom{x+y}{x} 
+P_n(x)=\tfrac{31}{32}+\tfrac{87}{32}x+\tfrac{61}{16}x^2+\tfrac{61}{16}x^3+\tfrac{87}{32}x^4+\tfrac{31}{32}x^5
+n
+T_n
+n
+ 2\Psi_{n\ +\ 1}\left(x\right) - \left(1 + x\right)\Psi_{n}\left(x\right) = x\left(2\phi_{1,n\ +\ 1} - \phi_{1,n}\right) + {2x^{2} \over 1 - x} = x + {2x^{2} \over 1 - x} = {x + x^{2} \over 1 - x} 
+ \Psi_{n\ +\ 1}\left(x\right) - {x + x^{2} \over \left(1 - x\right)^{2}} = {1 \over 2}\left(1 + x\right) \left\lbrack% \Psi_{n}\left(x\right) - {x + x^{2} \over \left(1 - x\right)^{2}} \right\rbrack 
+ \Psi_{n\ +\ 1}\left(x\right) = {x + x^{2} \over \left(1 - x\right)^{2}} + {1 \over 2^{n}}\left(1 + x\right)^{n}\,\Psi_{1}\left(x\right) 
+y^{n}
+n \geq 1
+\Psi\left(x,y\right)  \equiv  \sum_{n = 1}^{\infty}\sum_{k = 1}^{\infty}\phi_{k,n}\,x^{k}y^{n}
+ \Psi\left(x,y\right) = {x + x^{2} \over \left(1 - x\right)^{2}}\,{y^{2} \over 1 - y} + {y \over 1 - \left(x + 1\right)y/2}\,\Psi_{1}\left(x\right) 
+\phi_{k,n}
+\phi_{k,1}
+\phi_{k,1}
+W=1
+n
+0
+k
+0
+w_{k,n}=n+1-\frac{\binom{n}{k}+2S_{k,n}}{2^n}
+S_{k,n}=\sum_{0\leq i\leq n}\binom{n}{i}\left|k-i\right|
+S_{k,n}
+S_{k,0}=\left|k\right|
+S_{k,n}=S_{k-1,n-1}+S_{k,n-1}
+m_{k,n}
+m_{0,0}=1
+m_{k,0}=2-2\left|k\right|- \left[k=0\right]
+[k=0]
+1
+k=0
+0
+0\leq k\leq n
+m_{k,n}=\frac{m_{k-1,n-1}+m_{k,n-1}}{2}+1
+t_{k,n}=m_{k,n}-n
+m_{k,n}=t_{k,n}+n
+t_{k,n}=\frac{t_{k-1,n-1}+t_{k,n-1}}{2}
+t_{k,0}=m_{k,0}
+u_{k,n}=2^nt_{k,n}
+t_{k,n}=\frac{u_{k,n}}{2^n}
+u_{k,n}=u_{k-1,n-1}+u_{k,n-1}
+u_{k,n}=t_{k,0}=m_{k,0}
+u_{k,n}
+m_{k,n}=t_{k,n}+n=\frac{u_{k,n}}{2^n}+n
+u_{k,n}=\sum_i \binom{n}{i} u_{k-i,0}
+u_{k,n}=\sum_i \binom{n}{i} \left(2-2\left|k-i\right|- \left[k-i=0\right]\right)=\\ =2\sum_i \binom{n}{i}-2\sum_i \binom{n}{i} \left|k-i\right|- \sum_i \binom{n}{i}\left[k-i=0\right]=\\ =2^{n+1}-2\sum_i \binom{n}{i} \left|k-i\right|-\binom{n}{k}
+m_{k,n}=\frac{2^{n+1}-2\sum_i \binom{n}{i} \left|k-i\right|-\binom{n}{k}}{2^n}+n=\\ =n+2-\frac{\binom{n}{k}+2\sum_i \binom{n}{i} \left|k-i\right|}{2^n}
+w_{k,n}=m_{k,n}-1

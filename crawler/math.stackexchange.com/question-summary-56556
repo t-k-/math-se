@@ -1,0 +1,15 @@
+u=nx.
+\int_{0}^1 f(x)g(nx)dx = \frac{1}{n} \int_{0}^n f(u/n)g(u)du.
+ \frac{1}{n} \int_{0}^n f(u/n)g(u)du=\frac{1}{n}\sum_{j=1}^n\int_{j-1}^{j} f(u/n)g(u)du.
+v=u-(j-1).
+g(u)
+g(u)=g(u+1)=g(u+j-1).
+ \frac{1}{n}\sum_{j=1}^n\int_{j-1}^{j} f(u/n)g(u)du = \frac{1}{n}\sum_{j=1}^n\int_{0}^{1} f \left(\frac{u-(j-1)}{n} \right)g(u-(j-1))du 
+ \frac{1}{n}\sum_{j=1}^n\int_{0}^{1} f\left(\frac{u-(j-1)}{n} \right)g(u-(j-1))du =\int_{0}^1 \left(\frac{1}{n} \sum_{j=1}^n f \left(\frac{u-(j-1)}{n} \right)\right)g(u)du  .
+ \begin{align*} \lim_{n\to \infty} \int_{0}^1 f(x)g(nx)dx  &= \int_{0}^1 \left(\int_{0}^1 f(z)dz\right) g(u)du  \\ &=\int_{0}^1 f(z)dz\int_{0}^1 g(u)du=\int_{0}^1 f(x)dx\int_{0}^1 g(x)dx . \end{align*}
+\textbf{Problem.}
+f:(0,\infty) \to \mathbb{R}
+f(x+1)=f(x)
+x \geq 0
+g:[0,1] \to \mathbb{R}
+\lim_{n \to \infty} \ \int\limits_{0}^{1} g(x) \cdot f(nx) \ dx = \Biggl( \ \ \int\limits_{0}^{1} g(x) \ dx \Biggr) \cdot \Biggl( \ \ \int\limits_{0}^{1} f(x) \ dx\Biggr)

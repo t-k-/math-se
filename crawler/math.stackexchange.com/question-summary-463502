@@ -1,0 +1,17 @@
+n
+A
+A
+100
+\in \mathbb{N}
+B
+5
+A=A_0
+A_1:=A_0\setminus B_1
+A_{i+1}:=A_i\setminus B_{i+1}
+B_5
+B_1:=\{b\in A_0: b\geq a\:\forall\: a\in A_0\}
+B_{i+1}:=\{b\in A_i: b\geq a\:\forall\: a\in A_i\}
+A=A_0,A_1,\cdots,A4
+A_{k+1}=A_{k}-Max(A_k)
+B_k=A_{k}-A_{k+1} 
+\cup_{k=0}^{4}B_k

@@ -1,0 +1,18 @@
+\int_0^a \sin(\tan^{-1}(b\sin\theta))\ d\theta
+\int_0^a\frac{b\sin\theta}{\sqrt{b^2\sin^2\theta+1}}d\theta
+b\int_{0}^{a}\frac{\sin\theta}{\sqrt{b^{2}\sin^{2}\theta +1}}d\theta
+\sin\theta = 1-\cos^{2}\theta
+b\int_{0}^{a}\frac{\sin\theta}{\sqrt{b^{2}(1-\cos^{2}\theta)+1}}d\theta
+u=\cos\theta, \;\ du=-\sin\theta d\theta
+-b\int\frac{1}{\sqrt{b^{2}(1-u^{2})}}du
+u=\sin(y)\frac{\sqrt{b^{2}+1}}{b}, \;\ du=\frac{\sqrt{b^{2}+1}}{b}\cos(y), \;\ y=\sin^{-1}\left(\frac{ub}{\sqrt{b^{2}+1}}\right)
+-b\int \frac{\sqrt{b^{2}+1}}{b}\cos(y)\cdot \frac{1}{\cos(y)\sqrt{b^{2}+1}}dy
+=-\int dy
+y=-\sin^{-1}\left(\frac{ub}{\sqrt{b^{2}+1}}\right)
+u=\cos(\theta)
+-\sin^{-1}\left(\frac{b\cos(\theta)}{\sqrt{b^{2}+1}}\right)
+\tan^{-1}(b)-\sin^{-1}\left(\frac{b\cos(a)}{\sqrt{b^{2}+1}}\right)
+ \cos\theta=\frac{b+1}{b}x 
+ \int\frac{b\sin\theta}{\sqrt{b^2\sin^2\theta+1}}d\theta=-\sqrt{b^2+1}\int\frac{dx}{\sqrt{1-x^2}}. 
+ \sin\theta\,d\theta=-\frac{b+1}{b}dx, 
+ b^2\sin^2\theta+1=b^2(1-\cos^2\theta)+1=b^2(1-\frac{(b+1)^2}{b^2}x^2)+1=(b^2+1)(1-x^2). 

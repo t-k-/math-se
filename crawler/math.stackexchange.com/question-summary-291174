@@ -1,0 +1,77 @@
+a \in \mathbb{R}_{+}
+n \in \mathbb{N}_{+}
+n-1
+X_1, \ldots, X_{n-1}
+I = [0, a]
+I
+n
+I_1 \, \dot\cup \ldots \dot\cup \, I_n = I
+Y_i := |I_i| \in [0, a]
+i
+Y_i
+Y_i
+Y_i \sim Y
+Y
+Y
+\mathbb{E}(Y) = \frac{a}{n}
+\forall i,  Y_i \sim Y
+n
+n
+Y
+Y_n
+f(t)
+F(t)
+Y
+f(t) = \dfrac{n-1}{a} \left( \dfrac{a-t}{a} \right)^{n-2}
+f(t)
+a=1
+I_i=[Z_{i-1},Z_i]
+Z_0=0
+Z_n=1
+(Z_i)_{1\leqslant i\leqslant n-1}
+(X_i)_{1\leqslant i\leqslant n-1}
+x\lt y
+(0,1)
+[Z_{i-1}\leqslant x,y\leqslant Z_i]
+(x,y)\subseteq I_i
+i-1
+(X_i)_{1\leqslant i\leqslant n-1}
+(0,x)
+n-i
+(y,1)
+\mathbb P(Z_{i-1}\in\mathrm dx,Z_i\in\mathrm dy)=f_i(x,y)\mathrm dx\mathrm dy
+Y_i=Z_i-Z_{i-1}
+\mathbb P(Y_{i}\in\mathrm dz)=g_i(z)\mathrm dz
+x=(1-z)t
+1-Y_i
+(n-1)z^{n-2}\mathbf 1_{0\lt z\lt 1}
+a\gt1-n
+ \mathbb P(Z_{i-1}\leqslant x,y\leqslant Z_i)=\binom{n-1}{i-1}x^{i-1}(1-y)^{n-i}, 
+ f_i(x,y)=\binom{n-1}{i-1}(i-1)(n-i)x^{i-2}(1-y)^{n-i-1}\mathbf 1_{0\lt x\lt y\lt1}. 
+ g_i(z)=\int_0^{1-z}f_i(x,x+z)\mathrm dx. 
+ \int_0^1t^{i-2}(1-t)^{n-i-1}\mathrm dt=\mathrm{B}(i-1,n-i)=\frac{(i-2)!(n-i-1)!}{(n-2)!}, 
+ g_i(z)=(n-1)(1-z)^{n-2}\mathbf 1_{0\lt z\lt 1}. 
+ \mathbb E((1-Y_i)^a)=\frac{n-1}{a+n-1}. 
+ \mathbb E(Y_i)=1-\mathbb E(1-Y_i)=\frac1n, 
+ \mathbb E(Y_i^2)=\mathbb E((1-Y_i)^2)-2\mathbb E(1-Y_i)+1=\frac2{n(n+1)}, 
+ \mathrm{var}(Y_i)=\frac{n-1}{n^2(n+1)}. 
+m=n-1
+X_i
+Z_i
+i
+Z_1
+X_i
+Z_m
+Y_k=Z_{k}-Z_{k-1}
+k
+Z_0=0
+Z_{m+1}=b
+Z_k
+ P(Z_k \leq t)=\int_{0}^{t} I_1(x_k)I_2(x_k)dx_k, \tag{1} 
+ I_1(x_k)=\int_{0}^{x_k}\int_{0}^{x_{k-1}} \ldots \int_{0}^{x_2}dx_1dx_2 \ldots dx_{k-1}=\frac{x_k^{k-1}}{(k-1)!} \tag{2} 
+ I_2(x_k)=\int_{x_k}^{a}\int_{x_{k+1}}^{a} \ldots \int_{x_{n-1}}^{a}dx_ndx_{n-1} \ldots dx_{k+1}= \frac{(a-x_k)^{n-k}}{(n-k)!} \tag{3} 
+Z_k
+ d_k(t)=\frac{t^{k-1}}{(k-1)!} \times \frac{(a-t)^{n-k}}{(n-k)!} \tag{4} 
+ E(Z_k)=\int_{0}^a \frac{t^{k}}{(k-1)!} \times \frac{(a-t)^{n-k}}{(n-k)!}  dt=\frac{k}{m+1}a \tag{5} 
+ E(Z_k^2)=\int_{0}^a \frac{t^{k+1}}{(k-1)!} \times \frac{(a-t)^{n-k}}{(n-k)!}  dt=\frac{6k}{(m+1)(m+2)}a^2 \tag{6} 
+E(Y_k)=E(Z_k)-E(Z_{k-1})=\frac{a}{m+1}=\frac{a}{n}

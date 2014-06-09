@@ -1,0 +1,10 @@
+K(x)=\int_{1}^{\infty}\frac{e^{-xt}}{\sqrt{t^{2}-1}}\, dt
+f^{\prime\prime}\left(x\right)+\frac{1}{x}f^{\prime}\left(x\right)-f\left(x\right)=0
+K(x)
+f(x)
+g(t,x) = \exp(-t x) \left(1-t^2\right)^{-1/2}
+f(x) = \int_1^\infty g(t,x) \mathrm{d}t
+\Re(x)>0
+\int_1^\infty g(t,x)\,\mathrm{d}t
+     \frac{\partial^2}{\partial x^2} g(t,x) + \frac{1}{x} \frac{\partial}{\partial x} g(t,x) - g(t,x) \stackrel{\text{evaluate}}{=} \exp(-t x)  \frac{-t-x(1-t^2)}{\sqrt{1-t^2}} = \frac{\partial}{\partial t} \left( \exp(-t x) \sqrt{1-t^2} \right)  
+      f^{\prime\prime}(x) + \frac{1}{x} f^\prime(x) - f(x) = \left. \exp(-t x) \sqrt{1-t^2}  \right|_{t \to 1^+}^{t \to \infty} 

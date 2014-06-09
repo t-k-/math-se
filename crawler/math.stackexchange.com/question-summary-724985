@@ -1,0 +1,20 @@
+ F(a,b) :=\displaystyle\int_{0}^{\pi/2}\log\left(a^2\cos^2\left(x\right)+b^2\sin^2\left(x\right)\right)\,{\rm d}x
+b
+g(t) = F(t,b)
+g'(t) = \displaystyle\int_{0}^{\pi/2} \dfrac{2t\cos^2(x)}{t^2\cos^2\left(x\right)+b^2\sin^2\left(x\right)}\,{\rm d}x
+\dfrac{\partial f}{\partial t} = \dfrac{2t\cos^2(x)}{a^2\cos^2\left(x\right)+b^2\sin^2\left(x\right)}
+g'(t)
+F(a,b) = \pi \log \left(\dfrac{a+b}{2}\right) \ \ (a,b>0)
+{a}^{2} \cos^{2} \left( x \right)  +{b}^{2}  \sin^{2}  \left( x \right)  =\frac{1}{4} \left( 1+{\frac { \left( a-b  \right) {{\rm e}^{-2\,ix}}}{a+b}} \right)  \left( {\frac {{{\rm e}^{2 \,ix}} \left( a-b \right) }{a+b}}+1 \right)  \left( a+b \right) ^{2}
+\left|{\frac { \left( a-b\right)}{a+b}}\right|\le 1,\quad a,b>0
+-\sum _{n=1}^{\infty }{\frac {{r}^{n}{{\rm e}^{inx}}}{n}}=\ln  \left(  1-r{{\rm e}^{ix}} \right) 
+2\ln  \left(\frac{a+b}{2} \right) -2\sum _{n=1}^{\infty } \frac{\left(  -{\frac {a-b}{a+b}} \right) ^{n}\cos \left( 2\,nx \right)}{n} = \ln  \left({a}^{2} \cos^{2} \left( x \right)  +{b}^{2}  \sin^{2}  \left( x \right)\right) 
+\int _{0}^{1/2\,\pi }\!\cos \left( 2\,nx \right) {dx}=0,\quad n\ge 1
+\int _{0}^{1/2\,\pi }\!2\ln  \left( \frac{a+b}{2}  \right) {dx}=\ln   \left(\frac{a+b}{2}  \right) \pi 
+{\frac {\partial }{\partial t}}\ln  \left({t}^{2} \cos^{2} \left( x \right)  +{b}^{2}  \sin^{2}  \left( x \right)\right)  ={\frac {2t}{{t}^{2}+{b}^{2} \tan^{2} \left( x  \right)}}<\frac{2}{t}
+I(a)=\int_0^\frac\pi2\log\bigg(a^2\cos^2x+b^2\sin^2x\bigg)dx\quad=>\quad I'(a)=\int_0^\frac\pi2\frac{2a\cdot\cos^2x}{a^2\cos^2x+b^2\sin^2x}dx
+J(b)=\int_0^\frac\pi2\log\bigg(a^2\cos^2x+b^2\sin^2x\bigg)dx\quad=>\quad J'(b)=\int_0^\frac\pi2\frac{2b\cdot\sin^2x}{a^2\cos^2x+b^2\sin^2x}dx
+I'(a)=2a\underbrace{\int_0^\frac\pi2\frac{dx}{a^2+b^2\tan^2x}dx}_{t=\tan x}=2a\,\bigg[~\frac{x-\dfrac ba\arctan\bigg(\dfrac ba\tan x\bigg)}{a^2-b^2}~\bigg]_0^\frac\pi2=\frac\pi{a+b}
+J'(b)=2b\underbrace{\int_0^\frac\pi2\frac{dx}{a^2\cot^2x+b^2}dx}_{t=\cot x}=2b\,\bigg[~\frac{\dfrac\pi2-x-\dfrac ab\arctan\bigg(\dfrac ab\cot x\bigg)}{a^2-b^2}~\bigg]_0^\frac\pi2=\frac\pi{a+b}
+\begin{align}F(a,b)=I(a)=\pi\ln(a+b)+C_b\\\\F(a,b)=J(b)=\pi\ln(a+b)+C_a\end{align}=>
+F(1,1)=0=>C_a=C_b=-\pi\ln2=>F=\pi\,\ln\dfrac{a+b}2

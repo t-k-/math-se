@@ -1,0 +1,10 @@
+u_{tt}
+u_{xx}
+u(x,0) =\begin{cases} x^3 - x, &\text{for }|x|\le 1,\ \\0, &\text{for }|x|\ge1\end{cases}
+u_t(x,0) =\begin{cases} 1 - x^2, \text{for } |x|\le 1, \\ 0, \text{for } |x|\ge1    \end{cases}
+D= \{(x,t) | - \infty < x<\infty, \space\space t>0\}  
+u(x,t) = \frac{1}{2}[\frac{2}{3}(x+t)^3 + \frac{4}{3}(x-t)^3  - 2(x-t)] 
+|x+t|\le 1
+u(x,t)=\dfrac{f(x+t)+f(x-t)+g(x+t)-g(x-t)}{2}
+f(x)=\begin{cases}x^3-x&\text{for}~|x|\leq1\\0&\text{for}~|x|\geq1\end{cases}
+g(x)=\begin{cases}-\dfrac{2}{3}&\text{for}~x\leq-1\\x-\dfrac{x^3}{3}&\text{for}~|x|\leq1\\\dfrac{2}{3}&\text{for}~x\geq1\end{cases}

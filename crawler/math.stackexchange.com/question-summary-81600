@@ -1,0 +1,39 @@
+Y_1<Y_2
+2
+\mathcal{N}(\mu,\sigma^2)
+\sigma^2
+P(Y_1<\mu<Y_2)=\frac12
+E(Y_1-Y_2)
+X_1,X_2
+Y_2 =\max\{X_1,X_2\}
+Y_1=\min\{X_1,X_2\}
+{<}
+Y_1<Y_2<\mu
+Y_1<\mu<Y_2
+\mu<Y_1<Y_2
+0
+X_1>\mu
+1/2
+X_2
+Y_1<\mu<Y_2
+1/2
+1/2
+E(Y_2-Y_1) = E(|X_2-X_1|)
+X_1-X_2 \sim \mathcal{N}(\mu-\mu,\sigma^2+\sigma^2)=\mathcal{N}(0,2\sigma^2)
+E(|X_2-X_1|)= \sqrt{2}\sigma E\left(\dfrac{|X_2-X_1|}{\sqrt{2}\sigma}\right)
+Z=\dfrac{X_2-X_1}{\sqrt{2}\sigma}\sim\mathcal{N}(0,1)
+\sqrt{2}\sigma E(|Z|)
+ \begin{align} E(|Z|) & = \int_{-\infty}^\infty |z| \varphi(z)\;dz = 2\int_0^\infty z \varphi(z)\;dz = 2\int_0^\infty z \frac{1}{\sqrt{2\pi}} e^{-z^2/2} \; dz \\  \\ & = \sqrt{\frac{2}{\pi}} \int_0^\infty ze^{-z^2/2} \; dz = \sqrt{\frac{2}{\pi}} \int_0^\infty e^{-u} \; du = \sqrt{\frac{2}{\pi}}. \end{align} 
+\sqrt{2}\;\sigma
+\dfrac{2\sigma}{\sqrt{\pi}}
+Y_1 < Y_2
+f_{Y_1,Y_2}(y_1,y_2) = 2 f_{X}(y_1) f_{X}(y_2)
+y_1,y_2
+y_1 < y_2
+f_{Y_1,Y_2}(y_1,y_2) = 0
+f_X
+\mathcal{N}(\mu,\sigma)
+P(Y_1 < \mu <  Y_2) = \int_{D} f_{Y_1,Y_2}(y_1,y_2)dy_1dy_2
+D=\left\{y_1 < \mu < y_2 \right\}
+f_{Y_1,Y_2}(y_1,y_2) = 1 - \int_{-\infty}^{\mu}\int_\mu^{+\infty}2 f_{X}(y_1) f_{X}(y_2)dy_1dy_2 = 1-(2F_{X}(\mu))(1-F_{X}(\mu))=\frac12
+F_{X}(\mu) = F_{X}(\mu)=\frac12

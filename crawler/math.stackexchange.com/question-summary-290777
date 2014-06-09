@@ -1,0 +1,30 @@
+T \in [0,1] 
+S\in \{ l,h \}
+K\in [0,1]
+K
+T
+S
+T \sim U[0,1]
+\Pr[S=h \mid T=t]=\pi(t)
+\pi'(\cdot)>0
+I
+\begin{align} &E[T \times I(T>a,K<b) \mid S=h]\\[8pt] &=E[T \times I(T>a \mid S=h)]\cdot\Pr[K<b)]\\[8pt] &=\left(\frac{\int^1_a t\pi(t) dt}{\int^1_0 \pi(u) du}\right)\Pr[K<b]\end{align}
+E[T \times I(T>a \mid S=h)]
+T\mid S\!=\!s
+T>a
+A=[T\gt a]
+B=[K\lt b]
+H=[S=h]
+K
+(T,S)
+\mathbf 1_B
+T\mathbf 1_A\mathbf 1_H
+\mathbb E(T\mathbf 1_A\mathbf 1_H)\mathbb P(B)
+\mathbb P(H\mid T)=\pi(T)
+T
+p
+ \mathbb E(T\mathbf 1_A\mathbf 1_B\mid H)=\frac{\mathbb E(T\mathbf 1_A\mathbf 1_B\mathbf 1_H)}{\mathbb P(H)}. 
+ \mathbb E(T\mathbf 1_A\mathbf 1_H)=\mathbb E(T\mathbf 1_A\mathbb P(H\mid T))=\mathbb E(T\mathbf 1_A\pi(T)). 
+ \mathbb E(T\mathbf 1_A\pi(T))=\int_a^{+\infty}t\pi(t)p(t)\mathrm dt.  
+ \mathbb P(H)=\mathbb E(\mathbb P(H\mid T))=\mathbb E(\pi(T))=\int_{-\infty}^{+\infty}t\pi(t)p(t)\mathrm dt. 
+ \mathbb E(T\mathbf 1_A\mathbf 1_B\mid H)=\mathbb P(B)\frac{\displaystyle\int_a^{+\infty}t\pi(t)p(t)\mathrm dt}{\displaystyle\int_{-\infty}^{+\infty}t\pi(t)p(t)\mathrm dt}. 

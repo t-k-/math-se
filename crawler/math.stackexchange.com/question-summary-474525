@@ -1,0 +1,46 @@
+g(w)
+f(z)
+g(f(z))
+A,B
+\lim_{h\rightarrow 0}\frac{g(f(z)+h)-g(f(z))}{h}=A,
+\lim_{h\rightarrow 0}\frac{f(z+h)-f(z)}{h}=B.
+C
+\lim_{h\rightarrow 0}\frac{g(f(z+h))-g(f(z))}{h}=C.
+\varepsilon > 0
+\delta
+0<|h|<\delta
+\left|\frac{f(z+h)-f(z)}{h}-B\right|<\varepsilon.
+\dfrac{g(f(z+h))-g(f(z))}{h}
+z_0
+f
+w_0 = f(z_0)
+g
+w_0
+\Delta_g
+w_0
+w
+g
+g(w) = g(w_0) + \Delta_g(w)\cdot (w-w_0).
+f
+z_0
+\Delta_f
+z_0
+f(z) = f(z_0) + \Delta_f(z)\cdot (z-z_0).
+\begin{align} g(f(z)) &= g(f(z_0)) + \Delta_g(f(z))\cdot \bigl(f(z) - f(z_0)\bigr)\\ &= g(f(z_0)) + \Delta_g(f(z))\cdot\Delta_f(z)\cdot (z-z_0). \end{align}
+\Delta_g
+w_0 = f(z_0)
+f
+z_0
+\Delta_g \circ f
+z_0
+\Delta_f
+z_0
+\Delta_{g\circ f} \colon z \mapsto \Delta_g(f(z))\cdot \Delta_f(z)
+z_0
+(g\circ f)(z) = (g\circ f)(z_0) + \Delta_{g\circ f}(z)\cdot (z-z_0),
+g\circ f
+z_0
+z_0
+g\circ f
+g
+f

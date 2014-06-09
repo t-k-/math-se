@@ -1,0 +1,32 @@
+\displaystyle \int\frac{1+x+\sqrt{1+x^2}}{\sqrt{x+1}+\sqrt{x}}dx
+\sqrt{x+1}-\sqrt{x}
+\displaystyle  = \int\left\{1+x+\sqrt{1+x^2}\right\}.\left\{\sqrt{x+1}-\sqrt{x}\right\}dx
+\displaystyle = \int (1+x)^{\frac{3}{2}}dx-\sqrt{(1+x).(1+x^2)}dx-\int \sqrt{x}.(1+x)dx-\sqrt{x}.\sqrt{1+x^2}dx
+\displaystyle = \frac{2}{5}(1+x)^{\frac{5}{2}}-I-\frac{2}{3}x^{\frac{3}{2}}-\frac{2}{5}x^{\frac{5}{2}}-J
+\displaystyle I = \int (1+x)^{\frac{1}{2}}.(1+x^2)^{\frac{1}{2}}dx
+J\displaystyle =\int x^{\frac{1}{2}}.(1+x^2)^{\frac{1}{2}}
+2
+I
+J
+x
+|x|\leq1
+J=\int x^\frac{1}{2}(1+x^2)^\frac{1}{2}
+=\int x^\frac{1}{2}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{2n}}{4^n(n!)^2(1-2n)}dx
+=\int\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{2n+\frac{1}{2}}}{4^n(n!)^2(1-2n)}dx
+=\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{2n+\frac{3}{2}}}{4^n(n!)^2(1-2n)\left(2n+\dfrac{3}{2}\right)}+C
+=\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{2n+\frac{3}{2}}}{2^{2n-1}(n!)^2(1-2n)(4n+3)}+C
+I=\int(1+x)^\frac{1}{2}(1+x^2)^\frac{1}{2}
+=\int(x+1)^\frac{1}{2}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{2n}}{4^n(n!)^2(1-2n)}dx
+=\int(x+1)^\frac{1}{2}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!(x+1-1)^{2n}}{4^n(n!)^2(1-2n)}dx
+=\int(x+1)^\frac{1}{2}\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{(-1)^{-n}(2n)!C_k^{2n}(-1)^{2n-k}(x+1)^k}{4^n(n!)^2(1-2n)}dx
+=\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{(-1)^{n-k}((2n)!)^2(x+1)^{k+\frac{1}{2}}}{4^n(n!)^2k!(2n-k)!(1-2n)}dx
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{(-1)^{n-k}((2n)!)^2(x+1)^{k+\frac{3}{2}}}{4^n(n!)^2k!(2n-k)!(1-2n)\left(k+\frac{3}{2}\right)}+C
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{(-1)^{n-k}((2n)!)^2(x+1)^{k+\frac{3}{2}}}{2^{2n-1}(n!)^2k!(2n-k)!(1-2n)(2k+3)}+C
+|x|\geq1
+J=\int x^\frac{1}{2}(1+x^2)^\frac{1}{2}
+=\int x^\frac{1}{2}\left(x^2\left(\dfrac{1}{x^2}+1\right)\right)^\frac{1}{2}
+=\int x^\frac{3}{2}\left(1+\dfrac{1}{x^2}\right)^\frac{1}{2}
+=\int x^\frac{3}{2}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{-2n}}{4^n(n!)^2(1-2n)}dx
+=\int\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{\frac{3}{2}-2n}}{4^n(n!)^2(1-2n)}dx
+=\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!x^{\frac{5}{2}-2n}}{4^n(n!)^2(1-2n)\left(\dfrac{5}{2}-2n\right)}+C
+=\sum\limits_{n=0}^\infty\dfrac{(-1)^n(2n)!}{2^{2n-1}(n!)^2(2n-1)(4n-5)x^{2n-\frac{5}{2}}}+C

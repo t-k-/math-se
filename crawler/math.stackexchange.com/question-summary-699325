@@ -1,0 +1,13 @@
+L_1,\cdots,L_n
+(\mu_1,\sigma^{2}_{1})
+R_1,\cdots,R_n
+(\mu_2,\sigma^{2}_{2})
+\mathbf{X^{T}_{i}}=(L_i,R_i)
+\boldsymbol{\mu}=(\mu_1,\mu_2)'\ , \boldsymbol{\Sigma}=cov(\mathbf{X})
+L(\boldsymbol{\mu},\boldsymbol{\Sigma}|\mathbf{X})=\prod^{n}_{i=1}f(\mathbf{x_i}|\boldsymbol{\mu},\boldsymbol{\Sigma})=(2\pi)^{\frac{2n}{2}}|\boldsymbol{\Sigma}|^{-n/2}\exp\left\{ -\frac{1}{2}\sum^{n}_{i=1}(\mathbf{x_i}-\boldsymbol{\mu})^{T}\boldsymbol{\Sigma}^{-1} (\mathbf{x_i}-\boldsymbol{\mu})\right\}
+\log(L)
+n
+n
+2n
+X=(L_1,\cdots,L_n,R_1,\cdots,R_n)
+\hat{\mu}=\bar{x}

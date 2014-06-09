@@ -1,0 +1,17 @@
+\pmatrix{F\\tau}
+\pmatrix{m1&0\\0&I_{cm}}
+\pmatrix{a_{cm}\\\alpha}
+\pmatrix{\omega \times m*v_{cm}\\ \omega \times I_{cm}*\omega}
+\pmatrix{F\\\tau}
+\pmatrix{m1&-m[C]\\m[C]&I_{cm}-m[C][C]}
+\pmatrix{a_{cm}\\\alpha}
+\pmatrix{m*\omega \times (\omega \times [C])\\ \omega \times (I_{cm}-m[C][C]) \omega}
+ [C] = \pmatrix{0&-C_z&C_y\\C_z&0&-C_x\\-C_y&C_x&0}
+M=dH/dt
+M_x = I_{xx} d \omega_x/dt + (I_{zz}-I_{yy}) \omega_y \omega_z
+M_y = I_{yy} d \omega_y/dt + (I_{xx}-I_{zz}) \omega_z \omega_x
+M_z = I_{zz} d \omega_z/dt + (I_{yy}-I_{xx}) \omega_x \omega_y
+F=m d^2r/d^2t
+F_x = m(dv_x/dt + v_z \omega_y - v_y \omega_z)
+F_y = m(dv_y/dt + v_x \omega_z - v_z \omega_x)
+F_z = m(dv_z/dt + v_z \omega_x - v_x \omega_y)

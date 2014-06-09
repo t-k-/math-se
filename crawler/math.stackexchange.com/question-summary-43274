@@ -1,0 +1,32 @@
+f
+x
+y
+f
+(Y-f(X))^2
+p(X,Y)
+X\in\mathbb R
+Y\in\mathbb R
+e = E[(Y-f(X))^2]=\int \int [y-f(x)]^2 p(x,y) dx dy
+e
+Y
+X=x
+f(x) = E[Y|X=x]
+f(x) = \mathbb{E}[Y|X=x]
+g(x)
+\mathbb{E}[\left(Y-g(X)\right)^2] \geq \mathbb{E}[\left(Y-f(X)\right)^2]
+\mathbb{E}[\left(Y-g(X)\right)^2] = \mathbb{E}[\left(Y-f(X) + f(X) - g(X)\right)^2]
+\mathbb{E}[\left(Y-g(X)\right)^2] = \mathbb{E}[\left(Y-f(X) \right)^2] + 2 \mathbb{E}[\left(Y-f(X) \right)\left(f(X) - g(X)\right)] + \mathbb{E}[\left(f(X) - g(X)\right)^2]
+\forall h(x) \in L^2
+\mathbb{E}[\left(Y-f(X) \right)h(X)] = 0
+\mathbb{E}[\left(Y-g(X)\right)^2] = \mathbb{E}[\left(Y-f(X) \right)^2] +  \mathbb{E}[\left(f(X) - g(X)\right)^2]
+\mathbb{E}[\left(Y-g(X)\right)^2] \geq \mathbb{E}[\left(Y-f(X) \right)^2]
+A
+\mathscr{H}
+\forall h \in \mathscr{H}
+!\exists a \in A
+||h-a|| < ||h-y||
+\forall y \in A \backslash \{a\}
+A
+a
+h
+A

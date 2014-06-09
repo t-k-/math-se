@@ -1,0 +1,7 @@
+ f(x) = 0.25 \left| 1-x \right|^{-0.5}  \exp(-\left| 1-x \right|^{0.5})
+F(a)=\int f(x) \; dx = \begin{cases}    \frac{1}{2} e^{-\left( 1-a \right)^{0.5}} -\frac{1}{2} e^{-1} & 0<a\le 1 \\  \\    1-\frac{1}{2} e^{-{(a-1)^{0.5}}} - \frac{1}{2} e^{-1} & 1<a \end{cases}
+\infty
+\left[1-\frac{1}{2} e^{-(a-1)^{0.5}} - \frac{1}{2} e^{-1}\right]_1^\infty = 1 - \frac{1}{2} e^{-1}
+-\infty
+F(a)=\int_{-\infty}^a f(x)\,dx.
+F(a)=\begin{cases} \exp(-\sqrt{1-a})/2 & \text{if } a\leq 1 \\[8pt]   1-\exp(-\sqrt{a-1})/2 &\text{ otherwise.} \end{cases}

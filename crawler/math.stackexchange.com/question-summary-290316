@@ -1,0 +1,23 @@
+c
+[a,b]
+\int_a^bf(x) \, dx = \int_a^cf(x)\,dx+\int_c^bf(x)\,dx
+\int_x^{\sin x}f(x)\,dx=\int_x^0f(x)\,dx+\int_0^{\sin x}f(x)\, dx
+\int_x^{\sin x}f(x)\,dx=\int_x^{17000}f(x)\,dx+\int_{17000}^{\sin x}f(x)\, dx
+0
+[x,\sin x]
+ c \notin [a,b] 
+ c < a \leq b 
+ \displaystyle \int_{a}^{c} f(x) ~ d{x} \stackrel{\text{def}}{=} - \int_{c}^{a} f(x) ~ d{x} 
+ a \leq b < c 
+ \displaystyle \int_{c}^{b} f(x) ~ d{x} \stackrel{\text{def}}{=} - \int_{b}^{c} f(x) ~ d{x} 
+ c \in [a,b] 
+ x 
+ \sin(x) 
+ 0 
+ 17,000 
+\sin x \ge x
+a>b
+\int_a^b f(x)dx
+-\int_b^af(x)dx
+\sin x\le x
+\begin{align}\int_x^{17000}f(x)\,dx+\int_{17000}^{\sin x}f(x)\, dx &=\int_x^{\sin{x}}f(x)\,dx+\int_{\sin x}^{17000}-\int_{\sin x}^{17000}f(x)\, dx\\ &=\int_x^{\sin{x}}f(x)\,dx \end{align}

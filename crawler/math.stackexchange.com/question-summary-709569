@@ -1,0 +1,11 @@
+u_{tt}=u_{xx}
+D = \{ (x,t) \mid - \infty<x< \infty\ ,t>0\} 
+u(x,0)=\left\{ \begin{array}{c l}           x^3-x, & |x|\leq1\\     0, & |x|\geq1 \end{array}\right.
+u_t(x,0)=\left\{ \begin{array}{c l}           1-x^2, & |x|\leq1\\     0, & |x|\geq1 \end{array}\right.
+r=x+t
+s=x-t
+\frac{\partial ^2u}{\partial r \partial s} = 0
+u_t(x,0) \begin{cases} 1-x^2  &|x|\leq 1 \\ \\ 0 &|x|\geq 1 \end{cases}
+u(x,t)=\dfrac{f(x+t)+f(x-t)+g(x+t)-g(x-t)}{2}
+f(x)=\begin{cases}x^3-x&\text{for}~|x|\leq1\\0&\text{for}~|x|\geq1\end{cases}
+g(x)=\begin{cases}-\dfrac{2}{3}&\text{for}~x\leq-1\\x-\dfrac{x^3}{3}&\text{for}~|x|\leq1\\\dfrac{2}{3}&\text{for}~x\geq1\end{cases}

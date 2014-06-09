@@ -1,0 +1,9 @@
+0<a
+0<b
+0<\delta<0.5
+\lim_{x\rightarrow\infty}\frac{a}{x\left[\log\left(1+\frac{b}{x^{0.5-\delta}}\right)\right]^2}
+\begin{array}{rcl}\lim_{x\rightarrow\infty}\frac{a}{x\left[\log\left(1+\frac{b}{x^{0.5-\delta}}\right)\right]^2}&=&\lim_{x\rightarrow\infty}\frac{a}{x^{2\delta}\left[x^{0.5-\delta}\log\left(1+\frac{b}{x^{0.5-\delta}}\right)\right]^2}\\ &=&\lim_{x\rightarrow\infty}\frac{a}{x^{2\delta}b^2}\\ &=&0 \end{array}
+y=x^{0.5-\delta}
+0<\delta<0.5
+y\rightarrow\infty
+\begin{array}{rcl} \lim_{x\rightarrow\infty}\frac{a}{x^{2\delta}\left[x^{0.5-\delta}\log\left(1+\frac{b}{x^{0.5-\delta}}\right)\right]^2}&=&\lim_{x\rightarrow\infty}\frac{a}{x^{2\delta}\left[\lim_{y\rightarrow\infty}y\log\left(1+\frac{b}{y}\right)\right]^2}\\ &=&\lim_{x\rightarrow\infty}\frac{a}{x^{2\delta}\left[\lim_{y\rightarrow\infty}\log\left(\left[1+\frac{b}{y}\right]^y\right)\right]^2}\\ \end{array}

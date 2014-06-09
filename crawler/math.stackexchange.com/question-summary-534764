@@ -1,0 +1,34 @@
+ i) 
+ \Sigma 
+ \dot{\bar{x}}_1 = x_2 
+ \dot{x}_2 = -x_1 + u 
+ u 
+ \begin{bmatrix} x_1(0) \\ x_2(0) \end{bmatrix} = \begin{bmatrix} 1 \\ 0 \end{bmatrix} 
+ \begin{bmatrix} 0 \\ 0 \end{bmatrix} 
+ 2\pi 
+ u 
+ ii) 
+ u = \begin{cases} u_1 \space \space \space  0 \leq t \leq 2\pi  \\ u_2 \space \space \space {2\pi/3} \leq t \leq 4\pi/3  \\ u_3 \space \space \space 4\pi/3 \leq t \leq 2\pi \end{cases} 
+ \Sigma 
+ \begin{bmatrix} 1 \\ 0 \end{bmatrix} 
+ \begin{bmatrix} 0 \\ 0 \end{bmatrix} 
+u_1, u_2, and \space  u_3 
+ x' = Ax + Bu 
+A = \left(\begin{array}{cc} 0 & 1 \\ -1 & 0\end{array}\right), B = \left(\begin{array}{cc} 0 \\ 1\end{array}\right).
+s = 
+sI - A
+2
+s
+i,-i
+(sI - A \,\,\, B)
+2
+ (sI - A \,\,\, B) = \left(\begin{array}{cccc} s & -1 & 0\\ 1 & s & 1\end{array}\right) 
+\exp(At)
+ \exp(At) = \left(\begin{array}{cc} \cos(t) & \sin(t) \\ -\sin(t) & \cos(t)\end{array}\right) 
+\exp(A^Tt) = \left(\exp(At)\right)^T
+ \int_0^{2\pi} \left(\begin{array}{cc} \sin^2(t) & \sin(t)\cos(t) \\ \sin(t)\cos(t) & \cos^2(t) \end{array}\right) \,dt = \left(\begin{array}{cc} \pi & 0 \\ 0 & \pi\end{array}\right) 
+ x(t) = \exp(At)x^0 + \int_0^t \exp(-As)Bu(s)\,ds \\ =\left(\begin{array}{c} \cos(t) \\ -\sin(t)\end{array}\right) +  \int_0^{t} \left(\begin{array}{c} -\sin(s)u(s) \\ -\cos(s)u(s)\end{array}\right)\,ds 
+x(2\pi) = (0,0)^T
+ \left(\begin{array}{c} 1 \\ 0\end{array}\right) =  \int_0^{2\pi} \left(\begin{array}{c} \sin(s)u(s) \\ \cos(s)u(s)\end{array}\right)\,ds \quad \quad (*) 
+u
+u(t) = \dfrac{1}{\pi}\sin(t)

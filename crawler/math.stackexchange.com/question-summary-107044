@@ -1,0 +1,32 @@
+\partial_{t}{\varPhi(x,t)=k\partial_{xx}{\varPhi(x,t)}}-\alpha{\partial_{x}{\varPhi(x,t)}-\beta{\varPhi(x,t)}+g(x,t)}
+\alpha
+\beta
+\beta
+\Phi(x,t)=e^{-\beta t}\Phi_1(x,t).
+\partial_t\Phi_1(x,t)=k\partial_{xx}\Phi_1(x,t)-\alpha\partial_x\Phi_1(x,t)+g(x,t)e^{\beta t}.
+\Phi_1(x,t)=e^{ct}e^{ax}\Phi_2(x,t)
+a
+\partial_x(e^{ax}\Phi_2(x,t))=e^{ax}(\partial_x+a)\Phi_2(x,t)
+\partial_t\Phi_2(x,t)+c\Phi_2(x,t)=k(\partial_x+a)^2\Phi_2(x,t)-\beta(\partial_x+a)\Phi_2(x,t)+g(x,t)e^{\beta t}e^{-ax}
+a=\frac{\beta}{2k}
+c=-\frac{\beta^2}{4k}
+\partial_t\Phi_2(x,t)=k\partial_{xx}\Phi_2(x,t)+g(x,t)e^{\left(\beta-\frac{\beta^2}{4k}\right) t}e^{-\frac{\beta}{2k}x}
+\Delta(x,t)=\frac{e^{-\frac{x^2}{4kt}}}{\sqrt{4\pi kt}}
+\Phi_2(x,t)=\tilde\Phi_2(t,x)+\int dx'dt'\Delta(x-x',t-t')g(x',t')e^{\left(\beta-\frac{\beta^2}{4k}\right) t'}e^{-\frac{\beta}{2k}x'}
+\tilde\Phi_2(t,x)
+\Delta_0(x,t)=\Delta(x,t)e^{-\left(\beta-\frac{\beta^2}{4k}\right) t}e^{\frac{\beta}{2k}x}
+\psi(x,t) = e^{(\alpha^2/4k + \beta)t - \alpha x/2k} \Phi(x,t)
+f(x,t)
+L^1(\mathbf{R}\times \mathbf{R})
+\mathbf{R}\times\mathbf{R}
+\psi= K*f
+g=g(x,t)
+e^{(\alpha^2/4k + \beta)t - \alpha x/2k}
+ \begin{align*} \psi_t(x,t) - k \psi_{xx}(x,t) &= e^{(\alpha^2/4k + \beta)t - \alpha x/2k}g(x,t) \\ &\equiv f(x,t). \end{align*} 
+ K(x,t)=\begin{cases} (4\pi k t)^{-1/2} e^{-x^2/2kt},& t>0 \\ 0,& t\leq 0 \end{cases} 
+\Phi(x,0)=\Phi_0(x)
+\psi_0(x) = e^{-\alpha x/2k} \Phi_0(x)
+\psi_0 \in L^p(\mathbf{R})
+1\leq p\leq \infty
+\Phi_0(x)
+ \psi(x,t)=K_t * \psi_0(x) 

@@ -1,0 +1,12 @@
+ f(x,y,z)=x+y+z 
+ h(x,y,z)= x^2+y^2+z^2-2=0 
+ g(x,y,z)= x^2+y^2-z=0 
+ 2y(z+1)=2x(z+1) 
+L=x+y+z+\lambda_1(x^2+y^2+z^2-2)+\lambda_2(x^2+y^2-z)
+\frac{\partial L}{\partial x}=1+2x\lambda_1+2x\lambda_2=0
+\frac{\partial L}{\partial y}=1+2y\lambda_1+2y\lambda_2=0
+\frac{\partial L}{\partial z}=1+2z\lambda_1-\lambda_2=0
+\frac{\partial L}{\partial \lambda_1}=x^2+y^2+z^2-2=0
+\frac{\partial L}{\partial \lambda_2}=x^2+y^2-z=0
+x=\frac{1}{\sqrt{2}}\quad y=\frac{1}{\sqrt{2}}\quad z=1\quad \lambda_1=\frac{\sqrt{2}-2}{6}\quad \lambda_1=\frac{1+\sqrt{2}}{3}
+x=-\frac{1}{\sqrt{2}}\quad y=-\frac{1}{\sqrt{2}}\quad z=1\quad \lambda_1=\frac{-\sqrt{2}-2}{6}\quad \lambda_1=\frac{1-\sqrt{2}}{3}

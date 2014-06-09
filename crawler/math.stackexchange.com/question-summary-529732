@@ -1,0 +1,18 @@
+\renewcommand{div}{\mathop{\mathrm{div}}}
+a(x) \colon \mathbb R^n \to \mathbb R^n
+\hat a(\xi)
+\left(\hat a(\xi) \cdot \frac{\xi}{|\xi|} \right) \frac{\xi}{|\xi|}
+\hat a(\xi)
+\frac{\xi}{|\xi|}
+\xi \neq 0
+    \hat a(\xi) = \int\limits_{\mathbb R^n} \exp(-i\xi x) a(x) \, dx.  
+\widehat{\div a}(\xi) = i\xi \hat a(\xi)
+i \widehat{\div a}(\xi) \xi = -(\nabla \div a)^\wedge (\xi)
+|\xi|^2
+a(x)
+    \int\limits_{\mathbb R^n} \exp(-i\xi x) \div a(x) \, dx = \int\limits_{\mathbb R^n} \div\left[ \exp(-i\xi x) a(x) \right] \, dx + i\xi \hat a(\xi) \\  = \lim\limits_{R \to + \infty} \int\limits_{|x|=R} \exp(-i\xi x) a(x)\cdot \frac{x}{|x|} \, dx + i\xi \hat a(\xi) =  i\xi \hat a(\xi). 
+    \left(\hat a(\xi) \cdot \frac{\xi}{|\xi|} \right) \frac{\xi}{|\xi|} = -i\widehat{\div a}{\xi} \frac{\xi}{|\xi|^2}. 
+ \left(\hat a(\xi) \cdot \frac{\xi}{|\xi|} \right) \frac{\xi}{|\xi|} = \frac{(\nabla \div a)^\wedge (\xi)}{|\xi|^2}. 
+   c(x) = (2\pi)^{-n} \int\limits_{\mathbb R^n} \exp(i\xi x) \left(\hat a(\xi) \cdot \frac{\xi}{|\xi|} \right) \frac{\xi}{|\xi|} \, d\xi = (2\pi)^{-n} \int\limits_{\mathbb R^n} \exp(i\xi x) \frac{(\nabla \div a)^\wedge (\xi)}{|\xi|^2} \, d\xi 
+\Delta \exp(i\xi x) = -|\xi|^2 \exp(i\xi x)
+\Delta c(x) = - \nabla \div a(x)

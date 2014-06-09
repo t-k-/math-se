@@ -1,0 +1,49 @@
+X,Y\neq\emptyset
+f:X\times Y\to\mathbb{R}
+\mathbb{R}
+f_{1}(x)=\sup\{f(x,y):\: y\in Y\}
+f_{2}(y)=\sup\{f(x,y):\: x\in X\}
+g_{2}(y)=\inf\{f(x,y):\: x\in X\}
+\sup\{g_{2}(y):y\in Y\}\leqslant\inf\{f_{1}(x):\: x\in X\}
+\underset{y\quad x}{\sup\inf}f(x,y)\leqslant\underset{x\quad y}{\inf\sup}f(x,y)
+x,y
+y\in Y
+x\in X
+ g_2(y) = \inf\{f(x,y) : x\in X\} \leq f(x,y) \quad\forall x \in X, y\in Y 
+ f(x,y) \leq f_1(x) \quad\forall x\in X, y\in Y 
+ g_2(y)\leq f_1(x) 
+ \sup \{g_2(y) : y\in Y\} \leq f_1(x) 
+ \sup \{g_2(y) : y\in Y\} \leq \inf \{ f_1(x) : x\in X\} 
+X = \mathbb{N}
+Y = \mathbb{N}
+f(x,y)
+x
+y
+f
+f(2n,j) = f(0,j)
+f(2n+1,j) = f(1,j)
+n
+ f(0,j) = (1,0,1,0,1,\ldots ) 
+ f(1,j) = (0,1,0,1,0,\ldots ) 
+\text{Ran}g_{2}
+\mathbb{R}
+\sup\{g_{2}(y):y\in Y\})
+\text{Ran}f_{1}
+\mathbb{R}
+\inf\{f_{1}(x):\: x\in X\}
+x'\in X
+y'\in Y
+f(x_{0},y')=\inf\{f(x,y'):\: x\in X\}
+f(x',y_{0})=\sup\{f(x',y):\: y\in Y\}
+(\forall x)(f(x_{0},y')\leqslant f(x,y'))
+(\forall y)(f(x',y)\leqslant f(x',y_{0}))
+y'
+(f(x',y')\leqslant f(x',y_{0})
+x'
+(f(x_{0},y')\leqslant f(x',y')
+(f(x_{0},y')\leqslant f(x',y_{0})
+g_{2}(y')\leqslant f_{1}(x')
+x'
+y'
+(\forall x,y)(g_{2}(y)\leqslant f_{1}(x))
+\sup\{g_{2}(y):y\in Y\}\leqslant\inf\{f_{1}(x):\: x\in X\}

@@ -1,0 +1,5 @@
+\sum_{k=m}^{n} k^{\downarrow m }{n \choose k} = n^{\downarrow m } 2^{n-m}
+\sum_{k=1}^{n} k^{\downarrow 1 }{n \choose k} = n^{\downarrow 1 } 2^{n-1} = n2^{n-1} 
+m=1
+k\binom{n}k=n\binom{n-1}{k-1}
+\begin{align*} \sum_{k=m}^{n} k^{\downarrow m }{n \choose k}&=\sum_{k=m}^n\frac{k!n!}{(k-m)!k!(n-k)!}\\ &=\sum_{k=m}^n\frac{n!}{(k-m)!(n-k)!}\\ &=\sum_{k=m}^n\frac{n^{\downarrow m}(n-m)!}{(k-m)!(n-k)!}\\ &=n^{\downarrow m}\sum_{k=m}^n\binom{n-m}{k-m}\\ &=n^{\downarrow m}\sum_{k=0}^{n-m}\binom{n-m}k\\ &=n^{\downarrow m}2^{n-m}\;. \end{align*}

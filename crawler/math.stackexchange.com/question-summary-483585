@@ -1,0 +1,24 @@
+I
+(I_{xx}, I_{yy}, I_{xy})
+K_{sobel}
+I
+K_{sobel} = \left[ \begin{array}{ccc} -1 &0 &1 \\ -2 &0 &2 \\ -1 &0 &1 \end{array}\right]
+I_{x} = I * K_{sobel},\ I_{y} = I * K_{sobel}.T
+I_{xx} = I * K_{xx},\ I_{yy} = I * K_{yy}
+I_{xy}
+K_{xx} = \left[ \begin{array}{ccc} 0 &0 &0 \\ 2 &-4 &2 \\ 0 &0 &0 \end{array}\right]
+K_{yy} = \left[ \begin{array}{ccc} 0 &2 &0 \\ 0 &-4 &0 \\ 0 &2 &0 \end{array}\right]
+\star
+I_{xx}=(I\star K_{\text{sobel}})\star K_{\text{sobel}}
+I_{xx}=I\star (K_{\text{sobel}}\star K_{\text{sobel}})
+I_{xx}
+K_{\text{sobel}}
+I_K
+K_{\text{sobel}}
+K_{\text{sobel}}
+I_K
+I_{xy}
+K_{\text{sobel}}^T
+I_K
+\begin{pmatrix} 0 & 1 & 0 \\ 1 & -4 & 1 \\ 0 & 1 & 0  \end{pmatrix}
+\begin{pmatrix} 1 & -2 & 1 \\ \end{pmatrix}

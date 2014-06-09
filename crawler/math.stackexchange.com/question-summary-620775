@@ -1,0 +1,46 @@
+v=v+c
+v
+c
+\int{u'c}=uc
+c
+v+c
+v
+xf'(x)
+    \int uv'=uv-\int u'v 
+    \int uv'=u(v+c)-\int u'(v+c)            =uv-\int u'v 
+  \int f(x)\,\mathrm{d}x = (x+c)f(x) - \int(c+x)f'(x)\,\mathrm{d}x 
+\int_a^b \arccos\left(x\,/\sqrt{(a+b)x-ab\,}\,\right)\,\mathrm {d}x
+0<a<b
+v = x - ab/(a+b)
+x
+v+c
+c
+\int_{0}^{\infty} \frac{\sin x}{x} = \int_{0}^{\infty} \int_{0}^{\infty}\sin x \ e^{-xt} \ dt \ dx = \int^{\infty}_{0} \int_{0}^{\infty} \sin x \ e^{-tx} \ dx \ dt 
+ = \int_{0}^{\infty} \frac{1}{1+t^{2}} \ dt = \frac{\pi}{2}
+ \displaystyle \int \sin x \ dx = 1 - \cos x
+ \int_{0}^{\infty} \frac{\sin x}{x} = \int_{0}^{\infty}\frac{1- \cos x}{x^{2}} \ dx = \int^{\infty}_{0} \int_{0}^{\infty} (1- \cos x) t e^{-tx} \ dt \ dx
+ \int_{0}^{\infty} t \int_{0}^{\infty} (1- \cos x) e^{-tx} \ dx \ dt = \int_{0}^{\infty} t \Big(\frac{1}{t} - \frac{t}{1+t^{2}} \Big) \ dt
+ = \int_{0}^{\infty} \frac{1}{1+t^{2}} \ dt = \frac{\pi}{2}
+\int x\tan^{-1}x\;dx
+v=\frac{1}{2}x^2+\frac{1}{2}
+\int x\ln(x+1)\;dx
+v=\frac{1}{2}x^2-\frac{1}{2}
+\alpha\leq1
+(t)=\frac{\sin \pi\sqrt{n}}{n^\alpha}
+\alpha \geq \frac{1}2
+\alpha \leq \frac{1}2
+ \displaystyle\int_{n}^{n+1}f(t)dt-f(n)=\displaystyle\int_{n}^{n+1}(f(t)-f(n))dt 
+ =\left[(t-n-1)\bigr(f(t)-f(n)\bigl)\right]_n^{n+1}+\int_{n}^{n+1}(n+1-t)f'(t)dt 
+ \displaystyle\int_{n}^{n+1}f(t)dt-f(n)=\int_{n}^{n+1}(n+1-t)f'(t)dt 
+ |\displaystyle\int_{n}^{n+1}f(t)dt-f(n)| \leq \displaystyle\int_{n}^{n+1}\bigr(\frac{\pi}{2t^{\alpha+\frac{1}2}}+\frac{|\alpha|}{t^{\alpha+1}}\bigl)dt=v_n 
+\displaystyle\int_{0}^{+\infty}\frac{sin(t)}{t}dt
+x>0
+ \displaystyle\int_{0}^{x}\frac{sin(t)}{t}dt=\left[\frac{1-cos(t)}t\right]_0^{x}+\int_{0}^{x}\frac{1-cos(t)}{t^2}dt 
+I_n=\int_{0}^{n}\bigr(1-\frac{t}n\bigl)^n\ln(t) dt
+I_n=\frac{n}{n+1}\bigr(ln(n)-\displaystyle\sum_{k=1}^{n+1} \frac{1}k\bigl)
+u=\frac{t}n
+u\mapsto \frac{-1}{n+1}\bigr((1-u)^{n+1}-1\bigl)
+u\mapsto (1-u)^n
+x^{n+1}-1=(x-1)(x^n+\cdots+1)
+ I_n=n\int_{0}^{1}\bigr(1-u\bigl)^n\ln(nu) du=nln(n)\int_{0}^{1}\bigr(1-u\bigl)^ndu+n\int_{0}^{1}\bigr(1-u\bigl)^nln(u)du 
+ =\frac{-1}{n+1}(1-u)^{n+1}+n\int_{0}^{1}\bigr(1-u\bigl)^nln(u)du 

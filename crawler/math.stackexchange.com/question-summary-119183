@@ -1,0 +1,13 @@
+E[X_i]=np=\frac34
+\text{Var}(X_i)=np(1-p)=\frac9{16}
+ X_i \sim \text{Binom}\left(n=3,~p=\frac14\right) \qquad \text{for} \qquad 1 \le i \le 4, 
+W = 2X_1 - 3X_2 - 2X_4
+X,Y
+X_i
+\text{Cov}(X_i,Y_j)=0
+ E[W] = 2E[X_1] - 3E[X_2] - 2E[X_4] = \left(2-3-2\right) \frac34 = -\frac94 
+ \text{Var}(W)=(2^2+3^3+2^2)\text{Var}(X_i)=17\cdot\frac9{16}=\frac{153}{16}, 
+ \eqalign{ &E[aX+bY] = a \, E[X] + b \, E[Y]\\ &\text{Var}(aX+bY) = a^2\text{Var}(X)+b^2\text{Var}(Y)+2ab \, \text{Cov}(X,Y)\\ } 
+Y=\sum_{i=1}^4 X_i
+E[Y]=\sum_{i=1}^4 E[X_i]=4\cdot\frac34
+\text{Var}(Y)=\sum_{i=1}^4 1^2\cdot\text{Var}(X_i)=4\cdot\frac9{16}

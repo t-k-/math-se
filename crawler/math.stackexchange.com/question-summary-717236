@@ -1,0 +1,28 @@
+f: \mathbb R^n \to \mathbb R^n
+f(x)=\frac{x}{|x|}
+\lim_{t \to 0} \frac{f(a+th)-f(a)}{t}
+\lim_{t \to 0} \frac{f(a+th)-f(a)}{t}=\lim_{t \to 0} \frac{\frac{a+th}{|a+th|}-\frac{a}{|a|}}{t}
+x\neq 0\in\mathbb R^n
+f
+x
+t\in \mathbb R
+h\in \mathbb R^n
+x+th\neq 0
+\partial_i f(x)
+U
+x
+e_i=(0,\dots,0,i,0,\dots,0)
+i
+\mathbb R^n
+f(x+th)-f(x)=\langle \nabla f(x),th\rangle+O(t^2), 
+\partial_i f(x):=\frac{\partial f}{\partial x_i}(x)=\frac{e_i}{\|x\|}-\frac{x_i}{\|x\|^3}x. 
+t\rightarrow 0
+f(x+th)-f(x)=\frac{t}{\|x\|}\langle e_i,h\rangle- \frac{t x_i}{\|x\|^3}\langle x,h\rangle +O(t^2), 
+D_hf(x):=\lim_{t\rightarrow 0}\frac{f(x+th)-f(x)}{t}=\frac{h_i}{\|x\|}- \frac{x_i\langle x,h\rangle}{\|x\|^3}. 
+L_2
+\mathbf{y}
+   f(x) = \begin{cases}           \cfrac{x}{x} & \quad \text{for} \quad x \ge 0 \\           \cfrac{x}{-x} & \quad \text{for} \quad x < 0          \end{cases} 
+   f(\mathbf{x}) = \frac{\mathbf{x}}{\sqrt{\mathbf{x}\cdot\mathbf{x}}} 
+   \frac{\partial f}{\partial \mathbf{x}}\cdot\mathbf{y} = \left[\frac{d}{d\alpha} f(\mathbf{x} + \alpha \mathbf{y})\right]_{\alpha = 0} 
+   \frac{\partial f}{\partial \mathbf{x}} \equiv \frac{\partial}{\partial x_j}\left(\frac{x_i}{\sqrt{x_k\,x_k}}\right) 
+   \frac{\partial f}{\partial \mathbf{x}} = \frac{\mathbf{I}}{||\mathbf{x}||} - \frac{\mathbf{x}\otimes\mathbf{x}}{||\mathbf{x}||^3} \,. 

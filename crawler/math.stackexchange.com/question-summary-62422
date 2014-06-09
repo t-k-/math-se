@@ -1,0 +1,45 @@
+k
+ \sum_{k=1}^\infty \frac{k^2}{2^k}=6 .
+\sum_1^n k 2^{-k} \delta k
+\sum\limits_{k=1}^{n-1} k 2^{-k}
+u = k
+\Delta v = 2^{-k} = (1/2)^k
+\Delta u = 1
+v = \left(\frac12\right)^k / \left(\frac12 - 1\right)= -\left(\frac12\right)^{k-1}
+E(v) = -\left(\frac12\right)^k
+\begin{align*} \textstyle\large\sum_1^n k 2^{-k} \delta k &= \left[-k\left(\frac12\right)^{k-1}\right]_1^n + \textstyle\large\sum_1^n \left(\frac12\right)^k \delta k\\ &= 1 - \frac{n}{2^{n-1}} + \textstyle\large\sum_1^n \left(\frac12\right)^k \delta k\\ &= 1 - \frac{n}{2^{n-1}} + \left[-\left(\frac12\right)^{k-1} \right]_1^n\\ &= 1 - \frac{n}{2^{n-1}} - \left(\frac{1}{2^{n-1}} - 1\right)\\ &= 2 - \frac{n+1}{2^{n-1}}. \end{align*}
+\sum_{k=1}^\infty \frac{k}{2^k} = \lim_{n\to\infty}\left(2 - \frac{n+1}{2^{n-1}}\right) = 2.
+\sum \limits_{k \geq 1} k^2\left(\frac12\right)^k
+\sum \limits_{k \geq 1} k^2x^k= x\sum \limits_{k \geq 1} k^2x^{k-1}
+|x| <1
+\sum \limits_{k \geq 1} k^2x^{k-1}
+\sum \limits_{k \geq 1} \int_0^x k^2t^{k-1}\mathrm dt=\sum \limits_{k \geq 0}kx^k  
+\sum \limits_{k \geq 0}kx^k= 1+x \sum \limits_{k \geq 1}kx^{k-1}
+\sum \limits_{k \geq 1}\int_0^x kt^{k-1}\mathrm dt= \sum\limits_{k \geq 0}x^k=\frac{1}{1-x}
+\left(\frac1{1-x}\right)^{\prime}=\frac1{(1-x)^2}
+\left( 1+\frac{x}{(1-x)^2}\right)^{\prime}=\frac{1+x}{(1-x)^3}
+x=\frac12
+\sum \limits_{k \geq 1} k^2\left(\frac12\right)^k=6
+1+x \sum \limits_{k \geq 1}kx^{k-1}= 1+\frac{x}{(1-x)^2}.
+\sum \limits_{k \geq 1} k^2x^k = \frac{x(1+x)}{(1-x)^3}.
+\displaystyle \sum_{k=1}^\infty {1\over 2^k} = 1
+\displaystyle S=\sum_{k=1}^\infty {k\over 2^k}
+\displaystyle {S\over 2} = \sum_{k=1}^\infty {k\over 2*2^k} = \sum_{k=1}^\infty {k\over 2^{k+1}} = \sum_{l=2}^\infty {l-1\over 2^l} = \sum_{l=1}^\infty {l-1\over 2^l}
+l=1
+{1-1\over 2^1}=0
+\displaystyle S-{S\over 2} = \sum_{k=1}^\infty {k\over 2^k} - \sum_{k=1}^\infty {k-1\over 2^k} = \sum_{k=1}^\infty {k-(k-1)\over 2^k} = \sum_{k=1}^\infty {1\over 2^k} = 1
+S=2
+\sum_{k=1}^\infty {k\over 2^k}
+(1)
+(2)
+x=1
+ \sum_{k=0}^\infty\;\frac{x^k}{2^k}=\frac{1}{1-x/2} 
+ \sum_{k=0}^\infty\;k\frac{x^{k-1}}{2^k}=\frac{1/2}{(1-x/2)^2}\tag{1} 
+ \sum_{k=0}^\infty\;k(k-1)\frac{x^{k-2}}{2^k}=\frac{1/2}{(1-x/2)^3}\tag{2} 
+ \sum_{k=0}^\infty\;\frac{k^2}{2^k}=6 
+x \in \mathbb{R}
+\sum_{k=1}^n {k^2\over 2^k}
+f(n)=2^n \sum_{k=1}^n {k^2 \over 2^k}
+f(n) = 2f(n-1)+n^2
+f(0)=0
+2^n

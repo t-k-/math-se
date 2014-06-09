@@ -1,0 +1,10 @@
+\mathbb{E}[h(X)g(Y)] = \mathbb{E}[\mathbb{E}[g(Y)\mid X]h(X)]
+\mathbb{E}[h(X)] = \int_X h(x)f(x) \; dx
+\mathbb{E}[h(X,Y)] = \int_{X\times Y}g(x,y)f(x,y) \; dy \; dx
+\mathbb{E}[g(X)h(Y)]
+X
+X
+X
+ \mathbb E(h(X) g(Y)\mid X) = h(X)\cdot\mathbb E(g(Y)\mid X) 
+X
+\begin{aligned} \int_X \int_Y h(x)g(y) f(x,y) \; dy \; dx &= \int_X \int_Y h(x)g(y) f(y\mid x)f(x) \; dy \; dx \\ &= \int_X \left(\int_Y g(y) f(y\mid x) \; dy \right) \; h(x) f(x) \; dx \\ &= \int_X \mathbb{E}[g(Y)\mid X] \; h(x)f(x) \; dx \\ &= \mathbb{E}[\mathbb{E}[g(Y)\mid X] h(X)] \end{aligned}

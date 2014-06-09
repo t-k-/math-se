@@ -1,0 +1,14 @@
+\mathbf{x}
+n
+[0, p]
+p
+n
+\mathbf{x}
+ \operatorname{var} (\mathbf{x}) = \frac{1}{n} \sum_{i=1}^{n} {\left( {x}_{i} - \overline{\mathbf{x}} \right )}^2 
+\overline{\mathbf{x}}
+ \overline{\mathbf{x}} = \frac{1}{n} \sum_{i=1}^n x_i .
+x_i \leq c
+\displaystyle \sum_i x_i^2 = \sum_i x_i\cdot x_i \leq \sum_i c\cdot x_i = cn\bar{x}.
+0 \leq \bar{x} \leq c
+ \begin{align*} n\cdot \text{var}(\mathbf{x}) &= \sum_i (x_i - \bar{x})^2= \sum_i x_i^2 - 2x_i\bar{x} + \bar{x}^2\\ &= \sum_i x_i^2 - 2\bar{x}\sum_i x_i + n\bar{x}^2= \sum_i x_i^2 - n\bar{x}^2\\ &\leq cn\bar{x} - n\bar{x}^2 = n\bar{x}(c-\bar{x}) \end{align*} 
+\text{var}(\mathbf{x}) \leq \bar{x}(c-\bar{x}) \leq \frac{c^2}{4}.

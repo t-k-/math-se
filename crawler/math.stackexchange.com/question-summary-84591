@@ -1,0 +1,6 @@
+u(r,\theta)=\frac1{\pi}\int_0^{2\pi}\Bigg[ \frac12+\sum_{n=1}^{\infty}r^n\cos n(\theta-\phi) \Bigg]f(\phi)d\phi,
+u(r,\theta)=\frac{(1-r^2)}{2\pi}\int_0^{2\pi} \frac{f(\phi)}{1-2r\cos(\theta-\phi)+r^2}d\phi \,?
+\frac12+\sum_{n=1}^{\infty}r^n\cos n(\theta-\phi)=\frac{1-r^2}{2(1-2r\cos(\theta-\phi)+r^2)}.
+|r|<1
+\frac12+\sum_{n=1}^{\infty}r^n\cos n(\theta-\phi)=\frac12+\Re\left(\sum_{n=1}^{\infty}(r\exp\,i(\theta-\phi))^n\right)=\frac12+\Re \Bigg( \frac{1}{1-r\exp\,i(\theta-\phi)}-1\Bigg)  
+=\frac{1-r^2}{2(1-2r\cos(\theta-\phi)+r^2)}

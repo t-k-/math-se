@@ -1,0 +1,8 @@
+z = f(x^2 + y^2, \ln(x/y))
+z = f(u,v)
+u = x^2 + y^2, v = \ln(x/y)
+z
+x \frac{\partial z}{\partial x} + y\frac{\partial z}{\partial y} = 2u \frac{\partial z}{\partial u}
+\frac{\partial z}{\partial x} = \frac{\partial z}{\partial u}\frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial x} = 2 x \frac{\partial z}{\partial u} + \frac{1}{x} \frac{\partial z}{\partial v}
+\frac{\partial z}{\partial y} = \frac{\partial z}{\partial u}\frac{\partial u}{\partial y}+\frac{\partial z}{\partial v}\frac{\partial v}{\partial y} = 2 y \frac{\partial z}{\partial u} - \frac{1}{y} \frac{\partial z}{\partial v}
+x \frac{\partial z}{\partial x}  + y \frac{\partial z}{\partial y} = 2 (x^2 + y^2) \frac{\partial z}{\partial u} = 2 u \frac{\partial z}{\partial u}

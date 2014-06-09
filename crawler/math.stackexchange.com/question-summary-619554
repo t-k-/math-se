@@ -1,0 +1,29 @@
+\Omega \subset \mathbb{R}^n
+\Gamma.
+\Gamma
+(n-1)
+C
+d\sigma_x
+\Gamma
+\int_\Gamma \frac{1}{|x|^{n-2}}d\sigma_x < C
+\xi
+d\sigma_x = \sqrt{(1+ |\nabla \xi(x)|^2)}dx
+\phi_i
+\Gamma_i
+\Gamma
+\phi_i
+\nabla \xi_i
+R_i
+\Gamma_i
+\int_\Gamma \frac{1}{|x|^{n-2}}d\sigma_x = \sum_i\int_{\Gamma_i}\frac{\phi_i(x)}{|x|^{n-2}}\sqrt{1+|\nabla \xi_i(x)|^2}dx
+\int_\Gamma \frac{1}{|x|^{n-2}}d\sigma_x \leq C\sum_i\int_{\Gamma_i}{|x|^{2-n}}dx
+C\sum_i\int_{\Gamma_i}{|x|^{2-n}}dx \leq C\sum_i\int_{0}^{R_i}{|r|^{2-n}}r^{n-1}dx
+(n-1)
+\Gamma_i
+H_i
+\xi_i
+\mathbb R^{n-1}
+x_{k_i} = \xi_i(x_1,\dots,x_{k_i-1},x_{k_i+1},\dots,x_n).
+\zeta_i(x_1,\dots,x_{k_i-1},x_{k_i+1},\dots,x_n) = (x_1,\dots,x_{k_i-1},\xi_i(x_1,\dots,x_{k_i-1},x_{k_i+1},\dots,x_n),x_{k_i+1},\dots,x_n) .
+ \int_{H_i} \frac{\phi_i(\zeta_i(y))}{|\zeta_i(y)|^{n-2}} \, \sqrt{1+|\nabla \xi_i(y)|^2} \, dy .
+C\int_0^{R_i} |r|^{2-n} r^{n-2} \, dr 

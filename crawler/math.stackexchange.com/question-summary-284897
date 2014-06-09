@@ -1,0 +1,35 @@
+X
+\lbrace e_n : ~ n \in \mathbb{N} \rbrace
+A, ~ \Gamma : X \to X
+A e_n = \alpha_n e_n
+\Gamma e_n = \gamma_n e_n
+c,\lambda \in \mathbb{C}
+\left[ \begin{array}{ll} 0 & \Gamma \\ \lambda-A & c \Gamma \end{array} \right]
+\left[ \begin{array}{ll} 0 & \gamma_n \\ \lambda-\alpha_n & c \gamma_n \end{array} \right] \in \mathbb{C}^{2 \times 2}
+v =(v_1, v_2) \in X \times X
+\left[ \begin{array}{ll} 0 & \Gamma \\ \lambda-A & c \Gamma \end{array} \right]v = \left[ \begin{array}{l} \Gamma v_2 \\ (\lambda -A) v_1 - c \Gamma v_1 \end{array} \right]
+v_1 = \sum_{n \in \mathbb{N}} r_n e_n
+v_2 = \sum_{n \in \mathbb{N}} s_n e_n
+\left[ \begin{array}{ll} 0 & \Gamma \\ \lambda-A & c \Gamma \end{array} \right]v = \left[ \begin{array}{l} \sum_{n \in \mathbb{N}} s_n \gamma_n e_n \\ \lambda \sum_{n \in \mathbb{N}} r_n  e_n - \sum_{n \in \mathbb{N}} r_n \alpha_n e_n - c \sum_{n \in \mathbb{N}} s_n \gamma_n e_n \end{array} \right]
+\left[ \begin{array}{ll} 0 & \Gamma \\ \lambda-A & c \Gamma \end{array} \right]v = \sum_{ n \in \mathbb{N}} \left[ \begin{array}{l} s_n \gamma_n e_n \\ \lambda  r_n  e_n -  r_n \alpha_n e_n - c  s_n \gamma_n e_n \end{array} \right]
+A
+\Gamma
+e_n
+X \times X
+X
+\alpha_n
+\gamma_n
+2
+2
+X \times X
+(e_n, 0)
+(0, e_n)
+X \times X
+X \times X
+P_n:X\times X \to X\times X
+\left(u, v\right) = \left(\sum_{i=1}^\infty u_i e_i, \sum_{i=1}^\infty v_i e_i\right)
+(x, y) = \left(\sum_{i=1}^\infty x_i e_i, \sum_{i=1}^\infty y_i e_i\right) = P_n(u, v)
+P_n
+2
+2
+\prod_{i=1}^\infty P_i

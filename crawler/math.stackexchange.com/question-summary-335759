@@ -1,0 +1,10 @@
+\displaystyle d r_t = \kappa (\theta - r_t) \, d t + \sigma \sqrt{r_t} \,d W_t
+\kappa
+\theta
+\sigma
+W_t
+ r_t = \theta + (r_0 - \theta) e^{-\kappa t} + \sigma e^{-\kappa t} \int_0^t e^{\kappa u} \sqrt{r_u} \,d W_u.
+\displaystyle d W_u \sim N(0, du)
+\mathrm{E}\left[r_t\right] = \theta + (r_0 - \theta) e^{-\kappa t}.
+ \operatorname{Var}\left[r_t\right] = \mathrm{E}\left[\left\{r_t - \mathrm{E}\left(r_t\right)\right\}^2\right] = \sigma^2 e^{-2 \kappa t} \mathrm{E}\left[\left\{\int_0^t e^{\kappa u} \sqrt{r_u} d W_u\right\}^2\right].
+ \sigma^2 e^{-2 \kappa t} \mathrm{E}\left[\left\{\int_0^t e^{\kappa u} \sqrt{r_u} \,d W_u\right\}^2\right] = \sigma^2 e^{-2 \kappa t} \int_0^t e^{2 \kappa u} \mathrm{E}\left(r_u\right) \,d u

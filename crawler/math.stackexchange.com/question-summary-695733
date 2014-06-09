@@ -1,0 +1,21 @@
+y
+(y-x)\sqrt{x^2+1}\dfrac{dy}{dx}=(1+y^2)^{\frac{3}{2}}
+(y-x)\dfrac{d(\sqrt{1+y^2})}{y}=\dfrac{(1+y^2)dx}{\sqrt{x^2+1}}
+\dfrac{(y-x)\cdot d(\sqrt{1+y^2})}{y(1+y^2)}=\dfrac{d(\sqrt{1+x^2})}{x}
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left( #1 \right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{\pars{y - x}\root{x^{2} + 1}\,\totald{y}{x} = \pars{1 + y^{2}}^{3/2}}
+\ds{x \equiv \tan\pars{\alpha}}
+\ds{y \equiv \tan\pars{\beta}}
+\!\!\!\!\! \bracks{\tan\pars{\beta} - \tan\pars{\alpha}}\sec\pars{\alpha}\, {\sec^{2}\pars{\beta} \over \sec^{2}\pars{\alpha}}\,\totald{\beta}{\alpha} =\sec^{3}\pars{\beta}\ \imp\ \bracks{\tan\pars{\beta} - \tan\pars{\alpha}}\cos\pars{\alpha}\cos\pars{\beta}\, \totald{\beta}{\alpha} = 1 
+ \bracks{\sin\pars{\beta}\cos\pars{\alpha} - \sin\pars{\alpha}\cos\pars{\beta}}\, \totald{\beta}{\alpha}= 1\quad\imp\quad \totald{\beta}{\alpha} = {1 \over \sin\pars{\beta - \alpha}} 
+u = \beta - \alpha
+ \totald{u}{\alpha} + 1 = {1 \over \sin\pars{u}}\quad\imp\quad \bracks{-1 + {1 \over 1 - \sin\pars{u}}}\,\totald{u}{\alpha} = 1 
+ -u + \int{\dd u \over 1 - \sin\pars{u}} = \alpha + C\,,\qquad C\ \mbox{is a constant} 
+t = \tan\pars{u/2}
+\alpha = \arctan\pars{x}
+\beta = \arctan\pars{y}
+ -\beta + \sec\pars{\beta - \alpha} + \tan\pars{\beta - \alpha} = \mbox{constant} 
+ -\arctan\pars{y} + {\sqrt{\pars{y - x}^{2} + \pars{1 + yx}^{2}} \over \verts{1 + yx}} + {y - x \over 1 + yx} = \mbox{constant} 
+ \arctan \left( x \right) -\int ^{-\arctan \left( x \right) +\arctan  \left( y \left( x \right)  \right) }\!{\frac {2-\cos \left( 4\,t+4  \right) -2\,\cos \left( 2\,t \right) +2\,\cos \left( 2\,t+4 \right) - \cos \left( 4 \right) +\sqrt {4\,\cos \left( 4\,t+8 \right) -2\,\cos  \left( 8+2\,t \right) -2\,\cos \left( 6\,t+8 \right) -8\,\cos \left(  4 \right) +16\,\cos \left( 2\,t+4 \right) -12\,\cos \left( 2\,t  \right) -8\,\cos \left( 4\,t+4 \right) +12}}{2+\cos \left( 4\,t+4  \right) +2\,\cos \left( 2\,t \right) +2\,\cos \left( 2\,t+4 \right) + \cos \left( 4 \right) }}{dt}-C=0 
+y(0)=0
+x(y)=\frac{-2 c_1 y+2 c_1 \tan ^{-1}(y)-c_1^2-\tan ^{-1}(y)^2+2 y \tan ^{-1}(y)+1}{c_1^2    y-2 c_1 y \tan ^{-1}(y)-2 c_1-y+y \tan ^{-1}(y)^2+2 \tan ^{-1}(y)}

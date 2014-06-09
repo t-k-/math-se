@@ -1,0 +1,28 @@
+k(t)
+N(0,\sigma)
+k(t)
+x
+\partial_t{u(x,t)}=\partial_x[k(t)\partial_xu(x,t)]
+\partial_t{u(x,t)}=k(t)\partial_{xx}u(x,t)
+u(0,t)=u_0,u(L,0)=u_L=u(x,0)
+k
+k
+k(t)
+N(0,\sigma)
+k(t)
+u(x,t)=X(x)T(t)
+X(x)T'(t)=k(t)X''(x)T(t)
+\dfrac{T'(t)}{k(t)T(t)}=\dfrac{X''(x)}{X(x)}=-s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-s^2k(t)\\X''(x)+s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-s^2\int_0^tk(t)~dt}\\X(x)=\begin{cases}c_1(s)\sin xs+c_2(s)\cos xs&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(x,t)=C_1x+C_2+\int_0^\infty C_3(s)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds+\int_0^\infty C_4(s)e^{-s^2\int_0^tk(t)~dt}\cos xs~ds
+u(0,t)=u_0
+C_2+\int_0^\infty C_4(s)e^{-s^2\int_0^tk(t)~dt}~ds=u_0
+\int_0^\infty C_4(s)e^{-s^2\int_0^tk(t)~dt}~ds=u_0-C_2
+C_4(s)=(u_0-C_2)\delta(s)
+\therefore u(x,t)=C_1x+C_2+\int_0^\infty C_3(s)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds+\int_0^\infty(u_0-C_2)\delta(s)e^{-s^2\int_0^tk(t)~dt}\cos xs~ds=C_1x+C_2+\int_0^\infty C_3(s)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds+u_0-C_2=C_1x+u_0+\int_0^\infty C_3(s)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds
+u(x,0)=u(L,0)=u_L
+C_1x+u_0+\int_0^\infty C_3(s)\sin xs~ds=u_L
+\int_0^\infty C_3(s)\sin xs~ds=-C_1x+u_L-u_0
+C_3(s)=C_1\delta'(s)+\dfrac{2(u_L-u_0)}{\pi s}
+\therefore u(x,t)=C_1x+u_0+\int_0^\infty\biggl(C_1\delta'(s)+\dfrac{2(u_L-u_0)}{\pi s}\biggr)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds=C_1x+u_0+\int_0^\infty C_1\delta'(s)e^{-s^2\int_0^tk(t)~dt}\sin xs~ds+\int_0^\infty\dfrac{2(u_L-u_0)e^{-s^2\int_0^tk(t)~dt}\sin xs}{\pi s}ds=C_1x+u_0-\biggl.\dfrac{d}{ds}(C_1e^{-s^2\int_0^tk(t)~dt}\sin xs)\biggr|_{s=0}+\int_0^\infty\dfrac{2(u_L-u_0)e^{-s^2\int_0^tk(t)~dt}\sin xs}{\pi s}ds=C_1x+u_0-C_1x+\int_0^\infty\dfrac{2(u_L-u_0)e^{-s^2\int_0^tk(t)~dt}\sin xs}{\pi s}ds=u_0+\int_0^\infty\dfrac{2(u_L-u_0)e^{-s^2\int_0^tk(t)~dt}\sin xs}{\pi s}ds

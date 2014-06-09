@@ -1,0 +1,14 @@
+n\in\Bbb Z^+
+u_n=x_n\bmod 4
+\oplus
+4
+\left\{\begin{align*} u_{2n}&=u_{2n-1}\oplus u_n\\ u_{2n+1}&=u_{2n}\oplus u_n\;, \end{align*}\right.
+u_1=1,u_2=2,u_3=3
+u_4=1
+n
+n>1
+\begin{align*} u_{4n}&=u_{4n-1}\oplus\color{blue}{u_{2n}}\\ &=\color{blue}{u_{4n-1}}\oplus u_{2n-1}\oplus u_n\\ &=\color{blue}{u_{4n-2}}\oplus 2u_{2n-1}\oplus u_n\\ &=\color{blue}{u_{4n-3}}\oplus 3u_{2n-1}\oplus u_n\\ &=\color{blue}{u_{4n-4}}\oplus u_{2n-2}\oplus 3u_{2n-1}\oplus u_n\\ &=\color{blue}{u_{n-1}\oplus u_{2n-2}}\oplus 3u_{2n-1}\oplus u_n\\ &=\color{blue}{4u_{2n-1}}\oplus u_n\\ &=x_n\;, \end{align*}
+\begin{align*} &u_{4n+1}=u_{4n}\oplus u_{2n}=u_n\oplus u_{2n}=u_{2n+1}\in\{1,3\}\;,\\ &u_{4n+2}=u_{4n+1}\oplus u_{2n+1}=u_{2n+1}\oplus u_{2n+1}=2\;,\text{ and}\\ &u_{4n+3}=u_{4n+2}\oplus u_{2n+1}=2\oplus u_{2n+1}\in\{1,3\}\;, \end{align*}
+y_1 = (1,(1,2,3))
+x_n,x_{2n-1},x_{4n-3}
+4

@@ -1,0 +1,46 @@
+\boldsymbol{y} = \boldsymbol{X}\boldsymbol{\beta}+ \boldsymbol{u}
+\boldsymbol{u}
+n \times 1
+u_i \sim iid.N(0, \sigma^2)
+i = 1, 2, \cdots, n
+(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta})'(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}) = (\boldsymbol{y}-\boldsymbol{X}\boldsymbol{b})'(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{b})+(\boldsymbol{\beta}-\boldsymbol{b})'\boldsymbol{X}'\boldsymbol{X}(\boldsymbol{\beta}-\boldsymbol{b})
+\boldsymbol{y}
+n \times 1
+\boldsymbol{X}
+n \times k
+\boldsymbol{\beta}
+k \times 1
+\boldsymbol{b}
+k \times 1
+rank(\boldsymbol{X}) = k
+\boldsymbol{b} = (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{X}'\boldsymbol{y}
+V = \mathrm{Im}(X)
+\mathbb{R}^{n}
+\Pi_{V}
+\mathrm{Im}(X)
+z \in \mathbb{R}^{n}
+{}^t z
+z
+ {}^t (y-X\beta)(y-X\beta) = \Vert y-X\beta \Vert^{2} 
+ \Vert y-\Pi_{V}(y) + \Pi_{V}(y) - X\beta \Vert^{2} 
+\Pi_{V}(y) \in \mathrm{Im}(X)
+X\beta \in \mathrm{Im}(X)
+\Pi_{V}(y)-X\beta \in \mathrm{Im}(X)
+y - \Pi_{V}(y) \in \mathrm{Im}(X)^{\perp}
+\star
+ \Vert y-X\beta \Vert^{2} = \Vert y-\Pi_{V}(y) \Vert^{2} + \Vert \Pi_{V}(y) - X\beta \Vert^{2} \tag{$\star$} 
+ \Pi_{V} = X({}^t X X)^{-1} {}^t X 
+\mathrm{Im}(X)
+{}^t \Pi_{V} \Pi_{V} = \Pi_{V}
+\Pi_{V} {}^t \Pi_{V} = \Pi_{V}
+x \in \mathbb{R}^{n}
+\Pi_{V}(x) \in \mathrm{Im}(X)
+b=({}^t X X)^{-1} {}^t Xy
+\Pi_{V}(y) = Xb
+\star
+\star\star
+ \Vert y-Xb \Vert^{2} + \Vert Xb-X\beta \Vert^{2} \tag{$\star\star$} 
+\star\star
+{}^t (y-Xb)(y-Xb)
+{}^t (\beta - b) {}^t X X (\beta - b)
+\Vert y-X\beta \Vert^{2} = {}^t (y-Xb)(y-Xb) + {}^t (\beta - b) {}^t X X (\beta - b)

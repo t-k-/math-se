@@ -1,0 +1,8 @@
+f(x)=\sin\frac{1}{x}
+x\neq 0,f(0)=0
+F(x)=\int^{x}_{0}\sin(1/t)dt
+0
+x=0
+u = t^{-1}
+\begin{align} \left\lvert \frac{F(x) - F(0)}{x}\right\rvert &= \frac{1}{\lvert x\rvert} \left\lvert \int_0^x \sin (t^{-1})\,dt\right\rvert \\ &= \frac{1}{\lvert x\rvert} \left\lvert \int_{1/\lvert x\rvert}^\infty \frac{\sin u}{u^2}\,du\right\rvert \tag{symmetry}\\ &= \frac{1}{\lvert x\rvert} \left\lvert \left[-\frac{\cos u}{u^2}\right]_{1/\lvert x\rvert}^\infty - 2 \int_{1/\lvert x\rvert}^\infty \frac{\cos u}{u^3}\,du\right\rvert\\ &= \frac{1}{\lvert x\rvert} \left\lvert \lvert x\rvert^2 \cos \frac{1}{\lvert x\rvert} - 2 \int_{1/\lvert x\rvert}^\infty \frac{\cos u}{u^3}\,du\right\rvert\\ &\leqslant \lvert x\rvert + \frac{1}{\lvert x\rvert} \int_{1/\lvert x\rvert}^\infty \frac{2}{u^3}\,du\\ &= 2\lvert x\rvert. \end{align}
+F'(0) = 0

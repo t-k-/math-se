@@ -1,0 +1,21 @@
+X_1, X_2, ..., X_n
+X_i
+Z = \Sigma_{i=1}^NX_i
+Cov(N,Z)
+Cov(N,Z) = E[NZ] -E[N]E[Z]
+E[NZ] = E[\Sigma_{i=1}^N X_i N] =
+= \Sigma_{n=0}^{\infty} E[\Sigma_{i=1}^N X_i N | N=n] P(N=n)
+= \Sigma_{n=0}^{\infty} E[n\Sigma_{i=1}^n X_i]P(N=n) = 
+= \Sigma_{n=0}^{\infty} n E[\Sigma_{i=1}^n X_i]P(N=n) = 
+X_i
+X_j
+X_1
+=\Sigma_{n=0}^{\infty} nE[\Sigma_{i=1}^n X_1]P(N=n) = 
+=\Sigma_{n=0}^{\infty} n^2 X_1 P(N=n) = X_1\Sigma_{n=0}^{\infty} n^2 P(N=n)
+\Sigma_{n=0}^{\infty} n P(N=n) = E[N]
+=\Sigma_{n=0}^{\infty} n^2 P(N=n)
+Cov(N,Z) = E[NZ] -E[N].E[Z]
+= E[N.E[Z|N]] - E[N].E[E[Z|N]] 
+= E[N^2.E[X_1]] - E[N].E[N.E[X_1]] 
+= (E[N^2]- E[N]^2 ). E[X_1] 
+= Var(N) E[X_1]

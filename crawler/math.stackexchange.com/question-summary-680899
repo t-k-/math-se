@@ -1,0 +1,20 @@
+\pi \cot (\pi z) = \frac{1}{z} + \sum_{n \in \mathbb{Z},\  n \neq 0} \frac{1}{z-n}+ \frac{1}{n}
+h(1) = 0
+h(z) =\pi \cot (\pi z) -[ \frac{1}{z} + \sum_{n \in \mathbb{Z},\  n \neq 0} \frac{1}{z-n}+ \frac{1}{n} ]
+h(1) = 0
+d(z) = \pi \cot \pi z - \frac{1}{z-1}
+1
+z = 1+h
+\begin{align} d(1+h) &= \pi\frac{\cos \pi(1+h)}{\sin \pi(1+h)} - \frac{1}{h}\\ &= \pi \frac{-\cos \pi h}{-\sin \pi h} - \frac{1}{h}\\ &= \frac{1 - \frac{\pi^2h^2}{2} + O(h^4)}{h\left(1 - \frac{\pi^2h^2}{6}+O(h^4)\right)} - \frac{1}{h}\\ &= \frac{1}{h}\left(1- \frac{\pi^2h^2}{2}+O(h^4)\right)\left(1 + \frac{\pi^2h^2}{6}+O(h^4)\right) - \frac{1}{h}\\ &= \frac{1}{h}\left(1-\frac{\pi^2h^2}{3} + O(h^4)\right) - \frac{1}{h}\\ &= -\frac{\pi^2h}{3} + O(h^3), \end{align}
+d
+1
+d(1) = 0
+e(z) = \left(\frac{1}{z} + \sum_{n\neq 0} \frac{1}{z-n}+\frac{1}{n}\right) - \frac{1}{z-1} = \frac{1}{z} + 1 + \sum_{n\notin \{0,1\}} \frac{1}{z-n} + \frac{1}{n}
+1
+\frac{1}{z-1}
+e(1)
+1
+z
+h(z) = d(z) - e(z)
+\lim_{z\to 1}h(z)
+h(1)

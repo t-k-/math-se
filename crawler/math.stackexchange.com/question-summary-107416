@@ -1,0 +1,90 @@
+ 0 \leq x < \infty
+\sum_{n=0}^{\infty}e^{-|x-n|}
+\sum_{n=0}^{\infty}\frac{1}{e^{|x-n|}}=\sum_{n=0}^{N}\frac{1}{e^{|x-n|}}+\sum_{i=0}^{\infty}\frac{1}{e^{i}}.
+N
+x=n
+x
+s_n(x):=\sum_{k=0}^n e^{-|x-n|}
+\epsilon>0
+n_0
+\epsilon
+n_0
+\epsilon:={1\over2}
+s_n
+s_m
+m
+\bigl|s_m(x)-s_n(x)\bigr|<\epsilon\qquad\forall m>n_0,\ \forall n>n_0,\ \forall x\in{\mathbb R}\ .
+n:=n_0+1, \quad m:=n_0+2, \quad x:=m\ .
+\bigl|s_m(x)-s_n(x)\bigr|=e^{-|x-m|}=e^0>{1\over2}=\epsilon\ ,
+0\leq x\in\mathbb{R}
+\lfloor{x}\rfloor\in\mathbb{N}
+\leq x
+r=x-q\in[0,1)
+x
+x=q+r
+n\in\mathbb{N}
+x
+ |x-n|= \left\{ \begin{matrix} (q-n)+r &\quad n\leq q\leq x \\ (n-q)-r &\quad n>x>q \end{matrix} \right. 
+ \begin{array}{} \sum_{n=0}^{\infty}e^{-|x-n|} &=& \sum_{n=0}^{q}e^{-r-(q-n)} &+& \sum_{n=q+1}^{\infty}e^{+r-(n-q)} \\&=& e^{-r}\sum_{n=0}^{q}e^{-(q-n)} &+& e^r\sum_{n=q+1}^{\infty}e^{-(n-q)} \\&=& e^{-r}\sum_{n=0}^{q}e^{-n} &+& e^{r-1}\sum_{n=0}^{\infty}e^{-n} \\&=& e^{-r}\frac{1-e^{-(q+1)}}{1-e^{-1}} &+& e^{r-1}\frac{1}{1-e^{-1}} \\&=& \frac{e^{r}+e^{1-r}+e^{-x}}{e-1} && \end{array} 
+q
+x
+q
+x
+e^{-(x-q)}=e^{-r}
+r\leq\frac12
+e^{x-(q+1)}=e^{r-1}
+r\geq\frac12
+r=\frac12
+d(x)=\min(r,1-r)
+x
+\mathbb{Z}
+\mathbb{R}
+[0,\frac12)
+e^{-d(x)}
+\geq e^{-\frac12}
+f_n
+\mathbb{R}
+\mathbb{C}
+\epsilon>0
+N\in\mathbb{N}
+n \geq N
+x\in X
+|f_n(x)-|f(x)|<\epsilon
+N=N(\epsilon)
+\epsilon
+x\in X
+f_n
+\epsilon>0
+x
+N
+N
+x
+x
+ f_n(x)=\sum_{k=0}^{N}e^{-|x-k|} 
+ |f_n(x)-f(x)|=\sum_{k=N+1}^{\infty}e^{-|x-k|} 
+\alpha_n=\sup_{x\in X}|f_n(x)-f(x)|
+n\rightarrow\infty
+\mathbb R_+
+B
+R
+B\subset [0,R]
+n>R
+n-x>R-x\geq 0
+|n-x|=n-x
+0\leq e^{-|n-x|}=e^{-(n-x)}=e^{-n}e^x\leq e^{-n}e^R
+\sum_{n\geq 0}e^{-|n-x|}
+[0,R]
+B
+U
+\mathbb R_+
+I_k:=[k,k+1[
+n_k
+I_{n_k}\cap U\neq\emptyset
+n\in \mathbb N
+k'
+n< n_{k'}
+x\in U\cap I_{n_{k'}}
+-|n_{k'}-x|=-x+n_{k'}\geq -1
+\sup_{x\in U}\sum_{k=n}^{+\infty}e^{-|k-x|}\geq e^{-1}
+U
+\sup_{x\in U}\sum_{k=n}^{+\infty}e^{-|k-x|}\geq \sup_{x\in U}\sum_{j=k'}^{+\infty}e^{-|n_j-x|}\geq \sup_{x\in U\cap I_{n_{k'}}}e^{-|n_{k'}-x|},

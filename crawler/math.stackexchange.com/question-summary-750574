@@ -1,0 +1,25 @@
+(x,y)
+ f(x,y) = 1, \quad 0 \leq x \leq 1, \quad 0 < y \leq 1 
+Z = \frac{X}{Y}
+ Z = \frac{X}{Y} \\ W = Y 
+ g(x,y) = (\frac{x}{y}, y)\\ g^{-1}(z,w) = (zw, w) 
+w
+h
+ h(z,w) = f(zw, w) \cdot w = w 
+z \in [0;\infty]
+w \in [0,1]
+z
+ h_z(z) = \int_0^1 w \mathrm{d} w = \frac{1}{2} 
+\frac{1}{2}
+z \in [0;\infty]
+1
+(X,Y)
+(X/Y,Y)
+X/Y
+z\leq 0
+z>0
+ f(x,y)=\mathbf{1}_{0<x<1}\mathbf{1}_{0<y<1} 
+ h(z,w)=|w|f(zw,w)=w\mathbf{1}_{0<zw<1}\mathbf{1}_{0<w<1}=w\mathbf{1}_{0<z<w^{-1}}\mathbf{1}_{0<w<1}. 
+ h(z)=\int_\mathbb{R} h(z,w)\,\mathrm dw 
+ h(z)=\int_{\mathbb{R}}w\mathbf{1}_{0<w<z^{-1}}\mathbf{1}_{0<w<1}\,\mathrm dw=\int_0^{\min(1,z^{-1})}w\,\mathrm dw=\frac12 \min(1,z^{-2}). 
+ h(z)= \begin{cases} 0,\quad &z\leq 0,\\ \frac12, \quad &0<z<1,\\ \frac12 z^{-2},\quad &z\geq 1. \end{cases} 

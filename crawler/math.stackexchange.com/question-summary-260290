@@ -1,0 +1,46 @@
+A\times B
+k = A\times B
+[1, V]
+k=A\times B
+1
+1
+V\geq k
+M
+N
+M
+0
+1
+N
+V-k
+\{k,\dots,V-1\}
+N
+{\bf E}[X]
+X=|\{n\in\{0,\dots,k-1\}:n=N(n)\}|
+{V\choose k}k!
+N
+V-k
+0
+{V-1\choose k-1}(k-1)!
+0
+\left[{V-1\choose k-1}(k-1)!\right]\Big/\left[{V\choose k}k!\right]=\frac1V
+1
+2
+X\sim B\Big(k,\frac1V\!\Big)\Rightarrow{\bf E}[X]=\frac kV.
+M
+N
+1/V
+k
+V\geq k
+V
+k
+X=k
+V=1
+W = [1,1,\ldots,1, 2,2,\ldots,2,3,\ldots,4,\ldots,V, V,\ldots,V]
+k = A\times B
+W_1
+W_2
+W
+\mathbb{E}|\{i \in \{1,2,\ldots,k\} : W_1(i)=W_2(i)\}|
+\{i \in \{1,2,\ldots,k\} : W_1(i)=W_2(i)\} = \bigcup_{j = 1}^{k}\{i \in \{j\} : W_1(i) = W_2(i)\}
+X_j = |\{i \in \{j\} : W_1(i) = W_2(i)\}|
+\mathbb{E}X = \mathbb{E}\sum_{j=1}^{k}X_j = \sum_{j=1}^{k}\mathbb{E}X_j = k\frac{V}{V^2} = \frac{k}{V}.

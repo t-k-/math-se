@@ -1,0 +1,5 @@
+ x\to+\infty 
+    I(x) = \int_2^x \frac{e^t}{t} dt \qquad\text{when $ x\to+\infty $}. 
+I(x) = \int_2^x \frac{e^t}{t} dt = \frac{e^x}{x}-\frac{e^2}{2}+\int_2^x \frac{e^t}{t^2}dt=\frac{e^x}{x}+\frac{e^x}{x^2}-\frac{3e^2}{4}-2\int_2^x \frac{e^t}{t^3}dt,
+\frac{e^x}{x}-\frac{e^2}{2}<I(x) < \frac{e^x}{x}+\frac{e^x}{x^2}-\frac{3e^2}{4}
+\lim\limits_{x \rightarrow \infty} I(x) / (e^x/x)=1.

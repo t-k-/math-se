@@ -1,0 +1,19 @@
+u_{A}:A \longrightarrow A+B
+u_{B}:B \longrightarrow A+B
+u_{A}
+u_{B}
+A
+B
+f : C \to A
+g : C \to B
+u_A \circ f = u_B \circ g
+p_A : A \oplus B \to A
+p_B : A \oplus B \to B
+p_A \circ u_A = \mathrm{id}_A
+p_B \circ u_B = \mathrm{id}_B
+p_A \circ u_B = 0
+p_B \circ u_A = 0
+u_A
+u_B
+f = p_A \circ u_A \circ f = p_A \circ u_B \circ g = 0
+g = p_B \circ u_B \circ g = p_B \circ u_A \circ f = 0

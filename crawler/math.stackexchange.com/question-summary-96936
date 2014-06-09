@@ -1,0 +1,45 @@
+v^2
+N=\{1,...,n\}
+S\subset N
+a_S=\sum_{i\in S} a_i
+b_S
+\sum_S (v+a_S)(v+b_S) = \sum_S v^2 + \sum_S (a_S+b_S)v + \sum_S a_Sb_S
+\sum_S v^2 = 2^n v^2
+\sum_S (a_S+b_S)v = v 2^{n-1}(a_N+b_N)
+k\in N
+k
+2^{n-1}
+S
+a_k
+b_k
+2^{n-1}
+\sum_S a_Sb_S
+a_ib_j
+i=j
+2^{n-1}
+i\neq j
+a_ib_j
+i,j\in S
+2^{n-2}
+S
+D\sum_{i\in N} a_ib_i
+E=\sum_{i,j\in N} a_ib_j = a_Nb_N
+\sum_S a_Sb_S = 2^{n-2}(D+a_Nb_N)
+2^nv^2 + v2^{n-1}(a_N+b_N) + 2^{n-2}(D+a_Nb_N)
+a_N,b_N,D
+O(n)
+2^{n-2}[4v^2 + 2v(a_N+b_N) + a_Nb_N + D]
+4v^2 + 2v(a_N+b_N) + a_Nb_N = (2v+a_N)(2v+b_N)
+2^{n-2}[(2v+a_N)(2v+b_N) + D]
+v^2
+2^n
+(v+a_S)(v+b_S)
+(v+\frac{a_N}2)(v+\frac{b_N}2) + \frac{D}{4}
+v+\frac{a_N}2
+v+a_S
+v+\frac{b_N}2
+v+b_S
+(v+a_S)(v+b_S)
+v+a_S
+v+b_S
+\frac{D}4

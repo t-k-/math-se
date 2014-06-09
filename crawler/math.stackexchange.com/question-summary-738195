@@ -1,0 +1,12 @@
+\int_{\mathbb{R}}\operatorname{sign}(x-a)-\operatorname{sign}(x-b) d\mu(x)
+\operatorname{sign}(\theta)= 1, 0, -1
+\theta>0
+\theta=0
+\theta <0
+a>b
+f(x,a,b):=\operatorname{sign}(x-a)-\operatorname{sign}(x-b)
+\int_\mathbb R f(x,a,b)dx=\int_{-\infty}^a f(x,a,b)dx+\int_{a}^b f(x,a,b)dx+ \int_{b}^\infty f(x,a,b)dx.  
+f(x,a,b)=-1-(-1)=0,~~x\in(-\infty,a), 
+f(x,a,b)=1-(-1)=2,~~x\in(a,b), 
+f(x,a,b)=1-(+1)=0,~~x\in(b,\infty). 
+\int_\mathbb R f(x,a,b)dx=0+2(b-a)+0=2(b-a). 

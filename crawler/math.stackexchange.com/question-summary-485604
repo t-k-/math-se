@@ -1,0 +1,6 @@
+I_{n}=\lim_{x\to 0}\dfrac{1}{x^2}\left(1-\cos{x}\cdot\sqrt{\cos{(2x)}}\cdots\sqrt[n]{\cos{(nx)}}\right)
+I_{n}=\dfrac{n(n+1)}{4}
+ \cos(nx) = 1 - \frac{n^2 x^2}{2} + O(x^4) 
+x \to 0
+ \sqrt[n]{\cos(nx)} = 1 - \frac{n x^2}{2} + O(x^4) 
+ \begin{align} \cos(x)\sqrt{\cos(2x)}\cdots\sqrt[n]{\cos(nx)} &= 1 - \frac{x^2}{2} \sum_{k=1}^{n} k + O(x^4) \\ &= 1 - \frac{n(n+1)}{4} x^2 + O(x^4). \end{align} 

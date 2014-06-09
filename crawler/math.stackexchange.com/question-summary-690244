@@ -1,0 +1,15 @@
+f = x^Tx
+g = Ax-b 
+Ax-b = 0
+J' = f'+\lambda g'
+2x^T+\lambda A^T = 0 
+Ax-b=0
+ L(x,y)=\frac{1}{2}x^Tx + y^T(Ax-b) = \frac{1}{2}x^Tx + x^TA^Ty-b^Ty 
+ \nabla_x L(x,y) = x + A^T y 
+ x+A^T y = 0 
+ Ax=b 
+A
+ \begin{bmatrix} I & A^T\\A & 0 \end{bmatrix} \begin{bmatrix} x\\ y \end{bmatrix} =\begin{bmatrix} 0\\ b \end{bmatrix}. 
+ \begin{bmatrix} I & A^T\\A & 0 \end{bmatrix}^{-1} =\begin{bmatrix} I - A^T(AA^T)^{-1}A & A^T(AA^T)^{-1}\\ (AA^T)^{-1}A & -(AA^T)^{-1} \end{bmatrix}. 
+ \begin{bmatrix} x\\ y \end{bmatrix} =\begin{bmatrix} I & A^T\\A & 0 \end{bmatrix}^{-1} \begin{bmatrix} 0\\ b \end{bmatrix} = \begin{bmatrix} I - A^T(AA^T)^{-1}A & A^T(AA^T)^{-1}\\ (AA^T)^{-1}A & -(AA^T)^{-1} \end{bmatrix} \begin{bmatrix} 0\\ b \end{bmatrix} = \begin{bmatrix}  A^T(AA^T)^{-1}b\\  -(AA^T)^{-1}b \end{bmatrix} 
+ x=A^T(AA^T)^{-1}b. 

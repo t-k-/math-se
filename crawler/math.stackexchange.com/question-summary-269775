@@ -1,0 +1,32 @@
+x
+0
+x > 0
+e^{nx}-1 \geq nx
+f(x) = \sum_{n=1}^\infty \frac{1}{n}\frac{1}{(e^{nx}-1)^2}
+f(x)
+x
+0
+o(1)
+ f(x) = \sum_{n\ge 1} \frac{1}{n} \frac{1}{(e^{nx}-1)^2} = \sum_{n\ge 1} \frac{1}{n} \frac{1}{e^{2nx}} \frac{1}{(1-e^{-nx})^2}
+ f(x) = \sum_{n\ge 1} \frac{1}{n} \frac{1}{e^{2nx}} \sum_{k\ge 0} (k+1) e^{-knx} = \sum_{n\ge 1} \frac{1}{n} \sum_{k\ge 0} (k+1) e^{-(k+2)nx}.
+\mathfrak{M}(e^{-qx};s) = \Gamma(s) \frac{1}{q^s}
+f^*(s) = \mathfrak{M}(f(x);s) = \Gamma(s)  \sum_{n\ge 1} \frac{1}{n} \sum_{k\ge 0} (k+1) \frac{1}{(k+2)^s n^s} = \Gamma(s) \zeta(s+1) \left( - \sum_{k\ge 0}  \frac{1}{(k+2)^s} + \sum_{k\ge 0}  \frac{k+2}{(k+2)^s} \right)
+\Gamma(s) \zeta(s+1) \left( 1 - \zeta(s) -1 + \zeta(s-1) \right) = \Gamma(s) \zeta(s+1) \left( \zeta(s-1) - \zeta(s) \right).
+ f(x) = \int_{4-i\infty}^{4+i\infty}  \frac{f^*(s)}{x^s} ds.
+ L(s) =  \frac{f^*(s)}{x^s} .
+\operatorname{Res}_{s=2} L(s) = \frac{\zeta(3)}{x^2},
+\operatorname{Res}_{s=1} L(s) = -\frac{\pi^2}{6x},
+\operatorname{Res}_{s=0} L(s) =  \zeta'(-1) + \frac{1}{2}\log(2\pi) - \frac{5}{12}\log x.
+\sum_{m=1}^\infty  \frac{m}{q^{m+1}} = \frac{1}{(q-1)^2}, \qquad |q|>1.
+q= e^{nx}
+f(x)=   \sum_{n=1}^\infty \sum_{m=1}^\infty \frac{m e^{-n (m+1) x}}{n} =-\sum_{m=1}^\infty m \log\left(1-e^{-(1+m)x}\right). 
+g(z) = z  \log\left(1-e^{-(1+z)x}\right) 
+R = \mathcal{O}(1)
+|R| \leq C \int_1^{\infty} \left| g''(z) \right|dz
+f(x) \sim - \int_1^\infty \!dz\,z \log\left(1-e^{-(1+z)x}\right) =  \frac{1}{x^2} \int_{2x}^\infty\!dx\,(x-y) \log(1-e^{-y}).
+\begin{align}\int_{2x}^\infty\!dy\,(x-y) \log(1-e^{-y}) &= x \underbrace{\int_{0}^\infty\!dy\, \log(1-e^{-y})}_{-\pi^2/6} -\underbrace{\int_{0}^\infty\!dy\, y\log(1-e^{-y})}_{\zeta(3)}\\ &\quad+ \underbrace{\int_0^{2x} \!dy\,(y-x)\log(1-e^{-y})}_{\mathcal{O}(x^2)}\end{align}  .
+f(x) \sim \frac{\zeta(3)}{x^2}- \frac{\pi^2}{6x} - \frac{5}{12}\log x+ \mathcal{O}(1).
+\frac{5}{12} \zeta(1)
+O(1)
+x \rightarrow 0
+\log{x}

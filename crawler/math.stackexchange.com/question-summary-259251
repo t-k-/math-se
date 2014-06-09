@@ -1,0 +1,23 @@
+ f(t)=\frac{1-\cos(t)}{t^2} 
+  F(S)= ? 
+F(s) = \int_{0}^{\infty} f(t) \, e^{-st} \, dt = \int_{0}^{\infty} \frac{1-\cos t}{t^2} e^{-st} \, dt. 
+f(t)
+ f(t) = O(1 \wedge t^{-2})
+ F''(s) = \int_{0}^{\infty} (1-\cos t) \, e^{-st} \, dt = \frac{1}{s} - \frac{s}{s^2 + 1}. 
+F'(\infty) = 0
+ F'(s) = \log s - \log \sqrt{s^2 + 1}. 
+F(s) = \int \left\{ \log s - \log \sqrt{s^2 + 1} \right\} \, ds. 
+s \log s - s
+ F(s) = s \log s - s \log \sqrt{s^2 + 1} - \arctan s + C. 
+F(\infty) = 0
+C = \frac{\pi}{2}
+~\mathcal L\left\{ f(t)\right\}=F(s)~
+~g(t)=\dfrac{f(t)}{t}~
+\mathcal L \left\{\dfrac{f(t)}{t}\right\}=\int\limits_s^{\infty}F(u)\,\mathrm du
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\fermi\pars{t} \equiv {1 - \cos\pars{t} \over t^{2}}:\ {\large ?}}
+g(s)=\mathcal{L}\left\{1-\cos t\right\}=\mathcal{L}\left\{1\right\}-\mathcal{L}\left\{\cos t\right\}=\frac{1}{s}-\frac{s}{s^2+1}
+\mathcal{L}\left\{\frac{1-\cos t}{t}\right\}=\int_{s}^{\infty}g(\sigma)\, d\sigma=\int_{s}^{\infty} \frac{1}{\sigma}-\frac{\sigma}{\sigma^2+1}\, d\sigma
+\int\frac{1}{\sigma}-\frac{\sigma}{\sigma^2+1}\, d\sigma=\ln \left|\sigma\right|-\frac{1}{2}\ln\left|\sigma^2+1\right|
+\mathcal{L}\left\{\frac{1-\cos t}{t}\right\}=\int_{s}^{\infty} \frac{1}{\sigma}-\frac{\sigma}{\sigma^2+1}\, d\sigma=1-\ln \left|\frac{s}{\sqrt{s^2+1}}\right|
+\mathcal{L}\left\{f\right\}=\int_{s}^{\infty}1-\ln \left|\frac{\sigma}{\sqrt{\sigma^2+1}}\right|\, d\sigma

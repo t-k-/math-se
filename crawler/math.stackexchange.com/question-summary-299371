@@ -1,0 +1,13 @@
+\begin{align}   & \int_{0}^{\pi }{\frac{f\left( \alpha +{{\text{e}}^{xi}} \right)+f\left( \alpha +{{\text{e}}^{-xi}} \right)}{1-2p\cos x+{{p}^{2}}}}\text{d}x=\frac{2\pi }{1-{{p}^{2}}}f\left( \alpha +p \right)\ \ \ \ \ \left| p \right|<1 \\   & \int_{0}^{\pi }{\frac{1-p\cos x}{1-2p\cos x+{{p}^{2}}}}\left\{ f\left( \alpha +{{\text{e}}^{xi}} \right)+f\left( \alpha +{{\text{e}}^{-xi}} \right) \right\}\text{d}x=\pi \left\{ f\left( \alpha +p \right)+f\left( \alpha  \right) \right\} \\  \ \ \ \ \left| p \right|<1\end{align}
+z = e^{ix}
+\mathscr{C}
+|z| = 1
+f(z)
+\alpha
+z = p
+z = 0
+\begin{align} I(f; \alpha, p ) = & \int_{0}^{\pi} \frac{f( \alpha + e^{xi})+f( \alpha +e^{-xi} )}{1-2p\cos x+{p^2}}dx\\ = & \int_{-\pi}^{\pi}\frac{f( \alpha +e^{xi} )}{1-2p\cos x+{p^2}}dx\\ = & \int_{\mathscr{C}} \frac{f(\alpha + z) }{(z - p)(\bar{z} - p)} \frac{dz}{iz}\\ = & 2\pi\int_{\mathscr{C}} \frac{f(\alpha + z) }{(z - p)(1 - p z)}\frac{dz}{2\pi i} \end{align}
+I(f; \alpha, p) = 2\pi \operatorname{Res}( \frac{f(\alpha+z)}{(z-p)(1-pz)}; p ) = \frac{2\pi}{1-p^2}f(\alpha+p)
+\begin{align} J(f;\alpha)  =& \int_{0}^{\pi} ( f( \alpha + e^{xi})+f( \alpha +e^{-xi} ) ) dx\\ =& \int_{-\pi}^{\pi} f( \alpha + e^{xi} ) dx\\ =& \int_{\mathscr{C}} f(\alpha + z ) \frac{dz}{iz}\\ =& 2\pi \int_{\mathscr{C}} \frac{f(\alpha+z)}{z} \frac{dz}{2\pi i} \end{align}
+J(f; \alpha ) = 2\pi \operatorname{Res}( \frac{f(\alpha+z)}{z}; 0 ) = 2\pi f(\alpha)
+\begin{align}   &\int_{0}^{\pi} \frac{1-p\cos x}{1-2p\cos x+{p^2}}( f( \alpha + e^{xi})+f( \alpha +e^{-xi} ))dx\\ = & \int_{0}^{\pi} \frac12 ( \frac{1-p^2}{1-2p\cos x+{p^2}} + 1 )( f( \alpha + e^{xi})+f( \alpha +e^{-xi} )dx\\ = & \frac12 ((1 - p^2) I(f;\alpha,p) + J(f;\alpha))\\ = & \pi (f(\alpha + p ) + f(\alpha)) \end{align}

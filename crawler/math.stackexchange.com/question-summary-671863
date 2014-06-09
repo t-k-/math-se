@@ -1,0 +1,29 @@
+f_{1}(x)=\left(\left(\dfrac{\ln{(1+x)}}{\ln{x}}\right)^x-1\right)\ln{x}
+f_{2}(x)=\left(\left(\left(\dfrac{\ln{(1+x)}}{\ln{x}}\right)^x-1\right)\ln{x}-1\right)\ln{x}
+f_{3}(x)=\left(\left(\left(\left(\dfrac{\ln{(1+x)}}{\ln{x}}\right)^x-1\right)\ln{x}-1\right)\ln{x}-\dfrac{1}{2!}\right)\ln{x}
+\cdots\cdots\cdots\cdots
+f_{n+1}(x)=\left(f_{n}(x)-\dfrac{1}{n!}\right)\ln{x}
+\lim_{x\to +\infty}f_{n}(x)
+\lim_{x\to+\infty}f_{1}(x)=1,\lim_{x\to+\infty}f_{2}(x)=\dfrac{1}{2!}
+\lim_{x\to\infty}f_{n}(x)=\dfrac{1}{n!}
+n\geqslant0
+n\geqslant0
+u\to0
+v_n(u)=O\left(u^{n+1}\right)
+ \left(\frac{\log(x+1)}{\log x}\right)^x=\sum_{k=0}^n\frac1{k!(\log x)^k}+O\left(\frac1{(\log x)^{n+1}}\right). 
+ \frac{\log(x+1)}{\log x}=1+\frac{\log(1+1/x)}{\log x}=1+\frac1{x\log x}+O\left(\frac1{x^2}\right), 
+ x\log\left(\frac{\log(x+1)}{\log x}\right)=\frac1{\log x}+O\left(\frac1{x}\right), 
+ \left(\frac{\log(x+1)}{\log x}\right)^x=\exp\left(\frac1{\log x}+O\left(\frac1{x}\right)\right). 
+ \exp(u)=\sum_{k=0}^n\frac{u^k}{k!}+v_n(u), 
+ u(x)=\frac1{\log x}+O\left(\frac1{x}\right) 
+ \sum_{k=0}^n\frac{u(x)^k}{k!}=\sum_{k=0}^n\frac1{k!(\log x)^k}+O\left(\frac1{x}\right),\qquad  v_n(u(x))=O\left(\frac1{(\log x)^{n+1}}\right), 
+f_1
+1
+f_2
+1/2
+f_3
+1/6
+f_n
+-\infty
+n>3
+f_{n+1}=\left(f_{n}-\dfrac{1}{n}\right)\ln{x}

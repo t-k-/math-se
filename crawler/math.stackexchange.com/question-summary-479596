@@ -1,0 +1,22 @@
+u_{t} + b*Du + cu = 0
+u(x,o) = g(x)
+z(s) = u(x + sb,t + s)
+z'(s) = b*Du(x+sb,t + s) + u_{t}(x+sb,t+s)
+z'(s) + c*z(s) = 0
+z(s) = e^{-cs}
+z(s)=u(x,t)e^{-c s}
+u(x,t)=z(s)e^{cs}
+g(y)=u(y,0)=u(y-sb+sb,-s+s)=z(s)
+x=y-sb
+t=-s
+z(s)=g(y)=g(x-tb)
+u(x,t)=g(x-tb)e^{-ct}
+z(s)=Ae^{-cs}
+A
+z
+s=-t
+z(-t)=u(x-bt,0)=g(x-bt)=Ae^{ct}
+A=g(x-bt)e^{-ct}
+z(s)=u(x+sb,t+s)=g(x-bt)e^{-c(t+s)}
+s=0
+u(x,t)=g(x-bt)e^{-ct}

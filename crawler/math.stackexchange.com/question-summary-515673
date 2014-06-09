@@ -1,0 +1,14 @@
+f:\mathbb{R}^2\rightarrow\mathbb{R}
+\frac{d}{dx}\int_a^bf(x,y)dy=\int_a^b\frac{\partial}{\partial x}f(x,y)dy.
+\frac{d}{dx}\int_0^xf(x,y)dy = f(x,x)+\int_0^x\frac{\partial}{\partial x}f(x,y)dy.
+a<x
+\frac{d}{dx} \int_{0}^{x} f(x,y) \, dy
+ G(u,v) = \int_{0}^{u} f(v,y) \, dy 
+G(x,x) = \int_{0}^{x} f(x,y) \, dy
+\star
+ \frac{d}{dx} \int_{0}^{x} f(x,y) \, dy = \frac{d}{dx} G(x,x) = \frac{\partial G}{\partial u} (x,x) + \frac{\partial G}{\partial v} (x,x) \tag{$\star$}
+ \frac{\partial G}{\partial u}(u,v) = f(v,u) 
+ \frac{\partial G}{\partial v}(u,v) = \int_{0}^{u} \frac{\partial f}{\partial x}(v,y) \, dy 
+(\star)
+ \frac{d}{dx} G(x,x) = f(x,x) + \int_{0}^{x} \frac{\partial f}{\partial x}(x,y) \, dy 
+\begin{align} \frac d{dx}\int_0^xf(x,y)dy&=\frac d{dx}\int_0^sf(x,y)dx|_{s=x}+\frac d{dx}\int_0^xf(t,y)dy|_{t=x}\\ &=\int_0^s\frac{\partial}{\partial x}f(x,y)dy|_{s=x}+f(t,x)|_{t=x}\\ &=\int_0^x\frac{\partial}{\partial x}f(x,y)dy+f(x,x) \end{align}

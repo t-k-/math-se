@@ -1,0 +1,24 @@
+X_0=4
+n\geqslant1
+X_n=Y_nX_{n-1}
+P[Y_n=2]=\frac34
+P[Y_n=\frac12]=\frac14
+Y_n
+\mathcal F_{n-1}=\sigma(X_k;0\leqslant k\leqslant n-1)
+E[Y_nX_{n-1}\mid\mathcal F_{n-1}]=E[Y_n]\,X_{n-1}
+E[X_n\mid\mathcal F_{n-1}]=\frac{13}8\,X_{n-1}
+E[X_2\mid\mathcal F_1]=X_2
+X_2
+\mathcal F_1
+X_1=Y_1X_0
+X_2=Y_1X_1
+E[X_2\mid\mathcal F_1]=\frac14X_1^2
+\frac14X_1^2\ne\frac{13}8\,X_1
+X_1
+8
+2
+\mathbb{E}[X_2 | X_1]
+\mathbb{E}[X|B] = \sum_{\omega \in B} X(\omega) P(\omega | B)
+\mathbb{E}[X_2 | X_1] = 2 X_1 P( X_2 = 2 X_1 | X_1) + 0.5 X_1 P( X_2 = 0.5 X_1 | X_1)   = 2 X_1 \bullet \frac{3}{4} + \frac{1}{2} X_1 \bullet \frac{1}{4} = \frac{13}{8} X_1 \, .
+\mathcal{F_1} = \sigma(X_1)
+\mathbb{E}[X_2 | \mathcal{F}_1] = \mathbb{E}[X_2 | X_1] = \frac{13}{8} X_1 \, .

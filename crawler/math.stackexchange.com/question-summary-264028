@@ -1,0 +1,48 @@
+n
+j
+n_j
+(j=1,\ldots,6)
+n_1 + n_2 + \cdots + n_6 = n
+\frac{1}{{6+n-1 \choose n}}
+\frac{{n \choose n_1,n_2,\ldots,n_6}}{6^n}
+j
+\dfrac16
+j
+\dfrac56
+n
+n_j
+j
+\dbinom{n}{n_j} \left(\dfrac1{6} \right)^{n_j} \left(\dfrac56 \right)^{n-n_j}
+n_1
+1
+n_2
+2
+n_3
+3
+1
+n_1
+2
+n_2
+1
+n_1
+3
+n_3
+1,2
+n_1,n_2
+4
+n_4
+1,2,3
+n_1,n_2,n_3
+5
+n_5
+1,2,3,4
+n_1,n_2,n_3,n_4
+6
+n_6
+1,2,3,4,5
+n_1,n_2,n_3,n_4,n_5
+\underbrace{\dbinom{n}{n_1} \left(\dfrac16 \right)^{n_1}}_{\text{Probability $1$ occurs $n_1$ times}}\\ \times \underbrace{\dbinom{n-n_1}{n_2} \left(\dfrac16 \right)^{n_2}}_{\text{Probability $2$ occurs $n_2$ times given that $1$ has occurred $n_1$ times}}\\ \times \underbrace{\dbinom{n-n_1-n_2}{n_3} \left(\dfrac16 \right)^{n_3}}_{\text{Probability $3$ occurs $n_3$ times given that $1,2$ have occurred $n_1,n_2$ times}}\\ \times \underbrace{\dbinom{n-n_1-n_2-n_3}{n_4} \left(\dfrac16 \right)^{n_4}}_{\text{Probability $4$ occurs $n_4$ times given that $1,2,3$ have occurred $n_1,n_2,n_3$ times}}\\ \times \underbrace{\dbinom{n-n_1-n_2-n_3-n_4}{n_5} \left(\dfrac16 \right)^{n_5}}_{\text{Probability $5$ occurs $n_5$ times given that $1,2,3,4$ have occurred $n_1,n_2,n_3,n_4$ times}}\\ \times \underbrace{\dbinom{n-n_1-n_2-n_3-n_4-n_5}{n_6} \left(\dfrac16 \right)^{n_6}}_{\text{Probability $6$ occurs $n_6$ times given that $1,2,3,4,5$ have occurred $n_1,n_2,n_3,n_4,n_5$ times}}\\ = \dfrac{n!}{n_1!n_2!n_3!n_4!n_5!n_6!} \dfrac1{6^n}
+\dfrac1{\dbinom{6+n-1}6}
+(n_1,n_2,n_3,n_4,n_5,n_6)
+(n_1,n_2,n_3,n_4,n_5,n_6)=(0,0,0,0,0,n)
+(\lfloor n/6 \rfloor, \lfloor n/6 \rfloor, \lfloor n/6 \rfloor, \lfloor n/6 \rfloor, \lfloor n/6 \rfloor, n-5 \lfloor n/6 \rfloor)

@@ -1,0 +1,22 @@
+Q = {q_{1},q_{2},..., q_{n}}
+R = {r_{1},r_{2},..., r_{n}}
+S = {s_{1},s_{2},..., s_{n}}
+F(S)=\sum_1^n|r_{i}-s_{i}|
+argmin_S F(S)
+s_{n}s_{n+1}
+q_{n}q_{n+1}
+\alpha
+\beta
+\alpha \le {s_{n+1} - s_{n}\over q_{n+1} - q_{n}} \le \beta 
+0\lt\alpha \le 1
+\beta \ge 1
+n
+z_i
+r_i
+s_i
+\min z_i = \lvert r_i-s_i \rvert
+z_1
+s_1
+\begin{align} z_i &\ge r_i-s_i, \\ z_i &\ge -(r_i-s_i). \end{align}
+f(s_1,\ldots,s_n,z_1,\ldots,z_n) = z_1 + \cdots + z_n
+\begin{align} s_{n+1} - s_{n} &\ge \alpha(q_{n+1} - q_{n}),\\ s_{n+1} - s_{n} &\le \beta(q_{n+1} - q_{n}),\\ z_i &\ge r_i-s_i, \\ z_i &\ge -(r_i-s_i). \end{align}

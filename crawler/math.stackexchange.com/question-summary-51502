@@ -1,0 +1,14 @@
+1\leq p < \infty
+\{f_k\} \subset L^p
+f_k \to f
+\|f_k\|_{L^p} \to \|f\|_{L^p}
+\|f_k - f\|_{L^p} \to 0\ ?
+\|f_k - f\|_{L^p} \to 0 \Rightarrow \|f_k\|_{L^p} \to \|f\|_{L^p}
+|f_k - f|^p \leq 2^p (|f_k|^p + |f|^p),
+2^p (|f_k|^p + |f|^p) - |f_k - f|^p \geq 0.
+\limsup_{k \to \infty} \int |f_k - f|^p \, d\mu = 0.
+g_k = 2^p(|f_k|^p + |f|^p) - |f_k - f|^p
+g_k \geq 0
+g_k \to 2^{p+1}|f|^p
+\int \liminf g_k \leq \liminf \int g_k
+\int 2^{p+1}|f|^p \leq \liminf \left(\int 2^p |f_k|^p + \int 2^p |f|^p - \int |f_k - f|^p \right),

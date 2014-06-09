@@ -1,0 +1,11 @@
+     T(n) = T(\lfloor{2n/3}\rfloor)+ n^2 
+n
+T(n)
+T(2n/3) + \color{#F01C2C}{n^2}
+T(2n/3)
+T(4n/9) + \color{#F01C2C}{\frac{4}{9} n^2}
+T(4n/9)
+T\left(\left(\frac{2}{3}\right)^3 n\right) + \color{#F01C2C}{\left(\frac{4}{9}\right)^2n^2}
+T\left(\left(\frac{2}{3}\right)^3 n\right) = T\left(\left(\frac{2}{3}\right)^4 n\right)+\color{#F01C2C}{\left(\frac{4}{9}\right)^3n^2}
+\color{#F01C2C}{\text{red}}
+\color{#F01C2C}{n^2 \left( 1 + \frac{4}{9} + \left(\frac{4}{9}\right)^2 + \ldots\right)} = \frac{n^2}{1 - \frac{4}{9}}

@@ -1,0 +1,15 @@
+X_1, ..., X_n
+f_X(x | \lambda, \theta) = \lambda \, e^{-\lambda(x - \theta)} \, \mathbf{1}_{\{x \geq \theta \}}
+\lambda
+\theta
+ \begin{cases} p(\lambda) = \frac{1}{\lambda^2} \, \mathbf{1}_{\{\lambda > 1\}} \\ p(\theta) = \frac{1}{\pi(1+\theta^2)} \, \mathbf{1}_{\{\theta \in \mathbf{R}\}} \end{cases} 
+\lambda
+\theta
+\mathbf{E}[p(\lambda | \mathbf{x})]
+\mathbf{E}[p(\theta | \mathbf{x})]
+ p(\lambda, \theta \, | \, \mathbf{x}) \propto p(\theta,\lambda) f(\mathbf{x} \, | \, \lambda, \theta) 
+ \begin{cases} p(\lambda | \mathbf{x}) =\int_{-\infty}^{x_{(1)}} p(\lambda, \theta \, | \, \mathbf{x}) \, d\theta \\ p(\theta | \mathbf{x}) = \int_1^\infty p(\lambda, \theta \, | \, \mathbf{x}) \, d\lambda \end{cases} 
+ p(\lambda, \theta \, | \, \mathbf{x}) \propto  \underbrace{\frac{1}{\pi\lambda^2(1+\theta)^2}}_{p(\lambda,\theta)} \, \underbrace{\lambda^n e^{-\lambda(S-n\theta)}}_{ f(\mathbf{x} \, | \, \lambda, \theta)} \qquad \left(S = \sum_{i=1}^n x_i\right) 
+ c_n = \frac{1}{\pi} \int_{-\infty}^{x_{(1)}}  \frac{1}{1+\theta^2} \int_{1}^\infty  \lambda^{n-2} e^{-\lambda(S-n\theta)} \, d\lambda \, d\theta = \frac{1}{\pi} \int_{-\infty}^{x_{(1)}}\frac{\Gamma(n-1,S-n\theta)}{(S-n\theta)^{n-1}(1+\theta^2)}  \, d\theta 
+\Gamma(n-1,s-n\theta)
+ c_n = \int_{1}^\infty \lambda^{n-2} e^{-\lambda S} \int_{-\infty}^{x_{(1)}} \frac{e^{n\theta\lambda}}{\pi(1+\theta^2)}   \, d\theta \, d\lambda 

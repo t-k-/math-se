@@ -1,0 +1,18 @@
+\lim_{n\to\infty} \frac{{(n+1)}^{n+1}}{n^n} - \frac{{n}^{n}}{{(n-1)}^{n-1}} =e
+\lim_{n\to\infty} \frac{{(n+1)}^{n+1}}{n^n} - \frac{{n}^{n}}{{(n-1)}^{n-1}}=
+\lim_{n\to\infty} f(n+1) - f(n)=
+\lim_{n\to\infty} \frac{f(n+1) - f(n)}{n+1-n}=
+\lim_{n\to\infty} \frac{f(n)}{n}=
+\lim_{n\to\infty} \frac{n^n}{(n-1)^{n-1}}\cdot \frac{1}{n}=
+\lim_{n\to\infty} \frac{n^{n-1}}{(n-1)^{n-1}}=\left(1+\frac{1}{n-1}\right)^{n-1}=e.
+n
+n-1
+\eqalign{(n+1)^{n+1} = \exp\left((n+1) \ln(n+1)\right) &= \exp\left(((n+1) (\ln n + \frac{1}{n} - \frac{1}{2n^2} + O(n^{-3}))\right)\cr &= \exp\left( n \ln n + \ln n + 1 + \frac{1}{2n} + O(n^{-2})\right) \cr &= n^{n+1} e \left(1 + \frac{1}{2n}+ O(n^{-2})\right)}
+ \dfrac{(n+1)^{n+1}}{n^n} = n e + \frac{e}{2} + O(1/n)
+ \dfrac{n^n}{(n-1)^{n-1}} = (n-1) e + \frac{e}{2} + O(1/(n-1)) = ne - \frac{e}{2} + O(1/n)
+ \dfrac{(n+1)^{n+1}}{n^n} - \dfrac{n^n}{(n-1)^{n-1}}  = e + O(1/n)
+ \dfrac{(n+1)^{n+1}}{n^n} - \dfrac{n^n}{(n-1)^{n-1}}  = e + \dfrac{e}{24 n^2} + \dfrac{11\; e}{640 n^4} +  \ldots 
+\lim a_n=a
+\lim n(a_n-a_{n-1})=0
+\lim (n+1)a_n-na_{n-1}=a
+a_n=\left(1+\frac{1}{n}\right)^n

@@ -1,0 +1,29 @@
+f,g\colon \mathbb{Q}\to X
+f=g
+f
+g
+x,y \in \mathbb{Z}
+y\neq 0
+\begin{align*} f(x/y)&=f(x)f(1/y) &&\text{because }f\text{ is a ring homomorphism}\\  &=g(x)f(1/y) &&\text{because }f\text{ and }g\text{ agree on the integers} \end{align*}
+f(1/y)
+g(1/y)
+\begin{align*} f\left(\frac{x}{y}\right) &= f\left(\frac{1}{y}\cdot x\right)\\ &= f\left(\frac{1}{y}\right)\cdot f(x)\\ &= f\left(\frac{1}{y}\right)\cdot g(x)\\ &= f\left(\frac{1}{y}\right)\cdot g\left(xy\cdot \frac{1}{y}\right)\\ &= f\left(\frac{1}{y}\right)\cdot g(xy)\cdot g\left(\frac{1}{y}\right)\\ &= f\left(\frac{1}{y}\right)\cdot f(xy)\cdot g\left(\frac{1}{y}\right)\\ &= f\left(\frac{1}{y}\cdot xy\right)\cdot g\left(\frac{1}{y}\right)\\ &= f(x)\cdot g\left(\frac{1}{y}\right)\\ &= g(x)\cdot g\left(\frac{1}{y}\right)\\ &= g\left(x \cdot \frac{1}{y}\right)\\ &= g\left(\frac{x}{y}\right). \end{align*}
+\mathbb{Z}\hookrightarrow\mathbb{Q}
+X
+\mathbb{Q}
+X
+X
+S
+D
+S
+S
+D
+s
+s\in D
+s
+d_i,e_j\in D
+a_k,b_{\ell}\in S
+d_1=e_1b_1
+a_{n-1}d_{n-1}=a_n
+s=a_1d_1=a_1e_1b_1 = a_2d_2b_1 = a_2e_2b_2 = \cdots = a_{n-1}d_{n-1}b_{n-1}=a_nb_{n-1},
+a_ie_i = a_{i+1}d_{i+1},\quad d_{i+1}b_i = e_{i+1}b_{i+1},\qquad\text{for }i=2,3,\ldots,n-2.

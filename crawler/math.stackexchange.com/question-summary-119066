@@ -1,0 +1,49 @@
+X_1
+X_2
+\lambda_1
+\lambda_2
+\lambda
+Z = X_1 + X_2
+\mathcal{L}_Z(t) = \mathbb{E}(\mathrm{e}^{-t Z})
+Z
+\mathcal{L}_Z(t) = \mathcal{M}_Z(-t)
+Z
+X_1
+X_2
+\mathcal{M}_Z(t) = \mathcal{M}_{X_1}(t) \mathcal{M}_{X_2}(t)
+\lambda_1 \not= \lambda_2
+f_Z(x) > 0
+x \geqslant 0
+    \mathcal{M}_Z(t) = \frac{\lambda_1}{\lambda_1 - t} \cdot  \frac{\lambda_2}{\lambda_2 - t} 
+    \mathcal{M}_Z(t) = \frac{\lambda_2}{\lambda_2 -\lambda_1} \cdot \frac{\lambda_1}{\lambda_1 - t} - \frac{\lambda_1}{\lambda_2 -\lambda_1} \cdot \frac{\lambda_2}{\lambda_2 - t} 
+    f_Z(x) = \frac{\lambda_2 f_{X_1}(x) - \lambda_1 f_{X_2}(x)}{\lambda_2 -\lambda_1} =             \lambda_1 \lambda_2 \frac{\mathrm{e}^{-\lambda_1 x} - \mathrm{e}^{-\lambda_2 x} }{\lambda_2 - \lambda_1} \cdot [ x \geqslant 0 ] 
+F_W(w)
+W
+P(W \le w)
+0
+w<0
+X
+Y
+\alpha
+\beta
+X
+Y
+\alpha e^{-\alpha x}\beta e^{-\beta y}
+x\ge 0
+y\ge 0
+W \le w
+x+y=w
+1-e^{-\beta(w-x)}
+1-e^{-\beta w}e^{\beta x}
+\alpha\ne \beta
+w \ge 0
+f_W(w)
+0
+w<0
+w \ge 0
+P(W \le w)=\int_{x=0}^w \alpha e^{-\alpha x} \left(\int_{y=0}^{w-x} \beta e^{-\beta y}\,dy\right)\, dx.
+\int_0^w \left( \alpha e^{-\alpha x}  -\alpha e^{-\beta w}e^{\beta x-\alpha x}\right)\,dx.
+P(W \le w)=1 -\frac{\beta e^{-\alpha w}-\alpha e^{-\beta w}}{\beta -\alpha}
+\frac{\alpha\beta}{\beta -\alpha}\left( e^{-\alpha w}- e^{-\beta w}\right)
+\beta
+\alpha

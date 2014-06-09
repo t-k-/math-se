@@ -1,0 +1,25 @@
+ \begin{eqnarray} \sum_{k=1}^{n-1} k^n &=& n^{n+1}\sum_{k=0}^{n-1}\left(\frac{k}{n}\right)^{n}\frac{1}{n} \\ &\le& n^{n+1}\int_{0}^{1}x^n dx \\ &=& n^{n+1} \frac{x^{n+1}}{n+1}\Bigg\vert_{0}^{1} \\ &=& \frac{n^{n+1}}{n+1} \\ &<& n^n. \end{eqnarray} 
+0 \leq k < n
+(k+1)^n - k^n > k^n
+0 \leq k \leq n
+(k+1)^n = \sum_{j=0}^n \binom{n}{j} k^j > k^n + nk^{n-1} \geq 2k^n,
+\sum_{k=0}^{n-1} k^n < \sum_{k=0}^{n-1} \left((k+1)^n - k^n\right) = n^n.
+\xi
+k
+k+1
+n+1
+ (k+1)^{n+1}-k^{n+1}=(n+1)\xi^n>(n+1)k^n 
+ \sum_{k=0}^{n-1}(n+1)k^n<n^{n+1} 
+ \begin{align} \sum_{k=0}^{n-1}k^n &<\frac{1}{n+1}n^{n+1}\\ &<n^n \end{align} 
+0 \leqslant r \leqslant n-1
+r^n \leqslant \frac{1}{2} (r+1)^n
+k
+k = 1, 2, \ldots, n-1
+ \frac{(r+1)^n}{r^n} = \left( \frac{r+1}{r} \right)^n =  \left( 1 + \frac{1}{r} \right)^n \geqslant 1 + \frac{n}{r} \geqslant 2, 
+ (n-k)^n \leqslant \frac{n^n}{2^k}. 
+ \sum_{k=1}^{n-1} (n-k)^n \leqslant n^n \sum_{k=1}^{n-1} 2^{-k} < n^n \sum_{k=1}^{\infty} 2^{-k} = n^n, 
+\varepsilon > 0
+n
+ \frac{(r+1)^n}{r^n} =  \left( 1 + \frac{1}{r} \right)^n \geqslant \left( 1 + \frac{1}{n} \right)^n  \geqslant \mathrm e - \varepsilon. 
+ \sum_{k=1}^{n-1} k^n \lt n^n \cdot \sum_{k=1}^{\infty} (\mathrm{e} - \varepsilon)^{-k} = \frac{n^n}{\mathrm e - \varepsilon - 1}. 
+ \limsup_n  \ n^{-n} \cdot  \sum_{k=1}^{n-1} k^n \leqslant \frac{1}{\mathrm e  - 1}, 

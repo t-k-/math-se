@@ -1,0 +1,19 @@
+\int |z| \overline{z} \, dz
+|z| = R,\quad R>0
+ \{z = x + iy \text{ complex} : -R < x < R, y = 0 \}
+ \int_\gamma f(z) \, dz = \int_a^b f(\gamma(t))\gamma'(t) \,dt 
+ \gamma_1(t) = R e^{i t} \quad t \in [0, \pi] 
+\gamma'(t) = iRe^{it}
+|z| = R
+\overline{z} = R e^{-it}
+ \int_{\gamma_1} f(z) \,dz = \int_0^\pi iR^3 \,dt = i \pi R^3 
+\int_{[-R,R]}|z|\overline z\,dz=\int\limits_{-R}^R|x|(x-iy)\,dx\stackrel{y=0}=\int\limits_{-R}^0-x\cdot x\,dx+\int\limits_0^R x\cdot x\,dx=\left.\left.-\frac{1}{2}\left[x^2\right|_{-R}^0+x^2\right|_0^R\right]=
+=-\frac{1}{2}\left(-R^2+R^2\right)=0
+\int\limits_{|z|=R}|z|\overline z\,dz=R\int\limits_0^\pi Re^{-it}(Rie^{it}dt)=\ldots
+ \int |z| \bar z \, dz 
+-R
+R
+ \left(\int_{-R}^0 + \int_0^R\right) |z|\bar z \, dz = \int_{-R}^0 -z^2\,dz + \int_0^R z^2\,dz. 
+ \int |z| \bar z \, dz = R\int \bar z\,dz = R \int_0^\pi R(\cos\theta-i\sin\theta)\, d(R(\cos\theta+i\sin\theta)) 
+ = R^3 \int_0^\pi (\cos\theta-i\sin\theta) (-\sin\theta+i\cos\theta)\,d\theta 
+ = R^3 \int_0^\pi i\,d\theta = R^3 i \pi. 

@@ -1,0 +1,40 @@
+F_n = a_1*F_{n-1} + b_1*F_{n-2} + c_1*G_{n-3}
+G_n = a_2*G_{n-1} + b_2*G_{n-2} + c_2*F_{n-3}
+ a_1,b_1,c_1,a_2,b_2,c_2
+ F_0,F_1,F_2,  G_0, G_1,G_2 
+F_n
+G_n
+V_n
+(F_n,G_n)
+V_n=\begin{bmatrix}a_1 & 0 \\ 0 & a_2 \end{bmatrix}V_{n-1}+\begin{bmatrix}b_1 & 0 \\ 0 & b_2 \end{bmatrix}V_{n-2}+\begin{bmatrix}0 & c_1 \\ c_2 & 0 \end{bmatrix}V_{n-3}\,.
+r
+F_0r^3=a_1F_0r^2+b_1F_0r+c_1G_0 \\ G_0r^3=a_2G_0r^2+b_2G_0r+c_2F_0\\G_0=\frac {c_2}{r^3-a_2r^2-b_2r}F_0\\r^3=a_ir^2+b_1r+\frac {c_1c_2}{r^3-a_2r^2-b_2r}
+\frac FG
+6 \times 6
+F
+G
+F(s)=\sum\limits_{n\geqslant0}F_ns^n
+G(s)=\sum\limits_{n\geqslant0}G_ns^n
+n\geqslant3
+P_1(s)
+2
+P_2(s)
+2
+(F(s),G(s))
+F(s)
+G(s)
+2\times2
+D(s)
+F(s)
+G(s)
+r
+D(s)
+F_n
+G_n
+r^nF_n
+r^nG_n
+ F(s)=F_0+F_1s+F_2s^2+\sum_{n\geqslant3}(a_1F_{n-1}+b_1F_{n-2}+c_1G_{n-3})s^n, 
+ F(s)=F_0+F_1s+F_2s^2+a_1s(F(s)-F_0-F_1s)+b_1s^2(F(s)-F_0)+c_1s^3G(s), 
+ (1-a_1s-b_1s^2)F(s)-c_1s^3G(s)=P_1(s), 
+ -c_2s^3F(s)+(1-a_2s-b_2s^2)G(s)=P_2(s), 
+ D(s)=(1-a_1s-b_1s^2)(1-a_2s-b_2s^2)-c_1c_2s^6. 

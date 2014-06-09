@@ -1,0 +1,10 @@
+t=e^x
+z(t)=y(x)
+y''-y'+e^{2x}y = xe^{2x}-1
+\frac{dy}{dx} = \frac{dy}{dt} \frac{dt}{dx}
+\frac{dt}{dx} = \frac{1}{dx/dt} = \frac{1}{1/t} = t
+\frac{dy}{dx} = t \frac{dy}{dt}
+\frac{d^2 y}{dx^2} = \frac{d}{dx} \frac{dy}{dx} = t \frac{d}{dt} \left (t \frac{dy}{dt} \right ) = t^2 \frac{d^2 y}{dt^2} + t \frac{dy}{dt}
+ t^2 \frac{d^2 z}{dt^2} + t^2 z = t^2 \log{t} - 1
+z''+z=\log{t}-\frac{1}{t^2}
+z(t)=\log{t}

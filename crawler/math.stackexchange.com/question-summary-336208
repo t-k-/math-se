@@ -1,0 +1,52 @@
+\forall m,n\in\mathbb N
+m\geqslant 1
+n\geqslant 1
+\frac{(5m)! \cdot (5n)!}{m! \cdot n! \cdot (3m+n)! \cdot (3n+m)!}
+p
+\left\lfloor \frac{5m}{p^k}\right\rfloor+\left\lfloor \frac{5n}{p^k}\right\rfloor \geq \left\lfloor \frac{m}{p^k}\right\rfloor+\left\lfloor \frac{n}{p^k}\right\rfloor+\left\lfloor \frac{3m+n}{p^k}\right\rfloor+\left\lfloor \frac{3n+m}{p^k}\right\rfloor
+\left\lfloor \frac{5m}{p^k}\right\rfloor=\left\lfloor \frac{m}{p^k}\right\rfloor+\left\lfloor \frac{m}{p^k}+\frac{1}{5}\right\rfloor+\left\lfloor \frac{m}{p^k}+\frac{2}{5}\right\rfloor+\left\lfloor \frac{m}{p^k}+\frac{3}{5}\right\rfloor+\left\lfloor \frac{m}{p^k}+\frac{4}{5}\right\rfloor
+\sum_{i=1}^{4} \left\lfloor \frac{m}{p^k}+\frac{i}{5}\right\rfloor+\sum_{j=1}^{4}\left\lfloor \frac{n}{p^k}+\frac{j}{5}\right\rfloor \geq \left\lfloor \frac{3m+n}{p^k}\right\rfloor+\left\lfloor \frac{3n+m}{p^k}\right\rfloor
+\frac{m}{p^k}, \frac{n}{p^k}
+(0,\frac15), [\frac15, \frac25), [\frac25, \frac35), [\frac35, \frac45), [\frac45, 1),
+\lfloor x+n \rfloor=\lfloor x\rfloor+n,
+x
+n,
+\frac{m}{p^k}, \frac{n}{p^k}
+1.
+\frac{\binom{5m}{3m}(3m)!\binom{5n}{n}n!}{(3m+n)!} \frac {\binom{4n}{3n}(3n)!\binom{2m}{m}m!}{(3n+m)!}
+ m=n 
+ \binom{5m}{m} ^ 2
+m>n
+ \frac{(5m)! \cdot (5n)!}{m! \cdot n! \cdot (3m+n)! \cdot (3n+m)!} 
+ = \frac{(4m+(m-n)+n)! \cdot (4n-(m-n)+m)!}{m! \cdot n! \cdot (4m-(m-n))! \cdot (4n+(m-n))!} 
+ = \frac{(4m-(m-n)+n+2(m-n))! \cdot (4n+(m-n)+m-2(m-n))!}{n! \cdot (4m-(m-n))! \cdot m! \cdot (4n+(m-n))!} 
+ = \binom{4m-(m-n)+n}{n}\cdot\frac{(4m-(m-n)+n+2(m-n))!}{(4m-(m-n)+n)!} \cdot\binom{4n+(m-n)+m}{m}\cdot\frac{(4n+(m-n)+m-2(m-n))!}{(4n+(m-n)+m)!} 
+ = \binom{3m+2n}{n}\cdot\frac{(5m)!}{(3m+2n)!} \cdot\binom{3n+2m}{m}\cdot\frac{(5n)!}{(3n+2m)!} 
+ = \binom{3m+2n}{n} \cdot\frac{(5m)!}{(3m+2n)!} \cdot\frac{(5m-(3m+2n))!}{(5m-(3m+2n))!} \cdot\binom{3n+2m}{m} \cdot\frac{(5n)!}{(3n+2m)!} 
+\cdots 5n<3n+2m 
+ = \binom{3m+2n}{n} \cdot\binom{5m}{3m+2n} \cdot (5m-(3m+2n))! \cdot\binom{3n+2m}{m} \cdot\frac{(5n)!}{(3n+2m)!}  
+ = \binom{3m+2n}{n} \cdot\binom{5m}{3m+2n} \cdot\binom{3n+2m}{m} \cdot \frac{(2m-2n)! (5n)!}{(3n+2m)!}  
+ = \frac{\binom{3m+2n}{n} \cdot\binom{5m}{3m+2n} \cdot\binom{3n+2m}{m}} {\binom{3n+2m}{5n}} 
+ = \binom{3m+2n}{n} \cdot\frac{(5m)!}{(3n+2m)!} \cdot\frac{(5m-(3n+2m))!}{(5m-(3n+2m))!} \cdot\binom{3n+2m}{m} \cdot\frac{(5n)!}{(3m+2n)!} 
+\cdots 5n<3m+2n 
+ = \binom{3m+2n}{n} \cdot\binom{5m}{3n+2m} \cdot\binom{3n+2m}{m} \cdot\frac{(3m-3n)! (5n)!}{(3m+2n)!}  
+ = \frac{\binom{3m+2n}{n} \cdot\binom{5m}{3n+2m} \cdot\binom{3n+2m}{m}} {\binom{3m+2n}{5n}} 
+ \frac{(5m)! \cdot (5n)!}{m! \cdot n! \cdot (3m+n)! \cdot (3n+m)!} 
+ = \frac{(5m)!}{m!(4m)!}\cdot(4m)! \cdot \frac{(5n)!}{n!(4n)!}\cdot(4n)! \cdot \frac{1} {(3m+n)! \cdot (3n+m)!} 
+ = \frac{(5m)!}{m!(4m)!} \cdot \frac{(5n)!}{n!(4n)!} \cdot \frac{(4m)!\cdot(4n)!} {(4m-(m-n))! \cdot (4n+(m-n))!} 
+ = \frac{(5m)!}{m!(4m)!} \cdot \frac{(5n)!}{n!(4n)!} \cdot \frac{(4m)!} {(4m-(m-n))!(m-n)!} \cdot\frac{(m-n)!\cdot(4n)!} {(4n+(m-n))!} 
+ = \frac{\binom{5m}{m}\binom{5n}{n}\binom{4m}{m-n}}{\binom{4n+(m-n)}{m-n}} 
+ \dots \space\text{using} \space\binom{n}{r}\binom{n-r}{k}=\binom{n}{k}\binom{n-k}{r}
+ = \frac{\binom{5n}{n}\binom{5m}{m-n}\binom{5m-(m-n)}{m}}{\binom{4n+(m-n)}{m-n}} 
+ = \frac{\binom{5n}{n}\binom{4n}{k}\binom{5m}{m-n}\binom{5m-(m-n)}{m}}{\binom{4n}{k}\binom{4n+(m-n)}{m-n}} 
+ \dots \space\text{and again for some}\space k : \space 0\leq k\leq 4n 
+ = \frac{\binom{5n}{k}\binom{5n-k}{n}\binom{5m}{m-n}\binom{5m-(m-n)}{m}}{\binom{4n+(m-n)-k}{m-n}\binom{4n+(m-n)}{k}} 
+ \dots \space\text{try}\space k=2n 
+ = \frac{\binom{5n}{2n}\binom{3n}{n}\binom{5m}{m-n}\binom{5m-(m-n)}{m}}{\binom{2n+(m-n)}{2n}\binom{4n+(m-n)}{2n}} 
+ \frac{(m-n)!\cdot(4n)!} {(4n+(m-n))!} 
+= 1/\binom{4n+(m-n)}{m-n}
+ \frac{(m-n)!\cdot(4n)!} {(4n+(m-n))!} 
+ = \frac{(m-n)!^2(4n-(m-n))!\cdot(4n-(m-n)+(m-n))!} {(4n+(m-n))!(4n-(m-n))!(m-n)!} 
+ = \frac{(m-n)!^2(5n-m)!} {(3n+m)!} \cdot\binom{4n}{m-n} \dots \text{if } 5n>m 
+ 5n-m>3n+m 
+ n>m 

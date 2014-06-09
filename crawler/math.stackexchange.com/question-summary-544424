@@ -1,0 +1,19 @@
+\int_{-\infty}^{\infty}{{\rm d}x \over 1 + x^{2n}}
+2 \int_0^{\infty} \frac{dx}{1+x^{2 n}}
+\oint_C \frac{dz}{1+z^{2 n}}
+C
+[0,R]
+z=R e^{i \phi}
+\phi \in [0,\pi/n]
+z=e^{i \pi/n}t
+t \in [R,0]
+\int_0^R \frac{dx}{1+x^{2 n}} + i R \int_0^{\pi/n} d\phi \, \frac{e^{i \phi}}{1+R^{2 n} e^{i 2 n \phi}} + e^{i \pi/n} \int_R^0 \frac{dt}{1+t^{2 n} e^{i 2 \pi n/n}}
+1/R^{2 n-1}
+R \to \infty
+\left (1-e^{i \pi/n} \right ) \int_0^{\infty} \frac{dx}{1+x^{2 n}} 
+i 2 \pi
+C
+z=e^{i \pi/(2 n)}
+\frac{1}{2 n e^{i (2 n-1) \pi/(2 n)}} = -\frac{1}{2 n} e^{i \pi/(2 n)} 
+\left (1-e^{i \pi/n} \right ) \int_0^{\infty} \frac{dx}{1+x^{2 n}}  = -i 2 \pi \frac{1}{2 n} e^{i \pi/(2 n)}
+\int_{-\infty}^{\infty} \frac{dx}{1+x^{2 n}} = \frac{\pi/n}{\sin{[\pi/(2 n)]}}

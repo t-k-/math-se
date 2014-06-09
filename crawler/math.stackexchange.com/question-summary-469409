@@ -1,0 +1,16 @@
+S
+x^2+y^2=1 ; 0 \le z \le 2;
+\iint\limits_S F\cdot dS;F(x,y,z)=xy^2i+x^2yj+zk;
+B
+T
+\iint\limits_{S+B+T} F\cdot dS = \iiint\limits_V \nabla F dV=\iint\limits_{x^2+y^2\le1}\int_0^2(y^2+x^2+1) dzdxdy=[polar]=...=3\pi
+B
+T
+\iint\limits_B F\cdot dS=\iint\limits_{x^2+y^2\le1}F(x,y,0)\cdot (0,0,-1)dxdy= 0
+\iint\limits_T F\cdot dS=\iint\limits_{x^2+y^2\le1}F(x,y,2)\cdot (0,0,1)dxdy= 2\pi
+\int\limits_CF\cdot dS=\iint\limits_S \nabla F\cdot NdS
+ \smallint_S \vec{F} \cdot d \vec{S} + \smallint_B \vec{F} \cdot d \vec{S} + \smallint_T \vec{F} \cdot d \vec{S} = \smallint_{S+B+T} \vec{F} \cdot d \vec{S} = \smallint_V \vec{\nabla} \cdot \vec{F} dV
+ \smallint_S \vec{F} \cdot d \vec{S} = \smallint_V \vec{\nabla} \cdot \vec{F} dV - \smallint_B \vec{F} \cdot d \vec{S} - \smallint_T \vec{F} \cdot d \vec{S}
+\begin{align} \text{Stokes theorem: }\oint_C\vec{F}\cdot{d}\vec{r}&=\iint_S(\nabla\times\vec{F})\cdot{d}\vec{S}\\ \\ \\ \text{Gauss's divergence theorem:}\iint_S\vec{F}\cdot{d}\vec{S}&=\iiint_V(\nabla\cdot\vec{F})\,dV \end{align}
+\langle0,0,1\rangle
+\langle0,0,-1\rangle

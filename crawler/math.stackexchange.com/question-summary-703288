@@ -1,0 +1,6 @@
+\sum_{n=1}^\infty\left(e-\sum_{k=0}^n\frac1{k!}\right)=1
+\sum_{k=0}^n\frac1{k!} = \frac{e\Gamma (n+1,1)}{\Gamma(n+1)}
+e - \sum_{k=0}^n \frac{1}{k!} = \sum_{k=n+1}^\infty \frac{1}{k!},
+\begin{align*} \sum_{n=1}^\infty \sum_{k=n+1}^\infty \frac{1}{k!} &= \sum_{k=2}^\infty \sum_{n=2}^k \frac{1}{k!} \\ &= \sum_{k=2}^\infty \frac{1}{(k-2)!k} \\ &= \sum_{k=2}^\infty \frac{1}{(k-1)!} - \frac{1}{k!} = 1. \end{align*}.
+ \sum_{n=1}^\infty\left(e-\sum_{k=0}^n\frac1{k!}\right) =\sum_{n=1}^\infty \int_0^1 \exp(u) \frac{(1-u)^{n}}{n!} du 
+ \sum_{n=1}^\infty\left(e-\sum_{k=0}^n\frac1{k!}\right)= \int_0^1 \exp(u) \sum_{n=1}^\infty \frac{(1-u)^{n}}{n!} du \\=  \int_0^1 \exp(u)(\exp(1-u) - 1) du = e - \int^1_0 \exp u du = 1 

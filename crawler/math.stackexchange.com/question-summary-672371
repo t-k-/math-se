@@ -1,0 +1,33 @@
+\Gamma
+\mathcal C^1
+\Gamma(x)=\int_0^\infty t^{x-1}\, e^{-t}dt\, . 
+\Gamma(x)=\lim_{n\to\infty}\int_{\frac1n}^nt^{x-1}\, e^{-t}dt:=\lim_{n\to\infty} \Gamma_n(x)\, . 
+\Gamma_n
+\mathcal C^1
+\Gamma'_n(x)=\int_{\frac1n}^n\log(t)\, t^{x-1}\, e^{-t}dt\, . 
+\Gamma=\lim \Gamma_n
+\mathcal C^1
+(\Gamma_n'(x))
+g:(0,\infty)\to\mathbb R
+[a,b]\subset (0,\infty)
+[a,b]\subset (0,\infty)
+n\in\mathbb N
+x\in[a,b]
+0<\varepsilon< \frac1n
+X>n
+g(x)
+t\leq 1
+t\in(0,\frac1n]
+x\geq a
+\left\vert\int_\varepsilon^{\frac1n} \log(t)\, t^{x-1}e^{-t}dt\right\vert\leq \int_0^{\frac1n} \vert\log(t)\vert\, t^{x-1}e^{-t}dt\, ,
+\left\vert\int_\varepsilon^{\frac1n} \log(t)\, t^{x-1}e^{-t}dt\right\vert\leq \int_0^{\frac1n} \vert\log(t)\vert\, t^{a-1}e^{-t}dt\, .
+x\in[a,b]
+0
+n\to\infty
+g(x)
+\Gamma'_n(x)
+g(x)
+[a,b]\subset (0,\infty)
+\Gamma
+\mathcal C^1
+\vert \Gamma'_n(x)-g(x)\vert\leq \int_0^{\frac1n} \vert\log(t)\vert\, t^{a-1}e^{-t}dt+\int_n^\infty \vert\log(t)\vert\, t^{b-1}e^{-t}dt\, .  

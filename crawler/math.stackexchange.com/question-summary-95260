@@ -1,0 +1,25 @@
+F\colon L^2([0,1]) \to {\mathbb R}
+F
+F(R) \leq \liminf_{n\to\infty}F(R_n)
+R_n
+L^2
+R
+ F(R) = \int_0^1 \int_0^1 R(t) R(t') \exp\left(-|t-t'| - \left|\int_t^{t'} R(s)\,ds\right|\right) \,dt\,dt'.
+\epsilon>0
+m
+C\sqrt{1/m}<\epsilon/4
+N
+\left|\int_{i/m}^{j/m} R_n\right|<\epsilon/2
+n\ge N
+i,j\in\{0,\dots,m\}
+t,t'\in [0,1]
+i,j
+|t-i/m|<1/m
+|t'-j/m|<1/m
+n\ge N
+\left|\int_t^{t'} R_n\right|\le \left|\int_{i/m}^{j/m} R_n\right|+2C\sqrt{1/m}<\epsilon
+\Phi(t,t')=\exp\left(-|t-t'| -\left|\int_t^{t'}R(s)\,ds\right|\right)
+R_n(t)R_n(t')
+L^1([0,1]^2)
+\int_0^1\int_0^1 R_n(t)R_n(t')\Phi(t,t')\,dt\,dt'
+ F(R_n)-\int_0^1\int_0^1 R_n(t)R_n(t')\Phi(t,t')\,dt\,dt' \to 0 

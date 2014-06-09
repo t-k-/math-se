@@ -1,0 +1,14 @@
+\int_{0}^{t} A(t-\tau) \mathrm{d}x(\tau)
+A \star \mathrm{d}x
+A \star  \mathrm{d}x \star \mathrm{d}x 
+ \int_{0}^{t} \int_{0} ^{t-\tau} A(t-\tau-s) \mathrm{d}x(s) \mathrm{d}x(\tau)
+t-\tau = w
+\dot x\ast \dot x 
+dx\star dx
+A\star dx\star dx = A\ast \dot x \ast \dot x = A\ast (\dot x \ast \dot x)
+\int_0^t A(t-u) \int_0^u \dot x(u-s)\dot x(s)\,ds\,du.
+\int_0^t A(t-u) \int_0^u \dot x(u-s)\,dx(s)\,du.
+x^t(w)=x(t-w)
+t-\tau=w
+dx^t(w)=-dx(t-w)
+\int_0^t \int_0^{t-\tau} A(t-\tau-s)\,dx(s)\,dx(\tau)=\int_0^t \int_0^{w} A(w-s)\,dx(s)\,dx^t(w)

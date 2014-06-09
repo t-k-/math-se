@@ -1,0 +1,41 @@
+G
+[0,1]
+P
+n
+f:R^{n+1} \to R
+F(a) = \int_0^1  (G(x) - P_a(x))^2\,dx
+P_a(x) = a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0
+a = (a_0,a_1,\ldots,a_n)
+a_*
+Ma_* = B
+B
+R^{n+1}
+M
+R^{(n+1)\times(n+1)}
+P_{a+tb}=P_a+tP_b
+F(a+tb)\geqslant F(a)
+t
+0
+P_b(x)=x^k
+0\leqslant k\leqslant n
+M
+B
+ F(a+tb)=F(a)-2t\int_0^1 (G-P_a)P_b+t^2\int_0^1 P_b^2. 
+ \int_0^1 (G-P_a)P_b=0. 
+ \sum_{i=0}^na_i\int_0^1 x^{i+k}\mathrm dx=\int_0^1 G(x)x^{k}\mathrm dx. 
+ (G(x)-P_a(x))^2 = G(x)^2 + 2\sum_{0 \leq i < j \leq n}a_ia_jx^{i+j} + \sum_{i=0}^n(a_ix^i)^2 - 2G(x)\sum_{i=0}^na_ix^i. 
+ F(a) = F(0) + 2\sum_{i<j}\frac{a_ia_j}{i+j+1} + \sum_{i=0}^n \frac{a_i^2}{2i+1} - 2\sum_{n=0}^\infty a_i\int_0^1x^iG(x)dx. 
+\mathscr{C}^\infty
+\nabla F(a)=0
+ \sum_{j\neq i}\frac{a_j}{i+j+1} + \frac{a_i}{2i+1} - \int_0^1 x^iG(x)dx = 0,\qquad0 \leq i \leq n. 
+a_*
+\nabla_a F(a_*)=0
+\frac{\partial F}{\partial a_i}(a_*)=0,~\forall i=0,\ldots,n
+F
+a_i
+M
+a
+B
+M
+M
+M_{i,k}=\int_0^1 x^{i+k}dx

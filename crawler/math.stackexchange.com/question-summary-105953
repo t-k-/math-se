@@ -1,0 +1,17 @@
+\displaystyle\int^{\infty}_{-\infty} e^{-\tau}u(\tau)(1 + \frac{1}{2}\cos(400\pi t - 400\pi\tau))dτ
+u(t)
+1
+t>0
+1/2
+t=0
+0
+t<0
+t
+\tau
+\tau
+\displaystyle\int_0^{\infty} e^{-\tau}\left(1 + \frac{1}{2}\cos\left(400\pi (t-\tau)\right)\right)d\tau
+\displaystyle\int_0^{\infty} e^{-\tau} + \frac14 e^{i 400\pi (t -\tau)-\tau}+ \frac14 e^{-i 400\pi (t -\tau)-\tau}d\tau
+\displaystyle =\left[e^{-\tau} - \frac{e^{i 400\pi t -\tau(1+i400\pi)}}{4(1+i400\pi)}- \frac{e^{-i 400\pi t -\tau(1-i400\pi)}}{4(1-i400\pi)}\right]_0^{\infty}
+\displaystyle =1+\frac{e^{i 400\pi t}}{4(1+i400\pi)}+\frac{e^{-i 400\pi t}}{4(1-i400\pi)}
+\displaystyle =1+\frac{(1-i400\pi)e^{i 400\pi t}+ (1+i400\pi)e^{-i 400\pi t}}{4(1+(400\pi)^2)}
+\displaystyle =1+\frac{\cos(400\pi t) + 400\pi\sin(400\pi t)}{2(1+(400\pi)^2)}

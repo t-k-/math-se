@@ -1,0 +1,23 @@
+\int_{1}^{\infty} \left| \frac{\sin(x)}{x}\right|dx
+\ln
+\left.\frac{|\sin x|}{|x|}\right|_{[n, n+1]} \ge\frac1{n+1}|\sin(x)|\tag 1
+\int_{\alpha}^{\alpha +1}|\sin(x)| dx \ge \int_{-\frac12}^{\frac12} |\sin x| dx = 2\int_0^{\frac12} \sin x dx = 2(1-\cos(\frac12)) =: C > 0\tag 2
+\int_1^\infty \left|\frac{\sin x}x\right| dx =\sum_{n=1}^\infty \int_n^{n+1}\left|\frac{\sin x}x\right| dx \stackrel{(1)}\ge \sum_{n=1}^\infty \frac1{n+1} \int_n^{n+1} |\sin x| dx \stackrel{(2)}\ge C \sum_{n=2}^\infty \frac1n
+0 < x < \frac{\pi}{2}
+\sin x \ge \dfrac{2x}{\pi}
+[k\pi, (k + \frac12)\pi]
+k
+|\sin{x}| \ge \dfrac{2(x-k\pi)}{\pi}
+[k\pi, (k + \frac12)\pi]
+\dfrac{|\sin x|}{x} \ge \dfrac{2(x - k\pi)}{\pi x} \gt \dfrac{2(x-k\pi)}{(k+1)\pi} = f_k(x)
+f_k
+k
+\dfrac{\pi}2
+\dfrac{2((k+\dfrac12)\pi - k\pi)}{(k+1)\pi} = \dfrac{1}{k+1}
+\dfrac{\pi}{4(k+1)} = g_k
+f_k
+\dfrac{|\sin x|}{x}
+[0,\infty]
+\lim_{n \rightarrow \infty} \sum_{k=0}^{n} g_k
+O(\log n)
+\dfrac{|\sin x|}{x} \ge f_k(x)

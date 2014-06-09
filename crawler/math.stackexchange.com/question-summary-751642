@@ -1,0 +1,21 @@
+Ax=b
+b_1 = \begin{bmatrix}2\\0\\1 \end{bmatrix}
+b_2 = \begin{bmatrix}-1\\1\\-1 \end{bmatrix}
+ A =\begin{bmatrix}1 & -2 & 3\\ 2 & -4 & 5 \\ 1 & 1 & 2\end{bmatrix} 
+ L = \begin{bmatrix}1 & 0 & 0\\1 & 1 & 0\\ 2 & 0 & 1 \end{bmatrix}\\ U = \begin{bmatrix} 1 & -2 & 3\\ 0 & 3 & -1\\ 0 & 0 & -1\end{bmatrix}\\ P = \begin{bmatrix}1 & 0 & 0\\0 & 0 & 1\\0 & 1 & 0\\\end{bmatrix} 
+Ax=b_1
+x_1 = \begin{bmatrix}-8\\1\\4 \end{bmatrix}
+A = PLU
+Ax = b
+b_1
+b_2
+Ly = Pb, Ux = y
+Ly = \begin{bmatrix}1 & 0 & 0\\1 & 1 & 0\\ 2 & 0 & 1 \end{bmatrix}\begin{bmatrix}y_1\\y_2\\y_3 \end{bmatrix}=Pb = \begin{bmatrix}1 & 0 & 0\\0 & 0 & 1\\0 & 1 & 0\\\end{bmatrix}\begin{bmatrix}2\\0\\1 \end{bmatrix} = \begin{bmatrix}2\\1\\0 \end{bmatrix} \implies y = \begin{bmatrix}2\\-1\\-4 \end{bmatrix}
+Ux = y
+Ux = \begin{bmatrix} 1 & -2 & 3\\ 0 & 3 & -1\\ 0 & 0 & -1\end{bmatrix}\begin{bmatrix}x_1\\x_2\\x_3 \end{bmatrix}=y=\begin{bmatrix}2\\-1\\-4 \end{bmatrix} \implies \begin{bmatrix}x_1\\x_2\\x_3 \end{bmatrix} = \begin{bmatrix}-8\\1\\4 \end{bmatrix}
+b_2
+x_2 = \begin{bmatrix}6\\-1\\-3 \end{bmatrix}
+b_1
+b_2
+P
+ Lx = b\\ Ux = y 

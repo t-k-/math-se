@@ -1,0 +1,44 @@
+\int_{-\infty}^{\infty}erf(\lambda x)\mathcal{N}(\mu, \sigma ^2)dx
+\int_{-\infty}^{\infty}(erf(\lambda x)-const)^2\mathcal{N}(\mu, \sigma ^2)dx
+\mathcal{N}(\mu, \sigma ^2)=\frac{1}{\sigma\sqrt{2\pi}}{e}^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\int_{-\infty}^{\infty}\Phi(\lambda x)\mathcal{N}(\mu, \sigma ^2)dx
+\int_{-\infty}^{\infty}\Phi^2(\lambda x)\mathcal{N}(\mu, \sigma ^2)dx
+\int_{-\infty}^{\infty}\Phi(\lambda x)\mathcal{N}(\mu, \sigma ^2)dx =\Phi\left(\frac{\lambda \mu}{\sqrt{1+\lambda^2\sigma^2}}\right)
+erf(x)=2\Phi(\sqrt{2}x)-1
+\Phi(x)=\frac{1}{2}erf(\frac{x}{\sqrt{2}})+\frac{1}{2}
+\int_{-\infty}^{\infty}\Phi^2(\lambda x)\mathcal{N}(\mu, \sigma ^2)dx
+\frac{d}{dy} \int_a^b f(x,y)dx =\int_a^b  \frac{\partial}{\partial y} f(x,y)dx,
+f(x,y)
+\frac{\partial}{\partial y} f(x,y)
+g(x)
+h(x)
+y
+\int_a^b g(x)dx
+\int_a^b h(x)dx
+\sigma >0
+\lambda >0
+   F(\sigma,\mu) \triangleq \int_{-\infty}^{\infty} \Phi(\lambda x)\frac{1}{\sigma} {\cal N}\left(\frac{x-\mu}{\sigma}\right) dx = \int_{-\infty}^{\infty} \Phi( \lambda\sigma y+\lambda\mu) {\cal N}\left(y\right) dy .
+\cal N
+\Phi
+\mu
+\mu
+-\infty
+\tilde{\mu}
+\lim\limits_{\tilde{\mu}\to -\infty}F(\sigma, \tilde{\mu}) = 0
+  \frac{\partial}{\partial \mu} F(\sigma,\mu) = \int_{-\infty}^{\infty}  \lambda{\cal N}(\lambda\sigma y+\lambda\mu) {\cal N}\left(y\right) dy = \frac{\lambda}{\sqrt{1+\lambda^2\sigma^2}} {\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right). 
+ F(\sigma, \tilde{\mu}) = \Phi\left(\frac{ \lambda\tilde{\mu}}{\sqrt{1+\lambda^2\sigma^2}}\right),
+\int_{-\infty}^{\infty}  \exp(Ay) \Phi(By+C) {\cal N}_{d,e^2}\left(y\right) dy  =  \exp\left(Ad+0.5e^2A^2\right)\Phi\left(\frac{ABe^2+Bd+C}{\sqrt{1+B^2e^2}} \right),
+\int_{-\infty}^{x}  \exp(Ay) \Phi(By+C) {\cal N}_{d,e^2}\left(y\right) dy  =  \exp\left(Ad+0.5e^2A^2\right)\Phi_2\left(\frac{x-d}{e}-Ae,\frac{ABe^2+Bd+C}{\sqrt{1+B^2e^2}}; \frac{-Be}{\sqrt{1+B^2e^2}}\right),
+\Phi_2(\cdot,\cdot;\rho)
+\rho
+\int_{-\infty}^x \Phi(y) dy = x\Phi(x) +  {\cal N}(x), 
+ \Phi_2(x,y;\rho) =\frac{1}{2\pi\sqrt{1-\rho^2}}\int_{-\infty}^x \int_{-\infty}^y \mathrm e^{-.5\frac{u^2-2\rho uv+v^2}{1-\rho^2}}dudv.
+G\left(\sigma, \mu\right)\triangleq \int_{-\infty}^{\infty}  \Phi(\lambda\sigma y+\lambda\mu)^2 {\cal N}\left(y\right) dy.
+\frac{\partial}{\partial \mu} G(\sigma,\mu) = \int_{-\infty}^{\infty}  2\lambda \Phi(\lambda\sigma y+\lambda\mu) {\cal N}(\lambda\sigma y+\lambda\mu){\cal N}\left(y\right) dy 
+ = \int_{-\infty}^{\infty}  2\lambda \Phi(\lambda\sigma y+\lambda\mu){\cal N}\left(\sqrt{1+\lambda^2\sigma^2} y+\frac{\lambda^2\sigma\mu}{\sqrt{1+\lambda^2\sigma^2}}\right) {\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right)dy
+ = 2\lambda {\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right) \int_{-\infty}^{\infty}   \Phi(\lambda\sigma y+\lambda\mu){\cal N}\left(\sqrt{1+\lambda^2\sigma^2} y+\frac{\lambda^2\sigma\mu}{\sqrt{1+\lambda^2\sigma^2}}\right) dy 
+ =\frac{2\lambda}{\sqrt{1+\lambda^2\sigma^2} } {\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right) \int_{-\infty}^{\infty}   \Phi\left(\lambda\sigma \frac{z-\frac{\lambda^2\sigma\mu}{\sqrt{1+\lambda^2\sigma^2}}}{\sqrt{1+\lambda^2\sigma^2} }+\lambda\mu\right){\cal N}\left(z\right) dz 
+=\frac{2\lambda}{\sqrt{1+\lambda^2\sigma^2} } {\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right)\Phi\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\frac{1}{\sqrt{1+2\lambda^2\sigma^2}} \right). 
+G(\sigma, \tilde{\mu}) = \frac{2\lambda}{\sqrt{1+\lambda^2\sigma^2} } \int_{-\infty}^{\tilde{\mu}}{\cal N}\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\right)\Phi\left(\frac{\lambda\mu}{\sqrt{1+\lambda^2\sigma^2}}\frac{1}{\sqrt{1+2\lambda^2\sigma^2}} \right) d\mu
+ =2 \int_{-\infty}^{\frac{\lambda\tilde{\mu}}{\sqrt{1+\lambda^2\sigma^2}}}{\cal N}\left(z\right)\Phi\left(\frac{z}{\sqrt{1+2\lambda^2\sigma^2}} \right) dz 
+ = 2\Phi_2\left(\frac{\lambda\tilde{\mu}}{\sqrt{1+\lambda^2\sigma^2}},0; -\frac{1}{\sqrt{2+2\lambda^2\sigma^2}}\right). 

@@ -1,0 +1,11 @@
+\textbf{Question:}
+n
+a_1,a_2,\dots ,a_n\geq 1
+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_n)}{1+a_1a_2\cdots a_n}\leq 2^{n-1},
+\textbf{Attempted (Incorrect) Solution:}
+\dfrac{(1+a_1)}{(1+a_1)}=1=2^0=2^{1-1}
+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)}{1+a_1a_2\cdots a_k}\leq 2^{k-1}
+k
+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)}{1+a_1a_2\cdots a_ka_{k+1}}\leq\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)}{1+a_1a_2\cdots a_k}\leq 2^{k-1}
+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)(1+a_{k+1})}{1+a_1a_2\cdots a_ka_{k+1}}=\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)}{1+a_1a_2\cdots a_ka_{k+1}}+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)a_{k+1}}{1+a_1a_2\cdots a_ka_{k+1}}\leq 2^{k-1}+\dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)a_{k+1}}{1+a_1a_2\cdots a_ka_{k+1}}\leq 2^{k-1}+ \dfrac{(1+a_1)(1+a_2)\cdots(1+a_k)a_{k+1}}{a_1a_2\cdots a_ka_{k+1}}\leq 2^{k-1}+ \dfrac{2^k(a_1a_2\cdots a_k)a_{k+1}}{a_1a_2\cdots a_ka_{k+1}}=2^{k-1}+2^k=3\cdot2^{k-1}\not\leq 2^k.
+b_k = a_k a_{k+1} \ge 1, \quad c_k = a_k + a_{k+1}-1 \ge 1

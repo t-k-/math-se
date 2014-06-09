@@ -1,0 +1,75 @@
+ \int_{0}^{\frac{\pi}{2}}x^{2}\ln^{2}(2\cos(x))dx=\frac{11{{\pi}^{5}}}{1440} 
+ \cos(x)=\frac{e^{ix}+e^{-ix}}{2}, 
+ (x\ln(2\cos(x)))^{2}=\ln^{2}(2)x^{2}+2\ln(2)x^{2}\ln(\cos(x))+x^{2}\ln^{2}(\cos(x)) 
+(1)
+x = - e^{-2y}
+r = m+n
+s=n
+\frac{1}{s(r-s)} = \frac{1}{r}\left(\frac{1}{s}+ \frac{1}{r-s}\right)
+(3)
+(2)
+2
+H_r - H_{r-1} = 1/r
+(1)
+ \log{(1+x)} = \sum_{n = 1}^\infty \frac{(-1)^{n+1}x^n}{n} 
+ \begin{align} \frac{1}{8}\cdot\frac{\pi^4}{90} &= \int_0^\infty y \log^2(1 - e^{-2y})\,dy \\ & = \int_0^\infty y \left(\sum_{n = 1}^\infty \frac{e^{-2ny}}{n}\right)^2\,dy \\ & = \sum_{m = 1}^\infty\sum_{n = 1}^\infty\frac{1}{nm} \int_0^\infty y e^{-2(n + m)y}\,dy \\ & = \frac{1}{4}\sum_{m = 1}^\infty\sum_{n = 1}^\infty \frac{1}{nm(n+m)^2}. \tag{2} \end{align} 
+ \begin{align} \sum_{m = 1}^\infty\sum_{n = 1}^\infty \frac{1}{nm(n+m)^2} & = \sum_{r = 2}^\infty \frac{1}{r^2}\sum_{s = 1}^{r-1} \frac{1}{s(r-s)} = 2 \sum_{r=2}^\infty \frac{1}{r^3} \sum_{s=1}^{r-1}\frac{1}{s}, \tag{3} \end{align} 
+ \frac{1}{4} \cdot \frac{\pi^4}{90} = \sum_{r=2}^\infty \frac{1}{r^3} \sum_{s=1}^{r-1}\frac{1}{s} = \sum_{r=2}^\infty \frac{H_{r-1}}{r^3}. 
+ \frac{\pi^4}{90} = \sum_{r=1}^\infty \frac{1}{r^4} = \sum_{r = 1}^\infty \frac{H_r}{r^3} - \sum_{r=2}^\infty \frac{H_{r-1}}{r^3} = \sum_{r = 1}^\infty \frac{H_r}{r^3} - \frac{1}{4}\cdot\frac{\pi^4}{90}. 
+f(z) = z\log^3{(1+e^{2i z})}
+\pi^5/80
+e^{-v} = 1-e^{-2y}
+-(e^v - 1)^{-1}\,dv = dy
+\text{Re}\,s > 1
+(2)
+(1)
+ \begin{align} \int_{-\pi/2}^{\pi/2}x^2\log^2{(2\cos{x})}\,dx & = \int_{-\pi/2}^{\pi/2}x^4\,dx-\frac{\pi}{3}\int_0^\infty \log^3{(1-e^{-2y})}\,dy. \tag{1} \end{align} 
+ \begin{align} -\frac{\pi}{3}\int_0^\infty \log^3{(1-e^{-2y})}\,dy & = \frac{\pi}{6}\int_0^\infty\frac{v^3}{e^v - 1}\,dv = \pi\zeta(4). \tag{2} \end{align} 
+ \Gamma(s)\zeta(s) = \int_0^\infty \frac{v^{s-1}}{e^{v}-1}\,dv 
+\delta
+R
+f(z)
+R \to \infty
+0
+f(x+iR) \to 0
+-\pi/2 \leq x \leq \pi/2
+1+e^{2i z} = 1- e^{2i(z-\pi/2)}
+1+e^{2i z} = O(z-\pi/2)
+\log{(1+e^{2iz})} = O(\log{|z-\pi/2|})
+z \to \pi/2
+O(\delta^2\log^3{\delta})
+\delta \to 0
+x
+-\pi/2
+\pi/2
+2\cos{x}
+\arg{(2e^{ix}\cos{x})}
+-\pi
+\pi
+x
+\log{(2e^{ix}\cos{x})} = \log{(2\cos{x})}+ix
+(3)
+(4)
+(3)
+(4)
+(3)
+(1)
+ \begin{align} i\int_0^\infty f(iy+\pi/2)\,dy -i\int_0^\infty f(iy - \pi/2)\,dy = i\pi\int_0^\infty\log^3{(1-e^{-2y})}\,dy. \tag{3} \end{align} 
+ \int_{-\pi/2}^{\pi/2} f(x)\,dx = \int_{-\pi/2}^{\pi/2}x\left(\log{(2\cos{x})} + ix\right)^3\,dx. \tag{4} 
+g(z) = p(z) \log^m(1+e^{2iz})
+f(z)
+p(z)
+m \in \mathbb N
+p
+m
+(5)
+\zeta
+n\geq2
+(6)
+\log{(1-e^{-2y})}
+e^{-2y}
+(7)
+(2)
+ \begin{align} \int_{-\pi/2}^{\pi/2} p(x)&\left(\log{(2\cos{x})} + ix\right)^m\,dx \\ &= -i \int_0^\infty \left(p(iy + \pi/2)-p(iy - \pi/2)\right)\log^m{(1-e^{-2y})}\,dy. \tag{5} \end{align} 
+ \int_0^\infty y^n \log{(1-e^{-2y})}\,dy = -\frac{1}{2^{n+1}}\Gamma(n+1)\zeta(n+2) \tag{6} 
+ \int_0^\infty \log^m{(1-e^{-2y})}\,dy = \frac{(-1)^{m}}{2}\int_0^\infty \frac{y^m}{e^y - 1}\,dy = \frac{(-1)^m}{2}\Gamma(m+1)\zeta(m+1) \tag{7} 

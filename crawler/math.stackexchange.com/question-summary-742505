@@ -1,0 +1,30 @@
+A
+R
+R \subseteq A
+x \leq |A|
+\begin{equation*} \sum_{R \subseteq W \subseteq A : |W| = x} \Big( \sum_{Y \subseteq W} f(Y) \Big)  \end{equation*}
+f
+R
+\begin{equation*} \sum_{W \subseteq A : |W| = x} \Big( \sum_{Y \subseteq W} f \Big) = \sum_{Y \subseteq A : |Y| \leq x}\binom{|A| - |Y|}{x - |Y|}f(Y) \end{equation*}
+R
+\binom{|A| - |Y|}{x - |Y|}
+Y
+W
+W
+Y\subseteq W\subseteq A
+x-|Y|
+|A|-|Y|
+A
+W
+W
+R\subseteq W
+Y\subseteq W\subseteq A
+R\cap Y
+|R\setminus Y|
+Y
+x-|Y|-|R\setminus Y|
+|A|-|Y|-|R\setminus Y|
+A
+W
+|Y|+|R\setminus Y| = |Y\cup R|
+ \sum_{\substack{R \subseteq W \subseteq A \\|W| = x}} \Big( \sum_{Y \subseteq W} f(Y) \Big)   = \sum_{\substack{Y\subseteq A \\ |Y| \le x}} \binom{A-|Y\cup R|}{x-|Y\cup R|} f(Y). 

@@ -1,0 +1,48 @@
+c^2=a^2+b^2− 2ab \cos(\theta)
+\theta
+a
+b
+ a = 6\,\mathrm{km}\\ a' = 0 \quad \text{(duh)}\\ b = b'\cdot t = 4\cdot 6 = 24\\ b' = 4\,\mathrm{km}/\mathrm{min}\\ t' = 6min\\ c = \sqrt{a^2 + b^2} = \sqrt{36+24} = 2\sqrt{15} \approx 2.78316\\ c' = ? 
+2cc' = 2aa' + 2bb' - \frac{du}{dt}
+ u = 2ab\cos(\theta)
+\frac{du}{dt} = \frac{ds}{dt} \cdot \cos(\theta) - \sin(\theta)\cdot(2ab)
+\frac{ds}{dt} = 0\cdot ab + (a'b + b'a)
+\frac{du}{dt} = \left[ \left(0 \cdot ab + \left(a'b + b'a \right) \right) \right] \cdot \cos(\theta) - \sin(\theta) \cdot 2ab 
+2cc' = 2aa' + 2bb' - \left[ \left(0 \cdot ab + \left(a'b + b'a \right) \right) \right] \cdot \cos(\theta) - \sin(\theta) \cdot 2ab 
+2\left(2 \sqrt{15} \right)(c') = 2(6)(0) + 2(24)(4) - \left[ \left(0\cdot (6)(24) + \left((0)(24) +  (4)(6) \right) \right) \right] \cdot \cos(125^\circ) - \sin(125^\circ) \cdot 2(4)(24)
+c=c(t)
+t
+b
+\theta=125^\circ
+\phi=35^\circ
+6
+b=(6)(4)
+c^2=36+b^2-12b\cos \theta=36+b^2+12b\sin\phi,\tag{1}
+2c\frac{dc}{dt}=2b\frac{db}{dt}+12\sin\phi\frac{db}{dt}.\tag{2}
+c
+t=6
+b=24
+24\cos(35^\circ)
+(6+24\cdot\sin(35^\circ)) 
+\theta
+\theta
+35^\circ
+\theta=\tan^{-1}\frac{6+24\cdot\sin(35^\circ)}{24\cos(35^\circ)}
+35^\circ
+V_{los}=4\cdot\cos(\theta-35^\circ)
+c=\sqrt{a^2+b^2-2ab\cos\theta}\;,
+c=\sqrt{6^2+(4t)^2-2\cdot6\cdot4t\cdot\cos 125°}=\sqrt{36+16t^2-48t\cos125°}\;.
+t=6
+c\approx 27.87813
+c'\approx 3.93734
+2cc'=32t-48\cos125°\;,
+c'=\frac{16t-24\cos 125°}c\;.
+a
+\cos\theta
+x(t) = 4t \cos \theta
+y(t) = 6+4t \sin \theta
+d(t)^2 = x(t)^2 + y(t)^2 = 48\,t\,\sin\left( \theta\right) +16\,{t}^{2}+36
+d'(t) = \frac{48\,{\sin}\left( \theta\right) +32\,t}{2\,\sqrt{48\,t\,\mathrm{sin}\left( \theta\right) +16\,{t}^{2}+36}}
+t=6
+d'(6) = \frac{48\,\sin\left( \theta\right) +192}{2\,\sqrt{288\,\sin\left( \theta\right) +612}}
+d'(6) \approx 3.94

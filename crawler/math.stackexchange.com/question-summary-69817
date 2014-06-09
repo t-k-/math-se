@@ -1,0 +1,16 @@
+\{f_n\}\in L^2(\mathbb R)
+\{f_n\}\to 0
+C
+\|f_n\|_{L^2(\mathbb R)}<C
+n\in\mathbb N
+f_n\to0\quad\text{weakly in}\quad L^2(\mathbb R)?
+D > 0
+C_n := \{x \in \mathbf{R} : |f_n(x)g(x)| \leq D |g(x)|^2\}
+\int_{C_n} f_n g \, \text{d}\lambda \to 0.
+\complement C_n
+|g(x)|^2 \leq D^{-1} |f_n(x) g(x)|
+\int_{\complement C_n} |f_n g| \, \text{d}\lambda \leq \sqrt{\int_{\complement C_n} |f_n|^2 \, \text{d}\lambda}\sqrt{\int_{\complement C_n} |g|^2 \, \text{d}\lambda} \leq \frac{C}{\sqrt{D}} \sqrt{\int_{\complement C_n} |f_n g| \, \text{d}\lambda}.
+\int_{\complement C_n} |f_n| |g| \, \text{d}\lambda \leq \frac{C^2}{D}.
+\limsup_n \int_{\complement C_n} |f_n| |g| \, \text{d}\lambda \leq \frac{C^2}{D}.
+D
+\lim_n \int |f_n g| \to 0.

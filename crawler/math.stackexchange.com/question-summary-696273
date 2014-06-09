@@ -1,0 +1,10 @@
+ Evaluate \iint_{R}^{ } xy^2 
+x=y^2
+y=x^2
+\frac{3}{56}
+\int_{0}^{1}\int_{0}^{1}xy^2 dxdy
+\frac{1}{6}
+R = \{(x,y) \in \mathbb{R}^2, ~~0 \leqslant x \leqslant 1, ~x^2 \leqslant y \leqslant \sqrt{x}\}
+\iint_{R} x y^2 \,dxdy = \int_{x=0}^1 \left( \int_{y=x^2}^{\sqrt{x}} xy^2 \,dy\right) \,dx = \int_{x=0}^1 \left( x \left[{y^3 \over 3 }\right]_{y=x^2}^{y=\sqrt{x}}\right) \,dx
+\iint_{R} x y^2 \,dxdy = {1 \over 3}\int_{x=0}^1 \left( x^{5/2} - x^7 \right) \,dx = {1 \over 3} \left[{2 \over 7} x^{7/2} - {1 \over 8} x^8\right]_{x=0}^{x=1}
+\iint_{R} x y^2 \,dxdy = {1 \over 3} \left({2 \over 7} - {1 \over 8} \right) = {1 \over 3} \times {9 \over 56} = {3 \over 56}

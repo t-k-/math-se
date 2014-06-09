@@ -1,0 +1,5 @@
+f(k) - f(k-1) = 2(k-1).
+1\le k \le n
+\begin{align*} f(n)&=f(n-1)+2(n-1)\\ &=\Big(f(n-2)+2(n-2)\Big)+2(n-1)\\ &=f(n-2)+2(n-2)+2(n-1)\\ &=\Big(f(n-3)+2(n-3)\Big)+2(n-2)+2(n-1)\\ &=f(n-3)+2(n-3)+2(n-2)+2(n-1)\\ &\;\vdots\\ &=f(n-k)+2(n-k)+2(n-k+1)+\ldots+2(n-1)\\ &\;\vdots\\ &=f\big(n-(n-1)\big)+2\big(n-(n-1)\big)+\ldots+2(n-1)\\ &=f(1)+2(1)+2(2)+\ldots+2(n-1)\\ &=1+2\sum_{k=1}^{n-1}k\;. \end{align*}
+k
+n

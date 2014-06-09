@@ -1,0 +1,31 @@
+p.15
+(3.8)
+ns^{2}
+nth
+\sum_{i=1}^n(x_i-\hat x+\hat x-\bar x)^2=\sum_{i\ne j}(x_i-\hat x)^2+(x_j-\hat x)^2-n(\hat x-\bar x)^2\;.\tag{1}
+j
+\bar x
+x_1,\dots,x_n
+\hat x
+n-1
+x_i
+i\ne j
+\bar x=\frac1n\sum_{i=1}^nx_i\quad\text{and}\quad\hat x=\frac1{n-1}\sum_{i\ne j}x_i\;,
+(n-1)\hat x+x_j=n\bar x
+x_j-\bar x=(n-1)\bar x-(n-1)\hat x=(n-1)(\bar x-\hat x)\;,\tag{2}
+x_j-\hat x=n\bar x-n\hat x=n(\bar x-\hat x)\tag{3}\;.
+i=j
+(1)
+\begin{align*} \sum_{i=1}^n(x_i-\hat x+\hat x-\bar x)^2&=(x_j-\hat x+\hat x-\bar x)^2+\sum_{i\ne j}(x_i-\hat x+\hat x-\bar x)^2\\ &=(x_j-\bar x)^2+\sum_{i\ne j}(x_i-\hat x+\hat x-\bar x)^2\;. \end{align*}
+(x_i-\hat x+\hat x-\bar x)^2=(x_i-\hat x)^2+2(x_i-\hat x)(\hat x-\bar x)+(\hat x-\bar x)^2\;,
+\begin{align*} \sum_{i\ne j}(x_i-\hat x+\hat x-\bar x)^2&=\sum_{i\ne j}(x_i-\hat x)^2+2\sum_{i\ne j}(x_i-\hat x)(\hat x-\bar x)+\sum_{i\ne j}(\hat x-\bar x)^2\\ &=\sum_{i\ne j}(x_i-\hat x)^2+2(\hat x-\bar x)\sum_{i\ne j}(x_i-\hat x)+(n-1)(\hat x-\bar x)^2\\ &=\sum_{i\ne j}(x_i-\hat x)^2+(n-1)(\hat x-\bar x)^2\;, \end{align*}
+\sum_{i\ne j}(x_i-\hat x)=\sum_{i\ne j}x_i-(n-1)\hat x=0\;.
+\sum_{i=1}^n(x_i-\hat x+\hat x-\bar x)^2=(x_j-\bar x)^2+\sum_{i\ne j}(x_i-\hat x)^2+(n-1)(\hat x-\bar x)^2\;,
+(x_j-\bar x)^2+(n-1)(\hat x-\bar x)^2=(x_j-\hat x)^2-n(\hat x-\bar x)^2
+(2)
+(3)
+\begin{align*} (x_j-\bar x)^2+(n-1)(\hat x-\bar x)^2&=(n-1)^2(\bar x-\hat x)^2+(n-1)(\hat x-\bar x)^2\\ &=n(n-1)(\bar x-\hat x)^2\\ &=n^2(\bar x-\hat x)^2-n(\bar x-\hat x)^2\\ &=(x_j-\hat x)^2-n(\hat x-\bar x)^2\;. \end{align*}
+n(\bar{x}-\hat{x})
+ \begin{align} &\sum_{i=1}^n\left((x_i-\hat{x})+(\hat{x}-\bar{x})\right)^2\\ &=\sum_{i=1}^n\left(\color{#C00000}{(x_i-\hat{x})^2}+\color{#00A000}{2(x_i-\hat{x})(\hat{x}-\bar{x})}+\color{#0000FF}{(\hat{x}-\bar{x})^2}\right)\\ &=\sum_{\substack{i=1\\i\ne j}}^n\left(\color{#C00000}{(x_i-\hat{x})^2}\right)+\color{#C00000}{(x_j-\hat{x})^2}+\color{#00A000}{2n(\bar{x}-\hat{x})(\hat{x}-\bar{x})}+\color{#0000FF}{n(\hat{x}-\bar{x})^2}\\ &=\sum_{\substack{i=1\\i\ne j}}^n\left((x_i-\hat{x})^2\right)+(x_j-\hat{x})^2-n(\hat{x}-\bar{x})^2 \end{align} 
+ \sum_{i=1}^n(x_i-\hat{x})=x_j-\hat{x} 
+ \sum_{\substack{i=1\\i\ne j}}^n(x_i-\hat{x})=(n-1)(\hat{x}-\hat{x})=0 

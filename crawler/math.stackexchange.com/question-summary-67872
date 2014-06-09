@@ -1,0 +1,18 @@
+\alpha
+\sum_p \frac{1}{p (\log{p})^\alpha}\;?
+ 4.12 
+ 90 
+ 4.2 
+ 77 
+ n 
+ n 
+ f(n) := \dfrac{1}{\log^{\alpha} n} 
+ O(1) + O \left( \dfrac{1}{\log^{\alpha} x} \right) 
+ \alpha > 0 
+ \sum_{p \leq x} \frac{1}{p}. 
+E(x)=O \left(e^{-c\sqrt{\log x}}\right).
+S(x)=\sum_{p\leq x} \frac{1}{p}=\log \log x+B_1+E(x)
+\sum_{p\leq x} \frac{1}{p\log^\alpha p}=\int_2^x \frac{1}{\log^\alpha t}d(S(t))=\int_2^x \frac{1}{t\log^{\alpha+1} t}dt+\int_2^x \frac{1}{\log^\alpha t}d(E(t)).
+\alpha>0
+\int_2^x \frac{1}{t\log^{\alpha+1}t}dt
+\sum_{p} \frac{1}{p\log^\alpha p}\ \ \text{converges} \iff \ \int_2^\infty \frac{1}{t\log^{\alpha+1}t}dt\ \text{converges}.

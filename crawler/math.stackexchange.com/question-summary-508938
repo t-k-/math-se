@@ -1,0 +1,51 @@
+V
+\mathbb{F}
+X, Y
+V \mapsto V
+A
+B
+V
+[X]_{A,A}
+[Y]_{B,B}
+Z : V \rightarrow  V 
+Y = ZXZ^{-1}
+Y = ZXZ^{-1}
+Y = ZXZ^{-1}
+n \in \mathbb{N}
+V
+Rep_A, Rep_B:V \to \mathbb{F}^n
+\vec{v} \in V
+A=\langle \vec{\alpha}_1, \cdots, \vec{\alpha}_n\rangle
+B=\langle \vec{\beta}_1, \cdots, \vec{\beta}_n\rangle
+Rep_B{}(\vec{v})=\left( {\begin{array}{*{20}{c}}    {{c_1}}  \\     \vdots   \\    {{c_n}}  \\ \end{array}} \right)
+\vec{v}=c_1\vec{\beta}_1+\cdots +c_n\vec{\beta}_n
+A
+Rep_A, Rep_B
+[X]_{A,A}=[Y]_{B,B}
+Rep_A{(X(\vec{\alpha}_i))}=Rep_B{(Y(\vec{\beta}_i))}
+i \in \{ 1, \cdots, n \}
+X(\vec{\alpha}_i)=Rep_A^{-1}(Rep_B{(Y(\vec{\beta}_i))})
+i \in \{ 1, \cdots, n \}
+Z:V\to V
+Z(\vec{\alpha}_i)=\vec{\beta}_i
+Z^{-1}(\vec{\beta}_i)=\vec{\alpha}_i
+i \in \{ 1,\cdots, n\}
+Z
+Y=Z\circ X\circ Z^{-1}
+Y(\vec{v})=(Z\circ X\circ Z^{-1})(\vec{v})
+\vec{v} \in V
+\vec{v} \in V
+c_1,\cdots,c_n \in \mathbb{F}
+\vec{v}=c_1\vec{\beta}_1+\cdots +c_n\vec{\beta}_n
+\begin{align}Z(X(Z^{-1}(\vec{v})))&=Z(X(Z^{-1}(c_1\vec{\beta}_1+\cdots +c_n\vec{\beta}_n)))\\&=c_1Z(X(Z^{-1}(\vec{\beta}_1))) + \cdots + c_nZ(X(Z^{-1}(\vec{\beta}_n)))\end{align} \space \space (*)
+Z^{-1},X,Z
+i\in \{ 1, \cdots,n\}
+c_iZ(X(Z^{-1}(\vec{\beta}_i)))=c_iZ(Rep_A^{-1}(Rep_B{(Y(\vec{\beta}_i))}))
+d_1,\cdots,d_n \in \mathbb{F}
+Y(\vec{\beta}_i)=d_1\vec{\beta}_1+\cdots +d_n\vec{\beta}_n
+Y(\vec{\beta}_i)\in V
+Rep_B(Y(\vec{\beta}_i))=\left( {\begin{array}{*{20}{c}}    {{d_1}}  \\     \vdots   \\    {{d_n}}  \\ \end{array}} \right)
+\begin{align}c_iZ(X(Z^{-1}(\vec{\beta}_i)))&=c_iZ(Rep_A^{-1}(\left( {\begin{array}{*{20}{c}}    {{d_1}}  \\     \vdots   \\    {{d_n}}  \\ \end{array}} \right)))\\&=c_iZ(d_1\vec{\alpha}_1+\cdots + d_n\vec{\alpha}_n)\\&=c_i\left(d_1Z(\vec{\alpha}_1)+\cdots+d_nZ(\vec{\alpha}_n)\right)\\ &=c_i\left(d_1\vec{\beta}_1+\cdots+d_n\vec{\beta}_n\right)\\&=c_iY(\vec{\beta}_i)\end{align}
+Z
+\begin{align}Z(X(Z^{-1}(\vec{v})))&=c_1Z(X(Z^{-1}(\vec{\beta}_1))) + \cdots + c_nZ(X(Z^{-1}(\vec{\beta}_n)))\\ &=c_1Y(\vec{\beta}_1) + \cdots + c_nY(\vec{\beta}_n)\\ &=Y(c_1\vec{\beta}_1 + \cdots + c_n\vec{\beta}_n)\\ &=Y(\vec{v}),\end{align}
+Y=Z \circ X \circ Z^{-1}

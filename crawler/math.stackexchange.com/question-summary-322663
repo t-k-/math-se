@@ -1,0 +1,12 @@
+\int \frac {du}{(a-u^2)^2}; a
+u=\sqrt{a} \sin{x}
+du= \sqrt{a} \cos{x} dx
+\int \frac{du}{(a-u^2)^2} = a^{-3/2} \int dx \: \sec^3{x}
+\begin{align}\int dx \: \sec^3{x} &= \int d(\tan{x}) \sec{x}\\ &= \tan{x} \sec{x} - \int dx \: \sec{x} \tan^2{x}\\ &= \tan{x} \sec{x} + \int dx \: \sec{x} - \int dx \: \sec^3{x} \end{align}
+\begin{align}2\int dx \: \sec^3{x} &= \tan{x} \sec{x} + \int dx \: \sec{x}\end{align}
+ \frac{1}{(a-u^2)^2}=\frac{1}{((\sqrt{a}-u)(\sqrt{a}+u))^2}= \frac{1}{4a} \bigg(\frac{1}{(\sqrt{a}-u)^2}+\frac{1}{\sqrt{a}(\sqrt{a}-u)}+\frac{1}{(\sqrt{a}+u)^2}+\frac{1}{\sqrt{a}(\sqrt{a}+u)} \bigg) 
+u=\sqrt a \sin x
+\tan x =t
+u = \sqrt{a} \sin{x}
+ \begin{align} \int{\dfrac{du}{ (a - u^2)^2}} &= \int{\dfrac{\cos{x} dx}{ (a - a\sin^2{x})^2}} \\ &= \dfrac{1}{a^2}\int{\dfrac{\cos{x} dx}{ \cos^4{x}}} \\ &= \dfrac{1}{a^2}\int{\sec^3{x} dx} \\ &= \dfrac{1}{a^2} \cdot \left( \dfrac{1}{2} \sec{x} \tan{x} + \dfrac{1}{2} \ln{|\sec{x} + \tan{x} |}\right) + C \end{align} 
+x = \sin^{-1}{ \left(\dfrac{u}{\sqrt{a}} \right)} 

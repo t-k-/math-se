@@ -1,0 +1,11 @@
+\int \frac{1-r}{(1+r)^2} \ \mathrm{d}r
+\frac{(1-r)}{(1+r)^2} = \frac {A}{1+r} + \frac B{(1+r)^2}
+\frac{1-r}{(1+r)^2}=\frac{2}{(1+r)^2}-\frac{1}{(1+r)}
+u = 1 + r
+1 - r = 2 - u
+du = dr
+ \int \frac{1 - r}{(1 + r)^2} \; dr = \int \frac{2 - u}{u^2} \; du = \int \left( 2u^{-2} - u^{-1} \right) \; du. 
+\frac{1-r}{(1+r)^2}=\frac{2-(1+r)}{(1+r)^2}=\frac{2}{(1+r)^2}-\frac{1}{(1+r)}
+u=1+r
+\mathrm{d}u=\mathrm{d}r
+\begin{eqnarray*} \int \frac{1-r}{(1+r)^2} \ \mathrm{d}r &=& \int \frac{2-u}{u^2} \ \mathrm{d}u \\ \\ &=& \int \frac{2}{u^2} - \frac{1}{u} \ \mathrm{d}u \\ \\ &=& -\frac{2}{u}-\ln|u|+c \\ \\ &=& -\frac{2}{1+r}-\ln|1+r|+c\end{eqnarray*}

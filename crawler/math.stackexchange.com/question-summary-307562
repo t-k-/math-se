@@ -1,0 +1,15 @@
+D
+T:V \rightarrow V
+W
+V
+\begin{align*}TD(1)&=&0&=0\cdot 1+0\cdot x+0\cdot x^2+0\cdot x^3\\ TD(x)&=T(1)=&0&=0\cdot 1+0\cdot x+0\cdot x^2+0\cdot x^3\\ TD(x^2)&=T(2x)=&2x&=0\cdot 1+2\cdot x+0\cdot x^2+0\cdot x^3\\ TD(x^3)&=T(3x^2)=&6x^2&=0\cdot 1+0\cdot x+6\cdot x^2+0\cdot x^3\end{align*}
+\,TD\,
+A:=\begin{pmatrix}0&0&0&0\\0&0&2&0\\0&0&0&6\\0&0&0&0\end{pmatrix}\Longrightarrow p_A(t):=\det(tI-A)=\begin{vmatrix}t&0&0&0\\0&t&-2&0\\0&0&t&-6\\0&0&0&t\end{vmatrix}=t^4
+TD=p\mapsto xp''
+(1,x,x^2,x^3)
+i^\text{th}
+i^\text{th}
+e_1
+e_2
+0
+[TD]=\pmatrix{0&0&0&0\\0&0&2&0\\0&0&0&6\\0&0&0&0}

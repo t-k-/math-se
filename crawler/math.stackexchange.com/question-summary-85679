@@ -1,0 +1,110 @@
+A
+B
+a,b,n,k
+k \leq a,b
+A
+a
+B
+b
+n
+1,2,\ldots,n
+k
+a_1,\ldots,a_k
+A
+k
+b_1,\ldots,b_k
+B
+k
+A
+i \in \{1,2,\ldots,k\}
+a_i \leq b_i
+B
+i \in \{1,2,\ldots,k\}
+a_i > b_i
+B
+A
+a,b,n,k
+A
+B
+k
+a
+n
+b
+k
+6^3
+6\times6\times6
+(2,5,4)
+(4,6,6)
+\frac{1}{6^3}
+(1,1,1)
+7
+(1,1,1)
+S_1
+i =1\ldots6
+i
+S_i
+S_{i,j}
+j
+i
+S_{i,j}
+S_i
+S_{i,i}
+S_i
+j
+i
+S_{i,j}
+S_i
+S_i
+S_6
+S_{6,6}
+S_{6,3}
+S_i = \{(a,b,c)|\max\{a,b,c\}=i\}
+P(S_i)=\frac{i^3-(i-1)^3}{6^3}
+j
+i
+S_{i,j}
+6\times 6
+X
+0
+1
+2
+S_{i,i}
+i
+P=\frac{(i-1)^2}{6^2}
+\geq i
+P=\frac{(7-i)^2}{6^2}
+P=\frac{2(i-1)(7-i)}{6^2}
+S_{i,j}
+j<i
+i
+j
+P=\frac{(i-1)^2-(i-j)^2}{6^2}
+i
+j
+P=\frac{(7-j)^2-(i-j)^2}{6^2}
+P=\frac{2(j-1)(7-i)+(i-j)^2}{6^2}
+X
+C_A
+A
+\begin{align} E[C_A] = &\sum_{j=0}^{k-1} \sum_{i=1}^n \sum_{l=0}^j \sum_{m=0}^j \binom{b}{l} \binom{a}{m} \left( \left(1 - \frac{i}{n}\right)^l \left( \frac{i}{n}\right)^{b-l} - \left(1- \frac{i-1}{n}\right)^l \left(\frac{i-1}{n}\right)^{b-l} \right) \\ & \times \left(1 - \frac{i}{n}\right)^m \left(\frac{i}{n}\right)^{a-m}. \end{align} 
+X_{(j)}
+Y_{(j)}
+A
+B
+A
+X_{(a-j)} \leq Y_{(b-j)}
+0 \leq j \leq k-1
+I_j
+1
+X_{(a-j)} \leq Y_{(b-j)}
+0
+C_A = \sum_{j=0}^{k-1} I_j
+E[C_A] = \sum_{j=0}^{k-1} E[I_j] = \sum_{j=0}^{k-1} P(X_{(a-j)} \leq Y_{(b-j)}).
+\begin{align} E[C_A] = &\sum_{j=0}^{k-1} \sum_{i=1}^n \sum_{l=0}^j \sum_{m=0}^j \binom{b}{l} \binom{a}{m} \left( \left(1 - \frac{i}{n}\right)^l \left( \frac{i}{n}\right)^{b-l} - \left(1- \frac{i-1}{n}\right)^l \left(\frac{i-1}{n}\right)^{b-l} \right) \\ & \times \left(1 - \frac{i}{n}\right)^m \left(\frac{i}{n}\right)^{a-m}. \end{align} 
+0^0 = 1
+i = n
+i = n
+i
+\begin{align} E[C_A] = &\sum_{j=0}^{k-1} \Bigg(\sum_{i=1}^{n-1}  \sum_{l=0}^j \sum_{m=0}^j \binom{b}{l} \binom{a}{m} \left( \left(1 - \frac{i}{n}\right)^l \left( \frac{i}{n}\right)^{b-l} - \left(1- \frac{i-1}{n}\right)^l \left(\frac{i-1}{n}\right)^{b-l} \right) \\ & \times \left(1 - \frac{i}{n}\right)^m \left(\frac{i}{n}\right)^{a-m} + \left(1-\sum_{l=0}^j \binom{b}{l}\left(1-\frac{n-1}{n}\right)^l \left(\frac{n-1}{n}\right)^{b-l}\right) \Bigg). \end{align} 
+n = 6, a = 3, b = 2, k = 2
+\frac{2387}{2592} = \frac{7161}{6^5}

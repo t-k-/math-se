@@ -1,0 +1,29 @@
+R
+f:[a,b]\rightarrow \mathbb{R}
+R
+f
+g
+[a,b]
+R
+2^{|\mathbb{R}|}
+R/_\sim
+L^1
+L^1
+L^\infty
+R
+R/_\sim
+a=0,b=1
+f\in R,\varepsilon>0
+I(f,n,j),L(f,n)
+N
+U(f,N)-L(f,N)<\varepsilon/2
+j\le N
+q_j
+\varepsilon/2>S(f,N,j)-q_j>0
+g(x)=q_j
+x\in [(j-1)/N,j/N)
+g(1)=q_N
+S(f,n,j):=\sup_{x\in [(j-1)/n,j/n]}f(x)
+U(f,n):=1/n \cdot \sum_{j=1}^n S(f,n,j)
+ S(\lvert g-f\rvert,N,j)\le \varepsilon/2+S(f,N,j)-I(f,N,j)
+U(\lvert g-f\rvert,N)=1/N\cdot \sum_{j=1}^n S(\lvert g-f\rvert,N,j)\le\varepsilon/2+U(f,N)-L(f,N)<\varepsilon

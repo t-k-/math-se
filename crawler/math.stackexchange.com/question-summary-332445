@@ -1,0 +1,7 @@
+ G(x) = \sum_{n \ge 0} r^\binom{n}{2} x^n 
+0 < r < 1
+G(x) = 1 + xG(rx)
+ H(x) = \sum_{n\in\mathbb{Z}} r^\binom{n}{2} x = \prod_{m\ge1} (1-r^m)(1+r^{m-1} x)(1+r^m x^{-1}), 
+H(rx) = xH(x^{-1})
+\binom{-n}{2} = \binom{n+1}{2}
+\sum_{n<0} r^\binom{n}{2} x^n = xG(x^{-1})-x-1

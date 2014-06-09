@@ -1,0 +1,23 @@
+\log (n)=\lim_{s\to 1} \, \left(1-\frac{1}{n^{s-1}}\right) \zeta (s)
+{\Large \log (n)=\lim_{s\to 1+\frac{2 i \pi  k}{\log (n)}} \, \left(1-\frac{1}{n^{s-1}}\right) \zeta (s-i \Im(s))}
+k
+k
+n
+n
+\log (n)
+s = \sigma + \frac{2i\pi k}{\log n} + it
+\begin{align} \frac{1}{n^{s-1}} &= \exp \left((1-s)\log n\right)\\ &= \exp \left(\left(1-\sigma - \frac{2i\pi k}{\log n} - it\right)\log n\right)\\ &= \exp \left((1-\sigma-it)\log n\right)\cdot e^{-2i\pi k}\\ &= e^{(1-\sigma-it)\log n}\\ &= 1 - (\sigma-1+it)\log n + O\left((\sigma-1+it)^2\right). \end{align}
+\zeta(s-i\Im s) = \zeta(\sigma) = \frac{1}{\sigma-1} + O(1),
+\begin{align} \left(1 - \frac{1}{n^{s-1}}\right)\zeta(s-i\Im s) &= \left((\sigma-1+it)\log n + O\left((\sigma-1+it)^2\right)\right)\left(\frac{1}{\sigma-1} + O(1)\right)\\ &= \log n + \frac{it\log n}{\sigma-1} + O\left(\frac{t^2}{\sigma-1}\right) + o(1), \end{align}
+\log n
+s
+1+ \frac{2i\pi k}{\log n}
+\lim \frac{t}{\sigma-1} = 0,
+t = c(\sigma-1)
+(1+ic)\log n
+t
+0
+\sigma-1
+0
+\log n
+n

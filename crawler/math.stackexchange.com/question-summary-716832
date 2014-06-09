@@ -1,0 +1,21 @@
+x'+a(t)x=f(t)
+a(t)\geq c>0
+f(t) \to 0 
+t \to +\infty
+0
+t \to +\infty
+ x(t) = C(t) \exp\left[ -A(t)\right] \\ A(t) = \int_0^t a(s) ds 
+ C'(t) = f(t) \exp\left[ A(t)\right]\\ C(t) = \int_0^t f(s) \exp\left[ A(s)\right]ds + C(0)\\ x(t) = \left[ \int_0^t f(s) \exp\left[ A(s)\right]ds + x(0)\right] \exp\left[ -A(t)\right] \\ =\int_0^t f(s)  \exp\left[ A(s) -A(t)\right]ds + x(0) \exp\left[ -A(t)\right] 
+a(t) \ge c
+t\ge s
+|f(t)|\to 0
+A
+x>A\implies |f(x)|<\frac {rc}2
+[0,A]
+f
+M
+t
+A(s) - A(t) = -\int_s^t a(s) ds \le -c(t-s) \\ |x(t)| \le \int_0^t |f(s)|  \exp\left[ A(s) -A(t)\right]ds + |x(0)| \exp\left[ -A(t)\right] \\ \le \int_0^t |f(s)|  \exp\left[ -c(t-s)\right]ds + |x(0)| \exp\left[ -ct\right] 
+ \int_0^t |f(s)|  \exp\left[-c(t-s)\right]ds \le M \int_0^A   \exp\left[-c(t-s)\right]ds + r\int_A^t  \exp\left[-c(t-s)\right]ds\\ \le \frac 1c\left[ \frac{rc}2(1 - \exp(-c(t-A)) + M(\exp(-c(t-A)) -\exp(-ct)) \right]\\ \le \frac r2 + \frac Mc\exp(ca) \exp(-ct) \le r 
+x(t)\to 0
+t\to\infty

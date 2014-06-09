@@ -1,0 +1,9 @@
+u(x,y,t)
+u(x,y,0)
+t \ge 0
+\frac{\partial u}{\partial t} = -(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}) - (\frac{\partial^4 u}{\partial x^4} + \frac{\partial^4 u}{\partial y^4}) - u \cdot (\frac{\partial u}{\partial x} + \frac{\partial u}{\partial y})
+\partial u / \partial t
+u(x,y,t+1) = u(x,y,t) + \ldots
+u(x,y,t+1) = u(x,y,t) - (u(x-1,y,t) + u(x+1,y,t) + u(x,y-1,t) + u(x,y+1,t) - 4u(x,y,t)) + \ldots
+u
+u(x,y,t)+u(x,y,t-1)+u(x,y,t-2)+\ldots

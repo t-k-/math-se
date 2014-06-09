@@ -1,0 +1,17 @@
+\lim_{n\to\infty}\int_0^n\left(1-\frac{x}{n}\right)^n\text{e}^{\frac{x}{2}}\text{d}x
+g(x) = e^{-x/2}
+\left(1 - \dfrac{x}n \right)^n \leq e^{-x}
+\left(1 - \dfrac{x}n \right)^n e^{x/2} \leq e^{-x/2}
+\lim_{n \to \infty}\left(1 - \dfrac{x}n \right)^n = e^{-x}
+f_n(x) = \begin{cases} \left(1 - \dfrac{x}{n} \right)^n e^{x/2} & x \in [0,n]\\ 0 & x > n\end{cases}
+\lim_{n \to \infty} \int_0^n f_n(x) dx = \lim_{n \to \infty} \int_0^{\infty} f_n(x) dx = \int_0^{\infty} \lim_{n \to \infty} f_n(x) dx = \int_0^{\infty} e^{-x/2} dx = 2
+x = o(n)
+n
+ n \log\left(1-\frac{x}{n}\right) = -\sum_{k=1}^{\infty} \frac{x^k}{k n^{k-1}} \geq - x - \frac{x^2}{n}, 
+ \left(1-\frac{x}{n}\right)^n \geq e^{-x-x^2/n}. 
+ \begin{align*} \int_0^n \left(1-\frac{x}{n}\right)^n e^{x/2} \,dx &\geq \int_0^{n^{1/4}} \left(1-\frac{x}{n}\right)^n e^{x/2}\,dx \\ &\geq \int_0^{n^{1/4}} e^{-x/2-x^2/n}\,dx \\ &\geq e^{-1/\sqrt{n}} \int_0^{n^{1/4}} e^{-x/2}\,dx. \end{align*} 
+n \to \infty
+ \int_0^\infty e^{-x/2}\,dx = 2 
+ \int_0^n \left(1-\frac{x}{n}\right)^n e^{x/2} \,dx \leq \int_0^\infty e^{-x/2}\,dx = 2, 
+ \int_0^n \left(1-\frac{x}{n}\right)^n e^{x/2}\,dx \longrightarrow 2 
+n \to \infty

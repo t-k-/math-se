@@ -1,0 +1,19 @@
+f: \mathbb{R} \rightarrow \mathbb{R}
+\int_{z_{min}}^{z_{max}} f(z) \mathrm{d}z
+ \int_{z_{min}}^{z_{max}} z f(z) \mathrm{d}z 
+ \int_{z_{min}}^{z_{max}} z f(z) \mathrm{d}z = z \int_{z_{min}}^{z_{max}} f(z) \mathrm{d}z - \int_{z_{min}}^{z_{max}} f(z) \mathrm{d}z, 
+f: \mathbb{R}^m \rightarrow \mathbb{R}
+\mathcal{Z}
+ \int_{\mathcal{Z}} z f(z) \mathrm{d}z, 
+z_{\rm min} = a
+z_{\rm max} = b
+F(z) = \int_a^z{f(y)\,dy}
+F^\prime(z) = f(z)
+z
+\int_a^z{y\,f(y)\,dy} = z\,F(z) - \int_a^z{F(y)\,dy}
+z = b
+\int_a^b{y\,f(y)\,dy} = b\,F(b) - \int_a^b{F(y)\,dy}\,.
+F
+\int_a^b{y\,f(y)\,dy} = b\,\int_a^b{f(y)\,dy} - \int_a^b{{\int_a^y{f(y^\prime)\,dy^\prime}}\,dy}\,.
+z
+\int_a^b{z\,f(z)\,dz} = b\,\int_a^b{f(z)\,dz} - \int_a^b{{\int_a^z{f(z^\prime)\,dz^\prime}}\,dz}\,.

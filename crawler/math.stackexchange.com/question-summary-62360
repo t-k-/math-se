@@ -1,0 +1,33 @@
+ \begin{multline} \begin{bmatrix} 2 &  1  & 0 &\ldots & 0\\ \Delta t_0  &  2(\Delta t_0 + \Delta t_1) & \Delta t_1 & \ldots & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots\\ 0 & \ldots & \Delta t_{n-2} & 2(\Delta t_{n-2} + \Delta t_{n-1}) & \Delta t_{n-1} \\ 0 & \ldots & 0 & 1 & 2  \end{bmatrix} \begin{bmatrix} y{\prime}_0 \\ y{\prime}_1\\ \vdots\\ y{\prime}_{n-1}\\ y{\prime}_n \end{bmatrix} = \\ \begin{bmatrix} \frac{3}{\Delta t_0}(y_1-y_0)\\ \frac{3}{\Delta t_0 \Delta t_1}[\Delta t_0^{2} (y_2-y_1) + \Delta t_1^{2} (y_1-y_0)] \\ \vdots \\ \frac{3}{\Delta t_{n-2} \Delta t_{n-1}}[\Delta t_{n-2}^{2} (y_n-y_{n-1}) + \Delta t_{n-1}^{2} (y_{n-1}-y_{n-2})] \\ \frac{3}{\Delta t_{n-1}}(y_n-y_{n-1}) \end{bmatrix} \end{multline} 
+(x_i,y_i)
+ \Delta t_i = x_{i+1}-x_i
+\begin{bmatrix} 1, & 0, & \ldots \end{bmatrix}
+\begin{bmatrix} 0, & \ldots, & 1\end{bmatrix}
+(x_i,x_{i+1})
+y_i+y_i^{\prime}\left(x-x_i\right)+c_i\left(x-x_i\right)^2+d_i\left(x-x_i\right)^3
+\begin{align*}c_i&=\frac{3s_i-2y_i^\prime-y_{i+1}^\prime}{x_{i+1}-x_i}\\ d_i&=\frac{y_i^\prime+y_{i+1}^\prime-2s_i}{\left(x_{i+1}-x_i\right)^2}\\ s_i&=\frac{y_{i+1}-y_i}{x_{i+1}-x_i}\end{align*}
+\{y_i^\prime,y_{i+1}^\prime\}
+(x_i,y_i)
+(x_{i+1},y_{i+1})
+(x_{i-1},x_i)
+x=x_i
+(x_i,x_{i+1})
+x=x_i
+h_i=x_{i+1}-x_i
+c_{i-1}-c_i+3d_{i-1}h_{i-1}=0
+c
+d
+h_i y_{i-1}^{\prime}+2(h_{i-1}+h_i)y_i^{\prime}+h_{i-1} y_{i+1}^{\prime}=3(h_i s_{i-1}+h_{i-1} s_i)
+h
+s
+x
+y
+y_i+\beta_i\left(x-x_i\right)+\frac{y_i^{\prime\prime}}{2}\left(x-x_i\right)^2+\delta_i\left(x-x_i\right)^3
+\begin{align*}\beta_i&=s_i-\frac{h_i(2y_i^{\prime\prime}+y_{i+1}^{\prime\prime})}{6}\\\delta_i&=\frac{y_{i+1}^{\prime\prime}-y_i^{\prime\prime}}{6h_i}\end{align*}
+h_{i-1} y_{i-1}^{\prime\prime}+2(h_{i-1}+h_i)y_i^{\prime\prime}+h_i y_{i+1}^{\prime\prime}=6(s_i-s_{i-1})
+y_1^{\prime\prime}=0
+(x_1,x_2)
+x_1
+c_1=0
+\frac{3s_1-2y_1^\prime-y_2^\prime}{x_2-x_1}=0
+2y_1^\prime+y_2^\prime=3s_1

@@ -1,0 +1,52 @@
+\alpha> 0
+\|\mathbf x\|^\alpha = (x^2 + y^2)^{\frac{\alpha}{2}}
+\mathbb R^2
+\Delta (\|\mathbf x\|^\alpha)
+\alpha \geq 2
+\Delta (\|\mathbf x\|^\alpha) = \alpha^2 \|\mathbf x\|^{\alpha -2}
+\|x\|^{\alpha}
+\mathbb R^2 \setminus \{0\}
+0
+\alpha>0
+\vec r=(x,y)
+r=\|\vec r\|
+f_\epsilon\in L^1_{loc}(\Bbb R^2)
+f_\epsilon\to r^\alpha
+L^1
+D'
+f_\epsilon = \begin{cases}r^\alpha,&r>\epsilon,\\\epsilon^\alpha,&r\le\epsilon. \end{cases}
+T_n\to T
+\Delta T_n\to \Delta T
+\Delta f_\epsilon
+\phi
+\langle\Delta f_\epsilon,\phi\rangle=\int_{\Bbb R^2}f_\epsilon\Delta\phi =\int_{r\le \epsilon} \epsilon^\alpha\Delta\phi +\int_{r>\epsilon}r^\alpha\Delta\phi
+ \epsilon^\alpha\int_{r\le \epsilon}\Delta\phi = \epsilon^\alpha \int_{r= \epsilon}\nabla \phi\cdot \frac{\vec r}{r}.
+ \int_{r>\epsilon}r^\alpha\Delta\phi =\int_{r>\epsilon}(\nabla\cdot (r^\alpha\nabla\phi)-\nabla r^\alpha\cdot\nabla\phi) 
+=\int_{r=\epsilon}    r^\alpha\nabla\phi\cdot\frac{-\vec r}{r}  -\int_{r>\epsilon} \nabla r^\alpha\cdot\nabla\phi = -\epsilon^\alpha \int_{r= \epsilon}\nabla \phi\cdot \frac{\vec r}{r} -\int_{r>\epsilon}( \nabla\cdot (\nabla r^\alpha\cdot \phi)-\Delta r^\alpha\phi )
+=-\epsilon^\alpha \int_{r= \epsilon}\nabla \phi\cdot \frac{\vec r}{r}+\int_{r= \epsilon}\nabla r^\alpha\cdot\frac{\vec r}{r} \phi +\int_{r>\epsilon} \Delta r^\alpha\phi  
+=-\epsilon^\alpha \int_{r= \epsilon}\nabla \phi\cdot \frac{\vec r}{r}+\int_{r= \epsilon}\alpha r^{\alpha-1} \phi +\int_{r>\epsilon} \alpha^2 r^{\alpha-2}\phi. 
+\langle\Delta f_\epsilon,\phi\rangle=\alpha \epsilon^{\alpha-1}\int_{r= \epsilon} \phi+\int_{r>\epsilon} \alpha^2 r^{\alpha-2}\phi.
+\epsilon\to0
+\phi(\vec r) = \phi(0)+\nabla\phi(0)\cdot \vec r +\mathcal O(\epsilon^2)
+\alpha \epsilon^{\alpha-1}\int_{r= \epsilon} \phi(\vec r) =\alpha \epsilon^{\alpha-1}\int_{r= \epsilon} (\phi(0)+\nabla\phi(0)\cdot \vec r +\mathcal O(\epsilon^2))
+ = \alpha  \epsilon^{\alpha-1}(2\pi\epsilon\phi(0)+0+\mathcal O(\epsilon^3))\to 0\quad \mbox{as }\epsilon\to0. 
+\alpha>0 
+ \alpha^2 r^{\alpha-2}\in L^1_{loc}(\Bbb R^2)
+(0,0)
+(0,0)
+K
+\int_K\alpha^2 r^{\alpha-2} 
+L^1_{loc}
+\int_{r\le 1} \alpha^2 r^{\alpha-2} dxdy = \int_{r=0}^{r=1}dr \int_0^{2\pi}d\theta \alpha^2 r^{\alpha-1} = 2\pi \alpha .  
+\int_{r>\epsilon} \alpha^2 r^{\alpha-2}\phi
+r^\alpha
+f_\epsilon
+f_\epsilon\to r^\alpha
+D'(\Bbb R^2)
+\Delta f_\epsilon
+\Delta r^\alpha
+\Delta f_\epsilon\to \Delta r^\alpha
+D'(\Bbb R^2)
+\alpha^2 r^{\alpha-2}\in L^1_{loc}
+\alpha>0
+\langle\Delta f_\epsilon,\phi\rangle=\alpha \epsilon^{\alpha-1}\int_{r= \epsilon} \phi+\int_{r>\epsilon} \alpha^2 r^{\alpha-2}\phi.

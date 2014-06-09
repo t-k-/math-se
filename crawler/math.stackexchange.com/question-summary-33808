@@ -1,0 +1,19 @@
+MSE(a, b) = a^H(Hbb^HH^H+R_n)a + 1 - a^HHb - b^HH^Ha
+a
+b
+a^H
+a
+ a^* = (Hbb^HH^H+R_n)^{-1}Hb = R_n^{-1}Hb\frac{1}{1+b^HH^HR_n^{-1}Hb}
+\frac{\partial MSE(a, b)}{\partial a} = \frac{\partial}{\partial a} \left[ a^H\left(Hbb^HH^H+R_n\right)a\right] + \frac{\partial}{\partial a} 1 - \frac{\partial}{\partial a} \left[a^HHb\right] - \frac{\partial}{\partial a} \left[b^HH^Ha\right]
+\frac{\partial MSE(a, b)}{\partial a} = (Hbb^HH^H+R_n)^Ha + (Hbb^HH^H+R_n)a - \frac{\partial}{\partial a} \left[a^HHb\right] - \frac{\partial}{\partial a} \left[b^HH^Ha\right]
+B=Hbb^TH^T+R_n
+B
+R_n
+B
+2Ba=2Hb
+A=a^TBa+1-a^THb-b^TH^Ta
+dA=da^TBa+a^TBda-da^THb-b^TH^Tda
+a^T(B^T+B)-2b^TH^T=0
+a^*=B^{-1}Hb=(Hbb^TH^T+R_n)^{-1}Hb
+(cc^T+R_n)^{-1}c=\frac{R_n^{-1}c}{c^TR_n^{-1}c+1}, c=Hb
+cc^TR_n^{-1}=c^TR_n^{-1}cI

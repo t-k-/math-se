@@ -1,0 +1,28 @@
+f(\textbf{x}, \Sigma, \boldsymbol \mu) = \frac{1}{\sqrt{(2\pi)^k |\Sigma|}}\exp\left( -\frac{1}{2}(\textbf{x}-\boldsymbol \mu)^T\Sigma^{-1}(\textbf{x}-\boldsymbol \mu)\right),
+\textbf{x} = (x_1, ..., x_n)
+\;\;x_i \in \mathbb R
+\;\;\boldsymbol \mu = (\mu_1, ..., \mu_n)
+\;\;\mu_i \in \mathbb R
+\Sigma
+n\times n
+\displaystyle \frac{\partial f}{\partial \Sigma}
+\displaystyle \frac{\partial f}{\partial \boldsymbol \mu}
+\displaystyle \frac{\partial f}{\partial \textbf{x}}
+Q(\theta|\theta_n)\equiv E_Z\{\log p(Z,X|\theta)|X,\theta_n\}
+f
+\frac{\partial f}{\partial \mu}
+\mu
+\sigma^2_{i,j}
+(i,j)
+\Sigma
+\mu_i
+i
+\mu
+\bigg[\frac{\partial f}{\partial \Sigma}\bigg]_{i,j} = \frac{\partial f}{\partial \sigma^2_{i,j}} \qquad \text{and}\qquad \bigg[\frac{\partial f}{\partial \mu}\bigg]_i = \frac{\partial f}{\partial \mu_i}
+\Delta\Sigma
+\|\Delta\Sigma\|
+\Delta\Sigma
+\frac{d}{dx}x^{-1} =-x^{-2}
+ f(x,\Sigma + \Delta\Sigma,\mu)-f(x,\Sigma,\mu)
+ (\Sigma+\Delta\Sigma)^{-1}=\Sigma^{-1}(I+(\Delta\Sigma) \Sigma^{-1})^{-1} =\Sigma^{-1}     \sum_{n=0}^{\infty}(-1)^{n}\{ (\Delta\Sigma)\Sigma^{-1}\}^{n} \approx \Sigma^{-1}(I-(\Delta\Sigma)\Sigma^{-1})
+  (\frac{d}{d\Sigma} \Sigma^{-1})\Delta\Sigma = -\Sigma^{-1}(\Delta\Sigma)\Sigma^{-1} 

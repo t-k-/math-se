@@ -1,0 +1,9 @@
+P_k(k) = \frac{1}{5}(\frac{4}{5})^K, k = 0, 1, 2, 3, ...
+\frac{P(win \ a \ prize ,\ k \ customers)}{P(K \ customers)} = \frac{1/k}{\frac{1}{5}(\frac{4}{5})^K}
+\sum_{k=0}^\infty \frac{1/k}{\frac{1}{5}(\frac{4}{5})^K}
+P(\text{win} | k \text{ customers}) = \frac{1}{k}
+k
+0 \leq x \leq 4/5
+\sum_{k=0}^{\infty} x^k = \frac{1}{1-x}
+ P(\text{win}) = \sum_{k=1}^{\infty} P(\text{win} | k \text{ customers}) P(k \text{ customers}) = \sum_{k=1}^{\infty} \frac{1}{k} \left(\frac{1}{5}\right) \left( \frac{4}{5} \right)^k. 
+ \sum_{k=1}^{\infty} \frac{1}{k} \left( \frac{4}{5} \right)^k = \sum_{k=1}^{\infty}\int_0^{4/5}x^{k-1}dx = \int_{0}^{4/5}\sum_{k=1}^{\infty}x^{k-1} = \int_0^{4/5} \sum_{k=0}^{\infty}x^k 

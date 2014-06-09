@@ -1,0 +1,13 @@
+N
+(t_1,t_2,t_3,t_4,...,t_N)
+t_i
+p_i
+q_i = (1-p_i)
+(t_1,t_2,...,t_10)
+(0.3,0.23,0.94,0.1,0.1,0.44,0.1,0.4955,0.64,0.0987)
+Y = X_1 + \ldots + X_n
+Y
+E[ z^Y] = \prod_{i=1}^n E[z^{X_i}] = \prod_{i=1}^n (q_i + p_i z) 
+Y_k = X_1 + \ldots + X_k
+0 \le j \le k
+P(Y_k = j) = q_k P(Y_{k-1} = j) + p_k P(Y_{k-1} = j-1)

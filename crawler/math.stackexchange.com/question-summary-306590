@@ -1,0 +1,17 @@
+|x|<1
+1+2x+3x^2+4x^3+\cdots= \frac{1}{(1-x)^2}
+\sum_{n=0}^\infty(n+1) x^n
+\int\left(\sum_{n=0}^\infty(n+1) x^n\right)dx = \sum_{n=0}^\infty\int (n+1)x^ndx = \sum_{n=0}^\infty x^{n+1} = \sum_{n=1}^\infty x^n = \frac x{1-x}
+\frac{x}{1-x}
+x
+\left(\frac x{1-x}\right)'=\frac1{1-x}+\frac{x}{(1-x)^2}=\frac1{(1-x)^2}
+|x|<1
+ 1+x+x^2+x^3 + \cdots = \frac{1}{1-x} 
+x
+1+x+x^2+x^3 + \cdots +x^k= \frac{1-x^{k+1}}{1-x}
+S_k=1+2x+3x^2+..+(k+1)x^k 
+T_k=1+x+x^2+..+x^k
+S_k-T_k=x+2x^2+3x^3+..+kx^k=xS_{k-1}=x(S_k-(k+1)x^k )
+S_k(x-1)=(k+1)x^{k+1}-T_k=(k+1)x^{k+1}-\frac{1-x^{k+1}}{1-x}
+S_k= \frac{1}{(1-x)^2}+\frac{(k+1)x^{k+1}}{x-1}-\frac{x^{k+1}}{(x-1)^2}
+\lim_k (k+1)x^{k+1}=\lim_k x^{k+1} =0 \, \forall |x|<1

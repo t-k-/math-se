@@ -1,0 +1,28 @@
+n
+\mu
+\sigma^2
+y_i \sim i.i.d \ N(\mu, \sigma^2)
+i = 1, 2, \cdots, n
+\boldsymbol{\theta} = (\mu, \sigma)'
+\mu
+\sigma
+\boldsymbol{\theta}
+p(\mu, \sigma) \propto \frac{1}{\sigma}
+\boldsymbol{\eta} = (\mu, \psi)'
+\psi = \ln(\sigma)
+\boldsymbol{\theta} = (\mu, \sigma)
+\boldsymbol{\eta} = (\mu, \psi)
+\psi = \ln(\sigma) \implies \exp(\psi) = \sigma
+p(\boldsymbol{\eta}|\mathbf{y}) \propto L(\boldsymbol{\eta}|\mathbf{y})p(\boldsymbol{\eta})
+p(\boldsymbol{\eta}|\mathbf{y}) \propto L(\boldsymbol{\theta}|\mathbf{y})p(\boldsymbol{\theta})\displaystyle{\left|\frac{\partial \boldsymbol{\theta}}{\partial \boldsymbol{\eta}'}\right|}
+p(\boldsymbol{\eta}|\mathbf{y}) \propto L(\boldsymbol{\eta}|\mathbf{y})p(\boldsymbol{\eta})
+\mu
+\psi
+p(\mu, \psi) = p(\mu)p(\psi)
+p(\mathbf{y}|\boldsymbol{\theta}) = L(\boldsymbol{\theta}|\mathbf{y}) = \left(2\pi\right)^{-\frac{n}{2}}\left(\sigma^2\right)^{-\frac{n}{2}}\exp\left[-\frac{1}{2\sigma^2}\sum_{i=1}^n (y_i - \mu)^2\right]
+L(\boldsymbol{\eta}|\mathbf{y}) = \left(2\pi\right)^{-\frac{n}{2}}\left(\exp(2\psi)\right)^{-\frac{n}{2}}\exp\left[-\frac{1}{2\exp(2\psi)}\sum_{i=1}^n (y_i - \mu)^2\right]
+l(\boldsymbol{\eta}|\mathbf{y}) = -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\left(2\psi\right) - \frac{1}{2\exp(2\psi)}\sum_{i=1}^n (y_i - \mu)^2
+\frac{\partial^2 l}{\partial \mu^2} = -\frac{n}{\exp(2\psi)}
+\frac{\partial^2 l}{\partial \psi^2} = -\frac{2}{\exp(2\psi)}\sum_{i=1}^n (y_i-\mu)^2
+p(\psi) \propto \left|-E\left[-\frac{2}{\exp(2\psi)}\sum_{i=1}^n (y_i-\mu)^2\right]\right|^{\frac{1}{2}} =\left(\frac{2}{\exp(2\psi)}E\left[\sum_{i=1}^n (y_i-\mu)^2\right]\right)^{\frac{1}{2}} = \left|\frac{2n\exp(2\psi)}{\exp(2\psi)} \right|^{\frac{1}{2}} \propto c
+p(\mu, \sigma) \propto \frac{1}{\sigma}

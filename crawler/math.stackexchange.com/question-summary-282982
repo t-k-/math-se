@@ -1,0 +1,11 @@
+\frac{x}{e^x-1}
+\int_0^\infty \frac{x}{e^x+1}dx
+\int_0^{\infty} \dfrac{x}{e^x+1} dx = \int_0^{\infty} \dfrac{x e^{-x}}{1+e^{-x}} dx = \int_0^{\infty} xe^{-x} \left(\sum_{k=0}^{\infty} (-1)^k e^{-kx} \right) dx
+\int_0^{\infty} xe^{-(m+1)x} dx = \dfrac1{(m+1)^2}
+\int_0^{\infty} xe^{-x} \left(\sum_{k=0}^{\infty} (-1)^k e^{-kx} \right) dx = \sum_{k=0}^{\infty} (-1)^k \left(\int_0^{\infty} x e^{-(k+1)x} dx \right) = \sum_{k=0}^{\infty} \dfrac{(-1)^k}{(k+1)^2} = \dfrac{\pi^2}{12}
+n
+\text{Real}(n) > 0
+\int_0^{\infty} \dfrac{x^n}{e^x+1} dx = \int_0^{\infty} \dfrac{x^n e^{-x}}{1+e^{-x}} dx = \int_0^{\infty} x^ne^{-x} \left(\sum_{k=0}^{\infty} (-1)^k e^{-kx} \right) dx
+\int_0^{\infty} x^ne^{-(m+1)x} dx = \dfrac{\Gamma(n+1)}{(m+1)^{n+1}} \,\,\,\,\,\,\, (\text{Follows from definition of }\Gamma(x) \text{ using change of variables})
+\boxed{\displaystyle \color{blue}{\int_0^{\infty} \dfrac{x^n}{e^x+1} dx = \eta(n+1) \Gamma(n+1)}}
+\boxed{\displaystyle \color{blue}{\int_0^{\infty} \dfrac{x^n}{e^x-1} dx = \zeta(n+1) \Gamma(n+1)}}

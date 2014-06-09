@@ -1,0 +1,75 @@
+\mathbb{R} \to \mathbb{R}
+|f'(x)|\le 0.49
+x \in \mathbb{R}
+f(x) =\frac{2x+\sin(x)}{2}
+\mathbb{R}
+g
+g(x)= f(x)-\frac{2x+\sin(x)}{2}
+ x = f(x)-\frac{1}{2}\sin(x)  \implies x_{n+1} = f(x_n)-\frac{1}{2}\sin(x_n),\quad n\in \mathbb{Z^{+}}. 
+ |x_{n+1} - x_n |=| f(x_n)-\frac{1}{2}\sin(x_n)-(f(x_{n-1})-\frac{1}{2}\sin(x_{n-1})) | 
+  \leq | f(x_n)-f(x_{n-1}) |+\frac{1}{2}| \sin(x_n)-\sin(x_{n-1}) | 
+ \leq |f'(\eta)|| x_n-x_{n-1} |+\frac{1}{2}| x_n-x_{n-1} |
+|x_{n+1}-x_{n}| \leq 0.49| x_n-x_{n-1} |+\frac{1}{2}| x_n-x_{n-1} | = 0.99|x_n-x_{n-1}|.
+a=f(0)
+\ell_1
+.49
+(0,a)
+\ell_2
+-.49
+(0,a)
+A
+B
+|f'(x)|\le.49
+f
+A
+B
+h(x)={2x+\sin x\over 2}
+h(n\pi)=n\pi
+n
+\ell_1
+\ell_2
+.49
+-.49
+n
+h(n\pi)>f(n\pi)
+m
+h(m\pi)<f(m\pi)
+h
+y=x
+B
+x
+A
+x
+g(n\pi)=f(n\pi)-h(n\pi)<0
+g(m\pi)>0
+g
+g
+g
+c
+g'(c)=0
+h'(x)\ge 1/2
+x
+|f'(x)|\le.49
+x
+g'(x)
+0
+g:\mathbb{R}\to \mathbb{R} 
+g(x)= f(x) - \frac{\sin(x)}{2}
+g
+x_n
+x_{n+1} = g(x_n)
+\exists
+c
+\in
+[x_n,x_n+1]
+x_n
+|g(x_n)-g(x_{n-1})|=|g'(c)|.|x_n-x_{n-1}|
+|x_{n+1}-x_n|\le0.99|x_n-x_{n-1}|
+n
+|x_{n+1}-x_n|\le0.99^{n-1}|x_2-x_1|
+x_1,x_2
+g(x_1)=x_1
+g(x_2)=x_2
+\frac{g(x_1)-g(x_2)}{x_1-x_2}=1
+f'(x)<0.49
+g'(x)<0.99

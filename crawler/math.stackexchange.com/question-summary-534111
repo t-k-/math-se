@@ -1,0 +1,10 @@
+u \in C(\Omega)
+z \in \Omega
+B_r(z) \subset \Omega
+u \in C^\infty
+u
+\Omega
+u(z) = \frac{1}{|\partial  B_r(z)|}\int_{\partial B_r(z)} u\,dS
+x_0 \in \Omega_{\epsilon}
+u_{\epsilon}(x_0) = \int_{B(x_0,\epsilon)}\rho_{\epsilon}(x - y)u(y)\ dy = \int_{B(0,\epsilon)}\rho_{\epsilon}(z)u(x_0 - z)\ dz = 
+ = \int_0^{\epsilon}r^{N - 1}\int_{\partial B(0,1)}\rho_{\epsilon}(rw)u(x_0 - rw)\ dS(w)dr = \int_0^{\epsilon}r^{N - 1}\rho(r)\int_{\partial B(0,1)}u(x_0 - rw)\ dS(w)dr = \int_0^{\epsilon}r^{N-1}\rho_{\epsilon}(r)\frac{\alpha_N N}{|\partial B(x_0,r)|}\int_{\partial B(x_0,r)}u(y)\ dS(y)dr = u(x_0)\|\rho\|_{L^1} = u(x_0).

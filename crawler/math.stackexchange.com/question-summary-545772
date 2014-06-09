@@ -1,0 +1,14 @@
+n=p^v
+p^{v-1}-v
+v
+v\geqslant\begin{cases}3 & p=2 \\ 2 & p > 2\end{cases}
+\phi(p^v)+v < p^v
+\begin{align}   \lambda(p^v) &\leqslant \phi(p^v) = p^v-p^{v-1} \stackrel{v\geqslant1}\leqslant p^v - v \end{align}
+\lambda(p^v)+v\leqslant\phi(p^v)+v\leqslant p^v.
+n=m\cdot p^v
+m\geqslant2
+p
+v_\max(m) := \max\limits_{p\mid m}v_p(m)
+\begin{align}   \lambda(n) &= \lambda(m\cdot p^v) \\ &\leqslant \phi(m\cdot p^v) = \overbrace{\phi(m)}^{< m}\overbrace{\phi(p^v)}^{\leqslant p^v - v} \\ &< m(p^v-v) = (mp^v) - \underbrace{\overbrace{m}^{\geqslant v_\max(m)}v}_{\geqslant vv_\max(m)\geqslant v_\max(n)} \\ &\leqslant n - v_\max(n) \end{align}
+n\neq4
+\phi(n) + v_\max(n) < n \quad n\in\mathbb N\backslash(\mathbb P\cup\{4\})

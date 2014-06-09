@@ -1,0 +1,6 @@
+\lim_{n\to \infty}\frac{\sqrt{n}^n \left(1 - \left(1 - \frac{1}{\sqrt{n}^n}\right)^{2^n} \right)}{2^n} = 1
+x=\sqrt n^n
+2^n=x^2\left(\frac2n\right)^n
+y=2^nn^{-\frac n2}\to0
+n\to\infty
+\displaystyle\begin{align}\lim_{n\to\infty}\frac{x\left(1-\left(1-\frac1x\right)^{x^2\left(\frac2n\right)^n}\right)}{x^2\left(\frac2n\right)^n}=&\lim_{n\to\infty}\frac{1-e^{-x\left(\frac2n\right)^n}}{x\left(\frac2n\right)^n} =\lim_{n\to\infty}\frac{1-e^{-y}}{y}\end{align}

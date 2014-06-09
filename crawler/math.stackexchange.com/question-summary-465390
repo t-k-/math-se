@@ -1,0 +1,71 @@
+\phi
+E[\phi(X)]=\int_{ \mathbb{R}}\phi(x) f_X(x)dx,
+X
+\phi
+F: \mathbb{R} \to \mathbb{R}
+F(x) = \mu(g \leq x)
+g
+F_-
+F
+\Lambda: C_c(\mathbb{R}) \to \mathbb{C}
+\Lambda(h)=\int_{\mathbb{R}} h dF_-
+F
+F \in BV
+\Lambda
+F_*
+\mathbb{R}
+F_-(b)-F_-(a) = F_*([a,b))
+a < b
+g
+F_* << m
+g
+f:= dF_*/dm.
+g
+F_-=F.
+E=\{(x,t): g(x) > t\} \subset X \times \mathbb{R}
+g
+g
+E
+\int_X \int_{\mathbb{R}} |\chi_E(x,t) \phi'(t)|dt d\mu(x) \leq \int_X ||\phi'||_{L^1(\mathbb{R})} d\mu < \infty.
+\int_{\mathbb{R}}\mu(g>t)\phi'(t)dt =\int_{\mathbb{R}}\int_X \chi_E(x,t)\phi'(t) d\mu(x) dt =\int_X \int_{\mathbb{R}} \chi_E(x,t) \phi'(t)dt d\mu(x) =
+\int_X \int_{-\infty}^{g(x)} \phi'(t) dt d\mu(x) .
+\phi' \in L^1(\mathbb{R})
+\int_X \phi(g(x))-\phi(-\infty) d\mu(x)= \int_X \phi \circ g d\mu.
+\int_{\mathbb{R}}\mu(g > t) \phi'(t)dt = \int_{\mathbb{R}}(1-F(t)) \phi'(t)dt = \int_{\mathbb{R}}\int_{t}^{\infty}f(x)\phi'(t)dx dt.
+\int_X\phi \circ g d\mu= \int_{\mathbb{R}}\int_{-\infty}^{x}f(x) \phi'(t) dt dx = \int_{\mathbb{R}} f(x)(\phi(x)-\phi(-\infty))dx=\int_{\mathbb{R}}\phi f dm.
+\phi
+\phi' \in L^1(\mathbb{R})
+X
+\mu_X(E) = \mathrm{Pr}(X \in E)
+\mu_X(E) = \int_E f_X(x) dx
+dx
+\phi(X)
+\mu_{\phi(X)}(E) = \mathrm{Pr}(\phi(X) \in E) = \int_{\phi(X)\in E} d\mu_X = \int_{\phi^{-1}(E)} d\mu_X
+\int_{\mathbb{R}} g(t) d\mu_{\phi(X)}(t) = \int_{\mathbb{R}} g(\phi(t)) d\mu_X(t)
+g(x)=x
+(X,\mathcal{M},\mu)
+g: X \to \mathbb{R}
+\phi: \mathbb{R} \to \mathbb{R}
+\phi \circ g \geq 0
+\phi \circ g \in L^1(\mu)
+\mu_g(E):=\mu(g^{-1}(E))
+E \subset \mathbb{R}
+\int_X \phi \circ g d\mu = \int_{\mathbb{R}}\phi d\mu_g
+\mu(X) < \infty
+\mu_g << m
+m=
+\int_X \phi \circ g d\mu = \int_{\mathbb{R}}\phi f dm
+f = d\mu_g /dm
+E
+\int_X \chi_E \circ g d\mu =\int_{g^{-1}(E)}1 d\mu = \mu_g(E)= \int_{\mathbb{R}}\chi_E d\mu_g.
+s = \sum a_i \chi_{E_i}, \int_X s \circ g d\mu= \sum a_i \int_{g^{-1}(E_i)}d\mu=\sum a_i \int_{E_i}d\mu_g=\int_{\mathbb{R}}sd\mu_g.
+\phi
+s_n
+\phi
+s_n \circ g
+\phi \circ g,
+\phi,
+ \phi \circ g \in L^1(\mu)
+\mu(X) < \infty
+\mu_g << m
+\int_X \phi \circ g d\mu = \int_{\mathbb{R}}\phi d\mu_g =\int_{\mathbb{R}}\phi f dm.

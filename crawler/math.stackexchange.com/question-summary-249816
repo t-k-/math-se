@@ -1,0 +1,6 @@
+\begin{align}    u(x,t)&=F(x+ct)+G(x-ct),\\    u(x,0)&=f(x),\\    u_t(x,0)&=g(x). \end{align}
+\begin{align}    F(x)&=\frac12f(x)+\frac1{2c}\int_{x_0}^xg(s)\,ds+C,\\    G(x)&=\frac12f(x)-\frac1{2c}\int_{x_0}^xg(s)\,ds+C\text{ ?} \end{align}
+ f(x) = F(x) + G(x), 
+ g(x) = c\,\Bigl(F'(x)-G'(x)\Bigr). 
+ \begin{align} u(x,0)&=F(x)+G(x)=f(x),\\ u_x(x,0)&=F'(x)+G'(x)=f'(x),\\\\ u_t(x,t)&=cF'(x+ct)-cG'(x-ct),\\ u_t(x,0)&=F'(x)-G'(x)=\frac{1}{c}g(x),\\\\ u_x(x,0)+u_t(x,0)&=2F'(x)=f'(x)+\frac{1}{c}g(x),\\ &\Longrightarrow F'(x)=\frac{1}{2}f'(x)+\frac{1}{2c}g(x),\\ \int_{x_0}^{x}F'(s)\,ds&=\frac{1}{2}\int_{x_0}^{x}f'(s)\,ds+\frac{1}{2c}\int_{x_0}^{x}g(s)\,ds,\\ F(x)&=\frac{1}{2}f(x)+\frac{1}{2c}\int_{x_0}^{x}g(s)\,ds+C. \end{align} 
+G(x)

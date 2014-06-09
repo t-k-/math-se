@@ -1,0 +1,93 @@
+\delta=\prod p^l
+k=\prod p^{\lambda}
+\sum_{\delta |k} \delta^{1-s}\mu(\frac{k}{\delta})\prod_{p|\delta}(l+1-lp^{-s})
+k^{1-s}\prod_{p|k}(\lambda+1-\lambda p^{-s})-\sum_{p|k} (\frac{k}{p})^{1-s}(\lambda-(\lambda-1)p^{-s})\prod_{p'|k, p'\neq p} (\lambda+1-\lambda (p')^{-s})+\sum_{pp'|k}(\frac{k}{pp'})^{1-s} (\lambda-(\lambda-1)p^{-s})(\lambda-(\lambda-1)(p')^{-s})\prod_{p'|k, p''\neq p,p'} (\lambda+1-\lambda(p'')^{-s})-...= k^{1-s}\prod_{p|k}((\lambda+1-\lambda p^{-s})-\frac{1}{p^{1-s}}(\lambda-(\lambda-1)p^{-s}))
+\frac{1}{p^{1-s}}(\lambda-(\lambda-1)p^{-s})
+\lambda
+p
+l
+p
+\delta
+l_\delta(p)
+\lambda(p)
+l
+\lambda
+\delta
+\mu(k/\delta)
+\mu(i)
+i
+i
+j
+\mu(i)
+(-1)^j
+i
+\mu(i)
+0
+k^{1-s} \prod_{p\mid k}\ldots
+\Sigma
+\Sigma_0
+\Sigma_1
+(*)
+i:=k/\delta
+\Xi
+j=0
+1
+2
+j
+0
+i=1
+\delta=k
+\Sigma
+\Sigma
+j=1
+i
+\delta=k/p
+p
+k
+\Xi
+\Sigma
+j=2
+i=p p'
+p
+p'
+k
+\delta=k/(p p')
+\Xi
+(*)
+\Xi=\Sigma
+\Xi:=\sum_{\delta \mid k} \delta^{1-s}\mu(\frac{k}{\delta})\prod_{p\mid \delta}(l_\delta(p)+1-l_\delta(p)p^{-s}),
+\Sigma=\Sigma_0+\Sigma_1+\Sigma_2+\cdots.\qquad (*)
+ \Sigma_0=\delta^{1-s}\mu(\frac{k}{\delta})\prod_{p\mid \delta}(l_\delta(p)+1-l_\delta(p)p^{-s})= k^{1-s}\prod_{p\mid k}(\lambda(p)+1-\lambda(p)p^{-s}). 
+ \Sigma_1=\sum_{p\mid k, \delta=k/p} \delta^{1-s}\mu(\frac{k}{\delta})\prod_{p\mid \delta}(l_\delta(p)+1-l_\delta(p)p^{-s})
+ =-\sum_{p\mid k} (\frac{k}{p})^{1-s} (\lambda(p)-(\lambda(p)-1)p^{-s}) \prod_{p'\mid k,\ p'\ne p}(\lambda(p')+1-\lambda(p')p'^{-s}). 
+ \Sigma_2=\sum_{p, p'\mid k,\ p\ne p'} (\frac{k}{p p' })^{1-s}  (\lambda(p)-(\lambda(p)-1)p^{-s}) (\lambda(p')-(\lambda(p')-1)p'^{-s})
+ \prod_{p''\mid k,\ p''\ne p,\ p''\ne p'}(\lambda(p'')+1-\lambda(p'')p''^{-s}). 
+\Sigma
+(**)
+j
+B_p
+\Sigma_j
+j=0
+k^{1-s} \prod_{p\mid k} A_p
+\Sigma_0
+j=1
+\Sigma_1
+\Sigma=\Pi
+\Pi= k^{1-s}\prod_{p\mid k}((\lambda(p)+1-\lambda(p) p^{-s})-\frac{1}{p^{1-s}}(\lambda(p)-(\lambda(p)-1)p^{-s})),
+\Pi=k^{1-s} \prod_{p\mid k} (A_p + B_p),\qquad (**)
+A_p=\lambda(p)+1-\lambda(p) p^{-s},\ \ \  B_p=-\frac{1}{p^{1-s}}(\lambda(p)-(\lambda(p)-1)p^{-s}).
+k^{1-s} \sum_{p\mid k} B_p \prod_{p'\mid k, \ p'\ne p} A_{p'},
+\Pi
+\delta':=k/\delta
+\delta'=\prod_{p\mid k} p^{l_{\delta'}(p)}
+G(\delta')
+G(1)=1
+G(\delta')
+\delta'
+(***)
+\Xi=\Pi
+ \Xi:=\sum_{\delta \mid k} \delta^{1-s}\mu(\frac{k}{\delta})\prod_{p\mid \delta}(l_\delta(p)+1-l_\delta(p)p^{-s}). 
+ \Xi=\sum_{\delta'\mid k} (\frac{k}{\delta'})^{1-s} \mu(\delta')  \prod_{p\mid k} (\lambda(p)-l_{\delta'}(p)+1-(\lambda(p)-l_{\delta'}(p))p^{-s}). 
+ \Xi=k^{1-s} \prod_{p\mid k} (\lambda(p)+1-\lambda(p) p^{-s}) \sum_{\delta'\mid k} G(\delta'),\qquad (***)
+G(\delta')= \frac{1}{\delta'^{1-s}} \mu(\delta')  \prod_{p\mid \delta'}\frac{\lambda(p)-l_{\delta'}(p)+1-(\lambda(p)-l_{\delta'}(p))p^{-s}}{\lambda(p)+1-\lambda(p) p^{-s}}. 
+ \sum_{\delta'\mid k} G(\delta')=\prod_{p\mid k} (1 + G(p)) =\prod_{p\mid k} (1 - \frac{1}{p^{1-s}}  \frac{\lambda(p)-(\lambda(p)-1)p^{-s}}{\lambda(p)+1-\lambda(p) p^{-s}}). 

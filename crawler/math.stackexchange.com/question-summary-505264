@@ -1,0 +1,27 @@
+n
+2k
+k
+n
+k
+k
+m
+2k
+m
+j
+K=k,m,n
+j \le k
+2j \le m
+2k \le n
+\Pr(J=j \text{ pairs and no singletons}| K=k,m,n) = {k \choose j}{n-2k \choose m-2j}\big/ {n \choose m}
+J=j
+K=j,m,n
+\Pr(J=j \text{ pairs and no singletons}| K=j,m,n) = {n-2j \choose m-2j}\big/ {n \choose m}.
+K
+\Pr(K=j| J=j \text{ pairs and no singletons}, m,n) = \frac{\displaystyle{n-2j \choose m-2j}}{\displaystyle\sum_{k=j}^{\lfloor n/2 \rfloor} {k \choose j}{n-2k \choose m-2j}}.
+j
+0
+m
+\Pr(K=J| \text{no singletons}, m,n) = \frac{\displaystyle \sum_{j=0}^{\lfloor m/2 \rfloor} {n-2j \choose m-2j}}{\displaystyle\sum_{j=0}^{\lfloor m/2 \rfloor}\displaystyle\sum_{k=j}^{\lfloor n/2 \rfloor} {k \choose j}{n-2k \choose m-2j}}.
+K
+{k \choose j}{n-2k \choose m-2j} \Pr(K=k) \big/ {n \choose m}\, , \, \, {n-2j \choose m-2j} \Pr(K=j) \big/ {n \choose m} \, ,
+\frac{\displaystyle  {n-2j \choose m-2j}\Pr (K=j)}{\displaystyle\sum_{k=j}^{\lfloor n/2 \rfloor} {k \choose j}{n-2k \choose m-2j}\Pr (K=k)} \text{ and }  \frac{\displaystyle \sum_{j=0}^{\lfloor m/2 \rfloor} {n-2j \choose m-2j}\Pr (K=j)}{\displaystyle\sum_{j=0}^{\lfloor m/2 \rfloor}\displaystyle\sum_{k=j}^{\lfloor n/2 \rfloor} {k \choose j}{n-2k \choose m-2j}\Pr (K=k)}

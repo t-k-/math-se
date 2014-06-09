@@ -1,0 +1,10 @@
+f:(E,M)\to(\bar {\mathbb R}, B(\bar{\mathbb R}))
+k\in \mathbb Z
+E_k=\{x\in E, f(x)>2^k\},
+F_k=\{x\in E, 2^k < f(x)\leq 2^{k+1}\}.
+f
+\sum_{k\in\mathbb{Z}} 2^{k+1}\mu(F_k).\tag{1}
+f
+(1)
+\sum_{k\in\mathbb{Z}} 2^k\mu(E_k) = \sum_{k\in\mathbb{Z}}2^k\mu\left(\bigcup_{m=k}^\infty F_m\right) = \sum_{k\in\mathbb{Z}}\sum_{m=k}^\infty 2^k\mu(F_m) = \sum_{m\in \mathbb{Z}}\sum_{k=-\infty}^m 2^k\mu(F_m) = \sum_{m\in\mathbb{Z}} 2^{m+1}\mu(F_m).
+F_m

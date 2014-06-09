@@ -1,0 +1,25 @@
+ f_1(x_{t+1},y_{t+1},x_{t},y_t) = g_1(x_{t+1},y_{t+1},x_{t},y_t),\\ f_2(x_{t+1},y_{t+1},x_{t},y_t) = g_2(x_{t+1},y_{t+1},x_{t},y_t), 
+x_{t+1}=x_t, \\ y_{t+1}=y_t,
+f_1,f_2,g_1,g_2
+\mathbb{R}^4
+\mathbb{R}
+w_{t}:=[x_t,y_t]^T
+h(w_{t+1},w_t):= \begin{bmatrix}f_1(x_{t+1},y_{t+1},x_t,y_t)-g_1(x_{t+1},y_{t+1},x_t,y_t)\\f_2(x_{t+1},y_{t+1},x_t,y_t)-g_2(x_{t+1},y_{t+1},x_t,y_t)\end{bmatrix}
+h(w_{t+1},w_t)=0
+(w_{t+1},w_t)
+w_t
+w_{t+1}
+h
+w_{t+1}=\phi(w_t)
+\phi:\mathbb{R}^2\rightarrow \mathbb{R}^2
+h(\phi(x),x)=0
+x\in\mathbb{R}^2
+w_{t+1}=\phi(w_t)
+\frac{\partial \phi}{\partial w_t}
+\phi
+h
+\bar{w}_t
+h'(\phi(w_t),w_t)=\frac{\partial h}{\partial \phi}(\phi(\bar{w}_t),\bar{w}_t)\frac{\partial \phi}{\partial w_t}(\phi(\bar{w}_t),\bar{w}_t)+\frac{\partial h}{\partial w_t}(\phi(\bar{w}_t),\bar{w}_t)=0
+\frac{\partial h}{\partial \phi}(\phi(\bar{w}_t),\bar{w}_t)
+\frac{\partial \phi}{\partial w_t}(\phi(\bar{w}_t),\bar{w}_t)=-\left(\frac{\partial h}{\partial \phi}(\phi(\bar{w}_t),\bar{w}_t)\right)^{-1}\frac{\partial h}{\partial w_t}(\phi(\bar{w}_t),\bar{w}_t).
+\phi

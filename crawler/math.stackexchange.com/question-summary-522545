@@ -1,0 +1,7 @@
+f(x)=2ae^{-ax}(1-e^{-ax})
+x>0, a>0
+P(X>1)
+P(X>1)=\int_1^{\infty}2ae^{-ax}(1-e^{-ax})dx = 2e^{-a}-e^{-2a}
+P(X>1)= 1-P(X\leq 1) = 1 - (F_X(1)) = 1-(e^{-ax}(e^{-ax}-2))|_{x=1}=1-2e^{-a}-e^{-2a}
+1- F_X(1) = 1- \int_0^{1}2ae^{-ax}(1-e^{-ax})dx 
+F_X(x) = \int_0^{x}2ae^{-az}(1-e^{-az})dz

@@ -1,0 +1,47 @@
+\int x^2+y^2+z^2 \, dV
+z^2=x^2+y^2
+x^2+y^2+z^2=z
+0
+2\pi
+\phi
+0
+\pi/4
+\rho
+\rho = \sqrt{z}
+\rho
+\rho
+ \ z-
+ \ \frac{1}{2} \ 
+ \ \frac{1}{2} \ 
+ \ \frac{1}{2} \ 
+ \ ( \ 0, 0, \frac{1}{2} \ ) \ 
+ \ x^2 \ + \ y^2 \ + \ z^2 \ 
+ \ z \ = \ \pm r \ 
+ \ \int_0^{2 \pi}  d\theta \ \ \int_0^{1/2} \int_{r}^{1/2} \ (r^2 \ + \ z^2) \ \ dz \ r \ dr \ 
+ = \ \ 2 \pi \ \int_0^{1/2}  \ \left( \ r^3  z \ + \ \frac{1}{3}rz^3 \ \right) \vert_{z=r}^{z=1/2} \ \ dr 
+ = \ \ 2 \pi \ \int_0^{1/2}  \ \left( \ \frac{1}{2}r^3 \ + \ \frac{1}{24}r \ - \ r^4 \ - \ \frac{1}{3}r^4 \ \right)  \ \ dr  
+ = \ \ 2 \pi \ \cdot   \ \left( \ \frac{1}{8}r^4 \ + \ \frac{1}{48}r^2 \  - \ \frac{4}{15}r^5 \ \right) \vert_{0}^{1/2} \ \ = \ \ 2 \pi \ \cdot   \ \left( \ \frac{1}{8} \cdot \frac{1}{16} \ + \ \frac{1}{48}\cdot \frac{1}{4} \  - \ \frac{4}{15} \cdot \frac{1}{32} \ \right)    
+ = \ \  \pi \ \cdot   \ \left( \  \frac{15 \ + \ 10 \ - \ 16 }{960}  \ \right) \ = \  \frac{3 \pi }{320} \ \ .   
+ \ \zeta \ = \ z \ - \ \frac{1}{2} \ 
+ \ d\zeta \ = \ dz \ 
+ \ x^2 \ + \ y^2 \ + \ \zeta^2 \ = \ \frac{1}{4} \ 
+ \ \int_0^{2 \pi}  d\theta \ \ \int_0^{1/2} \int_{0}^{\sqrt{\frac{1}{4} - r^2}} \ ( \ r^2 \ + \ [\zeta  +  \frac{1}{2}]^2 \ ) \ \ d\zeta \ \ r \ dr \ 
+ = \ \ 2 \pi  \ \int_0^{1/2} \int_{0}^{\sqrt{\frac{1}{4} - r^2}} \ ( \ r^3  \ + \ r\zeta^2  \ + \  r\zeta \ +  \ \frac{1}{4}r \ ) \ \ d\zeta \ \  \ dr \ 
+ = \ \ 2 \pi  \ \int_0^{1/2}  \ \left(  \ r^3 \zeta  \ + \ \frac{1}{3} r\zeta^3  \ + \  \frac{1}{2} r\zeta^2 \ +  \ \frac{1}{4}r \zeta \  \ \right) \vert_{\zeta=0}^{\zeta=\sqrt{\frac{1}{4} - r^2}} \ \  \ dr \ 
+ = \ \ 2 \pi  \ \cdot \ \int_0^{1/2}  \ \left[  \ r^3 \ (\frac{1}{4} - r^2)^{1/2}  \ + \ \frac{1}{3} r \ (\frac{1}{4} - r^2)^{3/2}  \ + \  \frac{1}{2} r \ (\frac{1}{4} - r^2) \ +  \ \frac{1}{4}r  \ (\frac{1}{4} - r^2)^{1/2} \  \ \right]  \ \  \ dr  
+ \ u \ = \ \frac{1}{4} - r^2 \ , \ du \ = \ -2r \ dr \ \Rightarrow \ r^2 \ = \ \frac{1}{4} - u \ 
+ \rightarrow \ \ 2 \pi  \ \cdot \ \frac{1}{2} \ \int_0^{1/4}  \ \left[  \  (\frac{1}{4} - u) \ u^{1/2}  \ + \ \frac{1}{3} u^{3/2}  \ +   \ \frac{1}{4}u^{1/2} \  \ \right]  \ \  \ du  
+  + \ \ 2 \pi  \ \cdot \ \int_0^{1/2}  \   \frac{1}{2} r \ (\frac{1}{4} - r^2)  \  \ dr  
+ = \ \  \pi   \  \left(  \  \frac{1}{2} \cdot \frac{2}{3} \ u^{3/2}  \ - \ \frac{2}{3} \cdot \frac{2}{5} u^{5/2}   \ \right) \vert_0^{1/4}   \ \  + \ \  \pi  \  \left( \ \frac{1}{4} \cdot \frac{1}{2}  r ^2 \ - \ \frac{1}{4}r^4 \ \right) \vert_0^{1/2}    
+ = \ \  \pi   \  \left(  \  \frac{1}{3} \cdot \frac{1}{8} \ - \ \frac{4}{15} \cdot \frac{1}{32}  \  + \  \frac{1}{8} \cdot \frac{1}{4}  \ - \ \frac{1}{4} \cdot \frac{1}{16} \ \right) 
+ = \ \pi \ \left( \ \frac{40 \ - \ 8 \ + \ 30 \ - \ 15 }{960} \ \right) \ = \ \frac{47 \pi }{960} \  \ . 
+ \iiint_D \ x^2\ + \ y^2 \ + \ z^2 \ \ dV \ = \ \left( \frac{47 \ + \ 3 \cdot 3}{960} \right) \pi \ = \ \frac{7 \pi}{120} \ \ . 
+ \ \ 
+ \frac{\pi}{3}  \cdot  \left(\frac{1}{2}\right)^2  \cdot  \frac{1}{2} \ + \ \frac{2\pi}{3}  \cdot  \left(\frac{1}{2}\right)^3 \ = \ \frac{\pi}{24} \ + \ \frac{\pi}{12} \ = \ \frac{\pi}{8} \ = \ \frac{15 \pi}{120} \ \ . 
+ \ \frac{1}{5} \ 
+ \ z-
+ \ \frac{3}{5} \ 
+ \ x-
+ \ r^2 \ + \ z^2 \ \sim \ \frac{2}{5} \ 
+ \ \frac{2}{5} \cdot \ \frac{\pi}{8} \ \sim \ \frac{\pi}{20} \ 
+\int_{0}^{2\pi} \int_{0}^{\pi/4} \int_{0}^{\frac{1}{2sin\phi}}  f(\rho,\phi,\theta)\rho^2sin\phi d\rho d\phi d\theta 

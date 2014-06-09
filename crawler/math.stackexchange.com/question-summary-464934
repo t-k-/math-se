@@ -1,0 +1,22 @@
+N
+x
+y
+X
+Y
+\sum_{i=1}^N \max\{|X - A_i|, |Y - B_i|\}\text{ is minimized.}
+A_i, B_i
+x
+y
+i
+N
+U,V
+\begin{aligned} 	U_i &= \frac{A_i + B_i}{2} &	V_i &= \frac{A_i - B_i}{2} \\	A_i &= U_i+V_i &	B_i &= U_i-V_i \end{aligned}
+\max\{|\Delta A|,|\Delta B|\} = \max\{|\Delta U+\Delta V|,|\Delta U-\Delta V|\} = |\Delta U|+|\Delta V|
+\sum_{i=1}^N \left(|U-U_i|+|V-V_i|\right)
+V
+U
+U
+\sum_{i=1}^N |U-U_i|
+V
+\sum_{i=1}^N |V-V_i|
+V

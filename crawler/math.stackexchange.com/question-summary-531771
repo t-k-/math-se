@@ -1,0 +1,12 @@
+c,\beta>0
+t\geq 0
+P(X>t)=\exp(-ct^\beta)
+E[X^k]
+k>0
+M_X(t)=\int_{-\infty}^\infty e^{tx}f(x)dx
+E[X^k]
+-\frac{d}{dt} P(X>t)
+s=ct^\beta
+ds=c\beta t^{\beta-1}\,dt
+ E[X^k] =  - \int_{0}^\infty t^k\, d(P(X>t)) =  \int_{0}^\infty P(X>t)\,d(t^k) =k \int_{0}^\infty t^{k-1} e^{-ct^\beta}\,dt 
+ E[X^k] = \frac{k}{c\beta}   \int_{0}^\infty t^{k-\beta} e^{-s}\,ds = \frac{k}{c^{k/\beta} \beta}   \int_{0}^\infty s^{k/\beta-1} e^{-s}\,ds = \frac{k}{c^{k/\beta} \beta} \Gamma(k/\beta)

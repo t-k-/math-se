@@ -1,0 +1,17 @@
+ 0 = A f(x,y) + B \frac{\partial^2 f(x,y)}{\partial x^2} + C \frac{\partial^2 f(x,y)}{\partial y^2} + D \frac{\partial^2 g(x,y)}{\partial x \partial y} \\ 0 = A g(x,y) + B \frac{\partial^2 g(x,y)}{\partial y^2} + C \frac{\partial^2 g(x,y)}{\partial x^2} + D \frac{\partial^2 f(x,y)}{\partial x \partial y} 
+0 = A f(x,y) + B \dfrac{\partial^2 f(x,y)}{\partial x^2} + C \dfrac{\partial^2 f(x,y)}{\partial y^2} + D \dfrac{\partial^2 g(x,y)}{\partial x \partial y}, \tag{1}
+0 = A g(x,y) + B \dfrac{\partial^2 g(x,y)}{\partial x^2} + C \dfrac{\partial^2 g(x,y)}{\partial y^2} + D \dfrac{\partial^2 f(x,y)}{\partial x \partial y}; \tag{2}
+U(x, y) = f(x, y) + g(x, y), \tag{3}
+V(x, y) = f(x, y) - g(x, y); \tag{4}
+0 = A (f(x,y) + g(x, y)) + B \dfrac{\partial^2 (f(x,y) + g(x, y))}{\partial x^2} + C \dfrac{\partial^2 (f(x,y) + g(x, y))}{\partial y^2} + D \dfrac{\partial^2 (f(x,y) + g(x, y))}{\partial x \partial y}
+= A U(x, y) +  B \dfrac{\partial^2 U(x, y)  }{\partial x^2} + C \dfrac{\partial^2 U(x, y)}{\partial y^2} + D \dfrac{\partial^2 U(x, y)}{\partial x \partial y}, \tag{5}
+A U(x, y) +  B \dfrac{\partial^2 U(x, y)  }{\partial x^2} + C \dfrac{\partial^2 U(x, y)}{\partial y^2} + D \dfrac{\partial^2 U(x, y)}{\partial x \partial y} = 0, \tag{6}
+A V(x, y) +  B \dfrac{\partial^2 V(x, y)  }{\partial x^2} + C \dfrac{\partial^2 V(x, y)}{\partial y^2} - D \dfrac{\partial^2 V(x, y)}{\partial x \partial y}=0, \tag{7}
+D
+g - f = -(f - g)
+f(x, y)
+g(x, y)
+f(x, y) = \dfrac{1}{2}(U(x, y) + V(x, y)), \tag{8}
+g(x, y) = \dfrac{1}{2}(U(x, y) - V(x, y)). \tag{9}
+U(x, y)
+V(x, y)

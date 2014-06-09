@@ -1,0 +1,21 @@
+\int_0^\infty\exp(-u-\exp(-ku))\,du
+k>0
+\int_{-\infty}^\infty\exp(-\theta^2-\exp(-k\theta^2))\,d\theta
+\int_0^\infty e^{-u-e^{-ku}}~du
+k>0
+\int_0^\infty e^{-u-e^{-ku}}~du
+=\int_0^\infty e^{-u}e^{-e^{-ku}}~du
+=\int_1^0u^\frac{1}{k}e^{-u}~d\left(-\dfrac{\ln u}{k}\right)
+=\dfrac{1}{k}\int_0^1u^{\frac{1}{k}-1}e^{-u}~du
+=\dfrac{1}{k}\gamma\left(\dfrac{1}{k},1\right)
+\int_{-\infty}^\infty e^{-\theta^2-e^{-k\theta^2}}~d\theta
+k>0
+\int_{-\infty}^\infty e^{-\theta^2-e^{-k\theta^2}}~d\theta
+=\int_{-\infty}^\infty e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta
+=\int_{-\infty}^0e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta+\int_0^\infty e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta
+=\int_\infty^0e^{-(-\theta)^2}e^{-e^{-k(-\theta)^2}}~d(-\theta)+\int_0^\infty e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta
+=\int_0^\infty e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta+\int_0^\infty e^{-\theta^2}e^{-e^{-k\theta^2}}~d\theta
+=2\int_0^\infty e^{-\theta^2}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(e^{-k\theta^2})^n}{n!}d\theta
+=2\int_0^\infty\sum\limits_{n=0}^\infty\dfrac{(-1)^ne^{-(kn+1)\theta^2}}{n!}d\theta
+=\sum\limits_{n=0}^\infty\dfrac{(-1)^n\sqrt\pi}{n!\sqrt{kn+1}}
+t = \exp(-ku)

@@ -1,0 +1,4 @@
+\begin{align}E[Y] &= E\left[\sum_{i=1}^M X_i\right] = \sum_{i=1}^M E[X_i] = \sum_{i=1}^M P(X_i = 1) = \sum_{i=1}^M \left(1 - \left(\frac{M-1}{M}\right)^M\right) \\ &= M - \frac{(M-1)^M}{M^{M-1}}.\end{align}
+ \frac{M - \frac{(M-1)^M}{M^{M-1}}}{M} = \frac{M - M\left(\frac{M-1}{M} \right)^M}{M} = 1 - \left(1 - \frac{1}{M} \right )^M 
+ 1 - \frac{1}{e} \simeq 0.632120559 \dots 
+ \lim_{M\to\infty}\left(1 - \frac{1}{M} \right )^M = \frac{1}{e} 

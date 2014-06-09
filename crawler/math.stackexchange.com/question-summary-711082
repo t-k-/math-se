@@ -1,0 +1,5 @@
+{\Bbb R}^n
+{\Bbb R}^{n+1}
+ V_n(r) = \int_0^r \int_{x_1^2+\cdots+x_{n-1}^2\le r^2-x^2} dx_1\ldots dx_{n-1} dx \\ = \int_0^r  V_{n-1}(\sqrt{r^2-x^2}) dx\\ = \int_0^{\frac\pi 2}  V_{n-1}(r\cos\theta) r\cos\theta \ \ d\theta 
+V_n(r) = r^n V_n(1) =: r^n V_n
+ r^n V_n  = \int_0^{\frac\pi 2}  V_{n-1}(r\cos\theta)^{n-1} r\cos\theta \ \ d\theta\\ V_n  = V_{n-1}\int_0^{\frac\pi 2}  (\cos\theta)^{n}\ d\theta 

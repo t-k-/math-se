@@ -1,0 +1,9 @@
+(X,Y)
+\displaystyle \frac{1}{2\pi}e^{-\frac{x^2+y^2}{2}}dxdy
+\displaystyle \frac{X}{Y}
+Z=X/Y
+F_Z(z) = \Pr(Z \leq z)
+= \Pr(X/Y \leq z)
+= \Pr(X \leq Yz)\bf{1}_{Y>0}+\it \Pr(X > Yz)\bf{1}_{Y<0}
+\Pr(X \leq Yz)\bf 1 \it _{ Y>0}=\int_{\rm 0}^{\infty}\Pr(X \leq yz)\frac{1}{\sqrt{2\pi}}e^{-\frac{y^2}{2}}\ \mathrm{d} y
+\Pr(X \leq yz)=\int_{-\infty}^{yz}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\mathrm{d} x

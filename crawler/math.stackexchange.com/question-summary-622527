@@ -1,0 +1,6 @@
+f(x,y)
+x
+f(f(x,y),f(x,f(x,y)))
+    \frac{\partial}{\partial x}f(f(x,y),f(x,f(x,y))) =f_{x}(f(x,y),f(x,f(x,y)))\frac{\partial}{\partial x}f(x,y)+f_{y}(f(x,y),f(x,f(x,y)))\frac{\partial}{\partial x}f(x,f(x,y)) 
+    = f_{x}(f(x,y)f(x,f(x,y)))f_{x}(x,y)+f_{y}(f(x,y),f(x,f(x,y)))\left\{ f_{x}(x,f(x,y))+f_{y}(x,f(x,y))\frac{\partial}{\partial x}f(x,y)\right\} 
+    = f_{x}(f(x,y)f(x,f(x,y)))f_{x}(x,y)+f_{y}(f(x,y),f(x,f(x,y)))\{\; f_{x}(x,f(x,y))+f_{y}(x,f(x,y))f_{x}(x,y)\;\} 

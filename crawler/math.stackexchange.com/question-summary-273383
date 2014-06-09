@@ -1,0 +1,15 @@
+(1+x)(1+x^2)(1+x^3)\cdots (1+x^n)\ge(1+x^{\frac{n+1}{2}})^n
+\ge
+x^r,x^{n+1-r}
+x>0
+(1+x^r)(1+x^{n+1-r})=1+x^r+x^{n+1-r}+x^{n+1}\ge 1+x^{n+1}+2\sqrt{x^r\cdot x^{n+1-r}}
+(1+x^r)(1+x^{n+1-r})\ge(1+x^{\frac{n+1}2})^2 
+1\le r<n+1-r\implies r<\frac{n+1}2
+n
+=2m+1
+r<\frac{2m+1+1}2\implies 1\le r\le m=\frac{n-1}2
+n+1-r=2m+1+1-r
+[m+2=\frac {n+3}2,n]
+1+x^{\frac{n+1}2}
+\prod_{1\le r\le n}(1+x^r)=(1+x^{\frac{n+1}2})\prod_{1\le r\le\frac{n-1}2}(1+x^r)(1+x^{n+1-r})\ge (1+x^{\frac{n+1}2})(1+x^{\frac{n+1}2})^{\left(2\cdot\frac{n-1}2\right)}=(1+x^{\frac{n+1}2})^n
+\prod_{1\le r\le n}(1+x^r)=\prod_{1\le r\le\frac n2}(1+x^r)(1+x^{n+1-r})\ge (1+x^{\frac{n+1}2})^{\left(2\cdot\frac n2\right)}=(1+x^{\frac{n+1}2})^n

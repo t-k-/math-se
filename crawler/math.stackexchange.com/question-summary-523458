@@ -1,0 +1,29 @@
+H
+(e_n)_{n=1}^\infty
+A
+A:H\to H
+\sum_{n=1}^\infty\|A(e_n)\|^2<\infty
+(f_m)_{m=1}^\infty
+H
+\sum_{n=1}^\infty\|A(e_n)\|^2=\sum_{m=1}^\infty\|A(f_m)\|^2
+\|A\|\leq(\sum_{n=1}^\infty\|A(e_n)\|^2)^{1/2}
+\sum_{m=1}^\infty\|A(f_m)\|^2=\sum_{m=1}^\infty\langle A(f_m),A(f_m)\rangle
+(e_n)_{n=1}^\infty
+\sum_{m=1}^\infty\left\langle A(\sum_{n_1=1}^\infty\langle f_m,e_{n_1}\rangle e_{n_1}),A(\sum_{n_1=1}^\infty\langle f_m,e_{n_2}\rangle e_{n_2})\right\rangle=
+\sum_{n_1=1}^\infty\left(\sum_{m=1}^\infty\sum_{n_2=1}^\infty\langle f_m,e_{n_1}\rangle\langle e_{n_2},f_m\rangle\langle A(e_{n_1}),A(e_{n_2})\rangle\right)=
+\sum_{m=1}^\infty\sum_{n_2=1}_{n2\ne n_1}^\infty\langle f_m,e_{n_1}\rangle\langle e_{n_2},f_m\rangle\langle A(e_{n_1}),A(e_{n_2})\rangle + \sum_{m=1}_{n_2=n_1}^\infty\langle f_m,e_{n_1}\rangle\langle e_{n_2},f_m\rangle\langle A(e_{n_1}),A(e_{n_2})\rangle  
+\|A(e_{n_1})\|^2\cdot\sum_{m=1}^\infty|\langle f_m,e_{n_1}\rangle|^2
+\sum_{m=1}^\infty|\langle f_m,e_{n_1}\rangle|^2=\|e_{n_1}\|^2
+(f_m)_{m=1}^\infty
+n_2\neq n_1
+A
+A
+x\in H
+\|x\| = 1
+x = \sum_n \alpha_n e_n
+\|\alpha\|^2 = \sum_n |\alpha_n|^2 = 1
+ \sum_n \|T(e_n)\|^2 = \sum_n \sum_m |\langle T(e_n), f_m\rangle| 
+ = \sum_n \sum_m |\langle e_n, T^{\ast}(f_m)\rangle | = \sum_m \sum_n |\langle e_n, T^{\ast}(f_m)\rangle | 
+ = \sum_m \|T^{\ast}(f_m)\|^2 = \sum_m \|T(f_m)\|^2 
+ \|T\|^2 = \sup_{\|\alpha\| = 1} \sum_n \sum_m \sum_k \alpha_n\overline{\alpha_m}\overline{\langle T(e_m), e_k\rangle} \langle T(e_n), e_k\rangle  
+ \|T\|^2 \leq \sum_n\sum_k |\langle T(e_n), e_k\rangle |^2 = \sum_n \|T(e_n)\|^2 

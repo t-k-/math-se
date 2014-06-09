@@ -1,0 +1,29 @@
+\partial_{t}{\varPhi(x,t)}=k^2\partial_{xx}{\varPhi(x,t)}
+\Phi(x,0)=\Phi_0
+{\partial_{x}}{\Phi(0,t)=\nu(t)+C}
+\nu(t)
+{\sigma=\sigma_0,\mu=0}
+C
+\Phi(L,t)
+\varPhi(x,t)=X(x)T(t)
+X(x)T'(t)=k^2X''(x)T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{k^2X''(x)}{X(x)}=-s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-s^2\\k^2X''(x)+s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-ts^2}\\X(x)=\begin{cases}c_1(s)\sin\dfrac{xs}{k}+c_2(s)\cos\dfrac{xs}{k}&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore\varPhi(x,t)=C_1x+C_2+\int_0^\infty C_3(s^2)e^{-ts^2}\sin\dfrac{xs}{k}ds+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds
+\partial_{x}\varPhi(x,t)=C_1+\int_0^\infty\dfrac{C_3(s^2)se^{-ts^2}}{k}\cos\dfrac{xs}{k}ds-\int_0^\infty\dfrac{C_4(s)se^{-ts^2}}{k}\sin\dfrac{xs}{k}ds
+\partial_{x}\varPhi(0,t)=\nu(t)+C
+C_1+\int_0^\infty\dfrac{C_3(s^2)se^{-ts^2}}{k}ds=\nu(t)+C
+\int_0^\infty\dfrac{C_3(s^2)e^{-ts^2}}{2k}d(s^2)=\nu(t)+C-C_1
+\int_0^\infty\dfrac{C_3(s)e^{-ts}}{2k}ds=\nu(t)+C-C_1
+\dfrac{1}{2k}\mathcal{L}_{s\to t}\{C_3(s)\}=\nu(t)+C-C_1
+C_3(s)=2k\mathcal{L}^{-1}_{t\to s}\{\nu(t)\}+2k(C-C_1)\delta(s)
+\therefore\varPhi(x,t)=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\int_0^\infty\delta(s^2)e^{-ts^2}\sin\dfrac{xs}{k}ds+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\int_0^\infty\delta(s)e^{-ts}\sin\dfrac{x\sqrt{s}}{k}d(\sqrt{s})+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\int_0^\infty\dfrac{\delta(s)e^{-ts}}{2\sqrt{s}}\sin\dfrac{x\sqrt{s}}{k}ds+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\lim_{s\to0}\dfrac{e^{-ts}\sin\dfrac{x\sqrt{s}}{k}}{2\sqrt{s}}+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\lim_{s\to0}\dfrac{\dfrac{xe^{-ts}}{2k\sqrt{s}}\cos\dfrac{x\sqrt{s}}{k}-te^{-ts}\sin\dfrac{x\sqrt{s}}{k}}{\dfrac{1}{\sqrt{s}}}+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+2k(C-C_1)\lim_{s\to0}\biggl(\dfrac{xe^{-ts}}{2k}\cos\dfrac{x\sqrt{s}}{k}-t\sqrt{s}e^{-ts}\sin\dfrac{x\sqrt{s}}{k}\biggr)+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=C_1x+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+(C-C_1)x+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds=Cx+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+\int_0^\infty C_4(s)e^{-ts^2}\cos\dfrac{xs}{k}ds
+\varPhi(x,0)=\varPhi_0
+Cx+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\sin\dfrac{xs}{k}ds+\int_0^\infty C_4(s)\cos\dfrac{xs}{k}ds=\varPhi_0
+\int_0^\infty C_4(s)\cos\dfrac{xs}{k}ds=-Cx+\varPhi_0-C_2-2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\sin\dfrac{xs}{k}ds
+\int_0^\infty C_4(s)\cos xs~ds=-Ckx+\varPhi_0-C_2-2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\sin xs~ds
+\mathcal{F}_{c,s\to x}\{C_4(s)\}=-Ckx+\varPhi_0-C_2-2k\mathcal{F}_{s,s\to x}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}
+C_4(s)=\dfrac{2Ck}{\pi s^2}+(\varPhi_0-C_2)\delta(s)-2k\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}\}
+\therefore\varPhi(x,t)=Cx+C_2+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+\dfrac{2Ck}{\pi}\int_0^\infty\dfrac{e^{-ts^2}}{s^2}\cos\dfrac{xs}{k}ds+(\varPhi_0-C_2)\int_0^\infty\delta(s)e^{-ts^2}\cos\dfrac{xs}{k}ds-2k\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}\}e^{-ts^2}\cos\dfrac{xs}{k}ds=Cx+C_2+\dfrac{2Ck}{\pi}\int_0^\infty\dfrac{e^{-ts^2}}{s^2}\cos\dfrac{xs}{k}ds+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds+\varPhi_0-C_2-2k\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}\}e^{-ts^2}\cos\dfrac{xs}{k}ds=Cx+\varPhi_0+\dfrac{2Ck}{\pi}\int_0^\infty\dfrac{e^{-ts^2}}{s^2}\cos\dfrac{xs}{k}ds+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{xs}{k}ds-2k\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}\}e^{-ts^2}\cos\dfrac{xs}{k}ds
+\varPhi(L,t)=CL+\varPhi_0+\dfrac{2Ck}{\pi}\int_0^\infty\dfrac{e^{-ts^2}}{s^2}\cos\dfrac{Ls}{k}ds+2k\int_0^\infty\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}e^{-ts^2}\sin\dfrac{Ls}{k}ds-2k\int_0^\infty\mathcal{F}^{-1}_{c,L\to s}\{\mathcal{F}_{s,s\to L}\{\mathcal{L}^{-1}_{t\to s^2}\{\nu(t)\}\}\}e^{-ts^2}\cos\dfrac{Ls}{k}ds

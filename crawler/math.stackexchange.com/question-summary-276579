@@ -1,0 +1,12 @@
+\lim_{n}\left(1+\frac{x}{n}\right)^n
+\left(1+\frac{x}{n}\right)\left(1+\frac{y}{n}\right)=\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)\ge 1+\frac{x+y}{n}
+\begin{align*} \left(1+\frac{x}{n}\right)^n\left(1+\frac{y}{n}\right)^n-\left(1+\frac{x+y}{n}\right)^n&=\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^n-\left(1+\frac{x+y}{n}\right)^n\\ &=\frac{xy}{n^2}\left[\sum\limits_{k=0}^{n-1}\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^{n-1-k}\left(1+\frac{x+y}{n}\right)^k\right] \end{align*}
+a^n-b^n
+\begin{align*} \frac{xy}{n}\left(1+\frac{x+y}{n}\right)^{n-1}&\le\left(1+\frac{x}{n}\right)^n\left(1+\frac{y}{n}\right)^n-\left(1+\frac{x+y}{n}\right)^n\\ &\le\frac{xy}{n}\left(1+\frac{x}{n}\right)^{n-1}\left(1+\frac{y}{n}\right)^{n-1} \end{align*}
+\begin{align*} &\frac{xy}{n^2}\left[\sum\limits_{k=0}^{n-1}\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^{n-1-k}\left(1+\frac{x+y}{n}\right)^k\right]\\ &\qquad=\frac{xy}n\cdot\frac1n\sum_{k=0}^{n-1}\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^{n-1-k}\left(1+\frac{x+y}{n}\right)^k\;. \end{align*}
+x,y\ge 0
+\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^{n-1-k}\left(1+\frac{x+y}{n}\right)^k\ge\left(1+\frac{x+y}n\right)^{n-1}
+k=0,\dots,n-1
+n
+\frac1n\sum_{k=0}^{n-1}\left(1+\frac{x+y}{n}+\frac{xy}{n^2}\right)^{n-1-k}\left(1+\frac{x+y}{n}\right)^k\ge\left(1+\frac{x+y}n\right)^{n-1}\;,
+\left(1+\frac{x}{n}\right)^n\left(1+\frac{y}{n}\right)^n-\left(1+\frac{x+y}{n}\right)^n\ge\frac{xy}n\left(1+\frac{x+y}n\right)^{n-1}\;.

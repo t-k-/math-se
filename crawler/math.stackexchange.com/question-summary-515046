@@ -1,0 +1,12 @@
+X
+ \frac{∂ a^T(A - X)^{-1}b}{∂ X} 
+A
+a
+b
+ ab^T \frac{∂(A-X)^{-1}}{∂X} = ab^T (A-X)^{-2} \frac{∂(A-X)}{∂X} 
+\frac{∂(A-X)}{∂X}
+\mathrm{Inv} \, : \, A \in \mathrm{GL}_{n}(\mathbb{R}) \, \longmapsto \, A^{-1}
+ \mathrm{D}_{A} \mathrm{Inv} \cdot H = - A^{-1} H A^{-1} 
+ \mathrm{D}_{X} (A-X)^{-1} \cdot H = \mathrm{D}_{A-X} (A-X)^{-1} \cdot (-H) = (A-X)^{-1} H (A-X)^{-1}
+Y \, \longmapsto \, {}^t a Y b
+ \mathrm{D}_{X} (A-X)^{-1} \cdot H = {}^t a (A-X)^{-1} H (A-X)^{-1} b 

@@ -1,0 +1,44 @@
+ \int_{-\pi/2}^{\pi/2} \frac{1}{2007^x+1}\cdot \frac{\sin^{2008}x}{\sin^{2008}x+\cos^{2008}x}dx 
+ \sin x=\sum_{n=1}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!}, \quad \cos x=\sum_{n=1}^\infty \frac{ x^{2n}}{(2n)!} \quad \forall \ x 
+\displaystyle\int_c^df(x)dx=\int_c^df(c+d-x)\  \ \ \ (1)dx
+I=\int_{-b}^b\frac1{a^x+1}\cdot\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+=\int_{-b}^b\frac1{a^{-b+b-x}+1}\cdot\frac{\left(\sin(-b+b-x)\right)^{2n}}{\left(\cos(-b+b-x)\right)^{2n}+\left(\sin(-b+b-x)\right)^{2n}}dx
+\displaystyle\sin(-x)=-\sin x,\cos(-x)=\cos x
+=\int_{-b}^b\frac{a^x}{a^x+1}\cdot\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+\implies I+I=\int_{-b}^b\frac1{a^x+1}\cdot\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx+\int_{-b}^b\frac{a^x}{a^x+1}\cdot\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+2I=\int_{-b}^b1\cdot\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+b=\dfrac\pi2,
+2I=\int_{-\dfrac\pi2}^{\dfrac\pi2}\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+=\int_{-\dfrac\pi2}^0\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx +\int_0^{\dfrac\pi2}\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+\text{For }I_1=\int_{-\dfrac\pi2}^0\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+g(x)=\sin^{2n}x,g\left(-\dfrac\pi2+0-x\right)=\cdots=\cos^{2n}x
+(1),
+\text{For }I_1=\int_{-\dfrac\pi2}^0\frac{g(x)}{g\left(-\dfrac\pi2+0-x\right)+g(x)}dx=\int_{-\dfrac\pi2}^0\frac{g\left(-\dfrac\pi2+0-x\right)}{g(x)+g\left(-\dfrac\pi2+0-x\right)}dx
+\implies I_1+I_1=\int_{-\dfrac\pi2}^0 dx=\cdots
+I_2=\int_0^{\dfrac\pi2}\frac{\sin^{2n}x}{\cos^{2n}x+\sin^{2n}x}dx
+-\pi/2
+0
+0
+\pi/2
+-\pi/2
+0
+t=-x
+x
+0
+\pi/2
+\int_0^{\pi/2} \frac{2007^t}{2007^t+1} \frac{\sin^{2008}t}{\sin^{2008} t+\cos^{2008} t}\,dt.
+\int_0^{\pi/2}\frac{\sin^{2008}x}{\sin^{2008} x+\cos^{2008} x}\,dx.\tag{1}
+0
+\pi/4
+\pi/4
+\pi/2
+\pi/4
+\pi/2
+u=\pi/2-x
+\pi/4
+\pi/2
+x
+0
+\pi/4
+\int_0^{\pi/4}\frac{\cos^{2008}u}{\cos^{2008} u+\sin^{2008} u}\,du.
+\int_0^{\pi/4} 1\,dx,

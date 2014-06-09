@@ -1,0 +1,49 @@
+f(x)=0
+x\in \mathbb{R}
+g(x)
+g'(x)
+g(x)=g(x+1)
+x
+x_0 \in \Bbb R
+\epsilon > 0
+a = \lfloor x_0 - \epsilon \rfloor
+b = \lceil x_0 + \epsilon \rceil
+ \forall x \in (x_0 - \epsilon, x_0 + \epsilon), \forall k \in \Bbb Z : \begin{cases} k > 10 - a & \implies x + k > a + 10 - a = 10\\ k < -10 - b & \implies x + k < b -10 - b = -10 \end{cases} 
+g(x)
+f
+ \forall x \in (x_0 - \epsilon, x_0 + \epsilon) : g(x) = \sum_{k=-10-b}^{10-a} f(x + k) 
+f(x + k)
+g
+x_0
+x_0
+g
+g
+k' = k + 1
+ g(x + 1) = \sum_{k \in \Bbb Z} f(x + k + 1) = \sum_{k' \in \Bbb Z} f(x + k') = g(x) 
+10=:N
+R\geq1
+|x|<R
+|k|>N+R
+x
+g(x)
+R
+R'>R
+g(x)
+R
+g
+{\mathbb R}
+|x+k|\geq |k|-|x|>N+R-R=N\ .
+f(x+k)=0 \quad\bigl(|k|>N+R)\ ,
+g(x)=\sum_{k=-N-R}^{N+R} f(x+k)\ .\tag{1}
+|x|<R
+|x+1|<R
+(1)
+g(x)
+g(x+1)
+g:\ {\mathbb R}\to{\mathbb R}
+1
+g
+\max
+\min
+g'
+\eqalign{g(x+1)-g(x)&=\sum_{k=-N-R}^{N+R} f(x+1+k)-\sum_{k=-N-R}^{N+R} f(x+k) \cr  &=\sum_{k'=-N-R+1}^{N+R+1} f(x+k')-\sum_{k=-N-R}^{N+R} f(x+k)\cr  &=f\bigl((x+1)+N+R\bigr)-f(x-N-R)\cr  &=0\ .\cr}

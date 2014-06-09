@@ -1,0 +1,48 @@
+f(x) = \int_0^{g(x)}(1+t^3)^{-1/2} dt
+g(x) = \int_0^{\cos x}(1+\sin (t^2)) dt
+f'(\pi/2)
+h(x) =\int_0^{x}(1+t^3)^{-1/2} dt
+m(x) = \int_0^{ x}(1+\sin (t^2)) dt
+f(x) = \int_0^{g(x)}(1+t^3)^{-1/2} dt
+g(x) = \int_0^{\cos x}(1+\sin (t^2)) dt
+F(x) = h \circ m \circ \cos(x)
+F'(x) = h' \circ m \circ \cos(x) \cdot (m \circ \cos (x))'
+F'(x) = h' \circ m \circ \cos(x) \cdot (m' \circ \cos (x)) \cdot (\cos (x))'
+F'(x) = h' \circ m \circ \cos(x) \cdot (m' \circ \cos (x)) \cdot (-\sin(x))
+h'(x) = (1+x^3)^{-1/2}
+m'(x) =1+\sin(x^2)
+\pi/2
+-\sin (\pi/2)=-1
+\cos (\pi/2) = 0 
+m'(0) = 1+\sin (0) = 1
+h' \circ m(0) = h'(0) = 1
+F'(\pi/2) =  -1
+g(x) = \tilde{g}(y) = \int_0^y(1+\sin (t^2)) dt
+y=\cos(x)
+f(x)=\tilde{f}(z) =\int_0^z(1+t^3)^{-1/2} dt
+z=\tilde{g}(y)
+f(x) = \tilde{f}(\tilde{g}(\cos(x))) = (\mathrm{notation}) = \tilde{f}(z(y(x)))
+z=g(x)=\tilde{g}(\cos(\pi/2))
+0
+0
+z=g(x)=0
+f' = \frac{df}{dx} = \frac{d\tilde{f}(z(y(x)))}{dx} = \frac{d\tilde{f}}{dz} \cdot \frac{dz}{dy} \cdot \frac{dy}{dx} = (1 + z^3)^{-1/2} \cdot (1 + \sin(y^2)) \cdot (-\sin(x)) = (1 + 0^3)^{-1/2} \cdot (1+0) \cdot (-1) = -1
+H(t) 
+f(x) = \int_0^{g(x)} H(t) \,dt
+f'(x) 
+(f(x+h)-f(x))/h
+h\to 0
+H
+h
+H(g(x))
+(g(x+h)-g(x)) \cdot H(g(x))
+g'(x) = (\cos x)'\cdot (1+\sin(\cos(x)^2))
+\lim_{h\to 0} \frac1h \int_{g(x)}^{g(x+h)} H(t)\,dt
+\lim_{h\to 0} \frac1h (g(x+h)-g(x)) \cdot H(g(x))= g'(x)\cdot H(g(x)).
+x=\pi/2
+g'(\pi/2) = (-1) \cdot (1+\sin(0)) = -1
+H(g(\pi/2))
+\cos(\pi/2)=0
+g(\pi/2) = 0
+H(g(\pi/2)) = H(0) = 1
+-1

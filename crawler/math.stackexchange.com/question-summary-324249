@@ -1,0 +1,35 @@
+\begin{align} \frac{\pi}{4}&=\sum_{i=0}^\infty \frac{(-1)^i}{2i+1},\tag{1} \end{align}
+\begin{align} \frac{\pi^2}{6}&=\sum_{i=1}^\infty \frac{1}{i^2}.\tag{2} \end{align}
+(\clubsuit)
+(\spadesuit)
+\dfrac{\pi}4
+\dfrac{\pi^2}{16}
+\dfrac{\pi^2}8
+(\diamondsuit_{k})
+k \neq -N-1
+k = -N-1
+k \geq 0
+\sum_{k=1}^{\infty} \dfrac1{k^2} = \dfrac{\pi^2}6 \,\,\,\,\,\, (\spadesuit)
+\sum_{k=0}^{\infty} \dfrac1{(2k+1)^2} = \dfrac{\pi^2}{8} \,\,\,\,\,\, (\clubsuit)
+\sum_{k=-\infty}^{\infty} \dfrac1{(2k+1)^2} = \left(\sum_{k=-\infty}^{\infty} \dfrac{(-1)^k}{(2k+1)} \right)^2
+\sum_{k=0}^{\infty} \dfrac{(-1)^k}{(2k+1)} = \dfrac{\pi}4
+\sum_{k=0}^{N} \dfrac{(-1)^k}{(2k+1)} = \sum_{k=-(N+1)}^{-1} \dfrac{(-1)^k}{(2k+1)},
+\sum_{k=-\infty}^{\infty} \dfrac{(-1)^k}{(2k+1)} = \dfrac{\pi}2
+\left(\sum_{k=-N-1}^{k=N} \dfrac{(-1)^k}{(2k+1)} \right)^2 - \sum_{k=-N-1}^{k=N} \dfrac{1}{(2k+1)(2k+1)} = \sum_{\overset{j,k=-N-1}{j \neq k}}^{k=N} \dfrac{(-1)^{j+k}}{2(j-k)} \left(\dfrac1{(2k+1)} - \dfrac1{(2j+1)} \right)
+\overbrace{\sum_{\overset{j,k=-N-1}{j \neq k}}^{k=N} \dfrac{(-1)^{j+k}}{2(j-k)} \left(\dfrac1{(2k+1)} - \dfrac1{(2j+1)} \right)}^{(\heartsuit)} \to 0 \text{ as } N \to \infty
+\sum_{\overset{j=-N-1}{j \neq k}}^N \dfrac{(-1)^{j}}{(j-k)} = \sum_{j=-N}^N \dfrac{(-1)^{j}}{(j+N+1)} = (-1)^{N-1} \sum_{j=1}^{2N+1} \dfrac{(-1)^j}{j}
+(\heartsuit) = \sum_{k=0}^N \dfrac{(-1)^k \diamondsuit_k + (-1)^{-k-1} \diamondsuit_{-k-1}}{2k+1} = \sum_{k=0}^N \dfrac{(-1)^k \left(\diamondsuit_k - \diamondsuit_{-k-1} \right)}{2k+1}
+\left \vert \diamondsuit_k - \diamondsuit_{-k-1} \right \vert = \mathcal{O} \left( \dfrac1N\right)
+\left \vert (\heartsuit) \right \vert \leq \sum_{k=0}^N \dfrac1{2k+1} \mathcal{O}(1/N) = \mathcal{O}(\log(2N+1)/N) \to 0
+\left(\sum_{k=-N-1}^{k=N} \dfrac{(-1)^k}{(2k+1)} \right)^2 - \sum_{k=-N-1}^{k=N} \dfrac{1}{(2k+1)(2k+1)} \to 0
+\left(\sum_{k=-\infty}^{\infty} \dfrac{(-1)^k}{(2k+1)} \right)^2 = \sum_{k=-\infty}^{\infty} \dfrac{1}{(2k+1)(2k+1)} = 2 \sum_{k=0}^{\infty} \dfrac{1}{(2k+1)^2} = 2 \cdot \dfrac34 \cdot \zeta(2)
+\boxed{\zeta(2) = \dfrac23 \cdot \dfrac{\pi^2}4 = \dfrac{\pi^2}6}
+(2)
+(2)
+(3)
+(1)
+(3)
+\frac \pi 4 = \sum_{i = 0}^\infty \frac{(-1)^i}{2i + 1} \tag{1}
+\zeta(2) = \frac{\pi^2}{6} = \sum_{i=1}^\infty \frac{1}{i^2} \tag{2}
+\frac{\pi^2}{8} = \sum_{i=0}^\infty \frac{1}{(2i+1)^2} \tag{3}.
+\frac{3}{4}\zeta(2) = \sum_{i=1}^\infty \frac{1}{i^2}- \sum_{i=1}^\infty \frac{1}{(2i)^2}= \sum_{i=0}^\infty \frac{1}{(2i+1)^2}.

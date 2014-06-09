@@ -1,0 +1,44 @@
+((\bigvee_{i=1}^{n} p_i) \wedge (\bigwedge_{i=1}^{n} (p_i \to p)) \to p
+\Bigl( \bigl(p_1\lor\cdots\lor p_n\bigr) \land \bigl( (p_1\to p)\land (p_2\to p)\land\cdots\land (p_n\to p)\bigr)\Bigr) \to p.
+\Bigl( \bigl(p_1\lor\cdots\lor p_n\lor p_{n+1}\bigr) \land \bigl( (p_1\to p)\land (p_2\to p)\land\cdots\land (p_n\to p)\land (p_{n+1}\to p)\bigr)\Bigr) \to p
+\land
+\begin{align*} &\Bigl( \bigl(p_1\lor\cdots\lor p_n\lor p_{n+1}\bigr) \land \bigl( (p_1\to p)\land (p_2\to p)\land\cdots\land (p_n\to p)\land (p_{n+1}\to p)\bigr)\Bigr) \to p\\ &\equiv \Bigl(\bigl(p_1\lor\cdots \lor p_n\bigr)\land\bigl( \bigwedge_{i=1}^{n+1}(p_i\to p)\bigr) \lor \bigl( p_{n+1}\land\bigl(\bigwedge_{i=1}^{n+1}p_i\to p)\bigr)\Bigr) \to p\\ &\equiv \Biggl(\Bigl(\bigl( p_1\lor\cdots \lor p_n\bigr)\land \bigwedge_{i=1}^{n+1}(p_i\to p)\land (p_{n+1}\to p)\Bigr)\\ &\qquad\lor\Bigl(\bigl(p_{n+1}\land (p_{n+1}\to p)\bigr)\land \bigwedge_{i=1}^{n}(p_i\to p)\bigr)\Bigr)\Biggr)\to p \end{align*}
+(A\land B)\to p
+n=1
+D\land C\to p
+(A\land B\land C)\to p
+D\land C\to p
+\Bigl( \bigl((A\land B)\land C\bigr) \lor \bigl(D\land C)\Bigr)\to p.
+((\bigvee_{i=1}^{n} p_i) \wedge (\bigwedge_{i=1}^{n} (p_i \to p)) \to p
+((A \lor B \lor C) \land ((A \to p) \land (B \to p) \land (C \to p)))\to p
+A,B,C
+B
+(B \land ((A \to p) \land (B \to p) \land (C \to p)))\to p
+(B \land (B \to p)) \to p
+\bigvee_{i=1}^{n} p_i
+p_i
+\bigvee_{i=1}^{n} p_i \to \exists j, p_j
+(X_i \land X_j \land \cdots) \to B
+(Y \land (X_i \land X_j \land \cdots)) \to B
+Y
+X_i
+X_{i+1}
+n=0
+\lor
+\text{False} \to \exists j, p_j
+n \to n+1
+(\bigvee_{i=1}^{n} p_i) \to \exists j, p_j
+((\bigvee_{i=1}^{n} p_i) \lor p_{n+1}) \to \exists j, p_j
+p_{n+1}
+j=n+1
+\bigvee_{i=1}^{n} p_i
+\exists j, p_j
+n=1
+n
+n+1
+p_1,\ldots,p_{n+1}
+p_i
+p
+p_1,\ldots,p_n
+p
+p_{n+1}

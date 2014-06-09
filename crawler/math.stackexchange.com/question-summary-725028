@@ -1,0 +1,24 @@
+x^3+qx+r
+(a+b+c)^5
+x^3+qx+r=0\implies a+b+c=0, ab+bc+ca=q,abc=-r
+\implies \sum a^2=(a+b+c)^2-2(ab+bc+ca)
+x^n
+ x^{n+3}+qx^{n+1}+rx^n=0
+\implies a^{n+3}+qa^{n+1}+ra^n=0
+\implies\sum a^{n+3}+q\sum a^{n+1}+r\sum a^n=0
+n=0\implies\sum a^3+q\sum a+r\sum 1=0\iff \sum a^3=-q\cdot0-r\cdot3
+n=2\implies\sum a^5+q\sum a^3+r\sum a^2=0\iff \sum a^5=-q\sum a^3-r\sum a^2
+\underbrace{x^3+qx+r=0}_{a,b,c}
+a+b+c=0
+ab+bc+ca=q
+abc=-r
+a^3+qa+r=0
+b^3+qb+r=0
+c^3+qc+r=0
+a^{n+3}+qa^{n+1}+ra^{n}=0\\\vdots
+S_n=a^n+b^n+c^n
+S_{n+3}+qS_{n+1}+rS_n=0\tag{1}
+S_5=-qS_3-rS_2 = -q(-qS_1-rS_0)-rS_2
+S_1=0
+S_2=(a+b+c)^2-2(ab+bc+ca)=-2q
+S_5=-q(0-3r)-r(-2q)=5qr

@@ -1,0 +1,21 @@
+x\in \left[0,\dfrac{\pi}{2}\right]
+f(x)=\int_{0}^{\cos^2{x}}\arccos{\sqrt{t}}\,dt-\int_{0}^{\sin^2{x}}\arcsin{\sqrt{t}}\,dt.
+\iint_{D}f(x)\, dxdy,\quad\text{where } D=\{(x,y)\mid x^2+y^2\le 1\}.
+f'(x)=-2\cos{x}\sin{x}\cdot x-2\sin{x}\cos{x}\cdot x=-2x\sin{2x}
+f(x)=\int_{0}^{x}f(t)\,dt+f(0)=\cdots=\int_{0}^{1}\arccos{\sqrt{t}}\,dt+x\cos{2x}-\dfrac{1}{2}\sin{(2x)}
+\iint_{D}f(x)\,dxdy=\cdots=\dfrac{\pi}{2}\int_{0}^{1}\arccos{\sqrt{t}}\,dt+2+\iint_{D}x\cos{(2x)}\,dxdy-1/2\iint_{D}\sin{2x}\,dxdy
+\iint_{D}x\cos{(2x)}\,dxdy
+f'(x)=-2 x \sin{2 x}
+f(x) = x^2 \cos{2 x} - (x/2) \sin{2 x} + C
+\begin{align}C = f(0) &= \int_0^1 dt \, \arccos{\sqrt{t}}\\ &= 2 \int_0^1 du \, u \, \arccos{u}\\ &= [u^2 \arccos{u}]_0^1 + \int_0^1 du \frac{u^2}{\sqrt{1-u^2}} \\ &= 0 + \int_0^{\pi/2} d\theta \, \sin^2{\theta} \\ &= \frac{\pi}{4}\end{align}
+\begin{align}\iint_D dx dy \,f(x) &= \int_{-1}^1 dx \, \left (x^2 \cos{2 x} - \frac{x}{2} \sin{2 x} + \frac{\pi}{4} \right ) \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} dy \\ &= 2 \int_{-1}^1 dx \, \left (x^2 \cos{2 x} - \frac{x}{2} \sin{2 x} + \frac{\pi}{4} \right ) \sqrt{1-x^2}\end{align}
+\frac{\pi}{2} \int_{-1}^1 dx \, \sqrt{1-x^2} = \frac{\pi^2}{4}
+J(a) = \int_{-1}^1 dx \, \sqrt{1-x^2} \, e^{i a x} = \frac{\pi}{a} J_1(a)
+J_1
+1
+J'(a) = i \int_{-1}^1 dx \, x \, \sqrt{1-x^2} \, e^{i a x} =\pi \frac{d}{da} \frac{J_1(a)}{a}
+\int_{-1}^1 dx \, x \, \sqrt{1-x^2} \, \sin{a x} = -\pi \left (\frac{J_1'(a)}{a} - \frac{J_1(a)}{a^2} \right ) = \frac{\pi}{2 a} \left [\frac{2 J_1(a)}{a} + J_2(a)-J_0(a) \right ] \\ =\frac{\pi}{a} J_2(a) 
+J''(a)
+\int_{-1}^1 dx \, x^2 \sqrt{1-x^2} \cos{a x} = \frac{\pi}{a} \left [J_1(a) - \frac{3 J_2(a)}{a} \right ]
+a=2
+\iint_D dx dy \,f(x) = \pi [ J_1(2)- 2 J_2(2)]+\frac{\pi^2}{4}

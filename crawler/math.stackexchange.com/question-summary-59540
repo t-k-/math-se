@@ -1,0 +1,16 @@
+'
+u,v,w
+|(u^3+v^3)(u^3+w^3)(v^3+w^3)| \leq 1 
+\iiint'_{\mathbb{R}^3} \frac{du \; dv \; dw}{|u^3+v^3+w^3|^{\frac{2}{3}}}
+x:=u^3+v^3,y:=u^3+w^3
+x=u^3+v^3
+y=u^3+w^3
+z=v^3+w^3
+\vert x y z \vert < 1
+  \mathrm{d}  u \,\, \mathrm{d} v \,\, \mathrm{d} w = \frac{4 \mathrm{d} x \,\,  \mathrm{d} y \,\, \mathrm{d} z }{ ( (x+y-z)^2 (x+z-y)^2 (y+z-x)^2 )^{1/3}}  
+    \int_{( x \cdot y  \cdot z )^2 < 1} \frac{4 \mathrm{d} x \,\,  \mathrm{d} y \,\, \mathrm{d} z }{ ( 4(x+y+z)^2 (x+y-z)^2 (x+z-y)^2 (y+z-x)^2 )^{1/3}}  
+t^{-8/3}
+t
+(x+y-z)^2
+    \int_0^1 \mathrm{d} x \int_x^{\frac{1}{\sqrt{x}}} \mathrm{d} y \int_y^{\frac{1}{x y}} \mathrm{d} z \frac{1}{{ ( (x+y+z)^2 (x+y-z)^2 (x+z-y)^2 (y+z-x)^2 )^{1/3}} } 
+    0 < x < \frac{1}{\sqrt[3]{2}} \land x < y < -\frac{x}{2} + \sqrt{\frac{1}{x} + \frac{x^2}{4}}  

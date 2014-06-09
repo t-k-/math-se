@@ -1,0 +1,20 @@
+ S = 1 + 1/2 + \frac {(n-1)(n-2)} {3n^2} + \frac {(n-1)(n-2)(n-3)} {4n^3} + \ldots + \frac {(n-1)!} {n \times n^{n-1}}
+= \frac 3 2 + \sum_{k=3}^{n} \frac{n!}{k(n-k)!n^k} 
+S
+\Omega(\frac 1 2 \log n)
+k
+k
+a_k(n) = \frac{1}{k} \prod_{j=1}^{k-1} (1 - j/n)
+a_k(n) < 1/k
+S(n) < 3/2 + \sum_{k=3}^n 1/k \approx \ln(n)
+p
+0 < p < 1/2
+k < n^p
+\prod_{j=1}^{k-1} (1 - j/n) > (1 - n^{p-1})^{n^{p}}
+n \to \infty
+\epsilon > 0
+n
+S(n) > \sum_{k=3}^{n^{p}} \frac{1-\epsilon}{k} \approx (1-\epsilon) \ln(n^p) = (1-\epsilon) p \ln(n)
+o(1)
+S(n) = \frac{1}{2} \log n + \frac{\gamma + \log 2}{2} + o(1).
+S(n) = \frac{1}{2} \log (2n) + \frac{\gamma}{2} + o(1) = \frac{1}{2} \log n + \frac{\gamma + \log 2}{2} + o(1).

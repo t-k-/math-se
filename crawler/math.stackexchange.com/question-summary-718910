@@ -1,0 +1,4 @@
+\frac{\cos(t \arctan(\sqrt{x}))}{(1+x)^{t/2}}= \sum_{k \ge 0}\frac{\Gamma(t+2k)\Gamma(k+1)}{\Gamma(t)\Gamma(2k+1)}\frac{(-x)^k}{k!}
+\cos, \arctan,(1+x)^{-n}
+x
+\sum_{k=0}^\infty\frac{\Gamma(t+2k)\Gamma(k+1)}{\Gamma(t)\Gamma(2k+1)}\frac{(-x)^k}{k!} = \sum_{k=0}^\infty\frac{(t)_{2k}}{2k!}(i\sqrt{x})^{2k} = \Re\left(\sum_{k=0}^\infty\frac{(t)_k}{k!}(i\sqrt{x})^k\right) = \Re\left(\frac{1}{(1-i\sqrt{x})^{t}}\right) = \frac{1}{((1-i\sqrt{x})(1+i\sqrt{x}))^{t/2}}\Re\left(\frac{1+i\sqrt{x}}{1-i\sqrt{x}}\right)^{t/2}\\ = \frac{\Re\left(e^{it\arctan(\sqrt{x})}\right)}{(1+x)^{t/2}} = \frac{\cos(t\arctan(\sqrt{x}))}{(1+x)^{t/2}} 

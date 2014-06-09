@@ -1,0 +1,21 @@
+\mathbf{X_{t+1}}=\mathbf{AX_t}+\mathbf{b}
+\mathbf{A}
+\mathbf{b}
+\mathbf{A}
+\lambda_1=\lambda_2=1
+x_{t} = A^t x_0+ \sum_{k=0}^{t-1} A^k b
+A
+I+\cdots +A^{t-1} = (I-A)^{-1} (I-A^t)
+x_{t} = A^t x_0+ (I-A)^{-1} (I-A^t)b
+1
+t \mapsto A^t x_0
+ t \mapsto \sum_{k=0}^{t-1} A^k b
+A
+A = U \Lambda U^{-1} = U U^{-1} = I
+A^t = I
+A
+A = U \begin{bmatrix} 1 & 1 \\ 0 & 1\end{bmatrix} U^{-1}
+A^t = U \begin{bmatrix} 1 & t \\ 0 & 1\end{bmatrix} U^{-1} = I + t U \begin{bmatrix} 0 & 1 \\ 0 & 0\end{bmatrix} U^{-1} = I + t B
+x_{t} = (I+tB)x_0+ (tI+\frac{t(t-1)}{2}B) b
+B
+A

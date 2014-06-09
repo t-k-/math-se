@@ -1,0 +1,7 @@
+min(X_1,....X_n)
+F(x;\theta)= 1-\frac {C}{((x-\theta)+3)^4}
+X \sim Pareto(\alpha=4,C=3)
+f(x;\theta)= \frac {4*3^4}{((x-\theta)+3)^5}
+L(\theta)=\prod_{i=1}^n \frac {4*3^4}{((x-\theta)+3)^5}
+L(\theta)=Log(\frac {4*3^{4n}}{\sum_{i=1}^n((x-\theta)+3)^5})
+\prod_{i=1}^n I(x > \theta)=I[min(X_1......X_n)]

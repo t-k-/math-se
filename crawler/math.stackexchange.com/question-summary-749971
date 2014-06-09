@@ -1,0 +1,74 @@
+n
+p
+X_n
+E(X_n)
+n
+j
+1 \leq j \leq n
+j = 1
+p
+j > 1
+j-1
+j
+p(1-p)
+E(X_n) = p + (n-1)p(1-p)
+(X_n)
+t_i
+1
+i
+i=1 \cdots n
+0
+X_n = \sum_{i=1}^n t_i
+i=1
+  P(t_i=1)=E(t_i)= \begin{cases} p  & \text{if $i=1$} \\ p(1-p) & \text{otherwise}  \\ \end{cases} 
+t_i
+E(X_n)=\sum E(t_i) = p + (n-1)p (1-p)
+E(X^2_n)= E\left[\left(\sum t_i \right)^2\right]=\sum_{i=1}^n\sum_{j=1}^n E(t_i t_j)
+i=j
+n
+E(t_i t_j)=E(t_i^2)=E(t_i)
+p + (n-1)p (1-p)
+|i-j|=1
+2 \times (n-1)
+E(t_i t_j)=0
+t_i,t_j
+|i-j|>1
+i=1
+j=1
+2\times(n-2)
+E(t_i t_j) = p^2(1-p)
+|i-j|>1
+i>1
+j>1
+n^2-5n +6
+E(t_i t_j) = p^2(1-p)^2
+E(X_n^2)=p+\left( n-1\right) \,\left( p-1\right) \,p+ 2\,\left( n-2\right) \,\left( 1-p\right) \,{p}^{2}+\left( {n}^{2}-5\,n+6\right) \,{\left( 1-p\right) }^{2}\,{p}^{2}
+Var(X_n) = E(X_n^2) - E(X_n)^2 = \left( 1-p\right) \,p\,\left( 3\,n\,{p}^{2}-5\,{p}^{2}- 3 \, n\,p+3 p+n\right)=\\ =\left( 1-p\right) \,p\,\left[  n\,\left( 3\,{p}^{2}-3\,p+1\right) -p\,\left( 5\,p-3\right)  \right]
+n\ge 4
+n<4
+n\le 2
+Var(X_1)=p(1-p) \hspace{9pt} Var(X_2)=p(1-p)^2(2-p)\hspace{9pt} Var(X_3)=p(1-p)^2(4p^2-6p+3)
+z
+u
+n>1
+[z^n] G(z,u)
+G_1(z, u) =  \sum_{k=0}^\infty u^k \left(\frac{pz}{1-pz}\frac{(1-p)z}{1-(1-p)z}\right)^k = {\frac {1+ \left( -{p}^{2}+p \right) {z}^{2}-z}{1+p \left( u-1  \right)  \left( -1+p \right) {z}^{2}-z}}
+G_2(z, u) =  \sum_{k=0}^\infty u^k \left(\frac{(1-p)z}{1-(1-p)z}\frac{pz}{1-pz}\right)^k = {\frac {1+ \left( -{p}^{2}+p \right) {z}^{2}-z}{1+p \left( u-1  \right)  \left( -1+p \right) {z}^{2}-z}}.
+G_3(z, u) = u\frac{pz}{1-pz} \sum_{k=0}^\infty u^k \left(\frac{pz}{1-pz}\frac{(1-p)z}{1-(1-p)z}\right)^k \\= {\frac {pz \left( -up{z}^{2} \left( -1+p \right) -uz+u \right) }{  \left( -pz+1 \right)  \left( 1+p \left( u-1 \right)  \left( -1+p  \right) {z}^{2}-z \right) }}.
+G_4(z, u) =  \frac{(1-p)z}{1-(1-p)z} \sum_{k=0}^\infty u^k \left(\frac{(1-p)z}{1-(1-p)z}\frac{pz}{1-pz}\right)^k \\ = {\frac { \left( 1-p \right) z \left( 1+ \left( -{p}^{2}+p \right) {z}^ {2}-z \right) }{ \left( 1- \left( 1-p \right) z \right)  \left( 1+p  \left( u-1 \right)  \left( -1+p \right) {z}^{2}-z \right) }}.
+G(z, u) = G_1(z,u) + G_2(z,u) + G_3(z, u) + G_4(z, u)\\ = {\frac {{z}^{2}{p}^{2}u-{z}^{2}{p}^{2}-{z}^{2}pu+upz+{z}^{2}p-pz-z+2}{ {z}^{2}{p}^{2}u-{z}^{2}{p}^{2}-{z}^{2}pu+{z}^{2}p-z+1}}.
+G(z, 1) = \frac{2-z}{1-z} = \frac{2}{1-z} - \frac{z}{1-z}
+[z^n] G(z, 1) = 2 - 1 = 1,
+\mathrm{E}[X_n] = [z^n] \left. \frac{d}{du} G(z, u) \right|_{u=1}.
+[z^n] \frac{pz (1-pz)}{(1-z)^2} = p [z^{n-1}] \frac{1}{(1-z)^2} - p^2 [z^{n-2}] \frac{1}{(1-z)^2} \\= p n - p^2 (n-1) = p + (n-1)\times p(1-p),
+n\ge 4
+\mathrm{E}[X_n (X_n-1)] = [z^n]  \left. \left(\frac{d}{du}\right)^2 G(z, u) \right|_{u=1}.
+[z^n] \frac{2p^2 z^3 (1-p) (1-pz)}{(1-z)^3}\\ = 2p^2 (1-p) [z^{n-3}] \frac{1}{(1-z)^3} - 2p^3 (1-p) [z^{n-4}] \frac{1}{(1-z)^3} \\= 2p^2 (1-p) {n-3+2\choose 2}  - 2p^3 (1-p) {n-4+2\choose 2} \\=  \left( -1+p \right) {p}^{2} \left( n-2 \right)  \left( pn-n-3\,p+1  \right)
+\mathrm{Var}(X) = \mathrm{E}(X^2) - \mathrm{E}(X)^2 = \mathrm{E}(X(X-1)) + \mathrm{E}(X) - \mathrm{E}(X)^2
+\mathrm{Var}(X_n) =- \left( -1+p \right) p \left( 3\,{p}^{2}n-3\,pn-5\,{p}^{2}+n+3\,p  \right)
+(1-p)p \left((1-3p(1-p))\times n + 3p-5p^2\right).
+[z^n] G(z,u)
+[z^3] G(z, u)
+[z^4] G(z, u)
+ \left( 1-p \right) ^{3}+3\,p \left( 1-p \right) ^{2}u+2\,{p}^{2} \left( 1-p \right) u+{p}^{2} \left( 1-p \right) {u}^{2}+{p}^{3}u 
+  \left( 1-p \right) ^{4}+4\, \left( 1-p \right) ^{3}pu+3\,{p}^{2} \left( 1-p \right) ^{2}u+3\,{p}^{2} \left( 1 -p \right) ^{2}{u}^{2}\\+2\,{p}^{3} \left( 1-p \right) u+2\,{p}^{3} \left( 1-p \right) {u}^{2}+{p}^{4}u.

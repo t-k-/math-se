@@ -1,0 +1,17 @@
+\sum_{r=2}^n {1\over r-1}-\sum_{r=2}^n {1\over r+1} 
+={1\over1} + {1\over2} + {1\over3}+\cdots+{1\over n-1}
+-\left({1\over3}+\cdots+{1\over n-1}+{1\over n+1}\right)
+1+{1\over2}-{1\over n+1}
+1+{1\over2}-{1\over n}-{1\over n+1}
+-{1\over n}
+\sum_{r=1000}^\infty {1\over r-1}-{1\over r+1}  
+-\dfrac{1}{7}
+-\dfrac{1}{n}
+n\ge4
+\begin{align}\sum_{r=2}^n\left(\frac1{r-1}-\frac1{r+1}\right) &= \sum_{r=2}^n\frac1{r-1}-\sum_{r=2}^n\frac1{r+1}\\ &= \sum_{r=1}^{n-1}\frac1r-\sum_{r=3}^{n+1}\frac1r\\ &= \left(\sum_{r=1}^2\frac1r+\sum_{r=3}^{n-1}\frac1r\right)-\left(\sum_{r=3}^{n-1}\frac1r+\sum_{r=n}^{n+1}\frac1r\right)\\ &= \left(\sum_{r=1}^2\frac1r+\sum_{r=3}^{n-1}\frac1r\right)-\sum_{r=3}^{n-1}\frac1r-\sum_{r=n}^{n+1}\frac1r\\ &= \sum_{r=1}^2\frac1r+\left(\sum_{r=3}^{n-1}\frac1r-\sum_{r=3}^{n-1}\frac1r\right)-\sum_{r=n}^{n+1}\frac1r\\ &= \sum_{r=1}^2\frac1r-\sum_{r=n}^{n+1}\frac1r\\ &= \left(1+\frac12\right)-\left(\frac1n+\frac1{n+1}\right)\\ &= 1+\frac12-\frac1n-\frac1{n+1}.\end{align}
+\sum_{r=2}^n\left(\frac1{r-1}-\frac1{r+1}\right)=\frac32-\frac1n-\frac1{n+1}\quad (n\geq 4)\tag{#}
+\sum
+\begin{align}\sum_{r=2}^n\left(\frac1{r-1}-\frac1{r+1}\right) &= \left(1+\cdots+\frac1{n-1}\right)-\left(\frac13+\cdots+\frac1{n+1}\right)\\ &= \left(1+\frac12\right)+\left(\frac13+\cdots+\frac1{n-1}\right)-\left(\frac13+\cdots+\frac1{n+1}\right)\\ &= \frac32+\left(\frac13+\cdots+\frac1{n-1}\right)-\left(\frac13+\cdots+\frac1{n-1}+\frac1n+\frac1{n+1}\right)\\ &= \frac32+\left(\frac13+\cdots+\frac1{n-1}\right)-\left(\frac13+\cdots+\frac1{n-1}\right)-\frac1n-\frac1{n+1}\\ &= \frac32-\frac1n-\frac1{n+1}\end{align}
+(\#)
+\sum_{r=1000}^\infty\left(\frac1{r-1}-\frac1{r+1}\right) = -\sum_{r=2}^{999}\left(\frac1{r-1}-\frac1{r+1}\right) + \sum_{r=2}^\infty\left(\frac1{r-1}-\frac1{r+1}\right).
+\begin{align}\sum_{r=1000}^\infty\left(\frac1{r-1}-\frac1{r+1}\right) &= -\left(\frac32-\frac1{999}-\frac1{1000}\right) + \sum_{r=2}^\infty\left(\frac1{r-1}-\frac1{r+1}\right)\\ &= -\frac32+\frac1{999}+\frac1{1000}+\lim_{n\to\infty}\left(\sum_{r=2}^n\left(\frac1{r-1}-\frac1{r+1}\right)\right)\\ &= -\frac32+\frac1{999}+\frac1{1000}+\lim_{n\to\infty}\left(\frac32-\frac1n-\frac1{n+1}\right)\\ &= -\frac32+\frac1{999}+\frac1{1000}+\frac32\\ &= \frac1{999}+\frac1{1000}.\end{align}

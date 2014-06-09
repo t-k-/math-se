@@ -1,0 +1,13 @@
+E[X|X \le c]
+ = \int\limits_{0}^{c} x \ p(x|x\le c) \ dx \ + \ 0  = \int\limits_{0}^{c} x \frac{p(x,x\le c)}{p(x\le c)} dx   = \int\limits_{0}^{c} x \frac{p(x)}{p(x\le c)} dx 
+p(x,x \le c) = p(x) \ in \ [0,c]
+X \le c
+X
+X
+f_X(x)
+F_X(x)
+[a,b]
+F_X(a) = 0, \; F_X(b) =1
+[c_1, c_2] \subset [a,b]
+f_X^{(tr)}(x) = \frac{f_X(x)}{F_X(c_2) - F_X(c_1)} 
+E^{(tr)}(x) = \int_{c_1}^{c_2} x\frac{f_X(x)}{F_X(c_2) - F_X(c_1)}dx 

@@ -1,0 +1,36 @@
+\delta_{n,i}
+\delta_{n,i}=0
+n \neq i
+\delta_{n,i}=1
+i=n
+ \sum_{k=i}^n \binom{n}{k}\binom{k}{i}(-1)^{n-k}=\delta_{n,i} 
+F(x)=(1+x)^n
+G(x)=(1-x)^n
+\begin{align} x^n &= \bigl((x+1)-1\bigr)^n\\ &= \sum_{k=0}^n (-1)^{n-k}\binom{n}{k}(x+1)^k\\ &= \sum_{k=0}^n (-1)^{n-k}\binom{n}{k}\left(\sum_{i=0}^k \binom{k}{i}x^i\right)\\ &= \sum_{k=0}^n\sum_{i=0}^k (-1)^{n-k}\binom{n}{k}\binom{k}{i}x^i\\ &= \sum_{i=0}^n \left(\sum_{k=i}^n (-1)^{n-k}\binom{n}{k}\binom{k}{i}\right)x^i \end{align}
+x^n = \sum_{i=0}^n \delta_{n,i}x^i.
+i
+S
+[n]:=\{1,2,\ldots,n\}
+T \supseteq S
+(-1)^n \sum_{k=i}^n (-1)^k \binom{n}{k,i,n-k-i}
+(-1)^n \sum_{S \subseteq [n]:|S|=i} \underbrace{\sum_{T \subseteq [n]:S \subseteq T} (-1)^{|T|}}_{\text{call this } f(T)}.
+f(T)
+T
+S
+T
+S
+f(T)=0
+=0
+i=n
+S=[n]
+(-1)^{n} (-1)^{n}=1.
+\{a_n\}
+\{b_n\}
+ A(z) B(z) = \sum_{n\ge 0} a_n \frac{z^n}{n!} \sum_{n\ge 0} b_n \frac{z^n}{n!} = \sum_{n\ge 0} \sum_{k=0}^n \frac{1}{k!}\frac{1}{(n-k)!} a_k b_{n-k} z^n\\ = \sum_{n\ge 0} \sum_{k=0}^n \frac{n!}{k!(n-k)!} a_k b_{n-k} \frac{z^n}{n!} = \sum_{n\ge 0} \left(\sum_{k=0}^n {n\choose k} a_k b_{n-k}\right)\frac{z^n}{n!}
+\sum_{k=0}^n {n\choose k} a_k b_{n-k}.
+Q(z)
+\delta_{n,j}.
+ A(z) = \sum_{k\ge 0} {k\choose j} \frac{z^k}{k!} = \sum_{k\ge j} \frac{1}{j!} \frac{z^k}{(k-j)!} =  \frac{z^j}{j!} \sum_{k\ge j} \frac{z^{k-j}}{(k-j)!} = \frac{z^j}{j!} \exp(z)
+ B(z) = \sum_{k\ge 0} (-1)^k \frac{z^k}{k!} = \exp(-z).
+Q(z) = \frac{z^j}{j!} \exp(z) \exp(-z) = \frac{z^j}{j!}.
+n! [z^n] Q(z) \quad = \quad \begin{cases} 0 & n\ne j \\ n!  \frac{1}{j!} = 1 & n = j. \end{cases}

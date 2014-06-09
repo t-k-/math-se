@@ -1,0 +1,35 @@
+\ f(x,y)=e^{-(x+y)} 
+x,y
+0
+\infty
+0
+\displaystyle\int_{0}^{\infty} \int_{0}^{\infty}e^{-x}e^{-y} dy dx
+u=e^{-x}
+du= -e^{-x} 
+v=e^{-y}
+\int v= \int   e^{-y}dy=-e^{-y} 
+\infty
+\int_{0}^{\infty} e^{-x}-e^{-x}dx
+-e^{-x}-e^{-x}
+2
+\lambda e^{-\lambda x} 
+\ e^{-(x+y)} 
+1
+\int_0^\infty \int_0^\infty e^{(-x-y)}dxdy=\int_0^\infty\left(\int_{-\infty}^{-y} e^{u}(du)\right)dy=\int_0^\infty e^{-y}dy=1
+u=-x-y
+du=-dx
+\int_0^\infty \int_0^\infty e^{-x} e^{-y} \, dy \, dx
+\int_0^a \int_0^b e^{-x} e^{-y} \, dy \, dx
+F(a, b)
+X
+Y
+Y
+X
+x>0
+\begin{align*}f_X(x)&=\int_0^{\infty}e^{-(x+y)}dy=\int_0^{\infty}e^{-x}e^{-y}dy=e^{-x}\int_0^{\infty}e^{-y}dy=e^{-x}\int_0^{\infty}(-e^{-y})'dy=\\&\\&=e^{-x}[-e^{-y}]_0^{\infty}=e^{-x}[-0-(-1)]=e^{-x}\cdot1=e^{-x}\end{align*}
+\lambda=1
+X\sim\exp(1)
+X,Y
+f_X(x)=\begin{cases} e^{-x}, &x>0\\ \\0,&x\le0 \end{cases}
+Y\sim\exp(1)
+f_{X,Y}(x,y)=e^{-(x+y)}=e^{-x}e^{-y}=f(x)g(y)

@@ -1,0 +1,19 @@
+\sum_{d|n}(-1)^{n/d}\Phi(d)?
+\Phi(d)
+\sum_{d | n} \Phi(d) = \sum_{d | n} \Phi\left(\frac{n}{d}\right)= n
+\sum_{d | n} \Phi\left(\frac{n}{d}\right) + \sum_{d | n} (-1)^{d} \Phi\left(\frac{n}{d}\right) = \sum_{d | n} (1+(-1)^{d}) \, \Phi\left(\frac{n}{d}\right) = 2 \sum_{2d | n} \Phi\left(\frac{n}{2d}\right)
+n
+0
+2 \sum_{2d | n} \Phi\left(\frac{n}{2d}\right) = 2 \sum_{d | n/2} \Phi\left(\frac{n/2}{d}\right) = n
+-n
+n
+0
+\sum_{d | n} (-1)^{n/d} \Phi\left(d\right) = \sum_{d | n} (-1)^{d} \Phi\left(\frac{n}{d}\right) = \frac{(-1)^n-1}{2} . n
+\begin{align*}\frac{\zeta(s-1)}{\zeta(s)}&=\sum_{k=1}^\infty \frac{\Phi(k)}{k^s}\\(2^{1-s}-1)\zeta(s)&=\sum_{k=1}^\infty \frac{(-1)^k}{k^s}\end{align*}
+\zeta(s)
+(2^{1-s}-1)\zeta(s-1)
+\lambda(s)=\sum_{k=1}^\infty \frac{1-(-1)^k}{2k^s}=(1-2^{-s})\zeta(s)
+-\lambda(s-1)
+\Phi(k)
+(-1)^k
+-\dfrac{k(1-(-1)^k)}{2}=\begin{cases}-k&\text{odd }k\\0&\text{even }k\end{cases}

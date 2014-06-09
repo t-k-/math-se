@@ -1,0 +1,15 @@
+f(x,t) = \left\{\begin{array}{ll} 1 & x \in [0, t] \\ 0 & x \not\in [0,t] \end{array}\right.
+f
+t
+\frac{\partial f}{\partial t} = \delta(x - t)
+\delta
+E(t) \subseteq \mathbb{R}
+f(x,t) = \left\{\begin{array}{ll} 1 & x \in E(t) \\ 0 & x \not\in E(t) \end{array}\right.
+f
+t
+\phi
+x\ge 0
+f(x,t)=0
+x<0
+\partial_t f(x,t)=-\delta'(t-x)\theta(x)
+ \int \partial_t f(x,t)\phi(t)dt =-\int \phi'(t)f(x,t)dt=-\int_{x}^{\infty}\phi'(t)dt=\phi'(x)=\int\phi'(t)\delta(t-x)dt\\=\int \left(-\delta'(t-x)\right)\phi(t)dt 

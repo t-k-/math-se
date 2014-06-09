@@ -1,0 +1,39 @@
+ \int_{0}^{\infty }\frac{dx}{1+x^a} 
+ \int_{0}^{\infty }\frac{dx}{1+x^{2a}} 
+ 2\pi i\sum res f(z) 
+ z^a =(-1); roots = e^{\pi i/a};  
+a\ge 2
+a\ge 2.
+(p, q)=1
+\frac{p}{q} \ge 2.
+x = t^q
+\Gamma_1
+0
+R
+R
+\Gamma_2
+R
+R e^{2 i\pi/p}
+\Gamma_3
+\Gamma_2
+O(1/R^{p-q+1})
+p\ge 2q
+O(1/R^2)
+p-q+1\ge q+1.
+\Gamma_2
+R 2\pi/p
+\Gamma_2
+ a = \frac{p}{q}
+ \int_0^\infty \frac{1}{1+x^{p/q}} dx =  \int_0^\infty \frac{q t^{q-1}}{1+t^p} dt =  q \int_0^\infty \frac{t^{q-1}}{1+t^p} dt.
+\Gamma_1
+\Gamma_3,
+t = u e^{2\pi i/p}
+z_0=e^{i\pi/p}
+a\ge 2
+f(z) = \frac{z^{q-1}}{1+z^p},
+\int_{\Gamma_1} f(z) dz = \int_0^\infty \frac{t^{q-1}}{1+t^p} dt 
+\int_{\Gamma_3} f(z) dz =  \int_\infty^0 \frac{u^{q-1} e^{2\pi i(q-1)/p} }{1+u^p} e^{2\pi i/p} du = -e^{2\pi i q/p} \int_0^\infty \frac{u^{q-1} }{1+u^p} du .
+ \left( 1 - e^{2\pi i q/p} \right) \int_0^\infty \frac{t^{q-1}}{1+t^p} dt = 2\pi i \operatorname{Res}(f(z); z=e^{i\pi/p})
+ \operatorname{Res}(f(z); z=e^{i\pi/p}) =  \lim_{z\to z_0} \frac{z^{q-1}}{p z^{p-1}} = \frac{1}{p} e^{(q-p)i\pi/p} = \frac{1}{p} e^{q i\pi/p -i\pi} = - \frac{1}{p} e^{q i\pi/p}.
+ q \int_0^\infty \frac{t^{q-1}}{1+t^p} dt = - 2\pi i \frac{q}{p} \frac{e^{q i\pi/p}}{ 1 - e^{2\pi i q/p} } = - 2\pi i \frac{q}{p} \frac{1}{e^{-q i\pi/p} - e^{q i\pi/p}} \\ = \pi \frac{q}{p} \frac{2i}{-e^{-q i\pi/p} + e^{q i\pi/p}} = \pi \frac{q}{p} \frac{1}{\sin(\pi q/p)}.
+\int_0^\infty \frac{1}{1+x^a} dx = \frac{\pi}{a\sin(\pi/a)}.

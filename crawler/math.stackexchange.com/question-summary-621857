@@ -1,0 +1,5 @@
+\int_0^\infty\dfrac{x^{m-1}e^{-qx}}{(\sqrt{1+px})^{m-0.5}}dx
+=\int_0^\infty x^{m-1}(1+px)^\frac{1-2m}{4}e^{-qx}~dx
+=\int_0^\infty\left(\dfrac{x}{p}\right)^{m-1}(1+x)^\frac{1-2m}{4}~e^{-\frac{qx}{p}}~d\left(\dfrac{x}{p}\right)
+=\int_0^\infty\dfrac{x^{m-1}(1+x)^\frac{1-2m}{4}~e^{-\frac{qx}{p}}}{p^m}dx
+=\dfrac{\Gamma(m)U\left(m,\dfrac{2m+5}{4},\dfrac{q}{p}\right)}{p^m}

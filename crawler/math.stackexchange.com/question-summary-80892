@@ -1,0 +1,18 @@
+n>1
+D_n
+a_n
+1
+a_n
+a_n=n^k
+k>0
+1
+1
+q
+m
+D_m = 1
+k
+\Gamma
+    \mathbb{P}(\forall_{n \not= m} \, {D_n \not= 1} ; D_m = 1 ) = \frac{1}{1-\frac{1}{a_m}} \prod_{n=2}^q \left( 1- \frac{1}{a_n} \right) 
+   p_k(q) = \sum_{m=2}^q \frac{1}{a_m} \mathbb{P}(\forall_{n \not= m} \, {D_n \not= 1} ; D_m = 1 ) = \prod_{n=2}^q \left( 1- \frac{1}{a_n} \right) \sum_{m=2}^q \frac{1}{a_m-1} =     \prod_{n=2}^q \left( 1- \frac{1}{n^k} \right) \cdot \sum_{m=2}^q \frac{1}{m^k-1} 
+   p_1(q) = \frac{1}{q} H_{q-1} \qquad   p_2(q) = \frac{3}{8} \left(1+\frac{1}{12 q}\right)\left(1-\frac{1}{q} \right) 
+    \lim_{q \to \infty} p_1(q) = 0 \qquad     \lim_{q \to \infty} p_2(q) = \frac{3}{8} \qquad    \lim_{q \to \infty} p_3(q) = \frac{\cosh \left(\frac{\sqrt{3} \pi }{2}\right)}{9 \pi } 

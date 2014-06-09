@@ -1,0 +1,44 @@
+I(x,y,z)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{z\over 2\pi [(\alpha-x)^2+(\beta-y)^2+z^2]^{3\over2}}f(\alpha,\beta)\;d\alpha\; d\beta
+f
+I
+\nabla^2 I=0
+0
+x^2+y^2\to\infty
+x^2+y^2\to\infty
+0
+0
+f
+I(x,y,0)=f(x,y)
+\alpha,\beta\neq x,y
+0
+z=0
+\alpha,\beta= x,y
+f(x,y)\to 0
+x^2+y^2\to\infty
+f
+\varepsilon>0
+R>0
+t_1^2+t_2^2\leq R
+||(t_1+x,t_2+y)|| \geq \sqrt{x^2+y^2}-\sqrt{t_1^2+t_2^2}\geq \sqrt{x^2+y^2}-R,
+R'
+a^2+b^2\geq R'
+|f(a,b)|\leq\varepsilon
+x^2+y^2\geq R+R'
+|I(x,y,z)|\leq\varepsilon
+I(x,y,z)=\iint_{\mathbb R^2}\frac z{2\pi(t_1^2+t_2^2+z^2)^{\frac 32}}f(t_1+x,t_2+y)dt_1dt_2,
+\left|\iint_{t_1^2+t_2^2\geq R^2}\frac z{2\pi(t_1^2+t_2^2+z^2)^{\frac 32}}f(t_1+x,t_2+y)dt_1dt_2\right|\leq\varepsilon.
+\varepsilon>0
+R>0
+R
+z
+\int_{\mathbb R^2}\frac{z}{(u^2+v^2+z^2)}dudv
+f
+\overline{C(0,R)}
+\delta>0
+x_1^2+x_2^2\leq R^2
+x_1'^2+x_2'^2\leq R^2
+(x_1-x'_1)^2+(x_2-x'_2)^2\leq\delta^2
+|f(x_1,x_2)-f(x'_1,x'_2)|\leq\varepsilon
+\varepsilon>0
+\left|\iint_{t_1^2+t_2^2\geq R^2}\frac z{2\pi(t_1^2+t_2^2+z^2)^{\frac 32}}dt_1dt_2\right|\leq\varepsilon.
+\limsup_{z\to 0}|I(x,y,z)-f(x,y)|\leq 2\varepsilon \sup_{(s_1,s_2)\in\mathbb R^2}|f(s_1,s_2)|,

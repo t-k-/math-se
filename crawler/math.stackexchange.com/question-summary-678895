@@ -1,0 +1,27 @@
+CRT(n,d_p,d_q,M_p,M_q,y)
+x_p = y^{d_p} \mod p
+x_q = y^{d_q} \mod q
+x = M_pqx_p+M_qpx_q \mod n
+x
+d_K(y) = y^d \mod n
+n = pq
+d_p = d \mod (p-1)
+d_q = d \mod (q-1)
+M_p = q^{-1} \mod p
+M_q = p^{-1} \mod q
+x
+y^d \mod n
+M_pqx_p+M_qpx_q \mod n
+((q^{-1} \mod p)(q)(y^{d_p} \mod p) + (p^{-1} \mod q)(p)(y^{d_q} \mod q)) \mod n
+y^d \mod n
+y^{d_p} \equiv y^d\pmod p
+y^{d_q} \equiv y^d\pmod q
+p
+q
+x_p \equiv y^d\pmod p
+x_q \equiv y^d\pmod p
+pq
+y^d
+pq
+p
+q

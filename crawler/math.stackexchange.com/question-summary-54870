@@ -1,0 +1,82 @@
+G=(V,E)
+V
+\{1,\dotsc,N\} \times \{1,\dotsc,N\}
+2
+1
+G
+d(v_1,v_2)=
+v_1
+v_2
+v \in V
+S(v,r)=\{u \in V \mid d(v,u)=r\}
+\max\limits_{v,r}|S(v,r)|
+N
+O(N)
+V=\{1,\dotsc,N\} \times \{1,\dotsc,N\}
+v=(N/2,N/2)
+r=N/2
+N^{\log_23}\approx N^{1.585}
+N^{\log_2(3+\sqrt{17})-1}\approx N^{1.833}
+2
+3
+2
+a_{k+2}=3a_{k+1}+2a_k
+(3\pm\sqrt{17})/2
+\sim k^{(3+\sqrt{17})/2}
+N=2k+1
+\underset{v,r}{\max}|S(v,r)|
+\Omega(N^{\log_2(3+\sqrt{17})-1})\approx \Omega(N^{1.833})
+\Omega(N^{2-\epsilon})
+\epsilon>0
+N
+N
+s
+s
+s
+4^s
+N
+s
+N
+N
+\Omega(N^{2-\epsilon})
+\epsilon>0
+N^{\log_23}\approx N^{1.585}
+k=0
+4
+4(3^k+2^k)
+k
+N=2^{k+1}+1
+\underset{v,r}{\max}|S(v,r)|>4\cdot3^{\log_2(N-1)-1}>3^{\log_2(N-1)}\sim3^{\log_2N}=N^{\log_23}\;.
+O(N^{\log_23})
+k
+\frac433^k
+N
+\Omega(N^{\log_23})
+O(n^2)
+g(n)
+k
+2^k
+2^{k+1}
+n
+l(n)=\mbox{min}(g(n))
+V=\left\{ (x,y)\in\{1,\ldots,N\}\times\{1,\ldots,N\} {\ \Huge|\ } \begin{aligned} 2\mid x \ \ \wedge\ \ l(x)+1 \in g(y) \\ or\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \,\,\\ 4\mid y \ \ \wedge\ \ l(y) \in g(x) \ \ \ \ \ \ \ \,\, \end{aligned} \right\}
+N=15
+N
+N^2/16
+N
+N
+N^2/36
+V
+O(N)
+v = (v_1, v_2)
+0 \leq r \leq 2N-2
+2N-2
+S
+(v_1+x,v_2+y)
+|x| + |y| = r
+-r \leq x \leq r
+x
+2
+y
+\pm(r-|x|)
+\sum_{x=-r}^r 2 = 2(2r+1) \leq 2(4N-4+1) = O(N) .

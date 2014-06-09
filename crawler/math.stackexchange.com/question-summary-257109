@@ -1,0 +1,51 @@
+X
+Y
+\rho
+X^2
+Y^2
+\rho^2
+X
+Y
+(X,Z)
+\sigma^2=1-\varrho^2
+U
+\mathbb E(U)=\mathbb E(U^3)=0
+\mathbb E(U^2)=1
+\mathbb E(U^4)=3
+ Y=\varrho X+\sqrt{1-\varrho^2} Z, 
+X^2Y^2=\varrho^2X^4+2\varrho\sqrt{1-\varrho^2} X^3Z+(1-\varrho^2)X^2Z^2
+\mathbb E(X^2Y^2)=1+2\varrho^2
+\mathbb E(X^2)=\mathbb E(Y^2)=1
+\mathbb E(X^4)=\mathbb E(Y^4)=3
+\mathrm{var}(X^2)=\mathrm{var}(Y^2)=2
+ \mathrm{Corr}(X^2,Y^2)=\frac{\mathbb E(X^2Y^2)-\mathbb E(X^2)\mathbb E(Y^2)}{\sqrt{\mathrm{var}(X^2)\mathrm{var}(Y^2)}}=\frac{1+2\varrho^2-1}{\sqrt{2\cdot2}}=\varrho^2. 
+X
+Y
+X = aM + bN
+Y = cM + dN
+a, b, c, d \in R
+M
+N
+0
+1
+\mathrm{Cov}[X,Y] = ac + bd
+\mathrm{Var}[X] = a^{2}+b^{2}
+\mathrm{Var}[Y] = c^{2}+d^{2}
+\rho_{X,Y} = \frac{ac+bd}{\sqrt{a^{2}+b^{2}}\sqrt{c^{2}+d^{2}}}
+X^{2}
+Y^2
+\mathrm{Cov}(X^{2},Y^{2}) = \mathrm{Cov}(a^{2}M^{2}+b^{2}N^{2}+2abMN,c^{2}M^{2}+d^{2}N^{2}+2cdMN) =
+= a^{2}c^{2}\mathrm{Var}[M^{2}] + (2a^{2}cd+2b^{2}cd+2abc^{2}+2abd^{2}) \mathrm{Cov}(M^{2},MN) +b^{2}d^{2}\mathrm{Var}[N^{2}] + 4abcd\mathrm{Cov}(MN,MN)
+M^{2}
+N^{2}
+1
+\mathrm{Var}[M^{2}]=\mathrm{Var}[N^{2}]=2
+\mathrm{Cov}(M^{2},MN) = E[M^{3}N] - E[M^{2}]E[MN] =
+= E[M^{3}]E[N] - E[M^{2}]E[M]E[N] = 0
+\mathrm{Cov}(MN,MN) = E[M^{2}N^{2}] - E[MN]E[MN] = 
+= E[M^{2}]E[N^{2}] - E[M]^{2}E[N]^{2} = 1
+\mathrm{Cov}(X^{2},Y^{2}) = 2a^{2}c^{2}+2b^{2}d^{2} +4abcd
+\mathrm{Var}[X^{2}] = \mathrm{Var}[a^{2}M^{2}+ 2abMN + b^{2}N^{2}]  = 2a^{4} + 4a^{2}b^{2} + 4b^{4}
+\mathrm{Var}[Y^{2}] = 2c^{4} + 4c^{2}d^{2} + 2d^{4}
+\rho_{X^{2},Y^{2}} = \frac{2a^{2}c^{2}+2b^{2}d^{2} +4abcd}{\sqrt{2a^{4} + 4a^{2}b^{2} + 2b^{4}} \sqrt{2c^{4} + 4c^{2}d^{2} + 2d^{4}}} =
+= \frac{(ac+bd)^2}{(a^{2}+b^{2})(c^{2}+d^{2})} = (\rho_{X,Y})^{2}

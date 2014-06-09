@@ -1,0 +1,21 @@
+a_n
+a_{n+1}=a_n+2^n
+2^k-1
+a_n
+a_{n+2}=a_{n+1}+2a_n
+a_0=a_1=1
+g(x) = \displaystyle \sum_{n=0}^\infty a_n x^n
+a_n
+g(x) = \displaystyle 1 + x + \sum_{n=2}^\infty (a_{n-1} + 2a_{n-2})x^n = 1 + x + \sum_{n=2}^\infty a_{n-1}x^n + 2\sum_{n=2}^\infty a_{n-2}x^n
+\displaystyle \sum_{n=2}^\infty a_{n-1}x^n = x \sum_{n=2}^\infty a_{n-1} x^{n-1} = x(g(x) - 1)
+\displaystyle \sum_{n=2}^\infty a_{n-2}x^n = x^2 \sum_{n=2}^\infty a_{n-2}x^{n-2} = x^2g(x)
+g(x) = 1 + x + x(g(x) - 1) + 2x^2g(x)
+F(x)
+\sum_{n=0}^{\infty}a_nx^n
+F(x)
+\sum_{n=0}^{\infty}a_{n+1}x^n = \frac{F(x)-a_0}{x}
+F(x)
+a_{n+2} = a_{n+1} + 2a_n
+\sum_{n=0}^{\infty}a_{n+2}x^n = \sum_{n=0}^{\infty}a_{n+1}x^n + 2\sum_{n=0}^{\infty}a_nx^n
+\frac{F(x)-a_0-a_1x}{x^2} = \frac{F(x)-a_0}{x} + 2F(x),
+F(x)

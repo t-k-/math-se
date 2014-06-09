@@ -1,0 +1,8 @@
+\frac{1}{x^2}
+p(x,\sigma)
+\,p(x)\,
+t=x/\sigma
+ p(x,\sigma) = \frac{\sigma/\pi}{\sigma^2+x^2} =     \frac{1/(\pi\,\sigma)}{1+(x/\sigma)^2} \qquad \mbox{with} \quad \sigma > 0
+\lim_{\sigma\rightarrow 0}\, p(x,\sigma) = \delta(x)
+    \int_{-\infty}^{+\infty} \frac{1/(\pi\,\sigma)}{1+(x/\sigma)^2}\,dx =    \frac{1}{\pi} \int_{-\infty}^{+\infty} \frac{dt}{1+t^2} =    \frac{1}{\pi} \left[\, \arctan(t)\, \right]_{-\infty}^{+\infty} = \pi/\pi = 1 
+  \lim_{x\rightarrow\pm\infty} \frac{\sigma/\pi}{\sigma^2+x^2} = 0 \qquad ; \qquad   \lim_{\sigma\rightarrow 0} \, \frac{\sigma/\pi}{\sigma^2+x^2} = \left\{    \begin{array}{ll} \infty & \mbox{if} \quad x = 0 \\ 0 & \mbox{if} \quad x \ne 0   \end{array}  \right.

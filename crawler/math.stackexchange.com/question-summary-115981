@@ -1,0 +1,48 @@
+ f
+ f\in C_{2\pi}^{0}(\mathbb{R},\mathbb{R}) 
+2\pi
+ \forall x \in [0,\pi]
+f(x)=x(\pi-x)
+f
+\zeta(2)
+\zeta(4)
+ \zeta(6) 
+ f 
+ S(f)= \frac{\pi^2}{6}-\sum_{n=1}^{\infty} \frac{\cos(2nx)}{n^2}
+ x=0,  \zeta(2)=\pi^2/6
+\zeta(2k)
+(1)
+x
+(2)
+a_n=-2\dfrac{\zeta(2n)}{\pi^{2n}}
+n
+(3)
+(4)
+\zeta(2n)
+n
+ \begin{align} f(x) &=\sum_{k=1}^\infty\zeta(2k)\,x^{2k}\\ &=\sum_{k=1}^\infty\sum_{n=1}^\infty\frac{x^{2k}}{n^{2k}}\\ &=\sum_{n=1}^\infty\frac{x^2/n^2}{1-x^2/n^2}\\ &=\sum_{n=1}^\infty\frac{x^2}{n^2-x^2}\\ &=-\frac{x}{2}\sum_{n=1}^\infty\left(\frac{1}{x-n}+\frac{1}{x+n}\right)\\ &=-\frac{x}{2}\left(\pi\cot(\pi x)-\frac1x\right)\\ &=\frac12(1-\pi x\cot(\pi x))\tag{1} \end{align} 
+ x\cot(x)=\sum_{k=0}^\infty a_kx^{2k} 
+ \cos(x)=\frac{\sin(x)}{x}\sum_{k=0}^\infty a_kx^{2k} 
+ \begin{align} \sum_{n=0}^\infty(-1)^n\!\frac{x^{2n}}{(2n)!} &=\sum_{n=0}^\infty(-1)^n\!\frac{x^{2n}}{(2n+1)!}\;\;\sum_{k=0}^\infty a_kx^{2k}\\ &=\sum_{n=0}^\infty\left(\sum_{k=0}^n(-1)^k\!\frac{a_{n-k}}{(2k+1)!}\right)x^{2n}\tag{2} \end{align} 
+ \begin{align} a_n &=\frac{(-1)^n}{(2n)!}-\sum_{k=1}^n(-1)^k\!\frac{a_{n-k}}{(2k+1)!}\\ &=\frac{(-1)^n2n}{(2n+1)!}-\sum_{k=1}^{n-1}(-1)^k\!\frac{a_{n-k}}{(2k+1)!}\tag{3} \end{align} 
+ \zeta(2n)=\frac{(-1)^{n-1}\pi^{2n}}{(2n+1)!}n+\sum_{k=1}^{n-1}\!\frac{(-1)^{k-1}\pi^{2k}}{(2k+1)!}\zeta(2n-2k)\tag{4} 
+ \begin{align} \zeta(2)&=\frac{\pi^2}{3!}=\frac{\pi^2}{6}\\ \zeta(4)&=-\frac{\pi^4}{5!}2+\frac{\pi^2}{3!}\zeta(2)=\frac{\pi^4}{90}\\ \zeta(6)&=\frac{\pi^6}{7!}3-\frac{\pi^4}{5!}\zeta(2)+\frac{\pi^2}{3!}\zeta(4)=\frac{\pi^6}{945} \end{align} 
+x^{6}=\dfrac{\pi ^{6}}{7}+2\displaystyle\sum_{n\ge 1}^{}\left( \left( \dfrac{6}{n^{2}}\pi ^{4}-\dfrac{120}{n^{4}}\pi ^{2}+\dfrac{720 }{n^{6}}\right)\cos n\pi \right) \cos nx.\tag{1}
+f(\pi )=\pi ^{2p}
+\begin{equation*} f(x)=x^{2p}=\frac{a_{0,2p}}{2}+\sum_{n=1}^{\infty }\left( a_{n,2p}\cos nx+b_{n,2p}\sin nx\right) , \end{equation*}
+\begin{eqnarray*} a_{0,2p} &=&\frac{1}{\pi }\int_{-\pi }^{\pi }x^{2p}\;\mathrm{d}x=\frac{2\pi ^{2p}}{2p+1}, \\ a_{n,2p} &=&\frac{1}{\pi }\int_{-\pi }^{\pi }x^{2p}\cos nx\;\mathrm{d}x=\frac{2}{\pi } \int_{0}^{\pi }x^{2p}\cos nx\;\mathrm{d}x, \\ b_{n,2p} &=&\frac{1}{\pi }\int_{-\pi }^{\pi }x^{2p}\sin nx\;\mathrm{d}x=0. \end{eqnarray*}
+\begin{equation*} x^{2p}=\frac{\pi ^{2p}}{2p+1}+\frac{2}{\pi }\sum_{n=1}^{\infty }\cos nx\int_{0}^{\pi }x^{2p}\cos nx\;\mathrm{d}x.\tag{2} \end{equation*}
+ \begin{equation*} \pi ^{2p}=\frac{\pi ^{2p}}{2p+1}+\frac{2}{\pi }\sum_{n=1}^{\infty }\cos n\pi \int_{0}^{\pi }x^{2p}\cos nx\;\mathrm{d}x, \end{equation*}
+ \begin{equation*} I_{n,2p}:=\int_{0}^{\pi }x^{2p}\cos nx\;\mathrm{d}x \end{equation*}
+\begin{equation*} I_{n,2p}=\frac{2p}{n^{2}}\pi ^{2p-1}\cos n\pi -\frac{2p(2p-1)}{n^{2}} I_{n,2\left( p-1\right) },\qquad I_{n,0}=0.\tag{3} \end{equation*}
+\left[ -\pi ,\pi \right] 
+f(x)=x^{6}
+(\zeta(2p))_{p\ge 1}
+x-\frac 12
+\cos(zx)
+-\pi \le x \le \pi
+ \cot(\pi z)=\frac1{\pi}\left[\frac1{z}-\sum_{k=1}^{\infty}\frac{2z}{k^2-z^2}\right] 
+x=\pi
+ \cos(zx)=\frac{2z\sin(\pi z)}{\pi}\left[\frac1{2z^2}+\frac{\cos(1x)}{1^2-z^2}-\frac{\cos(2x)}{2^2-z^2}+\frac{\cos(3x)}{3^2-z^2}-\cdots\right] 
+\frac z2\left(\cot\left(\frac z2\right)\right)
+z^2

@@ -1,0 +1,23 @@
+ f'(a^+) 
+f'_+(a) 
+ f'(a+) = f'_+(a) 
+ f'(a+)  = \lim_{x \to a^+} f'(x) 
+ f'_+(a) = \lim_{x \to a^+ } \frac{f(x) - f(a)}{x-a} 
+\textbf{Attempt:}
+\forall \epsilon > 0, \exists \delta_1, \delta_2 > 0 
+ x \in (a, a + min\{\delta_1, \delta_2\}) \implies |f'(x) - f'(a+)| < \epsilon 
+ |\frac{f(x) - f(a)}{x-a} - f'_+(a)| < \epsilon 
+ |f'(a^+)| - \epsilon < |f'(x)| < |f'(a^+)| + \epsilon 
+|f'_+(a)| - \epsilon < |\frac{f(x) - f(a)}{x-a}| < |f'_+(a)| + \epsilon 
+ |f'_+(a) - f'(a^+)| < \epsilon 
+ |f'(a^+)| + |f'_+(a)| < \epsilon 
+c \in (a, x)
+c
+(a, x)
+c \to a^+
+x \to a^+
+f'(c) \to f'(a^+)
+x \to a
+f'(a^+) = f_+'(a)
+ \frac{f(x) - f(a)}{x - a} = f'(c). 
+ \lim_{x \to a^+} \frac{f(x) - f(a)}{x - a} = \lim_{x \to a^+}f'(c) = f'(a^+). 

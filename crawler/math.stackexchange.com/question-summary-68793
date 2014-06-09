@@ -1,0 +1,18 @@
+P, Q: D \rightarrow \mathbb{R}
+D \subset \mathbb{R}
+\gamma: [a,b] \rightarrow \mathbb{R}^2
+C^1
+\gamma([a,b]) \subset D
+\Phi=(\phi, \psi): D' \rightarrow D
+C^1
+D' \subset \mathbb{R}^2
+D
+x=\phi(x',y')
+y=\psi(x',y')
+I:=\int_{\gamma} P(x,y)dx+Q(x,y)dy
+x',y'
+dx
+dy
+I
+\int_{\gamma} P(x,y)dx+Q(x,y)dy=\int_{\Phi^{-1} \circ \gamma} [P(\phi(x',y'), \psi(x',y')) \frac{\partial \phi}{\partial x'}+Q(\phi(x',y'), \psi(x',y')) \frac{\partial \psi}{\partial x'}] dx'
+[P(\phi(x',y'), \psi(x',y')) \frac{\partial \phi}{\partial y'}+Q(\phi(x',y'), \psi(x',y')) \frac{\partial \psi}{\partial y'}]dy' 

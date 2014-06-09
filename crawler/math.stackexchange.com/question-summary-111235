@@ -1,0 +1,25 @@
+\delta
+n(E)=\frac{Na}{\pi}\int_\frac{-\pi}{a}^\frac{\pi}{a} \delta(E-E_s+2J\cos ka)dk
+N,a,E,E_s,J,k
+n(E)=\frac{N}{\pi J\sqrt{1-(\frac{E-E_s}{2J})^2}}(\theta(E-E_b)-\theta(E-E_t))
+E_b=E_s-2J, E_t=E_s+2J
+\theta
+\delta
+1
+0
+\theta
+\theta
+\Omega
+f : \Omega \to \mathbb{R}
+C^1
+x_1, \cdots, x_n
+f'(x_i) \neq 0
+\mathcal{U}_i
+x_i
+\begin{align*} \int_{\Omega} \delta(f(x)) \; dx & = \sum_{i} \int_{\mathcal{U}_i} \delta(f(x)) \; dx \\ & = \sum_{i} \int_{f(\mathcal{U}_i)} \delta(y) |g_i'(y)| \; dy \\ & = \sum_{i} |g_i'(0)| \\ & = \sum_{i} \frac{1}{|f'(x_i)|}. \end{align*}
+|E - E_s| < 2J
+n(E) = 0
+|E - E_s| > 2J
+0 < \alpha < \pi
+ \frac{E - E_s}{2J} = -\cos\alpha
+\begin{align*} n(E) &= \frac{N}{\pi} \int_{-\pi}^{\pi} \delta(E-E_s + 2J \cos x) \; dx \qquad (x = ka) \\ &= \frac{N}{\pi} \left[ \left.\frac{1}{2J|\sin x|}\right|_{x = -\alpha} + \left.\frac{1}{2J|\sin x|}\right|_{x = \alpha} \right] \\ &= \frac{N}{\pi J \sin \alpha} \\ &= \frac{N}{\pi J\sqrt{1-(\frac{E-E_s}{2J})^2}}, \end{align*}

@@ -1,0 +1,7 @@
+X_0(t)=I
+t\in\mathbb{R}
+X_k(t)=I+\int_0^tAX_{k-1}(s)ds
+X_1(t)=I+\int_0^tAds=I+tA
+X_2(t)=I+\int_0^tA(I+sA)ds=I+At+\dfrac{A^2t^2}{2}
+X_3(t)=I+\int_0^tA(I+As+\dfrac{A^2s^2}{2})ds=I+At+\dfrac{A^2t^2}{2}+\dfrac{A^3t^3}{6}
+X_\infty(t)=I+\sum_{k=1}^\infty\dfrac{(At)^k}{k!}

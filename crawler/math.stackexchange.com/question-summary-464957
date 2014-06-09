@@ -1,0 +1,17 @@
+ \sum_{k=1}^nH_k=(n+1)H_n-n 
+n+1
+H_n
+\begin{matrix} 1 & \frac12 & \frac13 & \dotsb & \frac1n\\ \overline{1\Big\vert} & \frac12 & \frac13 & \dotsb & \frac1n\\ 1 & \overline{\frac12\Big\vert} & \frac13 & \dotsb & \frac1n\\ 1 & \frac12 & \overline{\frac13\Big\vert}\\ \vdots & & &\ddots & \vdots\\ 1 & \frac12 &\frac13 & \dotsb & \overline{\frac1n\Big\vert} \end{matrix}
+(n+1)H_n
+\sum\limits_{k=1}^n H_k
+\sum_{k=1}^n k\cdot\frac1k = n
+\frac 1k
+n
+\,H_k\,
+\sum_{k=1}^nH_k=\sum_{k=1}^n \frac{n+1-k}k=(n+1)H_n-n
+ \begin{align} \sum_{k=1}^nH_k &=\sum_{k=1}^n\sum_{j=1}^k\frac1j&&\text{expand }H_k\\ &=\sum_{j=1}^n\sum_{k=j}^n\frac1j&&\begin{array}{}\text{change order of summation}\\\text{where }1\le j\le k\le n\end{array}\\ &=\sum_{j=1}^n\frac{n-j+1}{j}&&\begin{array}{}\text{each term is constant over}\\\text{the inner summation}\end{array}\\ &=(n+1)\sum_{j=1}^n\frac1j-\sum_{j=1}^n1&&\text{separate terms}\\[6pt] &=(n+1)H_n-n&&\text{sum} \end{align} 
+H_n=a_1+a_2+\cdots+a_n
+K_n
+K_n=1a_1+2a_2+\cdots+na_n
+\begin{align} \sum_{k=1}^n H_k &= a_1+(a_1+a_2)+\cdots(a_1+a_2+\cdots+a_n)\\ &=na_1+(n-1)a_2+\cdots+2a_{n-1}+1a_n\\ &=(n+1)(a_1+a_2+\cdots a_n)-(1a_1+2a_2+\cdots+na_n)\\ &=(n+1)H_n - (1a_1+2a_2+\cdots+na_n)\\ &=(n+1)H_n-K_n\\ \end{align}
+K_n={1\over1}+{2\over2}+\cdots+{n\over n}=n

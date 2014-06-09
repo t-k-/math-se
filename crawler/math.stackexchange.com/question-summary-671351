@@ -1,0 +1,17 @@
+\mathbb{S}^2
+\int\limits_{\mathbb{S}^2} \vec{f} \cdot \vec{n} \ \text{d}S
+\vec{f}(x,y,z):=(x^3,y^3,z^3)^T
+B
+\int\limits_{\mathbb{S}^2} \vec{f} \cdot \vec{n} \ \text{d}S = \int\limits_B \operatorname{div} \vec{f} \ \text{d}V
+\operatorname{div}f=3x^2+3y^2+3z^2
+\phi(r,\alpha,\beta):=(r \cos\alpha, r \sin\alpha \cos\beta, r \sin\alpha \sin\beta)
+\int_{\phi(K)} f = \int_{K} f(\phi(x)) |\det \phi'(x)| \ \text{d}x
+\operatorname{div} \vec{f} = 3x^2+3y^2+3z^2
+ \begin{align} x & = r \cos \theta \sin \varphi, \\ y & = r \sin \theta \sin \varphi, \\ z & = r \cos \varphi, \end{align} 
+0 \leq \theta \leq 2 \pi
+0 \leq \varphi \leq \pi
+\operatorname{div} \vec{f} = 3 r^2.
+ \begin{align} \int\limits_{\mathbb{S}^2} \vec{f} \cdot \vec{n} \, \text{d}S & = \int\limits_{B} \operatorname{div} \vec{f} \, \text{d}V \\  & = \int_0^{2\pi} \hspace{-5pt} \int_0^{\pi} \hspace{-5pt} \int_0^1 (3r^2) \cdot (r^2 \sin \varphi) \, \text{d} r \, \text{d} \varphi \, \text{d} \theta \\  & = 3 \int_0^{2\pi} \hspace{-5pt} \text{d} \theta \int_0^{\pi} \hspace{-5pt} \sin \varphi \, \text{d} \varphi \int_0^1 \hspace{-3pt} r^4 \, \text{d} r \\  & = \frac{12 \pi}{5}. \end{align} 
+\operatorname{div} \vec{f} = 3x^2+3y^2+3z^2 =3(x^2+y^2+z^2)
+x^2+y^2+z^2=r^2,
+\operatorname{div} \vec{f} = 3(x^2+y^2+z^2) = 3r^2.

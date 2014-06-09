@@ -1,0 +1,14 @@
+x\left( s \right) = \frac{\pi }{2}\frac{{\log s}}{{{s^2} - 1}}
+\gamma
+\mathcal{L}\left( {\log t} \right)\left( s \right) =  - \frac{{\gamma  + \log s}}{s}
+x\left( s \right) = \frac{\pi }{2}\frac{s}{{{s^2} - 1}}\frac{{\gamma  + \log s}}{s} - \frac{\pi }{2}\frac{\gamma }{{{s^2} - 1}}
+x\left( s \right) =  - \frac{\pi }{2}\cosh t * \log t - \frac{\pi }{2}\gamma \sinh t
+ * 
+\mathcal{L}^{-1}_{s\to t}\left\{\dfrac{\pi}{2}\dfrac{\log s}{s^2- 1}\right\}
+=\dfrac{\pi}{2}\mathcal{L}^{-1}_{s\to t}\left\{\dfrac{s}{s^2- 1}\times\dfrac{\log s}{s}\right\}
+=\dfrac{\pi}{2}\left(\mathcal{L}^{-1}_{s\to t}\left\{\dfrac{s}{s^2- 1}\right\}*\mathcal{L}^{-1}_{s\to t}\left\{\dfrac{\log s}{s}\right\}\right)
+=\dfrac{\pi}{2}\left(\cosh t*(-\log t-\gamma)\right)
+=\dfrac{\pi}{2}\int_0^t\cosh(t-u)(-\log u-\gamma)~du
+=-\dfrac{\gamma\pi}{2}\int_0^t\cosh(t-u)~du-\dfrac{\pi}{2}\int_0^t\cosh(t-u)\log u~du
+=\dfrac{\gamma\pi}{2}[\sinh(t-u)]_0^t-\dfrac{\pi}{2}\int_0^t(\cosh t\cosh u-\sinh t\sinh u)\log u~du
+=-\dfrac{\gamma\pi\sinh t}{2}+\dfrac{\pi\sinh t}{2}\int_0^t\sinh u\log u~du-\dfrac{\pi\cosh t}{2}\int_0^t\cosh u\log u~du

@@ -1,0 +1,49 @@
+T(n) = 4T(n/2 + 2) + n
+\theta
+n=7
+T(x)
+x
+ \begin{align} T(7)&=4T(5.5)+7\\ &=4(4T(4.75)+5.5)+7=16T(4.75)+22+7\\ &=64T(4.375)+76+22+7 \end{align} 
+T(4)=4T(\lfloor4/2\rfloor+2)+4=4T(4)+4\text{, so }T(4)=-4/3
+n=4
+(\lfloor n/a\rfloor+b)
+ T(n)=4T\left(\left\lfloor\frac{n}{2}\right\rfloor+2\right)+n \qquad\qquad\qquad\text{(*)} 
+T(2^k)
+k>2
+T
+2^{k-j}+3
+T(2^k)
+2^{k-j}+3=4\text{, namely when }j=k
+n
+T(4),T(5), T(6), \dots
+2^{k-1}<n\le2^k
+T(n)=\Theta(n^2)
+ \begin{align} 2^k&=2^k\\ \left\lfloor\frac{2^k}{2}\right\rfloor+2&=2^{k-1}+2\\ \left\lfloor\frac{2^{k-1}+2}{2}\right\rfloor+2&=2^{k-2}+1+2\\ \left\lfloor\frac{2^{k-2}+1+2}{2}\right\rfloor+2&=2^{k-3}+1+2\\ \left\lfloor\frac{2^{k-3}+1+2}{2}\right\rfloor+2&=2^{k-4}+1+2\\ \end{align} 
+ \begin{align} T(2^k)&=4T(2^{k-1}+2)+2^k\\ &=4(4T(2^{k-2}+3)+(2^{k-1}+2))+2^k\\ &=4^2T(2^{k-2}+3)+4(2^{k-1}+2)+2^k\\ &=4^2(4T(2^{k-3}+3)+(2^{k-2}+3))+4(2^{k-1}+2)+2^k\\ &=4^3T(2^{k-3}+3)+4^2(2^{k-2}+3)+4(2^{k-1}+2)+2^k \end{align} 
+ \begin{align} T(2^k)&=4^jT(2^{k-j}+3)+4^{j-1}(2^{k-j+1}+3)+\cdots+4(2^{k-1}+2)+2^k\\ T(2^k)&=4^jT(2^{k-j}+3)+4^{j-1}(2^{k-j+1}+3)+\cdots+4(2^{k-1}+3)+(2^k+3)-7 \end{align} 
+ \begin{align} T(2^k)&=4^kT(4)-7+\sum_{i=0}^{k-1}4^i(2^{k-i}+3)\\ &=4^k(-\frac{4}{3})-7+2^k\sum_{i=0}^{k-1}2^i+3\sum_{i=0}^{k-1}4^i\\ &=4^k(-\frac{4}{3})-7+2^k(2^k-1)+3\frac{4^k-1}{3}\\ &=\frac{2}{3}(2^k)^2-2^k-8 \end{align} 
+ T(n)=\frac{2}{3}n^2-n-8 
+ \frac{2}{3}2^{2(k-1)}-2^{k-1}-8 < T(n) \le \frac{2}{3}2^{2k}-2^k-8 
+T(n)=4T(n/2+2)+n
+2
+n=m+4
+T(m+4)=4T(m/2+4)+m+4
+m=2^t
+T(2^t+4)=4T(2^{t-1}+4)+2^t+4
+4
+T(2^t+4)=4^tf(t)
+f(t)=f(t-1)+2^{-t}+4^{1-t}.
+A+B2^{-t}+C4^{-t}=A+2B2^{-t}+4C4^{-t}+2^{-t}+4\cdot4^{-t}
+(B-2B-1)2^{-t}+(C-4C-4)4^{-t}=0,
+B=-2
+C=-\frac43
+t=\lg m=\lg(n-4)\Rightarrow T(m+4)=m^2f(\lg m)=Am^2-2m-\frac43
+T(n)=A(n-4)^2-2n-\frac{20}3
+f(t)
+g(t)
+T(m+4)=m^2g(\lg m)-2m-\frac43
+T(n)
+g(n)
+T(n)=\Theta(n^2)
+\Theta(n^2)
+T(m+4)=m^2\tan(\pi\lg m)-2m-\frac43

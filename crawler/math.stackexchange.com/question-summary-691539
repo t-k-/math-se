@@ -1,0 +1,35 @@
+\lim_{x\rightarrow x_0;x\in X\backslash\{x_0\}} \frac{(g\circ f)(x)-(g\circ f)(x_0)}{x-x_0}=g'(y_0)f'(x_0)
+\varepsilon>0
+\delta>0
+(g\circ f)(x)
+\varepsilon |x-x_0|
+(g\circ f)(x_0)+g'(y_0)f'(x_0)(x-x_0)
+x\in X
+x
+\delta
+x_0
+g(f(x))-g(f(x_0))-g'(y_0)f'(x_0)(x-x_0)=
+\big|f(x)-f(x_0)-f'(x_0)(x-x_0) \big|\le  |x-x_0| \varepsilon_1
+f
+x_0
+\varepsilon_1=\varepsilon/2(| g'(f(x_0))|+1)
+\delta_1>0
+\{x\in X: |x-x_0|\le \delta_1\}
+\big|f(x)-f(x_0)-f'(x_0)(x-x_0) \big|\le  \frac{ |x-x_0| \varepsilon}{2(| g'(f(x_0))|+1)}
+\varepsilon_2=\varepsilon/2(|f'(x_0)|+1))
+|g(y)-g(y_0)-g'(y_0)(y-y_0)|\le |y -y_0|\varepsilon_2
+r>0
+|y-y_0|\le r
+f
+x_0
+\delta_2
+0<\delta_2\le \delta_1
+|f(x)-f(x_0)|\le r
+|f(x)-f(x_0)|\le |x-x_0|(|f'(x_0)|+1)
+\begin{align}|g(f(x))-g(f(x_0))-g'(y_0)f'(x_0)(x-x_0)|\le |x-x_0|\varepsilon /2+ |g'(f(x_0))|\frac{ |x-x_0| \varepsilon}{2(| g'(f(x_0))|+1)} \\ \le |x-x_0| \varepsilon\end{align}
+x
+\delta_2
+x_0
+g\circ f(x_0):=\lim_{x\to x_0}\frac{g\circ f(x)-g\circ f(x_0)}{x-x_0}=
+=\lim_{x\to x_0}\frac{g(f(x))-g(f(x_0))}{f(x)-f(x_0)}\cdot\frac{f(x)-f(x_0)}{x-x_0}=g'(f(x_0))\cdot f'(x_0)
+x\to x_0\implies f(x)\to f(x_0)

@@ -1,0 +1,19 @@
+L
+L(c_1 u_1+c_2 u_2)=c_1 L(u_1)+c_2 L(u_2),
+c_1,c_2 \in \mathbb{R}
+u_1=u_1(\overrightarrow{x})
+u_2=u_2(\overrightarrow{x})
+Lu=u \frac{\partial{u}}{\partial{x_1}}+\frac{\partial{u}}{\partial{x_2}}
+L(au)
+aL(u)
+L
+a=2
+L(au)=au\frac{\partial au}{\partial x_1}+\frac{\partial au}{\partial x_2}=a^2u\frac{\partial u}{\partial x_1}+a\frac{\partial u}{\partial x_2}=a\left(au\frac{\partial u}{\partial x_1}+\frac{\partial u}{\partial x_2}\right)
+aL(u)=au\frac{\partial u}{\partial x_1}+a\frac{\partial u}{\partial x_2}\neq a\left(au\frac{\partial u}{\partial x_1}+\frac{\partial u}{\partial x_2}\right)
+L(au)\neq aL(u)\mbox{, so $L$ is not linear (obvious if we take $a=2$).}
+u=x_1
+v=x_2
+L(u)=u
+L(v)=1
+L(u+v)=u+v+1
+L(f+g)=(f+g)\big(f_{x_1}+g_{x_1}\big)+\big(f_{x_2}+g_{x_2}\big)=\big(ff_{x_1}+f_{x_2}\big)+\big(gg_{x_1}+g_{x_2}\big)+\big(fg_{x_1}+gf_{x_1}\big)=L(f)+L(g)+\big(fg_{x_1}+gf_{x_1}\big)

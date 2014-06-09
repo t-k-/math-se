@@ -1,0 +1,13 @@
+x^2
+0
+4
+\int_0^4 \sqrt{(1+4x^2)}dx
+16.8
+\int \sqrt{1+4x^2} \mathrm{d} x
+   \int \sqrt{1+4x^2} \mathrm{d x} = x \sqrt{1+4x^2} - \int \frac{4 x^2}{\sqrt{1+4x^2}} \mathrm{d} x = x \sqrt{1+4x^2} - \int \sqrt{1+4x^2} \mathrm{d} x + \int \frac{\mathrm{d}x }{\sqrt{1+4x^2}} 
+    \int \sqrt{1+4x^2} \mathrm{d} x = \frac{x}{2} \sqrt{1+4x^2} + \frac{1}{2} \int \frac{\mathrm{d}x }{\sqrt{1+4x^2}} = \frac{x}{2} \sqrt{1+4x^2} + \frac{1}{4} \operatorname{arcsinh}(2x) 
+   \int_0^4 \sqrt{1+4x^2} \mathrm{d} x = 2 \sqrt{65} + \frac{1}{4} \operatorname{arcsinh}(8)   \approx 16.8186 
+(0, 0)
+(4, 16)
+\sqrt{4^2 + 16^2} = 4\sqrt{17} \approx 16.4924
+16.4924

@@ -1,0 +1,21 @@
+\Omega
+\mathbb R^n
+c:\mathbb R \to \mathbb R
+\lambda_1 (\Omega)
+\Omega
+\alpha
+\sup_{t\in \mathbb R} |c'(t)| \leq \alpha < \lambda_1 (\Omega),
+\Omega
+u
+v
+z:=u-v
+z
+c(u)-c(v)
+L z = c'(x^*(u,v))z.
+|c'/\lambda_1|
+ \alpha/\lambda_1<1
+z
+0
+\left\Vert \frac{c'}{\lambda_1}z\right\Vert^2 < \Vert z \Vert^2
+\begin{align} \Vert z \Vert^2 &=\sum |\langle z,\phi_i\rangle |^2 \\ &=\sum \frac 1 {\lambda_i^2}|\langle z,\lambda_i\phi_i\rangle |^2 \\ &=\sum \frac 1 {\lambda_i^2}|\langle z,L \phi_i\rangle |^2 \\ &=\sum \frac 1 {\lambda_i^2}|\langle L z,\phi_i\rangle |^2 \quad \text{since }L\text{ is self-adjoint,}\\ &=\sum \frac 1 {\lambda_i^2}|\langle c'z,\phi_i\rangle |^2 \\ &\leq \sum \frac 1 {\lambda_1^2}|\langle c'z,\phi_i\rangle |^2=\left\Vert \frac{c'}{\lambda_1}z\right\Vert^2.  \end {align}
+\int \left|\frac{c'}{\lambda_1}z\right|^2\le \int \left|\frac{\alpha}{\lambda_1}z\right|^2 < \int |z|^2,

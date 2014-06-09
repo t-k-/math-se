@@ -1,0 +1,36 @@
+\int_{s_1=0}^1\int_{s_2=s_1}^1\int_{s_3=s_2}^1\cdots \int_{s_n=s_{n-1}}^1\prod_{i=1}^n f(s_i) ds_n ds_{n-1} \cdots ds_1.
+n
+f(s)
+n
+f(s)
+\int_{s_n=0}^1 \int_{s_{n-1}=0}^{s_n} \cdots \int_{s_1=0}^{s_2} \prod_{i=1}^n f(s_i) ds_1 ds_2 \cdots ds_n.
+n!
+f(s)=1
+f(s)=Cs^k
+\frac{1}{n!} \left( \frac{C}{k+1} \right)^n.
+\frac{C}{k+1}
+f(s)
+0
+1
+\int_{s_n=0}^1 \int_{s_{n-1}=0}^{s_n} \cdots \int_{s_1=0}^{s_2} \prod_{i=1}^n f(s_i) ds_1 ds_2 \cdots ds_n \overset{?}{=} \frac{1}{n!} \left( \int_0^1 f(s) ds \right)^n.
+n=2
+f(s)=\exp(s)
+f(s)=as^2+bs+c
+f(s)
+\pi
+n
+C_\pi = \{ s \in [0,1]^n : 0 \leqslant s_{\pi(1)} \leqslant s_{\pi(2)} \leqslant \dotsc \leqslant s_{\pi(n)}\}.
+[0,1]^n = \bigcup\limits_{\pi \in S_n} C_\pi
+\pi \neq \sigma
+C_\pi \cap C_\sigma
+\begin{align} \left(\int_0^1 f(s)\,ds\right)^n &= \int_{[0,1]^n} \prod_{i=1}^n f(s_i) \,ds_1\dotsc ds_n\\ &= \sum_{\pi \in S_n} \int_{C_\pi} \prod_{i=1}^n f(s_i)\,ds_1\dotsc ds_n. \end{align}
+\prod\limits_{i=1}^n f(s_i)
+C_\pi
+\pi
+C_{\operatorname{id}}
+C_\pi
+\int_{C_\pi} \prod_{i=1}^n f(s_i)\,ds_1\dotsc ds_n
+\pi
+\int_{C_\pi} \prod_{i=1}^n f(s_i)\,ds_1\dotsc ds_n = \frac{1}{n!}\left(\int_0^1 f(s)\,ds\right)^n
+n!
+n

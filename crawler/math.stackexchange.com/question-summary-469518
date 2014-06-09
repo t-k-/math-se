@@ -1,0 +1,25 @@
+n\ge 2,n\in Z
+x_{1},x_{2},\cdots,x_{n}\in[0,1]
+\sum_{1\le i<j\le n}ix_{i}x_{j}\le\dfrac{n-1}{3}\sum_{k=1}^{n}kx_{k}
+\sum_{k=1}^{n}kx^2_{k}\le\dfrac{n(n+1)(2n+1)}{6}-2\sum_{1\le i<j\le n}ix_{i}x_{j}
+\sum_{k=1}^{n}kx^2_{k}\sum_{k=1}^{n}k\ge(\sum_{k=1}^{n}(kx_{k})^2\Longrightarrow\sum_{k=1}^{n}kx^2_{k}\ge\dfrac{2}{n(n+1)}\left(\sum_{k=1}^{n}kx_{k}\right)^2
+\dfrac{2}{n(n+1)}\left(\sum_{k=1}^{n}kx_{k}\right)^2\le\dfrac{n(n+1)(2n+1)}{6}-2\sum_{1\le i<j\le n}ix_{i}x_{j}
+\dfrac{n(n+1)(2n+1)}{6}-\dfrac{2}{n(n+1)}\left(\sum_{k=1}^{n}kx_{k}\right)^2\le\dfrac{n-1}{3}\sum_{k=1}^{n}kx_{k}
+\sum_{k=1}^{n}kx_{k}=A\in[0,\dfrac{n(n+1)}{2}]
+\dfrac{n(n+1)(2n+1）}{6}-\dfrac{2}{n(n+1)}A^2\le\dfrac{n-1}{3}A
+n=2
+n
+L_n := \sum_{1 \leq i<j\leq n} i x_i x_j
+R_n := \frac{n-1}{3} \sum_{1 \leq i \leq n} i x_i
+L_n \leq R_n
+n = 1
+n
+n+1
+\Delta L_n \leq \Delta R_n
+\Delta L_n := L_{n+1} - L_n
+\Delta R_n := R_{n+1} - R_n
+\Delta R_n \geq \Delta L_n
+{n+1 \choose 2} x_{n+1} \geq \Delta L_n
+\Delta L_n = \sum_{1 \leq i\leq n} i x_i x_{n+1}
+\Delta R_n = \frac{1}{3} \sum_{1 \leq i\leq n} i x_i x_{n+1} + \frac{(n+1)n}{3} x_{n+1} = \frac{1}{3} L_n + \frac{2}{3}{n+1 \choose 2} x_{n+1}
+\Delta L_n = \sum_{1 \leq i\leq n} i x_i x_{n+1} \leq x_{n+1} \sum_{1 \leq i\leq n} i = x_{n+1} {n+1 \choose 2}

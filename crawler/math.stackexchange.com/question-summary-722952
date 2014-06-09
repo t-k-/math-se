@@ -1,0 +1,24 @@
+{n \choose k}
+ \lceil \frac{n}{2} \rceil 
+ \lfloor \frac{n}{2} \rfloor
+{n\choose k'}\le{n\choose k''}
+0\le k'\le k''\le\lceil\frac n2\rceil
+k''=\lceil\frac n2\rceil
+k'=k
+k'=n-k
+k\le\frac n2
+{n\choose k}={n\choose n-k}\le{n\choose \lceil n/2\rceil}={n\choose \lfloor n/2\rfloor}
+k\mapsto n-k
+{n\choose k-1}\le{n\choose k}
+1\le k\le\lceil\frac n2\rceil
+{n\choose k}\le{n\choose k+1}\le\dots\le{n\choose l}
+k\le l
+{n\choose k-1}=\frac{n!}{(k-1)!(n-k+1)!}=\frac{n!}{k!(n-k)!}\frac{k}{n-k+1}={n\choose k}\frac{k}{n-k+1},
+{n\choose k-1}\le{n\choose k}
+\frac{k}{n-k+1}\le 1
+k\le n-k+1\iff 2k\le n+1\iff k\le \frac{n+1}2\iff k\le \left\lceil\frac{n}2\right\rceil,
+\displaystyle \binom nk>0
+0\le k\le n
+n>0,k
+k
+\frac{\binom n{k+1}}{\binom nk}=\frac{n-k}{k+1}>=<1

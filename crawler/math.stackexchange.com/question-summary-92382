@@ -1,0 +1,33 @@
+x \in [0,1]
+g_0(x) = 1, g_1(x) = x
+ \begin{align} g_{n+2}(x) & = g_{n}(x) - \left \lfloor \frac{g_n(x)}{g_{n+1}(x)} \right \rfloor g_{n+1}(x) \end{align} 
+x = \sum_{n=0}^{\infty} \left \lfloor \frac{g_n}{g_{n+1}} \right \rfloor g_{n+1}^2
+ \begin{align*} \sum_{n=0}^{\infty} \left \lfloor \frac{g_n}{g_{n+1}} \right \rfloor g_{n+1}^2 &= \sum_{n=0}^{\infty} \left( \left \lfloor \frac{g_n}{g_{n+1}} \right \rfloor g_{n+1} \right) \cdot g_{n+1} \\&= \sum_{n=0}^{\infty} \left( g_{n} - g_{n+2} \right) \cdot g_{n+1} \\&= \sum_{n=0}^{\infty}  \left(g_{n} g_{n+1} - g_{n+1} g_{n+2} \right) \\&= g_0 g_1 = x, \end{align*} 
+N
+\sum \limits_{n=0}^{\infty}  \left(g_{n} g_{n+1} - g_{n+1} g_{n+2} \right)
+g_0 g_1
+ \left| g_0 g_1 -  \sum_{n=0}^{N}  (g_n g_{n+1} - g_{n+1} g_{n+2}) \right| = g_{N+1} g_{N+2} \to 0. 
+x \times 1
+x < 1
+\displaystyle \left \lfloor \frac{1}{x} \right \rfloor
+x \times x
+\displaystyle \left \lfloor \frac{1}{x} \right \rfloor x^2
+\left(1 - \left \lfloor \frac1x \right \rfloor x \right) \times x
+\left(1 - \left \lfloor \frac1x \right \rfloor x \right) \times \left(1 - \left \lfloor \frac1x \right \rfloor x \right)
+\displaystyle \left \lfloor \frac{x}{\left(1 - \left \lfloor \frac1x \right \rfloor x \right)} \right \rfloor
+\displaystyle \left \lfloor \frac{x}{\left(1 - \left \lfloor \frac1x \right \rfloor x \right)} \right \rfloor \left(1 - \left \lfloor \frac1x \right \rfloor x \right)^2
+n^{th}
+g_{n-1}(x)
+g_n(x)
+g_n(x) \leq g_{n-1}(x)
+g_{n}(x)
+g_{n-1}(x) \times g_n(x)
+\displaystyle \left \lfloor \frac{g_{n-1}(x)}{g_{n}(x)} \right \rfloor
+\displaystyle \left \lfloor \frac{g_{n-1}(x)}{g_{n}(x)} \right \rfloor g^2_{n}(x)
+n^{th}
+\displaystyle \left \lfloor \frac{g_{n-1}(x)}{g_{n}(x)} \right \rfloor g^2_{n}(x)
+(n+1)^{th}
+g_{n}(x) \times g_{n+1}(x)
+g_{n+1}(x)
+g_{n-1}(x) - \left \lfloor \frac{g_{n-1}(x)}{g_n(x)} \right \rfloor g_n(x)
+x = x \times 1 = \sum_{n=1}^{\infty} \left \lfloor \frac{g_{n-1}(x)}{g_{n}(x)} \right \rfloor g^2_{n}(x)

@@ -1,0 +1,58 @@
+D(a, b) = f_{xx}(a,b)f_{yy}(a, b) - (f_{xy}(a, b))^2
+f(x,y)
+(a, b, f(a,b))
+\lambda_1
+\lambda_2
+\lambda_i
+f
+(x_0,y_0)
+(x_0,y_0)
+\lambda_i
+\lambda_i
+2\times2
+\lambda_i
+(x_0,y_0)
+\begin{align*} f(x,y)&=f(x_0,y_0)+\Big[f_x(x_0,y_0)\cdot(x-x_0)+f_y(x_0,y_0)\cdot(y-y_0)\Big]\\ &\phantom{{}={}}+\frac12\Big[f_{xx}(x_0,y_0)\cdot(x-x_0)^2+f_{xy}(x_0,y_0)\cdot(x-x_0)(y-y_0)\\ &\phantom{{}={}}+f_{yx}(x_0,y_0)\cdot(y-y_0)(x-x_0)+f_{yy}(x_0,y_0)\cdot(y-y_0)^2\Big]+\cdots\\ &=f(x_0,y_0)+\nabla f(x_0,y_0)\cdot\left((x,y)-(x_0,y_0)\right)^T\\ &\phantom{{}={}}+\frac12\left((x,y)-(x_0,y_0)\right)\cdot H(x_0,y_0)\cdot\left((x,y)-(x_0,y_0)\right)^T+\cdots \end{align*}
+\begin{align*} f(x,y)&=f(x_0,y_0)+\frac12\left((x,y)-(x_0,y_0)\right)\cdot H(x_0,y_0)\cdot\left((x,y)-(x_0,y_0)\right)^T+\cdots \end{align*}
+s
+t
+H
+H
+f(s;t)=f(0;0)+\frac12\lambda_1s^2+\frac12\lambda_2t^2+\cdots
+f: \mathbb{R}^n \longrightarrow \mathbb{R}
+x\mapsto \text{d}f(x) \in \mathcal{L}(\mathbb{R^n},\mathbb{R})
+\mathcal{L}(\mathcal{L}(\mathbb{R}^n,\mathbb{R}),\mathbb{R})
+\mathbb{R}^n \longrightarrow\mathbb{R}
+d^2f(x)
+\text{d}^2f(x)
+f
+f(x+h) = f(x) + \text{d}f(x).h + \frac{1}{2}\text{d}^2f(x).h^{(2)} + o(\|h\|^2)
+f(x+h)=f(x)+ \nabla f(x).h + \frac{1}{2}h^T\mathcal{H}f(x)h  + o(\|h\|^2)
+x
+f(x+h)=f(x)+ \frac{1}{2}h^T\mathcal{H}f(x)h  + o(\|h\|^2)
+f
+\mathcal{H}f(x)
+h
+f(x+h)-f(x)\geq 0
+f
+x
+\mathcal{H}f(x)
+h
+f(x+h)-f(x)\leq 0
+f
+x
+\mathcal{H}f(x)
+n=2
+r=\frac{\partial^2 f}{\partial x^2}
+t=\frac{\partial^2f}{\partial y^2}
+s=\frac{\partial^2f}{\partial x \partial y}
+q(h)=d^2f(x).(h1,h2)^{(2)} = rh_1^2 +2sh_1h_2 +th_2^2
+r>0, q(h_1,h_2)=r[(h_1+\frac{s}{r}h_2)^2 + \frac{rt-s^2}{r^2}h_2^2]
+rt-s^2>0
+q(h_1,h_2)\geq 0
+q(h_1,h_2)=0 \Rightarrow (h_1,h_2)=0
+\mathcal{H}f(x)
+rt-s^2<0
+q
+r<0
+r=0

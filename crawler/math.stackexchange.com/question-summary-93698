@@ -1,0 +1,109 @@
+N \times N
+N = 6
+\begin{array}{} 0&1&2&3&4&5\\ 1&0&3&2&5&4\\ 2&3&0&1&6&7\\ 3&2&1&0&7&6\\ 4&5&6&7&0&1\\ 5&4&7&6&1&0 \end{array}
+f(\text{row}, \text{column}) = \text{Matrix}[\text{row}][\text{column}]
+a(m,n)
+m
+n
+a(m,n)=\operatorname{mex}\big(\{a(k,n):k<m\}\cup\{a(m,k):k<n\}\big)\;,\tag{1}
+\operatorname{mex}(A)
+A
+a(m,n)=m\oplus n
+m
+n
+m+n
+m+n=0
+a(0,0)=0=0\oplus 0
+m,n\in\mathbb{N}
+m',n'\in\mathbb{N}
+m'+n'<m+n
+m
+n
+s=m\oplus n
+s=a(m,n)
+(1)
+0\le t<s
+d=t\oplus s
+k
+d
+2^{k-1}\le d<2^k
+d
+1
+k
+t<s
+t
+0
+k
+s
+1
+s=m\oplus n
+m
+n
+1
+k
+m
+1
+k
+d\oplus m
+0
+k
+m
+k
+d\oplus m<m
+k=d\oplus m
+k<m
+k+n<m+n
+t=k\oplus n=a(k,n)
+k\oplus n=d\oplus m\oplus n=d\oplus s=t\oplus s\oplus s=t\;.
+s\in\{a(k,n):k<m\}\cup\{a(m,k):k<n\}
+s\in\{a(k,n):k<m\}
+k<n
+s=a(k,n)
+k+n<m+n
+k
+m\oplus n=a(m,n)
+k\oplus n=a(k,n)=s=m\oplus n\;,
+k=k\oplus n\oplus n=m\oplus n\oplus n=m\;,
+ f(4i+r, 4j+s) = f(r,s)+4f(i,j)
+f(\sum a_i 4^i, \sum b_i 4^i) = \sum h(a_i,b_i) 4^i
+h
+0\leq x,y<2^n
+x
+y
+I_n
+I_n
+   x=\sum_{i=0}^{n-1} x_i 2^i,   \quad   y=\sum_{i=0}^{n-1} y_i 2^i   \quad   \text{for}   \quad   x_i, y_i \in \{0,1\},   \quad   \text{and}   \quad   x,y \in I_n=\{0,1,\dots,2^n-1\}, 
+   f(x,y) = XOR(x,y) \equiv \sum_{i=0}^{n-1} x_i y_i 2^i 
+x_n,y_n\in\{0,1\}
+(x_i,y_i)=(0,0)
+(x_i,y_i)=(0,1)
+(x_i,y_i)=(1,0)
+I_n
+f
+2^n
+0
+I_{n+1} \setminus I_n = \{2^n,2^n+1,\dots,2^{n+1}-1\}
+(x_i,y_i)=(1,1)
+I_{n+1} \setminus I_n
+I_n
+   f(2^i x_i + x, 2^i y_i + y)   = 2^i XOR(x_i,y_i) + f(x,y)   = 2^i x_i y_i + f(x,y) 
+(x,y)
+0 \leq x,y < N
+0
+N-1
+N=2^n
+A
+2^n
+B
+A
+A\oplus B
+B
+5^{th}
+(101)_2
+(101)_2
+5^{th}(101)_2
+7^{th}(111)_2
+3^{rd}
+4^{th}
+5^{th}
+6^{th}

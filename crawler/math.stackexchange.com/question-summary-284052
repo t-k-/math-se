@@ -1,0 +1,6 @@
+\displaystyle f(x)=\int_x^{x+1}\sin (\text{e}^t)\text{d}t
+\displaystyle \text{e}^x\left|f(x)\right|\le 2
+\displaystyle f(x)=\int_x^{x+1}\sin (\text{e}^t)\text{d}t\implies \displaystyle e^xf(x)=\int_x^{x+1}e^x\sin (\text{e}^t)\text{d}t \leq \int_x^{x+1}e^t\sin (\text{e}^t)\text{d}t 
+x\leq t\leq x+1)
+z=e^t
+\displaystyle e^xf(x)\leq\int_{e^x}^{e^{x+1}}\sin (\text{z})\text{d}z=\cos(e^{x})-\cos(e^{x+1})\implies e^x|f(x)|\leq |\cos(e^{x})|+|\cos(e^{x+1})|\leq 2

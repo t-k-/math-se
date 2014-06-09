@@ -1,0 +1,16 @@
+x\in R^3
+f(x)
+g(x)
+f\ast g
+f
+f(Ax) = f(x)
+A
+f
+g
+A\in O(n)
+g
+f
+z = A^Ty
+\lvert\det A\rvert = 1
+\begin{align} (f\ast g)(Ax) &= \int_{\mathbb{R}^n} f(y) g(Ax-y)\,dy\\ &= \int_{\mathbb{R}^n} f(y) g(A(x-A^T y))\,dy\\ &= \int_{\mathbb{R}^n} f(y) g(x-A^T y)\,dy\tag{$g$ symmetric}\\ &= \int_{\mathbb{R}^n} f(A^T y) g(x - A^T y)\,dy\tag{$f$ symmetric}\\ &= \int_{\mathbb{R}^n} f(z) g(x-z) \lvert \det A\rvert\,dz\tag{substitute $z = A^Ty$}\\ &= \int_{\mathbb{R}^n} f(z)g(x-z)\,dz\tag{$\lvert\det A\rvert = 1$}\\ &= (f\ast g)(x), \end{align}
+f\ast g

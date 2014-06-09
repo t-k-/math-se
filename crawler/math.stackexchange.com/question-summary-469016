@@ -1,0 +1,28 @@
+\Omega
+\mathbb{R}^n
+T>0
+h\neq 0
+u\in L^2(0,T;H^1(\Omega))
+u
+f \in L^1
+f_h(t) :=\frac{1}{h} \int_t^{t+h} f(x,s) ds
+\partial_{x_j} u_h =(\partial_{x_j} u)_h
+h\neq 0
+(x,t)\in\Omega\times (0,T)
+u_h
+\phi\in C_c^\infty((0,T)\times \Omega)
+\chi_{[t,t+h]}(s)=\chi_{[s-h,s]}(t)
+\partial_j \phi(x,t)
+\phi
+u
+w:=u_j
+...=-\frac{1}{h}\int_\Omega \int_0^T  u(x,s) \int_{s-h}^{s}\partial_j \phi(x,t) =-\frac{1}{h}\int_\Omega \int_0^T  u(x,s) \partial_j\int_{s-h}^{s} \phi(x,t) 
+\int w \phi=-\int u\phi_j
+\int_{s-h}^s \phi
+C_c^\infty((0,T)\times \Omega)
+h
+\phi
+\phi
+u_m
+u_m \to u \in L^2(0,T;H^1(\Omega))
+\int \partial_j u_h \phi = - \int u_h \partial_j \phi \leftarrow -\int (u_m)_h \partial_j\phi = \int \partial_j (u_m)_h \phi =\int (\partial_j u_m)_h \phi \to \int (\partial_j u)_h\phi

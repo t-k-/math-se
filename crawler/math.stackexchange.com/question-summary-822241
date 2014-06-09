@@ -1,0 +1,13 @@
+r
+k
+k
+ P(k,m,N) = \frac{1}{m^N}\sum_{r=1}^{\lfloor N/k \rfloor}(-1)^r \left( \begin{array}{c}m\\r\end{array} \right) (m-r)^{N-rk}\prod_{s=0}^{r-1} \left( \begin{array}{c}N-2s\\k\end{array} \right) 
+N,m
+\lambda = N/m
+t = \lambda/k
+P \approx  1- \left( \frac{e^{-\lambda} \lambda^k}{k!}\right)^m=\\ =1-  \left( \frac{k^k}{k!}\right)^m \left( t^k e^{-t k} \right)^m 
+t
+k,m
+t=1
+N=k m
+ P_{max}\approx 1-  \left( \frac{1}{\sqrt{2 \pi k }}\right)^m

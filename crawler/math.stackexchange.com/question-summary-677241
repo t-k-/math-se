@@ -1,0 +1,54 @@
+A
+n
+[1,100]
+A
+i
+i
+n=1
+A=\{9\}
+1
+n=2
+A=\{2,5\}
+2!
+A=\{5,5\}
+n=3
+A=\{1, 4, 3\}
+3!
+n
+i
+i
+s
+n
+t^a
+a
+s
+l
+s
+i
+i\leq n
+s
+s
+i
+l
+l
+i-1
+s
+l
+i
+i-1
+s
+\left(\prod_{a\in S} t^a_2!\right)\cdot\left(\prod_{a\notin S} t^a!\right)
+\sum_{S\subseteq [1,100]~\text{and}~ |S|=i-1}\left[\binom{n-1}{i-1}\cdot\left(\prod_{a\in S} t^a_1!\right)\cdot\left(\prod_{a\in S} t^a_2!\right)\cdot\left(\prod_{a\notin S} t^a!\right)\right]
+i=1,\ldots,n
+i
+\sum_{i=1}^n\left(\sum_{S\subseteq [1,100]~\text{and}~ |S|=i-1}\left[\binom{n-1}{i-1}\cdot\left(\prod_{a\in S} t^a_1!\right)\cdot\left(\prod_{a\in S} t^a_2!\right)\cdot\left(\prod_{a\notin S} t^a!\right)\right]\right)
+t_i
+i
+i
+0
+9
+(a_1, \ldots, a_{t_1 + \cdots + t_9})
+0 \leq a_i \leq 9
+a_i \leq a_j
+i < j
+t_1!\cdots t_9!

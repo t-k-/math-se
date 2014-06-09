@@ -1,0 +1,24 @@
+ \iiint\cos\left(ax + by + cz\right)\,{\rm d}x\,{\rm d}y\,{\rm d}z \qquad\mbox{and}\qquad x^{2} + y^{2} + z^{2} \leq 1 
+\quad u = ax + by + cz\,,\quad v=y\quad
+\quad w=z
+\vec{u}
+(a,b,c)
+\lambda = |\vec{u}| = \sqrt{a^2+b^2+c^2}
+\displaystyle\;\hat{u} = \frac{\vec{u}}{|\vec{u}|}
+\hat{v}
+\hat{w}
+\hat{u}, \hat{v}, \hat{w}
+\mathbb{R}^3
+\vec{r} = (x,y,z) = x\hat{x} + y\hat{y} + z\hat{z} = u\hat{u}+v\hat{v}+w\hat{w}
+\hat{v}
+\hat{w}
+|\vec{r}| \le 1 \quad\iff\quad x^2 + y^2 + z^2 \le 1 \quad\iff\quad u^2 + v^2 + w^2 \le 1
+dx dy dz = du dv dw
+ax+by+cz = \lambda u
+\lambda
+\begin{align}   \int_{|\vec{r}|\le 1}\cos(\lambda u) du dv dw =& \pi \int_{-1}^1 (1-u^2)\cos(\lambda u)du = \frac{\pi}{\lambda}\int_{-1}^1 (1-u^2)d \sin(\lambda u)\\ =& \frac{2\pi}{\lambda}\int_{-1}^1 \sin(\lambda u) u du = -\frac{2\pi}{\lambda^2}\int_{-1}^1 u d\cos(\lambda u)\\ =& -\frac{2\pi}{\lambda^2}\left\{ \big[u\cos(\lambda u)\big]_{-1}^1 - \int_{-1}^1\cos(\lambda u) du \right\}\\ =& \frac{4\pi}{\lambda^2}\left(\frac{\sin\lambda}{\lambda} - \cos\lambda\right) \end{align} 
+\frac{4\pi}{\lambda^2}\left(\frac{\sin\lambda}{\lambda} - \cos\lambda\right) \sim  \frac{4\pi}{\lambda^2}\left(\left(1 - \frac{\lambda^2}{6}\right) - \left(1 - \frac{\lambda^2}{2}\right) + O(\lambda^4)\right) = \frac{4\pi}{3} + O(\lambda^2)
+\lambda \to 0
+\displaystyle\;\frac{4\pi}{3}\;
+(x,y,z)\rightarrow (-x,-y,-z)
+\int \int \int =0

@@ -1,0 +1,33 @@
+\sum\limits_{k=1}^{12}\tan \frac{k\pi}{13}\cdot \tan \frac{3k\pi}{13}
+z:=e^{i\pi/13}
+\sin(k\pi/13)=(z^k-z^{-k})/2i
+\cos(k\pi/13)=(z^k+z^{-k})/2
+\tan(\frac{k\pi}{13})\cdot\tan(\frac{3k\pi}{13})=-\frac{z^k-z^{-k}}{z^k+z^{-k}}\cdot\frac{z^{3k}-z^{-3k}}{z^{3k}+z^{-3k}}=-\frac{1-z^{2k}}{1+z^{2k}}\cdot\frac{1-z^{6k}}{1+z^{6k}}
+k=1,...,12
+1+z^k+z^{2k}+...+z^{12k}=0
+k
+13
+0
+z^{13}+1=0
+\tan13x=\frac{\binom{13}1t-\binom{13}3t^3+\binom{13}5t^5-\binom{13}7t^7+\binom{13}9t^9-\binom{13}{11}t^{11}+t^{13}}{\cdots}
+\displaystyle t=\tan x
+\displaystyle\tan13x=0,13x=n\pi
+n
+\displaystyle\implies x=\frac{n\pi}{13}
+0\le n\le13-1
+\displaystyle\tan0=0,\tan\frac{n\pi}{13},1\le n\le12
+\displaystyle\binom{13}1-\binom{13}3t^2+\binom{13}5t^4-\binom{13}7t^6+\binom{13}9t^8-\binom{13}{11}t^{10}+t^{12}=0\  \ \ \ (1)
+\displaystyle\tan(r\pi-y)=-\tan y,
+r
+\displaystyle(i)\sum\limits_{k=1}^{12}\tan\frac{k\pi}{13}\cdot \tan\frac{3k\pi}{13}=2\sum\limits_{k=1}^6\tan\frac{k\pi}{13}\cdot \tan\frac{3k\pi}{13}
+\displaystyle(ii)u_k=\tan^2\frac{k\pi}{13},1\le k\le6
+\displaystyle\binom{13}1-\binom{13}3u+\binom{13}5u^2-\binom{13}7u^3+\binom{13}9u^4-\binom{13}{11}u^5+u^6=0\  \ \ \  (2)
+\displaystyle y_k=\tan\frac{k\pi}{13}\cdot \tan\frac{3k\pi}{13}=\frac{3u_k-u_k^2}{1-3u_k}
+\tan3A
+\displaystyle\implies u_k^2=3u_k-y_k(1-3u_k)=3u_k(1+y_k)-y_k
+\#(2)
+y
+\displaystyle\tan\frac{k\pi}{13}
+\displaystyle\tan\frac{3k\pi}{13},
+\displaystyle\tan\frac{2k\pi}{13}
+\displaystyle\tan\frac{5k\pi}{13}

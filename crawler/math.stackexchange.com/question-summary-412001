@@ -1,0 +1,59 @@
+\phi(x)=\frac12 \int_0^{2\pi} |x'|^2 dt - \int_0^{2\pi} F(t,x) dt , x\in E 
+F(t,x)=\int_0^x f(t,s) ds
+E
+E=\lbrace x\in L^2([0,2\pi],\mathbb{R}),x'\in L^2([0,2\pi],\mathbb{R}]), x(0)=x(2\pi)\rbrace
+\phi
+C^2
+x\in E
+x'\in L^2([0,2\pi])
+ \int_0^{2\pi} |x'| \mathrm{d}t \leq \sqrt{2\pi} \left(\int_0^{2\pi} |x'|^2 \mathrm{d}t\right)^{\frac12} 
+x'
+L^1
+x
+\sup_{t\in[0,2\pi]}x(t) - \frac{1}{2\pi}\int_0^{2\pi} x~\mathrm{d}t \leq \sup_{t\in [0,2\pi]} x(t) - \inf_{t\in [0,2\pi]} x(t) \leq \int_0^{2\pi}|x'| ~\mathrm{d}t 
+x
+ \sup_{t\in [0,2\pi]} |x(t)| \leq \sqrt{2\pi} \|x'\|_{L^2} + \sqrt{2\pi} \|x\|_{L^2} 
+x
+ |x(t)| \leq \sqrt{2\pi} \|x\|_E 
+C^1
+ \phi'(x)\cdot y = \int_0^{2\pi} x' y' - f(t,x) y~ \mathrm{d}t 
+x
+\|\tilde{x} - x\|_E < \delta < 1
+ | \phi'(x)\cdot y - \phi'(\tilde{x})\cdot y| \leq \int_0^{2\pi} \big|(x' - \tilde{x}')y'\big| + \big|[f(t,x) - f(t,\tilde{x})]y\big| ~\mathrm{d}t 
+\delta \|y\|_E
+f
+x
+\tilde{x}
+\|x\|_E, \|\tilde{x}\|_E < \|x\|_E + \delta < \|x\|_E + 1
+ |x(t)|, |\tilde{x}(t)| < \sqrt{2\pi} (\|x\|_E + 1) 
+x
+f
+[0,2\pi]\times [- \sqrt{2\pi}(\|x\|_E + 1), \sqrt{2\pi}(\|x\|_E + 1)]
+f
+ |x(t) - \tilde{x}(t)| < \sqrt{2\pi} \|x - \tilde{x}_E \leq \sqrt{2\pi}\delta 
+\epsilon > 0
+f
+\delta < \frac12 \epsilon
+|a - b| < \sqrt{2\pi} \delta
+|f(t,x) - f(t,b)| < \frac{1}{\sqrt{8\pi}}\epsilon
+ \int_0^{2\pi} |f(t,x) - f(t,\tilde{x})| |y| \mathrm{d}t \leq \left( \int_0^{2\pi} |f(t,x) - f(t,\tilde{x})|^2 \mathrm{d}t\right)\left(\int_0^{2\pi} |y|^2 \mathrm{d}t\right) \leq \frac{\epsilon}{2} \|y\|_E 
+x
+\epsilon > 0
+\delta > 0
+\|x - \tilde{x}\|_E < \delta
+\|\phi'(x) - \phi'(\tilde{x})\| \leq \epsilon
+C^2
+\int y'z'
+\phi''(x) - \phi''(\tilde{x})
+ \int_0^{2\pi} |f'(t,x) - f'(t,\tilde{x})| |yz| \mathrm{d}t 
+f' = \partial f / \partial_x
+x
+\|\tilde{x} - x\|_E < \delta < 1
+f'
+[0,2\pi]\times [- \sqrt{2\pi}\ldots, \ldots] 
+\epsilon > 0
+\delta
+\sup_{t} |f'(t,x) - f'(t,\tilde{x})| < \epsilon
+|x(t) - \tilde{x}(t)| < \sqrt{2\pi}\delta
+\tilde{x}
+ \int_0^{2\pi} |f'(t,x) - f'(t,\tilde{x})| |y z| \mathrm{d}t \leq \epsilon \int_0^{2\pi} |y z|~\mathrm{d}t \leq \epsilon\|y\|_E \|z\|_E 

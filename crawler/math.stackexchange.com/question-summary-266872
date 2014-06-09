@@ -1,0 +1,44 @@
+ u(x,y)=(x-y)^{5}\frac{\partial^{4}}{\partial x^{2} \partial y^{2}}\left(\frac{F(x)-G(y)}{x-y}\right) 
+F
+G
+u(x,y_{0})
+u(x_{0},y)
+F
+G
+U^{xx}(x):=\int_{x_0}^{x}dx'\int_{x_0}^{x'}dx''\frac{u(x'',y_0)}{(x''-y_0)^5}
+U^{yy}(y):=\int_{y_0}^{y}dy'\int_{y_0}^{y'}dy''\frac{u(x_0,y'')}{(x_0 -y'')^5}
+u(x,y_0)
+u(x_0,y)
+U^{xx}(x)
+U^{yy}(y)
+U^{xx}(x)=\int_{x_0}^{x}dx'\left[\frac{\partial^{3}}{\partial x \partial y^{2}} \left(\frac{F(x)-G(y)}{x-y}\right) |_{y=y_0} \right]_{x_0}^{x'}
+U^{yy}(y)=\int_{y_0}^{y}dy'\left[\frac{\partial^{3}}{\partial y\partial x^{2}} \left(\frac{G(y)-F(x)}{y-x}\right) |_{x=x_0} \right]_{y_0}^{y'}
+U^{xx}(x)=2\frac{F(x)-G(y_0)}{(x-y_0)^3}-\frac{2G'(y_0)}{(x-y_0)^2}-\frac{G''(y_0)}{x-y_0}-a(x-x_0)-b
+U^{yy}(y)=2\frac{G(y)-F(x_0)}{(y-x_0)^3}-\frac{2F'(x_0)}{(y-x_0)^2}-\frac{F''(x_0)}{y-x_0}-c(y-y_0)-d
+a=\frac{\partial}{\partial x} \left(\frac{F(x)}{(x-y_0)^3}\right)|_{x=x_0}+\frac{\partial^{2}}{\partial y^{2}} \left(\frac{G(y)}{(x-y)^2}\right)|_{y=y_0}
+b=\frac{\partial^{2}}{\partial y^{2}} \left(\frac{F(x_0)-G(y)}{x_0-y}\right) |_{y=y_0}
+c=\frac{\partial}{\partial y} \left(\frac{G(y)}{(y-x_0)^3}\right)|_{y=y_0}+\frac{\partial^{2}}{\partial x^{2}} \left(\frac{F(x)}{(y-x)^2}\right)|_{x=x_0}
+d=\frac{\partial^{2}}{\partial x^{2}} \left(\frac{G(y_0)-F(x)}{y_0-x}\right) |_{x=x_0}
+a
+b
+c
+d
+F(x_0)
+F'(x_0)
+F''(x_0)
+G(y_0)
+G'(y_0)
+G''(y_0)
+U^{xx}(x)
+U^{yy}(y)
+x_0
+y_0
+F(x_0)
+F'(x_0)
+F''(x_0)
+G(y_0)
+G'(y_0)
+G''(y_0)
+F(x)-G(y)
+F
+G

@@ -1,0 +1,24 @@
+ \Delta u-au_{tt}+u_{t}=0
+ \Delta u + Du*Df=0 
+ \Delta u 
+ Du= grad(u) 
+u_{t} = \frac{\partial u}{\partial t}
+ u_{t} 
+Du*Df 
+ R^{n} 
+D
+\mathbb{R}^n
+a
+D'
+\mathbb{R}^n\times \mathbb{R}
+a
+ \Lambda_D(u) = \tfrac12 \int_D\  e^{f(x)}\ |\nabla u|^2\ \mathrm{d}x 
+ \Lambda_D(u) = \tfrac12 \int_{D'}\  e^{t}\ \bigl(|\nabla u|^2-a|u_t|^2\bigr)\ \mathrm{d}x\mathrm{d}t 
+\tag{1a} {\cal L}_1~=~ \frac{e^{-t/a}}{2}\left(a\dot{u}^2 - (\vec{\nabla} u)^2\right)
+0~\stackrel{(1a)}{=}~\frac{\partial {\cal L}_1}{\partial u} ~\stackrel{EL}{=}~\frac{d}{dt}\frac{\partial {\cal L}_1}{\partial \dot{u}} +\vec{\nabla}\cdot\frac{\partial {\cal L}_1}{\partial \vec{\nabla}u}
+\tag{1b} ~\stackrel{(1a)}{=}~ \frac{d}{dt}\left(e^{-t/a}a\dot{u}\right)  - \vec{\nabla}\cdot \left(e^{-t/a}\vec{\nabla}u\right) ~=~e^{-t/a}\left(a\ddot{u}-\dot{u}-\Delta u\right)  
+\tag{1c} a\ddot{u}-\dot{u}-\Delta u~\stackrel{(1b)}{=}~0.
+\tag{2a} {\cal L}_2~=~ \frac{e^f}{2} (\vec{\nabla} u)^2
+ 0~\stackrel{(2a)}{=}~\frac{\partial {\cal L}_2}{\partial u} ~\stackrel{EL}{=}~\vec{\nabla}\cdot\frac{\partial {\cal L}_2}{\partial \vec{\nabla}u}
+\tag{2b}~\stackrel{(2a)}{=}~\vec{\nabla}\cdot \left(e^f\vec{\nabla}u\right) ~=~e^f\left(\Delta u +\vec{\nabla}f \cdot \vec{\nabla}u\right) 
+\tag{2c} \Delta u +\vec{\nabla}f \cdot \vec{\nabla}u~\stackrel{(2b)}{=}~0.

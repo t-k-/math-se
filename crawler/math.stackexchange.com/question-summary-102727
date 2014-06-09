@@ -1,0 +1,23 @@
+a_n
+b_n
+n
+\lim_{n\to \infty}a_n=a
+\lim_{n\to \infty}b_n=b
+\lim_{n\to \infty} \frac{a_0b_n+a_1b_{n-1}+....+a_nb_0}{n}=ab
+\Delta_n=a_n-a
+\delta_n=b_n-b
+0
+\frac{1}{n}\left(\sum_{k=0}^na_kb_{n-k}\right)-ab=\frac{1}{n}\left(\sum_{k=0}^n \left((\Delta_k+a)b_{n-k}-ab\right)\right)=\frac{1}{n}\left(\sum_{k=0}^n\left(\Delta_k b_{n-k}+a\delta_{n-k}\right)\right).
+b_i
+B
+\lim_{m\to\infty}c_m=0\implies\frac{c_0+c_1+\cdots+c_m}{m}\to0. 
+M:=\sup_{k\in\mathbb N}|a_k|<\infty
+N\in\mathbb N
+\delta>0
+N
+k\geq N
+\max\{|a_k-a|,|b_k-b|\}\leq \delta
+\delta
+\lim_{n\to\infty}\frac 1n\sum_{k=0}^na_kb_{n-k}=ab
+\limsup_n\frac 1n\left|\sum_{k=0}^na_kb_{n-k}-ab\right|\leq \limsup_n\frac Mn\sum_{k=N}^n|b_k-b|+\limsup_n\frac{|b|}n\sum_{k=N}^n|a_k-a|,
+\limsup_n\frac 1n\left|\sum_{k=0}^na_kb_{n-k}-ab\right|\leq\limsup_n\frac{n-N+1}n(M+|b|)\delta=(M+|b|)\delta

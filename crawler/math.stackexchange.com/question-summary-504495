@@ -1,0 +1,47 @@
+T(n) = \Theta(n)
+T(n) = T(\lfloor n/2\rfloor) + T(\lfloor n/7\rfloor) + 2n, T(0) = 1
+T(n) = \Theta(n)
+T(n)  = T(\lfloor n/2\rfloor)  + T(\lfloor n/7\rfloor)  + 2n 
+ T(0) = 1 
+T(n) = O(n)
+T(n) = \Omega(n)
+T(k) \le bk
+\lfloor \frac{n}{7} \rfloor \le k < n
+T(n) \le bn
+\begin{align} T(n)  &= T(\lfloor n/2\rfloor) + T(\lfloor n/7\rfloor) + 2n \\ &\le b\lfloor n/2\rfloor + b\lfloor n/7\rfloor + 2n \\  &\le b( n/2) + b( n/7) + 2n \\  &= n(b/2+ b/7+ 2) \\  &= n(9b/14+ 2) \\  \end{align} 
+9b/14+ 2 \le b
+T(n) \le bn
+5b/14 \ge 2
+b \ge 28/5
+b = \max(28/5, \max_{k=\lfloor n/7 \rfloor}^{n-1} T(k)/k) 
+b
+n
+\lfloor n/7 \rfloor \ge 1
+n \ge 7
+ak+c \le T(k)
+\lfloor \frac{n}{7} \rfloor k < n
+an+c \le T(n)
+c
+\begin{align}  T(n)  &= T(\lfloor n/2\rfloor) + T(\lfloor n/7\rfloor) + 2n \\  &\ge a\lfloor n/2\rfloor+c  + a\lfloor n/7\rfloor+c + 2n \\  &\ge a( (n-1)/2)+c  + a( (n-6)/7)+c + 2n \\  &= n(a/2+ a/7+ 2)+2c-a(1/2+6/7) \\  &= n(9a/14+ 2)+2c-19a/14 \\  \end{align}  
+n(9a/14+ 2)+2c-19a/14 \ge an+c
+n(2-5a/14)+c-19a/14 \ge 0
+2\ge 5a/14
+a \le 28/5
+c \ge 19a/14
+c \ge (19/14)(28/5) =38/5
+a
+c
+a \le 28/5
+c \ge 19a/14
+ak+c \le T(k)
+\lfloor \frac{n}{7} \rfloor  \le k < n
+c = 8
+c \ge 38/5
+a = \min \left(28/5, \min_{k=\lfloor n/7 \rfloor}^{n-1} \frac{T(k)-c}{k} \right) 
+T(k) \le c
+k
+T(n) > 2n
+n
+2\lfloor \frac{n}{7} \rfloor > 8
+n \ge 35
+\lim_{n \to \infty} T(n)/n = 28/5

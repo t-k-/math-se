@@ -1,0 +1,20 @@
+x_{i}
+i=1,2,\cdots,n
+n\geq 2
+x_{1}\le x_{2}\le\cdots\le x_{n}.
+\dfrac{n(n-1)}{2}\sum_{1\le i<j\le n}x_{i}x_{j}\ge\left(\sum_{i=1}^{n-1}(n-i)x_{i}\right)\left(\sum_{i=1}^{n-1}ix_{i+1}\right).
+\sum_{1\le i<j\le n}x_{i}x_{j}=\sum_{i=1}^{n-1}x_{i}(x_{i+1}+x_{i+2}+\cdots+x_{n})
+y_{i}=x_{i+1}+x_{i+2}+\cdots+x_{n}.
+y_{1}+y_{2}+\cdots+y_{n-1}=\sum_{i=1}^{n=1}ix_{i+1}
+n=2
+n
+n+1
+RHS_n
+A_n\geq0
+x_{n+1}\geq x_j
+j=1,\dots,n
+B_n\geq 0
+LHS_{n+1}\geq RHS_{n+1}
+ \begin{aligned} LHS_{n+1}&=\frac{n(n+1)}{2}\sum_{1\leq i<j\leq n+1}x_ix_j=\frac{n(n+1)}{2}\left(\sum_{1\leq i<j\leq n}x_ix_j+x_{n+1}\sum_{i=1}^nx_i\right)\\ &=(1+\frac{2}{n-1})LHS_n+\frac{n(n+1)}{2}x_{n+1}\sum_{i=1}^nx_i \end{aligned} 
+ \begin{aligned} RHS_{n+1}&=\left(\sum_{i=1}^{n-1}(n-i)x_i+\sum_{i=1}^nx_i\right)\left(\sum_{i=1}^{n-1}jx_{j+1}+nx_{n+1}\right)\\ &=RHS_n+nx_{n+1}\sum_{i=1}^n(n+1-i)x_i+\sum_{i=1}^nx_i\sum_{j=1}^{n-1}jx_{j+1}. \end{aligned} 
+ \begin{aligned} LHS_{n+1}-RHS_{n+1}\geq& nx_{n+1}\left(\frac{n+1}{2}\sum_{i=1}^nx_i-\sum_{i=1}^n(n+1-i)x_i\right)\\&+\frac{2}{n-1}RHS_n-\sum_{i=1}^nx_i\sum_{j=1}^{n-1}jx_{j+1}\\ \text{(substitute $RHS_n$)}=&nx_{n+1}\left(\frac{n-1}{2}\sum_{i=1}^nx_i-\sum_{i=1}^{n-1}(n-i)x_i\right)\\ &-\sum_{j=1}^{n-1}jx_{j+1}\left(\sum_{i=1}^nx_i-\frac{2}{n-1}\sum_{i=1}^{n-1}(n-i)x_i\right)\\ =&\left(nx_{n+1}-\frac{2}{n-1}\sum_{j=1}^{n-1}jx_{j+1}\right)\left(\frac{n-1}{2}\sum_{i=1}^nx_i-\sum_{i=1}^{n-1}(n-i)x_i\right)\\ \stackrel{def}=& A_nB_n \end{aligned} 

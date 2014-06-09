@@ -1,0 +1,26 @@
+ 0 < r < 1
+x > 1
+ I_{1}(x) = \int_{1}^{\infty} \exp\left( - \frac{x^2}{2y^{2r}} - \frac{y^2}{2}\right) \frac{dy}{y^r}.
+f(y) = \frac{x^2}{2y^{2r}} + \frac{y^2}{2}
+I_1(x) = \int_{1}^{\infty}  \exp( -\frac{x^2}{2y^{2r}} - \frac{y^2}{2} ) \frac{dy}{y^r}
+c^* = r^{\frac{1}{2r+2}} 
+c^* = argmin ( d(c) )
+d(c) = \frac{1}{2} (c^{-2r} + c^2)
+x^* = x^{\frac{1}{1+r}}
+I_1(x): = I_{11}(x) + I_{12}(x) =  \int_{1}^{c^* x^*}  \exp( -\frac{x^2}{2y^{2r}} - \frac{y^2}{2} ) \frac{dy}{y^r} +  \int_{c^*x^*}^{\infty}  \exp( -\frac{x^2}{2y^{2r}} - \frac{y^2}{2} ) \frac{dy}{y^r} 
+I_{11}
+I_{11}(x)
+f(y) =  \frac{x^2}{2y^{2r}} + \frac{y^2}{2}
+ I_{11}(x)  =  \int_{1}^{c^* x^*}  \exp( -\frac{x^2}{2y^{2r}} - \frac{y^2}{2} ) \frac{dy}{y^r}  = \int_{1}^{c^* x^*} \frac{y^{-r}}{f'(y)} f'(y) e^{-f(y)} dy
+v = \frac{1}{y^r f'(y)}, du = f'(y) e^{-f(y)}dy
+u = - e^{-f(y)}
+dv = \frac{-r y^{-r-1}f'(y) -y^{r} f''(y) }{(f'(y))^2}
+dv = \frac{-r y^{-r-1}}{f'(y)} dy - \frac{y^{-r} f''(y)}{(f'(y))^2}dy := v_1(y)dy + v_2(y)dy
+I_{11}(x)
+ \int_{1}^{c^* x^*} \frac{y^{-r}}{f'(y)} f'(y) e^{-f(y)} dy = \left[- \frac{y^{-r}}{f'(y)} exp(-f(y)) \right]_{1}^{c^* x^*} +  \int_{1}^{c^* x^*} e^{-f(y)} (v_1(y) +v_2(y)) dy 
+I_{11}(x) \leq k(r,x)\exp(- x^{\frac{2}{1+r}} d(c^*))
+k(r,x)
+x
+v_1
+v_2
+c^* x^*

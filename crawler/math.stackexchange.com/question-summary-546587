@@ -1,0 +1,38 @@
+\newcommand\mee{\mathbin{\text{::}}}\newcommand\moo{\mathbin{\text{#}}}
+\mathcal U
+\mathbb N
+\mee
+\mee
+\mathcal U
+\emptyset
+\begin{matrix} \mee:&\mathcal U\times\mathcal U&\to&\mathcal U \\ &(A,B)&\mapsto&A\mee B&\mathrel{:=}\{n\in\mathbb N: n\in A\cup B,\wedge,n\notin A\cap B\} \end{matrix}
+\moo
+n\in A\moo B
+\begin{matrix} \moo:&\mathcal U\times\mathcal U&\to&\mathcal U \\ &(A,B)&\mapsto&A\moo B \end{matrix}
+\forall A,B,C\in\mathcal U
+\moo
+\mee\,
+\moo
+\{0\}
+\mathcal V
+\mathbb Z
+\oplus
+\otimes
+\mee
+\moo
+A\in\mathcal U\mapsto B\in\mathcal V\iff A=B
+\mathbb N
+\mathbb Z
+\mathcal U
+\mathcal V
+\mathcal U\times(\mathcal U\setminus\{\emptyset\})
+\langle(A,B)\rangle=\langle(C,D)\rangle\iff A\moo D=B\moo C
+A\in\mathcal U\mapsto\langle(A,\{0\})\rangle
+\langle(A,B)\rangle\otimes\langle(C,D)\rangle=\langle(A\moo C,B\moo D)\rangle
+\langle(A,B)\rangle\oplus\langle(C,D)\rangle=\langle(A\moo D\mee B\moo C,B\moo D)\rangle
+\mee
+\moo
+\def\U{\mathcal U}\def\Z{\Bbb Z}\U\to(\Z/2\Z)[X]
+A\mapsto\sum_{a\in A}X^a
+(\Z/2\Z)[X]
+(\Z/2\Z)(X)

@@ -1,0 +1,78 @@
+f\in\mathcal{C}^1([0,1])
+[0,1]
+\{p_n(x)\}_{n\in\mathbb{N}}
+\frac{1}{\sqrt{n}}
+\frac{1}{n}
+n-th
+f
+ B_n(f)(x)=\sum_{k=0}^n f(\frac{k}{n})B_{n,k}(x), \ B_{n,k}(x)=\binom{n}{k}x^k(1-x)^{n-k} \tag{1} 
+B_n(f)
+f
+M=\big|\big|\ f'\big|\big|_{\infty}
+f
+M
+x\in[\frac{i}{n},\frac{i+1}{n}]
+ \big|B_n(f)(x)-f(x)\big| \leq  2M\binom{n-1}{i}x^{i+1} (1-x)^{n-i} \tag{2} 
+f'
+-M
+[0,x]
++M
+[x,1]
+ 2M\binom{n-1}{i}x^{i+1} (1-x)^{n-i}  \leq  2M\binom{n-1}{i} \frac{(i+1)^{i+1} (n-i)^{n-i}}{(n+1)^{n+1}} \tag{3} 
+x=\frac{i+1}{n+1}
+ 2M\binom{n-1}{i} \frac{(i+1)^{i+1} (n-i)^{n-i}}{(n+1)^{n+1}} \leq 2M\binom{n-1}{\lfloor\frac{n+1}{2}\rfloor}  \frac{(\lfloor\frac{n+3}{2}\rfloor)^{\lfloor\frac{n+3}{2}\rfloor}  (\lceil\frac{n-1}{2}\rceil)^{\lceil\frac{n-1}{2}\rceil}}{(n+1)^{n+1}} \tag{4} 
+i=\lfloor\frac{n+1}{2}\rfloor
+\frac{1}{\sqrt{\pi n}}
+n
+\mathcal{C}^1([0,1])
+f(x)
+O(n^{-1})
+g(x)
+(0,f(0)),(1/n,f(1/n),\ldots,(1,f(1))
+M
+f(x)
+\max_{x\in[0,1]}|f'(x)|
+f(x)
+h_p(x)
+t>0
+k_{p,t}(x)=h_{p}(x)-h_{p+t}(x)
+x<p
+x>p+t
+x\in(p,p+t)
+g(x)
+k_{p,t}
+k_{0,\frac{1}{n}}(x)
+\|\cdot\|_{\infty}
+[0,1/n]
+\| f(x)-g(x)\|_{\infty} \leq \frac{M}{n},
+\| f(x)-g(x)\|_{\infty} \leq \frac{M}{2n}
+ h_p(x)=\left\{\begin{array}{rl}0 &\mbox{if }x\leq p,\\(x-p) &\mbox{if }x\geq p.\end{array}\right.
+ g(x) = \sum_{j=0}^{n-1} \frac{f\left(\frac{j+1}{n}\right)-f\left(\frac{j}{n}\right)}{\frac{1}{n}}\,k_{\frac{j}{n},\frac{1}{n}}(x), 
+[-1,1]
+q_n(y)
+\sqrt{1-y}
+y=0
+p_n(x)=q_n(1-x^2)
+q_n(x)\geq|x|
+q_n(0)=O\left(\frac{1}{\sqrt{n}}\right)
+|x|
+p_{2n}(x)=|x|
+2n+2
+p_{2n}(x)
+|x|
+|p_{2n}(x)-|x||
+\|p_{2n}(x)-|x|\|_{\infty}=p_{2n}(0)=\frac{2}{(2n+1)\pi}=O\left(\frac{1}{n}\right)
+k_{0,\frac{1}{n}}
+p_{2n}(x)-p_{2n}(x-1/n)
+g(x)
+k
+r_{2n}(x)
+f(x)
+ p_{2n}(x) = \frac{2}{\pi}-\frac{4}{\pi}\sum_{k=1}^{n}\frac{(-1)^k T_{2k}(x)}{4k^2-1}. 
+|p_{2n}(x)-|x||\leq \min\left(\frac{2}{(2n+1)\pi},\frac{1}{2\pi n^2 |x|}\right) 
+ \|f(x)-r_{2n}(x)\|_{\infty}\leq \frac{M}{n}+Mn\int_{-1}^{1}\min\left(\frac{2}{(2n+1)\pi},\frac{1}{2\pi n^2 |x|}\right)dx=O\left(\frac{\log n}{n}\right),
+\mathcal{C}^1([0,1])
+f(x)
+K
+\sqrt{f'(x)+K}
+O(n^{-1})

@@ -1,0 +1,29 @@
+\sum_{k}k \binom{n}{k}p^k(1-p)^{n-k}\\ and \sum_{k}k^2 \binom{n}{k}p^k(1-p)^{n-k}\\ 0\leq p\leq 1, k\in N, n\ggg k 
+\sum_{k} \binom{n}{k}p^k(1-p)^{n-k}=[p+(1-p)]^n=1
+k\cdot\binom nk=k\cdot\frac{n!}{(n-k)!\cdot k!}=k\cdot n\frac{(n-1)!}{\{(n-1)-(k-1)\}!\cdot (k-1)!\cdot k}=n\binom{n-1}{k-1}
+\displaystyle k(k-1)\binom nk=n(n-1)\binom{n-2}{k-2}
+\displaystyle k^2=k(k-1)+k,
+\sum_{0\le r\le m}a_rk^m=b_0k(k-1)\cdot\{k-(m-1)\}+b_1k(k-1)\cdot\{k-(m-2)\}+\cdots+b_m
+a_r,0\le r\le m
+b_s,0\le s\le m
+k
+ (p+q)^n = \sum \binom{n}{k} p^k q^{n-k}
+p
+ n (p+q)^{n-1} =\sum k \binom{n}{k} p^{k-1} q^{n-k} = \frac{1}{p} \sum k \binom{n}{k}  p^{k} q^{n-k} \tag 1
+ n (n-1)(p+q)^{n-2} =\sum k (k-1) \binom{n}{k} p^{k-2} q^{n-k} = \frac{1}{p^2} \sum k (k-1)\binom{n}{k} p^{k} q^{n-k} \tag 2
+  \sum k \binom{n}{k} p^{k} q^{n-k} = np
+ \sum k^2 \binom{n}{k} p^{k} q^{n-k} = n(n-1) p^2 +np
+1-p=q.
+\sum_{k=1}^{n} k\cdot \binom{n}{k}p^k\cdot q^{n-k}=\sum_{k=1}^{n} k・n!/{k!(n-k)!}\cdot p^k\cdot q^{n-k}
+=\sum_{k=1}^{n}n!/{(k-1)!(n-k)!}\cdot p^k\cdot q^{n-k}
+=n\sum_{k=1}^{n}(n-1)!/{(k-1)!(n-k)!}\cdot p^k\cdot p^{n-k}
+=np\sum_{k=1}^{n}\binom{n-1}{k-1}\cdot p^{k-1}\cdot q^{n-k}=np(p+q)^{n-1}=np
+\sum_{k=1}^{n} k^2\cdot\binom{n}{k}\cdot p^k\cdot q^{n-k}=\sum_{k=1}^{n} k^2\cdot n!/{k!(n-k)!}\cdot p^k\cdot q^{n-k}
+=\sum_{k=1}^{n} {k(k-1)+k}・n!/{k!(n-k)!}\cdot p^k\cdot q^{n-k}
+=\sum_{k=1}^{n} k(k-1)\cdot n!/{k!(n-k)!}\cdot p^k・q^{n-k}+\sum_{k=1}^{n} k\cdot n!/{k!(n-k)!}\cdot p^k\cdot q^{n-k}
+=\sum_{k=1}^{n}n!/{(k-2)!(n-k)!}\cdot p^k\cdot q^{n-k}+\sum_{k=1}^{n} n!/{(k-1)!(n-k)!}・p^k・q^{n-k}
+=n(n-1)\sum_{k=1}^{n}(n-2)!/{(k-2)!(n-k)!}・p^k・q^{n-k}
++n\sum_{k=1}^{n} (n-1)!/{(k-1)!(n-k)!}・p^k・q^{n-k}
+=n(n-1)\sum_{k=1}^{n}\binom{n-2}{k-2}・p^k・q^{n-k}+n\sum_{k=1}^{n}\binom{n-1}{k-1} ・p^k・q^{n-k}
+=n(n-1)p^2\sum_{k=1}^{n}\binom{n-2}{k-2}・p^{k-2}・q^{n-k}+np\sum_{k=1}^{n} \binom{n-1}{k-1}・p^{k-1}・q^{n-k}
+ =n(n-1)p^2(p+q)^{n-2}+np(p+q)^{n-1}=n(n-1)p^2+np

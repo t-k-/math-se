@@ -1,0 +1,15 @@
+X
+T:X \rightarrow X
+I - T
+Y_T = \{x \in X: \limsup_{n\rightarrow \infty} n^2\|T^nx\| < \infty \}
+x\in Y_T
+c>0
+N\in\mathbb{N}
+ n^2\Vert T^n x\Vert<C
+n>N
+X
+y
+ \sum\limits_{n=0}^\infty \Vert T^n x\Vert 
+ \sum\limits_{n=0}^\infty T^n x 
+ Ty= T\left(\sum\limits_{n=0}^\infty T^n x\right)= T\left(\lim\limits_{N\to\infty}\sum\limits_{n=0}^N T^n x\right)= \lim\limits_{N\to\infty}T\left(\sum\limits_{n=0}^N T^n x\right)= \lim\limits_{N\to\infty}\sum\limits_{n=0}^N T^{n+1} x=\\ \lim\limits_{N\to\infty}\sum\limits_{n=1}^{N+1} T^n x= \sum\limits_{n=1}^{\infty} T^n x=\sum\limits_{n=0}^{\infty} T^n x - x=y-x 
+ x=y-Ty=(I-T)y\in \mathrm{Im}(I-T) 

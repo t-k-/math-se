@@ -1,0 +1,30 @@
+y=\sum\limits_{n=0}^\infty a_nx^{n+\lambda}
+y'=\sum\limits_{n=0}^\infty a_n (n+\lambda)x^{n+\lambda-1}
+y''=\sum\limits_{n=0}^\infty a_n (n+\lambda)(n+\lambda-1)x^{n+\lambda-2}
+2x^2y''=\sum\limits_{n=0}^\infty 2a_n (n+\lambda)(n+\lambda-1)x^{n+\lambda}
+7xy'=\sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda}
+7x^2y'=\sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda+1}
+-3y=\sum\limits_{n=0}^\infty -3a_nx^{n+\lambda}
+\sum\limits_{n=0}^\infty a_n x^{n+\lambda} [2(n+\lambda)(n+\lambda-1) +7(n+\lambda)-3]+ \sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda+1}=0
+a_0x^\lambda [2\lambda(\lambda-1) +7\lambda-3] +\sum\limits_{n=1}^\infty a_n x^{n+\lambda} [2(n+\lambda)(n+\lambda-1) +7(n+\lambda)-3]+ \sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda+1}=0
+a_0x^\lambda [2\lambda^2+5\lambda-3] +\sum\limits_{n=1}^\infty a_n x^{n+\lambda} [2(n+\lambda)(n+\lambda-1) +7(n+\lambda)-3]+ \sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda+1}=0
+n=m+1
+a_0x^\lambda [2\lambda^2+5\lambda-3] +\sum\limits_{m=0}^\infty a_{m+1} x^{m+1+\lambda} [2(m+1+\lambda)(m+\lambda) +7(m+1+\lambda)-3]+ \sum\limits_{n=0}^\infty 7a_n (n+\lambda)x^{n+\lambda+1}=0
+a_0x^\lambda [2\lambda^2+5\lambda-3] +\sum\limits_{m=0}^\infty [a_{n+1} x^{n+1+\lambda} [2(n+1+\lambda)(n+\lambda) +7(n+1+\lambda)-3]+ 7a_n (n+\lambda)x^{n+\lambda+1}]=0
+a_0x^\lambda [2\lambda^2+5\lambda-3] +\sum\limits_{m=0}^\infty x^{n+1+\lambda} [a_{n+1}  [2(n+1+\lambda)(n+\lambda) +7(n+1+\lambda)-3]+ 7a_n (n+\lambda)]=0
+\lambda
+2\lambda^2+5\lambda-3=0
+\lambda_1=-6;\lambda_2=1
+a_{n+1}  [2(n+1+\lambda)(n+\lambda) +7(n+1+\lambda)-3]+ 7a_n (n+\lambda)=0
+\lambda
+\lambda_1=-6
+a_{n+1}  [2(n-5)(n-6) +7(n-5)-3]+ 7a_n (n-6)=0
+a_{n+1}  [2n^2-22 n+60 +7n-35-3]+ 7a_n (n-6)=0
+a_{n+1}  [2n^2-15n+22]+ 7a_n (n-6)=0
+a_{n+1} =\frac {7 (n-6)}{2n^2-15n+22}a_n
+a_{n+1} =\frac {14 (n-6)}{(2n+11)(n-2)}a_n
+\lambda_2
+a_{n+1}  [2(n+2)(n+1) +7(n+2)-3]+ 7a_n (n+1)=0
+a_{n+1}  [2n^2+6n+4+7n+14-3]+ 7a_n (n+1)=0
+a_{n+1}  [2n^2+13n+15]+ 7a_n (n+1)=0
+a_{n+1}  =\frac{7a_n (n+1)}{2n^2+13n+15}

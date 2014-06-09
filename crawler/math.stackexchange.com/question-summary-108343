@@ -1,0 +1,7 @@
+\displaystyle \Gamma(z)=\lim_{n \to \infty} \displaystyle \int_0^n \left( 1-\frac{t}{n}\right)^n  t^{z-1}\ \text{d} t\;=\displaystyle \int_0^{\infty} e^{-t}  t^{z-1}\ \text{d} t\;
+t = n u
+dt = n du 
+{n^z}\int\limits_0^1 {{{\left( {1 - u} \right)}^n}{u^{z - 1}}du} 
+\int\limits_0^1 {{{\left( {1 - u} \right)}^n}{u^{z - 1}}du}  = B\left( {z,n + 1} \right) = \frac{{\Gamma \left( {n + 1} \right)\Gamma \left( z \right)}}{{\Gamma \left( {z + n + 1} \right)}}
+\eqalign{   & \Gamma \left( {z + n + 1} \right) = \left( {z + n} \right)\Gamma \left( {z + n} \right)  \cr    & \Gamma \left( {z + n + 1} \right) = \left( {z + n} \right)\left( {z + n - 1} \right) \cdots \left( {z + 1} \right)z\Gamma \left( z \right) \cr} 
+\mathop {\lim }\limits_{n \to \infty } \int\limits_0^n {{{\left( {1 - \frac{t}{n}} \right)}^n}{t^z}\frac{{dt}}{t}} = \mathop {\lim }\limits_{n \to \infty } \frac{{n!{n^z}}}{{\left( {z + n} \right)\left( {z + n - 1} \right) \cdots \left( {z + 1} \right)z}}

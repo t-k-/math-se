@@ -1,0 +1,11 @@
+-\pi\leq\varphi,\psi\leq\pi
+I=\int_0^\pi\int_{-\infty}^\infty x e^{-jx\cos(\theta-\varphi)}f(\alpha\cos(\theta-\psi))\mathrm \, dx\mathrm \, d\theta
+u(\cdot)
+0
+I=2\pi j\int_0^\pi\delta'(\cos(\theta-\varphi))f(\alpha\cos(\theta-\psi)) \, \mathrm \, d\theta
+I_\mathrm{wolfram}=0
+ \begin{eqnarray} I_\mathrm{me}=\delta^{'} (\cos(\theta-\varphi))&=&\left[ \sum_i \frac{\delta(\theta-\varphi-\frac{\pi}{2}-i\pi)}{|\sin(\frac{\pi}{2}+i\pi)|}\right]^{'}=\sum_i \delta^{'}\left(\theta-\left(\varphi+\frac{\pi}{2}+i\pi\right)\right) \end{eqnarray} 
+ \begin{eqnarray} I_\mathrm{me}&=&2\pi j\sum_i\int_0^\pi\delta'\left(\theta-\left(\varphi+\frac{\pi}{2}+i\pi\right)\right)f(\alpha\cos(\theta-\psi)) \, \mathrm d\theta=\\ &=&-2\pi j\int_0^\pi\delta\left(\theta-\left(\varphi+\frac{\pi}{2}\right)\right)f'(\alpha\cos(\theta-\psi)) \, \mathrm d\theta=\\ &=&-2\pi j f'(\alpha\cos(\varphi+\frac{\pi}{2}-\psi))u(\pi -2 \varphi ) u(2 \varphi +\pi ) \end{eqnarray} 
+\displaystyle{% \mbox{where}\quad {\rm F}\left(\alpha,\phi\right) \equiv {{\rm f}\left(\alpha\cos\left(\phi\right)\right)  \over  \sin\left(\phi\right)}} 
+ \theta_{\ell}\left(\varphi\right) \equiv \varphi + \left(2\ell + 1\right)\pi/2. \quad\mbox{Notice that}\quad \left\vert% \begin{array}{rcl} \sin\left(\theta_{\ell}\left(\varphi\right) - \varphi\right) & = & \left(-1\right)^{\ell} \\ \sin\left(\theta_{\ell}\left(\varphi\right) - \psi\right) & = & \left(-1\right)^{\ell}\cos\left(\varphi - \psi\right) \\ \cos\left(\theta_{\ell}\left(\varphi\right) - \psi\right) & = & \left(-1\right)^{\ell + 1}\sin\left(\varphi - \psi\right) \end{array}\right. 
+ \left\lbrace% \begin{array}{rcl} \cos\left(\phi + \ell\pi + {\pi \over 2}\right) & = & -\sin\left(\ell\pi + \phi\right) = \left(-1\right)^{\ell + 1}\sin\left(\phi\right) \\ \sin\left(\phi + \ell\pi + {\pi \over 2}\right) & = & \phantom{-}\cos\left(\ell\pi + \phi\right) = \left(-1\right)^{\ell\phantom{+1}}\cos\left(\phi\right) \end{array}\right. 

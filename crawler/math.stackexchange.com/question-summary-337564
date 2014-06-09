@@ -1,0 +1,6 @@
+\lim_{a\to\infty} \int_0^1 \frac {x^2e^x}{(2+ax)} dx .
+0 \leq \dfrac{x^2 e^x}{2+ax} \leq \dfrac{e}{2+ax} \,\,\,\,\, \forall x \in [0,1]
+0 \leq \int_0^1 \dfrac{x^2 e^x}{2+ax} dx \leq \int_0^1 \dfrac{edx}{2+ax} = e \left.\dfrac{\log(2+ax)}a \right \vert_{x=0}^1 = \underbrace{\dfrac{e}a \log \left(\dfrac{2+a}2\right)}_{\to 0 \text{ as } a \to \infty}
+\displaystyle \int_0^1 \dfrac{x^2e^x}2 dx < \infty
+f_a(x) = \dfrac{x^2 e^x}{2+ax} \leq \dfrac{x^2 e^x}2 = g(x)
+\lim_{a \to \infty} \int_0^1 \dfrac{x^2 e^x}{2+ax} dx = \int_0^1 \lim_{a \to \infty} \dfrac{x^2 e^x}{2+ax} dx = \int_0^1 0dx = 0

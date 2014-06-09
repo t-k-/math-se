@@ -1,0 +1,11 @@
+\mathbf{b}
+\mathbb{R}^n
+\mathbf{x}(s)=\mathbf{x}(s,x,t)
+\dot{\mathbf{x}}=\mathbf{b}(\mathbf{x}) (s\in\mathbb{R}), x(t)=x.
+J(s,x,t):=\det D_x\mathbf{x}(s,x,t)
+J_s=\operatorname{div} \mathbf{b}(\mathbf{x})J.
+u(x,t)
+u(x,0)=g(x)
+u(x,t):=g(\mathbf{x}(0,x,t))J(0,x,t).
+u_t+\operatorname{div}(u\mathbf{b}(x))=0, \mbox{ in } \mathbb{R}^n\times\mathbb{R}_+,
+\frac{\partial}{\partial s}(u(\mathbf{x},s)J)=0

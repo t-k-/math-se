@@ -1,0 +1,27 @@
+x \in \mathbb{R}^{p\times 1}
+y \in \mathbb{R}^{n\times 1}
+A \in \mathbb{R}^{p \times n}
+b \in \mathbb{R}
+f(x,y) = \big(b-x^T A y\big)^2
+f
+ f^*(u,v) := \sup_{x,y} \big[ u^T x + v^T y - f(x,y)\big] = \;? 
+\tilde x\in \mathbb R^{n+p}
+\tilde u\in \mathbb R^{n+p}
+\tilde x=\begin{bmatrix}x\\y\end{bmatrix}
+\tilde u=\begin{bmatrix}u\\v\end{bmatrix}
+\tilde A=\frac12 \begin{bmatrix}0 & A \\ A^T & 0\end{bmatrix}
+\tilde A
+\tilde f
+\tilde g
+\tilde g(\tilde x)=4(b-\tilde x^T\tilde A\tilde x)\tilde A\tilde x
+\tilde g^{-1}
+\tilde x
+\tilde f^*
+\tilde u
+\tilde x^T
+\tilde f^*
+\tilde f(\tilde x)=(b-\tilde x^T\tilde A \tilde x)^2
+\tilde f^*(\tilde u)=\sup_{\tilde x} [\tilde u^T \tilde x - \tilde f(\tilde x)]
+\partial_{\tilde x} (\tilde u^T \tilde x - \tilde f(\tilde x)) =\tilde u - 4(b-\tilde x^T \tilde A\tilde x)\tilde A x=0
+\tilde f^*(\tilde u)=\tilde u\tilde g^{-1}(\tilde u)-\tilde f(\tilde g^{-1}(\tilde u))
+\tilde g^{-1}

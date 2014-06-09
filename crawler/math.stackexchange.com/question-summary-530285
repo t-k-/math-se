@@ -1,0 +1,20 @@
+t(n) = t\left(\frac n2\right) + n^2
+t(n)=n^2+t\left(\frac n2\right)
+t(n)=n^2+\left(\frac n2\right)^2+t\left(\frac n4\right)
+t(n)=n^2+\left(\frac n2\right)^2+\left(\frac n4\right)^2+t\left(\frac n8\right)
+t(n)=\sum_{i=0}^{k-1}\frac {n^2}{4^i}+t(1)\text{ with }n=2^k\text{ and }k=\log_2n
+t(n)=n^2\sum_{i=0}^{k-1}\frac 1{4^i}+t(1)
+\sum _{ i=0 }^{ k-1 }{ \frac { 1 }{ { 4 }^{ i } }  } =\frac { 4 }{ 3 } (1-{ (1/4) }^{ \log { n }  })
+a=1
+r=\frac 14
+n
+n+1
+\sum_{i=0}^n {1-r^n\over 1-r}={1-\left(\frac 14\right)^i\over \frac 34}
+n
+n\to\infty
+\frac 43
+1
+t(n)=cn^2+t(1)
+c\in \left[1,\frac 43\right)
+t(n)
+O(n^2)

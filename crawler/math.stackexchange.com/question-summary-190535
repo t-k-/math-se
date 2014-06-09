@@ -1,0 +1,65 @@
+t
+x
+ f(x) = \lvert\cos t\rvert \quad\hbox{for all $t$}. 
+[a, a + L]
+ \sum _{n=-\infty }^{\infty }{\it c\_n}\,{{\rm e}^{{\frac {2\,inx\pi }{ L}}}} \,,
+c_n
+ c_n = \int _{a}^{a+L}\!f \left( x \right) {{\rm e}^{{\frac {-2\,in\pi \,x}{L }}}}{dx}
+\pi
+\cos(x)
+[-\frac{\pi}{2},\frac{\pi}{2}]
+ c_n = \int _{-\frac{\pi}{2}}^{-\frac{\pi}{2}+\pi} \cos(x) {{\rm e}^{{\frac {-2\,in\pi \,x}{L }}}}{dx} = 2\,{\frac { \left( -1 \right) ^{1+n}}{\pi \, \left( 4\,{n}^{2}-1  \right) }} \,.
+|\cos(x)|
+ |\cos(x)| =  \sum _{n=-\infty }^{\infty }2\,{\frac { \left( -1 \right) ^{1+n}}{\pi \, \left( 4\,{n}^{2}-1\right) }}\,{{\rm e}^{{\frac {2\,inx\pi }{L}}}}\,. 
+ |\cos(x)| =  2\,{\pi }^{-1}+\sum _{n=1}^{\infty}2\,{\frac { \left( -1 \right) ^{1+n}  \left( {{\rm e}^{2\,inx}}+{{\rm e}^{-2\,inx}} \right) }{\pi \,  \left( 4\,{n}^{2}-1 \right) }} = 2\,{\pi }^{-1}+\sum _{n=1}^{\infty}4\,{\frac { \left( -1 \right) ^{1+n} \cos \left( 2\,nx \right) }{\pi \, \left( 4\,{n}^{2}-1 \right) }} \,, 
+f
+2\pi
+f
+b_k
+=0
+f
+x={\pi\over2}
+a_k
+=0
+k
+f
+x\mapsto\cos\bigl((2j+1)x\bigr)
+\bigl[0,{\pi\over2}\bigr]
+x\mapsto\cos x
+a_0={4\over\pi}
+{\mathbb R}
+a_k={1\over\pi}\int_{-\pi}^\pi f(x)\ \cos(k x)\ dx={2\over\pi}\int_0^\pi f(x)\ \cos(k x)\ dx\qquad(k\geq0)\ .
+\eqalign{a_{2j}&={4\over\pi}\int_0^{\pi/2}\cos x\cos(2j x)\ dx={2\over\pi}\int_0^{\pi/2}\bigl(\cos((2j+1)x)+\cos((2j-1))x\bigr)\ dx\cr &={2\over\pi}\left.\biggl({1\over2j+1}\sin((2j+1)x)+{1\over2j-1}\sin((2j-1)x)\biggr)\right|_0^{\pi/2} \cr &={2\over\pi}\biggl({(-1)^j\over 2j+1} -{(-1)^j\over 2j-1}\biggr)={4\over\pi}{(-1)^{j-1}\over 4j^2-1}\ .\cr}
+|\cos x|={a_0\over2}+\sum_{j=1}^\infty a_{2j}\cos(2j x)={2\over\pi}-{4\over\pi}\sum_{j=1}^\infty{(-1)^j\over 4j^2-1}\cos(2jx)\ ,
+f(x)
+a_n
+b_n
+f(x)=|\cos(x)|
+b_n=0
+{1\over 2}a_0 +\sum_{n=1}^\infty \bigl(a_n \cos(nx) + b_n \sin(nx)\bigr)
+a_n ={1\over\pi}\int_{-\pi}^{\pi}f(x)\cos(nx)\,{\rm d}x\qquad n=0,1,2,\dots
+b_n ={1\over\pi}\int_{-\pi}^\pi f(x)\sin(nx)\,{\rm d}x\qquad n=1,2,\dots
+f(x)
+f(x)=\cos(x)
+0\leq x\leq {\pi\over 2}
+f(x)=-\cos(x)
+{\pi\over 2}\leq x\leq \pi
+a_n ={2\over\pi}\int_0^\pi f(x)\cos(nx)\,{\rm d}x
+f(x)
+f(x)
+f(x)=|\cos x|
+n
+e^{-in(x+\pi)}=-e^{-inx}
+n
+e^{-in(x+\pi)}=e^{-inx}
+\frac{n}{2}
+e^{-in(x+\pi/2)}=e^{-inx+(n/2)\pi}=-e^{-inx}
+n\neq 4m
+c_n
+0
+n=4m
+e^{-in(x+\pi/2)}=e^{-inx}
+c_n=\frac{1}{2\pi}\int_0^{2\pi}e^{-inx}f(x)dx.
+\begin{align} c_n &=\frac{1}{2\pi}\int_0^{2\pi}e^{-inx}|\cos x|dx\\ &=\frac{1}{2\pi}\int_0^{\pi}e^{-inx}|\cos x|dx+\frac{1}{2\pi}\int_{\pi}^{2\pi}e^{-inx}|\cos x|dx\\ \end{align}
+\begin{align} c_n&=\frac{1}{\pi}\int_0^{\pi}e^{-inx}|\cos x|dx\\ &=\frac{1}{\pi}\int_0^{\pi/2}e^{-inx}\cos xdx+\frac{1}{\pi}\int_{\pi/2}^{\pi}e^{-inx}\cos xdx\\ \end{align}
+\begin{align} c_n&=\frac{2}{\pi}\int_0^{\pi/2}e^{-inx}\cos xdx\\ &=\frac{2}{\pi}\int_0^{\pi/2}\cos nx\cos xdx+\frac{2i}{\pi}\int_0^{\pi/2}\sin nx\cos xdx\\ \end{align}

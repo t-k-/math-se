@@ -1,0 +1,14 @@
+X\mid Y \sim \text{Poisson}(Y)
+Y \sim \text{Exp}(\lambda)
+X
+X\mid Y \sim \text{Poisson}(Y)
+Y \sim \text{Poisson}(\mu)
+G_{X+Y}(s) = \text{Exp}(\mu(se^{s-1}-1).
+Y
+Y
+\{0,1,2,3,\ldots\}
+ \Pr(X=x) = E(\Pr(X=x\mid Y)) = E\left( \frac{Y^x e^{-Y}}{x!} \right) = \int_0^\infty \frac{y^x e^{-y}}{x!} e^{-\lambda y}\left(\lambda\,dy\right) 
+ = \frac{\lambda}{x!} \int_0^\infty y^x e^{-(1+\lambda)y} \, dy = \frac{\lambda}{x!(1+\lambda)^{x+1}} \int_0^\infty ((1+\lambda)y)^x e^{-(1+\lambda)y} \, \left( (1+\lambda)\,dy \right) 
+ = \frac{\lambda}{x!(1+\lambda)} \int_0^\infty u^x e^{-u}\, du = \frac{\lambda}{(1+\lambda)^{x+1}}. 
+ G_{X+Y}(s) = E(s^{X+Y}) = E(E(s^{X+Y}\mid Y)) = E(s^Y E(s^X\mid Y)) = E(s^Y(e^{Y(s-1)})) 
+ = E((se^{s-1})^Y) = G_Y(se^{s-1}) = \cdots 

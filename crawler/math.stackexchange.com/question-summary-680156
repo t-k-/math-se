@@ -1,0 +1,10 @@
+f(z)
+ f(z) = \int_{0}^{\infty} \frac{\exp(-zt)}{1+t^2} dt
+ |\arg(z)| < \pi/2
+ -\pi/2 < \arg(z) < \pi
+w
+\Re(w)>0.
+f(z) = \int_0^\infty \frac{e^{-zt}}{1+t^2} dt
+f(z) = \int_0^\infty \frac{e^{-(z-w)t}\times e^{-wt}}{1+t^2} dt =  \int_0^\infty  \left(\sum_{q\ge 0} \frac{(-1)^q}{q!} (z-w)^q t^q\right) \frac{e^{-wt}}{1+t^2} dt \\ = \sum_{q\ge 0} \frac{(-1)^q}{q!} (z-w)^q \int_0^\infty t^q\frac{e^{-wt}}{1+t^2} dt.
+f(5i-1/20) \approx 0.008062325160153 - 0.2210974509631 i
+f(5i+1/500) \approx 0.01068426529406 - 0.2205730068288i \\ \quad\text{and}\quad \\ f(5i-1/500) \approx 0.01048357716278 - 0.2206153425701i

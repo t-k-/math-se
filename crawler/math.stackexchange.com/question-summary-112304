@@ -1,0 +1,19 @@
+\lim_{n \to \infty} \left[\sum_{k=1}^{n} \frac{1}{k} - \log n\right] = -\int_0^{\infty} e^{-t} \log t \,dt.
+\gamma
+\int_0^{\infty} e^{-t} \log t \,dt = \left.\frac{d}{dx} \int_0^{\infty} t^x e^{-t} \,dt \right|_{x=0} = \Gamma'(1) = \psi(1),
+\psi
+\sum_{k=1}^{n} \frac{1}{k} = \int_0^1 \frac{1-x^n}{1-x} \,dx,
+ f_n(x) = \begin{cases} \left( 1 - \frac{x}{n}\right)^n & 0 \leq x \leq n \\ 0 & x > n \end{cases}
+0 \leq f_n(x) \uparrow e^{-x}
+ \int_{0}^{\infty} e^{-x} \log x \; dx = \lim_{n\to\infty} \int_{0}^{n} \left( 1 - \frac{x}{n}\right)^n \log x \; dx. 
+x = nu
+\begin{align*} \int_{0}^{n} \left( 1 - \frac{x}{n}\right)^n \log x \; dx &= n\int_{0}^{1} \left( 1 - u\right)^n (\log n + \log u) \; du \\ &= \frac{n}{n+1}\log n + n\int_{0}^{1} \left( 1 - u\right)^n \log u \; du \\ &= \frac{n}{n+1}\log n + n\int_{0}^{1} v^n \log (1-v) \; dv \\ &= \frac{n}{n+1}\log n - n\int_{0}^{1} v^n \left( \sum_{k=1}^{\infty} \frac{v^k}{k} \right) \; dv \\ &= \frac{n}{n+1}\log n - n \sum_{k=1}^{\infty} \frac{1}{k(n+k+1)} \\ &= \frac{n}{n+1}\log n - \frac{n}{n+1} \sum_{k=1}^{\infty} \left( \frac{1}{k} - \frac{1}{n+k+1}\right) \\ &= \frac{n}{n+1} \left( \log n - \sum_{k=1}^{n+1} \frac{1}{k} \right). \end{align*}
+n \to \infty
+-\gamma
+ \begin{align*} \int_{0}^{1} v^n \log (1-v) \; dv &= \left. \frac{v^{n+1} - 1}{n+1} \log (1-v) \right|_{0}^{1} - \int_{0}^{1} \frac{v^{n+1} - 1}{n+1} \cdot \frac{1}{v - 1} \; dv \\ &= - \frac{1}{n+1} \int_{0}^{1} \frac{1 - v^{n+1}}{1 - v} \; dv \end{align*}
+\frac{{\Gamma '\left( x \right)}}{{\Gamma \left( x \right)}} =  - \gamma  - \frac{1}{x} + \sum\limits_{v = 1}^\infty  {\frac{x}{{v\left( {x + v} \right)}}} 
+x=1
+\frac{{\Gamma '\left( 1 \right)}}{{\Gamma \left( 1 \right)}} = \Gamma '\left( 1 \right) =  - \gamma  - 1 + \sum\limits_{v = 1}^\infty  {\frac{1}{{v\left( {1 + v} \right)}}} 
+\sum\limits_{v = 1}^\infty  {\frac{1}{{v\left( {1 + v} \right)}}}=1 
+\Gamma '\left( 1 \right) =  - \gamma 
+\psi \left( x \right) = \frac{{\Gamma '\left( x \right)}}{{\Gamma \left( x \right)}} =  - \gamma  - \frac{1}{x} + \sum\limits_{v = 1}^\infty  {\frac{x}{{v\left( {x + v} \right)}}} 

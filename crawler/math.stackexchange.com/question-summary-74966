@@ -1,0 +1,11 @@
+h
+ \frac{dx}{dt} = h+x(\alpha -\beta y)
+ \frac{dy}{dt} = -y(\gamma - \rho x). 
+ \left(\begin{array}{c}\dot{x}  \\ \dot{y}  \end{array} \right) = \left( \begin{array}{cc} \alpha & -\beta x  \\ \rho y & -\gamma   \end{array} \right) \left(\begin{array}{c} x  \\ y  \end{array} \right) + \left(\begin{array}{c} h  \\ 0  \end{array} \right)  = \left(\begin{array}{c} 0  \\ 0  \end{array} \right) 
+F(\bar{p}) =0
+x=\frac{-h}{\alpha}, y=0
+x=\frac{\gamma}{\rho}, y = \frac{\alpha}{\beta}+\frac{\rho h}{\beta\gamma}
+\alpha = -\mu
+ \left.J\right|_{eq1} = \left.\pmatrix{\alpha-\beta y &-\beta x\\ \rho y &\rho x-\gamma}\right|_{x=\frac{-h}{\alpha}, y=0}=\pmatrix{\alpha & \frac{\beta h}{\alpha}\\ 0 &-\rho\frac{h}{\alpha}-\gamma } 
+ \left.J\right|_{eq2} = \left.\pmatrix{\alpha-\beta y &-\beta x\\ \rho y &\rho x-\gamma}\right|_{x=\frac{\gamma}{\rho}, y = \frac{\alpha}{\beta}+\frac{\rho h}{\beta\gamma}}=\pmatrix{\frac{-\rho h}{\gamma} &-\frac{\beta\gamma}{\rho}\\ \frac{\rho\alpha}{\beta}+\frac{\rho^2 h}{\beta\gamma} &0 } 
+ \lambda^2 + \frac{\rho h}{\gamma}\lambda + (\gamma\alpha +\rho h) = 0 

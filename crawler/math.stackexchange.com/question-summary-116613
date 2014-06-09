@@ -1,0 +1,28 @@
+(X_n)_{n\geq 1}
+X_n\sim N(\mu_n,\sigma_n)
+n\geq 1
+(X_n)_{n\geq 1}
+\sup_{n\geq 1} (|\mu_n|+\sigma_n^2)<\infty
+\sup_{n\geq 1} (|\mu_n|+\sigma_n^2)=\infty
+(X_n)
+\sup_n |\mu_n|=\infty
+\sup_n \sigma_n^2=\infty
+r>0
+ \forall \varepsilon>0\,\exists r>0: \sup_{n\geq 1}P(|X_n|>r)<\varepsilon, 
+ P(|X_n|>r)=\int_{(-\infty,-r]\cup [r,\infty)} \frac{1}{\sqrt{2\pi \sigma_n^2}}e^{-(x-\mu_n)^2/\sigma_n^2} dx 
+\sup_n |\mu_n| = + \infty
+\sup_n \sigma_n = + \infty
+\sup_n \ \mathbb{P} (|X_n| > M) \geq 1/2,
+\sup_n \ \mathbb{P} (|X_n| > M) = 1
+\mathbb{P} (|X_n| \leq M) \leq \int_{-M}^M \frac{1}{\sigma_n \sqrt{2 \pi}} \ dx = \frac{M}{\sigma_n} \sqrt{\frac{2}{\pi}},
+\sup_n \ \mathbb{P} (|X_n| > M) \geq \sup_n \left( 1- \frac{M}{\sigma_n} \sqrt{\frac{2}{\pi}} \right) = 1.
+M:=\sup_{n\geq 1}|\mu_n|+\sigma_n^2
+n\geq 1
+r>0
+\frac{r-\mu_n}{\sigma_n}\geq \frac{r-M}{\sigma_n}\geq\frac{r-M}{\sqrt M}
+n\geq 1
+r>0
+n
+0
+r\to\infty
+P(|X_n|>r)\leq \frac 1{\sqrt{2\pi}}\int_{\frac{r-M}{\sqrt M}}^{+\infty}\exp\left(-\frac{t^2}2\right)dt,

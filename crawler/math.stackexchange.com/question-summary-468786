@@ -1,0 +1,25 @@
+\int_\frac{1}{2}^1 \frac{x^2}{\sqrt{2x-x^2}}
+\frac{1}{2}
+\sqrt{2x-x^2}=\sqrt{1-(1-x)^2}\Rightarrow\displaystyle \int_\frac 1 2^1\frac{x}{\sqrt{2x-x^2}}dx=\int_\frac 1 2^1\frac {x}{\sqrt{1-(1-x)^2}}dx
+a=(1-x)
+x=1-a,dx=-da
+\displaystyle\int_\frac 1 2^1 f(x)dx=\int_0 ^\frac 1 2\frac{(1-a)^2 da}{\sqrt{1-a^2}}=\int\frac 1 {\sqrt{1-a^2}}da+\int\frac{-2a}{\sqrt{1-a^2}}da+\int_0^{0.5}\frac{a^2}{\sqrt{1-a^2}}da
+=\arcsin(a)\mid_0^\frac 1 2+\sqrt{1-a^2}\mid_0^\frac 1 2+(\frac{\arcsin(a)-a\sqrt{1-a^2}}{2})\mid_0^\frac 1 2=0.5235987756+\frac{\sqrt 3}{2}-1+0.04529303685=0.4349172162<0.5
+\frac{x^3}{2-x}\lt 1
+2-x-x^2\gt 0
+x^3
+x
+1
+[\frac{1}{2},1)
+\lt 1
+[\frac{1}{2},1)
+\frac{1}{2}
+\lt \frac{1}{2}
+I=\int_\frac12^1 \frac{x^2}{\sqrt{2x-x^2}} =\int_\frac12^1 \frac{x^2}{\sqrt{1-(x-1)^2}}
+x-1=\sin\theta,dx=\cos\theta d\theta
+x=\frac12, \sin\theta=-\frac12\implies \theta=-\frac\pi6
+I=\displaystyle\int_{-\frac\pi6}^0\frac{(1+\sin\theta)^2}{\cos\theta}\cos\theta d\theta
+=\displaystyle\int_{-\frac\pi6}^0\frac{3+2\sin\theta-\cos2\theta}2d\theta
+=\displaystyle\frac{6\theta-4\cos\theta-\sin2\theta}4\big|_{-\frac\pi6}^0
+=\displaystyle\frac{-4-\left(-\pi-4\frac{\sqrt3}2+\frac{\sqrt3}2\right)}4
+=\frac{3\sqrt3+2\pi-8}8=0.43491721623

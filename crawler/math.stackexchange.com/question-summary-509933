@@ -1,0 +1,8 @@
+\sum_{k=0}^n {2n-k\choose n-k} 2^k=4^n
+\sum_{k=0}^{n}\left({n+k\atop k}\right)2^{-k}=2^{n}
+\sum_{k=0}^{n}\left({2n-k\atop n-k}\right)2^{k}=2^{n}\sum_{k=0}^{n}\left({n+k\atop k}\right)2^{-k}
+\sum_{k=0}^{n}\left({n+k\atop k}\right)2^{-k}=2^{n}
+s:=\sum_{k=0}^{n+1}\left({n+1+k\atop k}\right)2^{-k}
+s=1+\sum_{k=1}^{n+1}\left({n+k\atop k-1}\right)2^{-k}+\sum_{k=1}^{n+1}\left({n+k\atop k}\right)2^{-k}=1+2^{-1}\sum_{k=0}^{n}\left({n+1+k\atop k}\right)2^{-k}+\sum_{k=1}^{n+1}\left({n+k\atop k}\right)2^{-k}=1+2^{-1}\left(s-\left({2n+2\atop n+1}\right)2^{-n-1}\right)+2^{n}-1+\left({2n+1\atop n+1}\right)2^{-n-1}=2^{n}+2^{-1}s
+s=2^{n+1}
+\left({2n+2\atop n+1}\right)=2\left({2n+1\atop n+1}\right)

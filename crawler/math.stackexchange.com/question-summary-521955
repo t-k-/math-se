@@ -1,0 +1,9 @@
+F(2^0) = 1
+F(2^k) = \frac 1 2 F(2^{k-1}) + 2^k
+F(1) = n
+F(n) = \frac 12 F(\lfloor\frac n 2\rfloor) + n
+n = 2^k
+ 1/2^{k-i} * F(2^{k-i}) + \sum\limits_{j=k-i+1}^{k} 2^j  
+\begin{align} F(2^k) &= n + \frac 1 2 F(2^{k-1}) \\        &= n + \frac 1 2 (n + \frac 1 2 F(2^{k-2})) && =  n + \frac n 2 + \frac 1 {2^2} F(2^{k - 2}) \\        &= n + \frac n 2 + \frac 1 {2^2} (n + \frac 1 2 F(2^{k - 3})) && = n + \frac n 2 + \frac n {2^2} + \frac n {2^3}F(2^{k - 3}) \\        & \dots \\        &= n + \frac n 2 + \frac n {2^2} + \frac n {2^3} + \frac n {2^4} + \dots  + \frac n {2^j}F(2^{k - j}) \end{align} 
+k=j
+F(2^{k - j}) = 1

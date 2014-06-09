@@ -1,0 +1,27 @@
+\frac{1}{x^2}-\frac{1}{x}<\frac{\ln(1+x)}{x^3}< \frac{1}{x^2}\;\,\text{for}\;\,0<x<1
+\frac{1}{\sqrt{n}}\int_{1/\sqrt{n}}^1\frac{1}{x^2}-\frac{1}{x}\,dx< \frac{1}{\sqrt{n}}\int_{1/\sqrt{n}}^1\frac{\ln(1+x)}{x^3}dx< \frac{1}{\sqrt{n}}\int_{1/\sqrt{n}}^1\frac{1}{x^2}dx
+1-\frac{1}{\sqrt{n}}-\frac{\ln\sqrt{n}}{\sqrt{n}}<\frac{1}{\sqrt{n}}\int_{1/\sqrt{n}}^1\frac{\ln(1+x)}{x^3}dx< 1-\frac{1}{\sqrt{n}}
+\frac{1}{\sqrt{n}}\int_{1/\sqrt{n}}^1\frac{\ln(1+x)}{x^3}\to 1
+ \lim_{n\rightarrow \infty} -\frac{\ln(1 + \sqrt{n}) n^{1.5} \frac{-1}{2 n^{1.5}}}{0.5 n^{-0.5}}
+ = \lim_{n\rightarrow \infty} \ln(1 + \frac{1}{\sqrt{n}}) \sqrt{n}
+\ln(1 + x) = x + O(x^2)
+1
+\frac{\ln(1+x)}{x^3}=\frac{1}{x^2}-\frac{1}{2x}+\frac{1}{3}-\frac{x}{4}+\cdots
+\int_{\frac{1}{\sqrt{n}}}^1 \frac{\ln (1+x)}{x^3}dx=\left[-\frac{1}{x}-\frac{\ln x}{2}+\frac{x}{3}-\cdots\right]_{1/\sqrt{n}}^1=-\frac{3}{4}+\sqrt{n}+\frac{\ln \sqrt{n}}{2}-\frac{1}{3\sqrt{n}}+\cdots
+\frac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1 \frac{\ln (1+x)}{x^3}dx=1-\frac{3}{4\sqrt{n}}+\frac{\ln \sqrt{n}}{2\sqrt{n}}-\frac{1}{3n}+\cdots\to 1
+\log(1+x)/x\to1
+\lim_{n\to \infty}\dfrac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1\dfrac{\ln(1+x)}{x^3}\mathrm dx=\lim _{t\to \infty}\frac{1}{t}\int_{\frac{1}{t}}^1\dfrac{\ln(1+x)}{x^3}\mathrm dx= \lim _{t\to \infty}\ln(1+t^{-1})t^3/t^2=1
+x = 0
+\delta > 0
+O(1)
+(0,\delta)
+\frac{\log(1+x)}{x^3} \sim \frac{1}{x^2} - \frac{1}{2x} + \cdots
+\delta
+n
+\begin{align} \int_{\frac{1}{\sqrt{n}}}^1 \frac{\log(1+x)}{x^3} dx  &= \left(\int_{\frac{1}{\sqrt{n}}}^\delta + \int_{\delta}^1\right) \frac{\log(1+x)}{x^3} dx\\ &= \left[ -\frac{1}{x} -\frac12 \log x \right]_{\frac{1}{\sqrt{n}}}^\delta + O(\delta) + \int_{\delta}^1 \frac{\log(1+x)}{x^3} dx\\ &= \sqrt{n} +\frac12 \log ( \sqrt{n} ) + O(\frac{1}{\delta}) \end{align}
+\lim_{n\to\infty} \frac{1}{\sqrt{n}} \int_{\frac{1}{\sqrt{n}}}^1 \frac{\log(1+x)}{x^3} dx = \lim_{n\to\infty} \frac{1}{\sqrt{n}} \left(\sqrt{n} +\frac12 \log ( \sqrt{n} ) + O(\frac{1}{\delta})\right) = 1
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{\lim_{n \to \infty}{1 \over \root{n}}      \int_{ 1/\root{n}}^{1}{\ln\pars{1 + x} \over x^{3}}\,\dd x}
+x-\frac{x^2}{2}\leq\log(1+x)\leq x
+\lim_{n\to \infty}\frac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1\frac{\log(1+x)}{x^3}\leq\lim_{n\to \infty}\frac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1\frac{1}{x^2}=\lim_{n\to \infty}\frac{1}{\sqrt{n}}({\sqrt{n}}-1)=1.
+1=\lim_{n\to \infty}\frac{1}{\sqrt{n}}(({\sqrt{n}}-1)-\frac{1}{2}\log\sqrt{n})=\lim_{n\to \infty}\frac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1\frac{1}{x^2}-\frac{1}{2x}\leq\lim_{n\to \infty}\frac{1}{\sqrt{n}}\int_{\frac{1}{\sqrt{n}}}^1\frac{\log(1+x)}{x^3}

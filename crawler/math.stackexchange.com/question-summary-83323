@@ -1,0 +1,35 @@
+a = b = c= d
+ J = \begin{pmatrix} \lambda    &   0        &   0        & \dots    &  0      &  0       \\ 1          &   \lambda  &   0        & \dots    &  0      &  0     \\ 0          &    1       &   \lambda  & \dots    &  0      &  0     \\ \vdots     &   \vdots   &   \vdots   & \ddots   &  \vdots & \vdots  \\ 0          &   0        &   0        & \dots    & \lambda & 0                         \\ 0          &   0        &   0        & \dots    &  1      & \lambda \end{pmatrix} 
+ J^{-1} = \begin{pmatrix} 1/\lambda    &   0        &   0        & \dots    &  0      &  0       \\ -1/\lambda^2          &   1/ \lambda  &   0        & \dots    &  0      &  0     \\ 1/\lambda^3          &    -1/\lambda^2       &   1/\lambda  & \dots    &  0      &  0     \\ \vdots     &   \vdots   &   \vdots   & \ddots   &  \vdots & \vdots  \\ (-1)^{n-2}1/\lambda^{n-1} &   (-1)^{n-3}1/\lambda^{n-2}  &    (-1)^{n-4}1/\lambda^{n-3}    & \dots    & 1/\lambda & 0                         \\ (-1)^{n-1}1/\lambda^n &  (-1)^{n-2}1/\lambda^{n-1} &  (-1)^{n-3}1/\lambda^{n-2}       & \dots    &  -1/\lambda^2      & 1/\lambda \end{pmatrix} 
+J^{-1}
+ \begin{pmatrix} 1/\lambda    &   0        &   0        & \dots    &  0      &  0       \\ 1          &   1/\lambda  &   0        & \dots    &  0      &  0     \\ 0          &    1       &   1/\lambda  & \dots    &  0      &  0     \\ \vdots     &   \vdots   &   \vdots   & \ddots   &  \vdots & \vdots  \\ 0          &   0        &   0        & \dots    & 1/\lambda & 0                         \\ 0          &   0        &   0        & \dots    &  1      & 1/\lambda \end{pmatrix} 
+n=2, 3
+ S_2 = \begin{pmatrix} 1   &   0        \\ 0   &  -1/\lambda  \\ \end{pmatrix} \qquad  \qquad S_3  = \begin{pmatrix} 1   &   0   &   0  \\ 0   & -1/\lambda^2  &   0  \\ 0   &  1/\lambda^3  & 1/\lambda^4 \end{pmatrix} 
+ A = \begin{pmatrix} a_1     &  0       &  0       & \dots  &  0       &   0  \\ a_2     &  a_1     &  0       & \dots  &  0       &   0  \\ a_3     &  a_2     &  a_1     & \dots  &  0       &   0  \\ \vdots  &  \vdots  &  \vdots  & \ddots &  \vdots  &  \vdots  \\ a_{n-1} &  a_{n-2} &  a_{n-3} & \dots  &  a_1     &  0   \\ a_n     &  a_{n-1} &  a_{n-2} & \dots  &  a_2     &  a_1       \end{pmatrix} 
+J^{-1}
+ Q_A(t) = \pm (t - a_1)^n 
+a_1
+A - a_1 I
+n-1
+a_2 \neq 0
+A - a_1 I
+1
+n\times n
+a_1
+x
+(\lambda^{-1},n)
+ (\lambda,n)\in\mathbb C^\times\times\mathbb Z_{ > 0 } 
+A:=K[X]/(X^n)
+K
+X
+n
+x
+X
+A
+\lambda
+K
+\lambda^{-1}+y
+\lambda-x
+y
+X^n
+ y:=\sum_{i=1}^{n-1}\ \frac{x^i}{\lambda^{i+1}}\quad. %\tag1 

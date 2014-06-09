@@ -1,0 +1,20 @@
+\displaystyle\int_0^\pi \sin\theta d\theta=-\cos\theta|_0^\pi=-\cos\pi+\cos 0=1+1=2
+\sin\theta\equiv y
+0
+\pi
+0
+0
+0
+g:[a,b] \to g([a,b])
+f:g([a,b]) \to \mathbb{R}
+\int_a^b f(g(\theta))g'(\theta)\, d\theta = \int_{g(a)}^{g(b)} f(y)\, dy
+0
+\frac{\pi}{2}
+y=g(\theta)=\sin \theta
+g'(\theta)=\cos \theta = \sqrt{1-y^2}
+\frac{\pi}{2}
+\pi
+\cos \theta = -\sqrt{1-y^2}
+ f(y) = \begin{cases} \frac{y}{\sqrt{1-y^2}} & \text{if } 0 \le \theta \le \frac{\pi}{2} \\ -\frac{y}{\sqrt{1-y^2}} & \text{if } \frac{\pi}{2} \le \theta \le \pi \end{cases}
+\int_0^1 \frac{y}{\sqrt{1-y^2}}\, dy + \int_1^0 \frac{-y}{\sqrt{1-y^2}}\, dy
+2

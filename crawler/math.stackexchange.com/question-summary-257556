@@ -1,0 +1,15 @@
+C_R = \{Re^{it}: 0\le t\le \pi\}
+\lim_{R\to\infty} \int_{C_R}\frac{e^{iz}}{z}dz=0
+z:=x+iy\,\,,\,\,x,y\in\Bbb R\,
+\,Re^{it}=z=x+iy\,\,,\,R\to\infty\Longrightarrow x^2+y^2\to\infty
+\,0\leq t\leq \pi\Longrightarrow y\geq 0\,
+\left|\oint_{C_R}\frac{e^{iz}}{z}dz\right|\xrightarrow [R\to\infty\Longrightarrow y\to\infty]{}0
+\left|\frac{1}{Re^{it}}\right|=\frac{1}{R}\xrightarrow [R\to\infty]{}0
+\left|e^{iz}\right|=e^{-y}
+\left|\frac{\mathrm{d}z}{z}\right|=\mathrm{d}t
+ \begin{align} \left|\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,\mathrm{d}z\,\right| &\le\lim_{R\to\infty}\int_0^\pi e^{-R\sin(t)}\,\mathrm{d}t\\[6pt] &=0 \end{align} 
+ \begin{align} \int_0^\pi e^{-R\sin(t)}\,\mathrm{d}t &=2\int_0^{\pi/2} e^{-R\sin(t)}\,\mathrm{d}t\\ &\le2\int_0^{\pi/2} e^{-2Rt/\pi}\,\mathrm{d}t\\ &=\frac\pi R\int_0^R e^{-u}\,\mathrm{d}u\\ &\le\frac\pi R \end{align} 
+\sin t \ge 0
+0 \le t \le \pi
+\left|e^{i R \cos t}\right| = 1
+ \begin{eqnarray} \lim_{R\to\infty} \int_{C_R}\frac{e^{iz}}{z}dz &=& \lim_{R\to\infty} \int_0^\pi d\left(R e^{i t}\right) \frac{\exp\left(iR e^{i t}\right)}{R e^{i t}} \\ &=& i \lim_{R\to\infty}  \int_0^\pi dt \ R e^{i t} \frac{\exp\left(iR e^{i t}\right)}{R e^{i t}} \\ &=& i \lim_{R\to\infty} \int_0^\pi dt \ \exp\left[iR \left(\cos t + i \sin t\right)\right] \\ &=& i \lim_{R\to\infty} \int_0^\pi dt \ e^{i R \cos t} e^{- R \sin t} \\ &=& 0 \end{eqnarray} 

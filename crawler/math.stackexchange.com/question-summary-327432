@@ -1,0 +1,30 @@
+(X_t)_{t\geq0}
+\mathbb R
+\tau
+X_0=0
+E(e^{\tau/2})<+\infty
+E(e^{X_{\tau}-\tau/2})=1
+e^{X_{t}-t/2}
+X_{t}-t/2
+c \in (0,1)
+p>1
+p < \frac{1}{c \cdot (2-c)}
+\frac{1}{pc}
+\frac{1}{1-pc}
+\frac{1}{1-pc}
+p< \frac{1}{c \cdot (2-c)}<\frac{1}{c}
+\mathbb{E}e^{\frac{\tau}{2}}<\infty
+(M_t)_{t \geq 0}
+\lim_{t \to \infty} M_t
+L^1
+\mathbb{E}\exp \left(c \cdot B_{\tau}- \frac{1}{2} c^2 \cdot \tau \right)=1
+c \in (0,1)
+\frac{1}{c}
+\frac{1}{1-c}
+M_t := \exp \left( c \cdot B_{t \wedge \tau} - \frac{1}{2} c^2 \cdot (t \wedge \tau) \right) \qquad (t \geq 0)
+\begin{align} \mathbb{E}(M_t^p) &= \mathbb{E} \left[ \exp \left( pc \cdot (B_{t \wedge \tau} - \frac{1}{2} (t \wedge \tau)) \right) \cdot \exp \left( \frac{1}{2} pc \cdot (1-c) \cdot (t \wedge \tau) \right) \right] \\ &\leq \underbrace{(\mathbb{E}(M_t))^{pc}}_{1} \cdot \left(\mathbb{E} \left[ \exp \left( \frac{1}{2} \frac{pc \cdot (1-c)}{1-pc} \tau \right) \right] \right)^{1-pc} \leq (\mathbb{E}e^{\frac{\tau}{2}})^{1-pc} \end{align}
+pc \cdot \frac{1-c}{1-pc} \leq pc \cdot \frac{1-c}{1-\frac{1}{2-c}} = pc \cdot (2-c) <1
+\mathbb{E}e^{B_{\tau}-\frac{\tau}{2}} \geq 1
+\mathbb{E}e^{B_{\tau}-\frac{\tau}{2}}  \leq 1
+1 = \mathbb{E}\exp \left[c \cdot \left(B_{\tau}-\frac{1}{2} \tau \right) + \frac{1}{2} c \cdot (1-c) \cdot \tau \right] \\ \leq (\mathbb{E}e^{B_{\tau}-\frac{\tau}{2}})^c \cdot (\mathbb{E}e^{\frac{1}{2} c \cdot \tau})^{1-c} \to \mathbb{E}e^{B_{\tau}-\frac{\tau}{2}} \quad (c \to 1)
+\mathbb{E}e^{B_{\tau}-\frac{\tau}{2}}  \leq \liminf_{t \to \infty} \mathbb{E}e^{B_{t \wedge \tau}- \frac{1}{2} (t \wedge \tau)} = 1

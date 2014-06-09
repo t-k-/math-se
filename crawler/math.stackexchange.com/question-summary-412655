@@ -1,0 +1,9 @@
+X
+f(x)=\frac{\alpha}{\theta}x^{\alpha-1}e^{-\frac{x^{\alpha}}{\theta}}\quad  x>0 .
+E[X^{\alpha}\log X]
+\frac{1}{\alpha}\theta[\ln(\theta)+\Gamma(2)]
+E(X^{\alpha} \log{X}) = \frac{\theta}{\alpha} (\Gamma'(2) + \log{\theta})
+\begin{align}E(X^{\alpha} \log{X}) &= \frac{\alpha}{\theta}\underbrace{\int_0^{\infty} dx \, \log{x} \, x^{2 \alpha-1} \, e^{-x^{\alpha}/\theta}}_{y=x^{\alpha}}\\&= \frac{1}{\alpha \theta} \underbrace{\int_0^{\infty} dy \, y\, \log{y} \, e^{-y/\theta}}_{\text{integrate by parts}}\\ &= \frac{1}{\alpha} \int_0^{\infty} dy \, e^{-y/\theta} (1+\log{y})\\&=\frac{\theta}{\alpha} + \frac{1}{\alpha} \underbrace{\int_0^{\infty} dy \log{y} \, e^{-y/\theta}}_{y=u \theta}\\&= \frac{\theta}{\alpha}+\frac{\theta}{\alpha} \log{\theta} + \frac{\theta}{\alpha} \underbrace{\int_0^{\infty} du \, \log{u} \, e^{-u}}_{\text{this is equal to } -\gamma} \\ &= \frac{\theta}{\alpha} (1-\gamma + \log{\theta})\\ &= \frac{\theta}{\alpha} (\Gamma'(2) + \log{\theta}) \end{align}
+\gamma \approx 0.5772
+\mathbb{E}[X^\alpha]
+\alpha

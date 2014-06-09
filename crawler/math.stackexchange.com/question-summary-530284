@@ -1,0 +1,4 @@
+J_{\nu-1}(z)
+J_{\nu+1}(z)
+J_\nu(z) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m+\nu+1)} {\left(\frac{z}{2}\right)}^{2m+\nu}
+J_{\nu-1}(z)+J_{\nu+1}(z) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m+\nu)} {\left(\frac{z}{2}\right)}^{2m+\nu-1}+\sum_{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m+\nu+2)} {\left(\frac{z}{2}\right)}^{2m+\nu+1} = \frac{1}{\Gamma(\nu)}\left(\frac{z}{2}\right)^{\nu-1}+\sum_{m=0}^{\infty}\left[\frac{(-1)^{m+1}}{(m+1)! \, \Gamma(m+\nu+1)}+\frac{(-1)^{m}}{m! \, \Gamma(m+\nu+2)}\right]\left(\frac{z}{2}\right)^{2m+\nu+1} = \frac{1}{\Gamma(\nu)}\left(\frac{z}{2}\right)^{\nu-1}+\sum_{m=0}^{\infty}(-1)^{m+1}\left[\frac{m+\nu+1-(m+1)}{(m+1)! \, \Gamma(m+\nu+2)}\right]\left(\frac{z}{2}\right)^{2m+\nu+1}= \sum_{m=0}^\infty \frac{(-1)^m\nu}{m! \, \Gamma(m+\nu+1)} {\left(\frac{z}{2}\right)}^{2m+\nu-1}=\frac{2\nu}{z}J_\nu(z) 

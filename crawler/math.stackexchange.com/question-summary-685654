@@ -1,0 +1,49 @@
+k
+A
+B
+W
+g:U \rightarrow \mathbb{R}
+U
+J \subset \mathbb{R}
+\gamma:J \rightarrow \mathbb{R^n}
+\dot{x}=f(x)
+\gamma(0) = x_0 \in U
+B:J \rightarrow \mathbb{R}
+K \subseteq \mathbb{R}
+\rho:K \rightarrow J
+B
+t\in K
+\sigma:K \rightarrow \mathbb{R^n}
+\sigma(t) = \gamma(\rho(t))
+\dot{x}=g(x)f(x)
+\sigma(0) = x_0
+B(t) =  \int_0^t\frac{1}{g(\gamma(s))}ds
+\rho'(t) = g(\gamma(\rho(t)))
+g(t)=\frac{1}{W}, \delta(t) = \begin{pmatrix} Ak & -A \\ Bk & -B \\ \end{pmatrix}, f(t)=\begin{pmatrix} Ak & -A \\ Bk & -B \\ \end{pmatrix} \begin{pmatrix} W \\ M \\ \end{pmatrix}
+X(t) = \frac{1}{kA-B}\left\{(Am_0-Bw_0)\begin{pmatrix} 1 \\ k \end{pmatrix} + (kw_0-m_0)\begin{pmatrix} A \\ B \end{pmatrix}e^{(kA-B)t}\right\}=\gamma(t).
+\rho
+B
+t =  \int_0^\rho\frac{1}{g(\gamma(s))}ds.
+t=\int_0^\rho\frac{1}{\frac{1}{\gamma(s)}}ds=\int_0^\rho\gamma(s)ds = \int_0^\rho \frac{1}{kA-B}\left\{(Am_0-Bw_0)\begin{pmatrix} 1 \\ k \end{pmatrix} + (kw_0-m_0)\begin{pmatrix} A \\ B \end{pmatrix}e^{(kA-B)t}\right\}ds.
+t
+A=B=k=1
+\dot W=\dot M
+M(t)=W(t)+K_0
+2W\dot W=-2K_0,
+W(t)^2-W_0^2=-2K_0t
+W_0^2\geqslant2K_0t
+W_0\gt M_0
+K_0\lt0
+W(t)
+M(t)
+t\geqslant0
+t\to\infty
+W(t)\sim M(t)\sim\sqrt{-2K_0t}
+W(t)/M(t)\to1
+K_0=M_0-W_0.
+ W(t)=\sqrt{W_0^2-2K_0t},\qquad M(t)=K_0+\sqrt{W_0^2-2K_0t}. 
+W_0\lt M_0
+K_0\gt0
+M(t)
+W(t)
+W_0^2/(2K_0)

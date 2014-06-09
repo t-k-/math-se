@@ -1,0 +1,17 @@
+\begin{array} {cc} & \sum\limits_{i=1}^{n-1} P(A_i) - \sum\limits_{1\le i < j \le n-1}P(A_i \cap A_j) + \dots + (-1)^n P(A_1 \cap A_2 \cap \dots \cap A_{n-1}) + P(A_n) - P(\bigcup\limits_{i=1}^{n-1} (A_i \cap A_n))\\ &=  \sum\limits_{i=1}^{n-1} P(A_i) - \sum\limits_{1\le i < j \le n-1}P(A_i \cap A_j) + \dots + (-1)^n P(A_1 \cap A_2 \cap \dots \cap A_{n-1}) + P(A_n) - \left[ \sum\limits_{i=1}^{n-1}P(A_i \cap A_n) - \sum\limits_{1\leq i < j \leq n-1}^{n-1}P(A_i \cap A_j \cap A_n) + \dots + (-1)^nP(A_i \cap A_2 \cap \dots \cap A_{n-1}\cap A_n)\right]\\ \end{array}
+P(\bigcup\limits_{i=1}^{n-1} (A_i \cap A_n)
+(A_i \cap A_n) \cap (A_j \cap A_n) = A_i \cap A_j \cap A_n
+n=3
+\sum\limits_{i=1}^{n}P(A_i)
+\sum\limits_{i=1}^{n}P(A_i) = \sum\limits_{i=1}^{n-1}P(A_i) + P(A_n)
+\sum\limits_{i=1}^{n} P(A_i) - \sum\limits_{1\le i < j \le n-1}P(A_i \cap A_j) + \dots + (-1)^n P(A_1 \cap A_2 \cap \dots \cap A_{n-1})  - \left[ \sum\limits_{i=1}^{n-1}P(A_i \cap A_n) - \sum\limits_{1\leq i < j \leq n-1}^{n-1}P(A_i \cap A_j \cap A_n) + \dots + (-1)^nP(A_i \cap A_2 \cap \dots \cap A_{n-1}\cap A_n)\right]
+-\sum_{1\leq i < j\leq n-1} P(A_i\cap A_j)
+P(A_i\cap A_j)
+1\leq i<j\leq n
+P(A_i\cap A_n)
+1\leq i < n
+-\sum_{1\leq i<j\leq n} P(A_i\cap A_j)
+\sum_{1\leq i < j < k \leq n-1} P(A_i\cap A_j\cap A_k)
+\sum_{1 \leq i < j < k \leq n} P(A_i\cap A_j \cap A_k)
+P(A_i\cap A_j\cap A_n)
+1\leq i < j < n

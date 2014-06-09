@@ -1,0 +1,10 @@
+(p \wedge q) \vee (\neg p \wedge r)
+(p \vee \neg p)
+t \wedge a \equiv a
+t
+(p \vee \neg p)
+(p \wedge q) \vee (\neg p \wedge r) \equiv ((p \wedge q) \vee \neg p) \wedge ((p \wedge q) \vee r) \quad \text{ distribute} \vee \text{ over } \wedge
+\equiv ((p \vee \neg p)  \wedge (q \vee \neg p)) \wedge ((p \vee r) \wedge (q \vee r)) \quad \text{ again distribute} \vee \text{ over } \wedge 
+(q \vee \neg p) \wedge ((p \vee r) \wedge (q \vee r)) \equiv (q \vee \neg p) \wedge (p \vee r) \wedge (q \vee r) \quad \text{ since } \wedge \text{ is associative} 
+(A \vee B)
+(A \vee B) \wedge (\neg A \vee p)\wedge(\neg A \vee q) \wedge (\neg B \vee \neg p)\wedge(\neg B \vee r)

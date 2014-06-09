@@ -1,0 +1,10 @@
+Bc = B - (X'X)^{-1}Q(Q'(X'X)^{-1}Q)^{-1}(Q'B - C)
+ \begin{align} Q_a' b_a^c &= C - Q_b' b_b^c \\ Q_b' b_b^c &= C - Q_a' b_a^c. \\ \end{align} 
+ b_a^c = B - (X'X)^{-1}Q_a(Q_a'(X'X)^{-1}Q_a)^{-1}(Q_a'B - C + Q_b' b_b^c)\\ b_b^c = B - (X'X)^{-1}Q_b(Q_b'(X'X)^{-1}Q_b)^{-1}(Q_b'B - C + Q_a' b_a^c). 
+b_a^c
+b_b^c
+ b_a^c + M_a Q_b' b_b^c = B - M_a(Q_a'B - C)\\ b_b^c + M_b Q_a' b_a^c = B - M_b(Q_b'B - C), 
+M_m = (X'X)^{-1}Q_m(Q_m'(X'X)^{-1}Q_m)^{-1}
+b_a^c
+b_b^c
+ \begin{bmatrix}I & M_{a}Q_{b}'\\ M_{b}Q_{a}' & I \end{bmatrix}\begin{bmatrix}b_{a}^{c}\\ b_{b}^{c} \end{bmatrix}=\begin{bmatrix}B-M_{a}(Q_{a}'B-C)\\ B-M_{b}(Q_{b}'B-C) \end{bmatrix}. 

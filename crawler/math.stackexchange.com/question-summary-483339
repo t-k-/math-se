@@ -1,0 +1,14 @@
+\beta
+y
+X
+\beta_1, \beta_2
+t \in [0,1]
+\leq 0
+ \phi: \beta \mapsto \Vert y - X \beta \Vert^2 = \Vert y \Vert^2 - 2 y^T X \beta + \beta^T X^T X \beta 
+ \phi(t \beta_1 + (1-t)  \beta_2) - \left[ t \phi( \beta_1) + (1-t) \phi(\beta_2) \right] \leq 0  
+ t^2 \beta_1^T X^T X \beta_1 + (1-t)^2 \beta_2^T X^T X \beta_2 + 2 t(1-t) \beta_1^T X^T X \beta_2 - t \beta_1^T X^T X \beta_1  - (1-t) \beta_2^T X^T X \beta_2 
+ = - t(1-t) \left[ (\beta_1 - \beta_2)^T X^T X (\beta_1 - \beta_2) \right] = -  t(1-t) \Vert  X (\beta_1 - \beta_2) \Vert^2
+\phi
+ \phi: \beta \mapsto \Vert y - X \beta \Vert^2 = \Vert y \Vert^2 - 2 y^T X \beta + \beta^T X^T X \beta 
+ \dfrac {\partial^2 \phi} {\partial \beta^2} = X^TX
+\phi

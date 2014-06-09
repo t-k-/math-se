@@ -1,0 +1,18 @@
+ A = \begin{pmatrix} \cos(a) & -\sin(a) & 0 \\ \sin(a) & \cos(b) & 0 \\ 0 & 0 & 1 \end{pmatrix}
+ B = \begin{pmatrix} \cos(b) & 0 & -\sin(b) \\ 0 & 1 & 0 \\ \sin(b) & 0 & \cos(b) \end{pmatrix}
+f: \mathbb{R^3} \to \mathbb{R^3}, x \to Ax
+A*(1,0,0) = (\cos(a), \sin(a), 0)
+A*(0,1,1) = (-\sin(a), \cos(a), 0)
+A*(0,0,1) = (0,0,1)
+g: \mathbb{R^3} \to \mathbb{R^3}, x \to Bx
+B*(1,0,0) = (\cos(b), 0, \sin(b))
+B*(0,1,0) = (0, 1, 0)
+B*(0,0,1) = (-\sin(b), 0, \cos(b))
+h: \mathbb{R^3} \to \mathbb{R^3}, x \to ABx
+AB*(1,0,0) = \begin{pmatrix} \cos(a)cos(b) \\ \sin(a)\cos(b) \\ \sin(b) \end{pmatrix}
+AB*(0,1,0) = \begin{pmatrix} -\sin(a) \\ \cos(a) \\ 0 \end{pmatrix}
+AB*(0,0,1) = \begin{pmatrix} -\cos(a)\sin(b) \\ -\sin(a)\sin(b) \\ \cos(b) \end{pmatrix}
+A
+B
+(AB-I)v=0
+\cos^{-1}\frac12( tr(AB)-1) )

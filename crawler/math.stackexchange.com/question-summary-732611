@@ -1,0 +1,14 @@
+ \lim_{n\to\infty} \sin\bigl(\pi\sqrt{n^2+1}\bigr)=0  
+\lvert \sin x\rvert\le \lvert x\rvert
+ 0<\delta_n=\sqrt{n^2+1}-n=\frac{\big(\sqrt{n^2+1}+n\big)\big(\sqrt{n^2+1}-n\big)}{\sqrt{n^2+1}+n}= \frac{1}{\sqrt{n^2+1}+n}<\frac{1}{2n} 
+ \sin\left(\pi\sqrt{n^2+1}\right)=\sin\left(\pi\sqrt{n^2+1}-\pi n+\pi n\right)=\sin(\pi\delta_n+\pi n)=(-1)^n\sin(\pi\delta_n), 
+ \big|\sin\left(\pi\sqrt{n^2+1}\right)\big|=\lvert\sin(\pi\delta_n)\rvert\le \lvert\pi \delta_n\rvert<\frac{\pi}{2n}\to 0. 
+ \lim_{n\to\infty} (-1)^n n\sin\big(\pi\sqrt{n^2+1}\big)=\frac{\pi}{2}. 
+n
+\sin\left(\pi\sqrt{n^2+1}\right)=(-1)^{n-1}\sin\left(n\pi-\pi\sqrt{n^2+1}\right)
+=(-1)^{n-1}\sin\left[\pi(n-\sqrt{n^2+1})\right]
+=(-1)^{n-1}\sin\left[\pi\left(\frac{n^2-(n^2+1)}{n+\sqrt{n^2+1}}\right)\right]
+=(-1)^{n-1}\sin\left[-\pi\left(\frac1{n+\sqrt{n^2+1}}\right)\right]
+\displaystyle\lim_{n\to\infty}\left(\frac1{n+\sqrt{n^2+1}}\right)=0
+\sqrt{n^2+1}=n\sqrt{1+\frac1{n^2}}=n\left(1+O\left(\frac1{n^2}\right)\right)=n+O\left(\frac1{n}\right)
+\sin\left(\pi\sqrt{n^2+1}\right)=\sin\left(n\pi+O\left(\frac1{n}\right)\right)=(-1)^n\sin\left(O\left(\frac1{n}\right)\right)\xrightarrow{n\to\infty}\ 0

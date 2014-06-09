@@ -1,0 +1,73 @@
+p_A(n)
+p_B(n)
+u, v
+w
+[u^k v^l w^m]
+A
+B
+n
+k
+A
+A
+l
+A
+B
+B
+A
+m
+B
+B
+z^n
+q
+A
+u
+u^6
+v
+v^{12}
+w
+w^8
+q
+q=1
+A
+q=0
+B
+q=1/2
+ p_A(n) = u p_A(n-1) \frac{6}{10} + v p_B(n-1) \frac{3}{10} \\ p_B(n) = v p_A(n-1) \frac{4}{10} + w p_B(n-1) \frac{7}{10} .
+ z^n p_A(n) = uz z^{n-1} p_A(n-1) \frac{6}{10} + vz z^{n-1} p_B(n-1) \frac{3}{10} \\ z^n p_B(n) = vz z^{n-1} p_A(n-1) \frac{4}{10} + wz z^{n-1} p_B(n-1) \frac{7}{10} .
+ P_A(z) = \sum_{n\ge 0} z^n p_A(n) \quad \text{and} \quad P_B(z) = \sum_{n\ge 0} z^n p_B(n) 
+ P_A(z) - q = uz P_A(z)  \frac{6}{10} + vz P_B(z) \frac{3}{10} \\ P_B(z) - (1-q) = vz P_A(z)  \frac{4}{10} + wz P_B(z) \frac{7}{10}.
+P_A(z)=-5\,{\frac {-3\,vz+3\,vzq+7\,wzq-10\,q}{-6\,{v}^{2}{z}^{2}+50-30\,uz-35\, wz+21\,w{z}^{2}u}}\\ P_B(z)=10\,{\frac {5-5\,q-3\,uz+3\,uzq+2\,vzq}{-6\,{v}^{2}{z}^{2}+50- 30\,uz-35\,wz+21\,w{z}^{2}u}} 
+ Q_A(z) =  \left( \frac{d}{du} + \frac{d}{dv} + \frac{d}{dw} \right) P_A(z; u^6, v^{12}, w^8)_{u=1, v=1, w=1} \\ Q_B(z) =  \left( \frac{d}{du} + \frac{d}{dv} + \frac{d}{dw} \right) P_B(z; u^6, v^{12}, w^8)_{u=1, v=1, w=1}.
+ Q_A(z) = 6\,{\frac {z \left( -32\,z+3\,{z}^{2}-4\,zq+4\,{z}^{2}q+60 \right) }{  \left( z-1 \right) ^{2} \left( 3\,z-10 \right) ^{2}}}\\ Q_B(z) =-8\,{\frac {z \left( -70 +10\,q-16\,zq-9\,{z}^{2}+6\,{z}^{2}q+48\,z \right) }{ \left( z-1 \right) ^{2} \left( 3\,z- 10 \right) ^{2}}}
+A
+B
+[z^n] D_A(z) + [z^n] D_B(z) = 1,
+q=1/2
+n
+A
+B
+ D_A(z) = P_A(z; 1, 1, 1) = -5\,{\frac {2\,z-5}{15\,{z}^{2}+50-65\,z}} \\ D_B(z) = P_B(z; 1, 1, 1) = 10\,{\frac {5/2-1/2\,z}{15\,{z}^{2}+50-65\,z}} 
+  [z^n] D_A(z) = 3/7+1/14\, \left( 10/3 \right) ^{-n} \\ [z^n] D_B(z) = 4/7-1/14\, \left( 10/3 \right) ^{-n}
+  [z^n] D_A(z) \sim 3/7 \\ [z^n] D_B(z) \sim 4/7.
+ F_A(z) = 6\,{\frac {z \left( -34\,z+5\,{z}^{2}+60 \right) }{ \left( z-1 \right) ^{2} \left( 3\,z-10 \right) ^{2}}}
+ F_B(z) = 8\,{\frac {z \left( 65-40\,z+6\,{z}^{2} \right) }{ \left( z-1 \right) ^{2} \left( 3\,z-10 \right) ^{2}}}.
+[z^n] F_A(z) = -{\frac {108}{343}}+{\frac {4}{49}}\, \left( 10/3 \right) ^{-n} \left( n+1 \right) +{\frac {80}{343}}\, \left( 10/3 \right) ^{-n}+{\frac {186}{49}}\,n
+[z^n] F_B(z) = {\frac {80}{343}}-{\frac {4}{49}}\, \left( 10/3 \right) ^{-n} \left( n+1 \right) -{\frac { 52}{343}}\, \left( 10/3 \right) ^{-n}+{\frac {248}{49}}\,n .
+[z^n] F_A(z) \sim \frac{186}{49} n - \frac{108}{343}
+[z^n] F_B(z) \sim \frac{248}{49} n + \frac{80}{343}.
+ \frac{3}{7} \left( \frac{186}{49} n - \frac{108}{343} \right) + \frac{4}{7} \left( \frac{248}{49} n + \frac{80}{343} \right) = \frac{1550}{343} n - \frac{4}{2401}.
+A
+B
+  [z^n] D_A(z) * [z^n] F_A(z) +  [z^n] D_B(z) * [z^n] F_B(z) = \frac{1}{2} \frac{18}{5} + \frac{1}{2} \frac{26}{5} = \frac{22}{5}.
+A
+ \frac{3}{5} \frac{18}{5} + \frac{2}{5} \frac{24}{5} = \frac{102}{25}.
+B
+ \frac{3}{10} \frac{18}{5} + \frac{7}{10} \frac{28}{5} = 5.
+\left( \frac{186}{49} n - \frac{108}{343} \right) + \left( \frac{248}{49} n + \frac{80}{343} \right) =  \frac{62}{7} n - \frac{4}{49}.
+[z^n]
+[z^1]
+  [z^1] F_A(z) + [z^1] F_B(z) = \frac{18}{5} + \frac{26}{5} = \frac{44}{5}.
+A
+ \frac{18}{5} + \frac{24}{5} = \frac{42}{5}.
+B
+\frac{18}{5} + \frac{28}{5} = \frac{46}{5}.

@@ -1,0 +1,23 @@
+P_n
+n = 2
+P_k = \frac12.\frac{k+1}k
+k \ge2
+P_k
+P_{k+1}
+P_n = \prod^n_{k=2} \left(\frac{k^2 - 1}{k^2}\right)
+P_n = \frac{1}{2}.\frac{n + 1}{n} 
+P_2 = \frac{3}{4} = \frac{1}{2}.\frac{2+1}{2} 
+P_{k+1} = \frac12.\frac{k+2}{k+1}
+P_n=\dfrac{n+1}{2n}
+P_{n+1}=\frac{(n+1)+1}{2(n+1)}=\frac{n+2}{2(n+1)}\;.
+P_{n+1}=\prod_{k=2}^{n+1}\frac{k^2-1}{k^2}=\left(\prod_{k=2}^n\frac{k^2-1}{k^2}\right)\left(\frac{(n+1)^2-1}{(n+1)^2}\right)\;.\tag{1}
+\prod_{k=2}^n\frac{k^2-1}{k^2}=\frac{n+1}{2n}\;,
+P_{n+1}=\frac{n+1}{2n}\cdot\frac{(n+1)^2-1}{(n+1)^2}\;.
+(1)
+(n+1)^2-1=(n)(n+2)
+\frac{n+2}{2(n+1)}\overset{?}{=}\frac{n+1}{2n}\frac{(n+1)^2-1}{(n+1)^2}.
+\rm f(0)\  \prod_{k\:=\:0}^{m-1}\, \frac{f(k\!+\!1)}{f(k)}\  =  \ \ \color{red}{\rlap{--}f(0)}\frac{\color{green}{\rlap{--}f(1)}}{\color{red}{\rlap{--}f(0)}}\frac{\color{royalblue}{\rlap{--}f(2)}}{\color{green}{\rlap{--}f(1)}}\frac{\phantom{\rlap{--}f(3)}}{\color{royalblue}{\rlap{--}f(2)}} \, \cdots \frac{\color{brown}{\rlap{---}f(m\!-\!1)}}{\phantom{\rlap{--}f(m\!-\!2)}}\frac{f(m)}{\color{brown}{\rlap{----}f(m-1)}}\ =\ \ f(m) 
+\rm\ k =2\ 
+\rm\ k=0,\ 
+\begin{eqnarray}\rm \prod_{k=2}^n\, \dfrac{f(k\!-\!1)}{f(k)} &\, =\, &\rm \dfrac{f(1)}{f(n)} \\ \\ \rm\prod_{k=2}^n \dfrac{f(k\!+\!1)}{f(k)} &\, =\, &\rm \dfrac{f(n\!+\!1)}{f(2)} \\ \\ \rm  \Rightarrow\ \ \prod_{k=2}^n \dfrac{f(k\!-\!1)\,f(k\!+\!1)}{f(k)\ \ \ \ \ f(k)} &\, =\, &\rm \dfrac{f(1)\, f(n\!+\!1) }{f(2)\ \ f(n)\ \ \ }\end{eqnarray}
+\rm\ f(k) = k\ 

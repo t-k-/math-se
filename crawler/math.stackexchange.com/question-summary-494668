@@ -1,0 +1,7 @@
+\displaystyle \int \limits_0^{2a}f(x)dx=\int \limits_0^a[f(x)+f(2a-x)]dx = \int \limits_0^a f(x)dx + \int \limits_0^a f(2a-x)dx
+\int_0^a f(2a-x)dx = \int_a^{2a} f(y)dy.
+[0, 2a]
+[0, a]
+[a, 2a]
+\begin{align} \int_0^{2a} f(x) dx &= \int_0^{a} f(x) dx+\int_a^{2a} f(x) dx\\ &= \int_0^{a} f(x) dx+\int_0^{a} f(x+a) dx\\ &= \int_0^{a} f(x) dx-\int_a^{0} f((a-x)+a) dx  \quad \text{ (replace } x \text{ by }a-x)\\ &= \int_0^{a} f(x) dx-\int_a^{0} f(2a-x) dx\\ &= \int_0^{a} f(x) dx+\int_0^a f(2a-x) dx \quad \text{ (reverse direction of integration)}\\ &= \int_0^{a} (f(x) dx+f(2a-x)) dx\\ \end{align} 
+\int_0^{2a} f(x) dx = \int_0^{a} (f(x) + f(x+a)) dx 

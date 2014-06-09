@@ -1,0 +1,29 @@
+S(i,0,x) = 1
+i
+S(i,1,x) = (x+1)^i-1
+S(i,2,x) = \dfrac{(2x+1)^i - 2 (x+1)^i + 1}{2}
+ S(i,j,x) = \frac{1}{j!} \sum_{k=0}^j (-1)^{j+k} {j \choose k} (kx+1)^i
+T(n,k,x)
+T(n,k,x) = \sum_{j=0}^n \binom{n}{j} \left\{ j \atop k \right\} x^{n-j}.
+S(n,k,x) = x^n T(n,k,1/x).
+T(n,k,x)
+T(n,k,x) = \frac{1}{k!}\sum_{j=0}^k (-1)^{k-j} \binom{k}{j} (x+j)^n.
+T(n,k,x)
+(t+x)^n
+t
+(t+x)^n = \sum_{k=0}^n T(n,k,x) t^{\underline{k}}.
+W_{n+x} = \{w_1, w_2, \ldots, w_{n+x}\}
+W_x = \{w_1, w_2, \ldots, w_x\}
+T(n,k,x)
+W_{n+x}
+k+x
+x
+W_x
+x
+n
+x
+s
+k
+s^{\underline{k}} \, T(n,k,x-s)
+S
+\begin{align*} S(n,k,x) &= \sum_{j=0}^n {n\choose j} \left\{j\atop k\right\} x^j \\ &= \sum_{j=0}^n {n\choose j} \left[     \frac{1}{k!} \sum_{l=0}^k (-1)^{k-l}{k\choose l} l^j \right] x^j \\ &= \frac{1}{k!} \sum_{l=0}^k (-1)^{k-l} {k\choose l} \sum_{j=0}^n {n\choose j}(l x)^j \\ &= \frac{1}{k!} \sum_{l=0}^k (-1)^{k-l} {k\choose l} (1+l x)^n \end{align*}

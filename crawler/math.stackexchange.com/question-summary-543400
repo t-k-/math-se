@@ -1,0 +1,47 @@
+D := 
+|D| = {\binom{52}{9}}.
+Q := 
+|Q| = {\binom{4}{0}\binom{48}{9}}.
+Q_a := 
+|Q_a| = {|D|-|Q|}
+K := 
+|K| = {\binom{4}{0}\binom{48}{9}+\binom{4}{1}\binom{48}{8}}
+K_a := 
+|K_a| = {|D|-|K|}
+A := 
+|A| = {\binom{4}{0}\binom{48}{9}+\binom{4}{1}\binom{48}{8}+\binom{4}{2}\binom{48}{7}}
+A_a := 
+|A_a| = {|D|-|A|}
+X := 
+|X| = |D|-[|Q|+|K|+|A|-|Q\cap K|-|K\cap A|-|Q\cap A|+|Q\cap K\cap A|]
+\frac{|X|}{|D|}
+|K\cap A|
+k
+a
+S(k,a) := 
+k
+a
+S(q,k,a) := 
+q
+k
+a
+|S(k,a)| = \binom{4}{k}\binom{4}{a}\binom{44}{9-k-a}
+|S(q,k,a)| = \binom{4}{q}\binom{4}{k}\binom{4}{a}\binom{40}{9-q-k-a}
+|K\cap A| = \sum\limits_{a=0}^{2}\sum\limits_{k=0}^{1} |S(k,a)|
+|Q\cap K\cap A| = \sum\limits_{a=0}^{2}\sum\limits_{k=0}^{1}\sum\limits_{q=0}^{0} |S(q,k,a)|
+\binom{52}{9}
+a_r
+f(x) = \sum_{r=0}^{\infty} a_r x^r
+f(x) = p_1(x) \; p_2(x) \; p_3(x) \; p_4(x)
+p_1(x) = \binom{4}{1}x + \binom{4}{2}x^2 +\binom{4}{3}x^3 +\binom{4}{4}x^4
+p_2(x) = \binom{4}{2}x^2 +\binom{4}{3}x^3 +\binom{4}{4}x^4
+p_3(x) = \binom{4}{3}x^3 +\binom{4}{4}x^4
+p_4(x) = (1+x)^{40}
+f(x)
+x^9
+1,140,004 / \binom{52}{9} \approx 0.000309862
+p_1(x) \; p_2(x) \; p_3(x)
+x^9
+(1+x)^{40}
+x^9
+f(x)

@@ -1,0 +1,33 @@
+S={\rm span}(v_1,\ldots,v_k)
+R^n
+P_S
+S
+x
+x^T v_i = 0
+i=1,\ldots,k
+P_S x=0
+|x^T v_i| \leq \epsilon
+i=1,\ldots,k
+||x||_2=1
+||v_i||_2=1
+i=1,\ldots,k
+||P_S x||_2 \leq f(\epsilon, v_1, \ldots, v_n)
+f(\epsilon, v_1, \ldots, v_n)
+0
+\epsilon \rightarrow 0
+\epsilon \rightarrow 0
+A=(v_1,v_2,...,v_k)\in\mathbb{R}^{n\times k}
+P_S
+P_S=A(A^TA)^{-1}A^T\in\mathbb{R}^{n\times n}
+y=A^Tx\in\mathbb{R}^k
+|v_i^Tx|<\epsilon
+|y_i|<\epsilon
+\|y\|^2<k\epsilon^2
+(A^TA)^{-1}=U^T\Sigma U
+(A^TA)^{-1}
+\Sigma=\mathrm{diag}(\sigma_1,...,\sigma_k)
+z=Uy
+\sigma_1
+(A^TA)^{-1}
+\|P_Sx\|^2=x^TP_Sx=y^T(A^TA)^{-1}y
+\|P_Sx\|^2=y^T(A^TA)^{-1}y=z^T\Sigma z=\sum_{i=1}^k \sigma_i z_i^2\le \sigma_1\sum_{i=1}^k z_i^2=\sigma_1\|z\|^2=\sigma_1\|Uy\|^2=\sigma_1\|y\|^2<\sigma_1k\epsilon^2

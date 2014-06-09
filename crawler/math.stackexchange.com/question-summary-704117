@@ -1,0 +1,16 @@
+(A \cup B) - (C \cap  D) = (A - C) \cup (A - D)     \cup (B - C) \cup (B - D)
+A - B = A \cap B'
+(A \cup B) \cap  (C \cap  D)^\complement = (A     \cap  C^\complement) \cup (A \cap  D^\complement)     \cup (B \cap  C^\complement) \cup (B \cap      D^\complement)
+(A \cup B) \cap  (C \cap  D)^\complement = A \cap      (C^\complement \cup D^\complement) \cup B \cap      (C^\complement \cup D^\complement)
+(A \cup B) \cap  (C^\complement \cup D^\complement)     = A \cap  (C^\complement \cup D^\complement) \cup B \cap  (C^\complement \cup D^\complement)
+(A \cap  C^\complement) \cup (A \cap  D^\complement)     \cup (B \cap  C^\complement) \cup (B \cap      D^\complement) = A \cap  (C^\complement \cup     D^\complement) \cup B \cap  (C^\complement \cup     D^\complement)
+A \cap  (C^\complement \cup D^\complement) \cup B     \cap  (C^\complement \cup D^\complement) = A \cap      (C^\complement \cup D^\complement) \cup B \cap      (C^\complement \cup D^\complement)
+A \oplus B = A^\complement \oplus B^\complement
+\begin{align} ...&= A \cap  (C^\complement \cup D^\complement) \cup B \cap  (C^\complement \cup D^\complement)\\ \\ & = (A \cap  C^\complement) \cup (A \cap  D^\complement)     \cup (B \cap  C^\complement) \cup (B \cap      D^\complement)\end{align}\tag{1}
+(1)
+(1)
+P - Q = P\cap Q^\complement
+(A \cap  C^\complement) \cup (A \cap  D^\complement)     \cup (B \cap  C^\complement) \cup (B \cap      D^\complement) = (A - C) \cup (A - D) \cup (B-C) \cup (B - D)
+(2)
+(A - B) \cup (B - A) = (A - B)^\complement \cup (B -     A)^\complement
+\begin{align} A \oplus B & = (A - B)\cup (B - A) \\ \\&= (A\cap B^\complement) \cup (B\cap A^\complement)\\ \\ & = \ldots\end{align}

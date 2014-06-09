@@ -1,0 +1,10 @@
+ \int \frac{xe^{2x}}{(2x+1)^2}dx 
+z=2x+1
+ \int \frac{xe^{2x}}{(2x+1)^2}dx \\ =\frac{1}{4e}\int \frac{(z-1)e^{z}}{z^2}dz
+\int \frac{(z-1)e^{z}}{z^2}dz \\ =\int\frac{e^z}{z}dz- \int\frac{e^z}{z^2}dz\\=\left[\frac{e^z}{z}+ \int\frac{e^z}{z^2}dz\right]- \int\frac{e^z}{z^2}dz \\=\frac{e^z}{z}+C(\text{integral constant})
+\displaystyle  \int  e^{ax} (f'(x) + a f(x)) dx = f(x) e^{ax} + c 
+\displaystyle  f(x) = \frac{1}{2x+1} 
+u=xe^{2x},du=2xe^{2x}+e^{2x}dx=(2x+1)e^{2x}dx
+dv=(2x+1)^{-2}dx,v=-\frac12(2x+1)^{-1}
+\int\frac{xe^{2x}}{(2x+1)^2}=-\frac{xe^{2x}}{4x+2}+\int\frac12e^{2x}dx=
+-\frac{xe^{2x}}{4x+2}+\frac14e^{2x}+C

@@ -1,0 +1,28 @@
+\int_0^1 \int_0^{r_1} \int_{r_1-r_0}^{r_1+r_0}        \left[\frac{Ov(r_0,r_1,t)^2}{(\frac{4}{3}\pi r_0^3)(\frac{4}{3}\pi r_1^3)}\right]               *\frac{t^2}{2\sqrt{\pi}}\exp(-t^2/4)\,dt\,dr_0\,dr_1,
+0
+1
+Ov(r_0,r_1,t)^2
+t^2
+t
+Ov(r_0,r_1,t)=\left[(1/12)\pi(r_0+r_1-t)^2(t^2+2t(r_0+r_1)-3(r_1-r_0)^2)\right]/t.
+r_0
+r_1
+0
+r_0
+r_1
+0.001
+\mathbf{R}^3
+0.0036776...
+r_0
+r_1
+100
+1
+0.00343179...
+r_0=u r_1
+t=r_1+sr_0=r_1+su\,r_1
+dr_0=u\,dr_1
+dt=ur_1\,ds
+G(u,r_1,s)= u^4 r_1^4 (1-s)^4 (4s+s^2u+2su-3u+8)^2 
+\int_0^1 \int_0^{1} \int_{-1}^{1}        \left[\frac{F(u,r_1,s)^2}{(\frac{4}{3}\pi u^3 r_1^3)(\frac{4}{3}\pi r_1^3)}\right]               \frac{1}{2\sqrt{\pi}}\exp(-r_1^2(1+su)^2/4)\,u\,r_1^2\,ds\,du\,dr_1 \tag1
+F(u,r_1,s)=\frac{\pi}{12}u^3 r_1^4(1-s)^2 (4s+s^2u+2su-3u+8) \tag2
+\frac{3}{128\sqrt{\pi}}\int_0^1 \int_0^{1} \int_{-1}^{1}       G(u,r_1,s) \exp(-r_1^2(1+su)^2/4)\,ds\,du\,dr_1 \tag3

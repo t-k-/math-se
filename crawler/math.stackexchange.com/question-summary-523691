@@ -1,0 +1,15 @@
+\lim_{n\rightarrow\infty}{y_{n}}=\lim_{n\rightarrow\infty}{(1+x^{n})^{\frac{1}{n}}}
+\lim_{n\rightarrow\infty}{\ln{y_{n}}}=\lim_{n\rightarrow\infty}{\frac{1}{n}\ln{(1+x^{n})}}
+v=1/n
+v
+0
+\lim_{n\rightarrow\infty}{\ln{y_{n}}}=\lim_{v\rightarrow{0}}{v\ln{(1+x^{\frac{1}{v}})}}
+\lim_{v\rightarrow{0}}{v}\cdot\lim_{v\rightarrow{0}}{\ln{(1+x^{\frac{1}{v}})}}
+0\cdot\infty
+1\leq x\leq 2
+x^n\leq 1+x^n\leq 2x^n
+x\leq (1+x^n)^{\frac{1}{n}}\leq 2^{\frac{1}{n}}x
+lim_{n\to\infty}(1+x^n)^{\frac{1}{n}}=x
+f(y):=\left(1+x^y\right)^{1/y}\implies \log f(y)=\frac{\log(1+x^y)}{y}
+\lim_{y\to\infty}\log f(y)=\lim_{y\to\infty}\frac{\log(1+x^y)}y=\lim_{y\to\infty}\frac{x^y}{1+x^y}\log x=\log x\implies
+\lim_{y\to\infty}f(y)=\lim_{y\to\infty}e^{\log f(y)}=e^{\log x}=x

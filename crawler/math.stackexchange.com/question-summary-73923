@@ -1,0 +1,54 @@
+\textbf{Lemma :}
+T
+\mathbb{C}^{m \times n}
+m \times n
+T(M) = AMB
+A
+m \times m
+B
+n \times n
+T =
+(A)
+(B)
+T
+x
+A
+y
+B^T
+xy^T
+x
+\lambda
+y
+k
+xy^T
+\lambda k
+T
+T
+mn
+A_k
+B_k
+\textbf{ Update :}
+T
+E^{(ij)}
+1
+(i,j)
+(ab,ij)
+T
+\{ E^{(ij)}\}
+(ij,ij)
+ (A E^{(ij)} B)_{ab} = \sum_{k,l} A_{ak} E^{(ij)}_{kl} B_{lb} = A_{ai} B_{jb}. 
+ \operatorname{Tr} T = \sum_{i,j} (AE^{(ij)}B)_{ij} = \sum_{i,j} A_{ii} B_{jj} = \left( \sum_i A_{ii} \right) \left( \sum_j B_{jj} \right) = \operatorname{Tr} A \operatorname{Tr} B. 
+\text{trace }T = (\text{trace }A)(\text{trace }B)
+A
+B
+A
+B
+A = e_i e_j^T
+B = e_k e_l^T
+1 \le i,j \le m
+1 \le k,l \le n
+e_i
+i
+{\mathbb C}^{m \times n}
+e_r e_s^T
+ \text{trace} T = \sum_{r,s} ((e_i e_j^T e_r e_s^T e_k e_l^T))_{r,s}  = \sum_{r,s} \delta_{ir} \delta_{jr} \delta_{sk} \delta_{ls} = \delta_{ij} \delta_{kl} = \text{trace}(e_i e_j^T) \text{trace}(e_k e_l^T) 

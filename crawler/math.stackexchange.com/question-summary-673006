@@ -1,0 +1,23 @@
+\epsilon>0
+A\in\mathcal{B}(\mathbb{R}^{n})
+K\subset A
+P(A\setminus K)\leq\epsilon
+F
+G
+F\subset A\subset G
+P(G\setminus F)\leq\epsilon
+K
+F
+K=F_{N}=F\cap[-N,N]^{n}
+P(A\setminus K)=P(A\setminus (F\cap[-N,N]^{n}))=P(A\cap(F^{c}\cup[-N,N]^{c})^{c})=\cdots
+F
+M
+A
+P(G-F)<\epsilon/2
+P(G)=P((G-F)\cup F)=P(G-F)+P(F)<P(F)+\epsilon/2
+N
+P(M)=P([-N,N]^n)>1-\epsilon/2
+F\cap M\subseteq F\subseteq G
+P(F)=P(F\cap M\cup F\cap M^c)=P(F\cap M)+P(F\cap M^c)\le
+\le P(F\cap M)+P(M^c)< P(F\cap M)+\epsilon/2
+P(A-(F\cap M))\le P(G-(F\cap M))=P(G)-P(F\cap M)<\epsilon

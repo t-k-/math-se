@@ -1,0 +1,12 @@
+\int\limits^{t}_{0} W(s)\mathrm{d}W(s)
+\mathbb{Var}\left(\int_{1}^2 (W_t)^2\mathrm{d}W_t \right)
+\mathbb{Var}\left(\int_{0}^T (W_t)^2\mathrm{d}t \right)
+X = \int\limits_1^2 W_t^2 \mathrm{d} W_t
+\mathbb{E}\left(X\right) = 0
+\mathbb{Var}(X) = \mathbb{E}(X^2)
+    \mathbb{E}\left( \left(\int\limits_1^2 W_t^2 \mathrm{d} W_t \right)^2 \right) =     \int_{1}^{2} \mathbb{E}(W_t^4) \mathrm{d} t =     \int_1^2 3 t^2 \mathrm{d} t = 2^3 - 1^3 = 7 
+Y = \int\limits_0^t W_s^2 \mathrm{d} s
+\mathbb{E}(W_s^2) = s
+\mathbb{E}(Y) = \int\limits_0^t s \mathrm{d} s = \frac{t^2}{2}
+\mathbb{Var}(Y) = \mathbb{E}(Y^2) - (\mathbb{E}(Y))^2 = \frac{7}{12} t^4 - \left(\frac{t^2}{2} \right)^2 = \frac{t^4}{3}
+\begin{eqnarray}   \mathbb{E}(Y^2) &=& \int_0^t \int_0^t \mathbb{E}(W_s^2 W_u^2) \mathrm{d} s \mathrm{d} u    = 2 \int_0^t \int_0^s \mathbb{E}(W_s^2 W_u^2) \mathrm{d} u \mathrm{d} s \\     &=& 2 \int_0^t \int_0^s \mathbb{E}(W_u^2 (W_u  + W_{s-u})^2) \mathrm{d} u \mathrm{d} s \\    &=& 2 \int_0^t \int_0^s \left( \mathbb{E}(W_u^4) + \mathbb{E}(W_u^2) \mathbb{E}(W_{s-u}^2) \right) \mathrm{d} u \mathrm{d} s \\    &=& 2 \int_0^t \int_0^s \left( 3 u^2 + u(s-u) \right) \mathrm{d} u \mathrm{d} s = 2 \int_0^t \left( s^3 + \frac{s^3}{6} \right) \mathrm{d} s = \frac{7}{12} t^4 \end{eqnarray} 

@@ -1,0 +1,15 @@
+\{0, \dots, n\}
+P(x, x + 1) = p  \\ P(x, x - 1) = 1 - p
+1 \le x \le n -1
+P(0, 1) = a
+P(0, 0) = 1 - a
+P(n, n - 1) = b
+p(n, n) = 1- b
+\pi
+\pi(x + 1)(1-p) + \pi(x - 1)p = \pi(x) \ \ \ \ \ \ \   2 \le x \le n -2
+\pi(0)(1 - a) + \pi(1)(1 - p) = \pi(0)
+\pi(0)a + \pi(2)(1 - p) = \pi(1)
+ \pi(n-1)p + \pi(n)(1 - b) = \pi(n)
+\pi(n - 2)p + \pi(n)b = \pi(n-1)
+\pi(x) = k_1 + k_2\bigg(\frac{p}{p-1}\bigg)^x ,  \ \ \,  p \ne 1/2 
+\pi(x) = k_1 + k_2x,  \ \ \ \ p = 1/2

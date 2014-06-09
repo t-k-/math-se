@@ -1,0 +1,8 @@
+x(t) = u(t)
+h(t) = \cos(\pi t)u(t)
+y(t)
+y(t) = \int_{0}^{\infty}h(\tau)x(t−\tau)\, d\tau=\int_{0}^{\infty}\cos(\pi\tau)u(t−\tau)\, d\tau 
+u(t−\tau)
+ X(s) = L\{x(t)\}\\ H(s) = L\{h(t)\}\\ y(t) = {L}^{-1}\{X(s).H(s)\} 
+y(t)
+y(t) = \int_{0}^{\infty}h(\tau)x(t−\tau)\, d\tau=\int_{0}^{\infty}\cos(\pi\tau)u(t−\tau)\, d\tau={\sin(\pi t)\over \pi}u(t)={\sin(\pi t)\over \pi},\quad t>0.

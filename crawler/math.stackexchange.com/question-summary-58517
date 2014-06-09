@@ -1,0 +1,68 @@
+A
+\Lambda
+\Lambda \vec{x}=\vec{c}
+\Lambda
+\vec{b_i}
+\vec{v}
+c_n
+\vec{v} = c_1 \vec{b_1} + c_2 \vec{b_2} + ... + c_n \vec{b_n} 
+ T(\vec{v})= c_1 T(\vec{b_1}) + c_2 T(\vec{b_2}) + ... + c_n T(\vec{b_n}) 
+ T(\vec{v})= c_1 A\vec{b_1} + c_2 A\vec{b_2} + ... + c_n A\vec{b_n} 
+ T(\vec{v})= c_1 \lambda_1 \vec{b_1} + c_2 \lambda_2\vec{b_2} + ... + c_n \lambda_n\vec{b_n} 
+ T(\vec{v})= \begin{bmatrix}  &  & \\  \vec{b_1} & \vec{b_2} &...& \vec{b_n}\\   &  &  \end{bmatrix} \begin{bmatrix} \lambda_1 &  &  & \\   & \lambda_2 &  & \\   &  & \ddots  & \\   &  &  & \lambda_n \end{bmatrix} \begin{bmatrix} c_1 &  &  & \\   & c_2 &  & \\   &  & \ddots  & \\   &  &  & c_n \end{bmatrix} 
+\Lambda
+T\colon\mathbf{V}\to\mathbf{V}
+\beta=[\mathbf{v}_1,\ldots,\mathbf{v}_n]
+T
+T
+\mathbf{V}
+\mathbf{v}_1,\ldots,\mathbf{v}_n
+\mathbf{x}\in\mathbf{V}
+c_1,\ldots,c_n
+\mathbf{x}=c_1\mathbf{v}_1+\cdots+c_n\mathbf{v}_n
+T(\mathbf{v}_1),\ldots,T(\mathbf{v}_n)
+T(\mathbf{x})
+\mathbf{x}\in\mathbf{V}
+T(\mathbf{x}) = T(c_1\mathbf{v}_1+\cdots+c_n\mathbf{v}_n) = c_1T(\mathbf{v}_1)+\cdots+c_nT(\mathbf{v}_n).
+\beta
+T(\mathbf{v}_i)
+\mathbf{v}_i
+a_{11}, a_{12},\ldots,a_{nn}
+\begin{align*} T(\mathbf{v}_1) &= a_{11}\mathbf{v}_1 + a_{21}\mathbf{v}_2 + \cdots +a_{n1}\mathbf{v}_n\\ T(\mathbf{v}_2) &= a_{12}\mathbf{v}_1 + a_{22}\mathbf{v}_2 + \cdots + a_{n2}\mathbf{v}_n\\ &\vdots\\ T(\mathbf{v}_n) &= a_{1n}\mathbf{v}_1 + a_{2n}\mathbf{v}_2 + \cdots + a_{nn}\mathbf{v}_n. \end{align*}
+\begin{align*} G(\mathbf{x}) &= c_1T(\mathbf{v}_1 + \cdots + c_nT(\mathbf{v}_n)\\ &= c_1\left(a_{11}\mathbf{v}_1 + a_{21}\mathbf{v}_2 + \cdots +a_{n1}\mathbf{v}_n\right)\\ &\qquad+c_2\left(a_{12}\mathbf{v}_1 + a_{22}\mathbf{v}_2 + \cdots + a_{n2}\mathbf{v}_n\right)\\ &\qquad+\cdots+c_n\left(a_{1n}\mathbf{v}_1 + a_{2n}\mathbf{v}_2 + \cdots + a_{nn}\mathbf{v}_n\right)\\ &= \Bigl(c_1a_{11} + c_2a_{12} + \cdots + c_na_{1n}\Bigr)\mathbf{v}_1\\ &\qquad +\Bigl(c_1a_{21} + c_2a_{22} + \cdots + c_na_{2n}\Bigr)\mathbf{v}_2\\ &\qquad+\cdots+ \Bigl(c_1a_{n1}+c_2a_{n2}+\cdots+c_na_{nn}\Bigr)\mathbf{v}_n\\ &= \left(\begin{array}{cccc} \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n\end{array}\right) \left(\begin{array}{cccc} a_{11} & a_{12} & \ldots & a_{1n}\\ a_{21} & a_{22} & \ldots & a_{nn}\\ \vdots & \vdots & \ddots & \vdots\\ a_{n1} & a_{n2} & \ldots & a_{nn} \end{array}\right) \left(\begin{array}{c}c_1\\c_2\\\vdots\\c_n\end{array}\right). \end{align*}
+\mathbf{x}
+\mathbf{x}
+\beta
+\mathbf{v}_i
+T
+\beta
+i
+T(\mathbf{v}_i)
+\beta
+T
+\beta
+\left(\begin{array}{c}c_1\\c_2\\\vdots\\c_n\end{array}\right)
+\left(\begin{array}{ccc} a_{11} & \cdots & a_{1n}\\ \vdots & \ddots & \vdots\\ a_{n1} & \cdots & a_{nn}\end{array}\right)
+\mathbf{v}_1
+\lambda_1
+\mathbf{v}_2
+\lambda_2
+T(\mathbf{v}_2)=\lambda_2\mathbf{v}_2
+\beta
+\lambda_2
+\mathbf{v}_2
+0
+\mathbf{v}_i
+\lambda_i
+i
+0
+i
+\lambda_i
+T(\mathbf{v}_1) = \lambda_1\mathbf{v}_1 = \lambda_1\mathbf{v}_1 + 0\mathbf{v}_2 + 0\mathbf{v}_3 + \cdots + 0\mathbf{v}_n.
+\begin{array}{c} \lambda_1 \\ 0 \\ 0\\ \vdots \\ 0\\ 0\end{array}
+T(\mathbf{v}_2) = \lambda_2\mathbf{v}_2 = 0\mathbf{v}_1 + \lambda_2\mathbf{v}_2 + 0\mathbf{v}_3 + \cdots + 0\mathbf{v}_n.
+\begin{array}{c}0\\\lambda_2\\0\\\vdots\\0\\0\end{array}
+T(\mathbf{v}_i) = \lambda_i\mathbf{v}_i = 0\mathbf{v}_1+0\mathbf{v}_2+\cdots+0\mathbf{v}_{i-1} + \lambda_i\mathbf{v}_i + 0\mathbf{v}_{i+1} + \cdots+0\mathbf{v}_n,
+A v_i = \lambda_i v_i
+\lambda_i
+0
