@@ -1,0 +1,23 @@
+\varphi
+f \in L^2(0,T;L^2(\Omega)
+\Omega \times (0,T)
+\varphi(u)
+u
+L^\infty(0,T;L^2(\Omega))
+\varphi(s) = \begin{cases} s &: s < 0\\ 0 &: s \in [0,1]\\ s-1 &: s > 1 \end{cases}
+u_t - \Delta (\varphi(u)) = f \text{ in $\Omega \times (0,T)$}
+u|_{\partial\Omega} =0
+u(0) = u_0
+f
+\phi
+u>1
+u_t=\Delta (u-1)=\Delta u
+|u|<1,
+\partial_t u=0
+ \int u_t\phi(u)=-\int (\nabla \phi(u))^2, 
+ \int_{\partial\Omega}\phi(u)\nabla\phi(u)nds=0. 
+ \int u_t\phi(u)=\int u_t u\textbf{1}_{u<0}+\int u_t (u-1)\textbf{1}_{u>1}=\int u_t u\textbf{1}_{u<0}+\int u_t u\textbf{1}_{u>1}-\int u_t \textbf{1}_{u>1}. 
+ 0.5\frac{d}{dt}|u|_{L^2}=\int uu_tdx=\left(\int uu_t\textbf{1}_{u>1}+\int uu_t\textbf{1}_{0\leq u\leq 1}+\int uu_t\textbf{1}_{u>1}\right). 
+ 0.5\frac{d}{dt}|u|_{L^2}=\int u_t\phi(u)+\int u_t\textbf{1}_{u>1}+\int uu_t\textbf{1}_{0\leq u\leq 1}, 
+ 0.5\frac{d}{dt}|u|_{L^2}=-\int (\nabla \phi(u))^2+\int u_t\textbf{1}_{u>1}+\int uu_t\textbf{1}_{0\leq u\leq 1}. 
+ \int u_t\textbf{1}_{u>1}=0. 

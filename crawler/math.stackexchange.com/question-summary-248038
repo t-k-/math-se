@@ -1,0 +1,15 @@
+A_i
+i
+K
+= P(A_1 \cap A_2 \cap ... \cap A_{n-1} \cap K)
+= P(K | A_1 \cap A_2 \cap ... \cap A_{n-1})P(A_{n-1}| A_1 \cap A_2 \cap ... \cap A_{n-2})...P(A_2 | A_1)P(A_1)
+= \frac{48}{52}\frac{48}{51}\frac{48}{50}...\frac{48}{52-n+2}\frac{4}{52-n+1}
+= \frac{(4)(48)^{52-n+2}}{^{52} P_n}
+4\frac{\binom{48}{n-1}}{\binom{52}{n}}
+\frac{4\binom{48}{n-1}}{n\binom{52}{n}}
+n=1
+4*\frac{\binom{48}{0}}{\binom{52}{1}} = 1/13
+E_n
+n
+P(E_n) = \prod_{i=0}^{n-2} \left (\frac{48-i}{52-i} \right )^{n-i} \frac{4}{52-n+1} 
+n \le 48

@@ -1,0 +1,7 @@
+ f(x) = \frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-ix\xi}F(\xi)d\xi = \frac{1}{\pi}\int_{0}^{\infty}e^{-ix\xi}F(\xi)d\xi\\ \approx \frac{1}{\pi}\int_0^{\xi_{max}}e^{-ix\xi}F(\xi)d\xi 
+\Delta x \Delta{\xi}
+\frac{2\pi}{N}
+\Delta x = \frac{2\pi}{N\Delta \xi} = \frac{2\pi(N-1)}{N\xi_{max}}.
+ f_k \approx \frac{1}{\pi}\int_0^{\xi_{max}}e^{-ix_j\xi}F(\xi)d\xi \\ = \frac{1}{\pi}\Delta\xi \left(\sum_{j=1}^{N}e^{-ix_k\xi_j}F_j - \frac{1}{2}e^{-ix_k\xi_1}F_1 - \frac{1}{2}e^{-ix_k\xi_N}F_N  \right) \\ = \frac{1}{\pi}\Delta\xi \left(\sum_{j=1}^{N}e^{-i\Delta x \Delta\xi (j-1)(k-1)}e^{-i x_{min}(j-1)\Delta \xi}F_j - \frac{1}{2}F_1 - \frac{1}{2}e^{-ix_k\xi_{max}}F_N  \right) \\ = \frac{1}{\pi}\Delta\xi \left(\sum_{j=1}^{N}e^{-i\frac{2\pi}{N} (j-1)(k-1)}e^{-i x_{min}(j-1)\Delta \xi}F_j - \frac{1}{2}F_1 - \frac{1}{2}e^{-ix_k\xi_{max}}F_N  \right) 
+\mu
+x_{min} = \mu - \frac{N\Delta x}{2} = \mu - \frac{\pi}{\Delta \xi}.

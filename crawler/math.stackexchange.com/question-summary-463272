@@ -1,0 +1,45 @@
+\gamma_n=\displaystyle\int_0^\infty\frac{t^n}{n!}e^{-e^t}dt\text{ ? }
+\sum_{n\geqslant 0}\gamma_nz^n
+z\in\Bbb C
+{p_n}\left( x \right) = g\left( {{\rm W}\left( n \right)} \right) + g''\left( {{\rm W}\left( n \right)} \right)\frac{{{{\left( {x - {\rm W}\left( n \right)} \right)}^2}}}{2}
+g(t)=n\log t-e^t
+\begin{cases} w_n={\rm W}(n)\\    {\alpha _n} = n\log {w_n} - {e^{{w_n}}}  \\    {\beta _n} = \frac{n}{{w_n^2}} + {e^{{w_n}}} \end{cases} 
+{C_n} = \exp {\alpha _n}\int\limits_0^\infty  {\exp \left( { - {\beta _n}\frac{{{{\left( {t - {w_n}} \right)}^2}}}{2}} \right)dt} 
+n!
+ c_n = \int_0^\infty t^n e^{-e^t}\,dt = \int_0^\infty \exp\left(n\log t - e^t\right)\,dt = \int_0^\infty \exp f_n(t)\,dt 
+f_n(t)
+t = W(n)
+ t = W(n)(1+s), 
+ \begin{align} c_n &= W(n)^{n+1} \int_{-1}^\infty \exp\left\{n\left[\log(1+s) - W(n)^{-1} e^{W(n)s}\right]\right\}\,ds \\ &= W(n)^{n+1} \int_{-1}^\infty \exp\left\{n g_n(s)\right\}\,ds \end{align} 
+s=0
+ g_n(s) = -\frac{1}{W(n)} - \frac{1+W(n)}{2}\,s^2 + \cdots. 
+ \begin{align} c_n &\sim W(n)^{n+1} \int_{-\infty}^{\infty} \exp\left\{n\left[-\frac{1}{W(n)} - \frac{1+W(n)}{2}\,s^2\right]\right\}\,ds \\ &= W(n)^{n+1} e^{-n/W(n)} \sqrt{\frac{2\pi}{n(1+W(n))}}. \end{align} 
+c_n
+1 < n < 10
+W(n)^{-n-1} e^{n/W(n)} c_n
+\sqrt{\frac{2\pi}{n(1+W(n))}}
+1 < n < 50
+ \log n - \log\log n < W(n) < \log n 
+ c_n < (\log n)^{n+1} e^{-n/\log n} \sqrt{\frac{2\pi}{n(1+\log n - \log\log n)}} 
+n
+n! \geq (n/e)^n \sqrt{2\pi n}
+ \begin{align} \gamma_n &= \frac{c_n}{n!} \\ &< \left(\frac{e \log n}{n}\right)^{n+1} e^{-1-n/\log n} (1+\log n-\log\log n)^{-1/2} \end{align} 
+\sum \gamma_n z^n
+z
+t>0
+e^t>t^2
+\int_0^\infty\frac{t^n}{n!}e^{-e^t}dt < \int_0^\infty\frac{t^n}{n!}e^{-t^2}dt.
+\frac{1}{2}
+\frac{\Gamma\left( \frac{n+1}{2} \right)}{n!}.
+\color{#C0C0C0}{\text{idea mentioned in chat}}
+\phi(t)=-t+n\log(\log(t))
+t\log(t)=n
+t_0=e^{\mathrm{W}(n)}=\frac{n}{\mathrm{W}(n)}
+ \begin{align} \int_0^\infty\frac{x^{n-1}}{(n-1)!}e^{-e^x}\,\mathrm{d}x &=\frac1{(n-1)!}\int_1^\infty\log(t)^{n-1}e^{-t}\frac{\mathrm{d}t}{t}\\ &=\frac1{n!}\int_1^\infty\log(t)^ne^{-t}\,\mathrm{d}t\\ &=\frac1{n!}\int_1^\infty e^{-t+n\log(\log(t))}\,\mathrm{d}t\\ \end{align} 
+x\ge e
+0.0353865
+x
+67.9411
+ \mathrm{W}(x)\approx\log(x)\left(1-\frac{\log(\log(x))}{\log(x)+1}\right) 
+x\ge\frac53
+x\gt1

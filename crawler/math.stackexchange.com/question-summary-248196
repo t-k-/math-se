@@ -1,0 +1,31 @@
+k
+\omega
+ Y_\alpha 
+ \int_{Y_\alpha}\omega = \int_A\alpha^*\omega
+ \alpha\colon A \to R^n 
+ \gamma:(a, b) \to R^3
+ C_\gamma 
+ R^3 
+ \int_{C_\gamma}Pdx + Qdy + Rdz
+P
+Q
+R
+\gamma 
+k
+ \int_a^bP(\gamma(t)) \frac{d\gamma_1}{dt} + Q(\gamma(t)) \frac{d\gamma_2}{dt} + R(\gamma(t)) \frac{d\gamma_3}{dt}dt.
+ \int_{C_\gamma}Pdx + Qdy + Rdz = \int_a^bP(\gamma(t))dx(\gamma(t))(\alpha_*(t; v)) + ... \\= \int_a^bP(\gamma(t))dx(\gamma(t))(\gamma(t);D\gamma(t) v) + ... 
+v
+v
+v
+C_{\gamma}
+1
+\mathbb{R}^3
+\gamma:(a,b)\rightarrow \mathbb{R}^3
+\gamma = (\gamma_1,\gamma_2,\gamma_3)
+F=(F_1,F_2,F_3)\in C^{\infty}(\mathbb{R}^3,\mathbb{R}^3)
+F\text{d}x = F_1\text{d}x_1 + F_2\text{d}x_2 + F_3\text{d}x_3
+\gamma^*(F\text{d}x)(t)= \sum_i \gamma^*(F_i)\wedge \gamma^*(\text{d}x_i)
+= \sum_i \gamma^*(F_i)\text{d} \gamma^*(x_i)
+=\left[(F_1\circ \gamma)(t)\gamma_1^{\prime}(t)+(F_2\circ \gamma)(t)\gamma_2^{\prime}(t)+(F_3\circ \gamma)(t)\gamma_3^{\prime}(t)\right]\text{d}t
+=\langle (F\circ \gamma)(t),\gamma^{\prime}(t)\rangle\text{d}t
+\int_{C_{\gamma}} F_1\text{d}x_1 + F_2\text{d}x_2 + F_3\text{d}x_3 = \int_{(a,b)}\langle (F\circ \gamma)(t),\gamma^{\prime}(t)\rangle\text{d}t

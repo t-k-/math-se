@@ -1,0 +1,25 @@
+n,x
+[l,r]
+l,r\in\mathbb Z
+y
+l\leq y\leq r
+\gcd(n,y)=x
+n=10 ,x = 2
+[1,10]
+4
+1
+10
+4
+2, 4, 6
+8
+10
+2
+ \sum_{\substack{{l\leq y\leq r}\\{x|y}\\{\left(\frac{y}{x},\frac{n}{x}\right)=1}}} 1. 
+xk=y
+ \sum_{\substack{{\frac{l}{x}\leq k\leq \frac{r}{x}}\\{\left(k,\frac{n}{x}\right)=1}}}1.
+(a,b)=1
+\sum_{d|a, d|b} \mu(d)
+\sum_{\frac{l}{x}\leq k \leq \frac r x}\sum_{\substack{{d|k}\\{d|\frac{n}{x}}}}\mu(d).
+\sum_{\substack{{d\leq \frac r x}\\{d|\frac{n}{x}}}}\mu(d)\sum_{\substack{{\frac{l}{x}\leq k\leq \frac r x}\\{k\equiv 0 \textrm{ mod }d}}}1.
+r
+ \frac{\frac r x-\frac{l}{x}}{d} + O(1). 

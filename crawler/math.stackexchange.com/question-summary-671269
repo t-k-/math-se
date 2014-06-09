@@ -1,0 +1,19 @@
+e^{\cosh z}
+\cosh (x+iy) = \cosh x \cosh (iy) + \sinh x \sinh (iy)
+\cosh (iy) = \cos y
+\sinh (iy) = i\sin y
+\cosh (x+iy) = \cosh x \cos y + i \sinh x\sin y.
+e^{u+iv} = e^u(\cos v + i\sin v)
+\begin{align} e^{\cosh (x+iy)} &= e^{\cosh x\cos y}\bigl(\cos (\sinh x\sin y) + i \sin (\sinh x\sin y)\bigr)\\ &= \underbrace{e^{\cosh x\cos y}\cos (\sinh x\sin y)}_g + i\, \underbrace{e^{\cosh x\cos y}\sin (\sinh x\sin y)}_h. \end{align}
+\frac{\partial g}{\partial x}(x+iy) = e^{\cosh x\cos y}\left(\cos(\sinh x\sin y)\cdot \sinh x\cos y - \sin(\sinh x\sin y)\cdot \cosh x\sin y\right).
+f = g+ih
+w = u+iv
+(f\circ w)(x,y) = f(u(x,y),v(x,y)) = \underbrace{g(u(x,y),v(x,y))}_a + i\, \underbrace{h(u(x,y),v(x,y))}_b,
+\begin{align} \frac{\partial a}{\partial x}(x,y) &= \frac{\partial g}{\partial u}(u(x,y),v(x,y))\cdot \frac{\partial u}{\partial x}(x,y) + \frac{\partial g}{\partial v}(u(x,y),v(x,y))\cdot \frac{\partial v}{\partial x}(x,y),\\ \frac{\partial b}{\partial y}(x,y) &= \underbrace{\frac{\partial h}{\partial u}}_{-\frac{\partial g}{\partial v}}(u(x,y),v(x,y))\cdot \underbrace{\frac{\partial u}{\partial y}}_{-\frac{\partial v}{\partial x}}(x,y) + \underbrace{\frac{\partial h}{\partial v}}_{\frac{\partial g}{\partial u}}(u(x,y),v(x,y))\cdot \underbrace{\frac{\partial v}{\partial y}}_{\frac{\partial u}{\partial x}}(x,y), \end{align}
+w\mapsto e^w
+z\mapsto \cosh z
+\frac{\partial}{\partial z} = \frac{1}{2}\left(\frac{\partial}{\partial x} - i\frac{\partial}{\partial y}\right),\qquad \frac{\partial}{\partial \overline{z}} = \frac{1}{2}\left(\frac{\partial}{\partial x} + i\frac{\partial}{\partial y}\right)
+\frac{\partial f}{\partial\overline{z}} = 0.
+\frac{\partial (f\circ g)}{\partial \overline{z}} = \frac{\partial f}{\partial w}\circ g\cdot \frac{\partial g}{\partial\overline{z}} + \frac{\partial f}{\partial\overline{w}}\circ g\cdot \frac{\partial \overline{g}}{\partial\overline{z}}.
+f
+g

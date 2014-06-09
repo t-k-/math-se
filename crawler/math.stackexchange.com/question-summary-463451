@@ -1,0 +1,9 @@
+\sqrt{1+a^2-2a\cos t}\leq (1-a)+2a\sin\frac{t}{2}(\text{where}~~ 0\leq a\leq 1, 0\leq t\leq 2\pi)
+t=2u,
+1+a^2-2a\cos2u=1+a^2-2a(1-2\sin^2u)=(1-a)^2+a(2\sin u)^2
+\le (1-a)^2+a^2(2\sin u)^2+2(1-a)a(2\sin u)
+\text{iff  }a(2\sin u)^2\le a^2(2\sin u)^2+2(1-a)a(2\sin u) 
+\text{iff  }a\sin u\le a^2\sin u+(1-a)a \text{ as }\sin u \ge0\text{ as }0\le u\le \pi
+\text{iff  }a(1-a)\sin u\le (1-a)a 
+\text{iff  }\sin u\le 1 \text{ as } 0\le a(1-a)\le 1 \text{ as } 0\le a\le1
+\implies 1+a^2-2a\cos2u\le (1-a+2a\sin u)^2
