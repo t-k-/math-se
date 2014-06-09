@@ -83,23 +83,24 @@ def crawl(start_page, end_page):
 		sub_url = '/questions?sort=newest&page='
 		navi_page = curl(sub_url + str(i), c)
 		find_q_page(navi_page, c)
+                time.sleep(0.5)
 
 # crawl(1, 19420)
 
 import threading
 import time
 
-new_thread = threading.Thread(target = crawl, args=(1, 5000))
+new_thread = threading.Thread(target = crawl, args=(3240, 5000))
 new_thread.start()
-time.sleep(0.5)
+time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(5001, 10000))
+new_thread = threading.Thread(target = crawl, args=(8240, 10000))
 new_thread.start()
-time.sleep(0.5)
+time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(10001, 15000))
+new_thread = threading.Thread(target = crawl, args=(13240, 15000))
 new_thread.start()
-time.sleep(0.5)
+time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(15001, 20000))
+new_thread = threading.Thread(target = crawl, args=(18240, 20000))
 new_thread.start()
