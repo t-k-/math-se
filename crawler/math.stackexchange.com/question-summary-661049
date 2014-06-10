@@ -1,0 +1,12 @@
+\neg \neg p \equiv p
+\lnot \lnot p \equiv \lnot \lnot p \land T
+\equiv \lnot \lnot p \land (p \lor \lnot p)
+\equiv (\lnot \lnot p \land p) \lor ( \lnot \lnot p \land \lnot p)
+\equiv (\lnot \lnot p \land p) \lor F
+\equiv (\lnot \lnot p \land p) \lor (p \land \lnot p)
+\equiv [\lnot \lnot p \lor (p \land \lnot p)] \lor [p \lor (p \land \lnot p)]
+\equiv (\lnot \lnot p \lor p) \land (\lnot \lnot p \lor \lnot p) \land (p \lor p) \land (p \lor \lnot p)
+\equiv (\lnot \lnot p \lor p) \land T \land (p \lor p) \land T
+\equiv (\lnot \lnot p \lor p) \land p
+\equiv (p \lor \lnot \lnot p) \land p
+\equiv p \land (p \lor \lnot \lnot p) \equiv p

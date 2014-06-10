@@ -1,0 +1,24 @@
+(p, q)
+abcd
+T
+F
+(p,q)
+(T,T)
+(T,F)
+(F,T)
+(F, F)
+\tau(p )=TTFF
+\tau(q)=TFTF
+\rightarrow
+(TTTT\rightarrow abcd)=abcd
+(abcd\rightarrow TTTT)=TTTT
+(abcd \rightarrow abcd)=TTTT
+p
+q
+(*)
+6
+ \begin{eqnarray} \tau(p\rightarrow p)&=&(TTFF\rightarrow TTFF)=TTTT=\tau(q\rightarrow q) \\ \tau(p\rightarrow q)&=&(TTFF\rightarrow TFTF)=TFTT \\ \tau(q\rightarrow p)&=&(TFTF\rightarrow TTFF)=TTFT \end{eqnarray} 
+ \begin{eqnarray} \tau(p\rightarrow (p\rightarrow q))&=&(TTFF\rightarrow TFTT)=TFTT \\ \tau(p\rightarrow (q\rightarrow p))&=&(TTFF\rightarrow TTFT)=TTTT \\ \tau((p\rightarrow q)\rightarrow p)&=&(TFTT\rightarrow TTFF)=TTFF \\ \tau((q\rightarrow p)\rightarrow p)&=&(TTFT\rightarrow TTFF)=TTTF \;\;(*) \\ \tau((p\rightarrow q)\rightarrow(q \rightarrow p))&=&(TFTT\rightarrow TTFT)=TTFT. \end{eqnarray} 
+ \tau((q\rightarrow p)\rightarrow p)=\tau(q \vee p)=TTTF. 
+ \begin{eqnarray} \tau(p\rightarrow (p\vee q))&=&(TTFF\rightarrow TTTF)=TTTT \\ \tau((p \vee q)\rightarrow q)&=&(TTTF\rightarrow TTFF)=TTFT \\ \tau((p\rightarrow q)\rightarrow(p\vee q))&=&(TFTT\rightarrow TTTF)=TTTF \\ \tau((p\vee q)\rightarrow(p\rightarrow q))&=&(TTTF\rightarrow TFTT)=TFTT. \end{eqnarray} 
+ A=\{p, q, p\rightarrow q, q\rightarrow p, {\mathsf{true}}, p\vee q\}, 

@@ -1,0 +1,16 @@
+f,u,u_n\in L^p(\Omega)
+\Omega\subset\mathbb{R}^N
+f,u,u_n\geq 0
+\|u+u_n\|_p\rightarrow \|u+f\|_p,
+u_n\rightarrow f\text{ a.e. in } \Omega,
+u_n>f.
+\|u_n-f\|_p\rightarrow0\,?
+\|u\|_p=\infty
+N=1
+\Omega=[0,1]
+u_n=n\cdot\mathbf{1}_{[0,\frac{1}{n}]}
+f=0
+\|u\|_p<\infty
+u_n>f
+g_n=2^{p-1}(|u+u_n|^p+|u+f|^p)-|u_n-f|^p\ge 0,
+2^p\|u+f\|_p^p=\int_\Omega \liminf_{n\to\infty} ~g_n\le \liminf_{n\to\infty}\int_\Omega g_n=2^p\|u+f\|_p^p-\limsup_{n\to\infty}\int_\Omega |u_n-f|^p.

@@ -1,0 +1,16 @@
+c*l^2*d^2z(x,t)/dt^2=(1-l/sqrt(Z1^2+l^2))*Z1+(1-l/sqrt(Z2^2+l^2))*Z2
+z
+m \frac{d^2z}{dt^2} = -k \Delta l_1 \sin\theta_1 -k \Delta l_2 \sin\theta_2
+x
+-k \Delta l_1 \cos\theta_1 -k \Delta l_2 \cos\theta_2 \approx 0
+m \frac{d^2z}{dt^2} = -k \Delta l_1 \sin\theta_1 +k \Delta l_1 \tan\theta_2 \cos\theta_1
+m \frac{d^2z}{dt^2} = k \Delta l_1 \cos\theta_1 (\tan\theta_2 - \tan\theta_1)
+\Delta l_1 \cos\theta_1=l
+\tan\theta_1 = \frac{z(x,t)-z(x-l,t)}{l}
+\tan\theta_2 = \frac{z(x+l,t)-z(x,t)}{l}
+m \frac{d^2z}{dt^2} = k (z(x+l,t)+z(x-l,t)-2z(x,t))
+l^2
+\frac{d^2z}{dt^2} = \frac{k l^2}{m} \frac{z(x+l,t)+z(x-l,t)-2z(x,t)}{l^2}
+\lim_{l\to 0}\frac{k l^2}{m}=c
+\lim_{l \to 0}\frac{m}{l} = M
+\lim_{l \to 0} \; k l = K

@@ -1,0 +1,35 @@
+\mathbf{x} \sim N(\hat{\mathbf{x}}, Q)
+\mathbf{y}\sim N(\hat{\mathbf{y}}, R)
+C
+A
+\mathbf{x}^T A \mathbf{y}
+E[\mathbf{x}^T A \mathbf{y}]
+\mathbf{x}
+\mathbf{y}
+\mathbf{x}^T
+\mathbf{x}
+C
+n\times n
+n
+\mathbf x
+\mathbf y
+i
+j
+C
+c_{i,j} = \text{cov}(X_i, Y_j)
+E[X_i]=\hat{x}_i
+E[Y_j]=\hat{y}_j
+c_{i,j} = E[X_iY_j]-\hat{x}_i\hat{y}_j
+C = \mathbf 0
+X_i
+Y_j
+E[\mathbf{x}]^TAE[\mathbf y]
+0
+C = \mathbf 0
+\mathbf x
+\mathbf y
+\begin{align*} E[\mathbf x^TA\mathbf y] &= E\left[\sum_{i=1}^n\sum_{j=1}^n a_{i,j}X_iY_j\right]\\ &= \sum_{i=1}^n\sum_{j=1}^n a_{i,j}E[X_iY_j]\\ &= \sum_{i=1}^n\sum_{j=1}^n a_{i,j}(c_{i,j}+\hat{x}_i\hat{y}_j)\\ &= \hat{\bf x}\,^TA\hat{\bf y} + \sum_{i=1}^n\sum_{j=1}^n a_{i,j}c_{i,j}. \end{align*}
+E[\mathbf x^TA\mathbf y]  = \hat{\mathbf x}\,^TA\hat{\mathbf y} = E[\mathbf{x}]^TAE[\bf y]
+\bf x
+\bf y
+E[{\bf x}^T A {\bf y}] = E[{\bf x}]^T A E[{\bf y}] = 0

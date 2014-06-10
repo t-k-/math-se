@@ -1,0 +1,22 @@
+X_1, X_2, \ldots , X_n
+\theta_1
+\theta_2
+f(x|\theta) =  \begin{cases} 1/(\theta_2−\theta_1), &\quad\text {for}\quad \theta_1 \leq x\leq \theta_2\\ 0 &\quad\text { otherwise}\quad \end{cases}
+\theta_1
+\theta_2
+\theta=(\theta_1,\theta_2)
+\theta_1\lt\theta_2
+\mathbf x=(x_1,\ldots,x_n)
+\mathbf x
+f(\mathbf x\mid\theta)
+\theta_2-\theta_1
+\theta=(\theta_1,\theta_2)
+\mathbf x
+ f(x\mid\theta)=\frac{\mathbf 1_{\theta_1\leqslant x\leqslant\theta_2}}{\theta_2-\theta_1}, 
+ f(\mathbf x\mid\theta)=\prod_{k=1}^nf(x_k\mid\theta)=\frac{\mathbf 1_{\theta_1\leqslant m_n(\mathbf x),s_n(\mathbf x)\leqslant\theta_2}}{(\theta_2-\theta_1)^n}, 
+  m_n(\mathbf x)=\min\{x_k\mid 1\leqslant k\leqslant n\}, \qquad  s_n(\mathbf x)=\max\{x_k\mid 1\leqslant k\leqslant n\}. 
+ \widehat\theta(\mathbf x)=(m_n(\mathbf x),s_n(\mathbf x)). 
+\max=\max\{X_1,\ldots,X_n\}
+\min=\min\{X_1,\ldots,X_n\}
+ L(\theta_1,\theta_2) = \begin{cases} \frac{1}{(\theta_2-\theta_1)^n} & \text{for }\theta_2\ge\max\text{ and }\theta_1 \le\min \\[10pt] 0 & \text{for other values of }(\theta_1,\theta_2) \end{cases} 
+(\theta_1,\theta_2)

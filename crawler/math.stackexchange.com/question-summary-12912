@@ -1,0 +1,9 @@
+f_i(x)=\frac{x_{i+1}-x}{x_{i+1}-x_i}y_i+\frac{x-x_i}{x_{i+1}-x_i}y_{i+1}
+\int_{x_i}^{x_{i+1}}f_i(x)\mathrm dx=\frac{x_{i+1}-x_i}{2}(y_i+y_{i+1})
+y_i^{\prime}
+y_{i+1}^{\prime}
+g_i(x)=y_i+y_i^{\prime}(x-x_i)+c_i(x-x_i)^2+d_i(x-x_i)^3
+\displaystyle c_i=\frac{3\frac{y_{i+1}-y_i}{x_{i+1}-x_i}-2y_i^{\prime}-y_{i+1}^{\prime}}{x_{i+1}-x_i}
+\displaystyle d_i=\frac{y_i^{\prime}+y_{i+1}^{\prime}-2\frac{y_{i+1}-y_i}{x_{i+1}-x_i}}{(x_{i+1}-x_i)^2}
+g_i(x)
+\int_{x_i}^{x_{i+1}}g_i(x)\mathrm dx=\frac{x_{i+1}-x_i}{6}\left(y_i+4g_i\left(\frac{x_{i+1}+x_i}{2}\right)+y_{i+1}\right)

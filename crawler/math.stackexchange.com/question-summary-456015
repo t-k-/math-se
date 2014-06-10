@@ -1,0 +1,12 @@
+ \begin{array}{c|c} \text{N=Number of bunches of bananas} & 0 & 1 & 2 & 3 & 4 & \text{5 or more}\\ \hline \text{Frequency} & 49 & 35 & 12 & 3 & 1 & 0\\ \\ \\ \end{array} 
+E[N] = \frac{1}{100} (1 * 35 + \cdots+4*1) = 0.72
+Var[N]=E[N^2]-E[N] = 1.26-0.72^2=0.7416
+E[N] \approx Var[N]
+E[N]=Var[N]=\lambda
+\lambda=0.72
+ \therefore \Pr(N=k)= \cfrac{\lambda^k}{k!} e^{-\lambda} \text{ for } k \ge 0
+\Pr[N \ge 5] = \sum\limits_{k=5}^{\infty} \cfrac{\lambda^k}{k!} e^{-\lambda} = 1-\Pr[N<5]  = 1-\sum\limits_{k=0}^{4} \cfrac{\lambda^k}{k!} e^{-\lambda} =1 - 0.999110 =0.000889
+5
+p
+p
+0.000889

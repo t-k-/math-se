@@ -1,0 +1,14 @@
+f(n) = f(n-1) + f(\lceil n/2\rceil)+ 1
+g(n) = g(n-1) + 1
+g(n) = O(n)
+g(n) = g(\lceil n/2\rceil) + 1
+g(n) = O(\log(n))
+g(n) = g(n-1) + g(\lceil n/2\rceil)
+f(n) = O(n \log(n) * n * \log(n)) = O(n^2 \log(n)^2)
+f(n) = f(n-1) + f(\lceil n/2\rceil)+ 1
+f(0)=0
+f(n)=\displaystyle\sum_{k=1}^n(f(k)-f(k-1))
+=\displaystyle\sum_{k=1}^nf(\lceil k/2\rceil)+ n
+=O(n\log n)+n=O(n\log n)
+\displaystyle\sum_{k=1}^ng(\lceil k/2\rceil)=g(n)=O(n\log n)
+g(n) = g(n-1) + g(\lceil n/2\rceil)

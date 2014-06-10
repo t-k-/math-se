@@ -1,0 +1,30 @@
+x
+y=x^2+1
+-1
+1
+\lim_{\delta x\to 0} \frac{f(x+\delta x) - f(x)}{\delta x}
+\displaystyle\int_a^b f(x) \ dx
+\lim_{n\to\infty} \sum_{i=1}^n f(x_i) \delta x
+\delta x = \dfrac{b-a}{n}
+x_i = a + i\delta x
+n
+[a,b]
+n
+\delta x
+\delta x = \dfrac{b-a}{n}
+f(x)
+f(a+i\delta x)
+i\in\{1,2,\cdots ,n\}
+n\to\infty
+\int_0^2 x^2 \ dx
+a
+b
+x^2
+[0,2]
+n
+\dfrac{b-a}{n} = \dfrac{2-0}{n} = \dfrac{2}{n}
+\int_0^2 x^2 \ dx \approx \sum_{i=1}^n f(x_i) \delta x = \sum_{i=1}^n (0 + i\delta x)^2 \frac{2}{n} = \sum_{i=1}^n \left(i \frac{2}{n}\right)^2 \cdot \frac{2}{n}
+\sum_{i=1}^n \left(i \frac{2}{n}\right)^2 \frac{2}{n} = \frac{8}{n^3} \sum_{i=1}^n i^2 = \frac{8}{n^3} \frac{n(n+1)(2n+1)}{6}
+\frac{8}{n^3} \cdot \frac{n(n+1)(2n+1)}{6} = \frac{8}{n^3} \cdot \frac{2n^3 + 3n^2 + n}{6} = \frac{8}{6} \cdot \underbrace{2 + 3n^{-1} + n^{-2}}_{\to 2}
+n\to\infty
+\frac{8}{3}

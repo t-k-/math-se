@@ -1,0 +1,18 @@
+\lim_{n\rightarrow\infty}\frac{n!}{\left(n+1/6\right)!}
+n!\approx\sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}
+\lim_{n\to\infty}(\frac{n}{n+1/6})^n=e^{-1/6}
+\frac{n!}{\left(n+1/6\right)!}\approx\frac{\sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}}{\approx\sqrt{2\pi (n+1/6)}\left(\frac{n+1/6}{e}\right)^{n+1/6}}=\frac{\sqrt{2\pi n}}{\sqrt{2\pi (n+1/6)}}\frac{1}{(\frac{n+1/6}{e})^{1/6}}(\frac{n}{n+1/6})^n
+\frac{\sqrt{2\pi n}}{\sqrt{2\pi (n+1/6)}}\approx \frac{\sqrt{n}}{\sqrt{n+1/6}}\approx 1
+\frac{1}{(\frac{n+1/6}{e})^{1/6}}\approx 0
+n(\ln(n)-\ln(n+1/6))=\frac{\ln(n)-\ln(n+1/6)}{1/n}
+\lim_{n\to\infty}\frac{\ln(n)-\ln(n+1/6)}{1/n}=\lim_{n\to\infty}\frac{\frac{1}{n}-\frac{1}{n+1/6}}{-1/n^2}=\lim_{n\to\infty}-\frac{n^2/6}{n(n+1/6)}=-\frac{1}{6}.
+\lim_{n\to\infty}\frac{n!}{\left(n+1/6\right)!}=0
+n\in\mathbb{N}
+n\notin\mathbb{N}
+\log(1+x)=x+O(x^2)
+x\ll 1
+1/n
+n!/(n+a)! \sim 1/n^a\,(n\to\infty)
+a>0
+\begin{eqnarray*} \log\frac{n!}{(n+a)!}  &\sim& \log \sqrt{2\pi n}(n/e)^n - \log \sqrt{2\pi(n+a)}((n+a)/e)^{n+a} \\ &=& \left(\log\sqrt{2\pi}+\frac{1}{2}\log n + n\log n - n\right) \\ && - \left(\log\sqrt{2\pi}+\frac{1}{2}\log(n+a) + (n+a)\log(n+a) - (n+a)\right) \\ &=& -\frac{1}{2}\log(1+a/n) - n\log(1+a/n) - a\log n - a\log(1+a/n) + a\\ &\sim& -a\log n, \end{eqnarray*}
+\lim_{n\to\infty}\frac{n!}{(n+a)!} = 0.

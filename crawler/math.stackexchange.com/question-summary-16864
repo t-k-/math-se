@@ -1,0 +1,41 @@
+g(z) = z^n + b_1 z^{n-1} + ... + b_n
+m+1
+z = c
+|g^{(k)}(c)| \leq \epsilon
+k = 0,1,...,m
+\epsilon
+c = 0
+b_j
+\epsilon
+g(z)
+n
+z=c
+g^{(n)}(z) = n!
+(z-c)^n
+1
+ g(z) = g(c) + g'(c)(z-c) + \cdots + \frac{g^{(n-1)}(c)}{(n-1)!} (z-c)^{n-1} + (z-c)^n. 
+m \in \{0,1,2,\cdots,n-1\}
+\epsilon > 0
+ \left|g^{(k)}(c)\right| \leq \epsilon 
+0 \leq k \leq m
+ \begin{align} \left|g(c) + g'(c)(z-c) + \cdots + \frac{g^{(m)}(c)}{m!} (z-c)^{m}\right| &\leq \epsilon \sum_{k=0}^{m} \frac{|z-c|^k}{k!} \\ &< \epsilon e^{|z-c|}. \tag{1} \end{align} 
+ h(z) = \frac{g^{(m+1)}(c)}{(m+1)!} (z-c)^{m+1} + \cdots + \frac{g^{(n-1)}(c)}{(n-1)!} (z-c)^{n-1} + (z-c)^n 
+m+1
+z=c
+h(z)
+|z-c| \leq \delta
+\delta > 0
+|z-c| = \delta
+h(z) \neq 0
+\lambda > 0
+ |h(z)| \geq \lambda > 0 \qquad \text{on}\,\,\, |z-c| = \delta. \tag{2} 
+ \epsilon \leq \lambda e^{-\delta} 
+(1)
+(2)
+ \begin{align} \left|g(c) + g'(c)(z-c) + \cdots + \frac{g^{(m)}(c)}{m!} (z-c)^{m}\right| &< \epsilon e^{\delta} \\ &\leq \lambda \\ &\leq |h(z)| \end{align} 
+|z-c| = \delta
+\delta > 0
+\epsilon > 0
+g(z)
+m+1
+|z-c| < \delta

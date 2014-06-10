@@ -1,0 +1,36 @@
+f_{2n}=f_{2n-1}+f_n 
+n>1
+f_0=0
+f_{2n+1}=f_{2n}
+n>0
+f_1=1
+F_0(z)=\sum f_{2n}z^{2n}
+F_1(z)=\sum f_{2n+1}z^{2n+1}
+F_0
+F_1
+F(z)=\sum f_nz^n
+F_0(z)=\frac{F(z)+F(-z)}{2}
+F_1(z)=\frac{F_0(z)-F(-z)}{2}
+F(z)=F_0(z)+F_1(z)
+z^{2n}
+n
+F_0(z)=zF_1(z)+F(z^2)
+F_1(z)=zF_0(z)
+f_{2n}=f_{2n-1}+f_n 
+n \ge 1
+f_0=0
+f_2
+F(x) = \sum_{n=0}^{\infty}f_{n} x^{n}
+\sum_{n=0}^{\infty}f_{2n} x^{2n}= \sum_{n=0}^{\infty} f_{2n-1} x^{2n} + \sum_{n=0}^{\infty} f_n x^{2n} \qquad
+(1/2) [F(x)-F(-x)] = (1/2) \; x\; [F(x)-F(-x)] +F(x^2)
+(1-x) F(x) + (1+x) F(-x) = 2 F(x^2) \qquad(*)
+\sum_{n=1}^{\infty} f_{2n+1} x^{2n+1} = \sum_{n=1}^{\infty} f_{2n} x^{2n+1}
+\sum_{n=0}^{\infty} f_{2n+1} x^{2n+1} - x = \sum_{n=0}^{\infty} f_{2n} x^{2n+1}
+(1/2) [F(x) - F(-x)] - x = (1/2) \; x \; [F(x) + F(-x)]
+(1-x) F(x) -2x = (1+x) F(-x)
+2 (1-x) \; F(x) -2x = 2 F(x^2) \qquad
+F(x) = \frac{F(x^2)}{1-x} +\frac{x}{1-x}
+F(x) = \frac{F(x^4)}{(1-x)(1-x^2)} +\frac{x}{1-x} + \frac{x^2}{(1-x)(1-x^2)}
+= \frac{F(x^8)}{(1-x)(1-x^2)(1-x^4)} +\frac{x}{1-x} + \frac{x^2}{(1-x)(1-x^2)} + \frac{x^4}{(1-x)(1-x^2)(1-x^4)}
+F(x) = \frac{1}{(1-x)(1-x^2)(1-x^4)(1-x^8)\cdots}+\frac{x}{1-x} + \frac{x^2}{(1-x)(1-x^2)} + \frac{x^4}{(1-x)(1-x^2)(1-x^4)} + \dots
+(1-x) F(x) = F(x^2) + x

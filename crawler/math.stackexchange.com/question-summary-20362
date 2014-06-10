@@ -1,0 +1,24 @@
+{\mathbf{a}}
+{\mathbf{c}}
+\theta
+\gamma
+c \ll a
+b-a
+\varepsilon = c/a
+\sqrt{1+x} = 1 + (1/2)x - (1/8)x^2 + O(x^3)
+ {\mathbf{a}} = (a \sin \theta, a \cos \theta) 
+ {\mathbf{c}} = (c \cos \gamma, c \sin \gamma). 
+ \begin{eqnarray} b-a &=& -a + \lVert{\mathbf{b}}\rVert \\   &=& -a + \lVert{\mathbf{a}} - {\mathbf{c}}\rVert \\   &=& -a + \sqrt{(\mathbf{a} - \mathbf{c})\cdot(\mathbf{a} - \mathbf{c})} \\   &=& -a + \sqrt{a^2 - 2{\mathbf{a}}\cdot{\mathbf{c}} + c^2} \\   &=& -a + a \sqrt{1 - 2 \varepsilon\left(\sin\theta \cos\gamma + \cos\theta \sin\gamma\right) + \varepsilon^2} \\   &=& -a + a \sqrt{1 - 2 \varepsilon\sin(\theta+\gamma) + \varepsilon^2} \\   &=& -a + a \left(1 + \frac{1}{2}\left(- 2 \varepsilon\sin(\theta+\gamma) + \varepsilon^2\right) - \frac{1}{8}\left(- 2 \varepsilon\sin(\theta+\gamma) + \varepsilon^2\right)^2 + O(\varepsilon^3)\right) \\   &=& a \left(- \varepsilon\sin(\theta+\gamma) + \frac{1}{2}\varepsilon^2 - \frac{1}{2}\varepsilon^2\sin^2(\theta+\gamma) + O(\varepsilon^3)\right) \\   &=& - c\sin(\theta+\gamma) + \frac{c^2}{2a}\cos^2(\theta+\gamma) + O\left(\frac{c^3}{a^2}\right), \end{eqnarray} 
+c << a
+C \approx 0
+A \approx \pi - B
+\cos A \approx \cos (\pi - B) = - \cos B
+b^2 - a^2 \approx -c(a \cos B - b (- \cos B)) = -c \cos B (a + b)
+(a + b)
+b - a \approx -c \cos B
+B = \frac{\pi}{2} - (\theta + \gamma)
+\cos B = sin (\theta + \gamma)
+b - a \approx -c \sin (\theta + \gamma)
+b^2 - a^2 = c^2 - 2ac \cos B
+ b - a = { {-2ac \cos B} \over {b+a} } + { {c^2} \over {b+a} }
+ c << a \Rightarrow b \approx a 

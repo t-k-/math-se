@@ -1,0 +1,16 @@
+ n \rightarrow\infty
+ \frac{n!}{(n-2x)!}(n-1)^{-2x} 
+e^{\frac{-4x^2+x}{n}}. 
+e^x =(1+\frac{x}{n})^n 
+\frac{n!}{(n-1)^{2 x} (n-2 x)!}\approx \frac{\left(\sqrt{2 \pi } n^{n+\frac{1}{2}} e^{-n}\right) (n-1)^{-2 x}}{\sqrt{2 \pi } e^{2 x-n} (n-2 x)^{-2 f+n+\frac{1}{2}}}\approx \frac{n^{n+\frac{1}{2}} e^{-2 x} n^{-2 x} \left(1-\frac{1}{n}\right)^{-2 x}}{(n-2 x)^{n-2 x+\frac{1}{2}}}\approx e^{-2 x} \left(\frac{n}{n-2 x}\right)^{n-2 x+\frac{1}{2}} \left(\left(1-\frac{1}{n}\right)^n\right)^{-\frac{2 x}{n}}\approx e^{-2 x} \left(\frac{n}{n-2 x}\right)^{n-2 x+\frac{1}{2}} e^{\frac{2 x}{n}}\approx \left(\frac{n-2 x}{n}\right)^{-n+2 x-\frac{1}{2}} \left(\frac{n-2 x}{n}\right)^n e^{\frac{2 x}{n}}\approx \left(\frac{n-2 x}{n}\right)^{2 x-\frac{1}{2}} e^{\frac{2 x}{n}}\approx \left(\left(1-\frac{2 x}{n}\right)^n\right)^{\frac{2 x}{n}-\frac{1}{2 n}} e^{\frac{2 x}{n}}\approx \left(e^{-2 x}\right)^{\frac{2 x}{n}-\frac{1}{2 n}}=e^{\frac{x-4 x^2}{n}}
+\ln n!=n(\ln n-1)+\frac12 \ln \left(2\pi n\right)+\frac{1}{12n}+O(n^{-3}),
+\ln\frac{n!}{(n-2x)!}=2x \ln n+\frac{x-2x^2}{n}+O(n^{-2}).
+\ln (n-1)^{-2x}=-2x\ln(n-1)=-2x\ln n+\frac{2x}{n}+O(n^{-2}),
+\ln\left[\frac{n!}{(n-2x)!}(n-1)^{-2x}\right]=\frac{3x-2x^2}{n}+O(n^{-2}).
+f(n,k)=\frac{n!}{(n-k)!}n^{-k} = \prod_{i=0}^{k-1} \left(1-\frac{i}{n}\right)
+\begin{align}\log f(n,k) &= \sum_{i=0}^{k-1} \log\left(1-\frac{i}{n}\right)\\&= -\sum_{i=0}^{k-1}\sum_{j=1}^\infty \frac{1}{j}\left(\frac{i}{n}\right)^j\\&=-\sum_j \frac{1}{jn^{j}}\sum_{i=0}^{k-1} i^j \end{align}
+\log f(n,k) = -\frac{k(k-1)}{2n} -\frac{k(k-1)(2k-1)}{12n^2} + O(n^{-3})
+\log\left(\left(\frac{n-1}{n}\right)^{-k}\right) = k\left(\frac{1}{n}+\frac{1}{2n^2}+O(n^{-3})\right)=\frac{k}{n}+\frac{k}{2n^2} + O(n^{-3})
+k=2x
+\log\left(\frac{n!}{(n-k)!}(n-1)^{-k}\right)=\frac{2k-k(k-1)}{2n}+O(n^{-2}) = \frac{3k-k^2}{2n}+O(n^{-2})
+\frac{n!}{(n-2x)!}(n-1)^{-2x} = \exp\left(\frac{3x-2x^2}{n}+O(n^{-2})\right)

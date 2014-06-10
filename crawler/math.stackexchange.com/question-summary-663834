@@ -1,0 +1,34 @@
+f(x)
+p(x)
+f(x)
+f(x)
+u(x)
+q(x)
+f(x)
+p(x)
+p(x)
+f(x)=u(x)\,\mathrm{e}^{-x}\,q(x)
+x
+(f*p)(x)
+(f*p)(x) = \int_{-\infty}^\infty f(y) p(x-y) dy = \int_{-\infty}^\infty f(y) \sum_{k=0}^n a_k (x-y)^k dy = \int_{-\infty}^\infty f(y) \sum_{k=0}^n \sum_{j=0}^k a_k {k \choose j} x^{j} y^{k-j} dy
+ \sum_{k=0}^n \sum_{j=0}^k a_k {k \choose j} \left(\int_{-\infty}^\infty f(y)y^{k-j} dy\right) x^{j}
+n
+p^{(n)}=0
+\frac{d^n}{dx^n} (f*p)(x)=(f*p^{(n)})(x)
+p(x)=1
+(f*p)(t) = \int_0^t f(\tau) p(t-\tau) d\tau = \int_0^t f(\tau)d\tau.
+f(\tau) = e^\tau
+p(x)=\sum_{k=0}^n a_kx^k
+a_n\ne 0
+\varphi
+p*\varphi
+\varphi
+|x|\to \infty
+\varphi
+\ell\in\mathbb N
+p^{(n+1)}(x-t)\equiv 0
+(p*\varphi)^{(n+1)}(x)\equiv 0
+p*\varphi
+n
+ (p*\varphi)(x)=\int_{-\infty}^\infty \varphi(t)\,p(x-t)\,dt. 
+ (p*\varphi)^{(\ell)}(x)=\int_{-\infty}^\infty \varphi(t)\,p^{(\ell)}(x-t)\,dt, 

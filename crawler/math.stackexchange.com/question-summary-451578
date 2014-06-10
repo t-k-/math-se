@@ -1,0 +1,34 @@
+B((x_k,y_k),\epsilon)
+(x_k,y_k) 
+\epsilon
+f
+[0,1]^2
+(x_k,y_k)
+x' = x-x_k
+y' = y-y_k
+[0,\epsilon]
+[0,2\pi]
+\iint\limits_{B((x_k,y_k),\epsilon))} f(x,y) dy dx
+f
+f
+f
+(x_k,y_k)
+B((x_k,y_k),\epsilon)
+(x_k,y_k)
+[0,1]^2
+f
+[0,1]^2
+B((x_k,y_k),\epsilon) \cap [0,1]^2
+f
+[0,1]^2
+(x_k,y_k)
+f(x,y)
+0 \leq x \leq \frac{1}{2}
+0 \leq y \leq 1
+\epsilon = \frac{1}{8}
+B((x_k,y_k),\epsilon)
+0.006196086871
+10^{-3}
+ f := unapply(piecewise(x >= 1/2 \,and\, x <= 1\, and \,y >= 1/2 \,and\, y <= 1, 1, 0), x, y):
+a:=0.45:b:=0.5:
+ VectorCalculus:-int(f(x, y), [x, y] = Circle(<a, b>, .125), numeric, epsilon = 10^{-3})

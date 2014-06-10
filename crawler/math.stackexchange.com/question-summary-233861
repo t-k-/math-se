@@ -1,0 +1,40 @@
+\DeclareMathOperator{\Pb}{\mathbf{P}}
+\DeclareMathOperator{\Unif}{\mathsf{Uniform}}
+U \sim \Unif(0,1)
+n = 2^k + m
+k \geq 0
+0 \leq m \leq 2^k - 1
+f_n : [0, 1) \to \{0,1\}
+ f_n(x) = \begin{cases} 1 & \text{if } {m \over 2^k} \leq x < {m +1 \over 2^k} \\ 0 & \text{o.w.} \end{cases} 
+f_n(U)
+n = 2^k + m
+k \geq 0
+ 0 \leq m \leq 2^k - 1
+X_n := f_n(U)
+0
+x \in (0,1)
+f_n(x) = 1
+n
+X_n = f_n(U)
+f_n(U)
+1
+{1 \over 2^k}
+0
+X_n
+n \to \infty
+k = \lfloor \log_2 n\rfloor 
+k \to \infty
+\Pb(|X_n - 0| > \epsilon) = \Pb(X_n = 1) = {1 \over 2^k}
+{1 \over 2^k} = \Pb(|X_n - 0| > \epsilon) \to 0
+x
+N
+X_n
+n \geq N
+0
+x
+\Pb(|X_n - 0| > \epsilon) = \Pb(X_n = 1) = {1 \over 2^k}
+x \in (0,1)
+k
+n
+f_n(x)=1
+n=2^k + \lfloor x2^k\rfloor

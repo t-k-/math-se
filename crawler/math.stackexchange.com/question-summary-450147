@@ -1,0 +1,58 @@
+f_1
+\delta(x)
+g(x)
+f_1
+g
+g
+f_1
+f_1*g
+f_1(x)=\delta(x)
+g(x)=\frac1{\sigma\sqrt{2\pi}}\exp\left(-\frac{x^2}{2\sigma^2}\right).
+\int_{-\infty}^\infty q(x)\delta(x-x_0)dx=q(x_0).\tag1
+\Delta x_i
+x
+\Delta x_i=x_i-x_{i-1}
+\Delta x_i=\Delta x_j\; \forall x,j\in\mathbb{Z}
+f_2(x)=\sum_{i=-N}^N a(x_i) f_1(x-x_i)\Delta x_i.\tag2
+f_2
+N\to\infty
+f_{2a}(x)=\sum_{i=-\infty}^\infty a(x_i)f_1(x-x_i)\Delta x_i.
+f_{2a}(x)
+\Delta x_i\to0
+(1)
+(3)
+x_i
+t
+\Delta x_i
+dt
+\Delta x_i
+\Delta x_i\to 0
+f_3(x)=\lim_{\Delta x_i\to 0}f_{2a}(x)=\int_{-\infty}^\infty a(t)f_1(x-t)dt\equiv\int_{-\infty}^\infty a(t)\delta(x-t)dt.\tag3
+f_3(x)=a(x).
+f_3
+f_3*g
+f_3
+f_3*g
+p*q=q*p
+g(x)
+\delta(x)
+a(x)
+g(x_i)
+g(x)
+a(x_i)
+f\in \mathcal{E}'
+\mu: \mathcal{E}' \to \mathbb{R}^n
+ \mu(f) = \frac{1}{\langle f,1\rangle} \left( \langle f,x_1\rangle, \langle f,x_2\rangle,\ldots,\langle f,x_n\rangle\right)
+\mu
+f\in \mathcal{E}'
+\langle f,1\rangle = 1
+\mu(f)
+f,g\in \mathcal{E}'
+\phi
+ \langle f*g,\phi\rangle = \langle f,\psi\rangle 
+ \psi(y) = \langle g,\tau_{-y} \phi\rangle 
+ f*g(x) = \int f(x-y)g(y) \mathrm{d}y 
+ \mu(f*g) = \mu(f) + \mu(g) 
+ \int x_i f*g(x) \mathrm{d}x = \iint x_i f(x-y) g(y) \mathrm{d}y\mathrm{d}x = \iint (z_i + y_i) f(z) g(y) \mathrm{d}z \mathrm{d}y = \int g(y) \mathrm{d}y \int f(z)z_i \mathrm{d}z + \int f(z) \mathrm{d}z \int y_i g(y) \mathrm{d}y 
+f\in \mathcal{E}'
+\delta_x\in \mathcal{E}'

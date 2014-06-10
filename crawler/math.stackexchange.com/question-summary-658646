@@ -1,0 +1,6 @@
+t=0
+G_0(t,s)
+x'_1=x_2+g_1(t), \\x'_2=-x_1+g_2(t)
+G_0(t,s) = \begin{bmatrix} \cos(s-t) & -\sin(s-t) \\ \sin(s-t) & \cos(s-t) \end{bmatrix}
+x_p(t)=\int^b_a G_0(t,s) \begin{bmatrix} g_1(s) \\ g_2(s) \end{bmatrix} ds
+t \leq s \leq b

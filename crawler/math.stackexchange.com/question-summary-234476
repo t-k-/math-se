@@ -1,0 +1,97 @@
+ p, p \to q \vdash q 
+ p \to (q \to p) 
+ (p \to (q \to r)) \to ((p \to q) \to (p \to r)) 
+ (p \land q) \to p 
+ (p \land q) \to q 
+ p \to (q \to (p \land q)) 
+ p \to (p \lor q) 
+ q \to (p \lor q) 
+ (p \to r) \to ((q \to r) \to ((p \lor q) \to r)) 
+ (p \to q) \to ((p \to \sim q) \to \sim p) 
+ \sim p \to (p \to q) 
+ p \to q, q \to r \vdash p \to r 
+ \Gamma,p \vdash q 
+ \Gamma \vdash p \to q 
+ p \to \sim \sim p 
+ (p \to q) \to (\sim q \to \sim p) 
+ p \to (\sim p \to q) 
+ \sim \sim (\sim \sim p \to p) 
+ \sim \sim \sim p \to \sim p 
+p\to q
+p\to \neg q
+\neg p
+\lambda x.c(f\; x)
+p\to\bot\equiv \neg p
+\bot
+q
+\neg q
+c
+f\;x
+(x\to(y\land \neg y))\to\neg x
+(p\to q)\to \neg p
+(p\to q)\to\neg\neg p
+\neg\neg p
+\neg(p\to q)
+\lambda f.x\;(\lambda x.c(f\; x))
+(p\to q)\to \bot\equiv \neg(p\to q)
+\phi_1,\ldots,\phi_k\vdash \psi
+\neg\neg\phi_1,\ldots,\neg\neg\phi_k\vdash\neg\neg\psi
+k+1
+\Gamma, p \vdash \sim q
+\Gamma, \sim\sim p \vdash \sim q
+ p \to q, p \vdash q 
+ (p\to q) \to (\sim\sim p \to \sim\sim q)
+p':=p\to q
+q':=(\sim\sim p\to \sim\sim q)
+\sim\sim(p\to q) \to (\sim\sim p\to\sim\sim q)
+ \sim\sim(p\to q)\to\sim\sim(\sim\sim p\to \sim\sim q) 
+ \bot 
+ \sim q \vdash (p \to q) \to \sim p 
+ \sim q 
+ p \to q 
+ \sim q \to (p \to \sim q) 
+ p \to \sim q 
+ (p \to q) \to ((p \to \sim q) \to \sim p) 
+ (p \to q) \to ~p 
+ \sim p 
+ \sim q, p \to q \vdash \sim p 
+ \sim q \vdash (p \to q) \to \sim p 
+ \sim \sim (p \to q),\sim \sim p \vdash \sim \sim q 
+ \sim \sim (p \to q) 
+ \sim \sim p 
+ \sim q 
+ \sim q \vdash \sim \sim (p \to q) 
+ p \to q \vdash \sim \sim p 
+ \sim q \to \sim \sim (p \to q) 
+ (p \to q) \to \sim \sim p 
+ (p \to q) \to \sim p 
+ ((p \to q) \to \sim p) \to ((p \to q) \to \sim \sim p) \to \sim (p \to q)) 
+ (p \to q) \to \sim \sim p) \to \sim (p \to q) 
+ \sim (p \to q) 
+ \sim q \vdash \sim (p \to q) 
+ \sim q \to \sim (p \to q) 
+ ( \sim q \to \sim (p \to q)) \to (( \sim q \to \sim \sim (p \to q)) \to \sim \sim q) 
+ ( \sim q \to \sim \sim (p \to q)) \to \sim \sim q 
+ \sim \sim q 
+ \sim \sim (p \to q),\sim \sim p \vdash \sim \sim q 
+ \varnothing  \vdash p 
+ \Gamma \vdash p 
+ \varnothing \vdash p 
+ \Gamma \vdash p 
+ \sim q \to \sim \sim (p \to q) 
+ \sim \sim (p \to q) 
+ \sim \sim (p \to q) \to ( \sim (p \to q) \to q) 
+  \sim (p \to q) \to q 
+ (\sim (p \to q) \to q) \to ( \sim q \to \sim \sim (p \to q)) 
+ \sim q \to \sim \sim (p \to q) 
+ (p \to q) \to \sim \sim p 
+ \sim \sim (p \to q) 
+ \sim \sim p 
+ p \to q 
+ \sim \sim p \to ( \sim p \to \sim (p \to q)) 
+ \sim p \to \sim (p \to q) 
+ (\sim p \to \sim (p \to q)) \to ( \sim \sim (p \to q) \to \sim \sim p) 
+ \sim \sim (p \to q) \to \sim \sim p 
+ \sim \sim p 
+ p \to q \vdash \sim \sim p 
+ (p \to q) \to \sim \sim p 

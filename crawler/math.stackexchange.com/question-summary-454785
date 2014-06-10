@@ -1,0 +1,28 @@
+E(x)
+x
+0
+A
+0 = E(0)
+1 = E(1)
+2 = E(2)
+B
+u_i
+E(i)
+b
+b=2
+\sum_{0 \leq a_1 \leq a_2 \leq \ldots \leq a_b \leq A} u_{a_1} \ldots u_{a_b}.
+\left( \sum_{0 \leq a \leq A} u_a \right)^b
+\left( \sum_{0\leq a \leq A} u_a \right)^2 = \sum_{0\leq a_1,a_2 \leq A} u_{a_1} u_{a_2} = \sum_{0 \leq a \leq A} u_a^2 + 2 \sum_{0 \leq a_1 < a_2 \leq A} u_{a_1} u_{a_2},
+\sum_{0 \leq a_1 < a_2 \leq A} u_{a_1} u_{a_2} = \frac{1}{2} \left( \sum_{0\leq a \leq A} u_a \right)^2 - \frac{1}{2} \sum_{0 \leq a \leq A} u_a^2,
+b.
+[A]
+1
+A
+0
+b
+a_1
+a_2
+a_2
+a_3
+\begin{split}\sum_{0\leq a_1,a_2 \leq A} u_{a_1} u_{a_2} &= \sum_{0\leq a_1,a_2 \leq A} ([a_1=a_2] + [a_1<a_2] + [a_1>a_2]) u_{a_1} u_{a_2}\\ &= \sum_{0\leq a_1,a_2 \leq A} ([a_1=a_2] + 2[a_1<a_2]) u_{a_1} u_{a_2} \quad \textrm{by swapping indices for third term} \\ &= \sum_{0 \leq a \leq A} u_a^2 + 2 \sum_{0 \leq a_1 < a_2 \leq A} u_{a_1} u_{a_2}.\end{split}
+Result = \sum\limits_{a_1=0}^{A}(E(a_1)\cdot\sum\limits_{a_2=a_1}^{A}(E(a_2)\cdot \cdots\sum\limits_{a_B=a_{B-1}}^{A}(E(a_B)) \cdots ))

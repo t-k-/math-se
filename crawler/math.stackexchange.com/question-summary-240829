@@ -1,0 +1,12 @@
+c=\frac18
+dx
+f_{XY}(x,y)= \begin{cases} c(y^2-x^2)e^{-y}, & (-y \le x \le y),\quad y\gt0 \\ 0, & \text{otherwise} \end{cases}
+\int_0^\infty \int_{-y}^y cy^2e^{-y}-cx^2e^{-y}dxdy
+\int_0^\infty \int_{-y}^y c (y^2-x^2) e^{-y} dx dy
+=c\int_0^\infty e^{-y} \left(\int_{-y}^y (y^2-x^2)dx\right)dy
+=c\int_0^\infty e^{-y} \left(\frac{4}{3} y^3\right)dy
+=\frac{4}{3}c\int_0^\infty e^{-y} y^3dy
+=(3!)\frac{4}{3} c\int_0^\infty \frac{e^{-y} y^3}{3!}dy
+=8c
+c=\frac18
+c

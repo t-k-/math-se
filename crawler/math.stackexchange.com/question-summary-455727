@@ -1,0 +1,9 @@
+X_i, i=1,2,3,..., N
+\hat{X}_1 = \frac{1}{N}(\sum_i\sqrt{X_i})^2
+\hat{X}_2 = \frac{1}{N^2}(\sum_i\sqrt{X_i})^2
+Y=\sqrt X
+E\hat{X}_1 = E\frac{1}{N}\left(\sum_i{Y_i}\right)^2 = E\frac{1}{N} \left(\sum_i{Y_i^2}+\sum_i{Y_i\sum_{j\neq i}{Y_j}}\right)  
+ = \frac{1}{N}\left(\sum_iE{X_i}\right) + E\frac{1}{N}\left(\sum_i{Y_i\sum_{j\neq i}{Y_j}}\right)  
+E\hat{X}_1=EX+\frac{1}{N} N(N-1)E(Y_iY_j)= EX+(N-1)\left(E(\sqrt X)\right)^2
+E\hat{X}_2= EX/N+(1-1/N)\left(E(\sqrt X)\right)^2
+N^2

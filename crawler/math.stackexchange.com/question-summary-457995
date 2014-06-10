@@ -1,0 +1,13 @@
+ \int _R^{\infty} k_l(\alpha r) \frac{r^{l+2}}{z^{l+1}} dr
+ \int _R^{\infty} k_l(\alpha r) \frac{z^{l+2}}{r^{l-1}} dr
+\begin{align} \frac{k_n(x)}{x} &= \frac{-1}{2n+1}\left[ k_{n-1}(x) - k_{n+1}(x)\right]\tag{1a}\\ k'_n(x)          &= \frac{-1}{2n+1}\left[ n k_{n-1}(x) + (n+1) k_{n+1}(x)\right]\tag{1b} \end{align}
+(1a)
+n+1
+(1b)
+ x^{-(n+1)} \frac{d}{dx} \left[ x^{n+1} k_n(x) \right] =  \left[ \frac{d}{dx} + \frac{n+1}{x} \right] k_n(x) = -k_{n-1}(x)\\ 
+\begin{align} \int_{R}^{\infty}  k_{l}(ar) \frac{r^{l+2}}{z^{l+1}} dr &= \frac{1}{a^{l+3}z^{l+1}}\int_{aR}^{\infty} k_{l}(x) x^{l+2} dx\\ &= \frac{1}{a^{l+3}z^{l+1}} \int_{aR}^{\infty}-\frac{d}{dx}\left[ k_{l+1}(x) x^{l+2} \right] dx\\  &=  \frac{1}{a^{l+3}z^{l+1}} \left[ -k_{l+1}(x)x^{l+2} \right]_{aR}^{\infty}\\ &=  k_{l+1}(aR) \frac{R^{l+2}}{a z^{l+1}}  \end{align}
+(1a)
+n
+(1b)
+ x^{n} \frac{d}{dx} \left[ x^{-n} k_n(x) \right] =  \left[ \frac{d}{dx} - \frac{n}{x} \right] k_n(x) = -k_{n+1}(x)\\ 
+\begin{align} \int_{R}^{\infty}  k_{l}(ar) \frac{z^{l+2}}{r^{l-1}} dr &= a^{l-2}z^{l+2} \int_{aR}^{\infty} k_{l}(x) x^{-(l-1)} dx\\ &= a^{l-2}z^{l+2} \int_{aR}^{\infty}-\frac{d}{dx}\left[ k_{l-1}(x) x^{-(l-1)} \right] dx\\  &= a^{l-2}z^{l+2} \left[ -k_{l-1}(x)x^{-(l-1)} \right]_{aR}^{\infty}\\ &=  k_{l-1}(aR) \frac{z^{l+2}}{a R^{l-1}} \end{align}

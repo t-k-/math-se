@@ -1,0 +1,14 @@
+F_{\mathbb{X,Y}}(x,y) = Pr(\mathbb{X}\le x,\mathbb{Y}\le y)
+f_{\mathbb{X,Y}}(x,y) = {\delta^2F_{\mathbb{X},\mathbb{Y}}(x,y)\over\delta x\delta y}
+F_{\mathbb{X,Y}}(x,y) = \int_{-\infty}^\infty\int_{-\infty}^\infty f_{\mathbb{X,Y}}(u,v)dudv=1
+f_{\mathbb{X,Y}}(x,y) = 2e^{-x-2y}, x\ge0,y\ge0
+F_{\mathbb{X,Y}}(x,y) = \int_{-\infty}^y\int_{-\infty}^x f_{\mathbb{X,Y}}(u,v)dudv = \int_0^y\int_0^x 2e^{-u-2v}dudv=\int_{v=0}^y\left[-2e^{-u-2v}\right]dv=...=(1-e^{-x})(1-e^{-2y})
+\int_0^y\int_0^x 2e^{-u-2v}dudv=\int_{v=0}^y\left[-2e^{-u-2v}\right]dv
+\int_0^y\int_0^x 2e^{-u-2v}dudv=\int_{v=0}^y\left[-2e^{-u-2v}\right]dv
+\int_0^y\int_0^x2e^{-u-2v}dudv
+\int_0^x2e^{-u-2v}du
+u
+v
+\int_0^x2e^{-u-2v}du = \left[-2e^{-u-2v}\right]
+{\delta\over\delta u}(-u-2v) = -1
+{\delta\over\delta u}(-2e^{-u-2v}) = 2e^{-u-2v}

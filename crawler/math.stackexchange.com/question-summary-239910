@@ -1,0 +1,14 @@
+\int (a^2 - x^2)^n \,dx = \frac{x  (a^2 - x^2)^n}{2n + 1} + \frac{2 a^2 n}{2n+1} \int (a^2 - x^2)^{n-1} \,dx + C 
+\int (a^2 - x^2)^n \,dx = x(a^2 - x^2)^n + 2n \int x^2 (a^2 - x^2)^{n-1} \,dx 
+ \frac{2n + 1}{2n +1}
+x(a^2 - x^2)^n + 2n \int (a^2 - x^2)^{n-1} \,dx = \frac{x  (a^2 - x^2)^n}{2n + 1} +  \frac{2nx  (a^2 - x^2)^n}{2n + 1} + 2n\int x^2(a^2 - x^2)^{n-1} \,dx
+\int (a^2 - x^2)^n \,dx = \begin{pmatrix} f(x)= a^2 - x^2 | f'(x)=-2x\\ g'(x)=(a^2-x^2)^{n-1} |g(x)=\int(a^2-x^2)^{n-1} \,dx \end{pmatrix} = 
+(a^2-x^2)\int(a^2-x^2)^{n-1} \,dx + 2\int x \Big(\int(a^2-x^2)^{n-1} \,dx \Big)\,dx =
+(a^2-x^2)\int(a^2-x^2)^{n-1} \,dx +x^2\int(a^2-x^2)^{n-1} \,dx = a^2\int(a^2-x^2)^{n-1} \,dx 
+\int (a^2 - x^2)^n \,dx = x(a^2 - x^2)^n + 2n \int \color{red}{x^2} (a^2 - x^2)^{n-1} \,dx
+x^2
+\begin{align} \int (a^2 - x^2)^n \,dx &= x(a^2 - x^2)^n + 2n \int \color{red}{x^2} (a^2 - x^2)^{n-1} \,dx \\ &= x(a^2 - x^2)^n + 2n \int \color{red}{(x^2 - a^2 + a^2)} (a^2 - x^2)^{n-1} \,dx\\ &= x(a^2 - x^2)^n + 2na^2 \int (a^2 - x^2)^{n - 1} +  2n \int (x^2 - a^2) (a^2 - x^2)^{n-1} \,dx \\ &= x(a^2 - x^2)^n + 2na^2 \int (a^2 - x^2)^{n - 1} - 2n \int (a^2 - x^2)^{n} \,dx \end{align}
+I_n(x)=\int_{0} ^{x}t^n(t^2+a^2)^{-\frac{1}{2}}dt
+nI_n(x) = x^{n-1}\sqrt{x^2+a^2}-(n-1)a^2I_{n-2(x)}
+x\geq2
+nI_{n}=x^{n+1}(x^2+a^2)^{-\frac{1}{2}}-a^2I_{n-2}+a^4\int t^{n-2}(t^2+a^2)^{-\frac{3}{2}}dt

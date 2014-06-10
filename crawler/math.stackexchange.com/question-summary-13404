@@ -1,0 +1,29 @@
+T
+(A, B, C, D)
+(A', B', C' D')
+T
+{\it collinear}
+(x,y,z)
+D=(0,0,1)
+C=(1,0,1)
+A=(0,1,1)
+B=(1,1,1)
+A'
+B'
+C'
+D'
+T
+P0
+P1
+P2
+P3
+N0
+N1
+N2
+N3
+u = \frac{dU0}{dU0 + dU1} = \frac{(P-P0) \cdot N0}{(P-P0).N0 + (P-P2) \cdot N2} \\ v = \frac{dV0}{dV0 + dV1} = \frac{(P-P0) \cdot N1}{(P-P0).N1 + (P-P3) \cdot N3}.
+P(x,y)
+(u,v)
+x = \frac{vKH \cdot uFC - vLI \cdot uEB}{vJG \cdot uEB - vKH \cdot uDA}, \\ y = \frac{vLI \cdot uDA - uFC \cdot vJG}{vJG \cdot uEB - vKH \cdot uDA},
+uDA = u \cdot (D-A), \quad uEB = u \cdot (E-B), \quad uFC = u \cdot (F-C), \\ vJG = v \cdot (J-G), \quad vKH = v \cdot (K-H), \quad vJG = v \cdot (J-G),
+A = N0_x,  \qquad \qquad B = N0_y, \quad C = -P0 \cdot N0, \qquad \\ D = N0_x + N2_x, \quad E = N0_y + N2_y, \quad F = -P0 \cdot N0 - P2 \cdot N2, \\ G = N1_x, \qquad \qquad H = N1_y, \quad I = -P0 \cdot N1, \qquad  \\ J = N1_x + N3_x, \quad K = N1_y + N3_y, \quad L = -P0 \cdot N1 - P2 \cdot N3.

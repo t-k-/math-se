@@ -1,0 +1,13 @@
+ \sum_{i=1}^n  {1\over 4i^2-1} = {1\over3} + {1\over15} + {1\over35} + \cdots + {1\over 4n^2-1} 
+ \frac{1}{4n^2-1} = \frac{1}{2}\left(\frac{1}{2n-1} - \frac{1}{2n+1}\right). 
+\sum_{i=1}^n {1\over 4i^2-1}={1\over 2}\sum_{i=1}^n \Bigl({1\over 2i-1}-{1\over 2i+1}\Bigr)
+={1\over 2}\Bigl(\Bigl(1-{1\over 3}\Bigr)+\Bigl({1\over 3}-{1\over 5}\Bigr)+\cdots +\Bigl({1\over 2n-1}-{1\over 2n+1}\Bigr)\Bigr)
+={1\over 2}\Bigl(1-{1\over 2n+1}\Bigr)={n\over 2n+1}
+2\leq k+1\leq n
+2-1\leq k\leq n-1
+ \sum_{i=1}^n  {1\over 4i^2-1} = \sum_{i=1}^n\frac{1}{{(2i + 1)(2i - 1)}}  
+ = \sum_{i=1}^n \left(\frac{1}{{2(2i - 1)}} - \frac{1}{{2(2i + 1)}}\right) = \frac{1}{2}\left(\sum_{1\leq i\leq n} \frac{1}{{(2i - 1)}} - \sum_{1\leq i\leq n}\frac{1}{{(2i + 1)}}\right) 
+ =\frac{1}{2}\left( \frac{1}{1}+\sum_{2\leq i\leq n} \frac{1}{{(2i - 1)}} - \sum_{1\leq i\leq n-1}\frac{1}{{(2i + 1)}}- \frac{1}{2n+1}\right) 
+ =\frac{1}{2}\left( \frac{1}{1}+\sum_{2\leq k+1\leq n} \frac{1}{{(2[k+1] - 1)}} - \sum_{1\leq i\leq n-1}\frac{1}{{(2i + 1)}}- \frac{1}{2n+1}\right). 
+ =\frac{1}{2}\left( \frac{1}{1}+\sum_{1\leq k\leq n-1} \frac{1}{{(2k+1)}} - \sum_{1\leq i\leq n-1}\frac{1}{{(2i + 1)}}- \frac{1}{2n+1}\right) 
+ =\frac{1}{2}-\frac{1}{4n+2}. 

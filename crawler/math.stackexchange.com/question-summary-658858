@@ -1,0 +1,23 @@
+A
+50\pm1^\circ
+B
+35\pm1^\circ
+100\pm1m
+x
+x+100\pm1m
+h
+h=\sin(35\pm1^\circ)\cdot(x+100\pm1m)
+h=\sin(50\pm1^\circ)\cdot x
+x=\frac{-\sin(35\pm1^\circ)\cdot100\pm1m}{\sin(35\pm1^\circ)-\sin(50\pm1^\circ)}
+h=\sin(50\pm1^\circ)\cdot \frac{-\sin(35\pm1^\circ)\cdot100\pm1m}{\sin(35\pm1^\circ)-\sin(50\pm1^\circ)}
+f(l,\alpha,\beta)
+h
+h=\sin(\alpha)\cdot \frac{-\sin(\beta)\cdot l}{\sin(\beta)-\sin(\alpha)}
+dh=\frac{\partial h}{\partial \alpha}d\alpha+\frac{\partial h}{\partial \beta}d\beta + \frac{\partial h}{\partial l}dl
+dh=\frac{-\cos(\alpha)\sin^2(\beta)l}{[\sin(\beta)-\sin(\alpha)]^2}d\alpha+\frac{-\cos(\beta)\sin^2(\alpha)l}{[\sin(\beta)-\sin(\alpha)]^2}d\alpha +\frac{-\sin(\alpha)\sin(\beta)l}{\sin(\beta)-\sin(\alpha)}dl 
+f = f(x_1 , x_2 , \cdots , x_n )
+\delta f = \sum_{i=1}^n \frac{\partial f}{\partial x_i} \delta x_i
+\delta f
+f
+\delta x_i
+x_i, i \in \{1,2, \cdots , n\}

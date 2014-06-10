@@ -1,0 +1,30 @@
+n\in\mathbb{N}
+\int_{-\infty}^{\infty}\frac{1}{1+x^{2n}}dx=\frac{\pi}{n\sin\left(\frac{\pi}{2n}\right)}
+n\in\mathbb{Z}
+\int_{-\infty}^{\infty}\frac{1}{(1+x^{2n})^2}dx
+J
+I
+\Gamma_0
+0
+R
+\Gamma_2
+R e^{\frac{i\pi}{n}}
+\Gamma_1
+R \frac{\pi}{n} \frac{1}{R^{4n}}
+R
+\lim_{R\to\infty} \frac{1}{R^{4n-1}} = 0
+\Gamma_2
+x = e^{\frac{i\pi}{n}} t
+ J = \int_{-\infty}^{+\infty} \frac{1}{(1+x^{2n})^2} dx = 2 \int_0^\infty \frac{1}{(1+x^{2n})^2} dx.
+\Gamma_1: R e^{i t} \quad \text{where} \quad 0\le t \le \frac{\pi}{n}
+ \int_R^0 \frac{1}{(1+e^{\frac{i\pi}{n}2n} t^{2n})^2} e^{\frac{i\pi}{n}} dt = -  e^{\frac{i\pi}{n}}\int_0^R \frac{1}{(1+e^{2i\pi} t^{2n})^2} dt =-  e^{\frac{i\pi}{n}}\int_0^R \frac{1}{(1+ t^{2n})^2} dt
+\Gamma_0 - \Gamma_1 - \Gamma_2.
+x = e^{i\pi/2/n}
+ \operatorname{Res}_{x=e^{i\pi/2/n}}\frac{1}{(1+x^{2n})^2} = - \frac{2n-1}{(2n)^2}e^{i\pi/2/n} 
+I \left(1 - e^{\frac{i\pi}{n}}\right) = - 2\pi i \frac{2n-1}{(2n)^2}e^{i\pi/2/n}
+I = 2\pi i \frac{2n-1}{(2n)^2} \frac{e^{i\pi/2/n}}{e^{i\pi/n} -1} = 2\pi i \frac{2n-1}{(2n)^2} \frac{1}{e^{i\pi/2/n} - e^{-i\pi/2/n}} = \frac{2n-1}{(2n)^2} \frac{\pi}{\sin\left(\frac{\pi}{2n}\right)}.
+J = \frac{2n-1}{2n^2} \frac{\pi}{\sin\left(\frac{\pi}{2n}\right)}.
+n<0
+m=-n
+\int_{-\infty}^{\infty}\frac{1}{(1+x^{-2m})^2}dx=\int_{-\infty}^{\infty}\frac{x^{4m}}{(1+x^{2m})^2}dx
+ \int_0^{\infty} x^{\alpha-1}Q(x)dx =\frac{\pi}{sin(\alpha \pi)} \sum_{i=1}^{n} Res_i((-z)^{\alpha-1}Q(z))

@@ -1,0 +1,76 @@
+u_x(0, t)=0
+t\geq 0
+v,k>0
+u_t(x,t) - v u_x(x,t)=k u_{xx}(x,t),\qquad x\geq0
+u(0,t)=0
+u(0,t) = u_0
+t \ge 0
+u(x,0)=0
+x \gt 0
+t
+\hat{u}(x,s) = \int_0^{\infty} dt \, u(x,t) \, e^{-s t}
+x
+k \hat{u}'' + v \hat{u}'-s \hat{u}=0
+\hat{u}(0,s) = \frac{u_0}{s}
+\lim_{x \to \infty} \hat{u}(x,s) = 0
+\hat{u}(x,s) = A(s) e^{r_+ x} + B(s) e^{r_- x}
+r_{\pm} = -\frac{v}{2 k} \pm \frac{\sqrt{v^2+4 k s}}{2 k}
+A(s)=0
+B(s)=u_0/s
+u(x,t) = \frac{u_0}{i 2 \pi} e^{-v x/(2 k)} \int_{c-i \infty}^{c+i \infty} \frac{ds}{s} e^{-x\sqrt{v^2+4 k s} /(2 k)} \, e^{s t}
+c \gt 0
+\oint_C \frac{dz}{z} e^{-x\sqrt{v^2+4 k z} /(2 k)} \, e^{z t}
+C
+C_2
+C_4
+C_6
+C
+C_1
+C_3
+C_5
+z=0
+\frac{1}{i 2 \pi}\left [\int_{C_1} + \int_{C_3} + \int_{C_5}  \right ]\frac{dz}{z} e^{-x\sqrt{v^2+4 k z} /(2 k)} \, e^{z t}  = e^{-v x/(2 k)}
+C_3
+z=-v^2/(4 k)
+z=-v^2/(4 k) + e^{i \pi} y
+C_3
+e^{-v^2 t/(4 k)} \int_{\infty}^0 \frac{dy}{y+\frac{v^2}{4 k}} \frac{e^{-i (x/(\sqrt{k})) \sqrt{y}}}{\sqrt{y}} e^{-t y}
+C_5
+z=-v^2/(4 k) + e^{-i \pi} y
+C_5
+e^{-v^2 t/(4 k)} \int_0^{\infty} \frac{dy}{y+\frac{v^2}{4 k}} e^{i (x/(\sqrt{k})) \sqrt{y}}\, e^{-t y}
+\frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} \frac{ds}{s} e^{-(x/(2 k)) \sqrt{v^2+4 k s}} \, e^{s t} = e^{-x v/(2 k)} - \frac{e^{-v^2 t/(4 k)}}{\pi} \int_0^{\infty} \frac{dy}{y+\frac{v^2}{4 k}} \sin{\frac{x \sqrt{y}}{\sqrt{k}}} \, e^{-t y}
+y=u^2
+\frac{e^{-a^2 t}}{\pi} \int_{-\infty}^{\infty} du \frac{u \sin{b u}}{a^2+u^2} e^{-t u^2}
+a^2=v^2/(4 k)
+b=x/\sqrt{k}
+\frac{e^{-a^2 t}}{\pi} \int_{-\infty}^{\infty} du  \frac{u^2}{a^2+u^2} \frac{\sin{b u}}{u} e^{-t u^2}
+\frac{e^{-a^2 t}}{\pi} \int_{-\infty}^{\infty} du \frac{\sin{b u}}{u} e^{-t u^2} - \frac{a^2 \,e^{-a^2 t}}{\pi} \int_{-\infty}^{\infty} \frac{du }{a^2+u^2} \frac{\sin{b u}}{u} e^{-t u^2}
+\int_{-\infty}^{\infty} du \frac{\sin{b u}}{u} e^{-t u^2} = \pi \, \text{erf}\left(\frac{b}{2 \sqrt{t}}\right)
+f(u) = \frac{1}{a^2+u^2} \frac{\sin{b u}}{u}
+\hat{f}(k)
+\hat{f}(k) = \frac{\pi}{2 a} \int_{-b}^b dk' e^{-a |k-k'|}
+k \lt -b
+k \gt b
+|k| \le b
+\hat{f}(k) = \begin{cases}\frac{\pi}{a^2} \left (1-e^{-a b} \cosh{a k} \right ) & |k| \le b\\ \frac{\pi}{a^2} \sinh{a b} \, e^{-a |k|} & |k| \gt b \end{cases}
+\int_{-\infty}^{\infty} \frac{du }{a^2+u^2} \frac{\sin{b u}}{u} e^{-t u^2} = \frac{1}{2 \pi} \sqrt{\frac{\pi}{t}} \int_{-\infty}^{\infty} dk \, \hat{f}(k) \, e^{-k^2/(4 t)}
+u(x,t)=X(x)T(t)
+X(x)T'(t)-vX'(x)T(t)=kX''(x)T(t)
+X(x)T'(t)=kX''(x)T(t)+vX'(x)T(t)
+X(x)T'(t)=(kX''(x)+vX'(x))T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{kX''(x)+vX'(x)}{X(x)}=-\dfrac{4k^2s^2+v^2}{4k}
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\dfrac{4k^2s^2+v^2}{4k}\\kX''(x)+vX'(x)+\dfrac{4k^2s^2+v^2}{4k}X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\frac{t(4k^2s^2+v^2)}{4k}}\\X(x)=\begin{cases}c_1(s)e^{-\frac{vx}{2k}}\sin xs+c_2(s)e^{-\frac{vx}{2k}}\cos xs&\text{when}~s\neq0\\c_1xe^{-\frac{vx}{2k}}+c_2e^{-\frac{vx}{2k}}&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(x,t)=\int_0^\infty C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\sin xs~ds+\int_0^\infty C_2(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\cos xs~ds
+u_x(x,t)=\int_0^\infty C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\left(-\dfrac{v}{2k}\sin xs+s\cos xs\right)ds+\int_0^\infty C_2(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\left(-\dfrac{v}{2k}\cos xs-s\sin xs\right)ds
+u_x(0,t)=0
+\int_0^\infty sC_1(s)e^{-\frac{t(4ks^2+v^2)}{4k}}~ds-\int_0^\infty\dfrac{v}{2k}C_2(s)e^{-\frac{t(4ks^2+v^2)}{4k}}~ds=0
+\int_0^\infty\left(sC_1(s)-\dfrac{v}{2k}C_2(s)\right)e^{-\frac{t(4ks^2+v^2)}{4k}}~ds=0
+sC_1(s)-\dfrac{v}{2k}C_2(s)=0
+C_2(s)=\dfrac{2ks}{v}C_1(s)
+\therefore u(x,t)=\int_0^\infty C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\sin xs~ds+\int_0^\infty\dfrac{2ks}{v}C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\cos xs~ds=\int_0^\infty C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\left(\sin xs+\dfrac{2ks}{v}\cos xs\right)ds
+u(0,t)=0
+\int_0^\infty C_2(s)e^{-\frac{t(4ks^2+v^2)}{4k}}~ds=0
+C_2(s)=0
+\therefore u(x,t)=\int_0^\infty C_1(s)e^{-\frac{2vx+t(4ks^2+v^2)}{4k}}\sin xs~ds

@@ -1,0 +1,56 @@
+n\times n
+Q
+C\in\mathbb{R}^{2\times n}
+d
+ \min_{d\in\mathbb{R}^{n\times 2}} \text{trace}\big( d^T Q d+Cd\big) 
+d=[d_1,\ldots, d_n]^T
+d_i\in\mathbb{R}^2
+i, j, k
+d_i-d_k
+d_k-d_j
+c_1, c_2
+C
+ \min_{d\in\mathbb{R}^{2n}} d^T \tilde{Q} d + \tilde{c}d 
+  \tilde{Q}=\begin{bmatrix} Q & 0 \\ 0 & Q\end{bmatrix},\quad \tilde{c}=[c_1, c_2], 
+d^t A d
+d\in\mathbb{R}^{2n}
+d^TAd
+ \min_{d\in\mathbb{R}^{2n}} d^T \tilde{Q} d + \tilde{c}d +\mu d^TAd, 
+ \min_{d\in\mathbb{R}^{2n}} d^T \tilde{Q} d + \tilde{c}d +\mu (d^TAd)^2. 
+n
+n=20
+d_i=d_{i+1}
+d
+d_i,d_j,d_k
+c_1 d_i + c_2 d_j + c_3 d_k=0
+i,j,k
+d
+vec
+vec(d)
+2n\times 1
+n
+d
+n
+d
+c=vec(C^{T})
+M=(I\otimes Q)
+x=vec(d)
+d
+M
+c
+d_i-d_k=c(d_k-d_j)
+A_1
+1\times n
+A_1
+A_1 d=d_i-d_k
+A_2
+A_2 d=d_k-d_j
+(A_1-cA_2)d=0
+c
+d_i-d_k=\mu(d_k-d_j)
+\mu
+\mu
+d_\mu^*
+  \min_{\mu\in\mathbb{R}} (d_\mu^*)^TQd_\mu^*+cd_\mu^* 
+\mu
+\mu

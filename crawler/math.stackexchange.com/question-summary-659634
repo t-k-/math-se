@@ -1,0 +1,21 @@
+\bar{X}_n = \sum {X_i \over n}
+\bar{E_n} = {2 \over n} \sum_i X_{2i}
+\sqrt{n}(\bar{X}_n-\mu) \rightarrow_{d} F 
+\sqrt{n \over 2}(\bar{E}_n-\mu) \rightarrow_{d} F 
+n \over 2
+\bar{E_n} = 2\bar{X}_n - \bar{O_n}
+\bar{O_n}
+\sqrt{n}(\bar{E}_n-\mu) + \sqrt{n}(\bar{O}_n-\mu) \rightarrow_{d} 2F
+\bar{O_n}
+\bar{X_n}
+\mu
+X_i
+\sigma^2
+\bar E_n
+\bar E_n = \frac 2n\sum_{i=1}^n X_i\cdot I_{\{i=even\}}
+\mathbb E(\bar E_n) = I_{\{n=even\}}\cdot \mu + \left[1-I_{\{n=even\}}\right]\cdot \frac {n-1}{n}\mu
+=\frac {n-1}{n}\mu + I_{\{n=even\}}\cdot \frac 1n \mu = \left(1-\frac {I_{\{n=odd\}}}{n}\right)\mu
+\operatorname{Var}(\bar E_n) = 2\left(1-\frac {I_{\{n=odd\}}}{n}\right)\frac {\sigma^2}{n}
+Z_n\equiv \sqrt{n \over 2}(\bar{E}_n-\mu)
+\mathbb E(Z_n) = -\sqrt{n \over 2}\frac {I_{\{n=odd\}}}{n}\mu,\;\; \operatorname{Var}(Z_n) = \left(1-\frac {I_{\{n=odd\}}}{n}\right)\sigma^2
+\lim_{n\rightarrow \infty}\mathbb E(Z_n) = 0,\;\; \lim_{n\rightarrow \infty}\operatorname{Var}(Z_n) = \sigma^2

@@ -1,0 +1,8 @@
+m
+j+k
+\begin{align} G_n(x) & = (1+(x+x^2))^n \\ & =  \sum_k\binom{n}{k}(x+x^2)^k \\ & = \sum_k\binom{n}{k}x^k \sum_j\binom{k}{j}x^j \\ & = \sum_k\sum_j\binom{n}{k}\binom{k}{j}x^{j+k} \\ & = \sum_m \left( \sum_j\binom{n}{m-j}\binom{m-j}{j}\right)\,x^m,\\ \end{align} 
+\begin{align} t_{m,n} = \sum_{j=0}^{\lfloor{m/2}\rfloor} \binom{n}{m-j}\binom{m-j}{j} \end{align}
+k
+m-j
+m
+\lfloor{m/2}\rfloor

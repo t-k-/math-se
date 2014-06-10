@@ -1,0 +1,83 @@
+p
+n
+f_p(n) = \sum_{\begin{array}{c}k=1,\ldots,p^n-1\\p\not\mid k\end{array}} \sigma(k)\,\sigma(p^n - k)
+n=0
+n \geq 1
+p=2
+p=3
+p
+p>3
+p=2
+p=3
+f_p(n)=\begin{cases} 	0	& \text{for $n=0$} \\[1ex]	\frac{1}{12}\,\frac{p^2 - 1}{p^2 + 1} 	\left(5 (p - 1)\,p^{3n-1} - (p - 2)(p - 3)(-p)^{n-1}\right) 	& \text{for $n \geq 1$} \end{cases}
+\sigma_3
+Q
+\sigma
+P
+n
+(6n-1)
+\sum_{k=1,\ldots,n-1} \sigma(k)\,\sigma(n - k) = \frac{1}{12}\left(5\sigma_3(n) - (6n - 1)\,\sigma(n)\right)
+P
+Q
+R
+P^2 = Q + 12q\frac{\mathrm{d}P}{\mathrm{d}q}
+\tau' = \frac{-1}{\tau}
+\begin{aligned} 	\mathrm{E}_2(\tau+1) &= \mathrm{E}_2(\tau) &	\mathrm{E}_2(\tau') &= 	\frac{6\tau}{\pi\,\mathrm{i}} + \tau^2\,\mathrm{E}_2(\tau) \\	\mathrm{E}_4(\tau+1) &= \mathrm{E}_4(\tau) &	\mathrm{E}_4(\tau') &= \tau^4\,\mathrm{E}_4(\tau) \end{aligned}
+\mathrm{E}_2(\tau')
+\tau
+L
+\tau\to\tau+1
+\tau\to\tau'
+L
+\mathrm{E}_4
+\mathrm{E}_2
+L
+\mathbb{H}
+q
+L
+4
+\mathrm{E}_2'(\tau') = \frac{6\tau^2}{\pi\,\mathrm{i}} + 2\tau^3\,\mathrm{E}_2(\tau) + \tau^4\,\mathrm{E}_2'(\tau)
+L = \mathrm{E}_2^2 - \frac{6}{\pi\mathrm{i}}\,\mathrm{E}_2'
+\begin{aligned} 	L(\tau+1) &= L(\tau) \\	L(\tau') &= \left(\frac{6\tau}{\pi\mathrm{i}} + 	\tau^2\mathrm{E}_2(\tau)\right)^2 - \frac{6}{\pi\mathrm{i}} 	\left(\frac{6\tau^2}{\pi\,\mathrm{i}} + 2\tau^3\,\mathrm{E}_2(\tau) 	+ \tau^4\,\mathrm{E}_2'(\tau)\right) \\	&= \tau^4\left(\mathrm{E}_2^2(\tau) - 	\frac{6}{\pi\mathrm{i}}\,\mathrm{E}_2'(\tau)\right) \\	&= \tau^4\,L(\tau) \end{aligned}
+4
+\mathrm{E}_4
+\Im\tau\to\infty
+q\to0
+1
+L = \mathrm{E}_4
+\Im\tau\to\infty
+q\to0
+L=\mathrm{E}_4
+\mathrm{E}_2
+\mathrm{E}_2
+\mathrm{E}_4
+q\frac{\mathrm{d}}{\mathrm{d}q} = \frac{1}{2\pi\mathrm{i}}\frac{\mathrm{d}}{\mathrm{d}\tau}
+\frac{6}{\pi\mathrm{i}}\mathrm{E}_2'
+12q\frac{\mathrm{d}P}{\mathrm{d}q}
+\mathrm{E}_2^2 = \mathrm{E}_4 + \frac{6}{\pi\mathrm{i}}\,\mathrm{E}_2'
+P^2 = Q + 12q\frac{\mathrm{d}P}{\mathrm{d}q}
+q
+m
+q
+s(m) = \sum_{k=1,\ldots,m-1} \sigma(k)\,\sigma(m - k)
+\begin{aligned} 	\sum_{m=1}^\infty s(m)\,q^m &= \left(\frac{1-P(q)}{24}\right)^2 \\	&= \frac{1 - 2P(q) + P^2(q)}{24^2} = 	\frac{1 - 2P(q) + Q(q) + 12q\frac{\mathrm{d}}{\mathrm{d}q}P(q)}{24^2} \\	&= \frac{1}{12} \sum_{m=1}^\infty 	\left((1 - 6m)\,\sigma(m) + 5\sigma_3(m)\right) q^m \end{aligned}
+\frac{1}{1-X} = 1 + X + X^2 + \cdots
+m
+p
+n
+p^{3n}, p^{2n}, p^n
+\begin{aligned} 	h_p(n) = s(p^n) &= \frac 	{5 (p^{3(n+1)} - 1) - (p^2+p+1)(6 p^n - 1)(p^{n+1} - 1)} 	{12 (p^3 - 1)} \\	&= \frac 	{(5p^3)\,p^{3n} - \left(6 p\,(p^2+p+1)\right) p^{2n} 	+ \left((p+6)(p^2+p+1)\right) p^n - (p^2+p+6)} 	{12 (p^3 - 1)} \end{aligned}
+h_p
+f_p
+\sigma(p^j)^2
+\sigma
+\begin{aligned} 	h_p(n) = s(p^n) &= 	\sum_{k=1,\ldots,p^n-1} \sigma(k)\,\sigma(p^n - k) \\	&= \sum_{j=0}^{n-1} 	\sum_{\begin{array}{c} 	k=1,\ldots,p^{n-j}-1\\p\not\mid k\end{array}} 	\sigma(k\,p^j)\,\sigma(p^n - k\,p^j) \\	&= \sum_{j=0}^{n-1} \sigma(p^j)^2 	\sum_{\begin{array}{c} 	k=1,\ldots,p^{n-j}-1\\p\not\mid k\end{array}} 	\sigma(k)\,\sigma(p^{n-j} - k) \\	&= \sum_{j=0}^{n-1} \sigma(p^j)^2\,f_p(n-j) 	= \sum_{j=0}^{n} \sigma(p^j)^2\, 	\underbrace{f_p(n-j)}_{0\text{ for }j=n} \end{aligned}
+X
+X
+\begin{aligned} 	F_p(X) &= \sum_{n=0}^\infty f_p(n)\,X^n \\	G_p(X) &= \sum_{n=0}^\infty \sigma(p^n)^2\,X^n \\	H_p(X) &= \sum_{n=0}^\infty h_p(n)\,X^n \end{aligned}
+\begin{aligned} 	H_p(X) &= G_p(X)\,F_p(X) \end{aligned}
+H_p(X)
+\begin{aligned} 	H_p(X) &= \sum_{n=0}^\infty h_p(n)\,X^n \\	&= \frac{1}{12 (p^3 - 1)}\left( 	\frac{5p^3}{1 - p^3 X} - \frac{6\,p(p^2+p+1)}{1 - p^2 X} 	+ \frac{(p+6)(p^2+p+1)}{1 - p X} - \frac{(p^2+p+6)}{1 - X}\right) \\	&= \frac{(p^2 - 1)}{12}\,\frac{(5 p - 6) X + p^3 X^2} 	{(1 - p^3 X)(1 - p^2 X)(1 - p X)(1 - X)} \end{aligned}
+G_p(X)
+\begin{aligned} 	G_p(X) &= \sum_{n=0}^\infty \sigma(p^n)^2\,X^n \\	&= \frac{1}{(p - 1)^2}\sum_{n=0}^\infty 	\left(p^{n+1} - 1\right)^2\,X^n \\	&= \frac{1}{(p - 1)^2}\sum_{n=0}^\infty 	\left(p^2\,p^{2n} -2p\,p^n + 1\right)\,X^n \\	&= \frac{1}{(p - 1)^2} \left(\frac{p^2}{1 - p^2 X} 	- \frac{2p}{1 - p X} + \frac{1}{1 - X}\right) \\	&= \frac{1 + p X}{(1 - p^2 X)(1 - p X)(1 - X)} \end{aligned}
+\begin{aligned} 	F_p(X) &= \frac{H_p(X)}{G_p(X)} = \frac{p^2 - 1}{12} 	\,\frac{(5 p - 6) X + p^3 X^2}{(1 - p^3 X)(1 + p X)} \\	&= \frac{1}{12}\,\frac{p^2 - 1}{p^2 + 1} 	\left(\frac{p^2}{1 - p^3 X} + \frac{1}{1 + p X}\right) 	\left((5 p - 6) X + p^3 X^2\right) \\	&= \frac{1}{12}\,\frac{p^2 - 1}{p^2 + 1} 	\Biggl((p^2 + 1)(5 p - 6) X + \\	&\qquad\qquad\qquad \sum_{n=2}^\infty 	\left((5 p - 6) \left(p^{3(n-1)+2} + (-p)^{n-1}\right) 	+ p^3 \left(p^{3(n-2)+2} + (-p)^{n-2}\right)\right) X^n\Biggr) \\	&= \frac{1}{12}\,\frac{p^2 - 1}{p^2 + 1} 	\left((p^2 + 1)(5 p - 6) X + \sum_{n=2}^\infty 	\underbrace{\left(5 (p - 1)\,p^{3n-1} 	- (p - 2)(p - 3)(-p)^{n-1}\right)}_{=(p^2+1)(5p-6)\text{ for }n=1} 	X^n\right) \\	&= \frac{1}{12}\,\frac{p^2 - 1}{p^2 + 1} \sum_{n=1}^\infty 	\left(5 (p - 1)\,p^{3n-1} - (p - 2)(p - 3) (-p)^{n-1}\right) X^n \end{aligned}

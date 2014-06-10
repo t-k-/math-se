@@ -1,0 +1,18 @@
+A\subset\mathbb R^2
+xy
+A:\mathbb R^2\supset U\to A\subset \mathbb R^2, (u,v)\mapsto (x(u,v),y(u,v))
+z
+V = A\times[z_\min,z_\max]
+\oint_{\partial A} d\vec r = \iint_A (d\vec\sigma\times\vec\nabla)
+\int_V dV = \int\limits_{z_\min}^{z_\max}dz\int_Adx\,dy
+\int_{\partial V}d\vec n = \vec e_z\left.\int_A dx\,dy\right|_{z=z_\min}^{z_\max} + \int\limits_{z_\min}^{z_\max}dz\oint_{\partial A}d\vec n_A \quad(d\vec n_A = -\vec e_z\times d\vec r) .
+\vec\gamma:[0,T]\to \Gamma, t\mapsto \vec\gamma(t)
+A(t):(u,v,t)\mapsto \vec\gamma(t) + \frac{d}{dt}\vec\gamma(t)\times(y(u,v),-x(u,v),0)
+|\frac d{dt}\vec\gamma(t)|\equiv 1
+A
+\vec\gamma(t)
+V_\gamma = \cup_{t=0}^{T} A(t).
+r
+R>2r
+z
+\int_V dV = \int_0^T dt D(t)\int_{A(t)}du\,dv

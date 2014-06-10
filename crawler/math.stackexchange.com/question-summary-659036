@@ -1,0 +1,56 @@
+5
+5
+3
+1
+3
+6
+5
+2
+2
+1
+3
+2
+10
+\binom43 \cdot \binom{10}2
+2
+11
+2 \cdot \binom{11}3
+180+330=510
+R(i,j,k)
+B(i,j,k)
+W(i,j,k)
+i
+j
+k
+f(5,5,3).
+f(i,j,k)=\begin{cases} 1 & \text{if } i=j=k=0 \\ \tfrac{1}{2}\big( R(i,j,k)+B(i,j,k)+W(i,j,k) \big) & \text{otherwise,} \end{cases}
+f(5,5,3)=1026
+i
+i_1,i_2,i_3
+1,2,3
+i_3=5-i_1-i_2
+192216
+ \sum_{i_1=0}^5 \sum_{i_2=0}^{5-i_1} \sum_{j_1=0}^5 \sum_{j_2=0}^{5-j_1} \sum_{k_1=0}^3 \sum_{k_2=0}^{3-k_1} f(i_1,j_1,k_1) \times f(i_2,j_2,k_2) \times f(5-i_1-i_2,5-j_1-j_2,3-k_1-k_2) 
+192216
+N_s(r, b, w)
+r
+b
+w
+s \in \{\text{red}, \text{black}, \text{white}\}
+N_s(r, b, w)
+N_{\text{red}}(5, 5, 3) + N_{\text{black}}(5, 5, 3) + N_{\text{white}}(5, 5, 3).
+1026
+N_s
+(r, b, w), (r', b', w'), (r'', b'', w'')
+(5, 5, 3)
+W(x, y, z)
+W(x, y, z) = \dfrac{1}{1-(x+y+z)}
+S(x, y, z)
+u = \frac{x}{1-x}
+x = \frac{u}{1+u}
+W(x, y, z) = S\left(\frac{x}{1-x}, \frac{y}{1-y}, \frac{z}{1-z}\right)
+\begin{align} S(x, y, z)  &= W\left(\frac{x}{1+x}, \frac{y}{1+y} ,\frac{z}{1+z}\right) \\ &= \frac{1}{1-\left(\frac{x}{1+x} + \frac{y}{1+y} + \frac{z}{1+z}\right)}. \end{align}
+x^5y^5z^3
+S(x, y, z)
+x^5y^5z^3
+S(x, y, z)^3

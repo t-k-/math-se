@@ -1,0 +1,16 @@
+I\subset\mathbb{N}
+c_n:=\begin{cases}a_n,&\text{ for }n\in I\\b_n,&\text{ for }n\notin I.\end{cases}
+\sum_{n=1}^{\infty}c_n<\infty?
+S_{-1}=0
+n\ge 0
+n\ge 0
+(a_n)
+(b_n)
+n\ge 0
+S_n=\sum_{k=0}^n 2^{2^k}. 
+I_n=\{k\in\Bbb N: S_{n-1}<k\le S_n\}
+a_k=2^{-2^{2n}-n}\quad\text{and}\quad b_k=2^{-2^{2n}},\quad\text{when}\quad k\in I_{2n};
+a_k=2^{-2^{2n+1}}\quad\text{and}\quad b_k=2^{-2^{2n+1}-n},\quad\text{when}\quad k\in I_{2n+1}.
+I=\bigcup_{n=0}^\infty I_{2n}.
+\sum_{k\in I_{2n}}a_k=\sum_{k\in I_{2n+1}}b_k=2^{-n}\quad\text{and}\quad\sum_{k\in I_{2n+1}}a_k=\sum_{k\in I_{2n}}b_k=1.
+\sum_{n\in I}a_n=2,\quad \sum_{n\notin I}a_n=\infty,\quad\sum_{n\in I}b_n=\infty,\quad\sum_{n\notin I}b_n=2.

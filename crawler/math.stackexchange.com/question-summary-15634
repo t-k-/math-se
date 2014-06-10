@@ -1,0 +1,34 @@
+f
+\xi_n
+[0,1)
+\int_0^1 f(y) dy
+x\in \mathbb{R}
+N\to \infty
+\frac{1}{N}\sum_{n=1}^N f(x+\xi_n)
+x
+f=1_A
+A\subseteq(0,1]
+\frac1N\sum_{n=1}^Nf(x+\xi_n)=\int_0^1f(y)\,dy
+x
+y\mapsto f(x+y)=1_{\{y\in A-x{\rm\ (mod\ 1)}\}}
+M > 0
+B_i=((i-1)/M,i/M]
+A\subseteq(0,1]
+B_i
+\cup_{i\in I}B_i\subseteq A\subseteq\cup_{j\in J}B_j
+I,J\subseteq\{1,2,\ldots,M\}
+I\subseteq J
+J\setminus I
+i\in I
+2/M
+-2/M
+\epsilon > 0
+2/M < \epsilon/2
+N
+\epsilon/2
+\epsilon
+N
+A
+A
+ \frac1N\sum_{n=1}^N 1_A(\xi_n)-\int_0^1 1_A(y)\,dy\le\sum_{i\in J}\left(\frac1N\sum_{n=1}^N 1_{B_i}(\xi_n)-\int_0^1 1_{B_i}(y)\,dy\right) + 2/M. 
+ \left\vert\frac1N\sum_{n=1}^N 1_A(\xi_n)-\int_0^1 1_A(y)\,dy\right\vert\le\sum_{i=1}^M\left\vert\frac1N\sum_{n=1}^N 1_{B_i}(\xi_n)-\int_0^1 1_{B_i}(y)\,dy\right\vert+2/M. 

@@ -1,0 +1,12 @@
+b_{n}=(\sqrt{n+1}-\sqrt{n-1})^{-2}
+\lim_{n\rightarrow\infty}(\frac{n-1}{n+1})^{b_{n}}
+1^\infty
+P_n = (\frac{n-1}{n+1})^{b_n}
+p_n = \log(P_n) = b_n \log(\frac{n-1}{n+1})
+\log(\frac{n-1}{n+1}) = \log(1-\frac{2}{n+1}) \approx -\frac{2}{n+1} + O(\frac{1}{n^2})
+b_n
+b_n = \frac{1}{(\sqrt{n+1}-\sqrt{n-1})^2} = \frac{(\sqrt{n+1}+\sqrt{n-1})^2}{({(n+1)}-{(n-1)})^2} =  \frac{2(n+\sqrt{n^2-1})}{4}
+p_n = \frac{2(n+\sqrt{n^2-1})}{4} (-\frac{2}{n+1}+O(n^{-2}))
+p_n = -\frac{n+\sqrt{n^2-1}}{n+1} + O(n^{-1})
+\lim_{n \to \infty} p_n = -2
+\lim_{n \to \infty} P_n = \exp(-2)

@@ -1,0 +1,26 @@
+a
+b
+c
+q_0
+\Gamma
+\Gamma = \{ b, /, \_\}
+b
+/
+\_
+\Sigma = \{ /, \_ \}
+Q
+Q = \{q_0, q_\textrm{HALT}, q_\textrm{ERR}\}
+q_0
+F = \{q_\textrm{HALT}, q_\textrm{ERR}\}
+\delta
+\begin{align}   \delta(q_0, /)  &= (q_0, /, R)              \\   \delta(q_0, \_) &= (q_\textrm{HALT}, \_, R) \\   \delta(q_0, b)  &= (q_\textrm{ERR}, b, R)   \\ \end{align}
+q_0
+q_1
+q_1
+q_1
+q_\textrm{HALT}
+Q
+Q' = \{q_0, q_1, q_\textrm{HALT}, q_\textrm{ERR}\}
+\delta
+\delta'
+\begin{align}   \delta'(q_0, /)  &= (q_0, /, R) \\   \delta'(q_0, \_) &= (q_1, \_, R) \\   \delta'(q_0, b)  &= (q_\textrm{ERR}, b, R) \\   \\   \delta'(q_1, /)  &= (q_1, /, R) \\   \delta'(q_1, \_) &= (q_\textrm{HALT}, \_, R) \\   \delta'(q_1, b)  &= (q_\textrm{ERR}, b, R) \end{align}

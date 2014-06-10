@@ -1,0 +1,11 @@
+\frac{1}{(z;q)_{\infty}} = \sum^{\infty}_{k=0} \frac{z^k}{(q;q)_k}
+(a;q)_k = \prod_{n=0}^{k-1}(1-aq^n)
+f(z) = 1/(z;q)_{\infty} = \sum_{k = 0}^{\infty}a_{k}z^{k}
+(1 - z)f(z) = f(qz)
+a_{k}(1 - q^{k}) = a_{k - 1}
+a_{0} = 1
+z = 0
+f(z)
+\sum_{k = 0}^{\infty}a_{k}z^{k} - \sum_{k = 0}^{\infty}a_{k}z^{k + 1} = \sum_{k = 0}^{\infty}a_{k}q^{k}z^{k}
+a_{k} = \frac{a_{0}}{(1 - q^{k})(1 - q^{k - 1})\cdots (1 - q)} = \frac{a_{0}}{(q;q)_{k}}
+\frac{1}{(z;q)_{\infty}} = \sum_{k = 0}^{\infty}\frac{z^{k}}{(q;q)_{k}}

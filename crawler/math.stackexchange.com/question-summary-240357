@@ -1,0 +1,91 @@
+n
+D_n = n!\sum_{k=0}^{\infty}\frac{(-1)^k}{k!}
+D_n
+\Phi_D(x) = \sum_{n=0}^{\infty}|D_n|\frac{x^n}{n!}
+d_{n+1}=nd_n+nd_{n-1}
+d_n
+[n]=\{1,\dots,n\}
+\frac{x^n}{n!}
+n\ge 0
+\sum_{n\ge 0}d_{n+1}\frac{x^n}{n!}=\sum_{n\ge 0}nd_n\frac{x^n}{n!}+\sum_{n\ge 0}nd_{n-1}\frac{x^n}{n!}\;.\tag{1}
+D(x)=\sum_{n\ge 0}d_n\frac{x^n}{n!}
+D\,'(x)=\sum_{n\ge 0}nd_n\frac{x^{n-1}}{n!}=\sum_{n\ge 1}d_n\frac{x^{n-1}}{(n-1)!}=\sum_{n\ge 0}d_{n+1}\frac{x^n}{n!}\;,\tag{2}
+xD\,'(x)=x\sum_{n\ge 0}nd_n\frac{x^{n-1}}{n!}=\sum_{n\ge 0}nd_n\frac{x^n}{n!}\;,\tag{3}
+d_{-1}=0
+xD(x)=\sum_{n\ge 0}d_n\frac{x^{n+1}}{n!}=\sum_{n\ge 0}(n+1)d_n\frac{x^{n+1}}{(n+1)!}=\sum_{n\ge 1}nd_{n-1}\frac{x^n}{n!}=\sum_{n\ge 0}nd_{n-1}\frac{x^n}{n!}\;,\tag{4}
+(2),(3)
+(4)
+(1)
+D\,'(x)=xD\,'(x)+xD(x)\;,
+(1-x)D\,'(x)=xD(x)\;.
+\frac{D\,'(x)}{D(x)}=\frac{x}{1-x}=-1+\frac1{1-x}\;,
+D(x)
+K
+k
+[n]
+d_{n-k}
+[n]
+K
+\binom{n}k
+K
+\binom{n}kd_{n-k}
+[n]
+k
+n!
+[n]
+(5)
+n
+\langle 1,1,1,\dots\rangle
+\langle d_n:n\in\Bbb N\rangle
+\sum_{k=0}^n\binom{n}kd_{n-k}=n!\;.\tag{5}
+\left\langle\sum_{k=0}^n\binom{n}kd_{n-k}:n\in\Bbb N\right\rangle=\langle n!:n\in\Bbb N\rangle
+\langle 1,1,1,\dots\rangle
+\langle d_n:n\in\Bbb N\rangle
+\sum_{n\ge 0}n!\frac{x^n}{n!}=\sum_{n\ge 0}x^n=\frac1{1-x}
+\sum_{n\ge 0}1\cdot\frac{x^n}{n!}=e^x\;,
+e^xD(x)=\frac1{1-x}\;,
+D(x)=\frac{e^{-x}}{1-x}\;.
+D_n = n D_{n-1} + (-1)^n
+x^n/n!
+n \geq 0
+G_D(x) = \frac{e^{-x}}{1-x}.
+n!
+k
+n - k
+k
+\binom{n}{k}
+ n! = \sum_{0 \le k \le n} \binom{n}{k} d_{n -k} 
+ \begin{align*} \frac{1}{1 - x} &= G_D(x) e^x \\ G_D(x) &= \frac{e^{-x}}{1 - x} \end{align*} 
+C(z) = \ln\frac1{1-z}
+z
+1
+C(z)
+C_{>1}(z) = \sum_{n \ge 2} (n-1)! \frac{z^n}{n!} = \sum_{n\ge 2}\frac{z^n}{n} = \ln \frac1{1-z} - z
+r
+r
+r=1
+r=0
+\exp\ln\frac1{1-z} = \frac1{1-z}
+D_r(z) = \exp\left(\sum_{n > r} \frac{z^r}r\right) = \frac{e^{-z-z^2/2 - \dots - z^r/r}}{1-z}.
+\mathcal{P}
+\mathcal{Q}
+\mathcal{Q}
+\mathcal{Q} = \mathcal{P} \star \operatorname{S\scriptsize ET}(\mathcal{Z})
+z
+v
+Q(z,v) = \frac1{1-z}e^{zv}
+P(z, u)
+z
+u
+1 + v
+u
+u
+v
+Q(z, v) = P(z, 1 + v)
+P(z, u) = Q(z, u - 1) = \dfrac{e^{z(u-1)}}{1-z}
+u = 0
+D(z) = P(z, 0) = \frac{e^{-z}}{1-z}
+k
+u^k
+\dfrac{z^k}{k!}\dfrac{e^{-z}}{1-z}
+\mathcal{P} = \mathcal{D} \star \operatorname{S\scriptsize ET}(\mathcal{Z}) \implies P(z) = D(z) e^z \implies D(z) = \frac{e^{-z}}{1-z} 

@@ -1,0 +1,19 @@
+\lim_{x\to0} \left(\frac{(1+x)^{1/x}}{e}\right)^{1/\sin x}
+L
+\begin{align*} \ln L&=\ln\lim_{x\to 0}\left(\frac{(1+x)^{1/x}}e\right)^{1/\sin x}\\\\ &=\lim_{x\to 0}\ln\left(\left(\frac{(1+x)^{1/x}}e\right)^{1/\sin x}\right)\\\\ &=\lim_{x\to 0}\left(\frac1{\sin x}\cdot\ln\frac{(1+x)^{1/x}}e\right)\\\\ &=\lim_{x\to 0}\frac{\ln(1+x)^{1/x}-1}{\sin x}\\\\ &=\lim_{x\to 0}\frac{\ln(1+x)-x}{x\sin x} \end{align*}
+\ln L
+L
+L
+\log{L} = \frac{(1/x)\log{(1+x)}-1}{\sin{x}} 
+x^2
+L = \frac{1}{\sqrt{e}}
+f(x)=\left(\frac{(1+x)^{1/x}}{e}\right)^{1/\sin x}
+\lim_{x\rightarrow 0}\ln f(x)=\lim_{x\rightarrow 0}\frac{1}{\sin x}\left(\frac{\ln (1+x)}{x}-1\right)=\lim_{x\rightarrow 0}\frac{1}{\sin x}\left(-\frac{x}{2}+\frac{x^2}{3}-\cdots\right)=-\frac{1}{2}
+\ln(\cdot)
+\lim_{x\rightarrow 0}f(x)=e^{-\frac{1}{2}}=\frac{1}{\sqrt{e}}
+\left(\frac{(1+x)^{1/x}}e\right)^{1/\sin x}=e^{\frac1{\sin x}\left(\log(1+x)^{1/x}-1\right)}
+(1+x)^{1/x}=e^{\frac1x\log(1+x)}\xrightarrow[x\to 0]{}e\;,\;\;\text{by l'Hospital's rule, so :}
+\lim_{x\to 0}\frac{\log(1+x)^{1/x}-1}{\sin x}\stackrel{\text{l'Hospital}}=\lim_{x\to 0}\left(-\frac1{x^2}\log(1+x)+\frac1{x(1+x)}\right)\cdot\frac1{\cos x}=
+=\lim_{x\to 0}\frac{x-(1+x)\log(1+x)}{x^2(1+x)\cos x}\stackrel{\text{l'H}}=\lim_{x\to 0}\frac{1-\log(1+x)-1}{2x(1+x)\cos x+x^2\cos x-x^2(1+x)\sin x}\stackrel{\text{l'H}}=
+=\lim_{x\to 0}-\frac1{(1+x)\left(2\cos x+6x\cos x-4x(1+x)\sin x-2x^2\sin x-x^2(1+x)\cos x\right)}=
+=-\frac1{1\cdot2}=-\frac12

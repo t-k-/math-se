@@ -1,0 +1,12 @@
+g:[0,1]\mapsto\mathbb{R}
+\lim_{x\to0^+}g(x)/x
+\forall f:[0,1]\mapsto\mathbb{R}
+\lim_{n\to\infty}n\int_0^1f(x)g(x^n)dx=f(1)\int_0^1\frac{g(x)}{x}dx
+y=x^n
+x=y^{1/n}
+dy = (1/n) y^{1/n} dy/y
+n \int_0^1 dx \: f(x) g(x^n) = \int_0^1 \frac{dy}{y} y^{1/n} f(y^{1/n}) g(y)
+n \rightarrow \infty
+y^{1/n} \rightarrow 1 \forall y \in (0,1]
+y=0
+\lim_{n \rightarrow \infty} n \int_0^1 dx \: f(x) g(x^n) = f(1) \int_0^1 dy \frac{g(y)}{y}

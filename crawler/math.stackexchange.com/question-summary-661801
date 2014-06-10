@@ -1,0 +1,17 @@
+\lambda>0
+ \mathrm{A}=\left( \begin{array}{cccccc} 1 &e^{-\lambda} & 0 &0 &0 & \dots\\ 1 &e^{-\lambda} & e^{-2\lambda} &0 &0 & \dots\\ 1 &e^{-\lambda} & e^{-2\lambda} &e^{-3\lambda} &0 & \dots\\ \vdots & \vdots & \vdots & & \ddots \end{array} \right) 
+n\times n
+n
+\lambda
+\lambda>0
+ \mathrm{B}=\left( \begin{array}{cccccc} 1 & 1& 0 &0 &0 & \dots\\ e^{-\lambda} &e^{-\lambda} & e^{-\lambda} &0 &0 & \dots\\ e^{-2\lambda} & e^{-2\lambda} &e^{-2\lambda} &e^{-2\lambda} &0 & \dots\\ \vdots & \vdots & \vdots & & \ddots \end{array} \right) 
+\mathrm{A}\mathbf{x} = \eta \mathbf{x}
+\{x_i >0\}
+\eta>0
+A\mathbf{x}= \mu \mathbf{x}
+ x_1 + e^{-\lambda}x_2 = \mu x_1 \\ x_1 + e^{-\lambda}x_2 + e^{-2 \lambda}x_3 = \mu x_2 \\x_1 + e^{-\lambda}x_2 + e^{-2 \lambda}x_3 + e^{-3 \lambda}x_4 = \mu x_3 
+i \geq 1
+\mu x_i + e^{-(i+1)\lambda}x_{i+2} = \mu x_{i+1} \\ \Rightarrow \mu (x_{i+1} - x_i) = e^{-(i+1)\lambda}x_{i+2} 
+e^{-(i+1)\lambda}
+x_i = k^i
+A

@@ -1,0 +1,30 @@
+y=ln(x)
+u_t=x^2u_{xx},\; x\in [0,\infty) ,\; t\in (0,T], \; u(0,x)=u_0(x)
+v_t=v_{yy}-v_y,\; y \in (-\infty, +\infty),\; t\in (0,T],\; v_0(y)=u_0(e^y)
+u(x,t) = v(\log x, t)
+x, \ t
+v
+C^\infty
+\mathbb{R} \times (0,\infty)
+u
+(0,\infty) \times (0, \infty)
+x = 0, \, t > 0
+x = t = 0
+u(t,x)=T(t)X(x)
+T'(t)X(x)=x^2T(t)X''(x)
+\dfrac{T'(t)}{T(t)}=\dfrac{x^2X''(x)}{X(x)}=-\dfrac{4s^2+1}{4}
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\dfrac{4s^2+1}{4}\\x^2X''(x)+\dfrac{4s^2+1}{4}X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\frac{t(4s^2+1)}{4}}\\X(x)=\begin{cases}c_1(s)\sqrt{x}\sin(s\ln x)+c_2(s)\sqrt{x}\cos(s\ln x)&\text{when}~s\neq0\\c_1\sqrt{x}\ln x+c_2\sqrt{x}&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(x,t)=C_1e^{-\frac{t}{4}}\sqrt{x}\ln x+C_2e^{-\frac{t}{4}}\sqrt{x}+\int_0^\infty C_3(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\sin(s\ln x)~ds+\int_0^\infty C_4(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds
+u(0,x)=u_0(x)
+C_1\sqrt{x}\ln x+C_2\sqrt{x}+\int_0^\infty C_3(s)\sqrt{x}\sin(s\ln x)~ds+\int_0^\infty C_4(s)\sqrt{x}\cos(s\ln x)~ds=u_0(x)
+C_1\ln x+C_2+\int_0^\infty C_3(s)\sin(s\ln x)~ds+\int_0^\infty C_4(s)\cos(s\ln x)~ds=\dfrac{u_0(x)}{\sqrt{x}}
+\int_0^\infty C_4(s)\cos(s\ln x)~ds=\dfrac{u_0(x)}{\sqrt{x}}-C_1\ln x-C_2-\int_0^\infty C_3(s)\sin(s\ln x)~ds
+\int_0^\infty C_4(s)\cos xs~ds=e^{\frac{x}{2}}u_0(e^x)-C_1x-C_2-\int_0^\infty C_3(s)\sin xs~ds
+\mathcal{F}_{c,s\to x}\{C_4(s)\}=e^{\frac{x}{2}}u_0(e^x)-C_1x-C_2-\mathcal{F}_{s,s\to x}\{C_3(s)\}
+C_4(s)=\mathcal{F}^{-1}_{c,x\to s}\{e^{\frac{x}{2}}u_0(e^x)\}+C_1\delta'(s)-C_2\delta(s)-\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_3(s)\}\}
+\therefore u(x,t)=C_1e^{-\frac{t}{4}}\sqrt{x}\ln x+C_2e^{-\frac{t}{4}}\sqrt{x}+\int_0^\infty C_3(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\sin(s\ln x)~ds+\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{e^{\frac{x}{2}}u_0(e^x)\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds+\int_0^\infty C_1\delta'(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds-\int_0^\infty C_2\delta(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_3(s)\}\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds=C_1e^{-\frac{t}{4}}\sqrt{x}\ln x+C_2e^{-\frac{t}{4}}\sqrt{x}+\int_0^\infty C_3(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\sin(s\ln x)~ds+\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{e^{\frac{x}{2}}u_0(e^x)\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds-C_1e^{-\frac{t}{4}}\sqrt{x}\ln x-C_2e^{-\frac{t}{4}}\sqrt{x}-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_3(s)\}\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds=\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{e^{\frac{x}{2}}u_0(e^x)\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds+\int_0^\infty C_3(s)e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\sin(s\ln x)~ds-\int_0^\infty\mathcal{F}^{-1}_{c,x\to s}\{\mathcal{F}_{s,s\to x}\{C_3(s)\}\}e^{-\frac{t(4s^2+1)}{4}}\sqrt{x}\cos(s\ln x)~ds
+u(t,x)
+x\in[0,\infty)
+v(t,y)
+y\in(-\infty,\infty)

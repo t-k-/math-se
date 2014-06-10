@@ -1,0 +1,28 @@
+f
+f'(t)=f(kt)
+t>0
+0<k<1
+f(0)=1
+f(t)=\sum_{n=0}^{\infty}\frac{k^{n(n-1)/2}}{n!}t^n
+f'(t)=f(kt)
+n=0
+n=1
+n\ge 1
+f^{(n)}(0)=k^{\frac{n(n-1)}{2}}
+f^{(n)}(t)=k^{\frac{n(n-1)}{2}}f(k^nt)
+f^{(n+1)}(0)=k^{\frac{n(n-1)}{2}}\left(f(k^nt)\right)'=k^{\frac{n(n-1)}{2}+n}f(k^{n+1}t)=k^{\frac{n(n+1)}{2}}f(k^{n+1}t)
+f(t)=\sum\limits_{n=0}^\infty a_nt^n
+\sum\limits_{n=0}^\infty na_nt^{n-1}=\sum\limits_{n=0}^\infty a_n(kt)^n
+\sum\limits_{n=1}^\infty na_nt^{n-1}-\sum\limits_{n=0}^\infty k^na_nt^n=0
+\sum\limits_{n=1}^\infty na_nt^{n-1}-\sum\limits_{n=1}^\infty k^{n-1}a_{n-1}t^{n-1}=0
+\sum\limits_{n=1}^\infty(na_n-k^{n-1}a_{n-1})t^{n-1}=0
+\therefore na_n-k^{n-1}a_{n-1}=0
+a_n=\dfrac{k^{n-1}a_{n-1}}{n}
+\therefore\begin{cases}a_0=a_0\\a_n=\dfrac{(k^0k^1k^2......k^{n-1})a_0}{1\times2\times3\times......n}\forall n\in\mathbb{N}\end{cases}
+\begin{cases}a_0=a_0\\a_n=\dfrac{k^{0+1+2+......+(n-1)}a_0}{n!}\forall n\in\mathbb{N}\end{cases}
+\begin{cases}a_0=a_0\\a_n=\dfrac{k^{\frac{n(n-1)}{2}}a_0}{n!}\forall n\in\mathbb{N}\end{cases}
+a_n=\dfrac{k^{\frac{n(n-1)}{2}}a_0}{n!}\forall n\in\mathbb{Z}^*
+\therefore f(t)=C\sum\limits_{n=0}^\infty\dfrac{k^{\frac{n(n-1)}{2}}t^n}{n!}
+f(0)=1
+C=1
+\therefore f(t)=\sum\limits_{n=0}^\infty\dfrac{k^{\frac{n(n-1)}{2}}t^n}{n!}

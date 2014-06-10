@@ -1,0 +1,41 @@
+V(x)=a+b^{T}x+\frac{1}{2}x^{T}Cx
+a \in \mathbb{R}, b \in \mathbb{R}^{n}, C \in \mathbb{R}^{nxn}
+V
+C>0
+V
+x = \left( {{x_1}, \ldots ,{x_n}} \right) \in {\mathbb{R}^n}
+V = V\left( x \right) = V\left( {{x_1}, \ldots ,{x_n}} \right).
+V\left( x \right) = a + {b^T}x + \frac{1}{2}{x^T}Cx = a + \sum\limits_{i = 1}^n {{b_i}{x_i}}  + \frac{1}{2}\sum\limits_{i = 1}^n {\sum\limits_{j = 1}^n {{c_{ij}}{x_i}{x_j}} } 
+\frac{\partial }{{\partial {x_k}}}V\left( x \right) = {b_k} + \frac{1}{2} \cdot 2\sum\limits_{i = 1}^n {{c_{ki}}{x_i}} 
+\frac{\partial }{{\partial {x_l}}}\left( {\frac{\partial }{{\partial {x_k}}}V\left( x \right)} \right) = {c_{kl}}
+V
+{\left( {{H_V}\left( x \right)} \right)_{i,j}} = \frac{\partial }{{\partial {x_j}}}\left( {\frac{\partial }{{\partial {x_i}}}V\left( x \right)} \right)
+{H_V}\left( x \right) = C.
+V
+C
+C
+\{ v_{1},\cdots,v_{n}\}
+\{\lambda_{1},\cdots,\lambda_{n}\}
+\lambda_{k}
+C \ge 0
+\lambda_{k}=0
+k
+V
+\beta_{k}\ne 0
+(V-a)=\beta_{k}\alpha_{k}
+\alpha_{k}
+\alpha_{j}
+\lambda_{k}=0
+\beta_{k}=0
+\alpha_{k}
+V
+C > 0
+\alpha_{j}\ne 0
+j
+K
+\alpha_{j}
+\lambda_{j} > 0
+j
+      V(\alpha_{1}v_{1}+\cdots+\alpha_{n}v_{n})=a+\sum_{j=1}^{n}\beta_{j}\alpha_{j}+\frac{1}{2}\sum_{j=1}^{n}\lambda_{j}\alpha_{j}^{2}, \; \mbox{ where } \beta_{j}=b^{T}v_{j}. 
+ \lim_{\alpha_{k}\rightarrow\infty}V(\cdots)=-\infty .
+               V(\alpha_1 v_1+\cdots+\alpha_n v_n)=\sum_{j=1}^{n}\lambda_j\left(\alpha_j+\frac{\beta_{j}}{2\lambda_{j}}\right)^{2}+K, 

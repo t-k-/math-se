@@ -1,0 +1,86 @@
+L_{n}=\sqrt[n+1] {(n+1)!} - \sqrt[n] {n!}, \space n\in \mathbb N
+\ell_n = \left(n!\right)^{1/n}
+n \in \mathbb{N}
+\ell_n > 0
+(1)
+x_n
+\frac{\ell_{n+2}}{\ell_{n+1}} + \frac{\ell_n}{\ell_{n+1}} < 2 \tag{1}
+     x_n = \log \frac{\ell_{n+1}}{\ell_n} = \frac{1}{n+1} \left( \log(n+1) - \frac{1}{n} \sum_{k=1}^n \log(k) \right) 
+    2 > \exp(x_{n+1}) + \exp(-x_n) = 2 \exp\left(\frac{x_{n+1}-x_n}{2}\right) \cosh \left(\frac{x_{n+1}+x_n}{2}\right) \tag{2} 
+    x_n = \frac{1}{n+1} \left( \log\left(\frac{n+1}{n}\right) - \underbrace{\frac{1}{n} \sum_{k=1}^n \log\left(\frac{k}{n}\right)}_{\text{denote this as } s_n} \right)  
+     \frac{x_{n+1}-x_n}{2} = \frac{1}{2(n+2)} \log\left(1+\frac{1}{n+1}\right) - \frac{1}{(n+1)(n+2)} \left( \log\left(1+\frac{1}{n} \right) - s_n  \right) \tag{3} 
+   \frac{x_{n+1}+x_n}{2} =   \frac{1}{2(n+2)} \log\left(1+\frac{2}{n}\right)+ \frac{1}{2(n+2)} \log\left(1+\frac{1}{n}\right) - \frac{1}{n+2} s_n   \tag{4} 
+a_k = \frac{k}{n}
+b_k = \log \frac{k}{n}
+\int_0^1 \frac{\mathrm{d}x}{k+x} = \log\left(1+\frac{1}{k}\right)
+x \to 1-x
+    \sum_{k=1}^n \left(a_{k+1}-a_k\right) b_k = a_{n+1} b_n - a_1 b_1 -\sum_{k=1}^{n-1} a_{k+1} \left(b_{k+1} - b_k \right) 
+ \begin{eqnarray}   s_n &=& 0 - \frac{\log n^{-1}}{n} - \sum_{k=1}^{n-1} \frac{k+1}{n} \log\left(1+\frac{1}{k}\right) \\ &=& -\frac{n-1}{n} + \frac{1}{2} \frac{\log(n)}{n} - \frac{1}{n} \sum_{k=1}^{n-1} \left( \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 \right) \end{eqnarray} 
+    \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 = \int_0^1 \left(\frac{k+\frac{1}{2}}{k+x}-1\right) \mathrm{d}x = \int_0^1 \frac{1-2x}{2(k+x)} \mathrm{d}x 
+\begin{eqnarray}    \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 &=& \int_0^1 \frac{ \left(x-\frac{1}{2}\right)^2}{(k+x)(k+1-x)} \mathrm{d}x \\ &=& \int_{-\frac{1}{2}}^{\frac{1}{2}} \frac{ u^2}{\left(k+\frac{1}{2}\right)^2 - u^2 } \mathrm{d} u  \end{eqnarray} 
+  \int_{-\frac{1}{2}}^{\frac{1}{2}} \frac{ u^2}{\left(k+\frac{1}{2}\right)^2 } \mathrm{d} u  < \int_{-\frac{1}{2}}^{\frac{1}{2}} \frac{ u^2}{\left(k+\frac{1}{2}\right)^2 - u^2 } \mathrm{d} u  < \int_{-\frac{1}{2}}^{\frac{1}{2}} \frac{ u^2}{\left(k+\frac{1}{2}\right)^2 - \frac{1}{4} } \mathrm{d} u 
+   \frac{1}{12} \frac{1}{\left(k+\frac{1}{2}\right)^2} <     \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1   < \frac{1}{12 k(k+1)} = \frac{1}{12 k} - \frac{1}{12 (k+1)} 
+\frac{1}{12} \frac{1}{\left(k+\frac{1}{2}\right)^2} > \frac{1}{12} \frac{1}{\left(k+\frac{1}{2}\right) \left(k+\frac{3}{2}\right)} = \frac{1}{12} \frac{1}{k+\frac{1}{2}} - \frac{1}{12} \frac{1}{k+\frac{3}{2}} 
+ \sum_{k=1}^{n-1} \left( \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 \right)
+c
+\frac{1}{18} < c < \frac{1}{12}
+s_n
+-1
+n
+    \sum_{k=1}^{n-1} \left( \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 \right) < \sum_{k=1}^{n-1} \left( \frac{1}{12 k} - \frac{1}{12 (k+1)}  \right) = \frac{1}{12} - \frac{1}{12 n} < \frac{1}{12} 
+   \sum_{k=1}^{n-1} \left( \left(k + \frac{1}{2} \right) \log\left(1+\frac{1}{k}\right) - 1 \right) > \sum_{k=1}^{n-1} \left( \frac{1}{12 \left(k+\frac{1}{2}\right)} -\frac{1}{12 \left(k+\frac{3}{2}\right)}  \right) = \frac{1}{18} - \frac{1}{6 (2n+1)} = \frac{1}{9} \frac{n-1}{2n+1} 
+   -\frac{n-1}{n} + \frac{\log(n)}{2n} - \frac{1}{12 n}  < s_n < -\frac{n-1}{n} + \frac{\log(n)}{2n} - \frac{1}{9} \frac{n-1}{n (2n+1)} \tag{5} 
+     s_n = -1 + \frac{\log(n)}{2n} + \mathcal{O}\left(n^{-1}\right) 
+\frac{x_{n+1}-x_n}{2} = \mathcal{O}\left(n^{-2}\right)
+\frac{x_{n+1}+x_n}{2} = \mathcal{O}\left(n^{-1}\right)
+n
+ \begin{eqnarray}     2 \exp\left(\frac{x_{n+1}-x_n}{2}\right) \cosh \left(\frac{x_{n+1}+x_n}{2}\right) &<& 2 \frac{1}{1-\frac{x_{n+1}-x_n}{2}} \frac{1}{1-\frac{1}{2} \left(\frac{x_{n+1}+x_n}{2}\right)^2} \\ &=& 2 + 2\left(\frac{x_{n+1}-x_n}{2}\right) + \left(\frac{x_{n+1}+x_n}{2}\right)^2 + \mathcal{o}\left(n^{-3}\right) \\    &=& 2 - \frac{1}{2 n^3} + \mathcal{o}\left(n^{-3}\right) \end{eqnarray} 
+n
+L_n
+a_n=\sqrt[n]{n!}
+n\in\mathbb N
+L_n=a_{n+1}-a_n
+n\in\mathbb N
+K_n=\frac{L_n}{a_n}
+K_n=\frac{a_{n+1}}{a_n}-1
+n
+L_{n}=\sqrt[n+1] {(n+1)!} - \sqrt[n] {n!}<L_{n+1}=\sqrt[n+2] {(n+2)!} - \sqrt[n+1] {(n+1)!}
+\sqrt[n+1] {(n+1)!} <{\sqrt[n+2] {(n+2)!} + \sqrt[n] {n!} \over 2}
+\sqrt {\sqrt[n+2] {(n+2)!} \sqrt[n] {n!}} <{\sqrt[n+2] {(n+2)!} + \sqrt[n] {n!} \over 2},\space \dots \space \sqrt[n+2] {(n+2)!} \neq\sqrt[n] {n!}
+\sqrt[n] {n!}
+ 1 .. n 
+\sqrt[n+1] {(n+1)!}
+ 1 .. (n+1) 
+n
+\ell_n = \sqrt[n]{n!}
+\ell_n
+n
+-L_{n-1}
+ \ell_{n+1} > \ell_{n} >0, \quad \mbox{ for all } n, 
+ L_n = \ell_{n+1}-\ell_{n} > 0, \quad \mbox{ for all } n, 
+ \frac{\ell_{n+1}}{\ell_n}-1 > 0, \quad \mbox{ and } \quad \frac{\ell_{n}}{\ell_{n+1}}-1<0, \quad \mbox{ for all } n. 
+ \frac{\ell_{n+1}}{\ell_n}-1>0>\frac{\ell_{n-1}}{\ell_n}-1. 
+ \frac{ \frac{\ell_{n+1}}{\ell_n}-1 }{ \frac{\ell_{n-1}}{\ell_n}-1 } > 1. 
+ \frac{\ell_{n+1}-\ell_{n}}{\ell_{n-1}-\ell_n}=\frac{L_n}{-L_{n-1}}. 
+ L_n < L_{n-1}. 
+\sqrt[n+1]{(n+1)n!}-\sqrt[n]{n!}
+\sqrt[n+1]{n!}*\color{red}{\sqrt[n+1]{n+1}}-\sqrt[n]{n!}
+\sqrt[n]{n}=b
+b \geq 1
+n^n<(n+1)^{(n+1)} \forall n \in [0,1[
+\sqrt[n+1]{n!}*\color{red}{1}-\sqrt[n]{n!}
+\sqrt[n+1]{n!}-\sqrt[n]{n!}
+\sqrt[n+1]{n!}
+\sqrt[n]{n!}
+n
+n+1
+n+1
+n
+\sqrt[2]{x}
+x
+\sqrt[2]{100}
+\sqrt[2]{10000}
+\sqrt[x]{x}
+\sqrt[x]{x}
+\sqrt[x]{x!}
+\sqrt[n+1]{(n+1)!}

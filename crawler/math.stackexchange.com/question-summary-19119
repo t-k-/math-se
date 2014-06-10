@@ -1,0 +1,91 @@
+\pi
+\int_{0}^{1} \!\sqrt{1-x^2} \ dx
+U_1,U_2,\ldots
+[0,1]
+Y_i = f(U_i)
+f(x)=\sqrt{1-x^2}
+0 \leq x \leq 1
+n
+ \frac{{\sum\nolimits_{i = 1}^n {Y_i } }}{n} \approx \int_0^1 {f(x)\,{\rm d}x = } \int_0^1 {\sqrt {1 - x^2 } \,{\rm d}x}  = \frac{\pi }{4}. 
+U_1,U_2,\ldots
+[0,1]
+f
+[0,1]
+\int_0^1 {|f(x)|\,{\rm d}x}  < \infty
+\int_0^1 {f(x)\,{\rm d}x}
+Y_i = f(U_i)
+Y_i
+\mu
+\bar Y_n  = \frac{{\sum\nolimits_{i = 1}^n {Y_i } }}{n}
+1
+\mu
+n \to \infty
+1
+\bar Y_n  \to \int_0^1 {f(x)\,{\rm d}x}
+n \to \infty
+ \mu = {\rm E}[Y_1] = {\rm E}[f(U_1)] = \int_0^1 {f(x)\,{\rm d}x}. 
+f
+[0,1]
+ \int_0^1 {f^2 (x)\,{\rm d}x}  < \infty 
+Y_i
+\sigma_2
+\bar Y_n 
+Y_i
+\bar Y_n 
+\varepsilon > 0
+n
+\bar Y_n
+\int_0^1 {f(x)\,{\rm d}x}
+\varepsilon
+ \sigma^2 = {\rm Var}[Y_1] = {\rm E}[Y_1^2] - {\rm E}^2{[Y_1]} = {\rm E}[f^2{(U_1)}] - {\rm E}^2{[f(U_1)]} =  \int_0^1 {f^2 (x) \,{\rm d}x}  - \bigg[\int_0^1 {f(x)\,{\rm d}x} \bigg]^2 . 
+ {\rm E}[\bar Y_n] = \mu. 
+ {\rm Var}[\bar Y_n] = {\rm Var}\bigg[\frac{{Y_1  +  \cdots  + Y_n }}{n}\bigg] = \frac{1}{{n^2 }}{\rm Var}[Y_1  +  \cdots  + Y_n ] = \frac{n}{{n^2 }}{\rm Var}[Y_1 ] = \frac{{\sigma ^2 }}{n}. 
+ {\rm P}\big[\big|\bar Y_n - {\rm E}[\bar Y_n]\big| \geq \varepsilon \big] \leq \frac{{{\rm Var}[\bar Y_n]}}{{\varepsilon ^2 }}, 
+ {\rm P}\big[\big|\bar Y_n - \mu \big| \geq \varepsilon \big] \leq \frac{{\sigma^2}}{{n \varepsilon ^2 }}, 
+ {\rm P}\bigg[\bigg|\bar Y_n -  \int_0^1 {f(x)\,{\rm d}x} \bigg| \geq \varepsilon \bigg] \leq \frac{1}{{n \varepsilon ^2 }} \bigg \lbrace \int_0^1 {f^2 (x) \,{\rm d}x}  - \bigg[\int_0^1 {f(x)\,{\rm d}x} \bigg]^2 \bigg \rbrace. 
+f(x)=\sqrt{1-x^2}
+\bar Y_n  = \frac{{\sum\nolimits_{i = 1}^n {\sqrt {1 - U_i^2 } } }}{n}
+ {\rm P}\Big[\Big|\bar Y_n - \frac{\pi }{4} \Big| \geq \varepsilon \Big] \leq \frac{1}{{n \varepsilon ^2 }} \bigg \lbrace \int_0^1 {(1 - x^2) \,{\rm d}x}  -  \frac{\pi^2 }{16} \bigg \rbrace  = \frac{1}{{n \varepsilon ^2 }} \bigg \lbrace  \frac{2}{3} -  \frac{\pi^2 }{16} \bigg \rbrace < \frac{1}{{20n\varepsilon ^2 }}, 
+f(x)=\sqrt{1-x^2}
+0 \leq x \leq 1
+(X_1,Y_1),(X_2,Y_2),\ldots
+[0,1] \times [0,1]
+i
+X_i
+Y_i
+[0,1]
+Z_i
+Z_i = 1
+X_i^2 + Y_i^2 \leq 1
+Z_i = 0
+X_i^2 + Y_i^2 > 1
+Z_i
+\mu
+{\rm P}[(X_1,Y_1) \in A] = {\rm area}A
+A \subset [0,1]^2
+ \mu = {\rm E}[Z_1] = {\rm P}[X_1^2 + Y_1^2 \leq 1] = {\rm P}\big[(X_1,Y_1) \in \lbrace (x,y) \in [0,1]^2 : x^2+y^2 \leq 1\rbrace \big] = \frac{\pi }{4},  
+\bar Z_n  = \frac{{\sum\nolimits_{i = 1}^n {Z_i } }}{n}
+1
+\mu
+n \to \infty
+1
+\bar Z_n  \to \frac{\pi }{4}
+n \to \infty
+Z_i
+\sigma^2
+\bar Z_n 
+{\rm E}[\bar Z_n] = \mu
+{\rm Var}[\bar Z_n] = \sigma^2 / n
+\varepsilon > 0
+ \sigma^2 = {\rm Var}[Z_1] = {\rm E}[Z_1^2] - {\rm E}^2{[Z_1]} = \frac{\pi }{4} - \Big(\frac{\pi }{4}\Big)^2 = \frac{\pi }{4} \Big(1 - \frac{\pi }{4}\Big) < \frac{10}{59}. 
+ {\rm P}\big[\big|\bar Z_n - \mu \big| \geq \varepsilon \big] \leq \frac{{\sigma^2}}{{n \varepsilon ^2 }}, 
+ {\rm P}\bigg[\bigg|\bar Z_n - \frac{\pi }{4}  \bigg| \geq \varepsilon \bigg] < \frac{{10}}{{59n\varepsilon ^2 }}. 
+\pi
+x
+\int_0^1x\sqrt{10}dx=\frac{\sqrt{10}}{2}
+\int_0^1 f(x)dx
+(x,y)
+0\le x\le 1
+0\le y \le y_{max}
+f(x)\le y
+x y_{max}

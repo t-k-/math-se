@@ -1,0 +1,40 @@
+u
+{\frac{3}{2}}\left(\frac{\sin4u}{4}+\frac{3u}{4}\right)
+\frac{3\sin(64x)}{8} + \frac{9x}{8}
+\cos 2u = 2\cos^2 u -1
+ \cos^4 u = \frac{\frac{\cos 4u +1}{2}+1}{2} = \frac{\cos 4u}{4} + \frac{3}{4}
+\cos^2 2v = (\cos 4v +1)/2
+\cos 2v = 2\cos^2 v - 1
+ \cos^2 v = \frac{1 + \cos 2v}{2}
+ \cos^4 v = \frac{ 1 + 2\cos 2v + \cos^2 2v }{4} 
+ \cos^4 v = \frac{ 1 + 2\cos 2v + \frac{1 + \cos 4v}{2}}{4}
+ \cos^4 v = \frac{3}{8} + \frac{1}{2}\cos(2u) + \frac{1}{8}\cos(4u)
+~~~\rightarrow ~~~ \dfrac{96}{6} \displaystyle\int \cos^{4} (16x)\ dx
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\dfrac{96}{6}\displaystyle\int \cos^{4} (16x)\ dx
+~u =16x
+du=16\ dx
+dx=\dfrac{1}{16}\ du
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\dfrac{96}{6}\cdot \dfrac{1}{16}\displaystyle\int \cos^{4} (u)\ du
+m \in \mathbb{N}
+\int \cos^{m}(u) dx = \dfrac{1}{m} \cos^{m-1}(u) \sin (u) + \dfrac{m-1}{m} \int \cos^{m-2}(u)\ dx,~ \text{where }~ m = 4,~\text{gives}:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{96}{6}\cdot \dfrac{1}{16} \Bigg[\dfrac{1}{4} \cos^{3}(u) \sin (u) + \dfrac{3}{4} \displaystyle\int \cos^{2} (u)\ dx \Bigg]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{4} \displaystyle\int \cos^{2} (u)\ dx 
+\cos^{2}(u)
+\cos^{2}(u)=\dfrac{1}{2}+\dfrac{1}{2}\cos (2u)
+u
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{4}\displaystyle\int \dfrac{1}{2}+\dfrac{1}{2}\cos (2u)\ du
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{4} \Bigg[ \dfrac{1}{2} \displaystyle\int \! \ du + \dfrac{1}{2} \int \cos (2u)\ du \Bigg]
+~w =2u
+dw=2\ du
+du=\dfrac{1}{2}\ dw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} \displaystyle\int \ du + \dfrac{1}{2}\cdot \dfrac{1}{2}\cdot \dfrac{3}{4} \int \cos (w)\ dw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} u + \dfrac{3}{16} \sin (w) + K
+w
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} u + \dfrac{3}{16} \sin (2u) + K
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} u + \dfrac{3}{16} \cdot 2\sin (u)\cos (u) + K
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} u + \dfrac{3}{8} \sin (u)\cos (u) + K
+u
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} \cdot (16x) + \dfrac{3}{8} \sin (16x) \cos (16x) + K
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\Rightarrow~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + \dfrac{3}{8} \cdot (16x) + \dfrac{3}{8}\cdot \dfrac{1}{2} \sin (32x) + K
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\therefore~\dfrac{1}{4} \cos^{3} (16x) \sin (16x) + 6x + \dfrac{3}{16} \sin (32x) + K.~~~~~~~~~~~~~~~~~~~~~~~~\blacksquare
+\dfrac{1}{4}\Bigg[\cos^{3}(16x) \sin (16x) + \dfrac{3}{4}\sin (32x) + 24x\Bigg] + K.

@@ -1,0 +1,79 @@
+f
+\|\nabla f(x)-\nabla f(y)\|\leq L\|x-y\|
+f
+0
+f
+f(x)\geq\frac{1}{2L}\|\nabla f(x)\|^2
+\forall x
+f
+\mathbb{R}^n
+f^* = \inf_{y \in \mathbb{R}^n} f(y)
+f^* = 0
+f^*
+\nabla f(x)
+L
+f
+x,y \in \mathbb{R}^n
+x \in \mathbb{R}^n
+f^*
+f(x) -\frac{1}{2L} \| \nabla f(x) \|^2
+f
+\phi:\mathbb{R}\to [0,\infty)
+\phi'
+L
+\phi(y) = \phi(x)+\phi'(x)(y-x) + \int_x^y (\phi'(t)-\phi'(x) )dt \leq \phi(x)+\phi'(x)(y-x) + L\int_x^y |t-x|dt
+\phi(y) \leq \phi(x)+\phi'(x)(y-x) + \frac{L}{2} (y-x)^2
+\phi(t) \geq 0
+\phi(x)+\phi'(x)(y-x) + \frac{L}{2} (y-x)^2 \geq 0
+x,y
+y
+\phi(x) \geq \frac{1}{2L} (\phi'(x))^2
+f
+x\neq y
+\phi(t) = \frac{f(y+t(x-y))}{\|x-y\|^2} 
+\phi'(t) = \frac{\partial f(y+t(x-y))}{\partial x}\frac{(x-y)}{\|x-y\|^2}
+|\phi'(t)-\phi'(s)|\leq L|t-s|
+\phi(1) \geq \frac{1}{2L} (\phi'(1))^2
+f(x) \geq \frac{1}{2L} |\frac{\partial f(x)}{\partial x}\frac{(x-y)}{\|x-y\|}|^2
+x\neq y
+\|v\| = \max_{\|u\|=1} |v^T u|
+f(x) \geq \frac{1}{2L} \|\frac{\partial f(x)}{\partial x}\|^2
+f : {\bf R}^n \rightarrow {\bf R}
+ f(0)=0
+f
+c(t) = tx
+|x|=1
+h(t)=f(c(t))
+h''(t) = (\nabla f(tx)\cdot x)' = x^T 
+(f)(tx) x
+h(0) =0 
+ | \nabla f (y) - \nabla f(tx) |(1/|y-tx|) \leq L
+lim_{y\rightarrow tx}|Hess(f)(tx) (y-tx)|(1/|y-tx|) \leq L
+|Hess(f)| \leq nL
+|(a_{ij})|^2 = \sum_{i,j} a_{ij}^2
+ \sum_{i,j} |a_{ij}| \leq C(n)L
+C(n) 
+n
+0\leq h''(t) \leq D(n)
+t
+ D
+h''(t) = h''(0)+ \sum_{k=1} \frac{1}{k!} h^{(k+2)}(0)t^k
+0\leq h''(0)+ \sum_{k=1} \frac{1}{k!} h^{(k+2)}(0)t^k \leq D(n)
+0\leq \frac{ h''(0)}{t} + \sum_{k=1} \frac{1}{k!} h^{(k+2)}(0)t^{k-1} \leq \frac{D(n)}{t}
+t \rightarrow \infty
+h^{(k)}=0
+k\geq 3
+h(t) = at^2+bt
+a \geq 0
+|\nabla f (tx) | \leq L |tx|
+ h'(t) \leq L|t||x|^2=L|t|
+b=0
+a(x)=\frac{1}{2} x^T
+(f)(0) x
+f(x) =\frac{1}{2} x^T Hess(f)(0) x
+\nabla f(x) = 
+(f)(0) x
+\lambda_i (\lambda_i \leq \lambda_{i+1})
+(f)(0)
+\lambda_n \leq L
+ |Hess(f)(0) x|^2 \leq L |x^T Hess(f)(0) x|

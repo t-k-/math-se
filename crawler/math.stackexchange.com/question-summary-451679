@@ -1,0 +1,23 @@
+X_m
+ Energy = f(X) = \frac{1}{2}||I-\sum_{m=1}^{M}{C_m * X_m}||_2^2+\sum_{m=1}^{M}{||X_m-\phi(W_m * I)||_2^2}+\lambda|X|_1 
+ X_{min}=\arg{ \min_x{f(X_m)}} 
+I:
+C_1 ... C_M:
+W_1 ... W_m:
+X_1 ... X_m:
+C_m * X_m:
+C_m
+X_m
+W_m * I:
+W_m
+I
+\phi(...):
+||...||_2
+|...|_1:
+ X_n=X_n-\nabla{f(X_n)}  
+ \nabla{f(X_n)} = C_n^{'} * (I-\sum_{m=1}^M C_m * X_m) + (X_n - \phi(W_n * I)) 
+C_n^{'} * z:
+180^{\circ}
+C_n
+X
+X

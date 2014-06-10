@@ -1,0 +1,16 @@
+p
+n
+E(X) = np
+V(X) = E[(X-E(X))^{2}]
+= E(X^{2})-[E(X)]^{2}
+= p - p^{2}
+= p(1-p)
+s = \sqrt{\frac{V(X)}{n}}
+= \sqrt{\frac{p(1-p)}{n}}
+= \sqrt{\frac{np(1-p)}{n^{2}}}
+= \frac{\sqrt{np(1-p)}}{n}
+SE = ns = \sqrt{np(1-p)}
+\sqrt{1000\times0.32(1-0.32)} = 14.75
+SE = \sqrt{np(1-p)}\sqrt{\frac{N-n}{N-1}}
+= 14.75\times \sqrt{\frac{50000-1000}{50000-1}}
+= 14.60

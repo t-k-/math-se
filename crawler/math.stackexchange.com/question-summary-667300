@@ -1,0 +1,11 @@
+(x_n)
+(y_n)
+x_{n+1}=\dfrac{2x_n}{x_n+y_n}=\dfrac{y_{n+1}\Big(x_{n+1}+y_n\Big)}{2} , \forall n\in \mathbb N
+(x_n) , (y_n)
+p_n=\dfrac{y_n}{x_n} \to p_{n+1}=\dfrac{2(p_n+1)}{1+p_{n-1}+p_n(p_n+1)}
+s_n=p_n-1 \to s_{n+1}=-\dfrac{s^2_n+3s_n}{s^2_n+3s_n+s_{n-1}+4}
+|s_{n+1}|<|s_n|
+n >K \implies \lim_{n\to \infty}s_n=0
+s_{n-1}<-4
+s_{n+3}>-4
+s_{n-1}>-4 \to |s_{n+1}|<1 \to |s_{n+1}|<|s_n|

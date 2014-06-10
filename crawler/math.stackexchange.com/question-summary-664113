@@ -1,0 +1,51 @@
+f(n-1)
+5f(n-2)
+f(n-3)-f(n-4)
+f(i,mask) = \begin{cases} 0 &\mbox{if } i = n, mask \neq 0 \\ 1 & \mbox{if } i = n, mask = 0. \\ \sum f(i+1,mask') &\mbox{else} \end{cases}
+4\times n
+f(n)
+4\times (n-1)
+4\times n
+4\times n
+f(n-1)
+4\times n
+f(n-2)
+4\times n
+f(n-2)
+f(n-1)+4f(n-2)
+f_T(k)
+4\times k
+f_{\{F,G,H\}}(n)
+f
+f(n)=f(n-1)+4f(n-2)+f_{\{F,G,H\}}(n)\textrm.
+f_{\{F,G,H\}}(n)=f_{\{F\}}(n)+f_{\{G\}}(n)+f_{\{H\}}(n)
+f(k)=f_{\{A,B,C,D,E,F,G,H\}}(k)
+4\times (n)
+4\times (n-2)
+f_F(n)
+4\times (n-2)
+f_F(n)=f_{\{B,F\}}(n-2)
+f_G(n)=f_{\{A,D,H\}}(n-2)
+f_H(n)=f_{\{A,C,G\}}(n-2)
+\begin{align*} f(n)&=f(n-1)+4f(n-2)+f_{\{B,F\}}(n-2)+f_{\{A,D,H\}}(n-2)+f_{\{A,C,G\}}(n-2)\\ &=f(n-1)+4f(n-2)+f_{\{A,B,C,D,F,G,H\}}(n-2)+f_{\{A\}}(n-2)\\ &=f(n-1)+4f(n-2)+f(n-2)-f_{\{E\}}(n-2)+f_{\{A\}}(n-2)\\ &=f(n-1)+5f(n-2)+f_{\{A\}}(n-2)-f_{\{E\}}(n-2) \end{align*}
+f
+f_{\{A\}}(n-2)= f(n-3)
+f_{\{E\}}(n-2)= f(n-4)
+f(n)=f(n-1)+5f(n-2)+f(n-3)-f(n-4)\textrm.
+m\times n
+g(n)
+g(1),\dots,g(N)
+k\ge 1
+g(N+k)=g(N+k+T)
+T
+g
+n
+n
+n-T
+g()
+N
+T
+f(n)=g(1)f(n-1)+\dots+g(T-1)f(n-T+1)+[g(T)+1]f(n-T)+[g(T+1)-g(1)]f(n-T-1)+\dots+[g(T+N)-g(N)]f(n-T-N) \tag{2}
+m
+n
+f(n)=f(n-1)+5f(n-2)+f(n-3)-f(n-4)

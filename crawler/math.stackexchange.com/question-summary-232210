@@ -1,0 +1,20 @@
+\mathbf{y} \in \mathbb{R}^N
+|M|
+M
+\mathrm{tr}(M)
+K
+ \int_{\mathbb{R}^N} \mathcal{N}(\mathbf{y}| \boldsymbol{\mu}_1, K_1) \log \mathcal{N}(\mathbf{y}| \boldsymbol{\mu}_0, K_0) d \mathbf{y} = -\frac12 \left[ N \log 2 \pi + \log |K_0| + \mathrm{tr} (K_0^{-1} K_1) + (\boldsymbol{\mu}_0 - \boldsymbol{\mu}_1)^T K_0^{-1} (\boldsymbol{\mu}_0 - \boldsymbol{\mu}_1) \right]. 
+   \mathcal{N}(\mathbf{y}| \boldsymbol{\mu}, K) = \frac{1}{(2 \pi)^{\frac{N}{2}} |K|^{\frac12}} \exp \left(-\frac12 (\mathbf{y} - \boldsymbol{\mu})^T K^{-1} (\mathbf{y} - \boldsymbol{\mu})\right). 
+\mathbf{x} = \mathbf{y} - \boldsymbol{\mu_0}
+\boldsymbol{\mu} = \boldsymbol{\mu_1} - \boldsymbol{\mu_0}
+ \int_{\mathbb{R}^N} (\mathbf{y} - \boldsymbol{\mu_1})^T K_1^{-1} (\mathbf{y} - \boldsymbol{\mu_1}) \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 (\mathbf{y} - \boldsymbol{\mu}_0)^T K_0^{-1} (\mathbf{y} - \boldsymbol{\mu}_0)) \right) d\mathbf{y}. 
+ \int_{\mathbb{R}^N} (\mathbf{x} - \boldsymbol{\mu_1} + \boldsymbol{\mu_0})^T K_1^{-1} (\mathbf{x} - \boldsymbol{\mu_1} + \boldsymbol{\mu_0}) \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 \mathbf{x}^T K_0^{-1} \mathbf{x} \right) d\mathbf{x}. 
+ (\mathbf{x} - \boldsymbol{\mu})^T K_1^{-1} (\mathbf{x} - \boldsymbol{\mu}) =  \mathbf{x} K_1^{-1} \mathbf{x} - 2 \boldsymbol{\mu}^T K_1^{-1} \mathbf{x} + \boldsymbol{\mu}^T K_1^{-1} \boldsymbol{\mu}. 
+ \int_{\mathbb{R}^N} - 2\boldsymbol{\mu}^T K_1^{-1} \mathbf{x} \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 \mathbf{x}^T K_0^{-1} \mathbf{x} \right) d\mathbf{x} = 0. 
+ \int_{\mathbb{R}^N} \mathbf{x}^T K_1^{-1} \mathbf{x} \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 \mathbf{x}^T K_0^{-1} \mathbf{x} \right) d\mathbf{x}. 
+K_1 = U^T U
+K_1^{-1} = U^{-1} U^{-T}
+K_1 > 0
+ \mathbf{z} = U^{-T} \mathbf{x}, \\ \mathbf{x} = U^T \mathbf{z}, \\ d \mathbf{x} = |U|^T d \mathbf{z}. 
+ \int_{\mathbb{R}^N} \mathbf{z}^T \mathbf{z} \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 \mathbf{z}^T U K_0^{-1} U^T \mathbf{z} \right) |U|^T d\mathbf{z} = \\ \int_{\mathbb{R}^N} \mathbf{z}^T \mathbf{z} \frac{1}{(2 \pi)^{\frac{N}{2}} |U^{-T} K_0 U^{-1}|^{\frac12}} \exp\left(-\frac12 \mathbf{z}^T (U^{-T} K_0 U^{-1})^{-1} \mathbf{z} \right) d\mathbf{z} = \\ \int_{\mathbb{R}^N} \sum_{i = 1}^N z_i^2 \frac{1}{(2 \pi)^{\frac{N}{2}} |U^{-T} K_0 U^{-1}|^{\frac12}} \exp\left(-\frac12 \mathbf{z}^T (U^{-T} K_0 U^{-1})^{-1} \mathbf{z} \right) d\mathbf{z} = \\  =\mathrm{tr} (U^{-T} K_0 U^{-1}) = \mathrm{tr} (U^{-1} U^{-T} K_0) = \mathrm{tr} (K_1^{-1} K_0). 
+ \int_{\mathbb{R}^N} (\mathbf{y} - \boldsymbol{\mu_1})^T K_1^{-1} (\mathbf{y} - \boldsymbol{\mu_1}) \frac{1}{(2 \pi)^{\frac{N}{2}} |K_0|^{\frac12}} \exp\left(-\frac12 (\mathbf{y} - \boldsymbol{\mu}_0)^T K_0^{-1} (\mathbf{y} - \boldsymbol{\mu}_0)) \right) d\mathbf{y} = \mathrm{tr} (K_1^{-1} K_0) + (\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0)^T K_1^{- 1} (\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0). 

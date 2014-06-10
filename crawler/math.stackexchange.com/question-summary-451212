@@ -1,0 +1,165 @@
+T_n
+\{1,\cdots,n\}
+1\le i\le n-1
+T_n=\{\sigma \in S_n: \sigma(i)+1\ne\sigma(i+1)
+1\le i\le n-1\}
+Q_n
+T_n
+D_n
+\{1,\cdots,n\}
+Q_n=D_n+D_{n-1}
+D_{n-1}
+T_n
+D_n
+T_n
+\mathcal{D}_{n-1}
+\{1,2,3,\ldots,n-1\}
+\sigma
+\{1,2,3,\ldots,n\}
+\mathcal{D}_{n-1}
+T_n
+n
+\overline{T}_n.
+\mathcal{D}_{n-1}
+F=S_{n-1}
+1,2,\ldots,n-1.
+F_j
+F
+j,
+\sigma
+\sigma(j)=j.
+F_{ijk\ldots}=F_i\cap F_j\cap F_k\cap\ldots
+i,
+j,
+k,\ldots
+\sigma
+\sigma(i)=i,
+\sigma(j)=j,
+\sigma(k)=k,\ldots
+\lvert F_{i_1i_2\ldots i_k}\rvert=(n-1-k)!
+n-1-k
+\begin{aligned}\lvert\mathcal{D}_{n-1}\rvert&=\lvert F\rvert-\sum_{i=1}^{n-1}\lvert F_i\rvert+\sum_{1\le i<j\le n-1}\lvert F_{ij}\rvert-\ldots\\ &=(n-1)!-\binom{n-1}{1}(n-2)!+\binom{n-1}{2}(n-3)!-\ldots\end{aligned}
+\overline{T}_n
+G
+1,2,\ldots,n
+n.
+G_i,
+1\le i\le n-1,
+G
+\sigma
+\sigma(i+1)=\sigma(i)+1.
+G_{ijk\ldots}=G_i\cap G_j\cap G_k\cap\ldots
+G
+\sigma(i+1)=\sigma(i)+1,
+\sigma(j+1)=\sigma(j)+1,
+\sigma(k+1)=\sigma(k)+1,\ldots
+\lvert G_{i_1i_2\ldots i_k}\rvert=(n-1-k)!.
+\sigma(i_j+1)=\sigma(i_j)+1
+1,
+n-1-k
+i
+i+1,
+n=9
+G_{12478}.
+8
+9,
+7
+8,
+789
+2
+3
+1
+2,
+123
+45
+G_{12478}
+123,
+45,
+6,
+789
+G_{12478}=3!=(9-1-5)!,
+\lvert G_{ijk\ldots}\rvert=\lvert F_{ijk\ldots}\rvert
+\lvert\overline{T}_n\rvert
+\lvert\mathcal{D}_{n-1}\rvert,
+\begin{aligned}\lvert\overline{T}_n\rvert&=\lvert G\rvert-\sum_{i=1}^{n-1}\lvert G_i\rvert+\sum_{1\le i<j\le n-1}\lvert G_{ij}\rvert-\ldots\\ &=(n-1)!-\binom{n-1}{1}(n-2)!+\binom{n-1}{2}(n-3)!-\ldots\end{aligned}
+[a,b]=\{i\in\mathbf{Z}\mid a\le i\le b\}
+[b]=[1,b].
+S_{a,b}
+[a,b]
+S_n
+[n].
+\overline{S}_{a,b}=\{\sigma\in S_{a,b}\mid \sigma(b)=b\}
+[a,b]
+b.
+\overline{S}_n=\{\sigma\in S_n\mid \sigma(n)=n\}
+[n]
+n.
+\rho_n:S_n\to\overline{S}_{n+1}
+\sigma
+S_n,
+\tau
+\overline{S}_{n+1}
+\tau=\rho_n(\sigma),
+f
+[n],
+e
+\tau(e)=f,
+\tau(e+1)=\tau(e)+1=f+1
+f
+\sigma.
+\rho_n
+i_1,\ldots,i_n\in[n]
+\langle i_1i_2\ldots i_n\rangle
+\sigma\in S_n
+\sigma(j)=i_j
+1\le j\le n.
+\rho_n:S_n\to\overline{S}_{n+1}
+\sigma\in S_n
+\sigma.
+(aa)
+\sigma
+(1b_1)(2b_2)\ldots(nb_n)\langle 123\ldots n\rangle,
+b_j\ge j
+1\le j\le n.
+\rho_n(\sigma)
+\langle 123\ldots n\rangle
+\langle (n+1)\rangle:
+ \rho_n(\sigma)=[1b_1][2b_2]\ldots[nb_n]\langle (n+1)\rangle. 
+ \begin{aligned} \langle\dot{1}\dot{2}\dot{3}\dot{4}\rangle=(11)(22)(33)(44)\langle1234\rangle&\mapsto[11][22][33][44]\langle5\rangle=\langle\overline{12345}\rangle\\ \langle\dot{1}\dot{2}43\rangle=(11)(22)(34)(44)\langle1234\rangle&\mapsto[11][22][34][44]\langle5\rangle=\langle4\overline{123}5\rangle\\ \langle\dot{1}32\dot{4}\rangle=(11)(23)(33)(44)\langle1234\rangle&\mapsto[11][23][33][44]\langle5\rangle=\langle3\overline{12}\,\overline{45}\rangle\\ \langle\dot{1}342\rangle=(11)(23)(34)(44)\langle1234\rangle&\mapsto[11][23][34][44]\langle5\rangle=\langle\overline{12}435\rangle\\ \langle\dot{1}423\rangle=(11)(24)(34)(44)\langle1234\rangle&\mapsto[11][24][34][44]\langle5\rangle=\langle43\overline{12}5\rangle\\ \langle\dot{1}4\dot{3}2\rangle=(11)(24)(33)(44)\langle1234\rangle&\mapsto[11][24][33][44]\langle5\rangle=\langle\overline{34}\,\overline{12}5\rangle\\ \langle21\dot{3}\dot{4}\rangle=(12)(22)(33)(44)\langle1234\rangle&\mapsto[12][22][33][44]\langle5\rangle=\langle21\overline{345}\rangle\\ \langle2143\rangle=(12)(22)(34)(44)\langle1234\rangle&\mapsto[12][22][34][44]\langle5\rangle=\langle42135\rangle\\ \langle231\dot{4}\rangle=(12)(23)(33)(44)\langle1234\rangle&\mapsto[12][23][33][44]\langle5\rangle=\langle132\overline{45}\rangle\\ \langle2341\rangle=(12)(23)(34)(44)\langle1234\rangle&\mapsto[12][23][34][44]\langle5\rangle=\langle24135\rangle\\ \langle2413\rangle=(12)(24)(34)(44)\langle1234\rangle&\mapsto[12][24][34][44]\langle5\rangle=\langle41325\rangle\\ \langle24\dot{3}1\rangle=(12)(24)(33)(44)\langle1234\rangle&\mapsto[12][24][33][44]\langle5\rangle=\langle1\overline{34}24\rangle\\ \langle312\dot{4}\rangle=(13)(23)(33)(44)\langle1234\rangle&\mapsto[13][23][33][44]\langle5\rangle=\langle321\overline{45}\rangle\\ \langle3142\rangle=(13)(23)(34)(44)\langle1234\rangle&\mapsto[13][23][34][44]\langle5\rangle=\langle21435\rangle\\ \langle3\dot{2}1\dot{4}\rangle=(13)(22)(33)(44)\langle1234\rangle&\mapsto[13][22][33][44]\langle5\rangle=\langle\overline{23}1\overline{45}\rangle\\ \langle3\dot{2}41\rangle=(13)(22)(34)(44)\langle1234\rangle&\mapsto[13][22][34][44]\langle5\rangle=\langle14\overline{23}5\rangle\\ \langle3412\rangle=(13)(24)(33)(44)\langle1234\rangle&\mapsto[13][24][33][44]\langle5\rangle=\langle31425\rangle\\ \langle3421\rangle=(13)(24)(34)(44)\langle1234\rangle&\mapsto[13][24][34][44]\langle5\rangle=\langle14325\rangle\\ \langle4123\rangle=(14)(24)(34)(44)\langle1234\rangle&\mapsto[14][24][34][44]\langle5\rangle=\langle43215\rangle\\ \langle41\dot{3}2\rangle=(14)(24)(33)(44)\langle1234\rangle&\mapsto[14][24][33][44]\langle5\rangle=\langle\overline{34}215\rangle\\ \langle4\dot{2}13\rangle=(14)(22)(34)(44)\langle1234\rangle&\mapsto[14][22][34][44]\langle5\rangle=\langle4\overline{23}15\rangle\\ \langle4\dot{2}\dot{3}1\rangle=(14)(22)(33)(44)\langle1234\rangle&\mapsto[14][22][33][44]\langle5\rangle=\langle\overline{234}15\rangle\\ \langle4312\rangle=(14)(23)(34)(44)\langle1234\rangle&\mapsto[14][23][34][44]\langle5\rangle=\langle24315\rangle\\ \langle4321\rangle=(14)(23)(33)(44)\langle1234\rangle&\mapsto[14][23][33][44]\langle5\rangle=\langle32415\rangle \end{aligned} 
+[n]
+[n+1]
+n+1
+\overline{T}_{n+1}
+\overline{T}_{n+1}
+T_n-\overline{T}_n,
+T_n
+n.
+ D_n=\lvert \overline{T}_{n+1}\rvert. 
+ D_n=\lvert T_n-\overline{T}_n\rvert 
+ D_n+D_{n-1}=\lvert T_n-\overline{T}_n\rvert+\lvert \overline{T}_n\rvert=\lvert T_n\rvert. 
+\sigma
+i\mapsto i+1
+D_n\cup D_{n-1}\to T_n
+D_n
+\tau
+\tau\circ\sigma
+D_{n-1}
+n\mapsto n
+n
+n1
+Q_n
+\sigma(i)+1 \neq \sigma(i+1)
+1 \leq i \leq n-1
+D_n+D_{n-1}
+\tau(i) \neq i
+1 \leq i \leq n-1
+D_n
+\tau(n) \neq n
+D_{n-1}
+\tau(n)=n
+\sigma(i)+1=\sigma(i+1)
+\tau(i)=i
+i=\sigma^{-1} (\sigma(i+1)-1)
+\sigma
+n
+\tau(i)=\sigma^{-1}\left(\sigma(i+1)-1\right),

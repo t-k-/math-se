@@ -1,0 +1,8 @@
+V =         \begin{bmatrix}         1^1 & 1^2 & 1^3 & \dots & 1^n \\         2^1 & 2^2 & 2^3 & \dots & 2^n \\         3^1 & 3^2 & 3^3 & \dots & 3^n \\         \vdots & \vdots & \vdots & \ddots & \vdots \\         n^1 & n^2 & n^3 & \dots & n^n \\         \end{bmatrix} 
+V(a) =         \begin{bmatrix}         (a_0)^1 & (a_0)^2 & (a_0)^3 & \dots & (a_0)^n \\         (a_1)^1 & (a_1)^2 & (a_1)^3 & \dots & (a_1)^n \\         (a_2)^1 & (a_2)^2 & (a_2)^3 & \dots & (a_2)^n \\         \vdots & \vdots & \vdots & \ddots & \vdots \\         (a_n)^1 & (a_n)^2 & (a_n)^3 & \dots & (a_n)^n \\         (a_{n+1})^1 & (a_{n+1})^2 & (a_{n+1})^3 & \dots & (a_{n+1})^n \\         \vdots & \vdots & \vdots & \ddots & \vdots \\         (a_m)^1 & (a_m)^2 & (a_m)^3 & \dots & (a_m)^n         \end{bmatrix} 
+A=\begin{bmatrix} V(a) \, | \, 0 \end{bmatrix}
+B=\begin{bmatrix} 0 \, | \, V(b) \end{bmatrix}
+A+B = \begin{bmatrix} V(a) \, | \, V(b) \end{bmatrix}
+A=\begin{bmatrix} V(a) \, | \, V(a_2) \, | \, 0 \end{bmatrix}
+B=\begin{bmatrix} 0 \, | \, V(b) \, | \, V(b_2) \end{bmatrix}
+A+B = \begin{bmatrix} V(a) \, | \, V(a_2) + V(b) \, | \, V(b_2) \end{bmatrix}

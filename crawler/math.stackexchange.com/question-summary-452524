@@ -1,0 +1,23 @@
+x \in \mathbb{R}^{n}
+\alpha = (\alpha_{1}, \ldots, \alpha_{n}) \in \mathbb{N}^{n}
+ x^{\alpha} = x_{1}^{\alpha_{1}}\cdots x_{n}^{\alpha_{n}}.
+c_{n,\alpha}
+\left| x^{\alpha}\right| \leq c_{n,\alpha}|x|^{|\alpha|}
+|\alpha| = \alpha_{1} + \cdots + \alpha_{n}
+k \in \mathbb{N}
+C_{n,k}
+|x|^{k} \leq C_{n,k}\sum\limits_{|\beta| = k}|x^{\beta}|
+x=0
+|x|=1
+x\neq0
+y=(\frac{x_{1}}{|x|},\frac{x_{2}}{|x|},...,\frac{x_{n}}{|x|})=\frac{x}{|x|}\in S^{n-1}
+\frac{|x^{\alpha}|}{|x|^{|\alpha|}}=\frac{1}{|x|^{\alpha_{1}}||x|^{\alpha_{2}}...|x|^{\alpha_{n}}}|x_{1}^{\alpha_{1}}||x_{2}^{\alpha_{2}}|...|x_{n}^{\alpha_{n}}|=|\big(\frac{x_{1}}{|x|}\big)^{\alpha_{1}}||\big(\frac{x_{2}}{|x|}\big)^{\alpha_{2}}|...|\big(\frac{x_{n}}{|x|}\big)^{\alpha_{n}}|=|y^{\alpha}|\le c_{n,\alpha}|y|^{|\alpha|}= c_{n,\alpha}|(\frac{x_{1}}{|x|},\frac{x_{2}}{|x|},...\frac{x_{n}}{|x|})|^{|\alpha|}=c_{n,\alpha}\frac{1}{|x|^{|\alpha|}}|(x_{1},x_{2},...x_{n})|^{|\alpha|}=c_{n,\alpha}\frac{|x|^{|\alpha|}}{|x|^{|\alpha|}}=c_{n,\alpha}
+|x^{\alpha}|\le c_{n,\alpha}|x|^{|\alpha|}
+\vert x^{\alpha}\vert=|x_1^{\alpha_1}||x_2^{\alpha_{2}}|...|x_n^{\alpha_n}|\le\frac{1}{n}\sum_{k=1}^{n}|x_{k}|^{n\alpha_{k}}\le\frac{1}{n}\big(\sum_{k=1}^{n}|x_{k}|^{\alpha_{k}}\big)^{n}
+\le\frac{1}{n}\big(\sum_{k=1}^{n}(1+|x_{k}|)^{\alpha_{k}}\big)^{n}\le\frac{1}{n}\big(\sum_{k=1}^{n}(1+|x|)^{\alpha_k}\big)^{n}\le\frac{1}{n}\big(n(1+|x|)^{|\alpha|})^{n}=n^{n-1}2^{n|\alpha|}
+(x_{1}+x_{2}+...+x_{n})^{k}=\sum_{\alpha_{1}+...+\alpha_{n}=k}\binom{k}{\alpha_{1}, \alpha_{2},...,\alpha_{n}}x^{\alpha_{1}}...x^{\alpha_{n}}\ge x_{1}^{k}+...+x_{n}^{k}
+x_{1},...x_{n}
+|x_{k}|\le1+|x_{k}|
+|x_{k}|\le \sqrt{x_{1}^{2}+...+x_{n}^{2}}=|x|
+k=1,2,...,n
+|x|^{k}=\big(\sum_{k=1}^{n}|x_{k}|^{2}\big)^{\frac{k}{2}}\le\big(\sum_{k=1}^{n}|x_{k}|\big)^{\frac{2k}{2}}=\big(\sum_{k=1}^{n}|x_{k}|\big)^{k}=\sum_{|\beta|=k}\frac{k!}{\beta!}|x^{\beta}|\le\big(\sum_{|\beta|=k}\big(\frac{k!}{\beta!}\big)\big)\big(\sum_{|\beta|=k}|x^{\beta}|\big)=n^{k}\big(\sum_{|\beta|=k}|x^{\beta}|\big)

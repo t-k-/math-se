@@ -1,0 +1,34 @@
+u_{xx} + u_{yy} = 0
+-\infty < x < \infty
+y>0
+u_{y}(x,0)=f(x)
+u(x,y)= \frac{1}{2 \pi} \int_{-\infty}^{\infty}ln((x-z)^2+y^2)f(z)dz+cx+d 
+c
+d
+ w(x,y)=ln[(x-z)^2+y^2] 
+ w_{xx}+w_{yy}=0  
+ u(x,0)=f(x)  
+ u_{y}(x,0)=f(x)
+\hat{u}(k,y) = \int_{-\infty}^{\infty} dx \, u(x,y) e^{i k x}
+-k^2 \hat{u} + \frac{\partial^2 \hat{u}}{\partial y^2} = 0
+\hat{u}(k,y) = A(k) e^{k y} + B(k) e^{-k y}
+\frac{\partial \hat{u}}{\partial y}(k,0) = \hat{f}(k)
+\hat{f}
+f
+y \to \infty
+k
+k=0
+\hat{u}(k,y) = C(k) e^{-|k| y}
+y=0
+C(k) = -\frac{\hat{f}(k)}{|k|}
+u(x,y) = -\frac{1}{2 \pi} \int_{-\infty}^{\infty} dk  \frac{\hat{f}(k)}{|k|} e^{-|k| y} e^{-i k x}
+|k|
+y
+\frac{\partial u}{\partial y} = \frac{1}{2 \pi} \int_{-\infty}^{\infty} dk  \, \hat{f}(k)\, e^{-|k| y} e^{-i k x}
+e^{-|k| y}
+(y/\pi)/(x^2+y^2)
+\frac{\partial u}{\partial y} = \frac{y}{\pi} \int_{-\infty}^{\infty} dx' \frac{f(x')}{(x-x')^2+y^2}
+y
+u(x,y) = \frac{1}{2 \pi} \int_{-\infty}^{\infty} dx' \, f(x') \, \ln{[(x-x')^2+y^2]} + P x+Q
+P
+Q

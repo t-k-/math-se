@@ -1,0 +1,133 @@
+a, b
+c
+\lfloor \cdot \rfloor
+x
+\lceil \cdot \rceil
+d = \text{gcd}(b,c)
+c
+a, b
+c
+ d=\text{gcd}(b,c), 
+u=c/d,
+t= \lfloor a/b \rfloor 
+ a \equiv \lambda \textrm{ mod } d, 
+ 0 \le \lambda < d,
+ u \, | \, (t+1) 
+ \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2} - \frac{c-d}{2} - \lambda \right \rbrace . 
+ a \equiv r \textrm{ mod } c, 
+ 0 \le r < c 
+ u \, | \, t 
+ \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2}  \right \rbrace - \frac{1}{c} \left \lfloor \frac{t+1}{u} \right \rfloor \left \lbrace \frac{u(c-d)}{2} + \lambda u \right \rbrace - \frac{r}{c} . 
+a=1019,b=33
+c=55
+d=\text{gcd}(33,55)=11,
+u=c/d=55/11=5,
+t= \lfloor 1019/33 \rfloor = 30
+ 1019 \equiv 29 \textrm{ mod } 55, 
+ 1019 \equiv 7 \textrm{ mod } 11. 
+ r = 29 
+\lambda = 7.
+ u \, | \, t 
+ \sum_{k=0}^{30} \left \lfloor \frac{1019 - 33k}{55} \right \rfloor =  \frac{31}{55} \left \lbrace 1019 - \frac{ 30 \cdot 33}{2} \right \rbrace - \frac{6}{55} \left \lbrace \frac{5(55-11)}{2} + 7 \cdot 5 \right \rbrace - \frac{29}{55} = 279.
+ \mu=0
+\mu=1
+ t+1 \equiv \mu \textrm{ mod } u,
+ 0 \le \mu < u 
+ \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2}  \right \rbrace - \frac{1}{c} \left \lfloor \frac{t+1}{u} \right \rfloor \left \lbrace \frac{u(c-d)}{2} + \lambda u \right \rbrace 
+ - \frac{1}{c} \sum_{k=0}^{\mu - 1} \left \lbrace r+k \left \lbrace \left( \left \lfloor \frac{b}{c} \right \rfloor + 1 \right) c - b \right \rbrace \textrm{ mod } c \right \rbrace .
+ \mu 
+ \mu =0.
+ \ge 0 
+c.
+t+1
+ \lfloor (t+1)/u \rfloor 
+c
+c
+ \lambda 
+c.
+ \sum_{k=0}^{\mu - 1} \lbrace r+k \lbrace \cdots \rbrace \textrm{ mod } c \rbrace 
+ \sum_{k=0}^{\mu - 1} \lbrace (r-kb) \textrm{ mod } c \rbrace 
+ \lbrace \cdot \rbrace 
+ \mu = 2 
+ \mu = 2 
+ u \, | \, (t-1) .
+ r \ge b 
+ \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2}  \right \rbrace - \frac{1}{c} \left \lfloor \frac{t+1}{u} \right \rfloor \left \lbrace \frac{u(c-d)}{2} + \lambda u \right \rbrace - \frac{2r-b}{c} . \quad (1) 
+a=1037,b=33
+c=55
+d=\text{gcd}(33,55)=11,
+u=c/d=55/11=5,
+t= \lfloor 1037/33 \rfloor = 31
+ 1037 \equiv 47 \textrm{ mod } 55, 
+ 1037 \equiv 3 \textrm{ mod } 11. 
+ r = 47 
+\lambda = 3.
+ u \, | \, (t-1) 
+ \sum_{k=0}^{31} \left \lfloor \frac{1037 - 33k}{55} \right \rfloor =  \frac{32}{55} \left \lbrace 1037 - \frac{ 31 \cdot 33}{2} \right \rbrace - \frac{6}{55} \left \lbrace \frac{5(55-11)}{2} + 3 \cdot 5 \right \rbrace - \frac{2 \cdot 47 - 33}{55} = 291.
+ r < b 
+(1)
+ - \frac{2r+c-b}{c}.
+t = \lfloor a/b \rfloor .
+\text{gcd}(b,c)=1
+c \, | \, (t+1) 
+ S = \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2} - \frac{c-1}{2} \right \rbrace . 
+\begin{align}  a &= m_0 c + r_0 \\ a- b &= m_1 c + r_1 \\ a - 2b &= m_2 c  + r_2 \\ \cdots &= \cdots \\ a - tb &= m_t c  + r_t \end{align}
+m_i
+r_i
+ 0 \le r_i < c 
+(t+1)a - \frac{t(t+1)}{2}b = Sc + \sum_{k=0}^t r_k . \quad (1)
+\text{gcd}(b,c)=1
+k
+c
+a-kb,
+a
+c
+ c \, | \, (t+1) 
+a-kb
+(t+1)/c
+c
+\sum_{k=0}^t r_k = \frac{(t+1)(c-1)}{2}.
+(1)
+\text{gcd}(b,c)>1,
+b
+c
+d=\text{gcd}(b,c)
+ a \equiv \lambda \textrm { mod } d 
+ 0 \le \lambda < d.
+a-kb
+c
+ \lambda 
+c
+k
+0,1,2,\ldots,u-1
+u=c/d.
+ u \, | \, (t+1) 
+r_0,r_1,\ldots,r_t
+(t+1)/u
+ \sum_{k=0}^t r_k = \frac{t+1}{u} \left \lbrace \frac{du(u-1)}{2} + \lambda u \right \rbrace  = (t+1) \left \lbrace \frac{c-d}{2} + \lambda \right \rbrace .
+ \sum_{k=0}^{t} \left \lfloor \frac{a - kb}{c} \right \rfloor = \frac{t+1}{c} \left \lbrace a - \frac{tb}{2} - \frac{c-d}{2} - \lambda \right \rbrace . 
+a=91,b=15 \textrm{ and } c=21
+d=\text{gcd}(15,21)=3,
+t=\lfloor 91/15 \rfloor = 6,
+u=c/d=21/3=7
+91 \equiv 1 \textrm{ mod } 3,
+\lambda=1.
+ u \, | \, (t+1)
+\frac{7}{21} \left \lbrace 91 - \frac{6 \cdot 15}{2} - \frac{21-3}{2} - 1 \right \rbrace = 12.
+ \sum_{k=0}^7 \left \lfloor \frac{91-15k}{21} \right \rfloor = 4+3+2+2+1+0+0=12.
+a=703,b=35 \textrm{ and } c=49
+d=\text{gcd}(35,49)=7,
+t=\lfloor 703/35 \rfloor = 20,
+u=c/d=49/7=7
+703 \equiv 3 \textrm{ mod } 7,
+\lambda=3.
+ u \, | \, (t+1)
+\frac{21}{49} \left \lbrace 703 - \frac{20 \cdot 35}{2} - \frac{49-7}{2} - 3 \right \rbrace = 141.
+ \sum_{k=0}^{20} \left \lfloor \frac{703-35k}{49} \right \rfloor = 141.
+n = m \lfloor y \rfloor + r
+0 \leq r < \lfloor y \rfloor
+n, m , r \in \mathbb{Z}_{\geq 0}
+x, y > 0
+[0,n]
+\text{mod}(a,b) = a - b \lfloor \frac{a}{b} \rfloor
+\lfloor \frac{a}{b} \rfloor \gg c

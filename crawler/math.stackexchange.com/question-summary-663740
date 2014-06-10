@@ -1,0 +1,14 @@
+\frac{\partial}{\partial \theta_1 \partial \theta_2} \int_{\theta_1-\theta_2}^{\theta_1+\theta_2} \int_{\theta_1 -\theta_2}^{x} u(y,x) (x-y)^{n-2} dydx 
+u(.)
+-u(\theta_1-\theta_2,\theta_1+\theta_2)*(2\theta_2)^n +u\prime_{\theta_2} (y,\theta_1+\theta_2) *(\theta_1+\theta_2-y)^{n-2}+(n-2)*u(y,\theta_1+\theta_2)*(\theta_1+\theta_2-y)^{n-3}-u(\theta_1-\theta_2,\theta_1+\theta_2)*(2\theta_2)^n +u\prime _{\theta_2} (\theta_1-\theta_2,x)*(x+\theta_2-\theta_1)^{n-2}-(n-2)u(\theta_1-\theta_2,x)*(x+\theta_2-\theta_1)^{n-3}
+\theta_{\pm}~:=~\theta_1\pm \theta_2,
+\partial_1\partial_2~=~\partial_+^2-\partial_-^2. 
+ I(\theta_+,\theta_-)~:=~\int_{\theta_-}^{\theta_+} \!dx \int_{\theta_-}^{x} \!dy~f(x,y)~=~\int_{\theta_-}^{\theta_+} \!dy \int_{y}^{\theta_+} \!dx~f(x,y). 
+f(\theta_{\pm},\theta_{\pm})~=~0.
+ \partial_+ I ~=~ \int_{\theta_-}^{\theta_+} \!dy~f(\theta_+,y), 
+ \partial_+^2 I ~=~ \int_{\theta_-}^{\theta_+} \!dy~f_x(\theta_+,y), 
+ \partial_- I ~=~ -\int_{\theta_-}^{\theta_+} \!dx~f(x,\theta_-), 
+ \partial_-^2 I ~=~ -\int_{\theta_-}^{\theta_+} \!dx~f_y(x,\theta_-). 
+f_x(x,y):=\partial_x f(x,y)
+f_y(x,y):=\partial_y f(x,y)
+ \partial_1\partial_2 I ~=~\int_{\theta_-}^{\theta_+} \!dz~[f_x(\theta_+,z)+f_y(z,\theta_-)].

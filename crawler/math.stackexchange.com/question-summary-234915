@@ -1,0 +1,17 @@
+ SIM(a_m,b_n) = \begin{cases} 1, a_m = b_n\\ -1, otherwise \end{cases}\\ MATCH(0,0) = 0\\ MATCH(0,n) = 0\\ MATCH(m,0) = 0\\ MATCH(m,n) = max \begin{cases} MATCH(m-1,n-1)+ sim(a_m,b_n)\\ MATCH(m,n-1)\\ MATCH(m-1,n) \end{cases} 
+MATCH(m-i,n-j) \leq MATCH(m,n), 0 \leq i \lt m \wedge 0 \leq j \lt n 
+(m,n)
+(m,n-j)
+(m-i,n-j)
+MATCH
+ MATCH(m,n) = max \begin{cases} (a): MATCH(m-1,n-1)+ sim(a_m,b_n)\\ (b): MATCH(m,n-1)\\ (c): MATCH(m-1,n). \end{cases} 
+MATCH(m,n)\ge MATCH(m-i,n-j).
+ MATCH(m,n) \geq MATCH(m-1,n-1), 0 \lt i \leq m \wedge 0 \lt j \leq n 
+MATCH(m,n) = MATCH(m-1,n)
+MATCH(m,n) = MATCH(m,n-1)
+MATCH(m,n) = MATCH(m-1,n-1) + 1 \Rightarrow MATCH(m,n) \gt MATCH(m-1,n-1)
+ MATCH(m,n) = MATCH(m-1,n-1) - 1 \\ 
+ \Rightarrow MATCH(m-1,n-1) -1 \geq MATCH(m-1,n) \\  \wedge MATCH(m-1,n-1) -1 \geq MATCH(m,n-1) 
+ \Rightarrow MATCH(m-1,n-1)  \gt MATCH(m-1,n) \\  \wedge MATCH(m-1,n-1)  \gt MATCH(m,n-1) \\ 
+ MATCH(m-1,n) \lt MATCH(m-1,n-1) \\ \Rightarrow\Leftarrow MATCH(m-1,n) = MATCH(m-1,n-1) 
+ MATCH(m,n-1) \lt MATCH(m-1,n-1) \\ \Rightarrow\Leftarrow MATCH(m,n-1) = MATCH(m-1,n-1)\\ 

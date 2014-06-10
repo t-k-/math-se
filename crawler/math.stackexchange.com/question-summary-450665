@@ -1,0 +1,7 @@
+h(r|M,N,n) = \frac{\binom{M}{r} \binom{N-M}{n-r}}{N \choose n}
+\Gamma
+F(a,b,c;t) = \sum_{r=0}^{\infty}\frac{\Gamma(a+r)\Gamma(b+r)\Gamma(c)}{\Gamma(a)\Gamma(b)\Gamma(c+r)}\frac{t^r}{r!}
+G(t) = \sum_{r=0}^{n}h(r|M,N,n)t^r
+G(t) = \frac{F(-M,-n,N-M-n+1;t)}{F(-M,-n,N-M-n+1;1)}
+h(r|M, N, n)
+h(r|M, N, n) = \frac{(N-M)!(N-n)!}{N! (N-M-n)!}\,\frac{(-M)_r (-n)_r}{r! (N-M-n+1)_r}

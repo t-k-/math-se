@@ -1,0 +1,10 @@
+\int_R^{\infty} e^{-k(r-R)}r^{l+1} dr
+l\in \mathbb{N_0}
+k>0
+R>0
+\displaystyle S_n(x):=\sum_{k=0}^{n}\frac{x^n}{n!}
+I=\int_{R}^{\infty}e^{-k(r-R)}r^{l+1}dr=\int_{0}^{\infty}e^{-kr}(r+R)^{l+1}dr=\sum_{j=0}^{l+1}\binom{l+1}{j}R^{l+1-j}\int_{0}^{\infty}e^{-kr}r^j\ dr\\ =\sum_{j=0}^{l+1}\binom{l+1}{j}R^{l+1-j}\frac{\Gamma\left(j+1\right)}{k^{j+1}}\\ =\frac{(l+1)!}{k^{l+2}}\sum_{n=0}^{l+1}\frac{(Rk)^n}{n!}\\ = \frac{(l+1)!}{k^{l+2}}S_{l+1}(Rk)
+ I=\int_R^{\infty} e^{-k(r-R)}r^{l+1} dr= e^{kR}\int_R^{\infty} e^{-kr}r^{l+1} dr. 
+kr=t
+ = e^{kR}\int_R^{\infty} e^{-kr}r^{l+1} dr = \frac{e^{kR}}{k^{l+2}}\int_{Rk}^{\infty} e^{-t}t^{l+1} dr 
+I = \frac{e^{kR}}{k^{l+2}}\Gamma( l+2, Rk ),

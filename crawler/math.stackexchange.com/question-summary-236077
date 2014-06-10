@@ -1,0 +1,44 @@
+(X,\mathcal{E},\mu)
+(Y,\mathcal{F})
+\varphi:X\to Y
+\mathcal{E}
+\mathcal{F}
+\mu_\varphi=\mu\circ\varphi^{-1}
+\mu
+\varphi
+ \mathcal{L}^1(\mu_\varphi)=\{f:Y\to \mathbb{R},\,f \text{ is }\mathcal{F}\text{-}\mathcal{B}(\mathbb{R})\text{-measurable}\mid f\circ\varphi \in\mathcal{L}^1(\mu)\} 
+ \int_Yf\,\mathrm{d}\mu_{\varphi}=\int_Xf\circ\varphi\,\mathrm{d}\mu,\quad f\in\mathcal{L}^1(\mu_\varphi).\quad (*) 
+B\in\mathcal{F}
+ \int_X 1_B\circ\varphi\,\mathrm{d}\mu=\int_X 1_{\varphi^{-1}(B)}\,\mathrm{d}\mu=\mu(\varphi^{-1}(B))=\mu_\varphi(B)=\int_X 1_B\,\mathrm{d}\mu_\varphi. 
+f,g:Y\to\mathbb{R}
+\mathcal{F}
+(*)
+(*)
+f+g
+ \int_X(f+g)\circ\varphi\, \mathrm{d}\mu=\int_X (f\circ\varphi+g\circ\varphi)\,\mathrm{d}\mu=\int_X f\circ\varphi\,\mathrm{d}\mu + \int_X g\circ\varphi\,\mathrm{d}\mu\\ =\int_X f\,\mathrm{d}\mu_\varphi+\int_X g\,\mathrm{d}\mu_\varphi, 
+(f_n)_{n\geq 1}
+f_n:Y\to\mathbb{R}
+\mathcal{F}
+(*)
+f=\lim_{n\to\infty} f_n
+(f_n\circ \varphi)_{n\geq 1}
+\mathcal{E}
+ \int_X f\circ\varphi\,\mathrm{d}\mu=\lim_{n\to\infty}\int_X f_n\circ\varphi\,\mathrm{d}\mu=\lim_{n\to\infty}\int_X f_n\,\mathrm{d}\mu_\varphi=\int_X f\,\mathrm{d}\mu_\varphi. 
+(*)
+f\in\mathcal{L}^1(\mu_\varphi)
+(X,\mathcal{E},\mu)
+g:X\to\mathbb{R}
+\mathcal{E}
+\mathcal{B}(\mathbb{R})
+\nu
+g
+\mu
+\nu(A)=\int_A g\,\mathrm{d}\mu
+ \mathcal{L}^1(\nu)=\{f:X\to \mathbb{R},\,f \text{ is }\mathcal{E}\text{-}\mathcal{B}(\mathbb{R})\text{-measurable}\mid f\cdot g \in\mathcal{L}^1(\mu)\} 
+ \int_Xf\,\mathrm{d}\nu = \int_X f\cdot g\,\mathrm{d}\mu,\quad f\in\mathcal{L}(\nu). 
+(X,\mathcal{E},\mu)=(\Omega,\Sigma,P)
+(Y,\mathcal{F})=(\mathbb{R},\mathcal{B}(\mathbb{R}))
+\varphi=X
+(X,\mathcal{E},\mu)=(\mathbb{R},\mathcal{B}(\mathbb{R}),\lambda)
+\nu=P_X
+g=f

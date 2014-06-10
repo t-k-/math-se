@@ -1,0 +1,21 @@
+\mathcal{H}
+\{\eta_n \}_{n \in \mathbb{Z}}
+\mathcal{H}
+A
+\ell_2(\mathbb{Z})
+a_{nm} = |(\eta_n,\eta_m)|
+f \in \mathcal{H}
+\sum_{n \in \mathbb{Z}} |(f,\eta_n)|^2 \le ||A|| \, ||f||^2
+\mathbb N
+\mathbb Z
+f\in\mathcal H
+E_k=\langle\cdot,\eta_k\rangle\,\eta_k
+g_n\in\ell^2(\mathbb N)
+\left(\sum_{k=1}^n|\langle f,\eta_k\rangle|^2\right)^{1/2}
+n
+\tag{1} \left\|\sum_{k=1}^nE_kf\right\|^2=\left\langle\sum_{k=1}^nE_kf,\sum_{j=1}^nE_jf\right\rangle=\sum_{j,k=1}^n\langle E_jE_kf,f\rangle=\sum_{j,k=1}^n\langle f,\eta_j\rangle\,\langle\eta_k,\eta_j\rangle\,\langle\eta_k,f\rangle. 
+ g_n(k)=\begin{cases}\langle f,\eta_k\rangle,&\text{ if }k\leq n \\ 0,&\text{ otherwise} \end{cases} 
+ \left\|\sum_{k=1}^nE_kf\right\|^2=\langle Ag_n,g_n\rangle\leq \|A\|\,\|g_n\|^2. 
+ \sum_{k=1}^n|\langle f,\eta_k\rangle|^2=\sum_{k=1}^n\langle f,\eta_k\rangle\,\langle \eta_k,f\rangle=\sum_{k=1}^n\langle E_kf,f\rangle=\langle\sum_{k=1}^n E_kf,f\rangle\leq\left\|\sum_{k=1}^nE_kf\right\|\,\|f\|\\ \leq \|A\|^{1/2}\,\|g_n\|\,\|f\| =\|A\|^{1/2}\,\|f\|\,\left(\sum_{k=1}^n|\langle f,\eta_k\rangle|^2\right)^{1/2}. 
+ \sum_{k=1}^n|\langle f,\eta_k\rangle|^2\leq\|A\|\,\|f\|^2. 
+ \sum_{k=1}^\infty|\langle f,\eta_k\rangle|^2\leq\|A\|\,\|f\|^2. 

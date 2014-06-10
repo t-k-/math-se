@@ -1,0 +1,19 @@
+\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{m=1}^{n_{ij}}(\bar y_{i..}-\bar y_{...})\times (\bar y_{.j.}-\bar y_{...})=0
+\bar y_{...}=\frac{\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{m=1}^{n_{ij}}y_{ijk}}{abn_{ij}}
+\bar y_{i..}=\frac{\sum_{j=1}^{b}\sum_{m=1}^{n_{ij}}y_{ijk}}{bn_{ij}}
+\bar y_{.j.}=\frac{\sum_{i=1}^{a}\sum_{m=1}^{n_{ij}}y_{ijk}}{an_{ij}}
+\sum_{i=1}^{a}\sum_{j=1}^{b}\sum_{m=1}^{n_{ij}}(\bar y_{i..}-\bar y_{...})\times (\bar y_{.j.}-\bar y_{...})
+=\sum_{i=1}^{a}\sum_{j=1}^{b}n_{ij}(\bar y_{i..}-\bar y_{...})\times (\bar y_{.j.}-\bar y_{...})
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b}n_{ij}(\bar y_{.j.}-\bar y_{...})]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b}n_{ij}\bar y_{.j.}-\bar y_{...}\sum_{j=1}^{b}n_{ij}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b}n_{ij}\bar y_{.j.}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b}n_{ij}\frac{ y_{.j.}}{a n_{ij}}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b}\frac{ y_{.j.}}{a}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\frac{ y_{...}}{a}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[b n_{ij}\frac{ y_{...}}{ab n_{ij}}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[b n_{ij}\bar y_{...}-n_{i.}\bar y_{...}]
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\sum_{j=1}^{b} n_{ij}\bar y_{...}-n_{i.}\bar y_{...}] \ldots (A)
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\bar y_{...}\sum_{j=1}^{b} n_{ij}-n_{i.}\bar y_{...}] 
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[\bar y_{...}n_{i.}-n_{i.}\bar y_{...}] 
+=\sum_{i=1}^{a}(\bar y_{i..}-\bar y_{...})[n_{i.}\bar y_{...}-n_{i.}\bar y_{...}] =0
+\sum_{j=1}^{b} n_{ij}\bar y_{...}=\sum_{j=1}^{b}n_{ij}\bar y_{.j.}

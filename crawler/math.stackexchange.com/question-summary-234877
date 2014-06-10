@@ -1,0 +1,13 @@
+n = 6
+F_1 = 1, \ F_2 = 1, \ F_{n+2} = F_{n+1} + F_n \qquad (n = 1, 2, 3, \ldots).
+(F_{n+5})^2 - (F_n)^2 = 3((F_{n+3})^2 - (F_{n+2})^2) + 8 F_{n+2} F_{n+3} \qquad (n = 1, 2, 3, \ldots).
+n \geq 1
+n
+n \geq 1
+n \geq 1
+\begin{align} \left( F_{n+5} \right)^2 - \left( F_n \right)^2 &= \left( F_{n+5} - F_n \right) \left( F_{n+5} + F_n \right) \\ &= \left( F_{n+4} + F_{n+3} - F_{n+2} + F_{n+1} \right) \left( F_{n+4} + F_{n+3} + F_{n+2} - F_{n+1} \right) \\ \\ &= \left( \color{red}{2} F_{n+3} + F_{n+1} \right) \left( 2 F_{n+3} + 2 F_{n+2} - F_{n+1} \right) \tag{*} \\ \\ &= \left( 2 F_{n+3} - F_{n+3} - F_{n+2} \right) \left( 2 F_{n+3} + 2 F_{n+2} - F_{n+3} + F_{n+2} \right) \\ &= \left( 3 F_{n+3} - F_{n+2} \right) \left( F_{n+3} + 3 F_{n+2} \right) \\ &= 3 \left( \left( F_{n+3} \right)^2 - \left( F_{n+2} \right)^2 \right) + 8 F_{n+2} F_{n+3} \end{align}
+\color{red}{2}
+F_{n+3}+F_{n+2}
+F_{n+4}
+F_{n+4}-F_{n+2}=F_{n+3}
+F_{n+4}=F_{n+3}+F_{n+2}

@@ -1,0 +1,43 @@
+\Omega
+\partial\Omega
+u
+\lambda u 
+\lambda.
+u_t - \Delta u + u = 0
+\frac{\partial u}{\partial \nu} = 0
+u(T) = u(0)
+u
+v
+d = u-v
+d_t - \Delta d + d = 0
+\frac{\partial d}{\partial \nu} = 0
+d(T) = d(0)
+d
+d=0
+H^1
+\frac{1}{2}\frac{d}{dt}\int_{\Omega} d^2(t) + \int_{\Omega} |\nabla d(t)|^2 + \int_{\Omega} d^2(t) = 0
+\frac{1}{2}|d(T)|_{L^2} - \frac{1}{2}|d(0)|_{L^2} + \int_{0}^T |\nabla d(t)|_{L^2}^2 + \int_0^2 |d(t)|_{L^2}^2 = 0
+y(x,t)=e^tu(x,t)
+\displaystyle \frac{dy}{dt}-\Delta y=0
+\displaystyle\frac{\partial y}{\partial\nu}=0,\, y(x,T)=e^Ty(x,0)
+y
+\displaystyle \frac{d}{dt}\int_{\Omega}\frac{y^2}{2}=-\int_{\Omega}|\nabla y|^2
+\displaystyle\int_{\Omega}\frac{y^2}{2}
+\displaystyle \int_{\Omega}y^2(x,T)=e^{2T}\int_{\Omega}y^2(x,0)\ge e^{2T}\int_{\Omega}y^2(x,T),
+y(x,0)=y(x,T)=0
+\displaystyle\int_{\Omega}\frac{y^2}{2}
+y(x,t)=0
+w_k
+k\in\mathbb N
+L^2(\Omega)
+\Omega
+\partial\Omega
+\lambda\ge 0
+\lambda_k\to\infty
+ -\Delta w_k=\lambda_kw_k \,\,\,\text{in $\Omega$},\\ \partial_\nu w_k=0 \,\,\,\text{on $\partial\Omega$}, 
+u
+u(x,0)=\sum_{k\in\mathbb  N}c_kw_k(x)
+\|u(\cdot,t)\|= \|u(\cdot,T)\|
+u\equiv 0
+ u(x,t)=\sum_{k=1}^\infty\mathrm{e}^{-(\lambda_k+1)t}w_k(x). 
+ \|u(\cdot,t)\|\le \mathrm{e}^{-t}\|u(\cdot,0)\|.  

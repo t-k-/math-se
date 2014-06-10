@@ -1,0 +1,37 @@
+f \in L^1_{loc}
+f^\sharp(x) := \sup_{B \in x} |B|^{-1} \int_B |f(y) - |B|^{-1} \int_B f(z) dz | dy
+BMO \subset L^1_{loc}
+BMO := \{ f \in L^1_{loc} \;\;\;s.t.\;\;\; f^\sharp \in L^{\infty}  \}
+\Vert f \Vert_{BMO} = \Vert f^\sharp \Vert_{\infty}
+H^1
+f \in \text{BMO}(\mathbb R^n)
+\epsilon > 0
+B
+x_0
+R
+C
+n
+\epsilon
+R^\epsilon \int_{\mathbb R^n} \frac{|f(x) - \text{Avg}_B f|}{(R + |x - x_0|)^{n + \epsilon}} \, dx \leq C \|f\|_\text{BMO}
+\text{BMO}
+L^1
+\text{BMO}
+g_n = f_n - \langle f_n \rangle
+(g_n)
+B
+R
+x_0
+\epsilon > 0
+R > 0
+x_0
+R \leqslant R + |x - x_0| \leqslant 2R
+g_n
+L^1(B)
+g_B
+g_B
+B
+B
+g
+R^\epsilon \int_{B} \frac{|g_n(x)|}{(R + |x - x_0|)^{n + \epsilon}} \, dx \lesssim \|g_n [B]\|_\text{BMO} \lesssim \|g_n\|_\text{BMO}.
+R^\epsilon \sum_n \int_{B} \frac{|g_n(x)|}{(R + |x - x_0|)^{n + \epsilon}} \, dx
+\frac1{R^d} \sum_n \|g_n\|_{L^1(B)}

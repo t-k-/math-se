@@ -1,0 +1,5 @@
+ \int_0^{\pi/2}\cos(2\theta)\log(\cos\theta) d\theta 
+u=\log(\cos\theta)
+dv=\cos2\theta d\theta
+\log(\cos\theta).\frac{\sin2\theta}{2}-\int\frac{\sin2\theta}{2}.\frac{-\sin\theta}{\cos\theta}d\theta=\log(\cos\theta).\frac{\sin2\theta}{2}+\int \sin^2(\theta)d\theta.
+\begin{align}\int \log(\cos\theta)\cos2\theta d\theta&=\log(\cos\theta).\frac{\sin2\theta}{2}+\int \frac{1-\cos2\theta}{2}d\theta\\ \\ &=\log(\cos\theta).\frac{\sin2\theta}{2}+\frac{\theta-\sin2\theta/2}{2}\end{align}

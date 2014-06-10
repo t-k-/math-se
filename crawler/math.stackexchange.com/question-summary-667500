@@ -1,0 +1,15 @@
+X_1,X_2,....X_n
+X_i
+Ber(p)
+N
+Poi( \lambda )
+S=X_1+X_2+....+X_n
+V=N-S 
+E[ e^{ t_{1}S +t_{2}V} |  N=n]
+S
+V
+(n,p)
+N=n
+V + S = N\;or\;n
+E[ e^{ t_{1}S +t_{2}V} |  N=n] = E[ e^{ t_{1}S +t_{2}(n-S)}] =E[e^{(t_1-t_2)S+t_2n}]=e^{t_2n}E[e^{(t_1-t_2)S}]
+e^{t_2n}E[e^{(t_1-t_2)S}]=e^{t_2n}\sum\limits_{i=0}^n \left( e^{(t_1-t_2)i}Bin(i;n,p)\right)

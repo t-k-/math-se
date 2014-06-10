@@ -1,0 +1,48 @@
+S=\{1\}(N_{even})^k
+N_{even} = \{2,4,6,...\}
+\Phi_S(x) = \Phi_{\{1\}(N_{even})^k}(x)
+\Phi_S(x) = x+(\sum\limits_{i\geq0}^{}x^{2i+2})^k
+x
+n
+k
+\binom{n-1}{k-1}
+k-1
+n-1
+n = 2a_1 + 2a_2 + \dots + 2a_k
+n/2 = a_1 + a_2 + \dots + a_k
+n/2
+k
+2^{n/2 - 1}
+n
+0
+1
+n = 1 + 2a_1 + 2a_2 + \dots + 2a_{k-1}
+n = 2a_1 + 1 + 2a_2 + \dots + 2a_{k-1}
+k
+n = 2a_1 + 2a_2 + \dots + 2a_{k-1} + 1
+\frac{n - 1}{2} = a_1 + a_2 + \dots + a_{k-1}
+\frac{n-1}{2}
+k-1
+\binom{(n-1)/2-1}{k-1}
+n
+0
+\binom{n/2 - 1}{k-1}[n\text{ is even}] + k\binom{(n-1)/2 - 1}{k-1}[n\text{ is odd}].
+\mathcal{E}
+\mathcal{E}
+E(z) = z^2 + z^4 + z^6 + \dots
+\mathcal{E} = \operatorname{S\scriptsize EQ}_{\ge 1}(\mathcal{Z}\times\mathcal{Z})
+E(z) = \frac{z^2}{1-z^2}
+\mathcal{C}
+\mathcal{C}
+1
+1
+E(z)
+ \mathcal{C}  (\mathcal{E}\times\cdots\times\mathcal{E}) + (\mathcal{Z}\times\mathcal{E}\times\cdots\times\mathcal{E}) + (\mathcal{E}\times\mathcal{Z}\times\cdots\times\mathcal{E}) + \dots + (\mathcal{E}\times\cdots\times\mathcal{E}\times\mathcal{Z}) 
+\mathcal{C} = (\mathcal{E}^k) + k(\mathcal{Z}\times\mathcal{E}^{k-1})
+C(z) = E(z)^k + kzE(z)^{k-1}
+C(z) = \left(\frac{z^2}{1-z^2}\right)^k + kz\left(\frac{z^2}{1-z^2}\right)^{k-1}.
+C(z)
+C_n = [z^n]C(z)
+[z^n]\left(\frac{z}{1-z}\right)^r = \binom{n-1}{r-1}
+[z^n]\left(\frac{z^2}{1-z^2}\right)^k = [z^{n-2k}](1-z^2)^{-k} = [z^{n/2-k}](1-z)^{-k}[n\text{ is even}] = (-1)^{n/2-k}\binom{-k}{n/2-k}[n\text{ is even}] = \binom{n/2-1}{n/2-k}[n\text{ is even}] = \binom{n/2-1}{k-1}[n\text{ is even}]
+[z^n]\left(kz(\frac{z^2}{1-z^2})^{k-1}\right)=k[z^{(n-1)/2}](\frac{z}{1-z})^{k-1}[n\text{ is odd}] = k\binom{(n-1)/2 - 1}{k-1}[n\text{ is odd}].

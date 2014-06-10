@@ -1,0 +1,38 @@
+\frac1{1\cdot 2\cdot 3\cdot 4} + \frac4{3\cdot 4\cdot 5\cdot 6} + \frac9{5\cdot 6\cdot 7\cdot 8} + \frac{16}{7 \cdot 8 \cdot 9 \cdot 10} + \cdots
+T_n
+T_n = \frac{n^2}{(2n-1)(2n)(2n+1)(2n+2)}
+ = \frac1{24} \times \biggl( \frac1{2n-1} + \frac3{2n+1} - \frac4{2n+2} \biggr)
+ = \frac1{24} \times \biggl[\biggl( \frac1{2n-1} + \frac1{2n+1}\biggr) + 4 \times \biggl(\frac1{2n+1} - \frac1{2n+2} \biggr) \biggr]
+ S_\infty =   \frac1{24} \times \biggl[( 1 - \frac13 + \frac13 -  \frac15 +  \frac15 + \cdots ) + 4 \times (\ln 2 - \frac12)\biggr]
+ = \frac16 \log_e 2 - \frac1{24}
+T_n
+ \dfrac{n}{2(2n-1)(2n+1)(2n+2)} = \dfrac{A}{2n-1} + \dfrac{B}{2n+1} + \dfrac{C}{2n+2}
+\displaystyle 2n-1
+\displaystyle n=1/2
+\displaystyle A = \dfrac{1/2}{2 \times 2 \times 3} = \dfrac{1}{24}
+\displaystyle 2n+1
+\displaystyle n=-1/2
+B
+\displaystyle B = \dfrac{-1/2}{2 \times -2 \times 1} = \dfrac{1}{8}
+\displaystyle 2n+2
+\displaystyle n = -1
+\displaystyle C = \dfrac{-1}{ 2 \times -3 \times -1 } = \dfrac{-1}{6}
+ \dfrac{n}{2(2n-1)(2n+1)(2n+2)} = \dfrac{1}{24}(\dfrac{1}{2n-1} + \dfrac{3}{2n+1} - \dfrac{4}{2n+2})
+H_n = \sum_{j=1}^{n} \dfrac{1}{j} = \log n + \gamma + \mathcal{O}(\dfrac{1}{n})
+\sum_{j=1}^{n} \dfrac{1}{2j - 1} = H_{2n} - \dfrac{1}{2} H_n = \log 2 + \frac{\log n}{2} + \gamma/2 + \mathcal{O}(\dfrac{1}{n})
+n
+\dfrac{1}{24}(\log 2 + \dfrac{\log n}{2} + \gamma/2 + 3\log 2 + 3 \dfrac{\log (n+1)}{2} - 3 + 3 \gamma/2  - 2\log (n+1)  - 2\gamma +2) + \mathcal{O}(\dfrac{1}{n})
+\log(n+1)  = \log n + \mathcal{O}(\dfrac{1}{n})
+\dfrac{1}{24}(4 \log 2  -1) + \mathcal{O}(\dfrac{1}{n})
+\displaystyle n \to \infty
+ \dfrac{1}{24}(4 \log 2 - 1)
+\rm\:S\:
+\rm\: S\ a(n)\: \to\: a(n+1)\:,\: 
+\rm\ P(S)\ 
+\rm\:S\:
+\rm\:c\:
+\rm\:n\:,\ 
+\rm\ S\ c = c\:.\: 
+\rm\ \sum\ P(S)\ a(n)\ =\ \sum\ (P(S)-P(1))\ a(n)\ +\ P(1)\: \sum\: a(n)\:.\ 
+\rm\: \Rightarrow\ S-1 \:|\: P(S)-P(1)\:.\ 
+\rm\ \sum\: a(n)\:.

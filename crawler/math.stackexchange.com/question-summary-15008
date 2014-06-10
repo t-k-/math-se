@@ -1,0 +1,23 @@
+\sum\nolimits_{k = 1}^{n - 1} {\frac{{x^k }}{{n - k}}}
+|x|>1
+n
+u=1/x
+|x|>1
+|u|<1
+\sum\nolimits_{k = 1}^\infty  {\frac{{u^k }}{k}}  =  - \log (1 - u)
+ - \log (1 - \frac{1}{x}) = \log (\frac{x}{{x - 1}})
+n
+ S(n,x) := \sum\limits_{k = 1}^{n - 1} {\frac{{x^k }}{{n - k}}} = x^n \sum\limits_{k = 1}^{n - 1} {\frac{{u^k }}{k}}, 
+ S(n,x) \approx x^n \log \bigg(\frac{x}{{x - 1}}\bigg), 
+S(n,x)
+n=10
+x
+\begin{array}{ccc}x&S(n,x)&x^n \log\left(\frac{x}{x-1}\right)\\-5&-1780484.04&-1780483.95\\-3&-16987.42&-16987.34\\2&709.598&709.783\\ 4&301656.39&301656.52\\6&1.102428722 \times 10^7&1.102428734 \times 10^7\end{array}
+f_n(x)
+y=1/x
+h_n(y):=g_n(1/y)
+h_n(y)
+n
+f_n(x)
+g_n(x):=x^{-n}f_n(x)=\sum_{k=1}^{n-1}\frac{x^{k-n}}{n-k}=\sum_{k=1}^{n-1}\frac{x^{-k}}{k}.
+\sum_{k=1}^{n-1}y^{k-1}=\frac{1-y^{n-1}}{1-y}.

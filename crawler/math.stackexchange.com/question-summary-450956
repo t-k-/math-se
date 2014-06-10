@@ -1,0 +1,48 @@
+y\ne 0
+K_1
+|\arg z|<\pi /2
+z=iy
+y
+ \int _0^\infty e^{-iyx}\sqrt{x(x+2)}\, dx 
+ K_1(z) = ze^{-z}\int _0^\infty e^{-zx}\sqrt{x(x+2)}\, dx 
+y\ne 0
+ \int _0 ^\infty e^{-iyx}(\sqrt{x(x+2)} -x-1)\, dx \quad ? 
+\int_0^\infty  \exp(-i y x) \sqrt{x(x+2)} d x
+T:~\mathcal{D}(\mathbb{R}) \ni \phi \mapsto \int_0^\infty \mathcal{F}(\phi)(x) \sqrt{x(x+2)} d x \in \mathbb{C}
+\mathcal{F}(\phi)(x)=\int_\mathbb{R} \exp(-i y x) \phi(y) d y 
+|(T - \mathcal{F}(\Theta) - \mathcal{F}(x \Theta)) \phi|^2 \leq \left|\int_0^\infty \mathcal{F}(\phi)(x) (\sqrt{x(x+2)} - x - 1) d x\right|^2 \leq \\ \leq\left(\int_{-\infty}^\infty |\mathcal{F}(\phi)(x)|^2 d x \right) \left(\int_0^\infty | (\sqrt{x(x+2)} - x - 1)|^2 d x \right) \leq \\\leq \textrm{const} \left(\int_{-\infty}^\infty |\phi(y)|^2 d y \right) \leq \textrm{const} |\textrm{supp}(\phi)|^2 \|\phi \|_\infty^2
+\phi
+\Theta
+|\textrm{supp}(\phi)|
+\phi
+T -\mathcal{F}(\Theta) - \mathcal{F}(x\Theta)
+ \mathcal{F}(\Theta)
+\mathcal{F}(x\Theta)
+T
+\phi\in \mathcal{D}(]0,\infty[)
+\phi
+\textrm{supp}(\phi) \subset ]0,\infty[
+\mathcal{F}(\phi)(z) = \int_\mathbb{R} \exp(-i y z) \phi(y) d y
+\textrm{Im} z < 0
+T\phi = \int_0^\infty \mathcal{F}(\phi)(x) \sqrt{x(x+2)} d x = \int_0^{-i \infty} \mathcal{F}(\phi)(z) \sqrt{z(z+2)} d z = \\ = (-i) \int_0^\infty \mathcal{F}(\phi)(-i x) \sqrt{(-i x)((-i x)+2)}  d x  ~~~~~~~(1)
+y>0
+K_1(i y) = y \exp(-i y) \int_0^\infty \exp(- x y) \sqrt{(-i x)((-i x)+2)}  d x =~~~~~~~(2)\\= y \exp(-i y) \int_0^{e^{+i\pi/4}\infty} \exp(- x y) \sqrt{(-i x)((-i x)+2)}  d x =\\=  e^{+i\pi/4} y \exp(-i y) \int_0^\infty \exp(- e^{+i \pi/4} x y) \sqrt{(e^{-i\pi/4} x)((e^{-i\pi/4} x)+2)}  d x
+K_1
+K_1(y) =  y \exp(-y) \int_0^\infty \exp(- x y) \sqrt{x(x+2)}  d x =\\=  y \exp(-y) \int_0^{e^{-i \pi/4}\infty} \exp(-  x y) \sqrt{x(x+2)}  d x =\\= e^{-i \pi/4} y \exp(-y) \int_0^{\infty} \exp(- e^{-i \pi/4} x y) \sqrt{(e^{-i \pi/4}x)((xe^{-i \pi/4})+2)}  d x 
+K_1
+\mathcal{F}(\phi)
+ \int \frac{K_1(i y)}{y \exp(i y)} \phi(y) d y =  \int_0^\infty \mathcal{F}(\phi)(-i x) \sqrt{(-i x)((-i x)+2)}  d x
+\textrm{supp}\phi\subset]0,\infty[
+T \phi = (-i)\int \frac{K_1(i y)}{y \exp(i y)} \phi(y) d y 
+\mathcal{D}(]0,\infty[)
+T(y) = \frac{-i K_1(i y)}{y \exp(-i y)}
+\mathcal{D}(]-\infty,0[)
+T(y)=\lim_{\epsilon\searrow 0} \frac{-i y K_1(i y)}{(y-i \epsilon)^2 \exp(-i y)}
+T(y)= \lim_{\epsilon\searrow 0} \frac{-i y K_1(i y)}{(y-i \epsilon)^2 \exp(-i y)} + S(y)
+S(y)
+\mathcal{F}(\Theta)(y) - \mathcal{F}(x \Theta))(y) = \lim_{\epsilon\searrow 0} \frac{-i y-1}{(y-i \epsilon)^2}
+|(T - \mathcal{F}(\Theta) - \mathcal{F}(x \Theta)) \phi|\leq\textrm{const}|\textrm{supp}(\phi)|\|\phi\|_\infty
+|S\phi|\leq\textrm{const}|\textrm{supp}(\phi)|\|\phi\|_\infty
+|S\phi|=0
+\phi\in\mathcal{D}(\mathbb{R}\setminus\{0\})
+S=0

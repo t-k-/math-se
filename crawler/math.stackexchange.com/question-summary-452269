@@ -1,0 +1,23 @@
+\int_{0}^{r_{0}}\int_{a}^{b}r_{1}e^{-\beta(r_{1}^{2}+r_{2}^{2}-2r_{1}r_{2}\cos(\theta))}d\theta dr_{1}
+a
+b
+\int_0^{r_0}\int_a^br_1e^{-\beta(r_1^2+r_2^2-2r_1r_2\cos\theta)}~d\theta~dr_1
+=\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\int_a^be^{2\beta r_1r_2\cos\theta}~d\theta~dr_1
+=\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\int_a^b\sum\limits_{n=0}^\infty\dfrac{2^{2n}\beta^{2n}r_1^{2n}r_2^{2n}\cos^{2n}\theta}{(2n)!}d\theta~dr_1+\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\int_a^b\sum\limits_{n=0}^\infty\dfrac{2^{2n+1}\beta^{2n+1}r_1^{2n+1}r_2^{2n+1}\cos^{2n+1}\theta}{(2n+1)!}d\theta~dr_1
+\int\cos^{2n}\theta~d\theta
+n
+\int\cos^{2n}\theta~d\theta=\dfrac{(2n)!\theta}{4^n(n!)^2}+\sum\limits_{k=1}^n\dfrac{(2n)!((k-1)!)^2\sin\theta~\cos^{2k-1}\theta}{4^{n-k+1}(n!)^2(2k-1)!}+C
+\int\cos^{2n+1}\theta~d\theta
+n
+\int\cos^{2n+1}\theta~d\theta
+=\int\cos^{2n}\theta~d(\sin\theta)
+=\int(1-\sin^2\theta)^n~d(\sin\theta)
+=\int\sum\limits_{k=0}^nC_k^n(-1)^k\sin^{2k}\theta~d(\sin\theta)
+=\sum\limits_{k=0}^n\dfrac{(-1)^kn!\sin^{2k+1}\theta}{k!(n-k)!(2k+1)}+C
+\therefore\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\int_a^b\sum\limits_{n=0}^\infty\dfrac{2^{2n}\beta^{2n}r_1^{2n}r_2^{2n}\cos^{2n}\theta}{(2n)!}d\theta~dr_1+\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\int_a^b\sum\limits_{n=0}^\infty\dfrac{2^{2n+1}\beta^{2n+1}r_1^{2n+1}r_2^{2n+1}\cos^{2n+1}\theta}{(2n+1)!}d\theta~dr_1
+=\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\left[\sum\limits_{n=0}^\infty\dfrac{\beta^{2n}r_1^{2n}r_2^{2n}\theta}{(n!)^2}+\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{4^{k-1}\beta^{2n}r_1^{2n}r_2^{2n}((k-1)!)^2\sin\theta~\cos^{2k-1}\theta}{(n!)^2(2k-1)!}\right]_a^b~dr_1+\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\left[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^k2^{2n+1}\beta^{2n+1}r_1^{2n+1}r_2^{2n+1}n!\sin^{2k+1}\theta}{(2n+1)!k!(n-k)!(2k+1)}\right]_a^b~dr_1
+=\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\left(\sum\limits_{n=0}^\infty\dfrac{\beta^{2n}r_1^{2n}r_2^{2n}(b-a)}{(n!)^2}+\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{4^{k-1}\beta^{2n}r_1^{2n}r_2^{2n}((k-1)!)^2(\sin b~\cos^{2k-1}b-\sin a~\cos^{2k-1}a)}{(n!)^2(2k-1)!}\right)dr_1+\int_0^{r_0}r_1e^{-\beta(r_1^2+r_2^2)}\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^k2^{2n+1}\beta^{2n+1}r_1^{2n+1}r_2^{2n+1}n!(\sin^{2k+1}b-\sin^{2k+1}a)}{(2n+1)!k!(n-k)!(2k+1)}dr_1
+=\int_0^{r_0}\sum\limits_{n=0}^\infty\dfrac{\beta^{2n}r_1^{2n+1}e^{-\beta r_1^2}r_2^{2n}e^{-\beta r_2^2}(b-a)}{(n!)^2}dr_1+\int_0^{r_0}\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{4^{k-1}\beta^{2n}r_1^{2n+1}e^{-\beta r_1^2}r_2^{2n}e^{-\beta r_2^2}((k-1)!)^2(\sin b~\cos^{2k-1}b-\sin a~\cos^{2k-1}a)}{(n!)^2(2k-1)!}dr_1+\int_0^{r_0}\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^k2^{2n+1}\beta^{2n+1}r_1^{2n+2}e^{-\beta r_1^2}r_2^{2n+1}e^{-\beta r_2^2}n!(\sin^{2k+1}b-\sin^{2k+1}a)}{(2n+1)!k!(n-k)!(2k+1)}dr_1
+=\int_0^{r_0}\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\dfrac{(-1)^m\beta^{m+2n}r_1^{2m+2n+1}r_2^{2n}e^{-\beta r_2^2}(b-a)}{m!(n!)^2}dr_1+\int_0^{r_0}\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^m4^{k-1}\beta^{m+2n}r_1^{2m+2n+1}r_2^{2n}e^{-\beta r_2^2}((k-1)!)^2(\sin b~\cos^{2k-1}b-\sin a~\cos^{2k-1}a)}{m!(n!)^2(2k-1)!}dr_1+\int_0^{r_0}\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{m+k}2^{2n+1}\beta^{m+2n+1}r_1^{2m+2n+2}r_2^{2n+1}e^{-\beta r_2^2}n!(\sin^{2k+1}b-\sin^{2k+1}a)}{m!(2n+1)!k!(n-k)!(2k+1)}dr_1
+=\left[\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\dfrac{(-1)^m\beta^{m+2n}r_1^{2m+2n+2}r_2^{2n}e^{-\beta r_2^2}(b-a)}{m!(n!)^2(2m+2n+2)}\right]_0^{r_0}+\left[\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^m4^{k-1}\beta^{m+2n}r_1^{2m+2n+2}r_2^{2n}e^{-\beta r_2^2}((k-1)!)^2(\sin b~\cos^{2k-1}b-\sin a~\cos^{2k-1}a)}{m!(n!)^2(2k-1)!(2m+2n+2)}\right]_0^{r_0}+\left[\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{m+k}2^{2n+1}\beta^{m+2n+1}r_1^{2m+2n+3}r_2^{2n+1}e^{-\beta r_2^2}n!(\sin^{2k+1}b-\sin^{2k+1}a)}{m!(2n+1)!k!(n-k)!(2m+2n+3)(2k+1)}\right]_0^{r_0}
+=\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\dfrac{(-1)^m\beta^{m+2n}r_0^{2m+2n+2}r_2^{2n}e^{-\beta r_2^2}(b-a)}{2m!(n!)^2(m+n+1)}+\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=1}^n\dfrac{(-1)^m4^{k-1}\beta^{m+2n}r_0^{2m+2n+2}r_2^{2n}e^{-\beta r_2^2}((k-1)!)^2(\sin b~\cos^{2k-1}b-\sin a~\cos^{2k-1}a)}{2m!(n!)^2(2k-1)!(m+n+1)}+\sum\limits_{m=0}^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{m+k}2^{2n+1}\beta^{m+2n+1}r_0^{2m+2n+3}r_2^{2n+1}e^{-\beta r_2^2}n!(\sin^{2k+1}b-\sin^{2k+1}a)}{m!(2n+1)!k!(n-k)!(2m+2n+3)(2k+1)}

@@ -1,0 +1,3 @@
+x\rightarrow y \iff \lnot x\lor y
+\lnot(x\rightarrow y)\iff \lnot(\lnot x\lor y) \iff x\land\lnot y
+ \begin{align} \lnot (      \exists x\forall y\ (P(x,y)\rightarrow Q(x,y))  &\iff \forall x \lnot (\forall y\ (P(x,y)\rightarrow Q(x,y)) \\ &\iff \forall x \exists y\ \lnot(P(x,y)\rightarrow Q(x,y)) \\ &\iff \forall x \exists y\ \lnot(\lnot P(x,y)\lor Q(x,y)) \\ &\iff \forall x \exists y\ (P(x,y)\land\lnot Q(x,y)) \end{align}

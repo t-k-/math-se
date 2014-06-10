@@ -1,0 +1,14 @@
+g,g_z\to 0 
+z\to\infty
+g=g(x,z)
+f(x)=\exp(ikx)\left(1+i{g \over k}-{g_z \over k^2}\right)\bigg|_{z=x}-{1\over k^2}\int_x^\infty g_{zz}\exp(ikz)\,\,dz
+z>x
+u=-2(g_x+g_z)\big|_{z=x}
+g_{xx}=g_{zz}+ug
+\left\{-\partial_x^2-2(g_x+g_z)\big|_{z=x}\right\}f=k^2f
+g_{xx} = g_{zz} + ug
+ f(x) = e^{ikx} + \int_x^\infty g(x,z) e^{ikz} dz 
+ \partial_x f(x) = e^{ikx}\big(ik - g(x,x)\big) + \int_x^\infty g_x(x,z) e^{ikz}dz 
+ \partial_{xx} f(x) = -e^{ikx}\big(k^2 + ik g(x,x) + g_z(x,x) + 2g_x(x,x)\big) + \int_0^\infty g_{xx}(x,z) e^{ikx}. 
+g_{zz}
+u(x) = - 2 \big(g_z(x,x) + 2g_x(x,x)\big)

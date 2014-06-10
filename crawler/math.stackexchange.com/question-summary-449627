@@ -1,0 +1,28 @@
+\varrho(\mathbf{r}) = \sigma \cos\left(\frac{2 \pi}{L} x\right) \, \delta(y)
+ \phi(\mathbf{r}) = \int_{\mathbb{R}^3} \frac{\varrho(\mathbf{r}')}{|\mathbf{r} - \mathbf{r}'|} \, \mathrm{d}^3 r' = \sigma \int\limits_{-\infty}^{\infty} \mathrm{d}x \int\limits_{-\infty}^{\infty} \mathrm{d}y \int\limits_{-\infty}^{\infty} \mathrm{d}z \, \frac{\cos\left(\frac{2 \pi}{L} x\right) \, \delta(y)}{\sqrt{(x-x')^2 + (y-y')^2 + (z-z')^2}} 
+\mathbf{k}^2 = k_x^2 + k_y^2 + k_z^2
+ \nabla^2 \phi(\mathbf{r}) = - 4 \pi \varrho(\mathbf{r}) 
+ \begin{aligned} \frac{1}{\sqrt{(2 \pi)^3}} \int_{\mathbb{R}^3} \nabla^2 \phi(\mathbf{r}) \, \mathrm{e}^{-\mathrm{i} \mathbf{k} \cdot \mathbf{r}} \, \mathrm{d}^3 r' &= - \frac{4 \pi }{\sqrt{(2 \pi)^3}} \int_{\mathbb{R}^3} \varrho(\mathbf{r}) \, \mathrm{e}^{-\mathrm{i} \mathbf{k} \cdot \mathbf{r}} \, \mathrm{d}^3 r' \\ \mathbf{k}^2 \, \hat{\phi}(\mathbf{k}) &= - 4 \pi \sigma \int_{\mathbb{R}^3} \cos\left(\frac{2 \pi}{L} x\right) \, \delta(y) \, \mathrm{e}^{-\mathrm{i} \mathbf{k} \cdot \mathbf{r}} \, \mathrm{d}^3 r' \\ \mathbf{k}^2 \, \hat{\phi}(\mathbf{k}) &= - 4 \pi \sigma \int\limits_{-\infty}^{\infty} \cos\left(\frac{2 \pi}{L} x\right) \, \mathrm{e}^{-\mathrm{i} k_x x} \, \mathrm{d}x \int\limits_{-\infty}^{\infty} \delta(y) \, \mathrm{e}^{-\mathrm{i} k_y y} \, \mathrm{d}y \int\limits_{-\infty}^{\infty} \mathrm{e}^{-\mathrm{i}  k_z z} \, \mathrm{d}z \\ \mathbf{k}^2 \, \hat{\phi}(\mathbf{k}) &= - 4 \pi \sigma \cdot \frac{1}{2} \left( \delta\left(k_x - \frac{2 \pi}{L}\right) + \delta\left(k_x + \frac{2 \pi}{L}\right) \right) \cdot 1 \cdot \int\limits_{-\infty}^{\infty} \mathrm{e}^{-\mathrm{i}  k_z z} \, \mathrm{d}z \end{aligned} 
+ \int\limits_{-\infty}^{\infty} \mathrm{e}^{-\mathrm{i}  k_z z} \, \mathrm{d}z 
+y_0=0
+\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} 1\mathrm{e}^{-\mathrm{i}  k_z z} \, \mathrm{d}z=\sqrt{2\pi}\delta(k_z).
+\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}\left(\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} 1\mathrm{e}^{-\mathrm{i}  k_z z} \,{dz}\right)\mathrm{e}^{\mathrm{i}  k_z z} {dk_z}=\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}\sqrt{2\pi}\delta(k_z)\mathrm{e}^{\mathrm{i}  k_z z} {dk_z}=1,
+\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} \text{exp}\left[{\mathrm{i}  k_y y_0}\right]\text{exp}\left[-{\mathrm{i}  k_y y}\right] \,{dk_y}=\sqrt{2\pi}\delta(y-y_0)
+\frac{1}{(2\pi)^{3/2}}\int\limits_{\mathbb{R}^3}\mathbf{k}^2 \, \hat{\phi}(\mathbf{k})\,e^{i\mathbf{k}\cdot\mathbf{r}}{d\mathbf{k}}=
+\frac{4\pi\sigma}{(2\pi)^{3/2}}\int\limits_{-\infty}^{\infty} \hat{I_1}(k_x)\,e^{\mathrm{i}  k_x x}{dk_x}\int\limits_{-\infty}^{\infty} \hat{I_2}(k_y)\,e^{\mathrm{i}  k_y y}{dk_y}\int\limits_{-\infty}^{\infty} \hat{I_3}(k_z)\,e^{\mathrm{i}  k_z z}{dk_z},
+\frac{-1}{(2\pi)^{3/2}}\int\limits_{\mathbb{R}^3}\mathbf{k}^2 \, \hat{\phi}(\mathbf{k})\,e^{i\mathbf{k}\cdot\mathbf{r}}{d\mathbf{k}}=\nabla^2 \phi(\mathbf{r}),
+\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} \hat{I_2}(k_y)\,e^{\mathrm{i}  k_y y}{dk_y}=\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} \,e^{\mathrm{i}  k_y y} {dk_y}=\delta(y),
+\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} \hat{I_3}(k_z)\,e^{\mathrm{i}  k_z z}{dk_z}=\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} \sqrt{2\pi}\delta(k_z) \,e^{\mathrm{i}  k_z z} {dk_z}=1,
+\nabla^2 \phi(\mathbf{r}) = - 4 \pi \sigma\cos\left(\frac{2\pi x}{L}\right)\delta(y),\tag{2}
+\nabla^2 \phi(\mathbf{r}) = - 4 \pi\varrho(\mathbf{r}) .
+1
+(1)
+\hat{\phi}(\mathbf{k}) =  \dfrac{4\pi \sigma \sqrt{2\pi}\frac{1}{2} \left[ \delta\left(k_x - \frac{2 \pi}{L}\right) + \delta\left(k_x + \frac{2 \pi}{L}\right) \right]\delta(k_z)}{k_x^2+k_y^2+k_z^2},
+y\ne0
+(3)
+y=0
+(3)
+y
+\delta
+y=0
+\nabla^2 \phi(\mathbf{r}) =0,

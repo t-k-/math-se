@@ -1,0 +1,15 @@
+dX(t) = udt + \sigma X(t)dB(t)
+dX(t) = udt + \sigma X(t)dB(t)
+X(t)
+X(t)
+B(t)
+u
+\sigma
+ \exp{\big( -\sigma B(t) + \frac12 \sigma^2t\big)}dX(t) = \exp{\big(-\sigma B(t)+\frac12\sigma^2t\big)}(udt + \sigma X(t)dB(t)) 
+f(t,x,b):=\exp{\big( -\sigma B(t) + \frac12 \sigma^2t\big)}X(t)
+ \frac{df}{dt} = \frac12\sigma^2 X(t)e^{-\sigma B(t) + \frac12 \sigma^2t} \\ \frac{df}{dx} = e^{-\sigma B(t) + \frac12 \sigma^2t} \\ \frac{df}{db} = -\sigma X(t)e^{-\sigma B(t) + \frac12 \sigma^2t} \\ \frac{d^2f}{dx^2} = 0 \\ \frac{d^2f}{db^2} = \sigma^2 X(t) e^{-\sigma B(t) + \frac12 \sigma^2t} \\ \frac{d^2f}{dxdb} = -\sigma e^{-\sigma B(t) + \frac12 \sigma^2t}  
+ d\langle B\rangle_t = dt \\ d\langle X,B\rangle_t = ??? 
+d\langle X,B\rangle_t
+<X,B>_t = \sigma \cdot X_t \, dt
+<\cdot,\cdot>
+dX_t = (a(t)+b(t) \cdot X_t) \, dt + (c(t)+d(t) \cdot X_t) \, dB_t

@@ -1,0 +1,28 @@
+y \in \mathbb{R^n}
+\lambda \in \mathbb{R}
+K_{\theta}^{-1}
+\frac{\partial}{\partial \lambda}y^T \left(\sigma^2 I + \lambda^{-1}K_{\theta}^{-1}\right)^{-1}y
+\frac{\partial}{\partial \lambda}y^T (\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1}y = \frac{\partial}{\partial \lambda}\text{tr}\left(y^T (\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1}y\right)
+\frac{\partial}{\partial \lambda}\text{tr}\left(y^T (\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1} y\right) = \frac{\partial}{\partial \lambda}\text{tr}\left(y^T y(\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1} \right)
+ = \frac{\partial}{\partial \lambda}\sum y_i ^2\text{tr}\left( \sigma^2 I + \lambda^{-1}K_{\theta}^{-1}\right)^{-1} = \sum y_i ^2\text{tr}\left(\frac{\partial}{\partial \lambda}(\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1}\right)
+M(\alpha)
+\alpha \in \mathbb{R}
+\frac{d}{d\alpha} M(\alpha)^{-1} = M(\alpha)^{-1}\left(\frac{d}{d\alpha} M(\alpha)\right)  M(\alpha)^{-1}
+\sum y_i ^2\text{tr}\left(\frac{\partial}{\partial \lambda}(\sigma^2 I + \lambda^{-1}K_{\theta}^{-1})^{-1}\right) = \sum y_i^2 \text{tr}\left[ (\sigma^2 I + \lambda^{-1} K_{\theta}^{-1})^{-1}(-\lambda^{-2} K_{\theta}^{-1}) (\sigma^2 I + \lambda^{-1} K_{\theta}^{-1})^{-1}\right]
+-\sum y_i^2 \text{tr}\left[(\lambda\sigma^2 K_{\theta} + I)^{-1}(\lambda\sigma^2 I + K_\theta^{-1})^{-1}\right]
+ =-\sum y_i^2 \text{tr}\left[(\lambda^2\sigma^4 K_{\theta} + 2\lambda\sigma^2 I + K_{\theta}^{-1})^{-1}\right]
+K
+K=ADA^T
+ D=
+(d_1, \ldots, d_n)
+(\delta^2 I + \lambda^{-1} K^{-1})^{-1} = A   (\delta^2 I + \lambda^{-1} D^{-1})^{-1} A^T = A 
+ ( ... , \frac{\lambda  d_i}{  \lambda d_i\delta^2 +1 }  , ... ) A^T
+\frac{\partial }{\partial \lambda} \frac{\lambda  d_i}{  \lambda d_i\delta^2 +1 } =\frac{ d_i}{  (\lambda d_i\delta^2 +1)^2 } 
+\frac{\partial }{\partial \lambda} y^T  (\delta^2 I + \lambda^{-1} K^{-1})^{-1} y = y^T A (\lambda^2\delta^2 D + D^{-1} +2\lambda \delta^2 I) A^T y = y^T( \lambda^2\delta^2 K + K^{-1} +2\lambda \delta^2 I)  y
+\frac{\partial }{\partial \lambda} y^T  (\delta^2 I + \lambda^{-1} K^{-1})^{-1} y = y^T A
+\frac{ d_i}{  (\lambda d_i\delta^2 +1)^2 } , ... ) A^T y
+ T = A
+\frac{ d_i}{  (\lambda d_i\delta^2 +1)^2 } , ... ) A^T
+T^{-1}=A
+..., \frac{ 2\lambda d_i\delta^2 + 1 + \lambda^2 d_i^2 \delta^4}{  d_i  }, ... ) A^T = 2\lambda\delta^2 I  + K^{-1} + \lambda^2 \delta^4 K 
+\frac{\partial }{\partial \lambda} y^T  (\delta^2 I + \lambda^{-1} K^{-1})^{-1} y =  y^T( 2\lambda\delta^2 I  + K^{-1} + \lambda^2 \delta^4 K)^{-1} y 

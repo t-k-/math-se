@@ -1,0 +1,15 @@
+\mathbb{R}^3
+\phi\colon\mathbb{R}^2\to\mathbb{R}^3, (x,y)\mapsto (x,y,xy)
+ M=\left\{(x,y,z)\in\mathbb{R}^2: z=xy\right\} 
+ \omega:=3zdy\wedge dz+(x^2+y^2)dz\wedge dx+xzdx\wedge dy. 
+ A:=\left\{(x,y,z)\in M: \lvert x\rvert\leq 1,\lvert y\rvert\leq 1\right\} 
+ \int_{A}\omega. 
+\phi^{\star}\omega
+ \phi^{\star}\omega=x^2ydx\wedge dy-(x^2+y^2)dx\wedge y dx+xdy+3xydy\wedge ydx+xdy\\ =x^2ydx\wedge dy-(x^2+y^2)xdx\wedge dy-2xy^2dx\wedge dy\\ =(-x^3+x^2y-4xy^2)dx\wedge dy 
+\phi^{-1}(A)=[-1,1]\times [-1,1]
+ \int\limits_{[-1,1]\times [-1,1]}(-x^3+x^2y-4xy^2)dx\wedge dy 
+\phi^\ast \omega
+  \int_A \iota^\ast\omega = \int_{[-1,1]^2} (\iota \circ \phi)^\ast\omega = \int_{[-1,1]^2} \psi^\ast \omega, 
+  (\psi^1(x,y),\psi^2(x,y),\psi^3(x,y)) = \psi(x,y) := (\iota \circ \phi)(x,y) = (x,y,xy). 
+  \psi^\ast dx = d \psi^1 = \frac{\partial \psi^1}{\partial x} dx + \frac{\partial \psi^1}{\partial y} dy = dx,\\  \psi^\ast dy = d \psi^2 = \frac{\partial \psi^2}{\partial x} dx + \frac{\partial \psi^2}{\partial y} dy = dy,\\  \psi^\ast dz = d \psi^3 = \frac{\partial \psi^3}{\partial x} dx + \frac{\partial \psi^3}{\partial y} dy = ydx + xdy. 
+  \psi^\ast \omega = \psi^\ast(3z dy \wedge dz + (x^2+y^2)dz \wedge dx + xz dx \wedge dy)\\  = 3\psi^3 \psi^\ast dy \wedge \psi^\ast dz + ((\psi^1)^2+(\psi^2)^2)\psi^\ast dz \wedge \psi^\ast dx + \psi^1 \psi^2 \psi^\ast dx \wedge \psi^\ast dy\\  = 3xy dy \wedge (ydx+xdy) + (x^2+y^2)(ydx+xdy)\wedge dx + x(xy)dx\wedge dy\\  = -3xy^2 dx \wedge dy -x(x^2+y^2)dx \wedge dy + x^2 y dx \wedge dy\\  = (-x^3+x^2y-4xy^2)dx \wedge dy, 

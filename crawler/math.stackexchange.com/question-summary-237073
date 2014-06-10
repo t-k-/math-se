@@ -1,0 +1,68 @@
+38
+18
+2
+\
+ bet on "black" pays 
+2x
+\
+\
+ and intend to walk away with 
+16
+\
+ on black. If you win you have 
+16
+\
+ and bet 
+2
+\
+ on the next spin. If you win that bet you walk away, otherwise you bet 
+8
+\
+ if you win or 
+0
+\
+R
+i
+R_i
+R = R_1 + R_2 + \dots + R_{100}
+E[R] = E[R_1] + E[R_2] + \dots + E[R_{100}]
+E[R]
+E[R_i]
+E[R_i]
+1
+2
+0
+1
+1
+18/38
+20/38
+R_i
+1
+18/38
+-1
+20/38
+R_i
+E[R_i] = \frac{18}{38}(-1) + \frac{20}{38}(1) = \frac{-2}{38}
+R_i
+E[R] = E[R_1] + E[R_2] + \dots + E[R_{100}] = \left(\frac{-2}{38}\right)100 \approx -5.26
+W
+p = 18/38
+5
+16
+q
+q = p + (1-p)p + (1-p)^2p + (1-p)^3p = 1 - (1-p)^4 = 1 - (20/38)^4 \approx 0.92
+W
+16
+q
+0
+1-q
+E[W] = q(16) + (1-q)0 = (1-(1-p)^4)16 \approx 14.77
+p = \frac{18}{38} = \frac{9}{19} = 0.474
+X
+E(X) = 100p = \frac{900}{19} = 47.37
+\$$2 for each 
+\
+94.74
+2 for each $\
+1-p = \frac{20}{38} = \frac{10}{19} = 0.526
+(\frac{10}{19})^{4} = \frac{10,000}{130,321} = 0.0767

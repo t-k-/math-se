@@ -1,0 +1,8 @@
+\frac{d}{dx}\left(\int_0^x f(s)ds\right)=\frac{d}{dx}F(x)=f(x)
+\frac{dg}{dx} = \lim_{h\to0} \frac{g(x+h)-g(h)}{h} 
+\frac{d}{dx}\int_0^xf(s)\;ds =\lim_{h\to0} \;\left[\frac{\int_0^{x+h}f(s)\;ds\;-\;\int_0^{x}f(s)\;ds}{h}\right]
+= \lim_{h\to0} \;\left[\frac{\int_x^{x+h}f(s)\;ds}{h}\right]
+= \lim_{h\to0} \;\left[\frac{f(x) h + O(h^2)}{h}\right]
+= \lim_{h\to0}\; [f(x) + O(h)]
+=f(x)
+f(x)

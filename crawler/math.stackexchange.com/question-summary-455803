@@ -1,0 +1,15 @@
+f: [-r, r] \to\mathbb{R}
+g(x) = \cos(nx)
+h(x) = \sin(nx)
+\int_{-r}^{r} f(x)\cos(nx)dx = 2\int_{0}^{r} f(x)\cos(nx)dx
+\int_{-r}^{r} f(x)\sin(nx)dx = 0
+f
+f
+\int_{-r}^{r}f(x)\cos(nx)dx=\int_{-r}^{0}f(x)\cos(nx)dx+\int_{0}^{r}f(x)\cos(nx)dx
+=-\int_{-r}^{0}f(-(-x))\cos(-n(-x))(-1)dx+\int_{0}^{r}f(x)\cos(nx)dx
+=-\int_{-r}^{0}-f(-x)\cos(n(-x))(-1)dx+\int_{0}^{r}f(x)\cos(nx)dx
+=\int_{r}^{0}f(x)cos(nx)dx+\int_{0}^{r}f(x)\cos(nx)dx
+-\int_{0}^{r}f(x)\cos(nx)dx+\int_{0}^{r}f(x)\cos(nx)dx=0
+\int_{-r}^{r}f(x)\sin(nx)dx=\int_{-r}^{0}f(x)\sin(nx)dx+\int_{0}^{r}f(x)\sin(nx)dx
+-\int_{-r}^{0}f(-x)\sin(n(-x))(-1)dx+\int_{0}^{r}f(x)\sin(nx)dx
+2\int_{0}^{r}f(x)\sin(nx)dx

@@ -1,0 +1,40 @@
+T(n) = \lfloor(T(n/2))\rfloor + \lfloor(log \space n)\rfloor
+T(1) = 1
+\Omega(n^{(1/1000)})
+O(n(log \space log \space n)^8)
+\Theta(15log(5n^2))
+O((log \space n)!)
+T(n) = T(n/2) + log \space n
+2^n
+2^n
+n = 2^{m}
+T(2) = T(1) + log(2) = 1 + 1 = 2
+T(4) = T(2) + log(4) = 2 + 2 = 4
+T(8) = T(4) + log(8) = 4 + 3 = 7
+\vdots
+T(2^n) = T(2^{n-1}) + log(2^n) = T(1) + log(2) + log(4) + log(8) + \ldots + log(2^{n})
+log(2) = log(2^1) = 1log(2) = 1
+log(4) = log(2^2) = 2log(2) = 2
+log(2^n) = nlog(2) = n
+1 + \sum n
+1 + \frac{n(n + 1)}{2}
+O(n^2)
+T(8) = 7 \lt 8
+T(16) = 11 \lt 16
+T(n) \lt n
+2^n
+T(n^2)
+log(n^2) = 2log(n)
+log(n)
+\Omega(n^{(1/1000)}) > log(n)
+n^{(1/1000)^{(1000)}} = n
+log(n^{1000}) = 1000log(n)
+\Omega(n) \gt \Omega(log(n))
+T(n) = \lfloor(T(n/2))\rfloor + \lfloor(log \space n)\rfloor
+n^{1/1000}
+T(2^n) = T(1) + \log 2 + \log 4 + \dots + \log 2^n
+T(m) =\Theta(\log^2 m)
+T(2^n)=\Theta(\log^2 (2^n))
+ T(2^n) = \sum_{k=0}^n \log 2^k = \log \prod_{k=0}^n 2^k = \log 2^{\sum_{k=0}^n k} = \log 2^{n(n+1)/2} = \frac{n(n+1)}{2}\log 2 
+(\log n)!=\prod_{k=1}^{\log n} k > \log n\cdot (\log n -1) \sim \log^2 n 
+T(n) = O((\log n)!)

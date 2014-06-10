@@ -1,0 +1,22 @@
+\theta(A) = \det A.
+\theta: GL_2 (\Bbb Q) \rightarrow \Bbb Q\setminus \{0\}
+A = \begin{pmatrix}         a_1 & a_2 \\         a_3 & a_4 \\         \end{pmatrix}
+B \in GL_2 (\Bbb Q)
+ \theta (A) =\det A = a_1a_4 - a_2a_3
+\theta(B) = \det B = b_1b_4 - b_2b_3
+ \begin{align} \theta(A)\theta(B)= \det A \det B & = \ (a_1a_2-a_3a_4)(b_1b_4 - b_2b_3) \\ & = a_1a_2b_1b_2 - a_3a_4b_1b_4 - a_1a_2b_2b_3 + a_3a_4b_3b_4\\ & = \det(AB) = \theta(AB) \end{align}
+\det A\det B
+\det AB
+\ker \theta = A: \det A =1
+AB=\pmatrix{a_1&a_2\\a_3&a_4}\pmatrix{b_1&b_2\\b_3&b_4}=\pmatrix{a_1b_1+a_2b_3&a_1b_2+a_2b_4\\a_3b_1+a_4b_3&a_3b_2+a_4b_4}\;,
+\begin{align*} \det AB&=(a_1b_1+a_2b_3)(a_3b_2+a_4b_4)-(a_1b_2+a_2b_4)(a_3b_1+a_4b_3)\\ &=\color{red}{a_1b_1a_3b_2}+a_1b_1a_4b_4+a_2b_3a_3b_2+\color{blue}{a_2b_3a_4b_4}\\ &\qquad-\color{red}{a_1b_2a_3b_1}-a_1b_2a_4b_3-a_2b_4a_3b_1-\color{blue}{a_2b_4a_4b_3}\\ &=a_1b_1a_4b_4+a_2b_3a_3b_2-a_1b_2a_4b_3-a_2b_4a_3b_1\\ &=a_1a_4b_1b_4-a_1a_4b_2b_3+a_2a_3b_2b_3-a_2a_3b_1b_4\\ &=a_1a_4(b_1b_4-b_2b_3)-a_2a_3(b_1b_4-b_2b_3)\\ &=(a_1a_4-a_2a_3)(b_1b_4-b_2b_3)\\ &=\det A\det B\;. \end{align*}
+AB
+\det(AB)
+\det A\det B
+AB = \begin{pmatrix}         a_1b_1+a_2b_3 & a_1b_2+a_2b_4 \\         a_3b_1+a_4b_3 & a_3b_2+a_4b_4 \\         \end{pmatrix}
+\det AB = (a_1b_1+a_2b_3)(a_3b_2+a_4b_4) - (a_1b_2 + a_2b_4)(a_3b_1+a_4b_3)
+= (a_1a_3b_1b_2 + a_1a_4b_1b_4 + a_2a_3b_2b_3 + a_2a_4b_3b_4) - (a_1a_3b_1b_2+a_1a_4b_2b_3+ a_2a_3b_1b_4+ a_2a_4b_3b_4)
+= a_1a_4b_1b_4+a_2a_3b_2b_3-a_1a_4b_2b_3-a_2a_3b_1b_4 
+= a_1a_4(b_1b_4-b_2b_3) -a_2a_3(b_1b_4-b_2b_3) 
+= (a_1a_4-a_2a_3)(b_1b_4-b_2b_3) 
+= \det A \det B.

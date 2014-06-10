@@ -1,0 +1,27 @@
+ \int_{0}^{\ln(\pi + 1)}e^x \sin(e^x - 1) \space dx 
+ u = e^x - 1 \Rightarrow \frac{du}{dx} = e^x \Rightarrow du = e^x \space dx \Rightarrow dx = \frac{1}{e^x} \space du 
+ \int_{0}^{\ln(\pi + 1)} e^x \sin(u) \frac{1}{e^x} \space du = \int_{0}^{\ln(\pi + 1)} \sin(u) \space du = -\cos(u) \space |_{0}^{\ln(\pi + 1)} = -\cos(e^x - 1) \space |_{0}^{\ln(\pi + 1)} = [-\cos(e^{\ln(\pi + 1)} - 1)] - [-\cos(e^{0} - 1)] = [-\cos(\pi + 1-1)] - [-\cos(1 - 1)] = [-\cos(\pi)] - [-\cos(0)] = -\cos(\pi) + 1 
+\int_{\frac{\pi^2}{4}}^{\pi^2}\frac{\cos(\sqrt{x})}{\sqrt(x)} \space dx \\ 
+ u = \sqrt{x} \Rightarrow \frac{du}{dx} = \frac{1}{2 \sqrt{x}} \Rightarrow du = \frac{1}{2 \sqrt{x}} \space dx \Rightarrow dx = \frac{du}{\frac{1}{2 \sqrt{x}}} = 2\sqrt{x} \space du 
+ \int_{\frac{\pi^2}{4}}^{\pi^2} = \frac{\cos(u)}{\sqrt(x)} 2\sqrt{x} \space du = 2 \int_{\frac{\pi^2}{4}}^{\pi^2} \cos(u) \space du = 2\sin(\sqrt{x}) \space |_{\frac{\pi^2}{4}}^{\pi^2} 
+ = 2\sin(\sqrt{x}) \space |_{\frac{\pi^2}{4}}^{\pi^2} = [2\sin(\sqrt{\pi^2})] - [2\sin(\sqrt{\frac{\pi^2}{4}})] = [2\sin(\pi)]-[2\sin\frac{\pi}{2}] = [2(0)]-[2(1)] = 0 - 2 = -2 
+u
+u
+\int_2^3xe^{x^2}\,dx
+u=x^2
+\frac{du}{dx}=2x
+du=2x\,dx
+x\,dx=\frac12\,du.
+dx
+x\,dx
+x
+e^{x^2}\mapsto e^u
+x=2
+u=2^2=4
+x=3
+u=3^2=9
+\int_2^3xe^{x^2}\,dx=\frac12\int_4^9e^u\,du=\frac12\left[e^u\right]_{u=4}^9=\frac12(e^9-e^4).
+\int xe^{x^2}\,dx=\frac12\int e^u\,du=\frac12e^u=\frac12e^{x^2}.
+\int xe^{x^2}\,dx=\left[\frac12e^{x^2}\right]_{x=2}^3=\frac12(e^9-e^4).
+u = e^x- 1\Rightarrow \frac{du}{dx} = e^x\Rightarrow du = e^x \space dx
+0\le x\le\ln(\pi + 1)\Rightarrow 0\le u\le \pi

@@ -1,0 +1,25 @@
+\sum_{n=2}^{\infty} \frac{ (-1)^n} { \ln(n) +\cos(n)}
+n_0\ge2
+\cos(n)/\ln(n)
+\lvert\cos(n)/\ln(n)\rvert < 1
+n \ge 2
+\sum_{n=n_0}^\infty \sum_{k=0}^\infty \frac{(-1)^n}{\ln(n)} \frac{\cos^k(n)}{\ln^k(n)}
+\sum_{k=0}^\infty \sum_{n=n_0}^\infty \frac{(-1)^n}{\ln(n)} \frac{\cos^k(n)}{\ln^k(n)}
+a_n=\ln^{-k-1}(n)
+b_n=(-1)^n\cos^k(n)=\sum_{j=0}^k\alpha_{jk}\cos((j + \pi)n)\;,
+B_m=\sum_{n=n_0}^m \; b_n
+\lvert B_m\rvert = \left\lvert\sum_{n=n_0}^m \sum_{j=0}^k \alpha_{jk}\cos((j + \pi)n)\right\rvert \le \sum_{j=0}^k\left\lvert\sum_{n=n_0}^m\cos((j + \pi)n)\right\rvert \le \sum_{j=0}^k\frac{2}{1 - \cos(j + \pi)}=:M_k
+\left\lvert\sum_{n=n_0}^m a_n b_n\right\rvert = \left\lvert B_m a_{m+1}+\sum_{n=n_0}^{m}B_n(a_n-a_{n+1})\right\rvert\le
+\le M_k a_{m+1} + \sum_{n=n_0}^{m}M_k(a_n-a_{n+1})= M_k a_{m+1} + M_k(a_{n_0}-a_{m+1}) = M_ka_{n_0}
+\sum_{k=0}^\infty M_k\ln^{-k-1}(n_0)
+n_0
+2
+\ln 2 < 1
+\sum_{k=0}^\infty \sum_{n=n_0}^m \frac{(-1)^n}{\ln(n)} \frac{\cos^k(n)}{\ln^k(n)}
+m
+m
+M_ka_{n_0}
+1/(1-\cos (j + \pi))
+j
+\pi
+k

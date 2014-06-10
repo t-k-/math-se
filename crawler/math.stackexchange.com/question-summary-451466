@@ -1,0 +1,43 @@
+\int_{0}^{\infty } \frac{\sin (ax)}{x(x^2+b^2)^2}dx=\frac{\pi}{2b^4}\left(1-\frac{e^{-ab}(ab+2)}{2}\right)
+a,b> 0
+\int_0^{\infty} \frac{\sin ax\,dx}{x(x^2+b^2)^2}=\frac{1}{b^4}\left(\int_0^{\infty}\frac{\sin ax}{x}\,dx-\int_0^{\infty}\frac{x\sin ax\,dx}{x^2+b^2}\right)-\frac{1}{b^2}\int_0^{\infty}\frac{x\sin ax\,dx}{(x^2+b^2)^2}
+a>0:
+\int_0^{\infty} \frac{\sin ax}{x}\,dx=\frac{\pi}{2}
+\begin{aligned}f(t)=\int_0^{ \infty} \frac{x\sin axt\,dx}{x^2+b^2}\,dx \Rightarrow \mathcal{L} \{ f(t)\} &=\int_0^{ \infty}e^{-st}\int_0^{ \infty}\frac{x\sin axt\,dx}{x^2+ b^2}\,dx\,dt\\&=\int_0^{ \infty}\frac{x}{x^2+ b^2}\int_0^{\infty}e^{-st}\sin axt\,dt\,dx\\&=\int_0^{\infty} \frac{ax^2}{(x^2+ b^2)(a^2x^2+s^2)} \,dx\\&= \frac{\pi}{2(s+ab)}\end{aligned}
+\frac{\pi}{2}\cdot\mathcal{L}^{-1}\left\{ \frac{1}{s+ab}\right\}\Bigg|_{t=1}= \frac{\pi}{2e^{ab}}
+g(t)
+\begin{aligned}\mathcal{L} \{ g(t)\} &=\int_0^{ \infty}\frac{x}{(x^2+ b^2)^2}\int_0^{\infty}e^{-st}\sin axt\,dt\,dx\\&=\int_0^{\infty} \frac{ax^2}{(x^2+ b^2)^2(a^2x^2+s^2)} \,dx\\&= \frac{a\pi}{4b(s+ab)^2}\end{aligned}
+\frac{\pi a}{4b}\cdot\mathcal{L}^{-1}\left\{ \frac{1}{(s+ab)^2}\right\}\Bigg|_{t=1}= \frac{a\pi}{4be^{ab}}
+\int_0^{\infty} \frac{\sin ax\,dx}{x(x^2+b^2)^2}=\frac{\pi}{2b^4}\left(1-\frac{2+ab}{2e^{ab}}\right)
+z=0
+a>0
+\frac12 \int_{-\infty}^{\infty} dx \frac{\sin{a x}}{x (x^2+b^2)^2} = \frac{1}{4 i} \int_{-\infty}^{\infty} dx \frac{e^{i a x} - e^{-i a x}}{x (x^2+b^2)^2}
+\frac{1}{4 i} \oint_C dz \frac{e^{i a z}}{z (z^2+b^2)^2}
+C
+R
+\epsilon
+C
+\frac{1}{4 i} \int_{-R}^{-\epsilon} dx \frac{e^{i a x}}{x (x^2+b^2)^2} + \frac{\epsilon}{4} \int_{\pi}^0 d\phi \, e^{i \phi} \frac{e^{i a \epsilon e^{i \phi}}}{\epsilon e^{i \phi} (\epsilon^2 e^{i 2 \phi}+b^2)^2} + \frac{1}{4 i} \int_{\epsilon}^{R} dx \frac{e^{i a x}}{x (x^2+b^2)^2} + \\ \frac{R}{4} \int_0^{\pi} d\theta\, e^{i \theta} \frac{e^{i a R e^{i \theta}}}{R e^{i \theta} (R^2 e^{i 2 \theta}+b^2)^2} 
+R \to \infty
+\epsilon \to 0
+\frac{1}{4 i} PV \int_{-\infty}^{\infty} dx \frac{e^{i a x}}{x (x^2+b^2)^2} -\frac{\pi}{4 b^4} 
+PV
+\frac{1}{R^4} \int_0^{\pi} d\theta \, e^{-a R \sin{\theta}} \le \frac{2}{R^4} \int_0^{\pi/2} d\theta \, e^{-2 a R \theta/\pi} = \frac{\pi}{R^5}\frac{1-e^{-a R}}{a} 
+(1/(4 i)) i 2 \pi
+z=i b
+\begin{align}\frac{d}{dz} \left [ \frac{e^{i a z}}{z (z+i b)^2}\right ]_{z=i b} &= -\left (\frac{a b+2}{4 b^4} \right ) e^{-a b}\end{align}
+\frac{1}{4 i} PV \int_{-\infty}^{\infty} dx \frac{e^{i a x}}{x (x^2+b^2)^2} = \frac{\pi}{4 b^4} \left [1-\frac12 (2+a b) e^{-a b} \right ]
+a>0
+a>0
+\frac{1}{4 i} PV \int_{-\infty}^{\infty} dx \frac{e^{-i a x}}{x (x^2+b^2)^2} = -\frac{\pi}{4 b^4} \left [1-\frac12 (2+a b) e^{-a b} \right ]
+(1/(4 i) (-i 2 \pi)
+z=-i b
+a>0
+\int_0^{\infty} dx \frac{\sin{a x}}{x (x^2+b^2)^2} = \frac{\pi}{2 b^4} \left [1-\frac12 (2+a b) e^{-a b} \right ]
+\int_{0}^{\infty } \frac{\cos (tx)}{x^2+b^2}dx=\frac{\pi}{2}\frac{e^{-tb}}{b}
+t
+t=0
+t=a
+b
+ \int_{0}^{\infty } \frac{\sin (ax)}{x(x^2+b^2)^2}dx=\frac{1}{2}\int_{-\infty}^{\infty } \frac{\sin (ax)}{x(x^2+b^2)^2}dx .
+ \int_{C} \frac{e^{iaz}}{z(z^2+b^2)^2}dz.

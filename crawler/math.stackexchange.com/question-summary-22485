@@ -1,0 +1,39 @@
+(x_1, x_2, x_3, x_4)^T
+\Lambda
+A = \begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14}\\ a_{12} & a_{11} & a_{14} & a_{13}\\ a_{31} & a_{32} & a_{33} & a_{34}\\ a_{32} & a_{31} & a_{34} & a_{33} \end{pmatrix}
+B = \begin{pmatrix} a_{11} + a_{12} & a_{13} + a_{14}\\ a_{31} + a_{32} & a_{33} + a_{34} \end{pmatrix}
+C = \begin{pmatrix} a_{11} - a_{12} & a_{13} - a_{14}\\ a_{31} - a_{32} & a_{33} - a_{34} \end{pmatrix}
+(x_1 + x_2, x_3 + x_4)^T
+(x_1 - x_2, x_3 - x_4)^T
+B
+C
+A
+\Lambda
+A
+\Lambda
+a_{44}
+A
+a_{33}
+\det A=\det B\cdot \det C
+A
+\left(\begin{array}{cc} X&Y\\ U&W\end{array}\right)
+X
+Y
+U
+W
+2\times 2
+X=\left(\begin{array}{cc} a_{11}&a_{12}\\ a_{12}&a_{11}\end{array}\right)
+Y=\left(\begin{array}{cc} a_{13}&a_{14}\\ a_{14}&a_{13}\end{array}\right)
+Z=\left(\begin{array}{cc} a_{31}&a_{32}\\ a_{32}&a_{33}\end{array}\right)
+W=\left(\begin{array}{cc} a_{33}&a_{34}\\ a_{34}&a_{33}\end{array}\right)
+F_2=\frac{1}{\sqrt 2}\left(\begin{array}{cc} 1&1\\ 1&-1\end{array}\right)
+X=F_2\mathrm{diag}\left(a_{11}+a_{12},a_{11}-a_{12}\right)F_2^{-1}
+Y=F_2\mathrm{diag}\left(a_{13}+a_{14},a_{13}-a_{14}\right)F_2^{-1}
+Z=F_2\mathrm{diag}\left(a_{31}+a_{32},a_{31}-a_{32}\right)F_2^{-1}
+W=F_2\mathrm{diag}\left(a_{33}+a_{34},a_{33}-a_{34}\right)F_2^{-1}
+A=\left(\begin{array}{cc} X&Y\\ U&W\end{array}\right)
+A=\left(\begin{array}{cc} F_2&0\\ 0&F_2\end{array}\right)\left(\begin{array}{cc} \mathrm{diag}\left(a_{11}+a_{12},a_{11}-a_{12}\right) & \mathrm{diag}\left(a_{13}+a_{14},a_{13}-a_{14}\right) \\ \mathrm{diag}\left(a_{31}+a_{32},a_{31}-a_{32}\right) & \mathrm{diag}\left(a_{33}+a_{34},a_{33}-a_{34}\right) \end{array}\right) \left(\begin{array}{cc} F_2&0\\ 0&F_2\end{array}\right)^{-1}
+\det A = \det \left(\begin{array}{cc} \mathrm{diag}\left(a_{11}+a_{12},a_{11}-a_{12}\right) & \mathrm{diag}\left(a_{13}+a_{14},a_{13}-a_{14}\right) \\ \mathrm{diag}\left(a_{31}+a_{32},a_{31}-a_{32}\right) & \mathrm{diag}\left(a_{33}+a_{34},a_{33}-a_{34}\right) \end{array}\right) 
+\det A = \det \left(\begin{array}{cccc} a_{11}+a_{12} & a_{13}+a_{14} & 0 & 0 \\ a_{31}+a_{32} & a_{33}+a_{34} & 0 & 0 \\ 0 & 0 & a_{11}-a_{12} & a_{13}-a_{14} \\ 0 & 0 & a_{31}-a_{32} & a_{33}-a_{34} \end{array}\right)
+\left(\begin{array}{cc} B&0\\ 0&C\end{array}\right)
+\det B\cdot \det C

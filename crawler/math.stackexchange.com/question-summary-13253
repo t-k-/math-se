@@ -1,0 +1,34 @@
+\min(a,b)=\frac{a+b}{2} - \frac{|a-b|}{2}
+\min(a,\min(b,c))
+\frac{a+\left(\frac{b+c}{2} - \frac{|b-c|}{2}\right)}{2} - \frac{\left|a-\left(\frac{b+c}{2} - \frac{|b-c|}{2}\right)\right|}{2},
+a\ge b\ge c
+|a-b|+|b-c|+|c-a|=2a-2c
+ \Delta=|a-b|+|b-c|+|c-a|\newcommand{\Mu}{\mathrm{M}}\tag{1} 
+ \frac{\Delta}{2}=\max(a,b,c)-\min(a,b,c)\tag{2} 
+a\ge b\ge c
+(3)
+(2)
+(4)
+(5)
+(6)
+a
+b
+c
+(1)
+(3)
+ \Sigma=a\left(1-\frac{|b-c|}{\Delta}\right)+b\left(1-\frac{|c-a|}{\Delta}\right)+c\left(1-\frac{|a-b|}{\Delta}\right)\tag{3} 
+ \begin{align} \Sigma &=a\left(\frac{2a-b-c}{2(a-c)}\right)+b\left(\frac{a-c}{2(a-c)}\right)+c\left(\frac{a+b-2c}{2(a-c)}\right)\\ &=a+c \end{align} 
+ \Sigma=\max(a,b,c)+\min(a,b,c)\tag{4} 
+ \max(a,b,c)=\frac{\Sigma}{2}+\frac{\Delta}{4}\tag{5} 
+ \min(a,b,c)=\frac{\Sigma}{2}-\frac{\Delta}{4}\tag{6} 
+ \begin{align} \max(a,b,c) &=\frac{a}{2}\left(\frac{|c-a|+|a-b|}{|a-b|+|b-c|+|c-a|}\right)\\ &+\frac{b}{2}\left(\frac{|a-b|+|b-c|}{|a-b|+|b-c|+|c-a|}\right)\\ &+\frac{c}{2}\left(\frac{|b-c|+|c-a|}{|a-b|+|b-c|+|c-a|}\right)\\ &+\frac{|a-b|+|b-c|+|c-a|}{4}\tag{7} \end{align} 
+ \begin{align} \min(a,b,c) &=\frac{a}{2}\left(\frac{|c-a|+|a-b|}{|a-b|+|b-c|+|c-a|}\right)\\ &+\frac{b}{2}\left(\frac{|a-b|+|b-c|}{|a-b|+|b-c|+|c-a|}\right)\\ &+\frac{c}{2}\left(\frac{|b-c|+|c-a|}{|a-b|+|b-c|+|c-a|}\right)\\ &-\frac{|a-b|+|b-c|+|c-a|}{4}\tag{8} \end{align} 
+a_1, ... a_n
+\min(a_1, ... a_n) = \lim_{k \to -\infty} \sqrt[k]{a_1^k + ... + a_n^k}
+\max(a_1, ... a_n) = \lim_{k \to \infty} \sqrt[k]{a_1^k + ... + a_n^k}.
+a_i
+p(x):=(x-a_1)(x-a_2)=x^2 -(a_1+a_2)x + a_1 a_2\ .
+\min(a_1, a_2)\ =\ {a_1+a_2-\sqrt{(a_1+a_2)^2 -4a_1 a_2}\over 2} ={a_1+a_2\over2}-{|a_1-a_2|\over 2}\ .
+a_i
+q(x):=(x-a_1)(x-a_2)(x-a_3)
+\frac13 (\min(a,\min(b,c))+\min(b,\min(a,c))+\min(c,\min(a,b)))

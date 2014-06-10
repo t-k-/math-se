@@ -1,0 +1,5 @@
+ f( x, \mu, \Sigma ) := \frac{1}{ \sqrt{(2 \pi)^n \text{det}(\Sigma)} } \text{exp}\left( -\frac{1}{2} ( x - \mu )^\top \Sigma^{-1} ( x - \mu ) \right) 
+\mu \in \mathbb{R}^n
+\Sigma \in \mathbb{R}^{n \times n}
+\Sigma, \Sigma' \in \mathbb{R}^{n \times n}
+ \mu = \arg\max_{m \in \mathbb{R}^n} \int_{\mathbb{R}^n} f( x, \mu, \Sigma ) f(x, m, \Sigma') dx 

@@ -1,0 +1,47 @@
+P(x)
+x
+X
+X
+P(x)
+X
+X
+P(x) \rightarrow Q(x)
+P\subseteq Q
+\text{Pred}(X)
+D_y:\text{Pred}(X)\rightarrow \text{Pred}(X\times Y)
+y
+Y
+D_y(P(x)) = \{(x,y)\in X\times Y\mid x\in P(x)\}
+P(x,\dot{y})
+y
+P(x)\rightarrow Q(x)
+P(x,\dot{y})\rightarrow Q(x,\dot{y})
+\exists y:\text{Prop}(X\times Y)\rightarrow \text{Prop}(X)
+\forall y:\text{Prop}(X\times Y)\rightarrow \text{Prop}(X)
+\exists y\,P(x,y) = \{x\in X\mid \exists y\, (x,y)\in P(x,y)\}
+\forall y\,P(x,y) = \{x\in X\mid \forall y\, (x,y)\in P(x,y)\}
+\exists y\dashv D_y\dashv \forall y
+\exists y\, P(x,y) \rightarrow Q(x) \iff P(x,y)\rightarrow Q(x,\dot y)
+P(x)\rightarrow \forall y\,Q(x,y) \iff P(x,\dot{y})\rightarrow Q(x,y)
+P(x)
+X
+X\rightarrow \{0,1\}
+X\rightarrow \{0,1\}
+P(x) \rightarrow Q(x)
+x\in X
+P(x) \leq Q(x)
+D_y
+X\rightarrow \{0,1\}
+X\times Y \rightarrow X
+(\exists y\, P(x,y))(x) = \begin{cases} 1\text{ if }\exists y\,P(x,y) = 1\\ 0\text{ otherwise}\end{cases} = \text{max}_{y\in Y}P(x,y)
+(\forall y\, P(x,y))(x) = \begin{cases} 1\text{ if }\forall y\,P(x,y) = 1\\ 0\text{ otherwise}\end{cases} = \text{min}_{y\in Y}P(x,y)
+\{0,1\}
+[0,1]
+\leq
+[0,1]
+0
+1
+X
+X\rightarrow \{0,1\}
+\{0,1\}
+[0,1]

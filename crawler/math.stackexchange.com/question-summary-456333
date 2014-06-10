@@ -1,0 +1,44 @@
+a_n = b_{n-1} + 5
+b_n = na_{n-1}
+a_0
+b_0
+a_n
+b_n = na_{n-1}
+b_{n-1} = (n-1)a_{n-2}
+b_{n-1}
+a_n = b_{n-1} + 5
+a_n = (n-1)a_{n-2} + 5
+A(x) = \sum_{n=0}^{\infty} a_{n}x^{n}
+1+6x+6x^2 + \sum_{n=3}^{\infty} a_{n}x^{n}
+a_0 = 1, a_1 = a_2 = 6
+1+6x+6x^2 + x^2\sum_{n=3}^{\infty} ((n-1)a_{n-2}+5)x^{n-2}
+1+6x+6x^2 + x^2\sum_{n=3}^{\infty} (n-1)a_{n-2}x^{n-2}+\sum_{n=3}^{\infty}5x^{n-2}
+\sum_{n=3}^{\infty}5x^{n-2} = 5x/(1-x)
+\sum_{n=3}^{\infty} (n-1)a_{n-2}x^{n-2}
+(n-1)a_{n-2}x^{n-2}
+a_{n-2}x^{n-1}
+1+6x+6x^2 + x^3/(1-x)+ 5x/(1-x)
+a_n
+ a_n=(n-1)a_{n-2}+5 
+c_n=\dfrac{a_{2n}}{(2n-1)!!}
+ \begin{align} a_{2n}&=(2n-1)a_{2n-2}+5\\ (2n-1)!!\,c_n&=(2n-1)!!\,c_{n-1}+5\\ c_n&=c_{n-1}+\frac5{(2n-1)!!} \end{align} 
+ \begin{align} a_{2n} &=(2n-1)!!\left(1+5\sum_{k=1}^n\frac1{(2k-1)!!}\right)\\ &=\left\lfloor(2n-1)!!\,\left(1+5\sqrt{\frac{e\pi}{2}}\mathrm{erf}\left(\frac1{\sqrt2}\right)\right)\right\rfloor&&\text{for }n\ge3 \end{align} 
+c_n=\dfrac{a_{2n+1}}{(2n)!!}
+ \begin{align} a_{2n+1}&=2na_{2n-1}+5\\ (2n)!!c_n&=(2n)!!c_{n-1}+5\\ c_n&=c_{n-1}+\frac5{(2n)!!} \end{align} 
+ \begin{align} a_{2n+1} &=(2n)!!\left(6+5\sum_{k=1}^n\frac1{(2k)!!}\right)\\ &=\left\lfloor(2n)!!\,\left(1+5\sqrt{e}\right)\right\rfloor&&\text{for }n\ge2 \end{align} 
+4
+ \begin{align} a_{2n}&=\left\lfloor c_{\text{even}}\,(2n-1)!!\right\rfloor&&\text{for }n\ge3\\ a_{2n+1}&=\left\lfloor c_{\text{odd}}\,(2n)!!\right\rfloor&&\text{for }n\ge2\\ \end{align} 
+ \begin{align} c_{\text{even}}&=1+5\sqrt{\frac{e\pi}{2}}\mathrm{erf}\left(\frac1{\sqrt2}\right)&&=8.05343067321223998845412355710\\ c_{\text{odd}}&=1+5\sqrt{e}&&=9.24360635350064073424325393907\\ \end{align} 
+a_{n+1}=na_{n-1}+5
+A(z)
+\sum a_nz^n
+z^{n+1}
+n
+\sum a_{n+1}z^{n+1}=z^2\sum na_{n-1}z^{n-1}+5\sum z^{n+1}
+A(z)=z^2(zA(z))'+\frac{5z}{1-z}.
+n
+ b_{{n}}=\frac{1}{4\sqrt{\pi}}{{{2}^{n/2+1/2} \left( 10\,{{\rm e}^{1/2}}\sqrt {\pi }\; \Gamma  \left( n/2+1 \right) {{\rm erf}\left(\sqrt {2}/2\right)} \sqrt {2}+5\,\sqrt {2}n\Gamma  \left( n/2,1/2 \right) {{\rm e}^{1/2 }}\sqrt {\pi }\\-10\,{{\rm e}^{1/2}}\sqrt {\pi }\;\Gamma  \left( n/2+1  \right) \sqrt {2}+4\,\Gamma  \left( n/2+1 \right)  \right) }} 
+b_1=1, b_3=18, b_5=115
+n
+ b_{{n}}= \left( 5\,{{\rm e}^{1/2}}\Gamma  \left( n/2,1/2 \right) + \Gamma  \left( n/2 \right)  \right) {2}^{n/2-1}n 
+b_0=0,b_2=12,b_4=68

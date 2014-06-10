@@ -1,0 +1,24 @@
+x \in \mathbb R
+\int_0^\infty\dfrac{\cos(xt)}{1+t^2}dt
+ y-y'' =0
+\dfrac{\pi}{2}e^{-x}
+F(x) = \int_0^\infty \frac{\cos (xt)}{1+t^2}\,dt
+F(0) = \frac{\pi}{2}
+\lvert F(x)\rvert \leqslant \frac{\pi}{2}
+x \neq 0
+\begin{align} F(x) &= \left[\frac{1}{x}\cdot \frac{\sin (xt)}{1+t^2}\right]_0^\infty + \frac{2}{x} \underbrace{\int_0^\infty \frac{t\sin (xt)}{(1+t^2)^2}\,dt}_{G(x)}\\ &= \frac{2}{x}G(x). \end{align}
+G(x)
+G'(x) = \int_0^\infty \frac{t^2\cos (xt)}{(1+t^2)^2}\,dt = F(x) - \underbrace{\int_0^\infty \frac{\cos (xt)}{(1+t^2)^2}\,dt}_{H(x)}.
+H(x)
+H'(x) = -G(x).
+\begin{align} F'(x) &= -\frac{2}{x^2}G(x) + \frac{2}{x}G'(x)\\ &= -\frac{1}{x}F(x) + \frac{2}{x}\left(F(x) - H(x)\right)\\ &= \frac{1}{x}F(x) - \frac{2}{x}H(x),\quad\text{and}\\ F''(x) &= -\frac{1}{x^2}F(x) + \frac{1}{x} F'(x) + \frac{2}{x^2}H(x) - \frac{2}{x}H'(x)\\ &=  -\frac{1}{x^2}F(x) + \frac{1}{x^2}F(x) - \frac{2}{x^2}H(x) + \frac{2}{x^2}H(x) + \frac{2}{x}G(x)\\ &= \frac{2}{x}G(x)\\ &= F(x). \end{align}
+F
+F(0)
+F(x) = \frac{\pi}{2}e^{-\lvert x\rvert}.
+\Gamma
+R
+R\to \infty
+ \oint_\Gamma \frac{e^{ixz}}{1+z^2}\mathrm{d}z = 2\pi i \Re es\left(\frac{e^{ixz}}{1+z^2}\right)_{z=i} 
+ \Re es\left(\frac{e^{ixz}}{1+z^2}\right)_{z=i} = \frac{e^{x i ^2}}{2i} = \frac{e^{-x}}{2i}. 
+ \int_{-\infty} ^{\infty} \frac{e^{ixt}}{1+t^2}\mathrm{d}t = 2\pi i \frac{e^{-x}}{2i}  = \pi e^{-x}. 
+ \int_{0} ^{\infty} \frac{\cos{xt}}{1+t^2}\mathrm{d}t =\frac{1}{2}\Re e \int_{-\infty} ^{\infty} \frac{e^{ixt}}{1+t^2}\mathrm{d}t = \frac{\pi}{2}e^{-x}. 

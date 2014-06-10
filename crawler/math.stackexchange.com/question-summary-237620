@@ -1,0 +1,11 @@
+\phi_{\mu,\sigma}(x)=\frac{1}{\sqrt{2\pi}\sigma}\exp{\left(-\frac{(x-\mu)^2}{2 \sigma^2}\right)}
+\mu\in\mathrm{R}
+\sigma>0
+(\Omega,\mathcal{A},\mathbb{P})
+u:(a,b) \times \Omega \to \mathbb{R}
+V(\sigma) := \int u(\sigma,x) \, d\mathbb{P}(x)
+\partial_\sigma V(\sigma) = \int \partial_\sigma u(\sigma,x) \, d\mathbb{P}(x)
+u(\sigma,x) := e^x \cdot \varphi_{\mu,\sigma}(x).
+|\partial_\sigma u(\sigma,x)| \leq e^x \cdot \exp \left(- \frac{(x-\mu)^2}{a^2} \right) \cdot \left( \frac{1}{\sqrt{2\pi \cdot a^4}} + \frac{2}{\sqrt{2\pi a^2}} \cdot \frac{(x-\mu)^2}{a^3} \right)=:w(x) \in L^1
+\sigma \in (a,b)
+0<a<b

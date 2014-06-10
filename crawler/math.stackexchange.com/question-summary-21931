@@ -1,0 +1,54 @@
+x_i
+E[x_i]=N/M
+N, M
+\sigma^2
+\displaystyle S = \sum_{i=1}^M x_i
+E[S]=N
+S
+A=P\left(S=E[S]\right)
+\displaystyle A \approx \frac{1}{\sqrt{ 2 \pi M \sigma^2}}
+X
+N
+p
+E(X)=E(N p)
+X
+\displaystyle P = P(X= N p) = {N \choose N p} p^{N p} q^{N q} \hspace{2cm}
+\displaystyle P \approx \frac{1}{\sqrt{2 \pi N p q}} \hspace{2cm} 
+K \approx (K/e)^K \sqrt{2 \pi K}
+\displaystyle P \approx \frac{1}{\sqrt{2 \pi N p q}} \left(1 - \frac{1- p q}{12 N p q} \right) \hspace{2cm} 
+\displaystyle P \approx \frac{1}{\sqrt{2 \pi N p q}} \left(1 - \frac{1}{24 N p q} \right) \hspace{2cm} 
+X
+\mathbb{Z}
+P_x \equiv P[X=x]
+X
+\kappa_{n}
+n
+X
+\kappa_{1} = \mu
+\kappa_{2} = \sigma^2
+M
+X_i
+x \in {\mathbb{Z}}
+x = M\mu \in {\mathbb{Z}}
+k \rightarrow k/(\sigma\sqrt{M})
+d\Phi(k) = \phi(k) dk
+0
+1
+k=0
+\pm\infty
+M
+n
+n
+(n-1)!!
+n
+X
+p = \frac{1}{2}(1+a)
+q=\frac{1}{2}(1-a)
+ \tilde{P}(k) = \sum_{x=-\infty}^{\infty} e^{ikx} P_x = E\left[e^{ikx}\right] = e^{h(k)}, 
+ h(k) = \sum_{n=1}^{\infty} \kappa_{n} \frac {(ik)^{n}}{n!} 
+ \begin{eqnarray} P\left[\sum_{i=1}^{M} X_i = x\right] &=& \int_{-\pi}^{\pi}\frac{dk}{2\pi} e^{-ikx}\tilde{P}(k)^M \\ &=& \int_{-\pi}^{\pi}\frac{dk}{2\pi} e^{Mh(k)-ikx} \\ &=& \int_{-\pi}^{\pi}\frac{dk}{2\pi} e^{ik(M\mu - x) - \frac{1}{2}M\sigma^2 k^2} \exp\left(\sum_{n=3}^{\infty}M\kappa_{n}\frac{(ik)^{n}}{n!}\right). \end{eqnarray} 
+ P\left[\sum_{i=1}^{M} X_i = M\mu\right] = \frac{1}{\sigma\sqrt{2\pi M}}\int_{-\pi\sigma\sqrt{M}}^{\pi\sigma\sqrt{M}} d\Phi(k) \exp\left(\sum_{n=3}^{\infty} \sigma^{-n}M^{1-\frac{1}{2}n}\kappa_{n}\frac{(ik)^{n}}{n!}\right), 
+ P\left[\sum_{i=1}^{M} X_i = M\mu\right] = \frac{1}{\sigma\sqrt{2\pi M}}\left(1 + \frac{\kappa_4}{8M\sigma^4} - \frac{5\kappa_3^2}{24M\sigma^6} + O(M^{-2})\right). 
+ \begin{eqnarray} \kappa_2 &=& \sigma^2 = pq = \frac{1}{4}(1-a^2) \\ \kappa_3 &=& \frac{1}{4}(1-a^2)(-a) = -\frac{1}{4}a(1-a^2) \\ \kappa_4 &=& \frac{1}{8}(1-a^2)(3a^2-1), \end{eqnarray} 
+ \begin{eqnarray} \frac{5\kappa_3^2}{24\sigma^6} &=& \frac{5a^2}{6(1-a^2)} \\ \frac{\kappa_4}{8\sigma^4} &=& \frac{3a^2 - 1}{4(1-a^2)}, \end{eqnarray} 
+ -\frac{5\kappa_3^2}{24M\sigma^6} + \frac{\kappa_4}{8M\sigma^4} = \frac{9a^2-3-10a^2}{12M(1-a^2)} = -\frac{3+a^2}{12M(1-a^2)} = -\frac{1-pq}{12Mpq}, 

@@ -1,0 +1,14 @@
+ z = max(x+b,y)  
+P(z) = P_2(z) \int_{-\infty}^{z-b} P_1(x)dx\;  + P_1(z-b)  \int_{-\infty}^z P_2(y)dy\; 
+ =\frac{1}{2\pi\sigma_{1}\sigma_{2}}\left[\exp\left(\frac{-(z-\mu_{2})^{2}}{2\sigma_{2}^{2}}\right)\int_{-\infty}^{z-b}\exp\left(\frac{-(x-\mu_{1})^{2}}{2\sigma_{1}^{2}}\right)dx+\exp\left(\frac{-(z-b-\mu_{1})^{2}}{2\sigma_{1}^{2}}\right)\int_{-\infty}^{z}\exp\left(\frac{-(y-\mu_{2})^{2}}{2\sigma_{2}^{2}}\right)dy\right] 
+ =\frac{1}{2\pi\sigma_{1}\sigma_{2}}\left[\exp\left(\frac{-(z-\mu_{2})^{2}}{2\sigma_{2}^{2}}\right)\sigma_{1}\sqrt{\frac{\pi}{2}}erfc\left(\frac{\mu_{1}-z+b}{\sigma_{1}\sqrt{2}}\right)+\exp\left(\frac{-(z-b-\mu_{1})^{2}}{2\sigma_{1}^{2}}\right)\sigma_{2}\sqrt{\frac{\pi}{2}}erfc\left(\frac{\mu_{2}-z}{\sigma_{2}\sqrt{2}}\right)\right] 
+x
+P_1(x)
+y
+P_2(y)
+P(z)
+z=\max(x+b,y)
+P(z) = \int_{-\infty}^{\infty} dx \int_{x+b}^\infty dy\; P_1(x) P_2(y) \delta(z-y) + \int_{y-b}^\infty dx \int_{-\infty}^\infty dy\; P_1(x) P_2(y) \delta(z-x-b)
+= P_2(z) \int_{-\infty}^{z-b} P_1(x)\;dx + P_1(z-b)  \int_{-\infty}^z  P_2(y)\;dy
+P_1
+P_2

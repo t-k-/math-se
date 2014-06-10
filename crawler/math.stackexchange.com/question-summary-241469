@@ -1,0 +1,67 @@
+\hat f(\lambda) = \int_{\infty}^\infty f(t) \exp(- i \lambda t) dt
+\hat {\hat f}(x) = 2 \pi f(-x).
+f
+E
+1
+f
+\bullet
+g
+f
+\bullet
+a>0
+a\to\infty
+f
+\int_{-\infty}^\infty \hat f(x)\ dx
+2\pi f(0)
+g(x):=E(x/a)\ ,\qquad a>0\ .
+\hat g(\lambda)=\int_{-\infty}^\infty E(x/a)\ e^{-i\lambda x}\ dx=a \int_{-\infty}^\infty E(t)\ e^{-i\lambda a t}\ dt=a \hat E(\lambda a)=a\sqrt{2\pi}E(\lambda a)\ .
+\eqalign{\int_{-\infty}^\infty \hat f(x) E(x/a)\ dx&=\int_{-\infty}^\infty \hat f(x) g(x)\ dx=\int_{-\infty}^\infty f(x) \hat g(x)\ dx \cr&=\sqrt{2\pi}\int_{-\infty}^\infty f(x) a E(a x)\ dx  \cr &=\sqrt{2\pi}\int_{-\infty}^\infty f\bigl({t\over a}\bigr)  E(t)\ dt\ ,\cr}
+x=0
+f
+f_b(x):=f(x-b)
+x
+D_\varepsilon g(\lambda) = \varepsilon g(\varepsilon \lambda)
+g(\varepsilon \lambda)
+\varepsilon \to 0
+D_\varepsilon E
+g_x(\lambda)
+\begin{eqnarray} \hat {\hat f}(x) &=& \int \hat f (\lambda) e^{i x \lambda} d\lambda = \lim_{\varepsilon \to 0} \int \hat f(\lambda) &e^{- i x \lambda} D_\varepsilon E (\lambda) d \lambda \\ &&& \text{(call this $g_x(\lambda)$)} \\ &=& \int f(y) \hat g(y)dy = \sqrt{2\pi} \lim_{\varepsilon \to 0} \int f(y) E\left(\tfrac{y-x}{\varepsilon}\right)dy \end{eqnarray}
+ = f(x)
+\hat g_x(\lambda)
+= \int D_\varepsilon E (t) e^{ixt} e^{-iyt} dt = \frac{\varepsilon}{\varepsilon} \int E(s) \exp\left({-i\frac{y-x}{\varepsilon}s}\right)ds = \hat E\left(\frac{y-x}{\varepsilon}\right) = \sqrt{2 \pi}E\left(\frac{y-x}{\varepsilon}\right)
+R \rightarrow \infty
+\chi_{[-\pi,\pi]}(t)
+2\pi \textrm{sinc}(\omega)
+\textrm{sinc}(\omega) e^{-i\omega t}
+f
+\omega_0 = 0
+\mathscr{F}f(\omega)
+\frac{-\omega}{\omega^2 + \alpha^2}
+-\infty
+\infty
+0
+0
+\infty
+f \in L^1
+f(x+)
+f(x-)
+f(-x+)
+f(-x-)
+-\infty
+0
+0
+\infty
+\int_{-M}^M e^{i\omega t} d\omega
+\pi
+[-M_1,0]
+[0,M_1]
+(-\infty,-M_1]
+[M_1,\infty)
+L^1
+\frac{\sin(x)}{x}
+f
+L^1
+g
+g(\lambda) = \frac{1}{2}(g(\lambda+)+g(\lambda-))
+2\pi \textrm{sinc}(t)
+2\pi 2\pi \textrm{sinc}(-t) = 4\pi^2 \textrm{sinc}(t)

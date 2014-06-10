@@ -1,0 +1,65 @@
+c>0
+\lim_{n \to \infty} \sum_{a=1}^n \sum_{b=0}^n {n \choose a} {n-a \choose b} \left({a+b \choose a} 2^{-a-b}\right)^{c n/\ln{n}} =0 .
+c =3
+c=2
+c> 6/e
+S_n = \sum_{a=1}^n \sum_{b=0}^n {n \choose a} {n-a \choose b} \left({a+b \choose a} 2^{-a-b}\right)^{c n/\ln{n}}.
+{n-a \choose b}
+b > n - a
+b = 0
+n - a
+S_n = \sum_{a=1}^n \sum_{b=0}^{n-a} {n \choose a} {n-a \choose b} \left({a+b \choose a} 2^{-a-b}\right)^{c n/\ln{n}}.
+a,b
+k = a+b
+a
+k
+1
+n
+a
+1
+k
+S_n = \sum_{k=1}^n \sum_{a=1}^k {n \choose a} {n-a \choose k-a} \left({k \choose a} 2^{-k}\right)^{c n/\ln{n}}.
+\binom{n}{a} \binom{n-a}{k-a} = \frac{n!}{a!(k-a)!(n-k)!} = \binom{n}{k} \binom{k}{a}
+S_n = \sum_{k=1}^n {n \choose k} \sum_{a=1}^k {k \choose a} \left[{k \choose a} 2^{-k}\right]^{c n/\ln{n}}.
+S_n
+a
+k/2
+\binom{k}{k/2} \sim 2^k \cdot \sqrt{2 / (\pi k)}
+\begin{align} S_n &\leq \sum_{k=1}^n {n \choose k} \sum_{a=1}^k {k \choose a} \left[\max_A {k \choose A} 2^{-k}\right]^{c n/\ln{n}} \\  &= \sum_{k=1}^n {n \choose k} \left[{k \choose k/2} 2^{-k}\right]^{c n/\ln{n}} \sum_{a=1}^k {k \choose a} \\  &\sim \sum_{k=1}^n {n \choose k} 2^k \left[\sqrt{\frac{2}{\pi k}}\right]^{c n/\ln{n}} \\  &= \sum_{k=1}^n {n \choose k} 2^k \exp\left(\frac{c n \ln(\frac{2}{\pi k})}{2 \ln n}\right) \\  &= \exp\left(\frac{c n \ln(2/\pi)}{2 \ln n}\right) \sum_{k=1}^n {n \choose k} 2^k \exp\left(- \frac{c n \ln k}{2 \ln n}\right) = T_n \\ &\left[= \exp\left(\frac{c n \ln(2/\pi)}{2 \ln n}\right) \sum_{k=1}^n {n \choose k} \exp\left(k \ln 2 - \frac{c n \ln k}{2 \ln n}\right) \right] \end{align}
+k \gg 0
+k > n/2
+k = O(n)
+k = o(n)
+\ln k
+\ln O(n)
+2^k
+2^{O(n)}
+T_n
+\begin{align} S_n \leq T_n &\approx \exp\left(\frac{c n \ln(2/\pi)}{2 \ln n}\right) \sum_{k=1}^n {n \choose k} 2^k \exp\left(- \frac{c n \ln O(n)}{2 \ln n}\right) \\  &\approx \exp\left(\frac{c n \ln(2/\pi)}{2 \ln n} - \frac{c n \ln O(n)}{2 \ln n}\right) \sum_{k=0}^n {n \choose k} 2^k \\  &\stackrel{(a)}{=} \exp\left(-\frac{c n}{2} + O\left(\frac{n}{\ln n}\right)\right) 3^n \\  &= \exp\left(\left(\ln(3)-\frac{c}{2}\right) n + O\left(\frac{n}{\ln n}\right)\right) \\ \end{align}.
+k = c_1 n
+0 < c_1 < 1
+\ln k = \ln c_1 n = \ln c_1 + \ln n = \ln n + O(1)
+O(n / \ln n)
+S_n \leq T_n = o(1)
+(\ln 3 - \frac{c}{2}) n = o(1)
+c
+S_n \leq T_n
+T_n
+c > \ln 9
+S_n = o(1)
+c > \ln 9
+T_n
+c > \ln 9 \approx 2.19722.
+S_n
+\color{red}{c = 2.19}
+\color{blue}{c = 2.20}
+c = 2.19
+S_n \not\to 0
+n
+c = 2.20
+0
+n \to \infty
+2.19
+0
+n \approx 200
+2.20

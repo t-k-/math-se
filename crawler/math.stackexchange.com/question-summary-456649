@@ -1,0 +1,11 @@
+x \mapsto \hat{f}
+f(x\ \left|\right.\ a_1, a_2, a_3, b_1, b_2, b_3) = a_1 F(b_1, x) + a_2 F(b_2, x) + a_3 F(b_3, x)
+F
+a_i
+b_i
+a_i
+b_i
+\DeclareMathOperator{\minimize}{\text{minimize}} \minimize_{a_1, a_2, a_3, b_1, b_2, b_3} \left\Vert \hat{f}(x) - f(x\ |\ a_1, a_2, a_3, b_1, b_2, b_3) \right\Vert_2
+a_i, b_i
+ \begin{align} \text{Step 1:}& \minimize_{a_1, b_1} \left\Vert \hat{f}(x) - f(x\ |\ a_1, 0,0, b_1, 0,0) \right\Vert_2\\ \text{Step 2:}& \minimize_{a_2, b_2} \left\Vert \hat{f}(x) - f(x\ |\ \hat{a}_1, a_2,0, \hat{b}_1, b_2,0) \right\Vert_2\\ \text{Step 3:}& \minimize_{a_3, b_3} \left\Vert \hat{f}(x) - f(x\ |\ \hat{a}_1, \hat{a}_2,a_3, \hat{b}_1, \hat{b}_2,b_3) \right\Vert_2 \end{align} 
+\hat{a}_i,\hat{b}_i

@@ -1,0 +1,11 @@
+c(1)
+c(2)
+c(3)
+c(m)
+b(i,j)
+i
+c(j)
+b(i,j) = 0 \textrm{ for } j<0 \textrm{ or } i<0
+b(i,0) = 1 
+b(0,j) = 0 \textrm{ for } j>0
+b(i,j) = b(i-1,j)+b(i,j-c(j)) \textrm{ for } i,j>0

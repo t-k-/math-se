@@ -1,0 +1,8 @@
+x\in(0,2\pi)
+s=(2n+1)t/2
+\mathbb R
+f(x)
+\sum\limits_{k=1}^{n}\frac{\sin kx}{k}=\int_{0}^{x}\sum\limits_{k=1}^{n}\cos kt\ dt= -\frac{x}{2}+\int_{0}^{x}\frac{\sin \frac{(2n+1)t}{2}}{2\sin{\frac{t}{2}}}\ dt
+=-\frac{x}{2}+\int_{0}^{x}\left(\frac{1}{2\sin{\frac{t}{2}}}-\frac{1}{t}\right)\sin \frac{(2n+1)t}{2}\ dt +\int_{0}^{x}\frac{\sin \frac{(2n+1)t}{2}}{t}dt.
+\int_{0}^{\frac{(2n+1)x}{2}}\frac{\sin s}{s}\ ds\to\int_{0}^{\infty}\frac{\sin s}{s}\ ds=\frac{\pi}{2}.
+\lim\limits_{n\to\infty}\ \sum\limits_{k=1}^{n}\frac{\sin kx}{k}=\frac{\pi-x}{2}=f(x),\qquad x\in(0,2\pi).

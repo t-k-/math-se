@@ -1,0 +1,12 @@
+\prod\limits_{i<j}^N {(x_i-x_j)}
+x_i
+x_j
+i
+i<j
+i
+j
+x_k
+x_1>x_2>\ldots >x_n
+\frac\partial{\partial x_k}(x_i-x_j)=\begin{cases}1&\text{if }k=i\\-1&\text{if }k=j\\0&\text{otherwise}\end{cases}
+\begin{align} \frac\partial{\partial x_k}\prod_{1\le i<j\le n}(x_i-x_j)&=\sum_{1\le i<j\le n} \frac{\partial(x_i-x_j)}{\partial x_k}\cdot\prod_{1\le \iota<\nu\le n\atop(\iota,\nu)\ne(k,j)}(x_\iota-x_\nu)\\ &=\sum_{k<j\le n} \prod_{1\le \iota<\nu\le n\atop(\iota,\nu)\ne(i,j)}(x_\iota-x_\nu)-\sum_{1\le i<k} \prod_{1\le \iota<\nu\le n\atop(\iota,\nu)\ne(i,k)}(x_\iota-x_\nu)\\ &=\sum_{j=k+1}^n \prod_{1\le \iota<\nu\le n\atop(\iota,\nu)\ne(i,j)}(x_\iota-x_\nu)-\sum_{i=1}^{k-1} \prod_{1\le \iota<\nu\le n\atop(\iota,\nu)\ne(i,k)}(x_\iota-x_\nu).\end{align}
+\frac{\frac\partial{\partial x_k}f}{f}= \frac\partial{\partial x_k}\ln f =\frac\partial{\partial x_k}\sum_{1\le i<j\le n}\ln(x_i-x_j)=\sum_{k<j\le n}\frac1{x_k-x_j}-\sum_{1\le i<k}\frac1{x_i-x_k}

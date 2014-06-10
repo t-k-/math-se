@@ -1,0 +1,45 @@
+\int_{-\infty}^\infty f(x)\hat{g}(x) dx=\int_{-\infty}^\infty \hat{f}(y)g(y) dy.
+\int_{-\infty}^{\infty} f \overline{g} = \int_{-\infty}^{\infty} \hat{f}\overline{\hat{g}} .
+\hat{\hat{g}}(x) = g(-x)
+\overline{\hat{g}}(y) = \hat{\overline{g}}(-y).
+f
+a_n
+g
+b_n
+\int_0^1 f \overline{g} = \sum_{n = -\infty}^{\infty} a_n \overline{b}_n.
+f
+\hat{g}
+F
+\langle Fg,h \rangle=\langle g, F^*h \rangle
+\langle Fg,\bar{h} \rangle=\langle g, F^* \bar{h} \rangle=\langle \bar{F^*} h,\bar{g} \rangle=\langle Fh,\bar{g} \rangle
+H_1
+H_2
+H_2
+H_1
+\phi_{n}(x)
+n=1,2,\dots
+\left\vert \left\vert \phi _{n}\right\vert \right\vert =\sqrt{\left( \phi_{n}\cdot \overline{\phi }_{n}\right) }=\displaystyle\sqrt{\displaystyle\int_{a}^{b}\phi _{n}\left( x\right) \,\overline{\phi }_{n}\left( x\right) \;dx}
+f(x)
+g(x)
+f(x)\sim\displaystyle\sum_{n\ge 1} c_{n}\phi_{n}(x)
+g(x)\sim\displaystyle\sum_{n\ge 1} d_{n}\phi_{n}(x)
+c_n,d_n
+c_n=\dfrac{\left ( f\cdot \overline{\phi }_{n}\right)}{\left\vert \left\vert \phi _{n}\right\vert \right\vert ^{2}}=\dfrac{\displaystyle\int_{a}^{b}f\left( x\right)\overline{\phi }_{n}\left( x\right) \;dx}{\left\vert \left\vert \phi _{n}\right\vert \right\vert ^{2}}
+d_n=\dfrac{\left ( f\cdot \overline{\phi }_{n}\right)}{\left\vert \left\vert \phi _{n}\right\vert \right\vert ^{2}}=\dfrac{\displaystyle\int_{a}^{b}g\left( x\right)\overline{\phi }_{n}\left( x\right) \;dx}{\left\vert \left\vert \phi _{n}\right\vert \right\vert ^{2}},
+\displaystyle\int_{a}^{b}\left\vert f(x)-\displaystyle\sum_{n=1}^{\infty}c_{n}\phi_{n}(x)\right\vert ^{2}dx=0
+\displaystyle\int_{a}^{b}\left\vert g(x)-\displaystyle\sum_{n=1}^{\infty}d_{n}\phi_{n}(x)\right\vert ^{2}dx=0,
+\displaystyle\int_{a}^{b}f(x)\overline{g}_{n}(x)\; dx=\displaystyle\sum_{n\ge 1} c_{n}\overline{d}_{n}||\phi_n||^2,
+g(x)=f(x)
+\displaystyle\int_{a}^{b}|f(x)|^2\; dx=\displaystyle\sum_{n\ge 1} |c_{n}|^2||\phi_n||^{2}.
+f
+g
+f: t\mapsto f(t)
+1
+g: k\mapsto g(k)
+\mathbb Z
+h(t):= \overline{\hat g(t)}
+h
+\hat h(k)=\overline{g(k)}
+\hat f(k)=\int_0^1 f(t) e^{-2\pi i k t} dt, \ \ \ \hat g(t)=\sum_{k=-\infty}^\infty g(k)e^{-2\pi i k t}.
+h(t)= \sum_{k=-\infty}^\infty \overline{g(k)}e^{2\pi i k t},
+\int_0^1 f(t)\hat g(t)dt = \int_0^1 f(t)\overline{h(t)}dt=\sum_{k=-\infty}^\infty \hat f(k)\overline{\hat h(k)}=\sum_{k=-\infty}^\infty \hat f(k) g(k).

@@ -1,0 +1,20 @@
+\newcommand{\p}{\partial}
+M
+ (U_a, \varphi_a = (x_a^1 \dots x_a^n)) 
+M
+p
+T_p M
+T_p^* M
+T_{r,s}
+T_{r,s}
+M
+k = \lbrace k_{i_1 \dots i_s, j_1 \dots j_r} \rbrace \in \mathbb R^{n^{r+s}},
+g_{ab} : U_a \cap U_b \rightarrow GL(n^{r+s})
+T_{r,s} := \bigsqcup_{p \in M} (T_p M)_{r,s} = \bigsqcup_{p \in M} \big( \underbrace{T_p M \otimes \dots \otimes T_p M}_r \otimes \underbrace{T^*_p M \otimes \dots \otimes T^*_p M}_s \big).
+ \left\lbrace \dfrac{\p}{\p x^{i_1}_a} \otimes \dots \otimes \dfrac{\p}{\p x^{i_s}_a} \otimes dx^{j_1}_a \otimes \dots \otimes dx^{j_r}_a \right\rbrace_{i_1 \dots i_s \in \lbrace 1 \dots n \rbrace \atop j_1 \dots j_r \in \lbrace 1 \dots n \rbrace} .
+ \chi_a \left(\sum k_{i_1 \dots i_s, j_1 \dots j_r} \dfrac{\p}{\p x^{i_1}_a} \otimes \dots \otimes \dfrac{\p}{\p x^{i_s}_a} \otimes dx^{j_1}_a \otimes \dots \otimes dx^{j_r}_a \right) :=  \left( p , k \right),
+\chi_a \circ \chi_b^{-1} (p,k) = (p,g_{ab} k),
+\; \; \; \; \;
+\; \; \; \; \;
+g_{ab} \in GL
+ \chi_a \circ \chi_b^{-1}(p, k) = \chi_a \left(\sum k_{i_1 \dots i_s, j_1 \dots j_r} \dfrac{\p}{\p x^{i_1}_b} \otimes \dots \otimes \dfrac{\p}{\p x^{i_s}_b} \otimes dx^{j_1}_b \otimes \dots \otimes dx^{j_r}_b \right) = \chi_a \left(\sum k_{i_1 \dots i_s, j_1 \dots j_r} \underbrace{\dfrac{\p x^{p_1}_a}{\p x^{i_1}_b} \dots \dfrac{\p x^{p_s}_a}{\p x^{i_s}_b}  \dfrac{\p x^{j_1}_b}{\p x^{q_1}_a} \dots \dfrac{\p x^{j_r}_b}{\p x^{q_r}_a}} \dfrac{\p}{\p x^{p_1}_a} \otimes \dots \otimes \dfrac{\p}{\p x^{p_s}_a} \otimes dx^{q_1}_a \otimes \dots \otimes dx^{q_r}_a \right).

@@ -1,0 +1,17 @@
+\mathbb{P} = \mathbb{P}(\text{Winning Round 1}) + \mathbb{P}(\text{Rounds 1 and 2 Losses}) \cdot \mathbb{P}(\text{Winning Round 3}))
+\mathbb{P}(\text{Player 1}) = \dfrac{0}{6} + \dfrac{6}{6} \cdot \dfrac{5}{6} \cdot \dfrac{1}{6} + \dfrac{6}{6} \cdot \left(\dfrac{5}{6}\right)^3 \cdot \dfrac{1}{6} + \ldots 
+\mathbb{P}(\text{Player 1}) = 0 + \dfrac{5}{6} \cdot \dfrac{1}{6} + \left(\dfrac{5}{6}\right)^3 \cdot \dfrac{1}{6} + \ldots = \dfrac{1}{6} \cdot \left( \dfrac{5}{6} + \left(\dfrac{5}{6}\right)^3 + \left(\dfrac{5}{6}\right)^5 + \ldots \right) 
+\left( \dfrac{5}{6} + \left(\dfrac{5}{6}\right)^3 + \left(\dfrac{5}{6}\right)^5 + \ldots \right) 
+\left(\dfrac{5}{6}\right)^2
+\left(\dfrac{5}{6}\right)^2 \cdot \left( \dfrac{5}{6} + \left(\dfrac{5}{6}\right)^3 + \left(\dfrac{5}{6}\right)^5 + \ldots \right) = \left( \left(\dfrac{5}{6}\right)^3 + \left(\dfrac{5}{6}\right)^5 + \ldots \right)
+\mathbb{S} - \left(\dfrac{5}{6}\right)^2 \cdot \mathbb{S} = \dfrac{5}{6}
+\mathbb{S} \cdot \left[1 - \left(\dfrac{5}{6}\right)^2\right] = \dfrac{5}{6}
+\mathbb{S} = \dfrac{\dfrac{5}{6}}{\left[1 - \left(\dfrac{5}{6}\right)^2\right]}
+\mathbb{P}(\text{Player 1}) = \dfrac{1}{6} \cdot \dfrac{\dfrac{5}{6}}{\left[1 - \left(\dfrac{5}{6}\right)^2\right]} = \overline{.45}
+\mathbb{P}(\text{Player 2}) = 1 - \mathbb{P}(\text{Player 1}) = \overline{.54} 
+\mathbb{P}(\text{Player 2}) = \dfrac{6}{6} \cdot \dfrac{1}{6} + \dfrac{6}{6} \cdot \left(\dfrac{5}{6}\right)^2 \cdot \dfrac{1}{6} + \dfrac{6}{6} \cdot \left(\dfrac{5}{6}\right)^4 \cdot \dfrac{1}{6} + \ldots 
+\mathbb{P}(\text{Player 2}) = \dfrac{1}{6} + \dfrac{1}{6} \cdot \left(\left(\dfrac{5}{6}\right)^2 \cdot \left(\dfrac{5}{6}\right)^4 + \left(\dfrac{5}{6}\right)^6 + \ldots \right) 
+\mathbb{S} = \dfrac{25}{36} + \left(\dfrac{25}{36}\right)^2 + \left(\dfrac{25}{36}\right)^3 + \ldots 
+\mathbb{S} - \dfrac{25}{36}\mathbb{S} = \dfrac{25}{36}
+\mathbb{S} = \dfrac{\dfrac{25}{36}}{1 - \dfrac{25}{36}}
+\mathbb{P}(\text{Player 2}) = \overline{.54}

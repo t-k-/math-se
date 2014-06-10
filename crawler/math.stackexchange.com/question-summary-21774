@@ -1,0 +1,11 @@
+f(0)=1
+f(n)=2^{f(n-1)}
+A_0(a,b)=b+1, \mbox{ this is just the successor function.} 
+A_1(a,b)=a+b, \mbox{ addition, right?}
+A_2(a,b)=a\times b 
+A_3(a,b)=a^b, 
+A_4(a,b)=a\uparrow \uparrow b 
+n
+f(n)=A_4(2,n)
+f(n)=2\uparrow \uparrow n
+f(n)=\underset{\mbox{$n$ times}}{\underbrace{2^{2^{\dots^{2^2}}}}}

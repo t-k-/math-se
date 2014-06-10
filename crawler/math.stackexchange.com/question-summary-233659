@@ -1,0 +1,9 @@
+f(x)
+x
+f(10)=\{0,2,4,6,8,10\}
+g(x)=2x
+\sum_{i=1}^4  \sum_{j\in(g \circ f)(i)}  j
+(g \circ f)(i)=g(f(i))
+\begin{align*} \sum_{i=1}^4 \sum_{j \in g(f(i))} j &= \sum_{j \in g(f(1))} j +\sum_{j \in g(f(2))} j +\sum_{j \in g(f(3))} j+\sum_{j \in g(f(4))} j \\\\ &= g(0) + \big(g(0) + g(2)\big) + \big(g(0) + g(2)\big) + \big(g(0) + g(2) + g(4)\big) \\\\  &= 4g(0) + 3g(2) +g(4)\;. \end{align*}
+g(x)=2x
+0 + 12 + 8 =20

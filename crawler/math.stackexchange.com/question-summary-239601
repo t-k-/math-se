@@ -1,0 +1,18 @@
+z^{s-1}e^{iz}
+0<s<1
+R
+iR
+iR
+i\delta
+\delta
+R
+iR
+R\rightarrow\infty
+\,x+y=R\,
+z:=x+iy
+|I(R)|
+I(R)=(1-i)\int_0^R (x+i(R-x))^{s-1}\;e^{i(x+i(R-x))}\,dx
+|I(R)|\le\sqrt{2}\int_0^R \left(x^2+(R-x)^2\right)^{\frac {s-1}2}\;e^{x-R}\,dx
+|I(R)|\le\sqrt{2}\left(\frac{R^2}2\right)^{\frac {s-1}2}\int_0^R e^{x-R}\,dx
+|I(R)|\le K(s)R^{s-1}\left(1-e^{-R}\right)
+\boxed{\displaystyle\lim_{R\to+\infty} |I(R)|=0}\quad \text{as wished}

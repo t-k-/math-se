@@ -1,0 +1,17 @@
+\hat{A}
+f(x_k|A,\sigma) = \frac{x_k}{\sigma^2}\exp\left(-\frac{x^2_k+A^2}{2\sigma^2}\right)I_0\left(\frac{xA}{\sigma^2}\right) \tag{Rician distribution}
+I_n(x) = \left( {1 \over 2}x \right )^{n} \sum_{k=0}^{\infty} \frac{\left( {1 \over 4}x^2 \right )^k}{k! (n+k)!}
+n
+n \in N
+\hat{A} = \frac{1}{N} \sum_{k=1}^{N} x_k  \frac{  I_1 \left( \frac{x_k A}{\sigma^2} \right )}{   I_0 \left( \frac{x_k A}{\sigma^2} \right )}
+\operatorname{Var}_\hat{A} = \frac{1}{N^2}E_{\hat{A}} \left( \sum_{k,l=1}^N\left( x_k-E_{\hat{A}}\left(x_k\frac{I_1}{I_0}\right) \right) \left( x_l-E_{\hat{A}}\left(x_l\frac{I_1}{I_0}\right) \right) \right)
+I_0, I_1
+I_0 \left( \frac{x_k A }{\sigma^2} \right )
+I_1 \left( \frac{x_k A }{\sigma^2} \right )
+\mathbb{E}\left[\frac{\partial^2}{\partial A^2}\log f(x;A)\frac{\partial}{\partial A}\log f(x;A) + \left(\frac{\partial}{\partial A}\log f(x;A) \right)^3\right]= \Gamma^{(m)}(A) = 0
+\Gamma^{(m)}(A) 
+\sigma = 1
+\xi_i
+ f(x;\xi)=\exp\left(C(x) + \sum_i \xi_i F_i(x) - \psi(\xi)\right)
+I_0(kAx)
+\exp (C(x) - \log x) \exp (\phi(A))

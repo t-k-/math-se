@@ -1,0 +1,11 @@
+a ^{\log_bc} = c ^{\log_b a}
+c ^{\log_b a}
+\log_b a^c
+ b^{\log_b x} = x \tag{1}
+ \log_bx^k = k\log_b x \tag{2}
+ \begin{align*} a^{\log_b c} &= b^{\log_b (a^{\log_b c})} & \text{by (1), where } x=a^{\log_b c}\\ &= b^{(\log_b c)(\log_b a)} & \text{by (2), where }x=a \text{ and }k=\log_b c\\ &= b^{(\log_b a)(\log_b c)} \\ &= b^{\log_b (c^{\log_b a})} & \text{by (2), where }x=c \text{ and }k=\log_b a\\ &= c^{\log_b a} & \text{by (1), where }x=c^{\log_b a}\\ \end{align*} 
+\forall\,a,b,x,y>0\;,\;\;a,b\ne 1:\;\;\color{red}{\log_ax=\frac{\log_bx}{\log_ba}\;,\;\;x^y=a^{y\log_ax}}
+\begin{align*}a^{\log_bc}&=\underbrace{b^{\log_bc\log_ba}}\\ c^{\log_ba}&=\overbrace{b^{\log_ba\log_bc}}^{||}\end{align*}
+b
+log_b{(a ^{\log_bc})}=\log_b{c}\log_b{a}
+\log_b{(c^{\log_b a})}=\log_b a\log_b c

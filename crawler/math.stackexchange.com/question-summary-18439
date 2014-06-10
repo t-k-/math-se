@@ -1,0 +1,45 @@
+n
+1, \ldots, n
+k
+t
+0
+n+1
+1, \ldots, k
+x_i(t)
+i
+\lfloor \cdot \rfloor
+ x_i(t+1) = \lfloor \frac{x_{i-1}(t)+x_{i+1}(t)}{2} \rfloor, i = 2, \ldots, k-1
+ x_1(t+1) = \lfloor (1/2) x_2(t) \rfloor, x_k(t+1) = \lfloor \frac{x_{k-1}(t) + (n+1)}{2} \rfloor.
+n
+k
+(k+1)
+a_i = x_i - x_{i-1} - 1
+a_i
+n-k
+a_i
+a_0 = a_1
+a_{k+2} = a_{k+1}
+ a_i(t+1) - a_i(t) = \lfloor \frac{a_{i+1}(t) - a_i(t)}{2}\rfloor - \lfloor \frac{a_i(t) - a_{i-1}(t)}{2}\rfloor 
+a_i(t+1) = a_i(t)
+|a_i(t+1) - a_i(t)| \leq 1
+n
+k_m
+k_M
+i \leq k_m
+a_i = a_{min}
+i \geq k_M
+a_i = a_{max}
+k_m
+k_M
+a_{i+1} - a_i = 1
+k_m
+k_M
+0
+k+1
+ a_i(t+1) = \lfloor \frac{a_{i+1}(t) + a_{i-1}(t) + \left( a_{i-1}(t) - a_i(t) \mod 2\right)}{2}\rfloor
+a_i
+t+1
+t
+a_{i-1}-a_i
+k
+a_i

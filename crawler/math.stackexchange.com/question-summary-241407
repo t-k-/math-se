@@ -1,0 +1,25 @@
+n
+x_{n,k}
+n,k\in\mathbb{N}
+x_i
+m_i
+n
+k
+x_{n,k}:=\sum_{m_1+\ldots+m_n=k} x_{m_1}\cdot x_{m_2}\cdot\ldots\cdot x_{m_n}
+k
+x_{0,k}=\mathbf{1}_{k=0}
+  x_{n,k}= \sum_{m_1=0}^k x_{m_1}x_{n-1, k-m_1}
+i
+\sum{m}=j
+DP[0][0]=1
+DP[0][j]=0
+j\ge1
+i
+j
+DP[i][j]=\sum_{a=0}^{j} {DP[i-1][j-a]*x_a}
+DP[n][k]
+O(k^2*n)
+k
+n
+k
+3 x_2^2 x_3+3 x_1 x_3^2+6 x_1 x_2 x_4+6 x_0 x_3 x_4+3 x_1^2 x_5+6 x_0 x_2 x_5+6 x_0 x_1 x_6+3 x_0^2 x_7.

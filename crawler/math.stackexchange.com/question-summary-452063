@@ -1,0 +1,12 @@
+P(A^c \cap(B\cup C))=P(B)+P(C)-P(C \cap A)-P(B \cap C)-P(A \cap B)+P(A\cap B \cap C)
+P(A\cup (B^c \cap C))
+P(A \cup B)=P(A)+P(B)-P(A\cap B)
+\begin{align*} &P(B)+P(C)-P(C \cap A)-P(B \cap C)-P(A \cap B)+P(A\cap B \cap C)\\ &=\cdots\\ &=-P(A)+P(A \cup (B\cup C)) \qquad \text{(this is your fifth equality)}\\ &=-P(A)+[P(A)+P(B\cup C)-P(A\cap(B\cup C))]\\ &=P(B\cup C)-P(A\cap(B\cup C))\\ &=P([A\cup A^c]\cap[B\cup C])-P(A\cap(B\cup C))\\ &=P([A\cap(B\cup C)] \cup [A^c\cap(B\cup C)] )-P(A\cap(B\cup C))\\ &=P(A\cap(B\cup C)) +P(A^c\cap(B\cup C))-P(A\cap(B\cup C))\qquad \text{(since they are disjoint)}\\ &=P(A^c\cap(B\cup C)) \end{align*} 
+A^c\cap (B\cup C)=(A^c \cap B) \cup (A^c\cap C)
+\Pr((A^c \cap B) \cup (A^c\cap C)) =\Pr(A^c\cap B)+\Pr(A^c \cap C)-\Pr(A^c\cap B\cap C).
+\Pr(A^c\cap B)
+\Pr(B)-\Pr(A\cap B)
+\Pr(A^c\cap C)
+\Pr(C)-\Pr(A\cap C)
+\Pr(A^c\cap B\cap C)
+\Pr(B\cap C)-\Pr(A\cap B\cap C)

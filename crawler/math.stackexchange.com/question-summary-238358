@@ -1,0 +1,25 @@
+T_n(\cos \theta)=\cos(n \theta)
+\int_{-1}^1 \frac{T_h(x)T_i(x)}{\sqrt{1-x^2}}dx=0, h \neq i
+x=\cos(\theta)
+\theta
+0
+\pi
+0
+ \int_{-1}^1 \frac{T_h(x) T_i(x)}{\sqrt{1-x^2}} \, dx = \int_\pi^0 \frac{\cos(h\theta)\cos(i\theta)}{\sin\theta} (-\sin\theta\,d\theta) = \int_0^\pi\cos(h\theta)\cos(i\theta)\,d\theta. 
+ \cos\alpha\cos\beta = \frac{\cos(\alpha+\beta)+\cos(\alpha-\beta)}{2}. 
+\int_{-1}^1 \frac{T_h(x) T_i(x)}{\sqrt{1-x^2}} \, dx
+x=\cos(\theta), dx=-\sin(\theta) \, d\theta
+\int_0^\pi \cos(h\theta) \cos(i\theta) \, d\theta
+h=i
+h\neq i
+T_n
+T_m
+T_m
+T_n
+W(T_n,T_m)
+n \neq m
+n \to m
+ W(T_n,T_m) = T_n T_m' - T_n' T_m = \frac{m \cos(n \theta) \sin(m \theta) - n \sin(n \theta) \cos (m\theta)}{\sqrt{1-x^2}} 
+ \int_{-1}^1 \frac{T_n(x) T_m(x)}{\sqrt{1-x^2}} dx = \int_{-1}^1 \frac{d}{d x} \left\{\frac{m \cos(n \theta) \sin(m \theta) - n \sin(n \theta) \cos (m\theta)}{n^2 - m^2}\right\}dx 
+ \lim_{n \to m} \frac{m \cos(n \theta) \sin(m \theta) - n \sin(n \theta) \cos (m\theta)}{n^2 - m^2} = \begin{cases}-\frac{\theta}{2}, & m \neq 0, \\ \\ - \theta, & m = 0 \end{cases} 
+ \int_{-1}^1 \frac{T_n(x) T_m(x)}{\sqrt{1-x^2}} dx = \begin{cases} 0, & m \neq n, \\ \\ \frac{\pi}{2} & m = n \neq 0, \\ \\ \pi & m = n = 0. \end{cases} 

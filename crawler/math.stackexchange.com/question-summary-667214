@@ -1,0 +1,13 @@
+z=x+y
+y=z-x
+dy=dz
+(1)::M_X(t)M_Y(t)=E[e^{Xt}]E[e^{Yt}]=
+(2)::\int_{x=-\infty}^{x=\infty}e^{xt}f_{X}(x)dx\int_{y=-\infty}^{y=\infty}e^{yt}f_{Y}(y)dy=
+(3)::\int_{x=-\infty}^{x=\infty}\int_{y=-\infty}^{y=\infty}(e^{xt}f_{X}(x)dx)(e^{yt}f_{Y}(y)dy)=
+(4)::\int_{x=-\infty}^{x=\infty}\int_{y=-\infty}^{y=\infty}e^{(x+y)t}f_{X}(x)dxf_{Y}(y)dy=
+(5)::\int_{y=-\infty}^{y=\infty}\int_{x=-\infty}^{x=\infty}e^{(x+y)t}f_{X}(x)f_{Y}(y)dxdy=
+(6)::\int_{z-x=-\infty}^{z-x=\infty}\int_{x=-\infty}^{x=\infty}e^{zt}f_{X}(x)f_{Y}(z-x)dxdz=
+(7)::\int_{z=-\infty}^{z=\infty}e^{zt}\int_{x=-\infty}^{x=\infty}f_{X}(x)f_{Y}(z-x)dxdz=
+(8)::\int_{z=-\infty}^{z=\infty}e^{zt}\left ( \int_{x=-\infty}^{x=\infty}f_{X}(x)f_{Y}(z-x)dx\right )dz
+\int_{z=-\infty}^{z=\infty}e^{zt}f_{X+Y}(z)dz=\int_{z=-\infty}^{z=\infty}e^{zt}\left ( \int_{x=-\infty}^{x=\infty}f_{X}(x)f_{Y}(z-x)dx\right )dz
+f_{X+Y}(z)dz=\int_{x=-\infty}^{x=\infty}f_X(x)f_Y(z-x)dx

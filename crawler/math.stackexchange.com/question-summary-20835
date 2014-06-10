@@ -1,0 +1,25 @@
+P(X_1>X_2) = P(X_1<X_2)
+P(X_1>X_2)+P(X_1=X_2)+P(X_1<X_2) = 1
+P(X_1=X_2) = 0
+P(X_1>X_2) = P(X_1<X_2) = \frac{1}{2}
+P(X_1>X_2 | X_2=x)
+P(X_1>X_2 | X_2=x) = 1-x
+P(X_1>X_2) = \displaystyle \int_{0}^1 P(X_1>X_2 | X_2=x) f_{X_2}(x) dx = \int_{0}^1 (1-x) \times 1 dx = \frac{1}{2}
+P(X_1>X_2 | X_2=x) = 1-F_{X}(x)
+P(X_1>X_2) = \displaystyle \int_{ll}^{ul} P(X_1>X_2 | X_2=x) dF_{X_2}(x) = \int_{ll}^{ul} (1-F_X(x)) dF_X(x)
+P(X_1>X_2) = \displaystyle \int_{ll}^{ul} (1-F_X(x)) dF_X(x) = \int_{ll}^{ul} dF_X(x) -\int_{ll}^{ul} d(\frac{F_X^2(x)}{2})
+P(X_1>X_2) = F_X(ul) - F_X(ll) - \frac{F_X^2(ul) - F_X^2(ll)}{2} = 1 - 0 - \frac{1-0}{2} = \frac{1}{2}
+1/2
+X_1,X_2
+[0,1]
+1/2
+X_1
+X_2
+{\rm P}(X_1 \geq a X_2)
+a \geq 1
+X_2
+a \geq 1
+ {\rm P}(X_1 \geq a X_2) = \int_0^1 {{\rm P}(X_1  \ge aX_2 |X_2  = u)\,{\rm d}u} = \int_0^1 {{\rm P}(X_1  \ge au)\,{\rm d}u},  
+ {\rm P}(X_1 \geq a X_2) = \int_0^{1/a} {{\rm P}(X_1  \ge au)\,{\rm d}u}  + \int_{1/a}^1 {{\rm P}(X_1  \ge au)\,{\rm d}u}. 
+ {\rm P}(X_1 \geq a X_2) = \int_0^{1/a} {(1 - au)\,{\rm d}u}  + 0 = \frac{1}{a} - a\frac{1}{{2a^2 }} = \frac{1}{{2a}}. 
+ {\rm P}\bigg(X_1  \ge \frac{{3X_2 }}{2}\bigg) = \frac{1}{{2(3/2)}} = \frac{1}{3}. 

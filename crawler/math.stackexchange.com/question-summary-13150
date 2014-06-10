@@ -1,0 +1,13 @@
+\left[\begin{array}{ccc} \mathrm{a} & \mathrm{b} & \mathrm{tx}\\ \mathrm{c} & \mathrm{d} & \mathrm{ty}\end{array}\right]=\left[\begin{array}{ccc} s_{x}\cos\psi & -s_{x}\sin\psi & x_{c}\\ s_{y}\sin\psi & s_{y}\cos\psi & y_{c}\end{array}\right]
+s_x
+s_y
+x_c
+y_c
+\psi
+x_{c}=\mathrm{tx}
+y_{c}=\mathrm{ty}
+s_{x}=\mathrm{sign(a)\,}\sqrt{\mathrm{a}^{2}+\mathrm{b}^{2}}
+s_{y}=\mathrm{sign(d)\,}\sqrt{\mathrm{c}^{2}+\mathrm{d}^{2}}
+\tan\psi=-\frac{\mathrm{b}}{\mathrm{a}}=\frac{\mathrm{c}}{\mathrm{d}}
+\psi = {\rm atan2}(-b,a)
+\psi = {\rm atan2}(c,d)

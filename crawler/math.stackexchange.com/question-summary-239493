@@ -1,0 +1,33 @@
+a_k=\frac{1}{k!}\quad\text{and}\quad b_j=\frac{1}{j!}
+\left(\sum\limits_{n=0}^\infty c_{n}\right)=\left(\sum\limits_{k=0}^\infty a_{k+1}\right)\left(\sum\limits_{j=0}^\infty b_{j+1}\right)
+c_n=\sum\limits_{m=0}^na_{n-m+1}b_{m+1}=\sum\limits_{m=0}^n\frac{1}{(n-m+1)!}\cdot\frac{1}{(m+1)!}=\sum\limits_{m=0}^n\frac{\binom{n}{m+1}}{n!}
+\exp(1)\cdot\exp(1)=\exp(2)
+k
+j
+1
+0
+\sin(x)\cos(x)=1/2\sin(2x)
+\begin{align} \sum\limits_{k=0}^\infty\frac{(-1)^kx^{2k}}{(2k)!}\cdot\sum\limits_{j=0}^\infty\frac{(-1)^jx^{2j+1}}{(2j+1)!} &= \sum\limits_{n=0}^\infty\sum\limits_{k=0}^n(-1)^k\frac{x^{2k}}{(2k)!}(-1)^{n-k}\frac{x^{2(n-k)+1}}{(2(n-k)+1)!} \\ &= \sum\limits_{n=0}^\infty(-1)^n\frac{1}{(2n+1)!}\sum\limits_{k=0}^n\binom{2n+1}{2k}x^{2k}x^{2(n-k)+1} \\ &= \sum\limits_{n=0}^\infty(-1)^n\frac{4^nx^{2n+1}}{(2n+1)!} \end{align}
+1
+0
+k=0
+j=0
+c_n=\sum_{i=0}^na_{n-i}b_i
+\begin{align*} \left(\sum_{k\ge 0}a_k\right)\left(\sum_{j\ge 0}b_j\right)&=\sum_{n\ge 0}c_n\\ &=\sum_{n\ge 0}\sum_{i=0}^n\left(\frac1{(n-i)!}\cdot\frac1{i!}\right)\\ &=\sum_{n\ge 0}\sum_{i=0}^n\frac1{i!(n-i)!}\\ &=\sum_{n\ge 0}\sum_{i=0}^n\binom{n}i\frac1{n!}\\ &=\sum_{n\ge 0}\frac1{n!}\sum_{i=0}^n\binom{n}i\\ &=\sum_{n\ge 0}\frac{2^n}{n!}\\ &=e^2\;, \end{align*}
+\begin{align*} \left(\sum_{k\ge 1}a_k\right)\left(\sum_{j\ge 1}b_j\right)&=\left(\sum_{k\ge 0}a_k-1\right)\left(\sum_{j\ge 0}b_j-1\right)\\ &=\sum_{n\ge 0}\frac{2^n}{n!}-\sum_{k\ge 0}a_k-\sum_{j\ge 0}b_j+1\\ &=\sum_{n\ge 0}\frac{2^n}{n!}-2\sum_{k\ge 0}\frac1{k!}+1\\ &=e^2-2e+1\;, \end{align*}
+\sum_{k\ge 1}\frac1{k!}=e-1
+a_k=\begin{cases} \frac{(-1)^{k/2}}{k!},&\text{if }k\text{ is even}\\ 0,&\text{otherwise} \end{cases}
+b_j=\begin{cases} \frac{(-1)^{(j-1)/2}}{j!},&\text{if }k\text{ is odd}\\ 0,&\text{otherwise}\;, \end{cases}
+\left(\sum_{k\ge 0}a_kx^k\right)\left(\sum_{j\ge 0}b_jx^j\right)\;.
+x^n
+c_n=\sum_{i=0}^na_{n-i}b_i\;.
+n
+n-i
+i
+a_{n-i}b_i=0
+n
+n-i
+i
+i
+a_{n-i}b_i=0
+i

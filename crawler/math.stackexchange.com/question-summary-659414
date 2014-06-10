@@ -1,0 +1,15 @@
+R=k[x_1,\ldots,x_7]
+k
+I=\bigcap_{i=1}^4 \mathfrak{p}_i
+\mathfrak{p}_1=(x_1,x_3,x_5,x_6), \mathfrak{p}_2=(x_1,x_3,x_4,x_6), \mathfrak{p}_3=(x_2,x_4,x_5,x_7), \mathfrak{p}_4=(x_1,x_3,x_6,x_7).
+\mathfrak{p}_1+\mathfrak{p}_2+\mathfrak{p}_3=\mathfrak{p}_2+\mathfrak{p}_3,~~ \mathfrak{p}_1+\mathfrak{p}_3+\mathfrak{p}_4=\mathfrak{p}_3+\mathfrak{p}_4
+\dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_2)}\oplus \dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_3)}\oplus \dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_4)}\oplus \dfrac{R}{(\mathfrak{p}_2+\mathfrak{p}_3)}\oplus \dfrac{R}{(\mathfrak{p}_2+\mathfrak{p}_4)}\oplus \dfrac{R}{(\mathfrak{p}_3+\mathfrak{p}_4)}\to\dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_2+\mathfrak{p}_3)}\oplus\dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_2+\mathfrak{p}_4)}\oplus\dfrac{R}{(\mathfrak{p}_1+\mathfrak{p}_3+\mathfrak{p}_4)}\to 0
+(a+\mathfrak{p}_1+\mathfrak{p}_2,b+\mathfrak{p}_1+\mathfrak{p}_2,c+\mathfrak{p}_1+\mathfrak{p}_4,d+\mathfrak{p}_2+\mathfrak{p}_3,e+\mathfrak{p}_2+\mathfrak{p}_4,f+\mathfrak{p}_3+\mathfrak{p}_4)\to (a-b+d+\mathfrak{p}_1+\mathfrak{p}_2+\mathfrak{p}_3,a-c+e+\mathfrak{p}_1+\mathfrak{p}_2+\mathfrak{p}_4,b-c+f+\mathfrak{p}_1+\mathfrak{p}_3+\mathfrak{p}_4) 
+(a(x_2,x_7), b, c(x_2,x_4), d, e(x_2), f)
+p(x_2), q(x_2,x_7), r(x_2), s(x_2, x_4)
+k \oplus k \oplus k \oplus x_2 k[x_2] \oplus x_2 k[x_2] \oplus x_7 k[x_2, x_7] \oplus x_4 k[x_2, x_4]
+\begin{align*}k[x_2,x_7] \oplus k \oplus k[x_2,x_4] \oplus k \oplus k[x_2] \oplus k & \to k \oplus k[x_2] \oplus k\\ (a(x_2,x_7), b, c(x_2,x_4), d, e(x_2), f) & \mapsto (a(0,0) - b + d, a(x_2,0) - c(x_2,0) + e(x_2), b - c(0,0) + f).\end{align*}
+\begin{align*} a(x_2,x_7) & = b - d + x_2(\dots) + x_7(\cdots)\\ c(x_2,x_4) & = b + f + x_2(\cdots) + x_4(\cdots)\\ e(x_2) & = c(x_2,0) - a(x_2,0). \end{align*}
+\begin{align*} a(x_2,x_7) & = b - d + x_2 p(x_2) + x_7 q(x_2, x_7) \\ c(x_2,x_4) & = b + f + x_2 r(x_2) + x_4 s(x_2, x_4) \\ e(x_2) & = f + d + x_2 r(x_2) - x_2 p(x_2). \end{align*}
+I
+\to 0

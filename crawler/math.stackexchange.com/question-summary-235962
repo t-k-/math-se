@@ -1,0 +1,15 @@
+0\leq p \leq 1
+H(p)=-p\log(p) -(1-p)\log(1-p)
+\lim _{n\to \infty}\frac{1}{n}\log\binom{n}{pn}=H(p)
+q=1-p
+n! \sim (\frac{n}{e})^{n} \sqrt{2\pi n}
+\binom{n}{pn} \sim \frac{(n/e)^{n}}{(np/e)^{np}(nq/e)^{nq}}\frac{\sqrt{2\pi n}}{\sqrt{2\pi np}\sqrt{2\pi nq}}
+(n/e)^n
+(n/e)^{np}(n/e)^{nq}
+\binom{n}{pn} \sim \frac{1}{p^{np}q^{nq}}\frac{1}{\sqrt{2\pi npq}}
+n
+\log_2\binom{n}{pn} \sim -n (p\log_2 p + q \log_2 q) - \log_2 (2\pi n pq)/2
+n
+\frac{1}{n}\log_2\binom{n}{pn} \sim -(p\log_2 p + q \log_2 q) - \log_2 (2\pi n pq)/(2n) = H(p) + O(\ln n/ n)
+n! = (n/e)^{n} g(n)
+n^{\alpha} \le g \le n^{\beta}

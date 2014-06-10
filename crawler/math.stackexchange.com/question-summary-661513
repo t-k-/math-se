@@ -1,0 +1,38 @@
+ L(\mu, \tau_1, \ldots, \tau_i)= \sum_{i=1}^v \sum_{t=1}^{r_i} (y_{it}-\mu - \tau_i)^2 
+\frac{dL}{d\mu} = y_{\cdot\cdot}-n\mu - \sum_{i=1}^v r_i \tau_i
+\frac{dL}{d\tau_i} = y_{i\cdot}-r_i \mu - r_i \tau_i
+\mu
+\tau 
+y_{\cdot\cdot}
+n
+\sum r_i
+\mu
+\tau
+y_{i\cdot}
+r_i
+\displaystyle\sum_{i=1}^v \sum_{t=1}^{r_i} y_{it}=y_{\cdot\cdot}
+y_{\cdot\cdot}
+n\mu
+n
+\mu
+\displaystyle\sum_{t=1}^{r_i} \tau_i = r_i\tau_i
+r_i
+\tau_i
+ \begin{align} \frac{d}{d\mu} \sum_{i=1}^v \sum_{t=1}^{r_i} (y_{it}-\mu - \tau_i)^2 & = \sum_{i=1}^v \sum_{t=1}^{r_i} \frac{d}{d\mu} (y_{it}-\mu - \tau_i)^2 \\[6pt] & = \sum_{i=1}^v \sum_{t=1}^{r_i} 2(y_{it}-\mu - \tau_i)(-1) \\[6pt] & = -2 \left(\sum_{i=1}^v \sum_{t=1}^{r_i} y_{it}\right) -2 \left(\sum_{i=1}^v \sum_{t=1}^{r_i} \mu \right) -2 \left(\sum_{i=1}^v \sum_{t=1}^{r_i} \tau_i\right) \\[6pt] & = -2 y_{\cdot\cdot} - n\mu + \sum_{i=1}^v r_i t_i. \end{align} 
+n=3
+i=\text{either 1, 2, or 3}
+\dfrac{d}{d\tau_i}
+i
+1
+2
+3
+\displaystyle\sum_{i=1}^3
+i
+i
+\dfrac{d}{d\tau_i}
+\frac{d}{d\tau_i}\sum_{j=1}^v \sum_{t=1}^{r_j} (y_{jt}-\mu - \tau_j)^2.
+\sum_{j=1}^v \frac{d}{d\tau_i} \sum_{t=1}^{r_j} (y_{jt}-\mu - \tau_j)^2,
+ \frac{d}{d\tau_i} \sum_{t=1}^{r_j} (y_{jt}-\mu - \tau_j)^2 = \begin{cases} 0 & \text{when }j\ne i, \\[8pt] \sum_{t=1}^{r_i} 2(y_{it} -\mu -\tau_i)(-1) & \text{when }j=i. \end{cases} 
+\sum_{j=1}^v
+0
+i

@@ -1,0 +1,10 @@
+\sum_{k=0}^{n}(-1)^k2^k\binom{2n-1}{k}\binom{2n-k}{n-k}=0
+(2)
+\sum_{k=0}^{n}(-1)^k2^k\binom{2n-1}{k}\binom{2n-k}{n-k}=\frac{(2n-1)!}{n!n!}\sum_{k=0}^{n}(-1)^k2^k\binom{ n }{k} (2n-k).
+\sum_{k=0}^{n}(-1)^k2^k\binom{ n }{k} (2n-k)=2n\sum_{k=0}^{n}(-1)^k2^k\binom{ n }{k} -\sum_{k=0}^{n}k(-1)^k2^k\binom{ n }{k}
+=2n (1-2)^n-\sum_{k=0}^{n}k(-1)^k2^k\binom{ n }{k}.
+\sum_{k=0}^{n}k(-1)^k2^k\binom{ n }{k}=2n\sum_{k=1}^{n}(-1)^k2^{k-1}\frac{(n-1)!}{(k-1)!((n-1)-(k-1))!}
+=2n \sum_{l=0}^{n-1}(-1)^{l+1}2^{l}\binom{n-1}{l}=-2n \sum_{l=0}^{n-1}(-1)^{l}2^{l}\binom{n-1}{l}=-2n(1-2)^{n-1}=2n(1-2)^{n}.
+2n (1-2)^n-2n(1-2)^{n}=0.
+n\gt0
+ \begin{align} \sum_{k=0}^n(-1)^k2^k\binom{2n-1}{k}\binom{2n-k}{n-k} &=\sum_{k=0}^n(-2)^k\binom{2n}{n}\color{#C00000}{\binom{n}{k}\frac{2n-k}{2n}}\\ &=\binom{2n}{n}\sum_{k=0}^n(-2)^k\left(\color{#C00000}{\binom{n}{k}-\frac12\binom{n-1}{k-1}}\right)\\ &=\binom{2n}{n}\left(\sum_{k=0}^n(-2)^k\binom{n}{k}+\sum_{k=0}^n(-2)^{k-1}\binom{n-1}{k-1}\right)\\ &=\binom{2n}{n}\left((1-2)^n+(1-2)^{n-1}\right)\\[6pt] &=0 \end{align} 

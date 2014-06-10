@@ -1,0 +1,109 @@
+\lambda_1
+\lambda_2
+Pr{X_i>t}=e^{-\lambda_it}
+t>=0
+N=1
+X_1<X_2
+N=2
+X_2<=X_1
+U=\min\{X_1, X_2\}=X_N
+V=\max\{X_1,X_2\}
+W=V-U=|X_1-X_2|
+Pr\{N=1\}=\frac{\lambda_1}{\lambda_1+\lambda_2}
+Pr\{N=2\}=\frac{\lambda_2}{\lambda_1+\lambda_2}
+Pr\{U>t\}=e^{-(\lambda_1+\lambda_2)t}
+t>=0
+N
+U
+Pr\{W>t|N=1\}=e^{-\lambda_2t}
+Pr\{W>t|N=2\}=e^{-\lambda_1t}
+t>=0
+U
+W=V-U
+f_{X_2}
+X_2
+ {\rm P}(X_1  < X_2 ) = \int_0^\infty  {{\rm P}(X_1  < X_2 |X_2  = t)f_{X_2 } (t)\,{\rm d}t} , 
+\min \{ X_1 ,X_2 \}  > t
+X_1 > t
+X_2 > t
+X_1
+X_2
+{\rm P}(\min \{X_1,X_2 \}>t , X_1 > X_2 )
+X_2
+ {\rm P}(\min \{X_1,X_2 \}>t , X_1 > X_2 ) = {\rm P}(\min \{X_1,X_2 \}>t ){\rm P}(X_1 > X_2 ) = \frac{{\lambda _2 }}{{\lambda _1  + \lambda _2 }}e^{ - (\lambda _1  + \lambda _2 )t}.  
+X_1
+{\rm P}(|X_1  - X_2 | > t|N = 2)
+ {\rm P}(|X_1  - X_2 | > t|N = 1) = \frac{{{\rm P}(X_2  - X_1  > t,X_1  < X_2 )}}{{{\rm P}(X_1  < X_2 )}} = \frac{{{\rm P}(X_2  > X_1  + t)}}{{{\rm P}(X_1  < X_2 )}}, 
+ {P(X_2  > X_1  + t)} = \frac{{\lambda _1 }}{{\lambda _1  + \lambda _2 }}e^{ - \lambda _2 t}.  
+N
+U
+U=u
+U \in [u,u+{\rm d}u]
+{\rm d}u \to 0
+U=u
+N=1
+X_1 = u
+X_2 - X_1
+(\lambda_2)
+U=u
+N=2
+X_2 = u
+X_1 - X_2
+(\lambda_1)
+ {\rm P}(W > t | U=u) = {\rm P}(W > t | N=1, U=u){\rm P}(N=1) + {\rm P}(W > t | N=2, U=u){\rm P}(N=2). 
+ {\rm P}(W > t | U=u) = \frac{{\lambda _1 }}{{\lambda _1  + \lambda _2 }}e^{ - \lambda _2 t}  + \frac{{\lambda _2 }}{{\lambda _1  + \lambda _2 }}e^{ - \lambda _1 t} . 
+ {\rm P}(W > t ) = {\rm P}(W > t ,N = 1) + {\rm P}(W > t ,N = 2), 
+ {\rm P}(W > t) = \frac{{\lambda _1 }}{{\lambda _1  + \lambda _2 }}e^{ - \lambda _2 t}  + \frac{{\lambda _2 }}{{\lambda _1  + \lambda _2 }}e^{ - \lambda _1 t} . 
+U
+W
+(U,W)
+Z=(U,W)
+Z
+(X_1,X_2)
+(X_1,X_2)
+(X_1,X_2)
+f_1(x_1)f_2(x_2)
+(X_1,X_2)
+(X_1,X_2)
+x_1\le x_2
+x_1>x_2
+E(\varphi(Z))
+(*)+(**)
+E(\varphi(Z))
+\mu
+(*)
+(**)
+[u=x_1,w=x_2-x_1]
+(*)
+[u=x_2,w=x_1-x_2]
+(**)
+(o)
+(*)+(**)
+\varphi
+\mathrm{d}\mu(u,w)=g(u,w)\mathrm{d}u\mathrm{d}w
+g
+(U,W)
+X_1
+X_2
+f_1
+f_2
+ \varphi(Z)=\varphi(\min\{X_1,X_2\},\max\{X_1,X_2\}-\min\{X_1,X_2\}). 
+ E(\varphi(Z))=\int\varphi(\min\{x_1,x_2\},\max\{x_1,x_2\}-\min\{x_1,x_2\})f_1(x_1)f_2(x_2)\mathrm{d}x_1\mathrm{d}x_2. 
+ (*)=\int\varphi(x_1,x_2-x_1)f_1(x_1)f_2(x_2)\mathbf{1}_{x_1<x_2}\mathrm{d}x_1\mathrm{d}x_2, 
+ (**)=\int\varphi(x_2,x_1-x_2)f_1(x_1)f_2(x_2)\mathbf{1}_{x_1>x_2}\mathrm{d}x_1\mathrm{d}x_2. 
+ (o)=\int\varphi(u,w)\mathrm{d}\mu(u,w), 
+ (*)=\int\varphi(u,w)f_1(u)f_2(u+w)\mathbf{1}_{w>0}\mathrm{d}u\mathrm{d}w, 
+ (**)=\int\varphi(u,w)f_1(u+w)f_2(u)\mathbf{1}_{w>0}\mathrm{d}u\mathrm{d}w. 
+ g(u,w)=[f_1(u)f_2(u+w)+f_1(u+w)f_2(u)]\mathbf{1}_{w>0}. 
+f_i(x)=\lambda_i\mathrm{e}^{-\lambda_i x}
+x>0
+u>0
+w>0
+g(u,w)
+g_1(u)g_2(w)
+(U,W)
+ g(u,w)=\lambda_1\lambda_2\mathrm{e}^{-(\lambda_1+\lambda_2)u}[\mathrm{e}^{-\lambda_1w}+\mathrm{e}^{-\lambda_2w}]. 
+g_1
+g_2
+U
+W

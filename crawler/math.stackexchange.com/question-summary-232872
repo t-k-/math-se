@@ -1,0 +1,8 @@
+\frac{\partial y}{\partial x}= \frac{\partial^2 y}{\partial z^2 }-2ik^2 y
+y(x,z)=X(x)Z(z)
+X'(x)Z(z)=X(x)Z''(z)-2ik^2X(x)Z(z)
+X'(x)Z(z)=X(x)(Z''(z)-2ik^2Z(z))
+\dfrac{X'(x)}{X(x)}=\dfrac{Z''(z)-2ik^2Z(z)}{Z(z)}=-(f(t))^2-2ik^2
+\begin{cases}\dfrac{X'(x)}{X(x)}=-(f(t))^2-2ik^2\\Z''(z)+(f(t))^2Z(z)=0\end{cases}
+\begin{cases}X(x)=c_3(t)e^{-x((f(t))^2+2ik^2)}\\Z(z)=\begin{cases}c_1(t)\sin(zf(t))+c_2(t)\cos(zf(t))&\text{when}~f(t)\neq0\\c_1z+c_2&\text{when}~f(t)=0\end{cases}\end{cases}
+\therefore y(x,z)=C_1ze^{-2ik^2x}+C_2e^{-2ik^2x}+\int_tC_3(t)e^{-x((f(t))^2+2ik^2)}\sin(zf(t))~dt+\int_tC_4(t)e^{-x((f(t))^2+2ik^2)}\cos(zf(t))~dt~\text{or}~C_1ze^{-2ik^2x}+C_2e^{-2ik^2x}+\sum\limits_tC_3(t)e^{-x((f(t))^2+2ik^2)}\sin(zf(t))+\sum\limits_tC_4(t)e^{-x((f(t))^2+2ik^2)}\cos(zf(t))

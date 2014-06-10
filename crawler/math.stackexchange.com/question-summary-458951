@@ -1,0 +1,47 @@
+A + B + C + (A + B)C - 2 = 0
+A = f(x)
+B = g(x)
+C = h(x)
+A, B
+C
+2A = A + (B - C) A
+4B = B + (C- A) B
+6C = C + (A - B) C
+A, B
+C
+A + B + C + (A + B)C - 2 = 0
+K_A := \{x \in \mathbb{R} | f(x) \neq 0\}
+K_B := \{x \in \mathbb{R} | g(x) \neq 0\}
+K_C := \{x \in \mathbb{R} | h(x) \neq 0\}
+\begin{align*}     2A &= A + (B-C) \cdot A \;\;\;\forall x \in \mathbb{R}\\ \Leftrightarrow A &= (B-C) \cdot A \;\;\;\forall x \in \mathbb{R}\\ \Rightarrow     1 &= B-C \;\;\;\forall x \in K_A \end{align*}
+\begin{align*}     4B &= B + (C-A) \cdot B \;\;\;\forall x \in \mathbb{R}\\  \Leftrightarrow 3B &=(C-A) \cdot B \;\;\;\forall x \in \mathbb{R}\\  \Rightarrow 3 &= C-A\;\;\;\forall x \in K_B\\ \end{align*}
+\begin{align*}     6C &= C + (A-B) \cdot C \;\;\;\forall x \in \mathbb{R}\\  \Leftrightarrow 5C &=(A-B) \cdot C \;\;\;\forall x \in \mathbb{R}\\  \Rightarrow 5 &= A-B\;\;\;\forall x \in K_C\\ \end{align*}
+\forall x \in (K_A \cap K_B \cap K_C):
+\begin{align} C &= B - 1\\ \Rightarrow 3 &= (B-1) - A\\ \Rightarrow 5 &= A - B\\  \\ B &= 4 + A\\ \Rightarrow 5 &= A - (4+A) = -4\\ \end{align} 
+\Rightarrow K_A \cap K_B \cap K_C = \emptyset
+x \in \mathbb{R}
+f(x) \neq 0
+g(x) \neq 0
+h(x) \neq 0
+A + B = 2
+\begin{align} 2A &= A + AB \\ \Leftrightarrow A &= AB\\ \\ 4B &= B - AB\\ \Leftrightarrow -3B &= AB\\ \\ A &= -3B \end{align}
+\begin{align} -3B + B = -2B &= 2\\ \Leftrightarrow B &= -1\\ \Rightarrow A &= 3 \end{align}
+A + C + AC -2 = 0
+\begin{align} 2A &= A - AC \\ \Leftrightarrow -A &= AC\\ \\ 6C &= C + AC\\ \Leftrightarrow 5C &= AC\\ \\ \Rightarrow -A &= 5C\\ \Leftrightarrow A &= -5C \end{align}
+\begin{align} A + C + AC -2 &= 0\\ \Leftrightarrow -5C + C + (-5C)C -2 &= 0\\ \Leftrightarrow -5 C^2 -4C  -2 &= 0\\ \Leftrightarrow C_{1,2} = \frac{1}{2 \cdot (-5)} \cdot \left (-4 \pm \sqrt{16 - 4 \cdot (-5) \cdot (-2)} \right ) \end{align}
+C
+\mathbb{R}
+\{x \in \mathbb{R} | B(x) = 0\} = \emptyset
+B+C+BC-2 = 0
+\begin{align} 4B &= B + BC\\ \Leftrightarrow 3B &= BC\\ \\ 6C &= C - BC\\ \Leftrightarrow 5C &= -BC\\ \Leftrightarrow -5C &= BC\\ \\ 3B &= -5C\\ \Leftrightarrow B &= -\frac{5}{3}C \end{align}
+\begin{align} -\frac{5}{3}C+C+(-\frac{5}{3}C)C-2 &= 0\\ -\frac{5}{3}C^2-\frac{2}{3}C-2 &= 0\\ \frac{5}{3}C^2+\frac{2}{3}C+2 &= 0\\ \Rightarrow C_{1,2} &= \frac{1}{2 \frac{5}{3}} \cdot \left (- \frac{2}{3} \pm \sqrt{\frac{4}{9} - 4 \cdot \frac{5}{3} 2} \right )\\ &= \frac{3}{10} \cdot \left (- \frac{2}{3} \pm \sqrt{\frac{4}{9} - \frac{40}{3}} \right) \end{align}
+C
+\mathbb{R}
+\{x \in \mathbb{R} | A(x) = 0\} = \emptyset
+A
+B
+C
+(1)
+9=0
+A\bigl(1-(B-C)\bigr)=0,\quad B\bigl(3-(C-A)\bigr)=0,\quad C\bigl(5-(A-B)\bigr)=0\ .\tag{1}
+1-(B-C)=0,\quad 3-(C-A)=0,\quad 5-(A-B)=0\ .

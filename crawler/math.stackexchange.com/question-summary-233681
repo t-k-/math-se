@@ -1,0 +1,75 @@
+M
+N
+m
+n
+M\times N
+\Delta_{M\times N}
+\Lambda^k(M\times N)\cong \bigoplus_j \Lambda^jM\otimes \Lambda^{k-j}N.
+\Delta_{M\times N}\omega\wedge\eta=(\Delta_M\omega)\wedge\eta + \omega\wedge(\Delta_N\eta),
+\omega\in\Lambda^jM
+\eta\in\Lambda^{k-j}N.
+d(\omega\wedge\eta)=d\omega\wedge\eta + (-1)^j\omega\wedge d\eta
+*(\omega\wedge\eta)=(-1)^{(m-j)(k-j)}*\omega\wedge*\eta
+\mathbb{R}^3
+f(x)g(y,z)\,dy\in\Lambda^1\mathbb{R}^3\cong \Lambda^0\mathbb{R}\otimes\Lambda^1\mathbb{R}^2.
+\mathbb{R}^2
+\Delta(g\,dy)=(\partial^2_y+\partial^2_z)g\,dy
+\mathbb{R}
+\Delta(f)=\partial^2_xf
+\Delta(fg\,dy)=(\Delta f)g\,dy+f(\Delta g\,dy)=g\partial^2_xf\,dy+f(\partial^2_y+\partial^2_z)g\,dy.
+\Delta(fg\,dy)=-(\partial^2_xf)g+f(\partial^2_y-\partial^2_z)g\,dy+(\partial_xf\partial_yg\,dx+\partial_xf\partial_yg\,dx)+(f\partial_y\partial_zg\,dz+f\partial_z\partial_yg\,dz)
+*(dx)=dy\wedge dz,*(dy)=dz\wedge dx,*(dz)=dx\wedge dy,*(dx\wedge dy)=dz,*(dy\wedge dz)=dx,*(dz\wedge dx)=dy,*(dx\wedge dy\wedge dz)=1.
+\mathbb{R}^3
+\mathbb{R}^3
+\mathbb{R}\times \mathbb{R}^2
+k
+\omega\wedge\eta
+M\times N
+\Delta=*d*d+d*d*
+\Delta=\delta d+d\delta
+\delta
+\delta=(-1)^{nk+n+1}*d*
+k
+n
+\delta=(-1)^k*d*
+f(x)
+(-1)^k
+\Delta f=(-1)^k*d*df + d(-1)^k*d*f=(-1)^k*d*\partial_xf\,dx + d(-1)^k*df\,dx\wedge dy\wedge dz
+=(-1)^k*d\partial_xf\,dy\wedge dz + d(-1)^k*\partial_xf\,dx\wedge dx\wedge dy\wedge dz
+=(-1)^k*\partial^2_xf\,dx\wedge dy\wedge dz=(-1)^0\partial^2_xf=\partial^2_xf
+f(x)\,dy
+\Delta f\,dy=(-1)^k*d*df\,dy + d(-1)^k*d*f\,dy
+=(-1)^k*d*\partial_xf\,dx\wedge dy - d(-1)^k*df\,dx\wedge dz
+=(-1)^k*d\partial_xf\,dz + d(-1)^k*\partial_xf\,dx\wedge dx\wedge dz
+=(-1)^k*\partial^2_xf\,dx\wedge dz=-(-1)^1\partial^2_xf\,dy=\partial^2_xf\,dy
+\Delta(fg\,dy)=((-1)^k*d*d)(fg\,dy) + (d(-1)^k*d*)(fg\,dy)
+=((-1)^k*d*)(g\partial_xf\,dx\wedge dy +f\partial_zg\,dz\wedge dy) + (d(-1)^k*d)(fg\,dz\wedge dx)
+=((-1)^k*d)(g\partial_xf\,dz-f\partial_zg\,dx) + (d(-1)^k*)(f\partial_yg\,dy\wedge dz\wedge dx)
+=(-1)^1*(g\partial^2_xf\,dx\wedge dz + \partial_xf \partial_yg\,dy\wedge dz-f\partial_y\partial_zg\,dy\wedge dx-f\partial^2_zg\,dz\wedge dx) + d(-1)^0(f\partial_yg)
+=g\partial^2_xf\,dy - \partial_xf \partial_yg\,dx-f\partial_y\partial_zg\,dz+f\partial^2_zg\,dy+\partial_xf\partial_yg\,dx+f\partial^2_yg\,dy+f\partial_z\partial_yg\,dz
+=(\partial^2_xf)g\,dy +f(\partial^2_y+\partial^2_z)g\,dy
+\Delta = d\delta + \delta d
+\delta = (-1)^k *^{-1} d *
+k
+\delta
+\nabla
+A
+\nabla \wedge A
+\nabla \cdot A
+\nabla \wedge A + \nabla \cdot A \equiv \nabla A
+A = f(x) g(y,z) e^y
+\nabla A = g \frac{\partial f}{\partial x} e^x \wedge e^y + f \frac{\partial g}{\partial z} e^z \wedge e^y + f \frac{\partial g}{\partial y}
+d
+\delta
+\Delta = \nabla^2
+\nabla^2 A
+\begin{align*}\nabla^2 A &= \nabla (\nabla A) \\&= g \frac{\partial^2 f}{\partial x^2} e^y - \frac{\partial g}{\partial y} \frac{\partial f}{\partial x} e^x + f \frac{\partial^2 g}{\partial z^2} e^y - f \frac{\partial^2 g}{\partial z \partial y} e^z \\& \quad + \frac{\partial f}{\partial x} \frac{\partial g}{\partial y} e^x + f \frac{\partial^2 g}{\partial y^2} e^y + f \frac{\partial^2 g}{\partial y \partial z} e^y \\ &= g \frac{\partial^2 f}{\partial x^2} e^y + f \left(\frac{\partial^2 g}{\partial y^2} + \frac{\partial^2 g}{\partial z^2} \right) e^y \\ &= g\nabla^2 f + f \nabla^2 g\end{align*}
+e^x \wedge e^y = -e^y \wedge e^x
+\nabla \wedge \nabla \wedge F = 0
+F
+\nabla \cdot (\nabla \cdot F) = 0
+d^2 = \delta^2 = 0
+\nabla_{M+N} = \nabla_M + \nabla_N
+\nabla^2_{M+N} = \nabla_M^2 + \nabla_N^2 + \nabla_M \nabla_N + \nabla_N \nabla_M
+M
+N

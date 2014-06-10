@@ -1,0 +1,12 @@
+H 
+\bar H 
+H_n 
+\bar H_n 
+Pr(H_{n+1}) = Pr(H_{n+1}|H_n)Pr(H_n) + Pr(H_{n+1}|\bar H_n)Pr(\bar H_n) 
+Pr(\bar H_{n+1}) = Pr(\bar H_{n+1}|H_n)Pr(H_n) + Pr(\bar H_{n+1}| \bar H_n)Pr(\bar H_n) 
+\begin{bmatrix}Pr(H_{n+1}) \\ Pr(\bar H_{n+1})\end{bmatrix} = \begin{bmatrix}Pr(H_{n+1}|H_n) & Pr(H_{n+1}|\bar H_n)\\Pr(\bar H_{n+1}|H_n) & Pr(\bar H_{n+1}|\bar H_n)\end{bmatrix} \begin{bmatrix}Pr(H_{n}) \\ Pr(\bar H_{n})\end{bmatrix}
+H_{n+1}|H_n
+\bar H_{n+1}|H_n
+Pr(H_{n+1}|H_n) + Pr(\bar H_{n+1}|H_n) = 1
+Pr(H_{n+1}|\bar H_n) + Pr(\bar H_{n+1}|\bar H_n) = 1
+\begin{bmatrix}Pr(H_{n+1}) \\ Pr(\bar H_{n+1})\end{bmatrix} = \begin{bmatrix}Pr(H_{n+1}|H_n) & Pr(H_{n+1}|\bar H_n)\\1 - Pr(H_{n+1}|H_n) & 1 - Pr(H_{n+1}|\bar H_n)\end{bmatrix} \begin{bmatrix}Pr(H_{n}) \\ Pr(\bar H_{n})\end{bmatrix}

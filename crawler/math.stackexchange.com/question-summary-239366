@@ -1,0 +1,10 @@
+\int x^2\sin^2(x)\,\mathrm dx
+ u=x^2\quad  v'=\sin^2x \\  u'=2x \quad v={-\sin x\cos x+x\over 2}
+ \int x^2\sin^2(x)\,\mathrm dx = {-\sin x\cos x+x\over 2} x^2 - \int 2x{-\sin x\cos x+x\over 2}\,\mathrm dx\\ ={-\sin x\cos x+x\over 2} x^2 - \int x(-\sin x\cos x+x)\,\mathrm dx\\  
+ \int x(-\sin x\cos x+x)\,\mathrm dx=-\int x\sin x\cos x\,\mathrm dx+\int x^2\,\mathrm dx
+\int x^2\,\mathrm dx = {1 \over 3}x^3+C
+\int x\sin x\cos x \,\mathrm dx
+\sin x \cos x=\frac{1}{2}\sin 2x
+\cos 2x=1-2\sin^2 x
+\dfrac{1}{2}x^2(1-\cos 2x)
+\dfrac{x^2}{2}+\dfrac{x^2}{2}\cos 2x

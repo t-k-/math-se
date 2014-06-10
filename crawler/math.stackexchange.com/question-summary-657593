@@ -1,0 +1,16 @@
+f,g\in \mathbb{C}
+\lim_{t\to 0,t\in\mathbb{R}}\frac{|f+tg|^p-|f|^p}{t}=\frac{p}{2}|f|^{p-2}(\overline{f}g+f\overline{g})
+\lvert f + tg\rvert^p = \bigl(\lvert f + tg\rvert^2\bigr)^{p/2} = \bigl(\lvert f\rvert^2 + t(f\overline{g}+\overline{f}g) + t^2\lvert g\rvert^2\bigr)^{p/2}.
+A > 0
+\varepsilon > 0
+(A + \varepsilon)^\alpha = A^\alpha + \alpha\cdot A^{\alpha-1}\cdot\varepsilon + o(\varepsilon)
+x^\alpha
+A
+A = \lvert f\rvert^2
+\alpha = p/2
+\varepsilon = t(f\overline{g}+\overline{f}g) + t^2\lvert g\rvert^2
+\lvert f+tg\rvert^p - \lvert f\rvert^p = \frac{p}{2} \lvert f\rvert^{p-2}\cdot \bigl(t(f\overline{g}+\overline{f}g) + t^2\lvert g\rvert^2\bigr) + o(t).
+|f+t g|^p = e^{p \log{|f + t g|}} = e^{p \log{|f|}} e^{p \log{|1+t g/f|}} = |f|^p e^{p \log{|1+t g/f|}}
+\log{|1+t g/f|} = \Re{\left [\log{\left (1+t \frac{g}{f}\right )}\right ]} \approx t \Re{\left ( \frac{g}{f}\right )} = t \frac{\Re{(g \bar{f})}}{|f|^2}
+|f+t g|^p \approx |f|^p \left [1+ t p \frac{\Re{(g \bar{f})}}{|f|^2}\right ] = |f|^p + t p |f|^{p-2} \Re{(g \bar{f})}
+|f+t g|^p - |f|^p \approx \frac12 t p |f|^{p-2} (g \bar{f} + f \bar{g}) 

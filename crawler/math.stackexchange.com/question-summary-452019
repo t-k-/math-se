@@ -1,0 +1,54 @@
+N+1
+N
+X
+\lambda
+I
+I
+\alpha
+X >\alpha
+k
+X >\alpha
+ S=\left\langle\sum_{i \in I} X_i\right\rangle 
+I
+\lambda=5
+Y= [5\    11\     7\     5\     2\     3\    2]
+\alpha=4
+k=2
+S=X_0+X_3=5+5=10
+X_1
+X_2
+X_4
+X_5
+X_0>\alpha
+X_3>\alpha
+X_6
+X_6<\alpha
+S_n
+n\geqslant1
+S_n=0
+n\leqslant0
+m=E[X\mid X\gt\alpha]
+T
+p=P[X\gt\alpha]
+P[T=i]=pq^{i-1}
+i\geqslant1
+q=1-p
+n
+S_n=mP[T\leqslant n]=m(1-q^n)
+n\leqslant k+1
+t_1(x)=t(x)/(1-x)
+t(x)=px/(1-qx)
+D(x)=1+px+px^2+\cdots+px^k
+|x|\lt1
+|qx+px^{k+1}|\lt q+p=1
+1-qx-px^{k+1}\ne0
+D(x)
+x
+|x|\leqslant1
+n\to\infty
+ S_n=mP[T\leqslant n]+\sum_{i\geqslant1}P[T=i]\,S_{n-i-k}. 
+ s(x)=\sum_{n\geqslant1}S_nx^n,\qquad t(x)=\sum_{n\geqslant1}P[T=n]x^n,\qquad t_1(x)=\sum_{n\geqslant1}P[T\leqslant n]x^n. 
+ s(x)=mt_1(x)+x^ks(x)t(x). 
+ s(x)=\frac{mt(x)}{(1-x)(1-x^kt(x))}. 
+ s(x)=\frac{mpx}{(1-x)(1-qx-px^{k+1})}=\frac{mpx}{(1-x)^2D(x)}, 
+ \frac{S_n}n\to\frac{mp}{D(1)}=\frac{m}{k+p^{-1}}. 

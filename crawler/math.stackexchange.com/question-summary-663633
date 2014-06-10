@@ -1,0 +1,103 @@
+x = n + e
+n
+e
+1
+0
+\left\lfloor \lfloor (n+e)/2\rfloor/2 \right\rfloor = \lfloor (n+e) / 4 \rfloor 
+0 \le x < 1/4
+1/4 \le x < 1/2
+1/2 \le x < 3/4
+3/4 \le x < 1
+\left\lfloor \lfloor (n+e)/2\rfloor \right\rfloor
+e
+0=0
+4
+\lfloor x/4 \rfloor=k
+4k+4>x\ge 4k
+\lfloor\lfloor x/2\rfloor/2\rfloor =k
+2k+2>\lfloor x/2\rfloor\ge 2k
+2k+2>\lfloor x/2\rfloor\ge 2k
+\lfloor x/2\rfloor=2k
+2k+1
+\lfloor x/2\rfloor=2k
+4k+2>x\ge 4k
+\lfloor x/2\rfloor=2k+1
+4k+4>x\ge 4k+2
+2k+2>\lfloor x/2\rfloor\ge 2k
+4k+4>x\ge 4k
+\lfloor x/4 \rfloor=\lfloor\lfloor x/2\rfloor/2\rfloor
+x\in {\mathbb R}
+k\in{\mathbb Z}
+\ b_1
+b_0\in\{0,1\}
+0\leq t<1
+0\leq b_0+t<2
+0\leq t'<1
+\lfloor x/2\rfloor=2k+b_1
+b_1\leq1
+2b_1+b_0+t<4
+x=4k+2b_1+b_0+t
+x/2=2k+b_1+t'
+\left\lfloor\lfloor x/2\rfloor/2\right\rfloor=k=\lfloor x/4\rfloor\ ,
+\left[\frac x2\right]\le\frac x2,
+\cfrac{\left[\frac x2\right]}2\le\frac x4,
+\left[\cfrac{\left[\frac x2\right]}2\right]\le\left[\frac x4\right].
+x\in\Bbb R.
+n
+4n\le x,
+k\in\{0,1,2,3\}
+4n+k\le x.
+e=x-(4n+k),
+x=4n+k+e
+0\le e<1.
+0\le k+e<4,
+\left[\frac x4\right]=\left[n+\frac{k+e}4\right]=n,
+k
+n\le\left[\cfrac{\left[\frac x2\right]}2\right]
+k.
+n,
+\left[\frac x2\right]=\left[2n+\frac{k+e}2\right]=\begin{cases}2n & k=0,1\\2n+1 & k=2,3.\end{cases}
+n=\left[\frac{2n}2\right]=\left[\frac{2n+1}2\right]
+x
+E+r
+E
+0\le r\lt2
+E
+4n+2m
+n
+m\in\{0,1\}
+x
+x=4n+2m+r
+n
+m\in\{0,1\}
+0\le r\lt2
+\left\lfloor{2m+r\over4}\right\rfloor=\left\lfloor{m\over2}\right\rfloor=\left\lfloor{r\over2}\right\rfloor=0
+m
+r
+\left\lfloor N+u\right\rfloor=N+\left\lfloor u\right\rfloor
+N
+u
+\begin{align} \left\lfloor{x\over4}\right\rfloor&=\left\lfloor n+{2m+r\over4} \right\rfloor\\ &=n+\left\lfloor {2m+r\over4} \right\rfloor\\ &=n\\ &=n+\left\lfloor{m\over2} \right\rfloor\\ &=\left\lfloor n+{m\over2} \right\rfloor\\ &=\left\lfloor{2n+m+\left\lfloor{r\over2}\right\rfloor\over2} \right\rfloor\\ &=\left\lfloor{\left\lfloor2n+m+{r\over2}\right\rfloor\over2} \right\rfloor\\ &=\left\lfloor{\left\lfloor{4n+2m+r\over2}\right\rfloor\over2} \right\rfloor\\ &=\left\lfloor{\left\lfloor{x\over2}\right\rfloor\over2} \right\rfloor\\ \end{align}
+x=d_n\ldots d_1d_0.d_{-1}d_{-2}\ldots
+\begin{align} \left\lfloor{\left\lfloor{x\over2 }\right\rfloor\over2} \right\rfloor &=\left\lfloor{\left\lfloor d_n\ldots d_1.d_0d_{-1}d_{-2}\ldots\right\rfloor\over2} \right\rfloor\\ &=\left\lfloor{ d_n\ldots d_1\over2} \right\rfloor\\ &=\left\lfloor d_n\ldots d_2.d_1 \right\rfloor\\ &=\left\lfloor d_n\ldots d_2.d_1d_0d_{-1}\ldots \right\rfloor\\ &=\left\lfloor{x\over4}\right\rfloor\\ \end{align}
+x\lt0
+N
+4N+x\ge0
+\begin{align} \left\lfloor{x\over4} \right\rfloor &=\left\lfloor N+{x\over4} \right\rfloor-N\\ &=\left\lfloor{4N+x\over4} \right\rfloor-N\\ &=\left\lfloor {\left\lfloor{4N+x\over2} \right\rfloor\over2} \right\rfloor-N\\ &=\left\lfloor{2N+\left\lfloor{x\over2} \right\rfloor\over2} \right\rfloor-N\\ &=\left\lfloor{\left\lfloor{x\over2} \right\rfloor\over2} \right\rfloor \end{align}
+a
+b
+\left[\frac{a}{b}\right]
+a
+b
+x\in\mathbb{R}
+r' \in \{0,1\}
+x = 2 \left[\frac{x}{2}\right] + r'
+r'' \in \{0,1,2,3\}
+x = 4\left[\frac{x}{4}\right] + r''
+r \in \{0,1\}
+\left[\frac{x}{2}\right] = 2 \left[\frac{\left[\frac{x}{2}\right]}{2}\right] + r
+ 2 \left[\frac{x}{2}\right] + r' = 4\left[\frac{x}{4}\right] + r''
+2 \times \left( 2 \left[\frac{\left[\frac{x}{2}\right]}{2}\right] + r\right) + r' = 4\left[\frac{x}{4}\right] + r''
+4 \left[\frac{\left[\frac{x}{2}\right]}{2}\right] + (2r + r') = 4\left[\frac{x}{4}\right] + r''
+0 \leqslant 2r+ r' < 4
+ \left[\frac{\left[\frac{x}{2}\right]}{2}\right] = \left[\frac{x}{4}\right] 

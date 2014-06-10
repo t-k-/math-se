@@ -1,0 +1,26 @@
+e^{bt}
+F(x,t)=e^{bt} x
+\mu_t
+\sigma_t
+Y_t=X_0+\int_0^te^{bs}\sigma dW_s
+Y_t:=e^{bt}X_t
+dY_t=d(e^{bt}X_t)=e^{bt}\sigma dW_t
+ \begin{align} df(t,X_t) =\left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{1}{2}\sigma_t^2\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dW_t. \end{align} 
+dY_t = \sigma_t \, dW_t + \mu_t \, dt, \tag{1}
+df(t,Y_t) = \left( \frac{\partial f(t,Y_t)}{\partial t} + \mu_t \frac{\partial f(t,Y_t)}{\partial y} + \frac{1}{2} \sigma_t^2 \frac{\partial^2 f(t,Y_t)}{\partial y^2} \right) \, dt + \sigma_t \frac{\partial f(t,Y_t)}{\partial y} \, dW_t. \tag{2} 
+\mu_t = 0
+\sigma_t = \sigma e^{bt}
+(1)
+(2)
+f(t,y) := e^{-bt} y
+dY_t = e^{bt} \sigma \, dW_t,
+dX_t = df(t,Y_t) = d(e^{-b t} Y_t)
+\mathrm dY_t=\mathrm e^{bt}\sigma \mathrm dW_t
+X_t=f(t,Y_t)
+f:(t,y)\mapsto\mathrm e^{-bt}y
+Y_t
+\mathrm dY_t
+X_t
+\mathrm dW_t
+\mathrm dX_t=\partial_yf(t,Y_t)\mathrm dY_t+\partial_tf(t,Y_t)\mathrm dt+\tfrac12\partial^2_{yy}f(t,Y_t)\mathrm d\langle Y,Y\rangle_t, 
+\mathrm dX_t=\mathrm e^{-bt}\mathrm dY_t-b\mathrm e^{-bt}Y_t\mathrm dt.

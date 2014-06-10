@@ -1,0 +1,54 @@
+2n
+X_1,…,X_n,Y_1,…,Y_n
+n
+P((k∑_iX_iY_i+(∑_iX_i)(∑_jY_j))<c)
+k∑_iX_iY_i+(∑_iX_i)(∑_jY_j)
+P((k∑_iX_iY_i+(∑_iX_i)(∑_jY_j)) \le c)
+n
+S_X = \sum_i X_i
+S_Y = \sum_j Y_j
+n\mu
+\sqrt{n} \sigma
+X_i
+Y_j
+\mu
+\sigma
+E[Z] = E[S_X] E[S_Y] = n^2 \mu^2
+E[Z^2] = E[S_X^2] E[S_Y^2] = (n^2 \mu^2 + n \sigma^2)^2
+Z
+\text{Var}(Z) = E[Z^2] - E[Z]^2 = n^2 \sigma^4 + 2 n^3 \sigma^2 \mu^2
+Z = \sum_{i=1}^n \sum_{j=1}^n X_i Y_j = \left(\sum_{i=1}^n X_i\right)\left(\sum_{j=1}^n Y_j\right)
+n\mu
+n \sqrt{\sigma}
+t < 1/(n \sigma^2)
+ M_Z(t) = E[e^{tZ}] = \frac{1}{\sqrt{1 - n^2 \sigma^4 t^2}} \exp\left(\frac{n^2 \mu^2 t}{1 - n \sigma^2 t}\right)
+\mu \ne 0
+X_i = \mu + \sigma U_i
+Y_i = \mu + \sigma V_i
+U_i
+V_i
+0
+1
+n \mu \sigma \sum_{i=1}^n (U_i + V_i)
+0
+\sqrt{2} n^{3/2} \mu \sigma
+\sigma^2 \sum_{i=1}^n \sum_{j=1}^n U_i V_j
+0
+n \sigma^2
+n
+n^{3/2}
+Z
+n^2 \mu^2
+\sqrt{2} n^{3/2} \mu \sigma
+Z  = n^2 \mu^2 + n \mu \sigma \sum_{i=1}^n (U_i + V_i) + \sigma^2 \sum_{i=1}^n \sum_{j=1}^n U_i V_j
+ (k−1) \sum_i X_i Y_i+ Z
+(k-1) T + Z
+\mu \sigma \sum_{i=1}^n (U_i + V_i)
+0
+\sqrt{2n} \mu \sigma
+\sigma^2 \sum_{i=1}^n U_i V_i
+0
+\sqrt{n} \sigma^2
+n^2
+n^{3/2}
+T = n \mu^2 +  \mu \sigma \sum_{i=1}^n (U_i + V_i) + \sigma^2\sum_{i=1}^n U_i V_i

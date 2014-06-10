@@ -1,0 +1,15 @@
+n
+1, \ldots, n
+k
+t
+0
+n+1
+1, \ldots, k
+x_i(t)
+i
+\lfloor \cdot \rfloor
+ x_i(t+1) = \lfloor \frac{x_{i-1}(t)+x_{i+1}(t)}{2} \rfloor, i = 2, \ldots, k-1
+ x_1(t+1) = \lfloor (1/2) x_2(t) \rfloor, x_k(t+1) = \lfloor \frac{x_{k-1}(t) + (n+1)}{2} \rfloor.
+n-k
+k+1
+D \equiv \sum_{i=1}^{k} |x_{i+1} - 2x_i + x_{i-1} - 1/2|

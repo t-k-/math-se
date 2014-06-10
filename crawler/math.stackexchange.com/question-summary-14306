@@ -1,0 +1,9 @@
+f: [a,b] \rightarrow \mathbb{R}
+n \in 2\mathbb{N}
+h = (b-a)/n
+y_k = f(a+kh)
+0 \leq k \leq n
+\left|\int_a^b f(x) \mathrm dx - \frac{h}{3} [(y_0 + y_n) + 4(y_1+y_3+...+y_{n-1})+2(y_2+y_4+...+y_{n-2})]\right|
+\leq \frac{1}{180} \max_{a \leq x \leq b} |f^{(4)}(x)|(b-a)h^4
+\int_a^b f(x) \mathrm dx
+0=0

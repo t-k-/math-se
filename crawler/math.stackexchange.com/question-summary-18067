@@ -1,0 +1,12 @@
+I:= \int_{-\infty}^\infty e^{-x^2}dx
+I^2= \left( \int_{-\infty}^\infty e^{-x^2} dx\right) \left(\int_{-\infty}^\infty e^{-y^2} dy\right)
+I^2=\int_{-\infty}^\infty e^{-(x^2+y^2)} dxdy
+\big(\int f(x)dx\big) \big(\int f(y)dy\big) = \int f(x)f(y) dxdy
+J
+x
+f(y)
+J = \int_{-\infty}^\infty \int_{-\infty}^\infty f(x) f(y)\,dx\,dy,
+J = \int_{-\infty}^\infty \left( \int_{-\infty}^\infty f(x) f(y)\,dx \right) \,dy.
+\begin{align}J &= \int_{-\infty}^\infty f(y) \left( \int_{-\infty}^\infty f(x)\,dx \right) \,dy \\ &= \int_{-\infty}^\infty f(y) I \,dy. \\ &=  I \int_{-\infty}^\infty f(y) \,dy \\ &=  I \cdot I \\ &= I^{2}.\end{align}
+\int f(x) g(x) dx \neq \left(\int f(x) dx\right) \left(\int g(x) dx\right)
+\iint f(x) g(y) dx dy = \left(\int f(x) dx\right) \left(\int g(y) dy\right)

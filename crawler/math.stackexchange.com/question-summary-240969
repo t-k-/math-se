@@ -1,0 +1,11 @@
+\frac{\partial^2z}{\partial x^2} r^2\sin^2 t + 2\frac{\partial^2z}{\partial y\partial x} r^2\cos t\sin t + \frac{\partial^2z}{\partial y^2} r^2\cos^2t
+z=z(x,y)
+x=r\sin t
+y=r\cos t
+\frac{\partial^2 z}{\partial y\partial x}
+\frac{\partial^2 z}{\partial x\partial y}
+\frac{\partial^2 z}{\partial y\partial x}=\frac{\partial^2 z}{\partial x\partial y}
+\frac{\partial z}{\partial t}=\frac{\partial z}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial t}
+\begin{align*}\frac{\partial^2 z}{\partial t^2}&=\frac{\partial}{\partial t}\left(\frac{\partial z}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial t}\right)=\frac{\partial}{\partial t}\left(\frac{\partial z}{\partial x}\right)\frac{\partial x}{\partial t}+\frac{\partial z}{\partial x}\frac{\partial^2 x}{\partial t^2}+\frac{\partial}{\partial t}\left(\frac{\partial z}{\partial y}\right)\frac{\partial y}{\partial t}+\frac{\partial z}{\partial y}\frac{\partial^2 y}{\partial t^2}\\  &= \left(\frac{\partial^2 z}{\partial x^2}\frac{\partial x}{\partial t}+\frac{\partial^2 z}{\partial y\partial x}\frac{\partial y}{\partial t}\right)\frac{\partial x}{\partial t}+\frac{\partial z}{\partial x}\frac{\partial^2 x}{\partial t^2}+\left(\frac{\partial^2 z}{\partial x\partial y}\frac{\partial x}{\partial t}+\frac{\partial^2 z}{\partial y^2}\frac{\partial y}{\partial t}\right)\frac{\partial y}{\partial t}+\frac{\partial z}{\partial y}\frac{\partial^2 y}{\partial t^2} \end{align*}
+\frac{\partial x}{\partial t}=r\cos t, \hspace{5pt} \frac{\partial y}{\partial t}=-r\sin t, \hspace{5pt} \frac{\partial^2 x}{\partial t^2}=-r\sin t, \hspace{5pt} \frac{\partial^2 y}{\partial t^2}=-r\cos t
+\frac{\partial^2 z}{\partial x^2}r^2\cos^2t-\left(\frac{\partial^2 z}{\partial x\partial y}+\frac{\partial^2 z}{\partial y\partial x}\right)r^2\sin t\cos t-\frac{\partial z}{\partial x}r\sin t+\frac{\partial^2 z}{\partial y^2}r^2\sin^2 t-\frac{\partial z}{\partial y}r\cos t

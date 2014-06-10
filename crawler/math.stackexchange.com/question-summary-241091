@@ -1,0 +1,13 @@
+z_i =\cos(iw)
+w
+[0,2\pi]
+E(z_i)=0
+\operatorname{Cov}(z_i,z_{i-j})=0
+i
+j
+\mathbb{E}z_i=0
+0<j \leq i
+cov(z_i,z_{i-j}) = \int \cos(i \cdot w) \cdot \cos((i-j) \cdot w) \, d\mathbb{P} = \frac{1}{2\pi} \int_0^{2\pi} \cos(i \cdot x) \cdot \cos ((i-j) \cdot x) \, dx \\ \stackrel{\ast}{=} \frac{1}{4\pi} \cdot \int_0^{2\pi} \cos((2i-j) \cdot x) + \cos(j \cdot x) \, dx \\ = \frac{1}{4 \pi} \cdot \bigg( \bigg[\frac{\sin((2i-j) \cdot x)}{2i-j}\bigg]_0^{2\pi} +  \bigg[\frac{\sin(j \cdot x)}{j}\bigg]_0^{2\pi}\bigg) =0 
+\cos \alpha + \cos \beta = 2 \cos \bigg(\frac{\alpha+\beta}{2}\bigg) \cdot \cos \bigg( \frac{\alpha-\beta}{2} \bigg)
+\alpha :=2i-j
+\beta:=j

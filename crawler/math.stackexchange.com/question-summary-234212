@@ -1,0 +1,8 @@
+ u''(x, t) = \dot u(x, t)
+u(x, 0) = \exp\left(-x^2\right)
+ u(x, t) = \frac{1}{\sqrt{4 \pi t}} \int_{-\infty}^\infty \mathrm dy \, \exp\left(-\frac{(x-y)^2}{4t} - y^2\right)
+\text{ConditionalExpression}\left[\frac{\exp\left(\frac{x^2}{4 t-1}\right)}{\sqrt{4-\frac{1}{t}} \sqrt{t}},\left(4    \Re(t)\neq 1\lor \Re\left(\frac{x}{t}\right)>0\right)\land \Re\left(\frac{1}{t}\right)<4\right]
+t=0
+ \xi=\sqrt{\frac{1+4t}{4t}}\left(y-\frac{x}{1+4t}\right), 
+ \int_{-\infty}^\infty\exp(-\xi^2)\, d\xi=\sqrt{\pi}, 
+ u(x,t)=\frac{1}{\sqrt{1+4t}}\exp\left(-\frac{x^2}{1+4t}\right). 

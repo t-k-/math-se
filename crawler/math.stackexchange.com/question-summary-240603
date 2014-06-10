@@ -1,0 +1,35 @@
+X_1,\ldots,X_n
+\mu_1
+Y_1,\ldots,Y_n
+\mu_2
+W_1,\ldots,W_n
+\mu_1+\mu_2
+3n
+\mu_1
+\mu_2
+\mu_1
+X_1,\ldots,X_n
+\mu_1
+X
+\mu_2
+Y_1,\ldots,Y_2
+\mu_2
+Y
+W_1,\ldots,W_n
+X_1,\ldots,X_n,Y_1,\ldots,Y_n,W_1,\ldots,W_n
+ L(\mu_1,\mu_2,\sigma^2)=\left[\prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x_i-\mu_1)^2\right)\right]\times\left[\prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(y_i-\mu_2)^2\right)\right]\times \left[\prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(w_i-(\mu_1+\mu_2))^2\right)\right] 
+0
+\mu_1
+\mu_2
+ l(\mu_1,\mu_2,\sigma^2)=-\frac{3n}{2}\log(2\pi\sigma^2)-\frac{1}{2\sigma^2}\left(\sum_{i=1}^n(x_i-\mu_1)^2+\sum_{i=1}^n(y_i-\mu_2)^2+\sum_{i=1}^n(w_i-\mu_1-\mu_2)^2\right) 
+ \frac{\partial l}{\partial \sigma^2}(\mu_1,\mu_2,\sigma^2)=-\frac{3n}{2\sigma^2}+\frac{1}{2(\sigma^2)^2}\left(\sum_{i=1}^n(x_i-\mu_1)^2+\sum_{i=1}^n(y_i-\mu_2)^2+\sum_{i=1}^n(w_i-\mu_1-\mu_2)^2\right). 
+ \sigma^2=\hat{\sigma}^2=\frac{1}{3n}\left(\sum_{i=1}^n(x_i-\mu_1)^2+\sum_{i=1}^n(y_i-\mu_2)^2+\sum_{i=1}^n(w_i-\mu_1-\mu_2)^2\right). 
+ l(\mu_1,\mu_2,\sigma^2)\leq l(\mu_1,\mu_2,\hat{\sigma}^2)=-\frac{3n}{2}\log(2\pi\hat{\sigma}^2)-\frac{3n}{2}. 
+\mu
+\mu
+\hat\mu=\overline{x}
+ \sum_{i=1}^n (x_i-\mu)^2 = n(\overline{x}-\mu)^2 + \sum_{i=1}^n (x_i-\overline{x})^2,\text{ where }\overline{x} = \frac{x_1+\cdots+x_n}{n}. 
+\overline{x}
+\overline{y}
+\mu_1
+ \mu_2=\overline{w}+\text{a certain weighted average of $\overline{x}$ and $\overline{y}$}. 

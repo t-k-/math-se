@@ -1,0 +1,11 @@
+x(N)
+0<x<\pi/N
+D_N(x)=1
+N\to\infty
+D_N(x)=\frac{\sin [(N+(1/2))t]}{\sin (t/2)}
+\left|\int_{x(N)}^{\pi/N} D_N(t)\mathrm dt \right|=O\left(\frac1{N}\right)
+\displaystyle x(N) = \dfrac{\pi}{N+1}
+\displaystyle D_n(x) = 1 + 2\sum_{k=1}^{n} \cos(kx)
+\displaystyle |\sin x - \sin y| \leq |x-y|
+\displaystyle \left|\int_{\pi/(N+1)}^{\pi/N} D_N(t) \ \text{dt}\right| = \left|\int_{\pi/(N+1)}^{\pi/N} 1 + 2\sum_{k=1}^{N} \cos(kx)  \ \text{dt}\right|
+\displaystyle = \frac{\pi}{N(N+1)} + 2 \sum_{k=1}^{N} \mathcal{O}(\frac{1}{N^2})  = \mathcal{O}(\frac{1}{N})

@@ -1,0 +1,69 @@
+\alpha\in[a,b]
+g(\alpha)=\lim_{y\to\alpha}f(y)
+\epsilon >0
+\delta>0
+0<|y-\alpha|<\delta
+|g(\alpha)-f(y)|<\epsilon/2
+g(\alpha)-\epsilon/2<f(y)<g(\alpha)+\epsilon/2
+x
+0<|x-\alpha|<\delta
+g(\alpha)-\epsilon/2\leq \lim_{y\to x}f(y)\leq g(\alpha)+\epsilon/2
+|g(x)-g(\alpha)|\leq \epsilon/2<\epsilon
+\;\blacktriangle
+\tag 2 \left|f(w)-\lim_{x\to w}f(x)\right|>\epsilon
+\epsilon>0
+\delta' >0
+y
+0<|y-\lambda|<\delta'
+\tag 3 \left|\lim_{x\to y}f(x)-\lim_{x\to \lambda}f(x)\right|<\epsilon/2
+\delta''=\min(\delta,\delta')
+(1)
+(2)
+(3)
+w\in \Lambda(\epsilon)
+0<|w-\lambda|<\delta''
+ \left|f(w)-\lim_{x\to \lambda}f(x)\right|<\epsilon /2
+ \left|f(w)-\lim_{x\to w}f(x)\right|>\epsilon
+ \left|\lim_{x\to w}f(x)-\lim_{x\to \lambda}f(x)\right|<\epsilon/2
+\Lambda(\epsilon)
+\epsilon>0
+n\in\Bbb N
+\Lambda(1/n)
+\; \blacktriangle
+\bigcup_{n\in\Bbb N}\Lambda(1/n)=\Delta
+a
+[0,1]
+x
+\delta >0
+a
+0<|x-a|<\delta/2
+a'
+|a'-a|<\delta/2
+0<|x-a'|<\delta
+\ell=\lim\limits_{y\to x }f(y)
+\ell
+\delta >0
+0<|y-x|<\delta
+0<|x-a|<\delta
+0<|x-a'|<\delta
+\epsilon < |f(a')-f(a)|<|f(a')-\ell|+|f(a)-\ell|<\epsilon
+\tag 1 \lim_{y\to a}f(y)-f(a)|>\epsilon
+\tag 2 |f(a')-f(a)|>\epsilon
+|f(y)-\ell|<\epsilon/2
+\epsilon < |f(a')-f(a)|
+L=\lim_{y\to a}f(a)\;,
+d=|L-f(a)|=\left|\lim_{y\to a}f(y)-f(a)\right|>\epsilon\;.
+\eta>0
+|L-f(y)|<\frac12(d-\epsilon)
+0<|y-a|<\eta
+y\in[0,1]
+y
+|f(y)-f(a)|>d-\frac12(d-\epsilon)=\frac12(d+\epsilon)>\epsilon\;.
+a'
+0<|a'-a|<\min\left\{\frac{\delta}2,\eta\right\}
+y \in N_{\delta}(a)
+y=a'
+f(a') - f(a) > \epsilon
+|\lim_{y\rightarrow a}f(y) - f(a)| > \epsilon 
+\Rightarrow \liminf_{y\rightarrow a}f(y)  > f(a) + \epsilon 
+\Rightarrow f(y) > f(a) + \epsilon

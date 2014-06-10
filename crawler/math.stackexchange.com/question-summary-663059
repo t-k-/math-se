@@ -1,0 +1,24 @@
+(\Omega,\mathcal{F},P)
+\mathcal{G}_t=\cap_{u>t}\mathcal{G}_u
+\mathcal{G}
+\mathcal{G}_t=\cap_{n\ge 1}\mathcal{G}_{t+\frac{1}{n}}\tag{1}
+E[e^{i(u_1X_{s_1}+\dots+u_nX_{s_n})}|\mathcal{G}_t]=E[e^{i(u_1X_{s_1}+\dots+u_nX_{s_n})}|\mathcal{G}_{t+}]=e^{i(u_1X_{s_1}+\dots+u_nX_{s_n})}
+s_1,\dots,s_n\le t
+(u_1,\dots,u_n)
+n=2
+z>v>t
+u_1,u_2
+E[e^{i(u_1X_v+u_2X_z)}|\mathcal{G}_{t+}]=\lim_{w\downarrow t}E[e^{i(u_1X_v+u_2X_z}|\mathcal{G}_{w}]\tag{2}
+(2)
+A\in\mathcal{G}_{t+}
+E[e^{i(u_1X_v+u_2X_z)}\mathbf1_A]=E[\lim_{w\downarrow t}E[e^{i(u_1X_v+u_2X_z)}|\mathcal{G}_w]\mathbf1_A] \tag{3}
+X_n:=E[\mathbf1_Ae^{i(u_1X_v+u_2X_z)}|\mathcal{G}_{t+\frac{1}{n}}]
+|X_n|\le 1
+A\in\mathcal{G}_{t+\frac{1}{n}} 
+(2)
+E[\lim_{n\to\infty}E[e^{i(u_1X_v+u_2X_z)}|\mathcal{G}_{t+\frac{1}{n}}]\mathbf1_A]=E[\lim_{n\to\infty}X_n]=\lim_ {n\to\infty}E[X_n]=E[\mathbf1_Ae^{i(u_1X_v+u_2X_z)}]
+(s_1,\dots,s_n)
+(u_1,\dots,u_n)
+\sum
+1\le j\le n
+E[e^{i\sum u_jX_{s_j}}|\mathcal{G}_{t+}]=E[e^{i\sum u_jX_{s_j}}|\mathcal{G}_{t}]

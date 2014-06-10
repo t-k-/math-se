@@ -1,0 +1,18 @@
+f(t) = \sum_{i = 0}^{n} c_i \ t^i
+n
+f(t) = \sum_{k = 0}^{n} h_k \ \binom{t + n - k}{n}
+c_i
+\{ h_0, \dots, h_n \}
+s(n,\ell)
+h_k
+\{ c_0, \dots, c_n \}
+c_i = \frac{1}{n!} \sum_{k = 0}^{n} \left( \sum_{\ell = i}^{n} s(n,\ell) \binom{\ell}{i} (n-k)^{\ell - i} \right) h_k, 
+\binom{t+n-k}{k} = \frac{(t+n-k)!}{k! (t+n-2k)!} = \frac{(t+n-k)^{\underline{k}}}{k!}
+s_0, s_1, \ldots, s_n
+t^n = \sum_{k=0}^n s_k (t+n-k)^{\underline{k}}.
+n-k = 0
+S(n,k)
+t^n = \sum_{k=0}^n S(n,k) t^{\underline{k}}.
+S(j,k)
+t^n = \sum_{k=0}^n S(n,k;r) (t-r)^{\underline{k}},
+S(n,k;r) = \sum_{j=k}^n \binom{n}{j} r^{n-j} S(j,k),

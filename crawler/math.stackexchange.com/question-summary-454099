@@ -1,0 +1,46 @@
+K=\{(x,y,z):|x-z^2|+|y-z^2|+z^2\le1\}
+z^2\le1
+|x-z^2|+|y-z^2|\ge0
+\int \limits_{-1}^1 \left(\iint\limits_K \,dx\,dy\right)\,dz
+K=\{(x,y):|x-z^2|+|y-z^2|\le1-z^2\}
+K
+i
+x
+y
+k=z^2
+0\leq k\leq1
+K=\{(x,y);|x-k|+|y-k|\leq 1-k\}
+x,y\geq k
+x+y\leq1+k
+x,y\leq
+x+y\geq3k-1
+x\geq k,y\leq k
+x-y\leq1-k
+x\leq k,y\geq k
+y-x\leq1-k
+k
+k=0
+K
+k
+k=1
+K
+x+y=1+k
+x+y=3k-1
+\ell
+\ell=\sqrt{2}(1-k)
+A(k)=2(1-k)^2
+0\leq k\leq1
+\displaystyle\iint\limits_K \,dx\,dy=2(1-z^2)^2
+V=\displaystyle\int_{-1}^1 A(z)\,dz
+V=2\displaystyle\int_{-1}^1(1-z^2)^2\,dz
+V=\dfrac{32}{15}
+\phi \in [0, \frac \pi 2]
+\theta \in [0, \pi]
+r \in [0, 1]
+J(\phi, \theta, r)
+x
+y
+ I = \left | \int_0^1 \int_0^{\frac \pi 2} \int_0^\pi J (\phi, \theta, r)\, d\theta\, d\phi\, dr \right | 
+ J = \left |\begin{array}{ccc} x_\phi & x_\theta & x_r \\ y_\phi & y_\theta & y_r \\ z_\phi & z_\theta & z_r \\ \end{array}\right | 
+ J(\phi, \theta, r) = \pm 2r^4 \sin 2\phi \sin^3 \theta 
+ I = 4\cdot 2 \int_0^1 \int_0^{\frac \pi 2}\int_0^\pi r^4 \sin 2\phi \sin^3 \theta\, d\theta\, d\phi\, dr = \frac {32}{15}. 

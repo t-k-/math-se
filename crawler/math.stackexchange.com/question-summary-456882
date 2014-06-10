@@ -1,0 +1,17 @@
+ \sum_{k=1}^n {a_k(1+x_k) \over b_k(1+ x_k/c_k)}  
+ a_k  (0:1), c_k (0:\infty) 
+b_k(0:\infty)
+ \sum_{k=1}^n b_k*x_k
+f
+\mathbf{b} \cdot \mathbf{x}=0
+\nabla f(\mathbf{x}^*)=s\mathbf{b}
+s
+c_k >1
+x_k \in (-c_k,+\infty)
+(\nabla f(\mathbf{x}))_k = s b_k
+x_k
+x_k = -c_k+ \sqrt{\frac{a_k c_k (c_k-1)}{s b_k^2}}
+d=1/\sqrt{s}
+d
+ \begin{aligned} f(\mathbf{x}) &= \sum_{k=1}^n \frac{a_k c_k}{b_k}\left(1 - \frac{c_k-1}{x_k+c_k}\right)\\ (\nabla f(\mathbf{x}))_k &= \frac{a_k c_k(c_k-1)}{b_k(x_k+c_k)^2} \end{aligned} 
+ \boxed{ \begin{aligned} x_k &= -c_k+d \frac{\sqrt{a_k c_k (c_k-1)}}{b_k}\\ d&=\frac{\sum_{k=1}^n b_k c_k}{\sum_{k=1}^n \sqrt{a_k c_k (c_k-1)}} \end{aligned}} 

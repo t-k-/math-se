@@ -1,0 +1,18 @@
+(1+x+x^2+...)(1+x^2+x^4+...)(1+x^5+x^{10}+...)
+x^n
+\sum_{n=0}^{\infty}x^n\times\sum_{n=0}^{\infty}(x^2)^n\times\sum_{n=0}^{\infty}(x^5)^n
+a_nx^n
+\displaystyle\sum_{n=0}^{\infty}(x^2)^n=\frac{\sum_{n=0}^{\infty}x^n+\sum_{n=0}^{\infty}(-1)^nx^n}{2}=\sum_{n=0}^{\infty}(\frac{1+(-1)^n}{2})x^n
+\displaystyle\sum_{n=0}^{\infty}(x^5)^n=\sum_{n=0}^{\infty}x^n+\sum_{n=0}^{\infty}(\lfloor{\frac{n}{5}}\rfloor-\lceil{\frac{n}{5}}\rceil)x^n=\sum_{n=0}^{\infty}(1+\lfloor{\frac{n}{5}}\rfloor-\lceil{\frac{n}{5}}\rceil)x^n
+\displaystyle\sum_{n=0}^{\infty}\sum_{k=0}^{n}\frac{1+(-1)^{n-k}}{2}x^n
+\displaystyle\sum_{n=0}^{\infty}\sum_{k=0}^{n}(\sum_{l=0}^{n}\frac{1+(-1)^{n-l}}{2})(1+\lfloor{\frac{n-k}{5}}\rfloor-\lceil{\frac{n-k}{5}}\rceil)x^n
+x^n
+a_n=\displaystyle(\sum_{k=0}^{n}\frac{1+(-1)^{n-k}}{2})(\sum_{k=0}^{n}(1+\lfloor{\frac{n-k}{5}}\rfloor-\lceil{\frac{n-k}{5}}\rceil))
+n=3
+2
+n=5
+\frac 1{(1-x)(1-x^2)(1-x^5)}
+1+x+2x^2+2x^3+3x^4+4x^5+\dots
+l
+k
+n

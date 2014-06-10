@@ -1,0 +1,15 @@
+rand
+(0,1)
+x_0 = 1
+x_1 = rand * x_0
+x_2 = rand * x_1
+x_n = rand * x_{n-1}
+S(n) = \sum_{i=0}^n x_i
+\lim_{n\to\infty} S(n)
+S_n = \sum_{i: E_i\mbox{ occurs}} x_i + \sum_{i: E_i\mbox{ does not occur}} x_i,
+3/4
+\lim_{n\rightarrow \infty} S_n <\infty
+S(n)
+S
+\mathbb{P}(S<\infty)=1
+\mathbb{E}(S)=\lim_n\, \mathbb{E}(S(n))=\lim_n\,\sum_{i=0}^n \mathbb{E}(x_i)=\lim_n\,\sum_{i=0}^n \left({1\over 2}\right)^i=2<\infty.

@@ -1,0 +1,26 @@
+x^8
+1 + (1 + x) + (1 + x)^2 + ..... + (1 + x)^n ;n\geq 8
+a=1
+r=1+x
+j:=k-1
+x^8
+n\geq 8
+\binom{n+1}{9}
+ \sum_{k=0}^{n}a\cdot r^k=\frac{a(1-r^{n+1})}{1-r}. 
+ \sum_{k=0}^{n}(1+x)^k=\frac{1-(1+x)^{n+1}}{1-(1+x)}=\frac{(1+x)^{n+1}-1}{x}. 
+ (1+x)^{n+1}=\sum_{k=0}^{n+1}\binom{n+1}{k}x^k, 
+ (1+x)^{n+1}-1=\sum_{k=1}^{n+1}\binom{n+1}{k}x^k; 
+ \frac{(1+x)^{n+1}-1}{x}=\sum_{k=1}^{n+1}\binom{n+1}{k}x^{k-1}=\sum_{j=0}^{n}\binom{n+1}{j+1}x^j, 
+x^8
+(1+x)^i
+i=0
+i=n
+x^8
+(1+x)^i
+\binom i8
+0
+n
+k=8
+ \sum_{i=0}^n\binom i8=\sum_{i=8}^n\binom i8 
+ \sum_{i=0}^n\binom ik=\binom{n+1}{k+1} 
+ \binom {n+1}9 

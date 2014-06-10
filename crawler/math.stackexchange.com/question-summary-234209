@@ -1,0 +1,9 @@
+\Pi(x)=\int_{t=0}^\infty t^x e^{-t}\,dt
+n\in\mathbb{N}
+\Pi(n)=\prod_{k=1}^{n}\left(k\right)=1\cdot2\cdot3\cdots n=n!
+\Pi^{\prime}(x)=\frac{d}{dx}\int_{t=0}^\infty t^x e^{-t}\,dt
+\Pi'(x)=\frac{\text d}{\text dx}\int_0^\infty t^x e^{-t}\,\text dt = \int_0^\infty \frac{\partial }{\partial x}t^x e^{-t}\,\text dt = \int_0^\infty t^{x}e^{-t}\log t\,\text dt \tag{1} = \Pi(x) \Psi (x+1)
+\Pi^{(n)}(x)=\int_0^\infty t^x e^{-t}\log^n t \,\text dt \tag{2}
+(1)
+x = 0
+\Pi'(0) = \int_0^\infty e^{-t}\log t\, \text dt = -\gamma = -0.577216\dots

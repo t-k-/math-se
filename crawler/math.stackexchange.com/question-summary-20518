@@ -1,0 +1,58 @@
+B_n = \{ \alpha n \}
+\alpha n
+\alpha
+\{B_n\}
+K > 0
+\alpha
+n
+\sum_{k=1}^n e^{-k B_k^2} < K \sqrt{n}
+n^{1/2}
+ \#\{e^{-k B_k^2} > n^{-1/2} : k \leq n\} = \#\{B_k < \sqrt{\log (n)/(2k)}  : k \leq n\}
+\epsilon > 0
+n
+ \sum_{k=1}^n e^{-k B_k^2} = \sum_{k \leq n \: : e^{-k B_k^2} \leq n^{-1/2} } e^{-k B_k^2} + \sum_{k \leq n \: : e^{-k B_k^2} > n^{-1/2}} e^{-k B_k^2} 
+ \sum_{k = 1}^n n^{-1/2} + \sum_{k \leq n \: : e^{-k B_k^2} > n^{-1/2}} 1 
+\#\{B_k < \sqrt{\log (n)/(2k)}  : k \leq n\} \approx \int_1^n \sqrt{\frac{\log (n)}{2t}} \, dt
+\#\{B_k < \sqrt{\log (n)/(2k)}  : k \leq n\}  < n^{1/2+\epsilon}
+ \sum_{k=1}^n e^{-k B_k^2} < n^{1/2} + n^{1/2+\epsilon} < 2 n^{1/2+\epsilon}
+B_k
+\Sigma_k=0^n e^{-kB_k^2}
+\sqrt n
+B_k = 0
+n^{2/3}
+n
+n^{2/3} / n
+0
+\Sigma_{k=0}^n e^{-kB_k^2} > n^{2/3}
+g(n)
+0
+I
+ \lim_{n \rightarrow \infty} \frac{\#\{k \in \{0\ldots n\}, \sqrt{k}B_k \in I\}}{\sqrt{n} \text{length}(I)} = 2
+\Sigma_{k=0}^n e^{-kB_k^2}
+\begin{array}{rcl} \Sigma_{k=0}^n \int_{t=0}^1 e^{-kt^2} dt &<& \Sigma_{k=0}^n \int_{t=0}^\infty e^{-kt^2} dt  = \Sigma_{k=0}^n \int_{t=0}^\infty \frac{e^{-t^2}}{\sqrt{k}} dt \\ &=& \left(\int_{t=0}^\infty e^{-t^2} dt \right) \left(\Sigma_{k=0}^n \frac{1}{\sqrt{k}} \right) \sim \sqrt{\pi n} \end{array} 
+I = [x;x+dx]
+2\sqrt{n} dx
+k
+\sqrt{k}B_k
+I
+\mathbb{R}^+
+\Sigma_{k=0}^n e^{-k B_k^2}
+\sqrt{\pi n}
+\sum_{k=1}^n e^{-0}=n 
+B_k
+1
+k
+\log_e(1+x) = 1+\log_e(x)
+B_k
+0
+k
+K \sqrt{n}
+\frac{1}{2n}, \frac{3}{2n}, \frac{5}{2n}, \ldots, \frac{2n-1}{2n},
+[0,1]
+n
+K \sqrt{n}
+B_k = \dfrac{2k-1}{2n},
+0.77 n^{2/3} < \sum_{k=1}^n e^{-k B_k^2} < 0.9 n^{2/3} 
+B_k
+n
+B_k

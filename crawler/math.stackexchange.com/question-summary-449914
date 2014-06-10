@@ -1,0 +1,10 @@
+ \displaystyle \prod_{n=2}^{\infty}\frac{k^{2}-1}{k^{2}+1} = \displaystyle \prod_{n=2}^{\infty}\frac{(k-1)(k+1)}{k^{2}+1} =\frac{\pi}{\sinh \pi}
+ \displaystyle \prod_{n=2}^{\infty}\frac{k^{2}-1}{k^{2}+1} = \displaystyle  \lim_{n \to \infty} \prod_{k=2}^{n}\frac{(k-1)(k+1)}{(k-i)(k+i)} = \lim_{n \to \infty} \frac{\Gamma(n) \Gamma(n+2) \Gamma(2-i) \Gamma(2+i)} {2 \Gamma(n+1-i) \Gamma(n+1+i)} 
+ = \frac{\pi}{\sinh \pi}\lim_{n \to \infty}  \frac{n(n+1)\Gamma^{2}(n)}{\Gamma(n+1-i) \Gamma(n+1+i)} 
+ \displaystyle \Gamma(n+1-i) \Gamma(n+1+i) = \prod_{j=0}^{n} (j^{2}+1) \frac{\pi}{\sinh \pi}
+1
+\sin (\pi z) = \pi z \prod_{k = 1}^\infty \left(1 - \frac{z^2}{k^2}\right),\tag{1}
+z = i
+\frac{\sin (\pi i)}{\pi i} = \frac{\sinh \pi}{\pi} = \prod_{k=1}^\infty \left(1 - \frac{i^2}{k^2}\right) = \prod_{k=1}^\infty \left(1 + \frac{1}{k^2}\right) = 2 \prod_{k=2}^\infty \left(\frac{k^2+1}{k^2}\right).
+\prod_{k=2}^n \left(\frac{k^2-1}{k^2}\right) = \frac12\cdot \frac32\cdot \frac23\cdot \frac43 \dotsb \frac{n-1}{n}\cdot \frac{n+1}{n} = \frac12\cdot\frac{n+1}{n},
+\prod_{k=2}^\infty \left(\frac{k^2-1}{k^2}\right) = \frac12.

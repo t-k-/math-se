@@ -1,0 +1,10 @@
+I=\int\frac{1-(au+1)\exp(-au)}{u^{2}}du
+I=\int\frac{1-axe^{-ax}-e^{-ax}}{x^2}dx=\int\frac{dx}{x^2}-a\int\frac{e^{-ax}}{x}du-\int\frac{e^{-ax}}{x^2}dx
+u=e^{-ax}\;,\;u'=-ae^{-ax}\;\;;\;\;v'=\frac{1}{x^2}\;,\;v=-\frac{1}{x}
+\int\frac{e^{-ax}}{x^2}dx=-\frac{e^{-ax}}{x}-a\int\frac{e^{-ax}}{x}dx
+I=\frac{e^{-ax}-1}{x}+C
+I(0) = 0 \implies d(x) = - \dfrac1x
+I(a)=\int\frac{1-(au+1)\exp(-au)}{u^{2}}du
+\dfrac{dI}{da} = \int \dfrac{u(au+1) \exp(-au) - u\exp(-au)}{u^2} du = \int a \exp(-au) du = - \exp(-ax) + c
+I(a) = \dfrac{\exp(-ax)}{x} + \underbrace{ca}_{\text{constant}} + d(x)
+I(a)=\int\frac{1-(au+1)\exp(-au)}{u^{2}}du = \dfrac{\exp(-ax)-1}x + \text{ constant}

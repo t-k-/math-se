@@ -1,0 +1,13 @@
+\displaystyle \frac{1}{2\pi}\int_{0}^{2\pi} \frac{1}{1-2rcos\theta + r^2} d\theta
+0 < r< 1
+2cos\theta = (e^{i\theta} + e^{-i\theta}) 
+2\cos(\theta) = e^{i\theta} + e^{-i\theta}
+ \frac{1}{2i\pi} \int_{\lvert z\rvert = 1} \frac{1}{z} \frac{1}{1 - rz - \frac{r}{z} + r^2}\mathrm{d}z =\frac{1}{2i\pi} \int_{\lvert z \rvert =1} \frac{1}{z - rz^2 - r + r^2z}\mathrm{d}z
+ = \frac{1}{2i\pi} \int_{\lvert z \rvert =1} \frac{1}{(r-z)(rz - 1)}\mathrm{d}z
+0 < r < 1
+ = \frac{1}{2 i \pi} \int_{\lvert z \rvert = 1} \frac{(1 - rz)^{-1}}{(z-r)}\mathrm{d}z
+\frac{1}{2\pi}\int_0^{2\pi}\frac{1}{1 - 2r\cos(\theta) + r^2} = \frac{1}{1-r^2}
+z=e^{i\theta}\,\,,\,\theta\in [0,2\pi]\Longrightarrow -\frac{i\,dz}{z}=d\theta\;\;,\;\cos\theta=\frac{e^{i\theta}+e^{-i\theta}}{2}\Longrightarrow
+\frac{1}{2\pi}\int_0^{2\pi}\frac{d\theta}{1-2r\cos\theta+r^2}=-\frac{i}{2\pi }\oint_{S^1}\frac{dz}{z\left(1-r\left(z+\frac{1}{z}\right)+r^2\right)}=
+=-\frac{i}{2\pi }\oint_{S^1}\frac{dz}{\left(z-rz^2-r+zr^2\right)}=\frac{i}{2\pi r}\oint_{S^1}\frac{dz}{(z-r)\left(z-\frac{1}{r}\right)}=
+=\frac{i}{2\pi r}\oint_{S^1}\frac{\left(z-\frac{1}{r}\right)^{-1}dz}{z-r}\stackrel{\text{Cauchy's Formula}}=-\frac{1}{r}\left.\frac{1}{z-\frac{1}{r}}\right|_{z=r}=\frac{1}{1-r^2}

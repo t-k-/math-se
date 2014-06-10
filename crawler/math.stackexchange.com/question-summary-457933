@@ -1,0 +1,70 @@
+T,S: D \rightarrow C
+\tau :T \rightarrow S
+\tau :D \rightarrow (T\downarrow S)
+P\tau=Q\tau=id_D
+P
+Q
+P:(T\downarrow S)\rightarrow D
+Q:(T\downarrow S)\rightarrow D
+d \in D
+d
+\tau
+\tau_d: T(d) \to S(d)
+C
+(d, d, \tau_d)
+\tau^*: D \to (T \downarrow S)
+\tau^*
+\tau
+\varphi:d \to d'
+\tau^*(\varphi) = (\varphi, \varphi)
+\tau^*
+\require{AMScd} \begin{CD} T(d) @>{\tau_d}>> S(d)\\ @V{T(\varphi)}VV @VV{T(\varphi)}V \\ T(d') @>{\tau_{d'}}>> S(d') \end{CD} 
+P\tau^*(d) = P((d, d, \tau_d)) = d
+Q\tau^*(d) = Q((d, d, \tau_d)) = d
+P
+Q
+P
+Q
+P((\alpha, \beta)) = \alpha
+Q((\alpha, \beta)) = \beta
+P\tau^* = Q\tau^* = id_D
+\tau
+\tau^*
+\tau^*: D \to (T \downarrow S)
+P\tau^* = Q\tau^* = id_D
+d \in D
+\tau^*(d) = (d, d, \varphi)
+\varphi:T(d) \to S(d)
+C
+\tau
+\tau_d = R\tau^*(d)
+R
+\tau
+\tau^*
+\varphi: d \to d'
+D
+(\alpha, \beta)
+P\tau^* = Q\tau^* = id_D
+\alpha = \varphi
+\beta = \varphi
+\tau
+\require{AMScd} \begin{CD} T(d) @>{\tau_d}>> S(d)\\ @V{T(\alpha)}VV @VV{S(\beta)}V \\ T(d') @>{\tau_{d'}}>> S(d') \end{CD} 
+U : \mathcal{A} \to \mathcal{C}
+V : \mathcal{B} \to \mathcal{C}
+P : (U \downarrow V) \to \mathcal{A}
+Q : (U \downarrow V) \to \mathcal{B}
+\theta : U P \Rightarrow V Q
+F : \mathcal{D} \to \mathcal{A}
+G : \mathcal{D} \to \mathcal{B}
+\alpha : U F \Rightarrow V G
+H : \mathcal{D} \to (U \downarrow V)
+P H = F
+Q H = G
+\theta H = \alpha
+\mathcal{A} = \mathcal{B} = \mathcal{D}
+F = G = \mathrm{id}_\mathcal{D}
+\tau\colon T \to S
+F \colon D \to (T \downarrow S)
+\tau_d
+g
+Fd = (d,d, g)

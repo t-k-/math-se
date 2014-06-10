@@ -1,0 +1,27 @@
+C_k
+k-
+C_1=[0,\frac{1}{3}]\cup[\frac{1}{3},\frac{2}{3}]
+C_2=[0,\frac{1}{9}]\cup[\frac{2}{9},\frac{1}{3}]\cup[\frac{2}{3},\frac{7}{9}]\cup[\frac{8}{9},1]
+\dots
+C_k=\bigcup_{j=1}^{2^k}I_{k,j}
+I_{k,j}
+3^{-k}
+[0,1]
+[0,1]\setminus C_k=\bigcup_{j=1}^{2^k-1}J_{k,j}
+J_{k,j}
+J_{k,j}
+I_{k,j},I_{k,j+1}
+F_k:[0,1]\to[0,1]
+F_k(0)=0,F_k(1)=1,F_k(x)=\frac{j}{2^k}\quad x\in J_{k,j}
+F_k
+C_k
+F_k
+F:[0,1]\to[0,1]
+|F_k(x)-F_k(y)|\leq\frac{3^k}{2^k}|x-y|
+F
+\log_32
+\|F-F_k\|_\infty \le 2^{-k+1} \|F_0-F_1\|_\infty = 2^{-k}/3
+3^{-k-1} \le |x-y| < 3^{-k}
+k
+ |F(y)-F(x)| \le 2/3\cdot 2^{-k} + |F_k(y)-F_k(x)| \le (2/3 + 3^k |x-y|) 2^{-k}. 
+ |F(y)-F(x)| < \frac{5}{3} 2^{-k} \le \frac{10}{3}|x-y|^{\log_3(2)} 

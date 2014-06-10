@@ -1,0 +1,12 @@
+f \in L^p 
+\sum_{k=-\infty}^ {\infty} 2^{pk} \mu \{{x: |f(x)|>2^{k}}\} \lt \infty
+E_k = \{ 2^k < \left| f(x) \right| \leq 2^{k+1} \}
+ 2^{pk} < \left|f(x)\right|^{p} \leq 2^{p(k+1)}.
+E_k
+ 2^{pk} \mu (E_k) < \int_{E_k} \left|f(x)\right|^{p} \, d\mu \leq 2^{p(k+1)} \mu(E_k).
+k
+ \sum_{k=-\infty}^{\infty} 2^{pk} \mu (E_k) < \int \left|f(x)\right|^{p} \, d\mu \leq 2^{p} \sum_{k=-\infty}^{\infty} 2^{pk} \mu(E_k).
+ \sum_{j=-\infty}^{k} 2^{pj} = \frac{2^{kp}}{1 - 2^{-p}}. 
+ \begin{align*} \sum_{k=-\infty}^{\infty} 2^{pk} \mu (E_k) &= (1 - 2^{-p}) \sum_{k=-\infty}^{\infty} \sum_{j=-\infty}^{k} 2^{jp} \mu (E_k) \\ &= (1 - 2^{-p}) \sum_{j=-\infty}^{\infty} \sum_{k=j}^{\infty} 2^{jp} \mu (E_k) \\ &= (1 - 2^{-p}) \sum_{j=-\infty}^{\infty} 2^{jp} \mu \{ 2^j < \left| f(x) \right| \}. \end{align*}, 
+\int|f|^pd\mu=p\int_0^\infty t^{p-1}\mu\{x:|f(x)|>t\}dt
+\int_{2^k}^{2^{k+1}}t^{p-1}\mu\{x:|f(x)|>t\}dt\le 2^{(k+1)p}\mu\{x:|f(x)|>2^k\}.

@@ -1,0 +1,35 @@
+x\ge 0
+ x\ge -1
+\large x+1=\sqrt{1+x\sqrt{1+(x+1)\sqrt{1+(x+2)\sqrt{1+\cdots}}}}
+x\ge 0
+a_n
+a_{n+1}^2(x)=1+xa_{n}(x+1)
+\{a_n(x)\}
+\forall n\ge 1
+a_n(x)<x+1
+n=1
+a_1(x)=\sqrt{1+x}<1+x
+x\ge 0\Rightarrow 1+x\ge 1
+n=1
+n>1
+a_n(x)
+l(x)=\sup_{n}a_n(x)\le x+1
+n
+\frac{x(x+1)}{x+n-1}<\epsilon\\ \Rightarrow x< \frac{-(1-\epsilon)+\sqrt{(1-\epsilon)^2+4\epsilon(n-1)}}{2}
+n
+a_1(x)=\sqrt{1+x}
+a_{n+1}(x)=\sqrt{1+xa_n(x+1)}
+b_n(x)=1+x-a_n(x)
+b_n(x)
+b_n(x)\to 0
+b_n
+\begin{align}b_{n+1}(x) &= 1+x - a_{n+1}(x)  \\&=\frac{(1+x)^2-a_{n+1}(x)^2}{1+x+a_{n+1}(x)} \\&=\frac{1+2x+x^2-(1+xa_n(x+1))}{1+x+a_{n+1}(x)} \\&= \frac{xb_n(x+1)}{1+x+a_{n+1}(x)} \\&\leq\frac{x}{2+x}b_{n}(x+1) \end{align}
+n>k\geq 1
+b_n(x) \leq \frac{x(x+1)}{(x+k)(x+k+1)}b_{n-k}(x+k)
+k=n-1
+0\leq b_n(x)\leq \frac{x(x+1)}{(x+n-1)(x+n)}b_1(x+n-1) \leq \frac{x(x+1)}{x+n}
+b_n(x)\to 0
+a_n(x)\to x+1
+x>-1\iff \underline{x+1}=\sqrt{(x+1)^2}=\sqrt{1+2x+x^2}=\sqrt{1+x\cdot(\underline{\underline{x+2}})}
+\begin{align}x>-2\iff \underline{\underline{x+2}}=\sqrt{(x+2)^2}=\sqrt{[(x+1)+1]^2}&=\sqrt{1+2(x+1)+(x+1)^2}=\\&=\sqrt{1+(x+1)(\underline{\underline{\underline{x+3}}})}\end{align}
+\to x+1=\sqrt{1+x\sqrt{1+(x+1)(\underline{\underline{x+3}})}}\quad-\quad

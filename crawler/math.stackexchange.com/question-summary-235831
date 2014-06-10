@@ -1,0 +1,27 @@
+f:(a,b)\rightarrow \mathbb{R}
+\exists k\in (0,1)
+\forall x,y\in (a,b), f(kx+(1-k)y)≦kf(x)+(1-k)f(y)
+A=\{\lambda\in [0,1]|\forall x,y\in (a,b) , f(\lambda x + (1-\lambda)y)≦\lambda f(x) + (1-\lambda)f(y)\}
+A
+[0,1]
+f
+k
+k
+A
+p
+(0,1)
+k\in \mathbb{Q}
+\epsilon-\delta
+p\in (0,1)
+x,y \in (a,b)
+f(px+(1-p)y)>p f(x) + (1-p) f(y)
+\alpha = f(px+(1-p)y) - [p f(x) + (1-p) f(y)]
+\delta_1
+d(p,z)<\delta_1 \Rightarrow d(pf(x) + (1-p)f(y), zf(x)+(1-z)f(y))<\frac{\alpha}{2}
+\delta_2
+d(p,z)<\delta_2 \Rightarrow d(f(px+(1-p)y),f(zx+(1-z)y))<\frac{\alpha}{2}
+\delta = \min \{\delta_1,\delta_2\}
+A
+B(p,\delta)\cap A ≠ \emptyset
+z\in A
+f(zx+(1-z)y>zf(x) + (1-z)f(y)

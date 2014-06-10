@@ -1,0 +1,64 @@
+X
+D
+X
+H(X) = \log 96
+X
+ I(X;D) = H(D) - H(D|X) = \log 96 + 95 \cdot 0.01 \log 0.01 + 0.05 \log 0.05. 
+ \frac{H(X)}{I(X;D)} \approx 115. 
+N
+N/20
+\mathrm{Bin}(N,0.01) \approx \mathcal{N}(0.01N,0.0099N)
+N/20
+1/95
+95
+2.3
+1/95
+\frac{0.05N - 0.01N}{\sqrt{0.0099N}} \approx 0.4\sqrt{N}
+N \approx (2.3/0.4)^2 = 33. 
+1
+N=100
+5
+P(1)
+4
+ 1 - e^{-1} \sum_{t=0}^4 \frac{1^t}{t!} \approx 0.00366. 
+ 0.00366 \cdot 95 \approx 0.35.
+ (1 - 0.00366)^{95} \approx 0.706. 
+P(5)
+X
+ e^{-5} \sum_{H=0}^\infty \frac{5^H}{H!} \left(e^{-1} \sum_{t=0}^{H-1} \frac{1}{t!} \right)^{95} \approx 0.527. 
+ \begin{array}{r|c|c} N & \text{Experiment} & \text{Approx} \\\hline 50 & 0.272323 & 0.274900 \\ 100 & 0.526765 & 0.527424 \\ 150 & 0.718004 & 0.714956 \\ 200 & 0.840143 & 0.836808 \\ 250 & 0.912917 & 0.910115 \\ 300 & 0.954097 & 0.951953 \end{array}
+p
+T
+T = 10^6
+0.5\cdot 10^{-3}
+95\%
+\pm 0.001
+\sqrt{\frac{p(1-p)}{T}} \leq \frac{1}{2\sqrt{T}}.
+X
+i^\mathrm{th}
+Y_i
+p(Y_1, \cdots, Y_n|X=x) =  \left(\frac{1}{20}\right)^{m_x} \left(\frac{1}{100}\right)^{n-m_x}
+m_x = \sum_{i=1}^n \mathbf{1}\left(Y_i = x\right)
+\mathbf{1}
+X=x
+p(X=x|Y_1, \cdots, Y_n) = \frac{p(Y_1, \cdots, Y_n|X=x)p(X=x)}{P(Y_1, \cdots, Y_n)} = \frac{p(Y_1, \cdots, Y_n|X=x)p(X=x)}{\sum_{x'} P(Y_1, \cdots, Y_n | X=x')p(X=x')}
+=\frac{\left(\frac{1}{20}\right)^{m_x} \left(\frac{1}{100}\right)^{n-m_x} \frac{1}{96}}{\sum_{x'=1}^{96}\left[ \left(\frac{1}{20}\right)^{m_{x'}} \left(\frac{1}{100}\right)^{n-m_{x'}}\right] \frac{1}{96}}
+X=x
+x
+5\%
+95
+1\%
+n
+N_k
+k
+(N_1,\ldots, N_{96})
+\sum_{k=1}^{96} N_k = n
+p > \frac{1}{2}
+   n_\mathrm{min} = \operatorname{arg min}_n \mathbb{P}(N_1 > N_2 \land N_1 > N_3 \land \ldots \land N_1 > N_{96} ) > p 
+F(n_1,\ldots,n_k,\ldots,n_{96}) = \mathbb{P}\left( N_1 \le n_1, \ldots, N_k \le n_k,\ldots, N_{96} \le n_{96} \right)
+ \begin{eqnarray}   \mathbb{P}\left( \land_{k=2}^{96} N_1 > N_k \right) &=& \sum_{n_1=1}^n \mathbb{P}\left( \land_{k=2}^{96}  N_k \le n_1 -1 ; N_1 = n_1 \right) \mathbb{P}\left( N_1 = n_1 \right) \\    &=& \sum_{k=0}^{n-1} \left( F\left( k+1,k,\ldots,k \right) - F\left( k,k,\ldots,k \right) \right)   \end{eqnarray} 
+F
+0.01
+    \mathbb{P}\left( \land_{k=2}^{96} N_1 > N_k \right) =        \sum_{k=0}^{n-1} f_{\mathrm{Bi}\left(n, \frac{1}{20}\right)}(k+1) \left( F_{\mathrm{Bi}\left(n, \frac{1}{95}\right)}(k) \right)^{95} 
+\mathbb{P}(\land_{k=2}^{96} N_k < N_1)
+n

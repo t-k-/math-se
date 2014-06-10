@@ -1,0 +1,9 @@
+E[X_i | \sum_j X_j \geq c]
+c
+X_j
+X_i
+X_j
+X_j
+X_j
+E(X_i I(\sum_jX_j \geq c))
+ \int_0^\infty  x_i \int_{c-x_i}^\infty \,dP^{\sum_{j\neq i}X_j |X_i=x_i} \,P^{X_i}(dx_i) =  \int_0^\infty  x_i P(\sum_{j\neq i}X_j + x_i\geq c\,|\,X_i=x_i) \,P^{X_i}(dx_i) 

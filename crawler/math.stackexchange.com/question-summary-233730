@@ -1,0 +1,31 @@
+A \in \mathbb{R}^{n \times m}
+B \in \mathbb{R}^{m \times n}
+C \subset \mathbb{R}^n
+x \in C
+ f(x) := \min_{y \in \mathbb{R}^m} \{ x^\top A y \mid \left\| B x + y \right\|_\infty \leq 1 \}. 
+x \mapsto f(x)
+B=0
+\displaystyle f(x) = \min_{\left\| y \right\|_\infty \leq 1} x^\top A y = -\left\| A^\top x\right\|_1
+C
+\{y | \|Bx+y\|\leq 1 \}= \{-Bx\}+\{h | \|h\|\leq 1\}
+\|\cdot\|
+f
+AB
+f(x) = \min_{\|h\|_\infty \leq 1} x^T A (-Bx+h) = -x^TABx + \min_{\|h\|_\infty \leq 1} x^T A h = -x^TABx - \|A^Tx\|_1
+f
+AB
+x^T AB x \geq 0
+x
+v\neq 0
+v^TABv <0
+\phi(\lambda) = f(\lambda v) = \lambda^2 |v^TABv|-|\lambda|\|A^Tv\|_1
+\phi
+[0,\infty)
+f
+s =\frac{\|A^Tv\|_1}{|v^TABv|}
+\phi(0) = 0
+\phi(s) = 0
+\phi(\frac{1}{2}s) < 0
+\phi(\frac{1}{2}s) < \frac{1}{2} (\phi(0) +\phi(s)) 
+f(\frac{1}{2}s v) < \frac{1}{2} (f(0 v) +f(sv)) 
+f

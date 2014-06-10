@@ -1,0 +1,25 @@
+I:=\int_0^1 f(x)\,dx
+f\colon [0,1]\to\mathbb{R}
+H_n:=\frac{f\left(0\right)}{2n}+\frac{1}{n}\left[f\left(\frac{1}{n}\right)+f\left(\frac{2}{n}\right)+\dotsm + f\left(\frac{n-1}{n}\right)\right]+\frac{f\left(1\right)}{2n}
+|I-H_n|\leq \frac{L}{4n}
+f
+\Vert f(x_1)-f(x_2) \Vert\leq L \vert x_1-x_2\Vert
+n
+I - H_n = \sum_{j=1}^n E_j
+(j-1)/n = a
+j/n = b
+1/n = b - a = \delta
+f(a)
+f(b)
+a \le x \le b
+a \le x \le (a+b)/2
+(a+b)/2 < x \le b
+\int_a^b f(x)\ dx \le \int_a^b g(x)\ dx
+E_j \le \dfrac{\delta^2}{4} L
+E_j \ge -\dfrac{\delta^2}{4} L
+|E_j| \le \dfrac{\delta^2}{4} L = \dfrac{L}{4n^2}
+|I - H_n| \le \sum_{j=1}^n |E_j| \le \dfrac{L}{4n}
+E_j = \int_{(j-1)/n}^{j/n} f(x)\ dx - \frac{f((j-1)/n) + f(j/n)}{2n} 
+E_j = \int_a^b f(x)\ dx - \frac{\delta}{2}(f(a) + f(b))
+f(x) \le g(x) = \cases{f(a) + L(x-a) & for $a \le x \le (a+b)/2$\cr f(b) + L (b-x)) &for $(a+b)/2 < x \le b$\cr}
+\frac{\delta^2}{4} L + \frac{\delta}{2} (f(a) + f(b))

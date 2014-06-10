@@ -1,0 +1,61 @@
+E[V_{(1)}] = \int_0^{\infty} P(V_{(1)} > x) dx = \int_0^{1/n} (1-nx)^{n-1} = \frac{1}{n^2}.
+E[V_{(r)}] = \frac{1}{n} \sum_{j=1}^r \frac{1}{n-j+1}.
+x
+y
+x < y
+x
+y - x
+1 - y
+1/3
+f(x,y) = 6
+x
+y
+1/6
+[0,1] \times [0,1]
+x
+x \leq y - x
+x \leq 1 - y
+x
+E[x] = \int_0^{1/3} \int_{2x}^{1 - x} 6x \;dy \;dx = 1/9
+y - x
+1 - y
+n
+k
+1/n^2
+\frac{1}{n} \left( \frac{1}{n} + \cdots + \frac{1}{k} \right),
+n
+n
+x
+x
+n-1
+1-nx
+(1-nx)/(n-1)^2
+Ex + \frac{1-nEx}{(n-1)^2} = \frac{1}{n^2} + \frac{1-1/n}{(n-1)^2} = \frac{1}{n^2} + \frac{1}{n(n-1)}.
+X,Y
+[0,1]
+A=\min (X,Y), B=\max (X,Y)
+C=\min (A, 1-B, B-A)
+f_C(a)
+C
+F_C(a)
+ 1- F_C(a) = P(C\ge a)=P(A\ge a, 1-B\ge a, B-A\ge a)
+=P(a\le X\le 1-a, a\le Y\le 1-a, |X-Y|\ge a)
+\lbrace (x,y): 0\le x,y\le 1, y\le x-a, x\le 1-a, y\ge a\rbrace
+(1-3a)^2
+0\le a\le 1/3
+\lbrace (x,y): 0\le x,y\le 1, y\ge x+a, x\ge a, y\le 1-a\rbrace
+F_C(a)=1-(1-3a)^2
+f_C(a)=F_C'(a)=6(1-3a)
+C
+\int_0^{1/3} 6a(1-3a) da= \frac{1}{9}.
+(x_1,\ldots,x_n)
+x_1+x_2+...+x_n = 1
+x_i\geq 0
+x_i
+n!
+(1,0,\ldots)
+(1/2,1/2,0,\ldots)
+(1/n,1/n,1/n,\ldots,1/n)
+(1+1/2+1/3+\cdots+1/n)/n
+k
+(1/k+\cdots+1/n)/n

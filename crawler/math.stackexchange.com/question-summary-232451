@@ -1,0 +1,51 @@
+f(x) = |x^2-1| = \sqrt{(x^2-1)^2}
+\int \sqrt{(x^2-1)^2}dx = \frac{x(x^2-3)\sqrt{(x^2-1)^2)}}{3 (x^2-1)}+constant
+x^2-1
+[-1,1]
+|x^2-1| = \left\{ \begin{array}{rl} -x^2+1, & -1 \le x \le 1, \\ x^2-1, & \textrm{ otherwise}.\end{array}\right.
+|x^2-1| = \left\{ \begin{array}{rl} x^2-1, & \textrm{ if } x < -1, \\ -x^2+1, & \textrm{ if } -1 \le x \le 1, \\ x^2-1, & \textrm{ if } x > 1.\end{array}\right.
+\int |x^2-1|\ dx = C + \left\{ \begin{array}{rl} \frac{1}{3}x^3-x+c_1, & \textrm{ if } x < -1 \\ -\frac{1}{3}x^3+x+c_2, & \textrm{ if } -1 \le x \le 1,\\ \frac{1}{3}x^3-x, & \textrm{ if } x > 1. \end{array}\right.
+c_1
+c_2
+x=-1
+x=1
+c_3
+c_1
+c_2
+\frac{d}{dx}\left(\frac{1}{3}x^3-x\right) = \frac{d}{dx}\left(-\frac{1}{3}x^3+x+c_2\right)
+x=1
+x^2-1 = -x^2+1 \implies 1^2-1=-1^2+1 \implies 0 = 0
+\frac{1}{3}x^3-x = -\frac{1}{3}x^3+x+c_2
+x=1
+\frac{1}{3}-1 = -\frac{1}{3}+1 +c_2 \implies c_2 = \frac{2}{3}-2 = -\frac{4}{3}.
+\frac{1}{3}x^3-x+c_1 = -\frac{1}{3}x^3+x-\frac{4}{3}
+x = -1
+c_1
+\frac{1}{3}-1+c_1 = -\frac{1}{3}+1-\frac{4}{3} \implies c_1 = 0.
+C
+|x| = \sqrt{x^2}
+x
+\int_a^b |x^2-1|dx
+a,b
+a\leq b
+a>b
+\int_a^b = -\int_b^a
+a,b \in (-\infty,-1]
+a,b \in [1,\infty)
+\int_a^b |x^2-1|dx= \frac{1}{3} (b^3-3b-a^3+3a)
+a,b \in (-1,1)
+\int_a^b |x^2-1|dx= \frac{1}{3} (a^3-3a-b^3+3b)
+a\in (-\infty,-1], b \in (-1,1)
+\int_a^b |x^2-1|dx= \frac{1}{3} (4-a^3+3a-b^3+3b)
+a\in (-1,1), b \in [1,\infty)
+\int_a^b |x^2-1|dx= \frac{1}{3} (4+a^3-3a+b^3-3b)
+a \in (-\infty,-1]
+b \in [1,\infty)
+\int_a^b |x^2-1|dx= \frac{1}{3} (8-a^3+3a+b^3-3b)
+f
+x
+\frac{x(x^2-3)\sqrt{(x^2-1)^2)}}{3 (x^2-1)}+2/3\frac{|x-1|}{x-1}+2/3\frac{|x+1|}{x+1}
+x=\pm1
+\begin{cases}2/3,&x=1\\-2/3,&x=-1\\\frac{x(x^2-3)\sqrt{(x^2-1)^2)}}{3 (x^2-1)}+2/3\frac{|x-1|}{x-1}+2/3\frac{|x+1|}{x+1},&\text{else}\end{cases}
+\frac{x(x^2-3)\sqrt{(x^2-1)^2)}}{3 (x^2-1)}
+x=\pm1

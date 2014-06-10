@@ -1,0 +1,16 @@
+X_1, X_2, \ldots, X_n
+(0,1)
+Z_2 = X_1 \cdot X_2
+Z_3 = X_1 \cdot X_2 \cdot X_3
+n
+Z_n = X_1 \cdot X_2 \cdot \ldots \cdot X_n
+{\rm Uniform}(0,1)
+X_1, X_2
+Z_2 = X_1 X_2
+Z_2
+n
+\begin{align*} F_{Z_2}(z) &= \Pr[Z_2 \le z] = \int_{x=0}^1 \Pr[X_2 \le z/x] f_{X_1}(x) \, dx \\ &= \int_{x=0}^z \, dx + \int_{x=z}^1 \frac{z}{x} \, dx \\ &= z - z \log z. \end{align*}
+f_{Z_2}(z) = -\log z, \quad 0 < z \le 1.
+\begin{align*} F_{Z_3}(z) &= \Pr[Z_3 \le z] = \int_{x=0}^1 \Pr[X_3 \le z/x] f_{Z_2}(x) \, dx \\ &= -\int_{x=0}^z \log x dx - \int_{x=z}^1 \frac{z}{x} \log x \, dx. \end{align*}
+f_{Z_3}(z) = \frac{1}{2} \left( \log z \right)^2, \quad 0 < z \le 1.
+f_{Z_n}(z) = \begin{cases} \frac{(- \log z)^{n-1}}{(n-1)!}, & 0 < z \le 1 \\ 0, & {\rm otherwise},\end{cases}

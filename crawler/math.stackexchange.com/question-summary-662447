@@ -1,0 +1,10 @@
+ A=\left(\begin{array}{cc}0&a\\a&0\end{array}\right) 
+ \exp\left(\begin{array}{cc}0&a\\a&0\end{array}\right)=\sum^\infty_{k=0}\frac{1}{k!}\left(\begin{array}{cc}0&a\\a&0\end{array}\right)^k=\left(\begin{array}{cc}1&0\\0&1\end{array}\right)+\left(\begin{array}{cc}0&a\\a&0\end{array}\right)+\frac{1}{2}\left(\begin{array}{cc}a^2&0\\0&a^2\end{array}\right)+\frac{1}{6}\left(\begin{array}{cc}0&a^3\\a^3&0\end{array}\right)+\ldots 
+A
+\left(\begin{array}{cc}0&a\\a&0\end{array}\right)\left(\begin{array}{cc}0&a\\a&0\end{array}\right)=\left(\begin{array}{cc}a^2&0\\0&a^2\end{array}\right),
+\left(\begin{array}{cc}0&a\\a&0\end{array}\right)\left(\begin{array}{cc}a^2&0\\0&a^2\end{array}\right)=\left(\begin{array}{cc}0&a^3\\a^3&0\end{array}\right),
+k
+k
+ A^2=\left(\begin{array}{cc}0&a\\a&0\end{array}\right)\left(\begin{array}{cc}0&a\\a&0\end{array}\right)=\left(\begin{array}{cc}a^2&0\\0&a^2\end{array}\right)=a^2I_2 
+A^k=a^kI_2\;\text{if $k$ is even and}\; A^k=a^{k-1} A\;\text{if $k$ is odd}
+\exp(A)=\sum_{k=0}^\infty\frac{A^k}{k!}=\sum_{p=0}^\infty\frac{A^{2p}}{(2p)!}+\sum_{p=0}^\infty\frac{A^{2p+1}}{(2p+1)!}= \left(\sum_{p=0}^\infty\frac{a^{2p}}{(2p)!}\right)I_2+\left(\sum_{p=0}^\infty\frac{a^{2p}}{(2p+1)!}\right)A\\=\cosh(a)I_2+\frac{1}{a}\sinh(a)A=\left(\begin{array}{cc}\cosh(a)&\sinh(a)\\\sinh(a)&\cosh(a)\end{array}\right)

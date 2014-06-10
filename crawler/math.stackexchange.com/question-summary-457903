@@ -1,0 +1,41 @@
+\textbf{x}_{n+1} = \textbf{x}_n - [Hf(\textbf{x}_n)]^{-1}\nabla f(\textbf{x}_n), \;\;\; n \geq 0.
+\textbf{x}_n
+p
+n
+[Hf(\textbf{x}_n)]^{-1}
+f(\textbf{x})
+\textbf{x}_n
+\nabla f(\textbf{x}_n)
+f(\textbf{x})
+\textbf{x}_n
+\left( \begin{array}{c} x_1^{(n+1)}  \\ x_2^{(n+1)}  \\ \vdots \\ x_p^{(n+1)}  \end{array} \right) = \left( \begin{array}{c} x_1^{(n)}  \\ x_2^{(n)}  \\ \vdots \\ x_p^{(n)}  \end{array} \right) - \left( \begin{array}{cccc} \frac{\partial^2f}{\partial x_1^2}(\textbf{x}_n) & \dots & \dots &\frac{\partial^2f}{\partial x_p\partial x_1}(\textbf{x}_n)\\ \frac{\partial^2f}{\partial x_1\partial x_2}(\textbf{x}_n)  & \ddots & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots\\ \frac{\partial^2f}{\partial x_1\partial x_p}(\textbf{x}_n) & \dots & \dots & \frac{\partial^2f}{\partial x_p^2}(\textbf{x}_n)  \end{array} \right)^{-1}\left( \begin{array}{c} \frac{\partial f}{\partial x_1}(\textbf{x}_n)  \\ \frac{\partial f}{\partial x_2}(\textbf{x}_n)   \\ \vdots \\ \frac{\partial f}{\partial x_p}(\textbf{x}_n)   \end{array} \right)
+x_i
+f
+\mathbb R^p
+x
+\nabla f(x) = 0
+x_n
+\Delta x
+\nabla f(x_n + \Delta x) = 0
+0
+x_{n+1} = x_n + \Delta x
+x_n
+x_n
+g = \nabla f(x_n)
+H = \nabla^2 f(x_n)
+f
+x_n
+h(x)
+h(x_n) = f(x_n)
+\nabla h(x_n) = g
+\nabla^2 h(x_n) = H
+H
+H
+h
+x^*
+\nabla h(x^*) = 0
+x^* = x_n - H^{-1}g
+ h(x) = \frac 12(x - x_n)^T H (x - x_n) + g^T (x - x_n) + f(x_n). 
+ \nabla h(x) = H(x - x_n) + g, 
+f''
+n

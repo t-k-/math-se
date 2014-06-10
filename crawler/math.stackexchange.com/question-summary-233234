@@ -1,0 +1,21 @@
+2\times 2
+A=\pmatrix {a& b\\c&d}
+ad-bc
+A
+\langle a, b \rangle = \dfrac{1}{a} \langle a, b \rangle
+A_1
+\langle c, d\rangle = -c \langle a, b \rangle + \langle c, d \rangle
+A_2
+\langle c, d\rangle = \dfrac{1}{d} \langle c, d \rangle
+A_3
+\langle a, b \rangle = -b \langle c, d \rangle + \langle a, b \rangle
+A_4
+I_{2 \times 2}
+\det A_3 = \det I_{2 \times 2}
+\dfrac{1}{d}\det A_2 = \det A_3
+\det A_1 = \det A_2
+\dfrac{1}{a}\det A = \det A_1
+\det A = ad
+-c
+ \det\begin{bmatrix} a & b \\ c & d \end{bmatrix} = a\det\begin{bmatrix} 1 & b/a \\ c & d \end{bmatrix} = a\det\begin{bmatrix} 1 & b/a \\ 0 & (-cb/a)+d \end{bmatrix} 
+ = a\det\begin{bmatrix} 1 & 0 \\ 0 & (-cb/a)+d \end{bmatrix} = a\cdot\left(\frac{-cb}{a}+d\right)\det\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} = (ad-bc)\det\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}. 

@@ -1,0 +1,30 @@
+f(x) = e^x \cdot \sin x
+\sin x = \dfrac{e^{ix} - e^{-ix}}{2i}
+f(x) = \dfrac{1}{2i} \cdot (e^{(1+i)x} - e^{(1-i)x})
+f^{(n)}(x) = \dfrac{1}{2i} \cdot ((1+i)^n e^{(1+i)x} - (1-i)^n e^{(1-i)x})
+ (1+i)^n = {\sqrt{2}}^n \cdot \left(\cos\dfrac{n \pi}{4} + i \sin\dfrac{n \pi}{4}\right) \\(1 - i)^n = \sqrt{2}^n \cdot \left( \cos \dfrac{-n \pi}{4} + i \sin \dfrac{-n \pi}{4} \right)
+f^{(n)}(x) = \dfrac{e^x}{2i} \sqrt{2}^n \cdot \left(\left(\cos \dfrac{n \pi}{4} + i \sin \dfrac{n \pi}{4}\right) e^{ix} - \left(\cos \dfrac{-n \pi}{4} + i \sin \dfrac{- n \pi}{4}\right) e^{-ix} \right)
+e^{ix} = \cos x + i \sin x
+f^{(n)}(x) = \dfrac{e^x}{2i} \sqrt{2}^n \cdot \left(\cos \left( x + \frac{n \pi}{4}\right) + i \sin \left( x + \frac{n \pi}{4}\right) - \left(\cos \left( - x  - \frac{n \pi}{4}\right) + i \sin \left( -x -\frac{ n \pi}{4}\right)\right)\right)
+\cos
+\sin
+f^{(n)}(x) = \dfrac{e^x}{2i} \sqrt{2}^n \cdot 2i \sin \left(x + \dfrac{n \pi}{4}\right)
+f^{(n)}(x) = e^x \cdot \sqrt{2}^n \cdot \sin\left(x + \dfrac{n \pi}{4}\right)
+g(x)= e^{(1+i)x}
+f(x)
+g(x)
+x
+g^{(n)}(x) =(1+i)^n e^{(1+i)x}
+1+i=2^{1/2} e^{\pi i/4}
+g^{(n)}(x) =2^{n/2}e^{n\pi i/4}e^{(1+i)x}=2^{n/2}e^{x + i(x +n\pi /4)}
+f^{(n)}(x)
+g^{(n)}(x)
+2^{n/2}e^x \sin (x +n\pi /4)
+ \begin{align} \frac{\mathrm{d}^n}{\mathrm{d}x^n}e^x\sin(x) &=\frac{\mathrm{d}^n}{\mathrm{d}x^n}\frac1{2i}\left(e^{(1+i)x}-e^{(1-i)x}\right)\\ &=\frac1{2i}\left((1+i)^ne^{(1+i)x}-(1-i)^ne^{(1-i)x}\right)\\ &=\frac1{2i}2^{n/2}\left(e^{in\pi/4}e^{(1+i)x}-e^{-in\pi/4}e^{(1-i)x}\right)\\[4pt] &=2^{n/2}e^x\sin(x+n\pi/4) \end{align} 
+n
+D^n(e^x\sin x)=(\sqrt{2})^ne^x\sin(x+n\pi/4)
+n
+D^k(e^x\sin x)=(\sqrt{2})^ke^x\sin(x+k\pi/4)
+D^n\{e^{kx}f(x)\}=e^{kx}(D+k)^nf(x)
+D\left(e^x\sin x\right)=e^x(D+1)\sin x=e^x(\cos x+\sin x)=\sqrt{2}e^x\sin(x+\pi/4)\\D^2\left(e^x\sin x\right)=D(\sqrt{2}e^x\sin(x+\pi/4))=\sqrt{2}e^x(D+1)\sin(x+\pi/4)=\sqrt{2}e^x[\cos(x+\pi/4)+\sin(x+\pi/4)]=(\sqrt{2})^2e^x\sin(x+2\pi/4)
+D^{k+1}(e^x\sin x)=D[(\sqrt{2})^ke^x\sin(x+k\pi/4)]=(\sqrt{2})^ke^x(D+1)\sin(x+k\pi/4)=\cdots=(\sqrt{2})^{k+1}e^x\sin(x+(k+1)\pi/4)

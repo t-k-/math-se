@@ -1,0 +1,17 @@
+\int_0^1 f(\rho) d\rho
+f(\rho)
+\ln f(\rho)
+\int_0^1 \exp(\ln f(\rho)) d\rho
+f(\rho)
+f(\rho) = Bin(x_1;N_1,f_1(\rho)) \times Bin(x_2;N_2,f_2(\rho)) \times Bin(x_3;N_3,f_3(\rho))
+f(\rho) = Bin(x_1;N_1,f_1(\rho)) \times Bin(x_2;N_2,f_2(\rho)) \times Bin(x_3;N_3,f_3(\rho)) \times Beta(\rho;\alpha,\beta)
+Bin(x;N,f) = \binom{N}{x} f^x (1-f)^{N-x}
+f_1,f_2,f_3
+\rho
+f_1(\rho) = \rho(1-\pi)
+\pi
+\binom{N_1}{x_1} \binom{N_2}{x_2} \binom{N_3}{x_3} \int_0^1 d\rho \, (a_1 \rho)^{x_1} (1-a_1 \rho)^{N_1-x_1} \, (a_2 \rho)^{x_2} (1-a_2 \rho)^{N_2-x_2} \, (a_3 \rho)^{x_3} (1-a_3 \rho)^{N_3-x_3}
+\binom{N_1}{x_1} \binom{N_2}{x_2} \binom{N_3}{x_3} a_1^{x_1} a_2^{x_2} a_3^{x_3} \int_0^1 d\rho \, \rho^{x_1+x_2+x_3} (1-a_1 \rho)^{N_1-x_1} (1-a_2 \rho)^{N_2-x_2} (1-a_3 \rho)^{N_3-x_3}
+a
+a_1
+1

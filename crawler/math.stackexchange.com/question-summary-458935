@@ -1,0 +1,15 @@
+p(a|c)
+p(a|b)
+ p(a|b) 
+ p(a|c)\\ p(c|b) 
+ p(a|b)=\int p(a|c)p(c|b) dc. 
+p(\tilde{x}|\theta)
+p(\tilde{x}|\theta, \mathbf{X})
+\mathbf{X}
+\tilde{x}
+\mathbf{X}
+a
+b
+\theta
+ p(\tilde{x}|\mathbf{X})=\int_\theta p(\tilde{x}|\theta)p(\theta|\mathbf{X})d\theta 
+ p(\tilde{x}|\mathbf{X})=\int_\theta p(\tilde{x}|\theta, \mathbf{X})p(\theta|\mathbf{X})d\theta=\int_\theta \frac{p(\tilde{x},\theta, \mathbf{X})}{p(\theta, \mathbf{X})}\frac{p(\theta,\mathbf{X})}{p(\mathbf{X})}d\theta\\ =\int_\theta \frac{p(\tilde{x},\theta, \mathbf{X})}{p(\mathbf{X})}d\theta= \frac{p(\tilde{x}, \mathbf{X})}{p(\mathbf{X})}=p(\tilde{x}|\mathbf{X}) 

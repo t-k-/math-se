@@ -1,0 +1,41 @@
+28
+\vec F(x,y,z) = yz^2\hat i + xz^2\hat j + 2xyz\hat k
+C
+(-1,2,-2)
+(1,5,2)
+z
+x
+y
+z
+x
+y
+0
+z
+2
+x
+y
+x
+z
+xz^2
+y
+\overrightarrow{F} = \ <yz^2, xz^2, 2xyz> 
+\overrightarrow{\nabla} \times \overrightarrow{F} \ = \ < 2xz-2xz\ , \ -2yz - (-2yz) \ , \ z^2 - z^2> \ = \ \overrightarrow{0} . 
+C
+\int_{C_1}  \ (yz^2) dx \ + \ (xz^2) dy \ + \ (2xyz) dz \ \  [dx = 0 \ , \ dy = 0 ]
++ \ \int_{C_2}  \ (yz^2) dx \ + \ (xz^2) dy \ + \ (2xyz) dz \ \  [dy = 0 \ , \ dz = 0 ]
++ \ \int_{C_3}  \ (yz^2) dx \ + \ (xz^2) dy \ + \ (2xyz) dz \ \  [dx = 0 \ , \ dz = 0 ]
+= \ \int_{-2}^2   \ (2xyz) dz \ + \ \int_{-1}^1   \ (yz^2) dx \ + \ \int_{2}^5   \ (xz^2) dy 
+= \ 0^{*} + \  (xyz^2) \ |_{-1, y=2,z=2}^1 \ +   \ (xz^2y) \ |_{2, x=1,z=2}^5 
+z
+= \   [ \ (1 \cdot 2 \cdot 2^2) \ - \ (-1 \cdot 2 \cdot 2^2) \ ] \ +   \ [ \ (1 \cdot 2^2 \cdot 5) \ - \ (1 \cdot 2^2 \cdot 2) \ ] 
+= \  \ (8) \ - \ (-8) \  +    \ (20) \ - \ (8) \ = \ 28 \ . \\ 
+C'
+A
+B
+x \ = \ -1 + 2t   \ \ [dx = 2 dt] \ , \ y \ = \ 2 + 3t   \ \ [dy = 3 dt] \ , \ z \ = \ -2 + 4t   \ \ [dz = 4 dt] \ , 
+t: \ 0 \rightarrow 1 \ .
+\int_0^1  \ (2 + 3t) \cdot (-2 + 4t)^2 \cdot 2 \ dt \ + \ (-1 + 2t) \cdot  (-2 + 4t)^2 \cdot 3 \ dt \ 
++ \ 2 \cdot (-1 + 2t) \cdot (2 + 3t) \cdot (-2 + 4t) \cdot 4 \ dt \  
+= \ \int_0^1  \ 36 \ - \ 48t  \ - \ 240t^2 \ + \  384t^3  \ dt \ = \ ( 36t \ - \ 24t^2  \ - \ 80t^3 \ + \  96t^4 ) \ |_0^1 \ = \ 28 \ . 
+y=0, z=0 \Rightarrow dy=0, dz=0
+x=x_1, z=0 \Rightarrow dx=0, dz=0

@@ -1,0 +1,5 @@
+\lim_{x \rightarrow 0} \frac{e^x-1-x-\frac{x^2}{2}-\frac{x^3}{6}-\frac{x^4}{24}-\frac{x^5}{120}-\frac{x^6}{720}}{x^7}
+e^x=\sum_{k=0}^\infty \frac{x^k}{k!}=1+x+\frac{x^2}{2!}+\ldots+\frac{x^6}{6!}+\frac{x^7}{7!}+\ldots\implies
+e^x-1-x-\ldots-\frac{x^6}{6!}=\frac{x^7}{7!}+\frac{x^8}{8!}+O(x^9)\implies
+\frac{e^x-1-x-\ldots-\frac{x^6}{6!}}{x^7}=\frac1{7!}+\frac{x}{8!}+O(x^2)\xrightarrow[x\to 0]{}\;?
+\lim_{x \rightarrow 0} \frac{e^x-1-x-\frac{x^2}{2}-\frac{x^3}{6}-\frac{x^4}{24}-\frac{x^5}{120}-\frac{x^6}{720}}{x^7}=\lim_{x \rightarrow 0}\frac{e^x}{7!}=\frac{1}{7!}

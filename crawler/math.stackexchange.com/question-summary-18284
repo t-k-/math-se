@@ -1,0 +1,46 @@
+n
+f(x)=e^{1/x}
+\frac{\mathrm d^n}{\mathrm dx^n}f(x)=(-1)^n e^{1/x} \cdot \sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 n+k}
+20
+\begin{align*} \frac{\mathrm d^{n+1}}{\mathrm dx^{n+1}}f(x)&=\frac{\mathrm d}{\mathrm dx}(-1)^n e^{1/x} \cdot \sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 n+k}\\ &=(-1)^n e^{1/x} \cdot \left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} (-2n+k) x^{-2 n+k-1}\right)-e^{1/x} \cdot \sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 (n+1)+k}\\ &=(-1)^n e^{1/x} \cdot \sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k}((-2n+k) x^{-2 n+k-1}-x^{-2 (n+1)+k)})\\ &=(-1)^{n+1} e^{1/x} \cdot \sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k}(2n x-k x+1) x^{-2 (n+1)+k} \end{align*}
+\left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} \left(-2n+k\right) x^{-2 n+k-1}\right) - \left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 \left(n+1\right)+k}\right) =
+= \left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} \left(-2n+k\right) x^{-2\left(n+1\right)+k+1}\right) - \left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 \left(n+1\right)+k}\right) =
+= \left(\sum _{k'=1}^{n} \left(k'-1\right)! \binom{n}{k'-1} \binom{n-1}{k'-1} \left(-2n+k'-1\right) x^{-2\left(n+1\right)+k'}\right) - \left(\sum _{k=0}^{n-1} k! \binom{n}{k} \binom{n-1}{k} x^{-2 \left(n+1\right)+k}\right) =
+= \left(\sum _{k'=0}^{n} \left(k'-1\right)! \binom{n}{k'-1} \binom{n-1}{k'-1} \left(-2n+k'-1\right) x^{-2\left(n+1\right)+k'}\right) - \left(\sum _{k=0}^{n} k! \binom{n}{k} \binom{n-1}{k} x^{-2 \left(n+1\right)+k}\right) =
+= \sum _{k=0}^{n} \left(\left(k-1\right)! \binom{n}{k-1} \binom{n-1}{k-1} \left(-2n+k-1\right) - k! \binom{n}{k} \binom{n-1}{k}\right) x^{-2 \left(n+1\right)+k}
+\left(k-1\right)! \binom{n}{k-1} \binom{n-1}{k-1} \left(-2n+k-1\right) - k! \binom{n}{k} \binom{n-1}{k} =
+= \frac{\left(k-1\right)!n!\left(n-1\right)!\left(-2n+k-1\right)}{\left(n-k+1\right)!\left(k-1\right)!\left(n-k\right)!\left(k-1\right)!} - \frac{k!n!\left(n-1\right)!}{\left(n-k\right)!k!k!\left(n-k-1\right)!} =
+= \frac{n!\left(n-1\right)!\left(-2n+k-1\right)k}{\left(n-k+1\right)!\left(n-k\right)!k!} - \frac{n!\left(n-1\right)!\left(n-k\right)\left(n-k+1\right)}{\left(n-k\right)!k!\left(n-k+1\right)!} =
+= \frac{n!\left(n-1\right)!}{\left(n-k+1\right)!\left(n-k\right)!k!} \left(\left(-2n+k-1\right)k - \left(n-k\right)\left(n-k+1\right)\right) =
+= \frac{-n\left(n+1\right)n!\left(n-1\right)!}{\left(n-k+1\right)!\left(n-k\right)!k!} =
+= -\frac{\left(n+1\right)!}{\left(n-k+1\right)!} \binom{n}{k} =
+= -k! \binom{n+1}{k} \binom{n}{k}
+\exp\left(\frac1{x}\right)=1+\sum_{k=1}^\infty \frac1{x^k k!}
+\frac{\mathrm d^n}{\mathrm dx^n}x^{-k}=\frac{(-1)^n (n+k-1)!}{(k-1)! x^{k+n}}
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n}{x^n}\sum_{k=1}^\infty \frac{(n+k-1)!}{k!(k-1)! x^k}
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n}{x^n}\sum_{k=0}^\infty \frac{(n+k)!}{(k+1)!k! x^{k+1}}
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n}{x^n}\sum_{k=0}^\infty \frac{n!(n+1)_k}{(2)_k k! x^{k+1}}
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n n!}{x^{n+1}}{}_1 F_1\left({{n+1}\atop{2}}\mid \frac1{x}\right)
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n n!}{x^{n+1}}\exp\left(\frac1{x}\right){}_1 F_1\left({{1-n}\atop{2}}\mid -\frac1{x}\right)
+1-n
+n > 0
+(1-n)_k
+0
+k \geq n
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n n!}{x^{n+1}}\exp\left(\frac1{x}\right)\sum_{k=0}^{n-1}\frac{(-1)^k (1-n)_k}{k!(k+1)!x^k}
+\frac{\mathrm d^n}{\mathrm dx^n}\exp\left(\frac1{x}\right)=\frac{(-1)^n n!}{x^{n+1}}\exp\left(\frac1{x}\right)\sum_{k=0}^{n-1}\frac{(n-1)!}{(n-k-1)!k!(k+1)!x^k}
+\frac{d^n}{dx^n} f(g(x)) = \sum_{k=0}^n f^{(k)}(g(x)) B_{n,k}\left(g'(x),g''(x),\dots,g^{(n-k+1)}(x)\right),
+B_{n,k}(x_1,x_2,\dots,x_{n-k+1})
+f(x) = e^x
+g(x) = 1/x
+\frac{d^n}{dx^n} e^{1/x} = \sum_{k=0}^n e^{1/x} B_{n,k}\left(-x^{-2},2x^{-3},\dots,(-1)^{n-k+1}(n-k+1)!x^{-n+k-2}\right).
+1/x
+x
+e^x
+n
+\frac{d^n}{dx^n} e^{1/x} = (-1)^n x^{-n} \sum_{j=0}^{\infty} \frac{j^{\overline{n}} x^{-j}}{j!}.
+j
+e^x
+\sum_{j=0}^{\infty} \frac{j^{\underline{k}} x^{-j}}{j!} = \sum_{j=k}^{\infty} \frac{j^{\underline{k}} x^{-j}}{j!} = \sum_{j=k}^{\infty} \frac{j! x^{-j}}{(j-k)! j!} = \sum_{i=0}^{\infty} \frac{x^{-i-k}}{i!} = x^{-k} e^{1/x},
+\frac{d^n}{dx^n} e^{1/x} = (-1)^n e^{1/x} \sum_{k=1}^n L(n,k) x^{-n-k},
+L(n,k) = \binom{n}{k}\binom{n-1}{k-1} (n-k)!.

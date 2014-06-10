@@ -1,0 +1,21 @@
+ \ h(x) \ = \ [2 + \sin \ 4x]^{\cos (e^x)} \ - \ 1.25 \  
+ h'(x) \ = \ \frac{d}{dx} \left(\ [2 + \sin \ 4x]^{\cos (e^x)} \ \right) \ = \ \frac{d}{dx} \left[ e^{\ln (\ [2 + \sin \ 4x]^{\cos (e^x)} \ ) }  \right]  
+ = \  e^{\ln (\ [2 + \sin \ 4x]^{\cos (e^x)} \ )} \ \cdot \ \frac{d}{dx} \left[ \cos (e^x) \ \cdot \ \ln (\ 2 + \sin \ 4x \ ) \   \right]  
+  =  \ [2 + \sin \ 4x]^{\cos (e^x)} \ \cdot \ \left( \cos (e^x)  \cdot \frac{d}{dx} \left[  \ln (\ 2 + \sin \ 4x \ )    \right] \ + \  \frac{d}{dx} \left[ \cos (e^x) \right] \cdot   \ln (\ 2 + \sin \ 4x \ )    \right) 
+ = \ \ [2 + \sin \ 4x]^{\cos (e^x)} \ \cdot \ \left( \cos (e^x)  \cdot  \left[  \ \frac{4 \ \cos \ 4x}{ (\ 2 + \sin \ 4x \ )}    \right] \ + \  \left[ - e^x \sin (e^x) \right] \cdot   \ln (\ 2 + \sin \ 4x \ )    \right) 
+ \ a = 2 \ 
+ h(x) \ = \ h(2) \ + \ h'(2) \cdot (x-2) 
+ = \ \left( [2 + \sin \ 8]^{\cos (e^2)} \ - \ 1.25 \right)   
+ + \ [2 + \sin \ 8]^{\cos (e^2)} \ \cdot \ \left(   \left[  \ \frac{4 \ \cos \ 8 \ \cos (e^2)}{ (\ 2 + \sin \ 8 \ )}    \right] \ + \  \left[ - e^2 \sin (e^2) \right] \cdot   \ln (\ 2 + \sin \ 8 \ )    \right) \ \cdot \ (x-2)  
+ \approx \  0.38391 \ - \ 7.31987 \ (x-2) .  
+ f(x) - f(a) \ = \ f'(a) \ \cdot \ (x - a ) \ \ . 
+{\lim_{dx \rightarrow 0} \frac {f(x+dx)-f(x)}{dx}}
+{f(x)=x^2}
+{y=x^2}
+{y'=2x}
+{\lim_{dx \rightarrow 0}\frac{(x+dx)^2-x^2}{dx}=}
+{\lim_{dx \rightarrow 0}\frac{(x^2+2xdx+dx^2)-x^2}{dx}=}
+{\lim_{dx \rightarrow 0}\frac{2xdx+dx^2}{dx}=}
+{\lim_{dx \rightarrow 0} \frac {(2x+dx)dx}{dx}=}
+{\lim_{dx \rightarrow 0}2x+dx=}
+{2x}

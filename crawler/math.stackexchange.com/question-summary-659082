@@ -1,0 +1,17 @@
+\Omega
+\mathbb{R}^2
+f:X\to L_0^2(\Omega)
+X
+\displaystyle L_0^2(\Omega):=\left\{u\in L^2(\Omega):\int_\Omega u=0\right\}
+||u||_{L^2(\Omega)}=\sup_{v\in L_0^2(\Omega)\setminus 0}\dfrac{\langle u,v\rangle_{L^2(\Omega)}}{||v||_{L^2(\Omega)}}
+f
+\phi\in X
+f(\phi)=v
+||\phi||_X\leq C||v||_{0,\Omega}
+C>0
+||u||_{L^2(\Omega)}=\sup_{v\in L_0^2(\Omega)\setminus 0}\dfrac{\langle u,v\rangle_{L^2(\Omega)}}{||v||_{L^2(\Omega)}}\leq C\sup_{\phi\in X\setminus 0}\dfrac{\langle u,f(\phi)\rangle_{L_0^2(\Omega)}}{||\phi||_X}
+f
+\varphi\ne 0
+ \|\varphi\|_X\le C\,\|v\|_{L^2(\Omega)}=C\,\|f(\varphi)\|_{L^2(\Omega)},\tag{1} 
+ \dfrac{\langle u,f(\varphi)\rangle_{L_0^2(\Omega)}}{\|f(\varphi)\|_{L^2_0(\Omega)}}  \le C\dfrac{\langle u,f(\varphi)\rangle_{L_0^2(\Omega)}}{\|\varphi\|_X} 
+ \sup_{\varphi\in X\setminus 0}\dfrac{\langle u,f(\varphi)\rangle_{L_0^2(\Omega)}} {\|f(\varphi)\|_{L^2_0(\Omega)}} \le\sup_{\varphi\in X\setminus 0} C\dfrac{\langle u,f(\varphi)\rangle_{L_0^2(\Omega)}}{\|\varphi\|_X}. 

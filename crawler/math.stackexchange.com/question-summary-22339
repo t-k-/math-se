@@ -1,0 +1,30 @@
+X
+Y
+P(X\leq Y)
+ P(X\leq Y) = \sum_{y=0}^\infty P(Y=y) P(X\leq y) 
+X \sim Poiss(\lambda)
+Y \sim Poiss(\mu)
+ \mathbb{P}(X=k) = \frac{e^{-\lambda} \lambda^k}{k!} \; .
+ \frac{d}{d\lambda} \mathbb{P}(X=k) = \mathbb{P}(X=k-1) - \mathbb{P}(X=k) 
+ \frac{d}{d\lambda} \mathbb{P}(X=0) = - \mathbb{P}(X=0) \; . 
+ \frac{d}{d\lambda} \mathbb{P}(X \leq y) = - \mathbb{P}(X=y) 
+k
+0
+y
+\lambda
+ \frac{d}{d\lambda}\mathbb{P}(X\leq Y) = - \sum_{y=0}^{\infty} \mathbb{P}(X=y)\mathbb{P}(Y=y) 
+ - \sum_{y=0}^{\infty} \mathbb{P}(X=y)\mathbb{P}(Y=y) = - e^{-(\lambda + \mu)} \sum_{y=0}^{\infty} \frac{\lambda^y \mu^y}{(y!)^2} \; . 
+I_0(x)
+0
+I_0(x) = \sum_{n=0}^{\infty} \frac{(x/2)^{2n}}{(n!)^2} \; .
+ \frac{d}{d\lambda}\mathbb{P}(X\leq Y) = - e^{-(\lambda + \mu)} I_0(2 \sqrt{\lambda \mu})
+ \mathbb{P}(X\leq Y) - \mathbb{P}(0\leq Y)= - \int_0^{\lambda} e^{-(t + \mu)} I_0(2 \sqrt{t \mu}) dt 
+ \mathbb{P}(X\leq Y) = 1 - e^{-\mu}\int_0^{\lambda} e^{-t} I_0(2 \sqrt{\mu t}) dt \; . 
+X \sim \text{Poiss}(\lambda)
+Y \sim \text{Poiss}(\mu)
+\text{Pr}(X \leq Y) \approx \Phi\left( \frac{1/2 - (\lambda - \mu )}{\sqrt{\lambda + \mu}} \right)
+\Phi()
+1/2
+X=Y
+\lambda =5
+\mu =10

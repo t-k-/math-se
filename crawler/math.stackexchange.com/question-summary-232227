@@ -1,0 +1,9 @@
+\int \cfrac{\text dx}{(\sin x+ \cos x)^3}
+\sin(x)+\cos(x) = \sqrt{2} \sin(x+\pi/4)
+1/(\sin x)^3
+u=cos x
+1/(1-u^2)^2
+\sin x+\cos x=\sqrt2(\frac{\sqrt2}2\sin x+\frac{\sqrt2}2\cos x)=\sqrt2\sin(x+\frac\pi4)
+\int\frac{dx}{2\sqrt2\sin^3(x+\frac\pi4)}=\frac{\sqrt2}4\int\csc^3(x+\frac\pi4)dx
+\sin(x)+\cos(x)=\sqrt{2}\sin(x+\pi/4)
+ \begin{align} \int\frac{\mathrm{d}x}{(\sin(x)+\cos(x))^3} &=\frac1{2\sqrt{2}}\int\frac{\mathrm{d}x}{\sin^3(x+\pi/4)}\\ &=-\frac1{2\sqrt{2}}\int\frac{\mathrm{d}\cos(x+\pi/4)}{\sin^4(x+\pi/4)}\\ &=-\frac1{2\sqrt{2}}\int\frac{\mathrm{d}u}{(1-u^2)^2}\\ &=-\frac1{8\sqrt{2}}\int\left(\frac1{1-u}+\frac1{1+u}+\frac1{(1-u)^2}+\frac1{(1+u)^2}\right)\mathrm{d}u\\ &=\frac1{8\sqrt{2}}\left(\log\left(\frac{1-u}{1+u}\right)+\frac1{1+u}-\frac1{1-u}\right)+C\\ &=\frac1{8\sqrt{2}}\left(\log\left(\frac{1-u^2}{(1+u)^2}\right)-\frac{2u}{1-u^2}\right)+C\\ &=\frac1{4\sqrt{2}}\left(\log\left(\tan(x/2+\pi/8)\right)-\cot(x+\pi/4)\csc(x+\pi/4)\right)+C \end{align} 

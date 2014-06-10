@@ -1,0 +1,18 @@
+\displaystyle f(\mathbf{x}) = \sum_{l=1}^{N-1} \left(|\sum_{k=1}^Nx_k^2e^{-j\frac{2\pi}Nkl}| - A\sum_{k=1}^Nx_k^2\right)^2 
+\mathbf{x}
+\displaystyle \left|\sum_{k=1}^Nx_k^2e^{-j\frac{2\pi}Nkl}\right|
+|h(x)|
+h(x)
+h'(x) sgn (h(x))
+h : \mathbb{R} \to \mathbb{C}
+a x^2 + b
+a,b \in \mathbb{C}
+g(x) = |h(x)|
+g'(x)
+ (g^2)'(x) = (h \cdot \bar{h})'(x) = h(x) \cdot \bar{h}'(x) +  \bar{h}(x) \cdot h'(x)  \\ = 2 ax (\bar{a}x^2 + \bar{b}) +  2 \bar{a}x (x^2 + b)  = 4 \bar{a}a x^3 + 4 \Re  \bar{a}b x = 4x \bar{a} \Re h(x)
+g'(x) = \frac{(g^2)'(x)}{2g(x)} = \frac{2x \bar{a} \Re h(x)}{g(x)} 
+h(\mathbf{x}) := \sum_k x^2_k e^{j \alpha_k}
+\alpha_k = \frac{2 \pi kl}{N}
+l
+ \frac{\partial |h(\mathbf{x})|}{\partial x_m}  = \frac{2x_m e^{j \alpha_m} \Re h(\mathbf{x})}{|h(\mathbf{x})|}  = \frac{2x_m e^{j \alpha_m} \sum_k x_k^2 \cos \alpha_k }{\sqrt{ \left(\sum_k x_k^2 \cos \alpha_k\right)^2+\left(\sum_k x_k^2 \sin \alpha_k\right)^2}}  
+\frac{\partial f(\mathbf{x}|}{\partial x_m}

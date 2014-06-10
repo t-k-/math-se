@@ -1,0 +1,8 @@
+\mathbb{Z}_2^n
+-1 - n
+-1
+ not(a)=\sum_{n=1}^{\left \lfloor \log_{2}(a) \right \rfloor} \left [ n \left ( 1 - \left ( \left \lfloor \frac{a}{2^{n}} \right \rfloor mod 2 \right ) \right ) \right ] 
+ or(a,b)=\sum_{n=1}^{\left \lfloor \log_{2}(a) \right \rfloor} \left [ n \left \lceil \frac{ \left ( \left \lfloor \frac{a}{2^{n}} \right \rfloor mod 2 \right ) + \left ( \left \lfloor \frac{b}{2^{n}} \right \rfloor mod 2 \right ) }{2} \right \rceil \right ] + b - b mod 2^{\left \lfloor \log_{2}(a) \right \rfloor} 
+ and1(a,b)=\sum_{n=1}^{\left \lfloor \log_{2}(a) \right \rfloor} \left [ n \left \lfloor \frac{ \left ( \left \lfloor \frac{a}{2^{n}} \right \rfloor mod 2 \right ) + \left ( \left \lfloor \frac{b}{2^{n}} \right \rfloor mod 2 \right ) }{2} \right \rfloor \right ] 
+ and2(a,b)=\sum_{n=1}^{\left \lfloor \log_{2}(a) \right \rfloor} \left [ n \left ( \left \lfloor \frac{a}{2^{n}} \right \rfloor mod 2 \right ) \left ( \left \lfloor \frac{b}{2^{n}} \right \rfloor mod 2 \right ) \right ] 
+ xor(a,b)=\sum_{n=1}^{\left \lfloor \log_{2}(a) \right \rfloor} \left [ n \left ( \left ( \left ( \left \lfloor \frac{a}{2^{n}} \right \rfloor mod 2 \right ) + \left ( \left \lfloor \frac{b}{2^{n}} \right \rfloor mod 2 \right ) \right ) mod 2 \right ) \right ] + b - b mod 2^{\left \lfloor \log_{2}(a) \right \rfloor} 

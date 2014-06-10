@@ -1,0 +1,30 @@
+(B_t)_{t\geq 0}
+[0,n]
+B_0, B_1, \ldots, B_n
+B^{n}_t
+\sup\limits_{0 \leq t \leq n}|B_t - B^{n}_t|
+A, p
+\alpha
+\sup\limits_{0 \leq t \leq 1}(B_{n+t} - B_n)
+|N(0,1)|
+n
+\sqrt{\log n}
+\mathbb{P}\big\{\sup\limits_{0 \leq t \leq n}|B_t - B^{n}_t| \geq A(\log n)^p\big\} \leq \frac{\alpha}{n}
+\begin{align*} \sup_{0 \leq t \leq n} |B_t-B_t^n| &= \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]} |(1-t) \cdot (B_{t+k}-B_k)+t \cdot (B_{t+k}-B_{k+1})| \\ &\leq \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]}|B_{t+k}-B_k| + \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]} |B_{k+1}-B_{(k+1)-t}|. \end{align*}
+(B_t^k)_{t \in [0,1]} :=(B_{t+k}-B_k)_{t \in [0,1]}
+(W_t^k)_{t \in [0,1]} := (B_{k+1}-B_{(k+1)-t})_{t \in [0,1]}
+\mathbb{P} \left( \sup_{t \leq n} |B_t-B_t^n| \geq r \right) \leq 2 \mathbb{P} \left( \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]} |B_{t+k}-B_k| \geq \frac{r}{2} \right).
+(-B_t)_{t \geq 0}
+I:=\mathbb{P} \left( \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]} (B_{t+k}-B_k) \geq r \right) \tag{1} 
+\sup_{t \in [0,1]} (B_{t+k}-B_k) \sim |B_1|
+I \leq n \cdot \mathbb{P}(|B_1| \geq r) \leq \frac{n}{\sqrt{2\pi}} \frac{1}{r} \exp \left(-\frac{r^2}{2} \right) \tag{2}
+r>0
+r =\sqrt{2A \log n}
+I \leq \frac{n}{A \sqrt{2\pi}} \frac{n^{-A}}{\log n}
+A = 2
+\mathbb{P} \left( \max_{k=0,\ldots,n-1} \sup_{t \in [0,1]} (B_{t+k}-B_k) \geq \sqrt{4 \log n} \right) \leq \frac{1}{2 \sqrt{2\pi}} \frac{1}{\log n \cdot n} \tag{3}
+\sqrt{2A \log n}
+(A \log n)^p
+p>0
+A
+(3)

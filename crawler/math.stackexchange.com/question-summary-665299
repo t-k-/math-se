@@ -1,0 +1,20 @@
+g\geq 0
+g(s)\downarrow 0
+s\uparrow \infty
+h\geq 0
+\int_0^{\infty} h(s)\,ds = \infty
+\int_0^{\infty} h(s) g(s)\,ds < \infty.
+h
+\int g\, ds < \infty
+g
+g(0) = 1
+s_1 = 0
+n \geqslant 1
+s_{n+1} = \inf \left\lbrace s > s_n + 1 : g(s) \leqslant \frac{1}{n+1}\right\rbrace.
+s_{n+1} \geqslant s_n + 1
+(s_n,s_{n+1}]
+g \leqslant \frac{1}{n}
+[s_n,s_{n+1})
+h(s) = \frac{1}{(s_{n+1}-s_n)(1+\log n)^2}.
+\int_0^\infty h(s)\,ds = \sum_{n=1}^\infty \int_{s_n}^{s_{n+1}} h(s)\,ds = \sum_{n=1}^\infty \frac{1}{(1+\log n)^2} = \infty,
+\int_0^\infty h(s)g(s) = \sum_{n=1}^\infty \int_{s_n}^{s_{n+1}} h(s)g(s)\,ds \leqslant \sum_{n=1}^\infty \frac{1}{n(1+\log n)^2} < \infty.

@@ -1,0 +1,44 @@
+f(x)
+Y = x^2
+f(x)=\begin{cases}cx&,0<x<2\\2c&,2<x<5\\0&,\text{otherwise}\end{cases}
+X
+f(x)
+Pr(X = x) = f(x) dx
+Y = g(X)
+g
+X
+Pr(g^{-1}(Y) = x) = f(x)dx
+Pr(Y = g(x)) = f(x) dx
+g^{-1}(g(x))
+x
+Pr(Y = g(x)) = f(g^{-1}(g(x))) d(g^{-1}(g(x))
+a = g(x)
+Pr(Y = a) = (f(g^{-1}(a))) (\frac{dg^{-1}(a)}{da}) da
+Y
+y
+f(g^{-1}(y)) (\frac{dg^{-1}(y)}{dy})
+X
+[a, b]
+Y
+[g(a), g(b)]
+g
+[a, b]
+g
+X
+X
+Y
+f_X
+f_Y
+f_Y
+Pr[a\le Y \le b] = \int_a^b f_Y(y) dy
+f_Y
+f_X
+Y = X^2
+Pr[a\le Y \le b] = Pr[a\le X^2 \le b]
+a
+b
+\displaystyle Pr[a\le X^2 \le b] = Pr[\sqrt{a} \le X \le \sqrt{b}] = \int_{\sqrt{a}}^{\sqrt{b}} f_X(x) dx
+y = x^2
+\sqrt{y} = x
+Pr[a\le Y \le b] = \int_{a}^{b} \dfrac{f_X(\sqrt{y})}{2\sqrt{y}} dy
+f_Y(y) = \dfrac{f_X(\sqrt{y})}{2\sqrt{y}}

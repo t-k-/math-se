@@ -1,0 +1,24 @@
+f: A\rightarrow B
+g: B\rightarrow C
+(g \circ f)^{-1} = f^{-1} \circ g^{-1}
+f^{-1} \circ g^{-1}=
+=(g \circ f) \circ (f \circ g)(id)
+=g \circ (f \circ (f \circ g))(id)
+=g(f \circ (f \circ g(id)))
+=g(f(f \circ g(id)))
+=g(f(f(g(id)))
+h: C \rightarrow A=(g \circ f)^{-1}
+(g \circ f)\circ h=1_C
+g \circ(f \circ h)=1_C
+f \circ h=1_B \circ (f \circ h)=(g^{-1} \circ g)\circ(f \circ h)=g^{-1} \circ (g \circ(f \circ h))=g^{-1} \circ 1_C=g^{-1}
+(g \circ f)^{-1}=h=1_A \circ h = (f^{-1} \circ f) \circ h = f^{-1} \circ (f \circ h)=f^{-1} \circ g^{-1}
+=
+f^{-1}
+f
+g
+(g\circ f)^{-1}=f^{-1}\circ g^{-1}
+\mbox{id}= \mbox{id}\\ \mbox{id}= \mbox{id}\circ\mbox{id}\\ \mbox{id}= f^{-1}\circ f\circ\mbox{id}\\ \mbox{id}= f^{-1}\circ\mbox{id}\circ f\\ \mbox{id}= f^{-1}\circ g^{-1}\circ(g\circ f)\\ (g\circ f)^{-1}= f^{-1}\circ g^{-1}\\
+(g\circ f)^{-1}= f^{-1}\circ g^{-1}
+\square^{-1}=\triangle\iff\square\mathbin\circ\triangle=\mathrm{id}
+(g\mathbin\circ f)\mathbin\circ(f^{-1}\mathbin\circ g^{-1})=\mathrm{id}
+\circ

@@ -1,0 +1,11 @@
+a_1,a_2\in\mathcal{C}^{\infty}(\Bbb{R}^2,\Bbb{R})
+\frac{\partial a_1}{\partial x_2}=\frac{\partial a_2}{\partial x_1}
+\tfrac{\partial f}{\partial x_i}=a_i
+i\in\{1,2\}
+f(x,y):=x_1\cdot\int_0^1a_1(tx_1,tx_2)\ dt+x_2\cdot\int_0^1a_2(tx_1,tx_2)\ dt.
+\frac{\partial a_1}{\partial x_2}=\frac{\partial a_2}{\partial x_1}
+t
+\tfrac{\partial a_i}{\partial x_1}(tx_1,tx_2)
+\frac{\partial f}{\partial x_1} (x_1,x_2) =\int_0^1a_1(tx_1,tx_2)\ dt+x_1\cdot\int_0^1\frac{\partial a_1}{\partial x_1}(tx_1,tx_2)\cdot t\ dt+x_2\cdot\int_0^1\frac{\partial a_1}{\partial x_2}(tx_1,tx_2)\cdot t\ dt,
+t
+\begin{align} \frac{\partial f}{\partial x_1} (x_1,x_2) &= \int_0^1a_1(tx_1,tx_2)\,dt + \int_0^1 t\cdot\left( \frac{\partial a_1}{\partial x_1}(tx_1,tx_2)\cdot x_1 + \frac{\partial a_1}{\partial x_2}(tx_1,tx_2)\cdot x_2\right)\,dt\\ &= \int_0^1a_1(tx_1,tx_2)\ dt + \int_0^1 t\cdot \frac{\partial}{\partial t}a_1(tx_1,tx_2)\,dt\\ &= \int_0^1 \frac{\partial}{\partial t} \left(t\cdot a_1(tx_1,tx_2)\right)\,dt\\ &= 1\cdot a_1(1\cdot x_1,1\cdot x_2) - 0 \cdot a_1(0,0)\\ &=a_1(x_1,x_2). \end{align}

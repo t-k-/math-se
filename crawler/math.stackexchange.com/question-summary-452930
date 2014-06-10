@@ -1,0 +1,8 @@
+\int_2^\infty \dfrac{x+1}{(x-1)(x^2+x+1)}dx .
+u
+\frac{x+1}{(x-1)(x^2+x+1)}=\frac A{x-1}+\frac{Bx+C}{x^2+x+1}
+x+1=(A+B)x^2+(A-B+C)x+(A-C)
+\therefore A=\frac23,B=-\frac23,C=-\frac13
+\int \frac{x+1}{(x-1)(x^2+x+1)}dx=\frac23\int\frac1{x-1}dx-\frac13\int\frac{2x-1}{x^2+x+1}dx\\ =\frac23\ln|x-1|-\frac13\ln(x^2+x+1)=\frac13\ln\frac{(x-1)^2}{x^2+x+1}
+ \dfrac{x+1}{(x-1)(x^2+x+1)} \sim_{\infty} \frac{x}{x^3}=\frac{1}{x^2}. 
+0<\int_{2}^{\infty}\frac{x+1}{(x-1)(x^2+x+1)}dx<\int_{2}^{\infty}\frac{x+1}{(x-1)(x^2-1)}dx=\int_{2}^{\infty}\frac{1}{(x-1)^2}dx=1

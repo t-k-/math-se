@@ -1,0 +1,19 @@
+f:U\to V
+U
+V
+U\subset \mathbb{R}^{n+m},V\subset \mathbb{R}^m
+n>0
+n<0
+f^{-1}
+f
+f'=\left( \begin{array}{cccccc}  \frac{\partial f_1}{\partial x_1} & \ldots  & \frac{\partial f_1}{\partial x_n} & \frac{\partial f_1}{\partial y_1} & \ldots  & \frac{\partial f_1}{\partial y_m} \\  \ldots  & \ldots  & \ldots  & \ldots  & \ldots  & \ldots  \\  \frac{\partial f_m}{\partial x_1} & \ldots  & \frac{\partial f_m}{\partial x_n} & \frac{\partial f_m}{\partial y_1} & \ldots  & \frac{\partial f_m}{\partial y_m} \end{array} \right)=\left( \begin{array}{cc}  \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(x_1,\ldots ,x_n\right)} & \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(y_1,\ldots ,y_m\right)} \end{array} \right)
+\left(f^{-1}\right)'=\left( \begin{array}{ccc}  \frac{\partial x_1}{\partial f_1} & \ldots  & \frac{\partial x_1}{\partial f_m} \\  \ldots  & \ldots  & \ldots  \\  \frac{\partial x_n}{\partial f_1} & \ldots  & \frac{\partial x_n}{\partial f_m} \\  \frac{\partial y_1}{\partial f_1} & \ldots  & \frac{\partial y_1}{\partial f_m} \\  \ldots  & \ldots  & \ldots  \\  \frac{\partial y_m}{\partial f_1} & \ldots  & \frac{\partial y_m}{\partial f_m} \end{array} \right)=\left( \begin{array}{c}  \frac{\partial \left(x_1,\ldots ,x_n\right)}{\partial \left(f_1,\ldots ,f_m\right)} \\  \frac{\partial \left(y_1,\ldots ,y_m\right)}{\partial \left(f_1,\ldots ,f_m\right)} \end{array} \right)
+\left(f^{-1}\right)'\cdot f'=\left( \begin{array}{cc}  \frac{\partial \left(x_1,\ldots ,x_n\right)}{\partial \left(f_1,\ldots ,f_m\right)}\cdot \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(x_1,\ldots ,x_n\right)} & \frac{\partial \left(x_1,\ldots ,x_n\right)}{\partial \left(f_1,\ldots ,f_m\right)}\cdot \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(y_1,\ldots ,y_m\right)} \\  \frac{\partial \left(y_1,\ldots ,y_m\right)}{\partial \left(f_1,\ldots ,f_m\right)}\cdot \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(x_1,\ldots ,x_n\right)} & \frac{\partial \left(y_1,\ldots ,y_m\right)}{\partial \left(f_1,\ldots ,f_m\right)}\cdot \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(y_1,\ldots ,y_m\right)} \end{array} \right)=\left( \begin{array}{cc}  I_{(n\times n)} & 0 \\  0 & I_{(m\times m)} \end{array} \right)=I_{(n+m\times n+m)}
+\frac{\partial \left(y_1,\ldots ,y_m\right)}{\partial \left(f_1,\ldots ,f_m\right)}\cdot \frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(y_1,\ldots ,y_m\right)}=I_{(m\times m)}
+\frac{\partial \left(f_1,\ldots ,f_m\right)}{\partial \left(y_1,\ldots ,y_m\right)}
+g:A\to B
+A\subset \mathbb{R}^n,B\subset \mathbb{R}^m
+A\times B\subset U
+f(x,g(x))=\text{const}
+x\in A
+f

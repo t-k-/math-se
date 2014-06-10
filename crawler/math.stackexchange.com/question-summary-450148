@@ -1,0 +1,26 @@
+X_n
+X
+Y_n:=\frac{1}{2}(X_n+X)
+F
+ \lim\sup  P[F(Y_n)\le \frac{1}{2}(F(X_n)+F(X))-\delta]\ge \delta >0 
+\delta >0
+F(Y_n)\le \frac{1}{2}(F(X_n)+F(X))
+E[F(Y_n)]-\frac{1}{2}(E[F(X_n)]+E[F(X)])\le 0-\delta P[F(Y_n)\le \frac{1}{2}(F(X_n)+F(X))-\delta]\le -\delta^2
+A:=F(Y_n)\le \frac{1}{2}(F(X_n)+F(X))-\delta
+A^c=F(Y_n)> \frac{1}{2}(F(X_n)+F(X))-\delta
+E[F(Y_n)]=E[F(Y_n)\mathbf1_A]+E[F(Y_n)\mathbf1_{A^c}]\le E[(\frac{1}{2}(F(X_n)+F(X))-\delta)\mathbf1_A]+E[F(Y_n)\mathbf1_{A^c}]
+E[(\frac{1}{2}(F(X_n)+F(X))-\delta)\mathbf1_A]\le \frac{1}{2}(E[F(X_n)]+E[F(X)])-\delta^2
+X_n,Y_n
+P[F(Y_n)\le \frac{1}{2}(F(X_n)+F(X))-\delta]\ge \delta
+n
+E[F(Y_n)\mathbf1_{A^c}]\le 0
+(Z_n)
+\delta
+\limsup\limits_{n\to\infty}P[Z_n\geqslant\delta]\geqslant\delta
+\limsup\limits_{n\to\infty}E[Z_n]\geqslant\delta^2
+Z_n=\frac12(F(X_n)+F(X))-F(Y_n)
+k
+n_k
+P[Z_{n_k}\geqslant\delta]\geqslant\delta-1/k
+Z_{n_k}
+E[Z_{n_k}]\geqslant\delta P[Z_{n_k}\geqslant\delta]

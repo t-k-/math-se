@@ -1,0 +1,23 @@
+\int_{0}^{\infty}\frac{x\cos ax}{\sinh x}dx=\frac{\pi^2}{4} \operatorname{sech}^2\left(\frac{a\pi}{2}\right) 
+a
+\oint_C dz \frac{\sin{a z}}{\sinh{z}}
+C
+\int_{\epsilon}^R dx \frac{\sin{a x}}{\sinh{x}} + i \int_0^{\pi} dy \frac{\sin{a(R+i y)}}{\sinh{(R+i y)}} + \\ \int_R^{\epsilon} dx \frac{\sin{a(x+i \pi)}}{\sinh{(x+i \pi)}} + i \epsilon \int_0^{-\pi/2} d\phi \, e^{i \phi} \frac{\sin{a(i \pi + \epsilon e^{i \phi})}}{\sinh{(i \pi + \epsilon e^{i \phi})}} + \\i \int_{\pi-\epsilon}^{\epsilon} dy \frac{\sin{i a y}}{\sinh{i y}} + i \epsilon \int_{\pi/2}^0 d\phi \, e^{i \phi} \frac{\sin{a \epsilon e^{i \phi}}}{\sinh{\epsilon e^{i \phi}}} 
+R \to \infty
+\epsilon \to 0
+\left (1+\cosh{\pi a}\right) \int_0^{\infty} dx \frac{\sin{a x}}{\sinh{x}} - \frac{\pi}{2} \sinh{\pi a} = 0
+\int_0^{\infty} dx \frac{\sin{a x}}{\sinh{x}} = \frac{\pi}{2} \tanh{\frac{\pi a}{2}}
+a
+\int_0^{\infty} dx \frac{x \cos{a x}}{\sinh{x}} = \frac{\pi^2}{4} \text{sech}^2{\frac{\pi a}{2}}
+\mathrm{Re}(a)>0
+e^{iax}
+x=in\pi
+n=1,2,\ldots
+\int_{0}^{\infty}\frac{x\cos ax}{\sinh x}dx \quad\textrm{and}\quad \int_{0}^{\infty}\frac{\sin ax}{\sinh x}dx
+\begin{eqnarray*} \int_{0}^{\infty}\frac{x\cos ax}{\sinh x}dx &=& \frac{\partial}{\partial a} \int_{0}^{\infty}\frac{\sin ax}{\sinh x}dx \\ &=& \frac{1}{2} \frac{\partial}{\partial a} \int_{-\infty}^{\infty}     \frac{\sin ax}{\sinh x}dx \\ &=& \frac{1}{2}\frac{\partial}{\partial a} \mathrm{Im}     \int_{-\infty}^{\infty}\frac{e^{iax}}{\sinh x}dx. \end{eqnarray*}
+\begin{eqnarray*} \int_{0}^{\infty}\frac{x\cos ax}{\sinh x}dx &=&  \frac{1}{2}\frac{\partial}{\partial a} \mathrm{Im} \,2\pi i     \sum_{n=1}^\infty \mathrm{Res}_{x_n=i n\pi}     \frac{e^{iax_n}}{\sinh x_n} \\ &=&  \frac{1}{2}\frac{\partial}{\partial a} \mathrm{Im} \,2\pi i     \sum_{n=1}^\infty     \frac{e^{-n\pi a}}{\cosh i n\pi} \\ &=&  \pi \frac{\partial}{\partial a}     \sum_{n=1}^\infty (-1)^n e^{-n\pi a} \\ &=& -\pi \frac{\partial}{\partial a} \frac{1}{1+e^{a\pi}} \\ &=& \frac{\pi^2 e^{a\pi}}{(1+e^{a\pi})^2} \\ &=& \frac{\pi^2}{4}\mathrm{sech}^2\frac{a\pi}{2}. \end{eqnarray*}
+\int_0^{\infty}\dfrac{\sin ax}{\sinh x}  dx
+\dfrac 1{\sinh x}=2\sum_{k=2n+1,n\in\mathbb{N}}exp(-kx)
+\int_0^{\infty}\dfrac{\sin ax}{\sinh x}  dx=2\int_0^{\infty}\sin ax \sum_{k=0}^\infty \exp(-(2k+1)x)dx
+=2a\sum\dfrac{1}{a^2+(2k+1)^2}=\pi \coth \pi a-\frac\pi2 \coth\frac{\pi a}{2}
+\sinh x

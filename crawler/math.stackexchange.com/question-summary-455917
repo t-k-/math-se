@@ -1,0 +1,31 @@
+x_0, y_0, u_0, v_0, s_0, t_0
+u^2+sx+ty=0
+v^2+tx+sy=0
+2s^2x+2t^2y-1=0
+s^2x-t^2y=0
+u(x,y), v(x,y), s(x,y), t(x,y)
+B
+(x_0,y_0)
+u,V,s,t
+B
+u(x_0,y_0)=u_0, v(x_0,y0_)=v_0, s(x_0,y_0)=s_0, t(x_0,y_0)=t_0
+F(x,y,u,v,s,t)=(u^2+sx+ty,v^2+tx+sy, 2s^2x+2t^2y-1,s^2x-t^2y)
+F
+DF(x,y,u,v,s,t)= \begin{pmatrix} s & t & 2s^2 & s^2 \\ t & s & 2t^2 & -t^2 \\ 2u & 0& 0&0 \\ 0 & 2v & 0&0 \\ x & y & 4sx & 2sx \\ y & x& 4ty & -2ty\end{pmatrix}
+x,y,s,t,u,v
+DF\not=0
+Daf
+u,V,s,t
+F
+(x_0,y_0)
+ F(x,y,u,v,s,t)=(F_1(x,y,u,v,s,t), F_2(x,y,u,v,s,t), F_3(x,y,u,v,s,t),F_4(x,y,u,v,s,t)) 
+ \left(\begin{array}{llll} \dfrac{\partial F_1}{\partial u}&\dfrac{\partial F_2}{\partial u}\dfrac{\partial F_3}{\partial s}&\dfrac{\partial F_4}{\partial u}\\ \dfrac{\partial F_1}{\partial v}&\dfrac{\partial F_2}{\partial v}\dfrac{\partial F_3}{\partial s}&\dfrac{\partial F_4}{\partial v}\\ \dfrac{\partial F_1}{\partial s}&\dfrac{\partial F_2}{\partial s}\dfrac{\partial F_3}{\partial s}&\dfrac{\partial F_4}{\partial s}\\ \dfrac{\partial F_1}{\partial t}&\dfrac{\partial F_2}{\partial t}\dfrac{\partial F_3}{\partial s}&\dfrac{\partial F_4}{\partial t}\\ \end{array}\right) 
+ u=u(x,y),v=v(x,y),s=s(x,y),t=t(x,y) 
+ F(x,y,u(x,y),v(x,y),s(x,y),t(x,y))=0 
+F:\mathbb{R}^{m+n}\rightarrow\mathbb{R}^m
+m\times m
+F
+m\times (m+n)
+m
+F_i
+(u,v,s,t)

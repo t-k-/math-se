@@ -1,0 +1,21 @@
+ 2\left(E_{k+1}^2+E_{k-1}^2\right)+5 E_k^2<1
+E_k=\frac{F_k}{2^k}
+F_k
+F_1=F_2=1
+E_1={1\over2}
+E_2=E_3={1\over4}
+E_4={2\over16}
+E_k={F_k\over2^k}={F_{k-1}+F_{k-2}\over2^k}\le{2F_{k-1}\over2^k}={F_{k-1}\over2^{k-1}}=E_{k-1}
+E_k\lt{1\over3}
+k\gt1
+k\gt2
+2(E_{k+1}^2+E_{k-1}^2)+5E_k^2\le9E_{k-1}^2\lt9\left({1\over3}\right)^2=1
+k=2
+2(E_3^2+E_1^2)+5E_2^2=2({1\over16}+{1\over4})+5\cdot{1\over16}={15\over16}\lt1
+2(E_2^2+E_0^2)+5E_1^2=2({1\over16}+0)+5\cdot{1\over4}={11\over8}\gt1
+k=1
+F_1=0
+F_2=1
+ 2\left(E_{j+1}^2+E_{j-1}^2\right)+5 E_j^2<1
+E_{j+2} = \frac{F_{j+2}}{2^{j+2}}=\frac{F_{j+1} + F_j}{2^{j+2}} = \frac{E_{j+1}}{2} + \frac{E_{j}}{4} = \frac{F_{j} + F_{j-1}}{2^{j+2}} + \frac{E_j}{4} = E_j/2 
+ 2\left(E_{j+2}^2+E_{j}^2\right)+5 E_{j+1}^2<1

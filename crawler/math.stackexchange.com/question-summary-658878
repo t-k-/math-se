@@ -1,0 +1,16 @@
+\exp (-2nt^2)
+Y := \sum_{i=1}^n X_i
+\overline{X}
+\exp(-2t^2)
+\exp(-2n^2 t^2)
+a_i=0
+b_i=1
+i
+\exp \left( - \frac{2n^2t^2}{\sum_{i=1}^n (b_i - a_i)^2} \right)=\exp \left( - \frac{2n^2t^2}{\sum_{i=1}^n 1} \right)=\exp \left( - \frac{2n^2t^2}{n} \right)=\exp \left(-2nt^2\right).
+Y := \sum_{i=1}^n X_i
+\overline{X} := \frac 1 n \sum_{i=1}^n X_i = \frac 1 n Y
+\Pr(Y - \mathrm{E}[Y] \geq t) \leq \exp \left( - \frac{2t^2}{\sum_{i=1}^n (b_i - a_i)^2} \right),\!
+t = t'\,n
+\Pr(Y - \mathrm{E}[Y] \geq t'n) \leq \exp \left( - \frac{2n^2 t'^2}{\sum_{i=1}^n (b_i - a_i)^2} \right),\!
+\Pr(Y - \mathrm{E}[Y] \geq t'n)  = \Pr(\frac{1}{n}(Y - \mathrm{E}[Y]) \geq t') = \Pr(\overline{X} - \mathrm{E}[\overline{X}] \geq t')
+\Pr(\overline{X} - \mathrm{E}[\overline{X}] \geq t') \leq \exp \left( - \frac{2n^2 t'^2}{\sum_{i=1}^n (b_i - a_i)^2} \right).

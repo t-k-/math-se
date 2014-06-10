@@ -1,0 +1,87 @@
+A
+B
+A
+B
+A+B
+A+B=(A \cup B) \backslash (A \cap B)
+A + (B+C) = B+(A+C) = C+ (A+B)
+P,Q
+R
+(P \land Q) \land R \leftrightarrow P \land (Q \land R)
+(P \lor Q) \lor R \leftrightarrow P \lor (Q \lor R)
+A + (B+C) 
+A + (B \cup C) \backslash (B \cap C)
+ \begin{array}{c} A+(B+C)\\ A+[(B \cup C) \setminus (B \cap C)]\\ (A \cup [(B \cup C) \setminus (B \cap C)]) \setminus (A \cap [(B \cup C) \setminus (B \cap C)])\\ \end{array} 
+B + (A + C )
+B + (A \cup C) \backslash (A \cap C)
+ \begin{array}{c} B+(A+C)\\ B+[(A \cup C) \setminus (A \cap C)]\\ (B \cup [(A \cup C) \setminus (A \cap C)]) \setminus (B \cap [(A \cup C) \setminus (A \cap C)])\\ \end{array} 
+C + (A+B) 
+C + (A \cup B) \backslash (A \cap B)
+ \begin{array}{c} C+(A+B)\\ C+[(A \cup B) \setminus (A \cap B)]\\ (C \cup [(A \cup B) \setminus (A \cap B)]) \setminus (C \cap [(A \cup B) \setminus (A \cap B)])\\ \end{array} 
+P
+Q
+P \land Q \leftrightarrow Q \land P
+P \lor Q \leftrightarrow Q \lor P
+ \begin{array}{c} A+(B+C) = (B+C)+A \\ A + (B \cup C) \backslash (B \cap C) = (B \cup C) \backslash (B \cap C) + A\\ \end{array} 
+ \begin{array}{c} B+(A+C) = (A+C)+B \\ B + (A \cup C) \backslash (A \cap C) = (A \cup C) \backslash (A \cap C) + B\\ \end{array} 
+ \begin{array}{c} C+(A+B) = (A+B)+C \\ C + (A \cup B) \backslash (A \cap B) = (A \cup B) \backslash (A \cap B) + C\\ \end{array} 
+A+(B+C) = B + (A+C)
+B+(A+C)
+B+[(A \cup C) \backslash (A \cap C)]
+(B \cup [(A \cup C) \backslash (A \cap C)]) \backslash (B \cap [(A \cup C) \backslash (A \cap C)])
+\backslash
+(B \cup [(A \cup C) \cap (A \cap C)'])
+(A \cap C)'
+(A' \cup C')
+(B \cup [(A \cup C) \cap (A' \cup C')])
+[B \cup (A \cup C)] \cap [B \cup (A' \cup C')]
+[A \cup B \cup C] \cap [A' \cup B \cup C'] \quad --- (*)
+\backslash
+(B \cap [(A \cup C) \backslash (A \cap C)])
+P \backslash Q
+P
+Q
+P
+Q'
+Q'
+(B \cap [(A \cup C) \cap (A \cap C)'])'
+B' \cup [(A \cup C) \cap (A \cap C)']'
+B' \cup [(A \cup C)' \cup (A \cap C)]
+B' \cup [(A' \cap C') \cup (A \cap C)]
+(A' \cap C') \cup (A \cap C)
+[A' \cup (A \cap C)] \cap [C' \cup (A \cap C)]
+(A' \cup A) \cap (A' \cup C) \cap (C' \cup A) \cap (C' \cup C)
+U \cap (A' \cup C) \cap (C' \cup A) \cap U
+(A' \cup C) \cap (C' \cup A)
+B' \cup [(A' \cup C) \cap (C' \cup A)]
+[B' \cup (A' \cup C)] \cap [B' \cup (C' \cup A)] \quad --- (**)
+(*)
+(**)
+\cap
+[A \cup B \cup C] \cap [A' \cup B \cup C'] \cap [B' \cup A' \cup C] \cap [B' \cup C' \cup A]
+A \cup B \cup C
+\cap
+A
+B
+B
+C
+A+(B+C)
+\Delta
+A\Delta B = (A\cup B)\setminus (A\cap B) = (A\setminus B)\cup (B\setminus A)
+A\Delta B
+x\in A\Delta B = (x\in A)\oplus (x\in B)
+\oplus
+2
+\begin{array}{l} x\in A\Delta (B\Delta C)&\iff (x\in A)\oplus (x\in B\Delta C)\\ & \iff (x\in A) \oplus ((x\in B) \oplus (x\in C))\\ & \iff (x\in A) \oplus ((x\in C) \oplus (x\in B))\\ & \iff ((x\in A)\oplus (x\in C))\oplus (x\in B)\\ & \iff  (x\in B)\oplus((x\in A)\oplus (x\in C))\\ &\iff (x\in B)\oplus (x\in A\Delta C)\\ &\iff x\in B\Delta (A\Delta C) \end{array}
+\oplus
+x\in A, x\in B, x \in C
+x\in A\Delta (B\Delta C)
+x\in B\Delta (A\Delta C)
+x\in A, x\in B, x \not\in C
+x\not\in A\Delta (B\Delta C)
+x\not\in B\Delta (A\Delta C)
+A\Delta (B\Delta C)
+(A_1\cap \dots \cap A_n)\cup \dots \cup (Z_1\cap \dots \cap Z_n)
+\cup
+A, B,C
+A\setminus B = A\cap B^c

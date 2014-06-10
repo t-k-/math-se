@@ -1,0 +1,9 @@
+f(x) = \frac{a}{\pi} \frac{1}{a^2 + x^2}
+\hat f(k) = \frac{1}{\sqrt{2\pi}} \frac{a}{\pi}\int_{-\infty}^{+\infty}\frac{e^{-ikx}}{a^2 + x^2}\mathrm{d}x
+g(z) \doteqdot \frac{e^{-ikz}}{a^2 + z^2} = \frac{e^{-ikz}}{(z-ai)(z+ai)}
+z=ai
+\text{Res}(g,ai) = \lim_{z \to ai}\frac{e^{-ikz}}{z+ai} = \frac{e^{ak}}{2ai}
+\int_{-\infty}^{+\infty}\frac{e^{-ikx}}{a^2 + x^2}\mathrm{d}x = 2\pi i\frac{e^{ak}}{2ai} = \pi\frac{e^{ak}}{a}
+\hat f(k) = \frac{1}{\sqrt{2\pi}}\frac{a}{\pi} \pi\frac{e^{ak}}{a}= \frac{1}{\sqrt{2\pi}}e^{ak}
+\frac{1}{\sqrt{2\pi}}e^{-a|k|}
+k>0

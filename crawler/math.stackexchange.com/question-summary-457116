@@ -1,0 +1,36 @@
+a
+b
+a_1, a_2, b_1, b_2 \sim  U \left[0;1 \right]
+ d \left(a, b\right) = \left | a_1 - b_1 \right | + \left | a_2 - b_2 \right |  
+ I := \iint_{\left[0;1 \right]^2}^{} \left | x - y \right | + \left | x - y \right | dxdy 
+x = y
+ I = 2 \iint_{\left[0;1 \right]^2}^{} \left | x - y \right | dxdy = 4 \int_{0}^{1} \left ( \int_{0}^{x} x - y  dy \right ) dx = 4 \int_{0}^{1} \frac{x^2}{2} dx = \frac{2}{3} 
+n
+a,b,c
+b
+c
+a
+E \left [ d \left( a, b \right) | b \text{ is closer}  \right]
+E \left [ d \left( a, c \right) | c \text{ is closer}  \right]
+ \frac{1}{2} E \left [ d \left( a, b \right) | b \text{ is closer}  \right] + \frac{1}{2} E \left [ d \left( a, c \right) | c \text{ is closer}  \right] 
+D=|A-B|
+A
+B
+[0,1]
+D
+f_D(d)=2(1-d) \,[0\le d\le1]
+\psi_D(t)=\frac{2}{t^2}(1+i\, t -e^{i t})= 2\left(\frac{1}{2!}+\frac{i\,t}{3!}+\frac{(i \, t)^2}{4!}+\frac{(i \, t)^3}{5!}+\cdots \right)
+D
+E(D)=1/3
+E(D^2)=1/6
+\sigma_D^2=1/18
+n
+n
+n
+f_D(d)
+\psi_D^n(t)
+x_1
+n
+k
+P(X \le x) \approx 1 - \left(1 - x^n \frac{2^n}{n!}\right)^{k-1}, \;\; 0\le x\le x_M=\frac{(n!)^{1/n}}{2}
+E(X) = \int_0^\infty (1-F_X(x))\, dx \approx \int_0^{x_M}  \left(1 - x^n \frac{2^n}{n!}\right)^{k-1} dx

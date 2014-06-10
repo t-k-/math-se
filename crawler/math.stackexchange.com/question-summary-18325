@@ -1,0 +1,14 @@
+z
+\int_C \frac{e^{-z^2}}{z^{n+1}}dz = \int_{-\infty}^{\infty} z^n e^{-z^2} dz
+x
+2l+k-n = 0
+2\pi i
+n-k
+k=n
+0,-1,-2,\ldots
+l = (n-k)/2
+\begin{eqnarray*} H_n(x) &=& \frac{n!}{2\pi i} \oint_\gamma d t\, \frac{e^{2tx -t^2}}{t^{n+1}} \\ &=& \frac{n!}{2\pi i} \sum_{k=0}^\infty \frac{(2x)^k}{k!}  \sum_{l=0}^\infty \frac{(-)^l}{l!} \oint_\gamma d t\, t^{2l+k-n-1}. \end{eqnarray*}
+H_n(x) = n! \sum_{k=0 \atop n-k\ \mathrm{even}}^\infty (-)^{\frac{n-k}{2}} \frac{(2x)^k}{k!(\frac{n-k}{2})!}.
+\begin{equation} H_n(x) = n! \sum_{l=0}^{\lfloor \frac{n}{2}\rfloor} (-)^l \frac{(2x)^{n-2l}}{l!(n-2l)!},\tag{1} \end{equation}
+H_n(x)=(-1)^ne^{x^2}\dfrac{d^n}{dx^n}e^{-x^2}
+H_n(x)=(-1)^ne^{x^2}\dfrac{d^n}{dx^n}e^{-x^2}=\dfrac{(-1)^ne^{x^2}}{\sqrt\pi}\dfrac{d^n}{dx^n}\int_0^\infty e^{-\frac{t^2}{4}}\cos xt~dt=\dfrac{(-1)^ne^{x^2}}{\sqrt\pi}\int_0^\infty t^ne^{-\frac{t^2}{4}}\cos\left(xt+\dfrac{n\pi}{2}\right)dt

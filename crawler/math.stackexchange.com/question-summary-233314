@@ -1,0 +1,35 @@
+f(x,y) = 1
+0 < y <2x
+0 < x < 1
+f(y |x)
+E[Y|x]
+\rho
+\rho
+\rho = \dfrac{\sigma_{xy}}{\sigma_x \sigma_y}
+\sigma_{xy}
+\sigma_x = \sqrt{Var(X)}
+\sigma_y =\sqrt{Var(Y)}
+f(y|x) = \frac{1}{2x}
+E[Y|x] = x
+1/2
+E[Y|X=x] = \int_{-\infty}^{\infty} y f_{Y|X}(y|x)\ dy
+0 < x < 1
+\int_0^{2x} \dfrac{y}{2x}\ dy = x
+x \le 0
+x \ge 1
+E[X] = \int_{-\infty}^\infty x f_X(x)\ dx = \int_0^1 2 x^2\ dx = 2/3
+E[X^2] = \int_0^1 2 x^3\ dx = 1/2
+\sigma_X^2 = E[X^2] - E[X]^2 = 1/18
+E[Y] = E[E[Y|X]] = E[X] = 2/3
+0 < x < 1
+E[Y^2 | X=x] = \int_0^{2x} \dfrac{y^2}{2x}\ dy = \dfrac{4x^2}{3}
+E[Y^2] = E[E[Y^2|X]] = E[4 X^2/3] = (4/3) E[X^2] = 2/3
+\sigma_Y^2 = E[Y^2] - E[Y]^2 = 2/9
+E[XY] = E[X E[Y|X]] = E[X^2] = 1/2
+\text{Cov}(X,Y) = E[XY] - E[X] E[Y] = 1/18
+\rho = \dfrac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y} = \dfrac{1}{2}
+\rho
+X
+Y = y
+(y/2, 1)
+E[X \mid Y = y] = 1/2 + y/4

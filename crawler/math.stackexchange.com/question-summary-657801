@@ -1,0 +1,45 @@
+m\frac{d^2x}{dt^2}+\beta (\frac{dx}{dt})^n=0
+\frac{dx}{dt}=0
+m\dfrac{d^2x}{dt^2} + \beta(\dfrac{dx}{dt})^n = 0, \tag{1}
+m(\dfrac{dx}{dt})^{-n}\dfrac{d^2x}{dt^2} + \beta = 0, \tag{2}
+\dfrac{d}{dt}(\dfrac{dx}{dt})^{1 - n} = (1 - n)(\dfrac{dx}{dt})^{- n}\dfrac{d^2x}{dt^2}, \tag{3}
+\dfrac{m}{1 - n}\dfrac{d}{dt}(\dfrac{dx}{dt})^{1 - n} + \beta = 0 \tag{4}
+\dfrac{m}{1 - n}\dfrac{d}{dt}(\dfrac{dx}{dt})^{1 - n} =  -\beta. \tag{5}
+n
+0 < n < 1
+dx / dt  \ge 0
+(dx/dt)^n
+n
+t_0
+t
+m / (1 - n)
+(\dfrac{dx}{dt})^{1 - n}(t) -  (\dfrac{dx}{dt})^{1 - n}(t_0) = -\dfrac{1 - n}{m}\beta(t - t_0), \tag{6}
+(\dfrac{dx}{dt})^{1 - n}(t) = (\dfrac{dx}{dt})^{1 - n}(t_0) -\dfrac{1 - n}{m}\beta(t - t_0). \tag{7}
+v_0 = (dx/dt)(t_0)
+t = t_0
+(\dfrac{dx}{dt})^{1 - n}(t) = v_0^{1 - n} -\dfrac{1 - n}{m}\beta(t - t_0), \tag{8}
+0
+t_r
+t
+v_0^{1 - n} -\dfrac{1 - n}{m}\beta(t_r - t_0) = 0 \Rightarrow t_r = t_0 + \dfrac{ m}{\beta(1 - n)}v_0^{1 - n}. \tag{9}
+d
+dx / dt
+t_0
+t_r
+\dfrac{dx}{dt} = (v_0^{1 - n} - \dfrac{1 - n}{m}\beta (t -t_0))^{1 / (1 - n)}, \tag{10}
+x_r - x_0 = \int_{t_0}^{t_r} (\dfrac{dx}{dt})dt = \int _{t_0}^{t_r} (v_0^{1- n} - \dfrac{1-n}{m}\beta(t - t_0))^{1 / (1 - n)}dt; \tag{11}
+u = v_0^{1 - n} - \dfrac{1 -n}{m}\beta(t - t_0), \tag{12}
+du = -\dfrac{1-n}{m}\beta dt, \tag{13}
+dt = -\dfrac{m}{\beta(1 - n)}du, \tag{14}
+-\dfrac{m}{\beta(1 - n)}\int _{v_0^{1 - n}}^0 u^{1 / (1 - n)}du = -\dfrac{m}{\beta(1 - n)}(\dfrac{1 - n}{2 - n}u^{\frac{2 - n}{1 - n}}\mid_{v_0^{1 - n}}^0 = \dfrac{m}{\beta(2 - n)}v_0^{2 - n}, \tag{15}
+u(t_0) = v_0^{1 - n}
+u(t_r) = 0
+d = \dfrac{m}{\beta(2 - n)}v_0^{2 - n}. \tag{16}
+m\frac{dv}{dt}=-\beta v^n
+v(t)
+t
+v\geq 0
+v(t)
+t
+x(t)
+t

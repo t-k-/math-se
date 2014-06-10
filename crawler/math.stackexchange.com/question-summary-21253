@@ -1,0 +1,10 @@
+X
+ f_\vartheta (x) = \Big \{ \begin{array}{cc}            (\vartheta - 1)x^{-\vartheta} & x \geq 1\\          0 & otherwise          \end{array}
+\log X \sim Exp(\vartheta - 1)
+f(\log x)
+Y = \log X
+y
+(\vartheta-1) e^{-(\vartheta-1)y}
+Y
+Exp(\vartheta - 1)
+P(Y \leq y) = P(\log X \leq y) = P(X \leq e^y) = \int_1^{e^y} (\vartheta - 1)x^{-\vartheta} dx = \left.-x^{-\vartheta+1}\right|_1^{e^y} = 1-e^{-(\vartheta-1)y}.

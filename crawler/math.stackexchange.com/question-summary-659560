@@ -1,0 +1,38 @@
+a_{n+1} = a_n - 0.069\cdot b_n
+b_{n+1} = b_n + 0.069\cdot a_{n+1}
+a_0 = 1
+b_0 = 10
+b_n
+a_n
+\lambda \in \mathbb{R}
+\lambda = 0.069
+ \begin{pmatrix} a_{n+1} \\ b_{n+1} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ \lambda & 1 \end{pmatrix} \begin{pmatrix} a_{n+1} \\ b_n \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ \lambda & 1 \end{pmatrix} \begin{pmatrix} 1 & -\lambda \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a_n \\ b_n \end{pmatrix} = \begin{pmatrix} 1 & -\lambda \\ \lambda & 1-\lambda^2 \end{pmatrix} \begin{pmatrix} a_n \\ b_n \end{pmatrix}. 
+2\times 2
+(a_0, b_0)
+P_\lambda(x, y) = x^2+y^2 - \lambda\, x y
+n \in \mathbb{N}
+P_{\lambda}(a_n,b_n) = P_{\lambda}(a_0, b_0)
+(a_n,b_n)
+P_{\lambda}
+\lambda=0.069
+(a_0, b_0) = (1, 10)
+n \in \mathbb{N}
+M_{\lambda} = \begin{pmatrix} 1 & -\lambda \\ \lambda & 1-\lambda^2 \end{pmatrix}.
+\begin{pmatrix} a_n \\ b_n \end{pmatrix} = M_{\lambda}^n \begin{pmatrix} a_0 \\ b_0 \end{pmatrix}.
+\begin{pmatrix} x \\ y \end{pmatrix} \leftarrow M_{\lambda} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x - \lambda\,y \\ \lambda\,x+(1-\lambda^2)\,y \end{pmatrix}. 
+a_n^2+b_n^2 - 0.069 a_n b_n = 100.31.
+\lambda \in (-2,2)
+s
+\sin(s) = \lambda/2
+ \begin{eqnarray} a_n &=& \cos(2 s \,n) \\ b_n &=& \sin(2 s \,n + s). \end{eqnarray}  
+f''=-f
+f(0)=0
+f'(0)=1
+\sin
+f(0)=1
+f'(0)=0
+\cos
+a_{n+1} = a_n - 0.069\cdot b_n\  \ \  \ (1)
+b_{n+1} = b_n + 0.069\cdot a_{n+1}= b_n + 0.069(a_n - 0.069\cdot b_n)=0.069a_n+(1-0.069^2)b_n
+\implies 0.069a_n=b_{n+1}-(1-0.069^2)b_n\  \ \  \ (2)
+\implies 0.069a_{n+1}=b_{n+2}-(1-0.069^2)b_{n+1}\  \ \  \ (3)

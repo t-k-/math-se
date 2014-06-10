@@ -1,0 +1,16 @@
+\iint\frac{(x^2+y^2)^2}{x^2y^2} dx dy
+x^2+y^2=7x
+x^2+y^2=11y
+z=0
+7r\cos\theta=7x=x^2+y^2=11y=11r\sin\theta\longrightarrow\theta_{0}=\tan^{-1}\left(\frac{7}{11}\right)\cong0.56
+I=\int_{\theta=0}^{\theta_0}\int_{r=0}^{11\sin\theta}\frac{r^4}{r^4\cos^2\theta\sin^2\theta}rdrd\theta+\int_{\theta=\theta_0}^{\pi/2}\int_{r=7\cos\theta}^{0}\frac{r^4}{r^4\cos^2\theta\sin^2\theta}rdrd\theta
+y=7/11 x
+\int_0^{x_0} \frac{dx}{x^2} \, \int_{y_-(x)}^{y_+(x)} dy \frac{(x^2+y^2)^2}{y^2}
+x_0
+x
+x_0=\frac{7 \cdot 11^2}{7^2+11^2} = \frac{847}{170}
+y_-
+y_+
+y_-(x) = \frac{11}{2}-\sqrt{\frac{121}{4}-x^2}
+y_+(x) = \sqrt{\frac{49}{4}-\left(\frac{7}{2}-x\right)^2}
+\int_0^{x_0} dx \, x^2 \left (\frac{1}{y_-(x)} - \frac{1}{y_+(x)}\right ) + 2\int_0^{x_0} dx \, [y_+(x)-y_-(x)] + \\\frac13 \int_0^{x_0} dx \frac{1}{x^2} \left [ y_+(x)^3-y_-(x)^3\right]

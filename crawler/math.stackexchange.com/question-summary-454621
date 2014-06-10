@@ -1,0 +1,10 @@
+f(x)=4+3x-x^2
+[-1,3]
+f(x)=-x^2+3x+4
+\,[-1,3]\;
+\forall\,n\in\Bbb N\;;\;\;P_n:=\left\{x_0:=-1\,,\,x_1:=-1+\frac4n\,,\,x_2:=-1+\frac8n\,,\ldots\,,\,x_n=-1+\frac{4n}n=3\right\}
+c_k=\left(-1+\frac{4k}n\right)\in [x_{k-1},x_k]\;,\;k=1,2,\ldots,n
+\sum_{k=1}^nf(c_k)(x_k-x_{k-1})=\frac4n\sum_{k=1}^n\left[-\left(-1+\frac{4k}n\right)^2+3\left(-1+\frac{4k}n\right)+4\right]=
+=\frac4n\sum_{k=1}^n\left[-\frac{16k^2}{n^2}+\frac{20k}n\right]=\frac{16}{n^3}\sum_{k=1}^n\left(-4k^2+5nk\right)=
+\frac{16}{n^3}\left(-4\frac{n(n+1)(2n+1)}6+5n\frac{n(n+1)}2\right)=
+=-\frac{32}3\frac{n(n+1)(2n+1)}{n^3}+40\frac{n^2(n+1)}{n^3}\xrightarrow[n\to\infty]{}\ldots?

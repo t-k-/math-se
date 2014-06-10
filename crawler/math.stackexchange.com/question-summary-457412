@@ -1,0 +1,45 @@
+f:\mathbb{R}^n\rightarrow\mathbb{R}^m
+f(x)=y
+x^i
+x=(x^1,x^2,x^3, ... ,x^k)
+A:\mathbb{R}^n\rightarrow\mathbb{R}^m
+x,u \in \mathbb{R}^n
+f(x+u)^i = f(x)^i + \sum^n_{j=1}(\frac{\partial f(x)^i}{\partial x^j}u^j)
+f(x) + \begin{bmatrix} \frac{\partial f(x)^1}{\partial x^1} & \frac{\partial f(x)^1}{\partial x^2} & ...& \frac{\partial f(x)^1}{\partial x^n} \\ \frac{\partial f(x)^2}{\partial x^1} & \frac{\partial f(x)^2}{\partial x^2} & ...& \frac{\partial f(x)^2}{\partial x^n} \\ ...&...&...&...\\ \frac{\partial f(x)^m}{\partial x^1} & \frac{\partial f(x)^m}{\partial x^2} & ...& \frac{\partial f(x)^m}{\partial x^n} \end{bmatrix}*\begin{bmatrix}u^1\\u^2\\...\\u^n\end{bmatrix} \approx f(x+u)
+\begin{bmatrix} \frac{\partial f(x)^1}{\partial x^1} & \frac{\partial f(x)^1}{\partial x^2} & ...& \frac{\partial f(x)^1}{\partial x^n} \\ \frac{\partial f(x)^2}{\partial x^1} & \frac{\partial f(x)^2}{\partial x^2} & ...& \frac{\partial f(x)^2}{\partial x^n} \\ ...&...&...&...\\ \frac{\partial f(x)^m}{\partial x^1} & \frac{\partial f(x)^m}{\partial x^2} & ...& \frac{\partial f(x)^m}{\partial x^n} \end{bmatrix}*\begin{bmatrix}u^1\\u^2\\...\\u^n\end{bmatrix} =\begin{bmatrix}v^1\\v^2\\...\\v^m\end{bmatrix}
+f(x+u)\approx y+v
+f(x+u) \approx f(x)+Au
+\frac{\partial (x,y)}{\partial(u,v)}
+A^T
+\frac{\partial (y^1,y^2,...,y^n)}{\partial(x^1,x^2,..,x^n)}
+r_1=x_1-x_0 = (\frac{\partial x}{\partial u},\frac{\partial y}{\partial u})\Delta u
+r_2=x_2-x_0 = (\frac{\partial x}{\partial v},\frac{\partial y}{\partial v})\Delta v
+\lVert r_1 \times r_2\rVert
+r_1\times r_2 = det\begin{bmatrix} \frac{\partial x}{\partial u} & \frac{\partial y}{\partial u} \\ \frac{\partial x}{\partial v} & \frac{\partial y}{\partial v}\end{bmatrix} . \Delta u\Delta v\boldsymbol{k}
+(A\cdot v)^t=v^t\cdot A^t
+f({\bf x})^t+\left({\bf D}f({\bf x})\cdot {\bf u}^t\right)^t\simeq f({\bf x+u})^t 
+f({\bf x})+{\bf u}\cdot{\bf D}f({\bf x})^t \simeq f({\bf x+u})
+\mathbb{R}^n
+\phi
+\Omega
+\omega
+\Omega
+n
+x^i
+\Omega
+\omega = dx^1\wedge dx^2\wedge\cdots dx^n
+\int_\Omega \phi \omega
+f^*\omega
+n
+\eta
+f^*\eta(v) = \eta(df(v))
+v
+df
+\eta
+\eta
+\eta
+\eta = (df^T\eta^T)^T
+(\ \ \ \eta\ \ \ )\bigg(\ \ \ df\ \ \ \bigg)\bigg(v\bigg).
+f^*\omega = (df^Tdx^1)^T\wedge\cdots\wedge(df^Tdx^n)^T
+n
+f^*\omega = (\det df^T)dx^1\wedge\cdots dx^n

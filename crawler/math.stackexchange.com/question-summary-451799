@@ -1,0 +1,47 @@
+n
+\lim_{x \to 1} \frac{x + x^2 + \dots + x^n - n}{x - 1} = \frac{n(n + 1)}{2}
+\lim_{x \to a} \frac{f(x)}{x - a}
+a \in \mathbb{R}
+f(a) = 0
+\exists f'(a)
+f'
+f'(a)
+f(x)=x+x^2+\cdots+x^n-n
+\lim_{x \to 1} \frac{x + x^2 + \dots + x^n - n}{x - 1}=  \lim_{x \to 1}\frac{f(x)-f(1)}{x - 1}=f'(1)\\=[1+2x+3x^2+\cdots+nx^{n-1}]_{x=1}= \frac{n(n + 1)}{2}
+x-1
+x\rightarrow 1
+x+x^2+\ldots+x^n-n=(x-1)+(x^2-1)+\ldots (x^n-1)=(x-1)\left(1+(x+1)+\ldots\right)
+1+(x+1)+(x^2+x+1)+\ldots+(x^{n-1}+\ldots+x+1)\xrightarrow [x\to 1]{}1+2+\ldots+n=\frac{n(n+1)}2
+\frac{x + x^2 + \dots + x^n + x^{n+1} - (n+1)}{x - 1} =\\ \frac{x + x^2 + \dots + x^n - n}{x - 1} +\frac{x^{n+1}-1}{x-1}=\\  \frac{x + x^2 + \dots + x^n - n}{x - 1} +(1+x+x^2+\ldots+x^n)\xrightarrow[x\to 1]{} \frac{n(n + 1)}{2}+(n+1)=\frac{(n+1)(n + 2)}{2}.
+\frac{x + x^2 + \dots + x^n - n}{x - 1} =\frac{1+x + x^2 + \dots + x^n - n-1}{x - 1}  =\frac{\frac{x^{n+1}-1}{x-1}-(n+1)}{x-1}
+x-1=y,
+\lim_{x \to 1} \frac{x + x^2 + \dots + x^n - n}{x - 1} = \lim_{y\to0}\frac{\frac{(1+y)^{n+1}-1}y-(n+1)}y
+=\lim_{y\to0}\frac{\frac{1+\binom {n+1}1y+\binom {n+1}2y^2+ O(y^3)-1}y-(n+1)}y\text{ (using Binomial Expansion)}
+=\lim_{y\to0}\frac{(n+1)+\frac{n(n+1)}2y+ O(y^2)-(n+1)}y
+=\frac{n(n+1)}2\text{ as }x\to1,y\to0\implies y\ne0
+\lim_{x\rightarrow 1}\frac{\sum_{k=1}^nx^k-n}{x-1}\\ =\lim_{x\rightarrow 1}\frac{\sum_{k=1}^n(x^k-1)}{x-1}\\ =\sum_{k=1}^n \lim_{x\rightarrow 1} \frac{(x^k-1)}{x-1}
+\lim_{x\rightarrow 1} \frac{(x^k-1)}{x-1}\\ =\lim_{x\rightarrow 1} (\sum_{j=0}^{k-1}x^j)=k
+\sum_{k=1}^n k=\frac{n(n+1)}{2}
+f(a) = 0
+a
+f'(a)
+f(x) = x + x^2 + \cdots + x^n - n
+f'(x) = 1 + 2x + \cdots + nx^{n - 1}
+f'(1) = 1 + 2 + \cdots + n = \frac{n(n + 1)}{2}
+\lim_{x\to a}\frac{f(x)}{x - a}
+\lim_{x \to a}f'(x)= f'(a).
+\lim_{x\to a} f(x) = L \iff \forall \varepsilon \gt 0 \ \exists \delta  \gt 0 \ni \left| x-a \right| \le \delta \Rightarrow  \left| f(x)-L \right| \le \varepsilon
+\delta
+\varepsilon
+L
+\lim_{x \to 1} \frac{x + x^2 + \dots + x^n - n}{x - 1} = \frac{n(n + 1)}{2}
+\begin{align*} a&=1\\ f(x)&=\frac{x + x^2 + \dots + x^n - n}{x - 1}\\ L&=\frac{n(n + 1)}{2} \end{align*}
+\left|x-1\right|
+\left| \frac{x + x^2 + \dots + x^n - n}{x - 1} - \frac{n(n + 1)}{2}\right| < \varepsilon
+\left|x-1\right| \ge g(\varepsilon)
+\left| x-1 \right| \le \delta
+\delta = g(\varepsilon)
+f(x)
+\varepsilon
+L
+\lim_{x \to 1} \frac{x + x^2 + \dots + x^n - n}{x - 1} = \frac{n(n + 1)}{2}

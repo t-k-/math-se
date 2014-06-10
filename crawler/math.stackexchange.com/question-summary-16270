@@ -1,0 +1,9 @@
+ \displaystyle \lim_{t \to \infty}\left[ e^{-t}\int_0^t \int_0^t \frac{e^x - e^y}{x - y}dx dy \right]
+\lim_{t \to \infty}\frac{G'(t)}{e^t}=\infty
+G'(t)
+\frac{G'(t)}{2e^t} = \int_0^t \frac{e^{x-t}-1}{x-t}dx = \int_0^t\frac{1-e^{-y}}{y}dy > \int_1^t\frac{1-e^{-y}}{y}dy > \left(1-e^{-1}\right)log\,t.
+G(t)
+F(y,t)=\int_0^t \frac{e^x-e^y}{x-y} dx.
+G(t)=\int_0^t F(y,t) dy.
+G'(t)=F(t,t)+\int_0^t \frac{\partial F}{\partial t} (y,t) dy
+=\int_0^t \frac{e^x-e^t}{x-t} dx + \int_0^t\frac{e^t -e^y}{t-y} dy  .

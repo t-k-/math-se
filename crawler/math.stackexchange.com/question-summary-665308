@@ -1,0 +1,5 @@
+y(n)=h(n)\ast u(n)
+\displaystyle y(n)=\sum\limits_{\tau=-\infty}^{\infty}h(\tau)\;u(n-\tau)
+=\sum\limits_{\tau=-\infty}^{\infty}\left(2^{\large \tau}u\left(\tau\right)\right)\;u(n-\tau)
+=\sum\limits_{\tau=0}^{\infty}2^{\large \tau}\;u(n-\tau)
+=\sum\limits_{\tau=0}^{n}2^{\large \tau}=1+2+4+\cdots+2^n=\frac{1(1-2^{n+1})}{1-2}=2^{n+1}-1=2(2^n)-1

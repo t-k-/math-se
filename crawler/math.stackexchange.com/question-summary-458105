@@ -1,0 +1,17 @@
+\dot{x}=y^2-x^2
+\dot{y}=x^2+y^2-2
+\tag 1 x' = a x + b x^2 + c x y = x(a + bx + cy)\\ y' = d y + e y^2 + f x y = y(d+ey + fx)
+(0,0), ~\left(0, -\dfrac{d}{e}\right), ~\left(-\dfrac{a}{b}, 0\right), \left(\dfrac{cd -ae}{be - cf}, \dfrac{af -bd}{be - cf}\right)
+(1)
+\tag 2 \displaystyle J(x, y) = \begin{bmatrix}\frac{\partial x'}{\partial x} & \frac{\partial x'}{\partial y}\\\frac{\partial y'}{\partial x} & \frac{\partial y'}{\partial y}\end{bmatrix} = \begin{bmatrix}a + 2bx + cy & cx \\ fy & d + 2 e y + fx \end{bmatrix}
+a, b, c, d, e, f
+\displaystyle J(0, 0) = \begin{bmatrix} a & 0 \\ 0 & d  \end{bmatrix}
+a = -1, d = 1
+\displaystyle J(0, -d/e) = \begin{bmatrix}a - (cd)/e & 0 \\ -(fd)/e & d -(2d)/e  \end{bmatrix}
+e = 1, c = -3
+\displaystyle J(-a/b, 0) = \begin{bmatrix} - a - (ac)/b & 0 \\ 0 & d -(af)/b  \end{bmatrix}
+b = 1, f = 1
+\left(\dfrac{cd -ae}{be - cf}, \dfrac{af -bd}{be - cf}\right)
+x = y = -1/2
+\displaystyle J(-1/2, -1,2) = \begin{bmatrix} -1/2 & 3/2 \\ -1/2 & -1 \end{bmatrix}
+\tag 1 x' = - x +  x^2 -3 x y \\ y' =  y + y^2 + x y

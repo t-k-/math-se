@@ -1,0 +1,12 @@
+x
+y
+x
+\dfrac{d}{dx}x^y=?
+\frac{d(x^y)}{dx}
+f(x)=x^y\implies \ln f(x)=y \cdot \ln x
+\implies \frac{f'(x)}{f(x)}=\ln x\cdot \frac{dy}{dx}+\frac yx
+\implies f'(x)=f(x)\left(\ln x\cdot \frac{dy}{dx}+\frac yx\right)=x^y\left(\ln x\cdot \frac{dy}{dx}+\frac yx\right)
+x^y=(e^{\ln x})^y=e^{y\ln x}
+\frac{d(x^y)}{dx}=\frac{d(e^{y\ln x})}{dx}
+=e^{y\ln x}\left(y\cdot \frac{d(\ln x)}{dx}+\ln x\cdot\frac{dy}{dx}\right)
+=x^y\left(y\cdot\frac1x+\ln x\cdot\frac{dy}{dx}\right)

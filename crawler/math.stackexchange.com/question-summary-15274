@@ -1,0 +1,27 @@
+\{A\cup X\ | \ X\in\mathscr{B}\}
+\mathscr{D}
+A\cup X\subseteq A\cup\bigcup\mathscr{B}
+\mathscr{D}
+\mathscr{P}(A\cup\bigcup\mathscr{B})
+ \{t\in\mathscr{P}(A\cup\bigcup\mathscr{B})\ |\ t=A\cup X\ \text{for some}\ X\in\mathscr{B}\}. 
+ \forall t_1\cdots\forall t_k\forall c\exists B\forall x(x\in B\Leftrightarrow x\in c \wedge [(x=t_1\cup t_2)\vee(x=t_1\cup t_3)\vee\cdots\vee(x=t_1\cup t_k)]) 
+A
+t_1
+\mathscr{P}(A\cup\bigcup\mathscr{B})
+c
+t_2,\dots,t_k
+\mathscr{B}
+ \forall t_1\forall t_2\forall t_3\forall c\exists B\forall x(x\in B\Leftrightarrow x\in c \wedge [\exists t_3\in t_2(x=t_1\cup t_3)]) 
+\mathscr{B}
+t_2
+\mathscr{D}
+B
+ \{t\in\mathscr{P}(A\cup\bigcup\mathscr{B})\ |\ t=A\cup X\ \text{for some}\ X\in\mathscr{B}\}. 
+ (\exists B)(\forall t) ( t \in B \Leftrightarrow t\in\mathscr{P}(A\cup\bigcup\mathscr{B}) \land (\exists X)[X \in \mathscr{B} \land (\forall s) (s \in t \Leftrightarrow s \in A \lor s \in X)]). 
+(\forall z)\phi(z)
+Y
+\phi(Y)
+C_1 = \mathscr{B}
+C_2 = A
+C = \mathscr{P}(A\cup\bigcup \mathscr{B}) 
+ (\forall C_1)(\forall C_2)(\forall C)(\exists B)(\forall t) ( t \in B \Leftrightarrow t\in C \land (\exists X)[X \in C_1 \land (\forall s) (s \in t \Leftrightarrow s \in C_2 \lor s \in X)]). 

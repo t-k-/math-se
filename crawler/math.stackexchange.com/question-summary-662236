@@ -1,0 +1,59 @@
+F_n = 3(F_{n-1} - F_{n-2}) + F_{n-3}
+F_0 = 0
+F_1 = 1
+F_2 = 4
+F_n = n^2
+F_n=n^2
+n.
+n=0,1,2,
+F_k=k^2
+k=n-1,n-2,n-3,
+F_{n-1}-F_{n-2}=(n-1)^2-(n-2)^2=\bigl((n-1)+(n-2)\bigr)\bigl((n-1)-(n-2)\bigr)=2n-3,
+F_n=3(F_{n-1}-F_{n-2})+F_{n-3}=6n-9+(n-3)^2=6n-9+n^2-6n+9=n^2.
+2F_{n-1}-F_{n-2}
+\star
+c
+\heartsuit
+n
+(\star)
+n=2
+c=4-2\cdot 1+0=2.
+F_{n-1}-F_{n-2}
+(\heartsuit)
+c=2
+n,
+2
+F_1-F_0=1,
+F_2-F_1=3,
+F_3-F_2=3,
+F_k-F_{k-1}=2k-1
+k\ge1.
+n\geq1,
+F_n-2F_{n-1}+F_{n-2}=F_{n-1}-2F_{n-2}+F_{n-3},
+F_n-2F_{n-1}+F_{n-2}=F_{n-1}-2F_{(n-1)-1}+F_{(n-1)-2}.\tag{$\star$}
+F_n-2F_{n-1}+F_{n-2}=c\tag{$\heartsuit$}
+F_n-F_{n-1}=F_{n-1}-F_{n-2}+2
+\sum_{k=0}^n(2k-1)=n^2
+A,B,C\in\mathbb{R} .
+F_n =A +Bn +Cn^2 
+F_n = n^2
+n \geq 0
+n=0,1,2
+F_0=0, F_1=1, F_2=4
+F_3
+F_3 = 3(F_2-F_1)+F_0 = 3(4-1)+0 = 9 = 3^2
+n=3
+k\geq 3
+F_i = i^2
+i \leq k
+F_{k+1} = (k+1)^2
+F_{k+1} = 3(F_k-F_{k-1})+F_{k-2}
+F_k = k^2, F_{k-1} = (k-1)^2, F_{k-2}=(k-2)^2
+\begin{align} F_{k+1} &= 3(k^2-(k-1)^2)+(k-2)^2 \\ &= 3[k^2-(k^2-2k+1)]+(k^2-4k+4) \\ &= 3(2k-1)+k^2-4k+4 \\  &= 6k-3+k^2-4k+4 \\ &= k^2+2k+1 = (k+1)^2 \end{align}
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{{\cal F}\pars{z} \equiv \sum_{n = 0}^{\infty}F_{n}z^{n}}
+ \sum_{n = 3}F_{n}z^{n} = 3\sum_{n = 3}^{\infty}F_{n-1}z^{n} - 3\sum_{n = 3}^{\infty}F_{n - 2}z^{n} + \sum_{n = 3}^{\infty}F_{n - 3}z^{n} 
+ {\cal F}\pars{z} - F_{0} - F_{1}z - F_{2}z^{2} = 3\sum_{n = 2}^{\infty}F_{n}z^{n + 1} - 3\sum_{n = 1}^{\infty}F_{n}z^{n + 2} + \sum_{n = 0}^{\infty}F_{n}z^{n + 3} 
+ {\cal F}\pars{z} - z - 4z^{2} = 3z\bracks{{\cal F}\pars{z} - z} - 3z^{2}{\cal F}\pars{z} + z^{3}{\cal F}\pars{z} 
+ {1 \over 1 - z} = \sum_{n = 0}^{\infty}z^{n}\,,\quad {1 \over \pars{1 - z}^{2}} = \sum_{n = 0}^{\infty}\pars{n + 1}z^{n}\,,\quad {1 \over \pars{1 - z}^{3}} = \half\sum_{n = 0}^{\infty}\pars{n + 1}\pars{n + 2}z^{n} 
+\color{#00f}{\large F_{n}} = \color{#00f}{\large n^{2}}

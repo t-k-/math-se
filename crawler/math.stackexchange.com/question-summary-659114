@@ -1,0 +1,13 @@
+x,y,w
+p(y\mid w)
+\begin{align}p(x,y) &= N(\mu_1, \Sigma_1)\\ p(x\mid w) &= N(\mu_2,\Sigma_2)\end{align},
+p(y|x)
+p(x|w)
+p(y\mid w) = \int p(y\mid x)p(x\mid w)\,dx,
+\Sigma_1=\pmatrix{\Sigma_{x} &\Sigma_{xy}\\ \Sigma_{yx} &\Sigma_{y}}, \;\mu_1=\pmatrix{\mu_x\\ \mu_y},
+p(x) = N(\mu_x,\Sigma_x),
+p(w) = N(\mu_w,\Sigma_w).
+y,w
+p(y\mid w)
+w
+p(y,w)=N(\pmatrix{\mu_y\\ \mu_w},\pmatrix{\Sigma_y &\Sigma_{yw}\\ \Sigma_{wy} &\Sigma_w})\text{ ?}

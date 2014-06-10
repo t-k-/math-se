@@ -1,0 +1,25 @@
+\large\int\limits_{{\pi  \over 4}}^{\arctan {1 \over 2}} {{\sqrt{\cos u}   \over {\sqrt {\sin u} }}du} 
+ \int \sqrt{\cot u}~ du 
+I_1=\int (\sqrt{\tan u}+\sqrt{\cot u})~du
+u=\arctan t^2
+du= \frac{2t}{1+t^4}dt
+I_1=2\int \frac{t(t+\frac{1}{t})}{1+t^4}dt=2\int \frac{1+\frac{1}{t^2}}{(t-\frac{1}{t})^2+2}dt
+t-\frac{1}{t}=z
+(1+\frac{1}{t^2})dt=dz
+I_1
+I_1=2\int \frac{1}{z^2+2}dz =\sqrt{2}\tan^{-1}\left(\frac{z}{\sqrt{2}}\right)+c=\sqrt{2}\tan^{-1}\left(\frac{\sqrt{\tan u}-\sqrt{\cot u}}{\sqrt{2}}\right)+C
+(t+1/t)^2-1
+t+1/t=z
+I_2
+I_2=\int (\sqrt{\tan u}-\sqrt{\cot u})du
+I_3=\int \sqrt{\cot u}du=\frac{I_1-I_2}{2}
+I_1=\frac{1}{\sqrt{2}}\int\frac{\cos u-\sin u}{\sqrt{(\cos u+\sin u)^2-1}}du
+I_2=\frac{1}{\sqrt{2}}\int\frac{\cos u+\sin u}{\sqrt{1-(\sin u-\cos u)^2}}du
+\cos u+\sin u
+z
+-\cos u+\sin u
+t
+\frac{d}{du}(\cos u+\sin u)=\sin u-\cos u
+\frac{d}{du}(\sin u-\cos u)=\cos u+\sin u
+I_1=\frac{1}{\sqrt{2}}\int \frac{dz}{\sqrt{z^2-1}}=\frac{1}{\sqrt{2}}\ln(z+\sqrt{z^2-1})+c_1\\=\frac{1}{\sqrt{2}}\ln(\cos u+\sin u+\sqrt{\sin 2u})+c_1
+I_2=\frac{1}{\sqrt{2}}\int\frac{dt}{\sqrt{1-t^2}}=\frac{1}{\sqrt{2}}\arcsin(t)+c_2=\frac{1}{\sqrt{2}}\arcsin(\sin u-\cos u)+c_2

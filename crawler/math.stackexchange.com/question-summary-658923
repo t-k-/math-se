@@ -1,0 +1,20 @@
+ \sum_{r=0}^{n}(r^{2}+1)r!=n(n+1)!
+ \sum_{r=0}^{n+1}(r^{2}+1)r!=\sum_{r=0}^{n}(r^{2}+1)r!+((n+1)^2+1)(n+1)!=
+=n(n+1)!+((n+1)^2+1)(n+1)!=
+=(n+1)!(n+((n+1)^2+1))=
+=(n+1)!(n+n^2+2n+1+1)=
+=(n+1)!(n^2+3n+2)=
+=(n+1)!(n+2)(n+1)=
+=(n+1)(n+2)!
+\sum_{r=1}^{n+1}(r^2+1)r!=\sum_{r=1}^n(r^2+1)r!+\left[(n+1)^2+1\right](n+1)!\stackrel{\text{Ind. Step}}=
+=n\color{red}{(n+1)!}+\left[(n+1)^2+1\right]\color{red}{(n+1)!}=\color{red}{(n+1)!}\left[n+(n+1)^2+1\right]=
+=(n+1)!\left[(n+1)(n+2)\right]=(n+1)(n+2)!\;\ldots
+\sum_{r=1}^k (r^2 + 1)r! = k(k+1)!
+\sum_{r=1}^{k+1} (r^2 + 1)r! = (k+1)(k+2)!
+\sum_{r=1}^{k+1} f(r) = \sum_{r=1}^{k} f(r) + f(k+1) \implies \sum_{r=1}^{k+1} (r^2 + 1)r! = \underbrace{\sum_{r=1}^{k} (r^2 + 1)r!}_{*} + \Big((k+1)^2 + 1\Big)(k+1)!
+n-1 \to n
+n-1
+\sum_{r=1}^n (r^2+1)r! = \sum_{r=1}^{n-1} (r^2+1)r! + (n^2+1)n!
+ (n-1)n! + (n^2+1)n! = n!(n^2+n+1-1) = n(n+1)n! = (n+1)!n
+n \to n+1
+n-1 \to n

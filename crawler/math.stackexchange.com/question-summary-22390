@@ -1,0 +1,99 @@
+y=C_0+C_1 x+C_2 x^2+C_3 x^3 + \ldots
+N
+M
+M+1
+M<=N
+x=0
+x_c
+y_2=K_0+K_1 x + K_2 x^2 + K_3 x^3 + \ldots
+y
+x_c
+y(x_c)=y_2(x_c)
+M
+C_i
+i=0 \ldots N
+x_c
+K_j
+j=0 \ldots M
+y=C_0+C_1 x+C_2 x^2
+N=2
+M=1
+x_c
+ y_2 = (C_0-C_2 x_c^2) + (C_1+2 C_2 x_c) x 
+K_0 = C_0-C_2 x_c^2
+K_1 =C_1+2 C_2 x_c
+M+1
+N+1
+C_i
+K_j
+ \begin{bmatrix}K_{0}\\ K_{1}\end{bmatrix}=\begin{bmatrix}1 & 0 & -x_{c}^{2}\\ 0 & 1 & 2\, x_{c}\end{bmatrix}\begin{bmatrix}C_{0}\\ C_{1}\\ C_{2}\end{bmatrix} 
+5
+3
+x_c
+ \begin{bmatrix}K_{0}\\ K_{1}\\ K_{2}\\ K_{3}\end{bmatrix}=\left[\begin{array}{cccc|cc} 1 &  &  &  & -x_{c}^{4} & -4\, x_{c}^{5}\\  & 1 &  &  & 4\, x_{c}^{3} & 15\, x_{c}^{4}\\  &  & 1 &  & -6\, x_{c}^{2} & -20\, x_{c}^{3}\\  &  &  & 1 & 4\, x_{c} & 10\, x_{c}^{2}\end{array}\right]\begin{bmatrix}C_{0}\\ C_{1}\\ C_{2}\\ C_{3}\\ C_{4}\\ C_{5}\end{bmatrix} 
+x
+(x-x_c)
+a
+x_c
+x
+\beta=[1,x,x^2,\ldots,x^N]
+N
+\gamma=[1,(x-a),(x-a)^2,\ldots,(x-a)^N]
+\gamma
+[1,(x-a),\ldots,(x-a)^M]
+M+1,\ldots,N
+P^N_M
+\gamma
+\beta
+P^N_M
+(M+1)\times (M+1)
+(N-M)\times(N-M)
+r
+(x+r)
+x
+x-a
+B_a
+(x-a)
+x
+u=x-a
+u
+u+a = u-(-a)
+B_{(-a)}
+(N+1)\times (N+1)
+(N+1)\times (N+1)
+(M+1)\times (N+1)
+N-M
+P_M
+N-M
+B_r = \left(\begin{array}{cccccc} 1 & r & r^2 & r^3 & \cdots & r^N\\\ 0 & 1 & 2r & 3r^2 & \cdots & \binom{N}{1}r^{N-1}\\\ 0 & 0 & 1 & 3r & \cdots & \binom{N}{2}r^{N-2}\\\ 0 & 0 & 0 & 1 & \cdots & \binom{N}{3}r^{N-3}\\\ \vdots & \vdots & \vdots & \ddots & \vdots\\\ 0 & 0 & 0 & 0 & \cdots & \binom{N}{N-1}r\\\ 0 & 0 & 0 & 0 & \cdots & 1 \end{array}\right).
+B_{(-a)}P^N_MB_a.
+C_0 + C_1x + \cdots +C_Nx^N
+K_0 + K_1x+\cdots +K_Nx^N
+\left(\begin{array}{c} K_0\\ K_1\\ \vdots\\ K_N\end{array}\right) = B_{(-a)}P_MB_a\left(\begin{array}{c} C_0\\ C_1\\ \vdots\\ C_N\end{array}\right).
+N=5
+M=3
+N=5
+B_{-a}P^5_3B_a
+M
+N
+P^N_M
+(N-M)\times(N-M)
+Q^N_M
+M
+N
+B_{-a}Q^N_MB_a
+B_{-a}P^N_MB_a
+Q^N_MB_a
+N-M
+P^N_MB_a
+M+1
+B_{-a}P^N_MB_a
+I-B_{-a}Q^N_MB_a
+N
+M
+M
+N
+Q^N_M
+P^N_M
+P^N_M = I_{N+1} - Q^N_M = \left(\begin{array}{ccccc} 1 & 0 & \cdots & 0 & 0\\\ 0 & 1 & \cdots & 0 & 0\\\ \vdots & \vdots & \ddots & \vdots & \vdots \\\ 0 & 0 & \cdots & 1 & 0\\\ 0 & 0 & \cdots & 0 & 1 \end{array}\right) - \left(\begin{array}{cccccc} 0 & 0 & \cdots & 0 & 0\\\ 0 & 0 & \cdots & 0 & 0\\\ \vdots & \vdots & \ddots & \vdots & \vdots\\\ 0 & 0 & \cdots & 1 & 0\\\ 0 & 0 & \cdots & 0 & 1 \end{array}\right).
+B_{-a}P^{N}_MB_a = B_{-a}(I-Q^N_M)B_a = (B_{-a}IB_a) - B_{-a}Q^N_MB_a = I-B_{-a}Q^{N}_MB_a.

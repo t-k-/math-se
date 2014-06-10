@@ -1,0 +1,23 @@
+\sum_{j=0}^k (-1)^j {\binom n j}=(-1)^k \binom{n-1}{k}
+\sum_n (\sum_{j=0}^k (-1)^j {\binom n j})x^n= \sum_{j=0}^k (-1)^j \sum_n {\binom n j}x^n
+=\sum_{j=0}^k (-1)^j \frac{x^j}{(1-x)^{j+1}}=\frac{1}{1-x} \sum_{j=0}^k (\frac{-x}{1-x})^j=1-(\frac{-x}{1-x})^{k+1}
+k
+k
+\{1, \dots, n-1\}
+k
+\{1,\dots,n\}
+n
+n
+j
+\{1,\dots,n-1\}
+j = k-1
+j
+\{1,\dots,n-1\}
+j
+\{1,\dots,n\}
+n
+{n-1\choose k} = {n\choose k} - \left[{n\choose k-1} -\left[{n\choose k-2} - \left[{n\choose k-3} - \dots\right]\right]\right]
+k
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\down}{\downarrow}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{\sum_{j=0}^{k}\pars{-1}^{j}{n \choose j} = \pars{-1}^{k}{n - 1 \choose k}:\ {\large ?}}
+\begin{align*} \binom{n-1}{k} &= \binom n k - \binom {n-1}{k-1}\\  &= \binom n k - \left(\binom {n}{k-1}- \binom {n-1}{k-2}\right)\\  &= \binom n k - \binom {n}{k-1} + \left(\binom {n}{k-2}-\binom {n-1}{k-3}\right)\\  &= \binom n k - \binom {n}{k-1} + \binom {n}{k-2}-\left(\binom {n}{k-3}-\binom{n-1}{k-4}\right)\\  &= \cdots\\  &= \sum_{j=0}^k (-1)^{\,j} {\binom n {k-j}}. \end{align*}

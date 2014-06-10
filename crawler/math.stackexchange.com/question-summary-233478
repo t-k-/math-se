@@ -1,0 +1,14 @@
+a
+c
+L^{-1}\{F(s)\}=f(t).
+\frac{s(c-F(s))}{s-a}
+ A(s)=\frac{s(c-F(s))}{s-a} = \frac{sc}{s-a}-\frac{sF(s)}{s-a}=c+\frac{ca}{s-a}-\frac{sF(s)}{s-a}
+\mathcal{L}\left[ g(t)  \right]   = G(s)= \frac{sF(s)}{s-a}  
+  \mathcal{L}[e^{-at}g(t)]=G(s+a)  
+  \mathcal{L}\left[\int_0^tg(t) dt \right]=\frac{G(s)}{s} 
+ \mathcal{L} \left[  e^{-at} g(t) \right] =\frac{(s+a)F(s+a)}{s}=F(s+a)+\frac{a}{s}F(s+a) 
+  e^{-at} g(t)= e^{-at} f(t)+a \int_0^t e^{-at} f(t) dt 
+ g(t)=  f(t)+a e^{at} \int_0^t e^{-at} f(t) dt 
+  \mathcal{L}[\delta(t)]=1  
+  \mathcal{L}[e^{at}]=\frac{1}{s-a} 
+ \mathcal{L^{-1}} \left[ \frac{s(c-F(s))}{s-a}  \right]=c \delta(t) + ca e^{at} -f(t)-a e^{at} \int_0^t e^{-at} f(t) dt 

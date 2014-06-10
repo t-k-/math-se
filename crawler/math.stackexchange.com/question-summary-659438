@@ -1,0 +1,5 @@
+a_{i,j}>0
+\begin{bmatrix} a_{1,1}&a_{1,2}&\cdots,&a_{1,n}\\ a_{21}&a_{2,2}&\cdots&a_{2,n}\\ \cdots&\cdots&\cdots&\cdots\\ a_{m,1}&a_{m,2}&\cdots&a_{m,n} \end{bmatrix}
+S^{(k)}_{i}=\sum_{1\le j_{1}<j_{2}<\cdots<j_{k}\le n}\prod_{v=1}^{k}a_{i,j_{v}}
+S^{(0)}_{i}=1,i,k\in\{1,2,3,\cdots,n\}
+\prod_{k=1}^{n}\left(\sum_{i=1}^{m}\dfrac{S^{(k)}_{i}}{S^{(k-1)}_{i}}\right)\le\prod_{i=1}^{n}\left(\sum_{k=1}^{m}a_{k,i}\right)

@@ -1,0 +1,13 @@
+v_n
+\mathbb{R}^n
+v_n = 2\,v_{n-1}\,\int_0^1{(1-t^2)^{(n-1)/2}\,dt}\,.
+\mathbb{R}^2
+4\,\int_0^1{\cdots \int_0^1{(1-x_1^2)^{1/2}\cdots (1-x_n^2)^{1/2}\,dx_n\cdots dx_1}}\,,
+v_n = \idotsint\limits_{\sum\limits_{i=1}^n{x_i^2}\le 1}{dx_1\cdots dx_n}\,.
+\int_{-1}^1{\left[\idotsint\limits_{\sum\limits_{i=1}^{n-1}{x_i^2}\le 1-x_n^2}{dx_1\cdots dx_{n-1}}\right]\,dx_n}\,.
+y_i=\dfrac{x_i}{\sqrt{1-x_n^2}}
+dy_i=\dfrac{dx_i}{\sqrt{1-x_n^2}}
+\sum\limits_{i=1}^{n-1}{y_i^2} = \sum\limits_{i=1}^{n-1}{\dfrac{x_i^2}{1-x_n^2}}\le 1
+x_n
+t
+\int_{-1}^1{\left[\idotsint\limits_{\sum\limits_{i=1}^{n-1}{y_i^2}\le 1}{\left(\sqrt{1-x_n^2}\right)^{n-1}\,dy_1\cdots dy_{n-1}}\right]\,dx_n} = 2\,\int_0^1{\left(\sqrt{1-x_n^2}\right)^{n-1}v_{n-1}\,dx_n}\,.

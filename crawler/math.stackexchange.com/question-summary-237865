@@ -1,0 +1,18 @@
+ \mathop\forall_{x \in {\mathbb N} \atop x \le 3037000499} \mathrm{round}\left(\sqrt{\mathrm{round}(x^2)}\right) = x 
+X := \sqrt{\mathrm{round}(x^2)}
+\mathrm{round}(X) = x
+x = M(x) \cdot 2^{E(x)}
+1 \le M(x) < 2
+E(x) \in \mathbb Z
+\Delta(x) = \frac{\mathrm{ulp}(x)}x = \frac{\mu \cdot 2^{E(x)}}x = \frac\mu{M(x)}
+X = \sqrt{(1+\epsilon) \cdot x^2} = \sqrt{(1+\epsilon)} \cdot x < \big( 1+\frac\epsilon2 \big) \cdot x
+\frac Xx < 1 + \frac{\Delta(x^2)}4 = 1 + \frac\mu{4 M(x^2)}
+M(x)
+M(x^2)
+[1, 4]
+\frac{M(x)}{M(x^2)} \le \sqrt2
+\frac Xx < 1 + \frac{\mu\sqrt2}{4 M(x)}
+X < x + \frac{\sqrt2}4 \frac{\mu}{M(x)} \cdot x < x + \frac12 \mathrm{ulp}(x)
+\sqrt{(1+\epsilon)} < \big( 1+\frac\epsilon2 \big)
+\sqrt{(1-\epsilon)} > \big( 1 - (1+\epsilon) \cdot \frac\epsilon2 \big)
+\sqrt2/4<\frac12

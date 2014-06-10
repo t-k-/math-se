@@ -1,0 +1,17 @@
+f : \mathbb R \to \mathbb R
+\lvert f(x) \rvert \le 1
+f(0) = 1
+f(x) = \operatorname{sinc} x = \frac{1}{x} \sin x
+\begin{align}F(x) &= f(x) f(x/2) f(x/4) f(x/8) \cdots \\ &= \prod_{i=0}^\infty f(x/2^i)?\end{align}
+g
+g(x) * 2g(2x) * 4g(4x) * 8g(8x) * \cdots
+f(x)
+ \log F(x) = \sum_{i=0}^\infty \log f(x/2^i)
+\log f(x)
+ \log f(x) = \sum_{k=1}^\infty a_k x^k
+f(0) = 1
+a_0
+\log f(x)
+ \log F(x) = \sum_{k=1}^\infty a_k (\sum_{i=0}^\infty 2^{-ik}) x^k
+\sum_{i=0}^\infty 2^{-ik} = 1/(1 - 2^{-k})
+2

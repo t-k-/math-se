@@ -1,0 +1,55 @@
+\theta
+F_{X(n)}(a) = [F_{X}(a)]^n
+F_{X(1)}(a) = 1 - [1 - F_X(a)]^n
+Z
+F_{X_{(n)} } (z) = [F_X (z)]^n = (\frac{z}{\theta })^n
+0 \leq z \leq \theta
+Z
+f_Z
+Y
+F_{X_{(1)} } (y) = 1 - [1-F_X (y)]^n = 1 - [1 - \frac{y}{\theta }]^n
+ 0 \leq y \leq \theta
+Y
+f_Y
+ {\rm P}(Z \le z) = \sum\limits_{n = 1}^\infty  {{\rm P}(Z \le z|N = n){\rm P}(N = n)}  = \sum\limits_{n = 1}^\infty  {F_{X_{(n)} } (z)\frac{1}{{n!({\rm e} - 1)}}}.  
+ {\rm P}(Z \le z) = \frac{1}{{{\rm e} - 1}}\sum\limits_{n = 1}^\infty  {\frac{{( z/\theta)^n }}{{n!}}}  = \frac{1}{{{\rm e} - 1}}({\rm e}^{z/\theta}  - 1). 
+ f_Z (z) = \frac{1}{{({\rm e} - 1)\theta }}{\rm e}^{ z/\theta}, \;\; 0 < z < \theta.  
+ {\rm P}(Y \le y) = \sum\limits_{n = 1}^\infty  {{\rm P}(Y \le y|N = n){\rm P}(N = n)}  = \sum\limits_{n = 1}^\infty  {F_{X_{(1)} } (y)\frac{1}{{n!({\rm e} - 1)}}}.  
+ {\rm P}(Y \le y) = \sum\limits_{n = 1}^\infty  {\frac{{1 - [1 - y/\theta ]^n }}{{n!({\rm e}-1)}}}  = 1 -  \sum\limits_{n = 1}^\infty  {\frac{{(1 - y/\theta )^n }}{{n!({\rm e}-1)}}}  = 1 - \frac{{{\rm e}^{1 - y/\theta }  - 1}}{{{\rm e} - 1}}. 
+ f_Y (y) = \frac{1}{{({\rm e} - 1)\theta }}{\rm e}^{ 1 - y/\theta}, \;\; 0 < y < \theta.  
+Y
+Z
+y\le z
+[y\le Y,Z\le z]
+y
+z
+n
+P(y\le Y,Z\le z)
+P(y\le X\le z)^n
+N
+(Y,Z)
+P(y\le Y,Z\le z)
+y
+z
+Y
+P(y\le Y,Z\le z)
+y
+z\to+\infty
+Z
+P(y\le Y,Z\le z)
+z
+y\to-\infty
+(0,\theta)
+0\le y\le z\le\theta
+(Y,Z)
+(y,z)
+Y
+Z
+(0,\theta)
+ P(y\le Y,Z\le z)=\sum_{n\ge1}P(N=n)P(y\le X\le z)^n=c(\mathrm{e}^{P(y\le X\le z)}-1), 
+ c=1/(\mathrm{e}-1). 
+ P(Y\in\mathrm{d}y,Z\in\mathrm{d}z)=c\mathrm{e}^{P(y\le X\le z)}P(X\in\mathrm{d}y)P(X\in\mathrm{d}z). 
+ P(Y\in\mathrm{d}y)=c\mathrm{e}^{P(X\ge y)}P(X\in\mathrm{d}y). 
+ P(Z\in\mathrm{d}z)=c\mathrm{e}^{P(X\le z)}P(X\in\mathrm{d}z). 
+ f_{Y,Z}(y,z)=(c/\theta^{2})\mathrm{e}^{(z-y)/\theta}. 
+ f_Y(y)=(c\mathrm{e}/\theta)\mathrm{e}^{-y/\theta}, \quad f_Z(z)=(c/\theta)\mathrm{e}^{z/\theta}. 

@@ -1,0 +1,47 @@
+\frac{k_1}{(k_2 x^2+k_3 x+k_4)^n}
+k_2>0
+0
+n
+n
+k_1
+1
+n=1
+n>1
+\int_{-\infty}^\infty \frac{k_1 x\,dx}{(k_2 x^2+k_3 x+k_4)^n}
+\int_{-\infty}^\infty \frac{dx}{x^4+1},
+n>0
+I_n=\int_{-\infty}^\infty \dfrac{dx}{(x^2+1)^n}
+I_n=\dfrac{\pi}{2^{2n-2}}\binom{2n-2}{n-1}.
+(x+i)^n(x-i)^n
+f(x)
+-i
+i
+-R
+R
+R
+R
+-R
+z=i
+R\to\infty
+I_n=2\pi i\, \textrm{Res}_{z=i} f(z).
+2\pi i
+I_n
+\begin{eqnarray} \textrm{Res}_{z=i} f(z) &=& \lim_{z\to i}\dfrac{1}{(n-1)!}\dfrac{d^{n-1}}{dz^{n-1}}\left((z-i)^n f(z)\right)\\ &=& \dfrac{1}{(n-1)!}\dfrac{d^{n-1}}{dz^{n-1}} (z+i)^{-n}\big|_{z=i}\\ &=& \dfrac{1}{(n-1)!} (-n)(-n-1)\cdots(-2n+2) (2i)^{-2n+1}\\ &=& \binom{2n-2}{n-1} \dfrac{-i}{2^{2n-1}}.\\ \end{eqnarray}
+n\gt1
+k_2\ne0
+k_2=0
+P(x)=k_2x^2+k_3x+k_4
+P'(x)=2k_2x+k_3
+\displaystyle\int_{-\infty}^{+\infty}\frac{k_1}{P(x)^n}\mathrm dx=1
+\displaystyle\int_{-\infty}^{+\infty}\frac{P'(x)}{P(x)^n}\mathrm dx=-\frac1{n-1}\left.\frac1{P(x)^{n-1}}\right|_{-\infty}^{+\infty}=0
+n\gt1
+x^2
+(P(x),P'(x),1)
+n\gt\frac32
+\sum\limits_{n\geqslant1}t^nI_n
+I_n
+t^n
+ \frac{k_1x}{P(x)^n}=\frac{k_1}{2k_2}\frac{P'(x)}{P(x)^n}-\frac{k_3}{2k_2}\frac{k_1}{P(x)^n}. 
+ \int_{-\infty}^{+\infty}\frac{k_1x}{P(x)^n}\mathrm dx=-\frac{k_3}{2k_2}. 
+ I_{n-1}=\int_{-\infty}^{+\infty}\frac{\mathrm dx}{P(x)^{n-1}}. 
+ \int_{-\infty}^{+\infty}\frac{t\,\mathrm dx}{P(x)-t}, 

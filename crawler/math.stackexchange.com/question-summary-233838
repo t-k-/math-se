@@ -1,0 +1,22 @@
+\lim_{n\to \infty} x_n= x
+ \lim_{n\to \infty}\frac{1}{n} \sum_{k=1}^n x_k =x
+\epsilon>0
+N
+n\geq N
+|x_n-x| < \frac{\epsilon}{2}
+N'\geq N
+n\geq N'
+\frac{1}{n} \sum_{k=1}^N |x_n-x| < \frac{\epsilon}{2}
+n\geq N'
+|\frac{1}{n} \sum_{k=1}^n (x_n-x)| \leq \frac{1}{n} \sum_{k=1}^n |x_n-x| \leq \frac{1}{n} \sum_{k=1}^N |x_n-x| + \frac{1}{n} \sum_{k=N+1}^n |x_n-x| < \frac{\epsilon}{2}+n\frac{1}{n}\frac{\epsilon}{2}= \epsilon
+\lim_{n\to\infty} \frac{1}{n} \sum_{k=1}^n (x_n-x) = 0
+x_n \to x
+\epsilon > 0
+N(\epsilon)
+n > N(\epsilon)
+\vert x_n - x \vert < \epsilon/2
+n > N(\epsilon)
+n
+\epsilon > 0
+\left \vert \dfrac{x_1 + x_2 + \cdots + x_n}{n} - x \right \vert\\ = \left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x) + (x_{N+1}-x) + \cdots + (x_n-x)}{n}  \right \vert\\ = \left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x)}{n} + \dfrac{(x_{N+1}-x) + \cdots + (x_n-x)}{n}  \right \vert\\ \leq \left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x)}{n} \right \vert + \left \vert \dfrac{(x_{N+1}-x) + \cdots + (x_n-x)}{n}  \right \vert\\ \leq \left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x)}{n} \right \vert + \dfrac{\left \vert (x_{N+1}-x) \right \vert + \cdots + \left \vert (x_n-x) \right \vert }{n}\\ \leq \left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x)}{n} \right \vert + \dfrac{\epsilon + \cdots + \epsilon }{2n}\\ = \underbrace{\left \vert \dfrac{(x_1-x) + (x_2-x) + \cdots + (x_N - x)}{n} \right \vert}_{\text{Choose $n$ large enough such that this quantity is less than } \epsilon/2} + \dfrac{(n-N) \epsilon }{2n}\\ \leq \dfrac{\epsilon}2 + \dfrac{\epsilon}2 = \epsilon 
+\lim_{n \to \infty} \dfrac{\displaystyle \sum_{k=1}^n x_k}n = x

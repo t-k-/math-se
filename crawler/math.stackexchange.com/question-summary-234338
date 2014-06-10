@@ -1,0 +1,31 @@
+\lim_{n\rightarrow\infty} \int_{-\pi}^\pi x^2 \frac{\sin(2nx)}{\sin x} dx
+-\pi^3
+x^2
+x^4
+-\pi^5
+^{(1)}
+\sum_{k=1}^n\cos(2k-1)x=\frac{\sin 2nx}{2\sin x}
+\int_{-\pi}^{\pi}x^2\cos(2k-1)xdx
+\int_{ - \pi }^\pi  {{x^2}} \cos \left( {2k - 1} \right)xdx =  - \frac{{4\pi }}{{{{\left( {2k - 1} \right)}^2}}}
+\mathop {\lim }\limits_{n \to \infty } \int_{ - \pi }^\pi  {{x^2}} \frac{{\sin \left( {2nx} \right)}}{{\sin x}}xdx =  - 8\pi \sum\limits_{k \geqslant 1} {\frac{1}{{{{\left( {2k - 1} \right)}^2}}}}  =  - 8\pi \frac{{{\pi ^2}}}{8} =  - {\pi ^3}
+(1)
+\frac{{\sin \left( {a + b} \right) - \sin \left( {a - b} \right)}}{2} = \sin b\cos a
+\sin x\cos \left( {2k - 1} \right)x = \frac{{\sin 2kx - \sin \left( {2k - 2} \right)x}}{2}
+\sum\limits_{k = 1}^n {\cos \left( {2k - 1} \right)x}  = \frac{{\sin 2nx}}{{2\sin x}}
+(-\pi,\pi)
+[-\pi,\pi]
+\pm \pi
+0
+n
+z=e^{ix}
+\cos x = \frac12(z+z^{-1})
+dx = \frac{dz}{iz}
+\sin x = \frac{1}{2i}(z-z^{-1})
+\sin (2nx) = \frac{1}{2i} (z^{2n}-z^{-2n})
+a_{-1}=-2
+z^{-1}
+ f(x) = \frac{x^2}{\sin x} \quad \text{ and } \quad g(x) = \frac{\pi^2}{2} \frac{1-\cos x}{\sin x} 
+ h(x) = f(x)-g(x) =  \frac{x^2 - \frac{\pi^2}2(1-\cos x)}{\sin x}
+ \lim_{n\to\infty} \int_{-\pi}^\pi h(x) \sin (2nx) \, dx = 0, 
+ \lim_{n\to\infty} \int_{-\pi}^\pi f(x) \sin (2nx) \, dx = \lim_{n\to\infty} \int_{-\pi}^\pi g(x) \sin (2nx) \, dx 
+  \begin{align*} \frac{\pi^2}{2} \int_{|z|=1|} & \frac{1-\frac12 (z+z^{-1})}{\frac1{2i}(z-z^{-1})}\frac{z^{2n}-z^{-2n}}{2i} \frac{dz}{iz} = \frac{\pi^2}{4i} \int_{|z|=1} \frac{2-z-z^{-1}}{z^{2n}} \frac{z^{4n}-1}{z^2-1}\, dz \\ &=\frac{\pi^2}{4i} \int_{|z|=1} \frac{2-z-z^{-1}}{z^{2n}} (1+z^2+z^4\ldots + z^{4n-2}) \, dz \\ &=\frac{\pi^2}{4i} \int_{|z|=1} (2-z-z^{-1}) (z^{-2n}+z^{-2n+2}+z^{-2n+4}\ldots + z^{2n-2}) \, dz \\ &= \frac{\pi^2}{4i} 2\pi i a_{-1} = \frac{\pi^3}{2} a_{-1} = \frac{\pi^3}{2}(-2) = -\pi^3 \end{align*} 

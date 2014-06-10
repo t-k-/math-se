@@ -1,0 +1,31 @@
+(p\land(p\implies q))\implies q
+(p\land(\lnot p \lor q))\implies q
+(p\land \lnot p) \lor (p\land q) \implies q
+(p\land \lnot p)
+\implies
+(p\land q)
+\lor (p\land q) \implies q
+(p\land q) \implies q
+(p\land q) \implies q
+\lnot(p \land q) \lor (p \land q)
+p\implies q \equiv \lnot p \lor q
+a\to b
+\lnot a\lor b
+(p\land q)\to q
+\lnot(p\land q)\lor q
+\lnot(p\land q)
+\lnot p\lor \lnot q
+ \begin{align} (p\land(p\rightarrow q))\rightarrow q &\Longleftrightarrow (p\land(\neg p\lor q))\rightarrow q\\  &\Longleftrightarrow ((p\land \neg p)\lor (p\land q))\rightarrow q\\  &\Longleftrightarrow (F\lor (p\land q))\rightarrow q & \text{Negation law}\\  &\Longleftrightarrow \neg(F\lor (p\land q))\lor q\\  &\Longleftrightarrow (T\land \neg(p\land q))\lor q \\  &\Longleftrightarrow (T\land(\neg p\lor \neg q))\lor q  &\text{DeMorgan's law}\\  &\Longleftrightarrow (\neg p\lor \neg q)\lor q &\text{Domination law}\\  &\Longleftrightarrow \neg p\lor (\neg q\lor q) \\  &\Longleftrightarrow \neg p\lor T\\  &\Longleftrightarrow T\\ \end{align} 
+A
+B
+A\to B
+\backslash\!\!\!\!\!{A}
+\overline{B}
+\overline{A\to B}
+A\wedge B
+A
+B
+A\wedge B
+\overline{\qquad A \qquad}
+A\wedge B
+\overline{\qquad B \qquad}

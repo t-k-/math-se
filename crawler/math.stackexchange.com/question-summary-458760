@@ -1,0 +1,9 @@
+f(x)=\sum_{n=1}^{\infty}{\sin(nx)\over n^2}
+ \lim_{x \to 0} \sum \frac{\sin{(nx)}}{n^2} = \sum \lim_{x \to 0} \frac{\sin{(nx)}}{n^2} = \sum\frac{0}{n^2} = 0.
+\varepsilon >0
+N
+\left |\sum_{k=N+1}^\infty \frac {\sin{(nx)}} {n^2} \right |<\varepsilon, \,\,\,\, \forall x \in \mathbb{R}.
+\delta
+|\sin{(Nx)}| <\frac{\varepsilon}{N}, \,\,\, \forall x\in (-\delta, \delta).
+x
+ \left | \sum_{k=1}^\infty \frac {\sin{(nx)}} {n^2} \right | = \left | \sum_{k=1}^N \frac {\sin{(nx)}} {n^2} \right | + \left |\sum_{k=N+1}^\infty \frac {\sin{(nx)}} {n^2}\right |< N \frac{\varepsilon}{N} + \varepsilon = 2\varepsilon.

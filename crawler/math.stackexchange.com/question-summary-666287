@@ -1,0 +1,16 @@
+f:X\to [0,\infty)
+=>
+ \mu(\{x\in X:n\leq f(x)\})\leq\frac{1}{n}\int_Xf(x)\,d\mu
+En=\{x\in X:n\leq f(x)\leq n+1\}
+\int_Xf(x)\,d\mu=\sum\limits_{n=0}^\infty \int_{En} f(x)\,d\mu
+\mu(X)<\infty
+F_n
+\bigcup_{n\in\mathbb N}F_n=X
+\sum_{n=1}^\infty \mu(F_j)=\mu(X)
+\mu(X)<\infty
+ E_n=\{x:f(x)\ge n\}, \,\,\,F_n=\{x\in X: n-1\le f(x)< n\} 
+ E_n=\bigcup_{j\ge n+1}F_j\quad\text{and}\quad \mu(E_n)=\sum_{j=n+1}^\infty\mu(F_j),  
+ \sum_{n=0}^\infty \mu(E_n)=\sum_{n=1}^\infty n\,\mu(F_n). 
+ n\,\mu(F_n)\ge\int_{F_n}f\,d\mu \ge (n-1)\,\mu (F_n), 
+ \sum_{n=1}^\infty n\,\mu(F_n)\ge\sum_{n=1}^\infty \int_{F_n}f\,d\mu \ge \sum_{n=1}^\infty (n-1)\,\mu (F_n), 
+ \sum_{n=1}^\infty \mu(E_n)\ge\int_{X}f\,d\mu \ge \sum_{n=1}^\infty \mu(E_n)-\sum_{n=1}^\infty \mu (F_n)=\sum_{n=1}^\infty \mu(E_n)-\mu (X), 

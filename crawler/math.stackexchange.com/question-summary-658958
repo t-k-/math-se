@@ -1,0 +1,36 @@
+(X_n)
+[0,1]
+0<x\le 1
+\mathbb{E}N(x)
+D^2 N(x)
+N(x):=\inf\{n:X_1+\dots+X_n\ge x\}.
+\mathbb{P}(N(x)\ge n)=\frac{x^{n-1}}{(n-1)!}.
+X_1
+x
+(0,1)
+N(x)=1+N'(x-X_1)
+X_1\lt x
+N(x)=1
+X_1\geqslant x
+N'
+N
+X_1
+N(x)
+P(N(x)\geqslant1)=1
+x
+n\geqslant1
+u_n:x\mapsto P(N(x)\geqslant n)
+u_1(x)=1
+n\geqslant1
+u_{n+1}(0)=0
+u_{n+1}'(x)=u_n(x)
+N(x)
+ P(N(x)\geqslant n+1)=P(N(x)\geqslant n+1;X_1\lt x)=\int_0^xP(N(x-t)\geqslant n)\,\mathrm dt, 
+N(x)
+M
+ E(M)=\sum_{n\geqslant1}P(M\geqslant n),\qquad E(M(M+1))=\sum_{n\geqslant1}2nP(M\geqslant n). 
+P(N(x)\ge n| N(x) \ge n-1)=\frac{P(N(x)\ge n)}{P(N(x)\ge n-1)}
+P(N(x)\ge 1)=1=\frac{x^{1-1}}{(1-1)!}
+P(N(x)\ge n-1)=\frac{x^{n-2}}{(n-2)!}
+P(N(x)\ge n)=P(N(x)\ge n| N(x) \ge n-1) \cdot P(N(x)\ge n-1)=\\P(N(x)\ge n| N(x) \ge n-1) \cdot\frac{x^{n-2}}{(n-2)!}
+P(N(x)\ge n| N(x) \ge n-1)=\frac{x}{n-1}

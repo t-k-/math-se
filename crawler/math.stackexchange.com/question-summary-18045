@@ -1,0 +1,25 @@
+(0,2\pi)
+0\le a_0<\dots<a_n
+p(z)=a_0+a_1z+\dots+a_nz^n
+\frac{p(z)(z-1)}{z^{n+1}} = a_n  + \sum_{k=0}^{n-1} \frac{a_k - a_{k+1}}{z^{n-k}} - \frac{a_0}{z^{n+1}} = a_n  - \sum_{k=0}^{n-1} \frac{a_{k+1} - a_k}{z^{n-k}} - \frac{a_0}{z^{n+1}} 
+\displaystyle \left|\frac{p(z)(z-1)}{z^{n+1}}\right| \ge a_n  - \sum_{k=0}^{n-1} \frac{a_{k+1} - a_k}{|z^{n-k}|} - \frac{a_0}{|z^{n+1}|}
+\displaystyle |z_1 - z_2| \ge |z_1| - |z_2|
+\displaystyle |z| \gt 1
+\displaystyle -\frac{a_{k+1} - a_k}{|z^{n-k}|} \gt -(a_{k+1} - a_k)
+\displaystyle -\frac{a_0}{|z^{n+1}|} \gt - a_0
+\displaystyle \left|\frac{p(z)(z-1)}{z^{n+1}}\right| \gt a_n  - \sum_{k=0}^{n-1} (a_{k+1} - a_k) - a_0 = 0
+\displaystyle |z| \gt 1
+\displaystyle |p(z)| \neq 0
+\displaystyle p(z)
+\displaystyle |z| \le 1
+g(z) = p(z)(1-z) + a_n z^{n+1}  = a_0 + \sum_{k=0}^{n-1} (a_{k+1} - a_k) z^{k+1}
+\displaystyle c > 0
+\displaystyle z
+|g(z)| \le a_0 + \sum_{k=0}^{n-1} (a_{k+1} - a_k) = a_n \lt |(a_n + c)z^{n+1}|
+\displaystyle c > 0
+\displaystyle  p(z)(1-z) - c z^{n+1}
+\displaystyle w
+\displaystyle |w| \lt 1
+\displaystyle c \to 0
+\displaystyle p(z)(1-z)
+\displaystyle |z| \le 1

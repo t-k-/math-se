@@ -1,0 +1,20 @@
+P(x)
+s
+k
+x^s
+P(x)^k
+[P(x)^k]_{x^s}
+10
+t
+10
+t
+w_t = l_{t-1} - l_t
+l_t = 0
+t \geq 10
+ P(x) = \frac{x + 2x^2 + 2x^4 + x^6}{6}. 
+w_t = \sum_{s \geq 10} [P(x)^t]_{x^s} - \sum_{s \geq 10} [P(x)^{t-1}]_{x^s};
+w_t = \sum_{s < 10} [P(x)^{t-1}]_{x^s} - \sum_{s < 10} [P(x)^t]_{x^s}.
+l_t = \sum_{s < 10} [P(x)^t]_{x^s}.
+\sum_{t \geq 1} l_t w_t.
+\sum_{t \geq 1} w_t l_{t-1}.
+\sum_{t \geq 1} 2t l_t w_t + (2t-1) w_t l_{t-1}.

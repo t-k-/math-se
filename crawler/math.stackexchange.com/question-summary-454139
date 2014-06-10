@@ -1,0 +1,9 @@
+\displaystyle P_n:=\prod_{k=1}^n \cos\frac{\pi}{k+2}
+\displaystyle\lim_{n\to \infty} P_n
+\vartheta_k:=\pi/(k+2)
+\log P_n=\sum_{k=1}^n \log\cos\vartheta_k
+P_n>e^{-\pi^2}
+\log\cos\vartheta_k=-\frac{1}{2}\log(1+\tan^2\vartheta_k)>-\frac{1}{2}\tan^2\vartheta_k=-\frac{1}{2}\frac{\sin^2\vartheta_k}{\cos^2\vartheta_k}>-2\vartheta_k^2.
+\log P_n>-2\pi^2\sum_{k=1}^n \frac{1}{(k+2)^2}>-2\pi^2\int_2^{\infty}\frac{dx}{x^2}=-\pi^2
+\sin x
+\cos x

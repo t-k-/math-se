@@ -1,0 +1,46 @@
+\sum\limits_{k=1}^{n} k^m
+m+1
+n
+\Delta
+(\int f)(n) = \sum_{k=0}^{n-1} f(k)
+(\int \Delta f)(n) = f(n) - f(0)
+V_d \to V_{d-1}
+V_d
+f(0) = 0
+V_{d-1}
+\sum n^m
+m
+f(n)
+f(n) = \sum_{k \ge 0} \Delta^k f(0) {n \choose k}
+\sum_{k=0}^n k^m 
+(n+1)^{m+1} = \sum_{k=0}^n (k+1)^{m+1}- \sum_{k=0}^n k^{m+1}
+ = { m+1 \choose 1} \sum_{k=0}^n k^m + { m+1 \choose 2} \sum_{k=0}^n k^{m-1} + \cdots 
+\sum_{k=0}^n k^m 
+{ m+1 \choose 1} \sum_{k=0}^n k^m = (n+1)^{m+1} - { m+1 \choose 2} \sum_{k=0}^n k^{m-1} - { m+1 \choose 3} \sum_{k=0}^n k^{m-2} + \cdots 
+\displaystyle f(x) = x^m
+ \sum_{k=0}^{n} f(k) = \int_{0}^{n} f(x)\ \text{d}x + \frac{n^m}{2} + \sum_{j=0}^{\infty} \frac{B_{2j}}{(2j)!} (f^{(2j-1)}(n) - f^{(2j-1)}(0))
+\displaystyle B_j
+\displaystyle f^{(j)}(x)
+\displaystyle j^{th}
+\displaystyle f
+\displaystyle f(x)
+ \sum_{j=0}^{\infty} \frac{B_{2j}}{(2j)!} (f^{(2j-1)}(n) - f^{(2j-1)}(0))
+\displaystyle 2j-1 \gt m
+\displaystyle \sum_{k=0}^{m} k^m
+\displaystyle n
+m+1
+T(m,i)
+ \sum_{k=1}^n k^m = \sum_{i=0}^{m-1} T(m,i) \binom{n+i+1}{m+1}
+\binom{n+i+1}{m+1}
+m+1
+n
+ \sum_{k=1}^n k^m 
+G_m(n) = \sum_{k=1}^n k^m
+G_m(n)
+m+1
+G_1
+2
+1/2
+\sum_{k=1}^n [G_{1}(k)-G_1(k-1)] k^m  = [G_1(n+1)(n+1)^m - G_1(1)(1)^m] - \sum_{k=1}^n G_1(k)[(k+1)^m-k^m]
+G_{m+1}(n) = \left[\frac{(n+1)(n+2)}{2}(n+1)^m - 1 \right] - \sum_{k=1}^n \frac{k(k+1)}{2}[(k+1)^m-k^m].
+\sum_{k=1}^n G_1(k)[(k+1)^m-k^m] = \frac{1}{2} G_{m+1}(n) + \sum_{j=1}^m a_j G_j(n).

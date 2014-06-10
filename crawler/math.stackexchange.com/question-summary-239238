@@ -1,0 +1,13 @@
+x:X.\; (P \land Q) \;\dashv\; \vdash \; \lnot \exists x: X.\; \lnot (\lnot P \lor \lnot Q)
+P
+Q
+x
+\forall
+\lnot \exists
+*
+\forall a:X(\text{blah})\iff \lnot \exists a:X(\lnot\text{blah}).\tag{$*$}
+\text{Premise:}\quad \forall x:X\; \lnot (P \land Q)\tag{p}.
+\forall x:X \;\lnot (P \land Q) \iff \forall x:X\;(\lnot P \lor \lnot Q)\tag{1.1}
+\iff \lnot \lnot \left(\forall x:X \;(\lnot P \lor \lnot Q)\right)\tag{1.2}
+\iff \lnot \exists x:X \;\lnot( \lnot P \lor \lnot Q))\tag{1.3}
+P | Q | (P\wedge Q)| ¬(P\wedge Q) \\t | t | t | f \\t | f | f | t \\f | t | f | t \\f | f | f | t

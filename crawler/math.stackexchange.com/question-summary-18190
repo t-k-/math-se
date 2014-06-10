@@ -1,0 +1,11 @@
+b_2 c_2 = \frac{1}{2}
+e = b_2 h (f(x_n, y_n) - f(x_n + c_2 h, y_n + c_2 h k_1)) + \frac{h^2}{2}*f^\prime(x_n, y_n) +\ldots
+f
+(x_n, y_n)
+f(x, y) = f(x_0, y_0) + \frac{\partial}{\partial x}f(x_0, y_0)\frac{(x-x_0)}{1!} + \frac{\partial}{\partial y}f(x_0, y_0)\frac{(y-y_0)}{1!} + ... 
+f(x_n + c_2 h, y_n + c_2 h k_1) = f(x_n, y_n) + \frac{\partial}{\partial x}f(x_n, y_n)\frac{(c_2 h)}{1!} + \frac{\partial}{\partial y}f(x_n, y_n)\frac{(c_2 h k_1)}{1!} + O(h^2)
+c_2
+f(x_n + c_2 h, y_n + c_2 h k_1) - f(x_n, y_n) = \frac{\partial}{\partial x}f(x_n, y_n)\frac{h}{2 b_2} + \frac{\partial}{\partial y}f(x_n, y_n)\frac{h k_1}{2 b_2} + O(h^2)
+e = \frac{h^2}{2} (-\frac{\partial}{\partial x}f(x_n, y_n) - \frac{\partial}{\partial y}f(x_n, y_n)k_1) + \frac{h^2}{2}*f^\prime(x_n, y_n) + O(h^3)
+f^\prime
+\frac{\partial}{\partial x}f

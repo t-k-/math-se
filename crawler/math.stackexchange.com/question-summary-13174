@@ -1,0 +1,93 @@
+m
+a, b, c, x, y, z
+\begin{aligned} w_1+w_2+w_3&=m_0\\ w_1 x_1+w_2 x_2+w_3 x_3&=m_1\\ w_1 x_1^2+w_2 x_2^2+w_3 x_3^2&=m_2\\ w_1 x_1^3+w_2 x_2^3+w_3 x_3^3&=m_3\\ w_1 x_1^4+w_2 x_2^4+w_3 x_3^4&=m_4\\ w_1 x_1^5+w_2 x_2^5+w_3 x_3^5&=m_5 \end{aligned}
+x_i
+w_i
+a_k
+b_k
+P_{k+1}(u)=(u-a_k)P_k(u)-b_k P_{k-1}(u)\quad P_{-1}(u)=0,P_0(u)=1
+m_j
+\sigma_{-1,l}=0,\quad l=1,\dots,2n-2
+\sigma_{0,l}=m_l,\quad l=0,\dots,2n-1
+a_0=\frac{m_1}{m_0}
+b_0=m_0
+\sigma_{k,l}=\sigma_{k-1,l+1}-a_{k-1}\sigma_{k-1,l}-b_{k-1}\sigma_{k-2,l}
+l=k,\dots,2n-k+1
+k=1,\dots,n-1
+k=1,\dots,n-1
+a_k=\frac{\sigma_{k,k+1}}{\sigma_{k,k}}-\frac{\sigma_{k-1,k}}{\sigma_{k-1,k-1}}
+b_k=\frac{\sigma_{k,k}}{\sigma_{k-1,k-1}}
+m_j=j!
+n=3
+\displaystyle x,y,z
+\displaystyle t^3 + pt^2 + qt + r = 0
+\displaystyle x^3 + px^2 + qx + r = 0
+\displaystyle y^3 + py^2 + qy + r = 0
+\displaystyle z^3 + pz^2 + qz + r = 0
+\displaystyle a
+\displaystyle b
+\displaystyle c
+\displaystyle m_3 + p m_2 + q m_1 + rm_0 = 0
+\displaystyle ax
+\displaystyle by
+\displaystyle cz
+\displaystyle m_4 + pm_3 + qm_2 + rm_1 = 0
+\displaystyle ax^2
+\displaystyle by^2
+\displaystyle cz^2
+\displaystyle m_5 + pm_4 + qm_3 + rm_2 = 0
+\displaystyle p,q,r
+\displaystyle x,y,z
+\displaystyle a,b,c
+a
+b
+c
+x
+y
+z
+m_0
+m_1
+m_2
+x
+y
+z
+x+y+z
+xy+xz+yz
+xyz
+x
+y
+z
+a
+b
+c
+\begin{eqnarray} p_0 &=& a+b+c-m_0\\ p_1 &=& a x + b y + c z - m_1\\ p_2 &=& a x^2 + b y^2 + c z^2 - m_2\\ p_3 &=& a x^3 + b y^3 + c z^3 - m_3\\ p_4 &=& a x^4 + b y^4 + c z^4 - m_4\\ p_5 &=& a x^5 + b y^5 + c z^5 - m_5 \end{eqnarray}
+\begin{eqnarray} r_0 &=& {\tt Resultant[} p_0, p_1, a {\tt ]} = -m_1 - b x - c x + m_0 x + b y + c z\\ r_1 &=& {\tt Resultant[} p_0, p_2, a {\tt ]} = -m_2 - b x^2 - c x^2 + m_0 x^2 + b y^2 + c z^2 \\ r_2 &=& {\tt Resultant[} p_0, p_3, a {\tt ]} = -m_3 - b x^3 - c x^3 + m_0 x^3 + b y^3 + c z^3\\ r_3 &=& {\tt Resultant[} p_0, p_4, a {\tt ]} = -m_4 - b x^4 - c x^4 + m_0 x^4 + b y^4 + c z^4\\ r_4 &=& {\tt Resultant[} p_0, p_5, a {\tt ]} = -m_5 - b x^5 - c x^5 + m_0 x^5 + b y^5 + c z^5\\ \end{eqnarray}
+p_0 = 0
+a
+p_i
+a
+b
+c
+r_0
+b
+\begin{eqnarray} s_i &=& {\tt Resultant[} r_0, r_i, b {\tt ]} = S_i \cdot (x-y), \hspace{0.2in}i = 1, 2, 3, 4\\ t_i &=& {\tt Resultant[} S_0, S_i, c {\tt ]} = T_i \cdot (y-z)(z-x), \hspace{0.2in}i = 1, 2, 3 \\ u_i &=& {\tt Resultant[} T_0, T_i, x {\tt ]} = U_i \cdot (m_2-m_1 y - m_1 z + m_0 y z ), \hspace{0.2in}i = 1, 2 \\ v_1 &=& {\tt Resultant[} U_0, U_1, y {\tt ]} \end{eqnarray}
+v_1
+z
+\begin{eqnarray}v_1 &=& \left(m_2^2 - m_1 m_3 - m_1 m_2 z + m_0 m_3 z + m_1^2 z^2 - m_0 m_2 z^2\right)^4 \\  && \left(-m_3^3 + 2 m_2 m_3 m_4 - m_1 m_4^2 - m_2^2 m_5 + m_1 m_3 m_5 \right.\\ &&\left. + z\left(m_2 m_3^2 - m_2^2 m_4 - m_1 m_3 m_4 + m_0 m_4^2 + m_1 m_2 m_5 - m_0 m_3 m_5 \right) \right. \\ &&\left. +z^2\left(- m_2^2 m_3 + m_1 m_3^2 + m_1 m_2 m_4 - m_0 m_3 m_4 - m_1^2 m_5 + m_0 m_2 m_5\right) \right. \\ &&\left. + z^3\left( m_2^3 - 2 m_1 m_2 m_3 + m_0 m_3^2 +     m_1^2 m_4 - m_0 m_2 m_4\right)\right)^2\end{eqnarray}
+z
+y
+x
+y
+x
+x
+y
+z
+x
+y
+z
+v_1
+\rm\ \ \Sigma_n = a\ x^n + b\ y^n + c\ z^n\ \ 
+\rm \Sigma_{n+3} - (x+y+z)\ \Sigma_{n+2} + (xy+yz+zx)\ \Sigma_{n+1} - xyz\ \Sigma_n\ =\ 0 
+\rm\ n = 0,1,2\ 
+\rm\: \ x+y+z,\ \ xy+yz+zx,\ \ xyz\ ,\:
+\rm\ x, y, z
