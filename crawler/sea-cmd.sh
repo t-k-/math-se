@@ -1,2 +1,2 @@
 #!/bin/bash
-find math.stackexchange.com -type f | xargs -I % bash -c 'grep --color -P "(?<!\\\\)\\\\${1}[^a-z^A-Z]+" % && sleep 0.2;'
+find math.stackexchange.com -type f | xargs -I % bash -c "./grep-cmd.sh ${1} % && sleep 0.2;"
