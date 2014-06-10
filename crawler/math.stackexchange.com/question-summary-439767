@@ -1,0 +1,11 @@
+\sum_{k=1}^{n}\frac{\cos(kx)}{k}
+n \geq 1
+S_n(x)
+\frac{\cos(kx)}{k}=\frac{1}{k}-\int_0^x\sin(kt)\mathrm{d}t
+S_n(x)=\sum_{k=1}^{n}\frac{1}{k}-\int_0^x\sum_{k=1}^{n}\sin(kt)\mathrm{d}t
+\sum_{k=1}^{n}\sin (kt)=\frac{\sin(nt)}{2} +\frac{\sin(t)(1-\cos(nt))}{2(1-\cos(t))}
+\cos (x) + \frac{\cos( 2x)}{2} + \cdots + \frac{\cos( nx)}{n} + \cdots
+\int_0^x \frac{\sin(t)(1-\cos(nt))}{2(1-\cos(t))} \mathrm{d}t
+n\ne{0}
+\int\limits_{0}^{x}{e^{ikt}\ dt}=\dfrac{1}{ik}\left(e^{ikx}-1 \right),
+\sum\limits_{k=1}^{n}\dfrac{e^{ikx}}{k}-\sum\limits_{k=1}^{n}\dfrac{1}{k}=i\int\limits_{0}^{x}\sum\limits_{k=1}^{n}{e^{ikt}\ dt}=i\int\limits_{0}^{x}{\dfrac{e^{it}\left(1-e^{int} \right)}{1-e^{it}}\ dt}=\\ =\int\limits_{0}^{x}{\dfrac{d(e^{it})}{1-e^{it}}}-\int\limits_{0}^{x}{\dfrac{e^{int}\ d(e^{it}) }{1-e^{it}}}.

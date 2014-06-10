@@ -1,0 +1,23 @@
+T^d:=\{(x_1,..,x_d):x_i \geq 0, \sum_{i=1}^{d}x_i \leq 1\}
+\mathbb{R}^d
+\nu_i>0
+\int_{T^d} x_1^{\nu_1-1}x_2^{\nu_2-1}...x_d^{\nu_d-1}(1-x_1-...-x_d)^{\nu_0-1}
+d=2
+(p-1)\iiint\limits_{T^{3}} x^{m-1}y^{n-1}z^{p-2} \mathrm{d}z\mathrm{d}y\mathrm{d}x=  \iint\limits_{T^{2}} x^{m-1}y^{n-1}(1-x-y)^{p-1}\mathrm{d}y\mathrm{d}x
+\frac{\prod_{i=0}^{d}\Gamma(\nu_i+1)}{\Gamma(\sum_{i=0}^{d}\nu_i)}
+ \left\{\begin{matrix}x=u^2& &\\y=v^2& &\\z=w^2& &\end{matrix}\right.
+ \left\{\begin{matrix}u=r\sin\varphi\cos\theta& &\\v=r\sin\varphi\sin\theta& &\\w=r\cos\varphi& &\end{matrix}\right.
+a \in \mathbb{R}-\{0\}
+m,n \in (0,+\infty)
+\int_{0}^{a}y^{m-1}(a-y)^{n-1}\mathrm{d}y=a^{m+n-1}B(m,n)
+x_1^{\nu_1-1}...x_d^{\nu_d-1}(1-x_1-...-x_d)^{\nu_{0}-1}
+T^{d}
+(n_0,n_1,\ldots, n_d)=:n
+\sum_{k=0}^d n_k=:|n|
+\lambda\geq0
+x:=\lambda y\ (y\in T^d)
+B(|n'|,n_d)
+Q(n,\lambda):=\int\nolimits_{\lambda T^d}\prod_{1\leq k\leq d} x_k^{n_k-1} \ (\lambda -x_1-\ldots -x_d)^{n_0-1}\ {\rm d}(x)\ .
+Q(n,\lambda)=\lambda^{d+|n|-(d+1)}\int\nolimits_{T^d}\prod_{1\leq k\leq d} y_k^{n_k-1} \ (1 -y_1-\ldots -y_d)^{n_0-1}\ {\rm d}(y)=\lambda^{|n|-1} Q(n,1)\ .
+\eqalign{Q(n,1)&=\int_0^1 x^{n_d-1}\int\nolimits_{(1-x)T^{d-1}}\prod_{1\leq k\leq d-1} x_k^{n_k-1} (1-x_1-\ldots-x_{d-1}-x)^{n_0-1}\ {\rm d}(x')\ dx\cr &= \int_0^1 x^{n_d-1} Q(n',1-x)\ dx=Q(n',1)\int_0^1 x^{n_d-1}(1-x)^{|n'|-1}\ dx\ .  \cr}
+Q(n,1)=Q(n',1) B(|n'|,n_d)\ .

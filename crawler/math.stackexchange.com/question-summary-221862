@@ -1,0 +1,36 @@
+X,Y,Z
+[0,1]
+X,Y,Z
+N(\mu,\sigma^2)
+V=-\sin X\cos Y
+ P(Z<\sin X\cos Y)? 
+ P(Z<\sin X\cos Y)=P(Z-\sin X\cos Y<0) 
+ W=Z-\sin X\cos Y. 
+(\Omega,\mathcal{A},P)
+{\mathcal B}_{\Bbb R^3}
+\sigma
+{\Bbb R^3}
+({\Bbb R}^3,{\mathcal B}_{\Bbb R^3})
+P^V(A)
+V
+\mu
+({\Bbb R}^3,{\mathcal B}_{\Bbb R^3})
+A=\{(x,y,z)\in{\Bbb R^3}:z<\sin x\cos y\}
+X,Y,Z
+V=(X,Y,Z)
+f_X,f_Y,f_Z
+X,Y,Z
+ V=(X,Y,Z):\Omega\to(\Bbb{R}^3,\mathcal{B}_{{\Bbb R}^3}) 
+ P^V(A)=P(V^{-1}(A)), \quad A\in{\mathcal B}_{\Bbb R^3} 
+ P^V(A)=\int_{A}dP^V=\int_{V^{-1}(A)}dP=P(V^{-1}(A)). 
+ P^V(A)=\int_Af(x,y,z)d\mu,\quad A\in{\mathcal B}_{\Bbb R^3}. 
+ f(x,y,z)=f_X(x)f_Y(y)f_Z(z) 
+X
+Y
+Z
+[0,1]
+F_Z(z) = \min(1,\max(0,z))
+0 \leqslant \sin(X)  \leqslant \sin(1) < 1
+0<\cos(1) \leqslant \cos(Y) \leqslant 1
+    \mathbb{P}\left(Z< \sin(X) \cos(Y) \right) = \mathbb{E}\left(\mathbb{P}\left(Z< \sin(X) \cos(Y) | X,Y \right)\right) = \mathbb{E}\left( F_Z\left(\sin(X)\cos(Y)\right) \ \right) 
+   \mathbb{E}\left( F_Z\left(\sin(X)\cos(Y)\right) \ \right) = \mathbb{E}\left( \sin(X)\cos(Y)  \right) = \underbrace{\mathbb{E}\left(\sin(X)\right)}_{} \, \mathbb{E}\left(\cos(Y)\right) 

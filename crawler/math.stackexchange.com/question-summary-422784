@@ -1,0 +1,21 @@
+(\vec T(t), \vec N(t), \vec B(t))
+\vec \gamma(t)
+n,b
+\kappa,\tau\neq0
+(\vec T,\vec N ,\vec B)
+n,b
+t
+\vec x(t,n,b)
+\vec T(t)
+(n,b)
+\begin{array}{rcl}    |\tfrac{d}{dt}\vec\gamma(t)| &\equiv& 1, \\ \vec T(t) &:=& \tfrac{d}{dt}\vec\gamma(t), \\ \kappa(t) &:=& |\tfrac{d}{dt}\vec T(t)|, \\ \kappa(t)\vec N(t) &:=& \tfrac{d}{dt}\vec T(t), \\ \vec B(t) &:=& \vec T(t)\times\vec N(t), \\ \tfrac{d}{dt}\vec B(t) &=:& -\tau\vec N(t) \end{array}
+\vec x(t,n,b) := \vec\gamma(t) + n\vec N(t) + b\vec B(t)
+(\vec a\vec\nabla)\vec T
+\vec a
+\vec T
+\Delta\vec T
+\vec T
+\vec x(t,n,b) = \vec\gamma(t) + n\vec N(t) + b\vec B(t)
+\begin{array}{rcl}   \vec h_t &=& \partial_t\vec x = \underbrace{\vec\gamma'}_{=\vec T} + n\underbrace{\vec N'}_{=-\kappa\vec T + \tau\vec B} + b\underbrace{\vec B'}_{=-\tau\vec N} \\ &=& (1-\kappa)\vec T - n\tau\vec N + b\tau\vec B \\\Rightarrow h_t &=& \sqrt{(1-\kappa)^2+(n^2+b^2)\tau^2}, \\\vec h_n &=& \partial_n\vec x = \vec N \Rightarrow h_n=1, \\\vec h_b &=& \partial_b\vec x = \vec B \Rightarrow h_b=1. \end{array}
+(\vec a\vec\nabla)\vec T = \frac{\vec a\vec h_t}{h_t^2}\underbrace{\partial_t\vec T}_{=\kappa\vec N}
+\begin{array}{rcl}   \Delta\vec T &=& \left(\frac1{h_t}\partial_t\right)^2 \vec T = \frac1{h_t}\partial_t\left(\frac{\kappa(t)}{h_t}\vec N\right) \\ &=& \frac1{h_t}\left(\frac\kappa{h_t}\right)'\vec N + \frac{\kappa}{h_t^2}\left(-\kappa\vec T + \tau\vec B\right) \\ \text{with}\quad h_t' &=& \frac{(1-\kappa)\kappa'+(n^2+b^2)\tau\tau'}{h_t} \\ \Rightarrow \frac1{h_t}\left(\frac\kappa{h_t}\right)' &=& \frac{\kappa' h_t^2 - \kappa[(1-\kappa)\kappa' + (n^2+b^2)\tau\tau']}{h_t^4} \\ &=& \frac{\kappa'[(n^2+b^2)\tau+2\kappa^2-3\kappa+1] - \tau'\kappa\tau(n^2+b^2)}{h_t^4} \end{array}

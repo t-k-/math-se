@@ -1,0 +1,40 @@
+x=0
+a > 0
+x \to \infty
+u \to 1
+u
+ u_t = -t u_x + \frac{1}{2} u_{xx}, {\rm ~for~} x>0, \, t \in \mathbb{R} \;, 
+ u(x,t) \to 1, {\rm ~as~} t \to -\infty \;, 
+ u_x(0,t) = \left\{ \begin{array}{lc} -2 a t u(0,t) \;, & t \le 0 \\ 0 \;, & t \ge 0 \end{array} \right. \;, 
+p = \lim_{t \to \infty} u(0,t)
+p
+u(x,t)
+x=0
+t=0
+t>0
+t \le 0
+x=0
+ v(x,t) = {\rm e}^{\frac{1}{6} t^3 - t x} u(x,t) \;, 
+ v_t = -x v + \frac{1}{2} v_{xx} \;, 
+ v_x(0,t) = \left\{ \begin{array}{lc} -(1+2a)tv(0,t) \;, & t \le 0 \\ -tv(0,t) \;, & t \ge 0 \end{array} \right. \;. 
+v
+\lim_{t \to \infty} u(x,t)
+x
+u(x,t)
+p
+\begin{cases}v=x-\dfrac{t^2}{2}\\w=t\end{cases}
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial v}\dfrac{\partial v}{\partial x}+\dfrac{\partial u}{\partial w}\dfrac{\partial w}{\partial x}=\dfrac{\partial u}{\partial v}
+\dfrac{\partial^2u}{\partial x^2}=\dfrac{\partial}{\partial x}\left(\dfrac{\partial u}{\partial v}\right)=\dfrac{\partial}{\partial v}\left(\dfrac{\partial u}{\partial v}\right)\dfrac{\partial v}{\partial x}+\dfrac{\partial}{\partial w}\left(\dfrac{\partial u}{\partial v}\right)\dfrac{\partial w}{\partial x}=\dfrac{\partial^2u}{\partial v^2}
+\dfrac{\partial u}{\partial t}=\dfrac{\partial u}{\partial v}\dfrac{\partial v}{\partial t}+\dfrac{\partial u}{\partial w}\dfrac{\partial w}{\partial t}=-t\dfrac{\partial u}{\partial v}+\dfrac{\partial u}{\partial w}
+\therefore-t\dfrac{\partial u}{\partial v}+\dfrac{\partial u}{\partial w}=-t\dfrac{\partial u}{\partial v}+\dfrac{1}{2}\dfrac{\partial^2u}{\partial v^2}
+\dfrac{\partial u}{\partial w}=\dfrac{1}{2}\dfrac{\partial^2u}{\partial v^2}
+u(v,w)=V(v)W(w)
+V(v)W'(w)=\dfrac{1}{2}V''(v)W(w)
+\dfrac{2W'(w)}{W(w)}=\dfrac{V''(v)}{V(v)}=s^2
+\begin{cases}\dfrac{W'(w)}{W(w)}=\dfrac{s^2}{2}\\V''(v)-s^2V(v)=0\end{cases}
+\begin{cases}W(w)=c_3(s)e^{\frac{ws^2}{2}}\\V(v)=\begin{cases}c_1(s)e^{vs}+c_2(s)e^{-vs}&\text{when}~s\neq0\\c_1v+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(v,w)=\int_{-\infty}^\infty C_1(s)e^{\frac{ws^2}{2}+vs}~ds+\int_{-\infty}^\infty C_2(s)e^{\frac{ws^2}{2}-vs}~ds
+u(x,t)=\int_{-\infty}^\infty C_1(s)e^{\frac{ts^2}{2}+\left(x-\frac{t^2}{2}\right)s}~ds+\int_{-\infty}^\infty C_2(s)e^{\frac{ts^2}{2}-\left(x-\frac{t^2}{2}\right)s}~ds
+u(x,t)=\int_{-\infty}^\infty C_1(s)e^{\frac{t}{2}\left(s^2+\left(\frac{2x}{t}-t\right)s\right)}~ds+\int_{-\infty}^\infty C_2(s)e^{\frac{t}{2}\left(s^2-\left(\frac{2x}{t}-t\right)s\right)}~ds
+u(x,t)=\int_{-\infty}^\infty C_1(s)e^{\frac{t}{2}\left(s^2+\left(\frac{2x}{t}-t\right)s+\left(\frac{x}{t}-\frac{t}{2}\right)^2-\left(\frac{x}{t}-\frac{t}{2}\right)^2\right)}~ds+\int_{-\infty}^\infty C_2(s)e^{\frac{t}{2}\left(s^2-\left(\frac{2x}{t}-t\right)s+\left(\frac{x}{t}-\frac{t}{2}\right)^2-\left(\frac{x}{t}-\frac{t}{2}\right)^2\right)}~ds
+u(x,t)=e^{-\frac{t}{2}\left(\frac{x}{t}-\frac{t}{2}\right)^2}\int_{-\infty}^\infty C_1(s)e^{\frac{t}{2}\left(s+\frac{x}{t}-\frac{t}{2}\right)^2}~ds+e^{-\frac{t}{2}\left(\frac{x}{t}-\frac{t}{2}\right)^2}\int_{-\infty}^\infty C_2(s)e^{\frac{t}{2}\left(s-\frac{x}{t}+\frac{t}{2}\right)^2}~ds

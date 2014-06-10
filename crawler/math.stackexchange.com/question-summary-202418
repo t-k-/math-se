@@ -1,0 +1,19 @@
+\lim_{n\to\infty} \int_{0}^{\pi/4}\tan^n x \ dx
+t:=\tan x
+\arctan t=x
+dx=\frac{dt}{1+t^2}
+0
+0\leq I_n:=\int_0^{\frac{\pi}4}\tan^n xdx=\int_0^1\frac{t^n}{1+t^2}dt\leq \int_0^1t^ndt\leq\frac 1{n+1},
+I_{n+2}=\frac 1{n+1}-I_n
+\{I_n\}
+\pi/4 > \epsilon > 0
+2 \epsilon
+n
+\int_0^{\pi/4} \tan^n x\ dx < (\pi/4 - \epsilon) \tan(\pi/4 - \epsilon)^n + \epsilon 
+I_n
+n
+0
+I_n = \int_0^{\pi/4} \tan^n(x) dx = \int_0^{\pi/4} \tan^{n-2}(x) \sec^2(x) dx - \int_0^{\pi/4} \tan^{n-2}(x)dx
+I_n + I_{n-2}= \int_0^1 t^{n-2} dt = \dfrac1{n-1}
+\lim_{n \to \infty} I_n = L
+L + L = \lim_{n \to \infty} \dfrac1{n-1} \implies L = 0

@@ -1,0 +1,30 @@
+\lim_{x \to 0}{\frac{x-\sin{x}}{x^3}}=\frac{1}{6}
+L = \lim_{x \to 0} \dfrac{x - \sin(x)}{x^3}
+24L = 4 \implies L = \dfrac16
+f(x):=\sin(x)-x+\frac{1}{6}x^3
+g(x):=\sin(x)-x+\frac{1}{6}x^3-\frac{1}{120}x^5
+[0, 0.1]
+f
+g
+f(0)=0
+f'>0
+f'(0)=0
+f''>0
+g
+ x-\frac{1}{6}x^3<\sin(x)<x-\frac{1}{6}x^3+\frac{1}{120}x^5. 
+\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
+f
+f(x) = f(0)+f'(0)x+\frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \int_0^x (x-t)^2 \frac{(f'''(t)-f'''(0))}{2!}\, dt
+\sin' = \cos, \cos' = -\sin
+f(x) = \sin x
+\epsilon>0
+\delta>0
+|t|< \delta
+|1-\cos t| < \epsilon
+1-\cos t
+\epsilon
+0 < |x| < \delta
+|x^3|
+ \sin x = x -\frac{x^3}{6} + \int_0^x (x-t)^2 \frac{(-\cos t +1)}{2!}\, dt
+ |\sin x - x + \frac{x^3}{6} |  \leq \epsilon \frac{|x|^3}{6}
+ | \frac{\sin x - x}{x^3} +\frac{1}{6} |  \leq \frac{\epsilon}{6} < \epsilon

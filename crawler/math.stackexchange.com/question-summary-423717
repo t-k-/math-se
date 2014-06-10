@@ -1,0 +1,20 @@
+ 2\int_r^\infty \frac{x g(x)}{\sqrt{x^2-r^2}}\text{d}x 
+g
+r\to 0
+1-r^2/2
+g
+x/r
+I(r)=\int_r^\infty \frac{x g(x)}{\sqrt{x^2-r^2}}\text{d}x=\int_r^\infty \frac{ g(x)}{\sqrt{1-\frac{r^2}{x^2}}}\text{d}x
+(2k)!!=2^kk!
+(2k-1)!!=\frac{(2k)!}{2^kk!}
+\frac{ 1}{\sqrt{1-\frac{r^2}{x^2}}}=1+\sum_{k=1}^{\infty}\frac{(2k-1)!!}{(2k)!!}\frac{r^{2k}}{x^{2k}}
+x=ry
+I(r)=\int_{r}^{\infty}g(x)dx+\sum_{k=1}^{\infty}\frac{(2k-1)!!}{(2k)!!}\int_{r}^{\infty}\frac{r^{2k}}{x^{2k}}g(x)dx
+M=\text{max}\;g(x)
+\;
+r<x<\infty
+I(r)=\int_{r}^{\infty}g(x)dx+r\sum_{k=1}^{\infty}\frac{(2k-1)!!}{(2k)!!}\int_{1}^{\infty}\frac{g(ry)}{y^{2k}}dy
+\int_{1}^{\infty}\frac{dy}{y^{2k}}=\frac{1}{2k-1}
+r\to 0
+I(r)<\int_{r}^{\infty}g(x)dx+rM\sum_{k=1}^{\infty}\frac{1}{2k-1}\frac{(2k-1)!!}{(2k)!!}
+1\leqslant I(r)< 1+rM\sum_{k=1}^{\infty}\frac{1}{2k-1}\frac{(2k-1)!!}{(2k)!!}

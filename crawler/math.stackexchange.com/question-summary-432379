@@ -1,0 +1,19 @@
+f
+C^2
+\mathbb{R}^n
+N
+\mathbb{R}^n
+u:=N\star f
+\Delta u=f
+C>0
+x\in\mathbb{R}^n
+\lVert x\rVert\geq C
+ \lvert u(x)\rvert=\begin{cases}C\lVert x\rVert^{n-2}, &\mbox{ if }n\geq 3\\C\ln\lVert x\rVert, &\mbox{ if }n=2\end{cases} 
+n=2
+T:=\mbox{supp}(f)
+\exists M\geq 0: \lVert\tau\rVert\leq M~\forall~\tau\in T
+\lVert x\rVert\geq\max\left\{2,M\right\}
+ \lvert u(x)\rvert\leq\frac{1}{2\pi}\int_T\lvert\ln\lVert x-\tau\rVert f(\tau)\rvert\, d\tau\\\leq\frac{1}{2\pi}\int_T\lvert\ln(2\lVert x\rVert)f(\tau)\rvert\, d\tau\\\leq\frac{1}{2\pi}\int_T\lvert 2\ln\lVert x\rVert f(\tau)\rvert\, d\tau\\=\underbrace{\frac{1}{\pi}\int_T\lvert f(\tau)\rvert\, d\tau}_{=:Q}\ln\lVert x\rVert 
+C:=\max\left\{2,M,Q\right\}
+f
+C^

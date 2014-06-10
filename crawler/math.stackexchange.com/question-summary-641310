@@ -1,0 +1,33 @@
+\sum_{n=2}^\infty \frac{1}{n(\ln n)^p}
+\sum_{n=1}^\infty \frac{1}{n^p}
+p>1
+p<=1
+p>1
+n(\ln n)^p
+n^p
+\ln n
+du
+\frac{dn}{n}
+p
+\sum_{n=2}^\infty \frac{1}{n(\ln n)^p}
+\int_{2}^\infty \frac{1}{x(\ln x)^p}dx=\lim_{A \to \infty}\int_{2}^A\frac{1}{x(\ln x)^p}dx=\lim_{A \to \infty}\int_2^A (\ln x)^{-p}d (\ln x)
+p>1
+\lim_{A \to \infty}\int_2^A (\ln x)^{-p}d (\ln x)
+=\lim_{A\to \infty}\left[\frac{(\ln A)^{1-p}}{1-p}-\frac{(\ln 2)^{1-p}}{1-p}\right]
+=-\frac{(\ln 2)^{1-p}}{1-p}
+1-p<0
+\ln A \to \infty
+ A \to \infty
+p<1
+\lim_{A \to \infty}\int_2^A (\ln x)^{-p}d (\ln x)
+=\lim_{A\to \infty}\left[\frac{(\ln A)^{1-p}}{1-p}-\frac{(\ln 2)^{1-p}}{1-p}\right]
+=\infty
+1-p>0
+\ln A \to \infty
+ A \to \infty
+p=1
+\lim_{A \to \infty}\int_2^A (\ln x)^{-1}d (\ln x)
+=\lim_{A\to \infty}\left[\ln(\ln A)-\ln(\ln 2)\right]
+=\infty
+\ln A \to \infty
+ A \to \infty

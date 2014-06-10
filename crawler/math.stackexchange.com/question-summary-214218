@@ -1,0 +1,37 @@
+I:=[a,b]
+f_n:I \rightarrow \mathbb R
+f_n'
+g:I \rightarrow \mathbb R
+\exists x_0 \in I: \lim \limits_{n \rightarrow \infty} f_n(x_0) = L \in \mathbb R
+f_n
+f:I \rightarrow \mathbb R
+f' = g
+f_n'
+ d_{\infty}(f_n',f_m') \leq \epsilon \Rightarrow |(f_n(x)-f_m(x))-(f_n(x_0)-f_m(x_0))| \leq \epsilon |x-x_0| 
+\epsilon > 0
+n
+y
+x
+f'(x)
+g(x)
+ \left\lvert\frac {f(y) - f(x)} {y - x} - g(x) \right\rvert \leq \\ \left\lvert\frac {f(y) - f(x)} {y - x} - \frac {f_n(y) - f_n(x)} {y - x} \right\rvert + \left\lvert \frac {f_n(y) - f_n(x)} {y - x}  - f_n'(x)\right\rvert + \left\lvert f_n'(x) - g(x) \right\rvert 
+ \left\lvert\frac {f(y) - f(x)} {y - x} - g(x) \right\rvert \leq 2\frac \epsilon 3 + \left\lvert \frac {f_n(y) - f_n(x)} {y - x}  - f_n'(x)\right\rvert 
+ \left\lvert\frac {f(y) - f(x)} {y - x} - g(x) \right\rvert \leq \epsilon  
+f'_n
+N
+\epsilon
+(f'_n(x) - g(x)) \leq \epsilon
+n \geq N
+d_\infty(f'_n,g) \leq \epsilon
+d_\infty(f_n',g) \to0 
+n\to\infty
+\int_{a}^x f_n'(y) - g(y) dy \leq d_\infty(f_n',g)|x-a| \leq d_\infty(f_n',g)|b-a|
+d_\infty(f_n',g) \to0 
+n\to\infty
+\int_a^x f_n'(y)dy
+\int_a^x g(y)dy
+f_n(x) = c_n + \int_a^x f_n'(y)dy
+c_n
+\lim_{n\to\infty}f_n(x) = \lim_{n\to\infty} c_n + \int_a^x f_n'(y)dy
+x
+\lim_{n\to\infty}c_n

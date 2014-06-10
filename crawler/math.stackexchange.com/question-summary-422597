@@ -1,0 +1,28 @@
+a
+a,b,c \in \mathbb{R} 
+x
+y
+f_x
+f_y
+ E[h(X,Y)] = \int_{-\infty}^\infty\int_{-\infty}^\infty h(x,y) f_{X,Y}(x,y) \;dxdy 
+f_{X,Y}(x,y)
+X
+Y
+f_{X,Y}(x,y)=f_X(x)f_Y(y)
+h(x,y)=\max(a+x-b,0)\times 1_{\{c+y\leq b\}}
+ \int_{-\infty}^{\infty}\int_{-\infty}^\infty \max(a+x-b,0) 1_{\{c+y\leq b\}} f_X(x)f_Y(y) \;dxdy 
+y>b-c
+x<b-a
+\max
+ \int_{-\infty}^{b-c}\int_{b-a}^\infty (a+x-b) f_X(x)f_Y(y) \;dxdy 
+y
+Y
+F_Y(y)
+y
+a-b
+x
+F_X(x)
+ F_Y(b-c)\int_{b-a}^\infty (a+x-b) f_X(x) \;dx 
+ F_Y(b-c)\left((a-b)(1-F_X(x))+\int_{b-a}^\infty x f_X(x) \;dx\right) 
+a
+ \int_{-\infty}^{b-c}\int_{b-a}^\infty (a+x-b) f_{X,Y}(x,y) \;dxdy 

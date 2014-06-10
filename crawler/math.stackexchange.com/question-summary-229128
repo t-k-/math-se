@@ -1,0 +1,59 @@
+f
+f
+[a,b]
+\varepsilon>0
+|(A-a)-(B-b)|<\varepsilon
+A,a
+B,b
+\varepsilon>0
+f
+P, Q
+[a,b]
+|A-a|<\varepsilon/2
+|B-b|<\varepsilon /2
+|(A-a)-(B-b)|<\varepsilon
+Q
+[a,b]
+[f(a), f(b)]
+[a_i, a_{i+1}]
+\text{Riemann Integrable}\implies \text{Lebesgue Integrable}
+U(f,P)=\sum_{k=1}^n M_k (t_k-t_{k-1})
+L(f,P)=\sum_{k=1}^n m_k (t_k-t_{k-1})
+m_k=\inf\limits_{[t_{k-1},t_k]}f(x)
+M_k=\sup\limits_{[t_{k-1},t_k]}f(x)
+f
+f
+f(a)\leq f(x)\leq f(b)
+m_k=\inf\limits_{[t_{k-1},t_k]}f(x)=f(t_{k-1})
+M_k=\sup\limits_{[t_{k-1},t_k]}f(x)=f(t_k)
+P
+U(f,P)-L(f,p)=\sum_{k=1}^n (f(t_k)-f(t_{k-1}))(t_k-t_{k-1})
+P
+t_k-t_{k-1}<\delta
+f
+f
+-f
+\displaylines{   U(f,P) - L(f,p) = \sum\limits_{k = 1}^n {(f(} {t_k}) - f({t_{k - 1}}))({t_k} - {t_{k - 1}}) \cr     < \delta \sum\limits_{k = 1}^n {(f(} {t_k}) - f({t_{k - 1}})) \cr     < \delta \left( {f\left( b \right) - f\left( a \right)} \right) \cr} 
+\delta  = \frac{\varepsilon }{{f\left( b \right) - f\left( a \right)}}
+U(f,P) - L(f,p) < \varepsilon 
+s\left( x \right) = \mathop {\lim }\limits_{y \to {x^ + }} f\left( y \right) - \mathop {\lim }\limits_{y \to {x^ - }} f\left( y \right)
+f
+f
+x=a
+s(a)>0
+x_1,x_2,\dots,x_n\in[a,b]
+f(b)-f(a)
+L>0
+L
+\Delta_L
+f(b)-f(a)
+n
+(1)
+\Delta_{1/n}
+n\in \Bbb N
+n
+\tag 1 0\leq \sum_{k=1}^n s(x_k)\leq f(b)-f(a)
+\Delta_L=\{x\in[a,b]:s(x)>L\}
+\sum\limits_{k = 1}^n {s\left( {{x_k}} \right)}  > \sum\limits_{k = 1}^n L  = nL
+\bigcup\limits_{n = 1}^\infty  {{\Delta _{1/n}}} 
+\bigcup\limits_{n = 1}^\infty  {{\Delta _{1/n}}}  = \Delta 

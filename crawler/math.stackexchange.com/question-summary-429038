@@ -1,0 +1,21 @@
+f'(x)
+f
+0
+f
+f'(x)
+f
+\Bbb R
+f(0+0)=f(0)f(0)\implies f(0)=0,1
+f(x)\neq 0
+x\in \Bbb R\implies f(0)=1
+1=f(0)=f(x-x)=f(x).f(-x)\implies f(-x)=\frac{1}{f(x)}
+R.H.D.=\lim_{h\to 0^+}\frac{f(x+h)-f(x)}{h}=\lim_{h\to 0^+}\frac{f(x)f(h)-f(x)}{h}
+=f(x)\lim_{h\to 0^+}\frac{f(h)-1}{h}\tag{1}
+L.H.D.=\lim_{h\to 0^+}\frac{f(x)-f(x-h)}{h}=\lim_{h\to 0^+}\frac{f(x)-f(x)f(-h)}{h}
+=f(x)\lim_{h\to 0^+}\frac{1-\frac{1}{f(h)}}{h}=f(x)\left(\lim_{h\to 0^+}\frac{f(h)-1}{h}\right)\left(\lim_{h\to 0^+}\frac{1}{f(h)}\right)=f(x)\lim_{h\to 0^+}\frac{f(h)-1}{h}\tag{2}
+(1)
+(2)
+L.H.D.=R.H.D.\implies f
+f'(x)=f(x)\lim_{h\to 0^+}\frac{f(h)-1}{h}
+2=f'(0)=\lim_{h\to 0^+}\frac{f(h)-f(0)}{h}=\lim_{h\to 0^+}\frac{f(h)-1}{h}
+f'(x)=2f(x)\tag{QED}

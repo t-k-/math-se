@@ -1,0 +1,16 @@
+f(x\mid \theta) =       \begin{cases}        \dfrac{2x}{\theta} & : x \leq \theta , x\in[0,1], \theta \in [0,1] \\[6pt]        \dfrac{2(1-x)}{1-\theta} & : x > \theta , x\in[0,1], \theta \in [0,1]      \end{cases}     
+\pi(\theta) \propto \sqrt{I(\theta)}
+I(\theta)
+\theta
+\beta(1/2,1/2)
+I(\theta) \propto \frac{1}{\theta(1-\theta)}
+\beta(1/2,1/2)
+\frac{1}{\theta^{1/2}(1-\theta)^{1/2}}
+I(\theta) = \mathbb{E}_\theta[(\frac{\partial}{\partial \theta}\log(f(x\mid \theta))^2]
+\log(f(x\mid \theta)) = \left\{      \begin{array}{lr}        \log{2x} - \log{\theta} & : x \leq \theta , x\in[0,1], \theta \in [0,1] \\        \log{2(1-x)} - \log(1-\theta) & : x > \theta , x\in[0,1], \theta \in [0,1]      \end{array}    \right. 
+\Rightarrow \frac{\partial}{\partial \theta}\log(f(x\mid \theta) = \left\{      \begin{array}{lr}        -\frac{1}{\theta} : x \leq \theta , x\in[0,1], \theta \in [0,1] \\        \frac{1}{(1-\theta)} : x > \theta , x\in[0,1], \theta \in [0,1]      \end{array}    \right. 
+\Rightarrow \mathbb{E}_\theta[(\frac{\partial}{\partial \theta}\log(f(x\mid\theta))^2] = \left\{      \begin{array}{lr}        \frac{1}{\theta^2} : x \leq \theta , x\in[0,1], \theta \in [0,1] \\        \frac{1}{(1-\theta)^2} : x > \theta , x\in[0,1], \theta \in [0,1]      \end{array}    \right. 
+\frac{1}{\theta(1-\theta)}
+\theta
+\frac{\partial}{\partial \theta}\log(f(x\mid \theta) = \left\{      \begin{array}{lr}        -\frac{1}{\theta} : x \leq \theta , x\in[0,1], \theta \in [0,1] \\        \frac{1}{(1-\theta)} : x > \theta , x\in[0,1], \theta \in [0,1]      \end{array}    \right. = -\frac{1}{\theta}I(X\leq\theta) + \frac{1}{1-\theta}I(X>\theta)
+\mathbb{E}_\theta[(\frac{\partial}{\partial \theta}\log(f(x\mid\theta))^2] = \frac{1}{\theta^2} P(X\leq \theta) + \frac{1}{(1-\theta)^2}[1-P(X\leq \theta)] = \frac{1}{\theta} + \frac{1}{1-\theta} = \frac{1}{(1-\theta)\theta}

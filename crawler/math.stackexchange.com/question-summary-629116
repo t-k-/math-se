@@ -1,0 +1,6 @@
+\lim_{n\to\infty} \frac{1}{n+1}\sum_{k=1}^n \frac{k}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{k+1}}
+\lim_{n\to\infty} \frac{1}{n+1}\sum_{k=1}^n \frac{k}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{k+1}}.
+\sqrt{1}+\sqrt{2}+\cdots+\sqrt{k} \approx \int_1^k s^{1/2} ds \approx \frac{2}{3} k^{3/2}.
+\frac{2}{3} \cdot \frac{1}{n+1} \sum_{k=1}^n \frac{k}{k^{3/2}} \approx \frac{2}{3n}  \int_1^n \frac{1}{k^{1/2}} dk \approx \frac{4}{3n} n^{1/2}.
+n \to \infty
+L=\lim_{n\to\infty} \frac{1}{n+1}\sum_{k=1}^n \frac{k}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{k+1}} =\lim_{n\to\infty} \frac{1}{n+2-(n+1)} \frac{n+1}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{n+2}}=\lim_{n\to\infty}\frac{n+1}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{n+2}}=\frac{n+2-(n+1)}{1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{n+3}-(1 + \sqrt{2} +\sqrt{3} +\cdots+\sqrt{n+2})}=\lim_{n\to\infty}\frac{1}{\sqrt{n+3}}=0

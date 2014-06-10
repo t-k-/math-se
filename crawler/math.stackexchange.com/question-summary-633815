@@ -1,0 +1,8 @@
+\lim_{x \to \infty} x \left[ \frac{1}{e} - \left( \frac{x}{x+1} \right)^x \right]
+\frac{1}{e} - \left( \frac{x}{x+1} \right)^x
+\begin{align} \frac1{e}-\left (\frac{x}{1+x}\right )^x &= \frac1{e}-\left ( 1+\frac1{x}\right)^{-x}\\&=\frac1{e}-e^{-x \log{\left(1+\frac1{x}\right)}}\\&\sim \frac1{e}-e^{-x \left (\frac1{x}-\frac1{2 x^2}\right )}\\ &= \frac1{e}-\frac1{e} e^{\frac1{2 x}}\\ &=\frac1{e} \left (1-e^{\frac1{2 x}} \right ) \\ &\sim -\frac1{2 e x} \end{align}
+-1/(2 e)
+t=\frac 1 x
+\lim_{x \to \infty} x \biggl[ \frac{1}{e} - \left( \frac{x}{x+1} \right)^x \biggr]=\lim_{t\to0}\frac1 t\left(\frac 1 e- \left(t+1\right)^{-\frac 1 t}\right)=\lim_{t\to0}\frac1 t\left(\frac 1 e- \exp\left(-\frac1 t\log(1+t)\right)\right)=\lim_{t\to0}\frac1 t\left(\frac 1 e- \exp\left(-\frac1 t(t-t^2/2+o(t^2))\right)\right)=\lim_{t\to0}\frac1 {et}\left(1- 1-\frac t 2\right)=-\frac{1}{2e}
+\begin{align}\lim_{x\to\infty}\frac{(1/e)-(x/(1+x))^x}{(1/x)}&=\lim_{x\to\infty}\frac{-(x/(x+1))^x\left\{(x+1)\ln(x/(x+1))+1\right\}}{-(x+1)/x^2}\\&=\lim_{x\to\infty}\frac{(x/(x+1))^x\left\{x(x+1)\ln(x/(x+1))+x\right\}}{(x+1)/x}\\&=\frac{(1/e)\cdot(-1/2)}{1+0}\\&=-\frac{1}{2e}\end{align}
+\begin{align}\lim_{x\to\infty}\left\{x(x+1)\ln\left(\frac{x}{x+1}\right)+x\right\}&=\lim_{x\to\infty}\frac{x\ln(x/(x+1))+\ln(x/x+1)+1}{1/x}\\&=\lim_{x\to\infty}\frac{1/x+\ln(x/(1+x))}{-1/x^2}\\&=\lim_{x\to\infty}\frac{-1/(x^2+x^3)}{2/x^3}\\&=\lim_{x\to\infty}\frac{-1}{2+(2/x)}\\&=-\frac 12.\end{align}

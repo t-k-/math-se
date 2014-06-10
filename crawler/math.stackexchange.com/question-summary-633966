@@ -1,0 +1,28 @@
+f:(0,\pi) \rightarrow \mathbb{R}
+x\longmapsto \sin x
+\sin x\sim \frac{2}{\pi}-\sum_{n=2}^{\infty}\frac{2(1+(-1)^n)}{\pi(n^2-1)}\cos nx
+f(x)\sim\frac{a_0}{2}+\sum_{n\in\mathbb{N}}a_n\cos nx
+a_0=\frac{4}{\pi}
+a_n
+a_n=\frac{2}{\pi}\int_0^\pi \! \sin x \cos nx \, \mathrm{d}x
+=\frac{2}{\pi}((-1)^{n+1}-1)-n\int_0^\pi \cos x \sin nx
+I := \int \sin x \cos nx \, \operatorname{d}\!x
+u=\cos nx
+\operatorname{d}\!v = \sin x
+\operatorname{d}\!u = -n\sin nx
+v=-\cos x
+I = -\cos x \cos nx - n \int \cos x \sin nx \, \operatorname{d}\!x
+I = -\cos x \cos nx - nJ
+J = \int \cos x \sin nx \, \operatorname{d}\!x
+u = \sin nx
+\operatorname{d}\!v = \cos x \, \operatorname{d}\!x
+\operatorname{d}\!u = n\cos nx \, \operatorname{d}\!x
+v=\sin x
+J = \sin x \sin nx - n\int \sin x \cos nx \, \operatorname{d}\!x
+I
+J = \sin x \sin nx - nI
+I = -\cos x \cos nx - nJ
+\begin{eqnarray*} I &=& -\cos x \cos nx - n J \\ \\ &=& -\cos x \cos nx - n(\sin x \sin nx - nI) \\ \\ &=& -\cos x \cos nx - n \sin n \sin nx + n^2 I \end{eqnarray*}
+I
+I = \frac{\cos x \cos nx + n \sin x \sin nx}{n^2-1}
+\int_0^{\pi} \sin x \cos nx \, \operatorname{d}\!x = \left[\frac{\cos x \cos nx + n \sin x \sin nx}{n^2-1}\right]_0^{\pi}

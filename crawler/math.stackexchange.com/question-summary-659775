@@ -1,0 +1,28 @@
+\hat{\mu} = \bar X = \frac{1}{n} \sum X_i
+\mu
+X
+X_1, \ldots, X_n
+SSE = \sum (\mu - \hat{\mu})^2,
+\beta
+n
+n
+(X_{1},\ldots,X_{n})
+\mathcal{N}(\mu,\sigma^{2})
+(\mu,\sigma^{2})
+X_{i}
+\mu
+\star
+ \forall i \in \left\{1,\ldots,n \right\}, \; X_{i} = \mu + \varepsilon_{i} \tag{$\star$}
+ \hat{\mu}_{n} = \mathop{\mathrm{argmin}} \limits_{\mu \in \mathbb{R}} \sum_{i=1}^{n} \big( X_{i} - \mu \big)^{2} 
+f
+f
+ f(\mu) = \sum_{i=1}^{n} \big( X_{i} - \mu \big)^{2} = \sum_{i=1}^{n} X_{i}^{2} - 2\mu \sum_{i=1}^{n} X_{i} + n\mu^{2}.
+ f'(\mu) = -2 \sum_{i=1}^{n} X_{i} + 2n \mu 
+f'(\mu) = 0
+\displaystyle \mu = \frac{1}{n} \sum_{i=1}^{n} X_{i}
+\displaystyle \lim \limits_{\mu \to \pm \infty} f(\mu) = +\infty
+f'
+f
+ \boxed{\displaystyle \hat{\mu}_{n} = \frac{1}{n} \sum_{i=1}^{n} X_{i}} 
+ \ell \big( \mu,\sigma \big) = \frac{1}{\big( \sigma \sqrt{2\pi} \big)^{n}} \exp \Big( - \frac{1}{2\sigma^{2}} \sum_{i=1}^{n} (x_{i} - \mu)^{2} \Big) 
+ \begin{align*}  \mathop{\mathrm{argmax}} \limits_{\mu \in \mathbb{R}} \log \ell & = {} \mathop{\mathrm{argmax}} \limits_{\mu \in \mathbb{R}} \sum_{i=1}^{n} \big( X_{i}-\mu \big)^{2} \\ &= \hat{\mu}_{n} \\ \end{align*} 

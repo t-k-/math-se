@@ -1,0 +1,31 @@
+U
+V
+f(u)
+g(v)
+U
+(0, 1)
+V
+v > 0
+  X = V \sin(2 \pi U)  
+  Y = V \cos(2 \pi U).  
+X
+Y
+N(0, 1)
+f(u)
+g(v)
+g
+h
+V=\sqrt{X^2+Y^2}
+X
+Y
+\gamma:x\mapsto\mathrm e^{-x^2/2}/\sqrt{2\pi}
+g
+v=\sqrt{x^2+y^2}
+ \mathbb E(h(V))=\int h(v)g(v)\mathrm dv. 
+ \mathbb E(h(V))=\mathbb E(h(\sqrt{X^2+Y^2}))=\iint h(\sqrt{x^2+y^2})\,\gamma(x)\gamma(y)\,\mathrm dx\mathrm dy. 
+x=v\cos\theta
+y=v\sin\theta
+v\geqslant0
+0\leqslant\theta\lt2\pi
+\mathrm dx\mathrm dy=v\mathrm dv\mathrm d\theta
+ \iint h(v)\,\gamma(v\cos\theta)\gamma(v\sin\theta)\,v\mathrm dv\mathrm d\theta=\int h(v)g(v)\mathrm dv. 

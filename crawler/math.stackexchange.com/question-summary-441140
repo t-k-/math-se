@@ -1,0 +1,25 @@
+P\in\mathbb{Z}[x]
+d
+Q\in\mathbb{Z}[x]
+d
+Q(x)-Q(x-1)-Q(x-2)=P(x)
+Q=\sum a_i x^i
+a_n
+a_{n-1}
+O(d^2)
+O(d)
+-R(x) + R(x-1) +R(x-2) = P(x)
+R(x) = -Q(x)
+P_n(x) = x^n
+R_n(x)
+P_{n-1} (x) = x^{n-1} 
+ P_{n-1} (x) = \frac{ P_n ' (x)}{n} = \frac{ -R_n '(x) +R'(x-1)+R'(x-2) } {n} 
+R_{n-1} (x) = \frac{R_n ' (x)}{n} 
+R_n(x) = n \int R_{n-1}(x) \, dx + C_n
+C_n=R_n(0)
+S_n (x) = R_n(x) - R_n(0)
+R_{n-1}
+- S_n(1) - C_n + C_n + S_n(1) + C_n = 1 \Rightarrow C_n = 1 + S_n(1) - S_n(-1)
+O(n^2)
+p
+R_p(x) \equiv x^p + 3 \pmod {p}

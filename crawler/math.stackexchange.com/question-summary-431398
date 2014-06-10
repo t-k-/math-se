@@ -1,0 +1,14 @@
+A =\begin{bmatrix} 1 & 0 & 0 & 0 & 0\\0 & 1 & 0 & 0 & 0\\0 & 0 & 1 & 0 & 0\\0 & 0 & 0 & a & b\\0 & 0 & 0 & c & d\\\end{bmatrix}
+ad-bc
+ad-bc\ne0
+ \left(\begin{array}{cc|cc} a & b & 1 & 0\\ c & d & 0 & 1 \end{array}\right)\sim \left(\begin{array}{cc|cc} ac & bc & c & 0\\ ac & ad & 0 & a \end{array}\right)\sim \left(\begin{array}{cc|cc} ac & bc & c & 0\\ 0 & ad-bc &-c & a \end{array}\right)\sim \left(\begin{array}{cc|cc} ac & bc & c & 0\\ 0 & 1 &-\frac{c}{ad-bc} & \frac{a}ad-bc \end{array}\right)\sim \left(\begin{array}{cc|cc} ac & 0 & \frac{acd}{ad-bc} & -\frac{abc}{ad-bc}\\ 0 & 1 &-\frac{c}{ad-bc} & \frac{a}{ad-bc} \end{array}\right)\sim \left(\begin{array}{cc|cc} 1 & 0 & \frac{d}{ad-bc} & -\frac{b}{ad-bc}\\ 0 & 1 &-\frac{c}{ad-bc} & \frac{a}{ad-bc} \end{array}\right) 
+\begin{pmatrix}a&b\\c&d\end{pmatrix}^{-1}=\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}
+A=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)
+A^{-1}
+{\bf R}^3\oplus{\bf R}^2
+{\rm Id}\oplus A
+{\rm Id}\oplus A^{-1}
+_____________
+A:=\begin{bmatrix} a & b\\ c & d\end{bmatrix}
+\begin{bmatrix}a & b\\ c & d\end{bmatrix}^{-1}=\dfrac{1}{ad-bc}\begin{bmatrix}  d & -b\\ -c & a\end{bmatrix}=(\det (A))^{-1}\begin{bmatrix}  d & -b\\ -c & a\end{bmatrix}
+\begin{bmatrix}1 & 0 & 0 & 0 & 0\\ 0 & 1 & 0 & 0 & 0\\ 0 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 &d\det (A))^{-1} & -b\det (A))^{-1}\\ 0 & 0 & 0 &-c\det (A))^{-1} & a\det (A))^{-1} \end{bmatrix}\color{grey}{=\begin{bmatrix} I_3 & 0\\ 0 & A^{-1}\end{bmatrix}_{5\times 5}}.

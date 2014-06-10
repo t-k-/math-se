@@ -1,0 +1,15 @@
+C
+\sqrt{x^2+y^2}\le z \le 2
+\mathbf{x}(u,v)
+S
+C
+S
+0\le u\le2\pi
+0\le v\le 2
+\mathbf{x}(u,v)=(v\cos{u},v\sin{u},v)
+S=\int_{D(u,v)}\|x_u \times x_v\|dudv, 
+D(u,v)=\{(u,v)\in\mathbb R^{2} |   0\leq u\leq 2\pi, 0\leq v\leq 2\}
+x_u=(-v\sin u, v\cos u, 0), 
+x_v=(\cos u,\sin u, 1). 
+\|x_u\times x_v\|=\sqrt{2v^2}=\sqrt{2}v
+S=\int_{D(u,v)}\|x_u \times x_v\|dudv=\int_{0}^{2\pi}\int_{0}^{2}\sqrt{2}vdudv=  2\pi\sqrt{2}\frac{1}{2}2^2=4\sqrt{2}\pi.

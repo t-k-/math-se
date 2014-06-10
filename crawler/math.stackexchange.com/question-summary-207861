@@ -1,0 +1,13 @@
+\frac{1}{1+e^{-x}}
+\mu
+\sigma
+\int_{-\infty}^\infty \frac{1}{1+e^{-x}} \frac{1}{\sigma\sqrt{2\pi}}\ e^{ -\frac{(x-\mu)^2}{2\sigma^2} } dx
+\operatorname{E}[S(X)] \neq S(\operatorname{E}[X])
+\sigma
+  \left( {{\rm e}^{-{\mu}}}+1 \right) ^{-1}+{\frac { \left( { {\rm e}^{-{\mu}}}-1 \right) {{\rm e}^{-{\mu}}}}{2\, \left( {{\rm e} ^{-{\mu}}}+1 \right) ^{3}}}{{\sigma}}^{2}+{\frac { \left( { {\rm e}^{-3\,{\mu}}}-11\,{{\rm e}^{-2\,{\mu}}}+11\,{{\rm e}^{-{ \mu}}}-1 \right) {{\rm e}^{-{\mu}}}}{8\, \left( {{\rm e}^{-{\mu} }}+1 \right) ^{5}}}{{\sigma}}^{4}+{\frac {{{\rm e}^{-{\mu} }} \left( {{\rm e}^{-5\,{\mu}}}-57\,{{\rm e}^{-4\,{\mu}}}+302\,{ {\rm e}^{-3\,{\mu}}}-302\,{{\rm e}^{-2\,{\mu}}}+57\,{{\rm e}^{-{ \mu}}}-1 \right) }{48\, \left( {{\rm e}^{-{\mu}}}+1 \right) ^{7}}}{{ \sigma}}^{6}+{\frac {{{\rm e}^{-{\mu}}}  \left( {{\rm e}^{-7\,{\mu}}}-247\,{{\rm e}^{-6\,{\mu}}}+4293\,{ {\rm e}^{-5\,{\mu}}}-15619\,{{\rm e}^{-4\,{\mu}}}+15619\,{ {\rm e}^{-3\,{\mu}}}-4293\,{{\rm e}^{-2\,{\mu}}}+247\,{{\rm e}^{ -{\mu}}}-1 \right) }{384\, \left( {{\rm e}^{-{\mu}}}+1 \right) ^{9}}} {{\sigma}}^{8}+O \left( {{\sigma}}^{10} \right)  
+x = \mu + \sigma t
+ \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty \dfrac{e^{-t^2/2}}{1 + e^{-\mu - \sigma t}}\ dt 
+\frac{1}{1+e^{-\mu - \sigma t}} = \frac{1}{1+e^{-\mu}} + \frac{e^{-\mu} \sigma t}{(1+e^{-\mu})^2} + \frac{e^{-\mu} ( e^{-\mu} - 1) \sigma^2 t^2}{(1+e^{-\mu})^3} + \ldots
+\mathrm{sigm}(a) \approx \Phi(\lambda a)
+\lambda=\pi/8
+\int \mathrm{sigm}(x) \, N(x \mid \mu,\sigma^2) \, dx \approx \int \Phi(\lambda x) \, N(x \mid \mu,\sigma^2) \, dx = \Phi\left(\frac{x}{\sqrt{\lambda^{-2} + \sigma^2}}\right).

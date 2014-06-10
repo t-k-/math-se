@@ -1,0 +1,21 @@
+\varsigma \ \colon\ \mathbb N\to \mathbb Z\ \colon\ k\mapsto (-1)^{\lfloor \frac{k-1}{2}\rfloor}
+S(m,n)=\displaystyle\sum_{k=m}^n k\cdot \varsigma(k)
+n\ge 1
+S(1,\lfloor n/2\rfloor)=S(\lfloor n/2\rfloor+1,n)
+-(n+1)\le \delta(n)\le 2(n+1)
+\delta(n)=S(1,\lfloor n/2\rfloor)-S(\lfloor n/2\rfloor+1,n)
+S_0(n) = S(1,n)
+S(m,n) = S_0(n)-S_0(m)
+S_0
+S_0(4k+1) = 1
+S_0(4k+3) = 0
+S_0(4k+2) = 4k+3
+S_0(4k) = -4k
+\delta(n)
+n
+8
+\delta(n)
+n = 8k
+S_0(n/2) = S_0(n)/2
+n=8k+7
+S_0(n) = S_0(\lfloor n/2 \rfloor) = 0

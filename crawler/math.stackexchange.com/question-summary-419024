@@ -1,0 +1,13 @@
+p_i
+q_i
+p_1
+q_1
+n
+P(X=Y=n)\leq p_i\wedge q_i
+P(X=Y)=\pi
+\pi = \sum_{i=1}^n p_i\wedge q_i.
+\sum_{i=1}^n p'_i = \sum_{i=1}^nq'_i=1-\pi
+\begin{align}p'_i &= p_i - (p_i\wedge q_i) \\ q'_i &= q_i - (p_i\wedge q_i)\end{align}
+P(X=i,Y=j)=\begin{cases}p_i\wedge q_i &:\mathop{if}\,i=j, \\ \frac{p'_i\cdot q'_j}{1-\pi} &:\mathop{if}\,i\neq j.  \end{cases}
+j
+\begin{align}P(X=i) &= (p_i\wedge q_i) + \sum_{j=1}^n \frac{p'_i\cdot q'_j}{1-\pi} \\ &= (p_i\wedge q_i) + p'_i\sum_{j=1}^n \frac{ q'_j}{1-\pi} \\ &=p_i.\end{align}

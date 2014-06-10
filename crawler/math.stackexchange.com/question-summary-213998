@@ -1,0 +1,16 @@
+v_\pi
+a
+{up, down, left, right}
+v_\pi(15)
+12, 13, 14, 15
+15
+v_\pi
+v_\pi(s)=\sum_a \pi(a|s)\sum_{s'} p(s'|s,a)[r(s,a,s')+\gamma v_\pi(s')]
+v_\pi(s)=\sum_a \sum_{s'}(-1 + v_\pi(s'))
+\lambda
+\mu
+\sum_{k \geq 0} \pi_k =1
+\pi_0=1-\frac{\lambda}{\mu}
+\pi_j = \big(\frac{\lambda}{\mu} \big)^j (1-\frac{\lambda}{\mu})
+ 0=p'_{j}(t)=\mu \pi_{j+1} + \lambda \pi_{j-1} - (\lambda+\mu) \pi_{j} 
+ \pi_j=\frac{\mu}{\mu+\lambda}\pi_{j+1} + \frac{\lambda}{\mu+\lambda} \pi_{j-1} 

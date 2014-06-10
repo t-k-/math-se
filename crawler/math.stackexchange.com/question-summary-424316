@@ -1,0 +1,11 @@
+n
+\dfrac{1}{2}C_{2n}^1 - \dfrac{2}{3} C_{2n}^2 + \dfrac{3}{4} C_{2n}^3 - \dfrac{4}{5} C_{2n}^4 + \cdots - \dfrac{2n}{2n+1} C_{2n}^{2n} =\dfrac{1}{2013}.
+\frac r{r+1}\binom {2n}r=\binom {2n}r-\frac{(2n)!}{r!(2n-r)!(r+1)}
+=\binom {2n}r-\frac1{2n+1}\cdot \binom{2n+1}{r+1}
+\text{So, }\sum_{1\le r\le 2n}\frac r{r+1}(-1)^{r-1}\binom {2n}r
+=\sum_{1\le r\le 2n}(-1)^{r-1}\binom{2n}r-\frac1{2n+1}\cdot \sum_{1\le r\le 2n}(-1)^{r-1}\binom{2n+1}{r+1}
+\text{ Now, }\sum_{1\le r\le 2n}(-1)^{r-1}\binom{2n}r=1-\left(\binom{2n}0-\binom{2n}1+\binom{2n}2-\cdots+\binom{2n}{2n}\right)=1-(1-1)^{2n}=1
+\text{ and } \sum_{1\le r\le 2n}(-1)^{r-1}\binom{2n+1}{r+1}
+=\binom{2n+1}0-\binom{2n+1}1+\binom{2n+1}2-\cdots+\binom{2n+1}{2n}-\binom{2n+1}{2n+1}-\binom{2n+1}0+\binom{2n+1}1
+=(1-1)^{2n+1}-\binom{2n+1}0+\binom{2n+1}1=2n+1-1=2n
+1-\frac{2n}{2n+1}=\frac1{2n+1}

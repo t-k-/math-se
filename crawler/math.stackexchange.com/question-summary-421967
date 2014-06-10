@@ -1,0 +1,15 @@
+f(x)=||Ax-b||_2^2
+\partial f/\partial x=A^T(Ax-b)
+A
+\partial f/\partial x=A^*(Ax-b)
+x
+A
+b
+f(x)=||Ax-b||_2^2=(Ax-b)^T(Ax-b)=x^TA^TAx-2x^TA^Tb+b^Tb
+\partial f/\partial x=2A^T(Ax-b)
+A
+b
+f(x)=||Ax-b||_2^2=(Ax-b)^H(Ax-b)=x^TA^HAx-x^TA^Hb-b^HAx+b^Hb=\\ =x^TA^HAx-2x^T\text{Re}\{A^Hb\}+b^Hb
+^H
+x
+\partial f/\partial x=2(A^HAx-\text{Re}\{A^Hb\})

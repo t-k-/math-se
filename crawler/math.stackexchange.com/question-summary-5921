@@ -1,0 +1,74 @@
+X
+Y
+[0, \infty)
+F_Y(w)\le F_X(w)
+F_X(x), F_Y(y)
+w \rightarrow \infty
+F_Y(F_X)
+F_X
+F_Y
+[0, 1]
+P(Y\lt X)
+F_Y(F_X)
+F_Y
+F_X
+Y-X
+f_{Y-X}(w) = \int_{0}^{\infty}f_X(x) f_Y(w+x) dx
+P(Y < X) = P(Y -X<0) = \int_{-\infty}^{0} f_{Y-X}(w)  dw
+P(Y < X)  = \int_{-\infty}^{0} dw  \int_{0}^{\infty} dx f_X(x) f_Y(w+x) 
+ u = w +x
+P(Y < X)  = \int_{0}^{\infty} dx f_X(x)  \int_{-\infty}^{x} du   f_Y(u) 
+P(Y < X)  = \int_{0}^{\infty} dx f_X(x)  F_Y(x) 
+f_X(x) dx = dF_X(x) 
+x
+F_X
+P(Y < X)  = \int_{0}^{1} dF_X  F_Y
+X
+Y
+u
+(0,\frac12)
+X
+Y
+[Y<X]=[Y=0,X=1]
+P(Y<X)=u(1-u)
+\frac14
+0
+P(Y<X)<\frac12
+P(X=0)=P(Y=0)=1-u,\quad P(X=1)=P(Y=1)=u. 
+[Y\le X]
+u
+(0,1)
+X
+(u,1+u)
+Y
+(0,1)
+F_Y(x)\ge F_X(x)
+x
+(X,Y)
+Y=X-u
+P(Y\le X)=1
+P(Y\le X)\ge\frac12
+(X,Y)
+P(Y\le X)=\frac12+u-\frac12u^2
+P(Y\le X)\ge\frac12
+Y=\varphi(X)
+\varphi(x)=x+u
+x\le1-u
+\varphi(x)=x+u-1
+Y
+(0,1)
+[Y\le X]=[X>1-u]
+P(Y\le X)=2u
+P(Y\le X)
+0
+P(Y\le X)\ge\frac12
+X
+Y
+P(Y\le X)\ge\frac12
+X'
+X
+[X'\le X]
+[X\le X']
+P(X'\le X)+P(X\le X')=1+P(X=X')\ge1
+P(X'\le X)\ge\frac12
+P(Y\le X)=E(P(Y\le X|X))=E(F_Y(X))\ge E(F_X(X))=P(X'\le X), 

@@ -1,0 +1,33 @@
+E_n(A)
+f
+f+g: G^n \to A :: x \mapsto f(x) + g(x)  .
+n=0
+a \in E_0(A) = A
+d_0(a) : G \to A
+d_n: E_n(A) \to E_{n+1}(A)::  d_n(f)(g_0,\ldots,g_n) = g_0\cdot f(g_1,\ldots,g_n) + \sum_{i=1}^{n}\,(-1)^i f(g_0,\ldots,g_{i-2},(g_{i-1}\,g_i),g_{i+1},\ldots,g_n) + (-1)^{n+1}\,f(g_0,\ldots,g_{n-1})
+f: G^n \to A \in E_n(A)
+g_0,\ldots,g_n\in G
+d_0(f)(g) = g\,a - a.
+d_n(f)
+d_{n+1}(f)(g_0,\ldots,g_{n+1}) = g_0\,f(g_1,\ldots,g_{n+1}) + \sum_{i=1}^{n+1}(-1)^i\,f(g_0,\ldots,g_{i-1}g_i,\ldots,g_{n+1}) + (-1)^{n+2}\,f(g_0,\ldots,g_n)
+(d_n \circ d_{n+1})(f)(g_0,\ldots,g_{n+1}) = d_n \circ \big( g_0\,f(g_1,\ldots,g_{n+1}) \big) = g_0\,d_n(f)(g_1,\ldots,g_{n+1}) = g_0\,g_1\,f(g_2,\ldots,g_{n+1}) + g_0\,\sum_{i=1}^n\,(-1)^i\,f(g_1,\ldots,(g_{i-1}g_i),\ldots,g_{n+1}) + g_0\,(-1)^{n+1}f(g_1,\ldots,g_n)
+ d_n(f) \circ \left( \sum_{i=1}^{n+1}\,(-1)^i\,f(g_0,\ldots,(g_{i-1}g_i),\ldots,g_{n+1}) \right) = \sum_{i=1}^{n+1}\,(-1)^i\,d_n(f)(g_0,\ldots,(g_{i-1}g_i),\ldots,g_{n+1}) = nightmare!   .
+f: G^2 = G \times G \to A
+Z^2(A)
+f
+g
+G
+ker\;d_2
+g\cdot f(g',g'') - f(g\,g',g'') + f(g,g'g'') - f(g,g') = 0
+d_n(f)
+n+1
+i
+0\le i\le n+1
+g_{-1}=g_{n+1}=1
+\tilde f(g_0,\ldots, g_{n+1})=g_0\cdot f(g_1,\ldots,g_n)
+(-1)^i\tilde f(g_{-1},\ldots, (g_{i-1}g_i),\ldots, g_{n+1})
+d_{n+1}\circ d_n
+(-1)^i(-1)^j
+(-1)^j(-1)^{i+1}
+(-1)^{j-1}(-1)^{i}
+d_{n+1}\circ d_n=0

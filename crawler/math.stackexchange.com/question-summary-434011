@@ -1,0 +1,42 @@
+\sum_{n=1}^N (n+1)(n+2) ... (n+k)
+(n+1)(n+2)..(n+k)(n+k+1) - n(n+1)..(n+k) = (n+k+1-n) (n+1)...(n+k)
+\sum_{n=1}^N (n+1)(n+2) ... (n+k) = \frac{1}{k+1}\sum_{n=1}^N (n+1)...(n+k+1) - n(n+1)...(n+k)
+\sum_{n=1}^N (2n+1)(2n+2) ... (2n+k)
+n
+\sum_{n=1}^N (an+1)(an+2) ... (an+k)
+a_k=\sum_{n=1}^N(2n+1)(2n+2)\cdots(2n+k)
+b_k=\sum_{n=1}^N (2n)(2n+1)\cdots(2n+k-1)
+a_k
+(2n+k+1-2n)=k+1
+a_k=\frac{1}{k+1}(a_{k+1}-b_{k+1})
+b_k
+(2n+k-2n+1)=k+1
+b_k=\frac{1}{k+1}(b_{k+1}-\sum_{n=0}^{N-1}(2n+1)(2n+2)\cdots(2n+k+1))=\frac{1}{k+1}(b_{k+1}-a_{k+1}+s_k)
+s_k=(2N+1)(2N+2)\cdots(2N+k+1)-(k+1)!
+a_k+b_k=\frac{s_k}{k+1}
+k
+k+1
+-b_{k+1}=a_{k+1}-\frac{s_{k+1}}{k+2}
+a_k
+a_k=\frac{1}{k+1}(2a_{k+1}-\frac{s_{k+1}}{k+2})
+a_{k+1}
+a_{k+1}=\frac{k+1}{2}a_k+\frac{s_{k+1}}{2k+4}
+P(k,a,j) =\prod_{i=1}^k (ai+j) =a^k \prod_{i=1}^k (i+j/a) 
+a
+a=1
+\begin{align} P(k, a, j+a) - P(k, a, j) &=a^k \prod_{i=1}^k (i+(j+a)/a) -a^k \prod_{i=1}^k (i+j/a)\\ &=a^k\big( \prod_{i=1}^k (i+(j+a)/a) -\prod_{i=1}^k (i+j/a)\big)\\ &=a^k\big( \prod_{i=1}^k (i+1+j/a) -\prod_{i=1}^k (i+j/a)\big)\\ &=a^k\big( \prod_{i=2}^{k+1} (i+j/a) -\prod_{i=1}^k (i+j/a)\big)\\ &=a^k \big(\prod_{i=2}^{k} (i+j/a)\big) \big ((k+1+j/a) - (1+j/a)\big)\\ &=a^k k\prod_{i=2}^{k} (i+j/a)\\ &=a k\prod_{i=2}^{k} (ai+j)\\ &=a k\prod_{i=1}^{k-1} (a(i+1)+j)\\ &=a k\prod_{i=1}^{k-1} (ai+a+j)\\ &=a kP(k-1, a, j+a)\\ \end{align} 
+P(k+1, a, j+a) - P(k+1, a, j) =a(k+1) P(k, a, j+a) 
+\dfrac{P(k+1, a, j+a) - P(k+1, a, j)}{a(k+1)}  = P(k, a, j+a) 
+\dfrac{P(k+1, a, j) - P(k+1, a, j-a)}{a(k+1)}  = P(k, a, j) 
+a=1
+P(k+1, 1, j+1) - P(k+1, 1, j) =(k+1)P(k-1, 1, j+1) 
+P(k+1, 1, j) - P(k+1, 1, j-1) =(k+1)P(k-1, 1, j) 
+\begin{align} \sum_{j=1}^{Na} P(k, a, j) &=\frac1{a(k+1)}\sum_{j=1}^{Na} \big(P(k+1, a, j) - P(k+1, a, j-a)\big)\\ &=\frac1{a(k+1)}\big(\sum_{j=1}^{Na} P(k+1, a, j) -\sum_{j=1}^{Na} P(k+1, a, j-a)\big)\\ &=\frac1{a(k+1)}\big(\sum_{j=Na-a+1}^{Na} P(k+1, a, j) -\sum_{j=1-a}^{0} P(k+1, a, j)\big)\\ \end{align} 
+a
+N
+a
+a
+1
+a-1
+P(k, a, Na+i)
+a=1

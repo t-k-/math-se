@@ -1,0 +1,13 @@
+ \frac{\mathrm{d}}{\mathrm{dt}} \{f,g\} = \{\dot f,g\} + \{f, \dot g\} = \{\{f,g\}, H\} + \frac{\partial}{\partial \mathrm{t}} \{f, g \}  
+(\textbf{q}, \textbf{p}, t)
+f = f(\textbf{q}, \textbf{p}, t)
+g = g(\textbf{q}, \textbf{p}, t)
+H = H(\textbf{q}, \textbf{p}, t)
+ \{f,\{g,H\}\} + \{H,\{f,g\}\} + \{g,\{H,f\}\} = 0 
+f, g, H
+(\textbf{q}, \textbf{p}, t)
+(\mathbf{Q}, \mathbf{P}, t)
+ \mathbf{\dot Q} = \frac{\partial H}{\partial \mathbf{P}} \\\\\\\\\\\\\\\\ \mathbf{\dot P} = - \frac{\partial H}{\partial \mathbf{Q}}
+(\mathbf{Q}(\textbf{q}, \textbf{p}, t), \mathbf{P}(\textbf{q}, \textbf{p}, t), t)
+ \mathbf{Q} = \frac{\partial}{\partial \mathbf{P}} \int^{t} H(\mathbf{Q} (\mathbf{q}, \mathbf{p}, t'), \mathbf{P}(\textbf{q}, \textbf{p}, t'), t')  \mathrm{dt'}
+ \mathbf{P} = - \frac{\partial}{\partial \mathbf{Q}} \int^{t} H(\mathbf{Q} (\mathbf{q}, \mathbf{p}, t'), \mathbf{P}(\textbf{q}, \textbf{p}, t'), t')  \mathrm{dt'} 

@@ -1,0 +1,20 @@
+0\leq t \leq T
+T
+J = \text{min} \int_0^T (\alpha + \beta_1\cdot v \cdot R_T \cdot q+ \beta_2 \cdot \frac{M}{1000} \cdot v \cdot a^2 \cdot p \cdot q)\,dt
+R_T = b_1 + b_2 \cdot v^2 + \frac{M}{1000}\cdot a
+a > 0
+ p = \text{sgn}(a) = \begin{cases} 1, & \text{if $a > 0$}  \\ 0, & \text{otherwise} \end{cases} 
+R_T > 0
+ q = \text{sgn}(R_T) = \begin{cases} 1, & \text{if $R_T > 0$}  \\ 0, & \text{otherwise} \end{cases} 
+s
+v
+a
+ \begin{cases} \dot s(t)= v(t)\text{;}\ v(0) = 0\text{,}\ s(T) = D \\ \dot v(t)= a(t)\text{;}\ a(0) = 0 \end{cases} 
+\alpha
+\beta_1
+\beta_2
+b_1
+b_2
+M
+D
+J

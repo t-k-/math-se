@@ -1,0 +1,12 @@
+MCD
+flag
+USA
+MCD
+flag
+P(MCD \cap flag|USA) = P(MCD | USA) \times P(flag | USA) = 0.035
+P(MCD \cap flag|!USA)
+P(MCD | !USA)
+\frac{P(MCD \cap !USA)}{P(!USA)} = \frac{P(MCD) - P(MCD \cap USA)}{P(!USA)} = \frac{0.01-0.0005}{0.99} \approx 0.009596.
+P(MCD \cap flag | !USA) = P(MCD | !USA) \times P(flag|!USA) \approx 0.009596 \times 0.3 \approx 0.002879.
+P(USA|flag \cap MCD) = \frac{P(flag \cap MCD | USA) \times P(USA)}{P(flag \cap MCD)}.
+P(flag \cap MCD) = P(flag \cap MCD | USA)\times P(USA) + P(flag \cap MCD | !USA)\times P(!USA).

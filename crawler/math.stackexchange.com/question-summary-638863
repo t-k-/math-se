@@ -1,0 +1,25 @@
+A
+B
+m \times n
+\operatorname{rank}(A)+\operatorname{rank}(B)+\operatorname{rank}(A+B) \ge \operatorname{rank}\pmatrix{A & B}+\operatorname{rank}\pmatrix{A \\ B},
+A, B
+K^n \to K^m
+\varphi \colon K^n \to K^m \times K^m
+\varphi(X) = (AX, BX)
+\varphi
+\begin{bmatrix} A \\ B \end{bmatrix}
+U = \textrm{im} \, \varphi
+\Delta = \{ (u,v) \in K^m \times K^m \mid u + v = 0 \}
+\pi_1
+\pi_2
+K^m \times K^m \to K^m
+ \textrm{rk}(A) = \dim \textrm{im}(A)  = \dim \pi_1(U)
+ \textrm{rk}(B) = \dim \textrm{im}(B)  = \dim \pi_2(U)
+ \textrm{rk} \begin{bmatrix} A & B \end{bmatrix}= \dim (\textrm{im}(A) + \textrm{im}(B))  = \dim (\pi_1(U) + \pi_2(U))
+ \textrm{rk} \begin{bmatrix} A \\ B \end{bmatrix}= \dim \textrm{im}(\varphi)  = \dim U
+\begin{align} \textrm{rk}(A + B) &= n - \dim \ker(A + B) \\ & = n - \dim \varphi^{-1}(\Delta) \\ &= n - \dim \ker \varphi - \dim(\Delta \cap \textrm{im}(\varphi)) \\ &= \dim \textrm{im}(\varphi) - \dim(\Delta \cap \textrm{im}(\varphi)) \\ &=\dim U - \dim (\Delta \cap U) \end{align}
+\dim (\Delta \cap U) \leq \dim \pi_1(U) + \dim \pi_2(U) - \dim (\pi_1(U) + \pi_2(U)),
+\dim(\Delta \cap U) \leq \dim(\pi_1(U) \cap \pi_2(U)).
+\pi_1
+\Delta \cap U
+\pi_1(U) \cap \pi_2(U)

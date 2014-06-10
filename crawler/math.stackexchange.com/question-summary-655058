@@ -1,0 +1,14 @@
+\int_0^{\pi / 2} \ln (\sin x)\;dx
+\int_{0}^{\frac{\pi}{2}} 1 \cdot \ln (\sin x)dx = x \log \sin x |_{0}^{\frac{\pi}{2}} -\int_{0}^{\frac{\pi}{2}} \frac{x \cos x dx}{\sin x}
+I
+x
+y=\frac\pi2-x
+z=2x
+t=\pi-x
+J
+2I=-\frac\pi2\ln2+I
+I=-\frac\pi2\ln2
+I=\int_0^{\pi/2}\ln(\cos y)\,\mathrm dy
+\begin{split}2I&=\int_0^{\pi/2}\left[\ln(\sin x)+\ln(\cos x)\right]\mathrm dx=\int_0^{\pi/2}\ln\left(\frac12\sin 2x\right)\,\mathrm dx\\&=-\frac\pi2\ln 2+\int_0^{\pi/2}\ln(\sin 2x)\,\mathrm dx\end{split}\tag{1}
+\begin{split}\int_0^{\pi/2}\ln(\sin 2x)\,\mathrm dx&=\frac12\int_0^\pi\ln(\sin z)\,\mathrm dz\\&=\frac12\int_0^{\pi/2}\ln(\sin x)\,\mathrm dx+\frac12\int_{\pi/2}^\pi\ln(\sin x)\,\mathrm dx\\&=\frac12I+\frac12J.\end{split}\tag{2}
+J=\int_{\pi/2}^\pi\ln(\sin x)\,\mathrm dx=\int_0^{\pi/2}\ln(\sin t)\,\mathrm dt=I.

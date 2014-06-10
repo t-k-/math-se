@@ -1,0 +1,19 @@
+\mathcal{L}(\gamma)
+\mathbf{S}
+\mathbf{q}
+\mathbf{I}
+ \mathcal{L}(\gamma) = \log\vert \mathbf{I} + \gamma\mathbf{S} \vert - \mathbf{q}^T(\gamma^{-1}\mathbf{I} + \mathbf{S})^{-1} \mathbf{q}, 
+\frac{\partial \mathcal{L}(\gamma)}{\partial \gamma}=0
+H = \frac{\partial^2 \mathcal{L}(\gamma)}{\partial \gamma^2}
+\frac{\partial L(\gamma)}{\partial \gamma}
+ \frac{\partial L(\gamma)}{\partial \gamma} = \frac{\partial}{\partial \gamma} \log|I + \gamma S| - \frac{\partial }{\partial \gamma}\left[q^T(\gamma^{-1}I+S)^{-1}q\right]\\ =tr((I+\gamma S)^{-1}S) -tr(qq^T\frac{\partial }{\partial \gamma}(\gamma^{-1}I+S)^{-1})\\ =tr(S^{-1/2}(S^{-1}+\gamma I)^{-1}S^{-1/2}S) + tr(qq^T(\gamma^{-1}I+S)^{-1}(-\gamma^{-2}I)(\gamma^{-1}I+S)^{-1}) \\ =tr((S^{-1}+\gamma I)^{-1})-\gamma^{-2}q^T(\gamma^{-1}I+S)^{-2}q\\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - \gamma^{-2}q^T(\gamma^{-1}I+S)^{-2}q \\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - q^T(I+\gamma S)^{-2}q 
+\lambda_i
+S
+S
+S = Q^{-1}\Sigma Q
+Z_{ii}
+Q^2qq^TQ^{-2}
+ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - q^T(I+\gamma Q^{-1}\Sigma Q)^{-2}q \\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - tr(qq^T(I+\gamma Q^{-1}\Sigma Q)^{-2}) \\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - tr(qq^TQ^{-2}(I+\gamma \Sigma )^{-2}Q^2) \\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - tr(Q^2qq^TQ^{-2}(I+\gamma \Sigma )^{-2}) \\ = \sum_i(\lambda_i^{-1}+\gamma)^{-1} - \sum_i \dfrac{Z_{ii}}{(1+\gamma\lambda_i)^2} 
+ \sum_i \dfrac{Z_{ii}}{(1+\gamma\lambda_i)^2} = \sum_i \dfrac{\lambda_i}{1+\gamma\lambda_i}\\ \sum_i \dfrac{\lambda_i(1+\gamma\lambda_i) - Z_{ii}}{(1+\gamma\lambda_i)^2} = 0 
+ \frac{\partial^2 L(\gamma)}{\partial \gamma^2} = \frac{\partial}{\partial \gamma}  \left[\sum_i(\lambda_i^{-1}+\gamma)^{-1} - q^T(I+\gamma S)^{-2}q \right]\\ =\sum_i-(\lambda_i^{-1}+\gamma)^{-2} - \frac{\partial}{\partial \gamma} q^T(I+\gamma S)^{-2}q\\ =\sum_i-(\lambda_i^{-1}+\gamma)^{-2} - tr(\frac{\partial}{\partial U(\gamma)} q^TU(\gamma)q \frac{\partial}{\partial \gamma}(I+\gamma S)^{-2})\\ =\sum_i-(\lambda_i^{-1}+\gamma)^{-2} - tr(qq^T \frac{\partial}{\partial \gamma}(I+\gamma S)^{-2}) \\ =\sum_i-(\lambda_i^{-1}+\gamma)^{-2} - tr(qq^T (I+\gamma S)^{-1}((I+\gamma S)^{-1}S + S(I+\gamma S)^{-1})(I+\gamma S)^{-1}) 
+ =-tr((S^{-1}+\gamma I)^{-2}) - tr(qq^T (I+\gamma S)^{-1}((I+\gamma S)^{-1}S + S(I+\gamma S)^{-1})(I+\gamma S)^{-1}) 

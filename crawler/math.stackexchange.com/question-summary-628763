@@ -1,0 +1,21 @@
+X
+Y
+f(X,Y) = c \sqrt{1 - x^2 - y^2}, \,\,\,\,\, x^2 + y^2 \leq 1
+c
+\int\int_A f(x,y) dy dx = \int \int_A c \sqrt{1 - x^2 - y^2} = 1
+x = r\,cos(\theta)\, ,\, \textrm{and let}\, y = r\,sin(\theta)
+dy dx = r dr d\theta
+c\int_0^{2\pi}\int_0^1 \sqrt{1 - r^2}\,r dr d\theta
+1 - r^2 = u\, \textrm{and}\, -2rdr = du
+-\frac{c}{2}\int_0^{2\pi}\int_1^0 \sqrt{u} du d\theta
+-\frac{c}{2}\int_0^{2\pi}\int_1^0 \sqrt{u} du d\theta = -\frac{c}{2}\int_0^{2\pi}[\frac{2}{3}u^{3/2}]_1^0 d\theta = \frac{c}{3}\int_0^{2\pi}[u^{3/2}]_0^1 d\theta = \frac{c}{3}\int_0^{2\pi} d\theta = \frac{c}{3}\cdot 2\pi
+\color{red}{c = \frac{3}{2\pi}}
+f_X(x) = \int_{-\sqrt{1 - x^2}}^{\sqrt{1 - x^2}} f(x,y) dy = \frac{3}{2\pi} \int_{-\sqrt{1 - x^2}}^{\sqrt{1 - x^2}}\sqrt{1 - x^2 - y^2} \color{red}{dy}
+f_Y(y)
+f_Y(y) = \int_{-\sqrt{1 - y^2}}^{\sqrt{1 - y^2}} f(x,y) dy = \frac{3}{2\pi} \int_{-\sqrt{1 - y^2}}^{\sqrt{1 - y^2}}\sqrt{1 - x^2 - y^2} \color{red}{dx}
+y=\sqrt{1-x^2}\sin(t)
+dy=\sqrt{1-x^2}\cos(t)dt
+ f_X(x)=\int_{-\sqrt{1-x^2}}^\sqrt{1-x^2}c\sqrt{1-x^2-y^2}dy = c(1-x^2)\int_{-\pi/2}^{\pi/2}\cos^2(t)dt=c\frac{\pi}{2} (1-x^2)=\frac{3}{4}(1-x^2) 
+y
+y
+\sqrt{1-x^2}

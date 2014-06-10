@@ -1,0 +1,38 @@
+\mathbb{D}[0,1]
+[0,1]
+[0,1]
+\epsilon >0
+ \exists
+ 0=t_0<t_1<\ldots,t_k=1
+S_i = [t_i,t_{i+1})
+\sup_{s,t \in S_i} |f(s)-f(t)| <\epsilon
+i
+\epsilon >0
+f
+(\sum_{l=1}^{k} J_{l}  ) + \epsilon \times k
+k
+f
+\exists \delta_x,\eta_x > 0
+x_0 \in (x-\delta_x,x) \Rightarrow |f(x_0) - f(x^-)| < \epsilon
+x_0 \in (x,x+\eta_x) \Rightarrow |f(x_0) - f(x)| < \epsilon
+f(x^-)
+f(x^+) = f(x)
+O_x = (x-\delta_x,x)
+V_x = (x,x+\eta_x)
+[0,1]
+[0,1]
+\bigcup_{x \in [0,1]} O_x \cup V_x
+ [0,1] \subseteq \left(\bigcup_{k=1}^n O_{x_k}\right) \cup \left(\bigcup_{k=n+1}^m V_{x_k}\right)
+k=1...n
+x \in O_{x_k}
+|f(x)-f(x^-_k)| < \epsilon \Rightarrow |f(x)| < |f(x^-_k)| + \epsilon
+M_1 = \max_{k=1...n} |f(x_k^-)|
+|f(x)| < M_1 + \epsilon
+x
+O
+M_2 = \max_{k=n+1...m} |f(x_k)|
+|f(x)| < M_2 + \epsilon
+V
+x \in [0,1]
+\blacksquare
+|f(x)| < \max(M_1,M_2) + \epsilon

@@ -1,0 +1,12 @@
+L=\lim_{n\to \infty} \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx
+\left|\sqrt[n]{x}\sin x\right|\leq 1
+\lim_{n\to \infty} \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx=\int_{0}^{\pi}\sin x\: dx=2
+ \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx \leq \sqrt[n]{\pi} \int_{0}^{\pi}\sin x\: dx=2 \sqrt[n]{\pi} 
+\forall \delta
+0\lt \delta \lt \pi
+ \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx\geq   \int_{\delta}^{\pi}\sqrt[n]{x}\sin x\: dx\geq \sqrt[n]{\delta } \int_{\delta }^{\pi}\sin x\: dx=\sqrt[n]{\delta } (1+\cos \delta)
+\sqrt[n]{\delta } (1+\cos \delta)\leq \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx\leq 2 \sqrt[n]{\pi}
+ 1+\cos \delta\leq\varliminf_{n\to \infty}\int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx\leq \varlimsup_{n\to \infty}\int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx\leq 2
+\delta\to 0
+\lim_{n\to \infty} \int_{0}^{\pi} \sqrt[n]{x}\sin x\: dx=2
+\lim_{n \to \infty} \int_0^\pi x^{1/n} \sin x dx = \int_0^\pi (\lim_{n \to \infty} x^{1/n} \sin x) dx = \int_0^\pi \sin x dx = 2.

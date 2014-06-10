@@ -1,0 +1,21 @@
+\space \displaystyle\int e^{\sin^{-1}x}~\mathrm dx
+u=\sin^{-1}x
+\begin{align}1)&\mathrm du=\displaystyle\frac{1}{\sqrt{1-x^2}}\mathrm dx\\2)&x=\sin u \end{align}
+\begin{align}\int e^{\sin^{-1}x}\frac{\sqrt{1-x^2}}{\sqrt{1-x^2}} \mathrm dx &=\int e^u\sqrt{1-\sin^2u}~\mathrm du=\int e^u\sqrt{\cos^2u}~\mathrm du=\int e^u\cos u~\mathrm du\end{align}
+ \int_{-\infty}^a e^u\cos u\,\mathrm du = e^a\cos a + \int_{-\infty}^a e^u\sin u\,\mathrm du.
+\int_{-\infty}^a e^u\cos u\,\mathrm du
+e^u\cos u
+A+B=1
+-A+B=0
+A=B=\frac{1}{2}
+Ae^u(\cos u -\sin u) +Be^u(\sin u+\cos u).
+\frac{1}{2}e^u\cos u+\frac{1}{2}e^u\sin u+C.
+I
+\displaystyle \int e^{\displaystyle x}\cos x \space \mathrm dx\ 
+I
+\displaystyle\space I=uv-\int v \cdot \mathrm du=e^{\displaystyle x}\cos x +\int e^{\displaystyle x}\sin x \space\mathrm dx\ 
+\displaystyle  I_1=\int e^{\displaystyle x}\sin x \space\mathrm dx\ 
+\displaystyle \space I_1=u_1v_1-\int v_1 \cdot \mathrm du_1=e^{\displaystyle x}\sin x +\int e^{\displaystyle x}\cos x \space \mathrm dx
+\begin{align} u=\cos x \; & \implies \frac{\mathrm du}{\mathrm dx}=- \sin x \\  \frac{\mathrm dv}{\mathrm dx}=-\sin x \; & \implies v=e^{\displaystyle x} \\ \end{align}
+\begin{align} u_1=\sin x \; & \implies \frac{\mathrm du_1}{\mathrm dx}= \cos x \\  \frac{\mathrm dv_1}{\mathrm dx}=e^{\displaystyle x} \; & \implies v_1=e^{\displaystyle x} \\ \end{align} 
+\begin{align} I &= e^{\displaystyle x}\cos x+(e^{\displaystyle x}\sin x +\int e^{\displaystyle x}\cos x \space \mathrm dx)\\  & = e^{\displaystyle x}(\cos x + \sin x) - I\\ \text{Hence } \space 2I =e^{\displaystyle x}(\cos x + \sin x) \\ &\\ \text{Finally, } \space \;I &=\frac{e^{\displaystyle x} (\cos x + \sin x)}{2}=\int e^{\displaystyle x}\cos x \space \mathrm dx\ \end{align} 

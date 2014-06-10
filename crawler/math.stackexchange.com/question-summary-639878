@@ -1,0 +1,26 @@
+n,r,w
+w
+r
+r
+w
+r\times n
+ p_w(n,r)=\#\{ (i_1,...,i_r) | \, 0\leq i_1 \leq \dots \leq i_r\leq n, \, i_1+\dots+i_r=w\} 
+r=2s
+s
+s
+n
+p_w(n,2s)
+p_{ns}(n,2s)
+ \lim_{n\to +\infty} \frac{\sum_{w=0}^{2ns}p_w(n,2s)}{p_{ns}(n,2s)} 
+n\to +\infty
+ \sum_{w=0}^{2ns}p_w(n,2s) \qquad p_{ns}(n,2s)  
+p_w(n,2s)
+ G_{n+2s,2s}(t)=\frac{(1-t^{n+2s})\dots(1-t^{n+1})}{(1-t^{2s})\dots(1-t)} 
+n
+1,\dots,2s
+ G_{n+2s,2s}(t)=\prod_{k=1}^{2s} P_k(t)
+P_k(t)=\frac{t^{n+k}-1}{t^k-1}=\sum_{h=0}^{\frac{n}{k}}t^{hk}
+ \sum_{w=0}^{2s}p_w(n,2s) = G_{n+2s,2s}(1) = \prod_{k=1}^{2s}(\frac{n}{k}+1)\sim \frac{n^{2s}}{(2s)!} 
+p_{ns}(n,2s)
+ns
+G_{n+2s,2s}(t)

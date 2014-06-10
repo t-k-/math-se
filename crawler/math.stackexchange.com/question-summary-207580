@@ -1,0 +1,68 @@
+f:U\rightarrow V
+g: V \rightarrow W
+0\longrightarrow U \longrightarrow V  \longrightarrow W\longrightarrow 0
+\bullet
+\exists s:W\rightarrow V
+g\circ s =1_W
+\bullet
+\exists t: V\rightarrow U
+t\circ f=1_U
+\bullet
+\exists\gamma : V\rightarrow U\oplus W
+\gamma \circ f=i_1
+p_2\circ \gamma=g
+i_1
+p_2
+f
+g
+V
+\exists s:W\rightarrow V
+g\circ s =1_W
+\exists t: V\rightarrow U
+t\circ f=1_U
+\exists\gamma : V\rightarrow U\oplus W
+\gamma \circ f=i_1
+p_2\circ \gamma=g
+i_1
+p_2
+\Rightarrow
+x \in V
+g(x - sg(x)) = g(x) - g(x) = 0
+y \in U
+x - sg(x) = f(y)
+V = f(U) + s(W)
+a \in f(U) \cap s(W)
+u \in U, w \in W
+a = f(u) = s(w)
+g(a) = g(f(u)) = gs(w) = w
+w = 0
+a = s(w) = 0
+V = f(U) \oplus s(W)
+\Rightarrow
+\Rightarrow
+K = Ker(t)
+x \in V
+t(x - ft(x)) = t(x) - t(x) = 0
+x - ft(x) \in K
+V = f(U) + K
+a \in f(U) \cap K
+u \in U, k \in K
+a = f(u) = k
+t(a) = tf(u) = u = t(k) = 0
+a = f(u) = 0
+V = f(U) \oplus K
+g|K\colon K \rightarrow W
+g(k) = 0
+k \in K
+u \in U
+k = f(u)
+0 = t(k) = tf(u) = u
+k = 0
+g|K
+w \in W
+x \in V
+w = g(x)
+x - ft(x) \in K
+g(x - ft(x)) = g(x) = w
+g|K
+\Rightarrow

@@ -1,0 +1,21 @@
+ f(z)=\frac{z}{1+\sin(z)},\quad z_0=-\frac{\pi}{2} 
+z=-\pi/2
+\hat{\text{o}}
+ \text{Res}[f,z_0]=\lim_{z\rightarrow-\pi/2}\frac{d}{dz}(z+\pi/2)^2f(z) 
+z = (-\pi/2) + w
+\sin z = \sin (w-\pi/2) = -\cos w
+1 + \sin z
+-\pi/2
+1 + \sin z = 1 - \bigl( 1 - \frac{w^2}{2} + \frac{w^4}{4!} - O(w^6)\bigr) = \frac{w^2}{2}\bigl(1 - \frac{w^2}{12} + O(w^4)\bigr)
+\begin{align} \frac{z}{1+\sin z} &= \frac{w-\pi/2}{\frac{w^2}{2}\bigl(1 - \frac{w^2}{12} + O(w^4)\bigr)}\\ &= \frac{2w-\pi}{w^2}\bigl(1 + \frac{w^2}{12} + O(w^4)\bigr)\\ &= -\frac{\pi}{w^2} + \frac{2}{w} - \frac{\pi}{12} + \frac{w}{6} + O(w^2). \end{align}
+w
+z - (-\pi/2)
+x+\pi/2
+\sin(z)=\sin(z+\pi/2-\pi2)=\sin(z+\pi/2)\cos(-\pi/2)+\cos(z+\pi/2)\sin(-\pi/2)
+\frac{-\frac{\pi}{2}+(z+\frac{\pi}{2})}{1-\cos(z+\pi/2)}
+\cos(x)=1-x^2/2+x^4/41+O(x^5).
+(z+\pi/2)^2
+2
+residue(z/(1+sin(z)), z = -(1/2)*Pi) 
+series(z/(1+sin(z)), z = -(1/2)*Pi, 3) 
+-\pi \, \left( z+1/2\,\pi  \right) ^{-2}+2\, \left( z+1/2\,\pi   \right) ^{-1}+O \left( 1 \right) )  .

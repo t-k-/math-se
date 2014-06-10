@@ -1,0 +1,15 @@
+f(t)= \sin (at)
+f(t)
+F(s)= \frac{a}{s^2+a^2}
+\sin (at)= \frac{1}{2i} \left( {e^{ati}-e^{-ati}}\right) 
+\frac{1}{2i}\int_{0}^{\infty} e^{-st}\left( {e^{ati}-e^{-ati}}\right) = 
+ \frac{1}{2i}\int_{0}^{\infty} e^{t(ai-s)}-e^{-t(ai+s)}dt  =
+ \frac{1}{2i} \left[\frac{1}{ai-s}e^{t(ai-s)} \right]_0^{\infty} +\frac{1}{2i} \left[\frac{1}{ai+s}e^{-t(ai+s)} \right]_0^{\infty} 
+e^{t(ai-s)}
+t
+\infty
+s
+s
+\text{Re} \{s\}>0
+\lim_{t\to\infty}e^{t(-s\pm ai)}=0
+ %\begin{align*} %\left|\lim_{t\to \infty} e^{t(-s\pm ai)}\right| &= %\lim_{t\to \infty} \left|e^{t(-s\pm ai)}\right|\\&= %\lim_{t\to \infty} \left|e^{-st}\right|\cdot\left|e^{\pm ai}\right|\\&= %\lim_{t\to \infty} \left|e^{-st}\right|\cdot 1=0 %\end{align*} %

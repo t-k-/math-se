@@ -1,0 +1,7 @@
+\vec r'(t) = (-\sin t)i + (\cos t)j + (-\tan t)k  
+|\vec r'(t)| = \sec t
+\vec T(t)= (-\sin t \cos t)i + ((\cos t)^2)j + (-\sin t)k
+\vec T'(t) = (1-2(\cos t)^2)i -(2 \sin t \cos t)j -(\cos t)k  
+|\vec T'(t)| = \sqrt{1+(\cos t)^2}  
+\vec N(t) = {\vec T'(t)\over|\vec T'(t)|} = {(1-2(\cos t)^2)\over \sqrt{1+(\cos t)^2}}i + ({(-2(\sin t)(\cos t))\over \sqrt{1+(\cos t)^2}})j + {(-\cos t)\over \sqrt{1+(\cos t)^2}}k  
+\vec B(t) = \vec T(t) \times \vec N(t) = \begin{vmatrix} i & j & k \\ -\sin t \cos t & \cos^2(t) & -\sin t \\ {1-2(\cos t)^2\over \sqrt{1+(\cos t)^2}} & {-2(\sin t)(\cos t)\over \sqrt{1+(\cos t)^2}} & {-\cos t\over \sqrt{1+(\cos t)^2}} \end{vmatrix}

@@ -1,0 +1,32 @@
+c(m,n)
+n
+m
+\sum_{n\ge 0}c(m,n)x^n = \frac{1-x}{1-2x+x^{m+1}}
+(x+x^2+x^3+...+x^m)(x+x^2+x^3+...+x^m)(x+x^2+x^3+...+x^m)...
+f_m(x) =x+x^2+x^3+...+x^m =x(1+x+x^2+x^3+...+x^{m-1}) =\frac{x(1-x^m)}{1-x} 
+f_m(x)
+\le
+f_m^2(x)
+\le
+f_m^k(x)
+k
+\le
+should
+F_m(x, u, v)
+u
+v
+\le
+u=0
+v = \infty
+\begin{align} F_m(x, u, v)  &= \sum_{k=u}^{v} f_m^k(x)\\ &= f_m^u(x)\sum_{k=0}^{v-u} f_m^k(x)\\ &= f_m^u(x)\frac{1-f_m^{v-u+1}(x)}{1-f_m(x)}\\ \end{align} 
+u=0
+\begin{align} F_m(x, 0, v)  &= \frac{1-f_m^{v+1}(x)}{1-f_m(x)}\\ &= \frac{1}{1-f_m(x)}(1-f_m^{v}(x))\\ &= \frac{}{1-\frac{x(1-x^m)}{1-x}}(1-f_m^{v}(x))\\ &= \frac{1-x}{1-x-(x(1-x^m))}(1-f_m^{v}(x))\\ &= \frac{1-x}{1-2x+x^{m+1}}(1-f_m^{v}(x))\\ \end{align} 
+u=0
+v=\infty
+F_m(x) = F_m(x, 0, \infty)  = \dfrac{1-x}{1-2x+x^{m+1}} 
+should
+f_m^0(x)=1
+\begin{align} F_m(x) &=  \sum_{k=0}^{\infty} f_m^k(x)\\ &= \sum_{k=0}^{\infty} \big(\dfrac{x(1-x^m)}{1-x}\big)^k\\ &= \sum_{k=0}^{\infty} \big(\dfrac{x}{1-x}\big)^k\sum_{j=0}^k  \binom{k}{j}(-1)^j x^{jm}\\ &= \sum_{j=0}^{\infty}(-1)^jx^{jm}\sum_{k=j}^{\infty}\binom{k}{j} \big(\dfrac{ x}{1-x}\big)^k\\ \end{align} 
+\sum_{k=n}^{\infty}\binom{k}{n}x^{k} = \dfrac{x^n}{(1−x)^{n+1}} 
+\begin{align} \sum_{k=j}^{\infty}\binom{k}{j} \big(\dfrac{ x}{1-x}\big)^k &= \dfrac{ (x/(1-x))^j}{(1-(x/(1-x))^{j+1}}\\ &= \dfrac{ (x/(1-x))^j}{((1-2x)/(1-x))^{j+1}}\\ &= \dfrac{ x^j(1-x)}{(1-2x)^{j+1}}\\ &= \dfrac{ 1-x}{1-2x}\big(\dfrac{ x}{1-2x}\big)^{j}\\ \end{align} 
+\begin{align} F_m(x) &=  \sum_{k=1}^{\infty} f_m^k(x)\\ &= \sum_{j=0}^{\infty}(-1)^jx^{jm}\dfrac{ 1-x}{1-2x}\big(\dfrac{ x}{1-2x}\big)^{j}\\ &= \dfrac{ 1-x}{1-2x}\sum_{j=0}^{\infty}(-1)^jx^{jm}\big(\dfrac{ x}{1-2x}\big)^{j}\\ &= \dfrac{ 1-x}{1-2x}\sum_{j=0}^{\infty}(-1)^j\big(\dfrac{ x^{m+1}}{1-2x}\big)^{j}\\ &= \dfrac{ 1-x}{1-2x}\frac1{1+\frac{ x^{m+1}}{1-2x}}\\ &= \dfrac{ 1-x}{1-2x+ x^{m+1}}\\ \end{align} 

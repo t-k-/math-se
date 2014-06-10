@@ -1,0 +1,35 @@
+J(y_1, ..., y_n)
+y_k
+(1)
+(2)
+y_i = y_i(x_i)
+\frac{\partial}{\partial y_k} [J(y_1, ..., y_n)] = \frac{\partial}{\partial y_k} \left[ \sum_{i=0}^{n} F\left( x_i, y_i, \frac{y_{i+1}-y_i}{\Delta x}\right)\Delta x\right] = \frac{\partial}{\partial y_k} \left[ \cdots + F\left( x_{k-2}, y_{k-2}, \frac{y_{k-1}-y_{k-2}}{\Delta x}\right)\Delta x + F\left( x_{k-1},  y_{k-1}, \frac{y_{k}-y_{k-1}}{\Delta x}\right)\Delta x + F\left( x_k, y_k, \frac{y_{k+1}-y_k}{\Delta x}\right)\Delta x + F\left( x_{k+1}, y_{k+1}, \frac{y_{k+2}-y_{k+1}}{\Delta x}\right)\Delta x + \cdots\right] = \frac{\partial}{\partial y_k} \left[ F\left( x_{k-1},  y_{k-1}, \frac{y_{k}-y_{k-1}}{\Delta x}\right)\Delta x + F\left( x_k, y_k, \frac{y_{k+1}-y_k}{\Delta x}\right)\Delta x \right] = F_{y_k}\left( x_{k-1},  y_{k-1}, \frac{y_{k}-y_{k-1}}{\Delta x}\right)\Delta x + F_{y_k}\left( x_k, y_k, \frac{y_{k+1}-y_k}{\Delta x}\right)\Delta x
+k
+y_k
+J(y_1,\dots,y_n)
+F_{k-1}:=F(x_{k-1},y_{k-1},\frac{y_k-y_{k-1}}{\Delta x})\Delta x ~~(*)
+F_{k}=F(x_{k},y_{k},\frac{y_{k+1}-y_{k}}{\Delta x})\Delta x.~~(**)
+(2)
+(x_{k},y_{k},\frac{y_{k+1}-y_{k}}{\Delta x}) 
+i=k
+J(y_1,\dots,y_n)
+F=F(x,y,g(y)),
+x
+x_k
+y
+y_k
+g(y_k):=\frac{y_{k+1}-y_{k}}{\Delta x}
+g(y)=y'.
+(2)
+g(y_{k-1})=\frac{y_k-y_{k-1}}{\Delta x}
+\frac{\partial J}{\partial y_k}
+(*)
+(**)
+\frac{\partial J}{\partial y_k}=\frac{\partial F_{k-1}}{\partial g(y_{k-1})}\frac{\partial  g(y_{k-1})}{\partial y_k}\Delta x+\left( \frac{\partial F_{k}}{\partial y_{k}}\frac{d y_{k}}{d y_k}\Delta x+ \frac{\partial F_{k}}{\partial g(y_{k})}\frac{\partial  g(y_{k})}{\partial y_k}\Delta x\right).
+F_{k-1}
+y_k
+\frac{d y_{k}}{d y_k}=1, 
+  \frac{\partial F_{k-1}}{\partial g(y_{k-1})}\frac{\partial g(y_{k-1})}{\partial y_k}\Delta x=\frac{\partial F_{k-1}}{\partial g(y_{k-1})} \frac{1}{\Delta x}\Delta x=\frac{\partial F_{k-1}}{\partial g(y_{k-1})},
+\frac{\partial F_{k}}{\partial g(y_{k})}\frac{\partial g(y_{k})}{\partial y_k}\Delta x= -\frac{\partial F_{k}}{\partial g(y_{k})} \frac{1}{\Delta x}\Delta x=-\frac{\partial F_{k}}{\partial g(y_{k})}. 
+\frac{\partial J}{\partial y_k}=\frac{\partial F_{k-1}}{\partial g(y_{k-1})}+\left( \frac{\partial F_{k}}{\partial y_{k}}\Delta x- \frac{\partial F_{k}}{\partial g(y_{k})}\right)=(\text{replicating the order of the factors in formula (2) contained in your reference})=\frac{\partial F_{k}}{\partial y_{k}}\Delta x+\frac{\partial F_{k-1}}{\partial g(y_{k-1})}-\frac{\partial F_{k}}{\partial g(y_{k})}.  
+\frac{\partial J}{\partial y_k}=F_{y}(x_{k},y_{k},\frac{y_{k+1}-y_{k}}{\Delta x}) \Delta x+ F_{y'}(x_{k-1},y_{k-1},\frac{y_k-y_{k-1}}{\Delta x})- F_{y'}(x_{k},y_{k},\frac{y_{k+1}-y_{k}}{\Delta x}) 

@@ -1,0 +1,36 @@
+x
+\sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}}}
+x=\sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}}}
+x^2=1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}}
+x^2-1=2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}}
+\frac{x^2-1}{2}=\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}}
+\left(\frac{x^2-1}{2}\right)^2=2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}
+\left(\frac{x^2-1}{2}\right)^2-2=3\sqrt{3+4\sqrt{4+5\sqrt{5+\dots}}}
+\vdots
+ \begin{align} u_1 &= \sqrt{1}, \\ u_2 &= \sqrt{1 + 2\sqrt{2}} = \sqrt{1 + \sqrt{2^3}}, \\ u_3 &= \sqrt{1 + 2\sqrt{2 + 3\sqrt{3}}} = \sqrt{1 + \sqrt{2^3 + \sqrt{2^4 3^3}}}, \\ u_4 &= \sqrt{1 + \sqrt{2^3 + \sqrt{2^4 3^3 + \sqrt{2^8 3^4 4^3}}}}, \end{align} 
+ a_n = n^3 \prod_{k=2}^{n-1} k^{2^{n-k+1}}. 
+ a_n^{2^{-n}} = n^{3\cdot 2^{-n}} \prod_{k=2}^{n-1} k^{1/2^{k-1}} \sim \prod_{k=2}^{\infty} k^{1/2^{k-1}} 
+n \to \infty
+k^{1/2^{k-1}} = 1 + O(\log k/2^k)
+k \to \infty
+u_n
+n\in \mathbb{N}
+f(n) = 1+ n = \sqrt{1+n\sqrt{1+(n+1)\sqrt{1+(n+2)\sqrt{1+(n+3)\sqrt{1+\dots}}}}}.
+x
+\{a_n\}
+ \begin{aligned} x &>  \sqrt{1+2\sqrt{\color{blue}{1}+3\sqrt{\color{blue}{1}+4\sqrt{\color{blue}{1}+5\sqrt{\color{blue}{1}+\dots}}}}} \\&= \sqrt{1+2f(3)}:=a_1 = 3. \\ x &>  \sqrt{1+2\sqrt{2+3\sqrt{\color{blue}{1}+4\sqrt{\color{blue}{1}+5\sqrt{\color{blue}{1}+\dots}}}}} \\&=  \sqrt{1+2\sqrt{2+3f(4)}} :=a_2\approx 3.040758335 \\ x &>  \sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{\color{blue}{1}+5\sqrt{\color{blue}{1}+\dots}}}}} \\&=  \sqrt{1+2\sqrt{2+3\sqrt{3+4f(5)}}} :=a_3\approx 3.063938469 \\ x &>  \sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{\color{blue}{1}+\dots}}}}} \\&=  \sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5f(6)}}}} :=a_4\approx 3.074786007. \end{aligned} 
+ a_n = \sqrt{1+2\sqrt{2+3\sqrt{3+\dots\sqrt{\dots\sqrt{(n-1)+n\sqrt{n+(n+1)(n+3)}}}}}}. 
+ a_5 \approx 3.079604451993 \\ a_6 \approx 3.081712705722 \\ a_7 \approx 3.082633123037 \\ a_8 \approx 3.083036100688 \\ a_9 \approx 3.083213386604  \\ a_{10} \approx 3.083291812809 
+x
+ \begin{align} x & = \sqrt{1+2\sqrt{2+3\sqrt{3+4\sqrt{4+5\sqrt{5+\cdots}}}}} \\ & = \sqrt{1+2\sqrt{2}\sqrt{1+\frac{3\sqrt{3}}{2}\sqrt{1+\frac{4\sqrt{4}}{3}\sqrt{1+\frac{5\sqrt{5}}{4}\sqrt{1+\cdots}}}}} \\ &< \sqrt{1+2\sqrt{2}\sqrt{1+\frac{3\sqrt{3}}{2}\sqrt{1+3\sqrt{1+4\sqrt{1+5\sqrt{1+\cdots}}}}}} \end{align} 
+ \frac{n\sqrt{n}}{n-1}<n-1 \quad \mathrm{for~n>3} 
+ 1+n = \sqrt{1+n\sqrt{1+(n+1)\sqrt{1+(n+2)\sqrt{1+\cdots}}}} 
+ x < \sqrt{1+2\sqrt{2}\sqrt{1+\frac{3\sqrt{3}}{2}\cdot (1+3)}} = 3.247\cdots \\ x< \sqrt{1+2\sqrt{2}\sqrt{1+\frac{3\sqrt{3}}{2}\sqrt{1+\frac{4\sqrt{4}}{3}\sqrt{1+\frac{5\sqrt{5}}{4}\cdot (1+5)}}}} = 3.159\cdots 
+a_{1000},b_{1000}
+<10^{-100}
+ a_n = \sqrt{1+2\sqrt{2+3\sqrt{3+\cdots\sqrt{n+(n+1)(n+3)}}}} \\ b_n = \sqrt{1+2\sqrt{2}\sqrt{1+3\sqrt{3}\sqrt{1+\cdots\sqrt{1+\frac{(n+1)^{3/2}}{n}(n+2)}}}} \\ a_n<x<b_n \quad n>1 
+ x = 3.083355141830694458051142580088\cdots 
+G(x)=\sqrt{x-1+x\sqrt{(x+n-1)+(x+n)\sqrt{(x+2n-1)+(x+2n)\sqrt{\ldots}}}}
+x=2
+n=1
+G(x)^{2}=(x-1)+xG(x+n)

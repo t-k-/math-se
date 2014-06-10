@@ -1,0 +1,22 @@
+x_{i}\in R
+\sum_{j=k}^{n}x_{j}\prod_{i=j+1}^{n}(1-x_{i})=1-(1-x_{1})(1-x_{2})\cdots(1-x_{k})
+1-(1-x_{1})(1-x_{2})=x_{1}+x_{2}+x_{1}x_{2}
+\begin{align} 1 - (1 - x_1)(1 - x_2) \dots (1 - x_n) = & 1 - (1 - x_2) \dots (1 - x_n) + x_1 (1 - x_2) \dots (1 - x_n) \\ = & \sum_{j=2}^n x_j \prod_{i=j+1}^n (1 - x_i) + x_1 (1 - x_2) \dots (1 - x_n) \\ = & \sum_{j=1}^n x_j \prod_{i=j+1}^n (1 - x_i) \end{align}
+n
+A_i
+0 \le x_i \le 1
+1 \le i \le n
+A_i
+1 - (1 - x_1) \dots (1 - x_n)
+\bigcup_{i} A_i
+\sum_{j=1}^n x_j \prod_{i=j+1}^n (1 - x_i)
+A_n \cup (A_{n-1} \setminus A_n) \cup (A_{n-2} \setminus (A_n \cup A_{n-1}) \cup \dots \cup (A_1 \setminus (A_n \cup \dots \cup A_{2}))
+A_n \cup (A_{n-1} \cap A_n^c) \cup \dots \cup (A_1 \cap A_n^c \cap \dots \cap A_2^c)
+I
+I
+I=\{1,2,\dots,n\}
+\prod_{i\in I}(1-x_i)=\sum_{A\subseteq I} \prod_{i\in A}(-x_i),
+\prod_{i=1}^n(1-x_i)=\sum_{A\subseteq \{1,2,\dots, n\}}  \prod_{i\in A}(-x_i).
+\{1,2,\dots, n\}
+j
+A=\{j\}\cup B

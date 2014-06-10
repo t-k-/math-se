@@ -1,0 +1,24 @@
+f
+2 \pi
+\alpha > 1/2
+f
+f(x+2 \pi t) = f(x)
+t \in \mathbb{Z}
+C
+x
+h
+ |f(x+h)-f(x)| \leq C|h|^{\alpha}
+\sum_{n=-\infty}^{\infty} |c_{n}e^{inx}| = L
+y=x+\pi/n
+f_h(x)=f(x-h)
+|c_n|=O(n^{-\alpha})
+c_n=\frac{1}{2\pi}\int_0^{2\pi} f(x)e^{-inx}\,dx\tag1
+c_n=\frac{1}{2\pi}\int_{0}^{2\pi} f_{\pi/n}(y-\pi/n)e^{-iny+\pi i}\,dy\tag2
+2c_n=\frac{1}{2\pi}\int_0^{2\pi} (f(x)-f_{\pi/n}(x))e^{-inx}\,dx\tag3
+|c_n|
+n
+f_h-f
+(e^{-inh}-1)\widehat{f}(n)
+ \sum_n |e^{-inh}-1|^2|\widehat{f}(n)|^2 \le Ch^{2\alpha} \tag4
+ \sum_{n=2^k}^{2^{k+1}-1}  |\widehat{f}(n)|^2 \le \widetilde{C} 2^{-2k\alpha} \tag5
+ \sum_{n=2^k}^{2^{k+1}-1}  |\widehat{f}(n)| \le 2^{k/2}\cdot\widetilde{C} 2^{-k\alpha} \tag6

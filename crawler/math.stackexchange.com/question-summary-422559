@@ -1,0 +1,54 @@
+\sum_{i=1}^n\sqrt i
+\sum_{i=1}^ni^k=P(n)
+k
+P
+k+1
+ \sum_{i=1}^n\sqrt{i}=f(n) 
+ \sum_{i=1}^{n-1}\sqrt{i}=f(n-1) 
+ f(n)-f(n-1)=\sqrt{n}  \tag 1
+ f(x+h)=f(x)+hf'(x)+\frac{h^2 f''(x)}{2!}+\frac{h^3f'''(x)}{3!}+.... 
+ f(n-1)=f(n)-f'(n)+\frac{f''(n)}{2!}-\frac{f'''(n)}{3!}+.... 
+ f(n)-f(n)+f'(n)-\frac{f''(n)}{2!}+\frac{f'''(n)}{3!}-....=\sqrt{n} 
+ f'(n)-\frac{f''(n)}{2!}+\frac{f'''(n)}{3!}-...=\sqrt{n} 
+ f(n)-\frac{f'(n)}{2!}+\frac{f''(n)}{3!}-...=\int \sqrt{n} dn 
+ f(n)-\frac{f'(n)}{2!}+\frac{f''(n)}{3!}-\frac{f'''(n)}{4!}...=\frac{2}{3}n^\frac{3}{2} +c 
+ \frac{1}{2} ( f'(n)-\frac{f''(n)}{2!}+\frac{f'''(n)}{3!}-...)=\frac{1}{2}\sqrt{n} 
+ f(n)+ (-\frac{1}{2.2} +\frac{1}{3!})f''(n)+(\frac{1}{2.3!} -\frac{1}{4!})f'''(n)...=\frac{2}{3}n^\frac{3}{2}+\frac{1}{2}\sqrt{n}+c 
+  f''(n)-\frac{f'''(n)}{2!}+\frac{f^{4}(n)}{3!}-...)=\frac{d(\sqrt{n})}{dn}=\frac{1}{2\sqrt{n}} 
+f^{r}(n)
+ f(n)=c+\frac{2}{3}n^\frac{3}{2}+\frac{1}{2}\sqrt{n}+a_2\frac{1}{\sqrt{n}}+a_3\frac{1}{n\sqrt{n}}+a_4\frac{1}{n^2\sqrt{n}}+.... 
+\sum_{i=1}^n(i^k)=P(n)
+k
+ \sum_{i=1}^n(i^k)=P(n)=c+\frac{1}{k+1}n^{k+1}+\frac{1}{2}n^{k}+b_2kn^{k-1}+.... 
+ P(1)=1=c+\frac{1}{k+1}+\frac{1}{2}+b_2k+.... 
+ =c=1-\frac{1}{k+1}-\frac{1}{2}-b_2k+.... 
+i\to\infty
+\sum\limits_i\frac1{4\sqrt{i}}
+(u_k)
+u_0=\frac23
+u_1=\frac12
+N\geqslant0
+n\to\infty
+u_k
+P(x)=u_0x^3+u_1x=\frac23x^3+\frac12x
+ \frac1{n\sqrt{n}}\sum_{i=1}^n\sqrt{i}=\int_0^1\sqrt{t}\mathrm dt+\sum_{i=1}^n\int_{(i-1)/n}^{i/n}(\sqrt{i/n}-\sqrt{t})\mathrm dt, 
+ \frac1{n\sqrt{n}}\sum_{i=1}^n\sqrt{i}=\frac23+\frac1{n\sqrt{n}}\sum_{i=1}^n\int_0^1(\sqrt{i}-\sqrt{i-t})\mathrm dt, 
+ \sum_{i=1}^n\sqrt{i}=\frac23n\sqrt{n}+\sum_{i=1}^na_i,\qquad a_i=\int_0^1(\sqrt{i}-\sqrt{i-t})\mathrm dt. 
+ a_i=\int_0^1\frac{t}{\sqrt{i}+\sqrt{i-t}}\mathrm dt\sim\frac1{2\sqrt{i}}\int_0^1t\mathrm dt\sim\frac1{4\sqrt{i}}, 
+ \sum_{i=1}^na_i\sim\sum_{i=1}^n\frac1{4\sqrt{i}}\sim\int_0^n\frac{\mathrm dt}{4\sqrt{t}}=\frac12\sqrt{n}. 
+ \sum_{i=1}^n\sqrt{i}=\frac23n\sqrt{n}+\frac12\sqrt{n}+o\left(\sqrt{n}\right)=\frac23n\sqrt{n+\frac32}+o\left(\sqrt{n}\right). 
+ \sum_{i=1}^n\sqrt{i}=\sum_{k=0}^Nu_kn^{1-k}\sqrt{n}+o\left(n^{1-N}\sqrt{n}\right), 
+ \lim_{n\to\infty}\left(\sum_{i=1}^n\sqrt{i}\right)-P(\sqrt{n})=0. 
+\sum\limits_{i=1}^{n} \sqrt{i} \approx \frac{2}{3}n \sqrt{\frac{5}{4} + n}
+\int\limits_{1}^{n} \sqrt{t} dt = \frac{2}{3} \left( n^{3/2} - 1\right).
+\newcommand\T{\Rule{0pt}{1em}{.3em}} \begin{array}{|l|l|} \hline {\rm n} & \sum\limits_{i=1}^n\sqrt {i} & \tfrac23n\sqrt{\tfrac54+n} \T \\\hline   1 \T & 1 & 1 \\\hline   5 \T & 8.382 & 8.333 \\\hline   10 \T & 22.468 & 22.361 \\\hline   25 \T & 85.634 & 85.391  \\\hline   50 \T & 239.04 & 238.63 \\\hline   100 \T & 671.4 & 670.82 \\\hline   200 \T & 1892.5 & 1891.5 \\\hline   500 \T & 7464.5 & 7462.9 \\\hline   10000 \T & 666716 & 666708 \\\hline \end{array}
+\sum\limits_{i=1}^{n} i^k = p(n)
+k \in \mathbb{R^+}
+p
+\text{degree} \neq k+1
+\int\limits_1^n i^k di = \frac{n^{k+1} - 1}{k + 1}.
+k+1
+n \to \infty
+k+1
+z=-\frac12
+\zeta\left(-\frac12\right)

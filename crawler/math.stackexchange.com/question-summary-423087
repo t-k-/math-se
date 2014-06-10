@@ -1,0 +1,21 @@
+\omega \in \Omega^2(\mathbb{R}^3)
+\omega = x dy\land dz + y dz \land dx + z dx \land dy 
+\Phi: \Bbb R^3\to \Bbb R^3
+\Phi(r, \phi, \psi) = (r\cos\phi \cos\psi, r\sin \phi \cos\psi, r\sin \psi) .
+d\Phi^{*}\omega 
+ \Phi^{*} d\omega
+dr\wedge dr = 0
+d\psi\wedge d\psi = 0
+dr\wedge d\psi = -d\psi\wedge dr
+\Phi^* (x \,dy\wedge dz) = (x\circ\Phi)\big|_{(r,\phi,\psi)} d(y\circ\Phi)\big|_{(r,\phi,\psi)}\wedge d(z\circ\Phi)\big|_{(r,\phi,\psi)}.\tag{1}
+ (x\circ\Phi)\big|_{(r,\phi,\psi)} = r\cos\psi \cos\phi. 
+ d(y\circ\Phi)\big|_{(r,\phi,\psi)} = d(r\cos\psi \sin\phi) \\ = \cos\psi \sin\phi\, dr -  r\sin\psi \sin\phi\, d\psi + r\cos\psi \cos\phi\,d\phi. 
+ d(z\circ\Phi)\big|_{(r,\phi,\psi)} = d(r\sin\psi) = \sin\psi\,dr + r\cos\psi\,d\psi. 
+ (r\cos\psi \cos\phi)(\cos\psi \sin\phi\, dr -  r\sin\psi \sin\phi\, d\psi + r\cos\psi \cos\phi\,d\phi)\wedge (\sin\psi\,dr + r\cos\psi\,d\psi), 
+ \Phi^* (x \,dy\wedge dz) = \\ r^2 \cos\psi \cos\phi \sin\phi \,dr\wedge d\psi \\ + r^2 \cos^2\psi \sin \psi \cos^2 \phi \,dr\wedge d\phi \\ + r^3 \cos^3\psi \cos^2\phi \,d\phi\wedge d\psi. 
+ d( \cos\psi \cos\phi \sin\phi \,dr\wedge d\psi) =  \\ \color{\red}{ \frac{\partial }{\partial r}\cos\psi \cos\phi \sin\phi \,dr\wedge (dr\wedge d\psi)} \\ + \color{\red}{\frac{\partial }{\partial \psi}\cos\psi \cos\phi \sin\phi \,d\psi\wedge (dr\wedge d\psi) } \\ +  \color{\green}{\frac{\partial }{\partial \phi}\cos\psi \cos\phi \sin\phi \,d\phi\wedge (dr\wedge d\psi)}, 
+ d\Phi^* (x \,dy\wedge dz) = \\ \frac{\partial }{\partial \phi} r^2 \cos\psi \cos\phi \sin\phi \,d\phi\wedge (dr\wedge d\psi) \\ + \frac{\partial }{\partial \psi}r^2 \cos^2\psi \sin \psi \cos^2 \phi \,d\psi\wedge(dr\wedge d\phi) \\ + \frac{\partial }{\partial r}r^3 \cos^3\psi \cos^2\phi \,dr\wedge(d\phi\wedge d\psi). 
+ dr \wedge d\psi\wedge d\phi = d\phi\wedge (dr\wedge d\psi) = -d\psi\wedge(dr\wedge d\phi) =-dr\wedge(d\phi\wedge d\psi). 
+ d\Phi^* \omega = d\Phi^* (x \,dy\wedge dz) + d\Phi^* (y \,dz\wedge dx) + d\Phi^* (z \,dx\wedge dy). 
+d\omega = 3\,dx\wedge dy\wedge dz
+\Phi^* d\omega =   d(x\circ\Phi)\big|_{(r,\phi,\psi)} \wedge d(y\circ\Phi)\big|_{(r,\phi,\psi)}\wedge d(z\circ\Phi)\big|_{(r,\phi,\psi)}.

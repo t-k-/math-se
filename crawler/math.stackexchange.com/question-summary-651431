@@ -1,0 +1,53 @@
+C
+C^c
+0 < P(C) < 1
+A
+B
+ P(A|C) = P(A|C^c) 
+ P(B|C) = P(B|C^c) 
+P(A|C)=P(A|C^c)
+A
+B
+A
+B
+P(A)
+P(B)
+P(A \cap B)
+A
+B
+C
+A
+C
+B
+C
+P(BC)
+P(A)P(B)
+P(A|C)-P(A|C^c)=0
+ P(A)P(B) = P(A \cap B) = P(A \cap B | C)P(C) + P(A \cap B | C^c)P(C^c) 
+ = \ldots = \left[P(A|C)-P(A|C^c))\right]P(B \cap C) + P(A | C^c)P(B)
+A
+B
+P(A|C) = P(A|C^c)
+P(B|C) = P(B|C^c)
+P(A \cap B)
+P(A)P(B)
+A
+B
+P(A \cap B)
+C
+A
+B
+C
+P(A)
+P(B)
+C
+0 < P(C) < 1
+P(A|C)=P(A|C^c)
+P(B|C)=P(B|C^c)
+ P(A \cap B) = P(A|C)P(B|C)P(C) + P(A|C^c)P(B|C^c)P(C^c). 
+ P(A)P(B) = \left[P(A|C)P(C)+P(A|C^c)P(C^c)\right]\left[P(B|C)P(C)+P(B|C^c)P(C^c)\right] 
+ = P(A|C)P(B|C)P(C)^2 + \left[P(A|C)P(B|C^c)+P(B|C)P(A|C^c)\right]P(C)P(C^c)+P(A|C^c)P(B|C^c)P(C^c)^2 
+ P(A \cap B) - P(A)P(B) = 
+ P(A|C)P(B|C)P(C)(1-P(C)) + P(A|C^c)P(B|C^c)P(C^c)(1-P(C^c)) - \left[P(A|C)P(B|C^c)+P(B|C)P(A|C^c)\right]P(C)P(C^c) 
+ = P(C)P(C^c)\left[P(A|C)P(B|C)+P(A|C^c)P(B|C^c)-P(A|C)P(B|C^c)-P(B|C)P(A|C^c)\right]
+ = P(C)P(C^c)\left[(P(A|C)-P(A|C^c)(P(B|C)-P(B|C^c))\right] = 0

@@ -1,0 +1,25 @@
+X=3
+= [17,24]
+X
+18
+21
+24
+3
+n_1
+n_1X \geq Y
+n_1=\lceil Y/X \rceil
+n_2
+n_2X \leq Z
+n_2 = \lfloor Z/X\rfloor
+n_1
+n_2
+\max\{n_2 - n_1 + 1,0\}
+\max\{\lfloor Z/X\rfloor - \lceil Y/X \rceil + 1, 0\}.
+X=3
+Y=17
+Z=24
+3
+17
+24
+\max\{\lfloor 24/3\rfloor - \lceil 17/3 \rceil + 1, 0\} = \max\{8-6+1,0\} = 3
+\lfloor (Z  - Y) / 3\rfloor

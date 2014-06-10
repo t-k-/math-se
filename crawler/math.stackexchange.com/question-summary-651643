@@ -1,0 +1,15 @@
+f(n)=\frac{p(n)}{q(n)}
+f(n) \in \Theta(g(n))
+n^c, log n, n log n
+g(n)=f(n)=\frac{p(n)}{q(n)}?
+p(n) = a(n)+b(n)
+q(n) = c(n) + d(n)
+b(n) \in o(a(n))
+d(n) \in o(c(n))
+a(n) \ne 0
+c(n) \ne 0
+\frac{p(n)}{q(n)} = \frac{a(n)}{c(n)} (1+\frac{b(n)}{a(n)}) (1+\frac{d(n)}{c(n)})^{-1} \in \frac{a(n)}{c(n)} (1+\frac{b(n)}{a(n)}) (1-O(\frac{d(n)}{c(n)}))
+\in \frac{a(n)}{c(n)} (1+o(1)) (1+o(1)) = \frac{a(n)}{c(n)} (1+o(1)) = \Theta(\frac{a(n)}{c(n)})
+g(n)=f(n)
+f(n) \in \Theta(g(n))
+g(n)

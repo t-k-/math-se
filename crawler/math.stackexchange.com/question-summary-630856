@@ -1,0 +1,12 @@
+R
+f(x,y,z) \leq 16
+r=x, \; u=2y, \; v=3z
+f(r,u,v)
+\frac{2 \pi}{3}(10e^4 -2)
+f(x,y,z)=x^2+4y^2+9z^2
+\int \int \int_R e^{\sqrt{f(x,y,z)}}dxdydz
+f(x,y,z)=x^2+4y^2+9z^2
+f(u,v,w)=u^2 + v^2 + w^2
+u=x, v = 2y, w=3z.
+\iiint_R e^{\sqrt{f(x,y,z)}}dxdydz = \frac{1}{6} \iiint_R e^{\sqrt{f(u,v,w)}}dudvdw = \frac{2 \pi}{3}\int_{r=0}^4r^2e^rdr.
+\frac{2 \pi}{3}\int_{r=0}^4r^2e^rdr = \frac{2 \pi}{3}\left.\left(r^2e^r - 2re^r + 2e^r\right)\right|_0^4 = \frac{2 \pi}{3}\left(10e^4-2\right).

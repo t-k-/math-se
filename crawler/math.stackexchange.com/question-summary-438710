@@ -1,0 +1,13 @@
+f(t,x,y)
+x = x(t)
+y=y(t)
+\frac{df}{dt} = \frac{\partial f}{\partial t}\frac{dt}{dt} + \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial y}\frac{dy}{dt}
+\frac{df}{dx_1}:=\frac{\partial f}{\partial x_1}+\sum_{i=2}^n \frac{\partial f}{\partial x_i}\frac{d x_i}{d x_1}.
+dx_1
+df(x):=\frac{df}{dx_1}dx_1=\frac{\partial f}{\partial x_1}dx_1+\sum_{i=2}^n \frac{\partial f}{\partial x_i} d x_i~~(*).
+df(x)
+(*)
+f
+x=(x_1,\dots,x_n)
+df(x)=\frac{\partial f}{\partial x_1}dx_1+\sum_{i=2}^n \frac{\partial f}{\partial x_i} d x_i=\sum_{i=1}^n \frac{\partial f}{\partial x_i} d x_i=\langle \nabla f(x), dx \rangle 
+dx=(dx_1,\dots,dx_n)

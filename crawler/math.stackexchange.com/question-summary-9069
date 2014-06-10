@@ -1,0 +1,19 @@
+0.001
+X
+P(X>x) = \left(\frac{2(10)^6}{2(10)^6+x} \right)^2
+100,000
+110 \%
+E[W]
+W
+E[W] = E[W| \text{fire}]P(\text{fire})+E[W| \text{no fire}]P(\text{no fire})
+E[W| \text{fire}]
+\int_{0.1}^{\infty} [1-F(x)] \ dx
+\int_{0.1}^{\infty} 1-\left[1-\left(\frac{2(10)^6}{2(10)^6+x} \right)^2\right] \ dx
+\int_{0.1}^{\infty} \left(\frac{2(10)^6}{2(10)^6+x} \right)^2 \ dx
+E(W|fire)
+1-P(X>x)
+p(x)
+100000
+E[W| \text{fire}] = \int_{0.1}^{\infty} [1-F(x)] \ dx = 4 \int_{0.1}^{\infty} (2+x)^{-2} \ dx = 4/2.1
+E[W] = (4/2.1)(0.001)+0 = 0.00190476
+(0.0019047)(10^6)(1.1) =2,095

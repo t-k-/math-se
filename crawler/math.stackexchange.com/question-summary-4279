@@ -1,0 +1,12 @@
+\lim_{\tau\rightarrow \infty} \int_{-c/\tau}^0 e^{-\beta x}(\tau x+c)^{(\lambda/\tau) -1}dx
+1/\lambda
+y = \tau x + c
+\frac{1}{\lambda}
+y = \frac{\lambda}{\beta}
+\tau \to \infty
+ \frac{1}{\tau} \int_0^c e^{\frac{\beta}{\tau} (c - y)} y^{\lambda / \tau - 1} d y 
+ \frac{1}{\lambda} c^{\lambda / \tau} + \frac{\beta}{\lambda \tau} \int_0^c e^{\frac{\beta}{\tau} (c - y)} y^{\lambda / \tau} dy 
+s=\beta(x+\frac{c}{\tau})
+\newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{{\rm e}^{#1}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\pp}{{\cal P}}%  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}
+\tau \to \infty
+\color{#ff0000}{\Large% \lim_{\tau \to \infty}\int_{-c/\tau}^{0}\expo{-\beta x} \pars{\tau x + c}^{\pars{\lambda/\tau} - 1}\,\dd x} = \lim_{\tau \to \infty}{c^{\lambda/\tau} \over \lambda} = \color{#ff0000}{\Large{1 \over \lambda}} 

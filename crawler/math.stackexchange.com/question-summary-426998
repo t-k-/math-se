@@ -1,0 +1,43 @@
+X^{(n)}_1, \dots, X^{(n)}_n
+X^{(n)}_i
+i
+n
+\qquad\displaystyle X^{(n)} = \max_{i \in [1..n]} X^{(n)}_i
+\mathbb{E}[X^{(n)}_i] \in O(f(n))
+i
+n \to \infty
+\mathbb{E}[X^{(n)}_i]
+n
+f : \mathbb{N} \to \mathbb{R}
+\qquad\displaystyle \mathbb{E}[X^{(n)}] \in O\bigl(\max_{i \in [1..n]} \mathbb{E}[X^{(n)}_i]\bigr) = O(f(n))
+n
+X_{(n)}
+n
+n
+\mu_j = E[X_j]
+\sigma_j^2 = \text{Var}[X_j]
+j
+\overline{\mu} = \frac{1}{n}\sum_{j=1}^n \mu_j
+S^2 = \frac{1}{n}\sum_{j=1}^n (X_j - \frac{1}{n}\sum_{i=1}^n X_i)^2
+   \overline{\mu} + E[S]/\sqrt{n-1} \le E[X_{(n)}] \le \overline{\mu} + E[S]\sqrt{n-1}.  
+   \overline{\mu} \le E[X_{(n)}] \le \overline{\mu} +    \sqrt{\frac{n-1}{n}\sum_{j=1}^n (Var[X_j] + (\mu_j - \overline{\mu})^2)},  
+\text{Var}[X_j]
+\mu_j
+X^{(n)}_i
+X^{(n)}_i
+X^{(n)}
+Y
+M_Y(z)
+Y
+M_Y(z) = \mathbb{E}[e^{zY}]
+\qquad\displaystyle \Pr[Y \geq a] \leq \frac{M_Y(z)}{e^{za}}
+z \geq 0
+X^{(n)}_i
+a = c \cdot f(n)
+z
+\qquad \displaystyle \Pr[X^{(n)}_i \geq c \cdot f(n)] \leq \alpha(n) \in o(n^{-1})
+\alpha
+i
+\qquad \displaystyle \Pr[X^{(n)} \geq c \cdot f(n)] \leq \sum_{i=1}^n \Pr[X^{(n)}_i \geq c \cdot f(n)] \leq n \cdot \alpha(n) \in o(1)
+\sigma
+\mathbb{E}[X^{(n)}] \in O(f(n))

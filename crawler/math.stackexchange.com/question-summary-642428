@@ -1,0 +1,23 @@
+x,y
+t
+r(t)
+θ(t)
+x=rcosθ
+y = rsinθ
+F
+\frac{dx}{dt}=-xF\left(\sqrt{x^2 + y^2}\right)-y
+\frac{dy}{dt}=-yF\left(\sqrt{x^2 + y^2}\right)+x
+x=r\cosθ, y=r\sinθ
+\frac{dx}{dt}=\frac{\partial x}{\partial r}\frac{dr}{dt}+\frac{\partial x}{\partial θ}\frac{dθ}{dt}=cosθ\frac{dr}{dt}-r\sinθ\frac{d\theta}{dt}=-rF(r)\cosθ-r\sinθ
+\frac{dy}{dt}=\frac{\partial y}{\partial r}\frac{dr}{dt}+\frac{\partial y}{\partial θ}\frac{dθ}{dt}=\sinθ\frac{dr}{dt}+r\cosθ\frac{d\theta}{dt}=-rF(r)\sinθ+r\cosθ
+(\cos^2θ+\sin^2θ)\frac{dr}{dt}=-r(\cos^2θ+\sin^2θ)F(r)
+r(\sin^2θ+\cos^2θ)\frac{dθ}{dt}=r(\cos^2θ+\sin^2θ)
+\frac{dr}{dt}=-rF(r)
+\frac{dθ}{dt}=1
+(\sin^2θ+\cos^2θ)
+dr/dt
+d\theta/dt
+dr/dt
+\cos\theta
+\sin\theta
+\begin{align} \cos\theta\frac{dr}{dt}-r\sinθ\frac{d\theta}{dt}&=-rF(r)\cos\theta-r\sin\theta\\ \sin\theta\frac{dr}{dt}+r\cosθ\frac{d\theta}{dt}&=-rF(r)\sin\theta+r\cos\theta \end{align}

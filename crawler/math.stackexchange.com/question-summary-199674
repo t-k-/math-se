@@ -1,0 +1,25 @@
+\omega
+N(\mu,\sigma)
+I(\mu,\sigma)=\int_0^{2\pi}\sin(\omega t)^2dt
+pdf
+I(\mu,\sigma)
+I_0=Re(I_1)
+k
+    I(\omega)=\int_0^{2\pi}dt\frac{1-\cos(2\omega t)}{2}=2\pi-\int_0^{2\pi}dt\cos(2\omega t). 
+   I_0(\omega)=\int_0^{2\pi}dt\cos(2\omega t). 
+   I_1(\omega)=\int_0^{2\pi}dt e^{2i\omega t} 
+    E(e^{2i\omega t})=e^{2i\mu t-2\sigma^2 t^2}. 
+   E(I_0(\omega))=\int_0^{2\pi}dt\cos(2\mu t)e^{-2\sigma^2 t^2}. 
+   E(e^{2i\omega (t+t')})=e^{2i\mu (t+t')-2\sigma^2 (t+t')^2} 
+   E((I_0(\omega))^2)=\int_0^{2\pi}dt\int_0^{2\pi}dt'\cos(2\mu (t+t'))e^{-2\sigma^2 (t+t')^2}. 
+   E((I_0(\omega))^k)=\int_0^{2\pi}dt_1\ldots\int_0^{2\pi}dt_k\cos\left(2\mu \sum_{n=1}^kt^k\right)e^{-2\sigma^2\left(\sum_{n=1}^kt^k\right)^2}. 
+Z
+\mu
+\sigma^2
+X = f(Z)
+f(z)
+      X(\omega) = \int_{0}^{2 \pi} \sin^2(Z(\omega) t) \mathrm{d}t = \pi \left(1-\operatorname{sinc}\left(4 \pi Z(\omega)\right) \right) = \begin{cases} 0 & Z(\omega)=0 \cr \pi - \frac{\sin(4 \pi Z(\omega))}{4 Z(\omega)} & Z(\omega) \not= 0  \end{cases} 
+f(z) \geqslant 0
+     |f(z)| \leqslant \pi + \pi | \operatorname{sinc}(4 \pi z)| \leqslant 2 \pi 
+Z
+      \mathbb{E}\left(X^r \right) = \pi^r \mathbb{E}\left( \left(1-\operatorname{sinc}(4 \pi Z)\right)^r \right) 

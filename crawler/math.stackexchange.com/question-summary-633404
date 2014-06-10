@@ -1,0 +1,19 @@
+((a \rightarrow b) \land (b \rightarrow c)) \lor ((a \land b) \rightarrow \lnot c)
+\begin {array} {c|c|c|c|c|}  c\, ab & 00 & 01 & 11 & 10 \\ \hline 0 & 1 & 1 & 1 & 1 \\ \hline 1 & 1 & 1 & 1 &  1 \\ \hline \end{array}
+((\lnot a \lor b) \land (\lnot b \lor c)) \lor (\lnot (a \land b) \lor \lnot c)
+(\bar a \bar b \lor \bar a c \lor b \bar b \lor bc) \lor (\bar a \lor \bar b  \lor \bar c)
+\bar a \bar b \lor \bar a c \lor b \bar b \lor bc \lor \bar a \lor \bar b  \lor \bar c
+(\bar a \lor \bar a \bar b \lor \bar a c) \lor (bc \lor \bar b  \lor \bar c)
+\bar a \lor \text{true}
+\text{true}
+((\neg a \vee b) \wedge (\neg b \vee c)) \vee (\neg a\vee \neg b\vee \neg c)
+A,B,C
+(A\vee B)\wedge C \Leftrightarrow (A\wedge C) \vee (B\wedge C)
+A := \neg a
+B:=b
+C:=(\neg b\vee c)
+(\neg a \wedge (\neg b\vee c)) \vee (b \wedge (\neg b \vee c)) \vee \neg a\vee \neg b\vee \neg c
+(\neg a \wedge \neg b) \vee (a\wedge c) \vee (b \wedge \neg b) \vee (b\wedge c) \vee \neg a\vee \neg b\vee \neg c
+b\wedge \neg b
+(\neg a \wedge \neg b) \vee (a\wedge c) \vee (b\wedge c) \vee \neg a\vee \neg b\vee \neg c
+(A\wedge B) \vee C \Leftrightarrow (A\vee C) \wedge (B\vee C)

@@ -1,0 +1,19 @@
+X
+d
+E\subset X
+f:E \rightarrow \mathbb R
+M>0
+ |f(x)-f(y)|\leq M d(x,y) \quad \text{for } x,y \in E. 
+x \in X
+F: X \rightarrow \mathbb R
+ F(x)=\sup_{y \in E} [f(y)-M d(x,y)]  
+x\in E
+f(y)-f(x)\leq Md(x,y)
+f(y)-Md(x,y)\leq f(x)
+F(x)\leq f(x)
+x\notin E
+z\in E
+f(y)-Md(x,y)=f(y)-Md(z,y)+M(d(z,y)-d(x,y))
+d(z,y)-d(x,y)\leq d(z,x)
+f(y)-Md(x,y)\leq f(z)+Md(z,x)
+F(x)\leq f(z)+Md(z,x)

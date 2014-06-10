@@ -1,0 +1,8 @@
+ \int_{0}^{\pi /2} \frac{\left|\sin(2nt)\right|}{t}  \ \mathrm dt= \sum_{k=1}^{n} \int_{0}^{\pi} \frac{\sin(t)}{ t + (k-1) \pi}  \ \mathrm dt
+u = 2nt
+\int_0^{\pi/2} \frac{\lvert\sin (2nt)\rvert}{t}\, dt = \int_0^{n\pi} \frac{\lvert \sin u\rvert}{u}\, du.
+\sum_{k=1}^n \int_{(k-1)\pi}^{k\pi} \frac{\lvert \sin u\rvert}{u}\, du
+[0,\pi]
+\sum_{k=1}^n \int_0^\pi \frac{\lvert \sin (t+(k-1)\pi)\rvert}{t+(k-1)\pi}\,dt.
+[0,\pi]
+\sin (t+m\pi) = (-1)^m\sin t

@@ -1,0 +1,23 @@
+p=\mathcal{N}(\mathbf{0},\boldsymbol\Sigma)
+q=\mathcal{N}\left(\mathbf{0},\left(\mathbf{A}^{T} \boldsymbol\Omega \mathbf{A}\right)^{-1}\right)
+\boldsymbol\Sigma
+n\times n
+\mathbf{A}
+m\,k \times n
+m\,k \ge n
+\boldsymbol\Omega
+m\,k\times m\,k
+k\times k
+\boldsymbol \Sigma
+\mathbf{A}
+\boldsymbol\Omega
+\boldsymbol\Omega
+p
+q
+\underset{\boldsymbol\Omega}{\mathrm{arg\,min}}\, D_{KL}(p\|q) = \underset{\boldsymbol\Omega}{\operatorname{arg\,min}}\,\frac{1}{2} \left[\mathrm{tr}\left(\mathbf{A}^{T} \boldsymbol\Omega \mathbf{A}\boldsymbol\Sigma\right) - \log \det\left(\mathbf{A}^{T} \boldsymbol\Omega \mathbf{A}\boldsymbol\Sigma\right)-n\right]
+ii
+i
+k\times k
+\left[\mathbf{A}\left(\mathbf{A}^{T} \boldsymbol\Omega \mathbf{A}\right)^{-1}\mathbf{A}^{T}\right]_{ii}=\left(\mathbf{A}\boldsymbol\Sigma\mathbf{A}^{T}\right)_{ii}\;\; \forall i\in\{1,\ldots,m\}
+n=m\,k
+\boldsymbol\Omega_{ii}=\left[\left(\mathbf{A}\boldsymbol\Sigma\mathbf{A}^{T}\right)_{ii}\right]^{-1}\;\; \forall i\in\{1,\ldots,m\}

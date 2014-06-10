@@ -1,0 +1,36 @@
+\displaystyle\int_0^\infty\frac{1}{(x+1)(x+2)...(x+n)}dx
+n\rightarrow\infty
+\forall n\in\mathbb{N^*}\displaystyle\int_0^\infty\frac{1}{(x+1)(x+2)...(x+n)}dx=\frac{1}{n!}\displaystyle\sum_{k=1}^n(-1)^kk{n\choose k}\ln k
+I_n
+n
+1/(1+u)\geqslant\mathrm e^{-u}
+u\geqslant0
+H_n=\sum\limits_{k=1}^n\frac1k
+n
+H_n\sim\log n
+n\geqslant2
+1/(n!\log n)
+I_n
+n\to\infty
+ \frac1{(x+1)\cdots(x+n)}=\frac1{n!}\prod_{k=1}^n\frac1{1+\frac{x}k}\geqslant\frac1{n!}\mathrm e^{-xH_n}, 
+ I_n\geqslant \frac1{n!H_n}, 
+(x+1)\cdots(x+n)\geqslant\frac12n!(x+1)(x+2)
+x\geqslant0
+n\geqslant2
+ I_n\leqslant\frac2{n!}I_2=\frac{2\log2}{n!}. 
+H_n=\sum_{k=1}^n\frac{1}{k}
+u=xH_n
+I_n=\frac{1}{n!}\displaystyle\int_0^\infty\frac{1}{(1+x)(1+\frac{x}{2})...(1+\frac{x}{n})}dx=\frac{1}{n!H_n}\displaystyle\int_0^\infty\frac{1}{(1+\frac{u}{H_n})...(1+\frac{u}{nH_n})}dx
+(1+\frac{u}{H_n})...(1+\frac{u}{nH_n})\xrightarrow[n\to+\infty]. e^u\tag{1}
+\forall u\in[0,1],  u-\frac{u^2}{2}\leq ln(1+u)\leq u
+ln((1+\frac{u}{H_n})...(1+\frac{u}{nH_n}))=\sum_{k=1}^n ln(1+\frac{u}{kH_n})
+\sum_{k=1}^n(\frac{u}{kH_n}-\frac{u^2}{2k^2H_n^2})\leq\sum_{k=1}^n ln(1+\frac{u}{kH_n})\leq \frac{u}{H_n}\sum_{k=1}^n \frac{1}{k}
+u-\frac{u^2}{2H_n^2}\sum_{k=1}^n\frac{1}{k^2}\leq\sum_{k=1}^n ln(1+\frac{u}{kH_n})\leq u
+\sum\frac{1}{k^2}< \infty
+\sum_{k=1}^\infty\frac{1}{k^2}=S
+e^u\leq \lim_{n\rightarrow\infty} \prod_{k=1}^n (1+\frac{u}{kH_n})\leq e^u
+(1+\frac{u}{H_n})...(1+\frac{u}{nH_n})\geq 1+u+\frac{u^2}{H_n^2}(\sum_{1\leq i<j\leq n} \frac1{ij})
+=1+u+\frac{u^2}{H_n^2}(H_n^2-\sum_{1}^n\frac1{i^2})
+\geq 1+u+u^2(1-\frac{\pi^2}{6H_n^2})
+\geq 1+u+\frac{u^2}{2}\tag{2}
+\Longrightarrow \int_0^\infty\frac{\mathrm{d}x}{(x+1)(x+2)\cdots(x+n)}\sim\frac1{n!\ln(n)}

@@ -1,0 +1,10 @@
+\parallel f \parallel \; = \; \left[ \int_{\mathbb{R}} \left( \left| f \right|^p \; + \; \left| \frac{\partial f}{\partial x} \right|^p \; + \ldots + \; \left| \frac{\partial^m f}{\partial x^m} \right|^p \right) dx \right]^{\frac{1}{p}} 
+f
+f(x,y)
+\parallel f \parallel \; = \; \int_{\mathbb{R}^2} \sum_{i = 0}^m {m \choose i} \left( \frac{\partial^m f}{\partial x^i \partial y^{m - i}} \right)^2 dx dy
+\parallel f \parallel^p \; = \; \sum_{ 0 \: \le \: ( \: \mid \alpha \mid \: = \: \alpha_1 \: + \: \cdots \: + \: \alpha_n \: ) \: \le \: p}\int_{\mathbb{R}^n} \; \left| \frac{\partial^{\mid \alpha \mid} f}{\partial x_1^{\alpha_1} \: \cdots \: \partial x_n^{\alpha_n}} \right|^p \: dx
+\parallel f \parallel^m \; = \; \int_{\mathbb{R}^n} \; \sum_{\alpha_i \: + \: \cdots \: + \: \alpha_n \: = \: m } {m \choose {\alpha_i! \; \cdots \; \alpha_n!}} \left| \frac{\partial^m f(x)}{\partial x_1^{\alpha_1} \cdots \partial x_n^{\alpha_n} } \right|^2 dx
+\mathbb{R}^n
+I=i_1+\cdots+i_n
+0\le I\le m
+\|f\|^p=\sum_{(i_1,\ldots,i_n)}\int\left| \frac{\partial^I f}{\partial x_1^{i_1}\cdots\partial x_n^{i_n}} \right|^pd\mathbf{x}

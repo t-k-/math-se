@@ -1,0 +1,13 @@
+x^n
+(1+x)^r(1+x)^s
+\sum_{k=0}^{n}\binom{r}{k}\binom{s}{n-k}
+(1+x)^r(1+x)^s=(1+x)^{r+s} \Rightarrow 
+\binom{r+s}{n}
+\binom{r+s}{n}=\sum_{k=0}^{n}\binom{r}{k}\binom{s}{n-k}
+x^n
+{r+s\choose n}
+(1+x)^r(1+x)^s=(1+x)^{r+s}=\sum_{k=0}^{r+s}{r+s\choose k}x^k
+x^n
+(1+x)^r(1+x)^s=\sum_{k=0}^{r}{r\choose k}x^k\sum_{p=0}^{s}{s\choose p}x^p
+\sum_{k+p=n}{r\choose k}{s\choose p}
+\sum_{k+p=n}{r\choose k}{s\choose p}={r+s\choose n}

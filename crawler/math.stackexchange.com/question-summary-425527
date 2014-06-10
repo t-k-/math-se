@@ -1,0 +1,27 @@
+\intop_{x=0}^a e^{-x}e^{-1/x}\,\mathrm dx.
+[0,a]
+a
+ f(x) = e^{-x-\frac{1}{x}} 
+a = +\infty
+a
+a
+ I(a) = \int^a_0 e^{-x-\frac{1}{x}} \,dx, 
+I(a)
+I(y)
+ \begin{cases} \frac{dI}{dy} = e^{-y-\frac{1}{y}}, \\[3pt] I(0) = 0. \end{cases} 
+a=1
+a\neq0
+\int e^{-x-\frac{1}{x}}~dx
+\int e^{-x-\frac{1}{x}}~dx
+=\int\sum\limits_{n=0}^\infty\dfrac{\left(x+\dfrac{1}{x}\right)^{2n}}{(2n)!}dx-\int\sum\limits_{n=0}^\infty\dfrac{\left(x+\dfrac{1}{x}\right)^{2n+1}}{(2n+1)!}dx
+=\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{C_k^{2n}x^{2k-2n}}{(2n)!}dx-\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^{2n+1}x^{2k-2n-1}}{(2n+1)!}dx-\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{C_k^{2n+1}x^{2n-2k+1}}{(2n+1)!}dx
+=\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{x^{2k-2n}}{k!(2n-k)!}dx-\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{n-1}\dfrac{x^{2k-2n-1}}{k!(2n-k+1)!}dx-\int\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{x^{2n-2k+1}}{k!(2n-k+1)!}dx-\int\sum\limits_{n=0}^\infty\dfrac{1}{n!(n+1)!x}dx
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{x^{2k-2n+1}}{k!(2n-k)!(2k-2n+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{n-1}\dfrac{x^{2k-2n}}{k!(2n-k+1)!(2k-2n)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{x^{2n-2k+2}}{k!(2n-k+1)!(2n-2k+2)}-\sum\limits_{n=0}^\infty\dfrac{\ln x}{n!(n+1)!}+C
+0
+\int_0^1e^{-x-\frac{1}{x}}~dx=K_1(2)-\dfrac{1}{2e^2}
+\int_0^ae^{-x-\frac{1}{x}}~dx
+=\int_0^1e^{-x-\frac{1}{x}}~dx+\int_1^a e^{-x-\frac{1}{x}}~dx
+=K_1(2)-\dfrac{1}{2e^2}+\left[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{x^{2k-2n+1}}{k!(2n-k)!(2k-2n+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{n-1}\dfrac{x^{2k-2n}}{k!(2n-k+1)!(2k-2n)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{x^{2n-2k+2}}{k!(2n-k+1)!(2n-2k+2)}-\sum\limits_{n=0}^\infty\dfrac{\ln x}{n!(n+1)!}\right]_1^a
+=K_1(2)-\dfrac{1}{2e^2}+\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{2n}\dfrac{a^{2k-2n+1}-1}{k!(2n-k)!(2k-2n+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^{n-1}\dfrac{a^{2k-2n}-1}{k!(2n-k+1)!(2k-2n)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{a^{2n-2k+2}-1}{k!(2n-k+1)!(2n-2k+2)}-\sum\limits_{n=0}^\infty\dfrac{\ln a}{n!(n+1)!}
+k_0 \neq 0
+E_n(x)

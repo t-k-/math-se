@@ -1,0 +1,18 @@
+x
+ \left| \int_a^b\ f(x) dx \right| \leq \int_a^b\ |f(x)| dx 
+z
+ \left| \int_C^ \ f(z) dz \right| \leq \int_C^\ |f(z)| |dz| 
+\Delta x_i
+0
+ \Big|\sum_{i=1}^n f(\xi_i)\Big|\Delta x_i\ \leq \sum_{i=1}^n |f(\xi_i)|\Delta x_i 
+ f_+(x) = \max\{0, f(x)\}\\ f_-(x) = \max\{0, -f(x)\} 
+ f(x) = f_+(x) - f_-(x)\\ \lvert f(x) \rvert = f_+(x) + f_-(x)\\ \int_a^b f_{\pm} (x) dx \geq 0 
+ \left\lvert \int_a^b f(x)dx \right\rvert = \left\lvert \int_a^b f_+(x)dx - \int_a^b f_-(x)dx\right\rvert \leq\\ \left\lvert \int_a^b f_+(x)dx \right\rvert + \left\lvert\int_a^b f_-(x)dx\right\rvert =\\ \int_a^b f_+(x)dx + \int_a^b f_-(x)dx = \\  \int_a^b (f_+(x) + f_-(x))dx = \int_a^b\lvert f(x)\rvert dx\\   
+\overline{w}:=\int f(z) dz
+\int \overline{w} f(z) dz
+\int f(z) dz = \int Re f(x) dx + i \int Im f(x) dx
+\overline{w}:=\int f(z) dz
+|w|=|\overline{w}|=\left| \int f(x) dx \right|
+\overline{w} \int f(x) dx= \left( \int Re f(x) dx + i \int Im f(x) dx \right)\left( \int Re f(x) dx + i \int Im f(x) dx \right)=\left| \int f(x) \right|^2
+\overline{w} \int f(x) dx \in \mathbb{R}^+
+\left| \int f(x) \right|^2 = \overline{w} \int f(x) dx = Re \left( \int \overline{w} f(x) dx \right) = \int Re(\overline{w}f(x))dx \leq \int |\overline{w}f(x)|dx=\int |\overline{w}||f(x)|dx=|\overline{w}| \int |f(x)| dx=\left| \int f(x) dx \right| \int |f(x)| dx \Leftrightarrow \left| \int f(x) dx \right|  \leq \int |f(x)| dx

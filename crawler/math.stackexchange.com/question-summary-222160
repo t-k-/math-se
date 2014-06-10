@@ -1,0 +1,8 @@
+ (P \land (Q \lor R)) \Leftrightarrow ((P \land Q) \lor (P \land R))
+ (P \lor (Q \land R)) \Leftrightarrow ((P \lor Q) \land (P \lor R)) 
+(P \land (Q \lor R))
+(P \land (Q \lor R)) \to ((P \land Q) \lor (P \land R))
+P
+(Q \lor R)
+\lor
+\quad|\quad(P \land (Q \lor R)) \quad\quad\text{assumption}\\ \quad|\quad P \\ \quad|\quad(Q \lor R))\\ \quad|\quad|\quad Q \quad\quad\quad\quad\quad\text{ assumption}\\ \quad|\quad|\quad ...\\ \quad|\quad|\quad ((P \land Q) \lor (P \land R))\\ \quad|\quad|\quad --\\ \quad|\quad|\quad R\quad\quad\quad\quad\quad\text{ assumption}\\ \quad|\quad|\quad ...\\ \quad|\quad|\quad ((P \land Q) \lor (P \land R))\\ \quad|\quad ((P \land Q) \lor (P \land R))\quad\text{ by or-elimination, discharging assumptions}\ Q,\ R\\ \quad (P \land (Q \lor R)) \to ((P \land Q) \lor (P \land R)) \quad\text{by conditional proof}\\ 

@@ -1,0 +1,39 @@
+a,b,c\in\mathbb{R}
+det(H)=\begin{vmatrix} 1 & a & b\\ 0 & 1 & c\\ 0 & 0 &1 \end{vmatrix}=1
+H^{-1}=\begin{vmatrix} 1 & -a & ac-b\\ 0 & 1 & -c\\ 0 & 0 &1 \end{vmatrix}
+\mathcal{H}=\langle a,b,c\mid[a,b]=c,[c,b]=[c,a]=1\rangle
+\mathscr H
+\begin{bmatrix}    1&a&b  \\     0&1&c\\        0&0&1 \end{bmatrix}, \tag{1}
+\mathscr H
+H \in \mathscr H
+H = I + N
+N
+N = \begin{bmatrix} 0 & a & b \\ 0 & 0 & c \\ 0 & 0 & 0 \end{bmatrix}, \tag{2}
+N_1 = \begin{bmatrix} 0 & a_1 & b_1 \\ 0 & 0 & c_1 \\ 0 & 0 & 0 \end{bmatrix} \tag{2}
+N_2 = \begin{bmatrix} 0 & a_2 & b_2 \\ 0 & 0 & c_2 \\ 0 & 0 & 0 \end{bmatrix}, \tag{3}
+N_1 N_2 = \begin{bmatrix} 0 & 0 & a_1 c_2 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}. \tag{4}
+H_1 = I + N_1, H_2 = I + N_2 \in \mathscr H
+H_1 H_2 = (I + N_1)(I + N_2) = I + N_1 + N_2 + N_1 N_2
+= \begin{bmatrix} 1 & a_1 + a_2 & b_1 + b_2 + a_1 c_2 \\ 0 & 1 & c_1 + c_2 \\ 0 & 0 & 1 \end{bmatrix} \in \mathscr H, \tag{5}
+\mathscr H
+I \in \mathscr H
+H \in \mathscr H
+H^{-1} \in \mathscr H
+1 - r^n = (1 - r) \sum_0^{n -1} r^k, \tag{6}
+1 \le n  \in \Bbb Z
+r \in R
+n = 1
+1 - r = 1 - r
+n = 2
+1 - r^2 = (1 - r)(1 + 2)
+n = m
+1 - r^{m + 1} = 1 - r^m + r^m - r{m + 1} = (1 - r)\sum_0^{m - 1} r^k + (1 - r)r^m = (1 -r)\sum_0 ^m r^k, \tag{7}
+N
+N^2 = \begin{bmatrix} 0 &0 & ac \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}, \tag{8}
+N^3 = 0
+r = -N
+n = 3
+I = (I + N)(I - N + N^2), \tag{9}
+H^{-1} = I - N + N^2 \in \mathscr H \tag{10}
+H = I + N \in \mathscr H
+H^{-1} = \begin{bmatrix} 1 & -a & ac - b \\ 0 & 1 & -c \\ 0  &0 & 1 \end{bmatrix}, \tag{11}

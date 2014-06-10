@@ -1,0 +1,23 @@
+ \log(P(X_1,\dots,X_n))= \log\left(\boldsymbol{\pi}'\cdot \prod^n_{i=1} P F_i(\theta)\cdot \mathbf{1}\right)
+\lbrace X_i\rbrace
+\lbrace S_i\rbrace
+\displaystyle P(X_2|X_1)=E(P(X_2|X_1,S_1,S_2))=E(E(P(X_2|X_1,S_1,S_2)|S_1))
+=E(F(X_2|X_1,S_1,\theta_1)\cdot p_{i1}+F(X_2|X_1,S_1,\theta_2)\cdot p_{i2})
+\displaystyle =\sum^2_{i=1}\left(F(X_2|X_1,S_1,\theta_1)\cdot p_{i1}+F(X_2|X_1,S_1,\theta_2)\cdot p_{i2} \right)\cdot P(S_1=i)=\boldsymbol{\pi}'\cdot \boldsymbol{PF}_2(\theta)\cdot \mathbf{1}
+(P(S_1=1)P(S_1=2))= \boldsymbol{\pi}'
+\boldsymbol{P}
+P(X_n|X_{n-1},\dots,X_1)=E(E(P(X_n|X_{n-1},\dots,X_1,S_{n-1},S_n)|S_{n-1}))
+=(P(S_{n-1}=1)P(S_{n-1}=2))'\cdot \boldsymbol{PF}_n(\theta)\cdot \mathbf{1}=\boldsymbol{\pi}'\cdot \boldsymbol{P}^{n-1} \boldsymbol{F}_n(\theta)\cdot \mathbf{1}
+P(X_2,\dots,X_n|X_1)=P(X_n|X_{n-1},\dots,X_1)\cdot P(X_{n-1}|X_{n-2},\dots,X_1)\cdot \dots \cdot P(X_2|X_1) 
+\displaystyle Log(P(X_2,\dots,X_n|X_1)= Log( \prod^{n}_{i=1}\boldsymbol{\pi}'\cdot \boldsymbol{P}^{i-1} \boldsymbol{F}_i(\theta)\cdot \mathbf{1})
+\displaystyle Log(P(X_2,\dots,X_n|X_1)= Log(\boldsymbol{\pi}'\cdot \prod^n_{i=1} \boldsymbol{P F}_i\cdot \mathbf{1})
+\boldsymbol{F}_t=\boldsymbol{F}_t'
+t
+S_t
+P(S_1) =\left(\begin{array}{c}P(S_1=1)\\P(S_1=2)\end{array}\right) =\boldsymbol{\pi} =\boldsymbol{P}'\boldsymbol{\pi}
+P(X_1|S_1)P(S_1)=\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}
+\sum_{S_1}P(S_2|S_1)P(X_1|S_1)P(S_1)=\boldsymbol{P}'\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}
+\sum_{S_1}P(X_2|S_2)P(S_2|S_1)P(X_1|S_1)P(S_1)=\boldsymbol{F}_2\boldsymbol{P}'\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}
+\sum_{S_1,S_2}P(S_3|S_2)P(X_2|S_2)P(S_2|S_1)P(X_1|S_1)P(S_1)=\boldsymbol{P}'\boldsymbol{F}_2\boldsymbol{P}'\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}
+\sum_{S_1,S_2}P(X_3|S_3)P(S_3|S_2)P(X_2|S_2)P(S_2|S_1)P(X_1|S_1)P(S_1)=\boldsymbol{F}_3\boldsymbol{P}'\boldsymbol{F}_2\boldsymbol{P}'\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}
+\sum_{S_1,S_2,S_3}P(X_3|S_3)P(S_3|S_2)P(X_2|S_2)P(S_2|S_1)P(X_1|S_1)P(S_1)=\boldsymbol\iota'\boldsymbol{F}_3\boldsymbol{P}'\boldsymbol{F}_2\boldsymbol{P}'\boldsymbol{F}_1\boldsymbol{P}'\boldsymbol{\pi}

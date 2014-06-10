@@ -1,0 +1,13 @@
+\dfrac{d}{dz}\bigg(\dfrac{e^z-e^{-z}}{e^{z}+e^{-z}}\bigg)=1-\dfrac{(e^z-e^{-z})^2}{(e^{z}+e^{-z})^2}
+\dfrac{d}{dz}\bigg(\dfrac{\overbrace{e^z-e^{-z}}^{\large f(x)}}{\underbrace{e^{z}+e^{-z}}_{\large g(x)}}\bigg)
+\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)}
+\;f'(x) = e^z + e^{-z} = g(x),\;
+\;g'(x) = e^z - e^{-z} = f(x),\;
+\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{g^2 (x) - f^2(x)}{g^2(x)} = 1 - \dfrac{f^2(x)}{g^2(x)} = 1-\dfrac{(e^z-e^{-z})^2}{(e^{z}+e^{-z})^2}
+\frac{e^z-e^{-z}}{e^z+e^{-z}}=\frac{e^{2z}-1}{e^{2z}+1}=1-\frac2{e^{2z}+1}
+\frac{d}{dz}\left(\frac{e^z-e^{-z}}{e^z+e^{-z}}\right)
+=-2\frac{d}{dz}\left(\frac1{e^{2z}+1}\right)
+=-2\frac{2e^{2z}}{-(e^{2z}+1)^2}=\frac{4e^{2z}}{(e^{2z}+1)^2}
+=\frac{(e^{2z}+1)^2-(e^{2z}-1)^2}{(e^{2z}+1)^2}\text{ using } 4ab=(a+b)^2-(a-b)^2
+e^{2z}\ne0
+=1-(\frac{e^{2z}-1)^2}{(e^{2z}+1)^2}=1-\dfrac{(e^z-e^{-z})^2}{(e^{z}+e^{-z})^2}

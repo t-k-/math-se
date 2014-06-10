@@ -1,0 +1,105 @@
+B(\mathcal{l}_2) :=\{x \in \mathcal{l}_2 : \|x \| \leq 1 \}
+S(\mathcal{l}_2) :=\{x \in \mathcal{l}_2 : \|x \| = 1 \}
+\mathcal{l}_2
+B(\mathcal{l}_2)
+A
+x,y \in A
+x \neq y
+\|x -y \| > \sqrt{2}
+A
+S(\mathcal{l}_2)
+z
+d(z,S(\mathcal{l}_2)) = \sqrt{2}
+A
+z
+w \in S(\mathcal{l}_2)
+\|z - w \| = \sqrt{2}
+v \in S(\mathcal{l}_2),v \ne w
+\|z - v \| > \sqrt{2}
+(e_1,e_2,\ldots)
+\ell^2
+(a_1,a_2,a_3,\ldots)
+(0,1)
+(v_1,v_2,\ldots)
+\begin{align*}  v_1&=e_1\\ v_2&=-a_1e_1+\sqrt{1-a_1^2}e_2\\ v_3&=-a_2(e_1+e_2)+\sqrt{1-2a_2^2}e_3\\ v_4&=-a_3(e_1+e_2+e_3)+\sqrt{1-3a_3^2}e_4\\ &\vdots\\ v_{k+1}&=-a_k(e_1+\cdots+e_k)+\sqrt{1-ka_k^2}e_{k+1} \end{align*}
+a_k<\dfrac{1}{\sqrt{k+k^2}}
+k
+a_k=\dfrac{1}{2k}
+k
+\|v_k-v_j\|>\sqrt{2}
+k\neq j
+d\in(0,2R)
+\{P_n\subset H:n\in\mathbb{N}\}
+\{e_n\in P_n:n\in\mathbb{N}\}
+\{c_n\in P_n:n\in\mathbb{N}\}
+\{r_n:n\in\mathbb{N}\}\subset \mathbb{R}_+
+ S (c_n,r_n)\cap P_n= S (0,R)\cap P_n\tag{1}
+P_n\subset P_{n-1}\tag{2}
+e_n\in S (c_n,r_n)\cap P_n\tag{3}
+\Vert x-e_{n-1} \Vert=d\tag{4}
+n\in\mathbb{N}
+x\in P_n\cap S (c_n,r_n)
+(1)-(4)
+\Vert e_k-e_l\Vert=d
+k\neq l
+l>k
+(1)
+(2)
+ S (c_n,r_n)\cap P_n\subset  S (c_{n-1},r_{n-1})\cap P_{n-1}
+(3)
+e_l\in  S (c_l,r_l)\cap P_l\subset  S (c_n,r_n)\cap P_n
+(4)
+\Vert e_k-e_l\Vert=d
+A:=\{e_n:n\in\mathbb{N}\}
+P_{n+1}
+P_{n+1}\subset P_n
+(2)
+x\in S (c_{n+1}, r_{n+1})\cap P_{n+1}
+x\in P_{n+1}\subset P_n\subset\ldots\subset P_1=S (0,R)
+x\in  S (0,R)\cap P_{n+1}
+ S (c_{n+1}, r_{n+1})\cap P_{n+1}\subset  S (0,R)\cap P_{n+1}
+x\in S (0,R)\cap P_{n+1}
+\Vert x\Vert=R
+f_n(x)=r_n^2-d^2/2
+x\in P_{n+1}\subset P_n
+x\in S (0,R)
+x\in S (0,R)\cap P_n
+ S (0,R)\cap P_n= S (c_n,r_n)\cap P_n
+x\in S(c_n,r_n)
+\Vert x-c_n\Vert^2=r_n^2
+e_n\in S(c_n,r_n)\cap P_n
+\Vert e_n-c_n\Vert^2=r_n^2
+c_{n+1}
+r_{n+1}
+x\in S(c_{n+1},r_{n+1})
+x\in P_{n+1}
+x\in S(c_{n+1},r_{n+1})\cap P_{n+1}
+x\in S (0,R)\cap P_{n+1}
+S (0,R)\cap P_{n+1}\subset S(c_{n+1},r_{n+1})\cap P_{n+1}
+S (0,R)\cap P_{n+1}= S(c_{n+1},r_{n+1})\cap P_{n+1}
+(1)
+ \Vert x-c_{n+1}\Vert^2= \Vert x-c_n\Vert^2+\Vert c_{n+1}-c_n\Vert^2-2\langle x-c_n, c_{n+1}-c_n\rangle= 
+ \Vert x-c_n\Vert^2+\left(1-\frac{d^2}{2r_n^2}\right)^2\Vert e_n-c_n\Vert^2-2\left(1-\frac{d^2}{2r_n^2}\right)\langle x-c_n, e_n-c_n\rangle= 
+ \Vert x-c_n\Vert^2+\left(1-\frac{d^2}{2r_n^2}\right)^2\Vert e_n-c_n\Vert^2-2\left(1-\frac{d^2}{2r_n^2}\right)f_n(x)= 
+ r_n^2+\left(1-\frac{d^2}{2r_n^2}\right)^2 r_n^2-2 \left(1-\frac{d^2}{2r_n^2}\right)\left(r_n^2-\frac{d^2}{2}\right)=d^2\left(1-\frac{d^2}{4r_n^2}\right)=r_{n+1}^2 
+ S (c_{n+1},r_{n+1})\cap P_{n+1}= S(0,R)\cap P_{n+1}\subset S(0,R)\cap P_n=S(c_n,r_n)\cap P_n 
+x\in \ S (c_{n+1},r_{n+1})\cap P_{n+1}
+x\in P_{n+1}
+f_n(x)=r_n^2-d^2/2
+x\in S(c_{n+1},r_{n+1})\cap P_n\subset S(c_n,r_n)\cap P_n
+\Vert x-c_n\Vert=r_n^2
+e_n\in S(c_n,r_n)\cap P_n
+\Vert e_n-c_n\Vert^2=r_n^2
+x\in  S (c_{n+1},r_{n+1})\cap P_{n+1}\subset P_n
+(4)
+ \Vert x-e_n\Vert^2=\Vert x-c_n\Vert^2+\Vert e_n-c_n\Vert-2\langle x-c_n, e_n-c_n\rangle=r_n^2+r_n^2-2f_n(x)=d^2 
+x\in  S (c_{n+1}, r_{n+1})\cap P_{n+1}
+e_{n+1}\in x
+(3)
+x\geq 2^{-1/2}
+d
+d\leq R\sqrt{2}
+d>R\sqrt{2}
+r_{n+1}
+c_{n+1}
+R\sqrt{2}

@@ -1,0 +1,42 @@
+\partial M
+C^2
+\mathbb{R}^3
+M
+\overline{M}
+ f(x) = \frac{\int_{\partial M} \left| \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{1}{||y-x||} \right| dS_y}{\left| \int_{\partial M}  \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{1}{||y-x||}  dS_y\right|} 
+f
+M
+x_0 \in \partial M
+f
+\overline{M}
+ \lim_{x\rightarrow x_0} f(x) = 1 
+U(x)\subset \partial M
+\left( n_y \cdot \nabla_y \frac{1}{||y-x||} \right)  > 0
+y\in U(x)
+ \frac{\int_{\partial M\setminus U(x)} \left| \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{1}{||y-x||} \right| dS_y}{ \int_{U(x)}  \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{1}{||y-x||}  dS_y} \rightarrow 0\qquad \text{as dist}(x,\partial M) \rightarrow 0 
+U(x)
+\lim_{x\rightarrow x_0 \in \partial M} f(x) = 1 
+x = y
+M = M_\epsilon \cup B_\epsilon
+B_\epsilon
+x
+\epsilon
+M_\epsilon = M \setminus B_\epsilon
+x \neq y
+ \Delta_y \frac{1}{\|y - x\|} = 0 
+ \iint_M \frac{1}{\|y-x\|}\Delta_y \frac{1}{\|y-x\|} dy = \iint_{B_\epsilon} \frac{1}{\|y-x\|}\Delta_y \frac{1}{\|y-x\|} dy. 
+y = x + \epsilon \eta
+\|\eta\| = 1
+B_\epsilon \subseteq B_{2\epsilon} \subseteq M_\epsilon \subseteq B_R
+ \frac{\partial}{\partial n_y} \left(\frac{1}{\|y-x\|}\right)_{\|y - x\| = \epsilon} = \frac{\partial}{\partial r} \left(\frac{1}{r}\right)_{r = \epsilon} = - \frac{1}{\epsilon^2} 
+ \iint_{B_\epsilon} \frac{1}{\|y-x\|}\Delta_y \frac{1}{\|y-x\|} dy = -\frac{1}{\epsilon^2} \int_{\|y - x\| = \epsilon} \frac{1}{\|y-x\|} d S_y 
+ \iint_{B_\epsilon} \frac{1}{\|y-x\|}\Delta_y \frac{1}{\|y-x\|} dy = - \int_{\|\eta\| = 1} \frac{1}{\epsilon} d S_\eta = -\frac{4 \pi}{\epsilon}, 
+ \iint_{B_{2\epsilon}\setminus B_\epsilon} \frac{1}{\|y-x\|^4} d y \le \iint_{M_\epsilon} \frac{1}{\|y-x\|^4} d y \le \iint_{B_R \setminus B_\epsilon} \frac{1}{\|y-x\|^4} d y, 
+y = x + \xi
+y = x + \eta
+\epsilon \le \|\xi\| \le 2\epsilon
+\epsilon \le \|\eta\| \le R
+ \iint_{\epsilon \le \|\xi\| \le 2\epsilon} \frac{1}{\|\xi\|^4} d\xi \le \iint_{M_\epsilon} \frac{1}{\|y-x\|^4} d y \le \iint_{\epsilon \le \|\xi\| \le R} \frac{1}{\|\eta\|^4} d\eta 
+ \frac{2 \pi}{\epsilon} \le \iint_{M_\epsilon} \frac{1}{\|y-x\|^4} d y \le 4 \pi \left(\frac{1}{\epsilon} - \frac{1}{R}\right). 
+ \frac{2 \pi}{\epsilon} \le \left| \iint_M \mbox{div}\left(\frac{1}{\|y-x\|}\nabla_y \frac{1}{\|y - x\|}\right) dy \right| 
+ \iint_M \left| \mbox{div}\left(\frac{1}{\|y-x\|}\nabla_y \frac{1}{\|y - x\|}\right)  \right| dy \le 4 \pi \left(\frac{2}{\epsilon} - \frac{1}{R}\right). 

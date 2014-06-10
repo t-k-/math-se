@@ -1,0 +1,24 @@
+\mathrm P(X=k)=\binom nkp^k(1-p)^{n-k}
+np
+\mathrm E(X) = \sum^n_{k=0}k\mathrm P(X=k)=\sum^n_{k=0}k\binom nkp^k(1-p)^{n-k}
+\sum^n_{k=0}k\binom nkp^k(1-p)^{n-k}=np
+np
+\sum^n_{k=0}k\binom nkp^k(1-p)^{n-k}= \sum^n_{k=1} k\binom nkp^k(1-p)^{n-k}
+np
+k
+\sum^n_{k=1} k\binom nkp^k(1-p)^{n-k} = np \sum^n_{k=1} \dfrac{(n-1)!}{(n-k)!(k-1)!}p^{k-1}(1-p)^{n-k}
+np \sum^n_{k=1} \dfrac{(n-1)!}{(n-k)!(k-1)!}p^{k-1}(1-p)^{n-k} = np \sum^n_{k=1} \binom {n-1}{k-1}p^{k-1}(1-p)^{n-k},
+\displaystyle \sum^n_{k=1} \binom {n-1}{k-1}p^{k-1}(1-p)^{n-k} = (p + (1-p))^{n-1} = 1
+\sum^n_{k=0}k\binom nkp^k(1-p)^{n-k} = np
+k\binom{n}k=\frac{kn!}{k!(n-k)!}=\frac{n!}{(k-1)!(n-k)!}=\frac{n(n-1)!}{(k-1)!(n-k)!}=n\binom{n-1}{k-1}\;:
+\begin{align*} \sum^n_{k=0}k\binom nkp^k(1-p)^{n-k}&=\sum_{k=0}^nn\binom{n-1}{k-1}p^k(1-p)^{n-k}\\ &=n\sum_{k=0}^n\binom{n-1}{k-1}p^k(1-p)^{n-k}\\ &=n\sum_{k=0}^{n-1}\binom{n-1}kp^{k+1}(1-p)^{n-k-1}\\ &=np\sum_{k=0}^{n-1}\binom{n-1}kp^k(1-p)^{n-k-1}\\ &=np\Big(p+(1-p)\Big)^{n-1}&&\text{binomial theorem}\\ &=np\;. \end{align*}
+B_i=1
+i
+0
+X
+B_1+B_2+\cdots +B_n
+E(B_i)=p
+E(X)=np
+E(X)=E(B_1+B_2+\cdots+B_n)=E(B_1)+E(B_2)+\cdots +E(B_n).
+k \dbinom{n}{k} = n \dbinom{n-1}{k-1}
+\mathbb{E}(X) = \sum_{k=1}^{n}n \dbinom{n-1}{k-1} p^k (1-p)^{n-k} = np \left(\sum_{r=0}^{n-1} \dbinom{n-1}{r} p^r (1-p)^{n-1-r} \right) = np

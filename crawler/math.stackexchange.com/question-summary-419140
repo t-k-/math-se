@@ -1,0 +1,15 @@
+\int \frac{1}{\cos(x)}\,\mathrm dx
+\int \frac{1}{\cos(x)}\,\mathrm dx = \int \frac{\cos(x)}{\cos(x)^2}\,\mathrm dx = \int \frac{\cos(x)}{1-\sin(x)^2}\,\mathrm dx
+u = \sin(x)
+\mathrm du = 1
+\int \frac{???}{1-u^2}\,\mathrm du
+\int \frac{1}{1-u^2}\,\mathrm du
+A = 1/2
+B = 1/2
+\int \frac{1}{1-u^2}\,\mathrm du = \int \frac{1/2}{1+u}\,\mathrm du + \int \frac{1/2}{1-u}\,\mathrm du = 1/2 (\int \frac{1}{1+u}du - \int \frac{1}{1-u}du) = 1/2 * ln(\frac{1+u}{1-u}) = ln(\frac{1+sin(x)}{1-sin(x)})^{1/2} = ln(\frac{\sqrt{1+sin(x)}}{\sqrt{1-sin(x)}}) = ln(\frac{\sqrt{1+sin(x)}}{\sqrt{cos(x)^2}}) = ln(\frac{\sqrt{1+sin(x)}}{cos(x)})
+u=\sec x + \tan x
+du = (\sec x \tan x + \sec^2x)~dx
+ \int \dfrac{1}{\cos x} dx = \int \sec x~dx = \int \sec x \left(\dfrac{\sec x + \tan x}{\sec x + \tan x}\right) dx = \int\dfrac{\sec^2 x + \sec x \tan x}{\sec x + \tan x} dx 
+ \int\dfrac{(\sec x \tan x + \sec^2 x)~dx}{\sec x + \tan x} = \int \dfrac{du}{u}=\ln|u|+C= \boxed{\ln|\sec x + \tan x|+C} 
+\int\frac{1}{1-u^2}du=\frac12\int(\frac{1}{1+u}+\frac{1}{1-u})du=\frac12(\ln(1+u)-\ln(1-u))+\color{red }{\ lnc}=ln(\color{red }{c}\sqrt{\frac{1+u}{1-u}})
+1/cos(x)=sec(x)

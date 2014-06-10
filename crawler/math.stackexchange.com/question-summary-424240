@@ -1,0 +1,16 @@
+f(x)
+[0,1]
+\dfrac{\displaystyle\int_{0}^{1}xf^2(x)dx}{\displaystyle\int_{0}^{1}xf(x)dx}\le\dfrac{\displaystyle\int_{0}^{1}f^2(x)dx}{\displaystyle\int_{0}^{1}f(x)dx}
+LHS
+\Longleftrightarrow \int_{0}^{1}f^2(x)dx\cdot\int_{0}^{1}yf(y)dy-\int_{0}^{1}yf^2(y)dy\cdot\int_{0}^{1}f(x)dx\ge 0
+I=\int_{0}^{1}\int_{0}^{1}f(x)f(y)y[f(x)-f(y)]dxdy
+x\longrightarrow y,y\longrightarrow x
+f
+[0,1]
+I=\int_{0}^{1}\int_{0}^{1}f(x)f(y)x[f(y)-f(x)]dxdy
+2I=\int_{0}^{1}\int_{0}^{1}f(x)f(y)(y-x)[f(x)-f(y)]dxdy
+(y-x)[f(x)-f(y)]\ge 0,0\le x,y\le 1
+I\ge 0
+\xi\in (0,1)
+F(x)=\int_{0}^{x}xf^2(y)dy,g(x)=\int_{0}^{x}f^2(y)dy
+\dfrac{\displaystyle\int_{0}^{1}xf^2(x)dx}{\displaystyle\int_{0}^{1}xf(x)dx}=\dfrac{F(1)-F(0)}{g(1)-g(0)}=\dfrac{F'(\xi)}{g(\xi)}=\xi 

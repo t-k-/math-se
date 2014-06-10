@@ -1,0 +1,27 @@
+\lfloor\lfloor x/2 \rfloor / 2 \rfloor = \lfloor x/4 \rfloor
+a = \lfloor x/4 \rfloor
+a \leq x/4 < a+1
+2a \leq x/2 < 2(a+1)
+\lfloor x/2 \rfloor \in \{2a,2a+1\}\implies \lfloor x/2 \rfloor/2 \in \{a,a+\frac{1}{2}\}\implies \lfloor \lfloor x/2 \rfloor/2 \rfloor = a
+\lfloor \lfloor x/2 \rfloor/2 \rfloor = a
+a \leq \lfloor x/2 \rfloor/2 < a+1 \implies 2a \leq \lfloor x/2 \rfloor < 2a+2
+\lfloor x/2 \rfloor \in \{2a, 2a+1\} \implies x/2 \in [2a,2a+2) \implies x/4 \in [a,a+1) \implies \lfloor x/4 \rfloor = a
+\mathbf{Edit:}
+a\in\mathbb{Z}
+\rm\,\ r = x/2,\,\ n = 2.
+x = 4n + r
+n
+0 \leq r < 4
+\lfloor x/4 \rfloor = n
+0 \leq r < 2
+2 \leq r < 4
+0 \leq r/2 < 1
+1 \leq r/2 < 2
+\lfloor \lfloor 2n + {r \over 2} \rfloor /2 \rfloor = n
+ \lfloor x/4 \rfloor=k\quad \text{if and only if}\quad 4k+4>x\ge 4k. 
+ \lfloor\lfloor x/2\rfloor/2\rfloor =k \quad \text{if and only if}\quad 2k+2>\lfloor x/2\rfloor\ge 2k. 
+ 2k+2>\lfloor x/2\rfloor\ge 2k\quad \text{if and only if}\quad \lfloor x/2\rfloor=2k\quad\text{or}\quad 2k+1. 
+ \lfloor x/2\rfloor=2k\quad \text{if and only if}\quad 4k+2>x\ge 4k, 
+ \lfloor x/2\rfloor=2k+1\quad \text{if and only if}\quad 4k+4>x\ge 4k+2. 
+ 2k+2>\lfloor x/2\rfloor\ge 2k\quad \text{if and only if}\quad 4k+4>x\ge 4k. 
+\lfloor x/4 \rfloor=\lfloor\lfloor x/2\rfloor/2\rfloor

@@ -1,0 +1,47 @@
+N
+\mathbb{R}^d
+\{x_1,...,x_N\}
+\{y_j\}_{j=1}^N
+\varphi(r): \mathbb{R} \to \mathbb{R}
+\Phi_j: \mathbb{R}^d \to \mathbb{R}
+\Phi_j(x) = \varphi(||x-x_j||)
+x_k
+s(x)
+s(x_k) = y_k
+N
+N
+c_j
+Ac = y
+y
+y_j
+c
+A_{kj} = \varphi(||x_k-x_j||)
+s(x_k) = \sum_{j=1}^N c_j \varphi(||x_k-x_j||)
+\varphi
+Ac=y
+\varphi(r) = exp(-\epsilon r^2)
+\epsilon
+\varphi(r) = r^2 \log(r)
+\varphi(r) = (1-r)_+
+(x_i,y_i)
+i=1\ldots n
+n
+f_j(x,y)
+V
+v_{ij} = f_j(x_i,y_i)
+f(x_i,y_i) = z_i
+f(x,y) = \sum_{j=1}^n c_j f_j(x,y)
+{\bf c} = V^{-1} {\bf z}
+c_j
+x_j
+(x_i, y_i)
+(0,1), (2,3), (4,2), (2,2)
+f_1(x,y) = 1
+f_2(x,y) = x
+f_3(x,y) = y
+f_4(x,y) = x^2
+{\bf z} = \pmatrix{3\cr 7\cr 8\cr 6\cr}
+{\bf c} = \pmatrix{2\cr 1\cr 1\cr 0\cr}
+f(x,y) = 2 + x + y
+f(3,5) = 10
+ V = \left[ \begin {array}{cccc} f_{{1}} \left( 0,1 \right) &f_{{2}}  \left( 0,1 \right) &f_{{3}} \left( 0,1 \right) &f_{{4}} \left( 0,1  \right) \\ f_{{1}} \left( 2,3 \right) &f_{{2}}  \left( 2,3 \right) &f_{{3}} \left( 2,3 \right) &f_{{4}} \left( 2,3  \right) \\ f_{{1}} \left( 4,2 \right) &f_{{2}}  \left( 4,2 \right) &f_{{3}} \left( 4,2 \right) &f_{{4}} \left( 4,2  \right) \\ f_{{1}} \left( 2,2 \right) &f_{{2}}  \left( 2,2 \right) &f_{{3}} \left( 2,2 \right) &f_{{4}} \left( 2,2  \right) \end {array} \right] = \left[ \begin {array}{cccc} 1&0&1&0\\ 1&2&3&4 \\ 1&4&2&16\\ 1&2&2&4\end {array}  \right] 

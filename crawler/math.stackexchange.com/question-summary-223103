@@ -1,0 +1,5 @@
+\sum_{i=0}^{\log n}5^{\log n-i}\left(3\cdot2^i+2\right)
+\begin{align*} \sum_{i=0}^{\log n}5^{\log n-i}\left(3\cdot2^i+2\right)&=5^{\log n}\sum_{i=0}^{\log n}\left(3\left(\frac25\right)^i+2\left(\frac15\right)^i\right)\\ &=5^{\log n}\left(3\sum_{i=0}^{\log n}\left(\frac25\right)^i+2\sum_{i=0}^{\log n}\left(\frac15\right)^i\right)\;. \end{align*}
+m=\lfloor\log n\rfloor
+\sum_{i=0}^m\left(\frac25\right)^i=\frac{1-\left(\frac25\right)^{m+1}}{1-\frac25}=\frac53\left(1-\left(\frac25\right)^{m+1}\right)
+\sum_{i=0}^m\left(\frac15\right)^i=\frac{1-\left(\frac15\right)^{m+1}}{1-\frac15}=\frac54\left(1-\left(\frac15\right)^{m+1}\right)\;.

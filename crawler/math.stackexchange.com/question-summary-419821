@@ -1,0 +1,20 @@
+ f(x) = \begin{cases} \frac12 &,\ -0.5 \le x\le 1.5\\0 &,\ \mbox{otherwise} \end{cases}
+Y=X^2
+f(x) = \begin{cases} \frac12 &, \ -0.5 \le x\le 0\\\frac12 &, \ 0\le x\le 0.5 \\ \frac12 &,\ 0.5 \le x\le 1.5\\ 0 &, \ \mbox{otherwise} \end{cases}
+g^{-1}(y) = -\sqrt{y}
+-0.5 \le x \le 0 
+g^{-1}(y) = +\sqrt{y}
+ 0 \le x \le 0.5 
+ 0.5 \le x \le 1.5 
+ g(y) = \begin{cases} \frac{1}{4\sqrt{y}} &,\ 0 \le x \le 0.25\\ \frac{1}{4\sqrt{y}} &, \ 0\le x\le 0.25 \\ \frac{1}{4\sqrt{y}} &, \ 0.25 \le x \le 2.25 \\ 0 &, \ \mbox{otherwise} \end{cases}
+ g(y) = \begin{cases} \frac{1}{2\sqrt{y}} &, \ 0 \le x \le 0.25 \\ \frac{1}{4\sqrt{y}} &, \ 0.25 \le x \le 2.25\\ 0 &, \ \mbox{otherwise} \end{cases} 
+X
+Y
+Y
+x<.5
+x>1.5
+1
+cdf_y=P(X^2<y)=cdf_x(\sqrt{y})-cdf_x(-\sqrt{y})
+ cdf_x=P(X<x)=\int_{-0.5}^{x}f(x)\,dx=\frac12(x+0.5)=\frac x2 + 0.25 
+ cdf_y= \begin{cases} 0 & y<0\\ \sqrt{y} & 0≤y≤0.25\\ 0.25+\frac12 \sqrt{y} & 0.25≤y≤2.25\\ 1 & y≥2.25 \end{cases} 
+ pdf_y=\frac{d}{dy}cdf_y= \begin{cases} 0 & y<0\\ \frac1{2\sqrt{y}} & 0≤y≤0.25\\ \frac1{4\sqrt{y}} & 0.25≤y≤2.25\\ 0 & y≥2.25 \end{cases} 

@@ -1,0 +1,17 @@
+f: X \to Y
+f
+\epsilon > 0
+N > 0
+x,y \in I
+I
+x \neq y
+ \Biggl| \frac{f(x)-f(y)}{x-y} \Biggr| > N \ \Longrightarrow |f(x)-f(y)|< \epsilon.
+I
+\forall \epsilon > 0,  \exists \delta > 0 \text{ such that } \forall x, y \in I,  |x-y| < \delta \Rightarrow |f(x)-f(y)| < \epsilon
+\forall \epsilon > 0,  \exists N > 0 \text{ such that } \forall x, y \in I,  \frac{|f(x)-f(y)|}{|x-y|} > N \Rightarrow |f(x)-f(y)| < \epsilon
+\frac{|f(x)-f(y)|}{|x-y|} > N \iff |x-y| < \frac{|f(x) - f(y)|}{N}
+\Rightarrow
+N
+\delta=\frac{ \sup( f(x)) - \inf(f(y))}{N}
+\Leftarrow
+\delta := \frac{\epsilon}{N}

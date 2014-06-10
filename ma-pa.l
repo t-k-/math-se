@@ -119,6 +119,7 @@ void mkstr(char *);
 \\eta           { mkstr(yytext); return VAR; } 
 \\[Xx]i         { mkstr(yytext); return VAR; } 
 \\infty         { mkstr(yytext); return VAR; }
+∞               { mkstr(yytext); return VAR; }
 
 \\bar           {}
 \\hat           {}

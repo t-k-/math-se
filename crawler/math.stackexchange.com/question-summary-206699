@@ -1,0 +1,8 @@
+ T(n) = T(0) + \frac{1}{lg \; n} + \frac{1}{lg \; (n-2)} + \frac{1}{lg \; (n-4)} + ... + \frac{1}{lg \; 6} + \frac{1}{lg \; 4} + \frac{1}{lg \; 2} 
+ T(n) = T(1) + \frac{1}{lg \; n} + \frac{1}{lg \; (n-2)} + \frac{1}{lg \; (n-4)} + ... + \frac{1}{lg \; 7} + \frac{1}{lg \; 5} + \frac{1}{lg \; 3} 
+T(1)=1
+T(0) = 1
+ \sum ^{n}_{i=2} \frac{1}{lg\;i} 
+\sum_{i=2}^n \frac{1}{lg(i)} \approx \int_{x=3/2}^{n+1/2} \frac{dx}{lg(x)}.
+\int_a^b \dfrac{dx}{\ln x} = \int_0^{b-a} \dfrac{dt}{\ln(b-t)} = \int_0^{b-a} \dfrac{dt}{\ln(b) + \ln(1-t/b)} = \int_0^{b-a} \dfrac{dt}{\ln(b) - t/b + \ldots}
+ = \int_0^{b-a} \left( \frac{1}{\ln(b)} + \frac{t}{b \ln(b)^2} + \ldots\right)\ dt

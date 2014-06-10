@@ -1,0 +1,21 @@
+X
+Y
+E[X]=5
+E[Y]=8
+I
+E[I]
+min(X,Y)
+I=\begin{cases} 1 \quad \text{if } X \le Y \\ 2 \quad \text{if } X > Y \end{cases}
+X \sim \mathrm{Exp}(c_1)
+Y \sim \mathrm{Exp}(c_2)
+c_1 = \frac{1}{5}
+c_2 = \frac{1}{8}
+ \begin{align*} \Bbb{P}(X \leq Y) &= \int_{0}^{\infty} \left( \int_{0}^{y} c_1 \exp\{-c_1 x\} \, dx \right) c_2 \exp\{-c_2 y\}\, dy \\ &= \int_{0}^{\infty} (1 - \exp\{-c_1 y\}) c_2 \exp\{-c_2y\}\, dy \\ &= \int_{0}^{\infty} c_2(\exp\{-c_2y\} - \exp\{-(c_1+c_2)y\}) \, dy \\ &= \left[ \exp\{-c_2 y\} - \frac{c_2}{c_1+c_2} \exp\{-(c_1+c_2)y\} \right]_{0}^{\infty} \\ &= \frac{c_1}{c_1 + c_2}  = \frac{8}{13}. \end{align*}
+ \Bbb{E}[I] = 1 \cdot \Bbb{P}(X \leq Y) + 2 \cdot (1 - \Bbb{P}(X \leq Y)) = \frac{18}{13}. 
+\min \{ X, Y \}
+ \Bbb{P}(\min \{ X, Y \} > t) = \Bbb{P}(X > t, Y > t) = \Bbb{P}(X > t)\Bbb{P}(Y > t) = \exp\{-c_1 t\}\exp\{-c_2 t\}.
+F
+\min \{ X, Y \}
+F(x) = \Bbb{P}(\min \{ X, Y \} \leq x) = 1 - \exp\{-(c_1 + c_2) x\}.
+\min \{ X, Y \}
+c_1 + c_2

@@ -1,0 +1,8 @@
+t-s=u
+s=t-u
+ds=-du
+ x(t)=-\int_t^0 u^q\,du=\int_0^t u^q\,du 
+ x(t)=\int_0^t(t-s)^q\,\mathrm{d}s 
+ x'(t)=\overbrace{\vphantom{\int_0^t}0^q}^{1/0}+q\,\,\overbrace{\int_0^t(t-s)^{q-1}\,\mathrm{d}s}^{\text{diverges}} 
+ \begin{align} x(t) &=\left.\frac{-1}{q+1}(t-s)^{q+1}\right]_0^t\\ &=\frac{t^{q+1}}{q+1} \end{align} 
+ \begin{align} x(t) &=\int_0^t(t-s)^q\,\mathrm{d}s\\ &=\int_0^ts^q\,\mathrm{d}s\\ \end{align} 

@@ -1,0 +1,10 @@
+f\in C^1(\mathbb{R},\mathbb{R})
+f(0)=0
+S_n=\sum _{k=0}^{n}f(\frac{k}{n^2})
+\epsilon>0
+ f(\frac{k}{n^2})=f(0)+f'(0)(\frac{k}{n^2}-0)+h(\frac{k}{n^2})(\frac{k}{n^2}-0) 
+ \quad \lim_{n\to \infty}h(\frac{k}{n^2})=0 
+ \displaystyle\sum_{k=0}^{n} f(\frac{k}{n^2})= \frac{f'(0)}{n^2} \displaystyle\sum_{k=0}^{n} k+\frac{1}{n^2} \sum_{k=0}^{n}h(\frac{k}{n^2})k 
+ \Longleftrightarrow \displaystyle\sum_{k=0}^{n} f(\frac{k}{n^2}) -\frac{f'(0)}{n^2} \frac{n(n+1)}{2}=\frac{1}{n^2}\sum_{k=0}^{n}h(\frac{k}{n^2})k 
+ \Longleftrightarrow \displaystyle\sum_{k=0}^{n} f(\frac{k}{n^2}) -\frac{f'(0)}{2}(1+\frac{1}{n})=\frac{1}{n^2}\sum_{k=0}^{n}h(\frac{k}{n^2})k 
+ \exists  N\in \mathbb{N}, n\geq N \Longrightarrow |h(\frac{k}{n^2})|<\epsilon 

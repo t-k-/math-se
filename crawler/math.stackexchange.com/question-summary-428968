@@ -1,0 +1,27 @@
+ h: U \rightarrow R^{n-m} 
+ C^1 
+ \overline{U} 
+ 0 \in U \subset R^m 
+ h(0)=0 
+ \nabla h (0)=0 
+ M \subset R^n 
+ h 
+ T_0(M)= R^m =\{x: x_{m+1}, \ldots x_{n}=0 \} 
+ \lim_{\lambda \rightarrow 0}\int_{M}f(y/\lambda)\lambda^{-m}dH^m(y)=\int_{T_0(M)}f(y)dH^m(y) 
+ f 
+ R^n 
+ H^m 
+u=y/\lambda
+M
+f
+\lambda^{-1}M
+h_\lambda(y)=\lambda^{-1}h(\lambda y)
+\lambda\to 0
+h_\lambda \to 0
+\nabla h_\lambda(y)=\nabla h(\lambda y)\to 0
+ \int_{M}f(y/\lambda)\lambda^{-m}dH^m(y)=\int_{\lambda^{-1}M} f(u)\,dH^m(u)\tag1
+f
+\lambda^{-1}M
+y\mapsto (y,h_\lambda(y))
+f
+\int_{\lambda^{-1}M} f(u)\,dH^m(u)=\int_{T_0(M)} f(y,h_\lambda(y))\sqrt{1+\|\nabla h_\lambda\|^2} dH^m(y) \tag2

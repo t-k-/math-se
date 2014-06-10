@@ -1,0 +1,9 @@
+\mathop {\lim }\limits_{x \to {0^ + }} {\left( {\frac{{\sin x}}{x}} \right)^{\frac{1}{x}}}
+{e^{\frac{1}{x}\ln \left( {\frac{{\sin x}}{x}} \right)}}
+\mathop {\lim }\limits_{x \to {0^ + }} \frac{{\ln \left( {\frac{{\sin x}}{x}} \right)}}{x}
+x\to 0^+
+\frac{\ln\frac{\sin x}x}x\sim \frac{\frac{\sin x}x-1}x\sim \frac{\sin x-x}{x^2}\sim \frac{-x^3}{6x^2}\to 0
+x >0
+x-\frac{x^3}{6} \le \sin x \le x \Rightarrow -\frac{x^3}{6} = x-\frac{x^3}{6}-x\le\sin x -x \le 0 \Rightarrow -\frac{x^2}{6} \le\frac{\sin x-x }{x^2} \le 0
+\frac{{\ln \left( {\frac{{\sin x}}{x}} \right)}}{x} =  \frac{{\ln \left( \left( \frac{{\sin x}}{x}-1 \right) + 1 \right)}}{\frac{{\sin x}}{x}-1 } \cdot \frac{\frac{{\sin x}}{x}-1 }{x} =\frac{{\ln \left( \left( \frac{{\sin x}}{x}-1 \right) + 1 \right)}}{\frac{{\sin x}}{x}-1 } \cdot \frac{\sin x-x }{x^2}
+\begin{eqnarray}\dfrac{\sin(x)}x \ &=&\ \color{#c00}1\color{#0a0}{\,-\,\dfrac{x^2}6+O(x^4)}\!\!\!\!\!\!\!\\&=&\ \color{#c00}1\, +\,\color{#0a0}z\\ \Rightarrow\ \ x^{-1}\log\left(\dfrac{\sin(x)}x\right) &=&\ x^{-1}\log(\color{#c00}1+\color{#0a0}z)\ &=&\  x^{-1}\left(\ \ \ \color{#0a0}z\ \ \ +\ \ O(z^2)\right)\\ && &=&\ x^{-1}\left(-\color{#0a0}{\dfrac{x^2}6+O(x^4)} \right)\\ && &=&\ -\dfrac{x}6\, +\ O(x^3)\\ && &&\!\!\!\!\!\!\!{\rm which}\overset{\phantom{I}} \to \ 0 \ \ \, {\rm as}\, \ \ x\to0^+\\ \end{eqnarray}\qquad\quad\qquad\qquad

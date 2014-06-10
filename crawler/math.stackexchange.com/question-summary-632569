@@ -1,0 +1,5 @@
+\int \frac{x^4}{(x-1)(x^2-1)}dx
+\frac{x^4}{(x-1)(x^2-1)}=\frac{x^4-1+1}{(x-1)(x^2-1)}=\frac{x^2+1}{x-1}+\frac{1}{(x-1)(x^2-1)}
+=x+1+\frac{2}{x-1}+\frac{1}{2(x-1)}\left(\frac{1}{x-1}-\frac{1}{x+1}\right)
+=x+1+\frac{2}{x-1}+\frac{1}{2(x-1)^2}-\frac{1}{4(x-1)}+\frac{1}{4(x+1)}
+\to \int \frac{x^4}{(x-1)(x^2-1)}dx=\frac{x^2}{2}+x-\frac{1}{2(x-1)}+\frac{7}{4}\ln(x-1)+\frac{1}{4}\ln(x+1)+\text{C}

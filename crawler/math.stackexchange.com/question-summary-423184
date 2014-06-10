@@ -1,0 +1,16 @@
+V_1 = \pi\int_0^af(x)^2dx = -\pi\int_0^by^2 (1/f'(x))\ dy = -\pi\int_0^by^2 (1/f'(g(y)))\ dy = -\pi\int_0^by^2 g'(y)\ dy
+u=y^2,\ du=2y\ dy, \ v=g(y), \ dv = g'(y)\ dy
+y^2g(y)|_0^b -2\pi\int_0^by\ g(y)\ dy = -ab^2 -2\pi\int_0^by\ g(y)\ dy = -ab^2-V_2
+V_1 = -ab^2-V_2
+V_1 \ne V_2
+y^2g(y)|_0^b=b^2\cdot0-0^2\cdot a=0
+b^2a
+V_1=-V_2
+\pi
+-\pi\, y^2g(y)|_0^b+2\pi\int_0^by\,g(y)\,dy
+V_2=2\pi\int_0^b yg(y)dy
+y=f(x)
+g(f(x))=x
+dy=f'(x)dx
+V_2=2\pi\int_a^0 f(x)f'(x)xdx=-\pi\int_0^a [f(x)^2]'xdx
+V_2=\pi f(x)^2x]_0^a+\pi\int_0^a f(x)^2dx=V_1

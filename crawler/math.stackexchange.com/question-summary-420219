@@ -1,0 +1,17 @@
+S(n)
+S(0)=0
+S(n) = 268/3 n^3 + 2 S(\lfloor n/2\rfloor).
+n.
+n = \sum_{k=0}^{\lfloor\log_2 n\rfloor} d_k 2^k
+ S(n) = 268/3 \sum_{j=0}^{\lfloor\log_2 n\rfloor} 2^j \left(\sum_{k=j}^{\lfloor\log_2 n\rfloor}  d_k 2^{k-j}\right)^3.
+T(n)
+S(n)
+T(1)=0.
+S(1)=268/3.
+T(n) = -268/3 \times 2^{\lfloor\log_2 n\rfloor} + 268/3 \sum_{j=0}^{\lfloor\log_2 n\rfloor} 2^j \left(\sum_{k=j}^{\lfloor\log_2 n\rfloor}  d_k 2^{k-j}\right)^3.
+m = 2^{\lfloor\log_2 n\rfloor}
+T(n) \le  268/3 \left(32/3\times 2^{3\lfloor\log_2 n\rfloor} -24\times 2^{2\lfloor\log_2 n\rfloor} + 37/3 \times 2^{\lfloor\log_2 n\rfloor} +  6\lfloor\log_2 n\rfloor 2^{\lfloor\log_2 n\rfloor} +1\right).
+T(n) \ge 268/3 \left(4/3 \times 2^{3\lfloor\log_2 n\rfloor}  - 4/3 \times 2^{\lfloor\log_2 n\rfloor}.\right).
+ 268/3 \left(4/3 \times m^3 - 4/3 \times m\right) = 1072/9 \; m \; (m^2-1),
+ 268/3 \times 32/3\times 2^{3\lfloor\log_2 n\rfloor} \quad \text{and} \quad 268/3 \times 4/3 \times 2^{3\lfloor\log_2 n\rfloor},
+T(n) \in \Theta\left(2^{3\lfloor\log_2 n\rfloor}\right) = \Theta\left(2^{3\log_2 n}\right) = \Theta(n^3),

@@ -1,0 +1,79 @@
+F(x)
+G(x)
+\int_{1}^{\infty} F(x) G(x) \mathrm{d}x = 1
+\int_{1}^{\infty} F(x+c) G(x) \mathrm{d}x
+\{x\}
+0< h < 1
+c = 1/2
+F(x) = \{x\}
+G(x) = \frac{\sin(x\log(x))}{x^{h+1}}
+F(x) = \{x\}
+x
+\int_1^{\infty} \{x + c\} G(x) dx
+0 < c < 1
+\{x + c\} = \begin{cases} \{x\} + c, &0 \leq \{x\} < 1 - c; \\  \{x + c\}= \{x\} + c - 1, &1-c \leq \{x\} < 1. \end{cases}
+\begin{align} &\int_1^{\infty} \{x + c\} G(x) dx = \int_{1 \leq x < \infty, 0 \leq \{x\} < 1 - c} (\{x \} + c) G(x) dx + \int_{1 \leq x < \infty, 1-c \leq \{x\} < 1 } (\{x \} + c - 1) G(x) dx \\  &= \int_1^{\infty} \{x \} G(x) dx + c \int_{1 \leq x < \infty, 0 \leq \{x\} < 1 - c} G(x) dx + (c-1) \int_{1 \leq x < \infty, 1-c \leq \{x\} < 1 } G(x) dx \\ &= 1 + c \int_{1 \leq x < \infty, 0 \leq \{x\} < 1 - c} G(x) dx - (1-c) \int_{1 \leq x < \infty, 1-c \leq \{x\} < 1 } G(x) dx. \end{align}
+[1,\infty)
+c
+1-c
+[1,\infty)
+\cup_{i=1}^{\infty} [i,i+1-c)
+c
+0
+1
+1-c
+c
+[1,\infty)
+\cup_{i=2}^{\infty} [i-c,i)
+\int_1^{\infty} \{x + c\} G(x) dx
+G(x)
+\int_1^{\infty} \{x \} G(x) dx
+\int_1^{\infty} \{x + c\} G(x) dx
+1
+G(x)
+[1, \infty)
+x
+\int_1^{\infty} \{x + c\} G(x) dx
+(f*g)(t) = \int_{-\infty}^{\infty} f(\tau) g(t - \tau) d \tau.
+F
+G
+G(x) = 1
+x \leq 2
+0
+F(x) = 1
+x< 2
+F(x)
+\int_1^{\infty} F(x)G(x) = 1
+h(c) = \int_1^\infty F(x+c)G(x)dx
+0 < c
+H(c)
+H(0) = 1
+F(x)
+h(c) = H(c)
+h(c) = \int_{1+c}^{c+2} F(x) dx
+h'(c) = F(c+2) - F(c+1)
+F(x) = 1
+1\leq x < 2
+F(x) = H'(x-2) + H'(x - 3) + \ldots + H'(x - k) + F(x - k + 1)
+k
+1 \leq x - k + 1 < 2
+h'(c) = H'(c)
+h(0) = H(0)
+\int_1^\infty F(x) G(x) dx = 1
+\int_1^\infty F(x+c) G(x) dx
+c
+\int F^{(n)}(x)G(x) dx
+c=0
+c>0
+c=0
+F
+G
+F(x)
+1/G(x)
+c
+F
+G
+c
+F(t)
+t<1
+c

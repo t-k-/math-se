@@ -1,0 +1,111 @@
+\partial M
+\mathbb{R}^3
+x_0 \in \partial M
+\lim_{\substack{x\rightarrow x_0 \\ x\in M}} \int_{\partial M} \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{-1}{||y-x||} dS_y = \lim_{\substack{x\rightarrow x_0 \\ x\in M}} \int_{\partial M} \frac{n_y \cdot (y-x)}{||y-x||^4}   dS_y  = \infty
+\partial M
+C^1
+\partial M
+\int_0^1 \frac{1}{t^\alpha} dt
+\alpha > 1 
+ \int_0^1 \frac{1}{t^\alpha} dt \geq \int_0^x \frac{1}{t^\alpha} dt \geq \frac{x}{x^\alpha} \rightarrow \infty
+x
+\alpha =1
+n_y
+y-x
+\partial M
+\mathbb{R}^n
+x
+\partial M
+x\in M
+n_y
+y
+ \forall y\in \partial M: n_y\cdot \frac{y-x}{\|y-x\|} \geq \frac{\min_{z\in \partial M} \|x-z\|}{\max_{z\in \partial M} \|x-z\|}\geq \frac{\text{dist}(x,\partial M)}{\text{diam}(\partial M)}
+x
+\partial M
+\mathbb{R}^n
+x
+\partial M
+x\in M
+\rho = \text{dist}(x,\partial M) = \text{dist}(x,x_0)
+x_0 \in \partial M
+\alpha_n
+\mathbb{R}^n
+\int_{\partial M \cap B(x_0,2\rho)} 1 \, dS \geq \alpha_{n-1} \left(\frac{\sqrt{3}}{2} \rho \right)^{n-1} 
+\rho = \text{dist}(x,\partial M)=\|x-x_0\|
+D = \text{diam}(\partial M)
+ \int_{\partial M} \frac{1}{||y-x||} n_y \cdot \nabla_y \frac{-1}{||y-x||} dS_y  = \int_{\partial M} \frac{n_y \cdot (y-x)}{||y-x||^4}   dS_y  \geq
+ \int_{\partial M} \frac{n_y \cdot (y-x)}{||y-x||^4}   dS_y  \geq \int_{\partial M} \frac{\rho  \|y-x\|}{D\|y-x\|^4}   dS_y \geq 
+ \int_{\partial M \cap B(x_0,2\rho)} \frac{\rho  \|y-x\|}{D\|y-x\|^4}   dS_y \geq \int_{\partial M \cap B(x_0,2\rho)} \frac{\rho^2}{D 2^4 \rho^4}   dS_y \geq
+ \frac{\rho^2}{D 2^4 \rho^4} \int_{\partial M \cap B(x_0,2\rho)} dS_y \geq \frac{\rho^2}{D 2^4 \rho^4}  \pi \left(\frac{\sqrt{3}}{2} \rho \right)^{2} = \frac{1}{D 2^4 }  \pi \frac{3}{4}
+\Gamma
+\mathbb{R}^3
+\Gamma
+\mathbb{R}^3
+-\frac{1}{4\pi}\int_{\partial M}  n_y \cdot \nabla_y \frac{1}{||y-x||} dS_y
+\Gamma(x)=\frac1{|x|}
+x\in M
+y
+\mathbb R^3\backslash \bar M
+\Gamma\nabla_y\Gamma
+|y|^{-3}
+n_y
+M
+n_y
+ \int_{\mathbb R^3\backslash  M}|\nabla_y\Gamma(x-y)|^2\,dy= \int_{\mathbb R^3\backslash  M}\nabla_y\Gamma(x-y)\cdot\nabla_y\Gamma(x-y)\,dy= 
+ -\int_{\mathbb R^3\backslash  M}\Gamma(x-y)\Delta \Gamma(x-y)\,dy+ \int_{\partial M}\Gamma(x-y)n_y\cdot\nabla_y\Gamma(x-y)\,dy= 
+ =\int_{\partial M}\Gamma(x-y)n_y\cdot\nabla_y\Gamma(x-y)\,dy 
+ I(x)=\int_{\mathbb R^3\backslash  M}|\nabla_y\Gamma(x-y)|^2\,dy. 
+d=d(x)=\mathrm{dist}(\partial M,x)
+r=|x-y|
+B_d(x)
+d
+x
+S_d(x)
+r\to \frac{d^2}r
+\tilde M_x
+{\mathbb R^3\backslash  M}
+A(r)
+\tilde M_x\cap\{r=\mathrm{const}\}
+x
+ I(x)=\int_{\mathbb R^3\backslash  M}|\nabla_y\Gamma(x-y)|^2\,dy= \int_{\mathbb R^3\backslash  M}r^{-4}\,dy= 
+ \int_{\mathbb R^3\backslash  M}r^{-4} r^2\,\cos\theta\,d\theta d \varphi dr= 
+ \int_{\tilde M_x}\frac{1}{\frac{d^4}{r^2}}\cos\theta\, d\theta d \varphi\, \frac{d^2}{r^2}dr= 
+ \frac1{d^2}\int_{\tilde M_x}\cos\theta\, d\theta d \varphi dr= \frac1{d^2}\int_{\tilde M_x}\frac1{r^2}\,dy. 
+ I(x)=\frac1{d^2}\int_0^d A(r)\,dr. 
+\tilde M_x
+B_d(x)
+I(x)
+I(x)
+d\to0
+\tilde M_x
+B_d(x)
+x
+\partial M
+I(x)
+\mathbb R^3\backslash M
+x
+\partial M\in C^1
+d
+S_d(x)
+\partial M
+x
+M
+1/2
+I(x)
+0<r<\sin\theta
+0<\theta<\pi/2
+d
+d
+C^1
+I(x)\sim\frac{\pi} d
+d\to0^+
+\lim_{x\to x_0}I(x)=\infty
+ A(r)={\int_0^{2 \pi } \left(\int_{\arcsin r}^{\pi/2} \cos    \theta \, d\theta \right) \, d\varphi }=2\pi(1-r), 
+ \int_0^1 A(r)\,dr=\pi. 
+ \frac1{d^2}\int_0^d A(r)\,dr=\frac1{d^2}\pi d=\frac\pi{d}. 
+C^1
+x_0
+A(r)
+\int_0^d A(r)\,dr\le Cd^2
+x_n
+x_n\to x_0

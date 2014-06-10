@@ -1,0 +1,15 @@
+\lim_{h \rightarrow 0}  \frac{(x + h)^3 − x^3}{h}
+\require{cancel}\begin{align*} \lim\limits_{h\to0}\frac{(x + h)^3 − x^3}{h} & =\lim\limits_{h\to0}\dfrac{x^3+3x^2h+3xh^2-x^3}h \\ \, \\ &=\lim\limits_{h\to0} \dfrac{\color{red}{\cancel{\color{black}{x^3}}}+3x^2h+3xh^2\color{red}{\cancel{\color{black}{-x^3}}}}h \\ \, \\ &=\lim\limits_{h\to0} \dfrac{3\color{black}{x^2}\color{green}{h}+3\color{black}{x}\color{green}{h^2}}{\color{green}{h}} \quad\text{we can factor!} \\ \, \\ &=\lim\limits_{h\to0}\dfrac{h(3x^2+3xh)}h=\lim\limits_{h\to0}\dfrac{\color{red}{\cancel{\color{black}{h}}}(3x^2+3xh)}{\color{red}{\cancel{\color{black}{h}}}} \\ \, \\ &=\lim\limits_{h\to0}3x^2+3xh = 3x^2 \end{align*}
+f(x)=x^n
+f'(x)=nx^{n-1}
+n\neq-1
+L = \lim_{h \to 0} \frac{x^3 + 3 x^2 h + 3 x h^2 + h^3 - x^3}{h} = \ldots = 3x^2.
+f(x) = x^n \Rightarrow f'(x) = n x^{n-1}, n \neq -1
+(x+h)^3=x^3+3x^2h+3xh^2+h^3
+((x+h)^3-x^3)/h=3x^2+3xh+h^2
+h
+3x^2
+ \lim_{h\to 0} \frac{(x+h)^3 - x^3}{h} =  \lim_{h\to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} 
+ \lim_{h\to 0} \frac{(x+h)^3 - x^3}{h} =  \lim_{h\to 0} \frac{((x+h)-x)((x+h)^2+x(x+h)+x^2)}{h} 
+3x^2
+\frac{(x+h)(x^2+2xh+h^2)-x^3}{h}=\frac{x^3+2x^2h+xh^2+x^2h+2xh^2+h^3-x^3}{h}=\frac{3x^2h+3xh^2+h^3}{h}=3x^2+3xh+h^2=3x^2

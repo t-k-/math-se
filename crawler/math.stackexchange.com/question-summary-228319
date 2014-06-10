@@ -1,0 +1,33 @@
+p(t)
+t
+n
+\lambda
+p(|S_1 - S_2|) < 1
+p(S_2 \in [S_1, S_1+1]) + p(S_1 \in [S_2, S_2+1])
+\int_0^{\infty} \int_{s_1}^{s_1+1} p(S_1=s_1) \cdot p(S_2=s_2) ds_2 ds_1  + \int_0^{\infty} \int_{s_2}^{s_2+1} p(S_1=s_1) \cdot p(S_2=s_2) ds_1 ds_2 
+S_1
+S_2
+2 \cdot \int_0^{\infty} \int_{s_1}^{s_1+1} p(S_1=s_1) \cdot p(S_2=s_2) ds_2 ds_1
+ 2 \cdot \int_0^{\infty} \lambda e^{-\lambda s_1} ds_1 \int_{s_1}^{s_1+1} \lambda e^{-\lambda s_2} ds_2
+1 - e^{-\lambda}
+\lambda
+\lambda
+\lambda_1
+\lambda_2
+\frac{(1-e^{-\lambda_2})\lambda_1 + (1-e^{-\lambda_1})\lambda_2}{\lambda_1 + \lambda_2}
+\lambda
+\lambda_1^{-1}
+\lambda_2^{-2}
+n
+\prod_{i=2}^n p(S_i > S_1 + 1)
+\sum_{i=1}^n \prod_{j \neq i} p(S_j > S_i + 1)
+S_i
+\lambda_i
+p(S_j > S_i + 1)
+\int_0^{\infty} \int_{s_1+1}^{\infty} p(S_i=s_i) \cdot p(S_j=s_j) ds_j ds_i
+\frac{\lambda_i e^{-\lambda_j}}{\lambda_i + \lambda_j}
+1 - \sum_{i=1}^n \prod_{j \neq i} \frac{\lambda_i e^{-\lambda_j}}{\lambda_i + \lambda_j} 
+\lambda^{-1}
+ 1 - \sum_{i=1}^n \prod_{j \neq i} \frac{\lambda e^{-\lambda}}{2 \lambda} = 1 - \sum_{i=1}^n \frac{e^{-(n-1)\lambda}}{2^{n-1}} = 1 - n \frac{e^{-(n-1)\lambda}}{2^{n-1}}
+n
+1 - e^{-\lambda}

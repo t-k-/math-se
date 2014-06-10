@@ -1,0 +1,29 @@
+(cov(X,Y))^2 \leq var(x)var(Y)
+u
+v
+<u,v>^2 \leq (\parallel u\parallel)^2 (\parallel v\parallel)^2
+(cov(X,Y))^2 = < (x-E(X)),(y - E(Y)) >  \leq  (\parallel (x-E(X) \parallel )^2(\parallel (y-E(Y) \parallel )^2 = var(X)var(Y) 
+< (x-E(X)),(y - E(Y)) >
+(x-E(X))
+(y - E(Y))
+L^2(\Omega, \mathscr A, P)
+X \colon \Omega \to \mathbb R
+L^2(\Omega)
+ \|X\|^2 := E(|X|^2) = \int_{\Omega} |X|^2\, dP < \infty 
+  \left<X,Y\right> := \int_\Omega XY\, dP.  
+X-E(X)
+Y - E(Y)
+  \int_\Omega XY\, dP = \left<X,Y\right> \le \|X\|^2 \|Y\|^2 = \int_\Omega X^2\, dP \cdot \int_\Omega Y^2\, dP 
+P
+\Omega'
+\Omega
+P(\Omega') = 1
+   \left<X,Y\right> = \int_\Omega XY\, dP = \sum_{\omega \in \Omega'} X(\omega)Y(\omega)  
+ \left\|X\right\|^2 = \sum_{\omega \in \Omega'} X(\omega)^2. 
+\def\cov{\operatorname{cov}}
+X
+Y
+p_{X,Y}
+   \cov(X,Y) = \sum_{\omega\in \Omega} \bigl( X(\omega) - E(X)\bigr)\bigl(Y(\omega) - E(Y)\bigr) 
+   p_{X,Y}(x,y) = P({\omega \mid X(\omega) = x, Y(\omega) = y}) 
+ \cov(X,Y) = \sum_{x\in X[\Omega]}\sum_{y\in Y[\Omega]} \bigl(x- E(X)\bigr)\bigl(y-E(Y)\bigr)p_{X,Y}(x,y). 

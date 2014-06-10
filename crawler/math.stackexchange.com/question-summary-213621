@@ -1,0 +1,13 @@
+X_1, X_2, \ldots, X_m
+p = E  \left [X_i \right ], X_i \in \{0,1\}
+\varepsilon > 0
+x
+y
+          \begin{align} &\Pr\left[ \frac 1 m \sum X_i \geq p + \varepsilon \right] \\ &\qquad\leq \left ( {\left (\frac{p}{p +  \varepsilon}\right )}^{p+\varepsilon} {\left (\frac{1 - p}{1 -p -  \varepsilon}\right )}^{1 - p- \varepsilon}\right ) ^m = e^{ -  D(p+\varepsilon\|p) m} \end{align}  
+          \begin{align} &\Pr\left[ \frac 1 m \sum X_i \leq p - \varepsilon \right] \\ &\qquad\leq \left ( {\left (\frac{p}{p -  \varepsilon}\right )}^{p-\varepsilon} {\left (\frac{1 - p}{1 -p +  \varepsilon}\right )}^{1 - p+ \varepsilon}\right ) ^m = e^{ -  D(p-\varepsilon\|p) m}, \end{align}  
+          D(x||y) = x \log \frac{x}{y} + (1-x) \log \frac{1-x}{1-y}  
+p\geq 1/2 
+\Pr\left[ X>mp+x \right] \leq  \exp(-x^2/2mp(1-p)) 
+\exp(-x^2/2mp(1-p))
+\Pr\left[ X>mp+x \right]  = \Pr\left[ X/m >p+x/m \right]  \leq e^{ - D(p+x/m\|p) m}  
+ D(p+x/m\|p) = (p+x) \ln \frac{p+x}{p} + (1-p-x) \ln \frac{1-p-x}{1-p} 

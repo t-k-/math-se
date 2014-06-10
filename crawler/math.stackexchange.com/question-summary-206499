@@ -1,0 +1,106 @@
+V
+f : [0,1] \to {\mathbb R}
+f''
+N(f)=|f(0)|+|f’(0)|+||f''||_{\infty}
+||f''||_{\infty}
+||f''||_{\infty}={\sf sup}(|f''(x)|, x \in [0,1])
+W
+V
+f(0)=f’(0)=0
+f(1)=1, f’(1)=0
+M
+||f''||_{\infty}
+f\in W
+ M =4
+f''
+||f''||_{\infty}
+4
+f
+N
+f''
++4
+[0,\frac{1}{2}]
+-4
+[\frac{1}{2},1]
+ f(x)=\begin{cases}  2x^2 & \text{if} x\in[0,\frac{1}{2}] \\ -1+4x-2x^2 & \text{if} x\in[\frac{1}{2},1] \\ \end{cases} 
+||f''||_{\infty}=4
+M \leq 4
+||f''||_{\infty} \geq 4
+f\in W
+L_n
+V
+f''
+I_k=[\frac{k}{n},\frac{k+1}{n}]
+L_n \cap W
+W
+f\in L_n \cap W
+a_k
+f''
+I_k
+k
+ f'(1)-f’(0)=\frac{1}{n}\Bigg(\sum_{k=1}^{n}a_k\Bigg) \ \text{and} \ f(1)-f(0)=\frac{1}{2n^2}\Bigg(\sum_{k=1}^{n}(2n-2k+1)a_k\Bigg), 
+ (2n)(f(1)-f(0))- (n-1)(f'(1)-f’(0))=\frac{1}{n}\Bigg(\sum_{k=1}^{n}(n-2k+2)a_k\Bigg), 
+2n
+\frac{||f''||_{\infty}}{n}\sum_{k=1}^{n}|n-2k+2|
+ ||f''||_{\infty} \geq \frac{2n^2}{\sum_{k=1}^{n}|n-2k+2|} 
+n
+\frac{n^2}{2}
+||f''||_{\infty} \geq \frac{2n^2}{\frac{n^2}{2}}=4
+f\in V
+0=a_0<a_1<\ldots < a_n=1
+f''
+(a_k,a_{k+1})
+f'(t)-f'(a_k)=f''(\xi)(t-a_k)
+a_k<t<a_{k+1}
+||f''||_\infty\le 4
+|f'(t)-f'(a_k)|\le 4|t-a_k|
+k
+f'(a_k)\le 4a_k
+f'(x)\le 4x
+[0,1]
+f'(x)\ge 4(1-x)
+1-2(1-x)^2\le f(x)\le 2x^2
+f(\frac12)=\frac12
+[0,\frac12]
+g(x)=f(x)-2x^2
+g(x)\le0
+g'(x)\le 0
+0\le x \le \frac12
+-g(x)=g(\frac12)-g(x)=g'(\xi)(\frac12-x)\le0
+g(x)=0
+[0,\frac12]
+[\frac12,1]
+f_0(x)=\begin{cases}2x^2&0\le x \le\frac12\\1-2(1-x)^2&\frac12\le x\le 1\end{cases} 
+N
+W
+||f''||_\infty
+a\in\mathbb R
+g_a
+C^2
+g_a''(x)=4
+0\le x\le \frac12
+g_a''(x)=6a\left(x-\frac12\right)+4
+x\ge\frac12
+0<h<\frac12
+a=-\frac2{3h}
+0\le g_a''(x)\le 4
+0\le x\le \frac 12+h
+g_a''(\frac12+h)=0
+a
+f_h
+C^2
+2g_a(\frac12+h)=-\frac43 h^2+4(\frac12+h)^2\to1
+h\to 0
+||f_h||\to 4
+h\to 0
+C^2
+W
+N(f)
+N(f_0)
+f''
+||f-f_0||_\infty\ge 4
+f_0''
++4
+-4
+g_a(x)=\begin{cases}2x^2&0\le x\le \frac12\\ a\left(x-\frac12\right)^3+2x^2&x\ge \frac12 \end{cases}
+f_h(x)=\begin{cases} \frac{g_a((1+2h)x)}{2g_a(\frac12+h)} & 0\le x\le\frac12\\ \frac{g_a((1+2h)(1-x))}{2g_a(\frac12+h)} & \frac12\le x\le1 \end{cases}

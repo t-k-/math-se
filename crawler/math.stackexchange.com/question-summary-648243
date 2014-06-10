@@ -1,0 +1,33 @@
+X_n 
+ Bin(n,p)
+R.V.
+E(X_n)=np
+SD
+np(1-p)
+R.V.
+mean=1
+variance=SD=1
+X_n
+Z_n
+Z_n
+(n)
+Z_n
+X_n
+(1-p+pe^t)^n
+Z_n
+X_n
+(1-p+pe^t)^n
+t
+1-p+pe^t=1+pt+\frac{pt^2}{2}+O(t^3)
+n
+(1+pt+\frac{pt^2}{2}+O(t^3))^n=\exp\left(n\log\left(1+pt+\frac{pt^2}{2}+O(t^3)\right)\right)
+=\exp\left(n(pt+\frac{pt^2}{2}-\frac{p^2t^2}{2}+O(t^3))\right)
+\mathbb{E}(\exp(t(X_n-np)))=\exp(-npt)\exp\left(n(pt+\frac{pt^2}{2}-\frac{p^2t^2}{2}+O(t^3))\right)
+=\exp\left(n\left(\frac{p-p^2}{2}t^2\right)+O(t^3n)\right)
+Z_n
+Z_n
+\exp\left(\frac{1}{2}n(p-p^2)\frac{t^2}{np(1-p)}+ O(\frac{t^3}{\sqrt{n}^3}n)\right)
+O(t^3/\sqrt{n})
+0
+Z_n
+\exp(t^2/2)

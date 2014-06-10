@@ -1,0 +1,7 @@
+\{ X_t : t = 1, 2, 3 \dots \}
+P_m^{i,j}
+m = 1 : E_t \Big [ \frac{1}{X_{t+1}} \Big ]
+m = 2 : E_t \Big [ \frac{1}{X_{t+1}} \frac{1}{X_{t+2}}  \Big ]
+m = 3 : E_t \Big [ \frac{1}{X_{t+1}} \frac{1}{X_{t+2}} \frac{1}{X_{t+3}}\Big ]
+ E\Big [ \frac{1}{X_{t+1}} \frac{1}{X_{t+2}}  \Big ]=\sum_{x,y,z}P[X_t=x]\frac{P_1^{x,y}P_1^{y,z}}{yz}, 
+ P[X_t=x]=\sum_{u}P[X_0=u]P_t^{u,x}. 

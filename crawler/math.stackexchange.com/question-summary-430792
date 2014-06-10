@@ -1,0 +1,10 @@
+p
+\mathcal{P}
+\mathbb{P}[A]
+A
+X \sim \mathcal{P}(\lambda)
+F_X(x) = \mathbb{P}[X \leq x]
+L = \ln(X)
+ F_L(x) = \mathbb{P}[L \leq x] = \mathbb{P}[\ln(X) \leq x] = \mathbb{P}[X \leq e^x] = F_X(e^x). 
+X \sim \mathcal{P}(\lambda)
+ F_L(x) = F_X(e^x) = e^{-\lambda} \sum_{k=0}^{\lfloor e^x \rfloor} \frac{\lambda^k}{k!}, 

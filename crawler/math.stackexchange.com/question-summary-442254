@@ -1,0 +1,12 @@
+ \lim_{x \to \infty} x \cdot \log\left(\frac{x+1}{x+10}\right) 
+ \frac{x+1}{x+1} = \frac{x+1}{x} \cdot \frac{x}{x+10} 
+ \lim_{x \to \infty} x \cdot \left(\log\left(\frac{x+1}{x}\right) + \log\left(\frac{x}{x+10}\right)\right)  = 
+ = 1 + \lim_{x \to \infty} x \cdot \log\left(\frac{x}{x+10}\right) 
+h=\frac1x
+\lim_{x\to\infty}x\cdot \ln \frac{x+1}{x+10} =\lim_{h\to0}\frac{\ln\frac{1+h}{1+10h}}h
+\text{As }\ln_e \frac ab=\ln_e a-\ln_e b, \ln\frac{1+h}{1+10h}=\ln(1+h)-\ln(1+10h)
+\implies \lim_{h\to0}\frac{\ln\frac{1+h}{1+10h}}h=\lim_{h\to0}\frac{\ln(1+h)-\ln(1+10h)}h
+=\lim_{h\to0}\frac{\ln(1+h)}h-10\cdot\lim_{h\to0}\frac{\ln(1+10h)}{10h} 
+\lim_{x\to0}\frac{\ln(1+x)}x=??
+ \begin{align} \lim_{x\to\infty}x\log\left(\frac{x+1}{x+10}\right) &=\lim_{x\to\infty}x\log\left(1-\frac{9}{x+10}\right)\\ &=\lim_{x\to\infty}\frac{\log\left(1-\frac{9}{x+10}\right)}{-\frac{9}{x+10}}\left(-\frac{9x}{x+10}\right)\\[9pt] &=\lim_{u\to0}\frac{\log(1+u)}{u}\lim_{x\to\infty}\left(-\frac{9x}{x+10}\right)\\[9pt] &=1\cdot(-9)\\[18pt] &=-9 \end{align} 
+x \ln \frac{x+1}{x+10}=x \ln \frac{x+1}{x+1+9}=-x\ln\left( 1+\frac{9}{x+1} \right)=-\ln\left( 1+\frac{9}{x+1} \right)^x\to-9

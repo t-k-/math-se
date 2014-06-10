@@ -1,0 +1,27 @@
+\Theta
+R
+R
+f_{R}(r)=re^{-\frac{1}{2}r^2}
+r>0
+\Theta
+(-\pi,\pi)
+X=R \cos(\Theta)
+Y= R \sin(\Theta)
+E[X|Y=y]
+f(X,Y)
+Cov(X,Y)=0
+\sin\Theta = y/R
+\Theta = \arcsin\left(y/R\right)
+\Theta = \pi - \arcsin\left(y/R\right)
+\cos(\Theta) = \pm \sqrt{1-y^2/R^2}
+R
+    \mathsf{E}\left(X \mid Y = y\right) = \mathsf{E}\left(R \cos \Theta \mid R \sin \Theta = y\right) = \mathsf{E}\left( R \cdot \mathsf{E}\left(\cos \Theta \mid \sin \Theta = \frac{y}{R}, R\right) \right) 
+   \mathsf{E}\left(\cos \Theta \mid \sin \Theta = \frac{y}{R}, R\right) = \frac{1}{2} \sqrt{1-y^2/R^2} - \frac{1}{2} \sqrt{1-y^2/R^2} = 0 
+(r,\theta)\mapsto(x,y)=(r\cos\theta,r\sin\theta)
+J(r,\theta)=r
+X
+Y
+E(X)=0
+E(X\mid Y)=E(X)=0
+ f_{X,Y}(x,y)=\frac1{|J(r,\theta)|}f_R(r)f_\Theta(\theta)=\frac1r\cdot r\mathrm e^{-r^2/2}\cdot\frac1{2\pi}=\frac1{2\pi}\mathrm e^{-r^2/2}, 
+ f_{X,Y}(x,y)=\frac1{\sqrt{2\pi}}\mathrm e^{-x^2/2}\cdot\frac1{\sqrt{2\pi}}\mathrm e^{-y^2/2}. 

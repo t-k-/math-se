@@ -1,0 +1,23 @@
+I=\iint_{-1\le x\le 1,x\le y\le 1}y\left(e^{-|y|^3}+\sin{x}\right) \, dx \, dy.
+\displaystyle \int_{-a}^{a}f(x) \, dx=0
+f(x)=-f(-x)
+ \{ 0\leq y\leq 1,-y\le x\le y \}. 
+ \{ -1\leq x\leq 0,x\le y\le -x \}. 
+I_1 = \iint_{-1\le x\le 1,-y\le x\le y\le 1}y\left(e^{-|y|^3}+\sin{x}\right) \, dx \, dy \\  = \int_{0}^1\int_{-y}^y\left( y e^{-y^3}+ \color{\red}y\color{\red}{\sin{x}}\right) \, dx \, dy.
+\sin x
+ \int_{-y}^y y\sin{x} \,dx = 0. 
+I_1 =\int_{0}^1\int_{-y}^y y e^{-y^3}\, dx \, dy = \int_{0}^1 2y^2 e^{-y^3} \,dy= \frac{2}{3}(1-e^{-1}).
+ y e^{-|y|^3}
+y\sin{x}
+y
+ I_2 = \iint_{-1\le x\le 0,x\le y\le -x}y\left(e^{-|y|^3}+\sin{x}\right) \, dx \, dy\\ = \int_{0}^{-1}\int_{-x}^x\left( \color{\red}{y} e^{-\color{\red}{|y|}^3}+ \color{\red}{y}\sin{x}\right) \, dy \, dx. 
+ \int_{-x}^x\left( y e^{-|y|^3}+ y\sin{x}\right) \, dy = 0. 
+ I = I_1 + I_2 = \frac{2}{3}(1-e^{-1}). 
+=:J
+x
+B:=\{(x,y)\>|\>-1\leq x\leq 1,\ x\leq y\leq 1\}
+B_x:=\{y\>| \>(x,y)\in B\}=[x,1]\qquad(-1\leq x\leq 1)\ ,
+B^y:=\{x\>|\>(x,y)\in B\}=[-1,y]\qquad(-1\leq y\leq 1)\ .
+\int\nolimits_B y\>\sin x\ {\rm d}(x,y)=\int_{-1}^1 \left(\sin x\int\nolimits_{B_x} y\ dy\right)\ dx={1\over2}\int_{-1}^1 \sin x\>(1-x^2)\ dx=0\ .
+\int\nolimits_B y\>e^{-|y|^3}\ {\rm d}(x,y)=\int_{-1}^1 \left( y\>e^{-|y|^3} \int\nolimits_{B^y} dx\right)\ dy=\int_{-1}^1 y\>e^{-|y|^3}(y+1)\ dy\ .
+J=2\int_0^1 y^2 e^{-y^3}\ dy=-{2\over3}e^{-y^3}\biggr|_0^1={2\over3}(1-e^{-1})\ .

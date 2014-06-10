@@ -1,0 +1,11 @@
+ x^8 = S(8,0) \cdot (x)_{0} + S(8,1) \cdot (x)_{1} + S(8,2) \cdot (x)_{2} + S(8,3) \cdot (x)_{3} + S(8,4) \cdot (x)_{4} + S(8,5) \cdot (x)_{5} + S(8,6) \cdot (x)_{6} + S(8,7) \cdot (x)_{7} + S(8,8) \cdot (x)_{8}
+S(n,n) = 1
+S(8,8)=1
+S(n,k)
+S(8,0) , S(8,1) , ... S(8,7) 
+S(0,0)=1
+S(n,0)=S(0,n)=0
+n\gt 0
+S(n,k) = S(n-1,k-1) + k S(n-1,k)
+ \left\{\begin{matrix} n \\ k \end{matrix}\right\} =\frac{1}{k!}\sum_{j=0}^{k}(-1)^{k-j}{k \choose j} j^n, 
+ {k \choose j}=\frac{k!}{j!(k-j)!}. 

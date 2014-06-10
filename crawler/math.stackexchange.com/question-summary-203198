@@ -1,0 +1,28 @@
+C_{n}^{l}\cdot C_{l}^{l}+C_{n}^{l+1}\cdot C_{l+1}^{l}+\ldots+C_{n}^{n}\cdot C_{n}^{l}=?
+\begin{align*} C_{n}^{l}C_{l}^{l}+C_{n}^{l+1}C_{l+1}^{l}+\dots+C_{n}^{n}C_{n}^{l} =\sum_{k=l}^{n}C_{n}^{k}C_{k}^{l} =\sum_{k=l}^{n}C_{n}^{l}C_{n-l}^{k-l} =2^{n-l}C_{n}^{l} \end{align*}
+k
+\begin{align*} C_{n}^{k}C_{k}^{l}&=\frac{n!}{k!(n-k)!}\frac{k!}{l!(k-l)!}\\ &=\frac{n!}{l!(n-k)!(k-l)!}\\ &=\frac{n!}{l!(n-l)!}\frac{(n-l)!}{(n-k)!(k-l)!}\\ &=C_{n}^{l}C_{n-l}^{k-l}\\ \end{align*}
+\begin{align*} \sum_{k=l}^{n}C_{n}^{l}C_{n-l}^{k-l}&=C_{n}^{l}\sum_{k=l}^{n}C_{n-l}^{k-l} =C_{n}^{l}\sum_{i=0}^{n-l}C_{n-l}^{i}\\ &=C_{n}^{l}2^{n-l}=2^{n-l}C_{n}^{l}\\ \end{align*}
+\begin{align*} \sum_{k=\ell}^n\binom{n}k\binom{k}\ell&=\sum_{k=\ell}^n\frac{n!k!}{k!(n-k)!\ell!(k-\ell)!}\\ &=\sum_{k=\ell}^n\frac{n!}{(n-k)!(k-\ell)!\ell!}\\ &=\binom{n}\ell\sum_{k=\ell}^n\frac{(n-\ell)!}{(n-k)!(k-\ell)}!\\ &=\binom{n}\ell\sum_{k=0}^{n-\ell}\binom{n-\ell}k\\ &=\binom{n}\ell2^{n-\ell}\;. \end{align*}
+n
+\ell
+k
+k\ge\ell
+\ell
+k
+k-\ell
+k
+\binom{n}k\binom{k}\ell
+\sum_{k=\ell}^n\binom{n}k\binom{k}\ell
+\ell
+n
+n-\ell
+\binom{n}\ell2^{n-\ell}
+\sum_{k=\ell}^n\binom{n}k\binom{k}\ell=\binom{n}\ell2^{n-\ell}\;.
+C_{n}^{l}.C_{l}^{l}+C_{n}^{l+1}.C_{l+1}^{l}+\ldots+C_{n}^{n}.C_{n}^{l} =\sum_{k=l}^{n}C_{n}^{k}.C_{k}^{l} =\sum_{k=l}^{n}C_{n}^{l}.C_{n-l}^{k-l} =2^{n-l}C_{n}^{l} 
+k
+k
+i+l
+ C_{n}^{l}C_{l}^{l}+C_{n}^{l+1}C_{l+1}^{l}+\dots+C_{n}^{n}C_{n}^{l} =\sum_{k=l}^{n}C_{n}^{k}C_{k}^{l} =\sum_{k=l}^{n}C_{n}^{l}C_{n-l}^{k-l} =2^{n-l}C_{n}^{l} 
+ \begin{align}  C_{n}^{k}C_{k}^{l} &=\frac{n!}{k!(n-k)!}\frac{k!}{l!(k-l)!}\\ &=\frac{n!}{l!.(n-k)!(k-l)!}\\ &=\frac{n!}{l!.(n-l)!}\frac{(n-l)!}{(n-k)!(k-l)!}\\ &=C_{n}^{l}.C_{n-l}^{k-l} \end{align} 
+ \begin{align} \sum_{k=l}^{n}C_{n}^{l}C_{n-l}^{k-l} &=C_{n}^{l}\sum_{k=l}^{n}C_{n-l}^{k-l}\text{ (as $k$ replaced by $i+l$)}\\ &=C_{n}^{l}\sum_{i=0}^{n-l}C_{n-l}^{i}\\ &=C_{n}^{l}2^{n-l} \end{align} 

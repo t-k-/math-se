@@ -1,0 +1,14 @@
+\sum_{k=0}^{n}\binom{p+k}{k}=\binom{p+n+1}{n}
+\sum_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}
+\sum_{k=0}^{n}\binom{p+k}{k}=\binom{p+n+1}{n}
+\sum_{k=0}^{n+1}\binom{p+k}{k}=\sum_{k=0}^{n}\binom{p+k}{k}+\binom{p+n+1}{n+1}=
+=\binom{p+n+1}{n}+\binom{p+n+1}{n+1}=\binom{p+(n+1)+1}{(n+1)}
+\binom{m}{k}+\binom{m}{k-1}=\binom{m+1}{k}
+\sum_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}
+\sum_{k=0}^{n+1}\binom{k}{p}=\sum_{k=0}^{n}\binom{k}{p}+\binom{n+1}{p}=
+=\binom{n+1}{p+1}+\binom{n+1}{p}=\binom{(n+1)+1}{p+1}
+ \begin{align} \binom{-n}{k} &=\frac{(-n)(-n-1)(-n-2)\cdots(-n-k+1)}{k!}\\ &=(-1)^k\binom{n+k-1}{k}\tag{1} \end{align} 
+ \begin{align} \sum_{k=0}^n\binom{k}{p} &=\sum_{k=0}^n\binom{k}{p}\binom{n-k}{n-k}\\ &=\sum_{k=0}^n\binom{k}{k-p}\binom{n-k}{n-k}\\ &=\sum_{k=0}^n(-1)^{k-p}\binom{-p-1}{k-p}(-1)^{n-k}\binom{-1}{n-k}\\ &=(-1)^{n-p}\binom{-p-2}{n-p}\\ &=\binom{n+1}{n-p}\\ &=\binom{n+1}{p+1}\tag{3} \end{align} 
+\sum_{k=p}^{n}\binom{k}{p}=\binom{p}{p}+\binom{p+1}{p}+\binom{p+2}{p}+\dots+\binom{n}{p}
+\Rightarrow\sum_{k=p}^{n}\binom{k}{p}=\underbrace{\binom{p+1}{p+1}+\binom{p+1}{p}}+\binom{p+2}{p}+\dots+\binom{n}{p}
+\Rightarrow\sum_{k=p}^{n}\binom{k}{p}\,\,\,\,=\,\,\,\,\binom{p+2}{p+1}+\binom{p+2}{p}+\dots+\binom{n}{p}

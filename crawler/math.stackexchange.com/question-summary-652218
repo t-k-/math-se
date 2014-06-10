@@ -1,0 +1,14 @@
+f(x)=(\ln x)^{\ln x}.
+a^b = {\left(e^{\ln a}\right)}^b = e^{b\ln a}
+\left(\ln x\right)^{\ln x} = {\left(e^{\ln\ln x}\right)}^{\ln x}\\ = e^{\ln x\cdot\ln\ln x} = x^{\ln \ln x}
+f(x)^{g(x)}
+f(x)^{g(x)} = e^{g\ln f}
+\begin{align} \frac d{dx} f^g  = \frac d{dx} e^{g\cdot\ln f} & = \left(\frac d{dx} \left(g\cdot\ln f\right)\right)e^{g\cdot\ln f}\qquad\text{(chain rule)}\\& = \left(\frac d{dx} \left(g\cdot\ln f\right)\right)f^g \\ & = \left(g'\ln f + \frac {gf'}f\right)f^g\qquad\text{(product rule)} \end{align} 
+f' =\frac{df}{dx}
+g' = \frac{dg}{dx}
+f
+f(x)=\exp\big(g(x)\big)
+g(x)=(\ln x)\ln(\ln x)
+ f(x)=(\ln x)^{\ln x}=\mathrm{e}^{(\ln x)\ln(\ln x)}. 
+ f'(x)=\left(\mathrm{e}^{(\ln x)\ln(\ln x)}\right)'=\mathrm{e}^{(\ln x)\ln(\ln x)} \left((\ln x)\ln(\ln x)\right)'=(\ln x)^{\ln x}\left(\frac{1}{x}\ln(\ln x)+\ln x\frac{1}{x\ln x}\right). 
+(f\circ\ln)'(x) = f'(\ln(x))\cdot(\ln(x))'=((\ln(\ln(x))+1)\ln(x)^{\ln(x)})\cdot \frac{1}{x} = \frac{(\ln(\ln(x))+1)\ln(x)^{\ln(x)}}{x}

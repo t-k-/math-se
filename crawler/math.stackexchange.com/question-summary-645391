@@ -1,0 +1,12 @@
+\large{\int\mathrm{e}^{\frac{a}{x}+bx}x^{\eta}\mathrm{d}x}
+_2F_1(a,b;c;z)
+\eta\ge0
+a
+b
+\int e^{\frac{a}{x}+bx}x^\eta~dx
+=\int_0^xx^\eta e^{\frac{a}{x}+bx}~dx+C
+=\int_0^xt^\eta e^{\frac{a}{t}+bt}~dt+C
+=\int_0^1(xt)^\eta e^{\frac{a}{xt}+bxt}~d(xt)+C
+=x^{\eta+1}\int_0^1t^\eta e^{\frac{a}{xt}+bxt}~dt+C
+=x^{\eta+1}\int_\infty^1\left(\dfrac{1}{t}\right)^\eta e^{\frac{at}{x}+\frac{bx}{t}}~d\left(\dfrac{1}{t}\right)+C
+=x^{\eta+1}\int_1^\infty\dfrac{e^{\frac{at}{x}+\frac{bx}{t}}}{t^{\eta+2}}dt+C

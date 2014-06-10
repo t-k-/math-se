@@ -1,0 +1,58 @@
+[x]-x+\frac{1}{2}
+[x]-x+\frac{1}{2}
+x
+\sum_{n=1}^{\infty} \frac{\sin{2n\pi x}}{n\pi}.
+[x]-x+\frac{1}{2}=\sum_{n=1}^{\infty} \frac{\sin{2n\pi x}}{n\pi}
+x
+g(x)  =  \sum_{n\ge  1} \frac{\sin  2n\pi  x}{n\pi x}
+f(x) =  \frac{\sin 2\pi  x}{\pi x}.
+h(x) = x g(x)
+f(x)
+(N,N)
+\Gamma_{1,2,3,4}.
+N
+\Gamma_1
+\mathfrak{M}(f(x); s) = \int_0^\infty  \frac{\sin 2\pi x}{\pi x} x^{s-1} dx = \frac{1}{2i} \int_0^\infty  \frac{e^{2\pi i x}-e^{-2\pi i x}}{\pi x} x^{s-1} dx \\ = \frac{1}{2i} \int_0^\infty  \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx  - \frac{1}{2i} \int_0^\infty  \frac{e^{-2\pi i x}}{\pi x} x^{s-1} dx.
+ \left( \int_{\Gamma_1} +  \int_{\Gamma_2} + \int_{\Gamma_3} + \int_{\Gamma_4} \right)  \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx = 0.
+ \int_0^\infty  \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx,
+\Gamma_2
+x= N+it
+\Gamma_2
+\Re(s)<2.
+\left| \int_{\Gamma_2} \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx\right| = \left| \int_0^N \frac{e^{2\pi i (N+it)}}{\pi (N+it)} (N+it)^{s-1} dt\right| \le \int_0^N \frac{e^{- 2\pi t}}{\pi N} (\sqrt{2} N)^{s-1} dt \\ = \frac{(\sqrt{2} N)^{s-1}}{\pi N} \left[-\frac{e^{-2\pi t}}{2\pi}\right]_0^N = \frac{(\sqrt{2} N)^{s-1}}{2\pi^2 N} (1- e^{-2\pi N}).
+\Gamma_3
+x= t+iN
+\Gamma_3
+\Re(s).
+\left| \int_{\Gamma_3} \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx\right| = \left|- \int_0^N \frac{e^{2\pi i (t+iN)}}{\pi (t+iN)} (t+iN)^{s-1} dt\right| \le \int_0^N \frac{e^{- 2\pi N}}{\pi N} (\sqrt{2} N)^{s-1} dt \\ = \frac{e^{- 2\pi N}}{\pi} (\sqrt{2} N)^{s-1} .
+\Gamma_4
+x= it
+u = 2\pi t
+  \int_{\Gamma_4} \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx = - i \int_0^N  \frac{e^{-2\pi t}}{\pi it} (it)^{s-1} dt = - \frac{i^{s-1}}{\pi} \int_0^N  \frac{e^{-2\pi t}}{t} t^{s-1} dt.
+ - \frac{i^{s-1}}{\pi} \int_0^{2\pi N} e^{-u} (u/2/\pi)^{s-2}  \frac{1}{2\pi}du = - \frac{i^{s-1}}{\pi} \frac{1}{(2\pi)^{s-2}}  \int_0^{2\pi N} e^{-u} u^{s-2} \frac{1}{2\pi}du \\= - \frac{i^{s-1}}{\pi} \frac{1}{(2\pi)^{s-1}} \Gamma(s-1)
+ \int_0^\infty  \frac{e^{2\pi i x}}{\pi x} x^{s-1} dx = \frac{i^{s-1}}{\pi} \frac{1}{(2\pi)^{s-1}} \Gamma(s-1).
+f(x)
+(0,0)
+(N,-N)
+x=-it
+u = 2\pi t
+ \int_0^\infty  \frac{e^{-2\pi i x}}{\pi x} x^{s-1} dx
+  \int_{\Gamma_4} \frac{e^{-2\pi i x}}{\pi x} x^{s-1} dx = - (-i) \int_0^N  \frac{e^{-2\pi t}}{\pi (-it)} (-it)^{s-1} dt = - \frac{(-i)^{s-1}}{\pi} \int_0^N  \frac{e^{-2\pi t}}{t} t^{s-1} dt.
+ - \frac{(-i)^{s-1}}{\pi} \int_0^{2\pi N} e^{-u} (u/2/\pi)^{s-2}  \frac{1}{2\pi}du = - \frac{(-i)^{s-1}}{\pi} \frac{1}{(2\pi)^{s-2}}  \int_0^{2\pi N} e^{-u} u^{s-2} \frac{1}{2\pi}du \\= - \frac{(-i)^{s-1}}{\pi} \frac{1}{(2\pi)^{s-1}} \Gamma(s-1)
+ \int_0^\infty  \frac{e^{-2\pi i x}}{\pi x} x^{s-1} dx = \frac{(-i)^{s-1}}{\pi} \frac{1}{(2\pi)^{s-1}} \Gamma(s-1).
+\mathfrak{M}(f(x); s) = \frac{1}{\pi} \frac{i^{s-1}-(-i)^{s-1}}{2i}  \frac{1}{(2\pi)^{s-1}} \Gamma(s-1).
+ \frac{i^{s-1}-(-i)^{s-1}}{2i} = \frac{e^{i\pi/2(s-1)}-e^{-i\pi/2(s-1)}}{2i} = \sin(\pi/2(s-1))
+ \mathfrak{M}(f(x); s) = \frac{1}{\pi} \sin(\pi/2(s-1)) \frac{1}{(2\pi)^{s-1}} \Gamma(s-1).
+g(x)
+g^*(s) = \mathfrak{M}(g(x); s) = \frac{1}{\pi} \sin(\pi/2(s-1)) \frac{1}{(2\pi)^{s-1}} \Gamma(s-1) \zeta(s).
+\frac{1}{2\pi i} \int_{3/2-i\infty}^{3/2+i\infty} g^*(s) \frac{ds}{x^s}.
+s=1,
+\operatorname{Res}(g^*(s)/x^s; s=1) = \frac{1}{2x}.
+\operatorname{Res}(g^*(s)/x^s; s=0) = -1.
+x\in(0,1],
+h(x)
+1
+ h(x) = x g(x) = \frac{1}{2} - x.
+ h(x) = \frac{1}{2} - (x-[x]) = [x] - x + \frac{1}{2},
+\Gamma_{2,3}
+s

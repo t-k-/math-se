@@ -1,0 +1,18 @@
+\frac{dx}{dt} = -x + x^7
+x(0) = \lambda
+x=x(t, \lambda)
+\frac{ \partial x(t, \lambda)}{\partial \lambda} \mid _{\lambda = 0}
+x(t, \lambda) = \int_{0}^{t} -x + x^7 ds + C(t,\lambda)
+x(0) = \lambda
+\lambda = x(0, \lambda) = \int_{0}^{0} -x + x^7 ds + C(0,\lambda) = C(0, \lambda)
+x(t, \lambda) = \lambda + \int_{0}^{t} -x + x^7 ds
+\frac{ \partial }{\partial \lambda}
+\frac{ \partial x(t, \lambda)}{\partial \lambda} = 1 + \int_{0}^{t}{ \frac{ \partial}{\partial \lambda}(-x(t, \lambda)) + \frac{ \partial}{\partial \lambda}(x(t, \lambda)^7) }ds
+y(t,\lambda) = \dfrac{\partial}{\partial \lambda} x(t,\lambda)
+ \dfrac{\partial x}{\partial t} = - x + x^7
+\lambda
+\dfrac{\partial y}{\partial t} = - y + 7 x^6 y
+y(0,\lambda) = 1
+y
+\lambda=0
+y(t,\lambda)) = \exp\left(\int_0^s (7 x(s,\lambda)^6 - 1)\ ds\right)

@@ -1,0 +1,16 @@
+||u(t,*)||_{L^2([0,l])} \le a e^{-bt}
+a>0
+b>0
+l>0
+S = (0,\infty)\times (0,l)
+u(t,x) \in  C^{1,2}(\bar S)
+||u(t,*)||_{C^0([0,l])} = \sup |u(t,x)|_{x\in(0,l)}\le \sqrt l \left( \int_0^l |u_x(t,x)|^2 dx\right)^{1/2}
+\frac{d}{dt} ||u(t,*)||_{L^2([0,l])}^2 =\frac{d}{dt} \int_0^l u(t,x)^2  dx=2 \int_0^l u(t,x)u_t(t,x) 
+ 2 \int_0^l u(t,x)u_{xx}(t,x)dx= 2u(t,x)u_{x}(t,x)|_{x=0}^{x=l}-2\int_0^l u_{x}(t,x)u_{x}(t,x)dx
+=-2||\partial_xu(t,*)||_{L^2([0,l])}^2
+u_x(t, 0) = u_x(t , l)=0
+u(t, 0) = u(t , l)=0
+||u(t,*)||_{C^0([0,l])} \le \sqrt l ||u_x(t,*)||_{L^2([0,l])}.
+\sup_y |u(t,y)|=\sup_y |u(t,y)|=\sup_y \left|\int_0^y u_x(t,s)ds\right|\le \sup_y \int_0^y 1\cdot|u_x(t,s)|ds
+\le \sup_y \sqrt{\int_0^y |u_x(t,s)|^2ds \int_0^y 1^2ds}\le\sqrt l ||u_x(t,*)||_{L^2([0,l])}.
+\int_0^l |u(t,x)|^2dx\le ||u(t,*)||^2_{C^0([0,l])}\int_0^ldx\le  l^2 ||u_x(t,*)||^2_{L^2([0,l])}.

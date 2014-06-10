@@ -1,0 +1,6 @@
+\partial (A \cup B) \subseteq \partial A \cup \partial B
+\partial (A \cap B) \subseteq \partial A \cup \partial B
+\newcommand{\bdry}{\operatorname{bdry}}\newcommand{\cl}{\operatorname{cl}}\newcommand{\int}{\operatorname{int}}
+\bdry A=\cl A\cap\cl(X\setminus A)
+\begin{align*} \bdry(A\cap B)&=\cl(A\cap B)\cap\cl\Big(X\setminus(A\cap B)\Big)\\ &=\cl(A\cap B)\cap\cl\Big((X\setminus A)\cup(X\setminus B)\Big)\\ &=\cl(A\cap B)\cap\Big(\cl(X\setminus A)\cup\cl(X\setminus B)\Big)\\ &=\Big(\cl(A\cap B)\cap\cl(X\setminus A)\Big)\cup\Big(\cl(A\cap B)\cap\cl(X\setminus B)\Big)\\\\ &\subseteq\Big(\cl A\cap\cl(X\setminus A)\Big)\cup\Big(\cl B\cap\cl(X\setminus B)\Big)\\\\ &=\bdry A\cup\bdry B\;, \end{align*}
+\begin{align*} \bdry(A\cup B)&=\cl(A\cup B)\cap\cl\Big(X\setminus(A\cup B)\Big)\\ &=\cl(A\cup B)\cap\cl\Big((X\setminus A)\cap(X\setminus B)\Big)\\ &\subseteq\cl(A\cup B)\cap\Big(\cl(X\setminus A)\cap\cl(X\setminus B)\Big)\\ &=\Big(\cl A\cup\cl B\Big)\cap\cl(X\setminus A)\cap\cl(X\setminus B)\\ &=\left(\Big(\cl A\cap\cl(X\setminus A)\Big)\cup\Big(\cl B\cap\cl(X\setminus A)\Big)\right)\cap\cl(X\setminus B)\\ &=\Big(\bdry A\cap\cl(X\setminus B)\Big)\cup\Big(\cl B\cap\cl(X\setminus A)\cap\cl(X\setminus B)\Big)\\ &=\Big(\bdry A\cap\cl(X\setminus B)\Big)\cup\Big(\bdry B\cap\cl(X\setminus A)\Big)\\\\ &\subseteq\bdry A\cup\bdry B\;. \end{align*}

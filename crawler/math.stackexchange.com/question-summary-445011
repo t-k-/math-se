@@ -1,0 +1,24 @@
+  \int\cos\theta~e^{\large −ia\cos\theta}~\mathrm{d}\theta 
+i
+a
+\int \cos\theta(−ia\cos\theta) d\theta
+-ia \int \cos^2\theta d\theta
+\cos^2\theta=\frac {1+\cos(2\theta)} 2
+\int\cos\theta~e^{−ia\cos\theta}~d\theta
+=\int\cos\theta\cos(a\cos\theta)~d\theta-i\int\cos\theta\sin(a\cos\theta)~d\theta
+=\int\cos\theta\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n}\cos^{2n}\theta}{(2n)!}d\theta-i\int\cos\theta\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n+1}\cos^{2n+1}\theta}{(2n+1)!}~d\theta
+=\int\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n}\cos^{2n+1}\theta}{(2n)!}d\theta-i\int\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n+1}\cos^{2n+2}\theta}{(2n+1)!}~d\theta
+\int\cos^{2n+1}\theta~d\theta
+n
+\int\cos^{2n+1}\theta~d\theta
+=\int\cos^{2n}\theta~d(\sin\theta)
+=\int(1-\sin^2\theta)^n~d(\sin\theta)
+=\int\sum\limits_{k=0}^nC_k^n(-1)^k\sin^{2k}\theta~d(\sin\theta)
+=\sum\limits_{k=0}^n\dfrac{(-1)^kn!\sin^{2k+1}\theta}{k!(n-k)!(2k+1)}+C
+\int\cos^{2n+2}\theta~d\theta
+n
+\int\cos^{2n+2}\theta~d\theta=\dfrac{(2n+2)!\theta}{4^{n+1}((n+1)!)^2}+\sum\limits_{k=0}^n\dfrac{(2n+2)!(k!)^2\sin\theta\cos^{2k+1}\theta}{4^{n-k+1}((n+1)!)^2(2k+1)!}+C
+\therefore\int\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n}\cos^{2n+1}\theta}{(2n)!}d\theta-i\int\sum\limits_{n=0}^\infty\dfrac{(-1)^na^{2n+1}\cos^{2n+2}\theta}{(2n+1)!}~d\theta
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{n+k}n!a^{2n}\sin^{2k+1}\theta}{(2n)!k!(n-k)!(2k+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{i(-1)^n(2n+2)(k!)^2a^{2n+1}\sin\theta\cos^{2k+1}\theta}{4^{n-k+1}((n+1)!)^2(2k+1)!}-\sum\limits_{n=0}^\infty\dfrac{i(-1)^n(2n+2)a^{2n+1}\theta}{4^{n+1}((n+1)!)^2}+C
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{n+k}n!a^{2n}\sin^{2k+1}\theta}{(2n)!k!(n-k)!(2k+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{i(-1)^n(n+1)(k!)^2a^{2n+1}\sin\theta\cos^{2k+1}\theta}{2^{2n-2k+1}((n+1)!)^2(2k+1)!}-\sum\limits_{n=0}^\infty\dfrac{i(-1)^n(n+1)a^{2n+1}\theta}{2^{2n+1}((n+1)!)^2}+C
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^{n+k}n!a^{2n}\sin^{2k+1}\theta}{(2n)!k!(n-k)!(2k+1)}-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{i(-1)^n(k!)^2a^{2n+1}\sin\theta\cos^{2k+1}\theta}{2^{2n-2k+1}n!(n+1)!(2k+1)!}-\sum\limits_{n=0}^\infty\dfrac{i(-1)^na^{2n+1}\theta}{2^{2n+1}n!(n+1)!}+C

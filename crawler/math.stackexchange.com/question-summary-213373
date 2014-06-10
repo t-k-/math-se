@@ -1,0 +1,52 @@
+N:=\{1,\cdots,n\}
+\pi
+N
+i \in \{1,\cdots,n\}
+g
+\pi(i)=i.
+N
+S_n
+f :~N \cup \{0\} \to \mathbb{N}_{\geq 0}
+f(m):=
+S_n
+m
+\sum_{m=0}^{n} f(m) m^2=2n!
+f(0)
+(i,j)
+i
+j
+m
+m^2
+i \ne j
+n^2-n
+(n-2)!
+i = j
+n
+(n-1)!
+(n^2-n)(n-2)! + n(n-1)! = 2n!.
+\mathfrak P(\mathfrak C(\mathfrak Z))
+n!
+n!/n
+ \exp \log \frac{1}{1-z} = \frac{1}{1-z},
+ \log \frac{1}{1-z} 
+u
+\mathfrak P(\mathfrak C(\mathcal Z) -\mathcal Z + \mathcal U \mathcal Z )
+G(z, u) = \exp \left( \log \frac{1}{1-z} -z + uz \right) = \frac{1}{1-z} e^{-z} e^{uz}. 
+u^m z^n/n!
+G(z, u)
+n
+m
+m^2
+u
+u
+u
+u
+\frac{1}{1-u}
+u
+n
+ H(z, u) =  \frac{1}{1-u} u \left( \frac{d}{du} \left( u \frac{d}{du} G(z, u) \right)\right) = \frac{1}{1-u} \frac{1}{1-z} e^{-z} (uz + u^2z^2) e^{uz}.
+ n! [u^n][z^n] H(z, u) = \sum_{m=0}^n f(m, n) m^2.
+  \begin{align} &  [z^n] \frac{1}{1-u} \frac{1}{1-z} e^{-z} \, uz \, e^{uz} = \frac{u}{1-u} [z^{n-1}] \frac{1}{1-z} e^{(u-1)z} \\ &= \frac{u}{1-u} \sum_{k=0}^{n-1} [z^k] e^{(u-1)z}  = \frac{u}{1-u} \sum_{k=0}^{n-1} \frac{(u-1)^k}{k!} \\ &= u \left( \frac{1}{1-u} - \sum_{k=1}^{n-1} \frac{(u-1)^{k-1}}{k!}\right) \end{align}
+  \begin{align} &  [z^n] \frac{1}{1-u} \frac{1}{1-z} e^{-z} \, u^2z^2 \, e^{uz} = \frac{u^2}{1-u} [z^{n-2}] \frac{1}{1-z} e^{(u-1)z} \\ &= \frac{u^2}{1-u} \sum_{k=0}^{n-2} [z^k] e^{(u-1)z}  = \frac{u^2}{1-u} \sum_{k=0}^{n-2} \frac{(u-1)^k}{k!} \\ &= u^2 \left( \frac{1}{1-u} - \sum_{k=1}^{n-2} \frac{(u-1)^{k-1}}{k!}\right) \end{align}
+ n! H(z, u) = n! [u^n]  \left( u \left( \frac{1}{1-u} - \sum_{k=1}^{n-1} \frac{(u-1)^{k-1}}{k!} \right) + u^2 \left( \frac{1}{1-u} - \sum_{k=1}^{n-2} \frac{(u-1)^{k-1}}{k!}\right)\right)
+n! \, [u^n] \left( u \frac{1}{1-u}  + u^2  \frac{1}{1-u} \right)= 2n!,

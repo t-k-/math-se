@@ -1,0 +1,17 @@
+g
+\gamma 
+f(z) = \frac{e^{iz}}{z}
+g(z) = \frac{e^{iz}}{z+i \epsilon}
+\int_\gamma g = 0
+ 0 = \int_R^R \frac{e^{ix}}{x+i\epsilon} \, dx + \int_0^\pi \frac{e^{i(Re^{i\theta} + \theta)}}{Re^{i\theta}+i\epsilon} iR \, d\theta
+R \to \infty
+\int_R^R \frac{e^{ix}}{x+i\epsilon} \, dx  = P.V.\;\int\frac{e^{ix}}{x}\,dx - \pi i \int_\mathbb{R} \delta(x) e^{ix}dx
+\,\displaystyle{f(z):=\frac{e^{iz}}{z}}\,
+Res_{z=0}(f)=\lim_{z\to 0}\,zf(z)=e^0=1
+\lim_{\epsilon\to 0}\int_{\gamma_\epsilon}f(z)\,dz=\pi i\;\;\text{(going in the positive direction, of course)}
+\Gamma:=[-R,-\epsilon]\cup\gamma_\epsilon\cup[\epsilon,R]\cup\gamma_R\,\,\;,\;\;\;\;\epsilon,R\in\Bbb R^+\,\,,\,\epsilon<<R
+0=\oint_\Gamma\,f(z)\,dz=\int_{-R}^{-\epsilon}\frac{e^{ix}}{x}dx-\int_{\gamma_\epsilon}f(z)\,dz+\int_\epsilon^R\frac{e^{ix}}{x}dx+\int_{\gamma_R}f(z)\,dz
+\int_{\gamma_R}f(z)\,dz\xrightarrow [R\to\infty]{} 0
+0=\lim_{\epsilon\to 0\,,\,R\to\infty}\oint_\Gamma f(z)\,dz=\int_{-\infty}^\infty\frac{e^{ix}}{x}dx-\pi i\Longrightarrow
+\int_{-\infty}^\infty\frac{\cos x+i\sin x}{x}dx=\pi i
+\,\displaystyle{\frac{\sin x}{x}}\,

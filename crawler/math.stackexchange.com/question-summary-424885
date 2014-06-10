@@ -1,0 +1,20 @@
+u = x^2 - y^2
+v = x^2 -y
+x_u
+x_v
+x
+y
+x = x(u,v)
+y= y(u,v)
+u
+\partial_u x
+\partial_u y
+x
+y
+v
+\left\{\begin{aligned} \partial_u u &= \partial_u (x^2) - \partial_u (y^2), \\ \partial_u v &= \partial_u (x^2) - \partial_u (y), \end{aligned}\right.
+\left\{\begin{aligned} 1 &= 2x \partial_u x - 2y\partial_u y, \\ 0 &= 2x \partial_u x  - \partial_u y. \end{aligned}\right.
+ \partial_u x =\frac{1}{2x(1-2y)},\quad \partial_u y = \frac{1}{1-2y}. 
+ J^{-1} \ = \ \left[ \begin{array}{cc}u_x&u_y\\v_x&v_y\end{array} \right]  
+ J \ = \ \frac{1}{\det J^{-1}} \left[ \begin{array}{cc}v_y&-u_y\\-v_x&u_x\end{array} \right] \ = \ \left[ \begin{array}{cc}x_u&x_v\\y_u&y_v\end{array} \right] \ . 
+ J^{-1} \ = \ \left[ \begin{array}{cc}2x&-2y\\2x&-1\end{array} \right] \ \Rightarrow \ \left[ \begin{array}{cc}x_u&x_v\\y_u&y_v\end{array} \right] \ = \  \frac{1}{4xy-2x} \left[ \begin{array}{cc}-1&2y\\-2x&2x\end{array} \right] \ . 

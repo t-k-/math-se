@@ -1,0 +1,51 @@
+r
+f(n)
+f(r)=1=\frac{r+1}{r+1}
+n>r
+n-1\choose r-1
+1
+{n\choose r}-{n-1\choose r-1}
+\{2,\ldots,n\}
+1+f(n-1)
+f(n)=\frac{n+1}{r+1}
+n\ge r
+ \begin{align}f(n)&=\frac{{n-1\choose r-1}+\left({n\choose r}-{n-1\choose r-1}\right)(1+f(n-1)}{n\choose r}\\&=1+\left(1-\frac{n-1\choose r-1}{n\choose r}\right)f(n-1)\\&=1+\left(1-\frac{r}{n}\right)f(n-1).\end{align}
+r
+n
+\mu_{n,r}
+r
+\{1, 2, \ldots, n\}
+n=1
+r=1
+\{1\}
+\mu_{1,1} = 1 = \frac{1+1}{1+1}
+n
+\binom{n+1}{r}
+\{1, 2, \ldots, n+1\}
+\binom{n}{r-1}
+n+1
+\binom{n}{r}
+r
+\{1, 2, \ldots n\}
+\mu_{n,r} = \frac{n+1}{r+1}
+n+1
+n+1
+r-1
+\{1, 2, \ldots, n\}
+\mu_{n,r-1} = \frac{n+1}{r-1 +1} = \frac{n+1}{r}
+\mu_{n+1,r}
+\binom{n}{r-1} \frac{n+1}{r} = \binom{n+1}{r}
+\binom{n}{r} \frac{n+1}{r+1} = \binom{n+1}{r+1}
+ \mu_{n+1,r} = \frac{\binom{n}{r-1} \frac{n+1}{r} + \binom{n}{r} \frac{n+1}{r+1}}{\binom{n+1}{r}} \, . 
+ \mu_{n+1,r} = \frac{\binom{n+1}{r} + \binom{n+1}{r+1}}{\binom{n+1}{r}} = \frac{\binom{n+2}{r+1}}{\binom{n+1}{r}} = \frac{n+2}{r+1} 
+T_i
+i
+\binom{n-i}{r-1}
+i
+T_i=i\cdot\binom{n-i}{r-1}
+\sum_{i=1}^{n-r+1}T_i=1\cdot\binom{n-1}{r-1}+2\cdot\binom{n-2}{r-1}+\dots+(n-1)\cdot\binom{r-1}{r-1}
+\sum_{i=1}^{n-r+1}T_i=\sum_{i=1}^{r-n+1}\binom{r-i}{r-1}+\sum_{i=1}^{r-n+2}\binom{r-i}{r-1}+\dots+\sum_{i=1}^{1}\binom{r-i}{r-1}
+\sum_{i=1}^{n-r+1}T_i=\binom{n}{r}+\binom{n-1}{r}+\dots+\binom{r}{r}
+\sum_{i=1}^{n-r+1}T_i=\binom{n+1}{r+1}
+\binom{n}{r}
+\Large\frac{\binom{n+1}{r+1}}{\binom{n}{r}}=\frac{n+1}{r+1}

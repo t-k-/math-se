@@ -1,0 +1,14 @@
+N
+W
+Z
+A
+1 = N + W + Z = N + A 
+1 = 1 - \alpha \Delta t + o(\Delta t) + \alpha \Delta t + o(\Delta t)+ o(\Delta t)
+= 1 + 3o(\Delta t) 
+X(t)
+(0,t]
+X(0):=0
+ P[X(t+\Delta t)-X(t)] = 1-\alpha \Delta t +o(\Delta t) 
+ \begin{align*} \lim_{\Delta t\to 0}\frac{P[X(t+\Delta t)-X(t)=0]}{\Delta t}&=\lim_{\Delta t\to 0}\frac{(1-\alpha \Delta t +o(\Delta t))-1 }{\Delta t}\\ &=\lim_{\Delta t\to 0}\frac{-\alpha \Delta t +o(\Delta t)}{\Delta t}\\ &=\lim_{\Delta t\to 0}\frac{-\alpha \Delta t}{\Delta t} + \lim_{\Delta t\to 0} \frac{o(\Delta t)}{\Delta t}\\ &=-\alpha + 0\\ &=-\alpha \\ \end{align*} 
+ \lim_{\Delta t\to 0}\frac{P[X(t+\Delta t)-X(t)=1]}{\Delta t}=\alpha 
+ \lim_{\Delta t\to 0}\frac{P[X(t+\Delta t)-X(t)>1]}{\Delta t}=0 

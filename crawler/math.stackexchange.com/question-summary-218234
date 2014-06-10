@@ -1,0 +1,32 @@
+M/M/1
+\mu=1
+e^{-x}
+xe^{-x}
+Erlang(k=2,\lambda=1)
+P(running~job <x~|~k~job~in~system)
+\lambda
+\tau
+\mu\mathrm e^{-\mu\tau}
+\tau
+1-\mathrm e^{-\lambda\tau}
+\lambda
+ (\lambda+\mu)\frac\mu\lambda\mathrm e^{-\mu\tau}\left(1-\mathrm e^{-\lambda\tau}\right)\;. 
+\lambda+\mu
+\mu
+k
+k
+k
+k
+\mathrm e^{-\lambda\tau}
+k
+\mathrm e^{-\mu\tau}\sum_{n=0}^{k-1}\frac{(\mu\tau)^n}{n!}
+-\frac{\partial}{\partial \tau}\left(\mathrm e^{-(\lambda+\mu)\tau}\sum_{n=0}^{k-1}\frac{(\mu\tau)^n}{n!}\right)\;.
+k
+ -\int_0^\tau\frac{\mu^k(\tau-t)^{k-1}\mathrm e^{-\mu(\tau-t)}}{(k-1)!}\frac{\partial}{\partial t}\left(\mathrm e^{-(\lambda+\mu) t}\sum_{n=0}^{k-1}\frac{(\mu t)^n}{n!}\right)\mathrm dt\;. 
+\mathrm e^{-\lambda t}
+k=1
+ \begin{align} -\int_0^\tau\mu\mathrm e^{-\mu(\tau-t)}\frac{\partial}{\partial t}\left(\mathrm e^{-(\lambda+\mu) t}\right)\mathrm dt &=(\lambda+\mu)\int_0^\tau\mu\mathrm e^{-\mu(\tau-t)}\left(\mathrm e^{-(\lambda+\mu) t}\right)\mathrm dt \\ &=(\lambda+\mu)\mu\mathrm e^{-\mu\tau}\int_0^\tau\mathrm e^{-\lambda t}\mathrm dt \\ &=(\lambda+\mu)\frac\mu\lambda\mathrm e^{-\mu\tau}\left(1-\mathrm e^{-\lambda\tau}\right)\;, \end{align} 
+k=2
+ \begin{align} &-\int_0^\tau\mu^2(\tau-t)\mathrm e^{-\mu(\tau-t)}\frac{\partial}{\partial t}\left(\mathrm e^{-(\lambda+\mu) t}\sum_{n=0}^1\frac{(\mu t)^n}{n!}\right)\mathrm dt \\ =& -\mu^2\mathrm e^{-\mu\tau}\int_0^\tau(\tau-t)\mathrm e^{\mu t}\frac{\partial}{\partial t}\left(\mathrm e^{-(\lambda+\mu) t}(1+\mu t)\right)\mathrm dt \\ =& \mu^2\mathrm e^{-\mu\tau}\left(\tau+\frac1{\lambda^3}\left(\lambda\mu(\lambda+\mu)\tau\left(\mathrm e^{-\lambda\tau}+1\right)+\left((\lambda+\mu)^2+\mu^2\right)\left(\mathrm e^{-\lambda\tau}-1\right)\right)\right) \end{align} 
+ \langle\tau\rangle=\frac2\mu+\frac{\lambda+2\mu}{(\lambda+\mu)^2} 
+ \langle\tau^2\rangle=\frac6{\mu^2}+2\frac{2\lambda^2+7\lambda\mu+7\mu^2}{\mu(\lambda+\mu)^3}\;. 

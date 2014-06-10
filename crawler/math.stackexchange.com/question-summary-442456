@@ -1,0 +1,26 @@
+\DeclareMathOperator*{\argmin}{arg\,min}
+1,\ldots,n
+1,\ldots,m
+C
+i
+j
+C[i][j]
+A[1,\ldots,n][1,\ldots,m]
+i,j
+A
+i
+i
+j
+A
+i>1
+ \begin{cases} A[1][j] = C[i][j] & \mbox{(base case)} \\ A[i][j] = C[i][j]+\min_{k\neq j} A[i-1][k] & \mbox{($i>1$)} \end{cases} 
+s
+A
+i<n
+ \begin{cases} s[n] = \argmin_{k} A[n][k] & \mbox{(base case)} \\ s[i] = \argmin_{k\neq s[i+1]} A[i][k] & \mbox{($i<n$)} \end{cases} 
+n=4
+m=3
+ C=\left[ \begin{array}{cccc} 1 & 4 & 6 & 1 \\ 3 & 1 & 2 & 1 \\ 2 & 3 & 5 & 4 \end{array} \right] 
+A
+ A=\left[ \begin{array}{cccc} \boxed{1} & 6 & 8 & \boxed{7} \\ 3 & 2 & \boxed{6} & 8 \\ 2 & \boxed{4} & 7 & 10 \end{array} \right] 
+\left[ \begin{array}{cccc} 1 & 3 & 2 & 1 \end{array} \right]

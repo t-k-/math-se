@@ -1,0 +1,9 @@
+\left \{ \begin{array}{lcl} x_1(t) & = & e^{-2t}-e^{-5t} \\ x_2(t) & = & e^{-2t}+e^{-3t}+e^{-5t} \\ x_3(t) & = & e^{-3t} + e^{-5t} \end{array}\right .
+\left \{ \begin{array}{lcl} x_1(0) & = & 0 \\ x_2(0) & = & 3 \\ x_3(0) & = & 2 \end{array}\right .
+A=QR
+\mathcal A
+Ax=b
+A=x^{-1}b
+ \begin{pmatrix} x_1 \\ x_2 \\ x_3\end{pmatrix}=\begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 1 & 1\end{pmatrix}\begin{pmatrix}e^{-2t} \\ e^{-3t} \\ e^{-5t}\end{pmatrix},
+\begin{array}{ll} \color{DarkOrange}{\frac{d}{dt}\begin{pmatrix} x_1 \\ x_2 \\ x_3\end{pmatrix}} & = \begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 1 & 1\end{pmatrix}\begin{pmatrix}-2e^{-2t} \\ -3e^{-3t} \\ -5e^{-5t}\end{pmatrix} \\ & = \color{Purple}{\begin{pmatrix}-2 & 0 & 5 \\ -2 & -3 & -5 \\ 0 & -3 & -5\end{pmatrix}} \begin{pmatrix}e^{-2t} \\ e^{-3t} \\ e^{-5t}\end{pmatrix} \\ & = \color{Blue}{\begin{pmatrix}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{pmatrix}}\color{Green}{\begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 1 & 1\end{pmatrix}}\begin{pmatrix}e^{-2t} \\ e^{-3t} \\ e^{-5t}\end{pmatrix} \\ & \color{DarkOrange}{= \begin{pmatrix}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \\ x_3\end{pmatrix}.} \end{array}
+\begin{array}{ll} & \color{Purple}{\begin{pmatrix}-2 & 0 & 5 \\ -2 & -3 & -5 \\ 0 & -3 & -5\end{pmatrix}}=\color{Blue}{\begin{pmatrix}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{pmatrix}}\color{Green}{\begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 1 & 1\end{pmatrix}} \\ \iff & \begin{pmatrix}-2 & 0 & 5 \\ -2 & -3 & -5 \\ 0 & -3 & -5\end{pmatrix}\begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 1 & 1\end{pmatrix}^{-1}=\begin{pmatrix}? & ? & ? \\ ? & ? & ? \\ ? & ? & ?\end{pmatrix}. \end{array}

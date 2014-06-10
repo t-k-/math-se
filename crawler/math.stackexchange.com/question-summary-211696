@@ -1,0 +1,7 @@
+f: \mathbb{R}^3 \to \mathbb{R}^2
+f(0)=(1,2)
+g: \mathbb{R}^2 \to \mathbb{R}^2
+D(gof)(0)
+ Df(0)=\left[ \begin{array}{ccc} 1 & 2 & 3 \\ 0 & 0 & 1 \\ \end{array} \right] 
+g(x,y)=(x+2y+1,3xy).
+D(g\circ f)(0)={Dg}_{|_{f(0)}}\cdot Df(0)=Dg(1,2)\cdot Df(0)=\left[ \begin{array}{ccc} 1 & 2 \\ 3\cdot 2 & 3\cdot 1 \\ \end{array} \right]\cdot \left[ \begin{array}{ccc} 1 & 2 & 3 \\ 0 & 0 & 1 \\ \end{array} \right]=\left[ \begin{array}{ccc} 1 & 2 & 5 \\ 6 & 12 & 21 \\ \end{array} \right]

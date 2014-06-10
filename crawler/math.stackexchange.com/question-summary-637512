@@ -1,0 +1,23 @@
+f:[a,b] \rightarrow \mathbb R
+h=\frac{(b-a)}{n}
+M(f;n)=\frac{1}{n}\sum_{i=1}^n f(a+ih)
+\lim_{n\rightarrow\infty} M(f;n)=\frac{1}{b-a}\int_a^b f(x)dx
+n \rightarrow \infty
+\frac{1}{n}\sum_{i=1}^n (a+ih)= \frac{n-1}{n}\frac{a+b}{2}+\frac{b}{n} \rightarrow \frac{a+b}{2}
+f:[a,b] \rightarrow \mathbb R
+m=\frac{a+b}{2}
+f(a)+f(b)=[\frac{2}{(b-a)}] \int_a^b [f(x)+(x-m)f'(x)]dx
+P=\{t_1,...,t_n\}
+t_1=a+h, t_2=a+2h,...,t_n=a+nh
+h=\frac{b-a}{n}
+\sum(f;P*)
+f
+P
+\sum(f;P*)= \sum_{i=1}^n f(a+ih)(t_i-t_{i-1})=\sum_{i=1}^n f(a+ih)h=\sum_{i=1}^n f(a+ih) \frac{b-a}{n}
+\int_a^b f(x)dx= \lim_{|P|\rightarrow 0} \sum(f;P*)= \lim_{n \rightarrow \infty} \sum_{i=1}^n f(a+ih)\frac{b-a}{n}
+\lim_{n\rightarrow \infty} \frac{1}{n} \sum_{i=1}^nf(a+ih)=\frac{1}{b-a}\int_a^b f(x)dx
+\frac{1}{n}\sum_{i=1}^n (a+ih)=\frac{a+h+a+2h+...+a+nh}{n}=\frac{na+h(1+2+...+n)}{n}=\frac{na+nh+[h(1+2+...+(n-1)]}{n}=a+\frac{b-a}{n}+\frac{b-a}{2}\frac{n-1}{n}=a+\frac{b-a}{n}+\frac{(b-a)(n-1)}{2n}+\frac{2a(n-1)}{2n}-\frac{2a(n-1)}{2n}
+a+\frac{b-a}{n}-\frac{a(n-1)}{n}+\frac{(b+a)(n-1)}{2n}=\frac{b}{n}+\frac{(b+a)}{2}\frac{(n-1)}{n}
+\frac{n-1}{n}\frac{a+b}{2}+\frac{b}{n} \rightarrow \frac{a+b}{2}
+n \rightarrow \infty
+\dfrac{1}{n}\sum\limits_{i=1}^n f(a+ih) +\dfrac{1}{n}\sum\limits_{i=1}^n\bigg(a+ih-\dfrac{1}{n}\sum\limits_{j=1}^n(a+ih)\bigg)\bigg(\dfrac{f(a+ih)-f(a+(i-1)h)}{h}\bigg)

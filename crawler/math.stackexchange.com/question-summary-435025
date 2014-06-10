@@ -1,0 +1,83 @@
+f, g
+S(x)
+any
+f
+g
+S(x) = (f\circ g\circ g\circ f\circ f\circ g)(x)
+s
+S
+s \to_g g(s) \to_f (f\circ g)(s) \to_f (f\circ f\circ g)(s) \to_g (g\circ f\circ f\circ g)(s) \to_g (g\circ g\circ f\circ f\circ g)(s) \to_f s (again)
+Sum_g(S)
+g
+Sum_g(S) = s + (f\circ f\circ g)(s) + (g\circ f\circ f\circ g)(s)
+T(x)
+T(x) = (g\circ f\circ f\circ g\circ g\circ f)(x)
+t
+T
+Sum_g(T) = (f)(t) + (g\circ f)(t) + (f\circ f\circ g\circ g\circ f)(t)
+Sum_g(S) = Sum_g(T)
+f(x) = 3x-2
+g(x)=2x+1
+S(x) = (f\circ g\circ g\circ f\circ f\circ g)(x) = 216 x + 19
+s = -19/215
+T(x) = (g\circ f\circ f\circ g\circ g\circ f)(x) = 216 x - 105
+t = 21/43
+Sum_g(S) = s + (f\circ f\circ g)(s) + (g\circ f\circ f\circ g)(s) = -19/215 -127/215 -39/215 = -37/43
+Sum_g(T) = (f)(t) + (g\circ f)(t) + (f\circ f\circ g\circ g\circ f)(t) = -23/43 -3/43-11/43 = -37/43
+f(x) = 3x-2
+g(x)=x/5+1
+ \color{red}{215/98 \to_g} \color{blue}{141/98 \to_f 227/98 \to_f} \color{red}{485/98 \to_g 195/98 \to_g} \color{blue}{137/98 \to_f} 215/98 (again)
+215/98
+(f\circ g\circ g\circ f\circ f\circ g)(x)
+ 177/98 \color{red}{_g\leftarrow 395/98} \color{blue}{_f\leftarrow 197/98 _f\leftarrow 131/98} \color{red}{_g\leftarrow 165/98 _g\leftarrow 335/98} \color{blue}{_f\leftarrow 177/98} (again)
+177/98
+(g\circ f\circ f\circ g\circ g\circ f)(x)
+ \color{red}{215/98 + 485/98 + 195/98 = 395/98 + 165/98 + 335/98}
+\color{blue}{141/98 + 227/98 + 137/98 = 197/98 + 131/98 + 177/98} 
+f_i, i=1
+n
+f_i(x)=a_i x + b_i
+f_1 \circ \dots \circ f_n (x) = \left(\prod_{i=1}^n a_i \right) x + \sum_{k=1}^n \left(\prod_{i=1}^{k-1} a_i \right) b_k 
+\frac{ \sum_{k=1}^n \left(\prod_{i=1}^{k-1} a_i \right) b_k } {1- \left(\prod_{i=1}^n a_i \right)}
+Sum_g
+\prod_{i=1}^n a_i
+g
+g
+f
+S
+g
+f
+T
+f
+g
+f
+g
+f
+g
+x
+y
+g
+x
+f
+y
+g
+f
+f
+x
+f
+y
+g
+g
+x+y+1
+f
+1
+x+y+1
+x
+f
+x+1
+f
+x+y+1
+x+1
+f
+x
+f

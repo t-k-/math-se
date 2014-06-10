@@ -1,0 +1,10 @@
+B_w
+Y_t=-\int_t^s{f(t,u)du}
+f(t,u)=f(0,u)+\int_0^t{\mu (w,u)dw}+\int_0^t{\sigma(w,u)dB_w}
+f(t,t)
+\int^s_t\mu(w,u)du
+t
+f(t,t)
+dY_t=\left(f(t,t)-\int_t^s{\mu(t,u)du}\right)dt+\left(-\int^s_t{\sigma(t,u)du}\right)dB_t
+dY_t=-\int_t^s{d_t f(t,u)du}+f(t,t)dt
+Y_t=-\int_t^sf(0,u)du-\int^t_0\int^s_t\mu(w,u)dudw-\int_0^t\int_t^s\sigma(w,u)dudB_w

@@ -1,0 +1,36 @@
+\displaystyle \int_{0}^{\infty}e^{-ax}\sin(ax)\left(\cot(x)+\coth(x)\right)dx=\frac{\pi}{2}\cdot \frac{\sinh(\pi a)}{\cosh(\pi a)-\cos(\pi a)}, \;\ a\in \mathbb{N}
+\displaystyle\frac{e^{-az}e^{iaz}\cos(z)}{\sin(z)}
+\displaystyle\frac{e^{-az}e^{iaz}\cosh(z)}{\sinh(z)}
+z=n\pi
+z=\pi n i
+z=n\pi
+\displaystyle\frac{e^{n a \pi i}}{e^{n\pi a}}
+\displaystyle n\pi i
+\frac{1}{e^{n\pi a i}e^{n\pi a}}
+\displaystyle \frac{2e^{\pi a}\cos(\pi a)-2e^{2\pi a}}{2e^{\pi a}\cos(\pi a)-e^{2\pi a}-1}
+a \in \mathbb{N}
+C
+\oint_C dz\, e^{-b z} \coth{z}
+b=(1-i) a
+C
+C
+\int_{\epsilon}^R dx \, e^{-b x} \coth{x} + i \int_0^{\pi} dy \, e^{-b (R+i y)} \, \coth{(R+i y)} + \\ \int_R^{\epsilon} dx \, e^{b (x+i \pi)} \, \coth{(x+i \pi)} + i \epsilon \int_0^{-\pi/2} d\phi \, e^{i \phi} \, e^{-b \left (i \pi+ \epsilon e^{i \phi}\right)} \coth{\left (\epsilon e^{i \phi}\right)} + \\ i \int_{\pi-\epsilon}^{\epsilon} dy \, e^{-i b y} \, \coth{i y} + i \epsilon \int_0^{\pi/2} d\phi \, e^{i \phi} \, e^{-b \epsilon e^{i \phi}} \, \coth{\left (\epsilon e^{i \phi}\right)}
+\epsilon \to 0^+
+R \to \infty
+\Re{b} \gt 0
+\left (1-e^{-i \pi b}\right) \int_0^{\infty} dx \, e^{-b x} \, \coth{x} = \int_0^{\pi} dy \, e^{-i b y} \, \cot{y} + i \frac{\pi}{2} \left (1+e^{-i \pi b}\right)
+\coth{i y} = -i \cot{y}
+b=(1-i) a
+\int_0^{\infty} dx \, e^{-a x} \, \sin{a x} \, (\coth{x} + \cot{x}) = \frac{\pi}{2} \frac{1+(-1)^a e^{-\pi a}}{1-(-1)^a e^{-\pi a}} +\\ \int_0^{\infty} dx \, e^{-a x} \, \sin{a x} \cot{x} - \frac{1}{1-(-1)^a e^{-\pi a}} \int_0^{\pi} dx \, e^{-a x} \, \sin{a x} \cot{x}
+a
+a=2 n
+a
+\begin{align}\int_0^{\pi} dx \, e^{-2 n x} \, \sin{2 n x} \cot{x} &= \int_0^{\pi} dx \, e^{-2 n x} \, \frac{\sin{2 n x}}{\sin{x}} \cos{x} \\ &= \int_0^{\pi} dx \, e^{-2 n x} \, 2 \sum_{k=0}^{n-1} \cos{[(2 k+1) x]} \cos{x} \\ &=  \int_0^{\pi} dx \, e^{-2 n x} \, \left[1 + 2 \sum_{k=1}^{n-1}\cos{2 k x} + \cos{2 n x}\right] \\ &= \frac{1-e^{-2 \pi}}{2 n} + 2 \sum_{k=1}^{n-1} \Re{\left [  \int_0^{\pi} dx \, e^{-(2 n-i 2 k) x} \right ]} + \Re{\left [  \int_0^{\pi} dx \, e^{-(2 n-i 2 n) x} \right ]}  \\ &= \frac{1-e^{-2 \pi}}{2 n}+ 2\sum_{k=1}^{n-1} \Re{\left [ \frac{1-e^{-2 n \pi}}{2 n-i 2 k} \right]} + \Re{\left [ \frac{1-e^{-2 n \pi}}{2 n-i 2 n} \right]}\\ &= \frac{1-e^{-2 \pi}}{2 n}+2 \left ( 1-e^{-2 n \pi}\right)\sum_{k=1}^{n-1} \Re{\left [\frac{2 n+i 2 k}{4 n^2+4 k^2} \right ]} +\left ( 1-e^{-2 n \pi}\right)\Re{\left [\frac{2 n+i 2 n}{4 n^2+4 n^2} \right ]}  \\ &=\left ( 1-e^{-2 n \pi}\right) \left [ \frac{1}{n} +  n \sum_{k=1}^{n-1}\frac{1}{n^2+k^2} \right ]  \end{align}
+\begin{align}\int_0^{\infty} dx \, e^{-2 n x} \, \sin{2 n x} \cot{x} &= \frac{1}{n} +  n \sum_{k=1}^{n-1}\frac{1}{n^2+k^2}\\ &= \frac{1}{1-e^{-2 n \pi}}\int_0^{\pi} dx \, e^{-2 n x} \, \sin{2 n x} \cot{x}  \end{align}
+a
+a
+a=2 n-1
+\frac{\sin{(2 n-1) x}}{\sin{x}} = 1+2 \sum_{k=1}^{n-1} \cos{2 k x}
+\int_0^{\infty} dx \, e^{-a x} \, \sin{a x} \, (\coth{x} + \cot{x}) = \frac{\pi}{2} \frac{1+(-1)^a e^{-\pi a}}{1-(-1)^a e^{-\pi a}}
+n \in \mathbb{N}
+\int_0^{\infty} dx \, e^{-a x} \, \sin{a x} \, (\coth{x} + \cot{x}) = \begin{cases} \frac{\pi}{2} \coth{\pi n} & a = 2 n \\ \frac{\pi}{2} \tanh{\left ( n+\frac12\right) \pi} & a = 2 n+1\end{cases}

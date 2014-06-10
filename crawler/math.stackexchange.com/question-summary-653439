@@ -1,0 +1,20 @@
+(X,\Omega,\mu)
+\phi:X\to \Bbb C
+1\leq p\leq\infty
+\phi f\in L^p(\mu)
+f\in L^p(\mu)
+\phi \in L^\infty(\mu)
+n
+ A_n=\{x\in X: 2^{n}\le |\varphi(x)|<2^{n+1}\}, 
+a_n
+A_n
+\mu(A_{n_k})>0
+k\in\mathbb N
+a_n=0
+n\ne n_k
+ f(x)=\sum_{n=1}^\infty a_n\,\chi_{A_n}(x), 
+ \|f\|_p^p=\sum_{n=1}^\infty a_n^p\,\mu(A_n), 
+ \|f\varphi\|_p^p\ge \sum_{n=1}^\infty\int_{A_n}|f|^p\,|\varphi|^p\,d\mu\ge \sum_{n=1}^\infty\int_{A_n} 2^{np}a_n^p=\sum_{n=1}^\infty 2^{np}a_n^p\,\mu(A_n). 
+ a_{n_k}^p=\frac{1}{k^2\mu(A_{n_k})}, 
+ \|f\|_p^p=\sum_{n=1}^\infty a_n^p\,\mu(A_n)=\sum_{k=1}^\infty a_{n_k}^p\,\mu(A_{n_k}) =\sum_{k=1}^\infty\frac{1}{k^2\mu(A_{n_k})}\,\mu(A_{n_k})=\sum_{k=1}^\infty\frac{1}{k^2}<\infty, 
+ \|f\varphi\|_p^p\ge \sum_{n=1}^\infty 2^{np}a_n^p\,\mu(A_n)= \sum_{k=1}^\infty 2^{n_kp}a_{n_k}^p\,\mu(A_{n_k})=\sum_{k=1}^\infty \frac{2^{n_kp}}{k^2}\ge \sum_{k=1}^\infty \frac{2^{kp}}{k^2}=\infty. 

@@ -1,0 +1,6 @@
+f(x, 0) := \frac{x^2}{2}
+f'(x, t) := f(x, t) - f(x - \delta_x, t)
+f(x, t + \delta_t) := \min\left(\max\left(\frac{x - f(x, t)}{f'(x,t)} - x, x\right), 0\right)
+ \partial_t f \cdot \partial_x f + f(1 + \partial_x) = x
+f(x,t = 0) = x^2/2
+dx,dt

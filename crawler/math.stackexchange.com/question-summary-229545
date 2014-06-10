@@ -1,0 +1,25 @@
+(X; d)
+d
+X
+p
+X\times X
+p((x_1; y_1); (x_2; y_2)) := d(x_1; x_2) + d(y_1; y_2)
+d :(X \times X ) \rightarrow R
+p
+(X\times X,p)
+d:X\times X\to\mathbb R
+p
+(x,y)\in X\times X
+\varepsilon>0
+(x',y')\in X\times X
+|d(x,y)-d(x',y')|<\varepsilon
+p((x,y),(x',y'))<\delta
+d(x,x')<\delta
+d(y,y')<\delta
+|d(x',y')-d(x',y)|<\delta
+\delta=\varepsilon/2
+p((x,y),(x',y'))=d(x,x')+d(y,y').
+d(x,y)\le d(x,x')+d(x',y)<\delta+d(x',y)
+d(x',y)\le d(x',x)+d(x,y)<\delta+d(x,y)
+|d(x,y)-d(x',y)|<\delta.
+|d(x,y)-d(x',y')|\le|d(x,y)-d(x',y)|+|d(x',y)-d(x',y')|<2\delta

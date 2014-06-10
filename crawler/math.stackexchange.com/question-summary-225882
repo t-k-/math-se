@@ -1,0 +1,57 @@
+\int_{\frac{\pi}{4}}^{\frac{5\pi}{4}}\int_{\cos(x)}^{\sin(x)}dydx = \int_{\frac{\pi}{4}}^{\frac{5\pi}{4}}\left(\sin(x)-\cos(x)\right)dx=\left[-\cos(x)-\sin(x)\right]_{\frac{\pi}{4}}^{\frac{5\pi}{4}}=2\sqrt{2}
+\arccos(y)\leq x\leq\arcsin(y)\qquad -\frac{1}{\sqrt{2}}\leq y \leq \frac{1}{\sqrt{2}}\qquad
+y
+\arcsin(y)\leq x\leq \frac{\pi}{2} \qquad \frac{1}{\sqrt{2}}\leq y\leq 1\qquad
+y
+\frac{\pi}{2}\leq x\leq\arcsin(y) \qquad \frac{1}{\sqrt{2}}\leq y \leq 1\qquad
+y
+\arccos(y)\leq x\leq \pi \qquad -1\leq y\leq-\frac{1}{\sqrt{2}}\qquad
+y
+\pi\leq x\leq\arccos(y)\qquad -1\leq y\leq-\frac{1}{\sqrt{2}}\qquad
+y
+y
+x
+dxdy
+ \int_{\frac{1}{\sqrt{2}}}^{\frac{-1}{\sqrt{2}}}\int_{\arccos(y)}^{\arcsin(y)}dxdy = \frac{\pi}{\sqrt{2}}
+ \int_{\frac{1}{\sqrt{2}}}^{1}\int_{\arcsin(y)}^{\frac{\pi}{2}}dxdy = \frac{1}{\sqrt{2}}-\frac{\pi}{4\sqrt{2}}
+ \int_{1}^{\frac{1}{\sqrt{2}}}\int_{\frac{\pi}{2}}^{\arcsin(y)}dxdy = \frac{1}{\sqrt{2}}-\frac{\pi}{4\sqrt{2}}
+ \int_{\frac{-1}{\sqrt{2}}}^{-1}\int_{\arccos(y)}^{\pi}dxdy = -\left(\frac{1}{\sqrt{2}}-\frac{\pi}{4\sqrt{2}}\right)
+ \int_{-1}^{\frac{-1}{\sqrt{2}}}\int_{\pi}^{\arccos(y)}dxdy = -\left(\frac{1}{\sqrt{2}}-\frac{\pi}{4\sqrt{2}}\right)
+\arcsin(y)
+\arccos(y)
+-\frac{\pi}{2}\leq arcsin(y)\leq\frac{\pi}{2}\qquad0\leq\arccos(y)\leq\pi
+\arcsin(y)
+\pi
+\arccos(y)
+2\pi
+\arcsin(y)\leq x\leq\pi-\arcsin(y)\qquad \frac{1}{\sqrt{2}}\leq y\leq1
+\arccos(y)\leq x\leq\pi-\arcsin(y)\qquad \frac{-1}{\sqrt{2}}\leq y\leq\frac{1}{\sqrt{2}}
+\arccos(y)\leq x\leq2\pi-\arccos(y)\qquad -1\leq y\leq\frac{-1}{\sqrt{2}}
+x
+x>{\pi\over2}
+x=\arcsin(y)
+y
+=: J
+(x,y)
+B:=\bigl\{(x,y)\ \bigm|\ {\pi\over4}\leq x\leq{5\pi\over4},\ \cos x\leq y\leq\sin x\bigr\}
+y
+y
+\min\{y\ |\ \exists x:\ (x,y)\in B\}
+\max\{y\ |\ \exists x:\ (x,y)\in B\}
+[{-1},1]
+y
+B
+y
+B_y
+a(y):=\min  B_y
+b(y):=\max B_y
+B_y:=\{ x\ |\ (x,y)\in B\}
+a(y)
+b(y)
+y
+\bigl[{-1},-{1\over\sqrt{2}}\bigr]
+\ \bigl[{-{1\over\sqrt{2}}},{1\over\sqrt{2}}\bigr]
+\bigl[{1\over\sqrt{2}},1\bigr]
+J
+\eqalign{ -1\leq y\leq-{1\over\sqrt{2}}: \qquad &a(y)=\arccos(y),\quad b(y)=2\pi-\arccos(y),  \cr -{1\over\sqrt{2}}\leq y\leq{1\over\sqrt{2}}: \qquad &a(y)=\arccos(y),\quad b(y)=\pi-\arcsin(y),  \cr {1\over\sqrt{2}}\leq y\leq1: \qquad &a(y)=\arcsin(y),\quad b(y)=\pi-\arcsin(y)  \ .\cr}
+J=\int_{-1}^{-1/\sqrt{2}}\int_{\arccos(y)}^{2\pi-\arccos(y)} dx\ dy +\int_{-1/\sqrt{2}}^{1/\sqrt{2}}\int_{\arccos(y)}^{\pi-\arcsin(y)} dx\ dy + \int_{1/\sqrt{2}}^1\int_{\arcsin(y)}^{\pi-\arcsin(y)} dx\ dy \ .

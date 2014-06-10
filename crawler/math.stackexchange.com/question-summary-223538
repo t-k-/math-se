@@ -1,0 +1,21 @@
+F(x)= \int _0^x f(t) dt
+ m(x_0)=\inf f(x_0)\ \&\ M(x_0)=\sup f(x_0)\\ m(x_0)=M(x_0)
+P=\{t_0,\dots,t_n\}
+M_i=\sup_{[t_{i-1},t_i]}f(x)=f(t_i)
+m_i=\inf_{[t_{i-1},t_i]}f(x)=f(t_{i-1})
+U(f,P)=\sum_{i=1}^n M_i(t_{i}-t_{i-1})=\sum_{i=1}^n f(t_i)(t_{i}-t_{i-1})
+L(f,P)=\sum_{i=1}^n m_i(t_{i}-t_{i-1})=\sum_{i=1}^n f(t_{i-1})(t_{i}-t_{i-1})
+U(f,P)-L(f,P)=\sum_{i=1}^n (f(t_i)-f(t_{i-1}))(t_{i}-t_{i-1})
+\epsilon >0
+P
+t_i-t_{i-1}<\delta
+\delta
+U(f,P)-L(f,P)<\sum_{i=1}^n (f(t_i)-f(t_{i-1}))\delta
+U(f,P)-L(f,P)<\delta \sum_{i=1}^n (f(t_i)-f(t_{i-1}))
+U(f,P)-L(f,P)<\delta  (f(t_n)-f(t_{0}))
+\delta <\dfrac {\epsilon}{f(t_n)-f(t_{0})}
+\epsilon
+f
+[a,b]
+f(a)\leq f(x)\leq f(b)
+x\in [a,b]

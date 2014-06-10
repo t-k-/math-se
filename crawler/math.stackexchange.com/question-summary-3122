@@ -1,0 +1,21 @@
+[0,1]
+[0,1]
+\frac{1}{n}
+0
+1/x
+x = 0
+\lim_{x\rightarrow 0} \int_x^1 \frac{1}{x} dx
+[\frac{1}{x}]
+[\frac{1}{x}]
+\int_0^1 \frac{1}{x} dx - \int_0^1 [\frac{1}{x}] dx = \int_0^1 \frac{1}{x} dx
+\epsilon > 0
+n_{0}
+1/n < \epsilon/2
+n > n_{0}
+P
+ 0 = x_{0} < x_{1}= \frac{1}{n_{0}+1} < x_{2} < \cdots < x_{n'_{0}}= \frac{1}{n_0}
+ < x_{n'_{0}+1} < \cdots < x_{n_{1}}'= \frac{1}{n_{0}-1} < \cdots < x_{n_{n_{0}-1}'}=1
+ \displaystyle x_{i} - x_{i-1} < \frac{\epsilon}{4n_{0}}
+U(P,f) - L(P,f) = \frac{1}{n_{0}+1} + \sum\limits_{i=2}^{n_{0}'} (M_{i}-m_{i})(x_{i}=x_{i-1})
+ + \sum\limits_{k=0}^{n_{0}-2} \sum\limits_{i=n_{k}'+1}^{n_{k+1}'}(M_{i}-m_{i})(x_{i}-x_{i-1})
+ < \frac{\epsilon}{2} + 2n_{0} \frac{\epsilon}{4n_{0}} = \epsilon

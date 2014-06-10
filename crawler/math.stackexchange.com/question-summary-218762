@@ -1,0 +1,30 @@
+a_n=\begin{cases} 3,&\text{if }n=0\\ 5,&\text{if }n=1\\ 4a_{n-1}-4a_{n-2},&\text{if }n\ge 2\;. \end{cases}
+P(n)=\sum_{n=0}^\infty (a_n+a_{n+1})x^n
+a_n
+P(n)=\frac{8-19x}{(1-2x)^2}
+a_n=4a_{n-1}-4a_{n-2}
+x^n
+n\ge 2
+\begin{align*} \sum_{n\ge 2}a_nx^n&=\sum_{n\ge 2}\left(4a_{n-1}x^n-4a_{n-2}x^n\right)\\ &=4x\sum_{n\ge 2}a_{n-1}x^{n-1}-4x^2\sum_{n\ge 2}a_{n-2}x^{n-2}\\ &=4x\sum_{n\ge 1}a_nx^n-4x^2\sum_{n\ge 0}a_nx^n\;. \end{align*}
+g(x)=\sum_{n\ge 0}a_nx^n
+g(x)-a_1x-a_0=4x\big(g(x)-a_0\big)-4x^2g(x)
+a_0
+a_1
+g(x)-5x-3=4x\big(g(x)-3\big)-4x^2g(x)\;,
+g(x)=\frac{3-7x}{(1-2x)^2}\;.
+\begin{align*} P(x)&=\sum_{n\ge 0}(a_n+a_{n+1})x^n\\ &=\sum_{n\ge 0}a_nx^n+\sum_{n\ge 0}a_{n+1}x^n\\ &=g(x)+\frac1x\sum_{n\ge 0}a_{n+1}x^{n+1}\\ &=g(x)+\frac1x\sum_{n\ge 1}a_nx^n\\ &=g(x)+\frac1x\left(g(x)-a_0\right)\\ &=g(x)+\frac1x\left(g(x)-3\right)\\ &=\frac{(1+x)(3-7x)}{x(1-2x)^2}-\frac3x\\ &=\frac{3-4x-7x^2-3(1-2x)^2}{x(1-2x)^2}\\ &=\frac{8x-19x^2}{x(1-2x)^2}\\ &=\frac{8-19x}{(1-2x)^2}\;, \end{align*}
+x
+n
+a_nx^n
+x^0
+x^1
+P(x)-4xP(x)+4x^2P(x)
+P(x)-4xP(x)-4x^2P(x)=3-7x
+-7
+5-4*3
+x
+P(x)-4xP(x)-4x^2P(x)
+(3-7x)/(1-4x+4x^2)
+3,5,8,12,16...
+1+x
+a_n+a_{n+1}

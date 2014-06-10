@@ -1,0 +1,36 @@
+n
+\{X_1,X_2,\ldots,X_n\}
+\mathbb{E}(X_k) = \mu
+\mathbb{E}((X_k-\mu)^2) = \sigma^2 < \infty
+n \to \infty
+S_n = \dfrac{X_1 + X_2 + \cdots + X_n}{n}
+\sqrt{n}(S_n - \mu) \to_{d} \mathcal{N}(0,\sigma^2)
+X
+\phi_X(t)
+0
+(S_n - \mu)
+Z_n = \sqrt{n}(S_n - \mu)
+\phi_{X-\mu}(t) = \phi_{X-\mu}(0) + \phi_{X-\mu}'(0) t + \dfrac{\phi_{X-\mu}''(0)}2 t^2 + \mathcal{O}(t^4/n^4) = 1 - \dfrac{\sigma^2}2 t^2 + \mathcal{O}(t^4/n^4)
+\phi_{S_n - \mu}(t) = \phi_{X - \mu}(t/n)^n = \left( 1 - \dfrac{\sigma^2}2 t^2/n^2 + \mathcal{O}(t^4/n^4)\right)^n
+\phi_{Z_n}(t) = \phi_{\sqrt{n}(S_n - \mu)}(t) = \phi_{S_n - \mu}(\sqrt{n}t) = \left( 1 - \dfrac{\sigma^2}2 nt^2/n^2 + \mathcal{O}(t^4/n^2)\right)^n = \left( 1 - \dfrac{\sigma^2 t^2/2}n + \mathcal{O}(t^4/n^2)\right)^n
+\lim_{n \to \infty} \phi_{Z_n}(t) = \lim_{n \to \infty} \left( 1 - \dfrac{\sigma^2 t^2/2}n + \mathcal{O}(t^4/n^2)\right)^n = \exp(-\sigma^2 t^2/2)
+e
+\pi
+e = \lim_{n \to \infty} \left(1+\dfrac1n \right)^n.
+\int_{-\infty}^{\infty} \exp(-x^2) dx = \sqrt{\pi}
+\pi
+ \int_{-\infty}^\infty e^{-x^2/2} \, dx = \frac{1}{\sqrt{2\pi\ {}}}\ ? 
+f : \mathbb{R} \to \mathbb{R}
+f(0) = 0
+g(a \, | \, x)
+f(x)
+f
+(0, 0)
+(x, ?)
+x'
+x
+x'
+0
+x
+g(a \, | \, x) = \int_{-\infty}^{\infty} \, g(a' \, | \, x') g(a - a' | x - x') \, da'
+\frac{1}{\sqrt{2\pi c_1x}} \, e^{-\frac{1}{2}\frac{(a - c_2 x)^2}{c_1 x}}

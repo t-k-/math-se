@@ -1,0 +1,17 @@
+n^{\text{th}}
+k
+\text{G.F} =x / (1 - x - x^2)
+F(n)=F(n-1)+F(n-2)
+(1)
+g(x)=\frac{x}{1-x-x^2}\;.
+\left(1-x-x^2\right)g(x)=x
+g(x)=xg(x)+x^2g(x)+x\;.\tag{1}
+g(x)=\sum_{k\ge 0}a_kx^k
+\sum_{k\ge 0}a_kx^k=x\sum_{k\ge 0}a_kx^k+x^2\sum_{k\ge 0}a_kx^k+x\;.
+x
+\begin{align*} &\sum_{k\ge 0}a_kx^k=\sum_{k\ge 0}a_kx^{k+1}+\sum_{k\ge 0}a_kx^{k+2}+x\;,\text{ then}\\\\ &\sum_{k\ge 0}a_kx^k=\sum_{k\ge 1}a_{k-1}x^k+\sum_{k\ge 2}a_{k-2}x^k+x\;. \end{align*}
+a_k=0
+k<0
+0
+\begin{align*} \sum_{k\ge 0}a_kx^k&=\sum_{k\ge 0}a_{k-1}x^k+\sum_{k\ge 0}a_{k-2}x^k+x\\ &=\sum_{k\ge 0}\big(a_{k-1}+a_{k-2}+[k=1]\big)x^k\;, \end{align*}
+a_k=a_{k-1}+a_{k-2}+[k=1]\;.\tag{2}

@@ -1,0 +1,41 @@
+f(t) = \int_0^1 |\phi(x)-t|dx
+m[(\phi=t)]=0
+f
+f
+m[(\phi=t)]=0
+t
+a)
+f
+L=1
+|f(t)-f(s)|=|\int_0^1 |\phi(x) -t| - |\phi(x) -s|\space dx\space| \le \int_0^1||\phi(x)-t-\phi(x)+s||\le|s-t|=|t-s|
+b)
+C^1
+\delta \gt 0
+t
+\lim_{h \to 0}\frac{f(t+h)-f(t)}{h}=\lim_{h \to 0}\int_{[x\in[0,1|:\phi(x)\le t-\delta]}\frac{|\phi(x)-t-h|-|\phi(x)-t|}{h}\space dx+\int_{[x\in[0,1|:t-\delta\lt\phi(x)\le t+\delta]}\frac{|\phi(x)-t-h|-|\phi(x)-t|}{h} \space dx + \int_{[x\in[0,1|:\phi(x)\gt t+\delta]}\frac{|\phi(x)-t-h|-|\phi(x)-t|}{h}\space dx= A + B + C
+\phi \le t+\delta
+|\phi(x)-t-h|
+|\phi(x)-t|
+-1
+A =\lim_{h \to 0}\int_{[x\in[0,1|:\phi(x)\le t-\delta]}\frac{-\phi(x)+t+h+\phi(x)-t}{h}\space dx =\lim_{h \to 0}\int_{[x\in[0,1|:\phi(x)\le t-\delta]}\frac{h}{h} =m[x\in[0,1|:\phi(x)\le t]
+A
+C
+\phi(x) \gt t+\delta
+C = \lim_{h\to 0}\int_{[x\in[0,1|:\phi(x)\gt t+\delta]}\frac{\phi(x)-t-h-\phi(x)+t}{h}\space =\int_{[x\in[0,1|:\phi(x)\gt t+\delta]}\frac{-h}{h}\space dx = -m[x\in[0,1|:\phi(x)\gt t]
+B =\int_{[x\in[0,1|:t-\delta\lt\phi(x)\le t+\delta]}\frac{|\phi(x)-t-h|-|\phi(x)-t|}{h} \space dx \to m[x\in[0,1|:t-\delta\lt\phi(x)\le t+\delta] \to 0 \space as\space (\delta \to 0) \space by \space assumption
+\implies A+B+C=m[x\in[0,1|:\phi(x)\le t]-m[x\in[0,1|:\phi(x)\gt t]
+c)
+\lim_{h \to 0}\frac{f(t+h)-f(t)}{h}
+B
+m[(\phi=t)]=0
+c)
+I(h)
+\delta
+I(h) = A(h, \delta) + B(h, \delta) + C(h, \delta)
+I(h) = \lim_{\delta \rightarrow 0} A(h, \delta) + \lim_{\delta \rightarrow 0} B(h, \delta) + \lim_{\delta \rightarrow 0} C(h, \delta) 
+\lim_{h \rightarrow 0} I(h) = \lim_{h \rightarrow 0}\lim_{\delta \rightarrow 0} A(h, \delta) + \lim_{h \rightarrow 0}\lim_{\delta \rightarrow 0} B(h, \delta) + \lim_{h \rightarrow 0}\lim_{\delta \rightarrow 0} C(h, \delta) 
+A
+C
+B
+h
+B

@@ -1,0 +1,17 @@
+\alpha \in (0,1/2)
+I(\epsilon) = \int^1_\epsilon s^{\alpha -3/2} \exp \left\{ -\frac{s^{2\alpha -1}}{2} \right\} \exp \left\{ \frac{\alpha s^{2 \alpha - 2}}{8} \right\} ds \qquad \text{as }\epsilon \searrow 0.
+\infty
+\epsilon \searrow 0
+ \frac{\log \log I(\epsilon)}{\log \epsilon} \sim 2 \alpha - 1.8 \quad (\text{1.8 is not exact}) 
+ I(\epsilon) \sim \exp\{ \epsilon^{2\alpha - 1.8} \} \qquad \text{as }\epsilon \searrow 0.
+t \mapsto 1/s
+I(\epsilon) = \int_1^{1/\epsilon} \frac{dt}{t^{\alpha+1/2}} \, e^{-t^{1-2 \alpha}/2} e^{\alpha t^{2-2 \alpha}/8}
+\epsilon \to 0
+I(\epsilon) \sim \int_1^{1/\epsilon} \frac{dt}{t^{\alpha+1/2}} e^{\alpha t^{2-2 \alpha}/8} \quad (\epsilon \to 0)
+u \mapsto t^{2-2 \alpha}
+I(\epsilon) \sim \int_1^{1/\epsilon^{2-2 \alpha}} du \, u^{-(3/2 + \alpha)/(2-2 \alpha)} \, e^{\alpha u/8} 
+I(\epsilon) \sim \frac{8}{\alpha} \epsilon^{\frac{3}{2}+\alpha} \exp{\left(\frac{\alpha}{8 \epsilon^{2-2 \alpha}} \right)} + \frac{8}{\alpha} \frac{\frac{3}{2}+\alpha}{2-2 \alpha}\int_1^{1/\epsilon^{2-2 \alpha}} du \,  e^{\alpha u/8}\, u^{-(3/2 + \alpha)/(2-2 \alpha) - 1} 
+I(\epsilon) \sim \frac{8}{\alpha} \epsilon^{\frac{3}{2}+\alpha} \exp{\left(\frac{\alpha}{8 \epsilon^{2-2 \alpha}} \right)} \quad (\epsilon \to 0)
+\int_1^N u^m e^u du
+N^m e^N
+\left(\frac{8}{\alpha}\right)^{\gamma}\frac{1}{2-2\alpha} \exp\left(\frac{3-2\alpha}{4\alpha-4}\log\epsilon+\frac{\alpha \epsilon^{2\alpha-2}}{8} -\frac{1}{2} \left(\frac{8}{\alpha}\right)^{\beta}\epsilon^{2\alpha-1}\right)\\ \beta = \frac{2\alpha-1}{2\alpha-2}\\ \gamma = \frac{2\alpha-1}{4\alpha-4} 

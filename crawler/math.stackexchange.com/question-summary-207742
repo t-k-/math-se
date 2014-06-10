@@ -1,0 +1,39 @@
+r: \mathbb{R} \rightarrow \mathbb{R}
+\alpha = \int_{-\infty}^{+\infty}[r'(x)]^2dx
+r'
+x = \sum_{i=1}^N (y_i-k)^2
+k, y_i \in \mathbb{R}, i \in \mathbb{Z}
+u: \mathbb{R}^N \rightarrow \mathbb{R}
+u(\vec y) = r(x)
+\vec y = (y_1, y_2, ..., y_N)
+\alpha
+k
+\int_{\vec y \in \mathbb{R}^N}\left|\frac{d}{d \vec y}u(\vec y)\right|^2d \vec y \tag{1}
+\frac{d}{d \vec y}
+r(\vec y)
+r
+r(x) = e^{-c^2 x}
+i
+1
+N
+i=0
+N-1
+i
+N = 1
+N=1
+x = y_1
+k
+k
+\alpha
+u
+k
+|\frac{d}{d \vec y} u(\vec y)|^2 = \sum_{j=1}^N [\frac{d}{d y_j}u(\sum_{i=1}^N (y_i-k)^2)]^2\tag{2}
+\sum_{j=1}^N \int_{-\infty}^{\infty} [\frac{d}{d y_j}u(\sum_{i=1}^N (y_i-k)^2)]^2 d y_j\tag{3}
+\frac{d}{d y_j}u(\sum_{i=1}^N (y_i-k)^2)=2(y_j-k) r'(\sum_{i=1}^N (y_i-k)^2)\tag{4}
+\sum_{j=1}^N \int_{-\infty}^{\infty} [\frac{d}{d y_j}u(\sum_{i=1}^N (y_i-k)^2)]^2 d y_j = \sum_{j=1}^N \int_{-\infty}^{\infty} [2(y_j-k) r'(\sum_{i=1}^N (y_i-k)^2)]^2 d y_j \tag{5}
+x = \sum_{i=1}^N (y_i-k)^2
+k
+\alpha
+\sigma_{N-1}
+\mathbb R^N
+ 2\sigma_{N-1}\cdot\int_0^{+\infty}r'(x)^2x^{N/2}\mathrm dx, 

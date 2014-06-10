@@ -1,0 +1,10 @@
+X_1 , \dots, X_n , X_1' , \dots, X_n'
+X_i
+X_i'
+i
+X = (X_1, \dots, X_n)
+X' = (X_1', \dots, X_n')
+X^{(i)} = (X_1, \dots, X_{i-1}, X_i', X_{i+1}, \dots,  X_n)
+X^{[i]} = (X_1', \dots, X_i', X_{i+1}, \dots,  X_n)
+f: \mathbb{R}^n \to \mathbb{R}
+ \mathrm{E}[f (X)(f (X) − f (X'))] = \sum_{i=1}^n \mathrm{E} [f (X) (f (X^{[i−1]} ) − f (X^{[i]} ))] 

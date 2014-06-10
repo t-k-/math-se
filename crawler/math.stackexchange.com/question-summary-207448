@@ -1,0 +1,28 @@
+ \dfrac{\partial (\hat{\beta}'X'X\hat{\beta})}{\partial \hat{\beta}} = 2X'X\hat{\beta} 
+X
+\hat{\beta}
+1 \times 1
+x^2
+f:\mathbb{R}^n \to \mathbb{R}
+g:\mathbb{R}^n \to \mathbb{R}^m
+h:\mathbb{R}^n \to \mathbb{R}^m
+\Delta x \in \mathbb{R}^n
+g
+h
+x
+f(x) = \langle g(x), h(x) \rangle
+\begin{align*} f(x + \Delta x) &\approx \langle g(x) + g'(x) \Delta x, h(x) + h'(x) \Delta x \rangle \\ &= \langle g(x),h(x) \rangle + \langle g(x), h'(x) \Delta x \rangle + \langle g'(x) \Delta x, h(x) \rangle + \langle g'(x) \Delta x, h'(x) \Delta x \rangle \\ &\approx \langle g(x),h(x) \rangle + \langle g(x), h'(x) \Delta x \rangle +\langle g'(x) \Delta x, h(x) \rangle \\ &= \langle g(x),h(x) \rangle + \langle h'(x)^T g(x), \Delta x \rangle + \langle g'(x)^T h(x), \Delta x \rangle \\ &= f(x) + \langle h'(x)^T g(x) + g'(x)^T h(x), \Delta x \rangle. \end{align*}
+f(x + \Delta x) \approx f(x) + \langle \nabla f(x), \Delta x \rangle
+\nabla f(x) = h'(x)^T g(x) + g'(x)^T h(x).
+g(x) = Ax
+A
+g'(x) = A
+\begin{align*} f(x) &= \langle g(x),g(x) \rangle \\ &= \langle Ax, Ax \rangle \\ &= x^T A^T A x \quad \text{?} \end{align*}
+\begin{align*} \nabla f(x) &= 2g'(x)^T g(x) \\ &= 2 A^T A x. \end{align*}
+X'X
+(X'X)'=X'(X')'=X'X
+ \dfrac{\partial (x'Ax)}{\partial x} = x'(A'+A)
+x_k
+ x'Ax = \sum_{j=1}^n \sum_{i=1}^n a_{ij}x_ix_j
+\dfrac{\partial (x'Ax)}{\partial x_k}= \sum_{j=1}^n a_{kj}x_j + \sum_{i=1}^n a_{ik}x_i\ ;  \forall k = 1,...,n
+\dfrac{\partial (x'Ax)}{\partial x} = x'A'+x'A

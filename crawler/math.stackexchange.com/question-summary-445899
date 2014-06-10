@@ -1,0 +1,39 @@
+f(x) = e^{a^Tx}
+a,x \in \mathbb{R}^N
+\frac {\partial f}{\partial x} = e^{a^Tx}a
+a \in R^N
+x \in R^N
+x = (x_1, x_2, . . . , x_N)
+a = (a_1, a_2, . . . , a_N)
+a
+a^T
+a^Tx = \sum_{i = 1}^{i = N}a_ix_i
+f(x) = \exp(\sum_{i=1}^{i = N}a_ix_i)
+x_j
+\frac{\partial f}{\partial x_j} = \exp(\sum_{i =1}^{i = N}a_ix_i)a_j
+\nabla f = \exp(\sum_{i = 1}^{i = N}a_ix_i)(a_1, a_2, . . . , a_N) = \exp(\sum_{i = 1}^{i = N}a_ix_i)a
+f(x)
+\frac{\partial f}{\partial x}
+\nabla f
+Df(x)
+f(x + h) = f(x) + Df(x)h + e(h)
+h \in R^N
+e(h)
+\frac{||e(h)||}{||h||} \to 0
+||h|| \to 0
+f(x + h) = \exp(\sum_{i = 1}^{i = N}a_i(x_i + h_i)) = \exp(\sum_{i = 1}^{i = N}a_ix_i)\exp(\sum_{i = 1}^{i = N}a_ih_i)
+\exp(\sum_{i = 1}^{i = N}a_ih_i)
+\exp(\sum_{i = 1}^{i = N}a_ih_i) = 1 + \sum_{i = 1}^{i = N}a_ih_i + \frac{1}{2!}(\sum_{i = 1}^{i = N}a_ih_i)^2 + . . . 
+f(x + h) = \exp(\sum_{i=1}^{i = N}a_ix_i) + \exp(\sum_{i=1}^{i = N}a_ix_i)\sum_{i = 1}^{i = N}a_ih_i + e(h)
+= f(x) + \exp(\sum_{i=1}^{i = N}a_ix_i)\sum_{i = 1}^{i = N}a_ih_i + e(h)
+Df(x)h = \exp(\sum_{i=1}^{i = N}a_ix_i)\sum_{i = 1}^{i = N}a_ih_i = \exp(\sum_{i=1}^{i = N}a_ix_i)a^Th = f(x)a^Th
+Df(x) = \exp(\sum_{i=1}^{i = N}a_ix_i)a^T = f(x)a^T
+\frac{\partial f}{\partial x}
+\nabla f
+Df
+T_xR^N
+\nabla f
+Df(x)
+x_i
+ \frac{\partial f}{\partial x_i} = \exp\left(\sum_{j \neq i}a_jx_j\right)a_i \exp\left(a_i x_i\right) = a_i\exp\left(\sum_{j}a_jx_j\right) = a_i e^{a^Tx} 
+ Df = a^T e^{a^Tx} \\ \nabla f = ae^{a^Tx} . 

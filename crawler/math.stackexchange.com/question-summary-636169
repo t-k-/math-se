@@ -1,0 +1,61 @@
+g(x,p,x') = \begin{cases} - \dfrac{e^{\sqrt{p} x'} \sinh({\sqrt{p}x})}{ {\sqrt{p}}} & 0 < x < x' \\  -\dfrac{\sinh({\sqrt{p}x'}) e^{-\sqrt{p} x}}{{\sqrt{p}}} & x \gt x' \end{cases} 
+L^{-1}\{g(x,p,x')\}=G(x,t,x')
+x'
+x
+-p^{-1/2} e^{\sqrt{p} x'} \sinh{\sqrt{p} x} =\frac12  p^{-1/2} \left [e^{-\sqrt{p} (x'-x)} -e^{\sqrt{p} (x'+x)}  \right ]
+\oint_C dz \: z^{-1/2} e^{-a \sqrt{z}} e^{z t}
+C
+\text{Arg}{z} \in (-\pi,\pi]
+6
+C_k
+k \in \{1,2,3,4,5,6\}
+C_1
+z \in [c-i R,c+i R]
+R
+C_2
+R
+C_1
+C_3
+[-R, -\epsilon]
+\epsilon
+C_4
+\epsilon
+C_5
+[-\epsilon,-R]
+C_6
+R
+C_1
+C_2
+C_4
+C_6
+R \rightarrow \infty
+\epsilon \rightarrow 0
+C_2
+R t \cos{\theta} - \sqrt{R} \cos{\frac{\theta}{2}}
+\theta \in [\pi/2,\pi)
+\cos{\theta} < 0
+\cos{\frac{\theta}{2}} > 0
+R \rightarrow \infty
+C_2
+C_6
+\theta \in (-\pi,-\pi/2]
+R \rightarrow \infty
+C_6
+C_4
+\epsilon
+\epsilon \rightarrow 0
+C
+\left [ \int_{C_1} + \int_{C_3} + \int_{C_5}\right] dz \: z^{-1/2} e^{-a \sqrt{z}} e^{z t} = 0
+C_3
+z=e^{i \pi} x
+C_3
+\int_{C_3} dz \: z^{-1/2} e^{-a \sqrt{z}} e^{z t} = e^{i \pi} \int_{\infty}^0 dx \: e^{-i \pi/2} x^{-1/2} e^{-i a \sqrt{x}} e^{-x t}
+C_5
+z=e^{-i \pi} x
+C_5
+\int_{C_5} dz \: z^{-1/2} e^{-\sqrt{z}} e^{z t} = e^{-i \pi} \int_0^{\infty} dx \: e^{i \pi/2} x^{-1/2} e^{i a \sqrt{x}} e^{-x t}
+-\frac{i}{i 2 \pi} \int_0^{\infty} dx \: e^{- x t} \left ( e^{i a \sqrt{x}} + e^{-i a \sqrt{x}} \right ) + \frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} dp \: p^{-1/2} e^{-a \sqrt{p}} e^{p t} = 0
+\hat{f}(p) = p^{-1/2} e^{-a \sqrt{p}}
+\begin{align}\frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} dp \: p^{-1/2} e^{-a \sqrt{p}} e^{p t} &= \frac{1}{2 \pi} \int_0^{\infty} dx \: x^{-1/2} e^{- x t} \left ( e^{i a \sqrt{x}} + e^{-i a \sqrt{x}} \right )\\ &= \frac{1}{\pi} \int_{-\infty}^{\infty} du\: \,e^{-t u^2} \cos{a u}\\ &= (\pi t)^{-1/2} e^{-a^2/(4 t)}\end{align}
+G(x,x',t) = \frac1{2 \sqrt{\pi}} t^{-1/2} \left [e^{-(x-x')^2/(4 t)} - e^{-(x+x')^2/(4 t)} \right ] \quad 0 \lt x \lt x'
+x \gt x'

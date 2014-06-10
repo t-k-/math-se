@@ -1,0 +1,30 @@
+f(x;\theta)=\frac{1}{\pi[1+(x-\theta)^2]}
+-\infty<x<\infty,\quad-\infty<\theta<\infty
+\log f(x;\theta)=\log (\frac{1}{\pi[1+(x-\theta)^2]})
+\Rightarrow \log f(x;\theta)=\log(1)-\log(\pi[1+(x-\theta)^2])
+\Rightarrow \log f(x;\theta)=0-\log(\pi)-\log[1+(x-\theta)^2]
+\Rightarrow \log f(x;\theta)=-\log(\pi)-\log[1+(x-\theta)^2]
+\frac{\partial}{\partial\theta}\log f(x;\theta)
+=0-\frac{1}{[1+(x-\theta)^2]}2(x-\theta)(-1)
+=\frac{2(x-\theta)}{[1+(x-\theta)^2]}
+\frac{\partial^2}{\partial\theta^2}\log f(x;\theta)
+=2\frac{[1+(x-\theta)^2]\frac{\partial}{\partial\theta}(x-\theta)-(x-\theta)\frac{\partial}{\partial\theta}[1+(x-\theta)^2]}{[1+(x-\theta)^2]^2}
+=2\frac{[1+(x-\theta)^2](-1)-(x-\theta)2(x-\theta)(-1)}{[1+(x-\theta)^2]^2}
+=2\frac{(x-\theta)^2-1}{[1+(x-\theta)^2]^2}
+\mathbb E[\frac{\partial}{\partial\theta}\log f(X;\theta)]^2=\mathbb E[\frac{2(x-\theta)}{[1+(x-\theta)^2]}]^2
+\mathbb E[\frac{\partial^2}{\partial\theta^2}\log f(X;\theta)]=\mathbb E[2\frac{(x-\theta)^2-1}{[1+(x-\theta)^2]^2}]
+\mathbb E[\frac{\partial}{\partial\theta}\log f(X;\theta)]^2
+\mathbb E[\frac{\partial^2}{\partial\theta^2}\log f(X;\theta)]
+f_X(x;\theta) = \frac{1}{\pi(1+(x-\theta)^2)}
+x\in(-\infty,+\infty)
+\theta\in(-\infty,+\infty)
+ \begin{aligned} log f_X(x;\theta) & = (-1)\log\pi(1+(x-\theta)^2) \\ & = (-1)[\log \pi + \log(1+(x-\theta)^2)] \\ & = -\log \pi - \log(1+(x-\theta)^2) \end{aligned} 
+ \begin{aligned} \frac{\partial \log f_X(x;\theta)}{\partial \theta} & = 0 + (-1)\frac{1}{(1+(x-\theta)^2)}\frac{\partial}{\partial \theta}(1+(x-\theta)^2) \\ & = (-1)\frac{1}{(1+(x-\theta)^2)}\cdot 2 (x-\theta)^1 \cdot (-1) \\ & = (+1)\cdot \frac{2(x-\theta)}{1+(x-\theta)^2} = \frac{2x-2\theta}{1+(x-\theta)^2} \end{aligned} 
+ \begin{aligned} \frac{\mathrm{d}}{\mathrm{d}x} \log x & = \frac1x \\ \frac{\mathrm{d}}{\mathrm{d}x} \log f(x) & = \frac{1}{u(x)} \frac{\mathrm{d}}{\mathrm{d}x} u(x) \end{aligned} 
+ \begin{aligned} \frac{\partial^2 \log f_X(x;\theta)}{\partial \theta^2} & = \frac{(-2)(1+(x-\theta)^2) - 2(x-\theta)^1 (-1)(2x-2\theta)}{(1+(x-\theta)^2)^2} \\ & = \frac{-2\cdot(1+(x-\theta)^2)+2(x-\theta)\cdot2(x-\theta)}{(1+(x-\theta)^2)^2} \\ & = \frac{-2-2(x-\theta)^2 + 4(x-\theta)^2}{(1+(x-\theta)^2)^2} \\ & = \frac{-2 + 2(x-\theta)^2}{(1+(x-\theta)^2)^2} \\ & = \frac{2\cdot((x-\theta)^2 - 1)}{(1+(x-\theta)^2)^2} \end{aligned} 
+ \begin{aligned} A & = \left(\frac{\partial \log f_X(x;\theta)}{\partial \theta}\right)^2 = \frac{4(x-\theta)^2}{(1+(x-\theta)^2)^2} \\ B & = \frac{\partial^2 \log f_X(x;\theta)}{\partial \theta^2} = \frac{2((x-\theta)^2 - 1)}{(1+(x-\theta)^2)^2} \end{aligned} 
+E_X[A]
+E_X[B]
+ \begin{aligned} E_X[A] & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi} \cdot \frac{\tan^2 \theta}{(1+\tan^2 \theta)^3} \sec^2 \theta \, \mathrm{d}\theta \\ & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi} \cdot \frac{\tan^2 \theta (\sec^2 \theta)^1}{(\sec^2 \theta)^3} \, \mathrm{d} \theta \\ & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi}\cdot \frac{\tan^2 \theta}{(\sec^2 \theta)^2}\, \mathrm{d}\theta \\ & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi} \sin^2 \theta \cos^2 \theta \, \mathrm{d}\theta \\ & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi} (1-\cos^2 \theta)\cos^2 \theta \, \mathrm{d}\theta \\ & = \int_{-\frac \pi 2}^{+\frac \pi 2} \frac{4}{\pi}(\cos^2 \theta - \cos^4 \theta)\,\mathrm{d}\theta \end{aligned} 
+ E_X[A] = \frac{8}{\pi}\int_{0}^{+\frac \pi 2}(\cos^2 \theta - \cos^4 \theta)\,\mathrm{d}\theta. 
+ \begin{aligned} E_X[A] & = \frac{8}{\pi}\int_{0}^{+\frac \pi 2} (\cos^2 \theta - \cos^4 \theta)\, \mathrm{d}\theta \\ & = \frac{8}{\pi}\left[\int_{0}^{+\frac \pi 2} \cos^2 \theta \, \mathrm{d}\theta - \int_{0}^{+\frac ]pi 2}]cos^4 \theta \, \mathrm{d}\theta\right] \\ & = \frac{8}{\pi}[C(2)-C(4)] \\ & = \frac{8}{\pi}\left[\frac{\pi}{4} - \frac{3\pi}{16}\right] \\ & = \frac{8}{\pi}\left[\frac{4\pi}{16} - \frac{3\pi}{16}\right] = \frac{8}{\pi}\cdot \frac{\pi}{16} = \frac12. \end{aligned} 

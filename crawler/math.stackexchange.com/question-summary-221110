@@ -1,0 +1,48 @@
+R^2
+0
+f
+f:\mathbb R \to\mathbb R
+\epsilon>0
+\epsilon>0
+m(C)<\epsilon
+\epsilon>0
+m(C)=0
+n\in\mathbb N
+n\delta> b-a
+a=x_0<x_1<\ldots<x_n=b
+[a,b]
+i=1,2,\ldots,n
+|x_i-x_{i-1}|<\delta
+i=1,2,\ldots,n
+y_i=g(x_i)
+i=1,2,\ldots,n
+z\in[x_{i-1},x_i]
+g(z)\in[y_i-\epsilon,y_i+\epsilon]
+z
+|z-x_i|<\delta
+\delta
+|g(z)-y_i|<\epsilon
+\Gamma_g\subseteq\bigcup_{i=1}^n[x_{i-1},x_i]\times[y_i-\epsilon,y_i+\epsilon]
+n
+n\delta>b-a
+b-a+\delta\geq n\delta
+b-a+\delta<n\delta
+b-a<(n-1)\delta
+n
+2\delta\epsilon n\leq 2\epsilon(b-a+\delta)<4\epsilon(b-a)
+\delta<b-a
+m(\Gamma_g)\leq\sum_{i=1}^n m([x_{i-1},x_i]\times[y_i-\epsilon,y_i+\epsilon])\leq\sum_{i=1}^n 2\delta\epsilon = 2\delta\epsilon n
+\epsilon>0
+m(\Gamma_g)<4\epsilon (b-a)
+m(\Gamma_g)=0
+\square
+f:\mathbb R\to\mathbb R
+f
+\Gamma_f=\{(x,f(x))|\;x\in\mathbb R\}
+[-n,n]
+n\in\mathbb N
+f_n:[-n,n]\to\mathbb R
+f_n(x) = f(x)
+m(\Gamma_f)=0
+\Gamma_f=\bigcup_{n=1}^\infty\Gamma_{f_n}.
+m(\Gamma_f)\leq\sum_{n=1}^\infty m(\Gamma_{f_n})=\sum_{n=1}^\infty 0 = 0

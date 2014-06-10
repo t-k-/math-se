@@ -1,0 +1,13 @@
+\{A_{i,j}\}
+\psi
+\eta_1,\ldots,\eta_n
+p
+X_1,\ldots, X_n
+X_j=\sum_{i=1}^{\eta_j}A_{i,j}, \quad j=1,\ldots, n.
+X\sim \mbox{geometric}\left(\frac{p}{\psi(1-p)+p}\right).
+(\psi)
+(p)
+f(t)=1-\psi+\psi e^t
+g(t)=\frac{p}{1-(1-p)e^t}
+Ee^{tX_i} = E[E[e^{tX_i}|\eta_i]] = E(f(t)^{\eta_j})=E(1-\psi+\psi e^t)^{\eta_j}=g(\log(1-\psi+\psi e^t)) = \frac{p}{1-(1-p)(1-\phi+\phi e^t)}
+(\frac{p}{\psi(1-p)+p})

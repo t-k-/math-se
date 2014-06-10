@@ -1,0 +1,16 @@
+H= \begin{bmatrix} \sum_{k=1}^ng_1(x_k)^2 & \sum_{k=1}^ng_1(x_k)g_2(x_k) & \cdots & \sum_{k=1}^ng_1(x_k)g_m(x_k)\\  \sum_{k=1}^ng_2(x_k)g_1(x_k) & \sum_{k=1}^ng_2(x_k)^2 & \cdots & \sum_{k=1}^ng_2(x_k)g_m(x_k)\\   &  & \vdots & \\  \sum_{k=1}^ng_m(x_k)g_1(x_k) & \sum_{k=1}^ng_m(x_k)g_2(x_k) & \cdots & \sum_{k=1}^ng_m(x_k)^2 \end{bmatrix}
+g_1,...g_n
+x_i\neq x_j
+i\neq j
+H= \begin{bmatrix} \sum_{k=1}^ng_1(x_k)^2 & \sum_{k=1}^ng_1(x_k)g_2(x_k) & \cdots & \sum_{k=1}^ng_1(x_k)g_m(x_k)\\  \sum_{k=1}^ng_2(x_k)g_1(x_k) & \sum_{k=1}^ng_2(x_k)^2 & \cdots & \sum_{k=1}^ng_2(x_k)g_m(x_k)\\   &  & \vdots & \\  \sum_{k=1}^ng_m(x_k)g_1(x_k) & \sum_{k=1}^ng_m(x_k)g_2(x_k) & \cdots & \sum_{k=1}^ng_m(x_k)^2 \end{bmatrix}
+= \begin{bmatrix} g_1(x_1) & g_1(x_2) & \cdots & g_1(x_n)\\  g_2(x_1) & g_2(x_2) & \cdots & g_2(x_n)\\   &  & \vdots & \\  g_m(x_1) & g_m(x_2) & \cdots & g_m(x_n) \end{bmatrix}\begin{bmatrix} g_1(x_1) & g_2(x_1) & \cdots & g_m(x_1)\\  g_1(x_2) & g_2(x_2) & \cdots & g_m(x_1)\\   &  & \vdots & \\  g_1(x_n) & g_2(x_n) & \cdots & g_m(x_n) \end{bmatrix}=AA^T
+A=\begin{bmatrix} g_1(x_1) & g_1(x_2) & \cdots & g_1(x_n)\\  g_2(x_1) & g_2(x_2) & \cdots & g_2(x_n)\\   &  & \vdots & \\  g_m(x_1) & g_m(x_2) & \cdots & g_m(x_n) \end{bmatrix}
+\lambda
+H
+\exists 0\ne v\in V
+Hv=\lambda v
+\left<,\right>
+\lambda\left< v,v\right>=\left< v,\lambda v\right>=\left<v,AA^tv\right>=\left<A^tv,A^tv\right>\ge 0
+v\ne 0
+\left< v,v\right>>0\Rightarrow \displaystyle \lambda =\frac{\left<A^tv,A^tv\right>}{\left<v,v\right>}
+\displaystyle \lambda =\frac{\left<A^tv,A^tv\right>}{\left<v,v\right>}\ge 0

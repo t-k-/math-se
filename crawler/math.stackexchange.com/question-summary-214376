@@ -1,0 +1,54 @@
+\nabla^2u(x,y)=0
+0\le x\le3,0<y<7
+$u(x,0)=0, u(x,7)=sin((\pi)x/3
+9\le x\le3
+u(0,y)=u(3,y)=0
+0\le y\le7
+X(0)=0
+X(3)=0
+u(0,y)=u(3,y)=0
+u(x,0)=0
+Y(0)=0
+u(x,7)=sin(\pi x/3)
+\lambda=n^2
+X_n=sin(\pi x/3)
+Y''-n^2Y=0
+Y=ae^{-n y} +be^{n y}
+0
+a+b=0
+a=-b
+Y_n
+X_n
+u(x,t)
+X
+\lambda_n=(n\,\pi/3)^2
+X_n=\sin(n\,\pi\,x/3)
+Y
+Y''-(n\,\pi/3)^2Y=0
+Y_n=A_ne^{n\pi y/3}+B_ne^{-n\pi y/3}
+u(x,0)=0
+B_n=-A_n
+A_n
+y=7
+ u(x,y)=\sum_{n=1}^\infty\sin\Bigl(\frac{n\,\pi\,x}{3}\Bigr)\bigl(A_ne^{n\pi y/3}+B_ne^{-n\pi y/3}\bigr). 
+ u(x,y)=\sum_{n=1}^\infty A_n\sin\Bigl(\frac{n\,\pi\,x}{3}\Bigr)\bigl(e^{n\pi y/3}-e^{-n\pi y/3}\bigr). 
+u(x,y)=\sum\limits_{n=1}^\infty A(n)\sinh\dfrac{n\pi(3-x)}{7}\sin\dfrac{n\pi y}{7}+\sum\limits_{n=1}^\infty B(n)\sinh\dfrac{n\pi x}{7}\sin\dfrac{n\pi y}{7}+\sum\limits_{n=1}^\infty C(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi(7-y)}{3}+\sum\limits_{n=1}^\infty D(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi y}{3}
+u(0,y)=0
+\sum\limits_{n=1}^\infty A(n)\sinh\dfrac{3n\pi}{7}\sin\dfrac{n\pi y}{7}=0
+A(n)=0
+\therefore u(x,y)=\sum\limits_{n=1}^\infty B(n)\sinh\dfrac{n\pi x}{7}\sin\dfrac{n\pi y}{7}+\sum\limits_{n=1}^\infty C(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi(7-y)}{3}+\sum\limits_{n=1}^\infty D(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi y}{3}
+u(3,y)=0
+\sum\limits_{n=1}^\infty B(n)\sinh\dfrac{3n\pi}{7}\sin\dfrac{n\pi y}{7}=0
+B(n)=0
+\therefore u(x,y)=\sum\limits_{n=1}^\infty C(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi(7-y)}{3}+\sum\limits_{n=1}^\infty D(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi y}{3}
+u(x,0)=0
+\sum\limits_{n=1}^\infty C(n)\sinh\dfrac{7n\pi}{3}\sin\dfrac{n\pi x}{3}=0
+C(n)=0
+\therefore u(x,y)=\sum\limits_{n=1}^\infty D(n)\sin\dfrac{n\pi x}{3}\sinh\dfrac{n\pi y}{3}
+u(x,7)=\sin\dfrac{\pi x}{3}
+\sum\limits_{n=1}^\infty D(n)\sinh\dfrac{7n\pi}{3}\sin\dfrac{n\pi x}{3}=\sin\dfrac{\pi x}{3}
+D(n)=\begin{cases}\text{csch}\dfrac{7\pi}{3}&\text{when}~n=1\\0&\text{when}~n\neq1\end{cases}
+\therefore u(x,y)=\text{csch}\dfrac{7\pi}{3}\sin\dfrac{\pi x}{3}\sinh\dfrac{\pi y}{3}
+x,y\in\mathbb{C}
+0\leq x\leq3
+0<y<7

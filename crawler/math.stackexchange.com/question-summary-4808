@@ -1,0 +1,70 @@
+P l
+P
+l
+2 T \sin(l/2R)
+T
+R
+L
+A
+C
+ 4\pi A \leq L^2 \ . 
+r
+2\pi r = L
+ A \leq \frac{L^2}{4\pi} = \frac{4 \pi^2 r^2}{4\pi} = \pi r^2 \ . 
+A
+C
+ \oint_{\partial D}(Pdx + Qdy) = \int_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)  dxdy\ . 
+(P,Q) = (-y,x)
+D
+C = \partial D
+ A = \frac{1}{2} \oint_{\partial D} (-ydx + xdy) \ . 
+C= \partial D
+ \gamma : [0,L] \longrightarrow \mathbb{R}^2 \ ,\qquad \gamma (s) = (x(s), y(s)) \ . 
+ 0= xy \vert_0^L = \int_0^L x'yds + \int_0^L xy'ds \ , 
+ A = \int_0^L xy'ds = -\int_0^L x'yds \ . 
+C
+[0,L]
+x: [0,L] \longrightarrow \mathbb{R}
+s=0
+s=s_0 \in [0,L]
+q = \gamma (0)
+p = \gamma (s_0)
+x'(0) = x'(s_0) = 0
+p,q
+C
+C
+r = \frac{\| pq \|}{2}
+s
+C
+ \sigma (s) = (\overline{x}(s), \overline{y}(s)) \ , \quad s \in [0, L] \ . 
+\overline{x}(s)^2 + \overline{y}(s)^2 = r^2
+s
+\overline{x}(s) = x(s)
+ \overline{y}(s) = \pm \sqrt{r^2 - \overline{x}(s)^2}
+\sigma (s)
+0\leq s \leq s_0
+s_0 \leq s \leq L
+\overline{A}
+ A = \int_0^L xy'ds = \int_0^L \overline{x}y'ds \qquad \text{and} \qquad \overline{A}= \pi r^2 = -\int_0^L\overline{y}\overline{x}'ds = -\int_0^L\overline{y} x'ds \ . 
+ \begin{align} A + \pi r^2  &= A + \overline{A} = \int_0^L (\overline{x}y' - \overline{y}x')ds \\\             &\leq \int_0^L \vert \overline{x}y' - \overline{y}x'\vert ds     \\\             &= \int_0^L \vert (\overline{x}, \overline{y})\cdot (y', -x')\vert ds   \\\             &\leq \int_0^L \sqrt{\overline{x}^2 + \overline{y}^2} \cdot \sqrt{(y')^2+ (-x')^2}ds \\\             &= \int_0^L rds = rL \ . \end{align} 
+s
+C
+ A + \pi r^2 \leq rL \ . 
+ \sqrt{A\pi r^2} \leq \frac{A + \pi r^2}{2} \leq \frac{rL}{2} \ . 
+ A \pi r^2 \leq \frac{r^2L^2}{4}  \qquad \Longrightarrow \qquad 4\pi A \leq L^2 \ . 
+n
+A
+C
+L
+A\geq \frac{L^2}{4\pi}
+C
+f:[0,2\pi]\to\mathbb C
+C^1
+f
+2\pi
+c_n
+n
+c_n=0
+n\not=0,1
+|c_1|=1
+ \frac{1}{2i}\ \int_0^{2\pi}\ f'(t)\ \overline{f(t)}\ dt =\frac{\pi}{i}\ \sum_{n\in\mathbb Z}\ in\ |c_n|^2 =\pi\ \sum_{n\in\mathbb Z}\ n\ |c_n|^2 \le\pi\ \sum_{n\in\mathbb Z}\ n^2\ |c_n|^2=\pi,  

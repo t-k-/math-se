@@ -1,0 +1,33 @@
+X_n
+n=1,2,3...
+X_0
+\mu
+n
+n+1
+X_n
+p
+n+1
+\mu
+X_n
+n
+X_{n+1} = X_n - D_n + I_n
+\{I_n\}
+\operatorname{Poi}(\mu)
+D_n
+p
+X_n
+\operatorname{Bernoulli}(p)
+D_n \sim \operatorname{Binom}(X_n, p)
+X_n
+X_n
+    \mathbb{E}\left(z^{X_{n+1}}\right) = \mathbb{E}\left(z^{X_{n} - D_n}\right) \underbrace{ \mathbb{E}\left(z^{I_n}\right)}_{\exp(\mu (z-1))} = \exp(\mu (z-1)) \mathbb{E}\left(z^{X_n} \, \mathbb{E}\left(z^{-D_n}|X_n\right)\right) = \\ \exp(\mu (z-1)) \mathbb{E}\left((p+(1-p) z)^{X_n}\right) 
+     \mathcal{P}_{n+1}(z) = \mathrm{e}^{\mu(z-1)} \mathcal{P}_{n}\left(p+(1-p)z\right) \qquad \mathcal{P}_0(z) = \mathrm{e}^{\mu(z-1)} 
+      \mathcal{P}_{n}(z) = \exp\left( \mu (z-1) \frac{1-(1-p)^n}{p}\right) 
+    \mathbb{E}(X_n) = \mu \frac{1-(1-p)^n}{p} 
+X_0
+\mbox{Poisson}(\mu)
+X_1
+\mu (1 - p)
+\mu
+X_n
+\mbox{Poisson}\left(\mu\frac{1 -  (1-p)^{N+1}}{p}\right)

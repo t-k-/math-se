@@ -1,0 +1,18 @@
+x
+a\le x\le b
+0
+cost = \begin {cases} 1,000,000 & x \lt a \\ 0& a \le x \le b \\ 1,000,000 & x \gt b \end {cases}
+T=b-a, t=x-\frac 12(a+b)
+t \in (-\frac T2,\frac T2)
+1
+\int_{-\infty}^{\infty}\exp(2i\pi f t)\frac 1{\pi f}\sin(\pi f t)df
+1-\int_{-\infty}^{\infty}\exp(2i\pi f t)\frac 1{\pi f}\sin(\pi f t)df
+d_a = a-x
+d_b = x-b
+C(d) = g_a(d_a)\cdot I_{\{x<a\}} + g_b(d_b)\cdot I_{\{x>b\}}
+g_a()
+g_b()
+g_a()\neq  g_b()
+x
+g
+g_a(d_a) = c\cdot(a-x)^2, \;\; g_b(d_b) = c\cdot (x-b)^2

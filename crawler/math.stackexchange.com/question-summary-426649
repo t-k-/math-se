@@ -1,0 +1,13 @@
+{\bf x}, {\bf y}, {\bf z}\in \mathbb{R}^d
+ \|{\bf y} - {\bf z}\|\cdot \|{\bf x}\| \leq \|{\bf x} - {\bf y}\|\cdot \|{\bf z}\| + \|{\bf z} - {\bf x}\|\cdot\|{\bf y}\|.
+x,y,
+z
+x,y,
+z
+a = x/\Vert x\Vert^2
+b=y/\Vert y\Vert^2
+c = z/\Vert z\Vert^2
+\left\Vert x-y\right\Vert=\frac{\left\Vert a-b\right\Vert}{\Vert a\Vert\Vert b\Vert}
+\left\Vert z-x\right\Vert=\frac{\left\Vert c-a\right\Vert}{\Vert c\Vert\Vert a\Vert}
+\left\Vert y-z\right\Vert=\frac{\left\Vert b-c\right\Vert}{\Vert b\Vert\Vert c\Vert}
+\left\Vert y-z\right\Vert\Vert x\Vert=\frac{\left\Vert b-c\right\Vert}{\Vert a\Vert\Vert b\Vert\Vert c\Vert}\\\leq\frac{\left\Vert a-b\right\Vert}{\Vert a\Vert\Vert b\Vert\Vert c\Vert}+\frac{\left\Vert c-a\right\Vert}{\Vert a\Vert\Vert b\Vert\Vert c\Vert}\\=\left\Vert x-y\right\Vert\Vert z\Vert + \left\Vert z-x\right\Vert\Vert y\Vert,

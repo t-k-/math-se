@@ -1,0 +1,6 @@
+T(f(t)) = \int_0^t f(s)ds
+t \in [0,1]
+f(t) \in C[0,1]
+\|T^n\| = \frac{1}{n!}
+f\in C[0,1]
+ \|T^n\| = \sup_{\|f\|=1} \|T^nf\| = \sup_{\|f\| =1}\sup_{s_{n+1}\in [0,1]} \left|\int^{s_n=s_{n+1}}_0\cdots\int^{s_2}_0 f(s_1) \,ds_1\cdots ds_n\right| \\ \leq \sup_{\|f\| =1}\sup_{s_{n+1}\in [0,1]}  \int^{s_n=s_{n+1}}_0\cdots\int^{s_2}_0 \sup_{s_1\in[0,s_2]}|f(s_1)| \,ds_1\cdots ds_n \\ \underbrace{\leq}_{\text{Why this inequality is true?}} \sup_{s_{n+1}\in [0,1]}  \int^{s_n=s_{n+1}}_0\cdots\int^{s_2}_0 1\,ds_1\cdots ds_n = \sup_{s_{n+1}\in [0,1]} \frac{s_{n+1}^n}{n!}. 

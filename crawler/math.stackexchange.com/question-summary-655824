@@ -1,0 +1,11 @@
+( 1 + x + ... + x^{m-1} )^k
+a_n
+a_n=0
+n>(m-1)k
+j-mi=n\Rightarrow j=n+mi
+(1+x+...+x^{m-1})^k=\sum_{n=0}^{(m-1)k}a_nx^n=\sum_{n=0}^{\infty}a_nx^n
+(1+x+...+x^{m-1})^k=\left(\frac{1-x^m}{1-x}\right)^k=(1-x^m)^k(1-x)^{-k}=
+=\sum_{i=0}^{k}\binom{k}{i}(-x^m)^i\sum_{j=0}^{\infty}\binom{k+j-1}{j}x^j=
+=\sum_{i=0}^{k}\sum_{j=0}^{\infty}(-1)^i\binom{k}{i}\binom{k+j-1}{j}x^{j-mi}=
+=\sum_{n=0}^{\infty}\sum_{i=0}^{k}(-1)^i\binom{k}{i}\binom{k+n+mi-1}{n+mi}x^{n}
+a_n=\sum_{i=0}^{k}(-1)^i\binom{k}{i}\binom{k+n+mi-1}{k-i}

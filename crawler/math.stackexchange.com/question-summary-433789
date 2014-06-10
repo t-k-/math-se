@@ -1,0 +1,23 @@
+\left\{a_n\right\}
+\left\{b_n\right\}
+\begin{align*}A_n=\sum _{k=0}^n a_k~~~(1)\end{align*}
+n\geq 0
+A_{-1}=0
+0\leq p\leq q
+\begin{align*}\sum _{n=p}^q a_nb_n=\sum _{n=p}^{q-1} A_n\left(b_n-b_{n+1}\right)+\color{blue}{A_qb_q}\color{red}{-}\color{blue}{A_{p-1}b_p}.~~~(2)\end{align*}
+\int f dg=f g-\int f dg
+\int _a^bF(x)g(x)dx=F(b)G(b)-F(a)G(a)-\int _a^bf(x)G(x)dx
+\begin{align*}\sum _{n=p}^q a_nb_n=\sum _{n=p}^q \left(A_n-A_{n-1}\right)b_n=\sum _{n=p}^q A_nb_n-\sum _{n=p-1}^{q-1} A_nb_{n+1}~~~(4)\end{align*}
+A_n
+0
+n
+p=5
+ A_n=\sum_{k=1}^na_k\quad\text{and}\quad F(x)=\int_a^xf(t)\,\mathrm{d}t 
+ \sum_{k=m}^na_kb_k =A_nb_n-A_{m-1}b_m-\sum_{k=m}^{n-1}A_k(b_{k+1}-b_k) 
+ \int_a^bf(x)g(x)\,\mathrm{d}x=F(b)g(b)-F(a)g(a)-\int_a^bF(x)g'(x)\,\mathrm{d}x 
+ \begin{align} \sum_{k=m}^na_kb_k &=\sum_{k=m}^n(A_k-A_{k-1})b_k\\ &=\sum_{k=m}^nA_kb_k-\sum_{k=m}^nA_{k-1}b_k\\ &=\sum_{k=m}^nA_kb_k-\sum_{k=m-1}^{n-1}A_kb_{k+1}\\ &=A_nb_n+\sum_{k=m}^{n-1}A_kb_k-A_{m-1}b_m-\sum_{k=m}^{n-1}A_kb_{k+1}\\ &=A_nb_n-A_{m-1}b_m+\sum_{k=m}^{n-1}A_k(b_k-b_{k+1}) \end{align} 
+A_n
+A_n
+C
+ \sum_{k=5}^na_kb_k =A_nb_n-A_4b_5-\sum_{k=5}^{n-1}A_k(b_{k+1}-b_k) 
+ \begin{align} &(A_n+C)b_n-(A_{m-1}+C)b_m-\sum_{k=m}^{n-1}(A_k+C)(b_{k+1}-b_k)\\ &=A_nb_n-A_{m-1}b_m-\sum_{k=m}^{n-1}A_k(b_{k+1}-b_k)\\ &+C\left(b_n-b_m-\sum_{k=m}^{n-1}(b_{k+1}-b_k)\right)\\ &=A_nb_n-A_{m-1}b_m-\sum_{k=m}^{n-1}A_k(b_{k+1}-b_k)\\ &+C(b_n-b_m-(b_n-b_m))\\ &=A_nb_n-A_{m-1}b_m-\sum_{k=m}^{n-1}A_k(b_{k+1}-b_k) \end{align} 

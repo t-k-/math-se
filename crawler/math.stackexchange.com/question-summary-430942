@@ -1,0 +1,43 @@
+H_q(P(X))=\frac{1}{1-q}\log\int p^q(x)dx
+q\to 1
+I(X;Y)=H_q(P(X))+H_q(P(Y))-H_q(P(X,Y))
+q=1
+I(X,Y)
+X
+Y
+I(X,Y):=D_{KL}(p_{XY}||p_Xq_Y),
+D_{KL}(p_{XY}||p_Xq_Y),
+p_{XY}
+p_Xq_Y
+X
+Y
+I(X,Y)
+H(X)
+H(Y)
+X
+Y
+H(X|Y)
+I(X,Y)=H(X)+H(Y)-H(X|Y).
+\alpha
+H_{\alpha}(X)=\frac{1}{1-\alpha}\log\int p^{\alpha}_X(x)dx
+X
+g(x)
+f(x)
+D_{\alpha}(f||g):=\frac{1}{\alpha-1}\log\int f(x)\left(\frac{f(x)}{g(x)}\right)^{\alpha-1}dx.
+D_{\alpha}(f||g)\geq 0 \forall ~f, g, \text{and}~\alpha>0,~~(*)
+\lim_{\alpha\rightarrow 1}D_{\alpha}(f||g)=D_{1}(f||g)=D_{KL}(f||g).~~(*)
+I_{\alpha}(X,Y)
+p_{XY}
+X
+Y
+p_X
+q_Y
+I_{\alpha}(X,Y):=D_{\alpha}(p_{XY}||p_Xq_Y).
+\lim_{\alpha\rightarrow 1}I_{\alpha}(X,Y)=I(X,Y),
+(**)
+\lim_{\alpha\rightarrow 1}H_{\alpha}(X)=H(X):
+(*)
+I_{\alpha}(X,Y)=H_{\alpha}(X)+H_{\alpha}(Y)-H_{\alpha}(X|Y),
+\frac{1}{1-\alpha}
+0<\alpha<1
+\alpha>1

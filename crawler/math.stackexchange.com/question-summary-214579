@@ -1,0 +1,7 @@
+ \lim_{x \to 0}\frac{x^3 - \sin^3x}{x - \ln{(1+x)} - 1 + \cos x} = 0 
+\dfrac{x^3 - \sin^3(x)}{x - \ln(1+x) - 1 + \cos(x)} = \dfrac{x - \sin(x)}{x} \times \dfrac{x^2 + x \sin(x) + \sin^2(x)}{1 - \dfrac{\ln(1+x)}{x}- \dfrac{1-\cos(x)}{x}}
+1 - \dfrac{\ln(1+x)}{x}- \dfrac{1-\cos(x)}{x} = 1 - \left(1 - \dfrac{x}2 +\dfrac{x^2}3 - \cdots \right) - \left( \dfrac{\dfrac{x^2}{2!} - \dfrac{x^4}{4!} + \cdots}{x} \right) \\ = \left(\dfrac{x}2 - \dfrac{x^2}3 + \cdots \right) - \left(\dfrac{x}2 - \dfrac{x^3}{4!} + \cdots \right) = -\dfrac{x^2}3 + \mathcal{O}(x^4)
+\dfrac{x - \sin(x)}{x} = \dfrac{x^2}{3!} + \mathcal{O}(x^4)
+\dfrac{x^3 - \sin^3(x)}{x - \ln(1+x) - 1 + \cos(x)} = \left(\dfrac{x^2}{3!} + \mathcal{O}(x^4) \right) \times \dfrac{x^2 + x \sin(x) + \sin^2(x)}{-\dfrac{x^2}3 + \mathcal{O}(x^4)}
+x^3-\sin^3x=(x-\sin x)(x^2+x\sin x+\sin^2x)\approx\frac{x^3}{6}(3x^2)=\displaystyle\frac{x^5}{2}
+x\to 0

@@ -1,0 +1,41 @@
+Y=B_1 + B_2 +...+B_n
+B_1...B_n
+B_i
+p
+p(1-p)
+1-p+pe^t
+E(Y)
+Var(Y)
+Y
+E(Y)
+\sum_{i=1}^{n}
+Y$$*$$pmf
+\sum_{i=1}^{n}
+(B_1 + B_2 + ... B_n)*pmf
+n(1-p)
+*
+Var(Y)
+Var(Y)
+Var(Y)=E(Y^2)-[E(Y)]^2
+M_Y(t)
+E(Y^2)
+\sum_{i=1}^{n}
+(B_1^2 + B_2^2 + ... B_i^2) * pmf
+M_Y(t)
+=
+E(e^{tY})
+\sum_{i=1}^{n}
+e^{tY} * pmf
+M_Y(t)
+=
+\sum_{i=1}^{n}
+[e^{tB_1} * e^{tB_2} * ... e^{tB_n}] * pmf
+B_i
+Y
+B_i
+B_i
+\exp(B_i t)
+Y
+{\rm E}[Y] = {\rm E}\sum_{i=1}^n B_i = \sum_{i=1}^n {\rm E}[B_i] = \sum_{i=1}^n p = np.
+{\rm Var}[Y] = \sum_{i=1}^n {\rm Var}[B_i] = \sum_{i=1}^n p(1-p) = np(1-p).
+\begin{align*} M_Y(t) &= {\rm E}[e^{Yt}] = {\rm E}\left[\exp \sum_{i=1}^n B_i t \right] \\ &= {\rm E}\left[ \prod_{i=1}^n e^{B_i t} \right] \\ &= \prod_{i=1}^n {\rm E}[e^{B_i t}] \\ &= \prod_{i=1}^n M_{B_i}(t) \\ &= (1 - p + pe^t)^n. \end{align*}

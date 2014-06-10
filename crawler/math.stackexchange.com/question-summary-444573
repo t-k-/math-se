@@ -1,0 +1,33 @@
+ x^2 \partial_x^2 \log(x^2 +y^2) 
+ u(r, \theta) 
+ r^2 F(\theta) 
+ \theta 
+  \partial_x^2 u + \partial_y^2 u = -\frac{2 x^2 (x^2-y^2)}{\left(x^2+y^2\right)^2} 
+ -2 \cos(\theta)^2 \cos(2 \theta)  
+ \partial_r^2 + \frac{1}{r}\partial_r + \frac{1}{r^2} \partial_\theta^2 
+ F(\theta) 
+ \theta \sin (2 \theta) 
+ F(\theta) = \frac{1}{24} (-3 - 3 \cos(2 \theta) + \cos(4 \theta) - 6 \theta \sin(2 \theta)) 
+0
+r^2\log r
+r^2
+\theta\sin 2\theta
+u(r)=r^2F(\theta)+r^2\log r\,G(\theta) \tag1
+F''+4F+4G=-2\cos^2 \theta \, \cos 2\theta,\qquad G''+4G=0 \tag2
+F(\theta)=\frac{1}{24} \cos4\theta, \qquad   G(\theta)=-\frac14\cos 2\theta \tag3
+\Delta u
+u\in C^2
+\begin{cases}p=x+iy\\q=x-iy\end{cases}
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial x}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial x}=\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}
+\dfrac{\partial^2u}{\partial x^2}=\dfrac{\partial}{\partial x}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)=\dfrac{\partial}{\partial p}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)\dfrac{\partial p}{\partial x}+\dfrac{\partial}{\partial q}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)\dfrac{\partial q}{\partial x}=\dfrac{\partial^2u}{\partial p^2}+\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}=\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}
+\dfrac{\partial u}{\partial y}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial y}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial y}=i\dfrac{\partial u}{\partial p}-i\dfrac{\partial u}{\partial q}
+\dfrac{\partial^2u}{\partial y^2}=\dfrac{\partial}{\partial y}\left(i\dfrac{\partial u}{\partial p}-i\dfrac{\partial u}{\partial q}\right)=\dfrac{\partial}{\partial p}\left(i\dfrac{\partial u}{\partial p}-i\dfrac{\partial u}{\partial q}\right)\dfrac{\partial p}{\partial y}+\dfrac{\partial}{\partial q}\left(i\dfrac{\partial u}{\partial p}-i\dfrac{\partial u}{\partial q}\right)\dfrac{\partial q}{\partial y}=-\dfrac{\partial^2u}{\partial p^2}+\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial pq}-\dfrac{\partial^2u}{\partial q^2}=-\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}-\dfrac{\partial^2u}{\partial q^2}
+\therefore\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}-\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}-\dfrac{\partial^2u}{\partial q^2}=-\dfrac{2\left(\dfrac{p+q}{2}\right)^2\left(\left(\dfrac{p+q}{2}\right)^2-\left(\dfrac{p-q}{2i}\right)^2\right)}{(pq)^2}
+4\dfrac{\partial^2u}{\partial pq}=-\dfrac{2\times\dfrac{(p+q)^2}{4}\left(\dfrac{(p+q)^2}{4}+\dfrac{(p-q)^2}{4}\right)}{p^2q^2}
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{(p+q)^2((p+q)^2+(p-q)^2)}{32p^2q^2}
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{2(p+q)^2(p^2+q^2)}{32p^2q^2}
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{(p^2+2pq+q^2)(p^2+q^2)}{16p^2q^2}
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{p^4+2p^3q+2p^2q^2+2pq^3+q^4}{16p^2q^2}
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{p^2}{16q^2}-\dfrac{p}{8q}-\dfrac{1}{8}-\dfrac{q}{8p}-\dfrac{q^2}{16p^2}
+u(p,q)=f(p)+g(q)+\dfrac{p^3}{48q}-\dfrac{p^2\ln q}{16}-\dfrac{pq}{8}-\dfrac{q^2\ln p}{16}+\dfrac{q^3}{48p}
+u(x,y)=f(x+iy)+g(x-iy)+\dfrac{(x+iy)^3}{48(x-iy)}-\dfrac{(x+iy)^2\ln(x-iy)}{16}-\dfrac{x^2}{8}-\dfrac{y^2}{8}-\dfrac{(x-iy)^2\ln(x+iy)}{16}+\dfrac{(x-iy)^3}{48(x+iy)}

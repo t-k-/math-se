@@ -1,0 +1,39 @@
+ F(x,y) = 1 - e^{-x-y}, x,y \geq 0 
+0
+1
+ \lim_{x_{1},...,x_{n}\rightarrow+\infty}F(x_{1},...,x_{n})=1 
+ \frac{\partial^2F}{\partial x\, \partial y} = f_{X,Y}(x,y) 
+ \frac{\partial^2F}{\partial x\, \partial y} = - e^{-x-y} \leq 0 
+F
+X
+Y
+P(X \leq x, Y \leq y) = F(x,y)
+x = 0
+\lim_{y\rightarrow \infty} F(0,y) = \lim_{y\rightarrow \infty}1 - e^{-y} = 1
+x_{0} < 0
+\lim_{y\rightarrow \infty}F(x_{0}, y) = 0
+F(x,y)
+P(X = 0) = 1
+P(Y = 0) = 1
+(X,Y)
+(0,0)
+F
+x_1 < x_2 \in \mathbb{R}
+y_1 < y_2 \in \mathbb{R}
+F(x_2,y_2) - F(x_2,y_1) - F(x_1, y_2) + F(x_1,y_1) = P(x_1 <  X \leq x_2, y_2 < Y \leq y_2) \geq 0
+\left\{(x,y) : x \leq x_2, y \leq y_2\right\}
+F(x_2, y_2)
+(X,Y)
+F(x_1, y_2) = P(X \leq x_1, y \leq y_2)
+F(x_2, y_1) = P(X \leq x_2, y \leq y_1)
+F(x_1, y_2)
+F(x_2, y_1)
+P(x_1 < X \leq x_2, y_1 < Y \leq Y_2)
+\left\{(x,y) : x \leq x_1, y \leq y_1\right\}
+(X,Y)
+F(x_1, y_1)
+F(x_1, y_1)
+P(x_1 < X \leq x_2, y_1 < Y \leq y_2) = F(x_2, y_2) - F(x_1, y_2) - F(x_2, y_1) + F(x_1, y_1)
+F(x,y) = 1 - e^{-x-y}
+x_1 = y_1 = 0
+x_2 = y_2 = \infty

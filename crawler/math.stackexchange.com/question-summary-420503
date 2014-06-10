@@ -1,0 +1,56 @@
+[a,b]^n = (a^{-1} b^{-1})^n (ab)^n c
+c
+n-1
+a,b
+[a,b] := a^{-1} b^{-1} a b
+c
+\langle a,b\rangle
+c
+n^2
+n=2
+n \geq 3
+x
+\gamma_3
+[x,y]^n = (x^{-1} y^{-1})^n (xy)^n [y,x]^{\binom{n}{2}} [[y,x],x]^{\binom{n}{3}} \cdots
+[y,x]^n = [y^n,x] [[x,y],y]^{\binom{n}{2}} [[[x,y],y],y]^{\binom{n}{3}} \cdots
+[a,b]^n
+\tfrac{n}{2} + 1
+\tfrac{n}{2}+1
+[a,b]^3 = [b^a,a^{-1} b^a b^{-1}][bab^{-1},b^2]
+n=2
+(ab)^2 = abab = aab[b,a]b = a^2 b^2 [b,a] [[b,a],b]
+n=3
+\gamma_4
+[b,a,b,b]
+\begin{array}{ll} (ab)^3 &= ababab \\ &= aab[b,a]bab \\ &= aab[b,a]ab[b,a]b \\ &= aaba[b,a][[b,a],a]b[b,a]b \\ &= aaab[b,a]^2[[b,a],a]b[b,a]b \\ &= a^3b[b,a]^2 b [[b,a],a] [[[b,a],a],b] [b,a] b \\ &= a^3b^2 [b,a][b,a,b][b,a][b,a,b][[b,a],a] [[[b,a],a],b] [b,a] b \\ &= a^3 b^3 [b,a][b,a,b][b,a,b][b,a,b,b][b,a][b,a,b][b,a,b] \\ &\quad [b,a,b,b][b,a,a][b,a,a,b][b,a,a,b][b,a,a,b,b][b,a][b,a,b] \end{array}
+(ab)^3 = a^3 b^3 [b,a]^3 [b,a,b]^5 [b,a,a]^1 \mod \gamma_4
+n
+(ab)^n = a^n b^n [b,a]^{\binom{n}{2}} [b,a,a]^{\binom{n}{3}} [b,a,b]^{2\binom{n}{3}+\binom{n}{2}} \mod \gamma_4
+[b,a,a,\ldots,a]
+\binom{n}{k}
+(ab)^3 = a^3 b^3 [ {(ab)}^{-1} b^2, b^{-1} (ab)^2 ]
+(ab)^3 = (ba)^3 [aba,bab]
+a=x^{-1} y^{-1}
+b=xy
+[G:Z(G)]
+G'
+[a,b]^n = (ba)^{-n} (ab)^n u
+u
+n-1
+n
+n=1
+\begin{array}{ll} [a,b]^n &= [a,b] [a,b]^{n-1} \\ &= [a,b] (ba)^{1-n} (ab)^{n-1} u_{n-2} \\ &= (ba)^{-1}(ab) (ba)^{1-n} (ab)^{n-1} u_{n-2} \\ &= (ba)^{-1}(ba)^{1-n} (ab)^{n-1} (ab) [ (ab), (ba)^{1-n} (ab)^{n-1} ] u_{n-2} \\ &= (ba)^{-n} (ab)^n u_{n-1} \end{array}
+n=[G:Z(G)]
+(ba)^{-n} (ab)^n = 1
+(ab)^n \in Z(G)
+(ab)^n = ((ba)^b)^n = ((ba)^n)^b = (ba)^n
+[a,b]^n
+n-1
+n
+n
+xyx = x^2 y^x
+n
+n^2
+n^3
+|G'| \leq [G:Z(G)]^3
+|G'| \leq 3[G:Z(G)]^2

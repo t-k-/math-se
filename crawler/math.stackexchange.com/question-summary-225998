@@ -1,0 +1,8 @@
+f\in C^1([0,\infty),\mathbb{R})
+F(x)=\max_{x\leq y\leq 2x}|f(y)|
+ \int_{0}^{\infty}F(x)dx\leq \int_{0}^{\infty}|f(x)|dx+\int_{0}^{\infty}x|f'(x)|dx  
+\dfrac{1}{x}
+x
+\left \vert \dfrac{1}{x} \displaystyle \int_{x}^{2x}f(y)dy \right \vert\leq F(x) 
+ f(x)=\frac{1}{x}\int_{x}^{2x}(f(x)-f(y))dy+\frac{1}{x}\int_{x}^{2x}f(y)dy\\ =\frac{1}{x}\int_{x}^{2x}f(y)dy-\frac{1}{x}\int_{x}^{2x}\int_{x}^{y}f'(z)dz 
+ \dfrac{1}{x}\int_{x}^{2x}f(y)dy=2f(2x)-f(x)+\frac{1}{x}\int_{x}^{2x}yf'(y)dy 

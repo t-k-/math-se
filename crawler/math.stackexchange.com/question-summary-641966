@@ -1,0 +1,6 @@
+f(\alpha)=\int_0^\alpha [b-c \Phi^{-1}(1-\beta)] d\beta
+\Phi(u) = \frac12 \left [1+\operatorname*{erf}{\left (\frac{u}{\sqrt{2}} \right )} \right ] 
+u = \Phi^{-1}(1-\beta)
+d\beta = -\Phi'(u) du = -\frac1{\sqrt{2 \pi}} e^{-u^2/2} du
+\frac1{\sqrt{2 \pi}}\int_{\Phi^{-1}(1-\alpha)}^{\infty} du \, (b-c u) e^{-u^2/2}
+\alpha b - \frac{c}{\sqrt{2 \pi}} e^{-\left [\Phi^{-1}(1-\alpha) \right ]^2/2}

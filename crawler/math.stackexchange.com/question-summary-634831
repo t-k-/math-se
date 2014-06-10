@@ -1,0 +1,13 @@
+1-\prod_{i=0}^{k-1}\left(1-\frac{i}{2^k}\right).
+1-\prod_{i=0}^{k-1}e^{-i/2^k} = 1-e^{-k(k-1)/2^{k+1}} \approx \frac{k(k-1)}{2^{k+1}}.
+k\geqslant0
+a_i
+[0,1]
+a_i=i/2^k
+s_k=k(k-1)/2^{k+1}
+k\to\infty
+s_k\to0
+s_k=k(k-1)/2^{k+1}
+1-s_k\leqslant\prod_{i=0}^{k-1}\left(1-a_i\right)\leqslant1-s_k+s_k^2,\quad \text{where}\quad s_k=\sum_{i=0}^{k-1}a_i. 
+ \frac{k(k-1)}{2^{k+1}}-\left(\frac{k(k-1)}{2^{k+1}}\right)^2\leqslant1-\prod_{i=0}^{k-1}\left(1-\frac{i}{2^k}\right)\leqslant\frac{k(k-1)}{2^{k+1}}. 
+\sum_{i=0}^{k-1} \log(1-i/2^k) \sim \int_0^{k-1} \log(1-x/2^{k}) d x= 2^k k \log (2)-(k-1) (k \log (2)+1)+\left(k-2^k-1\right) \log    \left(-k+2^k+1\right).

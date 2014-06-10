@@ -1,0 +1,9 @@
+k
+n
+S=1^{k}+2^{k}+3^{k}+\dots+n^{k}
+f[k][n]=f[k][n-1]+(f[k-1][n]-f[k-1][n-1])\cdot n
+f[k][n] = 1^k+2^k+\dots+n^k
+n^{k-1} = (f[k-1][n]-f[k-1][n-1])
+n
+n^k=(f[k-1][n]-f[k-1][n-1])\cdot n
+f[k][n-1]+n^k = f[k][n]

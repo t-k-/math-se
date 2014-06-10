@@ -1,0 +1,35 @@
+a_1=2
+a_2=4
+a_{n+2}=5a_{n+1}-6a_n
+n\geq 1
+a_n=2^n
+n
+a_{n+2} = 2^{n+2}
+a_{n+1} = 2^{n+1}
+n
+a_{n+3} = 2^{n+3}
+n
+a_1 = 2^1
+a_2 = 2^2
+a_{n+2} = 2^{n+2}
+a_{n+1} = 2^{n+1}
+a_{n+3} = 5*a_{n+2} - 6*a_{n+1} = 5*2^{n+2} - 6*2^{n+1}
+5*2^{n+2} - 6*2^{n+1} =2*(5*2^{n+1})- (5*2^{n+1}) - 2^{n+1}
+2*(5*2^{n+1})- (5*2^{n+1}) - 2^{n+1} =(5*2^{n+1})(2 - 1) - 2^{n+1} = (5*2^{n+1}) - 2^{n+1} 
+ (5*2^{n+1}) - 2^{n+1} = 4*2^{n+1} = 2*2^{n+2} = 2^{n+3} 
+a_{n+2} = 2^{n+2}
+a_{n+1} = 2^{n+1}
+a_{n+3} = 5*a_{n+2} - 6*a_{n+1}
+a_{n+3} = 2^{n+3}
+a_k=2^k
+k=1,2,\dots,n
+n
+2
+\begin{align*} a_{n+1}&=5a_n-6a_{n-1}&&\text{by the given recurrence}\\ &=5\cdot2^n-6\cdot2^{n-1}&&\text{by the induction hypothesis}\\ &=5\cdot2\cdot2^{n-1}-6\cdot2^{n-1}&&\text{to get a common factor}\\ &=(10-6)2^{n-1}&&\text{pulling out the common factor}\\ &=\ldots \end{align*}
+b_n=2^n
+(b_n)
+a_1=2
+b_2=4
+b_{n+2}=5b_{n+1}-6b_{n}
+n \ge 3
+5b_{n+1}-6b_n=5\cdot 2^{n+1}-6\cdot 2^n=2^n[10-6]=2^{n+2}=b_{n+2}.

@@ -1,0 +1,11 @@
+\displaystyle \text{Let } a_1, a_2, ..., a_n \in \mathbb{R}
+\displaystyle \text{ Calculate } \det A \text{ where }
+\displaystyle A=(a_{ij})_{1\leqslant i,j\leqslant n} \text{ and }
+\displaystyle \lbrace_{\alpha_{ij}=0,\text{ otherwise}}^{\alpha_{ij}=a_i,\text{ for } i+j=n+1}
+\displaystyle A=(a_{ij})_{1\leqslant i,j\leqslant n}
+A
+\det A=\sum_{\sigma\in S_n}\epsilon(\sigma)\prod_{i=1}^n a_{i\sigma(i)}
+\sigma=\left(\begin{matrix}1&2&\cdots&n\\ n&n-1&\cdots&1\end{matrix}\right)
+\epsilon(\sigma)=(-1)^{(n-1)+(n-2)+\cdots+1}=(-1)^{\frac{n(n-1)}{2}}
+\det A= (-1)^{\frac{n(n-1)}{2}}a_1\times \cdots\times a_n
+n

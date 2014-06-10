@@ -1,0 +1,26 @@
+0,3i
+-4
+\bigg|\displaystyle \int_C(e^z-\overline{z})dz\bigg| \leq 60 
+\,z=x+iy\,
+|e^z-\overline z|^2=|e^xe^{iy}-(x-iy)|^2=|(e^x\cos y-x)+(e^x\sin y+y)i|^2=
+=e^{2x}(\cos^2y+\sin^2y)-2xe^x\cos y+x^2+2ye^x\sin y+y^2=
+=e^{2x}-2e^x(x\cos y-y\sin y)+x^2+y^2
+-4\leq x\leq 0\;\;,\;\;0\leq y\leq \frac{3}{4}x+3\leq 3\,\,\,,\,\,\text{so:}
+|e^z-\overline z|^2\leq 1+2(0+3))+9= 16\Longrightarrow|e^z-\overline z|\leq 4
+\left|\int_C|e^z-\overline z|\,dz\right|\leq \max_C|e^z-\overline z|\cdot 12=48
+e^z
+C
+C
+3+4+5=12
+|\bar{z}|\le4
+C
+ \int_Ce^z\,\mathrm{d}z=0 
+ \left|\int_C(e^z-\bar{z})\,\mathrm{d}z\right|=\left|\int_C\bar{z}\,\mathrm{d}z\right|\le\int_C|\bar{z}|\,\mathrm{d}s\le4\cdot12=48<60 
+\int\limits_C(e^z-z)dz=0,
+f(z)=e^z-z
+\mathbb{C}.
+C_3 =\{z=x+iy: \quad  -4 \leqslant x \leqslant 0, \, y=0 \}
+(z=x+iy)
+I\overset{def}=\displaystyle  \int\limits_C(e^z-\overline{z})dz= \int\limits_C(e^z-z+z -\overline{z})dz= \int\limits_C(e^z-z)dz+\int\limits_C(z -\overline{z})dz= \int\limits_C(z -\overline{z})dz=i \int\limits_C \Im(z -\overline{z})dz=2i \int\limits_C \Im (z) \ dz =2i \int\limits_{C_1\cup C_2\cup C_3} \Im (z) \ dz .
+\int\limits_{C_3} \Im (z) \ dz=0 .
+\left|I\right| \leqslant 2\left|\int\limits_{C_1\cup C_2} \Im(z) dz\right|  \leqslant 2 \int\limits_{C_1\cup C_2} |y|\cdot|dz| \leqslant 2 \cdot \max\limits_{C_1\cup C_2}(|y|)\int\limits_{C_1\cup C_2} |dz|= \\ 2\cdot{3}\cdot{\operatorname{length}(C_1\cup C_2)}=2\cdot{3}\cdot (3+5)=48.

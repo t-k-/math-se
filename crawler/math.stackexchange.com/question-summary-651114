@@ -1,0 +1,50 @@
+a_n
+0
+b_n
+a_nb_n
+\lim_{x \to \infty } {x_n}=0
+0
+1
+0
+x_n
+\lim_{x \to \infty}\frac{x_{n+1}}{{x_n}} = 1
+\lim_{x \to \infty } n{x_n}^2 = \lim_{x \to \infty }\frac{n}{(\frac{1}{x_n})^2}=\lim_{x \to \infty }\frac{n+1-n}{(\frac{1}{x_{n+1}})^2-(\frac{1}{x_n})^2}= \lim_{x \to \infty }\frac{(x_n)^2(x_{n+1})^2}{(x_n)^2-(x_{n+1})^2} =
+=\lim_{x \to \infty }\frac{(x_n)^4(1-(x_{n})^2)^2}{(x_n)^4(1+\frac{x_{n+1}}{x_n})} =\frac{1}{2}
+0\lt x_k\lt1
+0\lt x_k^2\lt1
+x_{k+1}=x_k(1-x_k^2)
+0\lt x_{k+1}\lt1
+x_k^3\gt0
+x_{k+1}=x_k-x_k^3\lt x_k
+x_k
+0
+\lim\limits_{k\to\infty}x_k
+(1)
+\lim\limits_{k\to\infty}x_k=0
+ \lim_{k\to\infty}x_k=\lim_{k\to\infty}x_{k+1}=\lim_{k\to\infty}x_k-\left(\lim_{k\to\infty}x_k\right)^3\tag{1} 
+x_{k+1}=x_k-x_k^3
+x_k
+(2)
+(3)
+\displaystyle\lim_{k\to\infty}a_k=b\implies\lim_{n\to\infty}\frac1n\sum_{k=1}^na_k=b
+(4)
+ \begin{align} \lim_{k\to\infty}\frac{x_{k+1}}{x_k} &=\lim_{k\to\infty}\left(1-x_k^2\right)\\ &=1\tag{2} \end{align} 
+ \begin{align} \frac1{x_{k+1}^2}-\frac1{x_k^2} &=\frac{x_k^2-x_{k+1}^2}{x_k^2x_{k+1}^2}\\ &=\frac{(x_k-x_{k+1})(x_k+x_{k+1})}{x_k^2x_{k+1}^2}\\ &=\frac{x_k^3(x_k+x_{k+1})}{x_k^2x_{k+1}^2}\\ &=\frac{x_k^2}{x_{k+1}^2}+\frac{x_k}{x_{k+1}}\tag{3} \end{align} 
+ \lim_{k\to\infty}\frac1{x_{k+1}^2}-\frac1{x_k^2}=2\tag{4} 
+ \lim_{n\to\infty}\frac1{nx_{n+1}^2}=2\tag{5} 
+ \lim_{n\to\infty}nx_n^2=\frac12\tag{6} 
+x_n > 0
+n
+x_n
+ \frac{x_{n+1}}{x_n} = 1 - x_n^2 
+ n x_n^2 = n\left( 1 - \frac{x_{n+1}}{x_n} \right) 
+x_n\searrow 0
+x_n^3=o(x_n)
+x_{n+1}\operatorname*{\sim}_{n\to\infty}x_n
+\frac{x_{n+1}}{x_n} \xrightarrow[n\to\infty]{} 1
+\frac{x_{n+1}}{x_n}\operatorname*{=}_{n\to\infty} 1 + \varepsilon_n + o(\varepsilon_n)
+\varepsilon_n
+Cn^{-\alpha}
+\alpha > 0
+\varepsilon_n
+ n x_n^2 \operatorname*{\sim}_{n\to\infty}n\varepsilon _n 

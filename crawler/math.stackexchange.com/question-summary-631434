@@ -1,0 +1,14 @@
+u=x^2
+u=\sqrt{1-x^2}
+\int\frac{x^2}{\sqrt{1-x^2}}~dx
+x = \sin(u)
+dx = \cos(u) du
+\int\frac{x^2}{\sqrt{1 - x^2}} dx = \int \frac{\sin^2(u)}{\sqrt{1 - \sin^2(u)}} \cdot \cos(u) du = \int\frac{\sin^2(u)}{\cos(u)} \cdot \cos(u) du = \int \sin^2(u) du
+\frac{1}{2} \cdot (u - \sin(u) \cos(u))
+\frac{1}{2} \cdot \left(\sin^{-1}(x) - \sin(\sin^{-1}(x)) \cos(\sin^{-1}(x))\right) = \frac{1}{2}\cdot \left(\sin^{-1}(x) - \frac{x}{\sqrt{1 - x^2}}\right)
+\color{red}{\int\frac{x^2}{\sqrt{1 - x^2}} dx = \frac{1}{2}\cdot \left(\sin^{-1}(x) - \frac{x}{\sqrt{1 - x^2}}\right)}
+\sin(\sin^{-1}(x)) = x\,, \textrm{and}\, \cos(\sin^{-1}(x)) = \frac{1}{\sqrt{1 - x^2}}
+\frac{x^2}{\sqrt{1-x^2}}=\frac{-(1-x^2)+1}{\sqrt{1-x^2}}=\frac{1}{\sqrt{1-x^2}}-\sqrt{1-x^2}
+x=\sin \theta
+\mathrm dx=\cos \theta\mathrm d\theta
+\int \frac{\sin^2 \theta .\cos \theta }{\cos \theta}\mathrm d\theta.

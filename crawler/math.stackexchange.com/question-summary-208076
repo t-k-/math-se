@@ -1,0 +1,56 @@
+\sigma\in S_n
+\sigma
+w(\sigma)
+1\mapsto 2, 2\mapsto 4, 3\mapsto 3, 4\mapsto 1, 5\mapsto 5
+(124)(3)(5)
+w(\sigma)=3
+A_n=\sum_{\sigma\in S_n}w(\sigma)
+A_n=n!+(n-1)!\left[\frac{A_{n-1}}{(n-1)!}+\frac{A_{n-2}}{(n-2)!}+\ldots+\frac{A_{1}}{1!}\right]
+A_n
+b_n=\dfrac{A_n}{n!}
+b_n=1+\frac1n\sum_{k=1}^{n-1}b_k\;,\tag{1}
+b_1=1
+\begin{align*} &b_1=1\\ &b_2=1+\frac12\cdot1=\frac32\\ &b_3=1+\frac13\left(1+\frac32\right)=\frac{11}6\\ &b_4=1+\frac14\left(1+\frac32+\frac{11}6\right)=\frac{25}{12} \end{align*}
+(1)
+\begin{align*} 1+\frac1n\sum_{k=1}^{n-1}H_k&=1+\frac1n\sum_{k=1}^{n-1}\sum_{i=1}^k\frac1i\\ &=1+\frac1n\sum_{i=1}^{n-1}\sum_{k=i}^{n-1}\frac1i\\ &=1+\frac1n\sum_{i=1}^{n-1}\frac{n-i}i\\ &=1+\frac1n\sum_{i=1}^{n-1}\left(\frac{n}i-1\right)\\ &=1+\sum_{i=1}^{n-1}\frac1i-\frac{n-1}n\\ &=1+H_{n-1}-1+\frac1n\\ &=H_n\;. \end{align*}
+A_n=n!H_n
+\begin{align*} \sum_{k\ge 1}k\left[n\atop k\right]x^{k-1}&=\frac{d}{dx}\Big(x(x+1)(x+2)\dots(x+n-1)\Big)\\ &=\sum_{k=0}^{n-1}\frac{\prod_{i=0}^{n-1}(x+i)}{x+k}\;, \end{align*}
+x=1
+\sum_{k\ge 1}k\left[n\atop k\right]=\sum_{k=0}^{n-1}\frac{n!}{k+1}=n!H_n\;.
+n
+n
+2
+n-1
+n-1
+n
+n-1
+(n-1)A_{n-1}
+A_n
+n
+n-1
+n
+n-1
+A_{n-1}+(n-1)!
+A_n
+(n-1)!
+n!
+A_0=0
+\frac{A_n}{n!}=\sum_{i=1}^n\frac1i=H_n
+A_n=n!H_n
+   A_n=(n-1)A_{n-1}+A_{n-1}+(n-1)! = nA_{n-1} + (n-1)! 
+   \frac{A_n}{n!}= \frac{A_{n-1}}{(n-1)!} + \frac1n, 
+\mathfrak P(\mathfrak C(\mathfrak Z))
+n!
+n!/n
+ \exp \log \frac{1}{1-z} = \frac{1}{1-z},
+ \log \frac{1}{1-z} 
+u
+G(z, u) = \exp \left( u \log \frac{1}{1-z} \right).
+u^k z^n / n!
+G(z, u)
+n
+k
+u
+u=1
+ \left. \frac{d}{du} G(z, u) \right|_{u=1} = \left. \exp \left( u \log \frac{1}{1-z} \right) \log \frac{1}{1-z} \right|_{u=1} = \frac{1}{1-z} \log \frac{1}{1-z} .
+ [z^n] \frac{1}{1-z} \log \frac{1}{1-z} = H_n 

@@ -1,0 +1,77 @@
+X
+n,u
+u
+X
+u
+u
+U
+U
+U
+U
+X
+(X,U)
+(X,U)
+U
+f_U(u) = 1
+0 < u < 1
+0
+X
+U
+f_{X|U}(x|u) = P(X=x|U=u) = P(bin(n,u) = x) = {n\choose x} u^x(1-u)^{n-x},\quad x = 0,1,\cdots, n.
+(X,U)
+U
+X|U
+(X,U)
+ f_{X,U}(x,u) = f_U(u)f_{X|U}(x|u) = {n\choose x} u^x(1-u)^{n-x},\quad x = 0,1,\cdots, n,\quad 0<u<1.
+f_{X,U}(x,u)
+(x,u)
+u
+X
+x
+U
+f_X(x) = \int_0^1 f_{X,U}(x,u)du  =\int_0^1 {n\choose x} u^x(1-u)^{n-x}du = \frac{1}{n+1},\quad x = 0,1,\dots,n.
+X
+\{ 0,1,\dots, n\} 
+X
+0
+n
+U
+\large \mathbf [
+\int_0^1 u^x(1-u)^{n-x}du = Beta(x+1, n-x+1) = \frac{x!(n-x)!}{(n+1)!}. {\mathbf ]}
+U|X
+f_{U|X}(u|x) = \frac{f_{X,U}(x,u)}{f_X(x)} = (n+1){n\choose x}u^x(1-u)^{n-x},\quad 0<u<1.
+X=x
+U
+(x+1, n-x+1)
+X
+f_{U|X}(u|x)
+(X,Y)
+(X,Z)
+(X,Y)
+Z|X
+(X,Z)
+X
+P(X=1|Z)
+Z
+X
+B \subset \mathbb{R}
+\int_B p(x) \; \mathrm{d}m(x)
+p
+m
+\mu(B)
+\mu
+A \subset \mathbb{N}
+\sum_{a \in \mathbb{N}} p(a)
+c
+\int_\mathbb{N} p(a) \; \mathrm{d}c(a)
+\nu(A)
+\nu = \sum_{a \in \mathbb{N}} p(a) \delta_a
+p
+\delta_i
+i
+X
+\mathbb{Z}
+p_k = Pr[X=k]
+F(x) = Pr[X \leq x] = \sum\limits_{k=-\infty}^{\lfloor x \rfloor}Pr[X=k] = \sum\limits_{k=-\infty}^{\lfloor x \rfloor} p_k
+p_k
+Pr[X \leq x]

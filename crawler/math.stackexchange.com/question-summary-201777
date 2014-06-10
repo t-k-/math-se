@@ -1,0 +1,22 @@
+a_{1}=1, a_{n}=n/(n-1),\text{ when }n > 1
+c_{n}=\sqrt[n]{a_{1}\cdots a_{n}}
+\ln(c_{n})=\sum\ln(a_{n})/n
+\sqrt[n]{n} \rightarrow 1
+\sqrt[n]{n} \rightarrow 1
+c_{n}
+\ln(c_{n})=\ln\left(\frac{(\frac{n}{n-1})}{n}\right)
+\rightarrow
+\frac{\ln(n)}{n} - \frac{\ln(n-1)}{n}
+\rightarrow \ln(\sqrt[n]{n})-\ln(\sqrt[n]{n-1})
+c_n=e^{\ln c_n}\rightarrow e^0=1
+ \ln(c_n)=\ln (a_1a_2\cdots a_n)^{1/n}={1\over n}\sum_{i=2}^n \ln\underbrace{{i\over i-1}}_{a_i}={1\over n}\underbrace{\sum_{i=2}^n \bigl(\ln i-\ln(i-1)\bigr)}_{\text{telescoping sum}}={1\over n}(\ln n){\buildrel n\rightarrow \infty\over\longrightarrow}0.
+\lim\limits_{n\to\infty}\sqrt[n]{n}=\lim\limits_{n\to\infty}\mathbb{e}^{\ln\left(\sqrt[n]{n}\right)}=\lim\limits_{n\to\infty}\mathbb{e}^{\frac{1}{n}\ln(n)}=\mathbb{e}^{\lim\limits_{n\to\infty}\frac{\ln(n)}{n}}\overset{Del'Hospital}{=}\mathbb{e}^{\lim\limits_{n\to\infty}\frac{\ln(n)'}{n'}}=\mathbb{e}^{\lim\limits_{n\to\infty}\frac{1}{n}}=\mathbb{e}^{0}=1
+\,n\geq 1\Longrightarrow \sqrt[n] n\geq 1\,\,,\,\,\forall\,n\in\Bbb N\,
+\,\sqrt[n] n=1+c_n\,\,,\,\,c_n\geq 0\,\,\,\forall\,n\in\Bbb N,\,
+n=(1+c_n)^n=\sum_{k=0}^n\binom{n}{k}c_n^k\geq\frac{n(n-1)}{2}c_n^2\Longrightarrow
+\Longrightarrow c_n\leq\sqrt\frac{2}{n-1}
+1\leq\sqrt[n] n\leq 1+\sqrt\frac{2}{n-1}\xrightarrow [n\to \infty]{} 1
+L = \lim\limits_{n\to\infty}\sqrt[n]{n}
+\log(L) = \lim\limits_{n\to\infty}\frac{1}{n} \log(n)
+L = 1
+\log(L) = \lim\limits_{n\to\infty}\frac{1}{n} \log(n) = 0

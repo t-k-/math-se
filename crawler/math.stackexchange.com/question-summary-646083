@@ -1,0 +1,10 @@
+ f_p=\psi\cdot\left(\theta\cdot f_{j}^{k+1}+(1-\theta)\cdot f_{j}^{k}  \right) + (1-\psi)\cdot \left(\theta\cdot f_{j+1}^{k+1}+(1-\theta)\cdot f_{j+1}^{k}  \right) 
+ \psi\frac{f_j^{k+1}-f_j^k}{\Delta t}+(1-\psi)\frac{f_{j+1}^{k+1}-f_{j+1}^k}{\Delta t} 
+ (1-\theta)\frac{f_{j+1}^{k}-f_j^k}{\Delta x}+\theta\frac{f_{j+1}^{k+1}-f_{j}^{k+1}}{\Delta x} 
+ \frac{\partial f}{\partial t} + \frac{\partial}{\partial x} \left(\sqrt{c- \frac{\partial f}{\partial x}} \right) 
+ \frac{\partial}{\partial x} \left(\sqrt{c- \frac{\partial f}{\partial x}} \right)\approx (1-\theta)\frac{\left(\sqrt{c- \frac{\partial f}{\partial x}} \right)_{j+1}^{k}-\left(\sqrt{c- \frac{\partial f}{\partial x}} \right)_j^k}{\Delta x}+\theta\frac{\left(\sqrt{c- \frac{\partial f}{\partial x}} \right)_{j+1}^{k+1}-\left(\sqrt{c- \frac{\partial f}{\partial x}} \right)_{j}^{k+1}}{\Delta x} 
+c
+t
+x
+j
+k

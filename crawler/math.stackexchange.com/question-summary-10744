@@ -1,0 +1,30 @@
+\frac{\partial \textbf{x}^{T} B \textbf{x}}{\partial \textbf{x}} = (B + B^{T})\textbf{x}
+\frac{\partial \textbf{x}^{T} B \textbf{x}}{\partial \textbf{x}} = \frac{\partial \textbf{x}^{T}}{\partial \textbf{x}}B\textbf{x} + \textbf{x}^{T}\frac{\partial B \textbf{x}}{\partial \textbf{x}}
+\frac{\partial \textbf{x}^{T}}{\partial \textbf{x}}
+I
+\begin{bmatrix} \dfrac{\partial y_1}{\partial x_1} &; \cdots &; \dfrac{\partial y_1}{\partial x_n} \\ \vdots &; \ddots &; \vdots \\ \dfrac{\partial y_m}{\partial x_1} &; \cdots &; \dfrac{\partial y_m}{\partial x_n}  \end{bmatrix}
+\frac{\partial B \textbf{x}}{\partial \textbf{x}}
+B
+\frac{\partial \textbf{x}^{T} B \textbf{x}}{\partial \textbf{x}} = B\textbf{x} + \textbf{x}^{T}B
+x = \begin{bmatrix} x_1\\\\ x_2\\\\ \vdots\\\\ x_n \end{bmatrix} 
+f(x) = x^TBx
+f(x) = \sum_{ij} x_iB_{ij}x_j
+p
+x
+\partial f(x) / \partial x_p
+\frac{\partial f(x)}{\partial x_p} = \frac{\partial}{\partial x_p}\sum_{ij} x_i B_{ij} x_j
+= \sum_{j} B_{pj}x_j + \sum_i x_iB_{ip}
+\sum_i B_{ip}x_i = \sum_i B^T_{pi}x_i = (B^Tx)_p
+\sum_j B_{pj}x_j = (Bx)_p
+\frac{\partial f(x)}{\partial x_p} = (Bx)_p + (B^Tx)_p
+p=1,\ldots,n
+\frac{\partial}{\partial x}
+xBx
+\sum_i x_i \sum_j B_{ij} x_j = \sum_i \sum_j B_{ij} x_i x_j
+sum_i B_{ii} x_i^2 + \sum_{i<j} x_i x_j ( B_{ij} + B_{ji})
+i
+i
+2 B_{ii} x_i + \sum_{j \neq i} = x_j ( B_{ij} + B_{ji})
+i
+(B + B^T)x
+\frac{ \partial \mathbf x^T }{\partial \mathbf x} \neq I

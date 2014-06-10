@@ -1,0 +1,36 @@
+1
+1
+\frac 12
+\frac 12
+[0,1]
+\frac 25
+\frac 15
+T
+X
+x
+0 \le x \le 1
+A_x(t)
+t
+x
+x \ge t
+1-x \ge t
+t \ge x
+x \le \frac 12
+t \ge 1 - x
+x \ge \frac 12
+A_x(t) = \begin{cases}   2t        & \text{if $x \ge t$ and $1-x \ge t$} \\  x + t     & \text{if $t \ge x$ and $x \le \frac 12$} \\  1 - x + t & \text{if $t \ge 1 - x$ and $x \ge \frac 12$} \end{cases}
+A_x(t)
+1
+t
+x
+(1-A_x(t))^2
+x
+C_x(t) = \max\{1, 1-(1-A_x(t))^2)\}
+x > t
+1-x < t
+t > x
+x \le \frac 12
+t > 1 - x
+x \ge \frac 12
+\Pr[T = t|X = x] = 2A'_x(t)(1-A_x(t)) = \begin{cases}  4(1-2t)  & \text{if $x > t$ and $1-x < t$} \\  2(1-x-t) & \text{if $t > x$ and $x \le \frac 12$} \\  2(x-t)   & \text{if $t > 1 - x$ and $x \ge \frac 12$} \end{cases}
+\frac15

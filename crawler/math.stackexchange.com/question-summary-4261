@@ -1,0 +1,10 @@
+\sum _{k=0}^n { n \choose k} \frac{(-1)^k}{2k+1} = \frac{(2n)!!}{(2n+1)!!}.
+ \int_{0}^{1} (1-x^2)^n dx .
+{}_2 F_1(-n,b;c;1)=\frac{(c-b)_n}{(c)_n}
+b=\frac12
+c=\frac32
+S_n=\sum\limits_{k=0}^n \dfrac{(-1)^k \binom{n}{k}}{2k+1}
+S_0=1
+\begin{align}S_n&=\dfrac{(-1)^n}{2n+1}+\sum\limits_{k=0}^{n-1} \dfrac{(-1)^k \binom{n}{k}}{2k+1}\\ &=\dfrac{(-1)^n}{2n+1}+\sum\limits_{k=0}^{n-1}\left[\dfrac{n}{n-k}.\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}\right]\\ &=\dfrac{(-1)^n}{2n+1}+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1}\left[\dfrac{n(2n+1)}{n-k}.\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}\right]\\ &=\dfrac{(-1)^n}{2n+1}+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1}\left[\dfrac{2n^2-2nk+2nk+n}{n-k}.\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}\right]\\ &=\dfrac{(-1)^n}{2n+1}+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1}\left[\dfrac{2n^2-2nk}{n-k}.\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}\right]\\&+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1}\left[\dfrac{2nk+n}{n-k}.\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}\right]\\ &=\dfrac{(-1)^n}{2n+1}+\dfrac{2n}{2n+1}\sum\limits_{k=0}^{n-1}\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1} \dfrac{n(-1)^k \binom{n-1}{k}}{n-k}\\ &=\dfrac{2n}{2n+1}\sum\limits_{k=0}^{n-1}\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}+\dfrac{1}{2n+1}\sum\limits_{k=0}^{n-1} \left[(-1)^k \binom{n}{k}\right]+\dfrac{(-1)^n}{2n+1}\\ &=\dfrac{2n}{2n+1}\sum\limits_{k=0}^{n-1}\dfrac{(-1)^k \binom{n-1}{k}}{(2k+1)}+\dfrac{1}{2n+1}\sum\limits_{k=0}^n \left[(-1)^k \binom{n}{k}\right]\end{align}
+S_n=\dfrac{2n}{2n+1}S_{n-1}+0 \Rightarrow S_{n-1}=\dfrac{2n-2}{2n-1}S_{n-2} ... \Rightarrow S_1=\dfrac{2}{3}S_0
+S_n=\dfrac{2n(2n-2)...2}{(2n+1)(2n-1)...3.1}=\dfrac{(2n)!!}{(2n+1)!!}

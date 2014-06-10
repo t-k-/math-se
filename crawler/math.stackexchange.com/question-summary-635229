@@ -1,0 +1,18 @@
+2x
+\int \dfrac{x^2e^{1-x^2}}{2x}\,dx
+2x
+\dfrac{dy}{dx} + \dfrac{1}{2}xe^{1 - x^2}y = \dfrac{1}{x}
+p(x) = \dfrac{1}{2}xe^{1 - x^2}
+\begin{aligned} \mu(x) = e^{\int p(x)\,dx} = e^{\int \frac{1}{2}xe^{1 - x^2}\,dx}\\ \end{aligned}
+e
+u = 1 - x^2
+du = -2x\,dx
+\begin{aligned} \dfrac{1}{2}\int xe^{1 - x^2}\,dx &= \dfrac{1}{2} \int -\dfrac{1}{2}e^{u}\,du\\ &= -\dfrac{1}{4} \int e^u\,du\\ &= -\dfrac{1}{4}e^u + \mbox{C}\\ &= -\dfrac{1}{4}e^{1 - x^2} + \mbox{C} \end{aligned}
+\mu(x) = e^{-\frac{1}{4}e^{1 - x^2}}
+\begin{aligned} \mu(x)\dfrac{dy}{dx} + \mu(x) \cdot \dfrac{1}{2} xe^{1 - x^2}y &= \dfrac{\mu(x)}{x}\\ e^{-\frac{1}{4}e^{1 - x^2}}\dfrac{dy}{dx} + e^{-\frac{1}{4}e^{1 - x^2}} \cdot \dfrac{1}{2} xe^{1 - x^2}y &= \dfrac{e^{-\frac{1}{4}e^{1 - x^2}}}{x}\\ \left[e^{-\frac{1}{4}e^{1 - x^2}}y\right]' &= \dfrac{e^{-\frac{1}{4}e^{1 - x^2}}}{x}\\ e^{-\frac{1}{4}e^{1 - x^2}}y &= \int \dfrac{e^{-\frac{1}{4}e^{1 - x^2}}}{x}\,dx\\ y(x) &= \dfrac{\int \dfrac{e^{-\frac{1}{4}e^{1 - x^2}}}{x}\,dx}{e^{-\frac{1}{4}e^{1 - x^2}}} \end{aligned}
+\int \frac{x^2 e^{1-x^2}}{2x}dx=\int \frac{xe^{1-x^2}}{2}dx=-\frac{1}{2}\int\frac{-2xe^{1-x^2}}{2}dx
+u=1-x^2
+du=-2xdx
+=-\frac{1}{4}\int-2xe^{1-x^2}dx=-\frac{1}{4}\int e^udu =-\frac{1}{4}e^u
+u=1-x^2
+\int \frac{x^2 e^{1-x^2}}{2x}dx=-\frac{1}{4}e^{1-x^2}

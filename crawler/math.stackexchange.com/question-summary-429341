@@ -1,0 +1,26 @@
+\int_c \mathbf{F} \cdot d\mathbf{r} = \int_c \nabla f  \cdot d\mathbf{r} = f(\mathbf{r}(b)) -  f(\mathbf{r}(a))
+\mathbf{F}  = \nabla f
+\mathbf{F}(x,y,z) = e^y\mathbf{i} + xe^y\mathbf{j} + (z + 1) e^z\mathbf{k}
+\partial f/\partial x
+f(x,y,z) = xe^y+g(y,z)
+\mathbf F
+g(y,z)=h(z)
+h'(z)=(z+1)e^z
+f
+c
+\nabla(f+c)=\vec{F}
+x_0
+f(x_0) = 0
+ f(x) = \int_\gamma \vec{F}\cdot d\vec{l} 
+\gamma
+\gamma : [0,1] \rightarrow \mathbb{R}^n
+\gamma(0)=x_0
+\gamma(1) = x
+\nabla f = \vec{F}
+\gamma_x^i: [0,\infty) \rightarrow \mathbb{R}^n
+\gamma_x^i(0) = x_0
+\gamma_x^i(1) = x 
+\frac{d\gamma_x^i(t)}{dt}\bigg|_{t=1} = e_i
+\gamma_x^i(t) = x+te_i \qquad t>1
+ \frac{\partial f(x)}{\partial x_i} = \lim_{h\rightarrow 0^+} \frac{f(x+h)-f(x)}{h} = \lim_{h\rightarrow 0^+} \frac1{h}\int_1^{1+h} \vec{F}(\gamma_x^i(t)) \cdot e_i dt = 
+ \lim_{h\rightarrow 0^+} \frac1{h}h \vec{F}(\gamma_x^i(\xi)) \cdot e_i = F(x) 

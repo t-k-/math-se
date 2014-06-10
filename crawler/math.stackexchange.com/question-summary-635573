@@ -1,0 +1,17 @@
+Y
+n
+Y
+\bar{Y}
+k
+k
+ f_Y(y) = \begin{cases}e^{-(y-k)} \quad x>k\\0\quad \text{otherwise}\end{cases} 
+ \begin{align} \mathbb E(\bar{Y}) &= \mathbb E\begin{bmatrix}\frac 1n \sum_i y_i\end{bmatrix}\\ &=\frac 1n \sum_i \mathbb E (y_i) \end{align} 
+ \begin{align} \mathbb E(y_i) &= \int_k^\infty y e^{-(y-k)} dy\\ &=e^k\int_k^\infty y e^{-y} dy\\ &=-e^k[ye^{-y}+e^{-y}]^\infty_k\\ &=e^k(ke^k+e^{-k})\\ &= e^{2k}(k+1) \end{align} 
+ \begin{align} \mathbb E(\bar{Y}) &=\frac 1n \sum_i \mathbb E (y_i)\\ &=\frac 1n (e^{2k})(k+1)\cdot n &= (e^{2k})(k+1) \neq k \end{align} 
+k
+n \rightarrow \infty
+\mathbb E(y_i)=k+1
+\mathbb E (\bar Y)=k+1
+y_i
+y_i
+e^{k-y}1_{y>k}

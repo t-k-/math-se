@@ -1,0 +1,24 @@
+X
+F
+x
+x_n
+x_n \rightarrow x
+n \rightarrow \infty
+F(x_n) \rightarrow F(x)
+n \rightarrow \infty
+x_n \downarrow -\infty
+\lim_{m\to\infty}F(x_m) = \lim_{m\to\infty}P(X \leq x_m) = P(\lim_{m\to\infty}(X \leq x_m)) = P(\bigcap_{m}(X \leq x_m)) = P(\varnothing) = 0
+\lim_{x\to -\infty}F(x) = 0
+F(-\infty) = 0
+x=-\infty
+A_1,A_2,A_3,\ldots
+P(A_1\cup A_2\cup A_3\cup\cdots)
+=P(A_1)+P(A_2)+P(A_3)+\cdots
+x_n\downarrow x
+ \begin{align} F(x) & = P(X\le x) = 1 - P(X>x) \\[8pt] & = 1-P\Big( X>x_1\text{ or }x_1\ge X>x_2\text{ or }x_2>X\ge x_3\text{ or }\cdots \Big) \\[8pt] & = 1 - P(X>x_1) - \sum_{i=1}^\infty P(x_i>X\ge x_{i+1})\quad\text{(countable additivity)} \\[8pt] & = F(x_1) - \sum_{i=1}^\infty (F(x_i)-F(x_{i+1})) \\[8pt] & = F(x_1) - \lim_{n\to\infty} \sum_{i=1}^n (F(x_i)-F(x_{i+1})) \\[8pt] & = \lim_{n\to\infty} F(x_1)-F(x_1)+F(x_2)-F(x_2)+\cdots+F(x_{n-1})-F(x_{n-1})+F(x_n) \\[8pt] & = \lim_{n\to\infty}F(x_n). \end{align} 
+F
+x_{n} \rightarrow x
+n \rightarrow \infty
+F
+F(x_{n}) \rightarrow F(x)
+n \rightarrow \infty

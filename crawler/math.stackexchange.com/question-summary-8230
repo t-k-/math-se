@@ -1,0 +1,8 @@
+\sum_{i=0}^{\lceil \frac{k}{2} \rceil}{({k \choose i}\cdot i)}
+\binom{k}{i} i = k \binom{k-1}{i-1}
+\sum_{i=0}^{\lceil k/2 \rceil} \binom{k}{i} = k\sum_{j=0}^{\lceil k/2 \rceil - 1} \binom{k-1}{j}
+k = 2m
+k\sum_{j=0}^{m-1} \binom{2m-1}{j} = k 2^{2m-2} = k2^{k-2}
+k = 2m+1
+k\sum_{j=0}^m \binom{2m}{j} = k \left(2^{2m-1} +\frac{1}{2} \binom{2m}{m}\right) = k\left(2^{k-2} + \frac{1}{2} \binom{k-1}{(k-1)/2}\right)
+\frac{k}{2} \binom{k-1}{(k-1)/2} \approx 2^{k-1} \sqrt{\frac{k}{2\pi}}

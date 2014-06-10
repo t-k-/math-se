@@ -1,0 +1,47 @@
+\sin(x),\sin(2x),...,\sin(mx)\in V
+V
+i\in \{1,\dots,m\}
+\sin ix
+x=0
+x=2\pi
+i=1,\dots,m
+\int_0^{2\pi} \sin mx\sin nxdx=\begin{cases}0& m\neq n\\ \pi &m=n\end{cases}
+\begin{align}\sum_{j=1}^m a_j\sin jx&=0\\  \sum_{j=1}^m a_j\sin kx\sin jx&=0\\  \sum_{j=1}^m a_j\int_0^{2\pi}\sin kx\sin jxdx&=0\\  a_k \pi&=0\\ {}&{}\\  a_k&=0\end{align}
+\pi\neq 0
+D
+D^2 \sin(kx) = -k^2 \sin(kx)
+\sin(kx)
+D^2
+-k^2
+-1, -4, -9, \cdots, -m^2
+e_k(t) = \sin kt
+V=\operatorname{sp} \{ e_k \}_{k=1}^m
+\langle f_1, f_2 \rangle = \frac{1}{\pi} \int_{-\pi}^\pi f_1(t) f_2(t) dt
+\langle e_i, e_j \rangle = \delta_{ij}
+e_k
+\sum \alpha_k e_k = 0
+\langle e_i, \sum \alpha_k e_k \rangle = \alpha_k = 0
+e_k
+f(t) = \sum_{k=1}^m \alpha_k \sin kt 
+f(t) = 0
+t
+D = \frac{d}{dt}
+(D^{2n+1} f)(t)= (-1)^n\sum_{k=1}^m \alpha_k k (k^2)^n \cos kt 
+=0
+t
+\lim_{n \to \infty} (-1)^n\frac{(D^{2n+1} f)(0)}{m^{2n+1}} = \alpha_m = 0
+\alpha_m = 0
+\lim_{n \to \infty} (-1)^n\frac{(D^{2n+1} f)(0)}{(m-1)^{2n+1}} = \alpha_{m-1} = 0
+\alpha_k = 0
+k
+t \mapsto \sin kt
+\{ \sin x, \sin 2x, \ldots, \sin mx\}
+a_1,\ldots,a_m \in \mathbb{R}
+\sum_{k=1}^m a_k \sin kx = 0, \text{ for all } x \in \mathbb{R}
+z \in S^1 = \{ \omega \in \mathbb{C} : |\omega| = 1\}
+z
+e^{ix}
+0 = \sum_{k=1}^m a_k \sin kx = \sum_{k=1}^m a_k \frac{z^k - z^{-k}}{2i} = \frac{z^{-m}}{2i}\sum_{k=1}^m a_k\left(z^{m+k}-z^{m-k}\right)
+\frac{z^{-m}}{2i}
+z
+S^1

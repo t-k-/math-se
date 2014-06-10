@@ -1,0 +1,52 @@
+ f(x)=\begin{cases}a,& 0<x<\frac{\pi}{3}\\ 0,&\frac{\pi}{3}<x<\frac{2\pi}{3}\\-a,& \frac{2\pi}{3}<x<\pi\\ \end{cases} 
+ f(x)= a_0+\sum_{n=1}^{\infty}a_n\cos\frac{n\pi x}{L}+\sum_{n=1}^{\infty}b_n\sin\frac{n\pi x}{L}, 
+ a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) dx 
+ a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(nx)dx 
+ b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(nx)dx 
+ b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(nx)dx 
+ b_n = \frac{1}{\pi} \int_{0}^{\frac{\pi}{3}} asin(nx)dx + \frac{1}{\pi} \int_\frac{2\pi}{3}^{{\pi}} -asin(nx)dx 
+  b_n =  \frac{a}{n\pi}\left[-\cos(nx)\right]_0^{\frac{\pi}3} + \frac{a}{n\pi}\left[\cos(nx)\right]_\frac{2\pi}3^{\pi} 
+ b_n = 0  
+  b_n =  \frac{a}{n\pi}\left[1-\cos(n\frac{\pi}{3}) + \cos(n\pi) -\cos(\frac{2n\pi}{3})\right] 
+  b_n =  \frac{3a}{n\pi} 
+ f(x)=\frac{3a}{\pi}\left[\frac{1}{2}\sin(2x)+\frac{1}{4}\sin(4x)+\frac{1}{8}\sin(8x)....  \right] 
+ f(x)=\frac{3a}{\pi}\left[\sin(2x)+\frac{1}{2}\sin(4x)+\frac{1}{4}\sin(8x)....  \right] 
+2\pi
+[0,\pi]
+L
+f
+[0,\pi]
+\sin(2nx)
+\cos(2nx)
+[0,\pi]
+\sin^{2}
+\cos^{2}
+\sin^{2}(2nx)+\cos^{2}(2nx)=1
+\sin^{2}
+\cos^{2}
+\pi
+\sin^{2}
+\cos^{2}
+\pi/2
+\frac{2}{\pi}
+{1}{\pi}
+1
+\sin(2nx)
+\cos(2nx)
+                  f(x) = a_{0} + \sum_{n=1}^{\infty} a_{n}\cos(2nx)+\sum_{n=1}^{\infty}b_{n}\cos(2nx), 
+ \begin{align}  \int_{0}^{\pi}f(x)dx & = a_{0}\int_{0}^{\pi}dx =\pi a_{0}\\  \int_{0}^{\pi}f(x)\cos(2nx)dx & = a_{n}\int_{0}^{\pi}\cos^{2}(2nx)\,dx=a_{n}\frac{\pi}{2},\;\;\; n > 0,\\  \int_{0}^{\pi}f(x)\sin(2nx)dx & = b_{n}\int_{0}^{\pi}\sin^{2}(2nx)\,dx=b_{n}\frac{\pi}{2}. \end{align} 
+ \begin{align}    f(x)  & \sim \frac{1}{\pi}\int_{0}^{\pi}f(x)\,dx + \\          & + \sum_{n=1}^{\infty}\left(\frac{2}{\pi}\int_{0}^{\pi}f(x)\cos(2nx)\,dx\right)\cos(2nx) \\          & +\sum_{n=1}^{\infty}\left(\frac{2}{\pi}\int_{0}^{\pi}f(x)\sin(2nx)\,dx\right)\sin(2nx). \end{align} 
+f
+a
+x=\pi/2
+\sin
+x=\pi/2
+\cos
+x=\pi/2
+f
+x=\pi/2
+f
+x=\pi/2
+\cos
+[0,\pi/2]
+      a_{n} = 0,\;\; b_{n}=2a\int_{0}^{\pi/3}\sin(2nx)\,dx. 

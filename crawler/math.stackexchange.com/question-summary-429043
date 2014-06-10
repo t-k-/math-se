@@ -1,0 +1,10 @@
+d_0 =2 
+d_1=5
+d_n=5d_{n-1} - 6d_{n-2}
+d_n=2^n+3^n
+d_0=2
+d_1=5
+n \geq 2
+0\leq k< n
+n\in\mathbb{N}
+ \begin{align*} d_{n} &= 5d_{n-1} - 6d_{n-2} \\ &= 5\left(2^{n-1}+3^{n-1}\right) - 6\left(2^{n-2}+3^{n-2}\right) \qquad\qquad\text{(induction hypothesis)} \\ &= 5\cdot 2^{n-1}+5\cdot 3^{n-1} - 3\cdot 2^{n-1}- 2\cdot 3^{n-1} \\ &= 2\cdot 2^{n-1}+3\cdot 3^{n-1} \\ &= 2^{n}+3^{n}  \end{align*} 

@@ -1,0 +1,23 @@
+f(t) = at+b
+t\in[0,1)
+\hat{f}(\nu) = \int_0^1f(t)e^{-2\pi\nu ti}dt=
+\int_0^1 (at+b)\exp(-i(2\pi vt))\,\mathrm dt=\frac {e^{-2i\pi v}\left(-e^{2i\pi v}(a+2i\pi bv)+2i\pi av+a+2i\pi bv\right)} {4\pi^2v^2}
+\hat f(\nu)=\int_{I\!R}f(t)\exp(-2\pi i\,\nu t)\,dt
+f(t)=\int_{I\!R}\hat f(\nu)\exp(2\pi i\,\nu t)\,d\nu
+f
+\hat f(-\nu)=\overline{\hat f(\nu)}
+f
+\hat f(\nu)\sim\frac1\nu
+|\nu|
+[-20,20]
+Δν=1/100
+N=2000
+\sum_{k=-N}^{N}\hat f(kΔν)\exp(2\pi i\, (kΔν)t)\,Δν=\hat f(0)Δν+2Δν\sum_{k=1}^{N}\text{Re}\Bigl(\hat f(kΔν)\exp(2\pi i\, (kΔν)t)\Bigr)
+\hat f(kΔν)=m_k\exp(i\, \phi_k)
+\text{Re}\Bigl(\hat f(kΔν)\exp(2\pi i\, (kΔν)t)\Bigr)=m_k\cos\Bigl(2\pi (kΔν)t+\phi_k\Bigr).
+Δν
+\hat f(0)Δν
+2Δν
+1/50
+g(x)=f(ax)
+ \begin{align} \hat{g}(\xi) &=\int_{-\infty}^\infty g(x)\,e^{-2\pi ix\xi}\,\mathrm{d}x\\ &=\int_{-\infty}^\infty f(ax)\,e^{-2\pi ix\xi}\,\mathrm{d}x\\ &=\frac1a\int_{-\infty}^\infty f(x)\,e^{-2\pi ix\xi/a}\,\mathrm{d}x\\ &=\frac1a\hat{f}\left(\frac{\xi}{a}\right) \end{align} 

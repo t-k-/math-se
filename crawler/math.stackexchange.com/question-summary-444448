@@ -1,0 +1,14 @@
+\delta(M)
+d(M)=\frac{\log(2)}{\log(10)}
+M= \bigcup_{k=0}^{\infty}\{ p \mbox{ prime} : 10^k \leq p < 2\cdot10^k \}
+\delta(M)
+M(x)= \# \{ p \in M :  p \leq x \}= \sum_{p \in M, p\leq x}1 = \sum_{0 \leq k \leq \frac{\log(x)}{\log(10)}} \sum_{10^k \leq p < 2\cdot10^k,  p \leq x} 1
+M(x)= \# \{ p \in M :  p \leq x \}
+M
+M(10^k) \leqslant \pi(2\cdot 10^{k-1}), \text{ and } M(2\cdot 10^k) \geqslant \pi(2\cdot 10^k) - \pi(10^k).
+k
+\frac{M(10^k)}{\pi(10^k)} \leqslant \frac{\pi(2\cdot 10^{k-1})}{\pi(10^k)} \approx \frac15\left(1 + \frac{\log 5}{\log (2\cdot 10^{k-1})}\right) \approx \frac15
+\frac{M(2\cdot 10^k)}{\pi(2\cdot 10^k)} \geqslant 1 - \frac{\pi(10^k)}{\pi(2\cdot 10^k)} \approx 1 - \frac12\left(1 + \frac{\log 2}{\log (10^k)}\right) \approx \frac12.
+\frac{M(x)}{\pi(x)}
+\approx \frac15
+\approx \frac12

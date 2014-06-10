@@ -1,0 +1,54 @@
+f(z) = \frac{R + z}{z(R - z)}
+0 \leq r < R
+\frac{1}{2\pi}\int_0^{2\pi} \frac{R^2-r^2}{R^2 - 2Rr\cos(\theta) + r^2}\mathrm{d}\theta = 1   
+\int_C f(z) \mathrm{d}z  =  \int_{z_1}^{z_2} f(z) \mathrm{d}z = \int_a^bf(z(t))\cdot z'(t)\mathrm{d}t  
+z_1
+z_2
+z(a) = z_1
+z(b) = z_2
+z(t)
+r
+t
+f(z(t))\cdot z'(t) = \frac{R^2-r^2}{R^2 - 2Rr\cos(t) + r^2}  
+z_1
+z_2
+ \int_{z_1}^{z_2} f(z) \mathrm{d}z  
+\pi
+z(t) = re^{i\theta}
+f(z(t))\cdot z'(t) = \frac{R^2\cdot i - 2Rr\sin(t) + r - r^2\cdot i}{R^2 - 2Rr\cos(t) + r^2}  
+f(z)
+f(z) = \frac{R + z}{z(R - z)}  = \frac{1}{z} + \frac{2}{R - z}
+z
+\int f(z)dz = log(z) - 2log(R - z) 
+\int_C f(z)dz 
+z = re^{i\theta}
+C_1
+C_2
+C_1
+ -\frac{\pi}{2} <= \theta <= \frac{\pi}{2}
+log(z) = ln(r) + i\theta
+-\pi <= \theta <= \pi
+ \int_{C_1} f(z) = [log(z) - 2log(R - z)]_{-ri}^{ri} 
+ \int_{C_1} f(z)dz = \pi{i} - 2log(R - ri) + 2log(R + ri) 
+C_2
+\frac{\pi}{2} <= \theta <= \frac{3\pi}{2}
+log(z) = ln(r) + i\theta
+0 <= \theta <= 2\pi
+ \int_{C_2} f(z) = [log(z) - 2log(R - z)]_{ri}^{-ri} 
+ \int_{C_2} f(z)dz = \pi{i} - 2log(R + ri) + 2log(R - ri) 
+ \int_{C} f(z)dz = \int_{C_1} f(z)dz + \int_{C_2} f(z)dz  
+ \int_{C} f(z)dz = 2\pi{i}  
+\int_C f(z) \mathrm{d}z  =  \int_a^bf(z(t))\cdot f'(t) dt 
+\Im\int_C f(z) \mathrm{d}z  =  \int_a^b\Im[{f(z(t))}\cdot f'(t) dt] 
+ \Im(2\pi{i}) = \int_0^{2\pi} \frac{R^2-r^2}{R^2 - 2Rr\cos(\theta) + r^2}\mathrm{d}\theta   
+ \int z(t) \mathrm{d}t=\int \Re z(t) \mathrm{d}t+i\int \Im z(t) \mathrm{d}t
+ \int_C f(z) \mathrm{d}z  =  \int_a^b\Re{f(z(t))}\cdot f'(t) dt + i\int_a^b\Im{f(z(t))}\cdot f'(t) dt 
+ \int_{0}^{2\pi}\Re[{f(z(t))}\cdot f'(t) dt] = 0 
+ \int_C f(z) \mathrm{d}z = 2{\pi}i 
+ \Im[f(z(t))\cdot z'(t)] = \frac{R^2-r^2}{R^2 - 2Rr\cos(t) + r^2}  
+ \int_C f(z) \mathrm{d}z  =  i\int_0^{2\pi}\Im[{f(z(t))}\cdot f'(t)] dt 
+ 2{\pi}i  =  i\int_0^{2\pi}\Im[{f(z(t))}\cdot f'(t)] dt 
+ 2{\pi}  =  \int_0^{2\pi}\Im[{f(z(t))}\cdot f'(t)] dt 
+ 2{\pi}  =  \int_0^{2\pi}\frac{R^2-r^2}{R^2 - 2Rr\cos(t) + r^2}dt  
+\Im\left(\frac{R+r\exp(i\theta)}{r\exp(i\theta)(R-r\exp(i\theta))}(i r\exp(i\theta))\right)=\frac{R^2-r^2}{R^2+r^2-2Rr\cos\theta}
+\int z(t) \mathrm{d}t=\int \Re z(t) \mathrm{d}t+i\int \Im z(t) \mathrm{d}t

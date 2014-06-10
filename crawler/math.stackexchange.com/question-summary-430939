@@ -1,0 +1,42 @@
+v\in W^{1.p}(\mathbb{R}^n)
+f
+W^{-1,p}(\mathbb{R}^n)
+f\in W^{-1,p}(\Omega)
+F\in L^{p'}(\Omega)
+\langle f,\varphi\rangle=\int_\Omega F\cdot\nabla\varphi,\ \forall\ \varphi\in W_0^{1,p}(\Omega) 
+F
+\Omega
+f\in W^{-1,p}(\mathbb{R}^3)
+\langle f,\varphi\rangle=\int_\Omega F\cdot\nabla\varphi,\ \forall\ \varphi\in W_0^{1,p}(\mathbb{R}^3)
+\Gamma\star f
+\langle\Gamma\star f,\varphi\rangle=\langle \Gamma,\langle f,\varphi(x+\cdot)\rangle\rangle,\ \forall\ \varphi\in \mathcal{S}
+\Gamma\star f
+(\Gamma\star f)(x)=-\sum_{i=1}^3\left(\frac{\partial\Gamma}{\partial x_i}\star F\right)(x)
+f \in W^{-1,p}
+W^{1,q}
+W^{1,q}
+q
+p
+f
+f
+\psi
+W^{1,q}
+\psi
+L^p
+L^q
+F_i
+F
+W^{1,q}
+\psi
+L^q
+\nabla \psi
+ \langle f, \psi \rangle = \sum_i \int F_i \frac{\partial \psi}{\partial x_i} 
+\langle f,\psi \rangle \leq \|f\|_{-1,p} \|\psi\|_{1,q}
+L^p
+f*\Gamma
+\|\psi * \Gamma\|_{2,q} \leq C_{n,q} \|\psi\|_q
+ \langle f * \Gamma, \psi \rangle = \sum_i \int F_i(y) \Gamma(x - y) \frac{\partial \psi}{\partial x_i}(x) dx dy = \langle f, \Gamma*\psi\rangle
+ \|f*\Gamma\|_p = \sup_{\|\phi\|_q = 1} \langle f*\Gamma, \phi \rangle \leq \sup_{\|\phi\|_q = 1} \|f\|_{-1,p} \|\Gamma * \phi\|_{1,q} \leq C_{n,q} \|f\|_{-1,p}
+L^p
+\frac{\partial \Gamma * f}{\partial x_i}
+ \|\frac{\partial f*\Gamma}{\partial x_i}\|_p = \sup_{\|\phi\|_q = 1} \langle \frac{\partial f*\Gamma}{\partial x_i}, \phi \rangle = \sup_{\|\phi\|_q = 1} \langle f*\Gamma,\frac{\partial \phi}{\partial x_i} \rangle = \\ \sup_{\|\phi\|_q = 1}  \sum_j \int F_j(y) \Gamma(x-y) \frac{\partial^2 \phi}{\partial x_i \partial x_j}(x) dx \leq \\ \|f\|_{-1,p} \sup_{\|\phi\|_q = 1} \|\Gamma * \phi\|_{2,q} \leq C_{n,q} \|f\|_{-1,p}

@@ -1,0 +1,114 @@
+x=0
+x=\infty
+ \frac{\partial u}{\partial t}=\frac{\partial^2 u}{\partial x^2} 
+ u(x,t=0)=0\\ u(x=0,t)=g(t)\\ u(x=\infty,t)=0 
+x=0
+g(t)
+g(t)
+\left.\frac{\partial u}{\partial x}\right|_{x=0}(t)
+f(x)
+g(t)
+ \left.\frac{\partial u}{\partial x}\right|_{x=0}(t) 
+ u(x,t) =1+ \int_0^t\left( \frac{x}{\sqrt{4\pi (t - t^\prime)^3}}\exp\left[-\frac{x^2}{4(t-t^\prime)}\right]g(t^\prime)\right)\textrm{d}t^\prime\:\: \forall x>0 
+\frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}
+u(x,0)=0
+u(0,t) = g(t)
+\lim_{x \to \infty} u(x,t) = 0
+x \gt 0
+\left [ \frac{\partial u}{\partial x}\right]_{x=0}
+\hat{u}(x,s) = \int_0^{\infty} dt \, u(x,t) \, e^{-s t}
+\int_0^{\infty} dt \, \frac{\partial u}{\partial t} \, e^{-s t} = \left [ u(x,t) e^{-s t}\right ]_0^{\infty} + s \int_0^{\infty} dt \, u(x,t) \, e^{-s t} = s \, \hat{u}(x,s)
+\frac{\partial^2 \hat{u}}{\partial x^2} - s \hat{u} = 0
+\hat{u}(0,s) = \int_0^{\infty} dt \, g(t) \, e^{-s t} = \hat{g}(s)
+\lim_{x \to \infty} \hat{u}(x,s) = 0
+\hat{u}(x,s) = \hat{g}(s) e^{-x \sqrt{s}}
+u(x,t) = \frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, \hat{g}(s) \, e^{-\sqrt{s} x} \, e^{s t}
+\left [ \frac{\partial u}{\partial x}\right]_{x=0} = -\frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, \sqrt{s}\, \hat{g}(s)\, e^{s t}
+\sqrt{s}
+x=0
+u_0
+\hat{g}(s) = u_0/s
+\left [ \frac{\partial u}{\partial x}\right]_{x=0} = -\frac{u_0}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, s^{-1/2}\, e^{s t}
+\arg{s}=\pi
+\arg{s}=-\pi
+\oint_C ds \frac{e^{s t}}{\sqrt{s}}
+C
+C
+C
+5
+\Re{s}=a
+R
+r
+R \rightarrow \infty
+ r \rightarrow 0
+ \int_{c-i\infty}^{c+i\infty} ds \frac{e^{s t}}{\sqrt{s}}+e^{i \pi} \int_{\infty}^0 dx \frac{e^{-x t}}{i \sqrt{x}} + \int_0^{\infty} dx \frac{e^{-x t}}{-i \sqrt{x}}=0
+ \frac{1}{i 2 \pi} \int_{c-i\infty}^{c+i\infty} ds \frac{e^{s t}}{\sqrt{s}} = \frac{1}{ \pi}  \int_0^{\infty} dx \frac{e^{-x t}}{\sqrt{x}}
+y=\sqrt{x}
+ \frac{1}{i 2 \pi} \int_{c-i\infty}^{c+i\infty} ds \frac{e^{s t}}{\sqrt{s}} =  \frac{2}{ \pi}  \int_0^{\infty} dy \; e^{-t y^2}=\frac{1}{\sqrt{\pi t}}
+\left [ \frac{\partial u}{\partial x}\right]_{x=0} = -\frac{u_0}{\sqrt{\pi}} t^{-1/2}
+u(x,t)
+e^{-b \sqrt{s}}
+b \gt 0
+x
+x
+u(x,t) = \frac{x}{2 \sqrt{\pi}} \int_0^t dt' \, g(t') (t-t')^{-3/2} \, e^{-x^2/(4 (t-t'))}
+\left [ \frac{\partial u}{\partial x}\right]_{x=0} = \frac{1}{2 \sqrt{\pi}} \int_0^t dt' \, g(t') (t-t')^{-3/2}
+\sqrt{z}
+\oint_C dz \: e^{-b \sqrt{z}} e^{z t}
+C
+\text{Arg}{z} \in (-\pi,\pi]
+6
+C_k
+k \in \{1,2,3,4,5,6\}
+C_1
+z \in [c-i R,c+i R]
+R
+C_2
+R
+C_1
+C_3
+[-R, -\epsilon]
+\epsilon
+C_4
+\epsilon
+C_5
+[-\epsilon,-R]
+C_6
+R
+C_1
+C_2
+C_4
+C_6
+R \rightarrow \infty
+\epsilon \rightarrow 0
+C_2
+R t \cos{\theta} - b \sqrt{R} \cos{\frac{\theta}{2}}
+\theta \in [\pi/2,\pi)
+\cos{\theta} < 0
+\cos{\frac{\theta}{2}} > 0
+R \rightarrow \infty
+C_2
+C_6
+\theta \in (-\pi,-\pi/2]
+R \rightarrow \infty
+C_6
+C_4
+\epsilon
+\epsilon \rightarrow 0
+C
+\left [ \int_{C_1} + \int_{C_3} + \int_{C_5}\right] dz \: e^{-b \sqrt{z}} e^{z t} = 0
+C_3
+z=e^{i \pi} x
+C_3
+\int_{C_3} dz \: e^{-b \sqrt{z}} e^{z t} = e^{i \pi} \int_{\infty}^0 dx \: e^{-i b \sqrt{x}} e^{-x t}
+C_5
+z=e^{-i \pi} x
+C_5
+\int_{C_5} dz \: e^{-b \sqrt{z}} e^{z t} = e^{-i \pi} \int_0^{\infty} dx \: e^{i b \sqrt{x}} e^{-x t}
+-\frac{1}{i 2 \pi} \int_0^{\infty} dx \: e^{- x t} \left ( e^{i b \sqrt{x}} - e^{-i b \sqrt{x}} \right ) + \frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \: e^{-b \sqrt{s}} e^{s t} = 0
+\hat{f}(s) = e^{-b \sqrt{s}}
+\begin{align}\frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \: e^{-b \sqrt{s}} e^{s t} &= \frac{1}{i 2 \pi} \int_0^{\infty} dx \: e^{- x t} \left ( e^{i b \sqrt{x}} - e^{-i b \sqrt{x}} \right )\\ &= \frac{1}{\pi} \int_{-\infty}^{\infty} du\: u \,e^{-t u^2} \sin{b u}\end{align}
+x=u^2
+\begin{align}\frac{1}{\pi} \int_{-\infty}^{\infty} du\: u \,e^{-t u^2} \sin{b u} &= \frac{1}{\pi} \Im{\left [\int_{-\infty}^{\infty} du\:u\, e^{-t u^2} e^{i b u} \right]}\\ &= \frac{1}{\pi} \Im{\left [\int_{-\infty}^{\infty} du\:u\, e^{-t (u-i b/(2 t))^2} e^{-b^2/(4 t)}\right ]}\\ &= \frac{1}{\pi} e^{-b^2/(4 t)} \Im{\left [\int_{-\infty}^{\infty} dv \: \left ( v + \frac{i b}{2 t} \right ) e^{-t v^2} \right]}\\ &= \frac{1}{\pi} e^{-b^2/(4 t)}  \frac{b}{2 t} \sqrt{\frac{\pi}{t}} \end{align}
+b=x
+\mathcal{L}^{-1}[e^{-x \sqrt{s}}](t) = \frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \: e^{-\sqrt{s}} e^{s t} = \frac{x}{2 \sqrt{\pi}} t^{-3/2} e^{-\frac{x^2}{4 t}}

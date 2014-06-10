@@ -1,0 +1,39 @@
+ F_n=F_{n-1}-F_{n-2} 
+a
+\ 
+b
+\ 
+b-a
+\ 
+-a
+\ 
+-b
+\ 
+a-b
+6
+ F(n) = A \sin \frac{\pi n}{3} + B \cos\frac{ \pi n}{3}, 
+F_0 = a
+F_1 = b
+B=a
+A=\dfrac{2b-a}{\sqrt{3}}
+ \left\{ \begin{array}{c} A\cdot 0 + B\cdot 1 = a;\\ A\cdot \dfrac{\sqrt{3}}{2} + B \cdot \dfrac{1}{2} = b; \\ A\cdot \dfrac{\sqrt{3}}{2} - B \cdot \dfrac{1}{2} = b-a; \\ \end{array} \right. 
+a=F_0
+b=F_1
+ F(n) = \dfrac{2b-a}{\sqrt{3}} \cdot \sin \frac{\pi n}{3} \;+ \; a \cdot \cos\frac{\pi n}{3}, 
+r^2-r+1=0\implies r=\frac{1\pm\sqrt3i}2
+\lambda_1=\frac{1+\sqrt3i}2, \lambda_2=\frac{1-\sqrt3i}2
+A,B
+F_n=A\cdot \lambda_1^n+B\cdot \lambda_2^n
+\frac12=r\cos\theta,\frac{\sqrt3}2=r\sin\theta
+r>0
+r^2=1\implies r=1
+r>0
+\implies \cos\theta=\frac12>0
+\sin\theta=\frac{\sqrt3}2>0
+\tan\theta=\sqrt3\implies \theta=\frac\pi3
+\lambda_1=r(\cos\theta+i\sin\theta)=\cos\frac\pi3+i\sin\frac\pi3
+\lambda_2=r(\cos\theta-i\sin\theta)=\cos\frac\pi3-i\sin\frac\pi3=\cos(-\frac\pi3)+i\sin(-\frac\pi3)
+\cos(-x)=\cos x,\sin(-x)=-\sin x
+\lambda_2^n=\{\cos(-\frac\pi3)+i\sin(-\frac\pi3)\}^n=\cos(-\frac{n\pi}3)+i\sin(-\frac{n\pi}3)=\cos \frac{n\pi}3-i\sin\frac{n\pi}3
+\implies F_n=A\left(\cos \frac{n\pi}3+i\sin\frac{n\pi}3\right)+B\left(\cos \frac{n\pi}3-i\sin\frac{n\pi}3\right)
+=(A+B)\cos \frac{n\pi}3+i(A-B)\sin\frac{n\pi}3

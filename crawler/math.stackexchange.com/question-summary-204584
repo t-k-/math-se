@@ -1,0 +1,53 @@
+.0008 kg
+1900 kg/m^3
+0.0027 kg/s
+22 m/s
+22 m/s
+9.807 m/s^2
+-15
+15
+F_D=(pvAC_D)/2
+p
+=1.2 kg/m^3
+v
+A
+=0.00046140621
+C_D
+=.4
+\sqrt(22^2+0^2)=484
+F_D=(pvAC_D)/2
+F_D=(1.2*484*0.0004614*.4)/2=.05359
+F_y=-mg-F_D(v_y/v)
+v_y
+v_y/v=1
+F_y=-0.0008*9.8-.5359*(1)=-.54374
+x_k+1
+y_k+1
+F_x=-F_D(v_x/v)
+F_y=-mg-F_D(v_y/v)
+dv_x/dt=(F_Dv_x/mv)
+dv_y/dt=-g(F_Dv_y/mv)
+z
+n
+f:\mathbb{R}^n\to\mathbb{R}^n
+h
+z_0\in\mathbb{R}^n
+t\in\mathbb{R}
+z_0 \mapsto z_1
+z_0
+t
+z_1
+t+h
+z_1
+z_0
+z_2
+ z' = f(z), 
+ z_1 = z_0 + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4), \quad t_{1} = t_0 + h, 
+ k_1 = h f(z_0), \ k_2 = hf(z_0 + \frac{1}{2}k_1), \ k_3 = f(z_0 + \frac{1}{2}k_2), \ z_4 = h f(z_0 + k_3). 
+z=(x,y,v_x,v_y)
+x' = v_x
+y' = v_y
+v_x' = \cdots
+v_y' = \cdots
+f=(f_1,f_2,f_3,f_4)
+f_1(x,y,v_x,v_y) = v_x

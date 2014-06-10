@@ -1,0 +1,24 @@
+u
+u
+\int_{0}^\infty \phi_{1}(u,x)dx
+u\in [0, L]
+L>0
+u\in \mathbb{R}
+F(u)du
+[0,L]
+\lim\limits_{u\downarrow0}F(u)=f(0)
+F
+[0,L]
+\int_0^L F(u)du = \int_0^L\frac{2}{\pi}\int_0^\infty\frac{uf(x)}{u^2+x^2}dx\,du=\frac{2}{\pi}\int_0^\infty f(x)\int_{0}^L \frac{u}{u^2+x^2}du \, dx
+=\frac{1}{\pi}\int_0^\infty f(x) \ln\left(\frac{L^2+x^2}{x^2}\right) \, dx,
+u>0
+x=ut
+F(u)
+a>0
+u\to 0^+
+a\to\infty
+F(u)=\frac{2}{\pi}\int_0^\infty\frac{f(ut)}{1+t^2}dt.
+\int_0^\infty\frac{1}{1+t^2}dt=\frac{\pi}{2},
+F(u)-f(0)=\frac{2}{\pi}\int_0^\infty\frac{f(ut)-f(0)}{1+t^2}dt.
+|F(u)-f(0)|\le \frac{2}{\pi}\left(\int_0^a\frac{|f(ut)-f(0)|}{1+t^2}dt+\int_a^\infty\frac{|f(ut)-f(0)|}{1+t^2}dt\right)\le \frac{2}{\pi}\left(\int_0^a\frac{|f(ut)-f(0)|}{1+t^2}dt+2M\int_a^\infty\frac{1}{1+t^2}dt\right).
+\limsup_{u\to 0^+}|F(u)-f(0)|\le \frac{4M}{\pi}\int_a^\infty\frac{1}{1+t^2}dt.

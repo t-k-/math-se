@@ -1,0 +1,6 @@
+\int \frac{1}{\log(1+e^{\large x})} \mathrm{d}x
+u=\log(1+e^x)
+x=\log(e^u-1)
+dx=\dfrac{e^u}{e^u-1}du=\dfrac{1}{1-e^{-u}}du
+\therefore\int\dfrac{1}{\log(1+e^x)}dx
+=\int\dfrac{1}{u(1-e^{-u})}du

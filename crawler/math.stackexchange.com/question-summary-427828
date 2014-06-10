@@ -1,0 +1,24 @@
+ \int e^{-2x}\sin(x) \, dx 
+u = \sin x,\quad du= \cos x\,dx\quad\quad dv=e^{-2x} dx, \quad v= -\dfrac{e^{-2x}}{2}
+\left(I = \int e^{-2x}\sin x\,dx\right)
+I.\;
+I
+\mathrm e^{-2x}\sin x=\Im(\mathrm e^{ax})
+a\ne0
+\mathbb C
+x\mapsto\mathrm e^{ax}
+x\mapsto a^{-1}\mathrm e^{ax}
+x\mapsto\mathrm e^{-2x}\sin x
+x\mapsto\Im(a^{-1}\mathrm e^{ax})
+a=
+____
+\sin x=\frac{e^{ix}-e^{-ix}}{2i}
+e^{-2x}\sin x=\frac{1}{2i}(e^{x(i-2)}-e^{-x(i+2)})
+\int e^{-2x}\sin x=\int\frac{1}{2i}(e^{x(i-2)}-e^{-x(i+2)})\;dx
+\frac{1}{2i}\left(\dfrac {e^{x(i-2)}}{i-2}-\dfrac {e^{-x(i+2)})}{-(i+2)}\right)
+\frac{e^{-2x}}{2i}\left(\dfrac {e^{ix}}{i-2}+\dfrac {e^{-ix}}{i+2}\right)
+\frac{e^{-2x}}{2i}\left(\dfrac {\cos x+i\sin x}{i-2}+\dfrac {\cos x-i\sin x}{i+2}\right)
+\frac{e^{-2x}}{2i}\left(\dfrac {(\cos x+i\sin x)(i+2)+(\cos x-i\sin x)(i-2)}{i^2-4}\right)
+\dfrac {e^{-2x}(4i\sin x+2i\cos x)}{-10i}
+-\dfrac {e^{-2x}(2\sin x+\cos x)}{5}+C
+\int e^{ax}\sin bx=\dfrac {e^{ax}(a\sin bx-b\cos bx)}{a^2+b^2}+C

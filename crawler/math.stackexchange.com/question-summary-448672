@@ -1,0 +1,15 @@
+x_{k+1}=x_k+t_kd_k
+\delta,C>0,D\geq 0
+x_k \in B_{\delta}(x_*)
+ ||x_{k+1}-x_*||\leq C(||x_k-x_*||+D)||x_k-x_*||
+C=D
+C=D
+d_k = ||x_k-x_*||
+d_{k+1} \le C d_k(D+d_k) = CD d_k + C d_k^2 
+\begin{align} d_{k+1}  &\le C d_k(d_k+D) \\ &\le CD d_k+C d_k^2\\ &\le C D(CD d_{k-1}+C d_{k-1}^2)+C (CD d_{k-1}+C d_{k-1}^2)^2\\ &= C^2D^2 d_{k-1}+C^2 D d_{k-1}^2+C^3d_{k-1}^2 ( D+ d_{k-1})^2\\ &= C^2 D^2d_{k-1}+C^2 Dd_{k-1}^2+C^3d_{k-1}^2 ( D^2+ 2D d_{k-1}+d_{k-1}^2)\\ &= C^2 D^2d_{k-1}+C^2 Dd_{k-1}^2+C^3D^2d_{k-1}^2 + 2C^3D d_{k-1}^3+C^3d_{k-1}^4\\ &= C^2 D^2d_{k-1}+C^2D(1+CD) d_{k-1}^2+2C^3Dd_{k-1}^3+C^3d_{k-1}^4\\ \end{align} 
+D=C
+d_{k+1} \le C^4d_{k-1}+C^3(1+C^2) d_{k-1}^2+2C^4d_{k-1}^3+C^3d_{k-1}^4 
+d_{k+1} = C^{m+1}D^{m+1}d_{k-m} + O(d_{k-m}^2)
+m \ge 0
+D=C
+D=0

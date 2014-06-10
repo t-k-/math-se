@@ -1,0 +1,20 @@
+ \left\{  \begin{array}{c} T(1) = 1 \\ T(2) = 1 \\T(3) = 4\end{array} \right.  
+ \left\{  \begin{array}{c} T(N) = G(N-1) + F(N-1) \\ G(N) = F(N-1) + G(N-1) \\ F(N) = 2H(N-1) + F(N-2) \\ H(N) = H(N-1) + F(N-1)\end{array} \right.  
+T(N) = H(N) = G(N)
+ \left\{  \begin{array}{c} T(N) = T(N-1) + F(N-1) \\ F(N) = 2T(N-1) + F(N-2)\end{array} \right.  
+T(N) = T(N-k) + \sum_{i=1}^k F(N-i) 
+F(N) = F(N-2) +2T(N-k) + 2\sum_{i=2}^k F(N-i) 
+T(10^{12})
+ \begin{pmatrix} T_n \\ F_n \\ F_{n - 1} \end{pmatrix} = \begin{pmatrix} 1 & 1 & 0 \\ 2 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix} \begin{pmatrix} T_{n-1}\\ F_{n-1}\\ F_{n-2} \end{pmatrix}. 
+(T_1, F_1, F_0)
+(T_n, F_n, F_{n-1})
+T(N)=T(N-1)+F(N-1)
+F(N)=2T(N-1)+F(N-1)
+F(N)=2T(N-1)+F(N-2)
+N-1
+2T(N)=2T(N-1)+2F(N-1)
+2T(N)-F(N)=F(N-1)
+T(N)=\frac{1}{2}(F(N)+F(N-1))
+F(N)=F(N-1)+2F(N-2)
+2T(1)=F(1)+F(0)=2
+2T(2)=F(2)+F(1)=F(1)+2F(0)+F(1)=2(F(1)+F(0))=2

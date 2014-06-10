@@ -1,0 +1,16 @@
+f(n) = 2 \cdot f\left(\frac{n}{f(n)}\right)
+ f(n) = \omega(1) 
+ f(1) = \Theta(1) 
+ \Omega((\log n)^k) = f(n) = O(n^\alpha) 
+ k 
+\alpha
+ f(n) = 2 \cdot f\left(\frac{n}{f(n)}\right)  \le 2 \cdot \left(\frac{n}{f(n)}\right)^\alpha  = n^\alpha \cdot \left(\frac{2}{f(n)^\alpha}\right)  \le n^\alpha \quad 
+ n
+ f(n) = 2 \cdot f\left(\frac{n}{f(n)}\right)  \ge 2 \cdot \left(\log\left(\frac{n}{f(n)}\right)\right)^k \ge 2 \cdot \left(\log\left(\frac{n}{n^\alpha}\right)\right)^k = 2 \cdot (1 - \alpha)^k \cdot \left(\log n\right)^k \ge \left(\log n\right)^k \quad 
+n
+ \alpha 
+f(n)=2f\left(\dfrac{n}{f(n)}\right)
+\dfrac{f(n)}{f\left(\dfrac{n}{f(n)}\right)}=2
+\dfrac{\dfrac{n}{f(n)}}{f\left(\dfrac{n}{f(n)}\right)}=\dfrac{2n}{(f(n))^2}
+g(n)=\dfrac{n}{f(n)}
+g(g(n))=\dfrac{2(g(n))^2}{n}

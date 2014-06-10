@@ -1,0 +1,31 @@
+n
+i
+\ i=1,2,3
+p_1,p_2,p_3,\ p_1+p_2+p_3=1
+N_i
+i
+Cov(N_1,N_2)=-np_1p_2
+i=1,...,n
+X_i = \begin{cases} 1 & \text{if trial} \ i \text{ results in outcome 1} \\ 0 & \text{if trial } i \text{ does not result in outcome 1}\end{cases}
+j=1,...,n
+Y_j = \begin{cases} 1 & \text{if trial} \ j \text{ results in outcome 2} \\ 0 & \text{if trial } j \text{ does not result in outcome 2}\end{cases}
+N_1 = \sum_{i=1}^{n}X_i,\ N_2=\sum_{j=1}^{n}Y_j
+E(X_i)=p_1
+E(N_1)=np_1
+E(N_2)=np_2
+E(N_1)=E(X_1+\cdots X_n)=E(X_1)+\cdots+E(X_n).
+X_iY_j
+i\ne j
+i
+n-1
+j
+n(n-1)
+E(N_1N_2)=n(n-1)p_1p_2
+E(N_1)E(N_2)
+n^2p_1p_2
+N_2
+N_1
+N_1
+Var(X_3) = Var(X_1+X_2) = Var(X_1)+2Cov(X_1,X_2)+Var(X_2)
+np_3(1-p_3)  = np_1(1-p_1)+2Cov(X_1,X_2)+np_2(1-p_2)
+n(1-p_1-p_2)(p_1+p_2)  = np_1(1-p_1)+2Cov(X_1,X_2)+np_2(1-p_2)

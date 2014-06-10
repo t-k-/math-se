@@ -1,0 +1,27 @@
+\ast
+\mathrm{Cov}(x, y) = \int_{H} \langle x, z \rangle \langle y, z \rangle \, \mathrm{d} \mathbf{P} (z) \tag{$\ast$}
+x, y \in H
+\mathrm{Cov}(X, Y) = E((X - EX)(Y - EY))
+X: \Omega \to \mathbb{R}
+Y: \Omega \to \mathbb{R}
+(\Omega, \mathcal{F}, \mathbf{P})
+EX = \int_{\Omega} X(\omega) \, \mathrm{d} \mathbf{P} (\omega).
+z
+\ast\ast
+\mathrm{Cov}(x, y) = \int z(x) z(y) \, \mathrm{d} \mathbf{P} (z) = E(z(x) z(y)) \tag{$\ast\ast$}.
+X
+X^*
+\varphi \in X^*
+\varphi : X \to \mathbb R
+\mathbb E[\varphi] = \int_X \varphi[x] \, \mathrm d \mathbf P(x)
+\operatorname{cov}[\psi|\varphi] = \int_X \big( \psi[x] - \mathbb E[\psi]\big) \big( \varphi[x] - \mathbb E[\varphi]\big)  \, \mathrm d \mathbf P(x).
+\mathbf P
+X = H
+H^*
+H
+\varphi_h[x] := \langle h, x \rangle
+m \in H
+\mathbf P
+\mathbb E[\varphi_h] = \varphi_h[m] = \langle h, m \rangle
+h \in H
+\operatorname{cov}[\varphi_h|\varphi_{h'}] = \int_X \big\langle h, x - m \big\rangle \big\langle h', x-m \big\rangle \, \mathrm d \mathbf P(x).

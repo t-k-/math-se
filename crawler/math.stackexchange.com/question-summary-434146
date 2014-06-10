@@ -1,0 +1,13 @@
+y
+U
+\int\frac{dv}{v} = \ln(v)
+f(x)
+A=-1
+B=y
+\ln(f(x)) = -\ln(x) + \ln(-1+xy) + C
+\exp(x)
+e^x
+\begin{align} f(x) &= \exp(-\ln(x) + \ln(-1+xy) + C)\\ &=\exp(-\ln(x))\cdot\exp(\ln(-1+xy))\cdot\exp(C)\\ &=\left(\frac{1}{x}\right)\left(xy-1\right)\cdot(C)\\ &=\left(y - \frac{1}{x}\right)\cdot C \end{align}
+\exp(a+b)\ne\exp(a)+\exp(b)
+\begin{align} \frac{f'(x)}{f(x)} &= \frac{\frac{C}{x^2}}{\left(y - \frac{1}{x}\right)\cdot C}\\ &=\frac{1}{x^2\left(y - \frac{1}{x}\right)}\\ &=\frac{1}{x^2y-x} \end{align}
+\int\frac{f'(x)}{f(x)}\,dx = \int\frac{1}{x^2y-x}\,dx

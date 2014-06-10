@@ -1,0 +1,21 @@
+f\colon\mathbf{R}^2\to\mathbf{R}
+\mathcal{C}^p
+B_r(x_0,y_0)
+r>0
+(x,y)\in B_r(x_0,y_0)
+(c,d)
+(x_0,y_0)
+(x,y)
+f(x,y)=f(x_0,y_0)+\sum_{k=1}^{p-1}\frac{1}{k!}\left(\sum_{j=0}^k\binom{k}{j}(x-x_0)^j(y-y_0)^{k-j}\frac{\partial^k f}{\partial x^k\partial y^{k-j}}(x_0,y_0)\right)\\ +\frac{1}{p!}\sum_{j=0}^p\binom{p}{j}(x-x_0)^j(y-y_0)^{p-j}\frac{\partial^p f}{\partial x^k\partial y^{p-j}}(c,d)
+\mathbf{v}(t) = (x_0, y_0) + t(x-x_0, y-y_0)
+\phi(t)=f(\mathbf{v}(t))
+\phi
+t=0
+t=1
+p=2
+\phi(1) = \phi(0) + \phi'(0)\cdot1 + \phi''(t^*)\cdot1
+t^*\in (0,1)
+H_f
+f
+\phi'(0)=f_1(x_0,y_0)(x-x_0)+f_2(x_0,y_0)(y-y_0), \text{ and}
+\phi''(t^*)=\left\langle H_f(t^*)\left(\begin{matrix}x-x_0 \\ y - y_0\end{matrix}\right), \left(\begin{matrix}x-x_0 \\ y - y_0\end{matrix}\right) \right\rangle,

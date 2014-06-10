@@ -1,0 +1,24 @@
+f(x) =x^{3}
+10^{-5}
+x_{0} = 0.9
+x_{n+1}  = x_{n} - \frac{f(x_{n})}{f'(x_{n})}.
+f(x)=x^3
+x_{n+1}=x_n-\frac{x_n^3}{3 x_n^2}=\frac{2}{3}x_n
+ x_n = \left(\frac{2}{3}\right)^n x_0.
+x_n\leq 10^{-5}
+n
+\leq
+\geq
+n\ln\frac{2}{3}\leq\ln\frac{10^{-5}}{0.9}\quad\Rightarrow\quad n\geq\frac{\ln (10^{-5}/0.9)}{\ln(2/3)}\approx 28.2
+10^{-5}
+e_{n+1}=-\frac{f''(\theta_n)}{2f'(x_n)}e_n^2
+\theta_n
+x_n
+e_0
+|-\frac{f''(\theta_n)}{2f'(x_n)}|<M.
+|e_n|\le M|e_{n-1}|^2\le M^{1+2}|e_{n-2}|^4\le ...\le M^{1+2+4+...+2^n}|e_0|^{2^n}=|e_0M|^{2^{n}}M^2
+d
+|e_0M|^{2^{n}}M^2<10^{-d}
+n
+{2^{n}}>\frac{\ln(\frac{10^{-d}}{M^2})}{\ln|e_0M|}
+n>\log_2\left(\frac{\ln(\frac{10^{-d}}{M^2})}{\ln|e_0M|}\right).

@@ -1,0 +1,9 @@
+∫x\sin(x)\,dx
+∫x^2\sin(x)\,dx
+∫x^{25}\sin(x)\,dx
+\int x^n\sin x\,dx=\sum_{k=0}^{\lfloor n/2\rfloor}(-1)^{k+1}x^{n-2k}{n!\over(n-2k)!}\cos x+\sum_{k=0}^{\lfloor(n-1)/2\rfloor}(-1)^kx^{n-2k-1}{n!\over(n-2k-1)!}\sin x
+n\in \Bbb N
+a_n = {\mathcal{Re}} \left(c_n\right)
+b_n = {\mathcal{Im}} \left(c_n\right)
+c_n
+ \begin{eqnarray} c_n &=& a_n + i b_n = \int dx \ x^n e^{i x} = \int dx \ x^n \sin x + i \int dx \ x^n \cos x \\ &=& - i\int dx \ \left[\frac{d}{dx}\left(x^n e^{i x}\right) - n x^{n-1} e^{i x}\right] \\ &=& - i \left(x^n e^{i x} - n c_{n - 1}\right) \end{eqnarray} 

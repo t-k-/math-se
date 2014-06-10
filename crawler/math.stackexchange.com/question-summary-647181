@@ -1,0 +1,28 @@
+(A,B,C,D)
+\dot{x} = Ax+Bu, y = Cx+Du
+u
+y_u(t) = \int_0^t G(t-\tau) u(\tau) d \tau = \int_0^t G(\tau) u(t-\tau) d \tau
+u(t) = \alpha
+t\ge 0
+y_u(t) = (\int_0^t G(\tau)  d \tau)\alpha
+G
+\lim_{t \to \infty} y_u(t) = (\int_0^\infty G(\tau)  d \tau)\alpha
+\hat{G}
+\bar{\mathbb{C}}_+
+\int_0^\infty G(\tau)  d \tau = ({\cal L}G)(0) = \hat{G}(0)
+\lim_{t \to \infty} y_u(t) = \hat{G}(0) \alpha
+u(t) = e^{i \omega_0 t}
+t\ge 0
+y_u(t) = e^{i\omega_0 t} \int_0^t G(\tau) e^{-i\omega_0 \tau} d \tau
+z(t) = e^{i\omega_0 t} \int_0^\infty G(\tau) e^{-i\omega_0 \tau} d \tau = \hat{G}(i \omega_0)e^{i\omega_0 t}
+\hat{G}
+\bar{\mathbb{C}}_+
+\|y_u(t)-z(t)\| = \| e^{i\omega_0 t} \int_t^\infty G(\tau) e^{-i\omega_0 \tau} d \tau \| \le \int_t^\infty \|G(\tau) \|  d \tau
+G
+\lim_{t \to \infty}\int_t^\infty \|G(\tau) \| d \tau = 0
+\lim_{T \to \infty} \sup_{t \ge T} \|y_u(t)-z(t)\| = 0
+u(t) = \sin \omega_0 t = {1 \over 2 i} (e^{i\omega_0 t} -e^{- i\omega_0 t} )
+y_u
+z(t) = {1 \over 2 j}  (\hat{G}(i \omega_0)e^{i\omega_0 t} - \hat{G}(-i \omega_0)e^{-i\omega_0 t})
+\hat{G}(-i \omega_0) = \overline{\hat{G}(i \omega_0)}
+z(t) = \operatorname{im} (\hat{G}(i \omega_0)e^{i\omega_0 t}) = \operatorname{im} (|\hat{G}(i \omega_0)|e^{i(\omega_0 t + \operatorname{arg} \hat{G}(i \omega_0)})= |\hat{G}(i \omega_0)| \sin (\omega_0 t + \operatorname{arg} \hat{G}(i \omega_0))

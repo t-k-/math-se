@@ -1,0 +1,32 @@
+F_{n} +2F_{n-1} + ... + (n+1)\cdot F_{0} = 3^{n}
+F_{n}
+n-1
+n
+F_{n-1} +2F_{n-2} + ... + (n-1+1)\cdot F_{0} = 3^{n-1}
+ F_{n-1} +2F_{n-2} + ... + n\cdot F_{0} = 3^{n-1} 
+F_{n} +2F_{n-1} + ... + (n+1)\cdot F_{0} -(F_{n-1} +2F_{n-2} + ... + n\cdot F_{0} ) =3^{n} - 3^{n-1} 
+F_n+F_{n-1}+F_{n-2}+\ldots+F_0=2\cdot 3^{n-1}\;.
+n-1
+n
+F_{n-1}+F_{n-2}+\ldots+F_0=2\cdot3^{n-2}\;.
+F_n
+F_{n} +2F_{n-1} + ... + (n+1)\cdot F_{0} = 3^{n}
+z^n
+( F_0 + F_1 z + F_2 z^2 + \cdots )(1 + 2z + 3z^2 + \cdots ) = 1 + 3z + 3^2 z^2 + \cdots
+\frac{1}{(1-z)^2} = 1 + 2z + 3z + \cdots
+\frac{1}{1-3z} = 1 + 3z + 3^2 z^2 + \cdots
+z^n
+\frac{\sum_{k=0}^{\infty} F_k z^k}{(1-z)^2} = \frac{1}{1-3z} \quad\implies\quad\sum_{k=0}^{\infty} F_k z^k  = \frac{(1-z)^2}{1-3z} = \frac{1 - 2z + z^2}{1-3z}
+\begin{align} F_0 &= 1\\ F_1 &= 1\cdot 3^1 - 2 \cdot 1 = 1\\ &\;\vdots\\ F_n &= 1\cdot 3^n - 2 \cdot 3^{n-1} + 1 \cdot 3^{n-2} = 4\cdot 3^{n-2},\quad\text{ for }n \ge 2 \end{align}
+A(x) = \sum_{n=0}^{\infty} F_n x^n 
+B(x) = \sum_{n=0}^{\infty} (n+1) x^n 
+C(x) = A(x) B(x) 
+\begin{align} C(x)  &= A(x) B(x)\\ &= \left(\sum_{n=0}^{\infty} F_n x^n\right) \left( \sum_{n=0}^{\infty} (n+1) x^n\right)\\ &= \sum_{i=0}^{\infty} \sum_{j-0}^{\infty} (j+1)F_i x^{i+j}\\ &= \sum_{n=0}^{\infty}\sum_{i=0}^{n}  (n-i+1)F_i x^n \quad\text{ Setting }i+j=n\text{, so } j=n-i\\ &= \sum_{n=0}^{\infty} x^n\sum_{i=0}^{n}  (n-i+1)F_i\\ \end{align} 
+\sum_{i=0}^{n}  (n-i+1)F_i = 3^n
+C(x) = A(x)B(x) =\sum_{n=0}^{\infty}3^n x^n =\sum_{n=0}^{\infty} (3x)^n = \dfrac{1}{1-3x} 
+B(x)
+A(x) = C(x)/B(x)
+\begin{align} B(x)  &= \sum_{n=0}^{\infty} (n+1) x^n\\ &= \sum_{n=0}^{\infty} (x^{n+1})'\\ &= \left(\sum_{n=0}^{\infty} x^{n+1}\right)'\\ &= \left(\dfrac{x}{1-x}\right)'\\ &= \dfrac{(1-x)+x}{(1-x)^2}\\ &= \dfrac{1}{(1-x)^2}\\ \end{align} 
+\begin{align} A(x)  &= \dfrac{1}{1-3x}\big/\dfrac{1}{(1-x)^2}\\ &= \dfrac{(1-x)^2}{1-3x}\\ &= (1-2x+x^2)\sum_{n=0}^{\infty} 3^n x^n\\ &= \sum_{n=0}^{\infty} 3^nx^n -\sum_{n=0}^{\infty} 2\ 3^nx^{n+1} +\sum_{n=0}^{\infty} 3^nx^{n+2}\\ &= \sum_{n=0}^{\infty} 3^nx^n -\sum_{n=1}^{\infty} 2\ 3^{n-1}x^{n} +\sum_{n=2}^{\infty} 3^{n-2}x^{n}\\ &= 1+3x+\sum_{n=2}^{\infty} 3^nx^n -2x-\sum_{n=2}^{\infty} 2\ 3^{n-1}x^{n} +\sum_{n=2}^{\infty} 3^{n-2}x^{n}\\ &= 1+x +\sum_{n=2}^{\infty} x^n(3^n-2\ 3^{n-1}+3^{n-2}) \quad(*)\text{ We can stop here to get } F_n\\ &= 1+x +\sum_{n=2}^{\infty} x^n 3^n(1-2/3+1/9)) \quad\text{ Continuing on anyway to get } A(x)\\ &= 1+x +(4/9)\sum_{n=2}^{\infty} x^n 3^n\\ &= 1+x +(4/9)\dfrac{9x^2}{1-3x}\\ &= \dfrac{(1+x)(1-3x)+4x^2}{1-3x}\\ &= \dfrac{1-2x+x^2}{1-3x}\\ &= \dfrac{(1-x)^2}{1-3x}\\ \end{align} 
+(*)
+F_n  = 3^n-2\ 3^{n-1}+3^{n-2} = 3^{n-2}(9-6+1) = 4\ 3^{n-2} 

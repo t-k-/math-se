@@ -1,0 +1,30 @@
+\mathbb{d}X_t=|X_t|\mathbb{d}B_t+\frac{X_t}{2}\mathbb{d}t, X_0=0
+\mathbb{d}X_t=\sqrt{1+X_t^2}\mathbb{d}B_t+\frac{X_t}{2}\mathbb{d}t, X_0=x
+dB_t
+X_t
+dX_t = |X_t| \, dB_t+ \frac{X_t}{2} \, dt \qquad X_0=0
+X_t := 0
+dX_t = \sqrt{1+X_t^2} \, dB_t + \frac{X_t}{2} \, dt, \qquad X_0=x \tag{2}
+x=0
+dX_t = \sigma(X_t) \, dB_t + b(X_t) \, dt \tag{3}
+t
+Z_t := f(t) \cdot \int_0^{X_t} \frac{1}{\sigma(y)} \, dy
+Z_t-Z_0 = \int f(s) \, dB_s + \int_0^t \ldots \, ds,
+ds
+f
+f(t)=e^{ct}
+t
+b
+\sigma
+(3)
+(Z_t)_t
+0 = \frac{d}{dx} \left( \sigma(x) \cdot \left( - \frac{d}{dx} \frac{b(x)}{\sigma(x)} + \frac{1}{2} \sigma''(x) \right) \right).
+Z_t = e^{c t} \int_0^{X_t} \frac{1}{\sigma(y)} \, dy\tag{4}
+(2)
+c=0
+Z_t = \int_0^t \, dB_s = B_t
+B_t = Z_t \stackrel{(4)}{=} \int_0^{X_t} \frac{1}{\sqrt{1+y^2}} \, dy.
+y \mapsto \frac{1}{\sqrt{1+y^2}}
+y \mapsto \text{arsinh} \, y
+B_t = \text{arsinh}(X_t)
+X_t = \sinh(B_t)

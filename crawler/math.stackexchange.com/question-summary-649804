@@ -1,0 +1,39 @@
+R^{N}
+x_{i}
+i=1,..m<n
+n
+y_{i}
+M
+(x_{1},...,x_{m})M = (y_{1},...,y_{m})
+ AX = 0 \ , 
+A
+ \begin{pmatrix} 1 & 0 & \dots & 0 & a^1_{r+1} & \dots &  a^1_n \\ 0 & 1 & \dots & 0 & a^2_{r+1} & \dots &  a^2_n  \\ \dots   \\ 0 & 0 & \dots & 1 & a^r_{r+1} & \dots &  a^r_n  \\ 0 & 0 & \dots & 0 & 0         & \dots &  0  \\ \dots  \\ 0 & 0 & \dots & 0 & 0         & \dots & 0 \end{pmatrix} 
+r
+A
+ (x_1, \dots , x_r, x_{r+1}, \dots , x_n) = x_{r+1}(-a^1_{r+1}, \dots, -a^r_{r+1}, 1, 0, \dots , 0) + x_2(-a^2_1, \dots, -a^2_n, 0, 1, 0, \dots , 0) +\dots + x_{n} (-a^r_1, \dots , -a^r_n, 0, \dots , 0, 1) \ . 
+d = n-r
+ u = \lambda_1 v_1 + \dots + \lambda_d v_d \ . 
+d
+V
+ v_1 = \begin{pmatrix} a^1_1 \\ \vdots \\ a^n_1 \end{pmatrix} \ , \dots ,  v_d = \begin{pmatrix} a^1_d \\ \vdots \\ a^n_d \end{pmatrix} 
+\lambda_i
+ u = \begin{pmatrix} x_1 \\ \vdots  \\ x_n \end{pmatrix} 
+ \begin{pmatrix} a^1_1 & \dots & a^1_d \\ \vdots &      & \vdots \\ a^n_1 & \dots & a^n_d \end{pmatrix} \begin{pmatrix} \lambda_1  \\ \vdots  \\ \lambda_d \end{pmatrix} = \begin{pmatrix} x_1 \\ \vdots  \\ x_n \end{pmatrix}  \ . 
+ \begin{pmatrix} * & \dots & * & | & g_1(x_1, \dots , x_n) \\ \vdots &   &\vdots & | & \\ * & \dots & * & | & g_d(x_1, \dots , x_n) \\ 0 & \dots & 0 & | & g_{d+1}(x_1, \dots , x_n) \\ \vdots &  &\vdots & | & \\ 0 & \dots & 0 & | & g_n(x_1, \dots , x_n) \\ \end{pmatrix} 
+ g_{d+1}(x_1, \dots , x_n)= 0 \ , \dots , \ g_n(x_1, \dots , x_n) = 0 \ , 
+ v_1 = (1,-1,0) , v_2 = (1,1, 0) \ . 
+V
+xy
+V
+ \begin{pmatrix} 1  &  1  & | & x  \\ -1 &  1  & | & y  \\ 0  &  0  & | & z \end{pmatrix} 
+ \begin{pmatrix} 1  &  1  & | & x  \\ 0  &  2  & | & x +y  \\ 0  &  0  & | & z \end{pmatrix} 
+g_i
+ g_1(x,y,z) = x \ , \  g_2(x,y,z) = x + y  \quad \text{and} \quad g_3(x,y,z) = z \ . 
+z = 0
+V
+ (x,y,0) = x (1,0,0) + y (0,1,0) \ , 
+x,y
+V
+ u_1 = (1,0,0) \quad \text{and} \quad u_2 = (0,1,0) \ . 
+ \begin{pmatrix} 1      & 0      & \dots   & 0      \\ 0      & 1      & \dots   & 0      \\ \vdots & \vdots & \ddots  & 0      \\ 0      & 0      & \dots   & 1      \\ b^d_1  & b^d_2  & \dots   & b^d_d  \\ \vdots & \vdots & \ddots  & \vdots  \\ b^n_1  & b^n_2  & \dots   & b^n_d \end{pmatrix} 
+ \begin{pmatrix} 1  & 1   \\ -1  & 1   \\ 0  & 0 \end{pmatrix} \longrightarrow \begin{pmatrix} 1  &  0  \\ -1  & 2   \\ 0  &  0 \end{pmatrix} \longrightarrow \begin{pmatrix} 1  & 0   \\ -1  & 1   \\ 0  & 0 \end{pmatrix} \longrightarrow \begin{pmatrix} 1  &  0  \\ 0  &  1  \\ 0  &  0 \end{pmatrix} 

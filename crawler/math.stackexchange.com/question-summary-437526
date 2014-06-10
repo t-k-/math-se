@@ -1,0 +1,21 @@
+\lim_{h\rightarrow 0} \frac{e^{-h}}{-h}
+\lim_{h\rightarrow 0} \frac{|\cos h-1|}{h}
+(1):\lim_{h\to0}e^{-h}=1
+(2):
+\cos h=1-2\sin^2\frac h2\implies \cos h-1=-2\sin^2\frac h2
+\implies \frac{\cos h-1}h=-\left(\frac{\sin \frac h2}{\frac h2}\right)^2 \frac h4
+\cos h\le 1
+|\cos h-1|=1-\cos h
+\lim_{h\to 0} \frac{1-\cos h}{h}=\lim_{h\to 0} \frac{(1-\cos h)(1+\cos h)}{h(1+\cos h)}=\lim_{h\to 0} \frac{1-\cos^2 h}{h(1+\cos h)}=\lim_{h\to 0}\frac{\sin h}{h}\lim_{h\to 0}\frac{\sin h}{1+\cos h}=1\cdot 0=0
+\lim_{h\to 0}e^{-h}=1
+\frac{\cos h-1}{h}=\frac{\cos h - \cos 0}{h-0}\to (\cos h )'|_{h=0}=0.
+\cos(a)-\cos(b)=-2\sin((a+b)/2)\sin((a-b)/2)
+\cos(0)=1
+\frac{\cosh-1}{h}=\frac{-2\sin(h/2)\sin(h/2)}{h}.
+e^x=\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\ldots
+|h|<1
+h\to 0
+h\to 0
+ \frac{1}{0!}(-h)^0+\frac{1}{1!}(-h)^1 \leq e^{-h} \leq  \frac{1}{0!}(-h)^0+\frac{1}{1!}(-h)^1+\frac{1}{2!}(-h)^2 
+ 1-h \leq e^{-h} \leq  1-h+\frac{1}{2}h^2 
+ 1-\frac{1}{h} \geq  \frac{e^{-h}}{-h} \geq 1-\frac{1}{h}-\frac{1}{2}h 

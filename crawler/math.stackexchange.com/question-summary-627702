@@ -1,0 +1,26 @@
+exp(-x)
+0<x<L
+L
+x
+e^{-n}
+0 \leq n \leq 40.
+x
+1
+  e^{-\left\lfloor x \right\rfloor} \; e^{\left\lfloor x \right\rfloor - x}  
+n
+x,
+L
+ f(x) = e^{-x}\\ g(x) = a_0 + a_1 x + a_2 x^2 \\ e(x) = f(x)-g(x)
+J
+a_0
+a_1
+a_2
+ J = \int_5^{40} e(x)^2 dx
+ \frac{dJ}{d a_0}=0 \\ \frac{dJ}{d a_1}=0 \\ \frac{dJ}{a_2}=0  
+ \frac{d}{d a_0}\int_5^{40} e(x)^2 dx =  \int_5^{40} 2 e(x) \frac{d e(x)}{d a_0} dx = -2\int_5^{40}  \left(e^{-x} - (a_0+a_1 x + a_2 x^2) \right)dx = 0 
+ \frac{d}{d a_1}\int_5^{40} e(x)^2 dx =  \int_5^{40} 2 e(x) \frac{d e(x)}{d a_1} dx = -2\int_5^{40}  \left(e^{-x} - (a_0+a_1 x + a_2 x^2) \right) x dx = 0 
+ \frac{d}{d a_2}\int_5^{40} e(x)^2 dx =  \int_5^{40} 2 e(x) \frac{d e(x)}{d a_2} dx = -2\int_5^{40} \left(e^{-x} - (a_0+a_1 x + a_2 x^2)\right) x^2 dx = 0 
+e^{-x}
+0<x<40
+ e^{-x} = \frac{1.1570762 -0.1746994 x + 0.0045234 x^2}{1-2.0289128 x}
+<0.16

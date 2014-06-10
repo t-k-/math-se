@@ -1,0 +1,20 @@
+f:\mathbb{R}\to\mathbb{R}
+I:=(0,1)
+\;\;\;\;\;\;\;\;\;\;g : I\to \mathbb{R}\;,\;\;\; \displaystyle x \mapsto\int_x^1\frac{1}{t}f(t)\text{ dt}
+g
+I
+\;\;\;\;\;\;\;\;\;\;\displaystyle\int_Ig(x)\text{ dx}=\int_If(x)\text{ dx}
+\;\;\;\;\;\;\;\;\;\;\displaystyle\int_Ig(x)\text{ dx}=\displaystyle\int_I\int_x^1\frac{1}{t}f(t)\text{ dt}\text{ dx}=\displaystyle\int_x^1 \int_I\frac{1}{t}f(t)\text{ dx}\text{ dt}=\displaystyle\int_x^1 \frac{1}{t}f(t)\text{ dt}=\cdots
+\int_x^1 \frac{1}{t}f(t)\text{ dt}?
+h(x,t) = {1 \over t} |f(t)| 1_{[x,1)}(t)
+g(x) = \int_I h(x,t) dt
+h(x,t) \ge 0
+x,t \in I
+\int h = \int (\int h(x,t) dt) dx = \int( \int h(x,t) dx) dt
+\int( \int h(x,t) dx) = |f(t)|
+\int( \int h(x,t) dx) dt = \int |f| < \infty
+g
+h
+\eta(x,t) = {1 \over t} f(t) 1_{[x,1)}(t)
+g(x) = \int \eta(x,t) dt
+\int h = \int g = \int f

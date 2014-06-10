@@ -1,0 +1,18 @@
+2\pi
+f(t)=t^2
+-\pi \le t \le \pi
+f_k
+f_k = \frac{1}{2\pi} \int_{-\pi}^{\pi} t^2 e^{-ikt}\,dt
+f_k = \frac{1}{2\pi} \int_{-\pi}^{\pi} t^2 e^{ikt}\,dt
+c_n \in \mathbb C
+ f(t) = t^2 = \sum_{n \in \mathbb Z} c_n e^{int} 
+ c_k = \frac 1{2\pi} \int_{-\pi}^{\pi} f(t) e^{-ikt} \, dt. 
+ f(t) = \sum_{n \in \mathbb Z} c_n e^{int} 
+ \int_{-\pi}^{\pi} \left( \sum_{n \in \mathbb Z} c_n e^{int} \right) e^{-ikt} \, dt = \sum_{n \in \mathbb Z} c_n \int_{-\pi}^{\pi} e^{int} e^{-ikt} \, dt = 2\pi c_k, 
+ \int_{-\pi}^{\pi} e^{i(n-k)t} \, dt = \begin{cases} 2\pi & \text{ if } n=k \\ 0 & \text{ otherwise }. \end{cases} 
+\{ e^{int} \, | \, n \in \mathbb Z \}
+L^2
+[-\pi,\pi]
+-
+\overline{e^{int}} = e^{-int}
+ \langle f,g \rangle = \int_{-\pi}^{\pi} f(t) \overline{g(t)} \, dt 

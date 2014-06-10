@@ -1,0 +1,10 @@
+R
+S
+R\sim Beta(j+1,l+1)
+S\sim Beta(m-j+1,m-l+1)
+i,j,k,l \in\{0,1,\ldots,m\}
+ \int_{0}^{1}\int_{0}^{1}\frac{r^{i+j}(1-r)^{k+l}s^{2m-i-j}(1-s)^{2m-k-l}}{(r+s)^{m}(2-r-s)^{m}}drds \quad i,j,k,l \in\{0,1,\ldots,m\},
+\mathrm{Ex}\left[\frac{R^{i}(1-R)^{k}S^{m-i}(1-S)^{m-k}}{(R+S)^{m}(2-R-S)^{m}}\right]
+P_i
+I_m(a,b)
+\begin{eqnarray}   \int \int \frac{r^a (1-r)^b s^{2m-a} (1-s)^{2m-b}}{(r+s)^m (2-r-s)^m} \mathrm{d}r \,\mathrm{d}s &=& \frac{P_1(r,s)}{(r+s)^{m-2}(2-r-s)^{m-2}} \\ && + \left(P_2(r) + P_3(s)\right) \log(r+s) \\ && + \left(P_4(r) + P_5(s) \right) \log(2-r-s) + C \end{eqnarray} 

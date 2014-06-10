@@ -1,0 +1,12 @@
+f(n,m)
+n
+m
+f(n,m)=\binom{n+m+2}{n+1}-1
+f(n,m)=\sum_{i=0}^n\sum_{j=0}^m \binom{i+j}{i}
+\sum_{j=0}^m\binom{i+j}{i}=\binom{i+m+1}{i+1}=\binom{i+m+1}{m}
+f(n,m)=\sum_{i=0}^n \binom{i+m+1}{m} = -1 + \sum_{i=0}^{n+1}\binom{i+m}{m} = \binom{m+n+1+1}{m+1}-1
+\sum_{k=0}^A \binom{B+k}{B} = \binom{B+A+1}{B+1}
+A=m
+B=i
+A=n+1
+B=i

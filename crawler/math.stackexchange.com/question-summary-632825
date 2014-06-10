@@ -1,0 +1,13 @@
+X_{\sigma} \sim \mathcal{N}(\mu,\sigma^{2})
+f(\sigma)=\mathbb{E} (X_{\sigma}^2 1_{\{X_{\sigma}>0\}})
+\sigma
+\mu
+f_X(x)
+\mathcal{N}(\mu, \sigma)
+x
+\Phi(x)
+\phi(x)
+     \sigma^4 \frac{\partial^2}{\partial \mu^2} f_X + 2 \mu \sigma^2 \frac{\partial}{\partial \mu} f_X + \left(\mu^2 + \sigma^2\right) f_X = x^2 f_X 
+ \begin{eqnarray}     \mathsf{E}\left(X^2 \cdot 1_{X>0}\right) &=& \left[ \sigma^4 \frac{\partial^2}{\partial \mu^2}+ 2 \mu \sigma^2 \frac{\partial}{\partial \mu} + \left(\mu^2 + \sigma^2\right) \right] \circ \Pr\left(X > 0\right) \\  &=& \left(\mu^2 + \sigma^2\right) \Pr(X>0) + \mu \sigma^2 f_X(0) \\  &=& \sigma^2 h\left(\frac{\mu}{\sigma}\right) \end{eqnarray} 
+     h(x) = \left( \left(1 + x^2\right) \Phi\left(x\right) + x \phi(x) \right) 
+    f^\prime(\sigma) = \sigma \left( 2 h\left(\frac{\mu}{\sigma}\right) - \frac{\mu}{\sigma} h^\prime\left(\frac{\mu}{\sigma}\right) \right) = 2 \sigma \Phi\left(\frac{\mu}{\sigma}\right) > 0 

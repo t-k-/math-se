@@ -1,0 +1,31 @@
+y=lnx_{1}+2lnx_{2}
+x_{1}
+x_{2}
+y
+w_{1}
+w_{2}
+c(\mathbf{w}, y)=min\; \;  w_{1}x_{1}+w_{2}x_{2}
+y=f(\mathbf{x})
+c(w_{1},w_{2}, y)=min\; \;  w_{1}x_{1}+w_{2}x_{2}
+y=f(x_1,x_2)=lnx_{1}+2lnx_{2}
+L=w_{1}x_{1}+w_{2}x_{2}+\lambda (y-lnx_{1}+2lnx_{2}) 
+\frac{\partial L}{\partial x_1}=w_1 - \frac {\lambda }{x_1}=0
+\frac{\partial L}{\partial x_2}=w_2 - \frac {2\lambda }{x_2}=0
+w_1 = \frac {\lambda }{x_1}
+w_2 = \frac {2\lambda }{x_2}
+w_1
+w_2
+x_2=\frac {2x_1w_1}{w_2}
+x_1=\frac {w_2x_2}{2w_1}
+x_2
+y=ln x_1+2ln{(\frac{2x_1w_1}{w_2})}
+x_1
+x_1=\left ( \frac{e^yw_{2}^{2}}{4w_{1}^{2}} \right )^{1/3}
+x_2=\left ( \frac{e^y2w_{1}}{w_{2}} \right )^{1/3}
+e^y=...
+y=\ln x_1+2\ln{\left(\frac{2x_1w_1}{w_2}\right)}
+y=\ln x_1+2\ln x_1 +2 \ln{\left(\frac{2w_1}{w_2}\right)}
+3\ln x_1 = y- 2 \ln{\left(\frac{2w_1}{w_2}\right)}
+\ln x_1 = \frac{1}{3} \left(y- {2} \ln{\left(\frac{2w_1}{w_2}\right)}\right)
+ x_1 =  \left(\exp(y){\left(\frac{2w_1}{w_2}\right)^{-2}}\right)^\frac{1}{3}
+ x_1 =  {\left(\frac{e^y w_2^2}{4w_1^2}\right)}^\frac{1}{3}

@@ -1,0 +1,19 @@
+f(x,y) = x^2 y
+C
+\vec{r}(t) = \langle e^{t^2},\ \sin(\pi t/2 )\rangle
+0\le t \le 1
+\int_C \nabla f \cdot d\vec{r}
+f(\mathbf{r})\equiv f(x,y)=x^2y
+\mathbf{r}(t)\equiv (x(t),y(t))=(e^{t^2},\sin \frac{\pi t}{2})
+t_i=0
+t_f=1
+\int_{C}\nabla f\cdot d\mathbf{r}=\int_{t_{i}}^{t_{f}}\nabla f(\mathbf{r}(t))\cdot\frac{d\mathbf{r}}{dt}dt=\int_{t_{i}}^{t_{f}}\frac{df(\mathbf{r}(t))}{dt}dt
+\int_{C}\nabla f\cdot d\mathbf{r}=f(\mathbf{r}(t_{f}))-f(\mathbf{r}(t_{i}))
+\int_{C}\nabla f\cdot d\mathbf{r}=f(\mathbf{r}(1))-f(\mathbf{r}(0))=f(e,1)-f(1,0)
+\int_{C}\nabla f\cdot d\mathbf{r}=e^2\cdot1-1^2\cdot 0=e^2
+f(x,y)=x^2y
+x_0=\langle1,0\rangle
+x_1=\langle e,1\rangle
+f(x_1)-f(x_0)=e^2
+ \begin{align} \nabla f(x,y) &=\langle2xy,x^2\rangle\\ &=\langle2e^{t^2}\sin(\pi t/2),e^{2t^2}\rangle \end{align} 
+ \mathrm{d}r=\langle2te^{t^2},\pi/2\,\cos(\pi t/2)\rangle\mathrm{d}t 

@@ -1,0 +1,29 @@
+u
+|u| \leq\sqrt{\sum_i |x_i|}
+u(x) = \frac{1}{R\omega_{n-1}}\int_{S_R} u(y)\frac{R^2 - \lVert x\rVert^2}{\lVert x - y\rVert^n}\, d\sigma(y),
+\lVert x\rVert < R
+n
+S_R = \{ \zeta \colon \lVert\zeta\rVert = R\}
+\omega_{n-1}
+n-1
+S_1
+d\sigma
+P_R(x,y) = \frac{1}{R\omega_{n-1}}\frac{R^2 - \lVert x\rVert^2}{\lVert x-y\rVert^n}
+x \neq y
+\frac{\partial u}{\partial x_i}(x) = \frac{1}{R\omega_{n-1}}\int_{S_R} u(y)\frac{\partial}{\partial x_i}\frac{R^2 - \lVert x\rVert^2}{\lVert x - y\rVert^n}\, d\sigma(y).
+\frac{\partial}{\partial x_i}\frac{R^2 - \lVert x\rVert^2}{\lVert x - y\rVert^n} = -\frac{2x_i}{\lVert x-y\rVert^n} - \frac{n(R^2 - \lVert x\rVert^2)(x_i-y_i)}{\lVert x-y\rVert^{n+2}}
+\lVert x\rVert < \frac{R}{2}
+\lVert x-y\rVert > \frac{R}{2}
+\frac{1}{R^{n-1}}
+n
+R
+\left\lvert\frac{\partial u}{\partial x_i}(x)\right\rvert \leqslant \frac{C}{R^n\omega_{n-1}} \int_{S_R} \lvert u(y)\rvert \,d\sigma(y) \leqslant \frac{C}{R} \max_{y \in S_R} \lvert u(y)\rvert.
+\lvert u(x)\rvert \leqslant \sqrt{\sum_i \lvert x_i\rvert}
+\lvert u(x)\rvert \leqslant \sqrt[4]{n}\sqrt{\lVert x\rVert}
+\left\lvert\frac{\partial u}{\partial x_i}(x)\right\rvert \leqslant \frac{\sqrt[4]{n}C}{\sqrt{R}}.
+R \to \infty
+\frac{\partial u}{\partial x_i}(x) = 0
+u
+\lVert x\rVert
+\neq 0
+u \equiv 0

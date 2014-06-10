@@ -1,0 +1,11 @@
+\pi(x)
+\lim_{x\to\infty}\sum\limits_{p \leq x} p \log{p}>\lim_{x\to\infty}\sum\limits_{p \leq x}1
+=\lim_{x\to\infty}\pi(x)\tag{$\pi(x)$ is prime counting func.}
+=\lim_{x\to\infty}\left(\frac{\pi(x)}{\frac{x}{\log x}}\right)\left(\frac{x}{\log x}\right)=\left(\lim_{x\to\infty}\frac{\pi(x)}{\frac{x}{\log x}}\right)\left(\lim_{x\to\infty}\frac{x}{\log x}\right)
+=\lim_{x\to\infty}\frac{x}{\log x}\to\infty
+\lim_{x\to\infty}\frac{\pi(x)}{\frac{x}{\log x}}=1
+S(x) = \sum\limits_{p_n \leq x} p_n \log{p_n}
+p_n \sim n \ln n
+\begin{align} S(x)  &\sim \sum\limits_{p_n \leq x} n \ln n \ln{(n \ln n)}\\ &= \sum\limits_{p_n \leq x} n \ln n (\ln(n)+ \ln\ln n)\\ &\approx \sum\limits_{p_n \leq x} n \ln^2 n \\ &\approx \sum\limits_{p_n \leq x} n \ln^2 n \\ &\approx \sum\limits_{n \ln n\leq x} n \ln^2 n \\ &\approx \sum\limits_{n \leq x/\ln x} n \ln^2 n \\ &\approx \int_{1}^{x/\ln x} n \ln^2 n\ dn \\ &\approx\frac{1}{2} x^2 \ln^2 x \\ \end{align} 
+(x^2 \ln^2 x)' = x^2 (2 \ln x)(1/x) + 2x \ln^2 x = 2x \ln^2 (x)(1+1/\ln x) \sim 2x \ln^2 (x) 
+ \ \frac{1}{2}\sum\limits_{p \leq x} p \log{p} \sim \frac{1}{4}x^2 \ln^2 x 

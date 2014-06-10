@@ -1,0 +1,13 @@
+N
+z
+x(t+1) =Ax(t)+Bu(t)=\left(\begin{matrix}0&0&0.8\\1&0&0\\0&1&0 \end{matrix}\right)x(t)+\left(\begin{matrix}1\\0\\0 \end{matrix}\right)u(t)
+z^T\left(\displaystyle\sum_{\tau=0}^{N-1}A^\tau B B^T \left(A^T\right)^\tau \right)^{-1}z ≤ 1.1z^T\lim_{t \rightarrow \infty}\left(\displaystyle\sum_{\tau=0}^{t-1}A^\tau B B^T \left(A^T\right)^\tau \right)^{-1}z 
+AP A^T + W = P,
+A \lim_{t\to\infty} \left( \sum_{\tau=0}^{t-1} A^\tau B B^T \left( A^T \right)^\tau \right) A^T - \lim_{t\to\infty} \left( \sum_{\tau=0}^{t-1} A^\tau B B^T \left( A^T \right)^\tau \right) \\ = ABB^TA^T+A^2 B B^T \left( A^T \right)^2+\dots-BB^T-ABB^TA^T-A^2 B B^T \left( A^T \right)^2-\dots \\ = -BB^T
+\lim_{t\to\infty} A^t = 0
+P = \lim_{t\to\infty} \left( \sum_{\tau=0}^{t-1} A^\tau B B^T \left( A^T \right)^\tau \right)
+APA^T-P+BB^T=0
+P
+N
+P
+ x_0^tP^{-1}x_0=\min_{u_n} \sum_{n=1}^\infty u_n^t u_n 

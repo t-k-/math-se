@@ -1,0 +1,37 @@
+\sum_{i=1}^{n^3} 3i^2\cdot\log(i)
+1+2+3+ \dots +n
+n
+n^2
+n(n+1)/2
+3 \int_1^{n^3} di \, i^2 \log{i} = \left [i^3 \log{i} \right ]_1^{n^3} - \frac13 \left [i^3\right ]_1^{n^3}
+O\left ( n^9 \log{n}\right )
+x_i=3i^2\log(i)
+(x_i)
+x_{k/2}=\Theta(x_k)
+k=n^3
+kx_k=3n^9\log(n^3)
+x_i=u(i)
+i\geqslant1
+u:t\mapsto3t^2\log t
+t\geqslant1
+i\geqslant2
+x_1=0
+u=v'
+v:t\mapsto t^3\log t-\frac13t^3
+v(k)\sim v(k+1)\sim k^3\log k
+k=n^3
+ (k/2)x_{k/2}=\sum_{i=k/2}^kx_{k/2}\leqslant\sum_{i=1}^kx_i\leqslant kx_k.
+ \sum_{i=1}^kx_i=\Theta(kx_k).
+ \sum_{i=1}^kx_i=\Theta(n^9\log n). 
+ \int_{i-1}^iu(t)\mathrm dt\leqslant\int_{i-1}^iu(i)\mathrm dt= x_i=\int_i^{i+1}u(i)\mathrm dt\leqslant\int_i^{i+1}u(t)\mathrm dt. 
+ \int_1^ku(t)\mathrm dt\leqslant\sum_{i=1}^kx_i\leqslant\int_1^{k+1}u(t)\mathrm dt. 
+ \sum_{i=1}^{n^3}x_i\sim (n^3)^3\log(n^3)=3n^9\log n, 
+ \lim_{n\to\infty}\frac1{n^9\log n}\sum_{i=1}^{n^3}3i^2\log i=3. 
+\log(i) < i
+i
+\sum_{k=1}^{n^3}i^2\log(i)\approx\sum_{k=1}^{n^3}i^3 = \left(\frac{n^3(n^3+1)}{2}\right)^2 \approx \mathcal{O}(n^{12})
+\sum_{k=1}^{n^3}i^2\log(i)\approx\sum_{k=1}^{n^3}i^2 = \frac{n^3(n^3+1)(2n^3+1)}{6} \approx \Omega(n^{9})
+  \frac{3\,\zeta(3)}{4 \pi^2} + \zeta'(-2, 1 + n^3) 
+\zeta'(a,b)
+\zeta(a,b)
+a

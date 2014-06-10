@@ -1,0 +1,41 @@
+\frac\pi{a}e^{-|p|a/h}
+A\int_{-\infty}^\infty\frac{e^{-ipx/h}}{x^2+a^2}dx
+C
+-R
+R
+Re^{i\theta}
+0\le \theta\le \pi
+f(x) := \frac{e^{-ipx/h}}{x^2+a^2} = \frac{e^{-ipx/h}}{(x+ia)(x-ia)}
+z_n
+f
+C
+\oint_C f(z)\, dz = \int_{-R}^R f(z)\, dz + \oint_{\text Arc} f(z)\, dz = 2\pi i \sum \operatorname*{Res}_{z = z_n} f(z)
+R \to \infty
+p/h < 0
+\int_{\text Arc}\frac{e^{-ipx/h}}{x^2+a^2}\,dz = \int_0^\pi \frac{e^{-ipRe^{i z}/h}}{(Re^{i z})^2+a^2}\,dz = 0
+\oint_C f(z)\, dz = \int_{-\infty}^\infty f(z)\, dz
+ia
+C
+C
+ z_0 = \operatorname*{Res}_{z = ia} f(z) = \lim_{z\to ia}(z-ia)f(z) =  \frac{e^{-ip(i a)/h}}{2ia} = \frac{e^{-pa/h}}{2ia} 
+\int_{-\infty}^\infty f(z)\, dz = 2\pi i z_0 = 2\pi i\frac{e^{-pa/h}}{2ia} = \frac{\pi e^{-pa/h}}{a}
+p/h < 0
+\Gamma
+C
+Re^{i\theta}
+\pi\le \theta\le 2\pi
+\int_{\text Arc}\frac{e^{-ipx/h}}{x^2+a^2}\,dz = \int_0^\pi \frac{e^{ipRe^{i z}/h}}{(Re^{i z})^2+a^2}\,dz = 0
+p/h > 0
+R \to \infty
+\int_{-\infty}^\infty f(z)\, dz = 2\pi i z_0 = 2\pi i\frac{e^{-pa/h}}{2ia} = \frac{\pi e^{pa/h}}{a}
+p/h > 0
+\int_{-\infty}^\infty f(z)\, dx = \frac{\pi e^{\left|\frac{p}{h}\right|a}}{a}
+f(t)=e^{-a|t|}
+f(t)
+F(\omega)
+t=-\frac{p}{h}
+\mathbf{Method\;2: }
+ \begin{align} F(\omega)=\mathcal{F}[f(t)]&=\int_{-\infty}^{\infty}f(t)e^{-i\omega t}\,dt\\ &=\int_{-\infty}^{\infty}e^{-a|t|}e^{-i\omega t}\,dt\\ &=\int_{-\infty}^{0}e^{at}e^{-i\omega t}\,dt+\int_{0}^{\infty}e^{-at}e^{-i\omega t}\,dt\\  &=\lim_{u\to-\infty}\left. \frac{e^{(a-i\omega)t}}{a-i\omega} \right|_{t=u}^0-\lim_{v\to\infty}\left. \frac{e^{-(a+i\omega)t}}{a+i\omega} \right|_{t=0}^v\\ &=\frac{1}{a-i\omega}+\frac{1}{a+i\omega}\\ &=\frac{2a}{\omega^2+a^2}. \end{align} 
+ \begin{align} f(t)=\mathcal{F}^{-1}[F(\omega)]&=\frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{i\omega t}\,d\omega\\ e^{-a|t|}&=\frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{2a}{\omega^2+a^2}e^{i\omega t}\,d\omega\\ \frac{\pi e^{-a|t|}}{a}&=\int_{-\infty}^{\infty}\frac{e^{i\omega t}}{\omega^2+a^2}\,d\omega. \end{align} 
+ \int_{-\infty}^{\infty}\frac{e^{-\frac{ipx}{h}}}{x^2+a^2}\,dx=\frac{\pi e^{-a\left|\frac{p}{h}\right|}}{a}. 
+ \text{# }\mathbb{Q.E.D.}\text{ #} 

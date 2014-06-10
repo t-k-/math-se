@@ -1,0 +1,28 @@
+\sum_k \left\{k\atop n\right\}z^k=\frac{z^n}{(1-z)(1-2z)...(1-nz)}
+\left\{k\atop n\right\}
+\mathbf k=\{1, \dots, k\}
+n
+\mathbf{15}
+4
+\text{Red}<\text{Blue}<\text{Green}<\text{Pink}
+0,1,2,3
+0,1,2,3
+n
+n
+k
+G(z) = \sum_{n\ge k} {n \brace k} z^n = \frac{z^k}{(1-z)(1-2z)\cdots(1-kz)}
+k=1
+j
+1/(1-(k+1)z)
+\frac{z^k}{(1-z)(1-2z)\cdots(1-kz)} = \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} \frac{1}{1-jz}.
+\frac{z}{1-z} = -1 + \frac{1}{1-z}
+\frac{z^{k+1}}{(1-z)(1-2z)\cdots(1-kz)(1-(k+1)z)} = \frac{z}{1-(k+1)z}  \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} \frac{1}{1-jz}.
+\frac{z}{1-(k+1)z} \frac{1}{1-jz} = \frac{1}{k+1-j} \frac{1}{1-(k+1)z} -  \frac{1}{k+1-j}  \frac{1}{1-jz}
+\frac{1}{k+1-j} (1-jz-(1-(k+1)z)) = \frac{1}{k+1-j} (k+1-j)z = z.
+\frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j}   \frac{1}{k+1-j} \left(\frac{1}{1-(k+1)z} -   \frac{1}{1-jz}\right).
+\frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j}  \frac{1}{k+1-j}  = \frac{1}{(k+1)!} \sum_{j=0}^k (-1)^{k-j} {k+1\choose j} \\ = - \frac{1}{(k+1)!} \sum_{j=0}^k (-1)^{k+1-j} {k+1\choose j}  = - \frac{1}{(k+1)!} \left(- (-1)^{k+1-(k+1)} {k+1\choose k+1}\right) = \frac{1}{(k+1)!}.
+- \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j}  \frac{1}{k+1-j}  \frac{1}{1-jz} = - \frac{1}{(k+1)!} \sum_{j=0}^k (-1)^{k-j} {k+1\choose j}  \frac{1}{1-jz} \\ = \frac{1}{(k+1)!} \sum_{j=0}^k (-1)^{k+1-j} {k+1\choose j}  \frac{1}{1-jz}.
+\frac{1}{(k+1)!} \sum_{j=0}^k (-1)^{k+1-j} {k+1\choose j}  \frac{1}{1-jz} +  \frac{1}{(k+1)!} \frac{1}{1-(k+1)z}
+\frac{1}{(k+1)!} \sum_{j=0}^{k+1} (-1)^{k+1-j} {k+1\choose j}  \frac{1}{1-jz}.
+\frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} \frac{1}{1-jz} = \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} \sum_{n\ge 0} j^n z^n\\ = \sum_{n\ge 0} z^n \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} j^n.
+ \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} {k\choose j} j^n = {n\brace k}

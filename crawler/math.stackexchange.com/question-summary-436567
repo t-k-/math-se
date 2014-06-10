@@ -1,0 +1,29 @@
+f(x)=\int_x^0 \frac{\cos xt}{t}\mathrm{d}t
+\frac{1}{x}[1-2\cos x^2]
+\frac{d}{dx}\int_{{\alpha(x)}}^{{\beta(x)}}f(x,y)\,dy=\int_{{\alpha(x)}}^{{% \beta(x)}}\frac{\partial f(x,y)}{\partial x}\,dy+\frac{d\beta(x)}{dx}f(x,\beta% (x))-\frac{d\alpha(x)}{dx}f(x,\alpha(x))\, 
+\alpha(x)=0, \beta(x)=x, f(x,y)=\frac{\cos xy}{y}
+x
+F(x) = \int_x^0 f(x, t)\,dt = -\int_0^x f(x,t)\,dt
+x
+F
+\Delta\colon \mathbb R \to \mathbb R^2
+x\mapsto (x,x)
+\Phi\colon \mathbb R^2 \to \mathbb R
+(x_1, x_2) \mapsto -\int_0^{x_1} f(x_2, t)\, dt
+F = \Phi \circ \Delta
+\Delta'(x) = (1,1)
+ F'(x) = \nabla \Phi \bigl(\Delta(x)\bigr) \cdot \Delta'(x) 
+ F'(x) = -f(x,x) - \int_0^x \partial_x f(x,t)\, dt 
+x
+x>0
+x
+\varepsilon > 0
+\cos(xt)> 1/2
+t
+t
+0\le t \le \varepsilon
+\int_x^0 = \int_\varepsilon^0 + \int_x^\varepsilon
+t
+\varepsilon \le t\le x 
+\lim_{\eta\rightarrow 0+}\int_\varepsilon^\eta
+(-\ln \eta + \ln \varepsilon)/2

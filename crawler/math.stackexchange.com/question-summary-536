@@ -1,0 +1,65 @@
+\rho_2(2n) = \left(\binom{2n}{n}/2^{2n}\right)^2
+1/(\pi n)
+\sum_{n \geq 1} \rho_2(2n)
+1
+u_0=1
+u_{2n} = p(n,n,0,0)+ p(n-1,n-1,1,1)+...+p(n-k,n-k,k,k)+...+p(0,0,n,n)
+p(u,d,l,r)
+\frac{1}{4^{2n}}
+\frac{(2n)!}{u!d!l!r!}
+p(n-k,n-k,k,k)=\frac{1}{4^{2n}} \frac{(2n)!}{(n-k)!(n-k)!k!k!}
+(2n)!=n! n! \binom{2n}{n}
+p(n-k,n-k,k,k)=\frac{1}{4^{2n}} \binom{2n}{n} \binom{n}{k}^2
+u_{2n}= \frac{1}{4^{2n}}  \Sigma_k \binom{2n}{n} \binom{n}{k}^2
+u_{2n}= \frac{1}{4^{2n}} \binom{2n}{n}^2
+u_{2n}= f_2 u_{2n-2}+ f_4 u_{2n-4} +....+f_{2n-2}u_{2} + f_{2n}
+f_0=0
+u_0=1
+u_{2n}= f_0 u_{2n}+ f_2 u_{2n-2}+ f_4 u_{2n-4} +....+f_{2n-2}u_{2} + f_{2n}u_0
+U(x)= \Sigma_m u_{2m} x^{2m}
+F(x)= \Sigma_m f_{2m} x^{2m}
+U(x)= 1+ U(x)F(x)
+u_0
+F(x)= \frac{U(x)-1}{U(x)}
+\Sigma f_n= F(1)
+U(1)
+X_n = 1
+n^{th}
+0
+\mathbb{E}(X_n)
+n
+P_n
+X = \displaystyle \sum_{n=1}^{\infty} X_n
+\mathbb{E}(X) = \displaystyle \sum_{n=1}^{\infty} \mathbb{E}(X_n)
+\mathbb{E}(X) = \displaystyle \sum_{n=1}^{\infty} P_n
+P_n = 0
+n
+\rho
+0
+\rho_k
+k
+\rho_0 = 1 -\rho
+\rho_k = \rho^k (1- \rho)
+\mathbb{E}(X) = \displaystyle \sum_{k=0}^{\infty} k \rho^k (1-\rho) = \frac{\rho}{1-\rho}
+\rho < 1
+\rho < 1
+\mathbb{E}
+\displaystyle \sum_{n=1}^{\infty} p_n < \infty
+\rho = 1
+\mathbb{E}
+\displaystyle \sum_{n=1}^{\infty} p_n = \infty
+p_{2n} \approx \frac{c}{\sqrt{n}}
+k = \frac{n}{2}
+\sim \sqrt{n}
+\frac{n}{2}
+k
+\sim \frac{\sqrt{n}}{(\sqrt{n})^4} = \frac1{n^{3/2}}
+k
+\sqrt{n}
+p_{2n} \sim \frac1{n}
+p_n \rightarrow \infty
+p_n
+\frac{c}{n^{d/2}}
+\displaystyle \sum_{n=1}^{\infty} p_n < \infty
+d > 2
+\displaystyle \sum \mathbb{E}(X_n) < \infty \iff \mathbb{E}(X) < \infty \iff \rho < 1 \implies

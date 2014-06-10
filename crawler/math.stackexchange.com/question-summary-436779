@@ -1,0 +1,25 @@
+d(i)
+i
+\frac{1}{n}\sum_{1\le i \le n} d(i)= \ln n+\Theta(1)
+n
+j
+i
+j
+d(i)
+n
+\tau^2(n)
+\tau^2(n)
+s=1
+s=0
+\zeta(2s)
+\Re(s) = 1/4.
+L(s) = \sum_{n\ge 1}\frac{\tau^2(n)}{n^s}.
+L(s) = \prod_p  \left(1+ \frac{2^2}{p^s} + \frac{3^2}{p^{2s}} + \frac{4^2}{p^{3s}}+\cdots\right).
+\sum_{k\ge 0} (k+1) z^k = \frac{1+z}{(1-z)^3} = \frac{1-z^2}{(1-z)^4}.
+L(s) = \prod_p \frac{1-1/p^{2s}}{(1-1/p^s)^4} = \frac{\zeta^4(s)}{\zeta(2s)}.
+q_n = \sum_{k=1}^n \tau^2(k)
+q_n = \frac{1}{2} \tau^2(n) + \frac{1}{2\pi i} \int_{3/2-i\infty}^{3/2+i\infty} L(s) \frac{n^s}{s} ds.
+\mathrm{Res}\left(L(s) \frac{n^s}{s}; s=1\right) = \frac{1}{\pi^2} n \log^3 n + \left(\frac{12\gamma-3}{\pi^2} -\frac{36\zeta'(2)}{\pi^4}\right) n\log^2 n +\cdots  \\ \approx 0.101321183642338 \times n \log^3 n  + 0.744341276391456\times n \log^2 n   \\+ 0.823265208269489\times n \log n + 0.460323372258732 \times n.
+\mathrm{Res}\left(L(s) \frac{n^s}{s}; s=0\right) = -\frac{1}{8}
+\frac{1}{n}  \sum_{k=1}^n \tau^2(k) \sim \frac{1}{2n} \tau^2(n) + \frac{1}{\pi^2} \log^3 n + \left(\frac{12\gamma-3}{\pi^2} -\frac{36\zeta'(2)}{\pi^4}\right) \log^2 n +\cdots.
+\begin{array}{l|ll} n & q_n/n & \text{approx.} \\ \hline 100 & 30.46 & 30.3377762704858 \\ 400 & 54.33 & 54.1863460568776 \\ 1000 &  75.083 & 75.1903114374140 \\ 5000 & 124.1196 & 124.110890836637 \\ \end{array}

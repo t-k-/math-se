@@ -1,0 +1,18 @@
+64
+16
+16
+8
+f(t) = \frac{1}{8}e^{-t/8}
+132
+P[T_1+T_2 + \cdots + T_{64} > 132(64)]
+S = T_{1} + T_{2} + \cdots + T_{64}
+P[S > 132(64)] = 1-P[S \leq 132(64)]
+T = \displaystyle \sum_{k=1}^{64} T_i
+64 \times 16 \times 8
+64 \times 16 \times 8^2
+T_i
+16 \times 8
+16 \times 8^2
+\frac{T-64 \times 16 \times 8}{\sqrt{64 \times 16 \times 8^2}}
+P(T \geq 132 \times 64) = P(\frac{T-64 \times 16 \times 8}{32 \times 8} \geq \frac{132 \times 64 - 128 \times 64}{256}) \approx  P(Z \geq 1) = 0.158655
+Z

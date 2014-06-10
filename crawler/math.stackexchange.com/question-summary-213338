@@ -1,0 +1,15 @@
+f
+z \in \mathbb{C}
+z
+|
+z
+| \le 1/(1-|
+|)
+z\in D
+f(
+)= \sum _{n=0}^{\infty } a_nz^n
+0
+|a_n| \le (n+1)(1+1/n)^{n} < e(n+1)
+ a_n= \frac{1}{2\pi i}\int\limits_{\partial B(0,r)}\frac{f(z)}{z^{n+1}}dz \frac{1}{2\pi i}\int\limits_{0}^{2\pi}\frac{f(r e^{it})}{(re^{it})^{n+1}}d(r e^{it})= \frac{1}{2\pi}\int\limits_{0}^{2\pi}\frac{f(r e^{it})}{r^n e^{int}}dt 
+ |a_n|\leq \frac{1}{2\pi}\int\limits_{0}^{2\pi}\frac{|f(r e^{it})|}{r^n |e^{int}|}dt\leq \frac{1}{2\pi}\int\limits_{0}^{2\pi}\frac{dt}{r^n (1-|r e^{it}|)}= \frac{1}{r^n (1-r)} 
+ a_n\leq\min\limits_{r\in(0,1)}\frac{1}{r^n (1-r)}=(n+1)\left(1+\frac{1}{n}\right)^n 

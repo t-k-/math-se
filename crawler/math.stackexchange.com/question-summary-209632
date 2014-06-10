@@ -1,0 +1,25 @@
+ob
+\forall a,b \in ob\exists hom \forall f(f\in hom \leftrightarrow \forall d\in a(f(d)\in b)) 
+\forall a\in ob\exists i \forall b\in a(i(b)=b)
+\forall x (Category(x) \leftrightarrow \forall y\in x \exists f \forall z\in y (f(z)=z))
+\forall x\forall a,b\in x (Arrow(x,a,b) \leftrightarrow a\in x  \land b\in x \land \exists f \forall c\in a (f(c)\in b) \land \forall c\in b \rightarrow \exists d\in a (f(d)=c)
+\forall x (Category(x) \rightarrow \forall a\in x Arrow(x,a,a))
+\forall x (Category(x)\rightarrow \forall a,b,c\in x (Arrow(x,a,b) \land Arrow(x,b,c) \rightarrow Arrow(x,a,c)))
+f \in \text{Hom}(a, b)
+f : a \to b
+a
+b
+X, Y
+f: X \to Y
+X
+Y
+x
+y
+xy
+yx
+\square x
+ob
+\forall a (a\in ob \leftrightarrow P(a))
+P
+\forall a,b \in ob(\exists hom (\forall f(f\in hom \leftrightarrow (\forall d\in a(f(d)\in b) \land \exists d\in ob \forall e\in d\exists g\in a (f(g)=e)))))
+\forall a\in ob(\exists i \forall b\in a(i(b)=b))

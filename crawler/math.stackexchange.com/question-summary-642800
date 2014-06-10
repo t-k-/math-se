@@ -1,0 +1,21 @@
+f(x;\theta) = \alpha \mbox{ exp}\left[ -\alpha (x - \beta) \right] \times \mathbb{I} \left\{x \geq \beta \right\} 
+\alpha > 0
+\beta \in \mathbb{R}
+\hat{\beta} - \beta
+\mathbb{P}(\hat{\beta} - \beta \geq v) = \mbox{exp}(-\alpha n \times v \mathbb{I} \left\{ 0 \leq v\right\})
+\mathbb{P}(\hat{\beta} - \beta \geq v) = \mathbb{P}(\mbox{min}({\bf x}) - \beta \geq v) = \prod^n_{i = 1}\mathbb{P}(x_i - \beta \geq v)
+n
+F_{\hat \beta}(\hat \beta) = 1- \left(1-F_X(\hat \beta)\right)^n
+f_{\hat \beta}(\hat \beta) = n\left(1-F_X(\hat \beta)\right)^{n-1}f_X(\hat \beta)
+f_X(x)
+F_X(x)
+F_X(x) = \int_{-\infty}^{x}\alpha \mbox{ exp}\left[ -\alpha (t - \beta) \right] \cdot \mathbb{I} \left\{t \geq \beta \right\} dt
+=\int_{\beta}^{x}\alpha \mbox{ exp}\left[ -\alpha (t - \beta) \right] dt = -\mbox{ exp}\left[ -\alpha (t - \beta) \right]\Big |_{\beta}^x = 1-\mbox{ exp}\left[ -\alpha (x - \beta) \right]
+F_{\hat \beta}(\hat \beta) = 1- \left(\mbox{ exp}\left[ -\alpha (\hat \beta - \beta) \right]\right)^n
+f_{\hat \beta}(\hat \beta) = n\left(\mbox{ exp}\left[ -\alpha (\hat \beta - \beta) \right]\right)^{n-1}\cdot \alpha \mbox{ exp}\left[ -\alpha (\hat \beta - \beta) \right] \cdot \mathbb{I} \left\{\hat \beta \geq \beta \right\}
+=\alpha n\left(\mbox{ exp}\left[ -\alpha n(\hat \beta - \beta) \right]\right)\cdot \mathbb{I} \left\{\hat \beta \geq \beta \right\}
+v\equiv \hat \beta - \beta
+f_{V}(v) = \alpha n\left(\mbox{ exp}\left[ -\alpha nv \right]\right)\cdot \mathbb{I} \left\{v\ge 0 \right\}
+P(\hat \beta - \beta\ge v) = P(V\ge v) = 1- F_{V}(v) = 1-\int_{-\infty}^v\alpha n\left(\mbox{ exp}\left[ -\alpha nt \right]\right)\cdot \mathbb{I} \left\{t\ge 0 \right\}dt
+=1-\int_{0}^v\alpha n\left(\mbox{ exp}\left[ -\alpha nt \right]\right)dt = 1 +\mbox{ exp}\left[ -\alpha nt\right]\Big|_0^v = \mbox{ exp}\left[ -\alpha nv\right], \;; v\ge 0
+P(\hat \beta - \beta\ge v) = \mbox{ exp}\left[ -\alpha nv\cdot\mathbb{I} \left\{v\ge 0 \right\}\right]

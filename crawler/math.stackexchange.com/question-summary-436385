@@ -1,0 +1,26 @@
+\sum a_k^2 / k
+1/N \sum_{1}^Na_k \to 0
+a_n \to 0
+a_n\to 0
+\sum a_{n}^2/n
+a_k^2/k \leq a_k^4 + 1/k^2
+k = \sqrt{N}
+\sqrt{N} < k < N
+\sum_{k > \sqrt{N}} a_k^2 / k = o(1)
+ \sum_{\sqrt{N} < k \leq N} a_k \leq N^{1/2} \cdot \bigg ( \sum_{\sqrt{N} < k \leq N} a_k^2 \bigg )^{1/2} 
+ \sum_{\sqrt{N} < k \leq N} a_k^2 \leq N \sum_{N > k > \sqrt{N}} \frac{a_k^2}{k} = o(N) 
+k < \sqrt{N}
+C = (\sum a_k^2 / k)^{1/2}
+ \sum_{k \leq \sqrt{N}} a_k \leq \bigg ( \sum_{k \leq \sqrt{N}} k \bigg )^{1/2} \cdot \bigg ( \sum_{k} \frac{a_k^2}{k} \bigg )^{1/2} \leq C N^{1/2} 
+k = f(N)
+f
+ \sum_{k \leq N} a_k \leq C N^{1/2} + o(N) = o(N) 
+\epsilon>0
+m
+N\geq m
+\dfrac{a_{m+1}^2}{m+1}+...+\dfrac{a_{N}^2}{N}<\epsilon 
+(a_{m+1}+...a_{N})^2<(\dfrac{a_{m+1}^2}{m+1}+...+\dfrac{a_{N}^2}{N})(m+1+m+2+...+N)
+(a_{m+1}+...+a_{N})^2<\epsilon \cdot \dfrac{(m+1+N)(N-m)}{2}<N^2 \cdot \epsilon \cdot constant
+N
+m
+\dfrac{(a_{m+1}+...+a_{N})^2}{N^2}<\epsilon \cdot constant

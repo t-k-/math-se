@@ -1,0 +1,13 @@
+A
+B
+2\sum_{i \in A, j \in B}\Pr[i\ \textrm{AND}\ j] \leq \sum_{i \in A}\Pr[i]+ \sum_{j \in B}\Pr[j] +\sum_{i, j \in A}\Pr[i\ \textrm{AND}\ j] + \sum_{i, j \in B}\Pr[i\ \textrm{AND}\ j]
+a, b \in \mathbb{R}:
+2ab \leq a + b + a(a-1) + b(b-1)
+a + b + a(a-1) + b(b-1) = a^2 + b^2 = 2ab + (a-b)^2 \geq 2ab
+A
+B
+i,j
+2ab\leq a^2+b^2
+a:=\sum_{i\in A}1_i
+b:=\sum_{j\in B}1_j
+2\sum_{i \in A, j \in B}\Pr[i\ \textrm{AND}\ j] \leq  \sum_{i, j \in A}\Pr[i\ \textrm{AND}\ j] + \sum_{i, j \in B}\Pr[i\ \textrm{AND}\ j],

@@ -1,0 +1,7 @@
+2^n=C_0+C_1+\dots+C_n
+x=1
+\displaystyle (a+b)^n=\sum_{r=0}^n\binom nr a^{n-r}b^r
+a=b=1
+\displaystyle\frac{\binom nr}{\binom n{r+1}}=\frac{n!}{(n-r)! r!}\cdot\frac{(n-r-1)!\cdot (r+1)!}{n!}=\frac{r+1}{n-r}
+\displaystyle\implies 1+\frac{\binom nr}{\binom n{r+1}}=1+\frac{r+1}{n-r}=\frac{n+1}{n-r}
+\displaystyle\prod_{r=0}^{n-1}\left(1+\frac{\binom nr}{\binom n{r+1}}\right)=\prod_{r=0}^{n-1}\left(\frac{n+1}{n-r}\right)=\frac{(n+1)^n}{n!}

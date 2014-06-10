@@ -1,0 +1,34 @@
+N
+K
+i=1,...,N
+k_i
+1
+K
+i
+k_i
+C_{i,k}
+ C_{i,k}=\left\{\begin{array}{ll}  1 & \textrm{ if ball }i\textrm{ is in urn }k\\ 0 & \textrm{ otherwise }. \end{array}\right. 
+k
+q
+ J_{k,q} = \sum_{i=1}^{N}C_{i,k}\,C_{i,q}, 
+ u_{k} = \sum_{i=1}^{N}C_{i,k} 
+\mathbb{E}\left[J_{k,q}\right]
+K
+k_i
+k
+\Pr(k_i=m) = \frac{1}{K}
+m
+1,2,\ldots,K
+m
+i
+k
+q
+\frac{m(m-1)}{K(K-1)}
+i
+k
+q
+\sum_m \frac1K\frac{m(m-1)}{K(K-1)} = \frac{K+1}{3K}
+N
+\displaystyle \mathbb{E}\left[J_{k,q}\right] = \frac{N(K+1)}{3K}
+k \not = q
+\displaystyle \mathbb{E}\left[J_{k,k}\right] = \frac{N(K+1)}{2K}

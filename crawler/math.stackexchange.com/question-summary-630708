@@ -1,0 +1,12 @@
+(a_1,...,a_n) \in {\mathbb{R}_{*}^{+}}^n
+o
+\displaystyle\lim _{ x\to +\infty  }{ \left( \cfrac { \sum _{ i=1 }^{ n }{ { a_{ i } }^{ \frac { 1 }{ x }  } }  }{ n }  \right) ^{ x } } =\sqrt [ n ]{ \prod _{ i=1 }^{ n }{ a_{ i } }  } 
+i
+ a_i^{1/x} = \exp\left(\frac{\log a_i}{x}\right) = 1 + \frac{\log a_i}{x} + o\left(\frac{1}{x}\right) 
+x \to \infty
+ \begin{align} \frac{1}{n}\sum_{i=1}^{n} a_i^{1/x} &= \frac{1}{n}\left[n + \frac{1}{x} \sum_{i=1}^{n} \log a_i + o\left(\frac{1}{x}\right)\right] \\ &= 1 + \frac{1}{x} \log\sqrt[n]{\prod_{i=1}^{n} a_i} + o\left(\frac{1}{x}\right) \end{align} 
+x \to \infty
+ \begin{align} \left(\frac{1}{n}\sum_{i=1}^{n} a_i^{1/x}\right)^x &= \exp\left\{x\log\left[\frac{1}{n}\sum_{i=1}^{n} a_i^{1/x}\right]\right\} \\ &= \exp\left\{ x \log\left[ 1 + \frac{1}{x} \log\sqrt[n]{\prod_{i=1}^{n} a_i} + o\left(\frac{1}{x}\right) \right] \right\} \\ &= \exp\left\{ x \left[ \frac{1}{x} \log\sqrt[n]{\prod_{i=1}^{n} a_i} + o\left(\frac{1}{x}\right) \right] \right\} \\ &= \exp\left\{ \log\sqrt[n]{\prod_{i=1}^{n} a_i} + o(1) \right\} \end{align} 
+x \to \infty
+\log(1+y) = y + o(y)
+y \to 0

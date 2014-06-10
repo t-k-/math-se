@@ -1,0 +1,23 @@
+\exists x \in N , x < 3
+ \lnot(\exists x \in N , x < 3) \equiv (\forall x \in N , x \geq 3) 
+ \lnot (\exists x \in N , x < 3) \equiv (\forall x \notin N , x \geq 3) 
+\forall x\in A:\varphi(x)
+\forall x(x\in A\rightarrow \varphi(x))
+\exists x\in A:\varphi(x)
+\exists x(x\in A\land\varphi(x))
+\lnot\exists x\varphi(x)
+\forall x\lnot\varphi(x)
+\begin{align} \lnot(\exists x\in N:x< 3) &\iff\lnot(\exists x(x\in N\land x< 3))\\ &\iff\forall x(\lnot (x\in N\land x< 3))\\ &\iff\forall x(x\notin N\lor x\geq 3)\\ &\iff\forall x(x\in N\rightarrow x\geq 3)\\ &\iff\forall x\in N:x\geq 3 \end{align}
+ \begin{align*} \lnot (\exists x \in N, x < 3) &\equiv \forall x \in N, \lnot(x < 3)\\ &\equiv \forall x \in N, x \geq 3 \end{align*} 
+N
+N
+N
+x
+0
+x
+3
+x
+x
+3
+x
+3

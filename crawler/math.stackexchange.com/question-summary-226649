@@ -1,0 +1,19 @@
+x,y>0
+f(x,y)=\int_{0}^{\infty} \frac{1}{xt+e^{y t}} dt
+x=0
+f(0,y)=1/y
+f(x,y)=\int_{0}^{\infty} \frac{1}{e^{y t}(1+xte^{-y t})} dt=\int_{0}^{\infty} \frac{e^{-y t}}{(1+xte^{-y t})} dt
+f(x,y)=\int_{0}^{\infty} e^{-y t}(1-xte^{-y t}+x^2t^2e^{-2y t}-x^3t^3e^{-3y t}+....) dt
+f(x,y)=\int_{0}^{\infty} e^{-y t}\sum_{k=0}^{\infty} (-1)^kx^kt^ke^{-ky t} dt
+f(x,y)=\int_{0}^{\infty} \sum_{k=0}^{\infty} (-1)^kx^kt^ke^{-(k+1)y t} dt
+f(x,y)=\sum_{k=0}^{\infty}\bigg((-1)^kx^k\int_{0}^{\infty}  t^ke^{-(k+1)y t} dt\bigg)
+g(y)=\int_{0}^{\infty}  t^ke^{-(k+1)y t} dt=\frac{k!}{(k+1)^{(k+1)}y^{(k+1)}}
+f(x,y)=\sum_{k=0}^{\infty}\frac{(-1)^kx^k k!}{(k+1)^{(k+1)}y^{(k+1)}}=\frac{1}{y}\sum_{k=0}^{\infty}\frac{(-1)^k k!}{(k+1)^{(k+1)}}(\frac{x}{y})^k
+h(x)=\sum_{k=0}^{\infty}\frac{(-1)^k k!}{(k+1)^{(k+1)}}x^k
+f(x,y)=\frac{1}{y}h(\frac{x}{y})
+h(x)
+\int_{0}^{\infty} \frac{1}{xt+e^{y t}} dt
+\int_{0}^{\infty} \frac{1}{xt^n+e^{y t}} dt=\sum_{k=0}^{\infty}\bigg((-1)^kx^k\int_{0}^{\infty}  t^{kn}e^{-(k+1)y t} dt\bigg)=
+=\sum_{k=0}^{\infty}\frac{(-1)^kx^k (nk)!}{(k+1)^{(nk+1)}y^{(nk+1)}}
+n=0
+\int_{0}^{\infty} \frac{1}{x+e^{y t}} dt=\sum_{k=0}^{\infty}\frac{(-1)^kx^k }{(k+1)y}=\frac{1}{xy}\sum_{k=0}^{\infty}\frac{(-1)^kx^{k+1} }{(k+1)}=\frac{\ln(x+1)}{xy}

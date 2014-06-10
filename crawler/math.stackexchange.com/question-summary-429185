@@ -1,0 +1,16 @@
+F_n=\sum_{k=n-2}^{n-1}F_k
+F_0=0
+F_1=1
+\displaystyle F_{n+1}=\sum_{i=0}^{n}{n-i \choose i}
+F_5
+F_6
+F_7
+F_0=0, F_1=1, \mbox{ and }F_{i+2}=F_{i+1}+F_i.
+n
+\sum_{i=1}^n F_i=F_{n+2}-1.
+\sum_{i=1}^n F_i=\sum_{i=1}^n (-F_{i+1}+F_{i+2})=
+(-F_2+F_3)+(-F_3+F_4)+\cdots+(-F_{n}+F_{n+1})+(-F_{n+1}+F_{n+2})=
+-F_2+(F_3-F_3)+(F_4-F_4)+\cdots+(F_{n+1}-F_{n+1})+F_{n+2}=F_{n+2}-F_2
+F_{n+2}=1+\sum_{i=1}^n F_i.
+\begin{align} \sum_{i=1}^n F_i &=\sum_{i=1}^n (-F_{i+1}+F_{i+2})\\ &=\sum_{i=1}^n (-F_{i+1}) + \sum_{i=1}^n (F_{i+2})\\ &=-\sum_{i=2}^{n+1} F_{i} + \sum_{i=3}^{n+2} F_{i}\\ &=-(F_2+\sum_{i=3}^{n+1} F_{i}) + \sum_{i=3}^{n+1} F_{i}+F_{n+2}\\ &=F_{n+2}-F_2\\ \end{align} 
+\sum_{i=3}^{n+1} F_{i}

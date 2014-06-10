@@ -1,0 +1,9 @@
+y=\tan x
+(0,\pi/2)
+x,y  \in (0, \pi/2)
+|f(x)-f(y)|=|\tan x-\tan y|={\left|{{\sin x\cos y-\cos x\sin y}\over \cos x\cos y}\right|}\le|\sin(x-y)|\le|x-y|
+\delta=\epsilon
+a_n=\pi/2 - 2^{-n}
+b_n=\pi/2 - 4^{-n}
+\left|\frac{\sin a_n}{\cos a_n} - \frac{\sin b_n}{\cos b_n}\right|=\left| \frac{\sin(a_n-b_n)}{\cos a_n\cos b_n}\right|=\frac{\sin(2^{-n}-4^{-n})}{\sin(2^{-n}) \sin (4^{-n})}\sim\frac{2^{-n}-4^{-n}}{2^{-n} \cdot 4^{-n}}\to\infty
+n\to\infty

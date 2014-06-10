@@ -1,0 +1,70 @@
+x
+\displaystyle x = \sum\limits_{k=1}^{n}  \frac{a_k}{k!}
+a_k
+a_k \leq k-1
+k \geq 2
+a_n >0
+a_1 = [x]
+a_k = [k!x]-k[(k-1)!x]
+k = 2, \dots, n
+n
+n!x
+[x]
+a_k \le k-1
+k \ge 2
+ \lfloor x \rfloor = \left\lfloor \sum_{k=1}^n \frac{a_k}{k!} \right\rfloor \le a_1 + \left\lfloor \sum_{k=2}^n \frac{k-1}{k!} \right\rfloor = a_1 
+0
+ \sum_{k=2}^n \frac{k-1}{k!} = \sum_{k=2}^n \lbrace \frac{1}{(k-1)!} - \frac{1}{k!} \rbrace = 1 – 1/n! < 1.
+ a_m = \lfloor m! x \rfloor – m \lfloor (m-1)! x \rfloor 
+m=2,3,\ldots,n
+ \lfloor m! x \rfloor = \left\lfloor m! \sum_{k=1}^n \frac{a_k}{k!} \right\rfloor =  A_m + \left\lfloor m! \sum_{k=m+1}^n \frac{a_k}{k!} \right\rfloor, 
+A_m
+A_m = m! \frac{a_1}{1!} + m! \frac{a_2}{2!} + \cdots + m! \frac{a_m}{m!}.
+ m! \sum_{k=m+1}^n \frac{a_k}{k!} \le m! \sum_{k=m+1}^n \frac{k-1}{k!} = m! \sum_{k=m+1}^n \left\lbrace \frac{1}{(k-1)!} - \frac{1}{k!} \right\rbrace 
+ = m! \left( \frac{1}{m!} - \frac{1}{n!} \right) = 1 - \frac{m!}{n!} < 1 
+ \left\lfloor m! \sum_{k=m+1}^n \frac{a_k}{k!} \right\rfloor = 0.
+ m > 1 
+ m \lfloor (m-1)! x \rfloor = m \left\lfloor (m-1)! \sum_{k=1}^n \frac{a_k}{k!} \right\rfloor 
+=m \left\lbrace  (m-1)! \frac{a_1}{1!} + (m-1)! \frac{a_2}{2!} + \cdots + (m-1)!  \frac{a_{m -1}}{(m-1)!} \right\rbrace + m \left\lfloor \sum_{k=m}^n \frac{a_k}{k!} \right\rfloor 
+= \left( A_m - a_m \right) + m \left\lfloor \sum_{k=m}^n \frac{a_k}{k!} \right\rfloor =  A_m – a_m . 
+ \sum_{k=m}^n \frac{a_k}{k!}  \le \sum_{k=m}^n \frac{k-1}{k!} = \frac{1}{(m-1)!} - \frac{1}{n!} < 1 .
+ m > 1 
+ \lfloor m! x \rfloor -  m \lfloor (m-1)! x \rfloor = A_m – (A_m – a_m) = a_m . \qquad (1)
+n
+n! x 
+ (n-1)! x 
+(1)
+n > 1
+a_k \ge 0 .
+ (n-1)! x 
+ m! x 
+ m < n 
+(n-1)(n-2) \cdots m! x = (n-1)! x 
+ m! x 
+ a_{n-1} = (n-1)! x – n! x < 0 
+x
+ x = p/q, 
+ gcd(p,q)=1 \textrm{ and } p,q \in \mathbb{N} 
+ n 
+ n! p/q 
+ \begin{align*} a_1 &= \left\lfloor \frac{p}{q} \right\rfloor \\  a_m &= \left\lfloor m! \frac{p}{q} \right\rfloor -  m \left\lfloor (m-1)!  \frac{p}{q} \right\rfloor \quad \textrm{ for } m > 1. \quad (2) \end{align*} 
+ \left\lfloor (n-1)!  \frac{p}{q} \right\rfloor < (n-1)!  \frac{p}{q} , 
+ (n-1)! p/q 
+a_n > 0 .
+ (m-1)! p/q 
+ m \le n 
+ (m-1)!  \frac{p}{q} = N_m + r_m \quad \textrm{ where } 0 < r_m < 1 
+N_m
+m=2,3,\ldots,n
+(2)
+ a_m = \lfloor mN_m + mr_m \rfloor - mN_m = \lfloor m r_m \rfloor \le m-1.
+a_m
+ \frac{p}{q} = \sum_{k=1}^n \frac{a_k}{k!} \quad (3)
+a_k
+a_k \le k-1 
+k=2,3\ldots,n
+(1)
+a_1 = \lfloor p/q \rfloor .
+(3).
+ \begin{align*}  \sum_{k=1}^n \frac{a_k}{k!} &= \left\lfloor \frac{p}{q} \right\rfloor +  \sum_{k=2}^n \frac{a_k}{k!} \\ &= \left\lfloor \frac{p}{q} \right\rfloor + \sum_{k=2}^n \left\lbrace \frac{ \left\lfloor k! \frac{p}{q} \right\rfloor -  k \left\lfloor (k-1)!  \frac{p}{q} \right\rfloor }{k!} \right\rbrace \\ &= \left\lfloor \frac{p}{q} \right\rfloor +  \sum_{k=2}^n \frac{ \left\lfloor k! \frac{p}{q} \right\rfloor }{k!} -  \sum_{k=2}^n \frac{ \left\lfloor (k-1)! \frac{p}{q} \right\rfloor }{(k-1)!} \\ &= \frac {n! p/q}{n!} = \frac{p}{q}, \end{align*} 
+n! p/q

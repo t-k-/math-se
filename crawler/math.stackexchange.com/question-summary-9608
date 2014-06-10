@@ -1,0 +1,29 @@
+\lbrace{X(t):t \geq 0\rbrace}
+X(t_2)-X(t_1) \sim N(0,t_2 - t_1)
+M(t)=\mathop {\max }\limits_{0 \le s \le t} X(s)
+ M(t_1 ,t_2 ) = \mathop {\max }\limits_{t_1  \le s \le t_2 } X(s)
+X
+[t_1,t_2]
+X(t_1)
+X(t_1) \sim N(0,t_1)
+f(u;t_1) = \frac{1}{{\sqrt {2\pi t_1 } }}e^{ - u^2 /(2t_1 )}
+X_{t_1}=u
+M(t_1 ,t_2 )
+u + M(0,t_2 - t_1)
+u + M(t_2 - t_1)
+u
+M(t_2 - t_1)
+X_{t_1}
+M(t_2  - t_1 )
+-\infty
+x
+ {\rm P}(M(t) \le x) = \sqrt {\frac{2}{{\pi t}}} \int_0^x {e^{ - u^2 /(2t)} {\rm d}u}, \;\; x \geq 0.  
+ {\rm P}(M(t_1 ,t_2 ) \le x) = \int_{ - \infty }^\infty  {{\rm P}(M(t_1 ,t_2 ) \le x|X_{t_1 }  = u)f(u;t_1) {\rm d}u}.  
+ {\rm P}(M(t_1 ,t_2 ) \le x) = \int_{ - \infty }^\infty  {{\rm P}(M(t_2  - t_1 ) \le x - u)f(u;t_1 ){\rm d}u}.  
+ {\rm P}(M(t_1 ,t_2 ) \le x) = \int_{ - \infty }^x {{\rm P}(M(t_2  - t_1 ) \le x - u)f(u;t_1 ) {\rm d}u}, \;\; x \in {\bf R}. 
+\text{erf}\left(\frac{x}{\sqrt{2} \sqrt{t}}\right)
+\frac{\sqrt{\frac{2}{\pi }} e^{-\frac{x^2}{2 t}}}{\sqrt{t}}
+\frac{e^{-\frac{y^2}{2 \text{t1}}}}{\sqrt{2 \pi } \sqrt{\text{t1}}}
+\frac{\sqrt{\frac{2}{\pi }} e^{-\frac{(x-y)^2}{2 (\text{t2}-\text{t1})}}}{\sqrt{\text{t2}-\text{t1}}}
+\frac{e^{-\frac{(x-y)^2}{2 (\text{t2}-\text{t1})}-\frac{y^2}{2\text{t1}}}}{\pi  \sqrt{\text{t1}} \sqrt{\text{t2}-\text{t1}}}
+\frac{e^{-\frac{x^2}{2 \text{t2}}} \left(\text{erf}\left(\frac{x\sqrt{\frac{1}{\text{t1}}-\frac{1}{\text{t2}}}}{\sqrt{2}}\right)+1\right)}{\sqrt{2 \pi } \sqrt{\text{t2}}}

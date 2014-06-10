@@ -1,0 +1,61 @@
+ u_{xy}+au_x+bu_y+cu+dx+ey+f=0 
+a,b,c,d,e,f
+1
+a=b=c=0
+u_{xy}+dx+ey+f=0
+u_{xy}=-dx-ey-f
+u_x=\int(-dx-ey-f)~dy
+u_x=C(x)-dxy-\dfrac{ey^2}{2}-fy
+u=\int\left(C(x)-dxy-\dfrac{ey^2}{2}-fy\right)dx
+u=C_1(x)+C_2(y)-\dfrac{dx^2y}{2}-\dfrac{exy^2}{2}-fxy
+2
+a\neq0
+b=c=0
+u_{xy}+au_x+dx+ey+f=0
+u_x=v
+u_{xy}=v_y
+\therefore v_y+av+dx+ey+f=0
+v_y+av=-dx-ey-f
+(\exp(ay)v)_y=-dx\exp(ay)-ey\exp(ay)-f\exp(ay)
+\exp(ay)v=\int(-dx\exp(ay)-ey\exp(ay)-f\exp(ay))~dy
+\exp(ay)u_x=C(x)-\dfrac{dx\exp(ay)}{a}-\dfrac{ey\exp(ay)}{a}+\dfrac{e\exp(ay)}{a^2}-\dfrac{f\exp(ay)}{a}
+u_x=C(x)\exp(-ay)-\dfrac{dx}{a}-\dfrac{ey}{a}+\dfrac{e}{a^2}-\dfrac{f}{a}
+u=\int\left(C(x)\exp(-ay)-\dfrac{dx}{a}-\dfrac{ey}{a}+\dfrac{e}{a^2}-\dfrac{f}{a}\right)dx
+u=C_1(x)\exp(-ay)+C_2(y)-\dfrac{dx^2}{2a}-\dfrac{exy}{a}+\dfrac{ex}{a^2}-\dfrac{fx}{a}
+3
+b\neq0
+a=c=0
+u_{xy}+bu_y+dx+ey+f=0
+u_y=v
+u_{xy}=v_x
+\therefore v_x+bv+dx+ey+f=0
+v_x+bv=-dx-ey-f
+(\exp(bx)v)_x=-dx\exp(bx)-ey\exp(bx)-f\exp(bx)
+\exp(bx)v=\int(-dx\exp(bx)-ey\exp(bx)-f\exp(bx))~dx
+\exp(bx)u_y=C(y)-\dfrac{dx\exp(bx)}{b}+\dfrac{d\exp(bx)}{b^2}-\dfrac{ey\exp(bx)}{b}-\dfrac{f\exp(bx)}{b}
+u_y=C(y)\exp(-bx)-\dfrac{dx}{b}+\dfrac{d}{b^2}-\dfrac{ey}{b}-\dfrac{f}{b}
+u=\int\left(C(y)\exp(-bx)-\dfrac{dx}{b}+\dfrac{d}{b^2}-\dfrac{ey}{b}-\dfrac{f}{b}\right)dy
+u=C_1(x)+C_2(y)\exp(-bx)-\dfrac{dxy}{b}+\dfrac{dy}{b^2}-\dfrac{ey^2}{2b}-\dfrac{fy}{b}
+4
+a,b,c\neq0
+u_{xy}+au_x+bu_y+cu+dx+ey+f=0
+u=p(x)q(y)v
+u_x=p(x)q(y)v_x+p_x(x)q(y)v
+u_y=p(x)q(y)v_y+p(x)q_y(y)v
+u_{xy}=p(x)q(y)v_{xy}+p(x)q_y(y)v_x+p_x(x)q(y)v_y+p_x(x)q_y(y)v
+\therefore p(x)q(y)v_{xy}+p(x)q_y(y)v_x+p_x(x)q(y)v_y+p_x(x)q_y(y)v+a(p(x)q(y)v_x+p_x(x)q(y)v)+b(p(x)q(y)v_y+p(x)q_y(y)v)+cp(x)q(y)v+dx+ey+f=0
+p(x)q(y)v_{xy}+p(x)(q_y(y)+aq(y))v_x+(p_x(x)+bp(x))q(y)v_y+(p_x(x)q_y(y)+ap_x(x)q(y)+bp(x)q_y(y)+cp(x)q(y))v=-dx-ey-f
+q_y(y)+aq(y)=0\Rightarrow q(y)=\exp(-ay)
+p_x(x)+bp(x)=0\Rightarrow p(x)=\exp(-bx)
+\exp(-bx-ay)v_{xy}+(c-ab)\exp(-bx-ay)v=-dx-ey-f
+v_{xy}+(c-ab)v=-dx\exp(bx+ay)-ey\exp(bx+ay)-f\exp(bx+ay)
+4a
+c=ab
+v_{xy}=-dx\exp(bx+ay)-ey\exp(bx+ay)-f\exp(bx+ay)
+v_x=\int(-dx\exp(bx+ay)-ey\exp(bx+ay)-f\exp(bx+ay))~dy
+v_x=C(x)-\dfrac{dx\exp(bx+ay)}{a}-\dfrac{ey\exp(bx+ay)}{a}+\dfrac{e\exp(bx+ay)}{a^2}-\dfrac{f\exp(bx+ay)}{a}
+v=\int\left(C(x)-\dfrac{dx\exp(bx+ay)}{a}-\dfrac{ey\exp(bx+ay)}{a}+\dfrac{e\exp(bx+ay)}{a^2}-\dfrac{f\exp(bx+ay)}{a}\right)dx
+\exp(bx+ay)u=C_1(x)+C_2(y)-\dfrac{dx\exp(bx+ay)}{ab}+\dfrac{d\exp(bx+ay)}{ab^2}-\dfrac{ey\exp(bx+ay)}{ab}+\dfrac{e\exp(bx+ay)}{a^2b}-\dfrac{f\exp(bx+ay)}{ab}
+\exp(bx+ay)u=C_1(x)+C_2(y)-\dfrac{(dx+ey+f)\exp(bx+ay)}{ab}+\dfrac{d\exp(bx+ay)}{ab^2}+\dfrac{e\exp(bx+ay)}{a^2b}
+u=C_1(x)\exp(-bx-ay)+C_2(y)\exp(-bx-ay)-\dfrac{dx+ey+f}{ab}+\dfrac{d}{ab^2}+\dfrac{e}{a^2b}
+u=C_1(x)\exp(-ay)+C_2(y)\exp(-bx)-\dfrac{dx+ey+f}{ab}+\dfrac{d}{ab^2}+\dfrac{e}{a^2b}

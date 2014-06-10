@@ -1,0 +1,16 @@
+X
+Y
+(Z,d)
+d(X,Y):=\inf \{d(x,y): x\in X, y\in Y\}
+x_0\in X
+y_0\in Y
+d(x_0,y_0)=d(X,Y)
+X \times Y
+d \colon X \times Y \to \mathbf{R}
+x_n \in X, y_n \in Y
+d(x_n,y_n) \to d(X,Y)
+X,Y
+x \in X, y \in Y
+x_{n_k} \to x, y_{n_k} \to y
+d(x,y) \le d(x,x_{n_k}) + d(x_{n_k}, y_{n_k}) + d( y_{n_k}, y)
+d(x,y) \le \lim_{k \to \infty} d(x_{n_k}, y_{n_k}) = d(X,Y)

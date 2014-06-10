@@ -1,0 +1,59 @@
+\frac{\partial \varphi}{\partial t} = \frac{\partial^2 \varphi}{\partial x^2}
+\varphi(x,t=0) = f_0(x)
+\lim_{x \rightarrow\pm \infty}\varphi(x,t) = 0
+t \in \mathbb{R}
+\varphi(x,t) = A(x)B(t)
+\gamma > 0
+\lim_{x \rightarrow\pm \infty}\varphi(x,t) = 0
+\widehat{\varphi}(k,t) = \widehat{A}(k)B(t)
+k
+t
+\partial/\partial x \leftrightarrow ik
+\frac{\partial\widehat{\varphi}}{\partial t} = -k^2 \widehat{\varphi}(k,t)
+\widehat{\varphi}(k,t) = \widehat{f_0}(k)e^{-k^2 t}
+k
+t
+x
+\hat\phi(k,t)
+x
+t
+B(t)\,A(x)
+ e^{- t}\cos(x)+e^{-4\,t}\sin(2\,x) 
+1
+t\geq0
+\varphi(x,t)=X(x)T(t)
+X(x)T'(t)=X''(x)T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{X''(x)}{X(x)}=-s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-s^2\\X''(x)+s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-ts^2}\\X(x)=\begin{cases}c_1(s)\sin xs+c_2(s)\cos xs&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore\varphi(x,t)=\int_0^\infty C_1(s)e^{-ts^2}\sin xs~ds+\int_0^\infty C_2(s)e^{-ts^2}\cos xs~ds
+2
+t\leq0
+\varphi(x,t)=X(x)T(t)
+X(x)T'(t)=X''(x)T(t)
+\dfrac{T'(t)}{T(t)}=\dfrac{X''(x)}{X(x)}=s^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=s^2\\X''(x)-s^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{ts^2}\\X(x)=\begin{cases}c_1(s)\sinh xs+c_2(s)\cosh xs&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore\varphi(x,t)=\int_0^\infty C_1(s)e^{ts^2}\sinh xs~ds+\int_0^\infty C_2(s)e^{ts^2}\cosh xs~ds
+\varphi(x,t)=\begin{cases}\int_0^\infty C_1(s)e^{-ts^2}\sin xs~ds+\int_0^\infty C_2(s)e^{-ts^2}\cos xs~ds&\text{when}~t\geq0\\\int_0^\infty C_1(s)e^{ts^2}\sinh xs~ds+\int_0^\infty C_2(s)e^{ts^2}\cosh xs~ds&\text{when}~t\leq0\end{cases}
+x\in\mathbb{R}
+\sin xs=-\sin(-xs)
+\cos xs=\cos(-xs)
+\sinh xs=-\sinh(-xs)
+\cosh xs=\cosh(-xs)
+\varphi(x,t)
+\varphi(x,t)=\begin{cases}\int_0^\infty C_1(s)e^{-ts^2}\sin|x|s~ds+\int_0^\infty C_2(s)e^{-ts^2}\cos|x|s~ds&\text{when}~t\geq0\\\int_0^\infty C_1(s)e^{ts^2}\sinh|x|s~ds+\int_0^\infty C_2(s)e^{ts^2}\cosh |x|s~ds&\text{when}~t\leq0\end{cases}
+\lim\limits_{x\to\pm\infty}\sin|x|s
+\lim\limits_{x\to\pm\infty}\cos|x|s
+\lim\limits_{x\to\pm\infty}\sinh|x|s
+\lim\limits_{x\to\pm\infty}\cosh|x|s
+\lim\limits_{x\to\pm\infty}\varphi(x,t)=0
+\varphi(x,t)=\begin{cases}\int_0^\infty C_1\biggl(\dfrac{s}{|x|}\biggr)e^{-t\left(\frac{s}{|x|}\right)^2}\sin s~d\biggl(\dfrac{s}{|x|}\biggr)+\int_0^\infty C_2\biggl(\dfrac{s}{|x|}\biggr)e^{-t\left(\frac{s}{|x|}\right)^2}\cos s~d\biggl(\dfrac{s}{|x|}\biggr)&\text{when}~t\geq0\\\int_0^\infty C_1\biggl(\dfrac{s}{|x|}\biggr)e^{t\left(\frac{s}{|x|}\right)^2}\sinh s~d\biggl(\dfrac{s}{|x|}\biggr)+\int_0^\infty C_2\biggl(\dfrac{s}{|x|}\biggr)e^{t\left(\frac{s}{|x|}\right)^2}\cosh s~d\biggl(\dfrac{s}{|x|}\biggr)&\text{when}~t\leq0\end{cases}
+\varphi(x,t)=\begin{cases}\int_0^\infty C_1\biggl(\dfrac{s}{|x|}\biggr)\dfrac{e^{-\frac{ts^2}{x^2}}\sin s}{|x|}ds+\int_0^\infty C_2\biggl(\dfrac{s}{|x|}\biggr)\dfrac{e^{-\frac{ts^2}{x^2}}\cos s}{|x|}ds&\text{when}~t\geq0\\\int_0^\infty C_1\biggl(\dfrac{s}{|x|}\biggr)\dfrac{e^{\frac{ts^2}{x^2}}\sinh s}{|x|}ds+\int_0^\infty C_2\biggl(\dfrac{s}{|x|}\biggr)\dfrac{e^{\frac{ts^2}{x^2}}\cosh s}{|x|}ds&\text{when}~t\leq0\end{cases}
+\lim\limits_{x\to\pm\infty}\dfrac{e^{-\frac{ts^2}{x^2}}}{|x|}=0
+\lim\limits_{x\to\pm\infty}\dfrac{e^{\frac{ts^2}{x^2}}}{|x|}=0
+\therefore\varphi(x,t)=\begin{cases}\int_0^\infty C_1(s)e^{-ts^2}\sin|x|s~ds+\int_0^\infty C_2(s)e^{-ts^2}\cos|x|s~ds&\text{when}~t\geq0\\\int_0^\infty C_1(s)e^{ts^2}\sinh|x|s~ds+\int_0^\infty C_2(s)e^{ts^2}\cosh |x|s~ds&\text{when}~t\leq0\end{cases}
+\lim\limits_{x\to\pm\infty}\varphi(x,t)=0
+\varphi(x,0)=f_0(x)
+C_1(s)
+C_2(s)

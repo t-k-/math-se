@@ -1,0 +1,52 @@
+\bar{y}
+n \times 1
+n
+\bar{x}
+n \times 1
+n
+\bar{b}
+X=(X_1,\ldots,X_n)
+n
+t=(t_1,\ldots,t_n)\in\mathbb{R}^n
+ \langle t,X\rangle=t\cdot X^\intercal=\sum_{i=1}^nt_iX_i=t_1X_1+\cdots+t_nX_n 
+X
+n
+B=\{b_{ij}\}
+n\times n
+a=(a_1,\ldots,a_n)\in\mathbb{R}^n
+Y=(Y_1,\ldots,Y_n)
+n
+t\in\mathbb{R}^n
+c_j=\sum_{i=1}^nt_ib_{ij}
+\langle t,Y\rangle
+t\in\mathbb{R}^n
+Y
+n
+ Y^\intercal=a^\intercal+BX^\intercal. 
+ \begin{align} \langle t,Y\rangle&=t\cdot Y^\intercal=t\cdot a^\intercal+t\cdot B\cdot X^\intercal\\ &=\sum_{i=1}^n t_ia_i+\sum_{i=1}^n \sum_{j=1}^n t_ib_{ij}X_j\\ &=\sum_{i=1}^n t_ia_i+\sum_{j=1}^n c_jX_j \end{align} 
+Y
+t
+t=e_i
+e_i
+0
+1
+i
+X\sim\mathcal{N}_n(\mu,\Sigma)
+n
+\mu
+\Sigma
+X
+ \varphi_X(t)=\exp\left(i\langle t,\mu\rangle-\tfrac12 t\Sigma t^\intercal\right),\quad t\in\mathbb{R}^n. 
+X_1,\ldots,X_n
+ \varphi_{(X_1,\ldots,X_n)}(t)=\prod_{j=1}^n\varphi_{X_j}(t_j),\quad\text{for all }\,t=(t_1,\ldots,t_n)\in\mathbb{R}^n. 
+Y_1,\ldots,Y_n
+\Sigma_Y
+\mathrm{Cov}(Y_i,Y_j)=0
+i\neq j
+t\in\mathbb{R}^n
+\sigma_j^2=\mathrm{Var}(Y_j)
+Y
+Y_1,\ldots,Y_n
+ \Sigma_Y:=\{\mathrm{Cov}(Y_i,Y_j)\}_{i,j=1}^n 
+ t\Sigma t^\intercal=\sum_{j=1}^n t_j^2\sigma_j^2, 
+ \varphi_Y(t)=\exp\left(i\langle t,\mu_Y\rangle-\tfrac12 t\Sigma_Yt^\intercal\right)=\prod_{j=1}^n\exp\left(it_i\cdot \mu_Y^j-\tfrac12 t_j^2\sigma_j^2\right)=\prod_{i=1}^n\varphi_{Y_i}(t_i) 

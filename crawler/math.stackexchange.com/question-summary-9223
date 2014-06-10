@@ -1,0 +1,11 @@
+\int \frac{dx}{a^{2}+x^{2}}=\frac{1}{a}\arctan\frac{x}{a}+C
+ \begin{align*} y &= \arctan\frac{x}{a} \\ a\tan y&=x \\ \tan y &= \frac{x}{a} \\ \frac{d}{dx} \tan y &= \frac{d}{dx} \frac{x}{a} \\ \sec^{2}y \frac{dy}{dx} &= \frac{1}{a} \\ \frac{dy}{dx} &= \frac{1}{a} \frac{1}{\sec^{2}y} \\ &= \frac{1}{a} \frac{1}{1 + \tan^{2} y} \\ \frac{dy}{dx}&= \frac{1}{a} \frac{1}{1 + (\frac{x}{a})^{2}} \\ \int \frac{dy}{dx}\,dx &= \int \frac{1}{a} \frac{1}{1 + (\frac{x}{a})^{2}}\,dx\\ \arctan\frac{x}{a} &= \frac{1}{a} \int \frac{1}{1 + (\frac{x}{a})^{2}}\,dx \\ \end{align*} 
+a
+dx
+\frac{a^2}{a^2+x^2}
+\frac{1}{a^2+x^2}
+\frac{1}{a}\arctan(\frac{x}{a}) + C
+\displaystyle x = a\tan{\theta}
+\displaystyle \frac{dx}{d\theta} = a\sec^2{\theta} \Rightarrow dx = a\sec^2{\theta}\;{d\theta}
+\displaystyle \int\frac{1}{x^2+a^2}\;{dx} = \int\frac{a\sec^2{\theta}}{a^2\tan^2{\theta}+a^2}\;{d\theta} = \frac{1}{a}\int\frac{a\sec^2{\theta}}{a(\tan^2{\theta}+1)}\;{d\theta}
+\displaystyle  = \frac{1}{a}\int\frac{a\sec^2{\theta}}{a\sec^2{\theta}}\;{d\theta} = \frac{1}{a}\int\;{d\theta} = \frac{1}{a}\theta+k = \frac{1}{a}\arctan\frac{x}{a}+k

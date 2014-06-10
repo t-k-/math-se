@@ -1,0 +1,25 @@
+\mu_1,\ldots\mu_n
+\sigma
+h_i
+(\Omega_i,\mathcal{A}_i,\mu_i),~i=1,\ldots,n
+ h(\omega_1,\ldots\omega_n):=\prod_{i=1}^{n}h_i(\omega_i) 
+ (h_1\mu_1)\otimes\ldots\otimes (h_n\mu_n)=h(\mu_1\otimes\ldots\otimes\mu_n) 
+A:=A_1\times\ldots\times A_n\in\bigotimes_{i=1}^{n}\mathcal{A}_i
+ (h_1\mu_1)\otimes\ldots\otimes (h_n\mu_n)(A)=\int_{\Omega_1}\ldots\int_{\Omega_n}(1_A)_{\omega_1\times\ldots\times\omega_{n-1}}(\omega_n)\, dh_n\mu_n\ldots\, dh_1\mu_1\\=\int_{\Omega_1}\ldots\int_{\Omega_n}1_{A_1}(\omega_1)1_{A_2}(\omega_2)\cdot\ldots\cdot1_{A_n}(\omega_n)\, dh_n\mu_n\ldots\, dh_1\mu_1\\=\int_{A_1}\int_{A_2}\ldots\int_{A_n}\, dh_n\mu_n\ldots\, dh_2\mu_2\, dh_1\mu_1\\=\int_{A_1}\int_{A_2}\ldots\underbrace{\int_{A_n}h_n\, d\mu_n}_{=h_n\mu_n(A_n)}\ldots\, dh_2\mu_2\, dh_1\mu_1\\=h_n\mu_n(A_n)\int_{A_1}\ldots\int_{A_{n-1}}h_{n-1}\, d\mu_{n-1}\ldots \,dh_1\mu_1\\=h_{n-1}\mu_{n-1}(A_{n-1})h_n\mu_n(A_n)\int_{A_1}\ldots\\=\ldots\\=h_1\mu_1(A_1)\cdot h_2\mu_2(A_2)\cdot\ldots\cdot h_n\mu_n(A_n)\\=\prod_{i=1}^{n}h_i\mu_i(A_i) 
+A
+\mu_i, i=1,\ldots,n
+\sigma
+h
+h_i, i=1,\ldots,h_n
+h
+h_i, i=1,\ldots,n
+A
+\bigotimes_{i=1}^{n}\mathcal{A}_i
+A\in\bigotimes_{i=1}^{n}\mathcal{A}_i
+ h(\mu_1\otimes\ldots\otimes\mu_n)(A)=\int_A h\, d(\mu_1\otimes\mu_2\ldots\otimes\mu_n). 
+ h(\mu_1\otimes\ldots\otimes\mu_n)(A)=\int_A h\, d(\mu_1\otimes\mu_2\ldots\otimes\mu_n)\\=\int_{A_1}\ldots\int_{A_n}h_{\omega_1\times\ldots\times\omega_{n-1}}(\omega_n)\, d\mu_n(\omega_n)\ldots\, d\mu_1(\omega_1)\\=\int_{A_1}\ldots\int_{A_n}h_1(\omega_1)\cdot h_2(\omega_2)\cdot\ldots\cdot h_n(\omega_n)\, d\mu_n(\omega_n)\ldots\, d\mu_1(\omega_1)\\=\prod_{i=1}^{n}h_i\mu_i(A_i) 
+h_i, i=1,\ldots,n
+ h(\mu_1\otimes\ldots\otimes\mu_n)(\times_{i=1}^{n}\Omega_i)=1. 
+ h_i\mu_i(\Omega_i)=\int_{\Omega_i}h\, d\mu_i=1, i=1,\ldots,n. 
+ h(\mu_1\otimes\mu_1\otimes\ldots\otimes\mu_n)(\times_{i=1}^{n}\Omega_i)=\prod_{i=1}^{n}h_i\mu_i(\Omega_i)=\prod_{i=1}^{n}1=1. 
+\Box

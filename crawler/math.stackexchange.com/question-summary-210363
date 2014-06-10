@@ -1,0 +1,50 @@
+V_m=
+m
+U\in SU(2)
+\mathbb{C}^2
+\Pi_m:V_m\rightarrow V_m
+[\Pi_m(U)f](z)=f(U^{-1}z)
+f(z)=a_0z_1^m+a_1z_1^{m-1}z_2+\dots +a_mz_2^m
+z=(z_1,z_2)\in\mathbb{C}^2
+\Pi_m: SU(2) \to GL(V_m)
+U \in SU(2)
+\Pi_m(U)
+f \in V_m
+f \circ U^{-1}
+ (\Pi_m(U)(f))(z) = f(U^{-1}(z))
+f
+f(z) = z_1^{m_1} z_2^{m_2}
+U^{-1} = \pmatrix{a & b\cr c & d\cr}
+f \circ U^{-1} = (a z_1 + b z_2)^{m_1} (c z_1 + d z_2)^{m_2}
+\pi_m
+\pi_m(X)=\frac{d}{dt}\Pi_m(e^{tX})|_{t=0}
+X=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}
+(\pi_m(X)f)(z)=\frac{d}{dt}f(e^{-tXz})|_{t=0}
+z(t)\in\mathbb{C}^2
+z(t)=e^{-tX}z
+z(t)=(z_1(t),z_2(t))
+\pi_m(X)f=\partial f/\partial z_1 dz_1/dt+\partial f/\partial z_2 dz_2/dt|_{t=0}
+dz/dt|_{t=0}=-Xz
+z_1
+z_2
+t
+dz/dt
+z_1
+z_2
+\frac{dz_1}{dt}\bigg|_{t=0} = [-Xz]_{\text{$z_1$ component}},\hspace{3mm} \frac{dz_2}{dt}\bigg|_{t=0} = [-Xz]_{\text{$z_2$ component}}.
+Xz
+(z_1,z_2)
+X
+[-Xz]_{\text{
+ component}}
+-Xz
+\pi_m(X)
+V_m
+\pi_m(X) = -(X_{11}z_1 + X_{12}z_2)\frac{\partial }{\partial z_1} - (X_{21}z_1 + X_{22}z_2) \frac{\partial}{\partial z_2}.
+H= \left(\begin{array}{cc} 1 & 0 \\ 0 & - 1\end{array}\right)
+\pi_m(H) = -z_1 \frac{\partial}{\partial z_1} +z_2\frac{\partial}{\partial z_2}.
+V_1
+f(z_1,z_2) = z_1 + z_2
+\begin{eqnarray*} \pi_m(H)(f) &=& -z_1\frac{\partial }{\partial z_1} (z_1) +z_2\frac{\partial}{\partial z_2}(z_2)\\ &=& -z_1 + z_2. \end{eqnarray*}
+V_m
+\pi_m(H)z_1^kz_2^{m-k} = (m-2k)z_1^kz_2^{m-k}.

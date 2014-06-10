@@ -1,0 +1,13 @@
+a\ddot{x}+b\dot{x}+c\sin x +d\cos x=k
+a,b,c,d,k
+a\ddot{x}+b\dot{x}+c\sin x+d\cos x=k
+a\dfrac{d^2x}{dt^2}+b\dfrac{dx}{dt}+c\sin x+d\cos x-k=0
+\dfrac{dx}{dt}=u
+\dfrac{d^2x}{dt^2}=\dfrac{du}{dt}=\dfrac{du}{dx}\dfrac{dx}{dt}=u\dfrac{du}{dx}
+\therefore au\dfrac{du}{dx}+bu+c\sin x+d\cos x-k=0
+au\dfrac{du}{dx}=-bu-c\sin x-d\cos x+k
+u\dfrac{du}{dx}=-\dfrac{bu}{a}-\dfrac{c\sin x+d\cos x-k}{a}
+u=\dfrac{1}{v}
+\dfrac{du}{dx}=-\dfrac{1}{v^2}\dfrac{dv}{dx}
+\therefore-\dfrac{1}{v^3}\dfrac{dv}{dx}=-\dfrac{b}{av}-\dfrac{c\sin x+d\cos x-k}{a}
+\dfrac{dv}{dx}=\dfrac{(c\sin x+d\cos x-k)v^3}{a}+\dfrac{bv^2}{a}

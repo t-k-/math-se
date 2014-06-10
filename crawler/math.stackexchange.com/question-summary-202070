@@ -1,0 +1,38 @@
+0, \frac{1}{2}, 0, \frac{1}{3}, \frac{2}{3}, 0, \frac{1}{4}, \frac{2}{4}, ...
+[0, 1)
+\xi_1, \xi_2, \xi_3, ...
+[0, 1)
+(a, b) \subset [0, 1)
+\lim\limits_{N\to\infty} \frac {\bigl|\{1\le n\le N: \xi_n \in (a, b)\}\bigr|} {N} = b-a
+n>1
+F_n=\left\{\frac{k}n:k=0,\dots,n-1\right\}\;;
+0\le a<b<1
+|(a,b)\cap F_n|\ge\lceil n(b-a)\rceil-1
+2
+F_2
+3
+F_3
+\sum_{k=2}^nk=\frac12n(n+1)-1
+F_2
+F_n
+n\ge 2
+T_n=\frac12n(n+1)-1
+T_m\le N<T_{m+1}
+\begin{align*} |\{n\le N:\xi_n\in(a,b)\}&\ge\sum_{k=2}^m|(a,b)\cap F_k|\\ &\ge\sum_{k=2}^m\Big(\lceil k(b-a)\rceil-1\Big)\\ &=\sum_{k=2}^m\lceil k(b-a)\rceil-m+1\\ &\ge\sum_{k=2}^mk(b-a)-m+1\\ &=(b-a)T_m-m+1\;, \end{align*}
+\frac{|\{n\le N:\xi_n\in(a,b)\}}N\ge(b-a)\frac{T_m}N-\frac{m-1}N\;.
+\frac{T_m}N>\frac{T_m}{T_{m+1}}=\frac{\frac12m(m+1)-1}{\frac12(m+1)(m+2)-1}\to 1\quad\text{ as }\quad m\to\infty\;,
+\frac{m-1}N\le\frac{m-1}{T_m}=\frac{m-1}{\frac12m(m+1)-1}\to 0\quad\text{ as }\quad m\to\infty\;,
+\lim_{N\to\infty}\frac{|\{n\le N:\xi_n\in(a,b)\}}N\ge b-a\;.
+a < b
+0 \le p < q
+\frac pq \in (a,b)
+qa < p < qb
+\lfloor qa\rfloor < p < \lceil qb \rceil
+N \in \mathbb N
+q
+\frac 12q(q+1) < N
+\le q
+(\xi_n)_{n\le N}
+N \to \infty
+ \frac 12 q(q+1) < N \le \frac 12 (q+1)(q+2) 
+ 1 \le \frac N{\frac 12q(q+1)} \le \frac{(q+1)(q+2)}{q(q+1)} \to 1, q \to \infty 

@@ -1,0 +1,137 @@
+p
+n
+d
+q
+p,n,d
+q
+\left\{\begin{align*} &p+n+d+q=50\\ &p+5n+10d+25q=150\;. \end{align*}\right.\tag{1}
+(1)
+(1)
+4n+9d+24q=100\;,\tag{2}
+q\le 4
+q=4
+4n+9d=100-24\cdot4=4
+n=1,d=0
+105
+5
+p=45
+q=4
+q=3
+(2)
+4n+9d=28
+d\le 3
+4n
+28
+4
+9d
+0<d\le 3
+d=0
+n=7
+10
+110
+p=40
+q=3
+q=2
+(2)
+4n+9d=52
+d\le 5
+9d
+4
+d=0
+n=13
+d=4
+n=4
+15
+115
+p=35
+10
+110
+p=40
+q=2
+q=1
+(2)
+4n+9d=76
+d\le 8
+4\mid d
+d
+0,4
+8
+q=1,d=0,n=19,p=30
+q=1,d=4,n=10,p=35
+q=1,d=8,n=1,p=40
+q=0
+(2)
+4n+9d=100
+d
+0,4
+8
+q=0,d=0,n=25,p=25
+q=0,d=4,n=16,p=30
+q=0,d=8,n=7,p=35
+10
+p + 5n + 10d + 25q = 150
+p+n+d+q = 50
+4n + 9d + 24q = 100
+9
+24
+3
+100-4n
+n=3n'+1
+n'
+12n' + 4 + 9d + 24q = 100
+4n' + 3d + 8q = 32
+d
+4
+d=4d'
+n' + 3d' + 2q = 8
+(p,n,d,q) = (50-(3n'+1)-4d'-q, 3n'+1,4d',q)
+50-(3n'+1)-4d'-q\geq 0
+n'+3d'+2q = 8
+p,n,d,q
+\tag1p+5n+10d+25q=150
+\tag2p+n+d+q=50
+(p,q)
+p,q\ge0
+150-p-25q
+5(50-p-q)\le 150-p-25q\le 10(50-p-q)
+150-p-25q
+5
+p
+5
+p=5p'
+150-p-25q
+(5)+3\cdot(6)
+-2q\ge -8
+q\le 4
+q=0
+5\le p'\le 7
+q=1
+6\le p'\le 8 
+q=2
+7\le p'\le 8 
+q=3
+8\le p'\le 8 
+q=4
+9\le p'\le 9 
+3+3+2+1+1=10
+\tag3 9p-15q\le 350
+\tag4 4p-20q\ge 100 .
+\tag5  q-3p'\ge -23
+\tag6  p'-q\ge 5
+\tag 7 -p'-5q\ge-30.
+(p,n,d,q)
+(25, 25, 0, 0)
+(30, 16, 4, 0)
+(35, 7, 8, 0)
+(30, 19, 0, 1)
+(35, 10, 4 ,1)
+(40, 1, 8, 1)
+(35, 13, 0 ,2)
+(40, 4, 4, 2)
+(40, 7, 0, 3)
+(45, 1, 0, 4)
+f := \frac{1}{(1-tx)(1-tx^5)(1-tx^{10})(1-tx^{25})}:
+T := taylor(f, x = 0, 151): 
+T150 := coeff(T, x, 150):
+coeff(T150,t,50);
+1.50 using those coins. Then you'd implement the DP so that you could produce the actual sets of coins that sum to \

@@ -1,0 +1,72 @@
+y''-\displaystyle\frac{y'}{x}=4x^{2}y
+y = e^{x^{2}}
+z=y'
+xy'' - y' = 4x^3y
+x^2
+x^2
+(\frac{1}{x}y')' = 4xy
+(\frac{y'}{2x})' = 2xy
+\frac{y'}{2x} = z(x)
+z' = \frac{y'}{z}y
+2x
+\frac{y'}{z}
+z^2 = y^2 + c
+\frac{1}{2x}\frac{dy}{dx} = \pm \sqrt{y^2 + c}
+c
+c
+y(x) = \exp(x^2)
+c =0 
+y(x) = y(0) \exp(\pm x^2)
+\textbf{EDIT:}
+\textbf{CASE 1:}
+c > 0
+c = a^2
+\frac{dy}{\sqrt{y^2 + a^2}} = \pm d(x^2)
+y = a \tan(\theta)
+dy = a \sec^2(\theta) d\theta
+\sec(\theta) d\theta = \pm d(x^2)
+d(log(\sec(\theta) + \tan(\theta))) = \pm d(x^2)
+log(\sec(\theta) + \tan(\theta)) = \pm (x^2 + k)
+\sec(\theta) + \tan(\theta) = \exp(\pm (x^2 + k))
+\theta
+y
+\frac{y}{a} \pm \sqrt{1+(\frac{y}{a})^2} = K \exp(\pm x^2)
+\textbf{CASE 2:}
+c > 0
+c = -a^2
+\frac{dy}{\sqrt{y^2 - a^2}} = \pm d(x^2)
+y = a \sec(\theta)
+dy = a \sec(\theta) \tan(\theta) d\theta
+\sec(\theta) d\theta = \pm d(x^2)
+d(log(\sec(\theta) + \tan(\theta))) = \pm d(x^2)
+log(\sec(\theta) + \tan(\theta)) = \pm (x^2 + k)
+\sec(\theta) + \tan(\theta) = \exp(\pm (x^2 + k))
+\theta
+y
+\frac{y}{a} \pm \sqrt{(\frac{y}{a})^2 - 1} = K \exp(\pm x^2)
+\textbf{CASE 3:}
+c = 0
+\frac{dy}{dx} = \pm 2xy
+y(x) = K \exp(\pm x^2)
+\rm\quad\quad\quad \ y'\ =\ f\ y 
+\rm\quad\Rightarrow\ y''\ =\ f\:'\ y + f^{\:2}\ y 
+\rm\quad\displaystyle\Rightarrow\ y''\ = \frac{f\:'}f\ y' + f^{\:2}\ y 
+\rm\quad\displaystyle y''\ = \ \frac{1}x\ y' + 4x^2\ y\ \ \Rightarrow\ \ f\ =\ \pm 2\:x
+\rm\ y'\ =\ \pm 2\:x\ y\ \ \Rightarrow\ \ y\ =\ c\ e^{\pm x^2}
+y''-\dfrac{y'}{x}=4x^2y
+x\dfrac{d^2y}{dx^2}-\dfrac{dy}{dx}-4x^3y=0
+t=x^n
+\dfrac{dy}{dx}=\dfrac{dy}{dt}\dfrac{dt}{dx}=nx^{n-1}\dfrac{dy}{dt}
+\dfrac{d^2y}{dx^2}=\dfrac{d}{dx}\left(nx^{n-1}\dfrac{dy}{dt}\right)=nx^{n-1}\dfrac{d}{dx}\left(\dfrac{dy}{dt}\right)+n(n-1)x^{n-2}\dfrac{dy}{dt}=nx^{n-1}\dfrac{d}{dt}\left(\dfrac{dy}{dt}\right)\dfrac{dt}{dx}+n(n-1)x^{n-2}\dfrac{dy}{dt}=nx^{n-1}\dfrac{d^2y}{dt^2}nx^{n-1}+n(n-1)x^{n-2}\dfrac{dy}{dt}=n^2x^{2n-2}\dfrac{d^2y}{dt^2}+n(n-1)x^{n-2}\dfrac{dy}{dt}
+\therefore x\left(n^2x^{2n-2}\dfrac{d^2y}{dt^2}+n(n-1)x^{n-2}\dfrac{dy}{dt}\right)-nx^{n-1}\dfrac{dy}{dt}-4x^3y=0
+n^2x^{2n-1}\dfrac{d^2y}{dt^2}+n(n-1)x^{n-1}\dfrac{dy}{dt}-nx^{n-1}\dfrac{dy}{dt}-4x^3y=0
+n^2x^{2n-1}\dfrac{d^2y}{dt^2}+n(n-2)x^{n-1}\dfrac{dy}{dt}-4x^3y=0
+n^2x^{2n-4}\dfrac{d^2y}{dt^2}+n(n-2)x^{n-4}\dfrac{dy}{dt}-4y=0
+n^2t^{\frac{2n-4}{n}}\dfrac{d^2y}{dt^2}+n(n-2)t^{\frac{n-4}{n}}\dfrac{dy}{dt}-4y=0
+n=2
+4\dfrac{d^2y}{dt^2}-4y=0
+\dfrac{d^2y}{dt^2}-y=0
+\lambda^2-1=0
+\lambda=+-1
+\therefore y=C_1e^t+C_2e^{-t}
+y=C_1e^{x^2}+C_2e^{-x^2}

@@ -1,0 +1,38 @@
+ \frac{1}{ \sqrt{ 2 \pi}} \int_{-\infty}^{\infty} \frac{e^{-iwx}}{\cosh{ (x  \sqrt{\frac{\pi}{2}}} ) } = \frac{1}{\cosh{ (w  \sqrt{\frac{\pi}{2}}} ) }  .
+y = x \sqrt{ \frac{\pi}{2} }
+\cosh
+ \frac{1}{ \sqrt{ 2 \pi}} \int_{-\infty}^{\infty} \frac{e^{-iwx}}{\cosh{ (x  \sqrt{\frac{\pi}{2}}} ) }dx =  \frac{2}{  \pi} \int_{-\infty}^{\infty} \frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{e^{y} + e^{-y} }dy =  \frac{2}{  \pi} \int_{-\infty}^{\infty} e^{-y}\frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{1 - (-e^{-2y}) }dy
+\frac{2}{  \pi} \int_{-\infty}^{\infty} e^{-y}\frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{1 - (-e^{-2y}) }dy = \frac{2}{  \pi} \int_{-\infty}^{\infty} \sum_{k = 0}^{\infty} -e^{-2yk}  e^{-y}e^{-iwy\sqrt{\frac{2}{\pi}}}dy
+ = \frac{2}{  \pi} \sum_{k = 0}^{\infty}\int_{-\infty}^{\infty}  -e^{-y(2k+1+iw\sqrt{\frac{2}{\pi}})}dy
+\frac{1}{\cosh( x \sqrt{\frac{\pi}{2}})}
+\textbf{Added:}
+\frac{2}{  \pi} \int_{-\infty}^{\infty} \frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{e^{y} + e^{-y} }dy =  \frac{2}{  \pi} \int_{0}^{\infty} e^{-y}\frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{1 - (-e^{-2y}) }dy +  \frac{2}{  \pi} \int_{-\infty}^{0} e^{y}\frac{e^{-iwy\sqrt{\frac{2}{\pi}}}}{1 - (-e^{2y}) }dy
+= \frac{2}{  \pi} \sum_{k = 0}^{\infty}\int_{0}^{\infty} (-1)^k e^{-y(2k+1+iw\sqrt{\frac{2}{\pi}})}dy + \frac{2}{  \pi} \sum_{k = 0}^{\infty}\int_{-\infty}^{0} (-1)^k  e^{y(2k+1-iw\sqrt{\frac{2}{\pi}})}dy
+ =  \frac{4}{\pi} \sum_{k=0}^{\infty} (-1)^k \frac{ 2k+1 }{ (2k+1)^2 + (w \sqrt{\frac{2}{\pi}} )^2} 
+ \frac{2}{\pi} \sum_{k=-\infty}^{\infty} (-1)^k \frac{ 2k+1 }{ (2k+1)^2 + (w \sqrt{\frac{2}{\pi}} )^2}
+\sum_{k=-\infty}^{\infty} (-1)^k \, f(k) = -\sum_m \text{Res}_{z=z_m} \pi \csc{(\pi z)} f(z)
+z_m
+f
+\pi \csc{(\pi z)} f(z)
+x \in [-N,N]
+N \to \infty
+f(z) = \frac{2}{\pi}\frac{ 2k+1 }{ (2k+1)^2 + (w \sqrt{\frac{2}{\pi}} )^2}
+z_{\pm} = -(1/2) \pm i w \sqrt{\frac{1}{2 \pi}} 
+\frac{2}{\pi}\sum_{k=-\infty}^{\infty} (-1)^k \frac{ 2k+1 }{ (2k+1)^2 + (w \sqrt{\frac{2}{\pi}} )^2} = - \left [\csc{\left(-\frac{\pi}{2}+i w \sqrt{\frac{\pi}{2}}\right)} + \csc{\left(-\frac{\pi}{2}-i w \sqrt{\frac{\pi}{2}}\right)} \right ]
+\frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} dx \, \frac{e^{-i w x}}{\cosh{[x \sqrt{(\pi/2)}]}} = \frac{2}{\cosh{[w \sqrt{(\pi/2)}]}}
+z\in \mathbb C
+f(z)=\exp(z)+\exp(-z)
+z_k=a+ib_k
+a=0
+b_k=\frac{\pi}{2}+k\pi,~~k\in\mathbb Z.
+\int_{-\infty}^{\infty}\frac{\exp(-i\tilde{\omega}y)}{f(y)}dy,
+\tilde{\omega}:=\omega\sqrt{2}{\pi}
+R\rightarrow \infty
+K\rightarrow \infty
+\int_{\gamma}\frac{\exp(-i\tilde{\omega}z)}{f(z)}=Res(f(z),z_0)=\frac{\exp((-i\tilde{\omega}i\frac{\pi}{2})}{2exp(i\frac{\pi}{2})}=\frac{1}{2}\exp(\tilde{\omega}\frac{\pi}{2}),
+\gamma=\gamma_1+\gamma_2
+\gamma_1(t)=-R(1-t)+tR
+\gamma_2(t)=K\exp(i\pi t)
+z_0=i\frac{\pi}{2}
+K>1
+t\in[0,1]

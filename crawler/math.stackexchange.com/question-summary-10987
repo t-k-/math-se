@@ -1,0 +1,8 @@
+ \theta(x) = \sum\limits_{p \leq x} \log{p} \quad \ ; \ \psi(x)=\sum\limits_{n=1}^{\infty} \theta(x^{1/n})
+e^{\psi(x)}= \text{lcm}[ 1,2,\cdots , \lfloor{x\rfloor}]
+e^{\psi(x)} = \exp({\displaystyle \sum_{n=1}^{\infty} \theta(x^{1/n})}) = \displaystyle \Pi_{n=1}^{\infty} \exp(\theta (x^{1/n})) = \displaystyle \Pi_{n=1}^{\infty} \exp(\displaystyle \sum_{p \leq x^{1/n}} \log(p))
+ = \Pi_{n=1}^{\infty} (\Pi_{p \leq x^{1/n}} p) = (\Pi_{p \leq x} p) \times (\Pi_{p \leq x^{1/2}} p) \times (\Pi_{p \leq x^{1/3}} p) ... = lcm[1,2,3,...,[x]]
+\textbf{EDIT:}
+p
+lcm[1,2,3,...,[x]]
+[\log_p([x])]

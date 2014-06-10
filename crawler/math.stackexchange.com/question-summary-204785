@@ -1,0 +1,25 @@
+X
+f_X(x) = \begin{cases}\frac{p+1}{2}|x|^p&\mathrm{\ if\ } |x|\le1\\ 0&\mathrm{\ otherwise }\end{cases}
+p
+-0.5
+0.5
+p
+Var(X)
+\mathrm{Var}(X)=\mathrm{E}\left[\left(X-\mathrm{E}(X)\right)^2\right]=\int_{-\infty}^\infty(x-\mu)^2f_X(x)~dx\;,
+\mu=\int_{-\infty}^\infty xf_X(x)~dx\;.
+f_X(x)
+y
+\begin{align*} \int_{-\infty}^0 xf_X(x)~dx&=\int_\infty^0(-x)f_X(-x)~d(-x)\\ &=\int_0^\infty(-x)f_X(x)~dx\\ &=-\int_0^\infty xf_X(x)~dx\;, \end{align*}
+\mu=\int_{-\infty}^0 xf_X(x)~dx+\int_0^\infty xf_X(x)~dx=0\;.
+\begin{align*} \mathrm{Var}(X)&=\int_{-1}^1x^2\left(\frac{p+1}2\right)|x|^p~dx\\ &=\frac{p+1}2\int_{-1}^1 x^2|x|^p~dx\\ &=(p+1)\int_0^1 x^{p+2}~dx\\ &=\frac{p+1}{p+3}\;. \end{align*}
+\left[-\frac12,\frac12\right]
+p=-\frac12
+p=\frac12
+v(p)
+v(p)=\frac{p+1}{p+3}=1-\frac2{p+3}
+v'(p)=\frac2{(p+3)^2}>0
+|x|^p
+\mathbb{E} (X) = 0
+\text{Var} (X) = \mathbb{E} (X^2) = \displaystyle\int_{-1}^1 x^2 f_X (x) dx = \displaystyle\int_{-1}^1 x^2 \left(\frac{p+1}{2}\right) |x|^p dx = \left(\frac{p+1}{2}\right) \displaystyle\int_{-1}^1 x^2 |x|^p dx
+\text{Var} (X) = (p+1) \displaystyle\int_{0}^1 x^{p+2} dx = \left(\frac{p+1}{p+3}\right)
+f (p) := \frac{p+1}{p+3}

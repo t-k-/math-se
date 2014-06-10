@@ -1,0 +1,16 @@
+\varrho
+s=1
+ \varrho(n) + \sum_{\substack{d\mid n \\ d>1}}  \sum^n_{\substack{k=1 \\ (k, n)=d}} \frac{1}{k} = H_n.
+ \varrho(n) + \sum_{\substack{d\mid n \\ d>1}}  \sum^{n/d}_{\substack{m=1 \\ (m, n/d)=1}} \frac{1}{md} = \varrho(n) + \sum_{\substack{d\mid n \\ d>1}} \frac{1}{d} \varrho\left(\frac{n}{d}\right) = \sum_{d\mid n} \frac{1}{d} \varrho\left(\frac{n}{d}\right).
+\varrho \star \frac{1}{n} = H_n \sim \log n + \gamma + \frac{1}{2n}.
+ A(s) = \sum_{n\ge 1}\frac{\varrho(n)}{n^s}
+ A(s) \zeta(s+1) \sim -\zeta'(s) + \gamma \zeta(s) + \frac{1}{2} \zeta(s+1)
+ A(s) \sim \frac{1}{\zeta(s+1)} \left( -\zeta'(s) + \gamma \zeta(s) \right) + \frac{1}{2}.
+\int_{3/2-i\infty}^{3/2+i\infty} A(s) n^s \frac{ds}{s} =  -\frac{1}{2} \varrho(n) + \sum_{k=1}^n \varrho(k)
+ \frac{6}{\pi^2} n \log n +  \left(\frac{6(\gamma-1)}{\pi^2} - \frac{36}{\pi^4} \zeta'(2)\right) n + O(\log n)
+ \frac{1}{n} \sum_{k=1}^n \varrho(k) \sim \frac{6}{\pi^2} \log n +  \left(\frac{6(\gamma-1)}{\pi^2} - \frac{36}{\pi^4} \zeta'(2)\right) + O\left(\frac{\log n}{n}\right).
+-\zeta^{'}(2)
+\frac{\zeta^{'}(2)}{\zeta(2)^2}
+\frac{\zeta^{'}(2)}{\zeta(2)^2}
+\sum_{n=1}^\infty \frac{\mu(n)\log n}{n^2}
+\frac{1}{\zeta(s)}=\sum_{n=1}^\infty \mu(n)n^{-s}.

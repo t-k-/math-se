@@ -1,0 +1,29 @@
+1^3 + 2^3 + 3^3 +\dotsb+ n^3
+s_n=\sum_{k=0}^nk^3
+f(x)=\sum_{n\ge 0}s_nx^n\;.
+s_n=s_{n-1}+n^3
+x^n
+n\ge 0
+\sum_{n\ge 0}s_nx^n=\sum_{n\ge 0}s_{n-1}x^n+\sum_{n\ge 0}n^3x^n\tag{1}\;.
+(1)
+f(x)
+s_n=0
+n<0
+(1)
+f(x)=x\sum_{n\ge 0}s_{n-1}x^{n-1}+\sum_{n\ge 0}n^3x^n=x\sum_{n\ge 0}s_nx^n+\sum_{n\ge 0}n^3x^n=xf(x)+\sum_{n\ge 0}n^3x^n
+f(x)=\frac1{1-x}\sum_{n\ge 0}n^3x^n\;.\tag{2}
+(2)
+x
+\frac1{1-x}=\sum_{n\ge 0}x^n\;.
+\frac{x}{(1-x)^2}=\sum_{n\ge0}nx^n\;.
+\frac{x(1+x)}{(1-x)^3}=\sum_{n\ge0}n^2x^n\;.
+\frac{x(1+4x+x^2)}{(1-x)^4}=\sum_{n\ge 0}n^3x^n\;.
+f
+f(x)=\frac{x+4x^2+x^3}{(1-x)^5}\;.
+f(x)=-\frac1{(1-x)^2}+\frac7{(1-x)^3}-\frac{12}{(1-x)^4}+\frac6{(1-x)^5}\;.
+\frac1{(1-x)^k}=\sum_{n\ge 0}\binom{n+k-1}{k-1}x^n\;.
+\begin{align*} f(x)&=\sum_{n\ge 0}\left(-\binom{n+1}1+7\binom{n+2}2-12\binom{n+3}3+6\binom{n+4}4\right)x^n\\ &=\sum_{n\ge 0}\frac14\left(n^4+n^3+n^2\right)x^n \end{align*}
+s_n=\frac14\left(n^4+2n^3+n^2\right)=\left(\frac{n(n+1)}2\right)^2\;.
+x^3
+k^{3}=\frac{1}{4}[k^{2}(k+1)^{2}-(k-1)^{2}k^{2}]
+\sum_{k=1}^{n}k^{3} =\frac{1}{4}\sum_{k=1}^{n}[k^{2}(k+1)^{2}-(k-1)^{2}k^{2}] =\frac{1}{4}n^{2}(n+1)^{2}

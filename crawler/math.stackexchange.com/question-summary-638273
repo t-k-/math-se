@@ -1,0 +1,8 @@
+ f(x) \cdot g(x)^{(n)} = \sum_{k=0}^{n}(-1)^k \cdot {n \choose k}\cdot (f(x)^{(k)}\cdot g(x))^{(n-k)} 
+ f(x) \cdot \frac{d^n g(x)}{dx^n} = \sum_{k=0}^{n}(-1)^k \cdot {n \choose k}\frac{d^{n-k}}{dx^{n-k}}(f(x)^{(k)}\cdot g(x)) 
+()
+u=f(x),v=g(x)
+uv^{(n)}=\sum_{k=0}^{n}(-1)^k\binom{n}{k}(u^{(k)}v)^{(n-k)}=uv^{(n)}+\sum_{k=1}^{n}(-1)^k\binom{n}{k}(u^{(k)}v)^{(n-k)}
+\sum_{k=1}^{n}(-1)^k\binom{n}{k}(u^{(k)}v)^{(n-k)}=0
+(u^{(k)}v)^{(n-k)}=\sum_{i=0}^{n-k}\binom{n-k}{i}u^{(k+i)}v^{(n-(k+i))}
+\sum_{i=0}^{n-k}\sum_{k=1}^{n}(-1)^k\binom{n}{k}\binom{n-k}{i}u^{(k+i)}v^{(n-(k+i))}=0

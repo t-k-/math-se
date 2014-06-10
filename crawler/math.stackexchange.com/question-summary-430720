@@ -1,0 +1,28 @@
+y=a \cdot cosh \frac{x}{a}
+|x|\le b
+S=2\pi \int_{a}^{b}f(x)\sqrt{1+(f'(x))^2}\,dx
+(f'(x))
+(f'(x))^2=\sinh^2 \frac{x}{a}
+f'(x)=\frac{d}{dx}(a\cdot \cosh\frac{x}{a})=\ldots =\sinh\frac{x}{a}
+S=2\pi \int_{a}^{b}a\cdot \cosh\frac{x}{a}\sqrt{1+\sinh^2 \frac{x}{a}}\,dx=2\pi a \int_{a}^{b} \cosh\frac{x}{a}\sqrt{1+\sinh^2 \frac{x}{a}}dx
+u=\frac{x}{a} 
+du=\frac{1}{a}dx 
+v=\sinh(u)
+dv=\cosh(u)du
+2\pi a^2 \int_{a}^{b} \cosh(u)\sqrt{1+\sinh^2 (u)}\,du 
+2\pi a^2\int_{\sinh a}^{\sinh b}\sqrt{1+v^2}dv
+\int_{}^{}\frac{1}{\cos^3\varphi }=\int_{}^{}\sec^3\varphi 
+\int_{}^{}\sec^3\varphi =\frac{1}{2} \left( \sec\varphi \cdot \tan\varphi +\ln\right|sec\varphi +\tan\varphi \left|\right)
+2\pi a^2\int_{\sinh a}^{\sinh b}\sqrt{1+v^2}\,dv
+v=\tan\varphi 
+dv=\sec^2\varphi d\varphi
+2\pi a^2\int_{\sinh a}^{\sinh b}\sqrt{1+v^2}\,dv=2\pi a^2\int_{...}^{...}\sqrt{\sec^2\varphi }\sec^2\varphi d\varphi=2\pi a^2\int_{...}^{...}\sec^3 \varphi d\varphi
+\int_{...}^{...}\sec^3 \varphi d\varphi
+S=2\pi \int_{a}^{b}a\cdot \cosh\frac{x}{a}\sqrt{1+\sinh^2 \frac{x}{a}}\,dx=2\pi a^2\int_{\sinh a}^{\sinh b}\sqrt{1+v^2}\,dv=2\pi a^2\int_{...}^{...}\sec^3 \varphi d\varphi=2\pi a^2\frac{1}{2}\left[ \sec\varphi \cdot \tan\varphi +\ln\left|sec\varphi +\tan\varphi \right|\right]_{...}^{...}
+\varphi 
+x
+S=2\pi a^2\frac{1}{2}\left[ \sec\varphi \cdot \tan\varphi +\ln\left|\sec\varphi +\tan\varphi \right|\right]_{...}^{...}=2\pi a^2\frac{1}{2}\left[ v\sqrt{1+v^2}+\ln\left|\sqrt{1+v^2}+v\right|\right]_{...}^{...}=
+=\pi a^2 \left[ \sinh\frac{x}{a}\sqrt{1+\sinh^2\frac{x}{a}}+\ln \left| \sqrt{1+\sinh^2\frac{x}{a}}+\sinh\frac{x}{a} \right|\right]_{a}^{b}=
+=\pi a^2 \left[ \sinh\frac{x}{a}\cosh\frac{x}{a}+\ln \left| \cosh\frac{x}{a}+\sinh\frac{x}{a} \right|\right]_{a}^{b}=
+=\pi a^2 \left[ \frac{1}{2}\sinh\frac{2x}{a}+\ln \left| e^{\frac{x}{a}}\right|\right]_{a}^{b}=\pi a^2 \left( \frac{1}{2}\sinh\frac{2b}{a}+\ln \left| e^{\frac{b}{a}}\right| -  \frac{1}{2}\sinh 2 -\ln \left| e \right| \right)
+\cosh^2 x-\sinh^2x=1\iff 1+\sinh^2x=\cosh^2x

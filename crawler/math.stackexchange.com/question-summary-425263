@@ -1,0 +1,23 @@
+x(t_{k+1})
+x'(t)=\lambda x(t)
+x_{k+1}=x(t_k)+\frac{\lambda \tau}{2}(x(t_k)+x_{k+1})
+O(\tau^3)
+O(h^2)
+\dfrac{dx}{dt}=\lambda x
+t_n
+t_{n+1}=t_n+h
+t_n\leq\xi\leq t_{n+1}
+x(t)\in \mathcal{C}^2
+ \int_{t_n}^{t_{n+1}}\dfrac{dx}{dt}dt=\int_{t_n}^{t_{n+1}}\lambda x\,dt \Longrightarrow x(t_{n+1})-x(t_n)=\lambda\int_{t_n}^{t_{n+1}} x\,dt.\tag{1} 
+ \int_{t_n}^{t_{n+1}} x\,dt=\frac{h}{2}(x(t_{n+1})+x(t_n))-\frac{h^3}{12} x''(\xi), 
+(1)
+x(t_{n+1})
+O(h^3)
+ x(t_{n+1})=x(t_n)+\dfrac{h\lambda}{2}\left(x(t_{n+1})+x(t_n)\right)-\dfrac{h^3}{12} x''(\xi). 
+ x(t_{n+1})=\dfrac{2+h\lambda}{2-h\lambda}x(t_n)-\dfrac{h^3}{6(2-h\lambda)}x''(\xi)=\dfrac{2+h\lambda}{2-h\lambda}x(t_n)+O(h^3). 
+0
+t_n
+t_0\leq\xi\leq t_n
+O(h^2)
+ \int_{t_0}^{t_{n}}\dfrac{dx}{dt}dt=\int_{t_0}^{t_{n}}\lambda x\,dt \Longrightarrow x(t_{n})-x(t_0)=\lambda\int_{t_0}^{t_{n}} x\,dt. 
+ \int_{t_0}^{t_n}x\,dt=\frac{h}{2}\left[x(t_0)+2\sum\limits_{i=1}^{n-1}x(t_i)+x(t_n)\right]-\frac{(t_n-t_0)h^2}{12}x''(\xi), 

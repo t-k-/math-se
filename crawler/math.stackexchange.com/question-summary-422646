@@ -1,0 +1,25 @@
+ f(x) = \begin{cases}  x & 0<x<\pi \\ 0 & \pi < x < 2 \pi   \end{cases}
+a_0 = \frac{1}{\pi}\int\limits_0^\pi x dx = \frac{1}{\pi}\cdot\left(\frac{x^2}{2}|_0^\pi\right) = \frac{1}{\pi}\cdot\frac{\pi^2}{2} = \frac{\pi^2}{2\cdot\pi} = \frac{\pi}{2}
+a_n = \frac{1}{\pi}\int\limits_0^\pi x \cdot \cos(nx) dx = \frac{1}{\pi}\cdot\left(\frac{x \cdot \sin(nx)}{n} + \frac{\cos(nx)}{n^2}\right)|_0^\pi
+\sin(nx)
+0
+\cos(nx)
+(-1)^n
+   = \frac{1}{\pi}\cdot\left(\frac{0}{n} + \frac{(-1)^n}{n^2}\right) = \frac{1}{\pi}\cdot\left(\frac{(-1)^n}{n^2}\right) = \frac{(-1)^n}{\pi n^2}
+b_n = \frac{1}{\pi}\int\limits_0^\pi x \sin(nx) dx = \frac{1}{\pi}\cdot\left(\frac{x \cdot \cos(nx)}{n} + \frac{\sin(nx)}{n^2}\right)|_0^\pi
+\sin(nx)
+0
+\cos(nx)
+(-1)^n
+   = \frac{1}{\pi}\cdot\left(\frac{\pi \cdot (-1)^n}{n}\right)   = \frac{\pi\cdot(-1)^n}{\pi n} = \frac{(-1)^n}{n}
+x=0
+x=\pi
+\sin (nx)
+0
+x=\pi
+\cos (nx)
+(-1)^n
+x=0
+\cos (nx)
+1
+b_n

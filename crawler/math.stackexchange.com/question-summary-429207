@@ -1,0 +1,18 @@
+\phi
+L=c_d \int r^{d-1}dr\left[ \frac{1}{2} \dot\phi^2 - \frac{1}{2}  \left(\frac{\partial \phi}{\partial r} \right)^2 -V(\phi)\right] \tag{1}
+v= m^2\phi^2
+c_d = 2π^{d/2} /Γ(d/2)
+\phi(r,t) = A(t)P(r,R)= A(t)e^{\frac{−r^2} {R2}}\tag{2}
+ \mathcal{A}(\phi) = \frac{2 \pi^{d/2}}{\Gamma(d/2)} \int_0^T \left\{\int_0^\infty \left(\frac{1}{2}\dot{\phi}^2 - \frac{1}{2}\left(\frac{\partial \phi}{\partial r}\right)^2 - m^2\phi^2 \right)r^{d-1} dr \right\}dt 
+ \mathcal{A}(\phi + h) = c_d \int_0^T \left\{\int_0^\infty \left(\frac{1}{2}\left(\dot{\phi} + \dot{h}\right)^2 - \frac{1}{2}\left(\frac{\partial \phi}{\partial r} + \frac{\partial h}{\partial r}\right)^2 - m^2(\phi+h)^2 \right)r^{d-1} dr \right\}dt 
+ \mathcal{A}(\phi + h) = \mathcal{A}(\phi) + c_d \int_0^T \left\{\int_0^\infty \left(\dot{\phi}\dot{h} - \frac{\partial \phi}{\partial r} \frac{\partial h}{\partial r} - 2m^2 \phi h\right)r^{d-1}dr\right\}dt + O\left(\|h\|^2\right), 
+ \phi_{tt} - \frac{1}{r^{d-1}}\frac{\partial}{\partial r} \left(r^{d-1} \frac{\partial \phi}{\partial r}\right) + 2m^2 \phi = 0. 
+ \phi_{tt} - \frac{1}{r^{d-1}}\frac{\partial}{\partial r} \left(r^{d-1} \frac{\partial \phi}{\partial r}\right) + \frac{\partial V(\phi)}{\partial \phi} = 0. 
+V= \frac{1}{8}\phi^2(\phi-2)^2
+V'(0) = 0
+\phi
+\phi_1
+ \phi = \sum_{k=1}^\infty \epsilon^k \phi_k,  
+ \frac{\partial V(\phi)}{\partial \phi} = V'(0) + \epsilon \phi_1 V''(0) + \epsilon^2\left(\phi_2 V''(0) + \frac{1}{2}\phi_1^2 V'''(0)\right) + O(\epsilon^3), 
+ V'(0) + \epsilon \left({\phi_1}_{tt} - \frac{1}{r^{d-1}}\frac{\partial}{\partial r} \left(r^{d-1} \frac{\partial \phi_1}{\partial r}\right) + V''(0) \phi_1\right) + O(\epsilon^2) = 0. 
+ {\phi_1}_{tt} - \frac{1}{r^{d-1}}\frac{\partial}{\partial r} \left(r^{d-1} \frac{\partial \phi_1}{\partial r}\right) + \phi_1 = 0. 

@@ -1,0 +1,30 @@
+2^{n}
+2^n-1
+{2^n \choose 2}
+\frac{ 2^n-1} { 2^n \choose 2} = \frac{1}{2^{n-1} }
+n=32
+\frac{1}{31}
+3
+4
+\frac{2}{31}\frac{1}{2^2}
+5
+8
+\frac{4}{31}\frac{1}{2^4}
+\frac{8}{31}\frac{1}{2^6}
+\frac{16}{31}\frac{1}{2^8}
+P=2^R
+R
+r\in 1,\dots,R
+2^{r-1}
+2^R-1
+r
+S(r)=\frac{2^{r-1}}{2^R-1}
+r
+\left(\frac{1}{2}\right)^{r-1}
+\left(\frac{1}{2}\right)^{2(r-1)}
+r
+\begin{align} M(r)&=\left(\frac{1}{2}\right)^{2(r-1)}\frac{2^{r-1}}{(2^R-1)}\\ &=\left(\frac{1}{2}\right)^{(r-1)}\frac{1}{(2^R-1)} \end{align}
+\begin{align} M&=\sum_{r=1}^R \left(\frac{1}{2}\right)^{r-1} \frac{1}{(2^R-1)}\\ &=\sum_{r=0}^{R-1} \left(\frac{1}{2}\right)^{r} \frac{1}{(2^R-1)}\\ &=\frac{1-\left(\frac{1}{2}\right)^R}{1-\frac{1}{2}}\frac{1}{(2^R-1)}\\ &=2\frac{2^R-1}{2^R}\frac{1}{(2^R-1)}\\ &=2^{1-R}\\ \end{align}
+R=1, p=1
+R=2, p=\frac{1}{2}=\frac{1}{3}\text{Rd1}+\frac{1}{6}\text{Rd2}
+R=2, p=\frac{1}{4}=\frac{1}{7}\text{Rd1}+\frac{1}{14}\text{Rd2}+\frac{1}{28}\text{Rd3}

@@ -1,0 +1,12 @@
+x(t) = W^2sinc^2(Wt)
+z(t)
+Z(f) = W \sum \limits _{k=-\infty}^\infty \Lambda \left( \frac{f-kf_s}{W} \right)
+\Lambda(x)
+  \Lambda(x) = \left\{    \begin{array}{l l}     1-|x| & \quad , |x|<1\\     0 & \quad \text{otherwise}   \end{array} \right. 
+z(t)
+[-W,W]
+Z(f)
+ \mathcal{E}_z = \int \limits _{-W}^W |Z(f)|^2 df 
+ \begin{align*} \mathcal{E}_z &= \int \limits _{-W}^W |Z(f)|^2 df = \int \limits _{-W}^W\sum \limits _{k=-\infty}^\infty \left (W \Lambda \left( \frac{f-kf_s}{W} \right) \right) ^ 2df \\ &= 2 \int \limits _0^W \sum \limits _{k=-\infty}^\infty  (W - |f + kf_s|) ^ 2 df = 2 \sum \limits _{k=-\infty}^\infty \int \limits _0^W (W - |f + kf_s|) ^ 2 df \end{align*} 
+u = W - |f + kf_s|
+f_s

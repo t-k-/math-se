@@ -1,0 +1,10 @@
+I_0
+\int_1^\infty \frac{e^{-ax}}{\sqrt{x-1}} I_0(b\sqrt{x}) dx
+a,b\neq0
+\int_1^\infty\dfrac{e^{-ax}}{\sqrt{x-1}}I_0(b\sqrt{x})~dx
+=\int_1^\infty\dfrac{e^{-ax}}{\sqrt{x-1}}\sum\limits_{n=0}^\infty\dfrac{\left(\dfrac{b\sqrt{x}}{2}\right)^{2n}}{(n!)^2}dx
+=\int_1^\infty\sum\limits_{n=0}^\infty\dfrac{b^{2n}x^ne^{-ax}}{4^n(n!)^2\sqrt{x-1}}dx
+=\int_1^\infty\sum\limits_{n=0}^\infty\dfrac{b^{2n}x^ne^{-ax}}{2^{2n-1}(n!)^2}d(\sqrt{x-1})
+=\int_0^\infty\sum\limits_{n=0}^\infty\dfrac{b^{2n}(x^2+1)^ne^{-a(x^2+1)}}{2^{2n-1}(n!)^2}dx
+=\int_0^\infty\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{b^{2n}e^{-a}C_k^nx^{2k}e^{-ax^2}}{2^{2n-1}(n!)^2}dx
+=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{b^{2n}e^{-a}(2k)!\sqrt\pi}{4^{n+k}a^{k+\frac{1}{2}}n!(k!)^2(n-k)!}

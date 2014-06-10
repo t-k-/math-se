@@ -1,0 +1,44 @@
+\Omega \subseteq \mathbb{R}^d
+g
+\Omega
+\phi \in \mathrm{Diff}(\Omega)
+\Xi^i_{jk}[\phi]
+\Omega
+\Gamma^i_{jk}[\phi]
+y_0 \in \Omega
+\phi_0 \in \mathrm{Diff}(\Omega)
+\Xi^i_{jk}[\phi_0](\phi_0(y_0)) = 0
+(\partial_a g_{bc})[\phi_0](\phi_0(y_0))=0
+\Xi^i_{jk}[\phi] =\Gamma^i_{jk}[\phi]
+\phi \in \mathrm{Diff}(\Omega)
+ \Xi^i_{jk}[\phi](y) = \frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y) \Xi^r_{pq}[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y)) + \frac{\partial y^i}{\partial x^m} (\phi^{-1}(y)) \frac{\partial^2 x^m}{\partial y^j \partial y^k}(y). 
+T^{i}_{\,jk}[\phi](y) := \Xi^i_{\,jk}[\phi](y) - \Gamma^i_{\,jk}[\phi](y)
+T^{i}_{\,jk}[\phi](y)= \Xi^i_{jk}[\phi](y) - \Gamma^i_{\,jk}[\phi](y) = \bigg(\frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y) \Xi^r_{pq}[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y)) + \frac{\partial y^i}{\partial x^m} (\phi^{-1}(y)) \frac{\partial^2 x^m}{\partial y^j \partial y^k}(y) \bigg)- \bigg(\frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y) \Gamma^r_{pq}[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y)) + \frac{\partial y^i}{\partial x^m} (\phi^{-1}(y)) \frac{\partial^2 x^m}{\partial y^j \partial y^k}(y)\bigg) = \frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y)  (\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y))
+y_0
+\phi_0
+\Gamma^i_{\,jk}[\phi_0](\phi_0(y_0))=\frac{1}{2} g^{il}(\partial_k g_{lk} + \partial_j g_{lk} - \partial_l g_{jk})[\phi_0](\phi_0(y_0))= \frac{1}{2} g^{il}\left(\partial_k g_{lk}[\phi_0](\phi_0(y_0)) + \partial_j g_{lk}[\phi_0](\phi_0(y_0)) - \partial_l g_{jk}[\phi_0](\phi_0(y_0))\right)=0
+y_0
+\phi_0
+T^{i}_{\,jk}[\phi_0](\phi_0(y_0)) := \Xi^i_{\,jk}[\phi_0](\phi_0(y_0)) - \Gamma^i_{\,jk}[\phi_0](\phi_0(y_0))=0
+\frac{\partial x^p}{\partial y^j}(\phi_0(y_0)) \frac{\partial x^q}{\partial y^k}(\phi_0(y_0))  (\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](\phi_0^{-1}(\phi_0(y_0)))\frac{\partial y^i}{\partial x^r}(\phi_0^{-1}(\phi_0(y_0)))= \frac{\partial x^p}{\partial y^j}(\phi_0(y_0))\frac{\partial x^q}{\partial y^k}(\phi_0(y_0))  \left({(\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](y_0)}\right)\frac{\partial y^i}{\partial x^r}(y_0)\overset{!}{=}0
+T^{i}_{\,jk}
+(\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](y_0)\overset{???}{=}0
+T^{i}_{\,jk}[\phi](\phi(y_0))=\frac{\partial x^p}{\partial y^j}(\phi(y_0))\frac{\partial x^q}{\partial y^k}(\phi(y_0))  \overset{\underbrace{=0}}{\left({(\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](y_0)}\right)}\frac{\partial y^i}{\partial x^r}(y_0)=0
+\phi\in Diff(\Omega)
+T^{i}_{\,jk}[\phi](y) := \Xi^i_{\,jk}[\phi](y) - \Gamma^i_{\,jk}[\phi](y)
+T^{i}_{\,jk}[\phi](y)= \Xi^i_{jk}[\phi](y) - \Gamma^i_{\,jk}[\phi](y) = \bigg(\frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y) \Xi^r_{pq}[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y)) + \frac{\partial y^i}{\partial x^m} (\phi^{-1}(y)) \frac{\partial^2 x^m}{\partial y^j \partial y^k}(y) \bigg)- \bigg(\frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y) \Gamma^r_{pq}[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y)) + \frac{\partial y^i}{\partial x^m} (\phi^{-1}(y)) \frac{\partial^2 x^m}{\partial y^j \partial y^k}(y)\bigg) = \frac{\partial x^p}{\partial y^j}(y) \frac{\partial x^q}{\partial y^k}(y)  (\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](\phi^{-1}(y))\frac{\partial y^i}{\partial x^r}(\phi^{-1}(y))
+y_0
+\phi_0
+\Gamma^i_{\,jk}[\phi_0](\phi_0(y_0))=\frac{1}{2} g^{il}(\partial_k g_{lk} + \partial_j g_{lk} - \partial_l g_{jk})[\phi_0](\phi_0(y_0))= \frac{1}{2} g^{il}\left(\partial_k g_{lk}[\phi_0](\phi_0(y_0)) + \partial_j g_{lk}[\phi_0](\phi_0(y_0)) - \partial_l g_{jk}[\phi_0](\phi_0(y_0))\right)=0
+y_0
+\phi\in \operatorname{Diff}(\Omega)
+T^{i}_{\,jk}[\phi_0](\phi(y_0))=\frac{\partial x^p}{\partial y^j}(\phi(y_0))\frac{\partial x^q}{\partial y^k}(\phi(y_0))  {\left({(\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](y_0)}\right)}\frac{\partial y^i}{\partial x^r}(y_0)
+\phi_0
+T^{i}_{\,jk}[\phi_0](\phi_0(y_0))=0=\frac{\partial x^p}{\partial y^j}(\phi_0(y_0))\frac{\partial x^q}{\partial y^k}(\phi_0(y_0))  {\left({(\Xi^r_{pq}-\Gamma^r_{\,pq})[\mathrm{id}](y_0)}\right)}\frac{\partial y^i}{\partial x^r}(y_0)
+y_0\in\Omega
+\frac{\partial x^p}{\partial y^j}(\phi(y))\frac{\partial x^q}{\partial y^k}(\phi(y))\neq 0
+\phi\in \operatorname{Diff}(\Omega)
+\Omega
+T^i_{jk}[\phi]=\Xi^i_{jk}[\phi]-\Gamma^i_{jk}[\phi]\overset{\forall \phi}{=}0
+\Rightarrow \Xi^i_{jk}[\phi]=\Gamma^i_{jk}[\phi]
+\blacksquare

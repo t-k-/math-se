@@ -1,0 +1,33 @@
+ g(n)=\begin{cases} 1 & \text{if }n=1 \\[10pt] \sum_{d\mid n,\  d\ne n} g(d) & \text{else} \end{cases} 
+g(n)
+g(p)
+n
+n
+n
+\nu(n)
+f(k)
+d(n)
+\nu(n)=k
+g(n)
+f\left(\nu(n)\right):=g(n)=\sum_{d|n,\ d\ne n}g(d)=\sum_{k=0}^{\nu(n)-1}\binom{\nu(n)}{k} f(k)
+f(n)
+f(n)=\left\{ \begin{array}{lr}  1 && \mbox{if}\  n=0\\ \sum_{k=0}^{n-1}\binom{n}{k} f(k) && \mbox{if}\ n\geq1 \end{array} \right. 
+g(n)
+n
+n=p^k
+p
+k\in \mathbb{Z}^+
+g(p^k)=\sum_{d|p^k,\ d\ne p^k}g(d)=\sum_{d|p^{k-1},\ d\ne p^{k-1}}g(d)+g(p^{k-1})=2g(p^{k-1})
+g(p^k)=2^kg(1)=2^k
+n=p^kq
+p, q
+g(p^kq)=2g(p^{k-1}q)+g(p^k)=2g(p^{k-1}q)+2^k
+g(p^kq)=2^kg(q)+k2^k=(k+1)2^k
+n=p^kq^2
+g(p^kq)
+g(p^kq^2)
+g(p^kq^2)=2g(p^{k-1}q^2)+g(p^k)+g(p^kq)
+g(p^kq^r)=2g(p^{k-1}q^r)+\sum_{i=0}^{r-1}g(p^kq^i)
+n=p_1^{k_1}p_2^{k_2}\cdots\ p_r^{k_r}
+g(n)
+f_r(k_1,k_2,\cdots\ ,k_r)=\sum_{0\le a_1\le k_1,\cdots\ ,0\le a_r\le k_r}\frac{(a_1+a_2+\cdots\ a_r)!}{a_1!a_2!\cdots\ a_r!}f_r(a_1,a_2,\cdots\ ,a_r)

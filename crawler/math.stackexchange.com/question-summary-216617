@@ -1,0 +1,11 @@
+\lim_{n\to\infty}\prod_{k=1}^n\cos\left(\frac{ka}{n\sqrt{n}}\right)
+1-a^2/6
+f(n) = \prod_{k=1}^n \cos \left(\dfrac{ka}{n \sqrt{n}}\right)
+g(n) = \log (f(n)) = \sum_{k=1}^{n} \log \left(\cos \left(\dfrac{ka}{n \sqrt{n}}\right) \right) = \sum_{k=1}^{n} \log \left(1 - \dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right)
+\log \left(1 - \dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right) = -\left(\dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right) + \mathcal{O} \left(\dfrac{k^4}{n^6} \right)
+\sum_{k=1}^{n} \log \left(1 - \dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right) = \sum_{k=1}^{n} \left( -\dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right)\\ = -\dfrac{a^2}{2n^3} \dfrac{n(n+1)(2n+1)}{6} + \mathcal{O}(1/n)
+\lim_{n \to \infty }\sum_{k=1}^{n} \log \left(1 - \dfrac{\left(\dfrac{ka}{n \sqrt{n}}\right)^2}2 +  \mathcal{O} \left( \dfrac{k^4}{n^6}\right)\right) = -\dfrac{a^2}{6}
+\prod_{k=1}^{\infty} \cos \left(\dfrac{ka}{n \sqrt{n}}\right) = \exp(-a^2/6)
+1-a^2/6
+\exp(-a^2/6)
+\exp(x) = 1 + x + \mathcal{O}(x^2)

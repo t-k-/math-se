@@ -1,0 +1,4 @@
+\mathbf{y=w \;h}  
+ \begin{bmatrix}y_{0}\\ y_{1}\\ \vdots\\ y_{n} \end{bmatrix}=\begin{bmatrix}w_{0,0} & w_{0,1} & \cdots & w_{0,k}\\ w_{0,0} & w_{1,1} & \cdots & w_{1,k}\\ \vdots & \cdots & \cdots & \vdots\\ w_{n,0} & \cdots & \cdots & w_{n,k} \end{bmatrix}\begin{bmatrix}h_{0}\\ h_{1}\\ \vdots\\ h_{k} \end{bmatrix}=\begin{bmatrix}h_{0}w_{00}+h_{1}w_{01}...+h_{k}w_{0k}\\ h_{0}w_{10}+h_{1}w_{11}...+h_{k}w_{1k}\\ \vdots\\ h_{0}w_{n0}+h_{1}w_{n1}...+h_{k}w_{nk} \end{bmatrix} 
+ \begin{array}{cc} \frac{d\mathbf{y}}{dw_{00}}=\begin{bmatrix}h_{0}\\ 0\\ \vdots\\ 0 \end{bmatrix} & \frac{d\mathbf{y}}{dw_{10}}=\begin{bmatrix}0\\ h_{0}\\ \vdots\\ 0 \end{bmatrix}\\ \frac{d\mathbf{y}}{dw_{101}}=\begin{bmatrix}h_{1}\\ 0\\ \vdots\\ 0 \end{bmatrix} & \frac{d\mathbf{y}}{dw_{11}}=\begin{bmatrix}0\\ h_{1}\\ \vdots\\ 0 \end{bmatrix} \end{array} 
+y_{i}=\sum_{0\le j\le k}h_{j}w_{i,j}  

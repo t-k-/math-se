@@ -1,0 +1,68 @@
+\left\lceil\frac{a}{b}\right\rceil= \left\lfloor\frac{a+b-1}{b}\right\rfloor
+a
+b
+a
+b
+b = 1/2
+a = 2,
+4
+3.
+b\nmid a,
+a = qb + r,
+q \in \mathbb{N}\cup \{0\}
+0 < r < b.
+q+1
+\lfloor (q+1) + \frac{r-1}{b} \rfloor.
+r
+b > r \ge 1
+\frac{b-1}{b} > \frac{r-1}{b} \ge 0,
+\lfloor (q+1) + \frac{r-1}{b} \rfloor = q+1,
+b \mid a,
+q
+r = 0,
+b \ge 1
+q.
+b\nmid a,
+a = qb + r,
+q \in \mathbb{Z}
+0 < r < |b|.
+0 \le \frac{r-1}{b} < 1.
+b > 0,
+r \ge 1
+b > 1
+b < 0,
+r > 1 + b.
+r < |b| = -b,
+-b > 1 + b,
+b < -1/2.
+b \le -1,
+r > 1+b
+-1 < b < -1/2,
+r > 1 +b.
+\text{ceil}(a/b) = n \implies a = bn-r, \text{ where } r\in \{0,1,\ldots,b-1\}
+a+b-1 = bn-r+b-1 = bn + (b-1-r), \text{ where }r \in \{0,1,\ldots,b-1\}
+a+b-1 = bn + s, \text{ where }s \in \{0,1,\ldots,b-1\}
+\text{floor}((a+b-1)/b) = n = \text{ceil}(a/b)
+b\nmid a
+\lfloor\frac{a+b-1}{b}\rfloor=n \implies nb+r=a+b-1
+0\leq r<b
+\frac{a}{b}+1=n+\frac{r+1}{b}
+\lfloor\frac{a}{b}+1\rfloor=\lceil\frac{a}{b}\rceil=n
+\frac{a}{b}
+\frac{a}{b} > n + \frac{1}{b}
+n
+\frac{a}{b}
+\left\lceil\frac{a}{b}\right\rceil= \left\lfloor\frac{a}{b}+1-\frac{1}{b}\right\rfloor.
+\left\lceil\frac{a}{b}\right\rceil= \left\lfloor\frac{a}{b} + 1 - \frac{1}{b}\right\rfloor
+\frac{a}{b} \in [n, n+\frac{1}{b})
+n
+a
+a
+\left\lceil \frac { a }{ b }  \right\rceil =\frac { a }{ b } +1-\left( \frac { a }{ b }  \mod\ 1 \right) ,\quad \quad   (1)
+\left\lfloor \frac { a+b-1 }{ b }  \right\rfloor =\frac { a+b-1 }{ b } -\left( \frac { a+b-1 }{ b } \mod\ 1 \right) =\frac { a }{ b } +1-\frac { 1 }{ b } -\left( \frac { a }{ b } -\frac { 1 }{ b } \mod\ 1 \right) ,\quad \quad (2)
+(1)
+(2)
+b>1
+\left( \frac { a }{ b } \mod\ 1 \right) =k
+\frac { a }{ b } +1-k=\frac { a }{ b } +1-\frac { 1 }{ b } -k+\left( \frac { 1 }{ b } \mod\ 1 \right) 
+\frac { 1 }{ b } =\left( \frac { 1 }{ b } \mod 1 \right) .

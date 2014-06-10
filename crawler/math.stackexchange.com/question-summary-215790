@@ -1,0 +1,16 @@
+((p \wedge \neg n) \vee (n \wedge \neg p)) \vee z
+((p \wedge \neg n) \vee z) \vee ((n \wedge \neg p) \vee z)
+(p \land \lnot n) \lor (\lnot p \land n)
+(p \lor n) \land (\lnot p \lor \lnot n)
+(p \lor n \lor z) \land (\lnot p \lor \lnot n \lor z)
+\lnot(P\bigvee Q)\leftrightarrow (\lnot P) \bigwedge (\lnot Q)
+\lnot(P\bigwedge Q)\leftrightarrow (\lnot P) \bigvee (\lnot Q)
+(P \bigvee (Q\bigwedge R))\leftrightarrow (P \bigvee Q) \bigwedge (P\bigvee R)
+(P \bigwedge (Q\bigvee R))\leftrightarrow (P \bigwedge Q) \bigvee (P\bigwedge R)
+((P\bigwedge \lnot N)\bigvee (N∧\lnot P))\bigvee Z
+((((P\bigwedge \lnot N)\bigvee N)\bigwedge ((P\bigwedge \lnot N)\bigvee \lnot P)))\bigvee Z)
+(((P\bigvee N)\bigwedge (\lnot N\bigvee N ) \bigwedge (P\bigvee \lnot P)\bigwedge (\lnot N \bigvee \lnot P)) \bigvee Z)
+(\lnot N\bigvee N)
+(P\bigvee \lnot P)
+((P\bigvee N)\bigwedge (\lnot N \bigvee \lnot P)) \bigvee Z)
+((P\bigvee N\bigvee Z)\bigwedge (\lnot N \bigvee \lnot P \bigvee Z))

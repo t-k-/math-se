@@ -1,0 +1,20 @@
+1+2+3+..+n = n(n+1)/2
+1\cdot2+2\cdot3+3\cdot4+...+n(n+1) = n(n+1)(n+2)/3
+1\cdot2\cdot3+2\cdot3\cdot4+...+n(n+1)(n+2) = n(n+1)(n+2)(n+3)/4
+1\cdot2\cdot3\cdot...\cdot k + 2\cdot3\cdot4\cdot...\cdot(k+1) + ... + n(n+1)(n+2)\cdot...\cdot (k+n-1)
+\begin{align*} &\sum_{i=1}^ni=\frac12n(n+1)\\ &\sum_{i=1}^ni(i+1)=\frac13n(n+1)(n+2)\\ &\sum_{i=1}^ni(i+1)(i+2)=\frac14n(n+1)(n+2)(n+3)\;, \end{align*}\tag{1}
+\sum_{i=1}^ni(i+1)(i+2)\dots(i+k-1)\;;
+(1)
+n
+\begin{align*}\sum_{i=1}^{n+1}i(i+1)&(i+2)\dots(i+k-1)\\ &\overset{(1)}=(n+1)(n+2)\dots(n+k)+\sum_{i=1}^ni(i+1)(i+2)\dots(i+k-1)\\ &\overset{(2)}=(n+1)(n+2)\dots(n+k)+\frac1{k+1}n(n+1)(n+2)\dots(n+k)\\ &\overset{(3)}=\left(1+\frac{n}{k+1}\right)(n+1)(n+2)\dots(n+k)\\ &=\frac{n+k+1}{k+1}(n+1)(n+2)\dots(n+k)\\ &=\frac1{k+1}(n+1)(n+2)\dots(n+k)(n+k+1)\;, \end{align*}
+(1)
+n
+(2)
+(3)
+(n+1)(n+2)\dots(n+k)
+\sum_{j=1}^n j(j+1)\dots(j+k-1)= \frac{n(n+1)\dots{n+k-1}}{k+1},
+n(n+1)\cdot...\cdot(n+k)/(k+1)
+k
+f(i)=\frac{1}{k+1}i(i+1)\ldots(i+k).
+f(i)-f(i-1)=i(i+1)\ldots(i+k-1).
+\sum_{i=1}^ni(i+1)(i+2)\dots(i+k-1)=\sum_{i=1}^n\left(f(i)-f(i-1)\right)=f(n)-f(0)=f(n)

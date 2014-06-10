@@ -1,0 +1,13 @@
+0<n<m
+\sum_{k=-\lfloor m/n \rfloor}^{\lfloor m/n \rfloor}\binom{2m}{m+kn}
+m/n
+2^{2m}
+m/n
+\begin{align}\sum_{k=-\lfloor m/n\rfloor}^{\lfloor m/n\rfloor}\binom{2m}{m+kn}&=\binom{2m}{m-n\lfloor m/n\rfloor}+\cdots+\binom{2m}{m+n\lfloor m/n\rfloor}\\&=\sum_{k=0}^{2m}\binom{2m}{k}-\left(\sum_{k=0}^{m-n\lfloor m/n\rfloor-1}\binom{2m}{k}\right)-\left(\sum_{k=m+n\lfloor m/n\rfloor+1}^{2m}\binom{2m}{k}\right)\\&=(1+1)^{2m}-2\left(\sum_{k=0}^{m-n\lfloor m/n\rfloor-1}\binom{2m}{k}\right)\\&=2^{2m}-2\sum_{k=0}^{m-n\lfloor m/n\rfloor-1}\binom{2m}{k}.\end{align}
+m = nq + r
+0 \le r < n
+\sum_{k=0}^{2q} \binom{2m}{r + nk}
+m \gg n
+2^{2m}/n
+n
+ \sum_{s=0}^{2m} \binom{2m}{s} = 2^{2m}

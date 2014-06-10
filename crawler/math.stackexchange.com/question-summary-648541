@@ -1,0 +1,32 @@
+f\in C_0^\infty(\mathbb{R})
+(0,\infty)\rightarrow\mathbb{R}
+x\mapsto x-\frac{1}{x}
+x=y-\frac{1}{y}
+ \begin{align} \int_{\mathbb{R}} f(x) dx &= \int_0^\infty f\left(x-\frac{1}{x}\right)\left(1+\frac{1}{x^2}\right)dx\\ &=\int_0^\infty f\left(x-\frac{1}{x}\right)dx+\int_0^\infty f\left(x-\frac{1}{x}\right)\frac{1}{x^2}dx \end{align}
+-\frac{1}{x}=y
+\int_0^\infty f\left(x-\frac{1}{x}\right)\frac{1}{x^2} dx=\int_{-\infty}^0 f\left(x-\frac{1}{x}\right)dx
+T(x) := x-1/x
+T(x) = y
+\frac{y \pm \sqrt{4+y^2}}{2}.
+T^{-1}
+T_-^{-1}
+T_+^{-1}
+T \circ T_-^{-1} = T \circ T_+^{-1} = id
+\mathbb{R}^*
+T_-^{-1} \circ T = id
+\mathbb{R}_-^*
+T_+^{-1} \circ T = id
+\mathbb{R}_+^*
+y := T(x)
+\int_{\mathbb{R}} f(T(x)) dx = \int_{\mathbb{R}_-^*} \frac{f}{|T'|\circ T_-^{-1}}(T(x)) |T'(x)| dx + \int_{\mathbb{R}_+^*} \frac{f}{|T'|\circ T_+^{-1}}(T(x)) |T'|(x) dx,
+\int_{\mathbb{R}} f(T(x)) dx = \int_{\mathbb{R}} \sum_{\pm} \frac{1}{|T'|\circ T_\pm^{-1}}(y) f(y) dy.
+\sum_{\pm} \frac{1}{|T'|\circ T_\pm^{-1}} \equiv 1.
+T' (x) = 1+x^{-2}
+\frac{1}{|T'|\circ T_\pm^{-1}} = \frac{1}{1+ \frac{1}{(T_\pm^{-1})^2}} = \frac{(T_\pm^{-1})^2}{1+ (T_\pm^{-1})^2}.
+x_\pm
+T_\pm^{-1} (y)
+x_\pm
+x^2 -yx-1 = 0
+x_- x_+ = -1
+(x_- x_+)^2 = 1
+\sum_{\pm} \frac{1}{|T'|\circ T_\pm^{-1}} = \sum_{\pm} \frac{x_\pm^2}{1+ x_\pm^2} = \frac{x_-^2+2 (x_- x_+)^2+x_+^2}{1+ x_-^2 + x_+^2 + (x_- x_+)^2}  = \frac{2+x_-^2+x_+^2}{2+ x_-^2 + x_+^2} = 1.

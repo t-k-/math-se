@@ -1,0 +1,25 @@
+A
+r
+s
+B
+C
+s
+P(A|B)=P(A|B^c\cap C^c)
+X=\{H,T\}^{\Bbb N}
+n\in\Bbb Z^+
+B=E_1
+B^c\cap C^c=\bigcup_{n=2}^sE_n
+n\in\{2,\dots,s\}
+E_n=\{x\in X:x_n=H\text{ and }x_k=T\text{ for }k=1,\dots,n-1\}\;;
+\varphi_n:E_n\to E_1:x\mapsto\langle x_{k+n-1}:k\in\Bbb Z^+\rangle\;,
+\varphi_n
+x
+n-1
+n-1
+\varphi_n
+\varphi_n[A\cap E_n]=A\cap E_1=A\cap B
+p
+P(E_n)=p^{n-1}P(E_1)
+P(A\cap E_n)=p^{n-1}P(A\cap E_1)
+P(A|E_n)=\frac{P(A\cap E_n)}{P(E_n)}=\frac{P(A\cap E_1)}{P(E_1)}=P(A|E_1)=P(A|B)\;.
+\begin{align*} P(A|B^c\cap C^c)&=P\left(A\bigg|\bigcup_{n-2}^sE_n\right)\\\\ &=\frac{P\left(A\cap\bigcup_{n=2}^sE_n\right)}{P\left(\bigcup_{n=2}^sE_n\right)}\\\\ &=\frac{P\left(\bigcup_{n=2}^s(A\cap E_n)\right)}{P\left(\bigcup_{n=2}^sE_n\right)}\\\\ &=\frac{\sum_{n=2}^sp^{n-1}P(A\cap E_1)}{\sum_{n=2}^sp^{n-1}P(E_1)}\\\\ &=\frac{P(A\cap E_1)}{P(E_1)}\\\\ &=P(A|B)\;. \end{align*}

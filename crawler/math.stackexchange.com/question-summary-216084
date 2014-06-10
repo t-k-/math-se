@@ -1,0 +1,28 @@
+F
+X
+C
+\sum\left(\nabla{F(x)}\right)^{2}=\lim_{T\to\infty}\frac{1}{2T}\int^{T}_{-T}\left|C(t)\right|^{2}\,\mathrm{d}t
+\nabla{F(x)}
+\mathbb{P}(X=x)
+\left|C(t)\right|^{2}\Longrightarrow{F}
+\mathbb P(X=Y)
+X
+Y
+C
+F
+t
+|C(t)|^2=\mathbb E(\mathrm e^{\mathrm it(X-Y)})
+T
+T\to+\infty
+u(T(X-Y))\to0
+|u(t)|\leqslant1
+t
+\mathbb E\left(\mathbf 1_{X=Y}\right)=\mathbb P(X=Y)
+ \mathbb E\left(\frac1{2T}\int_{-T}^T\mathrm e^{\mathrm it(X-Y)}\,\mathrm dt\right)=\mathbb E\left(\mathbf 1_{X=Y}+u(T(X-Y))\right),\qquad u(t)=\frac{\sin(t)}{t}\,\mathbf 1_{t\ne0}. 
+v(x)=\mathbb P(Y=x)=\mathbb P(X=x)
+x
+X
+Y
+\mathbb P(X=Y)=\mathbb E(\mathbb P(X=Y\mid X))=\mathbb E(v(X))=\mathbb E(v(Y))
+ v=\sum_{x\in A}v(x)\mathbf 1_{x},\qquad A=\{x\mid v(x)\ne0\}, 
+ \mathbb P(X=Y)=\sum_{x\in A}v(x)\mathbb E(\mathbf 1_{X=x})=\sum_{x\in A}v(x)\mathbb P(X=x)=\sum_{x\in A}v(x)^2, 

@@ -1,0 +1,21 @@
+\sin^2x
+a_0
+ \frac 1{2\pi}\int_{-\pi/2}^{\pi/2}(\frac 12 -\frac 12\cos(2x))dx
+ =\frac 1{2\pi}\left[\frac 12x-\frac 14\sin(2x)\right]_{-\frac \pi2}^{\frac \pi2}
+f(x)
+f(-x)
+b_n
+a_n
+ a_n=\int_{-\pi/2}^{\pi/2}\sin^2x\cos(nx)\,dx
+a_0
+a_n
+\sin^2{t} = \frac{1-\cos{2t}}{2},
+a_n = \frac{1}{2} \int^{\pi/2}_{-\pi/2} (\cos{nx} - \cos{2x}\cos{nx}) \, dx, 
+a_n = \frac{1}{2} (I_1 - I_2).
+I_1 = \left\{ \begin{array}{ll} \pi & n = 0 \\ \frac{2 \sin{\frac{n\pi}{2}}}{n}  & n = 0  \end{array} \right., 
+I_2
+n \neq \pm 2
+I_2 = \int^{\pi/2}_{-\pi/2} \cos{2x} \cos{nx} \, dx = \left.\frac{\sin{2x} \cos{nx}}{2} \right|_{-\pi/2}^{\pi/2} +  \int^{\pi/2}_{-\pi/2} \frac{\sin{2x}}{2} n \sin{nx} \, dx = 0+   \left. \left(-\frac{n}{2} \frac{\cos{2x}}{2} \sin{nx}\right)\right|^{\pi/2}_{-\pi/2} + \int^{\pi/2}_{\pi/2} \frac{n^2}{4} \cos{2x} \cos{nx} = \frac{1}{2} \sin{\frac{n\pi}{2}} + \frac{n^2}{4} I_2.
+n = \pm 2
+I_2 = \int^{\pi/2}_{-\pi/2} \cos^2{2x} \, dx = \int^{\pi/2}_{\pi/2} \frac{1+\cos{4x}}{2} \, dx =\pi/2 
+I_2 = \left\{ \begin{array}{ll} \pi/2 & n = \pm 2 \\ \frac{2 n \sin{\frac{n\pi}{2}}}{n^2-4}  & n \neq \pm 2  \end{array} \right., 

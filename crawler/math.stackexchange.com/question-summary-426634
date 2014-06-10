@@ -1,0 +1,14 @@
+R_n
+X
+(a,b)
+ R_n = X_{(n)} - X_{(1)}, 
+ f_{R_n}(r) = n (n - 1) \int_{-\infty}^\infty (F_X(x + r) - F_X(x))^{n-2} f_X(x + r)f_X(u) \;\text{d}u 
+F
+f
+ = n (n - 1) \int_a^{b - r} \left(\frac{r - 2a}{b - a}\right)^{n-2}\left(\frac{1}{b - a}\right)^2 \;\text{d}u 
+  = n (n - 1) \left(\frac{r - 2a}{b - a}\right)^{n - 2}\left(\frac{1}{b - a}\right)^2 (b - a - r)  
+(a,b)
+r < b-a
+f_X(u) = \frac{1}{b-a} 1_{(a,b)}(u)
+f_X(u+r)f_X(u) = \frac{1}{(b-a)^2} 1_{(a,b)}(u+r) 1_{(a,b)}(u)
+ \frac{1}{(b-a)^2} 1_{(a-r,b-r)}(u) 1_{(a,b)}(u) = \frac{1}{(b-a)^2} 1_{(a,b-r)}(u)

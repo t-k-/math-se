@@ -1,0 +1,15 @@
+100
+1
+100
+1
+100
+N
+1
+N
+5
+X \equiv 
+5
+ Pr(X=5 \mid N=n)= \begin{cases} 0 & \text{if } n \in \{1,2,3,4\} \\ 1/n & \text{if } n \in \{5,6,...,100\} \end{cases} 
+ \begin{align*} E[N \mid X=5] &= \sum_{n=1}^{100} n \cdot Pr(N=n \mid X=5) \\ &= \sum_{n=1}^{100} n \cdot \dfrac{Pr(N=n)Pr(X=5 \mid N=n)}{Pr(X=5)} \\ &= \sum_{n=1}^{100} n \cdot \dfrac{Pr(N=n)Pr(X=5 \mid N=n)}{\sum_{k=1}^{100}Pr(N=k)Pr(X=5 \mid N=k)} \\ &= \sum_{n=5}^{100} n \cdot \dfrac{\dfrac{1}{100} \cdot \dfrac{1}{n}}{\sum_{k=5}^{100}\dfrac{1}{100} \cdot \dfrac{1}{k}} \\ &= \sum_{n=5}^{100} \dfrac{\dfrac{1}{100}}{\dfrac{1}{100}\sum_{k=5}^{100} \dfrac{1}{k}} \\ &= \sum_{n=5}^{100} \dfrac{1}{\sum_{k=5}^{100} \dfrac{1}{k}} \\ &= \dfrac{96}{\sum_{k=5}^{100} \dfrac{1}{k}} \\ &= 30.9274... \end{align*}
+N
+5

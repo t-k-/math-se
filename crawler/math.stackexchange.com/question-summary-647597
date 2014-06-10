@@ -1,0 +1,14 @@
+S=\left\lfloor\frac{n}{p}\right\rfloor+\left\lfloor\frac{n}{p^2}\right\rfloor+\left\lfloor\frac{n}{p^3}\right\rfloor+\cdots
+\log_p n
+n
+p
+O(\log n)
+n = \sum_{i=0}^k a_i p^i
+p
+n
+0 \le a_i < p
+\lfloor n/p^j \rfloor = \sum_{i=j}^k a_i p^{i-j}
+\Omega(\log n)
+p
+n
+S = \sum_{j=1}^k \sum_{i=j}^k a_i p^{i-j} = \sum_{i=1}^k \sum_{j=1}^i a_i p^{i-j} =  \sum_{i=1}^k a_i \dfrac{p^{i}-1}{p-1} = (p-1)^{-1} \left( n - \sum_{i=0}^k a_i \right) 

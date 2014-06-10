@@ -1,0 +1,18 @@
+\int_0^1\int_0^\sqrt{1-x^2}e^{-(x^2+y^2)}\,\mathrm dy\;\mathrm dx
+x^2+y^2 = u
+\sqrt{1-x^2} = v
+u
+v
+v + u = x^2 + y^2 + \sqrt{1-x^2}
+x
+y
+x^2+y^2 = r^2 \in [0,1]
+\theta \in [0,\pi/2]
+dx \, dy = r \, dr \, d\theta
+\int_0^1 dr \, r \, e^{-r^2} \, \int_0^{\pi/2} d\theta = \frac{\pi}{4} \int_0^1 du \, e^{-u} = \frac{\pi}{4} \left ( 1-\frac{1}{e}\right)
+x^2+y^2
+\sqrt{1-x^2}
+\sqrt{1-y^2}
+r=x^2+y^2
+\iint e^{-r^2}r\;\mathrm dr\;\mathrm d\theta
+\int_0^{\pi/2}\int_0^1 e^{-r^2}r\;\mathrm dr\;\mathrm d\theta

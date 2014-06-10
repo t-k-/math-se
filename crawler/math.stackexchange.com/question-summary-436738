@@ -1,0 +1,11 @@
+f_1=f_2=1, f_{n+2}=f_{n+1}+f_n(n\geq 2)
+1 f_1+2 f_2+\cdots+n f_n=n f_{n + 2} - f_{n + 3} + 2
+s_n = f_1+f_2+\cdots+f_n
+s_n=f_{n + 2} - 1
+S=1 f_1+2 f_2+\cdots+n f_n= \sum_{k=0}^{n-1} (s_n-s_k)
+s_0=0
+S=n s_n - \sum_{k=0}^{n-1} s_k = n s_n - \sum_{k=0}^{n-1} (f_{k+2}-1) = n f_{n+2}-n - s_{n+1}+f_1+n = n f_{n+2} - f_{n+3} + 2
+f_k= f_{k-1}+f_{k-2}
+k=2,\dots n+2
+s_{n+2}-f_1 = s_{n+1} + s_n
+f_{n+2}-f_1 = s_n

@@ -1,0 +1,52 @@
+f(a)=f(b)
+a,b\in\mathbb{R}
+\epsilon\gt0
+|f(a)-f(b)|\lt\epsilon
+[a, b]
+n
+f
+f(x)-f(y)\leq (x-y)^2
+x,y
+f
+f(y)-f(x)=-(f(x)-f(y))\leq (y-x)^2
+|f(x)-f(y)|\leq (x-y)^2
+x,y
+[x,y]
+n
+[x_{k-1},x_k]
+x_k-x_{k-1}=\dfrac{y-x}n
+x_0=x
+x_n=y
+x_k=x+\frac k n (y-x)
+|f(x)-f(y)|=\left|\sum_{k=1}^n f(x_{k-1})-f(x_k)\right|\\ \leq \sum_{k=1}^n\left|f(x_{k-1})-f(x_k)\right| \\ \leq \sum\limits_{k = 1}^n {{{\left( {{x_{k - 1}} - {x_k}} \right)}^2}} \\ = \frac{1}{{{n^2}}}\sum\limits_{k = 1}^n {{{\left( {y - x} \right)}^2}}  = \frac{{{{\left( {y - x} \right)}^2}}}{n}
+\tag 1 \left| {f\left( x \right) - f\left( y \right)} \right| \leq \frac{{{{\left( {y - x} \right)}^2}}}{n}
+n\in \Bbb N
+f(x)\neq f(y)
+(1)
+\tag 2 \frac{{\left| {f\left( x \right) - f\left( y \right)} \right|}}{{{{\left( {y - x} \right)}^2}}} \leq \frac{1}{n}
+|f(x)-f(y)|>0
+n
+\frac{{\left| {f\left( x \right) - f\left( y \right)} \right|}}{{{{\left( {y - x} \right)}^2}}} > 0
+\frac{1}{n} < \frac{{\left| {f\left( x \right) - f\left( y \right)} \right|}}{{{{\left( {y - x} \right)}^2}}}
+(2)
+f(x)=f(y)
+x,y
+\left| f(y) - f(x) \right| \leq C \left| y - x \right|^2. \tag{1}
+\epsilon > 0
+(1)
+\{ 0 < \left| y - x \right| < \epsilon \}
+ \{ 0 < \left| y - x \right| < \epsilon \} = \bigcup_{n=1}^{\infty} \big\{ 2^{-n} \epsilon \leq \left|y - x\right| < 2^{-(n-1)}\epsilon \big\}. 
+n \geq 1
+2^{-n} \epsilon \leq \left|y - x\right| < 2^{-(n-1)}\epsilon
+ \left|f(y) - f(x)\right| < 2^{-2(n-1)} \epsilon^2 \leq 4 \left| y - x \right|^2. 
+0 < \left| y - x \right| < \epsilon
+2^{-n} \epsilon \leq \left|y - x\right| < 2^{-(n-1)}\epsilon
+n \geq 1
+ \left|f(y) - f(x)\right| \leq 4 \left| y - x \right|^2. 
+ \left|\frac{f(y) - f(x)}{y - x}\right| \leq 4 \left| y - x \right|, 
+(1)
+C = 4
+y \to x
+f
+x
+f

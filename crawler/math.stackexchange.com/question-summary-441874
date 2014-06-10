@@ -1,0 +1,17 @@
+\begin{cases} -\frac{\partial^2u}{\partial x^2}-2\frac{\partial^2u}{\partial y^2}=f&\text{on}~U,\\ u=0&\text{on}~\partial U \end{cases}
+U=\left\{(x,y)\in\mathbb{R}^2|\,x,y\geq0\right\}
+f
+(x, y) \mapsto (x, z)
+2\frac{\partial^2}{\partial y^2} = \frac{\partial^2}{\partial z^2}
+-\dfrac{\partial^2u}{\partial x^2}-2\dfrac{\partial^2u}{\partial y^2}=f(x,y)
+\dfrac{\partial^2u}{\partial x^2}+2\dfrac{\partial^2u}{\partial y^2}=-f(x,y)
+\begin{cases}p=y+\sqrt{2}ix\\q=y-\sqrt{2}ix\end{cases}
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial x}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial x}=\sqrt{2}i\dfrac{\partial u}{\partial p}-\sqrt{2}i\dfrac{\partial u}{\partial q}
+\dfrac{\partial^2u}{\partial x^2}=\dfrac{\partial}{\partial x}\left(\sqrt{2}i\dfrac{\partial u}{\partial p}-\sqrt{2}i\dfrac{\partial u}{\partial q}\right)=\dfrac{\partial}{\partial p}\left(\sqrt{2}i\dfrac{\partial u}{\partial p}-\sqrt{2}i\dfrac{\partial u}{\partial q}\right)\dfrac{\partial p}{\partial x}+\dfrac{\partial}{\partial q}\left(\sqrt{2}i\dfrac{\partial u}{\partial p}-\sqrt{2}i\dfrac{\partial u}{\partial q}\right)\dfrac{\partial q}{\partial x}=-2\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}+2\dfrac{\partial^2u}{\partial pq}-2\dfrac{\partial^2u}{\partial q^2}=-2\dfrac{\partial^2u}{\partial p^2}+4\dfrac{\partial^2u}{\partial pq}-2\dfrac{\partial^2u}{\partial q^2}
+\dfrac{\partial u}{\partial y}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial y}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial y}=\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}
+\dfrac{\partial^2u}{\partial y^2}=\dfrac{\partial}{\partial y}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)=\dfrac{\partial}{\partial p}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)\dfrac{\partial p}{\partial y}+\dfrac{\partial}{\partial q}\left(\dfrac{\partial u}{\partial p}+\dfrac{\partial u}{\partial q}\right)\dfrac{\partial q}{\partial y}=\dfrac{\partial^2u}{\partial p^2}+\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}=\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}
+\therefore-2\dfrac{\partial^2u}{\partial p^2}+4\dfrac{\partial^2u}{\partial pq}-2\dfrac{\partial^2u}{\partial q^2}+2\biggl(\dfrac{\partial^2u}{\partial p^2}+2\dfrac{\partial^2u}{\partial pq}+\dfrac{\partial^2u}{\partial q^2}\biggr)=-f\biggl(\dfrac{i(q-p)}{2\sqrt{2}},\dfrac{p+q}{2}\biggr)
+8\dfrac{\partial^2u}{\partial pq}=-f\biggl(\dfrac{i(q-p)}{2\sqrt{2}},\dfrac{p+q}{2}\biggr)
+\dfrac{\partial^2u}{\partial pq}=-\dfrac{1}{8}f\biggl(\dfrac{i(q-p)}{2\sqrt{2}},\dfrac{p+q}{2}\biggr)
+u(p,q)=F(p)+G(q)-\dfrac{1}{8}\int_b^q\int_a^pf\biggl(\dfrac{i(t-s)}{2\sqrt{2}},\dfrac{s+t}{2}\biggr)ds~dt
+u(x,y)=F(y+\sqrt{2}ix)+G(y-\sqrt{2}ix)-\dfrac{1}{8}\int_b^{y-\sqrt{2}ix}\int_a^{y+\sqrt{2}ix}f\biggl(\dfrac{i(t-s)}{2\sqrt{2}},\dfrac{s+t}{2}\biggr)ds~dt

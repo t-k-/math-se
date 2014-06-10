@@ -1,0 +1,32 @@
+u(x,t) \approx (U_2-U_1)/L, \quad \text{as} \quad t\to \infty
+\nabla^2u=0
+ \frac{\mathrm{d}u}{\mathrm{d}t} = c^2 \frac{\mathrm{d}^2u}{\mathrm{d}x^2} 
+u(x,t)=X(x)T(t)
+\lambda
+x
+t
+\lambda=0
+\begin{array}{lcr} T' & = & \lambda c^2 T\\ \ddot{X} & = & \lambda X   \end{array}
+X(x) = Ax + B, \qquad T(t)=C
+u(x,t)=X(x)T(t)
+X(x)T'(t)=c^2X''(x)T(t)
+\dfrac{T'(t)}{c^2T(t)}=\dfrac{X''(x)}{X(x)}=-\dfrac{\pi^2s^2}{L^2}
+\begin{cases}\dfrac{T'(t)}{T(t)}=-\dfrac{\pi^2c^2s^2}{L^2}\\X''(x)+\dfrac{\pi^2s^2}{L^2}X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\\X(x)=\begin{cases}c_1(s)\sin\dfrac{\pi xs}{L}+c_2(s)\cos\dfrac{\pi xs}{L}&\text{when}~s\neq0\\c_1x+c_2&\text{when}~s=0\end{cases}\end{cases}
+\therefore u(x,t)=C_1x+C_2+\sum\limits_{s=0}^\infty C_3(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\sin\dfrac{\pi xs}{L}+\sum\limits_{s=0}^\infty C_4(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\cos\dfrac{\pi xs}{L}
+u(0,t)=U_1
+C_2+\sum\limits_{s=0}^\infty C_4(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}=U_1
+\sum\limits_{s=0}^\infty C_4(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}=U_1-C_2
+C_4(s)=\begin{cases}U_1-C_2&\text{when}~s=0\\0&\text{when}~s\neq0\end{cases}
+\therefore u(x,t)=C_1x+C_2+\sum\limits_{s=0}^\infty C_3(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\sin\dfrac{\pi xs}{L}+U_1-C_2=C_1x+U_1+\sum\limits_{s=1}^\infty C_3(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\sin\dfrac{\pi xs}{L}
+u(L,t)=U_2
+C_1L+U_1=U_2
+C_1=\dfrac{U_2-U_1}{L}
+\therefore u(x,t)=\dfrac{(U_2-U_1)x}{L}+U_1+\sum\limits_{s=1}^\infty C_3(s)e^{-\frac{\pi^2c^2ts^2}{L^2}}\sin\dfrac{\pi xs}{L}
+u(x,\infty)=\dfrac{(U_2-U_1)x}{L}+U_1
+t\to\infty
+t
+ u_t=0, 
+ c^2 u_{xx}=0, 
+ u(x,\infty)=Ax+B, 
+ u(x,\infty)=U_1+\frac{(U_2-U_1)}{L}x. 

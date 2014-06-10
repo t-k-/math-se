@@ -1,0 +1,48 @@
+a_n
+n
+\{{1\over9},{1\over99},{1\over999},...\}
+a_n = \{\log({1\over9}+{1\over99}),\log({1\over9}+{1\over99}+{1\over999}),\log({1\over9}+{1\over99}+{1\over999}+{1\over9999}),\dots \}\implies
+ a_n = \log\!\left( \sum_{k=1}^{n+1} \frac{1}{10^k-1}\right),\;n > 0 
+b_n
+\{\pm\log(p),\pm\log(q),\pm\log(r),...\}
+\{p,q,r,...\}
+p<q<r<... \implies
+ b_n = \sum_{k=1}^n \pm\log(p_k ),\;p_{k}>p_{k-1},\;\text{isPrime}(p_{k}) = \text{True} 
+ \begin{align} n \mod 2 \equiv 1 &\implies& a_n &=\quad x\log(2) - y\log(3) + b_z\\ n \mod 2 \equiv 0 &\implies& a_n &=\quad x \log(3) b_z \end{align} 
+u/v
+\gcd(u_n,v_n)=1
+ u = p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_U^{\alpha_U} \\ v = q_1^{\beta_1}q_2^{\beta_2}\cdots q_V^{\beta_V} 
+ \log(u/v) = \sum \alpha_i \log p_i - \sum \beta_i \log q_i 
+ \frac{u_n}{v_n} = \sum_{k=1}^{n+1} \frac{1}{10^k-1} = \exp(a_n) 
+D
+D
+t_i
+n
+ \frac{1}{9}+\frac{1}{99}+\cdots+\frac{1}{10^{n+1}-1} = \frac{t_1}{D}+\frac{t_2}{D}+\cdots+\frac{t_{n+1}}{D} 
+v_n=3^x c
+10^{n+2}-1 = 3^y d
+3\nmid cd
+x\ne y
+3^{\max(x,y)}\mid v_{n+1}
+x=y
+3\mid d u_n+c
+3
+3
+v_n,u_n
+n
+ \frac{u_{n+1}}{v_{n+1}}=\frac{u_n}{3^xc}+\frac{1}{3^yd} =\frac{3^yd u_n+3^xc}{3^{x+y}cd} 
+v_{21}
+121
+-2\log 11
+a_{21}
+2585837\mid u_7
+u_8,v_8,u_9
+v_9
+37\mid 999
+37\mid v_i
+2\le i \le 49
+37\nmid v_{50}
+11\mid v_i
+1\le i \le 4
+11 \nmid v_5
+ v_n \mid \operatorname{lcm}(9,99,\ldots,10^{n+1}-1) \\ \implies v_n \mid \operatorname{lcm}(9,99,\ldots,10^{n+1}-1,\ldots,10^j-1)~\mathrm{for~all}~j>n 

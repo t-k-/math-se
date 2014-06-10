@@ -1,0 +1,12 @@
+((k+1)!)^2 2^{k+1} \leq (2(k+1))!
+i\leq 2i-1
+((k+1)!)^2 2^{k+1}=(k+1)!(2\cdot 4\cdot\dotsb (2k+2)) =(\prod_{i=1}^{k+1} i)(2\cdot 4\cdot\dotsb (2k+2))\\ \leq (\prod_{i=1}^{k+1} (2i-1))(2k+2)!! =(2k+1)!!(2k+2)!! = (2(k+1))!
+\frac{[2(k+1)]!}{[(k+1)!]^2}=\binom{2(k+1)}{k+1}=\sum_{i=0}^{k+1} \binom{k+1}{i}^2 \geq \sum_{i=0}^{k+1} \binom{k+1}{i} = 2^{k+1}
+[(k+1)!]^22^{k+1} \leq [2(k+1)]!
+2^k
+2^{k+1}
+k=0
+k=1
+k-1
+(k!)^22^k\le(2k)!
+\begin{align} ((k+1)!)^22^{k+1}&=2(k+1)^2(k!)^22^k\\ &\le2(k+1)^2(2k)!\quad\text{by the inductive hypothesis}\\ &=(2k+2)(k+1)(2k)!\\ &\le(2k+2)(2k+1)(2k)!\quad\text{since }k\le2k\\ &=(2k+2)!\\ &=(2(k+1))! \end{align}

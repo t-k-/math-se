@@ -1,0 +1,46 @@
+X
+Y
+EX^2 \leftarrow\infty
+EY^2 \leftarrow\infty
+Y=aX+b+\epsilon
+a,b \in \mathbb R
+\epsilon
+a
+b
+X
+Y
+\frac{1}{n}\sum_{i=1}^n (X_i-\bar{X})^2 \text{ and }\frac{1}{n}\sum_{i=1}^n (Y_i-\bar{Y})^2
+Var(X)
+Var(Y)
+n \rightarrow\infty
+\frac{1}{n}\sum_{i=1}^nX_i,\ldots\text{ and } \frac{1}{n}\sum_{n=i}^nY_i ,\ldots
+a_n= \dfrac{\sum_{i=1}^n X_iY_i-(\sum_{i=1}^nX_i)(\sum_{i=1}^nY_i)}{\sum_{i=1}^nX_i-\dfrac{(\sum_{i=1}^nX_i)^2}{n}}
+a_n
+a
+n
+\rightarrow\infty
+b_n = \bar{Y}-a_n\bar{X}
+\hat{Y_i}= a_n X_i +b_n
+\sum_{i=1}^n(\hat{Y_i}-\bar{Y})^2 = a^2_n\sum_{i=1}^n(X_i-\bar{X})^2
+\frac{1}{n}\sum_{i=1}^n(\hat{Y_i}-\bar{Y})^2
+a^2 Var(X)
+\dfrac{\sum_{i=1}^n(\hat{Y_i}-\bar{Y})^2}{\sum_{i=1}^n(Y_i-\bar{Y})^2}
+\dfrac{a^2 Var(X)}{Var(Y)}
+a_n= \dfrac{\sum_{i=1}^nX_iY_i-(\sum_{i=1}^nX_i)(\sum_{i=1}^nY_i)}{\sum_{i=1}^nX_i-\dfrac{(\sum_{i=1}^nX_i)^2}{n}}
+a
+n \rightarrow\infty
+b_n =\bar{Y} -a_n \bar{X}
+b
+n \rightarrow\infty
+S_n= \frac{{1}}{{n}}\sum_{i=1}^n(X_i-\bar{X_n})^2
+=\frac{{1}}{{n}}[\sum_{i=1}^n(X_i-u)^2+2(X_i-u)(u-\bar{X_n})+(u-\bar{X_n})^2)]
+=\frac{1}{n}\sum_{i=1}^n(X_i-u)^2+\frac{2}{n}\sum_{i=1}^n(X_i-u)(u-\bar{X_n})+(u-\bar{X_n})^2
+=\frac{1}{n}\sum_{i=1}^n(X_i-u)^2+2(u-\bar{X_n})\frac{{1}}{{n}}\sum_{i=1}^n(X_i-u)+(u-\bar{X_n})^2
+=\frac{{1}}{{n}}\sum_{i=1}^n(X_i-u)^2+2(u-\bar{X_n})\frac{1}{n}\sum_{i=1}^n(X_i)-u+(u-\bar{X_n})^2
+=\frac{1}{n}\sum_{i=1}^n(X_i-u)^2+2(u-\bar{X_n})(\bar{X_n}-u)+(u-\bar{X_n})^2
+=\frac{1}{n}\sum_{i=1}^n(X_i-u)^2-(\bar{X_n}-u)^2
+\bar{X} =\frac{1}{n}\sum_{i=1}^n(X_i) \rightarrow u\text{ almost surely}
+\frac{1}{n}\sum_{i=1}^n(X_i-\bar{X_n})^2 \rightarrow u E((X_i-\bar{X_n})^2) = Var(X) \text{ almost surely}
+S_n \rightarrow Var(X)
+Var(Y)
+Var(X)

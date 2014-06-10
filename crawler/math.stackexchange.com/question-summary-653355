@@ -1,0 +1,39 @@
+x_1,\, x_2,\,\ldots,\, x_n
+\left(\sum_{1 \le i <j \le n} |x_i-x_j|\right)^2 \ge (n-1)\sum_{1\le i<j \le n} (x_i-x_j)^2.
+\sum_{i=0}^{n}x_{i}=0
+\sum_{i,j=1}^{n}(x_{i}-x_{j})^2=n\sum_{i=1}^{n}x^2_{i}-\sum_{i=1}^{n}x_{i}\sum_{j=1}^{n}x_{j}+n\sum_{j=1}^{n}x^2_{j}=2n\sum_{i=1}^{n}x^2_{i}?
+\sum_{i,j=1}^{n}|x_{i}-x_{j}|=2\sum_{i<j}(x_{j}-x_{i})=2\sum_{i=1}^{n}(2i-n-1)x_{i}?
+x_{1}\le x_{2}<\cdots<x_{n}
+n=3
+\Longleftrightarrow (|a-b|+|b-c|+|a-c|)^2\ge 2[(a-b)^2+(b-c)^2+(a-c)^2]
+|a-b|=x,|b-c|=y,|c-a|=z
+(x+y+z)^2\ge 2(x^2+y^2+z^2)\Longleftrightarrow 2xy+2yz+2zx\ge x^2+y^2+z^2?
+x_1 \leq x_2 \leq \ldots \leq x_n
+y_j=x_j-x_{j-1}
+j\geq 2
+\sum_{j}x_j=0
+y_j
+x_k=x_1+\sum_{j=2}^k y_j
+k
+L
+ L=\bigg(\sum_{k=2}^n (k-1)^2(n+1-k)^2y_k^2\bigg)+ \bigg(\sum_{2 \leq i,j \leq n}^n 2(i-1)(j-1)(n+1-i)(n+1-j)y_iy_j\bigg) 
+(n-1)R
+ R=\bigg(\sum_{k=2}^n (k-1)(n+1-k)^2y_k^2\bigg)+ \bigg(\sum_{2 \leq i,j \leq n}^n 2(i-1)(n+1-j)y_iy_j\bigg) 
+D=L-(n-1)R
+D
+ D=\bigg(\sum_{k=2}^n a_ky_k^2\bigg)+ \bigg(\sum_{2 \leq i,j \leq n}^n b_{ij}y_iy_j\bigg) 
+ a_k=(k-1)(n+1-k)\big((k-1)(n+1-k)-(n-1)\big)= (k-1)(n+1-k)(k-2)(n-k) \geq  0  
+ \begin{array}{lcl} b_{i,j}&=& 2(i-1)(n+1-j)\big((j-1)(n+1-i)-(n-1)\big) \\  &\geq & 2(i-1)(n+1-j)\big(i(n+1-i)-(n-1)\big) \\  &= & 2(i-1)(n+1-j)\big((i-2)(n-1-i)+(n-1)\big) \geq 0 \end{array} 
+x_1<x_2<...<x_n
+y_i>0
+i\geq 2
+\sum _{i=1}^{n}x_i=0
+x_i\to \sum _{i=1}^{k}y_i
+y_1=\frac{-\sum _{i=2}^{i=n}(n+1-i)y_i}{n}
+f(n)=\left(\sum_{i=1}^{n}(2i-n-1)x_i\right)^2-n(n-1)\left(\sum _{i=1}^{n}{x_i}^2\right)
+y_i
+y_1
+n
+n
+y_i>0
+ \begin{align}     f(3) &= 4 y_2 y_3 \\ f(4) &= 4 \left(3 y_2 y_3+y_3^2+3 y_2 y_4+3 y_3 y_4\right) \\ f(5) &= 4 \left(6 y_2 y_3+3 y_3^2+8 y_2 y_4+10 y_3 y_4+3 y_4^2+6 y_2 y_5+8 y_3 y_5+6 y_4 y_5\right) \end{align} 

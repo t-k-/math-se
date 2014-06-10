@@ -1,0 +1,10 @@
+v
+v_j
+j
+v_j>0
+f=(f_0,f_1,\ldots,f_{\omega-1})^T
+v
+ s_i = \begin{cases}\frac{v_{i+1}}{v_i}&\ \textrm{ if } v_i>0,\\ \textrm{any number } \in[0,1]&\ \textrm{ otherwise}.\end{cases} 
+ f_0 + \sum_{i=1}^{\omega-1}s_0s_1\ldots s_{i-1}f_i = 1. 
+ f_0 + \sum_{i=1}^{\omega-1}\frac{s_0s_1\ldots s_{i-1}f_i}{\lambda^i} = \lambda
+ L = \begin{bmatrix} f_0 & f_1 & f_2 & f_3 & \ldots &f_{\omega  - 1} \\ s_0 & 0 & 0 & 0 & \ldots & 0\\ 0 & s_1 & 0 & 0 & \ldots & 0\\ 0 & 0 & s_2 & 0 & \ldots & 0\\ 0 & 0 & 0 & \ddots & \ldots & 0\\ 0 & 0 & 0 & \ldots & s_{\omega - 2}  & 0 \end{bmatrix}. 

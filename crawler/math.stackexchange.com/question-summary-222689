@@ -1,0 +1,33 @@
+C_{xx}
+C_{yy}
+C_{xy} = C_{yx}^T
+   \left[\begin{array}{r r}     C_{xx} & C_{xy}\\     C_{yx} & C_{yy}   \end{array}\right] 
+x
+y
+   C_{xx}^{-1}C_{xy}C_{yy}^{-1}C_{yx} \hat w_x = \rho^2 \hat w_x \\   C_{yy}^{-1}C_{yx}C_{xx}^{-1}C_{xy} \hat w_y = \rho^2 \hat w_y  
+X
+Y
+a^TX
+b^TY
+a
+b
+a^T \Sigma_x a = b^T \Sigma_y b = 1
+E(X) = 0
+E(y) = 0
+a^TX
+b^TY
+E(a^T X)(b^TY) = E(a^T X)(Y^Tb) = a^T E(XY^T) b = a^T \Sigma_{xy}b.
+a
+b
+\frac12
+a
+b
+a^T
+b^T
+\mu = \lambda
+\Sigma_x
+\Sigma_y
+a^T \Sigma_{xy}b -\frac12\mu (a^T \Sigma_x a) - \frac12\lambda (b^T \Sigma_y b)
+ \begin{align*} \Sigma_{xy} b - \mu \Sigma_x a &= 0 \\ \Sigma_{yx} a-  \lambda \Sigma_y b &= 0, \end{align*} 
+ \begin{align*} \Sigma_x^{-1} \Sigma_{xy} b - \mu  a &= 0 \\ \Sigma_y^{-1} \Sigma_{yx} a-  \mu b &= 0, \end{align*} 
+ \begin{align*} \frac{1}{\mu} \Sigma_x^{-1} \Sigma_{xy}  \Sigma_y^{-1} \Sigma_{yx}  a - \mu  a &= 0 \end{align*} 

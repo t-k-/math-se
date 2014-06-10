@@ -1,0 +1,54 @@
+ E(J) = \int_{-\infty}^\infty \int_{-\infty}^\infty f(x, y) dxdy 
+J
+J
+Var(J) = E(J^2) - E(J)^2
+E(J^2)
+j^2
+x^2
+y^2
+J
+X
+Y
+J
+X
+Y
+f(x,y)
+m(x,y)
+x
+y
+E(J^2)-(E(J))^2
+E(J)=\int_{-\infty}^\infty\int_{-\infty}^\infty m(x,y)f(x,y)\,dx\,dy.
+E(J^2)=\int_{-\infty}^\infty\int_{-\infty}^\infty (m(x,y))^2f(x,y)\,dx\,dy.
+y\lt x
+m(x,y)=y
+x\lt y
+\int_{x=-\infty}^\infty\int_{y=-\infty}^x yf(x,y)\,dy\,dx.
+\int_{y=-\infty}^\infty\int_{x=-\infty}^y xf(x,y)\,dx\,dy.
+E(J^2)
+yf(x,y)
+xf(x,y)
+y^2f(x,y)
+x^2f(x,y)
+\bar F:(x,y)\mapsto\mathbb P(X\geqslant x,Y\geqslant y)
+(X,Y)
+G=-(\partial_x\bar F+\partial_y\bar F)
+t\mapsto G(t,t)
+J=\min\{X,Y\}
+J
+ \mathbb E(J)=\int tG(t,t)\mathrm dt,\qquad\mathbb E(J^2)=\int t^2G(t,t)\mathrm dt, 
+(X,Y)
+\bar F(x,y)=\bar F_X(x)\bar F_Y(y)
+\bar F_X
+\bar F_Y
+X
+Y
+\bar F_X(x)=\mathbb P(X\geqslant x)
+\bar F_Y(y)=\mathbb P(Y\geqslant y)
+X
+Y
+f_X
+f_Y
+\partial_x\bar F_X(x)=-f_X(x)
+\partial_y\bar F_Y(y)=-f_Y(y)
+ G(x,y)=f_X(x)\bar F_Y(y)+f_Y(y)\bar F_X(x), 
+ G(t,t)=f_X(t)\bar F_Y(t)+f_Y(t)\bar F_X(t)=f_X(t)\mathbb P(Y\geqslant t)+f_Y(t)\mathbb P(X\geqslant t). 

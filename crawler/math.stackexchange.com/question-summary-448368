@@ -1,0 +1,48 @@
+\newcommand{E}{\mathbf{E}}
+E_i
+i
+50
+i
+\Pr(E_i)
+X_i
+E_i
+\E[X_i] = \Pr(E_i)
+X
+50
+X=\sum_{i=1}^{50}X_i
+\E[X] = \sum_{i=1}^{50} \E[X_i] = 50 \cdot \Pr(E_i)
+\Pr(E_i)
+P_k
+i
+k
+p = 1/50
+P_0 = 0
+P_k = p(1-P_{k-1}) + (1-p)P_{k-1}
+k>0
+P_{50}
+\Pr(E_i)
+0
+2
+4
+ \binom{50}{0}\left(\frac{1}{50}\right)^{0}\left(\frac{49}{50}\right)^{50}=.364\\ \binom{50}{2}\left(\frac{1}{50}\right)^{2}\left(\frac{49}{50}\right)^{48}=.186\\ \binom{50}{4}\left(\frac{1}{50}\right)^{4}\left(\frac{49}{50}\right)^{46}=.0145\\ 
+5
+ .364+.186+.0145 = .565 
+0.565\cdot50\approx 28\,
+28\,
+22
+n
+k
+f(k+1)=\frac 1 n + \frac{n-2}{n}f(k)
+\frac 1 2
+f(k+1)-\frac 1 2 = \frac{n-2}{n}(f(k)-\tfrac 1 2)
+f(k) - \frac 1 2 = -\frac 1 2 \left(\frac{n-2}{n}\right)^{k}
+f(n) = \frac 1 2 - \frac 1 2 \left(1-\frac 2 n\right)^n.
+n
+f(n)\approx \frac 1 2 - \frac 1 2 e^{-2}\approx 0.432.
+25[1 - (24/25)^{50}] \approx 22
+(49/50 + x/50)^{50} = \sum_{i=0}^{50} \binom{50}{i} (x/50)^i (49/50)^{50-i}
+(49/50 - x/50)^{50} = \sum_{i=0}^{50} (-1)^i \binom{50}{i} (x/50)^i (49/50)^{50-i}
+(49/50 + x/50)^{50} - (49/50 - x/50)^{50} = 2 \sum_{i \; odd} \binom{50}{i} (x/50)^i (49/50)^{50-i}
+(49/50 + 1/50)^{50} - (49/50 - 1/50)^{50} = 2 \Pr(\text{i is odd})
+\Pr(\text{i is odd}) \approx 0.43506
+50 \cdot \Pr(\text{i is odd}) \approx 21.75

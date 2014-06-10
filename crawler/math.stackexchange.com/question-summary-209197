@@ -1,0 +1,16 @@
+ P \land Q
+P\lor Q
+P \land Q \models P \lor Q
+P \models Q
+P \land R \models Q \land R
+(R \land (P \Rightarrow Q)) \Rightarrow ((R \Rightarrow P) \Rightarrow Q)
+(R \land (P \Rightarrow Q)) \models((R \Rightarrow P) \Rightarrow Q)
+(R \land (\lnot P \lor Q)) \models (Q \lor (R \land \lnot P))
+((R \land \lnot P) \lor R) \land ((R \land \lnot P) \lor Q) \models (Q \lor (R \land \lnot P))
+P \land Q \models P
+((R \land \lnot P) \lor R) \land ((R \land \lnot P) \lor Q) \models (Q \lor (R \land \lnot P))
+((R \land \lnot P) \lor R) \land ((R \land \lnot P) \lor Q) \models (Q \lor (R \land \lnot P))
+((R \land \lnot P) \lor Q) \models(Q \lor (R \land \lnot P))
+((P \Rightarrow (Q \lor R)) \land (Q \Rightarrow R)) \Rightarrow (P \Rightarrow R)
+((\lnot P \lor (Q \lor R)) \land (\lnot Q \lor R)) \models (\lnot P \lor R)
+(\lnot P \lor (Q \lor R) \models (\lnot P \lor R)

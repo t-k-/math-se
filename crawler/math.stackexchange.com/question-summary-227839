@@ -1,0 +1,61 @@
+1
+0
+n
+n+1
+n+1
+c_0 \ldots c_n
+c_k, c_{k+1}
+\frac {c_k + c_{k+1}}2
+k \pmod {n+1}
+\max_{0\le k\le n}\{c_k\}
+\frac {c_k + c_{k+1}}2 \le \max \{c_k, c_{k+1}\}
+(n+1)\max_{0\le k\le n}\{c_k\}
+\sum_{0\le i<j \le n} |c_i-c_j|
+c_k
+c_{k+1}
+\frac {c_k + c_{k+1}}2
+\sum_{0\le i<j \le n} |c'_i-c'_j| - \sum_{0\le i<j \le n} |c_i-c_j| = (\sum_{i \notin \{k,k+1\}} |c_i - c'_k| + |c_i - c'_{k+1}| - |c_i - ck| - |c_i - c_{k+1}|) - |c_k - c_{k+1}| \le - |c_k - c_{k+1}|
+c_k = c_{k+1}
+k
+<1
+E
+i
+E
+\alpha_i
+E
+n-2
+\alpha_i
+(x_1,x_2)
+(x_1,x_2) \to (\frac{x_1}{2},x_2+\frac{x_1}{2})\to (\frac{x_1}{2},\frac{x_2}{2}+\frac{x_1}{4})
+x_1
+\alpha_1
+E
+(\frac{x_1}{2}+\alpha_1,\frac{x_2}{2}+\frac{x_1}{4})\to (\frac{x_1}{4}+\frac{\alpha_1}{2},\frac{x_1+x_2}{2} +\frac{\alpha_1}{2}) \to(\frac{x_1}{4}+\frac{\alpha_1}{2},\frac{x_1+x_2}{4} +\frac{\alpha_1}{4})
+\alpha_2
+(\frac{x_1}{4}+\frac{\alpha_1}{2}+\alpha_2,\frac{x_1+x_2+\alpha_1}{4}) \to (\frac{x_1}{8}+\frac{\alpha_1}{4}+\frac{\alpha_2}{2},\frac{3x_1}{8} +\frac{x_2}{4}+\frac{\alpha_1+\alpha_2}{2}) \to (\frac{x_1}{8}+\frac{\alpha_1}{4}+\frac{\alpha_2}{2},\frac{3x_1}{16} +\frac{x_2}{8}+\frac{\alpha_1+\alpha_2}{4})
+f_{i-1}<f_i
+f_i\to 0
+ i\to \infty
+f_i = \frac{1}{2}(f_{i-1}+\frac{1}{2^i}),f_0=0
+i
+x_1(i) = \frac{x_1}{2^i} +\sum_{j} \frac{\alpha_j}{2^{i-j}}
+x_2(i) = \frac{x_2}{2^i} + f_ix_1 + \sum_{j}f_{i-j}\alpha_j
+i
+x_1(i)-x_2(i)
+n
+n=2^px
+p
+x
+n=2^p
+2^{p-1}
+2^{p-1} + 2^{p}=\frac{3}{2}2^{p}=(1 +\frac{1}{2})2^{p}
+(\frac{1}{2} + \frac{1}{4})2^{p}
+2^{p}(1 + \frac{1}{2} + \frac{1}{4})
+2^{p}(\sum_{i=0}^{k-1}2^{-i})=2^{p}(\frac{\sum_{i=0}^{k-1}2^{i}}{2^{k-1}})=
+g_k
+p-k-1>0 \leftrightarrow p>k+1
+k=p-1
+2^{p}(\frac{2^k -1}{2^{k-1}})=2^{p-k-1}(2^k-1):=g_k 
+g_p=(2^{p-(p-1)-1}(2^{(p-1)}-1)+1)\frac{1}{2}+2^p= 2^{p-2}+2^p=(1+2^2)2^{p-2}
+2^p
+2^{p-2} 

@@ -1,0 +1,27 @@
+ A \bigtriangleup B = (A \cup B )\setminus (A \cap B )=(B \cup A )\setminus (B \cap A )= B \bigtriangleup A 
+A\Delta B
+A
+B
+B
+A
+B\Delta A
+A \subset X
+1_A : X \to \{ 0,1\}
+1_A(x) = \left\{  \begin{eqnarray} \begin{split} 1 & \mbox{if } x \in A \\ 0 & \mbox{if } x \notin A \\ \end{split} \end{eqnarray}\right.
+\color{green}{A= B \Leftrightarrow 1_A = 1_B}
+1_{A \cap B}=1_A \cdot 1_B
+1_{A \cup B}=1_A+1_B-1_A \cdot 1_B
+1_{A \backslash B}= 1_A-1_A1_B
+\color{green}{1_{A \Delta B}=1_A+1_B-2\cdot 1_A \cdot 1_B=(1_A-1_B)^2}
+\color{red}{Proof}
+1_{A \Delta B}=1_A+1_B-2\cdot 1_A \cdot 1_B=(1_A-1_B)^2
+1_{B \Delta A}=1_B+1_A-2\cdot 1_B \cdot 1_A=(1_B-1_A)^2
+(1_A-1_B)^2=(1_B-1_A)^2 \to 1_{A \Delta B}=1_{B \Delta A}\iff A \bigtriangleup B = B \bigtriangleup A
+\;\bigtriangleup\;
+\;x\;
+ x \in A \bigtriangleup B \;\equiv\; x \in A \not\equiv x \in B 
+\;\not\equiv\;
+\;x\;
+\;\bigtriangleup\;
+\;\not\equiv\;
+\;\bigtriangleup\;

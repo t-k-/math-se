@@ -1,0 +1,17 @@
+\quad f(t) = \begin{cases} a,  & \text{if 
+ } \\ e^{-b.t}, & \text{if 
+}  \\ 0, & \text{if 
+} \end{cases} 
+b
+a
+x=0
+b
+0
+5
+b
+a
+b
+f:=t->\text{piecewise}(t=0,a,t<0,\text{exp}(-b*t),0<t,0)
+\text{plot}(f(t),t=t_1..t_2);
+t_1
+t_2

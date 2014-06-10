@@ -1,0 +1,23 @@
+A,B,C
+\textbf{Cat}(A\times B,C)\cong \textbf{Cat}(A,C^B)
+A,B
+C
+\textbf{Cat}(A\times B,C)
+\hom_{Cat}(A\times B,C)
+\textbf{Cat}(A,C^B)
+\textbf{Cat}^{op}\times \textbf{Cat}^{op}\times \textbf{Cat}\overset{(\times,\text{Id})}{\longrightarrow}(\textbf{Cat}\times \textbf{Cat})^{op}\times \textbf{Cat}\overset{\hom_{Cat}}{\longrightarrow}\textbf{Set}
+X
+Y
+\varphi\colon X\to Y
+ X,Y\colon\mathbf{Cat}^{op}\times\mathbf{Cat}^{op}\times\mathbf{Cat}\to\mathbf{Set}, 
+ X(A,B,C)=hom_{\mathbf{Cat}}(A\times B,C),\qquad Y(A,B,C)=hom_{\mathbf{Cat}}(A,C^B). 
+ (\varphi(A,B,C))(T)=T_0;\qquad T_0(a)=a_0;\qquad T_0(f)=f_0; 
+ a_0(b)=T(a,b);\qquad a_0(g)=T(id(a),g);\qquad f_0(b)=T(f,id(b)). 
+a_0
+B\to C
+a\in A
+\varphi
+\psi\colon Y\to X
+\psi=\varphi^{-1}
+ (\psi(A,B,C))(T)=T_1;\qquad T_1(a,b)=(T(a))(b); 
+ T_1(f,g)=T(cod(f))(g)\circ(T(f))(dom(g)). 

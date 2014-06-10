@@ -1,0 +1,11 @@
+\sum_{k\leq n}^{n} \binom{n}{k}= 2^n    , n, k \in  \mathbb{N}
+H) \sum_{k=0}^{h} \binom{h}{k}= 2^h
+T) \sum_{k=0}^{h+1} \binom{h+1}{k}= 2^{h+1}
+\sum_{k=0}^{h+1} \binom{h+1}{k} \Rightarrow \sum_{k=0}^{h} \binom{h}{k} + \sum_{k=0}^{h} \binom{h}{k-1}
+n\in\mathbb{Z}_{>0}
+k\in\mathbb{Z}
+\binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k}
+k\notin\left\{ 0,\ldots,n\right\} 
+\binom{n}{k}:=0
+\sum_{k\in\mathbb{Z}}\binom{n}{k}=\sum_{k\in\mathbb{Z}}\binom{n-1}{k-1}+\sum_{k\in\mathbb{Z}}\binom{n-1}{k}=2^{n-1}+2^{n-1}=2^{n}
+ \dbinom{n}{k} = \dbinom{n-1}{k-1} + \dbinom{n-1}{k} 

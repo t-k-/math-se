@@ -1,0 +1,17 @@
+S_n = \sum_{k=0}^n \frac{n-k+1}{(n+1) (n+2) (n-k+2)}.
+\frac{n-k+1}{(n+1) (n+2) (n-k+2)} = \frac{n^{\underline{k}}}{(n+2)^{\underline{k}}(n-k+2)^2}
+S_n = \frac{7}{6(n+1)(n+2)}
+7/6 = (1+2)-H_{1+2}
+n+2 - H_{n+2}
+H_n = \sum_{k=1}^n \frac1{k}
+n
+\frac1{(n+1)(n+2)} \sum_{k=0}^{n} \frac{n+1-k}{n+2-k},
+\frac{n+1}{n+2} + \frac{n}{n+1} + \dots + \frac{n+1-n}{n+2-n} = 1 - \frac1{n+2} + 1 - \frac1{n+1} + \dots + 1 - \frac1{n+2-n}
+= n + 2 - H_{n+2},
+\frac{n + 2 - H_{n+2}}{(n+1)(n+2)}.
+\begin{eqnarray*} S_{n} &=&\sum_{k=0}^{n}\dfrac{n-k+1}{(n+1)(n+2)(n-k+2)} \\ &=&\dfrac{1}{(n+1)(n+2)}\sum_{k=0}^{n}\dfrac{n-k+1}{n-k+2}\qquad (n+1)(n+2)% \text{ is independent of }k \\ &=&\dfrac{1}{(n+1)(n+2)}\sum_{m=2}^{n+2}\frac{m-1}{m}\qquad \text{substitution }m=n-k+2 \\ &=&\dfrac{1}{(n+1)(n+2)}\sum_{m=2}^{n+2}\left( 1-\dfrac{1}{m}\right)  \\ &=&\dfrac{1}{(n+1)(n+2)}\left(\sum_{m=2}^{n+2}1\right)-\dfrac{1}{(n+1)(n+2)}\sum_{m=2}^{n+2}% \dfrac{1}{m} \\ &=&\dfrac{n+2-2+1}{(n+1)(n+2)}-\dfrac{1}{(n+1)(n+2)}\left( \sum_{i=1}^{n+2}% \dfrac{1}{i}\right) +\dfrac{1}{(n+1)(n+2)} \\ &=&\dfrac{n+1}{(n+1)(n+2)}-\dfrac{H_{n+2}}{(n+1)(n+2)}+\dfrac{1}{(n+1)(n+2)} \\ &=&\dfrac{n+2-H_{n+2}}{(n+1)(n+2)}, \end{eqnarray*}
+H_{n+2}=\displaystyle\sum_{i=1}^{n+2}\dfrac{1}{i}.
+S_n = \sum_{k=0}^n \frac{n-k+1}{(n+1) (n+2) (n-k+2)}.
+\sum_{k=0}^{n=p} \frac{n^{\underline{k}}}{(n+2)^{\underline{k}}(n-k+2)^2}.
+ n^{\underline{k}} = \frac{ \Gamma (n+1)}{ \Gamma (n-k+1)}
+S_n = \frac{7}{6(n+1)(n+2)}

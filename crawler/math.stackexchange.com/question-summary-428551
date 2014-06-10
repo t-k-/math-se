@@ -1,0 +1,42 @@
+P_0
+\rho_o(t)=\frac{MP_o(t)}{RT}
+q_o(t)=\frac{-V_t}{P_o(t)}\frac{dP_o}{dt}
+q(x,t)=\frac{q_o(t)P_o(t)}{p(x,t)}=\frac{-V_t}{p(x,t)}\frac{dP_o}{dt}
+k(x,t)=k_l\left(1+\frac{b}{p(x,t)+Pa}\right)
+q = \frac{-kA}{\mu}\frac{dP}{dx}
+\frac{-V_tP'_o(t)}{p(x,t)}=\frac{-k_lA(1+b/p(x,t))}{\mu}\frac{\partial{p(x,t)}}{\partial{x}}
+1/2(P_l-P_o)
+\frac{-2V_t\mu P'_o(t)L}{k_lA(P_o-P_l)}=P_l+P_o+2b
+P_l = 0
+\frac{-V_tP'_o(t)}{P_o(t)}=\frac{k_lA}{2000*14.696 \mu L}(P_o(t)+2P_a+2b)
+m=\frac{k_lA}{29,390 \mu L}
+i=2(P_a+b)m
+i
+m
+\frac{-V_tP'_o(t)}{P_o(t)}=i+mP_o(t)
+\frac{V_t}{i/m} \ln \frac{P_1(P_2+i/m)}{P_2(P_1+i/m)}=m(t_2-t_1)
+-V_t\frac{P_0'}{P_0^2} - \frac{i}{P_0} = m
+ \frac{d}{dt} \frac{1}{P_0} - \frac{i}{V_t} \frac{1}{P_0} = \frac{m}{V_t}
+\frac{d}{dt} \left [e^{-i t/V_t} \frac{1}{P_0} \right ] = \frac{m}{V_t} \, e^{-i t/V_t}
+\frac{1}{P_0(t)} = C \, e^{i t/V_t} - \frac{m}{i}
+C
+\log{\left (\frac{1}{P_0(t)}+\frac{m}{i} \right )} - \frac{i}{V_t} t = \log{C}
+t=t_1
+t=t_2
+\log{\left (\frac{1}{P_0(t_1)}+\frac{m}{i} \right )} - \frac{i}{V_t} t_1 = \log{\left (\frac{1}{P_0(t_2)}+\frac{m}{i} \right )} - \frac{i}{V_t} t_2
+P_1 = P_0(t_1)
+\frac{-V_t}{P_o(t)(P_o(t)+i/m)}\frac{dP_o}{dt}=m
+V_t = C
+(i/m) =D
+P_o(t)=x
+x=0
+A=-C/D
+\frac{-C}{x(x+D)}dx=mdt
+\frac{-C}{x(x+D)}=\frac{A}{x}+\frac{B}{x+D}
+-C=A(x+D)+B(x)
+x=-D
+B=C/D
+\frac{-C}{x(x+D)}=\frac{-C/D}{x}+\frac{C/D}{x+D}
+=\frac{C}{D} \left( \frac{-1}{x}+\frac{1}{x+D} \right)
+\frac{C}{D} \left [\ln(x_1)-\ln(x_2)+\ln(x_2+D)-\ln(x_1+D) \right]
+\frac{C}{D} \ln \frac{x_1(x_2+D)}{x_2(x_1+D)}

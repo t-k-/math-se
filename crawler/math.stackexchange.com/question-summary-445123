@@ -1,0 +1,14 @@
+\frac{\partial f(x,y,t)}{\partial t} + \nabla_{(x,y)} \cdot (A f)= 0
+f(x,y,0) = f_0(x,y)
+A
+A = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}
+\frac{dX}{dt} = a_1\implies X(t) = x_0 + a_1t \\ \frac{dY}{dt} = a_2\implies Y(t) = y_0 + a_2t
+A = \begin{pmatrix} -x \\ y \end{pmatrix}
+\frac{dX}{dt} = y \implies X(t) = c_0\sin(t+c_1) \\  \frac{dY}{dt} = -x\implies Y(t) = c_0 \cos(t+c_1)
+X(t) = t\cos(t+\theta_0) \\ Y(t) = t\sin(t+\theta_0)
+\frac {dX(t)}{dt} = -t\sin(t+\theta_0) + \cos(t+\theta_0) = x/t - y = a_1(t,x,y)
+\frac {dY(t)}{dt} = t\cos(t+\theta_0) + \sin(t+\theta_0) = y/t + x = a_2(t,x,y)
+\nabla \cdot A = \dfrac{2}{t}
+\frac{\partial f(x,y,t)}{\partial t} + A \cdot  \nabla_{(x,y)} f = - \dfrac{2}{t} f
+\dfrac{dF(x,y,t)}{dt} = - \dfrac{2}{t}f \implies f = C_0 / t^2
+t=0

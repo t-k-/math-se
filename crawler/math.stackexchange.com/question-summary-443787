@@ -1,0 +1,15 @@
+\Psi (x, t) 
+\hbar/i (d/dx)
+\lambda \in R
+\psi_\lambda = e^{i \lambda x / \hbar} 
+ < \psi_\lambda' | \psi_\lambda >  =  |A|^2 \int_{-\infty}^{\infty} e^{i (\lambda - \lambda')x/\hbar} dx = |A|^2 2 \pi \hbar \ \delta(\lambda - \lambda')  
+\lambda' \neq \lambda
+ \left. \int_{-\infty}^{\infty} e^{i (\lambda - \lambda')x/\hbar} dx \right|_{\lambda = \lambda'}  = \int_{-\infty}^{\infty} 1 dx  = \infty 
+ e^{i (\lambda - \lambda')z/\hbar}
+ \lim_{p \rightarrow \infty} \left. \int_{-p}^{p} e^{i (\lambda - \lambda')x/\hbar} dx \right|_{\lambda = \lambda'}  = 2 \pi \sum_i f(z_i) - lim_{p \rightarrow \infty} p \left| e^{i(\lambda - \lambda') p / \hbar} \right| 
+z_i
+\rightarrow \infty
+\int_{-\infty}^{\infty} f(\lambda')\delta(\lambda-\lambda')d\lambda'=f(\lambda)
+f(\lambda)
+\int_{-\infty}^{\infty} f(\lambda')\int_{-\infty}^{\infty} e^{i (\lambda - \lambda')x/\hbar} dx d\lambda'
+\int_{-\infty}^{\infty} e^{i\lambda x/\hbar}\int_{-\infty}^{\infty} f(\lambda')e^{- i \lambda'x/\hbar} d\lambda' dx = \int_{-\infty}^{\infty} e^{i\lambda x/\hbar}\tilde{f}(x/(2\pi\hbar)) dx = 2\pi\hbar f(\lambda) 

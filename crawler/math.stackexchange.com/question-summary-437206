@@ -1,0 +1,49 @@
+rS(V,t)=c-\frac{\partial S(V,t)}{\partial t}+\delta V \frac{\partial S(V,t)}{\partial V}+\frac{1}{2} \sigma_h^2 V^2 \frac{\partial^2 S(V,t)}{\partial V^2}
+S(V,t)
+V
+t
+S(V_s,t)=f(t)
+V_s
+f
+f(t)=D(V_s,t)
+D(V,t)
+rD(V,t)=c-\frac{\partial D(V,t)}{\partial t}+\delta V \frac{\partial D(V,t)}{\partial V}+\frac{1}{2} \sigma^2_l V^2 \frac{\partial^2 D(V,t)}{\partial V^2}
+\sigma
+D(V_B,V_B)=T
+T
+D(V,0)=p
+V \gt V_B
+1
+r\neq0
+S(V,t)=S_c(V,t)+\dfrac{c}{r}
+\dfrac{\partial S(V,t)}{\partial t}=\dfrac{\partial S_c(V,t)}{\partial t}
+\dfrac{\partial S(V,t)}{\partial V}=\dfrac{\partial S_c(V,t)}{\partial V}
+\dfrac{\partial^2S(V,t)}{\partial V^2}=\dfrac{\partial^2S_c(V,t)}{\partial V^2}
+\therefore r\left(S_c(V,t)+\dfrac{c}{r}\right)=c-\dfrac{\partial S_c(V,t)}{\partial t}+\delta V\dfrac{\partial S_c(V,t)}{\partial V}+\dfrac{1}{2}\sigma_h^2V^2\dfrac{\partial^2S_c(V,t)}{\partial V^2}
+rS_c(V,t)+c=c-\dfrac{\partial S_c(V,t)}{\partial t}+\delta V\dfrac{\partial S_c(V,t)}{\partial V}+\dfrac{1}{2}\sigma_h^2V^2\dfrac{\partial^2S_c(V,t)}{\partial V^2}
+\dfrac{\partial S_c(V,t)}{\partial t}=\dfrac{1}{2}\sigma_h^2V^2\dfrac{\partial^2S_c(V,t)}{\partial V^2}+\delta V\dfrac{\partial S_c(V,t)}{\partial V}-rS_c(V,t)
+S_c(V,t)=P(V)Q(t)
+P(V)Q'(t)=\dfrac{1}{2}\sigma_h^2V^2P''(V)Q(t)+\delta VP'(V)Q(t)-rP(V)Q(t)
+P(V)Q'(t)=\dfrac{\sigma_h^2Q(t)}{2}\biggl(V^2P''(V)+\dfrac{2\delta}{\sigma_h^2}VP'(V)-\dfrac{2r}{\sigma_h^2}P(V)\biggr)
+\dfrac{2Q'(t)}{\sigma_h^2Q(t)}=\dfrac{V^2P''(V)+\dfrac{2\delta}{\sigma_h^2}VP'(V)-\dfrac{2r}{\sigma_h^2}P(V)}{P(V)}=-s^2-\dfrac{1}{4}\biggl(\dfrac{2\delta}{\sigma_h^2}-1\biggr)^2-\dfrac{2r}{\sigma_h^2}
+\begin{cases}\dfrac{Q'(t)}{Q(t)}=-\dfrac{\sigma_h^2s^2}{2}-\dfrac{\sigma_h^2}{8}\biggl(\dfrac{2\delta}{\sigma_h^2}-1\biggr)^2-r\\V^2P''(V)+\dfrac{2\delta}{\sigma_h^2}VP'(V)+\biggl(s^2+\dfrac{1}{4}\biggl(\dfrac{2\delta}{\sigma_h^2}-1\biggr)^2\biggr)P(V)=0\end{cases}
+\begin{cases}Q(t)=c_3(s^2)e^{-t\Bigl(\frac{\sigma_h^2s^2}{2}+\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)}\\P(V)=\begin{cases}c_1(s^2)V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}\sin((\ln V-\ln V_s)s)+c_2(s^2)V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}\cos((\ln V-\ln V_s)s)&\text{when}~s\neq0\\c_1V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}\ln V+c_2V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}&\text{when}~s=0\end{cases}\end{cases}
+\therefore S(V,t)=\int_0^\infty C_1(s^2)V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}e^{-t\Bigl(\frac{\sigma_h^2s^2}{2}+\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)}\sin((\ln V-\ln V_s)s)~ds+\int_0^\infty C_2(s^2)V^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}e^{-t\Bigl(\frac{\sigma_h^2s^2}{2}+\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)}\cos((\ln V-\ln V_s)s)~ds+\dfrac{c}{r}
+S(V_s,t)=f(t)
+\int_0^\infty C_2(s^2)V_s^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}e^{-t\Bigl(\frac{\sigma_h^2s^2}{2}+\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)}~ds+\dfrac{c}{r}=f(t)
+V_s^{\frac{1}{2}-\frac{\delta}{\sigma_h^2}}e^{-\Bigl(\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)t}\int_0^\infty C_2(s^2)e^{-\frac{\sigma_h^2ts^2}{2}}~ds=f(t)-\dfrac{c}{r}
+\int_0^\infty\dfrac{C_2(s^2)e^{-\frac{\sigma_h^2ts^2}{2}}}{2s}d(s^2)=\left(f(t)-\dfrac{c}{r}\right)V_s^{\frac{\delta}{\sigma_h^2}-\frac{1}{2}}e^{\Bigl(\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)t}
+\int_0^\infty\dfrac{C_2(s)e^{-\frac{\sigma_h^2ts}{2}}}{2\sqrt{s}}ds=\left(f(t)-\dfrac{c}{r}\right)V_s^{\frac{\delta}{\sigma_h^2}-\frac{1}{2}}e^{\Bigl(\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)t}
+\mathcal{L}_{s\to\frac{\sigma_h^2t}{2}}\left\{\dfrac{C_2(s)}{2\sqrt{s}}\right\}=\left(f(t)-\dfrac{c}{r}\right)V_s^{\frac{\delta}{\sigma_h^2}-\frac{1}{2}}e^{\Bigl(\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)t}
+C_2(s)=2V_s^{\frac{\delta}{\sigma_h^2}-\frac{1}{2}}\sqrt{s}\mathcal{L}^{-1}_{\frac{\sigma_h^2t}{2}\to s}\left\{f(t)e^{\Bigl(\frac{\sigma_h^2}{8}\bigl(\frac{2\delta}{\sigma_h^2}-1\bigr)^2+r\Bigr)t}\right\}-\dfrac{2c}{r}V_s^{\frac{\delta}{\sigma_h^2}-\frac{1}{2}}\sqrt{s}\delta\biggl(s+\dfrac{1}{4}\biggl(\dfrac{2\delta}{\sigma_h^2}-1\biggr)^2+\dfrac{2r}{\sigma_h^2}\biggr)
+ S_t - \frac{\sigma^2}{2}v^2 S_{vv} - \delta v S_v + r S = 0, \qquad S(v_s,t) = f(t) \tag{1} 
+ S_t - \frac{\sigma^2}{2}v^2 S_{vv} - \delta v S_v + r S = c, \qquad S(v_s,t) = 0. \tag{2} 
+S(t,v) = S(v)
+S(t,v) = v^\alpha
+\alpha
+S(t,v \to \infty) \to 0
+ -\frac{\sigma^2}{2}v^2 S'' - \delta v S' + r S = c, \qquad S(v_s) = 0. 
+ \alpha^2 + \left(\frac{2\delta}{\sigma^2} - 1\right)\alpha - \frac{2 r}{\sigma^2} = 0, 
+1-\frac{2\delta}{\sigma^2} \le 0
+S \ge 0
+k

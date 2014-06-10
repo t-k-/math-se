@@ -1,0 +1,41 @@
+X_t = a+ bt+ Z_t + 0.6Z_{t-1} 
+ a 
+ b 
+ \gamma (k) 
+ Cov(X_t, X_{t+k})
+Cov(a+ b t+ Z_t + 0.6 Z_{t-1}, a+ b(t+k)+ Z_{t+k} + 0.6 Z_{t+k-1}) 
+X, Y
+Z
+Cov(X+Y,Z)=Cov(X,Z)+Cov(Y,Z)
+X_t=a+bt+Z_t+0.6Z_{t-1},
+Z_t
+\sigma^2
+Cov(a,a)=Cov(bt,bt)=Cov(a,X)=Cov(bt,X)=0,
+X
+E[a]=a
+E[bt]=bt
+a
+a\cdot \mathbf{1}
+\mathbf{1}
+bt
+bt:=bt\cdot \mathbf{1}
+k\neq 0
+Cov(X_t,X_{t+k})=Cov(a,X_{t+k})+Cov(bt,X_{t+k})+Cov(Z_t,X_{t+k})+0.6Cov(Z_{t-1},X_{t+k})=\\ Cov(Z_t,X_{t+k})+0.6Cov(Z_{t-1},X_{t+k})=\\ Cov(Z_t,a)+Cov(Z_t,b(t+k))+Cov(Z_t,Z_{t+k})+0.6Cov(Z_t,Z_{t+k-1})+\\ 0.6Cov(Z_{t-1},a)+0.6Cov(Z_{t-1},b(t+k))+0.6Cov(Z_{t-1},Z_{t+k})+0.36Cov(Z_{t-1},Z_{t+k-1}),
+Cov(X_t,X_{t+k})= Cov(Z_t,Z_{t+k})+0.6Cov(Z_t,Z_{t+k-1})+0.6Cov(Z_{t-1},Z_{t+k})+0.36Cov(Z_{t-1},Z_{t+k-1}).
+k\pm 1
+Cov(X_t,X_{t\pm 1})= 0.6Cov(Z_t,Z_{t})=0.6\sigma^2.
+k\neq \pm 1
+Cov(X_t,X_{t+k})= 0.
+E[X_t]=a+bt
+Var[X_t]=E[(Z_t+0.6Z_{t-1})(Z_t+0.6Z_{t-1})]=\sigma^2(1+0.36),
+Cov[X_t,X_{t+k}]=E[(X_t-(a+bt))(X_{t+k}-(a+b(t+k)))]
+=E[(Z_t+0.6Z_{t-1})(Z_{t+k}+0.6Z_{t-1+k})].
+k=0
+Cov[X_t,X_t]=Var[X_t]=\sigma^2(1+0.36).
+k= + 1
+k=-1
+Cov[X_t,X_{t+1}]=E[(Z_t+0.6Z_{t-1})(Z_{t+1}+0.6Z_{t})]
+=E[(Z_t\cdot0.6Z_{t})]=0.6\sigma^2.
+k>1
+k<-1
+Cov[X_t,X_{t+k}]=E[(Z_t+0.6Z_{t-1})(Z_{t+k}+0.6Z_{t-1+k})]=0,

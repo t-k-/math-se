@@ -1,0 +1,13 @@
+X
+X
+ \frac{\binom{X}{2}}{\binom{120}{2}} = \frac{X (X-1)}{120 \cdot 199} 
+X
+X
+[0,120]
+\mathbb{P}[X=k] = p_k
+k \in [0,120]
+k=0,k=1
+X
+ \mathbb{P}[\text{draw 2 white balls}]  = \sum_{k=2}^{120} p_k \frac{k (k-1)}{120 \cdot 199}  = \frac{1}{199 \cdot 120} \sum_{k=2}^{120} p_k k (k-1), 
+\mathbb{E}[X^n] = \sum_{k=0}^{120}k^n p_k
+ \begin{split} \mathbb{P}[\text{draw 2 white balls}]  &= \frac{1}{199 \cdot 120} \sum_{k=2}^{120} p_k k (k-1) \\  &= \frac{1}{199 \cdot 120}     \left( \sum_{k=0}^{120} p_k k (k-1)            - p_0 \cdot 0 \cdot (-1) - p_1 \cdot 1 \cdot 0 \right) \\   &= \frac{1}{199 \cdot 120} \sum_{k=0}^{120} p_k k (k-1) \\   &= \frac{1}{199 \cdot 120}      \left(            \sum_{k=0}^{120} k^2 p_k - \sum_{k=0}^{120} k p_k      \right) \\   &= \frac{\mathbb{E}[X^2] - \mathbb{E}[X]}{199 \cdot 120} \end{split} 

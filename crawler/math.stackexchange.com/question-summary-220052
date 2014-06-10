@@ -1,0 +1,96 @@
+n
+X=\{1,2,...,n\}
+T_{n}
+|T_{n}|
+n
+R_{2}
+T_{n}
+n
+R_{1}
+T_{n}
+n
+R_{1}\cup R_{2}=T_{n}
+|R_{1}|+ |R_{2}|=|T_{n}|
+R_{1}
+T_{n-1}
+R_{2}
+(n-1)T_{n-2}
+n-1
+n
+n-2
+|T_{n-2}|
+|T_{n}|=(n-1)|T_{n-1}|+|T_{n-2}|
+n
+T_{n}
+U_{n}
+S_{n}
+|U_{6}|
+(1,1,1,1,1,1)
+\frac{6!}{2*5!}
+(2,1,1,1,1)
+\frac{6!}{4*4!}
+(2,2,1,1)
+\frac{6!}{8*3!}
+(2,2,2)
+26.5
+T_n
+(n-1)
+n-1
+f_{n-1}
+n
+n
+1
+n-1
+1
+2
+f_{n-1}
+n
+2
+n-1
+n-1
+f_{n-2}
+n-2
+f_{n} = f_{n-1} + (n-1) f_{n-2}
+1
+2
+\{1,\dots,n\}
+\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n}{2k}(2k-1)!!\;,\tag{1}
+(-1)!!=1
+n=6
+\sum_{k=0}^3\binom6{2k}(2k-1)!!=1\cdot1+15\cdot1+15\cdot3\cdot1+1\cdot5\cdot3\cdot1=76\;.
+\{1,\dots,n\}
+r
+2
+n-2r
+U_6
+1
+(1,1,1,1,1,1)
+\frac{6!}{2\cdot4!}=15
+(1,1,1,1,2)
+\frac{6!}{4\cdot2!\cdot 2!}=45
+(1,1,2,2)
+\frac{6!}{8\cdot3!\cdot0!}=15
+(2,2,2)
+\frac{n!}{1^{n-2r}\cdot2^r\cdot(n-2r)!\cdot r!}=\frac{n!}{2^rr!(n-2r)!}\;,
+R_1
+T_{n-1}
+R_2
+(n-1)T_{n-2}
+|R_1|
+|T_{n-1}|
+|R_2|
+(n-1)|T_{n-2}|
+|T_{n}|=(n-1)|T_{n-1}|+|T_{n-2}|
+|T_{n}|=|T_{n-1}|+(n-1)|T_{n-2}|
+G_C(x)=\sum_{n\ge 0}g_C(n)\frac{x^n}{n!}=\exp\left(\sum_{n\in C}\frac{x^n}n\right)\;.
+C=\{1,2\}
+G_C(x)=\exp\left(x+\frac{x^2}2\right)=\left(\sum_{k\ge 0}\frac{x^k}{k!}\right)\left(\sum_{i\ge 0}\frac{x^{2i}}{2^ii!}\right)\;.
+n
+\sum_{i=0}^{\lfloor n/2\rfloor}\frac1{(n-2i)!2^ii!}=\sum_{i=0}^{\lfloor n/2\rfloor}\left((n-2i)!\cdot\frac{(2i)!}{(2i-1)!!}\right)^{-1}=\sum_{i=0}^{\lfloor n/2\rfloor}\frac1{n!}\binom{n}{2i}(2i-1)!!\;,
+g_C(n)=\sum_{i=0}^{\lfloor n/2\rfloor}\binom{n}{2i}(2i-1)!!\;.
+f_n = n!\,g_n
+ f_n = f_{n+1} + (n-1) f_{n-2} 
+ f_n = \frac{d^n}{dx^n}\left.\exp\left(x+\frac{x^2}{2}\right)\right|_{x=0}. 
+ g(x) = \sum_{n=1}^{+\infty} g_n\, x^n,
+ n\,g_n = g_{n-1} + g_{n-2} 
+ g'(x) = g(x) + x\, g(x).

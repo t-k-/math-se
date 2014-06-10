@@ -1,0 +1,23 @@
+x
+P(A)
+P(C)
+P(C) = \sum_{i=0}^x i \bigcup A 
+P(C) = \sum_{i=0}^x (P(i) + P(A) - P(i)*P(A))
+P(C) = \sum_{i=0}^x (P(i) + P(A)) - \sum_{i=0}^x (P(i) * P(A))
+P(C) = P(A)x - P(A)^x
+\frac{P(C)}{P(A)} = x - P(A)^{x-1} 
+Log(\frac{P(C)}{P(A)} - x ) = Log(P(A)^{x-1})
+Log(\frac{P(C)}{P(A)} - x ) = (x-1)Log(P(A))
+x
+A
+P(A)
+C=0.95
+1
+n
+(1-P(A))^n
+1-(1-P(A))^n
+C=1-(1-P(A))^n\\(1-P(A))^n=1-C\\n=\frac {\log(1-C)}{\log(1-P(A))}
+P(i)
+i
+P(i)=P(i-1)+P(A)-P(i-1)P(A)
+i

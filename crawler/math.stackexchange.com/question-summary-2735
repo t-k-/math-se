@@ -1,0 +1,21 @@
+\textbf{A}=\begin{pmatrix}\textbf{E}&\textbf{F}\\ \textbf{G}&\textbf{H}\end{pmatrix}
+\textbf{E}
+\textbf{H}
+m\times m
+n\times n
+\textbf{F}
+\textbf{G}
+\textbf{A}
+(m+n)\times(m+n)
+\textbf{A}^{-1}=\begin{pmatrix}\textbf{E}^{-1}+\left(\textbf{E}^{-1}\textbf{F}\right)(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\right)&-\left(\textbf{E}^{-1}\textbf{F}\right)(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\\-(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\right)&(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\end{pmatrix}
+\det\;\textbf{A}=\det\left(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F}\right)\;\det\;\textbf{E}
+\textbf{E}
+\textbf{H}
+\textbf{b}
+\textbf{b}=\begin{pmatrix}\textbf{c}\\ \textbf{d}\end{pmatrix}
+\textbf{c}
+\textbf{d}
+\begin{pmatrix}\textbf{E}^{-1}+\left(\textbf{E}^{-1}\textbf{F}\right)(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\right)&-\left(\textbf{E}^{-1}\textbf{F}\right)(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\\-(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\right)&(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\end{pmatrix}\cdot\begin{pmatrix}\textbf{c}\\ \textbf{d}\end{pmatrix}
+\begin{pmatrix}\textbf{E}^{-1}\textbf{c}+\left(\textbf{E}^{-1}\textbf{F}\right)(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\textbf{c}-\textbf{d}\right)\\-(\textbf{H}-\textbf{G}\textbf{E}^{-1}\textbf{F})^{-1}\left(\textbf{G}\textbf{E}^{-1}\textbf{c}-\textbf{d}\right)\end{pmatrix}
+\textbf{E}
+\textbf{H}

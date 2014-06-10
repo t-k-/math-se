@@ -1,0 +1,11 @@
+(f_1,f_2)
+\mathbb{R}^2\setminus\left\{0\right\}
+\frac{\partial f_1}{\partial y}=\frac{\partial f_2}{\partial x}
+c\in\mathbb{R}
+ g(x,y):=\left(f_1(x,y)-c\frac{y}{x^2+y^2},f_2(x,y)+c\frac{x}{x^2+y^2}\right) 
+g
+ \gamma\colon t\mapsto (\cos t,\sin t), t\in [0,2\pi]. 
+\gamma
+0
+ \int_{\gamma}g(x,y)\, d(x,y)=\int_0^{2\pi}\langle g(\gamma(t)),\dot{\gamma}(t)\rangle\, dt\\=2\pi c\int_0^{2\pi}\cos t f_2(\cos t,\sin t)-\sin t f_1(\cos t,\sin t)\, dt=0\\ \Leftrightarrow c=-\frac{1}{2\pi}\int_0^{2\pi}\cos t f_2(\cos t,\sin t)-\sin t f_1(\cos t,\sin t)\, dt. 
+ c=-\frac{1}{2\pi}\int_0^{2\pi}\cos t f_2(\cos t,\sin t)-\sin t f_1(\cos t,\sin t)\, dt 

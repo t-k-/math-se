@@ -1,0 +1,54 @@
+f(x)=\frac{\alpha}{\theta}x^{\alpha-1}e^{-\frac{x^{\alpha}}{\theta}}\quad,  x>0
+T_i
+C_i
+i
+T_i
+C_i
+T_i\sim weibull(\alpha,K)
+C_i \sim weibull(\alpha,\lambda)
+Y_i=min(T_i,C_i)
+\delta_i
+\delta_i=(T_i\leq C_i)
+E(\delta Y)
+Y\sim Weibull(\alpha,{(\frac{1}{\lambda^\alpha}+\frac{1}{K^\alpha})^{-1/\alpha}})
+P(\delta=1)=\frac{1}{1+\frac{K^\alpha}{\lambda^\alpha}}
+E(\delta Y)
+Y=min(T,C)
+Y\sim Weibull(\alpha,{(\frac{1}{\lambda^\alpha}+\frac{1}{K^\alpha})^{-1/\alpha}})
+Y
+\delta
+E(Y\delta)=E(Y)E(\delta)
+U
+f
+\bar{F}
+V
+g
+\bar{G}
+U
+V
+X=\min(U,V)
+Y=\mathbf{1}_{\{U\leq V\}}
+T:\mathbb{R}\times\{0,1\}\to\mathbb{R}
+ {\rm E}[T(X,Y)]=\int_0^\infty T(x,0)\bar{F}(x)g(x)\,\mathrm dx+\int_0^\infty T(x,1)\bar{G}(x)f(x)\,\mathrm dx.\tag{1} 
+U\sim\mathrm{Weibull}(\alpha,K)
+V\sim\mathrm{Weibull}(\alpha,\lambda)
+T(x,y)=x\cdot y
+(1)
+ \begin{align} {\rm E}[\min(U,V)\mathbf{1}_{\{U\leq V\}}]&=\int_0^\infty x\cdot\bar{G}(x)f(x)\,\mathrm dx\\ &=\int_0^\infty x\exp\left(-\frac{x^\alpha}{\lambda}\right)\frac{\alpha}{K}x^{\alpha-1}\exp\left(-\frac{x^\alpha}{K}\right)\,\mathrm dx \end{align} 
+f_{(U,V)}
+**
+ \begin{align} {\rm E}[T(X,Y)]&={\rm E}[T(X,Y)\mathbf{1}_{\{U\leq V\}}]+{\rm E}[T(X,Y)\mathbf{1}_{\{U> V\}}]\\ &=\underbrace{{\rm E}[T(U,1)\mathbf{1}_{\{U\leq V\}}]}_{*}+\underbrace{{\rm E}[T(V,0)\mathbf{1}_{\{U>V\}}]}_{**}\\ \end{align} 
+ \begin{align} *&=\int_{\mathbb{R}^2}T(u,1)\mathbf{1}_{\{u\leq v\}}f_{(U,V)}(u,v)\,\mathrm dv\,\mathrm du\\ &=\int_{\mathbb{R}}\int_{\mathbb{R}}T(u,1)\mathbf{1}_{\{u\leq v\}}f(u)g(v)\,\mathrm dv\,\mathrm du\\ &=\int_0^\infty\left\{\int_0^\infty \mathbf{1}_{\{u\leq v\}}g(v) \,\mathrm dv\right\}T(u,1)f(u)\,\mathrm du\\ &=\int_0^\infty T(u,1)\bar{G}(u)f(u)\,\mathrm du, \end{align} 
+Y\delta=T\delta
+P(C\geqslant t)=\exp(-t^\alpha/\theta)
+t\geqslant0
+x=2t^\alpha/\theta
+y\geqslant0
+(T,C)
+(C,T)
+Y
+\delta
+ E(Y\delta)=E(T;T\leqslant C)=E(T\exp(-T^\alpha/\theta))=\int_0^\infty t\mathrm e^{-t^\alpha/\theta}(\alpha/\theta)t^{\alpha-1}\mathrm e^{-t^\alpha/\theta}\mathrm dt. 
+ E(Y\delta)=\int_0^\infty \mathrm e^{-x}(\theta x/2)^{1/\alpha}\mathrm dx/2=2^{-1-1/\alpha}\theta^{1/\alpha}\Gamma(1+1/\alpha).. 
+ [Y\geqslant y,\delta=1]=[C\geqslant T\geqslant y],\qquad[Y\geqslant y,\delta=0]=[T\geqslant C\geqslant y]. 
+ E(Y\delta)=\tfrac12E(Y)=E(Y)E(\delta). 

@@ -1,0 +1,30 @@
+N_1
+N_2
+N_1-N_2\le10
+m
+\lambda
+N_i(t)
+i
+1\le i\le m
+N_1(t)\ge N_2(t)\ge ...\ge N_{m-1}(t)\ge N_m(t)
+0\le N_1(t)-N_2(t)\le10
+N_1(t)=k
+N_j(t)\le k
+k\ge11
+2\le j\le m
+N_r (t)
+k-10\le N_r(t)\le k
+2\le r\le m
+ \Pr[\text{Numer 1 and number 2 employees get the bonus}] = \Pr[0\le N_1(t)-N_2(t)\le10] \\ =\sum\limits_{k=11}^\infty\Pr[N_1(t)=k] (\Pr[N_r(t)\le k]^{m-1}-\Pr[N_r(t) \le k-11]^{m-1})
+X
+B
+n
+Y_{i}
+Y_i
+\lambda
+Y_{(1)} = \text{min}(Y_1, Y_2, \cdots, Y_n)
+Y_{(2)} = \text{min}(Y_1, Y_2, \cdots Y_n) \setminus Y_{(1)}
+\cdots
+Y_{(n)} = \text{max}(Y_1, Y_2, \cdots, Y_n)
+X = \begin{cases}2B & \text{ for } Y_{(n)}-Y_{(n-1)} \leq 10 \\ B & \text{ otherwise} \end{cases}
+B

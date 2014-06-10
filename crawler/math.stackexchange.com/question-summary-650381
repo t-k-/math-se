@@ -1,0 +1,10 @@
+V(X) = E((X-E(X))^2 )
+Y = g(X)
+g
+E(Y) = E(g(X)) = \sum\limits_{k} g(k)p_X(k)
+p_X(k) = P(X = k) 
+V(X) = \sum\limits_{k} (k-E(X))^2 p_X(k)
+g(k)=(k-\mathbf{E}X)^2
+X^2
+(\text{the expected value of }X)^2
+ \begin{align} \mathrm{Var}(X) &=\mathrm{E}\left((X-\color{#C00000}{\mathrm{E}(X)})^2\right)\\ &=\sum_k\overbrace{\left(k-\color{#C00000}{\sum_jjp_X(j)}\right)^2}^{g(k)}p_X(k)\\ &=\sum_k\left(k^2-2k\sum_jjp_X(j)+\left(\sum_jjp_X(j)\right)^2\right)p_X(k)\\ &=\sum_kk^2p_X(k)-2\left(\sum_kkp_X(k)\right)\left(\sum_jjp_X(j)\right)+\left(\sum_jjp_X(j)\right)^2\\ &=\sum_kk^2p_X(k)-\left(\sum_kkp_X(k)\right)^2 \end{align} 

@@ -1,0 +1,21 @@
+f(z) = \frac{z\sin(z)}{1-\cos(z)}
+2\pi
+-2\pi
+2\pi
+\lim_{z\rightarrow 2\pi} \frac{z\sin(z)}{D(1-\cos(z))} = \lim_{z\rightarrow 2\pi} \frac{z\sin(z)}{\sin(z)} = \lim_{z\rightarrow 2\pi} z = 2\pi
+\lim_{z\rightarrow 2\pi} \frac{z\sin(z)}{1-\cos(z)} = \lim_{z\rightarrow 2\pi} \frac{z\sin(z-2pi)(z-2\pi)^2}{(1-\cos(z))(z-2\pi)} = 4\pi
+\operatorname{Res} \left(\frac{f(z)}{g(z)}; z_0\right) = \frac{f(z_0)}{g'(z_0)}
+f(z) = (z-z_0)\cdot f_1(z)
+f_1(z_0) = f'(z_0) \neq 0
+g(z) = (z-z_0)^2\cdot g_2(z)
+g_2(z_0) = \frac12 g''(z_0) \neq 0
+\frac{f}{g}
+z_0
+\operatorname{Res} \left(\frac{f(z)}{g(z)}; z_0\right) = \operatorname{Res} \left(\frac{(z-z_0)f_1(z)}{(z-z_0)^2g_2(z)}; z_0\right) = \frac{f_1(z_0)}{g_2(z_0)} = 2\frac{f'(z_0)}{g''(z_0)}.
+n
+n-1
+z_0
+\begin{align} f(z) &= \frac{f^{(n-1)}(z_0)}{(n-1)!}(z-z_0)^{n-1} + \dotsc,\\ g(z) &= \frac{g^{(n)}(z_0)}{n!}(z-z_0)^n + \dotsc, \end{align}
+f/g
+z_0
+\operatorname{Res}\left(\frac{f(z)}{g(z)}; z_0\right) = \frac{f^{(n-1)}(z_0)/(n-1)!}{g^{(n)}(z_0)/n!} = n\cdot \frac{f^{(n-1)}(z_0)}{g^{(n)}(z_0)}.

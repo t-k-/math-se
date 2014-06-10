@@ -1,0 +1,13 @@
+\sum_{i=1}^n t^{i-1}
+1-t
+\sum_{i=1}^n t^{i-1}=1+t+t^2+\cdots+t^{n-1}
+n\in \mathbb N, n\ge1
+P(n):=\sum_{i=1}^n t^{i-1}=\frac{1-t^n}{1-t}
+n=1
+P(n)
+n+1
+n\in\mathbb N
+P(1): 1=\frac{1-t}{1-t}
+P(n+1): \sum_{i=1}^{n+1} t^{i-1}=\sum_{i=1}^n t^{i-1}+t^{n+1}=\frac{1-t^n}{1-t}+t^{n+1}=\frac{1-t^{n+1}}{1-t}
+ S_n=\sum_{k=1}^{n}t^{i-1}\\ S_{n+1}=S_n + t^{n}=\sum_{k=1}^{n}t^{k} + 1=t\sum_{k=1}^{n}t^{k-1}+1=t S_n + 1 
+ S_n=\frac{1-t^{n}}{1-t} 

@@ -1,0 +1,31 @@
+ \begin{array}{ll} \text{min} & \mathbf{x}^T\mathbf{A}\mathbf{x} \\ \text{s.t.} & ||\mathbf{x}||_2=1 \end{array} 
+\mathbf{x}^*
+\mathbf{A}
+{\mathbf{x}^*}^T\mathbf{A}\mathbf{x}^*
+ \begin{array}{lcll} f(\mathbf{x}) & = & \mathbf{x}^T\mathbf{A}\mathbf{x} & \qquad \text{(objective function)} \\ h(\mathbf{x}) & = & \mathbf{x}^T\mathbf{x}-1 = 0 & \qquad \text{(equality constrain)} \end{array} 
+ \mathcal{L}(\mathbf{x},v) = f(\mathbf{x}) + vh(\mathbf{x}) = \mathbf{x}^T\mathbf{A}\mathbf{x} + v\mathbf{x}^T\mathbf{x} - v, 
+v
+\mathcal{L}(\mathbf{x},v)
+ \mathbf{0} = \dfrac{\partial}{\partial \mathbf{x}} \mathcal{L}(\mathbf{x},v) = \mathbf{x}^T(\mathbf{A}+\mathbf{A}^T) + 2v\mathbf{x}^T \\ (\mathbf{A} + \mathbf{A}^T)\mathbf{x}^* + 2v^*\mathbf{x}^* = \left[(\mathbf{A} + \mathbf{A}^T) + 2v^*\mathbf{I}\right]\mathbf{x}^* = \mathbf{0} \\ \implies v^*\mathbf{I} = -\dfrac{1}{2}(\mathbf{A} + \mathbf{A}^T) \qquad \text{(doesn't seem to be correct)} 
+\mathbf{x}^*
+\frac{1}{2}(A+A^T)
+\cdots+2v^*I
+v^*
+v^*
+\frac{1}{2}(A+A^T)
+A
+A
+det((\mathbf{A} + \mathbf{A}^T) - 2v\mathbf{I})=0,
+v
+A
+\mathbf{x}^*\mathbf{A}^T\mathbf{x}^* 
+A
+\mathbf{x}^*
+\mathbf x^*
+v
+\mathbf x^* \mathbf x^{*T}=1
+\mathbf{x}^{*T} A\mathbf{x}^*
+A\mathbf{x}^*=v\mathbf x^*
+\mathbf{x}^{*T} A\mathbf{x}^*=v\mathbf x^* \mathbf x^{*T}
+\mathbf{x}^{*T} A\mathbf{x}^*=v
+\mathbf{x}^T A\mathbf{x}

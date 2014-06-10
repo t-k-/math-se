@@ -1,0 +1,33 @@
+    \frac{\partial^2 u}{\partial r^2}       + \frac{1}{r}\frac{\partial u}{\partial r}       + \frac{1}{r^2}\frac{\partial^2 u}{\partial {\theta}^2} = 0,\:\:\:\: 0\leq r \leq 3 \:\:\:\: -\pi \leq \theta \leq \pi  
+u(3,\theta) = 2 + \theta 
+u(r,\pi) = u(r,-\pi)
+u_{\theta}(r,\pi) = u_{\theta}(r,-\pi)
+u(r,\theta) = \psi(\theta)R(r) 
+\psi(\theta)
+R(r)
+R(r)=c r^n
+\psi(\theta) = Asin(\lambda \theta) + Bcos(\lambda \theta)
+\lambda
+n
+u(r,\theta) = 2 + \sum\limits_{n=1}^\infty \frac{2}{n}(\frac{r}{3})^n (-1)^{n+1} sin(n\theta) + \frac{2}{3^n\pi n^2}((-1)^n - 1)cos(n\theta)
+u(r,\theta) = 2 + \sum\limits_{n=1}^\infty \frac{2}{n}(\frac{r}{3})^n (-1)^{n+1} sin(n\theta) 
+0
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+r \to 0^{+}
+r \to 3^{-}
+4\pi = 2\pi B\quad\imp\quad B = 2
+\pars{2}
+\pars{4}
+\pars{5}
+\ds{\imp\quad A_{m}      = 2\pars{1 - A_{0}}\,{\pars{-1}^{m + 1} \over m}      \quad\mbox{and}\quad B_{m} = 0}
+\pars{1}
+A_{0}
+ {\rm u}\pars{r,\theta} = A_{0}\theta + B + \sum_{n = 1}^{\infty} \bracks{A_{n}\sin\pars{n\theta} + B_{n}\cos\pars{n\theta}}\pars{r \over 3}^{n}\tag{1} 
+ 2 + \theta = A_{0}\theta + B + \sum_{n = 1}^{\infty} \bracks{A_{n}\sin\pars{n\theta} + B_{n}\cos\pars{n\theta}}\tag{2} 
+ \int_{-\pi}^{\pi}\pars{2 + \theta}\,\dd\theta = \int_{-\pi}^{\pi}\braces{A_{0}\theta + B + \sum_{n = 1}^{\infty} \bracks{A_{n}\sin\pars{n\theta} + B_{n}\cos\pars{n\theta}}}\,\dd\theta 
+ \pars{1 - A_{0}}\theta =\sum_{n = 1}^{\infty} \bracks{A_{n}\sin\pars{n\theta} +B_{n}\cos\pars{n\theta}}\tag{3} 
+ {\rm u}\pars{r,\theta} = A_{0}\theta + 2 + 2\pars{1 - A_{0}}\sum_{n = 1}^{\infty}{\pars{-1}^{n + 1} \over n}\, \pars{r \over 3}^{n}\sin\pars{n\theta} 
+ A_{0}\pars{-\pi} + 2 = A_{0}\pi + 2\quad\imp\quad A_{0} = 0  
+ \color{#0000ff}{\large{\rm u}\pars{r,\theta} = 2 - 2\sum_{n = 1}^{\infty}{\pars{-1}^{n} \over n}\, \pars{r \over 3}^{n}\sin\pars{n\theta}} 
+\pars{~\mbox{when}\ r \to 3^{-}~}
+\ds{\lim_{r \to 3^{-}}{\rm u}\pars{r,\theta} = 2 + \theta}

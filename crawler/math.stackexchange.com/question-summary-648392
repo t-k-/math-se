@@ -1,0 +1,27 @@
+f(x)
+[0,1]
+\lim_{n\to \infty}\int^1_0 f(x^n)dx\,
+\epsilon>0
+\quad \int^1_0 f(x^n)dx\,=\int^{1-\epsilon}_0 f(x^n)dx\, +\int^1_{1-\epsilon}f(x^n)dx\,
+\exists c_1, c_2 
+\int^{1-\epsilon}_0 f(x^n)dx\,=f(c_1^n)(1-\epsilon)
+\int^1_{1-\epsilon}f(x^n)dx\,=f(c_2^n)\epsilon
+\lim_{n\to \infty}\int^1_0 f(x^n)dx\,=\lim_{n\to \infty} (f(c_1^n)(1-\epsilon)+f(c_2^n)\epsilon)=f(0)
+ f_n(x)=f(x^n) 
+[0,1]
+f(0)
+x\in [0,1]
+f
+\lim_{n\longrightarrow \infty}x^n=0 \quad \text{pointwise}
+\lim_{n\longrightarrow \infty}f(x^n)=f(\lim_{n \longrightarrow \infty} x^n)=f(0)
+x\in [0,1]
+f
+[0,1]
+M=\max_{x\in [0,1]}|f(x)| 
+x\in [0,1]
+n
+|f_n(x)|=|f(x^n)|\leq M
+M\in L^1([0,1])
+\int_{0}^1Mdx=M < \infty 
+f
+f

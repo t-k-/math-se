@@ -1,0 +1,21 @@
+\sum\limits_{n=1}^\infty\frac{\mathrm{pop}(n)}{n(n+1)}
+\mathrm{pop}(n)
+n
+k \in \mathbb{N}
+\theta_k(n) = \begin{cases}1&\text{ if }k^{th}\text{ bit of }n\text{ is set}\\0,&\text{ otherwise.}\end{cases}
+\sum_{n=1}^{\infty} \frac{\operatorname{pop}(n)}{n(n+1)}  = \sum_{n=1}^{\infty}\sum_{k=0}^{\infty} \frac{\theta_k(n)}{n(n+1)} = \sum_{k=0}^{\infty}\sum_{n=1}^{\infty} \frac{\theta_k(n)}{n(n+1)} \tag{*}
+\theta_k(n) = 1\;
+\;(2l + 1)2^k \le n < (2l+2)2^k\;
+l \in \mathbb{N}
+ (*) = \sum_{k=0}^{\infty}\sum_{l=0}^{\infty} \sum_{n=(2l+1)2^k}^{(2l+2)2^k-1} \frac{1}{n(n+1)} = \sum_{k=0}^{\infty}\sum_{l=0}^{\infty} \left(\frac{1}{(2l+1)2^k} - \frac{1}{(2l+2)2^k}\right)\\ = \left(\sum_{k=0}^{\infty}2^{-k}\right)\sum_{l=0}^{\infty} \left(\frac{1}{2l+1} - \frac{1}{2l+2}\right) = \frac{1}{1-2^{-1}}\log 2 = 2\log 2 
+\text{pop}(n)
+1\le\text{pop}(n)\le\lfloor \log_2(n)\rfloor+1\le \frac{\ln(n)}{\ln(2)}+1,
+\ln(x)/x
+x>e
+\sum_{n=1}^{\infty}\frac{\text{pop}(n)}{n(n+1)}\le\frac{1}{\ln(2)}\sum_{n=1}^{\infty}\frac{\ln(n)}{n(n+1)}+\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=\frac{1}{\ln(2)}\sum_{n=1}^{\infty}\frac{\ln(n)}{n(n+1)}+1,
+\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=1,
+\sum_{n=1}^{\infty}\frac{\ln(n)}{n(n+1)}=\frac{\ln(2)}{6}+\sum_{n=3}^{\infty}\frac{\ln(n)}{n(n+1)},
+\int_{3}^{\infty}\frac{\ln(x)}{x(x+1)}{dx}\le\sum_{n=3}^{\infty}\frac{\ln(n)}{n(n+1)}\le\frac{\ln(3)}{3(3+1)}+\int_{3}^{\infty}\frac{\ln(x)}{x(x+1)}{dx},
+\int _{3}^{\infty }\!{\frac {\ln  \left( x \right) }{x \left( x+1  \right) }}{dx}=-\frac{1}{2}\, \ln^2  \left( 3 \right)+{ \text{dilog}} \left( 4 \right) +2\,\ln  \left( 3 \right) \ln  \left( 2  \right) +\frac{{\pi }^{2}}{6}\approx0.625084187,
+1\le\sum_{n=1}^{\infty}\frac{\text{pop}(n)}{n(n+1)}\le{\frac {14\,\ln  \left( 2 \right) +\ln  \left( 3 \right) -6\,  \left( \ln  \left( 3 \right)  \right) ^{2}+12\,{\text{dilog}} \left( 4  \right) +24\,\ln  \left( 3 \right) \ln  \left( 2 \right) +2\,{\pi }^{ 2}}{12\ln  \left( 2 \right) }} , 
+1\le\sum_{n=1}^{\infty}\frac{\text{pop}(n)}{n(n+1)}\le2.2006.

@@ -1,0 +1,18 @@
+X
+Y
+(0\preceq X\preceq Y)
+ E[\exp(-X)]\geq E[\exp(-Y)] 
+ \sum_{i=0}^\infty \frac{E[(-X)^i]}{i!} \geq \sum_{i=0}^\infty \frac{E[(-Y)^i]}{i!} 
+k
+0\preceq X\preceq Y
+k
+\sum_{i=0}^\infty \frac{E[(-X)^i]}{(k+i)!} \geq \sum_{i=0}^\infty \frac{E[(-Y)^i]}{(k+i)!}
+k\geqslant0
+u_k(x)=(k-1)!\cdot\displaystyle\sum\limits_{i\geqslant0}\frac{(-x)^i}{(k+i)!}
+x\mapsto u_k(x)
+\displaystyle\frac{(k-1)!}{(k+i)!}=\int_0^1(1-t)^{k-1}\frac{t^i}{i!}\,\mathrm dt
+i\geqslant0
+x\mapsto e^{-tx}
+t
+(0,1)
+ u_k(x)=\sum\limits_{i\geqslant0}(-x)^i\int_0^1(1-t)^{k-1}\frac{t^i}{i!}\,\mathrm dt=\int_0^1(1-t)^{k-1}e^{-tx}dt. 

@@ -1,0 +1,57 @@
+T(n) = T(n-1) + n
+T(n) = O(n^2)
+\begin{eqnarray*} T(n) & \le & c(n^2 - 1) + n^2\\ & \le & cn^2 - c + n^2\\ & \le & cn^2 + n^2 - c\\ & \le & n^2(c+1) - c\\ & \le & O(n^2) \end{eqnarray*}
+k
+O(n^k)
+C=\max\left\{\frac12,|T(0)|\right\}
+T(n)=T(0)+\sum_{k=1}^nk=T(0)+\frac{n(n+1)}2=\frac12n^2+\frac12n+T(0)\;,
+|T(n)|=\left|\frac12n^2+\frac12n+T(0)\right|\le C(n^2+n+1)\le 3Cn^2
+n\ge 1
+T(k)\le ck^2
+k<n
+\begin{align*} T(n)&=T(n-1)+n\\ &\le c(n-1)^2+n\\ &=cn^2-2cn+1+n\\ &=cn^2-(2cn-n-1)\\ &=cn^2-\big((2c-1)n-1\big)\;. \end{align*}
+T(n)\le cn^2
+(2c-1)n-1\ge 0
+(1)
+n
+1
+n=1
+c
+1
+(2c-1)n-1\ge 0
+n\ge 0
+T(1)\le c
+c=\max\{1,|T(1)|\}
+c\ge\frac12\left(\frac1n+1\right)\;.\tag{1}
+T(n) = T(n-1) + n
+O(n^2)
+c
+N
+n>N,
+T(n) < c n^2
+T(n-1) < c n^2
+T(n) = T(n-1) + n < c n^2 + 2 c n + c
+c \ge 1/2
+n > 0
+c > T(0)
+T(n)
+O(n^2)
+c=1/2+|T(0)|,N=0
+n=0
+n\ge 0
+T(n)=T(0)+\frac{n^2+n}2.
+n=0
+n
+T(n+1)=T(n)+n+1=T(0)+\frac{n^2+n}2+\frac{2n+2}2=T(0)+\frac{n^2+2n+1}2+\frac{n+1}2=T(0)+\frac{(n+1)^2}2+\frac{n+1}2=T(0)+\frac{(n+1)^2+(n+1)}2,
+T(1), T(2), T(3), \dots
+c
+T(n)\lt cn^2
+n
+d
+T(1)\lt d(1^2)
+c=\max(d,1)
+T(n-1)\lt c(n-1)^2
+c\ge 1
+-2cn+n+1\le -2n+n+1=1-n\le 0
+T(n)=T(n-1)+n\lt c(n-1)^2+n =cn^2-2cn+n+1.
+T(n)\lt cn^2.

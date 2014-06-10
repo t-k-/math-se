@@ -1,0 +1,38 @@
+|f|< 1
+(X,\mathcal M, \mu)
+\lim_n \int 1 + f + f^2 + f^3 + \cdots  + f^n \,d\mu
+f^n \in L^1
+n\geq 1
+\sum_0^n f^i(x) = S_n(x)
+x
+S_n(x) \rightarrow \frac{1}{1-f}
+|f(x)|<1
+\epsilon>0
+|f|\leq 1-\epsilon
+|\frac{1}{1-f}| \leq \epsilon^{-1}
+\mu(X)<\infty
+|S_n|
+L^1
+\lim_n \int S_n = \int \lim S_n = \int \frac{1}{1-f} < \infty
+\epsilon
+\epsilon>0
+\{|f(x)|>1- \epsilon\}
+|f|>1-\epsilon
+\int |1 + f + \cdots + f^n| \geq \int_{|f|>1-\epsilon} |\frac{1-f^{n+1}}{1-f}| \geq \int_{|f|>1-\epsilon} \frac{1-|f|^{n+1}}{\epsilon} \rightarrow \mu(|f|>1-\epsilon)\epsilon^{-1}
+f
+g(x) = \max \{ 0, f(x)\};\quad h(x) = \max \{0, -f(x)\}.
+f(x) = g(x)-h(x)
+X
+g
+h
+\neq 0
+f(x)^n = g(x)^n + (-1)^n h(x)^n,
+g^n
+h^n
+0
+G_n = \int_X g^n\,d\mu \searrow 0;\quad H_n = \int_X h^n\,d\mu \searrow 0.
+\sum_{n=0}^\infty (-1)^n H_n
+\sum_{n=0}^\infty G_n
++\infty
+\int_X S_n\,d\mu = \sum_{k=0}^n G_k + \sum_{k=0}^n (-1)^k H_k
++\infty

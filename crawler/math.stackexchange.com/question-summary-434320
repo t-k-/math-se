@@ -1,0 +1,20 @@
+T
+\mathbf{Z}=\begin{bmatrix} \mathbf{Y} & -\mathbf{X}\end{bmatrix}
+T\times (m+k)
+\mathbf{A}=\begin{bmatrix}\mathbf{A}_0 & \mathbf{A}_+\end{bmatrix}^\prime
+(m+k)\times m
+ L(\mathbf{Y}|\mathbf{A})\propto |\mathbf{A_0}|^T\exp\left[-0.5tr(\mathbf{ZA})^\prime(\mathbf{ZA})\right]\propto |\mathbf{A_0}|^T\exp\left[-0.5 vec(\mathbf{A})^\prime(\mathbf{I}\otimes \mathbf{Z}^\prime\mathbf{Z})vec(\mathbf{A})\right] 
+tr(X^\prime Y)=vec(X)^\prime vec(Y)
+X
+Y
+vec(X)^\prime vec(Y)
+X
+k\times p
+Y
+m\times n
+kp=mn
+\def\tr{\mathop{\rm tr}}\def\vec{\mathop{\rm vec}}
+ZA
+ZA
+\vec(ZA) = (\mathrm{Id} \otimes Z)\vec(A)
+\vec(ZA)^t = \vec(A)^t(\mathrm{Id}\otimes Z^t)

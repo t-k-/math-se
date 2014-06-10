@@ -1,0 +1,19 @@
+ -\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2} + rS\frac{\partial V}{\partial S} - rV = 0
+S^*
+\frac{\partial V(t,S)}{\partial S}\bigg|_{S=S^*}=-1
+S\le S^*
+\frac{\partial V(t,S)}{\partial t}=0
+\sigma=0.2
+r=0.08
+E=100
+V(t,S)
+t=0.25
+S=100
+t,S\geq0
+V(t,S)=F(t)G(S)
+-F'(t)G(S)+\dfrac{1}{2}\sigma^2S^2F(t)G''(S)+rSF(t)G'(S)-rF(t)G(S)=0
+F'(t)G(S)=\dfrac{\sigma^2F(t)}{2}\left(S^2G''(S)+\dfrac{2r}{\sigma^2}SG'(S)-\dfrac{2r}{\sigma^2}G(S)\right)
+\dfrac{2F'(t)}{\sigma^2F(t)}=\dfrac{S^2G''(S)+\dfrac{2r}{\sigma^2}SG'(S)-\dfrac{2r}{\sigma^2}G(S)}{G(S)}=-\xi^2-\dfrac{1}{4}\left(\dfrac{2r}{\sigma^2}-1\right)^2-\dfrac{2r}{\sigma^2}
+\begin{cases}\dfrac{F'(t)}{F(t)}=-\dfrac{\sigma^2\xi^2}{2}-\dfrac{\sigma^2}{8}\left(\dfrac{2r}{\sigma^2}-1\right)^2-r\\S^2G''(S)+\dfrac{2r}{\sigma^2}SG'(S)+\biggl(\xi^2+\dfrac{1}{4}\left(\dfrac{2r}{\sigma^2}-1\right)^2\biggr)G(S)=0\end{cases}
+\begin{cases}F(t)=c_3(\xi)e^{-t\Bigl(\frac{\sigma^2\xi^2}{2}+\frac{\sigma^2}{8}\bigl(\frac{2r}{\sigma^2}-1\bigr)^2+r\Bigr)}\\G(S)=\begin{cases}c_1(\xi)S^{\frac{1}{2}-\frac{r}{\sigma^2}}\sin(\xi\ln S)+c_2(\xi)S^{\frac{1}{2}-\frac{r}{\sigma^2}}\cos(\xi\ln S)&\text{when}~\xi\neq0\\c_1S^{\frac{1}{2}-\frac{r}{\sigma^2}}\ln S+c_2S^{\frac{1}{2}-\frac{r}{\sigma^2}}\text{when}~\xi=0\end{cases}\end{cases}
+\therefore V(t,S)=C_1e^{-\Bigl(\frac{\sigma^2}{8}\bigl(\frac{2r}{\sigma^2}-1\bigr)^2+r\Bigr)t}S^{\frac{1}{2}-\frac{r}{\sigma^2}}\ln S+C_2e^{-\Bigl(\frac{\sigma^2}{8}\bigl(\frac{2r}{\sigma^2}-1\bigr)^2+r\Bigr)t}S^{\frac{1}{2}-\frac{r}{\sigma^2}}+\int_0^\infty C_3(\xi)e^{-t\Bigl(\frac{\sigma^2\xi^2}{2}+\frac{\sigma^2}{8}\bigl(\frac{2r}{\sigma^2}-1\bigr)^2+r\Bigr)}S^{\frac{1}{2}-\frac{r}{\sigma^2}}\sin(\xi\ln S)~d\xi+\int_0^\infty C_4(\xi)e^{-t\Bigl(\frac{\sigma^2\xi^2}{2}+\frac{\sigma^2}{8}\bigl(\frac{2r}{\sigma^2}-1\bigr)^2+r\Bigr)}S^{\frac{1}{2}-\frac{r}{\sigma^2}}\cos(\xi\ln S)~d\xi

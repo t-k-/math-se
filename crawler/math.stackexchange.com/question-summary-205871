@@ -1,0 +1,20 @@
+C=\mathsf{Mon}
+\mathbb{N} \otimes M = M / \{ (mn)^p = m^p n^p \}_{m,n \in M, p \in \mathbb{N}}
+\beta : M \times (N \otimes K) \to (M \otimes N) \otimes K
+(m, n \otimes k) \mapsto (m \otimes n) \otimes k
+\beta(mm',t) = \beta(m,t) \beta(m',t)
+t \in N \otimes K
+t=(n \otimes k) (n' \otimes k')
+((m \otimes n) \otimes k) ((m' \otimes n) \otimes k) ((m \otimes n') \otimes k') ((m' \otimes n') \otimes k')
+=((m \otimes n) \otimes k)  ((m \otimes n') \otimes k') ((m' \otimes n) \otimes k) ((m' \otimes n') \otimes k')
+f : A \times B \times C \to D
+g : A \times (B \otimes C) \to D
+g(a, b \otimes c) = f(a, b, c)
+f
+A
+h : (A \otimes B) \times C \to D
+h(a \otimes b, c) = f(a, b, c)
+A \times (B \otimes C) \to D
+(A \otimes B) \times C \to D
+\textrm{Multi}(A \otimes B, C; D) \cong \textrm{Multi}(A, B, C; D) \cong \textrm{Multi}(A, B \otimes C; D)
+(A \otimes B) \otimes C \cong A \otimes (B \otimes C)

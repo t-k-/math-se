@@ -1,0 +1,21 @@
+g(x, y) = 3xe^{y/x}
+(3, 0)
+\begin{eqnarray} \log g &=& \log(3xy^{\frac{y}{x}}) \\ &=& \log(3x) + \frac{y}{x}\log(y). \end{eqnarray} 
+x
+\frac{\partial\log g}{\partial x} = \frac{1}{g}\frac{\partial g}{\partial x} = \frac{1}{x} - \frac{y}{x^2}\log(y).
+g
+\frac{\partial g}{\partial x} = 3xy^{\frac{y}{x}}\left(\frac{1}{x}-\frac{y}{x^2}\log(y)\right). 
+y
+\frac{\partial g}{\partial x} = \frac{\partial}{\partial x}\left(3x\exp\left(\frac{y}{x}\right)\right) = 3\exp\left(\frac{y}{x}\right) + 3x\exp\left(\frac{y}{x}\right)\left(-\frac{y}{x^2}\right).
+x
+\frac{\partial g}{\partial y}
+x
+y
+g(x,y)
+\left(\frac{\partial g}{\partial x},\frac{\partial g}{\partial y}\right)
+(x,y)=(3,0)
+\nabla g(3,0)=(3,3)
+ \begin{align} \frac{\partial}{\partial x}3xe^{y/x} &=3e^{y/x}+3x\left(-\frac{y}{x^2}\right)e^{y/x}\\ &=3\frac{x-y}{x}e^{y/x} \end{align} 
+ \begin{align} \frac{\partial}{\partial y}3xe^{y/x} &=3x\left(\frac1x\right)e^{y/x}\\ &=3e^{y/x} \end{align} 
+ \nabla3xe^{y/x}=\frac3xe^{y/x}(x-y,x) 
+\frac{\partial g}{\partial x} = 3e^{y/x}

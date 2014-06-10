@@ -1,0 +1,18 @@
+ f(x,y)=e^{b(x^2+y^2)} 
+f(x,y)<a
+x
+y
+a
+b
+e^{b(x^2+y^2)} < a
+b(x^2+y^2) < \ln a
+x^2 + y^2 < \frac{\ln a}{b}.
+\sqrt{\frac{\ln a}{b}}
+a>0
+\sqrt{\frac{\ln a}b}
+a\ge 0
+S = \emptyset
+f^{-1}((-\infty,a)) = \{(x,y) \in\mathbb R^2 : e^{b(x^2+y^2)}<a\} =: S
+S = \{(x,y) \in \mathbb R^2: x^2 + y^2 < \frac{\ln a}b\}
+S = B_{\sqrt{\frac{\ln a}b}}(0)
+\begin{align*} \int_S f(x,y) d(x,y) & = \int_0^{2\pi} \int_0^{\sqrt{\frac{\ln a}b}} r e^{br^2} dr d\phi \\ & = 2\pi \int_0^{\sqrt{\frac{\ln a}b}} re^{br^2} dr \\ & = 2\pi \left[ \frac1{2b} e^{br^2} \right]_{r=0}^{\sqrt{\frac{\ln a}b}} = \frac{\pi}b (a-1) \end{align*}

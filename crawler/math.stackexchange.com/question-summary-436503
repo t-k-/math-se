@@ -1,0 +1,48 @@
+n
+\pmod{17}
+3 \cdot 5^{k}
+2^k
+17
+m,n,k \in \mathbb{Z}_{\ge 0}
+3 \cdot 5^{2n+1}+2^{3n+1}=0 \pmod{17}
+3 \cdot 5^1+2 \equiv 0\pmod{17},\,2^1+15\equiv 0 \pmod{17}
+3 \cdot 5^2+10\equiv 0\pmod{17},\,2^2+13\equiv 0 \pmod{17}
+3 \cdot 5^3+16\equiv 0\pmod{17},\,2^3+9\equiv  0 \pmod{17}
+3 \cdot 5^4+12\equiv 0\pmod{17},\,2^4+1\equiv  0 \pmod{17}
+3 \cdot 5^5+9 \equiv 0\pmod{17},\,2^5+2\equiv  0 \pmod{17}
+3 \cdot 5^6+11\equiv 0\pmod{17},\,2^6+4\equiv  0 \pmod{17}
+3 \cdot 5^7+4 \equiv 0\pmod{17},\,2^7+8\equiv  0 \pmod{17}
+3 \cdot 5^8+3 \equiv 0\pmod{17},\,2^8+16\equiv 0 \pmod{17}
+3 \cdot 5^9+15\equiv 0\pmod{17}
+3 \cdot 5^{10}+7\equiv  0\pmod{17}
+3 \cdot 5^{11}+1\equiv  0\pmod{17}
+3 \cdot 5^{12}+5\equiv  0\pmod{17}
+3 \cdot 5^{13}+8\equiv  0\pmod{17}
+3 \cdot 5^{14}+6\equiv  0\pmod{17}
+3 \cdot 5^{15}+13\equiv 0\pmod{17}
+3 \cdot 5^{16}+14\equiv 0\pmod{17}
+3 \cdot 5^{16m+6k+1}+2^{8n+k+1}=0\pmod{17}
+m
+n
+k
+k,6k
+3,5,2
+n
+9\equiv 2^{-1}\bmod 17
+14\equiv 11^{-1}\bmod 17
+\begin{align*} 3\cdot 5^{2n+1}+2^{3n+1}&\equiv 0\bmod 17\\[0.1in] 15\cdot 5^{2n}+2^{3n+1}&\equiv 0\bmod 17\\[0.1in] 15\cdot 5^{2n}&\equiv -2\cdot 2^{3n}\bmod 17\\[0.1in] 15\cdot 5^{2n}\cdot 9^{2n}&\equiv -2\cdot2^{3n}\cdot 9^{2n}\bmod 17 & \text{(we do this because $9\equiv 2^{-1}\bmod 17$)}\\[0.1in] 15\cdot (45)^{2n}&\equiv -2\cdot2^n\bmod 17\\[0.1in] 15\cdot 11^{2n}&\equiv -2\cdot2^n\bmod 17\\[0.1in] 15\cdot 11^{2n}\cdot 14^n&\equiv -2\cdot2^n\cdot 14^n\bmod 17& \text{(we do this because $14\equiv 11^{-1}\bmod 17$)}\\[0.1in] 15\cdot 11^n&\equiv -2\cdot11^n\bmod 17\\[0.1in] 17\cdot 11^n&\equiv 0\bmod 17\\[0.1in] 0\cdot 11^n&\equiv 0\bmod 17 \end{align*}
+3\cdot5^{2n+1}+2^{3n+1}=15\cdot25^n+2\cdot 8^n
+\text{ As }25\equiv 8\pmod {17}\implies 25^n\equiv 8^n\pmod{17},
+15\cdot25^n+2\cdot 8^n\equiv 15\cdot 8^n+2\cdot 8^n=8^n(15+2)\equiv0\pmod{17}
+1:
+m
+a-b
+c+d,m
+c(a-b)+b(c+d)=bd-ca
+c=15,d=2,a=25^n,b=8^n\implies 15\cdot25^n+2\cdot 8^n=15(25^n-8^n)+(15+2)8^n
+c=2,d=15,a=8^n,b=25^n\implies 15\cdot25^n+2\cdot 8^n=2(8^n-25^n)+(2+15)25^n
+2:
+a\cdot c^n+(m\cdot d -a)(m\cdot e+c)^n\equiv a\cdot c^n-a\cdot (m\cdot e+c)^n\equiv a\cdot c^n-a\cdot c^n\equiv0\pmod m
+m,a,b,c,d,e,n 
+m=17, a=15, m\cdot d -a=2\implies d=1;
+c=25, m\cdot e+c=8\implies e=-1

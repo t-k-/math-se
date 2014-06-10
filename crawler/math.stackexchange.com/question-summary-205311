@@ -1,0 +1,13 @@
+ \frac{d  (a^TX^TXb)}{dX} = X(ab^T + ba^T) 
+\begin{align} f(x)&=Xa\\ g(x)&=Xb\\  \frac{d (a^TX^TXb)}{dX} &= \frac{df(x)}{dx}\cdot Xb+\frac{dg(x)}{dx}\cdot Xa \\ &=a^TXb+b^TXa\end{align}
+\mathrm{d}(f(X)g(X))=\mathrm{d}f(X)g(X)+f(X)\mathrm{d}g(X)
+x
+X
+a^TX^TXb
+X
+a^TX^TXb
+X
+a^TX^TXb
+X
+\mathrm{d}(a^TX^TXb) =a^T\mathrm{d}X^TXb+a^TX^T\mathrm{d}Xb =b^TX^T\mathrm{d}Xa+a^TX^T\mathrm{d}Xb\\ =\mathrm{tr}(ab^TX^T\mathrm{d}X+ba^TX^T\mathrm{d}X) =\mathrm{tr}[(ab^T+ba^T)X^T\mathrm{d}X]
+\frac{\mathrm{d}(a^TX^TXb)}{\mathrm{d}X}=X(ba^T+ab^T)

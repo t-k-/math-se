@@ -1,0 +1,32 @@
+\displaystyle\lim_{x\to 0+} \left(\frac{\sin x}x\right)^{1/{x^2}}
+\exp\left(\frac{ \ln\frac{\sin x}{x}}{x^2}\right)
+\implies \lim_{x\to0}\left(\frac{\sin x}x\right)^{\frac1{x^2}}=\lim_{x\to0} \left(1-\frac{x^2}{3!}+O(x^4)\right)^{\frac1{x^2}}
+=\left(\lim_{x\to0}\left(1-\frac{x^2}{3!}+O(x^4)\right)^{\frac1{-\frac{x^2}{3!}+O(x^4)}}\right)^{\lim_{x\to0}\frac{-\frac{x^2}{3!}+O(x^4)}{x^2}}
+\displaystyle -\frac{x^2}{3!}+O(x^4)=-\frac1u,
+\displaystyle\lim_{u\to\infty}\left(1+\frac1u\right)^u=e
+\displaystyle\lim_{x\to0}\frac{-\frac{x^2}{3!}+O(x^4)}{x^2}=\lim_{x\to0}\left({-\frac1{3!}+O(x^2)}\right)
+x\ne0
+x\to0
+\displaystyle\implies\lim_{x\to0}\frac{x^2}{-\frac{x^2}{3!}+O(x^4)}=-\frac16
+\exp\left(\frac1{x^2}\ln\frac{\sin x}x\right)
+\frac{\sin x}x\to 1
+\frac 00
+x
+\exp
+\lim_{x\to 0}\frac{\ln\frac{\sin x}x}{x^2}=\lim_{x\to0}\frac{\frac x{\sin x}\frac d{dx}\frac{\sin x}x}{2x}=\lim_{x\to0}\frac{{x\cos x-\sin x}}{2x^2\sin x}
+\begin{align}\lim_{x\to0}\frac{{x\cos x-\sin x}}{2x^2\sin x}&=\lim_{x\to0}\frac{-x\sin x}{4x\sin x+2x^2\cos x}\\ &=\lim_{x\to0}\frac{-\sin x}{4\sin x+2x\cos x}\end{align}
+\lim_{x\to0}\frac{-\sin x}{4\sin x+2x\cos x} =\lim_{x\to0}\frac{-\cos x}{4\cos x+2\cos x-2x\sin x}=-\frac16. 
+ \lim_{x\to 0}\left(\frac1{x^2}\ln\frac{\sin x}x\right)^{\frac1{x^2}}=e^{-1/6}.
+\frac{\sin x}{x}
+ e^{\frac{1}{x^2}\ln(1-x^2/3!+\dots) }= e^{\frac{1}{x^2}\ln(1-t) },
+t=\frac{x^2}{3!}-\frac{x^4}{5!}+\dots
+\ln(1-t)
+e^{\frac{1}{x^2}\ln(1-t) }=e^{\frac{1}{x^2}(-t-t^2/2-\dots) } = e^{\frac{1}{x^2}(-(x^2/3!-x^4/5!+\dots)-(x^2/3!-x^4/5!+\dots)^2/2-\dots) }\longrightarrow_{x\to 0} e^{-\frac{1}{3!}}  
+ \frac{\sin x}{x}=1-\frac{x^2}{3!}+\dots, 
+ \ln(1-t)=-t-\frac{t^2}{2}- \frac{t^3}{3}-\dots\,. 
+\lim_{x\to 0} (\frac{\sin x}{x})^{\frac1{x^2}} =e^{\lim_{x\to 0}\frac{\sin x-x}{x^3}}= e^{\lim_{x\to 0}\frac{(\sin x-x)'}{(x^3)'}}=
+= e^{\lim_{x\to 0}\frac{\cos x-1}{3x^2}}= e^{\lim_{x\to 0}\frac{(\cos x-1)'}{(3x^2)'}}=e^{\lim_{x\to 0}\frac{-\sin x}{6x}}=e^{\frac{-1}{6}}. 
+1^{\infty}
+\lim_{x→α}f(x)=1
+\lim_{x→α}g(x)= \infty 
+\lim_{x→α}(f(x))^{g(x)}= \lim_{x→α}(1+f(x)−1)^{g(x)}= \lim_{x→α}[[(1+f(x)−1)^{\frac{1}{f(x)-1}}]^{(f(x)-1)}]^{g(x)}= \lim_{x→α}[(1+f(x)−1)^{\frac{1}{f(x)-1}}]^{\lim_{x→α}(f(x)-1)g(x)}= e^{\lim_{x→α}(f(x)-1)g(x)}.

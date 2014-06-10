@@ -1,0 +1,22 @@
+\{a_i\}_{i\in\mathbb N}
+\sum_{n=1}^\infty\frac{1}{a_n}=+\infty.\tag{1}
+\sum_{n=2}^\infty\frac{1}{na_n-(n-1)a_{n-1}}=+\infty.
+\left\{\frac{1}{a_i}\right\}_{i\in\mathbb N}
+\begin{align}&\frac{2^ka_{2^k}}{2^{k-1}}\geq\frac{2^ka_{2^k}-2^{k-1}a_{2^{k-1}}}{2^{k-1}}\\&=\frac{2^ka_{2^k}-(2^k-1)a_{2^k-1}+(2^k-1)a_{2^k-1}-\dotso+(2^{k-1}+1)a_{2^{k-1}+1}-2^{k-1}a_{2^{k-1}}}{2^{k-1}}.\tag{2}\end{align}
+(2)
+k\geq 1
+N=2^j
+(4)
+S_N
+N
+N>2
+N=2^j
+q>0
+2^q\leq N<2^{q+1}
+\frac{2^ka_{2^k}}{2^{k-1}}\geq\frac{2^{k-1}}{\sum_{n=2^{k-1}+1}^{2^k}\frac{1}{na_n-(n-1)a_{n-1}}},\tag{3}
+\sum_{n=2^{k-1}+1}^{2^k}\frac{1}{na_n-(n-1)a_{n-1}}\geq \frac{2^k}{4a_{2^k}}.\tag{4}
+S_N:=\sum_{n=2}^N\frac{1}{na_n-(n-1)a_{n-1}}.\tag{5}
+S_{2^j}=\sum_{k=1}^j\sum_{n=2^{k-1}+1}^{2^{k}}\frac{1}{na_n-(n-1)a_{n-1}}\geq \sum_{k=1}^j\frac{2^k}{4a_{2^k}}.\tag{6}
+\lim_{j\to+\infty}S_{2^j}=+\infty.\tag{7}
+S_N>S_{2^q},\tag{8}
+\lim_{N\to+\infty}S_N=+\infty.

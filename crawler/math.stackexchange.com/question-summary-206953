@@ -1,0 +1,37 @@
+X_1,X_2,X_3
+(X_2-X_1 ,X_3-X_1 )
+X_1,X_2,X_3\sim Exponential(λ)
+x > 0
+x < 0
+f_{X_2-X_1}(x) =f_{X_3-X_1}(x) = {\dfrac {\lambda } {2}e^{-\lambda x}} 
+f_{X_2-X_1}(x) =f_{X_3-X_1}(x) = {\dfrac {\lambda } {2}e^{\lambda x}} 
+X_2-X_1 =X
+X_3-X_1= Y
+f_{X,Y}( x,y) = f_{Y\mid X}( y\mid x) f( x) = f_{X\mid Y}( x\mid y) f(y)
+   f : \mathbb{R}_{\geq 0}^3 \rightarrow \mathbb{R} : \mathbf{x} \rightarrow \alpha^3 e^{-\alpha(x_1+x_2+x_3)} 
+T
+ \begin{eqnarray}   T(\mathbf{x}) &=& \begin{pmatrix} -1 & 1 & 0 \\ -1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}\;\mathbf{x} &\text{,}&   T^{-1}(\mathbf{x}) &=& \begin{pmatrix} -1 & 0 & 1 \\ 0 & 0 & 1 \\ -1 & 1 & 1 \end{pmatrix}\;\mathbf{x} \text{.} \end{eqnarray} 
+g
+g
+g(T(\mathbf{x})) = f(\mathbf{x})
+   g(\mathbf{y}) = f(T^{-1}(\mathbf{y}))\frac{1}{\det(T)} = \alpha^3 e^{-\alpha(3y_3 + y_2 - 2y_1)} 
+\text{dom}\, g \subset \mathbb{R}^3
+T^{-1}(\text{dom}\, g) = \text{dom}\, f
+T^{-1}(\mathbf{y}) \in \mathbb{R}_{\geq 0}^3
+y \in \text{dom}\, g
+y_3 \geq \max\{0,y_1, y_1 - y_2\}
+ \begin{eqnarray}   y_3 - y_1 &\geq& 0 \text{,}\\   y_3 &\geq& 0 \text{,}\\   y_3 + y_2 - y_1 &\geq& 0 \text{.} \end{eqnarray} 
+   \text{dom}\, g = \left\{\mathbf{y} \,:\, \mathbf{y} \in \mathbb{R}^3, y_3 \geq \max\{0,y_1, y_1 - y_2\}\right\} \text{.} 
+h
+(X_2-X_1,X_3-X_1)=(Y_1,Y_2)
+g
+y_3
+g
+ \begin{eqnarray}   h(y_1,y_2) &=& \int_{c}^\infty \alpha^3 e^{-\alpha(3y_3 + y_2 - 2y_1)} dy_3 \:\text{where}\: c = \max\{0,y_1, y_1 - y_2\} \\ &=& \frac{\alpha^2}{3} e^{-\alpha(y_2 - 2y_1)} \int_{c}^\infty 3\alpha e^{-3\alpha y_3} dy_3 \\ &=& \frac{\alpha^2}{3} e^{-\alpha(y_2 - 2y_1)} e^{-3\alpha c} \\ &=& \frac{\alpha^2}{3} e^{-\alpha(3c - 2y_1 + y_2)} \end{eqnarray} 
+y_1,y_2\geq 0
+c=y_1
+y_1 \leq 0,y_1 \leq y_2
+c=0
+y_2 \leq 0,y_2 \leq y_1
+c=y_1-y_2
+ h(y_1,y_2) = \frac{\alpha^2}{3}\begin{cases} e^{-\alpha(y_1 + y_2)} & \text{if } y_1,y_2 \geq 0 \\ e^{-\alpha(2|y_1| + y_2)} & \text{if } y_1 \leq 0, y_1 \leq y_2 \\ e^{-\alpha(y_1 + 2|y_2|)} & \text{if } y_2 \leq 0, y_2 \leq y_1 \end{cases} 

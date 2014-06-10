@@ -1,0 +1,41 @@
+n \in \mathbb N_{\geq 1}
+f
+n+1
+\pm i
+i
+(-1)^n (n+1) 2 i
+  \int_{-\infty}^\infty \frac 1{ (1+x^2)^{n+1}} dx 
+  f(z) := \frac 1 {(z+i)^{n+1}(z-i)^{n+1}} 
+ [-R,R] \cup \{R \exp(i \theta) \mid \theta \in [0,\pi] \} 
+ \frac {1 \cdot 3 \cdot 5 \cdots (2n-1)}{2 \cdot 4 \cdots 2 n} \pi 
+\underset{z=i}{\operatorname{res}}f(z)=\underset{z=i}{\operatorname{res}}\frac{1}{\left(z+i\right)^{n+1}\left(z-i\right)^{n+1}}=\frac{1}{n!}\underset{z\to i}\lim \frac{d^n}{dz^n}\left(\frac{\left(z-i\right)^{n+1}}{\left(z-i\right)^{n+1}\left(z+i\right)^{n+1}}\right)=\\ =\frac{1}{n!}\underset{z\to i}\lim \frac{d^n}{dz^n}\left(\frac{1}{\left(z+i\right)^{n+1}}\right)=\frac{1}{n!}\underset{z\to i}\lim \frac{d^{n-1}}{dz^{n-1}}\left(\frac{(-1)(n+1)}{\left(z+i\right)^{n+2}}\right)=\\ =\frac{1}{n!}\underset{z\to i}\lim \frac{d^{n-2}}{dz^{n-2}}\left(\frac{\left(-1\right)^2(n+1)(n+2)}{\left(z+i\right)^{n+3}}\right)=...=\frac{1}{n!}\underset{z\to i}\lim \left(\frac{\left(-1\right)^n(n+1)(n+2)..2n}{\left(z+i\right)^{2n+1}}\right)=\\ =\frac{1}{n!}\left(\frac{\left(-1\right)^n(n+1)(n+2)..2n}{2^{2n+1}i^{2n+1}}\right)
+f(z) = (1+z^2)^{-n-1}
+z = i 
+w = z - i
+f(w)
+w = 0
+w^{-1}
+k=n
+f(w) = [1 + (w+i)^2]^{-n-1} = w^{-n-1} (2i)^{-n-1} \left(1 + \frac{w}{2i} \right) ^{-n-1}
+= w^{-n-1} (2i)^{-n-1} \sum_{k=0}^{\infty} \binom{-n-1}{k} (2i)^{-k} w^k 
+Res_{w=0} f(w)= (2i)^{-n-1} (2i)^{-n} \binom{-n-1}{n} = -2^{-2n-1} (-1)^n \binom{-n-1}{n} i= -2^{-2n-1} \binom{2n}{n} i
+z=i
+(z-i)^n
+\frac1{((z-i)+2i)^{n+1}}
+ \begin{align} \frac1{(1+z^2)^{n+1}} &=\frac1{(z+i)^{n+1}}\frac1{(z-i)^{n+1}}\\ &=\frac1{((z-i)+2i)^{n+1}}\frac1{(z-i)^{n+1}} \end{align} 
+2\pi i
+\color{#C00000}{\text{this residue}}
+ \begin{align} \binom{-n-1}{n}\left(\frac{z-i}{2i}\right)^n(2i)^{-n-1} &=(z-i)^n(-1)^n\binom{2n}{n}(2i)^{-2n-1}\\ &=(z-i)^n\color{#C00000}{\frac1i\binom{2n}{n}2^{-2n-1}} \end{align} 
+ \int_{-\infty}^\infty\frac{\mathrm{d}x}{(1+x^2)^{n+1}}=\frac\pi{4^n}\binom{2n}{n} 
+f
+N
+z=a
+f(z)=(z-a)^{-N}g(z)
+g
+z=a
+f
+z=a
+\operatorname{Res}\limits_{z=a} f(z) = \frac{g^{(N-1)}(a)}{(N-1)!}.
+g^{k}(z)=(-1)^k(n+1)(n+2)\cdots(n+k)(z+i)^{-(n+k+1)},
+\operatorname{Res}\limits_{z=i} f(z) = \frac{(-1)^n(n+1)(n+2)\cdots2n}{n!(2i)^{2n+1}}=\frac{(2n)!}{n!n!2^{2n}2i}=\frac{1}{2i2^{2n}}\binom{2n}{n}.
+\frac{\pi}{2^{2n}}\binom{2n}{n}.

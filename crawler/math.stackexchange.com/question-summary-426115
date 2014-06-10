@@ -1,0 +1,50 @@
+\mathbf{A}
+\mathbf{B}
+N\times N
+\mathbf{x}
+\mathbf{Ax=\lambda Bx}
+\mathbf{A}
+A = U \Lambda_A U^*
+\Lambda_A = {\rm diag}(\lambda^A_1,\dots,\lambda^A_n)
+B = V \Lambda_B V^*
+\Lambda_B = {\rm diag}(\lambda^B_1,\dots,\lambda^B_n)
+A
+B
+i < j
+X \in \{A,B\}
+\Lambda
+\lambda^X_i \ge \lambda^X_j, \quad \text{for $i < j$ and $X \in \{A,B\}$},
+\Lambda_A
+k_A
+\lambda^A_{k_A} \ge 0
+\lambda^A_{k_A} < 0
+\lambda^A_i
+k_B
+\Lambda_B
+e_i
+i \le k_A
+i \le k_B
+u_i^* A u_i = u_i^* U \Lambda_A U^* u_i = e_i^* \Lambda_A e_i = \lambda^A_i, \quad v_i^* B v_i = v_i^* V \Lambda_B V^* v_i = e_i^* \Lambda_B e_i = \lambda^B_i,
+u_i^* A u_i \ge 0, \quad \text{for all $i \le k_A$}, \quad \text{and} \quad v_i^* B v_i \ge 0, \quad \text{for all $i \le k_B$}.
+x
+x \in {\rm span}\{u_1,\dots,u_{k_A}\} \cap {\rm span}\{v_1,\dots,v_{k_B}\}.
+i \ne j
+i, j
+\lambda^A_i = u_i^* A u_i > 0
+\lambda^A_j = u_j^* A u_j < 0
+\alpha
+\alpha_{ij}
+S_A
+x_{ij}(\alpha_{ij})
+x \in S_A
+x^* S_A x \ge 0
+u_i^* A u_j = u_i^* U \Lambda_A U^* u_j = e_i^* \Lambda_A e_j = 0, \quad \text{for $i \ne j$}.
+(\alpha u_i + u_j)^* A (\alpha u_i + u_j) = |\alpha|^2 u_i^* A u_i + 2{\rm Re}(\overline{\alpha} u_i^* A u_j) + u_j^* A u_j = |\alpha|^2 u_i^* A u_i + u_j^* A u_j = 0
+x_{ij}(\alpha) := \frac{1}{\sqrt{|\alpha u_i + u_j|}} (\alpha u_i + u_j).
+S_A := \{ t x_{ij}(\alpha)\!:\ \lambda^A_i > 0,\ \lambda^A_j < 0,\ \alpha \ge \alpha_{ij},\ t \ge 0 \}.
+S_B
+S_A
+S_B
+S_A \cap S_B
+S_A \cap S_B
+\mathbb{C}^N

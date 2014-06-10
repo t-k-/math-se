@@ -1,0 +1,55 @@
+m,n\ge 1
+\sum_{k=m}^n (-1)^{k-m} \binom{k}{m} \binom{n}{k} = \delta_{mn}
+ 1 = 1^n = (1 - x + x)^n
+ = \sum_{a+b+c=n} {n \choose a,b,c} 1^a \cdot (-x)^b \cdot x^c
+ = \sum_{m=0}^{n} \sum_{k=m}^{n} {n \choose m,k-m,n-k} 1^{m}  \cdot (-x)^{k-m} \cdot x^{n-k} 
+ = \sum_{m=0}^{n} \left[ \sum_{k=m}^{n} (-1)^{k-m} {k \choose m}{n \choose k} \right] x^{n-m}
+\{1, x, x^2, ... \}
+\{1, (x+1), (x+1)^2, ... \}
+[n]
+A,B,C
+|C|=m
+(-1)^{|A|}
+n \neq m
+|A|
+|A|
+C
+n \neq m
+A
+B
+\sum_{k=m}^n (-1)^{k-m} \binom{k}{m} \binom{n}{k} = \sum_{k=m}^n (-1)^{k-m} \binom{n}{m} \binom{n-k}{m-k} = \binom{n}{m} \sum_{k=0}^{n-m} (-1)^k \binom{n-m}{k}
+= \binom{n}{m} (1 - 1)^{n-m} [n \ge m] = \binom{n}{m} \delta_{mn} = \delta_{mn}.
+B(f(k),n)
+\Delta f(k)
+f(k+1) - f(k)
+[n=0]
+1
+n = 0
+0
+B
+B(f(k),n) = \sum_{k=0}^n (-1)^k \binom{n}{k} f(k).
+B(f(k),n) = -B(\Delta f(k),n-1) + f(0)[n=0].
+f(k) = 1
+\Delta f(k) = 0
+B(0,n-1)
+0
+B(1,n) = [n=0]
+\sum_{k=0}^n (-1)^k \binom{n}{k} = [n=0].
+k^{\underline{m}}
+k(k-1)\cdots (k-m+1)
+\Delta k^{\underline{m}} = m k^{\underline{m-1}}
+\sum_{k=0}^n (-1)^k \binom{n}{k}k = -B(1,n-1) = - [n-1=0] = -[n=1],
+\sum_{k=0}^n (-1)^k \binom{n}{k} k^{\underline{2}} = -2B(k,n-1) = 2[n-1 = 1] = 2[n=2],
+\sum_{k=0}^n (-1)^k \binom{n}{k} k^{\underline{3}} = -3B(k^{\underline{2}},n-1) = -6[n-1 = 2] = -6[n=3],
+\sum_{k=0}^n (-1)^k \binom{n}{k} k^{\underline{m}} = -mB(k^{\underline{m-1}},n-1) = (-1)^m m![n=m].
+k(k-1)\cdots (k-m+1) = \frac{k!}{(k-m)!}
+(-1)^m m!
+ (-1)^m  \times { \sum_{ k \geq 0 } (-1)^{k} \binom{n}{k} (\frac{1}{x})^k } \times \sum_{k \geq 0} \binom{k}{m} x^k 
+(-1)^m \times (1-\frac{1}{x})^n \times x^{m} \times (1-x)^{-(m+1)}
+(-1)^{m+n} x^{m-n} \times (1-x)^{n-m-1} 
+m >n
+m < n
+(-1)^{m+n} \frac{(1-x)^{n-m-1}}{x^{n-m}}
+x
+n-m-1
+n=m

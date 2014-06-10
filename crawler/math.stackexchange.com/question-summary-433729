@@ -1,0 +1,50 @@
+p
+r
+ 0 \le p < r \;\;\;\textrm{with}\;p, r \in \mathbb{N} 
+p
+0<r<2^{31}
+P
+0<R<2^{63}
+ P = \lfloor \, p * R / r\rfloor\;\;\;\;\;\textrm{and}\;\;\;\;\ p = \lfloor P * r / R \rfloor 
+\lfloor\cdot\rfloor
+ P = \lfloor \, p * R / r\rfloor = \lfloor R / r\rfloor * p + \lfloor((R\bmod{r} ) * p) / r\rfloor 
+p<r
+2^{63}
+p<r<2^{31}
+2^{63}
+P
+<2^{63}
+p = \lfloor P * r / R \rfloor
+f(P, r, R)
+\lfloor P * r / R \rfloor
+[{-\,2^{63}, +\,2^{63}}[
+p
+ P = \lfloor R/r \rfloor * p + \lfloor ((R\bmod{r})*p)/r \rfloor 
+ \lfloor R/r \rfloor * p_{n+1} = P - \lfloor ((R\bmod{r})*p_n)/r \rfloor 
+ p_{n+1} = \bigg\lfloor \frac{P}{\lfloor R/r \rfloor} \bigg\rfloor - \bigg\lfloor \frac{\lfloor ((R\bmod{r})*p_n)/r  \rfloor} {\lfloor R/r \rfloor} \bigg\rfloor 
+r
+P
+R
+\pm 1
+R\bmod{r}
+R/r
+P*r<2^{63}
+p=\lfloor P*r/R \rfloor
+P<\lfloor2^{63}/r \rfloor
+ p=\lfloor P*r/R \rfloor= \bigg\lfloor\frac{P}{R/r}\bigg\rfloor=\bigg\lfloor\frac{P}{\lfloor R/r \rfloor + (R\bmod{r})/r}\bigg\rfloor 
+ =\bigg\lfloor\frac{P}{\lfloor R/r \rfloor}-\frac{P(R\bmod{r})/r}{\lfloor R/r \rfloor(R/r)}\bigg\rfloor=\Bigg\lfloor\bigg\lfloor\frac{P}{\lfloor R/r\rfloor}\bigg\rfloor + \frac{P\bmod{\lfloor R/r\rfloor}}{\lfloor R/r\rfloor}-\frac{P(R\bmod{r})}{R\lfloor R/r \rfloor}\Bigg\rfloor 
+ =\bigg\lfloor\frac{P}{\lfloor R/r\rfloor}\bigg\rfloor + \Bigg\lfloor\frac{P\bmod{\lfloor R/r\rfloor}}{\lfloor R/r\rfloor}-\frac{P}{R}\frac{R\bmod{r}}{\lfloor R/r \rfloor}\Bigg\rfloor 
++
+-
+\ge 0
+<1
+0 \le P/R < 1
+R\ge r^2
+P<\lfloor2^{63}/r \rfloor
+P\ge \lfloor2^{63}/r \rfloor
+R\ge r^2
+P\ge \lfloor2^{63}/r \rfloor
+R<r^2
+ p = \left\{\begin{array}{1 1}\lfloor (P*r)/R \rfloor & \quad \text{if $P<\lfloor2^{63}/r \rfloor$} \\ \lfloor P/\lfloor r/R\rfloor \rfloor  \;[-1] & \quad \text{if $P\ge \lfloor2^{63}/r \rfloor$ and $R\ge r^2$} \\ \text{here be dragons} & \quad \text{if $P\ge \lfloor2^{63}/r \rfloor$ and $R<r^2$} \end{array} \right.\ 
+[-1]
+p

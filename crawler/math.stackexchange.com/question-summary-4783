@@ -1,0 +1,16 @@
+ 2^n= (1+1)^n = \sum_{k=0}^n {n \choose k}
+\lim_{n \to \infty} \ \sum_{k=0}^n {n \choose k}^{-1}=? \quad \text{for} \ n \geq 1
+k = 2
+k = n-2
+\frac{1}{ {n \choose 2} }
+\frac{2}{n-1}
+2 + \frac{2}{n} + \frac{2}{n-1}
+2
+\displaystyle \sum_{k=0}^{n} {n \choose k}^{-1}
+{n \choose k}^{-1} = (n+1)\int_{0}^{1} t^{n-k}(1-t)^k \ dt
+\sum_{k=0}^{n} {n \choose k}^{-1} = (n+1) \sum_{k=0}^{n} \int_{0}^{1} t^{n-k}(1-t)^k \ dt
+ = (n+1)\int_{0}^{1} \sum_{k=0}^{n} t^{n-k}(1-t)^k \ dt
+ = (n+1)\int_{0}^{1} \frac{t^{n+1} - (1-t)^{n+1}}{2t-1} \ dt
+\displaystyle 2t-1 = y
+\sum_{k=0}^{n} {n \choose k}^{-1} = \frac{n+1}{2^{n+2}} \int_{-1}^{1} \frac{(1+y)^{n+1} - (1-y)^{n+1}}{y} \ dy
+\sum_{k=0}^{n} {n \choose k}^{-1} = \frac{n+1}{2^n}\left(\frac{{n+1 \choose 1}}{1} + \frac{{n+1 \choose 3}}{3} + \frac{{n+1 \choose 5}}{5} + \dots \right)

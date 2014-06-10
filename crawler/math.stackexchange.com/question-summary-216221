@@ -1,0 +1,25 @@
+X
+X
+|X|
+f_X(x)=\begin{cases}\frac{1}{2}e^x \quad \text{if } x<0\\e^{-2x} \quad \text{if } x>0\end{cases}
+X=UY
+U
+Y
+Y
+\mathbb P(U=\frac12)=\mathbb P(U=-1)=\frac12
+U
+M_Y(t)=1/(1-t)
+t\lt1
+-1\lt t\lt2
+t\lt1
+ M_X(t)=\mathbb E(\mathrm e^{tX})=\mathbb E(\mathbb E(\mathrm e^{tX}\mid U))=\mathbb E(M_Y(tU)). 
+ M_X(t)=\mathbb E\left(\frac1{1-tU}\right)=\frac12\frac1{1-\frac12t}+\frac12\frac1{1+t}. 
+ M_{|X|}(t)=\mathbb E(\mathrm e^{t|X|})=\mathbb E\left(\frac1{1-t|U|}\right)=\frac12\frac1{1-\frac12t}+\frac12\frac1{1-t}. 
+M:=M_X
+f:=f_X
+t\in\Bbb R
+M(t)=E\big(e^{tX}\big)=\int_{\Bbb R} e^{tx}\cdot f(x)dx = \int_{-\infty}^0 .. +\int_0^{+\infty}..
+|X|
+x>0
+x<0
+M_{|X|}(t)=E\big(e^{t|X|}\big)=\int_{\Bbb R}e^{t|x|}\cdot f(x)dx=... 

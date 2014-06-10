@@ -1,0 +1,47 @@
+ \int_0^b \frac{\tanh(c(x^2-b^2))}{x-b}\mathrm{d}x 
+\gamma = 0.57721...
+ \int_0^b \frac{\tanh(x)}{x}\mathrm{d}x \approx \ln\frac{4e^\gamma b}{\pi} \text{as} \ b \to \infty
+C
+\gamma + \log \frac{4}{\pi},
+ \text{sech} x = 2(e^{-x} – e^{-3x} + e^{-5x} + \cdots ) \qquad (1)
+\int_0^1 \frac{\tanh x}{x}\mathrm dx = 2\int_0^1 \frac{\sinh x}{x}(e^{-x} – e^{-3x} + e^{-5x} + \cdots )\mathrm dx
+2\int_0^1 \frac{\sinh x}{x} e^{-x}\mathrm dx = - \mathrm{Ei}(-2) + \gamma + \log 2
+2\int_0^1 \frac{\sinh x}{x} e^{-3x}\mathrm dx = - \mathrm{Ei}(-4) + \mathrm{Ei}(-2) + \log 2
+2\int_0^1 \frac{\sinh x}{x} e^{-5x}\mathrm dx = - \mathrm{Ei}(-6) + \mathrm{Ei}(-4) + \log (3/2)
+2\int_0^1 \frac{\sinh x}{x} e^{-7x}\mathrm dx = - \mathrm{Ei}(-8) + \mathrm{Ei}(-6) + \log (4/3)
+(1)
+\mathrm{sech} x
+\int_0^1 \frac{2}{x(e^{2/x}+1) }\mathrm dx = 2 \int_1^\infty \frac{1}{x(e^{2x}+1)}\mathrm dx
+=  \int_1^\infty \frac{\text{sech} x}{x} e^{-x}\mathrm dx = 2  \int_1^\infty \frac{e^{-2x}}{x} - \frac{e^{-4x}}{x} + \frac{e^{-6x}}{x} - \cdots\mathrm dx 
+=  -2\mathrm{Ei}(-2)+2\mathrm{Ei}(-4)-2\mathrm{Ei}(-6) + \cdots.
+(2).
+\displaystyle \int_{0}^{b}\dfrac{\tanh(x)}{x} \approx C + \log b
+\displaystyle C = \int_{0}^{1}(\dfrac{\tanh(x)}{x} -\dfrac{2}{x(e^{2/x}+1)} \ )\text{dx} = 0.81878\dots
+\displaystyle \dfrac{\tanh(x)}{x} = \dfrac{1}{x} - \dfrac{2}{x(e^{2x}+1)}
+b > 1
+\displaystyle f(b) = \int_{0}^{b}\dfrac{\tanh(x)}{x} \ \text{dx} = \int_{0}^{1}\dfrac{\tanh(x)}{x} \ \text{dx}  + \int_{1}^{b} (\dfrac{1}{x} - \dfrac{2}{x(e^{2x}+1)})\ \text{dx}
+\displaystyle f(b) =  \int_{0}^{1}\dfrac{\tanh(x)}{x} \ \text{dx}  + \log b - \int_{1}^{b}\dfrac{2}{x(e^{2x}+1)}\ \text{dx}
+\displaystyle \int_{1}^{b}\dfrac{2}{x(e^{2x}+1)}\ \text{dx} = \int_{1}^{\infty}\dfrac{2}{x(e^{2x}+1)}\ \text{dx} - \int_{b}^{\infty}\dfrac{2}{x(e^{2x}+1)}\ \text{dx}
+t = \dfrac{1}{x}
+\displaystyle \int_{1}^{\infty}\dfrac{2}{x(e^{2x}+1)}\ \text{dx} = \int_{0}^{1}\dfrac{2}{t(e^{2/t}+1)}\ \text{dt}
+\displaystyle f(b) =  \int_{0}^{1}(\dfrac{\tanh(x)}{x} -\dfrac{2}{x(e^{2/x}+1)} \ )\text{dx}  + \log b + \int_{b}^{\infty}\dfrac{2}{x(e^{2x}+1)}\ \text{dx}
+\displaystyle b \to \infty
+\displaystyle \int_{b}^{\infty}\dfrac{2}{x(e^{2x}+1)}\ \text{dx} \to 0
+\displaystyle \int_{0}^{b}\dfrac{\tanh(x)}{x} \approx \log b + \int_{0}^{1}(\dfrac{\tanh(x)}{x} -\dfrac{2}{x(e^{2/x}+1)} \ )\text{dx} 
+\displaystyle \int_{0}^{b}\dfrac{\tanh(x)}{x} \approx C + \log b
+\displaystyle C = \int_{0}^{1}\left(\dfrac{\tanh(x)}{x} -\dfrac{2}{x(e^{2/x}+1)} \ \right)\text{dx} = 0.81878\dots
+x
+\tanh x
+1
+b
+C'
+b
+C_1,C_2
+\gamma + \log (4/\pi)
+C'
+\int_0^b \frac{\tanh x}{x} \, \mathrm{d}x \approx C + \int^b \frac{\mathrm{d}x}{x} = C' + \log b.
+\log b + C_1 \approx \log b + C_2,
+C'
+\approx
+o(b)
+\gamma + \log (4/\pi)

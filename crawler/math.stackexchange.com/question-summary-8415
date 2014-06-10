@@ -1,0 +1,73 @@
+H_n
+n
+\sum_{k=0}^n \binom{n}{k} H_k = 2^n \left(H_n - \sum_{k=1}^n \frac{1}{k 2^k}\right),
+2^n
+2^{-n} \sum_{k=0}^n \binom{n}{k} H_k = H_n - \sum_{k=1}^n \frac{1}{k 2^k}.
+H_n
+H_n
+H_n - 2^{-n} \sum_{k=0}^n \binom{n}{k} H_k =  \sum_{k=1}^n \frac{1}{k 2^k}.
+\ln 2
+n \to \infty
+-\frac{1}{2}
+\ln (1+x)
+f(n)
+\lim_{n \to \infty} \left(f(n) - 2^{-n} \sum_{k=0}^n \binom{n}{k} f(k) \right)
+f
+\infty
+f(n) = a^n
+f(n) = n
+f
+f
+H_n
+L
+r(n)
+r(n) \to 0
+n \to \infty
+f(n)
+r(n) \to 0
+L + r(n) > 0
+n
+n
+C
+D
+C < L + r(n) < D
+f(n)
+g(n)
+h(n)
+n
+g(n) \leq f(n) \leq h(n)
+g(n)
+h(n)
+\lim_{n \to \infty} \left(f(n) - 2^{-n} \sum_{k=0}^n \binom{n}{k} f(k) \right) = L.
+f(n) = L + r(n) + 2^{-n} \sum_{k=0}^n \binom{n}{k} f(k)
+g(n) = C + 2^{-n} \sum_{k=0}^n \binom{n}{k} g(k),
+h(n) = D + 2^{-n} \sum_{k=0}^n \binom{n}{k} h(k).
+g(n)
+h(n)
+\Theta (\log n)
+g(n)
+g(0)
+n
+C
+T(n)
+E[T(n)]
+g(n) = E[T(n)]
+E[T(n)] = C + 2^{-n} \sum_{k=0}^n \binom{n}{k} E[T(n-k)] = C + 2^{-n} \sum_{k=0}^n \binom{n}{k} E[T(k)].
+g(n) = \frac{C}{\log 2} \log n + O(1)
+h(n) = \frac{D}{\log 2} \log n + O(1)
+f(n) = \Theta (\log n)
+n \to \infty
+\frac{f(n)}{\log_2 n} \to L.
+F(x) = \sum_{n \ge 0} \frac{f(n)}{n!} x^n
+g(n) = \frac{1}{2^n} \sum_{k=0}^{n} {n \choose n-k} f(k)
+G(x) = \sum_{n \ge 0} \frac{g(n)}{n!} x^n
+G(x) = e^{\frac{x}{2}} F \left( \frac{x}{2} \right)
+F
+A(x)
+H(x) = e^x F(x)
+F(x) - e^{\frac{x}{2}} F \left( \frac{x}{2} \right) = A(x)
+H(x) - H \left( \frac{x}{2} \right) = e^{-x} A(x).
+\displaystyle \lim_{x \to \infty } f(x) -\frac{\int_0^x f(x) dx }{x} = \lim_{x \to \infty }f(x) - \frac{F(x)}{x} = k \hspace{1cm}
+f(x) >0 
+0 <k <\infty
+f(x) = a \log(x) + b  

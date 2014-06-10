@@ -1,0 +1,14 @@
+X_{1},X_{2},\dots,X_{n}
+f(x;\theta)=\frac{x}{\theta}e^{-x^{2}/2\theta}\hspace{1em}x>0  
+L(\theta)=\prod_{i=1}^{n}f(x_{i};\theta)=\prod_{i=1}^{n}\frac{x_{i}}{\theta}e^{-x_{i}^{2}/2\theta}  
+\ell(\theta)	=	\ln(L(\theta)) 	=	\sum_{i=1}^{n}\left(-\frac{x_{i}^{2}\theta}{2}+\ln x_{i}-\ln\theta\right)  
+\begin{eqnarray*} \frac{\delta\ell}{\delta\theta} & = & \frac{\delta}{\delta\theta}\left(\sum_{i=1}^{n}\left(-\frac{x_{i}^{2}\theta}{2}+\ln x_{i}-\ln\theta\right)\right)\\ 0 & = & \sum_{i=1}^{n}\frac{x_{i}^{2}-2\theta}{2\theta^{2}}\\ 2\theta^{2} & = & \sum_{i=1}^{n}x_i^{2}-2\theta\\ 2\theta^{2}+2n\theta & = & \sum_{i=1}^{n}x_i^{2}\\ \end{eqnarray*}
+\displaystyle f(x; \theta) = \frac{x}{\theta} e^{-x^2 / (2\theta)}
+\displaystyle \mathcal{L}(\theta) =\prod_{i = 1}^{n} \frac{x_i}{\theta} e^{-x_i^2 / (2\theta)}
+\displaystyle \mathcal{l}(\theta) = - n \ln{\theta} + \sum_{i = 1}^{n} \left ( \ln{x_i}  + \frac{-x_i^2}{2\theta} \right)
+\displaystyle \frac{d \mathcal{l}}{d\theta} = -\frac{n}{\theta} + \sum_{i=1}^{n}\frac{x_i^2}{2\theta^2}
+\displaystyle \theta =  \frac{1}{2 n} \sum_{i=1}^{n}x_i^2 = \frac{1}{2} \overline{ X^2 }
+\overline{ X^2 }
+0  =  \sum_{i=1}^{n}x_i^{2}-2\theta \implies \theta = \frac{1}{2}\sum_{i=1}^{n}x_i^{2}
+f(x;\beta)=x \beta \,e^{-x^{2} \beta/2}\hspace{1em}x>0
+\hat \alpha = 1/\hat \beta

@@ -1,0 +1,63 @@
+k
+s_k+m_k\mathbb N
+s_k
+(0,m_k)
+k
+S_k+m_k\mathbb N
+S_k
+(0,m_k)
+(S_k)
+t_0
+k
+t_0+t
+t\leqslant m_k
+S_k
+(0,m_k)
+t/m_k
+K
+m_1
+m_2
+m_3
+m_1
+m_1=m_2=\cdots=m_n
+ \mathbb P(T\gt t)=\prod_k\left(1-\frac{t}{m_k}\right),\qquad t\leqslant \bar m=\min\limits_km_k. 
+ \mathbb E(T)=\int_0^{+\infty}\mathbb P(T\gt t)\,\mathrm dt=\int_0^{\bar m}\prod_k\left(1-\frac{t}{m_k}\right)\,\mathrm dt. 
+ \mathbb E(T)=\sum_{i\geqslant0}(-1)^i\bar m^{i+1}\frac1{i+1}\sum_{|K|=i}\frac1{m_K}, 
+ m_K=\prod_{k\in K}m_k. 
+ \mathbb E(T)=m_1-\frac{m_1^2}2\left(\frac1{m_1}+\frac1{m_2}+\frac1{m_3}\right)+\frac{m_1^3}{3}\left(\frac1{m_1m_2}+\frac1{m_2m_3}+\frac1{m_3m_1}\right)-\frac{m_1^4}{4m_1m_2m_3}, 
+ \mathbb E(T)=\frac{m_1}2-\frac{m_1^2}{6m_2}-\frac{m_1^2}{6m_3}+\frac{m_1^3}{12m_2m_3}. 
+ \mathbb E(T)=\frac{m_1}{n+1}. 
+1, \cdots, n
+X_1, \cdots, X_n
+X_k
+k
+X_k
+[0, m_k)
+ U = \min\{X_1, \cdots, X_n \}.
+m_1 = \cdots = m_n
+X_1 = \cdots = X_n
+U = X_1
+\Bbb{E} U = \Bbb{E} X_1 = \frac{m_1}{2}.
+X_1, \cdots, X_n
+n
+X_1
+ \begin{align*} F_{U}(t) = \Bbb{P}(U \leq t) &= 1 - \Bbb{P}(U > t) \\ &= 1 - \Bbb{P}(X_1 > t, \cdots, X_n > t)\\ &= 1 - \Bbb{P}(X_1 > t) \cdots \Bbb{P}(X_n > t)\\ &= 1 - \left( 1 - \frac{t}{m_1} \right)^n \end{align*}
+ \begin{align*} \Bbb{E}U &= \int_{0}^{m_1} t \, dF_{U}(t)\\ &= \left[ t F_{U}(t) \right]_{0}^{m_1} - \int_{0}^{m_1} F_{U}(t) \, dt \\ &= m_1 - \int_{0}^{m_1} \left\{ 1 - \left( 1 - \frac{t}{m_1} \right)^n \right\} \, dt \\ &= \frac{m_1}{n+1}. \end{align*}
+m_1, \cdots, m_n
+m_1, \cdots, m_n
+t
+P(t)
+\int_{0}^{p} P(t)dt=P(t)p=1
+P(t)t
+t
+t
+0.5 P(t)p *p
+0.5 p
+r
+r/m_1
+r/m_2
+r/m_n
+n
+r
+\left({1\over m_1}+{1\over m_2}+\cdots+{1\over m_n}\right)r
+\left({1\over m_1}+{1\over m_2}+\cdots+{1\over m_n}\right)^{-1}

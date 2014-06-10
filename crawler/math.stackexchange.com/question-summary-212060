@@ -1,0 +1,37 @@
+(f_n)_{n=0}^\infty
+f_n : \mathbb R\rightarrow \mathbb R
+F: \mathbb R^2 \rightarrow \mathbb R
+\frac{\partial^n F}{\partial x^n}(0,y)=f_n(y)
+n=0,1,2,\ldots
+y \in \mathbb R
+(f_n)_{n=0}^\infty
+f_n:\mathbb R\to\mathbb R
+\mathcal U
+\mathbb R
+\mathcal U
+\phi_U
+U
+x\in\mathbb R
+(f_n \phi_U)_{n=0}^\infty
+U\in\mathcal U
+F_U:\mathbb R^2\to\mathbb R
+F_U
+\psi_U:\mathbb R\to \mathbb R
+\psi_U(x)=1
+x\in U
+\psi_U
+\tilde U
+U=(k-1,k+1)
+\tilde U=(k-2,k+2)
+G_U
+\mathbb R\times\tilde U
+G_U=F_U
+\mathbb R\times U
+\mathcal U=\{(k-1,k+1)|\; k\in\mathbb Z\}
+\{\phi_U:\mathbb R\to[0,1]|\;U\in\mathcal U\}
+\sum_{U\in\mathcal U}\phi_U(x) = 1
+\frac{\partial^n F_U}{\partial x^n}(0,y)=f_n(y)\phi_U(y)
+G_U(x,y)=F_U(x,y)\psi_U(y)
+F(x,y):=\sum_{U\in\mathcal U}G_U(x,y)
+\frac{\partial^n G_U}{\partial x^n}(0,y)=\frac{\partial^n F_U}{\partial x^n}(0,y)
+\frac{\partial^n F}{\partial x^n}(0,y)=\sum_{U\in\mathcal U}\frac{\partial^n G_U}{\partial x^n}(0,y)=\sum_{U\in\mathcal U}f_n(y)\phi_U(y) = f_n(y)

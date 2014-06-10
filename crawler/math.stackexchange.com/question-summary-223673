@@ -1,0 +1,7 @@
+u_{i+1}=f(u_i)
+i=0, 1, 2,...
+z_i=u_i-\alpha\cdot(u_{i+1}-u_i)
+\Delta u_i=f(u_i)-u_i
+v_i=f(f(u_i))- 2f(u_i)+u_i.
+\Delta z_i= \Delta u_i - \alpha\cdot v_i
+\begin{split}\Delta z_i & = z_{i+1} - z_i = u_{i+1} - \alpha(u_{i+2} - u_{i+1}) - u_i + \alpha (u_{i+1} - u_i)\\ &= \Delta u_i - \alpha (u_{i+2} - 2u_{i+1} + u_i) = \Delta u_i - \alpha v_i\end{split}

@@ -1,0 +1,8 @@
+(p \vee q)  \wedge( \neg p \vee r )\rightarrow (q \vee r)
+(p \vee q)  \wedge( \neg p \vee r )\rightarrow (q \vee r)
+\neg((p \vee q) \wedge (\neg p \vee r)) \vee (q \vee r)
+\neg(p \vee q) \vee \neg(\neg p \vee r) \vee (q \vee r)
+(\neg p \wedge \neg q) \vee (p \wedge \neg r) \vee q \vee r
+\neg p \vee p
+\begin{align} (p + q)(\bar p + r) \to (q + r) &= \overline{((p + q)(\bar p + r))} + (q + r) & \text{material implication} \\ &= \overline{(p + q)} + \overline{(\bar p + r)} + (q + r) & \text{DeMorgan's Law} \\ &= \bar p \bar q + p \bar r + q + r & \text{DeMorgan's Law} \\ &= p + r + \bar p + q & \text{simplification} \\ &= (p + \bar p) + r + q & \text{associativity of 
+} \\ &= 1 + r + q & \text{complementarity} \\ &= 1 & \text{absorption} \end{align}

@@ -1,0 +1,27 @@
+n
+0
+S(0) = \ln(4)
+ S(n)=\sum_{m=1}^{\infty}\frac{(2m-1)!!}{2^m \, m! \, m^{n+1}} 
+S(n)
+(4)
+(5)
+x\in(0,1)
+(4)
+(6)
+S(n)
+x=0
+(7)
+S(n)
+\log(4)
+ S(n) = \sum_{m=1}^{+\infty}\binom{2m}{m}\frac{1}{4^m m^{n+1}}, 
+ f(x) = \sum_{m=1}^{+\infty}\binom{2m}{m}\frac{x^{m-1}}{4^m} = \frac{1}{x\sqrt{1-x}}-\frac{1}{x}=\frac{1}{(1+\sqrt{1-x})\cdot\sqrt{1-x}}\tag{1}.
+\int_{0}^{1}x^{m-1}\log^n(x)\,dx=\frac{n!}{m^{n+1}}\tag{2}
+S(n)=\frac{1}{n!}\int_{0}^{1}f(x)\log^n(x)\,dx =\frac{2}{n!}\int_{0}^{1}\frac{\log^n(1-u^2)}{1+u}\,du\tag{3}
+S(n)=\frac{1}{n!}\frac{\partial}{\partial a_1}\ldots\frac{\partial}{\partial a_n}\left.\left(\int_{0}^{1}f(x)\cdot x^{\sum a_i}dx\right)\right|_{(a_1,\ldots,a_n)=(0^+,\ldots,0^+)},\tag{4}
+\int_{0}^{1}\frac{x^{k-1}}{\sqrt{1-x}}\,dx = B(1/2,k) = \frac{\Gamma(1/2)\cdot\Gamma(k)}{\Gamma(k+1/2)}\tag{5}
+\int_{0}^{1}f(x)\,x^{\sum a_i}dx = \frac{\Gamma(1/2)\cdot\Gamma(\sum a_i)}{\Gamma(1/2+\sum a_i)}-\frac{1}{\sum a_i}=g\left(\sum a_i\right).\tag{6}
+ g(x) = \frac{2^{2x}\Gamma(x)^2}{2\cdot\Gamma(2x)}-\frac{1}{x}
+ x\cdot g(x) = \frac{2^{2x}\Gamma(x+1)^2}{\Gamma(2x+1)}-1 \tag{7}
+ \log\Gamma(z+1)=-\gamma z+\sum_{k=2}^{+\infty}\frac{\zeta(k)}{k}(-z)^k, \tag{8}
+ x\cdot g(x) = -1+\exp\left(2x\log 2+2\log\Gamma(x+1)-\log\Gamma(2x+1)\right),
+ x\cdot g(x) = -1+\exp\left(2x\log 2-2\sum_{k=2}^{+\infty}\frac{\zeta(k)(2^k-1)}{k}(-z)^k\right).\tag{9}

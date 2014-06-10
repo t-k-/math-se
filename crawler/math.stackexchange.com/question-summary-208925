@@ -1,0 +1,8 @@
+B(x,y+1) = \int_{0}^{1} t^{x-1}(1-t)^{(y+1)-1} dt =\int_{0}^{1} t^{x-1}(1-t)^{y} dt 
+x,y>0
+dv = (1-t)^y
+u=t^{x-1}
+B(x+1,y+1)=\int_0^\infty\frac{s^{x}}{(1+s)^{x+y+2}}ds
+t=s^2/(1-s^2)
+\Gamma(x)\Gamma(y)=\Gamma(x+y)B(x,y)
+B(x,y+1)=\frac{\Gamma(x)\Gamma(y+1)}{\Gamma(x+y+1)}=\frac{\Gamma(x)\Gamma(y)y}{\Gamma(x+y)(x+y)}=\frac{y}{x+y}B(x,y)

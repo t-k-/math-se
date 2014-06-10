@@ -1,0 +1,21 @@
+\lambda > 0
+0 < \alpha < 1
+\prod_{k=1}^n \frac{k^\alpha}{\lambda + k^\alpha} \sim \exp\left(-\frac{\lambda}{1-\alpha}n^{1-\alpha}+o(n^{1-\alpha})\right)
+o()
+u:x\mapsto\log(1+\lambda x^{-\alpha})
+n\geqslant1
+s_n=\sum\limits_{k=1}^nu(k)
+u
+n
+z\geqslant0
+z-\frac12z^2\leqslant\log(1+z)\leqslant z
+v_n\ll n^{1-\alpha}
+u(1)\ll n^{1-\alpha}
+u(n)\sim\lambda n^{-\alpha}\ll n^{1-\alpha}
+s_n=w_n+o(w_n)
+ \int_{k}^{k+1}u(x)\,\mathrm dx\leqslant u(k)\leqslant\int_{k-1}^ku(x)\,\mathrm dx. 
+ u(n)+\int_1^nu(x)\,\mathrm dx\leqslant s_n\leqslant u(1)+\int_1^nu(x)\,\mathrm dx. 
+ w_n-v_n\leqslant\int_1^nu(x)\,\mathrm dx\leqslant w_n, 
+ w_n=\lambda\frac{n^{1-\alpha}}{1-\alpha},\qquad v_n=\frac12\lambda^2\int_1^nx^{-2\alpha}\,\mathrm dx\leqslant \lambda^2 C_\alpha\,\max\{n^{1-2\alpha}\log(n+1),1\}. 
+\prod_{k=1}^n \frac{k^\alpha}{\lambda + k^\alpha}=\mathrm e^{-s_n}= \exp\left(-\frac{\lambda}{1-\alpha}n^{1-\alpha}+o(n^{1-\alpha})\right). 
+\log \prod_{k=1}^n \frac{k^\alpha}{\lambda+k^\alpha } = \sum_{k=1}^n - \log(1 +\lambda \, k^{-\alpha}) \approx - \lambda \sum_{k=1}^n k^{-\alpha} \approx - \lambda \int_0^n x^{-\alpha}dx = -\lambda \frac{n^{1-\alpha}}{1-\alpha}

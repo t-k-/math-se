@@ -1,0 +1,19 @@
+T(n)=2T(n/4)+\sqrt{n}
+2^{\log_{4}n}(\log_{4}n+1)
+2(2T(\frac{n}{16})+\sqrt{\frac{n}{4}})+\sqrt{n} = 4T(\frac{n}{16})+2\sqrt{n}
+2(4T(\frac{n}{64})+2\sqrt{\frac{n}{16}})+\sqrt{n} = 8T(\frac{n}{64})+2\sqrt{n}
+2(8T(\frac{n}{256})+2\sqrt{\frac{n}{64}})+\sqrt{n}=16T(\frac{n}{256})+\frac{5}{4}\sqrt{n}
+n
+T(n) = 2 T(n/4) + \sqrt{n}
+f(m) = T(4^m p)
+p>0
+m=1
+k
+m = \log_4 \left(\frac{n}{p}\right)
+d
+      f(m) = 2 f(m-1) + \sqrt{p} 2^m 
+      2^{-m} f(m) - 2^{-(m-1)} f(m-1) = \sqrt{p}  
+  \sum_{m=1}^k \left(2^{-m} f(m) - 2^{-(m-1)} f(m-1) \right) = \sum_{k=1}^m \sqrt{p}  
+\begin{eqnarray}    \sum_{m=1}^k \left(2^{-m} f(m) - 2^{-(m-1)} f(m-1) \right) &=& \left(2^{-m} f(m) - \color\green{2^{-(m-1)} f(m-1)}\right) +  \\   &\phantom{=}& \left(\color\green{2^{-(m-1)} f(m-1)} - 2^{-(m-2)} f(m-2)\right) + \\   &\phantom{=}& \vdots \\   &\phantom{=}& \left( 2^{-2} f(2) - \color\green{2^{-1} f(1)} \right) +\\    &\phantom{=}& \left( \color\green{2^{-1} f(1)} - 2^{-0} f(0) \right) \\   &=& 2^{-m} f(m) -  f(0) \end{eqnarray} 
+    f(m) = 2^m \left( m \sqrt{p} + f(0) \right) 
+     T(n) = \sqrt{\frac{n}{p}} \left( \sqrt{p} \cdot \log_4 \frac{n}{p} + f(0)\right) = \sqrt{n} \log_4(n) + d \sqrt{n} 

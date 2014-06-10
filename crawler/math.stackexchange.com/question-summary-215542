@@ -1,0 +1,12 @@
+\dfrac{\partial f(x,t)}{\partial t} =c^2i\dfrac{\partial^2f(x,t)}{\partial x^2}
+Ae^{ikx-E_kt}
+\int a(k)e^{ikx-iE_kt}~dk
+f(x,t)=X(x)T(t)
+X(x)T'(t)=ic^2X''(x)T(t)
+\dfrac{T'(t)}{ic^2T(t)}=\dfrac{X''(x)}{X(x)}=-(K(k))^2
+\begin{cases}\dfrac{T'(t)}{T(t)}=-ic^2(K(k))^2\\X''(x)+(K(k))^2X(x)=0\end{cases}
+\begin{cases}T(t)=c_3(k)e^{-ic^2t(K(k))^2}\\X(x)=\begin{cases}c_1(k)\sin((x-m)K(k))+c_2(k)\cos((x-m)K(k))&\text{when}~K(k)\neq0\\c_1x+c_2&\text{when}~K(k)=0\end{cases}\end{cases}
+\therefore f(x,t)=C_1x+C_2+\int_kC_3(k)e^{-ic^2t(K(k))^2}\sin((x-m)K(k))~dk+\int_kC_4(k)e^{-ic^2t(K(k))^2}\cos((x-m)K(k))~dk
+C_1x+C_2+\sum\limits_kC_3(k)e^{-ic^2t(K(k))^2}\sin((x-m)K(k))+\sum\limits_kC_4(k)e^{-ic^2t(K(k))^2}\cos((x-m)K(k))
+f(x,t)=\sum\limits_{n=0}^\infty\dfrac{(x-a)^n}{n!}\dfrac{\partial^nu(a,t)}{\partial x^n}
+f(x,t)=\sum\limits_{n=0}^\infty\dfrac{(x-a)^{2n}}{(2n)!}\dfrac{\partial^{2n}u(a,t)}{\partial x^{2n}}+\sum\limits_{n=0}^\infty\dfrac{(x-a)^{2n+1}}{(2n+1)!}\dfrac{\partial^{2n+1}u(a,t)}{\partial x^{2n+1}}=\sum\limits_{n=0}^\infty\dfrac{(x-a)^{2n}}{i^nc^{2n}(2n)!}\dfrac{\partial^nu(a,t)}{\partial t^n}+\sum\limits_{n=0}^\infty\dfrac{(x-a)^{2n+1}}{i^nc^{2n}(2n+1)!}\dfrac{\partial^{n+1}(a,t)}{\partial t^n\partial x}=\sum\limits_{n=0}^\infty\dfrac{F^{(n)}(t)(x-a)^{2n}}{i^nc^{2n}(2n)!}+\sum\limits_{n=0}^\infty\dfrac{G^{(n)}(t)(x-a)^{2n+1}}{i^nc^{2n}(2n+1)!}=\sum\limits_{n=0}^\infty\dfrac{(-1)^nF^{(2n)}(t)(x-a)^{4n}}{c^{4n}(4n)!}-\sum\limits_{n=0}^\infty\dfrac{i(-1)^nF^{(2n+1)}(t)(x-a)^{4n+2}}{c^{4n+2}(4n+2)!}+\sum\limits_{n=0}^\infty\dfrac{(-1)^nG^{(2n)}(t)(x-a)^{4n+1}}{c^{4n}(4n+1)!}-\sum\limits_{n=0}^\infty\dfrac{i(-1)^nG^{(2n+1)}(t)(x-a)^{4n+3}}{c^{4n+2}(4n+3)!}

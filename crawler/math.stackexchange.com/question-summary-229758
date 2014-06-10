@@ -1,0 +1,40 @@
+f
+g
+\int_0^\infty \int_0^\infty f(u)\ g(v) e^{-s(u+v)}\ du\ dv.
+(u, v)
+(u, t)
+v = t - u
+\int_0^\infty \int_0^t f(u)\ g(t - u) e^{-st}\ du\ dt.
+\int_{g(a)}^{g(b)} f(x)\ dx = \int_a^b f(g(t)) g'(t)\ dt.
+t
+v:=t-u
+(u\leq t<\infty)
+B
+B
+u
+J:=\int_0^\infty \left( f(u)e^{-s u}\int_0^\infty g(v)e^{-sv}\ dv\right)\ du\ .
+\int_u^\infty g(t-u) e^{s(u-t)}\ dt\ ,
+J=\int_0^\infty\int_u^\infty f(u)g(t-u) e^{-st} dt\ du=\int_B f(u)g(t-u) e^{-st} {\rm d}(u,t)\ ,
+B:=\{(u,t)\ |\ u\geq 0,\ t\geq u\}=\{(u,t)\ |\ t\geq 0,\ 0\leq u\leq t\}\ .
+J=\int_0^\infty\int_0^u f(u)g(t-u) e^{-st} du\ dt\ ,
+(u,v)
+(x,t)
+x
+u
+{\bf w}:\quad(x,t)\mapsto \cases{u:= x\cr v:=t-x\cr}\ .
+\Delta:=\{(x,t)\ |\ 0\leq t\leq T,\ 0\leq x\leq t\}
+(x,t)
+\Delta':=\{(u,v)\ |\ u\geq 0,\ v\geq0,\ u+v\leq T\}
+(u,v)
+1
+t
+t={\rm const.}
+x
+x
+u
+\eqalign{\int\nolimits_{\Delta'} f(u)g(v)e^{-s(u+v)}\ {\rm d}(u,v)&= \int\nolimits_\Delta f(x)g(t-x)e^{-s\,t}\ {\rm d}(x,t)\cr &=\int_0^T e^{-st} \int_0^t f(x)g(t-x)\ dx\ dt\ .\cr}
+f
+g
+T\to\infty
+\int_0^\infty \int_0^\infty f(u)\ g(v) e^{-s(u+v)}\ du\ dv
+\int_0^\infty  f(u)e^{-su}du\int_0^\infty\ g(v) e^{-sv}\ dv

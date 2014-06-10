@@ -1,0 +1,7 @@
+\dfrac{1}{\sqrt{x+5}}
+\displaystyle \lim_{h\to 0} \frac {f(x+h)-f(x)}{h}
+\begin{align*} \lim_{h\to 0} \frac{\dfrac{1}{\sqrt{x+h+5}}-\dfrac{1}{\sqrt{x+5}}}{h} &= \frac{\dfrac{\sqrt{x+5}-\sqrt{x+h+5}}{(\sqrt{x+h+5})(\sqrt{x+5})}}{h}\\\\ &= \frac{\dfrac{x+5-x-h-5}{(\sqrt{x+h+5})(\sqrt{x+5})}}{\dfrac{h}{\sqrt{x+5}}+\dfrac{h}{\sqrt{x+h+5}}} \end{align*}
+u:=x+5
+u=x+5
+\begin{align*} \lim_{h\to 0} \frac1h\cdot \left( \frac1{\sqrt{u+h}} -\frac1{\sqrt{u}} \right)  &= \lim_{h\to 0} \frac1h\cdot\left(\frac{\sqrt u-\sqrt{u+h}}{\sqrt{u(u+h)}} \right) = \\ &= \lim_{h\to 0} \frac1h\cdot\left(\frac{\sqrt u-\sqrt{u+h}}{\sqrt{u(u+h)}} \cdot \frac{\sqrt{u}+\sqrt{u+h}}{\sqrt{u}+\sqrt{u+h}} \right) = \\ &= \lim_{h\to 0} \frac1h\cdot\left(\frac{u-(u+h)}{\sqrt{u(u+h)}\left(\sqrt{u+h}+\sqrt u\right)}\right) = \\ &=\lim_{h\to 0}\frac{-1}{\sqrt{u(u+h)}\left(\sqrt{u+h}+\sqrt u\right)} =\\ &=\frac{-1}{u\cdot 2\sqrt u} \end{align*}
+\sqrt{x+5}\cdot\sqrt{x+h+5}

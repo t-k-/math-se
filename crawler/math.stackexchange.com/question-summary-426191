@@ -1,0 +1,35 @@
+X \subseteq \mathbb{R}^n
+tx + (1-t)y \in X
+x,y \in X
+t \in (0,1)
+X \subseteq \mathbb{R}^n
+f: X  \to \mathbb R
+f(tx + (1-t)y) \ge tf(x) + (1-t)f(y)
+x,y \in X
+t \in (0,1)
+f: \mathbb{R}^n \to \mathbb R
+\sum_{i=1}^r t_if(x_i) \le f\left(\sum_{i=1}^r t_ix_i\right)
+x_1, \dots, x_r \in \mathbb R^n
+t_1,\dots,t_r \in (0,1)
+\sum_{i=1}^r t_i = 1
+\prod_{i=1}^r x_i^{t_i} \le \sum_{i=1}^r t_ix_i
+x_1, \dots, x_r \in \mathbb R
+t_1,\dots,t_r \in (0,1)
+\sum_{i=1}^r t_i = 1
+r
+(x, f(x)), (y, f(y))
+x_1, ..., x_k, x_{k+1} \in \mathbb{R}^n 
+t_1, ..., t_{k+1} \in (0, 1)
+\sum\limits_{i=1}^{k+1} t_i=1
+x'_k=\frac{t_kx_k+t_{k+1}x_{k+1}}{t_k+t_{k+1}}
+t'_k= t_k+t_{k+1}
+\sum\limits_{i=1}^{k-1} t_i + t'_k=1
+t'_kf(x'_k)+\sum\limits_{i=1}^{k-1} t_if(x_i)
+ \leq f( t'_kx'_k+\sum\limits_{i=1}^{k-1} t_ix_i)=f(\sum\limits_{i=1}^{k+1} t_ix_i)
+t_kf(x_k)+t_{k+1}f(x_{k+1}) \leq t'_kf(x'_k)
+0<t_k+t_{k+1}<1
+r \in \mathbb{R}
+rt_k+rt_{k+1}=1
+rt_kf(x_k)+rt_{k+1}f(x_{k+1}) \leq f(rt_kx_k+rt_{k+1}x_{k+1})=f(rt'_kx'_k)=f(x'_k)
+r= \frac{1}{t_k+t_{k+1}}
+r

@@ -1,0 +1,25 @@
+\operatorname{erfc}
+\int_0^t\dfrac{1}{x}e^{-\frac{a^2}{x}} \text{erf}\biggl(\dfrac{b}{\sqrt{x}}\biggr)~dx
+=\dfrac{2}{\sqrt{\pi}}\int_0^t\dfrac{1}{x}e^{-\frac{a^2}{x}}\int_0^\frac{b}{\sqrt{x}}e^{-u^2}~du~dx
+=\dfrac{2}{\sqrt{\pi}}\int_0^t\dfrac{1}{x}e^{-\frac{a^2}{x}}\int_0^1e^{-\left(\frac{bu}{\sqrt{x}}\right)^2}~d\biggl(\dfrac{bu}{\sqrt{x}}\biggr)~dx
+=\dfrac{2}{\sqrt{\pi}}\int_0^t\dfrac{1}{x}e^{-\frac{a^2}{x}}\int_0^1\dfrac{b}{\sqrt{x}}e^{-\frac{b^2u^2}{x}}~du~dx
+=\dfrac{2b}{\sqrt{\pi}}\int_0^t\int_0^1\dfrac{e^{-\frac{b^2u^2+a^2}{x}}}{x\sqrt{x}}du~dx
+=\dfrac{2b}{\sqrt{\pi}}\int_0^1\int_0^t\dfrac{e^{-\frac{b^2u^2+a^2}{x}}}{x\sqrt{x}}dx~du
+=\dfrac{4b}{\sqrt{\pi}}\int_0^1\int_0^t-e^{-\frac{b^2u^2+a^2}{x}}~d\biggl(\dfrac{1}{\sqrt{x}}\biggr)~du
+=\dfrac{4b}{\sqrt{\pi}}\int_0^1\int_\infty^\frac{1}{\sqrt{t}}-e^{-(b^2u^2+a^2)x^2}~dx~du
+=\dfrac{4b}{\sqrt{\pi}}\int_0^1\int_\frac{1}{\sqrt{t}}^\infty e^{-(b^2u^2+a^2)x^2}~dx~du
+=\dfrac{4b}{\sqrt{\pi}}\int_0^1\int_0^\infty e^{-(b^2u^2+a^2)x^2}~dx~du-\dfrac{4b}{\sqrt{\pi}}\int_0^1\int_0^\frac{1}{\sqrt{t}}e^{-(b^2u^2+a^2)x^2}~dx~du
+=2b\int_0^1\dfrac{1}{\sqrt{b^2u^2+a^2}}du-\dfrac{4b}{\sqrt{\pi}}\int_0^1\biggl[\sum\limits_{n=0}^\infty\dfrac{(-1)^n(b^2u^2+a^2)^nx^{2n+1}}{n!(2n+1)}\biggr]_0^\frac{1}{\sqrt{t}}~du
+=2b\int_0^1\dfrac{1}{\sqrt{b^2u^2+a^2}}du-\dfrac{4b}{\sqrt{\pi}}\int_0^1\sum\limits_{n=0}^\infty\dfrac{(-1)^n(b^2u^2+a^2)^n}{t^{n+\frac{1}{2}}n!(2n+1)}du
+=2b\int_0^1\dfrac{1}{\sqrt{b^2u^2+a^2}}du-\dfrac{4b}{\sqrt{\pi}}\int_0^1\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^nC_k^na^{2n-2k}b^{2k}u^{2k}}{t^{n+\frac{1}{2}}n!(2n+1)}du
+=2b\biggl[\dfrac{\ln\left(b^2u+b\sqrt{b^2u^2+a^2}\right)}{b}\biggr]_0^1-\dfrac{4b}{\sqrt{\pi}}\biggl[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^na^{2n-2k}b^{2k}u^{2k+1}}{t^{n+\frac{1}{2}}k!(n-k)!(2n+1)(2k+1)}\biggr]_0^1
+=2\ln\left(b^2+b\sqrt{a^2+b^2}\right)-2\ln(|a|b)-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^n4a^{2n-2k}b^{2k+1}}{\sqrt{\pi}t^{n+\frac{1}{2}}k!(n-k)!(2n+1)(2k+1)}
+\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\text{erfc}\left(\sqrt{\dfrac{a^2+x^2}{t}}\right)~dx
+=\dfrac{2}{\sqrt{\pi}}\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\int_\sqrt{\frac{a^2+x^2}{t}}^\infty e^{-u^2}~du~dx
+=\dfrac{2}{\sqrt{\pi}}\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\int_0^\infty e^{-u^2}~du~dx-\dfrac{2}{\sqrt{\pi}}\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\int_0^\sqrt{\frac{a^2+x^2}{t}}e^{-u^2}~du~dx
+=\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}dx-\dfrac{2}{\sqrt{\pi}}\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\biggl[\sum\limits_{n=0}^\infty\dfrac{(-1)^nu^{2n+1}}{n!(2n+1)}\biggr]_0^\sqrt{\frac{a^2+x^2}{t}}~dx
+=\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}dx-\dfrac{2}{\sqrt{\pi}}\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}\sum\limits_{n=0}^\infty\dfrac{(-1)^n(a^2+x^2)^{n+\frac{1}{2}}}{t^{n+\frac{1}{2}}n!(2n+1)}dx
+=\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}dx-\dfrac{2}{\sqrt{\pi}}\int_0^b\sum\limits_{n=0}^\infty\dfrac{(-1)^n(a^2+x^2)^n}{t^{n+\frac{1}{2}}n!(2n+1)}dx
+=\int_0^b\dfrac{1}{\sqrt{a^2+x^2}}dx-\dfrac{2}{\sqrt{\pi}}\int_0^b\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^nC_k^na^{2n-2k}x^{2k}}{t^{n+\frac{1}{2}}n!(2n+1)}dx
+=\left[\ln\left(x+\sqrt{a^2+x^2}\right)\right]_0^b-\dfrac{2}{\sqrt{\pi}}\biggl[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^na^{2n-2k}x^{2k+1}}{t^{n+\frac{1}{2}}k!(n-k)!(2n+1)(2k+1)}\biggr]_0^b
+=\ln\left(b+\sqrt{a^2+b^2}\right)-\ln|a|-\sum\limits_{n=0}^\infty\sum\limits_{k=0}^n\dfrac{(-1)^n2a^{2n-2k}b^{2k+1}}{\sqrt{\pi}t^{n+\frac{1}{2}}k!(n-k)!(2n+1)(2k+1)}

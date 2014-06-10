@@ -1,0 +1,40 @@
+\int_0^{+\infty}\,\frac{k}{ak^4+bk^2+c}\,\,\exp(-wk^2)\,\,dk
+a,b,c,w>0
+I(w)=\int_0^{\infty} dk \, k \frac{e^{-w k^2}}{a k^4+b k^2+c}  = \frac12 \int_0^{\infty} dx \frac{e^{-w x}}{a x^2+b x+c}
+x_+
+x_-
+I(w) = \frac{1}{2 a} \frac{1}{x_+-x_-} \left [\int_0^{\infty}dx \frac{e^{-w x}}{x-x_+} - \int_0^{\infty}dx \frac{e^{-w x}}{x-x_-} \right ]
+x_{\pm} = \frac{-b \pm \sqrt{b^2-4 a c}}{2 a}
+a
+b
+c
+x_{\pm}
+I(w) = \frac{1}{2 \sqrt{b^2-4 a c}} \left [e^{w x_+} E_1\left (-w x_+\right) - e^{w x_-} E_1\left (-w x_-\right)  \right ]
+b^2-4 a c \lt 0
+E_1
+b^2-4 a c=0
+I(w) = \frac{1}{a} \int_0^{\infty}dx \frac{e^{-w x}}{(x-x_+)^2} 
+I(w) = \frac{e^{w x_+}}{a} E_2(-w x_+)
+\int_0^\infty\dfrac{ke^{-wk^2}}{ak^4+bk^2+c}dk
+=\dfrac{1}{2}\int_0^\infty\dfrac{e^{-wk^2}}{ak^4+bk^2+c}d(k^2)
+=\dfrac{1}{2}\int_0^\infty\dfrac{e^{-wk}}{ak^2+bk+c}dk
+1
+b^2-4ac\neq0
+\dfrac{1}{2}\int_0^\infty\dfrac{e^{-wk}}{ak^2+bk+c}dk
+=\dfrac{1}{2a}\int_0^\infty\dfrac{e^{-wk}}{\left(k+\dfrac{b+\sqrt{b^2-4ac}}{2a}\right)\left(k+\dfrac{b-\sqrt{b^2-4ac}}{2a}\right)}dk
+=\dfrac{1}{2\sqrt{b^2-4ac}}\int_0^\infty\dfrac{e^{-wk}}{k+\dfrac{b+\sqrt{b^2-4ac}}{2a}}dk-\dfrac{1}{2\sqrt{b^2-4ac}}\int_0^\infty\dfrac{e^{-wk}}{k+\dfrac{b-\sqrt{b^2-4ac}}{2a}}dk
+=\dfrac{1}{2\sqrt{b^2-4ac}}\int_\frac{b+\sqrt{b^2-4ac}}{2a}^\infty\dfrac{e^{-w\bigl(k-\frac{b+\sqrt{b^2-4ac}}{2a}\bigr)}}{k}d\biggl(k-\dfrac{b+\sqrt{b^2-4ac}}{2a}\biggr)-\dfrac{1}{2\sqrt{b^2-4ac}}\int_\frac{b-\sqrt{b^2-4ac}}{2a}^\infty\dfrac{e^{-w\bigl(k-\frac{b-\sqrt{b^2-4ac}}{2a}\bigr)}}{k}d\biggl(k-\dfrac{b-\sqrt{b^2-4ac}}{2a}\biggr)
+=\dfrac{e^{\frac{b+\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_\frac{b+\sqrt{b^2-4ac}}{2a}^\infty\dfrac{e^{-wk}}{k}dk-\dfrac{e^{\frac{b-\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_\frac{b-\sqrt{b^2-4ac}}{2a}^\infty\dfrac{e^{-wk}}{k}dk
+=\dfrac{e^{\frac{b+\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_1^\infty\dfrac{e^{-w\frac{b+\sqrt{b^2-4ac}}{2a}k}}{\dfrac{b+\sqrt{b^2-4ac}}{2a}k}d\left(\dfrac{b+\sqrt{b^2-4ac}}{2a}k\right)-\dfrac{e^{\frac{b-\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_1^\infty\dfrac{e^{-w\frac{b-\sqrt{b^2-4ac}}{2a}k}}{\frac{b-\sqrt{b^2-4ac}}{2a}k}d\left(\dfrac{b-\sqrt{b^2-4ac}}{2a}k\right)
+=\dfrac{e^{\frac{b+\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_1^\infty\dfrac{e^{-\frac{b+\sqrt{b^2-4ac}}{2a}wk}}{k}dk-\dfrac{e^{\frac{b-\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}\int_1^\infty\dfrac{e^{-\frac{b-\sqrt{b^2-4ac}}{2a}wk}}{k}dk
+=\dfrac{e^{\frac{b+\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}E_1\biggl(\dfrac{b+\sqrt{b^2-4ac}}{2a}w\biggr)-\dfrac{e^{\frac{b-\sqrt{b^2-4ac}}{2a}w}}{2\sqrt{b^2-4ac}}E_1\biggl(\dfrac{b-\sqrt{b^2-4ac}}{2a}w\biggr)
+2
+b^2-4ac=0
+\dfrac{1}{2}\int_0^\infty\dfrac{e^{-wk}}{ak^2+bk+c}dk
+=\dfrac{1}{2a}\int_0^\infty\dfrac{e^{-wk}}{\left(k+\dfrac{b}{2a}\right)^2}dk
+=\dfrac{1}{2a}\int_\frac{b}{2a}^\infty\dfrac{e^{-w\left(k-\frac{b}{2a}\right)}}{k^2}d\left(k-\dfrac{b}{2a}\right)
+=\dfrac{e^{\frac{bw}{2a}}}{2a}\int_\frac{b}{2a}^\infty\dfrac{e^{-wk}}{k^2}dk
+=\dfrac{e^{\frac{bw}{2a}}}{2a}\int_1^\infty\dfrac{e^{-\frac{bkw}{2a}}}{\left(\dfrac{bk}{2a}\right)^2}d\left(\dfrac{bk}{2a}\right)
+=\dfrac{e^{\frac{bw}{2a}}}{b}\int_1^\infty\dfrac{e^{-\frac{bwk}{2a}}}{k^2}dk
+=\dfrac{e^{\frac{bw}{2a}}}{b}E_2\left(\dfrac{bw}{2a}\right)
+\int_{0}^{\infty}\frac{e^{-wx^2}}{\alpha x+\beta}dx= \frac{1}{2\pi \beta \sqrt{w} }\, G^{3, 2}_{2, 3}\left({\frac {{\beta}^{2}w}{{\alpha}^{2}}}\, \Big\vert\,^{\frac{1}{2}, 1}_{1, \frac{1}{2}, \frac{1}{2}}\right),

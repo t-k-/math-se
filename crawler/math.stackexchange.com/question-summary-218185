@@ -1,0 +1,28 @@
+F[x, F(y, z)] = F[F(x, y), z] 
+u = F(x, y)
+v = F(y, z)
+F(x, v) = F(u, z)
+x
+y
+F[x, F(y, z)]
+F[x, u]
+F_{x}(u,z)F_{x}(x,y)
+y
+F(x,v)
+F[x,u]
+y
+F(x,v)=F(u,z)
+y
+F(x,y) = u
+F(y,z) = v
+F(x,v) = F(u,z)
+x
+F(x,v) = F(u,z)
+y
+F(x,F(y,z)) = F(F(x,y),z)
+F(x,v) = F(u,z)
+\dfrac{\partial F(x,v)}{\partial x} + \dfrac{\partial F(x,v)}{\partial v} \underbrace{\dfrac{\partial v}{\partial x}}_{0} = \dfrac{\partial F(u,z)}{\partial u} \dfrac{\partial u}{\partial x} + \dfrac{\partial F(u,z)}{\partial z} \underbrace{\dfrac{\partial z}{\partial x}}_{0}
+F_x(x,v) = F_u(u,z)u_x = F_u(u,z)F_x(x,y)
+\underbrace{\dfrac{\partial F(x,v)}{\partial y}}_{0} + \dfrac{\partial F(x,v)}{\partial v} \dfrac{\partial v}{\partial y} = \dfrac{\partial F(u,z)}{\partial u} \dfrac{\partial u}{\partial y} + \dfrac{\partial F(u,z)}{\partial z} \underbrace{\dfrac{\partial z}{\partial y}}_{0}
+F_v(x,v)v_y = F_u(u,z)u_y
+F_v(x,v)F_y(y,z) = F_u(u,z)F_y(x,y)

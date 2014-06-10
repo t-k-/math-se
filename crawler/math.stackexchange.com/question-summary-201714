@@ -1,0 +1,24 @@
+(E,d)
+d(x,z) \leq \max(d(x,y),d(y,z))
+x,y,z\in E
+d(x,y) \neq d(y,z)
+d(x,z)=\max(d(x,y),d(y,z))
+d(x,y)\leq d(y,z)\leq d(x,z)
+d(x,z)\leq max(d(x,y),d(y,z))=d(y,z)\implies d(x,z)\leq d(y,z)
+d(y,z)\leq max(d(y,x),d(x,z))=d(x,z)\implies d(y,z)\leq d(x,z)
+\implies d(x,z)=d(y,z)\implies d(x,z)= max(d(x,y),d(y,z))
+a=d(y,z)
+b=d(x,z)
+c=d(x,y)
+a\gt c
+a\le \max(b,c)
+a\gt c
+a\le b
+b\le \max(a,c)
+b\le a
+b=a
+\leq
+<
+d(x, y) < d(y, z)
+d(x, z) < d(y, z)
+d(y, z) \leq max(d(y, x), d(x, z)) = max(d(x, y), d(x,z))

@@ -1,0 +1,17 @@
+D = \{(x, y):xy>0\} \subset \mathbb{R}^2
+(a,b) \in D
+a\leq b
+\delta = |a|
+ (a,b)\in D \Rightarrow ab > 0 \\ \Rightarrow (a > 0 \wedge b>0) \vee (a < 0 \wedge b < 0) \\ \Rightarrow \delta > 0. 
+P = \{(x, y) \in \mathbb{R}^2 : |(x, y) - (a, b) < \delta\}
+(m, n) \in P
+ (m, n) \in P \Rightarrow |(m, n) - (a, b)| < \delta = |a| \\ \Rightarrow m^2 - 2am +a^2 +n^2 -2nb +b^2 < a^2 \\ \Rightarrow m^2 -2am + +n^2 - 2nb +b^2 < 0 
+m = 0
+ m = 0 \Rightarrow n^2 -2nb + b^2 = (n-b)^2 < 0 
+n = 0
+ n = 0 \Rightarrow (m-a)^2 + b^2 < a^2 \\ b \geq a \Rightarrow b^2 \geq a^2 \Rightarrow (m-a)^2 \leq 0 \Rightarrow m = a \\ m = a \Rightarrow |(m, n) - (a, b)| = |(a, 0) - (a, b)| = |(0, -b)| = |b| > |a| 
+(m,n) \in P \Rightarrow |(m, n) - (a, b)| < \delta = |a|
+m = 0 \Rightarrow |(m, n) - (a, b)| > |a|
+m > 0 \Rightarrow n > 0
+m < 0 \Rightarrow n < 0
+f^{-1}\big[(0,\infty)\big]

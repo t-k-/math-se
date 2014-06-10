@@ -1,0 +1,43 @@
+f(x/2 + y/2) \le f(x)/2 + f(y)/2
+f(tx +(1-t)y) \le tf(x) + (1-t)f(y)
+x,y \in X
+t \in (0,1)
+t\in [0,1]
+a_k\in \{0,1\}
+t
+a_k = 0
+(1)
+k
+t
+(2)
+1-t
+b_k\in \{0,1\}
+   t = \sum_{k=1}^\infty a_k 2^{-k} \tag{1} 
+   t = \sum_{k=1}^n a_k 2^{-k}. \tag{2} 
+   1-t =  \sum_{k=1}^n b_k 2^{-k}. \tag{3} 
+t\in [0,1]
+t_n\to t
+t_n
+(2)
+   f(tx+(1-t)y) = \lim_n f(t_nx + (1-t_n)y) \leq \lim_nt_nf(x) + (1-t_n)f(y) = tf(x) + (1-t)f(y). 
+x,y,t
+f(tx + (1-t)y) > tf(x) + (1-t)f(y)
+\epsilon > 0
+s \in (t - \epsilon, t + \epsilon), f(sx + (1-s)y) > sf(x) + (1-s)f(y)
+\epsilon
+s
+N / 2^k
+k
+s
+f(sx + (1-s)y) \leq sf(x) + (1-s)f(y),
+ \frac{N}{2^k } = \frac12\left( \frac{\lfloor N / 2 \rfloor}{2^{k-1}} + \frac{\lceil N / 2 \rceil}{2^{k-1}}\right)
+k
+\tilde{N} = 1,2,\ldots, 2^k - 1
+s = \tilde{N} / 2^k
+f(sx + (1-s)y) \leq sf(x) + (1-s)f(y)
+\tilde{N} = 0 \text{ or }2^k)
+k+1
+1 \leq N \leq 2^{k+1} - 1, s = N/2^{k+1}
+0 \leq \lfloor N/2 \rfloor , \lceil N/2 \rceil \leq 2^k
+\tilde{s} = \frac{\lfloor N/2 \rfloor}{2^k}, \tilde{t} = \frac{\lceil N/2 \rceil}{2^k} 
+sx + (1-s)y = \frac12 ([\tilde{s}x + (1-\tilde{s})y] + [\tilde{t}x + (1-\tilde{t})y]).

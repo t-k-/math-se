@@ -1,0 +1,50 @@
+Y_1, \ldots, Y_n
+\mu
+\sigma^2
+\bar{Y}
+\bar{Y}
+Y_i - \bar{Y}
+Y_1, \ldots, Y_n
+\bar{Y}
+\bar{Y}
+Y_i - \bar{Y}
+E(\bar{Y})
+\bar{Y}
+\bar{Y}
+ (1\div n)
+\sum_{i=1}^n Y_i
+\mu
+\mu
+\bar{Y}
+ = 
+\text{cov} (\bar{Y}, Y_i - \bar{Y})$ = $E[(\bar{Y}-E(\bar{Y})) * (Y_i-\bar{Y}-E(Y_i-\bar{Y}))]
+E(\bar{Y})
+\mu
+\mu
+\bar{Y}
+\bar{Y}\mu - \bar{Y^2} - \mu^2 + \mu\bar{Y}
+\bar{Y}
+\text{Cov}[\bar{Y}, Y_i - \bar{Y}] = \frac1n\sum_j \text{Cov}[Y_j,Y_i] - \frac1n \sum_j \text{Cov}[Y_j,\bar{Y}]
+\text{Cov}[Y_j,Y_i]
+j\neq i
+\text{Var}[Y_i] = \sigma^2
+j=i
+\frac1n \sigma^2
+\text{Cov}[\bar{Y}, Y_i - \bar{Y}] = \frac1n \sigma^2 - \frac1n\sum_j \text{Cov}[Y_j,\bar{Y}]
+\bar{Y}
+\bar{Y}
+\text{Cov}[\bar{Y}, Y_i - \bar{Y}] = \frac1n \sigma^2 - \frac1n \sum_j \left( \frac1n \sum_k \text{Cov}[Y_j,Y_k]\right)
+\text{Cov}[Y_j,Y_k]
+k\neq j
+\text{Var}[Y_j] = \sigma^2
+k=j
+\text{Cov}[\bar{Y}, Y_i - \bar{Y}] = \frac1n \sigma^2 - \frac1n \sum_j \left( \frac1n \sigma^2\right)
+n
+\text{Cov}[\bar{Y}, Y_i - \bar{Y}] = \frac1n \sigma^2 - \frac1n  (n \cdot \frac1n \sigma^2) = \frac1n \sigma^2 - \frac1n \sigma^2 = 0
+\text{cov}(\bar Y, Y_i - \bar Y) 
+i
+ \forall i, \ \sum_{j=1}^n \text{cov}(\bar Y, Y_j - \bar Y) = n \ \text{cov}(\bar Y, Y_i - \bar Y).  
+ \frac 1 n \sum_{j=1}^n \text{cov}(\bar Y, Y_j - \bar Y) = \text{cov}(\bar Y, \frac 1 n \sum_{j=1}^n Y_j - \bar Y) = \text{cov}(\bar Y,0) = 0.
+E(\bar{Y})= \bar{Y}
+ Cov(x,y) = \mathrm{E}\left[\left(X-\mathrm{E}(X)\right)\left(Y-\mathrm{E}(Y)\right)\right] 
+ Cov(x,y) = \mathrm{E}\left[\left(\bar{Y}-\mathrm{E}(\bar{Y})\right)\left(Y-\bar{Y}-\mathrm{E}(Y-\bar{Y})\right)\right] = \mathrm{E}\left[0\cdot\left(Y-\bar{Y}\right)\right] = 0  

@@ -1,0 +1,30 @@
+\epsilon_{1\cdots n}=1
+\{i_1,\ldots,i_n\}
+i_j\in\{1,\ldots,n\}
+\epsilon
+\prod_{j,k}(i_j-i_k)
+i
+(i_j-i_k)
+\epsilon
+c_n
+\begin{eqnarray*} e(i_1,\ldots,i_n) &=& c_n\prod_{1\le j<k\le n}(i_k-i_j) \\ &=& c_n \prod_{k=2}^n\prod_{j=1}^{k-1}(i_k-i_j) \\ &=& c_n [(i_2-i_{1})] \\ && \times  [(i_3-i_1)(i_3-i_2)] \\ && \cdots \\ && \times [(i_{n-1}-i_{1})\cdots(i_{n-1}-i_{n-2})] \\ && \times [(i_n-i_{1})\cdots(i_n-i_{n-1})]  \end{eqnarray*}
+i
+-1
+e(i_2,i_1,\ldots,i_n) = -e(i_1,i_2,\ldots,i_n)
+-1
+(i_2-i_1)
+\epsilon
+i
+e(1,\ldots,n)
+c_n
+\mathrm{sf}(n)=\prod_{k=1}^{n}k
+n=0
+1,1,2,12,288,\ldots
+n
+\begin{eqnarray*} e(1,\ldots,n) &=& c_n \prod_{k=2}^n\prod_{j=1}^{k-1}(k-j) \\ &=& c_n \prod_{k=2}^n\prod_{l=1}^{k-1}l  \hspace{5ex} (\textrm{let }m=k-j) \\ &=& c_n \prod_{k=2}^n (k-1)! \\ %&=& c_n \prod_{k=1}^{n-1}k \\ &=& c_n \, \mathrm{sf}(n-1), \end{eqnarray*}
+\begin{eqnarray*} \epsilon_{i_1\cdots i_n} &=& e(i_1,\ldots,i_n) \\ &=& \frac{1}{\mathrm{sf}(n-1)} \prod_{1\le j<k\le n}(i_k-i_j).  \hspace{10ex} \textrm{(1)} \end{eqnarray*}
+\epsilon_{i_1\cdots i_n}^{2m+1} = \epsilon_{i_1\cdots i_n}
+m\in\mathbb{N}
+\epsilon
+\epsilon
+\begin{eqnarray*} \frac{1}{\mathrm{sf}(n-1)^{2m+1}} \prod_{1\le j<k\le n}(i_k-i_j)^{2m+1} \end{eqnarray*}

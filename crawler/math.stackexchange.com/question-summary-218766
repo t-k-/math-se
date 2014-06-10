@@ -1,0 +1,67 @@
+n
+n
+t=\tan x
+\tan nx=\frac{^nC_1t-^nC_3t^3+^nC_5t^5-\cdots }{^nC_0t^0-^nC_2t^2+^nC_4t^4-\cdots }
+\tan nx=0, x=\frac {k\pi}n
+0\le k< n
+n
+\tan\frac{k\pi}n
+n
+^nC_n(-1)^{\frac{n-1}2}t^n+^nC_{n-2}(-1)^{\frac{n-3}2}t^{n-2}+\cdots-^nC_3t^3+^nC_1t=0
+^nC_n(-1)^{\frac{n-1}2}t^{n-1}+^nC_{n-2}(-1)^{\frac{n-3}2}t^{n-3}+\cdots-^nC_3t^2+^nC_1=0
+k=0
+\tan \left(\frac{(n-k) \pi}{n}\right)=\tan \left(\pi-\frac{k \pi}{n}\right)=-\tan \left(\frac{k \pi}{n}\right)
+\frac{n-1}2
+\lfloor \frac{n-1}2  \rfloor=\frac{n-1}2
+n
+\prod_{k=1}^{n-1}\tan \left(\frac{k \pi}{n}\right)
+=(-1)^{\frac{n-1}2}\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan^2 \left(\frac{k \pi}{n}\right) 
+\implies (-1)^{\frac{n-1}2}\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan^2 \left(\frac{k \pi}{n}\right)=n(-1)^{\frac{n-1}2} 
+\implies \left(\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)\right)^2=n
+\implies \prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)=\sqrt n
+(0,\frac \pi 2)
+n
+ ^nC_1t^{n-1}-^nC_3t^{n-3}+^nC_5t^{n-5}-\cdots+^nC_{n-1}(-1)^{\frac n 2}t=0
+\tan\frac{k\pi}n
+0\le k<n
+k\ne \frac n 2
+k=\frac n 2
+\tan \frac \pi 2(=\infty)
+t^n
+0
+ ^nC_1t^{n-2}-^nC_3t^{n-4}+^nC_5t^{n-6}-\cdots+^nC_{n-1}(-1)^{\frac n 2}=0
+k=0
+(n-2)
+t
+\prod_{k=1}^{n-1}_{(k\ne \frac n 2)}\tan \left(\frac{k \pi}{n}\right)=-(-1)^{\frac n 2}
+\tan \left(\frac{(n-k) \pi}{n}\right)=\tan \left(\pi-\frac{k \pi}{n}\right)=-\tan \left(\frac{k \pi}{n}\right)
+\frac{n-2}2=(\frac n 2 -1)
+\lfloor \frac{n-1}2  \rfloor=\frac{n-2}2
+n
+-(-1)^{\frac n 2}
+=\prod_{k=1}^{n-1}_{(k\ne \frac n 2)}\tan \left(\frac{k \pi}{n}\right)
+=(-1)^{\frac{n-2}2}\left(\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)\right)^2
+\implies \left(\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)\right)^2=1
+\implies \prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)=1
+(0,\frac \pi 2)
+\cos(nx)(1+i\tan(nx))=e^{inx}=(\cos(x)(1+i\tan(x)))^n
+n
+x\in\left\{\tan\left(\dfrac{k\pi}{n}\right):1\le k\le n-1\right\}
+(3)
+\tan(\pi-x)=-\tan(x)
+(4)
+ \tan(nx)=\frac{\displaystyle\sum_{k=0}^{(n-1)/2}(-1)^{k}\binom{n}{2k+1}\tan^{2k+1}(x)}{\displaystyle\sum_{k=0}^{(n-1)/2}(-1)^{k}\binom{n}{2k}\tan^{2k}(x)}\tag{2} 
+ \sum_{k=0}^{(n-1)/2}(-1)^{k}\binom{n}{2k+1}x^{2k}=0\tag{3} 
+ \prod_{k=1}^{n-1}\tan\left(\dfrac{k\pi}{n}\right)=(-1)^{(n-1)/2}n\tag{4} 
+ \prod_{k=1}^{(n-1)/2}\tan\left(\dfrac{k\pi}{n}\right)=\sqrt{n}\tag{5} 
+n
+ \tan^2(\theta/2)=-\left(\frac{e^{i\theta}-1}{e^{i\theta}+1}\right)^2 
+ \begin{align} \prod_{k=1}^{(n-1)/2}\tan^2(k\pi/n) &=\prod_{k=1}^{(n-1)/2}(-1)\left(\frac{e^{2\pi ik/n}-1}{e^{2\pi ik/n}+1}\right)^2\\ &=\prod_{k=1}^{(n-1)/2}\left(\frac{e^{2\pi ik/n}-1}{e^{2\pi ik/n}+1}\right)\left(\frac{e^{-2\pi ik/n}-1}{e^{-2\pi ik/n}+1}\right)\\ &=\prod_{k=1}^{(n-1)/2}\left(\frac{e^{2\pi ik/n}-1}{e^{2\pi ik/n}+1}\right)\left(\frac{e^{2\pi i(n-k)/n}-1}{e^{2\pi i(n-k)/n}+1}\right)\\ &=\prod_{k=1}^{n-1}\frac{e^{2\pi ik/n}-1}{e^{2\pi ik/n}+1}\\ &=\prod_{k=1}^{n-1}\frac{1-e^{2\pi ik/n}}{1+e^{2\pi ik/n}}\\ &=\lim_{z\to1}\prod_{k=1}^{n-1}\frac{z-e^{2\pi ik/n}}{z+e^{2\pi ik/n}}\\ &=\lim_{z\to1}\frac{z^n-1}{z-1}\frac{z+1}{z^n+1}\\[12pt] &=n \end{align} 
+ \prod_{k=1}^{(n-1)/2}\tan(k\pi/n)=\sqrt{n} 
+\tan(\frac{\pi}{2}-x) \tan(x)=1
+n
+n=2m
+P:=\prod_{k=1}^{\lfloor (n-1)/2  \rfloor}\tan \left(\frac{k \pi}{n}\right)=\prod_{k=1}^{m-1}\tan \left(\frac{k \pi}{2m}\right) =\prod_{k=1}^{m-1}\tan \left(\frac{(m-k) \pi}{2m}\right) 
+P^2=\prod_{k=1}^{m-1}\tan \left(\frac{k \pi}{2m}\right)\prod_{k=1}^{m-1}\tan \left(\frac{(m-k) \pi}{2m}\right)=1
+P
+\cos(\frac {\pi}{2}) = 0

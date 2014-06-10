@@ -1,0 +1,25 @@
+f
+g
+(f * g)(n) = \displaystyle\sum\limits_{d \mid n} f(d)g(\frac{n}{d})
+(f * g) * h = f * (g * h)
+f
+g(n) = 1
+h(n) = \sigma(n)
+ ((f*g)*h)(n)=\sum_{d|n}(f*g)(d)h\left(\frac nd\right)=\sum_{d|n}\left(\sum_{r|d}f(r)g\left(\frac dr\right)\right)h\left(\frac nd\right) 
+ (f*(g*h))(n)=\sum_{d|n}f(d)(g*h)\left(\frac nd\right)=\sum_{d|n}f(d)\sum_{r|\frac nd}g(r)h\left(\frac n{rd}\right)\;, 
+n
+ \sum_{drs=n}f(d)g(r)h(s)\;. 
+f = \varphi
+g=1
+h=\sigma
+f,g,h
+n=p^k
+p
+n
+\varphi(p^0) =1\neq p^{-1}(p-1)
+f * g(n) =\sum_{d \mid n} \varphi(d)=n
+(f*g)*h(p^k)=\sum_{i=0}^k p^{k-i} \sigma(p^i)=\sum_{i=0}^k p^{k-i} \frac{p^{i+1}-1}{p-1}=\frac{(k+1)p^{k+2}-(k+2)p^{k+1}+1}{(p-1)^2}
+g * h(p^k)=\sum_{i=0}^k \sigma(p^i)=\sum_{i=0}^k \frac{p^{i+1}-1}{p-1}=\frac{1}{p-1}\sum_{i=0}^kp^{i+1}-1=\frac{p^{k+2}-p(k+2)+k+1}{(p-1)^2},
+f*(g*h)(p^k)=\sum_{i=0}^k\varphi(p^{k-i})\frac{p^{i+2}-p(i+2)+i+1}{(p-1)^2}
+=\frac{p^{k+2}-p(k+2)+k+1}{(p-1)^2}+\sum_{i=0}^{k-1} p^{k-i-1}\frac{p^{i+2}-p(i+2)+i+1}{p-1}
+\frac{(k+1)p^{k+2}-(k+2)p^{k+1}+1}{(p-1)^2}

@@ -1,0 +1,15 @@
+g
+\beta
+t=0
+\ddot{x}(t)=-\beta \sqrt{\dot{x}(t)^2+\dot{y}(t)^2}\dot{x}(t)
+\ddot{y}(t)=-g+\beta \sqrt{\dot{x}(t)^2+\dot{y}(t)^2}\dot{y}(t)
+x(0)=x_0,y(0)=y_0
+\dot{x}(0)=x_1,\dot{y}(0)=y_1
+ x(t) = x_{{0}}+x_{{1}}t - \frac{1}{2}\,\beta\,\sqrt {{x_{ {1}}}^{2}+{y_{{1}}}^{2}}\,x_{{1}}{t}^{2}+ O ( {t}^{3} ),
+ y( t ) =  y_{{0}}+y_{{1}}t+ \left( -\frac{1}{2}\,g+\frac{1}{2}\,\beta\, \sqrt {{x_{{1}}}^{2}+{y_{{1}}}^{2}}y_{{1}} \right) {t}^{2}+O ( t ^{3} )\,.
+\beta\neq0
+\begin{cases}u(t)=\dot{x}(t)\\v(t)=\dot{y}(t)\end{cases}
+\begin{cases}\dot{u}(t)=\ddot{x}(t)\\\dot{v}(t)=\ddot{y}(t)\end{cases}
+\therefore\begin{cases}\dot{u}(t)=-\beta\sqrt{u(t)^2+v(t)^2}u(t)~......(1)\\\dot{v}(t)=-g+\beta\sqrt{u(t)^2+v(t)^2}v(t)~......(2)\end{cases}
+\dfrac{(2)}{(1)}
+\dfrac{dv}{du}=\dfrac{-g+\beta\sqrt{u^2+v^2}v}{-\beta\sqrt{u^2+v^2}u}=\dfrac{g}{\beta\sqrt{u^2+v^2}u}-\dfrac{v}{u}

@@ -1,0 +1,32 @@
+p
+k, q\in \mathbb{Z}_{>0}
+\frac{1}{q} \binom{p^k q}{p^k} \equiv 1 \mod p \;.
+q
+p
+\mathbb{p}(n)
+e \in \mathbb{N}_0
+p^e \mid n
+\sigma(n) = {n \over p^{\mathbb{p}(n)}}
+i < p^k
+\mathbb{p}(p^k(q-1)+i) = \mathbb{p}(i)
+\sigma(p^k(q-1)+i) \equiv \sigma(i) \mod{p}
+i = p^k
+{p^k(q-1)+p^k \over p^k} = q
+1 \over q
+{1 \over q} \prod_{i=1}^{p^k}{p^k(q-1)+i \over i} \equiv 1 \mod{p}
+ \frac{1}{q} \binom{p^k q}{p^k} = \binom{p^k q - 1}{p^k - 1} = \prod_{i=1}^{p^k - 1}\frac{p^k (q - 1) + i}{i} = \prod_{i=1}^{p^k - 1}\left( \frac{p^k (q - 1)}{i} + 1 \right) \,.
+i
+\{1,\dots,p^k - 1\}
+i
+\forall \, i \in \{1,\dots,p^k - 1\}
+i
+i = p^{k - j_i}c_i
+0 < j_i \leq k
+p \nmid c_i
+\frac{p^k (q - 1) + i}{i} = p^{j_i}\frac{(q - 1)}{c_i} + 1\,,
+p \nmid c_i
+0 < d_i < p
+\frac{(q - 1)}{c_i} \equiv d_i\,(q - 1) \mod p\;.
+j_i > 0
+\frac{p^k (q - 1) + i}{i} = p^{j_i}\frac{(q - 1)}{c_i} + 1 \;\;\equiv\;\; p^{j_i} d_i (q - 1) + 1  \;\;\equiv\;\; 1\mod p\,,
+ \frac{1}{q} \binom{p^k q}{p^k} =  \prod_{i=1}^{p^k - 1}\left( \frac{p^k (q - 1)}{i} + 1 \right)  \;\;\equiv\;\; \prod_{i=1}^{p^k - 1} 1 \;\;\equiv 1\mod p\,.

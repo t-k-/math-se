@@ -1,0 +1,14 @@
+\min_x f(x)\;\;\;s.t.\;\;\;g(x) \leq s
+\min_x g(x)\;\;\;s.t.\;\;\;f(x) \leq t
+f(x) = \|x\|_1
+g(x) = \|y - Ax\|_2
+L_1= f(x)+\lambda_1 (g(x)-s) 
+\frac{\partial  L_1}{\partial x} = f'(x)+\lambda_1 g'(x)=0\;\Rightarrow\;f'(x)=-\lambda_1 g'(x)\qquad [1]
+L_2= g(x)+\lambda_2 (f(x)-t) 
+\frac{\partial  L_2}{\partial x} = g'(x)+\lambda_2 f'(x)=0\;\Rightarrow\;f'(x)=-\frac{1}{\lambda_2} g'(x)\qquad [2]
+\lambda_1=\frac{1}{\lambda_2}
+\lambda_1\neq0\;,\;\lambda_2\neq0
+x^\star
+f'(x^\star)=g'(x^\star)=0
+f'(x)
+g'(x)

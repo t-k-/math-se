@@ -1,0 +1,6 @@
+ \left\{ \begin{aligned} 3x_1-2x_2+4x_3&=1 \\ x_1+x_2-2x_3&=3 \\ 2x_1-3x_2+6x_3&=8 \end{aligned} \right. 
+ \left\{ \begin{aligned} x_1+x_2-2x_3&=3 \\ 3x_1-2x_2+4x_3&=1 \\ 2x_1-3x_2+6x_3&=8 \end{aligned} \right. 
+ \left\{ \begin{aligned} x_1+x_2-2x_3&=3 \\ -5x_2+10x_3&=-8 \\ 2x_1-3x_2+6x_3&=8 \end{aligned} \right. 
+ \left\{ \begin{aligned} x_1+x_2-2x_3&=3 \\ -5x_2+10x_3&=-8 \\ -5x_2+10x_3&=-2 \end{aligned} \right. 
+ \left\{ \begin{aligned} x_1+x_2-2x_3&=3 \\ -5x_2+10x_3&=-8 \\ 0=10 \end{aligned} \right. 
+\begin{bmatrix} 3 & -2 & 4 & 1 \\ 1 & 1 & -2 & 3 \\ 2 & -3 & 6 &  8 \\ \end{bmatrix} \xrightarrow{R_1 \leftrightarrow R_2} \begin{bmatrix} 1 & 1 & -2 & 3 \\ 3 & -2 & 4 & 1 \\ 2 & -3 & 6 &  8 \\ \end{bmatrix} \xrightarrow{R_2 \gets R_2 -3 R_1} \begin{bmatrix} 1 & 1 & -2 & 3 \\ 0 & -5 & 10 & -8 \\ 2 & -3 & 6 &  8 \\ \end{bmatrix} \xrightarrow{R_3 \gets R_3 -2 R_1} \begin{bmatrix} 1 & 1 & -2 & 3 \\ 0 & -5 & 10 & -8 \\ 0 & -5 & 10 &  2 \\ \end{bmatrix} \xrightarrow{R_3 \gets R_3 -R_2} \begin{bmatrix} 1 & 1 & -2 & 3 \\ 0 & -5 & 10 & -8 \\ 0 & 0 & 0 &  10 \\ \end{bmatrix}

@@ -1,0 +1,14 @@
+F(x) = \int^x_0 t\cosh(t^4)\,dt
+\int^1_0 xF(x)\,dx
+F(1)
+	\lim_{x\to0}\frac{F(x)}{x^2}
+F(x) = \int^x_0 t\cosh(t^4)\,dt
+\int^1_0 xF(x)\,dx
+u = F(x)
+du = \frac{d}{dx}\int^x_0 t\cosh(t^4)\,dt = x\cosh(x^4) \, dx
+dv = x
+v = \dfrac{x^2}{2}
+ \begin{align} & {}\quad \int^x_0 t\cosh(t^4)\,dt = \dfrac{x^2}{2} F(x)|^1 _0 - \dfrac{1}{2}\int^1_0x^3\cosh(x^4) \, dx \\[6pt] & = \dfrac{1}{2}F(1) - \dfrac{1}{2}\cdot\dfrac{1}{4}[\sinh(x^4)|^1 _0 ] \\[6pt] & = \dfrac{1}{2}F(1) - \dfrac{1}{8}\sinh(1) \end{align} 
+\lim_{x\to0}\frac{F(x)}{x^2}
+\lim_{x\to0}F(x)
+\lim_{x\to0}\frac{F(x)}{x^2} = \lim_{x\to0}\frac{x\cosh(x^4)}{2x} = \dfrac{1}{2}

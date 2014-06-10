@@ -1,0 +1,29 @@
+(a_k)
+b_k=\frac{a_1+a_2+\dots a_k}{k}
+k\in \mathbb{N}
+(a_k)
+\alpha\in \mathbb{R}
+(b_k)
+\alpha
+\epsilon > 0
+a_k
+\alpha
+N_{\epsilon1}\in\mathbb{N}
+|a_k - \alpha | < \frac{\epsilon}{2}
+k \geq N_{\epsilon1}
+\frac{a_1+...+a_n - n\alpha}{k}
+0
+k
+N_{\epsilon2}\in\mathbb{N}
+|\frac{a_1+...+a_n - n\alpha}{k}|<\frac{\epsilon}{2}
+k>N_{\epsilon2}
+N= 
+ (N_{\epsilon1},N_{\epsilon2})
+k>N
+N_{\epsilon1}\leq N<k
+k-n<k
+N
+\alpha
+(b_k)
+\alpha
+\begin{array}{rcll} |b_k-\alpha| &=& |b_k - \alpha*1|&\\ &=& |\frac{a_1+...+a_k}{k} - \frac{k\alpha}{k}|&\\ &=& |\frac{a_1+...+a_n}{k} + \frac{[a(n+1)+...+a_k]}{k} - \frac{(k-n)\alpha}{k} - \frac{n\alpha}{k}|& \text{(notice that $N_{\epsilon1}\leq N<k$)}\\ &=& |\frac{a_1+...+a_n - n\alpha}{k} + \frac{[a(n+1)+...+a_k - (k-n)\alpha]}{k}|&\\ &=& |\frac{a_1+...+a_n - n\alpha}{k} + \frac{[(a(n+1) -\alpha) + ... + (a_k - \alpha)]}{k}|&\\ &=& |\frac{a_1+...+a_n - n\alpha}{k} + \frac{(a(n+1) -\alpha)}{k} + ... + \frac{(a_k - \alpha)}{k}|&\\ &\leq& |\frac{a_1+...+a_n - n\alpha}{k}| + |\frac{(a(n+1) - \alpha)}{k}| + ... + |\frac{(a_k - \alpha)}{k}|& \text{(by the triangle inequality)}\\ &=&|\frac{a_1+...+a_n - n\alpha}{k}| + \frac{|(n+1) - \alpha|}{k} + ... + \frac{|a_k - \alpha|}{k}&\\ &<& \frac{\epsilon}{2} + [\frac{\epsilon}{2}/k + ... + \frac{\epsilon}{2}/k]& \\ &=& \frac{\epsilon}{2} + \frac{\epsilon}{2}*\frac{(k-n)}{k}&\\ &<& \frac{\epsilon}{2} + \frac{\epsilon}{2}& \text{(since $k-n<k$)}\\ &=& \epsilon& \end{array}

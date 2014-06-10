@@ -1,0 +1,22 @@
+S = \sum_{i=1}^{N} X_i
+X_i
+S
+s
+P(S=s) = \sum_{n=1}^{\infty} P(S=s \mid N=n) P(N=n)
+N = n
+n
+P(N=n)
+N
+X
+P(X = k | N = n) = {\rm bin}(k,n,p) = {\binom{n}{k}}p^k(1-p)^{n-k}.
+N
+t, P(N = n) = (1- t)t^n, n = 0,1,\dots .
+P(X=k, N=n) = \binom{n}{k}p^k(1-p)^{n-k}(1-t)t^n.
+n
+n \ge k
+P(X=k) = \sum_{n=k}^\infty \binom{n}{k}p^k(1-p)^{n-k}(1-t)t^n
+= p^kt^k(1-t)\sum_k^\infty \binom{n}{k}[(1-p)t)]^{n-k}
+= (pt)^k(1-t)\sum_{m=0}^\infty \binom{m+k}{k}[(1-p)t)]^m
+=(pt)^k(1-t)(1- (1-p)t)^{-(k+1)}
+=\frac{1-t}{1-t+pt}[\frac{pt}{1-t+pt}]^k.
+  X \sim {\rm geom}-\frac{pt}{1-t+pt}.

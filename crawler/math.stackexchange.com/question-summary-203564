@@ -1,0 +1,46 @@
+G = (V,E)
+n
+\delta > 10
+V
+A
+B
+|A| \le O (\frac{n \ln \delta}{\delta})
+B
+A
+B
+A
+B
+A
+B
+A
+D
+G
+G|_{V-D}
+D
+p \in (0,1)
+v \in V
+\Pr[v \in A_1] = p
+A_2
+A_1
+w \in A_2
+A_1
+A_1 \cup A_2
+A_3
+A_1 \cup A_2
+A_1
+A_2
+A_3
+A = A_1 \cup A_2 \cup A_3
+|A|
+{\bf E}[|A_1|] + {\bf E}[|A_2|] + {\bf E}[|A_3|]
+|A_3|
+v \in A_3
+w
+\Pr[w \in A_1] = p
+\Pr[w \in A_2] < (1-p)^{\delta+1}
+\Pr[(w \in A_1) \vee (w \in A_2)] < p + (1-p)^{\delta+1}
+\Pr[v \in A_3] < (1-p)(p + (1-p)^{1+\delta})^\delta
+A
+p = \ln(1+\delta)/(1+\delta)
+p + (1-p)^{1+\delta} < 1
+O(n\ln\delta/\delta)

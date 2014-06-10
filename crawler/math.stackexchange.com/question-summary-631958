@@ -1,0 +1,26 @@
+\Omega \subset \mathbb{R}^n
+n\ge 3
+f
+D_if
+\,\|f\|=\|f\|_{\infty} + \sum_i \|D_if\|_\infty
+ C^{1,b}(\Omega)= \{\,f\in C^1(\Omega): \text{$f$ and all its partial  derivatives $D_if$ are bounded} \} 
+g:\Omega \times \Omega \rightarrow \mathbb{R}
+C>0
+\,f\in C^b(\Omega)
+A
+\,\,f \in C^b(\Omega),\, x \in \Omega
+i=1,...,n
+V: C^b(\Omega) \rightarrow C^{1,b}(\Omega)
+f \mapsto \int_{\Omega} g(.,y)f(y) dy
+g
+ x \neq y \,\,\Longrightarrow\,\, |g(x,y)| \le C\,|x-y|^2 
+ \int _{\Omega} g(.,y)\,f(y)\, dy \in C^{1,b}(\Omega)\quad \text{for all $\,f\in C^b(\Omega)$.} 
+ \Big|\,D_i \int_{\Omega} g(x,y) \,f(y)\, dy\,\Big|\le A\|f\|_{\infty},  \quad\text{for all $\,\,f \in C^b(\Omega),\, x \in \Omega$ and $i=1,...,n$.} 
+X,Y,Z
+T:X\rightarrow Y
+J:Y \rightarrow Z
+J \circ T
+T
+ \Big|\int_{\Omega} g(x,y) \,f(y)\, dy\,\Big|\le A\|f\|_{\infty}
+A=\sup_{x\in \Omega}\int_{\Omega} C|x-y|^2 dy
+ \Big|\int_{\Omega} g(x,y) \,f(y)\, dy\,\Big|\le\int_{\Omega} C|x-y|^2 \,f(y)\, dy \le A\|f\|_{\infty},

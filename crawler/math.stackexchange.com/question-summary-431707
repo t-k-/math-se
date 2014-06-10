@@ -1,0 +1,18 @@
+\sum_{n\leq x} \pi_{2}(n)(\log(n+1)^2-\log(n)^2)
+= \sum_{n\leq x}\pi_2(n)\frac{2\log m}{m} 
+= \sum_{n\leq x}( \frac{n\log\log n}{\log n} + O(A ))(\frac{2\log(n)}{n} +O(\frac{\log(n)}{n^2}))  
+= 2\log\log n + O(B) 
+\sum_{p_2\leq x}\log (p_{2})^2 = \sum_{n\leq x} \log(n)^2(\pi_2(n)-\pi_2(n-1))
+= \log(x)^2\pi_2(x) - \sum_{n \leq x}\pi_2(n)(\log(n+1)^2- \log (n)^2) 
+= \log(x)^2(\frac{x\log\log x}{\log x} + O(A) ) - c\log\log x + O(B) 
+= x\log x \log\log x - c \log\log x + O(C) 
+\sum_{p_2 \leq x} \log(p_{2})^2 \sim x\log x \log\log x
+ \begin{array}{r|c|c|c} x&(\sum_{p_2\leq x}\log(p_2)^2) / (x\log x\log\log x)\\ \hline\\ 10000 &0.867 \\ 100000 & 0.918\\ 500000&0.941 \end{array} 
+P_2
+n < x
+ \frac{\log\log x}{\log x} 
+ \int_{1}^{x} \frac{\log\log t}{\log t} \cdot (\log t)^2 dt \sim x \log x \log\log x 
+A
+\ll x / \log x
+ \sum \le x (\log{p})^{2} \sim \int_{1}^{x}\log(t)\,dt
+ \pi (n)-\pi(n-1) \sim \frac{1}{\log(n)} 

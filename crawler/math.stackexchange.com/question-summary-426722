@@ -1,0 +1,39 @@
+X
+Y
+h : X\times Y \to R
+\mathbb{R}
+F: X \to\mathbb{R}
+G : y \to \mathbb{R}
+F(x):=\sup\{h(x,y) : y\in Y\}
+G(y) := \sup\{h(x,y) : x\in X\}
+\sup\{h(x,y) :x \in X, y \in Y\} = \sup\{F(x) : x \in X\} = \sup\{G(y) : y \in Y\}
+h(x,y)
+\sup\{h(x,y) :x \in X, y \in Y\}
+T=\sup\{h(x,y) :x \in X, y \in Y\}
+T \geq h(x_0,y_0)
+x_0 \in X
+ y_0 \in Y
+h(x_0,y_0) \in\{h(x,y) :x \in X, y \in Y\}
+h(x_0,y_0) \in \{h(x_0,y) : y \in Y\}
+x_0
+y_0
+F(x_0)= \sup\{h(x_0,y) : y\in Y\}
+\sup\{F(x) : x \in X\}
+F(x_0)
+T \geq \sup\{F(x) : x \in X\}
+T \leq \sup\{F(x) : x \in X\}
+T=\sup\{F(x) : x \in X\}
+x \in X
+\sup_{x',y'} h(x',y') \ge h(x,y)
+x,y
+\sup_{x',y'} h(x',y') \ge G(y)=\sup_{x'} h(x',y)
+y
+\sup_{x',y'} h(x',y') \ge \sup_{y'}G(y')
+F
+\epsilon>0
+x_1,y_1
+h(x_1,y_1) \ge \sup_{x',y'} h(x',y') - \epsilon
+\sup_{y'}G(y') \ge G(y_1) \ge h(x_1,y_1) \ge \sup_{x',y'} h(x',y') - \epsilon
+\epsilon
+\sup_{y'}G(y') \ge \sup_{x',y'} h(x',y')
+F

@@ -1,0 +1,88 @@
+f'(a) = \lim_{h\to0} \frac{f(a + h) - f(a)}{h}.
+f: {\mathrm R} \to {\mathrm R}
+f
+f': a \mapsto f'(a)
+t(x) = f(a) + f'(a)(x-a),
+f
+a
+T^{f,a}_1
+f'(a)(x-a)
+x
+{\partial f\over\partial x_i} = \lim_{h \to 0} \frac{f(a + h{\bf e^i}) - f(a)}{h},
+a
+x_i
+{\bf e^i} = (0, \dots, 0, 1, 0, \dots, 0)
+1
+i
+\nabla f(a) = \Big({\partial f\over x_1}, \dots, {\partial f\over x_n}\Big).
+\lim_{\bf h \to 0} \frac{||f(a + h) - f(a) - L(h)||}{||h||} = 0,
+||\cdot||
+L
+f(a + h) - f(a)
+L(h) = \nabla{f}(a) \cdot h
+\cdot
+X,Y
+Z
+\mathcal{L}(A,B)
+A
+B
+F \in \mathcal{L}(X,\mathcal{L}(Y,Z))
+F_{curry}:X \times Y \to Z
+F_{curry}(x,y) = F(x)(y)
+F_{curry}
+x
+F_{curry}(x,\cdot)
+F_{curry} (\cdot,y)
+G: X \times Y \to Z
+G_{uncurry}\mathcal{L}(X,\mathcal{L}(Y,Z))
+G_{uncurry}(x)(y) = G(x,y)
+\mathcal{L}(X,\mathcal{L}(Y,Z))
+X \times Y \to Z
+X \otimes Y \to Z
+X
+Y
+f:\mathbb{R}^2 \to \mathbb{R}
+f(x,y) = x^2y
+D(f)\big|_{(x,y)}
+\left[ \begin{matrix} 2xy&x^2\end{matrix} \right]
+D(f)\big|_{(x,y)}(\Delta x,\Delta y) = 2xy\Delta x + x^2\Delta y \approx f(x+\Delta x,y+\Delta y) - f(x,y)
+f
+\mathbb{R^n} \to \mathbb{R}
+(x,y)
+(x+\Delta x,y)
+\left[ \begin{matrix} 2y\Delta x&2x \Delta x\end{matrix} \right]
+y
+\Delta y
+\left[ \begin{matrix} 2x \Delta y&0\Delta y\end{matrix} \right]
+(x,y)
+(x+\Delta x,y+\Delta y)
+\left[ \begin{matrix} \Delta x&\Delta y\end{matrix} \right] \left[ \begin{matrix} 2y&2x\\2x&0\end{matrix} \right]
+(x,y)
+(x+\Delta x_2,y+\Delta y_2)
+(\Delta x_1,\Delta y_1)
+H(v_1,v_2) = v_1^T H v_2
+\left[ \begin{matrix} \Delta x_2&\Delta y_2\end{matrix} \right] \left[ \begin{matrix} 2x&2x\\2x&0\end{matrix} \right] \left[ \begin{matrix} \Delta x_1\\\Delta y_1\end{matrix} \right]
+f
+3
+3
+2\times2\times3
+f
+Df \in L(R^n,R^m)
+D^2f
+L(R^n ,L(R^n,R^m))
+R^n
+T \in L(R^n ,L(R^n,R^m)
+T(x)(y) =T(x,y)\in R^m , y \in R^n
+T(x)
+R^n
+T(x)(y)
+f(x) = x^3
+f'(-1) = 3 
+x=-1
+3
+3 \in L(R,R)
+f^"(-1) = -6
+-6 \in L(R, L(R,R))
+ h \in R
+f^"(-1)(h) = -6h
+x^2+y^2

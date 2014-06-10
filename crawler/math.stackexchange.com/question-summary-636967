@@ -1,0 +1,40 @@
+A:W^{1,p}(\Omega) \rightarrow W^{1,p}(\Omega)^{*}
+A
+\langle A(u),v \rangle\text{ } := \int_{\Omega}a(x,u,\nabla u)\cdot \nabla v + c(x,u,\nabla u)v dx + \int_{\Gamma}b(x,u)vdS
+\Omega \subset \mathbb{R}^{n}
+\Gamma
+a: \Omega \times \mathbb{R} \times \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}
+b: \Gamma \times \mathbb{R} \rightarrow \mathbb{R}
+c:\Omega \times \mathbb{R} \times \mathbb{R}^{n} \rightarrow \mathbb{R}
+B(w,u) \in W^{1,p}(\Omega)^{*}
+\langle B(w,u),v\rangle \text{ }:= \int_{\Omega}a(x,w,\nabla u)\cdot \nabla v + c(x,w,\nabla w)v dx + \int_{\Gamma}b(x,w)vdS
+u,v \in W^{1,p}(\Omega)
+A(u) = B(u,u)
+\epsilon \langle A(u_{k}), u-v\rangle \text{ } \geq -\langle A(u_{k}),u_{k}-u \rangle + \langle B(u_{k},u_{\epsilon}),u_{k}-u\rangle + \epsilon \langle B(u_{k},u_{\epsilon}),u-v\rangle \text{ ,where }
+u_{\epsilon} := (1-\epsilon)u + \epsilon v \text{ and }\epsilon \in [0,1]
+\text{lim}_{k\rightarrow \infty}\langle B(u_{k},v),u_{k}-u\rangle = 0
+\text{w-lim}_{k \rightarrow \infty}B(u_{k},v) = B(u,v)
+W^{1,p}(\Omega)^{*}
+\text{lim}_{k \rightarrow \infty}\langle B(u_{k},u_{\epsilon}),u-v\rangle 
+\text{lim}_{k \rightarrow \infty}\langle B(u_{k},u_{\epsilon}),u-v\rangle \text{} =\text{} \langle B(u,u_{\epsilon}),u-v\rangle 
+u_{k} \rightharpoonup u
+\text{w-lim}_{k \rightarrow \infty}B(u_{k},v) = B(u,v)
+W^{1,p}(\Omega)^{*}
+\star
+\Lambda_n
+B(u_k,u_\epsilon)
+X^*
+\Lambda \in X^*
+\star
+x \in X
+n \to \infty
+ \Lambda_n(x) \to \Lambda(x) 
+B(u,v)
+\phi
+W^{1,p}(\Omega)
+\lim_{k \to \infty} \langle B(u_k,u_\epsilon), \phi \rangle
+\langle B(u,u_\epsilon), \phi \rangle
+\phi = u-v
+ B(u,v)(\phi) = \langle B(u,v),\phi \rangle, 
+u_k
+u

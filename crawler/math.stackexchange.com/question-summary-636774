@@ -1,0 +1,28 @@
+F(x,y,z)=(x+z,2x+2y,3y+3z)
+x^2/16+y^2/4-z^2/3\le 1 \quad\mbox{with} \quad 0\le z \lt 3
+x^2/16+y^2/4-(z-7)^2/4\le 0 \quad \mbox{with}\quad 3\le z \lt 7.
+ \ \nabla  \cdot  \mathbf{F} \ = \ 6 \ 
+ z-
+ \ z-
+ \ z = 3 \ 
+ \ z \ 
+ \frac{x^2}{16} \ + \ \frac{y^2}{4} \ = \ 1 \ + \frac{z^2}{3} \ = \ \sigma_h^2(z) \ \ \ \text{and} 
+ \frac{x^2}{16} \ + \ \frac{y^2}{4} \ = \ \frac{(z-7)^2}{4} \ = \ \sigma_c^2(z)\ \ , 
+ \frac{x^2}{16\sigma_h^2} \ + \ \frac{y^2}{4\sigma_h^2} \ = \ 1  \ \ \text{and} \ \  \frac{x^2}{16\sigma_c^2} \ + \ \frac{y^2}{4\sigma_c^2} \ = \ 1 , 
+ \ z-
+ \ x-
+ \ 4 \ \sigma_h \ 
+ \ 4 \ \sigma_c \ 
+ \ y-
+ \ 2 \ \sigma_h \ 
+ \ 2 \ \sigma_c \ 
+ \ z-
+ \ 8 \ \pi \ \sigma_h^2 \ 
+ \ 8 \ \pi \ \sigma_c^2 \ 
+ \ z = 3 \ 
+ \ \sigma_h^2 \ = \ \sigma_c^2 \ = \ 4 \ 
+ 8  \pi \ \ \left[ \ \int_0^3  \sigma_h^2(z) \ \ dz \ \ + \ \ \int_3^7  \sigma_c^2(z) \ \ dz \ \right] 
+ = \ \ 8  \pi \ \ \left[ \ \int_0^3  \left( 1 \ + \ \frac{z^2}{3}  \right) \ \ dz \ \ + \ \ \int_3^7  \frac{(z-7)^2}{4} \ \ dz \ \right] 
+ = \ \ 8  \pi \ \ \left[ \   \left( z \ +  \frac{z^3}{9}  \right) \ \vert_0^3  \ \ + \ \  \left( \frac{(z-7)^3}{12} \right)  \ \vert_3^7  \ \right] 
+ = \ \ 8  \pi \ \ \left[ \   \left( 3 \ +  \frac{3^3}{9}  \right)   \ \ - \ \  \left( \frac{(3-7)^3}{12} \right)  \ \right] \ = \ 8  \pi \  ( \ 3 \ + \ 3      \ + \  \frac{64}{12} \ ) \ = \ \frac{272 \pi}{3} \ \ . 
+ \iint_S \ \mathbf{F} \cdot {n} \ \ dS \ \ = \ \ 6 \ \iiint_V \ \nabla \cdot \mathbf{F} \ \ dV \  =  \ 6 \ \cdot \ \frac{272 \pi}{3} \ = \ 544 \pi \ \ . 

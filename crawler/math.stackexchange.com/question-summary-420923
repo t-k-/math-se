@@ -1,0 +1,57 @@
+\begin{align} Q(m)  &= 1 + \frac{m-1}{m} + \frac{(m-1)(m-2)}{m^2} + \cdots + \frac{(m-1)(m-2) \cdots 1}{m^{m-1}} \\ &= \sum_{n \ge 0} \binom{m-1}{n}\frac{n!}{m^n}   = \sum_{n \ge 0} \frac{(m-1)!}{(m-n-1)! m^n} \end{align} 
+Q(m) \sim \sqrt{\frac{\pi m}{2}} - \frac{1}{3} + \frac{1}{12}\sqrt{\frac{\pi}{2m}} - \frac{4}{135m} + \dots
+ \lim_{m\to\infty} \frac{Q(m)}{\sqrt{m}} = \sqrt{\frac{\pi}{2}}.
+\begin{align} Q_2(m)  &= 1 + \frac{m-1}{m} + \frac{(m-1)(m-2)}{m^2} + \frac{(m-1)(m-2)(m-3)}{m^3} + \dots \\ &\phantom{=1} + \frac{1}{m} + 3\frac{(m-1)}{m^2} + 6\frac{(m-1)(m-2)}{m^3} + \dots\\ &= \sum_{n \ge 0} \binom{m-1}{n} \frac{n!}{m^n} + \binom{n+1}{2}\binom{m-1}{n-1}\frac{(n-1)!}{m^n} \\ &= \sum_{n \ge 0} \left(\frac{(m-1)!}{(m-n-1)!} + \frac{(n+1)n (m-1)!}{2(m-n)!}\right) \frac1{m^n} \end{align}  
+Q(m) < Q_2(m) < 2Q(m)
+Q_2(m)
+\sqrt{m}
+\displaystyle \lim_{m \to \infty} \frac{Q_2(m)}{\sqrt{m}} = c
+c
+\sqrt{\frac{\pi}{2}} < c < \sqrt{2\pi}
+m
+2
+2^{38}
+Q_2'(m) = Q_2(m) + 1
+c \approx 1.87997
+\sqrt{\frac{\pi}{2}}
+Q(m)
+\sqrt{\frac{9\pi}{8}} = 1.8799712\dots
+c = \lim_{m \to \infty} \frac{Q_2(m)}{\sqrt{m}} = \sqrt{\frac{9\pi}{8}}
+c
+x
+1-x\leqslant\mathrm e^{-x}
+x\mapsto\mathrm e^{-x}
+t
+[0,1)
+c(t)
+x
+[0,t]
+1-x\geqslant\mathrm e^{-c(t)x}
+c(t)=-\frac1t\log(1-t)
+c(t)\to1
+t\to0
+t=m^{-1/4}
+C_m=c(m^{-1/4})
+C_m\to1
+\sqrt{C_m/m}\to0
+m^{1/4}\sqrt{C_m}\to\infty
+m\to\infty
+Q(m)
+ Q(m)=\sum_{k=0}^{m-1}\prod_{i=1}^k\left(1-\frac{i}m\right). 
+ Q(m)\leqslant\sum_{k=0}^{m-1}\mathrm e^{-k(k+1)/(2m)}\leqslant1+\sum_{k=1}^{m-1}\int_{k-1}^k\mathrm e^{-x^2/(2m)}\mathrm dx, 
+ Q(m)\leqslant1+\int_{0}^{+\infty}\mathrm e^{-x^2/(2m)}\mathrm dx=1+\sqrt{\frac\pi2m}. 
+ Q(m)\geqslant\sum_{k=0}^{m^{3/4}}\prod_{i=1}^k\left(1-\frac{i}m\right)\geqslant\sum_{k=0}^{m^{3/4}}\mathrm e^{-C_mk(k+1)/(2m)}, 
+ \frac1{\sqrt{m}}Q(m)\geqslant\frac1{\sqrt{m}}\int_1^{m^{3/4}}\mathrm e^{-C_mx^2/(2m)}\mathrm dx=\frac1{\sqrt{C_m}}\int_{\sqrt{C_m/m}}^{m^{1/4}\sqrt{C_m}}\mathrm e^{-x^2/2}\mathrm dx. 
+ \liminf\frac1{\sqrt{m}}Q(m)\geqslant\int_{0}^{+\infty}\mathrm e^{-x^2/2}\mathrm dx=\sqrt{\frac\pi2}. 
+Q(m)
+Q_2(m)=Q(m)+\frac12Q'(m)
+ Q'(m)=\frac1m\sum_{k=0}^{m-1}k(k+1)\prod_{i=1}^k\left(1-\frac{i}m\right). 
+ Q'(m)\leqslant\frac1m\sum_{k=0}^{m-1}k(k+1)\mathrm e^{-k(k+1)/(2m)}\leqslant\frac1m\sum_{k=1}^{m-1}\int_{k-1}^k(x+2)^2\mathrm e^{-x^2/(2m)}\mathrm dx, 
+ Q'(m)\leqslant\frac1m\int_{0}^{+\infty}(x+2)^2\mathrm e^{-x^2/(2m)}\mathrm dx=\sqrt{m}\int_{0}^{+\infty}\left(x+\frac2{\sqrt{m}}\right)^2\mathrm e^{-x^2/2}\mathrm dx, 
+ Q'(m)\leqslant\sqrt{m}\int_{0}^{+\infty}\mathrm e^{-x^2/2}\mathrm dx+O(1)=\sqrt{\frac\pi2m}+O(1). 
+ \lim\frac1{\sqrt{m}}Q'(m)=\sqrt{\frac\pi2}. 
+u(k)\sim ck^a
+a\geqslant0
+k\to\infty
+ Q^{(u)}(m)=\sum_{k=0}^{m-1}u(k)\prod_{i=1}^k\left(1-\frac{i}m\right), 
+ Q^{(u)}(m)\sim c2^{(a-1)/2}\Gamma\left(\frac{a+1}2\right)\cdot m^{(a+1)/2}. 

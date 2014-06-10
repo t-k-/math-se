@@ -1,0 +1,15 @@
+H_0: \theta \le \theta_0
+H_1: \theta > \theta_0
+f(x,\theta) = \frac{1}{\theta}e^{-\frac{x}{\theta}}
+\phi(X) = \mathbf{1}_{\{f(x,\theta_1) > k f(x,\theta_0)\}}(x) + \gamma \mathbf{1}_{\{f(x,\theta_1) = k f(x,\theta_0)\}}(x)
+\frac{1}{n} \sum_{i=1}^n X_i > g(k)
+k
+\phi(X)
+k
+\mathbb{E}[\phi(X) |H_0] =\alpha
+\frac{1}{n} \sum_{i=1}^n X_i > g(k) \implies \sum_{i=1}^n X_i >n g(k)=c(\text{say})
+\phi(X)=\begin{cases}1 & \text{if}\,\,\sum x_i>c \\ 0 & \text{otherwise} \end{cases}
+\sum X_i
+P[\sum X_i=c]=0
+c
+\begin{align} \alpha &= \mathbb{E}[\phi(X) |H_0] \\ &=1\cdot P_{H_0}[\sum X_i>c]\\&=P_{H_0}[\dfrac{2\sum X_i}{\theta}>\dfrac{2c}{\theta_0}]\\&=P[\chi^2_{2n}>\dfrac{2c}{\theta_0}] \end{align}

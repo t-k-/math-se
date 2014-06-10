@@ -1,0 +1,12 @@
+u=x^2
+v=y^2
+ \begin{align} \int_0^1\int_0^1xy\sqrt{x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y &=\frac14\int_0^1\int_0^1\sqrt{u+v}\,\mathrm{d}u\,\mathrm{d}v\\ &=\frac14\int_0^1\frac23\left((v+1)^{3/2}-v^{3/2}\right)\,\mathrm{d}v\\ &=\frac16\cdot\frac25\left(2^{5/2}-1^{5/2}-1^{5/2}+0^{5/2}\right)\\ &=\frac2{15}(2\sqrt2-1) \end{align} 
+u = x^2
+v = y^2
+u=x^2+y^2
+du=2y\,dy
+ \int_0^1 xy\sqrt{x^2+y^2}\,dy=\int_{x^2}^{x^2+1}\frac{x}{2}\sqrt{u}\,du=\cdots 
+\int f'(x)f(x)^ndx=\frac1{n+1}f(x)^{n+1}+C\;:
+\int\limits_0^1\int\limits_0^1 xy\sqrt{x^2+y^2}\,dydx=\int\limits_0^1 x\,dx\frac12\int\limits_0^1 2y\sqrt{x^2+y^2}dy=\frac12\int\limits_0^1 x\,dx\left.\frac23(x^2+y^2)^{3/2}\right|_0^1=
+=\frac13\int\limits_0^1 x\left((x^2+1)^{3/2}-x^3\right)dx=\frac16\int\limits_0^12x(x^2+1)^{3/2}dx-\frac13\int\limits_0^1x^4dx=
+=\left.\frac1{15}(x^2+1)^{5/2}\right|_0^1-\frac1{15}=\frac1{15}\left(4\sqrt2-1-1\right)=\frac2{15}\left(2\sqrt2-1\right)

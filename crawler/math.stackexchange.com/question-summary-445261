@@ -1,0 +1,47 @@
+V \subseteq \Bbb R^n
+ f: V \to \Bbb R
+V
+x, a\in V
+c\in L(x;a)
+f(x)-f(a)=\nabla f(c)\cdot (x-a)
+V \subseteq \Bbb R^n
+H
+V
+ f: V \to \Bbb R^m
+C^1
+V
+E\subset H
+M
+\| f(x)-f(a)\|\le M\| x-a\| \forall x,a \in E.
+f=(f_1,\dots,f_m)
+f_i:V\to\mathbb R
+\mathcal C^1
+V
+\exists c_i\in L(a,x)
+c_i\in E
+f_i(x)-f_i(a)=\nabla f_i (c)\cdot(x-a)
+\nabla f_i
+\|\nabla f_i\|
+|f_i(x)-f_i(a)|\le \|\nabla f_i (c)\|\|x-a\|.
+M_i=\sup_{c\in E}\|\nabla f_i(c)\|,
+\forall x,a \in E\quad |f_i(x)-f_i(a)|\le M_i\|x-a\|.
+M=\frac{1}{\sqrt m}\max_{i=1..n} M_i, so
+\|f(x)-f(a)\|^2 = \sum_i |f_i(x)-f_i(a)|^2\le \frac{M^2}{m} \sum_i  \| x - a \|^2 =M^2\| x - a \|^2.
+f=(f_1,...f_m).
+E
+x,y\in E
+L(x;y) \subset E \subset K .
+f
+C^1
+V
+\nabla f_i
+V
+i
+M'=max_{1\leq i\leq m}[ {\sup_{x\in K}||\nabla f_i(x)||}]
+K
+V
+M'
+M'
+||f(x)-f(y)||\space = \space (\sum _{i}||f_i(x)-f_i(y)||^2)^{1/2}\space \leq \space [\sum _{i}||\nabla f_i(c_{x,y})||^2]^{1/2}.||x-y|| \space \space 
+ \leq \space m^{1/2}M'||x-y|| \forall x,y \in E.
+M

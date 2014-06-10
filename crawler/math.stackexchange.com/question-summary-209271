@@ -1,0 +1,32 @@
+30^\circ
+30^\circ
+\phi
+(1)
+(3)
+ \sin(\phi)=\frac{r+h}{r}\sin(\theta)\tag{1} 
+ \phi=\pi-\arcsin\left(\frac{r+h}{r}\sin(\theta)\right)\tag{2} 
+ \begin{align} r(\pi-\theta-\phi) &=r\left(\arcsin\left(\frac{r+h}{r}\sin(\theta)\right)-\theta\right)\\ &=6371\left(\arcsin\left(\frac{6371+100}{6371}\frac12\right)-\frac\pi6\right)\\ &=57.89\text{ km}\tag{3} \end{align} 
+ \begin{align} h\tan(\theta) &=100\frac1{\sqrt{3}}\\ &=57.74\text{ km}\tag{4} \end{align} 
+(3)
+(4)
+r\to\infty
+ \begin{align} \lim_{r\to\infty}r\left(\arcsin\left(\frac{r+h}{r}\sin(\theta)\right)-\theta\right) &=h\lim_{r\to\infty}\frac{\arcsin\left(\left(1+\frac hr\right)\sin(\theta)\right)-\theta}{\frac hr}\\ &=h\lim_{t\to0}\frac{\arcsin((1+t)\sin(\theta))-\theta}{t}\\ &=h\lim_{t\to0}\frac{\sin(\theta)}{\sqrt{1-(1+t)^2\sin^2(\theta)}}\\ &=h\tan(\theta) \end{align} 
+R
+h
+A
+B
+C
+\theta=\angle CAB
+R
+h=100
+\theta\approx 149.4794
+\frac{\sin\theta}{R+h}=\frac{\sin 30^\circ}{R}=\frac{1}{2R}.
+\sin\theta=\frac{1}{2}+\frac{h}{2R}.
+C
+0.520596
+\angle B=30^\circ
+R
+BC
+AC^2=R^2=AB^2+BC^2-2AB\cdot BC\cos 30^\circ =(R+100)^2+BC^2-2BC(R+100)\frac {\sqrt 3}2
+R^2
+BC

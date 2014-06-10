@@ -1,0 +1,29 @@
+c_1 , c_2, ... , c_k
+1 \leq i \leq k 
+c_1 \leq c_2 \leq ... \leq c_i \geq c_{i+1} \geq... \geq c_k
+1,2,\dotsc,m,\dotsc,2,1
+k-1
+1
+k
+m
+m
+\binom{2m-2+k-1}{k-1}=\binom{2m+k-3}{k-1}
+m
+ \sum_{m=1}^n\binom{2m+k-3}{k-1} 
+f(m,l)
+l
+m
+f(m,l) = C(m,l)
+l
+m
+l+1
+(a,b)
+a+b = l
+(0,l), (1,l-1), \ldots, (l-1,1), (l,0)
+g(l) = \sum_{j=0}^l \sum_{i=1}^n f(i-1, j) \cdot f(i-1,l-j)
+l+1
+i
+k
+l
+l
+\sum_{l=1}^k  C(l + k - 1, k) \cdot g(l-1)

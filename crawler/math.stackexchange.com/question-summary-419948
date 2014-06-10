@@ -1,0 +1,7 @@
+\sum_{p\leq x}(\log p)^2 \sim x \log x~~~?\hspace{5mm}(1)
+\sum_{pq \leq x}\log p\log q \sim x \log x\hspace{5mm}(2) 
+\sum_{p\leq n}(\log p)^2 \sim n\log n\sim p_n.
+\sum_{p \leq x}(\log p)^2+ \sum_{pq \leq x}\log p\log q = 2x\log x + O(x)
+\eta\in(n,n+1)
+ \begin{align} &\sum_{n\le x}\pi(n)(\log(n+1)^2-\log(n)^2)\\ &=\sum_{n\le x}\pi(n)\frac{2\log(\eta)}{\eta}\\ &=\sum_{n\le x}\left(\frac{n}{\log(n)}+O\left(\frac{n}{\log(n)^2}\right)\right)\left(\frac{2\log(n)}{n}+O\left(\frac{\log(n)}{n^2}\right)\right)\\ &=2x+O\left(\frac{x}{\log(x)}\right) \end{align} 
+ \begin{align} \sum_{p\le x}\log(p)^2 &=\sum_{n\le x}\log(n)^2(\pi(n)-\pi(n-1))\\[6pt] &=\log(x)^2\pi(x)-\sum_{n\le x}\pi(n)(\log(n+1)^2-\log(n)^2)\\ &=\log(x)^2\left(\frac{x}{\log(x)}+\frac{x}{\log(x)^2}+O\left(\frac{x}{\log(x)^3}\right)\right)-2x+O\left(\frac{x}{\log(x)}\right)\\ &=x\log(x)-x+O\left(\frac{x}{\log(x)}\right) \end{align} 

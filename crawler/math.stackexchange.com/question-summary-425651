@@ -1,0 +1,27 @@
+ \int_C\mathbf{r}(\mathbf{r}\cdot d\mathbf{r})=\iint_S\mathbf{r}\wedge d\mathbf{S} 
+\mathbf{r} = (x,y,z)
+ \iint_S \nabla \times  \mathbf{F} \cdot d\mathbf{S} = \oint_C \mathbf{F} \cdot d\mathbf{r}, 
+\mathbf{F} = \phi \mathbf{c} 
+\mathbf{c}
+\phi
+\nabla\times\mathbf{F}= \nabla \times (\phi\mathbf{c})= \nabla\phi\times\mathbf{c} + \phi\nabla\times\mathbf{c}= \nabla\phi\times\mathbf{c},
+\nabla\times\mathbf{F}\cdot d\mathbf{S} =(\nabla\phi\times\mathbf{c}) \cdot d\mathbf{S} = \mathbf{c} \cdot (d\mathbf{S} \times \nabla\phi),
+\iint_S\nabla\times\mathbf{F}\cdot d\mathbf{S} =\iint_S \mathbf{c} \cdot (d\mathbf{S} \times \nabla\phi) = \mathbf{c} \cdot \iint_S (d\mathbf{S} \times \nabla\phi).
+ \mathbf{F} \cdot d\mathbf{r} =(\phi\mathbf{c})\cdot d\mathbf{r} = \mathbf{c} \cdot (\phi d\mathbf{r}),
+ \oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_C \mathbf{c} \cdot (\phi d\mathbf{r}) = \mathbf{c} \cdot \oint_C \phi d\mathbf{r}.
+\mathbf{c}
+ \iint_S (d\mathbf{S} \times \nabla\phi) = \oint_C \phi d\mathbf{r}. 
+d(x^2\wedge dx) = 0
+y
+z
+0
+x^2+y^2+z^2
+1
+dx
+ \newcommand{\b}{\mathbf}\iint_S\b{r}\wedge d\b{S} \\ = \iint_S (x,y,z)\wedge (dy\wedge dz, dz\wedge dx, dx\wedge dy) \\ =\begin{pmatrix}  \iint_S y \wedge dx\wedge dy - z\wedge dz\wedge dx \\  \iint_S z\wedge dy\wedge dz- x\wedge dx\wedge dy \\  \iint_S x\wedge dx\wedge dy- y \wedge dy\wedge dz \end{pmatrix} \\ =\frac{1}{2}\begin{pmatrix}  \iint_S d(y^2\wedge dx) + d(z^2\wedge dx) \\  \iint_S  d(z^2\wedge dy)+ d(x^2\wedge dy) \\  \iint_S  d(x^2\wedge dz)+ d(y^2\wedge dz). \end{pmatrix} \\ = \frac{1}{2}\begin{pmatrix}  \iint_S  d(y^2\wedge dx) + d(z^2\wedge dx) + \color{red}{d(x^2\wedge dx)} \\  \iint_S d(z^2\wedge dy) + d(x^2\wedge dy) + \color{red}{d(y^2\wedge dy)} \\  \iint_S d(x^2\wedge dz) + d(y^2\wedge dz) + \color{red}{d(z^2\wedge dz)}. \end{pmatrix} 
+ \iint_S d\omega = \oint_{\partial S} \omega.\tag{1} 
+ \iint_S\b{r}\wedge d\b{S} = \frac{1}{2}\begin{pmatrix}  \oint_{\partial S} y^2\wedge dx + z^2\wedge dx + x^2\wedge dx \\  \oint_{\partial S} z^2\wedge dy +  x^2\wedge dy + y^2\wedge dy \\  \oint_{\partial S} x^2\wedge dz + y^2\wedge dz + z^2\wedge dz. \end{pmatrix} \\  =\frac12 \oint_{\partial S} (x^2+y^2+z^2) \wedge (dx,dy,dz) = \frac12 \oint_{\partial S} \b{r}\cdot \b{r} \wedge d\b{r}. 
+ \iint_S\b{r}\wedge d\b{S} = \frac12 \oint_{\partial S}\b{r}\cdot \b{r} d\b{r}. 
+\phi = \b{r}\cdot\b{r}/2
+\b{c}
+\b{c} = (x,y,z).

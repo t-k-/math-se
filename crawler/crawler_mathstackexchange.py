@@ -90,17 +90,17 @@ def crawl(start_page, end_page):
 import threading
 import time
 
-new_thread = threading.Thread(target = crawl, args=(4080, 5000))
+new_thread = threading.Thread(target = crawl, args=(1, 5000))
 new_thread.start()
 time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(9080, 10000))
+new_thread = threading.Thread(target = crawl, args=(5001, 10000))
 new_thread.start()
 time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(14080, 15000))
+new_thread = threading.Thread(target = crawl, args=(10001, 15000))
 new_thread.start()
 time.sleep(5)
 
-new_thread = threading.Thread(target = crawl, args=(19080, 20000))
+new_thread = threading.Thread(target = crawl, args=(15001, 20000))
 new_thread.start()

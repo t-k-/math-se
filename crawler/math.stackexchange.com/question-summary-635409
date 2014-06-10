@@ -1,0 +1,19 @@
+\{\omega : |\frac{1}{n}\sum_{i=1}^{n}d_i(\omega)-\frac{1}{2}|\geq \epsilon_n\}
+\epsilon_n
+0
+d_i(\omega)
+i
+\omega
+(\varepsilon_n)_{n \in \mathbb{N}} \subset (0,\infty)
+A_n := \left\{\omega \in [0,1]; \left| \frac{1}{n} \sum_{i=1}^n d_i(\omega)-\frac{1}{2} \right| \geq \varepsilon_n \right\}, \qquad n \in \mathbb{N}
+n \in \mathbb{N}
+\omega_k := k \cdot 2^{-n}, \qquad k=0,\ldots,2^n
+\omega \in [\omega_k,\omega_{k+1})
+n
+\omega
+\omega_k
+d_i(\omega)=d_i(\omega_k)
+i=1,\ldots,n
+[\omega_k,\omega_{k+1}) \in A_n \Leftrightarrow \omega_k \in A_n.
+k=0,\ldots,2^n-1
+A_n = \bigcup_{k \in \{0,\ldots,2^n-1\}: \omega_k \in A_n} [\omega_k,\omega_{k+1})

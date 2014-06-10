@@ -1,0 +1,46 @@
+u_x^2+u_y^2=u^2,  \\ u(x,0)=1
+u(x,y)=f(x)g(y)
+u=e^v
+u_x=e^vv_x
+u_y=e^vv_y
+\therefore(e^vv_x)^2+(e^vv_y)^2=(e^v)^2
+v(x,0)=0
+e^{2v}v_x^2+e^{2v}v_y^2=e^{2v}
+v(x,0)=0
+v_x^2+v_y^2=1
+v(x,0)=0
+v_y^2=1-v_x^2
+v(x,0)=0
+v_y=\pm\sqrt{1-v_x^2}
+v(x,0)=0
+v_{xy}=\mp\dfrac{v_xv_{xx}}{\sqrt{1-v_x^2}}
+v(x,0)=0
+w=v_x
+w_y=\mp\dfrac{ww_x}{\sqrt{1-w^2}}
+w(x,0)=0
+w_y\pm\dfrac{ww_x}{\sqrt{1-w^2}}=0
+w(x,0)=0
+\dfrac{dy}{dt}=1
+y(0)=0
+y=t
+\dfrac{dw}{dt}=0
+w(0)=w_0
+w=w_0
+\dfrac{dx}{dt}=\pm\dfrac{w}{\sqrt{1-w^2}}=\pm\dfrac{w_0}{\sqrt{1-w_0^2}}
+x(0)=f(w_0)
+x=\pm\dfrac{w_0t}{\sqrt{1-w_0^2}}+f(w_0)=\pm\dfrac{wy}{\sqrt{1-w^2}}+f(w)
+w=F\left(x\mp\dfrac{wy}{\sqrt{1-w^2}}\right)
+w(x,0)=0
+F(x)=0
+\therefore w=0
+v_x=0
+v(x,y)=g(y)
+v_y=g_y(y)
+\therefore(g_y(y))^2=1
+g_y(y)=\pm1
+g(y)=\pm y+C
+\therefore v(x,y)=\pm y+C
+v(x,0)=0
+C=0
+\therefore v(x,y)=\pm y
+u(x,y)=e^{\pm y}

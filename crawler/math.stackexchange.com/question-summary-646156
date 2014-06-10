@@ -1,0 +1,17 @@
+K
+ \int_0^{2\pi} f(x) \mathrm{d}x = \int_0^\pi f(x) \mathrm{d}x + \int_\pi^{3\pi/2} f(x) \mathrm{d}x + \int_{3\pi/2}^{2\pi} f(x) \mathrm{d}x 
+ \int_0^{\pi/2} f(x)\mathrm{d}x = -1 + 2\log 2 \quad \, \quad \int_{\pi}^{3\pi/2} f(x)\mathrm{d}x = 1 \\ \int_{\pi/2}^{\pi} f(x)\mathrm{d}x = 1 + 4 K-2 \log 2 \quad \, \quad \int_{3\pi/2}^{2\pi} f(x)\mathrm{d}x = -1 - 4 K 
+ \begin{align*}         \int_{\pi}^{3\pi/2} f(x)\,\mathrm{d}x      & = \frac{1}{2}\int_{\pi}^{3\pi/2} f(x) + f(\pi-x)\,\mathrm{d}x \\     & = \frac{1}{2}\int_{\pi}^{3\pi/2} \log(1+\cos x)\sin x+ \log(1+\sin x)\cos x\,\mathrm{d}x \\     & = \frac{1}{2}\int_0^{-1} \log(1+u) + \log(1+u)\,\mathrm{d}x       = 1 \end{align*} 
+ \int_{3\pi/2}^{2\pi} f(x)\mathrm{d}x +  \int_{\pi/2}^{\pi} f(x)\mathrm{d}x = -2 \log 2 
+x = y+\pi/2
+y = 2\pi-x
+\begin{align} I &= \int_{\pi/2}^\pi f(x)\,dx\\ &= \int_{\pi/2}^\pi (1+\cos x)\log (1+\sin x) - \log (1+\cos x)\,dx\tag{$x = y+\pi/2$}\\ &= \int_0^{\pi/2} (1-\sin y)\log (1+\cos y) - \log (1-\sin y)\,dy\\ II &= \int_{3\pi/2}^{2\pi} f(x)\,dx\\ &= \int_{3\pi/2}^{2\pi} (1+\cos x)\log (1+\sin x) - \log (1+\cos x)\,dx \tag{$y = 2\pi-x$}\\ &= \int_0^{\pi/2} (1+\cos y)\log (1-\sin y) - \log (1+\cos y)\,dy\\ I+II &= \int_0^{\pi/2} \cos y \log (1-\sin y) - \sin y\log (1+\cos y)\,dy\\ &= \int_0^{\pi/2} \cos y \log (1-\sin y)\,dy\\ &\qquad + \int_0^{\pi/2} (-\sin y)\log (1+\cos y)\,dy\\ &= \int_0^1 \log (1-u)\,du + \int_1^0 \log (1+v)\,dv\\ &= \int_0^1 \log t\,dt - \int_1^2 \log t\,dt\\ &= \left[t\log t-t\right]_0^1 - \left[t\log t-t\right]_1^2\\ &= -1 - (2\log 2 - 2) + (-1)\\ &= -2\log 2. \end{align}
+\begin{align} III &= \int_\pi^{3\pi/2} (1+\cos x)\log (1+\sin x) - \log (1+\cos x)\,dx\\ &= \int_0^{\pi/2} (1-\cos y)\log (1-\sin y) - \log (1-\cos y)\,dy\\ I+II+III &= \int_0^{\pi/2} \log (1-\sin y) - \log (1-\cos y) - \sin y\log (1+\cos y)\,dy, \end{align}
+z = \pi/2-y
+I+II+III = -\int_0^{\pi/2} \sin y \log (1+\cos y)\,dy = -\int_0^{\pi/2}\cos x \log (1+\sin x)\,dx.
+\int_0^{\pi/2} (1+\cos x)\log (1+\sin x) - \log (1+\cos x)\,dx
+\int_0^{\pi/2} \log (1+\sin x) - \log (1+\cos x)\,dx
+\int_0^{2\pi} \log \frac{(1+\sin x)^{1+\cos x}}{1+\cos x}\,dx = 0
+(6)
+(2)
+ \int_0^{2\pi}\log\left(\frac{(1+\sin(x))^{1+\cos(x)}}{1+\cos(x)}\right)\,\mathrm{d}x=0\tag{7} 

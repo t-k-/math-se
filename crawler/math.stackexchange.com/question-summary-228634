@@ -1,0 +1,50 @@
+u_1
+u_2
+u_1-u_2
+\xi=u_1-u_2
+p_{\xi}(x)
+n
+\bar u
+\bar \mu
+\Sigma
+\bar u
+\Sigma
+\frac{1}{(2\pi )^{n/2} \vert \Sigma \vert^{1/2}} e^{-\frac{1}{2}(\mathbf{u} - \mathbf{\mu})^{\top} \Sigma^{-1} (\mathbf{u} - \mathbf{\mu})}
+C
+\Sigma=C^T\begin{pmatrix}\sigma_1^2&0\\0&\sigma_2^2\end{pmatrix}C
+\Sigma
+\sigma_1^2
+\sigma_2^2
+\Sigma^{-1}=C^{-1}\begin{pmatrix}1/\sigma_1^2&0\\0&1/\sigma_2^2\end{pmatrix}C^{{-1}^T}
+\bar u=C^T\bar v
+\Sigma^{-1}
+\bar v
+p_{\bar v}(x,y)=p_1(x)p_2(y)
+p_1
+p_2
+v_1
+v_2
+p_{\xi}(z)=F'_{\xi}(z)=\displaystyle\frac{dP\{u_1-u_2\leq z\}}{dz}=\frac{dP\{\alpha v_1+\beta v_2\leq z\}}{dz}
+p_{\bar v}
+\alpha x+\beta y\leq z
+z
+\beta
+\beta>0=>\beta y \leq z-\alpha x=>y \leq\frac{z-\alpha x}{\beta}=>
+\beta x
+x
+\beta<0=>\alpha x-z \leq -\beta y=>y \geq\frac{\alpha x-z}{-\beta}=\frac{z-\alpha x}{\beta}=>
+\beta=0
+\alpha
+\bar \mu
+u_1-u_2 \leq z=>\alpha v_1+\beta v_2+const \leq z
+z
+F_\xi(z)=\iint\limits_{\alpha x+\beta y\leq z}p_1(x)p_2(y)dxdy=\int\limits_\mathbb R p_1(x)\int\limits_{-\infty}^{\frac{z-\alpha x}{\beta}}p_2(y)dydx=\int\limits_\mathbb R p_1(x)F_2(\frac{z-\alpha x}{\beta})dx => F'_\xi(z)=p_\xi(z)=\int\limits_\mathbb R \frac{1}{\beta}p_1(x)p_2(\frac{z-\alpha x}{\beta})dx
+p_\xi(z)=\int\limits_\mathbb R p_1(\beta x)p_2(\frac{z}{\beta}-\alpha x)dx.
+F_\xi(z)=\iint\limits_{\alpha x+\beta y\leq z}p_1(x)p_2(y)dxdy=\int\limits_\mathbb R p_1(x)\int\limits^\infty_{\frac{z-\alpha x}{\beta}}p_2(y)dydx=\int\limits_\mathbb R p_1(x)(1-F_2(\frac{z-\alpha x}{\beta}))dx => F'_\xi(z)=p_\xi(z)=\int\limits_\mathbb R \frac{1}{\beta}p_1(x)p_2(\frac{z-\alpha x}{\beta})dx
+p_\xi(z)=\int\limits_\mathbb R p_1(\beta x)p_2(\frac{z}{\beta}-\alpha x)dx.
+p_\xi(z)=\int\limits_\mathbb R p_1(\frac{z}{\alpha}-\beta y)p_2(\alpha y)dy.
+u_1
+u_2
+u_1-u_2
+E(u_1)-E(u_2)
+\text{Var}(u_1-u_2)=\text{Var}(u_1)+\text{Var}(u_2)-2\text{Cov}(u_1, u_2)

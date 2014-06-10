@@ -1,0 +1,12 @@
+k\in\mathbb{N}
+\int^\infty_0 e^{it^k}\,\mathrm dt
+r
+r
+\leq k
+\pi/(2 k)
+\oint_C dz \, e^{i z^k} = \int_0^R dx \, e^{i x^k} + i R \int_0^{\pi/(2 k)} d\phi \, e^{i \phi} \, e^{-R^k \sin{k \phi}} e^{i R^k \cos{k \phi}} + e^{i \pi/(2 k)} \int_{\infty}^0 dt \, e^{-t^k} 
+\sin{k \phi} \ge (2/\pi) k \phi
+\phi \in [0,\pi/(2 k)]
+\left | i R \int_0^{\pi/(2 k)} d\phi \, e^{i \phi} \, e^{-R^k \sin{k \phi}} e^{i R^k \cos{k \phi}}\right| \le R \int_0^{\pi/(2 k)} d\phi \, e^{-(2 k R^k/\pi) \phi}\le \frac{\pi}{2 k R^{k-1}} 
+R \to \infty
+\int_0^{\infty} dx \, e^{i x^k} = e^{i \pi/(2 k)} \int_0^{\infty} dx \, e^{-x^k} =  e^{i \pi/(2 k)} \Gamma{\left ( 1+ \frac{1}{k}\right)} 

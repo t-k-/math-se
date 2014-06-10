@@ -1,0 +1,16 @@
+L^2(0,+\infty)
+\pi.
+H f(x)= \int_0^{\infty} \frac{f(y)}{x+y}\, dy \quad\text{ for all } f \in {L}^2(0,+\infty) \text{ and } x \in(0,+\infty),
+L^2(0,+\infty)^2
+f,g \in L^2(0,+\infty)
+\begin{align*} |\langle Hf,g \rangle | &= \left|\int_0^{\infty} \int_0^{\infty} \frac{f(x)\overline{g(x)}}{x+y} \, dx \, dy\right| \\ &=\left|\int_0^{\infty}\int_0^{\infty} f(y) \sqrt[4]{\frac{y}{x(x+y)^2}}\,\,\overline{g(x)} \sqrt[4]{\frac{x}{y(x+y)^2}}\, dx \, dy\right|\\ & \leqslant \sqrt{\int_0^{\infty}\int_0^{\infty}\frac{|f(y)|^2}{x+y}\sqrt{\frac{y}{x}}dx\, dy}\sqrt{\int_0^{\infty}\int_0^{\infty}\frac{|g(x)|^2}{x+y}\sqrt{\frac{x}{y}}dy\, dx} \\ &=\pi \sqrt{\int_0^{\infty} |f(y)|^2 \,dy}\sqrt{\int_0^\infty|g(x)|^2 \, dx}=\pi \| f \| \| g\|. \end{align*}
+\| H \| \leqslant \pi
+\| H \| = \pi
+\int_0^{\infty} \frac{1}{x+y} \sqrt{\frac{y}{x}} \, dx = 2 \int_0^{\infty} \frac{1}{1+\left(\sqrt{\frac{x}{y}}\right)^2} \frac{d\sqrt{x}}{\sqrt{y}} = \pi \quad \text{ for every } y \in (0,+\infty).
+f\in L^2(0,\infty)
+L^2
+f
+1
+L^2
+Hf
+\pi

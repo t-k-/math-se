@@ -1,0 +1,37 @@
+J
+Q
+J^t=QJQ^t
+\def\I{\mathrm{Id}}\def\Mat{\operatorname{Mat}}
+J = \lambda\I + N \in \Mat_n(K)
+J^t
+J
+Q
+J
+e_0 := 0
+e_1
+e_1, \ldots, e_n
+Q
+J^t = QJQ^t
+e_i
+Q
+Qe_i = e_{\pi(i)}
+\pi \in S_n
+Q^t e_i = e_{\pi^{-1}(i)}
+i
+i + 1 = \pi(\pi^{-1}(i) - 1)
+\pi^{-1}(i+1) = \pi^{-1}(i) - 1
+\pi^{-1}(i) = \pi(i) = n+1-i
+i
+ N = \begin{pmatrix} 0 & 1 & 0 & \cdots & 0\\                          0 & 0 & 1 & \cdots & 0\\                        \vdots && \ddots  &\\                         0 & \cdots & & 0 & 1\\                         0 & \cdots & & 0 & 0  \end{pmatrix} 
+ Je_i = \lambda e_i + Ne_i = \lambda e_i + e_{i-1}, \quad 1 \le i \le n 
+ QJQ^te_i = J^t e_i = \lambda e_i + e_{i+1} 
+ \lambda e_i + e_{i+1} = QJQ^t e_i = QJe_{\pi^{-1}(i)} = Q\bigl(\lambda e_{\pi^{-1}(i)} + e_{\pi^{-1}(i) - 1}\bigr) = \lambda e_i + e_{\pi(\pi^{-1}(i) - 1)}
+ Q := \bigl( \delta_{n+1-i,j}\bigr)_{i,j} 
+J
+J_l = \lambda_l \I_{n_l} + N_{n_l} \in \Mat_{n_l}(K)
+Q_{n_l}
+Q
+n_l
+QJ Q^t = J^t
+ J = \begin{pmatrix} J_1 & \cdots & 0 \\                         & \ddots\\                          0 & \cdots & J_k \end{pmatrix} 
+ Q = \begin{pmatrix} Q_{n_1} &    \cdots & 0 \\                         & \ddots\\                          0 & \cdots & Q_{n_k} \end{pmatrix} 

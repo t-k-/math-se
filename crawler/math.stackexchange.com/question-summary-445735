@@ -1,0 +1,75 @@
+f:\mathbb R \rightarrow \mathbb R
+f
+E
+f
+E
+f
+f
+\delta_n := \frac 1n
+\epsilon > 0
+\delta > 0
+\forall x,y \in E:|x-y| < \delta \rightarrow |f(x)-f(y)| <\epsilon
+n \geq N
+\frac 1N < \delta
+x_n \in E
+y_n \in \mathbb R \setminus E
+x_n,y_n
+\delta_n
+|x_n-y_n| \rightarrow 0
+x_n \in E
+y_n \in \mathbb R \setminus E
+ \exists \epsilon > 0 \forall \delta > 0 \exists x,y \in \mathbb R: |x-y|<\delta \wedge |f(x)-f(y)| \geq \epsilon 
+f
+E
+(y_n)_{n=0}^\infty
+(y_{n_j})_{j=0}^\infty
+y \in E
+x_{n_j}
+y
+|f(x_{n_j})-f(y)| = |f(y)| <\frac \epsilon 2
+y_{n_j}
+y
+|f(y_{n_j})-f(y)| <\frac \epsilon 2
+|f(y_{n_j})| \geq \epsilon
+|f(y)| \leq \frac \epsilon 2
+|f(y)| > \frac \epsilon 2
+  |x_{n_j}-y| \leq |x_{n_j}-y_{n_j}|+|y_{n_j}+y| \rightarrow 0 
+  |f(y_{n_j})| \leq |f(y_{n_j})-f(y)| + |f(y)| 
+   |f(y)| \geq |f(y_{n_j})| - |f(y_{n_j})-f(y)| \geq \frac \epsilon 2 
+\epsilon > 0
+\delta_1
+E
+E
+\delta_i := \delta_{x_i}
+\delta_2 := \min_{i=1,\cdots,N} \frac {\delta_i} 2
+\delta := \min(\delta_1,\delta_2)
+  \forall x \in E \exists \delta_x > 0 \forall y \in \mathbb R: |x-y|< \delta_x \rightarrow |f(x)-f(y)| < \epsilon 
+  E \subseteq \bigcup_{i=1}^N B(x_i,\frac{\delta_{x_i}}2) 
+|x-y|< \delta
+x,y \in E
+x,y \notin E
+x \in E
+y \notin E
+x \in B(x_i,\frac{\delta_i}2)
+i
+y \in B(x_i,\delta_i)
+  |y-x_i| \leq |y-x|+|x-x_i|\leq \delta_2 + \frac{\delta_i}2 \leq \delta_i 
+\epsilon
+f
+x
+\delta
+x'\in (x-\delta,x+\delta)
+f(x')\in (f(x)-\epsilon,f(x)+\epsilon)
+x
+f(x)
+f(x)
+\delta
+x
+r
+x
+x'
+1/10r
+f(x)
+f(x')
+r
+x

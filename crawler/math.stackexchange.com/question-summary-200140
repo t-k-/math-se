@@ -1,0 +1,23 @@
+\Gamma(z, x)
+\Gamma(z)
+\lim_{z\to\infty}{\Gamma(z, x)\over\Gamma(z)} = 1
+t^{z-1}\mathrm e^{-t}
+t=z-1
+z-1\gt x
+x
+x
+ \begin{align} \Gamma(z)-\Gamma(z,x) &= \int_0^xt^{z-1}\mathrm e^{-t}\mathrm dt \\ &\lt\int_0^xx^{z-1}\mathrm e^{-x}\mathrm dt \\ &=xx^{z-1}\mathrm e^{-x} \\ &=\frac x{z-1-x}\int_x^{z-1}x^{z-1}\mathrm e^{-x}\mathrm dt \\ &\lt\frac x{z-1-x}\int_x^{z-1}t^{z-1}\mathrm e^{-t}\mathrm dt \\ &\lt\frac x{z-1-x}\int_0^\infty t^{z-1}\mathrm e^{-t}\mathrm dt \\ &=\frac x{z-1-x}\Gamma(z)\;, \end{align} 
+x
+\Gamma(z)
+0
+z\to\infty
+ \left(\frac{e^x}{e^x-1}\right)^z \gamma(z,x) \leq \Gamma(z) 
+z \geq 1
+x > 0
+ \gamma(z,x) = \Gamma(z) - \Gamma(z,x) 
+ 0 \leq 1 - \frac{\Gamma(z,x)}{\Gamma(z)} = \frac{\gamma(z,x)}{\Gamma(z)} \leq \left(\frac{e^x-1}{e^x}\right)^z \longrightarrow 0 
+z \to \infty
+x
+x = f(z) \geq 0
+ z \log\left(1-e^{-f(z)}\right) \longrightarrow -\infty. 
+ \frac{z}{e^{f(z)}} \longrightarrow \infty. 

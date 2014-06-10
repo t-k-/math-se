@@ -1,0 +1,7 @@
+\min_k \sum_{i}^{N} k_{i}\left [  H\left ( x_{i} \right ) -T\right ],
+\text{s.t.} \sum_{i}^{N} k_{i}\left [  x_{i}  -R\right ] \le 0.01,
+H\left(x \right ) 
+x,k,T,R\in\mathbb{R}
+H\left ( x \right )\approx \frac{1}{2}+\frac{1}{2}tanh(kx)=\frac{1}{1+e^{-2kx}}
+\sum_{i}\sum_{j}\sum_{l}k_{1,i}k_{2,j}k_{3,l}\left [ H\left ( x_{ijk}\right )-T \right ],
+\sum_{i}\sum_{j}\sum_{l} k_{1,i }k_{2,j}k_{3,l}\left [x_{ijk} - R \right] \le 0.01,

@@ -1,0 +1,20 @@
+\int \frac{\mathrm dx}{\sin (x)-\sin(a)}
+\implies \sin x=\frac{2u}{1+u^2}\text{ and } x=2\arctan u,dx=\frac{2du}{1+u^2}
+I=\int\frac{dx}{\sin x-\sin \alpha} =\int\frac1{\frac{2u}{1+u^2}-\sin\alpha}\cdot\frac{2du}{1+u^2} =\int\frac{2du}{2u-(1+u^2)\sin\alpha}
+2u-(1+u^2)\sin\alpha=-\sin\alpha (1+u^2-2u\csc\alpha)=-\sin\alpha \left((u-\csc\alpha)^2-(\cot\alpha)^2\right)
+\frac{dx}{x^2-a^2}=\frac1{2a}\ln \left|\frac{x-a}{x+a}\right|+C
+C
+I=-\frac1{\sin\alpha}\frac1{\cot\alpha}\ln\left|\frac{u-\csc\alpha-\cot\alpha}{u-\csc\alpha+\cot\alpha}\right|+C
+\csc\alpha+\cot\alpha=\frac{1+\cos\alpha}{\sin\alpha}=\frac{2\cos^\frac\alpha2}{2\sin\frac\alpha2\cos\frac\alpha2}=\cot\frac\alpha2
+\csc\alpha-\cot\alpha=\tan\frac\alpha2
+\sin2A=2\sin A\cos A,\cos2A=2\cos^2A-1
+I=-\frac1{\cos\alpha}\ln\left|\frac{\tan\frac x2-\cot\frac \alpha2}{\tan\frac x2-\tan\frac\alpha2}\right|+C
+\ln\left|\frac{\tan\frac x2-\cot\frac \alpha2}{\tan\frac x2-\tan\frac\alpha2}\right|
+=\ln\left|\frac{\cos\frac \alpha2\cos\frac x2\left(\sin\frac x2\sin \frac \alpha2-\cos\frac \alpha2\cos\frac x2\right)}{\sin\frac \alpha2\cos\frac x2\left(\sin\frac x2\cos\frac\alpha2-\sin\frac\alpha2\cos\frac x2\right)}\right|=\ln\left|-\cot\frac\alpha2\right|+\ln\left|\frac{\cos\frac{x+\alpha}2}{\sin\frac{x-\alpha}2}\right|
+\ln\left|-\cot\frac\alpha2\right|
+x,
+\int \dfrac{1}{\sin (x)-\sin(a)}=\int \dfrac{\sin(x)+\sin(a)}{\sin^2 (x)-\sin^2(a)}=\int \dfrac{\sin(x)}{\sin^2 (x)-\sin^2(a)}+\int \dfrac{\sin(a)}{\sin^2 (x)-\sin^2(a)}
+u=\cos(x)
+\int \dfrac{\sin(x)}{\sin^2 (x)-\sin^2(a)}=\int \dfrac{\sin(x)}{1-\cos^2 (x)-\sin^2(a)}
+\int \dfrac{\sin(a)}{\sin^2 (x)-\sin^2(a)}=\sin(a)\int \dfrac{\csc^2(x)}{1-\csc^2(x)\sin^2(a)}=\sin(a)\int \dfrac{\csc^2(x)}{1-\cot^2(x)\sin^2(a)-\sin^2(a)}
+u=\cot(x)

@@ -1,0 +1,10 @@
+e^{j\omega t}
+<f, g> = \int_{-\infty}^{+\infty}f(t)\cdot g^*(t)dt
+F(j\omega) = \int_{-\infty}^{+\infty} f(t)\ e^{-j\omega t}\,dt
+f(t) = \frac{1}{2\pi}\int_{-\infty}^{+\infty} F(j\omega)\ e^{j\omega t}\,d\omega
+e^{\sigma t}e^{j\omega t}
+\mathcal{L}^{-1} \{F(s)\}(t) = f(t) = \frac{1}{2\pi j}\int_{\sigma-j\infty}^{\sigma+j\infty}F(s)e^{st}\,ds
+s = \sigma + j \omega, ds = j d\omega
+e^{\sigma t}
+\mathcal{L}^{-1} \{F(s)\}(t) = f(t) = \frac{e^{\sigma t}}{2\pi}\int_{\infty}^{+\infty}F(\sigma+j\omega)e^{j\omega t}\,d\omega
+e^{\sigma t}

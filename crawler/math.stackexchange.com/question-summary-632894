@@ -1,0 +1,29 @@
+\{X_1, ... X_t, ...X_n\}
+E[S]= \frac{n-1}{2}
+Var[S]
+i=2,\dots,n
+Y_i = 1
+X_i>X_{i-1}
+Y_i = 0
+S = \sum_{i=2}^{n} Y_i
+\text{Var}[S] = \sum_{i=2}^{n}\sum_{j=2}^{n} \text{Cov}[Y_i,Y_j]
+\text{Cov}[Y_i,Y_j]
+i=j
+i
+j
+1
+i
+j
+1
+(n+1)/12
+Var[S]=Var(\sum_{i=2}^{n}Y_i)=\sum_{i=2}^nVar(Y_i)+\sum_{i\neq j}Cov(Y_i, Y_j)
+Y_i
+\{X_t\}
+Y_i
+Y_j
+i\neq j
+\sum_{i\neq j}Cov(Y_i, Y_j)=0
+Var(Y_i)
+Y_i
+Var(Y_i)=E[Y_i^2]-(E[Y_i])^2=0.25
+Var[S]=Var(\sum_{i=2}^{n}Y_i)=\sum_{i=2}^nVar(Y_i)=\frac{n-1}{4}

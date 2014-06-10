@@ -1,0 +1,23 @@
+z\in \mathbb{D}, t\in S^1, \beta\in \mathbb{R}
+\mathbb{D}
+t=e^{i\theta}
+z= re^{i\phi}
+|dt| 
+S^1
+I(z)=\int_{S^1}|t-z|^{\beta}|dt|= \int_0^{2\pi}\bigl({1+r^2-2r\cos(\theta-\phi)}\bigr)^{\beta/2}d\theta,
+I(z)\leq K(1-|z|)^{1+\beta}
+\beta \ne -1
+I(z)\leq -K\ln(1-|z|)
+\beta = -1
+\beta<-1
+r\to1
+r
+a>0
+1-\cos\theta\ge a\theta^2
+\beta=-1
+\beta>-1
+\beta>0
+I(r)=\int_{-\pi}^\pi\bigl((1-r)^2+2r(1-\cos\theta)\bigr)^{\beta/2}\,d\theta.
+\begin{aligned}\tfrac12I(r)&<\int_0^{1-r}(1-r)^\beta\,d\theta+\int_{1-r}^\pi(2ar)^{\beta/2}\theta^\beta\,d\theta \\&=(1-r)^{\beta+1}+\frac{(2ar)^{\beta/2}}{\beta+1}\bigl(\pi^{\beta+1}-(1-r)^{\beta+1}\bigr), \end{aligned}
+|r|<1
+I(z) = 2 \pi \sum_{k=0}^\infty \frac{\Gamma(k-\beta/2)^2}{(k!)^2 \Gamma(-\beta/2)^2} r^{2k} = 2 \pi\; {}_2F_1([-\beta/2,-\beta/2],[1],r^2)

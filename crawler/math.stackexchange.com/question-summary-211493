@@ -1,0 +1,13 @@
+a
+b
+Y = a + (b-a)X
+X\sim \mathrm{Beta}(\alpha,\beta)
+\alpha
+\beta
+a=2
+b=4
+\alpha = 2
+\beta = 2
+\mathbf{E}Y=a+(b-a)\mathbf{E}X=a+(b-a)\frac{\alpha}{\alpha+\beta}=2+2 \cdot \frac{1}{2}=3
+\mathbf{Var}Y=(b-a)^2 \mathbf{Var}X=(b-a)^2 \cdot \frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}=4 \cdot \frac{4}{4^2 \cdot 5}=\frac{1}{5}
+\mathbf{P}(Y \leq 3)=\mathbf{P}(a+(b-a)X \leq 3)=\mathbf{P}(X\leq\frac{3-a}{b-a} )=P(X \leq \frac{1}{2})

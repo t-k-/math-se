@@ -1,0 +1,9 @@
+E=W^{1,2}(\mathbb{R}^3)
+u \in E
+\mathcal{D} \in C^2(E)
+ \mathcal{D}(u)= \int_{\mathbb{R}^3} \int_{\mathbb{R}^3} \frac{|u(x)|^2 |u(y)|^2}{|x-y|} \, dx \, dy \quad \text{for $u \in E$}. 
+\mathcal{D}(u)
+ \mathcal{D}_u(u)[\delta u] = 4\int_{\mathbb{R}^3} \int_{\mathbb{R}^3} \frac{\delta u(x) u(x) |u(y)|^2}{|x-y|} \, dx \, dy 
+ \mathcal{D}_{u,u}(u)[\delta u,\delta v] = 4\int_{\mathbb{R}^3} \int_{\mathbb{R}^3} \frac{\delta u(x) \delta v(x) |u(y)|^2}{|x-y|} \, dx \, dy + \\\qquad\qquad\qquad  8\int_{\mathbb{R}^3} \int_{\mathbb{R}^3} \frac{\delta u(x) \delta u(x) \delta v(y) \delta u(y)}{|x-y|} \, dx \, dy 
+W^{1,2}(\mathbb{R}^3)\hookrightarrow L^4(\mathbb{R}^3)
+\mathcal{D}_{u+h,u+h}[\delta u, \delta v]=\mathcal{D}_{u,u}[\delta u, \delta v]+o(||h||_{W^{1,2}})

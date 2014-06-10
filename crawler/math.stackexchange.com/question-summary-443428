@@ -1,0 +1,18 @@
+\sum_{p<x}(\log p)^m \sim (\log x)^m\cdot \pi(x).\hspace{20mm}(1)
+\sum_{p_k < x} p_k = \lim_{n\to \infty}\left( k + \sum \log p_k + \sum (\log p_k)^2/2 +...+ \sum (\log p_k)^n/n!\right)
+\sum p_k = \lim_{n\to\infty} \pi(x) \left(1 + \log x + (\log x)^2/2 +...+(\log x)^n/n! \right) \hspace{20mm}(2)
+\sum_{p < x} p \sim \frac{x^2}{2\log x}
+p_k \sim k\log k
+\sum\limits_{p < x} p \sim \frac{x^2}{2\log x}
+(2)
+\sum\limits_{p < x} (\log p)^m
+\begin{align} \sum_{p < x}(\log p)^m &= \sum_{k < x}(\log k)^m\bigl(\pi(k) - \pi(k-1)\bigr)\\ &= \sum_{k < x}\pi(k)(\log k)^m - \sum_{k < x-1}\pi(k)\bigl(\log (k+1)\bigr)^m\\ &\approx \pi(x)(\log x)^m - \sum_{k < x-1}\pi(k)\left(\bigl(\log(k+1)\bigr)^m - (\log k)^m\right)\\ &\approx \pi(x)(\log x)^m - m\sum_{k < x-1}\pi(k)(\log k)^{m-1}\log(1 + 1/k)\\ &\approx \pi(x)(\log x)^m - m\sum_{k < x-1}\frac{\pi(k)}{k}(\log k)^{m-1}\\ &\approx \pi(x)(\log x)^m - m\sum_{k < x-1}(\log k)^{m-2} \end{align}
+\sum\limits_{k < y}(\log k)^r
+\frac{y}{2}(\log y)^r\left(1 - \frac{\log 2}{\log y}\right)^r \leqslant \sum_{k < y}(\log k)^r \leqslant y(\log y)^r,
+m
+\sum_{p < x}(\log p)^m \approx \pi(x)(\log x)^m - cmx(\log x)^{m-2} \approx \pi(x)(\log x)^m\left(1 - \frac{cm}{\log x}\right)
+c
+\frac12
+(2)
+\frac{(\log x)^m}{m!}\left(1 - \frac{cm}{\log x}\right) = \frac{(\log x)^m}{m!} - c\frac{(\log x)^{m-1}}{(m-1)!}
+2

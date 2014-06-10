@@ -1,0 +1,18 @@
+\int_{0}^{1}\frac{\log(1+x)}{1+x^2}\,\mathrm dx
+x=\tan t
+x=1
+t=\frac \pi 4
+x=0
+t=0
+\int_{0}^{1}\frac{\log(1+x)}{1+x^2}dx=\int_{0}^{\frac \pi 4}\frac{\log(1+\tan t)}{(1+\tan^2t)}\sec^2t dt=\int_{0}^{\frac \pi 4}\log(1+\tan t)dt
+I=\int_{0}^{\frac \pi 4}\log(1+\tan t)dt
+I=\int_{0}^{\frac \pi 4}\log\left(1+\frac{1-\tan t}{1+\tan  t}\right)dt
+I=\int_{0}^{\frac \pi 4}\log\left(\frac 2{1+\tan  t}\right)dt
+I=\log 2\int_{0}^{\frac \pi 4}dt-\int_{0}^{\frac \pi 4}\log\left(1+\tan  t\right)dt
+I=\log 2(\frac \pi 4-0)-I
+2I=\frac \pi 4 \log 2
+\frac{i}{2}{Li_{2}} \left( \frac{1}{2}+\frac{1}{2}\,i \right)-\frac{i}{2}{Li_2} \left( \frac{1}{2}-\frac{1}{2}\,i \right) +\frac{1}{4}\,\pi \,\ln  \left( 2 \right) -{\it Catalan}= 0.2721982614 \,,
+ \int_{0}^{1}\frac{\log(1+x)}{1+x^2}\,\mathrm dx= \int_{1}^{2} \frac{\ln(t)\,dt}{(t-(1+i))(t-(1-i))} \,.
+u = x + 1
+\int\limits_0^1 \frac{\log(1 + x)dx}{1 + x^2} = \int\limits_0^1 \frac{\log(1 + x)dx}{1 + 2x -2x + x^2} = \int\limits_0^1 \frac{\log(1 + x)dx}{(x+1)^2 - 2x } \int\limits_0^1 \frac{\log(1 + x)dx}{(x+1)^2 - 2(x+1) + 2}
+\int\limits_1^2 \frac{\log(u)du}{u^2 - 2u + 2} = \int\limits_1^2 \frac{\log(u)du}{(u-1)^2 + 2} = \int\limits_1^2 \log(u)d[\arctan(u-1)]

@@ -1,0 +1,36 @@
+(c_i,d_i) \in \mathbb Z^2
+f(x) = \prod_{i=1}^k (c_i x + d_i)
+\mathbb P
+f
+\forall \textrm{ finite sets } S \subseteq \mathbb P: \exists n \in \mathbb N : \forall p \in S :\gcd(f(n),p)=1
+k=1
+f(x)\pmod p
+x\pmod p
+p
+c_ix+d_i
+p
+p
+c_i\equiv 0\pmod p
+i
+c_i^{-1}d\pmod p
+\mathbb Z/p\mathbb Z
+f(x)\not\equiv 0\pmod p
+p>k
+p
+\gcd(f(0),f(1),\ldots,f(k-1))
+> k
+f(x)=(x+5)(2x+3)(3x-1) 
+\gcd(f(0),f(1),f(2))=5
+N:=N(S)=\prod\limits_{p\in S}p
+f(x) = \prod_{i=1}^k (c_i x + d_i)
+g(n)=\sum\limits_{d|(N,f(n))}\mu(d)
+G(x)=\sum\limits_{n\leq x}g(n)
+\forall \textrm{ finite sets } S \subseteq \mathbb P: \exists n \in \mathbb N : \forall p \in S :\gcd(f(n),p)=1
+G(x)
+G(x)=\sum\limits_{n\leq x}\sum\limits_{d|f(n),d|N}\mu(d)=\sum\limits_{d|N}\mu(d)t_d(x)
+t_d(x)=\#\{f(n):d|f(n), n\leq x\}
+t_d(x)=\#\{f(n):d|f(n), n\leq x\}=\sum\limits_{m\in \mathbb{Z/d\mathbb{Z}}}\#\{n\leq x: d|f(m), n \equiv m (\text{mod}\ d)\}
+g(d)=\#\{m(mod\ d):d|f(n)\}
+G(x)=x\sum\limits_{d|N}\mu(d)g(d)+\text{error term}
+G(x)
+x\prod\limits_{p\in S}(1-g(p))

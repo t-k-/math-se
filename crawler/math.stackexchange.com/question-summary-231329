@@ -1,0 +1,27 @@
+E(v)=\int_0^1 \frac 1 2 x^5 (v'(x))^2  - v(x) dx 
+H_0^1(0,1) = \{ v \in H^1(0,1) : v(0)=v(1)=0 \}
+\min_{v\in H_0^1} E(v).
+v
+E
+\nu(0) = \nu(1) = 0
+ \left(x^5 \nu'\right)' + 1 = 0 
+ x^5 \nu' = -x + C \implies \nu' = \frac{-x + C}{x^5} 
+\nu_k
+E_k = E(\nu_k)\searrow -\infty
+\delta_k = \frac{1}{2^{5k}}
+h_k = 2^{6k}
+a_k = 2^{-4k} - \delta_k
+b_k = 2^{-4k}
+k \geq 1
+0 < a_k < b_k
+\nu_k
+ \nu_k(x) = \begin{cases} 0 & x \not\in (a_k,b_k)\\ \frac{2h_k}{\delta_k}(x-a_k) & x\in (a_k, a_k + \frac12 \delta_k] \\ \frac{2h_k}{\delta_k}(b_k - x) & x \in (b_k - \frac12\delta_k, b_k)\end{cases} 
+\nu_k
+(a_k,b_k)
+\delta_k
+h_k
+ \int_0^1 \nu_k(x) \mathrm{d}x = \frac12 \delta_k h_k = 2^{k-1} 
+\pm 2h_k /\delta_k
+ \int_0^1 x^5 (\nu')^2 \mathrm{d}x \leq b_k^5 \int_{a_k}^{b_k} \frac{4 h_k^2}{\delta_k^2} \mathrm{d}x = 4 b_k^5 h_k^2 \delta_k^{-1} = 2^{2 -20k + 12k + 5 k} = 2^{2 - 3k}
+ E_k \leq 2^{1-3k} - 2^{k-1} \leq 2 - 2^{k-1} 
+ \lim_{k\to\infty} E_k = - \infty

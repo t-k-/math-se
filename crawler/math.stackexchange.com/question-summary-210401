@@ -1,0 +1,32 @@
+f(f(x))=ax+bf(x)
+f(f(f(x)))=f_3(x)=af(x)+b(ax+bf(x))=abx+(a+b^2)f(x)
+f(f(f(f(x))))=f_4(x)=abf(x)+(a+b^2)(ax+bf(x))=(a^2+ab^2)x+(2ab+b^3)f(x)
+f_n(x)=A_n(a,b)x+B_n(a,b)f(x)
+f_n(f(x))=A_n(a,b)f(x)+B_n(a,b)(ax+bf(x))
+f_n(f(x))=aB_n(a,b)x+(bB_n(a,b)+A_n(a,b))f(x))
+f_{n+1}(x)=A_{n+1}(a,b)x+B_{n+1}(a,b)f(x)
+A_2(a,b)=a
+B_2(a,b)=b
+A_3(a,b)=ab
+B_3(a,b)=a+b^2
+A_{n+1}(a,b)=aB_n(a,b)
+B_{n+1}(a,b)=A_n(a,b)+bB_n(a,b)
+A_{n+2}(a,b)=aB_{n+1}(a,b)=aA_n(a,b)+abB_n(a,b))=aA_n(a,b)+bA_{n+1}(a,b)
+A_{n+2}(a,b)=aA_n(a,b)+bA_{n+1}(a,b)
+A_{n}(a,b)
+\frac1aA_{n+1}(a,b)=B_n(a,b)
+B_{n+1}(a,b)=A_n(a,b)+\frac baA_{n+1}(a,b)
+A_{n+2}(a,b)=aB_{n+1}(a,b)=a(A_n(a,b)+\frac baA_{n+1}(a,b))=aA_n(a,b)+bA_{n+1}(a,b)
+f(f(x))=ax+bf(x)
+f(x)=rx
+r^2x=(a+br)x
+r^2-br-a=0
+r_1=\frac{b+\sqrt{b^2+4a}}{2}
+r_2=\frac{b-\sqrt{b^2+4a}}{2}
+f_n(x)=r^nx
+f_n(x)=A_n(a,b)x+B_n(a,b)f(x)=(A_n(a,b)+rB_n(a,b))x
+A_n(a,b)+(\frac{b+\sqrt{b^2+4a}}{2})B_n(a,b)=(\frac{b+\sqrt{b^2+4a}}{2})^n
+A_n(a,b)+(\frac{b-\sqrt{b^2+4a}}{2})B_n(a,b)=(\frac{b-\sqrt{b^2+4a}}{2})^n
+B_n(a,b)=\cfrac{(\frac{b+\sqrt{b^2+4a}}{2})^n-(\frac{b-\sqrt{b^2+4a}}{2})^n}{\sqrt{b^2+4a}}
+A_{n+1}(a,b)=aB_n(a,b)=a\cfrac{(\frac{b+\sqrt{b^2+4a}}{2})^n-(\frac{b-\sqrt{b^2+4a}}{2})^n}{\sqrt{b^2+4a}}
+A_{n}(a,b)=a\cfrac{(\frac{b+\sqrt{b^2+4a}}{2})^{n-1}-(\frac{b-\sqrt{b^2+4a}}{2})^{n-1}}{\sqrt{b^2+4a}}

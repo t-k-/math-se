@@ -1,0 +1,20 @@
+n
+\{1, ..., n\}
+m
+p
+1
+1
+1-(1-p)^m
+2
+2
+1
+1-(1-p(1-p))^m
+k
+k
+1
+k-1
+1-\left(1-p(1-p)^{k-1}\right)^m
+ \sum_{k=1}^n\left(1-\left(1-p(1-p)^{k-1}\right)^m\right)\;. 
+n\gg m
+m
+ \begin{align} \sum_{k=1}^n\left(1-\left(1-p(1-p)^{k-1}\right)^m\right) &= n-\sum_{k=1}^n\sum_{j=0}^m\binom mj(-p)^j(1-p)^{j(k-1)} \\ &= n-\sum_{j=0}^m\binom mj(-p)^j\frac{1-(1-p)^{jn}}{1-(1-p)^{j\hphantom n}}\;. \end{align} 

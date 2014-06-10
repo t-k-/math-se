@@ -1,0 +1,30 @@
+ \Omega 
+ M 
+ f \in C^{\infty}(\partial \Omega) 
+ q \in C^{\infty}(M) 
+ q \geq 0 
+ - \Delta u + q u =0 \; \; \textrm{on}\; \Omega 
+ u|_{\partial \Omega} = f 
+ q \geq 0 
+ u \in C^{\infty}(\overline{\Omega}) 
+ \int_{\Omega} (|\nabla u|^2 + qu^2)dV = \min \{ \int_{\Omega} (|\nabla v|^2 + qv^2)dV : v \in C^{\infty}(\overline{\Omega}), v|_{\partial \Omega}= f \} ?
+w\in C^{\infty}_0(\Omega)
+f
+g(\epsilon) := F(u+\epsilon w) 
+\epsilon =0
+w
+u
+w = 0
+F(v+\epsilon w)=  \int_{\Omega} \left(|\nabla (v+\epsilon w)|^2 + q(v+\epsilon w)^2\right)\,dV .\tag{1} 
+ \lim_{\epsilon \to 0}\frac{d}{d\epsilon}F(u+\epsilon w) = 0 
+ \lim_{\epsilon \to 0}\int_{\Omega} \left(\frac{d}{d\epsilon}|\nabla (u+\epsilon w)|^2 + \frac{d}{d\epsilon}q(u+\epsilon w)^2\right)\,dV = 0, 
+ \lim_{\epsilon \to 0}\int_{\Omega} \left( 2\nabla (u+\epsilon w)\cdot  \nabla w +  2q(u+\epsilon w) w\right)\,dV = 0, 
+  \int_{\Omega} \left( \nabla u\cdot  \nabla w +  qu w\right)\,dV = 0. 
+ \int_{\Omega} ( -\Delta u +  qu )w\,dV = 0. 
+\mathcal{K}=\{u\in H^1(\Omega):\ \operatorname{trace}u=f\}
+F:\mathcal{K}\to\mathbb{R}
+F(v)=\int_\Omega|\nabla v|^2+qv^2dV
+u
+F(u)=\min\{F(v):\ v\in\mathcal{K}\}
+\mathcal{K}_\infty=\{u\in C^\infty(\overline{\Omega}):\ \operatorname{trace}u=f\}
+\mathcal{K}

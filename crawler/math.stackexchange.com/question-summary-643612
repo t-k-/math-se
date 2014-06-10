@@ -1,0 +1,33 @@
+\frac{2}{\pi}x \leq \sin x \leq x
+0 \leq x \leq \pi/2
+\log 2
+\operatorname{Ci}(\cdot)
+ \lim_{x \to +\infty} \int_x^{2x} \sin \left( \frac{1}{t} \right) \, dt. 
+ \frac{2}{\pi} \log 2 \leq \lim_{x \to +\infty} \int_x^{2x} \sin \left( \frac{1}{t} \right) \, dt \leq \log 2. 
+u=\sin\left(\frac{1}{t}\right)
+dv=dt
+ \left[t\sin\left(\frac{1}{t}\right)\right|_x^{2x}+\int_x^{2x}\frac{1}{t}\cos\left(\frac{1}{t}\right)dt 
+ \frac{\sin\left(\frac{1}{2x}\right)}{\frac{1}{2x}}-\frac{\sin\left(\frac{1}{x}\right)}{\frac{1}{x}} 
+t
+1-\varepsilon\leq\cos\left(\frac{1}{t}\right)\leq 1
+(1-\varepsilon)\log2
+\log2
+\int_{x}^{2x}{\sin\left(\frac{1}{t}\right)dt}=\int_{x}^{2x}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!}\cdot t^{-(2n+1)}\,dt= \sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)!} \int_{x}^{2x}{t^{-(2n+1)} dt}
+\lim_{x \rightarrow \infty} \int_{x}^{2x}{t^{-(2n+1)}dt}=\begin{cases}0,& n >0 \\ \log2,& n=0\end{cases} 
+\lim_{x \rightarrow \infty} \int_{x}^{2x}{\sin\left(\frac{1}{t}\right)\,dt}= \log2.
+u
+0
+\lim_{u\to0}\frac{\sin(u)}{u}=1
+o(1)\to 0
+u\to0
+x\to+\infty
+ \int_x^{2x}\sin\left(\frac{1}{t} \right)\,dt=\int_{\frac{1}{2x}}^{\frac{1}{x}}\frac{\sin(u)}{u^2}\,du, 
+ \sin(u)=u+o(1)u, 
+ \int_{\frac{1}{2x}}^{\frac{1}{x}}\frac{\sin(u)}{u^2}\,du=\int_{\frac{1}{2x}}^{\frac{1}{x}}\frac{1}{u}(1+o(1))\,du, 
+\color{#00f}{\large% \lim_{x \to \infty}\int_{x}^{2x}\sin\pars{1 \over t}\,\dd t = \ln\pars{2}} 
+x
+2x
+t
+sin(1/t)
+0
+ \begin{align*}& lim_{x\to\infty} \int_x^{2x} sin(1/t) dx\\ = & lim_{x\to\infty} \int_x^{2x} (1/t) + O((1/t)^3) dx\\ = & lim_{x\to\infty} \left[ln(t) + O((1/t)^2)\right]_x^{2x}\\ = & lim_{x\to\infty} \left[ln(2) + O((1/x)^2)\right]\\ = & log(2) \end{align*} 

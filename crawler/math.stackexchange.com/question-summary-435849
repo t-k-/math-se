@@ -1,0 +1,56 @@
+f(k)=\dfrac{(k+1)^{k+1}}{k^k}\sum_{t=k+1}^{\infty}\dfrac{1}{t^2}
+f(k+1)>f(k)
+f(k)=\dfrac{(k+1)^{k+1}}{k^k}\sum_{t=k+1}^{\infty}\dfrac{1}{t^2}<\dfrac{(k+1)^{k+1}}{k^k}\left(\dfrac{1}{k}-\dfrac{1}{n}\right)
+\lim_{k\to\infty}\dfrac{(k+1)^{k+1}}{k^k}\dfrac{1}{k}=e
+f(k+1)-f(k)=\dfrac{(k+2)^{k+2}}{(k+1)^{k+1}}\sum_{t=k+2}^{\infty}\dfrac{1}{t^2}-\dfrac{(k+1)^{k+1}}{k^k}\sum_{t=k+1}^{\infty}\dfrac{1}{t^2}
+S(k)=\sum_{t=k+2}^{\infty}\dfrac{1}{t^2}
+0< f(k+1)-f(k)=\dfrac{(k+2)^{k+2}}{(k+1)^{k+1}}S(k)-\dfrac{(k+1)^{k+1}}{k^k}\left(S(k)+\dfrac{1}{(k+1)^2}\right)
+\dfrac 1{(k+1)^2}<S(k)\left(\dfrac{(k+2)^{k+2}k^k}{(k+1)^{2k+2}}-1\right).
+X(k)=\dfrac{(k+2)^{k+2}k^k}{(k+1)^{2k+2}}
+X(k)=\left(1-\frac 1{(k+1)^2}\right)^k\left(\dfrac {k+2}{k+1} \right)^2.
+(1-x)^k\ge 1-kx+\frac {k(k-1)x^2}{2}-\frac{k(k-1)(k-2)x^3}{6},
+k\ge 0
+x\ge -1
+X(k)\ge Y(k)=\left(1-\frac {k}{(k+1)^2}+\frac {k(k-1)}{2(k+1)^4}-\frac{k(k-1)(k-2)}{6(k+1)^6}\right)\left(\dfrac {k+2}{k+1} \right)^2
+Y(k)-1=\frac{6k^7+45k^6+146k^5+266k^4+297k^3+202k^2+76k+18}{6(k+1)^8}>0.
+S(k)>Z(k)=\frac 1{(k+1)^2(Y(k)-1)}=
+\frac{6(k+1)^6}{6k^7+45k^6+146k^5+266k^4+297k^3+202k^2+76k+18}.
+S(k)
+\frac 1{k+\frac 32}=S_1(k)=\sum_{t=k+2}^{\infty}\left(\dfrac{1}{t-\frac 12}-\dfrac{1}{t+\frac 12}\right).
+0\le S_1(k)-S(k)=\sum_{t=k+2}^{\infty}\left(\dfrac{1}{t^2-\frac 14}-\dfrac{1}{t^2}\right) =\frac 14\sum_{t=k+2}^{\infty}\dfrac{1}{t^4-\frac {t^2}4}.
+\frac 1{\left(k+\frac 32\right)^3}=S_2(k)=\sum_{t=k+2}^{\infty}\left(\dfrac{1}{\left(t-\frac 12\right)^3}- \dfrac{1}{\left(t+\frac 12\right)^3}\right)=
+=\sum_{t=k+2}^{\infty}\dfrac{3t^2+\frac 14}{\left(t^2-\frac 14\right)^3}\ge 3\sum_{t=k+2}^{\infty}\dfrac{1}{t^4-\frac {t^2}4}=12\left(S_1(k)-S(k)\right).
+S(k)\ge S_1(k)-\frac{S_2(k)}{12}=\frac 1{k+\frac 32}-\frac 1{12\left(k+\frac 32\right)^3}.
+S(k)-Z(k)\ge S_1(k)-\frac{S_2(k)}{12}-Z(k)=
+\frac 23\cdot\frac{18k^7+159k^6+628k^5+1375k^4+1740k^3+1319k^2+680k+225} {(6k^7+45k^6+146k^5+266k^4+297k^3+202k^2+76k+18)(2k+3)^3}>0.\square
+f(k)
+I(\eta)
+\sum_{s=1}^{\infty}\frac{1}{(k+s)^2} = \int_{0}^{\infty}\frac{t e^{-kt}}{e^t-1}dt =\int_{0}^{\infty}\frac{2t e^{-2kt}}{e^{2t}-1}d2t =4\int_0^{\infty}\frac{t}{e^t-e^{-t}} e^{-(2k+1)t} dt 
+\varphi(t) = (\frac{-t}{e^t - e^{-t}})' = \frac{t(e^t+e^{-t})}{(e^t-e^{-t})^2} - \frac{1}{e^t-e^{-t}}
+\begin{align} I(\eta) =& \int_{0}^{\infty}\frac{\eta t}{e^t - e^{-t}} e^{-\eta t}dt  = \int_0^{\infty}\frac{t}{e^t - e^{-t}}d(1 - e^{-\eta t})\\ =& \left[\frac{t}{e^t - e^{-t}}(1 - e^{-\eta t})\right]_0^{\infty} - \int_0^{\infty}(1-e^{-\eta t}) d (\frac{t}{e^t - e^{-t}})\\ =&\int_0^{\infty}(1-e^{-\eta t}) \varphi(t) dt \end{align}
+I(\eta)
+t
+1 - e^{-\eta t}
+\eta
+\varphi(t)
+\varphi(t) > 0
+t > 0
+I(\eta)
+\eta
+(k + \frac12)\sum_{t=k+1}^{\infty}\frac{1}{t^2} = 2I(2k+1) \le 2I(2k+3) = (k + \frac32)\sum_{t=k+2}^{\infty}\frac{1}{t^2} \tag{*1}
+\psi(x) := (x+\frac12)\log(x+\frac12) - (x-\frac12)\log(x-\frac12)-\log x
+\psi'(x) \to 0
+x \to \infty
+\psi''(x) < 0
+x > \frac12
+\psi'(x) > 0
+x \in (\frac12,\infty)
+\psi(x)
+\begin{align} \psi'(x) &= \log(x+\frac12)-\log(x-\frac12)-\frac{1}{x} = \log\left(\frac{1+\frac{1}{2x}}{1-\frac{1}{2x}}\right) - \frac{1}{x}\\ \psi''(x) &= -\frac{1}{x^2(4x^2-1)}  \end{align}
+\frac{(k+1)^{k+1}}{k^k (k+\frac12)} = e^{\psi(k+\frac12)} \le e^{\psi(k+\frac32)}   = \frac{(k+2)^{k+2}}{(k+1)^{k+1}(k+\frac32)}\tag{*2}
+(*1)
+(*2)
+f(k) \le f(k+1)
+asympt((k+2)^{k+2}sum(1/j^2, j = k+2 .. infinity))/(k+1)^{k+1}-
+(k+1)^{k+1}sum(1/j^2, j = k+1 .. infinity))/k^k, k, 5)assuming\, k::posint
+ {\frac {- \left( {{\rm e}^{1}} \right) ^{2}+{{\rm e}^{2}}}{{{\rm e}^{1 }}}}-1/8\,{\frac {- \left( {{\rm e}^{1}} \right) ^{2}+{{\rm e}^{2}}}{{ {\rm e}^{1}}{k}^{2}}}+1/8\,{\frac {- \left( {{\rm e}^{1}} \right) ^{2} +3\,{{\rm e}^{2}}}{{{\rm e}^{1}}{k}^{3}}}+O \left( {k}^{-4} \right)   .

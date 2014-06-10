@@ -1,0 +1,41 @@
+f
+g
+\Delta\left(\frac{f}{g}\right)=\frac{1}{g}\Delta f-\frac{2}{g}\nabla\left(\frac{f}{g}\right).\nabla g-\frac{f}{g^2}\Delta g, \ \ \ \ \ g\neq0
+u=f/g
+v=g
+\Delta(uv)=u\Delta v+2\nabla u\cdot\nabla v+v\Delta u \tag{1}
+\Delta f=\frac{f}{g}\Delta g+2\nabla \left(\frac{f}{g}\right)\cdot \nabla g+g\,\Delta \left(\frac{f}{g}\right)
+\Delta \left(\frac{f}{g}\right) =\frac{1}{g}\Delta f-\frac{2}{g}\nabla \left(\frac{f}{g}\right)\cdot \nabla g-\frac{f}{g^2}\Delta g
+\nabla^2
+\nabla^2
+\Delta
+\nabla^2(uv) = v\nabla^2u + 2\nabla u \cdot \nabla v + u \nabla^2 v, \tag{0}
+\nabla^2(fg^{-1}) = g^{-1}\nabla^2 f + 2\nabla f \cdot \nabla (g^{-1}) + f\nabla^2(g^{-1}); \tag{1}
+\nabla (g^{-1})
+\nabla^2(g^{-1})
+\nabla (g^{-1})
+G(g)
+\nabla (G(g)) = G'(g)\nabla g, \tag{2}
+x_i
+\Bbb R^n
+\nabla w = (\dfrac{\partial w}{\partial x_1}, \dfrac{\partial w}{\partial x_2}, . . . , \dfrac{\partial w}{\partial x_n})^T; \tag{3}
+w = G(g)
+\dfrac{\partial G(g)}{\partial x_i} = \dfrac{d G}{d g}\dfrac{\partial g}{\partial x_i} = G'(g)\dfrac{\partial g}{\partial x_i}, \tag{4}
+\langle \nabla w, X \rangle = X[w] \tag{5}
+X
+\langle \cdot, \cdot \rangle
+\langle \nabla G(g), X \rangle = X[G(g)] = G'(g)X[g] = G'(g)\langle \nabla g, X \rangle = \langle G'(g) \nabla g , X \rangle, \tag{6}
+G(g) = g^{-1}
+\nabla (g^{-1}) = - g^{-2}\nabla g. \tag{7}
+\nabla^2 (g^{-1})
+\nabla^2 (g^{-1}) = \nabla \cdot \nabla  (g^{-1}) = \nabla \cdot (-g^{-2} \nabla g), \tag{8}
+\nabla \cdot (-g^{-2} \nabla g)
+\nabla \cdot (wX) = \nabla w \cdot X + w \nabla \cdot X \tag{9}
+\nabla^2 (g^{-1}) = \nabla \cdot (-g^{-2} \nabla g) = \nabla (-g^{-2}) \cdot \nabla g -g^{-2} \nabla^2g = 2g^{-3}\nabla g \cdot \nabla g -g^{-2} \nabla^2g, \tag{10}
+\nabla^2(fg^{-1}) = g^{-1}\nabla^2 f + 2\nabla f \cdot (- g^{-2}\nabla g) + f(2g^{-3}\nabla g \cdot \nabla g -g^{-2} \nabla^2g)
+= g^{-1}\nabla^2 f - fg^{-2} \nabla^2g - 2g^{-1}(\nabla f \cdot g \nabla g - fg^{-2}\nabla g \cdot \nabla g)
+= g^{-1}\nabla^2 f - fg^{-2} \nabla^2g - 2g^{-1}(g \nabla f - fg^{-2}\nabla g)\cdot \nabla g. \tag{11}
+g \nabla f - fg^{-2}\nabla g
+\nabla (uv) = u\nabla v + v \nabla u, \tag{12}
+\nabla (fg^{-1}) = g^{-1}\nabla f + f\nabla g^{-1} = g^{-1}\nabla f - fg^{-2}\nabla g. \tag{13}
+\nabla^2(fg^{-1}) = g^{-1}\nabla^2 f - 2g^{-1}\nabla (fg^{-1}) \cdot \nabla g - fg^{-2}\nabla^2 g. \tag{14}

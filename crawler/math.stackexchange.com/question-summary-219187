@@ -1,0 +1,64 @@
+\int_{-\infty}^{\infty} G(x,\sigma) \exp(-i(\delta x - \nu \exp(-\kappa x)/\kappa))dx
+G(x,\sigma)
+x
+\sigma
+\delta
+\nu
+\kappa
+\delta
+ \begin{eqnarray} \delta&\approx&5\times10^6\\ \nu&\approx&5\times10^6\textrm{ And slightly different from $\delta$}\\ \kappa&\epsilon& \mathbb{R^+}\\ \sigma&\gg&\frac{1}{\kappa} \end{eqnarray} 
+ \begin{align} \phi(x)&=\delta x-\nu\exp(-\kappa x)/\kappa\;, \\ \phi'(x)&=\delta+\nu\exp(-\kappa x)\;, \end{align} 
+\phi
+ I=\int_{-\infty}^\infty \frac{G(x(\phi),\sigma)}{\phi'}\exp(-\mathrm i\phi)\,\mathrm d\phi\;. 
+x
+\phi\sim\delta x
+x
+\phi\sim-\nu\exp(-\kappa x)/\kappa
+x/\sigma\sim\log(-\phi)/(\kappa\sigma)
+\delta
+\kappa\sigma
+ |I|=\left|\int_{-\infty}^\infty \frac{G(x(\phi),\sigma)}{\phi'}\exp(-\mathrm i\phi)\,\mathrm d\phi\right|\le \int_{-\infty}^\infty\left|\frac{\mathrm d^n}{\mathrm d\phi^n}\frac{G(x(\phi),\sigma)}{\phi'}\right|\,\mathrm d\phi 
+n\in\mathbb N
+x
+n=0
+ |I|\le\int_{-\infty}^\infty G(x,\sigma)\,\mathrm dx=1\;, 
+n=1
+|\phi'|\lt\delta
+|\phi''/\phi'|\lt\kappa
+ \begin{align} |I|&\le\int_{-\infty}^\infty\left|\frac{G'(x(\phi),\sigma)}{\phi'^2}-\frac{G(x(\phi),\sigma)\phi''}{\phi'^3}\right|\,\mathrm d\phi \\ &=\int_{-\infty}^\infty\left|\frac{G'(x,\sigma)}{\phi'}-\frac{G(x,\sigma)\phi''}{\phi'^2}\right|\,\mathrm dx \\ &\le\frac1\delta\int_{-\infty}^\infty\left(|G'(x,\sigma)|+\kappa|G(x,\sigma)|\right)\,\mathrm dx \\ &=\frac1\delta\left(2G(0,\sigma)+\kappa\right) \\ &=\frac1\delta\left(\frac2{\sqrt{2\pi}\sigma}+\kappa\right)\;, \end{align} 
+n=2
+|\phi'''/\phi'|\le\kappa^2
+ \begin{align} |I|&\le\int_{-\infty}^\infty\left|\frac{G''}{\phi'^3}-3\frac{G'\phi''}{\phi'^4}+3\frac{G\phi''^2}{\phi'^5}-\frac{G\phi'''}{\phi'^4}\right|\,\mathrm d\phi \\ &=\int_{-\infty}^\infty\left|\frac{G''}{\phi'^2}-3\frac{G'\phi''}{\phi'^3}+3\frac{G\phi''^2}{\phi'^4}-\frac{G\phi'''}{\phi'^3}\right|\,\mathrm dx \\ &\le\frac1{\delta^2}\int_{-\infty}^\infty\left(|G''|+3\kappa |G'|+3\kappa^2|G|+\kappa^2|G|\right)\,\mathrm dx \\ &\le\frac1{\delta^2}\left(\frac2{\sigma^2}+\frac{6\kappa}{\sqrt{2\pi}\sigma}+4\kappa^2\right)\;. \end{align} 
+\kappa/\delta
+\kappa\ll\delta
+\kappa\sim\delta
+\exp(it)=\cos t + i\sin t
+x
+\exp(-i(\delta x -\nu\exp(-\kappa x)/\kappa) =\\ \cos(\delta x -\nu\exp(-\kappa x)/\kappa)-i\sin(\delta x -\nu\exp(-\kappa x)/\kappa) 
+\cos(\delta x -\nu\exp(-\kappa x)/\kappa)-i\sin(\delta x -\nu\exp(-\kappa x)/\kappa)\sim \\ \cos(\delta x)-i\sin(\delta x)
+(-\infty,\infty)
+(-1,1)
+\sigma = 3700, \delta = 5000000, \nu=50001000, \kappa=10
+10^{-14}
+G(x,\sigma)
+x
+x
+\delta x
+0\lt\kappa\def\im{\operatorname{Im}}\im x\lt\pi\bmod2\pi
+\kappa\im x=-\pi/2
+x=t-\frac\pi{2\kappa}\mathrm i
+0\ge\im x\ge-\frac\pi{2\kappa}
+ \begin{align} &\int_{-\infty}^\infty G\left(t-\frac\pi{2\kappa}\mathrm i,\sigma\right)\exp\left(-\mathrm i\left(\delta\left(t-\frac\pi{2\kappa}\mathrm i\right)-\nu\exp\left(-\kappa \left(t-\frac\pi{2\kappa}\mathrm i\right)\right)/\kappa\right)\right)\,\mathrm dt \\ =&\exp\left(-\frac12\left(\frac\pi{2\kappa\sigma}\right)^2-\frac{\pi\delta}{2\kappa}\right)\int_{-\infty}^\infty G\left(t,\sigma\right)\exp\left(\mathrm i\left(\frac\pi{2\kappa\sigma}-\delta\right) t-\nu\exp\left(-\kappa t\right)/\kappa\right)\,\mathrm dt\;. \end{align} 
+\delta/\kappa
+t
+|t|\sim1/\kappa\ll\sigma
+t
+1
+t
+\pi/4
+t=\mathrm e^{-\mathrm i\pi/4}u
+ \begin{align} &\exp\left(-\frac12\left(\frac\pi{2\kappa\sigma}\right)^2-\frac{\pi\delta}{2\kappa}\right)\left(\int_{-\infty}^0 G\left(t,\sigma\right)\exp\left(\mathrm i\left(\frac\pi{2\kappa\sigma}-\delta\right) t-\nu\exp\left(-\kappa t\right)/\kappa\right)\,\mathrm dt+\right. \\&\left.\frac1{\sqrt{2\pi}\sigma}\int_0^\infty \exp\left(\frac12\mathrm i\left(\frac u\sigma\right)^2+e^{\mathrm i\pi/4}\left(\frac\pi{2\kappa\sigma}-\delta\right) u-\nu\exp\left(-\kappa\mathrm e^{-\mathrm i\pi/4}u\right)/\kappa\right)\,\mathrm du\right)\;. \end{align} 
+\delta
+u
+\exp\left(-\delta u/\sqrt2\right)
+ \frac1{\sqrt{2\pi}\sigma}\int_0^\infty \exp\left(e^{\mathrm i\pi/4}\left(\frac\pi{2\kappa\sigma}-\delta\right) u-\nu/\kappa+\nu\mathrm e^{-\mathrm i\pi/4}u\right)\,\mathrm du=\frac{\exp\left(-\nu/\kappa-\mathrm i\pi/4\right)}{\sqrt{2\pi}\sigma(\pi/(2\kappa\sigma)-\delta-\mathrm i\nu)}\;. 

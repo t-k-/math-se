@@ -1,0 +1,13 @@
+f
+u
+u_h
+p_j
+\phi_j
+\phi_j
+J=\int_\Omega F(x,y,y')dx
+\delta J=0
+\left\{\begin{aligned} -\Delta u+cu=f\quad ,in \quad\Omega \\ u=g_0\quad ,on\quad\Gamma_D\\\partial_nu=g_1\quad,on\quad\Gamma_N\end{aligned} \right.
+\left\{\begin{aligned} \int_\Omega\nabla u \cdot \nabla v+c\int_\Omega u v=\int_\Omega f v + \int_{\Gamma_N} g_1 v \\ u=g_0\quad ,on\quad\Gamma_D\end{aligned}\right.
+u_h=\sum_{j=1}^{N}u_h(p_j)\phi_j
+\phi_i(p_j)=\delta_{ij}=\left\{\begin{aligned} 1\quad i=j\\0\quad i\not=j\end {aligned}\right.
+\sum_{j \in Ind }(\int_\Omega\nabla \phi_j \cdot \nabla \phi_i+c\int_\Omega \phi_j \phi_i)u_j=\int_\Omega f \phi_i + \int_{\Gamma_N} g_1 \phi_i-\sum_{j \in Dir }(\int_\Omega\nabla \phi_j \cdot \nabla \phi_i+c\int_\Omega \phi_j \phi_i)g_0(p_j)

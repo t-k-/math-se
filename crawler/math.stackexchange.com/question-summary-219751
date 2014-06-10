@@ -1,0 +1,26 @@
+\theta
+[0, T]
+E[(X-Y)|(X>Y)]
+X
+Y
+X
+\mathbb E(X-Y\mid X\gt Y)=\mathbb E(X)
+Y
+\theta
+X
+\mathbb E(X-Y\mid X\gt Y)=\frac{N}D
+N=\mathbb E(X-Y;X\gt Y)
+D=\mathbb P(X\gt Y)
+X
+Y
+y\geqslant0
+ D=\int_0^{+\infty}\int_y^{+\infty}\mathrm d\mathbb P_X(x)\mathrm d\mathbb P_Y(y)=\int_0^{+\infty}\mathbb P(X\gt y)\mathrm d\mathbb P_Y(y)=\int_0^{+\infty}\mathrm e^{-\theta y}\mathrm d\mathbb P_Y(y), 
+ D=\mathbb P(X\gt Y)=\mathbb E(\mathrm e^{-\theta Y}). 
+ N=\int_0^{+\infty}\int_y^{+\infty}(x-y)\mathrm d\mathbb P_X(x)\mathrm d\mathbb P_Y(y)=\int_0^{+\infty}\mathbb E(X-y;X\gt y)\mathrm d\mathbb P_Y(y). 
+ \mathbb E(X-y;X\gt y)=\int_y^{+\infty}(x-y)\mathrm d\mathbb P_X(x)=\int_y^{+\infty}\int_y^x\mathrm dz\,\mathrm d\mathbb P_X(x), 
+ \mathbb E(X-y;X\gt y)=\int_y^{+\infty}\int_z^{+\infty}\mathrm d\mathbb P_X(x)\,\mathrm dz=\int_y^{+\infty}\mathbb P(X\geqslant z)\,\mathrm dz, 
+ \mathbb E(X-y;X\gt y)=\int_y^{+\infty}\mathrm e^{-\theta z}\,\mathrm dz=\theta^{-1}\mathrm e^{-\theta y}. 
+ N=\mathbb E(X-Y;X\gt Y)=\theta^{-1}\mathbb E(\mathrm e^{-\theta Y}). 
+ \mathbb E(X-Y\mid X\gt Y)=\frac{\theta^{-1}\mathbb E(\mathrm e^{-\theta Y})}{\mathbb E(\mathrm e^{-\theta Y})}=\theta^{-1}=\mathbb E(X). 
+X
+Y

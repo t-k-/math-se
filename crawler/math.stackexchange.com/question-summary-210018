@@ -1,0 +1,13 @@
+\zeta
+ \mathcal{Z}(s)=\prod_{\gamma \; \text{primitive}} \prod_{n=0}^\infty (1-e^{-l(\gamma)(n+s)}); \qquad \Re(s)>1.
+\gamma
+l(\gamma)
+s\in \mathbb{R}
+l(\gamma^n)= n l(\gamma)
+ \frac{\frac{d}{ds}\mathcal{Z}(s)}{\mathcal{Z}(s)} = \sum_{\gamma \; \text{primitive}} \sum_{n=1}^\infty\frac{l(\gamma) e^{-l(\gamma)ns}}{1-e^{-l(\gamma)n}}.
+ \frac{d}{dx} \left(\prod_{n=0}^\infty f_n(x)\right)= \left(\prod_{n=0}^\infty f_n(x)\right)\left(\sum_{n=0}^\infty \frac{\frac{d}{dx}f_n(x)}{f_n(x)}\right).
+ \mathcal{Z}(s)
+ \frac{\frac{d}{ds}\mathcal{Z}(s)}{\mathcal{Z}(s)} = \sum_{\gamma \; \text{primitive}} \sum_{n=0}^\infty\frac{l(\gamma) e^{-l(\gamma)(n+s)}}{1-e^{-l(\gamma)(n+s)}}.
+l(\gamma)
+ \frac{1}{1-e^{-l(\gamma)n}} = \sum_{k=0}^\infty e^{-l(\gamma)kn} \qquad\text{and}\qquad \frac{e^{-l(\gamma)(k+s)}}{1-e^{-l(\gamma)(k+s)}} = \sum_{n=1}^\infty e^{-l(\gamma)(k+s)n}. 
+ \begin{align*} \sum_{n=1}^\infty\frac{e^{-l(\gamma)ns}}{1-e^{-l(\gamma)n}} & =\sum_{n=1}^\infty \sum_{k=0}^\infty e^{-l(\gamma)ns} e^{-l(\gamma)kn} \\ & = \sum_{k=0}^\infty \sum_{n=1}^\infty e^{-l(\gamma)(k+s)n} \\& = \sum_{k=0}^\infty \frac{e^{-l(\gamma)(k+s)}}{1-e^{-l(\gamma)(k+s)}} \end{align*} 

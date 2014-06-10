@@ -1,0 +1,24 @@
+\Delta u =f
+f
+\mathbb{R}^n
+u
+ u(x) = \frac{1}{|\partial B(x,r)|}\int_{ \partial B(x,r)}u(y) \,dS(y) ,\tag{1} 
+ \phi(r) = \frac{1}{|\partial B(x,r)|}\int_{ \partial B(x,r)}u(y)\,dS(y) = \frac{1}{|\partial B(0,1)|}\int_{ \partial B(0,1)}u(x+rz)\,dS(z), 
+ \phi'(r) = \frac{1}{|\partial B(0,1)|}\int_{ \partial B(0,1)}\nabla u(x+rz)z\,dS(z) \\ =  \frac{1}{|\partial B(x,r)|}\int_{ \partial B(x,r)} \nabla u(y) \cdot n\,dS(y)\\  =\frac{1}{|\partial B(x,r)|} \int_{ B(x,r)} \Delta u(y) \,dy = \frac{1}{|\partial B(x,r)|} \int_{ B(x,r)} f(y) \,dy.
+f\neq 0
+\phi'(r)\neq 0
+\phi(r)
+r
+u(x)
+u
+f
+p
+u
+p
+u(x)
+(n-1)
+p
+u(x) = v(|x-p|) = v(r), \quad \text{ and }\quad f(x) = f(|x-p|) = h(r),
+ \Delta u = v''(r) + \frac{n-1}{r}v'(r) = h(r), 
+ v(r) = v(0) + \int^r_0\tau^{1-n}\int^{\tau}_0 \xi^{n-1}h(\xi) d\xi, 
+ u(x) = u(p) + \int^{|x-p|}_0\frac{1}{|\partial B(p,\tau)|} \left(\int^{\tau}_0 \Big(\int_{\partial B(p,r)} \Delta u(y)dy\Big)dr \right) d\tau, 

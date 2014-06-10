@@ -1,0 +1,18 @@
+z_1,\dots,z_n\in\mathbb{C}
+\epsilon_j\in\{-1,1\}
+j=1,\dots,n
+P(\epsilon_j=\pm 1)=1/2
+A>1.
+A^{-1}\left(\sum_{j=1}^n |z_j|^2\right)^{1/2}\le\left(\mathbb{E}\left|\sum_{j=1}^n \epsilon_j z_j\right|^p\right)^{1/p}\le A\left(\sum_{j=1}^n |z_j|^2\right)^{1/2}
+T:L^p\rightarrow L^p
+L^p=L^p(\mathbb{R}^d)
+1\le p<\infty
+f_1,\dots,f_n\in L^p
+C>0
+\left\|\left(\sum_{j=1}^n |Tf_j|^2\right)^{1/2}\right\|_p\le C\left\|\left(\sum_{j=1}^n |f_j|^2\right)^{1/2}\right\|_p
+\{f_j\}_{j=1}^n\subset L_p(\Omega,\mu)
+C= A^2\Vert T\Vert
+ \begin{align} A^{-1}\left\Vert\left(\sum\limits_{j=1}^n|f_j|^2\right)^{1/2}\right\Vert_p &\leq\left(\int_\Omega\mathbb{E}\left|\sum\limits_{j=1}^n\varepsilon_j f_j(\omega)\right|^pd\mu(\omega)\right)^{1/p}\\ &=\left(\mathbb{E}\left[\int_\Omega\left|\sum\limits_{j=1}^n\varepsilon_j f_j(\omega)\right|^pd\mu(\omega)\right]\right)^{1/p}\\ &=\left(\mathbb{E}\left[\left\Vert\sum\limits_{j=1}^n \varepsilon_j f_j\right\Vert_p^p\right]\right)^{1/p} \end{align} 
+ \left(\mathbb{E}\left[\left\Vert\sum\limits_{j=1}^n \varepsilon_j f_j\right\Vert_p^p\right]\right)^{1/p} \leq A\left\Vert\left(\sum\limits_{j=1}^n|f_j|^2\right)^{1/2}\right\Vert_p 
+ A^{-1}\left\Vert\left(\sum\limits_{j=1}^n|f_j|^2\right)^{1/2}\right\Vert_p \leq \left(\mathbb{E}\left[\left\Vert\sum\limits_{j=1}^n \varepsilon_j f_j\right\Vert_p^p\right]\right)^{1/p} \leq A\left\Vert\left(\sum\limits_{j=1}^n|f_j|^2\right)^{1/2}\right\Vert_p 
+ \begin{align} \left\Vert\left(\sum\limits_{j=1}^n|T(f_j)|^2\right)^{1/2}\right\Vert_p &\leq A\left(\mathbb{E}\left[\left\Vert\sum\limits_{j=1}^n\varepsilon_j T(f_j)\right\Vert_p^p\right]\right)^{1/p}\\ &\leq A\left(\mathbb{E}\left[\left\Vert T\left(\sum\limits_{j=1}^n\varepsilon_j f_j\right)\right\Vert_p^p\right]\right)^{1/p}\\ &\leq A\left(\mathbb{E}\left[\Vert T\Vert^p\left\Vert \sum\limits_{j=1}^n\varepsilon_j f_j\right\Vert_p^p\right]\right)^{1/p}\\ &\leq A\Vert T\Vert\left(\mathbb{E}\left[\left\Vert \sum\limits_{j=1}^n\varepsilon_j f_j\right\Vert_p^p\right]\right)^{1/p}\\ &\leq A\Vert T\Vert A \left\Vert\left(\sum\limits_{j=1}^n|f_j|^2\right)^{1/2}\right\Vert_p \end{align} 

@@ -1,0 +1,32 @@
+T
+(\Omega_t,\mathcal{A}_t)_{t\in T}
+\mathcal{A}:=\bigotimes_{i\in T}\mathcal{A}_i
+ \mathfrak{A}:=\left\{A\subset\prod_{i\in T}\Omega_i|~\exists~R\subset T~\text{countable }: A\in\pi_R^{-1}\left(\bigotimes_{i\in R}\mathcal{A}_i\right)\right\}, 
+ \pi_R^T:=\pi_R\colon\prod_{i\in T}\Omega_i\to\prod_{i\in R}\Omega_i,~~(\omega_i)_{i\in T}\longmapsto(\omega_i)_{i\in R}. 
+R\subset T
+\prod_{t\in T}\Omega_t\in\pi_R^{-1}\left(\bigotimes_{t\in R}\mathcal{A}_t\right)
+R:=\left\{t\right\}
+t\in T
+ \prod_{t\in T}\Omega_t=\pi_{R}^{-1}(\Omega_t)\in\pi_R^{-1}(\mathcal{A}_t)\implies\prod_{t\in T}\Omega_t\in\mathfrak{A}. 
+A\in\mathfrak{A}
+R\subset T
+A=\pi_R^{-1}(B)
+B\in\bigotimes_{t\in R}\mathcal{A}_t
+B^C\in\bigotimes_{t\in R}\mathcal{A}_T
+A^C\in\mathfrak{A}
+ A^C=\left\{x\in\prod_{t\in T}\Omega_t: x\notin A\right\}\\=\left\{x\in\prod_{t\in T}\Omega_t: x\notin \pi_R^{-1}(B)\right\}\\=(\pi_R^{-1}(B))^C=\pi_R^{-1}(B^C)\in\pi_R^{-1}\left(\bigotimes_{t\in R}\mathcal{A}_t\right), 
+(A_n)\in\mathfrak{A}^{\mathbb{N}}
+A_n
+R_n\subset T
+A_n=\pi_{R_n}^{-1}(B_n)
+B_n\in\bigotimes_{t\in R_n}\mathcal{A}_t
+R
+T
+ R:=\bigcup_{n\in\mathbb{N}}R_n. 
+n\in\mathbb{N}
+ \pi_{R_n}^{-1}\left(\bigotimes_{t\in R_n}\mathcal{A}_t\right)\subset\pi_R^{-1}\left(\bigotimes_{t\in R}\mathcal{A}_t\right). 
+n\in\mathbb{N}
+A_n=\pi_R^{-1}(C_n)
+C_n\in\bigotimes_{t\in R}\mathcal{A}_t
+\bigcup_{n\in\mathbb{N}}C_n\in\bigotimes_{t\in R}\mathcal{A}_t
+ \bigcup_{n\in\mathbb{N}}A_n=\bigcup_{n\in\mathbb{N}}\pi_R^{-1}(C_n)=\pi_R^{-1}\left(\bigcup_{n\in\mathbb{N}}C_n\right)\in\pi_R^{-1}\left(\bigotimes_{t\in R}\mathcal{A}_t\right), 

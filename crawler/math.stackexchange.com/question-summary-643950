@@ -1,0 +1,15 @@
+\dfrac{1}{s^2(s^2+\omega^2)}
+\dfrac{a}{s}+\dfrac{b}{s^2}+\dfrac{c}{s^2+\omega^2}
+F(s) = H(s) G(s)
+H(s) = \frac{1}{s^2}
+G(s) = \frac{1}{s^2 + \omega^2}
+\mathcal{L}^{-1}\big(H(s) G(s)\big) = (h * g)(t) = \int_0^t \ h(\tau)  g(t-\tau) \ d\tau
+h(\tau) = \mathcal{L}^{-1}( 1/s^2 ) = \tau \ u(\tau)
+u(\tau)
+g(\tau) = \mathcal{L}^{-1}\big( 1/(\omega^2+ s^2 )\big) = \frac{\sin{\omega \tau}}{\omega} u(\tau)
+(h * g)(t) = \int_0^t \ \tau \ u(\tau)  \frac{\sin{\omega (t - \tau)}}{\omega} u(t-\tau) \ d\tau
+\tau
+u(\tau) = 1
+t > \tau
+u(t-\tau) = 1
+(h * g)(t) = \int_0^t \ \tau \ \frac{\sin{\omega (t - \tau)}}{\omega} \ d\tau = \frac{1}{\omega^2} (t - \frac{\sin{\omega t}}{\omega})

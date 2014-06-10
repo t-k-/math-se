@@ -1,0 +1,56 @@
+G(x,y)=\sum_{m,n\ge 0}F(n,m) x^n y^m
+G
+F(n,m)
+H_1(x)=\sum_{n\ge0} F(n,0)x^n, H_2(y)=\sum_{m\ge0} F(0,m)y^m, c=F(0,0)
+G
+1-x-y
+1-x-y
+1
+F(n,m)
+x
+F(n-1,m)
+y
+F(n,m-1)
+F(n-a,m-b)
+x^ay^b
+G(x,y)(1-x-y)=\sum_{m,n\ge 0}F(n,m) (x^n y^m-x^{n+1}y^m-x^{n}y^{m+1})=
+\sum_{m,n \ge 1} (F(n,m)-F(n-1,m)-F(n,m-1)) x^{n}y^{m}+
+\sum_{n \ge 1} (F(n,0)-F(n-1,0)) x^{n}+\sum_{m \ge 1} (F(0,m)-F(0,m-1)) y^{m}+F(0,0)=
+H_1(x)(1-x) + H_2(y)(1-y)-c
+Fib(x)=\frac{x}{1-x-x^2}
+Fib
+G(x,y) = \frac{H_1(x)(1-x) + H_2(y)(1-y)-c}{1-x-y}
+F
+\frac{1}{1-x-y}=\sum_{i\ge 0}(x+y)^i
+S(x,y)=H_1(x)(1-x) + H_2(y)(1-y)-c=\sum_{n,m} s_{n,m} x^ny^m
+F(n,m) = \sum_{a,b \ge 0}s_{a,b} \binom{n+m-a-b}{n-a}
+S
+G(x,y) = \sum_{i \ge 0}S(x,y)(x+y)^i = \sum_{n,m \ge 0} (\sum_{a,b \ge 0}s_{a,b} \binom{n+m-a-b}{n-a})x^ny^m
+F(n,0)=1, F(0,m) = \delta_{m,0}
+S(x,y)=1
+F(n,m)=\binom{n+m}{n}
+\frac{q(x)}{1-\sum a_i x^i} =\sum \frac{q_i(x)}{1-r_i x}
+r_i^{-1}
+1-\sum a_i x^i
+\frac{1}{1-cx} = \sum c^ix^i
+\frac{1}{1-\sum_{a,b} c_{a,b}x^a y^b}=\sum_{i \ge 0} (\sum_{a,b} c_{a,b}x^a y^b)^{i}
+F(n,m)
+F(0,r)
+F(s,0)
+F(0,r)=F(s,0)=1
+F(n,m)={n+m \choose n}
+F(1,0)=1, F(r,0)=F(0,s)=0
+F(m,n)={m+n-1 \choose m-1}
+x^r y^s
+r \ge 0
+s \ge 0
+G(0, y)
+G(x, 0)
+G(x, y)
+ G(x, y) = \sum_{r, s \ge 0} F(r, s) x^r y^s 
+ F(r + 1, s + 1) = F(r + 1, s) + F(r, s + 1) 
+F(r, 0) = F(0, r) = 1
+G(x, 0) = \frac{1}{1 - x}
+G(0, y) = \frac{1}{1 - y}
+ \frac{G(x, y) - 1 / (1 - y) - 1 / (1 - x) + 1}{x y}   = \frac{G(x, y) - 1 / (1 - y)}{x}  + \frac{G(x, y) - 1 / (1 - x)}{y} 
+ [x^r y^s] G(x, y) = \binom{r + s}{r} = \binom{r + s}{s} 

@@ -1,0 +1,15 @@
+\int_0^{\infty} f(x)/x^2 \, dx
+f(x)=1-\sqrt{\pi/6} \left(\cos (x) C\left(\sqrt{\frac{6 x}{\pi }} \right)+S\left(\sqrt{\frac{6 x}{\pi }} \right) \sin    (x)\right)/\sqrt{x}
+C(x)
+S(x)
+2 \pi/(3 \sqrt{3})
+z=t\sqrt{x}
+dz=\sqrt{x}dt
+ C(x)=\int_{0}^{x}\cos\left(\frac{1}{2}\pi t^{2}\right)dt=\sqrt{\frac{2}{\pi}}\int_{0}^{\sqrt{\pi/2}x}\cos(z^{2})\, dz, 
+ S(x)=\int_{0}^{x}\sin\left(\frac{1}{2}\pi t^{2}\right)dt=\sqrt{\frac{2}{\pi}}\int_{0}^{\sqrt{\pi/2}x}\sin(z^{2})\, dz. 
+ C\left(\sqrt{\frac{6x}{\pi}}\right)=\sqrt{\frac{2}{\pi}}\int_{0}^{\sqrt{3x}}\cos(z^{2})\, dz, 
+ S\left(\sqrt{\frac{6x}{\pi}}\right)=\sqrt{\frac{2}{\pi}}\int_{0}^{\sqrt{3x}}\sin(z^{2})\, dz. 
+ \begin{eqnarray*} f(x) & = & 1-\sqrt{\pi/6}\frac{\cos(x)C\left(\sqrt{\frac{6x}{\pi}}\right)+\sin(x)S\left(\sqrt{\frac{6x}{\pi}}\right)}{\sqrt{x}} \\ & = & \frac{\int_{0}^{\sqrt{3x}}(1-\cos(x-z^{2}))\, dz}{\sqrt{3x}} \end{eqnarray*} 
+ \int_{0}^{\infty}\frac{f(x)}{x^{2}}\, dx=\frac{2}{\sqrt{3}}\int_{0}^{\infty}\int_{0}^{\sqrt{3x}}\frac{\sin^{2}((x-z^{2})/2)}{x^{5/2}}\, dz\, dx. 
+ \begin{eqnarray*} \int_{0}^{\infty}\int_{0}^{\sqrt{3x}}\frac{\sin^{2}((x-z^{2})/2)}{x^{5/2}}\, dz\, dx & = & \int_{0}^{\infty}\int_{0}^{\sqrt{3}}\frac{\sin^{2}(x(1-t^{2})/2)}{x^{2}}\, dt\, dx\\  & = & \frac{1}{2}\int_{0}^{\infty}\int_{0}^{\sqrt{3}}\frac{\sin^{2}(x(1-t^{2}))}{x^{2}}\, dt\, dx\\  & = & \frac{1}{2}\int_{0}^{\infty}\int_{0}^{1}\frac{\sin^{2}(x(1-t^{2}))}{x^{2}}\, dt\, dx\\  &  & +\frac{1}{2}\int_{0}^{\infty}\int_{1}^{\sqrt{3}}\frac{\sin^{2}(x(t^{2}-1))}{x^{2}}\, dt\, dx\\  & = & \frac{1}{2}\int_{0}^{1}\int_{0}^{\infty}\frac{\sin^{2}(x(1-t^{2}))}{x^{2}}\, dx\, dt\\  &  & +\frac{1}{2}\int_{1}^{\sqrt{3}}\int_{0}^{\infty}\frac{\sin^{2}(x(t^{2}-1))}{x^{2}}\, dx\, dt\\  & = & \int_{0}^{1}\frac{\pi}{4}(1-t^{2})\, dt+\int_{1}^{\sqrt{3}}\frac{\pi}{4}(t^{2}-1)\, dt\\  & = & \frac{\pi}{3}, \end{eqnarray*} 
+ \int_0^{\infty}\frac{\sin^2(Ax)}{x^2}\,dx=\frac{1}{2}A\pi,\quad(A>0) 

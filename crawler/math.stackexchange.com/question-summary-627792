@@ -1,0 +1,21 @@
+f =arg min  \  \frac{\mu}{2} ||\Phi.f-y||^2 + \frac{\lambda}{2} ||f-v-w||^2
+\Phi
+M\times N, M << N
+f, v, w
+N\times 1
+v
+ w
+\lambda
+\mu
+\mu.\Phi^T(\Phi.f-y) + \lambda.(f - v-w)=0
+(\mu.\Phi^T\Phi+\lambda)f = \mu\Phi^Ty+\lambda(v+w)
+Af=rhs
+f=(\mu.\Phi^T\Phi+\lambda)^{-1} (\mu\Phi^Ty+\lambda(v+w)) = A^{-1}.rhs
+A^{-1}
+F =arg min  \  \frac{\mu}{2} ||R.F.G-Y||^2 + \frac{\lambda}{2} ||F-V-W||^2
+f = vect(F), V = vect(V), W = vect(W),
+F,V,W
+n\times n
+N=n^2, M = m^2
+\Phi=Kronecker(R,G^T)=R\bigotimes G^T
+||R.F.G-Y|| = ||\Phi.f-y||

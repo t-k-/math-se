@@ -1,0 +1,32 @@
+1
+1
+20
+p
+(1-p)
+1
+f(n)
+n
+0<n<19
+f(n) = 1 + pf(n+1) + (1-p) f(n-1)
+0\leq 1\leq19
+f(0)=0
+f(19) = 1+f(18)
+f(n) = \alpha + \beta\left(\frac{1-p}p\right)^n + \frac n{1-2p}\tag 1
+\begin{align} \alpha + \beta &= 0 \\ \alpha + \beta \left(\frac{1-p}p\right)^{19} + \frac {19}{1-2p} &=  \alpha + \beta \left(\frac{1-p}p\right)^{18} + \frac {18}{1-2p} + 1 \end{align}
+\begin{align} \frac{1}{1-2p}&= \beta\left(\frac{1-p}p\right)^{18}\frac{2p-1}p \\ \beta &=-\left(\frac{1-p}p\right)^{-18}\frac{2p^2}{(1-2p)^2} \end{align}
+(1)
+p=\frac 12
+\frac{n}{1-2p}
+f(n) = -n^2
+f(n) = 1+\frac{f(n+1) + f(n-1)}2
+\alpha = 0, \beta=37
+f(n)  = \alpha + \beta n -n^2.
+\mu_i
+\mu_0
+\mu_0 = 0
+\mu_1 = p\mu_2 + (1-p)\mu_0 + 1
+1-p
+p
+\mu_n = p\mu_{n+1} + (1-p)\mu_{n-1} + 1
+i
+\mu_i

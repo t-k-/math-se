@@ -1,0 +1,66 @@
+X
+Y
+F: X \to Y
+K
+Y
+L
+X
+F(L)= K
+F
+C > 1
+\bigl( \forall y \in Y\bigr)\bigl(\exists x \in X\bigr)\bigl(\lVert x\rVert \leqslant C\cdot \lVert y\rVert\land y = F(x)\bigr).\tag{1}
+K
+Y
+K
+M_1 = \{ y_{1,\nu} : 1 \leqslant \nu \leqslant n_1\}
+K \subset \bigcup_{\nu=1}^{n_1} B_{1/C}(y_{1,\nu}).
+1\leqslant \nu \leqslant n_1
+x_{1,\nu} \in X
+\lVert x_{1,\nu}\rVert \leqslant C
+F(x_{1,\nu}) = y_{1,\nu}
+L_1 = \{ x_{1,\nu} : 1 \leqslant \nu \leqslant n_1\}
+k \geqslant 2
+M_1,\dotsc,M_{k-1}
+L_1,\dotsc,L_{k-1}
+M_k = \{y_{k,\nu} : 1 \leqslant \nu \leqslant n_k\}
+K \subset \bigcup_{\nu = 1}^{n_k} B_{1/C^k}(y_{k,\nu}).
+\nu
+\mu_k(\nu) \in \{ 1,\dotsc,n_{k-1}\}
+\lVert y_{k,\nu} - y_{k-1,\mu_k(\nu)}\rVert < C^{1-k}
+(1)
+z_{k,\nu} \in X
+\lVert z_{k,\nu}\rVert \leqslant C\cdot \lVert y_{k,\nu} - y_{k-1,\mu_k(\nu)}\rVert
+F(z_{k,\nu}) = y_{k,\nu} - y_{k-1,\mu_k(\nu)}
+x_{k,\nu} = x_{k-1,\mu_k(\nu)} + z_{k,\nu}
+L_k = \{x_{k,\nu} : 1 \leqslant \nu \leqslant n_k\}
+F(L_k) = M_k
+L_\ast = \bigcup\limits_{k=1}^\infty L_k
+F(L_\ast) = F\left(\bigcup_{k=1}^\infty L_k\right) = \bigcup_{k=1}^\infty F(L_k) = \bigcup_{k=1}^\infty M_k
+K
+L_\ast
+\varepsilon > 0
+k \geqslant 1
+C^{-k} < \varepsilon(C-1)
+L_\ast \subset \bigcup_{j=1}^{k+2}\bigcup_{\nu=1}^{n_j} B_{\varepsilon}(x_{j,\nu}).\tag{2}
+x \in L_m
+m \leqslant k+2
+x'_m\in L_m
+m > k+2
+x'_{m-1} \in L_{m-1}
+\lVert x'_m-x'_{m-1}\rVert \leqslant C\cdot \lVert F(x'_m) - F(x'_{m-1})\rVert
+\lVert F(x'_m) - F(x'_{m-1})\rVert \leqslant C^{1-m}
+\lVert x'_m-x'_{m-1}\rVert \leqslant C^{2-m}
+m-1 > k+2
+x'_{m-2} \in L_{m-2}
+\lVert x'_{m-1} -x'_{m-2}\rVert \leqslant C^{3-m}
+(x'_{r})_{k+2 \leqslant r \leqslant m}
+\lVert x'_r - x'_{r+1}\rVert \leqslant C^{1-r}
+x'_r \in L_r
+\lVert x'_m - x'_{k+2}\rVert \leqslant \sum_{r=k+2}^{m-1} \lVert x'_{r+1} - x'_r\rVert \leqslant \sum_{r=k+2}^{m-1} C^{1-r} < \frac{1}{C^{k}}\frac{1}{C-1} < \varepsilon,
+(2)
+\varepsilon > 0
+L_\ast
+L := \overline{L_\ast}
+F(L) \subset \overline{F(L_\ast)} = K
+K
+F(L) = K

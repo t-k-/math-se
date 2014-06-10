@@ -1,0 +1,13 @@
+f(x,y,z)=x+y+z
+N= \{(x, y, z) \in \mathbb{R}^3 : x^2 + y^2 \le z \le 1 \} = \{(x, y, z) \in \mathbb{R}^3 : x^2 + y^2 \le z, \  z \le 1\}
+f_x=1, f_y=1, f_z=1
+F(x,y,z,\lambda,\mu)=x+y+z-\lambda(x^2+y^2-z)-\mu(z-1)
+F_x=1-2x\lambda=0
+F_y=1-2y\lambda=0
+F_z=1+\lambda-\mu=0
+F_\lambda=-x^2-y^2+z=0
+F_\mu = 1-z=0
+(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 1)
+(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2}, 1)
+=\sqrt{2}+1
+=1-\sqrt{2}

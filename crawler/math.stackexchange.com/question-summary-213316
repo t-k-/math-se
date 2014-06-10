@@ -1,0 +1,30 @@
+u_t + u^2u_x = 0
+u(x, 0) = 2 + x
+\frac{dx}{dt} = 1
+dy/dt = u^2
+a,\,b,\,c \in C^1
+\mathcal{C}(\xi) = \big(x(\xi), y(\xi), u(\xi)\big) \in C^1
+\mathcal{C}
+ a\big(x,y,u(x,y)\big) u_x(x,y) + b\big(x,y,u(x,y)\big)u_y(x,y) = c\big(x,y,u(x,y)\big) 
+ \begin{vmatrix} \frac{dx}{d\xi} & a \\ \frac{dy}{d\xi} & b\end{vmatrix} \neq 0 
+\mathcal{C}(\xi) = \big(\xi,0,\xi+2\big)
+\eta \sim 0
+ \begin{vmatrix} \frac{dx}{d\xi} & a \\ \frac{dy}{d\xi} & b\end{vmatrix} = \begin{vmatrix} 1 & u^2 \\ 0 & 1\end{vmatrix} = 1 
+ t = \eta, \quad u = \xi + 2, \quad x = (\xi + 2)^2 \eta + \xi. 
+t = \frac{x - \xi}{(\xi + 2)^2}
+\xi = -2
+\xi \rightarrow \infty
+t \rightarrow 0
+\xi \rightarrow -\infty
+t \rightarrow 0
+\xi \rightarrow -2
+t \rightarrow \infty
+\xi = -\frac{1 + 4 \eta}{2\eta}
+ (x,t) \rightarrow (\xi,\eta) 
+ \begin{vmatrix} \partial_\xi x & \partial_\eta x \\ \partial_\xi t & \partial_\eta t \end{vmatrix} = 1 + 4\eta + 2\xi \eta \neq 0 
+ t = - \frac{1}{4(x+2)} 
+\xi
+ \xi = \frac{-(1 + 4t) \pm \sqrt{1 + 4t(2 + x)}}{2 t} 
+ u(x,t) = \frac{-1 \pm \sqrt{1 + 4t(2 + x)}}{2 t}. 
+\lim_{t \rightarrow 0} u(x,t) = -\infty
+ u(x,t) = \frac{-1 + \sqrt{1 + 4t(2 + x)}}{2 t}. 

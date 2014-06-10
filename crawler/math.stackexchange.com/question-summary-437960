@@ -1,0 +1,14 @@
+\neg P \implies \neg T
+P \implies \neg T
+\neg T
+P\rightarrow T
+\lnot P\lor T
+(P\rightarrow\lnot T)\land(\lnot P\rightarrow\lnot T)
+(\lnot P\lor\lnot T)\land(P\lor\lnot T)
+(\lnot P\land P)\lor\lnot T
+\lnot T
+(P\rightarrow\lnot T)\land(\lnot P\rightarrow\lnot T)
+\lnot T
+T
+\Big((\neg P\to\neg T)\land(P\to\neg T)\Big)\leftrightarrow\neg T
+ \begin{array}{c|c|c} \# & \text{Statement} & \text{Reason}\\ \hline (1) & T & \text{Assumption} \\ (2) & \neg P \implies \neg T & \text{Given} \\ (3) & T \implies P & \text{Contrapositive of (2)} \\ (4) & P & \text{(1), (3), and Modus Ponens} \\ (5) & P \implies \neg T & \text{Given} \\ (6) & T \implies \neg P & \text{Contrapositive of (5)} \\ (7) & \neg P & \text{(1), (6), and Modus Ponens} \\ (8) & P \land \neg P & \text{(4), (7), and Conjunction} \\ (9) & \bot & \text{(8) and Inverse Law} \\ (10) & \neg T& \text{(1)-(9) and Proof By Contradiction} \\ \end{array} 

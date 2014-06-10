@@ -1,0 +1,76 @@
+S(n) = \sum_{k=1}^n \sqrt{k}
+f(n)
+I(x)
+x
+|S(n)-I(S(n))|\ge f(n)
+1/n^2
+e^{-n}
+S(n)
+ S(x) = \sum_{k\ge 1} \left(\sqrt{k}-\sqrt{x+k}\right)
+ S(n) = \sum_{q=1}^n \sqrt{q}
+ \sqrt{k}-\sqrt{x+k} = \sqrt{k}\left(1-\sqrt{x/k+1}\right).
+g^*(s)
+g(x).
+\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x); s\right)= \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right)g^*(s)
+\lambda_k = \sqrt{k}, \quad \mu_k = \frac{1}{k} \quad \text{and} \quad g(x) = 1-\sqrt{1+x}.
+ \sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} = \sum_{k\ge 1} \sqrt{k} \times k^s =\zeta(-1/2-s).
+\mathfrak{M}(g(x); s) = \frac{1}{2\sqrt{\pi}} \Gamma(-1/2-s)\Gamma(s).
+\langle -1, -1/2 \rangle
+-s-1/2 > 1
+s < -3/2.
+g(x)
+-\sqrt{1+x},
+\langle -2, -1 \rangle,
+g(x)
+g(x) = 1 + \frac{1}{2} x - \sqrt{x+1},
+\sum_{k\ge 1} \frac{1}{2}\sqrt{k} \frac{x}{k} = \frac{1}{2} x \sum_{k\ge 1} \frac{1}{\sqrt{k}} =  \frac{1}{2} x \zeta(1/2)
+T(s)
+S(x)
+T(s) = \frac{1}{2\sqrt{\pi}} \Gamma(-1/2-s)\Gamma(s) \zeta(-1/2-s).
+\frac{1}{2\pi i}\int_{-7/4-i\infty}^{-7/4+i\infty} T(s)/x^s ds
+g(x)
+q\ge 1.
+\operatorname{Res}(T(s)/x^s; s=-3/2) = -\frac{2}{3} x^{3/2},
+\operatorname{Res}(T(s)/x^s; s=-1) = -\frac{1}{2} \zeta(1/2) x,
+\operatorname{Res}(T(s)/x^s; s=-1/2) = -\frac{1}{2} x^{1/2},
+\operatorname{Res}(T(s)/x^s; s=0) = -\zeta(-1/2),
+\operatorname{Res}(T(s)/x^s; s=1/2) = -\frac{1}{24} x^{-1/2}.
+\operatorname{Res}(T(s)/x^s; s=2q+1/2) =  \frac{1}{2\sqrt{\pi}}\Gamma(2q+1/2)\zeta(-2q-1)\frac{x^{-2q-1/2}}{(2q+1)!}.
+S(n) \sim 2/3\,{n}^{3/2}+1/2\,\sqrt {n}+\zeta  \left( -1/2 \right) + 1/24\,{\frac {1}{\sqrt {n}}} -{\frac {1}{1920}}\,{n}^{-5/2}+{\frac {1}{9216}}\,{n}^{-9/2} +\cdots
+\epsilon\gt 0
+n
+\sum_1^n\sqrt{k}
+\epsilon
+N\gt 1/\epsilon
+N^2
+\epsilon
+N^2
+\left(N^2+\frac{1}{N}\right)^2 \gt N^4 +2N
+\sqrt{N^4+1},\quad \sqrt{N^4+2},\quad\text{and so on up to}\quad \sqrt{N^4+2N} 
+1
+\frac{1}{2N}
+\sum_1^{N^4} \sqrt{k}\,\,
+n=N^4+i
+1\le i\le 2N
+\epsilon
+n
+36m^2
+m\in\mathbb{Z}^+
+a\in\mathbb{Z}^+
+a\ll m^2
+m
+[\;]
+m
+a\sim\sqrt{m}\ll m^2
+\begin{equation*} S(36m^2+a) = 144m^3+(6a+3)m+\frac{a(a+1)}{24m}+\zeta(-1/2) + O(1/m).\tag{1} \end{equation*}
+\begin{equation*} m = \left[-\frac{a(a+1)}{24\zeta(-1/2)}\right],\tag{2} \end{equation*}
+O(1/m)
+n
+O(1/m)\sim O(1/n^{1/2})
+n
+\begin{array}{lll} a & n & |S(n)-[S(n)]| \\ \hline  2 & 38 &           0.0462347 \\  4 & 580 &          0.0019127 \\  8 & 7064 &         0.0068525 \\  16 & 108916 &      0.0017046 \\  32 & 1618016 &     0.0003070 \\  64 & 25040080 &    0.0000443 \\  128 & 394419728 &  0.0000292 \end{array}
+x+1 = 1/t
+g^*(s) = \mathfrak{M}(\sqrt{x+1}; s).
+\int_0^\infty \sqrt{x+1} x^{s-1} dx.
+ g^*(s) = \int_1^0 \frac{1}{\sqrt{t}} \frac{(1-t)^{s-1}}{t^{s-1}} \left(-\frac{1}{t^2}\right) dt \\ = \int_0^1 t^{-1/2-s+1-2} (1-t)^{s-1} dt = \int_0^1 t^{-s-3/2} (1-t)^{s-1} dt. 
+B(-s-1/2, s) = \frac{\Gamma(-s-1/2)\Gamma(s)}{\Gamma(-1/2)} = -\frac{\Gamma(-s-1/2)\Gamma(s)}{2\sqrt{\pi}}.

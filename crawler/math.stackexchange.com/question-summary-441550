@@ -1,0 +1,43 @@
+\Omega \subset \mathbb{R}^n
+K: \Omega \rightarrow \mathbb{R}^n
+C^1
+\partial_iK_j  = \partial_j K_i
+i, j= 1, ..., n
+\gamma, \gamma ' \in C^1([0,1]; \Omega)
+\gamma(0) = \gamma'(0)
+\gamma(1) = \gamma' (1)
+\Phi \in C^2 ( [0,1] \times [0,1]; \mathbb{R}^n)
+\gamma
+\gamma'
+\int_{\gamma} K d x= \int_{\gamma '} K d x
+C^2
+\frac{\partial}{\partial s} \int_{\Phi(s, -)} K dx = 0
+\gamma_s(t)
+\Phi(s,\cdot)
+\gamma'
+t
+\dot\gamma
+s
+\dot\gamma(0)=\dot\gamma(1)=0
+((a\nabla)K,b) = ((b\nabla)K,a)
+(\gamma'\nabla)K = \frac{d}{dt}K(\gamma_s(t))
+\dot\gamma
+t=0,1
+\begin{aligned} \frac{d}{ds}\int_{\gamma_s}K &=  \int_0^1dt\,\frac{d}{ds}(K(\gamma_s(t)), \gamma_s'(t))  \\&= \int_0^1 ((\dot \gamma\nabla)K, \gamma') + (K, \dot\gamma') \\&= \int_0^1 ((\gamma'\nabla)K, \dot\gamma) + (K, \dot\gamma') \\&= \int_0^1 -(K, \dot\gamma') + (K,\dot\gamma') \\& = 0, \end{aligned}
+K^*
+Q
+\partial Q
+\frac{\partial \Phi}{\partial s}(s,t)
+t=0
+t=1
+DK
+\frac{\partial K^i}{\partial x^j} = \frac{\partial K^j}{\partial x^i}
+(Au)\cdot v = (A^tv)\cdot u
+\frac{d}{d s}\int_{\Phi(s,-)}K(x)\cdot dx = \frac{d}{d s}\int_0^1K(\Phi(s,t))\cdot \frac{\partial\Phi}{\partial t}(s,t)dt
+\int_0^1\frac{d}{d s}\left(K(\Phi(s,t))\cdot \frac{\partial\Phi}{\partial t}(s,t)\right)dt =
+=\int_0^1\left(DK(\Phi(s,t))\frac{\partial\Phi}{\partial s}\right)\cdot \frac{\partial\Phi}{\partial t}(s,t) + K(\Phi(s,t))\cdot \frac{\partial^2\Phi}{\partial s\partial t}(s,t)dt
+\int_0^1K(\Phi(s,t))\cdot \frac{\partial^2\Phi}{\partial s\partial t}(s,t)dt =
+=\int_0^1\left(\frac{d}{dt}K(\Phi(s,t))\right)\cdot \frac{\partial\Phi}{\partial s}(s,t)dt =
+=\int_0^1\left(DK(\Phi(s,t))\frac{\partial\Phi}{\partial t}(s,t)\right)\cdot \frac{\partial\Phi}{\partial s}(s,t)dt=
+=\int_0^1\left(DK(\Phi(s,t))\frac{\partial\Phi}{\partial s}(s,t)\right)\cdot \frac{\partial\Phi}{\partial t}(s,t)dt
+\frac{d}{d s}\int_{\Phi(s,-)}K(x)\cdot dx =0

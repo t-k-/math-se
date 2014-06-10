@@ -1,0 +1,65 @@
+\forall x\left[P(x)\land Q(x)\right]\equiv\forall xP(x) \land\forall xQ(x) \tag{1}
+\exists x\left[P(x)\lor Q(x)\right]\equiv\exists xP(x) \lor\exists xQ(x) \tag{2}
+\forall x\left[P(x)\lor Q(x)\right]\not\equiv\forall xP(x) \lor\forall xQ(x) \tag{3}
+\exists x\left[P(x)\land Q(x)\right]\not\equiv\exists xP(x) \land\exists xQ(x) \tag{4}
+P(x) \equiv
+x
+Q(x) \equiv
+x
+\forall x(P(x) \wedge Q(x)) \equiv \forall x P(x) \wedge \forall x Q(x)
+P(x) \equiv
+x
+Q(x) \equiv
+x
+\forall x(P(x) \vee Q(x)) \not \equiv \forall x P(x) \vee \forall x Q(x)
+\exists
+\forall
+\wedge
+\begin{align} \forall x(P(x) \wedge Q(x)) & \Leftrightarrow P(x) \wedge Q(x) & (\forall\text{-elimination})\\ & \Leftrightarrow P(x)\ \text{and}\ Q(x) & (\wedge\text{-elimination})\\ & \Leftrightarrow \forall xP(x)\ \text{and}\ \forall xQ(x) & (\forall\text{-introduction})\\ & \Leftrightarrow \forall xP(x) \wedge \forall xQ(x) & (\wedge\text{-introduction}) \end{align}
+\forall
+\exists
+\exists \dashv {*} \dashv \forall
+\forall
+\wedge
+\exists
+\vee
+P(x)=(x\ge 0)
+Q(x)=(x<0)
+P(x)=(x=0)
+Q(x)=(x=1)
+\forall
+\wedge
+\forall x P(x)
+P(x_1) \wedge P(x_2) \wedge P(x_3) \wedge \dots
+\forall x [P(x) \wedge Q(x)]
+P(x_1) \wedge Q(x_1) \wedge P(x_2) \wedge Q(x_2) \wedge \dots
+P
+Q
+\forall x P(x)
+\forall xQ(x)
+\exists
+\vee
+(a_1 \wedge b_1) \wedge (a_2 \wedge b_2) \wedge \dots = (a_1 \wedge a_2 \wedge \dots) \wedge (b_1 \wedge b_2 \wedge \dots)
+(a_1 \vee b_1) \vee (a_2 \vee b_2) \vee \dots = (a_1 \vee a_2 \vee \dots) \vee (b_1 \vee b_2 \vee \dots)
+(a_1 \vee b_1) \wedge (a_2 \vee b_2) \wedge \dots \not= (a_1 \wedge a_2 \wedge \dots) \vee (b_1 \wedge b_2 \wedge \dots)
+(a_1 \wedge b_1) \vee (a_2 \wedge b_2) \vee \dots \not= (a_1 \vee a_2 \vee \dots) \wedge (b_1 \vee b_2 \vee \dots)
+a_n
+n
+b_n
+n
+\Leftarrow
+\Rightarrow
+\forall
+\exists
+\forall x.[P(x)\land Q(x)] \equiv P(0)\land Q(0)\land P(1)\land Q(1) \land P(2)\land Q(2) \land \cdots 
+[\forall x.P(x)]\land[\forall x Q(x)] \equiv P(0)\land P(1)\land P(2)\land\cdots \land Q(0) \land Q(1) \land Q(2) \land \cdots 
+\exists
+\lor
+\forall
+\lor
+ \forall x.[P(x)\lor Q(x)] \equiv [P(0)\lor Q(0)] \land [P(1)\lor Q(1)] 
+ [\forall x.P(x)]\lor[\forall x.Q(x)] \equiv [P(0)\land P(1)]\lor[Q(0)\land Q(1)] 
+P(0)
+Q(1)
+P(1)
+Q(0)

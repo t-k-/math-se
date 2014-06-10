@@ -1,0 +1,29 @@
+\int \frac{dz}{z^3 \sqrt{z^2 - 4}}
+z = 4\sec\theta
+dz = 4\sec\theta \tan d\theta
+\int \frac{\sec\theta \tan\theta}{4^3 \sec^3 \theta \tan \theta}
+ \frac{1}{4^3} \int \frac{d \theta}{\sec^2 \theta}
+\sqrt{z^2-4}=z+t
+\sqrt{z^2-4}=(z-2)t
+\frac{1}{\sec^2(\theta)}=\cos^2(\theta)=\frac{1}{2}(1+\cos(2\theta))
+z=4\sec(\theta)
+2\theta=2\sec^{-1}(\frac{z}{4})
+\sin(2\theta)=\sin(2\sec^{-1}(\frac{z}{4}))=\frac{8\sqrt{z^2-16}}{z^2}
+z=2\sec\theta, dz=2\sec\theta\tan\theta d\theta
+\int \frac{dz}{z^3\sqrt{z^2-4}}=\int \frac{2\sec\theta\tan\theta d\theta}{(2\sec\theta)^32\tan\theta}=\frac18\int\cos^2\theta d \theta=\frac1{16}\int(1+\cos2\theta)d\theta
+=\frac1{16}\left(\theta+\frac{\sin2\theta}2\right)+K
+\cos\theta =\frac2z\implies \theta =\arccos \frac2z 
+\implies \sin\theta=\sqrt{1-\left(\frac2z\right)^2}=\frac{\sqrt{z^2-4}}z
+\implies  \sin2\theta=2\sin\theta\cos\theta=2\cdot \frac{\sqrt{z^2-4}}z\cdot \frac2z
+z^2-4=u^2, zdz=udu
+\int \frac{dz}{z^3\sqrt{z^2-4}}=\int \frac{udu}{(u^2+4)^2u}=\frac{du}{(u^2+2^2)^2}
+u=2\tan\theta
+\text{Let }I_n=\int \frac {du}{(u^2+a^2)^n}
+=\int du\cdot\frac1{(u^2+a^2)^n}-\int\left(\int du \frac{d\frac1{(u^2+a^2)^n}}{du}\right)du  
+=\frac u{(u^2+a^2)^n}+2n\int \frac{u^2}{(u^2+a^2)^{n+1}}du
+=\frac u{(u^2+a^2)^n}+2n\left(\int \frac1{(u^2+a^2)^n}-a^2\int \frac1{(u^2+a^2)^{n+1}} du\right)
+\implies I_n=\frac u{(u^2+a^2)^n}+2n\left(I_n-a^2I_{n+1}\right)
+\implies 2a^2n\cdot I_{n+1}=\frac u{(u^2+a^2)^n}+(2n-1)I_n 
+n=1\implies 2a^2  \int \frac {du}{(u^2+a^2)^2}=\frac u{(u^2+a^2)}+\int \frac {du}{(u^2+a^2)}=\frac u{(u^2+a^2)}+\frac1a\cdot \arctan \frac ua+K
+a=2\implies 8  \int \frac {du}{(u^2+4)^2}=\frac u{(u^2+4)}+\int \frac {du}{(u^2+4)}=\frac u{(u^2+4)}+\frac12\cdot\arctan \frac u2+K
+u=\sqrt{z^2-4}, u^2+4=z^2

@@ -1,0 +1,13 @@
+\dfrac2{x^3-x^2}
+\frac2{x^3-x^2}=\frac2{x^2(x-1)}=\frac{A}x+\frac{B}{x^2}+\frac{C}{x-1}
+A,B
+C
+\int \frac2{x^3-x^2}\, dx =\frac2{x^2(x-1)}= \int \left(\frac{A}x+\frac{B}{x^2}+\frac{C}{x-1}\right)\,dx
+Ax(x-1) + B(x-1) + Cx^2 = 2
+x
+A, B, C
+x = 1 \implies A(1)(1 - 1) + B(1-1) + C(1^2) = 2 \iff  0 + 0 + C = 2\quad \checkmark
+x = 0 \implies B(-1) = 2 \implies B = -2\quad \checkmark
+x = 2, C = 2, B = -2 \implies 2A - 2 + 8 = 2\iff A = -2\quad \checkmark
+ \int \left(\frac{A}x+\frac{B}{x^2}+\frac{C}{x-1}\right)\,dx = \int \left(-\frac{2}x -\frac{2}{x^2}+\frac{2}{x-1}\right)\,dx
+ =-2 \int \frac{dx}x \quad -\quad  2\int \frac{dx}{x^2}\quad + \quad 2 \int \frac{dx}{x-1}

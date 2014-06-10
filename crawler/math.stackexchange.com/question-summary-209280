@@ -1,0 +1,7 @@
+l, i
+ i<l
+\beta > 2
+ H(\beta, i, l) = \iint_{1 \leq x \leq y < \infty} (1-x^{-\beta})^{i-1} (x^{-\beta} - y^{-\beta})^{2(l-i)} x^{-\beta} y^{-\beta i} dxdy, 
+\beta, i, l
+H
+\begin{align*} H(\beta,i,l) &=\iint_{1\leq x\leq y<\infty}(1-x^{-\beta})^{i-1}(x^{-\beta}-y^{-\beta})^{2(l-i)}x^{-\beta} y^{-\beta i}dxdy\\ &=\int_{1}^{\infty}(1-x^{-\beta})^{i-1}x^{-\beta}dx \int_{x}^{\infty}(x^{-\beta}-y^{-\beta})^{2(l-i)}y^{-\beta i}dy\\ (\text{set}\,\,y=xt) &=\int_{1}^{\infty}(1-x^{-\beta})^{i-1}x^{-\beta}dx \int_{1}^{\infty}x^{1-\beta(2l-i)}(1-t^{-\beta})^{2(l-i)}t^{-\beta i}dt\\ &=\int_{1}^{\infty}(1-x^{-\beta})^{i-1}x^{1-\beta(2l-i+1)}dx \int_{1}^{\infty}(1-t^{-\beta})^{2(l-i)}t^{-\beta i}dt\\ (\text{set}\,\,x=u^{-\frac{1}{\beta}},t=v^{-\frac{1}{\beta}}) &=\frac{1}{\beta^{2}}\int_{0}^{1}(1-u)^{i-1}u^{2l-i-\frac{2}{\beta}}dx \int_{0}^{1}(1-v)^{2l-2i}v^{i-1-\frac{1}{\beta}}dt\\ &=\frac{1}{\beta^{2}}B(i,2l-i+1-\frac{2}{\beta})B(2l-2i+1,i-\frac{1}{\beta})\\ &=\frac{1}{\beta^{2}} \frac{\Gamma(i)\Gamma(2l-i+1-\frac{2}{\beta})}{\Gamma(2l+1-\frac{2}{\beta})}\frac{\Gamma(2l-2i+1)\Gamma(i-\frac{1}{\beta})}{\Gamma(2l-i+1-\frac{1}{\beta})}\\ &=\frac{1}{\beta^{2}}(i-1)!(2l-2i)!\\ &\cdot\frac{1}{(2l-\frac{2}{\beta})(2l-\frac{2}{\beta}-1)\cdots(2l-\frac{2}{\beta}-(i-1))}\\ &\cdot\frac{1}{((2l-2i)+(i-\frac{1}{\beta}))((2l-2i-1)+(i-\frac{1}{\beta}))\cdots(i-\frac{1}{\beta})} \end{align*}

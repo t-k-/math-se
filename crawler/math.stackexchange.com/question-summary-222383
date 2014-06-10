@@ -1,0 +1,8 @@
+c
+ \sum_{k=0}^{\lfloor {n}/{2} \rfloor}\binom{n-k+1}{k}=(c+o(1))^n 
+ \max\limits_{a\leq n/2}\frac{\binom{n}{a}}{\sum_{k=0}^{a/2}\binom{n}{k}}=(c+o(1))^n 
+F_n
+n
+n
+F_{n+1}=\sum_{k=0}^{\lceil n/2\rceil}\binom{n+1-k}k\;,
+\sum_{k=0}^{\lfloor n/2\rfloor}\binom{n-k+1}k=\begin{cases} F_{n+1},&\text{if }n\text{ is even}\\ F_{n+1}-\binom{(n+1)/2}{(n+1)/2}=F_{n+1}-1,&\text{if }n\text{ is odd}\;. \end{cases}

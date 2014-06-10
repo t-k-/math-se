@@ -1,0 +1,16 @@
+ x \in \mathbb{R}^n ,\hspace{5mm} 0  \leq s<t ,\hspace{5mm} t \in \mathbb{R}^+
+ y \in \mathbb{R}^n ,|v(y) |<C\exp\bigl(\alpha |y|^2\bigr) 
+C
+\alpha
+ ( C,\alpha > 0 ) 
+ I_s(x)=\int_{\mathbb{R}^n}\left|v\left(y \sqrt{2s}+x\right)\right|\exp(-|y|^2) \, \mathrm dy.  
+ I_s(x) \leq  \frac{C}{(\pi(1-2 \alpha s))^{d/2}} \exp\left(\frac{\alpha}{1-2 \alpha s }|x|^2\right)  
+ \int_{\mathbb{R}^n}C\exp(\alpha |y \sqrt{2s}+x|^2-|y|^2)dy \leq \frac{C}{(\pi(1-2 \alpha s))^{\frac{d}{2}}}\exp\left(\frac{\alpha}{1-2 \alpha s }|x|^2\right)(\text{Gaussian integral =1 } ).
+ y \in \mathbb{R}^n ,|v(y) |<C\exp\bigl(\alpha |y|^2\bigr) 
+ r=\sqrt{(1-2\alpha s)}y 
+ dr=(1-2\alpha s)^{\frac{d}{2}} dy 
+ I_s(x)=\int_{\mathbb{R}^n}\left|v\left(y \sqrt{2s}+x\right)\right|\exp(-|y|^2) \, \mathrm dy.  
+ I_s(x) \leq \int_{\mathbb{R}^n}C\exp(\alpha |y \sqrt{2s}+x|^2-|y|^2)dy   \leq \int_{\mathbb{R}^n}C\exp(|y|^2 2\alpha s+|x|^2-|y|^2)dy \leq \int_{\mathbb{R}^n}C\exp(-(1-2\alpha s)|y|^2 +|x|^2)dy 
+ I_s(x) \leq \int_{\mathbb{R}^n}\frac{C}{(1-2 \alpha s)^{\frac{d}{2}}} \exp(|x|^2)\exp(-|y|^2)dy
+ I_s(x) \leq \frac{C}{(1-2 \alpha s)^{\frac{d}{2}}} \exp(|x|^2) \int_{\mathbb{R}^n}\exp(-|y|^2)dy
+ I_s(x) \leq \frac{C}{(\pi (1-2 \alpha s))^{\frac{d}{2}}} \exp(|x|^2) \int_{\mathbb{R}^n}{\pi}^{\frac{-d}{2}} \exp(-|y|^2)dy

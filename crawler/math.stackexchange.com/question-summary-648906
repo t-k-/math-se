@@ -1,0 +1,6 @@
+((\exists x : X.P) \Rightarrow (\forall x: X.Q)) \vdash (\forall x: X. PvQ) \Rightarrow((\forall x: X.P) \vee(\forall x: X. Q)
+((\exists x.P) \implies (\forall x.Q))
+(\forall x. P\vee Q)
+\begin{array}{l} (\forall x. P\vee Q)\text{ (second axiom)}\\ (\forall x. Q)\vee (\exists x.P)\text{ (case disjunction)}\\ (\forall x. Q) \vee (\forall x.Q)\text{ (using first axiom)}\\ (\forall x. Q)\\ (\forall x. P)\vee(\forall x. Q)\text{ (
+-introduction).} \end{array}
+(\forall x. Q)

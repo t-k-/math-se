@@ -1,0 +1,7 @@
+n^2+n-1\choose n
+n!
+\log(n!) = n  \log(n) -n + O(\log(n))
+ \log {n^2+n-1\choose n}   = (n^2 +n-1) \log(n^2+n-1) - (n^2 +n-1)  - n  \log(n) +  n \\- (n^2-1)\log(n^2-1) + n^2 -1+ O(\log(n^2))=\\= (n^2 -1) \log(\frac{n^2 +n-1}{n^2 -1}) + n\log(\frac{n^2 +n-1}{n}) + O(\log(n^2))
+\log(\frac{n^2 +n-1}{n^2 -1})= \frac{1}{n} + O(n^{-2})
+\log(\frac{n^2 +n-1}{n})=\log(n)+O(1)
+ \log {n^2+n-1\choose n}  \approx n + n \log(n)

@@ -1,0 +1,6 @@
+m(t,\omega)=\sum_{j \ge 0}B_{(j+1)2^{-n}}(\omega)I_{[j.2^{-n},(j+1)2^{-n})}(t)
+B(t)
+I_[.]
+ E[\int_0^T m(t,\omega)dB_t(\omega)]=\sum_{j \ge 0} E[(B_{t_{j+1}}-B_{t_j})^2]  
+ E[\int_0^T m(t,\omega)dB_t(\omega)]=\sum_{j \ge 0} E[\int_{t_j}^{t_{j+1}} B_{(j+1)2^{-n}}  dB_t]  
+ =\sum_{j \ge 0} E[B_{t_{j+1}} \left(B_{t_{j+1}} - B_{t_j} \right) ] = \frac12 \sum_{j \ge 0} E[\left(B_{t_{j+1}} - B_{t_j} \right)^2 ]  

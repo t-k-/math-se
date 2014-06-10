@@ -1,0 +1,32 @@
+( A \rightarrow (B \rightarrow C) ) \rightarrow ( B \rightarrow (A \rightarrow C) )
+H(x) \rightarrow ( x = y \rightarrow H(y) )
+\forall y ( H(n) \rightarrow ( n = y \rightarrow H(y) ) )
+H(n) \rightarrow \forall y( n = y \rightarrow H(y) ) 
+M = \langle D, I \rangle
+H
+n
+g
+M, g \models H(n)
+H(n)
+M
+g
+a \in D
+M, g [a, v_1] \models v_1 = n
+g[a, v_1]
+g
+a
+v_1
+M, g [a, x] \models H(n)
+\delta_{M, g[a,x]}(v_1)
+v_1
+M, g[a, x]
+=a=\delta_{M, g[a,x]}(n) \in I(H)
+M, g[a,x] \models H(v_1)
+a
+M, g \models H(n) \rightarrow \forall v_1(v_1 = n \rightarrow H(v_1))
+M, g \not \models H(n)
+M, g[\delta_ {M, g}(n), v_1] \not \models H(v_1)
+M, g[\delta_ {M, g}(n), v_1] \models v_1 = n
+M, g[\delta_ {M, g}(n), v_1] \not \models v_1 = n \rightarrow H(v_1)
+M, g \not \models \forall v_1(v_1 = n \rightarrow H(v_1))
+M, g \models \forall v_1(v_1 = n \rightarrow H(v_1)) \rightarrow H(n)

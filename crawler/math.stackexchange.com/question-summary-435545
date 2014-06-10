@@ -1,0 +1,81 @@
+f: S \times [0, \infty)\rightarrow \mathbb{R}
+f(x, t)
+x
+t
+t
+x \in S
+S
+f
+S
+S
+f
+S
+Y = [0, \infty)
+B \subseteq S \times Y
+B
+f: [0, \infty) \times S \rightarrow \mathbb{R}
+f_n(x, t) = f(m/n, t)
+m, n \geq 1
+(m-1)/n \leq x < m/n
+f_n
+(x, t) \in [0, \infty) \times S
+n \rightarrow \infty
+f_n(x, t) \rightarrow f(x, t)
+S
+S
+Y
+f \colon S\times Y \to \mathbb{R}
+f
+D = \{s_\nu\colon\nu\in\mathbb{N}\}
+S
+n \geqslant 1
+\mathfrak{U}_n = \{B(\frac1n,\,s)\colon s \in D\}
+D
+\mathfrak{U}_n
+S
+\{\varphi_{n,\nu} \in \mathscr{C}(S,\mathbb{R}) \colon 0 \leqslant \varphi_{n,\nu}(s) \leqslant 1,\, \operatorname{supp} \varphi_{n,\nu} \subset B(\frac1n,\, s_\nu)\},\quad \sum_{\nu \in \mathbb{N}} \varphi_{n,\nu} \equiv 1,
+\{\operatorname{supp}\varphi_{n,\nu}\colon \nu\in\mathbb{N}\}
+g_{n,\nu}(s,y) = \varphi_{n,\nu}(s)\cdot f(s_\nu,\, y)
+g_n(s,\,y) = \sum\limits_{\nu \in\mathbb{N}} g_{n,\nu}(s,\,y)
+g_{n,\nu}
+\varphi_{n,\nu} \circ \pi_S
+f(s_\nu,\,\cdot) \circ \pi_Y
+g_n = \lim\limits_{k\to\infty} \sum\limits_{\nu = 0}^k g_{n,\nu}
+f = \lim\limits_{n\to\infty} g_n
+f
+(s,\,y) \in S\times Y
+\varepsilon > 0
+f(\cdot,\,y)
+n \in \mathbb{Z}^+
+d(s,\,t) < \frac1n \Rightarrow \lvert f(t,\,y) - f(s,\,y)\rvert < \varepsilon
+\lvert g_n(s,\,y) - f(s,\,y)\rvert = \left\lvert\sum_{\nu \in \mathbb{N}} \varphi_{n,\nu}(s)\cdot\bigl(f(s_\nu,\,y) - f(s,\,y)\bigr) \right\rvert \leqslant \sum_{\nu \in \mathbb{N}} \varphi_{n,\nu}(s)\cdot \lvert f(s_\nu,\,y) - f(s,\,y)\bigr\rvert < \varepsilon
+\varphi_{n,\nu}(s) \neq 0
+d(s,\,s_\nu) < \frac1n
+\lvert f(s_\nu,\,y) - f(s,\,y)\bigr\rvert < \varepsilon
+h \colon [0,\,\infty) \to \mathbb{R}
+t_n(x) = (\lfloor 2^nx\rfloor + 1)/2^n
+h_n(x) = h(t_n(x))
+t_n
+h_n
+[m/2^n,\, (m+1)/2^n)
+t_n(x) \searrow x
+h_n
+h
+h_n \to h
+S
+f\colon \mathbb{R}\times\mathbb{R} \to \mathbb{R}
+X
+Y
+f \colon X \times Y \to \mathbb{R}
+f \colon X \times Y \to \mathbb{R}
+[0,\,\infty)
+\mathcal{T}_s
+\mathcal{T}_h
+[a,\,b)
+Y
+g \colon \bigl([0,\,\infty),\, \mathcal{T}_h\bigr) \to \mathbb{R}
+g \colon \bigl([0,\,\infty),\, \mathcal{T}_s\bigr) \to \mathbb{R}
+f \colon S \times Y \to \mathbb{R}
+\sigma
+\mathcal{T}_h
+\mathcal{T}_s

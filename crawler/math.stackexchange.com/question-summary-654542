@@ -1,0 +1,8 @@
+T(n)=4T(\frac n2)+n^2 \log n
+T(n) = n^2\log(n) + 4T(n/2) = n^2\log(n) + 4((n/2)^2\log(n/2) + 4T(n/4))
+T(n) = n^2 \log(n) +  4(n/2)^2 \log(n/2) + 16(n/4)^2\log(n/4) + \cdots
+T(n) = n^2\log(n) + n^2\log(n/2) + n^2\log(n/4)+ \cdots
+\cdots
+\log\frac{a}{b} = \log a - \log b
+\sum \log\frac{n}{2^k}
+k

@@ -1,0 +1,30 @@
+\frac{d}{dA}(x - Ab)(x - Ab)^T
+x
+b
+A
+(x-Ab)(x-Ab)^T
+A
+a_{ij}
+xx^T - Abx^T - xb^TA^T + Abb^TA^T
+Abx^T
+bx^T
+Abx^T
+bx^T
+B=bx^T\quad\text{and}\quad C=bb^T
+-AB-B^TA^T+ACA
+a_{ij}
+b_{ij}
+A
+B
+\frac{\partial(AB)_{ij}}{\partial a_{mn}}=\delta_{im}b_{nj}\\ \frac{\partial(B^TA^T)_{ij}}{\partial a_{mn}}=\delta_{jm}b_{ni}\\ \frac{\partial(ACA^T)_{ij}}{\partial a_{mn}}=\delta_{jm}(AC)_{in}+ \delta_{im}(AC^T)_{jn} 
+(.)_{ij}
+i
+j
+\delta_{ij}
+1
+i=j
+C=C^T
+(Ab-x)_i = A_{ik}b_k-x_i
+((x - Ab)^T(x - Ab))_{ij} = (A_{ik}b_k-x_i)(A_{js}b_s-x_j)
+\frac{\partial}{\partial A_{pq}}(A_{ik}b_k-x_i)(A_{js}b_s-x_j)=(A_{ik}b_k-x_i) \delta_{pj}\delta_{qs} b_s  +  \delta_{pi}\delta_{qk}b_k (A_{js}b_s-x_j)
+ =(A_{ik}b_k-x_i) \delta_{pj}  b_q  +  \delta_{pi} b_q (A_{js}b_s-x_j).

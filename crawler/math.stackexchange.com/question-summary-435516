@@ -1,0 +1,10 @@
+ \begin{cases} \dot{x}_{1}=x_{2}^{2}\\ \dot{x}_{2}=u\end{cases} 
+         f=\begin{bmatrix}         x_{2}^{2} \\         0 \\         \end{bmatrix},         g=\begin{bmatrix}         0 \\         1 \\         \end{bmatrix}, 
+ C=[g,[f,g]]= \begin{bmatrix} 0 & -2x_2\\ 1 & 0\\ \end{bmatrix} 
+[f,g]
+x_{2}=0
+C
+\dot{x_1}>0
+ \begin{cases} \dot{x}_{1}=s(x_{2})=\frac{1}{1+e^{-x_{2}}}\\ \dot{x}_{2}=u\end{cases} 
+ C=[g,[f,g]]= \begin{bmatrix} 0 & -s(x_{2})(1-s(x_{2}))\\ 1 & 0\\ \end{bmatrix} 
+\dot{x}_{1}>0

@@ -1,0 +1,28 @@
+e^A
+A
+A =\begin{pmatrix}         5 & -6 \\         3 & -4 \\         \end{pmatrix}
+J_A =\begin{pmatrix}         2 & 0 \\         0 & -1 \\         \end{pmatrix}
+2
+-1
+e^A =P\begin{pmatrix}         e^2 & 0 \\         0 & e^{-1} \\         \end{pmatrix}P^{-1}
+P=\begin{pmatrix}         2 & 1 \\         1 & 1 \\         \end{pmatrix}
+B =\begin{pmatrix}         0 & 1 \\        -2 & -2 \\         \end{pmatrix}
+-1+i
+-1-i
+J_B =\begin{pmatrix}         -1 & -1 \\         1 & -1 \\         \end{pmatrix}
+e^B
+         C=\begin{pmatrix}         1 & 0 & -2 \\         -5 & 6 & 11 \\         5 & -5 & -10 \\         \end{pmatrix} 
+         J_C=\begin{pmatrix}         1 & 0 & 0 \\         0 & -2 & 1 \\         0 & -1 & -2 \\         \end{pmatrix} 
+J_A
+A
+e^A
+         \begin{pmatrix}         a & b \\         -b & a \\         \end{pmatrix} 
+A = \begin{bmatrix}0 & 1 \\-2 & -2\end{bmatrix}
+|A -\lambda I| = 0 \rightarrow \lambda^2+2 \lambda+2 = (\lambda+(1-i)) (\lambda+(1+i))= 0 \rightarrow \lambda_1 = -1+i, ~~\lambda_2 = -1-i 
+[A - \lambda I]v_i = 0
+[A - \lambda_1 I]v_1 = 0 = \begin{bmatrix}1-i & 1\\-2 &-1-i\end{bmatrix}v_1 = 0
+\begin{bmatrix}1 & \dfrac{1}{2}(1 +1)\\0 & 0\end{bmatrix}v_1 = 0 \rightarrow v_1 = \left(1, -\dfrac{1}{2}(1 + i)\right)
+v_2 = \left(1, -\dfrac{1}{2} + \dfrac{i}{2}\right)
+A = P \cdot J\cdot P^{-1} = \begin{bmatrix}-1/2+i/2 & -1/2-i/2 \\ 1 & 1\end{bmatrix} \cdot \begin{bmatrix}-1-i & 0 \\ 0 & -1+i\end{bmatrix} \cdot \begin{bmatrix}-i & 1/2-i/2 \\ i & 1/2+i/2 \end{bmatrix}
+\displaystyle e^A = P \cdot e^J \cdot P^{-1} = \begin{bmatrix}-1/2+i/2 & -1/2-i/2 \\ 1 & 1\end{bmatrix} \cdot e^{\begin{bmatrix}-1-i & 0 \\ 0 & -1+i\end{bmatrix}} \cdot \begin{bmatrix}-i & 1/2-i/2 \\ i & 1/2+i/2 \end{bmatrix} = \begin{bmatrix}-1/2+i/2 & -1/2-i/2 \\ 1 & 1\end{bmatrix} \cdot \begin{bmatrix}e^{-1-i} & 0 \\ 0 & e^{-1+i}\end{bmatrix} \cdot \begin{bmatrix}-i & 1/2-i/2 \\ i & 1/2+i/2 \end{bmatrix} = \begin{bmatrix} (1/2+i/2) e^{-1-i}+(1/2-i/2) e^{-1+i} & (1/2) i e^{-1-i}-(1/2) i e^{-1+i} \\-i e^{-1-i}+i e^{-1+i} & (1/2-i/2) e^{-1-i}+(1/2+i/2) e^{-1+i} \end{bmatrix}
+\displaystyle e^A = P \cdot e^J \cdot P^{-1} = \begin{bmatrix}1 & 2\\1 & 1\end{bmatrix} \cdot e^{\begin{bmatrix}-1 & 0\\0 & 2\end{bmatrix}} \cdot \begin{bmatrix}-1 & 2\\1 & -1\end{bmatrix}= \begin{bmatrix}1 & 2\\1 & 1\end{bmatrix} \cdot {\begin{bmatrix}e^{-1} & 0\\0 & e^2\end{bmatrix}} \cdot \begin{bmatrix}-1 & 2\\1 & -1\end{bmatrix} = \begin{bmatrix}\dfrac{-1+2 e^3}{e} & -\dfrac{2 (-1+e^3)}{e}\\ \dfrac{-1+e^3}{e} & \dfrac{2-e^3}{e}\end{bmatrix}

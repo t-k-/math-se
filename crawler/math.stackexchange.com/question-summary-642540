@@ -1,0 +1,21 @@
+p=\frac{6-x+1}{6}
+m
+P(\text{hitting exactly m times})=\frac{n!}{m!(n-m)!}p^m(1-p)^{n-m}
+P(\text{hitting at least m times})=\sum\limits_{i=m}^n \frac{n!}{i!(n-i)!}p^i(1-p)^{n-i}
+n
+x
+m
+x = 3
+n = 4
+\frac{6-x+1}{6} = \frac{4}{6}
+\frac{6-x-1}{6} = \frac{2}{6}
+m = 1
+ \begin{align} \text{Probability} & = \frac{4}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} + \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} + \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} + \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{4}{6}\\ & = 4 \cdot \frac{4}{6} \cdot \left( \frac{2}{6} \right)^3 \end{align}
+m = 2
+ \begin{align} \text{Probability} & =  \frac{4}{6} \cdot \frac{4}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} + \frac{4}{6} \cdot \frac{2}{6} \cdot \frac{4}{6} \cdot \frac{2}{6} +  \frac{4}{6} \cdot \frac{2}{6} \cdot \frac{2}{6} \cdot \frac{4}{6} \\ & + \ \frac{2}{6} \cdot \frac{4}{6} \cdot \frac{4}{6}  \cdot \frac{2}{6} + \frac{2}{6} \cdot \frac{4}{6} \cdot \frac{2}{6} \cdot \frac{4}{6}  + \frac{2}{6}  \cdot \frac{2}{6} \cdot \frac{4}{6}  \cdot \frac{4}{6} \\ & = 6 \cdot \left(\frac{4}{6} \right)^2 \cdot \left(\frac{2}{6} \right)^2  \end{align}
+6
+4 \times 3 = 12
+ \text{Probability} = \frac{\prod^{m}_{n - m + 1}}{m!} \cdot \left(\frac{n-m+1}{n}\right)^m \cdot \left(\frac{n-m-1}{n}\right)^{n-m} 
+\frac{\prod^{m}_{n - m + 1}}{m!}
+\frac{n!}{(n-m!)m!}
+ \text{Probability} = \sum_{i=m}^{n} \frac{\prod^{i}_{n - i + 1}}{m!} \cdot \left(\frac{n-i+1}{n}\right)^i \cdot \left(\frac{n-i-1}{n}\right)^{n-i} 

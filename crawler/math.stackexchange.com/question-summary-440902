@@ -1,0 +1,9 @@
+p(o=t|k=t)
+0.1
+p(s=t|o=t)=p(s=t,o=t,k=f)+p(s=t,o=t,k=t)
+0.1
+0.1
+O
+K
+P(O=T \mid K=T)=P(O=T)=0.1
+ \begin{align*} P(O=T \mid K=T) &= \dfrac{P(O=T,K=T)}{P(K=T)} \\ &= \dfrac{\sum_{s\in \{T,F\}}P(O=T,K=T,S=s)}{\sum_{o\in \{T,F\}}\sum_{s\in \{T,F\}}P(O=o,K=T,S=s)} \\ &= \dfrac{P(K=T)P(O=T)\sum_{s\in \{T,F\}}P(S=s \mid O=T,K=T)}{P(K=T)\sum_{o\in \{T,F\}}\sum_{s\in \{T,F\}}P(O=o)P(S=s \mid O=o,K=T)} \\ &= \dfrac{P(K=T)P(O=T)}{P(K=T)} \\ &= P(O=T) \\ &= 0.1 \end{align*} 

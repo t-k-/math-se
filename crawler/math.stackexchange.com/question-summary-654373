@@ -1,0 +1,42 @@
+x'' + tx' + x = 0.
+x(t) = a_0 x_1(t) + a_1 x_2(t),
+a_0, a_1 \in  \mathbb{R}
+x_1(t), x_2(t)
+t
+t\in\mathbb{R}
+x_1(t)
+e^{-t^2/2}
+x_2(t)
+x(t) = a_0 \sum_{k=0}^\infty b_k t^k + a_1 \sum_{k=0}^\infty c_k t^k
+x'(t) = a_0 \sum_{k=0}^\infty b_k k t^{k-1} + a_1 \sum_{k=1}^\infty c_k k t^{k-1}0
+x''(t) = a_0 \sum_{k=2}^\infty b_k k(k-1) t^{k-2} + a_1 \sum_{k=2}^\infty c_k k (k-1) t^{k-2}
+a_0 \sum_{k=2}^\infty b_k k(k-1) t^{k-2} + a_1  \sum_{k=2}^\infty c_k k (k-1) t^{k-2} + a_0 \sum_{k=1}^\infty b_k k t^k + a_1 \sum_{k=1}^\infty c_k k t^k  + a_0 \sum_{k=0}^\infty b_k t^k + a_1 \sum_{k=1}^\infty c_k t^k = 0
+\begin{cases} k=0 \qquad a_0 b_2 2 + a_1 c_2 2 + a_0 b_0 + a_1 +c_0 \\ k \ge 1 \qquad a_0 b_{k+2} (k+2)(k+1) + a_1 c_{k+2} (k+2)(k+1) + a_0 k b_k + a_1 c_k k + a_0 b_k + a_1 c_k\end{cases}
+ \begin{cases} a_0 (2 b_2 + b_0) + a_1 (2 c_2 +c_0) \\ a_0((k+2)b_{k+2} + b_k) + a_1((k+2)c_{k+2} + c_k) \end{cases}
+a_0
+a_1
+x(t) = \sum_{k=0}^\infty b_k t^k
+tx'(t)=t\sum_{k=0}^\infty kb_k  t^{k-1}=\sum_{k=0}^\infty k\,b_k  t^k
+x''(t)=\sum_{k=2}^\infty k(k-1)\,b_k\,t^{k-2}=\sum_{k=0}^\infty(k+1)(k+2)\,b_{k+2}\,t^k
+k\in\mathbb N
+k\ge 2
+b_0
+b_1
+x=x(t;b_0,b_1)
+x_1
+x_2
+b_0=1
+b_1=0
+b_0=0
+b_1=1
+ \sum_{k=0}^\infty(k+1)(k+2)b_{k+2}t^k+\sum_{k=0}^\infty kb_k t^k+\sum_{k=0}^\infty b_kt^k=0 
+ \sum_{k=0}^\infty \big((k+1)(k+2)b_{k+2}+(k+1)b_k\big) t^k=0, 
+ (k+1)(k+2)b_{k+2}+(k+1)b_k=0, \quad \text{for all $k\in\mathbb N$}, 
+ b_{k+2}=-\frac{1}{k+2}{b_k}. 
+ x_1(t)=x(t;1,0), \,\,x_2(t)=x(t;0,1). 
+x=x(t;b_0,b_1)
+ x(t;b_0,b_1)=b_0x_1(t)+b_1x_2(t). 
+ b_{2k}=-\frac{1}{2k}b_{2k-2}=\cdots=\frac{(-1)^k}{2^kk!}b_0,
+ b_{2k+1}=-\frac{1}{2k+1}b_{2k-1}=\cdots=\frac{(-1)^k}{1\cdot3\cdots (2k+1)}b_1 =\frac{(-2)^k k!}{(2k+1)!}b_1 
+ x_1(t)=\sum_{k=0}^\infty\frac{(-1)^k}{2^kk!}t^{2k}=\mathrm{e}^{-x^2/2}, 
+ x_2(t)=\sum_{k=0}^\infty\frac{(-2)^k k!}{(2k+1)!}t^{2k+1}=\mathrm{e}^{-t^2/2}\int_0^t\mathrm{e}^{s^2/2}\,ds. 

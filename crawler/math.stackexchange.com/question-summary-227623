@@ -1,0 +1,31 @@
+1
+6042
+3780
+53
+3780
+3780=2^2\cdot3^3\cdot5\cdot7
+3780
+2,3,5,7
+t(n)=
+\le 6042
+n
+t(2)=\left\lfloor\frac{6042}2\right\rfloor=3021
+t(3)=\left\lfloor\frac{6042}3\right\rfloor=2014
+t(5)=\left\lfloor\frac{6042}5\right\rfloor=1208
+t(7)=\left\lfloor\frac{6042}7\right\rfloor=863
+t(6)=\left\lfloor\frac{6042}6\right\rfloor=1007
+t(30)=\left\lfloor\frac{6042}{30}\right\rfloor=201
+t(2\cdot 3\cdot 5\cdot 7)=\left\lfloor\frac{6042}{210}\right\rfloor=28
+3780
+N=\sum t(i)-\sum t(i\cdot j)+\sum t(i\cdot j \cdot  k)-t(i\cdot j\cdot  k \cdot l)
+i,j,k,l \in (2,3,5,7)
+3780
+6042-N
+6042 = 2\cdot53 \cdot3\cdot19 = (105+1)(56+1) = 2^3\cdot 3\cdot5\cdot 7^2 + 105 + 56 + 1
+1
+N=2^3\cdot3\cdot5\cdot 7^2
+m=2\cdot 3\cdot5\cdot 7
+\frac{\phi(m)N}{m}=2^2\cdot 2 \cdot 4 \cdot 6\cdot 7
+1
+105+56+1 = 162
+m

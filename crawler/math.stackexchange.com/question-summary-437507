@@ -1,0 +1,21 @@
+0 \leq a \leq 1
+u_n(a)=\sum_{k=1}^n k^a- n^a \left(\frac{n}{1+a}+\frac{1}{2}\right)
+a=1
+u_n(1)=\sum\limits_{k=1}^{n} k- n \left(\frac{n}{1+1}+\frac{1}{2}\right)= \frac{n(n+1)}{2}-\frac{n(n+1)}{2}=0
+u_n(1)
+0
+a=0
+u_n(0)=\sum\limits_{k=1}^{n} 1-  \left(\frac{n}{1+0}+\frac{1}{2}\right) = n-n+\frac{1}{2}=\frac{1}{2}
+u_n(0)
+1/2
+k^a
+x\mapsto x^a
+(1)
+(AE)
+\sum_{k=1}^n k^a\sim_\infty \int_1^n x^a dx\sim_\infty \frac{1}{a+1}n^{a+1}\tag{AE}
+\sum_{k=1}^n k^a=\frac{1}{a+1}n^{a+1}+O\left(n^{a}\right)\tag{1}
+v_n=\sum_{k=1}^n k^a-\frac{1}{a+1}n^{a+1}
+v_{n+1}-v_n=(n+1)^a-\frac{1}{a+1}(n+1)^{a+1}+\frac{1}{a+1}n^{a+1}
+v_{n+1}-v_n\sim_\infty  \frac{a}{2}n^{a-1}
+v_n\sim_\infty \frac{a}{2}\int_1^n x^{a-1}dx\sim_\infty \frac{n^a}{2}
+\sum_{k=1}^n k^a=\frac{1}{a+1}n^{a+1}+ \frac{n^a}{2}+O\left(n^{a-1}\right)

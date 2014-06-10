@@ -1,0 +1,57 @@
+\displaystyle {{f(b)-f(a)}\over {b-a}}
+f'\left({{a+b}\over 2}\right)
+\displaystyle {{f(b)-f(a)}\over {b-a}} > f'\left({{a+b}\over 2}\right)
+g(x) = f'(x)
+f(b)-f(a) = \int_a^b g(x)\;dx 
+m = \frac{a+b}{2}
+d = \frac{b-a}{2}
+\dfrac{f(b)-f(a)}{2d} = \dfrac{1}{b-a}\int_a^b g(x)\;dx 
+\begin{align} D &=\dfrac{f(b)-f(a)}{b-a}-f'(m)\\ &= \dfrac{1}{2d}\int_a^b g(x)\;dx-g(m)\\ &= \dfrac{1}{2d}\int_a^b (g(x)-g(m))\;dx\\ \end{align} 
+g(x) = x^k
+\begin{align} D &= \dfrac{1}{2d}\int_a^b x^k\;dx-m^k\\ &= \dfrac{x^{k+1}}{2d(k+1)}\big|_a^b-m^k\\ &= \dfrac{b^{k+1}-a^{k+1}}{2d(k+1)}-m^k\\ &= \dfrac{b^{k+1}-a^{k+1}}{(b-a)(k+1)}-m^k\\ &= \dfrac{b^{k+1}-a^{k+1}}{(k+1)(b-a)}-\dfrac{(b+a)^k}{2^k}\\ \end{align} 
+k=1
+\begin{align} D &= \dfrac{2(b^2-a^2)-2(b-a)^2}{4(b-a)}\\ &= \dfrac{b^{2}-a^{2}}{(b-a)(2)}-\dfrac{b+a}{2}\\ &= \dfrac{b+a}{2}-\dfrac{b+a}{2}\\ &=0\\ \end{align} 
+k=2
+\begin{align} D &= \dfrac{b^{3}-a^{3}}{(b-a)(3)}-\left(\dfrac{b+a}{2}\right)^2\\ &= \dfrac{b^2+ba+a^2}{3}-\dfrac{(b+a)^2}{4}\\ &= \dfrac{4(b^2+ba+a^2)-3(b^2+2ab+a^2)}{12}\\ &= \dfrac{b^2-2ba+a^2)}{12}\\ &= \dfrac{(b-a)^2}{12}\\ >0\\ \end{align} 
+a = 0
+k > 1
+\begin{align} D &=\dfrac{b^{k+1}}{b(k+1)}-\left(\frac{b}{2}\right)^k\\ &=\dfrac{b^{k}}{k+1}-\frac{b^k}{2^k}\\ &=b^{k}\left(\dfrac{1}{k+1}-\dfrac{1}{2^k}\right)\\ &> 0\\ \end{align} 
+0 < a < b
+k > 1
+x = a/b
+\begin{align} S &=\dfrac{b^{k+1}-a^{k+1}}{(k+1)(b-a)}\\ &=\dfrac{b^{k+1}(1-x^{k+1})}{(k+1)b(1-x)}\\ &=\dfrac{b^{k}(1-x^{k+1})}{(k+1)(1-x)}\\ \end{align} 
+\begin{align} m^k &= \dfrac{(b+a)^k}{2^k}\\ &= \dfrac{b^k(1+x)^k}{2^k}\\ \end{align} 
+k > 1
+0 < x < 1
+\dfrac{1-x^{k+1}}{(k+1)(1-x)} >\dfrac{(1+x)^k}{2^k} 
+0 < x < 1
+2^k(1-x^{k+1})>(k+1)(1-x)(1+x)^k
+2^k\sum_{i=0}^k x^i > (k+1)(1+x)^k
+k=2
+4(1+x+x^2) > 3(1+2x+x^2)
+1 - 2x + x^2 > 0
+k
+1+x
+\begin{align} (k+1)(1+x)^{k+1} &< 2^k(1+x)\sum_{i=0}^k x^i \\ &= 2^k\left(\sum_{i=0}^k x^i+\sum_{i=0}^k x^{i+1}\right) \\ &= 2^k\left(\sum_{i=0}^k x^i+\sum_{i=1}^{k+1} x^{i}\right) \\ &= 2^k\left(1+x^{k+1}+2\sum_{i=1}^k x^i\right) \\ &= 2^k\left(-1-x^{k+1}+2\sum_{i=0}^{k+1} x^i\right) \\ &= -2^k(1+x^{k+1})+2^{k+1}\sum_{i=0}^{k+1} x^i \\ \end{align} 
+k+1
+k
+\begin{align} (k+2)(1+x)^{k+1} &\ge 2^{k+1}\sum_{i=0}^{k+1} x^i \\ &>(k+1)(1+x)^{k+1}+2^k(1+x^{k+1})\\ \end{align} 
+(1+x)^{k+1} >2^k(1+x^{k+1}) 
+(1+x)^{k+1} \le 2^{k}(1+x^{k+1}) 
+k
+k+1
+h
+a_i > 0
+h\left(\dfrac{\sum a_i x_i}{\sum a_i}\right) \le \dfrac{\sum a_i h(x_i)}{\sum a_i} 
+h(x) = x^k
+x_i = x^i
+a_i = \binom{k}{i}
+\sum a_i = \sum \binom{k}{i} = 2^k
+\sum a_i x_i = \sum \binom{k}{i} x^i = (1+x)^k
+h\left(\dfrac{(1+x)^k}{2^k}\right) \le \dfrac{\sum a_i h(x_i)}{\sum a_i} 
+\left(\dfrac{(1+x)^k}{2^k}\right)^k \le \dfrac{\sum \binom{k}{i} x^{ik}}{2^k} \le \dfrac{(1+x^k)^k}{2^k} 
+\dfrac{(1+x)^k}{2^k} \le \dfrac{1+x^k}{2} 
+(1+x)^k \le 2^{k-1}(1+x^k) 
+k+1
+k
+(1+x)^{k+1} \le 2^{k}(1+x^{k+1}) 

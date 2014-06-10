@@ -1,0 +1,14 @@
+f
+(0, 1]
+¥int_{[0, 1]}|f|dm = ¥lim_{n ¥to ¥infty} ¥int_{1/n}^{1}|f(x)|dx,
+¥lim_{n ¥to ¥infty} ¥int_{1/n}^{1}|f(x)|dx < ¥infty
+¥int_{[0, 1]}fdm = ¥lim_{n ¥to ¥infty} ¥int_{1/n}^{1}f(x)dx.
+f
+g(x) = |f(x)|
+0 ¥leq |f_n(x)| ¥leq g(x)
+x
+f_n ¥to f
+¥int_{[0, 1]}g(x) dm < ¥infty
+f_n(x) = ¥begin{cases}f(x)&¥text{if }x¥ge¥frac1n¥¥0&¥text{otherwise}¥end{cases}
+¥int_{[0, 1]}fdm = ¥int_{[0, 1]} ¥lim f_n dm = ¥lim ¥int_{[0, 1]} f_n dm = ¥lim ¥int_{1/n}^{1}f(x)dx,
+¥int_{[0, 1]} f_n dm = ¥int_{[¥frac{1}{n}, 1]} f_n dm = ¥int_{1/n}^{1}f_n(x)dx = ¥int_{1/n}^{1}f(x)dx

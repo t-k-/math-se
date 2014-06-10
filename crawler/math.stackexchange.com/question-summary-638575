@@ -1,0 +1,35 @@
+f:[0,1]\to \mathbb{R} \space
+g(z):=\int_{0}^1\frac{f(x)}{x-z}dx
+\mathbb R \backslash[0,1]
+L^1
+\frac {\delta f(x,z)}{\delta z}
+f(x,z):=\frac{f(x)}{x-z}
+z \in (-\infty,\epsilon) \cup (1+\epsilon, +\infty)
+\epsilon \gt0
+x \in [0,1]
+C\gt0
+\frac{f(x)}{x-z}
+\frac {\delta f(x,z)}{\delta z}= \frac {\delta}{\delta z} \frac{f(x)}{x-z}=\frac {f(x)}{(x-z)^2}
+L^1
+g(z)'= \int_{0}^1 \frac {f(x)}{(x-z)^2}dx
+\mathbb {R}\backslash [0,1]
+\frac {f(x)}{(x-z)^2}
+f(x)
+(x-z)^2
+\infty
+h(x) =\begin{cases} f(x) & \text{if } (x-z)\le 1 \\    (\frac {1}{C}+\epsilon)      & \text{if } (x-z)\lt 1   \end{cases}
+C = (x-z)
+\epsilon \gt 0
+\mathbb{R}\setminus[0,1]
+a
+z
+(0,\infty)
+z\in(0,\infty)
+g
+z
+z
+g
+g
+        g(z)=\int_{0}^{1}\frac{f(x)}{(x-z)^{2}}dx 
+ \begin{align}      \int_{a}^{z}g(z')dz'      & =\int_{a}^{z}\left(\int_{0}^{1}\frac{f(x)}{(x-z')^{2}}dx\right)\,dz'\\     & =\int_{0}^{1}f(x)\left(\int_{a}^{z}\frac{1}{(x-z')^{2}}\,dz'\right)\,dx \\     & =\int_{0}^{1}\frac{f(x)}{x-z}dx-\int_{0}^{1}\frac{f(x)}{x-a}\,dx. \end{align} 
+                g(z) = \frac{d}{dz}\int_{0}^{1}\frac{f(x)}{x-z}\,dx, 

@@ -1,0 +1,17 @@
+\mathbf{b}
+m - r
+y
+\begin{bmatrix}     1 & 2 & R1 \\     2 & 3 & R2 \\     2 & 4 & R3 \\     2 & 5 & R4 \\     \end{bmatrix} \rightarrow REF \rightarrow  \begin{bmatrix}     1 & 2 & R1 \\     \color{#009900}0 & \color{#009900}0 & \color{#009900}{-4} + \color{#009900}1R2 + \color{#009900}{0}R3 + \color{#009900}1R4 \\     \color{#FF4F00}0 & \color{#FF4F00}0 & \color{#FF4F00}{-2}R1 + \color{#FF4F00}{0}R2 + \color{#FF4F00}{1}R3 + \color{#FF4F00}{0}R4\\     0 & 0 & -2R1 + R4 \\     \end{bmatrix}
+ \implies \color{#009900}{\begin{bmatrix} 4 & 1 & 0 & 1 \\     \end{bmatrix}}\begin{bmatrix}     R1 & R2 & R3 & R4 \\     \end{bmatrix}^T = \color{#009900}{\begin{bmatrix}     0 & 0 \\     \end{bmatrix}} 
+  \color{#FF4F00}{\begin{bmatrix} -2 & 0 & 1 & 0 \\     \end{bmatrix}} \begin{bmatrix}     R1 & R2 & R3 & R4 \\     \end{bmatrix}^T = \color{#FF4F00}{\begin{bmatrix}     0 & 0 \\     \end{bmatrix}} 
+A = \begin{bmatrix}    1 & 2 \\    2 & 3 \\    2 & 4 \\    2 & 5 \\    \end{bmatrix}
+\begin{bmatrix}     1 & 2 & R1 \\     2 & 3 & R2 \\     2 & 4 & R3 \\     2 & 5 & R4 \\     \end{bmatrix} \rightarrow \begin{bmatrix}     1 & 2 & R1 \\     0 & -1 & R2 -2R1 \\     0 & 0 & R3 -2R1 \\     0 & 1 & R4 -2R1 \\     \end{bmatrix} \rightarrow \begin{bmatrix}     1 & 2 & R1 \\     0 & -1 & R2 -2R1 \\     0 & 0 & R3 -2R1 \\     0 & 0 & R4 -4R1 + R2 \\     \end{bmatrix}
+y_1 = \begin{bmatrix} -2 \\ 0 \\ 1 \\ 0\end{bmatrix}
+y_2 = \begin{bmatrix} -4 \\ 1 \\ 0\\ 1\end{bmatrix}
+EA = REF(A)
+E
+EA
+y_2^TA = 0
+\in
+A
+\begin{bmatrix}-4 & 1 & 0 & 1\end{bmatrix} \begin{bmatrix}    1 & 2 \\    2 & 3 \\    2 & 4 \\    2 & 5 \\    \end{bmatrix} = \begin{bmatrix}0 & 0\end{bmatrix} 

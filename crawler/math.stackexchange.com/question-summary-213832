@@ -1,0 +1,46 @@
+y''+by'+cy=p(x)
+b=u+v
+c=uv
+y''+(u+v)y'+(uv)y=p(x)
+y''+ uy' + vy' + (uv)y=p(x)
+(y'' + uy') + v(y' + uy) = p(x)
+\frac{d}{dx}(y'+uy) + v(y' + uy) = p(x)
+z=y'+uy
+\frac{dz}{dx} + vz = p(x)
+z
+e^{vx}z)' = e^{vx}p(x)
+e^{vx}z = \int e^{vx}p(x) dx + C_0
+z = e^{-vx}\int e^{vx}p(x) dx + C_0e^{-vx}
+y'+uy = e^{-vx}\int e^{vx}p(x) dx + C_0e^{-vx}
+y
+(e^{ux}y)' = e^{ux}e^{-vx}\int e^{vx}p(x) dx + C_0e^{-vx}e^{ux}
+(e^{ux}y)' = e^{(u-v)x}\int e^{vx}p(x) dx + C_0e^{(u-v)x}
+e^{ux}y = \int \left[ e^{(u-v)x}\int e^{vx}p(x) dx + C_0e^{(u-v)x} \right] dx
+e^{ux}y = \int \left[ e^{(u-v)x}\int e^{vx}p(x) dx \right] dx + C_0\int e^{(u-v)x} dx
+e^{ux}y = \int \left[ e^{(u-v)x}\int e^{vx}p(x) dx \right] dx + \frac{C_0}{u-v}e^{(u-v)x} + C_1
+y = e^{-ux}\int \left[ e^{(u-v)x}\int e^{vx}p(x) dx \right] dx + e^{-ux}\frac{C_0}{u-v}e^{(u-v)x} + C_1e^{-ux}
+y = e^{-ux}\int \left[ e^{(u-v)x}\int e^{vx}p(x) dx \right] dx + e^{-vx}\frac{C_0}{u-v} + C_1e^{-ux}
+u_0
+v_0
+x^2 + bx + c = 0.
+u
+-u_0
+v
+-v_0
+p(x)
+u_0
+v_0
+u_0 = v_0
+y'' + by' + cy = p(x) = y'' -(u_0 + v_0)y' + u_0 v_0 y,
+y = e^{u_0 x}\int \left[ e^{(v_0-u_0)x}\int e^{-v_0 x}p(x) dx + C_0e^{(v_0 - u_0)x} \, \mathrm dx \right] \, \mathrm dx.
+u=v
+C_0
+C_2=\frac {C_0}{u-v}
+r=\int e^{vx}p(x)dx,dr=e^{vx}p(x)dx
+ds=e^{(u-v)x}dx,s=\frac{e^{(u-v)x}}{u-v}
+y=\frac{e^{-ux}e^{(u-v)x}}{u-v}\int e^{vx}p(x)dx-\frac{e^{-ux}}{u-v}\int e^{(u-v)x}e^{vx}p(x)dx+C_2e^{-vx}+C_1e^{-ux}
+y=\frac{e^{-vx}}{u-v}\int e^{vx}p(x)dx-\frac{e^{-ux}}{u-v}\int e^{ux}p(x)dx+C_1e^{-ux}+C_2e^{-vx}
+u=v
+\int e^{(u-v)x}dx=\int dx=x
+u
+v

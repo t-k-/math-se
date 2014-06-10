@@ -1,0 +1,29 @@
+\mu_0
+\mathcal{A}
+\mu^*:\mathcal{P}(X)\to [0,\infty]
+\mu^*(E)=\text{inf}\left\{\sum_{j=1}^{\infty}\mu_0(A_j):\ A_j\in\mathcal{A},\ E\subset\cup_{j=1}^{\infty}A_j\right\}
+\mathcal{A}
+\mu^*
+A\in\mathcal{A}
+\mu
+E\subset X
+\mu^*(E)=\mu^*(E\cap A)+\mu^*(E\cap A^C)
+A\in\mathcal{A}
+E\subset X
+\epsilon>0
+\mu^*(E)=\infty
+\mu^*(E)<+\infty
+B_n\in\mathcal{A}
+E\subset\cup_{n=1}^{\infty}B_n
+\mu^*(E)\le \sum_{n=1}^{\infty}\mu_0(B_n)<\mu^*(E)+\epsilon
+E\cap A\subset \cup_{n=1}^{\infty}B_n\cap A=\cup_{n=1}^{\infty}(B_n\cap A),
+\begin{align*} \mu^*(E\cap A) &\le \mu^*\left(\cup_{n=1}^{\infty}(B_n\cap A)\right)\\ &\le \sum_{n=1}^{\infty}\mu^*(B_n\cap A)\\ &=\sum_{n=1}^{\infty}\mu_0(B_n\cap A) \end{align*} 
+\mu^*\bigg|_{\mathcal{A}}=\mu_0
+\mu^*(E\cap A^C)\le \sum_{n=1}^{\infty}\mu_0(B_n\cap A^C).
+\mu^*(E\cap A)+\mu^*(E\cap A^C)\le \sum_{n=1}^{\infty}\mu_0(B_n\cap A)+\sum_{n=1}^{\infty}\mu_0(B_n\cap A^C)\le \mu^*(E)+E
+\sum_{n=1}^{\infty}\mu_0(B_n\cap A)+\sum_{n=1}^{\infty}\mu_0(B_n\cap A^C)\le \sum_{n=1}^{\infty}\mu_0(B_n)+\sum_{n=1}^{\infty}\mu_0(B_n)
+\mu^*(E)+\epsilon
+B_n
+B_n=(B_n\cap A)\cup (B_n\cap A^C)
+\mu_0(B_n)=\mu_0(B_n\cap A)+\mu_0(B_n\cap A^C)
+\begin{align*} \mu^*(E\cap A)+\mu^*(E\cap A^C) &\le \sum_{n=1}^{\infty}\mu_0(B_n\cap A)+\sum_{n=1}^{\infty}\mu_0(B_n\cap A^C)\\ &= \sum_{n=1}^{\infty}\left[\mu_0(B_n\cap A)+\mu_0(B_n\cap A^C)\right]\\ &=\sum_{n=1}^{\infty}\mu_0(B_n)\\ &\le \mu^*(E)+E\\ \end{align*} 

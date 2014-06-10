@@ -1,0 +1,102 @@
+1+2+3+4+\ldots+n = \dfrac{n\times(n+1)}2
+n
+S = 1 + 2 + ... + (n-1) + n.
+S = n + (n-1) + ... + 2 + 1.
+n+1,
+2S = (n+1) + (n+1) + ... + (n+1) = n(n+1).
+S = n(n+1)/2
+n*(n+1)
+n*(n+1)
+ 1 + 2 + ... + n = \dfrac{n(n+1)}{2} 
+1 + x + x^2 + ... + x^n = \dfrac{x^{n+1} - 1}{x-1}
+ 1 + 2x + 3x^2 + ... + nx^{n-1} = \dfrac{ (n+1)x^n (x-1) - x^{n+1} + 1}{ (x-1)^2 }
+ lim_{x \to 1} \dfrac{ (n+1)x^n (x-1) - x^{n+1} + 1}{ (x-1)^2} = \dfrac{ (n+1) [ (n+1)x^n - nx^{n-1} ] - (n+1)x^n }{2(x-1)} = 
+ lim_{x \to 1} \dfrac{ (n+1)[(n+1)(n)x^{n-1} - n(n-1)x^{n-2}] - (n+1)(n)x^{n-1} } {2}
+ \dfrac{1}{2} * (n+1)(n) [ (n+1) - (n-1) - 1] = \dfrac{ (n)(n+1)}{2}
+X
+X = 1+2+3+4+5+6
+2X = (1+2+3+4+5+6) + (1+2+3+4+5+6)
+2X = (1+2+3+4+5+6) + (6+5+4+3+2+1)
+2X = (1+6)+(2+5)+(3+4)+(4+3)+(5+2)+(6+1)
+2X = 7+7+7+7+7+7 = 6*7 = 42
+2
+n
+n
+n-1
+2
+\frac{n(n-1)}{2}
+n
+1, 2, 3, ... n
+j
+j
+2
+n
+j-1
+1, 2, ... j-1
+1 + 2 + ... + (n-1)
+n
+1
+n+1
+i+1
+1 \leq i \leq n
+i
+\sum_{i=1}^n i
+(i+1)^2-i^2=2i+1
+ \sum_{i=1}^n 2i+1 = \sum_{i=1}^n (i+1)^2-i^2 = (n+1)^2-1=n^2+2n \,.
+n^2+2n= 2[\sum_{i=1}^n i] +n \,.
+n+1
+\sum_{i=1}^ni
+n+1
+\binom{n+1}{2}
+\sum_{i=1}^ni
+n
+n+1
+n(n+1)
+n
+2
+n-1
+n
+\sum_{i=1}^n i
+2 \sum_{i=1}^n i = n(n+1)
+\sum_{i=1}^n i = n(n+1)/2
+K_n
+v_1
+n-1
+n-1
+v_2
+n-2
+v_1
+v_2
+v_3
+n-3
+v_{n-1}
+v_n
+K_n
+E = \sum\limits_{i=1}^{n-1} i
+\{1,...,n\}
+E = \sum\limits_{i=1}^{n-1} i = \binom{n}{2} = \frac{n(n-1)}{2}
+B_k(x)
+k
+1^p+...+n^p=\frac{B_{p+1}(n+1)-B_{p+1}(0)}{p+1}
+\dfrac{k+1}2-\dfrac{k-1}2=1 \implies\dfrac{k(k+1)}2-\dfrac{(k-1)k}2=k
+\implies \sum_{k=1}^n\Bigg(\dfrac{k(k+1)}2-\dfrac{(k-1)k}2\Bigg)=\sum_{k=1}^nk\implies\dfrac{n(n+1)}2-\dfrac{1(1-1)}2=\sum_{k=1}^nk
+\implies\sum_{k=1}^nk=\dfrac{n(n+1)}2
+\begin{aligned} \displaystyle &  \sum_{0 \le k \le n}k^2  = \sum_{0 \le k \le n}(n-k)^2  = n^2\sum_{0 \le k \le n}-2n\sum_{0 \le k \le n}k+\sum_{0 \le k \le n}k^2 \\& \implies 2n\sum_{0 \le k \le n}k = n^2(n+1) \implies \sum_{0 \le k \le n}k = \frac{1}{2}n(n+1).\end{aligned}
+\begin{aligned}\displaystyle & \begin{aligned}\sum_{1 \le k \le n}k & = \sum_{1 \le k \le n}~\sum_{1 \le r \le k} = \sum_{1 \le r \le n} ~\sum_{r \le k \le n} = \sum_{1 \le r \le n}\bigg(\sum_{1 \le k \le n}-\sum_{1 \le k \le r-1}\bigg) \\& =\sum_{1 \le r \le n}\bigg(n-r+1\bigg) = n\sum_{1 \le k \le n}-\sum_{1 \le k \le n}k+\sum_{1 \le k \le n}\end{aligned} \\& \implies 2\sum_{1 \le k \le n}k = n^2+n \implies \sum_{1 \le k \le n}k = \frac{1}{2}n(n+1), ~ \mathbb{Q. E. D.} \end{aligned}
+\begin{aligned} & \hspace{0.5in}\begin{aligned}\displaystyle  \sum_{0 \le k \le n}k^{2p}  &= \sum_{0 \le k \le n}(n-k)^{2p} \\& = \sum_{0 \le k \le n}~\sum_{0 \le r \le 2p}\binom{2p}{r}n^r(-1)^{2p-r}k^{2p-r}\\& = \sum_{0 \le k \le n}k^{2p}-2pn\sum_{0 \le k \le n}k^{2p-1}+\sum_{0 \le k \le n}~\sum_{2 \le r \le 2p}\binom{2p}{r}n^r(-1)^{2p-r}k^{2p-r}  \end{aligned} \\& \implies \sum_{0 \le k \le n}k^{2p-1} =  \frac{1}{2pn}\sum_{0 \le k \le n}~\sum_{2 \le r \le 2p}\binom{2p}{r}n^r(-1)^{2p-r}k^{2p-r}. \end{aligned}
+1
+\frac{1\times 2}{2} = 1
+n
+1 + 2 + 3 + \dots + n + (n + 1) = \frac{n(n+1)}{2} + (n + 1) = \frac{n(n+1) + 2(n+1)}{2} = \frac{(n+1)(n+2)}{2}.
+n
+n + 1
+1
+S_n = \frac{(a_1 + a_n) * n}{2}
+a_1
+a_n
+n
+f(x)=\sum_{n=0}^\infty\left(\sum_{j=0}^{n}j\right)x^n
+f(x)=\frac{x}{(1-x)^3}.
+\frac{x}{(1-x)^3}
+\frac{x}{(1-x)^3}=\sum_{n=0}^\infty \frac{n(n+1)}{2}x^n
+\sum_{j=0}^nj=\frac{n(n+1)}{2}.

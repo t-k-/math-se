@@ -1,0 +1,20 @@
+\sum_{k=0}^{\infty} {\Big( {\frac{q}{k+1}} \Big)}^k ,
+k
+0<q<1
+x\mapsto e^{-x}
+(1)
+\displaystyle e^x=\sum_{k=0}^\infty\frac{x^k}{k!}
+(2)
+q
+ \begin{align} \int_0^1(-qx\log(x))^k\,\mathrm{d}x &=\int_\infty^0(qxe^{-x})^k\,\mathrm{d}e^{-x}\\ &=q^k\int_0^\infty x^ke^{-(k+1)x}\,\mathrm{d}x\\ &=\frac{q^k}{(k+1)^{k+1}}\int_0^\infty x^ke^{-x}\,\mathrm{d}x\\ &=\frac{q^kk!}{(k+1)^{k+1}}\tag{1} \end{align} 
+ \begin{align} \sum_{k=0}^\infty\left(\frac{q}{k+1}\right)^{k+1} &=\int_0^1qx^{-qx}\,\mathrm{d}x\\ &=\int_0^q(x/q)^{-x}\,\mathrm{d}x\tag{2} \end{align} 
+ \begin{align} \sum_{k=0}^\infty\left(\frac{q}{k+1}\right)^k &=1+\int_0^q(x/q)^{1-x}\,\mathrm{d}x\\ &=1+q\int_0^1x^{1-qx}\,\mathrm{d}x\tag{3} \end{align} 
+\frac{q}{k+1} < q
+\sum_{k=0}^n \left(\frac{q}{k+1} \right)^k < \sum_{k=0}^n q^k 
+1/(1-q)
+n
+q
+k
+(\frac{q}{k+1})^{k}
+a_{k}(>0)
+\frac{a_{k+1}}{a_{k}}=\frac{q^{k+1}(k+1)^{k}}{q^{k}(k+2)^{k+1}}<q<1

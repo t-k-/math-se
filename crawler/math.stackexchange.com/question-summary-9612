@@ -1,0 +1,18 @@
+p[n,m] = p[n-1,m-1] + p[n+1,m-1] + p[n,m-1]
+p[n,0] = 0 \text{ (for } n \neq 0),
+p[0,0] = 1
+n^{m-2}
+m
+n
+0
+\pm 1
+0
+k
++1
+-1
+\displaystyle \sum_{k=0}^{\lfloor m/2 \rfloor} \binom{m}{k,k} = \sum_{k=0}^{\lfloor m/2 \rfloor} \frac{m!}{k!k!(m-2k)!}
+m
+3
+\displaystyle \frac{m!}{(m/3)!} \approx \frac{\sqrt{2\pi m}(m/e)^m}{\sqrt{2\pi (m/3)}^3 (m/3e)^m} = \frac{3^m}{(2\pi/3^{1.5})m}
+O(\sqrt{m})
+O(3^m/\sqrt{m})

@@ -1,0 +1,15 @@
+\int\int_S xdydz+dzdx+xz^2dxdy
+S
+x^2+y^2+z^2=1
+\,x\,dy\,dz\;
+F(P,Q,R):\Bbb R^3\to \Bbb R^3\;,\;P,Q,R:\Bbb R^3\to\Bbb R\;,\;\;\;\left\{\begin{align*}\frac{\partial R}{\partial y}-\frac{\partial Q}{\partial z}&=x\\\frac{\partial P}{\partial z}-\frac{\partial R}{\partial x}&=1\\\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}&=xz^2\end{align*}\right.
+\,z=\sqrt{1-x^2-y^2}\,
+\bf n:=(-z_x\,,\,-z_y\,,\,1)=\left(\frac x{\sqrt{1-x^2-y^2}}\,,\,\frac y{\sqrt{1-x^2-y^2}}\,,\,1\right)\;
+\text{curl}\,(F)\cdot\bf n=\frac{x^2+y}{\sqrt{1-x^2-y^2}}+xz^2
+\,xy-
+\,x^2+y^2=1\;,\;\;0\le x,y\le 1\;
+x=r\cos t\;,\;\;y=r\sin t\;,\;\;0\le r\le 1\;,\;\;0\le t\le \frac\pi2
+\int\limits_0^1\int\limits_0^{\pi/2}r\left(\frac{r^2\cos^2t+r\sin t}{\sqrt{1-r^2}}+r\cos t(1-r^2)\right)dt\,dr=
+=\int\limits_0^1\int\limits_0^{\pi/2}\left(\frac{r^3}{\sqrt{1-r^2}}\cos^2t+\frac{r^2}{\sqrt{1-r^2}}\sin t+r^2(1-r^2)\cos t\right)dt\,dr=
+=\int\limits_0^1\left(\frac{r^3}{\sqrt{1-r^2}}\left.\left.\frac{t+\cos t\sin t}2\right|_0^{\pi/2}-\left.\frac{r^2}{\sqrt{1-r^2}}\cos t\right|_0^{\pi/2}+r^2(1-r^2)\sin t\right|_0^{\pi/2}\right)dr=
+=\frac\pi4\frac12\int\limits_0^1(-r^2)\frac{-2r}{\sqrt{1-r^2}}dr+\frac12\int\limits_0^1(-r)\frac{-2r}{\sqrt{1-r^2}}dr+\int\limits_0^1(r^2-r^4)dr=\;\ldots\ldots

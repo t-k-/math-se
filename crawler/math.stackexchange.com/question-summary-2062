@@ -1,0 +1,13 @@
+ \displaystyle d(n)= \sum\limits_{d \mid n} 1
+ \sum\limits_{n \leq x} d(n)= x\log{x} + (2C-1)x + \mathcal{O}(\sqrt{x})
+\mathcal{O}(x)
+\sqrt{x}
+\sum_{n\leq x} d(n) = \sum_{mn\le x} 1 = \sum_{m\le \sqrt{x}} \ \sum_{n\le x/m} 1 + \sum_{n\le \sqrt{x}} \ \sum_{m\le x/n} 1 - \sum_{m\le\sqrt{x}} 1 \sum_{n\le\sqrt{x}} 1.
+m
+n
+ \sum_{n\leq x} d(n) = 2 \sum_{n\le \sqrt{x}} \Big\lfloor\frac{x}{n}\Big\rfloor - \Big( \big\lfloor\sqrt{x}\big\rfloor \Big)^2
+\lfloor x \rfloor
+x
+\lfloor x \rfloor=x+O(1)
+ \sum_{n\leq x} \frac{1}{n} = \log x +\gamma + O\Big(\frac{1}{x}\Big)
+\gamma

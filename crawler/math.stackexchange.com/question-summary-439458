@@ -1,0 +1,11 @@
+y'=\dfrac{3x-2y}{x}\quad y(1)=0
+x \in[1,2]
+h=0.1
+y_{i+1} = y_{i} + \dfrac{h}{4}\left[f(x_i, y_i)+3f(x_i + \dfrac{2}{3}h, y_i+\dfrac{2}{3}hf(x_i,y_i))\right]
+y_{i+1} = y_{i} + \dfrac{1}{40}\left[\dfrac{3 x_{i-1} - 2 y_{i-1}}{x_{i-1}} + 3\left(\dfrac{3 (x_i + \dfrac{2}{3}(.1)) - 2 (y_i+\dfrac{2}{3}(.1)\dfrac{3 x_{i-1} - 2 y_{i-1}}{x_{i-1}}}{x_i + \dfrac{2}{3}(.1)}\right)    \right]
+x_0 = 1, y_0 = 0, y_1 = 0 + \dfrac{1}{40}\left[3 + 3\dfrac{3(1+(2/3)(.1)) - 2(2(.1))}{1 + (2/3)(.1)} \right]  = 0.271875
+~~~~~\text{Step} ~~|~~ x ~~~|~~ y 
+y(x) =  \dfrac{x^3-1}{x^2}
+x=2
+y(2) = \dfrac{7}{4} = 1.75
+1.74786

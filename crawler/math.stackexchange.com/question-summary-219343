@@ -1,0 +1,25 @@
+[(p \to\neg q) \wedge q] \to \neg p
+  [(p \to \neg q) \wedge q] \to \neg p\\  [(\lnot p \vee \lnot q) \wedge q] → \lnot p\\  \lnot [(\lnot p \vee \lnot q) \wedge q] \vee \lnot p\\ [\lnot (\lnot p \vee \lnot q) \vee \lnot q] \vee \lnot p\\ [(p ∧ q) \vee \lnot q ] \vee \lnot p\\ 
+ \begin{array}{cccc|cc|c} p & q & ¬p & ¬q &  (p\rightarrow ¬q) & (p\rightarrow¬q)∧q & (p\rightarrow¬q)∧q\rightarrow¬p\\ \hline 1 & 1 & 0 & 0 & 0 & 0 & 1\\ 1 & 0 & 0 & 1 & 1 & 0 & 1\\ 0 & 1 & 1 & 0 & 1 & 1 & 1\\ 0 & 0 & 1 & 1 & 1 & 0 & 1 \end{array} 
+\vDash ((p\rightarrow ¬q)∧q)\rightarrow ¬p)
+ \begin{array}{c|cc} 1 & (p \to\neg q) \wedge q\\ \hline 2 & p \to\neg q &\hspace{1cm}\text{1. Simplification}\\ 3 & q &\hspace{1cm}\text{1.  Simplification}\\ 4 & \neg\neg q \to\neg p &\hspace{1cm}\text{2. Contrapositive}\\ 5 & \neg \neg q  &\hspace{1cm}\text{3. Double negation}\\ \hline 6 & \neg p  &\hspace{1cm}\text{4. & 5. Modus Ponens}\\ \end{array} 
+r = [(p \to ¬q) \wedge q]
+[a \to b] = [\neg a \vee b]
+a
+b
+[(a \vee b) \wedge c] = [(a \wedge c) \vee (b \wedge c)]
+a
+b
+c
+r = [(\neg p \vee \neg q) \wedge q] = [(\neg p \wedge q) \vee (\neg q \wedge q)] = (\neg p \wedge q)
+(\neg q \wedge q) = 0
+[a \vee 0] = a
+a
+[(\neg p \wedge q) → \neg p]
+[(p → ¬q) ∧ q] → ¬p
+p \to \neg q
+[(p \wedge q) \vee¬ q ] \vee ¬p
+((\lnot q\vee p)\wedge (\lnot q\vee q))\vee \lnot p
+\lnot q \vee q
+\lnot q\vee p\vee \lnot p
+\vee

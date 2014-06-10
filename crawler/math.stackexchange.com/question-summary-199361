@@ -1,0 +1,15 @@
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\F
+\|s\|=\sup_{i\in\N}|s(i)|
+c(\F)=\{s\colon\N\to\F|~\exists t\in\F~\text{such that }\lim_{i\to\infty}|s(i)-t|=0\}.
+(s_n)
+i\in\N
+\{s_n(i)\}_n
+\F
+\F
+s(i)
+s=(s(1), s(2), \ldots)
+\lim\limits_{n\to\infty}\|s_n-s\|=0
+\lim_{n\to\infty}\|s_n-s\|=0\implies s\in c(\F).
+\begin{align} \lim_{n\to\infty}\|s_n-s\| &=\lim_{n\to\infty}\sup_{i\in\mathbb N}\left|s_n(i)-\lim_{m\to\infty}s_m(i)\right|\\ &=\lim_{n\to\infty}\sup_{i\in\mathbb N}\lim_{m\to\infty}\left|s_n(i)-s_m(i)\right|\\ &\leq\lim_{n\to\infty}\lim_{m\to\infty}\sup_{i\in\mathbb N}\left|s_n(i)-s_m(i)\right|\\ &\leq\lim_{n\to\infty}\lim_{m\to\infty}\|s_n-s_m\|=0\\ \end{align}

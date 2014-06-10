@@ -1,0 +1,15 @@
+\gamma
+ \gamma = 1-\int_1^\infty \frac{f(t)}{t^2} dt\,. 
+f(t) = t - [t]
+ \sum_{n \le x}\frac{1}{n} = \log x + \gamma + O(1/x) 
+\sum_{n=1}^{N} a(n) f(n) = \int_{1^-}^{N^+} f(t) d(A(t)) =  f(t) A(t) \rvert_{1^-}^{N^+} - \int_{1^-}^{N^+} A(t) f'(t) dt
+\displaystyle \sum_{n \leq N} \frac1n
+a(n) = 1
+f(n) = \frac1n
+A(t) = \lfloor t \rfloor = t - \{t\}
+\displaystyle \int_{N^+}^{\infty} \frac{\{t\}}{t^2} dt \leq \int_{N^+}^{\infty} \frac{1}{t^2} dt = \frac1N
+\displaystyle 0 < \int_{N^+}^{\infty} \frac{\{t\}}{t^2} dt < 1
+\displaystyle 0 < \left(1 - \int_{1^-}^{\infty} \frac{\{t\}}{t^2} dt \right) < 1
+\displaystyle \left(1 - \int_{1^-}^{\infty} \frac{\{t\}}{t^2} dt \right) = \gamma
+\gamma \approx 0.5772\ldots
+ \sum_{n \leq N} \frac1n = \gamma + \log(N) + \mathcal{O} \left(\frac1N \right) 

@@ -1,0 +1,22 @@
+\alpha
+I_n = \int_0^1 \frac{x^n}{x + \alpha}\,{\rm d}x
+I_0
+\frac{1 + \alpha}{\alpha}
+I_n
+I_n = \frac 1n - \alpha I_{n-1}
+\mid\alpha\mid
+I_{n-1} = \frac {1}{\alpha n} - \frac {1}{\alpha} I_{n}
+\mid\alpha\mid
+\frac{x^n}{x+\alpha}=\frac{x^n-(-\alpha)^n}{x-(-\alpha)}+\frac{(-\alpha)^n}{x+\alpha}
+\frac{1-r^n}{1-r}=\sum_{k=0}^{n-1}r^k
+x^{n-1}
+\frac{x^n-(xr)^n}{x-xr}=x^{n-1}\sum_{k=0}^{n-1}r^k
+r=\frac{-\alpha}{x}
+\frac{x^n-(-\alpha)^n}{x-(-\alpha)}=x^{n-1}\sum_{k=0}^{n-1}\frac{(-a)^k}{x^k}
+\frac{x^n-(-\alpha)^n}{x-(-\alpha)}=\sum_{k=0}^{n-1}(-a)^kx^{n-1-k}
+I_n=\int_0^1 \frac{x^n}{x+\alpha}=\int_0^1 \frac{x^n-(-\alpha)^n}{x-(-\alpha)} + \int_0^1 \frac{(-\alpha)^n}{x+\alpha}
+I_n=\int_0^1\sum_{k=0}^{n-1}(-\alpha)^kx^{n-1-k}+(-\alpha)^n(\log(1+\alpha)-\log(\alpha))
+I_n=\sum_{k=0}^{n-1}\int_0^1(-\alpha)^kx^{n-1-k}+(-\alpha)^n\log(\frac{1+\alpha}{\alpha})
+I_n=\sum_{k=0}^{n-1}\frac{(-\alpha)^k}{n-k}+(-\alpha)^n\log\left(\frac{1+\alpha}{\alpha}\right)
+n>0
+\frac{1+\alpha}{\alpha}>0

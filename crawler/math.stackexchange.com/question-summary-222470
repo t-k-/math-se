@@ -1,0 +1,24 @@
+Z = X+Y
+X
+Y
+z
+f_X(x) = 1\quad\mathrm{if}\quad 0\le x \le 1
+f_Y(y) = 1\quad\mathrm{if}\quad 0\le y\le 1
+\begin{align} f_Z(z) & = \int_{-\infty}^\infty f_X(z-y)f_Y(y) dy \\ & = \int_0^1 f_X(z-y) dy \\ \end{align}
+0\le z-y\le 1
+z-1\le y\le z
+0\le z\le 1, f_Z(z) = \int_0^z dy = z
+1<z \le 2, f_Z(z) = \int_{z-1}^1 dy = 2-z
+f_X(z-y)f_Y(y)
+=1
+0
+=1
+(2)
+0\le z\le 2
+\tag10\le z-y\le1\text{ and }0\le y\le 1
+\tag2  \max\{0,z-1\}\le y\le \min\{1,z\}.
+\tag3 \max\{0,z-1\}\le \min\{1,z\}\quad \text{iff }0\le z \le 2.
+f_Z(z)=\int_{-\infty}^\infty 0\, dy\quad \text{if }z<0\text{ or }z>2.
+f_Z(z)=\int_{-\infty}^\infty f_X(z-y)f_Y(y)\,dy=\int_{\max\{0,z-1\}}^{\min\{1,z\}} 1\,dy=\min\{1,z\}-\max\{0,z-1\}
+f_Z(z)=\begin{cases}0&\text{if }z\le 0\text{ or }z\ge2\\z&\text{if }0\le z\le 1\\2-z&\text{if }1\le z\le 2.\\\end{cases}
+f_Z(z)=\int_0^1\mathbf 1_{z-1\leqslant y\leqslant z}\,\mathrm dy=\mathrm{Leb}(|0,1]\cap[z-1,z])=\ldots

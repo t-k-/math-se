@@ -1,0 +1,21 @@
+f(x;k,\theta) = \frac{1}{\Gamma(k)\theta^{k}}x^{k-1}e^{\frac{-x}{\theta}}
+\delta
+f(x;k,\theta,\delta)
+f(x;k,\delta) = \displaystyle\sum_{i=0}^{\infty}e^{\frac{-\delta}{2}}\left(\frac{\delta}{2}\right)^i \left[ \frac{1}{\Gamma(k+i)}e^{-x}x^{k+i-1}\right]
+\theta
+\delta
+y = g(x)
+x = g^{-1}(y)
+Y = \frac{1}{X+\delta}
+X = \frac{1}{Y}-\delta=g^{-1}(Y)
+f_Y(y) = |\frac{d}{dy}(g^{-1}(y))|f_X(g^{-1}(y))
+f_X(g^{-1}(y))
+f_X(x)
+y
+|\frac{d}{dy}(g^{-1}(y))|
+|\frac{d}{dy}(\frac{1}{y}-\delta)| = \frac{1}{y^2}
+\dfrac{(\frac{1}{y}-\delta)^{k-1} e^{-\frac{1}{\theta}(\frac{1}{y}-\delta)}}{\theta^k \Gamma (k)} \times \frac{1}{y^2} = \dfrac{(\frac{1}{y}-\delta)^{k-1} e^{-\frac{1}{\theta}(\frac{1}{y}-\delta)}}{y^2\theta^k \Gamma (k)} 
+f_Y(y) = \dfrac{(\frac{1}{y}-\delta)^{k-1} e^{-\frac{1}{\theta}(\frac{1}{y}-\delta)}}{y^2\theta^k \Gamma (k)}
+y<\frac{1}{\delta}
+f(x;k,\theta,\delta) = \frac{1}{\theta^k\Gamma(\theta)}(x-\delta)^{k-1}e^{\left(\frac{-(x-\delta)}{\theta} \right)}
+\delta

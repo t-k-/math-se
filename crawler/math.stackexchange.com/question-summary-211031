@@ -1,0 +1,38 @@
+E
+\varnothing\neq K_j\subset E
+j\ge1
+K_{j+1}\subset\{x+y: x\in K_j~\mbox{and } y\in E~\mbox{ such that } \|y\|\le \eta_j\}
+(\eta_j)
+\sum_j\eta_j
+\mathbb{R}
+K_{j+1}=K_j+B(0,\eta_j\}
+K_j=K_0+B\left(0,\sum_{k=1}^j\eta_k\right)
+x_0\in K_0
+B(x,r):=\{y\in E,\lVert x-y\rVert<r\}
+E
+K
+K:=\bigcup_{j=1}^{+\infty}K_j=K_0+B\left(0,\sum_{j=1}^{+\infty}\eta_j\right)\supset B\left(x_0,\sum_{j=1}^{+\infty}\eta_j\right),
+K
+E
+K_1=\{0\}
+\eta_j=j^{-2}
+E
+ \bigcup\limits_{j=1}^{\infty} K_j= \mathrm{Ball}\left(0,\sum\limits_{j=1}^\infty j^{-2}\right)= \mathrm{Ball}\left(0,\frac{\pi^2}{6}\right) 
+\varepsilon>0
+K_j
+j\in\mathbb{N}
+j\in\mathbb{N}
+\{x_{j,l}:l=1,\ldots,N_j\}
+\sum\limits_{j=1}^\infty\eta_j
+m\in\mathbb{N}
+\sum\limits_{j=m}^\infty\eta_j<\frac{\varepsilon}{2}
+j>m
+j>m
+\varepsilon>0
+\varepsilon
+\{x_{j,l}:l=1,\ldots,N_j,\;j=1,\ldots,m\}
+\bigcup\limits_{j=1}^\infty K_j
+ K_j\subset \bigcup\limits_{l=1}^{N_j}\mathrm{Ball}\left(x_{j,l},\frac{\varepsilon}{2}\right) 
+ \begin{align} K_j&\subset K_m+\mathrm{Ball}(0,\eta_m)+\ldots+\mathrm{Ball}(0,\eta_{j-1})\\ &\subset K_m+\mathrm{Ball}\left(0,\sum\limits_{i=m}^j\eta_j\right)\\ &\subset K_m+\mathrm{Ball}\left(0,\sum\limits_{i=m}^\infty\eta_j\right)\\ &\subset K_m+\mathrm{Ball}\left(0,\frac{\varepsilon}{2}\right)\\ &\subset \bigcup\limits_{l=1}^{N_m}\mathrm{Ball}\left(x_{m,l},\frac{\varepsilon} {2}\right)+\mathrm{Ball}\left(0,\frac{\varepsilon}{2}\right)\\ &\subset \bigcup\limits_{l=1}^{N_m}\left(\mathrm{Ball}\left(x_{m,l},\frac{\varepsilon}{2}\right)+\mathrm{Ball}\left(0,\frac{\varepsilon}{2}\right)\right)\\ &\subset \bigcup\limits_{l=1}^{N_m}\mathrm{Ball}(x_{m,l},\varepsilon) \end{align} 
+ \bigcup\limits_{j=m+1}^\infty K_j\subset \bigcup\limits_{l=1}^{N_m}\mathrm{Ball}(x_{m,l},\varepsilon) 
+ \begin{align} \bigcup\limits_{j=1}^\infty K_j&=\left(\bigcup\limits_{j=1}^m K_j\right)\cup\left(\bigcup\limits_{j=m+1}^\infty K_j\right)\\ &\subset\left(\bigcup\limits_{j=1}^m \bigcup\limits_{l=1}^{N_j}\mathrm{Ball}\left(x_{j,l},\frac{\varepsilon}{2}\right)\right)\cup\left(\bigcup\limits_{l=1}^{N_m}\mathrm{Ball}(x_{m,l},\varepsilon)\right)\\ &\subset\left(\bigcup\limits_{j=1}^m \bigcup\limits_{l=1}^{N_j}\mathrm{Ball}(x_{j,l},\varepsilon)\right)\cup\left(\bigcup\limits_{l=1}^{N_m}\mathrm{Ball}(x_{m,l},\varepsilon)\right)\\ &=\bigcup\limits_{j=1}^m \bigcup\limits_{l=1}^{N_j}\mathrm{Ball}(x_{j,l},\varepsilon) \end{align} 

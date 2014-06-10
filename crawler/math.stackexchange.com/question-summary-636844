@@ -1,0 +1,99 @@
+f : X \rightarrow Y
+M_f = (X \times I) \sqcup Y / \sim
+I = [0,1]
+(x,0)_1
+f(x)_2
+Y
+M_f
+\{y_2\}
+y \in Y-f(X)
+\{(x,0)_1,f(x)_2\}
+x \in X
+C = \{\{y_2\}, \{(x,0)_1,f(x)_2\} \: | \: y \in Y - f(X), x \in X\}
+Y
+f
+M_f
+\{y_2\}
+\{(x,s)_1\}
+\{(x,0)_1,f(x)_2\}
+M_f \times I \rightarrow M_f
+\left(\{y_2\}, t\right) \mapsto \{y_2\} \:\:\: \forall y \in Y - f(X), t \in I,
+\left(\{(x,0)_1,f(x)_2\},t\right) \mapsto \{(x,0)_1,f(x)_2\} \:\:\: \forall x \in X, t \in I,
+\left(\{(x,s)_1\},t\right) \mapsto \{(x,(1-t)s)_1\} \:\:\: \forall x \in X, s \in (0,1], t \in [0,1),
+\left(\{(x,s)_1\},1\right) \mapsto \{(x,0)_1,f(x)_2\} \:\:\: \forall x \in X, s \in (0,1].
+M_f \rightarrow M_f
+t = 0
+t = 1
+M_f
+C
+t
+C
+t
+M_f \times I \rightarrow M_f
+U
+M_f
+U
+\{y_2\}
+y
+B \subseteq Y
+\{(x,0)_1,f(x)_2\}
+x
+A \subseteq X
+\{(x,s)_1\}
+(x,s)
+Q \subseteq X \times (0,1]
+B \cup f(A)
+Y
+A \times \{0\} \cup Q
+X \times I
+U
+\{\{y_2\} \: | \: y \in B\} \times I,
+\{y_2\}
+\{\{(x,0)_1,f(x)_2\} \: | \: x \in A\} \times I,
+\{\{(x,s)_1\} \: | \: x \in A, s \in (0,1]\} \times \{1\},
+\{(x,0)_1,f(x)_2\}
+\{(\{(x,s)_1\},t) \: | \: (x,s,t) \in \varphi^{-1}[Q]\}
+\{(x,s)_1\}
+\varphi : X \times (0,1] \times [0,1) \rightarrow X \times I : (x,s,t) \mapsto (x,(1-t)s)
+t
+A \times \{0\} \cup Q
+X \times I
+\varphi
+\varphi^{-1}[Q]
+X \times (0,1] \times [0,1)
+X \times [0,1] \times [0,1]
+\{(\{(x,s)_1\},t) \: | \: (x,s,t) \in \varphi^{-1}[Q]\}
+M_f \times I
+E \cup I
+E \subseteq M_f
+E
+B \cup f(A)
+Y
+A \times \{0\}
+X \times I
+Y
+M_f
+\bar i:Y\to M_f
+Y\hookrightarrow X\times I\sqcup Y\xrightarrow q M_f
+\bar i:Y\to\bar i(Y)
+y\in M_f
+\{y,(x,0)\mid f(x)=y\}
+H:M_f\times I\to M_f
+h_t=H(-,t)
+M_f
+h_t:M_f\to M_f
+g_t:Z:=Y\sqcup X\times I\to M_f
+\sim'
+Z\times I
+(a,t)\sim'(a',t')\iff a\sim a'\wedge t=t'
+G(a,t)=g_t(a)
+Z\times I
+\sim'
+g_t
+\sim
+H:Z\times I/\sim'\to M_f
+(Z\times I)/\sim'
+(Z/\sim)\times I
+(Z\times I)/\sim'\to(Z/\sim)\times I
+q\times\text{id}:Z\times I\to Z/\sim\times I
+I

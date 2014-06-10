@@ -1,0 +1,20 @@
+ \begin{array}{|c|c|} \hline {\rm AwardedCount} & {\rm CalculatedScore} & {\rm ExpectedScore} \\ \hline 1303591 & 10 & 10 \\ \hline 108023 & 186 & 125 \\ \hline other data & … & … \\ \hline 12114 & 339 & 250 \\ \hline 20 & 790 & 500 \\ \hline 1 & 1000 & 1000 \\ \hline \end{array} 
+ CalculatedScore = \Big(\big(1 - \log(AwardedCount; MaxAwardedCount)\big) \times 990 \Big) + 10 
+ Score = \frac{\frac{MaxAwardedCount}{AwardedCount}}{MaxAwardedCount} \times 1000 = \frac{1000}{AwardedCount} 
+\frac{1000}{108023} = 0.009257 \approx 1
+\frac{1000}{20} = 50
+\frac{1000}{2} = 500
+\frac{1000}{1} = 1000
+-\log(awarded/maxawarded)
+10-(990/14)\ln(awarded/1303591)
+f
+0
+1
+r:[0,1]\rightarrow [0,1]
+r(x)= 1-x
+[1,1000]
+1 + 999r
+f
+r(f)
+1 + 999r(f)
+r_{\alpha}(x) = 1 - x^\alpha

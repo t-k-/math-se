@@ -1,0 +1,16 @@
+2^{n/2}
+f(n) < 2^{n/d}+1
+ f(n) = 2^n - \sum_{d\mid n} \mu(\tfrac nd) 2^d = \sum_{\substack{d\mid n \\ d\ge2}} -\mu(d) 2^{n/d}. 
+ \sum_{\substack{d\mid n \\ d\ge C}} -\mu(d) 2^{n/d} \le \sum_{\substack{d\mid n \\ d\ge C}} 2^{n/d} \le \sum_{1\le k\le n/C} 2^k < 2^{n/C+1}. 
+p
+n
+f(n) = 2^{n/p}
+p<q
+n
+n
+q
+p
+ f(n) = -\mu(p)2^{n/p} + \sum_{\substack{d\mid n \\ d\ge q}} -\mu(d) 2^{n/d} < 2^{n/p} + 2^{n/q+1}. 
+f(n) \ge 2^{n/p}
+p
+n

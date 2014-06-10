@@ -1,0 +1,11 @@
+X
+Y
+\lambda
+\mu
+t>0
+P \{X \leq t < X+Y \}
+X+Y
+X+Y
+F_{X,Y}(x,y) = \lambda\mu e^{-\lambda x-\mu y}1_{\{x>0,y>0\}}
+P(X\leq t\leq X+Y) = E(1_{\{X\leq t\leq X+Y\}}) = E(1_{\{X\leq t\leq X+Y\}}|X)= E(E(1_{\{X\leq t\}}1_{\{t\leq X+Y\}}|X))=E(1_{\{X\leq t\}}E(1_{\{t\leq X+Y\}}|X))=\int^t_0(\int_{t-x}^\infty\mu e^{-\mu y}\text{d}y)\lambda e^{-\lambda x}\text{d}x
+f_{X,Y}(x,y)

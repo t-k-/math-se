@@ -1,0 +1,23 @@
+w
+\{x_i\}_{i=1}^N
+\{y_i\}_{i=1}^N
+\varphi(r) = r^2 \log(r)
+p_l
+c_i
+A_{ij} = \varphi(\|x_i-x_j\|)
+P_{i,l} = p_l(x_i)
+c_i
+b_l
+s(x) = \sum_{i=1}^n c_i \varphi(\|x-x_i\|) + \sum_{l=0}^{m} b_i p_l(x)
+\sum_{i=1}^N c_i p_l(x_i) = 0.
+\begin{pmatrix}A & P \\ P^T & 0 \end{pmatrix}  \begin{pmatrix}c \\ b \end{pmatrix} = \begin{pmatrix} y \\ 0  \end{pmatrix} 
+\{z_k\}_{k=1}^M
+M
+N
+z_k
+s(z_k) = \sum_{i=1}^N c_i \varphi(\|z_k-x_i\|) + \sum_{l=0}^m b_l p_l(z_k).
+z_k
+\{s(z_k)\}_{k=1}^M
+\hat{A}_{k,i} = \varphi(\|z_k-x_i\|)
+\hat{P}_{k,l} = p_l(z_k)
+\begin{pmatrix} \hat{A} & \hat{P} \end{pmatrix} \begin{pmatrix} c \\ b \end{pmatrix} = \begin{pmatrix} s(z_k). \end{pmatrix}

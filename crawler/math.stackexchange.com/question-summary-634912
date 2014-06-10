@@ -1,0 +1,9 @@
+\int_0^a r e^{-\frac{r^2}{h^2}} J_0\left(\dfrac{i k r}{z}\right) \, dr
+\int_0^are^{-\frac{r^2}{h^2}}J_0\left(\dfrac{ikr}{z}\right)dr
+=\int_0^are^{-\frac{r^2}{h^2}}I_0\left(\dfrac{kr}{z}\right)dr
+=\int_0^are^{-\frac{r^2}{h^2}}\sum\limits_{m=0}^\infty\dfrac{k^{2m}r^{2m}}{4^mz^{2m}(m!)^2}dr
+=\int_0^a\sum\limits_{m=0}^\infty\dfrac{k^{2m}r^{2m+1}e^{-\frac{r^2}{h^2}}}{4^mz^{2m}(m!)^2}dr
+=\int_0^a\sum\limits_{m=0}^\infty\dfrac{k^{2m}r^{2m}e^{-\frac{r^2}{h^2}}}{2^{2m+1}z^{2m}(m!)^2}d(r^2)
+=\int_0^{a^2}\sum\limits_{m=0}^\infty\dfrac{k^{2m}r^me^{-\frac{r}{h^2}}}{2^{2m+1}z^{2m}(m!)^2}dr
+=\sum\limits_{m=0}^\infty\sum\limits_{n=0}^m\dfrac{k^{2m}h^{2m-2n+2}a^{2n}e^{-\frac{a^2}{h^2}}}{2^{2m+1}z^{2m}m!n!}-\sum\limits_{m=0}^\infty\dfrac{k^{2m}h^{2m+2}}{2^{2m+1}z^{2m}m!}
+=\sum\limits_{m=0}^\infty\sum\limits_{n=0}^m\dfrac{k^{2m}h^{2m-2n+2}a^{2n}e^{-\frac{a^2}{h^2}}}{2^{2m+1}z^{2m}m!n!}-\dfrac{h^2e^\frac{k^2h^2}{4z^2}}{2}

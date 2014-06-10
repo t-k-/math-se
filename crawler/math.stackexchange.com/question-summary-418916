@@ -1,0 +1,5 @@
+\frac{\partial u}{\partial t}=\frac{\partial ^{2} u}{\partial x^{2}}+(1-u^{2})u+f(x,t) , x \in [-1,1], t>0
+f(x,t)=\frac{25}{4}\pi^{2}\epsilon^{2}cos(t)cos(5\pi(x-1)/2)-sin(t)cos(5\pi(x-1)/2)-[1-cos^{2}(t)cos^{2}(5\pi(x-1)/2)]cos(t)cos(5\pi(x-1)/2)
+\frac{3u_{i}^{n+1}-4u_{i}^{n}+u_{i}^{n-1}}{2 \Delta t}= \frac{u_{i+1}^{n+1}-2u_{i}^{n+1}+u_{i-1}^{n+1}}{ \Delta x^{2}}+(1-(u_{i}^{n+1})^{2})u_{i}^{n+1}+f(x_{i},t_{n+1})
+\omega=\Delta t/ \Delta x^{2}
+-\omega(u_{i+1}^{n+1}+u_{i-1}^{n+1})+(\frac{3}{2}+2\omega-\Delta t+ \Delta t(u_{i}^{n+1})^{2})u_{i}^{n+1}=2u_{i}^{n}-\frac{1}{2}u_{i}^{n-1}+\Delta tf_{i}^{n+1}

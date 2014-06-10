@@ -1,0 +1,46 @@
+ \begin{align} a_{n+1}&=(r-2)a_n+(r-1)b_n\;,\\ b_{n+1}&=a_n\;, \end{align} 
+ a_n=(-1)^n(r-1)+(r-1)^n\;. 
+ \lambda^2-(r-2)\lambda-(r-1)=0\;, 
+ a_n=c_1(\lambda_1)^n+c_2(\lambda_2)^n\;, 
+A
+\lambda_1
+\lambda_2
+A
+A
+A=BDB^{-1}
+D
+\lambda_1
+\lambda_2
+B
+\lambda_1
+\lambda_2
+B
+B^{-1}
+A
+a_n
+b_n
+\lambda_1^n
+\lambda_2^n
+n
+c_1
+c_2
+\begin{bmatrix} a_{n+1} \\ b_{n+1} \end{bmatrix} = \begin{bmatrix} r-2 & r-1 \\ 1 & 0 \end{bmatrix} \begin{bmatrix} a_n \\ b_n \end{bmatrix}.
+\begin{bmatrix} a_n \\ b_n \end{bmatrix} = B \begin{bmatrix} \lambda_1^n & 0 \\ 0 & \lambda_2^n \end{bmatrix} B^{-1} \begin{bmatrix} a_0 \\ b_0 \end{bmatrix}.
+a_{n+1}=(r-2)a_{n}+(r-1)b_{n}
+b_{n+1}=a_{n}
+a_{n+1}=(r-2)a_{n}+(r-1)a_{n-1}
+a_{n+1}-(r-2)a_{n}-(r-1)a_{n-1}=0
+\lambda^2-(r-2)\lambda-(r-1)=0
+a_{n+1}+k_{1}a_{n}+k_{2}a_{n-1}=0
+\lambda^2+k_{1}\lambda+k_{2}=0
+\lambda_{1}
+\lambda_{2}
+-k_{1}=\lambda_{1}+\lambda_{2}
+k_{2}=\lambda_{1}\lambda_{2}
+a_{n+1}-(\lambda_{1}+\lambda_{2})a_{n}+\lambda_{1}\lambda_{2}a_{n-1}=0
+\begin{align} a_{n+1}-\lambda_{1}a_{n}&=\lambda_{2}(a_{n}-\lambda_{1}a_{n-1})\\ a_{n}-\lambda_{1}a_{n-1}&=\lambda_{2}(a_{n-1}-\lambda_{1}a_{n-2})\\ &\vdots\\ a_{3}-\lambda_{1}a_{2}&=\lambda_{2}(a_{2}-\lambda_{1}a_{1}) \end{align}
+a_{n+1}-\lambda_{1}a_{n}=\lambda_{2}^{n-1}(a_{2}-\lambda_{1}a_{1})
+a_{n+1}-\lambda_{1}a_{n}=d_{1}\lambda_{2}^{n}
+a_{n+1}-\lambda_{2}a_{n}=d_{2}\lambda_{1}^{n}
+a_{n}
+a_n=c_{1}\lambda_{1}^{n}+c_{2}\lambda_{2}^{n}

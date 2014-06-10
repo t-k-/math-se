@@ -1,0 +1,41 @@
+n=2
+n=3
+\psi^{(k)}(\cdot)
+(\gamma+\psi(1-z))^{n}
+(\gamma\; \text{being the Euler–Mascheroni constant , and}\;\psi(\cdot )\;\text{being the digamma function })
+\left(\gamma+\psi(1-z) \right )^{2}=-\frac{\pi^{2}}{6}+\psi^{(1)}(1-z)+2\sum_{n=2}^{\infty}\frac{(\psi(n)+\gamma)z}{n(z-n)}
+\left(\gamma+\psi(1-z) \right )^{3}=-2\zeta(3)+\frac{\psi^{(2)}(1-z)}{2}+3\sum_{n=2}^{\infty}\frac{\psi(n)+\gamma}{(z-n)^{2}}
++3\sum_{n=1}^{\infty}\left(\psi^{(1)}(n)+(\psi(n)+\gamma)^{2}-\frac{\pi^{2}}{3} \right )\frac{z}{n(z-n)}
+(\gamma+\psi(1-z))^{n}
+\Re(s)<1
+c
+s
+I_{1}=[a-iT,a+iT]
+I_{2}=[a+iT,-c+iT]
+I_{3}=[-c+iT,-c-iT]
+I_{4}=[-c-iT,a-iT]
+T\rightarrow \infty
+\;\;c\rightarrow \infty
+I_{2}\cup I_{2}\cup I_{3}
+ being the kth harmonic number. The numbers 
+ are given by: $$a_{m,k}=\lim_{z\rightarrow k}\left[(-1)^{m}\psi^{(m)}(1-z)-\frac{(-1)^{m}m!}{(z-k)^{m+1}}\right]$$ $$=\frac{(-1)^{m+1}m!}{k^{m+1}}+(-1)^{m}\left(\psi^{(m)}(1)+m!H_{k}^{(m+1)}\right)$$ Where 
+ is the generalized harmonic number of order 
+ in power 
+. Using this representation, we have: $$(z-k)^{n}\left(\psi(1-z)+\gamma \right )^{n}=\left(1+H_{k-1}(z-k)+\sum_{m=2}^{\infty}\frac{ma_{m-1,k}}{m!}(z-k)^{m} \right )^{n}$$ $$=n!\left(\sum_{m=n}^{\infty}B_{m,n}(k)\frac{(z-k)^{(m-n)}}{m!} \right )$$ 
+ being the incomplete Bell polynomials in 1, 
+, and the numbers 
+\psi(1)+\gamma=0
+\left(\psi(1-s)+\gamma \right )^{n}=\frac{1}{2\pi i}\oint_{c}\left(\psi(1-z)+\gamma \right )^{n}\left[\frac{1}{z-s}-\frac{1}{z} \right ]
+\left(\psi(1-s)+\gamma \right )^{n}=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\left(\psi(1-z)+\gamma \right )^{n}\left[\frac{1}{z-s}-\frac{1}{z} \right ]
+\left(\psi(1-s)+\gamma \right )^{n}=-\sum_{k=1}^{\infty} \text{Res}_{z=k}\left[\left(\psi(1-z)+\gamma \right )^{n}\left[\frac{1}{z-s}-\frac{1}{z} \right ]\right]
+=-\frac{1}{(n-1)!}\sum_{k=1}^{\infty}\lim_{z\rightarrow k}\frac{d^{n-1}}{dz^{n-1}}\left[(z-k)^{n}\left(\psi(1-z)+\gamma \right )^{n}\left[\frac{1}{z-s}-\frac{1}{z} \right ]\right]
+\gamma+\psi(1-z)=\frac{1}{z-k}+H_{k-1}+\sum_{m=1}^{\infty}\frac{a_{m,k}}{m!}(z-k)^{m}\;\;\;\;\left(\left | z-k \right |<1\right)
+a_{m,k}=\lim_{z\rightarrow k}\left[(-1)^{m}\psi^{(m)}(1-z)-\frac{(-1)^{m}m!}{(z-k)^{m+1}}\right]
+=\frac{(-1)^{m+1}m!}{k^{m+1}}+(-1)^{m}\left(\psi^{(m)}(1)+m!H_{k}^{(m+1)}\right)
+(z-k)^{n}\left(\psi(1-z)+\gamma \right )^{n}=\left(1+H_{k-1}(z-k)+\sum_{m=2}^{\infty}\frac{ma_{m-1,k}}{m!}(z-k)^{m} \right )^{n}
+=n!\left(\sum_{m=n}^{\infty}B_{m,n}(k)\frac{(z-k)^{(m-n)}}{m!} \right )
+\left(\psi(1-s)+\gamma \right )^{n}=-n\sum_{k=1}^{\infty}\lim_{z\rightarrow k}\frac{d^{n-1}}{dz^{n-1}}\left[\left(\sum_{m=n}^{\infty}B_{m,n}(k)\frac{(z-k)^{(m-n)}}{m!} \right )\left(\frac{1}{z-s}-\frac{1}{z}\right)\right]
+\frac{d^{n-1}}{dz^{n-1}}\left[\left(\sum_{m=n}^{\infty}B_{m,n}(k)\frac{(z-k)^{(m-n)}}{m!} \right )\left(\frac{1}{z-s}-\frac{1}{z}\right)\right]_{z\rightarrow k}
+=\sum_{i=0}^{n-1}\binom{n-1}{i}\frac{d^{i}}{dz^{i}}\left(\sum_{m=n}^{\infty}B_{m,n}(k)\frac{(z-k)^{(m-n)}}{m!} \right )\frac{d^{n-i-1}}{dz^{n-i-1}}\left(\frac{1}{z-s}-\frac{1}{z}\right)\left.\begin{matrix} \\  \\  \end{matrix}\right|_{z\rightarrow  k}
+=\sum_{i=0}^{n-1}\frac{(n-1)!}{(n+i)!}(-1)^{n-i-1} B_{n+i,n}(k)\left(\frac{1}{(k-s)^{n-i}}-\frac{1}{k^{n-i}}\right)
+\left(\psi(1-s)+\gamma \right )^{n}=\sum_{i=0}^{n-1}\frac{(-1)^{n-i}n!}{(n+i)!}\sum_{k=1}^{\infty} B_{n+i,n}(k)\left(\frac{1}{(k-s)^{n-i}}-\frac{1}{k^{n-i}}\right)

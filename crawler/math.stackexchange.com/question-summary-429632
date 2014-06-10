@@ -1,0 +1,21 @@
+I = \int_{-\infty}^{\infty} e^{-x^2} \ dx
+I^2 = \left(\int_{-\infty}^{\infty} e^{-x^2} \ dx \right) \left(\int_{-\infty}^{\infty} e^{-y^{2}} \ dy \right)
+\sqrt{\pi}
+I^{3}, I^{4}, \dots, I^{n}
+x = (x_1,\ldots,x_n)
+|x| = \sqrt{x_1^2 + \cdots + x_n^2}
+ I_n = \prod_{i=1}^n \int^{\infty}_{-\infty} e^{-x_i^2}\,dx_i = \int_{\mathbb{R}^n} e^{-|x|^2}\,dx, 
+e^{-|x|^2} = e^{-r^2}
+\partial B(0,r)
+(n-1)
+r
+\omega_n
+(n-1)
+n
+ I_n  = \int_0^\infty\left\{\int_{\partial B(0,r)} e^{-|x|^2}\,dS\right\}\,dr. 
+ I_n = \int_0^\infty e^{-r^2}\left\{\int_{\partial B(0,r)} 1\,dS\right\}\,dr. 
+ \int_{\partial B(0,r)} 1\,dS = |\partial B(0,r)|= \omega_n r^{n-1}, 
+ \omega_n = \frac{n\pi^{n/2}}{\Gamma\left(1+\frac{n}{2}\right)}, 
+  I_n = \omega_n\int_0^\infty e^{-r^2}r^{n-1}\,dr = \frac{1}{2}\omega_n \Gamma\left(\frac{n}{2}\right) . 
+ \Gamma\left(1+\frac{n}{2}\right) = \frac{n}{2}\Gamma\left(\frac{n}{2}\right). 
+ I_n = \pi^{n/2}. 

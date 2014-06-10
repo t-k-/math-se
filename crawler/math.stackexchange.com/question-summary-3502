@@ -1,0 +1,20 @@
+ S = a -\frac{2}{3}a^{3} + \frac{2 \cdot 4}{3 \cdot 5} a^{5} - \frac{ 2 \cdot 4 \cdot 6}{ 3 \cdot 5 \cdot 7}a^{7} + \cdots 
+\rm\;\Rightarrow\; 1 = (a^2+1) \: S' + a \: S \; = \; f \: (f \; S)' \;\;
+\rm\;\; f = (a^2+1)^{1/2}
+\rm\displaystyle\;\Rightarrow\; S = f^{-1} \int \; f^{-1} = \frac{\sinh^{-1}(a)}{(a^2+1)^{1/2}}
+\displaystyle \int_{0}^{\frac{\pi}{2}}{\sin^{2k+1}(x) dx} = \frac{2 \cdot 4 \cdot 6 \cdots 2k}{3\cdot 5 \cdots (2k+1)}
+\displaystyle S(a) = \sum_{k=0}^{\infty} (-1)^k a^{2k+1} \int_{0}^{\frac{\pi}{2}}{\sin^{2k+1}(x) dx}
+\displaystyle S(a) =   \int_{0}^{\frac{\pi}{2}}{\sum_{k=0}^{\infty}{(-1)^{k}(a\sin x)^{2k+1}} dx}
+\displaystyle x - x^3 + x^5 - \cdots = x(1 - x^2 + x^4 - \cdots)  = \frac{x}{1+x^2}
+\displaystyle S(a) =   \int_{0}^{\frac{\pi}{2}}{\frac{a\sin x}{1 + (a\sin x)^2}}dx
+\displaystyle t = a \cos x
+\displaystyle \int_{0}^{a}{\frac{1}{1+a^2 - t^2}}dt = \frac{1}{2\sqrt{a^2+1}}\ln \left(\frac{\sqrt{a^2+1}+a}{\sqrt{a^2+1}-a} \right)
+\displaystyle \ln \left(\frac{\sqrt{a^2+1}+a}{\sqrt{a^2+1}-a}\right) = \ln \left(\frac{\left(\sqrt{a^2+1}+a \right)^2}{\left(\sqrt{a^2+1}-a \right)\left(\sqrt{a^2+1}+a \right)}\right) = 2\ln \left(\sqrt{a^2+1}+a \right)
+\displaystyle S(a) = \frac{1}{\sqrt{a^2+1}}\ln \left(\sqrt{a^2+1}+a \right) = \frac{\sinh^{-1}(a)}{\sqrt{a^2+1}}
+\sum_{j=0}^\infty {(-1)^j \frac{(2j)!!}{(2j+1)!!} a^{2j+1}}
+(2j)!!=2\cdot 4\cdot 6\cdots (2j)
+(2j+1)!!=3\cdot 5\cdot 7\cdots (2j+1)
+a\sum_{j=0}^\infty {\frac{(2j)!!}{(2j+1)!!}\left(-a^2\right)^j}
+(2j)!!=2^j j!=2^j (1)_j
+(2j+1)!!=2^j \left(\frac32\right)_j
+(a)_j

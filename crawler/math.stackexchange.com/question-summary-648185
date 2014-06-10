@@ -1,0 +1,20 @@
+X
+Y
+ X \sim \mathrm{Unif}(0,1) \text{ and } Y \sim \mathrm{Unif}(0,1) \implies (X+Y \bmod 1) \sim \mathrm{Unif}(0,1). 
+X
+Y
+f(x,y)=1
+0\le x<1
+0\le y<1
+0\le t<1
+X+Y
+1
+f(x,y)
+x+y=t
+x+y=1
+x+y=1+t
+X+Y\ {\rm mod}\ 1\le t\quad\hbox{if and only if}\quad X+Y\le t\ \hbox{or}\ 1\le X+Y\le1+t\ .
+P(Z\leq z) = P(\{X+Y \leq z\} \cup \{1<X+Y\leq 1+z\})
+\int^z_{y=z-x}\int^z_{x=0}1\text{ d}x\text{d}y + \int_{y=1-z}^{1+z-x}\int_{x=z}^11\text{ d}x\text{d}y
+y
+x

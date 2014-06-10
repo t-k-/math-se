@@ -1,0 +1,19 @@
+ y'(t)=A y(t)
+y'(t)=\begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix} y(t)
+2x2
+\tag 1 e^{At} = \left[I+ \sum_{k=1}^\infty \dfrac{(A-\lambda I)^k}{k!}t^k\right]e^{\lambda t}
+A = \begin{bmatrix} 3 & -4 \\ 1 & -1 \end{bmatrix}
+\det [A-\lambda I] = \det \begin{bmatrix} 3-\lambda & -4 \\ 1 & -1-\lambda \end{bmatrix} = 0 \rightarrow \lambda^2-2 \lambda+1 = 0 \rightarrow \lambda_{1,2} = 1,1
+(1)
+e^{At} = \left[I + \dfrac{(A-\lambda I)^0}{1!}t^1 \right]e^{\lambda t} = \left[\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} + \begin{bmatrix} 2 & -4 \\ 1 & -2 \end{bmatrix}t\right] = e^{t}\begin{bmatrix} 1+2t & -4t \\ t & 1-2t \end{bmatrix} 
+e^{At}=\mathcal{L}^{-1}\left((sI-A)^{-1}\right)= \mathcal{L}^{-1}\left(\begin{bmatrix}s-3 & 4 \\ -1 & s+1\end{bmatrix}^{-1}\right) = e^{t}\begin{bmatrix}1+2 t & -4 t \\ t & 1-2 t\end{bmatrix}
+\vdots
+A = \begin{bmatrix} 3 & -4 \\ 1 & -1 \end{bmatrix} = PJP^{-1} = \begin{bmatrix} 2 & 1 \\ 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} 1 & 1 \\ 0 & 1\end{bmatrix} \cdot \begin{bmatrix} 0 & 1 \\1 & -2 \end{bmatrix}
+e^{At} = e^{PJP^{-1}t} = Pe^{Jt}P^{-1} = \begin{bmatrix} 2 & 1 \\ 1 & 0 \end{bmatrix} \cdot e^{\begin{bmatrix} 1 & 1 \\ 0 & 1\end{bmatrix}t} \cdot \begin{bmatrix} 0 & 1 \\1 & -2 \end{bmatrix} = \begin{bmatrix} 2 & 1 \\ 1 & 0 \end{bmatrix} \cdot \begin{bmatrix} e^t & te^t \\ 0 & e^t\end{bmatrix} \cdot \begin{bmatrix} 0 & 1 \\1 & -2 \end{bmatrix} = e^{t}\begin{bmatrix}1+2 t & -4 t \\ t & 1-2 t\end{bmatrix}
+\phi(t, t_0) = \phi(t) \cdot \phi^{-1}(t_0)
+\mathcal{L}(e^{tA})(s) = (sI-A)^{-1}.
+\mathcal{L}(e^{tA})(s) = \begin{bmatrix}s-3 & 4 \\ -1 & s+1\end{bmatrix}^{-1} = \frac{1}{(s-1)^2}\begin{bmatrix}s+1 & -4 \\ 1 & s-3\end{bmatrix},
+ e^{tA} = \begin{bmatrix}(2t+1)e^t & -4te^t \\ te^t & -(2t-1)e^t\end{bmatrix}. 
+t>0
+e^{tA}
+t

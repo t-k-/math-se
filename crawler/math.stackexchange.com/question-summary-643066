@@ -1,0 +1,6 @@
+X
+(\Omega,\mathcal{F}, \mathbb{P})
+\epsilon>0
+\mathbb{P}[X\geq t]=\mathbb{P}\left[\bigcup_{n=1}^\infty \{X\geq nt\}\right]
+ E[X]=\int_\Omega \int_0^\infty \chi_{t<X}\,dt\,d\mathbb{P}=\int_0^\infty \mathbb{P}[ X\geq t]\,dt, 
+ E[X]\leq \sum_{n=0}^\infty \epsilon\mathbb{P}[X\geq n\epsilon]\leq E[X]+\epsilon. 

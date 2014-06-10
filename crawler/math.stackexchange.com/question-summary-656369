@@ -1,0 +1,44 @@
+X
+d
+X
+d
+\infty
+X
+d
+X = \sum_1^d{Z_i^2}
+X
+E(X)
+Var(X)
+E(X)=E(\sum_1^d{Z_i^2})=d
+Var(X)=Var(\sum_1^d{Z_i^2})=2d
+ \frac{X-d}{\sqrt{2d}} = \frac{\sum_1^d{Z_i^2}-d}{\sqrt{2d}} = \frac{\sum_1^d{(Z_i^2-1)}}{\sqrt{2d}}
+{(Z_i^2-1)}
+X \sim \chi ^2 (d)
+X
+(1-2t)^{-d/2}
+Y
+Y=\frac{X-d}{\sqrt{2d}}
+X
+Y
+M_Y =  E \left\{ \exp \left[ t \left( \frac{X-d}{\sqrt{2d}} \right) \right] \right\}=e^{-td/\sqrt{2d}} E \left( e^{tX/\sqrt{2d}} \right)= \exp \left[ - \left(t \sqrt{\frac{2}{d}} \right) \frac{d}{2} \right] \left( 1-2\frac{t}{\sqrt{2d}}\right)^{-d/2} \quad,t<\frac{\sqrt{2d}}{2} 
+M_Y = \left( e^{t\sqrt{2/d}} -t \sqrt{\frac{2}{d}} e^{t\sqrt{2/d}} \right)^{-d/2}, t<\sqrt{\frac{d}{2}}
+e^{t\sqrt{2/d}}
+0
+e^{t\sqrt{2/d}}=1+t\sqrt{\frac{2}{d}}+\frac{1}{2} \left( t \sqrt{\frac{2}{d}} \right)^2+\frac{e^{\xi}}{6} \left( t \sqrt{\frac{2}{d}} \right)^3 
+\xi
+0
+t\sqrt{2/d}
+M_Y
+M_Y=\left(1-\frac{t^2}{d}+\frac{\psi}{d} \right)^{-d/2}
+\psi= \frac{\sqrt{2}t^3 e^{\xi}}{3\sqrt{d}}-\frac{\sqrt{2}t^3}{\sqrt{d}}-\frac{2t^{4}e^{\xi}}{3d}
+ d \to \infty 
+d \to \infty
+\xi \to 0
+\psi \to 0
+ \lim_{d \to \infty}M_Y= \lim_{d \to \infty} \left(1-\frac{t^2}{d}+\frac{\psi}{d} \right)^{-d/2}=\lim_{d \to \infty} \left(1-\frac{t^2}{d} \right)^{-d/2}=e^{t^2 /2}
+\blacksquare
+Z_i^2 \equiv Y_i
+\sigma_y = \sqrt2
+E(Y) \equiv \mu_y =1
+\operatorname{Var}(Y_i) \equiv \sigma^2_y= E(Z_i^4) - \Big[E(Z_i^2)\Big]^2 = 3 - 1 = 2
+\frac{X-d}{\sqrt{2d}} =  \frac 1{\sqrt d}\sum_1^d\frac {Y_i-\mu_y}{\sigma_y}

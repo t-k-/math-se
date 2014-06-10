@@ -1,0 +1,31 @@
+\{X_{n,k} : n,k \geq 1\}
+\mathbb{Z}_+
+\sigma^2 >  0
+\mu > 0
+(Z_n)_{n\geq 0}
+Z_0 =  1
+Z_n = \sum_{k=1}^{Z_{n-1}} X_{n,k}.
+M
+M_n = \mu^{-n}Z_n
+(\mathcal{F}_n)
+\mathcal{F}_n = \sigma(Z_0, \dots,  Z_n)
+M_n \in \mathcal{F}_n
+Z_n \in \mathcal{F}_n
+M_n \in \mathcal{L}^1
+\mu^{-n}Z_n \overset{a.s.}{=} \mu^{-(n+1)}\mathbb{E}[Z_{n+1} | \mathcal{F}_n] ?
+\mathbb{E}|M_n| = \mathbb{E}[M_n] = \mu^{-n}\sum_{k=1}^{Z_{n-1}}\mathbb{E}[X_{n,k}] = \dots ?
+\mathbb{E}[M_{n+1} | \mathcal{F}_n] = \mu^{-(n+1)} \mathbb{E}[\sum_{k=1}^{Z_n} X_{n+1,k} | \mathcal{F}_n] = \dots ?
+Z_{n}
+\mathbb{E}[Z_n] = \mu\mathbb{E}[Z_{n-1}] = \mu^n
+\mathbb{E}[Z_{n+1}|\mathcal{F}_n] = \mu Z_{n}
+\mathbb{E}[Z_{n}] = \mathbb{E}[\sum_{k=1}^{Z_{n-1}} X_{n,k}] = \sum_{j=1}^\infty\mathbb{P}(Z_{n-1} = j)\sum_{k=0}^{j}\mathbb{E}[X_{n,k}] = \mu\sum_{j=1}^\infty\mathbb{P}(Z_{n-1} = j)j = \mu\mathbb{E}[Z_{n-1}] = \mu^n\mathbb{E}[Z_0] = \mu^n.
+\mathbb{E}[Z_{n+1}|\mathcal{F}_n] = \mathbb{E}[\sum_{k=1}^{Z_{n}} X_{n+1,k} | \mathcal{F}_n] = \sum_{j=1}^\infty \mathbb{P}[Z_n = j]\sum_{k=0}^j \mathbb{E}[X_{n+1, k} | \mathcal{F}_n] = \overset{?}{\cdots} = \mu Z_{n}
+E[Z_{n+1}]=E[X_{1,n+1}+X_{2,n+1}+\ldots+X_{Z_{n},n+1}]
+=\sum_{k=0}^\infty P(Z_n=k)E[X_{1,n+1}+X_{2,n+1}+\ldots+X_{n+1}]
+=\sum_0^\infty P(Z_n=k)k\mu=\mu\sum_{k=0}^\infty P(Z_n=k)k=\mu E[Z_n]
+E[Z_{n+1}|F_n]=E[X_{1,n+1}+X_{2,n+1}+\ldots+X_{Z_{n},n+1}|F_n]
+X_{1,n+1}, X_{2,n+1},\ldots
+F_n
+=E[X_{1,n+1}]E[Z_{n}|F_n]=\mu Z_n
+Z_n
+F_n

@@ -1,0 +1,19 @@
+(M_t)_{t\geq 0}
+M_0=0
+\{\mathcal{F}_t\}
+<M>_t = t
+t_0>0
+N_t=M_{t_0+t}-M_{t_0}
+<N>_t=t
+<N>_t=<M_{t_0+t}-M_{t_0},M_{t_0+t}-M_{t_0}>=<M_{t_0+t}>+<M_{t_0}>-2<M_{t_0},M_{t_0+t}>
+E[(M_S-M_T)^2|\mathcal{F_S}]=E[M_S^2-M_T^2|\mathcal{F_S}]
+(N_t^2-t)_{t\geq 0}
+(\mathcal{F}_t')_{t\geq 0}
+\mathcal{F}_t'=\mathcal{F}_{t+t_0}
+(M_t^2-t)_{t\geq 0}
+(M_t)_{t\geq 0}
+(\mathcal{F}_t)_{t\geq 0}
+(N_t^2-t)
+(\mathcal{F}_t')_{t\geq 0}
+0\leq s\leq t
+ \begin{align} {\rm E}[N_t^2-t\mid\mathcal{F}_s']&={\rm E}[M_{t+t_0}^2+M_{t_0}^2-2M_{t+t_0}M_{t_0}-t\mid\mathcal{F}_{s+t_0}]\\ &={\rm E}[M_{t+t_0}^2-(t+t_0)+M_{t_0}^2-2M_{t+t_0}M_{t_0}-t_0\mid\mathcal{F}_{s+t_0}]\\ &={\rm E}[M_{t+t_0}^2-(t+t_0)\mid\mathcal{F}_{s+t_0}]+M_{t_0}^2-2M_{t_0}{\rm E}[M_{t+t_0}\mid\mathcal{F}_{s+t_0}]-t_0\\ &=M_{s+t_0}^2-(s+t_0)+M_{t_0}^2-2M_{t_0}M_{s+t_0}-t_0\\ &=(M_{s+t_0}-M_{t_0})^2-s\\ &=N_s^2-s. \end{align} 

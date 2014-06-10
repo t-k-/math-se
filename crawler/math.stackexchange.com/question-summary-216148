@@ -1,0 +1,24 @@
+\Omega \subset R^3 \backslash 
+0
+,u:\Omega \rightarrow R
+\Omega ' := \{ x \in R^3:(\frac{x_1}{|x|^2},\frac{x_2}{|x|^2},\frac{x_3}{|x|^2})\in \Omega\}
+v(x_1,x_2,x_3):=\frac{1}{|x|}u(\frac{x_1}{|x|^2},\frac{x_2}{|x|^2},\frac{x_3}{|x|^2})
+x=(x_1,x_2,x_3)\\\mu = \frac{x}{|x|}=(\frac{x_1}{|x|},\frac{x_2}{|x|},\frac{x_3}{|x|})\\\bar{\mu}=\frac{\mu}{|x|}=(\frac{x_1}{|x|^2},\frac{x_2}{|x|^2},\frac{x_3}{|x|^2})\\\frac{d\bar{\mu}}{d\mu}=\frac{1}{|x|}\\\bar{u}=u(\bar{\mu})\\\frac{\partial \bar{u}}{\partial \mu}=\frac{1}{|x|}*\frac{\partial\bar{u}}{\partial\bar{\mu}}\\v(x)=\frac{\bar{u}}{|x|}
+\Omega ' \subset \Omega
+\Delta \bar{u} = 0
+\Omega '' \subset \Omega '
+\Omega '' := \{ x\in R^3:|x| \gt \epsilon : \epsilon > 0\}
+\int_{\Omega ''}\{v\Delta \bar{u}-\bar{u}\Delta v\}dv=\int_{\partial\Omega ''}\{v\frac{\partial \bar{u}}{\partial \mu} - \bar{u}\frac{\partial v}{\partial \mu}\}da
+\int_{\Omega ''}\{\frac{\bar{u}}{|x|}\Delta \bar{u}-\bar{u}\Delta \frac{\bar{u}}{|x|}\}dv=\int_{\partial\Omega ''}\{\frac{\bar{u}}{|x|^2}\frac{\partial \bar{u}}{\partial \bar{\mu}} - \frac{\bar{u}}{|x|^2}\frac{\partial \bar{u}}{\partial \bar{\mu}}\}da
+-\int_{\Omega ''} \bar{u}\Delta\frac{\bar{u}}{|x|}dv = 0 
+\Delta\frac{\bar{u}}{|x|}=0: x \in \Omega ''
+u
+\Delta v = 0
+u\ne 0
+\Delta v = 0
+\Omega ' = lim_{\epsilon \rightarrow 0} \Omega '' : x\in R^3 : \frac{x}{|x|^2} \gt \epsilon \gt 0
+\Delta v(x)=0\forall x \in \Omega'
+\epsilon
+\delta
+\{0\}
+\Omega ''

@@ -1,0 +1,27 @@
+x
+y
+x_1
+x_2
+\begin{cases} \dot x_1 = 8x_1+18x_2\\ \dot x_2 = -3x_1 -7x_2 \end{cases}
+\dot {\vec x} = \mathbf A \vec x
+\mathbf A
+\underbrace{\pmatrix{\dot x_1 \\ \dot x_2}}_{\large{\dot {\vec x}}} = \underbrace{\pmatrix{8 & 18 \\ -3 & -7}}_{\large{\mathbf A}}\underbrace{\pmatrix{x_1\\x_2}}_{\large{\vec x}}
+r_1 = 2
+r_2 = -1
+\vec \xi_1 =\pmatrix{3 \\ -1}
+\vec \xi_2 =\pmatrix{2 \\ -1}
+\vec{x} = c_1e^{r_1t}\vec{\xi_1}+c_2e^{r_2t}\vec{\xi_2}
+\vec{x} = c_1e^{2t}\pmatrix{3 \\ -1}+c_2e^{-t}\pmatrix{2 \\ -1}
+x_1 = 3c_1e^{2t} + 2c_2e^{-t}\\ x_2 = -c_1e^{2t} -c_2e^{-t}
+\left(    \begin{array}{cc}       \dot{x} \\      \dot{y}    \end{array}\right)=\left(    \begin{array}{cc}      8 & 18 \\      -3 & -7    \end{array} \right)\cdot \left(    \begin{array}{cc}       x \\      y    \end{array}\right),
+\dot{X}=M\cdot X,
+X=\left(    \begin{array}{cc}       x \\      y    \end{array}\right),\,\dot{X}=\left(    \begin{array}{cc}       \dot{x} \\      \dot{y}    \end{array}\right).
+M
+D
+U=S^{-1}\cdot X
+M=S\cdot D \cdot S^{-1},
+\dot{X}=S\cdot D \cdot S^{-1}\cdot X,
+S^{-1}\cdot\dot{X}=D \cdot S^{-1}\cdot X,
+\dot{U}=D \cdot U,
+\dot{U_1}=D_1U_1.
+\dot{U_2}=D_2U_2.

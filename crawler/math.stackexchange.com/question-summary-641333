@@ -1,0 +1,99 @@
+n,j,L
+\sum_{k=1}^{\left[\frac{n-L}{j}\right]}(-1)^{(n-kj)\pmod L}
+x \text{ mod L}=x-\text{L}\lfloor \frac{x}{L}\rfloor
+S
+n,j,L
+S_n(j,L)=\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{(n-kj)\pmod L}=\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{(n-kj)-\text{L}\lfloor \frac{(n-kj)}{L}\rfloor}
+=\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{n+kj+\text{L}\lfloor \frac{n-kj}{L}\rfloor}=(-1)^n\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{kj+\text{L}\lfloor \frac{n-kj}{L}\rfloor}
+1
+j
+L
+\implies
+S_n(j,L)=(-1)^n\lfloor{\frac{n-L}{j}}\rfloor
+2
+j
+L
+\implies
+S_n(j,L)=(-1)^n\frac{(-1)^{\lfloor{\frac{n-L}{j}}\rfloor}-1}{2}
+3
+j
+L
+\implies
+S_n(j,L)=(-1)^n\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{\lfloor \frac{n-kj}{L}\rfloor}
+4
+j
+L
+\implies
+S_n(j,L)=(-1)^n\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{k+\lfloor \frac{n-kj}{L}\rfloor}
+\lfloor \frac{n-(\lfloor{\frac{n-L}{j}}\rfloor-k)j}{L}\rfloor=\lfloor \frac{n-(\frac{n-L}{j}-k)j}{L}\rfloor=\lfloor \frac{n-(n-L-kj)}{L}\rfloor=1+\lfloor \frac{kj}{L}\rfloor
+3
+4
+\text{Case }3: (-1)^n\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{\lfloor \frac{n-(\lfloor{\frac{n-L}{j}}\rfloor-k)j}{L}\rfloor}=(-1)^{n-1}\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{\lfloor \frac{kj}{L}\rfloor}
+\text{Case }4: (-1)^n\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{\lfloor{\frac{n-L}{j}}\rfloor-k+\lfloor \frac{n-(\lfloor{\frac{n-L}{j}}\rfloor-k)j}{L}\rfloor}=(-1)^{\lfloor{\frac{n-L}{j}}\rfloor+n-1}\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{k+\lfloor \frac{kj}{L}\rfloor}
+L
+\lfloor{\frac{(\lfloor{\frac{n-L}{j}}\rfloor-1)-i}{L}}\rfloor=\lfloor{\frac{\frac{n-L}{j}-1-i}{L}}\rfloor=\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}\rfloor
+\text{Case }3: (-1)^{n-1}\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{\lfloor \frac{kj}{L}\rfloor}=(-1)^{n-1}\sum_{i=0}^{L-1}\sum_{k=0}^{\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}\rfloor}(-1)^{\lfloor \frac{(Lk+i)j}{L}\rfloor}
+=(-1)^{n-1}\sum_{i=0}^{L-1}\sum_{k=0}^{\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}\rfloor}(-1)^{\lfloor \frac{ij}{L}\rfloor}=(-1)^{n-1}\sum_{i=0}^{L-1}(-1)^{\lfloor \frac{ij}{L}\rfloor}\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}+1\rfloor
+=(-1)^{n-1}\sum_{k=1}^L(-1)^{\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor
+\text{Case }4: (-1)^{\lfloor{\frac{n-L}{j}}\rfloor+n-1}\sum_{k=0}^{\lfloor{\frac{n-L}{j}}\rfloor-1}(-1)^{k+\lfloor \frac{kj}{L}\rfloor}=(-1)^{\lfloor{\frac{n-L}{j}}\rfloor+n-1}\sum_{i=0}^{L-1}\sum_{k=0}^{\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}\rfloor}(-1)^{Lk+i+\lfloor \frac{(Lk+i)j}{L}\rfloor}
+=(-1)^{\lfloor{\frac{n-L}{j}}\rfloor+n-1}\sum_{i=0}^{L-1}\sum_{k=0}^{\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}\rfloor}(-1)^{i+\lfloor \frac{ij}{L}\rfloor}=(-1)^{\lfloor{\frac{n-L}{j}}\rfloor+n-1}\sum_{i=0}^{L-1}(-1)^{i+\lfloor \frac{ij}{L}\rfloor}\lfloor{\frac{n-L}{jL}-\frac{1+i}{L}}+1\rfloor=(-1)^{n+\lfloor{\frac{n-L}{j}}\rfloor}\sum_{k=1}^L(-1)^{k+\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor
+S_n(j,L)
+1
+j
+L
+=(-1)^n\lfloor{\frac{n-L}{j}}\rfloor
+2
+j
+L
+=(-1)^n\frac{(-1)^{\lfloor{\frac{n-L}{j}}\rfloor}-1}{2}
+3
+j
+L
+=(-1)^{n-1}\sum_{k=1}^L(-1)^{\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor
+4
+j
+L
+=(-1)^{n+\lfloor{\frac{n-L}{j}}\rfloor}\sum_{k=1}^L(-1)^{k+\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor
+a
+b
+\wedge
+[a\wedge b]=[a]\times[b]
+1
+j
+\wedge
+L
+j
+\times
+L
+\frac{(1+(-1)^j)(1+(-1)^L)}{4}
+2
+j
+\wedge
+L
+j
+\times
+L
+\frac{(1-(-1)^j)(1+(-1)^L)}{4}
+3
+j
+\wedge
+L
+j
+\times
+L
+\frac{(1+(-1)^j)(1-(-1)^L)}{4}
+4
+j
+\wedge
+L
+j
+\times
+L
+\frac{(1-(-1)^j)(1-(-1)^L)}{4}
+[n \text{ even}]=\frac{1+(-1)^{n}}{2}
+\text{ and }
+[n \text{ odd}]=\frac{1-(-1)^{n}}{2}
+\sum_{k=1}^{\lfloor{\frac{n-L}{j}}\rfloor}(-1)^{(n-kj)\pmod L}=\frac{(-1)^n(1+(-1)^j)(1+(-1)^L)}{4}\lfloor{\frac{n-L}{j}}\rfloor
++\frac{(-1)^n(1-(-1)^j)(1+(-1)^L)((-1)^{\lfloor{\frac{n-L}{j}}\rfloor}-1)}{8}
+-\frac{(-1)^{n}(1+(-1)^j)(1-(-1)^L)}{4}\sum_{k=1}^L(-1)^{\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor
++\frac{(-1)^{n+\lfloor{\frac{n-L}{j}}\rfloor}(1-(-1)^j)(1-(-1)^L)}{4}\sum_{k=1}^L(-1)^{k+\lfloor{\frac{(k-1)j}{L}}\rfloor}\lfloor\frac{n-L}{jL}-\frac{k}{L}+1\rfloor

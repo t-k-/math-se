@@ -1,0 +1,15 @@
+\newcommand{\Cov}{\operatorname{Cov}}
+X_i
+i=1,\ldots,n
+\Cov(X_1, X_1)+\Cov(X_2, X_2)+\cdots+\Cov(X_n, X_n)
+\Cov(X_1 + X_2 + \cdots +X_n, X_1 + X_2 + \cdots +X_n)
+\newcommand{\Cov}{\operatorname{Cov}}
+\Cov(A+B,C)=\Cov(A,C)+\Cov(B,C)
+\Cov(D,E+F)=\Cov(D,E)+\Cov(D,F)
+\Cov\left(\sum_{i=1}^n X_i, \sum_{j=1}^n X_j\right)
+\Cov(X_1, X_1) + \Cov(X_1, X_2) + \ldots + \Cov(X_1, X_n) + \Cov(X_2, X_1) + \ldots +\Cov(X_n, X_n)
+\Cov(X_1 + X_2 + \cdots +X_n, X_1 + X_2 + \cdots +X_n)
+n^2
+n
+X_i
+\begin{align} \textrm{Cov}\left[\sum_{i=1}^{n}X_i,\sum_{j=1}^{n}X_j\right]&=\textrm{E}\left[\left(\sum_{i=1}^{n}X_i-\textrm{E}\left[\sum_{i=1}^{n}X_i\right]\right)\left(\sum_{j=1}^{n}X_j-\textrm{E}\left[\sum_{j=1}^{n}X_j\right]\right)\right]\\ &= \textrm{E}\left[\left(\sum_{i=1}^{n}\left(X_i-\textrm{E}\left[X_i\right]\right)\right)\left(\sum_{j=1}^{n}\left(X_j-\textrm{E}\left[X_j\right]\right)\right)\right]\\ &= \textrm{E}\left[\sum_{i=1}^{n}\left(\left(X_i-\textrm{E}\left[X_i\right]\right)\sum_{j=1}^{n}\left(X_j-\textrm{E}\left[X_j\right]\right)\right)\right]\\ &= \textrm{E}\left[\sum_{i=1}^{n}\sum_{j=1}^{n}\left(X_i-\textrm{E}\left[X_i\right]\right)\left(X_j-\textrm{E}\left[X_j\right]\right)\right]\\ &= \sum_{i=1}^{n}\sum_{j=1}^{n}\textrm{E}\left[\left(X_i-\textrm{E}\left[X_i\right]\right)\left(X_j-\textrm{E}\left[X_j\right]\right)\right]\\ &= \sum_{i=1}^{n}\sum_{j=1}^{n}\textrm{Cov}\left[X_i,X_j\right]\\ \end{align}

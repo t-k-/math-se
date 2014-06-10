@@ -1,0 +1,31 @@
+n
+n
+(t_k, b_k)
+k
+s_k = (t_k,b_k)
+t_k < b_k
+t_k \leqslant i
+b_k \geqslant i
+b_k
+t_k
+i
+b_k \geqslant t_k=i
+t_k \leqslant b_k = i
+i
+(t,b) = (\text{none}, \text{none})
+     \mathbb{P}\left( \left.\begin{pmatrix} t_{k+1} \cr b_{k+1} \end{pmatrix} = \begin{pmatrix} t_k+1 \cr b_k \end{pmatrix}\right| \begin{pmatrix}t_k \cr b_k \end{pmatrix}\right) = \frac{1}{2}, \qquad    \mathbb{P}\left( \left.\begin{pmatrix} t_{k+1} \cr b_{k+1} \end{pmatrix} = \begin{pmatrix} t_k \cr b_k-1 \end{pmatrix}\right| \begin{pmatrix}t_k \cr b_k \end{pmatrix}\right) = \frac{1}{2} 
+    \mathbb{P}\left( \left.\begin{pmatrix} t_{k+1} \cr b_{k+1} \end{pmatrix} = \begin{pmatrix} t_k \cr b_k \end{pmatrix}\right| t_k >i \text{ or } b_k<i \right) = 1 
+      \mathbb{P}\left(t_{k+1}=\text{none}, b_{k+1} = \text{none} | t_k=b_k=i \right) = 1 
+T_k
+\mathcal{P}_T(z)
+T_i
+      T_i = \inf_{k \geqslant 0} \{ t_k < i \text{ or } b_k > i \text{ or } t_k=\text{none} \text{ and } b_k = \text{none} \}  
+ \begin{eqnarray}    p(n,i) &=&  \sum_{m=1}^{\lceil n/2 \rceil}\mathbb{P}\left(T_i = 2m-1 \right) = \sum_{m=1}^{n}\mathbb{P}\left(T_i = m \right) \frac{1-(-1)^m}{2} \\ &=& \frac{1}{2} \left( \mathcal{P}_{T_i}(1) -  \mathcal{P}_{T_i}(-1) \right) = \frac{1}{2} - \frac{1}{2} \mathcal{P}_{T_i}(-1) \end{eqnarray} 
+p(n,i)
+p(n,i) = p(n,n+1-i)
+    \begin{array}{ccccccccccccc}  i \backslash n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\  1 & 1 & \frac{1}{2} & \frac{3}{4} & \frac{5}{8} & \frac{11}{16} & \frac{21}{32} & \frac{43}{64} & \frac{85}{128} & \frac{171}{256} &    \frac{341}{512} & \frac{683}{1024} & \frac{1365}{2048} \\  2 &   & \frac{1}{2} & \frac{1}{2} & \frac{3}{8} & \frac{1}{2} & \frac{13}{32} & \frac{15}{32} & \frac{55}{128} & \frac{29}{64} & \frac{225}{512} &    \frac{229}{512} & \frac{907}{2048} \\  3 &   &   & \frac{3}{4} & \frac{3}{8} & \frac{5}{8} & \frac{7}{16} & \frac{37}{64} & \frac{61}{128} & \frac{35}{64} & \frac{1}{2} &    \frac{543}{1024} & \frac{1047}{2048} \\  4 &   &   &   & \frac{5}{8} & \frac{1}{2} & \frac{7}{16} & \frac{9}{16} & \frac{55}{128} & \frac{35}{64} & \frac{29}{64} & \frac{67}{128} &    \frac{969}{2048} \\  5 &   &   &   &   & \frac{11}{16} & \frac{13}{32} & \frac{37}{64} & \frac{55}{128} & \frac{73}{128} & \frac{113}{256} & \frac{283}{512} &    \frac{473}{1024} \\  6 &   &   &   &   &   & \frac{21}{32} & \frac{15}{32} & \frac{61}{128} & \frac{35}{64} & \frac{113}{256} & \frac{143}{256} & \frac{455}{1024} \\  7 &   &   &   &   &   &   & \frac{43}{64} & \frac{55}{128} & \frac{35}{64} & \frac{29}{64} & \frac{283}{512} & \frac{455}{1024} \\  8 &   &   &   &   &   &   &   & \frac{85}{128} & \frac{29}{64} & \frac{1}{2} & \frac{67}{128} & \frac{473}{1024} \\  9 &   &   &   &   &   &   &   &   & \frac{171}{256} & \frac{225}{512} & \frac{543}{1024} & \frac{969}{2048} \\  10 &   &   &   &   &   &   &   &   &   & \frac{341}{512} & \frac{229}{512} & \frac{1047}{2048} \\  11 &   &   &   &   &   &   &   &   &   &   & \frac{683}{1024} & \frac{907}{2048} \\  12 &   &   &   &   &   &   &   &   &   &   &   & \frac{1365}{2048} \\ \end{array} 
+3 \leqslant i \leqslant n-2
+     p(n,1) = p(n,n) = \frac{2}{3} \left( 1- \frac{(-1)^n}{2^n} \right) 
+     p(n,2) = p(n,n-1) = \frac{2}{9} \left( 2 - \frac{(-1)^n}{2^n} (3n-7) \right) 
+ \begin{eqnarray}     p(n,i) &=& \frac{1}{4} p(n-2, i) + \frac{1}{4} p(n-2,i-2) + \left(\frac{1}{4}+\frac{1}{4} \right) p(n-2, i-1) \\  &=&  \frac{1}{4} p(n-2, i) + \frac{1}{4} p(n-2,i-2) + \frac{1}{2} p(n-2, i-1) \end{eqnarray} 
+n=2000

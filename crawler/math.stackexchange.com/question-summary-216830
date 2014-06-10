@@ -1,0 +1,25 @@
+S = \lbrace 1.0, 1.2, 2.0, 1.7, 3.4, 0.9 \rbrace 
+A = \lbrace 1.0, 1.2, 2.0 \rbrace
+B = \lbrace  1.7, 3.4, 0.9 \rbrace
+A \cup B = S
+A
+B
+S
+n_S = n_A + n_B
+\mu_S = (n_A\mu_A + n_B\mu_B) / n_S
+\sigma_S = [n_A\sigma_A + n_B\sigma_B + (\frac{n_An_A}{n_A+n_B})(\mu_A - \mu_B)^2] / n_S
+n_A
+n_B
+\mu_A
+\mu_B
+X=A\cup B
+\delta = \mu_B - \mu_A
+S_X = n_X\mu_X = n_A\mu_A + n_B\mu_B = S_A + S_B
+S^2_X = n_X \sigma_X^2 = n_A\sigma_A^2 + n_B\sigma_B^2 + \frac{n_A n_B}{n_X} \delta^2 = S^2_A + S^2_B + \frac{n_A n_B}{n_X} \delta^2
+S^3_X
+S^3_X = S^3_A + S^3_B + \frac{n_A n_B (n_A-n_B)}{n^2_X} \delta^3 + 3 \frac{n_A S^2_B - n_B S^2_A}{n_X} \delta
+S^4_X = S^4_A + S^4_B + \frac{n_A n_B (n_A^2 - n_A n_B + n_B^2)}{n^3_X} \delta^4 + 6\frac{n^2_A S^2_B + n^2_B S^2_A}{n^2_X} \delta^2 +  4\frac{n_A S^3_B - n_B S^3_A}{n_X} \delta 
+\mu_X = \frac{S_X}{n_X}
+\sigma^2_X = \frac{S^2_X}{n_X}
+s_X = \frac{\sqrt{n_X}S^3_X}{(S^2_X)^{3/2}}
+\kappa_X = \frac{n_X S^4_X}{(S^2_X)^2}

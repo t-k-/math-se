@@ -1,0 +1,7 @@
+f(t) = \sum_{k=1}^{\infty} a_k \sin{k t}
+a_k = \frac{\displaystyle \int_0^{\pi} dt\,  f(t) \, \sin{k t}}{\displaystyle\int_0^{\pi} dt\,  \sin^2{k t}} = \frac{2}{\pi} \int_0^{\pi} dt\,  f(t) \, \sin{k t}
+f(t) = t (\pi-t)
+\begin{align}a_k &= \frac{2}{\pi} \int_0^{\pi} dt\, t (\pi-t) \sin{k t}\\ &=2 \int_0^{\pi} dt\, t \sin{k t} -  \frac{2}{\pi} \int_0^{\pi} dt\, t^2 \sin{k t} \\ &= 2 \pi \frac{(-1)^{k+1}}{k} + \frac{4 [1-(-1)^k)]}{\pi k^3} - 2 \pi \frac{(-1)^{k+1}}{k}\\ &= \frac{4 [1-(-1)^k)]}{\pi k^3}\end{align}
+a_k=0
+k
+t (\pi-t) = \frac{8}{\pi} \sum_{k=0}^{\infty} \frac{\sin{(2 k+1)t}}{(2k+1)^3}

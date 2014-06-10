@@ -1,0 +1,60 @@
+p(x)
+A, C > 0
+\epsilon > 0
+q_{\epsilon}
+\mathrm{KL}(p||q_{\epsilon}) < \epsilon
+E[(\log (p(x)/q(x)))^2] \ge A * \epsilon^C
+p
+q_{\epsilon}
+E[(\log (p(x)/q(x)))^2]
+E[\log (p(x)/q(x))]
+p
+E[(\log (p(x)/q(x)))^2] = \sum_x p(x) \left(\log (p(x)/q(x))\right)^2
+p
+p
+p
+0
+p
+\Pr(x) = p(x) = 2^{-x}, x = 1, 2, \ldots
+n = 1, 2, \ldots
+q_n(x) = C_n p(x) \quad \text{if}\quad x \ne n
+= 2^{-f_n} \quad \text{if} \quad x = n
+f_n
+C_n
+q_n
+C_n
+1 = \sum_x {q(x)} = C_n \sum_{x \ne n} {p(x)} + 2^{-f_n} = C_n (\sum_x {p(x)} - p(n)) + 2^{-f_n} 
+= C_n (1 - p(n)) + 2^{-f_n} = C_n(1 - 2^{-n}) + 2^{-f_n},
+C_n = (1 - 2^{-f_n}) / (1 - 2^{-n}).
+\mathrm{KL}(p||q_n) = \sum_x {p(x) \log( p(x) / q_n(x))}.
+x \ne n
+= \sum_x {p(x) \log(C_n)} - p(n) \log(C_n) + p(n) \log( 2^{-n} / 2^{-f_n} )
+= \log(C_n) \left(1 - p(n) \right) + p(n) \left( f_n - n \right)
+= \log(C_n) \left(1 - 2^{-n} \right) + 2^{-n} \left( f_n - n \right)
+ \sum_x {p(x) ( \log( p(x) / q_n(x)) )^2}
+= \sum_x {p(x) (\log(C_n))^2} - p(n) (\log(C_n))^2 + p(n) \left(\log( 2^{-n} / 2^{-f_n} ) \right)^2
+= (\log(C_n))^2 \left(1 - 2^{-n} \right) + 2^{-n} \left( f_n - n \right)^2 .
+f_n
+f_n = n^2
+0
+f_n = 2^{n/2} + n
+1
+1
+f_n = (2^{n/2} + n)n
+n^2
+f_n - n = o(2^n)
+\mathrm{KL}(p||q_n) \to 0
+\log( p / q )
+(\log( p/q ))^2
+0
+q
+p
+q
+f_n \ge n
+X
+n
+X
+X = n
+U
+U \lt 2^{n - f_n}
+X

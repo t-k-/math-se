@@ -1,0 +1,12 @@
+\sum_{n=0}^\infty(1+(-1)^{n}2^{1+n})x^{n}
+(1+(-1)^n2^{1+n})x^n=x^n+2(-2x)^n
+\sum_{0\le n<\infty} (-2x)^n
+|-2x|<1\iff -\frac12< x<\frac12
+\sum_{n\in \mathbb N}a_nz^n.
+1/R=\limsup_{n\to\infty} |a_n|^{1/n}
+a_n =(1+(-1)^{n}2^{1+n})
+R=\frac 12
+\limsup_{n\to\infty} |a_n|^{1/n}=\limsup_{n\to\infty} |1+(-1)^{n}2^{1+n} |^{1/n} 
+=2\limsup_{n\to\infty} |2^{-n}+2(-1)^{n} |^{1/n}=2,
+1+(-1)^n2^{1+n}=\begin{cases}1+2^{n+1}&,\;\;\;n\;\text{even}\\{}\\1-2^{n+1}&,\;\;\;n\;\;\text{odd}\end{cases}
+\left|\;1\pm2^{n+1}\;\right|\le2^{n+2}\implies2\le\sqrt[n]{\left|\;1\pm2^{n+1}\;\right|}\le2\sqrt[n]4\xrightarrow[n\to\infty]{}\;\ldots\ldots

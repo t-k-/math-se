@@ -1,0 +1,5 @@
+(X,Y)^T
+f_{Y|X\in [a,b]}(Y|X \in [a,b])
+ \begin{bmatrix} X\\ Y \end{bmatrix} \sim MVN_2  \Big(  \begin{bmatrix} \mu_X\\ \mu_Y \end{bmatrix}, \begin{bmatrix} \sigma^2_X & \sigma_X \sigma_Y \rho \\ \sigma_X \sigma_Y \rho & \sigma^2_Y \end{bmatrix} \Big) 
+ f_{Y|X\in [a,b]}(y)  = \frac{Pr(X \in [a,b] | Y = y) f_{Y}(y)}{F_{X}(b)-F_{X}(a)}\\ \propto  \Big[ \Phi \big( \frac{b-\mu_x-\frac{\sigma_{x}}{\sigma_y}\rho (y-\mu_y)}{\sqrt{\sigma_x^2(1-\rho^2)}} \big) -\Phi \big( \frac{a-\mu_x-\frac{\sigma_{x}}{\sigma_y}\rho (y-\mu_y)}{\sqrt{\sigma_x^2(1-\rho^2)}} \big) \Big] \phi(\frac{y-\mu_y}{\sigma_y}) 
+f_{Y|X\in [a,b]}(y) 

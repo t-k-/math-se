@@ -1,0 +1,15 @@
+u(x,y)
+\Omega
+\Omega=\{(x,y)|0\le x\le 1,0\le y\le 1\}
+\dfrac{\partial u}{\partial x},\dfrac{\partial u}{\partial y},\dfrac{\partial^2 u}{\partial x\partial y}
+\sup_{(x,y)\in\Omega}|u(x,y)|\le\int\int_{\Omega}\left(|u(x,y)|+\left|\dfrac{\partial u}{\partial x}\right|+\left|\dfrac{\partial u}{\partial y}\right|\right)dxdy+\int\int_{\Omega}\left|\dfrac{\partial^2u}{\partial x\partial y}\right|dxdy
+\sup_{x\in[0,1]}|u(x)|\le\int_{0}^{1}|u(x)|dx+\int_{0}^{1}|u'(x)|dx
+y \in [0,1]
+ \sup_{x\in[0,1]} \left|\frac{\partial f}{\partial y}(x,y)\right| \le \int_{x=0}^1 \left|\frac{\partial f}{\partial y}(x,y)\right| + \left|\frac{\partial^2 f}{\partial x\partial y}(x,y)\right| \, dx .
+ \sup_{x\in[0,1]} \int_{y=0}^1 \left|\frac{\partial f}{\partial y}(x,y)\right| \, dy \le \int_{y=0}^1 \sup_{x\in[0,1]} \left|\frac{\partial f}{\partial y}(x,y)\right| \, dy \le \int_{x=0}^1 \int_{y=0}^1 \left|\frac{\partial f}{\partial y}(x,y)\right| + \left|\frac{\partial^2 f}{\partial x\partial y}(x,y)\right| \, dy \, dx .
+ \sup_{x,y \in [0,1]} |u(x,y)| \le \sup_{x\in[0,1]} \int_{y=0}^1 |u(x,y)| + \left|\frac{\partial f}{\partial y}(x,y)\right| \, dy ,
+ \sup_{x\in[0,1]} \int_{y=0}^1 |u(x,y)| \, dy  \le \int_{x=0}^1 \int_{y=0}^1 |u(x,y)| \, dy + \frac{\partial}{\partial x}\left(\int_{y=0}^1 |u(x,y)| \, dy\right) \, dx 
+ \le  \int_{x=0}^1 \int_{y=0}^1 |u(x,y)| \, dy + \left(\int_{y=0}^1 \left|\frac{\partial u}{\partial x}(x,y)\right| \, dy\right) \, dx .
+\frac{\partial}{\partial x} |f(x)| \le \left| \frac{\partial f}{\partial x}(x) \right|
+u
+f(x) \ne 0

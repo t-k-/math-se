@@ -1,0 +1,43 @@
+b,c \in \mathbb{Z} 
+n \in \mathbb{N} 
+n \ge 2. 
+f(x) = x^{n} -bx+c
+\hbox{disc} (f(x)) = n^{n }c^{ n-1}-(n-1)^{n-1 }b^{n }.
+\hbox{disc} (f(x)) = \prod_{i} f'(\alpha_{i} )
+\alpha_{1}, \dots, \alpha_{n}
+f(x)
+\hbox{disc} (f(x)) = \frac{\prod_{i} \alpha_{i}(n-1)b \ - \ nc }{\prod_{i} \alpha_{i}} 
+r_1(x)
+\mathbb{Z}[x]
+x
+ r_1(x)=nf(x)-xf'(x)= -b(n-1)x +cn 
+ g(x)=(cn)^{n-1}-[b(n-1)x]^{n-1} 
+ r_2(x)=(b(n-1))^{n-1}f'(x)+ng(x)=n^nc^{n-1}-(n-1)^{n-1}b^n. 
+\beta_j, j=1,2,\ldots,n-1,
+f'(x)
+\beta_j=\zeta^j K
+K=\root{n-1}\of {b/n}
+\zeta=e^{2\pi i/(n-1)}
+ \begin{aligned} f(x)&=(x-\alpha_1)(x-\alpha_2)\cdots (x-\alpha_n),\\ f'(x)&=n(x-\beta_1)(x-\beta_2)\cdots (x-\beta_{n-1}). \end{aligned} 
+u=c
+v=b(n-1)K/n
+ \begin{aligned} \operatorname{disc}(f)&=\prod_i f'(\alpha_i)=n^n\prod_{i,j}(\alpha_i-\beta_j)\\ &=n^n(-1)^{n(n-1)}\prod_{i,j}(\beta_j-\alpha_i)\\ &=n^n\prod_jf(\beta_j). \end{aligned} 
+ f(\beta_j)=\beta_j(\beta_j^{n-1}-b)+c=c-(b-K^{n-1})\beta_j=c-\frac{b(n-1)K}n\zeta^j. 
+ \operatorname{disc}(f)=n^n\prod_j(c-\frac{b(n-1)K}n\zeta^j). 
+ u^{n-1}-v^{n-1}=\prod_j(u-\zeta^jv) 
+ \operatorname{disc}(f)=n^n\left(c^{n-1}-\left(\frac{b(n-1)K}n\right)^{n-1}\right) =n^n\left(c^{n-1}-\frac{(n-1)^{n-1}b^n}{n^n}\right), 
+f'(x) = nx^{n-1} - b
+\prod_i f'(\alpha_i)
+\alpha_i^{n-1}
+\begin{array} x^n - bx+c = 0 &\Leftrightarrow x(x^{n-1} - b) = -c \\ &\Leftrightarrow x^{n-1} (x^{n-1} - b)^{n-1} = (-1)^{n-1}c^{n-1} \end{array}
+y_i = \alpha_i^{n-1}
+z_i = f'(\alpha_i) = ny_i - b
+y_i
+\prod_i z_i
+z = ny-b
+y = \frac{z+b}{n}
+z
+(-1)^n \prod_i z_i
+y(y-b)^{n-1} = (-1)^{n-1}c^{n-1}
+\frac{z+b}{n} \left(\frac{z - (n-1)b}{n}\right)^{n-1} = (-1)^{n-1}c^{n-1} \\ \Leftrightarrow (z+b)(z-(n-1)b)^{n-1} - (-1)^{n-1} n^n c^{n-1} = 0
+\prod_i z_i = (-1)^n \left((-1)^{n-1}b^n(n-1)^{n-1} - (-1)^{n-1} n^n c^{n-1}\right) = n^n c^{n-1} - (n-1)^{n-1}b^{n}

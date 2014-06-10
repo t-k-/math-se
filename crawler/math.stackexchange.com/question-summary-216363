@@ -1,0 +1,41 @@
+e^{x\sqrt{1+t}}=\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!}
+\frac{\partial}{\partial t }(e^{x\sqrt{1+t}})=\frac{\partial}{\partial t }(\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!})
+\frac{1}{2\sqrt{1+t} }e^{x\sqrt{1+t}}=\sum \limits_{k=0}^\infty \frac{U_{k+1}(x)}{z}\frac{t^{k}}{{k}!}
+\frac{\partial}{\partial x }(\frac{1}{2\sqrt{1+t} }e^{x\sqrt{1+t}})=\frac{\partial}{\partial x }(\sum \limits_{k=0}^\infty \frac{U_{k+1}(x)}{x}\frac{t^{k}}{{k}!})
+\frac{e^{x\sqrt{1+t}}}{2}=\sum \limits_{k=0}^\infty \frac{\partial}{\partial x }(\frac{U_{k+1}(x)}{x})\frac{t^{k}}{{k}!}
+\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!}=2\sum \limits_{k=0}^\infty \frac{\partial}{\partial x }(\frac{U_{k+1}(x)}{x})\frac{t^{k}}{{k}!}
+U_n(x)=2\frac{\partial}{\partial x }(\frac{U_{n+1}(x)}{x}) \tag 1
+e^{x\sqrt{1+t}}=\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!}
+\frac{\partial}{\partial x }(e^{x\sqrt{1+t}})=\frac{\partial}{\partial x }(\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!})
+\frac{\partial}{\partial x }(\sqrt{1+t}e^{x\sqrt{1+t}})=\frac{\partial}{\partial x }(\sum \limits_{k=0}^\infty \frac{\partial (U_k(x))}{\partial x }\frac{t^k}{k!})
+(1+t)e^{x\sqrt{1+t}}=\sum \limits_{k=0}^\infty \frac{\partial^2 (U_k(x))}{\partial x^2 }\frac{t^k}{k!}
+\sum \limits_{k=0}^\infty \frac{U_k(x)t^k}{k!}+\sum \limits_{k=0}^\infty \frac{U_k(x)t^{k+1}}{k!}=\sum \limits_{k=0}^\infty \frac{\partial^2 (U_k(x))}{\partial x^2 }\frac{t^k}{k!}
+U_{n+1}(x)+(n+1)U_{n}(x)=\frac{\partial^2 (U_{n+1}(x))}{\partial x^2 } \tag 2
+U_{n+1}(x)+2(n+1)\frac{\partial}{\partial x }(\frac{U_{n+1}(x)}{x})=\frac{\partial^2 (U_{n+1}(x))}{\partial x^2 } 
+\frac{\partial^2 (U_{n}(x))}{\partial x^2 }-2n\frac{\partial}{\partial x }(\frac{U_{n}(x)}{x})-U_{n}(x)=0 \tag3
+\frac{\partial^2 (U_{n}(x))}{\partial x^2 }-2n\frac{\partial}{\partial x }(\frac{U_{n}(x)}{x})-U_{n}(x)=0 \tag4
+U''_{n}(x)-\frac{2n}{x}U'_{n}(x)+(\frac{2n}{x^2}-1)U_{n}(x)=0 \tag5
+x^2U''_{n}(x)-2nxU'_{n}(x)+(2n-x^2)U_{n}(x)=0 \tag6
+U_{n}(x)=\frac{\partial^n (e^{x\sqrt{1+t}})}{\partial t^n }|_{t=0}
+U_{0}(x)=e^{x}
+U_{1}(x)=\cfrac{xe^{x}}{2}
+U_{n}(x)
+U'_n(x)=(n+\frac{1}{2})x^{(n-\frac{1}{2})}T_n(x)+x^{(n+\frac{1}{2})}T'_n(x)
+U''_n(x)=(n^2-\frac{1}{4})x^{(n-\frac{3}{2})}T_n(x)+2(n+\frac{1}{2})x^{(n-\frac{1}{2})}T'_n(x)+x^{(n+\frac{1}{2})}T''_n(x)
+U''_{n}(x)-\frac{2n}{x}U'_{n}(x)+(\frac{2n}{x^2}-1)U_{n}(x)=0 
+(n^2-\frac{1}{4})x^{(n-\frac{3}{2})}T_n(x)+2(n+\frac{1}{2})x^{(n-\frac{1}{2})}T'_n(x)+x^{(n+\frac{1}{2})}T''_n(x)-\frac{2n}{x}((n+\frac{1}{2})x^{(n-\frac{1}{2})}T_n(x)+x^{(n+\frac{1}{2})}T'_n(x))+(\frac{2n}{x^2}-1)x^{(n+\frac{1}{2})}T_n(x)=0 
+(n^2-\frac{1}{4})x^{(n-\frac{3}{2})}T_n(x)+2(n+\frac{1}{2})x^{(n-\frac{1}{2})}T'_n(x)+x^{(n+\frac{1}{2})}T''_n(x)-\frac{2n}{x}((n+\frac{1}{2})x^{(n-\frac{1}{2})}T_n(x)+x^{(n+\frac{1}{2})}T'_n(x))+(\frac{2n}{x^2}-1)x^{(n+\frac{1}{2})}T_n(x)=0 
+x^{(n+\frac{1}{2})}T''_n(x) +\Big((2n+1)-2n\Big)x^{(n-\frac{1}{2})}T'_n(x)+\Big((n^2-\frac{1}{4})-2n(n+\frac{1}{2})+2n\Big)x^{(n-\frac{3}{2})}T_n(x)-x^{(n+\frac{1}{2})}T_n(x)=0 
+x^2T''_n(x) +xT'_n(x)-((n-\frac{1}{2})^2+x^{2})T_n(x)=0 
+I_{n}( x)
+K_{n}( x)
+T_n(x)=C_1 I_{(n-\frac{1}{2})}( x)+C_2 K_{(n-\frac{1}{2})}( x)
+U_n(x)=x^{(n+\frac{1}{2})}T_n(x)
+U_n(x)=C_1 x^{(n+\frac{1}{2})}I_{(n-\frac{1}{2})}( x)+C_2 x^{(n+\frac{1}{2})}K_{(n-\frac{1}{2})}( x)
+C_1
+C_2
+U_{n}(x)=\frac{\partial^n (e^{x\sqrt{1+t}})}{\partial t^n }|_{t=0}=C_1 x^{(n+\frac{1}{2})}I_{(n-\frac{1}{2})}( x)+C_2 x^{(n+\frac{1}{2})}K_{(n-\frac{1}{2})}( x)
+n>1/2
+ \frac{\partial^{2} f (x)}{\partial x^{2}} - \frac{2 n }{x}\;\frac{\partial f (x)}{\partial x} + \Biggl(\frac{2 n}{x^{2}} - 1\Biggr) f (x) = 0 
+ f(x) = C_1 x^{1/2+n} I_{(n-1/2)}( x)+C_2 x^{1/2+n} K_{(n-1/2)}( x) 
+ e^{x\sqrt{1-t}} =\sum_{n = 0}^{\infty} \frac{\sqrt{2}\;t^n\;x^{n+1/2}}{2^n n!} \Biggl((-1)^{n} \sqrt\pi\; I_{n-1/2}(x) - \frac{1}{\sqrt\pi}K_{n-1/2}(x)\Biggr) 

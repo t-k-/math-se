@@ -1,0 +1,26 @@
+\sum_{n=0}^{\infty}\frac{(2n+1)}{n!}x^{2n+1}
+e^x=\sum_{n=0}^\infty\frac{x^n}{n!}
+xe^{x^2}=\sum_{n=0}^\infty\frac{x^{2n+1}}{n!}
+\frac{d}{dx}xe^{x^2}=\sum_{n=0}^\infty\frac{(2n+1)x^{2n}}{n!}
+xe^{x^2}(2x^2+1)=\sum_{n=0}^\infty\frac{(2n+1)x^{2n+1}}{n!}
+f(x)=\sum_{n=0}^\infty\frac{2n+1}{n!}x^{2n}\implies\int f(x)\,dx=\sum_{n=0}^\infty\frac{x^{2n+1}}{n!}=x\sum_{n=0}^\infty\frac{(x^2)^n}{n!}=xe^{x^2}\ldots
+xg(x^2)
+g(z)=\sum_{n=0}^\infty \frac{2n+1}{n!}z^n
+\sum \frac{2n+1}{n!}z^n = \sum \frac{2}{(n-1)!}z^n + \sum \frac{1}{n!}z^n = 2ze^z + e^z = (2z+1)e^z
+xg(x^2) = x(2x^2+1)e^{x^2}
+p(n)
+p
+(n)_k=n(n-1)\dots(n-k+1)
+p(n)=\sum_k a_k(n)_k
+a_k
+\sum_n \frac{p(n)}{n!} z^n = e^z \sum_k a_kz^k
+p(n)=n^2 = n(n-1) + n = (n)_2+(n)_1
+\sum_n \frac{n^2}{n!}z^n = e^z(z^2+z)
+n^3 = (n)_3 + 3(n)_2 + (n)_1
+\sum_n \frac{n^3}{n!}z^n = e^z(z^3+3z^2+z)
+\text{As }  e^x=\sum_{0\le r<\infty}\frac{x^r}{r!} 
+\text{and }\frac{(2n+1)}{n!}x^{2n+1}=2x^3 \cdot \frac{(x^2)^{n-1}}{(n-1)!}+x\cdot \frac{(x^2)^n}{n!}
+\text{So,} \sum_{n=0}^{\infty}\frac{(2n+1)}{n!}x^{2n+1}
+=2x^3 \cdot \sum_{n=0}^{\infty}\frac{(x^2)^{n-1}}{(n-1)!}+x\cdot \sum_{n=0}^{\infty}\frac{(x^2)^n}{n!}
+=2x^3 \cdot \sum_{m=0}^{\infty}\frac{(x^2)^m}{m!}+x\cdot \sum_{n=0}^{\infty}\frac{(x^2)^n}{n!}\text{ putting }  n-1=m  \text{ and using} \frac1{(-1)!}=0 
+=2x^3 \cdot e^{x^2}+x\cdot e^{x^2}

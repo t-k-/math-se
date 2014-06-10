@@ -1,0 +1,18 @@
+\sum_{k=1}^{k=n}\frac{\sin(kx)}{\sin^{k}(x)}=\frac{1}{2i}\sum_{k=1}^{k=n}((\frac{e^{xi}}{\sin(x)})^{k}-(\frac{e^{-xi}}{\sin(x)})^{k})=\frac{1}{2i}(\underbrace{\sum_{k=0}^{k=n}(\frac{e^{xi}}{\sin(x)})^{k}}_{S_{1}}-\underbrace{\sum_{k=0}^{k=n}(\frac{e^{-xi}}{\sin(x)}}_{S_{2}})^{k})  
+2i
+S_{1}=\sum_{k=0}^{k=n}(\frac{e^{xi}}{\sin(x)})^{k}=1\cdot\frac{(\frac{e^{xi}}{\sin(x)})^{n+1}-1}{\frac{e^{xi}}{\sin(x)}-1}=\frac{\frac{e^{ix(n+1)}-\sin^{n+1}(x)}{\sin^{n+1}(x)}}{\frac{e^{xi}-\sin(x)}{\sin(x)}}=\frac{e^{ix(n+1)}-\sin^{n+1}(x)}{\sin^{n+1}(x)}\cdot\frac{\sin(x)}{e^{xi}-\sin(x)}=\frac{e^{ix(n+1)}-\sin^{n+1}(x)}{\sin^{n}(x)(e^{xi}-\sin(x))}
+S_{2}=\sum_{k=0}^{k=n}(\frac{e^{-xi}}{\sin(x)})^{k}=1\cdot\frac{(\frac{e^{-xi}}{\sin(x)})^{n+1}-1}{\frac{e^{-xi}}{\sin(x)}-1}=\frac{\frac{e^{-ix(n+1)}-\sin^{n+1}(x)}{\sin^{n+1}(x)}}{\frac{e^{-xi}-\sin(x)}{\sin(x)}}=\frac{e^{-ix(n+1)}-\sin^{n+1}(x)}{\sin^{n+1}(x)}\cdot\frac{\sin(x)}{e^{-xi}-\sin(x)}=\frac{e^{-ix(n+1)}-\sin^{n+1}(x)}{\sin^{n}(x)(e^{-xi}-\sin(x))}
+2i
+S_{1}-S_{2}=\frac{e^{ix(n+1)}-\sin^{n+1}(x)}{\sin^{n}(x)(e^{xi}-\sin(x))}-\frac{e^{-ix(n+1)}-\sin^{n+1}(x)}{\sin^{n}(x)(e^{-xi}-\sin(x))}=\frac{(e^{ix(n+1)}-\sin^{n+1}(x))(e^{-xi}-\sin(x))-((e^{xi}-\sin(x))(e^{-ix(n+1)}-\sin^{n+1}(x))}{\sin^{n}(x)(e^{-xi}-\sin(x))(e^{xi}-\sin(x))}
+=\frac{e^{ixn}-\sin(x)e^{ix(n+1)}-\sin^{n+1}(x)e^{-xi}+\sin^{n+2}(x)-e^{-ixn}+\sin^{n+1}(x)e^{xi}+\sin(x)e^{-ix(n+1)}-\sin^{n+2}(x)}{\sin^{n}(x)(e^{-xi}-\sin(x))(e^{xi}-\sin(x))}
+=\frac{e^{ixn}-e^{-ixn}-\sin(x)(e^{ix(n+1)}-e^{-ix(n+1)})+\sin^{n+1}(x)(e^{xi}-e^{-xi})}{\sin^{n}(x)(e^{-xi}-\sin(x))(e^{xi}-\sin(x))}
+2i
+\implies\frac{s_{1}-s_{2}}{2i}=\frac{\sin(nx)-\sin(x)\sin(x(n+1))+\sin^{n+1}(x)\sin(x)}{\sin^{n}(x)(1-\sin(x)(e^{xi}+e^{-xi})+\sin^{2}(x))}
+\sin(x)
+\sin(nx)
+\sin(x(n+1))
+1
+1
+\sin(kx) = \text{Im }e^{ikx}
+\sin^k(x)
+1 + \sum_{k=1}^{n} \frac{\sin(kx)}{\sin^k(x)} = 1 + \text{Im}\sum_{k=0}^n{\underbrace{\left(\frac{e^{ix}}{\sin(x)}\right)}_{f(x)}}^k = 1 + \text{Im} \frac{f(x)^{n+1} - 1}{f(x)-1}

@@ -1,0 +1,78 @@
+\newcommand{\Beta}{\mathrm{Beta}}\sum_{a=0}^n {n \choose a} \Beta(a+1, n-a+1) = 1
+n
+2^n
+a
+n-a
+p
+a
+n-a
+{n \choose a}
+n
+a
+{n \choose a} \Beta(a+1, n-a+1) = \frac{1}{n+1} \qquad \forall n \ge 0,\quad a \in \{0, \dots, n\}.
+\Beta(a + 1,n - a + 1) = \frac{1}{(n+1){n \choose a}} = \frac{a!(n-a)!}{(n+1)!}.
+a, b
+t \in [0, 1]
+t^a (1 - t)^b
+a+b
+[0, 1]
+a
+[0, t]
+b
+[t, 1]
+\int_0^{1} t^a (1 - t)^b dt
+a+b+1
+t
+a
+[0, t]
+b
+[t, 1]
+ {a+b \choose b} \int_0^1 t^a (1 - t)^b dt
+a+b+1
+t
+a
+[0, t]
+b
+[t, 1]
+(a+1)^{st}
+\frac{1}{a+b+1}
+\int_0^1 t^a (1 - t)^b dt= \frac{a! b!}{(a+b+1)!}
+t_k = 1 - t_1 - \ldots - t_{k-1},
+n_1, \ldots, n_k
+\int_0^1 \int_0^{1-t_1} \ldots \int_0^{1-t_1-\ldots-t_{k-2}} t_1^{n_1} t_2^{n_2} \ldots t_{k-1}^{n_{k-1}} t_k^{n_k} dt_1 \ldots dt_{k-1},
+k-1 + \sum_{i = 1}^{k}n_k
+X_1, \ldots, X_{k-1 + \sum_{i = 1}^{k}n_k}
+[0,1]
+X_0 = 0
+X_{k + \sum_{i = 1}^{k}n_k} = 1
+E
+X_1
+X_{k-1}
+X_{j + \sum_{i = 1}^{j-1} n_i}
+X_{j + \sum_{i = 1}^{j}n_i - 1}
+X_{j-1}
+X_j
+j = 1, \ldots, k
+(X_1, \ldots, X_{k-1}) \to (T_1, \ldots, T_{k-1})
+T_i = X_i - X_{i-1}
+i = 1, \ldots, k-1
+X_1
+X_{k-1}
+E
+X_1 \times \ldots \times X_{k-1}
+\mathbb{P}[E]
+\mathbb{P}[E|(X_1, \ldots, X_{k-1}) = (x_1, \ldots, x_{k-1})] = \prod_{i = 1}^{k}(x_i - x_{i-1})^{n_k} \mathbf{1}_{\{x_i > x_{i-1}\}}.
+\begin{aligned} \mathbb{P}[E] &= \int_{0}^1 \ldots \int_{0}^1 \prod_{i = 1}^{k}(x_i - x_{i-1})^{n_k} \mathbf{1}_{\{x_i > x_{i-1}\}} p_{X_1 \times \ldots \times X_{k-1}}(x_1, \ldots, x_{k-1}) dx_{k-1} \ldots dx_{1} \\ &= \int_{0}^1 \int_{-t_1}^{1-t_1} \ldots \int_{-t_1 - \ldots - t_{k-1}}^{1 -t_1 - \ldots - t_{k-1}} \prod_{i = 1}^{k} t_k^{n_k} \mathbf{1}_{\{t_k > 0\}} p_{T_1 \times \ldots \times T_{k-1}}(t_1, \ldots, t_{k-1}) dt_{k-1} \ldots dt_{1} \\ &= \int_0^1 \int_0^{1-t_1} \ldots \int_0^{1-t_1-\ldots-t_{k-2}} t_1^{n_1} \ldots t_{k-1}^{n_{k-1}} t_k^{n_k} dt_{k-1} \ldots dt_{1}, \end{aligned}
+\{R_i\}_{i \in \{1, \ldots, k-1 + \sum_{i = 1}^{k}n_k\}}
+\{X_i\}_{i \in \{1, \ldots, n+m+1\}}
+1
+k-1 + \sum_{i = 1}^{k}n_k
+E
+R_j = j + \sum_{i = 1}^j n_i
+j \in \{1, \ldots, k-1\}
+l \in \{1, \ldots, k\}
+n_1!\ldots n_k!
+(\sum_{i=1}^{k}n_i+k-1)!
+R_j \in \{l + \sum_{i = 1}^{l-1} n_i, \ldots, l + \sum_{i=1}^{l}n_i - 1\}
+j \in \{k+\sum_{i = 1}^{l-1}n_i, \ldots, k + \sum_{i = 1}^{l}n_i - 1\}.
+\mathbb{P}[E] = \frac{n_1!\ldots n_k!}{(\sum_{i=1}^{k}n_i+k-1)!}.

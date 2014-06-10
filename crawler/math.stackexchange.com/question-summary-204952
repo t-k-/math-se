@@ -1,0 +1,25 @@
+f
+(0,1]
+\displaystyle{\int_{1/n}^1 |f(x)| \,dx}
+m
+(0,1]
+m(a,b) = b-a
+n \rightarrow \infty
+1/n \rightarrow 0
+f
+(0,1]
+f
+f_n(x)
+f(x)
+x\in(1/n,1]
+f_n(x)=0
+f_n
+0
+f
+\int f=\int \lim f_n=\lim_n \int f_n=\lim_n \int_{1/n}^n f
+\int_{[0,1]} f_n dm =\int_{[\frac1n,1]} f_n dm =\int_{\frac1n}^1 |f(x)|dx
+f_n
+\int_{\frac1n}^1 |f(x)|dx
+f_n(x) = \begin{cases}|f(x)|&\text{if }x\ge\frac1n\\0&\text{otherwise}\end{cases}
+\int_{[0,1]}|f|dm=\int_{[0,1]} \sup_{n\in\mathbb N} f_n dm=\sup_{n\in\mathbb N}\int_{[0,1]} f_n dm.
+ \lim_{n\to\infty}\int_{\frac1n}^1 |f(x)|dx=\sup_{n\in\mathbb N}\int_{\frac1n}^1 |f(x)|dx

@@ -1,0 +1,47 @@
+\sum_{k=1}^\infty x_k
+\sum_{n=1}^\infty y_n
+y_1 = x_1
+y_2 = \frac{x_2}{2}
+\vdots
+\displaystyle y_n = \frac{1}{n(n-1)}x_2 + \frac{2}{n(n-1)}x_3 + \ldots \frac{n-2}{n(n-1)}x_{n-1} + \frac{1}{x_n}
+\displaystyle y_n = \sum_{k=2}^n\frac{(k-1)}{n(n-1)}x_k
+\sum_{k=1}^\infty x_k
+\sum_{n=1}^\infty y_n
+\textit{to the same value}
+s_n = \sum_{k=1}^n
+t_n = \sum_{k=1}^n y_k
+n
+\displaystyle 1 - 1 + 1 - 1 + 1 - 1 + 1 - 1 \ldots = \frac{1}{2}
+y_n
+\frac{1}{n(n-1)} = \frac{1}{n-1} - \frac{1}{n}
+\sum_{n=1}^Ny_n = x_1 + \sum_{n=1}^N\sum_{k=2}^n\frac{k-1}{n(n-1)}x_k.
+\{(n,k): 1\le n\leq N, 2\leq k\leq n\ = \{(n,k): 2\leq k\leq N, k\leq n\leq N\}.
+\sum_{k\leq N}x_k
+\sum_{n\leq N}y_n
+\sum_{ k\leq N}\frac{k-1}{N}x_k
+0
+N\to\infty
+\sum_n x_n
+(k-1)/N
+x_k
+\epsilon>0
+N_0
+\sum_{k=n}^\infty |x_k|<\epsilon
+n\geq N_0
+\sum_{k=N_0}^{N}|x_k|<\epsilon
+N\geq N_0
+\sum_{k=N_0}^{N}\frac{k-1}{N}|x_k|<\epsilon
+(k-1)/N
+1
+|\sum_{k<N_0}(k-1)x_k|
+C
+\epsilon
+N
+\max\{N_0, C/\epsilon\}
+|\sum_{k<N_0}\frac{k-1}Nx_k| = C/N < \epsilon
+\epsilon
+2\epsilon
+0
+\begin{align*}\sum_{n=1}^Ny_n &= x_1 + \sum_{k=2}^N\sum_{n=k}^N\left(\frac{1}{n-1}-\frac1n\right)(k-1)x_k\\ &=x_1 + \sum_{k=2}^N(k-1)x_k\sum_{n=k}^N\left(\frac{1}{n-1}-\frac1n\right)\\ &=x_1 + \sum_{k=2}^N(k-1)x_k\left(\frac{1}{k-1}-\frac1N\right)\\ &= \sum_{k=1}^Nx_k - \sum_{k=2}^N\frac{k-1}{N}x_k. \end{align*}
+\left|\sum_{k<N}\frac{k-1}{N} x_k\right| \leq \left|\sum_{k<N_0}\frac{k-1}{N} x_k\right| + \left|\sum_{k=N_0}^N\frac{k-1}{N} x_k\right|<\epsilon+\epsilon.
+\sum_nx_n

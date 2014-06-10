@@ -1,0 +1,51 @@
+[0,1]
+y''(x)+(x+1)y(x)=0\quad\text{ with the initial conditions}\quad y(0)=0\quad y'(0)=1
+y''(x)+(x+1)y(x)=0\quad\text{ with the initial conditions}\quad y(0)=0\quad y'(1)=1
+L^2
+a
+b
+a=-0.268
+b=0.035
+0.0004
+\hat y=a\,x^3+b\,x^2+c\,x+d
+y(0)=0\Rightarrow d=0
+y'(0)=1\Rightarrow c=1
+R=\int_0^1\big(\hat y''(x)+(x+1)\hat y(x)\big)^2dx=\int_0^1\big(6\,a\,x+b+(x+1)(a\,x^3+b\,x^2+x)\big)^2dx
+=\frac{31}{30}+\frac{877 a}{105}+\frac{21299 a^2}{1260}+\frac{149 b}{30}+\frac{8549 a b}{420}+\frac{736 b^2}{105}
+\frac {\partial R}{\partial a}=\frac{877}{105}+\frac{21299 a}{630}+\frac{8549 b}{420}=0
+\frac {\partial R}{\partial b}=\frac{149}{30}+\frac{8549 a}{420}+\frac{1472 b}{105}=0
+a=-1.005
+b=0.133
+c=1-3a-2b=3.749
+y(0)=0\Rightarrow d=0
+y'(1)=1\Rightarrow c=1-3a-2b
+R=\int_0^1\big(\hat y''(x)+(x+1)\hat y(x)\big)^2dx=\int_0^1\big(6\,a\,x+b+(x+1)(a\,x^3+b\,x^2+(1-3a-2b)x)\big)^2dx
+=\frac{31}{30}+\frac{226 a}{105}+\frac{289 a^2}{252}+\frac{5 b}{6}+\frac{23 a b}{20}+\frac{127 b^2}{105}
+y(x) = \sum_{n=0}^{\infty}a_{n}x^n
+a_{n}
+ y(x) = \sum_{n=0}^{\infty}a_{n}x^n\implies y'(x) = \sum_{n=0}^{\infty}na_{n}x^{n-1}\implies y''(x) = \sum_{n=0}^{\infty}n(n-1)a_{n}x^{n-2} 
+y''(x)
+ y''(x) = \sum_{n=2}^{\infty}n(n-1)a_{n}x^{n-2}= \sum_{n=0}^{\infty}(n+1)(n+2)a_{n+2}x^{n} 
+ \sum_{n=0}^{\infty}(n+1)(n+2)a_{n+2}x^{n} + (x+1)\sum_{n=0}^{\infty}a_{n}x^n=0 \\ \sum_{n=0}^{\infty}(n+1)(n+2)a_{n+2}x^{n} + \sum_{n=0}^{\infty}a_{n}x^{n+1}+\sum_{n=0}^{\infty}a_{n}x^{n}=0 
+x
+ 2a_{2}+\sum_{n=1}^{\infty}(n+1)(n+2)a_{n+2}x^{n} + \sum_{n=0}^{\infty}a_{n}x^{n+1}+a_{0}+\sum_{n=1}^{\infty}a_{n}x^{n}=0 \\ a_{0}+2a_{2}+\sum_{n=0}^{\infty}(n+2)(n+3)a_{n+3}x^{n+1} + \sum_{n=0}^{\infty}a_{n}x^{n+1}+a_{0}+\sum_{n=0}^{\infty}a_{n+1}x^{n+1}=0 \\  a_{0}+2a_{2}+\sum_{n=0}^{\infty}\big((n+2)(n+3)a_{n+3} + a_{n}+a_{n+1}\big)x^{n+1}=0 
+a_{0}+2a_{2}=0
+(n+2)(n+3)a_{n+3} + a_{n}+a_{n+1} = 0
+n
+a_{0}=0
+a_{1}=1
+a_{2}=0
+n=0
+n=1
+12a_{4} + a_{1}+a_{2} = 0\implies a_{4}=-1/12
+y(x)\approx x -\frac{1}{6}x^3 - \frac{1}{12}x^4
+x=1
+ 6a_{3} + a_{0}+a_{1} = 0\implies a_{3}=-1/6 
+y(0) = 0\implies a_{0}=0\implies a_{2}=0
+y'(1) = 1 \implies \sum_{n=1}^{\infty}na_{n} = 1.
+a_{1} + 2a_{2} + 3a_{3} + 4a_{4}=1\implies a_{1}+3a_{3}+4a_{4}=1
+n=0
+n=1
+a_{1} =6, a_{3} = -1, a_{4} = -1/2
+y(x) \approx 6x - x^{3} - \frac{1}{2}x^4
+ a_{1} + 3a_{3} + 4a_{4}=1 \\ a_{1} + 6a_{3} = 0 \\ a_{1} + 12a_{4} = 0 

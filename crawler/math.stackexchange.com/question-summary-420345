@@ -1,0 +1,16 @@
+x,y,z \in R;x \ge 1,y \ge 2,z \ge 3
+P=x+y+z
+\sum\limits_{\large{\text{cyc}}} {\frac{{{x^2} - x + 1}}{{x + \sqrt {x - 1} }} = 12} 
+x+y+z+\sqrt{x-1}+\sqrt{y-1}+\sqrt{z-1}=12 
+\Longrightarrow (\sqrt{x-1}+1/2)^2+(\sqrt{y-1}+1/2)^2+(\sqrt{z-1}+1/2)^2=\dfrac{37}{4}
+u=\sqrt{x-1}+1/2,v=\sqrt{y-1}+1/2,w=\sqrt{z-1}+1/2
+u\ge 1/2,v\ge 3/2. w\ge \sqrt{2}+1/2
+u^2+v^2+w^2=\dfrac{37}{4}
+x=(u-1/2)^2+1,y=(v-1/2)^2+1,z=(w-1/2)^2+1
+x+y+z=u^2+v^2+w^2-(u+v+w)+3=\dfrac{49}{4}-(u+v+w)
+u'=u-1/2\ge 0, v'=v-3/2\ge 0,w'=w-\sqrt{2}-1/2\ge 0
+(u'+1/2)^2+(v'+3/2)^2+(w'+\sqrt{2}+1/2)^2=\dfrac{37}{4}
+x+y+z=\dfrac{49}{4}-(u'+v'+w')-\dfrac{5}{2}-\sqrt{2}
+Cauchy-Schwarz
+[(u'+1/2)^2+(v'+3/2)^2+(w'+\sqrt{2}+1/2)^2][1+1+1]\ge(u'+v'+w'+\dfrac{5}{2}+\sqrt{2})^2
+\Longrightarrow |u'+v'+w'+\dfrac{5}{2}+\sqrt{2}|\le \dfrac{7\sqrt{3}}{2}

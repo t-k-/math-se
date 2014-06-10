@@ -1,0 +1,25 @@
+f
+|f|
+(
+\forall \epsilon>0  \ \exists \delta>0: |\int_Ef|<\epsilon,\mu(E)<\delta)
+|\int_E f|=|\int_{E^+} f^+-\int_{E^-} f^-| \leq \epsilon
+|\int_{E^+} f^++\int_{E^-} f^--2\int_{E^-} f^-| \leq \epsilon
+|\int_{E} |f|-2\int_{E^-} f^-| \leq \epsilon
+\mu(E^-)\leq \mu(E)\leq \delta
+2\int_{E^-} f^-
+|\int_{E} |f|| \leq \epsilon
+\epsilon>0
+\delta>0
+\mu E<\delta
+|\int_E f| < \frac{\epsilon}{2}
+E
+\mu E < \delta
+f
+P=\{x|f(x)\geq 0\}
+N=\{x|f(x)<0\}
+\mu (E \cap P) < \delta 
+\mu (E \cap N) < \delta 
+|\int_{E\cap P} f| < \frac{\epsilon}{2}
+|\int_{E \cap N} f| < \frac{\epsilon}{2}
+\int_E |f| = \int_{E\cap P} f - \int_{E \cap N} f
+\int_E |f| < \epsilon

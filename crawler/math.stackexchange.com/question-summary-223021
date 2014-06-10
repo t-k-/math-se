@@ -1,0 +1,13 @@
+\sum_{\vec{\mathbf{k}}} c_k e^{i(m_1 2\pi/a_1 x + m_2  2\pi/a_2  y+m_3  2\pi/a_3  z)}
+c_k= c_{m_1 m_2 m_3}
+\vec{\mathbf{k}}=[m_1 \pi/\ell_1, m_2 \pi/\ell_2, m_3 \pi/\ell_3]
+f(x)=e^{-\alpha x^2}
+-L_1 \leq x \leq L_1
+f(x)=\sum\limits_{m=- \infty}^{\infty}c_m e^{imx}
+c_m = \frac{1}{2L_1} \int_{-L_1}^{L_1} f(x)e^{-imx}dx
+\displaystyle f(x)=e^{-\alpha (x^2+y^2+z^2)}
+-L_1 \leq x \leq L_1, -L_2 \leq y \leq L_2, -L_3 \leq z \leq L_3
+ f(x) = \sum\limits_{\ell, m, n=- \infty}^{\infty}c_{\ell mn} e^{i \ell x}e^{imy}e^{inz} = \sum\limits_{\ell =- \infty}^{\infty} \sum\limits_{m =- \infty}^{\infty} \sum\limits_{n =- \infty}^{\infty} c_{\ell mn} e^{i \ell x}e^{imy}e^{inz} 
+c_{\ell mn} = \frac{1}{8L_1 L_2 L_3} \iiint\limits_V f(x)e^{-i \ell x}e^{-imy}e^{-inz}dV
+V=[-L_1,L_1]\times[-L_2,L_2]\times[-L_3,L_3]
+f(x)=\sum\limits_{\ell, m, n=- \infty}^{\infty}c_{\ell mn} e^{i \ell x}e^{imy}e^{inz}=\sum\limits_{\vec{k}} c_{\vec{k}} e^{\vec{k}\cdot\vec{x}}

@@ -1,0 +1,59 @@
+4^{n+1}+5^{2 n - 1}
+n \geq 1
+f(n)=4^{n+1}+5^{2n-1}
+f(n)
+21
+n\ge 1
+f(1)
+21
+f(n)
+21
+n\ge 1
+f(n+1)
+21
+f(n+1)-f(n)
+21
+\begin{align*} f(n+1)-f(n)&=\left(4^{n+2}+5^{2n+1}\right)-\left(4^{n+1}-5^{2n-1}\right)\\ &=\left(4^{n+2}-4^{n+1}\right)+\left(5^{2n+1}-5^{2n-1}\right)\\ &=4^{n+1}(4-1)+5^{2n-1}\left(25^2-1\right)\;.\tag{1} \end{align*}
+(1)
+21
+f(m)=4^{m+1}+5^{2m-1}
+f(m+1)-f(m)
+=4^{m+2}+5^{2m+1}-(4^{m+1}+5^{2m-1})
+=4^{m+1}(4-1)+5^{2m-1}(5^2-1)
+=3(4^{m+1}+5^{2m-1})+21\cdot 5^{2m-1}
+f(m+1)=21\cdot 5^{2m-1}+4\cdot f(m)
+f(1)=4^2+5^1=21,f(2)=4^3+5^3=189
+21\mid f(n)
+n\ge 1
+f(m)=a^{2m-1}+b^{m+1}
+f(m+1)-f(m)=a^{2m+1}+b^{m+2}-(a^{2m-1}+b^{m+1})
+=(b-1)(a^{2m-1}+b^{m+1})+(a^2-b)a^{2m-1}
+\implies f(m+1)=b(a^{2m-1}+b^{m+1})+(a^2-b)a^{2m-1}=f(m)+(a^2-b)a^{2m-1}
+f(1)=(a+b^2)
+(a^2-b)\mid(a+b^2), (a^2-b)\mid f(n)
+n\ge 1
+a=5,b=4\implies a^2-b=25-4=21
+a+b^2=5+4^2=21
+5^{2n-1} = 5 \cdot 25^{n-1}
+5^{2n-1} \equiv 5 \cdot (21+4)^{n-1} \pmod{21} \equiv 5 \cdot 4^{n-1} \pmod{21}
+4^{n+1} + 5^{2n-1} \equiv 4^{n+1} + 5 \cdot 4^{n-1} \pmod{21} \equiv 21 \cdot 4^{n-1} \pmod{21} \equiv 0 \pmod{21}
+f(n) = 4^{n+1} + 5^{2n-1}
+f(n+1) - 4f(n) = 4^{n+2} + 5^{2n+1} - 4^{n+2} - 4 \cdot 5^{2n-1} = 21 \cdot 5^{2n-1}
+f(n+1) = 4f(n) + 21 \cdot 5^{2n-1}
+f(n+1)=pf(n)+qf(n-1)
+f(n)
+g(n)
+af(n)+bg(n)
+f(n)=\alpha^n
+\alpha^2-p\alpha-q = 0
+f(0)
+f(1)
+4^n
+25^n
+p=29, q=-100
+p
+q
+f(n)
+f(n-1)
+f(n)
+f(n+1)

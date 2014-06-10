@@ -1,0 +1,33 @@
+y'=\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}y, y(0)=\begin{pmatrix}4\\0\end{pmatrix}
+A=\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+1
+\begin{pmatrix} 1\\0\end{pmatrix}
+y=(y_1,y_2)
+y_1(0)=4
+y_2(0)=0
+y_2(x)=0
+y_2=0
+y_1'=y_1
+     \left\{\begin{aligned}          y_1'&=y_1+y_2\\         y_2'&=y_2     \end{aligned} \right. 
+     y_2(x)=C\exp(x). 
+     y(x)=\begin{pmatrix}4\exp(x) \\ 0\end{pmatrix}. 
+I_2 J_2 = J_2 I_2
+I_2^2 = I_2
+J_2^2 = 0_2
+I_2 = \begin{pmatrix}1 & 0\\0 & 1\end{pmatrix}\quad\text{ and }\quad J_2 = \begin{pmatrix}0 & 1\\0 & 0\end{pmatrix}
+e^{At} = e^{I_2t + J_2t} = e^{I_2t}e^{J_2t} = (I_2 + I_2t + I_2^2\frac{t^2}{2!} + \cdots)( I_2 + J_2t+ J_2^2\frac{t^2}{2}+\cdots)\\= I_2( 1 + t + \frac{t^2}{2} + \cdots)(I_2+J_2t) = e^t (I_2+J_2t) = e^t\begin{pmatrix}1 & t\\0 & 1\end{pmatrix}
+y(t) = e^{At}y(0) = e^t \begin{pmatrix}1 & t\\0 & 1\end{pmatrix}\begin{pmatrix}4\\0\end{pmatrix} = \begin{pmatrix}4 e^t\\0\end{pmatrix}
+y' = A y
+A
+A
+n
+B = \begin{pmatrix} \lambda & 1 & 0 &\ldots & 0\\ 0 & \lambda & 1 &\ldots & 0\\   &   &  \ddots & \ddots & &\\ 0 & 0 & \ldots & \lambda & 1\\ 0 & 0 & 0 &\ldots & \lambda \end{pmatrix}
+B
+\lambda I_n + J_n
+J_n
+n\times n
+I_n J_n = J_n I_n
+J_n^n = 0_n
+e^{Bt} = e^{(\lambda I_n + J_n)t} = e^{\lambda t} \left(1 + J_n t + J_n^2\frac{t^2}{2!} + \cdots J_n^{n-1}\frac{t^{n-1}}{(n-1)!}\right) = e^{\lambda t}  \begin{pmatrix} 1 & t & \frac{t^2}{2!} &\ldots & \frac{t^{n-1}}{(n-1)!}\\ 0 & 1 & t &\ldots & \frac{t^{n-2}}{(n-2)!}\\   &   &  & \ddots & &\\ 0 & 0 & \ldots & 1 & t\\ 0 & 0 & 0 &\ldots & 1 \end{pmatrix}
+y(t)=exp(At)y(0)
+y_1(t) = 4e^t,\,y_2(t)=0

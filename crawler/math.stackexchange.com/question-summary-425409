@@ -1,0 +1,12 @@
+\sum_{k=0}^{n}k\cdot 5^k
+\sum_{k=0}^nx^k=\frac{x^{n+1}-1}{x-1}
+\sum_{k=0}^n kx^{k-1}=\frac{d}{dx}\frac{x^{n+1}-1}{x-1}
+\sum_{k=0}^n kx^{k}=x\frac{d}{dx}\frac{x^{n+1}-1}{x-1}
+\sum_{k=0}^n kx^{k}=\frac{x^n((x-1)n-1)+1}{(x-1)^2}
+\sum_{k=0}^n k5^{k}=\frac{5^n(4n-1)+1}{16}
+g_k=\frac{1}{4}5^{k+1}
+\Delta g_k=g_{k+1}-g_k=\frac{1}{4}(5^{k+1}-5^k)=5^k
+f_k=k
+\Delta f_k=f_{k+1}-f_k=1
+\sum_0^nk5^k=\sum_0^nf_k\Delta g_k=(f_{n+1}g_{n+1}-f_0g_0)-\sum_0^ng_{k+1}\Delta f_k
+(n+1)\frac{1}{4}5^{n+2}-0-\sum_{0}^n \frac{1}{4}5^{k+2}=\frac{1}{4}\left((n+1)5^{n+2}-5^2\frac{5^{n+1}-1}{5-1}\right)=\frac{25}{4}\left((n+1)5^n-\frac{1}{4}(5^{n+1}-1)\right)=\frac{25}{4}\left(\left(n-\frac{5}{4}\right)5^n+\frac{1}{4}\right)

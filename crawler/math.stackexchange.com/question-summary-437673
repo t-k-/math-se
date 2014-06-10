@@ -1,0 +1,19 @@
+d(M)=\delta(M)
+K=Q
+\# \{ p\in M :p\leq x\}=M(x)
+a_n=1
+n=p
+0
+\displaystyle\sum_{p\in M,\\p\leq x}\frac{1}{p^s}=\sum_{n\leq x}\frac{a_n}{n^s}=\frac{M(x)}{x^s}+s\int_{1}^{x}\frac{M(t)}{t^{s+1}}dt
+\delta(M)= \lim_{x\rightarrow \infty} \frac{ \# \{ p \in M : p \leq x\}}{  \# \{ p :  p \leq x\}}
+R
+\lim_{x\to\infty}\frac{M(x)\log x}{x}=R
+M(x)=\frac{Rx}{\log x}+o(\frac{x}{\log x})
+M(x)
+d(M)=\lim_{s\to1+}\frac{\lim_{x\to\infty}\frac{M(x)}{x^s}+s\int_{1}^{x}\frac{M(t)}{t^{s+1}}dt}{-\log (s-1)}
+\sum_{p}\frac{1}{p^s}=-\log (s-1) + O(1)
+d(M)=\lim_{s\to1+}(s-1)\int_{1}^{\infty}\frac{M(t)\log t}{t^{s+1}}dt
+\displaystyle\\d(M)=\lim_{s\to1+}(s-1)(R\int_{1}^{\infty}\frac{dt}{t^{s}}+o(\int_{1}^{\infty}\frac{dt}{t^{s}}))
+\lim_{s\to1+}(s-1)\int_{1}^{\infty}\frac{dt}{t^{s}}=1
+\epsilon\to0
+d(M)=R+o(1)=R

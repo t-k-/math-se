@@ -1,0 +1,11 @@
+F(x)
+|E(x)| < \infty
+c
+\int_{-\infty}^{\infty} x (F(x + c) - F(x)) dx = cE(X) - c^2/2
+ \int_{-\infty}^{+\infty}x\,\mathbf 1_{x\lt X\leqslant x+c}\,\mathrm dx=\int_{X-c}^{X}x\,\mathrm dx=cX-c^2/2. 
+\int f(y)dy = F(y)
+ \int_{-\infty}^{\infty} x (F(x + c) - F(x)) dx = \int_{-\infty}^{\infty} x \{\int_{x}^{x + c} f(y)dy\} dx = \int_{-\infty}^{\infty} \{\int_{x}^{x + c} xf(y)dy\} dx  = \int_{-\infty}^{\infty} \int_{x}^{x + c} xf(y)dy\ dx = \text{based on the Fubini's Thm. since 
+ and we know that 
+, then we can change the order of integrals}\\ = \text{assume that we can show the integ. is eq to} = \frac{1}{2}(E(X^2)- E((X - c)^2)) = \frac{1}{2}(E(X^2) - E(X^2 + c^2 - 2Xc)) = \frac{1}{2}(-E(c^2) + 2cE(x)) = cE(x) - \frac{c^2}{2}
+\int_{-\infty}^{\infty} \int_{x}^{x + c} xf(y)dy\ dx
+\frac{1}{2}\{E(X^2) - E(X^2 + c^2 - 2Xc)\}

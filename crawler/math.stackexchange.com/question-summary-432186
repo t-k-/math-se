@@ -1,0 +1,22 @@
+G
+l^\infty \left(G\right)
+L_l
+G
+l^\infty \left(G\right)
+L_r
+G
+\phi:G\rightarrow G
+g\in G
+l_g:G\rightarrow G
+l_g(h)=gh
+r_g:G\rightarrow G
+r_g(h)=hg
+\phi\circ l_g = r_g \circ \phi
+L_c
+c_g:G\rightarrow G
+c_g(h)=ghg^{-1}
+f:G\rightarrow \mathbb{R}
+L_c \left(f\circ c_g\right)=L_c(f)
+L_c:f\mapsto L_r(g\mapsto L_l(f\circ r_g))
+c_h\circ r_g\,(x)=hxgh^{-1}=r_{gh^{-1}}\circ l_h\,(x)
+\begin{array}{ll} L_c\circ c_h\,(f) & =L_r(g\mapsto L_l((f\circ c_h)\circ r_g)) \\ & = L_r(g\mapsto L_l((f\circ r_{gh^{-1}})\circ l_h)) \\ & = L_r(g\mapsto L_l(f\circ r_{gh^{-1}})) \\ & = L_r((g\mapsto L_l(f\circ r_g))\circ r_{h^{-1}}) \\ & = L_r(g\mapsto L_l(f\circ r_g)) \\ & = L_c(f).\end{array}

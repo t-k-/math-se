@@ -1,0 +1,20 @@
+f
+g
+2 \pi
+f(x) = \sum_n \alpha_{n}e^{inx}
+g(x) = \sum_n \beta_{n}e^{inx}
+f
+g
+f * g(x) = \frac{1}{2 \pi} \int_{- \pi}^{\pi} f(t)g(x-t)dt
+f * g
+f * g(x) = \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{inx}
+f * g(x) = \frac{1}{2 \pi} \int_{- \pi}^{\pi} f(t)g(x-t)dt
+f * g(x) = \frac{1}{2 \pi} \int_{- \pi}^{\pi} \sum_n \alpha_{n}e^{int} \sum_n \beta_{n}e^{in(x-t)}dt
+ = \frac{1}{2 \pi} \int_{- \pi}^{\pi} \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{int} e^{in(x-t)}dt
+= \frac{1}{2 \pi}\int_{- \pi}^{\pi} \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{in(t + x - t)}dt
+= \frac{1}{2 \pi}\int_{- \pi}^{\pi} \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{inx}dt
+= \frac{1}{2 \pi} \cdot \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{inx} \int_{- \pi}^{\pi} dt
+= \sum_{- \infty}^{\infty} \alpha_{n} \beta_{n} e^{inx}
+\int_{-\pi}^{\pi}e^{i(n-m)t}dt
+\int_{-\pi}^{\pi}e^{i(n-m)t}dt=2\pi \delta_{mn}
+\displaystyle \sum \limits_{i=0}^n a_i \delta_{ij}=a_0 \delta_{0j}+a_1 \delta_{1j}+a_2 \delta_{2j}+ \ldots +a_j \delta_{jj}+ \ldots +a_n \delta_{nj} =a_j

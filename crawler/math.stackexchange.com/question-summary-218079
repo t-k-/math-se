@@ -1,0 +1,18 @@
+\begin{align} \left(A \lor B\right) \land \left(B \lor C\right) \land \left(\lnot A \lor C \right) & = \left(A+B \right)\left(B + C\right)\left( !A+C \right) \\ & = (A+B)(B!A+BC+C!A+CC) \\  & = (A+B)(B!A+BC+!AC+C) \\ &=(A+B)(B!A+C) \\ &=AB!A+AC+BB!A+BC\\ &=F+AC+B!A+BC \\ &=(A \land C) \lor (B \land \lnot A) \lor (B \land C) \text{ My answer}\\ \\ & \text{But solution says:} \\ &(A\land C)\lor(B \land \lnot A) \end{align} 
+\begin{align*} B\land C&=B\land C\land T\\ &=B\land C\land(A\lor\lnot A)\\ &=(B\land C\land A)\lor(B\land C\land\lnot A)\;, \end{align*}
+\begin{align*} (A\land C)\lor(B\land\lnot A)\lor(B\land C)&=(A\land C)\lor(B\land\lnot A)\lor(B\land C\land A)\lor(B\land C\land\lnot A)\\ &=\Big((A\land C)\lor(B\land C\land A)\Big)\lor\Big((B\land\lnot A)\lor(b\land C\land\lnot A)\Big)\\ &=(A\land C)\lor(B\land\lnot A)\;. \end{align*}
+A
+\lnot A
+B\land C
+B\land C\land A
+B\land C\land\lnot A
+-
+A\land C
+B\land\lnot A
+(B \land C)
+B
+C
+(A \land C)
+(B \land \neg A)
+A
+B \land C

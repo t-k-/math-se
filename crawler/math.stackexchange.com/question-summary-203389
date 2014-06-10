@@ -1,0 +1,20 @@
+u : \mathbb{R}^2 \to \mathbb{R}^2
+\varepsilon_{\theta\theta} = \frac{\partial u_\theta}{\partial \theta}
+ x=\rho\cos\theta\\ y=\rho\sin\theta 
+ \mathbf{e}_\rho  = \cos\theta\,\mathbf{e}_1+\sin\theta\,\mathbf{e}_2,\\ \mathbf{e}_\theta=-\sin\theta\,\mathbf{e}_1+\cos\theta\,\mathbf{e}_2. 
+ \nabla\otimes\mathbf{u}=\left(\mathbf{e}_\rho\frac{\partial}{\partial\rho}+\mathbf{e}_\theta\frac{1}{\rho}\frac{\partial}{\partial\theta}\right)\otimes(u_\rho\mathbf{e}_\rho+u_\theta\mathbf{e}_\theta) 
+ (\nabla\otimes\mathbf{u})_{\theta\theta}=\frac{1}{\rho}\left(\frac{\partial u_\theta}{\partial\theta}+u_\rho\right) 
+\mathbf{e}_\rho
+\theta
+\mathbf{e}_\theta
+ u_\rho  =\mathbf{u}\cdot\mathbf{e}_\rho  = u_1\cos\theta+u_2\sin\theta\\ u_\theta=\mathbf{u}\cdot\mathbf{e}_\theta=-u_1\sin\theta+u_2\cos\theta\\ \frac{\partial}{\partial\theta}=-\rho\sin\theta\frac{\partial}{\partial x}+\rho\cos\theta\frac{\partial}{\partial y} 
+(x,y)
+x=r\cos\varphi
+y=r\sin\varphi
+dx = dr\cdot \cos\varphi+r\cdot (-\sin\varphi)d\varphi 
+dy = dr\cdot \sin\varphi+r\cdot \cos\varphi\, d\varphi
+r=\sqrt{x^2+y^2}\ \text{ and }\ \varphi = \arctan \frac yx \color{grey}{(+\pi)}
+ dr=\frac x{\sqrt{x^2+y^2}}dx+\frac y{\sqrt{x^2+y^2}}dy
+\frac{\partial f}{\partial r}(x,y)=\frac x{\sqrt{x^2+y^2}}\frac{\partial f}{\partial x} + \frac y{\sqrt{x^2+y^2}}\frac{\partial f}{\partial y}
+d\varphi = -\frac y{x^2}\cdot\frac{1}{(y/x)^2+1}dx + \frac1x\cdot\frac{1}{(y/x)^2+1}dy 
+...

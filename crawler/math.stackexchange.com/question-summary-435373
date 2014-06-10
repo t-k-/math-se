@@ -1,0 +1,6 @@
+f(x) \geq 0
+[0,1]
+f(x)
+\int_0^1 xf(x)dx \leq \frac{1}{2}\int_0^1 f(x)dx,
+\int_0^1 xf(x)\,dx\leq \left(\int_0^1 f(x)\,dx\right)\left(\int_0^1 x\,dx\right)=\frac{1}{2}\int_0^1 f(x)\,dx
+\begin{aligned}\int_0^1 \left(\frac{1}{2}-x\right)f(x)\,dx &=\int_0^{\frac{1}{2}}\left(\frac{1}{2}-x\right)f(x)\,dx+\int_{\frac{1}{2}}^1\left(\frac{1}{2}-x\right)f(x)\,dx\\&=\int_0^{\frac{1}{2}} xf\left(\frac{1}{2}-x\right)\,dx-\int_0^{\frac{1}{2}} xf\left(x+\frac{1}{2}\right)\,dx\\&=\int_0^{\frac{1}{2}}x\left[f\left(\frac{1}{2}-x\right)-f\left(\frac{1}{2}+x\right)\right]\,dx\\&=\int_0^{\frac{1}{2}}\left(\frac{1}{2}-x\right)\Big(f\left(x\right)-f\left(1-x\right)\Big)\,dx\geq 0\end{aligned}

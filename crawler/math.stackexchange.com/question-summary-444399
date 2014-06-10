@@ -1,0 +1,13 @@
+B_j(x)=\frac{2j+1}{2j} \coth \left( \frac{2j+1}{2j} x \right) - \frac{1}{2j} \coth \left( \frac{1}{2j} x \right)
+m,j
+\langle m \rangle = \sum_{-j\le m\le j} m \ P(m)
+P(m)=\frac{e^{xm/j}}{Z}
+Z = \sum_{-j\le m\le j}  e^{xm/j}
+\langle m \rangle = j \cdot B_j (x)
+Z
+Z = \sum_{m=-J}^J e^{m x/J} = e^{-x} \frac{e^{(2 J+1) x/J}-1}{e^{x/J}-1} = \frac{\sinh{\left ( \frac{2J+1}{2 J} x\right)}}{\sinh{\left( \frac{x}{2 J}\right)}}
+\sum_{m=-J}^J m \, e^{m x/J} = J \frac{dZ}{dx}
+J \frac{dZ}{dx} = \frac{1}{2 \sinh^2{\left( \frac{x}{2 J}\right)}}\left [(2J+1) \cosh{\left ( \frac{2J+1}{2 J} x\right)}\sinh{\left( \frac{x}{2 J}\right)} -  \sinh{\left ( \frac{2J+1}{2 J} x\right)}\cosh{\left( \frac{x}{2 J}\right)}\right ]
+Z
+P(M) = \frac12 \left [(2J+1) \coth{\left ( \frac{2J+1}{2 J} x\right)} - \coth{\left( \frac{x}{2 J}\right)} \right ] 
+\begin{align}e^{-x} \frac{e^{(2 J+1) x/J}-1}{e^{x/J}-1} &= \frac{e^{(J+1) x/J}-e^{-x}}{e^{x/J}-1}\\ &= \frac{e^{x/(2 J)} \left (e^{(2 J+1) x/(2 J)} - e^{-(2 J+1) x/(2 J)} \right )}{e^{x/(2 J)} \left (e^{x/(2 J)}-e^{-x/(2 J)} \right )}\\ &= \frac{\sinh{\left ( \frac{2J+1}{2 J} x\right)}}{\sinh{\left( \frac{x}{2 J}\right)}}\end{align}

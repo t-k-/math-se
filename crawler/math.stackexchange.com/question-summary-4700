@@ -1,0 +1,44 @@
+f:\mathbb{R}\rightarrow\mathbb{R}
+f(x)=\begin{cases} e^{-x^{-2}} & x\ne 0 \\ 0 & x=0  \end{cases}
+f
+C^\infty
+f^{(i)}(0)=0
+i
+p,q:\mathbb{R}\rightarrow\mathbb{R}
+(e^{q(x)}p(x))'=e^{q(x)} q'(x)p(x) + e^{q(x)} p'(x)=e^{q(x)}(q'(x)p(x)+p'(x))
+q(x)=-x^{-2}
+p_0(x)=1
+p_{n+1}(x)=q'(x)p_{n}(x)+p_n'(x)=\frac{2}{x^3} p_n(x) + p_n'(x)
+p_n(x)
+a x^{-n}
+a,n\in\mathbb{R}
+n>0
+f^{(n)}(x)=e^{q(x)} p_n(x)=e^{-x^{-2}}p_n(x)
+p_n(h)
+a h^{-m}
+a,m\in\mathbb{R},n>0
+h^{-1} p_n(h)
+\lim_{h\rightarrow 0}\frac{ah^{-m}}{e^{h^{-2}}}=0
+\lim_{h\rightarrow 0}\frac{-m h^{-m-1}}{e^{h^{-2}} (-\frac{2}{h^3})}=\lim_{h\rightarrow 0}\frac{2m h^{-m+2}}{e^{h^{-2}}}
+h
+m/2+1
+A_{n}
+n \ge 1
+f^{n}(x) = e^{q(x)}p_{n}(x), x \neq 0
+p_{n}(x) = \sum \frac{a_{r}}{x^r}, x \neq 0
+B_{n}
+n \ge -1
+\lim_{h \to 0} \frac{1}{h^{n} e^{h^{-2}}}  = 0
+A_{n-1}
+A_{n}
+B_{n-2}
+B_{n}
+C_{n}
+n \ge 1
+ f^{n}(0) = 0
+C_{n}
+A_{i}
+B_{j}
+C_{n+1}
+f^{n}(0) = 0
+f^{(n+1)}(0) = \lim_{h\rightarrow 0}\frac{f^{(n)}(h)}{h}

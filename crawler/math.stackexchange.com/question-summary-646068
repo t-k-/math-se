@@ -1,0 +1,13 @@
+\int \frac{1}{(1+\sin x)}dx
+ t = \tan \frac{x}{2}  \Rightarrow
+\int \frac{1}{(1+\sin x)}dx = \int \frac{\frac{2}{1+t^2}}{1+\frac{2t}{1+t^2}}dt = \int \frac{2}{(1+t)^2}dt = \frac{-2}{1+t} = \frac{-2}{1+\tan \frac{x}{2}} + C
+ \tan x - \frac{1}{\cos x} + C 
+\begin{align} \frac{-2}{1+\tan \frac{x}{2}} &= \frac{-2\cos \frac{x}{2}}{\cos\frac{x}{2} + \sin \frac{x}{2}}\\ &= \frac{-2\cos \frac{x}{2}(\cos \frac{x}{2}-\sin\frac{x}{2})}{(\cos \frac{x}{2}+\sin\frac{x}{2})(\cos \frac{x}{2}-\sin\frac{x}{2})}\\ &= \frac{\sin x - 2 \cos^2 \frac{x}{2}}{\cos x}\\ &= \tan x - \frac{\cos x + 1}{\cos x}\\ &= \tan x - \frac{1}{\cos x} - 1 \end{align}
+1-\sin x
+\theta = x/2
+\begin{align*} \int \frac{1}{1+\sin x} \, dx &= \int \frac{1 - \sin x}{1 - \sin^2 x} \, dx \\ &= \int \frac{1 - \sin x}{\cos^2 x} \, dx \\ &= \int \sec^2 x - \frac{\sin x}{\cos^2 x} \, dx \\ &= \tan x - \int \frac{-du}{u^2}, \quad u = \cos x, du = -\sin x \, dx \\ &= \tan x - \frac{1}{u} + C \\ &= \tan x - \sec x + C. \end{align*}
+-\frac{2}{1+\tan \frac{x}{2}} + C,
+\begin{align*} \tan x - \sec x + \frac{2}{1 + \tan \frac{x}{2}} &= \frac{\sin 2\theta - 1}{\cos 2\theta} + \frac{2}{1 + \tan \theta} \\ &= \frac{\sin 2\theta - 1}{\cos 2\theta} + \frac{2 \cos \theta}{\sin \theta + \cos \theta} \\ &= \frac{\sin 2\theta - 1 + 2 \cos\theta(\cos \theta - \sin \theta)}{\cos 2\theta} \\ &= \frac{2 \cos^2 \theta - 1}{\cos 2\theta} \\ &= 1. \end{align*}
+\dfrac{1-\sin x}{1-\sin x}
+u=\cos x
+\begin{aligned}\int \frac{1}{1+\sin x}\,dx &= \int\frac{1-\sin x}{1-\sin^2 x}\,dx\\ &= \int\frac{1-\sin x}{\cos^2x}\,dx \\ &= \int\frac{1}{\cos^2 x}-\frac{\sin x}{\cos^2 x}\,dx \\ &= \int \sec^2x -\frac{\sin x}{\cos^2x}\,dx\\ &= \ldots\end{aligned}

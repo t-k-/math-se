@@ -1,0 +1,21 @@
+f(x,y,z)=xyz
+D=\{(x,y,z)\in\mathbb{R}^3:x\geq 0, y \geq 0, z \geq 0,\; x^2+y^2+z^2\leq 1\}
+ \iiint_D f(x,y,z). 
+x=\rho\sin\psi\cos\theta, y=\rho\sin\psi\sin\theta, z=\rho\cos\psi
+\rho>0
+z\geq 0
+\rho\cos\psi\geq0
+0\leq\psi\leq \pi/2
+y\geq0
+\rho\sin\psi\sin\theta\geq0
+\psi
+\sin\psi\geq0
+0\leq\theta\leq\pi
+x\geq0
+\rho\sin\psi\cos\theta\geq0
+0\leq \theta \leq \pi/2
+x^2+y^2+z^2\leq1
+\rho^2\sin^2\psi\cos^2\theta+\rho\sin^2\psi\sin^2\theta+\rho^2\cos^2\psi=\rho^2
+0\leq\rho\leq1 \\0\leq\psi\leq\pi/2\\0\leq\theta\leq\pi/2
+\rho^2\sin\psi
+ \begin{align} \iiint_D f(x,y,z) &= \int_0^{\pi/2} \int_0^{\pi/2} \int_0^1 r^5 \sin^2\psi \cos\psi \sin\theta \cos\theta\;dr d\psi d\theta \\ &= \frac{1}{6} \int_0^{\pi/2}\sin\theta \cos\theta \int_0^{\pi/2} \sin^2\psi \cos\psi\; d\psi d\theta \\ &= \frac{1}{18} \int_0^{\pi/2}\sin\theta \cos\theta\; d\theta \\ &= \frac{1}{18}\sin^2\theta|_0^{\pi/2} \\ &= \frac{1}{18}. \end{align} 

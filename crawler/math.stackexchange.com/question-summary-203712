@@ -1,0 +1,40 @@
+x,y
+\{0,1\}*
+S\to A\#B
+x
+y
+S\rightarrow 1S1 \;|\; 0S0.
+x
+y
+S\rightarrow 1A\#A0 \;|\; 0A\#A1.
+S\rightarrow 1A\#\;|\; 0A\#\;|\; \#A0\;|\; \#A1.
+A\rightarrow 0A\;|\; 1A\;|\; \varepsilon.
+\#
+ S \rightarrow 1S1\; |\; 0S0\; |\; 0A1 \; |\; 1A0 \; |\; \#B0 \;|\;\#B1\;|\;0B\#\;|\;1B\#\\ A \rightarrow 1A \; |\; A1\;|\;0A\;|\;A0\;|\; \#\\ B \rightarrow 0B\;|\;1B\;|\;\varepsilon 
+x \neq y^{\mathcal{R}}
+1
+0
+\#
+L
+\#
+\color{green}{1}\color{red}{1}\color{blue}{0}0\#0\color{blue}{0}\color{red}{1}\color{green}{0}
+0
+0
+1
+1
+0
+L
+1100\#001\in L
+1
+\epsilon
+1100\#0011\notin L
+0
+1
+A\to A0\mid 0\mid A1\mid 1
+S\to 0T1\mid 1T0\mid 0T1A\mid 1T0A\mid A0T1\mid A1T0\mid A0T1A\mid A1T0A
+\alpha aSb\beta
+\alpha,\beta\in\{0,1\}^*
+a,b\in\{0,1\}
+a\ne b
+T\to 0T0\mid 1T1\mid \#
+\begin{align*} &S\to 0T1\mid 1T0\mid 0T1A\mid 1T0A\mid A0T1\mid A1T0\mid A0T1A\mid A1T0A\\ &A\to A0\mid 0\mid A1\mid 1\\ &T\to 0T0\mid 1T1\mid \# \end{align*}

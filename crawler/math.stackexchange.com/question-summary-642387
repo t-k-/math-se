@@ -1,0 +1,24 @@
+Q\subset\mathbb C
+f:D\to Q
+D=\{|z|<1\}
+\ell(w) = \mathrm{dist}(w, \partial Q)
+w\in Q
+|f'(z)|(1-|z|^2)\ge \ell(f(z))
+z = 0
+z \in D
+h(\zeta) = f(T(\zeta))
+T(\zeta) = \frac{\zeta+z}{1+\overline{z}\zeta}.
+h\colon D \to Q
+h(0) = f(z)
+h'(0)= f'(z)\cdot T'(0) = f'(z)\cdot (1 - \lvert z\rvert^2).
+z = 0
+g
+f
+w_0 = f(0)
+g'(w_0)\cdot f'(0) = 1
+\lvert g'(w_0)\rvert \leqslant \frac{1}{\ell(w_0)}.\tag{1}
+0 < r < \ell(w_0)
+\begin{align} \lvert g'(w_0)\rvert &= \left\lvert \frac{1}{2\pi i} \int_{\lvert w-w_0\rvert = r} \frac{g(w)}{(w-w_0)^2}\,dw\right\rvert\\ &\leqslant \frac{1}{2\pi} \int_0^{2\pi} \frac{\lvert g(w_0 + re^{i\varphi})\rvert}{\lvert (w_0+re^{i\varphi})-w_0\rvert^2} r\,d\varphi\\ &\leqslant \frac{1}{r}, \end{align}
+\lvert g(w)\rvert < 1
+r \nearrow \ell(w_0)
+(1)

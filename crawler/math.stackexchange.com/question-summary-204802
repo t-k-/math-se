@@ -1,0 +1,23 @@
+(\Omega, \mathcal{F}, \mathbb{P})
+X
+\mathbb{P}(X\in [-M,M])=1
+M
+\mathbb{P}\left(|X-\mu|\geq \frac{\sigma^2}{4M} \right)\geq \frac{\sigma^2}{8M^2}
+\mu= \mathbb{E}(X)
+\sigma^2=\text{Var}(X)
+f(t):= \mathbb P(|X-\mu|\ge t)-\frac t{2M}
+[0,\infty)
+f(0)=1
+f(2M)=-1
+s=\inf\{t\ge0\mid f(t)\le 0\}
+s=0
+\sigma^2=0
+\mathbb P(|X-\mu|\ge0)\ge0
+0< s\le 2M
+\frac{\sigma^2}{4M}<s
+f\left(\frac{\sigma^2}{4M}\right)>0
+\le
+>
+ \sigma^2 = \int (x-\mu)^2 d\mu =\int_0^\infty 2r\mathbb P(|X-\mu|\ge r) dr\\ \le\int_0^s2r\cdot1\,dr+\int_s^{2M}2r\cdot\frac s{2M}dr\\ =s^2+2Ms-\frac{s^3}{2M}. 
+ \sigma^2\le s^2+2Ms-\frac{s^3}{2M}< 2Ms+2Ms-0=4Ms.
+ \mathbb P\left(|X-\mu|\ge \frac{\sigma^2}{4M}\right)>\frac{\sigma^2}{8M^2}.

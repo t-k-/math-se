@@ -1,0 +1,12 @@
+ \int _0^1 \frac{x^{a-1}(1-x)^{b-1}}{(x+c)^{a+b}}dx = \frac{B(a,b)}{(1+c)^ac^b}
+B(a,b) :=  \int _0^1 x^{a-1}(1-x)^{b-1}dx 
+\displaystyle   \int _0^1 \frac{x^{a-1}(1-x)^{b-1}}{(x+c)^{a+b}}dx = I
+(1+c)^ac^bI=\displaystyle  \int _0^1 \frac{(1+c)^ac^bx^{a-1}(1-x)^{b-1}}{(x+c)^{a+b}}dx 
+=\displaystyle  \int _0^1 \frac{(1+c)c((1+c)x)^{a-1}(c(1-x))^{b-1}}{(x+c)^{a+b}}dx 
+=\displaystyle  \int _0^1 \left(\frac{(1+c)c}{(x+c)^2}\right)\left(\frac{(1+c)x}{(x+c)}\right)^{a-1}\left(\frac{c(1-x)}{(x+c)}\right)^{b-1}dx
+\displaystyle y=\left(\frac{c(1-x)}{(x+c)}\right)
+\displaystyle dy=-\left(\frac{(1+c)c}{(x+c)^2}\right)dx
+=-\displaystyle\int _1^0y^{b-1}(1-y)^{a-1}dy=\int_0^1y^{b-1}(1-y)^{a-1}dy=B(b,a)=B(a,b)
+\displaystyle(1+c)^ac^bI=B(a,b)\Rightarrow I=\frac{B(a,b)}{(1+c)^ac^b}
+\dfrac{x}{x+c}=\dfrac{1}{1+c}t
+\dfrac{c}{(x+c)^2}dx=\dfrac{1}{1+c}dt

@@ -1,0 +1,14 @@
+\|e^A\|\le e^{\|A\|}
+A
+\|A\|:=\sup_{|x|=1}  |Ax|
+e^A:=I+A+A^2/2!+A^3/3!+\ldots
+\|e^A\|=\|I+A+A^2/2!+A^3/3!+\ldots\|=\sup_{|x|=1}\|(I+A+A^2/2!+A^3/3!+\ldots)x\|
+=\sup_{|x|}\|Ix+Ax+(A^2x)/2!+(A^3x)/3!+\ldots\| 
+\leq \sup_{|x|}\|Ix\| +\sup_{|x|=1}\|Ax\|+\frac{\sup_{|x|}\|A^2x\|}{2!}+\frac{\sup_{|x|}\|A^3x\|}{3!}+\ldots
+\sup
+n
+\| A^2\| \leq \| A\|^2
+ \| I+A+\frac{A^2}{2!}+\cdots +\frac{A^n}{n!} \| \leq \| I\| + \|A\|+\|\frac{A^2}{2!}\|+\cdots +\|\frac{A^n}{n!} \|  
+n\to \infty
+ \| I\| + \|A\|+\|\frac{A^2}{2!}\|+\cdots +\|\frac{A^n}{n!} \|  \leq \| I\| + \|A\|+\frac{1}{2!} \|A\|^2 +\cdots +\frac{1}{n!} \|A \|^n  
+ \|e^A \| = \|I+A+\cdots \| \leq \| I\| + \|A\|+\frac{1}{2!} \|A\|^2 +\cdots +\frac{1}{n!} \|A \|^n + \cdots = e^{\| A\|} 

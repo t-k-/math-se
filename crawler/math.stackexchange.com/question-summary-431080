@@ -1,0 +1,23 @@
+ |f'(z)| \le \frac{1}{1-|z|}
+f:B(0,1) \rightarrow B(0,1)
+||f||\le 1
+1-|z|
+z = 0
+\lvert f'(0)\rvert = \Biggl\lvert\frac{1}{2\pi i} \int\limits_{\partial D_r} \frac{f(\zeta)}{\zeta^2}\, d\zeta\Biggr\rvert \leqslant \frac{1}{2\pi} \int\limits_{\partial D_r} \frac{1}{\lvert\zeta\rvert^2}\,\lvert\zeta\rvert\, d\varphi = \frac{1}{r}
+0 < r < 1
+r \to 1
+z = 0
+T \colon w \mapsto \frac{w + z}{1 + \overline{z}w}.
+T \in \operatorname{Aut}(\mathbb{D})
+T(0) = z
+g = f \circ T \colon \mathbb{D} \to \mathbb{D}.
+\lvert g'(0)\rvert \leqslant 1
+g'(0) = f'(T(0)) \cdot T'(0) = f'(z)\cdot T'(0) \iff f'(z) = \frac{g'(0)}{T'(0)}.
+T'(w) = \frac{d}{dw} \frac{w+z}{1+\overline{z}w} = \frac{(1+\overline{z}w) - \overline{z}(w+z)}{(1+\overline{z}w)^2} = \frac{1 - \lvert z\rvert^2}{(1+\overline{z}w)^2}
+T'(0) = 1 - \lvert z\rvert^2
+\lvert f'(z)\rvert = \frac{\lvert g'(0)\rvert}{1 - \lvert z\rvert^2} \leqslant \frac{1}{1 - \lvert z\rvert^2} = \frac{1}{1 + \lvert z\rvert} \cdot \frac{1}{1 - \lvert z \rvert}.
+f \colon \mathbb{D} \to \mathbb{D}
+\biggl\lvert\frac{f(z) - f(w)}{1 - \overline{f(w)}f(z)} \biggr\rvert \leqslant \biggl\lvert\frac{z-w}{1-\overline{w}z} \biggr\rvert
+z-w
+w \to z
+\frac{\lvert f'(z)\rvert}{1 - \lvert f(z)\rvert^2} \leqslant \frac{1}{1 - \lvert z\rvert^2}, \quad z \in \mathbb{D}.

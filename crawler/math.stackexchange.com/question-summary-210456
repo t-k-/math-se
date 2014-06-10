@@ -1,0 +1,13 @@
+\int_t^\infty e^{-sx}f(x)dx
+f
+H
+H(t-a)
+\frac{e^{-as}}{s}
+\sigma
+F
+ \int_t^{\infty} e^{-sx}f(x)dx = \int_0^\infty e^{-sx} f(x)H(x-t) dx = \frac{1}{2\pi i}\int_{\sigma-i\cdot\infty}^{\sigma+i\cdot\infty}F(u)\frac{e^{-t(s-u)}}{s-u} du  
+\begin{eqnarray}   F(s) &=& \int_0^\infty e^{-sx}f(x)dx \\   H(x) &=& \begin{cases} 1 & \text{if } x \geq 0 \\ 0 & \text{otherwise}\end{cases}  \end{eqnarray}
+ \text{Unit Step Fuction : } \begin{eqnarray}     u(t-c)  \begin{cases} 1 & \text{if } t > c  \\ 0 & \text{otherwise}\end{cases}  \end{eqnarray} 
+ \mathcal{L} \left[ f(t-c) u(t-c) \right]=e^{-cs}F(s)
+ \mathcal{L} \left[ f(t) u(t-c) \right]=e^{-cs} \mathcal{L} \left[ f(t+c)\right]
+ \int_t^\infty e^{-sx}f(x)dx \space \triangleq  \space \mathcal{L} \left[ f(t) u(t-c) \right] 

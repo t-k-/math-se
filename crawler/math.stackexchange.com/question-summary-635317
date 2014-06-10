@@ -1,0 +1,36 @@
+X_n\rightarrow X
+f
+f(x)>0
+\dfrac{\vert x\vert}{f(x)}\rightarrow 0
+|x|\rightarrow\infty
+Ef(X_n)\leq C<\infty
+n
+EX_n\rightarrow EX
+\varepsilon>0
+\frac{|x|}{f(x)} \to 0
+|x| \to \infty
+k=k(\varepsilon)
+\frac{|x|}{f(x)} \leq \varepsilon \qquad \text{for all} \, |x| \geq \frac{k}{2}  \tag{1}
+m,n \in \mathbb{N}
+\begin{align*} \int |X_n-X_m| \, d\mathbb{P} &= \int_{|X_n-X_m| < \varepsilon} |X_n-X_m| \, d\mathbb{P}+ \int_{|X_n-X_m| \geq \varepsilon, |X_n-X_m| \leq k} |X_n-X_m| \, d\mathbb{P} \\ &\quad +\int_{|X_n-X_m| \geq \varepsilon, |X_n-X_m| > k} |X_n-X_m| \, d\mathbb{P} \\ &\leq \varepsilon + k \cdot \mathbb{P}(|X_n-X_m| \geq \varepsilon) + \int_{|X_n-X_m| > k} |X_n-X_m| \, d\mathbb{P} \tag{2} \end{align*}
+\begin{align*} \int_{|X_n-X_m| > k} |X_n-X_m| \, d\mathbb{P} &\leq 2 \sup_{n \in \mathbb{N}} \int_{|X_n|>k/2} \frac{|X_n|}{f(X_n)} f(X_n) \, d\mathbb{P}  \\ &\stackrel{(1)}{\leq} 2\varepsilon \sup_{n \in \mathbb{N}} \int f(X_n) \, d\mathbb{P} \leq 2\varepsilon \cdot C \tag{3} \end{align*}
+(2)
+(3)
+ \int |X_n-X_m| \, d\mathbb{P}\leq \varepsilon + k \cdot \mathbb{P}(|X_n-X_m| \geq \varepsilon) + 2\varepsilon \cdot C \stackrel{n,m \to \infty}{\to} \varepsilon (1+2C) \stackrel{\varepsilon \to 0}{\to} 0
+\mathbb{P}(|X_n-X_m| \geq \varepsilon) \to 0
+m,n \to \infty
+X_n \to X
+(X_n)_{n \in \mathbb{N}}
+L^1
+L^1(\mathbb{P})
+X_n \to Y
+L^1
+Y \in L^1
+X=Y
+X_n
+|x|/f(x) \to 0
+E[|X_n| 1_{|X_n|>\lambda}] \leq k E[f(X_n)] \leq k C
+k
+\lambda
+X_n
+L_1

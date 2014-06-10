@@ -1,0 +1,17 @@
+D
+f
+D
+w
+D
+f(w)=\frac{1}{\pi}\iint_{D}\frac{f(z)}{(1-\bar{z}w)^{2}}dxdy
+f(w)=\frac{1}{2\pi}\int_{\partial D}\frac{f(z)}{1-\bar{z}w}|dz|
+f
+f(z)=\sum\limits_{n=0}^\infty a_n z^n
+\sum\limits_{k=0}^\infty (k+1) \zeta^k = \frac{1}{(1-\zeta)^2}
+|\zeta|<1
+t
+0
+n\ne k
+2\pi
+ \begin{align*} \frac1\pi \iint_D & \frac{f(z)}{(1-\bar{z}w)^2} \, dx \, dy = \frac1\pi \int_0^1 \int_0^{2\pi} \sum_{n=0}^\infty a_n r^n e^{itn} \sum_{k=0}^\infty (k+1) r^k e^{-itk} w^k \, r \, dr \, dt \\ &=\frac{1}{\pi}\sum_{n,k=0}^\infty a_n (k+1) w^k \int_0^1  r^{n+k+1} \, dr \int_0^{2\pi} e^{it(n-k)} \, dt \end{align*} 
+ 2 \sum_{n=0}^\infty a_n (n+1) w^n \int_0^1 r^{2n+1} \, dr = \sum_{n=0}^\infty a_n w^n = f(w) 

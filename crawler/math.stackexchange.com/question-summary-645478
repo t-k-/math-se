@@ -1,0 +1,13 @@
+\int_{-\infty}^{\infty} \mathrm{Erfc}^2(x) e^{ax+b}dx
+a=1
+b=0.
+\Phi(\cdot)
+\phi(\cdot)
+\mathrm{Erfc}(x) = 2[1-\Phi(x\sqrt2)] = 2\Phi(-x\sqrt2)
+I=\int_{-\infty}^{\infty} \mathrm{Erfc}^2(x) e^{ax+b}dx = 4e^b\int_{-\infty}^{\infty}  e^{ax}\Phi(-x\sqrt2)^2 dx
+I = 4e^b\frac 1a\int_{-\infty}^{\infty}  \frac{de^{ax}}{dx}\Phi(-x\sqrt2)^2 dx
+=4e^b\frac 1a e^{ax}\Phi(-x\sqrt2)^2 \Big|_{-\infty}^{\infty} + \sqrt2\frac {4e^b}a\int_{-\infty}^{\infty}  e^{ax}2\Phi(-x\sqrt2)\phi(-x\sqrt2) dx 
+z =x\sqrt2 \Rightarrow dz = \sqrt2 dx
+\phi(\cdot)
+I = \frac {4e^b}a\int_{-\infty}^{\infty}  e^{(a/\sqrt2)z}2\phi(z)\Phi(-z) dz
+I =2^3\cdot a^{-1}\cdot  e^{b+a^2/4}\cdot \Phi(-a/2)

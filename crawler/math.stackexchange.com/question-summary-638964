@@ -1,0 +1,18 @@
+A(x_1,y_1,z_1),B(x_2,y_2,z_2),C(x_3,y_3,z_3)
+z_1=z_2=z_3
+(x-x_1)^2+(y-y_1)^2+(z-z_1)^2=d_1^2
+(x-x_1)^2+(y-y_1)^2+h^2=c_1 \cdot h^2
+c_1
+h
+(x-x_1)^2+(y-y_1)^2+h^2=(c_1 \cdot h)^2
+(x-x_2)^2+(y-y_2)^2+h^2=(c_2 \cdot h)^2
+(x-x_3)^2+(y-y_3)^2+h^2=(c_3 \cdot h)^2
+(x,y,h)
+2 \cdot M^T \cdot M \cdot X=M^T \cdot D
+(x_4,y_4,z_4)
+z_4=z_1=z_2=z_3
+(x-x_4)^2+(y-y_4)^2+h^2=(c_4 \cdot h)^2
+M=\begin{pmatrix}(x_4-x_1)&(y_4-y_1)&(z_4-z_1)\\(x_4-x_2)&(y_4-y_2)&(z_4-z_2)\\(x_4-x_3)&(y_4-y_3)&(z_4-z_3)\end{pmatrix}
+D=\begin{pmatrix}(d_1^2-d_4^2)-(x_1^2-x_4^2)-(y_1^2-y_4^2)-(z_1^2-z_4^2)\\(d_2^2-d_4^2)-(x_2^2-x_4^2)-(y_2^2-y_4^2)-(z_2^2-z_4^2)\\(d_3^2-d_4^2)-(x_3^2-x_4^2)-(y_3^2-y_4^2)-(z_3^2-z_4^2)\end{pmatrix}
+M=\begin{pmatrix}(x_4-x_1)&(y_4-y_1)&(h+z-h-z)\\(x_4-x_2)&(y_4-y_2)&(h+z-h-z)\\(x_4-x_3)&(y_4-y_3)&(h+z-h-z)\end{pmatrix}
+D=\begin{pmatrix}((c_1 \cdot h)^2-(C_4 \cdot h)^2)-(x_1^2-x_4^2)-(y_1^2-y_4^2)-((h+z)^2-(h+z)^2))\\((c_2 \cdot h)^2-(C_4 \cdot h)^2)-(x_1^2-x_4^2)-(y_1^2-y_4^2)-((h+z)^2-(h+z)^2))\\((c_3 \cdot h)^2)-(C_4 \cdot h)^2)-(x_1^2-x_4^2)-(y_1^2-y_4^2)-((h+z)^2-(h+z)^2))\end{pmatrix}

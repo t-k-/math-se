@@ -1,0 +1,24 @@
+b
+x
+y
+z
+\ldots
+ \gcd (b ^ x - 1, b ^ y - 1, b ^ z - 1 ,\ldots)= b ^ {\gcd (x, y, z, .. .)} - 1 
+\gcd(a^n - 1, a^m - 1) = a^{\gcd(n,m)} - 1
+n > m
+\gcd(a^n - 1, a^m - 1) = \gcd(a^n - 1, a^n - a^{n-m}) = \gcd(a^{n-m} - 1, a^m - 1).
+\gcd(n, m)
+d = \gcd(a^n - 1, a^m - 1)
+a^n \equiv 1 \bmod d, a^m \equiv 1 \bmod d \Rightarrow a^{nx+my} \equiv 1 \bmod d
+a^{\gcd(n,m)} \equiv 1 \bmod d
+d
+a^{\gcd(n,m)} - 1
+a^{\gcd(n, m)} - 1
+d
+e \cdot \gcd(n,m) = n
+f \cdot \gcd(n,m) = m
+a^{\gcd(n,m)}-1 \; |\; d .
+a_0 = 2, a_n = 2^{a_{n-1}} - 1
+1 \bmod p
+p
+\begin{eqnarray}\rm\ \ mod\,\ d\!:\ \ b^M,\:b^N\equiv 1&\iff&\rm ord(b)\ |\ M,N\iff ord(b)\ |\ (M,N)\iff b^{\,(M,N)}\equiv 1\\ \rm i.e.\ \ \ d\ |\ b^M\!-\!1,\:b^N\!-\!1\ &\iff&\rm\ d\ |\ b^{\,(M,N)}\!-\!1,\qquad\ \ \, where \rm\quad (M,N)\, :=\, gcd(M,N) \end{eqnarray}

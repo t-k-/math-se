@@ -1,0 +1,25 @@
+n = 10
+0
+1
+1
+0
+10
+1
+10
+=
+0
+10
+1
+10
+D
+= {10 \choose 0} D^0 (1 - D)^{10} + {10 \choose 1} D^1 (1 - D)^{9}
+D
+10000
+5000
+L
+\Pr\left(L > \frac12 (10000\text{ hours})\right) = e^{-1/2}
+(1-D)^{10} + 10 D (1-D)^9 = (e^{-1/2})^{10} + 10(1-e^{-1/2})(e^{-1/2})^9 = e^{-9/2}(10 - 9e^{-1/2}) \approx 0.05.
+f(x) = \lambda e^{-\lambda x}
+x
+\mu = \frac{1}{\lambda}
+P(\mathrm{defective})=\displaystyle\int_0^{5000} \frac{e^{x/10000}}{10000}  \mathrm{d}x

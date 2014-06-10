@@ -1,0 +1,51 @@
+\sqrt{1+\sqrt{2+\sqrt{3+\sqrt{4+\sqrt\ldots}}}}
+\begin{align} a_1 & = \sqrt 1\\ a_2 & = \sqrt{1+\sqrt2}\\ a_3 & = \sqrt{1+\sqrt{2+\sqrt 3}}\\ a_4 & = \sqrt{1+\sqrt{2+\sqrt{3+\sqrt 4}}}\\ &\vdots \end{align}
+\sqrt{r_1 + \sqrt{r_2 + \sqrt{\cdots + \sqrt{r_n}}}}
+[r_1, r_2, \ldots r_n]
+a_n= [1,2,\ldots n] \le \underbrace{[n, n,\ldots, n]}_n
+O(\sqrt n)
+a_{n^2}\le [1, \underbrace{4, 4, 4}_3, \underbrace{9, 9, 9, 9, 9}_5, \ldots, \underbrace{n^2,n^2,\ldots,n^2}_{2n-1}] 
+\lim_{n\to\infty} a_n
+1
+n
+k
+\sqrt{k+R}
+R
+n-1
+k+1
+R\lt 2k+2
+\sqrt{k+R}\lt \sqrt{3k+2}\lt 2k
+k \ge 2
+2
+\lt 4
+\le \sqrt{1+4}
+n\ge4
+\sqrt{2n} \le n-1
+\{a_n\}
+( a_k )_{k\in\mathbb{N}}
+0 \le a_k \le \alpha \lambda^{2^k}\quad\text{ for some }\quad \alpha, \lambda \in \mathbb{R}_{+}
+\;[r_1,r_2\ldots] = \sqrt{r_1 + \sqrt{r_2 + \ldots}}\;
+\begin{align} [a_n] & \le \sqrt{\alpha \lambda^{2^n}} =   \sqrt{\alpha}\lambda^{2^{n-1}} = [\alpha] \lambda^{2^{n-1}}\\ \implies [a_{n-1},a_n ] &\le \sqrt{\alpha\lambda^{2^{n-1}}+\sqrt{\alpha}\lambda^{2^{n-1}}} =\sqrt{\alpha+\sqrt{\alpha}}\lambda^{2^{n-2}} = [\alpha,\alpha]\lambda^{2^{n-2}}\\ \implies [a_{n-2},a_{n-1},a_n]&\le \sqrt{\alpha\lambda^{2^{n-2}} + \sqrt{\alpha+\sqrt{\alpha}}\lambda^{2^{n-2}}} = [\alpha,\alpha,\alpha]\lambda^{2^{n-3}}\\ &\;\vdots\\ \implies [a_1,\ldots,a_n] & \le \underbrace{ [ \alpha,\ldots,\alpha ] }_{n\text{ terms}}  \lambda\\ \implies [a_1, \ldots,a_n] & \le [ \alpha, \alpha, \ldots ]\lambda = \frac{1 + \sqrt{1+4\alpha}}{2}\lambda \end{align}
+n \le \sqrt{2}^{2^n-2}
+\alpha = \frac12
+\lambda = \sqrt{2}
+[1,2,\ldots,n] \le \underbrace{ [ \frac12,\ldots,\frac12 ]}_{n\text{ terms}} \lambda \le \frac{1+\sqrt{3}}{\sqrt{2}} \sim 1.931851 
+m, k \in \mathbb{Z}_{+}
+ m + k - 1 \le \frac{m^2}{m+1}\left(\sqrt{\frac{m+1}{m}}\right)^{2^k}
+[m,m+1,m+2,\ldots] \le \frac{\sqrt{m+1}+\sqrt{4m^2+m+1}}{2\sqrt{m}}
+m = 3
+O(10^{-2})
+[3,4,\ldots] \le \frac{1+\sqrt{10}}{\sqrt{3}} \implies [1,2,3,\ldots] \le \sqrt{1+\sqrt{2+\frac{1+\sqrt{10}}{\sqrt{3}}}} \sim 1.760214368 
+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\dots}}}}=\phi
+2
+2\phi=2\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\dots}}}}=\sqrt{4+4\sqrt{1+\sqrt{1+\sqrt{1+\dots}}}}=\sqrt{4+\sqrt{16+\sqrt{256+\sqrt{256^2+\dots}}}}>\sqrt{1+\sqrt{2+\sqrt{3+\sqrt{4+\dots}}}}
+\{a_n\}
+c>0
+\sqrt{a_{n+1}}<ca_n
+b_n=\sqrt{a_1+\sqrt{a_2+\cdots \sqrt{a_n}}}
+b_n<(c+1)\sqrt{a_1}
+b_n
+\lim_{n\to\infty}b_n
+a_n=n
+c>\sqrt{2}
+\log_{c+1} \left(\frac{b_n}{\sqrt{a_1}}\right)<\sum_{i=1}^{n-1}2^{-i}<1

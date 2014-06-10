@@ -1,0 +1,18 @@
+F_{n}
+ F_{n} = \sum_{i=1}^{n-1}  (F_{i}\cdot F_{n-i})  , F_0 = 0 , n>=2 
+ F_{n-1} = \sum_{i=1}^{n-2} (F_{i}\cdot F_{n-1-i}) 
+ A(x) = \sum_{n=0}^{∞} F_{i}\cdot x^n 
+ B(x) = \sum_{n=0}^{∞} F_{n-i}\cdot x^n 
+C(x) = A(x)\cdot B(x) = \left(\sum_{n=0}^{∞} F_{i}\cdot x^n \right)\cdot \left(\sum_{n=0}^{∞} F_{n-i}\cdot x^n\right)
+F_0=0
+f(x)=\sum_{n\ge 0}F_nx^n=\sum_{n\ge 1}F_nx^n\;.
+f(x)^2=\sum_{n\ge 2}\sum_{k=0}^nF_kF_{n-k}x^n=\sum_{n\ge 2}\sum_{k=1}^{n-1}F_kF_{n-k}x^n=\sum_{n\ge 2}F_nx^n=f(x)-F_1x\;,
+f(x)^2-f(x)+F_1x=0
+f(x)
+f(x)=\frac{1\pm\sqrt{1-4F_1x}}2\;,
+f(0)=F_0=0
+f(x)=\frac{1-\sqrt{1-4F_1x}}2\;.
+C_n
+\frac{1-\sqrt{1-4x}}{2x}=\sum_{n\ge 0}C_nx^n\;,
+\begin{align*} f(x)&=F_1x\left(\frac{1-\sqrt{1-4F_1x}}{2F_1x}\right)\\\\ &=F_1x\sum_{n\ge 0}C_nF_1^nx^n\\\\ &=\sum_{n\ge 0}\frac{F_1^{n+1}}{n+1}\binom{2n}nx^{n+1}\\\\ &=\sum_{n\ge 1}\frac{F_1^n}n\binom{2n-2}{n-1}x^n\;, \end{align*}
+F_n=\frac{F_1^n}n\binom{2n-2}{n-1}\;.

@@ -1,0 +1,17 @@
+A_n\in\mathbb{R}^{n\times n}
+\left[a_{i,j}\right] = \left\lbrace\begin{array}{cc} 1 & i=j \\ -j & i = j+1\\ i & i = j-1 \\ 0 & \text{other cases} \end{array} \right.
+\det{A_n}= \det{A_{n-1}}+\left(n-1\right)^2\cdot\det{A_{n-2}}
+a_n=\det A_n
+a_{n+1}=a_n+n^2\,a_{n-1}
+f(x)=\frac{K}{1-x}
+a_n = K\,n!
+a_1=1
+a_n=n!
+ f(x)=\sum_{n=1}^{+\infty}a_n \frac{x^n}{n!},\tag{1}
+f'(x) = \sum_{n=0}^{+\infty}a_{n+1}\frac{x^{n}}{n!},\tag{2}
+x\,f(x) = \sum_{n=2}^{+\infty}n\, a_{n-1} \frac{x^{n}}{n!},
+f(x)+x\,f'(x) = \sum_{n=2}^{+\infty}n^2\, a_{n-1} \frac{x^{n-1}}{n!},
+x\,f(x)+x^2\,f'(x) = \sum_{n=2}^{+\infty}n^2\, a_{n-1} \frac{x^{n}}{n!}.\tag{3}
+f'(x) = f(x) + x\, f(x) + x^2\,f'(x),
+ (1+x)\,f(x) = (1-x^2)\, f'(x)
+ f(x) = (1-x)\, f'(x)\tag{4}. 

@@ -1,0 +1,21 @@
+a_n>0
+n
+\frac{a_{n+1}}{a_n}\leq 1-\frac{p}{n}
+p>1
+\sum a_n < \infty
+\frac{a_{n+1}}{a_n}\leq 1-\frac{p}{n}< \left(1-\frac{1}{n}\right)^p = \frac{(n-1)^p}{n^p}
+\frac{b_n}{b_{n-1}}
+b_n = 1/n^p
+p>1
+n
+\frac{a_{n+1}}{a_n}\geq 1 - \frac{1}{n}-\frac{A}{n}
+A>0
+\sum a_n
+1 - \frac{1}{n} - \frac{A}{n} = \frac{n^2 - n - a}{n^2}= \frac{n-1}{n} - \frac{A}{n^2}
+A
+\log 
+(S_n)
+\ell
+\log(a_{n+1})-\log a_n \geq\log\left( 1 - \frac{1}{n} - \frac{A}{n^2}\right)= - \frac{1}{n} - \frac{A}{n^2}+O(  \frac{1}{n^2})=- \frac{1}{n} +O(  \frac{1}{n^2})
+\sum_{k=1}^{n-1} \log(a_{k+1})-\log a_k=\log(a_{n})-\log a_1\geq -\sum_{k=1}^{n-1} \left(\frac{1}{k} +O(  \frac{1}{k^2})\right)=-\log n+ S_n
+a_n\geq a_1\frac{e^{S_n}}{n}\sim_\infty a_1\frac{e^{\ell}}{n}

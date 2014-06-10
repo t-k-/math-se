@@ -1,0 +1,14 @@
+(A \land (B \rightarrow \neg A)) \rightarrow \neg B
+(A \land (\neg B \lor \neg A)) \rightarrow \neg B
+\neg (A \land (\neg B \lor \neg A)) \lor \neg B
+\neg A \lor \neg (\neg B \lor \neg A)) \lor \neg B
+\neg A \lor (B \land A) \lor \neg B
+\neg A \lor \neg B \lor (B \land A) 
+( \neg A \lor A) \land (\neg B \lor B) 
+\neg A \lor (B \land A) \lor \neg B
+(B \land A) \lor \neg B \lor \neg A
+(B \land A) \lor \neg(B \land A)
+\varphi \lor \neg\varphi
+\begin{align*} A\land(B\to\neg A)&\equiv A\land(\neg B\lor\neg A)\\ &\equiv(A\land\neg B)\lor(A\land\neg A)\\ &\equiv(A\land\neg B)\lor\bot\\ &\equiv A\land\neg B\;, \end{align*}
+\begin{align*} \big(A\land(B\to\neg A)\big)\to\neg B&\equiv(A\land\neg B)\to\neg B\\ &\equiv\neg(A\land\neg B)\lor\neg B\\ &\equiv(\neg A\lor\neg\neg B)\lor\neg B\\ &\equiv(\neg A\lor B)\lor\neg B\\ &\equiv\neg A\lor(B\lor\neg B)\\ &\equiv\neg A\lor\top\\ &\equiv\top\;, \end{align*}
+\top

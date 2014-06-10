@@ -1,0 +1,18 @@
+ \frac{1-p}{p} 
+ f_{x}(x) = \sum_{k=0}^{\infty} p(1-p)^{k} \delta (x-k) 
+f
+\int_{\Bbb R}xf(x)\,dx
+k=4
+x
+x=4
+\int_{\Bbb R} xp(1-p)^4\delta(x-4)\,dx = 4p(1-p)^4,
+\sum_{k=0}^\infty kp(1-p)^k.
+ \int_{\mathbb{R}}x\,\delta(x-k)\,\mathrm{d}x=k 
+ \begin{align} \sum_{k=0}^\infty kx^{k-1} &=\frac{\mathrm{d}}{\mathrm{d}x}\sum_{k=0}^\infty x^k\\ &=\frac{\mathrm{d}}{\mathrm{d}x}\frac1{1-x}\\ &=\frac1{(1-x)^2} \end{align} 
+ \begin{align} \color{#00A000}{\int_{\mathbb{R}}x}\sum_{k=0}^\infty p(1-p)^k\color{#00A000}{\delta(x-k)\,\mathrm{d}x} &=\sum_{k=0}^\infty \color{#00A000}{k}p(1-p)^k\\ &=p(1-p)\sum_{k=0}^\infty k\color{#C00000}{(1-p)}^{k-1}\\ &=p(1-p)\frac1{(1-\color{#C00000}{(1-p)})^2}\\ &=\frac{1-p}{p} \end{align} 
+ \begin{align} \sum_{k=0}^\infty k(k-1)x^{k-2} &=\frac{\mathrm{d}^2}{\mathrm{d}x^2}\sum_{k=0}^\infty x^k\\ &=\frac{\mathrm{d}^2}{\mathrm{d}x^2}\frac1{1-x}\\ &=\frac2{(1-x)^3} \end{align} 
+ \begin{align} \mathrm{E}\left((X-\mathrm{E}(X))^2\right) &=\mathrm{E}\left(X^2\right)-2\mathrm{E}(X)\mathrm{E}(X)+\mathrm{E}(X)^2\\ &=\mathrm{E}\left(X^2\right)-\mathrm{E}(X)^2\\ &=\sum_{k=0}^\infty k^2p(1-p)^k-\left(\frac{1-p}{p}\right)^2\\ &=\sum_{k=0}^\infty k(k-1)p(1-p)^k+\sum_{k=0}^\infty kp(1-p)^k-\left(\frac{1-p}{p}\right)^2\\ &=p(1-p)^2\sum_{k=0}^\infty k(k-1)\color{#C00000}{(1-p)}^{k-2}+\frac{1-p}{p}-\left(\frac{1-p}{p}\right)^2\\ &=p(1-p)^2\frac2{\left(1-\color{#C00000}{(1-p)}\right)^3}+\frac{1-p}{p}-\left(\frac{1-p}{p}\right)^2\\ &=\frac{1-p}{p^2} \end{align} 
+ \begin{align} \sum_{k=0}^\infty k(k-1)(k-2)x^{k-2} &=\frac{\mathrm{d}^3}{\mathrm{d}x^3}\sum_{k=0}^\infty x^k\\ &=\frac{\mathrm{d}^3}{\mathrm{d}x^3}\frac1{1-x}\\ &=\frac6{(1-x)^4} \end{align} 
+ \begin{align} \mathrm{E}\left((X-\mathrm{E}(X))^3\right) &=\mathrm{E}\left(X^3\right)-3\mathrm{E}\left(X^2\right)\mathrm{E}(X)+3\mathrm{E}(X)\mathrm{E}(X)^2-\mathrm{E}(X)^3\\ &=\mathrm{E}\left(X^3\right)-\mathrm{E}(X)^3-3\mathrm{E}(X)\mathrm{Var}(X) \end{align} 
+ \begin{align} \mathrm{E}\left(X^3\right) &=\sum_{k=0}^\infty k^3p(1-p)^k\\ &=\sum_{k=0}^\infty(k(k-1)(k-2)+\color{#00A000}{3k(k-1)}+\color{#0000FF}{k})p(1-p)^k\\ &=p(1-p)^3\sum_{k=0}^\infty k(k-1)(k-2)\color{#C00000}{(1-p)}^{k-3}+\color{#00A000}{6\left(\frac{1-p}{p}\right)^2}+\color{#0000FF}{\frac{1-p}{p}}\\ &=p(1-p)^3\frac6{(1-\color{#C00000}{(1-p)})^4}+6\left(\frac{1-p}{p}\right)^2+\frac{1-p}{p}\\ &=6\left(\frac{1-p}{p}\right)^3+6\left(\frac{1-p}{p}\right)^2+\frac{1-p}{p} \end{align} 
+ \begin{align} \mathrm{E}\left((X-\mathrm{E}(X))^3\right) &=6\left(\frac{1-p}{p}\right)^3+6\left(\frac{1-p}{p}\right)^2+\frac{1-p}{p}\\ &-\left(\frac{1-p}{p}\right)^3\\ &-3\frac{1-p}{p}\frac{1-p}{p^2}\\ &=\frac{(2-p)(1-p)}{p^3} \end{align} 

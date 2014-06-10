@@ -1,0 +1,43 @@
+ \{(x_i,y_i,z_i)\}_{i=1..n}
+ z(x,y) = \sum_i l_i\phi(r)\tag{1}
+\ \phi = r^2\ln(r) 
+ r = \sqrt{(x_i-x)^2+(y_i-y)^2} 
+ \Phi_{ij}=r_{ij}ln(r_{ij})
+r_{ij}=\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}
+ z_i = \Phi_{ij}l_j \tag{2}
+\Delta x * \Delta y 
+ \Delta z_i \approx l_i*\beta R^2(2ln(R)+1) 
+ \Delta z_i/l_i \approx \beta R^2(2ln(R)+1) \tag{4}
+ \epsilon 
+ r = \sqrt{(\Delta x/2)^2+(\Delta y/2)^2} \tag{5}
+ \Phi_{ij} 
+ \phi(x) = - \sum_{t=1}^N m_i \log(\|x-x_i\|)
+ \phi(x) = -\Re\left(  \sum_i m_i \log(x-x_i)\right)
+x,x_i\in \mathbb{C}
+\|x\|>\|x_i\|
+x_i
+x
+\sum_i m_i\log(x-x_i)= 
+\sum_i m_i\log(x) +m_i \log(1-\frac{x_i}{x})= 
+ \log(x)\sum_i m_i - \sum_i m_i \sum_{n=1}^\infty \frac{x_i^n}{x^nn} =
+\log(x)\sum_i m_i - \sum_{n=1}^\infty \frac1{x^nn}\sum_i m_i x_i^n
+K
+\sum_i m_ix_i^n
+\phi
+K
+N
+\phi
+\log(x)\sum_i m_i - \sum_{n=1}^K \frac1{x^nn}\sum_i m_i x_i^n
+K=0
+\phi(x) = \log(x)\sum_i m_i
+\sum_i l_i
+ f(x) = \sum_i w_i \|x-x_i\|^2 \log \|x-x_i\|
+x,x_i \in \mathbb{C}
+ f(x) = \Re\left( \sum_i w_i (x-x_i)(x-x_i)^*\log(x-x_i)\right)
+\|x\|>\|x_i\|
+ \sum_i w_i (x-x_i)(x-x_i)^* \log(x-x_i) = 
+ \sum_i w_i (x-x_i)(x-x_i)^* (\log(x)+ \log(1-\frac{x_i}{x})=
+ \sum_i w_i (xx^* -x^*x_i - xx_i^* + x_ix_i^*)\left(\log(x) - \sum_{n=1}^\infty \frac{x_i^n}{x^nn}\right)= 
+K=0
+f(x) \approx \Re\left( \log(x)\sum_i w_i (xx^* -x^*x_i - xx_i^* + x_ix_i^*) \right)
+f(x) \approx \Re\left( xx^*\log(x)\sum_i w_i \right)

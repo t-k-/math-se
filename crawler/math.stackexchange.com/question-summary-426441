@@ -1,0 +1,9 @@
+\operatorname{div}(\operatorname{rot}\vec{F}),\qquad \operatorname{rot}(\operatorname{rot}\vec{F}) 
+\operatorname{rot}(\vec{r}\operatorname{div}(r^4\operatorname{grad}(r^4)))
+\operatorname{div}(f( r)\cdot \textbf r)= \partial_i(f( r)\cdot \textbf r)_i = \partial_i(f( r)\cdot x_i)= \partial _if(r)x_i+f(r)\partial_ix_i= f'(r)\frac{x_i}{r}x_i+3f(r)=rf'(r)+3f(r) 
+\epsilon_{ijk}=-\epsilon_{jik} = \epsilon_{jki}
+\begin{eqnarray*} (\mathrm{grad}\, f)_i &=& \partial_i f \\ \mathrm{div}\,{\bf F} &=& \partial_i F_i \\ (\mathrm{rot}\,{\bf F})_i &=& \epsilon_{ijk} \partial_j F_k \\ \Delta &=& \partial^2 = \partial_i\partial_i. \end{eqnarray*}
+\begin{eqnarray*} \epsilon_{ijk}\epsilon_{ilm} &=& \delta_{jl}\delta_{km}-\delta_{jm}\delta_{kl}. \end{eqnarray*}
+\begin{eqnarray*} \mathrm{div}(\mathrm{rot}\,{\bf F}) &=& \partial_i (\mathrm{rot}\,{\bf F})_i \\ &=& \partial_i (\epsilon_{ijk} \partial_j F_k) \\ &=& \epsilon_{ijk} \partial_i \partial_j F_k \\ &=& \epsilon_{ijk} \partial_j \partial_i F_k \\ &=& -\epsilon_{jik} \partial_j \partial_i F_k \\ &=& -\epsilon_{ijk} \partial_i \partial_j F_k \\ &=& 0 \end{eqnarray*}
+\begin{eqnarray*} [\mathrm{rot}(\mathrm{rot}\,{\bf F})]_i &=& \epsilon_{ijk} \partial_j (\mathrm{rot}\,{\bf F})_k \\ &=& \epsilon_{ijk} \partial_j (\epsilon_{klm}\partial_l F_m) \\ &=& \epsilon_{ijk} \epsilon_{klm} \partial_j \partial_l F_m \\ &=& \epsilon_{kij} \epsilon_{klm} \partial_j \partial_l F_m \\ &=& (\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}) \partial_j \partial_l F_m \\ &=& (\partial_m \partial_i - \delta_{im} \partial^2)F_m \\ &=& \partial_i(\mathrm{div}\,{\bf F}) - (\Delta{\bf F})_i \end{eqnarray*}
+\mathrm{rot}(\mathrm{rot}\,{\bf F})  = \mathrm{grad}(\mathrm{div}\,{\bf F}) - \Delta{\bf F}.

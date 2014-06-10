@@ -1,0 +1,15 @@
+X
+\mathcal{L}(X)
+L:X\to X
+\|L\|_\mathcal{L}=\sup\{\|L(x)\|_X;\;\|x\|_X=1\}
+T,F:(0,\infty)\to\mathcal{L}(X)
+T(t)F(t)
+\{T(t)\}_{t\geq 0}
+\{F(t)\}_{t\geq 0}
+h \ne 0
+h\rightarrow 0
+T
+F
+t
+ \begin{align}     & \frac{1}{h}\left[T(t+h)F(t+h)-T(t)F(t)\right]\\     & =\frac{1}{h}\{T(t+h)-T(t)\}F(t+h)+T(t)\frac{1}{h}\{F(t+h)-F(t)\}\\     & =\frac{1}{h}\{T(t+h)-T(t)\}F(t) + T(t)\frac{1}{h}\{F(t+h)-F(t)\} \\     & + \frac{1}{h}\{T(t+h)-T(t)\}\{F(t+h)-F(t)\} \end{align} 
+ \begin{align}       & \left\|\frac{1}{h}\left[T(t+h)F(t+h)-T(t)F(t)\right]-\left[T'(t)F(t)+T(t)F'(t)\right]\right\| \\      & \le \left\|\frac{1}{h}[T(t+h)-T(t)]-T'(t)\right\|\|F(t)\|        +\|T(t)\|\left\|\frac{1}{h}[F(t+h)-F(t)]-F'(t)\right\| \\      & + \left\|\frac{1}{h}[T(t+h)-T(t)]\right\|\left\|\frac{1}{h}[F(t+h)-F(t)]\right\||h|. \end{align} 

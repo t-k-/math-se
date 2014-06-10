@@ -1,0 +1,16 @@
+A(\omega)
+c/(1-(1-c)e^{-i\omega})
+(x_n)_{n\in\mathbb{N}}
+f_n
+f_0 = 0
+f_{n+1} = (1-c)f_n + c\cdot x_{n+1}
+f_n = Ae^{i\omega n}
+x_n = e^{i\omega n}
+f_{n+1} = e^{i\omega (n+1)} = e^{i\omega} e^{i\omega n} = e^{i\omega} f_n
+e^{i\omega} A e^{i\omega n} = (1-c)Ae^{i\omega n} + c e^{i\omega} e^{i\omega n}
+A(\omega) = \frac{c}{1 - (1-c)e^{-i\omega}}
+x_n = \sin(\omega n) = \frac1{2i}(e^{i\omega n}-e^{-i\omega n})
+f_n = \frac1{2i}(A(\omega)e^{i\omega n}-\bar A(\omega)e^{-i\omega n}) = |A(\omega)| \sin(\omega n + \phi)
+A(\omega) =: |A(\omega)| e^{i\phi}
+A(\omega)
+|A(\omega)|

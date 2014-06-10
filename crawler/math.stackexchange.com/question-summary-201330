@@ -1,0 +1,42 @@
+k^n
+n=3
+n!
+n \in \mathbb{N}
+r \in \mathbb{Z}
+ n! \equiv \sum_{k=0}^{n}(-1)^{k}\binom{n}{k}(n-k+r)^{n} 
+\mathbf E
+\Bbb R
+\Bbb Z
+(\mathbf{E}f)(x)=f(x+1)
+\mathbf\Delta
+(\mathbf{\Delta} f)(x)=f(x+1)-f(x)
+\mathbf 1
+\mathbf{1}f=f
+\mathbf{\Delta}=\mathbf{E}-\mathbf{1}
+\mathbf{\Delta}^n=(\mathbf{E}-\mathbf{1})^n=\sum_{k=0}^n(-1)^k\binom{n}k\mathbf{E}^{n-k}\;,
+\begin{align*} \mathbf{\Delta}^nf(r)&=\sum_{k=0}^n(-1)^k\binom{n}k\mathbf{E}^{n-k}f(r)\\ &=\sum_{k=0}^n(-1)^{n-k}\binom{n}kf(r+n-k)\;. \end{align*}
+f(x)=x^n
+\mathbf{\Delta}^nf(r)=\sum_{k=0}^n(-1)^{n-k}\binom{n}k(r+n-k)^n\;.\tag{1}
+\mathbf{\Delta}^nf
+n!
+n
+f
+\mathbf{\Delta}^kf
+0
+k\ge 1
+\mathbf{\Delta}x^n=(x+1)^n-x^n=\sum_{k=0}^{n-1}\binom{n}kx^k
+\begin{align*} \mathbf{\Delta}^nx^n&=\sum_{k=0}^{n-1}\binom{n}k\mathbf{\Delta}^{n-1}x^k\\ &=\binom{n}{n-1}(n-1)!\\\\ &=n(n-1)!\\\\ &=n!\;, \end{align*}
+(1)
+f(x)=a_0 x^n+a_1x^{n-1}+\ldots+a_n
+n
+f(x+1)-f(x)
+x
+n-1
+n a_0
+f(x)=x^n
+n
+x
+n!
+ \sum_{k=0}^n (-1)^k {n\choose k}(x+n-k)^n 
+D = \partial/\partial x
+\begin{eqnarray*} \sum_{k=0}^{n}(-1)^{k}\binom{n}{k}(n-k+r)^{n} &=&  \sum_{k=0}^{n}(-1)^{n-k} \binom{n}{k}(k+r)^{n} \\ &=& \left.\left(x D\right)^n  \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} x^{k+r}\right|_{x=1} \\ &=& \left.\left(x D\right)^n x^r(x-1)^n \right|_{x=1} \\ &=& \left.D^n (x-1)^n\right|_{x=1} \\ &=& n! \end{eqnarray*}

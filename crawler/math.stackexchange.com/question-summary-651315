@@ -1,0 +1,12 @@
+\iint_D\sin(xy)dA
+D
+y=\frac 1x, y=\frac2x, y=x, y=2x
+1\leq x\leq 2, 1\leq y\leq 2.
+-\frac14\sin(4)+\frac 54\sin(2)-\sin(1)
+ \begin{cases} xy & = u \\ \frac{y}{x} & = v, \end{cases} 
+dA = dx \, dy = \begin{vmatrix} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} \end{vmatrix} \, du \, dv.
+ \begin{align} x & = \sqrt{\frac{u}{v}} \\ y & = \sqrt{uv}. \end{align} 
+ \begin{align} \mathcal{J} & = \begin{vmatrix} \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} \end{vmatrix} \\  & = \begin{vmatrix} \frac{1}{2} \frac{1}{\sqrt{uv}} & - \frac{1}{2} \frac{\sqrt{u}}{v} \\ \frac{1}{2} \sqrt{\frac{v}{u}} & \frac{1}{2} \sqrt{\frac{u}{v}} \end{vmatrix} \\  & = \frac{1}{4} \left[ \frac{1}{v} + \sqrt{v} \right]. \end{align} 
+I = \iint\limits_{D} \sin (xy) \, dA = \int_1^2 \hspace{-5pt} \int_1^2 \sin (u) \frac{1}{4} \left[ \frac{1}{v} + \sqrt{v} \right] \, du \, dv.
+I = \frac{1}{4} \left( (\cos (1) - \cos(2)) \left( \ln (2) + \frac{2}{3} \left( 2^{3/2} -1 \right) \right) \right).
+I \approx 0,457206

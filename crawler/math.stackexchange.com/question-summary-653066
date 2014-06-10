@@ -1,0 +1,42 @@
+f(z):=z^{1/2}
+z \in \mathbb{C}
+|z - 1| < 1.
+z
+f(z) = \sum_{k=0}^{\infty} {1/2 \choose k} (z-1)^{k},
+z^{1/2}
+D(1,1).
+f(z) = \sum_{k=0}^{\infty} a_k(z-z_0)^k, \quad \forall z \in D(z_0,r),
+f(z) = \sum_{k=0}^{\infty} b_k (z-z_1)^k, \quad \forall z \in D(z_1,r_1),
+b_{k}
+\sum_{n=k}^{\infty} {n \choose k} a_n (z_1-z_0)^{n-k},
+k = 0, 1, \ldots, 
+|z_1 - z_0| < r
+r_1 := r - |z_1 - z_0|.
+\rm{e}^{i \pi/4} \in D(1,1)
+z^{1/2}
+z_1 = \rm{e}^{i \pi/4}
+f(z) = \sum_{k=0}^{\infty} \left(\sum_{n=k}^{\infty} {n \choose k} {1/2 \choose n} (\rm{e}^{i \pi/4} - 1)^{n-k} \right) (z-z_1)^k.
+f(z) = \rm{e}^{i \pi/8} \sum_{k=0}^{\infty}\rm{e}^{-i k\pi/4} {1/2 \choose k} (z-z_1)^k,
+z = i,
+\sum_{n=k}^{\infty} {n \choose k} {1/2 \choose n} (\rm{e}^{i \pi/4} - 1)^{n-k} = \rm{e}^{i \pi/8}\rm{e}^{-i k\pi/4} {1/2 \choose k},
+k = 0, 1 \ldots.
+k
+k=0.
+f
+z_1
+\dfrac{f^{(k)}(z_1)}{k!}
+z^{1/2}
+z_1^{1/2} = \sum_{n=0}^\infty \binom{1/2}{n}(z_1-1)^n,
+k= 0
+z_1
+\frac{1}{2}z_1^{1/2}z_1^{-1} = \sum_{n=1}^\infty \binom{n}{1}\binom{1/2}{n}(z_1-1)^{n-1}
+k = 1
+\frac{d}{dz_1} z_1^{1/2-k}\binom{1/2}{k} = (k+1)\cdot z_1^{1/2-(k+1)}\binom{1/2}{k+1},
+\begin{align} \frac{d}{dz_1}\sum_{n=k}^\infty \binom{n}{k}\binom{1/2}{n}(z_1-1)^{n-k} &= \sum_{n=k+1}^\infty (n-k)\binom{n}{k}\binom{1/2}{n}(z_1-1)^{n-(k+1)}\\ &= \sum_{n=k+1}^\infty (k+1)\binom{n}{k+1}\binom{1/2}{n}(z_1-1)^{n-(k+1)}. \end{align}
+k+1
+k+1
+k
+1
+z_1
+\lvert z_1-1\rvert < 1
+\begin{align} \sqrt{z} &= \sqrt{z_1}\cdot \sqrt{\frac{z}{z_1}}\\ &= \sqrt{z_1}\sqrt{1 + \left(\frac{z}{z_1}-1\right)}\\ &= \sqrt{z_1}\sum_{k=0}^\infty \binom{1/2}{k}\left(\frac{z}{z_1}-1\right)^k\\ &= \sqrt{z_1}\sum_{k=0}^\infty z_1^{-k}\binom{1/2}{k}(z-z_1)^k. \end{align}

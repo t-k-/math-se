@@ -1,0 +1,28 @@
+e^{At}
+A
+A^k
+A
+k
+k=\{0\ldots 4\}
+A
+ A = \begin{bmatrix}  -2 & 2& 0 \\  0 & 1 & 0 \\  1 & -1 & 0  \end{bmatrix} 
+ \frac{1}{6} \begin{bmatrix} 3(-1)^k2^{k+1} & 2(2-(-1)^k2^{k+1}) & 0 \\ 0 & 6 & 0 \\ 3(-(-2)^k+0^k) & 2(-1+(-2)^k) & 6*0^k \end{bmatrix} 
+e^{At}
+\sum_{k=0}^{\infty}\frac{0^kt^k}{k!} = e^{0t} = 1
+0^0 = 1
+ e^{At} =  \begin{bmatrix} \frac{1}{6}\sum_{k=0}^{\infty}\frac{3(-1)^k2^{k+1}t^k}{k!} & \frac{1}{6}\sum_{k=0}^{\infty}\frac{2(2-(-1)^k2^{k+1})t^k}{k!} & 0 \\ 0 & \frac{1}{6}\sum_{k=0}^{\infty}\frac{6t^k}{k!} & 0 \\ \frac{1}{6}\sum_{k=0}^{\infty}\frac{3(-(-2)^k+0^k)t^k}{k!} & \frac{1}{6}\sum_{k=0}^{\infty}\frac{2(-1+(-2)^k)}{k!} & \frac{1}{6}\sum_{k=0}^{\infty}\frac{6^k*0^k}{k!} \end{bmatrix} 
+ \begin{bmatrix}  e^{-2t} & e^{2t} & 0 \\  0 & e^{t} & 0 \\  e^{t} & e^{-t} & 1 \end{bmatrix} 
+e^{At}
+A_{11} = e^{-2t}
+A_{13} = A_{21} = A_{23} = A_{33} = 1
+A_{22} = e^t
+A_{12}
+ A_{12}=\frac{1}{6}\sum_{k=0}^{\infty}\frac{2(2-(-1)^k2^{k+1})t^k}{k!}=\frac{2}{6}\left(\sum_{k=0}^{\infty}\frac{2t^k}{k!}-\sum_{k=0}^{\infty}\frac{(-1)^k2^{k+1}t^k}{k!}\right)=\frac{4}{6}\left(\sum_{k=0}^{\infty}\frac{t^k}{k!}-\sum_{k=0}^{\infty}\frac{(-1)^k2^{k}t^k}{k!}\right)=\frac{4}{6}\left(e^t-e^{-2t}\right) 
+e^{2t}
+0\ldots 4
+A
+e^{At} = e^{VDV^Tt} = \sum_k \frac{(VDV^Tt)^k}{k!} = \sum_k V\frac{D^k t^k}{k!} V^T = Ve^{Dt}V^T
+V
+e^D
+D
+t

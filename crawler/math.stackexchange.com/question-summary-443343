@@ -1,0 +1,67 @@
+ E[(S_n)^2;S_{2n}=0]=\frac{n}2\,P[S_{2n-2}=0]. 
+S_0=0
+S_n=\sum\limits_{k=1}^nX_k
+n\geqslant1
+(X_k)_{k\geqslant1}
+P[X_k=+1]=P[X_k=-1]=\frac12
+E[(S_n)^2;S_{2n}=0] = E\left[\left(\sum_{i=1}^nX_i\right)^2 ; S_{2n}=0\right]=E\left[\sum_{i=1}^nX_i^2 + \sum_{i\neq j}X_iX_j ; S_{2n}=0\right]
+E[(S_n)^2;S_{2n}=0]=E\left[\sum_{i=1}^nX_i^2 ; S_{2n}=0\right]+ E\left[\sum_{i\neq j}X_iX_j ; S_{2n}=0\right] 
+X_i^2=1
+i
+(X_i,X_j)
+S_{2n}=0
+i\ne j
+X_i
+S_{2n}
+(X_i)
+E[(S_n)^2;S_{2n}=0] = nP[S_{2n}=0] +n(n-1)E\left(X_{2n-1}X_{2n}; S_{2n}=0\right)
+X_{2n-1}X_{2n}
+\{-1,1\}
+q \equiv P[X_{2n-1}X_{2n}=-1; S_{2n}=0]
+P[X_{2n-1}X_{2n}=1; S_{2n}=0]=P[S_{2n}=0]-q
+E\left(X_{2n-1}X_{2n};S_{2n}=0\right) = -1\cdot q + 1\cdot(P[S_{2n}=0]-q) = P[S_{2n}=0]-2q
+X_{2n-1}X_{2n}=-1
+X_{2n-1}+X_{2n} = 0
+S_{2n-2}=S_{2n}
+S_{2n-2}
+X_{2n-1}+X_{2n}
+P[X_{2n-1}+X_{2n} = 0]= \frac 12
+q= P[S_{2n-2}=0,S_{2n}=0]= P[S_{2n-2}=0,X_{2n-1}+X_{2n} = 0]= \frac 12 P[S_{2n-2}=0]
+ E\left(X_{2n-1}X_{2n}; S_{2n}=0\right) =P[S_{2n}=0]-P[S_{2n-2}=0]
+E[(S_n)^2;S_{2n}=0] = nP[S_{2n}=0] +n(n-1)\Big (P[S_{2n}=0] - P[S_{2n-2}=0]\Big) 
+=n^2P[S_{2n}=0] - n(n-1)P[S_{2n-2}=0] \qquad [A]
+Y_k
+1/2
+Y_k = B(k,1/2)
+S_n
+P[S_{2n}=0] = P[Y_{2n}=n],\qquad P[S_{2n-2}=0] =P[Y_{2n-2}=n-1]
+P[S_{2n-2}=0]
+P[Y_{2n}=n]
+P[Y_{2n-2}=n-1]
+P[Y_{2n}=n] = \frac 1{2^{2n}}{2n \choose n} = \frac 12 \frac {2n-1}{n}\frac 1{2^{2n-2}}{2n-2 \choose n-1} = \frac {2n-1}{2n}P[Y_{2n-2}=n-1]
+S
+E[(S_n)^2;S_{2n}=0] = n^2\frac {2n-1}{2n}P[S_{2n-2}=0] - n(n-1)P[S_{2n-2}=0]
+=\frac{n}2\,P[S_{2n-2}=0]\Big (2n-1 - 2(n-1)\Big) = \frac{n}2\,P[S_{2n-2}=0]
+P[S_{2n}=0]
+P[S_{2n-2}=0]
+[A]
+P[S_{2n}=0]
+P[S_{2n-2}=0]
+\{S_{2n}=0\}
+3\times 2
+P[S_{2n}=0] = P[E_0 \cup E_1 \cup E_2] = P[E_0] + P[E_1]+P[E_2]
+ P[S_{2n}=0] = \frac 12 P[S_{2n-2}=0] + \frac 12 P[S_{2n-2}=2]
+[A]
+E[(S_n)^2;S_{2n}=0] = n^2\left( \frac 12 P[S_{2n-2}=0] + \frac 12 P[S_{2n-2}=2]\right) - n(n-1)P[S_{2n-2}=0] 
+\Rightarrow E[(S_n)^2;S_{2n}=0] = \frac n2 (2-n)P[S_{2n-2}=0] + \frac {n^2}2P[S_{2n-2}=2] \qquad [B]
+P[S_{2n-2}=0] = P[Y_{2n-2}=n-1],\;\; P[S_{2n-2}=2] = P[Y_{2n-2}=n]
+Y_{2n-2}
+G_Y(z) = \left (\frac 12 +\frac 12z\right)^{2n-2}
+P[S_{2n-2}=0] = P[Y_{2n-2}=n-1] = \frac 1 {(n-1)!}G_Y^{(n-1)}(0)
+P[S_{2n-2}=2] = P[Y_{2n-2}=n] = \frac 1 {n!}G_Y^{(n)}(0)
+G_Y^{(n)}(0) = (n-1)G_Y^{(n-1)}(0) = (n-1)\cdot[(n-1)!]P[Y_{2n-2}=n-1]
+P[S_{2n-2}=2] = P[Y_{2n-2}=n] = \frac {n-1}{n} P[Y_{2n-2}=n-1] = \frac {n-1}{n}P[S_{2n-2}=0]
+[B]
+E[(S_n)^2;S_{2n}=0] = \frac n2 (2-n)P[S_{2n-2}=0] + \frac {n^2}2\frac {n-1}{n}P[S_{2n-2}=0] 
+\Rightarrow \frac n2P[S_{2n-2}=0] \cdot (2-n+n-1) = \frac n2P[S_{2n-2}=0]
+E[(S_n)^2 \mid S_{2n}=0] = \frac {n^2}{2n-1}

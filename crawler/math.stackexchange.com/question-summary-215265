@@ -1,0 +1,11 @@
+0^0
+\lim_{x \to 1} \sqrt{x-1}^{\,\sin(πx)}
+u(x)=\sqrt{x-1}^{\sin(\pi x)}
+\displaystyle\lim_{x\rightarrow 1^+}\sqrt{x-1}^{\sin(\pi x)}=\lim_{x\rightarrow 1^+}u(x)=\lim_{x\rightarrow 1^+}e^{\ln u(x)}=e^{\displaystyle\lim_{x\rightarrow 1^+}\ln u(x)}=e^0=1.
+L =\lim_{x \to 1} \sqrt{x-1}^{\sin(πx)}
+\lim_{x \to 1^+} \sqrt{x-1}^{\sin(\pi x)}
+\underbrace{\lim_{x \to 1^+} \sqrt{x-1}^{\sin(\pi x)} = \lim_{t \to 0} t^{\sin(\pi(1+t^2))}}_{x = 1 + t^2} = \lim_{t \to 0} t^{\sin(\pi t^2)}
+f(t) = t^{\sin(\pi t^2)} \implies \log(f(t)) = \sin \left(\pi t^2 \right) \log(t)
+\left \vert \sin \left(\pi t^2 \right) \log(t) \right \vert \leq \left \vert \pi t^2 \log(t) \right \vert
+\displaystyle \lim_{t \to 0} t^2 \log(t) = 0 \text{ (Why?)}
+\lim_{t \to 0} \log(f(t)) = 0 \implies \lim_{t \to 0} f(t) = 1 \text{ (Why?)}

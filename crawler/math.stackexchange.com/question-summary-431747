@@ -1,0 +1,116 @@
+\overline\rho(f,g)=\sup   \overline d(f(x),g(x))
+X
+X
+f_n \colon x \mapsto \frac{x}{n}
+\mathbb{R}^\mathbb{R}
+f_n \to 0
+X
+K_0 \subset K_1 \subset K_2 \subset \ldots,\quad K_n \text{ compact }, \bigcup_{n=0}^\infty K_n = X
+K \subset X \text{ compact} \Rightarrow \bigl(\exists n \in \mathbb{N}\bigr) (K \subset K_n)
+X
+\sigma
+(K_n)
+n
+K_n \subset \overset{\circ}{K}_{n+1}
+\varrho_n(f,g) := \sup_{x\in K_n} d\bigl(f(x),\,g(x)\bigr).
+\varrho_n
+Y^X
+d
+\varrho_n
+ \delta_n(f,\,g) := \min \{ \varrho_n(f,\,g),\, 1\} \text{ or } \delta_n(f,\,g) = \frac{\varrho_n(f,\,g)}{1 + \varrho_n(f,\,g)}.
+\varrho(f,\,g) = 0 \Rightarrow f = g
+1 \geqslant \varepsilon_n > 0
+\lim\limits_{n\to\infty} \varepsilon_n = 0
+\varepsilon_n = 2^{-n}
+\delta(f,\,g) = \sup_{n\in \mathbb{N}} \{\varepsilon_n\cdot \delta_n(f,\,g)\},
+\sum \varepsilon_n < \infty
+\delta(f,\,g) = \sum_{n = 0}^\infty \varepsilon_n\cdot \delta_n(f,\,g).
+Y^X \times Y^X \to \mathbb{R}
+\varrho_n
+\delta(f,\,g) = 0 \iff f = g
+\varrho_n(f,\,f) = 0
+n
+f \neq g \Rightarrow \varrho_n(f,\,g) > 0
+n
+\varepsilon > 0
+n(\varepsilon)
+\varepsilon_{n(\varepsilon)}\cdot \delta_{n(\varepsilon)}(f,\,h) \geqslant \delta(f,\,h) - \varepsilon
+\begin{aligned} \delta(f,\,h) &\leqslant \varepsilon_{n(\varepsilon)}\cdot\delta_{n(\varepsilon)}(f,\,h) + \varepsilon\\ &\leqslant \varepsilon_{n(\varepsilon)}\cdot\delta_{n(\varepsilon)}(f,\,g) + \varepsilon_{n(\varepsilon)}\cdot\delta_{n(\varepsilon)}(g,\,h) + \varepsilon\\ &\leqslant \delta(f,\,g) + \delta(g,\,h) + \varepsilon \end{aligned}
+g
+\delta_{n(\varepsilon)}
+\varepsilon \to 0
+\delta
+\delta
+Y^X
+f \in Y^X
+K \subset X
+n \in \mathbb{N}
+K \subset K_n
+1 > \varepsilon > 0
+\begin{aligned} \{g \in Y^X \colon \sup_{x \in K}d\bigl(f(x),\,g(x)\bigr) < \varepsilon \} &\supset \{g \in Y^X \colon \varrho_n(f,\,g) < \varepsilon \} \\ &\supset \{g \in Y^X \colon \delta_n(f,\,g) < \frac{\varepsilon}{1+\varepsilon}\}\\ &\supset \{g \in Y^X \colon \delta(f,\,g) < \varepsilon_n\cdot\frac{\varepsilon}{1+\varepsilon} \}. \end{aligned}
+f
+\mathcal{T}_\kappa
+f
+\mathcal{T}_\delta
+\delta
+\mathcal{T}_\kappa \subset \mathcal{T}_\delta
+\varepsilon > 0
+n
+\varepsilon_n < \varepsilon
+h \in \{ g \in Y^X \colon \sup\limits_{x \in K_n} d\bigl(f(x),\,g(x)\bigr) < \varepsilon_n \}
+\delta(f,h) \leqslant \varepsilon_n < \varepsilon
+m \geqslant n
+\varepsilon_m \cdot \delta_m(f,\,h) \leqslant \varepsilon_m \leqslant \varepsilon_n
+m < n
+\delta_m(f,\,h) < \delta_n(f,\,h) < \varepsilon_n
+\varepsilon_m \cdot \delta_m(f,\,h) \leqslant \delta_m(f,\,h) \leqslant \delta_n(f,\,h) < \varepsilon_n
+\mathcal{T}_\delta
+f
+\mathcal{T}_\kappa
+\mathcal{T}_\delta \subset \mathcal{T}_\kappa
+\delta
+f_n
+f_n(x)
+Y
+f
+f_n
+f
+Y^X
+X
+\sigma
+\mathbb{Q}
+\sigma
+\mathbb{R}
+c
+\mathbb{Q}
+c \colon \mathfrak{P}(\mathbb{Q}) \setminus \{\varnothing\} \to \mathbb{Q}; \quad c(S) \in S.
+\mathbb{Q}
+\mathbb{N}
+\mathbb{Q}
+f \in \mathbb{R}^\mathbb{Q}
+(U_n)
+f
+U_n \supset U_{n+1}
+U_n
+\{g \colon sup_{K_n} \lvert f(x)-g(x)\rvert \leqslant \varepsilon_n
+\varepsilon_n
+K_n \subset K_{n+1}
+K = \{0\} \cup \{ c\bigl((2^{-(n+1)},\,2^{-n})\setminus K_n\bigr) \colon n \in \mathbb{N}\}
+K
+K_n
+V(K,\,1) = \{ g \colon \lvert f-g\rvert_K \leqslant 1\}
+U_n
+x_n = c\bigl((2^{-(n+1)},\,2^{-n})\setminus K_n\bigr)
+h(x_n) = n
+h(x) = 0
+x
+x_n
+K_n
+x_n
+U_n
+f + \tau\cdot h
+\tau > 0
+\tau\cdot h
+K
+f + \tau\cdot h \notin V(K,\,1)
+\mathbb{R}^\mathbb{Q}

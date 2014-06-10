@@ -1,0 +1,75 @@
+a\ge 0
+I(a)
+I(a)=\int_{0}^{\pi}\ln\left(1-2a\cos x+a^2\right)dx.
+f_n(x) \to \frac{2a-2\cos x}{1-2a\cos x+a^2}
+n \to \infty
+|f_n(x)|\le \frac{2a+2}{(1-a)^2}
+\lim_{n\to\infty}\int_0^\pi f_n(x)dx = \int_0^\pi \frac{2a-2\cos x}{1-2a\cos x+a^2} dx=I'(a)
+\begin{align*} f_n(x) &= \frac{\ln\left(1-2 \left(a+\frac{1}{n}\right)\cos x+\left(a+\frac{1}{n}\right)^2\right)-\ln\left(1-2a\cos x+a^2\right)}{\frac{1}{n}}\\ &=\frac{\ln\left(\displaystyle\frac{1-2 \left(a+\frac{1}{n}\right)\cos x+\left(a+\frac{1}{n}\right)^2}{1-2a\cos x+a^2}\right)}{\frac{1}{n}}\\ &=\frac{\ln\left(1+\dfrac{1}{n}\left(\displaystyle\frac{2a-2\cos x+\frac{1}{n}}{1-2a\cos x+a^2}\right)\right)}{\frac{1}{n}}. \end{align*}
+\int_0^\pi \frac{2a-2\cos x}{1-2a\cos x+a^2}=\int_0^\pi\left(1-\frac{(1-a)^2}{1-2a\cos x+a^2}\right)dx.
+\int_0^\pi\frac{dx}{1-2a\cos x+a^2}=\int_0^\infty\frac{\frac{dy}{1+t^2}}{1-2a\frac{1-t^2}{1+t^2}+a^2}=\int_0^\infty\frac{dt}{1+t^2-2a(1-t^2)+a^2(1+t^2)}=\int_0^\infty\frac{dt}{(1-a)^2+\left((1+a)t\right)^2}\stackrel{(*)}{=}\frac{1}{(1-a)^2}\int_0^\infty\frac{dt}{1+\left(\frac{1+a}{1-a}t\right)^2}=\frac{1}{(1-a)(1+a)}\int_0^\infty\frac{du}{1+u^2}=\frac{1}{(1-a)(1+a)}\frac{\pi}{2}.
+I'(a)=\frac{\pi}{2}\left(2-\frac{1-a}{1+a}\right)\Rightarrow I(a)=\frac{\pi}{2}\left(3a-2\ln\left(a+1\right)\right).
+(*)
+a=1
+[0,1), (1,\infty)
+x \mapsto \pi - x
+I(a) = \int^\pi_0 \log \left (1 + 2a\cos x + a^2 \right ) \, dx = I(-a)
+\dagger
+I(a) = I(-a). \tag{$\dagger$}
+x \mapsto \frac{1}{2}x
+\pi
+x \mapsto 2\pi - x
+(\dagger)
+\star
+\begin{align*} I(a) + I(-a) &= \int^{\pi}_{0}\log \! \Big ( \left (1 - 2a\cos x + a^2 \right ) \left (1 + 2a\cos x + a^2 \right ) \Big) \> dx\\ &= \int^{\pi}_{0}\log \! \Big ( \left (1 + a^2 \right )^2 - \left (2a\cos x \right )^2 \Big) \> dx.\\ \end{align*}
+\begin{align*} I(a) + I(-a)&= \int^{\pi}_{0}\log \left ( 1 + 2a^2 + a^4 - 2a^2 \left ( 1 + \cos 2x \right ) \right) \, dx\\ &= \int^{\pi}_{0}\log \left ( 1 - 2a^2\cos 2x + a^4 \right) \, dx,\\ \end{align*}
+\begin{align*} I(a) + I(-a) &= \frac{1}{2}\int^{2\pi}_{0}\log \left ( 1 - 2a^2\cos x + a^4 \right) \, dx.\\ \end{align*}
+\begin{align*} I(a) + I(-a) &= \frac{1}{2} I(a^2) + \frac{1}{2}\int^{2\pi}_{\pi}\log \left ( 1 - 2a^2\cos x + a^4 \right) \, dx\\ &= \frac{1}{2} I(a^2) + \frac{1}{2}\int^{\pi}_{0}\log \left ( 1 - 2a^2\cos x + a^4 \right) \, dx\\ &= I(a^2). \end{align*}
+I(a)= \frac{1}{2}I(a^2). \tag{$\star$}
+(\star)
+I(0) = 0
+I(1) = 0
+0 \le a < 1
+(\star)
+n
+I(a) = \frac{1}{2^n} I \left ( a^{2^{n}} \right ). 
+n \to \infty
+\frac{1}{2^n} \to 0
+a^{2^{n}} \to 0
+I \left ( a^{2^{n}} \right ) \to 0
+ I(a) = 0. 
+a > 1
+0 < 1/a < 1
+I(1/a) = 0
+\begin{align*} I(a) &= \int^\pi_0 \log \! \Big ( a^2 \left ((1/a)^2 + (1/a)\cos x + 1 \right ) \Big ) \> dx\\ &= 2\pi\log(a) + I(1/a)\\ &= 2\pi\log\left(a\right). \end{align*}
+(\dagger)
+a
+a
+I(a) =  \begin{cases} 0 &\text{if } |a| \le 1;\\ 2\pi\log|a| &\text{otherwise}. \end{cases}
+\gamma=r\,e^{i[0,2\pi]}
+ \begin{align} \int_0^\pi\log\left(1-2r\cos(\theta)+r^2\right)\,\mathrm{d}\theta &=\int_0^{2\pi}\log\sqrt{1-2r\cos(\theta)+r^2}\,\mathrm{d}\theta\\ &=\mathrm{Re}\left(\int_\gamma\log(z-1)\frac{\mathrm{d}z}{iz}\right) \end{align} 
+r\le1
+z=0
+0
+0
+r\gt1
+\log(z-1)
+\{t\in\mathbb{R}:t\ge1\}
+\gamma=r\,e^{i[0,2\pi]}
+[r,1]
+[1,r]
+0
+2\pi\log(r)
+ \int_r^12\pi i\frac{\mathrm{d}z}{iz}+\int_1^r0\frac{\mathrm{d}z}{iz}=-2\pi\log(r) 
+ \int_0^\pi\log\left(1-2r\cos(\theta)+r^2\right)\,\mathrm{d}\theta =\left\{\begin{array}{l} 0&\text{if }r\le1\\ 2\pi\log(r)&\text{if }r\gt1 \end{array}\right. 
+\newcommand{\+}{^{\dagger}}  \newcommand{\angles}[1]{\left\langle\, #1 \,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\, #1 \,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\, #1 \,\right\rbrack}  \newcommand{\ceil}[1]{\,\left\lceil\, #1 \,\right\rceil\,}  \newcommand{\dd}{{\rm d}}  \newcommand{\down}{\downarrow}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}  \newcommand{\fermi}{\,{\rm f}}  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{{\rm i}}  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\isdiv}{\,\left.\right\vert\,}  \newcommand{\ket}[1]{\left\vert #1\right\rangle}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\, #1 \,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\vphantom{\large A}\,#2\,}\,}  \newcommand{\sech}{\,{\rm sech}}  \newcommand{\sgn}{\,{\rm sgn}}  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}  \newcommand{\wt}[1]{\widetilde{#1}}
+\ds{{\rm I}\pars{a} = \int_{0}^{\pi}\ln\pars{1 - 2a\cos\pars{x} + a^{2}}\, \dd x:\      {\large ?}.\qquad a \geq 0}
+ {\rm I}\pars{a}= -\,\half\ic\int_{\verts{z}=1 \atop {\vphantom{\Huge A}\verts{{\rm Arg}\pars{z}} < \pi}} \ln\pars{\bracks{z - \mu_{<}}\bracks{\mu_{>} - z}}\,{\dd z \over z} +\half\ic\int_{\verts{z}=1 \atop {\vphantom{\Huge A}\verts{{\rm Arg}\pars{z}} < \pi}} \ln\pars{z \over a}\,{\dd z \over z} 
+ \half\ic\int_{\verts{z}=1 \atop {\vphantom{\Huge A}\verts{{\rm Arg}\pars{z}} < \pi}} \ln\pars{z \over a}\,{\dd z \over z} =\half\ic\int_{-\pi}^{\pi}\ln\pars{\expo{\ic\theta} \over a}\,{\expo{\ic\theta}\ic\,\dd\theta \over \expo{\ic\theta}} = \pi\ln\pars{a} 
+\ds{\color{#c00000}{a > 0}}
+\color{#00f}{\large% {\rm I}\pars{a} = \Theta\pars{a - 1}\bracks{2\pi\ln\pars{a}}} 
+\ds{{\rm I}\pars{a}}
+\ds{\color{#c00000}{{\rm I}\pars{a}\ \mbox{is an}\ \ul{\mbox{even}}\ \mbox{function of}\ a}}
+\ds{\color{#c00000}{{\rm I}\pars{0} = 0}}
+\ds{\color{#c00000}{\forall\ a \in {\mathbb R}}}
+\color{#00f}{\large% {\rm I}\pars{a} = \Theta\pars{\verts{a} - 1}\bracks{2\pi\ln\pars{\verts{a}}}} 

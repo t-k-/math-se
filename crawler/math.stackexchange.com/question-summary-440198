@@ -1,0 +1,21 @@
+d
+\mathbf{R}^{n}
+\|d\|_{\infty} < 1
+\mathbf{1}
+2
+z > -1
+f(z)
+(-1,\infty)
+f(0) = 0
+ \sum_{i=1}^{n} \log(1 + d_{i}) \geq \mathbf{1}^{T} d - \frac{\|d\|_{2}^{2}}{2 (1 - \|d\|_{\infty})}, 
+ \log(1+z) \geq \frac{z}{1+z} = z - \frac{z^{2}}{1+z} 
+ f(z) = \log(1+z) - \frac{z}{1+z} 
+d_{i} \geq -\|d\|_{\infty}
+i = 1 , \ldots , n
+2
+ \sum_{i=1}^{n} \log(1 + d_{i}) \geq \sum_{i=1}^{n} \left( d_{i} - \frac{d_{i}^{2}}{1 + d_{i}} \right) = \mathbf{1}^{T} d - \sum_{i=1}^{n} \frac{d_{i}^{2}}{1 + d_{i}}. 
+ \sum_{i=1}^{n} \log(1 + d_{i}) \geq \mathbf{1}^{T} d - \sum_{i=1}^{n} \frac{d_{i}^{2}}{1 - \|d\|_{\infty}} = \mathbf{1}^{T} d - \frac{\|d\|_{2}^{2}}{1 - \|d\|_{\infty}}. 
+\log(1+x)\ge x - \frac{x^2}{2(1-|x|)}
+\log(1+d_{i})
+i = 1 , \ldots , n
+ \begin{align*} \log(1+d_{i}) & = \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k} d_{i}^{k} \\ & = d_{i} - \frac{1}{2} d_{i}^{2} \sum_{k=2}^{\infty} \frac{2 (-1)^{k+1}}{k} d_{i}^{k-2} \\ & = d_{i} - \frac{1}{2} d_{i}^{2} \sum_{k=0}^{\infty} \frac{2 (-1)^{k+1}}{k+2} d_{i}^{k} \\ & \geq d_{i} - \frac{1}{2} d_{i}^{2} \sum_{k=0}^{\infty} |d_{i}|^{k} \\ & = d_{i} - \frac{d_{i}^{2}}{2 (1 - |d_{i}|)} \\ & \geq d_{i} - \frac{d_{i}^{2}}{2 (1 - \|d\|_{\infty})} \end{align*} 

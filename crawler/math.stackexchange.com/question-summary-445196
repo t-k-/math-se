@@ -1,0 +1,42 @@
+i
+\psi_i
+x_i
+j
+0\leq j\leq N
+\psi_i
+\bar a(x)
+\rho_j=\bar a_jh/\epsilon
+h=x_i-x_{i-1}
+\epsilon\psi_i^{''}+(\bar a(x)\psi_i)^{'}=0, \;\;\; \psi_i(x_j)=\delta_{ij}.
+\bar a(x)=\bar a_i, \forall x\in (x_{i-1},x_i].
+\psi_j
+[x_{j-1},x_{j+1}]
+\psi_i(x_j)
+1
+x_j
+0
+x_{j-1}
+x_{j+1}
+[x_{j-1},x_j]
+a= a_{j-1}
+\psi|_{x\in [x_{j-1},x_j]} = \psi_j(x)
+\psi(x)
+[x_{j-1},x_j]
+[x_{j},x_{j+1}]
+a = a_{j}
+\psi(x_{j}) = 1, \;\psi(x_{j+1}) = 0
+ \epsilon \psi'' + a \psi' = 0,\; \text{with }\;\psi(x_{j-1}) = 0, \;\psi(x_{j}) = 1. \tag{1} 
+ \psi(x) = c_1 + c_2 e^{-ax/\epsilon}.\tag{2} 
+ c_1 = \frac{e^{-ax_{j-1}/\epsilon}}{e^{-ax_{j-1}/\epsilon}-e^{-ax_j/\epsilon}},\quad c_2 = \frac{1}{e^{-ax_j/\epsilon} - e^{-ax_{j-1}/\epsilon}}. 
+ c_1 = \frac{1}{1-e^{-a(x_j-x_{j-1})/\epsilon}} = \frac{1}{1-e^{-\rho_j}}, 
+ c_2 = \frac{1}{ e^{-ax_{j-1}/\epsilon}(e^{-a(x_j-x_{j-1})/\epsilon} -1)} = \frac{e^{ax_{j-1}/\epsilon}}{ e^{-\rho_j} -1 }. 
+ \psi(x) = \frac{1}{1-e^{-\rho_j}} - \frac{e^{ax_{j-1}/\epsilon}}{1- e^{-\rho_j}} e^{-ax/\epsilon} =  \frac{1-e^{-\rho_j(x-x_{j-1})/h}}{1-e^{-\rho_j}}. 
+\psi_j(x)
+[x_{k},x_{k+1}]
+[x_{j-1},x_j]
+[x_{j},x_{j+1}]
+\psi_j(x_{k}) = 0
+\psi_j(x_{k+1}) = 0
+c_1
+c_2
+\{\psi_j\}

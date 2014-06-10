@@ -1,0 +1,29 @@
+p(x)
+m
+q(x)
+m+1
+\sum_{i=0}^{n}p(i)=q(n)
+q(x)
+x^{\underline{n}}
+n
+x
+1
+ x^{\underline{n}}=\prod_{k=0}^{n-1}(x-k)=x(x-1)(x-2)\ldots(x-n+1)
+\begin{eqnarray} x^{\underline{0}} & & & = & 1 \\ x^{\underline{1}} & & & = & x \\ x^{\underline{2}} & = & x(x-1) & = & x^2-x\\ x^{\underline{3}} & = & x(x-1)(x-2) & = & x^3 - 3x^2 + 2x\\ \end{eqnarray}
+x^{\underline{n}}
+n
+p(x)=3x^2-x+5
+p(x) = 3x^2 - x + 5 = 3x^{\underline{2}} + 2x+5 = 3x^{\underline{2}} + 2x^\underline{1} + 5 = 3x^{\underline{2}} + 2x^\underline{1} + 5x^\underline{0}
+x
+n
+\sum_{x=0}^{n-1} x^{\underline{k}} = \frac{1}{k+1}n^{\underline{k+1}}
+p(x)
+x^{\underline{k}}
+\frac{1}{k+1}(n+1)^{\underline{k}}
+n
+(n+1)
+q(n)=\sum_{i=0}^{n} p(i)
+q(n)=\sum_{i=0}^n p(i)=\sum_{i=0}^n (3i^{\underline{2}} + 2i^\underline{1} + 5i^\underline{0})=(n+1)^{\underline{3}} + (n+1)^\underline{2} + 5(n+1)^\underline{1}
+q(n)=(n+1)^{\underline{3}} + (n+1)^\underline{2} + 5(n+1)^\underline{1}=n^3+n^2+5n+5=(n+1)(n^2+5)
+q(n)
+(m+1)

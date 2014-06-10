@@ -1,0 +1,38 @@
+P
+Q
+A=\begin{pmatrix} p_x & q_x \\ p_y & q_y \end{pmatrix},
+A
+U\Sigma V^T
+U\Sigma
+A
+(1,0)
+P
+(0,1)
+Q
+\{(1,1),(-1,1),(-1,-1),(1,-1)\}
+A
+A
+A
+A
+V^T
+\Sigma
+U
+V^T
+\theta
+\begin{align} p_x = \phantom{-}a \cos\theta &\qquad p_y = b \sin\theta \\ q_x = -a\sin\theta &\qquad q_y = b\cos\theta \end{align}
+a^2 = p_x^2 + q_x^2 \qquad\qquad b^2 = p_y^2 + q_y^2 \qquad\qquad (\text{and}\quad p_x q_y - p_y q_x = a b)
+\begin{align} p_x = \phantom{-}a \cos\theta \cos\phi - b \sin\theta \sin\phi &\qquad p_y = \phantom{-}a \cos\theta \sin\phi + b \sin\theta \cos\phi \\ q_x = -a \sin\theta \cos\phi - b \cos\theta \sin\phi &\qquad q_y = -a \sin\theta \sin\phi + b \cos\theta \cos\phi \end{align}
+\begin{align} p_x^2 + p_y^2 + q_x^2 + q_y^2 &= a^2 + b^2 &=: r \\ p_x q_y - p_y q_x &= a b &=: s \end{align}
+\begin{align} a + b &= \sqrt{a^2 + b^2 + 2 a b} = \sqrt{r + 2 s} \\ |a - b| &= \sqrt{a^2 + b^2 - 2 a b} = \sqrt{r - 2 s} \end{align}
+\{a,b\} = \frac{1}{2}\left(\sqrt{r + 2 s} \pm \sqrt{r - 2 s}\right)
+a \ge b
+ a = \frac{1}{2}\left(\sqrt{r+2s} + \sqrt{r-2s}\right) \qquad\qquad  b = \frac{1}{2}\left(\sqrt{r+2s} - \sqrt{r-2s}\right)
+\theta
+\phi
+\begin{align} p_x^2 + p_y^2 = a^2\cos^2\theta+b^2\sin^2\theta &\qquad q_x^2 + q_y^2 = a^2\sin^2\theta+b^2\cos^2\theta \\ p_x^2 + q_x^2 = a^2\cos^2\phi + b^2\sin^2\phi &\qquad p_y^2 + q_y^2 = a^2\sin^2\phi + b^2\cos^2\phi \end{align}
+\begin{align} \left(p_x^2+p_y^2\right)-\left(q_x^2+q_y^2\right) &= \left(a^2-b^2 \right)\left(\cos^2\theta-\sin^2\theta\right) = \sqrt{r^2 - 4 s^2}\;\cos 2\theta\\[6pt] \left(p_x^2+q_x^2\right)-\left(p_y^2+q_y^2\right) &= \left(a^2-b^2 \right)\left(\cos^2\phi-\sin^2\phi\right) = \sqrt{r^2-4s^2}\;\cos 2\phi \end{align}
+\cos 2\theta = \frac{\left(p_x^2+p_y^2\right)-\left(q_x^2+q_y^2\right)}{\sqrt{r^2-4s^2}} \qquad \cos 2\phi = \frac{\left(p_x^2+q_x^2\right)-\left(p_y^2+q_y^2\right)}{\sqrt{r^2-4s^2}}
+\theta
+P
+Q
+\phi

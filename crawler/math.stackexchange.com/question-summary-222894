@@ -1,0 +1,10 @@
+\frac{1}{2}x^TAx - B^Tx +C
+\frac{1}{2}A^Tx + \frac{1}{2}Ax - b
+x^TAx
+A^Tx + Ax
+\dfrac{\partial (x^Ty)}{\partial x} = y
+\dfrac{d(f(x,y))}{d x} = \dfrac{\partial (f(x,y))}{\partial x} + \dfrac{\partial y^T}{\partial x} \dfrac{\partial (f(x,y))}{\partial y}
+\dfrac{\partial (b^Tx)}{\partial x} = \dfrac{\partial (x^Tb)}{\partial x} = b
+y = Ax
+\dfrac{\partial (x^TAx)}{\partial x} = \dfrac{\partial (x^Ty)}{\partial x} +  \dfrac{\partial y^T}{\partial x} \dfrac{\partial (x^Ty)}{\partial y}
+\dfrac{\partial (x^TAx)}{\partial x} = \dfrac{\partial (x^Ty)}{\partial x} +  \dfrac{\partial y^T}{\partial x} \dfrac{\partial (x^Ty)}{\partial y} = y + \dfrac{\partial (x^TA^T)}{\partial x} \dfrac{\partial (x^Ty)}{\partial y} = y + A^Tx = (A+A^T)x

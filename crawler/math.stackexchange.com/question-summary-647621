@@ -1,0 +1,8 @@
+\lim_{n \rightarrow \infty}\int_0^{2 \pi} \frac{\sin(nx)}{x^2 +n^2}dx
+\sup_{x\in \left[0,2\pi\right]}\;\left|\frac{\sin(nx)}{x^2 +n^2}-0\right|\le \sup_{x\in \left[0,2\pi\right]}\;\left|\frac{1}{n^2}\right|\stackrel{n\to\infty}{\longrightarrow} 0
+\forall x\in\mathbb{R}, \qquad -1 \leqslant \sin x \leqslant 1
+\forall n \in \mathbb{N}^*, \qquad  \left| \int_0^{2\pi} \frac{\sin nx}{x^2 + n^2} dx \right|  \leqslant \int_{0}^{2\pi} \frac{dx}{x^2+n^2}
+ u = \frac{x}{n}
+\forall n \in \mathbb{N}^*, \qquad  \left| \int_0^{2\pi} \frac{\sin nx}{x^2 + n^2} dx \right|  \leqslant \frac{1}{n} \int_0^{\frac{2\pi}{n}} \frac{du}{1+u^2} = \frac{\arctan \frac{2\pi}{n}}{n}
+\lim_{x \to 0}\frac{\arctan x}{x} = 1
+\frac{\arctan \frac{2\pi}{n}}{n} = \frac{2\pi}{n^2} \frac{\arctan \frac{2\pi}{n}}{\frac{2\pi}{n}} \to 0

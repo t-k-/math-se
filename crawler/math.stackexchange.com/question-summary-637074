@@ -1,0 +1,26 @@
+g(x) = \sum_{k=0}^\infty T_{k}x^k
+\sum_{k=0}^\infty T_{k/2}x^k
+n < 2
+ T(n) = \begin{cases} const  & \text{if $n < 2$} \\ n + 2T(n/2) + const & \text{otherwise}  \\ \end{cases} 
+\sum_{k=1}^\infty T_k x^t = g(x) - T_0
+k=2t
+\sum_{t=0}^\infty T_{t}x^{2t} = \sum_{t=0}^\infty(T_tx^t)(1x^t)
+\sum T_{k/2} x^k
+\sum T_k x^{2k}
+\sum T_k (x^2)^k = g(x^2)
+T(n/2)
+T(\lfloor n/2 \rfloor)
+n = 0
+n = 1
+n \ge 2
+ T(n) = \begin{cases} c_0 & \text{if $n = 0$} \\ c_1 & \text{if $n = 1$} \\ n + 2T(\lfloor n/2 \rfloor) + c_2 & \text{if $n \ge 2$}  \\ \end{cases} 
+g(z) = \sum_n T(n)z^n = c_0 + c_1z + \sum_n (n + 2T(\lfloor n/2 \rfloor) + c_2) z^n
+g(z) - (c_0 + c_1z + \sum_n nz^n + \sum_n c_2 z^n) = \sum_n 2T(\lfloor n/2 \rfloor)z^n
+k
+T(k)
+2T(k)z^{2k}
+2T(k)z^{2k+1}
+\sum_k T(k)z^{2k}
+g(z^2)
+(1 + z)\sum_k 2 T(k) z^{2k},
+ g(z) = c_0 + c_1z + \frac{z}{(1-z)^2} + \frac{c_2}{1-z} + (1+z)g(z^2) 

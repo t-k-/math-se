@@ -1,0 +1,36 @@
+ t_{n+1} = t_n + 2\left\lfloor{n -1 \over 4} +1\right\rfloor , \; t_0 = 1
+2\lfloor \frac{n-1}{4} + 1 \rfloor
+2, 2, 2, 2, 4, 4, 4, 4, 6, 6, 6, 6, \dots
+n
+k
+4k \leq n
+k=\lfloor \frac{n}{4}\rfloor
+4k
+ 4\times 2 + 4\times 4 + \dots + 4\times 2k = 8(1+2+\dots + k) = 4k(k+1)
+4k+1
+n
+n-4k
+2(k+1)
+1
+t_0=1
+4k(k+1)+2(n-4k)(k+1)+1
+t_0
+t_1
+-1
+\;(1\cdot2)\;(2\cdot2)\;(3\cdot2)\;(4\cdot2)\;(3\cdot4)\;(4\cdot4)\;(5\cdot4)\cdots
+t_{n}=2{\lfloor\frac{n-1}{4}+1\rfloor}\cdot \left(n-1-2\lfloor\frac{n-1}{4}\rfloor\right)+1
+n
+4
+\lfloor\frac{n-1}{4}\rfloor=\lfloor\frac{n}{4}-1\rfloor
+\lfloor\frac{n-1}{4}\rfloor=\lfloor\frac{n}{4}\rfloor
+\bullet\;\;n
+4:
+t_{n+1}=2{\lfloor\frac{n}{4}+1\rfloor}\cdot \left(n-2\lfloor\frac{n}{4}\rfloor\right)+1=2{\lfloor\frac{n}{4}\rfloor}\cdot \left(n-2\lfloor\frac{n}{4}\rfloor\right)+n+1
+=2{\lfloor\frac{n}{4}\rfloor}\cdot \left(n-2\lfloor\frac{n}{4}\rfloor\right)+2{\lfloor\frac{n}{4}\rfloor}\cdot 2+1=2{\lfloor\frac{n}{4}\rfloor}\cdot \left(n+2-2\lfloor\frac{n}{4}\rfloor\right)+1
+=2{\lfloor\frac{n}{4}\rfloor}\cdot \left(n-1-2\lfloor\frac{n}{4}-1\rfloor\right)+2\lfloor\frac{n}{4}\rfloor+1
+=2{\lfloor\frac{n-1}{4}+1\rfloor}\cdot \left(n-1-2\lfloor\frac{n-1}{4}\rfloor\right)+2\lfloor\frac{n-1}{4}+1\rfloor+1
+=t_n+2\lfloor\frac{n-1}{4}+1\rfloor
+\bullet\;\;n
+4:
+t_{n+1}=2{\lfloor\frac{n}{4}+1\rfloor}\cdot \left(n-2\lfloor\frac{n}{4}\rfloor\right)+1=2{\lfloor\frac{n-1}{4}+1\rfloor}\cdot \left(n-2\lfloor\frac{n-1}{4}\rfloor\right)+1
+=2{\lfloor\frac{n-1}{4}+1\rfloor}\cdot \left(n-1-2\lfloor\frac{n-1}{4}\rfloor\right)+2\lfloor\frac{n-1}{4}+1\rfloor+1=t_n+2\lfloor\frac{n-1}{4}+1\rfloor

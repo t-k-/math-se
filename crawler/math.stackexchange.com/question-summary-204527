@@ -1,0 +1,32 @@
+y_i = \mu + \epsilon_i 
+i = 1,\ldots,n
+\epsilon_i
+E[\epsilon_i] = 0
+Var[\epsilon_i] = \sigma^2
+\mu
+\sum_i (y_i - \mu)^2
+\mu
+E[\mu]
+\mu
+\mu = \beta_0 + \beta_1 \cdot x_i
+\mu
+\hat{\mu}
+\hat{\mu}
+\sum_i (y_i - \hat{\mu})^2
+\sum_i y_i^2  - \sum_i 2 y_i \hat{\mu} +\sum_i \hat{\mu} ^2
+y_i = \mu + \epsilon_i
+E[y_i] = E[\mu] + E[\epsilon_i]
+E[\hat{\mu}]
+Var(\hat{\mu})
+y_i^2 = \mu^2 + 2 \mu \epsilon_i +\epsilon_i^2
+E[y_i^2] = \mu^2  + \sigma^2
+E\left[\left(\hat{\mu}-E[\hat{\mu}]\right)^2\right].
+0
+0
+\mu
+(\bar y - \mu)^2
+\mu=\bar y
+ \begin{align} \sum_{i=1}^n (y_i-\mu)^2 & = \sum_{i=1}^n ((y_i - \bar y) + (\bar y -\mu))^2 \\[8pt] & = \sum_{i=1}^n \left((y_i-\bar y)^2 + 2(y_i-\bar y)(\bar y-\mu) + (\bar y -\mu)^2 \right) \\[8pt] & = \left(\sum_{i=1}^n (y_i-\bar y)^2 \right) + \left(2(\bar y -\mu)\sum_{i=1}^n (y_i-\bar y)\right) + n(\bar y -\mu)^2 \\[8pt] & = (\text{something not depending on }\mu) + (0) + n(\bar y -\mu)^2.  \end{align} 
+\bar y
+ \operatorname{var}(\bar y) = \operatorname{var}\left(\frac{y_1+\cdots+y_n}{n}\right) = \frac{1}{n^2}\operatorname{var}(y_1+\cdots+y_n) 
+ = \frac{1}{n}(\sigma^2 + \cdots+\sigma^2) = \frac{1}{n^2}\cdot n\sigma^2 = \frac{\sigma^2}{n}. 

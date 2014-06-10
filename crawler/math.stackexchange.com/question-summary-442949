@@ -1,0 +1,16 @@
+X_1,X_2,\dots,X_N
+[0,M]
+f_X(x)
+F_X(x)
+Y= \min_{i\in \{1,\dots,N\}} X_i
+Y
+F_Y(y) = 1 - [1-F_X(y)]^N
+f_Y(y) = Nf_X(y)[1-F_X(y)]^{N-1}
+\text{var}(Y)  =  E[Y^2] - (E[Y])^2 =  2\int_0^M y [1-F_X(y)]^{N} dy - \Big[\int_0^M [1-F_X(y)]^{N} dy\Big]^2.
+\text{var}(Y)
+2\int_0^M y [1-F_X(y)]^{N} dy 
+y
+\int_0^M [1-F_X(y)]^{N} dy
+y
+y
+Y

@@ -1,0 +1,73 @@
+\mathbb{Q}[n]
+\le n
+X\subseteq \mathbb{Q}
+X[n]=X\cap \mathbb{Q}[n]
+X
+a/b
+\operatorname{gcd}(ab,3)=1
+a/b
+(x,y) \equiv (a,b) \pmod{3}
+(x,y)
+Y
+ (0,1),(0,2),(1,0),(2,0),(1,1),(1,2),(2,1),(2,2) 
+Y = [0,\lambda)
+\lambda > 0
+(x,y)
+A_{(x,y)}(n)
+a/b
+b\le n
+\operatorname{gcd}(a,b)=1
+a < \lambda b
+(a,b)\equiv(x,y\pmod{3}
+ A_{(x,y)}(n) = \sum_{b\le n}\sum_{\begin{matrix}\operatorname{gcd}(a,b)=1\\(a,b)\equiv (x,y) \pmod{3}\\a \le \lambda b\end{matrix}} 1 
+ \sum_{d \vert \operatorname{gcd}(a,b)}\mu(d) = \begin{cases}1 \quad&\text{if }\operatorname{gcd}(a,b)=1\\0&\text{otherwise}\end{cases} 
+ A_{(x,y)}(n) = \sum_{b\le n}\sum_{\begin{matrix}(a,b)\equiv (x,y) \pmod{3}\\a \le \lambda b\end{matrix}} \sum_{d\vert \operatorname{gcd}(a,b)} \mu(d) 
+b = kd, a = td
+t < \lambda k
+ A_{(x,y)}(n) = \sum_{d\le n} \mu(d) \sum_{\begin{matrix}kd\le n\\kd\equiv y\pmod{3}\end{matrix}}\sum_{\begin{matrix}t<\lambda k \\td\equiv x\pmod{3}\end{matrix}} 1 
+d
+3 \vert d
+(x,y)\not\equiv (0,0)\pmod{3}
+ \begin{align} A_{(x,y)}(n) &= \sum_{\begin{matrix}d\le n\\d\not\equiv 0\pmod{3}\end{matrix}} \mu(d) \sum_{\begin{matrix}kd\le n\\kd\equiv y\pmod{3}\end{matrix}}\sum_{\begin{matrix}t<\lambda k \\td\equiv x\pmod{3}\end{matrix}} 1\\ &=\sum_{\begin{matrix}d\le n\\d\not\equiv 0\pmod{3}\end{matrix}} \mu(d) \sum_{\begin{matrix}kd\le n\\kd\equiv y\pmod{3}\end{matrix}} \left(\frac{\lambda k}3 + O(1)\right) \\ &=\sum_{\begin{matrix}d\le n\\d\not\equiv 0\pmod{3}\end{matrix}}  \mu(d) \left( \frac{ \lambda n^2}{18d^2} + O(n/d) \right)\\ &=\frac{\lambda n^2}{18}\sum_{\begin{matrix}d=1\\d\not\equiv 0\pmod{3}\end{matrix}}^\infty \frac{\mu(d)}{d^2} + O(n) + O(n\log n) \end{align} 
+(x,y)
+1/8
+ B = \sum_{\begin{matrix}d=1\\d\not\equiv 0\pmod{3}\end{matrix}}^\infty \frac{\mu(d)}{d^2} 
+ B - \frac{B}{9} = \sum_{\begin{matrix}d=1\\d\not\equiv 0\pmod{3}\end{matrix}}^\infty \frac{\mu(d)}{d^2} +\sum_{\begin{matrix}d=1\\d\not\equiv 0\pmod{3}\end{matrix}}^\infty \frac{\mu(3d)}{(3d)^2} = \sum_{d=1}^\infty \frac{\mu(d)}{d^2} = \frac{1}{\zeta(2)} = \frac{6}{\pi^2}
+ B = \frac{27}{4\pi^2} 
+ A_{(x,y)}(n) = \frac{3\lambda }{8\pi^2} n^2 + O(n\log n) 
+m
+a/b
+m
+(x,y)
+\operatorname{gcd}(x,y,m)=1
+\{q_n\mid n\geqslant1\}
+p/q
+p+q
+p
+p+q
+(\xi_n)_{n\geqslant1}
+n
+\mathbb P(\xi_n=1)=\mathbb P(\xi_n=0)=\frac12
+X\subseteq\mathbb Q_+
+X=\{q_n\mid n\in N\}
+N=\{n\geqslant1\mid\xi_n=1\}
+X
+Y=(a,b)
+0\leqslant a\lt b
+Y
+X
+\mathbb Q
+\{-q_n\mid n\geqslant1\}
+\mathbb Q
+\alpha
+(0,1)
+\frac12
+(\xi^\alpha_n)_{n\geqslant1}
+n
+\mathbb P(\xi^\alpha_n=1)=\alpha
+\mathbb P(\xi^\alpha_n=0)=1-\alpha
+X_\alpha
+\alpha
+X_\alpha\subseteq X_\beta
+X_\alpha\subset X_\beta
+\alpha\lt\beta

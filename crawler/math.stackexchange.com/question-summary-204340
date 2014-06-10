@@ -1,0 +1,25 @@
+\lim\limits_{x\to -2} (3x^2+4x-2)=2 
+\epsilon,\delta
+\epsilon >0
+\delta > 0
+0<|x+2|<\delta\ \ \text{implies}\  |3x^2+4x-2-2|<\epsilon
+|3x^2+4x-2-2|=|3(x+2)^2-8x-16|
+=|3(x+2)^2-4(x+2)|
+\leq3|x+2|^2+4|x+2|
+<3\delta^2+4\delta
+3\delta^2+4\delta=\epsilon
+\epsilon>0
+\delta=\min\left(\sqrt{\dfrac{\epsilon}{6}},\dfrac{\epsilon}{8}\right)
+\begin{align*}0<|x+2|<\delta\ \ \to\ \ &|3x^2+4x-2-2|<3\delta^2+4\delta\\&<3\left(\sqrt{\frac{\epsilon}{6}}\right)^2+4\delta\\&=\frac{\epsilon}{2}+4\delta\\&<\frac{\epsilon}{2}+4\frac{\epsilon}{8}\\&=\frac{\epsilon}{2}+\frac{\epsilon}{2}\\&=\epsilon\end{align*}
+3\delta^2+4\delta=\epsilon
+\delta=\min\left(\sqrt{\dfrac{\epsilon}{6}},\dfrac{\epsilon}{8}\right)
+|3x^2+4x-2-2|=|3(x+2)^2-8x-16|=|3(x+2)^2-4(x+2)|
+\,8\,
+\,4\,
+|3x^2+4x-2-2|=|3(x+2)^2-8(x+2)|=
+|x+2|\,|3x-2|\stackrel{\text{for}\,|x+2|<0.5\Longrightarrow |3x-2|<10}<10|x+2|
+10|x+2|<\epsilon\Longrightarrow |x+2|<\frac{\epsilon}{10}
+\delta =\min\left(\frac{\epsilon}{10}\,,\,\frac{1}{24}\right)
+\epsilon>0
+\delta=\min\left(1,\dfrac{\epsilon}{11}\right)
+\begin{align*} 0<|x+2|<\delta\ \ \implies\ \ |(3x^2+4x-2)-2| &= |3x^2+4x-4| \\ &= |3x-2||x+2| \\ &= 3\left|x-\frac{2}{3}\right||x+2| \\ &= 3\left|x+2-\frac{8}{3}\right||x+2| \\ &\le 3\left(|x+2|+\left|\frac{-8}{3}\right|\right)|x+2| \text{ }\text{ }\text{ by triangle  ineq.}\\ &< 3\left(1 + \frac{8}{3}\right)|x+2| \text{ }\text{ }\text{ since }|x+2|<\delta\le1\\ &=11|x+2| \\ &<11\left(\frac{\epsilon}{11}\right) \text{ }\text{ }\text{ since }|x+2|<\delta\le\frac{\epsilon}{11}\\ &=\epsilon\end{align*}

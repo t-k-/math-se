@@ -1,0 +1,8 @@
+f:[0,a]\rightarrow\mathbb{R}
+f(0)=0
+\int_0^a \left(\frac{f(x)}{2x}\right)^2 dx \le \int_0^a (f'(x))^2 dx
+f(0)=0\Rightarrow\int_0^x 2f(y)f^{\prime}(y)\;\mathbb{d}y=f^2(x)
+x>0
+ \begin{eqnarray} \int_0^a \Big(\frac{f(x)}{2x}\Big)^2\;\mathbb{d}x&=&\int_0^a\int_0^x\Big(\frac{1}{2x}\Big)^2\cdot 2f(y)f^{\prime}(y)\;\mathbb{d}y\mathbb{d}x\\ &=&\int_0^af(y)f^{\prime}(y)\int_y^a\frac{1}{2x^2}\;\mathbb{d}x\mathbb{d}y\\ &=&\int_0^af(y)f^{\prime}(y)\cdot \frac{1}{2}(\frac{1}{y}-\frac{1}{a})\;\mathbb{d}y\\ &=&\int_0^af^{\prime}(x)\cdot \frac{f(x)}{2}(\frac{1}{x}-\frac{1}{a})\;\mathbb{d}x \end{eqnarray} 
+ \begin{eqnarray} \Big(\int_0^af^{\prime}(x)\cdot \frac{f(x)}{2}(\frac{1}{x}-\frac{1}{a})\;\mathbb{d}x  \Big)^2 &\le& \int_0^a\big(f^{\prime}(x)\big)^2\;\mathbb{d}x \cdot \int_0^a\Big(\frac{f(x)}{2}(\frac{1}{x}-\frac{1}{a})\Big)^2\;\mathbb{d}x\\ &\le& \int_0^a\big(f^{\prime}(x)\big)^2\;\mathbb{d}x \cdot \int_0^a\Big(\frac{f(x)}{2x}\Big)^2\;\mathbb{d}x \end{eqnarray} 
+ \Big(\int_0^a \Big(\frac{f(x)}{2x}\Big)^2\;\mathbb{d}x \Big)^2\le \int_0^a \Big(\frac{f(x)}{2x}\Big)^2\;\mathbb{d}x\cdot \int_0^a\big(f^{\prime}(x)\big)^2\;\mathbb{d}x 

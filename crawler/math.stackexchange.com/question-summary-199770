@@ -1,0 +1,11 @@
+g(f) = 1+\int_0^{1-f} g\left(\dfrac{f}{1-x}\right)\,dx
+g(f) = [1-(1-f)^{2}] + 2\int_0^{1-f} (1+g\left(\dfrac{f}{1-x}\right))x\,dx
+f
+\frac{d}{df} \int_0^{1-f} g\left(\dfrac{f}{1-x}\right)\,dx = -g\left(\frac{f}{1-(1-f)}\right) + \int_0^{1-f} g'\left(\frac{f}{1-x}\right) \frac{1}{(1-x)}\,dx
+= -1 + \int_0^{1-f} g'\left(\frac{f}{1-x}\right) \frac{1}{(1-x)}\,dx. 
+ \frac{d}{dx} g\left(\frac{f}{1-x}\right) = g'\left(\frac{f}{1-x}\right) \frac{f}{(1-x)^2}.
+\int_0^{1-f} g'\left(\frac{f}{1-x}\right) \frac{f(1-x)}{f(1-x)^2}\,dx = \frac{1-x}{f} g\left(\frac{f}{1-x}\right) \Bigg|_{x=0}^{1-f} + \int_0^{1-f} \frac{1}{f}  g\left(\frac{f}{1-x}\right)\, dx 
+ = 1 - \frac{g(f)}{f} + \frac{1}{f}\left(g(f)-1\right) = 1 - \frac1f.
+g'(f)
+-1/f
+g(f) = 1 - \ln f

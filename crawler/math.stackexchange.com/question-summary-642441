@@ -1,0 +1,68 @@
+Z=(z_1,\ldots,z_l)\in\mathbb{C}^L
+p\geq 2
+(1)
+z_k
+e^{i\theta_k}z_k
+\biggl|\biggl\|\sum_{j=1}^L z_j\biggr\|^p - \sum_{j=1}^{L}\|z_j\|^p\biggr|\leq\frac{L^{p-1}-1}{L-1}\sum_{i\neq j}\|z_i\|\cdot\|z_j\|^{p-1}.\tag{1}
+\sum_{i\neq j}\|z_i\|\cdot\|z_j\|^{p-1} = \sum_{j=1}^{L}\|z_j\|\sum_{j=1}^{L}\|z_j\|^{p-1}-\sum_{j=1}^{L}\|z_j\|^p = \|Z\|_1\cdot\|Z\|_{p-1}^{p-1}-\|Z\|_{p}^{p}
+(1)
+\|\sum_{j=1}^{L}z_j\|=L
+\sum_{j=1}^L \|z_j\|=L
+(1)
+p=2
+(4)
+(5)
+(3)
+ \left\|\sum z_i\right\|^2-\sum\|z_i\|^2 \leq \left(\sum \|z_i\|\right)^2-\sum\|z_i\|^2,\tag{4}
+ \sum\|z_i\|^2-\left\|\sum z_i\right\|^2\leq \left(\sum \|z_i\|\right)^2-\sum\|z_i\|^2,\tag{5}
+0\leq \sum_{i<j}2A_i A_j\left(1+\cos(\theta_i-\theta_j)\right).\tag{6}
+\|z_1\|=1-\varepsilon
+\|Z\|_1=1
+C_{p,L}
+C_{p,L}
+W=(\|z_2\|,\ldots,\|z_L\|)
+\|W\|_1=\varepsilon
+C_{p,L}
+\varepsilon
+\varepsilon\leq\frac{L-1}{L}
+\varepsilon=\frac{L-1}{L}
+L/2
+\exists C_{p,L}:\forall Z\in\mathbb{C}^L,\quad\biggl\|\sum_{j=1}^L z_j\biggr\|^p - \|Z\|_p^p \leq C_{p,L}\cdot\sum_{i\neq j}\|z_i\|\cdot\|z_j\|^{p-1}\tag{2+},
+ C_{p,L}\geq \frac{1-(1-\varepsilon)^p-\|W\|_p^p}{\varepsilon(1-\varepsilon)^{p-1}+\|W\|_{p-1}^{p-1}-\|W\|_p^p} 
+ C_{p,L}\geq \frac{1-(1-\varepsilon)^p-\|W\|_p^p}{\varepsilon(1-\varepsilon)^{p-1}+(1-\varepsilon)\|W\|_{p-1}^{p-1}+\varepsilon\|W\|_{p-1}^{p-1}-\|W\|_p^p} 
+\frac{1-(1-\varepsilon)^p-\|W\|_p^p}{\varepsilon(1-\varepsilon)^{p-1}+(1-\varepsilon)\|W\|_{p-1}^{p-1}+\varepsilon\|W\|_{p-1}^{p-1}-\|W\|_p^p} \leq \frac{1-(1-\varepsilon)^p-\|W\|_p^p}{\varepsilon(1-\varepsilon)^{p-1}+(1-\varepsilon)\|W\|_{p-1}^{p-1}+\frac{1}{C_{p,L-1}}\left(\varepsilon^p-\|W\|_p^p\right)} 
+C_{p,L}\geq \frac{1-(1-\varepsilon)^p-\|W\|_p^p}{\varepsilon(1-\varepsilon)^{p-1}+(1-\varepsilon)\|W\|_{p-1}^{p-1}}
+C_{p,L}\geq \frac{1}{1-\varepsilon}\cdot\frac{\frac{1-(1-\varepsilon)^p}{\varepsilon}-\left(\frac{\varepsilon}{L-1}\right)^{p-1}}{(1-\varepsilon)^{p-2}+\left(\frac{\varepsilon}{L-1}\right)^{p-2}}.
+C_{p,L}=\frac{L}{2}\cdot\frac{L^{p-1}-1}{L-1}
+(1)
+(A)
+(B)
+(B)
+g
+(C)
+\| Z \|_1^p \leq L^{p-1}\|Z\|_p^p\,, \tag{A}
+ \frac{1}{L}\|Z\|_1 \|Z\|_{p-1}^{p-1} \leq \|Z\|_p^p \leq \|Z\|_1 \|Z\|_{p-1}^{p-1}.\tag{B}
+ g(h) = \|Z\|_{h}^{h}.
+g(h)g''(h)\geq g'(h)^2 \tag{C}
+\left(\sum\|z_k\|^h\right)\cdot\left( \sum\|z_k\|^h\log^2(\|z_k\|)\right) \geq \left(\sum\|z_k\|^h\log\|z_k\|\right)^2
+(E)
+A_1=\ldots=A_L=1
+(E)
+t(p) = \left(\frac{\|Z\|_p}{\|Z\|_1}\right)^p+\left(\frac{\|Z\|_{p-1}}{L\,\|Z\|_1}\right)^{p-1}-\frac{1}{L^{p-1}}
+r(p) = L^{p-1}\|Z\|_p^p + \|Z\|_1\|Z\|_{p-1}^{p-1}-\|Z\|_1^p \tag{H}
+A_k
+1
+1-\sum_{k=1}^{L} A_k^p \leq C(p)\cdot\sum_{i\neq j}A_i A_j^{p-1}\tag{7}
+(7)
+p
+C(2)=1
+(7)
+-x\log x
+[0,1/e]
+[0,1]
+(8)
+(9)
+C(p)\sum_{i\neq j}-A_j^{p-1}A_i \log A_j+\sum_{k}-A_k^p \log A_k\leq C'(p)\sum_{i\neq j}A_i A_j^{p-1}\tag{8}
+\frac{1}{e}\left(C(p)\sum_{i\neq j}A_j^{p-2}A_i +\sum_{k}A_k^{p-1}\right)\leq C'(p)\sum_{i\neq j}A_i A_j^{p-1}\tag{9}
+C(p)\left(\|Z\|_{p-2}^{p-2}-\|Z\|_{p-1}^{p-1}\right) +\|Z\|_{p-1}^{p-1}\leq e\cdot C'(p)\,\left(\|Z\|_{p-1}^{p-1}-\|Z\|_{p}^{p}\right),\tag{10}
+C(p)+\frac{g(p-1)}{g(p-2)-g(p-1)}\leq e\cdot C'(p)\cdot\frac{g(p-1)-g(p)}{g(p-2)-g(p-1)}.\tag{11}

@@ -1,0 +1,13 @@
+r
+V
+E[W]
+ W = rV^3
+V = \mu + \sigma Z
+Z
+Z
+Z \stackrel{d}{=} -Z
+\mathbb{E}(Z) = 0
+\mathbb{E}(Z^3)=0
+\mathbb{E}(W)
+   \mathbb{E}(W) = r \mathbb{E}\left( \left(\mu + \sigma Z\right)^3 \right) =    r \left( \mu^3 +3 \mu^2 \sigma \mathbb{E}(Z) + 3 \mu \sigma^2 \mathbb{E}(Z^2) + \sigma^3 \mathbb{E}(Z^3) \right) 
+    \mathbb{E}(Z^2) = \int_{-\infty}^\infty z^2 \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-z^2/2} \mathrm{d} z = \sqrt{\frac{2}{\pi}} \int_0^\infty z^2  \mathrm{e}^{-z^2/2} \mathrm{d} z \stackrel{z^2 = x}{=} \frac{1}{\sqrt{2\pi}} \underbrace{\int_0^\infty \sqrt{x} \mathrm{e}^{-x/2} \mathrm{d} x}_{2^{3/2} \Gamma(3/2) = \sqrt{2\pi}} = 1 

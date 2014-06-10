@@ -1,0 +1,14 @@
+\sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k}=2\sum_{k=0}^n\binom{n+k}{k}\frac1{2^k}.
+\begin{eqnarray*} \sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k} & = & \sum_{k=0}^{n+1}\left\{\binom{n+k}{k}+\binom{n+k}{k-1}\right\}\frac1{2^k}\\ & = & \sum_{k=0}^n\binom{n+k}{k}\frac1{2^k}+\sum_{k=0}^n\binom{n+k}{k-1}\frac1{2^k}+\binom{2n+1}{n}\frac1{2^k}. \end{eqnarray*}
+s_n=\displaystyle\sum_{k=0}^n\binom{n+k}k\frac1{2^k}
+\begin{align*} s_{n+1}&=\sum_{k=0}^{n+1}\binom{n+k+1}k\frac1{2^k}\\ &=\sum_{k=0}^{n+1}\left(\binom{n+k}k+\binom{n+k}{k-1}\right)\frac1{2^k}\\ &=\binom{2n+1}{n+1}\frac1{2^{n+1}}+\sum_{k=0}^n\binom{n+k}k\frac1{2^k}+\sum_{k=0}^n\binom{n+1+k}k\frac1{2^{k+1}}\\ &=\binom{2n+1}{n+1}\frac1{2^{n+1}}+s_n+\frac12\sum_{k=0}^n\binom{n+1+k}k\frac1{2^k}\\ &=s_n+\frac12\left(s_{n+1}-\binom{2n+2}{n+1}\frac1{2^{n+1}}\right)+\binom{2n+1}{n+1}\frac1{2^{n+1}}\\ &=s_n+\frac12s_{n+1}+\binom{2n+1}{n+1}\frac1{2^{n+1}}-\binom{2n+2}{n+1}\frac1{2^{n+2}}\;, \end{align*}
+\begin{align*} s_{n+1}&=2s_n+\binom{2n+1}{n+1}\frac1{2^n}-\binom{2n+2}{n+1}\frac1{2^{n+1}}\\ &=2s_n+\frac1{2^n}\left(2\binom{2n+1}{n+1}-\binom{2n+2}{n+1}\right)\\ &=2s_n+\frac1{2^n}\left(2\binom{2n+1}{n+1}-\binom{2n+1}{n+1}-\binom{2n+1}n\right)\\ &=2s_n+\frac1{2^n}\left(\binom{2n+1}{n+1}-\binom{2n+1}n\right)\\ &=2s_n\;. \end{align*}
+n
+2
+k
+\begin{eqnarray*} \sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k} & = & \sum_{k=0}^{n+1}\left\{\binom{n+k}{k}+\binom{n+k}{k-1}\right\}\frac1{2^k}\\ & = & \sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}+\sum_{k=0}^{n+1}\binom{n+k}{k-1}\frac1{2^k}\\ & = & \sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}+\sum_{k=1}^{n+1}\binom{n+k}{k-1}\frac1{2^k}\\ & = & \sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}+\sum_{k=0}^n\binom{n+k+1}{k}\frac1{2^{k+1}}\\ & = & -\binom{2n+2}{n+1}\frac1{2^{k+1}}+\sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}+\sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^{k+1}}\\ & = & -\binom{2n+2}{n+1}\frac1{2^{n+2}}+\sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}+\frac12\sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k}. \end{eqnarray*}
+2
+\begin{eqnarray*} \sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k} & = & -\binom{2n+2}{n+1}\frac1{2^{n+1}}+2\sum_{k=0}^{n+1}\binom{n+k}{k}\frac1{2^k}\\ & = & -\binom{2n+2}{n+1}\frac1{2^{n+1}}+2\binom{2n+1}{n+1}\frac1{2^{n+1}}+2\sum_{k=0}^n\binom{n+k}{k}\frac1{2^k}. \end{eqnarray*}
+\binom{2n+2}{n+1}
+\binom{2n+1}{n}=\binom{2n+1}{n+1},
+\sum_{k=0}^{n+1}\binom{n+k+1}{k}\frac1{2^k}=2\sum_{k=0}^n\binom{n+k}{k}\frac1{2^k},

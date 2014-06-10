@@ -1,0 +1,11 @@
+f(x) = \int_{1}^{\infty}\cos(x^{2})\,\mathrm dx
+\int_{1}^{\infty}\cos(x^{2})\,\mathrm dx
+u = x^2
+\infty
+ \int_1^\infty \left|\frac{\cos(u)}{2\sqrt{u}}\right| \,du 
+t:=x^2\implies dx=\frac{dt}{2\sqrt t}\implies \int\limits_0^\infty\cos x^2dx=\int\limits_0^{\sqrt\frac{\pi}2}\cos x^2dx+\int\limits_{\sqrt\frac{\pi}2}^\infty\cos x^2dx=
+=\int\limits_0^{\sqrt\frac{\pi}2}\cos x^2dx+\frac12\int\limits_{\pi/2}^\infty \frac{\cos t}{\sqrt t}dt
+\int_{\pi/2}^\infty\frac{\cos t}{\sqrt t}du=\sum_{n=1}^\infty\int\limits_{(2n-1)\pi/2}^{\frac{(2n+1)\pi}2}\frac{\cos t}{\sqrt t}dt=:\sum_{n=1}^\infty a_{n}
+a_{n+1}=\int\limits_{\frac{(2n+1)\pi}2}^{\frac{(2n+3)\pi}2}\frac{\cos t}{\sqrt t}dt\;\;,\;\;u=t-\pi\;,\;\;du=dt\implies
+a_{n+1}=\int\limits_{\frac{(2n-1)\pi}2}^{\frac{(2n+1)\pi}2}\frac{\cos(u+\pi)}{\sqrt{u+\pi}}du=-\int\limits_{\frac{(2n-1)\pi}2}^{\frac{(2n+1)\pi}2}\frac{\cos u}{\sqrt{u+\pi}}du
+|a_{n+1}|=\left|\;-\int\limits_{\frac{(2n-1)\pi}2}^{\frac{(2n+1)\pi}2}\frac{\cos u}{\sqrt{u+\pi}}du\;\right|\le\left|\;\int\limits_{\frac{(2n-1)\pi}2}^{\frac{(2n+1)\pi}2}\frac{\cos u}{\sqrt u}du\;\right|=|a_n|\;\;\;\;\;\text{(why?)}

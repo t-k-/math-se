@@ -1,0 +1,8 @@
+1.
+T(n) = T(n-1) + \frac{1}{n},\,(T(0)=1)
+ 2.
+T(n) = 3T\left(\dfrac{n}{3}\right) +1,\,(T(3)=1)
+ T(n) = T(n-1) + \frac{1}{n}=T(n-2) + \frac{1}{n-1}+\frac{1}{n}
+= T(n-3) + \frac{1}{n-2}+\frac{1}{n-1}+\frac{1}{n}
+ = T(n-4) + \frac{1}{n-3}+\frac{1}{n-2}+\frac{1}{n-1}+\frac{1}{n} 
+ \implies T(n)=T(0)+\sum_{i=1}^{n}\frac{1}{i}=1+H_n, 

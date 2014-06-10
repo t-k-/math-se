@@ -1,0 +1,55 @@
+B
+m\times n
+\sigma
+B
+x
+B^*B
+\sigma^2
+z=\frac{x}{\|x\|_2}
+w=\frac{1}{\sigma} Bz
+\|z\|_2=1
+\|w\|_2=\sqrt{w^*w}=\sqrt{\frac{1}{\sigma^2} z^*B^*Bz}=\frac{1}{\sigma}\sqrt{z^*\sigma^2 z}=1
+m=n
+B^*B
+m\neq n
+u^* B v \leq \|u\| \times \|B v\|= \sqrt{v' B* B v} \leq \sigma,
+B^*B
+\sum_i \lambda_i x_i x_i'
+\lambda_i
+x_i
+\langle u,v\rangle=v^*u
+w\in\mathbb R^m
+(1)
+(2)
+ \sigma^2=\max_{\|v\|_2=1} \langle v, B^*B v\rangle=\max_{\|v\|_2=1} \langle Bv, B v\rangle=\max_{\|v\|_2=1}\|Bv\|^2, 
+ \sigma=\max_{\|v\|_2=1}\|Bv\|. \tag{1} 
+ \|w\|=\max_{\|u\|_2=1}\langle w,u\rangle. \tag {2} 
+ \sigma=\max_{\|v\|_2=1}\|Bv\|=\max_{\|v\|_2=1,\|u\|_2=1}\langle Bv,u\rangle. 
+\|B\|_2 = \sigma
+u
+v
+B = U S V^*
+B
+S
+B
+u
+v
+u' = U^*u
+v' = V^*v
+\forall i \; S_{ii} \leq \sigma
+\left|u' \cdot v'\right| \leq 1
+\|u'\|_2 = \|U^*u\|_2 = 1
+\|v'\|_2 = \|V^*v\|_2 = 1
+U
+V
+ \begin{align*}  u^* B v& = u^* U S V^* v = u'^* S v' = \sum_i u'_i S_{ii} v'_i \\ \therefore \; \left|u^* B v\right| &= \left|\sum_i u'_i S_{ii} v'_i\right| \leq \left|\sum_i u'_i \sigma v'_i\right| = \sigma\,\left|u' \cdot v'\right| \leq \sigma \end{align*} 
+\sigma
+u
+v
+\forall i \; u'_i = v'_i = \delta_{ia}
+a
+S_{aa} = \sigma
+u
+v
+\left| u^* B v \right| = \sigma
+ u^*Bv = \sum_i u'_i S_{ii} v'_i = u'_a S_{aa} v'_a = \sigma 

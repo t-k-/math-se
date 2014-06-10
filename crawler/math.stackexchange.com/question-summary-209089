@@ -1,0 +1,30 @@
+[0,1]
+Y\sim \text{Unif}[0,1]
+X\sim \text{Exp}(\lambda)
+F_X(x) = 1-\exp(-\lambda x)
+x\geq0
+(1)
+Y(\omega) = F_{X}^{-1}(\omega)
+(2)
+y=1 - e^{-\lambda x}
+(3)
+\log(1-y) = -\lambda x
+(4)
+\frac{1}{\lambda}\log\left(\frac{1}{1-y}\right) = x
+(5)
+F_{X}^{-1}(y) = \frac{1}{\lambda}\log\left(\frac{1}{1-y}\right)
+(1)
+Y
+Y(\omega)
+X
+P(Y \le y) = y
+0 \le y \le 1
+P(X \le x) = 1-\exp(-\lambda x)
+0 \ge x
+y=1-\exp(-\lambda x)
+x=\frac{1}{\lambda}\log_e(\frac{1}{1-y})
+Y
+[0,1]
+X=\frac{1}{\lambda}\log_e(\frac{1}{1-Y})
+\lambda
+P(F_X(X) \le y)=P(F_Y(Y) \le y)=P(Y \le y) = y

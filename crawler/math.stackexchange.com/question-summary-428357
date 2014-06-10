@@ -1,0 +1,3 @@
+\int e^{x/y} dy
+\int e^{\frac{x}{y}}~dy
+\int e^{\frac{x}{y}}~dy=\int\sum\limits_{n=0}^\infty\dfrac{\left(\dfrac{x}{y}\right)^n}{n!}dy=\int\sum\limits_{n=0}^\infty\dfrac{x^ny^{-n}}{n!}dy=\int\left(1+\dfrac{x}{y}+\sum\limits_{n=2}^\infty\dfrac{x^ny^{-n}}{n!}\right)dy=y+x\ln y+\sum\limits_{n=2}^\infty\dfrac{x^ny^{1-n}}{n!(1-n)}+C=y+x\ln y-\sum\limits_{n=2}^\infty\dfrac{x^n}{n!(n-1)y^{n-1}}+C

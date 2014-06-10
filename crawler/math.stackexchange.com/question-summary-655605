@@ -1,0 +1,12 @@
+0<x<1
+\ln{(\text{arcsinh}{(x)})}<\dfrac{1}{3}\ln{(\arcsin(x))}+\dfrac{2}{3}\ln{(\arctan(x))}
+\Longleftrightarrow \text{arcsinh}{(x)}<\sqrt[3]{\arcsin(x)}\cdot\sqrt[3]{(\arctan(x))^2}
+\dfrac{1}{p}+\dfrac{1}{q}=1
+\bigg|\int g(x)h(x)dx\bigg|\le\bigg[\int |g(x)|^pdx\bigg]^{\frac{1}{p}}\bigg[\int|h(x)|^qdx\bigg]^{\frac{1}{q}}
+\dfrac{1}{3}+\dfrac{2}{3}=1
+g(t) = \frac1{(1-t^2)^{1/6}}, \qquad h(t) = \frac1{(1+t^2)^{2/3}}
+\int_0^xg^3 dt = \operatorname{asin}x, \qquad \int_0^x h^{3/2} dt = \operatorname{atan}x
+\int_0^xgh \, dt \le \left(\operatorname{asin} x\right)^{1/3}\cdot  \left(\operatorname{atan}x\right)^{2/3} \tag{1}
+0 < t < 1
+gh = \frac1{\left(1-t^2\right)^{1/6} }\frac1{\left(1+t^2\right)^{2/3}} =\frac1{\left(1-t^4\right)^{1/6}}\frac1{\left(1+t^2\right)^{1/2}} >  \frac1{\sqrt{1+t^2}}
+\displaystyle \int_0^x gh \, dt > \int_0^x \frac{dt}{\sqrt{1+t^2}} = \operatorname{asinh}x

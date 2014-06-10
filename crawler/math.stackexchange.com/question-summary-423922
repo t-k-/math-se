@@ -1,0 +1,24 @@
+y"+3y'+2y= \frac{1}{1+e^x}; y(0)=0,y'(0)=1
+y_c=e^{-x}-e^{-2x}
+y_p
+y_1=e^{-x}, y_2=e^{-2x},
+W(y_1, y_2)=-e^{-3x}.
+G(x,t)=\frac{e^{-t}e^{-2x}-e^{-x}e^{-2t}}{-e^{-3x}} = -e^{-t}e^{x}+e^{-2t}e^{2x}
+y_p=\int^x_0 G(x,t)f(t)dt
+y_p=-e^x \int^x_0 \frac{e^{-t}}{1+e^t}dt+e^{2x} \int^x_0 \frac{e^{-2t}}{1+e^t}dt
+y_p=-\ln(e^{-x}+1)(e^x+e^{2x})-\frac{e^{2x}}{2}+\frac{1}{2}+(e^{x}+e^{2x})\ln(2)
+y''+3y'+2y= \dfrac{1}{1+e^x}, ~ y(0)=0, ~y'(0)=1
+y_c=e^{-x}-e^{-2x}
+y_1=e^{-x}, ~~y_2= -e^{-2x}
+= W(y1, y2) = W(e^{-x},-e^{-2x}) = e^{-3x}
+\displaystyle G(x,t)= \frac{y_1(t)y_2(x) - y_1(x)y_2(t)}{W(x)} = \frac{e^{-t}(-e^{-2x}) - e^{-x}(-e^{-2t})}{e^{-3x}} = e^{2x}e^{-2t} - e^xe^{-t}
+\displaystyle y_p=\int^x_0 G(x,t)f(t)dt = -e^x \int^x_0 \frac{e^{-t}}{1+e^t}dt+e^{2x} \int^x_0 \frac{e^{-2t}}{1+e^t}dt
+y = y_c + y_p?
+y(x) =  \left(e^{-x}+e^{-2 x}\right) \ln\left(\dfrac{1}{2} (e^x+1)\right)
+ y = y_c + y_p =   \ln  \left( {{\rm e}^{x}}+1 \right) { {\rm e}^{-x}}+\ln  \left( {{\rm e}^{x}}+1 \right) {{\rm e}^{-2\,x}}-{ c_1{\rm e}^{-2\,x}}+c_2{{\rm e}^{-x}}\longrightarrow(1).
+ y \left( x \right) = ({{\rm e}^{-x}}+{\rm e}^{-2x} )\ln  \left( {{\rm e}^{x}}+1 \right)-{{\rm e}^{-2\,x}}\ln  \left( 2 \right) -{{\rm e}^{-x}}\ln  \left( 2 \right). 
+ c_1-c_2=2\ln(2). 
+(1)
+ 2c_1-c_2=3\ln(2). 
+c_1,c_2
+(1)

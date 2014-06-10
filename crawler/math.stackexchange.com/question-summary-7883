@@ -1,0 +1,77 @@
+P_n
+n
+f:[a,b]\to\mathbb{R}
+\Delta(P_n) = \sup_{x\in[a,b]} |f(x)-P_n(x)|
+E_n(f) = \inf_{P_n} \Delta(P_n)
+P_n
+n
+f
+\Delta(P_n) = E_n(f)
+P_0(x) = a
+Q_\lambda(x) = \lambda P_n(x)
+P_n
+Q_{\lambda_0}
+\Delta(Q_{\lambda_0}) = \min_{\lambda\in \mathbb{R}} \Delta(Q_\lambda)
+n
+n+1
+\lambda_0 x^{n+1}+P_n
+n+1
+f
+\Delta(\lambda_0 x^{n+1}) =  \min_{\lambda\in \mathbb{R}} \Delta(\lambda x^{n+1})
+\Delta(P_n) = E(f(x) - \lambda_0 x^{n+1})
+n
+\Phi
+K
+P_n
+n
+f:[a,b]\to\mathbb{R}
+\Delta(P_n) = \sup_{x\in[a,b]} |f(x)-P_n(x)|
+E_n(f) = \inf_{P_n} \Delta(P_n)
+n
+P_n
+n
+\Delta(P_n) = E_n(f)
+Q_\lambda(x)
+\lambda P(x)
+P(x)
+Q_{\lambda_0}
+\Delta(Q_{\lambda_0}) = \min_{\lambda\in \mathbb{R}} \Delta(Q_\lambda)
+n
+n+1
+n
+n
+(c_{0m}, c_{1m}, ..., c_{nm}), m \in \mathbb Z
+k(c_{0m}, c_{1m}, ..., c_{nm})
+t:=\inf k
+c_i
+(c_{0p}, c_{1p}, ..., c_{np})
+c_{ip} \rightarrow
+t_i
+\forall i
+p
+p
+|c_{ip} - t_i| \le \delta
+\forall i
+x
+[a,b]
+\left| \left|f(x) - (c_{0p} + c_{1p} x + ... + c_{np} x^n) \right| - \left|f(x) - (t_0 + t_1 x + ... + t_n x^n) \right| \right|
+\le \left| \left( f(x) - (c_{0p} + c_{1p} x + ... + c_{np} x^n) \right)  -  \left( f(x) - \left(t_0 + t_1 x + ... + t_n x^n \right) \right)  \right| 
+=\left| (c_{0p} - t_0) + (c_{1p} - t_1)x + ... + (c_{np} - t_n)x^n \right| 
+\le \delta \left| 1+x+...+x^n \right|
+\le \delta M_2
+M_2
+1+x+...+x^n
+[a,b]
+|k(c_{0p}, c_{1p}, ..., c_{np}) - k(t_1, t_2, ..., t_n)|
+= \left| \sup \left|f(x) - (c_{0p} + c_{1p} x + ... + c_{np} x^n) \right| - \sup \left|f(x) - (t_0 + t_1 x + ... + t_n x^n) \right| \right| 
+\le \delta M_2
+\delta M_2
+\delta M_2
+\delta
+\delta M_2
+\epsilon
+k(c_{0p}, c_{1p},..., c_{np})
+\rightarrow k(t_1, t_2, ..., t_n)
+k(c_{0p}, c_{1p},..., c_{np})
+\rightarrow \inf k
+\inf k = k(t_1, t_2, ..., t_n) 

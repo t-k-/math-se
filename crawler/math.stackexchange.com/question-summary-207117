@@ -1,0 +1,21 @@
+b_n:=\int_0^{\pi/2} \cos^{2n+1}(x) \mathrm dx.
+b_n=\prod_{j=0}^ n \frac{2n+2}{2n+3}.
+b_n=\frac{\sqrt\pi \Gamma(n+1)}{2\Gamma\left(n+\frac 32\right)}.
+\lim_{n\to\infty}\sqrt nb_n=\frac{\sqrt\pi}{2}?
+\prod_{j=1}^{n} \left(\dfrac{2j}{2j+1}\right)
+\Gamma(z)
+z
+\alpha \in \mathbb{R}
+b_n = \prod_{j=1}^{n} \left(\dfrac{2j}{2j+1}\right) = \prod_{j=1}^{n} \left(\dfrac{j}{j+1/2}\right) = \dfrac{\displaystyle \prod_{j=1}^{n} j}{\displaystyle \prod_{j=1}^{n} \left(j+1/2 \right)} = \dfrac{\sqrt{\pi}}2\dfrac{\Gamma(n+1)}{ \Gamma(3/2) \displaystyle \prod_{j=1}^{n} \left(j+1/2 \right)}
+\Gamma(z+1) = z \Gamma(z) \,\,\,\, \text{ and } \,\,\,\, \Gamma(3/2) = \sqrt{\pi}/2
+ = \dfrac{\sqrt{\pi}}2\dfrac{\Gamma(n+1)}{ \Gamma(n+3/2)}
+\dfrac{\Gamma(z+\alpha)}{\Gamma(z)} \sim z^{\alpha}
+b_{n}=\int_{0}^{\frac{\pi}{2}}\cos^{2n+1}xdx
+\int_{0}^{1}\cos^{2n+1}xdx
+\begin{align*} b_{n}&=\int_{0}^{\frac{\pi}{2}}\cos^{2n+1}xdx\\ &=\int_{0}^{\frac{\pi}{2}}\cos^{2n}xd\sin x\\ &=2n\int_{0}^{\frac{\pi}{2}}\sin^{2}x\cos^{2n-1}xdx\\ &=2n\int_{0}^{\frac{\pi}{2}}\cos^{2n-1}x-\cos^{2n+1}xdx\\ &=2nb_{n-1}-2nb_{n} \end{align*}
+b_{n}=\frac{2n}{2n+1}b_{n-1}
+\frac{b_{n}}{b_{n-1}}=\frac{2n}{2n+1}
+b_{0}=1
+b_{n}=b_{0}\prod_{k=0}^{n-1}\frac{b_{k+1}}{b_{k}}=\prod_{k=0}^{n-1}\frac{2k+2}{2k+3}
+Gamma
+Beta

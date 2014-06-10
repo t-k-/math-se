@@ -1,0 +1,23 @@
+ \phi \in C_0( \mathbb{R}) 
+ a = \inf\{x | \phi(x) \neq 0 \}
+ b = \sup\{x | \phi(x) \neq 0 \}
+ a,b \in \mathbb{Z}.
+ \phi(x) = \sum_{k \in \mathbb{Z}} p_k \phi(2x-k) , 
+ p_k = 2^{1/2} \int_{- \infty}^\infty \phi(x) \overline{\phi(2x-k)} dx.
+ \overline{\{ x| \phi(x) \neq  0\}} = [a,b]
+a, b \in \mathbb{Z}
+x
+u = \lceil 2x-a \rceil
+l = \lfloor 2x - b \rfloor
+ \phi(x) = \sum_{k = l}^u p_k \phi(2x-k) 
+x=n \in \mathbb{Z}
+u =  2x-a 
+l =  2x - b 
+\phi_k(x)=\phi(2x-k)
+m=\min\{k:p_k\ne 0\}
+n=\max\{k:p_k\ne 0\}
+a=\frac{a+m}{2}
+a
+b
+\inf\{x|\phi_k(x)\ne 0\}=\frac{a+k}{2},\quad \sup\{x|\phi_k(x)\ne 0\}=\frac{b+k}{2} \tag1
+\inf\left\{x:\sum_{k \in \mathbb{Z}} p_k \phi_k(x)\ne 0\right\} = \frac{a+m}{2}

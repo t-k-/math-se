@@ -1,0 +1,16 @@
+     \int_0^1 \log \Gamma(x+t)\,\mathrm{d}x = \log \Bigl(\sqrt{2\pi}\Bigr) - t + t  \log t 
+B(x,y)=\Gamma(x)\Gamma(y)/\Gamma(x+y)\\
+    \iint_{\Omega} \log \big(B(x,y)\big)  \,d\Omega = \log \Bigl(\sqrt{2\pi}\Bigr) + \frac{3}{4} 
+\Omega = [0,1] \times [0,1]
+t=0
+ \log \Gamma(x+t) = \log\Gamma(x)+\sum_{n=0}^{\infty}\frac{\partial_{t}^{(n+1)} \log \Gamma(x+t)|_{t=0}}{(n+1)!}t^{n+1} 
+ \int_{0}^{1}\log \Gamma(x+t)\,dx= \int_{0}^{1}\log \Gamma(x)\,dx + \sum_{n=0}^{\infty}\frac{t^{n+1}}{(n+1)!}\int_{0}^{1} \partial_{t}^{(n+1)} \log \Gamma(x+t)|_{t=0}\,dx 
+\partial_{t}f(x+t)=\partial_{x}f(x+t)
+\partial_{x}^{(n+1)}
+\partial_{x}^{n} = \partial_{t}^{n}
+ \int_{0}^{1} \partial_{t}^{(n+1)} \log \Gamma(x+t)|_{t=0}\,dx= \partial_{t}^{(n)} \log \Gamma(x+t)|_{t=0}\bigg|_{x=0}^{x=1} \\ =\partial_{t}^{(n)} \log \Gamma(t+1)|_{t=0} - \partial_{t}^{(n)} \log \Gamma(t)|_{t=0} 
+\Gamma(t+1)=t\Gamma(t)
+ \partial_{t}^{(n)} \log \Gamma(t+1)|_{t=0}=\partial_{t}^{(n)} [\log t+\log\Gamma(t)|_{t=0} 
+\Gamma(t)
+\partial_{t}^{(n)}\log t |_{t=0}
+ \sum_{n=0}^{\infty}\frac{\partial_{t}^{(n)}\log t |_{t=0}}{(n+1)!}t^{n+1}=\int_{0}^{t}\sum_{n=0}^{\infty}\frac{\partial_{t}^{(n)}\log t |_{t=0}}{n!}t^{n}\,dt=\int_{0}^{t}\log t\,dt=t\log t - t 

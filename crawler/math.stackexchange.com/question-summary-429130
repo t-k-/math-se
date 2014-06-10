@@ -1,0 +1,22 @@
+Y^1, \ldots, Y^R
+\{-1,+1\}
+\Pr(Y^j = 1) = p^j \geq 0.5
+\Pr(Y^J = -1) = 1 - p^j
+\forall j = 1, \ldots, R
+\text{logit}(p^j) = \log(\frac{p^j}{1-p^j})
+\begin{align*} e = E[|\sum_{j=1}^R \text{logit}(p^j) Y^j|] \end{align*}
+LB_e
+e
+\begin{align*} E[|\sum_{j=1}^R \text{logit}(p^j) Y^j|] \geq |E[\sum_{j=1}^R \text{logit}(p^j) Y^j]| \end{align*}
+UB_e
+e
+UB_e
+k\cdot LB_e
+X
+E[X]\geq 0
+X:=|\sum_{j=1}^R l_j Y^{j}|\leq \sum_{j=1}^R |l_j Y^{j}|:=Z 
+l_j=logit(p_j)
+E[Z-X]\geq 0
+E[X]\leq E[Z].
+E[Z]= \sum_{j=1}^R E[|l_j Y^{j}|]
+e

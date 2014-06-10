@@ -1,0 +1,45 @@
+f:[a,b]\to \mathbb{R}
+\lim_{n\to \infty}\left[ \int_a^bf(x)^n\,dx  \right]^{1/n}=\max_{x\in[a,b]}f(x).
+M= \max_{x\in [a,b]}f(x)
+\log \left( \left(\int_a^b f(x)^n\,dx \right) ^{1/n}\right) = \log M + \frac{1}{n}\log \left(\int_a^b (f(x)/M)^n \, dx \right),
+\{x\mid f(x)=M\}
+c
+[a,b]
+f(c)=\sup\limits_{x\in[a,b]} (f(x))=M
+c
+x
+f(x)^n\leq M^n
+n
+x
+\lim\limits_{n\to\infty}x^{1/n}=1
+ \int_a^b f(x)^n \, dx\leq \int_a^b M^n\, dx = M^n(b-a) 
+ \left(\int_a^b f(x)^n \, dx\right)^{1/n}\leq M(b-a)^{1/n} 
+ \lim\limits_{n\to\infty}\left(\int_a^b f(x)^n \, dx\right)^{1/n}\leq M 
+\varepsilon>0
+\delta>0
+M-\varepsilon<f(x)
+c-\delta\leq x\leq c+\delta
+n
+[c-\delta, c+\delta]
+f
+n
+n
+\varepsilon>0
+ 2\delta(M-\varepsilon)^n\leq \int_{c-\delta}^{c+\delta} f(x)^n \, dx\leq \int_a^b f(x)^n\, dx 
+ (2\delta)^{1/n}(M-\varepsilon)\leq \left( \int_a^b f(x)^n\ , dx\right)^{1/n} 
+ M-\varepsilon\leq\lim\limits_{n\to\infty}\left(\int_a^b f(x)^n\right)^{1/n} 
+b-a=1
+y
+(b-a)f(y)
+f
+r>0
+d>0
+x
+|x-y|<d
+|f(x)-f(y)|<r
+m=y-d
+m=y+d
+\left[ \int_a^bf(x)^n\,dx  \right]^{1/n} > \left[  \int_m^nf(x)^n\,dx\right]^{1/n}
+f(x)>f(y)-r
+f(x)^n>f(y)^n-nr
+r<1

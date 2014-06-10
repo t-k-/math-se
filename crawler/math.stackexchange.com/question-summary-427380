@@ -1,0 +1,14 @@
+Y=1-X^3
+X
+Pr(Y<y)=Pr(1-X^{3}<y)=Pr(X<(1-y)^{-3})=\int^{y}_{-\infty}\left(1-\frac{1}{\pi(1+t^{2})}\right)^{-3}\:dt
+Pr(Y<y)=Pr(1-X^{3}<y)=Pr(X>(1-y)^{-3})=1-\int^{(1-y)^{-3}}_{-\infty}\left(\frac{1}{\pi(1+t^{2})}\right)\:dt=1-A
+A=\frac{1}{\pi}arctan((1-y)^{-3})+\frac{1}{2} - \frac{1}{\pi}arctan(-\infty)-\frac{1}{2}=\frac{1}{\pi}arctan((1-y)^{-3})-\frac{1}{\pi}\frac{-\pi}{2}=\frac{1}{\pi}arctan((1-y)^{-3})+\frac{1}{2}
+f_X
+X
+g
+g
+Y=g^{-1}(X)
+ P(X\lt g(x))=\int_{-\infty}^xg(f_X(t))\mathrm dt, 
+ P(X\lt g(x))=\int_{-\infty}^{g(x)}f_X(t)\mathrm dt. 
+ P(X\lt g(x))=\int_{-\infty}^{x}g'(s)f_X(g(s))\mathrm ds. 
+ P(Y\lt x)=P(X\gt g(x))=\int_{g(x)}^{+\infty}f_X(t)\mathrm dt=\int_{-\infty}^{x}(-g'(s))f_X(g(s))\mathrm ds. 

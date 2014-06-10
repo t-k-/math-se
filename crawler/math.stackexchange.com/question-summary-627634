@@ -1,0 +1,9 @@
+A=\left(\begin{array}{cccc}1&1&1&1\\0&1&0&1\\0&1&0&0\\1&0&0&0\end{array}\right)
+\left(\begin{array}{cccc|cccc}1&1&1&1&1&0&0&0\\0&1&0&1&0&1&0&0\\0&1&0&0&0&0&1&0\\1&0&0&0&0&0&0&1\end{array}\right) \to\cdots\not\to \left(\begin{array}{cccc|cccc}1&0&0&0&1&1&1&1\\0&1&0&0&0&1&0&1\\0&0&1&0&1&1&0&1\\0&0&0&1&0&1&1&0\end{array}\right)
+\begin{align*}& R_2+R_4\\ =&\left(\begin{array}{cccc|cccc}0&1&0&1&0&1&0&0\end{array}\right) +  \left(\begin{array}{cccc|cccc}1&0&0&0&0&0&0&1\end{array}\right)\\ =&\left(\begin{array}{cccc|cccc}1&1&0&1&0&1&0&1\end{array}\right)\\ \ne&\left(\begin{array}{cccc|cccc}\color{red}0&\color{red}1&\color{red}0&\color{red}0&\color{green}0&\color{green}1&\color{green}0&\color{green}1\end{array}\right)\text{ in your answer} \end{align*}
+\begin{align*} R_1+R_2+R_3+R_4 =&\left(\begin{array}{cccc|cccc}0&1&1&0&1&1&1&1\end{array}\right)\\ \ne&\left(\begin{array}{cccc|cccc}\color{red}1&\color{red}0&\color{red}0&\color{red}0&\color{green}1&\color{green}1&\color{green}1&\color{green}1\end{array}\right)\text{ in your answer} \end{align*}
+\left(\begin{array}{c|c}I&A^{-1}\end{array}\right)
+\left(\begin{array}{c|c}A&I\end{array}\right)
+R_4\leftrightarrow R_1
+R_3\leftrightarrow R_2
+A^{-1} = \left(\begin{array}{cccc}0&0&0&1\\0&0&1&0\\1&1&0&1\\0&1&1&0\end{array}\right)

@@ -1,0 +1,50 @@
+f(x)
+f(x) = \sum\limits_{n=0}^{+\infty}\frac{x^{4n}}{(4n)!}
+e(x)=\mathrm e^x=\displaystyle\sum\limits_{n\geqslant0}\frac{x^n}{n!}
+n
+\displaystyle\sum\limits_\zeta\zeta^n
+4
+n=0\pmod{4}
+0
+\{\zeta\in\mathbb C\mid \zeta^4=1\}=\{1,-1,\mathrm i,-\mathrm i\}
+ \sum\limits_\zeta e(\zeta x)=\sum\limits_{n\geqslant0}\frac{x^n}{n!}\cdot\sum\limits_\zeta\zeta^n=4\cdot\sum\limits_{n\geqslant0}\frac{x^{4n}}{(4n)!}. 
+ \sum\limits_{n\geqslant0}\frac{x^{4n}}{(4n)!}=\frac{e(x)+e(-x)+e(\mathrm ix)+e(-\mathrm ix)}4=\frac{\cosh(x)+\cos(x)}2. 
+k
+\{1,2,3\}
+\displaystyle\sum\limits_\zeta\zeta^{n-k}
+4
+n=k\pmod{4}
+0
+ \sum\limits_\zeta\zeta^{-k}\cdot e(\zeta x)=\sum\limits_{n\geqslant0}\frac{x^n}{n!}\cdot\sum\limits_\zeta\zeta^{n-k}=4\cdot\sum\limits_{n\geqslant0}\frac{x^{4n+k}}{(4n+k)!}. 
+ \sum\limits_{n\geqslant0}\frac{x^{4n+k}}{(4n+k)!}=\frac{e(x)+(-1)^ke(-x)+(-\mathrm i)^{k}e(\mathrm ix)+\mathrm i^{k}e(-\mathrm ix)}4. 
+ \sum\limits_{n\geqslant0}\frac{x^{4n+3}}{(4n+3)!}=\frac{\sinh(x)-\sin(x)}2. 
+\mathrm e^x
+\mathrm e^{-x}
+\displaystyle \mathrm e^{x}+\mathrm e^{-x} = 2\cosh x = 2\sum\limits_{k=0}^{+\infty}\frac{x^{2n}}{(2n)!}
+4n-2
+\displaystyle \cos x = \sum\limits_{k=0}^{+\infty}(-1)^{k}\frac{x^{2n}}{(2n)!}
+\displaystyle \frac{1}{4}(\mathrm e^x+\mathrm e^{-x}+2\cos{x}) = \sum\limits_{k=0}^{+\infty}\frac{x^{4n}}{(4n)!} = f(x)
+f
+ F(s) = \int_{0}^{\infty} f(x) e^{-sx} dx \,, 
+x^m
+\frac{\Gamma(m+1)}{x^{m+1}}
+f(x)=\sum\limits_{n=0}^{+\infty}\frac{x^{4n}}{(4n)!}
+ F(s)=\sum_{k=0}^{\infty} \frac{1}{s^{4k+1}}=\frac{s^3}{s^4-1}
+= \frac{1}{4(s-1)}+\frac{1}{4(s+1)}+\frac{1}{4(s+i)}+\frac{1}{4(s-i)}\rightarrow (1)\,. 
+(1)
+ \frac{1}{2}\,\cos \left( x \right) +\frac{1}{2}\,\cosh \left( x \right) \,. 
+e^x= \sum\limits_{n=0}^{\infty}\frac{x^n}{n!}
+y^r-1=0--->(1)
+e^{\frac{2ki\pi}r}=y_k
+1\le k\le r
+\sum y_k=0
+ e^{y_kx}= \sum\limits_{n=0}^{+\infty}\frac{(y_kx)^n}{n!}
+k=1
+r, \sum_{1\le k\le r} e^{y_kx}= \sum\limits_{n=0}^{+\infty}\frac{x^n}{n!}(\sum y_k^n)=n\sum\limits_{n=0}^{+\infty}\frac{x^{rn}}{(rn)!}
+y_{r-k}=e^{\frac{2(r-k)\pi i}r}=e^{\frac{-2k\pi i}r}=y_{-k}
+r
+\sum_{1\le k\le r} e^{y_kx} =e^x+e^{-x}+\sum_{1\le k\le \frac r2 -1}(e^{\frac{2kx\pi i}r}+e^{\frac{2(r-k)x\pi i}r}) =2\cosh x+\sum_{1\le k\le \frac r 2 - 1}(e^{\frac{2kx\pi i}r}+e^{\frac{-2kx\pi i}r}) =2\cosh x+2\sum_{1\le k\le \frac r 2 - 1}\cos \frac{2kx\pi }r
+r
+\sum_{1\le k\le r} e^{y_kx} =e^x+\sum_{1\le k\le \frac {r-1} 2}(e^{\frac{2kx\pi i}r}+e^{\frac{2(r-k)x\pi i}r}) =e^x+\sum_{1\le k\le \frac {r-1} 2}(e^{\frac{2kx\pi i}r}+e^{\frac{-2kx\pi i}r}) =e^x+2\sum_{1\le k\le \frac {r-1} 2}\cos \frac{2kx\pi }r
+r=4\implies 4\sum\limits_{n=0}^{+\infty}\frac{x^{4n}}{(4n)!}
+=2\cosh x+2\cos x

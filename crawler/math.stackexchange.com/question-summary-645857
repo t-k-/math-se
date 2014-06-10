@@ -1,0 +1,27 @@
+a<c<b
+\{f_n(x)\}
+[a,c]
+[c,b]
+[a,b]
+u_n \to 0
+v_n \to 0
+\max(u_n,v_n) \to 0
+(x,y) \mapsto \max(x,y)
+u_n = \sup_{x \in [a,b]} |f_n(x)-f(x)|
+v_n = \sup_{x \in [b,c]} |f_n(x)-f(x)|
+u_n \to 0, v_n \to 0
+\max(u_n,v_n) \to 0
+\max(u_n,v_n) = \sup_{x \in [a,c]} |f_n(x)-f(x)|
+\epsilon >0
+[a,c]
+N_1
+n\geq N_1
+\sup_{x\in [a,c]}|f_n(x)-f(x)|<\epsilon 
+N_2
+[c,b]
+n\geq N_2
+\sup_{x\in [c,b]} |f_n(x)-f(x)|<\epsilon 
+N=\max\{N_1,N_2\}
+n\geq N
+[a,b]
+\sup_{x\in [a,b]} |f_n(x)-f(x)| <\epsilon 

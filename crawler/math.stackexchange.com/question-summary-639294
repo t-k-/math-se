@@ -1,0 +1,40 @@
+Y_t
+t
+r_t
+\theta_t
+\theta_1|Y_0
+ y_t|\theta_t\sim N(0,\theta_t^{-1}),\\ \theta_t=e^{r_t}\theta_{t-1}\eta_t,\\ \theta_0|Y_0\sim \text{Gamma}(a_0,b_0),\\ \eta_t\sim \text{Beta}(wa_{t-1},(1-w)a_{t-1}), 
+ f(x;\alpha,\beta)=\frac{x^{\alpha-1}\beta^\alpha\exp(-x\beta)}{\Gamma(\alpha)}. 
+ \theta_1|Y_0\sim \text{Gamma}(wa_0,e^{-r_1}b_0). 
+ \theta_1|Y_1\sim \text{Gamma}(wa_0+\frac{1}{2},e^{-r_1}b_0+\frac{1}{2}y_1^2). 
+c\gt0
+S
+(a,b)
+U
+(wa,(1-w)a)
+S
+cSU
+(wa,b/c)
+cX
+(v,b/c)
+X
+(v,b)
+c=1
+SU
+f_U
+U
+f_S
+S
+u=1/(1+x)
+x
+(0,+\infty)
+\mathrm du=\mathrm dx/(1+x)^2
+\xi=bzx
+\xi
+(0,+\infty)
+\mathrm dx=\mathrm d\xi/(bz)
+ f(z)=\int_0^1f_U(u)f_S(u^{-1}z)u^{-1}\mathrm du, 
+ f_U(u)\propto u^{wa-1}(1-u)^{(1-w)a-1},\qquad f_S(s)\propto s^{a-1}\mathrm e^{-bs}, 
+ f(z)\propto z^{a-1}\int_0^1u^{-(1-w)a-1}(1-u)^{(1-w)a-1}\mathrm e^{-bz/u}\mathrm du. 
+ f(z)\propto z^{a-1}\mathrm e^{-bz}\int_0^\infty x^{(1-w)a-1}\mathrm e^{-bzx}\mathrm dx. 
+ f(z)\propto z^{a-1}\mathrm e^{-bz}\int_0^\infty \xi^{(1-w)a-1}z^{1-(1-w)a}\mathrm e^{-\xi}z^{-1}\mathrm d\xi\propto z^{wa-1}\mathrm e^{-bz}, 

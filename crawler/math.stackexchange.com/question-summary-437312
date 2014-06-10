@@ -1,0 +1,17 @@
+E[(xe^{aY-\frac{1}{2}a^2}-b)^+]=x\Phi(l_1)-b\Phi(l_2)
+Y\sim \mathcal{N}(0,1)
+\Phi
+a,b,x
+l_1=\frac{\log{\frac{x}{b}}+\frac{1}{2}a^2}{a}
+l_2=\frac{\log{\frac{x}{b}}-\frac{1}{2}a^2}{a}
+A:=xe^{aY-\frac{1}{2}a^2}> b
+E[(xe^{aY-\frac{1}{2}a^2}-b)^+]=E[xe^{aY-\frac{1}{2}a^2}\mathbf1_A]-bP[A]
+bP[A]=bP\left[Y>\frac{\log{\frac{b}{x}}+\frac{1}{2}a^2}{a}\right]=b\Phi\left(-\frac{\log{\frac{b}{x}}+\frac{1}{2}a^2}{a}\right)=b\Phi(l_2)
+xE[e^{aY-\frac{1}{2}a^2}\mathbf1_A]=x\frac{1}{\sqrt{2\pi}a}\int_{\frac{b}{x}}^\infty e^{-\frac{(\log{y}+\frac{1}{2}a^2)^2}{2a^2}}\frac{1}{y}dy
+u:=\frac{\log{y}+\frac{1}{2}a^2}{a}
+\frac{du}{dy}=\frac{1}{ay}
+dy=ay du
+x\frac{1}{\sqrt{2\pi}a}\int_{p}^\infty e^{-\frac{(\log{y}+\frac{1}{2}a^2)^2}{2a^2}}\frac{1}{y}dy=x\frac{1}{\sqrt{2\pi}a}\int_{p}^\infty e^{-\frac{u^2}{2}}\frac{1}{y}aydu=x\frac{1}{\sqrt{2\pi}}\int_{p}^\infty e^{-\frac{u^2}{2}}du
+p=\frac{\log{\frac{b}{x}}+\frac{1}{2}a^2}{a}
+x\Phi(l_1)
+x\frac{1}{\sqrt{2\pi}}\int_{p}^\infty e^{-\frac{u^2}{2}}du=x\Phi(-p),

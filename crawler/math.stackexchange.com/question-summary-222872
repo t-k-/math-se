@@ -1,0 +1,7 @@
+f(X)=\operatorname{trace}{(AX^TB+C)^{-1}D}
+R^{m*n}
+df(X)/dX=-B(AX^TB+C)^{-1}D(AX^TB+C)^{-1}A
+  0= \left( \frac{\mathrm{d}}{\mathrm{d} X_{i j}} \left( A X^\top B +C\right)^{-1}_{pq} \right) ( A X^\top B +C)_{qr} + \left( A X^\top B +C\right)^{-1}_{pq} \underbrace{\frac{\mathrm{d}}{\mathrm{d} X_{i j}} ( A X^\top B +C)_{qr}}_{A_{qj} B_{ir}} 
+   \left( \frac{\mathrm{d}}{\mathrm{d} X_{i j}} \left( A X^\top B +C\right)^{-1}_{pq} \right)  = -\left(\left( A X^\top B +C\right)^{-1} A\right)_{pj} \left(B \left( A X^\top B +C\right)^{-1} \right)_{iq} 
+\begin{eqnarray}   \frac{\mathrm{d} f(X)}{\mathrm{d} X_{ij}} &=& \frac{\mathrm{d} }{\mathrm{d} X_{ij}} \left( A X^\top B +C\right)^{-1}_{pq} D_{qp} \\ &=& -\left(\left( A X^\top B +C\right)^{-1} A\right)_{pj} \left(B \left( A X^\top B +C\right)^{-1} \right)_{iq} D_{qp} \\   &=& -\left(\left( A X^\top B +C\right)^{-1} A\right)_{pj} \left(B \left( A X^\top B +C\right)^{-1} D \right)_{ip} \\   &=& - \left(B \left( A X^\top B +C\right)^{-1} D \left( A X^\top B +C\right)^{-1} A\right)_{ij}  \end{eqnarray} 
+   \frac{\mathrm{d} f(X)}{\mathrm{d} X} = -B \left( A X^\top B +C\right)^{-1} D \left( A X^\top B +C\right)^{-1} A 

@@ -1,0 +1,8 @@
+r(t) = \langle 2t, t^2, \ln t \rangle.
+L = \int_a^b \|r'(t)\| ~dt.
+r'(t)
+r'(t) = \left\langle 2, 2t, \dfrac{1}{t} \right\rangle
+\|r'(t)\|
+\sqrt{(2)^2 + (2t)^2 + \dfrac{1}{t^2}}
+\|r'(t)\|=\sqrt{4t^2+4+\frac{1}{t^2}} =\sqrt{\left(2t+\frac{1}{t}\right)^2}=2t+\frac{1}{t}.
+L=\int_a^b \|r'(t)\| ~dt=\int_a^b\left(2t+\frac{1}{t}\right)dt =(t^2+\log t)\Big|_a^b=b^2-a^2+\log b-\log a.

@@ -1,0 +1,37 @@
+f_0(x)
+n
+f_n(x)
+x'
+f_0(x')dx\sim0.01
+f_{100}(x')dx\sim1.0
+\{X_n\}_{n=1}^N
+n
+f_X
+f_0
+X_n
+ P_X(a,b) = \Pr[a<X_n<b] = \int_a^bf_X(x)dx\tag{1} 
+X_n
+X_n
+ \Pr\left[\text{at least one } X_n\in(a,b)\right] = 1 - \Pr\left[\text{none of } X_n\in(a,b)\right]\tag{2} 
+X_n
+(a,b)
+(1)
+K
+N
+K
+ \Pr\left[\text{exactly $K$ of the } X_n\in(a,b)\right]=f(K,N,P_X) = {N\choose K}P_X^K(1-P_X)^{N-K}\tag{3} 
+(2)
+(3)
+K
+ \Pr\left[\text{at least one } X_n\in(a,b)\right] = 1 - f(0,N,P_X) = 1-(1-P_X)^{N} 
+1\%
+100
+1\%
+100
+298
+95\%
+458
+99\%
+683
+99.9\%
+ 1-(1-0.01)^{100}=1-0.99^{100}\approx 1-0.366=0.634=63.4\%, 

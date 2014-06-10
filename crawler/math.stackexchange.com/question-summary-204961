@@ -1,0 +1,62 @@
+1/128 (\tan^{-1}(x/4) + 4x/(16+x^2)^4)
+ \int\frac{dx}{(16+x^2)^2} = \int\frac{4\sec^2\theta\,d\theta}{(16\sec^2\theta)^2} = \frac{1}{64} \int\frac{d\theta}{\sec^2\theta} = \frac{1}{64}\int \cos^2\theta\,d\theta = \cdots\cdots 
+\theta
+ \text{If }x=4\tan\theta\text{ then }\sin\theta = \frac{x}{\sqrt{x^2+16}}\text{ and }\cos\theta = \frac{4}{\sqrt{x^2+16}}. 
+\tan\theta=\dfrac x4
+\text{opposite}=x
+\text{adjacent}=4
+\text{hypotenuse}=\sqrt{x^2+4^2}
+\sin\theta=\dfrac{\text{opposite}}{\text{hypotenus}}=\dfrac{x}{\sqrt{x^2+4^2}}
+\cos\theta=\dfrac{\text{adjacent}}{\text{hypotenus}}=\dfrac{4}{\sqrt{x^2+4^2}}
+x=4\sin y
+dx=4\cos y\ dy
+\displaystyle\int\frac1{\cos^3}
+\frac 1{(16-x^2)^2} = \frac 1{(16\cos^2 y)^2} = \frac 1{(4\cos y)^4} 
+\int\frac 1{(16-x^2)^2}dx = \int\frac{4\cos y}{(4\cos y)^4} dy
+16-x^2
+\cosh^2 \theta-\sinh^2 \theta = 1
+1-\tanh^2\theta = \text{sech}^2 \theta
+16-16\tanh^2\theta = 16\text{sech}^2 \theta
+x=4\tanh \theta
+dx = 4\text{sech}^2(\theta) d\theta
+\cosh^2 \theta = \frac{1}{2}(\cosh 2 \theta+1)
+\theta = \tanh^{-1}(x/4)
+ \int \frac{dx}{(16-x^2)^2} = \int \frac{4\text{sech}^2(\theta) d\theta}{(16)^2\text{sech}^4 \theta} = \frac{1}{64}\int \cosh^2 \theta d\theta 
+ \frac{1}{64}\int \cosh^2 \theta d\theta = \frac{1}{128}\int (\cosh 2 \theta +1)d\theta = \frac{1}{256}(\sinh 2 \theta + 2\theta)+c 
+ \int \frac{dx}{(16-x^2)^2}  = \frac{1}{256}\biggl(\sinh \bigl[2 \tanh^{-1}(x/4)\bigr] + 2\tanh^{-1}(x/4)\biggr)+c 
+x=4\sin y
+\Rightarrow
+dx=4\cos y dy
+\sin y=\frac{x}{4}$$\Rightarrow
+y=\arcsin\frac{x}{4}
+\int\frac{1}{(16-x^2)^2}dx=\int\frac{1}{(4^2-x^2)^2}dx
+\int\frac{4\cos y dy}{(16-(4\sin y)^2)^2}
+\int\frac{4\cos y dy}{(16-16\sin^2y)^2}
+\int\frac{4\cos y dy}{16^2(1-\sin^2 y)^2} 
+\frac{1}{64} \int\frac{\cos y dy}{(\cos^2 y)^2}
+\frac{1}{64}\int\frac{dy}{\cos^3 y}
+\frac{1}{64}\int{\sec^3 y dy}
+\frac{1}{64}\cdot\frac{\sin y}{2\cos^2 y} +\frac{1}{2}\int\frac{dy}{\cos y}
+\frac{1}{32}\cdot\frac{\sin y}{\cos^2 y} +\frac{1}{2}\ln|\tan(\frac{y}{2}+\frac{\pi}{4})|
+\frac{1}{32}\cdot\frac{\sin y}{1-\sin^2 y} +\frac{1}{2}\ln|\tan(\frac{y}{2}+\frac{\pi}{4})|
+\frac{1}{32}\cdot\frac{\frac{x}{4}}{1-(\frac{x}{4})^2 } +\frac{1}{2}\ln|\tan(\frac{\arcsin\frac{x}{4}}{2}+\frac{\pi}{4})|
+\frac{x}{8(16-x^2)} +\frac{1}{2}\ln|\tan(\frac{\arcsin\frac{x}{4}}{2}+\frac{\pi}{4})|+C
+\int\frac{dx}{\cos^n x}
+\frac{\sin x}{(n-1)\cos^{n-1} x} +\frac{n-2}{n-1}\int\frac{dx}{\cos^{n-2}x}
+\int\frac{dx}{\cos x}
+\ln|\tan(\frac{x}{2}+\frac{\pi}{4})|
+x=4\tan y \Rightarrow dx=\frac{4}{\cos^2 y} dy
+\tan y=\frac{x}{4} \Rightarrow y=\arctan\frac{x}{4}
+=
+=
+$\int\frac{1}{(16+x^2)^2}dx=\int\frac{1}{(4^2+x^2)^2}dx$=$\int\frac{\frac{4}{\cos^2 y}}{(16+(4\tan y)^2)^2}dy$=$\int\frac{\frac{4}{\cos^2 y}}{(16+16\tan^2 y)^2}dy
+= \int\frac{\frac{4}{\cos^2 y}}{16^2(1+\tan^2 y)^2}dy 
+=\int\frac{\frac{4}{\cos^2 y}}{\frac{256}{(\cos^2 y)^2}}
+=\int\frac{\frac{4}{\cos^2 y}}{\frac{256}{\cos^4 y}}
+=\frac{1}{64} \int\frac{\cos^4 y dy}{\cos^2 }
+=\frac{1}{64} \int{\cos^2 y dy}
+=\frac{1}{64}(\frac{1}{2}\sin y\cos y+\frac{1}{2}y)
+=\frac{1}{128}(\frac{1}{\tan y+\cot y}+y)
+=\frac{1}{128}(\frac{1}{\tan y+\frac{1}{\tan y}}+y)
+=
+=\frac{1}{128}(\frac{\tan y}{1+\tan^2 y}+y)$=$\frac{1}{128}(\frac{4x}{16+x^2}+\arctan\frac{x}{4})+C

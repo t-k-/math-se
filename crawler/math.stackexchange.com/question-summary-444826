@@ -1,0 +1,33 @@
+a_k = \frac1{2\pi i}\oint_C\frac{f(z)}{(z-c)^{k+1}}\,dz
+f(z)\Big|_{r\le|z|\le R} = \sum_{k=-\infty}^{\infty}a_k\cdot(z-c)^k 
+f\in\mathcal H(B(r,R))
+r\le R
+\rho\in[r,R]
+\tilde a_k := \rho^k a_k = \frac1{2\pi}\int\limits_{\phi=0}^{2\pi} f(c+\rho e^{i\phi}) e^{-ik\phi}\,d\phi \\\Rightarrow f(c+\rho e^{i\phi}) = \sum_{k=-\infty}^\infty \tilde a_k\,e^{ik\phi},
+\rho^k
+\tilde f(x):=f\Big(c+\rho e^{i\tfrac x{2\pi\rho}}\Big),\quad x\in[-\pi\rho,+\pi\rho],
+\rho\to\infty
+\tilde a_k\to \tilde a(k)\equiv \mathcal F\{\tilde f(x)\}(k)
+\tilde f(x) = \int_{-\infty}^\infty \tilde a(k) e^{ikx}\, dk, \\\tilde a(k) = \frac1{2\pi}\int_{-\infty}^\infty \tilde f(x) e^{-ikx}\, dx.
+f(z)\Big|_{r\le|z|} = \int_{-\infty}^\infty a(k)\cdot (z-c)^k, \\ a(k) = \lim_{R\to\infty} \frac1{2\pi}\oint\limits_{|z|=R}\frac{f(z)}{(z-c)^{k+1}}\,dz
+f
+R\to\infty
+f(z)
+\mathbb C
+\sum_{n=0}^\infty a_nx^n=:A(x)
+n=0,1,2,\ldots
+t\in(0,\infty)
+\int_0^\infty a(t) x^t dt
+s=-\ln(x)
+x
+0<x<1
+A(s)
+\text{Re}(s)>s_0
+a(t)
+t\rightarrow\infty
+\int_0^\infty a(t)e^{-st}dt=:A(s),
+s
+s_0<\text{Re}(s)<s_1
+x=e^{-s}
+a(t)
+\int_{-\infty}^\infty a(t)e^{-st}dt=:A(s).

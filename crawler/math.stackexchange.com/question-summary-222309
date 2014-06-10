@@ -1,0 +1,19 @@
+\int_{-\infty}^\infty\frac{\cos(x)}{e^x+e^{-x}}dx=\frac{\pi}{e^{\pi/2}+e^{-\pi/2}}
+f(z)=\frac{e^{iz}}{e^z+e^{-z}}
++R
++R+i\pi
+-R+i\pi
+-R
+\gamma_1(t)=R+i{\pi}t
+d{\gamma_1}=i{\pi}dt
+\int_{\gamma_1}f(z)dz=\int_{t=0}^1{\frac{e^{i(R+i{\pi}t)}}{e^{R+i{\pi}t}+e^{-(R+i{\pi}t)}}(i{\pi}dt)}
+C
+\gamma
+ \oint_{C} \frac{e^{iz}}{e^{z} + e^{-z}} \, dz = 2\pi i \operatorname{Res}\limits_{z=i\pi/2} \frac{e^{iz}}{e^{z} + e^{-z}} = \pi e^{-\pi/2}.
+ \int_{-R}^{R} \frac{\cos x}{e^{x} + e^{-x}} \, dx + \int_{R+i\pi}^{-R+i\pi} \frac{e^{iz}}{e^{z} + e^{-z}} \, dz + \int_{\gamma} \frac{e^{iz}}{e^{z} + e^{-z}} \, dz = \pi e^{-\pi/2}. 
+ \begin{align*} \int_{R+i\pi}^{-R+i\pi} \frac{e^{iz}}{e^{z} + e^{-z}} \, dz &= -\int_{-R}^{R} \frac{e^{i(z+i\pi)}}{e^{z+i\pi} + e^{-(z+i\pi)}} \, dz  = e^{-\pi} \int_{-R}^{R} \frac{e^{iz}}{e^{z} + e^{-z}} \, dz \\ &= e^{-\pi} \int_{-R}^{R} \frac{\cos x}{e^{x} + e^{-x}} \, dx.  \end{align*}
+C
+\gamma
+R \to \infty
+R\to\infty
+ (1 + e^{-\pi}) \int_{-\infty}^{\infty} \frac{\cos x}{e^{x} + e^{-x}} \, dx = \pi e^{-\pi/2},

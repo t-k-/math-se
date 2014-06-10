@@ -1,0 +1,37 @@
+\begin{align} f(t) = \begin{cases} \frac{-2t}{\pi}+4n+1 &\mbox{if } 2n\pi \leq t \leq (2n+1)\pi &\mbox{and } n = 0, 1, 2, \cdots \\ \frac{2t}{\pi}-4n+1 &\mbox{if } (2n+1)\pi \leq t \lt (2n+2)\pi &\mbox{and } n = 0, 1, 2, \cdots \end{cases}  \end{align}
+t\in [0,\pi)
+f
+[0,\pi)
+f
+[\pi,2\pi)
+h
+\pi
+[0,2\pi)
+ g(t) = -\frac{2}{\pi}t + 1,\quad h(t) = \frac{2}{\pi}t - 1 
+ f_1(t) = -\frac{2}{\pi}t + 1 =  g(t). 
+ f_2(t) =  \frac{2}{\pi}t -3  =  h(t-\pi). 
+ f(t) = U(t-0)f_1(t) + U(t-\pi)\big(f_2(t) - f_1(t)\big) 
+[2\pi,3\pi)
+f
+g
+ 2\pi
+[0,3\pi)
+ f_3(t) = g(t-2\pi), 
+ f(t) = U(t-0)f_1(t) + U(t-\pi)\big(f_2(t) - f_1(t)\big) + U(t-2\pi)\big(f_3(t) - f_2(t)\big). 
+f_0(t) = 0
+\star
+a_n
+n\geq 1
+k = 1,2,3,\dots
+a_n=n\pi
+\Phi = -4t/\pi
+ f(t) = \sum^{\infty}_{n=0} U(t -\color{blue}{n\pi} )\big(f_{n+1}(t) - f_n(t)\big),\tag{$\star$} 
+ f_{n+1}(t) - f_n(t) = \begin{cases} g(t-n\pi) - h\big(t-(n-1)\pi\big) &\text{when } n = 2k, \\[5pt] h(t-n\pi) - g\big(t-(n-1)\pi\big) &\text{when } n =2k-1. \end{cases} 
+ g(t-n\pi) - h\big(t-(n-1)\pi\big) = -\frac{2}{\pi}(t-n\pi) + 1 - \frac{2}{\pi}\big(t-(n-1)\pi\big) + 1 = -\frac{4}{\pi}(t-n\pi), 
+ U(t -a_n )\Phi(t-a_n), 
+\frac{2}{\pi}|t-\pi|-1
+t \in [0,2\pi]
+1
+0,2\pi
+0
+\left(\frac{2}{\pi}|t-\pi|-1 \right) \cdot(U(t-0)-U(t-2\pi)) 

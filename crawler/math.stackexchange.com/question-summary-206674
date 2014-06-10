@@ -1,0 +1,19 @@
+x
+z
+G(z)
+[z1,z2]
+x \sim U[0,z]
+z \sim U[1,2]
+X
+Z
+f(x|z)=\frac{1}{z}\mathbb{I}[0<x<z]
+Z
+f(z)=\mathbb{I}[1<z<2]
+X
+Z
+z
+f(x,z)=f(x|z)f(z)=\frac{1}{z}\mathbb{I}[0<x<z]\mathbb{I}[1<z<2]
+f(x)=\int_{\max(x,1)}^{2} f(x,z)dz=\int_{\max(x,1)}^{2}\frac{dz}{z}=\log2-\log(\max(x,1))
+X
+x > 1
+x < 1

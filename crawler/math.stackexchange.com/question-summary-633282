@@ -1,0 +1,45 @@
+\int_0^{\frac{\pi}{2}}\frac{x^2}{1+\cos^2 x}dx
+K
+K=\int_0^{\pi/2} dx \frac{x^2}{1+\cos^2{x}} =  2 \int_0^{\pi/2} dx \frac{x^2}{3+\cos{2 x}} = \frac18 \int_{-\pi}^{\pi} dy \frac{y^2}{3+\cos{y}}
+J(a) = \int_{-\pi}^{\pi} dy \frac{e^{i a y}}{3+\cos{y}}
+K = -\frac18 J''(0)
+I(a) = \oint_C dz \frac{z^a}{z^2+6 z+1}
+C
+\epsilon
+z=-3+2 \sqrt{2}
+I(a)
+J(a)
+J(a)
+I(a)
+C
+I(a) = \frac{i}{2} J(a) +e^{i \pi} \int_1^{3-2 \sqrt{2}+\epsilon} dx \frac{e^{i \pi a} x^a}{x^2-6 x+1} \\+ i \epsilon \int_{\pi}^0 d\phi \, e^{i \phi} \frac{ [e^{i \pi}(3-2 \sqrt{2})+\epsilon e^{i \phi}]^a}{(-3+2 \sqrt{2}+\epsilon e^{i \phi})^2+6 (-3+2 \sqrt{2}+\epsilon e^{i \phi})+1}\\ +e^{i \pi} \int_{3-2 \sqrt{2}-\epsilon}^{\epsilon} dx \frac{e^{i \pi a} x^a}{x^2-6 x+1} + i \epsilon \int_{\pi}^{-\pi} d\phi \, e^{i \phi} \frac{\epsilon^a e^{i a \phi}}{\epsilon^2 e^{i 2 \phi}+6 \epsilon e^{i \phi}+1}\\ +e^{-i \pi} \int_{\epsilon}^{3-2 \sqrt{2}-\epsilon} dx \frac{e^{-i \pi a} x^a}{x^2-6 x+1}\\ + i \epsilon \int_0^{-\pi} d\phi \, e^{i \phi} \frac{ [e^{-i \pi}(3-2 \sqrt{2})+\epsilon e^{i \phi}]^a}{(-3+2 \sqrt{2}+\epsilon e^{i \phi})^2+6 (-3+2 \sqrt{2}+\epsilon e^{i \phi})+1}\\+e^{-i \pi} \int_{3-2 \sqrt{2}+\epsilon}^1 dx \frac{e^{-i \pi a} x^a}{x^2-6 x+1} 
+z=-3+2 \sqrt{2}
+-3+2 \sqrt{2}=e^{i \pi} (3-2 \sqrt{2})
+-3+2 \sqrt{2}=e^{-i \pi} (3-2 \sqrt{2})
+\epsilon \to 0
+I(a) = \frac{i}{2} J(a) + i 2 \sin{\pi a} \: PV \int_0^1 dx \frac{x^a}{x^2-6 x+1} - i \frac{\pi}{4 \sqrt{2}} 2 \cos{\pi a} \: (3-2 \sqrt{2})^a
+PV
+I(a)=0
+J(a)
+J(a) = \frac{\pi}{\sqrt{2}} \cos{\pi a} \: (3-2 \sqrt{2})^a - 4 \sin{\pi a}\: PV \int_0^1 dx \frac{x^a}{x^2-6 x+1}
+K=-\frac18 J''(0)
+K = \pi \, PV \int_0^1 dx \frac{\log{x}}{x^2-6 x+1} + \frac{\pi^3}{8 \sqrt{2}} - \frac{\pi}{8 \sqrt{2}} \log^2{(3-2 \sqrt{2})}
+\frac1{x^2-6 x+1} = \frac1{4 \sqrt{2}} \left (\frac1{x-(3+2 \sqrt{2})} - \frac1{x-(3-2 \sqrt{2})} \right )
+\int_0^1 dx \frac{\log{x}}{x-b} = \text{Li}_2{\left ( \frac1{b}\right )}
+PV\int_0^1 dx \frac{\log{x}}{x-1/b} =\frac{\pi^2}{3} - \frac12 \log^2{\left ( \frac1{b}\right )} - \text{Li}_2{\left ( \frac1{b}\right )}
+b=3+2 \sqrt{2}
+PV \int_0^1 dx \frac{\log{x}}{x^2-6 x+1} = \frac1{4 \sqrt{2}} \left [2 \text{Li}_2{(3-2 \sqrt{2})} - \frac{\pi^2}{3} + \frac12 \log^2{(3-2 \sqrt{2})}  \right ] 
+\log^2
+K = \int_0^{\pi/2} dx \frac{x^2}{1+\cos^2{x}} = \frac{\pi}{2 \sqrt{2}} \text{Li}_2{(3-2 \sqrt{2})} + \frac{\pi^3}{24 \sqrt{2}}
+x^2
+e^{i a y}
+z^a
+z=0
+e^{i a y}
+ \frac{12 \pi  \text{Li}_2\left(3-2 \sqrt{2}\right)+\pi ^3}{24 \sqrt{2}}, 
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\large\verb*@RonGordon*
+{\rm I}\pars{a}
+C
+\ds{z_{\pm} = -3 \pm 2\root{2}\,,\quad -1 < z_{+} < 0\,,\quad z_{-} < -1}
+ {1 \over \omega \pm \ic 0^{+}} = \pp{1 \over \omega} \mp \ic\pi\delta\pars{\omega} \quad\mbox{where}\quad\pp\ \mbox{denotes the}\ {\it\mbox{Principal Part}}. 

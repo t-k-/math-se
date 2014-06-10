@@ -1,0 +1,16 @@
+f_{n}
+B\left(0,r\right)
+\sum_{n=1}^{\infty}\left|f_{n}\left(z\right)\right|
+B\left(0,r\right)
+\sum_{n=1}^{\infty}\left|f_{n}^{'}\left(z\right)\right|
+B\left(0,r\right)
+\sum_{n=1}^\infty \frac{z^n}{n^2}.
+\sum_{n=1}^\infty \frac{z^{n-1}}{n}
+z\to 1
+\begin{align} \lvert f'(z) \rvert &= \left\lvert \frac{1}{2\pi i}\int_{\lvert z\rvert = \rho} \frac{f(\zeta)}{(\zeta-z)^2}\,d\zeta\right\rvert\\ &= \frac{1}{2\pi} \left\lvert \int_0^{2\pi} \frac{f(\rho e^{i\varphi})}{(\rho e^{i\varphi}-z)^2} \rho e^{i\varphi}\,d\varphi\right\rvert\\ &\leqslant \frac{\rho}{2\pi} \int_0^{2\pi} \frac{\lvert f(\rho e^{i\varphi})\rvert}{\lvert \rho e^{i\varphi}-z\rvert^2}\,d\varphi\\ &\leqslant \frac{\rho}{(\rho - \lvert z\rvert)^2}\cdot \max_{\lvert \zeta\rvert = \rho} \lvert f(\zeta)\rvert. \end{align}
+\lvert z\rvert \to \rho
+\rho
+D_{r_1}(0)
+r_1 < r
+r_1 < \rho < r
+\lvert f'(z)\rvert \leqslant \frac{\rho}{(\rho - r_1)^2} \cdot \sup_{\lvert \zeta\rvert \leqslant \rho} \lvert f(\zeta)\rvert

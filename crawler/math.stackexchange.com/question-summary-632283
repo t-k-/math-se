@@ -1,0 +1,18 @@
+x
+y
+f(x, y) = Ax^2 + By + Cxy
+A
+B
+C
+S(A, B, C, x, y)
+A,B,C
+S(A,B,C,x,y)
+x
+y
+S(A,B,C,0,y)
+y\ge0
+2
+x>0
+x+y
+x+y
+ S(A,B,C,x,y) = \begin{cases} \max\{S(A,B,C,x-1,y+1),S(A,B,C,x,y-1)\}, &\text{if $x+y$ is even}, \\ \min\{S(A,B,C,x-1,y+1),S(A,B,C,x,y-1)\}, &\text{if $x+y$ is odd}. \\ \end{cases} 

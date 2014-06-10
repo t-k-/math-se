@@ -1,0 +1,8 @@
+ u_{t}(x,t) = \Delta u(x,t) \space \space \space \text{ for } \space t \ge 0 \space \space\space\space , \space x \in \mathbb{R}^{n} 
+ u \rightarrow 0 \space \text{ as }  \space ||x|| \rightarrow \infty 
+I(t) =  \int_{\mathbb{R}^{n}} {u(x,t) } dx = constant 
+u(x,0)
+ u(x,t) = \int_{\mathbb{R}^n}\frac{1}{(4\pi t)^{n/2}}e^{-||x-x'||^2/4t}u(x',0)dx' 
+ \int_{\mathbb{R}^n} u(x,t)dx = \int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\frac{1}{(4\pi t)^{n/2}}e^{-||x-x'||^2/4t}u(x',0)dx'dx 
+ \int_{\mathbb{R}^n} u(x,t)dx = \int_{\mathbb{R}^n}u(x',0)\left(\int_{\mathbb{R}^n}\frac{1}{(4\pi t)^{n/2}}e^{-||x-x'||^2/4t}dx\right) dx' 
+ \int_{\mathbb{R}^n} u(x,t)dx = \int_{\mathbb{R}^n}u(x',0)dx' 

@@ -1,0 +1,45 @@
+C \subset \mathbb{R^n}
+\gamma:[a,b] \subset\mathbb{R}\rightarrow C
+C
+K:\mathbb{R^n} \rightarrow \mathbb{R^n}
+\omega = K_{1}dx^{1}+...+K_{n} dx^{n}
+K_{1},...,K_{n}
+K
+\mathbb{R^n}
+\langle.,.\rangle
+\int_{c}\vec{K}\cdot\vec{ds} = \int_{c}\vec{K}\cdot\hat{n}\space ds:=\int_{a}^{b}\langle K(\gamma(t)),\dot{\gamma}(t)\rangle \space dt =\int_{a}^{b}\sum_{i=1}^{n}K_{i}(\gamma(t))\space\dot{\gamma_{i}}(t)\space dt
+\int_{\gamma}\omega:=\int_{a}^{b}\gamma^{*}\omega=\int_{a}^{b}\omega(\gamma(t))\space \dot{\gamma}(t)\space dt =\int_{a}^{b}\sum_{i=1}^{n}K_{i}(\gamma(t))\space\dot{\gamma_{i}}(t)\space dt
+S \subset \mathbb{R^3}
+\phi:U\subset\mathbb{R^2}\rightarrow S
+S
+\space F:\mathbb{R^3}\rightarrow\mathbb{R^3}
+\eta = F_{1}\space dx\wedge dy -F_{2}\space dx \wedge dz +F_{3}\space dy \wedge dz
+F_{1},F_{2},F_{3}
+\mathbb{R^3}
+\int_{S}\vec{F}\cdot \vec{dA} = \int_{S}\vec{F}\cdot\hat{n}\space dA :=\int_{U}\langle F,\frac{\partial\phi}{\partial u}\times\frac{\partial\phi}{\partial v}\rangle\space d\mu(u,v)
+\int_{S}\eta:=\int_{U}\phi^{*}\eta= \int_{U}\langle F,\frac{\partial\phi}{\partial u}\times\frac{\partial\phi}{\partial v}\rangle\space d\mu(u,v)
+\int_{c}f\space ds := \int_{a}^{b}f(\gamma(t))\space\lVert\dot{\gamma}(t)\rVert\space dt
+\int_{S}g\space dA := \int_{U} g(\phi(u,v)) \space\lVert\frac{\partial\phi}{\partial u}\times\frac{\partial\phi}{\partial v}\rVert\space d\mu(u,v)
+(M,g)
+\omega
+\omega_{p}(e_{1},\ldots,e_{m})=1
+\lbrace e_{i} \rbrace_{i=1}^{m}\subset T_{p}M
+f
+M
+\int\limits_{M} f:= \int\limits_{M}f \cdot \omega
+\phi: U \to \phi(U)=:O
+\phi^{*}\omega=\sqrt{\det(g(x))} dx^{1}\wedge \cdots \wedge dx^{m}
+g
+\phi^{*}g = \sum\limits_{i,j}g_{ij}(x) dx^{i} \otimes dx^{j}
+ \begin{aligned}\int\limits_{O}f &= \int\limits_{O}f \cdot \omega = \int\limits_{U} \phi^{*}(f \cdot \omega) \\ &=\int\limits_{U}f(\phi(x))\sqrt{\det(g(x))} dx^{1}\wedge \cdots \wedge dx^{m} \equiv \int\limits_{U}f(\phi(x))\sqrt{\det(g(x))} dx. \end{aligned}
+M
+(\mathbb{R}^{n},\delta)
+g=\delta\big\vert_{M}
+\delta=\sum\limits_{i=1}^{n}dy^{i} \otimes dy^{i}
+\det(g(x))=\det((D\phi(x))^{t}D\phi(x))
+D\phi(x)
+\phi
+\gamma: I \to \mathbb{R}^{n}
+\det(g(t))=\Vert \dot{\gamma}(t) \Vert_{2}^{2}
+\mathbb{R}^{3}
+ \int\limits_{O} f = \int\limits_{U}f(\phi(x))\sqrt{\det((D\phi(x))^{t}D\phi(x))} dx.

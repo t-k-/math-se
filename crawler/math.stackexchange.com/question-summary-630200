@@ -1,0 +1,23 @@
+\lim_{x \to 1 } (\frac{x+\frac{1}{x}}{2})^{cot^{2}\pi x}
+\lim_{x \to 1 }{cot^{2}\pi x}*\frac{\log_{}\frac{x+\frac{1}{x}}{2}}{\frac{x+\frac{1}{x}}{2}-1}*\frac{x+\frac{1}{x}}{2}-1
+\lim_{x \to 1 }{cot^{2}\pi x}*(\frac{x+\frac{1}{x}}{2}-1)
+\text{Let }\displaystyle y=\lim_{x\to1}\left(\frac{x^2+1}{2x}\right)^{\cot^2{\pi x}} \implies\ln y=\lim_{x\to1} \frac{\cos^2{\pi x}}{\sin^2\pi x}\cdot \ln\left(\frac{x^2+1}{2x}\right)
+x-1=h,
+\ln y=\lim_{h\to0} \frac{\cos^2{\pi(h+1)}}{\sin^2\pi(h+1)}\cdot \ln\left(\frac{(h+1)^2+1}{2(h+1)}\right)
+\displaystyle\frac{(h+1)^2+1}{2(h+1)}=1+\frac{h^2}{2(h+1)},
+\displaystyle \cos^2{\pi(h+1)}=\{\cos(\pi+\pi\cdot h)\}^2=\{-\cos(\pi\cdot h)\}^2=\cos^2(\pi\cdot h)
+\displaystyle \sin^2{\pi(h+1)}=\sin^2(\pi\cdot h)
+\displaystyle\lim_{u\to0}\frac{\ln(1+u)}u=1
+\displaystyle\lim_{v\to0}\frac{\sin  v}v=1,
+\displaystyle\ln y
+=\left(\lim_{h\to0}\cos(\pi\cdot h)\right)^2\lim_{h\to0}\frac{\ln\left(1+\frac{h^2}{2(h+1)}\right)}{\frac{h^2}{2(h+1)}}\cdot\frac1{\left(\lim_{h\to0}\frac{\sin(\pi\cdot h)}{\pi \cdot h}\right)^2}\cdot\frac1{\lim_{h\to0}2(h+1)\pi^2}
+\implies \ln y=1^2\cdot1\cdot\frac1{1^2}\cdot\frac1{2\pi^2}
+\implies \ln y=e^{\frac1{2\pi^2}} 
+a^b=e^{b\ln(a)}
+(\frac{x+\frac{1}{x}}{2})^{cot^2(\pi x)}=e^{cot^2(\pi x)\ln(\frac{x+1/x}{2})}
+\lim_{x\rightarrow 1}cot^2(\pi x)\ln(\frac{x+1/x}{2})=\lim_{x\rightarrow 1}\frac{\cos^2(\pi x)}{\sin^2(\pi x)}\ln(\frac{x+1/x}{2})
+\lim \cos^2(\pi x)
+\lim \frac{\ln(\frac{x+1/x}{2})}{\sin^2(\pi x)}
+\lim \frac{\frac{2}{x+1/x}\frac{1-1/x^2}{2}}{2\pi\sin(\pi x)\cos(\pi x)}=\lim \frac{\frac{x^2-1}{x^3+x^2}}{2\pi\sin(\pi x)\cos(\pi x)}=-\frac{2}{\pi}\lim\frac{x-1}{\sin(\pi x)}
+\lim \frac{1}{\cos(\pi x)\pi}=-\frac{1}{\pi}
+e^{2/\pi^2}

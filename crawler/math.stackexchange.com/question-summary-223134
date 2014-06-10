@@ -1,0 +1,111 @@
+(a_1,\space a_2,\space \cdots, \space a_n) \in \mathbb R^n_+
+\displaystyle \prod^n_{i=1 }a_i = 1
+\displaystyle \prod^n_{i=1} (1+a_i^2) \le \cfrac {2^n}{n^{2n-2}}\left (\sum^n_{i=1} a_i\right)^{2n-2}
+n
+\Omega=\lbrace (x_1,x_2, \ldots ,x_n) | x_i >0 \ (1 \leq i\leq n) \rbrace
+M>0
+\Omega
+f (x_1,x_2, \ldots ,x_n)
+g(x_1,x_2, \ldots ,x_n)=h(x_1,x_2, \ldots ,x_n)=0
+ \begin{array}{lcl} f (x_1,x_2, \ldots ,x_n) &=& (1+x_1^2)(1+x_2^2) \ldots (1+x_n^2) \\ g(x_1,x_2, \ldots ,x_n) &=& x_1+x_2+ \ldots +x_n-M \\ h(x_1,x_2, \ldots ,x_n) &=& x_1x_2 \ldots x_n-1 \\ \end{array} 
+K_M=\lbrace (x_1,x_2, \ldots ,x_n) | g(x_1,x_2, \ldots ,x_n)=h(x_1,x_2, \ldots ,x_n)=0\rbrace
+\Omega
+f
+K_M
+p
+\lambda
+\mu
+ \frac{\partial f}{\partial x_k}(p)=\lambda \frac{\partial g}{\partial x_k}(p)+\mu \frac{\partial h}{\partial x_k} \ (1 \leq k \leq n)  
+ (1) \ 2x_k\prod_{j\neq k}(1+x_j^2)=\lambda+\mu(\prod_{j\neq k}x_j)  \ (1 \leq k \leq n)  
+n
+\lambda
+\mu
+i
+j
+x_j \neq x_i
+i
+j
+\lambda
+\mu
+ (2) \  \lambda=\frac{2(x_i+x_j)}{(x_i^2+1)(x_j^2+1)}\frac{A}{B}, \ \  \ \mu=\frac{x_ix_j(x_ix_j-1)}{(x_i^2+1)(x_j^2+1)}\frac{A}{B} \ (\text{where} \ A=\prod_{j=1}^{n}(1+x_j^2), B= \prod_{j=1}^{n}x_j) 
+i,j
+x_i \neq x_j
+\lbrace x_k \rbrace
+n=3
+x_1x_2+x_1x_3+x_2x_3=1
+x_i
+1
+x_1x_2x_3=1
+x_1x_2+x_1x_3+x_2x_3=1
+ (x_1-x_2)^2+(x_1-x_3)^2+(x_2-x_3)^2=2((x_1+x_2+x_3)^2-(x_1x_2+x_1x_3+x_2x_3 ))=0 
+\lbrace x_k \rbrace
+a
+b
+a=b
+n_a
+n_b
+n_a+n_b=n
+ \begin{array}{l} f(x_1, \ldots ,x_n)=(1+a^2)^{n_a}(1+b^2)^{n_b}, \\ 1=x_1x_2x_3 \ldots x_n=a^{n_a}b^{n_b}, \\  x_1+x_2+ \ldots+x_n=n_aa+n_bb  \end{array} 
+\displaystyle \prod^n_{i=1} (1+a_i^2) /\left (\sum^n_{i=1} a_i\right)^{2n-2}
+2^n/n^{2n-2}
+a_i,a_j\geq1
+0<a_i,a_j\leq1
+(1+a_i^2)(1+a_j^2)\leq2(1+a_i^2a_j^2)
+\displaystyle \prod^n_{i=1} (1+a_i^2) /\left (\sum^n_{i=1} a_i\right)^{2n-2}\leq 2^{n-2}(1+A^2)(1+A^{-2})/(mA^{\frac{1}{m}}+(n-m)A^{-\frac{1}{n-m}})^{2n-2}
+A
+m
+a_i\geq 1
+a_i\rightarrow\infty
+m<n-1
+A
+RHS
+m=n-1
+(1+a_i^2)<(1+a_i)^2
+\displaystyle \prod^n_{i=1} (1+a_i^2) /\left (\sum^n_{i=1} a_i\right)^{2n-2}\leq \displaystyle (\prod^n_{i=1} (1+a_i) /\left (\sum^n_{i=1} a_i\right)^{n-1})^2
+\prod_{k=1}^{n}(1+a_k)=\sum_{j=0}^{n} \binom{n}{j} S_j
+S_j\leq S_1^j
+S_j/S_1^{n-1}=n^{n-1}S_j/\left (\sum^n_{i=1} a_i\right)^{n-1}
+a_i
+m=n-1
+nS_{n-1}+S_n=1+\sum_{k=1}^n\frac{1}{a_k}\leq n+\prod_{a_i>=1}{a_i}<n+(\frac{\sum_{i=1}^n a_i}{n-1})^{n-1}
+\displaystyle \prod^n_{i=1} (1+a_i^2) /\left (\sum^n_{i=1} a_i\right)^{2n-2}
+\epsilon+1/(n-1)^{2n-2}
+a_i
+n>2
+\frac{1}{(n-1)^{2n-2}}<\frac{2^n}{n^{2n-2}}
+\displaystyle \prod^n_{i=1} (1+a_i^2) /\left (\sum^n_{i=1} a_i\right)^{2n-2}<\frac{2^n}{n^{2n-2}}-\epsilon_1,\epsilon_1>0
+{(a_1,\cdots,a_n),a_i<M,i=1,\cdots,n}
+f (x_1,x_2, \ldots ,x_n)
+g (x_1,x_2, \ldots ,x_n)=0
+ f (x_1,x_2, \ldots ,x_n) = \log(1+x_1^2)+\log(1+x_2^2) \ldots +\log(1+x_n^2)-(2n-2)\log(x_1+x_2+\ldots +x_n)
+g(x_1,x_2, \ldots ,x_n) = \log x_1+\log x_2 +\ldots +\log x_n 
+\frac{\partial f}{\partial x_k}=\lambda\frac{\partial g}{\partial x_k}
+\frac{2x_i}{1+x_i^2}-\frac{\lambda}{x_i}=\frac{2n-2}{\sum_{k=1}^n x_k},i=1,2,\cdots,n
+x_i\neq x_j
+i\neq j
+\lambda/2=\frac{(x_i x_j-1)x_i x_j}{(1+x_i^2)(1+x_j^2)}
+x_i\neq x_j
+1\leq i<j\leq3
+x_i=x_j
+i\neq j
+\lambda/2=\frac{(x_i x_j-1)x_i x_j}{(1+x_i^2)(1+x_j^2)},1\leq i<j\leq3
+\{x_k\}
+\frac{2x_i}{1+x_i^2}-\frac{\lambda}{x_i}=\frac{2n-2}{p x_1+q x_2},i=1,2,p+q=n,p>0,q>0,p,q\in\mathbb{Z},x_1\neq x_2
+\frac{2x_1^2}{1+x_1^2}-\frac{2x_2^2}{1+x_2^2}=\frac{(2n-2)(x_1-x_2)}{p x_1+q x_2}
+(p+q-1)(1+x_1^2+x_2^2+x_1^2 x_2^2)=(p+q)x_1 x_2+px_1^2+qx_2^2
+LHS
+2(p+q-1)x_1 x_2+px_1^2+qx_2^2
+(1,1,\cdots,1)
+l(a_1,\dots,a_n) = \prod\limits^n_{i=1} (1+a_i^2)
+r(a_1,\dots,a_n) = \cfrac {2^n}{n^{2n-2}}\left (\sum\limits^n_{i=1} a_i\right)^{2n-2}
+\cfrac{d^nl}{da_1\dots da_n}( a_1,\dots,a_n ) = 2 ^ n\prod\limits^n_{i=1} a_i
+\cfrac{d^nr}{da_1\dots da_n}( a_1,\dots,a_n ) = \cfrac {2^n}{n^{2n-2}}\cfrac {(2n-2)!}{(n-2)!}(\sum\limits^n_{i=1} a_i)^{n-2}
+(\sum\limits^n_{i=1} a_i)^{n} \ge n^n \prod\limits^n_{i=1} a_i
+(\sum\limits^n_{i=1} a_i)^{n-2} \ge n^{n-2} (\prod\limits^n_{i=1} a_i)^{\frac{n-2}{n}}
+\cfrac {2^n}{n^{2n-2}}\cfrac {(2n-2)!}{(n-2)!}(\sum\limits^n_{i=1} a_i)^{n-2} \ge \cfrac {2^n}{n^{2n-2}}\cfrac {(2n-2)!}{(n-2)!} n^{n-2} (\prod\limits^n_{i=1} a_i)^{\frac{n-2}{n}} = \cfrac {2^n}{n^{n}}\cfrac {(2n-2)!}{(n-2)!}(\prod\limits^n_{i=1} a_i)^{\frac{n-2}{n}}
+1 \le \cfrac{1}{n^{n}}\cfrac {(2n-2)!}{(n-2)!}
+(\prod\limits^n_{i=1} a_i)^{\frac{n-2}{n}} = 1
+2^n \le \cfrac {2^n}{n^{n}}\cfrac {(2n-2)!}{(n-2)!} \le \cfrac {2^n}{n^{2n-2}}\cfrac {(2n-2)!}{(n-2)!}(\sum\limits^n_{i=1} a_i)^{n-2}
+\cfrac{d^nl}{da_1\dots da_n}( a_1,\dots,a_n ) \le \cfrac{d^nr}{da_1\dots da_n}( a_1,\dots,a_n )
+l( a_1,\dots,a_n ) \le r( a_1,\dots,a_n )
+\prod\limits^n_{i=1} (1+a_i^2) \le \cfrac {2^n}{n^{2n-2}}\left (\sum\limits^n_{i=1} a_i\right)^{2n-2}

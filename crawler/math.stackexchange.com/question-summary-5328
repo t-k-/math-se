@@ -1,0 +1,9 @@
+(p\rightarrow q)\wedge(q\rightarrow r)\Leftrightarrow p\rightarrow (q\wedge r)
+(\neg p\wedge\neg q) \vee (\neg p\wedge r) \vee  (q\wedge r)
+p
+q
+r
+(p\rightarrow q)\wedge(q\rightarrow r)
+p\rightarrow (q\wedge r)
+\begin{array}{|c|c|c|c|c|c|c|c|c}\hline p&q&r&p\Rightarrow q&q\Rightarrow r&(p\Rightarrow q)\land (q\Rightarrow r)&q\land r&p\Rightarrow(q\land r)&\cdots\\\hline T&T&T&T&T&T&T&T\\T&T&F&T&F&F&F&F\\T&F&T&F&T&F&F&F\\T&F&F&F&T&F&F&F\\F&T&T&T&T&T&T&T\\F&T&F&T&F&F&F&T\\F&F&T&T&T&T&F&T\\F&F&F&T&T&T&F&T\\\hline \end{array}
+ \begin{array}{c|c|c|}\hline \cdots&\big[(p\Rightarrow q)\land (q\Rightarrow r)\big]\iff \big[ p\Rightarrow(q\land r)\big]\\\hline &T\\&T\\&T\\&T\\&F\\&T\\&T\\\hline \end{array}

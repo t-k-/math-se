@@ -1,0 +1,26 @@
+f(n) = (n-1)C(n,n) +(n-2)C(n,n-1) + (n-3)C(n,n-2) + \ldots + (2-1)C(n,2)
+f(n) = (n-2)2^{n-1} + 1
+(n-r-1)C(n,r-1)
+=(n-r)C(n,r-1)-C(n,r-1)
+=\frac{(n-r)n!}{(n-r)! r!}-C(n,r-1)
+=n\frac{(n-1)!}{(n-1-r))! r!}-C(n,r-1)
+=nC(n-1,r)-C(n,r-1)
+\sum_{ 0\le r\le n-1}(n-r-1)C(n,r-1)
+=\sum_{ 0\le r\le n-1}(nC(n-1,r)-C(n,r-1))
+=n\sum_{ 0\le r\le n-1}C(n-1,r)-\sum_{ 0\le r\le n-1}C(n,r-1)
+=n(1+1)^{n-1}-(1+1)^{n}+1
+C(n,n)=1
+C(n,r)=0
+r<0
+r>n
+=(n-2)2^{n-1}+1
+\sum_{k=0}^n\binom{n}k=2^n
+k\binom{n}k=n\binom{n-1}{k-1}
+\begin{align*} f(n)&=\sum_{k=1}^{n-1}(n-k)\binom{n}{n-k+1}\\ &=\sum_{k=1}^{n-1}k\binom{n}{k+1}\\ &=\sum_{k=2}^n(k-1)\binom{n}k\\ &=\sum_{k=2}^nk\binom{n}k-\sum_{k=2}^n\binom{n}k\\ &=\sum_{k=2}^nn\binom{n-1}{k-1}-\left(2^n-n-1\right)\\ &=n\sum_{k=1}^{n-1}\binom{n-1}k-2^n+n+1\\ &=n\left(2^{n-1}-1\right)-2^n+n+1\\ &=(n-2)2^{n-1}+1 \end{align*}
+f(z)
+f(1)
+ f(z) = \sum_{k=2}^n (k-1) \binom{n}{k} z^{k-2}
+ \int f(z) \; dz = \sum_{k=2}^n \binom{n}{k} z^{k-1} = \frac{1}{z} \left( (z+1)^n - nz - 1 \right)
+ f(z) = -\frac{1}{z^2} \left( (z+1)^n - nz - 1 \right) + \frac{1}{z} \left( n (z+1)^{n-1} - n \right)
+z=1
+ f(1) = -(2^n -n - 1) + n 2^{n-1} - n = (n-2) 2^{n-1} + 1.

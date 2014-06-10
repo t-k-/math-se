@@ -1,0 +1,11 @@
+(n+1)n\over2
+\sum_{m|n!} m
+\sum_{m|lcm(1,2,...,n)} m
+\int a=\sum_{m|a}m
+\int p^n=1+p+\dots+p^n=\frac{p^{n+1}-1}{p-1}
+\int ab=\int a \int b
+gcd(a,b)=1
+p_i
+n!=\prod_{i=1}^{\pi(n)}p_i^{\sum_{k=1}^{\lfloor {ln(n)/ln(p_i)}\rfloor} \lfloor {n\over p_i^k}\rfloor }=\prod_{i\geq1} p_i^{\sum_{k\geq 1} \lfloor {n\over p_i^k}\rfloor }
+\int n! = \int \prod_{i\geq1} p_i^{\sum_{k\geq 1} \lfloor {n\over p_i^k}\rfloor }=\prod_{i\geq1} \int p_i^{\sum_{k\geq 1} \lfloor {n\over p_i^k}\rfloor }=\prod_{i\geq1} \frac{p_i^{\sum_{k\geq 1} \lfloor {n\over p_i^k}\rfloor +1}-1}{p_i-1} 
+\int \frac{n!}{j!(n-j)!}=\prod_{i\geq1} \frac{p_i^{\sum_{k\geq 1} \lfloor {n\over p_i^k}\rfloor-\lfloor {j\over p_i^k}\rfloor-\lfloor {n-j\over p_i^k}\rfloor+1}-1}{p_i-1}

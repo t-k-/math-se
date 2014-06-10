@@ -1,0 +1,28 @@
+f(x,y,z)=xy+yz+xz
+(x+ \frac{1}{2}y + \frac{1}{2}z)^2 - x^2 - \frac{1}{4}(y-z)^2
+A
+(1,1)
+(1,1)
+B
+D
+D=(QP)A(QP)^T
+u=\frac x2+\frac y2+z,\,v=y-x
+w=z
+f(x,y,z)=u^2-\frac14v^2-w^2
+ P=\pmatrix{1&1&0\\ 0&1&0\\ 0&0&1} \Rightarrow B=PAP^T=\pmatrix{1&\tfrac12&1\\ \tfrac12&0&\tfrac12\\ 1&\tfrac12&0}. 
+ Q=\pmatrix{1&0&0\\ -\tfrac12&1&0\\ -1&0&1} \Rightarrow D=QAQ^T=\pmatrix{1&0&0\\ 0&-\tfrac14&0\\ 0&0&-1}. 
+\pmatrix{u\\ v\\ w}=(QP)^{-T}\pmatrix{x\\ y\\ z}=\pmatrix{\tfrac12&\tfrac12&1\\ -1&1&0\\ 0&0&1}\pmatrix{x\\ y\\ z}.
+F=\begin{pmatrix}0&\frac12&\frac12\\\frac12&0&\frac12\\\frac12&\frac12&0\end{pmatrix}\implies
+\det(tI-F)=\begin{vmatrix}\;\;t&-\frac12&-\frac12\\-\frac12&\;\;t&-\frac12\\-\frac12&-\frac12&\;\;t\end{vmatrix}=t^3-\frac14-\frac34t=
+=t^3-\frac{3t}4-\frac14=(t-1)\left(t+\frac12\right)^2
+-\,1/2\,
+\begin{align*}-x-y-z&=0\\-x-y-z&=0\end{align*}\;\implies z=-x-y
+\,-\frac12\;
+\,1\,
+\,F\,
+\;F\;
+\,F\,
+\,P\,
+\,F\,
+P=\begin{pmatrix}1&0&1\\0&1&1\\\!\!-1&\!\!-1&1\end{pmatrix}\implies P^{-1}=\frac13\begin{pmatrix}2&\!\!-1&\!\!-1\\\!\!-1&2&\!\!-1\\1&1&1\end{pmatrix}
+P^{-1}FP=\begin{pmatrix}\!\!-\frac12&0&0\\0&\!\!\!-\frac12&0\\{}\\0&0&1\end{pmatrix}

@@ -1,0 +1,14 @@
+ \frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2}=0,\\ x=r\cos\theta,\\ y=r\sin\theta. 
+ \frac1r\frac{\partial}{\partial r}\left(r\frac{\partial u}{\partial r}\right)+\frac1{r^2}\frac{\partial^2u}{\partial\theta^2}=0, 
+\Delta u
+u_r
+u_\theta
+\Delta u
+\nabla u
+\Omega
+r_1<r<r_2
+\theta_1<\theta<\theta_2
+ \iint_\Omega\Delta u\,dx\,dy=\int_{\partial\Omega}\mathbf{n}\cdot\nabla u\,ds .
+r
+\begin{aligned}\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}\Delta u\cdot r\,dr\,d\theta   &=\int_{\theta_1}^{\theta_2}\bigl(r_2u_r(r_2,\theta)-r_1u_r(r_1,\theta)\bigr)\,d\theta\\   &\quad+\int_{r_1}^{r_2}\frac{u_\theta(r,\theta_2)-u_\theta(r,\theta_1)}{r}\,dr\\   &=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}(ru_r)_r\,dr\,d\theta    +\int_{r_1}^{r_2}\int_{\theta_1}^{\theta_2}\frac{u_{\theta\theta}}{r}\,d\theta\,dr\\   &=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}\Bigl((ru_r)_r+\frac{u_{\theta\theta}}{r}\Bigr)\,dr\,d\theta \end{aligned}
+\Delta u\cdot r=(ru_r)_r+\frac{u_{\theta\theta}}{r}.

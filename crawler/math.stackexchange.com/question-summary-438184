@@ -1,0 +1,20 @@
+P(success) = {1 \over {4^9}}
+P(success*) = 1 - P(success) = 1 - {1 \over {4^9}}
+P(success*)^5 = (1- {1 \over {4^9}})^5
+P(at\ least\ one\ success) = 1-P(success*)^5 = 1-(1-{1 \over {4^9}})^5 \approx 0.000019
+P(success) = {18 \choose 9}({1 \over4})^9(1-{1 \over 4})^{18-9}
+P(success*) = 1-P(success) = 1-({18 \choose 9}({1 \over4})^9(1-{1 \over 4})^{18-9})
+P(at\ least\ one\ success) = 1 - P(success*)^5 = 1 - (1-({18 \choose 9}({1 \over4})^9(1-{1 \over 4})^{18-9}))^5 \approx 0.0677
+P(succeed\ with\ one\ test) = 1-P(fail\ every\ test) = 1 - 0.98065^5 \approx 0.094
+1- P(success*)^5
+P(success*)
+P(success)=(1/4)^9
+9
+9
+9
+(1/4)^9(3/4)^9
+9
+18 \choose 9
+P(success) = {18 \choose 9}({1 \over4})^9(1-{1 \over 4})^{18-9}
+9
+1-P(\text{ failed all five})\approx 1-(.98065)^5

@@ -1,0 +1,36 @@
+N
+V
+P(V)
+V
+F(n,k)
+\{1, \ldots,n\}
+k
+f(n,k)=|F(n,k)|
+F(n+1,k)
+1
+F(n,k-1)
+1
+F(n+1,k)
+1
+F(n,k)
+F(n,k)
+n
+1
+E_n=\frac1{n!}\sum_k k f(n,k)
+k
+k
+\sum_k f(n,k)=n!
+E_1=1
+E_n
+n
+\tag1  f(n+1,k) = f(n,k-1) + n f(n,k).
+  \sum_k k f(n+1,k) = \sum_k (k-1) f(n,k-1)+\sum_k f(n,k-1) + n \sum_k kf(n,k)
+ (n+1)! E_{n+1} = n!E_n+\sum_k f(n,k) + n!nE_n.
+E_{n+1} = E_n+\frac 1{n+1}
+1,2,\dots,n
+N
+k
+k
+1/k
+N
+N

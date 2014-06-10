@@ -1,0 +1,26 @@
+J \times J
+\Sigma
+\{1, ..., J\}
+v
+\Sigma_{v}
+\Sigma_v
+v
+\Sigma_v
+\mathbf{A}^{-1} = E - \frac{\mathbf{f}\mathbf{g}^T}{h}
+\pmatrix{\mathbf A & \mathbf b\\ \mathbf c^T & d}^{-1} =  \pmatrix{\mathbf E & \mathbf f\\ \mathbf g^T & h}
+\pmatrix{\mathbf E & \mathbf f\\ \mathbf g^T & h}\pmatrix{\mathbf A & \mathbf b\\ \mathbf c^T & d}  = \pmatrix{ \mathbf I & \mathbf 0 \\ \mathbf 0^T & 1}
+A^{-1}
+\pmatrix{\mathbf{I} & -\mathbf{f}\frac{1}{h} \\ \mathbf{0}^T & 1}
+ \pmatrix{\mathbf{E}- \mathbf{f}\frac{1}{h}\mathbf{g}^T & \mathbf{0} \\ \mathbf{g}^T & h}\pmatrix{\mathbf{A} & \mathbf{b} \\ \mathbf{c}^T & d} = \pmatrix{\mathbf{I} & -\mathbf{f}\frac{1}{h} \\ \mathbf{0}^T & 1}
+\left( \mathbf{E} - \mathbf{f}\frac{1}{h}\mathbf{g}^T\right)\mathbf{A} = \mathbf{I}
+\Sigma_j = \Sigma_{[1..j-1]\cup[j+1..J]}
+\Sigma
+j
+\Sigma = \begin{bmatrix} A_{11}&A_{12}&A_{13}\\A_{12}^T&A_{22}&A_{23}\\A_{13}^T&A_{23}^T&A_{33} \end{bmatrix} 
+L = \begin{bmatrix} L_{11}&L_{12}&L_{13}\\0&L_{22}&L_{23}\\0&0&L_{33} \end{bmatrix} 
+\Sigma_j = \begin{bmatrix} A_{11}&A_{13}\\A_{13}^T&A_{33} \end{bmatrix} 
+\mathsf{cholupdate}(A,B) = \mathsf{chol}(A^TA+B^TB)
+O(n^2)
+K
+O(Kn^2)
+L_j = \begin{bmatrix} L_{11}&L_{13}\\0&\mathsf{cholupdate}(L_{33},L_{23})\end{bmatrix} 

@@ -1,0 +1,62 @@
+f(x,y) = 1
+0<x<1
+0<y<1
+Z = X-Y
+u
+(z,t)=(x-y,y)
+(x,y)=(z+t,t)
+1
+|z|\geqslant1
+g(z)=0
+|z|\leqslant1
+g(z)=1-|z|
+Z
+ \mathrm E(u(Z))=\mathrm E(u(X-Y))=\iint_{[0,1]^2}u(x-y)\,\mathrm dx\mathrm dy, 
+ \mathrm E(u(Z))=\iint u(z)\,[0\leqslant t,z+t\leqslant 1]\,\mathrm dz\mathrm dt=\int u(z)g(z)\,\mathrm dz, 
+ g(z)=\int[0\leqslant t,z+t\leqslant 1]\,\mathrm dt=\int[\max(0,-z)\leqslant t\leqslant\min(1,1-z)]\,\mathrm dt. 
+Z
+[-1,1]
+z = -1,1
+z = 0
+1
+[-1,1]
+Z
+z = 0
+1
+xy
+X
+Y
+Z = X-Y
+1
+Z
+x = y
+Z=X-Y
+W=X\implies X=W
+Y=W-Z
+J=\frac{\partial(X,Y)}{\partial(Z,W)}=1
+Z,W
+g(W,Z)=f(W,W-Z)=1
+0\lt W\lt 1
+0\lt W-Z\lt 1\implies Z\lt W\lt 1+Z
+Z
+h(Z)=\int_{max(0,Z)}^{min(1,1+Z)}g(W,Z)dW=min(1,1+Z)-max(0,Z)
+-1\lt Z\lt 0
+h(Z)=1+Z
+0\lt Z\lt 1
+h(Z)=1-Z
+h(Z)=1-|Z|
+-1\lt Z\lt 1
+0
+Z = X-Y
+(-1,1)
+-1 \leq z < 0
+P\{Z \leq z\} = P\{X-Y \leq z\}
+(X,Y)
+(0,1), (1+z,1), (0,-z)
+\frac{1}{2}(1+z)^2
+0 \leq z < 1
+P\{Z \geq z\} = P\{X-Y \geq z\}
+(X,Y)
+(1,0), (z,0), (1,z)
+\frac{1}{2}(1-z)^2
+F_Z(z)=\begin{cases} 0, & z < -1,\\ {\scriptstyle\frac{1}{2}}(1+z)^2, & -1 \leq z < 0,\\ {\scriptstyle\frac{1}{2}}(1-z)^2, & 0 \leq z < 1,\\ 1, & z \geq 1, \end{cases} ~~ \Rightarrow f_Z(z) = \begin{cases} 1 + z, &-1 \leq z < 0,\\ 1-z, & 0 \leq z < 1,\\ 0, &\text{otherwise.} \end{cases}

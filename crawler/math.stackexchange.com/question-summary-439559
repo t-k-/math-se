@@ -1,0 +1,39 @@
+P_{i}
+ii
+i ≤ 5
+|S|=(2!)^{5}
+(2!)^{5}
+|S|-\sum_{i<j}N(i,j)+\sum_{i<j<k}N(i,j,k)-\sum_{i<j<k<l}N(i,j,k,l)+\sum N(1,2,3,4,5)
+N(i)
+S
+P_{i}
+N(1)=N(2)=N(3)=N(4)=N(5)=\frac{9!}{(2!)^{4}}
+11
+(2!)^{4}
+N(i,j)
+N(i,j)=\frac{8!}{2^3}
+S_i
+ii
+S
+1,1,2,2,3,3,4,4,,5
+|S|
+ |S| - |S_1\cup S_1\cup S_3\cup S_4\cup S_5| 
+ \begin{align} |S_1\cup S_1\cup S_3\cup S_4\cup S_5| &= |S_1| + |S_2|+\cdots + |S_5|\\  &- |S_1\cap S_2|-\dots - |S_4\cap S_5| \\  &+ |S_1\cap S_2\cap S_3| +\cdots+|S_3\cap S_4\cap S_5|\\  &- |S_1\cap S_2\cap S_3\cap S_4|-\cdots - |S_2\cap S_3\cap S_4\cap S_5|\\  &+ |S_1\cap S_2\cap S_3\cap S_4\cap S_5| \end{align} 
+ \begin{align} |S_1\cup \cdots \cup S_5| &= \sum N(i)\\ &-\sum N(i, j)\\ &+\sum N(i,j,k)\\ &-\sum N(i, j, k, l)\\ &+\sum N(i,j,k,l,m) \end{align} 
+N(i) = 9!/2^4
+N(1)
+(11),2,2,3,3,4,4,5,5
+1
+N(i,j)
+(ii),(jj)
+N(i, j)=8!/2^3
+N(i,j,k)=7!/2^2
+N(i,j,k,l)=6!/2
+N(1, 2, 3, 4, 5)=5!
+\binom{5}{1}
+N(i)
+\binom{5}{2}
+N(i, j)
+ |S_1\cup\dots\cup S_5|=\sum_{k=1}^5(-1)^{k+1}\binom{5}{k}\frac{(10-k)!}{2^k} 
+ \begin{align} |S|-|S_1\cup\dots\cup S_5|&=\frac{10!}{2^5}-\sum_{k=1}^5(-1)^{k+1}\binom{5}{k}\frac{(10-k)!}{2^k} \end{align} 
+ \frac{10!}{(2!)^5}- \left\{\frac{ 5×9!}{(2!)^4} + \frac{10×8!}{(2!)^3} + \frac{10×7!}{(2!)^2} + \frac{5×6!}{(2!)}\right\}.

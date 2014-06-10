@@ -1,0 +1,47 @@
+x_1=f
+x_2=x_1'
+(1)
+[i,-1]^T
+[i,1]^T
+A
+i,-i
+x'=Ax
+d_1,d_2
+d_1,d_2
+x=\Phi d
+x'=Ax
+f''(t)+f(t)=\frac16\sin^3t,\tag{1}
+A=\left[\begin{array}{cc}0 & 1\\-1 & 0\end{array}\right],\quad x=\left[\begin{array}{c}x_1\\x_2\end{array}\right],\quad\text{and}\quad b=\left[\begin{array}{c}0\\\frac16\sin^3t\end{array}\right],
+x'=Ax+b.\tag{2}
+d_1e^{it}\left[\begin{array}{c}i\\-1\end{array}\right]+d_2e^{-it}\left[\begin{array}{c}i\\1\end{array}\right]
+\Phi=\left[\begin{array}{cc}ie^{it} & ie^{-it}\\-e^{it} & e^{-it}\end{array}\right]\quad\text{and}\quad d=\left[\begin{array}{c}d_1\\d_2\end{array}\right]
+\hat c=[\hat c_1,\hat c_2]^T
+\hat c_1=\hat c_1(t),\hat c_2=\hat c_2(t)
+0
+\hat x=\Phi\hat c+\Phi d
+d
+A\Phi d=(\Phi d)'
+A\Phi=\left[\begin{array}{cc}-e^{it} & e^{-it}\\-ie^{it} & -ie^{-it}\end{array}\right]=\Phi',
+(\Phi\hat c)'=\Phi'\hat c+\Phi\hat c'=A\Phi\hat c+\Phi\hat c',
+\hat x'=(\Phi\hat c)'+(\Phi d)'=A\Phi\hat c+\Phi\hat c'+A\Phi d=A\hat x+\Phi\hat c'.
+\hat x'=A\hat x+b\quad\text{if and only if}\quad\Phi\hat c'=b.
+(1)
+f(x)=\frac1{192}\sin(3t)+\frac1{32}\sin t-\frac t{16}\cos t+d_1e^{it}+d_2e^{-it}
+ y(t) = A(t)y_1(t) + B(t)y_2(t), 
+y_1
+y_2
+ A'(t) y_1(t) + B'(t) y_2(t) = 0, 
+ A'(t) y_1'(t) + B'(t) y_2'(t) = f(t), 
+y_1(t)y_2'(t) - y_1'(t) y_2(t) \neq 0
+A(t)
+B(t)
+x=a
+ A(t) = -\int_a^t \frac{y_2(\xi)}{W(\xi)} f(\xi) d\xi, 
+ B(t) = \int_a^t \frac{y_1(\xi)}{W(\xi)} f(\xi) d\xi, 
+y_1(t) = \cos(t),\quad y_2(t) = \sin(t), \quad W(t) = 1
+ A(x) = - \frac{1}{6} \int_0^t \sin^4(\xi) = -\frac{1}{192} \bigl(12 t - 8 \sin(2 t) + \sin(4 t)\bigr) + K_2, 
+ B(x) = \frac{1}{6} \int_0^t \cos(\xi) \sin^3(\xi) = \frac{1}{24} sin^4(t) + K_1, 
+K_1
+K_2
+ y(t) = c_1 \cos(t) + \tilde{c}_2 \sin(t) + \frac{1}{24}\sin^5(t) - \frac{1}{192} \bigl(12 t - 8 \sin(2 t) + \sin(4 t)\bigr) \cos(t), 
+ y(t) = c_1 \cos(t) + c_2 \sin(t) + \frac{1}{192} \sin(3 t) - \frac{1}{16} t \cos(t). 

@@ -1,0 +1,18 @@
+\int \frac{3x-1}{x^2+10x+28}dx
+\frac{1}{3}\int \frac{3x-1}{\frac{1}{3}(x+5)^2+1}dx
+u=x+5
+x=u-5
+dx = du
+\frac{1}{3}\int \frac{3u-16}{\frac{u^2}{3}+1}du
+\frac{1}{3}\int \frac{3u}{\frac{u^2}{3}+1}du - \frac{1}{3}\int\frac{16}{\frac{u^2}{3}+1}du
+u = \sqrt3 tan\theta
+du = \sqrt3 sec^2\theta d\theta
+\theta = arctan(\frac{u}{\sqrt3})
+3\int tan\theta d\theta - \frac{1}{3}\int 16\sqrt3d\theta
+3 ln(sec(arctan(\frac{u}{\sqrt3}))) - \frac{16}{\sqrt3}(arctan(\frac{u}{\sqrt3}))+c  
+3 ln(\frac{\sqrt{u^2+3}}{\sqrt3})-\frac{16}{\sqrt3}arctan(\frac{u}{\sqrt3})+c
+3 ln(\frac{\sqrt{(x+5)^2+3}}{\sqrt3})-\frac{16}{\sqrt3}arctan(\frac{x+5}{\sqrt3})+c
+\frac{3}{2}ln(\frac{(x+5)^2}{3})-\frac{16}{\sqrt3}arctan(\frac{x+5}{\sqrt3})+c
+3
+\ln(g(x)/c)=ln(g(x))-ln(c)
+g(x)

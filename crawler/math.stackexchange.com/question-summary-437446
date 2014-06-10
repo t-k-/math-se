@@ -1,0 +1,12 @@
+ \frac{\sqrt{5}}{2}\int_{-1}^{1}xe^{-\frac{1}{2}x+\frac{3}{2}}dx 
+I=\frac{\sqrt{5}}{2}\int_{-1}^{1}xe^{-\frac{1}{2}x+\frac{3}{2}}dx
+=\frac{\sqrt{5}}{2}\cdot e^{\frac32}\int_{-1}^1xe^{-\frac12x}dx
+x=2y,dx=2dy
+x=-1,y=\frac x2=-\frac12
+x=1,y=\frac x2=\frac12
+\implies I=\frac{\sqrt{5}}{2}e^{\frac32}\int_{-\frac12}^{\frac12}2ye^{-y}2dy=2\sqrt5e^{\frac32}\int_{-\frac12}^{\frac12}ye^{-y}dy
+ \begin{align} \int ye^{-y}dy &= y\left(\int e^{-y}dy\right)- \int\left(\frac{dy}{dy}\cdot\int e^{-y}dy\right)dy\\ &=-ye^{-y}+\int e^{-y}dy\\ &=-ye^{-y}-e^{-y} \end{align} 
+ \int_{-1}^{1}xe^{-\frac{1}{2}x+\frac{3}{2}}dx =-2xe^{-\frac{1}{2}x+\frac{3}{2}}|_{x=-1}^{x=1}  +2\int_{-1}^{1} e^{-\frac{1}{2}x+\frac{3}{2}}dx=-2e-2e^2-4 e^{-\frac{1}{2}x+\frac{3}{2}}|_{x=-1}^{x=1}
+=-6e +2e^2.
+\int_a^bf'g = fg|_{a}^b-\int fg'
+\left(-2 e^{-\frac{1}{2}x+\frac{3}{2}}\right)'=e^{-\frac{1}{2}x+\frac{3}{2}}.

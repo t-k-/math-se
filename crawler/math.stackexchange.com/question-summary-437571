@@ -1,0 +1,12 @@
+c_n=\frac{1-n \cdot c_{n-1}}{\lambda}
+\lambda \in \mathbb{R}
+n \in \mathbb{N}
+c_n
+x \in \mathbb{R}
+c_n=\frac{(-1)^n n!}{\lambda^{n+1}}\left\{S_{n}(-\lambda)+\lambda c_0-1\right\}
+n=1
+n=1
+n=k
+-\frac{1}{\lambda^2}(1-\lambda+\lambda c_0-1)=\frac{1-c_0}{\lambda}=c_1
+\begin{align} c_{10} & = \tfrac 1\lambda - \tfrac{10}\lambda c_9 \\ & = \tfrac 1\lambda - \tfrac{10}{\lambda^2} (1-9c_8) \\ & = \tfrac 1\lambda - \tfrac{10}{\lambda^2} + \tfrac{10\cdot 9}{\lambda^2} c_8 \\ & = \tfrac 1\lambda - \tfrac{10}{\lambda^2} + \tfrac{10\cdot 9}{\lambda^3} -\tfrac{10\cdot 9\cdot 8}{\lambda^4}c_7 \\ & = \ldots = \tfrac 1\lambda - \tfrac{10}{\lambda^2} + \tfrac{10\cdot 9}{\lambda^3} -\tfrac{10\cdot 9\cdot 8}{\lambda^4}+\tfrac{10\cdot 9\cdot 8\cdot 7}{\lambda^5} - \ldots + (-1)^{10} \frac{10!}{\lambda^{11}}\cdot c_0 \end{align}
+c_n = \sum_{k=0}^{n-1} \left((-1)^k \frac{n!}{(n-k)!\cdot \lambda^{k+1}} \right) + (-1)^n \frac{n!}{\lambda^{n+1}} c_0

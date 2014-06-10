@@ -1,0 +1,79 @@
+z
+z^2\equiv -1
+p
+z
+x
+y
+p\equiv 1
+2^k
+k\ge3
+w=a^{(p-1)/2^k}
+p
+w\equiv\pm1
+w
+-1
+z
+a
+a
+b
+p=a^2+b^2
+a
+a^2 + b^2 = p
+a  = \dfrac{1}{2}\sum_{x = 0}^{p-1} \bigl( \dfrac{x^3 - x}{p} \bigr),
+\bigl( \dfrac{a}{p} \bigr)
+a
+p
+\rm\:p\equiv 1\ (mod\ 4)\:
+\rm\mathbb Z[\:i\:]\:
+\rm\:(mod\ p)\:
+\:
+\rm\:\alpha|p\ 
+\rm\:\alpha'|p\ 
+\rm\:\alpha\:\alpha'|p^2\:
+\:\mathbb Z\:
+\rm\mathbb{Z}\:
+>0
+\rm\:p^2\:
+\rm\: p\:
+\rm\: p = \alpha\:\alpha' = (a+b\:i)(a-b\:i) = a^2 + b^2\:
+\rm\ \ x^2 + 1 \ =\ (x-c)\:(x+c) + p\  f(x)\ 
+\rm\mathbb\ Z[x]\ \: \Rightarrow\:  -p\ f(i)\ =\ (i-c)\:(i+c)\ 
+\rm\mathbb\ Z[\:i\:]\ \ 
+\rm\: x = i\:
+\rm\:p\:
+\rm\:p\:
+\rm\: i\pm c\ \:
+\rm\ \: Z[\:i\:]\:
+z
+z^2 = -1 \mod p
+p
+z
+(x,y)
+\sqrt{p}
+x^2 + y^2 = p
+z^2 = -1 \mod p
+z
+z^{p-1} = 1 \mod p
+a
+z = a^{\frac{p-1}{4}}
+1 \pmod{4}
+p=4k+1
+x
+ x = \frac{(2k)!}{2(k!)^2} \pmod{p}, \quad x < \frac{p}{2}
+y
+ y = x  \cdot (2k)! \pmod{p}, \quad y < \frac{p}{2}
+x^2+y^2=p
+\:
+\rm\ p = 1\ \: (mod\ 4)\ 
+\rm\ \alpha = a + b\:i\ 
+\rm \ p = \alpha\:\alpha' = a^2 + b^2\ \ 
+\rm\text {psplit(p) := block([}\ \:\text{j : 0,}\ \ \text{e : floor(p/4),}\ \ \text{algebraic : true, x, y ], }
+\rm\quad\text{block([ modulus : p ],}\quad\quad\quad\quad\ 
+\rm\ j = \sqrt{-1}\ \ (mod\ p)\ 
+\rm\quad\quad\ \text{for}\ \: \text{ a : 2}\ \ \text{while}\ \ \text{j^2 # -1}
+\rm\quad\quad\quad\quad\quad\quad\quad\quad\quad\ \ \text{do}\ \: \text{ j : rat(a)^e ),}
+\rm\quad \text{x : p,}\ \ \: \text{y : j - %i,} \quad\quad\quad\quad\quad\quad\quad 
+\rm\  gcd(p,\:j - i)\ \in\ \mathbb Z[\:i\:]\ 
+\rm\quad \text{do ( if}\ \text{  y = 0}\ \ \text{then}\ \text{ return(x), }
+\rm\quad\quad\quad\ \ \text{j : rat(x - y * floor(rat(x/y))), }
+\rm\quad\quad\quad\ \ \text{x : y,}\ \text{ y : j )) }

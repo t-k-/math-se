@@ -1,0 +1,63 @@
+F(n/2)<n/2
+F(n)>n/2
+F(n)
+n>1, n \in \mathbb N^+
+\displaystyle F(x)=\frac{n}{2}
+F(x)=\int\limits_0^x \mathrm e^{-t} \left(1+t+\frac{t^2}{2!}+\cdots+\frac{t^n}{n!}\right) \mathrm d t
+\displaystyle I=\left(\frac{n}{2},n\right)
+t>0
+0
+n
+ (1-\frac tn)e^t=\sum_{k\ge 0}\frac 1{k!}(1-\frac kn)t^k<\sum_{k=0}^n \frac{t^k}{k!} 
+e^{-t}\sum_{k=0}^n \frac{t^k}{k!}> 1-\frac tn.
+e^{-x}
+x
+[{n\over 2}, n]
+n
+x
+p_n(x)>0
+x \in [{n \over 2}, n]
+p_n(x) = 1 + x +\ldots + {x^n \over n!} > 0
+G^{'}(x) > 0
+x \in [{n \over 2}, n]
+\square
+G(x)
+G({n \over 2})
+1 + x + \ldots + {x^n \over n!} < e^x
+x \in \mathbb{R}
+G({n \over 2}) = \int_{0}^{{n \over 2}}e^{-t}(1 + t +\ldots + {t^n \over n!})dt - {n \over 2}
+< \int_{0}^{{n \over 2}}e^{-t}e^{t}dt - {n \over 2} < {n \over 2} - {n \over 2} = 0
+\square
+G(n)
+G(n) = \int_{0}^{n}e^{-t}p_n(t)dt - {n \over 2}
+p_n(x) = e^{x} - R_n(x) = e^{x} - \int_{0}^{x}{e^{t} \over n!}(x-t)^ndt
+G(n) = \int_{0}^n\left(1 - e^{-t}\int_{0}^{t}{e^{u}\over n!}(t - u)^ndu\right) dt - {n\over 2}
+ = \int_{0}^n\left(1 - \int_{0}^{t}{e^{u-t}\over n!}(t - u)^ndu\right) dt - {n\over 2}
+v = t - u
+ G(n) = \int_{0}^n\left(1 - {1\over n!}\int_{0}^{t}e^{-v}v^ndv\right) dt - {n\over 2} = \int_{0}^{n}1 - {\gamma(n+1,t) \over n!}dt - {n \over 2}
+\Gamma(n+1,t)
+t
+n
+G(n) > n{\Gamma(n+1,n)\over n!} - {n \over 2}
+x \in (0,\infty)
+X
+P(X < x) = {\gamma(n+1,x) \over n!}
+P(X > x) = {\Gamma(n+1,x) \over n!}
+n
+{\Gamma(n+1,n) \over n!} = P(X > n) > {1 \over 2}
+\square
+G(n) > n{\Gamma(n+1,n) \over n!} - {n \over 2} > {n\over 2} - {n\over 2} = 0
+G(x)
+[{n\over 2},n]
+G({n\over 2})
+G(n) > 0
+G(x)
+[{n\over 2}, n]
+F(x) = {n\over 2}
+F(x)= \int\limits_0^x \mathrm e^{-t} \left(1+t+\frac{t^2}{2!}+\cdots+\frac{t^n}{n!}\right) \mathrm dt <\int\limits_0^x \mathrm e^{-t}\mathrm e^t\mathrm dt=x     \,\,\Rightarrow\,\, F(\frac{n}{2})<\frac{n}{2}. 
+ (1-\frac tn)e^t = \sum_{k=0}^{+\infty}\frac 1{k!}\underbrace{(1-\frac kn)}_{\in(-\infty,1]}t^k<\sum_{k=0}^n \frac{t^k}{k!}     \,\,\Rightarrow\,\, e^{-t}\sum_{k=0}^n \frac{t^k}{k!}> 1-\frac tn     \,\,\Rightarrow\,\, F(n)> n-1 \ge \frac{n}{2}. 
+x>0
+ F^\prime(x) = \mathrm e^{-x} \sum\limits_{i=0}^n \frac{x^i}{i!}                = \frac{\text{Power series with positive coefficients and $x>0$}}{\text{Exponentiation}} > 0. 
+1
+\displaystyle \left(\frac{n}{2},n\right)
+\square

@@ -1,0 +1,6 @@
+q
+\underset{d\mid q}{\sum}\frac{1}{\phi\left(q/d\right)^{2}}\ll\frac{1}{\phi\left(q\right)^{2}}?
+\sum_{d\mid n}\frac{1}{\phi(n/d)^2}=\prod_{p\mid n}(1+\frac{1}{\phi(p)^2}+\frac{1}{\phi(p^2)^2}+\frac{1}{\phi(p^3)^2}...+\frac{1}{\phi(p^{v_p(n)})^2})
+=\prod_{p\mid n}(1+\frac{1}{(p-1)^2}(1+\frac{1}{p^2}+\frac{1}{p^4}+..\frac{1}{p^{2(v_p(n)-1)}}))
+=\prod_{p\mid n}(1+\frac{1-p^{-2v_p(n)}}{(p-1)^2(1-p^{-2})})
+\sum_{d\mid n}\frac{1}{\phi(n/d)^2}<\prod_{p}(1+\frac{1}{(p-1)^2(1-p^{-2})})<3.4

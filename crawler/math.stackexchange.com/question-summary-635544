@@ -1,0 +1,29 @@
+n>0
+a_1,...,a_n \in K
+c_n(a_1,...,a_n)
+   \begin{pmatrix}   a_1 & 1 & 0 & \cdots & 0 \\   -1 & a_2 & \ddots & \ddots & \vdots \\   0 & \ddots & \ddots & \ddots & 0 \\   \vdots & \ddots & \ddots & \ddots & 1 \\   0 & \cdots & 0 & -1 & a_n   \end{pmatrix} 
+n \ge 2
+   \frac{c_n(a_1,...,a_n)}{c_{n-1}(a_2,...,a_n)}   =    a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_{n-1}+\frac{1}{a_n}}}} 
+n = 2
+   \frac{c_2(a_1,a_2)}{c_{2-1}(a_2)}   =    a_1 + \frac{1}{a_2} 
+   \frac{a_1a_2 + 1}{a_2} \neq a_1 + \frac{1}{a_2} 
+   \frac{c_{n+1}(a_1,...,a_{n+1})}{c_n(a_2,...,a_{n+1})}   =    a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_n+\frac{1}{a_{n+1}}}}} 
+c_{n+1}(...)
+   a_1 \cdot \det   \begin{pmatrix}   a_2 & 1 & & & & \\   -1 & a_3 & 1 & & & \\   & -1 & \ddots & & & \\   & & & \ddots & & \\   & & & & & 1 \\   & & & & -1 & a_{n+1}   \end{pmatrix}   +   \det   \begin{pmatrix}   1 & 0 & & & & \\   -1 & a_3 & 1 & & & \\   & -1 & a_4 & & & \\   & & & \ddots & & \\   & & & & & 0 \\   & & & & 0 & a_{n+1}   \end{pmatrix} 
+   a_1 \cdot c_n(a_2,...,a_{n+1}) + c_{n-2}(a_3,...,a_{n+1}). 
+c_n(...)
+   c_n(...) = a_2 c_{n-1}(...) + c_{n-3}(...) 
+   \frac{c_{n+1}(...)}{c_n(...)} = \frac{a_1c_n(...) + c_{n-2}(...)}{a_2c_{n-1}(...) + c_{n-3}(...)} 
+   \frac{a_1c_n(...)}{c_n(...)} + \frac{c_{n-2}}{a_2c_{n-1}(...) + c_{n-3}(...)} 
+   a_1 + \frac{1}{a_2 \frac{c_{n-1}(...)}{c_{n-2}(...)} + \frac{c_{n-3}(...)}{c_{n-2}(...)}} 
+   a_1 + \frac{1}{a_2 \frac{c_{n-1}(...)}{c_{n-2}(...)} + \frac{1}{\frac{c_{n-2}(...)}{c_{n-3}(...)}}} 
+   a_1 + \frac{1}{a_2 \cdot \left( a_3 + \cfrac{1}{a_4 + \cfrac{1}{\ddots + \cfrac{1}{a_n+\frac{1}{a_{n+1}}}}} \right) + \frac{1}{\left( a_4 + \cfrac{1}{a_5 + \cfrac{1}{\ddots + \cfrac{1}{a_n+\frac{1}{a_{n+1}}}}} \right)}} 
+\frac{c_2(a_1,a_2)}{c_1(a_2)} = \frac{a_1a_2+1}{a_2} = \frac{a_1a_2}{a_2} + \frac{1}{a_2} = a_1 + \frac{1}{a_2}.
+c_{n+1}(a_1,\dotsc,a_{n+1}) = a_1\cdot c_n(a_2,\dotsc,a_{n+1}) + c_{n-1}(a_3,\dotsc,a_{n+1}),
+c_{n-2}(a_3,\dotsc,a_{n+1})
+\bigl((n+1)-2\bigr)^2
+(n-2)^2
+b_k = a_{k+1}
+k = 1,\dotsc, n
+\begin{align} \frac{c_{n+1}(a_1,\dotsc,a_{n+1})}{c_n(a_2,\dotsc,a_{n+1})} &= \frac{a_1\cdot c_n(a_2,\dotsc,a_{n+1}) + c_{n-1}(a_3,\dotsc,a_{n+1})}{c_n(a_2,\dotsc,a_{n+1})}\\ &= a_1 + \frac{c_{n-1}(a_3,\dotsc,a_{n+1})}{c_n(a_2,\dotsc,a_{n+1})}\\ &= a_1 + \frac{1}{\frac{c_n(b_1,\dotsc,b_n)}{c_{n-1}(b_2,\dotsc,b_n)}}\\ &= a_1 + \cfrac{1}{b_1 + \cfrac{1}{b_2 + \cfrac{1}{\ddots + \cfrac{1}{b_{n-1}+ \frac{1}{b_n}}}}}\\ &= a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{\ddots + \cfrac{1}{a_{n}+ \frac{1}{a_{n+1}}}}}} \end{align}
+b_1,\dotsc,b_n

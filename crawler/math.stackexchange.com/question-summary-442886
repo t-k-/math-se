@@ -1,0 +1,7 @@
+\int_{0}^\infty e^{-xu}\sin x \, dx = \int_{0}^\infty e^{-xu} d(-\cos x)=-\cos x e^{-xu}]_{0}^{\infty}-\int_{0}^\infty(-\cos x)d(e^{-xu})
+=1 + \frac{-1}{u}\int_{0}^\infty e^{-xu}\cos x \, dx=1 - \frac{1}{u}\int_{0}^\infty e^{-xu}d(\sin x)
+= 1 - \frac{1}{u}\left([e^{-xu}\sin x]_{0}^{\infty} - \int_{0}^\infty \sin x \,d (e^{-xu})\right)= 1 - \frac{1}{u}\left(\frac{1}{u}\int_{0}^\infty e^{-xu}\sin x \, dx\right)
+I = 1 - \frac{1}{u^2}I \Rightarrow \frac{u^2 + 1}{u^2}I = 1 \Rightarrow I = \frac{u^2}{u^2+1}.
+\dfrac{\partial}{\partial x}e^{ux}
+d(e^{-xu})=-\frac{1}{u}e^{-xu}dx
+d(e^{-xu})=-ue^{-xu}dx

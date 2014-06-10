@@ -1,0 +1,67 @@
+\mu
+x
+\mathcal{N}(\mu,\sigma^2)
+\alpha=(a-\mu)/\sigma, \beta=(b-\mu)/\sigma
+\phi(\beta)>>\phi(\alpha)
+[-\phi'(\alpha)+\phi'(\beta)]
+\alpha
+\beta
+E[x|a\le x\le b]=\mu+\frac{\phi(\alpha)-\phi(\beta)}{\Phi(\beta)-\Phi(\alpha)}\sigma,
+\frac{\partial E[x|a\le x\le b]}{\partial \mu}=1+\frac{[-\phi'(\alpha)+\phi'(\beta)][\Phi(\beta)-\Phi(\alpha)]-[\phi(\alpha)-\phi(\beta)]^2}{[\Phi(\beta)-\Phi(\alpha)]^2}.
+a,b,\mu,\sigma
+\mu
+\text{Result A:} \frac{\partial E[x|a\le x\le b]}{\partial \mu} \le 1
+\sigma^2:
+\frac{\partial \ln H(\mu)}{\partial \mu}\,=\,\frac{\phi(\beta)-\phi(\alpha)}{\Phi(\beta)-\Phi(\alpha)} \left(\frac{-1} {\sigma}\right)= \frac{\phi(\alpha)-\phi(\beta)}{\Phi(\beta)-\Phi(\alpha)} \left(\frac{1} {\sigma}\right)
+\sigma^2\frac{\partial \ln H(\mu)}{\partial \mu}\,= \frac{\phi(\alpha)-\phi(\beta)}{\Phi(\beta)-\Phi(\alpha)} \sigma
+E[x|a\le x\le b]=\mu+\sigma^2\frac{\partial \ln H(\mu)}{\partial \mu}\tag{1}
+\frac{\partial E[x|a\le x\le b]}{\partial \mu}=1+\sigma^2\frac{\partial^2 \ln H(\mu)}{\partial \mu^2}\tag{2}
+\ln H(\mu)
+\frac{\partial E[x|a\le x\le b]}{\partial \mu}\le 1 \qquad \forall \;(\mu,\sigma,a,b, a \lt b) \tag{3}
+\text{Result B:} \frac{\partial E[x|a\le x\le b]}{\partial \mu}=\frac{\operatorname{Var}_{tr}(x)}{\sigma^2}\gt 0
+{\Phi(\beta)-\Phi(\alpha)}\equiv Z
+\mu
+E[x|a\le x\le b]\equiv E_{tr}(x)
+\frac{\partial \ln H(\mu)}{\partial \mu}\equiv h'
+E_{tr}(x)=\int_a^bx\frac{1}{Z\sigma}\phi\left(\frac{x-\mu}{\sigma}\right)dx 
+\Rightarrow \frac{\partial E_{tr}(x)}{\partial \mu} = \int_a^bx\frac{1}{Z\sigma}\phi'\left(\frac{x-\mu}{\sigma}\right)\left(\frac{-1}{\sigma}\right)dx\;+\;\left[\phi(\beta)-\phi(\alpha)\right]\frac{1}{Z\sigma}\int_a^bx\frac{1}{Z\sigma}\phi\left(\frac{x-\mu}{\sigma}\right)dx
+E_{tr}(x)
+\left[\phi(\beta)-\phi(\alpha)\right]\frac{1}{Z\sigma}=-h'
+\phi'\left(\frac{x-\mu}{\sigma}\right)=(-1)\left(\frac{x-\mu}{\sigma}\right)\phi\left(\frac{x-\mu}{\sigma}\right)
+\frac{\partial E_{tr}(x)}{\partial \mu} = \left(\frac{1}{\sigma^2}\right)\int_a^bx\frac{1}{Z\sigma}\left(x-\mu\right)\phi\left(\frac{x-\mu}{\sigma}\right)dx\;-\;h'E_{tr}(x)  \tag{4}
+I
+E_{tr}(x)
+\left(\frac{1}{\sigma^2}\right)I=\left(\frac{1}{\sigma^2}\right)\int_a^bx^2\frac{1}{Z\sigma}\phi\left(\frac{x-\mu}{\sigma}\right)dx\;-\;\left(\frac{\mu}{\sigma^2}\right)\int_a^bx\frac{1}{Z\sigma}\phi\left(\frac{x-\mu}{\sigma}\right)dx
+\left(\frac{1}{\sigma^2}\right)I=\left(\frac{1}{\sigma^2}\right)E_{tr}(x^2)\;-\;\left(\frac{\mu}{\sigma^2}\right)E_{tr}(x)
+\frac{\partial E_{tr}(x)}{\partial \mu} = \left(\frac{1}{\sigma^2}\right)E_{tr}(x^2)\;-\;\left(\frac{\mu}{\sigma^2}\right)E_{tr}(x)\;-\;h'E_{tr}(x)
+\Rightarrow\frac{\partial E_{tr}(x)}{\partial \mu} = \left(\frac{1}{\sigma^2}\right)\left[E_{tr}(x^2)\;-\;\mu E_{tr}(x)\;-\;h'\sigma^2E_{tr}(x)\right]
+\Rightarrow\frac{\partial E_{tr}(x)}{\partial \mu} = \left(\frac{1}{\sigma^2}\right)\left[E_{tr}(x^2)\;-\;\left(\mu +h'\sigma^2\right)E_{tr}(x)\right]
+(1)
+\mu +h'\sigma^2=E_{tr}(x)
+\Rightarrow\frac{\partial E_{tr}(x)}{\partial \mu} = \left(\frac{1}{\sigma^2}\right)\left[E_{tr}(x^2)\;-\;\left(E_{tr}(x)\right)^2\right]=\frac{\operatorname{Var}_{tr}(x)}{\sigma^2}\gt 0
+f
+[a,b]
+f
+\mu
+\mu
+[a,b]
+\mu
+\mu
+p/q=m
+\mu=0
+\mu=0
+f
+m=\frac{\int_a^bxf(x)\,\mathrm dx}{\int_a^bf(x)\,\mathrm dx}=:\frac pq,
+\begin{align} p&=\int_a^bxf(x)\,\mathrm dx,\\ q&=\int_a^bf(x)\,\mathrm dx. \end{align}
+m(\mu) = \mu + \frac{\int_{a-\mu}^{b-\mu}xf(x)\,\mathrm dx}{\int_{a-\mu}^{b-\mu}f(x)\,\mathrm dx}=:\mu+\frac{p(\mu)}{q(\mu)},
+m'=1+\frac{p'q-pq'}{q^2}=\frac1q\Big(q+p'-\frac pqq'\Big),
+\begin{align} p'&=af(a)-bf(b),\\ q'&=f(a)-f(b), \end{align}
+\begin{align} m'|_{\mu=0}&=\frac1q\Big(q+af(a)-bf(b)-m\big(f(a)-f(b)\big)\Big)\\ &=\frac1q\Big(q-(m-a)f(a)-(b-m)f(b)\Big). \end{align}
+q
+(m-a)f(a)+(b-m)f(b)
+m'
+\frac{\partial E[x|a\le x\le b]}{\partial \mu}=1+\frac{[-\phi'(\alpha)+\phi'(\beta)][\Phi(\beta)-\Phi(\alpha)]-[\phi(\alpha)-\phi(\beta)]^2}{[\Phi(\beta)-\Phi(\alpha)]^2}
+\frac{[-\phi'(\alpha)+\phi'(\beta)][\Phi(\beta)-\Phi(\alpha)]-[\phi(\alpha)-\phi(\beta)]^2}{[\Phi(\beta)-\Phi(\alpha)]^2} \leq \frac{[-\phi'(\alpha)+\phi'(\beta)][\Phi(\beta)-\Phi(\alpha)]}{[\Phi(\beta)-\Phi(\alpha)]^2} 
+ \left|\frac{[-\phi'(\alpha)+\phi'(\beta)][\Phi(\beta)-\Phi(\alpha)]}{[\Phi(\beta)-\Phi(\alpha)]^2} \right| < 1
+(\Phi(\beta)-\Phi(\alpha))^{2}
+ \left|\frac{[\phi'(\beta)-\phi'(\alpha)}{[\Phi(\beta)-\Phi(\alpha)]} \right| < \infty 

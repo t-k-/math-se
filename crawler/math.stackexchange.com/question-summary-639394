@@ -1,0 +1,8 @@
+e^{A}
+A=\begin{bmatrix}     2 & 1 & -1 \\       0 & 4 & -2 \\       0 & 2 & 0 \\ \end{bmatrix}
+A=\begin{bmatrix}                   2 & 0 & 0 \\                    0 & 2 & 0\\                    0 & 0 & 2 \\ \end{bmatrix}+\begin{bmatrix}                0 & 1 & -1 \\                 0 & 2 & -2 \\                  0 & 2 & -2\\ \end{bmatrix}=D+N
+e^{A}=e^{D+N}=e^2 I e^N=e^2[I+N]=\begin{bmatrix} e^2& e^2 & -e^2 \\ 0 & 3e^2 & -2e^2 \\ 0 & 2e^2 & -e^2 \\ \end{bmatrix}
+ e^A \neq \pmatrix{  e^2 & e & \frac{1}{e} \\  1 & e^4 & \frac{1}{e^2} \\  1 & e^2 & 1 }, \qquad e^A =  \pmatrix{ e^2 & e^2 & -e^2 \\  0 & 3 e^2 & -2 e^2 \\  0 & 2 e^2 & -e^2 }
+ \begin{bmatrix} 2&1&-1\\0&4&-2\\0&2&0 \end{bmatrix} = \begin{bmatrix} 0&-1&0\\1&-2&0\\1&-2&1 \end{bmatrix} \begin{bmatrix} 2&0&0\\0&2&1\\0&0&2 \end{bmatrix} \begin{bmatrix} 0&-1&0\\1&-2&0\\1&-2&1 \end{bmatrix}^{-1} 
+ \begin{align} \exp\left(\begin{bmatrix} 2&0&0\\0&2&1\\0&0&2 \end{bmatrix} \right) &= \exp\left(\begin{bmatrix} 2&0&0\\0&2&0\\0&0&2 \end{bmatrix} \right) \exp\left(\begin{bmatrix} 0&0&0\\0&0&1\\0&0&0 \end{bmatrix} \right)\\[6pt] &= \begin{bmatrix} e^2&0&0\\0&e^2&0\\0&0&e^2 \end{bmatrix} \begin{bmatrix} 1&0&0\\0&1&1\\0&0&1 \end{bmatrix}\\ \end{align} 
+ \begin{align} \exp\left(\begin{bmatrix} 2&1&-1\\0&4&-2\\0&2&0 \end{bmatrix} \right) &= \begin{bmatrix} 0&-1&0\\1&-2&0\\1&-2&1 \end{bmatrix} \exp\left(\begin{bmatrix} 2&0&0\\0&2&1\\0&0&2 \end{bmatrix}\right) \begin{bmatrix} 0&-1&0\\1&-2&0\\1&-2&1 \end{bmatrix}^{-1}\\ \end{align} 

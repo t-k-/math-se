@@ -1,0 +1,16 @@
+r
+n
+p(r,n)
+r/n
+r/n
+p(r-1,n-1)
+p(r,n-1)
+p(r,n)=r/n
+n-1
+p(r,n-1)=r/(n-1)
+n=1
+p(0,1)=0
+p(1,1)=1
+ p(r,n) = \max\left\{\frac r n, \frac r n p(r-1,n-1) + \frac{n-r} n p(r,n-1)\right\}. 
+ p(r,n) = \max\left\{\frac r n, \frac r n \frac{r-1}{n-1}+\frac{n-r}n\frac{r}{n-1} \right\} = \max\left\{\frac r n, \frac{nr-r}{n(n-1)}\right\}  = \frac r n. 
+1/2

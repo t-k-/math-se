@@ -1,0 +1,21 @@
+n
+p
+q
+X
+Y
+\Pr(X_k=i)
+\Pr(X=i\mid Y=k)
+k
+n-k
+p/(1-q)
+(1-p-q)/(1-q)=1-p/(1-q)
+ \begin{align} \Pr(X=i\mid Y=k) &= \binom{n-k}i\left(\frac p{1-q}\right)^i\left(\frac{1-p-q}{1-q}\right)^{n-k-i} \\ &= (1-q)^{-(n-k)}\binom{n-k}ip^i(1-p-q)^{n-k-i}\;. \end{align} 
+ \Pr(X=i,Y=j)=\binom n{i,j,n-i-j}p^iq^j(1-p-q)^{n-i-j}\;. 
+X+Y=k
+p/(p+q)
+q/(p+q)
+ \begin{align} \Pr(Y=i\mid X+Y=k) &= \binom ki\left(\frac q{p+q}\right)^i\left(\frac p{p+q}\right)^{k-i} \\ &= (p+q)^{-k}\binom kiq^ip^{k-i} \;, \end{align} 
+Y/(X+Y)
+q/(p+q)
+k
+Y/(X+Y)

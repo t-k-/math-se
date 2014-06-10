@@ -1,0 +1,25 @@
+\lim\limits_{r\to\infty}\int_{0}^{\pi/2}e^{-r\sin \theta}d\theta=0
+0
+\theta\in [0, \pi/2]
+1
+\theta =0
+r\in \mathbb{R}
+F(r) = \int_{0}^{\pi/2}e^{-r\sin \theta}d\theta
+j
+F^{(j)}(r) = (-1)^j\int_{0}^{\pi/2}\sin^{j}(\theta)e^{-r\sin\theta}d\theta
+[0,\pi/2]
+\partial_{\theta}(e^{-r\sin\theta})=-r\cos\theta e^{-r\sin \theta}
+(0,\pi/2)
+ \int\limits_{0}^{\pi/2}{e^{-r\sin\theta}d\theta}\le \int\limits_{0}^{\pi/2}{e^{-r\frac{2}{\pi}\theta}d\theta}=\frac{\pi}{2r}\left(1-e^{-r}\right) \to 0 \quad (r \to +\infty)
+[0,\pi/2]
+|e^{-r\sin \theta}| \leq 1
+r \geq 0
+ \lim_{r \to \infty} \int_0^{{\pi/2}} e^{-r \sin \theta}d\theta =  \int_0^{{\pi/2}}\lim_{r \to \infty} e^{-r \sin \theta}d\theta = \int_0^{\pi/2}0 d\theta = 0. 
+[0,\epsilon]
+[\epsilon, \pi/2]
+\epsilon
+ e^{-r\sin(\theta)} \leq e^{-\sin(\theta)}, \quad r\geq 1, 
+0
+f_r(\theta)=1-e^{-r\sin(\theta)}
+ \lim_{r\to\infty}f_r(\theta)=f(\theta)=\left\{\begin{array}{} 1&\text{if }0\lt\theta\le\frac\pi2\\ 0&\text{if }\theta=0 \end{array}\right. 
+ \begin{align} \lim_{r\to\infty}\int_0^{\pi/2}e^{-r\sin(\theta)}\,\mathrm{d}\theta &=\lim_{r\to\infty}\int_0^{\pi/2}(1-f_r(\theta))\,\mathrm{d}\theta\\ &=\frac\pi2-\lim_{r\to\infty}\int_0^{\pi/2}f_r(\theta)\,\mathrm{d}\theta\\ &=\frac\pi2-\int_0^{\pi/2}f(\theta)\,\mathrm{d}\theta\\[4pt] &=\frac\pi2-\frac\pi2\\[9pt] &=0 \end{align} 

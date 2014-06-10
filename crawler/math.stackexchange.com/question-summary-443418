@@ -1,0 +1,32 @@
+ \lim_{r\to0}\int_{\sigma_{r}}\frac{e^{iz}}{z}\, dz 
+ \sigma_{r}:\,[0,\pi]\to\mathbb{C} 
+ \sigma_{r}(t)=re^{it} 
+|z|=r
+2\pi ie^{iz}|_{z=0}=2\pi i
+ (\overline{\frac{e^{iz}}{z})}=\frac{e^{iz}}{z} 
+\frac{1}{2}\cdot2\pi i=\pi i
+\dfrac{e^{iz}-1}{z}
+z=0
+\sigma_r
+0
+ \lim_{r\to0^+}\int_{\large\sigma_r}\frac{e^{iz}-1}{z}\,\mathrm{d}z=0 
+ \begin{align} \lim_{r\to0^+}\int_{\large\sigma_r}\frac{e^{iz}}{z}\,\mathrm{d}z &=\lim_{r\to0^+}\int_{\large\sigma_r}\frac{e^{iz}-1}{z}\,\mathrm{d}z +\lim_{r\to0^+}\int_{\large\sigma_r}\frac{1}{z}\,\mathrm{d}z\\ &=0+\lim_{r\to0^+}\int_0^\pi\frac{1}{re^{it}}\,\mathrm{d}re^{it}\\ &=\lim_{r\to0^+}\int_0^\pi i\,\mathrm{d}t\\[9pt] &=\pi i \end{align} 
+k \neq -1
+z \mapsto z^k
+\mathbb{C}\setminus \{0\}
+z \mapsto \frac{1}{k+1}z^{k+1}
+f
+0
+f(z) = \sum_{-\infty}^\infty a_k z^k,
+\sigma_r
+r
+\begin{align} \int_{\sigma_r} f(z)\,dz &= a_{-1}\int_{\sigma_r}\frac{dz}{z} + \sum_{k\neq -1} a_k \int_{\sigma_r}z^k\\ &= \pi i a_{-1} + \sum_{k \neq -1} \frac{a_k r^{k+1}}{k+1} \left((-1)^{k+1} - 1\right)\\ &= \pi i a_{-1} -2 \sum_{-\infty}^\infty \frac{a_{2k}r^{2k+1}}{2k+1}. \end{align}
+r
+\pi i \operatorname{res}_0 f
+f
+0
+f
+\frac{e^{iz}}{z} = \sum_{k=0}^\infty \frac{i^k}{k!}z^{k-1} = \frac1z + i -\frac{z}{2} -i\frac{z^2}{6} + \frac{z^3}{24} + \dotsb
+0
+r
+\pi i

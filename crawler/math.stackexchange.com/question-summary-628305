@@ -1,0 +1,16 @@
+f,g \in L^1(-\infty,+\infty)
+h \in L^1(-\infty,+\infty)
+f
+g
+L^{\infty}(\mathbb{R})
+h(x)=\int^{+\infty}_{-\infty}f(x-e^y)g(y)dy
+||h||_1 \leq ||f||_1  ||g||_1
+k(x,y) = f(x-e^y)g(y)
+\begin{align} \int_{-\infty}^\infty \int_{-\infty}^\infty\bigl\lvert f(x-e^y)g(y)\bigr\rvert\,dy\,dx &= \int_{-\infty}^\infty \left(\int_{-\infty}^\infty\bigl\lvert f(x-e^y)\bigr\rvert\,dx\right)\lvert g(y)\rvert\,dy\\ &= \left(\int_{-\infty}^\infty \lvert f(x)\rvert\,dx\right)\left(\int_{-\infty}^\infty \lvert g(y)\rvert\,dy\right)\\ &= \lVert f\rVert_1 \lVert g\rVert_1\\ &< \infty. \end{align}
+k \in L^1(\mathbb{R}^2)
+x
+y\mapsto f(x-e^y)g(y)
+h(x) = \int_{-\infty}^\infty f(x-e^y)g(y)\,dy
+h \in L^1(\mathbb{R})
+\int_{-\infty}^\infty h(x)\,dx = \int_{-\infty}^\infty f(x)\,dx\cdot \int_{-\infty}^\infty g(y)\,dy
+\lVert h\rVert_1 = \int_{-\infty}^\infty \lvert h(x)\rvert\,dx \leqslant \int_{-\infty}^\infty \int_{-\infty}^\infty \bigl\lvert f(x-e^y)g(y)\bigr\rvert\,dy\,dx = \lVert f\rVert_1\lVert g\rVert_1.

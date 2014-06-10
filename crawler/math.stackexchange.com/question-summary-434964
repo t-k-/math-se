@@ -1,0 +1,24 @@
+\varphi: \mathbb{R}^N \rightarrow \mathbb{R}^k
+(x_1, \dots, x_N) \mapsto (x_{i_1}, \dots, x_{i_k})
+d \varphi: T_x(X) \mapsto \text{ span}(e_{i_1}, \dots, e_{i_k})
+x_{i_1}, \dots, x_{i_k}
+e_{i_1}, \dots, e_{i_k}
+\pi: \mathbb{R}^n \rightarrow \mathbb{R}^k
+\frac{\partial}{\partial x^{i_j}}
+\frac{\partial}{\partial y^{i_j}}
+d\pi
+y
+(y^{i_j})
+j=1, \dots k
+y = \pi (x)
+y^l = x \cdot e_{i_l}= x^{i_l}
+\frac{\partial y^l}{\partial x^{i_j}}=\frac{\partial x^{i_l}}{\partial x^{i_j}} = \delta_{i_j,i_l} = \delta_{jl}
+\frac{\partial}{\partial y^{i_j}}
+e_j
+ \pi (x) = \sum_{j=1}^k [x \cdot e_{i_j}]e_j 
+ d\pi (\frac{\partial}{\partial x^{i_j}}) = \sum_{l=1}^k \frac{\partial y^{i_l}}{\partial x^{i_j}}\frac{\partial}{\partial y^{i_l}}
+ d\pi (\frac{\partial}{\partial x^{i_j}}) = \sum_{l=1}^k\delta_{jl}\frac{\partial}{\partial y^{i_l}} = \frac{\partial}{\partial y^{i_j}}
+\mathbb{R}^k
+\mathbb{R}^n
+x^{i_j}
+ \pi (x) = (0,...0,x^{i_1},0,...,0,x^{i_k},0,...0) \in \mathbb{R}^n. 

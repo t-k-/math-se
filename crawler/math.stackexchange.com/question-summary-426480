@@ -1,0 +1,14 @@
+p_1
+p_2
+X_1
+X_2
+X_3
+p_1
+p_2
+n
+ X_1 \thicksim Bin(n,p_1) 
+ X_2|X_1 \thicksim Bin(n-X_1,p_2) 
+ X_3|X_1,X_2 = n-X_1-X_2 
+L(p_1,p_2)=P(X_1=x_1)P(X_2=x_2|X_1=x_1)P(X_3=x_3|X_1=x_1, X_2=x_2)
+\xi=(1-p_1)(1-p_2)
+\xi

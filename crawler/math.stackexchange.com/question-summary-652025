@@ -1,0 +1,12 @@
+A
+B
+C
+A
+B
+(A \lor B) \land C \iff (A \lor C) \land (B \lor C)
+(A \lor B) \land C \equiv (A \lor C) \land (B \lor C)\tag{NOT TRUE}
+(A\lor B)\land C \equiv (A\land C)\lor (B\land C)\tag{TRUE}
+(A \lor B)\land C
+(A\lor C)\land (B\lor C)
+ \begin{array}{|c|c|c|c|} A & B & C & (A \bigvee B) \bigwedge C \\ T & T & T & T\\ T & T & F & F \\ T & F & T &T \\ T & F & F & F \\ F & T & T & T \\ F & T & F & F \\ F & F & T & F \\ F & F & F & F \end{array}
+ \begin{array}{|c|c|c|c|} A & B & C & (A \bigvee C) \bigwedge (B\bigvee C) \\ T & T & T & T\\ T & T & F & T \\ T & F & T &T \\ T & F & F & F \\ F & T & T & T \\ F & T & F & F \\ F & F & T & T \\ F & F & F & F \end{array}

@@ -1,0 +1,24 @@
+u
+u
+r
+0
+ u(z_o) = \frac{1}{2\pi}\int_{0}^{2pi}u(z_o + re^{i\theta})d\theta  
+r
+0
+ u(z_o) = \frac{1}{2\pi r}\int_{_dD(z_o, r)} u(x,y)ds 
+ u(z_o) = \frac{1}{\pi r^2}\int\int_{_D(z_o, r)} u(x,y)dxdy 
+D(z_o, r)
+z\in\mathbb{C}: |z-z_o| < r
+z = z_o + re^{i\theta}
+r
+z_o
+z
+z = z_o + re^{i\theta}
+d\theta = \frac{ds}{r}
+s = r\theta
+ u(z_o) = \frac{1}{2\pi r}\int_{_dD(z_o, r)} u(x,y)ds 
+u(z) = u(x + iy) = u(x,y)
+ \int\int_{_D(z_o, r)} u(x,y) = \int_0^r (\int_{_dD(z_o, \rho)} u(x,y)ds)d\rho 
+2\pi \rho u(z_o)
+ 2\pi u(z_o) \int_0^r \rho d\rho = \pi r^2 u(z_o) 
+ u(z_o) = \frac{1}{\pi r^2}\int\int_{_D(z_o, r)} u(x,y)dxdy 

@@ -1,0 +1,70 @@
+\int_{-\infty}^\infty f(x) \, \delta(g(x)) \, dx =  \sum_{i}\frac{f(x_i)}{|g'(x_i)|}
+x_i
+g(x)
+g'(x_i)
+f(x_i)
+g'(x)
+g(x)
+g(x)
+x_i
+\sin x
+e^0=1
+g'(x) = 0
+\int_{-\pi/2}^{\pi/2}e^x \delta\left(\sin(x)\right)dx
+\int_{-\pi/2}^{\pi/2}e^x \delta\left(\sin^3(x)\right)dx
+0
+x_i
+U_i
+g(.)
+x_i
+g
+G_i(g(x)) = x
+x\in U_i
+V_i = g[U_i]
+G'_i = \frac{dG_i}{dg}
+\int_{-\infty}^{\infty} f(x) \delta(g(x)) dx  =\sum_i \int_{U_i} f(x) \delta(g(x)) dx  =\sum_i \int_{V_i} f(G_i(g)) \delta(g) \frac{dG_i}{dg} dg\,.
+\sum_i \int_{V_i} f(G_i(g)) G'_i(g) \delta(g) dg = \sum_i f(G_i(0)) G'_i(0)
+g(.)
+x_i
+g(.)
+n
+g(x) \rightarrow a x^{2n}
+U_i
+a> 0
+n\geq 1
+\phi(x) = (2\pi \sigma^2)^{-1/2}\exp(-x^2/2\sigma^2)
+\sigma\rightarrow 0
+\int_{U_i} f(x) \delta(g(x)) dx = \lim_{\sigma\rightarrow 0}\int_{U_i-x_i}\frac{1}{\sqrt{2\pi \sigma^2}} f(x_i + z)\exp(-z^{4n}/2\sigma^2) dz\,. 
+f(.)
+c
+f(x_i)+c>f(x)> f(x_i)-c
+f(x_i+z)
+f(x_i)\pm c
+\sigma \rightarrow 0
+\sigma^{(1-n)/n}
+\sigma\rightarrow 0
+\frac{1}{\sqrt{2\pi \sigma^2}} \int_{-\infty}^{\infty} \exp(-x^{2n}/2\sigma^{2}) dx =\sigma^{(1-n)/n}\times\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \exp(-y^{2n}/2) dy  
+\delta
+\int_{-\pi/2}^{\pi/2}e^x \delta\left(\sin(x)\right)dx
+y=\sin x
+dy=\cos x dx
+dx = dy/\sqrt{1-y^2}
+\int_{-1}^{1}\frac{e^{sin^{-1}y}}{\sqrt{1-y^2}} \delta(y)dy
+y=0
+1
+\int_{-\pi/2}^{\pi/2}e^x \delta\left(\sin^3(x)\right)dx
+y=\sin^3 x
+dy=3\sin^2 x \cos x dx
+dx = dy/(3\sin^2 x \cos x) = dy/\left(3y^{\frac23}\sqrt{1-y^{\frac23}}\right)
+\int_{-1}^{1}\frac{e^{sin^{-1}(y^{\frac13})}}{3y^{\frac23}\sqrt{1-y^{\frac23}}} \delta(y)dy
+y=0
+y^{\frac23}
+g'(x_i) = 0
+g
+g'
+g
+g'(x_i)
+g(x_i)
+dx
+0
+g'(x_i) = 0

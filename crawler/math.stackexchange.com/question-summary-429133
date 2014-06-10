@@ -1,0 +1,19 @@
+\det_{_{1\leq i,j \leq n}}\left(\frac{1}{(x_i+y_j)^2}\right)=\det_{_{1\leq i,j \leq n}}\left(\frac{1}{x_i+y_j}\right)\text{perm}_{_{1\leq i,j \leq n}}\left(\left(\frac{1}{x_i+y_j}\right)\right)
+\text{perm(A)}
+A
+S_n
+1,2,\cdots, n
+\text{perm}(A)=\sum_{\sigma\in S_n}\prod_{i=1}^{n}a_{i,\sigma(i)}
+*
+(A*B)_{ij} := a_{ij} b_{ij}
+\sigma \in S_n
+(A_{\sigma})_{ij } := a_{i \sigma(j)}
+\displaystyle{\det(A) \text{Perm} (A) = \sum_{\sigma \in S_n} \text{sgn}(\sigma) \det(A * A_{\sigma})}
+\forall i \in (1, \ldots, n)
+{x_i + y_j = p_j (x_i + y_1) + q_j (x_i + y_2)} 
+\displaystyle{}p_j = \frac{y_j -  y_2}{y_1 -y_2}
+\displaystyle{q_j = \frac{y_1 - y_j}{y_1 -y_2}}
+j \in (1, \ldots, k)
+ M_{ij} = \prod_{t \in [k]\setminus {(j,j+1)}} (x_i + y_t)
+ = \prod_{t \in [k]\setminus {(j,j+1)}} (p_t (x_i + y_1) + q_t (x_i + y_2)) = \sum_{r=0}^{k-2} C_{m,j}  (x_i + y_1)^r (x_i + y_2)^{k-2 - r}
+\text{rank} (M) \le k-1

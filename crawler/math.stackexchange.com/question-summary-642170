@@ -1,0 +1,23 @@
+X
+Y
+\chi_A(t)= 0
+t\not\in A
+\chi_A(t) = 1
+t\in A
+f_{X,Y}
+Z:=X+Y
+(Z,W)
+W:=\min\{X,Y\}
+U:=Y
+1
+0 \leq z-u< 1 \implies z-1 < u\leq z
+0< u < 1
+\int_{-\infty}^\infty f_Z(z) dz = 1
+\min\{X,Y\}
+\min
+ f_X(u) = 2u \cdot \chi_{(0,1)}(u),\qquad f_Y(v) = 2v\cdot \chi_{(0,1)}(v), 
+ \{z = x+y; u = y \leadsto \{x = z-u; y = u 
+ f_Z(z) = \int_{-\infty}^\infty f_{Z,U}(z,u) du = \int_{-\infty}^\infty f_X(z-u) f_Y(u) du. 
+ f_{Z}(z) = \left\{ \begin{array}{lll} \int_0^z 4(z-u)u du &= \frac{2}{3} z^3 & \text{if } 0 < z < 1,\\ \int_{z-1}^1 4 (z-u)u du &= -\frac{2}{3} (z^3 -6z + 4) & \text{if } 1 \leq z < 2\\ 0 & & \text{otherwise.}\end{array} \right. 
+ F_{W}(w) = \mathrm P(W\leq w) = \mathrm P(\min\{X,Y\} \leq w\} = 1- \mathrm P(\min\{X,Y\} > w) = 1-\mathrm P(X > w, Y > w)  
+ = 1- \mathrm P(X > w) \mathrm P(Y > w) = 1-(1- F_X(w)) (1-F_Y(w))=\cdots 

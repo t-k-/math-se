@@ -1,0 +1,94 @@
+A
+n
+A > 0
+A
+a_1 \ge a_2 \ge \cdots \ge a_n > 0
+B
+n\times m
+m\le n
+\operatorname{rank}B=m
+b_1 \ge \cdots \ge b_m > 0
+X
+P \cup Q
+P =\left [ \frac 12\left(a_n-\sqrt{a_n^2+4b_1^2}\right) , \frac 12\left(a_1-\sqrt{a_1^2+4b_m^2}\right)\right]
+       Q = \left[ a_n , \frac 12 \left(a_1+\sqrt{a_1^2+4b_1^2}\right)\right].
+X = \begin{pmatrix} A   &  B \\         B^t &  0\end{pmatrix}
+{u\choose v}
+Au+Bv=\lambda u,~~~B^Tu=\lambda v.
+\lambda=-\mu\le 0
+u
+v\ne 0
+u=0
+B^T(A+\mu I)^{-1}Bv=\mu v
+-v^T
+a_n I\le A\le a_1 I
+(a_1+\mu)^{-1}(Bv)^TBv \le \mu v^Tv \le (a_n+\mu)^{-1}(Bv)^TBv
+2\mu\in \left[-a_n+\sqrt{a_n^2+b_1^2},-a_1+\sqrt{a_1^2+b_m^2}\right]
+\lambda\in P
+(Bv)^T(A+\mu I)^{-1}Bv =\mu v^Tv.
+(a_1+\mu)^{-1}I\le (A+\mu I)^{-1}\le (a_n+\mu)^{-1}I.
+(a_1+\mu)^{-1} b_m \le \mu \le (a_n+\mu)^{-1}b_1.
+\lambda > 0
+v
+u\ne 0
+v=0
+\lambda^2u-\lambda Au-BB^Tu=0
+u^T
+\lambda^2u^Tu-\lambda u^TAu-u^TBB^Tu=0
+b=b_m
+m=n
+b=0
+m<n
+Q'\subseteq Q
+m=n
+\lambda^2-\lambda a_1-b_1^2\le 0\le \lambda^2-\lambda a_n-b^2,
+2\lambda\in Q':=\left[a_n+\sqrt{a_n^2+b^2},a_1+\sqrt{a_1^2+b_1^2}\right].
+X
+P
+Q
+P
+Q
+X
+P
+\lambda
+X
+(u^T,v^T)^T
+u\not=0
+v=0
+(u^T, v^T)^T
+\|u\|=1
+v = \frac{1}{\lambda}B^Tu
+\lambda u^T
+\lambda^2 - \lambda u^TAu - u^TBB^Tu = 0
+X
+Q
+P
+X
+a>0
+b\ge0
+f(a,b) = \frac12\left(a - \sqrt{a^2+4b^2}\right)
+X
+\lambda = f\left(u^TAu, \|B^Tu\|\right)
+\frac{\partial f}{\partial a} = \frac12 - \frac {a}{2\sqrt{\ldots}} \ge 0
+\frac{\partial f}{\partial b} = \frac {-2b}{\sqrt{\ldots}} \le 0
+P
+ \begin{cases} Au + Bv = \lambda u,\\ B^Tu = \lambda v. \end{cases} 
+ (\ast):\ \lambda = \frac12\left(u^TAu \pm \sqrt{(u^TAu)^2 + 4\|B^Tu\|^2}\right). 
+ \lambda = \frac12\left(u^TAu + \sqrt{(u^TAu)^2 + 4\|B^Tu\|^2}\right) \ge u^TAu \ge \min_{\|u\|=1}u^TAu = a_n. 
+ \lambda \ge \min_{\|u\|=1}f(u^TAu, \|B^Tu\|^2) \ge f(\min_{\|u\|=1}u^TAu,\ \max_{\|u\|=1}\|B^Tu\|^2) = f(a_n, b_1). 
+X
+B
+\{u_1,\ldots,u_n\}
+\mathbb{R}^n
+\{v_1,\ldots, v_m\}
+\mathbb{R}^m
+B^Tu_i=b_iv_i
+i=1,2,\ldots, m
+m
+W\subset\mathbb{R}^{n+m}
+\{(u_i^T, -v_i^T)^T: i=1,2,\ldots,m\}
+w^T = (\theta u^T,\sqrt{1-\theta^2}v^T)\in W
+N=n+m
+k=n+1
+ \lambda_{n+1} = \min_{\dim(S)=m}\max_{\begin{matrix}w\in S\\ \|w\|=1\end{matrix}} w^T Xw \le \max_{\begin{matrix}w\in W\\ \|w\|=1\end{matrix}} w^T Xw \le \max_{0\le\theta\le 1}\left\{\theta^2 a_1 - 2\theta\sqrt{1-\theta^2}b_m\right\}. 
+ \max_{0\le\theta\le 1}\left\{\theta^2 a_1 - 2\theta\sqrt{1-\theta^2}b_m\right\} = \frac 12\left(a_1-\sqrt{a_1^2+4b_m^2}\right). 

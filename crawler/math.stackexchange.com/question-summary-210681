@@ -1,0 +1,42 @@
+\{a_n\}
+\lim a_n=\ell
+\hat a_n=\frac 1 n \sum_{k=1}^na_k
+\lim\hat a_n=\ell
+\epsilon >0 
+\lim a_n=\ell
+N
+\left| {{a_n} - \ell } \right| < {\epsilon/2 }
+n>N
+\begin{eqnarray*}   \left| {\frac{1}{n}\sum\limits_{k = 1}^n {{a_k}}  - \ell } \right| &=& \left| {\frac{1}{n}\sum\limits_{k = 1}^n {\left( {{a_k} - \ell } \right)} } \right| \\     &=& \left| {\frac{1}{n}\sum\limits_{k = 1}^N {\left( {{a_k} - \ell } \right)}  + \frac{1}{n}\sum\limits_{k = N + 1}^n {\left( {{a_k} - \ell } \right)} } \right|  \\     &\leqslant& \frac{1}{n}\sum\limits_{k = 1}^N {\left| {{a_k} - \ell } \right|}  + \frac{1}{n}\sum\limits_{k = N + 1}^n {\left| {{a_k} - \ell } \right|} \\   &  <& \frac{N}{n}\zeta  - \frac{{N }}{2n}\epsilon+\epsilon/2 \end{eqnarray*} 
+\zeta=\mathop {\max }\limits_{1 \leqslant k \leqslant N} \left| {{a_k} - \ell } \right|
+n_0
+n>n_0
+\eqalign{   & \frac{{N\zeta }}{n} < {\epsilon}  \cr    & \frac{N}{n} < {1} \cr} 
+\frac{N}{n}\zeta  - \frac{N}{n}\frac{\epsilon }{2} + \frac{\epsilon }{2} < \epsilon  - \frac{\epsilon }{2} + \frac{\epsilon }{2} = \epsilon 
+\mathop {\lim }\limits_{n \to \infty } \frac{1}{n}\sum\limits_{k = 1}^n {{a_k}}  = \mathop {\lim }\limits_{n \to \infty } \frac{{\sum\limits_{k = 1}^{n + 1} {{a_k}}  - \sum\limits_{k = 1}^n {{a_k}} }}{{n + 1 - n}} = \mathop {\lim }\limits_{n \to \infty } {a_{n + 1}} = \ell 
+n
+\frac1n\sum_{N+1}^n|a_k-\ell|\leq \frac{(n-N)}{n}\varepsilon<\varepsilon
+\limsup_n \frac1n\sum_{1}^n|a_k-\ell|\leq 0+\varepsilon=\varepsilon...
+\{|a_n-\ell|\}
+0
+M\gt 0
+M
+\zeta
+n
+|a_n-\ell|\leq M\quad\forall n\in \Bbb N.
+\epsilon\gt 0
+n_1\in\Bbb N
+n\in\Bbb N
+n\geq n_1
+|a_n-\ell|\lt\frac{\epsilon}{2}.
+n_2\in\Bbb N
+n\in\Bbb N
+n\geq n_2
+\lim_{n\to\infty} \frac{n_1}{n}=0,
+\frac{n_1}{n}\leq \frac{\epsilon}{2M}.
+N=\max\{n_1,n_2\}
+n\in\Bbb N
+n\geq N\geq n_1
+\left(1-\frac{n_1}{n}\right)\leq 1
+\begin{align*} \left| -\ell+\frac1{n}\sum_{j=1}^n a_j \right| &\leq \frac1{n}\sum_{j=1}^n \left|a_j-\ell\right|\\ &= \frac1{n}\sum_{j=1}^{n_1} \left|a_j-\ell\right| + \frac1{n}\sum_{j=n_1+1}^{n} \left|a_j-\ell\right|\\ &\lt \frac1{n} n_1M + \frac1{n}(n-n_1)\frac{\epsilon}{2}\\ &=\frac{n_1}{n}M + \left(1-\frac{n_1}{n}\right)\frac{\epsilon}{2}\\ &\lt \frac{\epsilon}{2M}M + 1\cdot \frac{\epsilon}{2}=\epsilon. \end{align*}
+\hat a_n\to\ell.

@@ -1,0 +1,16 @@
+\iint_{D}\frac{x^4+y^4}{1+e^{3x^2y-y^3}} dxdy
+D = \{(x,y):x^2+y^2 \leq 1,x>0\}
+D
+r \in [0,1]
+\theta \in [-\pi/2,\pi/2]
+\int_0^1 dr \, r^5 \, \int_{-\pi/2}^{\pi/2} d\theta \frac{\cos^4{\theta}+\sin^4{\theta}}{1+e^{r^3 \sin{3 \theta}}}
+I(a) = \int_{-\pi/2}^{\pi/2} d\theta \frac{\cos^4{\theta}+\sin^4{\theta}}{1+e^{a \sin{3 \theta}}}
+a
+\begin{align}I(0)-I(a) &= \frac12 \int_{-\pi/2}^{\pi/2} d\theta \left (\cos^4{\theta}+\sin^4{\theta} \right) \frac{e^{a \sin{3 \theta}}-1}{e^{a \sin{3 \theta}}+1}\\ &= \frac12 \int_{-\pi/2}^{\pi/2} d\theta \left (\cos^4{\theta}+\sin^4{\theta} \right) \tanh{\left(\frac{a}{2} \sin{3 \theta}\right)}\\ &= 0\end{align}
+I(a)
+a
+I(0) = \frac12 \int_{-\pi/2}^{\pi/2} d\theta \left (\cos^4{\theta}+\sin^4{\theta} \right) = \frac{3 \pi}{8} 
+ \frac{3 \pi}{8} \int_0^1 dr \, r^5 = \frac{\pi}{16}
+x^4 + y^4 = r^4 - 2x^2y^2 = r^4-2r^4\cos^2(\theta)\sin^2(\theta)=\frac{1}{2}r^4\sin^2(2\theta)
+3x^2y - y^3 = y(3x^2 - y^2)= r^3\sin(\theta)\left(3\cos^2(\theta) - \sin^2(\theta)\right)
+=2 \cos(2 \theta)+1

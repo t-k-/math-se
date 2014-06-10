@@ -1,0 +1,8 @@
+||K||<1
+ ||K|| =\sup \frac{||Kf||_2}{||f||_2},  
+||Kf||^2_2= \int_{0}^{1}|(Kf)(t)|^2dt = \int_{0}^{1}\Bigg|\int_{0}^{t}(t-s)f(s)ds   \bigg|^2dt 
+ \Bigg|\int_{0}^{t}(t-s)f(s)ds   \bigg| \leq \int_{0}^{t}|t-s||f(s)|ds = \sqrt{\int_{0}^{t}(t-s)^2ds} \, \sqrt{\int_{0}^{t}|f(s)|^2 ds} =\frac{t^{3/2}}{\sqrt{3}}\,||f||_2   
+ \implies \Bigg|\int_{0}^{t}(t-s)f(s)ds   \bigg|^2 \leq \frac{t^3 }{{3}} ||f||^2_2 
+ \implies ||Kf||^2_2 \leq \frac{||f||^2_2}{3}\int_{0}^{1}t^3 dt= \frac{||f||^2_2}{12}
+ \implies \frac{||Kf||_2}{||f||_2} \leq \frac{1}{2\sqrt{3}} \implies ||K|| =\sup \frac{||Kf||_2}{||f||_2} < 1. 
+ LK \equiv \int_{0}^{t}L(s,v)K(v,t) dv 

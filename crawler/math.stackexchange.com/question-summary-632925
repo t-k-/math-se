@@ -1,0 +1,33 @@
+f
+g
+h
+h(x)=f(x,g(x))
+\frac{dh}{dx}=\frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}\frac{\partial g}{\partial x}
+h(z) = (z,g(z))
+\phi = f \circ h
+D \phi(z) = D f (h(z)) Dh(z)
+D f (h(x)) = ( { \partial f(z,h(z)) \over \partial x} , { \partial f(z,h(z)) \over \partial y} )
+Dh(z) = \binom{I}{{ \partial g(z) \over \partial x}}
+t\in\Bbb{R}
+(x,y)\in{\Bbb{R}}^2
+h=h(t)=f(x(t),y(t))
+\frac{dh}{dt}=\frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt},
+\vartheta\in(0,1)
+\Delta x\to 0
+\Delta x\to 0
+ f(x+\Delta x,g(x+\Delta x))-f(x,g(x+\Delta x))=\Delta x \,f_x(x+\vartheta\Delta x,g(x+\Delta x)), 
+ \frac{f(x+\Delta x,g(x+\Delta x))-f(x,g(x+\Delta x))}{\Delta x}=f_x(x+\vartheta\Delta x,g(x+\Delta x)) \to f_x(x,g(x)), 
+ f(x,g(x+\Delta x))-f(x,g(x))=\big(g(x+\Delta x)-g(x)\big)\, f_y\big(x,g(x)+\vartheta(g(x+\Delta x)-g(x))\big), 
+ \frac{f(x,g(x+\Delta x))-f(x,g(x))}{\Delta x}= f_y\big(x,g(x)+\vartheta(g(x+\Delta x)-g(x))\big)\frac{g(x+\Delta x)-g(x)}{\Delta x}, 
+ f_y(x,g(x))\,g'(x). 
+f(x,y)
+(x,y)=(x,g(x))
+h(x)=f(x,g(x))
+y
+x
+x+v
+g(x+v)=g(x)+g'(x)v+o(v)
+h
+h(x+v)=f(x+v,g(x)+g'(x)v+o(v))
+h
+x

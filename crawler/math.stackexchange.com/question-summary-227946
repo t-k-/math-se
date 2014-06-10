@@ -1,0 +1,13 @@
+L
+A
+A\in\mathbb{R}
+A
+\because y=-A\cos(\pi x), y'(x)=\pi A \sin (\pi x)=k\sin(\pi x), \text{ where } k=\pi A, 
+\sqrt{-\pi^2A^2}
+t=\frac{\tan\theta}k,dt=\frac{\sec^2\theta d\theta}{k}
+\frac2\pi\int\limits_0^1\frac{\sqrt{1+k^2 t^2}}{1-t^2}dt=\frac2\pi\int\limits_0^{\tan^{-1}k}\frac{\frac{\sec^2\theta}k\sqrt{1+\tan^2\theta}d\theta}{1-\frac{\tan^2\theta}{k^2}}=
+\frac{2k}\pi\int\limits_0^{\tan^{-1}k}\frac{\sec^3\theta d\theta}{k^2-\tan^2\theta}=2A\int\limits_0^{\tan^{-1}k}\frac{\cos\theta d\theta}{\cos^2\theta(k^2\cos^2\theta-\sin^2\theta)}=
+2A\int\limits_0^{\tan^{-1}k}\frac{\cos\theta d\theta}{(1-\sin^2\theta)(k^2-k^2\sin^2\theta-\sin^2\theta)}
+u=\sin\theta,du=\cos\theta d\theta
+2A\int\limits_0^{\tan^{-1}k}\frac{\cos\theta d\theta}{(1-\sin^2\theta)(k^2-k^2\sin^2\theta-\sin^2\theta)}=
+2A\int\limits_1^\frac1{\sqrt{k^2+1}}\frac{du}{(1-u)(1+u)(k-u\sqrt{k^2+1})(k+u\sqrt{k^2+1})}

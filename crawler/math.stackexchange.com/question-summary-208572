@@ -1,0 +1,14 @@
+n\in\mathbb{N}
+x\in\mathbb{R}
+0
+0
+0
+ g_n(x)=2nxe^{-nx^2}\qquad h_n(x)=g_{n+1}(x)-g_n(x) 
+ \int\limits_0^\infty\sum_{n=0}^\infty h_n(t)dt \neq \sum_{n=0}^\infty\int_0^\infty h_n(t)dt 
+ \sum\limits_{n=0}^\infty h_n(t)=g_\infty (t) - g_0(t) = \lim_{n\to \infty} 2nxe^{-nx^2} =0 
+ \int\limits_0^\infty h_n(t)dt= \int\limits_0^\infty 2(n+1)xe^{-(n+1)x^2}dx - \int\limits_0^\infty 2nxe^{-nx^2}dx=[e^{-nx^2}-e^{-(n+1)x^2}]_0^\infty=0 
+h_0(t)=2 x e^{-t^2}
+\int_0^\infty 2x e^{-t^2} dt=1
+\int_0^\infty h_n(t)dt
+n
+0=1

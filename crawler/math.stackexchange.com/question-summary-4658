@@ -1,0 +1,76 @@
+7
+a_n
+n
+6
+1 - \frac{a_{150}}{2^{150}}
+n
+H, HT, HTT, HTTT, HTTTT, HTTTTT
+HTTTTTT
+6
+a_{n+7} = a_{n+6} + a_{n+5} + a_{n+4} + a_{n+3} + a_{n+2} + a_{n+1} + a_n
+a_k = 2^k, 0 \le k \le 6
+a_{150}
+a_n
+x^7 = x^6 + x^5 + x^4 + x^3 + x^2 + x + 1
+2
+2 - x = \frac{1}{x^7}
+r \approx 2 - \frac{1}{128}
+a_n
+\lambda \left( 2 - \frac{1}{128} \right)^n
+\lambda
+\frac{a_{150}}{2^{150}}
+\lambda \left( 1 - \frac{1}{256} \right)^{150} \approx \lambda e^{ - \frac{150}{256} } \approx 0.56 \lambda
+\lambda
+A(x) = 1 + \sum_{n \ge 1} a_{n-1} x^n = \frac{1}{1 - x - x^2 - x^3 - x^4 - x^5 - x^6 - x^7}.
+H, HT, ...
+H
+A(x) = \frac{1 - x}{1 - 2x + x^8}
+A(x)
+A(x) = \frac{\lambda}{r(1 - rx)} + \text{other terms}
+\lambda, r
+a_n
+\lambda
+\lambda
+\lim_{x \to \frac{1}{r}} \frac{r(1 - rx)(1 - x)}{1 - 2x + x^8} = \lim_{x \to \frac{1}{r}} \frac{-r(r+1) + 2r^2x}{-2 + 8x^7} = \frac{r^2-r}{2 - \frac{8}{r^7}} \approx 1.
+1 - 0.56 = 0.44
+7
+8
+A
+7
+T
+B
+7
+TH
+C
+7
+THH
+\ldots
+G
+7
+THHHHHH
+H
+7
+A
+1/2
+B
+1/2
+A
+B
+1/2
+C
+1/2
+A
+\ldots
+G
+1/2
+H
+1/2
+A
+H
+M
+\begin{pmatrix}  1/2 & 1/2 & 1/2 & 1/2 & 1/2 & 1/2 & 1/2 & 0 \\ 1/2 & 0   & 0   & 0   & 0   & 0   & 0   & 0 \\ 0   & 1/2 & 0   & 0   & 0   & 0   & 0   & 0 \\ 0   & 0   & 1/2 & 0   & 0   & 0   & 0   & 0 \\ 0   & 0   & 0   & 1/2 & 0   & 0   & 0   & 0 \\ 0   & 0   & 0   & 0   & 1/2 & 0   & 0   & 0 \\ 0   & 0   & 0   & 0   & 0   & 1/2 & 0   & 0 \\ 0   & 0   & 0   & 0   & 0   & 0   & 1/2 & 1  \end{pmatrix}
+M^n
+n
+M^{150}
+λ(1−1 256  ) 144 ≈λe −144/256   ≈0.57λ 
+P = 1 - 0.57 = 0.43

@@ -1,0 +1,32 @@
+P_1, \ldots, P_n
+Q_1, \ldots , Q_n
+\mathbb{R}^3
+ \min_{A,b} \sum (A p_i + b - q_i)^2 , \quad A \in \operatorname{SO}(3), b \in \mathbb{R}^3
+ \min_A\sum_i\|Ap_i-q_i\|^2\;,\quad A\in SO(3)\;. 
+A
+ \begin{align} \|Ap_i-q_i\|^2&=(Ap_i-q_i)^\top(Ap_i-q_i) \\ &=p_iA^\top Ap_i+q_i^\top q_i-2q_i^\top Ap_i \\ &= p_ip_i+q_i^\top q_i-2q_i^\top Ap_i\;, \end{align} 
+A
+ \def\tr{\operatorname{tr}} \sum_iq_i^\top Ap_i=\sum_i\tr q_i^\top Ap_i=\sum_i\tr p_iq_i^\top A=\tr\left(\left(\sum_ip_iq_i^\top\right)A\right)=:\tr B^\top A 
+P_i
+Q_i
+\overline{p}
+\overline{q}
+b
+b
+\overline{q} - A \overline{p}
+A
+ \overline{p} := \frac1i\sum_iP_i, \quad \overline{q} := \frac1i\sum_iQ_i
+ p_i := P_i - \overline{p}, \quad q_i := Q_i - \overline{q}
+B
+B = \left(\sum_i p q^\top \right)^\top = \sum_i q p ^\top
+B
+ B = U \Sigma V^\top
+A
+A \in \operatorname{O}(3)
+A \in \operatorname{SO}(3)
+b
+ A := U V^\top 
+ b := \overline{q} - A \overline{p}
+A
+A \in \operatorname{SO}(3)
+A \in \operatorname{O}(3)

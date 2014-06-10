@@ -1,0 +1,6 @@
+\dfrac{1}{\Gamma(ix)}
+\lim_{x \to \infty} \Gamma(ix) = 0
+\Gamma(z)=\lim_{n \to \infty}\frac{n!n^z}{z (z+1)...(z+n)}
+|n^{ix}|=|e^{\log(n)ix}|=1
+|e^z|=e^{Re(z)}
+\lim_{x \to \infty} | \Gamma(ix) |=\lim_{x \to \infty} \lim_{n \to \infty} \frac{|n!n^{ix}|}{|ix (ix+1)...(ix+n)|} = \lim_{x \to \infty} \lim_{n \to \infty}\frac{n!}{|x (x-i)...(x-ni)|}  = \lim_{x \to \infty} \lim_{n \to \infty}\frac{n!}{\sqrt{x^2 (x^2+1)...(x^2+n^2)}} = \lim_{x \to \infty} \lim_{n \to \infty}\frac{1}{\sqrt{x^2 (x^2+1)((x/2)^2+1)...((x/n)^2+1)}} \le = \lim_{x \to \infty}\frac{1}{\sqrt{x^2}}=0

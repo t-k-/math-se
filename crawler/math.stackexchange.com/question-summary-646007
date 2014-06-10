@@ -1,0 +1,16 @@
+f(y)=f(x)+\nabla f(x)^T(y-x)+\frac{1}{2}(y-x)^T\nabla^2f(x+a(y-x))(y-x)
+a\in[0,1]
+\frac{f(y)-f(x)}{y-x}=\nabla f(x+a(y-x))
+a\in[0,1]
+g(1) = f(y) 
+g(0) = f(x)
+g(t) = f(x+t(y-x))
+ g(1) = g(0) + g'(0) + \frac{1}{2} g^"(a) ,\; 0<a<1 \ldots\ldots\ldots(1)
+g'(t) = \nabla f(x +t(y-x)) . (y-x)
+g'(0) = \nabla f(x) .(y-x)
+g^"(t) = \sum D_i(\sum D_j f(x +t(y-x))(y-x)_j)(y-x)_i = (y-x)^T \nabla^2f(x+t(y-x))(y-x)\ldots(2) 
+t=a
+(2)
+g^"(a)
+g'(0)
+(1)

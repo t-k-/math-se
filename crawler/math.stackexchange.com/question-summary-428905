@@ -1,0 +1,19 @@
+f:[0,2\pi]\times \mathbb{R} \rightarrow \mathbb{R}
+\displaystyle k^2\leq \liminf_{|x|\rightarrow \infty} \frac{f(t,x)}{x}\leq \limsup_{|x|\rightarrow \infty}\frac{f(t,x)}{x} \leq (k+1)^2
+(x_n)\subset H^1([0,2\pi],\mathbb{R})=\lbrace x\in L^2([0,2\pi],\mathbb{R}),x'\in L^2([0,2\pi],\mathbb{R}),x(0)=x(2\pi)\rbrace
+\|x_n\|\rightarrow \infty
+n \rightarrow \infty
+(\displaystyle\frac{f(t,x_n)-k^2 x_n}{\|x_n\|})
+\displaystyle k^2\leq \liminf_{|x|\rightarrow \infty} \frac{f(t,x)}{x}\leq \limsup_{|x|\rightarrow \infty}\frac{f(t,x)}{x} \leq (k+1)^2
+\displaystyle \| f(t,x_n)\|_{L^2}^2 =\int_0^{2\pi} f(t,x_n)^2 dt \leq  \max\lbrace (k+1)^4\int_0^{2\pi} |x_n|^2 dt , 2\pi M\rbrace
+\displaystyle M=\sup_{(t,x)\in [0,2\pi]\times[-a,a]}|f(t,x)|
+\liminf
+\limsup
+\delta>0
+a(\delta)
+a:=a(1)
+t\in[0,2\pi]
+   |x|\geq a(\delta)\implies |f(t,x)|\leq((k+1)^2+\delta)|x|. 
+   \|f(\cdot,x_n(\cdot))\|_2^2 = \int |f(t,x_n(t))|^2\mathrm dt = \int\limits_{\{t:|x_n|\leq a\}}|f(t,x_n(t))|^2\mathrm dt + \int\limits_{\{t:|x_n|\leq a\}}|f(t,x_n(t))|^2\mathrm dt 
+   \leq \int \sup_{t\in [0,2\pi],|x|\leq a}|f(t,x)|^2\mathrm dt + \int ((k+1)^2+\delta)^2|x_n(t)|^2\mathrm dt 
+   \leq 2\pi\sup_{t\in [0,2\pi],|x|\leq a}|f(t,x)|^2 + ((k+1)^2+\delta)^2\|x_n\|_2^2. 

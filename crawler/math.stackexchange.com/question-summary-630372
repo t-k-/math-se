@@ -1,0 +1,35 @@
+\mathcal{B}=\left(\mathcal{B}_{0},\square,e,\alpha,\lambda,\varrho,\gamma\right)
+\left(c,\mu_{c},\eta_{c}\right)
+\left(d,\mu_{d},\eta_{d}\right)
+\mu_{c}:c\square c\rightarrow c
+\eta_{c}:e\rightarrow c
+\mu_{d}:d\square d\rightarrow d
+\eta_{d}:e\rightarrow d
+\left(c\square d,\mu,\eta\right)
+\eta=\left(\eta_{c}\square\eta_{d}\right)\circ\delta
+\delta=\lambda_{e}^{-1}=\varrho_{e}^{-1}:e\rightarrow e\square e
+\mu:\left(c\square d\right)\square\left(c\square d\right)\rightarrow c\square d
+\mu=\left(\mu_{c}\square\mu_{d}\right)\circ\beta
+\beta:\left(c\square d\right)\square\left(c\square d\right)\rightarrow\left(c\square c\right)\square\left(d\square d\right)
+\alpha
+\alpha^{-1}
+\gamma
+A
+B
+A\otimes B
+K
+cdc
+c \square (d \square c)
+\require{AMScd}\begin{CD} cdcdcd @>cd\mu>> cdcd \\ @V\mu cdVV @VV\mu V \\ cdcd @>\mu>> cd \end{CD}
+\require{AMScd}\begin{CD} cdcdcd @>>> cdccdd @>cd\mu_c\mu_d>> cdcd \\ @VVV @VVV @VVV \\ ccddcd @>>> cccddd @>c\mu_cd\mu_d>> ccdd \\ @V\mu_c\mu_dcdVV @V\mu_cc\mu_ddVV @VV\mu_c\mu_dV \\ cdcd @>>> ccdd @>\mu_c\mu_d>> cd \end{CD}
+c
+d
+c
+c
+d
+d
+\mu_c
+\mu_d
+\require{AMScd}\begin{CD} ccc @>c\mu_c>> cc @.@.@. ddd @>d\mu_d>> dd \\ @V\mu_ccVV @VV\mu_cV @.@. @V\mu_ddVV @VV\mu_dV \\ cc @>\mu_c>> c @.@.@. dd @>\mu_d>> d \end{CD}
+\otimes=\times
+(x \otimes y) \cdot (x' \otimes y') := (-1)^{|y||x'|} xx' \otimes yy'

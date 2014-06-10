@@ -1,0 +1,2 @@
+del = f(u,v,m,n-1)+1\\add = f(u,v,m-1,n)+1\\res = f(u,v,m-1,n-1)
+f(u,v,m,n)=\begin{cases} n & m=0\\ m & n=0\\ MIN(del,MIN(add,res)) & u_{m-1}=v_{n-1}\\ MIN(del,MIN(add,res+1)) & u_{m-1}\neq v_{n-1} \end{cases}

@@ -1,0 +1,24 @@
+f(y)=\int_0^y\ln(x-\ln(x))~dx
+\ln(x)
+\ln(x+1)
+1
+y>0
+x = e^z
+\int g(f(z))f'(z)dz=G(f(z))
+G
+g
+g(z)=\ln(z)
+f(z)=e^z-z
+h(y)=I'(0)
+t=1-e^{(a-1)z}
+dz = (a-1)(t-1)dt
+k=1-y^{-1}
+f(y)=\int_1^y\ln(x-\ln(x))dx
+\begin{array}{ll}f(y) & =\int_0^{\ln y}\ln(e^z-z)e^zdz\\&=\int_0^{\ln y}\ln(e^z-z)(e^z-1)dz+\int_0^{\ln y}\ln(e^z-z)dz\end{array}
+\begin{array}{ll}f(y) & =\bigg[ (e^z-z)\ln(e^z-z) - (e^z-z)\bigg]_0^{\ln y}+\int_0^{\ln y}\ln(e^z-z)dz\\&=(y-\ln y)[\ln(y-\ln y)-1]+\int_0^{\ln y}\ln(e^z-z)dz\end{array}
+h(y)=\int_0^{\ln y}\ln(e^z-z)dz
+I(a)=\int_0^{\ln y}\ln(e^z-e^{az})dz
+\begin{array}{ll}I(a) & = \int_0^{\ln y}\ln\big(e^z(1-e^{(a-1)z})\big)dz\\&=\int_0^{\ln y}z+\ln(1-e^{(a-1)z})dz\\&=\frac{1}{2}\ln(y)^2 + \int_0^{\ln y}\ln(1-e^{(a-1)z})dz\end{array}
+h(y)=\int_0^{\ln y}\ln(e^z-z)dz
+\begin{array}{ll}I(a)&=\frac{1}{2}\ln(y)^2 + (a-1)\int_0^{1-y^{a-1}}(t-1)\ln(t)dt\\&=\frac{1}{2}\ln(y)^2 + (a-1)\bigg[\frac{1}{4}t^2(2\ln(t)-1)-t(\ln(t)-1)\bigg]_0^{1-y^{a-1}}\\&=\frac{1}{2}\ln(y)^2 + (a-1)\bigg[\frac{1}{4}(1-y^{a-1})^2(2\ln(1-y^{a-1})-1)-(1-y^{a-1})(\ln(1-y^{a-1})-1)\bigg]\end{array}
+\begin{array}{ll}I'(0)=&\frac{1}{4}k^2(2\ln(k)-1)-k(\ln(k)-1)-\frac{1}{2}k(k+1)\ln(y)(2\ln(k)-1)-\frac{1}{2}k^2\frac{(k+1)\ln(y)}{k}+(k+1)\ln(y)(\ln(k)-1)+k\frac{(k+1)\ln(y)}{k}\end{array}

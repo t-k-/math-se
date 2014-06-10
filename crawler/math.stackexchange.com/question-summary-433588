@@ -1,0 +1,23 @@
+f(x) = e^{-a |x|}, a > 0
+ 0 \leq x \leq \pi
+ \frac{\cosh(a( \pi -x))}{\sinh(a \pi)} = \frac{1}{a \pi} + \frac{2}{\pi} \sum_{n = 1}^{\infty}\frac{a}{a^2+n^2}\cos(nx). 
+\sum_{n = - \infty}^{\infty} f(x+n) = \sum_{n = - \infty}^{\infty} \widehat{f}(x) e^{2 \pi i n x}.
+\sum_{n = - \infty}^{\infty} \widehat{f}(x) e^{2 \pi i n x} = \frac{1}{a \pi} + \frac{2}{\pi} \sum_{n = 1}^{\infty}\frac{a}{a^2+n^2}\cos(nx),
+\sum_{n = - \infty}^{\infty} f(x+n) = \frac{\cosh(a( \pi -x))}{\sinh(a \pi)}
+ 0 \leq x \leq \pi
+f(\frac{x}{\pi} + n)
+x \rightarrow \pi x
+\sum_{n = - \infty}^{\infty} f(x+n) = \sum_{n = - \infty}^{\infty} e^{a |x+n|} 
+\sum_{n = - \infty}^{\infty} f(\frac{x}{\pi}+n) = \sum_{n = 0}^{\infty}e^{-a(\frac{x}{\pi} + n)} + \sum_{n = 1}^{\infty}e^{a(\frac{x}{\pi} - n)} = \frac{\cosh(a( \frac{\pi}{2} -\frac{x}{\pi}))}{\sinh(\frac{a \pi}{2})}
+\frac{\cosh(a( \frac{\pi}{2} -{x}))}{\sinh(\frac{a \pi}{2})} \neq \frac{\cosh(a( \pi -x))}{\sinh(a \pi)}
+\displaystyle \sum_{n = - \infty}^{\infty} \widehat{f}(x) e^{2 \pi i n x} = \frac{1}{a \pi} + \frac{2}{\pi} \sum_{n = 1}^{\infty}\frac{a}{a^2+n^2}\cos(nx)
+\widehat{f}(n)
+\widehat{f}(x)
+1
+2\pi
+\exp(-a|x|)
+2\pi
+\sinh (\pi a)=\frac12(e^{\pi a}-e^{-\pi a})
+\frac{\cosh(a(\pi-x))}{\sinh (\pi a)} = \sum_{n\in\mathbb Z} \exp(-a|x+2\pi n|), \quad 0\le x\le \pi \tag1
+(e^{\pi a}-e^{-\pi a})\sum_{n=0}^\infty \exp(-a(x+2\pi n))=\exp(-ax+ a\pi ) \tag2
+(e^{\pi a}-e^{-\pi a})\sum_{n=-\infty}^{-1} \exp(a(x+2\pi n))=-\exp(ax-a\pi) \tag3

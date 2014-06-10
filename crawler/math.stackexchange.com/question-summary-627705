@@ -1,0 +1,29 @@
+f(n,m)
+n
+m
+0
+0
+f(0,0) = 1
+0
+m>0
+f(0,m) = 0
+m>0
+1+2+3 + \cdots + m = \frac{m(m+1)}2
+m
+\frac{m(m+1)}2
+n
+n
+g(n) = \left\lceil\frac{\sqrt{8n+1}-1}2\right\rceil
+\begin{align*} \frac{m(m+1)}2 \ge& n\\ m \ge& \left\lceil\frac{\sqrt{8n+1}-1}2\right\rceil \end{align*}
+f(n,m) = \sum_{i=g(n-m)}^{\max(m-1,n-m)}f(n-m,i)
+n
+f(n) = \sum_{m=g(n)}^{n}f(n,m)
+n=7
+g(7) = 4
+\begin{align*} &f(7,4)+f(7,5)+f(7,6)+f(7,7)\\ =&f(3,2)+f(3,3)+f(2,2)+f(1,1)+f(0,0)\\ =&f(1,1)+f(0,0)+f(0,0)+f(0,0)+f(0,0)\\ =& 5 \end{align*}
+n
+1
+x^n
+x^7
+ \begin{align} \prod_{k=1}^\infty\left(1+x^k\right) &=1+x+x^2+2x^3+2x^4+3x^5+4x^6+5x^7+6x^8\\ &+8x^9+10x^{10}+12x^{11}+15x^{12}+18x^{13}+22x^{14}\\[12pt] &+27x^{15}+32x^{16}+38x^{17}+46x^{18}+54x^{19}+64x^{20} \end{align} 
+ \color{#A0A0A0}{ \left(1+\color{#000000}{x^1}\right) \left(1+\color{#000000}{x^2}\right) \left(\color{#000000}{1}+x^3\right) \left(1+\color{#000000}{x^4}\right) \left(\color{#000000}{1}+x^5\right) \left(\color{#000000}{1}+x^6\right) \left(\color{#000000}{1}+x^7\right) \cdots}\\ \color{#A0A0A0}{ \left(1+\color{#000000}{x^1}\right) \left(\color{#000000}{1}+x^2\right) \left(\color{#000000}{1}+x^3\right) \left(\color{#000000}{1}+x^4\right) \left(\color{#000000}{1}+x^5\right) \left(1+\color{#000000}{x^6}\right) \left(\color{#000000}{1}+x^7\right) \cdots}\\ \color{#A0A0A0}{ \left(\color{#000000}{1}+x^1\right) \left(1+\color{#000000}{x^2}\right) \left(\color{#000000}{1}+x^3\right) \left(\color{#000000}{1}+x^4\right) \left(1+\color{#000000}{x^5}\right) \left(\color{#000000}{1}+x^6\right) \left(\color{#000000}{1}+x^7\right) \cdots}\\ \color{#A0A0A0}{ \left(\color{#000000}{1}+x^1\right) \left(\color{#000000}{1}+x^2\right) \left(1+\color{#000000}{x^3}\right) \left(1+\color{#000000}{x^4}\right) \left(\color{#000000}{1}+x^5\right) \left(\color{#000000}{1}+x^6\right) \left(\color{#000000}{1}+x^7\right) \cdots}\\ \color{#A0A0A0}{ \left(\color{#000000}{1}+x^1\right) \left(\color{#000000}{1}+x^2\right) \left(\color{#000000}{1}+x^3\right) \left(\color{#000000}{1}+x^4\right) \left(\color{#000000}{1}+x^5\right) \left(\color{#000000}{1}+x^6\right) \left(1+\color{#000000}{x^7}\right) \cdots}\\ 

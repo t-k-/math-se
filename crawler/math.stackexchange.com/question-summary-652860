@@ -1,0 +1,39 @@
+A
+n \times n
+A
+1
+A
+f:\mathbb{R}^n \to \mathbb{R}^n
+ f|_{S^{n-1}} := g:S^{n-1} \to S^{n-1}
+g
+f
+S^{n-1}
+g: M \to N
+(X,u)
+(Y,v)
+M
+N
+X^{-1}\circ \ g \ \circ \ Y
+X
+Y
+S^{n-1}
+\mathbb{R}^{n-1}
+X^{-1}\circ \ g \ \circ \ Y
+\psi_N : S^{n-1} \to \mathbb{R}^{n-1}
+A=(a_{ij})
+\beta_k=\frac{2y_{k}}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 } \ \ \ (1\leq k \leq n-1)
+\beta_n=\frac{y^2_1 + y^2_2 + ... + y^2_{n-1} -1}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 }
+ \psi_N \circ \ g \ \circ \ \psi^{-1}_N
+\psi_N ( x_1 ,..., x_n ) =  ( \frac{x_1}{1- x_{n} },\frac{x_2}{1- x_{n} },...,\frac{x_{n-1}}{1- x_{n} } )
+\psi^{-1}_N ( y_1 ,..., y_{n-1} ) =  ( \frac{2y_1}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 },\frac{2y_2}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 },...,\frac{2y_{n-1}}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 },\frac{y^2_1 + y^2_2 + ... + y^2_{n-1} -1}{y^2_1 + y^2_2 + ... + y^2_{n-1} +1 } )
+ \psi_N \circ \ g \ \circ \ \psi^{-1}_N ( y_1 ,..., y_{n-1} ) = \left( \frac{\sum^n_{i=1} a_{1i}\beta_i}{1-\sum^n_{i=1} a_{ni}\beta_i},\frac{\sum^n_{i=1} a_{2i}\beta_i}{1-\sum^n_{i=1} a_{ni}\beta_i}, ... , \frac{\sum^n_{i=1} a_{(n-1)i}\beta_i}{1-\sum^n_{i=1} a_{ni}\beta_i} \right)
+F:=f\circ \operatorname{inc}
+ g = \operatorname{inc} \circ f \circ \operatorname{inc} 
+  \operatorname{inc}: S^{n-1} \rightarrow \mathbb R^n 
+F:N \rightarrow \mathbb R^n
+F(N) \subseteq S^{n-1}
+\operatorname{inc} \circ F
+\psi_n
+U:=\{x_n<1\} \subseteq \mathbb R^n
+\Psi_N:U \rightarrow \mathbb R^n
+\Psi_N(x):=(\psi_N,x_n)

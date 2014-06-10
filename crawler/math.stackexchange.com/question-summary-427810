@@ -1,0 +1,13 @@
+\lim_{x\to\infty}\sum_{k=1}^{\infty} \frac{(-1)^{k+1} (2^k-1)x^k}{k k!}
+f(2x) - f(x) = \int_x^{2x} f'(t)\ dt
+f(z)  = \sum_{k=1}^\infty (-1)^{k+1} z^k/(k k!)
+f'(z)
+\lim_{x\to\infty}\sum_{k=1}^{\infty} \frac{(-1)^{k+1} (2^k-1)x^k}{k k!}=\lim_{x\to\infty}\sum_{k=1}^{\infty} \frac{(-x)^{k}}{k k!}-\sum_{k=1}^{\infty} \frac{(-2x)^{k}}{k k!}
+f(x)=\sum_{k=1}^{\infty} \frac{x^{k}}{k k!}
+f'(x)=\sum_{k=1}^{\infty} \frac{x^{k-1}}{k!}=\frac{e^x-1}{x}
+\lim_{x\to\infty}\sum_{k=1}^{\infty} \frac{(-x)^{k}}{k k!}-\sum_{k=1}^{\infty} \frac{(-2x)^{k}}{k k!}=\lim_{x\to\infty}f(-x)-f(-2x)=\lim_{x\to\infty}\int_{-2x}^{-x}\frac{e^t-1}{t} dt=\lim_{x\to\infty}\int_{-2x}^{-x}\frac{e^t}{t} dt-\lim_{x\to\infty}\int_{-2x}^{-x}\frac{1}{t} dt=0-\lim_{x\to\infty}(\log|-x|-\log|-2x|)=-\log(1/2)=\log(2)
+f(x)
+x f'(x) = \sum_{n=1}^{\infty} (-1)^{n+1} \frac{2^n-1}{n!} x^n = e^{-x}-e^{-2 x}
+f(x) = \int_0^x dt \frac{e^{-t}-e^{-2 t}}{t}
+f(0)=0
+\lim_{x \to\infty} f(x) = \int_0^{\infty} dt \frac{e^{-t}-e^{-2 t}}{t} = \log{2}

@@ -1,0 +1,24 @@
+n \in N , n \geq 1
+0< \alpha < n
+\varphi
+R^n
+\int_{R^n} \varphi  = 1
+\varphi_{\epsilon }(y) = {\epsilon}^{-n}\varphi(y/ \epsilon)
+x \in R^n
+ \displaystyle\lim_{\epsilon \rightarrow 0^{+}} \displaystyle\int_{R^n}\frac{\varphi_{\epsilon }(y)}{|x-y|^{n-\alpha}}dy =  \frac{1}{|x|^{n-\alpha}}
+\varphi 
+y = \varepsilon z
+\int_{\mathbb{R}^n} \frac{\varphi_\varepsilon(y)}{\lVert x-y\rVert^{n-\alpha}}\,dy = \int_{\mathbb{R}^n} \frac{\varphi(z)}{\lVert x-\varepsilon z\rVert^{n-\alpha}}\,dz.
+x = 0
+\varepsilon^{\alpha-n}\underbrace{\int_{\mathbb{R}^n} \frac{\varphi(z)}{\lVert z\rVert^{n-\alpha}}\,dz}_C,
+x\neq 0
+\varepsilon > 0
+x \neq \varepsilon z
+z\in \operatorname{supp} \varphi
+\begin{align} \left\lvert \int_{\mathbb{R}^n} \frac{\varphi(z)}{\lVert x-\varepsilon z\rVert^{n-\alpha}}\,dz - \frac{1}{\lVert x\rVert^{n-\alpha}}\right\rvert &= \left\lvert\int_{\mathbb{R}^n} \varphi(z)\left(\frac{1}{\lVert x-\varepsilon z\rVert^{n-\alpha}} - \frac{1}{\lVert x\rVert^{n-\alpha}}\right)\,dz \right\rvert\\ &\leqslant \int_{\mathbb{R}^n} \lvert\varphi(z)\rvert\cdot\left\lvert\frac{1}{\lVert x-\varepsilon z\rVert^{n-\alpha}} - \frac{1}{\lVert x\rVert^{n-\alpha}}\right\rvert\,dz, \end{align}
+0
+\operatorname{supp}\varphi \subset B_R(0)
+\varepsilon < \frac{\lVert x\rVert}{2R}
+\left\lvert\frac{1}{\lVert x-\varepsilon z\rVert^{n-\alpha}} - \frac{1}{\lVert x\rVert^{n-\alpha}}\right\rvert \leqslant \frac{2^{n-\alpha}+1}{\lVert x\rVert^{n-\alpha}}.
+x\neq 0
+\lim_{\varepsilon\searrow 0} \int_{\mathbb{R}^n} \frac{\varphi_\varepsilon(y)}{\lVert x-y\rVert^{n-\alpha}}\,dy = \frac{1}{\lVert x\rVert^{n-\alpha}},

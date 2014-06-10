@@ -1,0 +1,9 @@
+\int_0^{\pi/2} \cfrac 1 {12\cos x + 9 \sin x} dx?
+12^2+9^2=15^2
+\left(\frac{12}{15}\right)^2+\left(\frac{9}{15}\right)^2=1
+\theta
+\cos\theta=12/15
+\sin\theta=9/15
+ 12\cos x + 9\sin x = 15\left(\frac{12}{15}\cos x+\frac{9}{15}\sin x\right) = 15(\cos\theta\cos x + \sin\theta\sin x) = 15\cos(x-\theta). 
+ \int\frac{dx}{12\cos x+9\sin x} = \int \frac{dx}{15\cos(x-\theta)}= \int \frac{\cos(x-\theta)\,dx}{15(\cos(x-\theta))^2} = \frac{1}{15}\int \frac{\cos(x-\theta)\,dx}{1- (\sin(x-\theta))^2} 
+ = \frac{1}{15}\int \frac{du}{1-u^2} = \frac{1}{15}\int \frac{A}{1-u} + \frac{B}{1+u} \, du. 

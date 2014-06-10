@@ -1,0 +1,30 @@
+(X_n:N\in\mathbb{N})
+\mathbb{E}(X_n) = \mu
+\mathbb{E}(X_n^4) \leq M
+\mu \in \mathbb{R}
+M<\infty
+P_n = X_1X_2+X_2X_3+...+X_{n-1}X_n
+P_n
+n
+n\to\infty
+\mathbb{E}(X_n^4) \leq M
+P_n
+n
+\mu^2
+(X_n)_{n \in \mathbb{N}} \subseteq L^2(\mathbb{P})
+\mathbb{V}X_n
+X_n
+\sum_{n=1}^{\infty} \frac{\mathbb{V}X_n}{n^2} < \infty
+\frac{1}{n} \sum_{i=1}^n (X_i-\mathbb{E}X_i) \to 0 \quad \text{a.s.}
+\mathbb{E}X_j = \mu
+\mathbb{E}((X_j+X_{j-1})^2) = \mathbb{E}(X_j^2)+\mathbb{E}(X_{j+1}^2)+2\mu^2
+\begin{align*}2 X_j X_{j+1} &= (X_j+X_{j+1})^2 - X_j^2-X_{j+1}^2 \\ &= \big[ (X_j+X_{j+1})^2 - \mathbb{E}((X_j+X_{j+1})^2) \big] - \big[ X_j^2-\mathbb{E}(X_j^2) \big] - \big[ X_{j+1}^2 - \mathbb{E}(X_{j+1}^2) \big] +2 \mu^2\end{align*}
+P_n = Q_n^1+Q_n^2+Q_n^3+(n-1)\mu^2 \tag{1} 
+\begin{align*} Q_n^1 &:= \frac{1}{2} \sum_{j=1}^{\lfloor \frac{n}{2} \rfloor} \bigg[(X_{2j}+X_{2j+1})^2-\mathbb{E}((X_{2j}+X_{2j+1})^2) \bigg] \\ Q_n^2 &:=\frac{1}{2} \sum_{j=1}^{\lfloor \frac{n}{2} \rfloor} \bigg[(X_{2j+1}+X_{2j+2})^2-\mathbb{E}((X_{2j+1}+X_{2j+2})^2) \bigg] \\ Q_n^3 &:= \sum_{j=1}^n \bigg[ X_j^2- \mathbb{E}(X_j^2) \bigg]+ \frac{1}{2} (X_n^2-\mathbb{E}(X_n^2)) \end{align*}
+\mathbb{E}(X_n^4) \leq M
+\lim_{n \to \infty} \frac{1}{\lfloor \frac{n}{2} \rfloor} Q_n^1 = \lim_{n \to \infty} \frac{1}{\lfloor \frac{n}{2} \rfloor} Q_n^2 = \lim_{n \to \infty} \frac{1}{n} Q_n^3 = 0 \quad \text{a.s.} \tag{2}
+(1)
+(2)
+\frac{P_n}{n} \to \mu^2 \quad \text{a.s.}
+E(X_nX_{n+1})=E(X_n)E(X_{n+1})=\mu^2
+E(P_n)=n\mu^2

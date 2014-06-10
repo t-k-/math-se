@@ -1,0 +1,17 @@
+f(n)=10f(n-1)-25f(n-2)
+f(0)=0
+f(1)=1
+g(x)=\sum_{n=0}^{\infty}f(n)x^n = \sum_{n=2}^{\infty}f(n)x^n+x=10\sum_{n=2}^{\infty}f(n-1)x^n-25\sum_{n=2}^{\infty}f(n-2)x^n+x =
+=10x\sum_{n=2}^{\infty}f(n-1)x^{n-1}-25x^2\sum_{n=2}^{\infty}f(n-2)x^{n-2}+x =
+=10x\sum_{n=1}^{\infty}f(n)x^n-25x^2\sum_{n=0}^{\infty}f(n)x^n+x
+f(n)
+0
+10x\sum_{n=1}^{\infty}f(n)x^n=10x\sum_{n=1}^{\infty}f(n)x^n+0=10x\sum_{n=0}^{\infty}f(n)x^n
+g(x)=10x\sum_{n=0}^{\infty}f(n)x^n-25x^2\sum_{n=0}^{\infty}f(n)x^n+x=10xg(x)-25x^2g(x)+x
+g(x)=10xg(x)-25x^2g(x)+x
+g(x)
+g(x)=\frac{x}{(x-\frac{1}{5})^2}
+f(n)
+g(x)
+\sum_{n=0}^{\infty}{g^{(n)}(0)x^{n}/n!}
+f(n) = g^{(n)}(0)/n!

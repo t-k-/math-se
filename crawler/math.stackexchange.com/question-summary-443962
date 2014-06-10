@@ -1,0 +1,11 @@
+B_n(x_1,\dots,x_n)= \det\begin{bmatrix}x_1 & {n-1 \choose 1} x_2 & {n-1 \choose 2}x_3 & {n-1 \choose 3} x_4 & {n-1 \choose 4} x_5 & \cdots & \cdots & x_n \\  \\ -1 & x_1 & {n-2 \choose 1} x_2 & {n-2 \choose 2} x_3 & {n-2 \choose 3} x_4 & \cdots & \cdots & x_{n-1} \\  \\ 0 & -1 & x_1 & {n-3 \choose 1} x_2 & {n-3 \choose 2} x_3 & \cdots & \cdots & x_{n-2} \\  \\ 0 & 0 & -1 & x_1 & {n-4 \choose 1} x_2 & \cdots  & \cdots & x_{n-3} \\  \\ 0 & 0 & 0 & -1 & x_1 & \cdots & \cdots & x_{n-4} \\  \\ 0 & 0 & 0 & 0 & -1 & \cdots & \cdots & x_{n-5} \\  \\ \vdots & \vdots & \vdots &  \vdots & \vdots & \ddots & \ddots & \vdots  \\  \\ 0 & 0 & 0 & 0 & 0 & \cdots & -1 & x_1  \end{bmatrix}
+x_1 = m
+x_2 = m(\alpha +\beta)
+x_3 = m(2\alpha +\beta)(\alpha +2\beta)
+x_4 = m(3\alpha +\beta)(2\alpha +2\beta)(\alpha +3\beta), \cdots
+j-1
+x_j
+m
+x_1,x_2,\cdots,x_n
+B_n(x_1,\dots,x_n)
+m(m+(n-1)\alpha +\beta)\cdots(m+\alpha +(n-1)\beta)

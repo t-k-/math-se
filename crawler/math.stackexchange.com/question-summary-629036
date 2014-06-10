@@ -1,0 +1,20 @@
+f(n)=2^n*n
+g(n)=\frac {3^n}{n^2} 
+\lim_{x\to \infty} \frac{2^n*n^3}{3^n}=\lim_{x\to \infty} (\frac {2}{3})^n*n^3
+f(n) <= g(n)
+2^n*n <= c*\frac {3^n}{n^2}
+2^n*n^3 <= c*3^n
+e^{n*\ln 2}*n^3 <= c*e^{n*\ln 3}
+n^3 <= c
+f(n) > c*g(n)
+0
+f(n)=o(g(n))
+\frac{f(n)}{g(n)}=\frac{2^nn^3}{3^n}
+\;n-
+\sqrt[n]{\frac{f(n)}{g(n)}}=\frac23\sqrt[n]{n^3}\xrightarrow[n\to\infty]{}\frac23<1\implies \;\text{the series converges}\implies
+\frac{f(n)}{g(n)}\xrightarrow[n\to\infty]{}0
+|q|^{-1}=1+\alpha
+q=\frac23
+α=\frac12
+q^{-n}=(1+α)^n=1+nα+\tbinom n2 α^2+\dots+α^n\ge 1+nα+\tbinom n2 α^2,
+n\cdot |q|^n\le \frac{n}{1+nα+\frac{n(n-1)}2 α^2}

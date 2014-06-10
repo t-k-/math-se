@@ -1,0 +1,58 @@
+1 + \sqrt{2} + \dots + \sqrt{n} \sim \frac{2}{3}n^{3/2} + \frac{\sqrt{n}}{2} + C
+C
+-0.207
+\zeta(-1/2)
+a_{n} \sim b_{n}
+\lim_{n \rightarrow \infty} (a_{n}-b_{n}) = 0
+x > 0
+k > 0
+ \sqrt{x} \le \frac{x}{2\sqrt{k}} + \frac{\sqrt{k}}{2}
+\ge
+\int_{k}^{k+1} \sqrt{x} \ dx \le \int_{k}^{k+1} (\frac{x}{2\sqrt{k}} + \frac{\sqrt{k}}{2}) \ dx
+ = \frac{(k+1)^2 - k^2}{4\sqrt{k}} + \frac{\sqrt{k}}{2} = \sqrt{k} + \frac{1}{4\sqrt{k}}
+\sum_{k=1}^{n-1} \int_{k}^{k+1} \sqrt{x} \ dx \le \sum_{k=1}^{n-1} (\sqrt{k} + \frac{1}{4\sqrt{k}})
+\int_{1}^{n} \sqrt{x} \ dx \le \sum_{k=1}^{n-1} (\sqrt{k} + \frac{1}{4\sqrt{k}})
+ \frac{2}{3} n^{3/2} - \frac{2}{3} \le \sum_{k=1}^{n-1} (\sqrt{k} + \frac{1}{4\sqrt{k}})
+\frac{1}{2\sqrt{k}} < \frac{1}{\sqrt{k} + \sqrt{k-1}} = \sqrt{k} -\sqrt{k-1}
+ \sum_{k=1}^{n-1} \frac{1}{4\sqrt{k}} < \frac{\sqrt{n-1}}{2}
+ \frac{2}{3} n^{3/2} - \frac{2}{3} \le \frac{\sqrt{n-1}}{2} + \sum_{k=1}^{n-1} \sqrt{k} 
+S_{n} = \sum_{k=1}^{n} \sqrt{k}
+S_{n} \ge \frac{2}{3} n^{3/2} - \frac{2}{3} + \sqrt{n} - \frac{\sqrt{n-1}}{2} \ge \frac{2}{3} n^{3/2} - \frac{2}{3} + \frac{\sqrt{n}}{2}
+G_{n} = S_{n} - \frac{2}{3} n^{3/2} - \frac{\sqrt{n}}{2}
+G_{n} \ge -\frac{2}{3}
+C
+G_{n}
+1 + \sqrt{2} + \dots + \sqrt{n} \sim \frac{2}{3}n^{3/2} + \frac{\sqrt{n}}{2} + C
+6(G_{n}-G_{n+1}) = 4(n+1)\sqrt{n+1} + 3\sqrt{n+1} - 6\sqrt{n+1} - 4n\sqrt{n} - 3\sqrt{n}
+ = \sqrt{n+1} + 4n(\sqrt{n+1} -\sqrt{n}) - 3\sqrt{n}
+\sqrt{n+1} + \sqrt{n}
+ \sqrt{n+1}(\sqrt{n+1} + \sqrt{n}) + 4n - 3\sqrt{n}(\sqrt{n+1} + \sqrt{n})
+ = 2n+1 - 2\sqrt{n^2 + n}
+ (2n+1)^2 = 4n^2 + 4n + 1 > 4n^2 + 4n = (2\sqrt{n^2+n}) ^2
+ 2n+1 > 2\sqrt{n^2+n}
+G_{n} > G_{n+1}
+1 + \sqrt[3]{2} + \dots + \sqrt[3]{n} \sim \frac{3}{4}n^{4/3} + \frac{\sqrt[3]{n}}{2} + C,
+C.
+C = \zeta(-1/3) \approx -0.277343.
+a_n \sim b_n
+\lim_{n \rightarrow \infty} (a_{n}-b_{n}) = 0.
+\sqrt[3]{x} \le \frac{x}{3k^{2/3}} + \frac{2k^{1/3}}{3}.
+k=1
+n-1
+ \frac{3}{4}n^{4/3} - \frac{3}{4} \le \sum_{k=1}^{n-1}\sqrt[3]{n} + \frac{1}{6}\sum_{k=1}^{n-1} \frac{1}{k^{2/3}}, \qquad n>1.
+\sum_{k=1}^{n}\sqrt[3]{n} \ge \frac{3}{4}n^{4/3} + n^{1/3} - \frac{3}{4} - \frac{1}{6}\sum_{k=1}^{n-1} \frac{1}{k^{2/3}}, \qquad n>1.
+\sum_{k=1}^{n-1} \frac{1}{k^{2/3}} \le 1+ \int_1^n x^{-2/3} dx, \qquad n>1,
+\frac{1}{6}\sum_{k=1}^{n-1} \frac{1}{k^{2/3}} \le \frac{1}{2}n^{1/3} - \frac{1}{3}.
+\sum_{k=1}^{n}\sqrt[3]{n} \ge \frac{3}{4}n^{4/3} + \frac{1}{2}n^{1/3} - \frac{5}{12}, \qquad n>1.
+G_n = \sum_{k=1}^{n}\sqrt[3]{n} - \frac{3}{4}n^{4/3} - \frac{1}{2}n^{1/3}.
+G_n \ge -5/12,
+G_n – G_{n+1} > 0
+\frac{(n+1)^{4/3} – n^{4/3}}{(n+1)^{1/3} + n^{1/3}} > \frac{2}{3}.
+G_n
+\sum_{k=1}^{n}\sqrt[r]{n},
+r \in \mathbb{N},
+C = \zeta(-1/r).
+1 + \sqrt[r]{2} + \dots + \sqrt[r]{n} \sim \frac{r}{r+1}n^{(r+1)/r} + \frac{\sqrt[r]{n}}{2} + C,
+\sum_{i\le n}\sqrt i=\sqrt n\sum_{i\le n}\sqrt{\frac{i}{n}}
+\frac1{n\sqrt n}\sum_{i\le n}\sqrt i=\sum_{i\le n}\sqrt{\frac{i}{n}}\frac1n\to\int_0^1\sqrt x{} dx=\frac23
+\sum_{i\le n}\sqrt i\sim\frac23 n\sqrt n

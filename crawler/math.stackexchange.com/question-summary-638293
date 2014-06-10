@@ -1,0 +1,13 @@
+-3
++3
+ \sum_{n=1}^{\infty} \left( \arctan \frac{4n - 1}{2} - \arctan \frac{4n - 3}{2} \right). 
+a_n
+n^{th}
+\;\tan^{-1}(x) = \Im\log(1 + ix)\;
+x
+a_n
+\begin{align} a_n = & \tan^{-1}\frac{4n-1}{2} - \tan^{-1}\frac{4n-3}{2}\\ = & \tan^{-1}\left(\frac{\frac{4n-1}{2}-\frac{4n-3}{2}}{1 + \frac{4n-1}{2}\frac{4n-3}{2}}\right) = \tan^{-1}\left(\frac{1}{(2n-1)^2 + \frac34}\right)\\ \end{align}
+a_n = \Im\left\{\log\left( 1 + \frac{i}{(2n-1)^2 + \frac34}\right)\right\} = \Im\left\{\log\left( 1 + \frac{\frac34 + i}{(2n-1)^2}\right)\right\} 
+\color{blue}{^{[1]}}
+\cosh x = \prod_{n=1}^{\infty}\left(1 + \frac{4x^2}{(2n-1)^2\pi^2}\right)
+\begin{align} \sum_{n=1}^\infty a_n  = &\Im\left\{\log\cosh\left(\frac{\pi}{2}\sqrt{\frac34+i}\right)\right\} = \Im\left\{\log\cosh\left[\frac{\pi}{2}\left(1 + \frac{i}{2}\right)\right]\right\}\\ = & \Im\left\{\log\left[\cosh\frac{\pi}{2} \cos\frac{\pi}{4} + \sinh\frac{\pi}{2}\sin\frac{\pi}{4}i\right]\right\} = \Im\left\{\log\left[ 1 + \tanh\frac{\pi}{2} i\right]\right\}\\ = & \tan^{-1}\left[\tanh\left(\frac{\pi}{2}\right)\right] \end{align}

@@ -1,0 +1,46 @@
+f
+A=[a,a+\tau]
+a, \tau \in \mathbb{R})
+f
+f
+f
+f(a) = f(a + \tau)
+S=\{ \phi_n : [a,a+\tau] \rightarrow  \mathbb{C} \quad , \ n \in \mathbb{Z}\}
+L=||\phi _i||^2
+i \in \mathbb{Z}
+n,m \in \mathbb{Z}
+\int_{a}^{a+\tau} \phi_n ^* (t) \phi_m (t) dt = L\delta_{nm}
+f
+S
+f(t)=\sum_{n \in \mathbb{Z}} F[n] \phi_n (t), \quad t\in A.
+F[n]
+m \in \mathbb{Z}
+\phi_m ^*(t) f(t) = \sum_{n \in \mathbb{Z}} F[n] \phi_n (t)\phi_m^*(t)
+\int_{a}^{a+\tau} \phi_m ^*(t) f(t)dt = \int_{a}^{a+\tau} \sum_{n \in \mathbb{Z}} F[n] \phi_n (t)\phi_m^*(t)dt=\sum_{n \in \mathbb{Z}}\int_{a}^{a+\tau} F[n] \phi_n (t)\phi_m^*(t)dt
+=\sum_{n \in \mathbb{Z}} F[n] \int_{a}^{a+\tau} L \delta_{nm} dt=\tau L \cdot F[m]
+F[m]=\frac{1}{\tau L}\int_{a}^{a+\tau} \phi_m ^*(t) f(t)dt. 
+S_f : A \rightarrow \mathbb{C}
+S_f (t) = \sum_{n \in \mathbb{Z}} F[n] \phi_n (t).
+F[n]
+S_f (t) = f(t)
+t \in A
+A
+L=1
+f
+\phi_n (t) = \exp \left( \frac{2 \pi n i}{\tau} t \right), \quad n \in \mathbb{Z}.
+f(t) = \frac{1}{\tau} \sum_{n \in \mathbb{Z}} F[n] \exp \left( \frac{2 \pi n i}{\tau} t \right) \ dt
+f(t) = 2t, \ t \in [0,1]
+a=0
+\tau = 1
+f
+g
+f
+g(0)=g(1)=1=\frac{1}{2}(f(0)+f(1))
+g
+G[n] = \int_{0}^{1} \phi_n ^*(t) f(t)dt = \int_{0}^{1} \exp \left(- 2 \pi n i t \right) (2t)dt = \frac{-i}{n \pi}, \ n \neq 0, \quad G[0]=1.
+t \in [0,1]
+g(t)=1+ \sum_{n \in \mathbb{Z \setminus \{ 0 \} }} \frac{-i}{n \pi} \exp(2 \pi n i t)
+g(t)=f(t)
+(0,1)
+t\in (0,1)
+2t=1+\sum_{n \in \mathbb{Z \setminus \{ 0 \}}} \frac{-i}{n \pi} \exp(2 \pi n i t)

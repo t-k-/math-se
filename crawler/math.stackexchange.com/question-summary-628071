@@ -1,0 +1,18 @@
+Y_{ni}
+\{0,1,2,\ldots\}
+Z_0=1
+Z_n:=\sum_{i=1}^{Z_{n-1}}Y_{ni}
+Z_{n-1}=0
+E(Y_{11}) = \mu
+Var(Y_{11})=\sigma^2
+E(Z_n|Z_{n-1})
+E(Z_n)
+Var(Z_n)
+E(Z_n|Z_{n-1}) = \mu Z_{n-1}
+E(Z_n|Z_{n-1}) = \sum_{i=1}^{Z_{n-1}} E(Y_{ni}|Z_{n-1}) = \sum_{i=1}^{Z_{n-1}} E(Y_{ni}) = \mu Z_{n-1}
+Z_{n-1}
+Y_{ni}
+E(Z_n) = E(E(Z_n|Z_{n-1}))= \mu E(Z_{n-1})
+E(Z_n) = \mu^n
+Var(Z_n) = Var(E(Z_n|Z_{n-1})) + E(Var(Z_n|Z_{n-1}))
+ \begin{align} Var(Z_n) &= \mu^2 Var(Z_{n-1}) + E[E(((Z_n-\mu Z_{n-1})^2 | Z_{n-1})]\\ &= \mu^2 Var(Z_{n-1}) + E((Z_n-\mu Z_{n-1})^2)\\ \end{align}

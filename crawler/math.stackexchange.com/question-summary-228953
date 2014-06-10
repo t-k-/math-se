@@ -1,0 +1,13 @@
+\displaystyle \sum_{n=0}^\infty \frac 1{n+1}
+\displaystyle \int_0^\infty \frac{ \sin^2 x} x \, dx = \sum_{n=0}^\infty\int_{n\pi}^{(n+1)\pi} \frac{ \sin^2 x} x \,dx
+t=x-n\pi
+\tag 1 \sum_{n=0}^\infty\int_0^\pi  \frac{\sin^2 t }{n\pi+t}dt  
+\tag 2\frac 1 \pi\sum_{n=0}^\infty\int_0^\pi \frac{\sin^2 t }{n+1} \, dt
+\tag 3 \frac 1 \pi \int_{n=0}^\pi \sin^2 t \;dt\cdot \sum_{n=0}^\infty \frac 1 {1+n}
+[n \pi, (n+1) \pi)
+n > 0
+\dfrac{\sin^2(x)}x \geq \dfrac{\sin^2(x)}{(n+1) \pi}
+\dfrac1x
+[n \pi, (n+1) \pi)
+\dfrac1x > \dfrac1{(n+1) \pi}
+\int_{n \pi}^{(n+1) \pi} \dfrac{\sin^2(x)}x dx > \int_{n \pi}^{(n+1) \pi} \dfrac{\sin^2(x)}{(n+1) \pi} dx = \dfrac1{n \pi} \dfrac{\pi}2 = \dfrac1{2(n+1)}

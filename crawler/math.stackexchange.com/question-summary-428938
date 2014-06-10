@@ -1,0 +1,40 @@
+T
+T
+[0,\infty)
+F(t)=P(T>t)
+T
+f
+\lambda
+t\geq 0
+ \lambda(t):=\lim_{h\to 0^+}\frac{P(t\leq T<t+h\mid T\geq t)}{h}=\frac{f(t)}{F(t)} 
+ F(t)=\exp\left(-\int_0^t\lambda(s)\,\mathrm ds\right),\quad t\geq 0. 
+T
+0\leq a_1<a_2<\cdots
+a_i
+ \lambda_i=P(T=a_i\mid T\geq a_i),\quad i=1,2,\ldots. 
+ F(t)=\prod_{j\mid a_j\leq t}(1-\lambda_j),\quad t\geq 0. 
+T
+\lambda_c(t)
+\lambda_1,\lambda_2,\ldots
+a_1<a_2<\cdots
+ F(t)=\exp\left(-\int_0^t\lambda_c(s)\,\mathrm ds\right)\prod_{j\mid a_j\leq t}(1-\lambda_j).\tag{1} 
+T
+T
+a_1<a_2<\cdots
+b_i\in (0,1)
+f_c
+\int_0^\infty f_c\,\mathrm d\lambda+\sum_{i=1}^\infty b_j=1
+T
+(1)
+ P_T(\mathrm dx)=f_c(x) \lambda(\mathrm dx)+\sum_{j=1}^\infty b_j \delta_{a_j}(\mathrm dx) 
+ P(T\in A)=\int_A f_c(x)\,\mathrm dx+\sum_{j\mid a_j\in A} b_j 
+ \lambda_c(t)=\frac{f_c(t)}{P(T\geq t)}=\frac{f_c(t)}{F(t)},\quad t\neq a_i, 
+ \lambda_i=P(T=a_i\mid T\geq a_i), 
+F(t) = \mathsf P(T>t) = 1-\mathsf P(T\leq t)
+[0,\infty)
+\lambda_c
+F
+\lambda_c
+t = a_j
+F(t-):=\lim_{s\uparrow t}F(s)
+   \lambda_j = \mathsf P(T = a_j\mid T\geq a_j) = \frac{F(a_j-) - F(a_j)}{F(a_j-)}\implies F(a_j) = F(a_j-)(1-\lambda_j) 

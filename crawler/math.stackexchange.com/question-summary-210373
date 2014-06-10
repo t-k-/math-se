@@ -1,0 +1,3 @@
+\frac{n!}{(k+1)!(n-(k+1))!}=\frac{n-k}{k+1}\frac{n!}{k!(n-k)!} \text{ for } k=0,1,\ldots,n-1
+\begin{align*} \frac{n-k}{k+1}\cdot\frac{n!}{k!(n-k)!}&=\frac{(n-k)n!}{(k+1)k!(n-k)!}\\ &=\frac{(n-k)n!}{(k+1)!(n-k)!}\quad\text{since}(k+1)!=(k+1)k!\\ &=\frac{\color{red}{(n-k)}n!}{(k+1)!\color{red}{(n-k)}(n-k-1)!}\quad\text{since}(n-k)!=(n-k)(n-k-1)!\\ &=\frac{n!}{(k+1)!(n-k-1)!}\\ &=\frac{n!}{(k+1)!\big(n-(k+1)\big)!} \end{align*}
+\frac{n!}{(k+1)!(n-(k+1))!}=\frac{n!}{(k+1)k!(n-k-1)!}=\frac{n!}{(k+1)k!\frac{(n-k)!}{n-k}}=\frac{n-k}{k+1}\frac{n!}{k!(n-k)!}

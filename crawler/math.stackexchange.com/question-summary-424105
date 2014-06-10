@@ -1,0 +1,31 @@
+\oint_C\frac{e^{z/2}}{1+e^z}dz = 2\pi
+\pi i
+2\pi
+f(i\pi)\cdot 2\pi i
+-2\pi
+i\pi
+ \operatorname{Res}\limits_{z=i\pi} \frac{e^{z/2}}{1+e^z} = \left. \frac{e^{z/2}}{e^z} \right|_{z=i\pi} = \frac{e^{i\pi/2}}{e^{i\pi}} = -i, 
+ \int_C \frac{e^{z/2}}{1+e^z}\,dz = 2\pi i \cdot (-i) = 2\pi. 
+f(z_0)=\frac1{2\pi i}\int\limits_\gamma \frac{f(z)}{z-z_0}dz
+\;f(z)\;
+\,\gamma\,
+\;\pi i\;
+e^z=-1-\frac{(z-\pi i)}{1!}-\frac{(z-\pi i)^2}{2!}-\ldots=-\sum_{k=0}^\infty\frac{(z-\pi i)^k}{k!}\implies
+1+e^z=-(z-\pi i)-\mathcal O((z-\pi i)^2)\implies\frac1{1+e^z}=-\frac1{z-\pi i}\frac1{1+\mathcal O(z-\pi i)}
+\,|z-\pi i|<1\;
+\frac1{1+\mathcal O(z-\pi i)}=1-\mathcal O(z-\pi i)+\left(\mathcal O(z-\pi i)\right)^2-\ldots
+\,C\,
+\,\pi i\,
+\oint\limits_C\frac{e^{z/2}}{1+e^z}dz=-\oint\limits_C\frac{e^{z/2}}{z-\pi i}dz=\left.-2\pi i\cdot e^{z/2}\right|_{z=\pi i}=-2\pi i\cdot i=2\pi
+\,f(z):=e^{z/2}\implies f(\pi i)=e^{\pi i/2}=i\;
+f(i\pi)
+ f(i\pi )= \frac{1}{2\pi i} \oint_C\frac{e^{z/2}\frac{(e^z+1)}{(z-i\pi)}}{(z-i\pi)}dz, 
+f(z)
+f(z)=\begin{cases} e^{z/2}\frac{(e^z+1)}{(z-i\pi)}, \, z\neq i\pi \\ -i,\,z=i\pi  \end{cases}.
+\lim_{z\to i\pi}\frac{(e^z+1)}{(z-i\pi)}=-1.
+\dfrac{e^{z/2}}{1+e^z}
+\pi i
+\pi i
+2\pi i(-i)=2\pi
+ \begin{align} \lim_{z\to\pi i}\frac{(z-\pi i)e^{z/2}}{1+e^z} &=e^{\pi i/2}\lim_{z\to\pi i}\frac{z-\pi i}{1+e^z}\\ &=i\lim_{z\to\pi i}\frac1{e^z}\\[6pt] &=-i \end{align} 
+ \oint_C\frac{e^{z/2}}{1+e^z}\,\mathrm{d}z=2\pi 

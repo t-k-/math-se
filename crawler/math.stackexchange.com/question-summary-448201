@@ -1,0 +1,29 @@
+y'(t) + \frac D M y(t) = f(t)
+D = 100kg/s
+M = 1000kg
+f(t) = Fu(t)
+y(0) = 20.8m/s
+F
+Fu(t)
+27.8m/s
+f(t) \longrightarrow {\frac 1M \over (s + \frac DM)}
+y'(t) + .1 y(t) = .001f(t)
+mu
+y(t) = .01 + 20.79 e^(-.1t)
+Fu(t)
+\tag 1 y'(t) + \frac D M y(t) = \dfrac{1}{M}f(t)
+(1)
+\tag 2 y'(t) + \dfrac{1}{10} y = \dfrac{F}{1000} u(t)
+(2)
+\mathcal{L}\left(y'(t) + \dfrac{1}{10} y = \dfrac{F}{1000} u(t)\right) = s y(s) - y(0) +  \dfrac{1}{10} y(s) = \dfrac{F}{1000 s}
+y(s)
+y(s)\left(s + \dfrac{1}{10}\right) = y(0) + \dfrac{F}{1000 s} = 20.8 + \dfrac{F}{1000 s}
+\tag 3 y(s) = \dfrac{20.8 + \dfrac{F}{1000 s}}{s + \dfrac{1}{10}} = \dfrac{0.01 (F+20800 s)}{s (10 s+1)} = \left(\dfrac{20.8-0.01F}{s+0.1} + \dfrac{0.01 F}{s}\right)
+(3)
+ \mathcal{L}^{-1}~(y(s)) = y(t) = \mathcal{L}^{-1}~\left(\dfrac{20.8-0.01F}{s+0.1} + \dfrac{0.01 F}{s}\right) = 0.01 \left(F-(F-2080) e^{-t/10}\right)
+y(t) = 0.01 \left(F-(F-2080) e^{-t/10}\right)
+F
+27.8~m/s
+t = 100
+y(100) = 0.01 \left(F-(F-2080) e^{-10}\right) = 27.8 \rightarrow F =  2780.03
+y(t) = 27.8003-7.0003 e^{-t/10}
