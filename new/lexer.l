@@ -7,6 +7,7 @@
 \n              { return '\n'; }
 
 "!"             { return yytext[0]; }
+yylval.s = tmp_str;
 "+"|"-"|"_"|"^" { return yytext[0]; }
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }

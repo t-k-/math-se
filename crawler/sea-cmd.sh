@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -P "(?<!\\\\)\\\\${1}[^a-z^A-Z]+" math.stackexchange.com/*
+find math.stackexchange.com -type f | xargs grep --color -P "(?<!\\\\)\\\\${1}[^a-z^A-Z]+"

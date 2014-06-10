@@ -3,6 +3,10 @@
 void yyerror(char *);
 %}
 
+%union {
+char str[64];
+}
+
 %token T_NEG T_SEP T_SUM_CLASS T_FUN_CLASS T_TIMES T_FRAC T_SQRT T_VA
 
 %left '+' '-'
@@ -15,12 +19,25 @@ void yyerror(char *);
 doc :
     | doc query;
 
-query : T_NEG '\n' 
+query : tex '\n' 
       | '\n'
       ;
 
+atom : T_VA
+     | '{' tex '}'
+     ;
+
+tex : atom
+    | tex '+' atom 
+    ;
+
+	
 %%
 /*
+sup : '^' atom;
+sub : '_' atom;
+
+
 tex : term 
     | tex '+' term 
     | tex '-' term 

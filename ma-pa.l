@@ -25,6 +25,10 @@ void mkstr(char *);
 		else
 			return ABS_L; 
                 }
+\\r[vV]ert      { return ABS_R; }
+\\l[vV]ert      { return ABS_L; }
+\\rangle        { return ABS_R; }      
+\\langle        { return ABS_L; }
 
 \\neg           { return NEG; }
 
