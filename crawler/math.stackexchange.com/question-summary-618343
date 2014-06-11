@@ -1,0 +1,39 @@
+ \Gamma\left(z\right) = \lim_{n\to \infty}\int_{0}^{n}t^{z - 1}\left(1 - {t \over n}\right)^{n}\,{\rm d}t \quad\mbox{for}\quad \Re z \gt 0 
+ {\rm e}^{-t/n} = 1 - {t \over n} + {t^{2} \over 2!\,n^{2}} - {t^{3} \over 3!\,n^{3}} + \cdots 
+ 0 \leq {\rm e}^{-t/n} - \left(1 - {t \over n}\right) \leq {t^{2} \over 2n^{2}} 
+\Gamma(z)=\int_0^\infty t^{z-1}\operatorname{e}^{-t}\operatorname{d}t\quad\text{for}\; \Re(z)>0.\tag 1
+ \Gamma(z)= \lim_{n\to \infty}\int_{0}^{n}t^{z - 1}\left(1 - {t \over n}\right)^{n}\operatorname{d}t \quad\mbox{for}\;\Re(z) > 0.\tag 2 
+0
+ \lim_{n\to \infty}\left[\int_0^\infty t^{z-1}\operatorname{e}^{-t}\operatorname{d}t-\int_{0}^{n}t^{z-1}\left(1 - {t \over n}\right)^{n}\operatorname{d}t\right]=\lim_{n\to \infty}\left[\int_{0}^{n}\left\{\operatorname{e}^{-t}-\left(1 - {t \over n}\right)^{n}\right\}t^{z-1}\operatorname{d}t+\int_n^\infty \operatorname{e}^{-t}t^{z-1}\operatorname{d}t\right] 
+ \lim_{n\to \infty}\int_n^\infty t^{z-1}\operatorname{e}^{-t}\operatorname{d}t=0 
+ \lim_{n\to \infty}\int_{0}^{n}\left\{\operatorname{e}^{-t}-\left(1 - {t \over n}\right)^{n}\right\}t^{z-1}\operatorname{d}t=0 
+0\le y< 1
+\operatorname{e}^{y}=1+y+\sum_{k=2}^\infty \frac{y^k}{k!}
+\frac{1}{1-y}=1+y+\sum_{k=2}^\infty y^k
+t/n
+y
+\left(1+\frac{t}{n}\right)^{n}\le \operatorname{e}^{t}
+ 1+y\le \operatorname{e}^{y}\le \frac{1}{1-y}. 
+ \left(1+\frac{t}{n}\right)^{-n}\ge \operatorname{e}^{-t} \ge \left(1-\frac{t}{n}\right)^{n} 
+  0\le \operatorname{e}^{-t} - \left(1-\frac{t}{n}\right)^{n} =\operatorname{e}^{-t}\left[1 - \operatorname{e}^{t}\left(1-\frac{t}{n}\right)^{n}\right] \le \operatorname{e}^{-t}\left[1 - \left(1-\frac{t^2}{n^2}\right)^{n}\right]\tag 3  
+0\le\alpha\le 1
+(1-\alpha)^n\ge 1-n\alpha
+n\alpha<1
+n\alpha\ge 1
+t^2/n^2
+\alpha
+|t^z|=t^x
+x
+z
+\int_{0}^{\infty}\operatorname{e}^{-t}t^{x+1}\operatorname{d}t
+\int_{0}^{n}\operatorname{e}^{-t}t^{x+1}\operatorname{d}t
+ 1 - \left(1-\frac{t^2}{n^2}\right)^{n}\le \frac{t^2}{n^2}\tag 4 
+ 0\le \operatorname{e}^{-t}-\left(1 - {t \over n}\right)^{n}\le \operatorname{e}^{-t}\frac{t^2}{n}\tag 5 
+ \left|\int_{0}^{n}\left\{\operatorname{e}^{-t}-\left(1 - {t \over n}\right)^{n}\right\}t^{z-1}\operatorname{d}t\right|\le \int_{0}^{n}\operatorname{e}^{-t}\frac{t^2}{n}t^{x-1}\operatorname{d}t\le \frac{1}{n}\int_{0}^{n}\operatorname{e}^{-t}t^{x+1}\operatorname{d}t. 
+ \lim_{n\to \infty}\int_{0}^{n}\left\{\operatorname{e}^{-t}-\left(1 - {t \over n}\right)^{n}\right\}t^{z-1}\operatorname{d}t=0 
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+{\rm B}
+\it Beta
+\ds{{\rm B}\pars{x,y} = \int_{0}^{1}t^{x - 1}\pars{1 - t}^{y - 1}\,\dd t}
+\ds{{\rm B}\pars{x,y} = {\Gamma\pars{x}\Gamma\pars{y} \over \Gamma\pars{x + y}}}
+\color{#0000ff}{\large% \lim_{n \to \infty}\int_{0}^{n}t^{z - 1}\pars{1 - {t \over n}}^{n}\,\dd t = \Gamma\pars{z}} 

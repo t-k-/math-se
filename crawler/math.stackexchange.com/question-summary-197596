@@ -1,0 +1,22 @@
+ \begin{align} F : C[-1,1] &\rightarrow \mathbb{R}\\ x &\mapsto x(0)\int_0^1 \sin\ x(t) \, dt. \end{align} 
+F(x)=G(x)\cdot H(x)
+F'(x)=G(x)\cdot H'(x)+H(x)\cdot G'(x)
+G
+H
+G
+G'(x)(h)=G(h)
+H
+x,h\in C([-1,1])
+ G:C([-1,1])\to\mathbb{R}:x\mapsto x(0)\\ H:C([-1,1])\to\mathbb{R}:x\mapsto \int_0^1\sin(x(t))dt 
+ \begin{align} H(x+h)-H(x) &=\int_0^1(\sin(x(t)+h(t))-\sin(x(t)))dt= \int_0^1(\cos(x(t))h(t)+o(h(t)))dt \\ &=\int_0^1\cos(x(t))h(t)+\int_0^1o(h(t))dt= \int_0^1\cos(x(t))h(t)dt+o(h) \end{align} 
+ H'(x)(h)=\int_0^1\cos(x(t))h(t)dt 
+ F'(x)(h)=h(0)\int_0^1\sin(x(t))dt+x(0)\int_0^1\cos(x(t))h(t)dt 
+a,\delta \in \mathbb{R}
+x, h \in C([-1,1])
+L_x: C([-1,1]) \to \mathbb{R},\ h\mapsto L_x[h]
+DF
+F
+DF(x)[h]=L_x[h]
+x, h \in C([-1,1])
+ \sin(a+\delta)=\sin a+\delta\cos a+o(\delta), 
+ |R(x,h)| \le |x(0)|o(|h|_\infty)+|h|_\infty[|h|_\infty+o(|h|_\infty)]=o(|h|_\infty). 

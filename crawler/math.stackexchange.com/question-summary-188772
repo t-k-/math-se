@@ -1,0 +1,6 @@
+X_t
+X_{t_a} = a
+X_{t_b} = b
+t_a,t_b,a,b > 0
+P [X_t = 0 \hspace{1 mm}for \hspace{1 mm}some \hspace{1 mm} t∈[t_a,t_b]|X_{t_a} = a, X_{t_b} = b], \quad t_a,t_b,a,b > 0.
+\mathbb{P}[\exists s \in [0,t]: B_s = -a|B_t=c] \stackrel{1}{=} \mathbb{P} \left[\sup_{s \leq t} B_s \geq a|B_t = -c \right] = \mathbb{E}(1_{[a,\infty)}(M_t)|B_t = -c) \\ \stackrel{3}{=} \exp \left(\frac{2}{t} \cdot a \cdot (-c-a) \right) \stackrel{c=b-a}{=} \exp \left(\frac{2}{t} \cdot a \cdot b \right)

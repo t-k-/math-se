@@ -1,0 +1,17 @@
+\lim_{x \to 0}  \frac{({a+x^m})^{\frac{1}{n}}-({a-x^m})^{\frac{1}{n}}}{x^m}=\frac{2}{n}a^{\frac{1}{n}-1}
+y=\frac {x^m}a,
+\lim_{x \to 0}  \frac{({a+x^m})^{\frac{1}{n}}-({a-x^m})^{\frac{1}{n}}}{x^m} 
+= a^{\frac1n}\lim_{y \to 0} \frac{(1+y)^{\frac{1}{n}}-(1-y)^{\frac{1}{n}}}{ay} 
+= a^{\frac1n-1}\lim_{y \to 0} \frac{1+\frac yn+O(y^2))-(1-\frac yn+O(y^2)}y \text{ (using Binomial Expansion)}
+=  a^{\frac1n-1} \lim_{y \to 0}\frac {\frac {2y}n+O(y^2)}y
+=\frac{2 a^{\frac1n-1}}n \text{ as }y\ne0 \text{ as }y\to0
+t=x^m
+(a-t)^{1/n}
+-\frac{1}{n}(a-t)^{1-1/n}
+(a+y)^{\frac{1}{n}}
+\displaystyle\frac{({a+x^m})^{\frac{1}{n}}-({a-x^m})^{\frac{1}{n}}}{x^m}=2\frac{1}{n}(a+\epsilon)^{(1/n-1)}
+\epsilon \in (-x^m,x^m)
+\displaystyle\lim_{x \to 0} \frac{({a+x^m})^{\frac{1}{n}}-({a-x^m})^{\frac{1}{n}}}{x^m}=\lim_{x \to 0} \frac{2}{n}(a+\epsilon)^{(1/n-1)}
+\epsilon \in (-x^m,x^m)
+\displaystyle\lim_{x \to 0} \frac{2}{n}(a+\epsilon)^{(1/n-1)}=\frac{2}{n}(a)^{(1/n-1)}
+-x^{m}<\epsilon <x^m

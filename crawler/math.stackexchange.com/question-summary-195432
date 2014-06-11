@@ -1,0 +1,32 @@
+\int_a^bx^\alpha \exp\left[-\left(\frac{x-\delta}{\sigma}\right)^\alpha\right]dx
+0<a<b
+\delta\leq a
+\alpha>0
+\alpha=1
+\delta=0
+\alpha
+1
+\alpha=1
+\int_a^bxe^{-\frac{x-\delta}{\sigma}}~dx
+\alpha
+\int x^\alpha e^{-\left(\frac{x-\delta}{\sigma}\right)^\alpha}~dx
+u=\dfrac{x-\delta}{\sigma}
+x=\sigma u+\delta
+dx=\sigma~du
+\therefore\int x^\alpha e^{-\left(\frac{x-\delta}{\sigma}\right)^\alpha}~dx=\int\sigma(\sigma u+\delta)^\alpha e^{-u^\alpha}~du
+\delta=0
+\int\sigma^{\alpha+1}u^\alpha e^{-u^\alpha}~du
+v=u^\alpha
+u=v^{\frac{1}{\alpha}}
+du=\dfrac{v^{\frac{1}{\alpha}-1}}{\alpha}dv
+\therefore\int\sigma^{\alpha+1}u^\alpha e^{-u^\alpha}~du=\int\dfrac{\sigma^{\alpha+1}v^{\frac{1}{\alpha}}e^{-v}}{\alpha}dv=\dfrac{\sigma^{\alpha+1}}{\alpha}\gamma\left({\dfrac{1}{\alpha}+1},v\right)+C=\dfrac{\sigma^{\alpha+1}}{\alpha}\gamma\left({\dfrac{1}{\alpha}+1},u^\alpha\right)+C=\dfrac{\sigma^{\alpha+1}}{\alpha}\gamma\left({\dfrac{1}{\alpha}+1},\left(\dfrac{x}{\sigma}\right)^\alpha\right)+C
+\int_a^bx^\alpha e^{-\left(\frac{x}{\sigma}\right)^\alpha}~dx=\dfrac{\sigma^{\alpha+1}}{\alpha}\left(\gamma\left({\dfrac{1}{\alpha}+1},\left(\dfrac{b}{\sigma}\right)^\alpha\right)-\gamma\left({\dfrac{1}{\alpha}+1},\left(\dfrac{a}{\sigma}\right)^\alpha\right)\right)
+\delta\neq0
+\alpha
+\int\sigma(\sigma u+\delta)^\alpha e^{-u^\alpha}~du=\int\sum\limits_{n=0}^\alpha C_n^\alpha\delta^{\alpha-n}\sigma^{n+1}u^ne^{-u^\alpha}~du
+\int u^ne^{-u^\alpha}~du
+v=u^\alpha
+u=v^{\frac{1}{\alpha}}
+du=\dfrac{v^{\frac{1}{\alpha}-1}}{\alpha}dv
+\therefore\int u^ne^{-u^\alpha}~du=\int\dfrac{v^{\frac{n+1}{\alpha}-1}e^{-v}}{\alpha}dv=\dfrac{1}{\alpha}\gamma\left({\dfrac{n+1}{\alpha}},v\right)+C=\dfrac{1}{\alpha}\gamma\left({\dfrac{n+1}{\alpha}},u^\alpha\right)+C=\dfrac{1}{\alpha}\gamma\left({\dfrac{n+1}{\alpha}},\left(\dfrac{x-\delta}{\sigma}\right)^\alpha\right)+C
+\int_a^bx^\alpha e^{-\left(\frac{x-\delta}{\sigma}\right)^\alpha}~dx=\sum\limits_{n=0}^\alpha\dfrac{C_n^\alpha\delta^{\alpha-n}\sigma^{n+1}}{\alpha}\left(\gamma\left({\dfrac{n+1}{\alpha}},\left(\dfrac{b-\delta}{\sigma}\right)^\alpha\right)-\gamma\left({\dfrac{n+1}{\alpha}},\left(\dfrac{a-\delta}{\sigma}\right)^\alpha\right)\right)

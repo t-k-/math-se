@@ -1,0 +1,17 @@
+\tilde \quad x^3 \frac{d}{dx}f(x)
+f(x) = K_1 HeunC(4, -\frac{1}{2}, -\frac{1}{2}, -2, \frac{3}{8}-C, x^2)
+K_1 \in \mathbb{R}
+C_n \tilde \quad n^2
+f(x) = 1
+C=-1
+ \left( {x}^{2}-1 \right) {\frac {{\rm d}^{2}}{{\rm d}{x}^{2}}}f  \left( x \right) +x \left( {\frac {\rm d}{{\rm d}x}}f \left( x  \right)  \right)  \left( 8\,{x}^{2}-7 \right) -4\, \left( C+1  \right) f \left( x \right) =0. 
+[-1,1]
+f(-1) = f(1)
+f'(-1) = f'(1)
+u=x^2
+\dfrac{df}{dx}=\dfrac{df}{du}\dfrac{du}{dx}=2x\dfrac{df}{du}
+\dfrac{d^2f}{dx^2}=\dfrac{d}{dx}\left(2x\dfrac{df}{du}\right)=2x\dfrac{d}{dx}\left(\dfrac{df}{du}\right)+2\dfrac{df}{du}=2x\dfrac{d}{du}\left(\dfrac{df}{du}\right)\dfrac{du}{dx}+2\dfrac{df}{du}=2x\dfrac{d^2f}{du^2}2x+2\dfrac{df}{du}=4x^2\dfrac{d^2f}{du^2}+2\dfrac{df}{du}
+\therefore(x^2-1)\left(4x^2\dfrac{d^2f}{du^2}+2\dfrac{df}{du}\right)+2x^2(8x^2-7)\dfrac{df}{du}-4(C+1)f=0
+4x^2(x^2-1)\dfrac{d^2f}{du^2}+2(8x^4-6x^2-1)\dfrac{df}{du}-4(C+1)f=0
+4u(u-1)\dfrac{d^2f}{du^2}+2(8u^2-6u-1)\dfrac{df}{du}-4(C+1)f=0
+u(u-1)\dfrac{d^2f}{du^2}+\left(4u^2-3u-\dfrac{1}{2}\right)\dfrac{df}{du}-(C+1)f=0

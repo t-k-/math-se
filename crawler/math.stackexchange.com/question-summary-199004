@@ -1,0 +1,50 @@
+ (1+i)^n 
+ n \in \mathbb{Z}
+n=1,2,\ldots,8
+a+bi
+(a+bi)=\sqrt{a^2+b^2} \cdot \left( \frac{a}{\sqrt{a^2+b^2}}+\frac{b}{\sqrt{a^2+b^2}}\cdot i\right)
+\frac{a}{\sqrt{a^2+b^2}} = \cos(\phi)
+\frac{b}{\sqrt{a^2+b^2}} = \sin(\phi)
+\phi
+\arctan{\frac{b}{a}} 
+(a+bi)=\sqrt{a^2+b^2} \cdot ( \cos(\phi)+\sin(\phi)\cdot i)
+n
+a=1
+b=1
+(a+bi)^n=(\sqrt{a^2+b^2})^n \cdot ( \cos(n\phi)+\sin(n\phi)\cdot i)
+(1+i)^n=(\sqrt{2})^n \cdot ( \cos(n\cdot\frac{\pi}{4})+\sin(n\cdot\frac{\pi}{4})\cdot i)
+\phi
+\frac{\pi}{4}
+(1+i)^2 = 2i.
+(1+i)^{2m} = (2i)^m = 2^mi^m
+1+i
+1+i
+(1+i)^{2m+1} = (1+i)^{2m}(1+i) = 2^mi^m(i+1)
+m = \bigl\lfloor \frac n2 \bigr\rfloor
+i^m
+n
+m=n/2 = 4k+j
+0\le j<3
+n=8k+2j
+\begin{array}{ll} j & (1+i)^{n=8k+2j} \\ \hline 0 & \hphantom{-}2^m   \\ 1 & \hphantom{-}2^mi \\ 2 & -2^m \\ 3 & -2^mi \end{array}
+n
+m=(n-1)/2 = 4k+j
+0\le j<3
+n=8k+2j+1
+\begin{array}{ll} j & (1+i)^{n=8k+2j+1} \\ \hline 0 & \hphantom{-}2^m+2^mi   \\ 1 & -2^m+2^mi \\ 2 & -2^m-2^mi \\ 3 & \hphantom{-}2^m-2^mi \end{array}
+n=8k+j'
+0\le j'\lt 8
+\begin{array}{lrl} j' & (1+i)^{n=8k+j'} \\ \hline 0 & \hphantom{-}2^m &  \\ 1 & \hphantom{-}2^m&+2^mi   \\ 2 & &\hphantom{-}2^mi \\ 3 & -2^m&+2^mi \\ 4 & -2^m& \\ 5 & -2^m&-2^mi \\ 6 & &-2^mi \\ 7 & \hphantom{-}2^m&-2^mi \end{array}
+m=\bigl\lfloor \frac n2 \bigr\rfloor
+\left(\sqrt{2}\right)^n
+8
+n=k
+n=k+8
+n=0,1,...,7
+(1+i)^n=\left(\sqrt{2}\right)^n  \left(\cos\left(n\frac{\pi}{4}\right)+i\sin\left(n\frac{\pi}{4}\right)\right)
+(1+i)^n=\left(\sqrt{2}\right)^n\left\{ \begin{array}{cc} 1 & n\equiv0(\mod8)\\ \vdots & \end{array}\right.
+\begin{align*} (1+i)^n&=\left(\sqrt{2}\right)^n\left(\cos\frac{n\pi}4+i\sin\frac{n\pi}4\right)\\ &=2^{n/2}\left(\cos\frac{n\pi}4+i\sin\frac{n\pi}4\right)\\ &=\begin{cases} 2^{n/2},&\text{if }n\equiv 0\pmod 8\\ 2^{n/2}\left(\frac{\sqrt2}2+\frac{\sqrt2}2i\right),&\text{if }n\equiv 1\pmod 8\\ 2^{n/2}i,&\text{if }n\equiv 2\pmod 8\\ 2^{n/2}\left(\frac{\sqrt2}2-\frac{\sqrt2}2i\right),&\text{if }n\equiv 3\pmod 8\\ -2^{n/2},&\text{if }n\equiv 4\pmod 8\\ -2^{n/2}\left(\frac{\sqrt2}2+\frac{\sqrt2}2i\right),&\text{if }n\equiv 5\pmod 8\\ -2^{n/2}i,&\text{if }n\equiv 6\pmod 8\\ -2^{n/2}\left(\frac{\sqrt2}2-\frac{\sqrt2}2i\right),&\text{if }n\equiv 7\pmod 8\;. \end{cases}\\ \end{align*}
+1+i=\sqrt2 e^{i\pi/4}
+(1+i)^n=2^{n/2}e^{in\pi/4}\;.
+\cos(n\theta)=\cos^n(\theta)-\frac{n(n-1)}{2!}\cos^{n-2}(\theta)\sin^2(\theta)+\frac{n(n-1)(n-2)(n-3)}{4!}\cos^{n-4}(\theta)\sin^4(\theta)-...
+\sin(n\theta)=n\cos^{n-1}(\theta)\sin(\theta)-\frac{n(n-1)(n-2)}{3!}\cos^{n-3}(\theta)\sin^3(\theta)-...

@@ -1,0 +1,32 @@
+\Omega,\mathcal{F}_t,\mathcal{F},\mathbb{P}
+X
+\Omega
+E
+X_t = \mathbb{E}[ X | \mathcal{F}_t]
+\mathcal{F_t}
+X_t
+\mathbb{P}
+X_t = \lim_{s\rightarrow t} X_s
+(X_t,\mathcal{F}_t)_{t \geq 0}
+t>0
+Y \in L^1
+X_s = \mathbb{E}(X \mid \mathcal{F}_s) \to Y, \qquad s \uparrow t
+L^1
+\mathbb{E}(Y \mid \mathcal{F}_s) = X_s = \mathbb{E}(X_t \mid \mathcal{F}_s), \qquad s<t
+\int_F Y \, d\mathbb{P} = \int_F X_t \, d\mathbb{P}
+F \in \mathcal{F}_s
+\int_F Y \, d\mathbb{P} = \int_F X_t \, d\mathbb{P}
+F \in \sigma(F_s; s <t)=: \mathcal{F}_{t-}
+Y
+\mathcal{F}_{t-}
+Y = \mathbb{E}(X_t \mid \mathcal{F}_{t-})
+(X_t)_{t \geq 0}
+X_t \stackrel{!}{=} Y=\mathbb{E}(X_t \mid \mathcal{F}_{t-}) = \mathbb{E}(X \mid \mathcal{F}_{t-}) \tag{1}
+X_t \stackrel{!}{=} \mathbb{E}(X \mid \mathcal{F}_{t+}) \tag{2}
+\mathcal{F}_{t+} := \bigcap_{s>t} \mathcal{F}_s
+(X_t)_{t \geq 0}
+(X_t)_{t \geq 0}
+(1)
+(2)
+\mathcal{F}_{t-} = \mathcal{F}_t = \mathcal{F}_{t+}
+t \geq 0

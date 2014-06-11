@@ -1,0 +1,26 @@
+D=\{x: [0,1]\rightarrow\mathbb{R}| \text{x is right-continuous with left limits(cadlag in French)}\}
+D
+x, y\in D
+d(x,y)=\inf_{\lambda\in\Lambda}\{\max\{||\lambda-Id||, ||x\lambda-y||\}\}
+\Lambda
+\lambda
+[0,1]
+\lambda(0)=0
+\lambda(1)=1
+||\cdot||
+x\lambda
+x
+\lambda
+\omega_x(\delta)=\sup_{t\in[0,1-\delta]}\omega_x([t,t+\delta]),\ \ \omega_x([t,t+\delta])=\sup_{s,s'\in[t,t+\delta]}|x(s)-x(s')|
+||x-y||\leq d(x,y)+\omega_x(d(x,y))\   \ (\ast)
+\epsilon>0
+\lambda\in\Lambda
+||x\lambda-y||<d(x,y)+\epsilon,\ \ ||\lambda-Id||<d(x,y)+\epsilon
+t\in[0,1]
+|x(t)-y(t)|\leq |x(t)-x(\lambda(t))|+|x(\lambda(t))-y(t)|\leq \omega_x(||\lambda-Id||)+||x\lambda-y||\leq \omega_x(d(x,y)+\epsilon)+d(x,y)+\epsilon
+\epsilon
+0
+|x(t)-y(t)|\leq\lim_{\epsilon\rightarrow 0}\omega_x(d(x,y)+\epsilon)+d(x,y)
+(\ast)
+\omega_x(\delta)
+\delta

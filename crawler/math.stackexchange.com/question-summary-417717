@@ -1,0 +1,14 @@
+y=e^{\frac{-0.01}{1-|x|^2}}
+x-y
+\delta
+ \theta_\delta(x) = \frac 12 \left[1 + \tanh \left ( \frac x \delta \right ) \right ] 
+x \in [a,b]
+ \theta_{[a,b]} = \theta(x-a)-\theta(x-b) 
+ \theta_{\delta, [a,b]} = \theta_\delta(x-a)- \theta_\delta (x-b) = \frac 12 \left [ \tanh \left (\frac {x-a}\delta \right ) - \tanh \left (\frac {x-b}\delta \right )\right ] 
+D
+ \theta(\mathbf x) = \left \{ \begin{array}{cl} 1, & \mathbf x \in D \\ 0, & \mathbf x \notin D \end{array} \right . 
+d(\mathbf x)
+ \theta_\delta(\mathbf x) = \frac 12 \left \{ 1 + \tanh \left[ \frac {d(\mathbf x)} \delta \right ] \right \} 
+ d(x,y) = \left \{ \begin{array}{ll} \text{negative}, & (x,y) \notin D \\ 0, & (x,y) \in \delta D \\ \text{positive}, & (x, y) \in D \end{array}\right . 
+ D = \left \{ (x, y) \left |(x-a)^2 + (y-b)^2 = R^2 \right .\right \} 
+ d(x,y) = R - \sqrt{(x-a)^2+(y-b)^2} 

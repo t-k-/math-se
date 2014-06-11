@@ -1,0 +1,114 @@
+ \displaystyle \lim_{n \rightarrow \infty} \left( 1 + \frac{1}{n} \right)^{n} = e 
+ \lim_{n \rightarrow \infty} \left( 1 + \frac{r}{n} \right)^{n} = e^{r}? 
+  \lim_{n\to\infty}\left(1+\frac rn\right)^n=\lim_{n\to\infty}\left(\left(1+\frac rn\right)^{n/r}\right)^r =\left(\lim_{n/r\to\infty}\left(1+\frac rn\right)^{n/r}\right)^r=e^r 
+r>0
+n=mr
+m\to\infty 
+n\to\infty 
+  \lim_{n\to\infty}\left(1+\frac rn\right)^n= \lim_{m\to\infty}\left(1+\frac {r}{rm}\right)^{rm}= \left(\lim_{m\to\infty}\left(1+\frac 1m\right)^m\right)^r=e^r 
+ e^k = \prod_{i=1}^k \left[ \lim_{n\rightarrow \infty}(1+1/n)^n \right] = \lim_{n\rightarrow \infty} \prod_{i=1}^k \left[ (1+1/n)^n \right] = \lim_{n\rightarrow \infty} \left[ \prod_{i=1}^k  (1+1/n) \right]^n 
+\prod_{i=1}^k  (1+1/n) = (1+1/n)^k = \sum_{p=0}^k {k\choose p}\frac{1}{n^p} = 1+\frac{k}{n}+O(1/n^2) = (1+k/n)\left[1+O\left(\frac{1}{n^2(1+k/n)}\right)\right] 
+ 1/n^2 \geq 1/[n^2(1+k/n)]
+O(1/[n^2(1+k/n)])
+O(1/n^2)
+(1+1/n)^k = (1+k/n)\left[1+O\left(1/n^2\right)\right]
+n
+ (1+1/n)^{nk} = (1+k/n)^n\left[1+O\left(1/n^2\right)\right]^n = (1+k/n)^n \left[1+O\left(1/n\right)\right] 
+ \Rightarrow \vert (1+1/n)^{nk} - (1+k/n)^n \vert  = O(1/n) 
+(1+1/n)^{nk}
+(1+k/n)^n
+n\rightarrow \infty
+\boxed{ e^k = \lim_{n\rightarrow \infty} (1+1/n)^{nk} = \lim_{n\rightarrow \infty} (1+k/n)^n} 
+e^{p/q}
+q
+e^p
+(1+p/qn)^n\rightarrow e^{p/q}
+n\rightarrow \infty
+q
+e^p
+ (1+p/nq)^{nq} = \left( 1+ p/n + \sum_{i=2}^q {q\choose i } \frac{p^i}{(nq)^i}\right)^n = \left(1+p/n + O\left( 1/n^2 \right)\right)^n = (1+p/n)^n\left(1+O\left(1/n^2\right)\right)^n = (1+p/n)^n \left(1+O\left(1/n\right) \right)
+ \vert (1+p/nq)^{nq} - (1+p/n)^n \vert = O(1/n)
+(1+p/nq)^n
+L
+L^q=e^p
+L
+q
+e^p
+e^{p/q}
+ \boxed{(1+p/nq)^n \rightarrow e^{p/q}} 
+r
+(1-r/n)^n\rightarrow 1/e^r
+ \left( \lim_{n\rightarrow \infty} (1-r/n)^n \right) \left( \lim_{n\rightarrow \infty} (1+r/n)^n \right) = \lim_{n\rightarrow \infty} \left[ (1-r/n) (1+r/n)\right]^n = \lim_{n\rightarrow \infty} \left[ 1-r^2/n^2\right]^n = \lim_{n\rightarrow \infty} \left[ 1-O(1/n) \right] = 1  
+(1-r/n)^n
+e^r
+e^{-r}
+ \boxed{(1-r/n)^n \rightarrow e^{-r}}
+e^r= \lim_{n\rightarrow \infty} (1+r/n)^n
+x
+e^x
+ e^x = \sup \lbrace e^r \mid r\in Q, r < x \rbrace 
+(1+x/n)^n = L
+r
+x
+(1+r/n) < (1+x/n)
+(1+r/n)^n < (1+x/n)^n
+n\rightarrow \infty
+e^r \leq L 
+L
+e
+L
+L
+e^r
+L
+r
+x
+r<x
+\vert x-r\vert < \delta 
+ \vert (1+x/n)^n - (1+r/n)^n \vert = \vert 1+x/n-1-r/n \vert \vert \sum_{i=1}^{n} \left[(1+x/n)^{n-i}(1+r/n)^{i-1} \right] \vert  
+ \leq \frac{\vert x-r \vert}{n}  \sum_{i=1}^{n} \vert[(1+x/n)^{n-1} \vert \leq \frac{\delta}{n} n \vert (1+x/n)^{n-1} \vert = \delta (1+x/n)^{n-1}
+n\rightarrow \infty
+\vert e^r - L \vert \leq \delta L
+e^r
+\epsilon >0
+L
+r
+\delta = \epsilon L
+x
+\alpha<L
+\alpha < e^r <L
+L
+e^r
+r<x
+e^x
+ \boxed{ (1+x/n)^n \rightarrow e^x } 
+r
+r
+w\gt 0
+n\ne w
+n\to\infty
+r
+\lim_{n\to\infty}\left(1-\frac{w}{n}\right)^n,
+\left(1-\frac{w}{n}\right)^n=\frac{1}{\left(1+\frac{w}{n-w}\right)^n}.
+\left(1+\frac{w}{n-w}\right)^n =\left(\left(1+\frac{w}{n-w}\right)^{n-w}\right)^{n/(n-w)}.
+r
+n
+n
+r
+x
+F(0) = 1
+F(1) = e
+e
+F(x) = \lim_{n \to \infty}\left(1 + \frac{x}{n}\right)^{n}
+F(x)
+x
+x = 0, 1
+F(x, n) = (1 + (x/n))^{n}
+x > 0
+F(x)
+n \to \infty
+x = -y
+G(y, n) = (1 - (y/n))^{-n}
+L
+G(y, n) =  1/F(x, n)
+F(x, n)
+1/L

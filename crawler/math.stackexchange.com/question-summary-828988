@@ -1,0 +1,10 @@
+n
+1,2,3,...
+\int_0^\infty(\ln x)^n dx
+y=ln(x)
+\int_0^{\infty}\ln(x)^ndx
+n\geq0
+\int_0^{\infty}\ln(x)^ndx=\int_{-\infty}^{\infty}y^ne^ydy=\int_{-\infty}^0y^ne^ydy+\int_0^{\infty}y^n e^ydy 
+\int_{-\infty}^0y^ne^ydy=\int^{\infty}_0(-y)^ne^{-y}dy=(-1)^n\int^{\infty}_0y^ne^{-y}dy=(-1)^nn!
+ \int_0^{\infty}y^n e^ydy=\lim_{y\rightarrow \infty}n!(e^y-1)
+\int(\ln x)^n =x(\ln x)^n-n\int(\ln x)^{n-1}dx

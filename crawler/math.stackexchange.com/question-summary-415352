@@ -1,0 +1,9 @@
+P(X> \frac n2+t)\le e^{\frac {-2t^2}n}
+R_n\sim Bin(n, \frac 12) 
+L_n=n-R_n
+S_n=2R_n -n 
+\theta > 0
+E(e^{\theta S_n})
+\theta > 0
+ P(S_n \geq t) = P(e^{\theta S_n} \geq e^{\theta t}) \leq e^{-\theta t}E(e^{\theta S_n}) 
+P(|S_n| \geq t) = P(S_n \geq t) + P(S_n \leq -t) = 2P(S_n \geq t)

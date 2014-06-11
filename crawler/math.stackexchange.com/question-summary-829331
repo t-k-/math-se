@@ -1,0 +1,17 @@
+y^{[n]} = a_0(x) + a_1(x)y + a_2(x)y' + a_3(x)y'' \ ... \ + a_{n-1}(x)y^{[n-1]}
+L = [y, \ y', \ y'', \ ... \ y^{[n-1]}]^T 
+ B = [0,0,.... 0, a_0(x)]^T
+ L' = AL + B
+ L' - AL = B
+ qL' - qAL = qB
+(qL)' = qL' - qAL
+q = e^A
+ L = e^{-A(x)}\int{e^{A(x)}B(x) dx}
+ y[x + n] = a_0(x) + a_1(x)y + a_2(x)y[x + 1] ... a_{n-1}(x)y[x + n - 1] 
+Qf = F(x + 1) - F(x)
+Q^{-1}f
+Q^{[n]}y = b_0(x) + b_1(x)y \ ...  + b_{n-1}(x)Q^{[n-1]}y 
+L = [y, \ Qy, \ Q^2y,\ ... \ Q^{[n-1]}y] 
+ QL = AL + B
+Q[2^{f(x)}] = (2^{Qf} - 1)2^{f(x)}
+ L = \frac{Q^{-1}(2^{Q^{-1}(\log_2(I_n - A))}B)}{2^{Q^{-1}(\log_2(I_n - A))}} 

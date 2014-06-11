@@ -1,0 +1,8 @@
+W_t
+ M_t = \max_{o<s<t} W_s 
+ P[M_t >a  \mid  W_t=M_t]= \exp(-a^2/2t) \quad;\quad a>0 
+(M_t, M_t-B_t)
+y>0
+      f_{(M_t, M_t-B_t)}(x,y) = \sqrt{\frac{2}{\pi}} \frac{x+y}{t^{3/2}} \exp\left(-\frac{(x+y)^2}{2t} \right) [ y>0, x > 0 ] 
+    f_{M_t|M_t-B_t}(x|y) = \frac{f_{M_t,M_t-B_t}(x,y)}{f_{M_t-B_t}(y)}= \frac{x+y}{t} \exp\left(-\frac{x(x+2y)}{t} \right) [x >0] 
+   \mathbb{P}\left(M_t > a |B_t=M_t\right) = \mathbb{P}\left(M_t > a |M_t - B_t=0\right) = \lim_{y \to 0^+} \int_{a}^\infty f_{M_t|M_t-B_t}(x,y) \mathrm{d}x = \lim_{y \to 0^+} \exp\left(-\frac{a(a+2y)}{2t} \right) = \mathrm{e}^{-\frac{a^2}{2t}}  

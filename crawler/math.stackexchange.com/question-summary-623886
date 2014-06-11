@@ -1,0 +1,16 @@
+f(x)\gt0(x\geqslant0)
+\{a_{n}\},\{b_{n}\},\{c_{n}\}
+a_{n}\geqslant 0,b_{n}\geqslant 0,c_{n}\geqslant 0
+a_{n+1}\leqslant a_{n}-b_{n}f(a_{n})+c_{n}a_{n},\sum_{b=1}^{\infty}b_{n}=\infty,\sum_{n=1}^{\infty}c_{n}\lt\infty
+\lim_{n\to\infty}a_{n}=0
+a_{n+1}-a_{n}\leqslant -b_{n}f(a_{n})+c_{n}a_{n}
+a_{n}-a_{1}\leqslant -(b_{1}f(a_{1})+b_{2}f(a_{2})+\cdots+b_{n-1}f(a_{n-1}))+c_{1}a_{1}+c_{2}a_{2}+\cdots+c_{n-1}a_{n-1}
+x_n=a_n/d_n
+1\le d_n=(1+c_1)...(1+c_{n-1})\le d_*<\infty
+x_{n+1}\le x_n-b_n\frac{f(d_nx_n)}{d_{n+1}}\le x_n-b_n\frac{f(x_n)}{d_*}.
+a_{n+1}\le (1+c_n)a_n-b_nf(a_n)
+d_{n+1}
+\frac{(1+c_n)a_n}{d_{n+1}}=\frac{a_n}{d_n}=x_n
+d_n
+d_n\le e^{c_1+\dots+c_{n-1}}\le\exp\left(\sum_{k=1}^\infty c_n\right)<\infty,
+d_*=\lim_{n\to\infty}d_n=\sup_{n\to\infty}d_n

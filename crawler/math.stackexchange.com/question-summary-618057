@@ -1,0 +1,16 @@
+X_i=\nu_i+\frac{m-i}{m}X_{i+1}+\frac{i}{m}X_{i-1},\quad 1\le i\le m
+X_0=X_{m+1}=0
+X_i
+v_i
+i
+m
+X
+X=(\begin{array}{cccc}X_0&X_1&\cdots&X_{m+1}\end{array})^T
+v
+v=(\begin{array}{cccc}v_1&v_2&\cdots&v_{m}\end{array})^T
+MX=v
+X=M^{-1}v
+M
+m\times (m+2)
+\left( \begin{array}{ccc} 1 & -\frac{m-1}{m} & 0 & 0 & 0 & 0 & \cdots\\ -\frac{2}{m} & 1 & -\frac{m-2}{m} & 0 & 0 & 0 & \cdots\\ 0 & -\frac{3}{m} & 1 & -\frac{m-3}{m}  & 0 & 0& \cdots\\ 0 & 0 & -\frac{4}{m} & 1 & -\frac{m-4}{m}  & 0 & \cdots\\ \cdots& \cdots& \cdots& \cdots& \cdots& \cdots& \cdots\end{array} \right)
+-\frac{i}{m}X_{i-1}+X_i-\frac{m-i}{m}X_{i+1}=v_i,~~~1\leq i\leq m

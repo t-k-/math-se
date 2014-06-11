@@ -1,0 +1,73 @@
+u_x = p, u_y = q
+u_xu_y = xy \mbox{ with } u(0,y)=y+1
+\frac{dx}{dt} = q, \frac{dy}{dt} = p, \frac{dp}{dt} = y, \frac{dq}{dt} = x, \frac{du}{dt} = 2pq
+t=0
+x=0
+y=s
+u=s+1
+\frac{du}{ds}=\frac{du}{dx}\frac{dx}{ds}+\frac{du}{dy}\frac{dy}{ds}
+1=p\cdot 0+q\cdot 1
+q=1
+pq=xy
+p=0
+x''=x
+y''=y
+x(t)=c_1 e^{t}+c_2 e^{-t}
+y(t)=c_3 e^{t}+c_4 e^{-t}
+q(t)=c_1 e^{t}-c_2 e^{-t}
+p(t)=c_3 e^{t}+c_4 e^{-t}
+c_1=\frac{1}{2},c_2=-\frac{1}{2},c_3=c_4=\frac{1}{2}s
+u'=2pq=2s\cdot \sinh(t)\cosh(t)
+u(t)=s\cdot \cosh(t)^2+c
+u(0)=s+1
+c=1
+x
+y
+\begin{cases}p=x^2\\q=y^2\end{cases}
+\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial x}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial x}=2x\dfrac{\partial u}{\partial p}
+\dfrac{\partial u}{\partial y}=\dfrac{\partial u}{\partial p}\dfrac{\partial p}{\partial y}+\dfrac{\partial u}{\partial q}\dfrac{\partial q}{\partial y}=2y\dfrac{\partial u}{\partial q}
+\therefore2xu_p2yu_q=xy
+u(0,q)=\pm\sqrt q+1
+u_pu_q=\dfrac{1}{4}
+u(0,q)=\pm\sqrt q+1
+u_p-\dfrac{1}{4u_q}=0
+u(0,q)=\pm\sqrt q+1
+u_{pq}+\dfrac{u_{qq}}{4u_q^2}=0
+u(0,q)=\pm\sqrt q+1
+v=u_q
+v_p+\dfrac{v_q}{4v^2}=0
+v(0,q)=\pm\dfrac{1}{2\sqrt q}
+\dfrac{dp}{dt}=1
+p(0)=0
+p=t
+\dfrac{dv}{dt}=0
+v(0)=v_0
+v=v_0
+\dfrac{dq}{dt}=\dfrac{1}{4v^2}=\dfrac{1}{4v_0^2}
+q(0)=f(v_0)
+q=\dfrac{t}{4v_0^2}+f(v_0)=\dfrac{p}{4v^2}+f(v)
+v=F\left(q-\dfrac{p}{4v^2}\right)
+v(0,q)=\pm\dfrac{1}{2\sqrt q}
+F(q)=\pm\dfrac{1}{2\sqrt q}
+\therefore v=\pm\dfrac{1}{2\sqrt{q-\dfrac{p}{4v^2}}}
+v^2=\dfrac{1}{4\left(q-\dfrac{p}{4v^2}\right)}
+v^2=\dfrac{v^2}{4qv^2-p}
+4qv^4-pv^2=v^2
+4qv^4-(p+1)v^2=0
+(4qv^2-(p+1))v^2=0
+4qv^2-(p+1)=0
+v^2=0
+v^2=\dfrac{p+1}{4q}
+v=\pm\dfrac{\sqrt{p+1}}{2\sqrt q}
+u_q=\pm\dfrac{\sqrt{p+1}}{2\sqrt q}
+u(p,q)=\pm\sqrt{(p+1)q}+g(p)
+u_p=\pm\dfrac{\sqrt q}{2\sqrt{p+1}}+g_p(p)
+\therefore\left(\pm\dfrac{\sqrt q}{2\sqrt{p+1}}+g_p(p)\right)\left(\pm\dfrac{\sqrt{p+1}}{2\sqrt q}\right)=\dfrac{1}{4}
+\dfrac{1}{4}\pm\dfrac{\sqrt{p+1}}{2\sqrt q}g_p(p)=\dfrac{1}{4}
+g_p(p)=0
+g(p)=C
+\therefore u(p,q)=\pm\sqrt{(p+1)q}+C
+u(0,q)=\pm\sqrt q+1
+C=1
+\therefore u(p,q)=\pm\sqrt{(p+1)q}+1
+u(x,y)=y\sqrt{x^2+1}+1

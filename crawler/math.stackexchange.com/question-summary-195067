@@ -1,0 +1,8 @@
+\mu
+\sigma
+corr(r_i,r_{i+h}) = \rho(h)
+\sigma
+\displaystyle \sigma_{year} = \sigma(1+\mu)^{11}\sqrt{12+2\sum_{i=1}^{11}(12-i)\rho(i)}
+1+r_{year}=\prod_{i=1}^{12}(1+r_i)=\prod_{i=1}^{12}(1+\mu+\sigma \epsilon_i)\approx(1+\mu)^{12}+\sigma (1+\mu)^{11}\Big(\sum_{i=1}^{12}\epsilon_i\Big)\; .
+\sigma_{year}^2=\mbox{Var}(1+r_{year})=\Big(\sigma (1+\mu)^{11}\Big)^2\mbox{Var}\Big(\sum_{i=1}^{12}\epsilon_i\Big) \; .
+\mbox{Var}\Big(\sum_{i=1}^{12}\epsilon_i\Big) = \sum_{i=1}^{12}\mbox{Var}(\epsilon_i)+2\sum_{i<j}\mbox{Cov}(\epsilon_i,\epsilon_j)=12+2\sum_{i<j}\mbox{corr}(r_i,r_j)=12+2\sum_{i<j}\rho(|j-i|)=12+2\sum_{i=1}^{11}(12-i)\rho(i) \; .

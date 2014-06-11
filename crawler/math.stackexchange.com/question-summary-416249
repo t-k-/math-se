@@ -1,0 +1,8 @@
+\int \sin^m x \cos^n x dx = \frac{\sin^{m+1} x \cos^{n-1}x}{m+n} + \frac{n-1}{m+n} \int \sin^m x \cos^{n-2}x dx
+I(m,n)=\int {{{\sin }^m}} x{\cos ^n}xdx = \int {{{\sin }^m}} x{\cos ^{n - 1}}x\cos xdx = \int {{{\sin }^m}} x{\cos ^{n - 1}}xd\left( {\sin x} \right)
+du=\sin^mxd(\sin x)
+ v=\cos^{n-1}x
+I(m,n)=\frac{\sin^{m+1}x}{m+1}\cos^{n-1}x+\frac{n-1}{m+1}\int\cos^{n-2}x\sin^{m+2} xdx
+\sin^{m+2}x=\sin^m x\sin^2x
+\sin^2x=1-\cos^2x
+\begin{align}    I(m,n) &= \frac{{{{\sin }^{m + 1}}x}}{{m + 1}}{\cos ^{n - 1}}x + \frac{{n - 1}}{{m + 1}}\int {{{\cos }^{n - 2}}} x{\sin ^m}xdx - \frac{{n - 1}}{{m + 1}}\int {{{\cos }^n}} x{\sin ^m}xdx  \\    I(m,n) &= \frac{{{{\sin }^{m + 1}}x}}{{m + 1}}{\cos ^{n - 1}}x + \frac{{n - 1}}{{m + 1}}\int {{{\cos }^{n - 2}}} x{\sin ^m}xdx - \frac{{n - 1}}{{m + 1}}I(m,n)  \\     \left( {\frac{{m + n}}{{m + 1}}} \right)I(m,n) &= \frac{{{{\sin }^{m + 1}}x}}{{m + 1}}{\cos ^{n - 1}}x + \frac{{n - 1}}{{m + 1}}\int {{{\cos }^{n - 2}}} x{\sin ^m}xdx  \\     I(m,n) &= \frac{{{{\sin }^{m + 1}}x}}{{m + n}}{\cos ^{n - 1}}x + \frac{{n - 1}}{{m + n}}\int {{{\cos }^{n - 2}}} x{\sin ^m}xdx \end{align}

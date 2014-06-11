@@ -1,0 +1,23 @@
+a,b
+I(a,b)=\int_0^1 t^{-3/2}(1-t)^{-1/2}\exp\left(-\frac{a^2}{t}-\frac{b^2}{1-t} \right)dt
+I(a,b) = \int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-1/2} \, e^{-b^2/(1-t)}  = \frac{\sqrt{\pi}}{|a|} e^{-(|a|+|b|)^2}
+a
+b
+\gt 0
+\int_0^{\infty} dt \, t^{-3/2} \, e^{-1/(4 t)}\, e^{-s t} = 2 \sqrt{\pi} \, e^{-\sqrt{s}}
+\int_0^{\infty} dt \, t^{-3/2} \, e^{-a^2/t}\, e^{-s t} = \frac{\sqrt{\pi}}{a} \, e^{-2 a\sqrt{s}}
+\int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-3/2} \, e^{-b^2/(1-t)}
+\frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, e^s \frac{\pi}{a b} e^{-2 (a+b) \sqrt{s}}
+t=1
+\int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-3/2} \, e^{-b^2/(1-t)} = \sqrt{\pi} \left (\frac{1}{a} + \frac{1}{b} \right ) e^{-(a+b)^2}
+b
+\frac{\partial}{\partial b} \int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-1/2} \, e^{-b^2/(1-t)} = -2 b \int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-3/2} \, e^{-b^2/(1-t)} 
+-2 \sqrt{\pi} \int db \, b\,  \left (\frac{1}{a} + \frac{1}{b} \right )\, e^{-(a+b)^2} = -\frac{2 \sqrt{\pi}}{a} \int db\, (a+b) e^{-(a+b)^2} = \frac{\sqrt{\pi}}{a} e^{-(a+b)^2} + C
+b \to \infty
+C=0
+I(a,b) = \int_0^1 dt \, t^{-3/2} \, e^{-a^2/t} \, (1-t)^{-1/2} \, e^{-b^2/(1-t)}  = \frac{\sqrt{\pi}}{a} e^{-(a+b)^2}
+f(t) = t^{-3/2} e^{-a^2/t}
+g(t) = t^{-1/2} e^{-b^2/t}
+\hat{f}(s) = \frac{\sqrt{\pi}}{a} \, e^{-2 a\sqrt{s}}
+\hat{g}(s) = \sqrt{\frac{\pi}{s}} \, e^{-2 b\sqrt{s}}
+\frac{\pi}{a} \frac{1}{i 2 \pi} \int_{c-i \infty}^{c+i \infty} ds \, e^s \, s^{-1/2} e^{-2 (a+b) \sqrt{s}} = \frac{\sqrt{\pi}}{a} e^{-(a+b)^2}

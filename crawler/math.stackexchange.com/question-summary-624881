@@ -1,0 +1,60 @@
+x_i
+y_i
+x = 1
+x = 29
+(x_1, y_1), (x_2, y_2), \ldots
+x_i
+\epsilon
+x
+(x_4, y_4)
+y_5 - y_4
+\epsilon
+x_5
+x_4
+x_4
+y_4
+ (x_i, y_i) 
+ d_4 = \frac{y_5 - y_4}{x_5 - x_4},  
+ b_4 = \frac{y_4 - y_3}{x_4 - x_3},  
+ s_4 = \frac{y_5 - y_3}{x_5 - x_3}. 
+F : [0, 500] \to \mathbb R
+y_i = F(t_i)
+F
+t_0 = 0, t_1 = b, t_2 = 2b, \ldots, t_i = i\cdot b, \ldots, t_n
+n
+500/b
+F
+b
+t_i
+F
+b
+d_i
+\epsilon
+F
+d_i
+F
+b
+ d_i = \frac{y_{i+1} - y_{i}}{b} 
+v_i
+y_{i-k}, \ldots, y_{i+k}
+k
+2k+1
+b
+\Delta t
+k = \dfrac{\Delta t}{2b}
+y_{i-k}, \ldots, y_{i+k}
+b
+k
+b
+20
+10
+\Delta t = 5 ms
+b \approx 500 / n
+b
+k = \dfrac{b}{2 \Delta t}
+i > k
+m_i = \dfrac{ \sum_{j = i-k}^{j = i+k} y_j} {2k+1}
+v_i = \frac{1}{2k+1} \sqrt{ \sum_{j = i-k}^{j = i+k} (y_j - m_i)^2}
+v_i
+F
+x_i

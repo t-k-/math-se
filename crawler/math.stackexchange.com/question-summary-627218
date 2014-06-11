@@ -1,0 +1,13 @@
+x, y, a
+a
+x^2+y^2
+x^2-y^2+2xy=a.
+ x^2-y^2+2xy=a <=>(x+y)^2-2y^2=a<=>(x+y+y\sqrt{2})(x+y-y\sqrt{2})=a.
+a
+x+y+y\sqrt{2}=t, x+y-y\sqrt{2}=\frac{a}{t}.
+x=\frac{(\sqrt{2}-1)t^2+(\sqrt{2}+1)a}{2t\sqrt{2}}, y= \frac{t^2-a}{2t\sqrt{2}}.
+x^2+y^2=(\frac{(\sqrt{2}-1)t^2+(\sqrt{2}+1)a}{2t\sqrt{2}})^2+(\frac{t^2-a}{2t\sqrt{2}})^2=\cdots=\frac{(2-\sqrt{2})t^2}{4}+\frac{(2-\sqrt{2})a^2}{4t^2}\geq2\sqrt{\frac{4-2}{16}\cdot t^2\cdot\frac{a^2}{t^2}} =\frac{|a|}{\sqrt{2}}.
+h(x,y,\lambda):=x^2+y^2+\lambda(x^2-y^2+2xy-a)
+\begin{align*}h'_x&=2x+\lambda(2x+2y)=0\iff \lambda=-1-\frac yx\\ h'_y&=2y+\lambda(-2y+2x)=0\iff\lambda=1-\frac xy\\ h'_\lambda&=x^2-y^2+2xy-a=0\end{align*}
+2=\frac xy-\frac yx=\frac{x^2-y^2}{xy}\iff x^2-y^2-2xy=0
+\;4xy=a\;

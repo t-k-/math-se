@@ -1,0 +1,26 @@
+\alpha=Q'\beta=\begin{pmatrix}\alpha_1\\\vdots\\ \alpha_p\end{pmatrix}, f=\begin{pmatrix}\delta_1\alpha_1\\\vdots\\\delta_p\alpha_p\end{pmatrix},F=\begin{pmatrix}\delta1\alpha_1&  &  \\  &\ddots & \\ &&\alpha_p \end{pmatrix},
+\theta=\sum_{j=1}^p\delta_j\alpha_j=1_p'f,c=p^2\sigma^2+p\theta^2 , b=\begin{pmatrix}\delta_1\alpha_1^2\\\vdots\\\delta_p\alpha_p^2\end{pmatrix}=F\alpha,k=\begin{pmatrix}k_1\\ \vdots\\ k_p\end{pmatrix}
+A=\begin{pmatrix}\sigma^2+\delta_1^2\alpha_1^2 \\&\ddots\\&&\ \sigma^2+\delta_p\alpha_p^2\end{pmatrix}=\sigma^2I_p+ F^2
+G=\sigma^2I_p+\theta F
+\begin{pmatrix}A &&G\\ G&& (\frac{c}{p})I_p\end{pmatrix}\begin{pmatrix}k\\\varrho\end{pmatrix}=\begin{pmatrix}b\\ \theta \alpha\end{pmatrix},
+k_j=\frac{\sigma^2(p \delta_j \alpha_j^2-\theta \alpha_j)}{(p\sigma^2+\theta^2)(\sigma^2+\delta_j^2 \alpha_j^2)-(\sigma^2+\theta \delta_j \alpha_j)^2}
+\varrho_j=\frac{\sigma^2(\theta \alpha_j-\delta_j\alpha_j^2)}{(p\sigma^2+\theta^2)(\sigma^2+\delta_j^2 \alpha_j^2)-(\sigma^2+\theta \delta_j \alpha_j)^2}
+\begin{pmatrix}A_{11} && A_{12}\\ A_{21}&& A_{22}\end{pmatrix}^{-1}=\begin{pmatrix}A_{11}^{-1} + A_{11}^{-1}A_{12}A_{22.1}A_{21}A_{11}^{-1}&-A_{11}^{-1}A_{12}A_{22.1}^{-1}\\ -A_{22.1}^{-1}A_{21}A_{11}^{-1} &A_{22.1}^{-1}\end{pmatrix},
+A_{22.1}=A_{22}-A_{21}A_{11}^{-1}A_{11}^{-1}
+\begin{pmatrix}A_{11} && A_{12}\\ A_{21}&& A_{22}\end{pmatrix}^{-1}=\frac{1}{A_{22}-A_{12}A_{11}^{-1}A_{12}}\begin{pmatrix}(A_{22}-A_{12}A_{11}^{-1}A_{12})A_{11}^{-1} + A_{11}^{-1}A_{12}A_{21}A_{11}^{-1}&-A_{11}^{-1}A_{12}\\ A_{21}A_{11}^{-1} & 1\end{pmatrix},
+k_j
+\varrho_j
+\varrho
+A_{22.1}=\frac{c}{p}I_p-\frac{(\sigma^2+\theta \delta_j \alpha_j)^2}{(\sigma^2+\delta_j^2 \alpha_j^2)}
+=\frac{\frac{c}{p}(\sigma^2+\delta_j^2\alpha_j^2)-(\sigma^2+\theta \delta_j \alpha_j)^2}{(\sigma^2+\delta_j^2 \alpha_j^2)}
+A_{22.1}^{-1}
+=\frac{(\sigma^2+\delta_j^2 \alpha_j^2)}{\frac{c}{p}(\sigma^2+\delta_j^2\alpha_j^2)-(\sigma^2+\theta \delta_j \alpha_j)^2}
+=\frac{\frac{c}{p}(\sigma^2+\delta_j^2\alpha_j^2)-(\sigma^2+\theta \delta_j \alpha_j)^2}{(\sigma^2+\delta_j^2 \alpha_j^2)}\frac{1}{(\sigma^2+\delta_j^2 \alpha_j^2)}+\frac{(\sigma^2+\theta \delta_j \alpha_j)^2}{(\sigma^2+\delta_j^2 \alpha_j^2)^2 }
+=\frac{c}{p}
+\frac{(\sigma^2+\theta \delta_j \alpha_j)}{(\sigma^2+\delta_j^2 \alpha_j^2)}
+b
+\varrho
+=(p\sigma^2+\theta^2)\delta_j\alpha_j^2-\theta \alpha_j\frac{(\sigma^2+\theta \delta_j \alpha_j)}{(\sigma^2+\delta_j^2 \alpha_j^2)}
+=\sigma^2(p\delta_j\alpha_j^2-\theta \alpha_j)
+\frac{c}{p}
+\frac{c}{p(\sigma^2 + \delta^2 \alpha^2)}

@@ -1,0 +1,25 @@
+f
+[0,1]
+f
+[0,1]
+m
+\sum_{k=0}^{\infty}m(\{x\in [0,1]; f(x)\geq k\}) < \infty
+f
+\int_0^1f\sum_{n=1}^{\infty}\frac{1}{n}
+R_k = f^{-1}[k,k+1)
+L_k = f^{-1}[k,\infty)
+L_k = \cup_{j=k}^\infty R_k
+m L_k = \sum_{j=k}^\infty m R_k
+\int \sum_{k=0}^\infty k 1_{R_k} = \sum_{k=0}^\infty k \ m R_k = \sum_{k=0}^\infty \sum_{j=0}^{k-1}  m R_k = \sum_{j=0}^\infty \sum_{k=j}^\infty m R_k = \sum_{j=0}^\infty m L_j
+A_k=\{x\in [0,1]: k-1\le f(x) <k\}
+E_k=\{x\in[0,1]:f(x)\ge k-1\}
+E_k=\bigcup_{\ell\ge k}A_\ell
+(\star)
+f
+\sum_{k=1}^\infty m(E_k)<\infty
+ (k-1)\,m(A_k)\le\int_{A_k} f \,dx\le k\,m(A_k), 
+ \int_0^1  f \,dx=\sum_{k=1}^\infty \int_{A_k} f \,dx, 
+ \sum_{k=1}^\infty (k-1)\,m(A_k)\le\int_0^1  f \,dx\le \sum_{k=1}^\infty k\,m(A_k).\qquad (\star) 
+ \sum_{k=1}^\infty k\,m(A_k)=\sum_{k=1}^\infty \left(\sum_{\ell\ge k}m(A_{\ell})\right) \quad\text{and}\quad \sum_{k=1}^\infty (k-1)\,m(A_k)=\sum_{k=1}^\infty \left(\sum_{\ell\ge k+1}m(A_{\ell})\right). 
+ m(E_k)=\sum_{\ell\ge k}m(A_\ell). 
+ \sum_{k=2}^\infty m(E_k)\le\int_0^1  f \,dx\le \sum_{k=1}^\infty m(E_k), 

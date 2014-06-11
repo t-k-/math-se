@@ -1,0 +1,12 @@
+ \operatorname{var}(r_i)=\sigma^2\left[1-\frac{1}{n}-\dfrac{(x_i-\bar{x})^2}{\sum_{l=1}^{n}(x_l-\bar{x})}\right]
+r_i=y_i-\hat{y_i}
+\operatorname{var}(r_i)=\operatorname{var}(y_i-\hat{y_i})=\operatorname{var}(y_i-\bar{y})+\operatorname{var}(\hat{\beta_1}(x_i-\bar{x}))-2\operatorname{Cov}((y_i-\bar{y}),\hat{\beta_1}(x_i-\bar{x}))
+\begin{align}\operatorname{Var}(r_i) &=\operatorname{Var}(y_i-\hat{y_i}) \\ &=\operatorname{Var}(y_i)+ \operatorname{Var}(\hat{y_i}) \\ &= \sigma^2 + \operatorname{Var}(\bar y+\hat \beta _1(x_i-\bar x))\\ &= \sigma^2 +\operatorname{Var}(\bar y)+(x_i-\bar x)^2 \cdot\operatorname{Var}(\hat \beta _1)\\&=\sigma^2 +\dfrac{\sigma^2}{n}+\dfrac{\sigma^2 \cdot (x_i-\bar x)^2}{\sum_{i=1}^n(x_i-\bar x)^2}\\ &=\sigma^2 \left[1+\dfrac 1n +\dfrac{(x_i-\bar x)^2}{\sum_{i=1}^n(x_i-\bar x)^2} \right]\end{align}
+y_i
+\hat y_i
+\begin{align} \text{Cov}(r) &= \text{Cov}(y - Py), \quad P = X(X^TX)^{-1}X^T \\ & = \text{Cov}((I_n-P)y) \\ & = (I_n - P)\ \text{Cov}(y)\ (I_n - P)^T \\ & = (I_n-P)\ \sigma^2 I_n\ (I_n - P)^T \end{align}
+\text{var}(r_i)=\sigma^2 (1 - P_{ii})
+X
+1
+\bar x
+x_i

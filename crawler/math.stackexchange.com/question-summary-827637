@@ -1,0 +1,4 @@
+\int\limits_{-a}^a{f(x)dx}
+\int\limits_{-a}^a{f(x)dx}=2F(a)
+\int\limits_{-a}^a{f(x)dx}=\int\limits_{-a}^0{f(x)dx}+\int\limits_{0}^a{f(x)dx}\\ =F(0)-F(-a)+F(a)-F(0)=-F(a)+F(a)=0
+\displaystyle\lim_{n \to \infty}\left[\frac{0-(-a)}{n}\sum_{i=0}^{n}{f\left(-a+\frac{0-(-a)i}{n}\right)}\right]+\displaystyle\lim_{n \to \infty}\left[\frac{a}{n}\sum_{i=0}^{n}{f\left(\frac{ai}{n}\right)}\right]\\ =\displaystyle\lim_{n \to \infty}\left[\frac{a}{n}\left(f(-a)+f\left(-a+\frac{a}{n}\right)+f\left(-a+\frac{2a}{n}\right)+...+f(-a+a)\right)\right]+\displaystyle\lim_{n \to \infty}\left[\frac{a}{n}\left(f(0)+f\left(\frac{a}{n}\right)+...+f\left(\frac{a(n-1)}{n}\right)+f(a)\right)\right]\\ =\displaystyle\lim_{n \to \infty}\left[\frac{a}{n}\left(f(0)-f(0)+f\left(\frac{a}{n}\right)-f\left(\frac{a}{n}\right)+...+f\left(a-\frac{a}{n}\right)-f\left(a-\frac{a}{n}\right)+f(a)-f(a)\right)\right]\\ =0

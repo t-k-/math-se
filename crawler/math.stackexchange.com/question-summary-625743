@@ -1,0 +1,14 @@
+A=[a_1 a_2\dots a_n]
+a_i
+Q =[\frac{b_1}{\|b_1\|} \frac{b_2}{\|b_2\|} \dots\frac{b_n}{\|b_n\|}]
+b_1 = a_1 
+ b_2 = a_2 - \frac{<a_2,b_1>}{<b_1, b_1>}b_1
+\dots
+b_2
+b_1
+\frac{<a_2,b_1>}{<b_1, b_1>}b_1
+a_2
+b_1
+\frac{<a_2,b_1>}{<b_1, b_1>}b_1
+\frac{<a_2,b_1>}{<b_1, b_1>}b_1 = b_1(b_1^Tb_1)^{-1}b_1^Ta_2
+a_2^T(b_1^Tb_1)^{-1}b_1b_1= b_1(b_1^Tb_1)^{-1}b_1^Ta_2

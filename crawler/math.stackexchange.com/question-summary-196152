@@ -1,0 +1,17 @@
+N
+\le
+L(\le,N)
+b(k) := \#\{l \in N\ :\ k \le l\}
+n = |N|
+L(\le,N) = \frac{n!}{\prod_{k \in N} \max(b(k)-1,1)}
+\langle N,\le\rangle
+\frac{n!}{(n-1)!}=n
+1
+-1
+\langle N,\le\rangle=\langle\wp(\{0,1,2\}),\subseteq\rangle
+b(k)=2^{3-|k|}
+k\in N
+8!=2^7\cdot3^2\cdot5\cdot7
+2^{12}
+L(\le,N) = \frac{n!}{\prod_{k \in N}b(k)}\;,
+\prod_{k\in N}b(k)=\prod_{S\subseteq\{0,1,2\}}2^{3-|S|}=\prod_{k=0}^32^{k\binom3k}=2^{\sum_{k=0}^3k\binom3k}=2^{12}\;,

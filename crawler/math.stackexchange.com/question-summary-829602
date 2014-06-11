@@ -1,0 +1,29 @@
+ A = \left( \begin{array}{cc}  3 & 4 \\  0 & 5 \\ \end{array} \right)
+\|A\|_2
+\|A\|_2 = max_{x \in \mathbb{R}^2 -\{0\}} \frac{\langle Ax,Ax \rangle}{\langle x,x\rangle}
+A^TA
+x \in \mathbb{R}^2
+\frac{\langle Ax,Ax \rangle}{\langle x,x\rangle}
+2
+\langle Ax,Ax\rangle = \langle x, A^T A x \rangle
+\{e_1,e_2\}
+A^T A
+\lambda_1
+\lambda_2
+x
+x = a e_1 + b e_2
+a
+b
+ \begin{align*} \dfrac{\langle Ax,Ax\rangle}{\langle x,x\rangle} &= \dfrac{\langle x,A^T A x\rangle}{\langle x,x\rangle} = \dfrac{\langle a e_1 + b e_2, A^TA(a e_1 + b e_2)\rangle}{\langle a e_1 + b e_2,a e_1 + b e_2 \rangle}\\ &= \dfrac{\langle a e_1 + b e_2, \lambda_1 a e_1 + \lambda_2 b e_2\rangle}{\langle a e_1 + b e_2,a e_1 + b e_2 \rangle}\\ &= \dfrac{\lambda_1 a^2 + \lambda_2 b^2}{a^2 + b^2} \end{align*}  
+x = \left(\begin{array}{c} x_1 \\ x_2 \end{array}\right)
+x = a_1 e_1 + a_2 e_2 + \cdots + a_n e_n
+A
+A
+(**)
+\lambda_1 > \lambda_2
+a = 1
+b = 0
+a = 1
+b = 0
+\lambda_1 > \lambda_2
+ \dfrac{\lambda_1 a_1^2 + \lambda_2 a_2^2 + \cdots \lambda_n a_n^2}{a_1^2 + a_2^2 + \cdots + a_n^2}. \quad (**) 

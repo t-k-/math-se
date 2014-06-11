@@ -1,0 +1,34 @@
+(X,Y)
+\mathbb{R}^{2}
+f_{(X,Y)}(x,y) = f(x)g(y)
+f
+g
+X
+\displaystyle \frac{f}{\int_{\mathbb{R}}f(t)dt}
+Y
+\displaystyle \frac{g}{\int_{\mathbb{R}}g(t)dt}
+X
+Y
+f(x)
+X
+\displaystyle f_X(x) = \int_{-\infty}^\infty f_{X.Y}(x,y)\,\mathrm dy = \int_{-\infty}^\infty f(x)g(y)\,\mathrm dy = f(x)\int_{-\infty}^\infty g(y)\,\mathrm dy = A\cdot f(x)
+A\displaystyle=\int_{-\infty}^\infty g(y)\,\mathrm dy
+\displaystyle f_Y(y) = \int_{-\infty}^\infty f_{X.Y}(x,y)\,\mathrm dx = \int_{-\infty}^\infty f(x)g(y)\,\mathrm dx = g(y)\int_{-\infty}^\infty f(x)\,\mathrm dx = B\cdot g(y)
+\displaystyle B=\int_{-\infty}^\infty f(x)\,\mathrm dx
+ \Pr(X\in A) = \Pr(X\in A\ \&\ Y\in(-\infty,\infty)) = \int_A \left( \int_{-\infty}^\infty f(x)g(y)\,dy\right) \,dx. 
+y
+-\infty
+\infty
+f(x)
+ \int\left(f(x) \int_{-\infty}^\infty g(y)\,dy \right)\,dx. 
+x
+A
+\int_{-\infty}^\infty g(y)\,dy
+\int\cdots\cdots\,dx
+ \int_A f(x)\,dx \cdot \int_{-\infty}^\infty g(y)\,dy. 
+ \Pr(X\in A) = \left(\int_A f(x)\,dx \cdot(\text{some quantity not depending on }x). \right) 
+X
+f(x)
+1
+Y
+ \Pr(X\in A\ \&\ Y\in B) = \int_A f_X(x)\,dx\cdot\int_B f_Y(y)\,dy = \Pr(X\in A)\cdot\Pr(Y\in B), 

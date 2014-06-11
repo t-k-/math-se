@@ -1,0 +1,22 @@
+f
+F(z) = \prod_{n=1}^{+\infty} (1-e^{-2\pi n}\cdot e^{2\pi i z})
+ord ( f) = inf \{\lambda \geq 0  \ | \ \exists A, B > 0 \ s.t. \  |f(z)|\leq Ae^{B|z|^{\lambda}} \forall z \in \mathbb{C} \}
+F
+2
+\left\lvert 1 - e^{-2\pi n}\cdot e^{2\pi iz} \right\rvert \leqslant 1 + e^{-2\pi n} \left\lvert e^{2\pi iz}\right\rvert = 1 + e^{-2\pi(\operatorname{Im} z + n)} \leqslant 1 + e^{2\pi(\lvert z\rvert - n)}.
+n \approx \lvert z\rvert
+A,B
+\left\lvert F(z)\right\rvert \leqslant A\cdot e^{B\cdot \lvert z\rvert^2}.
+k(z) := \lceil \lvert z\rvert \rceil
+z \neq 0
+\begin{align} \prod_{n=k(z)}^\infty \left( 1 + e^{2\pi(\lvert z\rvert -n)}\right) &= \exp \left(\sum_{n=k(z)}^\infty \log \left( 1 + e^{2\pi(\lvert z\rvert -n)}\right)\right)\\ &< \exp \left(\sum_{n=k(z)}^\infty e^{2\pi(\lvert z\rvert - n)}\right)\\ &\leqslant \exp \left(\sum_{m=0}^\infty e^{-2\pi m}\right)\\ &= \exp \left(\frac{e^{2\pi}}{e^{2\pi}-1}\right), \end{align}
+\begin{align} \prod_{n=1}^{k(z)-1} \left( 1 + e^{2\pi(\lvert z\rvert -n)}\right) &< 2^{k(z)-1}\prod_{n=1}^{k(z)-1} e^{2\pi(\lvert z\rvert - n)}\\ &< 2^{k(z)-1} \prod_{n=1}^{k(z)-1} e^{2\pi \lvert z\rvert}\\ &= \exp \left((k(z)-1)\left(2\pi \lvert z\rvert + \log 2\right)\right)\\ &< \exp \left(\lvert z\rvert(2\pi\lvert z\rvert + \log 2)\right)\\ &< 2e^{(2\pi+\log 2)\lvert z\rvert^2}\\ &< 2e^{7\lvert z\rvert^2}. \end{align}
+z = 0
+\lvert F(z)\rvert < 6 e^{7\lvert z\rvert^2},
+F
+2
+z_k = \frac12 - ki,\, k \in \mathbb{Z}^+
+\lvert F(z_k)\rvert \geqslant \prod_{n=1}^k \left(1 + e^{2\pi (k-n)}\right) > \prod_{n=1}^k e^{2\pi(k-n)} = e^{\pi k(k-1)},
+F
+2
+2

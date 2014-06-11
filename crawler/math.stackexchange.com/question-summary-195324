@@ -1,0 +1,35 @@
+a_{n+1}=\ln(a_{n}+2)
+a_{0}>0
+g\in\mathbb{R}
+f:[0,+\infty)\to\mathbb{R}
+f(x)=\ln(x+2)
+|f^{\prime}(x)|\leq 1/2
+x\geq{0}
+|f(x)-f(y)|\leq\frac{1}{2}|x-y|
+x,y\geq{0}
+\left|a_{2}-a_{1}\right|=\left|f\left(a_{1}\right)-f\left(a_{0}\right)\right|\leq\frac{1}{2}\left|a_{1}-a_{0}\right|
+\left|a_{3}-a_{2}\right|=\left|f\left(a_{2}\right)-f\left(a_{1}\right)\right|\leq\frac{1}{2}\left|a_{2}-a_{1}\right|=\frac{1}{2}\left|f\left(a_{1}\right)-f\left(a_{0}\right)\right|\leq\left(\frac{1}{2}\right)^{2}\left|a_{1}-a_{0}\right|
+\vdots\qquad\qquad\vdots
+\left|a_{n+1}-a_{n}\right|\leq\frac{1}{2}\left|a_{n}-a_{n-1}\right|\leq\left(\frac{1}{2}\right)^{n}\left|a_{1}-a_{0}\right|
+\left|a_{n+2}-a_{n}\right|\leq\left|a_{n+2}-a_{n+1}\right|+\left|a_{n+1}-a_{n}\right|
+\leq\left(\frac{1}{2}\right)^{n}\left|a_{1}-a_{0}\right|+\left(\frac{1}{2}\right)^{n+1}\left|a_{1}-a_{0}\right|
+=\left[\left(\frac{1}{2}\right)^{n}+\left(\frac{1}{2}\right)^{n+1}\right]\left|a_{1}-a_{0}\right|
+\vdots\qquad\qquad\vdots
+\left|a_{m}-a_{n}\right|\leq\left[\left(\frac{1}{2}\right)^{n}+\left(\frac{1}{2}\right)^{n+1}+...+\left(\frac{1}{2}\right)^{m-1}\right]\left|a_{1}-a_{0}\right|
+=\left(\frac{1}{2}\right)^{n}\left[1+\frac{1}{2}+\left(\frac{1}{2}\right)^{2}+...+\left(\frac{1}{2}\right)^{m-1-n}\right]\left|a_{1}-a_{0}\right|
+<\left(\frac{1}{2}\right)^{n}\left[1+\frac{1}{2}+\left(\frac{1}{2}\right)^{2}+...\right]\left|a_{1}-a_{0}\right|
+=\left(\frac{1}{2}\right)^{n}\cdot\frac{1}{1-\frac{1}{2}}\cdot\left|a_{1}-a_{0}\right|
+=\left(\frac{1}{2}\right)^{n-1}\left|a_{1}-a_{0}\right|
+\lim_{n\to\infty}a_n=a
+a=\ln(a+2)
+a, b
+x=\ln(x+2)
+x\mapsto x-\ln(x+2)
+a
+b
+f:x\mapsto\log(x+2)
+f(x)\lt x
+x\lt g
+f(x)\lt x
+x\gt g
+g\gt0

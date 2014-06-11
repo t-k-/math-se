@@ -1,0 +1,14 @@
+N_n
+ X_i = \{(D,E,F) : D \subseteq N_n, |D| = r,E\subseteq D, |E|=r-i,F\subseteq N_n - D, |F|=s-i\} 
+|X_0 \cup X_1 \cup \ldots\cup X_n| = \sum_{i=0}^n  \binom{n}{r}\binom{r}{r-i}\binom{n-r}{s-i}
+X_i
+ \begin{align} |X_0 \cup X_1 \cup \ldots\cup X_n| &=\sum_{i=0}^n|X_i|\\ &= \dots \end{align} 
+X_i
+\binom{n}{r}=\frac{n!}{r!(n-r)!}
+D
+\binom{r}{r-i}=\frac{r!}{(r-i)!(r-(r-i))!}
+E
+\binom{n-r}{s-i}=\frac{(n-r)!}{(s-i)!(n-r-(s-i))!}
+F
+|X_i|=\binom{n}{r}\binom{r}{r-i}\binom{n-r}{s-i}
+|X_0 \cup X_1 \cup \ldots\cup X_n| =\sum_{i=0}^n|X_i|=\sum_{i=0}^n \binom{n}{r}\binom{r}{r-i}\binom{n-r}{s-i}

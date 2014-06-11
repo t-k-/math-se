@@ -1,0 +1,94 @@
+A
+n\times n
+n
+V
+n\times n
+A_{\varepsilon}=A+\varepsilon V
+A
+\varepsilon
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+v_{0}
+A
+\lambda_{0}
+Av_{0} = \lambda_{0}v_{0}
+A + \epsilon V
+\pars{A + \epsilon V}v = \lambda v
+v
+\lambda
+\epsilon
+\ul{\mbox{up to order}\ \epsilon}
+\epsilon
+\pars{~\ul{\mbox{up to order}\ \epsilon}~}
+ v = v_{0} + v_{1}\epsilon + v_{2}\epsilon^{2} + \cdots\,, \qquad \lambda = \lambda_{0} + \lambda_{1}\epsilon + \lambda_{2}\epsilon^{2} + \cdots 
+ \pars{A + \epsilon V}\pars{v_{0} + \epsilon v_{1}} = \pars{\lambda_{0} + \lambda_{1}\epsilon}\pars{v_{0} + \epsilon v_{1}}\,, \quad \left\vert% \begin{array}{rcl} Av_{0} & = & \lambda_{0}v_{0} \\ Av_{1} + Vv_{0} & = & \lambda_{0}v_{1} + \lambda_{1}v_{0} \end{array}\right. 
+v_{0}^{\sf T}
+A
+ v_{0}^{\sf T}Av_{1} + v_{0}^{\sf T}Vv_{0} = \lambda_{0}v_{0}^{\sf T}v_{1} + \lambda_{1}v_{0}^{\sf T}v_{0} 
+ \color{#ff0000}{v_{0}^{\sf T}Av_{1}} = \pars{v_{1}^{\sf T}Av_{0}}^{\sf T} = \pars{v_{1}^{\sf T}\lambda_{0}v_{0}}^{\sf T} = \color{#ff0000}{\lambda_{0}v_{0}^{\sf T}v_{1}} \quad\mbox{such that}\quad \lambda_{1} = {v_{0}^{\sf T}Vv_{0} \over v_{0}^{\sf T}v_{0}} 
+A
+\{ e_{j}\}_{j=1}^{n}
+\sigma(A)=\{ \lambda_{j}\}
+R_{j}
+\lambda_{j}
+\mathbb{C}^{n}
+A
+\epsilon V
+V
+\epsilon
+(\lambda I -A-\epsilon V)
+\epsilon
+C_{j}
+\lambda_{j}
+\epsilon
+(\lambda I - A-\epsilon V)^{-1}
+C_{j}
+(\lambda I -A-\epsilon V)^{-1}
+\epsilon
+0
+A+\epsilon V
+\epsilon
+A
+A+\epsilon V
+\epsilon
+      (\lambda I -A)^{-1}x = \sum_{j=1}^{n}\frac{1}{\lambda-\lambda_{j}}(x,e_{j})e_{j}. 
+           R_{j}x = (x,e_{j})e_{j}. 
+      \|(\lambda I -A)^{-1}x\|^{2}\le \frac{1}{\mbox{dist}(\lambda,\sigma(A))^{2}}\sum_{j=1}^{n}\|x\|^{2}. 
+           \|(\lambda I -A)^{-1}\| \le 1/\mbox{dist}(\lambda,\sigma(A)). 
+     (\lambda I - A -\epsilon V)^{-1}=(\lambda I -A)^{-1}(I-\epsilon V(\lambda I-A)^{-1})^{-1} = (\lambda I -A)^{-1}\sum_{k=0}^{\infty}\epsilon^{k}(V(\lambda I -A)^{-1})^{k}. 
+             |\epsilon|\|V\|/\mbox{dist}(\lambda,\sigma(A)) < 1\;\;\;\mbox{ or }\;\;\; |\epsilon| < \|V\|^{-1}\mbox{dist}(\lambda,\sigma(A)). 
+\epsilon
+P_{j}^{\epsilon}
+\epsilon=0
+\epsilon
+\epsilon
+P_{j}^{\epsilon}
+A+\epsilon V
+C_{j}
+P_{j}^{\epsilon}e_{j}
+\epsilon
+0
+A+\epsilon V
+C_{j}
+\epsilon\mapsto P_{j}^{\epsilon}e_{j}
+          P_{j}^{\epsilon} =\frac{1}{2\pi i}\oint_{C_{j}}(\lambda I - A-\epsilon V)^{-1}d\lambda . 
+(\lambda I - A-\epsilon V)^{-1}
+|\epsilon|\|V\| < \mbox{dist}(\lambda,\sigma(A))
+\epsilon
+x
+\lambda_{j}
+\lambda_{j}'
+(\lambda-\lambda_{j})^{-1}
+(\lambda-\lambda_{j})^{-2}
+(\lambda-\lambda_{k})^{-1}(\lambda-\lambda_{j})^{-1}
+(\lambda_{j}-\lambda_{k})^{-1}
+(\lambda-\lambda_{k})
+\lambda_{j}
+P_{j}x=(x,e_{j})e_{j}
+(\lambda I-A)^{-1}
+\lambda_j
+P_j^{\epsilon} e_j
+\lambda_j' = ((A+\epsilon V)e_{j}',e_{j}')
+   (\lambda I - A)^{-1} + \epsilon(\lambda I - A)^{-1}V(\lambda I - A)^{-1}       
+         (\lambda I - A)^{-1}x + \epsilon\sum_{k=1}^{n}\sum_{j=1}^{n} \frac{(x,e_{j})(Ve_{j},e_{k})e_{k}}{(\lambda-\lambda_{j})(\lambda-\lambda_{k})} 
+      P_{j}^{\epsilon}x = (x,e_{j})e_{j} +\epsilon\left(\sum_{k=1, (k\ne j)}^{n}\frac{(x,e_{j})(Ve_{j},e_{k})}{(\lambda_j-\lambda_k)}e_{k}\right) 
+           e_{j}' = e_{j} +\epsilon \sum_{k=1\;(k\ne j)}^{k} \frac{(Ve_j,e_k)}{\lambda_j-\lambda_k}e_k. 

@@ -1,0 +1,52 @@
+X_1,\cdots,X_n
+N(\mu,\sigma^2)
+Var(T)
+T=\frac{1}{2(n-1)}\sum_{i=1}^{n-1}(X_{i+1}-X_i)^2
+E(T^2)
+X_1,..., X_n
+N(0,\sigma^2)
+f(x_1,...,x_n)
+f(x_1,...,x_n) = \prod _{i=1}^n \frac{1}{\sqrt{2 \pi } \sigma } \exp \left(-\frac{x_i^2}{2 \sigma ^2}\right)
+\mu
+n
+E[T^2]
+n = 4
+T
+E[T^2]
+E[T^2]
+n= 2, 3,..., 9
+\{\frac{3\sigma^4}{1}, \frac{9\sigma^4}{4}, \frac{17\sigma^4}{9}, \frac{27\sigma^4}{16}, \frac{39\sigma^4}{25}, \frac{53\sigma^4}{36}, \frac{69\sigma^4}{49}, \frac{87\sigma^4}{64} , \dots\}
+E[T^2] = \frac{n^2+n-3}{(n-1)^2} \sigma^4
+\begin{align*}\displaystyle  \operatorname{Var}(T) &= E[T^2] - (E[T])^2 \\ &= E[T^2] - \sigma^4  \\ &  = \frac{3n-4}{(n-1)^2} \sigma^4    \end{align*}
+\color{red}{I~showed~the~problem~to~my~co-author,~Murray~Smith,~who~came~up~with~the~ following~wonderful~solution~using~zonal~polynomials. \\Here~is~Murray's~solution:}
+T=\frac{1}{2(n-1)}\sum_{i=1}^{n-1}\left( X_{i+1}-X_{i}\right) ^{2}
+X=(X_{1},...,X_{n})^{\prime }\sim N(\mu i_{n},\sigma ^{2}I_{n}) 
+i_{n}
+I_{n}
+n
+n
+Y_{i}=\frac{X_{i}-\mu }{\sigma }\sim N(0,1) \qquad \qquad \text{  for }i=1,...,n
+Z_{i}=Y_{i+1}-Y_{i}\sim N(0,2)  \qquad \qquad \text{      for }i=1,...,n-1
+Cov(Z_{i},Z_{i+1})=Cov(Z_{i},Z_{i-1})=-1
+Z=(Z_{1},...,Z_{n-1})^{\prime }\sim N(0_{n-1},D)
+0_{n-1}
+(n-1)
+(n-1)\times (n-1)
+D=\left[  \begin{array}{rrrrrr} 2 & -1 & 0 &  &  & 0 \\  -1 & 2 & -1 &  &  &  \\  0 & -1 & 2 & \ddots  &  &  \\  0 & 0 & \ddots  & \ddots  & -1 & 0 \\  &  &  & -1 & 2 & -1 \\  0 &  &  & 0 & -1 & 2% \end{array} \right]
+\begin{eqnarray*} T &=&\frac{\sigma ^{2}}{2(n-1)}Z^{\prime }Z \\ &=&\frac{\sigma ^{2}}{2(n-1)}A^{\prime }DA \end{eqnarray*}
+A=D^{-1/2}Z\sim N(0_{n-1},I_{n-1}).
+E\left[ A^{\prime }DA\right] 
+E\left[ \left( A^{\prime }DA\right) ^{2}\right] 
+tr(\cdot )
+D.
+D,
+2(n-1)
+4(n-1)^{2}+12(n-3)+20.
+E[T^2]
+X_i = \mu + \sigma Y_i
+Y_1, Y_2, ...
+N(0,1)
+T = \frac{\sigma^2}{2(n-1)}\sum_{i=1}^{i=n-1}(Y_{i+1}-Y_i)^2 
+\implies E[T^2] = \frac{\sigma^4}{4(n-1)^2}\{\sum_{i=1}^{i=n-1}E(Y_{i+1}-Y_i)^4+\sum_j\sum_{i \neq j}E(Y_{i+1}-Y_i)^2 E(Y_{j+1}-Y_j)^2\}
+= \frac{\sigma^4}{4(n-1)^2} \{12(n-1)+4(n-1)(n-2)\} = \frac{\sigma^4}{(n-1)} \{n+1\}
+\implies Var(T) = \frac{2\sigma^4}{n-1}

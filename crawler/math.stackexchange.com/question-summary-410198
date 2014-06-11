@@ -1,0 +1,12 @@
+\int \ln(x) dx
+C
+\int \ln x \, dx= \int 1\cdot \ln x\, dx= x\ln x- \int x\cdot \frac{1}{x}\, dx=x\ln x-\int \,dx = x\ln x-x+C,
+x
+ \int \ln x\,dx = \underbrace{\int u\,dx = ux - \int x\,du}_{\text{integration by parts}} = x\ln x - \int x\,\frac{dx}{x}. 
+x
+dx/x
+ \begin{align} \int\arctan x\,dx & = \underbrace{\int u\,dx = ux - \int x\,du}_{\text{integration by parts}} = x\arctan x - \int x\, \frac{dx}{1+x^2} \\[8pt] & = x\arctan x - \int\frac{1}{1+x^2} \cdot\frac12\cdot \Big(2x\,dx\Big) \\[8pt] & = x\arctan x - \frac12\int\frac1w\,dw \\[8pt] & = x\arctan x-\frac12\ln |w| + C \\[8pt] & = x\arctan x - \frac12\ln(1+x^2)+C. \end{align} 
+p(x)
+\int p(x)\ln(x)dx
+u=\ln(x),~~dv=p(x)dx
+\int udv=uv-\int vdu

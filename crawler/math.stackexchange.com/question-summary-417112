@@ -1,0 +1,20 @@
+\sinh 2x
+2x + 4/3x^3
+[-0.5,0.5]
+R_4(0.5) = 0.012\,85
+ R_n(x)= \frac{f^{(n+1)}(z)(x-a)^{n+1}}{(n+1)!}
+\displaystyle |R_{n}(x)| \le \frac{M_{n+1}}{(n+1)!}|x-a|^{n+1}
+\displaystyle R_{n}(x) = f(x) -T_n(x)
+T_n(x)
+n
+f(x)
+x = a
+f(x) = \sinh 2x
+\displaystyle \left[-\frac{1}{2},\frac{1}{2}\right]
+\displaystyle T_4(x) = P_0(x) + P_1(x) + P_2(x) + P_3(x) + P_4(x) = f(0) + f'(0)(x-0) + \frac{f''(0)}{2!}(x-0)^2 + \frac{f'''(0)}{3!}(x-0)^3 + \frac{f^{(4)}(0)}{4!}(x-0)^3= 0 + 2x + 0 + \frac{8 x^3}{6} + 0 = 2x + \frac{4}{3} x^3
+f^{(5)}(x) = 32 \cosh x
+\displaystyle |f^{(5)}(x)|
+\displaystyle -\frac{1}{2} \le x \le \frac{1}{2}
+\displaystyle x = \pm \frac{1}{2}
+\displaystyle M_5 = \max_{-\frac{1}{2} \le x \le \frac{1}{2}} \left|f^{(5)}(x)\right| = 32 \cosh(1) \approx 49.37858
+\displaystyle |f(x) -T_4(x)| = |R_4(x)| \le \frac{M_5}{5!}|x-0|^5 = \frac{49.37858}{5!}\left|\frac{1}{2}\right|^5 = 0.0128590052083333

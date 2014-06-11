@@ -1,0 +1,16 @@
+g(s,u)
+(s^{\star}, u^{\star})
+s^{T} Q s + u^{T} R u
+g(s^{\star}, u^{\star}) + g_s(s^{\star}, u^{\star})(x-x^{\star}) + g_u(s^{\star}, u^{\star})(u-u^{\star}) + \frac{1}{2} \left[g_{ss}(s^{\star}, u^{\star})(s-s^{\star})^2 + g_{su}(s^{\star}, u^{\star})2(s-s^{\star})(u-u^{\star}) + g_{uu}(s^{\star}, u^{\star})(u-u^{\star})^2 \right]
+Q
+R
+\frac{1}{2} x^T Q x + x^T q + q_0
+\begin{bmatrix}s \\ 1\end{bmatrix}^T \begin{bmatrix}Q & q \\ q^T & q_0\end{bmatrix} \begin{bmatrix}s \\ 1\end{bmatrix}
+ g (s, u) \approx s^T Q s + u^T R u
+g
+g (s,u) \approx g (s^*, u^*) + q^T (s - s^*) + r^T (u - u^*) + (s - s^*)^T Q (s - s^*) + (u - u^*)^T R (u - u ^*)
+g (s^*, u^*) = 0
+q = 0_n
+r = 0_m
+(s^*, u^*)
+g (s,u) \approx (s - s^*)^T Q (s - s^*) + (u - u^*)^T R (u - u ^*)

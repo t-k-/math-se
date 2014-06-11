@@ -1,0 +1,18 @@
+x=0 , l
+{\partial^3 y(x,t)\over\partial x^3}=k_ly(x,t)
+{\partial^2 y(x,t)\over\partial x^2}=k_t{\partial y(x,t)\over\partial x}
+y(x,t)= {\partial y(x,t)\over\partial t}=0
+l
+k_t
+k_l
+ y(x,t) = y(x).z(t) / z(t)= z_1sin(\omega t) + z_2sin(\omega t) 
+EIy^{(4)}(x) - \mu \omega^2y(x)= {F(x,t)\over z(t)} 
+EI\mathcal L(y^{(4)}(x)) - \mu \omega^2\mathcal L(y(x))= \mathcal L({F(x,t)\over z(t)}) 
+\mathcal L({F(x,t)\over z(t)})=P{e^{-su}\over z(u)} : (1)
+(1)
+\mathcal L^{-1}({e^{-su}\over s^4-\lambda^4})
+e^{-su}\bigg(\frac 1{s^4-\lambda^4}\bigg)=e^{-su}\bigg(-\frac 1{2\lambda^3} \frac \lambda{s^2+\lambda^2}+\frac 1{4\lambda^3}\frac 1{x-\lambda}-\frac 1{4\lambda^3}\frac 1{x+\lambda}\bigg)
+\mathcal L^{-1}\Bigg(e^{-su}\bigg(-\frac 1{2\lambda^3} \frac \lambda{s^2+\lambda^2}+\frac 1{4\lambda^3}\frac 1{x-\lambda}-\frac 1{4\lambda^3}\frac 1{x+\lambda}\bigg)\Bigg)
+\Rightarrow -\frac 1{2\lambda^3} \sin(\lambda t)+\frac 1{4\lambda^3}e^{\lambda t}-\frac 1{4\lambda^3}e^{-\lambda t}
+\Rightarrow k_u(t)\bigg(-\frac 1{2\lambda^3} \sin(\lambda t-\lambda u)+\frac 1{4\lambda^3}e^{\lambda t-\lambda u}-\frac 1{4\lambda^3}e^{-\lambda t+\lambda u}\bigg)
+k_u(t\lt u)=0\text{ and }k_u(t\gt u)=1

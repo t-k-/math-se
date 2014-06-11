@@ -1,0 +1,44 @@
+u_{xx}+u_{yy}=0
+u(1,\theta)=f(\theta)
+u(r,\theta)=\frac1{2\pi} \int_0^{2\pi} P_r(t-\theta) f(t) \,\mathrm{d}t
+P_r(t\frac{1-r^2}{1+r^2-2r\cos t}
+\lim\limits_{r\to1} u(r,\theta) \overset{?}= f(\theta) 
+\lim\limits_{r\to 1} u(r,0)=
+\int_0^{2\pi} P_r(t) \,\mathrm{d} t=1
+P_r(t)
+P_r(t)=\frac{1-r^2}{1+r^2-2r+2r-2r\cos t}= \frac{1-r^2}{(1-r^2)+2r(1-\cos t)} \ge 0
+\varepsilon>0
+r_0<1
+r_0<r<1
+\big| \underset{u(r,0)}{\underbrace{\int_0^{2\pi} P_r(t)f(t) \,\mathrm{d}t}} \big| <\varepsilon.
+f(0)=0
+f(t)
+g
+|t|\le g
+\Rightarrow
+f(t)\le\frac\varepsilon2
+|f(t)|\le M
+\left| \int_0^g f(t)  P_r(t) \,\mathrm{d}t + \int_g^{2\pi} f(t)  P_r(t) \,\mathrm{d}t\right|\le \left| \int_0^g f(t)  P_r(t) \,\mathrm{d}t\right| + \left|\int_g^{2\pi} f(t)  P_r(t) \,\mathrm{d}t\right| = A+B
+A=\left| \int_0^g f(t)  P_r(t) \,\mathrm{d}t\right| \le \int_0^g |f(t)| |P_r(t)| \,\mathrm{d}t =\int_0^g |f(t)| P_r(t) \,\mathrm{d}t \overset{P_r\ge0}\le \frac\varepsilon2 \int_0^g P_r(t) \,\mathrm{d}t \le \frac\varepsilon2
+B=\left|\int_g^{2\pi} f(t)  P_r(t) \,\mathrm{d}t\right| \le \int_g^{2\pi} |f(t)| \frac{1-r^2}{(1-r^2)+2r(1-\cos t)} \,\mathrm{d}t
+B\le M\int_g^{2\pi} \frac{1-r^2}{(1-r^2)+2r(1-\cos t)} \,\mathrm{d}t = M \frac{1-r^2}2r \int_g^{2\pi} \frac1{1-\cos t}\,\mathrm{d}t.
+\lim\limits_{r\to1} B(t) =0.
+f(x+2\pi)=f(x)
+f(x)\sim \sum_{-\infty}^\infty \widehat f(k) e^{ikx}
+\widehat f(k)=\frac1{2\pi} \int_0^{2\pi} f(x) e^{-ikx} \,\mathrm{d}x
+(f_N\cdot f)(x) = \sum_{k=-N}^N f(k) e^{ikx}
+\lim_{N\to\infty} (f_N f)(x)=f(x)
+(f_N f)(x) = \frac1{2\pi} \int_g^{2\pi} f(t) \frac{\sin\left(N+\frac12\right)(x-t)}{\sin\frac{t}2}.
+K_N(t)=\frac{\sin\left(N+\frac12\right)t}{\sin\frac{t}2}
+\int_0^g \left|\frac{\sin\left(N+\frac12\right)t}{\sin\frac{t}2}\right|\,\mathrm{d}t
+N\to\infty
+\int_0^g \left|\frac{\sin\left(N+\frac12\right)t}{\sin\frac{t}2}\right|\,\mathrm{d}t \to \infty
+ I_{N}=\int_{0}^{g} \bigg\vert \frac{\sin((N+\frac{1}{2})t)}{\sin(\frac{t}{2})} \bigg\vert \: dt 
+u=(N+\frac{1}{2})t
+du = (N+\frac{1}{2})dt
+ I_{N} = \frac{2}{2N+1} \int_{0}^{(N+\frac{1}{2})g} \bigg\vert \frac{\sin(u)}{\sin(\frac{u}{2N+1})} \bigg\vert \: du 
+\vert \sin(x) \vert \leq \vert x \vert
+x \in \mathbb{R}
+ I_{N} \geq 2 \int_{0}^{(N+\frac{1}{2})g} \frac{\vert \sin(u) \vert}{u} \: du 
+ \int_{0}^{+\infty} \frac{\vert \sin(u) \vert}{u} \: du = +\infty 
+ \lim \limits_{N \rightarrow +\infty} \int_{0}^{g} \bigg\vert \frac{\sin((N+\frac{1}{2})t)}{\sin(\frac{t}{2})} \bigg\vert \: dt = +\infty 

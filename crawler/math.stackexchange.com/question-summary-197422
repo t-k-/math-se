@@ -1,0 +1,21 @@
+ ( \partial_t^2 - v^2 \nabla^2) \mathbf{E}(\mathbf{x},t) = 0 
+\mathbb{R}^3 \times \mathbb{R} 
+ \mathbf{E}(\mathbf{x},t) = \int_{\mathbb{R}^3} \mathbf{E}_+(\mathbf{k}) e^{i ( \mathbf{k} \cdot \mathbf{x} + v |\mathbf{k}| t ) } + \mathbf{E}_-(\mathbf{k}) e^{i ( \mathbf{k} \cdot \mathbf{x} - v |\mathbf{k}| t ) } d^3\mathbf{k} 
+ \mathbf{E}(\mathbf{x},t) = \mathbf{E}_0 e^{i ( \mathbf{n} \cdot \mathbf{x} - v |\mathbf{n}| t ) } 
+\mathbf{n} \in \mathbb{R}^3
+\mathbf{E}_+(\mathbf{k}) = 0
+\mathbf{E}_-(\mathbf{k}) = \delta(\mathbf{k} - \mathbf{n})
+\mathbf{n} = \mathbf{n_R} + i \mathbf{n_I}
+ \mathbf{E}(\mathbf{x},t) = \mathbf{E}_0 e^{- \mathbf{n_I} \cdot \mathbf{x} } e^{i ( \mathbf{n_R} \cdot \mathbf{x} - v |\mathbf{n}| t ) } 
+\mathbf{E}_+(\mathbf{k})
+\mathbf{E}_-(\mathbf{k})
+\mathbf{E}_-(\mathbf{k}) = \delta[\mathbf{k} - (\mathbf{n_R} + i \mathbf{n_I})]
+ \mathbf{k}
+k_1
+k_2
+\omega
+k_1
+k_2
+(1)
+E(x,t) = \int \hat E(x_3,k_1,k_2,\omega) e^{i(k_1 x_1 + k_2 x_2 - \omega t)} dk_1 dk_2 d\omega,  \quad \quad (1)
+\omega^2 + v^2(k_1^2 + k_2^2) \hat E = v^2 \frac{\partial^2 \hat E}{\partial x_3^2}

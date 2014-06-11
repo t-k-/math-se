@@ -1,0 +1,29 @@
+\vec{x}= f(\vec{x})
+f
+\vec{x}_1
+\vec{x}_2
+f
+||\vec{x}_1-\vec{x}_2||
+\infty
+1
+m
+d = 2
+x \in \mathbb{R}^n
+\begin{array}{rll} f_1 (x) &:= x^T Q_1 x + r_1^T x + s_1 &= 0\\ f_2 (x) &:= x^T Q_2 x + r_2^T x + s_2 &= 0\\         &   \vdots                    &   \\ f_m (x) &:= x^T Q_m x + r_m^T x + s_m &= 0\\ \end{array}
+Q_i \in \mathbb{R}^{n \times n}
+r_i \in \mathbb{R}^{n}
+s_i \in \mathbb{R}
+x_i, x_2 \in \mathbb{R}^n
+2 m
+\begin{array}{c}\displaystyle\bigwedge_{i=1}^m \left( x_1^T Q_i x_1 + r_i^T x_1 + s_i = 0 \right)\\ \displaystyle\bigwedge_{i=1}^m \left( x_2^T Q_i x_2 + r_i^T x_2 + s_i = 0 \right)\end{array}
+\|x_1-x_2\|
+\|x_1-x_2\|_1
+\|x_1-x_2\|_{\infty}
+\|x_1-x_2\|_2
+\begin{array}{ll} \displaystyle\text{maximize} & \|x-x_2\|_2^2\\ \text{subject to} & \begin{array}{c}\displaystyle\bigwedge_{i=1}^m \left( x_1^T Q_i x_1 + r_i^T x_1 + s_i = 0 \right)\\ \displaystyle\bigwedge_{i=1}^m \left( x_2^T Q_i x_2 + r_i^T x_2 + s_i = 0 \right)\end{array}\end{array}
+\infty
+1
+\vec{x}_1-\vec{x}_2
+x_1^2-2x_1=0,\qquad x_{k+1}-x_{k}^2=0\quad \text{for } k=1,\dots,n-1
+(0,0,\dots,0)
+(2,4,8,\dots, 2^n)

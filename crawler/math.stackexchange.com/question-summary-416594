@@ -1,0 +1,21 @@
+Ly=-y''-y
+y(0)=y(1)=0
+-g''(x)-g(x)=\delta(x-s)
+x\neq s
+g(x,s)=C_1 \cos(x)+ C_2 \sin(x)
+x<s
+x=0
+G(0,s)=C_1 \quad \Longleftrightarrow \quad C_1=0
+G(1,s)
+x\neq s
+x<s
+s\neq1
+x>s
+x=1
+G(1,s)=C_3\cos(1)+C_4\sin(1)=0
+G(x,s)=\begin{cases} C_2 \sin(x) & x<s \\ C_3 \cos(x)+C_4 \sin(x) & s<x\end{cases}
+G(x, s)=\frac{1}{\sin(1)}\begin{cases}\sin(x)\sin(1-s) & 0\leq x\leq s \\ \sin(1-x)\sin(s) & s\leq x\leq 1 \end{cases}
+ g(x,s) = \begin{cases} c_1 \sin(x) & 0 < x < s < 1 \\ c_2 \sin(x-1) & 0 < s < x < 1\end{cases} 
+ \begin{pmatrix} -\sin(s) & \sin(s-1) \\ - \cos(s) & \cos(s-1)\end{pmatrix} \begin{pmatrix} c_1 \\ c_2\end{pmatrix} = \begin{pmatrix} 0 \\ -1 \end{pmatrix} 
+ \begin{pmatrix} c_1 \\ c_2\end{pmatrix} = -\frac{1}{\sin(1)}\begin{pmatrix} \sin(s-1) \\ \sin(s) \end{pmatrix} 
+ g(x,s) = \begin{cases} \frac{\sin(x)\sin(1-s)}{\sin(1)} & 0 < x < s < 1 \\ \\ \frac{\sin(1-x) \sin(s)}{\sin(1)} & 0 < s < x < 1\end{cases} 

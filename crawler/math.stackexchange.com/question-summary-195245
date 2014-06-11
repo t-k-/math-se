@@ -1,0 +1,36 @@
+X
+[0,L]
+X
+f_X (x) = \displaystyle\left\{\begin{array}{rl} \frac{1}{L} & \textrm{if} \quad{} x \in [0,L]\\ 0 & \textrm{otherwise}\end{array}\right.
+Y = |X_1 - X_2|
+\mathbb{E}(Y) = \mathbb{E}( |X_1 - X_2| )
+g
+g (x_1,x_2) = |x_1 - x_2| = \displaystyle\left\{\begin{array}{rl} x_1 - x_2 & \textrm{if} \quad{} x_1 \geq x_2\\ x_2 - x_1 & \textrm{if} \quad{} x_2 \geq x_1\end{array}\right.
+X_1
+X_2
+f_{X_1 X_2} (x_1, x_2) = f_{X_1} (x_1) f_{X_2} (x_2) = 1 / L^2
+[0,L] \times [0,L]
+\mathbb{E}(Y) = \mathbb{E}(g(X_1,X_2))
+\begin{array}{rl} \mathbb{E}(Y) &= \displaystyle\int_{0}^L\int_{0}^L g(x_1,x_2) \, f_{X_1 X_2} (x_1, x_2) \,d x_1 \, d x_2\\ &= \frac{1}{L^2}\displaystyle\int_{0}^L\int_{0}^L |x_1 - x_2|  \,d x_1 \, d x_2\\ &= \frac{1}{L^2}\displaystyle\int_{0}^L\int_{0}^{x_1} (x_1 - x_2) \,d x_2 \, d x_1 + \frac{1}{L^2}\displaystyle\int_{0}^L\int_{x_1}^{L} (x_2 - x_1) \,d x_2 \, d x_1\\ &= \frac{L^3}{6 L^2} + \frac{L^3}{6 L^2} = \frac{L}{3}\end{array}
+X,Y
+(0,1)
+\mathbb{E}(A)=\mathbb{E}(B)=\mathbb{E}(C),
+A+B+C=1
+\mathbb{E}(B)=\mathbb{E}(\mbox{distance})={1\over 3}.
+(A,B,C):=(\min(X,Y),\ \max(X,Y)-\min(X,Y),\ 1-\max(X,Y))
+X_1
+X_2
+f_X(x) = [0<x<1]
+X \stackrel{d}{=} 1-X
+L=1
+X_1, X_2
+[0,1]
+X_1=x_1
+P(X_2<x_1) = x_1
+E(X_2|X_2<x_1)=\frac{x_1}2
+E(X_2|X_2>x-1) = x_1+\frac{1-x_1}2=\frac{1+x_1}2
+E(|X_2-x_1|) = x_1\cdot\frac{x_1}2+(1-x_1)\cdot \frac{1-x_1}2=\frac12-x_1+x_1^2
+L
+1
+\frac L 3
+E(|X_2-X_1|) = \int_0^1E(|X_2-x|)dx = \left[\frac12x-\frac12x^2+\frac13x^3\right]_0^1=\frac13.

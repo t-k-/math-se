@@ -1,0 +1,41 @@
+X
+M
+x\in X
+y\in M
+\delta = \inf_{\hat{y}\in M}||x-\hat{y}|| = ||x-y||.
+(y_n)
+M
+\delta_n \longrightarrow \delta \,\,\,\,\,\text{ where }\,\,\,\,\,\delta_n=||x-y_n||\,\,\,\,(^*).
+(y_n)
+y_n-x=v_n
+||v_n||=\delta_n
+M
+1/2(y_n+y_m)\in M
+y_n-y_m=v_n-v_m
+||v_n+v_m||=||y_n+y_m-2x||=2||1/2(y_n+y_m)-x||\geq 2\delta
+(^*)
+(y_n)
+||y_n-y_m||^2=||v_n-v_m||^2=-||v_n+v_m||^2+2(||v_n||^2+||v_m||^2)\leq -(2\delta)^2+2(\delta_n^2+\delta_m^2)(^{**})
+(^*)
+(^{**})
+(y_n)
+(y_n)
+\epsilon>0
+N
+m, n > N
+||y_m-y_n||<\epsilon
+N
+\epsilon
+\lim\limits_{n\to\infty}\delta_n=\delta
+\lim\limits_{n\to\infty}\delta_n^2=\delta^2
+\varepsilon>0
+N
+n>N
+\delta_n^2-\delta^2<\varepsilon^2/4
+m,n>N
+\varepsilon>0
+N
+m,n>N
+\Vert y_n-y_m\Vert<\varepsilon
+\{y_n:n\in\mathbb{N}\}
+ \Vert y_n-y_m\Vert^2=2(\delta_n^2-\delta^2)+2(\delta_m^2-\delta^2)<2\varepsilon/4+2\varepsilon/4=\varepsilon^2 

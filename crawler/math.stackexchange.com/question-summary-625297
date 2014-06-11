@@ -1,0 +1,40 @@
+c=m^e \bmod n
+c
+0<m<n
+e
+n
+c
+m
+e=3
+n=2,3,5,6,10,11,15,17
+c
+0<m<n
+n
+e
+n
+n=pq
+p,q
+n = pq
+p,q
+e
+\phi(n) = (p-1)(q-1)
+\mathsf{enc}: m \mapsto m^e \bmod n
+\{0,\dots,n-1\}
+c \in \{0,\dots,n-1\}
+c = \mathsf{enc}(c^d \bmod n)
+d = e^{-1} \bmod{\phi(n)}
+c = c^{de} \bmod n
+de = 1+k\phi(n) = 1+k(p-1)(q-1)
+c
+p
+c^{p-1} = 1 \bmod p
+c^{de} = c \bmod p
+c
+p
+c = 0 \bmod p
+c^{de} = 0 = c \bmod p
+q
+c^{de} = c \bmod n
+c^{de} = c^{1+k(p-1)(q-1)} = c\times (c^{p-1})^{k(q-1)} \mod p,
+m
+n

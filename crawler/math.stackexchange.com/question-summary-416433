@@ -1,0 +1,33 @@
+Ly=-y''-y
+y(0)=y(1)=0
+-g''(x)-g(x)=\delta(x-s)
+x\neq s
+g(x,s)=C_1\cos(x)+ C_2 \sin(x)
+x<s
+x=0
+G(0,s)=C_1\cdot 1+C_2\cdot 0 \implies C_1=0
+G(1,s)
+x < s < 1
+x>s
+x=1
+G(1,s)=C_3\cos1+C_4\sin1=0
+G(x,s)=\begin{cases} C_2 \sin(x) & x<s\\ C_3\cos(x)+C_4\sin(x)& s<x\end{cases}
+G(x, s)=\frac{1}{\sin1}\begin{cases}\sin(x)\sin(1-s)& 0\leq x\leq s \\ \sin(1-x)\sin(s) & s\leq x\leq 1\end{cases}
+x > s
+g'' + g = 0
+ g(x,s) = C_3 \cos (1-x) + C_4 \sin(1-x) 
+x = 1
+C_3 = 0
+s
+\delta
+s
+g'(x,s)
+x = s
+-1
+g
+\delta
+ \lim_{x \nearrow s} g'(x,s) = C_2 \cos(s) \qquad \lim_{x \searrow s} g'(x,s) = -C_4 \cos(1-s) 
+ \lim_{x\nearrow s} g(x,s) = C_2 \sin(s) \qquad \lim_{x\searrow s} g(x,s) = C_4 \sin(1-s) 
+ \begin{align} C_2 \sin(s) - C_4 \sin(1-s) &= 0\tag{continuity} \\ C_2 \cos(s) + C_4 \cos(1-s) &= 1 \tag{jump condition}\end{align} 
+ \sin (a+b) = \sin a \cos b + \sin b \cos a 
+ C_2 = \frac{\sin(1-s)}{\sin 1} \qquad C_4 = \frac{\sin(s)}{\sin 1} 

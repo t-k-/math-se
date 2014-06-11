@@ -1,0 +1,8 @@
+g(r)
+g(r)
+ S(q) = 1 + \rho \int_V d\vec{r} e^{-i\vec{q}\vec{r}} g(r) 
+x_n = ng_n
+q' = \frac{qr_{max}}{2\pi}
+ \int_V d\vec{r} e^{-i\vec{q}\vec{r}} g(r) = 2\pi \int_{-1}^{1}d\cos{\theta} \int_{0}^{r_{max}}dr r^2 e^{-iqr \cos\theta}g(r) = \frac{4 \pi}{q} \int_{0}^{r_{max}}dr r \sin{qr} g(r) 
+ Im\left(\frac{4 \pi}{q} \int_{0}^{r_{max}}dr g(r)re^{iqr}\right) 
+ Im\left(\frac{4 \pi}{q} \sum_{n=0}^{k}\frac{r_{max}}{k} g(n\frac{r_{max}}{k})n\frac{r_{max}}{k}e^{iqn\frac{r_{max}}{k}}\right) = Im\left(\frac{4 \pi r_{max}^2}{k^2q} \sum_{n=0}^{k} n g_n e^{-i 2\pi \frac{q'}{k} n}\right) 

@@ -1,0 +1,13 @@
+\epsilon_t\text{ ~ i.i.d.}(0,1)
+X_t=\epsilon_{t}+0.5\epsilon_{t-1}
+E(X_t)=0
+E(\epsilon_{t})=0
+s=t+1
+Cov(X_t,X_s)=E[(\epsilon_t+0.5\epsilon_{t-1})(\epsilon_{t+1}+0.5\epsilon_{t})]=E[\epsilon_{t}\epsilon_{t+1}+0.5\epsilon_{t}^2+0.5\epsilon_{t-1}\epsilon_{t+1}+0.25\epsilon_{t-1}\epsilon_{t}]=0+0.5E(\epsilon_{t}^2)+0.5E(\epsilon_{t-1}\epsilon_{t+1})+0=0.5E(\epsilon_{t}^2)+0.5E(\epsilon_{t-1}\epsilon_{t+1})=\ldots\text{?}
+\epsilon_t
+(0,1)
+E[\epsilon_t]=0
+E[(\epsilon_t-E[\epsilon_t])^2]=E[(\epsilon_t-0)^2]=1
+t
+Cov(X_t,X_s)=0.5*1+0.5*Cov(e_t,e_{t+1})
+Cov(\epsilon_t,\epsilon_{t+1})=E[(\epsilon_t-E[\epsilon_t])(\epsilon_{t+1}-E[\epsilon_{t+1}])]=E[\epsilon_t\epsilon_{t+1}]

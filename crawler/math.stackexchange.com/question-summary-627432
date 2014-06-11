@@ -1,0 +1,24 @@
+ \sum\limits_{k=0}^{n-1}\dfrac{1}{\binom{n}{k}(n-k)} 
+ \dfrac{1}{n!}\sum\limits_{k=0}^{n-1}k![(n-1)-k]! 
+ \sum\limits_{k=0}^{n-1}\dfrac{1}{2^k (n-k)} 
+ \dfrac{1}{2^n}\sum\limits_{k=1}^{n}\dfrac{2^k}{k} 
+\frac1n \sum_{k=0}^{n-1} \dfrac1{\binom{n-1}{k}}.
+\sum_{k=0}^{n-1} \frac{1}{\binom{n}{k}(n-k)} \sim \frac{2}{n-1} + \frac{4}{(n+1)(n-1)(n-6)}+O(n^{-6})
+T
+T
+T
+(n-2T)
+\frac{1}{n}\frac{1}{\binom{n-1}{T}}<\frac{1}{n}\frac{T!}{(n-T)^T}
+\frac{(n-2T)T!}{n(n-T)^T} < \frac{T!}{(n-T)^T}
+\frac{2}{n}\sum_{k=0}^{T-1}\frac{1}{\binom{n-1}{k}} \leq \sum_{k=0}^{n-1} \frac{1}{\binom{n}{k}(n-k)} \leq \frac{2}{n}\sum_{k=0}^{T-1}\frac{1}{\binom{n-1}{k}} + \frac{T!}{(n-T)^T}
+T=2
+\frac{2}{n} + \frac{2}{n(n-1)}\leq \sum_{k=0}^{n-1} \frac{1}{\binom{n}{k}(n-k)} \leq \frac{2}{n} + \frac{2}{n(n-1)} + \frac{2}{(n-2)^2}
+\frac{2}{n-1} \leq \sum_{k=0}^{n-1} \frac{1}{\binom{n}{k}(n-k)} \leq \frac{2}{n-1} + \frac{2}{(n-2)^2}
+(1)
+(4)
+(6)
+ \begin{align} &\frac{(n-j+1)!}{n!}\sum_{k=0}^{n-j}\frac{(k+j)!}{k!}\frac{2^{-k-j}}{n-j-k+1}\\ -&\frac{(n-j+1)!}{n!}\sum_{k=0}^{n-j}\frac{(k+j)!}{k!}\frac{2^{-k-j}}{n-j+1}\\ =&\frac{(n-j+1)!}{n!}\sum_{k=0}^{n-m}\frac{(k+j)!}{k!}\frac{k\,2^{-k-j}}{(n-j-k+1)(n-j+1)}\\ =&\frac{(n-(j+1)+1)!}{n!}\sum_{k=0}^{n-(j+1)}\frac{(k+(j+1))!}{k!}\frac{2^{-k-(j+1)}}{n-(j+1)-k+1}\tag{3} \end{align} 
+ \begin{align} (n+1)\sum_{k=0}^n\frac{2^{-k}}{n-k+1} &=\sum_{j=0}^{m-1}\frac{(n-j)!}{n!}\sum_{k=0}^{n-j}\frac{(k+j)!}{k!}2^{-k-j}\\ &+\frac{(n-m+1)!}{n!}\sum_{k=0}^{n-m}\frac{(k+m)!}{k!}\frac{2^{-k-m}}{n-m-k+1}\\ &=\sum_{j=0}^{m-1}\frac{2}{\binom{n}{j}}+O\left(\frac1{n^m}\right)\tag{4} \end{align} 
+ \begin{align} \sum_{k=0}^\infty\frac{(k+j)!}{k!}2^{-k-j} &=j!\sum_{k=0}^\infty\binom{k+j}{k}2^{-k-j}\\ &=j!2^{-j}\sum_{k=0}^\infty(-1)^k\binom{-j-1}{k}2^{-k}\\ &=j!2^{-j}\left(1-\frac12\right)^{-j-1}\\[12pt] &=2j!\tag{5} \end{align} 
+ \sum_{m=0}^n\frac1{\binom{n}{m}}=\sum_{j=0}^{m-1}\frac{2}{\binom{n}{j}}+O\left(\frac1{n^m}\right)\tag{6} 
+\color{#00f}{\large% \sum_{k = 0}^{n - 1}{1 \over {n \choose k}\pars{n - k}} ={1 \over 2^{n}}\bracks{H_{n} - n\ _{4}{\rm F}_{2}\pars{1,1,1,-n;2,2;-1}}} 

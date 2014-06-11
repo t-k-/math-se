@@ -1,0 +1,14 @@
+\frac{1}{b^2}\int_0^\infty z^{-2}\exp(-a z)\sin^2(b z)\, \mathrm dz
+a,b>0
+\frac{1}{b} \tan^{-1}(c) - \frac{1}{ac^2} \ln(1 + c^2)
+c=2b/a
+z
+\sin
+-1
+1
+I(a)
+I(\infty) = 0
+I^\prime(\infty)=0
+\begin{eqnarray}    I^{\prime\prime}(a) &=& \frac{1}{b^2} \int_0^\infty \exp(-a z) \sin^2(b z) \mathrm{d}z = \frac{1}{2b^2} \int_0^\infty \exp(-a z) (1-\cos(2 b z)) \mathrm{d}z \\    &=& \frac{1}{2b^2} \Re \int_0^\infty  (\exp(-a z)-\exp(-(a+ 2i b) z)) \mathrm{d}z = \frac{1}{2b^2} \Re\left(\frac{1}{a} - \frac{1}{a+2 i b}\right) = \frac{2}{a} \frac{1}{a^2 + 4 b^2} \end{eqnarray} 
+    I^{\prime}(a) = \int_{a}^\infty \frac{2}{t} \frac{1}{t^2 + 4 b^2} \mathrm{d}t =  \frac{1}{4 b^2} \log\left(1+ \frac{4b^2}{a^2}\right) 
+    I(a) = \int_{a}^\infty I^{\prime}(t) \mathrm{d}t = \frac{1}{b} \arctan\left(\frac{2b}{a}\right) - \frac{a}{4b^2} \log\left(1+ \frac{4b^2}{a^2}\right) 

@@ -1,0 +1,9 @@
+f(x)
+f(x) =\sum^{\infty}_{n=1} \sin\frac{2x}{3^n} \sin\frac{x}{3^n}
+n = 1
+2
+3
+\infty
+\sin\alpha\sin\beta=\frac12\left(\cos(\alpha-\beta)-\cos(\alpha+\beta)\right)\implies
+\sin\frac{2x}{3^n}\sin\frac x{3^n}=\frac12\left(\cos\frac x{3^n}-\cos\frac x{3^{n-1}}\right)\implies
+\sum_{n=1}^\infty\sin\frac{2x}{3^n}\sin\frac x{3^n}=\frac12\left(\cos\frac x3-\cos x+\cos\frac x9-\cos\frac x3+\cos\frac x{27}-\cos\frac x9+\ldots\right)

@@ -1,0 +1,16 @@
+(X,Y)
+f_{(X,Y)}(x,y) = e^{-x}
+ 0 \le y\le x<\infty
+0\text{ elsewhere}
+(X,Y)
+\int_0^\infty \int_y^\infty e^{-x}\,dx\,dy
+\int_0^\infty e^{-y}dy
+ 0,\quad x<0 \quad \text{or} \quad \ y\ <0
+1-e^{-y}-ye^{-x},\quad 0\le y\le x
+1-e^{-x}-xe^{-x},\quad y>x\ge0
+0\le y\le x
+0\le x < y
+ \Pr(X\le x\ \&\ Y\le y) =\Pr(X\le x\ \&\ Y\le x) = \int_0^x \int_v^x f_{X,Y}(u,v) \, du  \, dv. 
+x<0
+y<0
+F_{X,Y}(x,y)=0

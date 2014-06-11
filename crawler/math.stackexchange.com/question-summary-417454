@@ -1,0 +1,21 @@
+K
+\hat{K}
+(0,0)
+(1,0)
+(0,1)
+F_{K}: \hat{K} \to K
+F_{K}(\mathbf{\hat{x}}) = B_{K}\mathbf{\hat{x}} + \mathbf{b}_{K}
+\int_{K}\nabla\phi_{i}\cdot\nabla\phi_{j} = \frac{1}{\text{det} \;B_{K}}\int_{\hat{K}}B_{K}^{-T}(\nabla\hat{\phi_{i}}\circ F_{K}^{-1})\cdot B_{K}^{-T}(\nabla\hat{\phi}_{j}\circ F_{K}^{-1})
+\phi_{i}
+\hat{\phi_{i}}
+\int_{K}(\nabla\times\varphi_{i}) \cdot (\nabla\times\varphi_{j})
+\varphi_{i}
+\hat{K}
+ \nabla \times \psi = \begin{vmatrix}\partial_x&\partial_y\newline \psi_1&\psi_2 \end{vmatrix} = \partial_x \psi_2  - \partial_y \psi_1 = \nabla \psi_2 \cdot (1,0) + \nabla\psi_1\cdot (0,-1). 
+\phi_i
+\psi_j =  (c\phi_{j,1}, d\phi_{j,2})
+\psi_i = (a\phi_{i,1}, b\phi_{i,2}),
+ \nabla \times \psi_i = b\nabla \phi_{i,2}\cdot (1,0) + a\nabla\phi_{i,1}\cdot (0,-1), 
+ \nabla \phi_i(\mathbf{x}) = \frac{1}{|\det B_K^T|} B_K^T (\nabla\hat{\phi_{i}}\circ F_{K}^{-1})(\mathbf{x}), 
+ \nabla \times \psi_i(\mathbf{x}) = \frac{b}{|\det B_K^T|} B_K^T (\nabla\hat{\phi}_{i,2}\circ F_{K}^{-1})(\mathbf{x})\cdot (1,0) +  \frac{a}{|\det B_K^T|} B_K^T (\nabla\hat{\phi}_{i,2}\circ F_{K}^{-1})(\mathbf{x})\cdot (0,-1). 
+dxdy = |\det B_K^T|d\hat{x}d\hat{y} 

@@ -1,0 +1,13 @@
+nth
+X
+p
+q=1-p
+x \in \mathbb{N}
+ f(x) = pq^{x-1} 
+ E[X^{n-1}] = \sum_{x=1}^\infty x^{n-1}pq^{x-1} 
+ E[X^{n}] = \sum_{x=1}^\infty x^{n}pq^{x-1}= \sum_{x=1}^\infty x^{n-1}pxq^{x-1} \\ = \sum_{x=1}^\infty x^{n-1}p\frac{d}{dq}q^{x} 
+ = \frac{d}{dq}\sum_{x=1}^\infty x^{n-1}pq^{x} \\ = \frac{d}{dq}q\sum_{x=1}^\infty x^{n-1}pq^{x-1} \\ = \frac{d}{dq}qE[X^{n-1}] 
+n=2
+ E[X^2] = \frac{d}{dq}qE[X^{n-1}] = \frac{d}{dq}q\frac{1}{1-q} \\ = \frac{1}{(1-q)^2} = \frac{1}{p^2} 
+ \sigma^2 = E[X^2] - (E[X])^2 
+ \sigma^2 = \frac{1}{p^2} - \frac{1}{p^2} = 0 

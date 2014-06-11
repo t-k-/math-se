@@ -1,0 +1,49 @@
+y''-y'+y=x^2e^x\cos{x}
+y''-y'+y=x^2\cos{x}
+y''-y'+y=e^x\cos{x}
+y''-y'+y=x^2e^x
+f(x)=x^2e^x\cos{x}
+\mathcal{L}.
+\mathcal{L}(y)=Y(p).
+y
+Y(p).
+y(0), y'(0)
+C_1, C_2.
+ \mathcal{L}(y')=p Y(p)-y(0),\\ \mathcal{L}(y'')=p^2 Y(p)-y'(0)-p y(0),\\ \text{and, using the standard rules  for L.t.}\\ \mathcal{L}({x}^{2}{{\rm e}^{x}}\cos \left( x \right))=\frac{1}{\left( p-1-i \right) ^{3}}+ \frac{1}{\left( p-1+i \right) ^{3}} 
+  \left( {p}^{2}-p+1 \right) Y \left( p \right) -py \left( 0 \right) +y  \left( 0 \right) -  y'  \left( 0 \right) =  \frac{1}{\left( p-1-i \right) ^{3}}+ \frac{1}{\left( p-1+i \right) ^{3}}, 
+ Y(p)={\frac {1}{ \left( p-1-i \right) ^{3} \left( {p}^{2}-p+1 \right) }}+{\frac {1}{ \left( p-1+i \right) ^{3} \left( {p}^{2} -p+1 \right) }}-{\frac {-py \left( 0 \right) +y \left( 0 \right) -  y''   \left( 0 \right) }{{p}^{2}-p+1}}. 
+ y(x)=\mathcal{L}^{-1}(Y(p))=\left( 2\,\cos \left( x \right)  \left( -3+x \right) +\sin \left( x \right)  \left( 6-4\,x+{x}^{2} \right)  \right) {{\rm e}^{x}}+1/3\,  \left( 3\,\cos \frac{\sqrt {3}x}{2}  \left( 6+y \left( 0  \right)  \right) +\sin \frac{\sqrt {3}x}{2}    \left( -10+2\, y''   \left( 0 \right) -y \left( 0  \right)  \right)  \right) {{\rm e}^{\frac 12\,x}}. 
+ y(x)={{e}^{\frac 12\,x}}(\sin \frac{\sqrt {3}x}{2} { C_1}+\cos \frac{\sqrt {3}x}{2} {C_2})+ \left( 2\,\cos \left( x \right)  \left( x-3  \right) +\sin \left( x \right)  \left( 6-4\,x+{x}^{2} \right)   \right) {{ e}^{x}}, 
+x^2\exp(x)\cos(x)
+y_p(x)=(A\exp(x)+B\exp(x)+Bx\exp(x)+2Cx\exp(x)+Cx^2\exp(x))\sin(x)+(A\exp(x)+Bx\exp(x)+Cx^2\exp(x))\cos(x)+(D\exp(x)+E\exp(x)+Ex\exp(x)+2Fx\exp(x)+Fx^2\exp(x))*cos(x)-(D\exp(x)+Ex\exp(x)+Fx^2\exp(x))\sin(x)
+y''_p(x)=(A\exp(x)+2B\exp(x)+Bx\exp(x)+2C\exp(x)+4Cx\exp(x)+Cx^2\exp(x))\sin(x)+(2(A\exp(x)+B\exp(x)+Bx\exp(x)+2Cx\exp(x)+Cx^2\exp(x)))\cos(x)-(A\exp(x)+Bx\exp(x)+Cx^2\exp(x))\sin(x)+(D\exp(x)+2E\exp(x)+Ex\exp(x)+2F\exp(x)+4Fx\exp(x)+Fx^2\exp(x))\cos(x)-(2(D\exp(x)+E\exp(x)+Ex\exp(x)+2Fx\exp(x)+Fx^2\exp(x)))\sin(x)-(D\exp(x)+Ex\exp(x)+Fx^2\exp(x))\cos(x)
+y''_p(x)-y'_p(x)+y_p(x)=\exp(x)(2\sin(x)Cx+\cos(x)Bx+4\cos(x)Cx+\cos(x)Cx^2+2\cos(x)Fx-\sin(x)Ex-4\sin(x)Fx-\sin(x)Fx^2+\sin(x)B+2\sin(x)C+\cos(x)A+2\cos(x)B+\cos(x)E+2\cos(x)F-\sin(x)D-2\sin(x)E)
+2C-E-4F=0,~~B+4C+2F=0,~~C=1,~~-F=0,~~B+2C-D-2E=0,~~A+2B+E+2F=0
+A=6,B=-4,C=1,F=0,E=2,D=-6
+\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\ceil}[1]{\,\left\lceil #1 \right\rceil\,}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\fermi}{\,{\rm f}}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\half}{{1 \over 2}}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\iff}{\Longleftrightarrow}  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\ol}[1]{\overline{#1}}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert\, #1 \,\right\vert}
+\ds{{\rm y}''\pars{x} - {\rm y}'\pars{x} + {\rm y}\pars{x} = \fermi\pars{x}}
+\fermi
+{\rm y_{p}}\pars{x}
+\ds{{\rm y_{p}}''\pars{x} - {\rm y_{p}}'\pars{x} + {\rm y_{p}}\pars{x} = 0}
+\pars{1}
+{\rm G}\pars{x,t}
+\ds{{\rm G}\pars{x,t}}
+\pars{2}
+\ds{{\rm y}''\pars{x} - {\rm y}'\pars{x} + {\rm y}\pars{x} = 0}
+\ds{\expo{x/2}\bracks{A\sin\pars{kx} + B\cos\pars{kx}}}
+\ds{k = \root{3}/2}
+{\rm G}\pars{x,t}
+\pars{3}
+A = B = 0
+{\rm G}\pars{t^{-},t} = {\rm G}\pars{t^{+},t}
+\pars{4}
+\ds{{\rm y}\pars{x} = {\rm y_{p}}\pars{x} + {\expo{x/2} \over k} \int_{-\infty}^{x}\expo{-t/2}\sin\pars{k\bracks{x - t}}\fermi\pars{t}\,\dd t = {\rm y_{p}}\pars{x} -  {1 \over k}\int_{-\infty}^{0}\expo{-t/2}\sin\pars{kt}\fermi\pars{t + x}\,\dd t}
+\tt\mbox{Just plug your function}\ \fermi\pars{x - t}\ \mbox{in this expression !!!}
+ {\rm y_{p}}\pars{0}\quad\mbox{and}\quad{\rm y_{p}}'\pars{0}\,,\qquad \mbox{( other cases can be handled in a similar way )}\tag{1} 
+ {\rm y}\pars{x} ={\rm y_{p}}\pars{x} + \int_{-\infty}^{\infty}{\rm G}\pars{x,t}\fermi\pars{t}\,\dd t \tag{2} 
+ \pars{\totald[2]{}{x} - \totald{}{x} + 1}{\rm G}\pars{x,t} = \delta\pars{x - t}\,, \qquad \left\vert% \begin{array}{rcl} {\rm G}\pars{0,t} & = & 0 \\[2mm] \left.\partiald{{\rm G}\pars{x,t}}{x}\right\vert_{x\ =\ 0} & = & 0 \end{array}\right.\tag{3} 
+\left\lbrace% \begin{array}{rcl} \pars{\totald[2]{}{x} - \totald{}{x} + 1}{\rm G}\pars{x,t} = 0 & \mbox{if} & x \not= t \\[2mm] \left.\partiald{{\rm G}\pars{x,t}}{x}\right\vert_{x\ =\ t^{-}}^{x\ =\ t^{+}} = 1&& \end{array}\right.\tag{4} 
+ {\rm G}\pars{x,t} = \left\lbrace% \begin{array}{lcl} \expo{x/2}\bracks{A\sin\pars{kx} + B\cos\pars{kx}} & \mbox{if} & x < t \\ \expo{x/2}\bracks{C\sin\pars{kx} + D\cos\pars{kx}} & \mbox{if} & x > t \end{array}\right. 
+ \left. \begin{array}{rcrcl} \sin\pars{kt}C & + & \cos\pars{kt}D & = & 0 \\ \cos\pars{kt}C & - & \sin\pars{kt}D & = & {\expo{-t/2} \over k} \end{array}\right\rbrace\ \imp\ \left\lbrace% \begin{array}{rcl} C & = & \phantom{-}{\expo{-t/2}\cos\pars{kt} \over k} \\[2mm] D & = & -\,{\expo{-t/2}\sin\pars{kt} \over k} \end{array}\right. 
+ {\rm G}\pars{x,t} =\left\lbrace% \begin{array}{lcl} 0 & \mbox{if} & x < t \\[2mm] {\expo{\pars{x - t}/2}\sin\pars{k\bracks{x - t}} \over k} & \mbox{if} & x > t \end{array}\right. 
+\color{#0000ff}{\large% {\rm y}\pars{x} = {\rm y_{p}}\pars{x} + {1 \over k} \int_{0}^{\infty}\expo{t/2}\sin\pars{kt}\fermi\pars{x - t}\,\dd t\,, \qquad k = {\root{3} \over 2}} 

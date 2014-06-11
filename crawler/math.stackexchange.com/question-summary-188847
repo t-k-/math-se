@@ -1,0 +1,39 @@
+X-I=a \cdot (X\cdot U^T + U \cdot X)
+0<a<1
+U
+n \times n
+I
+n \times n
+U=(u_{ij}), X=\text{diag}(x_1,\ldots,x_n) \in \mathbb{C}^{n\times n}
+B=(b_{ij}):=a(XU^T+UX)
+X
+i,j
+\tag{1} X-I=a(XU^T+UX).  
+ b_{ij}=a\sum_{k=1}^n(x_i\delta_{ik}u_{jk}+u_{ik}x_k\delta_{kj})=ax_i(u_{ii}+u_{ji}). 
+ (1) \iff (x_i-1)\delta_{ij}=ax_i(u_{ii}+u_{ji}) \iff [\delta_{ij}-a(u_{ii}+u_{ji})]x_i=\delta_{ij}, 
+ (1-2au_{ii})x_i=1 \quad \forall 1 \le i \le n,\ \text{ and } (u_{ii}+u_{ji})x_i=0 \quad \forall j \ne i. 
+U
+1-2au_{ii} = 0
+i
+X
+U
+1-2au_{ii}\ne 0
+1 \le i \le n
+u_{ij}+u_{ii} \ne 0
+j \ne i
+X
+U
+1-2au_{ii}\ne 0
+1 \le i \le n
+u_{ij}+u_{ii}=0
+j \ne i
+ X=\text{diag}[(1-2au_{11})^{-1},\ldots,(1-2au_{nn})^{-1}]. 
+U = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
+X = \begin{bmatrix} x_1 & 0 \\ 0 & x_2 \end{bmatrix}
+ X-I = \begin{bmatrix} x_1-1 & 0 \\ 0 & x_2-1 \end{bmatrix} = a\begin{bmatrix} x_1 & 0 \\ x_2 & x_2 \end{bmatrix} + a\begin{bmatrix} x_1 & x_2 \\ 0 & x_2 \end{bmatrix}= a (X U^T + U X).
+ a x_2 = 0
+x_1(1-2a) = x_2(1-2a) = 1
+a \neq \frac{1}{2}
+x_1 \neq 0
+x_2 \neq 0
+U

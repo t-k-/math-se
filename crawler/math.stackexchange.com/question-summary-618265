@@ -1,0 +1,30 @@
+(\Omega,\mathcal{A},\mu)
+f,f_1,f_2,\ldots
+A,A_1,A_2,\ldots\in\mathcal{A}
+(f_n)
+f
+1_{A_n}
+1_A
+f_n1_{A_n}
+f1_A
+(f_n1_{A_n})_{n\in\mathbb{N}}
+f1_A
+(f_n1_{A_n})_{n\in\mathbb{N}}
+(f_n1_{A_n})_{n\in\mathbb{N}}
+f1_A
+\varepsilon>0
+(f_n)_{n\in\mathbb{N}}
+f
+h\geq 0
+h
+(1_{A_n}f_n)_{n\in\mathbb{N}}
+ \sup_{f_n\in (f_n)_{n\in\mathbb{N}}}\int 1_{\lvert f_n\rvert\geq h}\lvert f_n\rvert\, d\mu<\varepsilon. 
+ (\lvert 1_{A_n}f_n\rvert-h)^+\leq 1_{\lvert 1_{A_n}f_n\rvert\geq h}\lvert 1_{A_n}f_n\rvert\leq 1_{\lvert f_n\rvert\geq h}\lvert f_n\rvert. 
+ \int (\lvert 1_{A_n}f_n\rvert-h)^+\, d\mu\leq\int 1_{\lvert f_n\rvert\geq h}\lvert f_n\rvert\, d\mu\leq\sup_{f_n\in (f_n)_{n\in\mathbb{N}}}\int 1_{\lvert f_n\rvert\geq h}\lvert f_n\rvert\, d\mu<\varepsilon 
+ \sup_{1_{A_n}f_n\in (1_{A_n}f_n)_{n\in\mathbb{N}}}\int (\lvert 1_{A_n}f_n\rvert-h)^+\, d\mu<\varepsilon. 
+\varepsilon>0
+ \left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_Af\rvert>\varepsilon\right\}\\=\left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_{A_n}f+1_{A_n}f-1_Af\rvert>\varepsilon\right\}\\\subset \left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_{A_n}f\rvert+\lvert 1_{A_n}f-1_Af\rvert>\varepsilon\right\}\\\subset\left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_{A_n}f\rvert>\frac{\varepsilon}{2}\right\}\cup\left\{\omega\in\Omega:\lvert 1_{A_n}f-1_Af\rvert>\frac{\varepsilon}{2}\right\}\\=\left\{\omega\in\Omega:\lvert 1_{A_n}(f_n-f)\rvert>\frac{\varepsilon}{2}\right\}\cup\left\{\omega\in\Omega:\lvert f(1_{A_n}-1_A)\rvert>\frac{\varepsilon}{2}\right\}\\\subset\left\{\omega\in\Omega:\lvert f_n-f\rvert>\frac{\varepsilon}{2}\right\}\cup\underbrace{\left\{\omega\in\Omega:\lvert 1_{A_n}-1_A\rvert=1\right\}}_{=\left\{\omega\in\Omega:\lvert 1_{A_n}-1_A\rvert>\lambda\right\}\text{ for a }0<\lambda<1}. 
+ \mu(\left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_Af\rvert>\varepsilon\right\})\leq\mu(\left\{\omega\in\Omega:\lvert f_n-f\rvert>\frac{\varepsilon}{2}\right\}\cup\left\{\omega\in\Omega:\lvert 1_{A_n}-1_A\rvert>\lambda\right\})\\\leq\underbrace{\mu(\left\{\omega\in\Omega:\lvert f_n-f\rvert>\frac{\varepsilon}{2}\right\})}_{\to 0}+\underbrace{\mu(\left\{\omega\in\Omega:\lvert 1_{A_n}-1_A\rvert>\lambda\right\})}_{\to 0}\to 0 
+ \Longrightarrow \mu(\left\{\omega\in\Omega:\lvert 1_{A_n}f_n-1_Af\rvert>\varepsilon\right\})\to 0 
+(1_{A_n}f_n)_{n\in\mathbb{N}}
+1_Af

@@ -1,0 +1,28 @@
+X
+Y
+Z = X + Y
+P(Z \ge 15) = 1 - P(Z \le 15)
+P(Z \le 15) = \int_{0}^{15}\int_0^zf_x(x)f_y(z-x)dxdy
+z-x \ge 0
+z \ge x
+X
+Y
+X
+f_X(x) = \tfrac{1}{30}e^{-x/30}
+Y
+f_Y(y) = \tfrac{1}{30}e^{-y/30}
+Z = \text{max}(X,15)+Y
+Z > 30
+P(Z \le 30)
+Y > 15
+Z = \text{max}(X,15)+Y > 15+15 = 30
+0 \le Y \le 15
+X > 30-Y
+Z = \text{max}(X,15)+Y \ge (30-Y)+Y = 30
+0 \le X \le 30-Y
+Y \le 15
+X \le 30-Y
+Z \le 30
+Z \le 30
+P(Z \le 30) = \dfrac{1}{30^2}\displaystyle\int_{0}^{15}\int_{0}^{30-y}e^{-x/30}e^{-y/30}\,dx\,dy \approx 0.20953
+P(Z > 30) = 1-P(Z \le 30) \approx 0.79047

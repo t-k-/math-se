@@ -1,0 +1,20 @@
+12345678910111213\dots9899100101\dots
+1
+0
+g(n)
+n
+p
+g(n)=\sum_{1\leqslant k \leqslant n} 9 \times 10^{k-1} \times k  = \frac{ 9(n+1)10^n-10^{n+1}+1} {9} \qquad k,n \in \mathbb{Z^+}
+g(1)=9
+g(2)=189
+g(3)=2889
+g(4)=38889
+ p=10^{\lceil a \rceil} -1 - \left\lfloor \frac{g( \lceil a \rceil) - g(a)}{\lceil a \rceil} \right\rfloor,  g(a) = n \qquad a \in \mathbb{R^+}
+p
+n
+n
+r
+n
+p
+r = g(\lceil a \rceil ) - g(a) \mod  \lceil a \rceil 
+p = (a_r\dots a_1a_0)

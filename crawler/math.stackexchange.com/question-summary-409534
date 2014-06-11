@@ -1,0 +1,28 @@
+P
+P \wedge (P \vee Q)
+P \iff P \vee (Q \wedge \neg Q)
+\iff (P \vee Q) \wedge (P \vee \neg Q)
+\iff ((P \wedge (P \vee Q)) \vee  \neg Q \wedge (P \vee Q))
+\iff ((P \wedge (P \vee Q)) \vee (\neg Q \wedge P))
+T
+C
+ \begin{array}{rcll} P \land (P \lor Q) &\iff& (P \lor P) \land (P \lor Q) & \quad\text{by Idempotent Law}\\  &\iff& P \lor (P \land  Q) & \quad\text{by Distributive Law}\\  &\iff& (P \land T) \lor (P \land  Q) & \quad\text{by Identity Law}\\  &\iff& P \land (T \lor Q) & \quad\text{by Distributive Law}\\  &\iff& P \land T & \quad\text{by Domination Law}\\  &\iff& P & \quad\text{by Identity Law}\\ \end{array}
+P \land (P \lor Q) \iff P \iff P \lor (P \land  Q)
+P\wedge(P\vee Q)/\therefore P
+P\wedge\sim(P\wedge(P\vee Q))/\therefore P\wedge(\sim P\vee(\sim P\wedge \sim Q))/\therefore( \sim P\vee(\sim P\wedge \sim Q))\\\\ \therefore( \sim P\vee\sim P) \wedge (\sim P\vee\sim Q)\therefore\sim P
+P
+P \land (P \lor Q)
+\land
+\lor
+\land
+\land
+\lor
+\land
+\lor
+\;\equiv\;
+\;\iff\;
+\;P \equiv P \land \dots\;
+\;P \Rightarrow \dots\;
+\;\lnot P \lor \dots\;
+\;P \Rightarrow \dots\;
+ P \equiv P \land (P \lor Q) 

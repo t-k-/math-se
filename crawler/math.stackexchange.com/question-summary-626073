@@ -1,0 +1,5 @@
+x_{1} * v_{1} + x_{2} * v_{2} + ... x_{n} * v_{n} = revenue
+4 * v_{1} + 2 * v_{2} + 8 * v_{3} + 7 * v_{4} = 83
+deviation=revenue_{today}-\sum (v_{yesterday}*x_{today})
+weightedDiff=deviation*\frac{\sum x_{today}}{\sum (x_{today}^2)}
+v_{today}=v_{yesterday}+weightedDiff*\frac{x_{today}}{\sum x_{today}}

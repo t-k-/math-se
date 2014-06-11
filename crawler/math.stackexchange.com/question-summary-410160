@@ -1,0 +1,8 @@
+\int\limits_0^1\frac{(1-x)e^x}{x+e^x}\,dx.
+\frac{(1-x)e^x}{x+e^x}=\frac{(1-x)}{1+xe^{-x}}=(1-x)(1-xe^{-x}+x^2e^{-2x}-...)=
+=(1-x)\sum_{i=0}^{\infty}(-1)^ix^ie^{-ix}=
+=\sum_{i=0}^{\infty}(-1)^ix^ie^{-ix}-\sum_{i=0}^{\infty}(-1)^ix^{i+1}e^{-ix}
+I(m,k)=\int_{0}^{1}x^me^{-kx}dx=
+=\frac{m!}{k^{m+1}}-e^{-k}\sum_{j=0}^{m}j!\binom{m}{j}\frac{1}{k^{j+1}};\;m\geqslant n
+I(m,k):
+\int\limits_0^1\frac{(1-x)e^x}{x+e^x}\,dx=\sum_{k=0}^{\infty}(-1)^k\left [ I(k,k)-I(k+1,k) \right ]

@@ -1,0 +1,30 @@
+X_1,X_2,\cdots,X_n
+Y_1,Y_2,\cdots,Y_n
+X_1,X_2,\cdots,X_{n-1}
+1
+X_n
+\theta
+P(Y_i=X_n)
+i=1,2,\cdots,n
+\theta=1
+\{1,2,\ldots,n\}
+\theta\to0
+i=1
+\theta\to+\infty
+i=n
+n\geqslant1
+a\gt0
+a=1/\theta
+\mathrm P(Y_i=X_n)
+i
+1
+ \sum_{k=0}^{n-1}\frac{\Gamma(k+a)}{\Gamma(k+1)}=\frac{\Gamma(n+a)}{a\Gamma(n)}. 
+P(Y_i=X_n) = \int_{x=0}^{\infty} P(Y_i=X_n | X_n =x)\,  p( X_n =x)  \, dx  
+ = \int_{x=0}^{\infty} {n-1 \choose i-1} P(X_1 \lt x)^{i-1}   P(X_1 \gt x)^{n-i} p(X_n = x) \, dx 
+ = \int_{x=0}^{\infty} {n-1 \choose i-1} (1-e^{-x})^{i-1} (e^{-x})^{n-i}    e^{- x/\theta} /\theta\, dx 
+\mathbb{P}(Y_k = X_n)
+n-1
+X_1, \ldots, X_{n-1}
+Z_k = X_{n-1:k}
+X_n
+Z_k

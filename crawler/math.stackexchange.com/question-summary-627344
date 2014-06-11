@@ -1,0 +1,36 @@
+f\colon [0,1] \rightarrow \mathbb R
+\lim \limits_{n \rightarrow+\infty} \int_{0}^{1}{f(x^n)dx}=f(0)
+g(x)=f(x)-f(0)
+f(x)
+g(0)=0
+f(0)=0
+\varepsilon>0
+\delta>0
+0<t<\delta\implies |f(t)|<\varepsilon
+M>0
+|f(x)|<M
+[0,1]
+\delta>0
+1>\eta>0
+M(1-\eta)<\varepsilon
+N
+0\leq x\leq \eta
+0\leq x^N \leq\delta
+n>N
+n>N
+\left|\int_0^1f(x^n)dx\right|\leqslant \int_0^\eta |f(x^n)|dx+\int_\eta^1 |f(x^n)|dx\leqslant \eta \varepsilon+M(1-\eta)<(1+\eta)\varepsilon<2\varepsilon
+f(0)=0
+f(0)\neq 0
+f(0)=0
+u=x^n
+du = n x^{n-1} dx = n u^{1-1/n} dx
+I_n = \int_0^1 \frac{1}{n} u^{1/n-1} f(u) du = \int_0^\epsilon \frac{1}{n} u^{1/n-1} f(u) du + \int_\epsilon^1 \frac{1}{n} u^{1/n-1} f(u) du.
+u^{1/n-1}\leq \epsilon^{1/n-1}
+\sup_{u \in [0, \epsilon]} |f(u)| \cdot \int_0^\epsilon \frac{1}{n} u^{1/n-1} du=\sup_{u \in [0, \epsilon]} |f(u)| \;\epsilon^{1/n}. 
+\frac{\epsilon^{1/n-1}}{n} \int_\epsilon^1 |f(u)| du.
+f
+\sup_{u \in [0, \epsilon]} \to 0
+\epsilon \to 0
+\limsup_{n \to 0} |I_n| = 0
+\lim_{n \to 0} I_n = 0
+\limsup_{n \to \infty} |I_n| \leq \limsup_{n \to \infty} \left[ \sup_{u \in [0, \epsilon]} |f(u)| \;\epsilon^{1/n} +  \frac{\epsilon^{1/n-1}}{n} \int_\epsilon^1 |f(u)| du. \right] =\sup_{u \in [0, \epsilon]} |f(u)|+0.

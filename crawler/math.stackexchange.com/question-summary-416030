@@ -1,0 +1,5 @@
+ \begin{array}{r|l} \text{Amount of Loss (X)} & \text{Probability}\\ \hline 0 & 0.900 \\ 500 & 0.060  \\ 1,000 & 0.030\\ 10,000 & 0.008 \\ 50,000 & 0.001\\ 100,000 & 0.001 \\ \end{array} 
+E[X \mid X>0]=\sum\limits_{x_i}x_i \cdot p(x_i)=500 \cdot 0.060 + 1,000 \cdot 0.030 + \cdots + 100,000 \cdot 0.001=290
+1/10
+E[X \mid X>0] = \sum\limits_{x_i} (x_i \mid x_i > 0) \cdot \cfrac{\Pr[x_i \cap x_i>0]}{\Pr(x_i > 0)}
+\sum p(x_i)

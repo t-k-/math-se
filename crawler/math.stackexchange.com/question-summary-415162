@@ -1,0 +1,41 @@
+\{a_n\}
+\lim_{n\rightarrow\infty}na_n=0
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}+a_n\right)^n=e
+\left(1+\dfrac{1}{n}+a_n\right)^n = \left(1+\dfrac{1}{n}\right)^n + na_n\left(1+\dfrac{1}{n}\right)^{n-1} + \dbinom{n}{2}a_n^2\left(1+\dfrac{1}{n}\right)^{n-2}+\ldots
+e
+0
+na_n
+0
+\left(1+\dfrac{1}{n}\right)^{n-1} = \left(1+\dfrac{1}{n}\right)^{n}\left(1+\dfrac{1}{n}\right)^{-1}
+e
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}+a_n\right)^n
+= \left(\lim_{n\rightarrow\infty}\left(1+\frac{1+n\cdot a_n}n\right)^{\frac n{1+n\cdot a_n}}\right)^{\lim_{n\rightarrow\infty}(1+n\cdot a_n)}
+= \left(\lim_{y\rightarrow\infty}\left(1+\frac1y\right)^y\right)^{\lim_{n\rightarrow\infty}(1+n\cdot a_n)}
+=e^1
+\lim_{n\rightarrow\infty} n\cdot a_n=0,n\rightarrow\infty \implies y=\frac n{1+n\cdot a_n}\to\infty
+\left(1+\frac{1}{n}+a_n\right)^n= e^{n\ln\left(1+\frac{1}{n}+a_n\right)}= e^{n\left ( (\frac{1}{n}+a_n) -\frac{1}{2}(\frac{1}{n}+a_n)^2+\dots. \right) }=e^{\left( (1+na_n) -\frac{n}{2}(\frac{1}{n}+a_n)^2+\dots.\right)} 
+ = e^{\left( (1+na_n) -\frac{n}{2}\frac{(1+na_n)^2}{n^2}+\dots.\right)} .
+n\to \infty
+e
+ \ln(1+x) = x-\frac{x^2}{2}+\frac{x^3}{3}-\dots. 
+\binom {n} {k} a_{n}^{k} (1+\frac{1}{n})^{n-k}
+k=1,2\dots
+na_{n}
+0
+n\to\infty
+0
+\binom{n}{k}=\frac{n}{k}\binom {n-1}{k-1}
+na_{n}=0
+\frac{1}{n}+a_n
+\lim_{n\rightarrow \infty}(1+\frac{1}{n})^n
+\epsilon>0
+N
+n>N
+|na_n|<\epsilon
+n>N
+\frac{1}{e}\lim_{n\to\infty}\left(1+\frac{1}{n}+a_n\right)^n =\lim_{n\to\infty}\left(\frac{n+1+na_n}{n+1}\right)^n 
+1-\frac{n\epsilon}{n+1}\leq\left(\frac{n+1-\epsilon}{n+1}\right)^n\leq\left|\left(\frac{n+1+na_n}{n+1}\right)^n \right|\leq \left(\frac{n+1+\epsilon}{n+1}\right)^n\leq \exp \left(\frac{n\epsilon}{n+1}\right)
+\epsilon
+\square
+1-\epsilon \leq \left|\lim_{n\to\infty}\left(\frac{n+1+na_n}{n+1}\right)^n\right|\leq \exp(\epsilon)
+\left|\lim_{n\to\infty}\left(\frac{n+1+na_n}{n+1}\right)^n\right|=1

@@ -1,0 +1,15 @@
+\max(X-K,0)
+X\sim N(\mu;\sigma^2)
+E\left[ \left( X-K\right) ^{+}\right] =\int ^{\infty }_{K}\left( \int ^{\infty }_{x}f\left( t\right) dt\right) dx
+\int ^{\infty }_{K}\dfrac {1}{\sigma \sqrt {2\pi }}\int ^{\infty }_{x} \exp\left( -(t-\mu \right) ^{2}/2\sigma ^{2}dt
+u=\dfrac {1}{\sqrt {2\pi }\sigma }\int ^{\infty }_{x}\exp\left( -(t-\mu \right) ^{2}/2\sigma ^{2}\,dt
+du=\dfrac {-1}{\sqrt {2\pi }\sigma }\exp\left( -\left( x-\mu \right) ^{2}/2\sigma ^{2}\right)
+v=x,\quad dv=dx
+\int u\,dv=uv-\int du\,v
+\dfrac {-K}{\sigma \sqrt {2\pi }}\int ^{\infty }_{K}\exp\left( -\left( t-\mu \right) ^{2}/2\sigma ^{2}\right) dt + \dfrac {1}{\sigma \sqrt {2\pi }}\int ^{\infty }_{K}t\exp\left( -\left( t-\mu \right) ^{2}/2\sigma ^{2}\right) \,dt
+u = (x-\mu)/\sigma
+du = 1/\sigma \, dx
+v = u^2/2
+u = L = (K-\mu)/\sigma
+{\rm E}[\max\{X-K,0\}] = \int_{x=K}^\infty (x-K) \cdot \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2/(2\sigma^2)} \, dx.
+\begin{align*} {\rm E}[\max\{X-K,0\}] &= \frac{1}{\sqrt{2\pi}} \int_{u=(K-\mu)/\sigma}^\infty (\sigma u + \mu-K) e^{-u^2/2} \, du \\ &= \frac{1}{\sqrt{2\pi}} \biggl( \sigma \int_{u=L}^\infty u e^{-u^2/2} \, du + (\mu - K) \int_{u=L}^\infty e^{-u^2/2} \, du \biggr).\end{align*}

@@ -1,0 +1,70 @@
+\mathbf{r}(t) = [x(t), y(t), z(t)]
+\mathbf{v}(t) = \frac{d}{dt}\mathbf{r}(t)
+q
+m
+\mathbf{B}(\mathbf{r})
+\mathbf{B}
+(1)
+ \frac{d}{dt}\mathbf{v}=\frac{q}{m}(\mathbf{v}\times\mathbf{B}) \tag{1} 
+m
+q
+\mathbf{B}
+\mathbf{r}_{\circ}(t_{\circ})=[x_{\circ}, y_{\circ}, z_{\circ}]
+\mathbf{v}_{\circ}(t_{\circ})=[v_{x{\circ}}, v_{y{\circ}}, v_{z{\circ}}]
+\mathbf{r}(t) = [x(t), y(t), z(t)]
+\mathbf{v}(t) = \dot{\mathbf{r}}(t)
+(1)
+\mathbf{r}_{\circ}
+\mathbf{r}\cdot\nabla\mathbf{B}(\mathbf{r}_{\circ}) = (x\partial_{x} + y\partial_{y} + z\partial_{z})\mathbf{B}(\mathbf{r})|_{\mathbf{r}=\mathbf{r}_{\circ}}
+\mathbf{B}_{0}=\mathbf{B}(\mathbf{r}_{\circ})
+\mathbf{B}_{1} = \mathbf{B}_{10} + \mathbf{B}_{11}= -\mathbf{r}_{\circ}\cdot\nabla \mathbf{B}(\mathbf{r}_{\circ}) + \mathbf{r}\cdot\nabla \mathbf{B}(\mathbf{r}_{\circ})
+\mathbf{r}=\mathbf{r}_{0}+\mathbf{r}_{1}
+\mathbf{v}= \mathbf{v}_{0} + \mathbf{v}_{1}
+\mathbf{v}_{0}
+(1)
+\mathbf{B}_{0}
+\mathbf{v}
+\mathbf{B}
+(1)
+\mathbf{r}_{1}(0)=\mathbf{v}_{1}(0) = \mathbf{0}
+\mathbf{r}_{0}(0) = \mathbf{r}_{\circ}
+\mathbf{v}_{0}(0) = \mathbf{v}_{\circ}
+\mathbf{y}=[\alpha, \beta, \gamma]
+\mathbf{r}_{1}=\mathbf{y}t^2 \implies \mathbf{v}_{1}=2\mathbf{y}t\implies \frac{d}{dt}\mathbf{v}_{1}=2\mathbf{y}
+(3)
+\mathbf{y}
+t^2
+\mathbf{r}_{1}\approx \mathbf{0}
+\mathbf{B}
+\mathbf{B}_{11}=\mathbf{r}\cdot\nabla\mathbf{B}(\mathbf{r}_{\circ}) = (\mathbf{r}_{0} + \mathbf{r}_{1})\cdot\nabla\mathbf{B}(\mathbf{r}_{\circ}) \approx \mathbf{r}_{0} \cdot\nabla\mathbf{B}(\mathbf{r}_{\circ})\approx (\mathbf{r}_{\circ}+\mathbf{v}_{\circ}t) \cdot\nabla\mathbf{B}(\mathbf{r}_{\circ})
+\mathbf{B}_{1} \approx t\mathbf{v}_{\circ}\cdot\nabla\mathbf{B}(\mathbf{r}_{\circ})
+(3)
+\mathbf{B}_{1}\propto t
+\mathbf{v}_{1}\propto t
+\propto t
+\mathbf{y}
+r_{1}=\mathbf{y}t^3
+r_{1}=\mathbf{y}t^2
+(3)
+\mathbf{v}_{1}
+6\mathbf{y} t
+\mathbf{v}_{0}\approx\mathbf{v}_{\circ}
+ \mathbf{y}= \frac{q}{6m}\mathbf{v}_{\circ}\times(\mathbf{v}_{\circ}\cdot\nabla)\mathbf{B}(\mathbf{r}_{\circ}) 
+ \dot{\mathbf{v}}_0 = \frac{q}{m}\mathbf{v}_0\times\mathbf{B}_0\tag{1} 
+\mathbf{B}_0=(B_{0x},B_{0y},B_{0z})^T
+ \dot{\mathbf{v}}_0= \frac{q}{m} \left( \begin{array}{ccc}  0 & B_{0z} & -B_{0y} \\  -B_{0z} & 0 & B_{0x} \\  B_{0y} & -B_{0x} & 0 \\ \end{array} \right) \mathbf{v}_0 
+\mathbf{v}_0(t)=\exp \left(\frac{q}{m}\underline{\mathbf{B}}t\right)\mathbf{v}_0(0)
+\underline{\mathbf{B}}
+\mathbf{v}_0\rightarrow \mathbf{v}_0+\mathbf{v}_1
+\mathbf{B}_0\rightarrow \mathbf{B}_0+\mathbf{B}_1
+(1)
+\mathbf{v}_1\times\mathbf{B}_1
+\varepsilon
+O(\varepsilon^2)
+\varepsilon
+(1)
+ \dot{\mathbf{v}}_0 + \dot{\mathbf{v}}_1= \frac{q}{m}\left( \mathbf{v}_0\times\mathbf{B}_0+ \mathbf{v}_0\times\mathbf{B}_1+ \mathbf{v}_1\times\mathbf{B}_0+ \mathbf{v}_1\times\mathbf{B}_1 \right) 
+ \dot{\mathbf{v}}_1= \frac{q}{m}\left( \mathbf{v}_0\times\mathbf{B}_1+ \mathbf{v}_1\times\mathbf{B}_0 \right) 
+(1)
+\mathbf{v}_0\times\mathbf{B}_1
+t

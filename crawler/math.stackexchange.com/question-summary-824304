@@ -1,0 +1,19 @@
+\frac{dI}{db}=-\frac{b}{c}\frac{dJ}{db}-\frac{2ab+1}{2c}J
+\frac{dJ}{db}=\frac{b}{c}\frac{dI}{db}-\frac{2ab-1}{2c}I
+a
+c
+I
+J
+b
+\infty
+dJ/db
+ \frac{dI}{db} = -\frac{b^2}{c^2} \frac{dI}{db} +  \frac{b}{c}\frac{2ab-1}{2c} I - \frac{2ab+1}{2c} J \\ \frac{dJ}{db} = -\frac{b^2}{c^2} \frac{dJ}{db} - \frac{2ab-1}{2c} I - \frac{b}{c}\frac{2ab+1}{2c} J 
+ \frac{dI}{db} +  \left(-\frac{c^2}{c^2+b^2}\frac{b}{c}\frac{2ab-1}{2c}\right) I =  \left(-\frac{c^2}{c^2+b^2}\frac{2ab+1}{2c}\right) J \quad (*) \\ \frac{dJ}{db} + \left(\frac{c^2}{c^2+b^2}\frac{b}{c}\frac{2ab+1}{2c}\right) J = \left(-\frac{c^2}{c^2+b^2}\frac{2ab-1}{2c}\right) I \quad (**) 
+ \frac{d}{db} \left[ \begin{array}{c} I \\ J \end{array} \right] = \left[ \begin{array}{cc} \alpha & \beta \\ \gamma & \delta \end{array} \right] \left[ \begin{array}{c} I \\ J \end{array} \right] 
+ A = \left[ \begin{array}{cc} \alpha & \beta \\ \gamma & \delta \end{array} \right] = \left[ \begin{array}{cc} \frac{b}{c^2+b^2} \frac{2ab-1}{2} &  \frac{c}{c^2+b^2} \frac{2ab+1}{2} \\ -\frac{c}{c^2+b^2} \frac{2ab-1}{2} & -\frac{b}{c^2+b^2} \frac{2ab+1}{2} \end{array} \right] 
+ A = \left[ \begin{array}{cc} \frac{b}{1+b^2} \frac{2b-1}{2} &  \frac{1}{1+b^2} \frac{2b+1}{2} \\ -\frac{1}{1+b^2} \frac{2b-1}{2} & -\frac{b}{1+b^2} \frac{2b+1}{2} \end{array} \right] 
+I
+ I^c(b) =  \frac{e^{-\sqrt{1 + b^2}}}{\sqrt{1 + b^2}\sqrt{b + \sqrt{b^2+1}}} 
+ \frac{dI^c}{db}(b) = -\frac{e^{-\sqrt{1+b^2}}  \left(2 b^3 + \left(2 \sqrt{1+b^2} + 3 \right) b^2 + \left(3 \sqrt{1+b^2}+2\right) b + 1 \right)} {2 (1 + b^2)^{3/2} \left(\sqrt{1+b^2}+ b \right)^{3/2}} 
+(*)
+ J^c(b) = \frac{2(1+b^2)}{2b+1}\left( -\frac{e^{-\sqrt{1+b^2}}  \left(2 b^3 + \left(2 \sqrt{1+b^2} + 3 \right) b^2 + \left(3 \sqrt{1+b^2}+2\right) b + 1 \right)} {2 (1 + b^2)^{3/2} \left(\sqrt{1+b^2}+ b \right)^{3/2}} - \frac{2(1+b^2)}{b(2b-1)} \frac{e^{-\sqrt{1 + b^2}}}{\sqrt{1 + b^2}\sqrt{b + \sqrt{b^2+1}}} \right) 

@@ -1,0 +1,29 @@
+D
+\mathbf{G}
+\bar{g}: X \to [0,1]
+ \bar{g}(x) = \mathbb{E}_{g \sim D} g(x)  . 
+n
+g_1,\dots,g_n
+D
+\hat{g}_n
+ \hat{g}_n(x) = \frac{1}{n} \sum_{j=1}^n g_j(x) . 
+\| f \|_{\infty} = \sup_{x \in X} |f(x)|
+ \Pr\left[ \| \hat{g}_n - \bar{g} \|_{\infty} > \epsilon \right] ~~ \leq ~~ ??? 
+n>1
+D_n
+g_y\colon x\in [0,1]\mapsto g_y(x)
+D_n
+y\in [0,1]
+g_y
+\bar{g}(x)\stackrel{\rm def}{=}\mathbb{E}_{y\sim \mathcal{U}_{[0,1]}}[ g_y(x)] \leq \frac{1}{n^2}
+1/n^2
+g_y
+x
+n
+y_1,\dots,y_n
+x=y_1
+\hat{g}_n(x) = \frac{1}{n}\sum_{j=1}^n g_{y_j}(x) \geq \frac{1}{n}
+1
+\epsilon < \frac{1}{2n}
+ g_y(x)=\begin{cases} 1 & \text{if }x=y\\ 0 & \text{if }\lvert x-y \rvert \geq \frac{1}{2n^2}\\ \text{affine otherwise} \end{cases} 
+ \lVert\hat{g}_n - \bar{g} \rVert_\infty \geq \frac{1}{n}-\frac{1}{n^2} \geq \frac{1}{2n} 

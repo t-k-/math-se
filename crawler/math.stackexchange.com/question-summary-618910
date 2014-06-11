@@ -1,0 +1,12 @@
+{1\over 2\pi}\int_{0}^{2\pi}\ln(1-2r\cos x+r^{2})\,dx=2\ln r,\text{ where } r\gt 1.
+f\in C[a,b]
+f\gt 0
+f_{vn}=f(a+v\delta_n), \delta_n={{b-a}\over n}
+\lim_{n\to\infty}\sqrt[n]{f_{1n}f_{2n}\cdots f_{nn}}=\exp\left\{{1\over{b-a}}\int_a^b \ln f(x)\,dx\right\}
+\big(z^{n}-1\big)^2=\prod_{k=1}^n \Big( z^2-2z\cos \left(\frac{2k}{n}\pi\right)+1\Big)\quad (\star)
+\lim_{n\to\infty} \sqrt[n]{\prod_{k=1}^n \Big( z^2-2z\cos \left(\frac{2k}{n}\pi\right)+1\Big)}=\exp\left\{\frac{1}{2\pi}\int_0^{2\pi}\ln \big(z^2-2z\cos t+1\big)\,\mathrm{d}t\right\}
+(\star)
+n\to\infty:\;\sqrt[n]{\big(z^{n}-1\big)^2}\to z^2
+\ln r=\frac{1}{2\pi}\int_0^{2\pi}\text{Log} (r-e^{it})\,\mathrm{d}t\quad\text{and}\quad \ln r=\frac{1}{2\pi}\int_0^{2\pi}\text{Log} (r-e^{-it})\,\mathrm{d}t
+\text{Define for}\;\lambda\geq 1:\;f(\lambda)=\int_0^{2\pi}\ln \big(\lambda^2-2\lambda\cos x+1\big)\,\mathrm{d}x\Rightarrow \frac{\mathrm{d}f}{\mathrm{d}\lambda}=\int_0^{2\pi}\cdots=\frac{4\pi}{\lambda}
+\begin{aligned}\frac{1}{2}f(1)-\pi\ln 2 &=\int_0^{\pi}\ln (1\pm\cos x)\mathrm{d}x\\&=\underbrace{\int_0^{\pi}\ln \sin x\,\mathrm{d}x}_{=\,-\pi\ln 2\;(\clubsuit)}\Rightarrow f(1)=0\end{aligned}\;\;\Longrightarrow\;\; \frac{1}{2\pi}f(r)=\int_1^{r}\frac{2\,\mathrm{d}\lambda}{\lambda}=2\ln r

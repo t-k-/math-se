@@ -1,0 +1,15 @@
+m,n,p\in (0,+\infty)
+D
+x=0,y=0
+x+y=1
+\iint\limits_{D}x^{m-1}y^{n-1}（1-x-y)^{p-1}\mathrm{d}x\mathrm{d}y
+D
+\Omega
+\mathbb{R}^3
+x=0, y=0, z=0
+x+y+z=1
+(p-1)\iiint\limits_{\Omega}x^{m-1}y^{n-1}z^{p-2}\mathrm{d}x\mathrm{d}y\mathrm{d}z 
+\Omega = \{ (x,y,z) \;|\; (x,y) \in D \mbox{ and } 0 \leq z \leq 1-x-y \}
++
+(p-1)\iiint\limits_{\Omega} x^{m-1}y^{n-1}z^{p-2} \,dV = \iint\limits_D \left(\int_0^{1-x-y} (p-1)x^{m-1}y^{n-1}z^{p-2}\,dz\right)\,dA
+= \iint_D \left. x^{m-1}y^{n-1}z^{p-1} \right|_0^{1-x-y}\,dA =  \iint_D x^{m-1}y^{n-1}(1-x-y)^{p-1}\,dA

@@ -1,0 +1,11 @@
+ \iint_S \nabla \times \vec{v} . \vec{N} dS
+\vec{v} = (xz, -y, x^2y)
+ [0,2] \times [0,2] \times [0,2] 
+ \vec{N}
+\nabla\times v=(\frac{d}{dy}(x^2y)-\frac{d}{dz}(-y),\frac{d}{dz}(xz)-\frac{d}{dx}(x^2y),\frac{d}{dx}(-y)-\frac{d}{dy}(xz))=(x^2,x-2xy,0)
+n=(0,0,1), \nabla\times v\cdot n=0
+n=(-1,0,0), \nabla\times v\cdot n=-x^2=-1
+n=(1,0,0), \nabla\times v\cdot n=x^2=1
+n=(0,-1,0), \nabla\times v\cdot n=2xy-x=-3
+n=(0,1,0), \nabla\times v\cdot n=x-2xy=-x
+\iint_{[0,2]\times[0,2]}-3x-x\,dx\,dz=(-2x^2|_0^2)(z|_0^2)=-16

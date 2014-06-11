@@ -1,0 +1,50 @@
+G(x_1,\dots, x_n)=0
+x_1, \dots, x_k
+G(x_1,\dots, x_n)=\det \begin{vmatrix} \xi( x_1,x_1) & \xi( x_1,x_2) &\dots & \xi( x_1,x_n)\\  \xi( x_2,x_1) & \xi( x_2,x_2) &\dots & \xi( x_2,x_n)\\ \vdots&\vdots&\ddots&\vdots\\  \xi( x_n,x_1) & \xi( x_n,x_2) &\dots & \xi( x_n,x_n)\end{vmatrix}
+\xi
+G(x_1,\dots, x_n)=0
+x_1,\dots, x_k
+G(X)=\det(X^TX)=0\iff \exists a\in{\bf R}^n:(X^TX)a=X^T(Xa)=0
+\begin{array}{cr} & \begin{vmatrix} \langle x_1,x_1\rangle & \langle x_1,x_2\rangle & \dots & \langle x_1,x_n \rangle \\ \langle x_2,x_1 \rangle & \langle x_2,x_2 \rangle &\dots & \langle x_2,x_n \rangle \\ \vdots & \vdots & \ddots & \vdots \\ \langle x_n,x_1 \rangle & \langle x_n,x_2 \rangle & \dots & \langle x_n,x_n \rangle \end{vmatrix}=0 \\ \iff \exists a_1,\cdots,a_n: & a_1\begin{pmatrix}\langle x_1,x_1\rangle \\ \langle x_2,x_1\rangle \\ \vdots \\ \langle x_n,x_1\rangle\end{pmatrix} +\cdots+ a_n\begin{pmatrix}\langle x_1,x_n\rangle \\ \langle x_2,x_n\rangle \\ \vdots \\ \langle x_n,x_n\rangle\end{pmatrix}=0 \\ \iff \exists a_1,\cdots,a_n: & \begin{pmatrix}\langle x_1,a_1x_1+\cdots+a_nx_n\rangle \\ \langle x_2,a_1x_1+\cdots+a_nx_n\rangle \\ \vdots \\ \langle x_n,a_1x_1+\cdots+a_nx_n\rangle\end{pmatrix}=0 \end{array}
+s=a_1x_1+\cdots+a_nx_n\in\langle x_1,\cdots,x_n\rangle=S
+s
+n
+\{x_i\}
+S
+0=s=a_1x_1+\cdots+a_nx_n
+x_i
+x_1,\cdots,x_n\in{\bf R}^m
+n
+m
+n=m
+X=[x_1~\cdots~x_n]\in M_{n\times n}({\bf R})
+G(X)=\det(X^TX)=\det(X^T)\det(X)=\det(X)\det(X)=\det(X)^2,
+x_i
+x_1,\cdots,x_n
+\dim_{\,\bf R}\langle x_1,\cdots,x_n\rangle=n
+x_i
+x_j
+x_i
+n
+m
+n
+{\bf R}^m
+U
+\langle Ux,Uy\rangle=\langle x,y\rangle
+x,y
+n< m
+U
+\langle x_1,\cdots,x_n\rangle
+{\bf R}^n\subset{\bf R}^m
+G(UX)=G(Ux_1,\cdots,Ux_n)=
+\det \begin{vmatrix} \langle Ux_1, Ux_1\rangle & \langle Ux_1, Ux_2\rangle & \dots & \langle Ux_1, Ux_n \rangle \\ \langle Ux_2, Ux_1 \rangle & \langle Ux_2, Ux_2 \rangle &\dots & \langle Ux_2, Ux_n \rangle \\ \vdots & \vdots & \ddots & \vdots \\ \langle Ux_n, Ux_1 \rangle & \langle Ux_n, Ux_2 \rangle & \dots & \langle Ux_n, Ux_n \rangle \end{vmatrix} =\det \begin{vmatrix} \langle x_1,x_1\rangle & \langle x_1,x_2\rangle & \dots & \langle x_1,x_n \rangle \\ \langle x_2,x_1 \rangle & \langle x_2,x_2 \rangle &\dots & \langle x_2,x_n \rangle \\ \vdots & \vdots & \ddots & \vdots \\ \langle x_n,x_1 \rangle & \langle x_n,x_2 \rangle & \dots & \langle x_n,x_n \rangle \end{vmatrix}
+=G(x_1,x_2,\cdots,x_n)=G(X).
+n<m
+n=m
+n>m
+X^T
+{\bf R}^n
+{\bf R}^m
+X^Tx_1,\cdots,X^Tx_n
+m
+G(X)=\det[X^Tx_1~\cdots~X^Tx_n]=0

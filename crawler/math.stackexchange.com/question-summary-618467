@@ -1,0 +1,67 @@
+A\in\mathbb R^{n\times n}
+0\preceq A\preceq I
+I
+w_k\in\mathbb R^n
+\|w_k\|\leq1,\,\,k=0,1,\ldots
+  \left\|\sum\limits_{k=0}^\infty(I-A)^kAw_k\right\|. 
+\sqrt{n}
+n
+A
+0
+1
+(I-A)A
+1
+0
+0
+1
+0
+1
+(I-A)^{k}A=0
+k \ge 1
+\lambda_{min}
+\lambda_{max}
+A
+0
+1
+\|(I-A)^{k}Aw_{k}\| \le (1-\lambda_{min})^{k}\lambda_{max}\|w_{k}\|\le (1-\lambda_{min})^{k}\lambda_{max}
+k \ge 0
+\lambda_{max}/(1-(1-\lambda_{min}))=\lambda_{max}/\lambda_{min}
+A
+\big\{v_i\big|i\in\{1,2,...,n\}\big\}
+\big\{\lambda_i\big|i\in\{1,2,...,n\}\big\}
+w_k=\sum\limits_{i=1}^n a_{ki}v_i
+\left|a_{ki}\right|\le 1
+\|w_k\|\le 1
+\sum\limits_{k=0}^\infty\big\|(1-A)^kA\big\|
+s:=\sum_{k=0}^\infty (1-A)^kAw_k = \sum_{i=1}^n \Big(\sum_{k=0}^\infty (1-A)^kAa_{ki}\Big) v_i,
+u_i:=\Big(\sum\limits_{k=0}^\infty (1-A)^kAa_{ki}\Big) v_i = \Big(\sum\limits_{k=0}^\infty (1-\lambda_i)^k\lambda_ia_{ki}\Big)v_i
+\|s\|\le \sqrt n
+\|s\|^2 = \sum\limits_{i=1}^n \|u_i\|^2,
+\|u_i\|\le\sum\limits_{k=0}^\infty (1-\lambda_i)^k\lambda_i\left|a_{ki}\right| \le\sum\limits_{k=0}^\infty (1-\lambda_i)^k\lambda_i =1.
+1
+w_k = v_{j+1},\, j\equiv k \ (\mod n)
+\|u_i\| = \frac{(1-\lambda_i)^j}{\sum_{i=0}^{n-1} (1-\lambda_i)^i}
+1
+\frac{\|A\|}{1-\|I-A\|}.
+(I-A)^kA=(I-A)^k-(I-A)^{k+1}
+f_k(λ)=(1-λ)^k-(1-λ)^{k+1}
+λ
+A
+[0,1]
+0=f_k'(λ)=-k(1-λ)^{k-1}+(k+1)(1-λ)^k=(1-λ)^{k-1}(1-(k+1)λ)\implies λ = \frac1{k+1}
+f_k(\tfrac1{k+1})=\tfrac1{k+1}(1-\tfrac1{k+1})^k=\tfrac1k(1-\tfrac1{k+1})^{k+1}<\tfrac1ke^{-1}\le e^{-1}(\ln(k)-ln(k-1))
+A
+\tfrac1{N+1}<λ_{min}\le \tfrac1N
+f_k
+k>N
+λ_{min}
+A
+x_+=x+A(w-x)=\tfrac12(x+w)+(A-\tfrac12I)(w-x).
+\|A-\tfrac12I\|\le \tfrac12
+x_+
+x
+w
+x
+w
+x
+w

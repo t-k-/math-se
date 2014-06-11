@@ -1,0 +1,30 @@
+f
+\mathbb{R}^n
+\int_{\mathbb{R}^n} f=1
+p\in(0,1)
+E
+\mathbb{R}^n
+\mu(E)<\infty
+ \int _E f^p\leq \mu(E)^{1-p}. 
+ \int _E \log f\leq -\mu(E)\log \mu(E). 
+n = 1
+f = f_\varepsilon
+\varepsilon > 0
+f_\varepsilon (x) = \varepsilon \cdot x^{-1+\varepsilon} \cdot \chi_{(0,1)}
+\int f_\varepsilon \, dx = 1
+dx
+\beta \in (0,1)
+E = (0,\beta)
+ \beta^{\varepsilon}=x^{\varepsilon}\bigg|_{0}^{\beta}=\int_{0}^{\beta}\varepsilon\cdot x^{-1+\varepsilon}\, dx=\int_{E}f\, dx\overset{!}{\leq}\left(\mu\left(E\right)\right)^{1-p}=\beta^{1-p}, 
+1 \leq \beta^{1-p-\varepsilon}
+\beta \in (0,1)
+1-p-\varepsilon < 0
+\varepsilon > 1-p
+\varepsilon = \frac{1}{4}
+p=\frac{1}{2}
+\mu(E) = 0
+0 < \mu(E) < \infty
+\frac{\mu}{\mu(E)}
+E
+ \exp\left(\int_E \ln(f) \frac{d\mu}{\mu(E)} \right) \leq \int_E f \frac{d\mu}{\mu(E)} \leq \frac{1}{\mu(E)} \cdot \int_{\Bbb{R}^n} f d\mu = \frac{1}{\mu(E)}, 
+ \frac{1}{\mu(E)} \cdot \int_E \ln(f) d\mu \leq \ln\left( \frac{1}{\mu(E)} \right) = -\ln(\mu(E)). 

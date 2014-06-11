@@ -1,0 +1,29 @@
+n \in \mathbb N
+R(n) = \sqrt{n+\sqrt{(n+1)+\sqrt{(n+2)+ \cdots}}}
+\sqrt{1+2\sqrt{1+3\sqrt{1+4\sqrt{\cdots}}}} = 3
+\sqrt{ax+(n+a)^2+x\sqrt{a(x+n)+(n+a)^2+(x+n)\sqrt{\cdots}}} = x+n+a
+R^2(n) = n + R(n+1)
+R(n+1) = R^2(n) - n
+R(0)
+R(n)
+\sqrt{\sqrt{1+\sqrt{2+ \sqrt{3+\cdots}}}}
+m\ge n\ge1
+S(n,m)\ge1
+S(n+1,m)\le\sqrt{n+1}+1
+(2)
+S(m,m)=\sqrt{m}\le\sqrt{m}+1
+m
+m\ge n\ge1
+n
+S(n,m)
+m
+\sqrt{n}+1
+ S(n,m)=\sqrt{n+\sqrt{n+1+\sqrt{n+2+\dots+\sqrt{m-1+\sqrt{m}}}}}\tag{1} 
+ \sqrt{n+x}-\sqrt{n}=\frac{x}{\sqrt{n+x}+\sqrt{n}}\tag{2} 
+ \begin{align} S(n,m) &=\sqrt{n+S(n+1,m)}\\[6pt] &=\sqrt{n}+\frac{S(n+1,m)}{\sqrt{n+S(n+1,m)}+\sqrt{n}}\\ &\le\sqrt{n}+\frac{\sqrt{n+1}+1}{\sqrt{n+1}+1}\\[9pt] &=\sqrt{n}+1\tag{3} \end{align} 
+ S(n,m)\le\sqrt{n}+1\tag{4} 
+ \lim_{m\to\infty}S(n,m)\le\sqrt{n}+1\tag{5} 
+1.615<R(1)<1.815
+R(n)
+ \phi=\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{\cdots}}}}=\sqrt{1+\phi}=\frac{1+\sqrt{5}}{2} 
+ \begin{align} \phi < R(1) &< \sqrt{1+\sqrt{2+\sqrt{2^2+\sqrt{2^4+\sqrt{2^8+\cdots}}}}}\\ &=\sqrt{1+\sqrt{2}\phi} \end{align} 

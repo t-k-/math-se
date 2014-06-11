@@ -1,0 +1,28 @@
+0 <t<1
+t
+ \int_0^\pi \int_{\max\left\{-1;\cos x - \frac{t}{\sin x}\right\}}^{\cos x}  \frac{dy}{\sqrt{1-y^2}} \, dx 
+f_t(x):=\cos x -\frac{t}{\sin x}
+f_t(x)
+0<t<1
+-1
+[0,\pi]
+x\to 0,\pi
+f_t(x)\to-\infty
+\forall t
+0<x_-(t)<x_+(t)<\pi
+f_t(x_\pm (t))=-1
+\int_0 ^\pi dx \int_{\min(-1,f_t(x))} ^{\cos x} dy (\cdot)=   \left(\int_0 ^{x_-(t)}dx+\int_{x_+(t)}^\pi dx\right)\int_{-1} ^{\cos x}dy(\cdot) +   \int_{x_-(t)} ^{x_+(t)}dx\int_{f_t(x)} ^{\cos x}dy(\cdot)
+x_\pm (t)
+\int dx \arcsin(f_t(x))
+-1=f_t(x):=\cos x -\frac{t}{\sin x}
+\sin x
+c=\cos x
+\sin x=\sqrt{1-c^2}
+(1-c^2)(1+c)^2=t^2
+c_\pm(t)=\pm\frac{A(t)}{2}+\frac{B(t)}{2\sqrt{3}}-\frac{1}{2}
+A(t)=\sqrt{\frac{A_1(t)-z(t)-4t^2}{3z(t)}+2}
+A_1(t)=\frac{2\sqrt{3}}{B(t)}
+B(t)=\sqrt{\frac{3z(t)^2+3z(t)+4t^2}{z(t)}}
+z(t)=\left(2t^2+\frac{2t^2\sqrt{27-16t^2}}{3^{3/2}}\right)^{1/3}
+x_\pm(t)
+x_\pm (t)=\arccos(c_\pm(t))

@@ -1,0 +1,23 @@
+T(n)=T(n-1) + T(n-1) \times C
+C
+T(1)=A
+n \ge 2
+G
+2
+C
+2
+10(=G)
+10^9
+T(n)=(1+C)T(n-1)
+T(n)=(1+C)^{n-1}T(1)=(1+C)^{n-1}A.
+A\gt0
+T(n)\ge G\iff (1+C)^{n-1}A\ge G\iff(1+C)^{n-1}\ge\frac{G}{A}\iff n\ge\log_{1+C}\frac GA+1,
+T(n)\lt G\iff n\lt \log_{1+C}\frac{G}{A}+1.
+C\gt -1, C\not=0.
+A=2, C=2, G=10
+\log_{3}5\approx 1.465.
+T(n)\ge G\iff n\ge\log_{3}\frac{10}{2}+1=\log_{3}5+1,\ \ T(n)\lt G\iff n\lt \log_{3}5+1.
+T(n)=T(n-1)+T(n-1)*C
+T(n)=(1+C)*T(n-1)
+T(n)=(1+C)^{n-1}*T(1)
+T(n)=(1+C)^{n-1}*A

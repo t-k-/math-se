@@ -1,0 +1,16 @@
+f : \mathbb{R} \rightarrow \mathbb{C}
+L^1
+x \in \mathbb{R}
+\int_{-1}^0 |(f(x+t)-a)/t| dt < \infty
+\int_0^1 |(f(x+t)-b)/t| dt < \infty
+a,b \in \mathbb{C}
+\mathcal{F}(f,p)=\int_{\mathbb{R}} f(x) e^{-ipx} dx
+D_h(x) = \pi^{-1} h.sinc(hx) = \frac{\sin(hx)}{\pi x}
+\lim_{h \to +\infty} \int_0^1 D_h(x) dx = 1/2
+\mathcal{G}(f,x) := \int_{-h}^h \mathcal{F}(f,p) e^{ipx} \frac{dp}{2\pi} = \int_{-\infty}^{+\infty} dy f(y) \int_{-h}^h e^{ip(x-y)} \frac{dp}{2\pi} = (f*D_h)(x).
+\mathcal{G}_h(f,x) - \left( b \int_{-1}^0 D_h(x) dx + a \int_0^1 D_h(x) dx \right) = \int_{-\infty}^{-1} f(x-y) D_h(y) dy + \int_{-1}^0 (f(x-y)-b) D_h(y) dy+ \int_0^1 (f(x-y)-a) D_h(y)dy + \int_1^{+\infty} f(x-y) D_h(y) dy.
+\mathcal{G}_h(f,x) - \left( b \int_{-1}^0 D_h(x) dx + a \int_0^1 D_h(x) dx \right) = \int_{-\infty}^{-1} \frac{f(x-y)}{y} \sin(hy) dy + \int_{-1}^0 \frac{f(x-y)-b}{y} \sin(hy) dy+ \int_0^1 \frac{f(x-y)-a}{y} \sin(hy) dy + \int_1^{+\infty} \frac{f(x-y)}{y} \sin(hy) dy.
+\frac{f(x-y)}{y}
+L^1((-\infty,-1])
+0
+\lim_{h \to +\infty} \int_{-\infty}^{-1} \frac{f(x-y)}{y} \sin(hy) dy =0.

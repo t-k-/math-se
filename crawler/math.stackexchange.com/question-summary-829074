@@ -1,0 +1,17 @@
+\lim_{x\rightarrow \infty}\frac{\ln(1+\alpha x)}{\ln(\ln(1+\text{e}^{\beta x}))}
+\alpha, \ \beta \in \mathbb{R}^+
+\lim_{x\rightarrow \infty}\frac{\ln(1+\alpha x)}{\ln(\ln(1+\text{e}^{\beta x}))} = \lim_{x\rightarrow \infty}\frac{\ln(1+\text{e}^{\beta x})(1+\text{e}^{\beta x}) \ \alpha}{(1 + \alpha x) \ \text{e}^{\beta x} \  \beta}
+\lim_{x\rightarrow \infty}\frac{\ln(1+\text{e}^{\beta x}) \ \alpha}{(1 + \alpha x)  \  \beta}  \lim_{x\rightarrow \infty}(1+\text{e}^{-\beta x}) = \lim_{x\rightarrow \infty}\frac{\alpha  \ \beta \  \text{e}^{\beta x}}{(1+\text{e}^{\beta x}) \ \alpha \ \beta}    \cdot 1 = \lim_{x\rightarrow \infty}\frac{\text{e}^{\beta x}}{1+\text{e}^{\beta x} }    \cdot 1  
+\lim_{x\rightarrow \infty}\frac{\text{e}^{\beta x}}{1+\text{e}^{\beta x} }    \cdot 1 = \lim_{x\rightarrow \infty}\frac{\text{e}^{\beta x}\ \beta}{\text{e}^{\beta x}\ \beta}    \cdot 1 = 1
+\log (\alpha x) + \log (1+ \frac{1}{\alpha x}) \sim \log \alpha + \log x + \frac{1}{\alpha x}
+\log (\log e^{\beta x} + \log (1+ \frac{1}{\beta x})) = \log (\beta x + \frac{1}{\beta x}) = \log \beta x(1+\frac{1}{(\beta x)^2}) \sim \log \beta +\log x + \frac{1}{(\beta x )^2}
+ \lim_{x\to\infty}   \frac{\alpha}{1+\alpha x}   \left(\frac{\beta e^{\beta x}\big/(1+e^{\beta x})}{\log(1+e^{\beta x})}\right)^{-1} = \lim_{x\to\infty}   \frac{\alpha}{\beta}   \frac{1+e^{\beta x}}{e^{\beta x}}   \frac{\log(1+e^{\beta x})}{1+\alpha x} 
+ \lim_{x\to\infty}\frac{1+e^{\beta x}}{e^{\beta x}}= \lim_{x\to\infty}(e^{-\beta x}+1)=1 
+ \lim_{x\to\infty}\frac{\log(1+e^{\beta x})}{1+\alpha x}= \lim_{x\to\infty}\frac{\beta e^{\beta x}/(1+e^{\beta x})}{\alpha}= \lim_{x\to\infty}\frac{\beta}{\alpha}\frac{e^{\beta x}}{1+e^{\beta x}}= \frac{\beta}{\alpha} 
+\alpha > 0, \beta > 0, y > 0, z > 0
+x \to \infty
+y \to 0
+z \to 0
+c \to \infty
+t \to 0
+\begin{aligned}L &= \lim_{x \to \infty}\frac{\log(1 + \alpha x)}{\log(\log(1 + e^{\beta x}))}\\ &= \lim_{x \to \infty}\dfrac{\log\left(\dfrac{1 + \alpha x}{\alpha x}\right) + \log \alpha x}{\log\left(\log\left(\dfrac{1 + e^{\beta x}}{e^{\beta x}}\right) + \beta x\right)}\\ &= \lim_{x \to \infty}\frac{y + \log \alpha x}{\log(z + \beta x)} \text{ where }y = \log((1 + \alpha x)/\alpha x), z = \log((1 + e^{\beta x})/e^{\beta x})\\ &= \lim_{x \to \infty}\frac{y + \log \alpha x}{\log(z + \beta x) - \log \beta x + \log \beta x}\\ &= \lim_{x \to \infty}\frac{y + \log \alpha x}{\dfrac{z}{c} + \log \beta x}\text{ where }c \in (\beta x, \beta x + z)\text { by Mean Value Theorem}\\ &= \lim_{x \to \infty}\frac{y + \log \alpha x}{t + \log \beta x}\text{ where }t = z/c\\ &= \lim_{x \to \infty}\frac{y + \log \alpha + \log x}{t + \log \beta + \log x}\\ &= \lim_{x \to \infty}\dfrac{\dfrac{y}{\log x} + \dfrac{\log \alpha}{\log x} + 1}{\dfrac{t}{\log x} + \dfrac{\log \beta}{\log x} + 1}\\ &= \frac{0 + 0 + 1}{0 + 0 + 1} = 1\end{aligned}

@@ -1,0 +1,45 @@
+f:\mathbb{R}^3\to\mathbb{R}
+f(X)=\|X \|^2
+X=
+(x,y,z)
+P:\mathbb{R}^3\to\mathbb{R}^3
+P(X) = A\times X
+A
+(a_1,a_2,a_3)
+\nabla f(X)
+(2x,2y,2z)
+\| X\|^2
+x,y,z
+DP(X)
+A\times X
+P(X)
+\nabla (f\circ P)(X) = 2\|A\|^2 X - 2(A\cdot X)A
+\nabla f(X)=\begin{pmatrix}\partial_x f\\\partial_y f\\\partial_z f \end{pmatrix}=\begin{pmatrix}\partial_x (x^2+y^2+z^2)\\\partial_y (x^2+y^2+z^2)\\\partial_z (x^2+y^2+z^2) \end{pmatrix}=\begin{pmatrix}2x\\2y\\2z \end{pmatrix}
+\displaystyle A\times X = \det\begin{pmatrix}\vec e_x&\vec e_y&\vec e_z\\a_1&a_2&a_3\\x&y&z\end{pmatrix} =\vec e_x(za_2-ya_3)+\vec e_y(xa_3-za_1)+\vec e_z(ya_1-xa_2)=\begin{pmatrix}za_2-ya_3\\xa_3-za_1\\ya_1-xa_2\end{pmatrix}.
+DP(X)
+\nabla(f\circ P)(X) = \nabla ((za_2-ya_3)^2+(xa_3-za_1)^2+(ya_1-xa_2)^2)
+=\begin{pmatrix}2xa_3^2-2a_1a_3z+2xa_2^2-2ya_1a_2\\ 2ya_3^2+2ya_1^2-2xa_1a_2-2za_2a_3\\ 2za_2^2+2za_1^2-2xa_3a_1-2ya_2a_3\end{pmatrix}=2\|A\|^2X - 2\begin{pmatrix}   a_1a_1x+ a_1a_3z+  ya_1a_2\\   ya_2a_2 +xa_1a_2+za_2a_3\\   za_3a_3xa_3a_1+ya_2a_3\end{pmatrix} 
+= 2\|A\|^2X - 2(A\cdot X)A
+\nabla (f\circ P)(X) = \nabla f (P(X))\circ DP(X) = 2P(X)\circ DP
+P_i
+P(X)
+\vec e_i
+P(X) = \sum_{i=1}^3 P_i \vec e_i
+x_i
+f(P(X)) = \sum_{i=1}^3 P_i^2
+\nabla g(X) = \sum_i \partial_{x_i}g(X)\cdot \vec e_i
+\nabla (f (P(X)) =\sum_{i=1}^3\partial_{x_j}(f(P(X)))\vec e_j = \sum_{i=1}^3\sum_{j=1}^3\partial_{P_i}(f(P ))\partial_{x_j}P_i(X)\vec e_j
+=\displaystyle \sum_{i=1}^3\sum_{j=1}^3 2P_i\partial_{x_j} P_i \cdot \vec e_j 
+(DP)_{ij}
+\partial _{x_j}P_i
+\nabla f(P(X)) DP(X) = 2P(X) DP(X)
+\forall X \, A\times X = DP\cdot X
+DP^T=-DP
+  (2P(X) DP(X))^T = -2DP(X) P(X) \text{(last term seen as a column vector)} = -2A\times (A\times X)
+2((A\cdot A)X-(A\cdot X)A)
+M=\begin{pmatrix}0 & -a_3 & a_2 \\ a_3 & 0 & -a_1 \\-a_2 & a_1 & 0\end{pmatrix}
+A \times X = MX
+\nabla (f \circ P) (X)
+\nabla (f \circ P) (X) = \nabla f (PX) DP(X)
+-2A\times (A\times X)
+f \circ P

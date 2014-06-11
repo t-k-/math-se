@@ -1,0 +1,51 @@
+X,Y
+f(x) = \lambda e^{-\lambda x}
+f(y) = \mu e^{-\mu y}
+Z=X-Y
+ P[X-Y \le z]= \int_0^{\infty} \Bigg( \int_0^{z+y} \lambda e^{-\lambda x} dx \Bigg) \mu e^{-\mu y} dy
+X-Y
+X \in (0,\infty)
+Y \in (0, \infty)
+Z \in (-\infty, \infty)
+f
+g
+\mathbb R
+z
+z\leqslant0
+z\geqslant0
+ f(x)=\lambda\mathrm e^{-\lambda x}\mathbf 1_{x\geqslant0},\qquad g(y)=\mu\mathrm e^{-\mu y}\mathbf 1_{y\geqslant0}. 
+ P[X-Y\leqslant z]=\iint f(x)g(y)\mathbf 1_{x-y\leqslant z}\mathrm dx\mathrm dy=\int_0^{+\infty}\int_0^{+\infty}\lambda\mathrm e^{-\lambda x}\mu\mathrm e^{-\mu y}\mathbf 1_{x-y\leqslant z}\mathrm dx\mathrm dy, 
+ P[X-Y\leqslant z]=\int_0^{+\infty}\mu\mathrm e^{-\mu y}\int_0^{(y+z)^+}\lambda\mathrm e^{-\lambda x}\mathrm dx\mathrm dy=\int_0^{+\infty}\mu\mathrm e^{-\mu y}(1-\mathrm e^{-\lambda (y+z)^+})\mathrm dy, 
+h
+X-Y
+ h(z)=\int f(y+z)g(y)\mathrm dy=\int \lambda\mathrm e^{-\lambda (y+z)}\mu\mathrm e^{-\mu y}\mathbf 1_{y+z\geqslant0}\mathbf 1_{y\geqslant0}\mathrm dy, 
+ h(z)=\int_{z^-}^{+\infty}\lambda\mathrm e^{-\lambda (y+z)}\mu\mathrm e^{-\mu y}\mathrm dy=\frac{\lambda\mu\mathrm e^{-\lambda z}}{\lambda+\mu}\mathrm e^{-(\lambda+\mu)z^-}, 
+ h(z)=\frac{\lambda\mu}{\lambda+\mu}(\mathrm e^{-\lambda z}\mathbf 1_{z\geqslant0}+\mathrm e^{\mu z}\mathbf 1_{z\leqslant0}). 
+X
+Y
+M_{X}(t) = \dfrac{\lambda}{\lambda - t}
+M_{Y}(t) = \dfrac{\mu}{\mu - t}
+M_{Z}(t)=M_{X-Y}(t) = E\left(e^{(X-Y)t}\right) = E \left( e^{Xt}e^{-Yt} \right) = E\left(e^{Xt}\right)E\left(e^{-Yt}\right)=M_{X}(t)E\left(e^{Y(-t)}\right)=M_{X}(t)M_{Y}(-t)=\dfrac{\mu \lambda}{(\lambda - t)(\mu - (-t))} = \dfrac{\mu \lambda}{(\lambda - t)(\mu + t)} = \dfrac{\mu \lambda}{\lambda \mu + \lambda t-\mu t- t^2}
+X
+Y
+\mathbb{R}^+_0
+Z=X-Y
+\mathbb{R}
+X
+Y
+Z=0
+z\geq0
+x \geq z
+y \geq 0
+p_+(z) = \int_0^\infty p_X(s+z)p_Y(s) ds
+ = \int_0^\infty f(s+z)g(s) ds
+ = \lambda\mu\int_0^\infty e^{-\lambda (s + z) - \mu s }
+ = \lambda\mu e^{-\lambda z}\int_0^\infty e^{-(\lambda + \mu)s}
+ = \frac{\lambda\mu}{\lambda+\mu}e^{-\lambda z}
+z \leq 0
+x \geq 0
+y \geq -z
+p_-(z) = \int_0^\infty p_X(s)p_Y(s-z) ds
+=\frac{\lambda\mu}{\lambda+\mu}e^{\mu z}
+p(z) = \frac{\lambda\mu}{\lambda+\mu} \left\{\begin{array}{ll}  e^{-\lambda z} & z \geq 0 \\ e^{\mu z} & z \leq 0 \end{array}\right.
+0\log 0

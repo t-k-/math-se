@@ -1,0 +1,11 @@
+\int_a^b f(x) \,dx,
+f(x) = \sqrt{16 - x^2}
+[a, b] = [-4, 4]
+ x = 4\sin u 
+\int_{-4}^4 \sqrt{16 - x^2}\,dx
+x = 4 \sin \theta \implies dx = 4 \cos \theta
+\theta = \sin^{-1}\left(\frac x4\right)
+x = -4\implies \sin\theta = -1 \implies \theta = -\pi/2
+x = 4 \implies \sin\theta = 1 \implies \theta = \pi/2
+\begin{align}\int_{-4}^4 \sqrt{16 - x^2}\,dx & = \int_{-\pi/2}^{\pi/2} \sqrt{16 - 16\sin^2 \theta}\,4\cos \theta\,d\theta\\ \\  & = 16\int_{-\pi/2}^{\pi/2} \sqrt{1 - \sin^2 \theta}\,\cos\theta\,d\theta \\ \\  \end{align}
+1 - \sin^2 \theta = \cos^2\theta

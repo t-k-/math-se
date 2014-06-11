@@ -1,0 +1,9 @@
+c_n=\sum_{k=0}^n a_k b_{n-k}
+\sum_{k=0}^\infty c_k=(\sum_{k=0}^\infty a_k)(\sum_{k=0}^n b_k)
+(a_k)=(\frac{-1}{2})^k
+(b_k) = \frac{(-1)^k}{k+1}
+\sum_{k=0}^n c_k = \sum_{k=0}^n (\frac{-1}{2})^k \frac{(-1)^{n-k}}{n-k+1}
+\sum_{k=0}^n(\frac{-1}{2})^k(-1)^{n-k}\frac{1}{n-k+1}
+\sum_{k=0}^n(\frac{-1}{2})^k(-1)^{n-k}\frac{1}{n-k+1}= \sum_{k=0}^n\frac{(-1)^k}{2^k}(-1)^{n-k}\frac{1}{n-k+1}
+= (-1)^n\sum_{k=0}^n\frac{1}{2^k}\frac{1}{n-k+1}
+|c_{k+1}|=\frac{1}{2}|c_k|+\frac{1}{k+2}

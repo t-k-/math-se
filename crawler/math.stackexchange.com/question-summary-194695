@@ -1,0 +1,31 @@
+e^a
+\lim \limits_{n \to \infty}\left(1 + \frac{a}{n}\right)^n=e^a
+\lim_{n\rightarrow\infty} (1+1/n)^n=e
+m=n/a
+\lim_{n\rightarrow\infty} (1+a/n)^n=\lim_{m\rightarrow \infty} (1+1/m)^{ma}=e^a
+\lim \limits_{x \to +\infty} (1+a/x)^x = e^{\lim \limits_{x \to +\infty} x \log (1+a/x)}
+\frac{\log (1+a/x)}{1/x}
+\frac{\frac{1}{1+a/x} \cdot \frac{-a}{x^2}}{\frac{-1}{x^2}} = \frac{a}{1+a/x} = a
+y=1/n\implies \lim \limits_{n \to \infty}\left(1 + \frac{a}{n}\right)^n=\lim_{y\to 0^+}(1+ay)^{\frac{1}{y}}
+A=\lim_{y\to 0^+}(1+ay)^{\frac{1}{y}}
+\implies \log A=\lim_{y\to 0^+}\frac{\log(1+ay)}{y}=\lim_{y\to 0^+} \frac{a}{(1+ay)}=a
+\implies \log A=a\implies A= e^a
+\lim \limits_{n \to \infty}\left(1 + \frac{a}{n}\right)^n=e^a
+c_{n,k} = \begin{cases} 0 && k>n \\ \binom{n}{k} \frac{1}{n^k} && \text{otherwise} \end{cases}
+0 \leq c_{n,k} \leq \frac{1}{k!}
+c_{n+1,k} \geq c_{n,k}
+\lim_n c_{n,k} =\frac{1}{k!}
+(1+\frac{a}{n})^n = \sum_{k=0}^\infty c_{n,k} a^k
+|e^a - (1+\frac{a}{n})^n| \leq \sum_{k=0}^\infty |\frac{1}{k!}-c_{n,k}| |a^k| \leq \sum_{k=0}^\infty \frac{1}{k!} |a^k| \leq e^{|a|}
+0 \leq \frac{1}{k!}-c_{n,k} \leq \frac{1}{k!}
+\epsilon>0
+N
+\sum_{k>N} \frac{1}{k!} |a^k| < \frac{\epsilon}{2}
+M = \max(1, |a|,...,|a|^N)
+N' \geq N
+\max_{k=0,...,N} |\frac{1}{k!}-c_{n,k}| < \frac{1}{M(N+1)} \frac{\epsilon}{2}
+n>N'
+|e^a - (1+\frac{a}{n})^n| \leq \sum_{k=0}^\infty |\frac{1}{k!}-c_{n,k}| |a^k| \leq \sum_{k=0}^N |\frac{1}{k!}-c_{n,k}| |a^k|+ \sum_{k>N} |\frac{1}{k!}-c_{n,k}| |a^k|
+\frac{\epsilon}{2} 
+|e^a - (1+\frac{a}{n})^n| < \epsilon
+n> N'

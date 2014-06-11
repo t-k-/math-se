@@ -1,0 +1,20 @@
+x=a
+H(x) = \frac {\color{red}{6}} x + x; a= 1
+{f(x+h)-f(x)\over h}
+f(x)={6\over x}+x
+{{6\over (x+h)}+(x+h)-({6\over x}+x) \over h}
+x=1
+{({6\over (1+0)})+(1+0)-(({6\over 1})+1)\over h}
+6+1-6-1
+0\over 0
+H
+x=a
+H
+x
+x
+\left.\dfrac{\mathrm{d}H(x)}{\mathrm{d} x}\right|_{x=a}
+\left(\dfrac{6}{x} + x\right)
+x
+(x=a)
+(a=1)
+\begin{align}H'(x) & = \frac{\mathrm{d}H(x)}{\mathrm{d} x} \\ & = \lim\limits_{h\to 0} \frac{H(x+h)-H(x)}{h} \\ & = \lim\limits_{h\to 0} \frac{\left(\frac{6}{x+h}+x+h\right)-\left(\frac 6 x + x\right)}{h} & \text{since }H(x)=\frac 6 x + x \\ & = \lim\limits_{h\to 0} \frac{\left(\frac {6}{x+h} - \frac 6 x\right) + (x + h - x)}{h} & \text{by rearrangement} \\ & = \lim\limits_{h\to 0} \frac{\frac {6x - 6(x+h)}{x(x+h)} + h}{h} & \text{cross multiplying fractions} \\ & = \lim\limits_{h\to 0} \frac{\frac {-6h}{x^2+hx} + h}{h} \\ & = \lim\limits_{h\to 0} \frac {-6}{x^2+hx} + 1 & \color{red}{\text{Cancel common terms.}} \\ & = \frac {-6}{x^2} + 1 & \text{taking to the limit} \\ \therefore H'(1) & = -5 \end{align}

@@ -1,0 +1,21 @@
+u_t=u_{xx}, x \in \mathbb{R}, t>0
+u(x,0)=f(x)=H(x)=\left\{\begin{matrix} 1, x>0\\  0, x<0 \end{matrix}\right.
+u(x,t)=X(x)T(t)
+X_k(x)=e^{ikx}, \lambda=k^2, k \in \mathbb{R}
+T_k(t)=e^{-k^2t}
+u(x,t)=\frac{1}{2\pi} \int_{-\infty}^{+\infty}{\widetilde{f}(k) e^{ikx} e^{-k^2t}}dk
+u(x,0)=H(x) \Rightarrow H(x)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}{\widetilde{f}(k)e^{ikx}}dk
+\widetilde{f}(k)=\int_0^{\infty}{e^{-ikx}}dx=\frac{1}{ik}
+u(x,t)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}{\frac{1}{ik} e^{ikx} e^{-k^2t}}dk
+u(x,t)=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}{\frac{1}{ik} e^{ikx}e^{-k^2t}}dk
+x
+u_x=\frac{1}{2 \pi} \int_{-\infty}^{+\infty}{\frac{1}{ik} e^{ikx}e^{-k^2t}}dk
+\int_{-\infty}^{+\infty}{e^{ikb}e^{-k^2a}}dk=\sqrt{\frac{\pi}{a}}e^{-\frac{b^2}{4a}}
+u_x=\frac{1}{2 \pi} \sqrt{\frac{\pi}{t}}e^{-\frac{x^2}{4t}}=\frac{1}{\sqrt{4 \pi t}} e^{-\frac{x^2}{4t}}
+u(x,t)
+\displaystyle{\int u_x dx}
+f=H
+(1)
+{\rm erf}
+ u(x,t)=\frac{1}{\sqrt{4\pi t}}\int\limits_{-\infty}^{\infty}f(y) e^{-\frac{(x-y)^2}{4t}}dy.\tag{1} 
+ \begin{align} u(x,t)=\frac{1}{\sqrt{4\pi t}}\int\limits_{0}^{\infty}e^{-\frac{(x-y)^2}{4t}}dy= \frac{1}{\sqrt{4\pi t}}\int\limits_{0}^{\infty}e^{-\frac{y^2}{4t}}dy+\frac{1}{\sqrt{4\pi t}}\int\limits_{0}^{x}e^{-\frac{y^2}{4t}}dy\\ =\frac{1}{2}+\frac{1}{\sqrt{\pi}}\int\limits_{0}^{x/{\sqrt{4t}}}e^{-s^2}ds= \frac{1}{2}+\frac{1}{2}{\rm erf}\Bigl(\frac{x}{\sqrt{4t}}\Bigr) \end{align} 

@@ -1,0 +1,9 @@
+ \int {dx \over {\sin^3 x+\cos^3 x}}
+I=\int \frac{dx}{\sin^3x+\cos^3x}=\int \frac{dx} {\left(\sin(x)+\cos(x)\right)\left(1-\sin(x)\cos(x)\right)}
+\sin(x)\cos(x)= \frac{\left(1-(\sin(x)-\cos(x))^2\right)}{2}
+ I=\int \frac{dx} {\left(\sin(x)+\cos(x)\right) \left(1-\frac{\left(1-(\sin(x)-\cos(x))^2\right)}{2}\right)}
+\sin(x)-\cos(x)=t
+ \left(\cos(x)+\sin(x)\right)dx=dt \implies dx=\frac{dt}{\left(\sin(x)+\cos(x)\right)}
+ \frac{dx}{\left(\cos(x)+\sin(x)\right)}=\frac{dt}{\left(\sin(x)+\cos(x)\right)^2} =\frac{dt}{1+2\sin(x)\cos(x)}=\frac{dt}{1+2\frac{\left(1-(\sin(x)-\cos(x))^2\right)}{2}}=\frac{dt}{2-t^2}
+I=\int \frac{2dt}{\left(t^2+1\right)\left(2-t^2\right)}=\frac{2}{3}\left( \int \frac{dt}{t^2+1}-\int \frac{dt}{t^2-2}\right)
+ I=\frac{2}{3} \tan^{-1}(t)-\frac{1}{3\sqrt{2}}\ln\left|\frac{t-\sqrt{2}}{t+\sqrt{2}}\right|

@@ -1,0 +1,18 @@
+\int_{0}^{\infty} \dfrac{1}{\cosh (x)} dx
+\dfrac{\pi i}{2}
+-i
+-R to -R
+-R-i \pi
+-R-i \pi
+R + i \pi
+2 \pi i * -i= 2\pi
+z=-R, z=R, z=R+ i \pi
+z=-R+ i \pi
+ \int_{-R}^{R} \frac{1}{\cosh x} \ dx + i \int_{0}^{\pi} \frac{1}{\cosh (R+it)} \ dt + \int_{R}^{-R} \frac{1}{\cosh( t + i \pi)} \ dt  + i \int_{\pi}^{0} \frac{1}{\cosh (-R + it)} \ dt
+ = 2 \pi i \ \text{Res} \left[\frac{1}{\cosh z}, \frac{i \pi}{2} \right] = 2 \pi
+ \begin{align} \cosh (t + i \pi) &= \frac{e^{t + i \pi} + e^{-t-i \pi}}{2} \\ &= \frac{-e^{t}-e^{-t}}{2} \\  &= -\frac{e^{t}+e^{-t}}{2} \\ &=  -\cosh t \end{align}
+ = 2 \int_{-R}^{R} \frac{1}{\cosh x} \ dx +  i \int_{0}^{\pi} \frac{1}{\cosh (R+it)} \ dt -  i \int_{0}^{\pi} \frac{1}{\cosh (-R + it)} \ dt = 2 \pi
+R \to \infty
+ \begin{align} \Big| \int_{0}^{\pi} \frac{1}{\cosh (R +it)} \ dt \Big| &\le \int_{0}^{\pi} \Big|\frac{1}{\cosh (R+it)} \Big| \ dt  \\ &= \pi \ \frac{2}{|e^{R+it} +e^{-R-it}|}\\ &\le 2 \pi \frac{1}{|e^{R+it}|-|e^{-R-it}|} \ \ \text{reverse triangle inequality} \\ &= 2 \pi \frac{1}{e^{R}-e^{-R}} \to 0 \ \text{as} \ R \to \infty \end{align}
+ 2 \int_{-\infty}^{\infty} \frac{1}{\cosh x} \ dx = 2 \pi
+ \int_{0}^{\infty} \frac{1}{\cosh x} \ dx = \frac{\pi}{2}

@@ -1,0 +1,75 @@
+f(x) = \frac{2}{x^2}
+x\rightarrow x_0
+(f(x+h)-f(x))/h
+\lim_{h \to 0} \frac{\frac{2}{(x + h)^2} - \frac{2}{x^2}}{h} = \lim_{h \to 0} \frac{\frac{2[x^2 - (x+h)^2]}{x^2(x + h)^2}}{h} = \lim_{h \to 0} \frac{\frac{2[-2hx - h^2]}{x^2(x + h)^2}}{h} = \lim_{h \to 0} \frac{2[-2x - h]}{x^2(x + h)^2} = \frac{2(-2x)}{x^4} = \frac{-4}{x^3}
+h\neq 0
+h=0
+\frac{f(x+h)-f(x)}h,\quad h\neq 0.\tag{1}
+a,b
+a^2-b^2=(a+b)(a-b)
+(2)
+(3)
+x_0,x,x-x_0\neq 0
+x,x_0
+0
+0
+f
+f(0)
+x=0
+x_0=0
+(2)
+x
+x_0
+(2)
+x\to x_0
+\frac1{x-x_0}\cdot\left(\frac2{x^2}-\frac2{x_0^2}\right)=\frac1{x-x_0}\cdot\left(\frac{2x_0^2}{x_0^2x^2}-\frac{2x^2}{x_0^2x^2}\right)=\frac{2(x_0^2-x^2)}{x_0^2x^2(x-x_0)}=\frac{-2(x^2-x_0^2)}{x_0^2x^2(x-x_0)},
+\frac{f(x)-f(x_0)}{x-x_0}=\frac{-2(x+x_0)(x-x_0)}{x_0^2x^2(x-x_0)}=\frac{-2(x+x_0)}{x_0^2x^2}.\tag{3}
+0
+x_0
+(3)
+\begin{equation*}\lim\limits_{x\to x_0}\cfrac{f(x)-f(x_0)}{x-x_0}=\lim\limits_{x\to x_0}\cfrac{-2(x+x_0)}{x_0^2x^2}=\cfrac{-2(x_0+x_0)}{x_0^2x_0^2}=\cfrac{-4x_0}{x_0^4}=\cfrac{-4}{x_0^3}.\end{equation*}
+(1')
+(2)
+x:=x_0+h
+x\to x_0
+h\to 0
+h\neq 0
+x\neq x_0
+(2)
+(1')
+a,b
+n
+\Sigma
+a^{n+1}-b^{n+1}=(a-b)\sum_{j=0}^na^{n-j}b^j.\tag{#}
+\underline{n=0}:\quad \sum_{j=0}^0a^{0-j}b^j=1\;\;(=a^{0-0}b^0)
+\underline{n=1}:\quad \sum_{j=0}^1a^{1-j}b^j=a+b\;\;(=a^{1-0}b^0+a^{1-1}b^1)
+\underline{n=2}:\quad \sum_{j=0}^2a^{2-j}b^j=a^2+ab+b^2\;\;(=a^{2-0}b^0+a^{2-1}b^1+a^{2-2}b^2)
+\underline{n=3}:\quad \sum_{j=0}^3a^{3-j}b^j=a^3+a^2b+ab^2+b^3\;\;(=a^{3-0}b^0+a^{3-1}b^1+a^{3-2}b^2+a^{3-3}b^3)
+a^n
+a
+1
+b
+1
+b^n
+n=1
+2
+(\#)
+(a-b)\sum_{j=0}^na^{n-j}b^j=\sum_{j=0}^n(a-b)a^{n-j}b^j=\sum_{j=0}^n\left(a^{n+1-j}b^j-a^{n-j}b^{j+1}\right)
+\left(a^{n+1}-a^nb\right)+\left(a^nb-a^{n-1}b^2\right)+\cdots+\left(a^2b^{n-1}-ab^n\right)+\left(ab^n-b^{n+1}\right).
+a^{n+1}-b^{n+1},
+f(x)=\frac{\alpha}{(x-\beta)^m},\: x\neq \beta
+m=1
+m=n+1
+n\geq 0
+(x-\beta)-(x_0-\beta)=x-x_0
+\frac{f(x)-f(x_0)}{x-x_0}=\frac\alpha{(x-\beta)^{n+1}(x_0-\beta)^{n+1}(x-x_0)}\left((x_0-\beta)^{n+1}-(x-\beta)^{n+1}\right)=\frac{-\alpha}{(x-\beta)^{n+1}(x_0-\beta)^{n+1}}\sum_{j=0}^n(x_0-\beta)^{n-j}(x-\beta)^j,
+\lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}=\frac{-\alpha}{(x_0-\beta)^{2n+2}}\sum_{j=0}^n(x_0-\beta)^n.
+n+1
+(x_0-\beta)^n
+\Sigma
+0
+m=n+1
+\begin{equation*}\lim\limits_{x\to x_0}\cfrac{f(x)-f(x_0)}{x-x_0}=\cfrac{-(n+1)\alpha (x_0-\beta)^n}{(x_0-\beta)^{2n+2}}=\cfrac{-(n+1)\alpha}{(x_0-\beta)^{n+2}}=\cfrac{-m\alpha}{(x_0-\beta)^{m+1}}.\end{equation*}
+\dfrac{\frac{2}{x^2 + 2xh + h^2} - \frac{2}{x^2}}{h} = \dfrac{\frac{2x^2 - 2(x^2 + 2xh + h^2)}{x^2(x^2 + 2xh + h^2)}}{h} = \dfrac{2x^2 - 2(x^2 + 2xh + h^2)}{hx^2(x^2 + 2xh + h^2)}
+\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to 0}\frac{\frac{2}{(x+h)^2}-\frac{2}{x^2}}{h}=\lim_{h\to 0}\frac{-4xh-2h^2}{x^2(x+h)^2h}=
+=\lim_{h\to 0}\frac{-4x-2h}{x^2(x+h)^2}=-\frac{4x}{x^4}=-\frac{4}{x^3}

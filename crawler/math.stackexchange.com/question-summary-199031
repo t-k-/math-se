@@ -1,0 +1,14 @@
+T(n) = \Theta(n^2) 
+T(n)= 4T(n/2) + n^2
+T(n) < cn^2 \leq cn^2 + n^2 
+T(n)=4T(n/2)+n^2=4(4T(n/4)+n^2/4)+n^2=16T(n/4)+2n^2=16(T(n/8)+n^2/16)+2n^2=16T(n/8)+3n^2=\cdots=2^{i+1}T(n/2^i)+in^2
+2^i\approx n\implies 
+\lfloor\log_2 n\rfloor\implies T(n)\approx nT(1)+n^2\log_2n
+\Theta(n^2)
+\Theta(n^2\log_2n)
+c
+T(n)<cn^2
+T(n)\ge n^2
+n^2\le T(n)<cn^2
+T(n)
+\Theta(n^2)

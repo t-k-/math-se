@@ -1,0 +1,8 @@
+ P(\gamma)=\int_{W(-1/\gamma)}^{W(1/\gamma)}\frac{e^{-u} \,\text{d}u}{\sqrt{1-(\gamma u e^{u})^2}} 
+\gamma
+0
+\gamma\geq e
+\frac{1}{\pi}I(\gamma)
+ I = \int_{-1}^{1}W(t/\gamma)W'(t/\gamma)\frac{dt}{t\sqrt{1-t^2}},
+ W(z)W'(z) = -\sum_{n=1}^{+\infty}\frac{(-1)^n (n+1)^{n-1}}{(n-1)!}z^n,
+\begin{eqnarray*} I &=& -\sum_{n=1}^{+\infty}\frac{(-1)^n (n+1)^{n-1}}{\gamma^n (n-1)!}\int_{-1}^{1}\frac{z^{n-1}}{\sqrt{1-z^2}}\\&=&\sum_{m=0}^{+\infty}\frac{ (2m+2)^{2m}}{\gamma^{2m+1} (2m)!}\int_{-1}^{1}\frac{z^{2m}}{\sqrt{1-z^2}}\\&=&\sum_{m=0}^{+\infty}\frac{ (2m+2)^{2m}}{\gamma^{2m+1} (2m)!}\int_{-\pi/2}^{\pi/2}\sin^{2m}(\theta)\,d\theta\\&=&\pi\sum_{m=0}^{+\infty}\frac{ (m+1)^{2m}}{\gamma^{2m+1}(m!)^2},\tag{1}\end{eqnarray*}

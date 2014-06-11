@@ -1,0 +1,21 @@
+\lnot r
+r \lor \lnot p
+\lnot p
+q \to (r \lor \lnot p)
+q \to \lnot p
+p \to q
+p \to \lnot p
+p
+\lnot p
+\bot
+p \to \bot
+\lnot p
+p
+q
+r
+p \to (r \lor q)
+q \to \lnot r
+r
+p
+ \begin{array}{|c|c|c|} \hline p & q & r \\ \hline T & T & T \\ T & T & f \\ T & f & T \\ f & T & T \\ T & f & f \\ f & T & f \\ f & f & T \\ f & f & f \\ \hline \end{array} 
+ \begin{array}{|c|c|c|c|c|} \hline p & q & r & p\to r\lor q & q\to\lnot r \\ \hline T & T & T & T & f \\ T & T & f & T & T \\ T & f & T & T & T \\ f & T & T & T & f \\ T & f & f & f & T \\ f & T & f & T & T \\ f & f & T & T & T \\ f & f & f & T & T \\ \hline {} \end{array} 

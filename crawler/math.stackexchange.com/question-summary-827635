@@ -1,0 +1,11 @@
+h : [0, \infty ) \rightarrow \mathbb{R}
+*
+h*m
+h*F
+(h*m)*F=h*(m*F).
+ (h*m)(t):=\int\limits_{0}^{t} h(t-x)dm(x), \quad (h*F)(t):=\int\limits_{0}^{t} h(t-x)dF(x),
+[h*(m*F)](t)=\int\limits_{0}^{t} h(t-x)d(m*F)(x) =-\int\limits_{0}^{t} (m*F)(t-x)dh(x) =-\int\limits_{0}^{t}  \left[ \int\limits_{0}^{t-x} m(t-x-y)dF(y) \right] dh(x)  =\int\limits_{0}^{t}  \left[ \int\limits_{0}^{t-x} F(t-x-y)dm(y) \right] dh(x) =\int\limits_{0}^{t}  \int\limits_{0}^{t-x} F(t-(x+y)) dm(y)  dh(x)  =\int\limits_{0}^{t}  \int\limits_{x}^{t}   F(t-u) dm(u-x)  dh(x)  =\int\limits_{0}^{t}  \int\limits_{0}^{u}   F(t-u) dh(x)  dm(u-x) 
+[(h*m)*F](t) =\int\limits_{0}^{t} (h*m)(t-u)dF(u)   =\int\limits_{0}^{t}  \left[ \int\limits_{0}^{t-u} h(t-u-y)dm(y) \right] dF(u)   =\int\limits_{0}^{t}  \left[ \int\limits_{u}^{t} h(t-u-y)dm(y) \right] dF(u)   = \int\limits_{0}^{t}   \int\limits_{u}^{t} h(t-u-y)dm(y)  dF(u)   = \int\limits_{0}^{t}   \int\limits_{0}^{u+y} h(t-u-y) dF(u) dm(y)   = - \int\limits_{0}^{t}   \int\limits_{0}^{u+y} F(t-(u+y)) dh(u) dm(y) 
+\begin{align*} h \ast (m \ast F)(t) &= (m \ast F) \ast h (t) \\ &= \int_0^t (m \ast F)(t-x) \, dh(x) \\ &= \int_0^t \int_0^{t-x} m((t-x)-y) \, dF(y) \, dh(x) \\ &= \int_0^{\infty} \int_0^{\infty} 1_{[0,t]}(x) \cdot 1_{[0,t-x]}(y) \cdot m(t-x-y) \, dF(y) \, dh(x). \end{align*}
+1_{[0,t]}(x) \cdot 1_{[0,t-x]}(y) = 1_{[0,t]}(x)\cdot 1_{[0,t-x]}(y)\cdot 1_{[0,t]}(y) = 1_{[0,t-y]}(x)\cdot 1_{[0,t]}(y)
+\begin{align*} h \ast (m \ast F)(t) &= \int_0^{\infty} \int_0^{\infty} 1_{[0,t-y]}(x)\cdot 1_{[0,t]}(y)\cdot m(t-x-y) \, dh(x) \, dF(y) \\ &= \int_0^t \int_0^{t-y} m((t-y)-x) \, dh(x) \, dF(y) \\ &= \int_0^t (m \ast h)(t-y) \, dF(y) \\ &= (m \ast h) \ast F(t). \end{align*}

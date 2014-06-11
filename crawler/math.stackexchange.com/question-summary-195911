@@ -1,0 +1,32 @@
+ x \sim \sum_{i = 1}^M \alpha_i N(\mu_i, C_i) 
+x
+x
+C
+Z
+X
+Y
+(\mu_X,\sigma_X^2)\neq(\mu_Y,\sigma_Y^2)
+f_Z(z)=\alpha f_X(z)+(1−\alpha)f_Y(z), ~0<\alpha<1
+\begin{aligned} E[Z]&= \int_{-\infty}^\infty zf_Z(z)\,\mathrm dz& &= \alpha\mu_X + (1-\alpha)\mu_Y\\ E[Z^2]&= \int_{-\infty}^\infty z^2f_Z(z)\,\mathrm dz& &= \alpha(\sigma_X^2+\mu_X^2) + (1-\alpha)(\sigma_Y^2 + \mu_Y^2)\\ \text{var}(Z) &= E[Z^2] - (E[Z])^2& &= \alpha(\sigma_X^2+\mu_X^2) + (1-\alpha)(\sigma_Y^2 + \mu_Y^2) - [\alpha\mu_X + (1-\alpha)\mu_Y]^2 \end{aligned}
+Z
+Z
+\mu
+C_i
+Z
+A_k
+\mu^{(k)}
+C^{(k)}
+E[Z_i] = \sum_{k=1}^n \alpha_k \mu_i^{(k)} ~\text{and}~ E[Z_iZ_j] = \sum_{k=1}^n \alpha_k \bigr(C_{i,j}^{(k)} + \mu_i^{(k)}\mu_j^{(k)}\bigr)
+\begin{align}C_{i,j} = \text{cov}(Z_i,Z_j) &= \sum_{k=1}^n \alpha_k \bigr(C_{i,j}^{(k)} + \mu_i^{(k)}\mu_j^{(k)}\bigr) - \left(\sum_{k=1}^n \alpha_k \mu_i^{(k)}\right) \left(\sum_{k=1}^n \alpha_k \mu_j^{(k)}\right)\\ &= \left(\sum_{k=1}^n \alpha_k C_{i,j}^{(k)}\right)  + \left(\sum_{k=1}^n \alpha_k \mu_i^{(k)}\mu_j^{(k)} - \left(\sum_{k=1}^n \alpha_k \mu_i^{(k)}\right) \left(\sum_{k=1}^n \alpha_k \mu_j^{(k)}\right)\right) \end{align}
+X_i
+\mu_i
+C_i
+Z = \sum_{i=1}^n \alpha_i X_i
+\alpha_i \in \mathbb{R}
+Z
+     \mathbb{E}\left(X_i\right) = \mu_i, \quad \mathbb{E}\left((X_i-\mu_i) \otimes (X_i-\mu_i)\right) = C_i 
+X_i
+X_j
+i\not=j
+     \mathbb{E}\left(Z\right) = \mathbb{E}\left(\sum_{i=1}^n \alpha_i X_i\right) = \sum_{i=1}^n \alpha_i \mathbb{E}\left(X_i\right) = \sum_{i=1}^n \alpha_i \mu_i 
+     \mathbb{Cov}\left(Z, Z\right) = \sum_{i=1}^n \sum_{j=1}^n \alpha_i \alpha_j \mathbb{Cov}\left(X_i, X_j \right) \stackrel{\text{indep.}}{=}  \sum_{i=1}^n \alpha_i^2 \mathbb{Cov}\left(X_i, X_i \right) = \sum_{i=1}^n \alpha_i^2 C_i 

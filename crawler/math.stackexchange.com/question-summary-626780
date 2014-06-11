@@ -1,0 +1,30 @@
+G
+\hat{G}
+G
+(\pi:G\to U(\mathcal{H}_{\pi}),\mathcal{H}_{\pi})
+(\rho:G\to U(\mathcal{H}_{\rho}),\mathcal{H}_{\rho})
+\Phi:\mathcal{H}_{\pi}\to\mathcal{H}_{\rho}
+\require{AMScd} \begin{CD} \mathcal{H}_{\pi} @>{\Phi}>> \mathcal{H}_{\rho}\\ @V{\pi(g)}VV @VV{\rho(g)}V \\ \mathcal{H}_{\pi} @>>{\Phi}> \mathcal{H}_{\rho} \end{CD}\quad\forall g\in G
+\pi\in\hat{G}
+PD(\pi)
+\left\{g\mapsto\langle\pi(g)\xi,\xi\rangle_{\mathcal{H}_{\pi}};\xi\in\mathcal{H}_{\pi}\setminus\{0\}\right\}
+S\subseteq\hat{G}
+\pi\precsim S
+\phi\in PD(\pi)
+K\subseteq G
+\epsilon>0
+F\subseteq\cup_{\rho\in S}PD(\rho)
+\lVert\phi-\sum_{\psi\in F}\psi\rVert_{K,\infty}:=\sup_{g\in K}\lvert\phi(g)-\sum_{\psi\in F}\psi(g)\rvert<\epsilon
+\overline{\cdot}:\mathfrak{P}(\hat{G})\to\mathfrak{P}(\hat{G})
+\overline{S}
+S
+\hat{G}
+\overline{S}:=\{\pi\in\hat{G};\pi\precsim S\}
+\overline{A}\cup\overline{B}\subseteq\overline{A\cup B}
+\pi\in\overline{A}\cup\overline{B}\Leftrightarrow\pi\in\overline{A}\lor\pi\in\overline{B}\Leftrightarrow\pi\precsim A\lor\pi\precsim B\Rightarrow\pi\precsim A\cup B
+\lVert\sum_{\chi\in F_{x}}\chi\rVert_{K_{x},\infty}\geq \delta
+x\in\{A,B\}
+F_{A}\subseteq PD(A)
+F_{B}\subseteq PD(B)
+\epsilon>2\delta>0
+\lVert\phi_{0}-\sum_{\chi\in F_{A}\cup F_{B}}\chi\rVert_{K,\infty}<\delta

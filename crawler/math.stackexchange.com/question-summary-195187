@@ -1,0 +1,25 @@
+S_{0} = a
+S_{1} = b
+k
+S_{n} = (S_{n-1} * S_{n-2} )^k
+S_{n}
+\log n
+T_n = \log S_n
+S_n = (S_{n-1} S_{n-2})^k
+\log S_n = k(\log S_{n-1} + \log S_{n-2})
+T_n = kT_{n-1} + kT_{n-2}
+T_n
+O(\log n)
+S_n
+S_n = b^{T_n}
+b
+T_n
+O(\log n)
+A = \begin{pmatrix}0 & 1 \\ k & k \end{pmatrix}
+X_n = \begin{pmatrix}T_n \\ T_{n+1}\end{pmatrix}
+X_n = AX_{n-1}
+X_n = A^n X_0
+A^n
+O(\log n)
+X_0 = \begin{pmatrix}T_0 \\ T_1\end{pmatrix}
+X_n

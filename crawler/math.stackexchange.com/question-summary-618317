@@ -1,0 +1,22 @@
+\int \frac {\sec x\tan x}{3x+5}\,dx
+(3x+5)^{-1}
+U
+\sec x \tan x
+dv
+ \int {\sec\left(x\right)\tan\left(x\right)  \over 3x + 5}\,{\rm d}x 
+\displaystyle \int \frac{1}{3x+5}\left(\sec x\tan x \right)\,\mathrm dx
+= \frac{1}{3x+5}\sec x +\int  \frac{3}{(3x+5)^2}\sec x\,\mathrm  dx
+U= \sec x \tan x
+ du= \tan^2 x \sec x +\sec^3 x
+dv=(3x+5)^{-1}
+v=\frac 1 3 \ln(3x+5)
+\int \frac {\sec x \tan x}{3x+5}\,dx= \frac {\ln(3x+5)\sec x \tan x}{3} - \int \frac {\ln(3x+5) [\tan^2 x \sec x +\sec^3 x]}{3} \,dx
+\frac {\sec x \tan x}{3x+5} \, dx
+{let: 3x+5= \sec \theta, x=\frac {\sec\theta+5}{3}, dx=\frac{1}{3}\sec\theta\tan\theta d\theta}
+{\frac {1}{3}\int\frac{\sec\frac{\sec\theta+5}{3}\tan\frac{\sec\theta+5}{3}}{\sec\theta}\sec\theta\tan\theta d\theta=}
+{\frac{1}{3}\int\cos\theta {\sec\frac{\sec\theta+5}{3}\tan\frac{\sec\theta+5}{3}}\sec\theta\tan\theta d\theta}
+{let: u=\frac{\sec\theta+5}{3}=, du=\frac{1}{3}\sec\theta\tan\theta d\theta}
+{\frac {1}{9}\cos\theta\int\sec u \tan u du=}
+{\frac{1}{9}\cos\theta\sec u+c=}
+{\frac{1}{9}\frac{\sec x}{3x+5}+c}
+{Edit}

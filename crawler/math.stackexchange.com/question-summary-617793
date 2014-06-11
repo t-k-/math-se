@@ -1,0 +1,27 @@
+f:\mathbb R\to\mathbb R
+1
+f
+L\in (0,1)
+x,y\in\mathbb R
+g(x)=x+f(x).
+x
+n\ge1
+g^{\circ n}
+g
+n
+g^{\circ 1}=g
+n\ge1
+g^{\circ n+1}=g\circ g^{\circ n}
+ |f(x)-f(y)| \le L|x-y|, \quad \text{for all $x,y\in\mathbb R$.} 
+\lim_{n\to +\infty}\frac1{n^2}[x+g(x)+g(g(x))+\cdots +g^{\circ n}(x)]
+L+1>1
+f(x+1)=f(x),\forall x\in R
+g(g(x))=g(x+f(x))=x+f(x)+f(x+f(x))
+g(g(g(x)))=g(x+f(x)+f(x+f(x)))=x+f(x)+f(x+f(x))+f(x+f(x)+f(x+f(x)))
+\cdots\cdots 
+|g(x)-g(y)|=|x-y+f(x)-f(y)|\le |x-y|+|f(x)-f(y)|<(L+1)|x-y|
+g
+x_n=\underbrace{g(g(\cdots(g(x))))}_{n}
+f(x_n)
+ \underbrace{g(g(\cdots(g(x))))}_{n+1}=g(x_n)=f(x_n)+x_n, 
+ \underbrace{g(g(\cdots(g(x))))}_{n+1}-\underbrace{g(g(\cdots(g(x))))}_{n}=f(x_n)=f\bigg(\underbrace{g(g(\cdots(g(x))))}_{n}\bigg) 

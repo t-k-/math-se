@@ -1,0 +1,27 @@
+K
+0
+M \in K^{n \times m}
+M
+0
+1
+\sum_{i=1}^n M_{ij} = c_{\text{column}} \forall j=1,...,m
+\sum_{j=1}^m M_{ij} = c_{\text{row}} \forall i=1,...,n
+c_{\text{column}}, c_{\text{row}}
+\{1,2,3,...\}
+M
+\text{rank}(M) \geq f(n,m,c_{\text{column}}, c_{\text{row}})
+f
+M \in \{0,1\}^{a \times n}
+K^{a \times n}
+K
+0
+m
+M
+\leq n-1
+1 \leq m < n/2
+m = n/2
+n/2 < m \leq n
+g(n,m) := \begin{cases}                {n-1}\choose m & \text{if $1 \leq m < n/2$} \\               2 \cdot {{n-2}\choose {(n-2)/2}} & \text{if $m = n/2$} \\               {n-1}\choose {m-1} & \text{if $n/2 < m \leq n$} \\             \end{cases}
+n,m,c_r,c_c
+\begin{bmatrix}1 & 1&0&0\\0 &1&1&0 \\0&0&1&1\\1&0&0&1 \end{bmatrix}
+\begin{bmatrix}1 & 1&0&0\\1 &1&0&0 \\0&0&1&1\\0&0&1&1 \end{bmatrix}

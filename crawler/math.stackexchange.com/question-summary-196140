@@ -1,0 +1,11 @@
+n \in \mathbb{N}
+(\sum_{i\in m} x_i)^n=\sum_{\substack{j_i \in \mathbb{Z}^+ \\ \sum j_i=n}}\left(\begin{array}{c} n\\ j_{0},\ldots , j_{m-1} \end{array}\right)\prod_{i \in m}  x_i^{j_i}
+n \not \in \mathbb{N}
+(a+b+c)^{\sqrt{3}}
+n
+(a+b+c)^{\alpha}
+b=0
+c=0
+\alpha \in \mathbb{N}
+    \frac{\partial^{p+q}}{\partial b^p \partial c^q} (a+b+c)^{\alpha} = \prod_{k=0}^{p+q-1} (\alpha -k) \cdot (a+b+c)^{\alpha-p-q} = \binom{\alpha}{p+q} (p+q)! \cdot (a+b+c)^{\alpha-p-q}  
+   (a+b+c)^{\alpha} = \sum_{p=0}^\infty \sum_{q=0}^\infty \binom{\alpha}{p+q} (p+q)! \cdot (a)^{\alpha-p-q} \frac{b^p}{p!} \frac{c^q}{q!} = \sum_{p=0}^\infty \sum_{q=0}^\infty \binom{\alpha}{p, q, \alpha-p-q} a^{\alpha-p-q} b^p c^q 

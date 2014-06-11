@@ -1,0 +1,16 @@
+\lim_{x\to2} {\sqrt{6-x}-2\over\sqrt{3-x}-1}
+\lim_{x\to2} {\sqrt{6-x}-2\over\sqrt{3-x}-1}=\lim_{x\to2} {\sqrt{6-x}-2\over\sqrt{3-x}-1}{{\sqrt{3-x}+1}\over {\sqrt{3-x}+1}}=\lim_{x\to2}\frac{\sqrt{(6-x)(3-x)}+\sqrt{6-x}-2\sqrt{3-x}-2}{2-x}
+\frac 00
+u=2-x
+\lim_{x\to2}\frac{\sqrt{(6-x)(3-x)}+\sqrt{6-x}-2\sqrt{3-x}-2}{2-x}=\lim_{u \to 0} \frac{\sqrt{(4+u)(1+u)}+\sqrt{4+u}-2\sqrt{1+u}-2}{u}=\lim_{u \to 0}\sqrt{1+\frac 5u+4}+\sqrt{\frac4{u^2}+\frac 1u}-\sqrt{\frac 4{u^2}+\frac 4u}-\frac 2u
+\frac 1u
+\ldots
+\ldots
+\begin{align*} \lim_{x \to 2} \;\frac{\sqrt{6-x} - 2}{\sqrt{3-x} - 1} \;&=\; \lim_{x \to 2} \;\frac{\bigl((6-x) - 4\bigr)\bigl(\sqrt{3-x} + 1\bigr)}{\bigl( \sqrt{6-x} + 2 \bigr)\bigl((3-x) - 1\bigr)} &\qquad\qquad\tag{multiply by conjugates} \\[2ex]&=\; \lim_{x \to 2} \;\frac{\bigl(2-x\bigr)\bigl(\sqrt{3-x} + 1\bigr)}{\bigl( \sqrt{6-x} + 2 \bigr)\bigl(2 - x\bigr)} &\qquad\qquad\tag{simplify} \\[2ex]&=\; \lim_{x \to 2} \;\frac{\sqrt{3-x} + 1}{\sqrt{6-x} + 2} &\qquad\qquad\tag{simplify more} \\[2ex]&=\; \frac{\lim_{x \to 2} \bigl(\sqrt{3-x} + 1\bigr)}{\lim_{x \to 2} \bigl(\sqrt{6-x} + 2\bigr)} \tag{as both limits exist $\ldots$} \\[2ex]&=\; \frac{1 + 1}{2 + 2} \;=\; \frac{1}{2}. \tag{$\ldots$ by substitution} \end{align*}
+ \left(\frac{\sqrt{6-x}-2}{x-2}\right) \cdot \frac{1}{\left(\dfrac{\sqrt{3-x}-1}{x-2}\right)}
+\dfrac{f(x)-f(2)}{x-2}
+f
+\lim\limits_{x\to2}
+(1)
+ \begin{align} \frac{\sqrt{6-x}-2}{\sqrt{3-x}-1} &=\frac{\color{#C00000}{\sqrt{6-x}-2}}{\color{#00A000}{\sqrt{3-x}-1}} \frac{\color{#C00000}{\sqrt{6-x}+2}}{\color{#C00000}{\sqrt{6-x}+2}} \frac{\color{#00A000}{\sqrt{3-x}+1}}{\color{#00A000}{\sqrt{3-x}+1}}\\ &=\color{#C00000}{\frac{(6-x)-4}{\sqrt{6-x}+2}} \color{#00A000}{\frac{\sqrt{3-x}+1}{(3-x)-1}}\\ &=\frac{\color{#00A000}{\sqrt{3-x}+1}}{\color{#C00000}{\sqrt{6-x}+2}} \frac{\color{#C00000}{2-x}}{\color{#00A000}{2-x}}\\ &=\frac{\sqrt{3-x}+1}{\sqrt{6-x}+2}\tag{1} \end{align} 
+ \begin{align} \lim_{x\to2}\frac{\sqrt{6-x}-2}{\sqrt{3-x}-1} &=\lim_{x\to2}\frac{\sqrt{3-x}+1}{\sqrt{6-x}+2}\\ &=\frac12\tag{2} \end{align} 

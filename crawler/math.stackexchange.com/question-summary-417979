@@ -1,0 +1,93 @@
+r=r\left(S,t\right)
+\sigma=\sigma\left(S,t\right)
+r \equiv r(S,t), \, \sigma \equiv \sigma(S,t)
+S
+t
+r \equiv r(t), \, \sigma \equiv \sigma(t)
+r
+\sigma
+S
+t
+S
+t
+L[C]
+C(S,t)
+S
+t
+\sigma(t)
+r(t)
+t
+L
+\frac{\partial}{\partial{t}} C = C_{t}
+t'
+t=T-t'
+T
+C_{t} = -C_{t'}
+\frac{1}{2} \sigma^2(T-t')S^2 C_{SS}(S,T-t') + r(T-t')SC_{S}(S,T-t') - r(T-t')C(s,T-t')-C_{t'}=0
+T-t' \mapsto t'
+S = Ee^{x}
+C(S,t)=Ev(x,t')
+E
+x=\ln(\frac{S}{E})
+C(S,t) = C(Ee^x,T-t') = Ev(x,t')
+r
+\sigma
+r(T-t') \mapsto r(t')
+\sigma(T-t') \mapsto \sigma(t')
+C_{S} = C_{x}x_{S} = \frac{1}{S}C_x
+C_{SS} = \frac{-1}{S^2}C_{x} + \frac{1}{S^2}C_{xx}
+C_{S} = \frac{E}{S}v_{x}
+C_{SS} = -\frac{E}{S^2}v_{x} + \frac{E}{S^2}v_{xx}
+v_{t'} = \frac{1}{2} \sigma^2{t'} + \lbrace r(t') + \frac{1}{2} \sigma^2(t') \rbrace v_{x} - r(t')v 
+\tau
+\tau(t') = \int_{0}^{t'} \frac{1}{2} \sigma^2(s) ds
+d\tau = \frac{1}{2} \sigma^2(t') dt'
+v
+t'
+v_{t'} = \frac{1}{2}\sigma^2(t') v_{\tau}
+v_{\tau} = v_{xx} + \lbrace \frac{2r(t')}{\sigma^2(t')} -1 \rbrace v_{x} - \frac{2r(t')}{\sigma^2(t')}v
+v_x
+v
+\tau
+t'
+a(\tau)
+b(\tau)
+a(\tau) = \frac{2r(t')}{\sigma^2(t')} -1
+b(\tau) = \frac{2r(t')}{\sigma^2(t')}
+\tau
+\tau
+t'
+\tau \mapsto \tau(t')
+F
+\tau
+F(t') = \int_{0}^{t'} \frac{1}{2} \sigma^2{s} \, ds
+\tau
+t'
+\tau = F(t')
+F^{-1}
+t' = F^{-1}(\tau)
+r(t')
+r(t') = r[F^{-1}(\tau)] = r(\tau)
+a
+b
+\tau
+a(\tau) = \frac{2r(\tau)}{\sigma^2(\tau)} -1
+b(\tau) = \frac{2r(\tau)}{\sigma^2(\tau)}
+v_{\tau} = v_{xx} + a(\tau)v_{x} - b(\tau)v
+v_{xx}
+v_{\tau} = a(\tau)v_{x} - b(\tau)v
+v(x,\tau) = F[x+A(\tau)]e^{-B(\tau)}
+A
+B
+A'(\tau) = a(\tau)
+B'(\tau) = b(\tau)
+F
+x'= x+A(\tau)
+v(x',\tau) = e^{-B(\tau)}U(x,\tau)
+v(x,\tau) = e^{-B(\tau)}U(x',\tau)
+x
+v_x = e^{-B(\tau)}U_{x'} and 
+\tau
+v_{\tau} = e^{-B(\tau)} [-B'(\tau)U+A'(\tau)U_{x'}+U_{\tau}] = e^{-B(\tau)}[-b(\tau)U+a(\tau)U_{x'}+U_{\tau}]
+v_{\tau} = v_{xx} + a(\tau)v_{x} - b(\tau)v
+U_{\tau} = U_{x'x'}

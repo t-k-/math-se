@@ -1,0 +1,9 @@
+X\geq 0
+h:\mathbb{R} \rightarrow \mathbb{R}
+h(0)=0
+E[h(X)] = \int_0^{\infty} h'(t)P[X>t]dt
+E[h(X)] = \int_0^{\infty} \int_{0}^x h'(t)dt dF(x)
+\int_0^{\infty} P[X>t]h'(t)dt
+E[X] = \int_0^{\infty} x F(x) dx = \int_0^{\infty}\int_0^{x}dx F(x) dt = \int_0^{\infty}\int_t^{\infty} F(x) dx dt = \int_0^{\infty}P[X>t]dt
+E[X^2] = \int_0^{\infty} x^2 F(x) dx = \int_0^{\infty}\int_0^{x}2x F(x) dx dt = 2\int_0^{\infty}\int_t^{\infty} x F(x) dx dt
+\int_t^{\infty}x dx

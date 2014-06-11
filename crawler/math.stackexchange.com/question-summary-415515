@@ -1,0 +1,26 @@
+O(N log N)
+O(n^2)
+O(n\log n)
+p=3
+(s_{1},...,s_{8})
+M=\begin{bmatrix}  1& 1& 1& 1& 1& 1& 1& 1\\  1&-1& 1&-1& 1&-1& 1&-1\\  1& 1&-1&-1& 1& 1&-1&-1\\  1&-1&-1& 1& 1&-1&-1& 1\\  1& 1& 1& 1&-1&-1&-1&-1\\  1&-1& 1&-1&-1& 1&-1& 1\\  1& 1&-1&-1&-1&-1& 1& 1\\  1&-1&-1& 1&-1& 1& 1&-1\\ \end{bmatrix}
+i^{th}
+L_{i}=\sum^{N}_{j=1}s_{j}M[i,j]
+M
+O(n^{2})
+L_{1}=\sum^{N}_{i=1}s_{i}
+L_{\frac{N}{2}+1}=\sum^{\frac{N}{2}}_{i=1}s_{i}-\sum^{N}_{i=\frac{N} {2}+1}s_{i}
+L_{\frac{N}{2}+1}
+L_{1}
+L_{\frac{N}{2}+1}
+O(N log(N))
+n
+1
+1..2^p
+\mathbf{M}
+p
+\mathbf{M}_p
+p
+p\gt2
+\mathbf{M}_1 = \begin{pmatrix}1 & 1 \\ 1 & -1\end{pmatrix}
+\mathbf{M}_n = \begin{pmatrix} \mathbf{M}_{n-1} & \mathbf{M}_{n-1} \\ \mathbf{M}_{n-1} & -\mathbf{M}_{n-1}\end{pmatrix}

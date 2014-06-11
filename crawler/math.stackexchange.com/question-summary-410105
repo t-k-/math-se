@@ -1,0 +1,16 @@
+ R(1)=1, RE(1)=0, EE(1)=0
+a(n)=R(n) + RE(n)
+R(n)=EE(n-1)+RE(n-1),
+ RE(n)=R(n-1),
+ EE(n)=RE(n-1) 
+a(15)
+R(n)=EE(n-1)+RE(n-1)=RE(n-2)+RE(n-1)=R(n-3)+R(n-2) \,.
+RE(n)=R(n-1)=EE(n-2)+RE(n-2)=RE(n-3)+RE(n-2) \,.
+a(n)=a(n-3)+a(n-2) \,.
+EE(n)
+R(n)=RE(n-2)+RE(n-1).
+RE(n)
+R(n)=R(n-3)+RE(n-2) \ \ \ (1)
+a(n)=R(n) + R(n-1) \ \ \ (2)
+1
+2

@@ -1,0 +1,54 @@
+E \{ E (Y\mid F_T)\mid F_S\} = E \{ E (Y\mid F_S)\mid F_T\} = E (Y\mid F_{T \wedge S})
+T
+S
+M_t = E[Y|F_t]
+ E[M_T|F_S] = M_{S\wedge T}
+T_1
+T_2
+A \in F_S \cap F_T
+A= \{\omega : S(w) \leq T(\omega)\}
+ T_1 = T\vee S
+ T_2 = T \wedge S 
+\therefore M_{S \wedge T} = M_S1_A + M_T1_{A^C}
+E[M_T|F_S] = E[M_T 1_A + M_T1_{A^C}|F_S]
+E[M_T 1_A|F_S] = E[M_{T_1}1_A|F_S] = E[M_{T_1}|F_S]1_A
+T_1\geq S
+T, S, T_1
+T_2
+E[M_{T_1}|F_S]1_A = M_S1_A \quad (1)
+E[M_T1_{A^C}|F_S]=E[M_{T_2}1_{A^C}|F_S]=E[M_{T_2}|F_S]1_{A^C}
+T_2 \leq S
+F_{T_2} \subseteq F_S
+\Rightarrow E[M_T1_{A^C}|F_S] = M_{T_2}1_{A^C} = M_T1_{A^C} \quad (2)
+E[M_T|F_S] = M_S1_A + M_T1_{A^C} = M_{S \wedge T} 
+T\wedge N
+S \wedge N
+\infty
+T_n
+S_n
+T_n \uparrow T
+S_n \uparrow S
+T_n\wedge S_m = U_n
+T\wedge S_m = U
+U_n \uparrow U
+ T_n = T\wedge n 
+S_n = S\wedge n
+E[M_{T_n}|F_{S_m}] = M_{T_n \wedge S_m} \quad (3)
+M_{U_n}
+F_{U_n}
+E[M_{U_n}] = E[M_0] = E[Y] < \infty
+E[M_{U_k}|F_{U_m}] = M_{U_m}
+m<k
+\sup_{n \geq 1}E[M_{U_n}] = \sup_{n \geq 1}E[Y] <\infty
+\lim_{n \rightarrow \infty} M_{U_n} = M_U
+\lim_{n \rightarrow \infty} E[M_{T_n}|F_{S_m}] = \lim_{n \rightarrow \infty}M_{T_n \wedge S_m} = M_{T\wedge S_m}\quad (4)
+M_{T_n} \rightarrow M_T
+\sup_{n \geq 1} E[M_{T_n}] = E[Y] < \infty 
+m \rightarrow \infty
+M_{T\wedge S}
+X \in L^1
+F_m
+\lim_{n \rightarrow \infty} E[M_{T_n}|F_{S_m}] = E[M_T|F_{S_m}] \quad (5) 
+E[M_T|F_{S_m}] = M_{T\wedge S_m}
+E[X|F_m] \rightarrow E[X|F_\infty] = X
+ E[M_T|F_{S_m}] \rightarrow E[M_T|F_{S_\infty}] = E[M_T|F_S]

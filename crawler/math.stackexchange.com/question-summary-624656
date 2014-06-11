@@ -1,0 +1,40 @@
+(X,Y)
+L\geq W>0
+Z=XY
+f_Z(z)
+f_{(X,Y)}(x,y)=\frac{12.5}{LW}\;\;\text{for}\; \;0.9L\leq x\leq1.1L\;\;\text{and}\;\;0.8W\leq y\leq1.2W
+I(\dot\;)
+1
+E[Z]=E[XY]=LW
+Z
+X
+f_Z(z)=\int_{-\infty}^{\infty}\frac{1}{x}f_{X,Y}(x,\frac{z}{x})\mathrm{d}x=\frac{12.5}{LW}I_{[0.72LW,1.32LW]}^{(z)}\left(\int_{0.9L}^{0.83Z/W}\frac{dx}{x}+\int_{1.25Z/W}^{1.1L}\frac{dx}{x}\right)
+f_Z(z)=\frac{12.5}{LW}\left(\ln{\frac{22}{27}}\right)I_{[0.72LW,1.32LW]}^{(z)}
+0.9L\lt z/(0.8W)
+z/(1.2W)\lt1.1L
+z
+(A,B)
+f_Z(z)
+(a(z),b(z))
+z
+(A,C)
+(C,D)
+(D,B)
+(A,C)
+a(z)=0.9L
+b(z)=\frac{z}{0.8W}
+(C,D)
+a(z)=0.9L
+b(z)=1.1L
+(D,B)
+a(z)=z/(1.2W)
+b(z)=1.1L
+ f_{X,Y}(x,y)=\frac{12.5}{LW}\mathbf 1_{0.9L\lt x\lt1.1L}\mathbf 1_{0.8W\lt y\lt1.2W}, 
+ f_Z(z)=\frac{12.5}{LW}\int_\mathbb R\mathbf 1_{0.9L\lt x\lt1.1L}\mathbf 1_{z/(1.2W)\lt x\lt z/(0.8W)}x^{-1}\mathrm dx. 
+ A=0.72LW,\qquad B=1.32LW. 
+ a(z)=\max(0.9L,z/(1.2W)),\qquad b(z)=\min(1.1L,z/(0.8W)), 
+ f_Z(z)=\frac{12.5}{LW}\log\left(\frac{b(z)}{a(z)}\right)\mathbf 1_{A\lt z\lt B}. 
+ C=0.88LW,\qquad D=1.08LW. 
+\log\left(\frac{b(z)}{a(z)}\right)=\log\left(\frac{z}{0.72LW}\right),
+\log\left(\frac{b(z)}{a(z)}\right)=\log\left(\frac{1.1}{0.9}\right),
+\log\left(\frac{b(z)}{a(z)}\right)=\log\left(\frac{1.32LW}{z}\right).

@@ -1,0 +1,41 @@
+\lim_{x\rightarrow\infty} \bigg(1-x^{1/2x}\bigg)\cdot\frac{x}{2\ln{x}}
+\begin{align} \bigg(1-x^{1/{2x}}\bigg)\frac{x}{2\ln{x}} & = \frac{x}{2}\frac{1-x^{1/{2x}}}{\ln{x}}\frac{1+x^{1/{2x}}}{1+x^{1/{2x}}} \\ & = \frac{1}{2} \frac{x}{\ln{x}} \frac{1-\sqrt[x]{x}}{1+\sqrt{\sqrt[x]{x}}} \\ & = \frac{1}{2 \cfrac{\ln{x}}{x} \cfrac{1+\sqrt{\sqrt[x]{x}}}{1-\sqrt[x]{x}}} \\ \end{align}
+x \to \infty
+\frac{\ln{x}}{{x}}\to{0}
+\sqrt[x]{x}\to{1}
+e^x-1\sim x
+x\to0
+(1-x^{1/2x})\frac{x}{2\ln x}\sim(1-e^{(\ln x)/2x})\frac{x}{2\ln x}\sim-\frac{\ln x}{2x}\frac{x}{2\ln x}\sim-\frac14
+1-e^{(\ln x)/2x}=\frac{1-e^{(\ln x)/2x}}{(\ln x)/2x}\frac{\ln x}{2x}\sim-\frac{e^{(\ln x)/2x}\Big((\ln x)/2x\Big)'}{\Big((\ln x)/2x\Big)'}\frac{\ln x}{2x}\sim-e^{(\ln x)/2x}\frac{\ln x}{2x}
+t=\frac{\ln x}{2x}
+\lim_{x\to\infty}\frac{\ln x}{2x}=0
+ \big(1-x^{1/2x}\big)\cdot\frac{x}{2\ln{x}}=-\frac{1}{4}\frac{\mathrm{e}^{\ln x/2x}-1} {\frac{\ln x}{2x}}=-\frac{1}{4}\frac{\mathrm{e}^t-1}{t}, 
+ \lim_{x\to\infty}\big(1-x^{1/2x}\big)\cdot\frac{x}{2\ln{x}}=\lim_{t\to 0}-\frac{1}{4}\frac{\mathrm{e}^t-1}{t}=-\frac{1}{4}, 
+ \lim_{t\to 0}\frac{\mathrm{e}^t-1}{t}=\left.\frac{d}{dt}\right|_{t=0}\mathrm{e}^t =1. 
+t=1/x
+t^{t/2}
+1
+t\mapsto t\ln t
+(0,\varepsilon)
+ \lim_{t\to0^+}-\left(1-\frac{1}{t^{t/2}}\right)\frac{1}{2t\ln t}= \lim_{t\to0^+}\frac{1-t^{t/2}}{t^{t/2}}\frac{1}{2t\ln t} 
+ \lim_{t\to0^+}\frac{t}{2}\ln t=0 
+ \lim_{t\to0^+}\frac{1-t^{t/2}}{2t\ln t}= \lim_{t\to0^+}\frac{1-t^{t/2}}{2t\ln t}\frac{1+t^{t/2}}{1+t^{t/2}}= \frac{1}{4}\lim_{t\to0^+}\frac{1-t^t}{t\ln t}= \frac{1}{4}\lim_{t\to0^+}\frac{1-e^{t\ln t}}{t\ln t} 
+ \frac{1}{4}\lim_{u\to0^{-}}\frac{1-e^u}{u}=-\frac{1}{4} 
+\lim_{x\rightarrow\infty} \bigg(1-x^{\cfrac{1}{2x}}\bigg)\cdot\frac{x}{2\ln{x}}
+f(x)=\bigg(1-x^{\cfrac{1}{2x}}\bigg)
+ g(x)=\frac{x}{2\ln{x}}
+H(x)=f(x)\cdot g(x)
+g(x)\rightarrow \infty
+f(x)\rightarrow 0
+\lim{x\rightarrow\infty }
+0 \cdot \infty
+\frac{\infty}{\infty}
+ln
+\frac{-1}{4}
+y=g(x)=\frac{\ln x}{2x}
+f(x)=(1-x^{1/2x})\frac{x}{2\ln x}
+\lim_{x\to\infty}g(x)=0
+\lim_{y\to 0} \frac{\operatorname{e}^{y}-1}{y}=1
+f(x)=(1-x^{1/2x})\frac{x}{2\ln x}=\left(1-e^{(\ln x)/2x}\right)\frac{x}{2\ln x}=-\frac{1}{4}\frac{\operatorname{e}^{y}-1}{y}
+\lim_{x\to\infty}\frac{\ln x}{2x}=\lim_{x\to\infty}\frac{1}{2x}=0
+ \lim_{x\to\infty} f(x)=\lim_{y\to 0} -\frac{1}{4}\frac{\operatorname{e}^{y}-1}{y}=-\frac{1}{4} 

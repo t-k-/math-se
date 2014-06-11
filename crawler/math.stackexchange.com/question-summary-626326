@@ -1,0 +1,8 @@
+take: \Bbb N \to \Bbb N
+n = 1
+\begin{aligned} \mathrm{take}(1) &= \mathrm{take}(1 - 1) - 2 & \text{[Recursive Case]}\\ &= \mathrm{take}(0) - 2\\ &= 100 - 2 & \text{[Base case]}\\ &= 100 - (2*1) \end{aligned}
+n = 1
+n \in \mathbb{N}
+\mathrm{take}(n) = 100 - (2*n)
+\mathrm{take}(n + 1) = 100 - 2*(n + 1)
+\begin{aligned} \mathrm{take}(n + 1) &= \mathrm{take}(n) - 2 & \text{[Recursive Case]}\\ &= 100 - (2*n) - 2 & \text{[Inductive hypothesis]}\\ &= 100 + (-2)*n + (-2)*1 & \text{[Equivalent form]}\\ &= 100 + (-2)*(n + 1) & \text{[Distributivity]}\\ &= 100 - 2*(n + 1) \end{aligned}

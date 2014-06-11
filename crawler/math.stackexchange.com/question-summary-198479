@@ -1,0 +1,31 @@
+\def\R{\mathbb R}\def\norm#1{\left\|#1\right\|}\def\Mat{\mathrm{Mat}}
+n \le m
+A \in \Mat_{m,n}(\R)
+n
+b \in \R^m
+A
+A = QR
+Q \in O(m)
+R \in \Mat_{m,n}(\R)
+2
+m \ge n
+R
+R = \begin{pmatrix} R' \\ 0\end{pmatrix}
+R' \in \Mat_n(\R)
+Q^{-1}b = \begin{pmatrix} y_1 \\ y_2\end{pmatrix}, x = \begin{pmatrix} x_1\\ x_2\end{pmatrix} \in \R^n \times \R^{m-n}
+\mathop{\mathrm{rank}} R' = \mathop{\mathrm{rank}} A = n
+R'
+x = R'^{-1}y_1
+ \mathrm{find}\ x \in \R^n : \norm{Ax - b}_2 = \min 
+ \norm{Ax- b}_2 = \norm{Q^{-1}Ax - Q^{-1}b}_2 = \norm{Rx - Q^{-1}b}_2 
+ \norm{Ax - b}_2 = \sqrt{\norm{Rx_1 - y_1}^2 + \norm{y_2}^2} 
+A
+A_0 = A
+A_{k+1} = R_kQ_k
+A_k = Q_kR_k
+A
+Q_k \to Q
+R_k \to \Lambda
+\Lambda
+A
+Q

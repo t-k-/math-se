@@ -1,0 +1,17 @@
+X
+Y
+\lambda
+(0,1)
+Z := X+Y
+\lfloor \cdot \rfloor
+\Pr(X+Y\leqslant a)
+0\leqslant Y \leqslant 1
+\Pr(Y \leqslant a - m)
+m
+a - m \leqslant 0
+m \geqslant \lfloor a \rfloor + 1
+m
+a-m > 1
+ m < \lfloor a\rfloor
+\begin{eqnarray}   \Pr(X+Y \leqslant a) &=& \sum_{m=0}^\infty \Pr(X+Y\leqslant a \mid X=m) \Pr(X=m) \\ &=& \sum_{m=0}^\infty \Pr(m+Y\leqslant a) \Pr(X=m) \\ &=& \sum_{m=0}^\infty \Pr(Y\leqslant a-m) \Pr(X=m) \end{eqnarray} 
+\begin{eqnarray}  \Pr(X+Y \leqslant a) &=& \sum_{m=0}^{\lfloor a \rfloor -1} \Pr(X=m) + \Pr(X=\lfloor a \rfloor) \underbrace{\Pr(Y \leqslant a - \lfloor a \rfloor )}_{a - \lfloor a \rfloor = \{a\}} \end{eqnarray} 

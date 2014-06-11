@@ -1,0 +1,35 @@
+X_1,X_2,\ldots,X_n
+E(X)=\text{Var}(X)=1
+Y_1,Y_2,\ldots,Y_n
+E\left(\displaystyle\sum_{i=1}^n \frac{Y_i}{X_i}\right)\geq n
+E\left(\displaystyle\sum_{i=1}^n Y_iX_i\right)\leq n+n^2
+X
+\mathbb{E}\left(S^2\right) = \mathbb{Var}(S)+\mathbb{E}(S)^2 = n + n^2
+     \sum_{k=1}^n Y_k X_k \leqslant \sum_{k=1}^n Y_k \sum_{i=1}^n X_i = S^2 
+    \mathbb{E}\left(\sum_{k=1}^n Y_k X_k\right) \leqslant \mathbb{E}\left(S^2\right) = n^2+n 
+S = X_1 + \ldots + X_n = Y_1 + \ldots + Y_n
+\text{Var}(S) = E[S] = n
+(Y_1,\ldots, Y_n)
+(X_1,\ldots,X_n)
+(Y_1,\ldots,Y_n)
+E[Y_i X_i | Y_1,\ldots,Y_n] = Y_i (Y_1 + \ldots + Y_n)/n
+E[Y_i X_i ] = E[Y_i (Y_1 + \ldots + Y_n)/n] = E[Y_i S]/n
+ E \left[ \sum_{i=1}^n Y_i X_i \right] = E \left[S^2/n \right] = (\text{Var}(S) + E[S]^2)/n = (n + n^2)/n = 1 + n
+\displaystyle \sum_{i=1}^n \sum_{j=1}^n \frac{Y_i}{Y_j} = \sum_{j=1}^n \frac{X_i}{X_j}
+n
+i = j
+X_i/X_j = 1
+n^2-n
+X_i
+X_j
+1/x
+E[1/X] \ge 1/E[X]
+p
+1-p
+E[X] = \text{Var}(X) = 1
+E[1/X] \to 1
+p \to 0+
+E\left[\left. \sum_{i=1}^n \frac{Y_i}{X_i} \right| Y_1, \ldots,Y_n\right] =  \sum_{i=1}^n E\left[\left.\frac{Y_i}{X_i} \right| Y_1,\ldots,Y_n\right] = \frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n \frac{Y_i}{Y_j}
+E \left [ \sum_{i=1}^n \frac{Y_i}{X_i} \right] = \frac{1}{n} E \left[\sum_{i=1}^n \sum_{j=1}^n \frac{Y_i}{Y_j}\right] = \frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n E\left[\frac{X_i}{X_j}\right]
+ E \left [ \sum_{i=1}^n \frac{Y_i}{X_i} \right] = 1 + (n-1) E[X] E[1/X]
+X = \cases{ 1 + \sqrt{(1-p)/p} & with probability $p$\cr 1 - \sqrt{p/(1-p)} & with probability $1-p$\cr}

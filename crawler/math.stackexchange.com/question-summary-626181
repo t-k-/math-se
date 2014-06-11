@@ -1,0 +1,22 @@
+-\Delta u=f
+\Omega:=B_R(0):=\left\{x\in\mathbb{R}^3: \lVert x\rVert < R\right\}
+u=0
+S_R(0):=\left\{x\in\mathbb{R}^3: \lVert x\rVert=R\right\}
+f\in L^{\infty}(\Omega)\cap C^{0,\lambda}(\Omega)
+0<\lambda<1
+u\in C^{2,\lambda}(\Omega)\cap C(\overline{\Omega})
+u(0)
+f(x)=f(\lVert x\rVert)
+u(x)
+\lVert x\rVert > 0
+ u(x)=\frac{1}{4\pi}\left(\int_{\Omega}\frac{f(y)}{\lVert x-y\rVert}\, dy-\int_{\Omega}\frac{f(y)}{\left\lVert\frac{\lVert y\rVert}{R}x-\frac{R}{\lVert y\rVert}y\right\rVert}\, dy\right). 
+ u(0)=\int_0^R f(r) r\, dr-\frac{1}{R}\int_0^R f(r) r^2\, dr. 
+E_n
+\mathbb{R}^n
+ \forall~x\in\mathbb{R}^n\setminus\left\{0\right\}: E_n(x):=\begin{cases}\frac{1}{2\pi}\ln(\frac{1}{\lVert x\rVert}), & n=2\\\frac{1}{(n-2)\sigma_n}\frac{1}{\lVert x\rVert^{n-2}}, & n>2\end{cases}. 
+\Omega\subset\mathbb{R}^n
+f\in L^{\infty}(\Omega)
+ U_n(x):=\int_{\Omega}E_n(x-y)f(y)\, dy\text{ for }x\in\mathbb{R}^n 
+f
+U_n
+ u(x)=U_3(x)-\frac{1}{4\pi}\int_{\Omega}\frac{f(y)}{\left\lVert\frac{\lVert y\rVert}{R}x-\frac{R}{\lVert y\rVert}y\right\rVert}\, dy. 

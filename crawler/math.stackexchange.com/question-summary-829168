@@ -1,0 +1,50 @@
+ \frac{1}{x}+\frac{2}{x^2} + \frac{3}{x^3} + \frac{4}{x^4} + \cdots =\frac{x}{(x-1)^2} 
+x>1
+(1)
+y
+(2)
+y
+y=\dfrac1x
+|x|>1
+(3)
+ \sum_{n=0}^\infty y^n=\frac{1}{1-y}\quad;\quad\text{for}\ |y|<1.\tag1 
+ \sum_{n=1}^\infty ny^{n-1}=\frac{1}{(1-y)^2}.\tag2 
+ \sum_{n=1}^\infty ny^{n}=\frac{y}{(1-y)^2}.\tag3 
+ \large\color{blue}{\sum_{n=1}^\infty \frac{n}{x^n}=\frac{x}{(x-1)^2}}. 
+\;|x|<1\;
+\frac1{1-x}=\sum_{n=0}^\infty x^n\implies \frac1{(1-x)^2}=\sum_{n=1}^\infty nx^{n-1}\implies
+\implies\frac x{(1-x)^2}=\sum_{n=1}^\infty nx^n
+\frac x{(x-1)^2}=\frac1x\frac1{\left(1-\frac1x\right)^2}=\frac1x\left(\sum_{n=0}^\infty\frac1{x^n}\right)^2
+|x| > 1
+\sum_{n=0}^\infty x^{-n} = \frac{x}{x-1}
+\frac{x^2}{(x-1)^2} = \sum_{n=0}^\infty \sum_{m=0}^\infty x^{-(n+m)} 
+ = \sum_{r=0}^\infty (r+1)x^{-r}
+(n+m)
+(n+m+1)
+x
+ \frac{x}{(x-1)^2} = \sum_{r=0}^\infty (r+1)x^{-(r+1)} 
+ = \frac1{x} + \frac{2}{x^2} + \frac{3}{x^3} + ... 
+|y|<1
+\sum_{n=0}^{\infty} n y^n=y\cdot\frac{d \sum_{n=0}^{\infty} y^n}{dy}=y\cdot\frac{d\left(\dfrac1{1-y}\right)}{dy}=\frac y{(1-y)^2}
+  S_n= \frac{1}{x} + \frac{2}{x^2} + \frac{3}{x^3} + \frac{4}{x^4} + \dots + \frac{n}{x^n}
+S_n(x-1)
+|x|\gt 0
+\displaystyle\lim_{n\to\infty}\frac{n}{x^n}
+\frac{\infty}{\infty}
+ xS_n = 1 + \frac{2}{x} + \frac{3}{x^2} + \frac{4}{x^3} + \dots + \frac{n}{x^{n-1}}
+xS_n - S_n = 1+ (\frac{2}{x}-\frac{1}{x})+(\frac{3}{x^2}-\frac{2}{x^2})+\dots+(\frac{n}{x^{n-1}}-\frac{n-1}{x^{n-1}}) - \frac{n}{x^n}
+S_n(x-1) = 1 + \frac{1}{x} + \frac{1}{x^2}+\dots+\frac{1}{x^{n-1}} - \frac{n}{x^n}
+S_n(x-1) = T_{n-1} - \frac{n}{x^n}
+T_{n-1} = 1 + \frac{1}{x} + \frac{1}{x^2}+\dots+\frac{1}{x^{n-1}}
+\frac{T_{n-1}}{x} = \frac{1}{x} + \frac{1}{x^2} + \frac{1}{x^3}+\dots+\frac{1}{x^{n}}
+T_{n-1} - \frac{T_{n-1}}{x} = 1 + (\frac{1}{x}-\frac{1}{x})+ (\frac{1}{x^2}-\frac{1}{x^2})+\dots - \frac{1}{x^n}
+T_{n-1}(1-\frac{1}{x}) = 1  - \frac{1}{x^n}
+T_{n-1}(\frac{x-1}{x}) = \frac{x^n-1}{x^n}
+T_{n-1} = \frac{x^n-1}{x^n}\cdot(\frac{x}{x-1})
+T_{n-1} = \frac{x^n-1}{x-1}\cdot(\frac{1}{x^{n-1}})
+T_{n-1} = \frac{x-\frac{1}{x^{n-1}}}{x-1}
+S_n(x-1) = \frac{x-\frac{1}{x^{n-1}}}{x-1} - \frac{n}{x^n}
+\lim_{n\to\infty}S_n(x-1) = \lim_{n\to\infty}\frac{x-\frac{1}{x^{n-1}}}{x-1} - \frac{n}{x^n}
+S(x-1) = \frac{x-\displaystyle\lim_{n\to\infty}\frac{1}{x^{n-1}}}{x-1} - \lim_{n\to\infty}\frac{n}{x^n}
+S(x-1) = \frac{x-0}{x-1} - 0 = \frac{x}{x-1}
+S =  \frac{x}{(x-1)^2}

@@ -1,0 +1,29 @@
+a > 0
+F_1 = (a, 0)
+F_2 = (-a, 0)
+\mathbb{R}^2
+C = \{P \in \mathbb{R}^2; PF_1\cdot PF_2 = a^2\}
+C
+P = (r\cos\theta, r\sin\theta)
+PF_1^2 = r^2 + a^2 - 2ar\cos\theta, PF_2^2 = r^2 + a^2 + 2ar\cos\theta
+(r^2 + a^2 - 2ar\cos\theta)(r^2 + a^2 + 2ar\cos\theta) = (r^2 + a^2)^2 - 4a^2r^2\cos^2\theta = a^4
+r^4 + 2r^2a^2 + a^4 - 4a^2r^2\cos^2\theta = a^4
+r^2 = 2a^2(2\cos^2\theta - 1) = 2a^2\cos 2\theta
+P \in C
+s
+O = (0, 0)
+P
+s
+r
+s = \int_{0}^{\theta}\sqrt{r^2 + (\frac{dr}{d\theta})^2} d\theta
+d\theta = \frac{d\theta}{dr}dr
+s = \int_{0}^{r}\sqrt{r^2 + (\frac{d\theta}{dr})^{-2}} \frac{d\theta}{dr}dr
+s = \int_{0}^{r}\sqrt{1 + r^2(\frac{d\theta}{dr})^2} dr
+r = a\sqrt{2\cos 2\theta}
+\frac{dr}{d\theta} = -\frac{2a\sin 2\theta}{\sqrt{2\cos 2\theta}}
+\frac{d\theta}{dr} = -\frac{\sqrt{2\cos 2\theta}}{2a\sin 2\theta}
+(\frac{d\theta}{dr})^2 = \frac{\cos 2\theta}{2a^2\sin^2 2\theta}
+\cos 2\theta = \frac{r^2}{2a^2}
+\sin^2 2\theta = 1 - \cos^2 2\theta = \frac{4a^4 - r^4}{4a^4}
+(\frac{d\theta}{dr})^2 = \frac{r^2}{4a^4 - r^4}
+s = \int_{0}^{r}\sqrt{\frac{4a^4}{4a^4 - r^4}}dr = \int_{0}^{r}\frac{2a^2}{\sqrt{4a^4 - r^4}}dr

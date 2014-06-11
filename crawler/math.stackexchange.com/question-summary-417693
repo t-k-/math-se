@@ -1,0 +1,11 @@
+(x,y)=(0,0)
+\lim_{(x,y)\to(0,0)}\frac{e^{x(y+1)}-x-1}{\sqrt{x^2+y^2}}
+e^{x(y+1)}?
+e^{x(y+1)}=1+x(y+1)+o(x(y+1))
+\lim_{(x,y)\to(0,0)}\frac{xy+o(x(y+1))}{\sqrt{x^2+y^2}}
+0
+xy + o(x(y+1)) = xy + o(xy) + o(x) = o(x)
+\frac{o(x)}{\sqrt{x^2+y^2}} \to 0
+(x,y)\to(0,0)
+|x| = \sqrt{x^2} \leq \sqrt{x^2+y^2}
+o(x) \subseteq o(\sqrt{x^2+y^2})

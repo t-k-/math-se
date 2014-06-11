@@ -1,0 +1,27 @@
+p
+p
+1
+2
+p
+A
+\displaystyle \|A\|_p:=\left(\sum_{i=1}^n \sum_{j=1}^n |a_{ij}|^p \right)^{\frac{1}{p}}
+p=1
+p=2
+1<p<2
+A=(a_{ij})
+B=(b_{ij})
+n \times n
+q=\frac{p}{p-1}
+\displaystyle \left(\|AB\|_p\right)^p=\sum_{i=1}^n \sum_{j=1}^n \left| \sum_{k=1}^n a_{ik}b_{kj} \right|^p \le \sum_{i=1}^n \sum_{j=1}^n \left( \sum_{k=1}^n \left| a_{ik}\right|^p\right) \left( \sum_{k=1}^n \left| b_{ik}\right|^q\right)^\frac{p}{q}
+p<2
+q>2
+\frac{p}{q}<1
+\left( \sum_{k=1}^n \left| b_{ik}\right|^q\right)^\frac{p}{q} \le  \sum_{k=1}^n \left| b_{ik}\right|^p
+\|x\|_p = \left(\sum_{i=1}^n |x_i|^p \right)^{1/p}
+\|x\|_q \le \|x\|_p
+q \ge p
+M = \|x\|_p
+\|\frac1Mx\|_p = 1
+|\frac{x_i}M|^p \le 1 \Rightarrow |\frac{x_i}M| \le 1 \Rightarrow |\frac{x_i}M|^q \le |\frac{x_i}M|^p
+\|x\|_q \le M = \|x\|_p
+ \|\frac1M x\|_q^q = \sum_{i=1}^n |\frac{x_i}M|^q \le \sum_{i=1}^n |\frac{x_i}M|^p = \|\frac1Mx\|_p^p = 1.

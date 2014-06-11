@@ -1,0 +1,16 @@
+\lim_{x \to 0}\frac{1-\frac12 x^2 - \cos\left(\frac{x}{1-x^2}\right)}{x^4}
+\frac{x}{1-x^2} \in x + x^3 + O(x^5) \to 0
+x \to 0
+\cos( \frac{x}{1-x^2} ) \in 1 - \frac{1}{2} ( \frac{x}{1-x^2} )^2 + \frac{1}{24} ( \frac{x}{1-x^2} )^4 + O( ( \frac{x}{1-x^2} )^6 ) \\  \subset 1 - \frac{1}{2} (x+x^3+O(x^5))^2 + \frac{1}{24} (x+x^3+O(x^5))^4 + O(x^6) \text{ as } x \to 0 \\  \subset 1 - \frac{1}{2} x^2 - \frac{23}{24} x^4 + O(x^6) \text{ as } x \to 0
+\cos
+\frac{ 1 - \frac{1}{2} x^2 - \cos( \frac{x}{1-x^2} ) }{ x^4 } \in \frac{ \frac{23}{24} x^4 + O(x^6) }{ x^4 } = \frac{23}{24} + O(x^2) \to \frac{23}{24}
+x \to 0
+1 - \frac{1}{2} x^2 + \frac{1}{24} x^4 - \frac{1}{720} x^6 \le cos(x) \le 1 - \frac{1}{2} x^2 + \frac{1}{24} x^4
+x + x^3 \le \frac{x}{1-x^2} \le x + x^3 + 2 x^5
+x \ge 0
+x + x^3 \ge \frac{x}{1-x^2} \ge x + x^3 + 2 x^5
+x \le 0
+\frac 1{1-x^2}=1+x^2+O(x^4)
+\frac x{1-x^2}=x+x^3+O(x^5)
+\cos\left(\frac x{1-x^2}\right)=1-\frac{x^2}{2}-x^4+\frac{x^4}{24}+O(x^5)=1-\frac{x^2}{2}-\frac{23x^4}{24}+O(x^5)
+\frac{23}{24}

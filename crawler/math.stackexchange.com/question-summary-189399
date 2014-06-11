@@ -1,0 +1,31 @@
+n
+n
+4^n\left/{2n \choose n}\right.
+n = 3
+4^3\left/{6 \choose 3}\right. =  \frac{64}{20} = \frac{16}{5}
+n = 2
+n = 3
+n
+n
+2k
+ {2\over k}{2(k-1)\choose k-1} {2(n-k)\choose n-k}.\tag 1
+{2n\choose n}
+2k
+\mathbb{P}(T=2k)= {1\over{2n\choose n}}  {2\over k}{2(k-1)\choose k-1} {2(n-k)\choose n-k}.\tag 2
+\mathbb{E}(T)={1\over{2n\choose n}}  \sum_{k=1}^n 2k\, {2\over k}\,{2(k-1)\choose k-1} {2(n-k)\choose n-k}.\tag 3
+2C_{k-1}\binom{2n-2k}{n-k}=\frac2k\binom{2k-2}{k-1}\binom{2n-2k}{n-k}
+\binom{2n}n
+2k
+\binom{2n}n^{-1}\sum_{k=1}^n\frac2k\binom{2k-2}{k-1}\binom{2n-2k}{n-k}(2k)=4\binom{2n}n^{-1}\sum_{k=1}^n\binom{2k-2}{k-1}\binom{2n-2k}{n-k}\;,
+n-1
+n
+4^{n-1}=\sum_{k=1}^n\binom{2k-2}{k-1}\binom{2n-2k}{n-k}=\sum_{k=0}^{n-1}\binom{2k}k\binom{2n-2k-2}{n-k-1}
+4^n=\sum_{k=0}^n\binom{2k}k\binom{2n-2k}{n-k}\;.
+f(n,m), n \ge m
+n
+m
+n-m
+f(n,n)=1+f(n,n-1)
+f(n,0)=n
+f(n,n-1)=\frac n{2n-1}+\frac{n-1}{2n-1}(1+f(n,n-2))
+f(n,m)=1+\frac m{n+m}f(n,m-1)+\frac n{n+m}f(n-1,m)

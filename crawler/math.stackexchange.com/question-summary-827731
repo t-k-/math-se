@@ -1,0 +1,19 @@
+f(x,y,z) = x + 2y
+x + y + z = 1
+y^2 + z^2 = 4
+f
+ \nabla f  = (λ_1)\nabla g_1 + (λ_2)\nabla g_2 
+ (1,2,0) = λ_1(1,1,1) + λ_2(0,2y,2z) 
+z = 1 - x - y
+y^2 + (1-x-y)^2 = 4
+g(x,y) = y^2 + 1 + x^2 + y^2 - 2x - 2y + 2xy - 4 = 0
+\nabla f = \lambda\nabla g
+(1,2) = \lambda(2x-2+2y,4y-2+2x)
+\dfrac{1}{2x-2+2y} = \dfrac{2}{4y-2+2x}
+4y-2+2x = 4x - 4 + 4y
+x = 1
+y^2 + y^2 = 4
+y^2 = 2
+y = \pm \sqrt{2}
+f_{min} = f(1,-\sqrt{2}) = 1 - 2\sqrt{2}
+f_{max} = f(1,\sqrt{2}) = 1 + 2\sqrt{2}

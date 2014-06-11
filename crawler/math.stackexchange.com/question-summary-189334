@@ -1,0 +1,17 @@
+\int_0^\infty x^n\exp\left(-\frac{(x-x_0)^2}2\right)\, dx
+n
+0
+x_0>0
+B(n)x_0^n+C(n)
+n>1
+n<1
+x^n
+x_0^n+nxx_0^{n-1}\le(x+x_0)^n\le2^{n-1}(x^n+x_0^n)
+n
+f(x)=\exp\left(-\frac{(x-x_0)^2}{2}\right)
+f'(x)=(x_0-x)f(x)
+xf(x)=x_0f(x)-f'(x)
+I_n(x_0)=\int_0^{\infty}x^nf(x)=x_0I_{n-1}(x_0)-\int_0^{\infty}x^{n-1}f'(x)= x_0I_{n-1}(x_0)+(n-1)I_{n-2}(x_0)
+I_0(x_0)
+n>0
+2^{1/2 - n/2} e^{-x_0^2/2} \Gamma(1 + n)

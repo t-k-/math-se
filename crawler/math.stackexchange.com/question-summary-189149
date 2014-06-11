@@ -1,0 +1,29 @@
+r:R^n\rightarrow R^n
+D\subset R^n
+x^*\in D
+r(x)=0
+r(x^*)=0
+r(x)=J(x)(x-x^*)+\int_0^1[J(x+t(x^*-x))-J(x)](x-x^*) \, dt
+B(x^*,\delta)
+x^*
+||r(x)||\le 2||J(x^*)||\cdot||(x-x^*)|| + o(||x-x^*||)
+||\int_0^1[J(x+t(x^*-x))-J(x)](x-x^*) \, dt||\le ||x-x^*||\int_0^1||J(x+t(x^*-x))-J(x)|| \, dt
+o(||x-x^*||)
+J
+r
+C^1
+J
+\epsilon>0
+\delta>
+\|x-x^*\| < \delta
+\|J(x)-J(x^*)\| < \epsilon
+\epsilon \leq \|J(x^*)\|
+x^*
+\|x-x^*\| < \delta
+t\in [0,1]
+\|x+t(x^*-x) -x\| = t\|x-x^*\| \leq \|x-x^*\| < \delta
+\|r(x)\| \leq \|J(x)\| \|x-x^*\| + (\int_0^1 \epsilon \, dt ) \|x-x^*\| = \|J(x)\| \|x-x^*\| + \epsilon \|x-x^*\| 
+\|J(x)\| \leq \|J(x^*)\| + \|J(x)-J(x^*)\| \leq 2 \|J(x^*)\|
+\epsilon
+\epsilon>0
+ \|r(x)\| \leq 2 \|J(x^*)\| \|x-x^*\| + \epsilon \|x-x^*\|.

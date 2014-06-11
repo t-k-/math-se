@@ -1,0 +1,79 @@
+ \mathbf{M} =  \begin{vmatrix} \mathbf{A} & \mathbf{b} \\ \mathbf{c^T} & \it{d} \\ \end{vmatrix} 
+\mathbf{A} \in \mathbb{R}^{n \times n}
+\mathbf{b}
+\mathbf{c} \in \mathbb{R}^{n}
+\it{d}
+\mathbf{A}
+\mathbf{\Lambda} \in \mathbb{R}^{n \times n}
+\mathbf{c}
+\mathbf{A}
+\mathbf{\Lambda}
+ \mathbf{c^T} = \left[\text{diag}(\mathbf{\Lambda}) - \mathbf{1^T}(\text{tr}(\mathbf{\Lambda}-\mathbf{A}) + \sigma)\right]\mathbf{K^{-1}} 
+\mathbf{K}
+ \mathbf{A}\mathbf{K}-\mathbf{K}\mathbf{\Lambda} = (\mathbf{A}-\sigma\mathbf{I}_n)\mathbf{1} \cdot\mathbf{1^T} 
+\mathbf{A}
+\mathbf{M}
+\mathbf{A}
+\mathbf{b}
+d
+\mathbf{A}
+\mathbf{c}
+\mathbf{K^{-1}}
+\text{vec}(\mathbf{K})
+\mathbf{b}
+d
+\mathbf{A}
+\mathbf{\Lambda}
+ \mathbf{b} = (\sigma \mathbf{I}_n - \mathbf{A})\mathbf{1} 
+ d = \text{tr}(\mathbf{\Lambda} - \mathbf{A}) + \sigma 
+\mathbf{K}
+ \text{vec}(\mathbf{K}) = (\mathbf{I}_n \otimes\mathbf{A} - \mathbf{\Lambda} \otimes \mathbf{I}_n)^{-1}(\mathbf{1} \otimes \mathbf{b}) 
+\mathbf{M}
+ \mathbf{M} =  \begin{vmatrix} \mathbf{A} & \mathbf{b} \\ \mathbf{c^T} & \it{d} \\ \end{vmatrix} =  \begin{vmatrix} \mathbf{K} & \mathbf{1} \\ \mathbf{1^T} & 1 \\ \end{vmatrix} \begin{vmatrix} \mathbf{\Lambda} & \mathbf{0} \\ \mathbf{0} & \sigma \\ \end{vmatrix} \begin{vmatrix} \mathbf{K} & \mathbf{1} \\ \mathbf{1^T} & 1 \\ \end{vmatrix}^{-1} 
+\mathbf{\Lambda}
+ \mathbf{M} =  \begin{vmatrix} a & \sigma - a \\ a - \lambda & \sigma - (a - \lambda) \\ \end{vmatrix} 
+\sigma
+\{\lambda, \sigma\}
+a
+a
+\lambda
+\mathbf{M}
+\mathbf{M}
+ \begin{cases} \begin{align} 0 \le & a \le \sigma\\ \lambda \le & a \le \lambda + \sigma \\ -\sigma < &\lambda < \sigma \\ \end{align} \end{cases} 
+(n+1)\times(n+1)
+a
+\mathbf{A} \in \mathbb{R}^{n \times n}
+\mathbf{b}
+\mathbf{c}
+d
+\mathbf{M}
+n
+\mathbf{M}
+\mathbf{M}
+\mathbf{S}
+\mathbf{M}
+\mathbf{D}
+\mathbf{M}
+\mathbf{M}
+\mathbf{D}
+\mathbf{M}
+\mathbf{S}
+E_1
+1
+\mathbf{S}
+\text{det}[\mathbf{S}]\ne0
+\mathbf{S}^{-1}
+\mathbf{M}
+e_1
+E_1
+e_1
+\mathbf{M}=\mathbf{S}\mathbf{D}\mathbf{S}^{-1}.
+e_1E_1=\mathbf{M}E_1
+\mathbf{D}
+\mathbf{S}
+\mathbf{M}
+\mathbf{D}= \left[ \begin {array}{ccc} \sigma&0&0\\ 0&1&0 \\ 0&0&2\end {array} \right], 
+\mathbf{S}= \left[ \begin {array}{ccc} 1&2&3\\ 1&3&4 \\ 1&4&6\end {array} \right],
+ \mathbf{S}^{-1}=\left[ \begin {array}{ccc} 2&0&-1\\ -2&3&-1 \\ 1&-2&1\end {array} \right],  
+ \mathbf{M}=\mathbf{S}\mathbf{D}\mathbf{S}^{-1}=\left[ \begin {array}{ccc} 2\,\sigma+2&-6&-\sigma+4 \\ 2\,\sigma+2&-7&-\sigma+5\\ 2\ \sigma+4&-12&-\sigma+8\end {array} \right],  
+\text{row sum}=\sigma.

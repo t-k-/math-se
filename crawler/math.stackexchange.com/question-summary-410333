@@ -1,0 +1,15 @@
+A\subset\mathbb{R^2}
+\Omega=\{c:[0,1]\rightarrow A| c\in C^1\textrm{ and } c(0)=c(1)\}
+1
+\omega = F_1dx_1+F_2dx_2
+A
+\omega\in C^1
+f:\Omega\rightarrow\mathbb{R}
+f(c)=\int_c\omega
+f
+f'(c)h=\int_0^1\bigg(\frac{\partial F_2}{\partial x_1}-\frac{\partial F_1}{\partial x_2}\bigg)(c(t))\bigg(h_1(t)c_2'(t)-h_2(t)c_1'(t)\bigg) dt. 
+f'(c)h=\int_0^1d\omega(c(t))(h(t),c'(t))dt
+f'(c)
+\|h\|=\displaystyle\max_{t\in[0,1]}|h(t)|+\displaystyle\max_{t\in[0,1]}|h'(t)|
+\lim_{h\rightarrow0} \frac{f(c+h)-f(c)-f'(c)h}{\|h\|}=0,
+\lim_{h\rightarrow0} \frac{\int_0^1\omega(h(t))h'(t)dt-\int_0^1dw(c(t))\big(h(t),c'(t)\big)dt}{\|h\|},

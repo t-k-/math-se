@@ -1,0 +1,33 @@
+f_R
+R\to R^2
+R^2
+f_R
+k
+h
+x
+f_R=(k/h)*(x/h)^{k-1}*exp(-{x/h}^k)
+g(y) = -f\left[r^{-1}(y)\right] \frac{d}{dy} r^{-1}(y)
+R^2 
+k/h*(\sqrt(y)/h)^{k-1}*exp(-(\sqrt(y)/h)^k)*1/\sqrt(y)
+t\leq 0
+0<t
+t\leq 0
+0<t
+with(Statistics): R := RandomVariable(Weibull(k, lambda)): simplify(PDF(R^2, t));  
+ \cases{0&$t\leq 0$\cr 1/2\,{t}^{-1+\lambda/2}\lambda\,{k}^{-\lambda}{{\rm e}^{-{t}^{\lambda/2} \left( {k}^{-1} \right) ^{\lambda}}}&$0<t$\cr}  
+CDF(R^2, t) 
+\cases{0&$t\leq 0$\cr -{{\rm e}^{-{t}^{\lambda/2}{k}^{-\lambda}}}+1&$0<t$\cr} 
+R
+k
+\lambda
+F_R(x)
+R
+x\gt 0
+F_R(x)=1-e^{-(x/\lambda)^k}
+Y=R^2
+y\gt 0
+F_Y(y)=0
+y\le 0
+f_Y(y)
+F_Y(y)
+F_Y(y)=\Pr(Y\le y)=\Pr(R^2\le y)=\Pr(R\le \sqrt{y})=1-e^{-(\sqrt{y}/\lambda)^k}

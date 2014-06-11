@@ -1,0 +1,15 @@
+Z
+\Sigma x \leq \
+Z
+Q_i
+ \ Z= Q_1+Q_2+Q_3+Q_4+Q_5
+x_i
+Z
+Q_i
+x_i
+\text{max}_{x_i} \big(5+0.5\ln(x_1)+3+0.7\ln(x_2)+2+0.3\ln(x_3)+4+0.9\ln(x_4)+6+1.6\ln(x_5)\big)
+\text{subject to }x_1+x_2+x_3+x_4+x_5\le 1.000.000
+\text{subject to }x_1+x_2+x_3+x_4+x_5= 1.000.000
+L=\big(20+0.5\ln(x_1)+0.7\ln(x_2)+0.3\ln(x_3)+0.9\ln(x_4)+1.6\ln(x_5)\big)+\lambda\big(x_1+x_2+x_3+x_4+x_5- 1.000.000\big)
+\frac{\partial L}{\partial x_i}=0
+\frac{\partial L}{\partial \lambda}=0

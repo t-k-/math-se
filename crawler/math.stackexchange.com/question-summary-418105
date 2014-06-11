@@ -1,0 +1,18 @@
+A = \{a_1, a_2, a_3, a_4, a_5\}
+a_n \in \mathbb{R}
+B = \{b_1, b_2, b_3, b_4, b_5\}
+b_n \in \mathbb{R}
+C = \{ma_1 + nb_1, ma_2 + nb_2, ma_3 + nb_3, ma_4 + nb_4, ma_5 + nb_5\}
+m, n \in (0,1) \subset \mathbb{R}
+A
+\mu_1
+\sigma_1
+B
+\mu_2
+\sigma_2
+C
+C=mA+nB
+C
+ E(C)=E(mA+nB)=m\cdot E(A)+n\cdot E(B)=m\mu_1 + n\mu_2 
+C
+ \begin{align*} \sqrt{Var(C)} &= \sqrt{Var(mA+nB)} \\ &= \sqrt{m^2\cdot Var(A)+n^2\cdot Var(B)+2mn\cdot Cov(A,B)} \\ &= \sqrt{m^2\sigma_1^2 +n^2\sigma_2^2+2mn\cdot Cov(A,B)} \\ \end{align*} 

@@ -1,0 +1,24 @@
+\frac{2n-1}{2n}
+\int \sin^{2n}(x)dx = \frac {\cos^3 x}{3} +\cos x +C
+\frac{2n-1}{2n}
+\int \sin^{2n}(x)dx = \frac {\cos^3 x}{3} +\cos x +C
+\sin^{2n+1}xdx=\int(1-\cos^2x)\sin xdx=\int -(1-u^2)du=\int(u^2-1)du=\frac{u^3}{3}+u+C=\frac{\cos^3x}{3}+\cos x +C
+u=\cos x
+du=-\sin x dx
+\int_a^bf(x)dx=\int_a^bf(a+b-x)dx
+=\int_0^{\frac\pi2}\sin^{2n}\left(\frac\pi2+0-x\right)dx
+=\int_0^{\frac\pi2}\cos^{2n}xdx
+=\frac{\cos^{n-1}x\sin x}n\big|_0^{\frac\pi2}+\frac{2n-1}{2n}\int_0^{\frac\pi2}\cos^{2n-2}xdx
+=0+\frac{2n-1}{2n} \int_0^{\frac\pi2}\cos^{2n-2}\left(\frac\pi2+0-x\right)dx\text{ for } n-1>0\iff n>1
+=\frac{2n-1}{2n} \int_0^{\frac\pi2}\sin^{2n-2}xdx
+2n
+\int \sin^n x dx = - \frac{\sin^{n-1} x \cos x}{n}+\frac{n-1}{n}\int \sin^{n-2} xdx
+\int \sin^{2n} x dx = - \frac{\sin^{2n-1} x \cos x}{2n}+\frac{2n-1}{2n}\int \sin^{2n-2} xdx
+\frac{\sin^{2n-1} x \cos x}{2n}|_0^{\pi/2}=0
+n \ge 1
+\int_0^{\pi/2} \sin^{2n} x dx = - \frac{\sin^{2n-1} x \cos x}{2n}|_0^{\pi/2}+\frac{2n-1}{2n}\int_0^{\pi/2} \sin^{2n-2} xdx
+\int_0^{\pi/2} \sin^{2n} x dx = \frac{2n-1}{2n}\int_0^{\pi/2} \sin^{2n-2} xdx
+n \ge 1
+a_0=\frac{\pi}{2}
+n \ge 1
+a_n=\frac{2n-1}{2n}a_{n-1}

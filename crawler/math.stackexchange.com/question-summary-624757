@@ -1,0 +1,7 @@
+\int    _\sqrt{2}    ^2      x\ln(x^4-1) \, \mathrm dx.
+\int \ln x\,\mathrm dx=x\ln x-x+\mathrm C.
+u=x^2,
+\int_\sqrt2^2x\ln(x^4-1)dx=\frac12\int_2^4\ln(u^2-1)du
+\int \ln(u^2-1)du=\ln(u^2-1)\int du-\int\left(\int du\cdot\frac{d\ln(u^2-1)}{du}\right)du
+=u\ln(u^2-1)-\int\frac{2u^2}{u^2-1}du
+\frac{2u^2}{u^2-1}=2+\frac 2{u^2-1}=2+\frac{u+1-(u-1)}{u^2-1}=2+\frac1{u-1}-\frac1{u+1}

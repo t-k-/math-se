@@ -1,0 +1,26 @@
+\left\{\begin{matrix} \left \lfloor \frac{n}{m} \right \rfloor &  \text{if} \ \ n\ \ \left (mod \ \ m  \right )\equiv 0 \\ \\ \left \lceil \frac{n}{m} \right \rceil & \text{if} \ \ n\ \ \left (mod \ \ m  \right )\not\equiv 0 \end{matrix}\right.
+r
+q+1
+m-r
+q
+\binom{m}{m-r}=\binom{m}r
+q
+\binom{n}q
+q
+\binom{n-q}q
+q
+\binom{m}r\binom{n}{q,q,\dots,q}
+r(q+1)
+r
+q+1
+\binom{r(q+1)}{q+1,q+1,\dots,q+1}
+r
+\binom{m}r\binom{n}{q,q,\dots,q}\binom{r(q+1)}{q+1,q+1,\dots,q+1}=\binom{m}r\binom{n}{q,\dots,q,q+1,\dots,q+1}\;,
+m-r
+q
+r
+(q+1)
+n=5,m=3
+q=1
+r=2
+\binom32\binom5{1,2,2}=3\cdot\frac{5!}{1!2!2!}=3\cdot30=90\;.

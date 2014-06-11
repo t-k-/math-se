@@ -1,0 +1,25 @@
+C
+a \in \mathbb{R}
+\int_0^{2\pi}\frac{dt}{1 + a^2 - 2a\cos(t)} = \int_C \frac{i\;dz}{(z-a)(az-1)}
+0 \leq a < 1
+\int_0^{2\pi}\frac{dt}{1 + a^2 - 2a\cos(t)} = \frac{2\pi}{1 - a^2}
+0
+z = a
+z = 1/a
+a < 1
+C
+1 / (z - a)
+1/a
+1/(az - 1)
+a
+z=e^{it}
+\int_C \dfrac{i dz}{(z-1)(az-1)} = - \int_0^{2\pi} \dfrac{e^{it}dt}{a(1+e^{2it})-(1+a^2)e^{it}} = - \int_0^{2\pi} \dfrac{e^{it}dt}{a(1+\cos{2t}+i\sin{2t})-(1+a^2)(\cos{t}+i\sin{t})} = - \int_0^{2\pi} \dfrac{e^{it}dt}{(\cos{t}+i\sin{t})(2a\cos{t} -(1+a^2))} = \int_0^{2\pi} \dfrac{dt}{1+a^2 -2a\cos{t}}
+a
+\lim_{z\rightarrow a}(z-a)\dfrac{i}{(z-a)(az-1)}=\dfrac{i}{a^2−1}
+2πi× Residue= \dfrac{2\pi}{1-a^2}
+f(z):=\frac i{(z-a)(az-1)}\;\;;\;\;Res_{z=a}(f)=\lim_{z\to a}(z-a)f(z)=\frac i{a^2-1}\implies
+\oint\limits_C f(z)dz=2\pi i\frac i{a^2-1}=\frac{2\pi}{1-a^2}
+z=e^{it}\;,\;\;0\le t\le 2\pi\implies dz=ie^{it}dt=izdt\;\implies
+1-2a\cos t+a^2=(\cos t-a)^2+\sin^2t=\left|\cos t+i\sin t-a\right|^2=|e^{it}-a|^2=
+=(e^{it}-a)\overline{(e^{it}-a)}=(z-a)(\overline z-a)=(z-a)\left(\frac1z-a\right)=\frac1z(z-a)(1-az)
+\int\limits_0^{2\pi}\frac{dt}{1+a^2-2a\cos t}=\oint\limits_C\frac{-i\,dz}{z\frac1z(z-a)(1-az)}

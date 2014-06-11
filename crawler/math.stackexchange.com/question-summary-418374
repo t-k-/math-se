@@ -1,0 +1,26 @@
+F
+[a,b]
+F
+T_F([a,b])
+F
+\int_{a}^b |F'(x)|dx=T_F([a,b])
+P_F([a,x])
+N_F([a,x])
+\int_{a}^b |F'(x)|dx\le \int_a^b |P_F'([a,x])|dx+\int_a^b|N_F'([a,x])|dx\le P_f([a,b])+N_F([a,b])=T_F([a,b])
+F(x)=F(a)+\int_{a}^x F'(t)dt
+x\in [a,b]
+\ge 0
+T_F' = P_F' + N_F' \ge |P_F' - N_F'| =|F'|
+[a_k, b_k]
+F'
+\epsilon>0
+\delta>0
+\int_E |F'|< \epsilon
+m(E)<\delta
+(a_k, b_k)
+k=1,\ldots,N 
+\sum_1^N (b_k-a_k)<\delta
+ \int_a^x |F'| = T_F(a,x). 
+ \Big( T_F(a,x) - \int_a^x  |F'| \Big) + \Big( T_F(x,b) - \int_x^b  |F'| \Big) = 0 
+ \int_{a_k}^{b_k} |F'| = T_F(a_k,b_k) 
+ \sum_1^N |F(a_k)-F(b_k)| \le \sum_1^N T_F(a_k, b_k) = \int_{\cup(a_k,b_k)} |F'| < \epsilon 

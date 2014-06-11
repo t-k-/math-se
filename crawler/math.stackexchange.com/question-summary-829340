@@ -1,0 +1,16 @@
+n!=1+(1-1/1!)n+(1-1/1!+1/2!)n(n-1)+....
+n!
+1
+0
+1=\sum_{k=0}^n\frac1{k!}\sum_{j=0}^{n-k}\frac{(-1)^j}{j!},
+1=\sum_{j,k}\frac{(-1)^j}{j!k!}\bigl[j\ge0,k\ge0,j+k\le n\bigr].
+m\in\{0,1,\ldots,n\}
+\sum_{j,k}\frac{(-1)^j}{j!k!}\bigl[j\ge0,k\ge0,j+k=m\bigr] =\begin{cases}\dfrac{(1-1)^m}{m!}=0&m\ge1,\\1&m=0\end{cases}
+n
+ \frac{n!}{n!} \sum_{k=1}^{n+1} \sum_{m=1}^k \frac{(-1)^{m-1}}{(m-1)!}\prod_{r=0}^{k-2} (n-r) 
+ =n!\sum_{k=1}^{n+1} \sum_{m=1}^k \frac{(-1)^{m-1}}{(m-1)!} \frac{\prod_{r=0}^{k-2} (n-r)}{n!} 
+ =n!\sum_{k=1}^{n+1} \sum_{m=1}^k \frac{(-1)^{m-1}}{(m-1)!(n+1-k)!} 
+ =n!\sum_{k=0}^{n} \sum_{m=0}^{k} \frac{(-1)^{m}}{m!(n-k)!} 
+ =n!\sum_{k=0}^{n} \frac{1}{(n-k)!} \sum_{m=0}^{k} \frac{(-1)^{m}}{m!} 
+n!
+ =\frac{1}{e}\sum_{k=0}^{n} \binom{n}{k}{\Gamma(k+1,-1)} 

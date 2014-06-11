@@ -1,0 +1,20 @@
+\mathcal C
+f(x,y)=\max\{x,y\}
+C
+ r=1+\cos\vartheta. 
+\mathcal C
+ g(r, \vartheta)=f(r\cos{\vartheta}, r\sin{\vartheta}) = \max\{r\cos{\vartheta}, r\sin{\vartheta}\} =  \begin{cases}  r\cos{\vartheta} & \text{if } 0 \le \vartheta \le \frac{\pi}{4} \vee \frac{5\pi}{4} \le \vartheta \le 2\pi \quad (\bmod 2\pi)\\ r\sin{\vartheta} & \text{otherwise}  \end{cases} 
+g
+\mathcal C
+ g \mid_{\mathcal C} (r, \vartheta) =  \begin{cases}  \cos{\vartheta} + \cos^2{\vartheta} & \text{if } 0 \le \vartheta \le \frac{\pi}{4} \vee \frac{5\pi}{4} \le \vartheta \le 2\pi \quad (\bmod 2\pi)\\ \sin{\vartheta}+\sin{\vartheta}\cos{\vartheta} & \text{otherwise}  \end{cases} 
+r
+ g'(\vartheta) =  \begin{cases}  -\sin{\vartheta} - 2\sin{\vartheta}\cos{\vartheta} & \text{if } 0 < \vartheta < \frac{\pi}{4} \vee \frac{5\pi}{4} < \vartheta < 2\pi \quad (\bmod 2\pi)\\ \cos{\vartheta}+\cos{2\vartheta} & \text{otherwise}  \end{cases} 
+g'
+g'
+f(x, y) = \max\{x, y\}
+f(\theta) = r(\theta)\max\{\sin \theta, \cos \theta\}
+f
+f_x(\theta) = r(\theta) \sin \theta = \sin \theta + \sin \theta \cos \theta
+f_y(\theta) = r(\theta) \cos \theta = \cos \theta + \cos^2 \theta
+f_x' = \cos \theta + \cos 2\theta = 2\cos \frac{3\theta}{2} \cos \frac{\theta}{2}
+f_y' = -\sin \theta (1+2\cos \theta)

@@ -1,0 +1,15 @@
+a_i,b_i,c_i
+>0
+1 \leq i \leq n
+ \sum (a_i+b_i+c_i) \sum \frac{a_i b_i + b_i c_i + c_i a_i}{a_i+b_i+c_i} \sum \frac{a_i b_i c_i}{a_i b_i+b_i c_i + c_i a_i} \leq \sum a_i \sum b_i \sum c_i 
+Cauchy-Schwarz
+\sum_{i=1}^{n}(a_{i}+b_{i})\sum_{i=1}^{n}\dfrac{a_{i}b_{i}}{a_{i}+b_{i}}\le\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}b_{i}\cdots \cdots (1)
+\Longleftrightarrow \sum_{i=1}^{n}\left(a_{i}+b_{i}-\dfrac{4a_{i}b_{i}}{a_{i}+b_{i}}\right)\ge\sum_{i=1}^{n}a_{i}+\sum_{i=1}^{n}b_{i}-\dfrac{4\displaystyle\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}b_{i}}{\displaystyle\sum_{i=1}^{n}a_{i}+\sum_{i=1}^{n}b_{i}} 
+\Longleftrightarrow \sum_{i=1}^{n}\dfrac{(a_{i}-b_{i})^2}{a_{i}+b_{i}}\ge\dfrac{(\displaystyle\sum_{i=1}^{n}(a_{i}-b_{i}))^2}{\displaystyle\sum_{i=1}^{n}(a_{i}+b_{i})}
+\sum_{i=1}^{n}(a_{i}+b_{i}+c_{i})\sum_{i=1}^{n}\dfrac{a_{i}b_{i}+a_{i}c_{i}+b_{i}c_{i}}{a_{i}+b_{i}+c_{i}}\le\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}b_{i}+\sum_{i=1}^{n}b_{i}\sum_{i=1}^{n}c_{i}+\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}c_{i}\cdots \cdots (2)
+\sum_{i=1}^{n}((a_{i}+b_{i})+c_{i})\sum_{i=1}^{n}\dfrac{(a_{i}+b_{i})c_{i}}{a_{i}+b_{i}+c_{i}}\le(\sum_{i=1}^{n}a_{i}+\sum_{i=1}^{n}b_{i})\sum_{i=1}^{n}c_{i}
+（\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}b_{i}+\sum_{i=1}^{n}c_{i}\sum_{i=1}^{n}b_{i}+\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}c_{i})\sum_{i=1}^{n}\dfrac{a_{i}b_{i}c_{i}}{a_{i}b_{i}+a_{i}c_{i}+b_{i}c_{i}}\le \sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}b_{i}\sum_{i=1}^{n}c_{i}\cdots (3)
+t_{i}=\dfrac{c_{i}b_{i}}{b_{i}+c_{i}}
+\sum_{i=1}^{n}(a_{i}+t_{i})\sum_{i=1}^{n}\dfrac{a_{i}t_{i}}{a_{i}+t_{i}}\le\sum_{i=1}^{n}a_{i}\sum_{i=1}^{n}t_{i}
+\sum_{i=1}^{n}(c_{i}+b_{i})\sum_{i=1}^{n}\dfrac{c_{i}b_{i}}{c_{i}+b_{i}}\le\sum_{i=1}^{n}c_{i}\sum_{i=1}^{n}b_{i}
+(1)\times (2)\times (3)

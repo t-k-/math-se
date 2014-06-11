@@ -1,0 +1,37 @@
+\alpha : \mathbb{N}\times\mathbb{N} \rightarrow\mathbb{N}
+\forall n \in\mathbb{N}, \alpha(n,10) := \begin{cases} \alpha(n-1-9, 10) + 9 &\text{if}\ n \ge 10,\\ 0 &\text{if}\ n \lt 10 \end{cases}
+\alpha(10, 10)
+\alpha(0,10)+9
+\alpha(100, 10)
+\alpha(90,10)+9
+\alpha(1000, 10)
+\alpha(990,10)+9
+\forall n \in\mathbb{N}
+n \ge 10, a_n = \alpha(n-10,10)+9
+2
+10
+n-1-9=n-10
+\beta:\Bbb N\to\Bbb N:n\mapsto\begin{cases} \beta(n-10)+9,&\text{if }n\ge 10\\ 0,&\text{if }n<10\;: \end{cases}
+\alpha(n,10)=\beta(n)
+n\in\Bbb N
+\alpha(10,10)=\beta(10)=\beta(0)+9=9\;.
+\alpha(10,10)
+\alpha(0,10)
+10\le n\le 19
+0\le n-10\le 9
+\beta(n-10)=0
+\beta(n)=\beta(n-10)+9=0+9=9\;.
+\beta(n)=\begin{cases} 0,&\text{if }0\le n\le 9\\ 9,&\text{if }10\le n\le 19\;. \end{cases}
+10
+20\le n\le 29
+10\le n-10\le 19
+\beta(n)=\beta(n-10)+9=9+9=18\;.
+30\le n\le 39
+20\le n-10\le 29
+\beta(n)=\beta(n-10)+9=18+9=27\;.
+beta
+\beta(n)=\begin{cases} 0,&\text{if }0\le n\le 9\\ 9,&\text{if }10\le n\le 19\\ 18,&\text{if }20\le n\le 29\\ 27,&\text{if }30\le n\le 39\;. \end{cases}
+10
+9
+\beta(n)=9\left\lfloor\frac{n}{10}\right\rfloor
+n

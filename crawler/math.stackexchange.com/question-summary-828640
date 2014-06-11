@@ -1,0 +1,17 @@
+ \int \sqrt{\tan x} ~ \mathrm{d}{x}. 
+u = \sqrt{\text{tan}x}
+u^2 = \text{tan}x
+2udu = \text{sec}^2xdx = (u^4 + 1)dx
+dx = \dfrac{2udu}{u^4 + 1}
+\displaystyle \int \sqrt{\text{tan}x}dx = \displaystyle \int \dfrac{2u^2}{u^4+1}du
+\bf{My\; Solution::}
+\displaystyle I = \sqrt{\tan x}dx
+\displaystyle J = \sqrt{\cot x}dx
+\displaystyle I + J = \int \left(\sqrt{\tan x}+\sqrt{\cot x}\right)dx = \sqrt{2}\int \frac{(\sin x+\cos x)}{\sqrt{\sin 2x }}dx = \sqrt{2}\int\frac{(\sin x-\cos x)^{'}}{\sqrt{1-(\sin x-\cos x)^2}}dx
+\displaystyle I +J = \sqrt{2}\sin^{-1}(\sin x-\cos x)+\mathbb{C_{1}}\tag1
+\displaystyle I-J = \int \left(\sqrt{\tan x}-\sqrt{\cot x}\right)dx
+\displaystyle  = \sqrt{2}\int \frac{(\sin x-\cos x)}{\sqrt{\sin 2x}}dx =-\sqrt{2}\int\frac{(\sin x+\cos x)^{'}}{\sqrt{(\sin x+\cos x)^2-1}}dx
+\displaystyle I-J = -\sqrt{2}\ln \left|(\sin x+\cos x)+\sqrt{(\sin x+\cos x)^2-1}\right|+\mathbb{C_{2}}\tag2
+(1)
+(2)
+\displaystyle I = \frac{1}{\sqrt{2}}\sin^{-1}(\sin x-\cos x)-\frac{1}{\sqrt{2}}\ln \left|(\sin x+\cos x)+\sqrt{\sin 2x}\right|+\mathbb{C}

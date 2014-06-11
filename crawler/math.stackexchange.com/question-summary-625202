@@ -1,0 +1,20 @@
+X^2
+X_i
+1 \le i \le n
+(X_1,\ldots, X_n)
+\mathbb R^n
+X^2(x)=\sum_{i=1}^n X_i^2 = x
+\mathbb R^n
+\sum_{i=1}^n X_i^2 = x
+x
+\mathbb R^n
+\sqrt x
+X
+N(0,1)
+X_1 \sim {\rm Gamma}(\alpha_1, \beta)
+X_2 \sim {\rm Gamma}(\alpha_2, \beta)
+\beta
+{\rm E}[X_1] = \alpha_1 \beta
+Y = X_1 + X_2
+Y \sim {\rm Gamma}(\alpha_1 + \alpha_2, \beta)
+\begin{align*} f_Y(y) &= \int_{t=0}^y f_{X_1}(t) f_{X_2}(y-t) \, dt \\ &= \int_{t=0}^y \frac{t^{\alpha_1 - 1} e^{-t/\beta}}{\Gamma(\alpha_1) \beta^{\alpha_1}} \cdot \frac{(y-t)^{\alpha_2 - 1} e^{-(y-t)/\beta}}{\Gamma(\alpha_2) \beta^{\alpha_2}} \, dt \\ &= \frac{e^{-y/\beta}}{\beta^{\alpha_1+\alpha_2}} \cdot \frac{1}{\Gamma(\alpha_1)\Gamma(\alpha_2)} \int_{t=0}^y t^{\alpha_1-1} (y-t)^{\alpha_2-1} \, dt \\ &= \frac{e^{-y/\beta}}{\Gamma(\alpha_1+\alpha_2) \beta^{\alpha_1+\alpha_2}} \cdot \frac{\Gamma(\alpha_1+\alpha_2)}{\Gamma(\alpha_1)\Gamma(\alpha_2)} \int_{u=0}^1 (yu)^{\alpha_1-1} (y(1-u))^{\alpha_2-1} y \, du \\ &= \frac{y^{\alpha_1+\alpha_2-1} e^{-y/\beta}}{\Gamma(\alpha_1+\alpha_2) \beta^{\alpha_1+\alpha_2}} \cdot \frac{\Gamma(\alpha_1+\alpha_2)}{\Gamma(\alpha_1)\Gamma(\alpha_2)} \int_{u=0}^1 u^{\alpha_1-1} (1-u)^{\alpha_2-1} \, du \\ &= \frac{y^{\alpha_1+\alpha_2-1} e^{-y/\beta}}{\Gamma(\alpha_1+\alpha_2) \beta^{\alpha_1+\alpha_2}},  \end{align*}

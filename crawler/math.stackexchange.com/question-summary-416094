@@ -1,0 +1,34 @@
+t<2
+1
+2
+3
+1
+1
+t>3
+0
+t<2
+2-t
+3-t
+t
+2
+t
+3
+H(t-2)
+H(t-3)
+\int_0^t H(s)\,ds=\left.\begin{cases} 0 & t<0\\ t & t>0\\ \end{cases}\right\}=tH(t).
+\int_t^\infty [H(s-2)-H(s-3)]\,ds.
+\int_t^\infty [H(s-2)-H(s-3)] \, ds=(2-t)H(t-2)-(3-t)H(t-3).
+\begin{eqnarray*} \int_a^b H(s-c)ds &=& \int_{a-c}^{b-c}H(u)du \hspace{5ex}(\textrm{let }u=s-c) \\ &=& \int_{0}^{b-c}H(u)du - \int_{0}^{a-c}H(u)du \\ &=& (b-c)H(b-c) - (a-c)H(a-c). \end{eqnarray*}
+\begin{eqnarray*} \int_t^\infty [H(s-2)-H(s-3)]ds  &=& \lim_{R\to\infty} \int_t^R [H(s-2)-H(s-3)]ds \\ &=& \lim_{R\to\infty} \{[(R-2)H(R-2) - (t-2)H(t-2)] \\ && -[(R-3)H(R-3) - (t-3)H(t-3)]\} \\ &=& 1-(t-2)H(t-2)+(t-3)H(t-3). \end{eqnarray*}
+\lim_{R\to\infty} [(R-2)H(R-2) - (R-3)H(R-3)]  = \lim_{R\to\infty} [(R-2)-(R-3)] = 1.
+\int_0^t H(s) \, ds = tH(t)
+T
+T
+H(T)
+1
+ \int_t^{\infty} \left[ H(s-2) - H(s-3) \right] \, ds = \lim_{T \to \infty} \left[ \int_t^T H(s-2) - \int_t^T H(s-3) \, ds \right]. 
+ \int_t^T f(s) \, ds = \int_0^T f(s) \, ds - \int_0^t f(s) \, ds 
+t
+t \le 2
+2 < t < 3
+t \ge 3

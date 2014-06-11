@@ -1,0 +1,46 @@
+f
+a < b
+\int_a^b f(x)dx
+ f(z) \log \frac{z-b}{z-a} 
+C_{\delta}
+a
+\delta
+r = b-a
+C_r
+r
+a
+\sigma_{\delta+}
+a
+b
+z(t) = a + t + \delta i
+\sigma_{\delta-}
+a
+b
+z(t) = a + t - \delta i
+a
+b
+f(z)\log(\frac{z-b}{z-a})
+ \int_{C_r - C_{\delta} + \sigma_{\delta+} -\sigma_{\delta-} } f(z)\log(\frac{z-b}{z-a})  dz = 0 
+f
+\frac{1}{2\pi i}\int_{C_r} f(z)\log(\frac{z-b}{z-a}) dz
+\delta \to 0
+C_{\delta}
+2\pi i \int_{a}^{b}f(x)dx
+\log(\frac{z-b}{z-a})
+ -\int_{C_r} f(z)\log(\frac{z-b}{z-a}) dz = 2 \pi i \int_{a}^{b}f(x)dx 
+a,b\in\Bbb C
+f
+\int_a^b f(z)dz
+R>\max\{|a|, |b|\}
+|w|,|w_0|<R
+\log\frac{z-w}{z-w_0}
+z
+\{|z|\ge R\}
+w
+\{|w|<R\}
+g_{w_0}(w_0)=0
+w_0=a
+w=b
+g_{w_0}(w):=\frac{1}{2\pi i}\int_{|z|=R}f(z)\log\frac{z-w}{z-w_0}dz
+(g_{w_0})'(w)=-\frac{1}{2\pi i}\int_{|z|=R}\frac{f(z)}{z-w}dz=-f(w).
+g_{w_0}(w)=-\int_{w_a}^w f(z)dz.

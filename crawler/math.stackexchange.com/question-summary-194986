@@ -1,0 +1,31 @@
+I_n(\kappa)
+F_n(\kappa,\theta,\phi)=\int_{-\pi}^{\pi}{\rm e}^{\kappa\cos(x-\theta)}\cos(n\, x-\phi)\,{\rm d}x
+I_n(\kappa)=\frac{1}{\pi}\int_{0}^{\pi}{\rm e}^{\kappa\cos(x)}\cos(n\, x)\,{\rm d}x,
+n
+2\pi
+(-\pi, \pi)
+\varphi = n\theta - \phi
+\cos(n x + \varphi) = \cos(n x) \cos(\varphi) - \sin(n x) \sin(\varphi)
+\sin(n x) \exp(\kappa \cos(x))
+   F_n=  \int_{-\pi}^\pi \exp\left( \kappa \cos(x-\theta) \right) \cos(n x - \phi) \mathrm{d}x =     \int_{-\theta-\pi}^{-\theta+\pi} \exp\left( \kappa \cos(x) \right) \cos(n x + n \theta- \phi) \mathrm{d}x 
+    \int_{-\pi}^\pi \exp\left( \kappa \cos(x-\theta) \right) \cos(n x - \phi) \mathrm{d}x = \int_{-\pi}^{+\pi} \exp\left( \kappa \cos(x) \right) \cos(n x + n \theta- \phi) \mathrm{d}x 
+ \begin{eqnarray}   F_n &=& \cos(\varphi) \int_{-\pi}^{\pi}  \exp\left( \kappa \cos(x) \right) \cos(n x) \mathcal{d} x - \sin(\varphi) \int_{-\pi}^{\pi}  \exp\left( \kappa \cos(x) \right) \sin(n x) \mathcal{d} x \\    &=& 2 \pi \cos(\varphi) I_n(\kappa) - \sin(\varphi) \cdot 0  \end{eqnarray} 
+     F_n(\kappa, \theta, \theta) = 2 \pi \cos(n \theta - \phi) I_n(\kappa) 
+F_n
+\kappa
+n
+F_n
+I_n(\kappa)
+\kappa = 0
+F_n
+g_{0}(\theta, \phi) = \cos(\phi)
+F_n
+\theta
+ \begin{eqnarray}    \kappa^2 \partial_\kappa^2 F_n + \kappa \partial_\kappa F_n &=& \int_{-\pi}^\pi \exp(\kappa \cos(x-\theta)) \left(\kappa^2 \underbrace{\cos^2(x-\theta)}_{1-\sin^2(x-\theta)}+ \kappa \cos(x-\theta) \right) \cos(n x - \phi) \mathrm{d} x \\   &=& \kappa^2 F_n - \int_{-\pi}^\pi \left(\frac{\mathrm{d}^2}{\mathrm{d}x^2} \exp(\kappa \cos(x-\theta)) \right) \cos(n x-\phi) \mathrm{d} x \\   &\stackrel{\text{by parts}}{=}&    (\kappa^2 + n^2) F_n + \text{boundary terms} \end{eqnarray} 
+\begin{eqnarray}   \text{boundary terms} &=& - \left(\left. \left(\frac{\mathrm{d}}{\mathrm{d}x} \exp(\kappa \cos(x-\theta)) \right) \cos(n x-\phi) \right|_{x=-\pi}^{x=\pi} \right) \\   &\phantom{=}& - \left(\left. n \exp(\kappa \cos(x-\theta) ) \sin(n x-\phi)  \right|_{x=-\pi}^{x=\pi} \right)  \\    &=& 2 \sin(\pi n) \exp( -\kappa \cos(\theta) ) \left( n \cos(\phi) - \kappa \sin(\theta) \sin(\phi) \right) = 0 \end{eqnarray} 
+     \kappa^2 \frac{\mathrm{d}^2}{\mathrm{d} \kappa^2} F_n + \kappa \frac{\mathrm{d}}{\mathrm{d} \kappa} F_n - (\kappa^2 + n^2) F_n = 0 
+    \left.F_n \right|_{\kappa = 0} = \int_{-\pi}^\pi \cos(n x -\phi) \mathrm{d} x = 2 \cos(\phi) \frac{\sin(\pi n)}{n} = 2 \pi \cos(\phi) \delta_{n,0} 
+      F_n = g_n(\theta, \phi) I_n(\kappa) 
+      \frac{\mathrm{d}^2}{\mathrm{d} \theta^2} F_n = \int_{-\pi}^\pi \left(\frac{\mathrm{d}^2}{\mathrm{d}x^2} \exp(\kappa \cos(x-\theta)) \right) \cos(n x-\phi) \mathrm{d} x = -n^2 F_n 
+   \frac{\mathrm{d}^2}{\mathrm{d} \phi^2} F_n = - F_n 
+     F_n(\kappa, \theta, \phi) = 2\pi \cos\left(n \theta - \phi\right) I_n\left( \kappa \right) 

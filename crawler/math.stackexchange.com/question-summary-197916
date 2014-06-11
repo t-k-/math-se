@@ -1,0 +1,184 @@
+A=(A_{i,j})_{i,j\in\mathbb{N}_0}
+B=(B_{i,j})_{i,j\in\mathbb{N}_0}
+\begin{align}rA&:=(rA_{i,j})_{i,j\in\mathbb{N}_0}\\A+B&:=(A_{i,j}+B_{i,j})_{i,j\in\mathbb{N}_0}\\AB&:=(\sum_{k=0}^\infty A_{i,k}B_{k,j})_{i,j\in\mathbb{N}_0}\end{align}
+(C^{(n)})_{n\in\mathbb{N}_0}
+\begin{align}\lim_{n\rightarrow\infty}C^{(n)}&:=(\lim_{n\rightarrow}C_{i,j}^{(n)})_{i,j\in\mathbb{N}_0}\\\sum_{n=0}^\infty C^{(n)}&:=(\sum_{n=0}^\infty C_{i,j}^{(n)})_{i,j\in\mathbb{N}_0}\end{align}
+\delta_{i,j}
+\begin{align}0&:=(0)_{i,j\in\mathbb{N}_0}\\I&:=(\delta_{i,j})_{i,j\in\mathbb{N}_0}\end{align}
+A
+n\in\mathbb{N}_0
+\begin{align}A^0&:=I\space\space\mathrm{(even\, if\, }A=0\mathrm{\, )}\\A^{n+1}&:=AA^n\end{align}
+A
+e^A:=\sum_{n=0}^\infty \frac{1}{n!} A^n
+e^A
+e^B
+e^{A+B}
+e^{A+B}=e^Ae^B
+A
+1
+s,t\in\mathbb{R}
+e^{sI}
+e^{tA}
+e^{sI}e^{tA}
+e^{sI+tA}
+e^{sI}e^{tA}=e^{sI+tA}
+|A|:=(|A_{i,j}|)_{i,j\in\mathbb{N}_0}
+0\leq A
+A=|A|
+A\leq B
+0\leq B-A
+A
+\{\left.A_{i,j}\space:\right|\space i,j\in\mathbb{N}_0\}
+\lim_{n\rightarrow\infty}a_n=b
+\lim_{n\rightarrow\infty}(a_nC)=bC
+\lim_{n\rightarrow\mathbb{N}_0}A_n=B
+\lim_{n\rightarrow\infty} (cA_n)=cB
+\sum_{n=0}^\infty A_n=B
+\sum_{n=0}^\infty cA_n=cB
+\sum_{n=0}^\infty A_n=B
+A'=(A_0,0,A_1,0,\dots)
+\sum_{n=0}^\infty A'_n=B
+\sum_{n=0}^\infty |A_n|=B
+\sum_{n=0}^\infty A_n=C
+C
+\sum_{n=0}^\infty |A_n|=B
+(A_{n_i})_{i\in\mathbb{N}_0}
+(A_n)_{n\in\mathbb{N}_0}
+\sum_{i=0}^\infty A_{n_i}=\sum_{n=0}^\infty A_n
+(A_{i,j})_{i,j\in\mathbb{N}_0}
+(A_n)_{n\in\mathbb{N}_0}
+\sum_{i=0}^\infty\sum_{j=0}^\infty|A_{i,j}|=B
+\sum_{n=0}^\infty |A_n|=B
+\sum_{i=0}^\infty\sum_{j=0}^\infty A_{i,j}=\sum_{j=0}^\infty\sum_{i=0}^\infty A_{i,j}=\sum_{n=0}^\infty A_n
+A, B
+C
+AB=C
+A
+e^{tA}=B
+B
+i,j\in\mathbb{N}_0
+|B_{i,j}|\leq e^t
+e^{tI}=e^tI
+A, B
+C:=AB
+0\leq C
+C
+1
+i\in\mathbb{N}_0
+\sum_{j=0}^\infty\sum_{k=0}^\infty A_{i,k}B_{k,j}=1
+k\in\mathbb{N}_0
+a_k\in\mathbb{N}_0
+\sum_{j=0}^{a_k}B_{k,j}>1-\frac{1}{k+1}
+b_k:=k
+a_k,b_k\underset{k\rightarrow\infty}{\rightarrow}\infty
+\lim_{n\rightarrow\infty}C_n=1
+C_n:=\sum_{j=0}^{a_n}\sum_{k=0}^{b_n}A_{i,k}B_{k,j}
+\square
+\underbrace{(1-\frac{1}{n+1})\sum_{k=0}^{b_n}A_{i,k}}_{\underset{n\rightarrow\infty}{\rightarrow}1}\leq C_n=\sum_{k=0}^{b_n}A_{i,k}\sum_{j=0}^{a_n}B_{k,j}\leq\underbrace{\sum_{k=0}^{b_n}A_{i,k}}_{\underset{n\rightarrow\infty}{\rightarrow}1}
+\exp_n(t):=\sum_{i=0}^n \frac{t^n}{n!}
+\mathrm{Exp}_n(t):=\exp_n(t) I
+\sum_{n=0}^\infty(\frac{t^n}{n!}A)=e^tA
+A
+e^{sI}e^{tA}=e^{sI+tA}
+A
+\begin{align}e^{sI}e^{tA}&=\sum_{n=0}^\infty\left(\frac{s^n}{n!}e^{tA}\right)\\ &=\sum_{n=0}^\infty\sum_{k=0}^\infty\frac{s^n}{n!}\frac{t^k}{k!}A^k\\ &=\sum_{m=0}^\infty\frac{1}{m!}\sum_{n,k\in\mathbb{N}_0\atop n+k=m}\binom{m}{n}(sI)^n(tA)^k\\ &=\sum_{m=0}^\infty\frac{1}{m!}\left(sI+tA\right)^m\\ &=e^{sI+tA}\end{align}
+\square
+\phi:\mathbb{R}\rightarrow\mathbf{M}
+i,j\in\mathbb{N}_0
+\Phi
+\Phi_{i,j}:\mathbb{R}\rightarrow\mathbb{R},\space\space\Phi_{i,j}(x):=(\phi(x))_{i,j}
+\Phi_{i,j}
+x_0\in\mathbb{R}
+i,j\in\mathbb{N}_0
+\phi
+x_0
+\phi'(x_0):=\left(\Phi'_{i,j}(x_0)\right)_{i,j\in\mathbb{N}_0}
+e^0=I
+e^{tA}=B
+0 < t
+s\in(-t,t)
+C_s
+e^{sA}=C_s
+0\leq A
+e^A=B
+B
+e^{-A}=C
+C
+e^{tA}=B
+0 < t
+(-t,t)
+\phi'(0)=A
+\phi:\mathbb{R}\rightarrow\mathbf{M},\space\space \phi(s):=e^{sA}
+A_{i,j}\geq0
+i,j\in\mathbb{N}_0
+A_{i,i}=-\sum_{j\neq i}A_{i,j}
+i\in\mathbb{N}_0
+B = \begin{cases} c^{-1} A+I &, 0 < c \\ I&,\mathrm{otherwise} \end{cases}
+e^{tA}
+A
+A+I
+A
+rA
+A
+rA
+A
+B
+AB=C
+C
+A
+C
+(A^{(n)})_{n\in\mathbb{N}_0}
+B
+\lim_{n\rightarrow\infty}A^{(n)}=C
+C
+\lim_{n\rightarrow\infty}(A^{(n)}B)=CB
+i,j\in\mathbb{N}_0
+\lim_{n\rightarrow\infty}\sum_{k=0}^\infty A_{i,k}^{(n)}B_{k,j}=\sum_{k=0}^\infty C_{i,k}B_{k,j}
+n,N\in\mathbb{N}_0
+i < N
+\begin{align}\left|\sum_{k=0}^\infty A_{i,k}^{(n)}B_{k,j}-\sum_{k=0}^\infty C_{i,k}B_{k,j}\right|&=\underbrace{\left|A_{i,i}^{(n)}-C_{i,i}\right|}_{\underset{n\rightarrow\infty}{\rightarrow}0}\left|B_{i,j}\right|+\sum_{k=0\atop k\neq i}^N\underbrace{\left|A_{i,k}^{(n)}-C_{i,k}\right|}_{\underset{n\rightarrow\infty}{\rightarrow}0}\left|B_{k,j}\right|\\&+\left|\sum_{k=N+1}^\infty(A_{i,k}^{(n)}-C_{i,k})B_{k,j}\right|\end{align}
+0\leq\beta\in\mathbb{R}
+B
+\begin{align}\left|\sum_{k=N+1}^\infty(A_{i,k}^{(n)}-C_{i,k})B_{k,j}\right|&\leq\left(\sum_{k=N+1}^\infty A_{i,k}^{(n)}\right)\beta+\left(\sum_{k=N+1}^\infty C_{i,k}\right)\beta\\&=\left(C_{i,i}+\underbrace{A_{i,i}^{(n)}-C_{i,i}}_{\underset{n\rightarrow\infty}{\rightarrow}0}\right)\beta\\&-\left(\sum_{k=0\atop k\neq i}^N C_{i,k}+\sum_{k=0\atop k\neq i}^N(\underbrace{A_{i,k}^{(n)}-C_{i,k}}_{\underset{n\rightarrow\infty}{\rightarrow}0})\right)\beta\\&+\left(\sum_{k=N+1}^\infty C_{i,k}\right)\beta\\&\leq2\left(\sum_{k=N+1}^\infty C_{i,k}\right)\beta+\varepsilon\end{align}
+N
+n
+\square
+\emptyset\neq S\subseteq\mathbb{R}
+S
+s\in\mathbb{R}\cup\{\pm\infty\}
+s=\infty
+s
+S
+S
+s=-\infty
+s
+S
+S
+f:S\rightarrow\mathbf{M}
+i,j\in\mathbb{N}_0
+\lim_{t\rightarrow s\atop t\in S}f(t)=A
+\lim_{t\rightarrow s\atop t\in S}\left(f(t)\right)_{i,j}=A_{i,j}
+(t_n)_{n\in\mathbb{N}_0}
+S
+s
+\lim_{t\rightarrow s\atop t\in S}f(t)=A
+\lim_{n\rightarrow\infty}f(t_n)=A
+f:[0,\infty)\rightarrow\mathbf{M}
+f(0)=I
+t\in(0,\infty)
+f(t)
+s,t\in[0,\infty)
+f(s+t)=f(s)f(t)
+f:[0,\infty)\rightarrow\mathbf{M}
+A
+\lim_{t\downarrow0}\frac{1}{t}(f(t)-I)=A
+f
+[0,\infty)
+t\in[0,\infty)
+\mathrm{D}_R(f, t)
+f
+t
+\mathrm{D}_R(f, t)=Af(t)
+t\in[0,\infty)
+\lim_{s\downarrow0}\frac{1}{s}(f(t+s)-f(t))=\lim_{s\downarrow0}\left(\frac{1}{s}(f(s)-I)\space f(t)\right)=Af(t)
+\square

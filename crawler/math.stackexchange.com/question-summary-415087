@@ -1,0 +1,9 @@
+\mathbb{E_P} \left( \exp{(\alpha W_t)} \int_0^t \exp{(\gamma W_u)} \,du \right)
+\alpha
+\gamma
+W_t
+\mathbb{E} \left( \exp(\alpha \cdot W_t) \cdot \int_0^t \exp (\gamma \cdot W_u) \, du \right) = \mathbb{E} \left( \int_0^t e^{\alpha \cdot (W_t-W_u)+(\gamma+\alpha) \cdot W_u} \, du \right)
+u \in [0,t]
+W_t-W_u
+W_u
+\mathbb{E}(e^{\alpha \cdot (W_t-W_u)+(\gamma+\alpha) \cdot W_u}) = \mathbb{E}(e^{\alpha \cdot (W_t-W_u)}) \cdot \mathbb{E}(e^{(\gamma+\alpha) \cdot W_u})

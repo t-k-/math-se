@@ -1,0 +1,12 @@
+\displaystyle \sum_{n=1}^\infty \frac{H_n}{\binom{2n}{n}} = -\frac{2\sqrt{3} \pi}{27}(\log (3)-2)+\frac{2}{27} \left( \psi_1 \left( \frac{1}{3}\right)-\psi_1 \left(\frac{2}{3} \right)\right)
+\frac{1}{\binom{2n}{n}}=(2n+1)\int_0^1 y^n(1-y)^n \ dy
+\displaystyle \begin{aligned} \sum_{n=1}^\infty \frac{H_n}{\binom{2n}{n}} &= \sum_{n=1}^\infty (2n+1)H_n \int_0^1 (y-y^2)^n dy \\  &= \int_0^1 \sum_{n=1}^\infty (2n+1)H_n (y-y^2)^n \ dy \end{aligned}
+\sum_{n=1}^\infty (2n+1)H_n t^n=\frac{2t-(1+t)\log(1-t)}{(t-1)^2}\quad |t|<1
+\sum_{n=1}^\infty \frac{H_n}{\binom{2n}{n}}=\int_0^1 \frac{2y-2y^2-(1+y-y^2)\log(y^2-y+1)}{(y^2-y+1)^2}dy
+y=\frac12+\frac{\sqrt{3}}{2}\tan\varphi
+y^2-y+1=\frac{3}{4\cos^2\varphi}
+I=\int_0^{1}\frac{\left(y^2-y+1\right)\ln\left(y^2-y+1\right)-2\ln\left(y^2-y+1\right)-2\left(y^2-y+1\right)+2}{\left(y^2-y+1\right)^2}dy.
+I=\frac{8}{3\sqrt{3}}\int_{-\pi/6}^{\pi/6}\left\{\Bigl(\frac34-2\cos^2 \varphi\right)\left(\ln 3-2-2\ln (2\cos \varphi)\Bigr)-2\cos^2 \varphi\right\}d\varphi.\tag{1}
+\int_{-\pi/6}^{\pi/6}\ln (2\cos \varphi)\,d\varphi,\qquad \int_{-\pi/6}^{\pi/6}\left(2\cos^2\varphi-1\right)\ln (2\cos \varphi)\,d\varphi.
+I=\frac{8}{3\sqrt{3}}\left[\frac{\pi\left(2-\ln3\right)}{12}+\frac12\int_{-\pi/6}^{\pi/6}\ln(2\cos\varphi)\,d\varphi\right].
+\int_{0}^{\pi/6}\ln(2\cos\varphi)\,d\varphi=\frac{\psi_1\left(\frac13\right)-\psi_1\left(\frac23\right)}{12\sqrt{3}},\tag{2}

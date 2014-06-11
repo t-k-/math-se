@@ -1,0 +1,27 @@
+\int_{0}^{1} \frac{\log(1+3x^2)}{x^2} dx
+\int_{0}^{1} \frac{\log(1+3x^2)}{x^2} dx = 
+\int_{0}^{1} \log(1+3x^2)\left(\frac{1}{x}\right) dx = 
+ -\frac{\log(1+3x^2)}{x}\bigg\rvert^1_0 + \int_{0}^{1} \frac 1x *\frac {6x}{1+3x^2} dx = 
+\displaystyle\int_{0}^{1}\dfrac{\log(1+3x^2)}{x^2}\,dx
+= -\left[\dfrac{\log(1+3x^2)}{x}\right]_{0}^{1} + \displaystyle\int_{0}^{1}\dfrac{1}{x} \cdot \dfrac{6x}{1+3x^2}\,dx
+x = 1
+\dfrac{\log(1+3x^2)}{x} = \log 4
+y \approx 0
+\log(1+y) = y + O(y^2)
+x \approx 0
+\log(1+3x^2) = 3x^2 + O(x^4)
+\dfrac{\log(1+3x^2)}{x} = 3x + O(x^3)
+\displaystyle \lim_{x \to 0^+}\dfrac{\log(1+3x^2)}{x} = 0
+\left[\dfrac{\log(1+3x^2)}{x}\right]_{0}^{1} = \log 4 - 0 = 2\log 2
+\displaystyle\int_{0}^{1}\dfrac{1}{x} \cdot \dfrac{6x}{1+3x^2}\,dx
+= \displaystyle\int_{0}^{1}\dfrac{6}{1+3x^2}\,dx
+= \displaystyle\int_{0}^{1}\dfrac{2\sqrt{3}}{1+(x\sqrt{3})^2}\sqrt{3}\,dx
+= \displaystyle\int_{0}^{\sqrt{3}}\dfrac{2\sqrt{3}}{1+u^2}\,du
+= \displaystyle \left[2\sqrt{3}\arctan u\right]_{0}^{\sqrt{3}}
+= \dfrac{2\pi\sqrt{3}}{3}
+\displaystyle\int_{0}^{1}\dfrac{\log(1+3x^2)}{x^2}\,dx = \dfrac{2\pi\sqrt{3}}{3} - 2\log 2
+ I(\alpha)=\int_0^1\frac{\log(1+\alpha x^2)}{x^2}dx. 
+ I'(\alpha)=\int_0^1\frac{1}{1+\alpha x^2}dx=\frac{1}{\sqrt{\alpha}}\arctan\sqrt{\alpha}. 
+u
+\int^1_0\dfrac{1}{x}\times\dfrac{6x}{1+3x^2}dx=\int^1_0\times\dfrac{6}{1+3x^2}dx
+\int^1_0\dfrac{dx}{1+x^2}=\left.\arctan(x)\right|^1_0

@@ -1,0 +1,7 @@
+\log \sum_c \prod_m p_m(c|\theta_m)
+\sum_c \Big(p(c|\theta_1 \dots \theta_n) \times \frac{\partial \log p_m(c|\theta_m)}{\partial \theta_m}\Big)
+ \begin{equation} \begin{split} \dfrac{\partial\log\left(\sum_{c}f(x, c)\right)}{\partial x}&=\dfrac{1}{\sum_{c}f(x, c)}\cdot\sum_{c}\left(f(x, c)\dfrac{\partial\log\left(f(x, c)\right)}{\partial x}\right)\\&=\sum_{c}\left(\dfrac{f(x, c)}{\sum_{c}f(x, c)}\dfrac{\partial\log\left(f(x, c)\right)}{\partial x}\right). \end{split} \end{equation} 
+f(x, c)=\prod_{m}p_m(c\mid\theta_m)
+\theta_m
+x
+ \begin{equation} \begin{split} \dfrac{\partial\log\left(\sum_{c}\prod_{m}p_m(c\mid\theta_m)\right)}{\partial \theta_m}&=\sum_{c}\left(\dfrac{\prod_{m}p_m(c\mid\theta_m)}{\sum_{c}\prod_{m}p_m(c\mid\theta_m)}\dfrac{\partial\log\left(\prod_{m}p_m(c\mid\theta_m)\right)}{\partial \theta_m}\right)\\&=\sum_{c}\left(p(c\mid\theta_1, \cdots,\theta_n)\dfrac{\partial\log\left(p_m(c\mid\theta_m)\right)}{\partial \theta_m}\right). \end{split} \end{equation} 

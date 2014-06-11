@@ -1,0 +1,22 @@
+ \int_0^{\pi/2}\frac{(\ln{\sin x})(\ln{\cos x})}{\tan x}dx 
+ \displaystyle \ln(\sin x) = u 
+\ln(\cos x)=\frac{\ln(1-e^{2u})}{2}
+\displaystyle\frac{1}{\tan x} \ dx =du
+\int_0^{\pi/2}\frac{(\ln{\sin x})(\ln{\cos x})}{\tan x}dx= \frac{1}{2} \int_{-\infty}^{0}  \ln(1-e^{2u}) u \ du
+\ln(1-e^{2u})= \sum_{k=1}^{\infty} (-1)^{2k+1} \frac{e^{2 k u}}{k}
+\frac{1}{2} \int_{-\infty}^{0}  \ln(1-e^{2u}) u \ du=
+\frac{1}{2} \sum_{k=1}^{\infty} \frac{(-1)^{2k+1}}{k} \int_{-\infty}^{0} u e^{2ku} \ du =
+\frac{1}{2} \sum_{k=1}^{\infty} \frac{(-1)^{2k+1}}{k} \frac{-1}{4k^2} = \frac{1}{8} \sum_{k=1}^{\infty} \frac{1}{k^3}=\frac{1}{8} \zeta(3).
+u = \sin^2(x)
+\frac{\mathrm{d}x}{\tan(x)} = \frac{\cos(x)}{\sin(x)} \mathrm{d}x = \frac{d\sin(x)}{\sin(x)} = \frac{1}{2}\frac{\mathrm{d}u}{u}
+\ln(\sin(x)) = \frac{1}{2}\ln(u)
+\ln(\cos(x)) = \frac{1}{2} \ln(1-u)
+t
+t=1
+\psi(s)
+   \int_0^{\pi/2} \frac{\ln(\sin(x)) \ln(\cos(x))}{\tan(x)} \mathrm{d} x = \frac{1}{8} \int_0^{1} \frac{\ln u}{u} \cdot \ln(1-u) \mathrm{d} u = \left.\frac{1}{8} \frac{\mathrm{d}^2}{\mathrm{d} s \mathrm{d} t} \int_0^1 u^{s-1} (1-u)^{t-1} \mathrm{d}u \right|_{s\to 0^+,t=1} = \left.\frac{1}{8} \frac{\mathrm{d}^2}{\mathrm{d} s \mathrm{d} t} \frac{\Gamma(s) \Gamma(t)}{\Gamma(s+t)} \right|_{s\to 0^+,t=1}  
+  \left.\frac{1}{8} \frac{\mathrm{d}}{\mathrm{d} s} \frac{\Gamma(s)}{\Gamma(s+1)}\left( \psi(1) - \psi(s+1)\right)  \right|_{s\to 0^+} = \left.\frac{1}{8} \frac{\mathrm{d}}{\mathrm{d} s} \frac{\left( \psi(1) - \psi(s+1)\right) }{s} \right|_{s\to 0^+} 
+    \frac{\left( \psi(1) - \psi(s+1)\right) }{s} = -\zeta(2) +  \zeta(3) s + \mathcal{o}(s) 
+   \int_0^{\pi/2} \frac{\ln(\sin(x)) \ln(\cos(x))}{\tan(x)} \mathrm{d} x = \frac{1}{8} \zeta(3) 
+\frac{\ln(1-u)}{u} = -\sum_{k=0}^\infty \frac{u^k}{k+1}
+\int_0^1 u^k \ln(u) \mathrm{d} u \stackrel{u=\exp(-t)}{=} \int_0^\infty t \exp(-t(k+1)) \mathrm{d} t =  -\frac{1}{(k+1)^2}

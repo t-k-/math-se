@@ -1,0 +1,39 @@
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+x=a\cos t
+y=b\sin t
+L(\alpha)=\int_0^{\alpha}\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\,dt
+L(\alpha)=\int_0^\alpha\sqrt{a^2\sin^2 t+b^2 \cos^2 t}\,dt 
+L(2\pi)=\int_0^{2\pi}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt \tag{Perimeter of ellipse}
+L(\pi/2)=\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt \tag {Quarter of Perimeter }
+L(2\pi)=4L(\pi/2)
+4\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt=\int_0^{2\pi}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt  \tag1
+L(2\pi)
+L(2\pi)=\int_0^{2\pi}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt \tag{Perimeter of ellipse}
+t=4u
+L(2\pi)=4\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 4u}\,du
+L(2\pi)=4\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 4u},du=4\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt
+\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 4u}\,du=\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 t}\,dt \tag2
+(2)
+\int_0^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 4u}\,du=K
+u=\pi/4-z
+K=\int_{-\pi/4}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (\pi-4z)}\,dz
+\sin (\pi-4z)=\sin \pi \cos 4z-\cos \pi \sin 4z=  \sin 4z
+\int_{-\pi/4}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (\pi-4z)}\,dz=\int_{-\pi/4}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz
+\int_{-\pi/4}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz=\int_{-\pi/4}^{0}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz+\int_{0}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz
+z=-p
+\int_{-\pi/4}^{0}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz
+\int_{\pi/4}^{0}\sqrt{b^2+(a^2-b^2)\sin^2 (-4p)}\,(-dp)=\int_{0}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4p)}\,dp
+K=\int_{-\pi/4}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz=2\int_{0}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz
+K=2\int_{0}^{\pi/4}\sqrt{b^2+(a^2-b^2)\sin^2 (4z)}\,dz
+z=\pi/8-v
+K=2\int_{-\pi/8}^{\pi/8}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv
+K=2\int_{-\pi/8}^{0}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv+2\int_{0}^{\pi/8}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv
+v=-h
+\int_{-\pi/8}^{0}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv
+\int_{\pi/8}^{0}\sqrt{b^2+(a^2-b^2)\cos^2 (-4h)}\,(-dh)=\int_{0}^{\pi/8}\sqrt{b^2+(a^2-b^2)\cos^2 (4h)}\,dh
+K=2\int_{-\pi/8}^{0}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv+2\int_{0}^{\pi/8}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv
+K=4\int_{0}^{\pi/8}\sqrt{b^2+(a^2-b^2)\cos^2 (4v)}\,dv
+v=\pi/8-t/4
+K=4\int_{\pi/2}^{0}\sqrt{b^2+(a^2-b^2)\cos^2 (4(\pi/8-t/4))}\,(-dt/4)
+K=\int_{0}^{\pi/2}\sqrt{b^2+(a^2-b^2)\cos^2 (\pi/2-t)}\,dt
+K=\int_{0}^{\pi/2}\sqrt{b^2+(a^2-b^2)\sin^2 (t)}\,dt

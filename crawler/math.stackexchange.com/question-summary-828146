@@ -1,0 +1,14 @@
+\int_t^T(T-s)~dW_s
+ Var~(\int_t^T(T-s)~dW_s~)=\mathbb E~[~(~\int_t^T(T-s)~dW_s~)^2~]=\mathbb E~[~(\int_0^T(T-s)~1_{s\ge t}dW_s~~)^2~] 
+ \int_0^T \mathbb E [(T-s)1_{s\ge t}~]^2~ds 
+ =\int_t^T(T-s)^2ds 
+ [0,T]
+\int_0^T (T-s) \, dW_s 1_{s \geq t}
+\int_0^T 1_{s \geq t} \cdot (T-s) \, dW_s.
+f
+\int_0^T \mathbb{E}(f(s)^2) \, ds < \infty
+T>0
+f_{a,b} := f \cdot 1_{[a,b]}
+0 \leq a < b \leq T
+\mathbb{E}\left( \left|\int_a^b f(s) \, dW_s \right|^2 \right) = \mathbb{E} \left( \left| \int_0^T f_{a,b}(s) \, dW_s \right|^2 \right) = \int_0^T \mathbb{E}(f_{a,b}(s)^2) \, ds = \int_a^b \mathbb{E}(f(s)^2) \, ds.
+t \mapsto \left(\int_0^t f(s) \, dW_s\right)^2 - \int_0^t f(s)^2 \, ds

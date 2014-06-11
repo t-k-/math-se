@@ -1,0 +1,44 @@
+X_n
+n\ge 1)
+\{1,-1\}
+Y_n=\sum_{i=1}^n X_n
+X_n=1
+A_n
+ (A_n-A_0)-(B_n-B_0) = Y_n
+ (A_n-A_0)+(B_n-B_0) = n
+A_n = A_0 + (Y_n+n)/2
+A_n + B_n = n+A_0+B_0
+p_n= P(X_n=1) = \frac{A_{n-1}}{A_{n-1}+B_{n-1}} = \frac{1}{2}\frac{Y_{n-1}+n-1+2A_0}{n-1+A_0+B_0}
+\mu_n=E(X_n)
+ \mu_n= \frac{\alpha +\sum_{i=1}^{n-1}\mu_i}{\beta +n} 
+\alpha=A_0-B_0
+\beta = A_0+B_0-1
+\mu_n = \frac{\alpha}{\beta+1}=\frac{A_0-B_0}{A_0+B_0}
+E(Y_n)=n \frac{A_0-B_0}{A_0+B_0}
+A_n
+A_0 + n (\frac{A_0-B_0}{A_0+B_0}+\frac{1}{2})
+Y_n
+E(X_n X_m)
+\sigma_X^2=4 A_0 B_0 /(A_0+B_0)^2
+X_n
+\sigma_Y^2= n \sigma_X^2
+n^2 \sigma_X^2
+r=E(X_n X_m) = \frac{s+d^2}{  s(s+1)} \hskip{1cm} n\ne m, \;s=A_0+B_0, \; d=A_0-B_0
+E(Y_n^2)=n+n(n-1) r
+E(Y_n)=n d/s
+ {\rm{Var}}(Y_n)=n\frac{s^2-d^2}{s(s+1)}\left(\frac{n}{s} +1\right) \approx n^2 \frac{s^2-d^2}{s^2(s+1)}
+A_n
+\overline{A_n} \approx n \left(\frac{1}{2}+\frac{d}{s}\right)
+ {\rm Var}(A_n) \approx n^2 \frac{s^2-d^2}{4 s^2(s+1)}
+A_0=B_0=1
+d=0
+s=2
+\overline{A_n} =1+\frac{n}{2} \hskip{1cm} {\rm Var}(A_n) \approx n^2 \frac{1}{12}
+A_0=B_0=100
+\overline{A_n} =100+\frac{n}{2} \hskip{1cm} {\rm Var}(A_n) \approx n^2 \frac{1}{804}
+X_n
+A_n=np_a+A_0
+B_n=n(1-p_a)+B_0
+n
+A_0
+B_0

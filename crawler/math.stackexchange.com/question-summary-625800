@@ -1,0 +1,31 @@
+\Leftrightarrow
+\lambda x.x F T
+\lambda x y.x y F
+\mathtt{true} = \lambda x y.x
+\mathtt{false} = \lambda x y.y
+\Leftrightarrow
+p \Leftrightarrow q = (p \Rightarrow q) \land (q\Rightarrow p)
+p \Rightarrow q = \lnot p \lor q
+p \lor q = \lnot (\lnot p \land \lnot q)
+\mathtt{true}
+\mathtt{false}
+\Leftrightarrow
+\lnot
+ \lambda x y. x\, y\, (y\,\mathtt{false}\,\mathtt{true})
+ \lambda x y. x\, y\, (\lnot y)
+p = \mathtt{true}
+p \Leftrightarrow q
+q
+q
+p = \mathtt{true}
+p \Leftrightarrow q = q
+p = \mathtt{false}
+p \Leftrightarrow q
+q
+q
+if p =\mathtt{false}
+p \Leftrightarrow q = \lnot q
+\mathtt{true}
+\mathtt{false}
+\lambda x y.x\,y\,(\lnot y)
+\lambda x y . \mathbf{if}\, x\, \mathbf{then}\, y\, \mathbf{else}\, (\lnot y)

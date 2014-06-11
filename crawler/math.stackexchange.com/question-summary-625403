@@ -1,0 +1,12 @@
+p
+\text{li}(x)
+ R(x)=\sum_{p\leq x}\frac{\ln p}p-\ln x 
+ \int_0^x\frac{tR'(t)}{\ln t}dt 
+ \frac{xR(x)}{\ln x}-\int_0^x\sum_{p\leq t}\frac{\ln p}p\left(\frac1{\ln t}-\frac1{\ln^2 t}\right)dt+x-\text{li}(x) 
+t
+x
+ \sum_{p\leq t}\frac{\ln p}{p} 
+ p_1 \leq p_2 \leq\ldots\leq p_n\leq x, 
+ \begin{multline} \frac{xR(x)}{\ln x}- \sum_{k=1}^{n-1}\sum_{j=1}^k\frac{\ln p_j}{p_j}\int_{p_k}^{p_{k+1}}\left(\frac1{\ln t}-\frac1{\ln^2 t}\right)dt\\ - \sum_{j=1}^n\frac{\ln p_j}{p_j}\int_{p_n}^{x}\left(\frac1{\ln t}-\frac1{\ln^2 t}\right)dt + x-\text{li}(x), \end{multline} 
+ \begin{multline} \frac{xR(x)}{\ln x}- \sum_{k=1}^{n-1}\sum_{j=1}^k\frac{\ln p_j}{p_j}\left(\frac{p_{k+1}}{\ln p_{k+1}} - \frac{p_{k}}{\ln p_{k}}\right)\\ - \sum_{j=1}^n\frac{\ln p_j}{p_j}\left(\frac{x}{\ln x} - \frac{p_{n}}{\ln p_{n}}\right) + x -\text{li}(x), \end{multline} 
+ \begin{multline} - \sum_{k=1}^{n-1}\sum_{j=1}^k\frac{\ln p_j}{p_j}\left(\frac{p_{k+1}}{\ln p_{k+1}} - \frac{p_{k}}{\ln p_{k}}\right) + \sum_{j=1}^n\frac{\ln p_j}{p_j}\frac{p_{n}}{\ln p_{n}} -\text{li}(x). \end{multline} 

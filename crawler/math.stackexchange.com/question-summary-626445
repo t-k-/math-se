@@ -1,0 +1,14 @@
+\displaystyle{\frac15\int_0^1\left[v(1+v^2)^5-v^{11}\right]dv=\frac 15\left[\frac 12\cdot\frac 16(1+v^2)^6-\frac{1}{12}v^{12}\right]_0^1}
+\int x(1+x^2)^5-x^{11} \, \operatorname{d}\!x = \int x(1+x^2)^5 \, \operatorname{d}\!x - \int x^{11} \, \operatorname{d}\!x
+\int x^{11} \, \operatorname{d}\!x = \frac{1}{12}x^{12}+C
+\int x(1+x^2)^5 \, \operatorname{d}\!x = \frac{1}{12}(1+x^2)^6 + C
+\frac15\int_0^1\left[v(1+v^2)^5-v^{11}\right]dv=\frac15\int_0^1\left[\frac12(1+v^2)^5-\frac12(v^2)^5\right]d(v^2)
+u = v^2
+du = 2v\,dv
+\int_0^1 v(1 + v^2)^5 dv = \int_0^1 u^5(du/2) 
+1+v^2=t,vdv=(1/2)dt
+v(1+v^2)^5-v^{11}=\left(\frac 12\cdot\frac 16(1+v^2)^6-\frac{1}{12}v^{12}\right)'
+\int v(1+v^2)^5dv-\int v^{11}dv=I_1-I_2
+I_2=v^{12}/12
+I_1=\int v(1+v^2)^5dv
+I_1=(1/2)\int t^5dt=(1/2)(1/6)t^6

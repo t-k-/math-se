@@ -1,0 +1,10 @@
+\int_0^{2\pi} \cos^{2n}\theta d\theta
+z = e^{i\theta}
+d\theta = \frac{dz}{iz}
+\cos \theta = (z + z^{-1})/2
+\frac{1}{i2^{2n}}\int_{|z|=1} \frac{(z+z^{-1})^{2n}}{z}dz
+z = 0
+\frac{(z+z^{-1})^{2n}}{z} = \frac{1}{z}\sum_{t=0}^{2n}\binom{2n}{t}z^{2n-t}z^{-t} = \sum_{t=0}^{2n}\binom{2n}{t}z^{2n-2t-1}
+1/z
+\binom{2n}{n}
+\frac{2\pi i}{i2^{2n}}\binom{2n}{n} = \frac{\pi}{2^{2n-1}}\binom{2n}{n}

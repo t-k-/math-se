@@ -1,0 +1,38 @@
+X_t
+\mu
+\sigma^2
+\tau
+\tau:=\inf \left\{ t\geq0: X_t= b\right\}, \quad b\geq0 
+  E[\mathrm{e}^{-\lambda\tau}], \quad \lambda\geq0 
+\tau_b
+X_t=b\ge0
+\lambda>0
+e^{-\lambda\tau_b}=0
+X_t=b
+F_\lambda(b)=\text{E}\left[e^{-\lambda\tau_b}\right]
+F_\lambda(0)=1
+F_\lambda(b)
+b
+b>0
+X_T=x
+X_s<b
+s<T
+\hat{X}_s=X_{T+s}-x
+\hat\tau_b=\tau_{x+b}-T
+T=dt
+dt
+\alpha_1e^{-\beta_1b}+\alpha_2e^{-\beta_2b}
+\beta_i
+\lambda-\mu\beta-\sigma^2\beta^2/2=0
+F_\lambda(b)
+b
+\beta
+F_\lambda(0)=1
+\lambda=0
+X_t=b
+1
+\mu\ge0
+ \text{E}_T\left[e^{-\lambda\tau_b}\middle|X_T=x\right] =\text{E}\left[e^{-\lambda(\hat\tau_{b-x}+T)}\right] =e^{-\lambda T}\cdot\text{E}\left[e^{-\lambda\hat\tau_{b-x}}\right] =e^{-\lambda T}\cdot F_\lambda(b-x). 
+ \begin{split} F_\lambda(b) =&\text{E}\left[\text{E}_{dt}\left[e^{-\lambda\tau_b}\middle|X_{dt}\right]\right] =\text{E}\left[e^{-\lambda\,dt}\cdot F_\lambda(b-X_{dt})\right] \\ =&F_\lambda(b)+dt\cdot\left\{-\lambda F_\lambda(b)     -F_\lambda'(b)\,\text{E}[X_{dt}]     +\tfrac{1}{2}F_\lambda''(b)\,\text{E}[X_{dt}^2]   \right\} \\ =&F_\lambda(b)+dt\cdot\left\{-\lambda F_\lambda(b)     -\mu F_\lambda'(b)+\tfrac{1}{2}\sigma^2 F_\lambda''(b)   \right\} \end{split} 
+ \lambda F_\lambda(b)+\mu F_\lambda'(b)-\tfrac{1}{2}\sigma^2 F_\lambda''(b)=0. 
+ F_\lambda(b)=e^{-\beta b} \text{ where } \beta=\sqrt{\frac{\mu^2}{\sigma^4}+\frac{2\lambda}{\sigma^2}}-\frac{\mu}{\sigma^2}. 

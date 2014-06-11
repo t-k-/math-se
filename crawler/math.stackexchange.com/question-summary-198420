@@ -1,0 +1,11 @@
+z\in C
+n^{th}
+F
+z
+F=\frac{\exp(-iTz)}{z}\prod_{k=1}^N(1-\frac{z}{z_k})^{-1}
+\frac{d^n}{dz^n}F
+j
+\frac 1{1-\frac z{z_k}} = \frac{z_k}{z_k - z}
+ \frac{d^j}{dz^j} \frac{z_k}{z_k - z} = \frac{j!\cdot z_k}{(z_k - z)^{j+1}} 
+  \frac{d^j}{dz^j} \prod_{k=1}^N \frac{z_k}{z_k - z} =   \sum_{j_1 + \cdots + j_N = j} \frac{j!}{j_1! \cdots j_N!} \prod_{k=1}^N \frac{d^{j_k}}{dz^{j_k}} \frac{z_k}{z_k - z}    = \sum_{j_1 + \cdots + j_N = j} \frac{j!}{j_1! \cdots j_N!} \prod_{k=1}^N \frac{{j_k}! z_k}{(z_k - z)^{j_k + 1}}  
+ \frac{d^n}{dz^n}F = \sum_{k_1 + k_2 + k_3 = n} \frac{n!}{k_1!k_2!k_3!} (-iT)^{k_1}\exp(-iTz) (-1)^{k_2}k_2! \frac 1{z^{k_2+1}} \sum_{j_1 + \cdots + j_N = k_3} \frac{k_3!}{j_1! \cdots j_N!} \prod_{k=1}^N \frac{{j_k}! z_k}{(z_k - z)^{j_k + 1}}. 

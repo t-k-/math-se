@@ -1,0 +1,22 @@
+\frac{x^n - y^n}{x - y} = x^{n - 1} + yx^{n - 2} + \ldots + y^{n - 1}
+\frac{x^n - y^n}{x - y} = x^{n - 1} + yx^{n - 2} + \ldots + y^{n - 1} = \sum_{i + j = n - 1}x^iy^j
+\sum_{i_1 + i_2 + i_3 + ... +i_k = n - 1}{x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k}
+\sum_{i + j + k = n - 1}{x}^{i}{y}^{j}{z}^{k} = \sum_{k=0}^{n - 1}{z}^{k}  \sum_{i + j  = n - k - 1}{x}^{i}{y}^{j} = \sum_{k=0}^{n - 1}{z}^{k}  \frac{x^{n - k} - y^{n - k}}{x -y} = \frac{1}{x-y} \left(\frac{x^{n + 1} - z^{n + 1}}{x - z} - \frac{y^{n + 1} - z^{n + 1}}{y - z}\right)
+x^{n + k - 2}
+x_1, x_2, \ldots, x_k
+\mathbf x = (x_1,\dotsc,x_r)
+ \sum_{|I|=n} \mathbf{x}^I = \sum_i\frac{x_i^{n}}{\prod_{j\neq i}(1-\frac{x_j}{x_i})}. 
+ x^n = x^n, 
+ \sum_{i+j = n} x^i y^j = \frac{x^{n+1}}{x-y} + \frac{y^{n+1}}{y-x}, 
+ \sum_{i+j+k=n} x^i y^j z^k= \frac{x^{n+2}}{(x-y)(x-z)} + \frac{y^{n+2}}{(y-x)(y-z)} + \frac{z^{n+2}}{(z-x)(z-y)}. 
+\sum_{i_1 + i_2 + i_3 + ... +i_k = n}{x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k} = f[x_1,x_2,..,x_k]
+f(x) = x^{n + k - 1}
+\sum_{i_1 + i_2 + i_3 + ... +i_k + i_{k + 1} = n}{x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k}{x_{k+1}}^{i_{k+1}} = g[x_1,x_2,..,x_k,x_{k+1}]
+g(x) = x^{n + k}
+\sum_{i_1 + i_2 + i_3 + ... +i_k = n + 1}{x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k} = g[x_1,x_2,..,x_k]
+\sum_{i_1 + i_2 + i_3 + ... +i_k = n + 1}{x_{k+1}}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k} = g[x_{k+1},x_2,..,x_k] = g[x_2,..,x_k,x_{k+1}]
+ g[x_1,..,x_k,x_{k+1}] = \frac{g[x_1,..,x_k] - g[x_2,..,x_k,x_{k+1}]}{x_1 - x_{k+1}}
+g[x_1,..,x_k,x_{k+1}] =
+ \frac{1}{x_1 - x_{k + 1}}\cdot\sum_{i_1 + i_2 + i_3 + ... +i_k = n + 1}\left({x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k} - {x_{k+1}}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k}\right) = \sum_{i_1 + i_2 + i_3 + ... +i_k = n + 1}\frac{{x_1}^{i_1} - {x_{k + 1}}^{i_1}}{x_1 - x_{k + 1}}  \left({x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k} \right)
+ = \sum_{i_1 + i_2 + i_3 + ... +i_k = n + 1}\sum_{j_1 + j_2 = i_1 - 1}  {x_1}^{j_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k}{x_{k+1}}^{j_2} 
+= \sum_{i_1 + i_2 + i_3 + ... +i_k + i_{k + 1} = n}{x_1}^{i_1}{x_2}^{i_2}{x_3}^{i_3} \cdots {x_k}^{i_k}{x_{k+1}}^{i_{k+1}}

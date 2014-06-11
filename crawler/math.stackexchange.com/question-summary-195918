@@ -1,0 +1,16 @@
+\frac{1}{2}
+\frac{1}{4}
+\frac{1}{4n-8}
+\geq
+X \in \{1,2,\dots,n\}
+p_X (k) = \left\{\begin{array}{cl} \frac{1}{4 n - 8} & \textrm{if} \quad{} k \in \{1,2,\dots,n-2\}\\ \frac{1}{4} & \textrm{if} \quad{} k = n-1\\ \frac{1}{2} & \textrm{if} \quad{} k = n\end{array}\right.
+n \geq 3
+\displaystyle\sum_{k=1}^{n-2} p_X (k) = \frac{n-2}{4 n - 8} = \frac{1}{4}
+\displaystyle\sum_{k=1}^{n} p_X (k) = \frac{1}{4} + \frac{1}{4} + \frac{1}{2} = 1
+X
+\mathbb{E} (X) = \displaystyle\sum_{k=1}^{n} k \, p_X (k) = \left[\frac{1}{4 n - 8}\displaystyle\sum_{k=1}^{n-2} k \right] + \frac{n-1}{4} + \frac{n}{2} = \frac{7 n - 3}{8}
+\frac 12
+\frac 14
+\frac 1{4n-8}
+n
+\frac 12 \cdot 1+\frac 14\cdot 2+\frac 1{4n-8}\sum_{i=3}^n i

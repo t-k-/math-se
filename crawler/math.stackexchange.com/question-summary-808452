@@ -1,0 +1,13 @@
+(1)
+(2)
+(2)
+f(z)=\frac{1}{(1+z^2)(1+r^2z^2)(1+r^4z^2)...}
+z=\pm i 1/r^{n},n\in\Bbb N_0
+\large\int_0^\infty\frac{1}{(1+x^2)(1+r^2x^2)(1+r^4x^2)...}dx=\frac{1}{2}\int_{-\infty}^\infty\frac{1}{(1+x^2)(1+r^2x^2)(1+r^4x^2)...}dx
+-\infty
++\infty
+z=i\frac{1}{r}
+\operatorname{Res}(f(z),z=\frac{i}{r^{n}})=\large\lim_{z\to i\frac{1}{r^{n}}}(z-i\frac{1}{r^{n}})f(z)=\large\lim_{z\to i\frac{1}{r^{n}}}\frac{1}{r^n}(r^nz-i)f(z)
+=\lim_{z\to i\frac{1}{r^{n}}}\frac{1}{r^n(r^nz+i)}\prod_{j=0,j\ne n}^\infty\frac{1}{(1+x^{2}r^{2j})}
+=\large\frac{1}{2ir^n}\prod_{j=0,j\ne n}^\infty\frac{1}{(1-r^{2j-2n})}
+\frac{1}{2}\int_{-\infty}^\infty\frac{1}{(1+x^2)(1+r^2x^2)(1+r^4x^2)...}dx=\frac{1}{2}2\pi i\sum \operatorname{Res}(f)=\frac{1}{2}\pi i\sum_{n=0}^\infty\frac{1}{ir^n}\prod_{j=0,j\ne n}^\infty\frac{1}{(1-r^{2j-2n})}

@@ -1,0 +1,6 @@
+A \cap B^c \subseteq  (A \cap B)^c
+A \cap B^c \subseteq  (A \cap B)^c \leftrightarrow  A \cap B^c \subseteq  A^c \cup B^c
+\text{Goal: }\;A \cap B^c \subseteq  (A \cap B)^c
+\begin{align} x \in (A\cap B^c) &\iff x \in A \land x\notin B\\ \\ &\implies x \in B^c \\ \\ & \implies x \in A^c \lor x\in B^c\\ \\  &\implies x \in (A^c\cup B^c)\\ \\  & \implies x \in (A\cap B)^c \end{align}
+A \cap B^c \subseteq  (A \cap B)^c \iff (A \cap B^c)\cup  (A \cap B)^c = (A \cap B)^c 
+ (A \cap B^c)\cup  (A \cap B)^c = (A \cap B^c)\cup  (A^c \cup B^c) = (A \cup  A^c \cup B^c) \cap (B^c \cup  A^c \cup B^c)   =  \Omega \cap (B^c \cup  A^c )  = (B^c \cup  A^c ) =  (A \cap B)^c 

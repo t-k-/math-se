@@ -1,0 +1,12 @@
+X
+  F(x) = \begin{cases} 0 & \text{if } x < 0; \\        x/2  & \text{if } 0 \leq  x < 1; \\        2/3 & \text{if } 1 \leq  x < 2; \\        11/12  & \text{if } 2 \leq  x < 3; \\        1      &      \text{if } x \geq 3.\end{cases} 
+\mathbb{P}(X<3)
+\frac{11}{12}
+\mathbb{P}(X=1)
+\frac{2}{3} - \frac{1}{2} = \frac{1}{6}
+F(x) = \mathbb{P}(X \leqslant x)
+F(x) = \lim\limits_{\epsilon \to 0^+} F(x+\epsilon)
+     \mathbb{P}(X=x) = F(x) - \lim\limits_{\epsilon \to 0^+} F(x-\epsilon) 
+    \mathbb{P}(X<x) = \mathbb{P}(X \leqslant x) - \mathbb{P}(X=x) = \lim\limits_{\epsilon \to 0^+} F(x-\epsilon) 
+     \mathbb{P}(X < 3) = \lim_{\epsilon \to 0^+} F(3-\epsilon) = \lim_{\epsilon \to 0^+} \frac{11}{12} = \frac{11}{12} 
+     \mathbb{P}(X = 1) = F(1) - \lim_{\epsilon \to 0^+} F(1-\epsilon) = \frac{2}{3} - \lim_{\epsilon \to 0^+} \frac{1-\epsilon}{2} = \frac{1}{6} 
