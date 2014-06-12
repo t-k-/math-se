@@ -22,10 +22,10 @@ The special characteristic of mathematical language, compared with normal text c
 \category{H.3}{Information Search and Retrieval}{Miscellaneous}
 \terms{Algorithms}
 
-\keywords{mathematical searching, language processing, search engine} 
+\keywords{mathematical searching, language processing, search engine}
 
 \section{Introduction}
-Unlike normal text content, mathematical language, by its nature, has many differences from normal text content. First, one mathematical formula may use different notations and thus has different representations.\footnote{An example, $a^2 + b^2 = c^2$ can be described as $x^2 + y^2 = z^2$ as well.} Second, two semantically different mathematical document can contain the same number of terms.\footnote{Consider $ax+(b+c)$ and $(a+b)x+c$.} Also, the order of terms in math language sometimes matters but can be mutable in other cases, which implies it is impractical to uniformly apply one single language model to mathematical content. \\
+Unlike normal text content, mathematical language, by its nature, has many differences from normal text content. First, one mathematical formula may use different notations and thus has different representations.\footnote{An example, $a^2 + b^2 = c^2$ can be described as $x^2 + y^2 = z^2$ as well.} Second, two semantically different mathematical document can contain the same number of terms.\footnote{Consider $ax+(b+c)$ and $(a+b)x+c$.} Also, the order of terms in math language sometimes matters but can be mutable in other cases, which implies it is impractical to uniformly apply one single language model to mathematical content.
 
 Currently existing and working mathematical searching systems that we can find online, primarily are \textit{WolfraAlpha}\footnote{http://www.wolframalpha.com/}, \textit{(uni)quation}\footnote{http://uniquation.com/} and \textit{MWS}\footnote{http://search.mathweb.org/}. \textit{WolfraAlpha} mainly focus on computation and evaluation of mathematical equation input rather than searching the similar equation. \textit{(uni)quation} is able to solve the problems addressed above in this section but it is not under development and the model and method it uses is currently unclear.\footnote{http://rystsov.info/2009/05/01/uniquation.html} \textit{WMS} uses Term indexing\cite{McCune, Stickel} which we are not using here, to discriminate the mathematical structures.
 
@@ -79,6 +79,8 @@ S_k &= \sum_{i}\sum_{j}\,D_{i,j}
 \end{align}
 Where $\alpha$ is a large constant number to prioritize the first term in \eqref{shi}.
 
+\subsection{WEB front-end}
+The WEB interface contains a homepage for user to input query in an input box.
 \section{Conclusions}
 This paragraph will end the body of this sample document.
 Remember that you might still have Acknowledgments or
