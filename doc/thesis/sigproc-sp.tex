@@ -1,4 +1,5 @@
 \documentclass{acm_proc_article-sp}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -70,13 +71,13 @@ The storage of mathematical formulas in our system, contains all the branch word
 \subsection{Comparing and Scoring}
 In our system, comparing two pieces of mathematical content is essentially to compare all the branch words from one content with those of the other, calculate the similarity degree between two branch words. In terms of search system which rank-orders the documents matching a query, a score with respect to the query for each matching document is computed by sum the similarity degree for each related document in the document collection, then rank all the related documents using the sum score.
 
-Here we give our formulas to both calculate the difference degree between two branch words and score each related document. For the detailed formula, we have to put some notations: Let $m$ be the number of continuous matches between two branches from the beginning of the branch word, $n$ be number of same branch word, $l$ be the length of branch word. Then for query branch word $i$ and document branch word $j$ , we use:
-$$
-\left\{ \begin{array}{ll}
-s_{i,j} &= \min(n_i, n_j) \times \frac{m}{l_i} + \frac{1}{|n_i - n_j| + 1} \times \frac{m}{\max(l_i, l_j)} \\
-S &= \sum_{k \in T}{s^{k}_{i,j}}
-\end{array} \right.
-$$
+For the detailed caculation, we put some notations here: Let $m$ be the number of continuous weight matches between two branches from the beginning of the branch word. For one branch word $b$, let $n_b$ be number of same branch word from document that extracts $b$, $l_b$ be the length of branch word $b$. Then for all query branch word $i$ and all document branch word $j$. The formulas we use to calculate both difference degree $D$ between two branch words and the score $S_k$ for a related document $k$ are:
+\begin{align}
+\label{shi}
+D_{i,j} &= \alpha \cdot \min(n_i, n_j) \cdot \frac{m}{l_i} + \frac{1}{\lvert n_i - n_j \rvert + 1} \cdot \frac{m}{\max(l_i, l_j)} \\
+S_k &= \sum_{i}\sum_{j}\,D_{i,j}
+\end{align}
+Where $\alpha$ is a large constant number to prioritize the first term in \eqref{shi}.
 
 \section{Conclusions}
 This paragraph will end the body of this sample document.
