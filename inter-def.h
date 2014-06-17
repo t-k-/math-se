@@ -3,7 +3,7 @@
 
 #define STR_BUFLEN 2048
 
-//#define _MY_DEBUG
+#define _MY_DEBUG
 
 #ifdef _MY_DEBUG
 #define OUTPUT(...) \

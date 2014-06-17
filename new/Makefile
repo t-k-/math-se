@@ -9,11 +9,14 @@ endef
 all: $(OUTPUT)
 
 $(OUTPUT): y.tab.h y.tab.c lex.yy.c
-	gcc $(filter %.c, $^) -ll -o $@
+	gcc -c $(filter %.c, $^) -include $< -I .. -I ../inc
+	$(call cl_insert, *.o)
+	gcc *.o ../mathtree.o ../tree.o -ll -o $@
 	$(call cl_insert, $@)
 
 y.tab.h y.tab.c: *.y
-	yacc -d $^
+	yacc -d $^ --verbose
+	$(call cl_insert, y.output)
 	$(call cl_insert, y.tab.h)
 	$(call cl_insert, y.tab.c)
 
