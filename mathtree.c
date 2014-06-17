@@ -29,6 +29,9 @@ static char *str_type(int t_num)
 		case MT_VAR:
 			sprintf(out, "var");
 			break;
+		case MT_CONST:
+			sprintf(out, "const");
+			break;
 		case MT_SQRT:
 			sprintf(out, "sqrt");
 			break;
@@ -85,7 +88,7 @@ TREE_IT_CALLBK(print)
 	}
 
 	OUTPUT("──  %s (%d ", p->name, p->weight);
-	str_type(p->type);
+	OUTPUT("%s", str_type(p->type));
 	OUTPUT(")\n");
 
 	if (depth_flag[pa_depth] == depth_going_end)

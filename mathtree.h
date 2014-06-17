@@ -8,6 +8,7 @@ enum {
 	MT_FRAC,
 	MT_FACT,
 	MT_VAR,
+	MT_CONST,
 	MT_SQRT,
 	MT_ABS,
 	MT_NEG,

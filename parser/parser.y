@@ -21,7 +21,8 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
-%type <p> tex term factor atom
+%token <s> CONST DIV
+%type <p> tex term factor atom 
 
 %right EQ_CLASS
 %left '+' '-'
@@ -93,34 +94,26 @@ factor : atom
        SUB_CONS(mktoken("!", MT_FACT), $1, NULL);
        root = $$ = father;
        }
-       | factor script
+       | factor '_' atom 
        { 
-       if ($2->type == MT_EMPTY) {
-         SUB_CONS($1, NULL, NULL);
-         free($2);
-         root = $$ = father;
-       } else {
-         SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $2);
-         root = $$ = father;
+       SUB_CONS($1, NULL, NULL);
+       root = $$ = father;
        }
+       | factor '^' atom 
+       { 
+       SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $3);
+       root = $$ = father;
        }
        ;
-
-script : 
-       | '_' atom %prec 'P'
-       { 
-       SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
-       root = $$ = father;
-       }
-       | '^' atom %prec 'P'
-       { 
-       SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
-       root = $$ = father;
-       }
 
 atom : VAR
      {
      SUB_CONS(mktoken($1, MT_VAR), NULL, NULL);
+     root = $$ = father;
+     }
+     | CONST
+     {
+     SUB_CONS(mktoken($1, MT_CONST), NULL, NULL);
      root = $$ = father;
      }
      | '(' tex ')'

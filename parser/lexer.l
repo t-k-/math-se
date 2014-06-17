@@ -79,17 +79,17 @@ void mkstr(char *);
 \\log           { mkstr(yytext); return SUM_CLASS; }
 \\sgn           { mkstr(yytext); return SUM_CLASS; }
 
-\/              { mkstr(yytext); return FRAC; }
-\\div           { mkstr(yytext); return FRAC; }
+\/              { mkstr(yytext); return DIV; }
+\\div           { mkstr(yytext); return DIV; }
 \\frac          { mkstr(yytext); return FRAC; }
 \\dfrac         { mkstr(yytext); return FRAC; }
 
 \\sqrt          { mkstr(yytext); return SQRT; }
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
+[0-9]+\.?[0-9]* { mkstr(yytext); return CONST; } 
 \\ldots         { mkstr(yytext); return VAR; }
 \\cdots         { mkstr(yytext); return VAR; }
-[0-9]+\.?[0-9]* { mkstr(yytext); return VAR; } 
 \\partial       { mkstr(yytext); return VAR; } 
 \\alpha         { mkstr(yytext); return VAR; } 
 \\[Tt]heta      { mkstr(yytext); return VAR; } 
