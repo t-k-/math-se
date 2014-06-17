@@ -4,7 +4,7 @@
 #include <string.h> 
 #include "mathtree.h"
 
-void yyerror(char *);
+void yyerror(const char *);
 extern struct token_t *root;
 
 #define SUB_CONS(_father, _sonl, _sonr) \
@@ -18,30 +18,31 @@ extern struct token_t *root;
     char *s;
 }
 
-%token <s> ABS_R ABS_L NEG EQ_CLASS SUM_CLASS FRAC SQRT VAR
+%error-verbose
+
+%token <s> ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
 %type <p> tex term factor atom
 
 %right EQ_CLASS
 %left '+' '-'
-%nonassoc NEG '!'
+%nonassoc '!'
 %right 'P' '^' '_'
 %left DIV
 %nonassoc '{' '}' '(' ')' ABS_L ABS_R
 %%
 
-doc :
-    | doc tex '\n'
-    {
-    if (root) { matree_print(root); matree_release(root); }
-    }
-    ;
+doc : | doc piece;
 
-tex : 
-    {
-    SUB_CONS(mktoken("EMPTY", MT_VAR), NULL, NULL);
-    root = $$ = father;
-    }
-    | term 
+sep : '\n' | EQ_CLASS;
+
+piece : tex sep 
+      {
+      if (root) { matree_print(root); matree_release(root); }
+      }
+      | '\n'
+      ;
+
+tex : term 
     {
     SUB_CONS($1, NULL, NULL);
     root = $$ = father;
@@ -63,6 +64,11 @@ tex :
 term : factor 
      { 
      SUB_CONS($1, NULL, NULL);
+     root = $$ = father;
+     }
+     | '-' factor
+     { 
+     SUB_CONS(mktoken("-", MT_NEG), $2, NULL);
      root = $$ = father;
      }
      | term factor 
@@ -87,7 +93,30 @@ factor : atom
        SUB_CONS(mktoken("!", MT_FACT), $1, NULL);
        root = $$ = father;
        }
+       | factor script
+       { 
+       if ($2->type == MT_EMPTY) {
+         SUB_CONS($1, NULL, NULL);
+         free($2);
+         root = $$ = father;
+       } else {
+         SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $2);
+         root = $$ = father;
+       }
+       }
        ;
+
+script : 
+       | '_' atom %prec 'P'
+       { 
+       SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
+       root = $$ = father;
+       }
+       | '^' atom %prec 'P'
+       { 
+       SUB_CONS(mktoken("_", MT_EMPTY), NULL, NULL);
+       root = $$ = father;
+       }
 
 atom : VAR
      {
@@ -99,14 +128,19 @@ atom : VAR
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
+     | '{' tex '}'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
      | ABS_L tex ABS_R
      {
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
-     | FRAC '{' tex '}' '{' tex '}'
+     | FRAC atom atom 
      { 
-     SUB_CONS(mktoken("/", MT_FRAC), $3, $6);
+     SUB_CONS(mktoken("/", MT_FRAC), $2, $3);
      root = $$ = father;
      }
      | SQRT '[' tex ']' atom 
@@ -124,15 +158,15 @@ atom : VAR
 %%
 struct token_t *root = NULL;
 
-void yyerror(char *ps) 
+void yyerror(const char *ps) 
 {
-	printf("err: %s \n", ps);
+	printf("[ %s ]\n", ps);
 }
 
 int main(int argc, char *argv[]) 
 {
 	yyparse();
 
-	printf("goodbye~\n");
+	printf("[ goodbye~ ]\n");
 	return 0;
 }

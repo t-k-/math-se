@@ -32,7 +32,7 @@ void mkstr(char *);
 \\right"|"      { return ABS_R; }
 \\left"|"       { return ABS_L; }
 
-\\neg           { return NEG; }
+\\neg           { return '-'; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 \\approx        { mkstr(yytext); return EQ_CLASS; }
