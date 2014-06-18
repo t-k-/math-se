@@ -62,6 +62,12 @@ static char *str_type(int t_num)
 		case MT_SU_SCRIPT:
 			sprintf(out, "sus");
 			break;
+		case MT_SUB_SCRIPT:
+			sprintf(out, "subs");
+			break;
+		case MT_SUP_SCRIPT:
+			sprintf(out, "sups");
+			break;
 		case MT_EMPTY:
 			sprintf(out, "empty");
 			break;

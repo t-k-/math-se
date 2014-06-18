@@ -27,7 +27,7 @@ extern struct token_t *root;
 %right EQ_CLASS
 %left '+' '-'
 %nonassoc '!'
-%right 'P' '^' '_'
+%right '^' '_'
 %left DIV
 %nonassoc '{' '}' '(' ')' ABS_L ABS_R
 %%
@@ -178,24 +178,36 @@ atom : VAR
      }
      ;
 
-script : '_' atom %prec 'P'
+script : '_' atom
        { 
-       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, NULL);
+       struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
+       matree_attach($2, sub);
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), sub, NULL);
        root = $$ = father;
        }
-       | '^' atom %prec 'P'
+       | '^' atom
        { 
-       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, NULL);
+       struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
+       matree_attach($2, sup);
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), NULL, sup);
        root = $$ = father;
        }
        | '_' atom '^' atom
        { 
-       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, $4);
+       struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
+       struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
+       matree_attach($2, sub);
+       matree_attach($4, sup);
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), sub, sup);
        root = $$ = father;
        }
        | '^' atom '_' atom
        { 
-       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, $4);
+       struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
+       struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
+       matree_attach($4, sub);
+       matree_attach($2, sup);
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), sub, sup);
        root = $$ = father;
        }
        ;
