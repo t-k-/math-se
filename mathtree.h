@@ -16,6 +16,7 @@ enum {
 	MT_CONST,
 	MT_SQRT,
 	MT_ABS,
+	MT_EVA_AT,
 	MT_NEG,
 	MT_SU_SCRIPT,
 	MT_EMPTY,

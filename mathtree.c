@@ -53,6 +53,9 @@ static char *str_type(int t_num)
 		case MT_ABS:
 			sprintf(out, "abs");
 			break;
+		case MT_EVA_AT:
+			sprintf(out, "eval");
+			break;
 		case MT_NEG:
 			sprintf(out, "neg");
 			break;

@@ -20,9 +20,9 @@ extern struct token_t *root;
 
 %error-verbose
 
-%token <s> ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
+%token <s> EVA_AT ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY
-%type <p> tex term factor atom 
+%type <p> tex term factor atom script
 
 %right EQ_CLASS
 %left '+' '-'
@@ -94,20 +94,10 @@ factor : atom
        SUB_CONS(mktoken("!", MT_FACT), $1, NULL);
        root = $$ = father;
        }
-       | factor '_' atom 
+       | factor script
        { 
-       SUB_CONS($1, NULL, NULL);
+       SUB_CONS($2, $1, NULL);
        root = $$ = father;
-       }
-       | factor '^' atom 
-       { 
-       if ($1->type == MT_SUM_CLASS) {
-         SUB_CONS($1, NULL, NULL);
-         root = $$ = father;
-       } else {
-         SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $3);
-         root = $$ = father;
-       }
        }
        ;
 
@@ -119,6 +109,11 @@ atom : VAR
      | CONST
      {
      SUB_CONS(mktoken($1, MT_CONST), NULL, NULL);
+     root = $$ = father;
+     }
+     | EVA_AT 
+     {
+     SUB_CONS(mktoken("|", MT_EVA_AT), NULL, NULL);
      root = $$ = father;
      }
      | '(' tex ')'
@@ -133,7 +128,7 @@ atom : VAR
      }
      | ABS_L tex ABS_R
      {
-     SUB_CONS($2, NULL, NULL);
+     SUB_CONS(mktoken("||", MT_ABS), $2, NULL);
      root = $$ = father;
      }
      | FRAC atom atom 
@@ -182,7 +177,28 @@ atom : VAR
      root = $$ = father;
      }
      ;
-	
+
+script : '_' atom %prec 'P'
+       { 
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, NULL);
+       root = $$ = father;
+       }
+       | '^' atom %prec 'P'
+       { 
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, NULL);
+       root = $$ = father;
+       }
+       | '_' atom '^' atom
+       { 
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, $4);
+       root = $$ = father;
+       }
+       | '^' atom '_' atom
+       { 
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $2, $4);
+       root = $$ = father;
+       }
+       ;
 %%
 struct token_t *root = NULL;
 

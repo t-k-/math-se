@@ -17,20 +17,15 @@ void mkstr(char *);
 ")"|"\\}"       { return ')'; }
 "{"|"}"         { return yytext[0]; }
 "["|"]"         { return yytext[0]; }
-"|"|"\|"        { 
-		int save = abs_toggle;
-		abs_toggle = !abs_toggle;
-		if (save)
-			return ABS_R; 
-		else
-			return ABS_L; 
-                }
 \\r[vV]ert      { return ABS_R; }
 \\l[vV]ert      { return ABS_L; }
 \\rangle        { return ABS_R; }      
 \\langle        { return ABS_L; }
 \\right"|"      { return ABS_R; }
 \\left"|"       { return ABS_L; }
+\\right"\\|"     { return ABS_R; }
+\\left"\\|"      { return ABS_L; }
+"|"             { return EVA_AT; }
 
 \\neg           { return '-'; }
 
@@ -60,6 +55,7 @@ void mkstr(char *);
 \\int           { mkstr(yytext); return SUM_CLASS; }
 \\iint          { mkstr(yytext); return SUM_CLASS; }
 \\iiint         { mkstr(yytext); return SUM_CLASS; }
+\\iiiint        { mkstr(yytext); return SUM_CLASS; }
 \\bigodot       { mkstr(yytext); return SUM_CLASS; }
 \\biguplus      { mkstr(yytext); return SUM_CLASS; }
 \\prod          { mkstr(yytext); return SUM_CLASS; }
@@ -69,7 +65,6 @@ void mkstr(char *);
 \\bigcap        { mkstr(yytext); return SUM_CLASS; }
 \\bigotimes     { mkstr(yytext); return SUM_CLASS; }
 \\bigwedge      { mkstr(yytext); return SUM_CLASS; }
-\\bigvee        { mkstr(yytext); return SUM_CLASS; }
 \\sum           { mkstr(yytext); return SUM_CLASS; }
 \\bigcup        { mkstr(yytext); return SUM_CLASS; }
 \\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
@@ -106,30 +101,47 @@ void mkstr(char *);
 \\pi            { mkstr(yytext); return PI; } 
 \\infty         { mkstr(yytext); return INFTY; }
 ∞               { mkstr(yytext); return INFTY; }
+
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
-\\alpha         { mkstr(yytext); return VAR; } 
-\\[Tt]heta      { mkstr(yytext); return VAR; } 
-\\tau           { mkstr(yytext); return VAR; } 
-\\beta          { mkstr(yytext); return VAR; } 
-\\[Pp]i         { mkstr(yytext); return VAR; } 
-\\[Uu]psilon    { mkstr(yytext); return VAR; } 
+\\Pi            { mkstr(yytext); return VAR; } 
+\\[Aa]lpha      { mkstr(yytext); return VAR; } 
+\\[Bb]eta       { mkstr(yytext); return VAR; } 
 \\[Gg]amma      { mkstr(yytext); return VAR; } 
-\\[Pp]hi        { mkstr(yytext); return VAR; } 
 \\[Dd]elta      { mkstr(yytext); return VAR; } 
-\\rho           { mkstr(yytext); return VAR; } 
-\\varphi        { mkstr(yytext); return VAR; } 
-\\epsilon       { mkstr(yytext); return VAR; } 
+\\[Ee]psilon    { mkstr(yytext); return VAR; } 
+\\[Zz]eta       { mkstr(yytext); return VAR; }
+\\[Ee]ta        { mkstr(yytext); return VAR; } 
+\\[Tt]heta      { mkstr(yytext); return VAR; } 
+\\[Ii]ota       { mkstr(yytext); return VAR; }
+\\[Kk]appa      { mkstr(yytext); return VAR; }
 \\[Ll]ambda     { mkstr(yytext); return VAR; } 
-\\[Pp]si        { mkstr(yytext); return VAR; } 
-\\[Ss]igma      { mkstr(yytext); return VAR; } 
-\\mu            { mkstr(yytext); return VAR; } 
-\\varepsilon    { mkstr(yytext); return VAR; } 
-\\zeta          { mkstr(yytext); return VAR; } 
-\\nu            { mkstr(yytext); return VAR; } 
-\\varsigma      { mkstr(yytext); return VAR; } 
-\\[Oo]mega      { mkstr(yytext); return VAR; } 
-\\eta           { mkstr(yytext); return VAR; } 
+\\[Mm]u         { mkstr(yytext); return VAR; } 
+\\[Nn]u         { mkstr(yytext); return VAR; } 
 \\[Xx]i         { mkstr(yytext); return VAR; } 
+\\[Oo]micron    { mkstr(yytext); return VAR; }
+\\[Rr]ho        { mkstr(yytext); return VAR; } 
+\\[Ss]igma      { mkstr(yytext); return VAR; } 
+\\[Tt]au        { mkstr(yytext); return VAR; } 
+\\[Uu]psilon    { mkstr(yytext); return VAR; } 
+\\[Pp]hi        { mkstr(yytext); return VAR; } 
+\\[Cc]hi        { mkstr(yytext); return VAR; } 
+\\[Pp]si        { mkstr(yytext); return VAR; } 
+\\[Oo]mega      { mkstr(yytext); return VAR; } 
+
+\\varepsilon    { mkstr(yytext); return VAR; } 
+\\vartheta      { mkstr(yytext); return VAR; } 
+\\varkappa      { mkstr(yytext); return VAR; } 
+\\varpi         { mkstr(yytext); return VAR; }
+\\varrho        { mkstr(yytext); return VAR; }
+\\varsigma      { mkstr(yytext); return VAR; } 
+\\varphi        { mkstr(yytext); return VAR; } 
+
+\\begin\{array\}\{.*\}  {} 
+\\end\{array\}          {} 
+\\begin\{align\}\{.*\}  {} 
+\\end\{align\}          {} 
+\\begin\{alignat\}\{.*\}  {} 
+\\end\{alignat\}          {} 
 
 \\[a-zA-Z]+     {/* omit undefined control sequence */}
 [ \t]+          {}
