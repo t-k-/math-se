@@ -98,22 +98,22 @@ TREE_IT_CALLBK(print)
 	for (i = 0; i<pa_depth; i++) {
 		switch (depth_flag[i + 1]) {
 		case depth_end:
-			OUTPUT("   ");
+			OUTPUT("    ");
 			break;
 		case depth_begin:
-			OUTPUT("  |");
+			OUTPUT("   │");
 			break;
 		case depth_going_end:
-			OUTPUT("  └");
+			OUTPUT("   └");
 			break;
 		default:
 			break;
 		}
 	}
 
-	OUTPUT("──  %s (weight=%d, type=", p->name, p->weight);
+	OUTPUT("──(%s) weight=%d, type=", p->name, p->weight);
 	OUTPUT("%s", str_type(p->type));
-	OUTPUT(")\n");
+	OUTPUT("\n");
 
 	if (depth_flag[pa_depth] == depth_going_end)
 		depth_flag[pa_depth] = depth_end;
