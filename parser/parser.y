@@ -14,8 +14,8 @@ extern struct token_t *root;
 %}
 
 %union {
-    struct token_t *p;
-    char *s;
+	struct token_t *p;
+	char *s;
 }
 
 %error-verbose
