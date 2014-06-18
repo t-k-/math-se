@@ -21,7 +21,7 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
-%token <s> CONST DIV
+%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY
 %type <p> tex term factor atom 
 
 %right EQ_CLASS
@@ -101,8 +101,13 @@ factor : atom
        }
        | factor '^' atom 
        { 
-       SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $3);
-       root = $$ = father;
+       if ($1->type == MT_SUM_CLASS) {
+         SUB_CONS($1, NULL, NULL);
+         root = $$ = father;
+       } else {
+         SUB_CONS(mktoken("^", MT_SU_SCRIPT), $1, $3);
+         root = $$ = father;
+       }
        }
        ;
 
@@ -144,6 +149,36 @@ atom : VAR
      | SQRT atom 
      { 
      SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
+     root = $$ = father;
+     }
+     | SUM_CLASS  
+     { 
+     SUB_CONS(mktoken($1, MT_SUM_CLASS), NULL, NULL);
+     root = $$ = father;
+     }
+     | FUN_CLASS  
+     { 
+     SUB_CONS(mktoken($1, MT_FUN_CLASS), NULL, NULL);
+     root = $$ = father;
+     }
+     | DOTS  
+     { 
+     SUB_CONS(mktoken($1, MT_DOTS), NULL, NULL);
+     root = $$ = father;
+     }
+     | PARTIAL  
+     { 
+     SUB_CONS(mktoken($1, MT_PARTIAL), NULL, NULL);
+     root = $$ = father;
+     }
+     | PI  
+     { 
+     SUB_CONS(mktoken($1, MT_PI), NULL, NULL);
+     root = $$ = father;
+     }
+     | INFTY
+     { 
+     SUB_CONS(mktoken($1, MT_INFTY), NULL, NULL);
      root = $$ = father;
      }
      ;

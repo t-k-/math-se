@@ -17,6 +17,21 @@ static char *str_type(int t_num)
 		case MT_SUM_CLASS:
 			sprintf(out, "sum_class");
 			break;
+		case MT_FUN_CLASS:
+			sprintf(out, "fun_class");
+			break;
+		case MT_DOTS:
+			sprintf(out, "dots");
+			break;
+		case MT_PARTIAL:
+			sprintf(out, "partial");
+			break;
+		case MT_PI:
+			sprintf(out, "pi");
+			break;
+		case MT_INFTY:
+			sprintf(out, "infty");
+			break;
 		case MT_TIMES:
 			sprintf(out, "times");
 			break;
@@ -87,7 +102,7 @@ TREE_IT_CALLBK(print)
 		}
 	}
 
-	OUTPUT("──  %s (%d ", p->name, p->weight);
+	OUTPUT("──  %s (weight=%d, type=", p->name, p->weight);
 	OUTPUT("%s", str_type(p->type));
 	OUTPUT(")\n");
 

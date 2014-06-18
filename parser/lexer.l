@@ -57,27 +57,40 @@ void mkstr(char *);
 \mapsto         { mkstr(yytext); return EQ_CLASS; }
 \to             { mkstr(yytext); return EQ_CLASS; }
 
-\\sum           { mkstr(yytext); return SUM_CLASS; }
 \\int           { mkstr(yytext); return SUM_CLASS; }
+\\iint          { mkstr(yytext); return SUM_CLASS; }
+\\iiint         { mkstr(yytext); return SUM_CLASS; }
+\\bigodot       { mkstr(yytext); return SUM_CLASS; }
+\\biguplus      { mkstr(yytext); return SUM_CLASS; }
+\\prod          { mkstr(yytext); return SUM_CLASS; }
 \\oint          { mkstr(yytext); return SUM_CLASS; }
-\\bigcap        { mkstr(yytext); return SUM_CLASS; }
-\\bigcup        { mkstr(yytext); return SUM_CLASS; }
+\\bigoplus      { mkstr(yytext); return SUM_CLASS; }
 \\bigvee        { mkstr(yytext); return SUM_CLASS; }
+\\bigcap        { mkstr(yytext); return SUM_CLASS; }
+\\bigotimes     { mkstr(yytext); return SUM_CLASS; }
 \\bigwedge      { mkstr(yytext); return SUM_CLASS; }
+\\bigvee        { mkstr(yytext); return SUM_CLASS; }
+\\sum           { mkstr(yytext); return SUM_CLASS; }
+\\bigcup        { mkstr(yytext); return SUM_CLASS; }
+\\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
+\\coprod        { mkstr(yytext); return SUM_CLASS; }
+\\lim           { mkstr(yytext); return SUM_CLASS; }
 \\sup           { mkstr(yytext); return SUM_CLASS; }
 \\inf           { mkstr(yytext); return SUM_CLASS; }
-\\lim           { mkstr(yytext); return SUM_CLASS; }
-\\exp           { mkstr(yytext); return SUM_CLASS; }
-\\min           { mkstr(yytext); return SUM_CLASS; }
-\\max           { mkstr(yytext); return SUM_CLASS; }
-\\sin           { mkstr(yytext); return SUM_CLASS; }
-\\cos           { mkstr(yytext); return SUM_CLASS; }
-\\tan           { mkstr(yytext); return SUM_CLASS; }
-\\cot           { mkstr(yytext); return SUM_CLASS; }
-\\ln            { mkstr(yytext); return SUM_CLASS; }
-\\lg            { mkstr(yytext); return SUM_CLASS; }
-\\log           { mkstr(yytext); return SUM_CLASS; }
-\\sgn           { mkstr(yytext); return SUM_CLASS; }
+
+\\exp           { mkstr(yytext); return FUN_CLASS; }
+\\min           { mkstr(yytext); return FUN_CLASS; }
+\\max           { mkstr(yytext); return FUN_CLASS; }
+\\sin           { mkstr(yytext); return FUN_CLASS; }
+\\cos           { mkstr(yytext); return FUN_CLASS; }
+\\tan           { mkstr(yytext); return FUN_CLASS; }
+\\cot           { mkstr(yytext); return FUN_CLASS; }
+\\ln            { mkstr(yytext); return FUN_CLASS; }
+\\lg            { mkstr(yytext); return FUN_CLASS; }
+\\log           { mkstr(yytext); return FUN_CLASS; }
+\\sgn           { mkstr(yytext); return FUN_CLASS; }
+\\signum        { mkstr(yytext); return FUN_CLASS; }
+\\sign          { mkstr(yytext); return FUN_CLASS; }
 
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
@@ -86,11 +99,14 @@ void mkstr(char *);
 
 \\sqrt          { mkstr(yytext); return SQRT; }
 
-[a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 [0-9]+\.?[0-9]* { mkstr(yytext); return CONST; } 
-\\ldots         { mkstr(yytext); return VAR; }
-\\cdots         { mkstr(yytext); return VAR; }
-\\partial       { mkstr(yytext); return VAR; } 
+\\ldots         { mkstr(yytext); return DOTS; }
+\\cdots         { mkstr(yytext); return DOTS; }
+\\partial       { mkstr(yytext); return PARTIAL; } 
+\\pi            { mkstr(yytext); return PI; } 
+\\infty         { mkstr(yytext); return INFTY; }
+∞               { mkstr(yytext); return INFTY; }
+[a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\alpha         { mkstr(yytext); return VAR; } 
 \\[Tt]heta      { mkstr(yytext); return VAR; } 
 \\tau           { mkstr(yytext); return VAR; } 
@@ -114,18 +130,9 @@ void mkstr(char *);
 \\[Oo]mega      { mkstr(yytext); return VAR; } 
 \\eta           { mkstr(yytext); return VAR; } 
 \\[Xx]i         { mkstr(yytext); return VAR; } 
-\\infty         { mkstr(yytext); return VAR; }
-∞               { mkstr(yytext); return VAR; }
 
-\\bar           {}
-\\hat           {}
-\\tilde         {}
-\\vec           {}
-\\dot           {}
-\\check         {}
-\\breve         {}
-[ \t]+          {}
 \\[a-zA-Z]+     {/* omit undefined control sequence */}
+[ \t]+          {}
 \\!             {}
 \\\\            {}
 \\;             {}
