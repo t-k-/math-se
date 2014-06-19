@@ -1,6 +1,6 @@
 #include "tknet.h"
 
-enum {
+enum type_enum {
 	MT_EQ_CLASS,
 	MT_ADD,
 	MT_SUM_CLASS,
@@ -26,7 +26,7 @@ enum {
 };
 
 struct token_t {
-	int               type;
+	enum type_enum    type;
 	struct tree_node  tnd;
 	char             *name;
 	uint              weight;

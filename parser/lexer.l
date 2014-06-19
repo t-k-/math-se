@@ -135,6 +135,7 @@ void mkstr(char *);
 \\varrho        { mkstr(yytext); return VAR; }
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
+\*              { mkstr(yytext); return VAR; } 
 
 \\begin\{array\}\{.*\}  {} 
 \\end\{array\}          {} 

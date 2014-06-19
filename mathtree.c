@@ -151,6 +151,24 @@ LIST_IT_CALLBK(son_pass)
 	return res;
 }
 
+static
+LIST_IT_CALLBK(son_rm)
+{
+	TREE_OBJ(struct token_t, son, tnd);
+	P_CAST(rm_type, enum type_enum, pa_extra);
+	struct token_t* father = MEMBER_2_STRUCT(son->tnd.father, 
+		struct token_t, tnd);
+	BOOL res;
+	if (son->type == *rm_type) {
+		res = tree_detach(&son->tnd, pa_now, pa_fwd);
+		father->weight -= son->weight;
+		matree_release(son);
+		return res;
+	} else {
+		LIST_GO_OVER;
+	}
+}
+
 void matree_attach(struct token_t *s /* son */, 
 		struct token_t *f /* father */) 
 {
@@ -159,9 +177,22 @@ void matree_attach(struct token_t *s /* son */,
 
 	f->weight += s->weight;
 
+	/* sum no ^, all no _, except | */
+	if (f->type == MT_SU_SCRIPT &&
+	    s->type != MT_SUB_SCRIPT &&
+	    s->type != MT_SUP_SCRIPT) {
+		enum type_enum rm_type;
+		if (s->type == MT_SUM_CLASS) {
+			rm_type = MT_SUP_SCRIPT;
+			list_foreach(&f->tnd.sons, &son_rm, &rm_type);
+		} else if (s->type != MT_EVA_AT) {
+			rm_type = MT_SUB_SCRIPT;
+			list_foreach(&f->tnd.sons, &son_rm, &rm_type);
+		}
+	}
+
 	if (s->type == f->type &&
 	   (f->type == MT_ADD || f->type == MT_TIMES)) {
-
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
 		free(s->name);

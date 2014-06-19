@@ -3,39 +3,41 @@ SEARCHER=ma-se
 CFLAGS=-I ./inc -L . 
 CC=gcc $(CFLAGS)
 
-all: $(PARSER) $(SEARCHER)
-	chmod +x ./co-in
-	ctags --langmap=c:.c.y -R ./*
-	make -C ./httpd
+.PHONY: all clean submake
 
-mathtree.a: tree.o list.o mathtree.o
+all: submake $(PARSER) $(SEARCHER) install tags
+
+tags: $(shell find . -name "*.[hyc]" -print)
+	@echo dep: $^
+	ctags --langmap=c:.c.y -R ./*
+
+submake: 
+	make -C ./parser
+	make -C ./front-end
+
+install:
+	make install -C ./front-end
+
+-include $(wildcard *.d)
+
+%.o : %.c
+	$(CC) $*.c -c 
+	$(CC) -MM $*.c -o $*.d
+
+libmathtree.a: tree.o list.o mathtree.o
 	ar rcs libmathtree.a $^
 
-test-tree: test-tree.c mathtree.a 
+test-tree: test-tree.c libmathtree.a 
 	$(CC) $< -lmathtree -o $@
 
-$(PARSER): $(PARSER).tab.o lex.yy.o mathtree.a
-	$(CC) $(PARSER).tab.o lex.yy.o -lmathtree -lmcheck -lfl -o $@ 
+PARSER_DEP=$(addprefix parser/, lex.yy.o y.tab.o)
+$(PARSER): $(PARSER_DEP) libmathtree.a
+	$(CC) $(PARSER_DEP) -lmathtree -lmcheck -ll -o $@ 
 
-$(SEARCHER): $(SEARCHER).c mathtree.a
-	$(CC) $(word 1, $^) -lmathtree -o $@
-
-%.tab.o: %.tab.c
-	$(CC) -c $^ -o $@
-
-lex.yy.o: lex.yy.c ma-pa.tab.h
-	$(CC) -c  $< -include $(word 2, $^) -o $@
-
-lex.yy.c: $(PARSER).l
-	flex $<
-
-%.o: %.c
-	$(CC) $^ -c 
-
-parse = bison --verbose --report=itemset -d $^
-%.tab.h %.tab.c: %.y 
-	$(parse) 2>&1 | grep --color conflicts || $(parse) 
+$(SEARCHER): $(SEARCHER).c libmathtree.a
+	$(CC) $< -lmathtree -o $@
 
 clean:
-	rm -f lex.yy.c *.output *.tab.h *.tab.c *.a *.o $(PARSER) test-tree query candy score tags rank $(SEARCHER)
-	make clean -C ./httpd
+	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank $(SEARCHER)
+	make clean -C ./front-end
+	make clean -C ./parser
