@@ -11,23 +11,40 @@ void mkstr(char *);
 %%
 \n              { return '\n'; }
 
-"!"             { return yytext[0]; }
+"!"|"*"|"{"|"}" { return yytext[0]; }
 "+"|"-"|"_"|"^" { return yytext[0]; }
+\\neg           { return '-'; }
+
+\\left"."       { return LEFT; }
+\\left"["       { return LEFT; }
+\\left"\\{"     { return LEFT; }
+\\left"("       { return LEFT; }
+\\left"<"       { return LEFT; }
+\\left"|"       { return LEFT; }
+\\left"\\|"     { return LEFT; }
+
+\\right"."      { return RIGHT; }
+\\right"]"      { return RIGHT; }
+\\right"\\}"    { return RIGHT; }
+\\right")"      { return RIGHT; }
+\\right">"      { return RIGHT; }
+\\right"|"      { return RIGHT; }
+\\right"\\|"    { return RIGHT; }
+
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }
-"{"|"}"         { return yytext[0]; }
 "["|"]"         { return yytext[0]; }
-\\r[vV]ert      { return ABS_R; }
-\\l[vV]ert      { return ABS_L; }
-\\rangle        { return ABS_R; }      
-\\langle        { return ABS_L; }
-\\right"|"      { return ABS_R; }
-\\left"|"       { return ABS_L; }
-\\right"\\|"     { return ABS_R; }
-\\left"\\|"      { return ABS_L; }
-"|"             { return EVA_AT; }
 
-\\neg           { return '-'; }
+\\r[vV]ert      { return RIGHT; }
+\\l[vV]ert      { return LEFT; }
+\\rangle        { return RIGHT; }      
+\\langle        { return LEFT; }
+\\rfloor        { return RIGHT; }
+\\lfloor        { return LEFT; }
+\\rceil         { return RIGHT; }
+\\lceil         { return LEFT; }
+
+"|"             { return VERT; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 \\approx        { mkstr(yytext); return EQ_CLASS; }
@@ -135,16 +152,19 @@ void mkstr(char *);
 \\varrho        { mkstr(yytext); return VAR; }
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
-\*              { mkstr(yytext); return VAR; } 
 
-\\begin\{array\}\{.*\}  {} 
-\\end\{array\}          {} 
-\\begin\{align\}\{.*\}  {} 
-\\end\{align\}          {} 
+
+\\begin\{array\}\{.*\}    {} 
+\\end\{array\}            {} 
+\\begin\{align\}\{.*\}    {} 
+\\end\{align\}            {} 
 \\begin\{alignat\}\{.*\}  {} 
 \\end\{alignat\}          {} 
 
-\\[a-zA-Z]+     {/* omit undefined control sequence */}
+"^*"            {} /* omit star super-scripts */
+"_*"            {} /* omit star sub-scripts */
+
+\\[a-zA-Z]+     {} /* omit undefined control sequence */
 [ \t]+          {}
 \\!             {}
 \\\\            {}

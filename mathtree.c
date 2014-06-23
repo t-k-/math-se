@@ -50,11 +50,8 @@ static char *str_type(int t_num)
 		case MT_SQRT:
 			sprintf(out, "sqrt");
 			break;
-		case MT_ABS:
-			sprintf(out, "abs");
-			break;
-		case MT_EVA_AT:
-			sprintf(out, "eval");
+		case MT_VERT:
+			sprintf(out, "vert");
 			break;
 		case MT_NEG:
 			sprintf(out, "neg");
@@ -178,18 +175,18 @@ void matree_attach(struct token_t *s /* son */,
 	f->weight += s->weight;
 
 	/* sum no ^, all no _, except | */
-	if (f->type == MT_SU_SCRIPT &&
+	/* if (f->type == MT_SU_SCRIPT &&
 	    s->type != MT_SUB_SCRIPT &&
 	    s->type != MT_SUP_SCRIPT) {
 		enum type_enum rm_type;
 		if (s->type == MT_SUM_CLASS) {
 			rm_type = MT_SUP_SCRIPT;
 			list_foreach(&f->tnd.sons, &son_rm, &rm_type);
-		} else if (s->type != MT_EVA_AT) {
+		} else if (s->type != MT_VERT) {
 			rm_type = MT_SUB_SCRIPT;
 			list_foreach(&f->tnd.sons, &son_rm, &rm_type);
 		}
-	}
+	}*/
 
 	if (s->type == f->type &&
 	   (f->type == MT_ADD || f->type == MT_TIMES)) {

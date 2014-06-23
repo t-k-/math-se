@@ -20,8 +20,9 @@ extern struct token_t *root;
 
 %error-verbose
 
-%token <s> EVA_AT ABS_R ABS_L EQ_CLASS SUM_CLASS FRAC SQRT VAR
-%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY
+%token <s> LEFT RIGHT EQ_CLASS SUM_CLASS FRAC SQRT VAR
+%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY VERT
+
 %type <p> tex term factor atom script
 
 %right EQ_CLASS
@@ -111,9 +112,9 @@ atom : VAR
      SUB_CONS(mktoken($1, MT_CONST), NULL, NULL);
      root = $$ = father;
      }
-     | EVA_AT 
+     | VERT 
      {
-     SUB_CONS(mktoken("|", MT_EVA_AT), NULL, NULL);
+     SUB_CONS(mktoken("|", MT_VERT), NULL, NULL);
      root = $$ = father;
      }
      | '(' tex ')'
@@ -126,9 +127,9 @@ atom : VAR
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
-     | ABS_L tex ABS_R
+     | LEFT tex RIGHT 
      {
-     SUB_CONS(mktoken("||", MT_ABS), $2, NULL);
+     SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
      | FRAC atom atom 
