@@ -2,6 +2,8 @@
 
 enum type_enum {
 	MT_EQ_CLASS,
+	MT_SEP_CLASS,
+	MT_MOD,
 	MT_ADD,
 	MT_SUM_CLASS,
 	MT_FUN_CLASS,
@@ -9,6 +11,9 @@ enum type_enum {
 	MT_PARTIAL,
 	MT_PI,
 	MT_INFTY,
+	MT_ANGLE,
+	MT_PERP,
+	MT_CIRC,
 	MT_TIMES,
 	MT_FRAC,
 	MT_FACT,
@@ -20,6 +25,7 @@ enum type_enum {
 	MT_SU_SCRIPT,
 	MT_SUB_SCRIPT,
 	MT_SUP_SCRIPT,
+	MT_SET,
 	MT_EMPTY,
 	UNKNOWN
 };

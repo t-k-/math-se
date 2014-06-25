@@ -13,23 +13,39 @@ void mkstr(char *);
 
 "!"|"*"|"{"|"}" { return yytext[0]; }
 "+"|"-"|"_"|"^" { return yytext[0]; }
+
+\\oplus         { return '+'; }
+\\pm            { return '+'; }
+\\mp            { return '+'; }
+
 \\neg           { return '-'; }
+\\setminus      { return '-'; }
+\\smallsetminus { return '-'; }
+\\lnot          { return '-'; } 
 
-\\left"."       { return LEFT; }
-\\left"["       { return LEFT; }
-\\left"\\{"     { return LEFT; }
-\\left"("       { return LEFT; }
-\\left"<"       { return LEFT; }
-\\left"|"       { return LEFT; }
-\\left"\\|"     { return LEFT; }
+\\left[ ]*"."          { return LEFT; }
+\\left[ ]*"["          { return LEFT; }
+\\left[ ]*"\\{"        { return LEFT; }
+\\left[ ]*"("          { return LEFT; }
+\\left[ ]*"<"          { return LEFT; }
+\\left[ ]*"|"          { return LEFT; }
+\\left[ ]*"\\|"        { return LEFT; }
+\\left[ ]*"/"          { return LEFT; }
+\\left[ ]*\\uparrow    { return LEFT; }
+\\left[ ]*\\Uparrow    { return LEFT; }
+\\left[ ]*\\updownarrow { return LEFT; }
 
-\\right"."      { return RIGHT; }
-\\right"]"      { return RIGHT; }
-\\right"\\}"    { return RIGHT; }
-\\right")"      { return RIGHT; }
-\\right">"      { return RIGHT; }
-\\right"|"      { return RIGHT; }
-\\right"\\|"    { return RIGHT; }
+\\right[ ]*"."         { return RIGHT; }
+\\right[ ]*"]"         { return RIGHT; }
+\\right[ ]*"\\}"       { return RIGHT; }
+\\right[ ]*")"         { return RIGHT; }
+\\right[ ]*">"         { return RIGHT; }
+\\right[ ]*"|"         { return RIGHT; }
+\\right[ ]*"\\|"       { return RIGHT; }
+\\right[ ]*\\backslash { return RIGHT; }
+\\left[ ]*\\downarrow  { return RIGHT; }
+\\left[ ]*\\Downarrow  { return RIGHT; }
+\\left[ ]*\\Updownarrow { return RIGHT; }
 
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }
@@ -44,30 +60,75 @@ void mkstr(char *);
 \\rceil         { return RIGHT; }
 \\lceil         { return LEFT; }
 
-"|"             { return VERT; }
-
 =               { mkstr(yytext); return EQ_CLASS; }
+\\sim           { mkstr(yytext); return EQ_CLASS; }
 \\approx        { mkstr(yytext); return EQ_CLASS; }
+\\simeq         { mkstr(yytext); return EQ_CLASS; }
+\\cong          { mkstr(yytext); return EQ_CLASS; }
+\\dot=          { mkstr(yytext); return EQ_CLASS; }
 \\equiv         { mkstr(yytext); return EQ_CLASS; }
 \\propto        { mkstr(yytext); return EQ_CLASS; }
 \\ge            { mkstr(yytext); return EQ_CLASS; }
 \\le            { mkstr(yytext); return EQ_CLASS; }
+\\ll            { mkstr(yytext); return EQ_CLASS; }
+\\gg            { mkstr(yytext); return EQ_CLASS; }
 \\in            { mkstr(yytext); return EQ_CLASS; }
+\\ni            { mkstr(yytext); return EQ_CLASS; }
+\\notin         { mkstr(yytext); return EQ_CLASS; }
+\\ne            { mkstr(yytext); return EQ_CLASS; }
+\\neq           { mkstr(yytext); return EQ_CLASS; }
 \\not("="|"\equiv"|"\in") { mkstr(yytext); return EQ_CLASS; }
 ">"             { mkstr(yytext); return EQ_CLASS; }
 "<"             { mkstr(yytext); return EQ_CLASS; }
 \\subset        { mkstr(yytext); return EQ_CLASS; }
+\\sqsubset      { mkstr(yytext); return EQ_CLASS; }
+\\sqsubseteq    { mkstr(yytext); return EQ_CLASS; }
 \\supset        { mkstr(yytext); return EQ_CLASS; }
+\\sqsupset      { mkstr(yytext); return EQ_CLASS; }
+\\sqsupseteq    { mkstr(yytext); return EQ_CLASS; }
 \\subseteq      { mkstr(yytext); return EQ_CLASS; }
 \\supseteq      { mkstr(yytext); return EQ_CLASS; }
+\\sqcap         { mkstr(yytext); return EQ_CLASS; }
+\\sqcup         { mkstr(yytext); return EQ_CLASS; }
 \\prec          { mkstr(yytext); return EQ_CLASS; }
 \\succ          { mkstr(yytext); return EQ_CLASS; }
 \\preceq        { mkstr(yytext); return EQ_CLASS; }
 \\succeq        { mkstr(yytext); return EQ_CLASS; }
-\\mid           { mkstr(yytext); return EQ_CLASS; }
-,               { mkstr(yytext); return EQ_CLASS; }
-\mapsto         { mkstr(yytext); return EQ_CLASS; }
-\to             { mkstr(yytext); return EQ_CLASS; }
+\\cap           { mkstr(yytext); return EQ_CLASS; }
+\\cup           { mkstr(yytext); return EQ_CLASS; }
+\\land          { mkstr(yytext); return EQ_CLASS; } 
+\\and           { mkstr(yytext); return EQ_CLASS; } 
+\\wedge         { mkstr(yytext); return EQ_CLASS; } 
+\\lor           { mkstr(yytext); return EQ_CLASS; } 
+\\vee           { mkstr(yytext); return EQ_CLASS; } 
+\\lessapprox    { mkstr(yytext); return EQ_CLASS; }
+\\lesssim       { mkstr(yytext); return EQ_CLASS; }
+\\eqslantless   { mkstr(yytext); return EQ_CLASS; }
+\\leqslant      { mkstr(yytext); return EQ_CLASS; }
+\\leqq          { mkstr(yytext); return EQ_CLASS; }
+\\geqq          { mkstr(yytext); return EQ_CLASS; }
+\\geqslant      { mkstr(yytext); return EQ_CLASS; }
+\\eqslantgtr    { mkstr(yytext); return EQ_CLASS; }
+\\gtrsim        { mkstr(yytext); return EQ_CLASS; }
+\\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
+
+,               { mkstr(yytext); return SEP_CLASS; }
+\\;             { mkstr(yytext); return SEP_CLASS; }
+\mapsto         { mkstr(yytext); return SEP_CLASS; }
+\to             { mkstr(yytext); return SEP_CLASS; }
+"|"             { mkstr(yytext); return SEP_CLASS; }
+":"             { mkstr(yytext); return SEP_CLASS; }
+\\mid           { mkstr(yytext); return SEP_CLASS; }
+\\nmid          { mkstr(yytext); return SEP_CLASS; }
+\\quad          { mkstr(yytext); return SEP_CLASS; }
+\\qquad         { mkstr(yytext); return SEP_CLASS; }
+\\forall        { mkstr(yytext); return SEP_CLASS; }
+\\exists        { mkstr(yytext); return SEP_CLASS; }
+\\And           { mkstr(yytext); return SEP_CLASS; }
+
+\\pmod          { mkstr(yytext); return MODULAR; }
+\\bmod          { mkstr(yytext); return MODULAR; }
+\\mod           { mkstr(yytext); return MODULAR; }
 
 \\int           { mkstr(yytext); return SUM_CLASS; }
 \\iint          { mkstr(yytext); return SUM_CLASS; }
@@ -96,13 +157,31 @@ void mkstr(char *);
 \\sin           { mkstr(yytext); return FUN_CLASS; }
 \\cos           { mkstr(yytext); return FUN_CLASS; }
 \\tan           { mkstr(yytext); return FUN_CLASS; }
+\\sec           { mkstr(yytext); return FUN_CLASS; }
+\\csc           { mkstr(yytext); return FUN_CLASS; }
 \\cot           { mkstr(yytext); return FUN_CLASS; }
+\\arcsin        { mkstr(yytext); return FUN_CLASS; }
+\\arccos        { mkstr(yytext); return FUN_CLASS; }
+\\arctan        { mkstr(yytext); return FUN_CLASS; }
+\\sinh          { mkstr(yytext); return FUN_CLASS; }
+\\cosh          { mkstr(yytext); return FUN_CLASS; }
+\\tanh          { mkstr(yytext); return FUN_CLASS; }
+\\coth          { mkstr(yytext); return FUN_CLASS; }
 \\ln            { mkstr(yytext); return FUN_CLASS; }
 \\lg            { mkstr(yytext); return FUN_CLASS; }
 \\log           { mkstr(yytext); return FUN_CLASS; }
 \\sgn           { mkstr(yytext); return FUN_CLASS; }
 \\signum        { mkstr(yytext); return FUN_CLASS; }
 \\sign          { mkstr(yytext); return FUN_CLASS; }
+\\operatorname\{.*\} { mkstr(yytext); return FUN_CLASS; }
+\\ker           { mkstr(yytext); return FUN_CLASS; }
+\\deg           { mkstr(yytext); return FUN_CLASS; }
+\\gcd           { mkstr(yytext); return FUN_CLASS; }
+\\Pr            { mkstr(yytext); return FUN_CLASS; }
+\\det           { mkstr(yytext); return FUN_CLASS; }
+\\hom           { mkstr(yytext); return FUN_CLASS; }
+\\arg           { mkstr(yytext); return FUN_CLASS; }
+\\dim           { mkstr(yytext); return FUN_CLASS; }
 
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
@@ -115,9 +194,17 @@ void mkstr(char *);
 \\ldots         { mkstr(yytext); return DOTS; }
 \\cdots         { mkstr(yytext); return DOTS; }
 \\partial       { mkstr(yytext); return PARTIAL; } 
+\\nabla         { mkstr(yytext); return PARTIAL; } 
 \\pi            { mkstr(yytext); return PI; } 
 \\infty         { mkstr(yytext); return INFTY; }
 ∞               { mkstr(yytext); return INFTY; }
+\\empty         { mkstr(yytext); return EMPTY; }
+\\emptyset      { mkstr(yytext); return EMPTY; }
+\\\varnothing   { mkstr(yytext); return EMPTY; }
+\\triangle      { mkstr(yytext); return ANGLE; }
+\\angle         { mkstr(yytext); return ANGLE; }
+\\perp          { mkstr(yytext); return PERP; }
+\\circ          { mkstr(yytext); return CIRC; }
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\Pi            { mkstr(yytext); return VAR; } 
@@ -160,6 +247,10 @@ void mkstr(char *);
 \\end\{align\}            {} 
 \\begin\{alignat\}\{.*\}  {} 
 \\end\{alignat\}          {} 
+\\begin\{smallmatrix\}    {} 
+\\end\{smallmatrix\}      {} 
+
+\\color\{.*\}   {} /* omit color */
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */

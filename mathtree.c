@@ -11,8 +11,14 @@ static char *str_type(int t_num)
 		case MT_EQ_CLASS:
 			sprintf(out, "eq_class");
 			break;
+		case MT_SEP_CLASS:
+			sprintf(out, "sep_class");
+			break;
 		case MT_ADD:
 			sprintf(out, "add");
+			break;
+		case MT_MOD:
+			sprintf(out, "mod");
 			break;
 		case MT_SUM_CLASS:
 			sprintf(out, "sum_class");
@@ -31,6 +37,15 @@ static char *str_type(int t_num)
 			break;
 		case MT_INFTY:
 			sprintf(out, "infty");
+			break;
+		case MT_ANGLE:
+			sprintf(out, "angle");
+			break;
+		case MT_PERP:
+			sprintf(out, "perp");
+			break;
+		case MT_CIRC:
+			sprintf(out, "circ");
 			break;
 		case MT_TIMES:
 			sprintf(out, "times");
@@ -67,6 +82,9 @@ static char *str_type(int t_num)
 			break;
 		case MT_EMPTY:
 			sprintf(out, "empty");
+			break;
+		case MT_SET:
+			sprintf(out, "set");
 			break;
 		default :
 			sprintf(out, "unknown");
@@ -189,7 +207,8 @@ void matree_attach(struct token_t *s /* son */,
 	}*/
 
 	if (s->type == f->type &&
-	   (f->type == MT_ADD || f->type == MT_TIMES)) {
+	   (f->type == MT_ADD || f->type == MT_TIMES ||
+	    f->type == MT_SEP_CLASS)) {
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
 		free(s->name);

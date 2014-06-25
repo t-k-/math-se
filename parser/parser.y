@@ -20,12 +20,16 @@ extern struct token_t *root;
 
 %error-verbose
 
-%token <s> LEFT RIGHT EQ_CLASS SUM_CLASS FRAC SQRT VAR
-%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY VERT
+%token <s> LEFT RIGHT EQ_CLASS SEP_CLASS SUM_CLASS  
+%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT
+%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY 
 
 %type <p> tex term factor atom script
 
-%right EQ_CLASS
+%right SEP_CLASS 
+%right EQ_CLASS 
+%right MODULAR
+
 %left '+' '-'
 %nonassoc '!'
 %right '^' '_'
@@ -35,9 +39,7 @@ extern struct token_t *root;
 
 doc : | doc piece;
 
-sep : '\n' | EQ_CLASS;
-
-piece : tex sep 
+piece : tex '\n' 
       {
       if (root) { matree_print(root); matree_release(root); }
       }
@@ -59,6 +61,21 @@ tex : term
     struct token_t *p = mktoken("-", MT_NEG);
     matree_attach($3, p);
     SUB_CONS(mktoken("+", MT_ADD), $1, p);
+    root = $$ = father;
+    }
+    | tex EQ_CLASS tex 
+    {
+    SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
+    root = $$ = father;
+    }
+    | tex SEP_CLASS tex 
+    {
+    SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
+    root = $$ = father;
+    }
+    | tex MODULAR tex 
+    {
+    SUB_CONS(mktoken("mod", MT_MOD), $1, $3);
     root = $$ = father;
     }
     ;
@@ -110,11 +127,6 @@ atom : VAR
      | CONST
      {
      SUB_CONS(mktoken($1, MT_CONST), NULL, NULL);
-     root = $$ = father;
-     }
-     | VERT 
-     {
-     SUB_CONS(mktoken("|", MT_VERT), NULL, NULL);
      root = $$ = father;
      }
      | '(' tex ')'
@@ -175,6 +187,26 @@ atom : VAR
      | INFTY
      { 
      SUB_CONS(mktoken($1, MT_INFTY), NULL, NULL);
+     root = $$ = father;
+     }
+     | EMPTY
+     { 
+     SUB_CONS(mktoken($1, MT_EMPTY), NULL, NULL);
+     root = $$ = father;
+     }
+     | ANGLE 
+     { 
+     SUB_CONS(mktoken($1, MT_ANGLE), NULL, NULL);
+     root = $$ = father;
+     }
+     | PERP 
+     { 
+     SUB_CONS(mktoken($1, MT_PERP), NULL, NULL);
+     root = $$ = father;
+     }
+     | CIRC 
+     { 
+     SUB_CONS(mktoken($1, MT_CIRC), NULL, NULL);
      root = $$ = father;
      }
      ;
