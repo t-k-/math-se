@@ -114,8 +114,6 @@ void mkstr(char *);
 
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
-\mapsto         { mkstr(yytext); return SEP_CLASS; }
-\to             { mkstr(yytext); return SEP_CLASS; }
 "|"             { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
 \\mid           { mkstr(yytext); return SEP_CLASS; }
@@ -125,6 +123,73 @@ void mkstr(char *);
 \\forall        { mkstr(yytext); return SEP_CLASS; }
 \\exists        { mkstr(yytext); return SEP_CLASS; }
 \\And           { mkstr(yytext); return SEP_CLASS; }
+
+\\leftarrow      { mkstr(yytext); return SEP_CLASS; }
+\\gets           { mkstr(yytext); return SEP_CLASS; }
+\\rightarrow     { mkstr(yytext); return SEP_CLASS; }
+\\to             { mkstr(yytext); return SEP_CLASS; }
+\\nleftarrow     { mkstr(yytext); return SEP_CLASS; }
+\\nrightarrow    { mkstr(yytext); return SEP_CLASS; }
+\\leftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\nleftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\longleftarrow  { mkstr(yytext); return SEP_CLASS; }
+\\longrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\longleftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\Leftarrow      { mkstr(yytext); return SEP_CLASS; }
+\\Rightarrow     { mkstr(yytext); return SEP_CLASS; }
+\\nLeftarrow     { mkstr(yytext); return SEP_CLASS; }
+\\nRightarrow    { mkstr(yytext); return SEP_CLASS; }
+\\Leftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\nLeftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\Longleftarrow  { mkstr(yytext); return SEP_CLASS; }
+\\Longrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\Longleftrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\iff            { mkstr(yytext); return SEP_CLASS; }
+\\uparrow        { mkstr(yytext); return SEP_CLASS; }
+\\downarrow      { mkstr(yytext); return SEP_CLASS; }
+\\updownarrow    { mkstr(yytext); return SEP_CLASS; }
+\\Uparrow        { mkstr(yytext); return SEP_CLASS; }
+\\Downarrow      { mkstr(yytext); return SEP_CLASS; }
+\\Updownarrow    { mkstr(yytext); return SEP_CLASS; }
+\\nearrow        { mkstr(yytext); return SEP_CLASS; }
+\\searrow        { mkstr(yytext); return SEP_CLASS; }
+\\swarrow        { mkstr(yytext); return SEP_CLASS; }
+\\nwarrow        { mkstr(yytext); return SEP_CLASS; }
+\\rightharpoonup { mkstr(yytext); return SEP_CLASS; }
+\\rightharpoondown { mkstr(yytext); return SEP_CLASS; }
+\\leftharpoonup  { mkstr(yytext); return SEP_CLASS; }
+\\leftharpoondown { mkstr(yytext); return SEP_CLASS; }
+\\upharpoonleft  { mkstr(yytext); return SEP_CLASS; }
+\\upharpoonright { mkstr(yytext); return SEP_CLASS; }
+\\downharpoonleft { mkstr(yytext); return SEP_CLASS; }
+\\downharpoonright { mkstr(yytext); return SEP_CLASS; }
+\\rightleftharpoons { mkstr(yytext); return SEP_CLASS; }
+\\leftrightharpoons { mkstr(yytext); return SEP_CLASS; }
+\\curvearrowleft { mkstr(yytext); return SEP_CLASS; }
+\\circlearrowleft { mkstr(yytext); return SEP_CLASS; }
+\\Lsh            { mkstr(yytext); return SEP_CLASS; }
+\\upuparrows     { mkstr(yytext); return SEP_CLASS; }
+\\rightrightarrows { mkstr(yytext); return SEP_CLASS; }
+\\rightleftarrows { mkstr(yytext); return SEP_CLASS; }
+\\Rrightarrow    { mkstr(yytext); return SEP_CLASS; }
+\\rightarrowtail { mkstr(yytext); return SEP_CLASS; }
+\\looparrowright { mkstr(yytext); return SEP_CLASS; }
+\\curvearrowright { mkstr(yytext); return SEP_CLASS; }
+\\circlearrowright { mkstr(yytext); return SEP_CLASS; }
+\\Rsh            { mkstr(yytext); return SEP_CLASS; }
+\\downdownarrows { mkstr(yytext); return SEP_CLASS; }
+\\leftleftarrows { mkstr(yytext); return SEP_CLASS; }
+\\leftrightarrows { mkstr(yytext); return SEP_CLASS; }
+\\Lleftarrow     { mkstr(yytext); return SEP_CLASS; }
+\\leftarrowtail  { mkstr(yytext); return SEP_CLASS; }
+\\looparrowleft  { mkstr(yytext); return SEP_CLASS; }
+\\mapsto         { mkstr(yytext); return SEP_CLASS; }
+\\longmapsto     { mkstr(yytext); return SEP_CLASS; }
+\\hookrightarrow { mkstr(yytext); return SEP_CLASS; }
+\\hookleftarrow  { mkstr(yytext); return SEP_CLASS; }
+\\multimap       { mkstr(yytext); return SEP_CLASS; }
+\\leftrightsquigarrow { mkstr(yytext); return SEP_CLASS; }
+\\rightsquigarrow { mkstr(yytext); return SEP_CLASS; }
 
 \\pmod          { mkstr(yytext); return MODULAR; }
 \\bmod          { mkstr(yytext); return MODULAR; }
@@ -259,7 +324,6 @@ void mkstr(char *);
 [ \t]+          {}
 \\!             {}
 \\\\            {}
-\\;             {}
 \\,             {}
 \\[ ]           {}
 .               {}
