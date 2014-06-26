@@ -112,8 +112,10 @@ void mkstr(char *);
 \\gtrsim        { mkstr(yytext); return EQ_CLASS; }
 \\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
 
+\\\\            { mkstr(yytext); return SEP_CLASS; }
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
+&               { mkstr(yytext); return SEP_CLASS; }
 "|"             { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
 \\mid           { mkstr(yytext); return SEP_CLASS; }
@@ -316,16 +318,12 @@ void mkstr(char *);
 \\end\{smallmatrix\}      {} 
 
 \\color\{.*\}   {} /* omit color */
+\\mbox\{.*\}    {} /* omit mbox */
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
 
 \\[a-zA-Z]+     {} /* omit undefined control sequence */
-[ \t]+          {}
-\\!             {}
-\\\\            {}
-\\,             {}
-\\[ ]           {}
 .               {}
 %%
 int abs_toggle = 0;
