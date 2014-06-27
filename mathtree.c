@@ -14,6 +14,9 @@ static char *str_type(int t_num)
 		case MT_SEP_CLASS:
 			sprintf(out, "sep_class");
 			break;
+		case MT_TAB:
+			sprintf(out, "tab");
+			break;
 		case MT_ADD:
 			sprintf(out, "add");
 			break;
@@ -208,7 +211,7 @@ void matree_attach(struct token_t *s /* son */,
 
 	if (s->type == f->type &&
 	   (f->type == MT_ADD || f->type == MT_TIMES ||
-	    f->type == MT_SEP_CLASS)) {
+	    f->type == MT_SEP_CLASS || f->type == MT_TAB)) {
 		list_foreach(&s->tnd.sons, &son_pass, f);
 
 		free(s->name);

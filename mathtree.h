@@ -3,6 +3,7 @@
 enum type_enum {
 	MT_EQ_CLASS,
 	MT_SEP_CLASS,
+	MT_TAB,
 	MT_MOD,
 	MT_ADD,
 	MT_SUM_CLASS,

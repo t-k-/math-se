@@ -112,10 +112,14 @@ void mkstr(char *);
 \\gtrsim        { mkstr(yytext); return EQ_CLASS; }
 \\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
 
-\\\\            { mkstr(yytext); return SEP_CLASS; }
+\\\\            { mkstr(yytext); return TAB; }
+&               { mkstr(yytext); return TAB; }
+
+\\begin\{matrix\}  { mkstr(yytext); return BEGIN_MAT; }
+\\end\{matrix\}    { mkstr(yytext); return END_MAT; } 
+
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
-&               { mkstr(yytext); return SEP_CLASS; }
 "|"             { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
 \\mid           { mkstr(yytext); return SEP_CLASS; }
