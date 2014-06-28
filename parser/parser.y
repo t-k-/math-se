@@ -21,7 +21,7 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> LEFT RIGHT EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT 
-%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB
+%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB COMBIN
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT 
 
 %type <p> tex mat_tex term factor atom script
@@ -181,6 +181,11 @@ atom : VAR
      | BEGIN_MAT mat_tex END_MAT 
      {
      SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | COMBIN atom atom 
+     { 
+     SUB_CONS(mktoken("C", MT_COMBIN), $2, $3);
      root = $$ = father;
      }
      | FRAC atom atom 

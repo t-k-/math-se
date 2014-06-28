@@ -53,6 +53,9 @@ static char *str_type(int t_num)
 		case MT_TIMES:
 			sprintf(out, "times");
 			break;
+		case MT_COMBIN:
+			sprintf(out, "combin");
+			break;
 		case MT_FRAC:
 			sprintf(out, "frac");
 			break;

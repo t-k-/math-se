@@ -112,11 +112,34 @@ void mkstr(char *);
 \\gtrsim        { mkstr(yytext); return EQ_CLASS; }
 \\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
 
-\\\\            { mkstr(yytext); return TAB; }
-&               { mkstr(yytext); return TAB; }
+\\\\               { mkstr(yytext); return TAB; }
+&                  { mkstr(yytext); return TAB; }
 
 \\begin\{matrix\}  { mkstr(yytext); return BEGIN_MAT; }
 \\end\{matrix\}    { mkstr(yytext); return END_MAT; } 
+\\begin\{vmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{vmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{Vmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{Vmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{bmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{bmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{Bmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{Bmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{pmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{pmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{smallmatrix\} { mkstr(yytext); return BEGIN_MAT; }
+\\end\{smallmatrix\}   { mkstr(yytext); return END_MAT; } 
+
+\\begin\{array\}\{.*\}    {} 
+\\end\{array\}            {} 
+\\begin\{align\}\{.*\}    {} 
+\\end\{align\}            {} 
+\\begin\{alignat\}\{.*\}  {} 
+\\end\{alignat\}          {} 
+
+\\dbinom        { mkstr(yytext); return COMBIN; }
+\\tbinom        { mkstr(yytext); return COMBIN; }
+\\binom         { mkstr(yytext); return COMBIN; }
 
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
@@ -310,16 +333,6 @@ void mkstr(char *);
 \\varrho        { mkstr(yytext); return VAR; }
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
-
-
-\\begin\{array\}\{.*\}    {} 
-\\end\{array\}            {} 
-\\begin\{align\}\{.*\}    {} 
-\\end\{align\}            {} 
-\\begin\{alignat\}\{.*\}  {} 
-\\end\{alignat\}          {} 
-\\begin\{smallmatrix\}    {} 
-\\end\{smallmatrix\}      {} 
 
 \\color\{.*\}   {} /* omit color */
 \\mbox\{.*\}    {} /* omit mbox */
