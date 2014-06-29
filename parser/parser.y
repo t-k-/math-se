@@ -296,9 +296,50 @@ void yyerror(const char *ps)
 	printf("[ %s ]\n", ps);
 }
 
+/*
+void __pp(char * a)
+{
+	int i = 0;
+	for (i = 0;; i++) {
+		if (a[i] == '\n') 
+			putchar('N');
+		else if (a[i]=='\0') {
+			putchar('O');
+			if (a[i+1] == '\0')
+				printf("yes\n");
+			break;
+		} else 
+			putchar(a[i]);
+	}
+	printf("\n");
+}
+*/
+
+#include "edit.h"
+
 int main(int argc, char *argv[]) 
 {
-	yyparse();
+	char *str, *str0;
+	size_t str0_sz;
+	char exit_flag = 0;
+	while (1) {
+		str = readline("edit: ");
+		if (str == NULL) {
+			printf("\n");
+			break;
+		}
+		str0_sz = strlen(str) + 3;
+		str0 = malloc(str0_sz);
+		sprintf(str0, "%s\n_", str);
+		str0[str0_sz - 2] = '\0';
+		free(str);
+
+		YY_BUFFER_STATE buffer = 
+			yy_scan_buffer(str0, str0_sz);
+		yyparse();
+		yy_delete_buffer(buffer);
+		free(str0);
+	} 
 
 	printf("[ goodbye~ ]\n");
 	return 0;

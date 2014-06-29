@@ -1,7 +1,7 @@
 OUTPUT=$(shell basename `pwd`)
 
 define cl_insert 
-@ echo $1 >> clean.list
+@ echo $1 >> toclean.list
 endef
 
 .PHONY: all clean
@@ -23,5 +23,5 @@ lex.yy.c: *.l
 	$(call cl_insert, $@)
 
 clean:
-	cat clean.list | xargs rm -f
-	rm -f clean.list
+	cat toclean.list | xargs rm -f
+	rm -f toclean.list
