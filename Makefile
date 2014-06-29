@@ -1,6 +1,6 @@
 PARSER=ma-pa
 SEARCHER=ma-se
-CFLAGS=-I ./inc -L . 
+CFLAGS=-I . -I ./inc -L . 
 CC=gcc $(CFLAGS)
 READLN_ROOT := ./readline-6.3
 CURSES_ROOT := ./ncurses-5.9
@@ -15,7 +15,11 @@ tags: $(shell find . -type d \( -path $(READLN_ROOT) -o -path $(CURSES_ROOT) \) 
 	@echo dep: $^
 	ctags --langmap=c:.c.y -R ./*
 
-submake: 
+parser/readline:
+	rm -f $@
+	ln -s `pwd`/readline-6.3/ $@ 
+
+submake: parser/readline
 	make -C ./parser
 	make -C ./front-end
 
@@ -59,3 +63,4 @@ clean:
 	make clean -C ./parser
 	make distclean -C $(READLN_ROOT)
 	make distclean -C $(CURSES_ROOT)
+	rm -f parser/readline

@@ -9,7 +9,7 @@ endef
 all: lex.yy.o y.tab.o
 
 lex.yy.o y.tab.o: y.tab.h y.tab.c lex.yy.c
-	gcc -c $(filter %.c, $^) -include $< -I .. -I ../inc
+	gcc -c $(filter %.c, $^) -include $< -I . -I .. -I ../inc
 	$(call cl_insert, *.o)
 
 y.tab.h y.tab.c: *.y

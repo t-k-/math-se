@@ -30,6 +30,7 @@ extern struct token_t *root;
 %right EQ_CLASS 
 %right MODULAR
 
+%left NULL_REDUCE 
 %left '+' '-'
 %nonassoc '!'
 %right '^' '_'
@@ -43,10 +44,14 @@ piece : tex '\n'
       {
       if (root) { matree_print(root); matree_release(root); }
       }
-      | '\n'
       ;
 
-tex : term 
+tex : %prec NULL_REDUCE 
+    {
+    SUB_CONS(mktoken("NULL", MT_NULL), NULL, NULL);
+    root = $$ = father;
+    }
+    | term 
     {
     SUB_CONS($1, NULL, NULL);
     root = $$ = father;
@@ -322,12 +327,21 @@ int main(int argc, char *argv[])
 	char *str, *str0;
 	size_t str0_sz;
 	char exit_flag = 0;
+
+	/* disable auto-complete */
+	rl_bind_key('\t', rl_abort);
+
 	while (1) {
 		str = readline("edit: ");
 		if (str == NULL) {
 			printf("\n");
 			break;
-		}
+		} 
+
+		/* user can use UP and DOWN key to 
+		search through the history. */
+		add_history(str); 
+
 		str0_sz = strlen(str) + 3;
 		str0 = malloc(str0_sz);
 		sprintf(str0, "%s\n_", str);

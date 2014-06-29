@@ -89,8 +89,8 @@ static char *str_type(int t_num)
 		case MT_EMPTY:
 			sprintf(out, "empty");
 			break;
-		case MT_SET:
-			sprintf(out, "set");
+		case MT_NULL:
+			sprintf(out, "null");
 			break;
 		default :
 			sprintf(out, "unknown");

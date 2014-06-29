@@ -27,8 +27,8 @@ enum type_enum {
 	MT_SU_SCRIPT,
 	MT_SUB_SCRIPT,
 	MT_SUP_SCRIPT,
-	MT_SET,
 	MT_EMPTY,
+	MT_NULL,
 	UNKNOWN
 };
 

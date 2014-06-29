@@ -129,6 +129,8 @@ void mkstr(char *);
 \\end\{pmatrix\}   { mkstr(yytext); return END_MAT; } 
 \\begin\{smallmatrix\} { mkstr(yytext); return BEGIN_MAT; }
 \\end\{smallmatrix\}   { mkstr(yytext); return END_MAT; } 
+\\begin\{cases\}   { mkstr(yytext); return BEGIN_MAT; }
+\\end\{cases\}     { mkstr(yytext); return END_MAT; } 
 
 \\begin\{array\}\{.*\}    {} 
 \\end\{array\}            {} 
