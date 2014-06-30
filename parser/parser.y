@@ -26,7 +26,8 @@ extern struct token_t *root;
 
 %type <p> tex mat_tex term factor atom script
 
-%right SEP_CLASS TAB
+%right TAB
+%right SEP_CLASS
 %right EQ_CLASS 
 %right MODULAR
 
@@ -75,12 +76,12 @@ tex : %prec NULL_REDUCE
     }
     | tex SEP_CLASS tex 
     {
-    SUB_CONS(mktoken("&", MT_SEP_CLASS), $1, $3);
+    SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
     root = $$ = father;
     }
     | tex TAB tex 
     {
-    SUB_CONS(mktoken("&", MT_SEP_CLASS), $1, $3);
+    SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
     root = $$ = father;
     }
     | tex MODULAR tex 
@@ -90,7 +91,12 @@ tex : %prec NULL_REDUCE
     }
     ;
 
-mat_tex : term 
+mat_tex : %prec NULL_REDUCE 
+        {
+        SUB_CONS(mktoken("NULL", MT_NULL), NULL, NULL);
+        root = $$ = father;
+        }
+        | term 
         {
         SUB_CONS($1, NULL, NULL);
         root = $$ = father;
@@ -107,9 +113,19 @@ mat_tex : term
         SUB_CONS(mktoken("+", MT_ADD), $1, p);
         root = $$ = father;
         }
+        | mat_tex EQ_CLASS mat_tex 
+        {
+        SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
+        root = $$ = father;
+        }
+        | mat_tex SEP_CLASS mat_tex 
+        {
+        SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
+        root = $$ = father;
+        }
         | mat_tex TAB mat_tex 
         {
-        SUB_CONS(mktoken("&", MT_TAB), $1, $3);
+        SUB_CONS(mktoken($2, MT_TAB), $1, $3);
         root = $$ = father;
         }
         | mat_tex MODULAR mat_tex 

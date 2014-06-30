@@ -132,12 +132,12 @@ void mkstr(char *);
 \\begin\{cases\}   { mkstr(yytext); return BEGIN_MAT; }
 \\end\{cases\}     { mkstr(yytext); return END_MAT; } 
 
-\\begin\{array\}\{.*\}    {} 
-\\end\{array\}            {} 
-\\begin\{align\}\{.*\}    {} 
-\\end\{align\}            {} 
-\\begin\{alignat\}\{.*\}  {} 
-\\end\{alignat\}          {} 
+\\begin\{array\}\{[^}]*\}    {} 
+\\end\{array\}               {} 
+\\begin\{align\}\{[^}]*\}    {} 
+\\end\{align\}               {} 
+\\begin\{alignat\}\{[^}]*\}  {} 
+\\end\{alignat\}             {} 
 
 \\dbinom        { mkstr(yytext); return COMBIN; }
 \\tbinom        { mkstr(yytext); return COMBIN; }
@@ -269,7 +269,7 @@ void mkstr(char *);
 \\sgn           { mkstr(yytext); return FUN_CLASS; }
 \\signum        { mkstr(yytext); return FUN_CLASS; }
 \\sign          { mkstr(yytext); return FUN_CLASS; }
-\\operatorname\{.*\} { mkstr(yytext); return FUN_CLASS; }
+\\operatorname\{[^}]*\} { mkstr(yytext); return FUN_CLASS; }
 \\ker           { mkstr(yytext); return FUN_CLASS; }
 \\deg           { mkstr(yytext); return FUN_CLASS; }
 \\gcd           { mkstr(yytext); return FUN_CLASS; }
@@ -336,8 +336,8 @@ void mkstr(char *);
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
 
-\\color\{.*\}   {} /* omit color */
-\\mbox\{.*\}    {} /* omit mbox */
+\\color\{[^}]*\} {} /* omit color */
+\\mbox\{[^}]*\}  {} /* omit mbox */
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
