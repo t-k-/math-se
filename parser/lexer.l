@@ -337,7 +337,7 @@ void mkstr(char *);
 \\varphi        { mkstr(yytext); return VAR; } 
 
 \\color\{[^}]*\} {} /* omit color */
-\\mbox\{[^}]*\}  {} /* omit mbox */
+\\mbox\{[^}]*\}  {printf("O: %s\n", yytext);} /* omit mbox */
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
