@@ -4,10 +4,11 @@
 #include <string.h>  /* for strdup() */
 #include <ctype.h>   /* for toupper() */
 
-extern int abs_toggle;
 void mkstr(char *);
+extern unsigned int stack;
 %}
 
+%x ign
 %%
 \n              { return '\n'; }
 
@@ -336,8 +337,12 @@ void mkstr(char *);
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
 
-\\color\{[^}]*\} {} /* omit color */
-\\mbox\{[^}]*\}  {printf("O: %s\n", yytext);} /* omit mbox */
+\\color\{       { BEGIN(ign); stack ++; } /* omit color */
+\\mbox\{        { BEGIN(ign); stack ++; } /* omit mbox */
+
+<ign>\{         { stack ++; }
+<ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
+<ign>.          {}
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
@@ -345,7 +350,7 @@ void mkstr(char *);
 \\[a-zA-Z]+     {} /* omit undefined control sequence */
 .               {}
 %%
-int abs_toggle = 0;
+unsigned int stack = 0;
 
 void mkstr(char *str)
 {
