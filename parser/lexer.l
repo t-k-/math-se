@@ -11,6 +11,9 @@ extern unsigned int stack;
 %x ign
 %%
 \n              { return '\n'; }
+"\\!"           {} /* omit space, prior than factorial */
+"\\,"           {} /* omit space, prior than comma */
+\\[ ]           {} /* omit space */
 
 "!"|"*"|"{"|"}" { return yytext[0]; }
 "+"|"-"|"_"|"^" { return yytext[0]; }
