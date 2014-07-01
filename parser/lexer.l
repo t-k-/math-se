@@ -44,9 +44,9 @@ extern unsigned int stack;
 \\right[ ]*"|"         { return RIGHT; }
 \\right[ ]*"\\|"       { return RIGHT; }
 \\right[ ]*\\backslash { return RIGHT; }
-\\left[ ]*\\downarrow  { return RIGHT; }
-\\left[ ]*\\Downarrow  { return RIGHT; }
-\\left[ ]*\\Updownarrow { return RIGHT; }
+\\right[ ]*\\downarrow  { return RIGHT; }
+\\right[ ]*\\Downarrow  { return RIGHT; }
+\\right[ ]*\\Updownarrow { return RIGHT; }
 
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }
