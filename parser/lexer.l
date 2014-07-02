@@ -9,6 +9,7 @@ extern unsigned int stack;
 %}
 
 %x ign
+%s tab
 %%
 \n              { return '\n'; }
 "\\!"           {} /* omit space, prior than factorial */
@@ -117,6 +118,7 @@ extern unsigned int stack;
 \\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
 
 \\\\               { mkstr(yytext); return TAB; }
+<tab>&             {}
 &                  { mkstr(yytext); return TAB; }
 
 \\begin\{matrix\}  { mkstr(yytext); return BEGIN_MAT; }
@@ -136,12 +138,18 @@ extern unsigned int stack;
 \\begin\{cases\}   { mkstr(yytext); return BEGIN_MAT; }
 \\end\{cases\}     { mkstr(yytext); return END_MAT; } 
 
-\\begin\{array\}\{[^}]*\}    {} 
-\\end\{array\}               {} 
-\\begin\{align\}\{[^}]*\}    {} 
-\\end\{align\}               {} 
-\\begin\{alignat\}\{[^}]*\}  {} 
-\\end\{alignat\}             {} 
+\\begin\{array\}\{[^}]*\}    { BEGIN(tab); } 
+\\end\{array\}               { BEGIN(INITIAL); } 
+\\begin\{align\}             { BEGIN(tab); } 
+\\end\{align\}               { BEGIN(INITIAL); } 
+\\begin\{align\*\}           { BEGIN(tab); } 
+\\end\{align\*\}             { BEGIN(INITIAL); } 
+\\begin\{equation\}          { BEGIN(tab); } 
+\\end\{equation\}            { BEGIN(INITIAL); } 
+\\begin\{split\}             { BEGIN(tab); } 
+\\end\{split\}               { BEGIN(INITIAL); } 
+\\begin\{gather\}            { BEGIN(tab); } 
+\\end\{gather\}              { BEGIN(INITIAL); } 
 
 \\dbinom        { mkstr(yytext); return COMBIN; }
 \\tbinom        { mkstr(yytext); return COMBIN; }
@@ -342,6 +350,7 @@ extern unsigned int stack;
 
 \\color\{       { BEGIN(ign); stack ++; } /* omit color */
 \\mbox\{        { BEGIN(ign); stack ++; } /* omit mbox */
+\label\{[^}]*\} { BEGIN(ign); stack ++; } /* skip label */
 
 <ign>\{         { stack ++; }
 <ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
@@ -349,6 +358,7 @@ extern unsigned int stack;
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
+
 
 \\[a-zA-Z]+     {} /* omit undefined control sequence */
 .               {}
