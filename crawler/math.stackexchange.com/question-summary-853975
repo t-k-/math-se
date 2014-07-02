@@ -1,0 +1,21 @@
+ J(\theta) = \frac 1 {2m} (X \theta - \mathbf{y})^{\intercal} (X \theta - \mathbf{y}) 
+X
+m \times n
+\theta
+n \times 1
+\mathbf{y}
+m \times 1
+ \frac d {d\theta} J(\theta) 
+\begin{eqnarray} \frac d {d\theta} J(\theta) & = & \frac 1 {2m} \frac d {d\theta} [ (X\theta - \mathbf{y})^{\intercal} (X\theta - \mathbf{y}) ] \\& = & \frac 1 {2m} [ \frac d {d\theta} (X\theta - \mathbf{y})^{\intercal} \cdot (X\theta - y) + (X\theta - y)^{\intercal} \cdot \frac d {d\theta} (X\theta - \mathbf{y}) ] \\ & = & \frac 1 {2m} [ X^{\intercal}(X\theta - \mathbf{y}) + (X\theta - \mathbf{y})^{\intercal}X ] \end{eqnarray}
+ n \times 1
+ 1 \times n 
+ 2 (X \theta - \mathbf{y})^{\intercal} X 
+A=(X\theta-\mathbf{y})
+A^TA
+\alpha
+\alpha=A^TA=\sum_{j=1}a_j^2
+\theta_k
+k^{\text{th}}
+\theta
+k \in \{1,2,3, \ldots ,n\}
+\frac{\partial \alpha}{\partial \theta}=2A^T\frac{\partial A}{\partial \theta}

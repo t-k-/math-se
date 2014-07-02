@@ -1,0 +1,16 @@
+N_i
+i
+j
+i
+L_{i,j}
+i
+T_i
+N_i
+L_{i,j}
+ \begin{align*} T_0 &= 0 \\ T_1 &= N_1 - |\{j\mid L_{1,j} = 0\}| \\ T_2 &= T_1 + N_2 - |\{j\mid L_{1,j} = 1\}| - |\{j\mid L_{2,j} = 0\}|\\ T_2 &= N_1 + N_2 - |\{j\mid L_{1,j} = 0\}| - |\{j\mid L_{1,j} = 1\}| - |\{j\mid L_{2,j} = 0\}| \end{align*} 
+T_i
+ T_i = \sum_{k=1}^{k=i} N_i - \sum_{k=1}^{k=i} \sum_{l=1}^{l = k} |\{j\mid L_{l,j} = k - l\}| 
+N_i
+i
+\# \{j\ |\  L_{i-1,j}>1 \}
+\sum_{k=0}^n \#\{j\ |\ L_{n-k,j}>k\}

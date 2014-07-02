@@ -1,0 +1,21 @@
+X_n,n\ge 1
+\sigma_n^2
+s_n^2=\sum_{k=1}^n \sigma_k^2=o(b_n^2)
+\sum_{n=1}^{\infty} EX_n^4/b_n^4<\infty
+b_n\rightarrow\infty
+\displaystyle\frac{\sum_{k=1}^nX_k^2}{b_n^2}\rightarrow 0
+A_n=\{|\frac{\sum_{k=1}^n X_k^2}{b_n^2}|>\epsilon\}
+\sum_{n=1}^{\infty}P(A_n)<\infty
+P(A_n)=P(|\sum_{k=1}^n X_k^2|>b_n^2\epsilon)
+\le \frac{1}{b_n^4\epsilon^2}E|\sum_{k=1}^n X_k^2|^2
+=\frac{1}{b_n^4\epsilon^2} E\left[\sum_{k=1}^n X_k^4+\sum_{j\ne k} (EX_k^2)^2\right]
+\displaystyle\frac{1}{\epsilon^2}\sum_{k=1}^n\frac{EX_k^4}{b_n^4}+\frac{1}{b_n^4\epsilon^2}\sum (E_k^2)^2
+=(1)+(2)
+(1)
+\sum_{n=1}^{\infty}EX_n^4/b_n^4<\infty
+b_n\rightarrow\infty
+\lim_{n\rightarrow\infty}\sum_{k-1}^nEX_k^4/b_n^4=0
+(2)
+\lim s_n^2/b_n^2=0
+P(A_n)\le \text{something going to 0 as n}\rightarrow\infty
+\sum_{n=1}^{\infty}P(A_n)<\infty

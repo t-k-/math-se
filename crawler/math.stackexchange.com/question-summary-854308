@@ -1,0 +1,14 @@
+u_t=u_{xx}+x^3u_x
+u(0,x)=u_0(x)
+u(t,0)=u(t,l)=0
+u
+(0,T) \times(0,l)
+u
+uu_t=uu_{xx}+x^3uu_x
+\int_0^T\int_0^luu_{xx}+x^3uu_xdxdt=\int_0^Tuu_x(t,l)-uu_x(t,0)-\int_0^l(u_x)^2dxdt+\int_0^T\int_0^lx^3uu_xdxdt = 
+ -||u_x||^2+0.5\int_0^T\int_0^lx^3(u^2)_xdxdt = -||u_x||^2+0.5\int_0^T\int_0^lx^3(u^2)_xdxdt = 
+-||u_x||^2+0.5\int_0^Tx^3u^2(t,l)-x^3u^2(t,0)-\int_0^l3x^2u^2dxdt =-||u_x||^2 - 1.5||xu||^2 
+0.5\int_0^lu^2(T,x)dx-0.5||u_0||^2
+||xu||^2\leq c||u_0||^2
+0<x<l
+||u||

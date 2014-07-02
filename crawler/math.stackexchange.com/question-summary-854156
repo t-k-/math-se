@@ -1,0 +1,34 @@
+f
+(x,y_1) \in f
+(x, y_2) \in f
+y_1 = y_2
+\operatorname{ran} f = \{y: \exists x
+(x,y) \in f\}
+\operatorname{dom} f = \{x: \exists y
+(x, y) \in f\}
+g \circ f = \{(x,y): \exists z
+(x,z) \in f
+(z, y) \in g\}
+\operatorname{ran} f \subseteq \operatorname{dom} g \implies\operatorname{dom} (g \circ f)=\operatorname{dom} f
+x \in \operatorname{dom} f
+\exists y
+(x,y) \in f
+\operatorname{ran} f \subseteq \operatorname{dom} g
+y \in \operatorname{dom} g
+\exists z
+(y,z) \in g
+(x,y) \in f
+y,z \in g
+(x,z) \in g \circ f
+x \in \operatorname{dom} g \circ f
+\operatorname{dom} f \subseteq \operatorname{dom} g \circ f
+x \in \operatorname{dom} g \circ f
+\exists y
+(x,y) \in g \circ f
+\exists z
+(x, z) \in f
+(z,y) \in g
+x \in \operatorname{dom} f
+(x,z) \in f
+\operatorname{dom} g \circ f \subseteq \operatorname{dom} f
+\operatorname{dom} f = \operatorname{dom} g \circ f

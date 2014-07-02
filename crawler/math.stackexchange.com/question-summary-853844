@@ -1,0 +1,45 @@
+\binom{n}{k}\binom{k}{m} = \binom{n}{m} \binom{n-m}{k-m}
+\binom{n}{m}\binom{m}{k} = \frac{n!}{m!(n-m)!} \frac{m!}{k!(m-k)!}= \frac{n!}{(n-m)!} \frac{1}{k!(m-k)!}=\frac{n!}{k!} \frac{1}{(m-k)!(n-m)!}=\frac{n!}{k!(n-k)!} \frac{(n-k)!}{(m-k)!(n-m)!}=\binom{n}{k}\frac{(n-k)!}{(m-k)!((n-k)-(m-k))!}=\binom{n}{k} \binom{n-k}{m-k}
+n
+m
+k-m
+n
+k
+{n\choose k}
+m
+{k\choose m}
+k
+m
+{n\choose k}{k\choose m}
+n
+m
+{n\choose m}
+k-m
+n-m
+{n-m\choose k-m}
+m
+k-m
+{n\choose m}{n-m\choose k-m}
+{n\choose k}{k\choose m}={n\choose m}{n-m\choose k-m}
+k
+n
+m
+k
+k
+m
+m
+k-m
+k
+\dbinom{n}{k}\dbinom{k}{m}
+n
+n-k
+k-m
+m
+k
+\dbinom{n}{m}\dbinom{n-m}{k-m}
+n
+m
+n-m
+n-k
+m
+\begin{align}\dbinom{n}{k}\dbinom{k}{m}&=\dfrac{n!}{k!\, n-k!}\dfrac{k!}{m!\, (k-m)!}\\&=\dfrac{n!}{(n-k)!\,(k-m)!\,m!}\\&=\dfrac{n!}{m!\,(n-m)!}\dfrac{(n-m)!}{(n-k)!\,(k-m)!}\\&=\dbinom{n}{m}\dbinom{n-m}{k-m}\end{align}

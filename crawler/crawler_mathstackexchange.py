@@ -2,7 +2,9 @@ import re
 import os
 import sys
 import pycurl
+import time 
 import cStringIO
+import getopt
 from bs4 import BeautifulSoup
 
 re_sdollar = re.compile(r'(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)')
@@ -85,22 +87,49 @@ def crawl(start_page, end_page):
 		find_q_page(navi_page, c)
                 time.sleep(0.5)
 
-# crawl(1, 19420)
+def crawl_force(id):
+	c = pycurl.Curl()
 
-import threading
-import time
+	save_path = root_url + '/question-summary-' + id 
+	if os.path.isfile(save_path):
+		print "overwrite existing file..."
+	else:
+		print "new file..."
+	save_file = open(save_path, 'w')
 
-new_thread = threading.Thread(target = crawl, args=(1, 5000))
-new_thread.start()
-time.sleep(5)
+	url_redir = "/questions/" + id
+	s = BeautifulSoup(curl(url_redir, c))
+	tag_a = s.find('a')
+	url = tag_a['href']
+	print 'url: ', url
+	find_p(curl(url, c), save_file)
+	save_file.close()
+	print "at: %s" % save_path
 
-new_thread = threading.Thread(target = crawl, args=(5001, 10000))
-new_thread.start()
-time.sleep(5)
+def crawl_all():
+	crawl(1, 5000)
 
-new_thread = threading.Thread(target = crawl, args=(10001, 15000))
-new_thread.start()
-time.sleep(5)
+def help(arg0):
+	print '%s [-a, --all] | [-f, --force <url>]' % arg0
+	sys.exit(1)
 
-new_thread = threading.Thread(target = crawl, args=(15001, 20000))
-new_thread.start()
+def main(arg):
+	argv = arg[1:]
+	try:
+		opts, args = getopt.getopt(argv, "af:", ['all', 'force='])
+		if len(opts) == 0:
+			raise
+	except:
+		help(arg[0])
+
+	for opt, arg in opts:
+		if opt in ("-a", "--all"):
+			print "crawling all pages..."
+			crawl_all()
+			break
+		if opt in ("-f", "--force"):
+			print "crawling %s..." % arg
+			crawl_force(arg)
+
+if __name__ == "__main__":
+	main(sys.argv)

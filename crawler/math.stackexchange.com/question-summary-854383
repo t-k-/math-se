@@ -1,0 +1,53 @@
+\mathrm{D_x} \mathrm{D_y}
+\mathcal{D}'(\mathbb{R}^2)
+\{ f \in \mathcal{D}'(\mathbb{R}^2) , \ \mathrm{D_x} \mathrm{D_y}f = 0\}.
+f(x,y)
+f
+x
+y
+f(x,y) = h(x) + g(y)
+S\in \mathcal{D}'(\mathbb{R}^k)
+T\in \mathcal{D}'(\mathbb{R}^n)
+S\otimes T \in \mathcal{D}'(\mathbb{R}^{k+n})
+(S\otimes T)[\varphi] := S\left[x \mapsto T[\varphi(x,\,\cdot\,)]\right].
+(S\otimes T)[\varphi] = T\left[y \mapsto S[\varphi(\,\cdot\,,y)]\right]
+\frac{\partial}{\partial x_1} T = 0
+T\in \mathcal{D}'(\mathbb{R}^m)
+S\in \mathcal{D}'(\mathbb{R}^{m-1})
+T = I\otimes S
+I
+\varphi\mapsto \int_{\mathbb{R}} \varphi(t)\,dt
+S\otimes T
+\mathbb{R}^2
+\eta\in\mathcal{D}(\mathbb{R})
+I[\eta] = 1
+S[\psi] := T[\eta\otimes \psi]
+(\eta\otimes\psi)(x,y) = \eta(x)\cdot \psi(y)
+\varphi\in \mathcal{D}(\mathbb{R}^m)
+\psi(y) = \int_{\mathbb{R}} \varphi(t,y)\,dt
+\psi \in \mathcal{D}(\mathbb{R}^{m-1})
+\int_{\mathbb{R}} \varphi(t,y) - \eta(t)\psi(y)\,dt = 0
+y\in \mathbb{R}^{m-1}
+\Phi(x,y) := \int_{-\infty}^x \varphi(t,y) - \eta(t)\psi(y)\,dt
+\mathcal{D}(\mathbb{R}^m)
+\varphi - \eta\otimes\psi = \frac{\partial}{\partial x_1}\Phi
+\begin{align} (I\otimes S)[\varphi] &= S\left[y\mapsto \int_{\mathbb{R}}\varphi(t,y)\,dt\right]\\ &= T[\eta\otimes\psi]\\ &= T\left[\varphi - \frac{\partial}{\partial x_1}\Phi\right]\\ &= T[\varphi] + \frac{\partial}{\partial x_1}T[\Phi]\\ &= T[\varphi], \end{align}
+T = I\otimes S
+\frac{\partial}{\partial x} \frac{\partial}{\partial y} T = 0
+\frac{\partial}{\partial y}T = I\otimes S
+S\in \mathcal{D}'(\mathbb{R})
+\psi \in \mathcal{D}(\mathbb{R})
+S[\psi] = (I\otimes S)[\eta\otimes\psi] = \frac{\partial}{\partial y}T[\eta\otimes\psi] = -T[\eta \otimes \psi'],
+S = R'
+R[\psi] = T[\eta\otimes\psi]
+\frac{\partial}{\partial y} (T - I\otimes R) = 0
+P\in \mathcal{D}'(\mathbb{R})
+T - I\otimes R = P\otimes I
+T = I \otimes R + P \otimes I,
+T
+\frac{\partial}{\partial x}\frac{\partial}{\partial y}T = 0
+I\otimes R + P\otimes I
+x
+(P\otimes I)
+y
+(I\otimes R)
