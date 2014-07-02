@@ -50,6 +50,7 @@ def find_p(q_page, sf):
 			continue
                 # a newline is equavalent to a space in Tex
 		string = string.replace("\n", ' ') 
+		string = string.replace("\r", ' ') 
 		find_tex(re_sdollar, string, sf)
 		find_tex(re_ddollar, string, sf)
 		find_tex(re_inline, string, sf)
