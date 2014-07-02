@@ -58,7 +58,7 @@ $(SEARCHER): $(SEARCHER).c libmathtree.a
 	$(CC) $< -lmathtree -o $@
 
 clean:
-	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank $(SEARCHER)
+	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER)
 	make clean -C ./front-end
 	make clean -C ./parser
 	make distclean -C $(READLN_ROOT)

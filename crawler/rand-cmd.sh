@@ -1,5 +1,6 @@
 #!/bin/bash
-cd math.stackexchange.com
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd ${DIR}/math.stackexchange.com
 file=`ls | shuf -n 1`
 echo ${file}...
-cat $file
+cat $file | tee ${DIR}/../rand
