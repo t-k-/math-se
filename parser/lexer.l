@@ -360,6 +360,8 @@ void mkstr(char *str)
 	char *p, *tmp_str = strdup(str);
 	p = tmp_str;
 	while (*p != '\0') {
+		if (*p == '\\')
+			*p = '_';
 		*p = tolower(*p);
 		p++;
 	}

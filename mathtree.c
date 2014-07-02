@@ -68,6 +68,12 @@ static char *str_type(int t_num)
 		case MT_CONST:
 			sprintf(out, "const");
 			break;
+		case MT_ONE:
+			sprintf(out, "one");
+			break;
+		case MT_ZERO:
+			sprintf(out, "zero");
+			break;
 		case MT_SQRT:
 			sprintf(out, "sqrt");
 			break;

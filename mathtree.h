@@ -21,6 +21,8 @@ enum type_enum {
 	MT_FACT,
 	MT_VAR,
 	MT_CONST,
+	MT_ONE,
+	MT_ZERO,
 	MT_SQRT,
 	MT_VERT,
 	MT_NEG,
