@@ -151,11 +151,6 @@ term : factor
      SUB_CONS(mktoken("⋅", MT_TIMES), $1, $2);
      root = $$ = father;
      }
-     | term DIV factor
-     {
-     SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
-     root = $$ = father;
-     }
      ;
 
 factor : pack 
@@ -198,6 +193,11 @@ atom : VAR
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
+     | DOTS  
+     { 
+     SUB_CONS(mktoken($1, MT_DOTS), NULL, NULL);
+     root = $$ = father;
+     }
      | SUM_CLASS  
      { 
      SUB_CONS(mktoken($1, MT_SUM_CLASS), NULL, NULL);
@@ -206,11 +206,6 @@ atom : VAR
      | FUN_CLASS  
      { 
      SUB_CONS(mktoken($1, MT_FUN_CLASS), NULL, NULL);
-     root = $$ = father;
-     }
-     | DOTS  
-     { 
-     SUB_CONS(mktoken($1, MT_DOTS), NULL, NULL);
      root = $$ = father;
      }
      | PARTIAL  
@@ -298,6 +293,11 @@ pack : atom
      | FRAC atom atom 
      { 
      SUB_CONS(mktoken("/", MT_FRAC), $2, $3);
+     root = $$ = father;
+     }
+     | pack DIV pack 
+     {
+     SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
      root = $$ = father;
      }
      | SQRT '[' tex ']' atom 

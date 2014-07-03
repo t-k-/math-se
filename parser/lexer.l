@@ -157,6 +157,11 @@ extern unsigned int stack;
 \\tbinom        { mkstr(yytext); return COMBIN; }
 \\binom         { mkstr(yytext); return COMBIN; }
 
+\\dots          { mkstr(yytext); return DOTS; }
+\.\.\.          { mkstr(yytext); return DOTS; }
+\\ldots         { mkstr(yytext); return DOTS; }
+\\cdots         { mkstr(yytext); return DOTS; }
+
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
 "|"             { mkstr(yytext); return SEP_CLASS; }
@@ -301,9 +306,6 @@ extern unsigned int stack;
 \\sqrt          { mkstr(yytext); return SQRT; }
 
 [0-9]+\.?[0-9]* { mkstr(yytext); return CONST; } 
-\\dots          { mkstr(yytext); return DOTS; }
-\\ldots         { mkstr(yytext); return DOTS; }
-\\cdots         { mkstr(yytext); return DOTS; }
 \\partial       { mkstr(yytext); return PARTIAL; } 
 \\nabla         { mkstr(yytext); return PARTIAL; } 
 \\pi            { mkstr(yytext); return PI; } 
