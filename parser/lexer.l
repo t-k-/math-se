@@ -33,8 +33,8 @@ extern unsigned int stack;
 \\left[ ]*"\\{"        { return LEFT; }
 \\left[ ]*"("          { return LEFT; }
 \\left[ ]*"<"          { return LEFT; }
-\\left[ ]*"|"          { return LEFT; }
-\\left[ ]*"\\|"        { return LEFT; }
+\\left[ ]*"|"          { return LEFT_ABS; }
+\\left[ ]*"\\|"        { return LEFT_ABS; }
 \\left[ ]*"/"          { return LEFT; }
 \\left[ ]*\\uparrow    { return LEFT; }
 \\left[ ]*\\Uparrow    { return LEFT; }
@@ -45,8 +45,8 @@ extern unsigned int stack;
 \\right[ ]*"\\}"       { return RIGHT; }
 \\right[ ]*")"         { return RIGHT; }
 \\right[ ]*">"         { return RIGHT; }
-\\right[ ]*"|"         { return RIGHT; }
-\\right[ ]*"\\|"       { return RIGHT; }
+\\right[ ]*"|"         { return RIGHT_ABS; }
+\\right[ ]*"\\|"       { return RIGHT_ABS; }
 \\right[ ]*\\backslash { return RIGHT; }
 \\right[ ]*\\downarrow  { return RIGHT; }
 \\right[ ]*\\Downarrow  { return RIGHT; }
@@ -56,14 +56,14 @@ extern unsigned int stack;
 ")"|"\\}"       { return ')'; }
 "["|"]"         { return yytext[0]; }
 
-\\r[vV]ert      { return RIGHT; }
-\\l[vV]ert      { return LEFT; }
+\\r[vV]ert      { return RIGHT_ABS; }
+\\l[vV]ert      { return LEFT_ABS; }
 \\rangle        { return RIGHT; }      
 \\langle        { return LEFT; }
-\\rfloor        { return RIGHT; }
-\\lfloor        { return LEFT; }
-\\rceil         { return RIGHT; }
-\\lceil         { return LEFT; }
+\\rfloor        { return RIGHT_FLOOR; }
+\\lfloor        { return LEFT_FLOOR; }
+\\rceil         { return RIGHT_CEIL; }
+\\lceil         { return LEFT_CEIL; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 \\sim           { mkstr(yytext); return EQ_CLASS; }

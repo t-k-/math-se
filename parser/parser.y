@@ -20,11 +20,12 @@ extern struct token_t *root;
 
 %error-verbose
 
-%token <s> LEFT RIGHT EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT
+%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT RIGHT
 %token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB COMBIN
-%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT  
+%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT
+%token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL LEFT_ABS RIGHT_ABS
 
-%type <p> tex mat_tex term factor atom script
+%type <p> tex mat_tex term factor pack atom script
 
 %right TAB
 %right SEP_CLASS
@@ -36,7 +37,7 @@ extern struct token_t *root;
 %nonassoc '!'
 %right '^' '_'
 %left DIV
-%nonassoc '{' '}' '(' ')' LEFT RIGHT
+%nonassoc '{' '}' '(' ')' '[' ']' LEFT RIGHT
 %%
 
 doc : | doc piece;
@@ -157,7 +158,7 @@ term : factor
      }
      ;
 
-factor : atom 
+factor : pack 
        {
        SUB_CONS($1, NULL, NULL);
        root = $$ = father;
@@ -192,44 +193,9 @@ atom : VAR
        root = $$ = father;
      }
      }
-     | '(' tex ')'
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
      | '{' tex '}'
      {
      SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | LEFT tex RIGHT 
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | BEGIN_MAT mat_tex END_MAT 
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | COMBIN atom atom 
-     { 
-     SUB_CONS(mktoken("C", MT_COMBIN), $2, $3);
-     root = $$ = father;
-     }
-     | FRAC atom atom 
-     { 
-     SUB_CONS(mktoken("/", MT_FRAC), $2, $3);
-     root = $$ = father;
-     }
-     | SQRT '[' tex ']' atom 
-     { 
-     SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
-     root = $$ = father;
-     }
-     | SQRT atom 
-     { 
-     SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
      root = $$ = father;
      }
      | SUM_CLASS  
@@ -280,6 +246,68 @@ atom : VAR
      | CIRC 
      { 
      SUB_CONS(mktoken($1, MT_CIRC), NULL, NULL);
+     root = $$ = father;
+     }
+     ;
+
+pack : atom 
+     {
+     SUB_CONS($1, NULL, NULL);
+     root = $$ = father;
+     }
+     | '(' tex ')'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | '[' tex ']'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | LEFT tex RIGHT 
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | LEFT_ABS tex RIGHT_ABS 
+     {
+     SUB_CONS(mktoken("|abs|", MT_ABS), $2, NULL);
+     root = $$ = father;
+     }
+     | LEFT_FLOOR tex RIGHT_FLOOR 
+     {
+     SUB_CONS(mktoken("|flo|", MT_FLOOR), $2, NULL);
+     root = $$ = father;
+     }
+     | LEFT_CEIL tex RIGHT_CEIL
+     {
+     SUB_CONS(mktoken("|cei|", MT_CEIL), $2, NULL);
+     root = $$ = father;
+     }
+     | BEGIN_MAT mat_tex END_MAT 
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | COMBIN atom atom 
+     { 
+     SUB_CONS(mktoken("C", MT_COMBIN), $2, $3);
+     root = $$ = father;
+     }
+     | FRAC atom atom 
+     { 
+     SUB_CONS(mktoken("/", MT_FRAC), $2, $3);
+     root = $$ = father;
+     }
+     | SQRT '[' tex ']' atom 
+     { 
+     SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
+     root = $$ = father;
+     }
+     | SQRT atom 
+     { 
+     SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
      root = $$ = father;
      }
      ;
