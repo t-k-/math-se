@@ -10,6 +10,8 @@ extern unsigned int stack;
 
 %x ign
 %s tab
+%x dim
+
 %%
 \n              { return '\n'; }
 "\\!"           {} /* omit space, prior than factorial */
@@ -64,6 +66,10 @@ extern unsigned int stack;
 \\lfloor        { return LEFT_FLOOR; }
 \\rceil         { return RIGHT_CEIL; }
 \\lceil         { return LEFT_CEIL; }
+\\rgroup        { return RIGHT; }      
+\\lgroup        { return LEFT; }
+\\rmoustache    { return RIGHT; }      
+\\lmoustache    { return LEFT; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 \\sim           { mkstr(yytext); return EQ_CLASS; }
@@ -173,6 +179,7 @@ extern unsigned int stack;
 \\forall        { mkstr(yytext); return SEP_CLASS; }
 \\exists        { mkstr(yytext); return SEP_CLASS; }
 \\And           { mkstr(yytext); return SEP_CLASS; }
+\\atop          { mkstr(yytext); return SEP_CLASS; }
 
 \\leftarrow      { mkstr(yytext); return SEP_CLASS; }
 \\gets           { mkstr(yytext); return SEP_CLASS; }
@@ -249,6 +256,8 @@ extern unsigned int stack;
 \\iint          { mkstr(yytext); return SUM_CLASS; }
 \\iiint         { mkstr(yytext); return SUM_CLASS; }
 \\iiiint        { mkstr(yytext); return SUM_CLASS; }
+\\idotsint      { mkstr(yytext); return SUM_CLASS; }
+\\intop         { mkstr(yytext); return SUM_CLASS; }
 \\bigodot       { mkstr(yytext); return SUM_CLASS; }
 \\biguplus      { mkstr(yytext); return SUM_CLASS; }
 \\prod          { mkstr(yytext); return SUM_CLASS; }
@@ -263,8 +272,13 @@ extern unsigned int stack;
 \\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
 \\coprod        { mkstr(yytext); return SUM_CLASS; }
 \\lim           { mkstr(yytext); return SUM_CLASS; }
+\\injlim        { mkstr(yytext); return SUM_CLASS; }
+\\varinjlim     { mkstr(yytext); return SUM_CLASS; }
+\\projlim       { mkstr(yytext); return SUM_CLASS; }
+\\varprojlim    { mkstr(yytext); return SUM_CLASS; }
 \\sup           { mkstr(yytext); return SUM_CLASS; }
 \\inf           { mkstr(yytext); return SUM_CLASS; }
+\\arg           { mkstr(yytext); return SUM_CLASS; }
 
 \\exp           { mkstr(yytext); return FUN_CLASS; }
 \\min           { mkstr(yytext); return FUN_CLASS; }
@@ -295,13 +309,13 @@ extern unsigned int stack;
 \\Pr            { mkstr(yytext); return FUN_CLASS; }
 \\det           { mkstr(yytext); return FUN_CLASS; }
 \\hom           { mkstr(yytext); return FUN_CLASS; }
-\\arg           { mkstr(yytext); return FUN_CLASS; }
 \\dim           { mkstr(yytext); return FUN_CLASS; }
 
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
 \\frac          { mkstr(yytext); return FRAC; }
 \\dfrac         { mkstr(yytext); return FRAC; }
+\\cfrac         { mkstr(yytext); return FRAC; }
 
 \\sqrt          { mkstr(yytext); return SQRT; }
 
@@ -353,13 +367,32 @@ extern unsigned int stack;
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
 
-\\color\{       { BEGIN(ign); stack ++; } /* omit color */
-\\mbox\{        { BEGIN(ign); stack ++; } /* omit mbox */
-\label\{[^}]*\} { BEGIN(ign); stack ++; } /* skip label */
+\\color\{       { BEGIN(ign); stack = 1; } /* omit color */
+\\mbox\{        { BEGIN(ign); stack = 1; } /* omit mbox */
+\label\{[^}]*\} { BEGIN(ign); stack = 1; } /* skip label */
 
 <ign>\{         { stack ++; }
 <ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
 <ign>.          {}
+
+\\hspace        { BEGIN(dim); }
+\\hskip         { BEGIN(dim); }
+\\mspace        { BEGIN(dim); }
+\\mskip         { BEGIN(dim); }
+\\mkern         { BEGIN(dim); }
+\\kern          { BEGIN(dim); }
+\\above         { BEGIN(dim); mkstr(yytext); return SEP_DIV; }
+
+<dim>em\}?      { BEGIN(INITIAL); }
+<dim>ex\}?      { BEGIN(INITIAL); }
+<dim>pt\}?      { BEGIN(INITIAL); }
+<dim>pc\}?      { BEGIN(INITIAL); }
+<dim>mu\}?      { BEGIN(INITIAL); }
+<dim>cm\}?      { BEGIN(INITIAL); }
+<dim>mm\}?      { BEGIN(INITIAL); }
+<dim>in\}?      { BEGIN(INITIAL); }
+<dim>px\}?      { BEGIN(INITIAL); }
+<dim>.          {}
 
 "^*"            {} /* omit star super-scripts */
 "_*"            {} /* omit star sub-scripts */
