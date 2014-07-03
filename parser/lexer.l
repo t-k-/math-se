@@ -299,6 +299,7 @@ extern unsigned int stack;
 \\sqrt          { mkstr(yytext); return SQRT; }
 
 [0-9]+\.?[0-9]* { mkstr(yytext); return CONST; } 
+\\dots          { mkstr(yytext); return DOTS; }
 \\ldots         { mkstr(yytext); return DOTS; }
 \\cdots         { mkstr(yytext); return DOTS; }
 \\partial       { mkstr(yytext); return PARTIAL; } 
