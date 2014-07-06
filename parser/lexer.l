@@ -80,8 +80,10 @@ extern unsigned int stack;
 \\equiv         { mkstr(yytext); return EQ_CLASS; }
 \\propto        { mkstr(yytext); return EQ_CLASS; }
 \\ge            { mkstr(yytext); return EQ_CLASS; }
+\\gt            { mkstr(yytext); return EQ_CLASS; }
 \\geq           { mkstr(yytext); return EQ_CLASS; }
 \\le            { mkstr(yytext); return EQ_CLASS; }
+\\lt            { mkstr(yytext); return EQ_CLASS; }
 \\leq           { mkstr(yytext); return EQ_CLASS; }
 \\ll            { mkstr(yytext); return EQ_CLASS; }
 \\gg            { mkstr(yytext); return EQ_CLASS; }
