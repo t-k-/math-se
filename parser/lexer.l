@@ -24,6 +24,7 @@ extern unsigned int stack;
 \\oplus         { return '+'; }
 \\pm            { return '+'; }
 \\mp            { return '+'; }
+"±"             { return '+'; }
 
 \\neg           { return '-'; }
 \\setminus      { return '-'; }
