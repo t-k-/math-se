@@ -50,6 +50,9 @@ static char *str_type(int t_num)
 		case MT_CIRC:
 			sprintf(out, "circ");
 			break;
+		case MT_TRANSPOSE:
+			sprintf(out, "tasp");
+			break;
 		case MT_TIMES:
 			sprintf(out, "times");
 			break;
@@ -228,17 +231,23 @@ void matree_attach(struct token_t *s /* son */,
 	}*/
 
 	if (s->type == f->type &&
-	   (f->type == MT_ADD || f->type == MT_TIMES ||
-	    f->type == MT_SEP_CLASS || f->type == MT_TAB)) {
-		list_foreach(&s->tnd.sons, &son_pass, f);
-
-		free(s->name);
-		free(s);
-
-		f->weight --;
+	   (f->type == MT_ADD || f->type == MT_TIMES || 
+	    f->type == MT_TAB)) {
+		; /* skip if statement */ 
+	} else if (s->type == f->type && f->type == MT_SEP_CLASS &&
+	   strcmp(s->name, f->name) == 0) {
+		; /* skip if statement */
 	} else {
 		tree_attach(&s->tnd, &f->tnd, NULL, NULL);
+		return;
 	}
+
+	list_foreach(&s->tnd.sons, &son_pass, f);
+
+	free(s->name);
+	free(s);
+
+	f->weight --;
 }
 
 struct token_t* mktoken(char* name, int type)

@@ -24,7 +24,7 @@ extern struct token_t *root;
 %token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB 
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT 
 %token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL
-%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE  SEP_DIV
+%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE  SEP_DIV TRANSPOSE
  
 %type <p> tex mat_tex term factor pack atom script
 
@@ -279,6 +279,11 @@ atom : VAR
      | CIRC 
      { 
      SUB_CONS(mktoken($1, MT_CIRC), NULL, NULL);
+     root = $$ = father;
+     }
+     | TRANSPOSE 
+     { 
+     SUB_CONS(mktoken($1, MT_TRANSPOSE), NULL, NULL);
      root = $$ = father;
      }
      ;

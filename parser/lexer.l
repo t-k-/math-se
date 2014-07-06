@@ -72,6 +72,7 @@ extern unsigned int stack;
 \\lmoustache    { return LEFT; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
+:=              { mkstr(yytext); return EQ_CLASS; }
 \\sim           { mkstr(yytext); return EQ_CLASS; }
 \\approx        { mkstr(yytext); return EQ_CLASS; }
 \\simeq         { mkstr(yytext); return EQ_CLASS; }
@@ -338,6 +339,7 @@ extern unsigned int stack;
 \\angle         { mkstr(yytext); return ANGLE; }
 \\perp          { mkstr(yytext); return PERP; }
 \\circ          { mkstr(yytext); return CIRC; }
+\\top           { mkstr(yytext); return TRANSPOSE; }
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\Pi            { mkstr(yytext); return VAR; } 
@@ -414,9 +416,11 @@ void mkstr(char *str)
 	char *p, *tmp_str = strdup(str);
 	p = tmp_str;
 	while (*p != '\0') {
+		*p = tolower(*p);
 		if (*p == '\\')
 			*p = '_';
-		*p = tolower(*p);
+		else if (*p == '\'')
+			*p = 'P';
 		p++;
 	}
 	yylval.s = tmp_str; 

@@ -15,6 +15,7 @@ enum type_enum {
 	MT_ANGLE,
 	MT_PERP,
 	MT_CIRC,
+	MT_TRANSPOSE,
 	MT_TIMES,
 	MT_COMBIN,
 	MT_FRAC,
