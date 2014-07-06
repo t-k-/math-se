@@ -313,6 +313,7 @@ extern unsigned int stack;
 
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
+\\over          { mkstr(yytext); return OVER; }
 \\frac          { mkstr(yytext); return FRAC; }
 \\dfrac         { mkstr(yytext); return FRAC; }
 \\cfrac         { mkstr(yytext); return FRAC; }
