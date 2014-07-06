@@ -127,6 +127,8 @@ extern unsigned int stack;
 \\gtrsim        { mkstr(yytext); return EQ_CLASS; }
 \\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
 
+\\stackrel      { mkstr(yytext); return STACKREL; }
+
 \\\\               { mkstr(yytext); return TAB; }
 <tab>&             {}
 &                  { mkstr(yytext); return TAB; }
