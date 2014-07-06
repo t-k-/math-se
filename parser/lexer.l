@@ -164,6 +164,7 @@ extern unsigned int stack;
 \\dbinom        { mkstr(yytext); return COMBIN; }
 \\tbinom        { mkstr(yytext); return COMBIN; }
 \\binom         { mkstr(yytext); return COMBIN; }
+\\choose        { mkstr(yytext); return CHOOSE; }
 
 \\dots          { mkstr(yytext); return DOTS; }
 \.\.\.          { mkstr(yytext); return DOTS; }

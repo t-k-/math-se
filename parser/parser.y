@@ -21,13 +21,13 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT RIGHT SEP_DIV
-%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB COMBIN
+%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB COMBIN CHOOSE
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT RIGHT_ABS
 %token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL LEFT_ABS OVER 
 
 %type <p> tex mat_tex term factor pack atom script
 
-%right OVER
+%right OVER CHOOSE
 %right TAB
 %right SEP_CLASS
 %right EQ_CLASS 
@@ -90,6 +90,11 @@ tex : %prec NULL_REDUCE
     | tex OVER tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
+    root = $$ = father;
+    }
+    | tex CHOOSE tex 
+    {
+    SUB_CONS(mktoken($2, MT_COMBIN), $1, $3);
     root = $$ = father;
     }
     | tex TAB tex 
