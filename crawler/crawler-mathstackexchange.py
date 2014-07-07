@@ -9,8 +9,6 @@ import getopt
 from dollar import find_dollar_tex
 from bs4 import BeautifulSoup
 
-re_sdollar = re.compile(r'(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)')
-re_ddollar = re.compile(r'\$\$(.+?)\$\$')
 re_inline = re.compile(r'\\\\\((.+?)\\\\\)')
 re_display = re.compile(r'\\\[(.+?)\\\]')
 
@@ -52,12 +50,7 @@ def find_p(q_page, sf):
 		# a newline is equavalent to a space in Tex
 		string = string.replace("\n", ' ') 
 		string = string.replace("\r", ' ') 
-		# The following two functions are obsolete,
-		# they are solely mistakes. 
-		# find_tex(re_sdollar, string, sf)
-		# find_tex(re_ddollar, string, sf)
 		find_dollar_tex(string, sf)
-
 		find_tex(re_inline, string, sf)
 		find_tex(re_display, string, sf)
 
