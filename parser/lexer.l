@@ -28,6 +28,7 @@ extern unsigned int stack;
 
 \\neg           { return '-'; }
 \\setminus      { return '-'; }
+\\backslash     { return '-'; }
 \\smallsetminus { return '-'; }
 \\lnot          { return '-'; } 
 
