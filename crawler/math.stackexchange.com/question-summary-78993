@@ -1,27 +1,0 @@
-]1,\infty[
-\oint_{|\omega|=1}d\omega\:(1-\omega)^{-3/4}(x-\omega)^{-3/4}\omega^{-3/4} = (1-e^{-i\frac{3\pi}2})\int_1^{\infty}d\omega\:(1-\omega)^{-3/4}(x-\omega)^{-3/4}\omega^{-3/4}.
-f(\omega) = \omega^{-3/4} (x-\omega)^{-3/4} (1-\omega)^{-3/4}
- I(x) = \oint_{\vert \omega \vert = x} f(\omega) \mathrm{d} \omega
-f(\omega)
-\omega = -x
-\vert \omega \vert = x
-\omega = x
-\omega = x z
-     I(x) = \frac{1}{\sqrt{x}} \oint_{\vert z \vert = 1} z^{-3/4} (1-z)^{-3/4} (1-x z)^{-3/4} \mathrm{d} z = \frac{1}{\sqrt{x}} \oint_{\vert z \vert = 1} h\left(z\right) \, \mathrm{d} z 
-\mathcal{C}
-\vert z \vert = 1
-C_{-1, \delta}
-\mathcal{C}
-2 \pi \delta
-\pi \delta
-\pi \delta
-\mathcal{C}_{-1,\delta}
-\delta  \to 0
- \begin{eqnarray}    \left\vert \int_{\mathcal{C}_{-1,\delta}} z^{-3/4} (1-z)^{-3/4} (1-x z)^{-3/4} \mathrm{d} z \right\vert &\le& (2(1+x))^{-3/4} \left\vert \int_{\mathcal{C}_{-1,\delta}} z^{-3/4} \mathrm{d} z \right\vert \\   &=& \left(2 (1+x) \right)^{-3/4} \frac{8\sqrt{2}}{7} \sin\left(\frac{7 \delta}{8}\right) \left( \cos\left(\frac{7 \delta}{8}\right) - \sin\left(\frac{7 \delta}{8}\right)  \right) \\ &\le& \sqrt{2} \delta \left(2 (1+x) \right)^{-3/4}  \end{eqnarray} 
-\mathcal{C} \backslash \mathcal{C}_{-1,\delta}
-(-1,0)
-(0,-1)
-\mathcal{L}
-\oint_\mathcal{L} h(z) \mathrm{d} z = 0
- \begin{eqnarray}    \oint_{\mathcal{C}} h\left(z\right) \, \mathrm{d} z &=& \oint_{\mathcal{L}} h\left(z\right) \, \mathrm{d} z + \int_0^1 \left( h\left(-y - i \epsilon \right) - h\left(-y + i \epsilon \right) \right)\, \mathrm{d} y \\    &=& \oint_{\mathcal{L}} h\left(z\right) \, \mathrm{d} z + \left( \mathrm{e}^{i \frac{3 \pi}{4}} - \mathrm{e}^{-i \frac{3 \pi}{4}} \right) \int_0^1 y^{-3/4}(1+y)^{-3/4}(1+x y)^{-3/4} \mathrm{d} y \end{eqnarray} 
-   I(x) = \frac{2 i \sin\left( 3/4 \pi \right)}{\sqrt{x}} \int_0^1 y^{-3/4}(1+y)^{-3/4}(1+x y)^{-3/4} \mathrm{d} y 

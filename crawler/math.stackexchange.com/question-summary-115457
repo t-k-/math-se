@@ -1,42 +1,0 @@
-\Omega \subseteq \mathbb{C}
-\{iy: y \geq 1, y \leq -1\}
-\Gamma
-y^2 - x^2 = \frac{1}{4}
-\Gamma
-(1 + z^2)^{-1/2}
-\Omega
-+1
-z = 0
-\frac{1}{(1+z^2)^{1/2}} = \frac{-1}{2 \pi i} \int_\Gamma \frac{1}{(z - w)(1 + w^2)^{1/2}} dw
-\Gamma
-y^2-x^2=1/4
-\Gamma
-k > 0
-C_k = \Gamma_k + \Delta_k^+ + \Delta_k^-
-\begin{align}     \Gamma_k &= \{x+iy \colon y^2-x^2=1/4 \text{ and } |x| \leq k\}, \\     \Delta_k^+ &= \left\{k+iy \colon |y| \leq \sqrt{k^2+1/4}\right\}, \\     \Delta_k^- &= \left\{-k+iy \colon |y| \leq \sqrt{k^2+1/4}\right\}, \\ \end{align}
-k>0
-f(z) = (1+z^2)^{-1/2}
-C_k
-z
-C_k
-\begin{align}     \frac{1}{(1+z^2)^{1/2}} &= \frac{1}{2 \pi i} \int_{C_k} \frac{dw}{(w-z)(1 + w^2)^{1/2}} \\     &= \frac{1}{2 \pi i} \left(\int_{\Gamma_k}g(w,z)\,dw + \int_{\Delta_k^+}g(w,z)\,dw + \int_{\Delta_k^-}g(w,z)\,dw\right), \end{align} \tag{1}
-g(w,z) = (w-z)^{-1} (1+w^2)^{-1/2}
-z
-\Gamma
-z
-C_k
-k
-\Delta_k^+
-0
-k \to \infty
-\Delta_k^-
-\begin{align}     \left|\int_{\Delta_k^+}g(w,z)\,dw\right| &\leq L(\Delta_k^+) \cdot \sup_{w \in \Delta_k^+} |g(w,z)| \\     &\leq 2 \sqrt{k^2+1/4} \cdot \frac{1}{(k-\text{Re}(z))\sqrt{1+k^2}} \\     &= O\left(\frac{1}{k}\right). \end{align}
-(1)
-z
-\Gamma
-k
-k \to \infty
-\lim_{k \to \infty} C_k = \Gamma
-\begin{align}     \frac{1}{(1+z^2)^{1/2}} &= \frac{1}{2 \pi i} \cdot \lim_{k \to \infty} \left(\int_{\Gamma_k}g(w,z)\,dw + \int_{\Delta_k^+}g(w,z)\,dw + \int_{\Delta_k^-}g(w,z)\,dw\right) \\     &= \frac{1}{2 \pi i} \int_{\Gamma} \frac{dw}{(w-z)(1 + w^2)^{1/2}} \end{align}
-z
-\Gamma

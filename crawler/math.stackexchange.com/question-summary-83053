@@ -1,15 +1,0 @@
-\begin{matrix} 0&1&0&1&0&1&0&\cdots\\ 1&1&1&1&1&1&1&\cdots\\ 0&1&0&1&0&1&0&\cdots\\ 1&1&1&1&1&1&1&\cdots\\ 0&1&0&1&0&1&0&\cdots\\ \vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\vdots \end{matrix}
-0
-N \times M
-0
-f(N,M) = \left\lceil \frac{M}{2} \right\rceil \cdot \left\lceil \frac{N}{2} \right\rceil
-m_{jk}=[(j\bmod 2=0)\lor(k\bmod 2=0)]
-m_{jk}=1-\delta_{j\,\bmod \,2,1}\delta_{k\,\bmod \,2,1}
-0
-n\times r
-\mathbf M
-\sum_{j=1}^n\sum_{k=1}^r (1-[(j\bmod 2=0)\lor(k\bmod 2=0)])
-\sum_{j=1}^n\sum_{k=1}^r [j\bmod 2=1][k\bmod 2=1]
-\left(\sum_{j=1}^n [j\bmod 2=1]\right)\left(\sum_{k=1}^r [k\bmod 2=1]\right)
-\left(\left\lfloor\frac{n-1}{2}\right\rfloor+1\right)\left(\left\lfloor\frac{r-1}{2}\right\rfloor+1\right)
-\left\lfloor\frac{n+1}{2}\right\rfloor\cdot\left\lfloor\frac{r+1}{2}\right\rfloor

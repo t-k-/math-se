@@ -1,9 +1,0 @@
-(X_i)_{i \geq 1}
-\mathcal{N}(0,1)
-M_n = \max_{i=1,\ldots,n} X_i
-P[\sqrt{2 \log n} M_n - 2 \log n \leq u ] \rightarrow e^{-e^{-u}} \text{ as } n \rightarrow \infty
-P[\sqrt{2 \log n} M_n - 2 \log n \leq u ] = P(M_n \leq \frac{u+2 \log n}{\sqrt{2 \log n}})= F^n(\frac{u+2 \log n}{\sqrt{2 \log n}})
-a_n\to\infty
-a_n^2 = b_n
-(b_n/a_n)^2 = 2\log n
- -\log P[a_n M_n - b_n \leq u ] = -n\log \left(1-\left( 1- F\left(\frac{u +b_n}{a_n}\right)\right)\right)\\ \sim n \left( 1- F\left(\frac{u +b_n}{a_n}\right)\right) \sim n \frac {a_n}{\sqrt{2\pi}(u+b_n)} \exp\left(-\frac {(u+b_n)^2}{2a_n^2}\right) \sim  n \frac {a_n}{\sqrt{2\pi}b_n} \exp\left(-\frac {(u+b_n)^2}{2a_n^2}\right); \\ \exp\left(-\frac {(u+b_n)^2}{2a_n^2}\right)= \exp\left(-\frac {u^2}{2a_n^2}\right) \exp\left(-\frac {ub_n}{a_n^2}\right) \exp\left(-\frac {b_n^2}{2a_n^2}\right) \sim \frac {\exp\left(-u\right)}n 

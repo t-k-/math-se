@@ -1,22 +1,0 @@
- S={(x,y,z) \in R^3 : z = x^2 - y^2 , x^2 + y^2 \leq 1 } 
-\phi :R^3 \to R 
-\phi (x,y,z)= (4z +8y^2 + 1)^{3/2}
-\iint_{S} \phi dS 
- \int_{0}^{2\pi} \int_{0}^{1} \phi (T(r,\theta)) \left \| T_{\theta} \times T_{r} \right \| dr d\theta 
-x= r \cos \theta 
-y= r \sin \theta 
- z = r [2\cos^2 \theta - 1] 
- T(r,\theta)= (r\cos\theta , r\sin\theta, r[\cos^2\theta - 1]) 
- \int_{0}^{2\pi} \int_{0}^{1} \phi (T(r,\theta) \left \| T_{\theta} \times T_{r} \right \| dr d\theta 
- || T_{r} \times T_{\theta} || = || (r\cos\theta[2\cos^2 \theta-1+2\sin\theta], r\sin\theta, -r) ||
- \int_{0}^{2\pi} \int_{0}^{1} (8 r^2 \sin^2(\theta)+4 r(2 \cos^2(\theta)-1)+1)^{3/2} \sqrt((r \sin(\theta))^2+(2 r \cos^3(\theta)+2 r \sin^2(\theta) \cos(\theta)-r \cos(\theta))^2+(-r \cos^2(\theta)-r \sin^2(\theta)|^2) dr d\theta 
- \iint_{S} \phi(T(r,\theta)) \left || T_{r} \times T_{\theta} \right || dS 
-S = \{ T(r,\theta) = (r \cos \theta, r \sin \theta, r^2 (\cos^2 \theta - \sin^2 \theta)) \, | \, \theta \in [0,2\pi], r \in [0,1] \}
-S
-\phi(T(r,\theta)) = (4(r^2(\cos^2 \theta - \sin^2 \theta)) + 8 (r \sin \theta)^2 + 1)^{3/2} 
- = (4r^2 \cos^2 \theta - 4 r^2 \sin^2 \theta + 8 r^2 \sin^2 \theta + 1)^{3/2} = (4r^2 + 1)^{3/2}
- T_r \times T_{\theta} =  \begin{vmatrix} \vec i & \vec j & \vec k \\ \cos \theta & \sin \theta & 2r(\cos^2 \theta - \sin^2 \theta) \\ - r \sin \theta & r \cos \theta  & r^2(-4 \sin \theta \cos \theta) \end{vmatrix} 
- = (-4r^2\sin^2 \theta \cos \theta - 2r^2 \cos^3 \theta  + 2r^2 \sin^2 \theta \cos \theta, 4r^2 \sin \theta \cos^2 \theta - 2r^2 \sin \theta \cos^2 \theta + 2r^2 \sin^3 \theta, r) 
- =(-2r^2 \cos \theta, 2 r^2 \sin \theta,r) \quad 
-\quad ||T_r \times T_{\theta}|| = \sqrt{4r^4 + r^2} = r \sqrt{4r^2 + 1}
- \int_0^{2\pi} \int_0^1 (4r^2+1)^{3/2} (r\sqrt{4r^2 +1}) \, dr d\theta = 2\pi \int_0^1 r(4r^2 + 1)^2 \, dr 

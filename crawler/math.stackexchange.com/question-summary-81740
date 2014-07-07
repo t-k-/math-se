@@ -1,25 +1,0 @@
-\exp(1)
-(0,2)
-Y \sim U(0,2)
-U\sim U(0,1)
-U \le \mathrm{e}^{-a} \times (a+1-Y)
-U> \mathrm{e}^{-b}/(1-b+Y)
-U> \mathrm{e}^{-Y}
-X=Y
-a \times \mathrm{e}^{-a}
-a\ge 1
-1/4 \times (a+1)^2 \times \mathrm{e}^{-a}
-a<1
-a=1
-0 < a < 2
-0<b<1
-0<y<2
-1+x \le \exp(x)
-x \in \mathbb{R}
-x \to -x
-1-x > 0
-\exp(x) \le\frac{1}{1-x}
-  \mathrm{e}^{-a} (a-y+1) \leq \mathrm{e}^{-y} \leq \frac{\mathrm{e}^{-b}}{y+1-b} 
-\mathbb{P}( U \le \mathrm{e}^{-a} (a-Y+1))
-F_U(u) = \mathbb{P}(U \le u) = \min(\max(u,0),1)
-  \begin{eqnarray}    \mathbb{P}(U \le \mathrm{e}^{-a} (a-Y+1)) &=& \mathbb{E}( F_U(\mathrm{e}^{-a} (a-Y+1)) ) = \mathbb{E}(\min(\max( \mathrm{e}^{-a} (a-Y+1) ,0),1) ) \\    &=& \int_0^2 \min(\max( \mathrm{e}^{-a} (a-Y+1) ,0),1)  \, \frac{1}{2} \mathrm{d}y  \\     &=& \int_{0}^{\min(2,a+1)} \mathrm{e}^{-a} (a-Y+1) \frac{1}{2} \mathrm{d}y     \end{eqnarray} 

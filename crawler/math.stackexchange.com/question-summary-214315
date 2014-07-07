@@ -1,9 +1,0 @@
- T\colon L^1[0,1] \to L^1[0,1]: f\mapsto \left(t\mapsto \int_0^t f(s)ds\right) 
-f\in L^1([0,1])
-\|Tf\|_1=\int_0^1 \left|\int^t_0 f(s) ds\right| dt \le \int_0^1 \int_0^1 |f(s)| ds dt = \|f\|_1
-\|T\|\le 1
-f_n(x)=n\chi_{[0,1/n]}(x)
-||f_n||_1=1
-||T||=1
-\int^t_0 n\chi_{[0,1/n]}(s) ds=\left\{\begin{array}\,1 & \text{if}\;t\ge1/n\\ nt & \text{if}\;t<1/n\end{array}\right.
-||Tf_n||_1=\int^1_0\int_0^t n\chi_{[0,1/n]}(s)ds dt=\int_0^{1/n}nt\,dt+\int_{1/n}^1 1\,dt =1-\frac{1}{2n}\rightarrow 1\;\text{as}\;n\rightarrow\infty. 

@@ -1,68 +1,0 @@
-n+1
-k
-k
-k
-n
-k
-n+1
-k+1
-k
-P(k \text{ successes})=P(k+1 \text{ successes})=\frac{1}{2}
-P(1\ |\ k \text{ successes in }n\text{ trials})
-1
-0
-\frac{k+1}{n+1}
-\frac{n+1-k}{n+1}
-n+1
-n+1
-S
-S
-\{0,\ldots,n+1\}
-n
-k
-O
-k
-n
-O
-S\in\{k,k+1\}
-S=k+1
-{\Bbb P}(S=k)={\Bbb P}(S=k+1)=\frac{1}{n+2}
-S=k
-k
-n
-\frac{n+1-k}{n+1}
-S=k+1
-k
-n
- {\Bbb P}(S=k+1|O)=\frac{{\Bbb P}(S=k+1\ \hbox{and}\ O)}{{\Bbb P}(O)}
- =\frac{{\Bbb P}(O|S=k+1){\Bbb P}(S=k+1)}{{\Bbb P}(O|S=k+1){\Bbb P}(S=k+1)+{\Bbb P}(O|S=k){\Bbb P}(S=k)}. 
- {\Bbb P}(S=k+1|O)=\frac{P(O|S=k+1)}{P(O|S=k+1)+P(O|S=k)}.\qquad(1) 
- {\Bbb P}(O|S=k)=\frac{n+1-k}{n+1},\qquad(2) 
- {\Bbb P}(O|S=k+1)=\frac{k+1}{n+1}.\qquad(3) 
- {\Bbb P}(S=k+1|O)=\frac{k+1}{n+2}. 
-T
-p_T
-T
-k
-n-k
-T
-k+1
-n-k+1
-W
-U=p
-T
-p^k (1-p)^{n-k}
-T
-p^{k+1} (1-p)^{n-k}
-p
-k
-n
-p
-\frac{k+1}{n+2}
-p_T=\frac{k+1}{n+2}.
- p_T={\Bbb P}(W|T)=\frac{{\Bbb P}(W\ \hbox{and}\ T)}{{\Bbb P}(T)}= \frac{{\Bbb E}({\Bbb P}(W\ \hbox{and}\ T|U))}{{\Bbb E}({\Bbb P}(T|U))}.\qquad(4)
- p_T={\Bbb P}(W|T)=\frac{ \int_{0\le p\le 1} p^{k+1} (1-p)^{n-k} \, dp } { \int_{0\le p\le 1} p^k (1-p)^{n-k} \, dp }=\frac{k+1}{n+2}. 
-p_T
-p
-p\sim U
-[0,1]

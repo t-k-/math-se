@@ -1,78 +1,0 @@
-(b_{k})_{k=0}^{\infty}
-b_{0}=2
-b_{k+1}=\frac {1} {3-b_{k}}
-k\geq0
-\lim_{k \to \infty} b_{k}
-\begin{align*} b_{0}&=2\\ b_{1}&=1\\ b_{2}&=\frac12\\ b_{3}&=\frac25\\ b_{4}&=\frac{5}{13}\\ b_{5}&=\frac{13}{34}\\ b_{6}&=\frac{34}{89}\\ b_{6}&=\frac{89}{233}\\ &\vdots \end{align*}
-(b_k)_{k=0}^\infty=\left(2,1,\frac12,\frac25,\frac5{13},\frac{13}{34},\frac{34}{89},\frac{89}{233},\,\dots\right)\;.
-b_{k+1}=f(b_k)
-f
-x=3
-L
-L
-f
-f(x)=x
-f(x)=\frac1{3-x}\;,
-L=\lim_{k\to\infty}b_{k+1}=\lim_{k\to\infty}f(b_k)=f\left(\lim_{k\to\infty}b_k\right)=f(L)\;,
-L=\frac{3\pm\sqrt5}2\;,
-L=\frac{3-\sqrt5}2\;.
-\begin{align*}f\left(\frac{F_{2k-3}}{F_{2k-1}}\right)&=\frac1{3-\frac{F_{2k-3}}{F_{2k-1}}}\\&=\frac{F_{2k-1}}{3F_{2k-1}-F_{2k-3}}\\&=\frac{F_{2k-1}}{2F_{2k-1}+(F_{2k-1}-F_{2k-3})}\\&=\frac{F_{2k-1}}{2F_{2k-1}+F_{2k-2}}\\&=\frac{F_{2k-1}}{F_{2k-1}+(F_{2k-1}+F_{2k-2})}\\&=\frac{F_{2k-1}}{F_{2k-1}+F_{2k}}\\&=\frac{F_{2k-1}}{F_{2k+1}}\;. \end{align*}
-\lim_{k\to\infty}\frac{F_{k+1}}{F_k}=\varphi\triangleq\frac12(1+\sqrt5)\;,
-\begin{align*}\lim_{k\to\infty}\frac{F_{2k-3}}{F_{2k-1}}&=\lim_{k\to\infty}\left(\frac{F_{2k-3}}{F_{2k-2}}\cdot\frac{F_{2k-2}}{F_{2k-1}}\right)\\ &=\lim_{k\to\infty}\frac{F_{2k-3}}{F_{2k-2}}\cdot\lim_{k\to\infty}\frac{F_{2k-2}}{F_{2k-1}}\\ &=\lim_{k\to\infty}\left(\frac{F_{2k-2}}{F_{2k-3}}\right)^{-1}\cdot\lim_{k\to\infty}\left(\frac{F_{2k-1}}{F_{2k-2}}\right)^{-1}\\ &=\varphi^{-1}\cdot\varphi^{-1}\\ &=\varphi^{-2}\;, \end{align*}
-\frac12(3-\sqrt5)
-(1)
-\frac1{3-\frac12(3-\sqrt5)}<\frac1{3-b_{k+1}}<\frac1{3-b_k}\;,
-\frac2{3+\sqrt5}<b_{k+2}<b_{k+1}\;.
-(1)
-k\ge 0
-\frac2{3+\sqrt5}=\frac12(3-\sqrt5)\;,
-\frac12(3-\sqrt5)<b_{k+2}<b_{k+1}\;,
-(1)
-0<b_{k+1}<b_k
-k\ge 0
-x<3
-f(x)>0
-f_n
-n^{th}
-3f_{n+2} - f_n = f_{n+4}
-\dfrac{f_{n}}{f_{n+2}}
-\dfrac{f_{n+1}}{f_n} \to \varphi
-\varphi^{-2}
-\varphi
-k=m+n
-n
-{b_{n + m}} = \frac{1}{{3 - \dfrac{1}{{3 - \dfrac{1}{{3 -  \cdots \dfrac{1}{{3 - \dfrac{1}{{3 - {b_m}}}}}}}}}}}
-\mathop {\lim }\limits_{k \to \infty } {b_k} = \dfrac{1}{{3 - \dfrac{1}{{3 - \dfrac{1}{{3 - \dfrac{1}{{3 - \dfrac{1}{{3 -  \cdots }}}}}}}}}}
-\ell<1
-n>1
-\ell^2-n\ell+1=0
-\ell_2 = \frac{n-\sqrt{n^2-4}}{2}
-\ell_1  = n - \dfrac{1}{{n - \dfrac{1}{{n - \dfrac{1}{{n -  \cdots }}}}}}
-1
-{\ell _2} = n - {\ell _1}
-{\ell _1} = \dfrac{1}{{n - \dfrac{1}{{n - \dfrac{1}{{n -  \cdots }}}}}}
-n=3
-b
-b_k
-b
-b = \frac{1}{3-b}
-b
-\omega=1/(3-\omega)
-0\lt\omega\lt1
-\omega
-x\mapsto x-1/(3-x)
-[0,1]
-x=0
-x=1
-0\leqslant b_0\leqslant2
-0\lt c_k\leqslant1/4
-k
-b_k\to\omega
-k\to\infty
-b_0\lt\omega
-b_0\gt\omega
-c_k\to1/(3-\omega)^2=\omega^2
-b_k=\omega+\omega^{2k+o(k)}
-b_k=\omega+C(b_0)\cdot\omega^{2k}\cdot(1+o(1))
- b_{k+1}-\omega=\frac1{3-b_k}-\frac1{3-\omega}=c_k\cdot(b_k-\omega), 
- c_k=\frac1{(3-b_k)(3-\omega)}. 

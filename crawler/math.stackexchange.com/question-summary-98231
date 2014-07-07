@@ -1,35 +1,0 @@
-r
-d
-d>r
-(x,y)
-R
-(d,0)
-d
-x
-\ell = \sqrt{(x-d)^2 + y^2}.
-x=r \cos \phi
-y=r \sin\phi
-\begin{align} \langle \ell \rangle &= \frac{1}{\pi R^2} \int_0^R  dr \int_0^{2\pi} d\phi\, r  \sqrt{(r\cos \phi -d)^2 + r^2\sin^2 \phi}\\ &= \frac{1}{\pi R^2} \int_0^R dr \int_0^{2\pi} d\phi\, r \sqrt{r^2 + d^2 -2 d r\cos\phi}. \end{align}
-d\gg R
-\sqrt{}
-\langle \ell \rangle = \frac{1}{\pi R^2} \int_0^R dr \int_0^{2\pi} d\phi\, [r d- r^2 \cos \phi + \frac{r^3}{2d} \sin^2 \phi] = d + \frac{R^2}{8d}
-d \approx R
-\langle \ell \rangle = \frac{1}{\pi R^2} \int_0^R dr \int_0^{2\pi} d\phi\,  r^2 \sqrt{2 (1-\cos \phi)}  = \frac{8 R}{3\pi}
-d\ll R
-\langle \ell \rangle = \frac{1}{\pi R^2} \int_0^R dr \int_0^{2\pi} d\phi\,  \left[r^2 -rd\cos\phi + \frac{d^2}{2} \cos^2\phi\right]    = \frac{2 R}{3} + \frac{d^2}{2R}
-d
-r=\frac{d}{2}\cos\theta
--\arcsin\frac{r}{d}\le\theta\le\arcsin\frac{r}{d}
-\theta
-2\sqrt{r^2-d^2\sin^2\theta}
-\frac{1}{2\arcsin\frac{r}{d}}\int_{-\arcsin\frac{r}{d}}^{\arcsin\frac{r}{d}}\left(2\sqrt{r^2-d^2\sin^2\theta}\cdot\frac{d}{2}\cos\theta\right)d\theta,
-r=\frac{d}{2}\cos\theta
-2\sqrt{r^2-d^2\sin^2\theta}
-\frac{1}{\pi}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(2\sqrt{r^2-d^2\sin^2\theta}\cdot\frac{d}{2}\cos\theta\right)d\theta.
-d=1
-J(r) = \int_0^{2\pi} \sqrt{1-2r\cos(\theta) + r^2}\ d\theta
-4 (1+r) \text{EllipticE}\left(\frac{2\sqrt{r}}{1+r}\right)
-\frac{1}{\pi R^2} \int_0^R r J(r)\ dr
-0 < R < 1
-(1-R^2)^3 {}_2F_1(5/2,5/2; 2; R^2)
-R > 1

@@ -1,22 +1,0 @@
-D\subset{\mathbb R^m}
-C^1
-u\in C^2(\bar{D})
-D
-u(x)=\int_{\partial D}\bigg\{\frac{\partial u}{\partial\nu}(y)\Phi(x,y)-u(y)\frac{\partial \Phi(x,y)}{\partial\nu}\bigg\}ds(y),\quad x\in D
-\Phi(x,y):= \begin{cases} \frac{1}{2\pi}\ln\frac{1}{|x-y|},\quad m=2\\ \frac{1}{4\pi}\frac{1}{|x-y|},\quad m=3. \end{cases}
- \lim_{r\to 0}\int_{\Omega(x;r)}\bigg\{u(y)\frac{\partial\Phi(x,y)}{\partial\nu(y)}-\frac{\partial u}{\partial\nu}(y)\Phi(x,y)\bigg\}ds(y)=u(x)? 
-u\in C^2(\bar{D})
-\partial u/\partial \nu
-M
- \begin{eqnarray} \left|\int_{\Omega(x;r)}\frac{\partial u}{\partial\nu}(y)\Phi(x,y)\mathrm ds(y)\right| &\le& M\int_{\Omega(x;r)}|\Phi(x,y)|\mathrm ds(y) \\ &=& Mcr^{m-1}\Phi(r)\;, \end{eqnarray}
-c
-2\pi
-4\pi
-\Phi(r)
-\Phi(x,y)=\Phi(|x-y|)
-r\to0
-r\ln r\to0
-\partial\Phi(x,y)/\partial\nu(y)=-\Phi'(r)=1/(cr^{m-1})
- \begin{eqnarray} \lim_{r\to 0}\int_{\Omega(x;r)}u(y)\frac{\partial\Phi(x,y)}{\partial\nu(y)}ds(y) &=& \lim_{r\to 0}\int_{\Omega(x;r)}\frac{u(y)}{cr^{m-1}}ds(y) \\ &=& \lim_{r\to 0}\frac1c\int_{\Omega(x;r)}u(y)\mathrm d\Omega \\ &=& u(x) \end{eqnarray} 
-\mathrm d\Omega
-u

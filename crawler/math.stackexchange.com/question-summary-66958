@@ -1,68 +1,0 @@
-x \Phi(x) + \Phi'(x) \geq 0 \quad \forall x\in\mathbb{R}
-\Phi
-\Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}} e^{-y^2/2} {\rm d} y
-f(x) = x \Phi(x) + \Phi'(x)
- \begin{align} f'(x) & = \Phi(x) + x \Phi'(x) + \Phi''(x) \\ & = \Phi(x) + x\Phi'(x) - x\Phi'(x) \\ & = \Phi(x) \\ & >0 \end{align}
-\lim_{x\to-\infty} f(x) = 0
-f
-K
-T
-\sigma>0
-S
-V(S) = (S - K) \Phi\left( \frac{S-K}{\sigma S \sqrt{T}} \right) + \sigma S \sqrt{T} \Phi' \left( \frac{S-K}{\sigma S \sqrt{T}} \right) 
-\sigma S\sqrt{T} = 1
-x=S-K
-V(x) = x \Phi(x) + \Phi'(x)
-V(x)>0
-\forall x
-\phi(x) = (2\pi)^{-1/2}\exp(-x^2/2)
-\Phi^{\prime}(x)
- x\Phi(x) + \phi(x) = \int_{-\infty}^x x\phi(t)\mathrm dt + \phi(x) \geq \int_{-\infty}^x t\phi(t)\mathrm dt + \phi(x) = -\phi(t)\biggr\vert_{-\infty}^x + \phi(x) = 0 
-x<0
-\Phi''(x)\geq 0,\:\text{ in }(-\infty,0).
-\Phi''(x)=-xe^{-x^2/2}>0,\quad\forall x< 0.
-z<x<0
-\Phi'(x)
-\Phi(x)
-0
-g
-(-\infty,0).
-g'(x)<0.
--e^{-x^2/2}
-x<0
-g(x)=-e^{-x^2/2}\Phi(x).
-g(x)=-\sqrt{2\pi}\frac{1}{\sqrt{2\pi}}e^{-x^2/2}\Phi(x)=-\sqrt{2\pi}\Phi'(x)\Phi(x).
-g(x)-g(z)=-\sqrt{2\pi}(\Phi'(x)\Phi(x)-\Phi'(z)\Phi(z))<0.
--(x\Phi(x)+\Phi'(x))e^{-x^2/2}<0.
-x\Phi(x)+\Phi'(x)>0.
-f(x) = x\Phi(x) + \Phi'(x)
-f'(x) \geq 0
-x
-f
-f(x) \to 0
-x \to -\infty
-f(x) \geq 0
-x \in \mathbb R
- \lim_{u \to -\infty} f(u) \leq f(x). 
-f(x) \to 0
-x \to -\infty
-x\Phi(x) \to 0
-\Phi'(x) \to 0
-x \to -\infty
-\lim_{x \to -\infty} f(x) = 0
-f(x) = x \Phi(x) + \Phi'(x)
- x \int_{\frac{x^2}{2}}^\infty \mathrm{e}^{-t} \frac{\mathrm{d} t}{\sqrt{2t}} < \frac{x}{\sqrt{2 \frac{x^2}{2}}} \int_{\frac{x^2}{2}}^\infty \mathrm{e}^{-t} \mathrm{d} t = \int_{\frac{x^2}{2}}^\infty \mathrm{e}^{-t} \mathrm{d} t = \mathrm{e}^{-\frac{x^2}{2}}
-x>0
-   g(x) = \sqrt{2 \pi}  f(-x) = \mathrm{e}^{-\frac{x^2}{2}} - x \int_{x}^\infty \mathrm{e}^{-\frac{y^2}{2}} \mathrm{d} y  \qquad \text{for} \qquad x > 0. 
-    g(x) = \mathrm{e}^{-\frac{x^2}{2}} - x \int_{\frac{x^2}{2}}^\infty \mathrm{e}^{-t} \frac{\mathrm{d} t}{\sqrt{2t}} \, > \, \mathrm{e}^{-\frac{x^2}{2}} -  \int_{\frac{x^2}{2}}^\infty \mathrm{e}^{-t} \mathrm{d} t = 0 
-g(x) < \mathrm{e}^{-\frac{x^2}{2}}
-\lim_{x \to \infty} g(x) = \lim_{x \to \infty} \sqrt{2 \pi} f(-x)
-\mathrm{e}^{-\frac{x^2}{2}}
-x
-\Phi(x)
-x\ge0
-x\Phi(x)+\Phi'(x)\ge0
- \Phi'(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2/2}\tag{1} 
-x<0
-x\Phi(x)+\Phi'(x)\ge0
- \begin{align} \Phi(x) &=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^{-t^2/2}\;\mathrm{d}t\\ &\le\frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^{-t^2/2}\frac{t}{x}\;\mathrm{d}t\\ &=-\frac{1}{x}\frac{1}{\sqrt{2\pi}}e^{-x^2/2}\\ &=-\frac{1}{x}\Phi'(x)\tag{2} \end{align} 

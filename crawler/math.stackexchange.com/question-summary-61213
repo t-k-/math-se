@@ -1,28 +1,0 @@
-a
-\int_{x_1+\ldots+x_n \geq a} \exp\left[ -\pi \left(x_1^2+\ldots+x_n^2 \right)\right] dx_1\cdots dx_n, 
-t = x_1+\ldots+x_n
-x_n
-I(n,a,b) = \int_{x_1+\ldots+x_n \geq a} \exp\left[ -\pi \left(b x_1^2+\ldots+x_n^2 \right)\right] dx_1\cdots dx_n
-I(n,a,b) = \int_{-\infty}^{\infty}\cdots \int_{-\infty}^{\infty} \int_{a}^{\infty}  \exp\left[ -\pi \left(b (t-x_2-\ldots-x_n)^2+\ldots+x_n^2 \right)\right] dt dx_2\cdots dx_n.
-I(n,a,b)=\tfrac{1}{\sqrt{1+b}}I(n-1,a,\tfrac{b}{1+b}).
-I(n,a,1) = \tfrac{1}{\sqrt{2}} I(n-1,a,\tfrac{1}{2}) = \ldots = \tfrac{1}{\sqrt{k}} I(n-k+1,a,\tfrac{1}{k}) = \ldots = \tfrac{1}{\sqrt{n}} I(1,a,\tfrac{1}{n}).
-I(n,a,1) = \int_{a}^\infty \frac{1}{\sqrt{n}} \exp \left[ -\pi \frac{1}{n} t^2\right]dt = \int_{a/\sqrt{n}}^\infty \exp \left[ -\pi t^2\right]dt,
-X_k
-v=1/(2\pi)
-I_n(a)=P(X_1+\cdots+X_n\ge a)
-X_1+\cdots+X_n
-nv
-I_n(a)=P(\sqrt{nv}X\ge a)
-X
-a/\sqrt{nv}=a\sqrt{2\pi/n}
-I_n(a)=P(X\ge a\sqrt{2\pi/n})=1-\Phi(a\sqrt{2\pi/n})
-x_1,\ldots,x_n
-w_1,\ldots,w_n
-w_1
-x_1,\ldots,x_n
-w_2,\ldots,w_n
-n-1
-x_1+\cdots+x_n = a
-(a/n,\ldots,a/n)
- \int_{w_1\ge\text{something}} \exp(-\pi(w_1^2+\cdots+w_n^2) \; dw_1\cdots dw_n. 
- \int_{w_1\ge\text{something}} \exp(-\pi w_1^2)\;dw_1 \cdot \int_{-\infty}^\infty \exp(-\pi w_2^2)\;dw_2 \cdots \int_{-\infty}^\infty \exp(-\pi w_n^2)\;dw_n. 

@@ -1,33 +1,0 @@
-\left\{X_n\right\}
-1
-M_n
-X_i
-n
-\left\{a_n\right\}
-P[M_n-a_n\leq x]
-G(x)
-n\rightarrow\infty
-x\in\mathbb{R}
-G(x)
-P[M_n-a_n\leq X]=\left(1-e^{-(x+a_n)} \right)^n
-a_n
-M
-M_n
-\mathbb{P} (X_i \leq x) = 1 - \exp(-\lambda x)
-M_n = \displaystyle \max_{1 \leq i \leq n} X_i
-X_i
-a_n = \frac{\log(n)}{\lambda}
-F_{M_{\infty}}(x) = \exp(-\exp(-\lambda x))
-F_{M_{\infty}}(x)
-\displaystyle \lim_{x \rightarrow -\infty} F(x) = 0
-\displaystyle \lim_{t \rightarrow \infty} F(x) = 1
-F_{M_{\infty}}(x) = \exp(-\exp(-\lambda x))
-a_n = \log(n)
-M_n
-M_{\infty}
-F_{M_{\infty}}(x) = \exp(-\exp(-\lambda x))
-\mathbb{P} (M_n \leq x) = \mathbb{P} (X_i \leq x \text{ for all X}_i \in \{1,2,\ldots,n\}).
-\mathbb{P} (X_i \leq x \text{ for all X}_i \in \{1,2,\ldots,n\}) = \prod_{k=1}^{n} \mathbb{P} (X_i \leq x) = \left( 1 - \exp(-\lambda x) \right)^n.
-F_{M_n}(x) = \mathbb{P} (M_n \leq x) = \mathbb{P} (X_i \leq x \text{ for all X}_i \in \{1,2,\ldots,n\}) = \left( 1 - \exp(-\lambda x) \right)^n.
-F_{M_n - a_n}(x) = \mathbb{P} (M_n - a_n \leq x) = \mathbb{P} (M_n \leq x + a_n) = \left( 1 - \exp(-\lambda (x+a_n)) \right)^n.
- \begin{align*}  F_{M_n - a_n}(x) & = \left( 1 - \exp \left(-\lambda \left(x+ \frac{\log(n)}{\lambda} \right) \right) \right)^n \\   & = \left( 1 - \exp(-\lambda x) \exp(-  \log(n)) \right)^n \\   & = \left(1 - \frac{\exp(-\lambda x)}{n} \right)^n \\ \lim_{n \rightarrow \infty} F_{M_n - a_n}(x) & = \lim_{n \rightarrow \infty} \left(1 - \frac{\exp(-\lambda x)}{n} \right)^n \\   & = \exp(-\exp(-\lambda x)) \end{align*}

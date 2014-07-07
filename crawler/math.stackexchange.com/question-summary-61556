@@ -1,28 +1,0 @@
-a
-b
-0 \leq a, b < 2^{n+1}
-(n+1)
-(a_n, \cdots, a_0)
-(b_n, \cdots, b_0)
-c
-a
-b
-+, -, *, /, \%
-c
-\sum_{i=0}^n a_ib_i 2^i
-\sum_{i=0}^n (a_i \oplus b_i) 2^i
-a
-b
- a = \sum_{i=0}^n a_i 2^i, ~~ b = \sum_{i=0}^n b_i 2^i. 
-c = \sum_{i=0}^n (a_i \oplus b_i) 2^i  = \sum_{i=0}^n (a_i +  b_i -2 a_ib_i) 2^i = a + b - 2 \sum_{i=0}^n a_ib_i 2^i
-a,b
-a = (a_1,a_2,\ldots,a_n)
-b = (b_1,b_2,\ldots,b_n)
-a_i,b_i \in \{0,1\}
-a_n,b_n
-a_n = a\%2
-b_n = b\%2
-a_{n-1}=[(a-a_n)/2]\%2
-b_{n-1}=[(b-b_n)/2]\%2
-c = a\text{ XOR }b
-c_n = (a_n+b_n)\%2

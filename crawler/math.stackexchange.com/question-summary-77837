@@ -1,33 +1,0 @@
-(G,\cdot)
-X
-g,h\in G
-x\in X
-\nu:G\times X \rightarrow X,
- \textrm{(GA1)} \ \ \  \nu(1,x)=x
- \textrm{(GA2)} \ \ \ \nu(g,\nu(h,x))=\nu(g h, x)
-g,h \in G
-f:G\rightarrow H,
-\textrm{(HOM1)} \ \ \  f(1_G)=1_H 
-\textrm{(HOM2)} \ \ \ f(gh)=f(g)f(h)
-\Rightarrow
-\Rightarrow
-\nu
-X_{\leftrightarrow}
-X
-\tau: G\rightarrow X_{\leftrightarrow} ,
-\tau(g)(x)=\nu(g,x),
-(\tau(g)\circ \tau(h))(x)=\tau(g)(\nu(h,x))=\nu(g,\nu(h,x)),
-\nu(gh,x)=\tau(gh)(x)
-\nu(g,\nu(h,x))=\tau(g)(\tau(h)(x))
-\tau(gh)(x)=\nu(gh,x)
-g,h\in G
-x\in X
- \textrm{(GA2)} \Leftrightarrow \textrm{(HOM2)} \Rightarrow \textrm{(HOM1)}  \Rightarrow \textrm{(GA1)}. 
-G=\{1_G\}
-X=\mathbb{Z}
-\nu:G\times X\to X
-\nu(1_G,n)=\begin{cases} n,&n\text{ is even}\\ n-1,&n\text{ is odd}\;. \end{cases}
-1
-n\in\mathbb{Z}
-2
-\nu(1_G,\nu(1_G,n)) = \nu(1_G,n) = \begin{cases} n,&n\text{ is even}\\ n-1,&n\text{ is odd}\;, \end{cases}

@@ -1,16 +1,0 @@
-J_{1}
-\int_{0}^{\infty} \sin \left(x\right) \sin \left(\frac{a}{x}\right) \ dx = \frac{\pi \sqrt{a}}{2} J_{1} \left( 2 \sqrt{a} \right)
-\int_{0}^{\infty} \sin \left(x\right) \sin \left(\frac{a}{x}\right) \ dx= \int_{0}^{\infty} \sum_{k=0}^{\infty }(-1)^{k}\frac{x^{2k+1}}{2k+1!} \cdot  \sum_{l=0}^{\infty }(-1)^{l}\frac{a^{2l+1}x^{-2l-1}}{2l+1!} \ dx
-= \int_{0}^{\infty} \sum_{l=0}^{\infty } \sum_{k=0}^{\infty }(-1)^{k+l}\frac{x^{2(k-l)}}{(2k+1)!(2l+1)!} a^{2l+1} \ dx
-\frac{\pi \sqrt{a}}{2}J_{1}(2sqrt{a})=\frac{\pi \sqrt{a}}{2} \sum_{l=0}^{\infty}\frac{(-1)^l}{2^{2l+1}l!(1+l)!}   2^{l+\frac{1}{2}}a^{l+\frac{1}{2}}
-=\pi \sum_{l=0}^{\infty}\frac{(-1)^l}{2^{l+\frac{3}{2}}l!(1+l)!} a^{l+1}
-f(a) = \int_0^\infty \sin(x) \sin\left(\frac{a}{x}\right) \mathrm{d} x
-a\in \mathbb{R}
-a > 0
-(0,1)
-(1,\infty)
-x \to 1/x
-a
-c_1 = \frac{\pi}{2}
-   f(a) = \int_{1}^{\infty} \sin(1/x) \sin(a x) \frac{\mathrm{d} x}{x^2}  + \int_1^\infty \sin(x) \sin(a/x) \mathrm{d} x 
-    f(a) = a \left( \int_{1}^\infty \frac{1}{x} \sin(x) \mathrm{d} x + \int_{1}^\infty \sin(1/x) \frac{\mathrm{d} x }{x} \right) + \mathcal{o}(a) = \frac{\pi}{2} a + \mathcal{o}(a) 

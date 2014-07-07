@@ -1,13 +1,0 @@
-(a_n)
-n\geq 1
-\Psi
-a_n \longmapsto \sum_{n=1}^{\infty}\frac{2a_n}{3^n}.
-(a_n)\lt (b_n)
-k
-a_k\lt b_k
-a_k=0
-b_k=1
-\begin{align*} \Psi(b_n) - \Psi(a_n) &= \sum_{n=1}^{\infty}\frac{2b_n-2a_n}{3^n}\\ &= \sum_{n=k}^{\infty}\frac{2b_n - 2a_n}{3^n}\\ &= \frac{2}{3^k} + \sum_{n=k+1}^{\infty}\frac{2b_n-2a_n}{3^n}\\ &\geq \frac{2}{3^k} - \sum_{n=k+1}^{\infty}\frac{2}{3^n}\\ &= \frac{2}{3^k} - 2\sum_{n=k+1}^{\infty}\frac{1}{3^n}. \end{align*}
-\Psi
-\begin{align*} \sum_{n=k+1}^{\infty}\frac{1}{3^n} &= \sum_{m=0}^{\infty}\frac{1}{3^{k+1}}\left(\frac{1}{3}\right)^n \\ &= \frac{1}{3^{k+1}}\left(\frac{3}{2}\right) = \frac{1}{2(3^k)}, \end{align*}
-\Psi(b_n) - \Psi(a_n) \geq \frac{2}{3^k} - \frac{2}{2(3^k)} = \frac{1}{3^k}\gt 0;

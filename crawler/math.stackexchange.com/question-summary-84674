@@ -1,9 +1,0 @@
-f
-f: (a,b)\to \mathbb{R}
-F'=f
-\int f^{-1}(x)dx=xf^{-1}(x)-F(f^{-1}(x))+C
-\int u'v=uv-\int v'u+C
-f^{-1}(x) = y
-x = f(y)
-dx = f'(y) dy
-\begin{align} \int f^{-1}(x) dx & = \int y d(f(y)) & (\because y = f^{-1}(x))\\ & = y f(y) - \int f(y) dy + C & (\text{Integration by parts})\\ & = f^{-1}(x)x - F(y) + C & (\because F' = f \implies \int fdy = F)\\ & = xf^{-1}(x) - F(f^{-1}(x)) + C & (\because y = f^{-1}(x)) \end{align}

@@ -1,16 +1,0 @@
-G
-G(x)=\frac{e^{-\frac{x}{2}-\frac{x^2}{4}}}{\sqrt{1-x}}
-2
-2
-(n-1)!
-n
-\frac12(n-1)!
-n
-2
-3
-c_n
-n
-c_n=\begin{cases} 0,&n=0,1,2\\\\ \frac12(n-1)!,&n\ge 3\;. \end{cases}
-\begin{align*} C(x) &= \sum_{n\ge 0}c_n\frac{x^n}{n!}\\ &=\frac12\sum_{n\ge 3}\frac{(n-1)!}{n!}x^n\\ &=\frac12\sum_{n\ge 3}\frac{x^n}n\\ &=\frac12\left(\sum_{n\ge 1}\frac{x^n}n-x-\frac{x^2}2\right)\;. \end{align*}
-\sum_{n\ge 1}\frac{x^n}n
-G(x)=e^{C(x)}

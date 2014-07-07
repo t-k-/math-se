@@ -1,8 +1,0 @@
-X
-F(x)
-E(F(X))
- p(x)= \begin{cases} 0.1,\quad &x=-3\\ 0.2, &x=0\\ 0.3, &x=2.2\\ 0.1, &x=3\\ 0.3, &x=4\\ 0,&\text{otherwise} \end{cases} 
- F(x)= \begin{cases} 0,\quad &x<-3\\ 0.1, &-3<=x<0\\ 0.3, &0<=x<2.2\\ 0.6, &2.2<=x<3\\ 0.7, &3<=x<4\\ 1,& 4<=x \end{cases} 
- \mathbb E(F(X))=\sum_xp(x)F(x)=\sum_xp(x)\sum_{y\leqslant x}p(y) 
- 1=\sum_xp(x)\cdot\sum_yp(y)=2\sum_xp(x)\sum_{y\leqslant x}p(y)-\sum_xp(x)^2 
- \mathbb E(F(X))=\frac12\left(1+\alpha\right),\qquad\text{with}\ \alpha=\underline{\ \ \ \ \ \ \ \ }. 

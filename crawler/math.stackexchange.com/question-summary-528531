@@ -1,2 +1,0 @@
-\sum_{r=0}^{n}\sum_{j=0}^{r}\sum_{k=0}^{r}
-\begin{array}{rcl} \sum_{r=0}^n\sum_{j=0}^r\sum_{k=0}^r f(r,j,k) &=& \sum_{r=0}^n\sum_{k=0}^r\sum_{j=0}^r f(r,j,k) \\ &=& \sum_{j=0}^n\sum_{r=j}^n\sum_{k=0}^r f(r,j,k) \\ &=& \sum_{k=0}^n\sum_{r=k}^n\sum_{j=0}^r f(r,j,k) \\ &=& \sum_{j=0}^n\sum_{k=0}^n\sum_{r=\max(k,j)}^n f(r,j,k) \\ &=& \sum_{k=0}^n\sum_{j=0}^n\sum_{r=\max(k,j)}^n f(r,j,k). \end{array}

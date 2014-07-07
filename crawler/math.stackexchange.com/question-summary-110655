@@ -1,26 +1,0 @@
-X_t
-dX_t=\dots dB_t
-B_t
-X_t = (B_t+t)\exp\left(-B_t-\frac{t}{2}\right),
-T_n
-X_t
-\mathcal{S}_1:=\{ X^{T_n}_t : n\geq 1\} \text{ or }\mathcal{S}_2:=\{X_T : \text{ T is a bounded stopping time} \}
-f(x,t):= \exp{(-(x+t))}(x+t)
-\frac{\partial f}{\partial x},\frac{\partial f}{\partial t},\frac{\partial^2 f}{\partial t^2}
-f
-\frac{\partial f}{\partial x} = \exp{(-(x+t))}-\exp{(-(x+t))}(t+x)
-\frac{\partial f}{\partial t} = \exp{(-(x+t))}-\frac{1}{2}\exp{(-(x+t))}(t+x)
-\frac{\partial^2 f}{\partial t^2} = -2\exp{(-(x+t))}+\exp{(-(x+t))}(t+x)
-f(B_s,t)=\int_0^t{[\exp{(-(B_s+s))}-\exp{(-(B_s+s))}(s+B_s)]dB_s}\\ + \int_0^t{[\exp{(-(B_s+s))}-\frac{1}{2}\exp{(-(B_s+s))}(s+B_s)]}ds +\int_0^t{[-\exp{(-(B_s+s))}+\frac{1}{2}\exp{(-(B_s+s))}(s+B_s)]d\langle B_s,B_s\rangle}= \int_0^t{[\exp{(-(B_s+s))}-\exp{(-(B_s+s))}(s+B_s)]dB_s}\\ + \int_0^t{[\exp{(-(B_s+s))}-\frac{1}{2}\exp{(-(B_s+s))}(s+B_s)]}ds +\int_0^t{[-\exp{(-(B_s+s))}+\frac{1}{2}\exp{(-(B_s+s))}(s+B_s)]ds}
-ds
-f(B_s,t)=\int_0^t{[\exp{(-(B_s+s))}-\exp{(-(B_s+s))}(s+B_s)]dB_s}
-M_t = B_t
-H_s=\exp{(-(B_s+s))}-\exp{(-(B_s+s))}(s+B_s)
-X_t
-E[X_t \mid \mathcal{F}_s] = X_s
-B_t
-\mathcal{F}_t
-X_t
-B_t = B_s + (B_t - B_s)
-N \sim N(0, \sigma^2)
-E[e^{-N}] = e^{\sigma^2/2}, \quad E[N e^{-N}] = -\sigma^2 e^{\sigma^2/2}.

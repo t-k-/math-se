@@ -1,30 +1,0 @@
-\lim {\left({\dfrac{(2n)!}{(n!)^2}}\right)}^{1/n} \to \frac{1}{4}
-n \to \infty
-4
-1
-L
-L
- \begin{align} \frac{(2(n+1))!}{(n+1)!^2} &=\frac{(2n+2)(2n+1)}{(n+1)(n+1)}\frac{(2n)!}{n!^2}\\ &=4\left(1-\frac{1}{2n+2}\right)\frac{(2n)!}{n!^2}\\ \end{align} 
- \begin{align} \left(\frac{(2n)!}{n!^2}\right)^{1/n} &=4\left(\prod_{k=0}^{n-1}\left(1-\frac{1}{2k+2}\right)\right)^{1/n}\\ &\to4 \end{align} 
-\dfrac{(2n)!}{(n!)^2}
-\displaystyle{ {2n} \choose n}
-2n
-2^{2n}= 4^n
-{{2n} \choose n} \le 4^n
-4^n \le (n+1){{2n} \choose n}
- \frac{4^n}{n+1} \le {{2n} \choose n} \le 4^n 
-(n+1)^{1/n} \to 1
-{{2n} \choose n} ^ {1/n} \to 4
-n! \approx \sqrt{2 \pi n} \left(\frac{n}{e}\right)^n
-{\left({\dfrac{(2n)!}{(n!)^2}}\right)}^{1/n} \approx {\left({\dfrac{\sqrt{4 \pi n} \left(\frac{2n}{e}\right)^{2n}}{{2 \pi n} \left(\frac{n}{e}\right)^{2n}}}\right)}^{1/n} = 4\left(\frac{1}{n\pi}\right)^\frac{1}{2n} \approx 4.
-t\mapsto \ln t
-[1,2]
-t\mapsto e^t
-\lim_{n\to \infty}\frac{1}{n}\sum_{k=1}^n\ln \left(\frac{n}{k}\right)=-\int_0^1\ln t\, dt=1.\tag{1}\label{eq1}
-\begin{align*} \ln\left(\dfrac{(2n)!}{(n!)^2}\right)^{1/n} &=\frac{1}{n}\left[ \sum_{k=1}^{2n} \ln k-2\sum_{k=1}^n \ln k \right]\\ &= \frac{1}{n}\sum_{k=1}^n \ln(n+k)-\ln(k)\\ &= \frac{1}{n}\left[\sum_{k=1}^n\ln n+\sum_{k=1}^n\ln\left( 1+\frac{k}{n} \right)-\sum_{k=1}^n\ln k\right]\\ &= \frac{1}{n}\sum_{k=1}^n \ln\left(\frac{n}{k}\right)+\frac{1}{n}\sum_{k=1}^n\ln\left( 1+\frac{k}{n} \right). \end{align*}
-\begin{align*} \lim_{n\to\infty}\ln\left(\dfrac{(2n)!}{(n!)^2}\right)^{1/n} &= -\int_0^1\ln t\, dt+\int_1^2 \ln t\, dt\\ &=1+(-1+\ln 4), \end{align*}
-\lim_{n\to\infty}\ln\left(\dfrac{(2n)!}{(n!)^2}\right)^{1/n}=\ln 4.
-\lim_{n\to\infty} \left(\dfrac{(2n)!}{(n!)^2}\right)^{1/n}=4.
-I_{n}=(\frac{(2n)!}{(n!)(n!)})^{\frac{1}{n}}
-\quad
-\lim log I_{n}=\lim log(\frac{2(2n+1)}{n+1})=log4 

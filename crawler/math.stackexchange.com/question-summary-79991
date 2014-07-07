@@ -1,17 +1,0 @@
- T(n)= 2 T(n/2)+n \lg(n), \quad n>2,\quad T(2)=2,\quad n = 2^{k}
-n
-n
-2
-T(n) = \Theta(n (\lg n)^2)
- \frac{T(n)}{n} = \frac{T(n/2)}{(n/2)} + \lg n. 
- \begin{eqnarray*} \frac{T(n)}{n}  &=& \lg (n) + \lg \left( \frac{n}{2} \right) + \lg \left( \frac{n}{2^2} \right) + \cdots + \lg (1) \\ &=& \lg n + (\lg n - 1) + (\lg n -2) + \cdots + 0 \\ &=& \frac{1}{2} \lg n \cdot (\lg n +1) \\ &=& \Theta((\lg n)^2), \end{eqnarray*} 
-n
-2
-n
-2
-n=2^k
-\begin{align}T(2^k) &= 2^kk + 2\cdot 2^{k-1}(k-1) + 2^2\cdot2^{k-2}(k-2) + \cdots + 2^{k-2}\cdot 2^2 2 + 2^{k-1}2 \\ &= 2^k \sum _{j=1}^{k} j = 2^k\frac{k(k+1)}{2} = 2^{k-1}k(k+1)\quad \mathrel{\Big[=} O(n\log^2(n))\Big]\end{align}
-T(2^k)
-n
-2
-\begin{align*}T(2^k) &= k2^k + 2T(2^{k-1})\\ &= k2^k+2\bigl((k-1)2^{k-1}+2T(2^{k-2})\bigr) \\ &= k2^k+(k-1)2^k+4T(2^{k-2}) \end{align*}

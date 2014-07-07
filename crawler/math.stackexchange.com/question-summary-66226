@@ -1,58 +1,0 @@
-a, b \ge 0
-c, d > 0
-\frac{a}{c} + \frac{b}{d} > 1
-\lim_{(x,y)\rightarrow (0,0)}\frac{\left|x\right|^a\left|y\right|^b}{\left|x\right|^c + \left|y\right|^d} = 0
-u = \vert x\vert^c
-v = \vert y\vert^d
-\lim\limits_{(u,v)\to (0,0)}\dfrac{u^{a/c}v^{b/d}}{u+v}
-\alpha = \dfrac{a}{c}
-\beta = \dfrac{b}{d}
-\lim\limits_{(u,v)\to (0,0)}\dfrac{u^\alpha v^\beta}{u+v}
-\alpha + \beta > 1
-(u,v)
-u+v
-0
-u+v \to 0
-(u,v)\to (0,0)
-\dfrac{u^\alpha v^\beta}{u+v}
-u+v
-C
-\dfrac{u^\alpha v^\beta}{u+v}
-u+v=C
-\dfrac{u^\alpha v^\beta}{u+v}
-f(u) = \dfrac1C u^\alpha (C-u)^\beta
-\begin{align*} f'(u) &= \frac1C\left(\alpha u^{\alpha-1}(C-u)^\beta - \beta u^\alpha (C-u)^{\beta-1}\right)\\ &= \frac{u^{\alpha-1}(C-u)^{\beta-1}}{C}(\alpha(C-u)-\beta u)\\ &= \frac{u^{\alpha-1}(C-u)^{\beta-1}}{C}(\alpha C - (\alpha+\beta)u). \end{align*}
-u
-v
-0 < u < C
-f'(u)=0
-u_C = \dfrac{\alpha C}{\alpha+\beta}
-f'(u) > 0
-0 < u < u_C
-f'(u) < 0
-u_C < u < C
-f(u)
-u_C
-\begin{align*} f(u_C) &= \frac1C u_C^\alpha(C - u_C)^\beta\\ &= \frac1C \cdot \frac{\alpha^\alpha C^\alpha}{(\alpha+\beta)^\alpha} \cdot \frac{\beta^\beta C^\beta}{(\alpha+\beta)^\beta}\\ &= \frac{\alpha^\alpha \beta^\beta C^{\alpha+\beta}}{C(\alpha+\beta)^{\alpha+\beta}}\\ &= \frac{\alpha^\alpha \beta^\beta}{(\alpha+\beta)^{\alpha+\beta}} C^{\alpha+\beta-1} \end{align*},
-\dfrac{\alpha^\alpha \beta^\beta}{(\alpha+\beta)^{\alpha+\beta}}
-C
-\alpha+\beta > 1
-\alpha+\beta - 1 > 0
-\lim\limits_{C\to 0^+} C^{\alpha+\beta-1} = 0
-\lim\limits_{C\to 0^+} f(u_C) = 0
-1/(f+g)
-f
-g
-1/f
-1/g
-f\ge g
-1/(f+g) \le 1/f
-1/(f+g) \le 1/g
-g\ge f
-|x|^c \ge |y|^d
-|x|^c \le |y|^d
-(x,y)
-a/c+b/d>1
-(|x|^c)^{a/c} (|y|^d)^{b/d}
-|x|^c \leq |x|^c + |y|^d
-|y|^d \leq |x|^c + |y|^d

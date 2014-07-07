@@ -1,43 +1,0 @@
-\lim_{n \to \infty }\sqrt[n]{b^{2^{-n}}-1}
-f(x)=\sqrt[x]{b^{2^{-x}}-1}
-R
-ln(f)
-1/2
-R
-x
-0
-e^x-1
-n^{th}
-(2)
-2^{-1}=\frac{1}{2}
- e^x-1=x+O(x^2)\tag{1} 
- \begin{align} b^{2^{-n}}-1 &=e^{\log(b)\;2^{-n}}-1\\ &=\log(b)\;2^{-n}+O(4^{-n})\\ &=\log(b)\;2^{-n}(1+O(2^{-n}))\tag{2} \end{align} 
-\left(b^{2^{-n}}-1\right) 2^n \sum_{k=0}^{2^n-1} b^{k 2^{-n}} 2^{-n} = b - 1
-\lim_{n \to \infty} \sum_{k=0}^{2^n-1} b^{k 2^{-n}} 2^{-n} = \int_0^1 b^x \mathrm{d} x = \frac{b-1}{\log b}
- \lim_{n \to \infty} \sqrt[n]{b^{2^{-n}}-1} = \frac{1}{2} \lim_{n \to \infty} \sqrt[n]{ \log b } = \frac{1}{2} 
-x=2^{-n}
-b^x=e^{x\log b} =1 +x\log b+O(x^2)
-\lim_{n\rightarrow \infty } \frac{1}{n}\log\left(b^{2^{-n}}-1\right).
-\lim_{x\rightarrow 0} -\frac{\log 2}{\log x} \log\left( b^x -1\right).
-\lim_{x\rightarrow 0} -\frac{\log 2}{\log x}(\log(x\log b)+\log(1+O(x)))=\lim_{x\rightarrow 0}-\log 2+O\left(\frac{1}{\log x}+x\right)=-\log 2.
-e^{-\log 2}=\frac{1}{2}
-b>1
-k= b^n
-\log x = \mathop {\lim }\limits_{n \to \infty } k\left( {{x^{1/k}} - 1} \right)
-\log b = \mathop {\lim }\limits_{n \to \infty } {2^n}\left( {{b^{1/{2^n}}} - 1} \right)
-\mathop {\lim }\limits_{n \to \infty } \frac{{\root n \of {{2^n}\left( {{b^{1/{2^n}}} - 1} \right)} }}{{\root n \of {{2^n}} }} = \mathop {\lim }\limits_{n \to \infty } \root n \of {\left( {{b^{1/{2^n}}} - 1} \right)}  = \mathop {\lim }\limits_{n \to \infty } \frac{{\root n \of {\log b} }}{2} = \frac{1}{2}
-c_n=b^{2^{-n}}-1
-\frac{c_{n+1}}{c_n}=\frac{\sqrt{b^{2^{-n}}}-1}{b^{2^{-n}}-1}=\frac{1}{\sqrt{b^{2^{-n}}}+1}\to\frac{1}{2}.
-b \gt 1
-a_n = b^{1/2^n} + 1
-a_n \to 2
-n \to \infty
-\log a_n \to \log 2
-S_n = \frac{1}{n} \sum_{k=1}^{n} s_k
-s_n
-\log a_n
-c_n = \sqrt[n]{a_1a_2 \dots a_n} \to 2
-(b^{1/2^n}-1)a_n a_{n-1} \dots a_1 = b-1
-(x-1)(x+1)(x^2+1)(x^{4} + 1) \dots (x^{2^k} + 1) = x^{2^{k+1}} -1
- \sqrt[n]{b^{2^{-n}} -1} = \frac{\sqrt[n]{b-1}}{c_n}
- \sqrt[n]{b^{2^{-n}} -1} \to \frac{1}{2}

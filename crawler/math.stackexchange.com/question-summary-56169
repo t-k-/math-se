@@ -1,45 +1,0 @@
-F(X_1, X_2,\; \dots \;, X_n)
-F'
-F'
-A_1\leq X_1 \leq A_2
-B_1 \leq X_2 \leq B_2
-F
-f: \mathbb Z^n \to \mathbb R
-F(y_1, y_2, \ldots, y_n) = \sum_{x_1=-\infty}^{y_1}\;\sum_{x_2=-\infty}^{y_2} \cdots \sum_{x_n=-\infty}^{y_n} f(x_1, x_2, \ldots, x_n). 
-T = \sum_{x_1=a_1}^{b_1}\;\sum_{x_2=a_2}^{b_2} \cdots \sum_{x_n=a_n}^{b_n} f(x_1, x_2, \ldots, x_n) 
-a_k \le b_k
-1 \le k \le n
-F
-\begin{aligned} T &= F(b_1, b_2, \ldots, b_n) \\ &-\ F(a_1-1, b_2, \ldots, b_n) - F(b_1, a_2-1, \ldots, b_n) - \cdots \\ &+\ F(a_1-1, a_2-1, \ldots, b_n) + \cdots \\ &\;\vdots \\ &\pm\ F(a_1-1, a_2-1, \ldots, a_n-1) \end{aligned}
-a_k-1
-b_k
-a_k-1
-q_k(\xi) = \begin{cases} a_k-1 & \text{if the }k\text{-th lowest binary digit of }\xi\text{ is 1} \\ b_k & \text{if the }k\text{-th lowest binary digit of }\xi\text{ is 0} \end{cases}
-\sigma(\xi) = \begin{cases} \phantom +1 & \text{if the sum of the binary digits of }\xi\text{ is even} \\ -1 & \text{if the sum of the binary digits of }\xi\text{ is odd.} \end{cases}
-T = \sum_{\xi=0}^{2^n-1} \sigma(\xi)\ F(q_1(\xi), q_2(\xi), \ldots, q_n(\xi)). 
-S \subseteq \{1,\dots,n\}
-F^S(a_1,\dots,a_n) = F(b_1,\dots,b_n)
-b_k = a_k-1
-k \in S
-b_k = a_k
-F(a_1,\dots,a_n) = \sum\limits_{x_1=0}^{a_1}\sum\limits_{x_2=0}^{a_2}\dots\sum\limits_{x_n=0}^{a_n}F'(x_1,\dots,x_n).
-0 \le c_k \le a_k
-k=1,\dots,n
-S = \left\{k \in \{1,\dots,n\}: c_k < a_k \right\}
-F'(c_1,\dots,c_n)
-F^T(a_1,\dots,a_n)
-T \subseteq S
-T
-\{1,\dots,n\}
-F'(c_1,\dots,c_n)
-\sum\limits_{k=1}^{|S|}(-1)^{k+1}\binom{|S|}{k}
-\sum\limits_{k=1}^{|S|}(-1)^{k+1}\binom{|S|}{k} = (-1)\sum\limits_{k=1}^{|S|}(-1)^k \binom{|S|}{k} = (-1)\left(\sum\limits_{k=0}^{|S|}(-1)^k \binom{|S|}{k} - 1\right) = 1
-n=2
-G(a_1,\dots,a_n) = \sum\limits_{k=1}^n (-1)^{k+1}\sum\limits_{|T|=k}F^T(a_1,\dots,a_n),
-F(a_1,\dots,a_n) = F'(a_1,\dots,a_n)+G(a_1,\dots,a_n),
-\begin{align*} F'(a_1,\dots,a_n) &= F(a_1,\dots,a_n) - \sum\limits_{k=1}^n (-1)^{k+1}\sum\limits_{|T|=k}F^T(a_1,\dots,a_n) \\ &= F(a_1,\dots,a_n) + \sum\limits_{k=1}^n (-1)^k\sum\limits_{|T|=k}F^T(a_1,\dots,a_n). \end{align*}
-F(x,y) = F'(x,y) + F(x-1,y) + F(x,y-1) - F(x-1,y-1).
-a_k
-0
-F'
-F

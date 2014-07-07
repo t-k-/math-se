@@ -1,23 +1,0 @@
-\int \sin^n{x} \ dx = -\frac{1}{n} \cos{x} \cdot x \ \sin^{n - 1}{x} + \frac{n - 1}{n} \int \sin^{n - 2}{x} \ dx
-u = \sin^{n - 1}{x}
-du = (n - 1) \cdot \sin^{n - 2}{x} \cdot \cos{x} \ dx
-v = -\cos{x}
-dv = \sin{x} \ dx
-\int \sin^n{x} \ dx =  \sin^{n - 1}{x} \cdot \sin{x} \ dx
-\int \sin^n{x} \ dx = \underbrace{\sin^{n - 1}{x}}_{u} \cdot \underbrace{-\cos{x}}_{v} - \int \underbrace{-\cos{x}}_{v} \cdot \underbrace{(n - 1) \cdot \sin^{n - 2}{x} \cdot \cos{x} \ dx}_{du}
-\int \sin^n{x} \ dx = -\cos{x} \cdot \sin^{n - 1}{x} + (n - 1)\int \sin^{n - 2}{x} \cdot \cos^{2}{x} \ dx
-\int \sin^n{x} \ dx = -\cos{x} \cdot \sin^{n - 1}{x} + (n - 1)\int \sin^{n - 2}{x} \cdot \left(1 - \sin^{2}{x}\right) \ dx
-\int \sin^{n - 2}{x} \cdot \left(1 - \sin^{2}{x}\right) \ dx
-\int \sin^{n - 2}{x} \ dx - (n - 1) \int \sin^{n}{x} \ dx
-\sin^{n}{x}
-\int \sin^n{x} \ dx = -\cos{x} \cdot \sin^{n - 1}{x} + (n - 1)\int \sin^{n - 2}{x} \ dx - (n - 1) \int \sin^{n}{x} \ dx
-n\int \sin^n{x} \ dx = -\cos{x} \cdot \sin^{n - 1}{x} + (n - 1)\int \sin^{n - 2}{x} \ dx
-\int \sin^n{x} \ dx = -\frac{1}{n} \cos{x} \cdot x \ \sin^{n - 1}{x} + \frac{n - 1}{n} \int \sin^{n - 2}{x} \ dx
-I_n = \int \sin^n{x} \ dx 
- \int u(x) v^'(x) dx = u(x) v(x) - \int v(x) u^' (x) dx 
-u(x) = \sin^{n-1}{x} \hspace{3pt}
-\hspace{3pt} v^'(x) = \sin x 
- \Rightarrow v(x) = -\cos x
- \begin{align*} I_n &= -\cos x \hspace{3pt} \sin^{n-1}x + \int \cos^2 x \hspace{4pt} (n-1) \sin^{n-2} x \hspace{4pt} dx \\     &= -\cos x \hspace{3pt} \sin^{n-1}x + (n-1) \int \sin^{n-2} x \hspace{4pt} dx - (n-1) \int \sin^{n} dx\\     &= -\cos x \hspace{3pt} \sin^{n-1}x + (n-1) \int \sin^{n-2} x \hspace{4pt} dx - (n-1) I_n \end{align*} 
- \Rightarrow (1+n-1)I_n = -\cos x \hspace{3pt} \sin^{n-1}x + (n-1) \int \sin^{n-2} x dx 
- \Rightarrow I_n = \frac{-\cos x \hspace{3pt} \sin^{n-1}x}{n} + \frac{(n-1)}{n} \int \sin^{n-2} x dx 

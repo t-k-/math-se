@@ -1,40 +1,0 @@
-x_n = a_n - b_n
-a_n
-b_n
-a_n = \sqrt{a_{n-1}b_{n-1}}
- b_n = \frac{a_{n-1} + b_{n-1}}{2}
-a_1 = \sqrt{ab}
-b_1 = \frac{a + b}{2}
-a,b
-a > b > 0
-x_n
-x_n's
-\forall \epsilon > 0
-\exists n
--\epsilon < x_n < 0
-n
-x_n = -\frac{1}{2}(\sqrt{a_{n-1}} - \sqrt{b_{n-1}})^2 \leq 0.
-x_n
- \begin{eqnarray} \left|\frac{x_n}{x_{n-1}}\right| &=& \frac{\left|-\frac12(\sqrt{a_{n-1}} - \sqrt{b_{n-1}})^2\right|}{\left|a_{n-1}-b_{n-1}\right|} \\ &=& \frac{\left|-\frac12(\sqrt{a_{n-1}} - \sqrt{b_{n-1}})^2\right|}{\left|(\sqrt{a_{n-1}} - \sqrt{b_{n-1}})(\sqrt{a_{n-1}} + \sqrt{b_{n-1}})\right|} \\ &=& \frac12\frac{\left|(\sqrt{a_{n-1}} - \sqrt{b_{n-1}})\right|}{(\sqrt{a_{n-1}} + \sqrt{b_{n-1}})} \\ &\le&\frac12 \\ &<&1\;. \end{eqnarray} 
-x_12^{-(n-1)}
-0
-x_n\le0
-a_n-b_n\to0
-b_n^2-a_n^2\to0
-(1)
-|b_{n-1}^2-a_{n-1}^2|
-a_n,b_n\ge0
- \begin{align} x_n&=a_n-b_n\\    &=\frac{a_n^2-b_n^2}{a_n+b_n}\\    &=\frac{a_{n-1}b_{n-1}-\frac{1}{4}(a_{n-1}+b_{n-1})^2}{a_n+b_n}\\    &=\frac{-\frac{1}{4}(a_{n-1}-b_{n-1})^2}{a_n+b_n}\\    &\le0 \end{align} 
- \begin{align} |b_n^2-a_n^2|&=\left|\frac{1}{4}(a_{n-1}+b_{n-1})^2-a_{n-1}b_{n-1}\right|\\            &=\frac{1}{4}|b_{n-1}-a_{n-1}|^2\tag{1} \end{align} 
- \begin{align} \left|\frac{b_n^2-a_n^2}{b_{n-1}^2-a_{n-1}^2}\right| &=\frac{1}{4}\left|\frac{(b_{n-1}-a_{n-1})^2}{b_{n-1}^2-a_{n-1}^2}\right|\\ &=\frac{1}{4}\left|\frac{b_{n-1}-a_{n-1}}{b_{n-1}+a_{n-1}}\right|\\ &\le\frac{1}{4}\tag{2} \end{align} 
-|b_n^2-a_n^2|\le4^{-n}|b_0^2-a_0^2|
-a_n:=(a_{n-1}+b_{n-1})/2
-b_n:=\sqrt{a_{n-1}b_{n-1}}
-a_n\geq b_n
-n
-a_n
-b_n
-\mu
-a
-b
-a_n - b_n={(a_{n-1}-b_{n-1})^2\over 2(\sqrt{a_{n-1}}+\sqrt{b_{n-1}})^2 }\leq{1\over2}(a_{n-1}-b_{n-1})\ .

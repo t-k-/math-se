@@ -1,22 +1,0 @@
-\csc^3{x} \ dx
-\int\frac{\csc^2 x - \csc x \cot x}{\csc x - \cot x}\,dx%
-\int \frac{d(-\cot x + \csc x)}{-\cot x + \csc x} \quad?
-dv = \csc^2x
-u=\csc x
-v=-\cot x
-du = -\cot x \csc x \,dx
- \int \csc^3 x\,dx = \int\csc^2x \csc x\,dx
-\begin{align*} \int\csc^2 x \csc x \,dx &= -\cot x \csc x - \int(-\cot x)(-\cot x\csc x\,dx)\\ &= -\cot x \csc x - \int \cot^2 x \csc x\,dx\\ &= -\cot x\csc x - \int(\csc^2x - 1)\csc x\,dx &\text{(since }\cot^2 x = \csc^2-1\text{)}\\ &= -\cot x \csc x - \int(\csc^3 x - \csc x)\,dx\\ &= -\cot x\csc x - \int\csc^3 x\,dx + \int \csc x\,dx \end{align*}
-\int \csc^3 x\,dx = -\cot x\csc x - \int\csc^3 x\,dx + \int \csc x\,dx
-\begin{align*} \int\csc^3x\,dx + \int\csc^3 x\,dx &= -\cot x \csc x + \int\csc x\,dx\\ 2\int\csc^3 x\,dx &= -\cot x\csc x + \int\csc x\,dx\\ \int\csc^3x\,dx &= -\frac{1}{2}\cot x\csc x + \frac{1}{2}\int\csc x\,dx\\ &=-\frac{1}{2}\cot x\csc x + \frac{1}{2}\int\frac{\csc x(\csc x - \cot x)}{\csc x - \cot x}\,dx\\ &= -\frac{1}{2}\cot x \csc x + \frac{1}{2}\int\frac{\csc^2 x - \csc x\cot x}{\csc x - \cot x}\,dx\\ &= -\frac{1}{2}\cot x \csc x + \frac{1}{2}\int\frac{d(-\cot x+\csc x)}{-\cot x +\csc x}\\ &= -\frac{1}{2}\cot x\csc x + \frac{1}{2}\ln|\csc x - \cot x|+ C \end{align*}
-\int \csc x\,dx = \int\frac{\csc x(\csc x -\cot x)}{\csc x - \cot x}\,dx = \int\frac{\csc^2 x - \csc x \cot x}{\csc x - \cot x}\,dx.
-w = \csc x - \cot x
-dw = (-\csc x\cot x + \csc^2x) \,dx
-w
-\int\frac{\csc^2x - \csc x\cot x}{\csc x- \cot x}\,dx = \int\frac{dw}{w}.
-(\csc^2x - \csc x\cot x)\,dx
-\csc x - \cot x
-(\csc^2 x - \csc x \cot x)\,dx = d(-\cot x + \csc x)
- \frac{d}{dx} \cot x = -\csc^2 x\quad \text{ and }\quad\frac{d}{dx} \csc x = -\csc x \cot x. 
- \begin{align} \frac{d}{dx} \cot x & = \frac{d}{dx} \frac{\cos x}{\sin x} = \frac{(\sin x)\frac{d}{dx}\cos x - (\cos x) \frac{d}{dx} \sin x}{\sin^2 x} \\  \\  \\ & = \frac{(\sin x)(-\sin x) - (\cos x)(\cos x)}{\sin^2 x} = \frac{-(\sin^2 x + \cos^2 x)}{\sin^2 x} = \frac{-1}{\sin^2 x} = -\csc^2 x. \end{align} 
- \frac{d}{dx} \csc x = \frac{d}{dx} \frac{1}{\sin x} = \frac{- \frac{d}{dx} \sin x}{\sin^2 x} = \frac{-\cos x}{\sin^2 x} = -\;\frac{1}{\sin x}\frac{\cos x}{\sin x} = -\csc x \cot x. 

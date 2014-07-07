@@ -1,9 +1,0 @@
-z
-0< \Re(z)<\pi
-\csc(z):=\frac{1}{\sin(z)} = \frac{1}{\pi}\int_0^{\infty} \frac{1}{t^2+t}t^{z/\pi}\,\mathrm d t
-\pi\mathbb{Z}
-\frac{1}{\pi}\int_0^{\infty}\frac{t^{\frac{z}{\pi}}}{t^2+t}dt=\frac{1}{\pi}\int_0^{\infty}\frac{t^{\frac{z}{\pi}-1}}{t+1}dt
-w=\dfrac{1}{t+1}:
-\begin{align*}\frac{1}{\pi}\int_0^{\infty}\frac{t^{\frac{z}{\pi}-1}}{t+1}dt&=\frac{1}{\pi}\int_0^{1}\frac{1}{w}\left(\frac{1}{w}-1\right)^{\frac{z}{\pi}-1}dw\\&=\frac{1}{\pi}\int_0^{1}w^{-\frac{z}{\pi}}\left(1-w\right)^{\frac{z}{\pi}-1}dw\\&=\frac{1}{\pi}\text{B}\left(1-\frac{z}{\pi},\frac{z}{\pi}\right)\end{align*}
-\frac{1}{\pi}\text{B}\left(1-\frac{z}{\pi},\frac{z}{\pi}\right)=\frac{1}{\pi}\Gamma\left(1-\frac{z}{\pi}\right)\Gamma\left(\frac{z}{\pi}\right)
-\begin{align*}\frac{1}{\pi}\Gamma\left(1-\frac{z}{\pi}\right)\Gamma\left(\frac{z}{\pi}\right)&=\frac{1}{\pi}\cdot \pi\csc\left(\pi\cdot\frac{z}{\pi}\right)\\&=\csc (z)\end{align*}

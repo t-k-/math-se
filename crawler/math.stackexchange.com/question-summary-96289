@@ -1,82 +1,0 @@
-P\left(\left|-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)-H(X)\right|\geq\epsilon\right)\rightarrow 0
-\phi(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-x^2/2\sigma^2}
-t\in\mathbb{R}
-\begin{array}{rcl}E\left[\exp(-t\log(\phi(x))\right]&=&\int e^{-t\log(\phi(x))}\phi(x)dx\\ &=&\int\exp\left(-t\log\left(\frac{1}{\sqrt{2\pi}\sigma}e^{-x^2/\sigma^2}\right)\right)\phi(x)dx\\ &=&\int\exp\left(t\left(\log\left(\sqrt{2\pi}\sigma\right)+x^2/\sigma^2\right)\right)\phi(x)dx\\ &=&\int\frac{\left[2\pi\sigma^2\right]^{\frac{t}{2}}\exp\left(tx^2/\sigma^2\right)}{\sqrt{2\pi}\sigma}e^{-x^2/2\sigma^2}dx\\ &=&\int\frac{\left[2\pi\sigma^2\right]^{\frac{t}{2}}}{\sqrt{2\pi}\sigma}\exp\left(\frac{-x^2(1-t)}{2\sigma^2}\right)dx\\ &=&? \end{array}
-\xi
-(\xi_n)_{n\geqslant1}
-n\geqslant1
-x
- A_n=[\xi_1+\cdots+\xi_n\geqslant n\mathrm E(\xi)+nx]. 
-\xi_i=\log\phi(X_i)
-\xi_i=-\log\phi(X_i)
-A_n
-\mathrm P(A_n)
-\xi
-\qquad\qquad
-t_0\gt0
-\mathrm E(\mathrm e^{t\xi})
-|t|\lt t_0
-\qquad(\ast)
-t
-t
-u(0)=1
-t=0
-\mathrm P(A_n)\leqslant 1
-t\gt0
-u(t)\gt1
-\mathrm E(\mathrm e^{t\xi})
-\mathrm P(A_n)
-1
- \mathrm e^{nt(\mathrm E(\xi)+x)}\,\mathbf 1_{A_n}\leqslant\mathrm e^{t(\xi_1+\cdots+\xi_n)}=\mathrm e^{t\xi_1}\cdots\mathrm e^{t\xi_n}. 
- \mathrm e^{nt(\mathrm E(\xi)+x)}\,\mathrm P(A_n)\leqslant\mathrm E(\mathrm e^{t\xi})^n. 
- \mathrm P(A_n)\leqslant u(t)^n\qquad\text{where}\qquad u(t)=\mathrm E(\mathrm e^{t\xi})\mathrm e^{-t(\mathrm E(\xi)+x)}. 
-t
-u(t)\lt1
-\mathrm P(A_n)
-\mathrm P(A_n)\to0
-\qquad\qquad\qquad
-t\gt0
-u(t)\lt1
-t\to0
-t\gt0
-u(t)=1-tx+o(t)
-x\gt0
-u(t)\lt1
-t\gt0
- \mathrm E(\mathrm e^{t\xi})=1+t\mathrm E(\xi)+o(t),\qquad \mathrm e^{-t(\mathrm E(\xi)+x)}=1-t(\mathrm E(\xi)+x)+o(t), 
-t\mapsto\mathrm E(\mathrm e^{t\xi})
-t=0
-\xi_n
-(\ast)
-\mathrm E(\mathrm e^{t\xi})
-0\leqslant t\leqslant t_0
--t_0\leqslant t\leqslant 0
-[\xi_1+\cdots+\xi_n\leqslant n\mathrm E(\xi)-nx]
-(\ast)
-\xi=\log\phi(X)
-X
-\sigma^2
-\phi
-X
-\mathrm E(\mathrm e^{t\xi})
-\mathrm E(\phi(X)^{t})
-\mathrm E(\mathrm e^{-tX^2/(2\sigma^2)})
-t+1\gt0
-(\ast)
-t_0=1
-P\left(\left|-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)-H(X)\right|>\epsilon\right)\rightarrow 0
-P\left(-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)>H(X)+\epsilon\right)\rightarrow 0 \text{ and }P\left(-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)<H(X)-\epsilon\right)\rightarrow 0 
-t>0
-P(X>x)\le e^{-t x} E(e^{t X})
-E(e^{t \log \phi(X)})
-t<1
-t<1
-0
-P\left(-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)>H(X)+\epsilon\right)\le e^{-nt(H(X)+\epsilon)} \cdot E\left[e^{-t \sum_{i=1}^n\log \phi(X_i)}\right]
-E\left[e^{-t\sum_{i=1}^n\log \phi(X_i)}\right]=n\cdot E(e^{-t \log \phi(X)})=\frac{n}{(\sqrt{2\pi}\sigma)^{1-t}}\int_{-\infty}^{\infty}\exp\left(\frac{-x^2(1-t)}{2\sigma^2}\right)dx
-P\left(-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)>H(X)+\epsilon\right)\rightarrow 0
-P(X<x)\le e^{t x} E(e^{-t X})
-\infty
-n\to \infty
-\epsilon<H(X)
-\begin{eqnarray*}P\left(-\frac{1}{n}\sum_{i=1}^n\log \phi(X_i)<H(X)-\epsilon\right)&\le& e^{nt(H(X)-\epsilon)} \cdot E\left[e^{t \sum_{i=1}^n\log \phi(X_i)}\right]\\ &=& e^{nt(H(X)-\epsilon)} \cdot\frac{n}{(\sqrt{2\pi}\sigma)^{1+t}}\int_{-\infty}^{\infty}\exp\left(\frac{-x^2(1+t)}{2\sigma^2}\right)dx\end{eqnarray*} 

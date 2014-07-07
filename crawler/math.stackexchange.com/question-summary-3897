@@ -1,65 +1,0 @@
-I:=\underset{R}{\iiint}\dfrac{x^2 y^2 z^2}{r^{17/2}}\mathrm dV
-R
-x^2+y^2+z^2\leq 1
-r^2=x^2+y^2+z^2
-\dfrac{x^2 y^2 z^2}{r^{17/2}}\leq \dfrac{r^6}{r^{17/2}}=r^{-5/2}
-I
-r
-\theta 
-\phi 
-\begin{align*}x&=r\sin \phi \cos \theta\\y&=r\sin \phi \sin \theta\\z&=r\cos \theta\end{align*}
-I
-I=\int_0^{2\pi }\left(\int_0^{\pi }\left(\lim_{\delta \to 0}\int_{\delta }^1\left(r^2 \sin \phi\right)\dfrac{x^2 y^2 z^2}{r^{17/2}}\;\mathrm dr\right)\;\mathrm d\phi \right)\;\mathrm d\theta
-=\lim_{\delta \to 0}\left( \int_{\delta }^1 r^{-1/2}\mathrm dr\right)\int_0^{2\pi }\cos^4 \theta \sin^2 \theta \mathrm d\theta\int_0^{\pi }\sin^5 \mathrm d\phi 
-=2\cdot \dfrac18 \pi \cdot \dfrac{16}{15}=\dfrac4{15}\pi 
-\dfrac8{105}\pi
-\dfrac4{15}\pi 
-\dfrac8{105}\pi 
-z=r\cos \phi 
-I
-I=\int_0^{2\pi }\left(\int_0^{\pi }\left(\lim_{\delta \to 0}\int_{\delta }^1\left(r^2 \sin \phi\right)\dfrac{x^2 y^2 z^2}{r^{17/2}}\;\mathrm dr\right)\;\mathrm d\phi \right)\;\mathrm d\theta
-(r^2 \sin \phi )\dfrac{x^2 y^2 z^2}{r^{17/2}}=(r^2\sin \phi )\dfrac1{r^{17/2}}\left( r\sin \phi \cos \theta \right) ^{2}\left( r\sin \phi \sin \theta \right) ^{2}\left( r\cos \phi \right) ^{2}
-=r^{-1/2}\cos ^{2}\theta \cdot\sin ^{2}\theta \cdot\cos ^{2}\phi \cdot\sin ^{5}\phi 
-I=\left(\lim_{\delta \to 0} \int_{\delta }^1 r^{-1/2}\mathrm dr\right)\int_0^{2\pi }\cos^2\theta\cdot\sin^2\theta \;\mathrm d\theta \int_0^{\pi }\cos^2 \phi \cdot\sin^5 \phi \;\mathrm d\phi
-=2\cdot \dfrac14 \pi \cdot \dfrac{16}{105}=\dfrac8{105}\pi
-\dfrac8{105}\pi 
-\rho
-r
-\rho^2 \sin(\phi)
-\rho
-\frac{8\pi}{105}
-\frac{1}{16}\frac{(\sin(2\theta)\sin(2\phi)\sin(\phi))^2}{\rho^{5/2}}
-\frac{1}{16}\frac{(\sin(2\theta)\sin(2\phi))^2\sin(\phi)^3}{\sqrt{\rho}}
-8\int_{0}^{1}\int_{0}^{\pi/2}\int_{0}^{\pi/2}{\frac{1}{16}\frac{(\sin(2\theta)\sin(2\phi))^2\sin(\phi)^3}{\sqrt{\rho}}}\mathrm{d}\theta\mathrm{d}\phi\mathrm{d}\rho
-\frac12\int_{0}^{1}\int_{0}^{\pi/2}\int_{0}^{\pi/2}{\frac{(\sin(2\theta)\sin(2\phi))^2\sin(\phi)^3}{\sqrt{\rho}}}\mathrm{d}\theta\mathrm{d}\phi\mathrm{d}\rho
-\frac12\int_{0}^{1}\frac{\mathrm{d}\rho}{\sqrt{\rho}}\int_{0}^{\pi/2}\sin(2\theta)^2 \mathrm{d}\theta\int_{0}^{\pi/2}{\sin(2\phi)^2\sin(\phi)^3}\mathrm{d}\phi
-\int_{0}^{\pi/2}\sin(2\theta)^2 \mathrm{d}\theta\int_{0}^{\pi/2}{\sin(2\phi)^2\sin(\phi)^3}\mathrm{d}\phi
-\left.\frac{\theta}{2}-\frac{\sin(4\theta)}{8}\right|_{\theta=0}^{\theta=\pi/2}=\frac{\pi}{4}
-\left.-\frac{5\cos(\phi)}{16}-\frac{\cos(3\phi)}{48}+\frac{3\cos(5\phi)}{80}-\frac{\cos(7\phi)}{112}\right|_{\phi=0}^{\phi=\pi/2}=\frac{32}{105}
-[i,j,k;a]
-x^{2 i}y^{2 j}z^{2 k} \rho^{2 a}
-i,j,k
-a
-[i,j,k;a]
-(i,j,k)
-6 [1,1,1;a] = [0,0,0;a+3] - 3[3,0,0;a] - 18[2,1,0;a]
-\rho^6 = (x^2+y^2+z^2)^3
-[1,1,1;a]
-[i,j,k;a+1] = [i+1,j,k;a] + [i,j+1,k;a] + [i,j,k+1;a]
-\rho^2 = x^2 + y^2 + z^2
-[2,1,0;a]
-[3,0,0;a]
-[2,0,0;a+1]
-[n,0,0;a] = \frac {4 \pi} {(2 n + 1) (2 n + 3 + 2 a)}
- z^{2 n}  \rho ^ {2 a}
-\phi
-2 n
-z
-\rho
-2 n + 2 a + 2
-\rho^{2 n} \rho^{2 a} \rho^2 d \rho
-a \lt 0
-2 n + 3 + 2 a \gt 0
-\eqalign{ [1,1,1;a] = &\frac{1}{6} \left( [0,0,0;a+3] - 3 [3,0,0;a] - 18 [2,1,0;a] \right) \cr  = &\frac{4 \pi} {6} \left( \frac{1}{2 a+9} - \frac{3}{7 (2 a+9)} - \frac{18}{35(2 a+9)} \right) \cr  = &\frac{4 \pi}{105 (2 a+9)}. }
-2 a = -17/2
-\frac{8 \pi}{105}

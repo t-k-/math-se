@@ -1,32 +1,0 @@
-\sup|P_{n}(k)-\pi_{\lambda}(k)| \leq \frac{\lambda^2}{n}
-P_{n}(k)
-(n, \frac{\lambda}{n})
-\pi_{\lambda}(k)
-\lambda
-\xi=\sum_{j=1}^{n}\xi_j
-\xi_j \sim \text{Ber} \left(\frac{\lambda}{n}\right)
-\eta=\sum_{j=1}^{n} \eta_j
-\eta_j \sim \text{Poi} \left(\frac{\lambda}{n}\right)
-\xi
-P_{n}(k)
-\eta \ \pi_{\lambda}(k)
-f(x,y)
-\xi_j
-\eta_j
-f(\cdot,\cdot)
-\xi_j
-\eta_j
- f(0,0) = 1 - \lambda /n, 
- f(1,0) = e^{ - \lambda /n}  - 1 + \lambda /n, 
- f(1,y) = \frac{{(\lambda /n)^y e^{ - \lambda /n} }}{{y!}}, \;\; y \geq 1, 
- f(0,y) = 0,\;\; y \geq 1. 
- f(0,0) + f(1,0) + \sum\limits_{y = 1}^\infty  {f(1,y)}  + f(0,y) = 1. 
- {\rm P}(\xi _j  \ne \eta _j ) = f(1,0) + {\rm P}(\eta _j  \ge 2) = \lambda /n - (\lambda /n)e^{ - \lambda /n}  \le (\lambda /n)^2 . 
- |{\rm P}(\xi  = k) - {\rm P}(\eta  = k)| \le {\rm P}(\xi  \ne \eta ) \le {\rm P}(\xi _j  \ne \eta _j ,\;{\rm for}\;{\rm some}\; j) 
- |{\rm P}(\xi  = k) - {\rm P}(\eta  = k)| \leq \sum\limits_{j = 1}^n {{\rm P}(\xi _j  \ne \eta _j )}  \leq \frac{{\lambda ^2 }}{n}, 
- |P_n (k) - \pi _\lambda  (k)| \le \frac{{\lambda ^2 }}{n}. 
-{\rm P}(\eta  = k) - {\rm P}(\xi  = k) \leq {\rm P}(\xi \neq \eta)
- |{\rm P}(\xi  = k) - {\rm P}(\eta  = k)| \le {\rm P}(\xi  \ne \eta ) . 
- {\rm P}(\xi  = k) - {\rm P}(\eta  = k) = {\rm P}(\xi  = k,\eta  \ne k) + {\rm P}(\xi  = k,\eta  = k) - {\rm P}(\eta  = k), 
- {\rm P}(\xi  = k) - {\rm P}(\eta  = k) \leq {\rm P}(\xi  = k,\eta  \ne k) \leq {\rm P}(\xi \neq \eta). 
- {\rm P}(\xi _j  \ne \eta _j ,\;{\rm for}\;{\rm some}\; j) = {\rm P}(\xi_1 \neq \eta_1  \vee \cdots \vee \xi_n \neq \eta_n) \leq \sum\limits_{j = 1}^n {{\rm P}(\xi _j  \ne \eta _j )} . 

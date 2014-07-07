@@ -1,6 +1,0 @@
-X \mathtt{\sim} \text{Bin}(n,p), \lambda > 0, \varepsilon > 0
-P(X-np>n\varepsilon)\leq E\{e^{\lambda \cdot (X-np-n\varepsilon) }\}
-E\{e^{\lambda \cdot (X-np-n\varepsilon) }\}=e^{-n\varepsilon\lambda}
-P(X-np > n\varepsilon) = \sum_{i=n\varepsilon + np+1}^{n} \binom{n}{i}p^i(1-p)^{n-i} \text{  for }n\varepsilon+np \in \mathbb{Z}
-P(X-np > n\varepsilon) = \sum_{i=\lceil n\varepsilon + np\rceil}^{n} \binom{n}{i}p^i(1-p)^{n-i} \text{  for }n\varepsilon+np \notin \mathbb{Z}
-P(X-np>n\varepsilon)=P(e^{\lambda(X-np)}>e^{\lambda n\varepsilon})\leq \frac{\mathbb{E}(e^{\lambda (X-np)})}{e^{\lambda n\varepsilon}}=\mathbb{E}(e^{\lambda (X-np-n\varepsilon)})

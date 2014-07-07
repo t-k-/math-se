@@ -1,5 +1,0 @@
- f(x,y) = \left\{ \begin{array}{lr} \frac{1}{\sqrt{2\pi}} e^{-x} e^{-\frac{(y-x)^2}{2}}  &  x \geq 0, -\infty < y < \infty, \\ 0&\mbox{otherwise}\ \end{array} \right. 
- M_{X,Y} (t_1, t_2) = E[\exp(t_1X+t_2Y)] 
-...
- = E_X(\exp(t_1X)E[\exp(t_2Y)|X]) 
-M_{X,Y}(t_1, t_2) = {\rm E}[e^{t_1 X + t_2 Y}] = \int_{x=0}^\infty \int_{y=-\infty}^\infty \frac{1}{\sqrt{2\pi}} e^{t_1 x + t_2 y} e^{-x} e^{-(y-x)^2/2} \, dy \, dx.

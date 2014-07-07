@@ -1,16 +1,0 @@
-C
-(x^2+y^2)^2=30^2(x^2-y^2)
- \oint\limits_C |y|\,\mathrm ds. 
-\mathrm ds = 30 \sqrt{ \sec 2t}\cdot \mathrm dt
- \begin{cases} x(t) &= 30 \sqrt{\cos 2t}\cdot\cos t \\ y(t) &= 30 \sqrt{\cos 2t}  \cdot\sin t \end{cases} 
- \oint\limits_C |y|\,ds = 2 \cdot 30^2\int\limits_{-\pi/4}^{\pi/4}\sqrt{\cos 2t} \cdot\sqrt{\sec 2t} \sin t\, \mathrm dt = 0. 
-C
-t
-\bigl[-{\pi\over4},{\pi\over4}\bigr]
-\bigl[{3\pi\over4},{5\pi\over4}\bigr]
-C
-r(t)=30\sqrt{\cos(2t)}
-{\rm d}s
-s'(t)=\sqrt{r^2(t)+r'^2(t)}={30\over\sqrt{\cos(2t)}}={30^2\over r(t)}\ ,
-|y| ds=r(t)\ |\sin t|\ {30^2\over r(t)}=30^2|\sin t|\ dt\ ,
-\int_C|y|\ {\rm d}s=2\cdot30^2\cdot\int_{-\pi/4}^{\pi/4}|\sin t|\ dt=1800\bigl(2-\sqrt{2}\bigr)\ .

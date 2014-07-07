@@ -1,32 +1,0 @@
-(X, V, m)
-\{F_{n}\}_{1}^{\infty}\subset 
-V 
-m(F_{n})\leq
-e^{-n}
-\forall {n}.
-h(x)=\sum_{1}^{\infty} { \chi_E{_n}(x)}
-g(x)=\sum_{1}^{\infty} {n^{t}\chi_E{_n}(x)}
-L^p 
- 0<p, t<\infty
-\|f+g\|_p \le \|f\|_p + \|g\|_p
-n
-N
-0 \le \sum_{n=1}^N \chi_{F_n} \le \sum_{n=1}^{N+1} \chi_{F_n}
-p^{\text{th}}
-F_n
-E_n
-F_n
- \left( \int_X \left( \sum_{n=1}^N  \chi_{F_n} \right)^p dm \right)^{1/p} \le \sum_{n=1}^N \left( \int_X \chi_{F_n} dm \right)^{1/p} 
- \| h \|_p = \left\| \lim_{N \to \infty} \sum_{n=1}^N \chi_{F_n} \right\|_p = \lim_{N \to \infty} \left\| \sum_{n=1}^N \chi_{F_n} \right\|_p \le \lim_{N\to \infty} \sum_{n=1}^N \| \chi_{F_n} \|_p = \sum_{n=1}^{\infty} \|\chi_{F_n} \|_p 
- \begin{align*} \|h\|_p & \le \sum_{n=1}^{\infty} \left( \int_X \chi_{F_n} \, dm \right)^{1/p}  = \sum_{n=1}^{\infty} \left( m(F_n) \right)^{1/p} \\ & \le \sum_{n=1}^{\infty} (e^{-n})^{1/p} = \sum_{n=1}^{\infty} (e^{-1/p})^n = \frac{e^{-1/p}}{1-e^{-1/p}} < \infty. \end{align*} 
-E^n = F_n
-h \in L^p
-(\int_X |h|^p )^{1/p} < \infty
- \left( \int_X |h|^p \right)^{1/p} = \left( \int_X |\sum \chi_{F_n}|^p \right)^{1/p} \leq \left( \int_X \left( \sum |\chi_{F_n}| \right)^p \right)^{1/p}
- \left( \int_X \left( \sum |\chi_{F_n}| \right)^p \right)^{1/p} = \left( \int_X \lim_{N \rightarrow \infty} \left( \sum_{n=1}^N |\chi_{F_n}| \right)^p \right)^{1/p} = \left(\lim_{N \rightarrow \infty} \int_X \left(\sum_{n=1}^N |\chi_{F_n}| \right)^p \right)^{1/p}
- \begin{align*} \left( \int_X |h|^p \right)^{1/p} = \left( \int_X \Big |\sum_{n=1}^\infty \chi_{F_n} \Big |^p dm \right)^{1/p} \\  \stackrel{\Delta-ineq.}{\leq} \left( \int_X \left( \sum_{n=1}^\infty  |\chi_{F_n}| \right)^p dm \right)^{1/p} \\  = \left( \int_X \left( \lim_{N \rightarrow \infty} \sum_{n=1}^N |\chi_{F_n}| \right)^p dm \right)^{1/p} \\  \stackrel{cont. of ()^p}{=} \left( \int_X \lim_{N \rightarrow \infty} \left( \sum_{n=1}^N |\chi_{F_n}| \right)^p dm \right)^{1/p} \\  \stackrel{Lebesgue}{=} \left( \lim_{N \rightarrow \infty} \int_X \left( \sum_{n=1}^N |\chi_{F_n}| \right)^p dm \right)^{1/p} \\  \stackrel{\|.\| \Delta ineq.}{\leq} \lim_{N \rightarrow \infty} \sum_{n=1}^N \left( \int_X |\chi_{F_n}|^p  dm \right)^{1/p} \\  \stackrel{\chi \in \{0,1\}}{=}\lim_{N \rightarrow \infty} \sum_{n=1}^N \left( \int_X \chi_{F_n}  dm \right)^{1/p} \\  =  \lim_{N \rightarrow \infty} \sum_n^N \left( m(F_n) \right)^{1/p} \\  \leq   \lim_{N \rightarrow \infty} \sum_n^N \left( e^{-n} \right)^{1/p} < \infty \end{align*}
-\frac{1}{e^{\frac{n}{p}}} < 1
-n
-N_0
-n > N_0: \Big | \frac{n^t}{e^n} \Big | < 1
- \lim_{N \rightarrow \infty} \sum_{n=1}^N \frac{n^t}{e^n} = \sum_{n=1}^{N_0} \frac{n^t}{e^n} + \lim_{N \rightarrow \infty} \sum_{n={N_0}}^N \frac{n^t}{e^n} 

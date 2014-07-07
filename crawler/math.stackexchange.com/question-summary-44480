@@ -1,53 +1,0 @@
-F(n) \triangleq 2^{2^n} + 1
-p = 2^{n+2}k + 1\;,
-k
-p \leq F(n)
-k < 2^{2^{n-1} - n - 2}
-p
-n+1
-p = 2^{n+2}k + 1 = 2^{n+1}(2k) + 1 = 2^n(4k) + 1 = \ldots = 2^3(2^{n-1}k) + 1 = 2^2(2^{n}k) + 1\;,
-n+1
-p
-k
-r
-\begin{align} r &= \max_{s \in \mathbb{Z}} \left\{2^{s+1}(2^{n-s+1}k) + 1 \not \leq \sqrt{F(s-1)} \right\} =\\ &= \max_{s \in \mathbb{Z}} \{2^{s+1}(2^{n-s+1}k) + 1 \not \leq 2^{2^{s-2}}\} =\\ &= \max_{s \in \mathbb{Z}} \{2^{n-s+1}k \not< 2^{2^{s-2}-s-1}\} =\\ &= \max_{s \in \mathbb{Z}} \{2^{n+2}k \geq 2^{2^{s-2}}\} =\\ &= \max_{s \in \mathbb{Z}} \{s \leq \log_2(n + \log_2k + 2) + 2\}\\ &= \lfloor \log_2(n + \log_2k + 2) + 2 \rfloor\;. \end{align}
-F(r)
-F(n)
-2,2^2,2^4,2^8,2^{16},\ldots,2^{2^n}
-p
--1
-p
-r
-r=2^n
-2^{2^n} \equiv 1 \pmod p
-r
-2^{2^{n-1}} \equiv -1 \pmod p
-2^{2^{n-1}}+1 \equiv 0 \pmod p
-p|F(n-1)
-p
-p
-p=641
-2
-(\mathbb{Z}/641\mathbb{Z})^\times
-640
-r=64
-64=2^6
-641|F(5)
-r
-2,2^2,2^3,2^4,2^5,\ldots
-641
-1
-2
-2,2^2,2^4,2^8,2^{16},\ldots
-1
--1
-2^{1024}
-2^{640}
-1
-r
-p=2^{n+2}k+1
-k
-F(m)
-m\le n
-F(1),F(2),\dots,F(n)
-p

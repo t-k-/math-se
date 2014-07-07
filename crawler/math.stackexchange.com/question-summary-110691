@@ -1,50 +1,0 @@
-X_1, \ldots , X_k
-k
-p_1, \ldots, p_k
-X = X_1 + \cdots + X_k
- \mathbb E[X] = \frac{1}{p_1} + \cdots + \frac{1}{p_k} \> . 
-p_1 = \cdots = p_k = p
-X
-c=16
-16(\frac{k}{p}+t)
-16(k+tp)
-k<\frac{1}{2}E[X]
-e^{-16(k+tp)/8}
-e^{-2tp} < (1 - p)^t
-0 < p_1 \leq p_2 \leq \cdots \leq p_k
-X = X_1 + \cdots + X_k
-X_i
-p_i
-\mu = \mathbb E X = \sum_{m=1}^k \frac{1}{p_m}
- \E e^{s X_m} = \frac{p_m e^s}{1-(1-p_m) e^s} = \Big(1-\frac{1-e^{-s}}{p_m}\Big)^{-1} 
-s = -\frac{1}{c}\log(1-p_1)
-e^{-sc} = (1-p_1)
-a = \log(1-p_1)
-b = 1-(1-p_1)^{1/c}
- \Pr(X > c (\mu + t) ) \leq (1-p_1)^t \exp( a \mu - {\textstyle\sum_{m=1}^k} \log(1-b/p_m)) \>, 
-0 < z \leq 1/2
-\log(1-z) \geq -z - z^2
- \sum_{m=1}^k \frac{a}{b}\frac{b}{p_m} - \log(1 - b/p_m) \leq \frac{k}{2} (\frac{a}{b} + \frac{3}{2}) \>. 
-a = \log(1-p_1) < 0
-b \leq p_1 / c
- \frac{a}{b} \leq \frac{c\log(1-p_1)}{p_1} \leq -c \>. 
- \Pr(X > c (\mu + t) ) \leq (1-p_1)^t \exp(-(2c-3)k/4) 
-X_1'
-\cdots
-X_k'
-k
-p_{\min}
-X_i
-X_i'
-X_i \leq X_i'
-p_{\min}
-p_{\min}
-(X_i)
-(X_i')
-X
-X' = \sum_{i=1}^k X_i'
-X \leq X'
-\mathbb{P} (X' \geq 16 (\mathbb{E} (X')+t)) \leq (1-p_{\min})^t.
-X \leq X'
-\mathbb{P} \left(X \geq 16 \frac{\mathbb{E} (X')}{\mathbb{E} (X)} \left(\mathbb{E} (X)+t\right)\right) \leq \mathbb{P} \left(X \geq 16 \left(\frac{\mathbb{E} (X')}{\mathbb{E} (X)}\mathbb{E} (X)+t\right)\right) \leq (1-p_{\min})^t.
-\mathbb{E} (X')/\mathbb{E} (X)

@@ -1,19 +1,0 @@
-f'(t)
-f(t)=\frac{2t+1}{t+3} .
-\begin{align*} \lim_{h\to 0}\frac{f(t+h) - f(t)}{h} &= \lim_{h\to 0}\frac{\frac{2(t+h)+1}{(t+h)+3} - \frac{2t+1}{t+3}}{h} \\ &\strut\\ &=\lim_{h\to 0}\frac{\frac{2t+2h+1}{t+h+3}- \frac{2t+1}{t+3}}{\frac{h}{1}}\\ &\strut\\ &= \lim_{h\to 0}\frac{1}{h}\left(\frac{2t+2h+1}{t+h+3} - \frac{2t+1}{t+3}\right)\\ &\strut\\ &=\lim_{h\to 0}\frac{1}{h}\left(\frac{(2t+2h+1)(t+3)}{(t+h+3)(t+3)} - \frac{(2t+1)(t+h+3)}{(t+3)(t+h+3)}\right)\\ &\strut\\ &=\lim_{h\to 0}\frac{1}{h}\left(\frac{(2t+2h+1)(t+3) - (2t+1)(t+h+3)}{(t+3)(t+h+3)}\right)\\ &\strut\\ &=\lim_{h\to 0}\frac{1}{h}\left(\frac{2t^2 + 2ht + t + 6t + 6h + 3 - (2t^2 + 2th + 6t +t + h + 3)}{(t+3)(t+h+3)}\right)\\ &\strut\\ &=\lim_{h\to 0}\frac{1}{h}\left(\frac{2t^2 + 2ht + 7t + 6h + 3 - 2t^2 - 2th - 7t -h - 3}{(t+3)(t+h+3)}\right)\\ &\strut\\ &=\lim_{h\to 0}\frac{1}{h}\left(\frac{5h}{(t+3)(t+h+3)}\right). \end{align*}
-(f(x)g(x))' = f'(x)g(x) + f(x)g'(x)
-f(t) = (2t+1)
-g(t) = \dfrac{1}{t+3} = (t+3)^{-1}
-\frac{(2t+1)}{(t+3)}
-2t+1
-g(x)
-(t+3)
-h(x)
-f'(x) = \frac{h(x)g\prime(x)-h\prime(x)g(x)}{[h(x)^2]}
-f'(x) = \frac{(t+3)2-1(2t+1)}{(t+3)^2}
-f'(x) = \frac{2t+6-2t-1}{(t+3)^2}
-f'(x) = \frac{5}{(t+3)^2}
-f( t)=\frac{{2t + 1}}{{t + 3}}=\frac{{2t + 6 - 5}}{{t + 3}} = \frac{{2(t + 3) - 5}}{{t + 3}} = \frac{{2(t + 3)}}{{t + 3}} - \frac{5}{{t + 3}} = 2 - \frac{5}{{t + 3}}
-\text{Let } g(t) = \frac{5}{{t + 3}}{\text{ , so  }}f(t) = 2 - g(t) \Rightarrow f'(t) = 2' - g'(t) \Rightarrow f'(t) = -g'(t)
-\text{Since }(\frac{u}{v})' = \frac{{u'v - v'u}}{{{v^2}}} \Rightarrow g'(t) = \frac{{5'(t + 3) - 5(t + 3)'}}{{{{(t + 3)}^2}}} \Rightarrow g'(t) =  - \frac{{5(t' + 3')}}{{{{(t + 3)}^2}}}
-g'(t) =  - \frac{5}{{{{(t + 3)}^2}}}\text{ ,and since we showed that }f'(t) =- g'(t) \Rightarrow f'(t) = \frac{5}{{{{(t + 3)}^2}}}

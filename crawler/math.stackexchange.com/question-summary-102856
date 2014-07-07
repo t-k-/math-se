@@ -1,31 +1,0 @@
-a_{j}
-n_j
- \prod_{j=1}^{N}\ \frac{1}{(x-a_{j})^{n_{j}}} 
-S(j,p)
-1\le j\neq k\le N
-n_j
-a_j
- \prod_{j=1}^N\ \frac{1}{(x-a_j)^{n_j}} =\sum_{j=1}^N\ \sum_{p=0}^{n_j-1}\ \frac{c_{j,p}}{(x-a_j)^{n_j-p}}\quad, 
- c_{j,p}=(-1)^p\sum_{u\in S(j,p)}\ \prod_{k\neq j}\  \binom{n_k-1+u_k}{n_k-1}\ \frac{1}{(a_j-a_k)^{n_k+u_k}}\quad, 
- u:\{1,\dots,N\}\setminus\{j\}\to\mathbb N,\quad k\mapsto u_k 
- \sum_{k\neq j}\ u_k=p. 
- \frac{1}{(x-a_k)^{n_k}} 
- \sum_{q=0}^{n_j-1}\ \binom{n_k-1+q}{n_k-1}\ \frac{(-1)^q}{(a_j-a_k)^{n_k+q}}\ (x-a_j)^q\quad. 
-P(x) = \prod_{j=1}^N (x-a_j)^{n_j}
-k \in \{1 \ldots N\}
-U_k(x) = P(x)/(x-a_k)^{n_k}
-x-a_j
-(x-a_k)^{-m}
-1 \le m \le n_k
-t^{n_k - m}
-1/U_k(t+a_k)
-N=2
-1/U_1(t+a_1) = (t+a_1 - a_2)^{-n_2}
-(x-a_1)^{-m}
-{n_1 + n_2 - m - 1 \choose n_2 - 1} \frac{(-1)^{n_2}}{(a_2 - a_1)^{n_1 + n_2 - m}}
-1 \le m \le n_1
-(x -a_2)^{-m}
-1
-2
-\frac{1}{\prod_{j=1}^{N-1} (x-a_j)^{n_j}} = \sum_{j=1}^{N-1} \sum_{k=1}^{n_j} \frac{b_{j,k}}{(x - a_j)^k}
-\frac{1}{\prod_{j=1}^N (x-a_j)^{n_j}} = \sum_{j=1}^{N-1} \sum_{k=1}^{n_j} \frac{b_{j,k}}{(x-a_j)^k (x-a_N)^{n_N}}

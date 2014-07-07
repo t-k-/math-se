@@ -1,11 +1,0 @@
-\Gamma (x)
-\int_{0}^{1}t^{x-1}e^{-t}dt=\sum_{n=0}^{+\infty}\frac{{(-1)}^{n}}{(n+x)n!}.
-0\leq t\leq 1
-\displaystyle S_n(t)=\sum_{k=0}^n\frac{(-t)^k}{k!}
-\displaystyle\sum_{k=0}^{+\infty}\frac 1{k!}
-\{S_n\}
-t\mapsto \exp (-t)
-\left[0,1\right]
-x\geq 1
-\sup_{0\leq t\leq 1}|\exp(-t)-S_n(t)| = \sup_{0\leq t\leq 1}\sum_{k=n+1}^{+\infty}\frac{(-t)^k}{k!}\leq \sum_{k=n+1}^{+\infty}\frac 1{k!},
-\begin{align*} \int_0^1t^{x-1}e^{-t}dt&=\int_0^1t^{x-1}\left(\sum_{k=0}^{+\infty}\frac{(-1)^kt^k}{k!}\right)dt\\ &=\sum_{k=0}^{+\infty}\frac{(-1)^k}{k!}\int_0^1 t^{x+k-1}dt\\ &=\sum_{k=0}^{+\infty}\frac{(-1)^k}{k!(x+k)}. \end{align*}

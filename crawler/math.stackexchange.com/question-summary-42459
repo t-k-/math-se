@@ -1,18 +1,0 @@
- \vdash (p \to q) \lor (q \to r) 
-(p \to q) \lor (q \to r)
-((p \to q) \lor (q \to r))
-\iff ((\lnot p \lor q) \lor (\lnot q \lor r))
-\iff (\lnot p \lor \color{blue}{\bf (q \lor \lnot q)} \lor r)
-\iff (\lnot p \lor \color{blue}{\bf\text{TRUE}} \lor r)\qquad
-\color{blue}{\bf LEM}
-q
-\lnot q
-\equiv \text{TRUE}
-\therefore
-q \lor \lnot q
-\lnot p
-\lnot p \lor (q \lor \lnot q)
-(\lnot p \lor q) \lor \lnot q
-r
-(\lnot p \lor q) \lor \lnot q \lor r
-(\lnot p \lor q) \lor (\lnot q \lor r)

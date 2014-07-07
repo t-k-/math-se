@@ -1,8 +1,0 @@
-\lambda
-F(y;\lambda) = \begin{cases}1-e^{-\frac{y}{\lambda}} & y \ge 0, \\0 & y < 0.\end{cases}
-f(y;\lambda) = \frac{1}{\lambda}e^{-y/\lambda}
-0
-L
-   L(\lambda;y_1,\ldots,y_n) = \prod_{i=1}^n f(y_i;\lambda) = \frac{1}{\lambda^n} e^{-\sum_{i=1}^n y/\lambda} = \frac{1}{\lambda^n} e^{-n \bar{y}/\lambda}. 
-   \frac{d}{d\lambda}L(\lambda;y_1,\ldots, y_n) = \frac{\left(\frac{n\bar{y}}{\lambda^2}e^{-n\bar{y}/\lambda}\right)\lambda^n   -n\lambda^{n-1}e^{-n\bar{y}/\lambda}}{\lambda^{2n}} 
-   \bar{y} = \lambda. 

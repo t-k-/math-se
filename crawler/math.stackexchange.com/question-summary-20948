@@ -1,9 +1,0 @@
-f_{n+1}^2 - f_nf_{n+2}
- \text{Let } x = n + 1 
- \text{then the equation above becomes } f_x^2 - f_{x-1}f_{x+1} 
- \Rightarrow -( f_{x-1}f_{x+1}  - f_x^2 ) = -1(-1)^x = (-1)^{x+1} = (-1)^{n+1+1} = (-1)^{n+2}
-\begin{pmatrix} 1 & 1 \\ 1 & 0 \\ \end{pmatrix}^n = \begin{pmatrix} f_{n+1} & f_n \\ f_n & f_{n-1} \\ \end{pmatrix}
-\begin{array}{|l||c|c|}   \hline   F_{n+1} & 1 & 0 \\\hline   F_{n}   & 0 & 1 \\\hline   F_{n-1} & 1 & -1 \\\hline   F_{n-2} & -1 & 2 \\\hline   F_{n-3} & 2 & -3 \\\hline   \vdots & \vdots & \vdots \\\hline   F_{n-k} & (-1)^{k+1}F_k & (-1)^kF_{k+1} \\\hline \end{array} 
-k=n-1
-F_1=(-1)^n(F_{n-1}F_{n+1}-F_n^2)
-k

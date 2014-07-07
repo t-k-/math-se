@@ -1,40 +1,0 @@
-X
-Y
-\alpha X + \beta Y
-Z = \alpha X + \beta Y
-\alpha
-\beta
-\alpha < 0
-X
--X
-\alpha
-\vert\alpha\vert
-Z
-\phi(\cdot)
-(2\pi)^{-1}\exp(-(x^2 + y^2)/2)
-\alpha x + \beta y = z
-\Phi(\cdot)
-Z
-\alpha^2 + \beta^2
- F_Z(z) = P\{Z \leq z\} = P\{\alpha X + \beta Y \leq z\} = \int\int_{\alpha x + \beta y \leq z} \phi(x)\phi(y) dx dy 
- F_Z(z) = \int_{x=-\infty}^d \int_{y=-\infty}^{\infty}\phi(x)\phi(y) dx dy = \Phi(d) 
-d = \frac{z}{\sqrt{\alpha^2 + \beta^2}}
--1/2
-\alpha^2\beta^2
- \exp\left(-\frac12 \left(\frac{x}{\alpha}\right)^2 \right) \exp\left(-\frac12 \left(\frac{z-x}{\beta}\right)^2 \right) = \exp\left(-\frac12 \left( \frac{\beta^2x^2 + \alpha^2(z-x)^2}{\alpha^2\beta^2} \right) \right). 
- \begin{align} & (\alpha^2+\beta^2)x^2 - 2\alpha^2 xz + \alpha^2 z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x^2 - 2\frac{\alpha^2}{\alpha^2+\beta^2} xz\right) + \alpha^2 z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x^2 - 2\frac{\alpha^2}{\alpha^2+\beta^2} xz + \frac{\alpha^4}{(\alpha^2+\beta^2)^2}z^2\right) + \alpha^2 z^2 - \frac{\alpha^4}{\alpha^2+\beta^2}z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x - \frac{\alpha^2}{\alpha^2+\beta^2}z\right)^2 + \alpha^2 z^2 - \frac{\alpha^4}{\alpha^2+\beta^2}z^2, \end{align} 
-\exp\left(\text{a function of }z\right)
-x
-z
-f
-u=x-\text{something}
-du=dx
--\infty
-+\infty
-1
- \int_{-\infty}^\infty f(x - \text{something}) \; dx 
- \alpha^2z^2 - \frac{\alpha^4}{\alpha^2+\beta^2} z^2 = \frac{z^2}{\frac{1}{\beta^2} + \frac{1}{\alpha^2}}. 
-\alpha^2\beta^2
-\sqrt{\alpha^2+\beta^2}
- \frac{z^2}{\alpha^2+\beta^2}=\left(\frac{z}{\sqrt{\alpha^2+\beta^2}}\right)^2. 
- (\text{constant})\cdot \exp\left( -\frac12 \left(\frac{z}{\sqrt{\alpha^2+\beta^2}}\right)^2 \right) . 

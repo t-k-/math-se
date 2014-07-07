@@ -1,60 +1,0 @@
-(2,\mathbb C)
-2\times2
-\begin{pmatrix}a&b\\c&d\end{pmatrix}
-\begin{pmatrix}\frac{a+d}2&x\\ y&\frac{a+d}2\end{pmatrix}
-n\times n
- \small  \begin{array} {rr|rr}   &  & r & s \\   &  & -s & r \\ \hline \\  a & b & -s b+ar & rb+as \\  c & d & -sd+cr & rd+cs \\ \hline \\  r & -s & -srb+s^2d+ar^2-csr & r^2b-srd+asr-cs^2 \\  s & r & -s^2 b-srd+cr^2+asr & srb+r^2d+csr+as^2  \end{array} 
-\small r_2 = r^2-s^2=\cos(x)^2-\sin(x)^2 = \cos(2 x)
-\small s_2 = 2 r s= 2 \cos(x) \sin(x) = \sin(2 x)
- \small S^{-1} \cdot A \cdot S = \begin{array} {r|r|} (a+d)+(a-d)r_2-(b+c)s_2   &      (b-c)+(a-d)s_2 + (b+c)r_2  \\ \hline \\ -(b-c) + (a-d)s_2 + (b+c)r_2  &  (a+d) - (a-d)r_2 + (b+c)s_2  \\  \end{array} \cdot {1 \over 2} 
-\small (b+c)s_2 -(a-d)r_2 
-c
-s
-\pmatrix{d_0 & x \\ y & d_1}
-y_s
-\delta_s
-x
-y
-x=\bar{y}
-y_s
-2
-c
-s
-c_0
-s_0
-x
-x_0
-c_2
-s_2
-k_2
-c,s=0,0
-d_1 = d_0 
-c\in [0,1]
-c\bar{c} + s\bar{s} =1
-d_0c\bar{c} + d_1s\bar{s} + c\bar{s}x + \bar{c}sy = d_0s\bar{s} + d_1c\bar{c} - c\bar{s}x - \bar{c}sy 
-\overbrace{(d_1 - d_0)}^{\delta}(s\bar{s} - c\bar{c}) + c\bar{s}(2x) +\bar{c}s(2y) = 0 \tag{1}
-s\bar{s} - c\bar{c} = (1 - c\bar{c}) - c\bar{c} = 1 - 2c\bar{c}
-s = (1 - c^2)^{\frac{1}{2}}e^{j\beta}
-\delta(1-2c^2) + 2c(1 - c^2)^{\frac{1}{2}}\left[e^{-j\beta}x +e^{j\beta}y\right]=0 \tag{2}
-|x| = |y|
-e^{-j\beta}x +e^{j\beta}y
-y = \bar{x}
-\measuredangle xe^{j\beta} = \pm\frac{\pi}{2}
-\beta = \frac{\pi}{2} + \measuredangle x
-s
-c=\frac{1}{\sqrt{2}}
-|c| = |s|
-\delta(1-2c^2)=0 \tag{3}
- \left( \begin{array}{ccc} p & q \\ r & s  \end{array} \right) 
- \left( \begin{array}{ccc} a & b \\ c & d  \end{array} \right) 
- =\left( \begin{array}{ccc} \frac{a+d}{2} & x \\ y & \frac{a+d}{2}  \end{array} \right) 
-2pa+2qc=a+d
-pb+qd=x
-ra+sc=y
-2rb+2sd=a+d
-2bra+2sda=a^{2}+da
-2bra+2bsc=2by
-s=\frac{2by-a^{2}-da}{2bc-2da}
-r=\frac{by-scb}{ab}
-p=\frac{2ax-b^{2}-cb}{2ad-2bc}
-q=\frac{x-pb}{d}

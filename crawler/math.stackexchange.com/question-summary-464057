@@ -1,7 +1,0 @@
-n \geq  m\geq 1
-\begin{align*}\sum _{m=1}^{n-1} \prod _{k=m+1}^n x_k x_m\end{align*}\tag{1}
-\begin{align*}\sum _{m=1}^{n-1} \sum _{k=m+1}^n x_k x_m\end{align*}\tag{2}
-n=5
-\LaTeX
-n := 5; sum(expand(product(x[k]*x[m], k = m+1 .. n)), m = 1 .. n-1) 
-x[1]^4*x[2]*x[3]*x[4]*x[5]+x[2]^3*x[3]*x[4]*x[5]+x[3]^2*x[4]*x[5]+x[4]*x[5] .

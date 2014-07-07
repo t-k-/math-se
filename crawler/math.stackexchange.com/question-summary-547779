@@ -1,7 +1,0 @@
-\int_0^n \exp(-rt)\exp\left(\frac sre^{-rt}\right).dt
-\left[-\frac 1s\exp\left(\frac sr e^{-rt} \right) \right]_{t=0}^{t=n}
-e
-e
- \frac{d( e^{-rt} )}{-r} = e^{-rt} dt \implies \frac{s}{r} \frac{d( \frac{r}{s}e^{-rt} )}{-r} = e^{-rt} dt
- \therefore \int e^{-rt}e^{\frac{s}{r}e^{-rt}}dt = \frac{-s}{r^2}\int e^{\frac{s}{r}e^{-rt}} d( \frac{r}{s}e^{-rt} ) = \frac{-s}{r^2} e^{\frac{s}{r}e^{-rt}} + C = F(t)
- \therefore F(n) - F(0) = \frac{-s}{r^2} e^{\frac{s}{r}e^{-rn}} -  \frac{-s}{r^2} e^{\frac{s}{r}} 

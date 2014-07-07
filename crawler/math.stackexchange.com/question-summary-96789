@@ -1,77 +1,0 @@
-f
-f'(x) = \lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h}
-\left(f(g(x))\right)' = \lim\limits_{h \to 0}\frac{f(g(x+h))-f(g(x))}{h}
-\left(f(g(x))\right)' = (\lim\limits_{h \to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}\cdot\frac{g(x+h)-g(x)}{h}
-\left(f(g(x))\right)' = (\lim\limits_{h \to 0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)})\cdot\lim\limits_{h \to 0}(\frac{g(x+h)-g(x)}{h})
-k=g(x+h)-g(x)
-g(x+h)=k+g(x)
-\left(f(g(x))\right)' = (\lim\limits_{h \to 0}\frac{f(g(x)+k)-f(g(x))}{k})\cdot(\lim\limits_{h \to 0}\frac{g(x+h)-g(x)}{h})
-=(\lim\limits_{k \to 0}\frac{f(g(x)+k)-f(g(x))}{k}) \cdot (\lim\limits_{h \to 0}\frac{g(x+h)-g(x)}{h})
-=f'(g(x))\cdot g'(x)
-h
-h
-k
-h
-h
- \left(\lim\limits_{h \to 0}\frac{f(g(x)+k)-f(g(x))}{h}\right) \cdot \frac{k}{k} =\left(\lim\limits_{h \to 0}\frac{f(g(x)+k)-f(g(x))}{k}\right) \cdot \frac{k}{h}
-\lim_{h\to 0}\;k\quad\text{and}\quad \lim_{h\to 0}\;m\quad\text{both exist, then }\lim_{h\to 0}\;km = \left(\lim_{h\to 0}\;k\right)\left(\lim_{h\to 0}\;m\right),
-\lim_{h\to 0}\frac{f(g(x+h)) - f(g(x))}{h}.
-k(h)
-h
-h
-k
-k(h) = g(x+h)-g(x)
-\frac{f(g(x+h)) - f(g(x))}{h} = \frac{f(g(x)+k(h)) - f(g(x))}{h}.
-\begin{align*} \frac{f(g(x)+k(h)) - f(g(x))}{h} &= \frac{f(g(x)+k(h)) -f(g(x))}{k(h)}\cdot\frac{k(h)}{h}\\  &= \frac{f(g(x)+k(h)) - f(g(x))}{k(h)}\cdot \frac{g(x+h)-g(x)}{h}, \end{align*}
-k(h) = g(x+h)-g(x)
-h\to 0
-k(h)\to 0
-g
-x
-x
-k(h)=0
-h
-0
-\lim\limits_{h\to 0}G(h) = \lim_{h\to 0}f'(g(x)) = f'(g(x)).
-k(h)\neq 0
-h
-0
-h=0
-\lim\limits_{h\to 0}k(h) = 0
-k(h)
-0
-h
-0
-h
-0
-k(h)
-\begin{align*} \lim_{h\to 0}G(h) &= \lim_{h\to0}\frac{f(g(x)+k(h)) - f(g(x))}{k(h)}\\ &= \lim_{k(h)\to 0}\frac{f(g(x)+k(h)) - f(g(x))}{k(h)}\\ &= f'(g(x)). \end{align*}
-k(h)
-0
-h
-\delta\gt 0
-h
-(-\delta,\delta)
-k(h)=0
-h'
-(-\delta,\delta)
-k(h)\neq 0
-f'(g(x))
-\lim_{h\to 0}G(h)
-\begin{align*} \lim_{h\to 0}\frac{f(g(x+h))-f(g(x))}{h} &= \lim_{h\to 0}\frac{f(g(x)+k(h)) - f(g(x))}{h}\\ &= \lim_{h\to 0}\left(G(h)\cdot\frac{g(x+h)-g(x)}{h}\right)\\ &= \left(\lim_{h\to 0}G(h)\right)\left(\lim_{h\to 0}\frac{g(x+h)-g(x)}{h}\right)\\ &= f'(g(x))g'(x). \end{align*}
-k
-0
-h
-0
-h
-h\ne0
-k\ne0
-0
-h\ne0
-k=0
-g
-f
-k=0
-h=0
- \frac{f(g(x)+k)-f(g(x))}{k} 
- k \mapsto \begin{cases} \frac{f(g(x)+k)-f(g(x))}{k} & \text{if }k\ne 0, \\  \\ f'(g(x)) & \text{if } k = 0.\end{cases} \tag{2} 

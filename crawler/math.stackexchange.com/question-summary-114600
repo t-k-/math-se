@@ -1,19 +1,0 @@
-\Gamma(z)
-\Gamma(z)= \int_0^\infty e^{-t}t^{z-1}dt.
-z=x+iy
-|\Gamma(x+iy)| \leq \Gamma(x).
-x>0
--1< x<0
-(2)
--n-1<x<-n
-n=1,2,3,\dots
- \begin{align} |\Gamma(x+iy)| &=\left|\int_0^\infty e^{-t}\,t^{x+iy-1}\;\mathrm{d}t\right|\\ &=\left|\int_0^\infty e^{-t}\,t^{x-1}\,e^{iy\log(t)}\;\mathrm{d}t\right|\\ &\le\int_0^\infty\left|e^{-t}\,t^{x-1}\,e^{iy\log(t)}\right|\;\mathrm{d}t\\ &=\int_0^\infty e^{-t}\,t^{x-1}\;\mathrm{d}t\\ &=\Gamma(x)\\ &=|\Gamma(x)|\tag{1} \end{align} 
- \begin{align} |\Gamma(x+iy)| &=\frac{1}{|x+iy|}|\Gamma(x+1+iy)|\\ &\le\frac{1}{|x|}|\Gamma(x+1)|\\ &=|\Gamma(x)|\tag{2} \end{align} 
-\Gamma(z)
-z
-|\Gamma(x+iy)|\le|\Gamma(x)|
-x
-\Gamma(x)
-\Gamma(z) = \int_0^\infty e^{-t} t^{z-1} \,{\rm d}t.
-w(t)=e^{-t}t^{x+iy-1}=e^{-t}t^{x-1}t^{iy}
-\begin{equation*} \left\vert \int_{0}^{\infty }w(t)dt\right\vert \leq \int_{0}^{\infty }\left\vert w(t)\right\vert dt \end{equation*}

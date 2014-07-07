@@ -1,13 +1,0 @@
-xy=1, \quad xy^2=3,\quad x^2-y^2=26,\quad x^2-y^3=11
- xy=1, \quad xy=3,\quad x^2-y^2=26,\quad x^2-y^2=11 \ , 
- u = xy, \quad v = x^2 - y^2 \ . 
- \iint_D dxdy = \int_1^3 \int_{11}^{26}\vert JT(u,v) \vert dvdu  \ , 
-D
-JT(u,v)
-(x,y) = T(u,v)
- (u,v) = T^{-1}(x,y) = (xy, x^2 - y^2) \ , 
- JT(u,v) = JT(x,y)^{-1}\circ T(u,v) = \frac{-1}{2(x^2+y^2)\circ T(u,v)}  \ . 
-T(u,v)
- \iint_D (x^2+y^2)dxdy \ . 
-(x^2 + y^2)\circ T(u,v)
- \iint_D (x^2+y^2)dxdy = \int_1^3 \int_{11}^{26} ((x^2 + y^2)\circ T(u,v)) \frac{1}{2(x^2+y^2)\circ T(u,v)}dvdu = \frac{1}{2} \int_1^3 \int_{11}^{26} dvdu \ . 

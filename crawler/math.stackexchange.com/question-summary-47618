@@ -1,65 +1,0 @@
-f: \mathbb{R}^n \to \mathbb{R}
- \nabla f = \left(\frac{\partial f}{\partial x_1}, ..., \frac{\partial f}{\partial x_n}\right)
-f
-(r, \theta, \phi)
- \nabla f = \left(\frac{\partial f}{\partial r}, \frac{1}{r} \frac{\partial f}{\partial \theta}, \frac{1}{r \sin \theta} \frac{\partial f}{\partial \phi} \right)
- \nabla f = \left(\frac{\partial f}{\partial r}, \frac{\partial f}{\partial \theta}, \frac{\partial f}{\partial \phi} \right)
- df_{x}(\vec v) = \lim_{t\to0} \frac{f(x+t\vec v)-f(x)}{t}
-x
-\vec v
-\Delta f/\Delta t
-\mathbb R^n \to \mathbb R
-\mathbb R^n
- df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy + \frac{\partial f}{\partial z}dz 
- \nabla f = df(\vec v_{max})\cdot\vec v_{max} 
- \langle \nabla f, \vec v \rangle = df(\vec v) \quad\forall \vec v\in\mathbb R^n.
-\langle,\rangle
-df
-\nabla f
-\langle\vec a,\vec b\rangle := a_xb_x + a_yb_y + 4a_zb_z
-\mathbb{R}
-\mathbb{R}^n
-f:X\subset \mathbb{R}^n \rightarrow \mathbb{R}
-f
-x_0
-df_{x_0}
-df_{x_0}:\mathbb{R^n} \rightarrow \mathbb{R}
-\mathbb{R}^n
-\nabla f(x_0)
-v \in \mathbb{R}^n
-g
-\mathbb{R}^n
- df_{x_0}(v) = g(v, \nabla f(x_0)) 
- \nabla f(x_0) = (g^{1k} \partial_k f(x_0), \dots, g^{nk} \partial f(x_0)) 
-x = r \cos (\theta)
-y = r \sin (\theta)
-G
-G = J^TJ
-J
- T(r,\theta)= (r \cos (\theta), r \sin (\theta)) 
- J = \bigl(   \begin{array}{ccc} \cos (\theta) & -r \sin (\theta)  \\ \sin (\theta) & r \cos(\theta) \end{array} \bigr) 
- G = J^TJ = \bigl(   \begin{array}{ccc} 1 & 0  \\ 0 & r^2 \end{array} \bigr) 
- G^{-1}  = \bigl(   \begin{array}{ccc} 1 & 0  \\ 0 & \frac{1}{r^2} \end{array} \bigr) 
-g^{ij}
- \nabla f(x_0) = (\partial_r f(x_0), \frac{1}{r^2} \partial_{\theta} f(x_0)) 
- \nabla f(x_0) = (\partial_r f(x_0), \frac{1}{r} \partial_{\theta} f(x_0)) 
-r
-r - \theta
-r - \theta
- \nabla f(x_0) = \partial_r f(x_0) e_r + \frac{1}{r^2} \partial_{\theta}f(x_0)e_{\theta} 
-e_r
-e_{\theta}
-r - \theta
-T
-r
-\theta
- e_r = \partial_r T = (\cos (\theta), \sin(\theta)) 
- e_{\theta} = \partial_{\theta}T = r(-\sin( \theta), \cos (\theta)) 
- \nabla f(x_0) = \partial_r f(x_0) \hat{e_r} + \frac{1}{r} \partial_{\theta}f(x_0)\hat{e_\theta} 
-f:(0,\infty)\times (0,2\pi]\times [0,\pi]\to \mathbb{R}
-\nabla f=\left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}\right)
-\frac{\partial f}{\partial x}\hat{i}+ \frac{\partial f}{\partial y}\hat{j} + \frac{\partial f}{\partial z}\hat{k}
-\hat{i}
-(1,0,0)^T
-\nabla f \neq \frac{\partial f}{\partial r}\hat{i}+\cdots 
-\nabla f= \frac{\partial f}{\partial r}\hat{r} + \frac{1}{r}\frac{\partial f}{\partial \theta}\hat{\theta} + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\hat{\phi}

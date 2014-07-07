@@ -1,9 +1,0 @@
-\lim_{n\to \infty} n(H(n) - \ln(n) - \gamma)
-\lim_{n\to \infty} \big(H(n)- \ln(n)\big) = \gamma
-H(n) = \log(n) + \gamma + \frac{1}{2n} + O(n^{-2}).
-n(H(n) - \log(n) - \gamma) = \frac{1}{2} + O(n^{-1}) \to \frac{1}{2}.
-u_n=H(n)-\log n-\gamma
-u_{n+1}-u_n=\frac1{n+1}-\log\left(1+\frac1n\right)\\=\frac1n\frac1{1+1/n}-\log\left(1+\frac1n\right)\sim_\infty \frac1n\left(1-\frac1n\right)-\frac1n+\frac1{2n^2}=-\frac1{2n^2}
-u_n=\sum_{k=n}^\infty (u_k-u_{k+1})\sim_\infty \frac12\sum_{k=n}^\infty\frac1{k^2}\sim_\infty\frac12\int_n^\infty\frac{dx}{x^2}=\frac{1}{2n}
-u_n=\frac{1}{2n}+o\left(\frac{1}{n}\right)
-\lim_{n\to \infty} n(H(n) - \ln(n) - \gamma)=\lim_{n\to \infty}nu_n=\frac12 

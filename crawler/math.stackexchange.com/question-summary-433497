@@ -1,7 +1,0 @@
-F: \mathbf{R}^{n} \rightarrow \mathbf{R}^{m}
-F_i = f(\pmb a) + \nabla f(\pmb a)^T (\pmb x - \pmb a) + 0.5 (\pmb x - \pmb a)^T \nabla^2 f( \pmb a ) (\pmb x - \pmb a) \quad \forall i=1,...,m
-F = [F_1, F_2, ..., F_m]^T
-\min \left\Vert F \right\Vert_2^2
-H \approx 2( \nabla f(\pmb a) )^T ( \nabla f(\pmb a) )
-g=\sum_{i=1}^{m} f_i^2 = \left\Vert F \right\Vert_2^2
-x_{k+1} = x_k - ( \nabla^2 g )^{-1} \nabla g

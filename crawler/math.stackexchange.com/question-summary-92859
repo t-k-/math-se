@@ -1,31 +1,0 @@
-\mathbf{v}_{1},\mathbf{v}_{2},\cdots,\mathbf{v}_{m}
-m
-n
-\Gamma=\left|\begin{array}{cccc} \mathbf{v}_{1}^{2} & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{2}\right) & \cdots & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{m}\right)\\ \left(\mathbf{v}_{2}\cdot\mathbf{v}_{1}\right) & \mathbf{v}_{2}^{2} & \cdots & \left(\mathbf{v}_{2}\cdot\mathbf{v}_{m}\right)\\ \cdots & \cdots & \cdots & \cdots\\ \left(\mathbf{v}_{m}\cdot\mathbf{v}_{1}\right) & \left(\mathbf{v}_{m}\cdot\mathbf{v}_{2}\right) & \cdots & \mathbf{v}_{m}^{2} \end{array}\right|
-v_{ij}
-j
-\mathbf{v}_{i}
-\Gamma=\sum\left|\begin{array}{cccc} v_{1s_{1}} & v_{1s_{2}} & \cdots & v_{1s_{m}}\\ v_{2s_{1}} & v_{2s_{2}} & \cdots & v_{2s_{m}}\\ \cdots & \cdots & \cdots & \cdots\\ v_{ms_{1}} & v_{ms_{2}} & \cdots & v_{ms_{m}} \end{array}\right|^{2}
-s_{1},s_{2},\cdots,s_{m}
-n
-s_{1}<s_{2}<\cdots<s_{m}
-(i,j)
-\mathbf{v}_{i}\cdot\mathbf{v}_{j} = \sum_{s=1}^n v_{is} v_{js}
-s
-s
-s_j
-j
-v_{j s_{j}}
-s_j
-(s_1,\dots,s_n)
- \Gamma=\left|\begin{array}{cccc} \sum_{s_1} v_{1 s_{1}} v_{1 s_{1}} & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{2}\right) & \cdots & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{m}\right)\\ \sum_{s_1} v_{2 s_{1}} v_{1 s_{1}} & \mathbf{v}_{2}^{2} & \cdots & \left(\mathbf{v}_{2}\cdot\mathbf{v}_{m}\right)\\ \cdots & \cdots & \cdots & \cdots\\ \sum_{s_1} v_{m s_{1}} v_{1 s_{1}} & \left(\mathbf{v}_{m}\cdot\mathbf{v}_{2}\right) & \cdots & \mathbf{v}_{m}^{2} \end{array}\right| = \sum_{s_1} v_{1 s_{1}} \left|\begin{array}{cccc} v_{1 s_{1}} & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{2}\right) & \cdots & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{m}\right)\\ v_{2 s_{1}} & \mathbf{v}_{2}^{2} & \cdots & \left(\mathbf{v}_{2}\cdot\mathbf{v}_{m}\right)\\ \cdots & \cdots & \cdots & \cdots\\ v_{m s_{1}} & \left(\mathbf{v}_{m}\cdot\mathbf{v}_{2}\right) & \cdots & \mathbf{v}_{m}^{2} \end{array}\right|. 
- \Gamma =  \sum_{s_1} \sum_{s_2} \dots \sum_{s_m} v_{1 s_{1}} v_{2 s_{2}} \dots v_{m s_{m}} \left|\begin{array}{cccc} v_{1s_{1}} & v_{1s_{2}} & \cdots & v_{1s_{m}}\\ v_{2s_{1}} & v_{2s_{2}} & \cdots & v_{2s_{m}}\\ \cdots & \cdots & \cdots & \cdots\\ v_{ms_{1}} & v_{ms_{2}} & \cdots & v_{ms_{m}} \end{array}\right|. 
-v_i=\Sigma v_{ij}e_j
-v_1\wedge...\wedge v_m=\Sigma c_{s_1...s_m} e_{s_1 }\wedge ...\wedge e_{s_m }  \quad (+)
-c_{s_1...s_m}= \left|\begin{array}{cccc} v_{1s_{1}} & v_{1s_{2}} & \cdots & v_{1s_{m}}\\ v_{2s_{1}} & v_{2s_{2}} & \cdots & v_{2s_{m}}\\ \cdots & \cdots & \cdots & \cdots\\ v_{ms_{1}} & v_{ms_{2}} & \cdots & v_{ms_{m}} \end{array}\right|     \quad \quad (*)
-m
-v_1,..., v_m
-||v_1\wedge...\wedge v_m||^2=\Gamma =\left|\begin{array}{cccc} \mathbf{v}_{1}^{2} & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{2}\right) & \cdots & \left(\mathbf{v}_{1}\cdot\mathbf{v}_{m}\right)\\ \left(\mathbf{v}_{2}\cdot\mathbf{v}_{1}\right) & \mathbf{v}_{2}^{2} & \cdots & \left(\mathbf{v}_{2}\cdot\mathbf{v}_{m}\right)\\ \cdots & \cdots & \cdots & \cdots\\ \left(\mathbf{v}_{m}\cdot\mathbf{v}_{1}\right) & \left(\mathbf{v}_{m}\cdot\mathbf{v}_{2}\right) & \cdots & \mathbf{v}_{m}^{2} \end{array}\right|\quad \quad (***)
-(**)
-(*)
-(***)

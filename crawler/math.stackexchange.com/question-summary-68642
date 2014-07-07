@@ -1,25 +1,0 @@
-f \in L^1
-\hat f
-|\hat f (\xi +h )-\hat f (\xi)| = \left| \int f(x) (e^{-2 \pi i x \cdot (\xi+h)}- e^{-2 \pi i x \cdot (\xi)})\mathrm dx \right| \leq 2 \|f\|_{L^1}
-\begin{align} \left|\widehat{f}(\xi + h) - \widehat{f}(\xi)\right|  &=  \left| \int f(x) \left(e^{-2 \pi i x \cdot (\xi + h)} - e^{-2 \pi i \xi \cdot x} \right)dx \right| \\ &\leq \int |f(x)| \left|e^{2 \pi i x \cdot h} - 1  \right| dx \end{align}
-h \to 0
-f\in L^1
-\epsilon>0
-R>0
-\delta=\frac{\epsilon}{4\pi R\|f\|_{L^1}}
-|x|\le R
-|\eta|<\delta
-x
-|\eta|<\delta
- \begin{align} \hat{f}(\xi+\eta)-\hat{f}(\xi) &=\int_{\mathbb{R}^n}f(x)\left(e^{-2\pi ix\cdot(\xi+\eta)}-e^{-2\pi ix\cdot\xi}\right)\mathrm{d}x\\ &=\int_{\mathbb{R}^n}f(x)\left(e^{-2\pi ix\cdot\eta}-1\right)e^{-2\pi ix\cdot\xi}\;\mathrm{d}x\tag{1} \end{align} 
- \int_{|x|>R}|f(x)|\mathrm{d}x<\frac{\epsilon}{4}\tag{2} 
- \left|e^{-2\pi ix\cdot\eta}-1\right|\le\frac{\epsilon}{2\|f\|_{L^1}}\tag{3} 
- \left|e^{-2\pi ix\cdot\eta}-1\right|\le2\tag{4} 
- \begin{align} |\hat{f}(\xi+\eta)-\hat{f}(\xi)| &\le\int_{\mathbb{R}^n}|f(x)|\;|e^{-2\pi ix\cdot\eta}-1|\;\mathrm{d}x\\ &=\int_{|x|<R}|f(x)|\;|e^{-2\pi ix\cdot\eta}-1|\;\mathrm{d}x +\int_{|x|\ge R}|f(x)|\;|e^{-2\pi ix\cdot\eta}-1|\;\mathrm{d}x\\ &\le\|f\|_{L^1}\frac{\epsilon}{2\|f\|_{L^1}}+\;2\frac{\epsilon}{4}\\ &=\epsilon \end{align} 
-\begin{align} (\exists c\ \epsilon \ \mathbb{R}) \ |f(x)|\leq c|x| \end{align}
-\begin{align} F(f) = \int_{\mathbb{R}} f(x)e^{-j\omega x}dx \end{align}
-\begin{align} |F(f)| = \left|\int_{\mathbb{R}} f(x)e^{-j\omega x}dx\right| \leq \int_{\mathbb{R}} |f(x)e^{-j\omega x}|dx \leq \int_{\mathbb{R}} |f(x)|dx = \left \| f \right \|_{L^1} < {\infty} \end{align}
-\begin{align} \left | F(f) \right | \leq 1 \left \| f \right \|_{L^1}, \end{align}
-\ u\ is\ L^1,\ so\ is\ each\ u_n
-\left |u_n \right | \leq \left | f \right |\ and\ f\ is\ L^1
- \int_{\mathbb{R}}|u_n-u| \to 0\ as \ n \to \infty 

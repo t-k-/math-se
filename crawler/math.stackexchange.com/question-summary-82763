@@ -1,14 +1,0 @@
-A=\begin{pmatrix}  2 & 4   & -8 &  4 & 1\\  4 & 10  &-16 &  8 &-8\\ -4 & -12 & 17 & -8 & 20\\ -2 & -10 & 10 & -3 & 34  \end{pmatrix}
-b=\begin{pmatrix}-33\\-36\\4\\-62\end{pmatrix}
-\left( A  |  b\right)
- \left( \begin{array}{cccccc}    1 && 0 && 0 && 0 && \star && \star\\   0 && 1 && 0 && 0 && \star && \star \\   0 && 0 && 1 && 0 && \star && \star\\   0 && 0 && 0 && 1 && \star && \star \end{array} \right) 
-\star
- \left( \begin{array}{cccccc}    1 && 0 && 0 && 0 && 16.5 && -52.5\\   0 && 1 && 0 && 0 && -5 && 15\\   0 && 0 && 1 && 0 && 2 && -2\\   0 && 0 && 0 && 1 && 1 && -1 \end{array} \right) 
-  \begin{align*} x_1 + 16.5x_5 &= -52.5 \\ x_2 - 5 x_5 &= 15  \\ x_3 + 2 x_5 &= -2 \\ x_4 + x_5 &= -1 \end{align*} 
-x_5
-\left(\begin{array}{ccccc|c}2&4&-8&4&1&-33\\ 4&10&-16&8&-8&-36\\ -4&-12&17&-8&20&4\\-2&-10&10&-3&34&-62\end{array}\right)\to\left(\begin{array}{ccccc|c}2&4&-8&4&1&-33\\0&2&0&0&-10&30\\ 0&-2&1&0&12&-32\\0&-6&2&1&35&-95\end{array}\right)\to
-\left(\begin{array}{ccccc|c}2&4&-8&4&1&-33\\0&1&0&0&-5&15\\ 0&0&1&0&2&-2\\0&0&2&1&5&-5\end{array}\right)\to\left(\begin{array}{ccccc|c}2&4&-8&4&1&-33\\0&1&0&0&-5&15\\ 0&0&1&0&2&-2\\0&0&0&1&1&-9\end{array}\right)\to
-(-\frac{73}{2},15,-2,-9,0)+x(-\frac{33}{2},5,-2,-1,1)
-x
-x=0
-\left(\begin{array}{ccccc|c}2&0&0&0&33&-73\\0&1&0&0&-5&15\\ 0&0&1&0&2&-2\\0&0&0&1&1&-9\end{array}\right)

@@ -1,29 +1,0 @@
-(\Omega, \mathcal{F}, P)
-\mathcal{N}
-\sigma
-\mathcal{F}
-A \in \mathcal{F}
- P(A \mid \mathcal{N}) := E(I_A \mid \mathcal{N}) 
-\forall \omega \in \Omega, P(\cdot \mid \mathcal{N})(\omega)
-(\Omega, \mathcal{F})
-Y: \Omega \rightarrow \mathbb{R}
-X
-Y
-E(X \mid \mathcal{N})
- Y(\omega):=\int_\Omega X \, dP(\cdot \mid \mathcal{N})(\omega). 
- Y = E(X \mid \mathcal{N}) \text{ a.e. }? 
-E\in\mathcal{N}
- \int_{E} X\ dP = \int_{E} \left[\int_{\Omega} X\ dP(\cdot|\mathcal{N})(\omega) \right] dP|_{\mathcal{N}} \qquad \qquad (1). 
-X=1_{A}
-A\in \mathcal{F}
-E
-\mathcal{N}
-P(A\cap E)
-E\in\mathcal{N}
- P(A\cap E)=\int_{\Omega} \left[\int_{\Omega} 1_{A\cap E}\ dP(\cdot|\mathcal{N})(\omega) \right] dP|_{\mathcal{N}}. 
- \int_{\Omega} \left[\int_{\Omega} 1_{A\cap E}\ dP(\cdot|\mathcal{N})(\omega) \right] dP|_{\mathcal{N}} = \int_{\Omega} \mathbb{E}(A\cap E|\mathcal{N}) dP|_{\mathcal{N}} = \int_{E} \mathbb{E}(A|\mathcal{N}) dP|_{\mathcal{N}}, 
-X
-X
-\mathcal{F}-
-\varphi_n \uparrow X
- \begin{eqnarray} \int_{E} \varphi_n\ dP &=& \int_{E} \left[\int_{\Omega} \varphi_n\ dP(\cdot|\mathcal{N})(\omega) \right] dP|_{\mathcal{N}}  \\ &=& \int_{E} \mathbb{E}(\varphi_n|\mathcal{N}) dP|_{\mathcal{N}}, \end{eqnarray} 

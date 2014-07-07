@@ -1,33 +1,0 @@
-\displaystyle\phi_r(s)=\left\{\begin{array}{cl}e^{s^2/(s^2-r^2)}&\text{for }0\le s<r\\0&\text{for }s\ge r\end{array}\right.\hspace{.25in}
-\Phi_r(x)=\phi_r(|x|)
-C_c^\infty(\mathbb{R}^n)
-\Phi_r
-C^\infty
-u
- \begin{align} u(x)&=\frac{1}{\int_0^r\Omega_ns^n\phi_r^\prime(s)\mathrm{d}s}\int_0^r\int_{B_s(x)}u(y)\;\mathrm{d}y\;\phi_r^\prime(s)\;\mathrm{d}s\\     &=\frac{1}{\int_0^r\phi_r(s)n\Omega_ns^{n-1}\mathrm{d}s} \int_0^r\phi_r(s)\int_{S_s(x)}u(y)\;\mathrm{d}\sigma(y)\;\mathrm{d}s \\     &=\frac{1}{\int_{\mathbb{R}^n}\Phi_r(y)\mathrm{d}y} \int_{\mathbb{R}^n}\Phi_r(y-x)u(x)\;\mathrm{d}x\\     &=\frac{1}{\int_{\mathbb{R}^n}\Phi_r(y)\mathrm{d}y}\Phi_r*u(x) \end{align} 
-C^\infty
-r
-B_r(x)
-B_r(y)
-0
-y
-x
-\int_{B_r(x)}udV-\int_{B_r(y)}udV
-0
-y
-x
-u
-u
-f(z) = \exp(-1/z^4)
-u(x,y) = \Re f(x+iy)
-u
-u
-u(0,0) = 0
-u
-u
-0
-u
-\mathbb{R}^2
-u
- u(x,0) = \exp(-1/x^4) \quad\text{and}\quad u(0,y) = \exp(-1/y^4). 
- u''_{xx} + u''_{yy} = 0

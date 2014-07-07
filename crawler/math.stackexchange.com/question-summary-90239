@@ -1,40 +1,0 @@
-\iint_R f(r,\theta) \ dxdy = \int_a^b \int_0^{r(\theta)} f(r,\theta) r (dr)\ d\theta
-d r
-d \theta
-0
-((r+\Delta r) \cos(a +\Delta \theta) -r \cos a) \cdot ((r+\Delta r) \sin(a + \Delta \theta) -r \sin a) / (r \;\Delta \theta \; \Delta r)=1 .
-\Delta r 
-\Delta \theta
-0
-dx\;dy=r \;dr \;d \theta
-\lim\limits_{\substack{\Delta r\to 0\\\Delta a\to 0}} \frac{((r+\Delta r) \cos(a +\Delta \theta) -r \cos a) \cdot ((r+\Delta r) \sin(a + \Delta \theta) -r \sin a)}{r \;\Delta \theta \; \Delta r}=1.
-[f(a+\Delta a,r+\Delta r)-f(a,r)]\cdot[g(a+\Delta a,r+\Delta r)-g(a,r)]
-f(a,r)=r\cos a
-g(a,r)=r\sin a
-(x_1,y_1)=(r\cos a,r\sin a)
-(x_2,y_2)
-r+\Delta r
-a+\Delta a
-f_r(a,r)=\cos a
-f_a(a,r)=-r\sin a
-g_r(a,r)=\sin a
-g_a(a,r)=r\cos a
-a\approx 0
-r\Delta a\Delta r
-\cos a=\sin a = \frac{\sqrt 2}2
-\frac{(\Delta r)^2}2-r^2\sin a\cos a(\Delta a)^2
-h(x)-h(x_0) \approx h'(x_0)\Delta x
-\Delta x=x-x_0
-\Delta y=y-y_0
-h(x,y)-h(x_0,y_0) \approx \frac{\partial h}{\partial x}(x_0,y_0) \Delta x + \frac{\partial h}{\partial y}(x_0,y_0) \Delta y,
-\mathrm{d}x\;\mathrm{d}y
-\mathrm{d}r\;\mathrm{d}\theta
-x=r\cos(\theta)
-y=r\sin(\theta)
-\begin{vmatrix}\cos(\theta)&\sin(\theta)\\-r\sin(\theta)&r\cos(\theta)\end{vmatrix}=r
- \frac{\partial(x,y)}{\partial(u,v)}=\begin{bmatrix}\frac{\partial x}{\partial u}&\frac{\partial y}{\partial u}\\\frac{\partial x}{\partial v}&\frac{\partial y}{\partial v}\end{bmatrix}\tag{1} 
- \frac{\partial(x,y)}{\partial(r,\theta)}=\begin{bmatrix}\cos(\theta)&\sin(\theta)\\-r\sin(\theta)&r\cos(\theta)\end{bmatrix}\tag{2} 
-\mathrm{d}r\;\mathrm{d}\theta
-\mathrm{d}r\;\mathrm{d}\theta
-\left|\frac{\partial(x,y)}{\partial(r,\theta)}\right|\;\mathrm{d}r\;\mathrm{d}\theta
- \begin{align} \iint f(x,y)\;\mathrm{d}x\;\mathrm{d}y &=\iint f(r,\theta)\left|\frac{\partial(x,y)}{\partial(r,\theta)}\right|\;\mathrm{d}r\;\mathrm{d}\theta\\ &=\iint f(r,\theta)\;r\;\mathrm{d}r\;\mathrm{d}\theta\tag{3} \end{align} 

@@ -1,9 +1,0 @@
-\dot{y}(x,t) = \sum_{n=1}^{\infty} \frac{n \pi a}{\ell} \sin{\left ( \frac{n \pi x}{\ell} \right)} \left [-C_n \sin{\left ( \frac{n \pi a t}{\ell} \right)} + D_n \cos{\left ( \frac{n \pi a t}{\ell} \right)}\right ] 
-\dot{y}(x,0) = \sum_{n=1}^{\infty} \frac{n \pi a}{\ell} D_n \sin{\left ( \frac{n \pi x}{\ell} \right)} = g(x)
-\frac{n \pi a}{\ell} D_n = \frac{\displaystyle \int_0^{\ell} dx \, g(x) \, \sin{\left ( \frac{n \pi x}{\ell} \right)}}{\displaystyle \int_0^{\ell} dx \, \sin^2{\left ( \frac{n \pi x}{\ell} \right)}}
-g
-g(x) = \begin{cases} \frac{a x}{\ell} & 0 \le x \le \frac{\ell}{2} \\ a \left ( 1-\frac{x}{\ell}\right) & \frac{\ell}{2} \lt x \le \ell \end{cases} 
-D_n = 2 \ell \frac{(-1)^n}{n}
-C_n
-n
-y(x,t) = 2 \ell \sum_{n=1}^{\infty} \frac{(-1)^n}{n} \sin{\left ( \frac{n \pi x}{\ell} \right)} \sin{\left ( \frac{n \pi a t}{\ell} \right)} 

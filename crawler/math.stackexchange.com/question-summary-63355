@@ -1,22 +1,0 @@
-B_t,t\ge 0
-X(t)=e^{t/2}B_{1-e^{-t}}
-Y_t=X_t-\frac{1}{2}\int_0^t X_u du
-Y_t, t\ge 0
-Y_t
-t
-t
-t
-Z_t=B_{1-\mathrm e^{-t}}=\int\limits_0^{1-\mathrm e^{-t}}\mathrm dB_s
-(Z_t)_{t\geqslant0}
-\mathrm d\langle Z\rangle_t=\mathrm e^{-t}\mathrm dt
-(\beta_t)_{t\geqslant0}
-\beta_0=0
-Z_t=\int\limits_0^t\mathrm e^{-s/2}\mathrm d\beta_s
-t
-X_t=\mathrm e^{t/2}\int\limits_0^t\mathrm e^{-s/2}\mathrm d\beta_s
-Y_t=X_t-\frac12\int\limits_0^tX_u\mathrm du=\beta_t
-(Y_t)_{t\geqslant0}
- \int\limits_0^tX_u\mathrm du=\int\limits_0^t\mathrm e^{u/2}\int\limits_0^u\mathrm e^{-s/2}\mathrm d\beta_s\mathrm du=\int\limits_0^t\mathrm e^{-s/2}\int\limits_s^t\mathrm e^{u/2}\mathrm du\mathrm d\beta_s, 
- \int\limits_0^tX_u\mathrm du=\int\limits_0^t\mathrm e^{-s/2}2(\mathrm e^{t/2}-\mathrm e^{s/2})\mathrm d\beta_s=2\mathrm e^{t/2}\int\limits_0^t\mathrm e^{-s/2}\mathrm d\beta_s-2\beta_t=2X_t-2\beta_t. 
-E(Y_s,Y_t)
-min(s,t)

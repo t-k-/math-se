@@ -1,86 +1,0 @@
-f, \pi, g
-f, \pi, g
-h
- \begin{align*}  h(0, y) &\simeq f(y) \\  h(x + 1, y) &\simeq g(x, y, h(x, \pi(x, y))) \end{align*} 
- \begin{align*}  h(\bar{x}, 0) &\simeq f(\bar{x}) \\  h(\bar{x}, y + 1) &\simeq g(\bar{x}, y, h(\bar{x}, y)) \end{align*} 
-x
-n
-l
-0
-\mathit{tail}
-\pi
-   \begin{align} \mathit{append}(0,l,x) &= \mathit{cons}(x,0)\\               \mathit{append}(n+1,l,x) &= \mathit{cons}(\mathit{head}(l),\mathit{append}(n,\mathit{tail}(l),x))\\   \end{align} 
-h
-P
-G
-h(n,x) = G(n,x,n)
-   \begin{align}   P(n,x,0)&=x\\ P(n,x,i+1)&=\pi(n-(i+1),P(n,x,i)) \\   G(n,x,0)&=f(P(n,x,n)) \\ G(n,x,i+1)&=g(i,P(n,x,n-(i+1)),G(n,x,i)) \\   h(n,x) &= G(n,x,n) \\   \end{align} 
-   \begin{align}   P(n,x,n-i) &= \pi(i,\pi(i+1(\ldots,\pi(n-1,x)\ldots)) \quad\text{and}\\   G(n,x,i) &= g(i-1,P(n,x,n-i),g(i-2,P(n,x,n-i+1),g(\ldots  \\   & \qquad\qquad\qquad\qquad\qquad\qquad g(0,P(n,x,n-1),y)\ldots))) \quad\text{where}\\     y &= f(P(n,x,n)) = f(\pi(0,\pi(1,\ldots,\pi(n-1,x)\ldots))), \\   \end{align} 
-h
-i
-i
-h
-   h(0,x) = G(0,x,0) = f(P(0,x,0)) = f(x) 
-   \begin{align}   h(n+1,x) &= G(n+1,x,n+1) \\   &= g(n,P(n+1,x,0),G(n+1,x,n)) \\   &= g(n,x,G(n+1,x,n)) \\   &= g(n,x,G(n,\pi(n,x),n)) \\   &= g(n,x,h(n,\pi(n,x))) \\   \end{align} 
-h'(z)
-h'(\langle x,y\rangle)=h(x,y)
-\langle x,y\rangle
-(x,y)
-z
-x
-y
-\langle x,y\rangle
-\langle x+1,y\rangle > \langle x, \pi(x,y)\rangle
-h
-h'
-\pi(x,y)\geq y
-x,y
-\pi(x,y)
-y
-g
-x
-y
-h(x,\pi(x,y))
-\left<h(x,0),\ldots,h(x,\pi(x,y))\right>
-\pi
-\pi'
-\pi'(x,y)=\mathrm{max}(y,\pi(x,0),\ldots,\pi(x,y))
-x,y
-l(x,y)
-y
-\pi(x-1,y)
-\pi(x-2,\pi(x-1,y))
-\pi(0,\pi(1,\ldots\pi(x-1,y)\ldots))=l(x,y)
-y
-x
-x-1
-x-2
-0
-l(x,y)=L(x,x,y)
-L
-\pi
-l
-y
-l(x,y)\geq y
-x,y
-l(x+1,y)=l(x,\pi(x,y))
-l
-   \begin{align*}    L(0,x,y) &= y, \\    L(i+1,x,y) &= \pi(x-i,L(i,x,y)).   \end{align*} 
-H(x,z)
-h
-h(x,y)
-y
-l(x,y)\leq z
-h
-h(x,y)
-H(x,l(x,y))
-y
-H
-l
-H(x,z)
-H(x,z)
-h(x,y)
-H(x+1,z)
-H
-x
-z

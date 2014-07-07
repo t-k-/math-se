@@ -1,15 +1,0 @@
- \dfrac{\Gamma, A : S \vdash B : T}          {\Gamma \vdash (\Lambda A:S. B) : (\Pi A:S. T)} 
-A
-B
-T
-A
-B
-S
-T
- \dfrac{\Gamma \vdash A : S \qquad           \Gamma \vdash S \equiv T}          {\Gamma \vdash A : T} 
- \dfrac{\Gamma \vdash T : K}          {\Gamma \vdash \mathtt{sig}\; \mathtt{x} : T \;\mathtt{end} : \mathtt{SIG}(\mathtt{x} : T)} 
-S
- \begin{gather*}   \dfrac{\Gamma, x:A \vdash B : S \qquad \text{$S$ is a sort}}         {\Gamma \vdash (\forall x:A. B) : S} \   \dfrac{\Gamma, x:A \vdash t : B}         {\Gamma \vdash (\lambda x:A. t) : (\forall x:A. B)} \ \end{gather*} 
-S
-S
-x

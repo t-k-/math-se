@@ -1,22 +1,0 @@
-C_2^2
--D^2
--D^2u=-(u_{xx}+u_{yy})
-(x,y)
-(r,\theta)
-x=r\cos\theta,y=r\sin\theta
--(u_{\theta\theta}+u_{rr})
- \frac{\partial}{\partial x}=\frac{\partial}{\partial r}\frac{\partial r}{\partial x}+\frac{\partial}{\partial \theta}\frac{\partial \theta}{\partial x} 
-r=\sqrt{x^2+y^2}
-\frac{\partial r}{\partial x}=\frac{x}{\sqrt{x^2+y^2}}=\cos (\theta )
-x=r\cos (\theta )
-1=\frac{\partial r}{\partial x}\cos (\theta )-r\sin (\theta )\frac{\partial \theta}{\partial x}
-\frac{\partial \theta}{\partial x}=-\frac{\sin (\theta )}{r}
- \frac{\partial}{\partial x}=\cos (\theta)\frac{\partial}{\partial r}-\frac{\sin (\theta )}{r}\frac{\partial}{\partial \theta} 
- \frac{\partial ^2}{\partial x^2}+\frac{\partial ^2}{\partial y^2}=\frac{1}{r}\frac{\partial}{\partial r}\left[ r\frac{\partial}{\partial r}\right] +\frac{1}{r^2}\frac{\partial ^2}{\partial \theta ^2}. 
-\Delta f=*d*df
-df=\partial_r f\, dr + \partial_\theta f\,d\theta
-*dr=r\,d\theta
-*d\theta=-dr/r
-*df=(\partial_r f)\, r\,d\theta - (\partial_\theta f)\,dr/r
-d*df=\partial_r(r(\partial_r f))\,dr\wedge d\theta + (\partial_\theta(\partial_\theta f)/r)\,dr\wedge d\theta
-*d*df=\partial_r(r(\partial_r f))/r + \partial_\theta(\partial_\theta f)/r^2

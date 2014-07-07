@@ -1,8 +1,0 @@
-A,B,C\neq0
-\int_{L_1}^{L_2}A^2\cos\dfrac{Be^{-C(x-D)^2}}{A}dx
-=\int_{L_1-D}^{L_2-D}A^2\cos\dfrac{Be^{-Cx^2}}{A}dx
-=\int_{L_1-D}^{L_2-D}A^2\sum\limits_{n=0}^\infty\dfrac{(-1)^nB^{2n}e^{-2nCx^2}}{A^{2n}(2n)!}dx
-=\int_{L_1-D}^{L_2-D}\sum\limits_{n=0}^\infty\dfrac{(-1)^nB^{2n}e^{-2nCx^2}}{A^{2n-2}(2n)!}dx
-=\int_{L_1-D}^{L_2-D}\sum\limits_{n=0}^\infty\sum\limits_{k=0}^\infty\dfrac{(-1)^{n+k}2^kn^kB^{2n}C^kx^{2k}}{A^{2n-2}(2n)!k!}dx
-=\left[\sum\limits_{n=0}^\infty\sum\limits_{k=0}^\infty\dfrac{(-1)^{n+k}2^kn^kB^{2n}C^kx^{2k+1}}{A^{2n-2}(2n)!k!(2k+1)}\right]_{L_1-D}^{L_2-D}
-=\sum\limits_{n=0}^\infty\sum\limits_{k=0}^\infty\dfrac{(-1)^{n+k}2^kn^kB^{2n}C^k((L_2-D)^{2k+1}-(L_1-D)^{2k+1})}{A^{2n-2}(2n)!k!(2k+1)}

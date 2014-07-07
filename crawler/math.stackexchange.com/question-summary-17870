@@ -1,48 +1,0 @@
-n
-a_0 < ... < a_n
-k
-a_i < ... < a_{i+k-1}
-(k - 1) / (a_{i+k-1} - a_i)
-n
-n >> k
-W_{i,j:n}
-j-i
-j-i=1
- {\rm E}\bigg[\frac{{j - i}}{{U_{j:n}  - U_{i:n} }}\bigg] = \frac{{j - i}}{{j - i - 1}}n, 
-f(a_i,\dots,a_{i+k-1} \mid n)
-n
-k
-\begin{eqnarray} f(a_i,\dots,a_{i+k-1}) = k!{n \choose k} {{n-k} \choose {i-1}} a_i^{(i-1)} (1-a_{i+k-1})^{(n-i+1)-k} \end{eqnarray}
-n
-k
-k! {n \choose k}
-(n-k)
-(i-1)
-{{n-k} \choose {i-1}}
-(i-1)
-a_i
-a_i^{i-1}
-(i+k-1)
-(1-a_{i+k-1})^{(n-i+1-k)}
-j
-a_j
-i \leq j \leq i+k-1
-F(a_j)d(a_j) = d(a_j)
-[0,1)
-n
-n
-i,k
-\begin{eqnarray} \tilde{n} = \frac{i+k-1}{\log \frac{1}{1-a_{i+k-1}}} \end{eqnarray}
-k=2
-\frac{1}{a_{i+1}-a_i}
-D = a_{i+1}-a_i
-i
-f_D(d) = n_t(1-d)^{n_t-1}
-n_t
-N
-\tilde{N}
-\begin{equation} f_{\tilde{N}}(\tilde{n}) = \frac{n_t}{\tilde{n}^2} \left(1-\frac{1}{\tilde{n}}\right)^{n_t-1} \end{equation}
-\hat{n} =  \frac{k-1}{a_{i+k-1}-a_i}
-\mathbb{E}(n)- \mathbb{E}(\hat{n}) = n- \mathbb{E}(\hat{n})
-95 \%
- \mathbb{E}(\hat{n}) \pm \underbrace{l_{0.95}\sqrt{\text{Var}(\hat{n})}}_{\text{margin of error}}

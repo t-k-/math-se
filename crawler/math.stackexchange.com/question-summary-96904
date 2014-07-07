@@ -1,5 +1,0 @@
- x_1*x_2+x_1*x_3=Q.
-z_1^2+z_2^2+\cdots.
-a,b,c
- \begin{align} 2ab + 2bc &= 2Q \\ 2b(a+c)&=2Q\\ 2b(a+c)+(a+c)^2+b^2-(a+c)^2-b^2 &=2Q\\ (a+b+c)^2-(a+c)^2-b^2 &=2Q\\ \frac{1}{2}\left((a+b+c)^2-(a+c)^2-b^2\right) &=Q \end{align} 
- \begin{align} 2ab + 2bc &= 2Q \\ \begin{pmatrix}a\\b\\c\end{pmatrix}^T\begin{pmatrix}  0 &1 &0\\1 &0 &1\\0 &1 &0 \end{pmatrix} \begin{pmatrix}a\\b\\c\end{pmatrix}&=2Q\\ \begin{pmatrix}a\\b\\c\end{pmatrix}^T \begin{pmatrix}  1 &1 &0\\1 &0 &1\\1 &1 &0 \end{pmatrix} \begin{pmatrix}  1 &0 &0\\0 &-1 &0\\0 &0 &-1 \end{pmatrix} \begin{pmatrix}  1 &1 &1\\1 &0 &1\\0 &1 &0 \end{pmatrix} \begin{pmatrix}a\\b\\c\end{pmatrix} &=2Q\\ \begin{pmatrix}a+b+c\\a+c\\b\end{pmatrix}^T \begin{pmatrix}  1 &0 &0\\0 &-1 &0\\0 &0 &-1 \end{pmatrix}\begin{pmatrix}a+b+c\\a+c\\b\end{pmatrix} &=2Q\\ \begin{pmatrix}a+b+c\\a+c\\b\end{pmatrix}^T \begin{pmatrix}  0.5 &0 &0\\0 &-0.5 &0\\0 &0 &-0.5 \end{pmatrix}\begin{pmatrix}a+b+c\\a+c\\b\end{pmatrix} &=Q \end{align} 

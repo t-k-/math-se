@@ -1,62 +1,0 @@
- \sum_{n=0}^{\infty} \frac{1}{(3n+1)(3n+2)}=\frac{\pi}{3\sqrt{3}} 
- \sum_{n=0}^{\infty} \frac{1}{(3n+1)(3n+2)}=\sum_{n=0}^{\infty} \frac{1}{3n+1}-\frac{1}{3n+2} 
-\arctan(x)
- -1\leq x \leq1
-\arctan(\sqrt{3})=\frac{\pi}{3} 
- \begin{eqnarray}    \sum_{n=0}^m \frac{1}{(3n+1)(3n+2)} &=& \sum_{n=0}^m \left( \frac{1}{3n+1} - \frac{1}{3n+2} \right) = \sum_{n=0}^m  \int_0^1 \left( x^{3n} - x^{3n+1} \right) \mathrm{d} x \\     &=& \int_0^1 \left( \frac{(1-x^{3m+3}) (1-x)}{1-x^3} \right) \mathrm{d} x =            \int_0^1  \frac{1-x^{3m+3}}{1+x + x^2} \mathrm{d} x \end{eqnarray} 
-   \sum_{n=0}^\infty \frac{1}{(3n+1)(3n+2)} = \int_0^1 \frac{\mathrm{d} x}{1+x+x^2} = \left.\frac{2   \sqrt{3}}{3} \arctan\left(\frac{2x+1}{\sqrt{3}}\right)\right|_0^1 = \frac{\pi}{3 \sqrt{3}} 
-\sum_{n=0}^\infty \frac{x^{3n+2}}{(3n+1)(3n+2)}
-\int \sum^b_{n=a} f\left(n,x\right)\, dx = \sum^b_{n=a} \int f\left(n,x\right) \,dx
-\int \sum^b_{n=a} f(n,x)\, dx
-\int f\left(a,x\right) + f((a+1),x) + f((a+2),x) + \dots +f\left((b-1),x\right) + f(b,x) 
- = \int f(a,x)\,dx + \int f((a+1),x) \,dx + \dots + \int f((b-1),x)\, dx + \int f(b,x)\, dx
-\begin{align*}    \sum_{n=0}^m \frac{1}{(3n+1)(3n+2)}      =& \sum_{n=0}^m \left( \frac{1}{3n+1} - \frac{1}{3n+2} \right) \\     =& \sum_{n=0}^m  \int_0^1 \left( x^{3n} - x^{3n+1} \right) \mathrm{d} x \\     =& \int_0^1 \sum_{n=0}^m \left( x^{3n} - x^{3n+1} \right) \mathrm{d} x \\     =& \int_0^1 \left( \frac{(1-x^{3m+3}) (1-x)}{1-x^3} \right) \mathrm{d} x =            \int_0^1  \frac{1-x^{3m+3}}{1+x + x^2} \mathrm{d} x \end{align*} 
- \sum_{n=0}^m \left( x^{3n} - x^{3n+1} \right) = \frac{(1-x^{3(m+1)})(1-x)}{1-x^3} 
-\sum_{n=0}^\infty \frac{1}{(3n+1)(3n+2)} = \int_0^1 \frac{\mathrm{d} x}{1+x+x^2} 
- x^2+x+1 = \left(x+\frac{1}{2}\right)^2+ \left(\frac{\sqrt{3}}{2}\right)^2
- x+\frac{1}{2} = \frac{\sqrt{3}}{2} tan \theta
- dx = \frac{\sqrt{3}}{2} sec^{2} \theta
- \begin{eqnarray} \int \frac{dx}{1+x+x^2} =  \int \frac{ \frac{\sqrt{3}}{2} sec^{2} \theta}{\frac{3}{4} sec^{2} \theta} {\mathrm{d} \theta}    &=& \frac{2}{\sqrt{3}} \theta \\    &=& \frac{2}{\sqrt{3}} tan^{-1} \left(\frac{2x+1}{\sqrt{3}}\right)  \end{eqnarray} 
- \Rightarrow \int_0^1  \frac{\mathrm{d} x}{1+x+x^2} = \frac{2\sqrt{3}}{3} \left( tan^{-1} ( \frac{3}{\sqrt{3}} ) - tan^{-1} ( \frac{1}{\sqrt{3}} ) \right)
- = \frac{2\sqrt{3}}{3} \left( \frac{\pi}{3} - \frac{\pi}{6} \right) = \frac{\pi}{3\sqrt{3}}
-S
-f(z)
-N
-\frac{1}{(3z+1)(3z+2)}\in\Theta(1/N^2)
-N
-f(z) = \frac{1}{(3z+1)(3z+2)} \pi\cot(\pi z)
-2S = \sum_n \mathrm{Res}(f(z); z=n) = \sum_n \frac{1}{(3n+1)(3n+2)}.
-\Gamma =\pm (N+1/2) \pm i N
-\int_\Gamma f(z) dz
-f(z)
-z=-1/3
-z=-2/3
-2S + \frac{1}{3}\pi\cot(-\pi/3) - \frac{1}{3} \pi\cot(-2\pi/3) = 0
- S = \frac{\pi}{6} (\cot(-2\pi/3)-\cot(-\pi/3))  = \frac{\pi}{6} \frac{2}{\sqrt{3}} = \frac{\pi}{3\sqrt{3}}.
-\Gamma_1
-N+1/2\pm iN
-\Gamma_2
-\pm N+1/2+iN
-\Gamma_1
-z=N+1/2+it
-t=0
-t
-\tanh(\pi t)
-\Gamma_1
-N
-\left|\int_{\Gamma_1} f(z) dz \right| = \left|\int_{-N}^N f(N+1/2+it) i dt\right|.
-\frac{1}{(3N+5/2)(3N+7/2)}.
-|\pi\cot(\pi (N+1/2) + \pi it)| =\pi\left|\frac{e^{i\pi (N+1/2) - \pi t}+e^{-i\pi (N+1/2) + \pi t}} {e^{i\pi (N+1/2) - \pi t}-e^{-i\pi (N+1/2) + \pi t}}\right| \\ = \pi\left|\frac{i(-1)^N e^{- \pi t} - i(-1)^N e^{\pi t}} {i(-1)^N e^{- \pi t} + i(-1)^N e^{\pi t}}\right| = \pi|\tanh(\pi t)|.
-2N \times \frac{1}{(3N+5/2)(3N+7/2)} \in \Theta(1/N)
-\Gamma_2
-z = t + i N
-t=-1/3
-t=-2/3
-\pi\coth(\pi)
-N>1.
-\Gamma_2:
-N
-\left|\int_{\Gamma_2} f(z) dz \right| = \left|\int_{-(N+1/2)}^{N+1/2} f(t+iN) dt\right|.
-\frac{1}{3N\times 3N} = \frac{1}{9N^2}.
-|\pi\cot(\pi t + \pi i N)| = \pi\left|\frac{e^{i\pi t - \pi N} + e^{-i\pi t + \pi N}} {e^{i\pi t - \pi N} - e^{-i\pi t + \pi N}}\right| \le \pi\left|\frac{e^{\pi N}+e^{-\pi N}}{e^{\pi N}-e^{-\pi N}}\right| =\pi|\coth(\pi N)|.
-(2N+1) \times \frac{1}{9N^2} \times \pi\coth(\pi) \in \Theta(1/N)

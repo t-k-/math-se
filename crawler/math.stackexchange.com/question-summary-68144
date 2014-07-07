@@ -1,48 +1,0 @@
-f(x,y)=0.5
-0 \leq|x|\leq|y|
-0 \leq|y|\leq1
-0
-X
-Y
-f(x)
-f(y)
-f(x,y)
-X
-Y
-Cov(x,y)
-0
-f(x)
-0.5dy
-x
-0.5dy
-x
-f(y)
-0.5dx
-y
-0.5dx
-x
-1*0
-0.5
-X
-Y
-f_X
-f_Y
-y
-x
--|y|
-|y|
-x
- \begin{align*} f_X(x) &= \int f(x,y) \text{ d}y = \int_{|x| < |y|} 0.5 \text{ d}y = \int_{y = -1}^{y = -|x|} 0.5 \text{ d}y + \int_{y = |x|}^{y = 1} 0.5 \text{ d}y= 1 - |x| \\ f_Y(y) &= \int f(x,y) \text{ d}x = \int_{|x| < |y|} 0.5 \text{ d}x = \int_{x=-|y|}^{x=|y|} 0.5 \text{ d}x = |y| \end{align*} 
-f_X(x) f_Y(y) = (1 - |x|)|y| \neq f(x,y)
-f(x,y) = f_X(x) f_Y(y)
-f(x,y)
-x
-f(0.5, y)
-f(0.6, y)
-f_{(X,Y)}
-B_1=(\frac12,1)
-B_2=(0,\frac12)
-f_{(X,Y)}
-B_1\times B_2
-B_1\times\mathbb R\supset(\frac12,\frac34)\times(\frac34,1)
-\mathbb R\times B_2\supset(0,\frac14)\times(\frac14,\frac12)

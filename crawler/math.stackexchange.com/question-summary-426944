@@ -1,9 +1,0 @@
-f: [-1,1]
-\displaystyle\lim_{x \to 0} f'(x) = a
-f'(0) = a
-a = \displaystyle\lim_{x \to 0} \displaystyle\lim_{y \to x} \dfrac{f(y) - f(x)}{y-x} =
-= \displaystyle\lim_{x \to 0} \displaystyle\lim_{y \to x} \dfrac{f(y) - f(0)}{y-x} + \displaystyle\lim_{x \to 0} \displaystyle\lim_{y \to x} \dfrac{f(0) - f(x)}{y-x} =
-= \displaystyle\lim_{y \to x} \displaystyle\lim_{x \to 0} \dfrac{f(y) - f(0)}{y-x} + \displaystyle\lim_{y \to x} \displaystyle\lim_{x \to 0} \dfrac{f(0) - f(x)}{y-x} =
-= \displaystyle\lim_{y \to 0} \dfrac{f(y) - f(0)}{y} + \displaystyle\lim_{y \to 0} \dfrac{f(0) - f(0)}{y} =
-= \displaystyle\lim_{y \to 0} \dfrac{f(y) - f(0)}{y} + 0 = f'(0)
-f'(0)=\lim_{x\to 0}\frac{f(x)-f(0)}x\stackrel{\text{l'Hospital}}=\lim_{x\to 0}f'(x)\stackrel{\text{given!}}=a

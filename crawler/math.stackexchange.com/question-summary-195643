@@ -1,7 +1,0 @@
- y=\frac{kx}{\log(y/k)-1}+O(1) 
-y
-x
-k
-y\sim kx/\log x
-O\left(\frac{x}{\log^cx}\right)
- \begin{array}{rl} y=&\frac{kx}{\log\left(\frac{x}{\log(y/k)-1}+O(1)\right)-1}+O(1)\\ =&\frac{kx}{\log\left(\frac{x}{\log(y/k)-1}\right)-1}+O(1/\log x)+O(1)\\ =&\frac{kx}{\log\left(\frac{x}{\log(y/k)-1}\right)-1}+O(1)\\ =&\frac{kx}{\log\log x-\log\log y-\log\frac{1+\log k}{\log y}+O\left(\frac{1}{\log^2y}\right)-1}+O(1)\\ =&\frac{kx}{\log\log x-\log\log y-\log\frac{1+\log k}{\log y}-1}+O\left(\frac{x}{\log^4x}\right)\\ \end{array} 

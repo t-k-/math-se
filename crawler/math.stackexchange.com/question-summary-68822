@@ -1,29 +1,0 @@
-\Theta
- t_n = \begin{cases} n, &\text{if } n=0,1,2,3, \\ t_{n-1}+t_{n-3}-t_{n-4}, &\text{otherwise.} \end{cases} 
-(t_n)
-t_4=t_3+(t_1-t_0)=3+(1-0)=4
-t_5=t_4+(t_2-t_1)=5
-t_6=t_5+(t_3-t_2)=6
-t_7=t_6 +(t_4-t_3)=7.
-n
-n-1+n-3-(n-4)=n
-s_n=n
-n=0, 1, 2, 3
-s_n=s_{n-1}+s_{n-3}-s_{n-4}
-t_{n + 4} = t_{n + 3} + t_{n + 1} - t_n
- T(z)  = \sum_{n \ge 0} t_n z^n 
- \begin{align*} \frac{T(z) - t_0 - t_1 z - t_2 z^2 - t_3 z^3}{z^4}   &= \frac{T(z) - t_0 - t_1 z - t_2 z^2}{z^3}         + \frac{T(z) - t_0}{z} - T(z) \\ T(z) &= \frac{z}{(1 - z)^2} \end{align*} 
- t_n = [z^n] \frac{z}{(1 - z)^2}     = [z^{n - 1}] \frac{1}{(1 - z)^2}     = (-1)^{n - 1} \binom{-2}{n - 1}     = n 
-t_n = r^n
-t_n
-n>3
-r
-r_1
-r_2
-r_3
-r_4
-t_n = A r_1^n + B r_2^n + C r_3^n + D r_4^n
-A
-B
-C
-D

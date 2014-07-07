@@ -1,8 +1,0 @@
-\mathbb{R}
-\{x\in\mathbb{R}^3:|x|<r\}
- \frac{1}{(2\pi)^{\frac{3}{2}}}\int_{\mathbb{R^3}} \chi_{|x|<r}(x)\exp(-ikx) dx.
-z
-k
-|k|
-q
- \begin{align} \int_{\mathbb R^3}\chi_{|x|\lt r}(x)\exp(-\mathrm ikx)\,\mathrm dx &=\int_0^r R^2\,\mathrm dR\int_0^\pi\sin\theta\,\mathrm d\theta\int_0^{2\pi}\mathrm d\phi\exp(-\mathrm iqR\cos\theta) \\ &=2\pi\int_0^r R^2\,\mathrm dR\int_0^\pi\sin\theta\,\mathrm d\theta\exp(-\mathrm iqR\cos\theta) \\ &=2\pi\int_0^r R^2\,\mathrm dR\left[\frac1{\mathrm iqR}\exp(-\mathrm iqR\cos\theta)\right]_{\theta=0}^{\theta=\pi} \\ &=\frac{2\pi}{\mathrm iq}\int_0^r \mathrm dRR\left(\exp(\mathrm iqR)-\exp(-\mathrm iqR)\right) \\ &=\frac{4\pi}{q^3}\left(r\cos qr-\sin qr\right)\;. \end{align} 

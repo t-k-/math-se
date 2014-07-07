@@ -1,44 +1,0 @@
-\int_1^a \log(x) \mathrm dx
-x_k := a^{k/n}
-x_k - x_{k-1}
-a^{\frac{k-1}{n}} (a^{\frac{1}{n}} -1)
- S_n = \sum_{k=0}^n \frac{k}{n} \log(a) a^{\frac{k-1}{n}} (a^{\frac{1}{n}} -1) 
- S_n = \log(a) \frac{a^{\frac{1}{n}}}{n} (a^{\frac{1}{n}} -1) \sum_{k=0}^n k a^{\frac{k}{n}} 
-n \rightarrow \infty
-1-a+a \log(a)
-n(a^{\frac{1}{n}} - 1)
-\log(a)
-1-a+a \ln (a)
-\ln (a)
-0
-1
-a
-0
-a
-n (a^{1/n}-1)
-a
-f(x) = a^x = e^{x \ln (a)}
-x
-\lim_{n \to + \infty} n (a^{1/n}-1) = \lim_{n \to + \infty}\frac{f(1/n)-f(0)}{1/n} = \lim_{h \to 0} \frac{f(h)-f(0)}{h} = f' (0).
-0
-n-1
-1
-n
-n
- S_n = \sum_{k=1}^n (x_k^{(n)} - x_{k-1}^{(n)}) \ln(x_k^{(n)}) = \sum_{k=1}^n a^{\frac{k-1}{n}} (a^{\frac{1}{n}}-1) \ln(a^{\frac{k}{n}}) = \ln (a) a^{-\frac{1}{n}} n (a^{\frac{1}{n}}-1) \left[ \frac{1}{n} \sum_{k=1}^n \frac{k}{n} a^{\frac{k}{n}} \right]
-0
-n-1
-\ln (0) = - \infty
-1
-n
-n
-+ \infty
-a^{-1/n}
-1
-n (a^{1/n}-1)
-\ln (a)
- \int_1^a \ln (x) dx = \lim_{n \to +\infty} S_n = \ln (a)^2 \lim_{n \to + \infty} \left[ \frac{1}{n} \sum_{k=1}^n \frac{k}{n} a^{\frac{k}{n}} \right].
-u = x \ln (a)
- \int_1^a \ln (x) dx = \ln (a)^2 \int_0^1 x a^x dx = \int_0^{\ln (a)} u e^u du,
- \int_0^a \ln (x) dx = \int_{- \infty}^{\ln (a)} u e^u du.
-\begin{eqnarray} \lim_{n\to\infty}a^{1/n}\frac{a^{1/n}-1}n\sum_{k=0}^n k a^{k/n} &=& \lim_{n\to\infty}a^{2/n}\frac{a^{1/n}-1}n \sum_{k=0}^n k \left(a^{1/n}\right)^{k-1} \\ &=&\lim_{n\to\infty}\left.q^2\frac{q-1}n\sum_{k=0}^n k q^{k-1}\right|_{q=a^{1/n}} \\ &=&\lim_{n\to\infty}\left.q^2\frac{q-1}n\frac{\partial}{\partial q}\sum_{k=0}^n q^k\right|_{q=a^{1/n}} \\ &=&\lim_{n\to\infty}\left.q^2\frac{q-1}n\frac{\partial}{\partial q}\frac{q^{n+1}-1}{q-1}\right|_{q=a^{1/n}} \\ &=&\lim_{n\to\infty}\left.q^2\frac{q-1}n\frac{nq^{n+1}-(n+1)q^n+1}{(q-1)^2}\right|_{q=a^{1/n}} \\ &=&\lim_{n\to\infty}\left.q^2\frac{q^{n+1}-(1+1/n)q^n+1/n}{q-1}\right|_{q=a^{1/n}} \\ &=&\lim_{x\to0}a^{2x}\frac{a^xa-(1+x)a+x}{a^x-1} \\ &=&\lim_{x\to0}\frac{a^xa-(1+x)a+x}{a^x-1} \\ &=&\lim_{x\to0}\frac{a^xa\log a -a+1}{a^x\log a} \\ &=&a+\frac{1-a}{\log a}\;. \end{eqnarray}

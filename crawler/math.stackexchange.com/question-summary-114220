@@ -1,48 +1,0 @@
- \frac{1}{\left(1-x\right)^{k+1}}=\sum_{n=0}^{\infty}\left(\begin{array}{c} n+k\\ n \end{array}\right)x^{n} 
- \frac{1}{1-x}=1+x+x^{2}+x^{3}+...  
-x^{n}
-\left(\begin{array}{c} n+k\\ n \end{array}\right)
-\displaystyle a_n
-x_1 + x_2 + \dots + x_{k+1} = n
-x_i
-n
-(1+x + x^2 + \dots)^{k+1} = \sum_{n=0}^{\infty} a_n x^n
-\frac{1}{(1-x)^{k+1}} = \sum_{n=0}^{\infty} a_n x^n = \sum_{n=0}^{\infty} \binom{n+k}{n} x^n 
-(2)
--n
-(3)
-(1)
- (1+x)^n=\sum_k\binom{n}{k}x^k\tag{1} 
- \binom{n}{k}=\frac{n(n-1)(n-2)\dots(n-k+1)}{k!}\tag{2} 
- \begin{align} \binom{-n}{k} &=\frac{-n(-n-1)(-n-2)\dots(-n-k+1)}{k!}\\ &=(-1)^k\frac{(n+k-1)(n+k-2)(n+k-3)\dots n}{k!}\\ &=(-1)^k\binom{n+k-1}{k}\tag{3} \end{align} 
- \begin{align} \frac{1}{(1-x)^{k+1}} &=(1-x)^{-(k+1)}\\ &=\sum_n\binom{-(k+1)}{n}(-x)^n\\ &=\sum_n(-1)^k\binom{n+k}{n}(-x)^n\\ &=\sum_n\binom{n+k}{n}x^n\tag{4} \end{align} 
-\frac1{1-x}
-f(x)=\sum_{n\ge 0}a_nx^n\;,
-\begin{align*} \left(\frac1{1-x}\right)f(x)&=\left(\sum_{n\ge 0}x^n\right)\left(\sum_{n\ge 0}a_nx^n\right)\\ &=(1+x+x^2+\dots)(a_0+a_1x+a_2x^2+\dots)\\ &=a_0 +(a_0+a_1)x+(a_0+a_1+a_2)x^2+\dots\\ &=\sum_{n\ge }\left(\sum_{k=0}^na_k\right)x^n\;. \end{align*}
-x^n
-a_0+a_1+\dots+a_n
-\begin{array}{c} 1\\ 1&1\\ 1&2&1\\ 1&3&3&1\\ 1&4&6&4&1\\ 1&5&10&10&5&1\\ \vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\ddots \end{array}
-\binom{n}k
-n
-k
-0
-\binom{n}k=\binom{n-1}k+\binom{n-1}{k-1}\;,
-\sum_{i=0}^n\binom{i}k=\binom{n+1}{k+1}\;.\tag{1}
-k=0
-\frac1{1-x}
-\frac1{(1-x)^2}
-1,2,3,\dots
-k=1
-\frac1{(1-x)^3}
-1,2,3\dots
-1,3,6,\dots
-k=2
-\frac1{(1-x)^{k+1}}
-k
-\binom{n}k
-1
-k
-k
-x^n
-n+k
-\frac1{(1-x)^{k+1}}=\sum_{n\ge 0}\binom{n+k}kx^n=\sum_{n\ge 0}\binom{n+k}nx^n\;.

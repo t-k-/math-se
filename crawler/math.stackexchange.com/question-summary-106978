@@ -1,33 +1,0 @@
-\sum_n\binom{n}{k}x^n=\frac{x^k}{(1-x)^{k+1}}
-k
- \sum_{n,k\geq 0} \binom{n}{k} x^n y^k = \sum_{n=0}^\infty x^n \sum_{k=0}^n \binom{n}{k} y^k = \sum_{n=0}^\infty x^n (1+y)^n  = \frac{1}{1-x(1+y)}. 
-y=1
-\sum_{n,k\geq 0}\binom{n}{k}x^n=\frac{1}{1-2x}
-k
-n
-s_k(x)=\sum\limits_n{n\choose k}x^k
-\sum\limits_ks_k(x)y^k=t(x,y)
-t(x,y)=\frac1{1-x(1+y)}
-s_k(x)
-y^k
-t(x,y)
-y
-t(x,y)=\frac1{1-x}\frac1{1-r(x)y}
-r(x)=\frac{x}{1-x}
-\frac1{1-z}
-\sum\limits_kz^k
-z=r(x)y
-t(x,y)=\frac1{1-x}\sum\limits_kr(x)^ky^k
-y^k
-s_k(x)=\frac1{1-x}r(x)^k
-k\ge 0
-f_k(x)=\sum_{n\ge 0}\binom{n}kx^n\;.
-\begin{align*} f_k(x)&=\sum_{n\ge 0}\binom{n}{k}x^n\\ &=\sum_{n\ge 0}\left[\binom{n-1}{k-1}+\binom{n-1}{k}\right]x^n\\ &=\sum_{n\ge 0}\left[\binom{n}{k-1}+\binom{n}k\right]x^{n+1}\\ &=x\sum_{n\ge 0}\binom{n}{k-1}x^n+x\sum_{n\ge 0}\binom{n}kx^n\\ &=xf_{k-1}(x)+xf_k(x)\;, \end{align*}
-(1-x)f_k(x)=xf_{k-1}(x)
-f_k(x)=\frac{x}{1-x}f_{k-1}(x)\;.\tag{1}
-f_0(x)=\sum_{n\ge 0}\binom{n}0x^n=\sum_{n\ge 0}x^n=\frac1{1-x}\;,
-\frac1{1-x}
-k
-\frac{x^k}{k!}
-   \binom{-n}k=(-1)^k\binom{n+k-1}k, 
-   (1+X)^{-n}=\sum_{k\geq0}\binom{-n}kX^k 

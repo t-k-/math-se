@@ -1,37 +1,0 @@
-\textbf{Lemma}
-r
- \begin{align} \label{first_eq} &a_n = \sum_{j=0}^{n-1}\binom{r - n + j}{j}b_{n-j}, \quad \forall n\geq 1, \quad (1)\\ \label{second_eq} &b_n = \sum_{j=0}^{n-1}\binom{r - n + j}{j}(-1)^{j}a_{n-j}, \quad \forall n\geq 1. \quad (2) \end{align} 
-b'_{n} = (-1)^{n}b_n
-a'_{n} = (-1)^{n}a_n
-(1)
-(2)
-(a)
-(b)
-(1)
-(2)
- \begin{array}{}f(x)=\sum_{n=1}^\infty a_nx^n&\text{and}&g(x)=\sum_{n=1}^\infty b_nx^n\end{array} 
- \begin{align} f(x) &=\sum_{n=1}^\infty\sum_{j=0}^{n-1}\binom{r-n+j}{j}b_{n-j}x^n\\ &=\sum_{n=1}^\infty\sum_{j=1}^{n}\binom{r-j}{n-j}b_jx^n\\ &=\sum_{j=1}^\infty\sum_{n=j}^{\infty}\binom{r-j}{n-j}b_jx^n\\ &=\sum_{j=1}^\infty\sum_{n=0}^{\infty}\binom{r-j}{n}b_jx^{n+j}\\ &=\sum_{j=1}^\infty b_j(1+x)^{r-j}x^{j}\\ &=(1+x)^rg\left(\frac{x}{1+x}\right)\tag{a} \end{align} 
- \begin{align} g(x) &=\sum_{n=1}^\infty\sum_{j=0}^{n-1}\binom{r-n+j}{j}(-1)^ja_{n-j}x^n\\ &=\sum_{n=1}^\infty\sum_{j=1}^{n}\binom{r-j}{n-j}(-1)^{n-j}a_jx^n\\ &=\sum_{j=1}^\infty\sum_{n=j}^{\infty}\binom{r-j}{n-j}(-1)^{n-j}a_jx^n\\ &=\sum_{j=1}^\infty\sum_{n=0}^{\infty}\binom{r-j}{n}(-1)^na_jx^{n+j}\\ &=\sum_{j=1}^\infty a_j(1-x)^{r-j}x^{j}\\ &=(1-x)^rf\left(\frac{x}{1-x}\right)\tag{b} \end{align} 
-\Rightarrow
-a_n = \sum_{j=1}^n \binom{r-j}{n-j} b_j, \tag{1}
-b_n = \sum_{j=1}^n \binom{r-j}{n-j} (-1)^{n-j} a_j. \tag{2}
-r\in\mathbb{R}
-z\choose k
-z
-k
-a_{n-j}
-b_n = \sum_{j=0}^{n-1} \sum_{k=0}^{n-j-1} (-1)^j {{r-n+j}\choose j}{{r-n+j+k}\choose k} b_{n-j-k}
-b_{n-m}
-\sum_{j=0}^{m} (-1)^j{{r-n+j}\choose j}{r-n+m \choose m-j}
-r-n
-f_m(z) = \sum_{j=0}^m (-1)^j{z+j \choose j}{z+m \choose m-j}
-\sum_{m=0}^{n-1} f_m(n-r) b_{n-m}
-{z+m \choose m-j}{z+j \choose j} = {z+m \choose m} {m \choose j}
-z
-m
-z
-f_m(z) = {z+m \choose m} \sum_{j=0}^m (-1)^j {m \choose j} = {z+m \choose m} (1+(-1))^m
-f_m(z)=0
-m>0
-f_0(z)=1
-b_n

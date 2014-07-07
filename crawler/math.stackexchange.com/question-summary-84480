@@ -1,11 +1,0 @@
-K(a'|a)
-p(a)
-f(a)
-a'
- \int_{a} f(a) K(a|a') 
- = \int_{a} f(a) \frac{K(a'|a) p(a)}{p(a')} 
- = \mathbb{E}[f(a)K(a'|a)] \frac{1}{p(a')} 
- = \mathbb{E}[f(a)] \mathbb{E}[K(a'|a)] \frac{1}{p(a')} 
- = \mathbb{E}[f(a)] p(a') \frac{1}{p(a')} 
-K(a|a')
-a'

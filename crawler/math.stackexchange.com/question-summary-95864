@@ -1,16 +1,0 @@
-(a\land b)' = a'\lor b'
-(a\lor b)' = a'\land b'
-(a\land b)\land (a'\lor b') = 0
-(a\land b)\lor (a'\lor b') = 1
-(a\land b)\land (a'\lor b')'' =0
-(a\land b)\lor (a'\lor b')'' = 1
-(a\land b) = (a'\lor b')'
-(a\land b)' = (a'\lor b')'' = a'\lor b'
-(a\land b)\land (a'\lor b') = 0
-(a\land b)\lor (a'\lor b') = 1
-\Box
-\begin{align*} (a\land b)\land(a'\lor b') &= \bigl((a\land b)\land a')\bigr) \lor \bigl((a\land b)\land b') &&\text{(by distributivity)}\\ &= \bigl( (a\land a')\land b\bigr) \lor \bigl( a\land (b\land b')\bigr) &&\text{(associativity and commutativity)}\\ &= ( 0\land b) \lor (a\land 0)\\ &= 0 \lor 0\\ &= 0. \end{align*}
-\begin{align*} (a\land b)\lor(a'\lor b') &= \bigl( (a\land b)\lor a'\bigr) \lor b'&&\text{(by associativity)}\\ &= \bigl( (a\lor a') \land (b\lor a')\bigr) \lor b'&&\text{(by distributivity)}\\ &= \bigl( 1\land (b\lor a')\bigr) \lor b'&&\text{(by complements)}\\ &= (b\lor a')\lor b'&&\text{(by Lemma 1)}\\ &= (b\lor b')\lor a'&&\text{(by commutativity and associativity)}\\ &= 1\lor a'&&\text{(by complements)}\\ &= 1 &&\text{(by Lemma 2)}. \end{align*}
-A=0
-B=0
-(A+B)' = 0' = 1 = 1 \cdot 1 = A' \cdot B'

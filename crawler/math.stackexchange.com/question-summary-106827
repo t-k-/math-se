@@ -1,26 +1,0 @@
-\int x^2 \arctan(x) \;dx 
-u=x^2
-dv= \arctan(x)
-du=2x
-v=x\arctan(x)-\frac12\ln(1+x^{2})
-\int x^2 \arctan(x)\;dx = uv - \int v \; du
-\begin{align*}&\int x^2 \arctan(x) \; dx =\\ &x^3\arctan(x) -\frac12\ln(1+x^{2})-\int 2x\left[x^{2}\arctan x -\frac12\ln(1+x^2)\right]\;dx \end{align*}
-3\int x^2\arctan(x) \;dx = x^3 \arctan(x)-\frac12\ln(1+x^2)+\int x\ln(1+x^2) \;dx
-w=\ln(1+x^2) \; dv =dx
-\int x\ln(1+ x^2)
-x^2 \arctan(x)-\int 2x\arctan(x) \; dx
-x^2 \arctan(x)-\int 2x^2 \arctan(x)\;dx
-\int{ x^2 \cdot \tan^{-1} x} dx = 
- \tan^{-1} x dx = du 
- x\cdot\tan^{-1} x - \frac{1}{2}\log(x^2+1) = u 
- x^2 = v 
- 2xdx = dv 
-\int{ x^2 \cdot \tan^{-1} x} dx = x^2\left(x\cdot\tan^{-1} x - \frac{1}{2}\log(x^2+1) \right)-\int 2x\left(x\cdot\tan^{-1} x - \frac{1}{2}\log(x^2+1) \right)dx
-I = {x^2}\left( {x\cdot{{\tan }^{ - 1}}x - \frac{1}{2}\log ({x^2} + 1)} \right) - 2I + \int {x\log \left( {{x^2} + 1} \right)} dx
-3I = {x^2}\left( {x\cdot{{\tan }^{ - 1}}x - \frac{1}{2}\log ({x^2} + 1)} \right) + \frac{1}{2}\int {\log u} du
-3I = {x^2}\left( {x\cdot{{\tan }^{ - 1}}x - \frac{1}{2}\log ({x^2} + 1)} \right) + \frac{{{x^2} + 1}}{2}\left[ {\log \left( {{x^2} + 1} \right) - 1} \right]
-I = \frac{{{x^2}}}{3}\left( {x\cdot{{\tan }^{ - 1}}x - \frac{1}{2}\log ({x^2} + 1)} \right) + \frac{{{x^2} + 1}}{6}\left[ {\log \left( {{x^2} + 1} \right) - 1} \right]
-I = \frac{{{x^3}}}{3}\cdot{\tan ^{ - 1}}x + \frac{1}{6}\log \left( {{x^2} + 1} \right) - \frac{{{x^2}}}{6} + C 
- \int x^2 \arctan x\;dx. 
- \begin{align} u & = \arctan x, \\  \\ du & = \frac{dx}{x^2+1}, \\  \\ dv & = x^2 \;dx, \\  \\ v & = \frac{x^3}{3}. \end{align} 
- \begin{align} \int u\;dv & = uv - \int v\;du = \frac{x^3}{3}\arctan x - \int \frac{x^3\;dx}{3(x^2+1)} = \frac{x^3}{3}\arctan x - \frac 1 3\int \left(x- \frac{x}{x^2+1}\right)\;dx \\  \\ & = \frac{x^3}{3}\arctan x - \frac{x^2}{6} + \frac 16 \log(x^2+1) +C. \end{align} 

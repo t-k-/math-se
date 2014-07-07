@@ -1,8 +1,0 @@
-\frac{d f(x)}{d x} = g(x)[k(x) - f(x)]
-G(x) = \exp \int_0^x g(u) du
-G'(x) = g(x)G(x)
-\frac{d}{dx} f(x) + g(x) f(x) = g(x)k(x)
-\frac{d}{dx} (f(x)G(x)) = g(x)k(x)G(x)
-G(x)
-f(x)G(x) = f(0)G(0) + \int_0^x g(v)k(v)G(v) dv
-f(x) = \frac{1}{G(x)} \left( f(0)G(0) + \int_0^x g(v)k(v)G(v) dv \right) = e^{-\int_0^x g(u)du} \left( f(0) + \int_0^x g(v)k(v)e^{\int_0^v g(u) du} \right)

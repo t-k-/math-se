@@ -1,45 +1,0 @@
-M
-M\le N
- 1-q_M=1-\prod\limits^{M-1}_{n=1}\frac{2N-2n}{2N-n}. 
- 1-q_M=1-2^M\,\frac{N!\,\,(2N-M)!}{(N-M)!(2N)!}. 
-2^M\binom{N}{M}
-M
-p(N,M)=2^M\frac{\binom NM}{\binom{2N}M}\;,
-p
-P
-1-p=P\;\%
-M
-p
-N
-N
-M\ll N
- \begin{eqnarray} p(N,M) &=& 2^M\frac{\binom NM}{\binom{2N}M} \\ &=& 2^M\frac{N!(2N-M)!}{(2N)!(N-M)!} \\ &\approx& 2^M\frac{N^N(2N-M)^{2N-M}}{(2N)^{2N}(N-M)^{N-M}}\sqrt{\frac{N(2N-M)}{2N(N-M)}} \\ &=& \frac{\left(1-\frac M{2N}\right)^{2N-M+1/2}}{\left(1-\frac MN\right)^{N-M+1/2}} \\ &=& \frac{\left(1-\frac M{N}+\left(\frac{M}{2N}\right)^2\right)^{N-M/2+1/4}}{\left(1-\frac MN\right)^{N-M+1/2}} \\ &=& \left(1+\left(\frac{M}{2N}\right)^2/\left(1-\frac MN\right)\right)^{N-M/2+1/4}\left(1-\frac MN\right)^{M/2-1/4} \\ &\approx& \left(1+\frac{M^2}{4N}\right)\left(1-\left(\frac M2-\frac14\right)\frac MN\right) \\ &\approx& 1-\frac{M(M-1)}{4N}\;. \end{eqnarray} 
-M(M-1)/(4N)
-4
-20
-15.\overline{176715}\%
-15\%
-M
-\sqrt N
-50\%
-p
-M
-k!
-\Gamma(k+1)
- \begin{eqnarray} \lim_{N\to\infty} p(N,\sqrt{\lambda N}) &=& \lim_{N\to\infty}2^{\sqrt{\lambda N}}\frac{\Gamma(N+1)\Gamma(2N-\sqrt{\lambda N}+1)}{\Gamma(2N+1)\Gamma(N-\sqrt{\lambda N}+1)} \\ &=& \lim_{N\to\infty} \left(1+\left(\frac{\sqrt{\lambda N}}{2N}\right)^2/\left(1-\frac{\sqrt{\lambda N}}N\right)\right)^{N-\sqrt{\lambda N}/2+1/4}\left(1-\frac{\sqrt{\lambda N}}N\right)^{\sqrt{\lambda N}/2-1/4} \\ &=& \lim_{N\to\infty} \left(1+\left(\frac{\sqrt{\lambda N}}{2N}\right)^2\right)^{N}\left(1-\frac{\sqrt{\lambda N}}N\right)^{\sqrt{\lambda N}/2} \\ &=& \lim_{N\to\infty} \left(1+\frac{\lambda}{4N}\right)^{N}\left(1-\frac{\lambda/2}{\sqrt{\lambda N}/2}\right)^{\sqrt{\lambda N}/2} \\ &=& \mathrm e^{\lambda/4}\mathrm e^{-\lambda/2} \\ &=& \mathrm e^{-\lambda/4}\;. \end{eqnarray} 
-N
-\sqrt{\lambda N}
-\mathrm e^{-\lambda/4}
-\lambda
-p
-p=\mathrm e^{-\lambda/4} \rightarrow \lambda=-4\log p\;.
-50\%
-\lambda =4\log2
-\sqrt{\lambda}=2\sqrt{\log2}\approx1.665
-N
-50\%
-1.665\sqrt N
-1/p
-n
-M=\sqrt{\lambda N}=\sqrt{-4N\log p}=\sqrt{4N\log1/p}=2\sqrt{N\log n}\;.
-M

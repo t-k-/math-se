@@ -1,8 +1,0 @@
-\int_0^1 {_{}^2}x \ dx = \sum\limits_{i=1}^\infty \frac {(-1)^{i+1}} {{_{}^2}i} \approx 0.783430511\ldots
-\int_0^1 {_{}^n}x \ dx = ?
-n \in \mathbb{Z}^+
-x>0
-k=0
-n=1
-a_{n,k}=   \begin{cases}     1 & \quad \text{if $k=0$}\\     \dfrac{1}{k!} & \quad \text{if $n=1$}\\     \displaystyle \frac{1}{k}\sum_{j=1}^k ja_{n,k-j}a_{n-1,j-1} & \quad \text{otherwise.}\\   \end{cases} 
- \int {}^n x\, dx= \sum_{k=0}^n \frac{(-1)^k (k+1)^{k-1}\Gamma(k+1, -\log x)}{k!} + \sum_{k=n+1}^\infty (-1)^k a_{n,k} \Gamma(k+1, -\log x) + C. 

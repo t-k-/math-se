@@ -1,28 +1,0 @@
-n \ge 1
-\frac{\Gamma(n+\frac{1}{2})}{\Gamma(n+1)} \le \frac{1}{\sqrt{n}}
-x^{1-s} < \frac{\Gamma(x+1)}{\Gamma(x+s)} < (x+1)^{1-s}.
-\Gamma(n+1) = n \Gamma(n)
-g(x) = \ln \Gamma(x)
-g(n+1) = \ln n + g(n)
-(n,g(n))
-(n+1,g(n+1))
-\ln n
-I_n= \int_0^{ \pi/2} \sin^n x \textrm{ d}x 
-I_n = \frac{n-1}{n} I_{n-2} . \quad (1) 
-I_{2n}= \frac{2n-1}{2n} \frac{2n-3}{2n-2} \cdots \frac{1}{2} \frac{\pi}{2}  \quad (2) 
-I_{2n+1}= \frac{2n}{2n+1} \frac{2n-2}{2n-1} \cdots \frac{2}{3} .  \quad (3) 
- \sin^{2n+1} x < \sin^{2n} x 
- x \in (0,\pi/2) 
-I_{2n+1}< I_{2n} . \quad (4) 
-(1)
-(2n+1)I_{2n+1} = 2nI_{2n-1} > 2nI_{2n}
-I_{2n-1} >I_{2n}.
-(4)
- \frac{2n+1}{2n} > \frac{ I_{2n} }{ I_{2n+1} } > 1 .  \quad (5) 
-(2)
-(3)
-  \frac{ I_{2n} }{ I_{2n+1} }  = \frac{2n+1}{2} \frac{ (2n!)^2 }{ 4^{2n} (n!)^4 } \pi .
-(5)
- \frac{1}{ \sqrt{n} } > \frac{1}{4^n} { 2n \choose n } \sqrt{ \pi } > \frac{1}{ \sqrt{ n + 1/2} }.
- \frac{1}{ \sqrt{n} } > \frac{ \Gamma(n + 1/2) }{ \Gamma(n+1) } > \frac{1}{ \sqrt{ n + 1/2} }.
-2n\left[{2n\choose n} 4^{-n}\right]^2 = {1\over2}\,{3\over2}\,{3\over4}\,{5\over4}\cdots {{2n-1}\over{2n-2}}\,{{2n-1}\over{2n}} ={1\over 2}\prod_{j=2}^n\left(1+{1\over4j(j-1)}\right). 

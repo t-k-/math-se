@@ -1,63 +1,0 @@
-p
-R(p)=e^{\hat{p}}
-p=(p_x,p_y,p_z)^T\in\mathbb{R}^3
-||p||=\sqrt{p_x^2+p_y^2+p_z^2}
-  \begin{align}   R(p)&=e^{\hat{p}}=I + \frac{\hat{p}}{||p||} \sin(||p||) + \frac{\hat{p}^2}{||p||^2} (1-\cos{\theta})  \end{align} 
- \begin{align} \hat{p} &=    \begin{bmatrix}     0   & -p_z &  p_y \\     p_z &  0   & -p_x \\    -p_y &  p_x &  0   \end{bmatrix} \end{align}. 
-R(p)
-r=\frac{\sin(||p||)}{||p||}
-s=\frac{(1-\cos(||p||))}{||p||^2}
- \begin{align}   R(p) =    \begin{bmatrix}     1-(p_y^2+p_z^2)s & -p_z r+p_xp_y s   & p_y r+p_xp_z s  \\     p_z r+p_xp_y s   & 1-(p_x^2+p_z^2)s  & -p_x r+p_yp_z s  \\     -p_z r+p_xp_z s  & p_x r+p_yp_z s    & 1-(p_x^2+p_y^2)s   \end{bmatrix} \end{align} 
-R^s(p)\in\mathbb{R}^{9\times 1}
-R(p)
-R^s_i(p)
-i
-R^s(p)
-1\leq i \leq 9
-J_{R}\in\mathbb{R}^{9\times 3}
-p
- \begin{align}   J_{R}&=\frac{\partial R^s}{\partial p} \\\\        &=   \begin{bmatrix}    \frac{\partial R^s_1}{\partial p_x} & \frac{\partial R^s_1}{\partial p_y} &     \frac{\partial R^s_1}{\partial p_z} \\\\    \vdots & \vdots & \vdots \\\\    \frac{\partial R^s_9}{\partial p_x} & \frac{\partial R^s_9}{\partial p_y} &     \frac{\partial R^s_9}{\partial p_z}   \end{bmatrix} \end{align} 
-J_R
- \begin{align}   \frac{\partial R^s_1}{\partial p_x}    &=\frac{\partial}{\partial p_x}               \Bigl(1-(p_y^2+p_z^2)\frac{(1-\cos(||p||))}{||p||^2}\Bigr) \\\\   &=-\Bigl[(p_y^2+p_z^2)\frac{\sin(||p||) p_x ||p|| - (1-\cos(||p||) 2 p_x)}{||p||^4}\Bigr] \end{align} 
- \begin{align}   \frac{\partial R^s_1}{\partial p_y}    &=\frac{\partial}{\partial p_y}               \Bigl(1-(p_y^2+p_z^2)\frac{(1-\cos(||p||))}{||p||^2}\Bigr) \\\\   &=-\Bigl[2p_y\frac{1-\cos(||p||)}{||p||^2}+(p_y^2p_z^2)\frac{\sin(||p||) p_y ||p|| - (1-\cos(||p||) 2 p_y)}{||p||^4}\Bigr] \end{align} 
- \begin{align}   \frac{\partial R^s_1}{\partial p_z}    &=\frac{\partial}{\partial p_z}               \Bigl(1-(p_y^2+p_z^2)\frac{(1-\cos(||p||))}{||p||^2}\Bigr) \\\\   &=-\Bigl[2p_z\frac{1-\cos(||p||)}{||p||^2}+(p_y^2p_z^2)\frac{\sin(||p||) p_z ||p|| - (1-\cos(||p||) 2 p_z)}{||p||^4}\Bigr] \end{align} 
-p
-\mathbb{R}^3
-p
-x'(\cdot)
-p
-E(p)=\sum_i(I_1(x'(x_i;p))-I_0(x_i))^2
-E(p)
-\frac{\partial}{\partial \mathbf p}\exp(\hat{\mathbf p})
-\left.\frac{\partial}{\partial \mathbf p}\exp(\hat{\mathbf p})\right|_{\mathbf p=\mathbf 0}
-\mathbf p
-\exp(\mathtt M) := \sum_{k\ge 0} \frac{1}{k!} \mathtt M^k
-n
-\hat \cdot: \mathbb R^n \rightarrow \mathbb R^{m\times m}, \quad \hat{\mathbf a} = \sum_{k=0}^n a_i\mathtt G_i
- \mathtt G_1 = \begin{bmatrix}     0   & 0 &  0 \\     0 &  0   & -1 \\    0 &  1 &  0   \end{bmatrix},\quad  \mathtt G_2 =\begin{bmatrix}     0   & 0 &  1 \\     0 &  0   & 0 \\    -1 &  0 &  0   \end{bmatrix},\quad  \mathtt G_3 =\begin{bmatrix}     0   & -1 &  0 \\     1 &  0   & 0 \\    0 &  0 &  0   \end{bmatrix} 
- \left.\frac{\partial}{\partial a_k}\exp(\hat {\mathbf a})\right|_{\mathbf a=\mathbf 0} = \mathtt G_k.
-3
-3\times 3
-3\times 3 \times 3
-\mathtt G_i
-9\times 3
- \left.\frac{\partial}{\partial \mathbf p}\exp(\hat {\mathbf p})\right|_{\mathbf p=\mathbf 0} =  \begin{bmatrix}\mathtt G_1 & \mathtt G_2 & \mathtt G_3\end{bmatrix}
-F:\mathbb R^n \rightarrow \mathbb R
-\mathbf x
-F = f(\mathbf x)^\top f(\mathbf x)
-\delta
- \frac{\partial f}{\partial \mathbf x^{(m)}}^\top\frac{\partial f}{\partial \mathbf x^{(m)}} \delta = -\frac{\partial f}{\partial \mathbf x^{(m)}}^\top f(\mathbf x^{(m)})
- \mathbf x^{(m+1)}=\delta + \mathbf x^{(m)}
-\mathtt J :=\left.\frac{\partial f(\exp(\hat{\mathbf p})\cdot\mathtt R^{(m)})}{\partial \mathbf p} \right|_{\mathbf p =\mathbf 0}
-\delta
- \mathtt J^\top\mathtt J \delta = -\mathtt J^\top f(\mathtt R^{(m)})
- \mathtt R^{(m+1)}= \exp(\hat\delta)\cdot \mathtt R^{(m)}.
-p
-\omega
-\omega
-p
-9\times 4
-\sqrt{x^2+y^2+z^2}=1
-9\times 3
-9\times 4
-J_R

@@ -1,17 +1,0 @@
-2^n
-A_n
-A_n
-i
-A_{n+1} = B_{n+1}\cdot A_n
-B_{n+1}
-2^{n+1}
-B_n= { 2^n\choose 2^{n-1}}
-A_1
-A_2= B_2 \cdot A_1=  { { 4\choose 2}}\cdot 2 
-A_3= B_3\cdot A_2= {8\choose 4} \cdot  { { 4\choose 2}}\cdot2 
-A_4= B_4\cdot A_3={16\choose 8}\cdot {8\choose 4}\cdot { { 4\choose 2}}\cdot2 
-\ \ \ \vdots
-A_n={2^n\choose 2^{n-1}}\cdot{2^{n-1}\choose 2^{n-2}}\cdot\cdots\cdot{8\choose 4} \cdot  { { 4\choose 2}}\cdot2 
-2^n-2^{n-1}=2^{n-1}
-{ 2^n\choose 2^{n-1}}={(2^n)!\over (2^{n-1})!(2^{n-1})!}
- \eqalign{ A_n&= {(2^n)!\over (2^{n-1})! (2^{n-1})!}\cdot{(2^{n-1})!\over(2^{n-2})!(2^{n-2})!}\cdot\cdots\cdot{8!\over 4!\cdot4! } \cdot  { { 4!\over 2!\cdot2!}}\cdot2 \cr &= {(2^n)!\over (2^{n-1})!\cdot 1}\cdot{1\over(2^{n-2})!\cdot1}\cdot\cdots\cdot{1\over 4!\cdot1 } \cdot  { {1\over 2!\cdot1}}\cdot1 \cr  &={(2^n)!\over (2^{n-1})!(2^{n-2})!\cdots4!\cdot 2!}. } 

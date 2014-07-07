@@ -1,8 +1,0 @@
-\vartheta(x) = \sum_{p\le{x}} \log (p) \qquad \psi(x) = \sum_{m=1}^{\infty}\vartheta\left(\sqrt[m]{x}\right)
-\log(x!) = \sum_{m=1}^{\infty} \psi\left(\frac{x}{m}\right).
-\sum_{m\ge1}\psi\left(\frac{x}{m}\right)=\sum_{m\ge1}\sum_{k\ge1}\vartheta\left(\sqrt[k]{\frac{x}{m}}\right)=\sum_{m\ge1}\sum_{k\ge1}\sum_{p\le \sqrt[k]{x/m}}\log p
-=\sum_{m\ge1}\sum_{k\ge1}\sum_{mp^k\le x}\log p=\log \prod_{p\le x}p^{\#\{(m,k):mp^k\le x\}}=\log x!
-\#\{(m,k):mp^k\le x\}=\sum_{1\le n\le x}v_p(n)=v_p(x!)
-n=mp^{v_p(n)}
-(m,1),(m,2),\cdots,(m,v_p(n))
-1\le n\le x

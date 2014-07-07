@@ -1,6 +1,0 @@
-X_i \sim N(0,1)
- \sqrt{1-\delta} \frac{1}{n}\sum_i^\infty e^{\frac{\delta}{2}X_i^2} \rightarrow \sqrt{1-\delta} \int e^{\frac{\delta}{2}x^2}\frac{1}{\sqrt{2\pi}}e^{\frac{1}{2}x^2}dx =1  
-\delta
- \Bbb{E} \exp \left\{ \tfrac{1}{2}\delta X_{i}^{2} \right\} = \frac{1}{\sqrt{1-\delta}} \quad \text{and} \quad \Bbb{V} \exp \left\{ \tfrac{1}{2}\delta X_{i}^{2} \right\} = \frac{1}{(1-\delta)^{3/2}} < \infty. 
- \frac{\sqrt{1-\delta}}{n} \sum_{i=1}^{n} e^{\frac{1}{2}\delta X_{i}^{2}} \xrightarrow{n\to\infty} 1 \quad \text{a.s.} 
- \begin{eqnarray} \mathbf{V} \bigg( exp\{ \frac{\delta}{2}X_i^2\} \bigg) &=& \int \bigg( exp\{ \frac{\delta}{2}x^2\} \bigg)^2 \frac{1}{\sqrt{2\pi}} exp \{\frac{-x^2}{2}\} dx\\ && -\bigg(\int exp\{ \frac{\delta}{2}x^2\} \frac{1}{\sqrt{2\pi}} exp \{\frac{-x^2}{2}\}  \bigg)^2 \\ &=& \frac{1}{\sqrt{2\pi}} \int exp \{\frac{-x^2}{2}(1-2\delta)\}dx \\ && -\bigg( \frac{1}{\sqrt{2\pi}} \int exp\{\frac{-x}{2}(1-\delta)\}dx \bigg)^2\\ &=& \frac{1}{\sqrt{1-2\delta}}-\frac{1}{1-\delta} \end{eqnarray} 

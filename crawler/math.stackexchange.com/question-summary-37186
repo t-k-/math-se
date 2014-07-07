@@ -1,48 +1,0 @@
-b_n, n = 1, 2, 3, \ldots
-\begin{eqnarray*}1 + 2^k + 3^k + \ldots n^k &=& \frac{1}{k+1}[n^{k+1} + b_1 c(k+1,2) n^k + b_2 c(k+1,3)n^{k-1} + \ldots ]\\&=& \frac{(n+b)^{k+1}-b^{k+1}}{k+1}\end{eqnarray*}
-b^k
-b_k
-c(k,l)
-k
-l.
-b_1
-\sigma_k(n) = \sum_{i=1}^n i^k
-\sigma_1(n) = \frac{n(n+1)}{2}
-n
-\sigma_{2k+1}
-b^{2k+1}
-\sigma_{2k+1}(n) = \frac{(n+b)^{k+1}-b^{k+1}}{k+1}
-n^2
-\begin{array} . \sigma_1(n)^k &=& \sum_{m=1}^n \left[ \left(\frac{m(m+1)}{2}\right)^k - \left(\frac{(m-1)m}{2}\right)^k \right] \\ &=& \sum_{m=1}^n \sum_{r=0}^k \binom{k}{r} \left(\frac{m}{2}\right)^k m^r (1 - (-1)^{k-r}) \\ &=& \frac{1}{2^k} \sum_{r=0}^k \binom{k}{r} \sigma_{k+r}(n) (1 - (-1)^{k-r}) \end{array}
-k
-\sigma_1^k
-\sigma_{i}
-i
-\sigma_3 = \sigma_1^2
-k
-\sigma_5
-\sigma_7
-\sigma_1^2
-k
-n
-\ge 3
-n
-\sigma_{2k+1}
-b_{2k+1}
-\frac{t}{1-e^{-t}} = \sum B_m \frac{t^m}{m!}.
-k
-x^k
-\sum_{j=1}^n \frac{j^k x^k}{k!} = \sum_{j=1}^n e^{jx} = \frac{e^{(n+1)x} - e^x}{e^x-1}
-= \left( \frac{e^{nx} -1}{x} \right) \left( \frac{x}{1-e^{-x}} \right) = \sum_{\ell=0}^{\infty} \frac{n^{\ell+1} x^{\ell}}{(\ell+1)!}  \cdot \sum B_m \frac{t^m}{m!}.
-\sum B_m \frac{t^m}{m!} - \sum B_m \frac{(-t)^m}{m!} = \frac{t}{1-e^{-t}} - \frac{-t}{1-e^t} = \frac{t (e^t-1)}{e^t-1} = t.
-\sigma_k = 1^k + 2^k + \ldots n^k
-b_k
-= k = 3, 5, \ldots.
-\sigma_k = 1^k + 2^k + \ldots n^k, \sigma_1 = \frac{n(n+1)}{2}, \sigma_3 = \sigma_1^2.
-\sigma_k
-k
-k
-k = 5.
-k = 5
-\begin{array} \sigma_1^5 = (1+2\ldots n)^5 = \frac{n^5(n+1)^5}{2^5} \\ ~~~~  = \frac{1}{2^5}\{[n^5(n+1)^5 -(n-1)^5n^5] + [(n-1)^5n^5 -(n-2)^5(n-1)^5]   +\ldots +[2^53^5 - 1^52^5] + 1^5 2^5 \}\\ ~~~~  = \frac{1}{2^5}\{ n^5[(n+1)^5 -(n-1)^5] + ((n-1)^5[n^5 -(n-2)^5] +\ldots +2^5[3^5 - 1^5] + 1^5 2^5 \}\\ ~~~~ =  \frac{1}{2^5}\{ 2n^5[{5 \choose 1}n^4 + {5 \choose 3}n^2 + 1] +                         2(n-1)^5[{5 \choose 1}(n-1)^4 + {5 \choose 3}(n-3)^2 + 1]+\\ ~~~~~~        \ldots +  2^5[{5 \choose 1}2^4 + {5 \choose 3}2^2 + 1] +                          1^5[{5 \choose 1}1^4 + {5 \choose 3}1^2 + 1]   \}\\ ~~~~~~ = \frac{1}{2^4}\{ {5 \choose 1}[n^9 + (n-1)^9 + \ldots + 2^9 + 1^9] +                          {5 \choose 3}[n^7 + (n-1)^7 + \ldots + 2^7 + 1^7] +                                       [n^5 + (n-1)^5 + \ldots + 2^5 + 1^5] \}\\ ~~~~~ = \frac{1}{2^4}[ {5 \choose 1}\sigma_9 +                          {5 \choose 3}\sigma_7 +                                       \sigma_5 ]. \end{array} 
-\sigma_1^k =    \frac{1}{2^{k-1}}    \cases{[ {k \choose 1}\sigma_{2k-1} + {k \choose 3}\sigma_{2k-3} +\ldots +\sigma_k ]    & for $k$ odd, \cr          [ {k \choose 1}\sigma_{2k-1} + \ldots + {k \choose 3}\sigma_{2k-3} ]    & for $k$ even.} 

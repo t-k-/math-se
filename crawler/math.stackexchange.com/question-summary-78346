@@ -1,43 +1,0 @@
-V:\mathbb{R}^n\to\mathbb{R}
-\dot{x}=f(x)
-x\in\mathbb{R}^n
-f:\mathbb{R}^n\to\mathbb{R}^n
-V(x)=\frac{1}{2}x'Px
-P
-f(x)=Ax
-\dot{x}=Ax
- \dot{V}(x)=\frac{\partial V}{\partial x}\cdot f(x) 
- \dot{V}(x)=\frac{\partial V}{\partial x}\cdot f(x)=x'PAx 
- \dot{V}(x)=\frac{d}{dt}V(x)=\frac{d}{dt}(x'Px)=\frac{1}{2}(\dot{x}'Px+x'P\dot{x}) 
- \dot{V}(x)=\frac{1}{2}x'(A'P+PA)x 
-x'A'Px
-(x'A'Px)'=x'P'A''x''=x'PAx
-P
-x
-n\times 1
-V
-\frac{\partial V}{\partial x}
-\frac{\partial V }{\partial x}=\frac{1}{2}\frac{\partial xPx}{\partial x}=\frac{1}{2}(P+P^{T})x
-P
-\frac{\partial V }{\partial x}=Px
-Px
-n\times 1
-P
-(P+P^{T})
-V
-f
-\dot V(x)=\frac{\partial V }{\partial x} \cdot f(x)=\frac{1}{2}[(P+P^{T})x]^{T} Ax = \frac{1}{2}x^{T}(P+P^{T})Ax
-\dot V(x)=x^{T}PAx
-\dot V(x)= \frac{1}{2}x^{T}(A^{T}P+PA)x
-\Delta V(x)= \frac{1}{2}x^{T}(P+P^{T})Ax -  \frac{1}{2}x^{T}(A^{T}P+PA)x =  \frac{1}{2}x^{T}[PA+P^{T}A-A^{T}P-PA]x =
- =\frac{1}{2}x^{T}[P^{T}A-A^{T}P ]x
-x=0 \rightarrow \Delta V=0
-x
-\Delta V
-\frac{\partial \Delta V(x)}{\partial x}=\frac{1}{2}([P^{T}A-A^{T}P]+[P^{T}A-A^{T}P]|^{T})x
-P^{T}A-A^{T}P+[P^{T}A-A^{T}P]|^{T}=P^{T}A-A^{T}P+[(P^{T}A)^{T}-(A^{T}P)^{T}]=
-=P^{T}A-A^{T}P+[A^{T}T-P^{T}A]=0
-\Delta V(x)= const=0
-\frac{\partial V(x)}{\partial x}
-\frac{\partial V(x)}{\partial x}
-V

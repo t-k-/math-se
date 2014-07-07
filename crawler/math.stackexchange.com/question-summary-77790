@@ -1,75 +1,0 @@
-n\in\mathbb{Z}
-n > 0
-H_n = 1^n + 2^{n-1} + 3^{n-2} +\cdots + (n-1)^2 + n^1.
-H_n
-\Theta
-0<a<b<1
-an\leqslant k\leqslant bn
-k^{-k+n+1}\geqslant(an)^{(1-b)n}
-H_n\geqslant(b-a)n(an)^{(1-b)n}
-\log (H_n)\geqslant (1-b)n\log(n)+(1-b)n\log(a)+\log(b-a)
-H_n<n!
-n+1\leqslant n!
-n\geqslant3
-H_3=8>3!
-H_4=22<4!
-H_n<n!
-n\geqslant4
-H_n=n^{n+o(n)}
-H_n
-H_{n+1}
-H_1=1
-H_{n}<(2\mathrm e)(n-1)!
-n\geqslant1
- \liminf\limits_{n\to\infty}\log(H_n)/(n\log(n))\geqslant1-b. 
- H_{n+1}=n+1+\sum\limits_{k=1}^nk^{n+2-k}\leqslant n+1+n\sum\limits_{k=1}^nk^{n+1-k}=n+1+nH_n. 
-H_{n+1}<n+1+n\cdot n!\leqslant(n+1)!
- \color{red}{\lim\limits_{n\to\infty}\log(H_n)/(n\log n)=1}, 
- \frac{H_{n+1}}{n!}\leqslant\frac{n+1}{n!}+\frac{H_n}{(n-1)!}, 
-k
-c_k
-H_n<c_k(n-k)!
-n\geqslant k
-\alpha(n)\to+\infty
-\alpha(n)/n\to0
-n\to\infty
- \color{blue}{H_n=n^{n-\alpha(n)}}, 
-f(k) = k^{n+1-k}
-f(1) = 1
-f(n)=n
-f^{(2m-1)}(1) \sim -n \cdot \log^{2m-1}(n)
-f^{(2m-1)}(n) \sim n^{2m-1}
-  \begin{eqnarray}    \sum_{k=1}^n f(k) &=& \int_1^n f(x) \mathrm{d} x + \frac{1}{2} \left( f(1) + f(n) \right) + \sum_{m=1}^q \frac{B_{2m}}{(2m)!} \left( f^{(2m-1)}(n) - f^{(2m-1)}(1) \right) \\     &&+  \frac{1}{(2q)!} \int_1^n B_{2q}(\{t\}) f^{(2q)}(t) \mathrm{d} t   \end{eqnarray} 
-x=1+(n-1)t
-t_0
-w_n = W((n+1)\mathrm{e})
-\sigma_n = \frac{(n-1)^2 w_n ( w_n + 1)}{n+1}
-    \int_1^n x^{n+1-x} \mathrm{d} x = (n-1) \int_0^1 \left( 1 + (n-1) t \right)^{t+n(1-t)} \,\, \mathrm{d} t 
-     t_0 = \frac{1}{n-1} \left( \frac{n+1}{W((n+1) \, \mathrm{e})} -1 \right) 
-   \left( n + t - n t \right) \log\left(1 + (n-1) t \right) = (n+1) \left( w_n + \frac{1}{w_n} - 2 \right) - \frac{\sigma_n}{2} ( t-t_0)^2 + o((t-t_0)^2) 
-     \sum_{k=1}^n k^{n+1-k} \sim  \exp\left( (n+1) \left( w_n + \frac{1}{w_n} - 2 \right) \right) \sqrt{\frac{2\pi (n+1)}{w_n (1+w_n)}} 
-H_n=\sum _{k=1}^n k^{-k+n+1}\leq\sum _{k=1}^n n^{-k+n+1}=\frac{n \left(n^n-1\right)}{n-1}
-H_n=\sum_{k=1}^{n} k^{n+1-x} \approx \int_1^n x^{n+1-x} dx
-m=n+1
-\int x^{m-x} dx = \int e^{m g(x)} dx  \hspace{20px} , \hspace{20px} g(x)=\left(1- \frac{x}{m}\right)\log(x)
-g(x)
-x_0(m)=\frac{m}{W( e \; m)} \approx \frac{m}{1+ \log m - \log (1 +\log m)}
-I(m) \approx e^{m g(x_0)} \sqrt{\frac{2 \pi}{m |g''(x_0)|}}=x_0^{m+1-x_0} \sqrt{\frac{2 \pi}{m+x_0}}
-x_0 = (n+1) /W(e \; (n+1))
-\log H_n \approx (n+2-x_0) \log(x_0) + \frac{1}{2}\log{\frac{2 \pi}{n+1+x_0}}
-N
-log(H_n)
-(k+1)^{n-k-1} \geq k^{n-k}
-\left( 1+\frac{1}{k}\right)^{n-k-1} \geq k \,.
-k \leq \sqrt{n-1}
-\left( 1+\frac{1}{k}\right)^{n-k-1} \geq 1+\frac{n-k-1}{k} =\frac{n-1}{k} \geq k \,.
-k > \sqrt{n-1}
-n
-\left( 1+\frac{1}{k}\right)^{n-k-1} = \left[ \left( 1+\frac{1}{k} \right)^k \right]^{\frac{n-k-1}{k}} \sim e^{\frac{n-k-1}{k}}= e^{\frac{n-1}{k}-1} 
-e^{\frac{n-1}{k}-1} < k
-k > k_0(n)
-k_0(n)
-k^{n-k}
-k=\sqrt{n-1}
-k \geq k_0(n)
-k_0

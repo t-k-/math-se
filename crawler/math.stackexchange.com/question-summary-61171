@@ -1,39 +1,0 @@
-X
-[0,1]
-t \in [0,1]
-Y_t
-Y_t:=\min \{t,X\}
-P(Y_t \leq y)= 1- P(t>y,X>y)
-t
-X
-P(Y_t \leq y)=y
-y<t
-1
-y\geq t
-Y_t
-t
-Y_t
-Y_t
-X
-Y_t
-P_{Y_t}
-Y_t
-B
-u
-X
-f_X
-\text{d}P_{Y_t}(x)=f_X(x)\mathbf{1}_{x<t}\text{d}x+P(X\ge t)\delta_t(\text{d}x),
- \text{d}P_{Y_t}(x)=\mathbf{1}_{[0,t]}(x)\text{d}x+(1-t)\delta_t(\text{d}x). 
- P(Y_t\in B)=\text{Leb}(B\cap[0,t])+(1-t)\mathbf{1}_B(t). 
- E(u(Y_t))=\int_0^tu(x)\text{d}x+(1-t)u(t). 
- P(Y_t\in B)=P(X\in B\cap(-\infty,t))+P(X\ge t)\mathbf{1}_B(t), 
- E(u(Y_t))=\int_{-\infty}^tu(x)f_X(x)\text{d}x+u(t)\int_t^{+\infty}f_X(x)\text{d}x. 
-Y_t
-t
-0 \leq t \leq 1
-Y_t
-t
-1-t
-[0,t]
-t
-(1-t)t + t(t/2) = t-t^2/2.

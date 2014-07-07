@@ -1,64 +1,0 @@
-\sum_{i=1}^{n}x_{i}^{3}
-\sum_{i=1}^{n}x_{i}=0
-\sum_{i=1}^{n}x_{i}^{2}=n
-x_{n}=-\sum_{i=1}^{n-1}x_{i}
-\min \sum_{i=1}^{n}x_{i}^{3}
-\sum_{i=1}^{n}x_{i}=0
-\sum_{i=1}^{n}x_{i}^{2}=n\ "
-\min f(x_{1},x_{2},\ldots ,x_{n-1}),
-f(x_{1},x_{2},\ldots ,x_{n-1})=\left( \sum_{i=1}^{n-1}x_{i}^{3}\right) -\left( \sum_{i=1}^{n-1}x_{i}\right) ^{3}
-c(x_{1},x_{2},\ldots ,x_{n-1})=0,
-c(x_{1},x_{2},\ldots ,x_{n-1})=\left( \sum_{i=1}^{n-1}x_{i}\right) ^{2}-n+\sum_{i=1}^{n-1}x_{i}^{2}=0.
-\nabla f(x_{1},x_{2},\ldots ,x_{n-1})-\nabla c(x_{1},x_{2},\ldots ,x_{n-1})\lambda =0\qquad (\ast ),
-\nabla f(x)=\begin{pmatrix}\frac{\partial f}{\partial x_{1}} & \ldots  & \frac{\partial f}{\partial x_{n-1}}\end{pmatrix}^{T}
-=% \begin{pmatrix} 3x_{1}^{2}-3\left( \sum_{i=1}^{n-1}x_{i}\right) ^{2} & \ldots  &  3x_{n-1}^{2}-3\left( \sum_{i=1}^{n-1}x_{i}\right) ^{2}% \end{pmatrix}% ^{T}
-\nabla c(x)=% \begin{pmatrix} \frac{\partial c}{\partial x_{1}} & \ldots  & \frac{\partial c}{\partial x_{n-1}}% \end{pmatrix}% ^{T}
-=% \begin{pmatrix} 2\left( \sum_{i=1}^{n-1}x_{i}\right) +2x_{1} & \ldots  & 2\left( \sum_{i=1}^{n-1}x_{i}\right) +2x_{n-1}% \end{pmatrix}% ^{T}.
-(\ast )
-3x_{1}^{2}-3\left( \sum_{i=1}^{n-1}x_{i}\right) ^{2}-2\lambda \left( \sum_{i=1}^{n-1}x_{i}\right) -\lambda 2x_{1}=0
-\ldots 
-3x_{n-1}^{2}-3\left( \sum_{i=1}^{n-1}x_{i}\right) ^{2}-2\lambda \left( \sum_{i=1}^{n-1}x_{i}\right) -\lambda 2x_{n-1}=0.
-x_k
-1\lt k\lt n-1
-k
-n-1
-x_{1}=\ldots =x_{n-1}=x^{\ast }
-3(x^{\ast })^{2}-3\left( \sum_{i=1}^{n-1}x^{\ast }\right) ^{2}-2\lambda \left( \sum_{i=1}^{n-1}x^{\ast }\right) -2\lambda x^{\ast }=0\qquad (\ast \ast )
-\left( \sum_{i=1}^{n-1}x^{\ast }\right) ^{2}-n+\sum_{i=1}^{n-1}(x^{\ast })^{2}=0.
-3(x^{\ast })^{2}-3n+3\sum_{i=1}^{n}(x^{\ast })^{2}-2\lambda \left( \sum_{i=1}^{n-1}x^{\ast }\right) -2\lambda x^{\ast }=0
-3(x^{\ast })^{2}-3n+3(x^{\ast })^{2}(n-1)-2\lambda x^{\ast }(n-1)-2\lambda x^{\ast }=0
-(x^{\ast })^{2}(n-1)-1=0
-x^{\ast }=x_{1}=\ldots =x_{n-1}=\pm \frac{1}{\sqrt{n-1}}.
-x_{n}=-\sum_{i=1}^{n-1}x_{i}=\mp \frac{n-1}{\sqrt{n-1}}.
-n>2
-\left( \frac{1}{\sqrt{n-1}}\right) ^{3}-\left( \frac{n-1}{\sqrt{n-1}}% \right) ^{3}<-\left( \frac{1}{\sqrt{n-1}}\right) ^{3}+\left( \frac{n-1}{% \sqrt{n-1}}\right) ^{3},
-x^{\ast }=x_{1}=\ldots =x_{n-1}=\frac{1}{\sqrt{n-1}},x_{n}=-\frac{n-1}{% \sqrt{n-1}}
-\left( \frac{1}{\sqrt{n-1}}\right) ^{3}-\left( \frac{n-1}{\sqrt{n-1}}% \right) ^{3}.
-n
-n
-\nabla f(x_{1},x_{2},\ldots ,x_{n})-\nabla c(x_{1},x_{2},\ldots ,x_{n})\lambda =0\qquad (\ast\ast\ast )
-c_{1}(x_{1},x_{2},\ldots ,x_{n})=0
-c_{2}(x_{1},x_{2},\ldots ,x_{n})=0,
-\nabla f=% \begin{pmatrix} \frac{\partial f}{\partial x_{1}} & \ldots  & \frac{\partial f}{\partial x_{n}}% \end{pmatrix}% ^{T}
-\nabla c=% \begin{pmatrix} \left( \nabla c_{1}\right) ^{T} & \left( \nabla c_{2}\right) ^{T}% \end{pmatrix}% 
-\lambda =\begin{pmatrix} \lambda _{1} & \lambda _{2}\end{pmatrix}^{T}.
-x_i^2 = \lambda x + \mu
-x_i
-X > 0
-Y < 0
-X=Y=0
-X
-a
-Y
-b = n-a
-aX + bY = 0
-aX^2 + bY^2 = n
-X^2 = b/a, Y^2 = a/b
-aX^3 + bY^3 = b\sqrt{b/a} - a\sqrt{a/b}
-a
-a=n-1
-b=1
-X = 1/\sqrt{(n-1)}
-Y = -\sqrt{n-1}
--\sqrt{n-1}, 1/\sqrt{(n-1)} \times (n-1)
- -(n-1)\sqrt{n-1} + 1/\sqrt{n-1} 

@@ -1,43 +1,0 @@
-T = k_1\cdot aa^T + k_2\cdot a(1-a)^T+k_3 \cdot(1-a)a^T
-T
-N\times N
-a
-a:\{a_i\}, 0<a_i<1
-k_1, k_2, k_3 > 0
-1
-(1-a)
-a
-a=(a_1~\cdots~~a_N)^T\in\mathbb{R}^{N\times1}
-1\equiv1_{N\times1}\in\mathbb{R}^{N\times1}
-k_2
-k_3
-A=k_1-k_2-k_3
-B=k_2
-C=k_3
-E\approx0
- \left( a(1-a)^T \right)^T =(1-a)a^T, 
-a(1-a)^T=a\cdot1_{1\times N}-aa^T
-(1-a)a^T=1\cdot a^T-aa^T.
- \begin{eqnarray} E &=& k_1aa^T+k_2a(1-a)^T+k_3(1-a)a^T - T \\   &=& A\;aa^T+B\;a\cdot 1^T+C\;1\cdot a^T-T \end{eqnarray} 
- E_{ij} = A\;a_ia_j+B\;a_i+C\;a_j-T_{ij}. 
-A=C=0\ne B
-T_{ij}
-i
-Ba_i=\frac1N\sum_jT_{ij}
-A=B=0\ne C
-j
-Ca_j=\frac1N\sum_iT_{ij}
-A
-T
-NB_0C_0=\sum_{ij}T_{ij}
-Aa_ia_j+Ba_i+Ca_j=(B_1a_i+B_0)(C_1a_j+C_0)-B_0C_0.
-EE^T
-E^TE
-||E||^2
-T=T^T
-T
-B
-C
-T
-\frac{T+T^T}{2}
-T

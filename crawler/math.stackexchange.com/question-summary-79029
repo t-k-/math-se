@@ -1,10 +1,0 @@
-\displaystyle\sum_{n=1}^{n=\infty}\left(\sum_{k=n}^{k=n^2}\frac{1}{k^2}\right)
-\frac{1}{k^2} > \frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}
-\begin{align*} \sum_{n=1}^{n=\infty}\left(\sum_{k=n}^{k=n^2}\frac{1}{k^2}\right) &= \sum_{k=1}^\infty\;\sum_{n=\lceil\sqrt{k}\rceil}^k\frac1{k^2}\\ &=\sum_{k=1}^\infty\frac{k-\lceil\sqrt{k}\rceil+1}{k^2}\\ &\ge \sum_{k=1}^\infty\frac{k-\sqrt{k}}{k^2}\\ &=\sum_{k=1}^\infty\left(\frac1k-\frac1{k^{3/2}}\right), \end{align*}
-k
-\left\lceil\sqrt{k}\;\right\rceil-1\le k/2
- \sum_{n=1}^{n=\infty}\left(\sum_{k=n}^{k=n^2}\frac{1}{k^2}\right)=\sum_{k=1}^\infty\frac{k-\left\lceil\sqrt{k}\;\right\rceil+1}{k^2}\ge\sum_{k=1}^\infty\frac{1}{2k} 
-n
-\sum_{n=1}^m \left( \psi^{(1)}(n) - \psi^{(1)}(n^2+1) \right) \sim \ln(m) + O(1)
-m
-    \psi^{(1)}(n) - \psi^{(1)}(n^2+1) \sim \frac{1}{n} - \frac{1}{2 n^2} + o\left( n^{-2} \right) 

@@ -1,15 +1,0 @@
-\iint \mathrm d\vec{R} \; (x^2 + y^2) \; e^{-2 \sqrt{ x^2 + y^2 + z^2}} \; e^{i\vec{K}\vec{R}} \;,
-\vec{R}=(x,y)
-\int_0^{\infty} \mathrm d{R} \int_0^{2\pi} \mathrm d\Phi \; R^3 \; e^{-2 \sqrt{ R^2 + z^2}} \; e^{i K R \cos(\Phi)} \;.
-2 \pi \int_0^{\infty} \mathrm d{R} \; R^3 \; e^{-2 \sqrt{ R^2 + z^2}} \; J_0(K R) \;.
-x^2 = R^2 + z^2
-y = \frac{x}{|z|}
-2 \pi |z|^4 \int_{1}^{\infty} \mathrm d{y} \; y \; (y^2 - 1) \; e^{-2 |z| y} \; J_0\left(K |z| \sqrt{y^2 - 1}\right) \;.
-J_0\left(K |z| \sqrt{y^2 - 1}\right) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \; \Gamma(m+1)} \left( \frac{K |z|}{2} \right)^{2m} (y^2 - 1)^m \;.
-2 \pi |z|^4 \sum_{m=0}^\infty \frac{(-1)^m}{m! \; \Gamma(m+1)} \left( \frac{K |z|}{2} \right)^{2m} \int_{1}^{\infty} \mathrm d{y} \; y \; (y^2 - 1)^{m+1} \; e^{-2 |z| y} \;.
-\frac{2 \pi}{\sqrt{\pi}} \sum_{m=0}^\infty \frac{(-1)^m \; (m+1)}{m!} \left( \frac{K}{2} \right)^{2m} |z|^{m+\frac{5}{2}} K_{m+\frac{5}{2}}\left( 2|z| \right) \;,
-K_{m+\frac{5}{2}}
-m+\frac{5}{2}
-m\rightarrow\infty
-|z| > 1
-m!

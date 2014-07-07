@@ -1,49 +1,0 @@
-\binom{52}{5} = \frac{52!}{5!47!} = \frac{52\cdot 51\cdot 50\cdot 49\cdot 48}{5\cdot4\cdot3\cdot2\cdot1} = 2598960
-T_{k,n}
-n
-k
-T_{n,n}=0
-T_{0,n}
-T_{k,n} = \frac{n-k}{n} (1 + T_{k+1,n}) + \frac{k}{n} (1 + T_{k,n})
-T_{k,n} = \frac{n}{n-k} + T_{k+1,n}
-T_{0,n} = n\sum_{i=1}^n \frac{1}{i} = n H_n
-n=2598960
-2598960
-15.34784
-15.34784 \times 2598960 = 39888416
-t=\sum_{j=0}^{n-1}\frac n{n-j}=n\sum_{j=0}^{n-1}\frac1{n-j}=n\sum_{i=1}^{n}\frac1{i}
-i=n-j
-i
-i
-i/n
-i
-i-1
-1-i/n
-n
-n=5
-\left(\begin{array}{ccccc} 1&\frac15&0&0&0&0\\ 0&\frac45&\frac25&0&0&0\\ 0&0&\frac35&\frac35&0&0\\ 0&0&0&\frac25&\frac45&0\\ 0&0&0&0&\frac15&1\\ 0&0&0&0&0&0\\ \end{array}\right)\;.
-0
-x_k=(-1)^i\binom ki
-k=0,\dotsc,n
-\lambda_k=1-k/n
-1
-n
-0
-\delta_{in}=\sum_{k=0}^n(-1)^k\binom nkx_k=\sum_{k=0}^n(-1)^{k+i}\binom nk\binom ki
-i=0
-t
-t
-i=0
-t
-p_t=\sum_{k=0}^n(-1)^k\binom nk\lambda_k^t=p_t=\sum_{k=0}^n(-1)^k\binom nk\left(1-\frac kn\right)^t\;.
-t
-1-p_t=-\sum_{k=1}^n(-1)^k\binom nk\left(1-\frac kn\right)^t\;,
- \begin{eqnarray} T &=& \sum_{t=0}^\infty(1-p_t) \\ &=& \sum_{t=0}^\infty\left(-\sum_{k=1}^n(-1)^k\binom nk\left(1-\frac kn\right)^t\right) \\ &=& -\sum_{k=1}^n(-1)^k\binom nk\sum_{t=0}^\infty\left(1-\frac kn\right)^t \\ &=& -\sum_{k=1}^n(-1)^k\binom nk\frac nk\;. \end{eqnarray} 
-\sigma(q)=\sum_{k=1}^n(q-1)^k\binom nk\frac1k\;.
-q
-\begin{eqnarray} \sigma'(q) &=& \sum_{k=1}^n(q-1)^{k-1}\binom nk \\ &=& \frac1{q-1}\left(\sum_{k=0}^n(q-1)^k\binom nk-1\right) \\ &=& \frac{(q-1+1)^n-1}{q-1} \\ &=& \frac{q^n-1}{q-1} \\ &=& \sum_{i=0}^{n-1}q^i \;, \end{eqnarray} 
-\sigma(q)=\sum_{i=1}^{n}\frac{q^i}i+C\;.
-C
-\sigma(1)=0
-\sigma(q)=\sum_{i=1}^{n}\frac{q^i}i-\sum_{i=1}^{n}\frac1i\;,
-T=-n\sigma(0)=n\sum_{i=1}^{n}\frac1i\;,

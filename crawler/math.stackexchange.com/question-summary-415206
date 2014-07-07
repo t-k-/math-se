@@ -1,5 +1,0 @@
-(A\wedge \lnot  B \wedge \lnot  C \wedge \lnot D) \vee (C \wedge \lnot D) \vee (C \wedge \lnot D) = (A \wedge \lnot B \wedge \lnot D) \vee (C \wedge \lnot D)
-(C \wedge \lnot D)
-T
- \begin{align*} (C \wedge \lnot D) &= (T) \land (C \wedge \lnot D) & \text{by Identity Law}\\ &= [(A \land \neg B) \lor T] \land (C \wedge \lnot D) & \text{by Domination Law}\\ &= [(A \land \neg B) \land (C \wedge \lnot D)] \lor [T \land (C \wedge \lnot D)] & \text{by Distributive Law}\\ &= (A \land \neg B \land C \wedge \lnot D) \lor (C \wedge \lnot D) & \text{by Identity Law} \\ \end{align*}
- \begin{align*} &(A\wedge \lnot  B \wedge \lnot  C \wedge \lnot D) \vee (C \wedge \lnot D) \\ &= (A\wedge \lnot  B \wedge \lnot  C \wedge \lnot D) \vee (A \land \neg B \land C \wedge \lnot D) \lor (C \wedge \lnot D) & \text{by substituting above}\\ &= [(A\wedge \lnot  B \wedge \lnot D) \land (\neg C \lor C)] \lor (C \wedge \lnot D) & \text{by Distributive Law}\\ &= [(A\wedge \lnot  B \wedge \lnot D) \land (T)] \lor (C \wedge \lnot D) & \text{by Inverse Law}\\ &= (A \wedge \lnot B \wedge \lnot D) \vee (C \wedge \lnot D) & \text{by Identity Law} \\ \end{align*}

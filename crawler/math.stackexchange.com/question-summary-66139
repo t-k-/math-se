@@ -1,24 +1,0 @@
-\hat{z}
-V
-\int_V\dfrac{\vec{r}\cdot(\vec{r}-c\hat{z})}{|\vec{r}|^3|\vec{r}-c\hat{z}|^3} dV
-2\pi \int_0^\infty \int_0^{\pi}\dfrac{\vec{r}\cdot(\vec{r}-c\hat{z})}{|\vec{r}|^3|\vec{r}-c\hat{z}|^3} \sin \theta d\theta \;|\vec{r}|^2dr 
-r = |\vec{r}|
-\hat{r}\cdot \hat{z} = \cos \theta 
-2\pi \int_0^\infty \int_0^{\pi} \dfrac{r  - c\cos \theta}{|\vec{r}-c\hat{z}|^3} \sin \theta d\theta dr
-2\pi \int_0^\infty \int_0^{\pi} \dfrac{r  - c\cos \theta}{(r^2+c^2-2 rc \cos \theta)^{3/2}}\sin \theta d\theta dr
-x = \cos \theta
-2\pi \int_0^\infty \int_{-1}^{1} \dfrac{r-cx}{(r^2+c^2 - 2 r c x)^{3/2}}dx dr
- \vert \vec{r} - c \hat{z} \vert^2 = r^2 + c^2 - 2 r c \cos \theta
-\theta
-t = \cos\theta
-  \begin{eqnarray}   2 \pi \int_0^ \pi \frac{r(1-\cos \theta)}{ \left( r^2 + c^2 - 2 \, c \cdot r \cdot \cos \theta \right)^{3/2}} \sin \theta \, \mathrm{d} \theta &=&    2 \pi \int_{-1}^1 \frac{r (1 -t) }{ \left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{3/2} } \mathrm{d} t \\ &=& 2 \pi \frac{ c^2 + r^2 - \vert c^2 - r^2 \vert }{c^2 r ( c+ r)}  \end{eqnarray} 
-r
-  \begin{eqnarray}   \int_0^\infty 2 \pi \frac{ c^2 + r^2 - \vert c^2 - r^2 \vert }{c^2 r ( c+ r)} \mathrm{d} r &=& \int_0^c 2 \pi \frac{ 2 r^2 }{c^2 r ( c+ r)} \mathrm{d} r + \int_c^\infty 2 \pi \frac{ 2 c^2 }{c^2 r ( c+ r)} \mathrm{d} r \\   & = & 2 \pi \frac{2 - 2 \log 2}{c} + 2 \pi \frac{2 \log 2}{c} = \frac{4 \pi}{c}  \end{eqnarray} 
-t
-t
-\int ( a-b t)^{-c} \mathrm{d} t =\frac{ (a - b t)^{1-c}}{b (c-1)}
-   \begin{eqnarray} \frac{r (1 -t) }{ \left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{3/2} } &=& \frac{1}{c} \frac{ (r^2 + c^2 - 2 r c t) - (r-c)^2 }{  \left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{3/2} } \\ &=&  \frac{1}{c} \frac{1}{\left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{1/2}} -  \frac{1}{c} \frac{(r-c)^2 }{  \left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{3/2} } \end{eqnarray} 
-  \begin{eqnarray}   2 \pi \int_0^ \pi \frac{(r-c \cos \theta)}{ \left( r^2 + c^2 - 2 \, c \cdot r \cdot \cos \theta \right)^{3/2}} \sin \theta \, \mathrm{d} \theta &=&    2 \pi \int_{-1}^1 \frac{(r -c t) }{ \left(r^2 + c^2 - 2 \, c \cdot r \cdot t \right)^{3/2} } \mathrm{d} t \\ &=& 2 \pi \frac{ 1 - \operatorname{sign}(c - r ) }{r^2}  \end{eqnarray} 
-r
-    \int_0^\infty 2 \pi \frac{ 1 - \operatorname{sign}(c - r ) }{r^2} \mathrm{d} r =     \int_c^\infty 2 \pi \frac{ 2 }{r^2} \mathrm{d} r = \frac{4\pi}{c} 
-t

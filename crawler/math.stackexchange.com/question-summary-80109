@@ -1,11 +1,0 @@
-X_t=\sigma \int_0^t e^{-a(t-s)} dW_s
-\sigma , a 
-X_t, X_s
-\mathbb{E}[X_t, X_s]
-\mathbb{E}[X_t, W_s]
-W_s
- \mathbb{E}\left( \left( \int_0^t f(s) \mathrm{d} W_s \right) \left( \int_0^t g(s) \mathrm{d} W_s \right)  \right) = \int_0^t f(s) g(s) \mathrm{d} s
-s<t
- \begin{eqnarray}    \mathbb{E} \left( X_s X_t \right) &=&      \mathbb{E} \left( \left( \sigma \int_0^t \mathrm{e}^{-a(s - \tau)} \mathbf{1}\left(\tau \le s\right) \mathrm{d}W_\tau \right) \left( \sigma \int_0^t \mathrm{e}^{-a(t - \tau)} \mathrm{d}W_\tau \right) \right) \\ &=&     \sigma^2 \int_0^{\min(s,t)} \mathrm{e}^{-a (s+t-2 \tau)}\mathrm{d} \tau =     \sigma^2 e^{-a (s+t)} \cdot \frac{e^{2 a \min (s,t)}-1}{2 a} =      \sigma^2 e^{-a t} \cdot \frac{\sinh(a s)}{a} \end{eqnarray} 
-W_s = \int_0^s 1 \,\, \mathrm{d} W_\tau
-   \mathbb{E} \left( X_t W_s\right) = \sigma \int_0^s \mathrm{e}^{-a(t-\tau)}\mathrm{d} \tau   = \sigma  \mathrm{e}^{-a t} \cdot \frac{ \left(\mathrm{e}^{a s}-1\right)}{a} 

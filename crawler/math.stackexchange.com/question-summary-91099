@@ -1,26 +1,0 @@
-(a_n)
-p \in \mathbb{C}
-a_n \rightarrow 0
-n a_n \rightarrow p
-(1+a_n)^n\to e^p
-|c_{k,n}|\leqslant1
-na_n\to p
-A
-|na_n|\leqslant A
-n
-|b_{k,n}|\leqslant\dfrac{A^k}{k!}
-k
-c_{k,n}\to c_k=1
-b_{k,n}\to b_k=\dfrac{p^k}{k!}
-n\to\infty
- (1+a_n)^n= \sum_{k=0}^{+\infty} c_{k,n}b_{k,n},\quad\text{with}\quad c_{k,n}=[k\leqslant n]\cdot \frac{n!}{n^k(n-k)!},\quad b_{k,n}=\frac{(na_n)^k}{k!} 
- |c_{k,n}b_{k,n}|\leqslant\frac{A^k}{k!}\quad\text{with}\quad \sum_{k=0}^{+\infty}\frac{A^k}{k!}=\mathrm e^A\quad\text{finite}, 
- \lim\limits_{n\to\infty}(1+a_n)^n=\sum_{k=0}^{+\infty}c_kb_k=\sum_{k=0}^{+\infty}\frac{p^k}{k!}=\mathrm e^p. 
-(1+a_n)^n= \sum_{k=0}^n \frac{n!}{k! (n-k)!}a_n^k \,.
-e^{na_n}=   \sum_{k=0}^n \frac{n^k}{k!}a_n^k + \sum_{k=n}^\infty \frac{n^k}{k!}a_n^k\,.
- \left|(1+a_n)^n- e^{na_n}  \right| \leq \left| \sum_{k=0}^n \frac{n(n-1)..(n-k)-n^k}{k!}a_n^k  \right| +\left| \sum_{k=n}^\infty \frac{n^k}{k!}a_n^k\right|
-0
-\left| \sum_{k=0}^n \frac{(1-\frac{1}{n})(1-\frac{2}{n})...(1-\frac{k}{n})-1}{k!}(na_n)^k  \right|
-n
-|a_n| < 1
- \begin{eqnarray} (1+a_n)^n &=& \exp(n \log(1+a_n)) \\  &=& \exp\left(n \left(a_n-\sum_{k=2}^\infty (-1)^k\frac{{a_n}^k}{k}\right)\right) \\ &=& \exp(na_n)\exp\left(na_n\left(\sum_{k=1}^\infty (-1)^k \frac{{a_n}^k}{k+1} \right)\right)\\ &\overset{n\to\infty}\longrightarrow& \exp(p)\exp(p\cdot 0) = e^p \end{eqnarray}

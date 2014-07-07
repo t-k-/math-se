@@ -1,32 +1,0 @@
-i
-i=1,2,\ldots,k
-(k+1)
-t_{k+1}
-X_n
-[1,\infty)
-C
-k = n+1
- \mathbb P(X \le x) = \frac{\int_1^x \frac 1{x^{n+2}} \, dx}{C},  
- C = \int_1^{\infty} \frac 1{x^{n+2}} \, dx. 
- \mathbb E[X_n^k] = \frac 1C \int_1^{\infty} \frac 1{x^{n+2-k}} \, dx < \infty \qquad \text{ if } k = 1, \dots, n 
-k+1
-\left( \frac{k+1}{k+1+x^2} \right)^{1+k/2}
-k \geqslant 1
-r
-1 \leqslant r \leqslant k
-+\infty
-r \leqslant k
-  \left| x^r \left( \frac{k+1}{k+1+x^2} \right)^{1+k/2} \right| \geqslant \frac{ \vert x \vert^r }{\left( 1+ x^2 \right)^{1+k/2}} 
-     \int_{-\infty}^\infty \left\vert x^r \mathcal{N}_k \left( \frac{k+1}{k+1+x^2} \right)^{1+k/2} \right\vert \, \mathrm{d} x \geqslant \mathcal{N}_k \int_{-\infty}^\infty     \frac{ \vert x \vert^r }{\left( 1+ x^2 \right)^{1+k/2}} \mathrm{d} x = 2 \mathcal{N}_k \int_{0}^\infty \frac{ x^r }{\left( 1+ x^2 \right)^{1+k/2}} \mathrm{d} x 
-\epsilon \in (0,1]
-P_{\epsilon}(X = n) = \frac{\frac1{n^{k+1+\epsilon}}}{\zeta(k+1+\epsilon)}
-\mathbb{E}(X^m) = \left \{ \begin{array}{cl} \frac{\zeta(k+1+\epsilon - m)}{\zeta(k+1+\epsilon)}  < \infty, &~~ \forall m \in \{1,2,\ldots,k\}\\ \infty, &~~ \forall m>k \end{array}\right.
-X
-f(x)=\dfrac{c}{x^{k+2}}
-x\ge 1
-f(x)=0
-c
-1
-n=1, 2, 3, \dots
-P(X=n)=\dfrac{c}{n^{k+2}}
-c

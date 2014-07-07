@@ -1,6 +1,0 @@
-n
-(x_0,y_0)
-(x_1, y_1)
-(x_n,y_n)
-p(x)=\frac{(x-x_1)(x-x_2)\cdots(x-x_n)}{(x_0-x_1)(x_0-x_2)\cdots(x_0-x_n)}\cdot y_0+\frac{(x-x_0)(x-x_2)\cdots(x-x_n)}{(x_1-x_0)(x_1-x_2)\cdots(x_1-x_n)}\cdot y_1+\ldots+\frac{(x-x_0)(x-x_1)\cdots(x-x_{n-1})}{(x_n-x_0)(x_n-x_1)\cdots(x_n-x_{n-1})}\cdot y_n
-p(x)=\sum_{i=0}^{n}y_i\cdot\prod_{0\leq j\leq n,j\neq i}\frac{x-x_j}{x_i-x_j}

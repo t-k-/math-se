@@ -1,69 +1,0 @@
-X
-Y
-f
-g
-Y − X
-X + Y
-|y-x|
-(y-x)^2
-X-Y
-h(t) = \int_{-\infty}^\infty f(t+y) g(y) \, dy
-|X-Y|
-f_{|X-Y|}(t) = h(t) + h(-t)
-t > 0
-0
-t < 0
-(X-Y)^2
-f_{(X-Y)^2}(t) = (h(\sqrt{t}) + h(-\sqrt{t}))/(2 \sqrt{t})
-t > 0
-0
-t < 0
-Y-X
-h(t)=\int_{ - \infty }^\infty  {f(x)g(t + x)dx}
-t \in \mathbb{R}
-f
-g
-X
-Y
-Y-X
-t > 0
-|Y-X|
-h(t)+h(-t)
-t > 0
-t < 0
-0
-h(t)+h(-t)
-|Y-X|
-t > 0
-(Y-X)^2
-t > 0
-u \mapsto u^2
-(Y-X)^2
-(h(\sqrt t)+h(-\sqrt t))/(2\sqrt t)
-t > 0
-t < 0
-0
- {\rm P}(|Y-X| \leq t) = \int_0^t {[h(u) + h( - u)]du}  
- \int_0^t {[h(u) + h( - u)]du} = \int_0^t {h(u)du}  + \int_0^t {h( - u)du}  = \int_0^t {h(u)du}  + \int_{ - t}^0 {h(u)du} , 
- \int_0^t {h(u)du} = {\rm P}(0 \leq Y-X \leq t) \;\; {\rm and} \;\; \int_{ - t}^0 {h(u)du} = {\rm P}(-t \leq Y-X \leq 0), 
- \int_0^t {[h(u) + h( - u)]du} = {\rm P}(-t \leq Y-X \leq t) = {\rm P}(|Y-X| \leq t). 
- {\rm P}((Y-X)^2 \leq t) = {\rm P}(|Y-X| \leq \sqrt t) = \int_0^{\sqrt t } {[h(u) + h( - u)]du} . 
- {\rm P}((Y-X)^2 \leq t) = \int_0^t {[h(\sqrt u ) + h( - \sqrt u )]\frac{{du}}{{2\sqrt u }}} , 
-f_Z
-Z
-F_Z (z) = \int_{ - \infty }^z {f_Z (} u)du
-\forall z \in \mathbb{R}
-F_Z
-Z
-Z
-f_Z
-H
-Y-X
-h
-t > 0
-(Y-X)^2
-t > 0
- {\rm P}(|Y-X| \leq t) = {\rm P}(-t \leq Y-X \leq t) = {\rm P}(Y-X \leq t) - {\rm P}(Y-X \leq -t) = H(t) - H(-t). 
- \frac{d}{{dt}}{\rm P}(|Y - X| \le t) = h(t) + h( - t). 
- {\rm P}((Y-X)^2 \leq t) = {\rm P}(|Y-X| \leq \sqrt{t}) = H(\sqrt t ) - H( - \sqrt t ). 
- \frac{d}{{dt}}{\rm P}((Y - X)^2  \le t) = \frac{{h(\sqrt t )}}{{2\sqrt t }} + \frac{{h( - \sqrt t )}}{{2\sqrt t }} = \frac{{h(\sqrt t ) + h( - \sqrt t )}}{{2\sqrt t }}. 

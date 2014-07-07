@@ -1,39 +1,0 @@
-\int y\;\ln y\, dy
- \int \frac{df}{dy}\  g \ \ \text{d}y = fg - \int f \ \frac{dg}{dy} \ \ \text{d}y 
- \int \frac{d (y^2/2)}{dy}\ \ln y \ \ \text{d}y = \frac{y^2}{2}\ \ln y - \int \frac{y^2}{2} \frac{d \ln y}{dy} \ \ \text{d}y
-\displaystyle \frac{d \ln y}{dy} = \frac{1}{y}
-\int \frac{y^2}{2} \frac{1}{y} \ \ \text{d}y = \int \frac{y}{2} \ \ \text{d}y = \frac{y^2}{4}
- \frac{y^2 \ln y}{2} - \frac{y^2}{4} + C
-\displaystyle \ln y
-\displaystyle \frac{1}{y}
-y
-\int y^{1000} \ln y \ \text{d}y
-u
-dv
-\int u\,dv=uv -\int v\,du\qquad\text{and}
-\int v\,du=uv -\int u\,dv.
-u=y
-dv
-\ln y \,dy
-du=dy
-dv=\ln y\,dy
-v
-\ln y
-du=y\,dy
-v=\ln y
-u=y^2/2
-dv=(1/y)\,dy
-\int y\ln y \,dy=uv-\int u\,dv=\frac{y^2}{2}\ln y-\int \frac{y}{2}dy.
-\int y\ln y\,dy=\frac{y^2\ln y}{2}-\frac{y^2}{4}+C.
-\int \ln x\,dx
-\int \arctan x\,dx
-\int \arcsin x\, dx
-\int \ln x \,dx
-du=dx
-v=\ln x
-y=e^{x}
-dy = e^{x} \ dx
-0 < y \leq 1
- \int_0^y {u\ln u \,du}  = \int_0^y {u\bigg( - \int_u^1 {\frac{1}{v}} \,dv\bigg)du}  = \int_{u = 0}^y {\bigg(\int_{v = u}^1 {\frac{{ - u}}{v}\,dv\bigg)du} } . 
- \int_0^y {u\ln u \,du}  =  \int_{v = 0}^y {\bigg(\int_{u = 0}^v {\frac{{ - u}}{v}\,du\bigg)dv} } + \int_{v = y}^1 {\bigg(\int_{u = 0}^y {\frac{{ - u}}{v}\,du} \bigg)dv} . 
- \int_0^y {u\ln u \,du}  = \int_{v = 0}^y {\frac{1}{v}} \frac{{ - v^2 }}{2}\,dv + \int_{v = y}^1 {\frac{1}{v}\frac{{ - y^2 }}{2}\,dv}  =  - \frac{{y^2 }}{4} + \frac{{y^2 \ln y}}{2}. 

@@ -1,18 +1,0 @@
-A
-B
-m\times n
-n\times m
-I
-m\times m
-n\times n
- det(I+AB)=det(I+BA), 
-\rm\left[ \begin{array}{ccc} 1 & \rm A \\ \rm B & 1 \end{array} \right]\ =\ \left[ \begin{array}{ccc} 1 & \rm 0 \\ \rm B & 1 \end{array} \right]\ \left[ \begin{array}{ccc} 1 & \rm 0 \\ \rm 0 & \rm 1-BA \end{array} \right]\ \left[ \begin{array}{ccc} 1 & \rm A \\ \rm 0 & 1 \end{array} \right]
-\rm\phantom{\left[ \begin{array}{ccc} 1 & \rm B \\ \rm A & 1 \end{array} \right]}\ =\ \left[ \begin{array}{ccc} 1 & \rm A \\ \rm 0 & 1 \end{array} \right]\ \left[ \begin{array}{ccc} 1-AB & \rm 0 \\ \rm 0 & \rm 1 \end{array} \right]\ \left[ \begin{array}{ccc} 1 & \rm 0 \\ \rm B & 1 \end{array} \right]
-A
-\det(I+AB)
-\det(I+BA)
-A
-A
-   \det(I+AB)=\det A^{-1}\cdot\det(I+AB)\cdot\det A=\det(A^{-1}\cdot(I+AB)\cdot A)=\det(I+BA). 
- \det\begin{pmatrix}I&-B\\\\A&I\end{pmatrix} \det\begin{pmatrix}I&B\\\\0&I\end{pmatrix} =\det\begin{pmatrix}I&-B\\\\A&I\end{pmatrix}\begin{pmatrix}I&B\\\\0&I\end{pmatrix} =\det\begin{pmatrix}I&0\\\\A&AB+I\end{pmatrix} =\det(I+AB) 
- \det\begin{pmatrix}I&B\\\\0&I\end{pmatrix} \det\begin{pmatrix}I&-B\\\\A&I\end{pmatrix} =\det\begin{pmatrix}I&B\\\\0&I\end{pmatrix} \begin{pmatrix}I&-B\\\\A&I\end{pmatrix} =\det\begin{pmatrix}I+BA&0\\\\A&I\end{pmatrix} =\det(I+BA) 

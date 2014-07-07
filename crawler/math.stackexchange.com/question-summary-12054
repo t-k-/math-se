@@ -1,48 +1,0 @@
-\log(1+x) = \sum\limits_{n=1}^\infty (-1)^{n+1} \cdot \frac{x^n}{n}, \; \forall |x| < 1
-x_0 = 0
-f(x_0) = \sum\limits_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!} \cdot x^n + r_n
-r_n
-\log(1+x)
-f^{(n)} = (-1)^{n+1} \cdot \frac{(n-1)!}{(1+x)^n}, \forall n \in \mathbb{N}
-\log(1+x)
-f(x_0) = \sum\limits_{n=1}^\infty (-1)^{n+1} \cdot \frac{x^n}{n} + r_n
-r_n
-\lim_{n \to \infty} r_n = 0
-x_0 = 0
-|x| < 1
-x \to x_0 = 0
-r = 1
-\forall |x| < 1
-x \to 0
-(-1,1)
-k!
-0
-r>0
-\frac{1}{k+1}
-|f^{(k+1)}(x)| \leq \left(\frac{1}{1-r}\right)^{k+1},
-|f^{(k+1)}(x)| \leq \left(\frac{k!}{1-r}\right)^{k+1},
- |r_k(x)| \leq \left( \frac{r}{1-r} \right)^{k+1} \cdot \frac{k!}{(k+1)!} = \left( \frac{r}{1-r} \right)^{k+1} \cdot \frac{1}{k+1}. 
-x<0
-t
-\frac{t-x}{1+t}
-t
-x
--x
-t=0
-0
-k \to \infty
--1<x<0
- r_k(x) = \int_0^x \frac{f^{(k+1)}(t)}{k!} (x-t)^{k} dt  = \int_0^x \frac{(-1)^k}{(1+t)^{k+1}} (x-t)^{k} dt  
- |r_k(x)|  = \int_x^0 \frac{1}{(1+t)^{k+1}} (t-x)^{k} dt.  
- |r_k(x)| \leq \int_x^0 (-x)^k \frac{1}{1+t} dt \leq \int_x^0 (-x)^k \frac{1}{1+x} dt = \frac{(-x)^{k+1}}{1+x}. 
- |r_k(x)| \leq \frac{(-x)^{k+1}}{(1+x)(1+k)} 
-f(x_0) = \sum\limits_{n=1}^\infty (-1)^{n+1} \cdot \frac{x^n}{n} + r_n
-f(x)=\sum_{n=1}^k (-1)^{n+1} \cdot \frac{x^n}{n} + r_k(x),
-r_k
-k^\text{th}
-0
-k
-\infty
-f(x)=\log(1+x)
-k!
-[-\frac{1}{2},1)

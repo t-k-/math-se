@@ -1,8 +1,0 @@
-A
-n\times n
- \det(A) = \frac 1{n!} \left| \begin{array}{cccccc}\operatorname{tr}(A) & 1 & 0 & \cdots &  \cdots & 0 \\ \operatorname{tr}(A^2) & \operatorname{tr}(A) & 2 & 0 & \cdots & 0 \\ \operatorname{tr}(A^3) & \operatorname{tr}(A^2) & \operatorname{tr}(A) & 3 & & \vdots \\ \vdots & & & & & n-1 \\ \operatorname{tr}(A^n) & \operatorname{tr}(A^{n-1}) &  \operatorname{tr}(A^{n-2}) & \cdots & \cdots & \operatorname{tr}(A)            \end{array}\right|
-s_k=tr(A^k)
-\chi_A(t)=t^n+c_1t^{n-1}+\dots+c_{n-1}t+c_n
-c_n=(-1)^n\det(A)
--\begin{bmatrix} s_1\\s_2\\s_3\\\vdots\\s_{n-1}\\s_n \end{bmatrix} = \begin{bmatrix} 1&0&0&\dots&0&0\\ s_1&2&0&\dots&0&0\\ s_2&s_1&3&&0&0\\ \vdots&\vdots&&&&\vdots\\ s_{n-2}&s_{n-3}&s_{n-4}&\dots&n-1&0\\ s_{n-1}&s_{n-2}&s_{n-3}&\dots&s_1&n \end{bmatrix} \begin{bmatrix} c_1\\c_2\\c_3\\\vdots\\c_{n-1}\\c_n \end{bmatrix}
-c_n

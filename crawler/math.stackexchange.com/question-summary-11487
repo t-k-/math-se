@@ -1,48 +1,0 @@
-Y = X+N
-X,N
-Y
-f(X|y)
-{\rm E}(X|y)
-X
-Y
-{\rm N}(0,\sigma_1^2)
-{\rm N}(0,\sigma_2^2)
-{\rm E}(X|X+Y=z)
-f_{X+Y|X}(\cdot|x)
-{\rm N}(x,\sigma_2^2)
-\int_{ - \infty }^\infty  {x\frac{1}{{\sqrt {2\pi \sigma ^2 } }}{\rm e}^{ - (x - \mu )^2 /(2\sigma ^2 )} \,{\rm d}x}  = \mu 
-{\rm N}(\mu,\sigma^2)
- {\rm E}(X|X + Y = z) = \int_{ - \infty }^\infty  {xf_{X|X + Y} (x|z)\,{\rm d}x} = \int_{ - \infty }^\infty  {x\frac{{f_X (x)f_{X + Y|X} (z|x)}}{{f_{X + Y} (z)}}\, {\rm d}x} 
- \int_{ - \infty }^\infty  {x\sqrt {\frac{{\sigma _1^2  + \sigma _2^2 }}{{\sigma _1^2 \sigma _2^2}}} \frac{1}{{\sqrt {2\pi } }}\exp \bigg\{  - \frac{{[x - z \sigma _1^2 /(\sigma _1^2  + \sigma _2^2 )]^2 }}{{2[\sigma _1^2 \sigma _2^2 /(\sigma _1^2  + \sigma _2^2 )]}}} \bigg \} \,{\rm d}x. 
- {\rm E}(X|X + Y = z) = \frac{{\sigma _1^2 }}{{\sigma _1^2  + \sigma _2^2 }}z. 
-{\rm E}(X|Y=y)
-X \sim {\rm N}(0,\sigma_1^2)
-N \sim {\rm N}(0,\sigma_2^2)
-X
-N
- {\rm E}(X|X + N) = \frac{{\sigma _1^2 }}{{\sigma _1^2  + \sigma _2^2 }}(X + N), 
- {\rm E}(X|X + N = y) = \frac{{\sigma _1^2 }}{{\sigma _1^2  + \sigma _2^2 }}y. 
-X
-N
-\lambda_1
-\lambda_2
- {\rm E}(X|X + N) = \frac{{\lambda _1 }}{{\lambda_1  + \lambda_2 }}(X+N). 
-p(y)
-p(x)
-p(x|y)
-E(X|Y=y)
-X_i
-i=1,2
-{\rm N}(0,\sigma_i^2)
-{\rm E}[{\rm e}^{{\rm i}zX_i} ] = {\rm e}^{\sigma _i^2 ( - z^2 /2)}
-X_i
-i=1,2
-\lambda_i
-{\rm E}[{\rm e}^{{\rm i}zX_i} ] = {\rm e}^{\lambda _i ({\rm e}^{{\rm i}z}  - 1)}
-{\rm E}(X_1 | X_1 + X_2) = \frac{{\sigma _1^2 }}{{\sigma _1^2  + \sigma _2^2 }}(X_1  + X_2 )
-{\rm E}(X_1 | X_1 + X_2) = \frac{{\lambda_1 }}{{\lambda_1  + \lambda_2 }}(X_1  + X_2 )
-X_i
-i=1,2
-{\rm E}[{\rm e}^{{\rm i}zX_i} ] = {\rm e}^{c _i \psi(z)}
-c_i > 0
-{\rm E}(X_1 | X_1 + X_2)

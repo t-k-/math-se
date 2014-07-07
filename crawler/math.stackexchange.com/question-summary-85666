@@ -1,14 +1,0 @@
-\mu = 0
-b=1
-Z
-w_i
-\pm 1
-1/2
-X_i
-Z=\sum w_iX_i
-Z
-X
-z>0
-Y
-z<0
- \begin{eqnarray}    f_Z(z) &=& \int_{-\infty}^\infty f_X(z+y) f_Y(y) \mathrm{d} y =              \int_{\max(-z,0)}^\infty f_X(z+y) f_Y(y) \mathrm{d} y \\            &=&              \int_{\max(-z,0)}^\infty \langle \vec{\alpha}_n \otimes \vec{\alpha}_m, \left( \mathrm{e}^{(z+y) \Theta_X} \Theta_X \right) \otimes \left( \mathrm{e}^{y \Theta_Y} \Theta_Y\right), \vec{\mathbf{1}}_n \otimes \vec{\mathbf{1}}_m \rangle   \mathrm{d} y \\           &=& \int_{0}^\infty \langle \vec{\alpha}_n \otimes \vec{\alpha}_m, \left( \mathrm{e}^{(\max(z,0)+y) \Theta_X} \Theta_X \right) \otimes \left( \mathrm{e}^{(\max(-z,0) + y) \Theta_Y} \Theta_Y\right), \vec{\mathbf{1}}_n \otimes \vec{\mathbf{1}}_m \rangle   \mathrm{d} y \\  &=& \langle \vec{\alpha}_n \otimes \vec{\alpha}_m, \left( \mathrm{e}^{\max(z,0) \Theta_X} \otimes \mathrm{e}^{(\max(-z,0) ) \Theta_Y} \right) \cdot \left( \int_{0}^\infty \mathrm{e}^{y \Theta_X} \Theta_X \otimes \mathrm{e}^{y \Theta_Y} \Theta_Y \mathrm{d} y  \right), \vec{\mathbf{1}}_n \otimes \vec{\mathbf{1}}_m \rangle   \end{eqnarray} 

@@ -1,8 +1,0 @@
- (-1)^k\times x+\frac {1}{k}\times\sin(kx)     \ \ \ \ \ \ \ x\in [0,2], k=0,1,2...  
-f_k(x)=(-1)^kx+\frac1k\sin(kx)
-\epsilon>0
-\delta>0
-|x-y|<\delta\implies |f_k(x)-f_k(y)|<\epsilon
-x<y
-\delta=\epsilon/2
-\begin{align} |f_k(x)-f_k(y)|&=\left|(-1)^k(x-y)+\frac{1}{k}(\sin(kx)-\sin(ky))\right|\\ &\le |x-y|+\frac{1}{k}|\sin(kx)-\sin(ky)|\\ &= |x-y|+\frac{1}{k}\left|\int_x^y\frac{d}{dt}\sin(kt)dt\right|\\ &= |x-y|+\frac{1}{k}\left|\int_x^yk\cos(kt)dt\right|\\ &\le |x-y|+\int_x^y|\cos(kt)|dt \;\text{(assuming WLOG that $x<y$)}\\ &\le |x-y|+\int_x^y1dt\\ &= 2|x-y| \end{align}

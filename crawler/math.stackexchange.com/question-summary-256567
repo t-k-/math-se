@@ -1,5 +1,0 @@
-x(n+1)-f(n)x(n)=g(n)
-f(n)\not=0
-g=0
-x_h(n):= \begin{cases}      x(0)*\prod_{j=0}^{n-1}f(j) & \; n>0 \\ \;\;\,1 & \; n=0 \\      x(0)*\prod_{j=n}^{-1}f(j)^{-1}& \; n<0 \\ \end{cases} 
-x_(n):=x_h(n)+ \begin{cases}      x_h(n)*\sum_{j=0}^{n-1}\frac{g(j)}{x_h(j+1)} & \; n>0 \\ \;\;\,0 & \; n=0 \\      -x_h(n)\sum_{j=n}^{-1}\frac{g(j)}{x_h(j+1)}& \; n<0 \\ \end{cases} 

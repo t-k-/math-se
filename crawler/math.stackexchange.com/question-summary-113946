@@ -1,25 +1,0 @@
-X
-(X_n)_{n\geq 1}
-X_n\to X
-\sup_n E[|X_n|^r]<\infty
-r>0
-E[|X|^r]<\infty
-E[X_n^\alpha]\to E[X^\alpha]
-E[|X_n|^\alpha]\to E[|X|^\alpha]
-0<\alpha < r
-\sup_n E[|X_n|^\alpha - |X_n|^\alpha \wedge m]\to 0
-m\to\infty
-\alpha<r
- E[|X|^r]=\sup_{k\in\mathbb{N}}E[|X|^r\wedge k]=\sup_{k\in\mathbb{N}}\lim_{n\to\infty}E[|X_n|^r\wedge k]\leq \sup_{k\in\mathbb{N}}\sup_{n\in\mathbb{N}}E[|X_n|^r\wedge k]\leq \sup_{n\in\mathbb{N}}E[|X_n|^r]<\infty 
-M:=\sup_{n\geq 1}E|X_n|^r
-\frac{r-\alpha}{\alpha}>0
-\varepsilon>0
-m_0
-E|X|^{\alpha}\wedge m_0\leq \varepsilon
-\sup_n E|X_n|^{\alpha}\wedge m_0\leq \varepsilon
-n_0
-x\mapsto |x|^{\alpha}\wedge m
-n_0
-\sup_{n\geq n_0} |E|X_n|^{\alpha}\wedge m_0-E|X|^{\alpha}\wedge m_0|\leq \varepsilon
-\sup_{n\geq n_0}|E|X_n|^{\alpha}-E|X|^{\alpha}|\leq 3\varepsilon
-\sup_{n\geq n_0}|E|X_n|^{\alpha}-E|X|^{\alpha}|\leq \varepsilon+\sup_{n\geq n_0}|E|X_n|^{\alpha}\wedge m_0-E|X|^{\alpha}|,

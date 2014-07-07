@@ -1,23 +1,0 @@
-F(x)=\int_{\sin x}^{\cos x}e^{t^{2}+xt}\,dt
-F^{'}(0)
-F(x)=\int_{a}^{\cos x}e^{t^{2}+xt}\,dt - \int_{a}^{\sin x}e^{t^{2}+xt}\,dt
-a
-\cos x
-\sin x
-F^{'}(x)=e^{\cos^{2}x+x\cos x}-e^{\sin^{2}x+x\sin x}
-F^{'}(0)=e-1
-\frac{e-3}{2}
-F(x)=\int_{\sin x}^{\cos x}e^{t^{2}+xt}\,dt
-F'(x)=\int_{a(x)}^{b(x)}\frac{\partial h(x,t)}{\partial x}.e^{h(x,t)}dt+b'(x)e^{h(x,b(x))}-a'(x)e^{h(x,a(x))}
-F'(0)=\int_{sin(0)}^{cos(0)}t.e^{t^2+0t}dt-\sin(0)e^{cos(0)^2+0\cos(0)}-\cos(0)e^{\sin(0)^2+0\sin0))}
-F'(0)=\int_0^1 t.e^{t^2}dt-1=\frac{e^{t^2}}2|_0^1-1=\frac{e-3}2
-x
- F(t)=I(u(t),v(t),t)=\int_{u(t)}^{v(t)}f(x,t)dx 
-\begin{eqnarray*} F^{\prime }(t) &=&\frac{\partial I}{\partial t}\frac{dt}{dt}+\frac{\partial I }{\partial v}\frac{dv}{dt}+\frac{\partial I}{\partial u}\frac{du}{dt} \\ &=&\int_{u(t)}^{v(t)}\frac{\partial f(x,t)}{\partial t}dx+f(v(t),t)v^{\prime }(t)-f(u(t),t)u^{\prime }(t). \end{eqnarray*}
- F^{\prime }(0)=\int_{u(0)}^{v(0)}\left. \frac{\partial f(x,t)}{\partial t} \right\vert _{t=0}dx+f(v(0),0)v^{\prime }(0)-f(u(0),0)u^{\prime }(0). 
- \begin{eqnarray*} u(t) &=&\sin t,\qquad u(0)=0 \\ u^{\prime }(t) &=&\cos t,\qquad u^{\prime }(0)=1 \\ v(t) &=&\cos t,\qquad v(0)=1 \\ v^{\prime }(t) &=&-\sin t,\qquad v^{\prime }(0)=0. \end{eqnarray*}
- \begin{eqnarray*} f(x,t) =e^{x^{2}+xt}, \qquad f(1,0) =e, \qquad f(0,0) =1. \end{eqnarray*}
- F^{\prime }(0)=\int_{0}^{1}\left. \frac{\partial f(x,t)}{\partial t} \right\vert _{t=0}dx+0-1 
- \left. \frac{\partial f(x,t)}{\partial t}\right\vert _{t=0}=\left. \frac{ \partial }{\partial t}e^{x^{2}+xt}\right\vert _{t=0}=xe^{x\left( x+t\right) }\vert _{t=0}=xe^{x^{2}} 
- \int_{0}^{1}xe^{x^{2}}dx=\frac{1}{2}e-\frac{1}{2} 
- F^{\prime }(0)=\frac{1}{2}e-\frac{1}{2}-1=\frac{1}{2}e-\frac{3}{2}. 

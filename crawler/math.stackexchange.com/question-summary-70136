@@ -1,13 +1,0 @@
-p_{ij}=P(X=i,Y=j)
-P(X=i)=p_i=\sum_j p_{ij}, P(Y=j)=q_j=\sum_i p_{ij}
-p_{i|j}=\frac{p_{ij}}{q_j}
-E[h(X|Y)]\leq h(X)
-h(X)
-X
-E[h(X|Y)]=-\sum_j \sum_i p_{i|j} \ln p_{i|j} q_j 
-I(X, Y) = H(X) - \mathbb{E}(h(X|Y))
-\varphi(x) = x \ln(x)
-x>0
-I(X,Y) = - \sum_i p_i \ln(p_i) + \sum_{j,i} p_{i|j} q_j \ln p_{i|j} =  - \sum_{i,j} p_{i,j} \ln(p_i) + \sum_{j,i} p_{i,j} \ln p_{i|j} 
- I(X,Y) = \sum_{i,j} p_{i,j} \ln \frac{p_{i,j}}{p_i q_j} 
-   I(X,Y) = \sum_{i,j} p_i q_j \cdot \varphi\left( \frac{p_{i,j}}{p_i q_j} \right) \ge \varphi\left( \sum_{i,j} p_i q_j \cdot \frac{p_{i,j}}{p_i q_j} \right) = \varphi(1) = 0 

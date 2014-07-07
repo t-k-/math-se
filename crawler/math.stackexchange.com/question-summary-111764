@@ -1,42 +1,0 @@
-o_i=\frac{O(i)}{1-\sum_{k=1}^{i-1}O(k)}
-i
--\log(o_i)
-I(i)=A-B
-A=(1-o_{i+1})\log[1-o_{i+1}]+o_{i+1}\log[o_{i+1}]
-B=(1-o_{i+1})\log[(1-o_{i+1})(1-o_{i})+o_{i}]+o_{i+1}\log[o_{i+1}(1-o_{i})]
-X
-N
-C(i)
- P(X=i)=x_i\quad\text{for}\quad1\le i\le N. 
-p(\theta)
-p(y|\theta)
-\theta
-y
-P(X=i|Y_j)
-j
-x_{ij}
-j=0
-x_{ij}=x_{i,\,j-1}\cdot\psi_{ij}
-\psi_{ij}
-(j-1^\text{th})
-j^\text{th}
-y_j
-j
-i\le j
-Y_j
- x_{ij}(y_j) = \left\{ \begin{array}{cl}  x_i & j=0 \cr  0 & j>0 \wedge \left(i\le j\wedge y_j=0~\vee~i\gt j\wedge y_j=1 \right)\cr  {x_{i,\,j-1}\over\sum_{k\gt j}x_{k,\,j-1}} & j>0 \wedge i\gt j \wedge y_j=0\cr  {x_{i,\,j-1}\over\sum_{k\le j}x_{k,\,j-1}} & j>0 \wedge i\le j \wedge y_j=1 \end{array} \right. 
- x_{ij} = x_i \cdot \prod_{k\le j} \psi_{ik}(y_k). 
- \eqalign{ P(Y_j=y_j|Y_{j-1}=1) &= y_j \cr P(Y_j= 1 |Y_{j-1}=0) &= \frac{  x_j}{\sum_{k\ge j}x_k} \cr P(Y_j= 0 |Y_{j-1}=0) &= \frac{1-x_j}{\sum_{k\lt j}x_k} }
-N
-x_{ij}
-j=0
-x
-x
-j=x
-j
-\log(N-j)
-j<x
-0
-j\ge x
-x
- (x_{ij})= \left[ \begin{matrix} \tfrac1N &       0      &       0      &    0   &\cdots\cr \tfrac1N & \tfrac1{N-1} &       0      &    0   &\cdots\cr \tfrac1N & \tfrac1{N-1} & \tfrac1{N-2} &    0   &\cdots\cr \tfrac1N & \tfrac1{N-1} & \tfrac1{N-2} &    1   &\cdots\cr  \vdots  &    \vdots    &    \vdots    & \vdots &\cdots\cr \tfrac1N & \tfrac1{N-1} & \tfrac1{N-2} &    0   &\cdots\cr \end{matrix} \right] 

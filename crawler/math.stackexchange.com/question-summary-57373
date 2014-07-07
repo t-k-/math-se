@@ -1,28 +1,0 @@
-p
-a_1,a_2 \cdots a_k
-k \geq 3
-p
-p
-(b)_p
-b
-p
-|S|< \frac{2p}{k+1}
- S= \{ n \mid 1 \leq n \leq p-1, (na_1)_p < \cdots < (na_k)_p \} 
-a_0 = 0
-a_{k+1} = p
-\{a_i\}
-\{b_l\}_{l=0}^k
-b_l = a_{l+1}- a_l
-n \in S
-\begin{align} \sum_{l=0}^k (n b_l)_p = {} & (na_1)_p + \left((na_2)_p - (na_1)_p\right) + \\  {} & \cdots + \left( (na_k)_p - \left(na_{k-1} \right)_p \right) + \left(p - (na_k)_p\right) \\ = {} & p \end{align}
-T = \sum_{n \in S}\sum_{l=0}^k (n b_l)_p
-T = \sum_{n \in S}\sum_{l=0}^k (n b_l)_p = \sum_{n \in S} p = p |S|
-0 \leq l \leq k
-n_1, n_2 \in S
-n_1 \neq n_2
-n_1b_l \not\equiv n_2b_l \mod p
-(nb_l)_p
-l
- \begin{align*} T = & \sum_{n \in S}\sum_{l=0}^k (n b_l)_p = \sum_{l=0}^k\sum_{n \in S} (n b_l)_p \geq \sum_{l = 0}^k \sum_{m = 1}^{|S|} m = \frac{(k+1)|S|(|S|+1)}{2} \end{align*} 
-p|S| = T \geq \frac{(k+1)|S|(|S|+1)}{2}
-\frac{2p}{k+1} \geq |S| + 1 >  |S|

@@ -1,34 +1,0 @@
-M
-\min_q \frac{1}{2} \|q-q_0\|_M^2\qquad \text{s.t.}\qquad C^Tq+c_0 = 0,
-q_0, c_0
-C
-C
-q
-\left[\begin{array}{cc}M & C\\C^T & 0\end{array}\right]\left[\begin{array}{c}q\\ \lambda\end{array}\right] = \left[\begin{array}{c} Mq_0 \\-c_0\end{array}\right]
-\lambda
-M
-C^T M^{-1} C
-C^T M^{-1} C\lambda = C^Tq_0 + c_0
-q = q_0 - M^{-1} C\lambda.
-C^T q + c_0 = 0
-C^T q + \delta r + c_0 = 0
-\delta > 0
-10^{-6}
-10^{-8}
-r
-\delta^2 \|r\|^2
- \begin{bmatrix} C^T & \delta I \end{bmatrix} 
-\bar{q}_0
-C^T q + c_0 = 0
-\bar{q} := q - \bar{q}_0
-C
-\lambda
-\bar{q} = q_0 - \bar{q}_0 - M^{-1} C \lambda
-q = \bar{q} + \bar{q}_0
- \begin{bmatrix}  M & C \\  C^T & 0 \end{bmatrix} \begin{bmatrix}  \bar{q} \\ \lambda \end{bmatrix} = \begin{bmatrix}  M(q_0 - \bar{q}_0) \\ 0 \end{bmatrix}. 
-  \min_{\lambda} \ \tfrac{1}{2} \| C \lambda - M(q_0 - \bar{q}_0) \|_{M^{-1}}^2. 
-M
-M
-I
-M
-C^T

@@ -1,75 +1,0 @@
-x \in \mathbb{R}
-[x] =n
- n \leq x <n+1
-[mx] = [x] + \left[x+\frac{1}{m}\right] +\left[x+\frac{2}{m}\right] + \cdots + \left[x+\frac{(m-1)}{m}\right] 
-n
-n+1
-\{x\} \in [0,1)
-\{x\}
-m\{x\} \in [0,m)
-[0,1) [1,2) \ldots [m-1,m)
-[0,\frac{1}{m}) [\frac{1}{m},\frac{2}{m}) \ldots [\frac{m-1}{m},1)
-\frac{1}{m}
-n+1
-n
-0\le n<m
-\frac{n}m\le\{x\}<\frac{n+1}m
-x+\frac{k}m
-0\le k<m
-x+\frac{k}m=\lfloor x\rfloor +\{x\}+\frac{k}m\;,
-\lfloor x\rfloor+\frac{n+k}m\le x+\frac{k}m<\lfloor x\rfloor +\frac{n+1+k}m\;.\tag{1}
-(1)
-\left\lfloor x+\frac{k}m\right\rfloor
-k
-\lfloor x\rfloor
-\lfloor x\rfloor+1
-\lfloor mx\rfloor=\big\lfloor m(\lfloor x\rfloor+\{x\})\big\rfloor
-\lfloor x\rfloor\le\lfloor x\rfloor+\frac{n}m\le \lfloor x\rfloor+\frac{n+k}m\le x+\frac{k}m<\lfloor x\rfloor+\frac{n+k+1}m=\lfloor x\rfloor+1\;;
-\lfloor x\rfloor\le x+\frac{k}m<\lfloor x\rfloor+1\;,
-\left\lfloor x+\frac{k}m\right\rfloor=\lfloor x\rfloor\;.\tag{2}
-m-n\le k\le m-1
-(1)
-\lfloor x\rfloor+1\le\lfloor x\rfloor+\frac{n+k}m\le x+\frac{k}m<\lfloor x\rfloor+\frac{n+1+k}m\le\lfloor x\rfloor+\frac{n+m}m<\lfloor x\rfloor+2
-\left\lfloor x+\frac{k}m\right\rfloor=\lfloor x\rfloor +1\;.\tag{3}
-(2)
-m-n
-k
-(3)
-n
-k
-\begin{align*}\sum_{k=0}^{m-1}\left\lfloor x+\frac{k}m\right\rfloor&=(m-n)\lfloor x\rfloor+n(\lfloor x\rfloor+1)\\ &=m\lfloor x\rfloor+n\;. \end{align*}
-\begin{align*} \lfloor mx\rfloor&=\big\lfloor(m\lfloor x\rfloor+\{x\})\big\rfloor\\ &=\big\lfloor m\lfloor x\rfloor+m\{x\}\big\rfloor\\ &=m\lfloor x\rfloor+\lfloor m\{x\}\rfloor\;, \end{align*}
-m\lfloor x\rfloor
-\lfloor m\{x\}\rfloor=n
-n
-m\in\mathbb{Z}
-k\in\mathbb{Z}
-\lfloor x\rfloor-k=\lfloor x-k\rfloor
-m\lfloor x\rfloor\in\mathbb{Z}
-0\le x-\lfloor x\rfloor<1
-0\le\lfloor m(x-\lfloor x\rfloor)\rfloor\le m-1
-k\in\mathbb{Z}
- f_m(x)=\lfloor mx\rfloor-m\lfloor x\rfloor\tag{1} 
- \begin{align} f_m(x) &=\lfloor mx\rfloor-m\lfloor x\rfloor\\ &=\lfloor mx-m\lfloor x\rfloor\rfloor\\ &=\lfloor m(x-\lfloor x\rfloor)\rfloor\tag{2} \end{align} 
- 0\le f_m(x)\le m-1\tag{3} 
- \begin{align} f_m\left(x+\frac{k}{m}\right) &=\left\lfloor m\left(x+\frac{k}{m}\right)\right\rfloor-m\left\lfloor x+\frac{k}{m}\right\rfloor\\ &=\left\lfloor mx\vphantom{\frac{k}{m}}\right\rfloor+k-m\left\lfloor x+\frac{k}{m}\right\rfloor\\ &\equiv\lfloor mx\rfloor+k-m\lfloor x\rfloor\pmod{m}\\ &=f_m(x)+k\tag{4} \end{align} 
-(3)
-(4)
-k=0,1,\dots,m-1
-f_m\left(x+\frac{k}{m}\right)
-0,1,\dots,m-1
-(5)
-(1)
-(6)
-(5)
-\!\!\!\pmod{m}
- \sum_{k=0}^{m-1}f_m\left(x+\frac{k}{m}\right)=\frac{m(m-1)}{2}\tag{5} 
- \begin{align} \frac{m(m-1)}{2} &=\sum_{k=0}^{m-1}\left\lfloor m\left(x+\frac{k}{m}\right)\right\rfloor-m\left\lfloor x+\frac{k}{m}\right\rfloor\\ &=\sum_{k=0}^{m-1}\left\lfloor mx\vphantom{\frac{k}{m}}\right\rfloor+k-m\left\lfloor x+\frac{k}{m}\right\rfloor\\ &=m\lfloor mx\rfloor+\frac{m(m-1)}{2}-\sum_{k=0}^{m-1}m\left\lfloor x+\frac{k}{m}\right\rfloor\tag{6} \end{align} 
- \lfloor mx\rfloor=\sum_{k=0}^{m-1}\left\lfloor x+\frac{k}{m}\right\rfloor\tag{7} 
-x
-m
-\:m = 10\:
-\:x = 12.34\:
-\qquad \lfloor 12.{\color{red}3}4\rfloor + \lfloor 12.44\rfloor + \lfloor 12.54\rfloor +\:\cdots\:+ \lfloor {\color{red}{13.04}}\rfloor + \lfloor {\color{red}{13.14}}\rfloor + \lfloor {\color{red}{13.24}} \rfloor 
-\quad =\ 10\cdot 12 + {\color{red}3}\ =\ \lfloor 10\cdot 12.34 \rfloor
-m

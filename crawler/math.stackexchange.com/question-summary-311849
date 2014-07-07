@@ -1,9 +1,0 @@
- \int_0^\infty e^{-x^2} \cos^n(x) dx
-n \in \mathbb{N}
-\cos^n(x)=\left(\frac{e^{ix}+e^{-ix}}{2}\right)^n = \frac{1}{2^n e^{inx}}(1+e^{2ix})^n = \frac{1}{2^n e^{inx}}\sum_{r=0}^n \binom{n}{r}e^{2irx}
-\begin{aligned}\int_{-\infty}^\infty e^{-x^2}\cos^n(x)dx &=\int_{-\infty}^\infty e^{-x^2}\frac{1}{2^n e^{inx}}\sum_{r=0}^n \binom{n}{r}e^{2irx} dx \\ &=\frac{1}{2^n}\sum_{r=0}^n \binom{n}{r}\int_{-\infty}^\infty e^{-x^2+(2ir-in)x}dx\end{aligned}
-\int_{-\infty}^\infty e^{-x^2+bx+c}dx=\sqrt{\pi}e^{b^2/4+c}
-\int_{-\infty}^\infty e^{-x^2}\cos^n(x)dx= \frac{\sqrt{\pi}}{2^n}\sum_{r=0}^n \binom{n}{r}\exp\left({\frac{-(2r-n)^2}{4}}\right)
-\int_0^\infty e^{-x^2}\cos^n(x)dx=\boxed{\displaystyle \frac{\sqrt{\pi}}{2^{n+1}}\sum_{r=0}^n \binom{n}{r}\exp\left({\frac{-(2r-n)^2}{4}}\right)}
- I = \frac{\sqrt{\pi}}{2^n} \sum_{k=0}^{(n-1)/2} \binom{n}{k} e^{-\frac{1}{4}(n-2 k)^2}  \qquad n \text{ odd} 
- I = \frac{\sqrt{\pi}}{2^{n+1}} \binom{n}{n/2} + \frac{\sqrt{\pi}}{2^n} \sum_{k=0}^{n/2-1} \binom{n}{k} e^{-\frac{1}{4}(n-2 k)^2} \qquad n \text{ even} 

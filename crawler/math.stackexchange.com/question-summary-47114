@@ -1,33 +1,0 @@
-A
-B
-D
-x \in R^m
-y \in R^n
-A
-D
- A x + B y = \lambda x 
- B^T x + D y = \mu y 
-\lambda
-\mu
- \min x^T A x + y^T D y + x^T By 
- \textrm{such that } \, x^T x = 1 , y^T y = 1 
-A
-B
-D
-u = \begin{pmatrix}x\\y\end{pmatrix}
-u^TQu
-Q = \begin{pmatrix}A & B/2\\B^T/2 & D\end{pmatrix}
-u^TM_1u = 1
-u^TM_2u = 1
-\alpha\in(0,1)
-M = \alpha M_1 + (1-\alpha)M_2
-u^TMu = 1
-R = \sqrt{M}
-M
-v = Ru
-v^Tv = 1
-v^TQ'v
-Q' = R^{-1}QR^{-1}
-Q'
-\alpha\in(0,1)
-B=0

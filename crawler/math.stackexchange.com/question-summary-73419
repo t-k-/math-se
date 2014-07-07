@@ -1,20 +1,0 @@
-\{X_n\}
-X
-\{Y_n\}
-0
-\{X_n + Y_n\}
-X
-f\colon \mathbb{R}\to \mathbb{R}
-\mathbb{E}[f(X_n+Y_n)]\to \mathbb{E}[f(X)]
-\mathbb{E}[f(X_n+Y_n)]=\mathbb{E}[f(X_n+Y_n)-f(X_n)]+\mathbb{E}[f(X_n)]
-X_n\to X
-\mathbb{E}[f(X_n+Y_n)-f(X_n)]\to 0
-\delta >0
-   \begin{multline*}     \mathbb{E}[|f(X_n+Y_n)-f(X_n)|]     =\\=     \mathbb{E}[|f(X_n+Y_n)-f(X_n)|I_{\{|Y_n|>\delta\}}]     +     \mathbb{E}[|f(X_n+Y_n)-f(X_n)|I_{\{|Y_n|\leq \delta\}}]   \end{multline*} 
-Y_n\to 0
-M=\sup|f|
-\epsilon >0
-\delta
-f
-   \mathbb{E}[|f(X_n+Y_n)-f(X_n)|I_{\{|Y_n|>\delta\}}]   <   2M \mathbb{P}[|Y_n|>\delta]\to 0, 
-   \mathbb{E}[|f(X_n+Y_n)-f(X_n)|I_{\{|Y_n|\leq \delta\}}]   <   \epsilon 

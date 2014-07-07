@@ -1,31 +1,0 @@
-\displaystyle T(n,1)=1, k>1: T(n,k) = \sum\limits_{i=1}^{k-1} T(n-i,k-1)-\sum\limits_{i=1}^{k-1} T(n-i,k)
-\displaystyle T(n,1)=1, T(1,k)=1, n>=k: -\sum\limits_{i=1}^{k-1} T(n-i,k), n<k: -\sum\limits_{i=1}^{n-1} T(k-i,n)
-\displaystyle T(n,k) = \begin{bmatrix} +1&+1&+1&+1&+1&+1&+1 \\ +1&-1&+1&-1&+1&-1&+1 \\ +1&+1&-2&+1&+1&-2&+1 \\ +1&-1&+1&-1&+1&-1&+1 \\ +1&+1&+1&+1&-4&+1&+1 \\ +1&-1&-2&-1&+1&+2&+1 \\ +1&+1&+1&+1&+1&+1&-6 \end{bmatrix}
-\displaystyle \sum\limits_{k=1}^{\infty}\frac{T(n,k)}{k}
-\;
-\Lambda(n)
-1, 2, 3, 2, 5, 1, 7, 2, 3, 1, 11, 1, 13, 1, 1...
-\varphi (n) =   n\lim\limits_ {s \rightarrow 1}\zeta (s)\sum\limits_ {d | n}\mu (d) (e^{1/d})^{(s - 1)}
-a(n) = \lim\limits_{s \rightarrow 1} \zeta(s)\sum\limits_{d|n} \mu(d)(e^{d})^{(s-1)}
-\Lambda(n) =\sum\limits_{k=1}^{\infty} \frac{a(GCD(n,k))}{k}
-\Lambda(n)=\lim\limits_{s \rightarrow 1} \zeta(s)\sum\limits_{d|n} \frac{\mu(d)}{d^{(s-1)}}
-\text{Fourier Transform of } \Lambda(n) \sim \sum\limits_{n=1}^{n=k} \frac{1}{n} \zeta(1/2+i \cdot t)\sum\limits_{d|n} \frac{\mu(d)}{d^{(1/2+i \cdot t-1)}}
-n\neq1
-T(n,1)=T(1,k)=\sum_{d\mid1}\mu(d)d=\mu(1)=1
-T(n,k)
-k
-n
-n\ge k
- \begin{eqnarray} \sum_{d\mid\gcd(n,k)}\mu(d)d-T(n,k) &=& \sum_{d\mid\gcd(n,k)}\mu(d)d+\sum_{i=1}^{k-1}T(n-i,k) \\ &=& \sum_{d\mid\gcd(n,k)}\mu(d)d+\sum_{i=1}^{k-1}\sum_{d\mid\gcd(n-i,k)}\mu(d)d \\ &=& \sum_{i=0}^{k-1}\sum_{d\mid\gcd(n-i,k)}\mu(d)d \;. \end{eqnarray} 
-d
-k
-k/d
-(k/d)\mu(d)d=\mu(d)k
-\sum_{d|k}\mu(d)k=k\sum_{d|k}\mu(d)=0\;,
-\sum_{k=1}^{\infty}\frac1k\sum_{d|\gcd(n,k)}\mu(d)dx^k
-x=1
- \begin{eqnarray} \sum_{k=1}^{\infty}\frac1k\sum_{d|\gcd(n,k)}\mu(d)dx^k &=& \sum_{d|n}\mu(d)d\sum_{k=1\atop d|k}^{\infty}\frac{x^k}k \\ &=& \sum_{d|n}\mu(d)d\sum_{l=1}^{\infty}\frac{x^{ld}}{ld} \\ &=& \sum_{d|n}\mu(d)\sum_{l=1}^{\infty}\frac{(x^d)^l}l \\ &=& -\sum_{d|n}\mu(d)\log\left(1-x^d\right)\;. \end{eqnarray} 
-\sum_{d|n}\mu(d)=0
-n\neq1
--\sum_{d|n}\mu(d)\log\left(1-x^d\right)=-\sum_{d|n}\mu(d)\log\left(\frac{1-x^d}{1-x}\right)=-\sum_{d|n}\mu(d)\log\left(\sum_{j=0}^{d-1}x^j\right)\;,
--\sum_{d|n}\mu(d)\log d=\Lambda(n)

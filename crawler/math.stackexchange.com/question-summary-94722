@@ -1,130 +1,0 @@
- n! \sim \sqrt{2 \pi} n^{n+(1/2)}e^{-n}
-C
-C = \sqrt{2 \pi}
-\lim_{n \to \infty} \frac{n!}{n^{n+(1/2)}e^{-n}} = C
-t>0
-g_t(y)=\cases{\displaystyle\left({1+{y\over\sqrt{t}}}\right)^{\!t} e^{-y\,\sqrt{t}}& \text{if }y>-\sqrt{t} \cr 0&\text{otherwise.}}
-t\mapsto g_t(y)
-y\geq 0
-y\leq 0
-g_\infty(y)=\exp(-y^2/2)
-\lim_{t\to\infty}\int_{-\infty}^\infty g_t(y)\,dy = \int_{-\infty}^\infty \exp(-y^2/2)=\sqrt{2\pi}.
-x=y\sqrt{t}+t
-t!=\int_0^\infty x^t e^{-x}\,dx= \left({t\over e}\right)^t \sqrt{t} \int_{-\infty}^\infty g_t(y)\,dy.
-u^2/2=x-\log(1+x)
-\lim\limits_{u\to+\infty}\dfrac{x'(u)}{u}=1
-\lim\limits_{u\to-\infty}\dfrac{x'(u)}{ue^{-u^2/2}}=-1
-x'(u)=O(u)
-|u|
-\infty
- u(1+x)=xx'\tag{2} 
-x
-x(0)=0
-x'(0)=1
-a_1=1
-u^n
-(2)
-x(u)
-k\ge1
-(8)
-O\left(\frac{1}{n}e^{-na^2/2}\right)
-k\ge0
-n
- x=\sum_{k=1}^\infty a_ku^k\tag{3} 
- \begin{align} a_{n-1} &=\sum_{k=1}^na_{n-k+1}ka_k\\ &=\sum_{k=1}^na_k(n-k+1)a_{n-k+1}\\ &=\frac{n+1}{2}\sum_{k=1}^na_ka_{n-k+1}\tag{4} \end{align} 
- a_n=\frac{a_{n-1}}{n+1}-\frac{1}{2}\sum_{k=2}^{n-1}a_ka_{n-k+1}\tag{5} 
- x=u+\tfrac{1}{3}u^2+\tfrac{1}{36}u^3-\tfrac{1}{270}u^4+\tfrac{1}{4320}u^5+\tfrac{1}{17010}u^6-\tfrac{139}{5443200}u^7+\tfrac{1}{204120}u^8+\dots\tag{6} 
- \int_{-\infty}^\infty e^{-nu^2}|u|^{2k+1}\;\mathrm{d}u=\frac{k!}{n^{k+1}}\tag{7a} 
- \int_{-\infty}^\infty e^{-nu^2}u^{2k}\;\mathrm{d}u=\frac{(2k-1)!!}{2^kn^{k+1/2}}\sqrt{\pi}\tag{7b} 
- \begin{align} \int_{|u|>a}e^{-nu^2}\;\mathrm{d}u &=\int_a^\infty e^{-nu^2}u^{-1}\;\mathrm{d}u^2\\ &=\int_{a^2}^\infty e^{-nu}u^{-1/2}\;\mathrm{d}u\\ &\le\frac{1}{a}\int_{a^2}^\infty e^{-nu}\;\mathrm{d}u\\ &=\frac{1}{na}\int_{na^2}^\infty e^{-u}\;\mathrm{d}u\\ &=\frac{1}{na}e^{-na^2}\tag{8a} \end{align} 
- \begin{align} \int_{|u|>a}e^{-nu^2}|u|^{k}\;\mathrm{d}u &=\int_a^\infty e^{-nu^2}u^{k-1}\;\mathrm{d}u^2\\ &=\int_{a^2}^\infty e^{-nu}u^{(k-1)/2}\;\mathrm{d}u\\ &=n^{-(k+1)/2}\int_{na^2}^\infty e^{-u}u^{(k-1)/2}\;\mathrm{d}u\\ &=n^{-(k+1)/2}\int_{na^2}^\infty e^{-u/2}e^{-u/2}u^{(k-1)/2}\;\mathrm{d}u\\ &\le n^{-(k+1)/2}\int_{na^2}^\infty e^{-u/2}\left(\frac{k-1}{e}\right)^{(k-1)/2}\;\mathrm{d}u\\ &=\frac{2}{n}\left(\frac{k-1}{ne}\right)^{(k-1)/2}e^{-na^2/2}\tag{8b} \end{align} 
-x(u)
-u=0
-f_k(u)=O\left(u^{2k}\right)
-u=0
-x'(u)=O(u)
-|u|
-\infty
-f_k(u)=O\left(u^{2k-1}\right)
-|u|
-\infty
-\mathrm{(7b)}
-(10)
- f_k(u)=x'(u)-a_1-2a_2u-\dots-2ka_{2k}u^{2k-1}\tag{9} 
- \begin{align} \int_{-\infty}^\infty e^{-nu^2/2}f_k(u)\;\mathrm{d}u &=\int_{|u|< a}e^{-nu^2/2}f_k(u)\;\mathrm{d}u + \int_{|u|> a}e^{-nu^2/2}f_k(u)\;\mathrm{d}u\\ &\le\int_{|u|< a}e^{-nu^2/2}C_1u^{2k}\;\mathrm{d}u + \int_{|u|> a}e^{-nu^2/2}C_2|u|^{2k-1}\;\mathrm{d}u\\ &=O\left(\frac{1}{n^{k+1/2}}\right)\tag{10} \end{align} 
- \begin{align} n! &=n^{n+1}e^{-n}\int_{-\infty}^\infty e^{-nu^2/2}\left(1+\tfrac{1}{12}u^2+\tfrac{1}{864}u^4-\tfrac{139}{777600}u^6+f_4(u)\right)\;\mathrm{d}u\\ &+\;n^{n+1}e^{-n}\int_{-\infty}^\infty e^{-nu^2/2}\left(\tfrac{2}{3}u-\tfrac{2}{135}u^3+\tfrac{1}{2835}u^5+\tfrac{1}{25515}u^7\right)\;\mathrm{d}u\\ &=\sqrt{2n}\;n^ne^{-n}\left(\int_{-\infty}^\infty e^{-u^2}\left(1+\tfrac{1}{6n}u^2+\tfrac{1}{216n^2}u^4-\tfrac{139}{97200n^3}u^6\right)\;\mathrm{d}u+O\left(\frac{1}{n^4}\right)\right)\\ &=\sqrt{2\pi n}\;n^ne^{-n}\left(1+\frac{1}{12n}+\frac{1}{288n^2}-\frac{139}{51840n^3}+O\left(\frac{1}{n^4}\right)\right)\tag{11} \end{align} 
-n=1,2,3,\dots
-n
- 1+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}-\ln(n)
-n=0,1,2,\dots
-I_n=\int_0^{\pi/2} \sin^n(x)\,dx
-\frac{d}{dx}\left(\cos(x)\sin^{n-1}(x)\right) = (n-1)\sin^{n-2}(x)-n\sin^n(x)
-I_n = \frac{n-1}{n}I_{n-2}
-n \geq 2
-I_{2n} = \frac{1\cdot 3\cdot 5\cdots (2n-1)}{2\cdot 4\cdot 6\cdots (2n)}\frac{\pi}{2}
-I_{2n+1} = \frac{2\cdot 4\cdot 6\cdots (2n)}{3\cdot 5\cdot 7\cdots (2n+1)}
-n=1,2,3,\dots
-I_0, I_1, I_2, \dots
- \lim_{n \to \infty} \frac{I_{2n+1}}{I_{2n}}=1
-\lim_{n \to \infty} \frac{2\cdot 2\cdot 4\cdot 4\cdot 6\cdot 6 \cdots (2n)\cdot (2n)}{1\cdot 3\cdot 3\cdot 5\cdot 5\cdot 7 \cdots (2n-1)\cdot (2n+1)}=\frac{\pi}{2}
-f:\{ x\in \mathbb{R}\;|\; x\geq 1\} \to \mathbb{R}
- \sum\limits_{i=1}^n f(i) = \int_1^{n+1} f(x)\,dx + \sum\limits_{i=1}^n\left(f(i)-\int_i^{i+1} f(x)\,dx\right)
-f=\ln
-\lim_{n \to \infty} \left(\ln(n!)-\left(n+\frac{1}{2}\right)\ln(n)+n\right)
- \lim_{n\to \infty} \frac{n!}{n^ne^{-n}\sqrt{2\pi n}}=1
-e^{-n} n^n/n!
-n
-Y
-n
-k
-\mathbb{P} (Y=k) = e^{-n} n^k/k!
-k=n
-\mathbb{P} (Y=n) = e^{-n} n^n/n!
-n
-1
-n
-(X_k)
-1
-\mathbb{E} (X_0) = 1
-\mathbb{P} \left( \sum_{k=0}^{n-1} (X_k - \mathbb{E} (X_k)) = 0 \right) = \frac{e^{-n} n^n}{n!}.
-e^{-n} n^n/n!
-1
-0
-n
-\frac{e^{-n} n^n}{n!} = \mathbb{P} \left( \sum_{k=0}^{n-1} (X_k - \mathbb{E} (X_k)) = 0 \right) \sim \frac{1}{\sqrt{2 \pi n \text{Var} (X_0)}},
-X_0
-1
-n! \sim \sqrt{2 \pi n} n^n e^{-n}.
-0
-1
-\mathbb{E} (e^{t X_0}) = e^{e^t-1},
-\sum_{n \geq 0} n! z^n
-z
-e^z = \sum_{n \geq 0} \frac{z^n}{n!};
-\gamma
-0
-n
-\frac{1}{n!} = \frac{1}{n!} \frac{\text{d} e^z}{\text{d} z}_{|_0} = \frac{1}{2 \pi i} \oint_\gamma \frac{e^z}{z^{n+1}} \text{d} z.
-\gamma
-n
-0
-z (t) = n e^{it}
-\frac{1}{n!} = \frac{1}{2 \pi i} \int_{- \pi}^{\pi} \frac{e^{n e^{it}}}{n^{n+1} e^{(n+1)it}} nie^{it} \text{d} t = \frac{e^n}{2 \pi n^n} \oint_{- \pi}^{\pi} e^{n (e^{it}-it-1)} \text{d} t = \frac{e^n}{2 \pi \sqrt{n} n^n} \int_{- \pi \sqrt{n}}^{\pi \sqrt{n}} e^{n \left((e^{i\frac{\theta}{\sqrt{n}}}-i\frac{\theta}{\sqrt{n}}-1\right)} \text{d} \theta,
-\theta =t \sqrt{n}
-x
-0
-e^x-x-1
-x^2/2
-- \infty
- \infty
-n
-\frac{1}{n!} \sim \frac{e^n}{2 \pi \sqrt{n} n^n} \int_{- \infty}^{+ \infty} e^{\frac{n}{2} \left(\frac{i\theta}{\sqrt{n}}\right)^2} \text{d} \theta = \frac{e^n}{2 \pi \sqrt{n} n^n} \int_{- \infty}^{+ \infty} e^{-\frac{\theta^2}{2}} \text{d} \theta = \frac{e^n}{\sqrt{2 \pi n} n^n}.
-n!
-e^x-x-1
-0
-\mathop {\lim }\limits_{n \to \infty } \frac{{\left( {2n} \right)!!}}{{\left( {2n - 1} \right)!!}}\frac{1}{{\sqrt n }} = \sqrt \pi  
-\eqalign{   & \mathop {\lim }\limits_{n \to \infty } \frac{{\left( {2n} \right)!{!^2}}}{{\left( {2n} \right)!}}\frac{1}{{\sqrt n }} = \sqrt \pi    \cr    & \mathop {\lim }\limits_{n \to \infty } \frac{{{2^{2n}}{{\left( {n!} \right)}^2}}}{{\left( {2n} \right)!}}\frac{1}{{\sqrt n }} = \sqrt \pi   \cr} 
-\alpha  = \mathop {\lim }\limits_{n \to \infty } \frac{{n!{e^n}}}{{{n^n}\sqrt n }} = \mathop {\lim }\limits_{n \to \infty } \frac{{\left( {2n} \right)!{e^{2n}}}}{{{{\left( {2n} \right)}^{2n}}\sqrt {2n} }}
-\alpha  = \mathop {\lim }\limits_{n \to \infty } \frac{{{{\left( {n!} \right)}^2}{e^{2n}}}}{{{n^{2n}}n}}\frac{{{{\left( {2n} \right)}^{2n}}\sqrt {2n} }}{{\left( {2n} \right)!{e^{2n}}}} = \mathop {\lim }\limits_{n \to \infty } \frac{{{{\left( {n!} \right)}^2}{2^{2n}}\sqrt 2 }}{{\left( {2n} \right)!\sqrt n }} = \sqrt {2\pi } 
-\mathop {\lim }\limits_{n \to \infty } \frac{{n!{e^n}}}{{{n^n}\sqrt {2n} }} = \sqrt \pi  
-n! \sim {n^n}{e^{ - n}}\sqrt {2\pi n} 

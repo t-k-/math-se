@@ -1,39 +1,0 @@
-A
-\mathbb{R}^2
-A = \left\{(x,y)\left| x \gt 1\text{ and }0\lt y\lt\frac{1}{x}\right.\right\}.
-\int\!\!\int_A\left(\frac{1}{x}\right)y^{1/2}dA
-x
-1
-\infty
-y
-0
-\frac{1}{x}
-1
-\infty
-1/x\; dx
-1
-1/x
-y^{1/2}\; dy
-1
-\infty
-\left(\frac{2}{3}\left(\frac{1}{x}\right)^{3/2}-\frac{2}{3}\right)\frac{1}{x}\,dx
-y
-0
-\frac1x
-1
-\frac1x
-\begin{align*} \int_A\left(\frac1x\right)y^{1/2}dA&=\int_1^\infty\int_0^{1/x}\left(\frac1x\right)y^{1/2}dydx\\ &=\frac23\int_1^\infty\left(\frac1x\right)[y^{3/2}]_0^{1/x}dx\\ &=\frac23\int_1^\infty\left(\frac1x\right)\left(\frac1x\right)^{3/2}dx \end{align*}
-\frac23\left(\frac1x\right)^{3/2}-\frac23
-\frac23\left(\frac1x\right)^{3/2}
-\frac23\int_1^\infty\left(\frac1x\right)\left(\frac1x\right)^{3/2}dx=\frac23\int_1^\infty x^{-5/2}dx
-\frac23\lim_{a\to\infty}\int_1^a x^{-5/2}dx\;.
-A_M
-1\le x\le M
-\dfrac{2}{3x^{5/2}}.
-\iint_{A_M}\frac{y^{1/2}}{x}dA=\int_{x=1}^M \left(\int_{y=0}^{1/x} \frac{y^{1/2}}{x} dy\right) dx.
-x
-1
-M
-M\to\infty
-\dfrac{4}{9}
-\frac{4}{9}\left(1-\frac{1}{M^{3/2}}\right).

@@ -1,27 +1,0 @@
-x^n - y^n = (x-y)(x^{n-1} + x^{n-2} y + ... + x y^{n-2} + y^{n-1})
-\begin{align*} x^n - y^n &= (x - y)(x^{n-1} + x^{n-2}y +\cdots+ xy^{n-2} + y^{n-1}) \\           &= x \cdot x^{n-1} + x \cdot x^{n-2} \cdot y + \cdots + x \cdot x \cdot y^{n-2} + x \cdot y^{n-1}\\ &\qquad + (-y) \cdot x^{n-1} + (-y) \cdot x^{n-2} \cdot y + \cdots + (-y) \cdot x \cdot y^{n-2} + (-y) \cdot y^{n-1}\\           &= x^n + x^{n-1} y + \cdots + x^2 y^{n-2} + x y^{n-1} - x^{n-1}y - y^2 x^{n-2}  - \cdots- x y^{n-1} - y^n \\           &= x^n + x^2 y^{n-2} - x^{n-2} y^2 - y^n  \\           &\neq x^n - y^n \end{align*}
-x^n + x^2 y^{n-2} - x^{n-2} y^2 - y^n
-(x−y)\left(x^{n−1}+x^{n−2}y+\cdots+xy^{n−2}+y^{n−1}\right)=\\ =x\cdot x^{n-1}-y\cdot x^{n-1} +x\cdot x^{n−2}y- y\cdot x^{n−2}y+x\cdot x^{n−3}y^2-\cdots\\  \cdots -y\cdot x^2y^{n-3} +x\cdot xy^{n-2}-y \cdot y^{n-1}
-y\cdot x^{n-1}
-x\cdot x^{n−2}y
-x\cdot x^{n-1}
-y\cdot y^{n-1}
-\rm\frac{x^{n+1}-y^{n+1}}{x-y}\: =\ x^n\: +\ y\ \frac{x^n-y^n}{x-y}
-\rm\:x^n + y\: (x^{n-1} + y\: (x^{n-2} +\:\cdots\:))\ =\ x^n + y\: x^{n-1} + y^2\: x^{n-2} + \:\cdots 
-x^2 y^{n-2}
-x \cdot x y^{n-2}
-(-y) \cdot  x^2 y^{n-3}
-(-y) \cdot x^{n-2} y
-x \cdot x^{n-3} y^2
-\left(1+x+x^2+\cdots+x^{n-1}\right)(x-1) = x^n-1
-x=\dfrac{b}{a}
-\eqalign{   & \left( {1 + \frac{b}{a} + \frac{{{b^2}}}{{{a^2}}} +  \cdots  + \frac{{{b^{n - 1}}}}{{{a^{n - 1}}}}} \right)\left( {\frac{b}{a} - 1} \right) = \frac{{{b^n}}}{{{a^n}}} - 1  \cr    & \left( {1 + \frac{b}{a} + \frac{{{b^2}}}{{{a^2}}} +  \cdots  + \frac{{{b^{n - 1}}}}{{{a^{n - 1}}}}} \right)\left( {\frac{{b - a}}{a}} \right) = \frac{{{b^n} - {a^n}}}{{{a^n}}}  \cr    & {a^{n - 1}}\left( {1 + \frac{b}{a} + \frac{{{b^2}}}{{{a^2}}} +  \cdots  + \frac{{{b^{n - 1}}}}{{{a^{n - 1}}}}} \right)\left( {b - a} \right) = {b^n} - {a^n}  \cr    & \left( {{a^{n - 1}} + b{a^{n - 2}} + {b^2}{a^{n - 3}} +  \cdots  + {b^{n - 1}}} \right)\left( {b - a} \right) = {b^n} - {a^n} \cr} 
-\eqalign{   & {x^n} - 1 = \left( {x - 1} \right)\sum\limits_{k = 0}^{n - 1} {{x^k}}   \cr    & \frac{{{b^n}}}{{{a^n}}} - 1 = \left( {\frac{b}{a} - 1} \right)\sum\limits_{k = 0}^{n - 1} {\frac{{{b^k}}}{{{a^k}}}}   \cr    & \frac{{{b^n} - {a^n}}}{{{a^n}}} = \left( {\frac{{b - a}}{a}} \right)\sum\limits_{k = 0}^{n - 1} {\frac{{{b^k}}}{{{a^k}}}}   \cr    & {b^n} - {a^n} = \left( {b - a} \right)\sum\limits_{k = 0}^{n - 1} {{b^k}{a^{n - k - 1}}}  \cr} 
-  \begin{align} x^n &+& x^{n-1} y &+& x^{n-2} y^2 &+& \cdots + x y^{n-1} & \\ &-& x^{n-1} y &-& x^{n-2} y^2 &+& \cdots - x y^{n-1} &+&  y^n \end{align} 
- x^n - y^n = (x-y) \sum_{k=0}^{n-1} x^k y^{n-1-k} 
- \cdots = \left( \sum_{k=0}^{n-1} x^{k+1} y^{n-1-k} \right) + \left( \sum_{k=0}^{n-1} x^{k} y^{n-k} \right)
- \cdots = \left( \sum_{(j-1)=0}^{n-1} x^{(j-1)+1} y^{n-1-(j-1)} \right) + \left( \sum_{k=0}^{n-1} x^{k} y^{n-k} \right)
- \cdots = \left( \sum_{j=1}^{n} x^{j} y^{n-j} \right) + \left( \sum_{k=0}^{n-1} x^{k} y^{n-k} \right)
-j
-k
- \cdots = \left( \sum_{k=1}^{n} x^{k} y^{n-k} \right) + \left( \sum_{k=0}^{n-1} x^{k} y^{n-k} \right)

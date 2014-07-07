@@ -1,159 +1,0 @@
-q
-p
-r=1-p-q
-T
-h(z)
-T
-Y_1,Y_2
-Y_1
-Y_2
-P(T=n)=P(Y_1+Y_2=n)=r_n
-T=n
-n\geq 3
-r_n
-h_T(z)=\sum_{n=1}^\infty r_n z^n
-Y_2
-T
-Y_2
-F (z) = E (z^{Y_2})
-Y_2
-T
-h (z) = \sum_{N=1}^{+ \infty} P (T = N) z^N = \sum_{N=1}^{+ \infty} \sum_{k=0}^{N-1} P (Y_2 = N-k, Y_1 = k) z^N = \sum_{n=1}^{+ \infty} \sum_{k=0}^{+ \infty} P (Y_2 = n, Y_1 = k) z^{n+k}.
-Y_2
-Y_1
-Y_2
-p+q
-Y_1
-Y_2
-Y_2
-h (z) = \sum_{n=1}^{+ \infty} P (Y_2 = n) z^n \sum_{k=0}^{+ \infty} P (Y_1 = k | Y_2 = n) z^k.
-p+q
-g (z) = \sum_{k=0}^{+ \infty} (1-p-q) (p+q)^k z^k = \frac{1-(p+q)}{1-(p+q)z}.
-n
-g^n
-\sum_{k=0}^{+ \infty} P (Y_1 = k | Y_2 = n) z^k = g(z)^n = \left( \frac{1-(p+q)}{1-(p+q)z} \right)^n.
-h
-h (z) = \sum_{n=1}^{+ \infty} P (Y_2 = n) z^n g(z)^n = F (z g(z)) = F \left( \frac{[1-(p+q)]z}{1-(p+q)z} \right).
-F
-P(Y_2=n)= \begin{cases} 0,&\text{if }n\text{ is even}\\ C_mp^mq^{m+1},&\text{if }n=2m+1\;. \end{cases}
-\sum_{n\ge 0}C_nz^n=\frac{1-\sqrt{1-4z}}{2z}\;,
-\sum_{n\ge 0}\binom{m+n}nz^n = \frac1{(1-z)^{m+1}}\;.
-Y_2=2n+1
-m
-\binom{m+2n}m
-\begin{align*} h(z)&=\sum_{n\ge 0}C_np^nq^{n+1}z^{2n+1}\sum_{m\ge 0}\binom{m+2n}mr^mz^m\\ &=qz\sum_{n\ge 0}C_np^nq^nz^{2n}\frac1{(1-rz)^{2n+1}}\\ &=\frac{qz}{1-rz}\sum_{n\ge 0}C_n\left(\frac{pqz^2}{(1-rz)^2}\right)^n\\ &=\frac{qz}{1-rz}\cdot\frac{1-\sqrt{1-\frac{4pqz^2}{(1-rz)^2}}}{\frac{2pqz^2}{(1-rz)^2}}\\ &=\frac{1-\sqrt{1-\frac{4pqz^2}{(1-rz)^2}}}{\frac{2pz}{1-rz}}\\ &=\frac{1-rz-\sqrt{(1-rz)^2-4pqz^2}}{2pz}\;, \end{align*}
-h(0)=h_0=0
-\lim\limits_{z\to 0}\;\;h(z)=0
-h(z)
-0
-z\to 0
-h(z)=\frac{1-rz-\sqrt{(rz-1)^2-4pqz^2}}{2pz}\;.
-h(z)
-h_n(z)=\mathrm E_n(z^T)
-n\geqslant0
-\mathrm E_n
-n
-h(z)=h_1(z)
-h_0(z)=1
-n\geqslant1
-r=1-p-q
-z
-(0,1)
-(x_n)_n=(h_n(z))_n
-x_0=1
-x_n\to0
-n\to\infty
-ax_{n+1}-bx_n+cx_{n-1}=0
-n\geqslant1
-(a,b,c)
- h_n(z)=rzh_n(z)+pzh_{n+1}(z)+qzh_{n-1}(z), 
-x_n=\alpha s_z^n+(1-\alpha)t_z^n
-s_z
-t_z
-Q_z(t)=at^2-bt+c
-a=pz
-b=1-rz
-c=qz
-Q_z(0)=qz\gt0
-Q_z'(0)=-(1-rz)\lt0
-Q_z(1)=-(1-z)\lt0
-0\lt s_z\lt1\lt t_z
-\alpha\ne1
-|x_n|\to\infty
-n\to\infty
-(x_n)_n
-\alpha=1
-x_n=s_z^n
-n\geqslant0
-Q_z(s_z)=0
-0\lt s_z\lt 1
-z
-(0,1)
-h(z)=s_z
-h(z)
-z\to1^-
-\mathrm P_1(T\lt\infty)
-1
-p\leqslant q
-q/p\lt1
-p\gt q
- h(z)=\frac{1-rz-\sqrt{(1-rz)^2-4pqz^2}}{2pz}. 
-i
-p_i
-p_{-1}=q
-p_0=r
-p_1=p
-p_{-1}
-p_i
-i
-n\geqslant1
-0
-n-1
-n-2
-n-1
-0
-1
-n
-h_n(z)=h(z)^n
-n\geqslant1
-h(z)=s_z
- h_n(z)=z\sum\limits_ip_ih_{n+i}(z). 
- h(z)=zp_{-1}+z\sum\limits_{i\geqslant0}p_ih(z)^{i+1}. 
- h(z)=qz+rzh(z)+pzh(z)^2, 
-A\gt B\gt C
-A
-C
-A
-B
-B
-C
-B
-h=z(q+rh+ph^2)
-f
-f=z(qg+r+ph)\;,
-g
--1
-h
-q
--1
-r
-p
-1
-h
-p
-q
-g
-h
-p
-q
-f
-f=1-\sqrt{(1-rz)^2-4pqz^2}\;.
-F
-f
-F=\frac1{1-f}\;.
-F=1+f+f^2+\dotso=\frac1{1-f}\;.
-F=\frac1{\sqrt{(1-rz)^2-4pqz^2}}\;.
-H
-0
-1
-H=hF=\frac1{2pz}\left(\frac{1-rz}{\sqrt{(1-rz)^2-4pqz^2}}-1\right)\;.

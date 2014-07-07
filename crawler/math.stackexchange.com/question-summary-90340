@@ -1,120 +1,0 @@
- (p \to (q \to r)) \to ((p \to q) \to (p \to r)) 
- \begin{align} & p \to (q \to p) \\ & (p \to (p \to q)) \to (p \to q) \\ & (p \to q) \to ((q \to r) \to (p \to r)) \\ & (\sim p \to \, \sim q) \to (q \to p) \\ \end{align} 
- \begin{align} & p \to (q \to p) \\ & (p \to (q \to r)) \to ((p \to q) \to (p \to r)) \\ & ( \sim p  \to  \, \sim q) \to (q \to p) \\ \end{align} 
-80000
- \begin{array}{c|l|l} \mathbf I&\text{self-implication}&p\to p\\ \mathbf K&\text{weakening}& p \to (q \to p) \\ \hline \mathbf B&\text{prefixing}& (p \to q) \to ((r \to p) \to (r \to q)) \\ \mathbf A&\text{suffixing}& (p \to q) \to ((q \to r) \to (p \to r)) \\ \hline \mathbf W&\text{contraction}& (p \to (p \to q)) \to (p \to q) \\ \mathbf S&\text{self-distribution}&(p \to (q \to r)) \to ((p \to q) \to (p \to r))\\ \hline \mathbf C&\text{permutation}&(p\to(q\to r))\to(q\to(p\to r))\\ &\text{assertion}&p\to((p\to q)\to q) \end{array} 
-p
-q
-1
- \begin{array}{c|c|c|c|c} &&A&A\to B&B\\\hline \text{(a)}&\text{weakening}&&&p \to (q \to p)\\ \text{(b)}&\text{suffixing}&&&(p \to q) \to ((q \to r) \to (p \to r))\\ \text{(c)}&\text{contraction}&&&(p \to (p \to q)) \to (p \to q)\\ \hline \text{(d)}&\text{*}&\text{(a)}&\text{(b)}&((p \to q) \to r) \to (q \to r)\\ \text{(e)}&&\text{(b)}&\text{(d)}&p \to ((p \to q) \to (r \to q))\\ \text{(f)}&\text{*}&\text{(e)}&\text{(b)}&(((p \to q) \to (r \to q)) \to s) \to (p \to s)\\ \text{(g)}&\text{assertion}&\text{(c)}&\text{(f)}&p \to ((p \to q) \to q)\\ \text{(h)}&&\text{(g)}&\text{(b)}&(((p \to q) \to q) \to r) \to (p \to r)\\ \text{(i)}&\text{*}&\text{(b)}&\text{(b)}&(((p \to q) \to (r \to q)) \to s) \to ((r \to p) \to s)\\ \text{(j)}&\text{permutation}&\text{(h)}&\text{(i)}&(p \to (q \to r)) \to (q \to (p \to r))\\ \text{(k)}&\text{prefixing}&\text{(b)}&\text{(j)}&(p \to q) \to ((r \to p) \to (r \to q))\\ \text{(l)}&&\text{(k)}&\text{(k)}&(p \to (q \to r)) \to (p \to ((s \to q) \to (s \to r)))\\ \text{(m)}&&\text{(c)}&\text{(k)}&(p \to (q \to (q \to r))) \to (p \to (q \to r))\\ \text{(n)}&\text{*}&\text{(j)}&\text{(b)}&((p \to (q \to r)) \to s) \to ((q \to (p \to r)) \to s)\\ \text{(o)}&&\text{(m)}&\text{(n)}&(p \to (q \to (p \to r))) \to (q \to (p \to r))\\ \text{(p)}&\text{*}&\text{(l)}&\text{(b)}&((p \to ((q \to r) \to (q \to s))) \to t) \to ((p \to (r \to s)) \to t)\\ \text{(q)}&\text{self-distribution}&\text{(o)}&\text{(p)}&(p \to (q \to r)) \to ((p \to q) \to (p \to r))\\ \end{array} 
- \begin{array}{c|l|l} &A&A\to B\\\hline \text{(d)}& p\mapsto q,q\mapsto p& p\mapsto q,q\mapsto (p \to q),r\mapsto r\\ \text{(e)}& p\mapsto r,q\mapsto p,r\mapsto q& p\mapsto r,q\mapsto p,r\mapsto ((p \to q) \to (r \to q))\\ \text{(f)}& p\mapsto p,q\mapsto q,r\mapsto r& p\mapsto p,q\mapsto ((p \to q) \to (r \to q)),r\mapsto s\\ \text{(g)}& p\mapsto (p \to q),q\mapsto q& p\mapsto p,q\mapsto q,r\mapsto (p \to q),s\mapsto ((p \to q) \to q)\\ \text{(h)}& p\mapsto p,q\mapsto q& p\mapsto p,q\mapsto ((p \to q) \to q),r\mapsto r\\ \text{(i)}& p\mapsto r,q\mapsto p,r\mapsto q& p\mapsto (r \to p),q\mapsto ((p \to q) \to (r \to q)),r\mapsto s\\ \text{(j)}& p\mapsto q,q\mapsto r,r\mapsto (p \to r)& p\mapsto (q \to r),q\mapsto r,r\mapsto p,s\mapsto (q \to (p \to r))\\ \text{(k)}& p\mapsto r,q\mapsto p,r\mapsto q& p\mapsto (r \to p),q\mapsto (p \to q),r\mapsto (r \to q)\\ \text{(l)}& p\mapsto q,q\mapsto r,r\mapsto s& p\mapsto (q \to r),q\mapsto ((s \to q) \to (s \to r)),r\mapsto p\\ \text{(m)}& p\mapsto q,q\mapsto r& p\mapsto (q \to (q \to r)),q\mapsto (q \to r),r\mapsto p\\ \text{(n)}& p\mapsto q,q\mapsto p,r\mapsto r& p\mapsto (q \to (p \to r)),q\mapsto (p \to (q \to r)),r\mapsto s\\ \text{(o)}& p\mapsto q,q\mapsto p,r\mapsto r& p\mapsto q,q\mapsto p,r\mapsto (p \to r),s\mapsto (q \to (p \to r))\\ \text{(p)}& p\mapsto p,q\mapsto r,r\mapsto s,s\mapsto q& p\mapsto (p \to (r \to s)),q\mapsto (p \to ((q \to r) \to (q \to s))),r\mapsto t\\ \text{(q)}& p\mapsto p,q\mapsto (p \to q),r\mapsto r& p\mapsto p,q\mapsto p,r\mapsto q,s\mapsto r,t\mapsto ((p \to q) \to (p \to r))\\ \end{array} 
-\;\;\;\;\; p \; \rightarrow \; (q \rightarrow p)
-\;\;\;\;\;(p \rightarrow q) \;\; \rightarrow \;\; [\; (q \rightarrow r) \rightarrow (p \rightarrow r) \; ]
-\;\;\;\;\;[\; p \rightarrow (p \rightarrow q) \; ] \;\; \rightarrow \;\; (p \rightarrow q)
-[p \rightarrow (q \rightarrow r)] \;\; \rightarrow \;\; [(p \rightarrow q) \rightarrow (p \rightarrow r)]
-r
-p \rightarrow (q \rightarrow r),
-p \rightarrow q,
-p.
- p \rightarrow (q \rightarrow r), \; p \rightarrow q, \; p \;\vdash \; r
-\;\;\;p \rightarrow q
-\;\;\;
-\rightarrow [\;(q \rightarrow r) \rightarrow (p \rightarrow r)\;]
-\;\;\;(q \rightarrow r) \rightarrow (p \rightarrow r)
-\;\;\;p \rightarrow (q \rightarrow r)
-\;\;\;p
-\;\;\;q \rightarrow r
-\;\;\;p \rightarrow r
-\;\;\;r
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-\Gamma, \;p \vdash q
-\Gamma \vdash p \rightarrow q
-q
-\Gamma
-p
-p \rightarrow q
-p \rightarrow p
-p \rightarrow r
-p \rightarrow (r \rightarrow q)
-p \rightarrow q
- p \rightarrow r, \; p \rightarrow (r \rightarrow q) \;\vdash \; p \rightarrow q
-\;\;\;p \rightarrow r
-\;\;\;p \rightarrow (r \rightarrow q)
-\;\;\;
-\rightarrow \; [(r \rightarrow q) \rightarrow (p \rightarrow q)]
-\;\;\;(r \rightarrow q) \rightarrow (p \rightarrow q)
-\;\;\;
-\;\;\rightarrow \;\; \{\;
- \rightarrow [p \rightarrow (p \rightarrow q)] \; \}
-\;\;\;
-\;\rightarrow \; [p \rightarrow (p \rightarrow q)]
-\;\;\;p \rightarrow (p \rightarrow q)
-\;\;\;[p \rightarrow (p \rightarrow q)] \; \rightarrow \; (p \rightarrow q)
-\;\;\;p \rightarrow q
-\;\;\;
-\;\;\;
-\;\;\;
-r
-q
-\;\;\;
-\;\;\;
-r
-p \rightarrow q
-\;\;\;
-\;\;\;
-\;\;\;
-\;\;\;
-p \rightarrow (p \rightarrow q).
-p \rightarrow r,
-q
-p
-r
-q
-p \rightarrow (r \rightarrow q).
-p \rightarrow q
-p \rightarrow (p \rightarrow q),
-\;\;\;p,\; q \vdash p\;
-\;p \vdash q \rightarrow p\;
-\;\vdash p \rightarrow (q \rightarrow p)
-\;\;\;p \rightarrow (q \rightarrow r), \; p \rightarrow q, \; p \; \vdash \; r\;\;\;
-\;p \rightarrow (q \rightarrow r), \; p \rightarrow q \; \vdash \; p \rightarrow r\;\;\;
-\;p \rightarrow (q \rightarrow r) \; \vdash \; (p \rightarrow q) \rightarrow (p \rightarrow r)\;\;\;
-\;\vdash \; [p \rightarrow (q \rightarrow r)] \;\; \rightarrow \;\; [(p \rightarrow q) \rightarrow (p \rightarrow r)] \;\;\;
-\mathbf X
-\begin{align} \mathbf X &= \mathbf A (\mathbf A \; \mathbf K \; \mathbf A) \mathbf W \\ \mathbf C &= \mathbf A \; \mathbf A (\mathbf A \; \mathbf X) \\ \mathbf B &= \mathbf C \; \mathbf A \\ \mathbf S &= \mathbf A (\mathbf B \; \mathbf B) \; (\mathbf A \; \mathbf C (\mathbf B \; \mathbf W)) \end{align}
-\mathbf B
-\mathbf{S} = \mathbf{A A} ( \mathbf{A} ( \mathbf{B W} ) ( \mathbf{A A} ) )
- \mathbf S = \mathbf A\; \mathbf A\;(\mathbf A ( \mathbf A \; \mathbf A (\mathbf A \; (\mathbf A (\mathbf A \; \mathbf K \; \mathbf A) \mathbf W) ) \mathbf A \; \mathbf W) \; (\mathbf A\; \mathbf A)) 
-\vdash
-\gamma
-\alpha
-\vdash
-\beta
-\gamma
-\vdash
-\alpha$$\beta
-\phi$$\psi
-\phi
-\psi
-\alpha
-\alpha$$\phi
-\alpha
-\phi$$\psi
-\alpha$$\alpha
-\zeta
-\alpha$$\zeta
-\alpha$$\phi
-\alpha
-\phi$$\psi
-\alpha$$\psi
-\beta$, where we had C$\phi
-\phi$ and C$\alpha$C$\phi
-\alpha$, and every step before detachment gets used consists of an axiom or assumption, both of which I'll denote as $\zeta$.  Since we have CpCqp, we can obtain C$\alpha
-\phi$ and 2. C$\alpha$C$\phi

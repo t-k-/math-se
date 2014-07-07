@@ -1,36 +1,0 @@
-G
-H
-n=[G:H]
-C=\{aH\,|\,a\in G\}.
-n=\operatorname{card}(C).
-g\in G
-\phi_g:C\to C
-\phi_g
-aH=bH,
-gaH=gbH
-g\in G.
-\phi_g(aH)=gaH.
-\phi_g
-gaH=gbH,
-\phi_g
-a,g\in G
-aH=g^{-1}(gaH)=g^{-1}(gbH)=bH.
-aH=g(g^{-1}aH)=\phi_g((g^{-1}a)H).
-\phi_g
-C.
-\{\phi_g\,|\,g\in G\}\subseteq \operatorname{Sym}(n).
-f:G\to\operatorname{Sym}(n)
-f(g)=\phi_g.
-f
-g_1,g_2\in G
-aH\in C
-(f(g_1g_2))(aH)=\phi_{g_1g_2}(aH)=g_1g_2aH=(\phi_{g_1}\circ\phi_{g_2})(aH)=(f(g_1)\circ f(g_1))(aH).
-f
-f_l
-f_r
-G
-H
-\ker f_l\neq \ker f_r?
- \begin{eqnarray} \ker f_l&=&\{g\in G \,|\, \phi_g=\operatorname{id}\}\\&=&\{g\in G\,|\,(\forall a\in G) gaH=aH\}\\&=&\{g\in G\,|\,(\forall a\in G) a^{-1}gaH=H\}\\&=&\{g\in G\,|\,(\forall a\in G) a^{-1}ga\in H\} \end{eqnarray} 
- \ker f_r = \{g\in G\,|\,(\forall a\in G) aga^{-1}\in H\} 
- (\forall a\in G) a^{-1}ga\in H\iff (\forall a\in G) aga^{-1}\in H 

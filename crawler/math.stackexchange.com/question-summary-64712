@@ -1,27 +1,0 @@
-A
-D
- \begin{vmatrix} A_{m \times m} & B_{m \times n}\\  C_{n \times m} & D_{n \times n} \end{vmatrix} = \left | A \right |\left | D-CA^{-1}B \right |  = \left | D \right |\left | A-BD^{-1}C \right | 
-\begin{align*} \begin{bmatrix} A_{m \times m} & B_{m \times n}\\  C_{n \times m} & D_{n \times n} \end{bmatrix} &= \begin{bmatrix} A_{m \times m} & 0_{m \times n}\\  C_{n \times m} & I_{n \times n} \end{bmatrix}  \begin{bmatrix} I_{m \times m} & A^{-1}B_{m \times n}\\  C_{n \times m} & D-CA^{-1}B_{n \times n} \end{bmatrix}\\ &=  \begin{bmatrix} I_{m \times m} & B_{m \times n}\\  0_{n \times m} & D_{n \times n} \end{bmatrix}  \begin{bmatrix} A-BD^{-1}C_{m \times m} & 0_{m \times n}\\  D^{-1}C_{n \times m} & I_{n \times n} \end{bmatrix} \end{align*}
-\begin{bmatrix} A_{m \times m} & 0_{m \times n}\\ C_{n \times m} & I_{n \times n} \end{bmatrix} \begin{bmatrix} I_{m \times m} & A^{-1}B_{m \times n}\\ C_{n \times m} & D-CA^{-1}B_{n \times n} \end{bmatrix}
-\begin{bmatrix} A_{m \times m} & B_{m \times n}\\ C_{n \times m} & D_{n \times n} \end{bmatrix}
- \begin{align*} &\begin{bmatrix} A_{m \times m} & 0_{m \times n}\\ C_{n \times m} & I_{n \times n} \end{bmatrix} \begin{bmatrix} I_{m \times m} & A^{-1}B_{m \times n}\\ C_{n \times m} & D-CA^{-1}B_{n \times n} \end{bmatrix} =\\ &\begin{bmatrix} A_{m \times m}I_{m \times m}+0_{m \times n}C_{n \times m} & A_{m \times m}A^{-1}B_{m \times n}+0_{m \times n}(D-CA^{-1}B_{m \times n})\\ C_{n \times m}I_{m \times m}+I_{m \times m}C_{n \times m} &  C_{n \times m}A^{-1}B_{m \times n}+I_{n \times n}(D-CA^{-1}B_{m \times n}) \end{bmatrix}=\\ &\begin{bmatrix} A_{m \times m} & B_{m \times n}\\\ 2C_{n \times m} & D_{n \times n} \end{bmatrix}\neq \begin{bmatrix} A_{m \times m} & B_{m \times n}\\  C_{n \times m} & D_{n \times n} \end{bmatrix} \end{align*}
-1\times 2\times 3\times 4
-\begin{bmatrix}1&\sin(2.74)&8&-14\\&2&-3&\sqrt{2}\\&&3&\tan(\frac{\pi}{10})\\&&&4 \end{bmatrix} 
-\frac{b}{a}
-BA^{-1}
-A^{-1}B
- \begin{bmatrix} a&b\\c&d \end{bmatrix} 
-c
-[1 \quad 0]
--\frac{c}{a}
-[-c\quad -\frac{cb}{a}]
-b
- \begin{bmatrix} 1&0\\-\frac{c}{a}&1 \end{bmatrix} \begin{bmatrix} a&b\\c&d \end{bmatrix} = \begin{bmatrix} a&b\\0&d-\frac{cb}{a} \end{bmatrix} 
- \begin{bmatrix} a&b\\0&d-\frac{cb}{a} \end{bmatrix} \begin{bmatrix} 1&\frac{-b}{a}\\0&1 \end{bmatrix} =  \begin{bmatrix} a&0\\0&d-\frac{cb}{a} \end{bmatrix} 
- \begin{bmatrix} 1&0\\-\frac{c}{a}&1 \end{bmatrix} \begin{bmatrix} a&b\\c&d \end{bmatrix} \begin{bmatrix} 1&\frac{-b}{a}\\0&1 \end{bmatrix}= \begin{bmatrix} a&0\\0&d-\frac{cb}{a} \end{bmatrix} 
-0_{n\times m}
-0_{m\times n}
-\left[\begin{matrix} A_{m\times m}&B_{m\times n}\\ C_{n\times n}&D_{n\times n} \end{matrix}\right]= \left[\begin{matrix} A_{m\times m}&0_{m\times n}\\ C_{n\times m}&I_{n\times n} \end{matrix}\right] \left[\begin{matrix} I_{m\times m}&A^{-1}B_{m\times n}\\ 0_{n\times m}&D-CA^{-1}B_{n\times n} \end{matrix}\right], 
-\begin{bmatrix} I_{m \times m} & A^{-1}B_{m \times n}\\  0_{n \times m} & D-CA^{-1}B_{n \times n} \end{bmatrix}
-C
-C

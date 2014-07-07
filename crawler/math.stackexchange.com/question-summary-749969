@@ -1,8 +1,0 @@
-a
-M(n!)/r^n
- |f^n(a)| = |n!/2\pi i  \oint f(z)/(z-a)^n dz| <= |n!/2\pi i \oint M/(z-a)^n dz| = |Mn!/2\pi i \oint 1/(z-a)^n dz| 
-1/2\pi i \oint 1/(z-a)^n dz <= 1/r^n
-f
-B_{\mathbb C}(a,r[
-|f(z)|\leq M\;\;\forall z\in B_{\mathbb C}(a,r]
-\begin{align} |f^{(n)}(a)| &= \left|\frac{n!}{2\pi i}\int_{|\zeta-a|=r}\frac{f(\zeta)}{(\zeta -a)^{n+1}}d\zeta\right|\\ &\leq \frac{n!}{2\pi}\int_{|\zeta-a|=r}\frac{|f(\zeta)|}{|\zeta -a|^{n+1}}\,| d\zeta|\\ &\leq \frac{n!}{2\pi}\int_{|\zeta-a|=r}\frac{M}{r^{n+1}}|d\zeta|\\ &= \frac{n!}{2\pi}\frac{M}{r^{n+1}}\int_{|\zeta-a|=r}|d\zeta|\\ &= \frac{n!}{2\pi}\frac{M}{r^{n+1}}2\pi r=\frac{n!M}{r^n} \end{align}

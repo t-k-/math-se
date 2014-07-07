@@ -1,17 +1,0 @@
-\int\frac{\sqrt{(1-x^2)^3}}{x^6} \;dx .
-x = \sin(\theta)
-dx = \cos(\theta) d \theta
-I= \int \frac{\cos^3(\theta)}{\sin^6(\theta)} \cos(\theta) d \theta = \int \cot^4(\theta) cosec^2(\theta) d \theta
-\cot(\theta) = t
--cosec^2(\theta) d \theta = dt
-I = -\int t^4 dt = -\frac{t^5}{5} + c = -\frac{\cot^5(\theta)}{5} + c = -\frac15 \left( \frac{\sqrt{1-x^2}}{x} \right)^5 + c
-x = \sin(\alpha)
-\alpha \in [-\frac{\pi}{2},\frac{\pi}{2}]
-\int \frac{\cos^4(\alpha)}{\sin^6(\alpha)} d\alpha.
-D\left(\frac{\cos^3(\alpha)}{\sin^5(\alpha)}\right) = \frac{-3\cos^2(\alpha)\sin^6(\alpha) - 5\sin^4(\alpha)\cos^4(\alpha)}{\sin^10(\alpha)} = -3\frac{\cos^2(\alpha)}{\sin^4(\alpha)} - 5 \frac{\cos^4(\alpha)}{\sin^6(\alpha)}
-D\left(\frac{\cos(\alpha)}{\sin^3(\alpha)}\right) = \frac{-\sin^4(\alpha)-3\sin^2(\alpha)\cos^2(\alpha)}{\sin^6(\alpha)} = -\frac{1}{\sin^2(\alpha)} - 3 \frac{\cos^2(\alpha)}{\sin^4(\alpha)}
-\frac{1}{\sin^2(\alpha)}
- \begin{align*} I &= \int \frac{\sqrt{(1-x^2)^{3}}}{x^6} dx  \\ &= \int \left( \frac{1-x^2}{x^2} \right)^{3/2} \frac{1}{x^3}dx \\ &= \int \left(\frac{1}{x^2}-1 \right)^{3/2} \cdot \frac{1}{x^3} dx \end{align*} 
-z= \frac{1}{x^2}-1
-dz=\frac{-2}{x^3} ~dx
- \begin{align*} \text{Integral} &= -\frac{1}{2}\int z^{3/2} dz  \\ &= -\frac{1}{2} \cdot \frac{2}{5}z^{5/2}+C \\ &= -\frac{1}{5} \left(\frac{1}{x^2} - 1 \right)^{5/2}+C \\ &= - \frac{1}{5} \left(\frac{\sqrt{1-x^2}}{x} \right)^5+C. \end{align*} 

@@ -1,20 +1,0 @@
-d_H(C, D)=\inf(\rho \ge 0 \mid C \subset D_\rho, D \subset C_\rho).
-\gamma_1, \gamma_2\colon[0, 2\pi]\to \mathbb{R}^2
-D_1, D_2
-\mathbb{R}^2
-d_H(D_1, D_2) \le \lVert \gamma_1 - \gamma_2 \rVert_{\infty}.
-\xi \in D_1
-\eta \in D_2
-\lvert \xi - \eta \rvert \le \lVert \gamma_1-\gamma_2\rVert_{\infty}
-D_1
-D_2
-D_1
-D_2
-\lVert \gamma_1-\gamma_2 \rVert_{\infty}
-D_1
-D_2
-C_i
-\gamma_i
-C_i=\frac{1}{2\pi}\int_0^{2\pi}\gamma_i(t)\mathrm{d}t\;.
-K_i(\lambda,t)=\lambda\gamma_i(t) + (1-\lambda)C_i\;.
- \begin{eqnarray} \lvert K_1(\lambda,t)-K_2(\lambda,t)\rvert &=& \left\lvert\left(\lambda\gamma_1(t) + (1-\lambda)C_1\right) - \left(\lambda\gamma_2(t) + (1-\lambda)C_2\right)\right\rvert \\ &=& \left\lvert\lambda(\gamma_1(t)-\gamma_2(t)) + (1-\lambda)(C_1 - C_2)\right\rvert \\ &=& \left\lvert\lambda(\gamma_1(t)-\gamma_2(t)) + (1-\lambda)\frac{1}{2\pi}\int_0^{2\pi}\left(\gamma_1(t)-\gamma_2(t)\right)\mathrm{d}t\right\rvert \\ &\le& \lambda\lvert\gamma_1(t)-\gamma_2(t)\rvert + (1-\lambda)\frac{1}{2\pi}\int_0^{2\pi}\left\lvert\gamma_1(t)-\gamma_2(t)\right\rvert\mathrm{d}t \\ &\le& \lambda\lVert\gamma_1(t)-\gamma_2(t)\rVert_\infty + (1-\lambda)\frac{1}{2\pi}\int_0^{2\pi}\lVert\gamma_1(t)-\gamma_2(t)\rVert_\infty\mathrm{d}t \\ &=& \lambda\lVert\gamma_1(t)-\gamma_2(t)\rVert_\infty + (1-\lambda)\lVert\gamma_1(t)-\gamma_2(t)\rVert_\infty \\ &=& \lVert\gamma_1(t)-\gamma_2(t)\rVert_\infty\;. \end{eqnarray} 

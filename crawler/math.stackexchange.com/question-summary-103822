@@ -1,27 +1,0 @@
-\lim_{n\to\infty}z_n=A
- \lim_{n\to\infty}\frac{1}{n}(z_1+\cdots+z_n)=A. 
-\epsilon>0
-\lim_{n\to\infty}z_n=A
-N
-N
-N'
-\tag{1}|z_n-A|<\frac{\epsilon}{2}\mbox{ whenever }n\geq N.
-\tag{2}\sum_{k=1}^{N-1}|z_i-A|\leq \frac{N'\epsilon}{2}.
-m\geq\max\{N, N'\}
-(1)
-(2)
-\left|\frac{1}{m}(z_1+\cdots+z_m)-A\right|=\left|\frac{1}{m}\sum_{k=1}^{m}(z_i-A)\right|
-\leq\left|\frac{1}{m}\sum_{k=1}^{N-1}(z_i-A)\right|+\left|\frac{1}{m}\sum_{k=N}^{m}(z_i-A)\right|
-\leq\frac{1}{m}\sum_{k=1}^{N-1}|z_i-A|+\frac{1}{m}\sum_{k=N}^{m}|z_i-A|
-\leq \frac{\epsilon}{2}+\frac{1}{m}(m-N+1)\frac{\epsilon}{2}\leq \epsilon
-\lim_{n\to\infty}\frac{1}{n}(z_1+\cdots+z_n)=A.
-\frac{z_1+\cdots+z_n}{n}-A=\frac{(z_1-A)+\cdots+(z_n-A)}{n},
-A=0
-\epsilon
-N
-\epsilon>0
-N
-n>N\implies |z_n|<\epsilon
-\left|\frac{z_1+\cdots+z_{k+N}}{k+N}\right|=\left|\frac{z_1+\cdots+z_N}{k+N}\,+\,\frac{z_{N+1}+\cdots+z_{N+k}}{k+N}\right|
-\le \left|\frac{z_1+\cdots+z_N}{k+N}\right|\,+\,\left|\frac{z_{N+1}+\cdots+z_{N+k}}{k+N}\right|\le \left|\frac{z_1+\cdots+z_N}{k+N}\right|+\epsilon\stackrel{k\to\infty}{\longrightarrow}\epsilon.
-\epsilon\to0^+

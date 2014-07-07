@@ -1,13 +1,0 @@
-X_o=x
-dX_t=\frac{1}{X_t}dt+X_tdW_t
-W_t
-Y_t=\frac{X_t^2}{2}
-Y_t
-Y_t = \mathrm{e}^{t- 2 W_t} X_t^2
-\mathrm{d} \mathrm{e}^{t- 2 W_t} = \mathrm{e}^{t- 2 W_t} \left( 3 \mathrm{d} t - 2 \mathrm{d} W_t \right)
-\mathrm{d}(X_t^2) = (X_t^2 + 2) \mathrm{d} t + 2 X_t^2 \mathrm{d} W_t
-Y_0 = \mathrm{e}^{0 - 2 W_0}X_0^2 = x^2
-   \mathrm{d} Y_t = \mathrm{e}^{t- 2 W_t} \mathrm{d} (X_t^2) + X_t^2 \mathrm{d} \mathrm{e}^{t- 2 W_t} + \mathrm{d} \mathrm{e}^{t- 2 W_t} \cdot \mathrm{d} (X_t^2)  
-   \mathrm{d} Y_t = 2 \mathrm{e}^{t- 2 W_t} \mathrm{d} t 
-    \mathrm{e}^{t- 2 W_t} X_t^2 = Y_t =  x^2 + \int_0^t 2 \mathrm{e}^{s - 2 W_s} \mathrm{d} s  
-   X_t = \operatorname{sign}(x) \sqrt{ x^2 \mathrm{e}^{2 W_t - t} + 2 \mathrm{e}^{2 W_t - t} \int_0^t \mathrm{e}^{s - 2 W_s} \mathrm{d} s  } 

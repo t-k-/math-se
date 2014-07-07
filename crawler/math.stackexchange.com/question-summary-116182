@@ -1,53 +1,0 @@
-p
-n
-q
-q^2
-(1-q)^2
-p=q^2+(1-q)^2=2q^2-2q+1
-q
-1-q
-q=\frac14\left(2\pm\sqrt{4-8(1-p)}\right)=\frac12\left(1\pm\sqrt{2p-1}\right)\;.
-\sum_{n\ge 0}x^n=\frac1{1-x}\;.
-k=1,\dots,n
-k
-n
-q^{n-1}(1-q)^2
-n
-nq^{n-1}(1-q)^2
-\begin{align*}\sum_{n\ge 3}nq^{n-1}(1-q)^2&=(1-q)^2\sum_{n\ge 3}nq^{n-1}\\ &=(1-q)^2\left(\frac1{(1-q)^2}-(1+2q)\right)\\ &=q^2(3-2q)\;; \end{align*}
-q
-q
-2q(1-q)=1-p
-X_n
-n
-T_k=\inf\{n\geqslant0\mid X_n=k\}
-[T_3\leqslant n]
-(X_n)_{n\geqslant0}
-\{0,1,2,\ldots\}
-X_0=0
-p_{k,k+1}=q
-p_{k,0}=r
-r=1-q
-T_3
-t_k=\mathrm E_k(s^{T_3})
-k\leqslant3
-|s|\leqslant1
-t_0
-t_3=1
-k
-\{0,1,2\}
-t_k=s(qt_{k+1}+rt_0)
-t_0=qst_1+rst_0
-t_1=qst_2+rst_0
-t_2=qs+rst_0
-t_1=qs(qs+rst_0)+rst_0
-t_0=qs(qs(qs+rst_0)+rst_0)+rst_0
-s_1
-s_2
-s_3
-1-rs-qrs^2-q^2rs^3
-a_i
- t_0=\frac{q^3s^3}{1-rs-qrs^2-q^2rs^3}. 
- t_0=q^3s^3\sum_{i=1}^3\frac{a_i}{1-s/s_i}=q^3s^3\sum_{i=1}^3a_i\sum_{n\geqslant0}s^n/s_i^n, 
- \mathrm P(T_3=n+3)=q^3\sum_{i=1}^3a_i/s_i^{n}, 
- \mathrm P(T_3\leqslant n+3)=q^3\sum_{i=1}^3\frac{a_i}{s_i-1}(1-1/s_i^{n+1}). 

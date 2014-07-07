@@ -1,20 +1,0 @@
-f
-\gamma
-m_{pq}
-m_{pq}^{(\alpha)}
-f
-m_{pq} =\iint\limits_{D_R} \! x^p y^q f(x,y) \, dx\; dy, \, D_R={\{(x,y)\,|\,x^2 + y^2 \le R^2\}}
-f_\gamma(\gamma x, \gamma y) = f(x, y)
-m_{pq}^{(\gamma)} =\iint\limits_{D_{\gamma R}} \! x^p y^q f_\gamma(x, y) \, dx \; dy
-m_{pq}^{(\gamma)} = \iint\limits_{D_R} \! (\gamma x)^p (\gamma y)^q f_\gamma(\gamma x,\gamma y) \, d(\gamma x) d(\gamma y) = \gamma^{p+q+2} \iint\limits_{D_R} \! x^p y^q f(x,y) \, dx \; dy = \gamma^{p+q+2}\,m_{pq}
-\begin{pmatrix} x^{(\alpha)} \\ y^{(\alpha)} \end{pmatrix} = \begin{pmatrix} \cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
-f_{\alpha}(x^{(\alpha)},y^{(\alpha)}) = f(x,y)
-m_{pq}^{(\alpha)} =   \iint\limits_{D_R} \! x^{(\alpha)p} y^{(\alpha)p} f_\alpha(x^{(\alpha)}, y^{(\alpha)}) \, dx^{(\alpha)} dy^{(\alpha)} =
- = \iint\limits_{D_R} \! (x\cos\alpha-y\sin\alpha)^p (x\sin\alpha+y\cos\alpha)^q f(x, y) \Bigl\lvert \frac{\partial(x^{(\alpha)}, y^{(\alpha)})}{\partial(x,y)} \Bigr\rvert \, dx dy = 
-  = \iint\limits_{D_R} \! (x\cos\alpha-y\sin\alpha)^p (x\sin\alpha+y\cos\alpha)^q f(x, y) \, dx dy =
-  = \iint\limits_{D_R} \! \Bigl( \sum\limits_{i=0}^{p} (-1)^{p-i} \begin{pmatrix} p \\ i \end{pmatrix} x^i\cos^i\alpha \, y^{p-i}\sin^{p-i}\alpha \Bigr)  \Bigl(\sum\limits_{j=0}^{q}\begin{pmatrix} q \\ j \end{pmatrix} x^j\sin^j\alpha \, y^{q-j}\cos^{q-j}\alpha\Bigr) \, f(x, y) \, dx dy
-q = 0
- m_{p,0}^{(\alpha)} = \iint\limits_{D_R} \! \sum\limits_{i=0}^{p} (-1)^{p-i} \begin{pmatrix} p \\ i \end{pmatrix} x^i\cos^i\alpha \, y^{p-i}\sin^{p-i}\alpha \, f(x, y) \, dx dy =  
- = \sum\limits_{i=0}^{p} (-1)^{p-i} \begin{pmatrix} p \\ i \end{pmatrix} \cos^i\alpha \, \sin^{p-i}\alpha \iint\limits_{D_R} \! x^i y^{p-i} f(x,y) \, dx\; dy = 
- = \sum\limits_{i=0}^{p} (-1)^{p-i} \begin{pmatrix} p \\ i \end{pmatrix} \cos^i\alpha \, \sin^{p-i}\alpha \; m_{i,p-i} 
-m_{20}^{(\alpha)} + m_{02}^{(\alpha)} = m_{20} + m_{02}

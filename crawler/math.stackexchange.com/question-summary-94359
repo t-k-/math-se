@@ -1,171 +1,0 @@
-0, 2, 8, 34, 144, 610, 2584, 10946,...
-a(n) = 4a(n-1) + a(n-2)
-a(-1) = 2, a(0) = 0
-f(n)
-\operatorname{Fibonacci}(n)
-f(3n) = 4f(3n - 3) + f(3n - 6)
-F_n
-G_n = F_{3n}
-F_{n+1}
-G_{n+1}
-G_n
-G_{n-1}
-\begin{align*} G_{n+1}&= F_{3n+3}\\ &= F_{3n+1} + F_{3n+2}\\ &= F_{3n-1} + F_{3n} + F_{3n} + F_{3n+1}\\ &= F_{3n-3} + F_{3n-2} + F_{3n} + F_{3n} + F_{3n-1} + F_{3n}\\ &= G_{n-1} + F_{3n-2} + F_{3n-1} + 3 G_{n}\\ &= G_{n-1} + 4 G_{n} \end{align*}
-G
-k
-f_{kn}
-k=3
-f_{kn}=\frac{\phi^{kn}-(-\phi)^{-kn}}{\sqrt 5}
-u=\phi^k
-v=\left(-\dfrac1\phi\right)^k
-f_{kn}=pu^n+qv^n
-f_{kn}
-\begin{align*} x^2-(u+v)x+uv&=x^2-\left(\phi^k+\left(-\frac1\phi\right)^k\right)x+\left(\phi^k\left(-\frac1\phi\right)^k\right)\\ &=x^2-\left(\phi^k+\left(-\frac1\phi\right)^k\right)x+(-1)^k \end{align*}
-f_{k(n+1)}=\left(\phi^k+\left(-\frac1\phi\right)^k\right)f_{kn}-(-1)^k f_{k(n-1)}
-\alpha^3+\beta^3=(\alpha+\beta)^3-3(\alpha+\beta)(\alpha\beta)
-\alpha+\beta=1
-\alpha\beta=-1
-\ell_3=(1)^3-3(1)(-1)=4
-\ell_k
-\phi^k
-\left(-\dfrac1\phi\right)^k
-\ell_{k+1}=\ell_k+\ell_{k-1}
-f_{k(n+1)}=\ell_k f_{kn}-(-1)^k f_{k(n-1)}
-k=3
-f_{3(n+1)}=\ell_3 f_{3n}-(-1)^3 f_{3(n-1)}
-f_{3(n+1)}=4 f_{3n}+f_{3(n-1)}
-\alpha
-\beta
-x^2-x-1=0
-n
-\frac{\alpha^n-\beta^n}{\sqrt{5}}.
-\frac{\alpha^{3n}-\beta^{3n}}{\sqrt{5}}.
-x
-\alpha
-\beta
-x^2=x+1
-x
-x^3=x^2+x=2x+1
-x^4=2x^2+x=3x+2
-x^5=3x^2+2x=5x+3
-x^6=5x^2+3x=8x+5
-x^6=Ax^3+B
-A
-B
-8x+5=A(2x+1)+B
-A
-B
-A=4
-B=1
-\alpha^{3n}
-\beta^{3n}
-y_n=4y_{n-1}+y_{n-2}
-\frac{\alpha^{3n}-\beta^{3n}}{\sqrt{5}}
-f(3n+3)=4f(3n)+f(3n-3)
-\begin{align*} f(3n+3)&=f(3n+2)+f(3n+1)\\ &=2f(3n+1)+f(3n)\\ &=3f(3n)+2f(3n-1)\\ &=3f(3n)+\big(f(3n)-f(3n-2)\big)+f(3n-1)\\ &=4f(3n)+f(3n-1)-f(3n-2)\\ &=4f(3n)+f(3n-3)\;. \end{align*}
-\varphi = \frac12(1+\sqrt5)
-\hat\varphi=\frac12(1-\sqrt5)
-f(n)=\frac1{\sqrt5}(\varphi^n-\hat\varphi^n)
-f(3n)=\frac1{\sqrt5}(\varphi^{3n}-\hat\varphi^{3n})
-g(x)=\frac{x}{1-x-x^2}=\frac1{\sqrt5}\left(\frac1{1-\varphi x}-\frac1{1-\hat\varphi x}\right)\;,
-\begin{align*} h(x)&=\frac1{\sqrt5}\sum_{n\ge 0}(\varphi^{3n}-\hat\varphi^{3n})x^n\\ &=\frac1{\sqrt5}\left(\sum_{n\ge 0}\varphi^{3n}x^n-\sum_{n\ge 0}\hat\varphi^{3n}x^n\right)\\ &=\frac1{\sqrt5}\left(\frac1{1-\varphi^3 x}-\frac1{1-\hat\varphi^3 x}\right)\\ &=\frac1{\sqrt5}\cdot\frac{(\varphi^3-\hat\varphi^3)x}{1-(\varphi^3+\hat\varphi^3)x+(\varphi\hat\varphi)^3x^2}\;. \end{align*}
-\varphi+\hat\varphi=1
-\varphi-\hat\varphi=\sqrt5
-\varphi\hat\varphi=-1
-\varphi^2=\varphi+1
-\hat\varphi^2=\hat\varphi+1
-\begin{align*} h(x)&=\frac1{\sqrt5}\cdot\frac{(\varphi^3-\hat\varphi^3)x}{1-(\varphi^3+\hat\varphi^3)x+(\varphi\hat\varphi)^3x^2}\\ &=\frac{(\varphi^2+\varphi\hat\varphi+\hat\varphi^2)x}{1-(\varphi^2-\varphi\hat\varphi)x-x^2}\\ &=\frac{(\varphi^2-1+\hat\varphi^2)x}{1-(\varphi^2+1+\hat\varphi^2)x-x^2}\\ &=\frac{(\varphi+\hat\varphi+1)x}{1-(\varphi+3+\hat\varphi)x-x^2}\\ &=\frac{2x}{1-4x-x^2}\;. \end{align*}
-(1-4x-x^2)h(x)=2x
-h(x)=4xh(x)+x^2h(x)+2x
-x^n
-h(x)
-f(3n)
-\begin{align*} \sum_{n\ge 0}f(3n)x^n&=h(x)=4xh(x)+x^2h(x)+2x\\ &=\sum_{n\ge 0}4f(3n)x^{n+1}+\sum_{n\ge 0}f(3n)x^{n+2}+2x\\ &=\sum_{n\ge 1}4f(3n-3)x^n+\sum_{n\ge 2}f(3n-6)x^n+2x\;, \end{align*}
-f(3n)=4f(3n-3)+f(3n-6)
-n\ge 2
-0
-f(3\cdot 0)=0
-x
-4f(0)+2=2=f(3)
-f_{3n}=\frac{\alpha^{3n}+\beta^{3n}}{\sqrt{5}} \,.
-(x-\alpha^{3})(x-\beta^3)=x^2-Ax-B
-f_{3n}
-x_{n+2}=Ax_{n+1}+Bx_{n} \, x_{0}=f_0, x_1=f_{3} \,.
-f_6=Af_3+Bf_0 
-f_9=Af_6+Bf_3 
-A,B
-S
-S^2-S-1
-S^2-S-1
-k^{\rm{th}}
-S^2-S-1
-S^k
-S^2-S-1=(S-a)(S-b)
-a=\phi
-b=-1/\phi
-(S^k-a^k)(S^k-b^k)=S^{2k}-(a^k+b^k)S^k+(ab)^k
-S^2-S-1
-S^k
- F_{n+2k}=L_kF_{n+k}-(-1)^kF_n\tag{1} 
- F_{n+2}=F_{n+1}+F_n\tag{k=1} 
- F_{n+4}=3F_{n+2}-F_n\tag{k=2} 
- F_{n+6}=4F_{n+3}+F_n\tag{k=3} 
- F_{n+8}=7F_{n+4}-F_n\tag{k=4} 
- F_{n+10}=11F_{n+5}+F_n\tag{k=5} 
-   F_{n+2} = \left[ \begin{array}{cc} 1 & 1 \end{array} \right]   \left[ \begin{array}{cc} F_n \\ F_{n+1} \end{array} \right] = 1 \cdot F_n + 1 \cdot F_{n+1}. 
-   G_{n+2} = \left[ \begin{array}{cc} c_1 & c_2 \end{array} \right]   \left[ \begin{array}{cc} G_n \\ G_{n+1} \end{array} \right] 
-c_1
-c_2
-   \left[ \begin{array}{cc} 34 & 144 \end{array} \right] = \left[ \begin{array}{cc} c_1 & c_2 \end{array} \right]   \left[ \begin{array}{cc} 2 & 8 \\ 8 & 34 \end{array} \right] 
-G_{n+2} = 1 \cdot G_n + 4 \cdot G_{n+1}
-G_{n+2} = 1 \cdot G_n + 4 \cdot G_{n+1}
-\mathbb C
-\rm\ S\:n\: :=\: n+1,\ \ T\:n\: :=\: 3\:n\: 
-\rm\ S\:f(a\:n+b) = f(a\:(n+1)+b)\ 
-\rm\ T\:f(a\:n+b) = f(3\:a\:n+b)\:.
-\rm\:f(n)\:
-\rm\: TS\:\to\: (a\ S + b)\ T\ 
-\rm\:T\:
-\rm\:S\:,\:
-\rm\ q(S)\ f(n)\: =\: 0\ 
-\rm\ \bar{q}(S)\:T\:f(n)\:=\:0\:,\ 
-\rm\ T\:f(n)\: =\: f(3\:n)\:.\:
-\rm\ q(S)\ f(n) := (S^2 - S - 1)\ f(n)\: =\: f(n+2) - f(n+1) - f(n)\: =\: 0\:.\: 
-\rm\ \bar{q}(S)\ T\: f(n)\ =\ 0\ 
-\rm\ T\:f(n) = f(3\:n)\:,\:
-\rm\:\bar{q}(S)\:.\: 
-\rm\ T\:q(S)\ f(n)\: =\: 0\:,\: 
-\rm\:T\:
-\rm\:q(S)\:
-\rm\:\bar{q}(S)\:T\:f(n)\:=\:0\:.\:
-\rm T\:S\: =\: r(S)\: T\ 
-\rm\:T\:
-\rm\:S
-\rm\ S^{\:i}\: f(n)\: =\: f(n+i)\:
-\rm\:q(S)\:.\:
-\rm\:f(n)\:
-\rm\ ST\ f(n)\ =\ f(3\:n+3)\ 
-\rm\ f(3\:n+1) = TS\ f(n)\:,\: 
-\rm\ f(3\:n) = T\ f(n)\:,\:
-\rm\ \ \ ST\ f(n+i)\ =\ f(3n+3+i)\ =\ f(3n+2+i) + f(3n+1+i)\ =\ 2\ f(3n+1+i) + f(3n+i) 
-\rm\ \ \ \phantom{ST\ f(n+i)}\  =\ (2\:TS+T)\ f(n+i)\quad
-\rm\:i\in \mathbb Z\:
-\rm\ 2\:TS\ f(n+i)\  =\ (S-1)\:T\ f(n+i)\:,\ 
-\rm\ 2\:TS\ =\ (S-1)\:T\:,\ 
-\rm\qquad\quad\:\ 0\ =\ 4\: T\: (S^2 - S - 1)\ f(n)\ 
-\rm\qquad\qquad\qquad\quad\ \ =\ (2\:(2TS)S - 2\:(2TS) - 4\:T)\ f(n) 
-\rm\qquad\qquad\qquad\quad\ \  =\ ((S-1)\:2TS - 2\:(S-1)\:T - 4\:T)\ f(n)
-\rm\qquad\qquad\qquad\quad\ \  =\ ((S-1)^2 - 2\:(S-1)\: - 4)\ T\: f(n)
-\rm\qquad\qquad\qquad\quad\  \ =\ (S^2 - 4\ S - 1)\ T\: f(n)
-\rm\ ST\ f(n)\ =\ f(k\:n+k)\ 
-\rm\:\mathbb C
-\rm\ f(kn+1) = TS\ f(n)\ 
-\rm\ f(kn) = T\ f(n)\:
-\rm\ \ ST\ f(n)\ =\ f(k\:n+k)\ =\ a\ f(k\:n+1) + d\ f(k\:n)\ =\ (a\ TS + d\ T)\ f(n)\ \ 
-\rm\:a,d\in \mathbb C
-\rm\:\Rightarrow\ a\ TS\ f(n) =\ (S-d)\ T\ f(n)\ \Rightarrow\ a\ TS\ =\ (S-d)\ T\ 
-\rm\ S^{\:i}\: f(n)\ 
-\rm\:f(n)\:
-\rm\:T\:f(n) = f(k\:n)\:
-\rm\:T\:
-\rm\:S^i\:

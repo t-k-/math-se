@@ -1,3 +1,0 @@
-P=1/(s-a)
-\begin{align} P &= \frac{a!}{s!} \sum_{i=0}^a \frac{(s-i-1)!}{(a-i)!} \\ &= \frac{a!}{s!} \sum_{i=0}^a \frac{i}{s-i} \frac{(s-i)!}{(a-i)!} \\ &= \frac{a!}{s!} \sum_{i=0}^a \frac{1}{s-a+i} \frac{(s-a+i)!}{i!} \\ &= \frac{1}{\binom{s}{a}} \sum_{i=0}^a  \frac{1}{s-a+i} \binom{s-a+i}{i} \\ &= \frac{1}{\binom{s}{a}} \frac{1}{s-a} \underbrace{\sum_{i=0}^a \binom{s-a-1+i}{i}}_{\text{This is a well-known sum}}\\ &= \frac{1}{\binom{s}{a}} \frac{1}{s-a} \binom{s}{a} \\ &=\frac{1}{s-a} \end{align}
-P = \frac{a!}{s!} \sum_{i=0}^{a}\frac{(s-i-1)!}{(a-i)!}

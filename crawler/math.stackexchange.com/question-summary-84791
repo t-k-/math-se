@@ -1,15 +1,0 @@
-f:R^2\to R
-F(x)=f(x,-x)
-{dg\over dx}={\partial f\over\partial x}{d x\over d x}+{\partial f\over\partial y}{d y\over d x}={\partial f\over\partial x}-{\partial f\over\partial y}
-f(x+t,y+t)-f(x,y)-tL(x,y)
-=f(x+t,y+t)-f(x+t,y)+f(x+t,y)-f(x,y)-tL(x,y)
-=t{\partial f\over\partial y}+t{\partial f\over\partial x}+O(t^2)-tL(x,y)
-L(x,y)={\partial f\over\partial y}+ {\partial f\over\partial x}
-x
-+t
-y
--t
-f(x+t,y(x+t)).
-y(x+t)=-(x+t)=(-x)-t=y(x)-t
-1
- F'(x) = \lim_{t \to 0} \frac{F(x+t) - F(x)}t = \lim_{t \to 0} \frac{f(x+t,-x-t) - f(x,-x)}t 

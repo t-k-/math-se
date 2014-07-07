@@ -1,20 +1,0 @@
-C_n(t)=\sum_{\pi\in S_n}t^{1+d(\pi)}
-d(\pi)
-C_n(t)=t(1-t)C'_{n-1}(t)+ntC_{n-1}(t)
- C_n(t)=tC'_{n-1}(t)+t^nC'_{n-1}(t^{-1}). 
-t^{-1}
-C_{n-1}(t) = \sum_{k=1}^{n-1} a_k t^k
-C_n(t)
-C_n(t) = t(1-t)C'_{n-1}(t)+ntC_{n-1}t = (t-t^2)(\sum_{k=1}^{n-1} k a_k t^{k-1}) + nt(\sum_{k=1}^{n-1} a_k t^k) \\  = \sum_{k=1}^{n-1} (k-kt+nt)a_k t^k = \sum_{k=1}^{n-1} (k + (n-k)t)a_k t^k 
-t^k
-k t^k + (n-k) t^{k+1}
-tC'_{n-1}(t) = \sum_{k=1}^{n-1} k a_k t^k
-t
-a_k = a_{n-k}
-C'_{n-1}(t^{-1})
-\sum_{k=1}^{n-1} (n-k) a_k t^{k+1} = \sum_{k=1}^{n-1} (n-k) a_{n-k} t^{k+1}  = \sum_{k=1}^{n-1} k a_k t^{n-k+1}  \\  = t^n \sum_{k=1}^{n-1} k a_k (t^{-1})^{k-1} = t^n C'_{n-1}(t^{-1})
-t^{-1}
-t^n C'_{n-1}(t^{-1})
-t
-a_k = a_{n-k}
-C_n(t) = t^{n+1} C_n(t^{-1})

@@ -1,52 +1,0 @@
-A \subseteq B \subseteq C
-\alpha
-\beta
-\gamma
-A(\alpha) = B
-B(\beta) = C
-A(\gamma) = C
-B
-C
-A
-m(\alpha,A)
-\alpha
-A
-m(\beta,B)
-\beta
-B
-m(\beta,A)
-\beta
-A
-m(\gamma,A)
-\gamma
-A
-c \in C
-m(\alpha,A)
-m(\beta,B)
-m(\beta,A)
-m(\gamma,A)
-a_{ij}
-e_{ij}
-c_i
- c=\sum_{i = 1}^{[C:B]} b_i \beta^{i-1}, \quad b_i \in B 
- b_i=\sum_{j = 1}^{[B:A]} a_{ij} \alpha^{j-1}, \quad a_{ij} \in A 
- c=\sum_{k = 1}^{[C:A]} c_k \gamma^{k-1}, \quad c_k \in A 
- \gamma = \sum_{i = 1}^{[C:B]} d_i \beta^{i-1}, \quad d_i \in B 
- d_i=\sum_{j = 1}^{[B:A]} e_{ij} \alpha^{j-1}, \quad e_{ij} \in A 
-f_{ijk}
-m(\alpha,A)
-m(\beta,B)
-\alpha
-\beta
-[C:A] = [C:B] \cdot [B:A]
-c_k
- \gamma = \sum_{i = 1}^{[C:B]} \sum_{j = 1}^{[B:A]} e_{ij} \alpha^{j-1}\beta^{i-1} 
- \gamma^{k-1} = \sum_{i = 1}^{[C:B]} \sum_{j = 1}^{[B:A]} f_{ijk} \alpha^{j-1}\beta^{i-1} 
- c = \sum_{i = 1}^{[C:B]} \sum_{j = 1}^{[B:A]} a_{ij} \alpha^{j-1}\beta^{i-1} 
-  c = \sum_{k=1}^{[C:A]} c_k \left( \sum_{i = 1}^{[C:B]} \sum_{j = 1}^{[B:A]} f_{ijk} \alpha^{j-1}\beta^{i-1} \right) = \sum_{i = 1}^{[C:B]} \sum_{j = 1}^{[B:A]} \left( \sum_{k=1}^{[C:A]} c_k f_{ijk} \right) \alpha^{j-1}\beta^{i-1} 
- a_{ij} = \sum_{k=1}^{[C:A]} c_k f_{ijk} 
-c_i
-\gamma
-A(\gamma)
-m(\gamma,A)
-c_i

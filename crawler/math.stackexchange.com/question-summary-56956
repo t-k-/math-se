@@ -1,117 +1,0 @@
-f
-g
-f\colon x\longmapsto x-1
-g\colon x\longmapsto \left\{\begin{array}{ll}x & \text{if }x\leq 0,\\ \frac{x}{2} &\text{if }x\gt 0. \end{array}\right.
-g^{-1}f^ng^{-1}f^{-n}=f^{2n}g^{-1}f^{-2n}g^{-1}
-G
-f,g\colon\mathbb{R}\to\mathbb{R}
-n\ge0
-n\in\{1,2\}
-G
- \begin{align} f^{-n}gf^ng=gf^{-2n}gf^{2n}&&{\rm(1)} \end{align} 
- G=\left\langle f,g\;\big\vert\;f^{-1}gfg^2=gf^{-2}gf^{2}g=g^2f^{-4}gf^{4}\right\rangle. 
-G
-u\colon\mathbb{R}\to\mathbb{R}
-f
-g
-G
-\theta_p\colon\mathbb{R}\to\mathbb{R}
-p
-m,n,r_1,r_2,\ldots,r_n
-n\ge0
-p_1 < p_2 < \cdots < p_n
-u(x)
-\{p_1,p_2,\ldots,p_n\}
-u(x)=x-m
-x
-u
-2^{r_1+r_2+\cdots+r_k}
-p_k
-G^\prime
-G
-u\in G^\prime
-p < q
-r,s\in\mathbb{Z}
-G^\prime
-f
-\theta_{p_i}
-f
-\theta_{q_1}
-q_1=\min_ip_i
-f
-\theta_p
-G^\prime
-f
-\{\theta_p\colon p\in\mathbb{D}\}
-\theta_0=g^{-1}
-p=2^rs
-p
-\theta_p=f^r\theta_{p+r}f^{-r}\in G
-r
-p+r > 0
-G^\prime=G
- \theta_p(x)=\begin{cases} x,&\textrm{if }x\le p,\\ 2x-p,&\textrm{if }x\ge p. \end{cases} 
- \begin{align} u=f^m\theta_{p_1}^{r_1}\theta_{p_2}^{r_2}\cdots\theta_{p_n}^{r_n}&&{\rm(2)} \end{align} 
- \begin{align} \theta_pf&=f\theta_{p+1}.&{\rm(3)}\\ \theta_q\theta_p&=\theta_p\theta_\frac{p+q}2.&{\rm(4)} \end{align} 
- \begin{align} \theta^r_pf^s&=f^s\theta^r_{p+s}.\\ \theta^r_q\theta^s_p&=\theta^s_p\theta^r_{p+2^{-s}(q-p)}. \end{align} 
- \theta_p=\theta_0^r\theta_s\theta_0^{-r}=\theta_0^rf^{-s}\theta_0f^s\theta_0^{-r}\in G. 
-n=1,2
-n
-\theta_n=f^{-n}g^{-1}f^n
-f^{-m}\cdots f^m
-N\ge3
-n < N
-r\in\{1,2\}
-N-r
-N=2M+r
-\theta_{2N}\theta_0=\theta_0\theta_N
-n=N
-n=1
-n=2
-n
- \begin{align} \theta_{2n+m}\theta_m=\theta_m\theta_{n+m}.&&{\rm(6)} \end{align} 
- \begin{align} \theta_{2N}\theta_0\theta_r&=\theta_{2N}\theta_{2r}\theta_0&&{\rm using\ (6)\ with\ }m=0,n=r&\\ &=\theta_{2r}\theta_{N+r}\theta_0&&{\rm using\ (6)\ with\ }m=2r,n=2M\\ &=\theta_{2r}\theta_0\theta_{M+r}&&{\rm using\ (6)\ with\ }m=0,n=M+r\\ &=\theta_0\theta_r\theta_{M+r}&&{\rm using\ (6)\ with\ }m=0,n=r\\ &=\theta_0\theta_N\theta_r&&{\rm using\ (6)\ with\ }m=r,n=M. \end{align} 
-n\in\{1,2\}
-N\in\{1,2\}
-G
-f,g
-n=N
-n\in\{1,2\}\setminus\{N\}
-N=2
-n=2
-n=1
-f,g
-f^2,g
-f,g
-G=GL_2(\mathbb{R})
-AB=-BA
-f=A
-g=B
- A=\left(\begin{array}{cc}0&1\\1&0\end{array}\right),\ B=\left(\begin{array}{cc}1&0\\0&-1\end{array}\right) 
-N=1
-n=1
-n=2
-V
-(\mathbb{C}^2)^\mathbb{Z}
-v\colon\mathbb{Z}\to\mathbb{C}^2
-M_k\in GL_2(\mathbb{C})
-k\in\mathbb{Z}
-G=GL(V)
-V
-v\in V
-n=1
-M_0,M_1\in GL_2(\mathbb{C})
-GL_2(\mathbb{C})
-M_0=A
-M_1=B
-M_2^2
-M_2^2,M_1
-M_2^2,M_1^2
-k=0,n=1
-k=0,n=2
-n=2
- \begin{align} fv(k)&=M_kv(k),\\ gv(k)&=v(k+1). \end{align} 
- \begin{align} f^{-n}gf^ngv(k)&=M^{-n}_kM^n_{k+1}v(k+2),\\ gf^{-2n}gf^{2n}v(k)&=M^{-2n}_{k+1}M^{2n}_{k+2}v(k+2). \end{align} 
- \begin{align} M^{-n}_kM^n_{k+1}=M^{-2n}_{k+1}M^{2n}_{k+2}.&&{\rm(7)} \end{align} 
- \begin{align} M^2_{k+2}&=M^{2}_{k+1}M^{-1}_kM_{k+1},&(k\ge0)\\ M_k&=M_{k+1}M^{-2}_{k+2}M^2_{k+1}.&(k < 0) \end{align} 
- M_0^{-2}M_1^2=-(M_0^{-1}M_1)^2=-(M_1^{-2}M_2^2)^2=-M_1^{-4}M_2^4. 

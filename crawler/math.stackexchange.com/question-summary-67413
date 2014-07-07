@@ -1,8 +1,0 @@
- \int \frac{1}{\sqrt{x(1+e^x)}}\mathrm dx 
-x
- \int_{0}^{\infty} \frac{1}{\sqrt{x(1+e^x)}}\mathrm dx 
- u=\sqrt{x(1+e^x)} 
- u=\frac{1}{\sqrt{x(1+e^x)}} 
- \begin{align} \int_0^\infty\frac{1}{\sqrt{x(1+e^x)}}\mathrm{d}x &=2\int_0^\infty\frac{1}{\sqrt{1+e^{x^2}}}\mathrm{d}x\\ &=2\int_0^\infty(1+e^{-x^2})^{-1/2}e^{-x^2/2}\;\mathrm{d}x\\ &=2\int_0^\infty\sum_{k=0}^\infty(-\tfrac{1}{4})^k\binom{2k}{k}e^{(2k+1)x^2/2}\;\mathrm{d}x\\ &=\sum_{k=0}^\infty(-\tfrac{1}{4})^k\binom{2k}{k}\sqrt{\frac{2\pi}{2k+1}} \end{align} 
-    \frac{1}{\sqrt{1+\mathrm{e}^x}} = \frac{\mathrm{e}^{-x/2}}{\sqrt{1+\mathrm{e}^{-x}}} = \sum_{n=0}^\infty \binom{-\frac{1}{2}}{n} \mathrm{e}^{-\left(n+\frac{1}{2}\right)x} 
-    \int_0^\infty \frac{1}{\sqrt{x \left(1+\mathrm{e}^x \right)}} \mathrm{d} x = \sum_{n=0}^\infty \binom{-\frac{1}{2}}{n} \sqrt{ \frac{2 \pi }{ 2n+1}} \simeq 2.0343 

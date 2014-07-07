@@ -1,16 +1,0 @@
-X_1, X_2
-X_3
-f(x;\lambda)=\lambda e^{-\lambda x} \;\; , \text{for } \lambda >0 \;.
-\begin{eqnarray}L(\lambda;x_1,x_2,x_3) & = & f(x_1;\lambda)\times f(x_2;\lambda)\times f(x_3;\lambda) \\ & = & \lambda e^{-\lambda x_1}\lambda e^{-\lambda x_2}\lambda e^{-\lambda x_3} \\  & = & \lambda^3 e^{-\lambda (x_1+x_2+x_3)}  \end{eqnarray}
-x_1,x_2,x_3
-\lambda
-\begin{eqnarray}\log L(\lambda;x_1,x_2,x_3) & = & \log f(x_1;\lambda) + \log f(x_2;\lambda) + \log f(x_3;\lambda) \\ & = & \log\left(\lambda^3 e^{-\lambda (x_1+x_2+x_3)}\right) \\ & = & 3\log\lambda -\lambda (x_1+x_2+x_3)\end{eqnarray}
-\lambda
-\begin{eqnarray}\frac{d\log L(\lambda;x_1,x_2,x_3)}{d\lambda} & = & 0\\ \frac{d}{d\lambda}\left(3\log\lambda -\lambda (x_1+x_2+x_3)\right) & = & 0 \\ \frac{3}{\lambda} -(x_1+x_2+x_3) & = & 0 \\ \frac{3}{\lambda} & = & x_1+x_2+x_3 \\ \frac{1}{\lambda} & = & \frac{x_1+x_2+x_3}{3} \\ \lambda & = & \frac{3}{x_1+x_2+x_3} \end{eqnarray}
-n
-f(X;\theta)
-X=(X_1,X_2,X_3)
-\theta
-n
-x_i=(x_{i,1},x_{i,2},x_{i,3})
-L(\theta;x_1,\ldots,x_n) = \prod_{i=1}^n f(x_i;\theta) = \prod_{i=1}^n  f(x_{i,1},x_{i,2},x_{i,3};\theta) \; .

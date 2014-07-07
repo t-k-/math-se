@@ -1,30 +1,0 @@
-a>-1
-\sum_{n=1}^\infty\frac{(n-1)!}{n\prod\limits_{i=1}^n(a+i)}=\sum_{k=1}^\infty \frac{1}{(a+k)^2}.
-\prod_{i=1}^{n}(a+i)=\frac{\Gamma(n+a+1)}{\Gamma(a+1)}.
-\frac{1}{1-x}
-\frac{(n-1)!}{\prod_{i=1}^{n}(a+i)}=\frac{\Gamma(n)\Gamma(a+1)}{\Gamma(n+a+1)}=\text{B}(n,a+1)=\int_{0}^{1}(1-x)^{n-1}x{}^{a}dx.
-\sum_{n=1}^{\infty}\frac{(n-1)!}{n\prod_{i=1}^{n}(a+i)}=\int_{0}^{1}x^{a}\left(\sum_{n=1}^{\infty}\frac{(1-x)^{n-1}}{n}\right)dx.
-\int_{0}^{1}x^{a}\frac{-\log x}{1-x}dx.
-\sum_{m=0}^{\infty}-\int_{0}^{1}x^{a+m}\log xdx.
--\int_{0}^{1}x^{a+m}\log xdx=\frac{1}{(a+m+1)^{2}},
-\sum_{n=1}^{\infty}\frac{(n-1)!}{n\prod_{i=1}^{n}(a+i)}=\sum_{m=1}^{\infty}\frac{1}{(a+m)^{2}}.
-a
-\Delta
-\Delta f(n) = f(n+1) - f(n)
-\Delta n^{\underline{a}} = a n^{\underline{a-1}}
- n^{\underline{a}} = \begin{cases} n(n-1)(n-2) \dots (n-a+1), & a > 0, \\ 1, & a=0 \\ \frac{1}{(n+1)(n+2) \dots (n+|a|)}, & a < 0, \end{cases} 
-F_a(n)
-\Delta(f(n)g(n)) = \Delta f(n) \, g(n+1) + f(n) \Delta g(n)
- F_a(n) = \frac{(n-1)!}{n\prod_{i=1}^n(a+i)} = \frac{(n-1)! a!}{n (a+n)!} = \frac{a!}{n \cdot n(n+1)(n+2) \dots (n+a)} 
-= \frac{(a-1)!}{n} \left( -(-a) (n-1)^{\underline{-(a+1)}}\right) = -\frac{(a-1)!}{n} \Delta\left( (n-1)^{\underline{-a}}\right). 
- F_a(n) = - \Delta\left( \frac{(a-1)!}{n} (n-1)^{\underline{-a}}\right)   + \Delta\left( \frac{(a-1)!}{n} \right) \, n^{\underline{-a}} 
- = - \Delta\left( \frac{(a-1)!}{n \cdot n (n+1) \dots (n+a-1)} \right)   + (a-1)! \left( \frac{1}{n+1} - \frac{1}{n} \right) \frac{1}{(n+1)\dots (n+a)} 
-= - \Delta\left( \frac{(a-1)!}{n \cdot n(n+1) \dots (n+a-1)} \right)   + F_{a-1}(n+1) - (a-1)! \Delta\left( \frac{(n-1)^{\underline{-a}}}{-a} \right). 
-n \ge 1
-F_{a-1}(1) = 1/a
- \sum_{n=1}^{\infty} F_a(n) = \frac{(a-1)!}{1 \cdot a!} + \sum_{n=1}^{\infty} F_{a-1}(n+1)   - \frac{(a-1)!}{a} 0^{-\underline{a}} 
- = \frac{1}{a} + \sum_{m=2}^{\infty} F_{a-1}(m)   - \frac{1}{a^2} 
- = \sum_{m=1}^{\infty} F_{a-1}(m) - \frac{1}{a^2} 
-F_0(n) = 1/n^2
-n
- \sum_{n=1}^{\infty} F_a(n) = \sum_{n=1}^{\infty} F_{a-1}(n) - \frac{1}{a^2} = \dots = \sum_{n=1}^{\infty} F_0(n) - \left( \frac{1}{a^2} + \dots + \frac{1}{1^2} \right) = \sum_{n=a+1}^{\infty} \frac{1}{n^2} = \sum_{k=1}^{\infty} \frac{1}{(k+a)^2}. 

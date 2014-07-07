@@ -1,23 +1,0 @@
- \sup_{t \in [0,1]}  \left( \inf_{X \in C^1([0,1])}  \left\| \frac{dX(t)}{dt} - A(t)X(t) - F(t) \right\| \right) 
-\displaystyle\min\int_0^1\left(\left\|\frac{dX(t)}{dt}-A(t)X(t)-F(t)\right\|\mathrm{d}t\right) ,X(0)=X_0,X(t)\in K\subseteq\mathbb{R}^n\;,
-K
-X
-t
-X
-u\mapsto (u-t)F(t)
-X(t)=0
-A(t)X(t)
--F(t)
-X
-\inf
-0
-t
-0
-X(t) = Y(t) \, \mathrm{exp}\left( \left( \int_0^t A(z) \, dz \right)t \right)
-Y \, e^{t \int A }
-C^1([0,1])
-A
-F
- \frac{dX}{dt} - A(t)X(t) - F(t) = 0 
- \frac{d(Y \, e^{t \int A })}{dt} - A Y \, e^{t \int A } - F(t) = Y'e^{t \int A } + AY \, e^{t \int A } -A Y \, e^{t \int A } - F(t) = Y' \, e^{t \int A } - F(t) = 0 
- X(t) = Y(t) \, e^{t \int A }= e^{t \int_0^t A} \int_0^t e^{-u \int_0^u A} F(u) \, du.  

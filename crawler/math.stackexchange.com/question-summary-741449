@@ -1,9 +1,0 @@
-cov(y_i, \frac{\sum{y_i}}{n})
-y_i = \beta_0 + \beta_1x_i + \epsilon_i
-cov(y_i, \frac{\sum{y_i}}{n}) = \frac{1}{n}cov(y_i, \sum{y_i}) = \sum\frac{1}{n}var(y_i) = \frac{1}{n}\sum\sigma^2
-var(y_i) = \sigma^2
-\sum\limits_{i=1}^n y_i = \sum\limits_{i=1}^n [\beta_0 + \beta_1 x_i + \epsilon_i]=n\beta_0 + \beta_1\sum\limits_{i=1}^n x_i + \sum\limits_{i=1}^n \epsilon_i
-\frac{\sum\limits_{i=1}^n y_i }{n} = \bar y= \beta_0 + \beta_1\bar x + \frac{1}{n}\sum\limits_{i=1}^n \epsilon_i
-y_t = \beta_0 + \beta_1 x_t + \epsilon_t
-cov(y_i,\bar y)=E[y_i \bar y]-E[y_i]E[\bar y]=E[\beta_0^2+\beta_0 \beta_1\bar x+\frac{\beta_0}{n}\sum\limits_{i=1}^n \epsilon_i + \beta_0\beta_1x_i+\beta_1^2\bar x x_i+\frac{\beta_1x_i}{n}\sum\limits_{i=1}^n \epsilon_i +\beta_0\epsilon_i+\beta_1^\bar x \epsilon_i+\frac{\epsilon_i}{n}\sum\limits_{i=1}^n \epsilon_i]-E[\beta_0+\beta_1 x_i+\epsilon_i]E[\beta_0 + \beta_1\bar x + \frac{1}{n}\sum\limits_{i=1}^n \epsilon_i]
-\beta_0^2+\beta_0 \beta_1\bar x + \beta_0\beta_1x_i+\beta_1^2\bar x x_i+E[\frac{\epsilon_i^2}{n}]-[\beta_0+\beta_1 x_i][\beta_0 + \beta_1\bar x]= E[\frac{\epsilon_i^2}{n}] = \frac{\sigma^2}{n}

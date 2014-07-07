@@ -1,13 +1,0 @@
-H(z)= \int_{e^z}^{\cos z} \ln(w^3) ~dw.
-f(w)=\ln(w^3)
-F(w)
-f(w)
-H(z)=F(\cos z)-F(e^z)
-F(w)
-H(z)
-f(u)
-h(x)
-\frac{d}{dx} \int_a^x f(u)\,du = f(x).
-\frac{d}{dx} \int_a^{h(x)} f(u)\,du = f(h(x))h'(x).
-\begin{align*} \frac{d}{dz}H(z) &= \frac{d}{dz}\int_{e^z}^{\cos z} \ln(w^3)\,dw\\ &=\frac{d}{dz}\left(\int_{e^z}^1\ln(w^3)\,dw +\int_1^{\cos z}\ln(w^3)\,dw\right)\\ &=\frac{d}{dz}\left(\int_1^{\cos z}\ln(w^3)\,dw - \int_1^{e^z}\ln(w^3)\,dw\right)\\ &=\frac{d}{dz}\int_1^{\cos z}\ln(w^3)\,dw - \frac{d}{dz}\int_1^{e^z}\ln(w^3)\,dw\\ &= \ln(\cos^3(z))(\cos z)' - \ln((e^z)^3)(e^z)'\\ &= -3\sin z\ln(\cos z) - 3ze^z. \end{align*}
-x = w^3

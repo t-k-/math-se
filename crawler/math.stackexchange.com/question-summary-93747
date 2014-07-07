@@ -1,50 +1,0 @@
- d=\gcd \left({2n \choose 1}, {2n \choose 3},\cdots, {2n \choose 2n-1}\right) 
- \sum_{k=0}^{n-1}{2n \choose 2k+1}=2^{2n-1} 
- d=2^k, 0\leq k\leq2n-1 
-q = 2^i
-2^i | 2n
-2^{i+1} \not|2n
-d=q
-{2n \choose 2k+1}
-0 \leq k \leq n-1
-q
-\begin{align*}   {2n \choose 2k+1} &= \frac{(2n)(2n-1)(2n-2) \cdots (2n- [2k+1] + 1)}{(2k+1)(2k)(2k-1)\cdots(1)}\\   &= \frac{2n}{2k+1} \cdot {2n-1 \choose 2k}\\   &= \frac{2n{2n-1 \choose 2k}}{2k+1}  \end{align*}
-k \leq n-1
-2k < 2n-1
-{2n-1 \choose 2k}
-{2n \choose 2k+1}
-2k+1
-2
-2k+1
-q
-{2n \choose 2k+1}
-d \leq q
-q
-d
-{2n \choose 1} = 2n
-d
-d=q
-p
-2n
-2n = mp^k
-p\nmid m
-\begin{align*} \binom{2n}{p^k}&=\frac{(2n)!}{p^k!(2n-p^k)!}\\ &=\frac{(mp^k)!}{p^k!((m-1)p^k)!}\\ &=\frac1{p^k!}\prod_{i=0}^{p^k-1}(mp^k-i)\\ &=m\prod_{i=1}^{p^k-1}\frac{(m-1)p^k+i}i \end{align*}
-p
-p\nmid m
-1\le i\le p^k-1
-p^s
-p
-(m-1)p^k+i
-s<k
-p^s\mid i
-p
-\dbinom{2n}{p^k}
-p\nmid d
-\frac{(m-1)p^k+i}i
-d\mid 2n
-d
-2n
-d
-d
-2
-2n

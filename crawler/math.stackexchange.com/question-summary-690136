@@ -1,6 +1,0 @@
-T(n)=2T(n-1)+1\iff T(n)+1=2[T(n-1)+1]
-\displaystyle T(n)+1=U(n)\implies U(n)=2U(n-1)
-U(1)=\cdots
-\displaystyle\implies U(n)=2^rU(n-r) 
-1\le r<n
-\begin{align} T(n)&=2T(n-1)+1\\ &=2[2T(n-2)+1]+1\\ &=4T(n-2)+3\quad\text{(intermediate step)}\\ &=4[2T(n-3)+1]+3\\ &=8T(n-3)+7\quad\text{(intermediate step)}\\ &=8[2T(n-4)+1]+7\\ &=16T(n-4)+15\quad\text{(intermediate step)}\\ &\vdots \end{align}

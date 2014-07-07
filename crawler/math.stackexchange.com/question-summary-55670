@@ -1,39 +1,0 @@
-a_n
-S_n = \sum_{i = 1} ^ n a_i
-\infty
-\epsilon > 0
-\sum_{n = 1} ^ \infty \frac{a_n}{S_n^{1 + \epsilon}} < \infty?
-\epsilon \ge 1
-n
-\frac{a_n}{S_n^{1 + \epsilon}}
-\frac 1 {S_{n - 1}} - \frac 1 {S_n}
-\epsilon > 0
- \epsilon = 0
-(0, 1)
-\frac{a_n}{S_n ^ 2} \le \frac 1 {S_{n - 1}} - \frac 1 {S_n}
-z_n
-S_{n-1}
-S_n
-\frac{1}{S_n^\epsilon}
-0
- \frac{1}{S_{n-1}^\epsilon}-\frac{1}{S_n^\epsilon}=\epsilon\frac{S_n-S_{n-1}}{z_n^{1+\epsilon}} 
- \begin{align} \frac{1}{S_{k-1}^\epsilon}-\frac{1}{S_N^\epsilon} &=\sum_{n=k}^N\frac{1}{S_{n-1}^\epsilon}-\frac{1}{S_n^\epsilon}\\ &=\sum_{n=k}^N\;\epsilon\frac{S_n-S_{n-1}}{z_n^{1+\epsilon}}\\ &=\sum_{n=k}^N\;\epsilon\left(\frac{S_n}{z_n}\right)^{1+\epsilon}\;\frac{S_n-S_{n-1}}{S_n^{1+\epsilon}}\\ &\ge\epsilon\sum_{n=k}^N\frac{S_n-S_{n-1}}{S_n^{1+\epsilon}}\\ &=\epsilon\sum_{n=k}^N\frac{a_n}{S_n^{1+\epsilon}} \end{align} 
-\displaystyle \frac{1}{S_{n-1}^{\varepsilon}} - \frac{1}{S_n^{\varepsilon}}
-\varepsilon \gt 0
-\varepsilon = 1
-\displaystyle \frac{1}{S_{n-1}^{\varepsilon}} - \frac{1}{S_n^{\varepsilon}} =  \frac{1}{(S_n - a_n)^{\varepsilon}} - \frac{1}{S_n^{\varepsilon}}
-\displaystyle t = \frac{a_n}{S_n}
-\displaystyle \frac{1}{S_n^\varepsilon}((1-t)^{-\varepsilon} - 1) \ge \frac{\varepsilon t}{S_n^{\varepsilon}} = \frac{\varepsilon a_n}{S_n^{1 + \varepsilon}}
-(1+x)^r \ge 1 + rx, x \gt -1, r \le 0
-p>1
-\displaystyle \int_{S_{n-1}}^{S_n}\frac{dx}{x^p}\ge \int_{S_{n-1}}^{S_n}\frac{dx}{S_n^p}=\frac{a_n}{S_n^p}
-\displaystyle\implies\frac{1}{p-1}\frac{1}{S_1^{p-1}}\ge\frac{1}{p-1}\bigg(\frac{1}{S_1^{p-1}}-\frac{1}{S_n^{p-1}}\bigg)=\int_{S_{1}}^{S_n}\frac{dx}{x^p}\ge \sum\limits_{k=2}^{n}\frac{a_n}{S_n^p}
-p=1
-\displaystyle \ln(S_n)-\ln(S_1)=\int_{S_1}^{S_n}\frac{dx}{x}=\sum\limits_{k=2}^n\int_{S_{k-1}}^{S_k}\frac{dx}{x}\le \sum\limits_{k=2}^n\frac{a_k}{S_{k-1}}
-S_n\to\infty
-n\to\infty
-\frac{S_n}{S_{n-1}}=\frac{S_{n-1}+a_n}{S_{n-1}}\to 1
-n\to\infty
-\frac{a_n}{S_n}
-\frac{a_n}{S_{n-1}}
-\displaystyle\sum\limits_n\frac{a_n}{S_n}

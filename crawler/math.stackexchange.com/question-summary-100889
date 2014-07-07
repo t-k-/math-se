@@ -1,13 +1,0 @@
-f
-n
-c
-  \frac{1}{n} \cdot \frac{1}{c^{n} } \int _{0}^{c}\int _{0}^{c}\cdot \cdot \cdot \int _{0}^{c}f(x_{1} )+f(x_{2} )+...+f(x_{n} )dx_{n} \cdot \cdot \cdot dx_{2} dx_{1}    =\frac{1}{c} \int _{0}^{c}f(x)dx  
-\frac{1}{nc^{n} } \int _{0}^{c}\int _{0}^{c}\cdot \cdot \cdot \int _{0}^{c}f(x_{1} )+f(x_{2} )+...+f(x_{n} )dx_{n} \cdot \cdot \cdot dx_{2} dx_{1} 
-=\frac{1}{nc^n}\left(\int_0^c\cdots\int_0^cf(x_1)dx_1\cdots dx_n+\cdots+\int_0^c\cdots\int_0^cf(x_n)dx_1\cdots dx_n\right)
-=\frac{1}{nc^n}\left(n\times \int_0^c\int_0^c\cdots\int_0^c f(u)dudx_1\cdots dx_{n-1}\right)
-=\frac{1}{c^n} \int_0^c f(u)du\cdot\int_0^c dx_1\cdots\int_0^cdx_{n-1}
-=\frac{1}{c}\int_0^cf(u)du. 
-n=3
-\int_0^c \int_0^c \int_0^c f(x_1)+f(x_2)+f(x_3)\,dx_3\,dx_2\,dx_1 = \int_0^c \int_0^c cf(x_1)+cf(x_2)+\left(\int_0^c f(x_3)\,dx_3\right)\,dx_2\,dx_1
-= \int_0^c c^2f(x_1)+c\left(\int_0^c f(x_2)\,dx_2\right)+c\left(\int_0^c f(x_3)\,dx_3\right)\,dx_1 
-= c^2\left(\int_0^c f(x_1)\,dx_1\right)+c^2\left(\int_0^c f(x_2)\,dx_2\right)+c^2\left(\int_0^c f(x_3)\,dx_3\right) = 3c^2\int_0^c f(x) dx

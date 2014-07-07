@@ -1,29 +1,0 @@
-E[\cos(X)e^X]
-X\sim N(0,\sigma^2)
-B_t
-t = \sigma^2
-B_t\sim\mathcal N(0,t).
-f\in C^2
-\mathsf E\int\limits_0^tf'(B_s)\mathrm dB_s = 0
- \mathsf E \left[\cos{B_t}\mathrm e^{B_t}\right] 
- f(B_t) - f(B_0) = \frac12\int\limits_0^t f''(B_s)\,\mathrm d s+\int\limits_0^tf'(B_s)\mathrm dB_s, 
- \mathsf E[f(B_t)] - f(0) = \frac12\int\limits_0^t\mathsf E[f''(B_s)]\mathrm ds \quad(\star) 
-f(x) = \cos x\cdot\mathrm e^x
-f(0) = 1
-f''(x) = \sin x\cdot\mathrm e^x
-m(t) = \mathsf E f(B_t)
-(\star)
-n(s) =E[\sin B_s\cdot\mathrm e^{B_s}] 
-m(0) = 1
- m(t) = 1-\int\limits_0^t \mathsf E[\sin B_s\cdot\mathrm e^{B_s}]\mathrm d s. 
- m'(t) = -n(t). 
-\sin x\mathrm e^x
-n(0) = 0
- n'(t) = m(t). 
-m'' = -n' = -m
-m''+m = 0
-m(t) = \alpha \sin t+\beta\cos t
-\beta = 1
-\alpha = 0
- m(t) = \cos t 
- \mathsf E[\cos X\mathrm e^X] = \cos \sigma^2. 

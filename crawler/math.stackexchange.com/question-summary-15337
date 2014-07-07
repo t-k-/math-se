@@ -1,38 +1,0 @@
-\displaystyle 0\lt \alpha \lt 1
-\displaystyle i=\sqrt{-1}
-\left |\int_1^N e^{ix^\alpha} \ \text{dx} \right| = \mathcal{O}(N^\alpha)?
-{\bf Edit.}
-\left |\int_1^N e^{ix^\alpha} \ \text{dx} \right| = \mathcal{O}(N^{1-\alpha}).
-\alpha
-O(N^{1-\alpha})
-y = x^\alpha
- \alpha \int_1^{N^\alpha} y^{\frac{1-\alpha}\alpha} e^{iy} dy 
-y
- = \frac{\alpha}{i}\left( N^{1-\alpha} e^{i N^\alpha} - e^i \right) - \frac{1-\alpha}{i} \int_1^{N^\alpha} y^{\frac{1-2\alpha}\alpha} e^{iy} dy
-M = \lceil \frac{1}{\alpha} \rceil
- = O(N^{1-\alpha} + N^{1-2\alpha} + \ldots + N^{1-(M-1)\alpha}) + O(\int_1^{N^\alpha} y^{\frac{1-M\alpha}{\alpha}} e^{iy} dy) 
-M\alpha \geq 1
-N
-O(\cdot)
-\phi\colon(a,b)\to\mathbb{R}
-|\phi^{(k)}(x)|\ge1
-a<x<b
-k\ge2
-k\ge1
-\phi'
- \left|\int_1^N e^{i\lambda\phi(x)}dx\right|\le C_k\lambda^{-1/k}. 
-\phi\colon(a,b)\to\mathbb{R}
-|\phi^{(k)}(x)|\ge\lambda
-a<x<b
- \left|\int_a^b e^{i\phi(x)}dx\right|\le C_k\lambda^{-1/k}. 
-\int_1^N e^{ix^\alpha}dx
-a=1
-b=N
-\phi(x)=x^\alpha
-k=1
-\phi'(x)=\alpha\,x^{\alpha-1}
-|\phi'(x)|\ge\alpha\,N^{\alpha-1}(=\lambda)
-\alpha = 0
-(N-1)e^{i} = \mathcal{O}(N)
-\alpha = 1
-\frac{e^{iN}-e^{i}}{i} = \mathcal{O}(1)

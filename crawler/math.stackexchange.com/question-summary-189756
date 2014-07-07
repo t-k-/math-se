@@ -1,9 +1,0 @@
-x
-\mu_x = \frac{1}{200-x} + \frac{1}{100-x}
-x<100
-t
-\exp \left(-\int_{x}^{x+t} \frac{1}{200-s} \ ds- \int_{x}^{x+t} \frac{1}{100-s} \ ds \right)
- = \exp \left(\ln(200-s) |^{x+t}_{x} + \ln(100-s) |^{x+t}_{x} \right)
-S(t) = \mathbb{P}(T>t)
-T
-     S(t) = \exp\left(-\int_0^t \mu_x \mathrm{d}x\right) = \exp\left(-\int_0^t \mu_x \mathrm{d}x\right) = \left(1-\frac{t}{200}\right)\left(1-\frac{t}{100}\right) 

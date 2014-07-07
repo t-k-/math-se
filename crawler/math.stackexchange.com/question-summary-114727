@@ -1,15 +1,0 @@
- \mathbb{E}(\mathbb{E}(z^{T_1}|X_1))  = \mathbb{E}(z^{1+T_{1-X_1}})  = z \mathbb{E}\left(F_{1-X_1}(z)\right)  = z \mathbb{E}\left(F_1(z)^{1-X_1}\right)  = z F_1(z)G(F_1(z)) 
- \begin{align*} \mathbb{E}(\mathbb{E}(z^{T_1}|X_1))  & = \sum_{n=-1}^\infty \mathbb{E}(z^{T_1}|X_1=-n)\ \mathbb{P}(X_1=-n) \\  & = z \mathbb{P}(X_1=1) + \sum_{n=0}^\infty \mathbb{E}(z^{T_1}|X_1=-n)\ \mathbb{P}(X_1=-n)  & T_1=1 \Leftrightarrow X_1=1 \\  & = z \mathbb{P}(X_1=1) + \sum_{n=0}^\infty \mathbb{E}(z^{1+T_{1+n}})\ \mathbb{P}(X_1=-n)  & \textrm{homogeneity} \\  & = z \mathbb{P}(X_1=1) + z \sum_{n=0}^\infty F_{1+n}(z)\ \mathbb{P}(X_1=-n)  & \textrm{definition of }F \\  & = z \mathbb{P}(X_1=1) + z \sum_{n=0}^\infty F_1(z)^{1+n}\ \mathbb{P}(X_1=-n)  & \textrm{equation (9)} \\  & = z F_1(z) \sum_{n=-1}^\infty F_1(z)^n\ \mathbb{P}(X_1=-n) \\  & = z F_1(z) G(F_1(z))  & \textrm{definition of }G \end{align*} 
-n=-1
-T_0=0
-n=-1
-\mathbb{E}(\mathbb{E}(z^{T_1}|X_1)) = z F_1(z)G(F_1(z))
- \mathbb{E}\left(F_1(z)^{1-X_1}\right)  = \sum_{n=0}^\infty F_1(z)^n\ \mathbb{P}(1-X_1=n)  = \sum_{n=-1}^\infty F_1(z)^{1+n}\ \mathbb{P}(X_1=-n)  = F_1(z)G(F_1(z)) 
-T_0=0
-\mathrm E(z^{T_1}\mid X_1=1)=z
-\mathrm E(z^{1+T_0})
-k\leqslant0
-\mathrm E(z^{T_1}\mid X_1=k)=\mathrm E(z^{1+T_{1-k}})
-F_0(z)=\mathrm E(z^{T_0})=1
-b=0
-\mathrm E(z^{T_1})

@@ -1,47 +1,0 @@
-100,000, and were going to withdrawal \
-1.06
- \begin{array}{rl} \text{Deposit, withdrawal 0:}&100000 \\ \text{After withdrawal 1:}&(100000)(1.06) - 5000 \\ \text{After withdrawal 2:}&(100000)(1.06)^2 - (5000)(1.06) - 5000\\ \text{After withdrawal 3:}&(100000)(1.06)^3 - (5000)(1.06)^2 - (5000)(1.06) - 5000\\ &\vdots \\ \text{After withdrawal n:}&(100000)(1.06)^n - (5000)(1.06)^{n-1} - \dots - (5000)(1.06)^0\\ =&(100000)(1.06)^n - (5000)\sum_{k=0}^{n-1}(1.06)^k \\ \end{array} 
-d
-r
-w
- \begin{array}{rl} \text{Deposit, withdrawal 0:}&d \\ \text{After withdrawal 1:}&dr - w \\ \text{After withdrawal 2:}&dr^2 - wr - w\\ \text{After withdrawal 3:}&dr^3 - wr^2 - wr - w\\ &\vdots \\ \text{After withdrawal n:}&dr^n - wr^{n-1} - \dots - wr^0\\ =&dr^n - w\sum_{k=0}^{n-1}r^k \\ \end{array} 
-n
- dr^n - w(\frac{r^n - 1}{r - 1}) 
-d-w
-d
-m
-d-w
-r^{(m/365)}
-(d-w) r^{(m/365)}
-(d-w) r^{(m/365)} - w
-d
-0
-w
- ((d-w) r^{(m/365)} - w)r^n - w(\frac{r^n - 1}{r - 1}) 
-w
- w = \frac{d (r-1) r^{\frac{m}{365}+n}}{-r^{\frac{m}{365}+n}+r^{\frac{m}{365}+n+1}+r^{n+1}-1} 
-w
- ((100000-w) (1.03)^{(150/365)} - w)(1.03)^4 - w(\frac{(1.03)^4 - 1}{(1.03) - 1})=0 
- \frac{100000 (1.03-1) 1.03^{\frac{150}{365}+4}}{-1.03^{\frac{150}{365}+4}+1.03^{\frac{150}{365}+4+1}+1.03^{4+1}-1} 
-n=4
-4
-n=5
-15355.50
-B
-r
-x
-m
-s
-v=1+(mr/365)
-x
-B-x
-m
-(B-x)v
-x
-2m
-v^2B-(v^2+v)x
-s
-x
-(B-x)v-x=vB-(v+1)x
-v^2B-(v^2+v+1)x
-v^{s-1}B-(v^{s-1}+v^{s-2}+\cdots+1)x=v^{s-1}B-{v^s-1\over v-1}x

@@ -1,9 +1,0 @@
-T(n)=\sqrt{n}T(\sqrt{n})+cn
-c
-\begin{split} T(n) &= n^{1/2} T\left(n^{1/2}\right) + cn \\      &= n^{1/2} \left[ n^{1/4} T\left(n^{1/4}\right)+cn^{1/2} \right] + cn\\      &= n^{1/2+1/4} T\left(n^{1/4}\right) + cn^{1/2+1/2} + cn\\      &= n^{1/2+1/4} \left[ n^{1/8} T\left(n^{1/8}\right)+cn^{1/4} \right] + 2cn\\      &= n^{1/2+1/4+1/8} T\left(n^{1/8}\right) + 3cn \\      &= \ldots \\      &= n^{1-1/2^k} T\left(n^{1/2^k}\right) + kcn \\      &= \ldots \text{ let } k = \log \log n                \text{ so } 2^k = \log n                \text{ and } n^{2^{-k}} = n^{1/\log n} = 2                \ldots\\      &= \frac{n}{2} T\left(2\right) + cn\log \log n \\      &= \Theta (n \log \log n) \end{split}
-n
-S(n) = T(n)/n
-S(n) = S\left(n^{1/2}\right)+c
- \frac{T(n)}{n} = \frac{T \left( \sqrt{n} \right)}{\sqrt{n}}+c 
-S(k)=2^{-2^k}T(2^{2^k})\implies S(k)=S(k-1)+c\implies S(k)=\Theta(k)
- T(n)=\Theta(n\log\log n). 

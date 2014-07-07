@@ -1,61 +1,0 @@
-a
-f
-x_0
-y_0
-y = a \cos(f(x - x_0)) + y_0
-(x_1, y_1)
-(x_2, y_2)
-x_n
-x
-y_n
-y
-y_i=a\cos(\omega(x_i-x_0))+y_0\;,
-i
-1
-4
-y_0
-a
-\omega
-x_0
-\omega
-f
-f(x-x_0)
-f
-\omega
-i=4
-y_0
-y_0=y_4-a\cos(\omega(x_4-x_0))\;,
-y_i=y_4+a\cos(\omega(x_i-x_0))-\cos(\omega(x_4-x_0))
-i
-1
-3
-i=3
-a
-a=\frac{y_3-y_4}{\cos(\omega(x_3-x_0))-\cos(\omega(x_4-x_0))}\;,
-\frac{y_i-y_4}{\cos(\omega(x_i-x_0))-\cos(\omega(x_4-x_0))}=\frac{y_3-y_4}{\cos(\omega(x_3-x_0))-\cos(\omega(x_4-x_0))}\;,
-(y_i-y_4)(\cos(\omega(x_3-x_0))-\cos(\omega(x_4-x_0)))=(y_3-y_4)(\cos(\omega(x_i-x_0))-\cos(\omega(x_4-x_0)))
-i=1,2
-\omega x_0
- \begin{eqnarray} && (y_i-y_4)(\cos\omega x_3\cos\omega x_0+\sin\omega x_3\sin\omega x_0-\cos\omega x_4\cos\omega x_0-\sin\omega x_4\sin\omega x_0) \\ &=& (y_3-y_4)(\cos\omega x_i\cos\omega x_0+\sin\omega x_i\sin\omega x_0-\cos\omega x_4\cos\omega x_0-\sin\omega x_4\sin\omega x_0)\;, \end{eqnarray} 
-\cos\omega x_0
-\tan\omega x_0
- \begin{eqnarray} && (y_i-y_4)(\cos\omega x_3+\sin\omega x_3\tan\omega x_0-\cos\omega x_4-\sin\omega x_4\tan\omega x_0) \\ &=& (y_3-y_4)(\cos\omega x_i+\sin\omega x_i\tan\omega x_0-\cos\omega x_4-\sin\omega x_4\tan\omega x_0)\;, \end{eqnarray} 
-\tan\omega x_0
-\tan\omega x_0=\frac{ (y_i-y_4)(\cos\omega x_3-\cos\omega x_4) - (y_3-y_4)(\cos\omega x_i-\cos\omega x_4) }{ (y_i-y_4)(\sin\omega x_3-\sin\omega x_4) - (y_3-y_4)(\sin\omega x_i-\sin\omega x_4) } \;, 
-\tan\omega x_0
- \begin{eqnarray} && \frac{ (y_1-y_4)(\cos\omega x_3-\cos\omega x_4) - (y_3-y_4)(\cos\omega x_1-\cos\omega x_4) }{ (y_1-y_4)(\sin\omega x_3-\sin\omega x_4) - (y_3-y_4)(\sin\omega x_1-\sin\omega x_4) }\\ &=& \frac{ (y_2-y_4)(\cos\omega x_3-\cos\omega x_4) - (y_3-y_4)(\cos\omega x_2-\cos\omega x_4) }{ (y_2-y_4)(\sin\omega x_3-\sin\omega x_4) - (y_3-y_4)(\sin\omega x_2-\sin\omega x_4) }\;,\end{eqnarray} 
- \begin{eqnarray} &(\cos\beta-\cos\alpha)(\sin\gamma-\sin\alpha)-(\cos\gamma-\cos\alpha)(\sin\beta-\sin\alpha) \\ &=\sin(\alpha-\gamma)+\sin(\beta-\alpha)+\sin(\gamma-\beta) \end{eqnarray} 
- \begin{eqnarray} && (y_3-y_4)(y_3-y_4)(\sin(\omega(x_2-x_4))+\sin(\omega(x_4-x_1))+\sin(\omega(x_1-x_2))) \\ &-& (y_1-y_4)(y_3-y_4)(\sin(\omega(x_2-x_4))+\sin(\omega(x_4-x_3))+\sin(\omega(x_3-x_2))) \\ &-& (y_2-y_4)(y_3-y_4)(\sin(\omega(x_3-x_4))+\sin(\omega(x_4-x_1))+\sin(\omega(x_1-x_3))) \\ &=&0\;, \end{eqnarray} 
-(y_3-y_4)
- \begin{eqnarray} && (y_1-y_2)\sin(\omega(x_3-x_4)) + (y_3-y_1)\sin(\omega(x_2-x_4)) + (y_3-y_2)\sin(\omega(x_4-x_1)) \\ &+& (y_3-y_4)\sin(\omega(x_1-x_2)) + (y_1-y_4)\sin(\omega(x_2-x_3)) + (y_2-y_4)\sin(\omega(x_3-x_1)) \\ &=&0\;, \end{eqnarray} 
-\sum_{\sigma\in A_4}(y_{\sigma(1)}-y_{\sigma(2)})\sin(\omega(x_{\sigma(3)}-x_{\sigma(4)}))=0\;,
-\sigma
-A_4
-\omega
- x_0=\frac1\omega\arctan\frac{ (y_2-y_4)(\cos\omega x_3-\cos\omega x_4) - (y_3-y_4)(\cos\omega x_2-\cos\omega x_4) }{ (y_2-y_4)(\sin\omega x_3-\sin\omega x_4) - (y_3-y_4)(\sin\omega x_2-\sin\omega x_4) } \;, 
-a=\frac{y_3-y_4}{\cos(\omega(x_3-x_0))-\cos(\omega(x_4-x_0))}\;,
-y_0=y_4-a\cos(\omega(x_4-x_0))\;.
-\omega=0
-\cos(\omega(x_3-x_0))-\cos(\omega(x_4-x_0))
-\omega
-\frac1\omega\sum_{\sigma\in A_4}(y_{\sigma(1)}-y_{\sigma(2)})\sin(\omega(x_{\sigma(3)}-x_{\sigma(4)}))=0\;.

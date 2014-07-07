@@ -1,24 +1,0 @@
-\int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x+\frac{iy}{2})^{2}}dx
-u = \frac{x + \frac{iy}{2}}{\sqrt{2}}du
-\sqrt{2}\int\limits_{*}^{*}e^{-u^{2}}du
-\sqrt{\pi}
-\infty + i = \infty
-g(x) = (x+1)^2e^{-x^2/2}
-\widehat{g}(y) = \int\limits_{-\infty}^{\infty}g(x)\,e^{-ixy}\,dx.
- \begin{eqnarray*} \widehat{g}(y) &=& \int\limits_{-\infty}^{\infty}(x+1)^2\,e^{-x^2/2}\,e^{-iyx}\,dx\\ &=& \int\limits_{-\infty}^{\infty}(x+1)^2e^{-x^2/2 - ixy}\,dx. \end{eqnarray*}
-\color{blue}{f(x) = e^{-x^2/2}}.
-(!!)
-\hat{\!f}'(k) = -k \,\hat{f}(k)
- \begin{align*} \frac{d}{dk} \widehat{f}(k) &= \frac{d}{dk} \int_{-\infty}^{\infty} e^{-x^2/2}e^{-ikx}\,dx \\ &\!\color{red}{\stackrel{(!!)}{=}} \int_{-\infty}^\infty e^{-x^2/2}\, (-ix)\, e^{-ikx}\,dx \tag{!!} \\ &= \int_{-\infty}^\infty i \left(    \frac{d}{dx}e^{-x^2/2} \right) \,  e^{-ikx}\, dx \\ &=  -\int_{-\infty}^\infty i e^{-x^2/2}(-ik)e^{-ikx}\,dx   && \text{(integration by parts)}\\ &= -k \,\hat{\!f}(k). \end{align*} 
- \hat{\!f}(0) = \int_{-\infty}^{\infty} e^{-x^2/2}\,dx = \sqrt{2\pi}, 
-\color{blue}{\hat{f}(k) = \sqrt{2\pi}\,e^{-k^2/2}}.
-f'(x) = -x\,f(x)
-f''(x) = (x^2-1)f(x)
--k^2+2ik+2 = 1+(1+ik)^2
-g(x) = (x+1)^2 f(x) = f''(x) -2f'(x) + 2f(x),
- \begin{align*} \hat{g}(k)  &= \widehat{f''}(k) - 2\widehat{f'}(k) + 2\widehat{f}(k) \\ &= (-k^2+2ik+2) \hat{f}(k) \end{align*} 
-\color{red}{\hat{g}(k) = \sqrt{2\pi}\,(-k^2+2ik+2)\,e^{-k^2/2}},
-(!!)
-|\sin{\frac{hx}{2}}| \leq \dfrac{|hx|}{2}
-|x|e^{-x^2/2}
- \begin{align*} \frac{d}{dk}\hat{\!f}(k) & = \lim_{h\to 0} \frac{1}{h} \left(\hat{\!f}(k+h)-\hat{\!f}(k)\right) \\ &= \lim_{h\to0} \int_{-\infty}^{\infty} e^{-x^2/2} \frac{e^{-ikx}}{h}\underbrace{\left(e^{-ihx}-1\right)}_{\large 2i e^{ihx/2}\sin{\frac{hx}{2}}}\,dx. \end{align*} 

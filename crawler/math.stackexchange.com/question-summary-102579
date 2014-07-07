@@ -1,25 +1,0 @@
-V_1, \ldots, V_n
-n
-V
-\dim(V_1 + \cdots + V_n)
-\dim(V_1 + V_2)=\dim(V_1) + \dim(V_1) - \dim(V_1 \cap V_2)
-i,j,k
-W,X,Y,Z
-i,j,k,i+j
-W+X+Y
-W+X+Z
-W,X,Y,Z
-W+X+Y
-W+X+Z
-V_1' = V_1
-V_2' = V_1' + V_2
-V_i' = V_{i-1}' + V_i
-\dim(V_1 + V_2) = \dim(V_1) + \dim(V_2) - \dim(V_1 \cap V_2)
-\dim(V_2') = \dim(V_1') + \dim(V_2) - \dim(V_1' \cap V_2)
-\dim(V_i') = \dim(V_{i-1}') + \dim(V_i) - \dim(V_{i-1}' \cap V_i)
-\dim (V_{i-1}')
-V_1, V_2, V_3
-V_3' = V_1 + V_2 + V_3
-\dim(V_2') = \dim(V_1) + \dim(V_2) - \dim(V_1 \cap V_2)
-\begin{align*} \dim(V_3') &= \dim(V_2') + \dim(V_3) - \dim(V_2' \cap V_3) = \\ &=\dim(V_1) + \dim(V_2) - \dim(V_1 \cap V_2) + \dim(V_3) - \dim( (V_1 + V_2) \cap V_3) \end{align*}
-\begin{align*} \dim \left( \sum_{i = 1}^n V_i \right) &= \dim \left( \sum_{i = 1}^{n-1} V_i \right) + \dim(V_n) - \dim \left( \sum_{i = 1}^{n-1} V_i \cap V_n \right) = \\ &= \dots = \sum_{i = 1}^n \dim(V_i) - \sum_{j = 1}^{n-1} \dim \left( \sum_{k = 1}^j V_k \cap V_{j+1} \right) \end{align*}

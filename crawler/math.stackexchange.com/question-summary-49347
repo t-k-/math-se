@@ -1,8 +1,0 @@
-L_n
-L_n = F_{n-1} + F_{n+1}
-L_{2n+1} = \displaystyle \sum_{k=0}^{\lfloor n + 1/2\rfloor}\frac{2n+1}{2n+1 - k}{2n+1 - k \choose k} 
-n
-L_{2n+1} = \sum\limits_{k=0}^n \frac{2n+1}{2n+1-k} {{2n+1-k}\choose{k}}.
-\frac{2n+1}{2n+1-k} = 1 + \frac{k}{2n+1-k}
-\frac{k}{2n+1-k} {{2n+1-k}\choose{k}} = {{2n-k}\choose{k-1}},
- \begin{align*} \sum\limits_{k=0}^n \frac{2n+1}{2n+1-k} {{2n+1-k}\choose{k}} &= \sum\limits_{k=0}^n \left(1 + \frac{k}{2n+1-k} \right) {{2n+1-k}\choose{k}}\\ &= \sum\limits_{k=0}^n \left[{{2n+1-k}\choose{k}} + {{2n-k}\choose{k-1}} \right]\\ &= \sum\limits_{k=0}^n {{2n+1-k}\choose{k}} + \sum\limits_{k=0}^n {{2n-k}\choose{k-1}}\\ &= \sum\limits_{k=0}^n {{2n+1-k}\choose{k}} + \sum\limits_{k=-1}^{n-1} {{2n-1-k}\choose{k}}\\ &= \sum\limits_{k=0}^n {{2n+1-k}\choose{k}} + \sum\limits_{k=0}^{n-1} {{2n-1-k}\choose{k}}\\ &= F_{2n+2} + F_{2n}\\ &=L_{2n+1}. \end{align*}

@@ -1,9 +1,0 @@
-K'(x,x') = \exp{\Big( \frac{||x - x'||^2}{2\sigma^2} \Big) }
- K'(x,x') = \frac{K(x,x')}{\sqrt{ K(x,x) K(x',x') } } 
-K(x,x') = \exp{\Big( \frac{x^Tx'}{\sigma^2 } \Big) }
- K'(x,x') = \frac{e^{x^Tx'/\sigma^2 }}{ \exp{ \Big(\frac{||x||^2}{2\sigma^2} \Big)} \exp{\Big(\frac{||x'||^2}{2\sigma^2}\Big) } } 
- = \exp{ \Big( -\frac{||x' - x||^2}{2\sigma^2} \Big) }
-\exp{\text{(something)}}
-e^{\text{something}}
-\begin{align} \lVert x'-x\rVert^2&=(x'-x)^T(x'-x)\\ &=x'^Tx'-2x^Tx'+x^Tx\\ &=\lVert x'\rVert^2-2x^Tx'+\lVert x\rVert^2\\ \end{align}
-\exp\left(-\frac{\lVert x'-x\rVert^2}{2\sigma^2}\right)=\exp\left(\frac{-\lVert x'\rVert^2+2x^Tx'-\lVert x\rVert^2}{2\sigma^2}\right)=\cdots

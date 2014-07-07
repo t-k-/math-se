@@ -1,141 +1,0 @@
-A=[a_{ij}]\in M_{n}
-\lambda_{1}(A)\geq\cdots \geq\lambda_{n}(A)
-1\leq r \leq n-1
-\Sigma_{i=1}^{r}a_{ii} =\Sigma_{i=1}^{r}\lambda_{i}(A)
-A=\begin{pmatrix}  A_{1} & 0 \\  0 & A_{2} \\ \end{pmatrix}
-A_{1}\in M_{r}
-\lambda_{1}(A)\geq\cdots \geq\lambda_{r}(A)
-t(C)
-C
-\langle x, y\rangle = \sum_{j=1}^n x_j y_j^*
-\mathbb{C}^n
-t
-v_1, \dots, v_n
-\mathbb{C}^n
-C \in M_n
-t(C) = \sum_{j=1}^n \langle C v_j, v_j\rangle
-A \in M_n
-\lambda_1 \geq \dots \geq \lambda_n
-1 \leq r < n
-P \in M_n
-P = P^* = P^2
-r
-e_1, \dots, e_n
-\mathbb{C}^n
-Ae_j = \lambda_j e_j
-1 \leq j \leq n
- \sum_{j=1}^r \lambda_j = \sup \{t(A P): P \in M_n, P = P^* = P^2, \operatorname{rank} P = r\}. 
- \begin{align} t(AP) & = \sum_{j=1}^n \langle AP e_j, e_j\rangle  = \sum_{j=1}^n \langle P e_j, A e_j\rangle = \sum_{j=1}^n \lambda_j \langle P e_j, e_j\rangle \\ & = \sum_{j=1}^r \lambda_j \|P e_j\|^2 + \sum_{j > r} \lambda_j \|P e_j\|^2 \\ & \leq \sum_{j=1}^r \lambda_j \|P e_j\|^2 + \sum_{j > r} \lambda_{r+1} \|P e_j\|^2 \\ & = \sum_{j=1}^r \lambda_j \|P e_j\|^2 + \lambda_{r+1} \sum_{j > r} \langle P e_j, e_j\rangle   \\ & = \sum_{j=1}^r \lambda_j \|P e_j\|^2 + \lambda_{r+1} \left(t(P) - \sum_{j=1}^r \langle P e_j, e_j\rangle \right) \\ & = \sum_{j=1}^r \lambda_j \|P e_j\|^2 + \sum_{j=1}^r \lambda_{r+1} (1 - \langle P e_j, e_j\rangle)  \\ & \leq \sum_{j=1}^r \lambda_j \|P e_j\|^2 +  \sum_{j=1}^r \lambda_j (1 - \langle P e_j, e_j\rangle)  \\ & = \sum_{j=1}^r \lambda_j, \end{align} 
-P
-r
-P
-A
-E
-\{e_1, \dots, e_r\}
-E
-A
-\leq
-\lambda_{r+1} - \lambda_j
-\|P e_j\|^2
-j > r
-\lambda_{r+1} = \lambda_j
-\|P e_j\|^2 = 0
-j  > r
-P e_j = 0
-j > r
-P
-\{e_j: j > r\}
-E
-P
-r
-P
-E
-P = E
-P
-A
- \sum_{j > r} (\lambda_{r+1} - \lambda_j) \|P e_j\|^2 = 0 
- (\lambda_{r+1} - \lambda_j) \|P e_j\|^2 = 0, \qquad j > r. 
-\leq
-\lambda_j - \lambda_{r + 1} \geq 0
-1 - \langle P e_j, e_j\rangle  = \|(I - P) e_j\|^2 \geq 0
-1 \leq j \leq r
-\lambda_j = \lambda_{r+1}
-\|(I - P) e_j\|^2 = 0
-1 \leq j \leq r
-I - P
-\{e_1, \dots, e_r\}
-I - E
-I - P = I- E
-P = E
-P
-A
- \sum_{j=1}^r (\lambda_j - \lambda_{r+1}) (1 - \langle P e_j, e_j\rangle) = 0. 
- (\lambda_j - \lambda_{r+1}) \|(I - P) e_j\|^2 = 0, \qquad 1 \leq j \leq r. 
-P = E
-J
-j
-r \leq j \leq n
-\lambda_{r+1} = \lambda_j
-K
-k
-1 \leq k \leq r
-\lambda_j = \lambda_{r+1}
-\lambda
-\lambda_{r+1}
-\lambda_j = \lambda
-K \leq j \leq J
-P e_j = 0
-j > J
-(I - P) e_j = 0
-j < K
-P e_j = e_j
-j < K
-e_j
-j < K
-j > J
-P
-P
-\{e_j: K \leq j \leq J\}
-P
-\{e_1, \dots, e_n\}
-\mathbb{C}^n
-P
-P = \begin{pmatrix} I & 0 & 0 \\ 0 & P' & 0 \\ 0 & 0 & 0 \end{pmatrix}
-I
-(K-1) \times (K-1)
-0
-(n-J) \times (n - J)
-P'
-(J - K + 1) \times (J-K + 1)
-A
-\begin{pmatrix} D & 0 & 0 \\ 0 & \lambda I  & 0 \\ 0 & 0 & D' \end{pmatrix}
-D
-D'
-I
-(J-K+1) \times (J - K + 1)
-P'
-\lambda I
-PA = AP
-\lambda_{r+1}
-r
-P = E
-r
-A
-1 \leq r < n
-P
-e_1, \dots, e_r
-A
-A
-r \times r
-A_1
-(n - r) \times (n - r)
-A_2
-A
-A_1
-A_2
-t(A) = t(A_1) + t(A_2)
-A_1
-\lambda_1, \dots \lambda_r
-A_2
-t(A_1)
- \sum_{j=1}^r \lambda_j = \sup \{t(A P): P \in M_n, P = P^* = P^2, \operatorname{rank} P = r\}, 

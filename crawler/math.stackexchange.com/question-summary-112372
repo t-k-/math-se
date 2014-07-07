@@ -1,8 +1,0 @@
-f(x)=\int_0^{+\infty}  e^{-(t+\frac{1}{t})x}\;dt
- x>0 
- f(x) 
-f(x)
- \begin{align} t & =\frac{1}{z} \\ f(x) & =\int_0^{+\infty} \frac{1}{z^2} e^{-(z+\frac{1}{z})x}dz=\int_0^{+\infty} \frac{1}{t^{2}} e^{-(t+\frac{1}{t})x} \; dt \\ f'(x) & =-\int_{0}^{+\infty} (t+\frac{1}{t}) e^{-(t+\frac{1}{t})x}\;dt \\ f''(x) & = \int_0^{+\infty} (t^2+2+\frac{1}{t^2}) e^{-(t+\frac{1}{t})x}\;dt=\int_0^{+\infty} (t^{2}+\frac{1}{t^2}) e^{-(t+\frac{1}{t})x}dt+2\int_0^{+\infty}  e^{-(t+\frac{1}{t})x}\;dt \\ f''(x) & =\int_0^{+\infty} (t^2+\frac{1}{t^2}) e^{-(t+\frac{1}{t})x}\;dt+2f(x) \\ f''(x)-2f(x) & =\int_0^{+\infty} (t^2+\frac{1}{t^2}) e^{-(t+\frac{1}{t})x} \; dt=\int_0^{+\infty} t^2 e^{-(t+\frac{1}{t})x}\;dt+\int_0^{+\infty} \frac{1}{t^2} e^{-(t+\frac{1}{t})x}\;dt \\ f''(x)-2f(x) & =\int_0^{+\infty} t^2 e^{-(t+\frac{1}{t})x}dt+f(x) \\ f''(x)-3f(x) & =\int_{0}^{+\infty} t^{2} e^{-(t+\frac{1}{t})x}dt \end{align} 
-f(x)=\int_0^{+\infty}  e^{-(t+\frac{1}{t})x}dt=\int_0^1 e^{-(t+\frac{1}{t})x}\;dt+\int_1^{+\infty}  e^{-(t+\frac{1}{t})x}\;dt
-=\int_0^1 e^{-(t+\frac{1}{t})x}\;dt+\int_0^1 \frac{1}{z^2}e^{-(z+\frac{1}{z})x}\;dz=\int_0^1(1+\frac{1}{z^2})e^{-(z+\frac{1}{z})x}\;dz
-f(x)

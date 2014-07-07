@@ -1,31 +1,0 @@
-X_i \stackrel{\mathcal L}{=} i \times U_i
-U_i
-[0,1]
-\sum
-U_i
-[0,1]
-i
- \Pr \{\cap_{j < i} (X_j < X_i) \} 
-X_i
-X_j, j \in [1, i -1]
-M_i = \max \{ X_j: j \le i-1\}
-k \le t \le k+1
-0 \le k \le i-1
-P(M_i \le t) = \prod_{j=k+1}^{i-1} \frac{t}{j} = \frac{t^{i-1-k} k!}{(i-1)!}
-i
-P(M_i \le X_i) = \sum_{k=0}^{i-1} \frac{1}{i} \int_{k}^{k+1} \frac{t^{i-1-k} k!}{(i-1)!}\, dt = \sum_{k=0}^{i-1} \frac{k!}{i!} \frac{(k+1)^{i-k} - k^{i-k}}{i-k}
- 1,\frac{3}{4},{\frac {23}{36}},{\frac {163}{288}},{\frac {3697}{7200}},{ \frac {5113}{10800}},{\frac {38947}{88200}},{\frac {14070953}{33868800 }},{\frac {359861221}{914457600}},{\frac {1713552101}{4572288000}}
-X_i
-X_j
-i \not= j
-\mathbb{E}_{X_i}
-X_i
-U
-\mathcal{U}([0,1))
-u_k = \frac{k}{i}
-0 \le k \le i
-\mathcal{U}((a,b))
-\frac{b^{r+1}-a^{r+1}}{(b-a)(r+1)}
-\mathbb{E}( \left. u^r \right\vert u_k \le U < u_{k+1}) = \frac{u_{k+1}^{r+1} - u_k^{r+1}}{(u_{k+1}-u_k)(r+1)}
-   \mathbb{P}\left( \cap_{j<i} (X_j <X_i) \right) = \mathbb{E}_{X_i} \left( \prod_{j<i} \mathbb{P}(X_j < X_i \vert X_i ) \right) = \mathbb{E}_{U} \left( \prod_{j=1}^{i-1} \min\left(1, \frac{i}{j} U \right) \right). 
-   \begin{eqnarray}  \mathbb{E}_{U} \left( \prod_{j=1}^{i-1} \min\left(1, \frac{i}{j} U \right) \right) &=&       \sum_{k=0}^{i-1} \mathbb{E}_{U} \left( \left. \prod_{j=1}^{i-1} \min\left(1, \frac{i}{j} U \right) \right\vert u_k \le U < u_{k+1} \right) \mathbb{P}( u_k \le U < u_{k+1}) \\   &=& \sum_{k=0}^{i-1} \mathbb{E}\left(  \left. \prod_{j=k}^{i-1}  \frac{i}{j} U \right\vert u_k \le U < u_{k+1}  \right) \frac{1}{i} \\    &=& \sum_{k=0}^{i-1} \mathbb{E}\left(  \left. u^{i-k-1} \frac{k! i^{i-k-1}}{(i-1)!} \right\vert u_k \le U < u_{k+1}  \right) \frac{1}{i} \\   &=& \sum_{k=0}^{i-1} \frac{k! i^{i-k-1}}{(i-1)!} \mathbb{E}\left(  \left. u^{i-k-1}  \right\vert u_k \le U < u_{k+1}  \right) \frac{1}{i}   \end{eqnarray} 

@@ -1,25 +1,0 @@
-K
-V
-K
-p\colon V \to K
-n
-n
-f\colon V^{\times n}\to K
-p(x)=f(x,x,\ldots,x)
-x\in V
-\delta_a p\colon V \to K
-a\in V
-\delta_a p(x)=nf(a,x,\ldots,x)
-x\in V
-p
-a
-a
-p
- \nabla_a p(x) = \lim_{t\to 0} \frac{p(x+ta) - p(x)}{t} 
- p(x+ta) = f(x+ta, x+ta, \ldots, x+ta) 
-n = 3
- \begin{align} f(x+ta,x+ta,x+ta) &= f(x+ta,x+ta,x) + tf(x+ta,x+ta,a) \\ &= f(x+ta,x,x) + tf(x+ta,a,x) + tf(x+ta,x,a) + t^2f(x+ta,a,a) \\ &= f(x,x,x) + t \left(f(x,x,a) + f(x,a,x) + f(a,x,x)\right) \\ &\quad + t^2 \left(f(x,a,a) + f(a,x,a) + f(a,a,x)\right) + t^3 f(a,a,a)\end{align}
-f
- f(x,x,x) + 3t f(x,x,a) + 3t^2 f(x,a,a) + f(a,a,a) 
-p(x+ta)
-\nabla_a p(x) = n f(a,x,x,\ldots,x)

@@ -1,17 +1,0 @@
-X_{1},\ldots,X_{n}
-1 \leq a < b < c < d \leq n
-\mathbb{E}((X_{d}-X_{c})(X_{b}-X_{a}))=0
-\mathbb{E}(X_{k+1}-X_{k}|X_{1},\ldots, X_{k})=0
-1 \leq a \leq b \leq n
-\mathcal{F}_k = \sigma (X_1, \cdots, X_k)
-(X_k)
-Y
-\mathcal{F}_a
-(X_b - X_a)Y
-Y
-\mathcal{F}_a
- \mathbb{E}[ (X_b - X_a) Y ] = 0. 
- \mathbb{E}[ (X_b - X_a) Y ] = \mathbb{E}[ \mathbb{E}[ (X_b - X_a) Y | \mathcal{F}_a ] ]. 
- \begin{align*} \mathbb{E}[ (X_b - X_a) Y ] & = \mathbb{E}[ \mathbb{E}[ (X_b - X_a) Y | \mathcal{F}_a ] ] \\ & = \mathbb{E}[ \mathbb{E}[ X_b - X_a | \mathcal{F}_a ] Y ] \\ & = \mathbb{E}[ (\mathbb{E}[ X_b | \mathcal{F}_a ] - X_a) Y ]. \end{align*}
-\mathbb{E}[ X_b | \mathcal{F}_a ] = X_a
- \mathbb{E}[ X_b | \mathcal{F}_a ] = \mathbb{E}[ \mathbb{E}[ X_b | \mathcal{F}_{b-1} ] | \mathcal{F}_a ] = \mathbb{E}[ X_{b-1} | \mathcal{F}_a ] = \cdots = \mathbb{E}[ X_{a+1} | \mathcal{F}_a ] = \mathbb{E}[ X_a | \mathcal{F}_a ] = X_a. 

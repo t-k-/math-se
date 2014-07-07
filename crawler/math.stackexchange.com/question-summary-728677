@@ -1,7 +1,0 @@
-Y_1(t) = (x_1(t), y_1(t))
-Y_2(t) = (x_2(t), y_2(t))
-dy/dt = AY
-W(t)= x_1(t)y_2(t)-x_2(t)y_1(t)
- A=\begin{pmatrix}   a & b\\  c&d  \end{pmatrix} 
- W(t)=\begin{vmatrix}   x_1(t) & x_2(t)\\  y_1(t)& y_2(t)  \end{vmatrix}\\ W'(t)=\begin{vmatrix}   x'_1(t) & x_2(t)\\  y'_1(t)& y_2(t)  \end{vmatrix}+\begin{vmatrix}   x_1(t) & x'_2(t)\\  y_1(t)& y'_2(t)  \end{vmatrix} \\= \begin{vmatrix}  ax_1(t) + bx_2(t) & x_2(t)\\  ay_1(t) + by_2(t) & y_2(t)  \end{vmatrix} + \begin{vmatrix}   x_1(t) & cx_1(t) + dx_2(t)\\  y_1(t)& cy_1(t) + dy_2(t)  \end{vmatrix} \\= \begin{vmatrix}  ax_1(t)   & x_2(t)\\  ay_1(t)  & y_2(t)  \end{vmatrix} + \begin{vmatrix}   x_1(t) & dx_2(t)\\  y_1(t)&  dy_2(t)  \end{vmatrix}=(a+d)W(t) 
- W(t) = [x_1(0)y_2(0) - x_2(0)y_1(0)]\exp((a+d)t) 

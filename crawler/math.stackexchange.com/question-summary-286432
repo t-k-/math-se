@@ -1,8 +1,0 @@
-F(x)=e^{-k(x+1)}\int_1^x\frac{N^2}{t(N-t)}e^{kt}dt
-F(x)=Ne^{-k(x+1)} \int_1^x [\frac{1}{t} + \frac{1}{N-t}]e^{kt}dt
-Ne^{-k(x+1)}[Ei(kt)-e^{-kN}Ei(k(t-N))]_{1}^x
-x^{-1+\epsilon}e^x>Ei(x) > x^{-1}e^x
-x>k
-x>1
-x
- \begin{align} \mathrm{Ei}(x) &=\int_{-\infty}^x\frac{e^{t}}{t}\mathrm{d}t\\ &=\frac{e^x}{x}\int_{-\infty}^x\frac{e^{t-x}}{t/x}\mathrm{d}t\\ &=\frac{e^x}{x}\int_0^\infty\frac{e^{-t}}{1-t/x}\,\mathrm{d}t\\ &\sim\frac{e^x}{x}\int_0^\infty e^{-t}\left(1+\frac{t}{x}+\frac{t^2}{x^2}+\frac{t^3}{x^3}+\dots\right)\,\mathrm{d}t\\ &=\frac{e^x}{x}\left(1+\frac1x+\frac2{x^2}+\frac6{x^3}+\dots+\frac{n!}{x^n}+\dots\right)\\ \end{align} 

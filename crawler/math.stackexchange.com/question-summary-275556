@@ -1,9 +1,0 @@
-(X,Y)
-f_{XY}(x,y)=\left\{ \begin{array}{l}\tfrac{1}{y}e^{-(y+\tfrac{x}{y})} & \text{if }x>0 \text{ and } y>0 \\ 0 & \text{otherwise}\end{array} \right.
-f_X(x)
-f_Y(y)
-X
-Y
-\\
-\begin{align*}f_Y(y)  &= \int_{-\infty}^{\infty}f_{XY}(x,y)\mathrm{d}x \\ &= \int_{0}^{\infty}\tfrac{1}{y}e^{-(y+\tfrac{x}{y})}\mathrm{d}x\\ &= -\lim_{N \to \infty} \left[ e^{-(y+\tfrac{x}{y})} \right]_0^N \\ &= -\lim_{N \to \infty} (e^{-(y+\tfrac{N}{y})}-e^{-(y+\tfrac{0}{y})})\\ &= e^{-y}-0 = \frac{1}{e^y} \end{align*}
-\begin{align*}f_X(x)  &= \int_{-\infty}^{\infty}f_{XY}(x,y)\mathrm{d}y \\ &= \int_{0}^{\infty}\tfrac{1}{y}e^{-(y+\tfrac{x}{y})}\mathrm{d}y\\ \end{align*}

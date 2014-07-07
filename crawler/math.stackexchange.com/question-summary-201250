@@ -1,8 +1,0 @@
-f(x,y)=\frac{\exp(−y)}{y}
-0<x<y<\infty
-\mathbb{E}(X^2+Y^2 |Y =y)
-f_Y(y) = \int_0^y \frac{\exp(−y)}{y} \mathrm{d}x = \exp(-y)
-f_{X|Y}(x,y) = \frac{f(x,y)}{f_Y(y)}= \frac{\exp(-y)/y}{\exp(-y)} = \frac{1}{y}
-\mathbb{E}(X^2+Y^2 |Y =y) = \int_{x=0}^y (x^2+y^2)\frac{f(x,y)}{f_Y(y)} \mathrm{d}x =  \int_{x=0}^y \frac{(x^2+y^2)}{y}\mathrm{d}x = 2y^2
-\int_{x=0}^y \frac{(x^2+y^2)}{y}\mathrm{d}x = \frac{4y^2}{3}
-2y^2

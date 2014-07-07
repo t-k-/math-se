@@ -1,13 +1,0 @@
-\sum_{n=0}^{\infty}\tfrac{a^n}{(n!)(c-bn)}e^{(c-bn)t} \text{ with } a,b,c<1
-f(t)
-f^\prime
- \begin{split} f^\prime (t) &= \sum_{n=0}^\infty \frac{a^n}{n!}\ e^{(c-bn)t} \\ &= e^{ct}\ \sum_{n=0}^\infty \frac{1}{n!}\ \left( \frac{a}{e^{bt}}\right)^n\\ &= e^{ct}\ \exp \left( ae^{-bt}\right)\\ &= \exp \left( ct+a\ e^{-bt}\right) \end{split}
-f(t)=\sum_{0}^{\infty}\tfrac{a^n}{(n!)(c-bn)}e^{(c-bn)t}
-f'(t)=\sum_{0}^{\infty}\tfrac{a^n}{n!}e^{(c-bn)t}=e^{ct}\sum_{0}^{\infty}\tfrac{(a e^{-bt})^n}{n!}=e^{ct+ae^{-bt}}
-t
-ct
-u=ae^{-bt}
-t=-\frac{\log(\frac ua)}b
-\int e^{ct+ae^{-bt}} dt= -\frac 1b \int \frac{e^{-\frac{c\log(\frac ua)}b}e^{u}}u du=-\frac 1b \int \left(\frac ua\right)^{-\frac cb}\frac{e^{u}}u du
-=-\frac {a^{\frac cb}}b \int u^{-1-\frac cb}e^{u} du=-\frac {(-a)^{\frac cb}}b\gamma\left(-\frac cb,-u\right)
-C(a,b,c)=0

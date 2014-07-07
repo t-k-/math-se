@@ -1,31 +1,0 @@
-\mathbb{R}^n
- \eqalign{   & L_1 \left( t \right):p_1  + td_1   \cr    & L_2 \left( q \right):p_2  + qd_2  \cr}  
- f\left( {t,q} \right) = \left \| L_1 (t) - L_2(t) \right \| = \left \| p_1  + td_1  - p_2  - qd_2   \right\| 
-\mathbb{R}^3
-d_2(t_1, t_2) = \vert\vert p_1 - p_2 + t_1 q_1 - t_2 q_2 \vert\vert^2
-(u,v)
-   d_2(t_1,t_2) = \vert p_{12} \vert^2 + 2 t_1 (p_{12}, q_1)- 2 t_2 (p_{12},q_2) + t_1^2 \vert q_1 \vert^2 + t_2^2 \vert q_2 \vert^2 - 2 t_1 t_2 (q_1,q_2)  
-t_1
-t_2
-  t_1 = \frac{ (p_{12},q_1) \vert q_2\vert^2 - (p_{12},q_2) (q_1, q_2) }{(q_1, q_2)^2 - \vert q_1 \vert^2 \vert q_2 \vert^2} \; \;\; \text{and} \;\;\;   t_2 = - \frac{ (p_{12},q_2) \vert q_1\vert^2 - (p_{12},q_1) (q_1, q_2) }{(q_1, q_2)^2 - \vert q_1 \vert^2 \vert q_2 \vert^2}  
- \vert p_{12} \vert^2 + \frac{ \vert q_1\vert^2 (p_{12},q_2)^2 + \vert q_2\vert^2 (p_{12},q_1)^2 - 2 (q_1,q_2)(p_{12},q_1)(p_{12},q_2) }{ (q_1, q_2)^2 - \vert q_1 \vert^2 \vert q_2 \vert^2} 
-p_{12}=p_1-p_2
- L_1 ( p):a  + p b 
- L_2 ( q):c  + q d 
-p
-q
-P = L_1(p)
-Q = L_2(q)
-P-Q
-b
-d
-.
-g = c-a
-0 = ( a  + p b - c  - q d).b = ( a  + p b - c  - q d).d
-\eqalign{p |b|^2 - q(d.b) = g.b \cr p(b.d)-q |d|^2 = g.d\cr}
-p
-q
-P
-Q
-b
-d

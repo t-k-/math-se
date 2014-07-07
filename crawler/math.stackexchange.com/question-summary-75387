@@ -1,38 +1,0 @@
-\mu
-\nu
-\sigma
-(X, B)
-\nu
-\sigma
-\nu_\mathrm{abs} \ll \mu
-\mu
-\nu_\mathrm{sing} \bot \mu
- \nu = \nu_\mathrm{abs} + \nu_\mathrm{sing}
-m = \mu + \nu 
-H = L_m^2(X)
-\Phi(g) := \int g \; d\nu 
-L^2
-H
-\exists k \in H : \Phi (g) = \int g k \; d m
-\exists k \in H : \Phi (g) = \int g k \; d m
- \begin{align}  \Phi g = \int_X g \; d \nu = \int_X g \; d \nu_\mathrm{abs} + \int_X g \; d \nu_\mathrm{sing} = \int_X fg \; d \mu + \int_{X_1} g \; d \nu + \int_{X_2} g \; d \nu = \int_X fg \; d \mu +  \int_{X_2} g \; d \nu \end{align}
-k
-[0,1]
-m
-  \begin{align} P(\{ x | k(x) \in [0,1]\}) = m(k^{-1}([0,1])) = \int_{k^{-1}([0,1])} 1 dm = \\  \int_{k^{-1}([0,1])} (1 \circ k) dm = \int_{k^{-1}([0,1])} 1 \cdot (1 \circ k) dm = \int_{k^{-1}([0,1])} (1 \circ k) d\nu = \int_{[0,1]} 1 d k(\nu) \end{align} 
-1
-\nu
-d k(\nu)
-L^{\infty}(X, m) \subset L^2(X,m)
-\int_X g \,d\nu = \int_X gk \,dm, \quad \text{for }g\in L^2(X,m). \tag{1}
-\| g \|_{L^2(X,m)}=\sqrt{\int_X |g|^2\, dm} \leqslant \|g\|_{\infty}\sqrt{\int_X dm}=\underbrace{\sqrt{m(X)}}_{<+\infty}\underbrace{\|g\|_{\infty}}_{<+\infty} < +\infty
-(1)
-g=\chi_A
-L^{\infty}(X, m) \subset L^2(X,m)
-\nu(A)=\int_A k\, dm.
-\underbrace{\frac{\nu(A)}{\nu (A)+\mu(A)}}_{\in [0,1]}=\frac{\nu(A)}{m(A)}=\frac{1}{m(A)}\int_A k\, dm \in [0,1] \quad \text{for } m(A) \neq 0.
-k \in L^1(X,m)
-m
-\frac{1}{m(A)}\int_A k\, dm \in [0,1],
-\int_X |k|\, dm \leqslant \sqrt{m(X)}\underbrace{\sqrt{\int_X |k|^2\, dm}}_{<+\infty \text{because }k\in L^2(X,m)} < +\infty,
-k \in [0,1] \,\, [m]\text{-almost surely}

@@ -1,5 +1,0 @@
-\frac{\partial(x_1,x_2,x_3)}{\partial(\theta_1,\theta_2,r)}=\begin{bmatrix} \frac{\partial x_1}{\partial\theta_1} & \frac{\partial x_1}{\partial\theta_2} & \frac{\partial x_1}{\partial r}\\ \frac{\partial x_2}{\partial\theta_1} & \frac{\partial x_2}{\partial\theta_2} & \frac{\partial x_2}{\partial r}\\ \frac{\partial x_3}{\partial\theta_1} & \frac{\partial x_3}{\partial\theta_2} & \frac{\partial x_3}{\partial r}\\ \end{bmatrix}
-=\begin{bmatrix} r\cos\theta_1 & 0 & \sin\theta_1 \\ -r\sin\theta_1\sin\theta_2 & r\cos\theta_1\cos\theta_2 & \cos\theta_1\sin\theta_2 \\ -r\sin\theta_1\cos\theta_2 & -r\cos\theta_1\sin\theta_2 & \cos\theta_1\cos\theta_2 \\ \end{bmatrix}
-=r^2(\cos^3\theta_1\cos^2\theta_2+\cos^3\theta_1\sin^2\theta_2+\sin^2\theta_1\cos\theta_1\sin^2\theta_2+\sin^2\theta_1\cos\theta_1\cos^2\theta_2)
-=r^2(\sin^2\theta_1+\cos^2\theta_1)(\sin^2\theta_2+\cos^2\theta_2)(4\cos\theta_1)
-=4r^2\cos\theta_1

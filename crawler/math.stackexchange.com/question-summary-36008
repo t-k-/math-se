@@ -1,23 +1,0 @@
-u=x^{2}
-\Delta u=\Delta x^{2}=2x+1
-v=2^{x}
-\Delta v=2^{x}
-\begin{eqnarray*} \sum_{k=0}^{n}k^{2}2^{k} &=& \sum_{0}^{n+1}x^{2}2^{x} \\ &=& \left.x^{2}*2^{x}\right|_{0}^{n+1}-\sum_{0}^{n+1}2^{x+1}(2x+1) \\ &=& (n+1)^2 2^{n+1}-\sum_{0}^{n+1}2x2^{x+1}+2^{x+1} \\ &=& (n+1)^2 2^{n+1}-4\sum_{0}^{n+1}x2^{x} - 2\sum_{0}^{n+1}2^{x} \end{eqnarray*}
-u(x)=x
-\Delta u=\Delta x=1
-v=2^{x}
-\Delta v=2^{x}
-E(v(x))=2^{x+1}
-\begin{eqnarray*} \sum_{x=0}^{n+1}x2^{x+1} &=& \left[x2^{x}-2^{x+1}\right]_{0}^{n+1} \\ &=& ((n+1)-1)2^{(n+1)+1}+2 \\ &=& n2^{n+2}+2 \end{eqnarray*}
-\begin{eqnarray*} \sum_{k=0}^{n}k^{2}2^{k} &=&(n+1)^2 2^{n+1}-2\sum_{0}^{n+1}x2^{x+1} - \sum_{0}^{n+1}2^{x+1} \\ &=& (n+1)^2 2^{n+1}-2(n2^{n+2}+2) - (n+2)2^{x} \\ &=& 2^{n+1}(n^2+2n+1) -4(n2^{n+2}+2) - 2(n+2)2^{x} \\ &=& 2^{n+1}(n^2+2n+1-8n-(n+2))-8 \\ &=& 2^{n+1}(n^2-7n-1)-8 \\ \end{eqnarray*}
-2^{n+1} ((n-2) n+3)-6 = 2^{n+1} (n^2-2n+3)-6
-x^2
-n
-n=0
-n=0
- \begin{eqnarray*} \sum_{k=0}^{n} k 2^{k} &=& \sum_{0}^{n+1}x2^{x} \\ &=& \left[x2^{x}\right]_{0}^{n+1}-\sum_{0}^{n+1}2^{x+1}\cdot 1 \\ &=& \left(n+1\right)2^{n+1}-2\sum_{0}^{n+1}2^{x} \\ &=& \left(n+1\right)2^{n+1}-2\left(2^{n+1}-1\right) \\ &=& n2^{n+1}+2^{n+1}-2\cdot2^{n+1}+2 \\ &=& n2^{n+1}-2^{n+1}+2 \\ &=& 2^{n+1}\left(n-1\right)+2 \end{eqnarray*} 
-x^2=u
-\Delta 2^x=v
-\Delta x=2x+1
-v=2^x
- \begin{eqnarray*} \sum_{k=0}^{n}k^{2}2^{k} &=& \sum_{0}^{n+1}x^{2}2^{x} \\  &=& \left[x^{2}2^{x}\right]_{0}^{n+1}-\sum_{0}^{n+1}2^{x+1}\left(2x+1\right) \\ &=& \left(n+1\right)^{2}2^{n+1}-\left(\sum_{0}^{n+1}2x2^{x+1}+2^{x+1}\right) \\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4\sum_{0}^{n+1}x2^{x}+2\sum_{0}^{n+1}2^{x}\right)\\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4\left(\left(n-1\right)2^{n+1}+2\right)+2\left[2^{x}\right]_{0}^{n+1}\right) \\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4\left(\left(n-1\right)2^{n+1}+2\right)+2\left(2^{n+1}-1\right)\right) \\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4\left(\left(n2^{n+1}-2^{n+1}\right)+2\right)+2\cdot2^{n+1}-2\right) \\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4\left(n2^{n+1}-2^{n+1}\right)+8+2\cdot2^{n+1}-2\right) \\ &=& \left(n^{2}+2n+1\right)2^{n+1}-\left(4n2^{n+1}-42^{n+1}+8+2\cdot2^{n+1}-2\right) \\  &=& \left(n^{2}+2n+1\right)2^{n+1}-4n2^{n+1}+42^{n+1}-8-2\cdot2^{n+1}+2 \\ &=& 2^{n+1}\left(\left(n^{2}+2n+1\right)-4n+4-2\right)-8+2 \\ &=& 2^{n+1}\left(n^{2}-2n+3\right)-6 \\ &=& 2^{n+1}\left((n-2)n+3\right)-6  \end{eqnarray*} 

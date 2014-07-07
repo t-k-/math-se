@@ -1,81 +1,0 @@
-n=p_1^{a_1}p_2^{a_2}\ldots p_k^{a_k}
-\mu(p_i)=-1
-\mu(p_1 \ldots p_k)=(-1)^{k}
-\sum_{d \mid n}\mu(d)\omega \left( \frac{n}{d} \right)=\omega(n)+\underbrace{\mu(p_1) \omega(n/p_1)+ \ldots+\mu(p_k) \omega(n/p_k)}_{-\sum\omega\left(\frac{n}{p_i}\right)}+ \ldots + \mu(p_1 \ldots p_k) \omega\left(\frac{n}{p_1\ldots p_k}\right)
-P_i(k)
-i=1,2,...\binom{\omega(n)}{k}
-k
-n
-\nu(n)
-n
-1
-\binom{\nu(n)}{j}
-j
-1
-\binom{\omega(n)-\nu(n)}{k-j}
-k-j
-1
-1
-n
-P_i(k)
-\omega(\frac{n}{P_i(k)})
-\omega(n)-j
-\sum_k \binom{\omega(n)}{k}\;(-1)^k = 1
-\omega(n)=0
-0
-0
-\omega(n)=0
-\nu(n)
-\omega(n)=1
-0
-\omega(n)>1
- \begin{align} \sum_{i=1}^{\binom{\omega(n)}{k}}\omega(\frac{n}{P_i(k)}) &=\sum_{j=0}^k \binom{\nu(n)}{j}\binom{\omega(n)\!-\!\nu(n)}{k\!-\!j}(\omega(n)\!-\!j)\\ &=\binom{\omega(n)}{k}\omega(n)-\sum_{j=0}^k \;j\binom{\nu(n)}{j}\binom{\omega(n)\!-\!\nu(n)}{k\!-\!j}\\ &=\binom{\omega(n)}{k}\omega(n)-\sum_{j=1}^k \;\nu(n)\binom{\nu(n)\!-\!1}{j\!-\!1}\binom{\omega(n)\!-\!\nu(n)}{k\!-\!j}\\ &=\binom{\omega(n)}{k}\omega(n)-\binom{\omega(n)\!-\!1}{k\!-\!1}\nu(n) \end{align} 
-\omega(n)=0
-n=1
-\omega(n)=1
-\nu(n)=1
-n
-n
-\omega(n)>1
-\nu(n)=0
-n
-\mu
-\mu
-n=ab
-a=q_1\cdots q_k
-b= p_1^{e_1}\cdots p_l^{e_l}
-e_i\ge 2
-b'=p_1\cdots p_l
-d|n
-d=d_1d_2
-d_1|a
-d_2|b
-\mu(d)\ne 0
-d_2|b'
-\sum_{d_1|a}\, \sum_{d_2|b'} \mu(d_1d_2) \omega\left(\frac{ab}{d_1d_2}\right) = \left(\sum_{d_1|a} \mu(d_1)[l +\omega(a/d_1)]\right)\left( \sum_{d_2|b'} \mu(d_2)\right)
-\omega(b/d_2)=l
-d_2
-b
-\omega(xy) = \omega(x)+\omega(y)
-\mu(xy)=\mu(x)\mu(y)
-\gcd(x,y)=1
-0
-b'=1
-n=a
-\sum_{d_1|a} \mu(d_1)\omega(a/d_1).
-Q
-a
-P
-n
-I
-k\binom{N}{k} = N\binom{N-1}{k-1}
- \sum_{d|n} \mu(d) \omega(n/d) = \sum_{I \subset P} (-1)^{|I|} (|P|-|I|) 
- \sum_{d|n} \mu(d) \omega(n/d) = \sum_{k =0}^{|P|} \binom{|P|}{k} (-1)^{k} (|P|-k) 
- \sum_{k=0}^{|P|}  \binom{|P|}{k} (-1)^{k} = \begin{cases} 0, & \text{if } |P| \geq 1 \\ 1, & \text{if } |P|=0 \end{cases} 
- \sum_{k=0}^{|P|}  \binom{|P|}{k} k (-1)^{k} = \begin{cases} 0, & \text{if } |P| \geq 2 \\ -1, & \text{if } |P|=1 \\ 0, & \text{if } |P|=0. \end{cases} 
-k(n)
-1
-n
-0
-\sum_{d\mid n}k(d)=\sum_{p\mid n}k(p)=\sum_{p\mid n}1=\omega(n)
-k(n)=\sum_{d\mid n}\mu(d)\omega(\frac{n}{d})

@@ -1,112 +1,0 @@
-H_n
-n
-H_n = \sum\limits_{i=1}^n \frac{1}{i}
-\lim_{n \to \infty} \left(H_n - \frac{1}{2^n} \sum_{k=1}^n \binom{n}{k} H_k \right) = \log 2.
-2^{−n} \binom{n}{k}
-k= \frac{n}{2}
-H_n−H_{n/2} \sim \ln 2
-n
-S
-S
-\newcommand{\E}{\mathbf{E}}
-X
-\mathrm{Bin}(n, \frac12)
-X
- \sum_{k=0}^{\infty} \frac{1}{2^{n}} \binom{n}{k} (H(n) - H(k)) = \sum_{k=0}^{\infty} \Pr[X = k](H(n) - H(k)) = \E \left[ H(n) - H(X) \right], 
-x \mapsto H(n) - H(x)
-H(n) = \ln n + \gamma + O\Big(\frac1n \Big)
- S \leqslant \color{Red}{H(n)} \color{Blue}{-H\left( \frac{n(1-\varepsilon)}{2} \right)} + \color{Green}{\exp (-\Omega(n \varepsilon^2)) \cdot O(\ln n)}. 
- \begin{align*} S  &\leqslant \color{Red}{\ln n + \gamma + O \Big(\frac1n \Big)} \color{Blue}{- \ln \left(\frac{n(1-\varepsilon)}{2} \right) - \gamma + O \Big(\frac1n \Big)} +\color{Green}{\exp (-\Omega(n \varepsilon^2)) \cdot O(\ln n)} \\ &\leqslant \ln 2 - \ln (1- \varepsilon) + o_{n \to \infty}(1)  \leqslant \ln 2 + O(\varepsilon) + o_{n \to \infty}(1).  \tag{1} \end{align*} 
-(1)
-(2)
-\varepsilon > 0
-S \to \ln 2
-n \to \infty
- S \geqslant \ln 2 - \ln (1+\varepsilon) - o_{n \to \infty}(1) \geqslant \ln 2 - O(\varepsilon) - o_{n \to \infty}(1). \tag{2} 
- \begin{eqnarray*} \frac{1}{2^n} \sum\limits_{k=0}^n \left[ \binom{n}{k} \sum\limits_{t=1}^{k} \frac{1}{t} \right] &=&  \frac{1}{2^n} \sum\limits_{k=0}^n \left[ \binom{n}{k} \sum\limits_{t=1}^{k} \int_{0}^1 x^{t-1} dx \right] \\ &=& \frac{1}{2^n} \int_{0}^1 \sum\limits_{k=0}^n \left[ \binom{n}{k} \sum\limits_{t=1}^{k} x^{t-1} \right] dx \\ &=& \frac{1}{2^n} \int_{0}^1 \sum\limits_{k=0}^n \left[ \binom{n}{k} \cdot \frac{x^k-1}{x-1} \right] dx \\ &=& \frac{1}{2^n} \int_{0}^1 \frac{\sum\limits_{k=0}^n \binom{n}{k}  x^k- \sum\limits_{k=0}^n \binom{n}{k}}{x-1} dx \\ &=& \frac{1}{2^n} \int_{0}^1 \frac{(x+1)^n- 2^n}{x-1} dx. \end{eqnarray*} 
-y = \frac{x+1}{2}
-1/2
-1
-H_n
-n
-f(y) = -\ln(1-y)
-y=1/2
-n \to \infty
- \begin{eqnarray*} \int_{1/2}^1 \frac{y^n- 1}{y-1} dy &=& \int_{1/2}^1 (1+y+y^2+\ldots+y^{n-1}) dy \\ &=& \left. y + \frac{y^2}{2} + \frac{y^3}{3} + \ldots + \frac{y^n}{n} \right|_{1/2}^1 \\ &=& H_n - \sum_{i=1}^n \frac{1}{i} \left(\frac{1}{2} \right)^i. \end{eqnarray*} 
- \sum_{i=1}^n \frac{1}{i} \left(\frac{1}{2} \right)^i.  
--\ln \left(1-\frac{1}{2} \right) = \ln 2.
-2^{-n}\binom{n}{k}
-\frac{n}{2}
-\frac{\sqrt{n}}{2}
-H_n\sim\log(n)+\gamma
-\log(2)
- \begin{align} 2^{-n}\sum_{k=1}^n\binom{n}{k}H_k&\sim\sqrt{\frac{2}{\pi n}}\int_{-\infty}^\infty (\log(x)+\gamma)\;e^{-2(x-n/2)^2/n}\;\mathrm{d}x\\ &=\log(n/2)+\gamma+O\left(\frac{1}{\sqrt{n}}\right) \end{align} 
-H_n
-k\le n
-O\left(\frac{1}{k}\right)
-f
-[0,1]
-(3)
-\epsilon>0
-\delta
-\left|x-\frac{1}{2}\right|<\delta\Rightarrow\left|f(x)-f(\frac{1}{2})\right|<\epsilon
-2^{-n}\binom{n}{k}
-\frac{n}{2}
-\frac{n}{4}
-\sigma
-n
-n
-\sigma\sqrt{n}/2<n\delta
- H_n-H_k=-\log(k/n)+O\left(\frac{1}{k}\right)\tag{1} 
- \begin{align} 2^{-n}\sum_{k=1}^n\binom{n}{k}\frac{1}{k+1} &=2^{-n}\sum_{k=1}^n\binom{n+1}{k+1}\frac{1}{n+1}\\ &\le 2^{-n}\;2^{n+1}\frac{1}{n+1}\\ &=\frac{2}{n+1} \end{align} 
- 2^{-n}\sum_{k=1}^n\binom{n}{k}O\left(\frac{1}{k}\right)=O\left(\frac{1}{n}\right)\tag{2} 
- \lim_{n\to\infty}\;2^{-n}\sum_{k=1}^n\binom{n}{k}f\left(\frac{k}{n}\right) = f\left(\frac{1}{2}\right)\tag{3} 
- \underset{|k-n/2|<\sigma\sqrt{n}/2}{2^{-n}\sum\binom{n}{k}}>1-\epsilon 
- \begin{align} 2^{-n}\sum_{k=1}^n\binom{n}{k}\left|f\left(\frac{k}{n}\right)-f\left(\frac{1}{2}\right)\right| &\le \epsilon\;\max_{[0,n]}\left|f\left(\frac{k}{n}\right)-f\left(\frac{1}{2}\right)\right|\\ &+\max_{|k-n/2|<n\delta}\left|f\left(\frac{k}{n}\right)-f\left(\frac{1}{2}\right)\right|\\ &\le \epsilon\;\max_{[0,1]}\left|f\left(x\right)-f\left(\frac{1}{2}\right)\right|\\ &+\;\epsilon \end{align} 
- \begin{align} H_n-2^{-n}\sum_{k=1}^n\binom{n}{k}H_k &=2^{-n}\sum_{k=1}^n\binom{n}{k}(H_n-H_k)\\ &=2^{-n-1}\sum_{k=1}^n\binom{n+1}{k+1}\;2\frac{k+1}{n+1}(H_n-H_k)\\ &=2^{-n-1}\sum_{k=1}^n\binom{n+1}{k+1}\left(-2\frac{k+1}{n+1}\log\left(\frac{k+1}{n+1}\right)+O\left(\frac{1}{k}\right)\right)\\ &=-2^{-n-1}\sum_{k=1}^n\binom{n+1}{k+1}\left(-2\frac{k+1}{n+1}\log\left(\frac{k+1}{n+1}\right)\right)+O\left(\frac{1}{n}\right)\\ &\to-2\;\frac{1}{2}\log(\frac{1}{2})\\ &=\log(2) \end{align} 
-\Delta f(k) = f(k+1) - f(k)
-f(k)
-B(n) = \sum_{k=0}^n \binom{n}{k} f(k)
-A(n) = \sum_{k=0}^n \binom{n}{k} \Delta f(k)
-^1
-B(n)
-A(n)
-B(n) = 2^n \left(f(0) + \sum_{k=1}^n \frac{A(k-1)}{2^k}\right).
-\Delta H_n = \frac{1}{n+1}
-\binom{n}{k} \frac{n+1}{k+1} = \binom{n+1}{k+1}
-\sum_{k=0}^n \binom{n}{k} \frac{1}{k+1} = \frac{1}{n+1} \sum_{k=0}^n \binom{n+1}{k+1} = \frac{2^{n+1}-1}{n+1},
-B(n)
-\sum_{k=0}^n \binom{n}{k} H_k = 2^n \sum_{k=1}^n \frac{2^k-1}{k2^k} = 2^n\left(H_n - \sum_{k=1}^n \frac{1}{k2^k}\right).
-H_n - \frac{1}{2^n} \sum_{k=0}^n \binom{n}{k} H_k = \sum_{k=1}^n \frac{1}{k 2^k}.
-\log 2
--1/2
-\log(1+x)
-\lim_{n \to \infty} \left(H_n - \frac{1}{2^n} \sum_{k=0}^n \binom{n}{k} H_k\right) = \sum_{k=1}^{\infty} \frac{1}{k 2^k} = \log 2,
-\sum_{k=0}^n \binom{n}{k} H_k
-E[Y_n | Y_n > 1]
-P(X_i < 1) = 1-e^{-\lambda}
-X_i
-1
-E[Y_n | Y_n > 1] = 1 + \sum_{k=0}^{n-1} \binom{n}{k} \left(1 - e^{-\lambda}\right)^k \left(e^{-\lambda}\right)^{n-k} \frac{H_{n-k}}{\lambda}
-= 1 + \sum_{k=1}^n \binom{n}{k} \left(1 - e^{-\lambda}\right)^{n-k} \left(e^{-\lambda}\right)^k \frac{H_k}{\lambda}.
-n \to \infty
-E[Y_n] - E[Y_n|Y_n > 1] \to 0
-P(Y_n > 1) = 1 - e^{-\lambda n}
-\lim_{n \to \infty} \left(\frac{H_n}{\lambda} - \sum_{k=1}^n \binom{n}{k} \left(1 - e^{-\lambda}\right)^{n-k} \left(e^{-\lambda}\right)^k \frac{H_k}{\lambda}\right) = 1.
-\lambda = \log 2
-H_{n+1} - \frac{1}{2^n} \sum_{k=1}^n \binom{n}{k} H_k \quad 
-(\sum_{i=j}^{n+1} 1/i)
-j
-j=1
-j
-n
-H_n
-j
-n
-o(n)
-n/2
-H_n
-S_n
-S_n
-1/2
-1,n,2,3,4,\ldots,n-1

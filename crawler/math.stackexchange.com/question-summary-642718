@@ -1,8 +1,0 @@
-h_n (t) = e^{\pi t^2}\frac{d^n}{dt^n}(e^{-2\pi t^2})
-n=0  \to \widehat{h_0}=h_0
-\widehat{h_n}=(-i)^n h_n
-\hat{h_n}(v) = \int_{-\infty}^{\infty} dt \, e^{-i 2 \pi v t} h_n(t)
-h_0(t) = e^{-\pi t^2} \implies \hat{h_0}(v) = e^{-\pi v^2}
-\int_{-\infty}^{\infty} dt \, e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^n}{dt^n} e^{-2 \pi t^2} = (-i)^n e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2}
-\int_{-\infty}^{\infty} dt \, e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^{n+1}}{dt^{n+1}} e^{-2 \pi t^2}
-\begin{align} &= \underbrace{\left [e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^n}{dt^n} e^{-2 \pi t^2} \right ]_{-\infty}^{\infty}}_{\text{This is equal to 0}} - \int_{-\infty}^{\infty} dt \, (2 \pi t - i 2 \pi v) e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^n}{dt^n} e^{-2 \pi t^2}\\ &= i 2 \pi v (-i)^n e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} - 2 \pi \int_{-\infty}^{\infty} dt \,t \, e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^n}{dt^n} e^{-2 \pi t^2}\\ &= i 2 \pi v (-i)^n e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} - \frac{2 \pi}{-i 2 \pi} \frac{d}{dv} \int_{-\infty}^{\infty} dt \, e^{-i 2 \pi v t} e^{\pi t^2} \frac{d^n}{dt^n} e^{-2 \pi t^2}\\ &= i 2 \pi v (-i)^n e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} - i (-i)^n \frac{d}{dv} \left [e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} \right ]\\ &=i 2 \pi v (-i)^n e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} - i (-i)^n \left [2 \pi v e^{\pi v^2} \frac{d^n}{dv^n} e^{-2 \pi v^2} + e^{\pi v^2} \frac{d^{n+1}}{dv^{n+1}} e^{-2 \pi v^2}\right ] \\ &= (-i)^{n+1} e^{\pi v^2} \frac{d^{n+1}}{dv^{n+1}} e^{-2 \pi v^2}\end{align}

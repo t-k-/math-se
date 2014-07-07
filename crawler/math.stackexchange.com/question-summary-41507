@@ -1,18 +1,0 @@
-\alpha
-(0 < \alpha < 1)
-\begin{align*} \mathrm{mean}(A_i + B_i) &= \mathrm{mean}(A_i ) + \mathrm{mean}(B_i)\\ \mathrm{mean}(R * A_i) &= R* \mathrm{mean}(A_i) \end{align*}
-\mathrm{EMA} = S_i = S_{i-1} + \alpha * (A_i - S_{i-1})
-R
-\begin{align*} \mathrm{EMA}(A_i + B_i) &= \mathrm{EMA}(A_i) + \mathrm{EMA}(B_i)\\ \mathrm{EMA}(R *A_i) &= R * \mathrm{EMA}(A_i) \end{align*}
-ema(A_1+B_1)=ema(A_1)+ema(B_1)
-n
-ema(A_n)
-n
-A
-ema((A+B)_n)=ema(A_n)+ema(B_n).
-ema((A+B)_{n+1})=ema((A+B)_n)+\alpha((A_{n+1}+B_{n+1})-ema((A+B)_n))
-=ema(A_n)+ema(B_n)+\alpha (A_{n+1}-ema(A_n))+\alpha (B_{n+1}-ema(B_n))=ema(A_{n+1})+ema(B_{n+1})
-ema
-ema
-\displaystyle s_i = \beta \; s_{i-1} + \alpha \; a_i \;\;\; 
-\beta = 1 - \alpha 

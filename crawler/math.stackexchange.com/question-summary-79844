@@ -1,41 +1,0 @@
-U_y : L^p(\mathbb{R}) \rightarrow L^p(\mathbb{R}) 
-U_y f(x) =  f(x + y)
-p \in [1, \infty]
-y \in \mathbb{R}
-U_y : L^p \rightarrow L^p
-L^p
-p \in [1, \infty]
-U_y
- \int_R |f(x + y ) |^p dx = \int_R |f(x ) |^p dx  \implies \| U_y f \|_p = \| f \|_p < \infty 
-\| U_y \|_{op} = 1
- \| U_y \|_{op} = \sup_{f \in L^p, \| f \| \leq 1} \| U_y f \|_{op} = \sup_{f \in L^p, \| f \| \leq 1} \| f \|_{op} = 1
-f \in L^p
-\mathbb{R} \rightarrow L^p
-y \mapsto U_y (f)
-p
-B_\varepsilon ( f(x + y)) \subset L^p
-f(x + x_0) \in B_\varepsilon ( f(x + y))
- \| f(x + x_0) - f(x + y) \|_p < \varepsilon 
-\int_R |f(x + y ) |^p dx = \int_R |f(x ) |^p dx  
-\delta
-F
-p
- \| f(x + x_0) - f(x + y) \|_p =  \| f(x) - f(x ) \|_p = 0 < \epsilon
-p \in [1,\infty)
-p = \infty
-|f(x+y)-f(x+y')| < \varepsilon
-\|x+y-(x+y')\| = \|y-y'\| < \delta
-\|U_yf - U_{y'}f\|_{C_c} < \varepsilon
-\delta
- \|f-g\|_p < \varepsilon / 3 
- U_yf - U_{y'} f = U_y g - U_{y'}g - U_y(g-f) + U_{y'}(g-f) 
-S := \mathrm{supp}(g)
- \mathrm{supp} (U_yg - U_{y'}g) \subset \{x+y; x\in S\} \cup \{x+y'; x \in S\} 
-\lambda (\mathrm{supp} (U_yg - U_{y'}g)) \leq 2 \lambda(S),
-\lambda
-\mathbb{R}
- \|U_yg-U_{y'}g\|_p \leq \max |U_yg - U_{y'}g| \cdot 2\lambda(S) = \|U_yg-U_{y'}g\|_{C_c} \cdot 2 \lambda (S). 
-\delta > 0
- \|U_yg-U_{y'}g\|_{C_c} < \varepsilon / (3\cdot 2\lambda(S)) 
-\delta
- \|U_y f -U_{y'} f\|_p < 2\varepsilon / 3 + \varepsilon / 3 = \varepsilon 

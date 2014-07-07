@@ -1,9 +1,0 @@
-\cal{H}
-P_1,P_2,\cdots,P_m
-P_iP_j=0
-i\neq j
-P_1+P_2+\cdots+P_m=I
-\|\sum^m_{k=1}P_kTP_k\|\leq\|T\|
-T\in \cal{B}(H)
-x\in H
- \begin{split} \|\sum_k P_kTP_kx\|^2  &= \langle \sum_j P_jTP_jx,\sum_k P_kTP_kx \rangle = \sum_{j,k} \langle TP_jx,P_jP_kTP_kx\rangle \\ &= \sum_{j} \langle P_jTP_jx,P_jTP_jx\rangle \leq \|T\|^2 \sum_{j} \langle P_jx,P_jx\rangle \\ & = \|T\|^2 \sum_{j} \langle P_jx,x\rangle = \|T\|^2  \langle \sum_{j} P_jx,x\rangle \\ &= \|T\|^2  \|x\|^2. \end{split} 

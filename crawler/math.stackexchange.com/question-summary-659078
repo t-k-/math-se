@@ -1,9 +1,0 @@
-d\geq 1
-T(n)
-T(n)\bmod 2^d
-T(n)\bmod 5^d
-T(n) = T(0)^{T(0)T(1)\ldots T(n-1)}
-S(n)
-\begin{eqnarray} S(0) & = & 1 \\ S(n+1) & = & S(n)\cdot T(0)^{S(n)}\bmod 5^d \end{eqnarray}
-T(n)\equiv T(0)^{S(n)}\pmod{5^d}
-2

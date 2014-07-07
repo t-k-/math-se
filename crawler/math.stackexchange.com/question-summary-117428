@@ -1,148 +1,0 @@
-0
-4
-\langle 1,0\rangle
-\langle 2,1\rangle
-\begin{array}{r|c} \bf{Tosses:}&&\bf T&\bf H&\bf H&\bf T&\bf H&\bf T&\bf T\\ \hline \bf{THTH:}&0&1&2&0&1&2&3&1\\ \bf{HTHH:}&0&0&1&1&2&3&2&0 \end{array}
-4
-4
-\langle 4,3\rangle
-\langle 0,4\rangle
-\langle m,n\rangle
-p_{m,n}
-p_{0,0}
-\langle 0,0\rangle
-\frac12
-\langle 0,1\rangle
-\frac12
-\langle 1,0\rangle
-\langle 0,1\rangle
-\frac12
-\langle 0,1\rangle
-\frac12
-\langle 1,2\rangle
-2
-p_{0,0}=\frac12p_{0,1}+\frac12p_{1,0}\;.
-p_{1,0}=\frac12p_{0,0}+\frac12p_{1,2}\;.
-\begin{cases} 2p_{0,0}=p_{0,1}+p_{1,0}\\ 2p_{0,1}=p_{0,1}+p_{1,2}\\ 2p_{1,0}=p_{2,1}+p_{1,0}\\ 2p_{1,2}=p_{2,3}+p_{1,0}\\ 2p_{2,1}=p_{0,1}+p_{3,2}\\ 2p_{2,3}=p_{0,4}+p_{3,2}=p_{3,2}\\ 2p_{3,2}=p_{4,3}+p_{0,0}=1+p_{1,0}\;, \end{cases}
-p_{0,4}=0
-p_{4,3}=1
-p_{0,1}=p_{1,2}
-p_{1,0}=p_{2,1}
-p_{3,2}=2p_{2,3}
-\begin{cases} 2p_{0,0}=p_{1,2}+p_{2,1}\\ 2p_{1,2}=p_{2,3}+p_{2,1}\\ 2p_{2,1}=p_{1,2}+2p_{2,3}\\ 4p_{2,3}=1+p_{2,1}\;, \end{cases}
-p_{0,0}=\dfrac9{14}
-p=q=1/2
-X = 9/14
-1/2
-1/2
-1/2
-(O,O)
-(T,O)
-(O,H)
-(TH,T)
-(T,HT)
-(THT,HT)
-(TH,HTH)
-A
-A
-B
-B
- A=THTH\qquad\text{and}\qquad B=HTHH, 
-A
-B
-p_{00}
-A
-B
-(O,O)
-2p_{00}=p_{21}+p_{12}
-2p_{21}=p_{32}+p_{12}
-2p_{12}=p_{23}+p_{21}
-2p_{32}=1+p_{21}
-2p_{23}=0+p_{32}
-p_{00}=9/14
-p_{00}\gt1/2
-(TH,HTH)
-(THT,HT)
- \begin{array}{cccccc} O,O & \rightarrow & TH,H & \stackrel{\longleftarrow}{\rightarrow} & THT,HT & \rightarrow & A \\ & \searrow & \downarrow\uparrow& &\uparrow & &  \\ & & T,HT & \rightarrow & TH,HTH & \rightarrow & B \end{array} 
-A
-0
-0
-1
-1
-1
-2
-2
-3
-0
-3
-1
-4
-A
-t_0=1+\frac12(t_0+t_1)
-t_1=1+\frac12(t_1+t_2)
-t_2=1+\frac12(t_3+t_0)
-t_3=1+\frac12(t_1+0)
-(t_0,t_1,t_2,t_3)=(20,18,16,10)
-t_0=20
-B
-0
-0
-1
-1
-1
-2
-2
-3
-0
-3
-2
-4
-B
-3
-2
-1
-t_0
-t_0=1+\frac12(t_0+t_1)
-t_1=1+\frac12(t_1+t_2)
-t_2=1+\frac12(t_3+t_0)
-t_3=1+\frac12(t_2+0)
-(t_0,t_1,t_2,t_3)=(18,16,14,8)
-t_0=18
-(n-1)
-n = 1
-n
-2^0\$$ that the 
--th coin is 
-. If he loses, he leaves the game. Otherwise he wins 
-(n+1)
-H
-2^2\$$, which he bets that the 
--th coin is 
-. This goes on until he wins 
-THTH
- that the $n$-th coin is $T$. If he loses, he leaves the game. Otherwise he wins $2^1\
-, which he bets that the $(n+2)$-th coin is $T$. This goes on until he wins $2^4\
-X^{(n)}_k
-n
-k
-X_n = X^{(1)}_n + \cdots + X^{(n)}_n,
-X_n - n
-S
-THTH
-\mathbb{E}[S] < \infty
-0 = \mathbb{E}[X_{S} - S],
-\mathbb{E}[S] = \mathbb{E}[X_{S}] = 2^4 + 2^2 = 20.
-Y_n
-HTHH
-T
-HTHH
-\mathbb{E}[T] = \mathbb{E}[Y_{T}] = 2^4 + 2^1 = 18.
-U = S \wedge T
-S
-T
-p = \mathbb{P}(S < T)
-THTH
-HTHH
- \mathbb{E}[U] = \mathbb{E}[X_{U}] = \mathbb{E}[X_{S}\mathbf{1}_{\{S < T\}}] + \mathbb{E}[X_{T}\mathbf{1}_{\{S > T\}}] = 20p + 0(1-p),
- \mathbb{E}[U] = \mathbb{E}[Y_{U}] = \mathbb{E}[Y_{S}\mathbf{1}_{\{S < T\}}] + \mathbb{E}[Y_{T}\mathbf{1}_{\{S > T\}}] = (2^3 + 2^1)p + 18(1-p).
-p = 9/14 \approx 64.2857 \%

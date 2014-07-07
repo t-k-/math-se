@@ -1,46 +1,0 @@
-s(m,n)
-S(m,n)
-\mathcal{S}_N := (S(m,n))_{N \geq m,n \geq 0} \text { and } \mathcal{s}_N := (s(m,n))_{N \geq m,n \geq 0}
-\sum_{n=0}^{\max\{j,k\}} (-1)^{n-k} \left[{n\atop j}\right] \left\{{k\atop n}\right\} = \delta_{jk} = \sum_{n=0}^{\max\{j,k\}} (-1)^{n-k} \left\{{n\atop j}\right\} \left[{k\atop n}\right]
-\delta_{jk}
-[F]_n
-[G]_n
-n \times n
-F
-G
-[F(x,y,z)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ x & 1 & 0 & 0 \\ xy & x+y & 1 & 0 \\ xyz	& xy+xz+yz & x+y+z & 1 \end{bmatrix}
- [G(x,y,z)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ x & 1 & 0 & 0 \\ x^2 & x+y & 1 & 0 \\ x^3	& x^2 + xy + y^2 & x+y+z & 1 \end{bmatrix}.
-F(1,1,\ldots)
-F(-1,-2,-3,\ldots)
-[F(1,1,\ldots)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 1	& 3 & 3 & 1 \end{bmatrix}, \text{ and } [F(-1,-2,-3,\ldots)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ -1 & 1 & 0 & 0 \\ 2 & -3 & 1 & 0 \\ -6 & 11 & -6 & 1 \end{bmatrix}.
-G(1,1,\ldots)
-G(1,2,3,\ldots)
-[G(1,1,\ldots)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 1 & 3 & 3 & 1 \end{bmatrix}, \text{ and } [G(1,2,3,\ldots)]_4 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 3 & 1 & 0 \\ 1 & 7 & 6 & 1 \end{bmatrix}.
-S_1(n,k)
-S_2(n,k)
-(x)_n=x(x-1)\cdots(x-n+1)
-(x)_0=1
-x
- (x)_n = \sum_{k=0}^n S_1(n,k) x^k, 
- x^n = \sum_{k=0}^n S_2(n,k) (x)_k 
- x^n = \sum_{k=0}^n \sum_{l=0}^k S_2(n,k) S_1(k,l) x^l 
- = \sum_{l=0}^n x^l \left( \sum_{k=l}^n S_2(n,k) S_1(k,l) \right). 
- \sum_{k=l}^n S_2(n,k) S_1(k,l) = \left\{      \begin{array}{lr}        1 & \mathrm{ if}\;\; l=n \\        0 & \mathrm{ if}\;\; l\neq n      \end{array}    \right.
- = \delta_{ln}.
-S_{\nu}(a,b)=0
-a<b
-n^{th}
-S_N
-l^{th}
-s_N
-(n,l)^{th}
-S_N s_N
-\delta_{nl}
-S_N
-\{1,x,x^2,\dots\}
-\{(x)_0, (x)_1, \dots\}
-s_N
-S_Ns_N
-\{x^i\}
-\{(x)_i\}
-\{x^i\}

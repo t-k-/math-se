@@ -1,8 +1,0 @@
-\displaystyle \int_{-\infty}^{\infty} \frac{\cos(x)}{\cosh(x)} = \frac{\pi}{\cosh\left (\frac{\pi}{2} \right)}
-x>0
-\dfrac{\cos(x)}{\cosh(x)} = 2\dfrac{\cos(x)}{e^x + e^{-x}} = \dfrac2{e^x} \dfrac{\cos(x)}{1+e^{-2x}} = \dfrac2{e^x} \cos(x) \left(1 - e^{-2x} + e^{-4x} - e^{-6x} + \cdots\right)
-\dfrac{\cos(x)}{\cosh(x)} = 2 \cos(x) \sum_{k=0}^{\infty} (-1)^{k}e^{-(2k+1)x}
-\int_{-\infty}^{\infty} \dfrac{\cos(x)}{\cosh(x)} dx = 2 \int_{0}^{\infty} \dfrac{\cos(x)}{\cosh(x)} dx = 4 \int_{0}^{\infty} \left(\cos(x) \sum_{k=0}^{\infty} (-1)^{k}e^{-(2k+1)x} \right)dx
-\int_{-\infty}^{\infty}\dfrac{\cos(x)}{\cosh(x)} dx = 4 \sum_{k=0}^{\infty} (-1)^{k} \left(\int_{0}^{\infty} \cos(x) e^{-(2k+1)x} \right)dx
-\int_{0}^{\infty} \cos(x) e^{-(k+1)x} dx = \dfrac{(2k+1)}{(2k+1)^2 + 1}
-\int_{-\infty}^{\infty}\dfrac{\cos(x)}{\cosh(x)} dx = 4\sum_{k=0}^{\infty} \dfrac{(-1)^k (2k+1)}{(2k+1)^2+1} = 4 \times \dfrac{\pi}{4} \text{sech}(\pi/2) = \pi \text{sech}(\pi/2)

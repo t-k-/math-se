@@ -1,15 +1,0 @@
-H
-z=x+iy
-dx
-dy
-n
-\int_{\mathbb R^n}\int_{\mathbb R^n}e^{-z^*Hz}dxdy=\frac{\pi^n}{\det H},
-H
-H = U^\dagger U
-\det H = \vert \det U \vert^2
--z^\ast H z = (U z)^\ast (U z)
-w = U z
-\mathrm{d} x \mathrm{d} y = \frac{1}{\vert \det U \vert^2 } \mathrm{d}w_x \mathrm{d} w_y
-w_x = \mathop{Re}(U z)
-w_y = \mathop{Im}(U z)
-   \int_{\mathbb{R}^n \times \mathbb{R}^n} \mathrm{d} x \mathrm{d} y \,\, \exp(-z^\ast H z) =    \int_{\mathbb{R}^n \times \mathbb{R}^n} \frac{\mathrm{d} w_x \mathrm{d} w_y}{\vert \det U \vert^2} \,\, \exp(-w^\ast w) = \frac{\pi^n}{\det H }. 

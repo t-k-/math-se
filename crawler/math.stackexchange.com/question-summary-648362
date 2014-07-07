@@ -1,5 +1,0 @@
-f
-[1,n]
-\lfloor x\rfloor
-\int_1^n f(x)\,d\lfloor x\rfloor
-\begin{align*} \int_1^n f(x)\ d\lfloor x \rfloor =& \left[f(x)\lfloor x \rfloor\right]_1^n - \int_1^n \lfloor x \rfloor df(x)\\ =& nf(n)-f(1) - \sum_{i=1}^{n-1} \int_i^{i+1}\lfloor x\rfloor df(x)\\ =& nf(n) - f(1) - \sum_{i=1}^{n-1} i\int_i^{i+1}df(x)\\ =& nf(n) - f(1) - \sum_{i=1}^{n-1} i [f(i+1)-f(i)]\\ =& nf(n) - f(1) - \sum_{i=2}^{n} (i-1)f(i) +  \sum_{i=1}^{n-1} if(i)\\ =& \sum_{i=2}^{n} f(i) \end{align*}

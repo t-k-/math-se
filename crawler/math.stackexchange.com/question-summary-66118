@@ -1,24 +1,0 @@
-\sum_{k = 1}^n \frac1{k + 1}\binom{n}{k}
-\binom{n}{k} \frac{n+1}{k+1} = \frac{n!}{k! (n-k)!} \frac{n+1}{k+1} = \frac{(n+1)!}{(k+1)! (n-k)!} = \binom{n+1}{k+1}
-\sum_{k=0}^{n+1} \binom{n+1}{k} = 2^{n+1}
-\binom{n+1}{0}
-\binom{n+1}{1}
-S \subseteq \{ 0, 1, 2, \ldots, n \}
-x
-S
-0
-n+1
-\frac{1}{n+1}
-(\ast)
-E_j
-S
-0
-j
-\{ 1, 2, \ldots, n\}
-E_j
-0
-\frac{1}{j+1}
-0 \notin S
-0
- \frac{1}{2^{n+1}-1} \binom{n}{j}. 
- \begin{align*} \Pr[\text{Head is } 0] &= \sum_{j=0}^n \Pr[E_j] \cdot \Pr[\text{Head is } 0 \mid E_j] \\  &= \sum_{j=0}^n \frac{1}{2^{n+1}-1} \binom{n}{j} \cdot \frac{1}{j+1} \end{align*} 

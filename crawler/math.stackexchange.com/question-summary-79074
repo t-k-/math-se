@@ -1,21 +1,0 @@
-\int \left(\frac{\tan^{-1}x}{x-\tan^{-1}x}\right)^{2}dx
-\displaystyle\frac{1+x\tan^{-1}x}{\tan^{-1}x-x}
-v=\frac{1}{x-\arctan x}
-dv
-\frac{d}{dx}\left(\frac{1}{x-\arctan x}\right)=\frac{-\frac{x^2}{1+x^2}}{(x-\arctan x)^2}
-dv=\frac{-\frac{x^2}{1+x^2}}{(x-\arctan x)^2}
-u =-\arctan^2x\frac{1+x^2}{x^2}
-u = -\left(\frac{1}{x^2}+1\right)\arctan^2 x
-du
-\int u\,dv=uv-\int v\,du
--\left(\frac{1}{x^2}+1\right)\arctan^2 x\frac{1}{x-\arctan x}+\int\frac{2\arctan x}{x^3}\,dx
-u
-\arctan x
-dv
-2x^{-3}
-x
-x = \tan(u)
-\mathrm{d}x = \frac{1}{\cos^2(u)}\mathrm{d} u
-     \int \left(\frac{\tan^{-1}x}{x-\tan^{-1}x}\right)^{2} \mathrm{d}x =      \int \left( \frac{u}{\tan(u) - u} \cdot \frac{1}{\cos(u)} \right)^2 \mathrm{d} u =     \int \left( \frac{u}{\sin(u) - u \cdot \cos(u)}  \right)^2 \mathrm{d} u 
-   \mathrm{d} \left( \frac{1}{\sin(u)-u \cos(u)} \right) = \frac{-u \sin(u) \mathrm{d} u }{(\sin(u)-u \cos(u))^2} 
-  \begin{eqnarray}  I &=& \int \left( \frac{u}{\sin(u) - u \cdot \cos(u)}  \right)^2 \mathrm{d} u =    \int \left( -\frac{u}{\sin(u)} \right) \mathrm{d}\left( \frac{1}{\sin(u)-u \cos(u)}    \right)  \\ &=&  -\frac{u}{\sin(u)\left(\sin(u)-u \cos(u) \right)} + \int \frac{1}{\sin(u)-u \cos(u)} \mathrm{d} \left( \frac{u}{\sin(u)}  \right) \\   &=& -\frac{u}{\sin(u)\left(\sin(u)-u \cos(u) \right)} + \int \frac{\mathrm{d}u}{\sin^2(u)} \\   &=& -\frac{u}{\sin(u)\left(\sin(u)-u \cos(u) \right)} - \frac{1}{\tan(u)} + C \\   &=& -\frac{\arctan(x)}{\frac{x}{\sqrt{1+x^2}} \left(\frac{x}{\sqrt{1+x^2}} -\arctan(x) \cdot \frac{1}{\sqrt{1+x^2}} \right)} - \frac{1}{x} + C  \\   &=& -\frac{1}{x} \left( 1+  \frac{(1+x^2) \arctan(x) }{x -  \arctan(x)}\right) + C =       -\frac{ 1 + x \arctan(x) }{x - \arctan(x)} + C   \end{eqnarray} 

@@ -1,29 +1,0 @@
-f,g
-=1
-f*g
-f(n)g(n)
-n
-{\mathbb R}/{\mathbb Z}=: T
-f\!: T\to {\mathbb C}
-\hat f\!: {\mathbb Z}\to{\mathbb C}
-\hat f(n)
-f
-\hat f(n)=\int_T f(t) \exp(-2n\pi i t)\ {\rm d}t\qquad (n\in{\mathbb Z}) .
-f
-g
-h
-T\times T
-(h:=) \quad f*g\!: \ T\to{\mathbb C}
-h(x):=\int_T f(x-t) g(t)\ {\rm d}t\qquad(x\in T)\ .
-\eqalign{\hat h(n)&=\int_T h(x)\exp(-2n\pi i x)\ {\rm d}x = \int_T\left(\int_T f(x-t)g(t)\ {\rm d}t\right)\ \exp(-2n\pi i x)\ {\rm d}x \cr &=\int_{T\times T} f(x-t) g(t)\exp\bigl(-2n\pi i x \bigr)\ {\rm d}x'\ {\rm d}t \cr &=\int_{T\times T} f(x') g(t)\exp\bigl(-2n\pi i(x'+t)\bigr)\ {\rm d}x'\ {\rm d}t \cr &=\int_T f(x')\exp(-2n\pi i x')\ {\rm d}x' \cdot \int_T g(t)\exp(-2n\pi i t)\ {\rm d}t =\hat f(n)\ \hat g(n)\ .\cr }
-f(n)
-t
-u=x-y
-t
-\mathbb{R}
-t(x+y)= t(x)t(y)
-t(x)=e^{2i\pi nx}
-n\in\mathbb{Z}
-\langle f,t \rangle =\int_0^1 f(x)t(x)dx
-\langle f*g,t \rangle = \int_0^1 \int_0^1 f(y)g(x-y)dy t(x)dx = \int_0^1f(y)\int_0^1 g(u) t(u+y)du\,dy, 
-\langle f*g,t \rangle = \int_0^1f(y)\int_0^1 g(u) t(u)t(y)du\,dy =\langle f,t \rangle\cdot \langle g,t \rangle.

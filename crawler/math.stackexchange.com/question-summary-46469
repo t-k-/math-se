@@ -1,13 +1,0 @@
-n>0
- \int{x^n e^x dx}
-n
-n
- \int {x e^x dx} = (x - 1)e^x  + C 
- \int {x^2 e^x dx} = (x^2  - 2x + 2)e^x  + C. 
- \int {x^3 e^x dx} = (x^3  - 3x^2  + 6x - 6)e^x  + C. 
- \int {x^4 e^x dx}  = (x^4  - 4x^3  + 12x^2  - 24x + 24)e^x  + C. 
- \int {x^5 e^x dx}  = (x^5  - 5x^4  + 20x^3  - 60x^2  + 120x - 120)e^x + C. 
- \int {x^n e^x dx}  = \bigg[\sum\limits_{k = 0}^n {( - 1)^{n - k} \frac{{n!}}{{k!}}x^k } \bigg]e^x  + C. 
-n
-\begin{align}\int x^ne^xdx&=x^ne^x+(-1)n\int x^{n-1}e^xdx,\qquad n\geq 1\\ \int x^0e^xdx&=e^x\end{align}
-\begin{align}a_n(x)&=x^ne^x+(-1)na_{n-1}(x),\qquad n\geq 1\\ a_0(x)&=e^x\end{align}

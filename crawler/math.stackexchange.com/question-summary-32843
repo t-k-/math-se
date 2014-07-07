@@ -1,61 +1,0 @@
-U=\left \{  u_j\right \} , 1 \leq j\leq N= b^{L},
-L
-\left \{  0, 1, .., b-1 \right \}
-V=\left \{  v_i\right \} , 1 \leq i\leq M=\binom{L}{k}b^{k},
-k
-L-k
-A_{M*N}=[a_{i,j}]
-a_{i,j} = \left\{\begin{matrix} 1 & \text{if } v_i \text{ matches } u_j \\  0 & \text{otherwise } \end{matrix}\right.
-S_{M*M}=AA^{T}
-AA^{T}
-L=2, k=1, b=2
-U = \left \{  00,01,10,11\right \} 
-V = \left \{  0.,1.,.0,.1\right \}  ^*
- A = \begin{bmatrix} 1 & 1 & 0 &0 \\  0 & 0 & 1 &1 \\  1 & 0 & 1 &0 \\  0 & 1 & 0 &1  \end{bmatrix}
- S = \begin{bmatrix} 2 & 0 & 1 &1 \\  0 & 2 & 1 &1 \\  1 & 1 & 2 &0 \\  1 & 1 & 0 &2  \end{bmatrix}
-^{*}
-k
-(L−K)
-V
-b^{L−k}
-A
-b^{L−k}
-\text{rank}(AA^T)=\text{rank}(A)=\sum_{m=0}^k\left({L\atop m}\right)(b-1)^m\;\;
-\left({L\atop m}\right)(b-1)^m
-\binom{L-m}{k-m}* b^{L-k}
-\Delta_{m}^{L,k}
-\Delta_{m}^{L,k}=\left[\begin{array}{c|c|cccc}  & \mathrm{first\, bit\, Not\, picked} &  & \mathrm{first\, bit\, picked}\\  &  & a_{1}=1 & a_{1}=2 & \cdots & a_{1}=(b-1)\\ \hline 0\ldots & \Delta_{m}^{L-1,k-1} & \Delta_{m-1}^{L-1,k-1} & \frac{1}{2}\Delta_{m-1}^{L-1,k-1} & \cdots & \frac{1}{b-1}\Delta_{m-1}^{L-1,k-1}\\ \hline 1\ldots & \Delta_{m}^{L-1,k-1} & -\Delta_{m-1}^{L-1,k-1} & \frac{1}{2}\Delta_{m-1}^{L-1,k-1} & \cdots & \frac{1}{b-1}\Delta_{m-1}^{L-1,k-1}\\ 2\ldots & \Delta_{m}^{L-1,k-1} & 0 & -\Delta_{m-1}^{L-1,k-1} & \cdots & \frac{1}{b-1}\Delta_{m-1}^{L-1,k-1}\\ \vdots & \vdots & \vdots & \vdots & \ddots & \vdots\\ (b-1)\ldots & \Delta_{m}^{L-1,k-1} & 0 & 0 & \cdots & -\Delta_{m-1}^{L-1,k-1}\\ \hline g\ldots & \Delta_{m}^{L-1,k} & 0 & 0 & \cdots & 0\end{array}\right]
-b=2
-m=0,1,..,k
-m
-L
-\binom{L}{m}
-m
-a
-\{1,2,..,b-1\}
-(b-1)^m
-x
-i^{th}
-x_i
-0
-v_i
-m
-v_i
-m
-m
-b
-v_i
-x_i
-x_i =  \begin{cases}  1, & \text{if } b \text{ has even number of non-zero values and if } b_j \neq 0 \implies b_j=a_j \forall j=0,1,..,m\\ -1, & \text{if } b \text{ has odd number of non-zero values and if } b_j \neq 0 \implies b_j=a_j \forall j=0,1,..,m\\ 0, & \text{otherwise} \end{cases} 
-\binom{L}{m}*(b-1)^m
-x
-AA^T
-\binom{L-m}{k-m}*b^{L-k}
-b=2
- \sum_{m=0}^{k} \binom{L}{m} \binom{L-m}{k-m} * b^{L-k}*(b-1)^m = \binom{L}{k}*b^{L-k} \sum_{m=0}^{k} \binom{k}{m}*(b-1)^m = \binom{L}{k}*b^L 
-AA^T
-AA^T
-AA^T
-0
-A
-\sum_{m=0}^{k} \binom{L}{m}*(b-1)^m

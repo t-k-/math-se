@@ -1,19 +1,0 @@
-x,y\in\mathbb{R}^n
-z\in\mathbb{R}^n
-z_i=\sqrt{x_i y_i}
-z=\sqrt{xy}
-\|x\|_t=\left(x_1^t +\cdots+x_n^t\right)^\frac{1}{t}
-t
-X(t)=2\|z\|_{1}\|z\|_{t}^{t}-\left(\|x\|_{1}\|y\|_{t}^{t}+\|y\|_{1}\|x\|_{t}^{t}\right)
-t
-t=1
-X(1)\leq 0
-X(1)=2\|z\|_1^2-\|x\|_1\|y\|_1=2\left(\sum_{i=1}^n \sqrt{x_i y_i}\right)^2-2\left(\sum_{i=1}^n x_i\right)\left(\sum_{i=1}^n y_i\right).
-\epsilon
-X(1-\epsilon)\leq X(1)\leq X(1+\epsilon)?
-n=1
-X(t)=2zz^t-xy^t-yx^t=2(xy)^{(t+1)/2}-xy^t-yx^t\;,
- \begin{eqnarray} X'(t) &=& (xy)^{(t+1)/2}\log(xy)-xy^t\log y-yx^t\log x\;, \\ X'(1) &=& xy\log(xy)-xy\log y-yx\log x=0 \end{eqnarray}
- \begin{eqnarray} X''(t) &=& \frac12(xy)^{(t+1)/2}(\log(xy))^2-xy^t(\log y)^2-yx^t(\log x)^2\;, \\ X''(1) &=& \frac12xy(\log(xy))^2-xy(\log y)^2-yx(\log x)^2=-\frac12xy(\log x-\log y)^2\;, \end{eqnarray}
-X
-t=1

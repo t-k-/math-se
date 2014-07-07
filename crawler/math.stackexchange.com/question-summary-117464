@@ -1,23 +1,0 @@
-n
-k_1
-k_2
-n
-a
-b
-m
-m
-(n+m)
-(n+m)!
-\binom{n}{a-m}
-\binom{n}{b-m}
-\sum_{m=0}^{\min(a,b)} X_m
- X_m = \\ (b-m)!\binom{n}{b-m}(n+m)!\binom{n}{a-m}(a-m)! \\ + 1_an(b-m)!\binom{n}{b-m}(n-1+m)!\binom{n}{a-1-m}(a-1-m)! \\ + (b-1-m)!\binom{n}{b-1-m}(n-1+m)!\binom{n}{a-m}(a-m)!n1_b\\ + 1_an(b-1-m)!\binom{n}{b-1-m}(n-2+m)!\binom{n}{a-1-m}(a-1-m)!(n-1)1_b 
-s_b
-s_g
-\binom{n+k_1-s_b-1}{k_1-s_b}
-\binom{n+1}{s_b}
-\binom{n+1}{s_g}
-\sum_{s_b=0}^{k_1} \sum_{s_g=0}^{k_2} [k_1 - s_b = k_2 - s_g][s_b \le n+1][s_g \le n+1] \binom{n+k_1-s_b-1}{k_1-s_b} \binom{n+1}{s_b} \binom{n+1}{s_g}
-= \sum_{s_b=0}^{\min(k_1, n+1)} [0 \le s_b + k_2 - k_1 \le \min(k_2, n+1)] \binom{n+k_1-s_b-1}{k_1-s_b} \binom{n+1}{s_b} \binom{n+1}{s_b + k_2 - k_1}
-= \sum_{s_b=\max(0, k_1-k_2)}^{\min(k_1, n+1, n+1 + k_1 - k_2)} \binom{n+k_1-s_b-1}{k_1-s_b} \binom{n+1}{s_b} \binom{n+1}{s_b + k_2 - k_1}
-n!k_1!k_2!

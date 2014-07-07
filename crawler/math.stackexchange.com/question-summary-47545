@@ -1,27 +1,0 @@
-a
-\frac{dI}{da}
-I(a)=\int_{0}^{L}\int_{0}^{L}\sqrt{a}e^{-a(x-y+b)^2}dxdy;L=const,b=const
-u
-v
-v
--(L-|u|)
-L-|u|
-\int_\ldots^\ldots (u+b)\exp\bigl(-a(u+b)^2\bigr) du
-\int_\ldots^\ldots \exp\bigl(-a(u+b)^2\bigr)du
-x={1\over2}(u+v+L)\ ,\quad y={1\over2}(-u+v+L)
-I(a)=\int_{|u|+|v|\leq L}{\sqrt{a}\over2}\exp\bigl(-a(u+b)^2\bigr){\rm d}(u,v)\ .
-I'(a)=\frac{e^{-a (b+L)^2} \left(2 e^{a L (2 b+L)}-e^{4 a b L}-1\right)}{4 a^{3/2}}.
-t=1/a
-G(b,t)=e^{-b^2/t}/\sqrt{\pi t}\ 
-u_t-u_{bb}/4=0\ 
-t\to+0
-u
-u(b,0)=\psi(b)
-\psi(b)=L-|b|
-|b|\le L
-\psi(b)=0
-u(b,t)=\int_{-\infty}^\infty G(b-z,t)\psi(z)\,dz\,\,\,
- u(b,t)=I(1/a)/\sqrt\pi =\int_{0}^{L}\int_{0}^{L}G(b+x-y,t)\,dxdy. 
- \tilde u(\xi,t)=\tilde \psi(\xi) \tilde G(\xi,t)=-\frac{e^{-i L \xi} \left(-1+e^{i L \xi}\right)^2}{\sqrt{2 \pi } \xi^2} \frac{e^{-\frac{\xi ^2 t}{4}}}{\sqrt{2 \pi }}= 
- -\frac{\left(-1+e^{i L \xi}\right)^2 e^{-\frac{\xi ^2 t}{4}-i L \xi}}{2 \pi  \xi^2},
- \tilde u_t(\xi,t)=\frac{\left(-1+e^{i L \xi }\right)^2 e^{-\frac{1}{4} \xi  (\xi  t+4 i L)}}{8 \pi }. 

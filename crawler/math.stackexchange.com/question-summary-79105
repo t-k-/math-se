@@ -1,11 +1,0 @@
-\zeta(0)=-\frac12
-\zeta(s)=\sum_{i=1}^{\infty}i^{-s}
-x
-0
-(1)
-(2)
-\zeta(0)=-\frac{1}{2}
- \begin{align} \int_0^\infty\frac{xt^{x-1}}{e^t+1}\mathrm{d}t &=\int_0^\infty\frac{xt^{x-1}}{1+e^{-t}}e^{-t}\;\mathrm{d}t\\ &=x\sum_{k=1}^\infty(-1)^{k-1}\int_0^\infty t^{x-1}e^{-kt}\;\mathrm{d}t\\ &=x\sum_{k=1}^\infty(-1)^{k-1}k^{-x}\int_0^\infty t^{x-1}e^{-t}\;\mathrm{d}t\\ &=x\eta(x)\Gamma(x)\\ &=(1-2^{1-x})\zeta(x)\Gamma(x+1)\tag{1} \end{align} 
- \begin{align} \lim_{x\to0^+}\int_0^\infty\frac{xt^{x-1}}{e^t+1}\mathrm{d}t &=\lim_{x\to0^+}\int_0^\infty\frac{t^xe^t}{(e^t+1)^2}\mathrm{d}t\\ &=\int_1^\infty\frac{\mathrm{d}u}{(u+1)^2}\\ &=\frac{1}{2}\tag{2} \end{align} 
-\Re s > 1
-\zeta(s)=\frac1{1-2^{1-s}}\sum_{n=0}^\infty \frac1{2^{n+1}}\sum_{k=0}^n (-1)^k \binom{n}{k} (k+1)^{-s}

@@ -1,32 +1,0 @@
-A, B, C, D
-A, B
-C, D
-P
-r,s\in\mathbb{R}
-P\rightarrow\frac{P-A}{B-A}=r
-A
-0
-B
-1
-\infty
-P\rightarrow s
- P = A + r(B-A) = C + s(D-C). 
-X=A-B
-Y=D-C
-Z=A-C
-\mathbb{R}
-\Re{(x+yi)}=x
-\Im{(x+yi)}=y
-\mathbb{C}=\mathbb{R}^2
-X,Y\in\mathbb{C}
- \begin{matrix} r(A-B) &+& s(D-C) &=& A-C \\ rX &+& sY &=& Z \end{matrix} 
- \begin{matrix} r\;\Re{X} &+& s\;\Re{Y} &=& \Re{Z} \\ r\;\Im{X} &+& s\;\Im{Y} &=& \Im{Z} \end{matrix} 
- r = \frac{   \left|     \begin{matrix}       \Re{Z} & \Re{Y} \\       \Im{Z} & \Im{Y}     \end{matrix}   \right| }{   \left|     \begin{matrix}       \Re{X} & \Re{Y} \\       \Im{X} & \Im{Y}     \end{matrix}   \right| } = \frac{\Im{(Z\overline{Y})}}{\Im{(X\overline{Y})}} \qquad \text{and} \qquad P=A-rX, 
- \begin{eqnarray}   \left|     \begin{matrix}       \Re{X} & \Re{Y} \\       \Im{X} & \Im{Y}     \end{matrix}   \right|   &=&   \Re{X}\Im{Y}-\Re{Y}\Im{X} & \\   &=&   \Re(X\Im{Y}-Y\Im{X}) & \qquad\text{(as in the Mathematica answer)} \\   &=&   -\Im{(X\overline{Y})} & \qquad\text{(as used above)}. \end{eqnarray} 
-A = (x_1,y_1), \dots , D = (x_4, y_4)
- (x,y) = s(x_1, y_1) + (1-s) (x_2, y_2) \ , \qquad s \in \mathbb{R} \qquad\qquad [1] 
- (x,y) = t(x_3, y_3) + (1-t) (x_4, y_4) \ , \qquad t \in \mathbb{R} \qquad\qquad [2] 
- s(x_1, y_1) + (1-s) (x_2, y_2) = t(x_3, y_3) + (1-t) (x_4, y_4) \ . 
- \begin{eqnarray*} (x_1 -x_2)s + (x_4 - x_3)t & = & x_4 - x_2 \\ (y_1 -y_2)s + (y_4 - y_3)t & = & y_4 - y_2  \end{eqnarray*} 
-s
-t

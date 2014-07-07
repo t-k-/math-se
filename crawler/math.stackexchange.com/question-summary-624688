@@ -1,7 +1,0 @@
-F(k;n,p)=Pr(X\leq k)=(n-k){{n}\choose{k}}\int_0^{1-p}t^{n-k-1}(1-t)^k {d}t
-F(k;n,p)=Pr(X\leq k)=(n-k){{n}\choose{k}}\int_0^{1-p}t^{n-k-1}(1-t)^k {d}t
-=(n-k){{n}\choose{k}}\int_0^{1-p}(1-t)^k {d}\frac{t^{n-k}}{n-k}
-=(n-k){{n}\choose{k}}\frac{1}{n-k}\left[(1-t)^kt^{n-k}|_0^{1-p}-\int_0^{1-p}t^{n-k}d(1-t)^k\right]
-={{n}\choose{k}}\left[(1-1+p)^k(1-p)^{n-k}+k\int_0^{1-p}t^{n-k}(1-t)^{k-1}dt\right]
-={{n}\choose{k}}p^k(1-p)^{n-k}+{{n}\choose{k}}k\int_0^{1-p}t^{n-k}(1-t)^{k-1}dt
-={{n}\choose{k}}p^k(1-p)^{n-k}+{{n}\choose{k}}\frac{k}{n-k+1}\int_0^{1-p}(1-t)^{k-1}dt^{n-k+1}= etc.

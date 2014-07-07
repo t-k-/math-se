@@ -1,65 +1,0 @@
-n
-\sum \limits_{i=1}^{n} \frac{10i-5}{2^{i+2}} =  \frac{5 \times  \left(3 \times 2^n-2 n-3\right)}{2^{n+2}}
- 10 \sum_{i=1}^{10} {i \over 2^{i+2}} - 5 \sum_{i=1}^{10} {1 \over 2^{i+2}}. 
-10S_1 - 5S_2
-\sum_{i=1}^\infty i/2^i = 2
-S_1 \approx 1/2
- S_1 = \sum_{i=1}^{10} {i \over 2^{i+2}} = {1 \over 4} \sum_{i=1}^{10} {i \over 2^i} 
-S_2 \approx \sum_{i=1}^\infty 1/2^{i+2} = 1/4
-15/4
- \sum_{i=1}^\infty {10i-5 \over 2^{i+2}} 
-15/4
-f(n)
- f(n) = {15 \over 4} - \left( 10 \sum_{i=n+1}^\infty {i \over 2^{i+2}} - 5 \sum_{i=n+1}^\infty {1 \over 2^{i+2}} \right). 
-f(n) = 15/4 - g(n) + h(n)
-h(n)
-5/2^{n+3}
-1/2
-h(n) = 5/2^{n+2}
-g(n)
- G(n) = \sum_{i={n+1}}^\infty {i \over 2^i} 
-g(n) = (5/2) G(n)
- G(n) = {(n+1) \over 2^{n+1}} + {{n+2} \over 2^{n+2}} + {{n+3} \over 2^{n+3}} + \cdots 
- G(n) = \left( {n \over 2^{n+1}} + {n \over 2^{n+2}} + {n \over 2^{n+3}} + \cdots \right) + {1 \over 2^n} \left( {1 \over 2^1} + {2 \over 2^2} + {3 \over 2^3} + \cdots \right). 
-n/2^n
-2
-G(n) = (n+1)/2^n
- f(n) = {15 \over 4} - {5 \over 2} {(n+2) \over 2^n} + {5 \over 2^{n+2}}. 
-\sum_{i=1}^\infty i/2^i
-1/2
-1/4
-1/8
-1 + 1/2 + 1/4 + 1/8 + \cdots
-2
- {1 \over 2} + {2 \over 4} + {3 \over 8} + {4 \over 16} + \cdots 
- \left( {1 \over 2} + {1 \over 4} + {1 \over 8} + \cdots \right) + \left( {1 \over 4} + {1 \over 8} + {1 \over 16} + \cdots \right) + \left( {1 \over 8} + {1 \over 16} + {1 \over 32} + \cdots \right) + \cdots 
-z
-z = 1/2
- {1 \over 1-z} = 1 + z + z^2 + z^3 + \cdots 
- {1 \over (1-z)^2} = 1 + 2z + 3z^2 + \cdots 
- {z \over (1-z)^2} = z + 2z^2 + 3z^3 + \cdots 
- {1/2 \over (1-1/2)^2} = {1 \over 2} + {2 \over 2^2} + {3 \over 2^3} + \cdots. 
-x \frac{\mathrm{d}}{\mathrm{d} x}\left( x^k \right) = k x^k
-\sum_{k=1}^n x^k = x \frac{x^n-1}{x-1}
-\begin{eqnarray}    \sum_{k=1}^n \left( a k +b\right) x^k &=& \left( a x \frac{\mathrm{d}}{\mathrm{d} x} + b\right) \circ \sum_{k=1}^n x^k = \left( a x \frac{\mathrm{d}}{\mathrm{d} x} + b\right) \circ \left( x \frac{x^n-1}{x-1} \right) \\     &=& x \left( a x \frac{\mathrm{d}}{\mathrm{d} x} + a + b\right) \circ \left(\frac{x^n-1}{x-1} \right) \\      &=& x \left(  (a+b) \frac{x^n-1}{x-1} + a x \frac{ n x^{n-1}(x-1) - (x^n-1) }{(x-1)^2}  \right) \\   &=& x \left(  (a+b) \frac{x^n-1}{x-1} + a x \frac{ (n-1) x^{n} - n x^{n-1} + 1 }{(x-1)^2}  \right) \end{eqnarray} 
- \begin{eqnarray}   \sum_{k=1}^n \frac{10 k -5}{2^{k+2}} &=& \frac{5}{4} \sum_{k=1}^n (2k-1)\left(\frac{1}{2}\right)^k  \\    &=& \frac{5}{4} \frac{1}{2} \left( -(2^{1-n} - 2) +  (n-1) 2^{2-n}- n 2^{1-n} + 4  \right) \\    &=& \frac{5}{4} \left(  3 + (n-3) 2^{-n}    \right)  \end{eqnarray} 
-\displaystyle\frac{10i-5}{2^{i+2}} = \frac{5(2i-1)}{2^{i+2}}
-2^0 + 2^1 + 2^2 + ... + 2^k = 2^{k+1}-1
-\displaystyle \begin{align*} \text{So } \sum \limits_{i=1}^{n} \frac{10i-5}{2^{i+2}}   &= 5(\frac{2\times1-1}{2^{1+2}}+\frac{2\times2-1}{2^{2+2}}+\frac{2\times3-1}{2^{3+2}}+...+\frac{2\times n-1}{2^{n+2}})\\  &= 5(\frac{2^{n-1}(2\times1-1)+2^{n-2}(2\times2-1)+2^{n-3}(2\times3-1)+...+2^{0}(2\times n-1)}{2^{n+2}}) \\  &= 5(\frac{2(2^{n-1}\times1+2^{n-2}\times2+2^{n-3}\times3+...+2^{0}\times n)-(2^{n-1}+2^{n-2}+2^{n-3}+...+1)}{2^{n+2}})\\  &= 5(\frac{2(2^{n-1}\times1+2^{n-2}\times2+2^{n-3}\times3+...+2^{0}\times n)-(2^n-1)}{2^{n+2}})\\  &= 5(\frac{2((2^{n-1}+2^{n-2}+2^{n-3}+...+1)+(2^{n-2}+2^{n-3}+2^{n-4}+...+1)+...+(2+1)+(1))-(2^n-1)}{2^{n+2}})\\  &= 5(\frac{2((2^{n}-1)+(2^{n-1}-1)+(2^{n-2}-1)+...+(2^{2}-1)+(2-1))-(2^n-1)}{2^{n+2}})\\  &= 5(\frac{2((2^{n}+2^{n-1}+2^{n-2}+...+2) + (-1)\times n)-(2^n-1)}{2^{n+2}})\\  &= 5(\frac{2(2\times (2^n - 1))- n)-(2^n-1)}{2^{n+2}})\\  &= 5(\frac{4 \times 2^n - 4 - 2n -2^n + 1}{2^{n+2}})\\  &= 5(\frac{3 \times 2^n - 2n - 3}{2^{n+2}})\text{ which is the closed form you got from Mathematica}\end{align*}
-S= \sum \limits_{i=1}^n \frac{1}{2^i}=1-\frac{1}{2^n}
-T=\sum_{i=1}^n \frac{i}{2^i} \,.
-T=\sum_{i=1}^n \frac{i}{2^i} =\frac{1}{2}+ \sum_{i=2}^n \frac{i}{2^i} =\frac{1}{2}-\frac{n+1}{2^{n+1}}+ \sum_{i=2}^{n+1} \frac{i}{2^i} \,.
-T= \frac{2^n-n-1}{2^{n+1}}+\sum_{i=1}^{n} \frac{i+1}{2^{i+1}}=\frac{2^n-n-1}{2^{n+1}}+\sum_{i=1}^{n} \frac{i}{2^{i+1}}+\sum_{i=1}^{n} \frac{1}{2^{i+1}}    \,.
-T= \frac{2^n-n-1}{2^{n+1}}+\frac{1}{2}T+ \frac{1}{2}-\frac{1}{2^{n+1}}
-\frac{1}{2}T=\frac{2^{n+1}-n-2}{2^{n+1}}\,.
-\sum_{i=1}^n \frac{i}{2^i} =\frac{2^{n+1}-n-2}{2^{n}} \,.
-\sum \limits_{i=1}^{10} \frac{10i-5}{2^{i+2}} =\frac{10}{4} \sum_{i=1}^{10} \frac{i}{2^i}-\frac{5}{4}\sum_{i=1}^{10} \frac{1}{2^i}
-\sum
-1-\frac{1}{1024}
-\sum
-\frac{1}{2} +
-\frac{1}{4} + \frac{1}{4} +
-\frac{1}{8} + \frac{1}{8} + \frac{1}{8} +
-\vdots
-\frac{1}{1024} + \frac{1}{1024} + \dots + \frac{1}{1024}
-(1-\frac{1}{1024})+(\frac{1}{2}-\frac{1}{1024})+\dots+(\frac{1}{512}-\frac{1}{1024})=(1+\frac{1}{2}+\dots+\frac{1}{512})-\frac{10}{1024}=\frac{1023}{512}-\frac{10}{1024}

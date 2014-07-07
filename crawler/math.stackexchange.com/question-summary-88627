@@ -1,50 +1,0 @@
-F\subset\mathbb{R}
- \lim_{n \to \infty} \int_{F} \frac{dx}{2-\sin nx}.
-f_{n}(x)=\frac{1}{2-\sin nx}
-F
-\int_{F}\frac{dx}{2-\sin nx}
-\lim \limits_{n \to  \infty}f_{n}(x)
-\lim \limits_{n \to \infty}\int_{F}\frac{dx}{2-\sin nx}
-\lim \limits_{n \to \infty}f_{n}(x)
-z=\tan{\frac{x}{2}}
-\frac{1}{2-\sin(x)}
-\frac{1}{\sqrt{3}}
- \left|\frac{1}{2-\sin(nx)}\right|\le1\tag{1} 
- \begin{align} \int_0^{2\pi}\frac{\mathrm{d}x}{2-\sin(x)} &=\int_{-\infty}^\infty\frac{\frac{2\;\mathrm{d}z}{1+z^2}}{2-\frac{2z}{1+z^2}}\\ &=\int_{-\infty}^\infty\frac{\mathrm{d}z}{1-z+z^2}\\ &=\int_{-\infty}^\infty\frac{\mathrm{d}z}{\frac{3}{4}+(z-\frac{1}{2})^2}\\ &=\frac{2\pi}{\sqrt{3}}\tag{2} \end{align} 
-F
-\{I_k\}
-|\cup I_k\;\Delta\;F|<\epsilon
-I_k=[a,b]
-(3)
-k=\lfloor\frac{n(b-a)}{2\pi}\rfloor
-|nb-(na+k2\pi)|<2\pi
-(1)
-|J_n|<2\pi
-\lim\limits_{n\to\infty}\frac{k}{n}=\frac{b-a}{2\pi}
-\lim\limits_{n\to\infty}\frac{J_n}{n}=0
- \begin{align} \lim_{n\to\infty}\int_{I_k}\frac{\mathrm{d}x}{2-\sin(nx)} &=\lim_{n\to\infty}\int_a^b\frac{\mathrm{d}x}{2-\sin(nx)}\\ &=\lim_{n\to\infty}\frac{1}{n}\int_{na}^{nb}\frac{\mathrm{d}x}{2-\sin(x)}\\ &=\lim_{n\to\infty}\frac{1}{n}\left(\int_{na}^{na+k2\pi}\frac{\mathrm{d}x}{2-\sin(x)}+\int_{na+k2\pi}^{nb}\frac{\mathrm{d}x}{2-\sin(x)}\right)\\ &=\lim_{n\to\infty}\frac{1}{n}\left(k\frac{2\pi}{\sqrt{3}}+J_n\right)\\ &=\frac{b-a}{\sqrt{3}}\\ &=\frac{|I_k|}{\sqrt{3}}\tag{3} \end{align} 
-(1)
- \begin{align} \lim_{n\to\infty}\left|\int_F\frac{\mathrm{d}x}{2-\sin(nx)}-\int_{\cup I_k}\frac{\mathrm{d}x}{2-\sin(nx)}\right| &\le\lim_{n\to\infty}\int_{\cup I_k\;\Delta\;F}\frac{\mathrm{d}x}{|2-\sin(nx)|}\\ &\le\epsilon\tag{4} \end{align} 
- \begin{align} \lim_{n\to\infty}\left|\int_F\frac{\mathrm{d}x}{2-\sin(nx)}-\frac{|F|}{\sqrt{3}}\right| &\le\lim_{n\to\infty}\left|\int_F\frac{\mathrm{d}x}{2-\sin(nx)}-\int_{\cup I_k}\frac{\mathrm{d}x}{2-\sin(nx)}\right|\\ &+\lim_{n\to\infty}\left|\int_{\cup I_k}\frac{\mathrm{d}x}{2-\sin(nx)}-\frac{|\cup I_k|}{\sqrt{3}}\right|\\ &+\lim_{n\to\infty}\left|\frac{|\cup I_k|}{\sqrt{3}}-\frac{|F|}{\sqrt{3}}\right|\\ &\le\epsilon+0+\frac{\epsilon}{\sqrt{3}}\tag{5} \end{align} 
- \lim_{n\to\infty}\int_F\frac{\mathrm{d}x}{2-\sin(nx)}=\frac{|F|}{\sqrt{3}}\tag{6} 
-k = k_0
-{1 \over 2^{k_0}}
-F
-{1 \over 2^{k_0}}\mu(F)
-k_0
-\sin^k(nt)
-2^k
-\sin(nt) = {e^{iknt} - e^{-iknt} \over 2i}
-n
-F
-\mu(F){1 \over 2\pi}\int_0^{2\pi}\sin^k(t)\,dt
-\sin^k(t)
-k
-\mu(F){1 \over 2\pi}\int_0^{2\pi}\sin^k(t)\,dt
-{1 \over 2 - \sin(nt)} = {1 \over 2} \bigg({1 \over 1 - {\sin(nt) \over 2}}\bigg)
-= \sum_{k=0}^{\infty} {\sin^k(nt) \over 2^{k+1}}
-\lim_{k_0 \rightarrow \infty} \lim_{n \rightarrow \infty}\int_F \sum_{k = 0}^{k_0} {\sin^k(nt) \over 2^{k+1}}\,dt
-= \sum_{k=0}^{\infty} \lim_{n \rightarrow \infty}\int_F  {\sin^k(nt) \over 2^{k+1}}\,dt
-\lim_{n\rightarrow \infty} \int_F\sin^k(nt)\,dt = \mu(F){1 \over 2\pi}\int_0^{2\pi}\sin^k(t)\,dt
-{\mu(F) \over 2\pi}\sum_{k=1}^{\infty} \int_0^{2\pi}{\sin^k(t) \over 2^{k+1}} \,dt
-{\mu(F) \over 2\pi}\int_0^{2\pi}{1 \over 2 - \sin(t)}\,dt

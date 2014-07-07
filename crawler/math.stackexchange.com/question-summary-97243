@@ -1,96 +1,0 @@
-n
-n
-4
-3
-1+1+1, 1+2,2+1,3
-x
-2^{x-1}
-2+4+1+3+5
-2^12^02^4=32
-n
-F_{2n}
-n
-n+1
-1
-n+1
-1
-\pi
-n
-+1
-\pi
-n+1
-F_{2n}
-n=1
-F_1=1=F_2
-P(n)
-n
-n
-P_o(n)
-n
-P_o^-
-n
-1
-P_o^+(n)
-n
-1
-P_e(n)
-P_e^-(n)
-P_e^+(n)
-n
-\pi
-n
-f(\pi)
-2^{x-1}
-x
-\pi
-s(n)=\sum_{\pi\in P(n)}f(\pi)\text{ and }t(n)=\sum_{\pi\in P_o(n)}f(\pi)\;.
-\begin{align*} &\sum_{\pi\in P_o^-(n+1)}f(\pi)=\sum_{\pi\in P_e(n)}f(\pi)=s(n)-t(n)\;,\\ &\sum_{\pi\in P_o^+(n+1)}f(\pi)=2\sum_{\pi\in P_o(n)}f(\pi)=2t(n)\;,\\ &\sum_{\pi\in P_e^-(n+1)}f(\pi)=\sum_{\pi\in P_o(n)}f(\pi)=t(n)\;,\text{ and}\\ &\sum_{\pi\in P_e^+(n+1)}f(\pi)=\sum_{\pi\in P_e(n)}f(\pi)=s(n)-t(n)\;, \end{align*}\tag{1}
-(1)
-s(n+1)
-s(k)=F_{2k}
-k\le n
- s(n+1)=2s(n)+t(n)\tag{2}
-t(n+1)=\sum_{\pi\in P_o^-(n+1)}f(\pi)+\sum_{\pi\in P_o^+(n+1)}f(\pi)=s(n)+t(n)\;.
-\begin{align*} s(n+1)&=2F_{2n}+t(n)\\ &=2F_{2n}+s(n-1)+t(n-1)\\ &=2F_{2n}+s(n-1)+\big(s(n)-2s(n-1)\big)\qquad\text{(from }(2)\text{)}\\ &=3F_{2n}-F_{2n-2}\\ &=2F_{2n}+F_{2n-1}\\ &=F_{2n}+F_{2n+1}\\ &=F_{2n+2}\;, \end{align*}
-\prod 2^{x_{2k+1}-1}
-\Pi
-S(\Pi)
-\pi
-\pi
-n>0
-m<n
-n-m
-n
-m<n
-m=0
-E_n
-n
-m
-O_n
-S(O_n)
-F_{2n-1}
-S(E_n)
-F_{2n-2}
-O_m\ \& \ E_m
-O_n\ \& \ E_n
-S(E_n)
-S(E_n) = S(O_{n-1}) + S(O_{n-2}) + \ldots + S(O_{1}) = 
-= F_{2n-3} + F_{2n-5} + \ldots + F_1 = (F_0=0) = F_{2n-2}.
-S(O_n)
-E_1
-S(O_n) = S(E_{n-1})\cdot 2^{1-1} + S(E_{n-2})\cdot 2^{2-1} + \ldots S(E_{2})\cdot 2^{(n-2)-1} + 2^{n-1} = 
-= F_{2n-4} + F_{2n-6}\cdot 2 + \ldots + F_2\cdot 2^{(n-2)-1} + 2^{n-1} = 
-= F_{2n-4} + 2 (F_{2n-6} + \ldots + F_2\cdot 2^{(n-3)-1} + 2^{(n-1)-1}) = 
- = F_{2n-4} + 2 S(O_{n-1}) = F_{2n-4} + 2F_{2n-3} = F_{2n-2} + F_{2n-3} = F_{2n-1} \ \square
-\hat{S}(\Pi)
-\Pi
-\Pi_n
-n
-E_n
-O_n
-S(E_{n-x})2^{x-1}
-\tilde{S}(\Pi_{n-x})\cdot 1
-1
-2^{n-1}
-\hat{S}
-\tilde{S}

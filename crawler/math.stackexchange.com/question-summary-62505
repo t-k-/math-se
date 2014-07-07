@@ -1,18 +1,0 @@
-\mathbf{R}(t)
-\mathbf{R}(t+\Delta t)
-\boldsymbol \omega \in \mathbb{R}^3
-\boldsymbol \Omega = \begin{pmatrix} 0 & -\omega_z(t) & \omega_y(t) \\ \omega_z(t) & 0 & -\omega_x(t) \\ -\omega_y(t) & \omega_x(t) & 0 \\ \end{pmatrix}
-\mathbf{R}(t+\Delta t) = e^{\boldsymbol \Omega \Delta t} \mathbf{R}(t)
-\boldsymbol \Omega
-\boldsymbol \Omega = \frac{ \log\left( \mathbf{R}(t)\mathbf{R}^{-1}(t+\Delta t) \right)}{\Delta t}
-\boldsymbol Y = \mathbf{R}(t) \mathbf{R}^{-1}(t+\Delta t) -\mathbf{I}
- \boldsymbol \Omega(t) = \dfrac{ \log\left(\mathbf{R}(t) \mathbf{R}^{-1}(t+\Delta t) \right)}{\Delta t} \approx \frac{1}{\Delta t} \left( \mathbf{Y} - \frac{\mathbf{Y}^2}{2} + \frac{\mathbf{Y}^3}{3} - \frac{\mathbf{Y}^4}{4} + \ldots \right ) 
-\mathbf Y^{-1}=\mathbf R(t+\Delta t) \mathbf R^{-1}(t)
-t
-t+\Delta t
-\boldsymbol\omega
-|\boldsymbol\omega|\Delta t
-\phi
-1+2\cos\phi
-|\boldsymbol\omega|
-\mathbf Yx=x

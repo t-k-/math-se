@@ -1,48 +1,0 @@
-\mathbb{P}_n (x)
-x\in[0,1]
-P_{\alpha_0}(x)=\sum_{i=1}^n a_i x^{i-1}
-\alpha_0 = (a_1,\ldots,a_n) \in \mathbb{R}^n
-(x_0,y_0) \in [0,1]\times\mathbb{R}
-\beta \in\mathbb{R}^n
-S
-\beta \in S
-\alpha_1 = \alpha_0 + \beta
- P_{\alpha_0 + \beta}(x_0)=y_0 
- {\lVert P_{\alpha} \rVert}_{(x_0)} = \int_0^1 {(x-x_0)}^2{(P_{\alpha}(x))^2} dx 
- {\lVert P_{\alpha_0} -P_{\alpha_0+\beta}\rVert}_{(x_0)} 
-\beta_i=(0,\ldots,0,b_{i,i},0,\ldots,0)
-i
-b_i = b_{i,i}
- P_{\alpha_0+\beta_i}(x_0)=y_0 
- b_{i,i} = \frac{y_0 - P_{\alpha_0}(x_0)}{x_0^{i-1}} 
-S
-\sum t_i \beta_i
-\sum t_i = 1
-\sum t_i = 1
- {\lVert P_{\alpha_0} -P_{\alpha_0+\beta}\rVert}_{(x_0)} = \sum_{i,j}^n t_i t_j b_i b_j g_{x_0}(i,j) 
- g_{x_0}(i,j) = (\frac{1}{i+j+1} -\frac{2 x_0}{i+j} + \frac{x_0^2}{i+j-1}) 
-M t = 0 
-M_{i,j} = b_i g_{x_0}(i,j)
-M
-t=0
-\sum t_i = 1
- \frac{d{\lVert P_{\alpha_0} -P_{\alpha_0+\beta}\rVert}_{(x_0)}}{d t_k} = \sum_i t_i b_i g_{x_0}(k,j) 
- \left( \begin{matrix} M \\ 1 \end{matrix} \right) t =   \left( \begin{matrix} 0 \\ 1 \end{matrix} \right) 
-t\in S \subset \mathbb{R}^n
-t
-\lVert t \rVert
- d(t,b,x_0)=\sum_{i,j=1}^n t_i t_j b_i b_j g_{ij}(x_0) 
- S = \{t:\sum_1^n t_i = 1\} 
-t_n
-1-\sum_1^{n-1} t_i
-g_{ij}(x_0)
-g_{ij}
-{(t_i)}_{i=1}^{n-1}
-t^*
- f(t^*)=\sum_{i,j=1}^{n-1} t_i^* t_j^* A_{ij} + \sum_{i=1}^{n-1} t_i^* b_n B_i + b_n^2 g_{nn} 
-A_{ij}=b_i b_j g_{ij} - 2 b_i b_n g_{in} + b_n^2 g_{nn}
-B_i = 2 b_i g_{in}-2b_n g_{nn}
-C_{ij}=A_{ij}+A_{ji}
- \frac{d f}{d t_k^*} = (\sum_{i=1}^{n-1} t_i (A_{ik}+A_{ki})) + B_k 
- C t + B = 0 
-C

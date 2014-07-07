@@ -1,16 +1,0 @@
-y(t)=-[t]+\frac{1}{2}\cdot(1-3^{t-[t]})
-t \ge 0
-[x]
-x
-y' = \log(3) \cdot (y-[y]-\frac{3}{2})
-y(0)=0
-\begin{align} \frac{dy(t)}{dt} &= -\frac{d[t]}{dt} + \frac12\frac{d}{dt}\left(1 - 3^{t-[t]}\right) \\ &= -\frac{d[t]}{dt} + \frac12 \left(0 - 3^{t-[t]} \log 3 \cdot \frac{d}{dt}(t-[t])\right) \\ &= -\frac{d[t]}{dt} - \frac12 3^{t-[t]}\log 3\cdot\left(1 - \frac{d[t]}{dt}\right). \end{align}
-t
-[t]
-t
-[t]
-d[t]/dt = 0
-\begin{align} \frac{dy(t)}{dt} &= -0 - \frac12 3^{t-[t]}\log 3\cdot\left(1 - 0\right) \\ &= -\frac123^{t-[t]}\log 3. \end{align}
-[t]
-[t]=trunc(t)
-y'(t)=-trunc(1,t)-\frac{1}{2}\cdot 3^{t-trunc(t)}\cdot (1-trunc(1,t))\cdot \ln 3

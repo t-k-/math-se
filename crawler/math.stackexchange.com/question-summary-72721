@@ -1,12 +1,0 @@
-d(\alpha,\beta)\leq D(P_0\|P_1)
-D(P_0\|P_1)=\sum_{x\in\mathcal{Q}}P_0(x)\log_2\left(\frac{P_0(x)}{P_1(x)}\right)
-d(\alpha,\beta)=\alpha\log_2\frac{\alpha}{1-\beta}+(1-\alpha)\log_2\frac{1-\alpha}{\beta}
-\alpha
-\beta
-TV(P_0,P_1)=\frac{1}{2}\sum_{x\in\mathcal{Q}}\left| P_0(x)-P_1(x)\right|
-2(TV(P_0,P_1)^2\leq D(P_0\|P_1)
-P_0(\cdot )
-P_1(\cdot )
-P_0
-A
- \begin{align} \textrm{Type I error} + \textrm{Type II error} &= P_0(A) + P_1(A^C) \\ &= P_0(A) + [1 - P_1(A)]\\ &= 1 + [P_0(A) - P_1(A)]\\ &\geq 1 + \inf_{A}[P_0(A)-P_1(A)]\\ &= 1-\sup_{A}[P_0(A)-P_1(A)]\\ &= 1-TV(P_0 , P_1) \end{align}

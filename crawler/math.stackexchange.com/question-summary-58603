@@ -1,38 +1,0 @@
-y= \theta + \varepsilon + a,
-a
-a^e
-\theta
-\varepsilon
-\theta \sim \mathcal{N}(\bar{\theta},\sigma_{\theta}^2)
-\varepsilon \sim \mathcal{N}(0,\sigma_{\varepsilon}^2)
-E[E[\theta|y]]=\bar{\theta} + \phi E[\theta + \varepsilon + a - a^e - \bar{\theta}]
-\phi=\sigma_{\theta}^2/(\sigma_{\theta}^2+\sigma_{\varepsilon}^2)
-y= a + b
-a
-b
-E[a|y] = \frac{\sigma_{a}^2}{\sigma_{y}^2}y
-y=\theta^e+\varepsilon+a^e\;,
-\theta^e
-\theta
-y=\theta+\varepsilon+a
-\theta^e=\theta+a-a^e
-c
-d
-x
-a
-b
-y
-a
-\theta
-a
-x=c+d
-c
-d
-E[c|x]=(\sigma_c^2/\sigma_x^2)x
-y-\bar\theta-a^e=(\theta^e-\bar\theta)+\varepsilon\;,
-x=y-\bar\theta-a^e
-c=\theta^e-\bar\theta
-d=\varepsilon
-a^e
-y
- \begin{eqnarray} E[\theta^e|y] &=&\bar\theta+E[c|x] \\ &=& \bar\theta+(\sigma_c^2/\sigma_x^2)x \\ &=& \bar\theta+(\sigma_\theta^2/\sigma_y^2)(y-\bar\theta-a^e) \\ &=& \bar\theta+(\sigma_\theta^2/(\sigma_\theta^2+\sigma_\varepsilon^2))(\theta^e-\bar\theta+\varepsilon) \\ &=& \bar\theta+(\sigma_\theta^2/(\sigma_\theta^2+\sigma_\varepsilon^2))(\theta+a-a^e-\bar\theta+\varepsilon)\;, \end{eqnarray} 

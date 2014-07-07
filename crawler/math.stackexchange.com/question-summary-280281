@@ -1,7 +1,0 @@
-  \text{Re}\log(1-e^{2ix}) = \text{Re}\log(1-\cos 2x - i \sin ) = \log\Big( (1- \cos 2x)^{2}+ \sin^2{2x} \Big)^{1/2}
- = \frac{1}{2} \log(2 - 2 \cos 2x) = \frac{1}{2} \log(4 \sin^{2} x) = \log(2 \sin x) = \log(2) + \log(\sin x)
- \int_{0}^{z} \log(\sin) \ dx = \text{Re}\int_{0}^{z} \log(1-e^{2ix}) \ dx - \int_{0}^{z}\log 2 \ dx
- = -\text{Re} \int_{0}^{z}\sum_{n=1}^{\infty} \frac{e^{2inx}}{n} \ dx - z\log 2
-=- \text{Re} \sum_{n=1}^{\infty} \frac{1}{n} \int_{0}^{z} e^{2inx} \ dx - z \log(2) = - \text{Re} \sum_{n=1}^{\infty} \frac{1}{2in^{2}} \Big(e^{2inz}-1 \Big) - z \log 2
- =\text{Re} \frac{i}{2}\sum_{n=1}^{\infty} \frac{1}{n^{2}}\Big(\cos 2nx + i \sin 2nx -1 \Big) - z \log 2 
-=- \frac{1}{2}\sum_{n=1}^{\infty} \frac{\sin 2nz}{n^{2}}- z \log 2 = - \frac{1}{2} \text{Im} \ \text{Li}_{2} (e^{2iz}) - z \log 2

@@ -1,10 +1,0 @@
-f(x) = 0.5 e^{-|x|}
--\infty < x < \infty
-Y = |X|
-E(e^{tX}) = \int_{-\infty}^\infty f(x) e^{tx} \; dx.
- \begin{align} E(e^{tX}) & = \int_{-\infty}^\infty f(x) e^{tx} \ dx=\int_{-\infty}^0 f(x) e^{tx}\ dx+\int_0^\infty f(x) e^{tx}\ dx \\  \\ & =\int_{-\infty}^0 0.5e^x e^{tx}\ dx + \int_0^\infty 0.5 e^{-x} e^{tx}\ dx \\  \\ &  = 0.5\left(\int_{-\infty}^0  e^{(t+1)x}\ dx+\int_{0}^\infty e^{(t-1)x} \ dx\right) = \frac{0.5}{t+1}-\frac{0.5}{t-1},\quad t\in (-1,1) \end{align} 
-Y=|X|
-y=h(x)
-Y=|X|
-Y\in [0,+\infty)
-g(y)=f(h^{-1}(y))|\frac{d(h^{-1}(y))}{dy}|

@@ -1,8 +1,0 @@
-f(x)=\int_{x}^{x+1}\sin{(e^t)}dt
-e^x|f(x)|\le 2
-e^t=u
-|f(x)|=|\int_{e^x}^{e^{x+1}}\dfrac{1}{u}d\cos{u}|
-\displaystyle f(x) = \int_{e^x}^{e^{x+1}} \dfrac{\sin u}{u}\,du = \left[\dfrac{-\cos u}{u}\right]_{e^x}^{e^{x+1}} - \int_{e^x}^{e^{x+1}} \dfrac{\cos u}{u^2}\,du
-|\cos u| \le 1
-\cos e^x - 1 + \frac{1}{e}\left(1- \cos e^{x+1}\right) \leq e^xf(x) \leq \cos e^x + 1 - \frac{1}{e}\left(\cos e^{x+1} + 1 \right)
-|e^xf(x)| < 2

@@ -1,7 +1,0 @@
-X=(1 + \tan 1^{\circ})(1 + \tan 2^{\circ})(1 + \tan 3^{\circ})\ldots(1 + \tan {45}^{\circ})
-\tan(90-\theta)=\cot\theta=\frac{1}{\tan\theta}
-\theta = 1^\circ = \frac{\pi}{180} \operatorname{rad}
-\sin(90^\circ - \alpha) = \cos(\alpha)
-    X = \prod_{k=1}^{45} \left(1 + \tan(k \theta)\right) = \prod_{k=1}^{45} \frac{\sin(k \theta) + \cos(k \theta)}{\cos(k \theta)} = \prod_{k=1}^{45} \sqrt{2} \frac{\sin((k+45) \theta)}{\cos(k \theta)} 
-   \prod_{k=1}^{45} \sqrt{2} \frac{\sin((k+45) \theta)}{\cos(k \theta)} = 2^{45/2} \frac{\prod_{k=1}^{45} \sin((k+45) \theta)}{\prod_{k=1}^{45} \cos(k \theta)} \stackrel{45+k = 90-n}{=} 2^{45/2} \frac{\prod_{n=0}^{44} \sin(90^\circ-n \theta)}{\prod_{k=1}^{45} \cos(k \theta)} 
-   2^{45/2} \frac{\prod_{n=0}^{44} \sin(90^\circ-n \theta)}{\prod_{k=1}^{45} \cos(k \theta)} = 2^{45/2} \frac{\prod_{n=0}^{44} \cos(n \theta)}{\prod_{k=1}^{45} \cos(k \theta)} = 2^{45/2} \frac{\cos( 0 )}{\cos(45^\circ)} = 2^{23} 

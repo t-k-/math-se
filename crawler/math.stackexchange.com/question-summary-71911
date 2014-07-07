@@ -1,13 +1,0 @@
-a_n=(n+1)^c - n^c
-0<c<1
-0<c<\tfrac 1 2
-\frac d {dx}(n+1)^{2c}-n^{2c}<0
-\lim_{n\to\infty} (n+1)^c-n^c= \lim_{n\to\infty}\frac{(n+1)^{2c}-n^{2c}}{(n+1)^c+n^c}=0
-\frac 1 2 \le c <1
-c \in (0, 1)
- \left( 1 + \frac{1}{n} \right)^c - 1 = O\left(\frac{1}{n} \right) \tag{1} 
- (n+1)^c - n^c = O(n^{c-1}) = o(1). 
-(1)
-0< c < 1
- (n+1)^c-n^c = n^c \left[ \left( 1 + \frac{1}{n} \right)^c - 1 \right] \leq n^c \left[\left( 1 + \frac{1}{n} \right)^{1} - 1 \right] = n^{c-1}. 
- 0\leqslant (n+1)^c-n^c=c\int\limits_{n}^{n+1}\frac{\mathrm dx}{x^{1-c}}\leqslant\frac{c}{n^{1-c}}. 

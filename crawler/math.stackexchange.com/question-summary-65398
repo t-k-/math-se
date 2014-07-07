@@ -1,34 +1,0 @@
-k
-1,\ldots,N
-m
-\frac{\binom{m-1}{k-1}}{\binom{N}{k}}
-\mu = \sum_{m=k}^N m \frac{\binom{m-1}{k-1}}{\binom{N}{k}} = \frac{k(N+1)}{k+1}
-(k-1)!
-\mu = \frac{(k-1)!}{\binom{N}{k}} \sum_{m=k}^N m(m-1) \ldots (m-k+1)
-B_k^N=\sum\limits_{m=k}^N\binom{m-1}{k-1}
-(n,i)=(m,k)
-\sum\limits_{m=k}^Nm\binom{m-1}{k-1}=\sum\limits_{m=k}^Nk\binom{m}{k}=k\sum\limits_{m=k+1}^{N+1}\binom{m-1}{(k+1)-1}=kB_{k+1}^{N+1}
-B_{k+1}^{N+1}=\binom{N+1}{k+1}
-(n,i)=(N+1,k+1)
-(k+1)B_{k+1}^{N+1}=(N+1)B_k^N
-\mu=\dfrac{kB_{k+1}^{N+1}}{B_k^N}=k\dfrac{N+1}{k+1}
-k
-\{x_1,x_2,\dots, x_k\}\leftrightarrow x_{(1)}<x_{(2)}<\cdots <x_{(k)} \leftrightarrow (G_1,G_2,\dots, G_{k+1})
-G_1=x_{(1)}
-G_j=x_{(j)}-x_{(j-1)}
-2\leq j\leq k
-G_{k+1}=(N+1)-x_{(k)}
-G_1,G_2,\dots, G_{k+1}
-\mathbb{E}(G_{k+1})=\mathbb{E}((N+1)-x_{(k)})={N+1\over k+1}
-\mathbb{E}(\mbox{Maximum})=\mathbb{E}(x_{(k)})=(N+1)- {N+1\over k+1}={k\over k+1} (N+1).
-\mathbb{E}(x_{(1)}),\mathbb{E}(x_{(2)}),\dots,  \mathbb{E}(x_{(k)})
-{1\over k+1} (N+1)
-{k\over k+1} (N+1).
-\mu = \sum_{m=k}^N m \frac{\binom{m-1}{k-1}}{\binom{N}{k}} = \sum_{m=k}^{N}\frac{m! k!(N-k)!}{N!(k-1)!(m-k)!}
-= k\frac{k! (N-k)!}{N!} \sum_{m=k}^N \binom{m}{m-k} = k\frac{k! (N-k)!}{N!} \binom{N+1}{N-k}
-= k\frac{k! (N-k)! (N+1)}{N! (N-k)! (k+1)!} = k\frac{N+1}{k+1}
-\sum_{m=k}^N \binom{m}{m-k} = \sum_{i=0}^{N-k} \binom{k+i}{i} = \binom{N+1}{N-k}
-\mu = \sum_{m=k}^N m \frac{\binom{m-1}{k-1}}{\binom{N}{k}}
-= \sum_{m=k}^{N}m \frac{(m-1)! k!(N-k)!}{N!(k-1)!(m-k)!}
-= \frac{k!(N-k)!}{N!(k-1)!} \sum_{m=k}^{N} m \frac{(m-1)!}{(m-k)!}
- = \frac{k (N-k)!}{N!} \sum_{m=k}^{N} \frac{m!}{(m-k)!}

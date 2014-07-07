@@ -1,9 +1,0 @@
- \int^1_0 \frac{\log(1+\phi x^2)}{1+x}\, dx
-\phi =\frac{\sqrt{5}+1}{2}
-\phi
-a
-\alpha>0
-    \mathcal{I}(a) = \int_0^1 \frac{\log(1+a x^2)}{1+x} \mathrm{d}x \stackrel{x^2=t}{=} \int_0^1 \frac{\log(1+ a t)}{1+\sqrt{t}} \frac{\mathrm{d}t}{2 \sqrt{t}} 
-\begin{eqnarray}    \mathcal{I}^\prime(a) &=& \int_0^1 \frac{\sqrt{t}}{2\left(1+a t\right)\left(1+ \sqrt{t}\right)} \mathrm{d}t = \left[\frac{\log \left(1+\sqrt{t}\right)}{1+a}+\frac{\log (1+a t)}{2 a    \left(1+a\right)}-\frac{\arctan\left(\sqrt{a t}\right)}{\sqrt{a}\left(1+a\right)} \right]_0^1 \\  &=& \frac{\log 2}{1+a} + \frac{\log(1+a)}{2 a \left(1+a\right)} - \frac{\arctan(\sqrt{a})}{\sqrt{a} \left(1+a\right)} \\   &=& \frac{\log(1+a)}{2} \left(\frac{1}{a} - \frac{1}{1+a} \right) + \frac{\mathrm{d}}{\mathrm{d}a}\left( \log 2 \cdot \log\left(1+a\right) - \arctan^2\left(\sqrt{a}\right)\right) \\  &=& \frac{\log(1+a)}{2 a} + \frac{\mathrm{d}}{\mathrm{d}a}\left( \log 2 \cdot \log\left(1+a\right) + \frac{\log^2\left(1+a\right)}{4} - \arctan^2\left(\sqrt{a}\right)\right) \end{eqnarray} 
-\begin{eqnarray}   \mathcal{I}\left(\alpha\right) &=& \int_0^\alpha \mathcal{I}^\prime(a) \mathrm{d}a = \left[ \log 2 \cdot \log\left(1+a\right) + \frac{\log^2\left(1+a\right)}{4} - \arctan^2\left(\sqrt{a}\right) \right]_{0}^{\alpha} + \frac{1}{2} \underbrace{\int_0^\alpha \frac{\log(1+a)}{a} \mathrm{d}a }_{-\operatorname{Li}_2\left(-\alpha\right)} \\  &=& \frac{\log^2\left(1+\alpha\right)}{4} + \log(2)\log\left(1+\alpha\right) - \arctan^2\left(\sqrt{\alpha}\right) - \frac{1}{2} \operatorname{Li}_2\left(-\alpha\right) \end{eqnarray} 
-\displaystyle{z_{\sigma}                     \equiv                      -\,{{\rm i}\,\sigma\,\phi^{1/2} \over 1 - {\rm i}\,\sigma\,\phi^{1/2}}}

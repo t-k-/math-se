@@ -1,48 +1,0 @@
-F:\mathcal{C}\to \mathcal{D}
-G:\mathcal{D}\to \mathcal{C}
-(F,G)
-D:I\to \mathcal{D}
-A\in \mathcal{C}
-\begin{align*} \hom_\mathcal{C} (A, G(\varprojlim D)) &\simeq \hom_{\mathcal{D}} (F(A),\varprojlim D)\\ & \simeq \varprojlim \hom_{\mathcal{D}}(F(A),D)\\& \simeq \varprojlim \hom_{\mathcal{C}}(A,GD) \\& \simeq \hom_{\mathcal{C}}(A,\varprojlim GD)\end{align*}
-G(\varprojlim D)\simeq \varprojlim GD
-\varphi:G(\varprojlim D)\to \varprojlim GD
-\alpha_i: \varprojlim D \to D_i
-\beta_i:\varprojlim GD \to GD_i
-i\in I
-\beta_i\varphi=G(\alpha_i)
- L:=\lim_{\underset{i}{\longleftarrow}}\quad. 
-C
-D
-b:I^{op}\to C
-i\mapsto b_i
-Lb
-F:C\to D
-G:D\to C
-y
-D
-i
- \begin{matrix} D(y,FLb)&\simeq&C(Gy,Lb)\\  \downarrow&&\downarrow\\  D(y,Fb_i)&\simeq&C(Gy,b_i), \end{matrix} 
- \begin{matrix} C(Gy,Lb)&\simeq&LC(Gy,b)\\  \downarrow&&\downarrow\\  C(Gy,b_i)&=&C(Gy,b_i), \end{matrix} 
- \begin{matrix} LC(Gy,b)&\simeq&LD(y,Fb)\\  \downarrow&&\downarrow\\  C(Gy,b_i)&\simeq&D(y,Fb_i), \end{matrix} 
- \begin{matrix} LD(y,Fb)&\simeq&D(y,LFb)\\  \downarrow&&\downarrow\\  D(y,Fb_i)&=&D(y,Fb_i). \end{matrix} 
- \begin{matrix} D(y,FLb)&\simeq&D(y,LFb)\\  \downarrow&&\downarrow\\  D(y,Fb_i)&=&D(y,Fb_i), \end{matrix} 
-f\in C(x,Lb)
-f_\bullet=(f_j)_{j\in I}\in LC(x,b)
-f_j=p_j\circ f
-j
-f
-f_\bullet
-f
-f_i
-f_\bullet
-f_i
-\mu_i : X \to G D_i
-\mathcal{C}
-\varprojlim \mathcal{C}(A, G D_i) \cong \mathcal{C}(A, G(\varprojlim D))
-A
-\varphi_* : \mathcal{C}(-, X) \Rightarrow \mathcal{C}(-, G(\varprojlim D))
-\varphi_*
-\varphi : X \to G(\varprojlim D)
-G \lambda_i : G(\varprojlim D) \to G D_i
-(\mu_i)_* : \mathcal{C}(A, X) \to \mathcal{C}(A, G D_i)
-(\mu_i)_* = (G \lambda_i)_* \circ \varphi_*

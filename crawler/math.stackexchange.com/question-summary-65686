@@ -1,38 +1,0 @@
-\mathbf{f}:\mathbb{R}^n\times\mathbb{R}^m\to\mathbb{R}^p
-\lim\limits_{(\mathbf{h},\mathbf{k})\to\mathbf{0}}\dfrac{||\mathbf{f}(\mathbf{h},\mathbf{k})||}{||(\mathbf{h},\mathbf{k})||}=0.
-D\mathbf{f}(\mathbf{a},\mathbf{b})(\mathbf{x},\mathbf{y})=\mathbf{f}(\mathbf{a},\mathbf{y})+\mathbf{f}(\mathbf{x},\mathbf{b}).
-\mathbf{f}:\mathbb{R}^{n_1}\times\cdots\times\mathbb{R}^{n_k}\to\mathbb{R}^p
-\mathbf{h}=(\mathbf{h}_1,\dots,\mathbf{h}_k)
-\mathbf{h}_i\in\mathbb{R}^{n_i}
-i\neq j
-\lim\limits_{\mathbf{h}\to\mathbf{0}}\dfrac{||\mathbf{f}(\mathbf{a}_1,\ldots,\mathbf{a}_{i-1},\mathbf{h}_i,\mathbf{a}_{i+1}\ldots,\mathbf{a_{j-1}},\mathbf{h}_j,\mathbf{a}_{j+1},\ldots,\mathbf{a}_k)||}{||\mathbf{h}||}=0,
-D\mathbf{f}(\mathbf{a}_1,\ldots,\mathbf{a}_k)(\mathbf{x}_1,\ldots,\mathbf{x}_k)=\sum_{i=1}^{k}{\mathbf{f}(\mathbf{a}_1,\ldots,\mathbf{a}_{i-1},\mathbf{x}_i,\mathbf{a}_{i+1}\ldots,\mathbf{a}_k)}.
-\mathbf{g}(\mathbf{x},\mathbf{y})=\mathbf{f}(\mathbf{a}_1,\ldots,\mathbf{x},\ldots,\mathbf{y},\ldots,\mathbf{a}_k)
-k
-{\bf x}=(x_1,\ldots,x_n)
-{\bf y}=(y_1,\ldots,y_m)
-\mathbb{R}^n
-\mathbb{R}^m
-M=\max_{i,j}\ \|{\bf f}(e_i,e_j)\|
-{\bf x}
-{\bf y}
-{\bf f}
-M
-k
- \left\|{\bf f}({\bf x},{\bf y})\right\|=\left\|\sum_{i=1}^n\sum_{j=1}^m x_iy_j\ {\bf f}(e_i,e_j)\right\| \leq \max_{i,j}\ \|{\bf f}(e_i,e_j)\|\sum_{i=1}^n\sum_{j=1}^m (x^2_i+y^2_j). 
- {\bf f}({\bf x},{\bf y})\leq M\|{\bf x}\|^2\cdot \|{\bf y}\|^2 
-\left\| {\bf f}({\bf x},{\bf y}) \right\|=\left\| \sum_{i=1}^{n}\sum_{j=1}^{m}{x^{i}y^{j}{\bf f}({\bf e}_i,{\bf e}_j)} \right\| \leq \max_{i,j}\left\| {\bf f}({\bf e}_i,{\bf e}_j) \right\|\sum_{i=1}^{n}\sum_{j=1}^{m}{|x^{i}y^{j}|}
-|x^iy^j|\leq|x^i|^2+|y^j|^2
-\left\| {\bf f}({\bf x},{\bf y}) \right\| \leq M \sum_{i=1}^{n}\sum_{j=1}^{m}{|x^{i}|^2+|y^{j}|^2}.
-\sum_{i=1}^{n}\sum_{j=1}^{m}{|x^{i}|^2+|y^{j}|^2} = m\left\| {\bf x} \right\|^2 + n\left\| {\bf y} \right\|^2 = (n+m)
-{\bf x}
-{\bf y}
-\left\| {\bf f}({\bf x},{\bf y}) \right\| \leq M(n+m)
-\bf x
-\bf y
-\bf f
-M
-M
-\left\| {\bf f}({\bf x}_1,\ldots,{\bf x}_k) \right\|
-D{\bf f}({\bf a}_1,\ldots,{\bf a}_k)
-\mathbf{h}_i

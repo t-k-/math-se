@@ -1,36 +1,0 @@
-f
-d_1, d_2
-M, N
-g, h
-d_1(x,y)=d_2(f(x),f(y))
-x,y \in M.
-f
-M
-N,
-f
-\gamma : I \to M
-M
-\frac{D}{dt}(\frac{d\gamma}{dt})=0,
-\frac{D}{dt}
- \frac{d\gamma}{dt}:=d\gamma(\frac{d}{dt}).
-t_0 \in I,
-\frac{D}{dt}(\frac{d(f \circ \gamma)}{dt})=0
-t=t_0,
-\frac{D}{dt}(df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0}))=0.
-<\frac{d \gamma}{dt}|_{t=t_0},\frac{d \gamma}{dt}|_{t=t_0}>_{\gamma(t_0)}=<df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0}), df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})>_{f(\gamma(t_0))}.
-\frac{d}{dt} <\frac{d \gamma}{dt}|_{t=t_0},\frac{d \gamma}{dt}|_{t=t_0}>_{\gamma(t_0)}=2<\frac{D}{dt}(\frac{d \gamma}{dt}|_{t=t_0}),\frac{d \gamma}{dt}|_{t=t_0}>_{\gamma(t_0)}=0,
-\frac{d}{dt}<df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0}), df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})>_{f(\gamma(t_0))}=
-2<\frac{D}{dt}(df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})), df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})>_{f(\gamma(t_0))}=0.
-<\frac{D}{dt}(df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})), df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0})>_{f(\gamma(t_0))}=0
-\frac{D}{dt}(df_{\gamma(t_0)}(\frac{d \gamma}{dt}|_{t=t_0}))=0?
- \nabla^g_X{Y}=f^* \left( \nabla^{(f^{-1})^* g}_{\operatorname{d}f(X)} \operatorname{d}f(Y) \right) 
-\gamma \colon I \rightarrow M
-\nabla^g
-M
-f \circ \gamma \colon I \rightarrow N
-\nabla^h
-N
-D^g_t:=\nabla^g_{\frac{d}{dt}{\gamma}}
-D^h_t:=\nabla^h_{\frac{d}{dt}(f \circ \gamma)}
-\frac{\operatorname{d}}{\operatorname{d}t}(f\circ \gamma)=\operatorname{d}f(\frac{\operatorname{d}}{\operatorname{d}t}\gamma) 
- D^h_t{\frac{\operatorname{d}(f\circ\gamma)}{\operatorname{d}t}} = f_* \left( D^g_t{\frac{\operatorname{d}\gamma}{\operatorname{d}t}} \right) =0 

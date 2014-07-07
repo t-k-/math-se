@@ -1,7 +1,0 @@
-\lim_{n\to\infty}\sqrt{n}\int_0^{1}(1-t^2)^ndt
-O\left(\frac{1}{\sqrt{n}}\right).
-t=\cos\theta
-\sqrt{n}\int_{0}^{1}(1-t^2)^n dt\leq \sqrt{n}\int_{0}^{1}e^{-nt^2}dt = \int_{0}^{\sqrt{n}}e^{-t^2}dt<\int_{0}^{+\infty}e^{-t^2}dt=\frac{\sqrt{\pi}}{2},
-A_0 = 1, A_1 = \frac{2}{3}
-\begin{align*} A_n & = \int_0^1 (1-t^2)^n dt = \int_0^1 (1-t^2)^{n-1} dt - \int_0^1 t^2 (1-t^2)^{n-1} dt \\ & = A_{n-1} - \left( \underbrace{\frac{1}{n} \left[ t^2 (1-t^2)^n \right]_0^1}_{=0} - \frac{2}{n} \int_0^1 t (1-t^2)^n dt \right) \\ & = A_{n-1} + \frac{2}{n} \left( \underbrace{\frac 1 {n+1} \left[ t(1-t^2)^{n+1} \right]_0^1}_{=0} - \frac{1}{n+1} \int_0^1 (1-t^2)^{n+1} \right) \\ & = A_{n-1} - \frac 2 {n(n+1)} A_{n+1} \end{align*}
-A_{n+1} = \frac{n(n+1)} 2 (A_{n-1} - A_n)

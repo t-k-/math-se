@@ -1,24 +1,0 @@
-{\partial^n \over \partial x_1\,\cdots\,\partial x_n} (uv) = \sum_S {\partial^{|S|} u \over \prod_{i\in S} \partial x_i} \cdot {\partial^{n-|S|} v \over \prod_{i\not\in S} \partial x_i}
-\begin{align} &{}\quad {\partial^3 \over \partial x_1\,\partial x_2\,\partial x_3} (uv)  \\  \\ &{}= u \cdot{\partial^3 v \over \partial x_1\,\partial x_2\,\partial x_3} + {\partial u \over \partial x_1}\cdot{\partial^2 v \over \partial x_2\,\partial x_3} +  {\partial u \over \partial x_2}\cdot{\partial^2 v \over \partial x_1\,\partial x_3} + {\partial u \over \partial x_3}\cdot{\partial^2 v \over \partial x_1\,\partial x_2} \\  \\ &{}\qquad + {\partial^2 u \over \partial x_1\,\partial x_2}\cdot{\partial v \over \partial x_3} + {\partial^2 u \over \partial x_1\,\partial x_3}\cdot{\partial v \over \partial x_2} + {\partial^2 u \over \partial x_2\,\partial x_3}\cdot{\partial v \over \partial x_1} + {\partial^3 u \over \partial x_1\,\partial x_2\,\partial x_3}\cdot v. \end{align}
-S\in\left\{\emptyset, 1 \right\}
-\{1\}
-n-1
-\frac{\partial}{\partial x_{1}}(uv) = \frac{\partial u}{\partial x_1}\cdot v + \frac{\partial v}{\partial x_1}\cdot u
-\frac{\partial^{n}}{\partial x_{1} \cdots \partial x_{n-1} \partial x_n}(uv)=\sum_{S}\frac{\partial}{\partial x_n}\bigg(\frac{\partial^{\mid S\mid}u}{\prod_{i\in S}\partial x_i}\cdot \frac{\partial^{n-1-\mid S\mid}v}{\prod_{i\notin S}\partial x_i}\bigg)
-= \sum_{S}\frac{\partial^{\mid S\mid + 1}u}{(\prod_{i\in S}\partial x_i)\partial x_n}\cdot  \frac{\partial^{n-1-\mid S\mid}v}{\prod_{i\notin S}\partial x_i} + \sum_S \frac{\partial^{n-\mid S\mid}v}{(\prod_{i\notin S}\partial x_i)\partial x_n}\cdot \frac{\partial^{\mid S\mid}u}{\prod_{i\in S}\partial x_i}
-S'
-\{1, 2, \cdots, n\}
-S'
-n
-n
-S'
-S = S'
-n
-n
-\mid S'\mid = \mid S\mid + 1
-\mid S' \mid = \mid S\mid
-= \sum_{S'}\frac{\partial^{\mid S'\mid}u}{\prod_{i\in S'}\partial x_i}\cdot  \frac{\partial^{n-\mid S'\mid}v}{\prod_{i\notin S'}\partial x_i} + \sum_{S'} \frac{\partial^{n-\mid S'\mid}v}{\prod_{i\notin S'}\partial x_i}\cdot \frac{\partial^{\mid S'\mid}u}{\prod_{i\in S'}\partial x_i}
-n
-\frac{\partial^{n}}{\partial x_{1} \cdots \partial x_{n-1} \partial x_n}(uv)=\sum_{S'}\frac{\partial^{\mid S'\mid}u}{\prod_{i\in S'}\partial x_i}\cdot \frac{\partial^{n-\mid S'\mid}v}{\prod_{i\notin S'}\partial x_i}
-S'
-\{1, 2, \cdots, n\}

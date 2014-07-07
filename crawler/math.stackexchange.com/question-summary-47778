@@ -1,25 +1,0 @@
-f_{vw}(x) = (-1)^{i+j} \det((E_m - xA)^{(j,i)}) / \det(E_m-xA).
-L
-\Sigma = \{a,b\}
-S = q_0
-T = \{q_0,q_1\}
-W'(e) = 1
-q_0
-q_1
-f_L(x) = \sum_{n \geq 0} \sum_{w \in L \atop |w| = n} x^n
-f_L(x) = f_{q_0q_0}(x)+f_{q_0q_1}(x)
-\mathcal{A} = \left( \begin{array}{cc}  1 & 1 \\                    1 & 0  \end{array} \right)  
-\det(E_2-Ax) = (1-x)-x^2
-f_{q_0q_0}(x) = (-1)^{1+1} \det((E_2-Ax)^{(1,1)})/\det(E_2-Ax) = 1/(1-x->x^2).
-f_{q_0q_1}(x) = (-1)^{1+2} \det((E_2-Ax)^{(2,1)})/\det(E_2-Ax) = (-1) \cdot (-x)/(1-x-x^2).
-f_L(x)=f_{q_0q_0}(x) +f_{q_0q_1}(x) = \frac{1+x}{1-x-x^2}.
-g_n
-n
-\Sigma = \{a,b,c\}
-ab,ac,bc
-ba
-\sum_{n\geq 0} g_n t^n = \frac{1+t}{(1-t)^2}
-g_n, n \geq 0
-\mathcal{A} = \left( \begin{array}{ccc}  1 & 1 & 0 \\                    1 & 1 & 1 \\ 1 & 0 & 1 \end{array} \right)  
-\begin{eqnarray*} f_{q_0 q_0}(x) &=& (-1)^{1+1} \det((E_m - xA)^{(1,1)}) / \det(E_m-xA) \\ &=& \det \left(\left( \left(\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{array} \right) - \left(\begin{array}{ccc} x & x & 0 \\ x & x & x \\ x & 0 & x\end{array} \right)\right)^{(1,1)} \right) \\ && / \det \left( \left(\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{array} \right) - \left(\begin{array}{ccc} x & x & 0 \\ x & x & x \\ x & 0 & x\end{array} \right)\right) \\ &=& \det \left( \begin{array}{ccc} (1-x) & (-x) & 0 \\ (-x) & (1-x) & (-x) \\ (-x) & 0 & (1-x) \end{array}  \right)^{(1,1)} \\ &&/ \det \left( \begin{array}{ccc} (1-x) & (-x) & 0 \\ (-x) & (1-x) & (-x) \\ (-x) & 0 & (1-x) \end{array}  \right) \\  &=& \det \left( \begin{array}{ccc} (1-x) & (-x) \\ 0 & (1-x) \end{array} \right) / \det \left( \begin{array}{ccc} (1-x) & (-x) & 0 \\ (-x) & (1-x) & (-x) \\ (-x) & 0 & (1-x) \end{array}  \right) \\  &=& (1-x)^2 / ((1-x)^3 + (-x)^3 - (-x)(-x)(1-x)) \\  &=& \frac{(1-x)^2}{-x^3 -x^2 (1-x)+(1-x)^3} \\  f_{q_0 q_1}(x) &=& (-1)^{1+2} \det((E_m - xA)^{(2,1)}) / \det(E_m-xA) \\  &=& (-1) \det \left( \begin{array}{ccc} (1-x) & (-x) & 0 \\ (-x) & (1-x) & (-x) \\ (-x) & 0 & (1-x) \end{array}  \right)^{(2,1)}  / \det(E_m-xA) \\   &=& (-1) \det \left( \begin{array}{cc} (-x) & 0 \\ 0 & (1-x)\end{array}  \right)^{(2,1)}  / \det(E_m-xA) \\  &=& (-1) (-x)(1-x) / -x^3 -x^2 (1-x)+(1-x)^3 \\  &=& \frac{(1-x)x}{-x^3 -x^2 (1-x)+(1-x)^3} \\  f_{q_0 q_2}(x) &=& (-1)^{1+3} \det((E_m - xA)^{(3,1)}) / \det(E_m-xA) \\  &=&  \det \left( \begin{array}{cc} (-x) & 0 \\ (1-x) & (-x) \end{array}  \right)  / \det(E_m-xA) \\  &=& \frac{x^2}{-x^3 -x^2 (1-x)+(1-x)^3} \\  f_{q_0 q_0} + f_{q_0 q_1} + f_{q_0 q_2} &=& \frac{(1-x)^2 + (1-x) x+ x^2}{-x^3 -x^2 (1-x)+(1-x)^3} \end{eqnarray*} 
-\frac{(1-x)^2 + (1-x) x+ x^2}{-x^3 -x^2 (1-x)+(1-x)^3}

@@ -1,33 +1,0 @@
-\omega > 0
-\sqrt{2 \pi \omega}
-\int_{0}^{\infty} \mbox{d}x \frac{\sin(\omega x)}{x^{3/2}}
-0
-0
-|z| \to \infty
-\int_{0}^{\infty} = \frac{1+i}{2} \int_{- \infty}^{\infty}
-n=0
-n>0
-=0
-\int_{0}^{\infty} \mbox{d}x \frac{\sin(\omega x)}{x^{3/2}} = \sum_{n=0}^{\infty} \int_{2n \pi / \omega}^{2(n+1) \pi / \omega} \mbox{d}x \frac{\sin(\omega x)}{x^{3/2}} =
-[z = \frac{t + 2n \pi}{\omega}, \mbox{d}z = \frac{1}{\omega} \mbox{d}t, \frac{2n \pi}{\omega} \to 0, \frac{2(n+1) \pi}{\omega} \to 2 \pi] 
-= \frac{\sqrt{\omega}}{2i} \sum_{n=0}^{\infty} \int_{0}^{2 \pi} \mbox{d}t \frac{e^{it} - e^{-it}}{(t + 2n \pi)^{3/2}} =
-[w = e^{it}, t = -i \ln(w), \mbox{d}t = - \frac{i}{w} \mbox{d}w]
-= - \frac{\sqrt{\omega}}{2} \sum_{n=0}^{\infty} \oint_{|w|=1} \mbox{d}w \frac{1 + 1/w^2}{(2n \pi - i \ln(w))^{3/2}} =
-= \sqrt{\frac{\omega}{2}} (1+i) \oint_{|w|=1} \mbox{d}w \frac{w^2 + 1}{w^2 \ln^{3/2} (w)} 
-\omega x = y^2
-y=\sqrt{\omega x}
-2 y \mathrm{d} y = \omega \mathrm{d} x
-\mathcal{I}
-\omega
-   \int_0^\infty \frac{\sin(\omega x)}{x^{3/2}} \mathrm{d} x = \int_0^\infty \frac{\sin(y^2)}{y^3 \omega^{-3/2}} \, \frac{2 y}{\omega} \mathrm{d} y =2 \sqrt{\omega} \int_0^\infty \frac{\sin(y^2)}{y^2} \, \mathrm{d} y = 2 \sqrt{\omega} \mathcal{I} 
-\arg(y) = \frac{\pi}{4}
-\int_0^R \mathrm{e}^{i y^2} \mathrm{d} y
-\arg(z) = \frac{\pi}{4}
-R \to +\infty
-\int_0^\infty \mathrm{e}^{i (\exp(i \pi/4) x)^2} \mathrm{d} (\exp(i \pi/4) x) = \exp(i \pi/4) \int_0^\infty \exp(-x^2) \mathrm{d} x = \exp(i \pi/4) \frac{\sqrt{\pi}}{2}
- \begin{eqnarray}   \mathcal{I} &=& \int_0^\infty \sin(y^2) \mathrm{d} \left( \frac{-1}{y} \right) =     \left.-\frac{\sin(y^2)}{y} \right|_0^\infty + \int_0^\infty \frac{2 y \cos(y^2)}{y}  \mathrm{d} y \\    &=& 0 + 2 \int_0^\infty \cos(y^2) \mathrm{d}y = 2 \operatorname{Re}\left( \int_0^\infty \mathrm{e}^{i y^2} \mathrm{d} y\right) = 2 \operatorname{Re}\left( \mathrm{e}^{i \pi/4} \int_0^\infty \mathrm{e}^{-y^2} \mathrm{d} y\right) = \sqrt{\frac{\pi}{2}}  \end{eqnarray}  
-   \int_0^\infty \frac{\sin(\omega x)}{x^{3/2}} \mathrm{d} x = \sqrt{2 \pi \omega}  
--1 \le \sin(y^2) \le 1
--\frac{1}{y} \le \frac{\sin(y^2)}{y} \le \frac{1}{y}
-    \left.-\frac{\sin(y^2)}{y} \right|_0^\infty = -\lim_{y \to \infty} \frac{\sin(y^2)}{y} + \lim_{y \to 0} \frac{\sin(y^2)}{y} 
- \lim_{y \to 0} \frac{\sin(y^2)}{y} = \lim_{y \to 0} \frac{\sin(y^2)}{y^2} \cdot y = \lim_{y \to 0} \frac{\sin(y^2)}{y^2} \cdot \lim_{y \to 0}  y = 1 \cdot 0

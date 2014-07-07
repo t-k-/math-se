@@ -1,10 +1,0 @@
-X-Y
-\sigma_{x-y} = \sqrt { \sigma_x^2 + \sigma_y^2 - 2\rho\sigma_x\sigma_y }
-\rho
-\sigma_{x-1} = \sqrt { \sigma_x^2 + \sigma_1^2 - 2\rho\sigma_x\sigma_1 }
-\sigma_{x-2} = \sqrt { \sigma_{x-1}^2 + \sigma_2^2 - 2\rho\sigma_{x-1}\sigma_2 }
-\sigma_{x-3} = \sqrt { \sigma_{x-2}^2 + \sigma_3^2 - 2\rho\sigma_{x-2}\sigma_3 }
-\newcommand{\Var}{\operatorname{Var}} \newcommand{\Cov}{\operatorname{Cov}}
-\Var(X \pm Y) = \Var(X) + \Var(Y) \pm 2 \Cov(X,Y).
-\Cov(X \pm Y, Z) = \Cov(X,Z) \pm \Cov(Y,Z).
-\begin{align*} \Var(X_1 - X_2 - X_3) &= \Var(X_1 - (X_2 + X_3)) \\ &= \Var(X_1) + \Var(X_2 + X_3) - 2 \Cov(X_1, X_2 + X_3) \\ &= \Var(X_1) + \Var(X_2) + \Var(X_3) + 2 \Cov(X_2, X_3) \\ &\quad\quad\quad\quad- 2 \Cov(X_1, X_2) - 2 \Cov(X_1, X_3). \end{align*}

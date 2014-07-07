@@ -1,26 +1,0 @@
-\mu_i,\nu_i
-\Omega_i,i=1,2,\dots,n
-\mu=\prod\limits_{i=1}^{n}\mu_i
-\nu=\prod\limits_{i=1}^{n}\nu_i
-\Omega=\prod\limits_{i=1}^{n}\Omega_i
-\|\mu-\nu\|
-\mu
-\nu
-\|\mu-\nu\| \le \sum\limits_{i=1}^{n}\|\mu_i-\nu_i\|
-\|\mu-\nu\|={1 \over 2}\sum\limits_{x=(x_1,x_2,\dots,x_n) \in \Omega}|\prod\limits_{i=1}^{n}\mu_i(x_i)-\prod\limits_{i=1}^{n}\nu_i(x_i)|
-\prod\limits_{i=1}^{n}\mu_i \le \sum\limits_{i=1}^{n}\mu_i
-\prod\limits_{i=1}^{n}\nu_i \le \sum\limits_{i=1}^{n}\nu_i
-a_i
-b_i
-\widehat x_i=(x_1,\ldots,x_{i-1},x_{i+1},\ldots,x_n)
-\widehat x_i
-|(a_1\cdots a_n)-(b_1\cdots b_n)|\leqslant\sum\limits_{i=1}^n|a_i-b_i|\,(a_1\cdots a_{i-1})(b_{i+1}\cdots b_n). 
- 2\|\mu-\nu\|=\sum\limits_x\left|\mu_1(x_1)\cdots\mu_n(x_n)-\nu_1(x_1)\cdots\nu_n(x_n)\right|\leqslant\sum\limits_{i=1}^n\Delta_i, 
- \Delta_i=\sum\limits_{x_i}|\mu_i(x_i)-\nu_i(x_i)|\,\sum\limits_{\widehat x_i}\mu_1(x_1)\cdots\mu_{i-1}(x_{i-1})\nu_{i+1}(x_{i+1})\cdots\nu_n(x_n), 
- \Delta_i=\sum\limits_{x_i}|\mu_i(x_i)-\nu_i(x_i)|=2\|\mu_i-\nu_i\|, 
-2
-n=2
-\|\mu_i\|\leq 2
- \sum\limits_{x\in\Omega_1,y\in\Omega_2} \lvert\mu_1(x)\mu_2(y)\rvert\leq \sum\limits_{x\in\Omega_1} \lvert\mu_1(x)\rvert +\sum\limits_{y\in\Omega_2} \lvert\mu_2(y)\rvert. 
-\|\mu_1\|\cdot\|\mu_2\|\leq\|\mu_1\|+\|\mu_2\|,
- \|\mu_1\|\cdot\|\mu_2\|\leq\|\mu_1\|^2/2+\|\mu_2\|^2/2\leq\|\mu_1\|+\|\mu_2\|. 

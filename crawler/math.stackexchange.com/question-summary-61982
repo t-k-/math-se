@@ -1,23 +1,0 @@
- A = \{(x,y) | 0 \leq x + y \leq 1,  0 \leq x-y \leq \pi\} 
- \iint_A e^{x+y} \sin(x-y)\mathrm dx\mathrm dy 
- R = \{(x,y) | 1 \leq x^2 + y^2 \leq 4,  y \geq 0\} 
- \iint_R \frac{\mathrm dx\mathrm dy}{(x^2+y^2)^2} 
-x+y=z
-y=1-x
-0 \le x+y \le 1
--x \le y \le 1-x
-x
-(x,y)
-y=-x
-y=1-x
-A
-u=x+y
-v=x-y
- I:=\iint_{A}e^{x+y}\sin (x-y)\;\mathrm{d}x\mathrm{d}\tag{2}y 
-A
-0\le x\le 1/2
-1/2\le x\le π/2
-\pi/2\le x\le (1+\pi)/2
-I
-x,y
- \begin{eqnarray*} I &=&\int_{0}^{1/2}\left( \int_{-x}^{x}e^{x+y}\sin (x-y)\mathrm{d}y\right)  \mathrm{d}x \\ &&+\int_{1/2}^{\pi /2}\left( \int_{-x}^{1-x}e^{x+y}\sin (x-y)\mathrm{d} y\right) \mathrm{d}x \\ &&+\int_{\pi /2}^{(1+\pi )/2}\left( \int_{x-\pi }^{1-x}e^{x+y}\sin (x-y) \mathrm{d}y\right) \mathrm{d}x. \end{eqnarray*} 

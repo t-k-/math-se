@@ -1,82 +1,0 @@
-SA
-A \to 0
-SSA
-SA \to 0
-A=(a_0,a_1,a_2,\ldots)
-DA = (a_0,a_1-a_0,a_2-a_1,\ldots)
-D
-S
-S^kA_n
-S^kA
-k
-\vert S^kA_n\vert\le3^{-k}/n
-n
-S^kA
-A
-S^{k+1}A_{n_{k+1}}=0
-\vert S^{k+1}A_{n_{k+1}}\vert\le 3^{-k-1}/n_{k+1}
-\vert S^kA_n\vert\le 3^{-k}/n
-n_k\le n\le n_{k+1}
-n > n_k
-k
-k-1,k-2,\ldots
-\vert S^jA_n\vert\le 3^{-j}/n
-j\le k
-n_k\le n\le n_{k+1}
-k
-k+1
-k+2
-k=0
-n_k=1
-a_0=1,a_1=0
- \begin{align} \vert S^{k-1}A_n\vert&=\vert S^kA_n- S^kA_{n-1}\vert\\ &\le 3^{-k}/n+3^{-k}/(n-1)\\ &\le 3^{-k}/n+3^{-k}2/n\\ &=3^{-(k-1)}/n. \end{align} 
-A=(a_0,a_1,a_2,\ldots)
-n_1 < n_2 < n_3 < \cdots
-\vert S^k A_n\vert\le 3^{-k}/n
-n\ge n_k
-k
-S^kA
-f(z)
-\vert z\vert < 1
-f(z)
-z
-(z-1)^{-k}f(z)
-\{\vert z\vert=1\}
-\gamma(t)=\exp(2\pi it)
-a_n
-f(\gamma(t))
-a_n\to0
-n\to\infty
- a_n=\frac{1}{2\pi i}\int_\gamma z^{-n-1}f(z)\,dz=\int_0^1\exp(-2\pi int)f(\gamma(t))\,dt. 
-k\ge0
-S^kA
-(1-z)^{-k}f(z)
-(1-z)^{-k}f(z)
-S^kA
-x[n]
-y_k[n]
-H_k(z)= \left( \frac{1}{1-z^{-1}} \right)^k
-Y_k(z) = H_k(z) X(z)
-y_k[n]
-k
-X(z)
-z=1
-x[n]
-X(z)
-Y_k(1) < \infty
-z
-z^{-1}
-X(z) = \sum_{n=0}^\infty x[n] z^n
-x[n]
-z
-z=1
-X(z)
-Y_k(z)
-k
-y_1[n]=y_1[n-1]+x[n]
-Y_1(z) - z Y_1(z) = X(z) 
-Y_1(z) = \frac{X(z)}{1-z}
-Y_k(z) = \frac{X(z)}{(1-z)^k}
-Y_k(1) <\infty
-X(z)
-z=1

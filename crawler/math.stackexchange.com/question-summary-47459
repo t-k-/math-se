@@ -1,53 +1,0 @@
-F[t]
-m_1, \ldots, m_m
-n_1, \ldots, n_n
-F
-F[t]
-m_i
-n_j
-M
-N
-N
-t(c_0, c_1, \ldots) = (0,c_0, c_1, \ldots)
-M \simeq F[t]\deg(m_1)\oplus\cdots\oplus F[t]\deg(m_m)
-\partial
-M
-N
-M
-N
-ab(1), bc(1), cd(2), ad(2), ac(3)
-a(0), b(0), c(1), d(1)
-\partial
-\partial(ab) = t^{\deg(ab)-\deg(b)}b - t^{\deg(ab)-\deg(a)}a = tb-ta
-\partial(bc) = c - tb
-\partial(cd) = td - tc
-\partial(ad) = td - t^2a
-\partial(ac) = t^2c - t^3a
-N
-d,c,b,a
-\partial
-  \begin{pmatrix}   * & ab & bc & cd & ad & ac \\   d & 0 & 0 & t & t & 0 \\   c & 0 & 1 & t & 0 & t^2 \\   b & t& t & 0 & 0 & 0 \\   a & t & 0 & 0 & t^2 & t^3  \end{pmatrix} 
-  \begin{pmatrix}   * & cd & bc & ab & z_1 & z_2 \\   d & t & 0 & 0 & 0 & 0 \\   c & t & 1 & 0 & 0 & 0 \\   b & 0& t & t & 0 & 0 \\   a & 0 & 0 & t & 0 & 0  \end{pmatrix} 
-z_1 = ad - cd - t\cdot bc - t\cdot ab
-z_2 = ac - t^2\cdot bc - t^2\cdot ab
-j
-c
-\deg\partial_{i,j} = c - \deg(\text{row}~i)
-\square
-\partial
-\deg(ab) = 3, \deg(a) = 2, \deg(b) = 1
-\begin{pmatrix} * & ab \\ a & t \\ b & t^2 \end{pmatrix}
-\partial
-\deg(d)tF(t)\oplus \deg(c)F(t)\oplus \deg(b)tF(t)
-\beta_2^2 \geq \beta_2^1 \geq \beta_1^1
-n_1
-n_2
- \begin{pmatrix} * & m_1 & m_2 \\ n_1 & t^{\beta_1^1}  & 0 \\ n_2 & t^{\beta_2^1} & t^{\beta_2^2} \end{pmatrix}
-f(t) \in F(t)
-g(t) \in F(t)
-m_1 \to t^{\beta_1^1}n_1\cdot f(t)
-m_2 \to t^{\beta_2^2}(n_2 - n_1\cdot t^{\beta_2^1 - \beta_1^1})g(t)
-n_1(t^{\beta_1^1}f(t) - t^{\beta_2^2 +\beta_2^1-\beta_1^1}g(t))
-n_2t^{\beta_2^2}
-\beta_2^2 \geq \beta_1^1
-\deg(n_1)t^{\beta_1^1}F(t)\oplus \deg(n_2)t^{\beta_2^2}F(t)

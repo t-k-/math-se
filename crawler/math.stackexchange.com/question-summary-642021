@@ -1,9 +1,0 @@
-T
-S(t)=P(T\geq t)
-E[T]=\int^\infty_0 S(t)dt.
-n > 0
-n \to \infty
-F_T(n) \to 1
-\begin{align*} \int_{t=0}^n t f_T(t) \, dt &= \int_{t=0}^n \left(\int_{s=0}^t \, ds\right) f_T(t) \, dt \\ &= \int_{t=0}^n \int_{s=0}^t f_T(t) \, ds \, dt \\ &= \int_{s=0}^n \int_{t=s}^n f_T(t) \, dt \, ds \\ &= \int_{s=0}^n F_T(n) - F_T(s) \, ds. \end{align*}
-{\rm E}[T] = \int_{s=0}^\infty 1 - F_T(s) \, ds = \int_{s=0}^\infty S_T(s) \, ds.
-A_t=[T\geqslant t]\qquad S(t)=E[\mathbf  1_{A_t}]\qquad T=\int_0^\infty\mathbf 1_{A_t}\,\mathrm dt

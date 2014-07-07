@@ -1,53 +1,0 @@
-\frac1{n!} \int_0^\infty x^{n-k} (x-1)^k e^{-x}\,dx \approx e^{-k/n}
-k
-n
-k \le n
-n
-k
-X_1,\ldots,X_{n+1}
-X_1 + \cdots + X_{n+1}
-x^n e^{-x} / \Gamma(n+1)
-x > 0
-(n + 1)^{ - 1} \sum\nolimits_{i = 1}^{n + 1} {X_i }
-{\rm E}[X_1 ] = 1
-n \to \infty
- I = \frac{1}{{n!}}\int_0^\infty  {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x}  = \int_0^\infty  {\bigg(1 - \frac{1}{x}} \bigg)^k \frac{{x^n e^{ - x} }}{{\Gamma (n + 1)}}\,{\rm d}x. 
- I = {\rm E} \bigg[ 1 - \frac{1}{{X_1  +  \cdots  + X_{n + 1} }}\bigg]^k = {\rm E}\bigg[1 - \frac{{n + 1}}{{X_1  +  \cdots  + X_{n + 1} }}\frac{1}{{n + 1}}\bigg]^k . 
- I \approx \bigg(1 - \frac{1}{{n + 1}}\bigg)^k  = \bigg(1 - \frac{1}{{n + 1}}\bigg)^{n(k/n)}  \approx e^{ - k/n}. 
-n \to \infty
-1
-\infty
-c>0
-X_i
-f_n {(x)} = x^n e^{-x} / \Gamma(n+1)
-x>0
-n'=n+1
-f_n
-\sum\nolimits_{i = 1}^{n'} {X_i }
-X_i
-\Phi(-c)
-n \to \infty
-\Phi
-1 - \Phi(c)
-n \to \infty
-n \to \infty
-c
-c
-n \to \infty
- \frac{1}{{n!}}\int_0^1  {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x} \to 0   
- \frac{1}{{n!}}\int_1^{n' - c\sqrt {n'} } {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x}  \leq \int_0^{n' - c\sqrt {n'} } {f_n (x)\,{\rm d}x} = {\rm P}\bigg(\frac{{\sum\nolimits_{i = 1}^{n'} {X_i }  - n'}}{{\sqrt {n'} }} \le  - c \bigg). 
- \frac{1}{{n!}}\int_{n' + c\sqrt {n'} }^\infty  {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x}  \leq \int_{{n'} + c\sqrt {n'} }^\infty  {f_n (x)\,{\rm d}x} = {\rm P}\bigg(\frac{{\sum\nolimits_{i = 1}^{n'} {X_i }  - n'}}{{\sqrt {n'} }} > c \bigg), 
- \bigg(1 - \frac{1}{{n' - c\sqrt {n'} }}\bigg)^k \int_{n' - c\sqrt {n'} }^{n' + c\sqrt {n'} } {f_n (x)\,{\rm d}x} \leq \frac{1}{{n!}}\int_{n' - c\sqrt {n'} }^{n' + c\sqrt {n'} } {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x} 
- \frac{1}{{n!}}\int_{n' - c\sqrt {n'} }^{n' + c\sqrt {n'} } {x^{n - k} (x - 1)^k e^{ - x} \,{\rm d}x} \leq \bigg(1 - \frac{1}{{n' + c\sqrt {n'} }}\bigg)^k \int_{n' - c\sqrt {n'} }^{n' + c\sqrt {n'} } {f_n (x)\,{\rm d}x}. 
-  \int_{n' - c\sqrt {n'} }^{n' + c\sqrt {n'} } {f_n (x)\,{\rm d}x} = {\rm P}\bigg(-c \leq \frac{{\sum\nolimits_{i = 1}^{n'} {X_i }  - n'}}{{\sqrt {n'} }} \leq c \bigg) \to 2 \Phi(c) -1 
- \bigg(1 - \frac{1}{{n' \pm c\sqrt {n'} }}\bigg)^k  = \bigg(1 - \frac{1}{{n' \pm c\sqrt {n'} }}\bigg)^{n(k/n)}  \approx e^{ - k/n},  
-k
-n
-\sum_{i=0}^{k} \frac{{(-1)}^i}{n!}{k \choose i}(n-i)!
-k
-n
-k
-e^z
-z=-k/n
- 1 - \frac{k}{n} + \frac{1}{2!} \left( \frac{k}{n} \right)^2 \frac{1-1/k}{1-1/n} - \frac{1}{3!} \left( \frac{k}{n} \right)^3 \frac{(1-1/k)(1-2/k)}{(1-1/n)(1-2/n)} 
-+ \dots + (-1)^k \frac{1}{k!} \left( \frac{k}{n} \right)^k \frac{(1-1/k)(1-2/k)\dots (1-(k-1)/k)}{(1-1/n)(1-2/n) \dots (1-(k-1)/n)}. 

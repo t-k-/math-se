@@ -1,18 +1,0 @@
-y=\sqrt{25-x}
- \delta(x,y)=15-y
-x
-y' = -\frac{1}{2\sqrt{25-x}}
-y'^2 = \frac{1}{4(25-x)}
- \gamma = \{(x,y):x\in [0,25],y = \sqrt{25-x}\}. 
- \mathrm ds = \sqrt{\mathrm dx^2+\mathrm dy^2} = \sqrt{1+y'^2(x)}\mathrm dx. 
- \int\limits_\gamma \delta(x,y)\,\mathrm ds = \int\limits_{0}^{25}\delta(x,y(x))\sqrt{1-y'^2(x)}\,\mathrm dx = \int\limits_{0}^{25}\left(15-\sqrt{25-x}\right)\sqrt{1+\frac{1}{4(25-x)}}\mathrm dx 
-(x,y)
-\mathrm ds
-\delta(x,y)\mathrm ds
-\delta
-\gamma
-\Delta s_i = \sqrt{(x_{i+1}^2-x_i^2)+(y_{i+1}^2-y_i^2)}
-(x_i,y_i)
-(x_{i+1},y_{i+1})
-\mu = \max_i \Delta s_i
- \int\limits_\gamma \delta(x,y)\,\mathrm ds = \lim\limits_{\mu\to 0}\sum\limits_i\delta(x_i,y_i)\Delta s_i 

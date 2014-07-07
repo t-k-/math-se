@@ -1,98 +1,0 @@
- M = \text{Max}(X_0, X_1, \dots, X_{n-1}) 
- \text{Pr}( M > \sum_{j=0}^{n-1} X_j - M ) 
-0 < \alpha < 1
-n
-\gamma
-n=500
-0< \alpha < 1
-n=100, 200, 300
-400
-1 < \alpha < 2
-O(1/n^{\alpha - 1})
-n
-\gamma
-\alpha \in (1.125, 1.3125)
-n
-1/x^{.125}
-1/x^{.3125}
-\alpha=1
-n
-\gamma
-\text{Pr}( M > \sum_{j=0}^{n-1} X_j - M) \le n \text{Pr}( X_0 - \sum_{j=1}^{n-1} X_j > 0 )
- U = X_0 - \sum_{j=1}^{n-1} X_j
- \text{Pr}( X > x ) \sim \gamma^{\alpha} c_{\alpha} ( 1 + \beta ) x^{-\alpha} 
- c_{\alpha} = \sin( \pi \alpha / 2) \Gamma(\alpha) / \pi 
-X_j
-X_j
-n=100
-\alpha
-\alpha \in (0,1)
-\alpha \in \{1.53125, 1.875\}
- (2/\pi) \sin(\pi \alpha / 2) \Gamma(\alpha) n (( \tan(\pi \alpha/2) (n^{1/\alpha} - n))^{-\alpha} 
-1/4
-1/37
-n
-n^{1/\alpha}
-1 < \alpha < 2
-\alpha=1
-n
-\gamma
-X_i
-\alpha
-S(\alpha,\beta,\gamma,\delta)=S(\alpha,\beta,\gamma,\delta;0)
-S=\sum_{i=0}^{n-1}X_i
-S(\alpha,\beta,n^{1/\alpha}\gamma,\delta_n)
-Y=n^{-1/\alpha}(S-\delta_n)
-S(\alpha,\beta,\gamma,0)
- \delta_n=\begin{cases} n\delta + \gamma\beta\tan\frac{\pi\alpha}{2}(n^{1/\alpha}-n),&\textrm{if }\alpha\not=1,\\ n\delta +\gamma\beta\frac{2}{\pi}n\log n,&\textrm{if }\alpha=1. \end{cases}\qquad\qquad{\rm(1)} 
-\alpha > 1
-n^{-1/\alpha}\delta_n\sim n^{1-1/\alpha}(\delta-\gamma\beta\tan\frac{\pi\alpha}{2})
-\alpha=1
-n^{-1/\alpha}\delta_n\sim\gamma\beta\frac{2}{\pi}\log n
-2\Delta Z^*_1-Z_1
-0 < \alpha < 1
-P_n \sim {\rm P}(2 \Delta Z^*_1 - Z_1 > 0)
-n \to \infty
-P_n
-Z = \lbrace Z_t : t \geq 0 \rbrace
-\alpha
-\Delta Z^*_1
-Z
-[0,1]
-{\rm P}(2 \Delta Z^*_1 - Z_1 > 0)
-\Gamma
-y = 1
-P_n \sim 1/[\Gamma(1 - \alpha) \Gamma(1 + \alpha)]
-\alpha \in (0,1)
-\alpha = 1/2
-P_n \sim 2/\pi \approx 0.6366
- {\rm P}\bigg(\frac{{\Delta Z_1^* }}{{Z_1 }} > \frac{1}{{1 + y}}\bigg) = \frac{{y^\alpha  }}{{\Gamma (1 - \alpha )\Gamma (1 + \alpha )}}, \;\; y \in [0,1], 
-{\rm P}(M > \sum\nolimits_{i = 0}^{n - 1} {X_i }  - M)
-{\rm P}(M > y^{-1}[\sum\nolimits_{i = 0}^{n - 1} {X_i }  - M])
-y \in (0,1]
-{\rm P}(\Delta Z_1^* / Z_1 > 1/(1+y))
-\Gamma(1 - \alpha) \Gamma(1 + \alpha)
-(\pi\alpha) / \sin(\pi\alpha)
-[\Gamma(1 - \alpha)]^k \Gamma(1 + k \alpha)
-{\rm P}(\Delta Z_1^* / Z_1 > 1/(1+y))
-y > 0
-\sum\nolimits_{k = 1}^{\left\lceil y \right\rceil } {a_k \varphi _k (y)} 
-\varphi _k (y)
-(k-1)
-y
-M=\mbox{Max}(X_0,\ldots,X_{n-1})
-\mathbb{P}(M\geq x)=1-F(x)^n
-F(x)
-\mathbb{P}(M\geq \sum X_i) = \int p(M\geq \sum X_i | \sum X_i = x) p(x) dx
-p(x)
-X_i
-X_1 + \cdots + X_{n-1}
-(n-1)^{1/\alpha}X_1
-\alpha
-P
-X_0
-F
-f
-X_i
- P = n{\rm P}(X_0  > X_1  +  \cdots  + X_{n-1}), 
- P = n\int F (s/(n - 1)^{1/\alpha } )f(s){\rm d}s, 

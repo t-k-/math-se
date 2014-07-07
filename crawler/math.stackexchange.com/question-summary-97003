@@ -1,36 +1,0 @@
-(a,b)
-U=(a,b)\times(a,b)
-\frac{b}{a}\geq z\geq 1
-U
-x/y>z
-U
-(az,a)
-(b,a)
-(b,\frac{b}z)
-\frac{(b-az)(\frac{b}z - a)}2 = \frac{(b-az)^2}{2z}
-g(z)=p(x/y>z) = \frac{(b-az)^2}{2z(b-a)^2}
--g'(z)
-z>1
-\frac{\frac{b^2}{z^2}-a^2}{2(b-a)^2}
-z\geq 1
-\frac{a}{b}<z\leq 1
-p(\frac{x}{y}<z) = \frac{(bz-a)^2}{2z(b-a)^2}
-z
-\frac{b^2-\frac{a^2}{z^2}}{2(b-a)^2}
-\frac{b^2-\frac{a^2}{z^2}}{2(b-a)^2}\text {when }\frac{a}b \leq z\leq 1
-\frac{\frac{b^2}{z^2}-a^2}{2(b-a)^2}\text{ when }1\leq z \leq \frac{b}a
-U_1
-[a,b]
-b>a>0
-U_2
-X= \frac{U_1}{U_2}
-\frac{b}{a} \geqslant X \geqslant \frac{a}{b}
-x
-\frac{b}{a} \geqslant x \geqslant 1
-1 > x \geqslant \frac{a}{b}
- \begin{eqnarray}  F(x) &=&  \mathbb{P}\left( X \leqslant x\right) = \mathbb{P}\left( U_1 \leqslant U_2 x \right) = \mathbb{E}\left( \min\left(1, \max\left(0,  \frac{x U_2 - a}{b-a}  \right) \right)  \right) \\  & = &   \int_0^1 \min\left(1, \max\left(0,  \frac{x (a+(b-a) u) - a}{b-a}  \right) \right) \mathrm{d} u \\   &=& \int_0^1 \min\left(1, \max\left(0,  u \cdot x + \frac{a}{b-a} (x-1) \right) \right) \mathrm{d} u \\   \end{eqnarray} 
-u^\ast
-u x + \frac{a}{b-a} (x-1) = 1 
-u^\ast = \frac{b-a x}{x (b-a)}
-  \begin{eqnarray}    F(x) &=& \int_0^1 \min\left(1, \max\left(0,  u \cdot x + \frac{a}{b-a} (x-1) \right) \right) \mathrm{d} u \\     &=& \int_0^1 \min\left(1, u \cdot x + \frac{a}{b-a} (x-1) \right) \mathrm{d} u \\    &=& \int_0^{u^\ast} \left( u \cdot x + \frac{a}{b-a} (x-1) \right) \mathrm{d} u + \int_{u^\ast}^1 \mathrm{d} u \\    &=& \left(\frac{u^\ast}{2} x - \frac{b - a x}{ x(b-a)}\right) u^\ast + 1 \\    &=& 1 - \frac{1}{2 x} \left( \frac{b-a x}{b-a} \right)^2  \end{eqnarray} 
-F(x)

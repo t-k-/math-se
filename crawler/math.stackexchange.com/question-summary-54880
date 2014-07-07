@@ -1,30 +1,0 @@
-l
-m
-f(\vec x)=\sum_{lm}c_{lm}Y_{lm}(\theta,\phi)
-\sum_{\vec x}\left|f(\vec x)-f_{\vec x}\right|^2\rightarrow \min
-\sum_{\vec x}\left|\sum_{lm}c_{lm}Y_{lm}(\theta,\phi)-f_{\vec x}\right|^2\rightarrow \min
-\sum_{\vec x}Y^*_{lm}(\theta,\phi)\left(\sum_{l'm'}c_{l'm'}Y_{l'm'}(\theta,\phi)-f_{\vec x}\right)=0
-\sum_{l'm'}\left(\sum_{\vec x}Y^*_{lm}(\theta,\phi)Y_{l'm'}(\theta,\phi)\right)c_{lm}=\sum_{\vec x}Y^*_{lm}(\theta,\phi)f_{\vec x}\;,
-\theta
-\phi
-\vec x
-f(\vec x)
-f_{\vec x}
-c_{lm}
- \begin{eqnarray} \sum_{\vec x}Y^*_{lm}(\theta,\phi)Y_{l'm'}(\theta,\phi) &\approx& \int Y^*_{lm}(\theta,\phi)Y_{l'm'}(\theta,\phi)\mathrm dV \\ &=& \iint Y^*_{lm}(\theta,\phi)Y_{l'm'}(\theta,\phi)\mathrm d\Omega r^2\mathrm dr \\ &=& \delta_{ll'}\delta_{mm'}\int r^2\mathrm dr \\ &=& \frac13\delta_{ll'}\delta_{mm'}R^3\;, \end{eqnarray} 
-R
-r
-f(\theta,\phi)
- f(\theta,\phi) = \sum c_{lm} Y_{lm}(\theta,\phi) 
-l_0,m_0
-c_{l_0m_0}
-c_{l'm'}
-(l',m')\neq (l_0m_0)
-(l_0,m_0)
-l_0
- \int_{\mathbb{S}^2}|\nabla f|^2 dvol = -\int_{\mathbb{S}^2} f \triangle f \sim \int_{\mathbb{S}^2} (l_0+1)l_0|f|^2 dvol 
- \tilde{l} = \left\lfloor \sqrt{\frac{\int |\nabla f|^2}{\int f^2}}\right\rfloor 
-l_0
-l \in [\tilde{l}-2, \tilde{l}+2]
-m
-11l_0

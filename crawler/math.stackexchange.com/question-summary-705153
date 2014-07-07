@@ -1,9 +1,0 @@
-f(z) = \frac{\text{Log} z}{(z^2 + 1)^2}
-z = i
-m = 2
-\text{Res}_{z=i} f(z)
-\frac{\pi+2i}{8}
-{\rm Res}_{z=i} f(z)=\lim_{z\to i}\frac{d}{dz}\left(f(z)(z-i)^2\right) =\lim_{z\to i}\frac{d}{dz}\frac{\log z}{(z+i)^2}= \lim_{z\to i}\frac{\frac{1}{z}(z+i)^2-2(z+i)\log z}{(z+i)^4} 
-=\frac{-i(2i)^2-4i\log i}{(2i)^4}=\frac{4i-4i\frac{i\pi}{2}}{16}=\frac{2i+\pi}{8}.
-{\rm Res}_{z=i} f(z)=\frac{1}{2\pi i}\int_{|z-i|=r} f(z)\,dz =\frac{1}{2\pi i}\int_{|z-i|=r} \frac{\log z/(z+i)^2}{(z-i)^2}\,dz
-=\lim_{z\to i}\frac{d}{dz}\left(f(z)(z-i)^2\right).

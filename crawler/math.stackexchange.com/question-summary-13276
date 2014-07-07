@@ -1,33 +1,0 @@
-X
-Y
-f(t) = a e^{-at}
-Z =  X-Y
-z<0
-e^{-az}
-\int_{-\infty}^\infty f_{X-Y}(z) dz
-z > 0
-Y > X - z
-y > 0, y+z > x > 0
- z < 0
- 		\begin{split} 		  P(Z < z) &= \int_0^\infty dy \int_0^{y+z} dx a^2 		  e^{-a(x+y)} \\ 		  &= 1 - \frac 1 2 e^{-a z} 		\end{split} 		
- \begin{split} \displaystyle P(Z < z) &= \int_z^\infty dy \int_0^{y+z} dx a^2 e^{-a(x+y)} \\ &= -\frac 1 2 e^{-3 a z } + e^{-a z}.\end{split}
-X-Y
-t>0
-X-Y
-Y
-t
-t
-F
-X
-Y
-f_{X-Y}(t) = (f \star f)(t)
-f_{X-Y}(t)
-f
-f(u)= a {\rm e}^{-a u}
-u > 0
-f_{X-Y}(t) = (a/2){\rm e}^{-at}
-t > 0
-f_{X-Y}(t) = (a/2){\rm e}^{ - a|t|}
-t \in \mathbb{R}
- {\rm P}(X - Y \le t) = \int_0^\infty  {{\rm P}(X - Y \le t|Y = \tau )f(\tau ){\rm d}\tau } =  \int_0^\infty  {{\rm P}(X \le t + \tau )f(\tau ){\rm d}\tau }.   
- f_{X - Y} (t) = \frac{{\rm d}}{{{\rm d}t}}\int_0^\infty  {F(t + \tau )f(\tau ){\rm d}\tau }  = \int_0^\infty  {f(t + \tau )f(\tau ){\rm d}\tau } , 

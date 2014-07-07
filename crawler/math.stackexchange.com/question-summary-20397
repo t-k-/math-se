@@ -1,82 +1,0 @@
-\begin{array}{rl} f(x) &= f(0) + \int_0^x f'(x-t) \,dt\\ &= f(0) + xf'(0) + \int_0^x tf''(x-t)\,dt\\ &= f(0) + xf'(0) + \frac{x^2}2f''(0) + \int_0^x \frac{t^2}2 f'''(x-t)\,dt \end{array}
-n
-n
- \int_0^1 \frac{(-x\log x)^n}{n!}dx = (n+1)^{-(n+1)}.
-\int_0^1 x^{-x}\,dx = \sum_{n=1}^\infty n^{-n}.
-\int_0^\infty x^n e^{-x} dx=n!
-f
-f^{-1}
-\int f(x) dx = x f(x) - \int x f'(x)dx = x f(x) - \int f^{-1}(f(x))f'(x)dx = x f(x) - \int f^{-1}(u) du \,.
-f^{-1}
-f
-\int \ln(x) dx \,;\, \int \arctan(x) dx \,; ...
-f(\theta)
-\mathbb{R}
-f
-a_n = 1/(2 \pi) \int f(\theta)  e^{-i n \theta} d \theta
-k
-a_n = \frac{1}{n} \frac{i}{2 \pi} \int f'(\theta) e^{- i n \theta} d \theta = \frac{1}{n^2} \frac{-1}{2 \pi} \int f''(\theta) e^{- i n \theta} d \theta = \cdots
-\cdots = \frac{1}{n^k} \frac{i^k}{2 \pi} \int f^{(k)}(\theta) e^{- i n \theta} d \theta = O(1/n^k)
-f
-1/n^k
-k
-f
-k
-a_n = O(1/n^k)
-u\in C^1(X)
-\phi\in C^\infty_c(X)
-\left<\partial_i u,\phi\right>=\int\phi\partial_i u=-\int u\partial_i\phi=-\left<u,\partial_i\phi\right>
-u
-\partial_i u
-I_n = \displaystyle \int_{0}^{\frac{\pi}{2}} \sin^n(x) dx
-I_n = \displaystyle \int_{0}^{\frac{\pi}{2}} \sin^{n-1}(x) d(-\cos(x)) = -\sin^{n-1}(x) \cos(x) |_{0}^{\frac{\pi}{2}} + \int_{0}^{\frac{\pi}{2}} (n-1) \sin^{n-2}(x) \cos^2(x) dx
-\sin(0) = 0
-\cos(\frac{\pi}{2}) = 0
-\cos^2(x) = 1 - \sin^2(x)
-I_n = (n-1) (\displaystyle \int_{0}^{\frac{\pi}{2}} \sin^{n-2}(x) dx - \int_{0}^{\frac{\pi}{2}} \sin^{n}(x) dx) = (n-1) I_{n-2} - (n-1) I_n
-n I_n = (n-1) I_{n-2}
-I_n = \frac{n-1}{n}I_{n-2}
-I_{2k+1} = \frac{2k}{2k+1}\frac{2k-2}{2k-1} \cdots \frac{2}{3} I_1
-I_{2k} = \frac{2k-1}{2k}\frac{2k-3}{2k-2} \cdots \frac{1}{2} I_0
-I_1
-I_0
-1
-\frac{\pi}{2}
-I_{2k+1} = \frac{2k}{2k+1}\frac{2k-2}{2k-1} \cdots \frac{2}{3}
-I_{2k} = \frac{2k-1}{2k}\frac{2k-3}{2k-2} \cdots \frac{1}{2} \frac{\pi}{2}
-\int \frac{1}{x} dx = \frac{1}{x} \cdot x - \int x \cdot\left(-\frac{1}{x^2}\right) dx = 1 + \int \frac{1}{x} dx
-1=0
-q
-t_0
-t_f
-q(t)
-\mathbb{R}^3
-q(t)
-q(t_0) = q_0, q(t_f) = q_f
-L
-\min_q \int_{t_0}^{t_f} L(q, \dot{q}) dt
-q
-ma-F=0
- \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} + \frac{\partial L}{\partial q} = 0,
-\bar{\partial}
-*
-\bar{\partial}^* = -* \bar{\partial} \,\,\, *, 
-\int e^x\sin x\ dx
-\int\sin(x)\cos(x)dx=\sin^2x-\int\sin(x)\cos(x)dx+C
-\int\sin(x)\cos(x)dx=\dfrac12\sin^2x
-\alpha,\lambda),~\lambda\gt 0,~\alpha\gt 0,~
- f(x)= \begin{cases} \frac{\lambda e^{-\lambda\:x}(\lambda x)^{\alpha-1}}{\Gamma(\alpha)}~~~\text{for }~x\ge 0 \\ \\  0 \hspace{1.09in} {\text{for }}~x\lt 0  \end{cases}  
-\Gamma(\alpha),
- \Gamma(\alpha) = \int_{0}^{\infty} \! e^{-y} y^{\alpha-1}\, \mathrm{d}y 
-\Gamma(\alpha)
- \begin{array}{ll} \Gamma(\alpha) &=\; -e^{-y} y^{\alpha-1} \Bigg|_{0}^{\infty}~+~\int_{0}^{\infty} \! e^{-y} (\alpha-1)y^{\alpha-2}\,\mathrm{d}y  \\  \\ \;&=\; (\alpha-1) \int_{0}^{\infty} \! e^{-y} y^{\alpha-2}\,\mathrm{d}y ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(1) \\ \\ \;&=\; (\alpha-1) \Gamma(\alpha-1) \end{array} 
-\alpha,
-\alpha=n,
-1
- \begin{array}{llll} \Gamma(n)&=(n-1)\Gamma(n-1) \\ &=(n-1)(n-2)\Gamma(n-2) \\ &=\ldots \\ &=(n-1)(n-2)\ldots3~\cdot~2\Gamma(1) \end{array} 
-\Gamma(1)=\int_{0}^{\infty} \! e^{-x}~\mathrm{d}x=1,
- \Gamma(n)=(n-1)! 
-\ldots
-\newcommand{\+}{^{\dagger}}%  \newcommand{\angles}[1]{\left\langle #1 \right\rangle}%  \newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}%  \newcommand{\bracks}[1]{\left\lbrack #1 \right\rbrack}%  \newcommand{\dd}{{\rm d}}%  \newcommand{\isdiv}{\,\left.\right\vert\,}%  \newcommand{\ds}[1]{\displaystyle{#1}}%  \newcommand{\equalby}[1]{{#1 \atop {= \atop \vphantom{\huge A}}}}%  \newcommand{\expo}[1]{\,{\rm e}^{#1}\,}%  \newcommand{\floor}[1]{\,\left\lfloor #1 \right\rfloor\,}%  \newcommand{\ic}{{\rm i}}%  \newcommand{\imp}{\Longrightarrow}%  \newcommand{\ket}[1]{\left\vert #1\right\rangle}%  \newcommand{\pars}[1]{\left( #1 \right)}%  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\pp}{{\cal P}}%  \newcommand{\root}[2][]{\,\sqrt[#1]{\,#2\,}\,}%  \newcommand{\sech}{\,{\rm sech}}%  \newcommand{\sgn}{\,{\rm sgn}}%  \newcommand{\totald}[3][]{\frac{{\rm d}^{#1} #2}{{\rm d} #3^{#1}}}  \newcommand{\ul}[1]{\underline{#1}}%  \newcommand{\verts}[1]{\left\vert #1 \right\vert}%  \newcommand{\yy}{\Longleftrightarrow}
-\int \log (x) dx = \int 1 \cdot \log(x)dx = x \log(x) - \int x d(\log(x))=x (\log(x)-1) 
- \int \frac{\log^k(x)}{x}dx = \int \log^k(x)d \log(x)=\frac{\log^{k+1}(x)}{k+1} 

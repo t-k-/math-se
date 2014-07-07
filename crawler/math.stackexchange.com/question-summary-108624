@@ -1,23 +1,0 @@
-g
-[a,b]
-g
-C^1([a,b])
-\varphi \mapsto -\int_{\mathbb{R}} g(x) \varphi^{'}(x) dx
-C([a,b])
-|\int g(x) \varphi^{'}(x) dx|\leq C||\varphi||_\infty
-C^0([a,b])
-g
-C^1([a,b])
- \begin{align*} \int_a^b \phi(x) \, dg(x) &= \left[\phi(b)g(b) - \phi(a)g(a)\right] - \int_a^b g(x) \, d\phi(x) \\ &=  \left[\phi(b)g(b) - \phi(a)g(a)\right] - \int_a^b g(x)\phi'(x) \, dx \end{align*} 
-\left|\int_a^b \phi(x) \, dg(x) \right|\le \|\phi\|_{\infty} \; V_a^b(g)
-V_a^b(g)
-g
-\left|\int_a^b g(x)\phi'(x) \, dx\right| \le \left[|g(a)|+|g(b)|+V_a^b(g)\right] \, \| \phi\|_\infty = C\cdot \|\phi\|_\infty
- \begin{align} \sum_{n=1}^N f(\xi_i) [g(x_i) - g(x_{i-1})] &= f(\xi_{N+1})g(b) - f(\xi_1)g(a) -  \sum_{n=1}^N \left[f(\xi_{i+1}) - f(\xi_i)\right] g(x_{i}) \\ &=  f(\xi_{N+1})g(b) - f(\xi_1)g(a) -  \sum_{n=1}^N \frac{f(\xi_{i+1}) - f(\xi_i)}{\xi_{i+1} - \xi_i} g(x_{i}) \left[\xi_{i+1} - \xi_i\right] \end{align} 
-\xi_{N+1} = b
-P
-\left|\sum_{n=1}^N f(\xi_i) \left[g(x_i) - g(x_{i-1})\right]\right| \le \sum_{n=1}^N \left|f(\xi_i)\right| \, \left|g(x_i) - g(x_{i-1})\right|\le \|f\|_\infty \, V_a^b(g)
-f \in C^1([a,b])
-g
-|P|\to 0
-\left| f(b)g(b) - f(a)g(a) - \int_a^b f'(x) g(x) \, dx \right| \le \|f\|_\infty \, V_a^b(g)

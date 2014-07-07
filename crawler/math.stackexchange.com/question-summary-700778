@@ -1,8 +1,0 @@
-\int_{-\infty}^{\infty} e^{2a(x-y)}1_{|x-y|<t-s} dx 
-=\int_0^{t-s} e^{2a(x-y)} dx
-z=x-y
-=\int_{-y}^{t-s-y} e^{2az} dz
-t<s
-t\geq s
-\int_{-\infty}^{\infty}\!dx~ e^{2a(x-y)}~1_{|x-y|<t-s}  ~\stackrel{z=x-y}{=}~\int_{-\infty}^{\infty}dz~ e^{2az}~1_{|z|<t-s}~=~\int_{s-t}^{t-s}dz~ e^{2az}
-~=~\left\{\begin{array}{ccc}\left[ \frac{e^{2az}}{2a}\right]_{z=s-t}^{z=t-s} &=&\frac{1}{a}\sinh(2a(t-s))&\text{for}& a\neq 0,\\\\  \left[ z\right]_{z=s-t}^{z=t-s}&=&2(t-s)&\text{for}& a= 0.\end{array}\right.

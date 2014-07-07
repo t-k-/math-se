@@ -1,7 +1,0 @@
-\int_0^\pi\theta^2\ln^2\left(2\cosh\dfrac{\theta}{2}\right)d\theta
-=\int_0^\pi\theta^2(\ln(e^\frac{\theta}{2}+e^{-\frac{\theta}{2}}))^2~d\theta
-=\int_0^\pi\theta^2(\ln(e^\frac{\theta}{2}~(1+e^{-\theta})))^2~d\theta
-=\int_0^\pi\theta^2\left(\dfrac{\theta}{2}+\ln(1+e^{-\theta})\right)^2~d\theta
-=\int_0^\pi\left(\dfrac{\theta^4}{4}+\theta^3\ln(1+e^{-\theta})+\theta^2(\ln(1+e^{-\theta}))^2\right)d\theta
-=\int_0^\pi\left(\dfrac{\theta^4}{4}+\sum\limits_{n=1}^\infty\dfrac{(-1)^n\theta^3e^{-n\theta}}{n}+\sum\limits_{n=1}^\infty\sum\limits_{k=1}^\infty\dfrac{(-1)^{n+k}\theta^2e^{-(n+k)\theta}}{nk}\right)d\theta
-=\dfrac{\pi^5}{20}-\sum\limits_{n=1}^\infty\dfrac{(-1)^n((\pi^3n^3+3\pi^2n^2+6\pi n+6)e^{-\pi n}-6)}{n^5}-\sum\limits_{n=1}^\infty\sum\limits_{k=1}^\infty\dfrac{(-1)^{n+k}((\pi^2(n+k)^2+2\pi(n+k)+2)e^{-\pi(n+k)}-2)}{nk(n+k)^3}

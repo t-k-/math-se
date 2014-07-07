@@ -1,84 +1,0 @@
-f\notin L^p(E)
-g\in L^q(E)
-\frac{1}{p}+\frac{1}{q}=1
-fg\notin L^1(E)
-g
-\sum a_kg_k
-a_k
-g_k
-\int_E fg_k\to \infty
-E
-1\lt p\lt\infty
-a_k=k^{-(q+1)}
-b_k=k
-g_k
-\Vert g_k\Vert_q=k
-\int fg_k=k^q
-A_k\subseteq E
-\int_{A_k} \vert f\vert^p=k^q
-A_k
-\begin{cases} \sum a_kb_k\lt\infty\\ \sum a_kb_k^q=\infty\end{cases}
-\begin{align*} &\Vert g\Vert_q=\Vert \sum a_kg_k\Vert_q\leq \sum a_k\Vert g_k\Vert_q\\ &\Vert fg \Vert_1=\int fg =\sum a_k\int fg_k \end{align*}
-g_k=\vert f\vert^{p-1}\chi_{A_k}=\vert f\vert^{p/q}\chi_{A_k}
-C_t
-t\geq 0
-F:[0,\infty[\to\mathbb{R}\cup\{\infty\}
-f
-\infty
-F(t)=\int_{C_t\cap E}\vert f\vert
-(a_n)_{n}
-\ell^p
-(b_n)_{n}
-\ell^q
-(a_nb_n)_{n}
-\ell^1
-a_n
-(b_n)_{n}
-\ell^q
-1+(q-1)u^q\geqslant qu^{q-1}
-u
-[0,1]
-u=A_{n-1}/A_n
- A_n=1+\sum\limits_{k\leqslant n}a_k^p,\qquad b_n=\frac{a_n^{p-1}}{A_n}. 
- (q-1)b_n^q=(q-1)\frac{a_n^{p}}{A_n^q}=(q-1)\frac{A_n-A_{n-1}}{A_n^q}\leqslant\frac1{A_{n-1}^{q-1}}-\frac1{A_{n}^{q-1}}. 
-(a_nb_n)_{n}
-\ell^1
-a_kb_k=a_k^p/A_k=(A_k-A_{k-1})/A_k
-k
-m\geqslant n
-(A_k)_k
-n
-m\geqslant n+1
-A_m\geqslant2A_n
-n
-m
-\sum\limits_{k=n+1}^ma_kb_k\geqslant\frac12
-(a_nb_n)_{n}
-\ell^1
- (q-1)\sum\limits_{n}b_n^q\leqslant1. 
- \sum\limits_{k=n+1}^ma_kb_k\geqslant\sum\limits_{k=n+1}^m(A_k-A_{k-1})/A_m=(A_m-A_{n})/A_m. 
-f
-E=\mathbb R_+
-F:x\mapsto1+\int\limits_0^xf^p
-g=f^{p-1}/F
-g^q=f^p/F^q
-f^p=F'
-fg=f^p/F=F'/F
-F(x)\to\infty
-x\to+\infty
-g
-L^q
-fg
-L^1
- (q-1)\int_{\mathbb R^+}g^q=(q-1)\int_{\mathbb R^+}\frac{F'}{F^q}=\left[\frac{-1}{F^{q-1}}\right]_0^{+\infty}\leqslant1. 
- \int_{\mathbb R^+}fg=\left[\log F\right]_0^{+\infty}, 
-E
-g:x\mapsto f(x)^{p-1}/h(f(x))
-t
-\mu(f\geqslant t)
-t
-fg
-L^1
-g
-L^q
- h(t)=1+\int\limits_Ef^p(y)\,[f(y)\geqslant t]\,\mathrm d\mu(y). 

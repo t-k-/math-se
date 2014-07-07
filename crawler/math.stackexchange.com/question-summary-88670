@@ -1,17 +1,0 @@
-\int_{\mathbb{R}^2} \frac{1}{\left(1+\|x\|_2^2\right)^2}; \qquad  \int_{\mathbb{R}^3} \frac{1}{\left(1+\|x\|_2^2\right)^{2}}; \qquad \int_{\mathbb{R}^n}\frac{1}{\left(1+\|x\|_2^2\right)^2} 
-\mathbb{R}
-\mathbb{R}^2, \mathbb{R}^3, \mathbb{R}^n
-\begin{align*} \int_{\mathbb{R}^2}\frac{1}{\left(1+\|x\|_2^2\right)^2} & = \int_{\mathbb{R}\times\mathbb{R}}\frac{1}{\left(1+ x_1^2+x_2^2\right)^2}dx\\ &=  \int \left(\int \frac{1}{\left(1+x_1^2+x_2^2\right)^2}dx _{1}\right)dx _{2} \end{align*}
-\begin{align*} \int_{\mathbb{R}^3} \frac{1}{\left(1+\|x\|_2^2\right)^2} & = \int_{\mathbb{R}\times\mathbb{R}\times \mathbb{R}}\frac{1}{\left(1+x_1^2+x_2^2+x_3^2\right)^2}dx\\  &=  \int \left(\int \left(\int \frac{1}{\left(1+x_1^2+x_2^2\right)^2}dx_1\right)dx_2\right)dx_3\;? \end{align*}
-\mathbb{R}^n
-(1+\lVert x\rVert^2)^{-2}
-\mathbb{R}^N
-N\geq 4
-0
-0
-r\to \infty
-\tag{0} \int_{\mathbb{R}^N} \frac{1}{(1+\lVert x\rVert^2)^2}\ \text{d} x =N\ \omega_N\ \int_0^\infty \frac{r^{N-1}}{(1+r^2)^2}\ \text{d} r\; ;
-N=1,2,3
-N=1,2,3
-B(t,s)=\frac{\Gamma (t)\ \Gamma (s)}{\Gamma (t+s)}\quad \text{and} \quad \Gamma (1+t)=t\ \Gamma (t)\quad \text{(hence } \Gamma (1+n)=n! \text{ for positive integers)}\; .
-\begin{split} \int_{\mathbb{R}^N} \frac{1}{(1+\lVert x\rVert^2)^2}\ \text{d} x &= \frac{N}{2}\ \frac{\pi^{N/2}}{\Gamma (1+N/2)}\ B\left( \frac{N}{2}, 2-\frac{N}{2}\right)\\ &= \frac{\pi^{N/2}}{\Gamma (N/2)}\ \frac{\Gamma (N/2)\ \Gamma (2-N/2)}{\Gamma (2)}\\ &= \pi^{N/2}\ \Gamma (2-N/2)\end{split}

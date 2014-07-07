@@ -1,43 +1,0 @@
-F : \{0,1\}^2 \to \{0,1\}^2
-f(00) = f(01) = 00
-f(10) = f(11) = 01
-s = 01
-|0^n0^n\rangle
-n = 2
-|0000\rangle
-n
-(1/\sqrt{4})(|0000\rangle + |0100\rangle + |1000\rangle + |1100\rangle)
-f
-(1/\sqrt{4})(|0001\rangle + |0100\rangle + |1011\rangle + |1110\rangle)
-n
-f
-f(00)=f(01)=00
-00
-01
-01
-00
-00
-01
-00
-f
-\def\ket#1#2#3#4{|#1#2#3#4\rangle}\frac1{\sqrt4}\left(\ket0000+\ket0100+\ket1001+\ket1101\right)\;.
-n
-\frac1{\sqrt4}\left(\ket0000+\ket1000+\ket0001-\ket1001\right)\;.
-00
-10
-1/2
-00\cdot s=0
-10\cdot s=0
-H^{\otimes n}|x\rangle=\frac1{\sqrt{2^n}}\sum_{y\in\{0,1\}^n}(-1)^{x\cdot y}|y\rangle\;.\tag1
- \begin{eqnarray} \ket0000+\ket0100+\ket1001+\ket1101 &=& \def\k#1#2{|#1#2\rangle} \def\ke#1#2#3#4{\k#1#2\k#3#4} \ke0000+\ke0100+\ke1001+\ke1101 \\ &=& \left(\k00+\k01\right)\k00+\left(\k10+\k11\right)\k01\;. \end{eqnarray}
-|y\rangle
-1
-(1)
-|y\rangle
-|y\rangle
-0
-|y\rangle
-x
-y
-H_2=\frac12\left(\begin{array}{rrrr}1&1&1&1\\1&-1&1&-1\\1&1&-1&-1\\1&-1&-1&1\end{array}\right)\;,
-H_2\pmatrix{1\\1\\0\\0}=\pmatrix{1\\0\\1\\0}\;,\quad H_2\pmatrix{0\\0\\1\\1}=\pmatrix{1\\0\\-1\\0}

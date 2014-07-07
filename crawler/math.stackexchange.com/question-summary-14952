@@ -1,33 +1,0 @@
-F(x,y,z,u,v)=0,\qquad G(x,y,z,u,v)=0
-u=f(x,y,z)
-v=g(x,y,z)
-F(x,y,z,f(x,y,z),g(x,y,z))=0,\qquad G(x,y,z,f(x,y,z),g(x,y,z))=0.
-F
-G
-\frac{\partial u}{\partial x}=-\frac{\det \begin{pmatrix} \frac{\partial F}{\partial x} &  & \frac{\partial F}{\partial v} \\  &  &  \\ \frac{\partial G}{\partial x} &  & \frac{\partial G}{\partial v}% \end{pmatrix}}{\det \begin{pmatrix} \frac{\partial F}{\partial u} &  & \frac{\partial F}{\partial v} \\  &  &  \\  \frac{\partial G}{\partial u} &  & \frac{\partial G}{\partial v}% \end{pmatrix}}
-\dfrac{\partial u}{\partial y}
-\dfrac{\partial u}{\partial z}
-\dfrac{\partial v}{\partial x}
-\dfrac{\partial v}{\partial y}
-% \dfrac{\partial v}{\partial z}
-\frac{\partial (F,G)}{\partial (u,v)}=\det  \begin{pmatrix} \frac{\partial F}{\partial u} &  & \frac{\partial F}{\partial v} \\  &  &  \\  \frac{\partial G}{\partial u} &  & \frac{\partial G}{\partial v} \end{pmatrix}
-\dfrac{\partial u}{\partial x}=-\dfrac{\dfrac{\partial (F,G)}{\partial (x,v)}}{% \dfrac{\partial (F,G)}{\partial (u,v)}}
-\mathbb{R}^2
-\mathbb{R}^3
-x=\frac{\sin u}{\cos v}
-y=\frac{\sin v}{\cos u}
-\dfrac{\partial (x,y)}{\partial (u,v)}=1-x^2y^{2}.
-df_p
-f : \mathbb{R}^n \to \mathbb{R}^m
-p
-p
-f(p + h) = f(p) + df_p(h) + o(|h|)
-h
-f : \mathbb{R} \to \mathbb{R}
-n = m
-p
-f
-p
-f
-df_p
-\det df_p

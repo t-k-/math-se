@@ -1,9 +1,0 @@
-\int _{\partial S}{f(z)\,dz}=i\int \int_S{\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\,dx\,dy}
-dx\,dy
-LHS=\int _{\partial S}{f(z)\,dz}=\int_{\partial S}{(u+iv)(dx+i\,dy)}=\int_{\partial S}{(u\,dx-v\,dy)+i(u\,dy+v\,dx)}
-RHS=i\int \int_S{\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\,dx\,dy}=i\int \int_S{\frac{\partial f}{\partial x}\,dx\,dy+\int \int_Si\frac{\partial f}{\partial y}\,dx\,dy}=i\int_S{f\,dy-\int \int_Si\frac{\partial f}{\partial y}\,dy\,dx}=i\int_S{f\,dy-\int_Sif\,dx}=i\int_S{(u+iv)\,dy-\int_Si(u+iv)\,dx}=\int_S{i(u+iv)\,dy+\int_S(u+iv)\,dx}=LHS
-\begin{align*} \oint_{\partial S} f(r) \, dz &= \oint_{\partial S} f(r) e_x \, d\ell \\ &= \int_S \dot f(r) e_x \dot \nabla (e_{xy} \, dA) \\ &= \int_S \dot f(r) (\dot \partial_x + e_{xy} \dot \partial_y) (e_{xy} \, dA) \\ &= e_{xy} \int_S \Big ( \frac{\partial f}{\partial x} + e_{xy} \frac{\partial f}{\partial y} \Big ) \, dA \\ &= i \int_S \Big( \frac{\partial f}{\partial x} + i \frac{\partial f}{\partial y} \Big)\, dA \end{align*}
-i
-\partial f/\partial y
--\int_S \partial_y f \, dA
-i

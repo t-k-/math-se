@@ -1,28 +1,0 @@
-\pi/2
-0\leq N\leq 6
-\pi/2
-N=7
- \int_0^\infty \left( \prod_{k=0}^N  \operatorname{\rm sinc}\left( \frac{t}{2{k+1}} \right) \right)  \mathrm{d} t.
-u_k
-1-u_k
-u_k \geq 0
-\mathbb{P}\left(0 \leqslant X \leqslant 1\right) = 1
-     X \stackrel{d}{=} \sum_{k=1}^\infty 2^{-k} \left(1-u_k\right) = \sum_{k=1}^\infty 2^{-k} - X = 1 - X 
-f_X(x) = 0
-x < 0
-x>1
-f_X(x) = f_X(1-x)
-0<x<1
-t \cdot \operatorname{\rm sinc}\left( \frac{t}{4} \right)  = 4 \sin\left( \frac{t}{4} \right)
- \begin{eqnarray}    f_X^\prime(x) &=& \frac{1}{\pi} \int_0^\infty \left(- t \sin\left( t \left(x-\frac{1}{2} \right) \right) \right) \operatorname{\rm sinc}\left( \frac{t}{4} \right) \prod_{k=2}^\infty \operatorname{\rm sinc}\left( \frac{t}{2^{k+1}} \right) \mathrm{d} t \end{eqnarray} 
-     \sin\left( t \left(x-\frac{1}{2} \right) \right) \sin\left(\frac{t}{4} \right) =  \frac{1}{2} \left[      \cos\left( \frac{t}{2} \left( (2 x-1) -\frac{1}{2} \right) \right) -     \cos\left( \frac{t}{2} \left( 2 x -\frac{1}{2} \right) \right)  \right] 
- \begin{eqnarray}   f_X^\prime(x) &=& 4 f_X(2 x) - 4 f_X(2x-1) \end{eqnarray} 
-0 < z \leqslant \frac{1}{2}
-f_X^\prime(z) = 4 f_X(2z)
-    f_X(z) - f_X(0) = \int_0^{z} 4 f_X(2x) \mathrm{d} x = 2 \left(F_X(2z) - F_X(0)\right) 
-F(0) = 0
-F(1) = 1
-F_X\left(\frac{1}{2} \right) = \frac{1}{2}
-x=\frac{1}{2}
-     f_X\left(\frac{1}{2}\right) = f_X\left(0\right) + 2 \qquad     f_X\left(\frac{1}{4}\right) = f_X\left(0\right) + 1 
-f_X(0) = 0

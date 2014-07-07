@@ -1,30 +1,0 @@
-v
-n
- u = n \times \{0,1,0\} 
- \theta = acos(\{0,1,0\} \cdot n) 
-n
-t = n \times \{1,0,0\}
-b = t \times n
-t
-b
-R = \begin{array}{ccc} t_x & b_x & n_x \\ t_y & b_y & n_y \\ t_z & b_z & n_z \end{array} 
-R
-v
-v
-v
-n
-z = (0, 0, 1)^T
-n
-t
-a = t \times z
-b = t \times n
-A := (z, t, a)
-B := (n, t, b)
-R = B A^{-1} = B A^T
-(0,1,0)
-n
-\begin{pmatrix} a & \sqrt{1-a^2} & 0 \\ -\sqrt{1-a^2} & a & 0 \\ 0 & 0 & 1\\ \end{pmatrix}
-z
-y
-\begin{pmatrix} \frac{n_1}{\sqrt{1-n_2^2}} & 0 & \sqrt{\frac{1-n_2^2-n_1^2}{1-n_2^2}} \\ 0 & 1 & 0 \\ -\sqrt{\frac{1-n_2^2-n_1^2}{1-n_2^2}} & 0 & \frac{n_1}{\sqrt{1-n_2^2}}\\ \end{pmatrix} \begin{pmatrix} n_2 & \sqrt{1-n_2^2} & 0 \\ -\sqrt{1-n_2^2} & n_2 & 0 \\ 0 & 0 & 1\\ \end{pmatrix}
-n=(n_1,n_2,n_3)

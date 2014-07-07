@@ -1,9 +1,0 @@
-((p \Rightarrow q) \Rightarrow r) \Leftrightarrow (p \Rightarrow (q \Rightarrow r))
-p,q,r  = (0,0,0)
-((p \Rightarrow q)\Rightarrow r)
-\Leftrightarrow
-(p\Rightarrow(q\Rightarrow r))  =  0
-p,q,r  = (0,0,1)
-((p\Rightarrow q)\Rightarrow r)  \Leftrightarrow  (p \Rightarrow (q \Rightarrow r))  =  1
-\begin{array}{c|c|c|c|c|c|c} p&q&r&p\implies q&(p\implies q)\implies r&q\implies r&p\implies (q\implies r)\\ \hline T&T&T&T&T&T&T\\ T&T&F&T&F&F&F\\ T&F&T&F&T&T&T\\ T&F&F&F&T&T&T\\ F&T&T&T&T&T&T\\ F&T&F&T&F&F&T\\ F&F&T&T&T&T&T\\ F&F&F&T&F&T&T \end{array}
-(p\implies q)\implies r\iff p\implies(q\implies r)

@@ -1,9 +1,0 @@
-f(t) = a + b  \exp(-c \cdot t ^ d) 
-a,b,c,d
-d
-t
-J = \int_0^\infty \exp(-st - t^d)\, dt
-d > 1
--s
-J = \sum_{n=0}^\infty \int_0^\infty \frac{(-s)^n t^n}{n!} \exp(-t^d)\, dt = \sum_{n=0}^\infty \frac{\Gamma((n+1)/d)}{n!\, d} (-s)^n
-d

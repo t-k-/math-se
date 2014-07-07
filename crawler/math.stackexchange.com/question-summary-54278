@@ -1,143 +1,0 @@
-X_t
-\mu,\sigma\in C^1(\mathbb R)
-\sigma\ge0
-\mu,\sigma
-X_0 = x
- dX_t = \mu(X_t)dt+\sigma (X_t)dW_t. 
-x\in \mathbb R
-\sigma(x)>0
-U(x)
-y\in U(x)
-U(y)
-t'>0
-0<t\leq t'
-\mathsf P\{X_t \in U(y)|X_0 = x\}>0
-\mu,\sigma
-X
-x
-X
-x
-\Vert\cdot\Vert
-\mathbb{R}^n
-n\times n
-K > 0
-\Vert(\sigma_t\sigma_t^T)^{-1}\Vert\le K
-\Vert(\sigma_t\sigma_t^T)^{-1}\mu_t\Vert\le K
-\Vert\sigma_t\sigma^T_t\Vert\le K
-\Vert X_t - x\Vert < \delta
-\delta
-\mathbb{P}(\sup_{t\le t^\prime}\Vert X_t-x\Vert < \epsilon) > 0
-\epsilon
-\sigma^{-2}\mu\le K
-\sigma^2\le K
-\sigma
-\gamma\colon[0,t^\prime]\to\mathbb{R}^n
-\gamma(0)=x
-K > 0
-\Vert(\sigma_t\sigma_t^T)^{-1}\Vert\le K
-\Vert(\sigma_t\sigma_t^T)^{-1}\mu_t\Vert\le K
-\Vert\sigma_t\sigma^T_t\Vert\le K
-\Vert X_t-\gamma(t)\Vert < \delta
-\delta
-\mathbb{P}(\sup_{t\le t^\prime}\Vert X_t-\gamma(t)\Vert < \epsilon) > 0
-\epsilon
-\sigma_t=\sigma(X_t),\mu_t=\mu(X_t)
-X_t
-\sigma(\gamma_t)\sigma(\gamma_t)^T
-\gamma
-\tilde X_t=X_t-\gamma(t)
-\mu
-\mu-\gamma^\prime
-\tilde X
-X
-\gamma
-\epsilon < \delta
-X
-\Vert X-x\Vert
-\delta
-\Vert(\sigma_t\sigma_t^T)^{-1}\Vert
-\Vert(\sigma_t\sigma_t^T)^{-1}\mu_t\Vert
-\Vert\sigma_t\sigma_t^T\Vert
-K
-\nu
-\Vert\nu\Vert\le K
-\mu_t=\sigma_t\sigma_t^T\nu_t
-\mathbb{Q}
-\mathbb{P}
-\tilde W_t=W_t+\int_0^t\sigma^T_s\nu_s\,ds
-\mathbb{Q}
-\mu
-\mu=0
- \frac{d\mathbb{Q}}{d\mathbb{P}}=\exp\left(-\sum_{j=1}^m\int_0^{t^\prime}(\sigma^T_t\nu_t)^j\,dW^j_t-\frac12\int_0^{t^\prime}\nu_t^T\sigma_t\sigma^T_t\nu_t\,dt\right) 
- dX^i_t=\sum_{j=1}^m\sigma^{ij}_t\,d\tilde W^j_t 
-\Vert(\sigma\sigma^T)^{-1}\Vert\le K
-Y=\Vert X-x\Vert^2
-\tilde W
-[\tilde W]_t=t
-\tilde W
-\tilde\sigma_t
-\tilde\sigma_t^{-1}
-\tilde\mu_t
-Y_t
-(0,\infty)
-\tau
-Y
-\epsilon^2/2
-Y_{\tau+t}
-\sup_{t\le t^\prime}\vert Y_{\tau+t}-\epsilon^2/2\vert < \epsilon^2/2
-\sup_{t\le t^\prime}\Vert X_t-x\Vert < \epsilon
- \begin{align} dY_t&=\tilde\sigma_t\,d\tilde W+\tilde\mu_t\,dt,\\ \tilde\sigma_t&=2\sqrt{(X_t-x)^T\sigma_t\sigma_t^T(X_t-x)},\\ \tilde\mu_t&={\rm Tr}(\sigma_t\sigma^T_t),\\ \tilde W_t&=2\sum_{i,j}\int_0^t1_{\{X_s\not=x\}}\tilde\sigma_s^{-1}(X^i_s-x^i)\sigma^{ij}_s\,dW^j_s. \end{align} 
-n
-X
-\mu=0
-\sigma
-n=2
-m=1
-\sigma_t=R\hat X_t
-R
-\hat x\equiv1_{\{x\not=0\}}x/\Vert x\Vert
-W
-X^T\,dX=0
-X_0\not=0
-\Vert X\Vert
- dX_t=R\hat X_t\,dW_t 
- \begin{align} \Vert X_t\Vert^2&=\Vert X_0\Vert^2+\sum_{i=1}^2[X^i]_t=\Vert X_0\Vert^2+\int_0^t\hat X_s^TR^TR\hat X_s\,ds\\ &=\Vert X_0\Vert^2+t. \end{align} 
-x
-U
-x
-T:=\inf\{t\ge 0: X_t\notin U\}
-t>0
-x
-U
-\sigma(x)>0
- P\{X_s\in U\hbox{ for all } s\in[0,t] | X_0=x\}=P\{T>t | X_0=x\}>0. 
-\sigma
-X_t
-p(t,x,y)
-A
-x
- \mathbf{P}\{X_t\in A | X_0=x\} = \int_A p_t(x,y)\,dy 
-\sigma(x)>0
-x
-U(x)
-x
-\inf_{y\in U(x)}\sigma(y) >0
-Y
-X
-U(x)
-\sigma
-\mu
-U(x)
-U(x)
-Y_t
-q(t,y,z)
-q(t,y,z)>0
-t>0
-y,z
-U(x)
-y\in U(x)
-T
-X
-U(x)
- \mathbf{P}\{X_t\in A | X_0=y\} \geq \mathbf{P}\{X_t\in A, T>t | X_0=y\}, 
- \mathbf{P}\{Y_t\in A | Y_0=y\} =\int_A q(t,y,z)\,dz. 

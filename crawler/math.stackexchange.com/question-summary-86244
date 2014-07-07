@@ -1,128 +1,0 @@
-M
-M_{i,0}
-M_{0,j}
-0
- M_{ij} =  \begin{cases}   1, &  \text{if } i=1 \text{ and } j=1; \\   aM_{i-1,j}+bM_{i,j-1}+cM_{i-1,j-1}, & \mbox{otherwise}.\\ \end{cases} 
-M_n
-n \times n
-M
-a = b = c = 1
-M_1 = \begin{bmatrix} 1 \end{bmatrix}
-M_2= \begin{bmatrix} 1 & 1 \\ 1 & 3 \end{bmatrix}
-M_3 = \begin{bmatrix} 1 & 1 & 1 \\ 1 & 3 & 5 \\ 1 & 5 & 13 \end{bmatrix}
-M_4 = \begin{bmatrix}   		1 & 1 & 1 & 1 \\   		1 & 3 & 5 & 7 \\   		1 & 5 & 13 & 25 \\   		1 & 7 & 25 & 63   	\end{bmatrix}.
-\det M_n = (ab+c)^{n(n-1)/2}
-LU
-M_{n+1}
-x
-x^2 = 1 + \frac{c}{ab}
-M_{n+1} = L_{n+1} U_{n+1}
-\small L_{n+1} = \begin{bmatrix}1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\a & ax & 0 & 0 & 0 & \cdots & 0 & 0\\ a^2 & 2a^2x & a^2x^2 & 0 & 0 & \cdots & 0 & 0\\ a^3 & 3a^3x & 3a^3x^2 & a^3x^3 & 0 & \cdots & 0 & 0\\ a^4 & 4a^4x & 6a^4x^2 & 4a^4x^3 & a^4x^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \ddots  & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \cdots  & \ddots & \vdots \\ a^n & \binom{n}{1}a^nx^1  & \binom{n}{2}a^nx^2 & \binom{n}{3}a^nx^3 & \binom{n}{4}a^nx^4  & \cdots  & \binom{n}{n-1}a^nx^{n-1} & a^nx^n \end{bmatrix}
-\small U_{n+1}^T = \begin{bmatrix}1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\b & bx & 0 & 0 & 0 & \cdots & 0 & 0\\ b^2 & 2b^2x & b^2x^2 & 0 & 0 & \cdots & 0 & 0\\ b^3 & 3b^3x & 3b^3x^2 & b^3x^3 & 0 & \cdots & 0 & 0\\ b^4 & 4b^4x & 6b^4x^2 & 4b^4x^3 & b^4x^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \ddots  & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \cdots  & \ddots & \vdots \\ b^n & \binom{n}{1}b^nx^1  & \binom{n}{2}b^nx^2 & \binom{n}{3}b^nx^3 & \binom{n}{4}b^nx^4  & \cdots  & \binom{n}{n-1}b^nx^{n-1} & b^nx^n \end{bmatrix}
-\det(L_n) = (ax)^{\frac{n(n-1)}{2}}
-\det(U_n) = (bx)^{\frac{n(n-1)}{2}}
-\det(M_n) = (ax)^{\frac{n(n-1)}{2}}(bx)^{\frac{n(n-1)}{2}} = (abx^2)^{\frac{n(n-1)}{2}} = (ab+c)^{\frac{n(n-1)}{2}}
-X_n
-C_n \tilde{X}_n
-D_n = \tilde{X}_n^2
-M_n
-A_n,B_n,D_n
-A_n(i,i) = a^i
-B_n(i,i) = b^i
-D_n(i,i) = \left( 1+\frac{c}{ab} \right)^i
-L_n = A_n X_n
-U_n^T = B_n X_n
-A_{n+1} = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & a & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & a^2 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & a^3 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & 0 & a^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots & \cdots & \ddots & \vdots\\ 0 & 0 & 0 & 0 & 0& \cdots & 0 & a^n\\ \end{bmatrix}
-B_{n+1} = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & b & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & b^2 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & b^3 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & 0 & b^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots & \cdots & \ddots & \vdots\\ 0 & 0 & 0 & 0 & 0& \cdots & 0 & b^n\\ \end{bmatrix}
-X_{n+1} = \begin{bmatrix}1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\1 & x & 0 & 0 & 0 & \cdots & 0 & 0\\ 1 & 2x & x^2 & 0 & 0 & \cdots & 0 & 0\\ 1 & 3x & 3x^2 & x^3 & 0 & \cdots & 0 & 0\\ 1 & 4x & 6x^2 & 4x^3 & x^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \ddots  & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \cdots  & \ddots & \vdots \\ 1 & \binom{n}{1}x^1  & \binom{n}{2}x^2 & \binom{n}{3}x^3 & \binom{n}{4}x^4  & \cdots  & \binom{n}{n-1}x^{n-1} & x^n \end{bmatrix}
-C_{n+1} = \begin{bmatrix}1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\1 & 1 & 0 & 0 & 0 & \cdots & 0 & 0\\ 1 & 2 & 1 & 0 & 0 & \cdots & 0 & 0\\ 1 & 3 & 3 & 1 & 0 & \cdots & 0 & 0\\ 1 & 4 & 6 & 4 & 1 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \ddots  & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots  & \cdots  & \ddots & \vdots \\ 1 & \binom{n}{1}  & \binom{n}{2} & \binom{n}{3} & \binom{n}{4}  & \cdots  & \binom{n}{n-1} & 1 \end{bmatrix}
-\tilde{X}_{n+1} = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & x & 0 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & x^2 & 0 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & x^3 & 0 & \cdots & 0 & 0\\ 0 & 0 & 0 & 0 & x^4 & \cdots & 0 & 0\\ \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\ \vdots & \vdots & \vdots & \vdots & \vdots & \cdots & \ddots & \vdots\\ 0 & 0 & 0 & 0 & 0& \cdots & 0 & x^n\\ \end{bmatrix}
-M_n = A_n C_n \tilde{X}_n^2 C_n^T B_n^T
-M_n = A_n C_n D_n C_n^T B_n.
-C_n
-C_n(i,j) = \left \{ \begin{array}{lr} \binom{i-1}{j-1} & j \leq i\\ 0 & j > i \end{array}\right.
-LU
-L
-U
-E_{n+1}^y = \begin{pmatrix} 1 & 0 & 0 & 0 & \cdots\\ -y & 1 & 0 & 0 & \cdots\\ 0 & -y & 1 & 0 & \cdots\\ \vdots & \vdots & \vdots & \ddots & \cdots\\ \vdots & \vdots & \vdots & -y & 1 \end{pmatrix}
-E_{n+1}^a L_{n+1} = \begin{pmatrix}1 & 0\\ 0 & ax L_n \end{pmatrix}
-E_{n+1}^b U_{n+1}^T = \begin{pmatrix}1 & 0\\ 0 & bx U_n^T \end{pmatrix}
-E_{n+1}^a L_{n+1} U_{n+1} (E_{n+1}^b )^T = \begin{pmatrix}1 & 0\\ 0 & abx^2 M_n \end{pmatrix}
-E_{n+1}^a M_{n+1} (E_{n+1}^b)^T
-(i,j)^{th}
-E_{n+1}^a M_{n+1}
-M_{n+1}(i,j)-a M_{n+1}(i-1,j)
-(i,j)^{th}
-E_{n+1}^a M_{n+1} (E_{n+1}^b)^T
-\begin{align} M_{n+1}(i,j)-a M_{n+1}(i-1,j) -b \left( M_{n+1}(i,j-1)-a M_{n+1}(i-1,j-1) \right)\\ = M_{n+1}(i,j) - a M_{n+1}(i-1,j) -b M_{n+1}(i,j-1) + ab M_{n+1}(i-1,j-1) \\ = \left( M_{n+1}(i,j) - a M_{n+1}(i-1,j) -b M_{n+1}(i,j-1) \right) + ab M_{n+1}(i-1,j-1) \\ = c M_{n+1}(i-1,j-1) + ab M_{n+1}(i-1,j-1) = abx^2 M_{n+1}(i-1,j-1) \end{align}
-M_{n+1}(i-1,j-1) = M_n(i-1,j-1)
-M_{n+1}(i,j)-a M_{n+1}(i-1,j) -b \left( M_{n+1}(i,j-1)-a M_{n+1}(i-1,j-1) \right) = abx^2 M_{n}(i-1,j-1).
-E_n^y
-(m,n)
-(m+1,n)
-(m,n+1)
-(m+1,n+1)
-a
-b
-c
-x
-y
-z
-a^xb^yc^z
-1
-(A_n C_n D_n C_n^T B_n) (i,j)
-(1,1)
-(i,j)
-A_n,B_n,D_n
-4
- \begin{align} (A_n C_n D_n C_n^T B_n) (i,j) & = \sum_{k1} \sum_{k2} \sum_{k3} \sum_{k4} A_n(i,k1) C_n(k1,k2) D_n(k2,k3) C_n(k4,k3) B_n(k4,j)\\ & = \sum_{k1} \sum_{k} \sum_{k4} A_n(i,k1) C_n(k1,k) D_n(k,k) C_n(k4,k) B_n(k4,j)\\ & = \sum_{k} A_n(i,i) C_n(i,k) D_n(k,k) C_n(j,k) B_n(j,j)\\ & = \sum_{k=1}^{\min(i,j)} a^{i-1} \binom{i-1}{k-1} (x^2)^{k-1} \binom{j-1}{k-1} b^{j-1}\\ & = \sum_{k=1}^{\min(i,j)} a^{i-1} \binom{i-1}{k-1} \left( 1 + \frac{c}{ab} \right)^{k-1} \binom{j-1}{k-1} b^{j-1}\\ & = \sum_{k=1}^{\min(i,j)} a^{i-k} \binom{i-1}{k-1} \left( ab + c \right)^{k-1} \binom{j-1}{k-1} b^{j-k}\\ & = \sum_{k=1}^{\min(i,j)} \sum_{r=0}^{k-1} a^{i-k} \binom{i-1}{k-1} \binom{k-1}{r} (ab)^{k-1-r} c^r \binom{j-1}{k-1} b^{j-k}\\ & = \sum_{r=0}^{\min(i,j)-1} a^{i-1-r} b^{j-1-r} c^r \left( \sum_{k=r+1}^{\min(i,j)} \binom{i-1}{k-1} \binom{k-1}{r} \binom{j-1}{k-1} \right) \end{align} 
-\displaystyle \left( \sum_{k=r+1}^{\min(i,j)} \binom{i-1}{k-1} \binom{k-1}{r} \binom{j-1}{k-1} \right)
-r
-\displaystyle \left( \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1}{t+r} \binom{t+r}{r} \binom{j-1}{t+r} \right)
-r
-(1,1)
-(i,j)
-r
-h
-v
-d
-(i-1-r)
-h
-(j-1-r)
-v
-(r)
-d
-(1,1)
-(i,j)
-r
-\frac{(i+j-r-2)!}{(i-1-r)!(j-1-r)!r!}.
-\displaystyle \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1}{t+r} \binom{t+r}{r} \binom{j-1}{t+r} = \frac{(i+j-r-2)!}{(i-1-r)!(j-1-r)!r!}
-\displaystyle \binom{i-1}{t+r} \binom{t+r}{r} = \binom{i-1}{r} \binom{i-1-r}{t}
-3
-\displaystyle \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1}{t+r} \binom{t+r}{r} \binom{j-1}{t+r} = \binom{i-1}{r} \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1-r}{t} \binom{j-1}{t+r}
-\displaystyle \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1-r}{t} \binom{j-1}{t+r} = \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1-r}{t} \binom{j-1}{j-1-t+r} = \binom{i+j-r-2}{j-r-1}
-\binom{n}{r} = \binom{n}{n-r}
-\displaystyle \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1}{t+r} \binom{t+r}{r} \binom{j-1}{t+r} = \binom{i-1}{r} \binom{i+j-r-2}{j-r-1}
-\displaystyle \binom{i-1}{r} \binom{i+j-r-2}{j-r-1} = \frac{(i+j-r-2)!}{(i-1-r)!(j-1-r)!r!}
-\displaystyle \sum_{t=0}^{\min(i,j)-r-1} \binom{i-1}{t+r} \binom{t+r}{r} \binom{j-1}{t+r} = \frac{(i+j-r-2)!}{(i-1-r)!(j-1-r)!r!}
-M_{(n-1)}
-ab+c
-M_{(n-1)}
-D_{(n)}
-(D_{(n)})_{i,i}=(ab+c)^{i-1}
-L_{(n)}
-U_{(n)}
-1
-(L_{(n)})_{i,j}=\binom{i-1}{j-1}a^{i-j}
-(U_{(n)})_{i,j}=\binom{j-1}{i-1}b^{j-i}
-((E_{-a})^{-1})_{i,j}=a^{i-j}
-((L_{(n)})^{-1})_{i,j}=\binom{i-1}{j-1}(-a)^{i-j}
-   M_{(n)} = L_{(n)} D_{(n)} U_{(n)} 
-   L_{(n)} = (E_{-a})^{-1}\cdot \begin{pmatrix}1&0\\ 0&L_{(n-1)}\end{pmatrix},   \qquad   U_{(n)} = \begin{pmatrix}1&0\\ 0&U_{(n-1)}\end{pmatrix}\cdot(E_{-b}^\top)^{-1}, 
-\qquad \small M = P^{\quad a} \cdot \quad dV(c+ab) \cdot (P^{\quad b} \sim )
-\small \begin{array} {lllll}  1 & . & . & . & . & . \\  a & 1 & . & . & . & . \\  a^2 & 2a & 1 & . & . & . \\  a^3 & 3a^2 & 3a & 1 & . & . \\  a^4 & 4a^3 & 6a^2 & 4a & 1 & . \\  a^5 & 5a^4 & 10a^3 & 10a^2 & 5a & 1  \end{array} 
-a_i=(-i,0)
-b_i=(0,i)
-a
-b
-c

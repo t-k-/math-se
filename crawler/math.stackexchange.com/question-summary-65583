@@ -1,31 +1,0 @@
-X,Y
-N(0,1)
-\alpha,\beta\in \mathbb{R}
-\alpha X+\beta Y
-\operatorname{cov}(\alpha X,\beta Y) = \alpha\beta\operatorname{cov}(X,Y)
-\operatorname{var}(\alpha X + \beta Y) = \alpha^2 \operatorname{var}(X) + \beta^2\operatorname{var}(Y).
-\sqrt{\alpha^2+\beta^2}
-0
-Z\sim N(0,1)
-\Phi
- F_{\alpha X + \beta Y}(x) = \Pr(\alpha X + \beta Y\le x) = \Pr\left(\frac{\alpha X + \beta Y}{\sqrt{\alpha^2+\beta^2}} \le \frac{x}{\sqrt{\alpha^2+\beta^2}}\right) = \Pr\left(Z \le \frac{x}{\sqrt{\alpha^2+\beta^2}}\right) 
- \Phi\left(\frac{x}{\sqrt{\alpha^2+\beta^2}}\right) 
--1/2
-\alpha^2\beta^2
- \exp\left(-\frac12 \left(\frac{x}{\alpha}\right)^2 \right) \exp\left(-\frac12 \left(\frac{z-x}{\beta}\right)^2 \right) = \exp\left(-\frac12 \left( \frac{\beta^2x^2 + \alpha^2(z-x)^2}{\alpha^2\beta^2} \right) \right). 
- \begin{align} & (\alpha^2+\beta^2)x^2 - 2\alpha^2 xz + \alpha^2 z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x^2 - 2\frac{\alpha^2}{\alpha^2+\beta^2} xz\right) + \alpha^2 z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x^2 - 2\frac{\alpha^2}{\alpha^2+\beta^2} xz + \frac{\alpha^4}{(\alpha^2+\beta^2)^2}z^2\right) + \alpha^2 z^2 - \frac{\alpha^4}{\alpha^2+\beta^2}z^2 \\  \\ & = (\alpha^2+\beta^2)\left(x - \frac{\alpha^2}{\alpha^2+\beta^2}z\right)^2 + \alpha^2 z^2 - \frac{\alpha^4}{\alpha^2+\beta^2}z^2, \end{align} 
-\exp\left(\text{a function of }z\right)
-x
-z
-f
-u=x-\text{something}
-du=dx
--\infty
-+\infty
-1
- \int_{-\infty}^\infty f(x - \text{something}) \; dx 
- \alpha^2z^2 - \frac{\alpha^4}{\alpha^2+\beta^2} z^2 = \frac{z^2}{\frac{1}{\beta^2} + \frac{1}{\alpha^2}}. 
-\alpha^2\beta^2
-\sqrt{\alpha^2+\beta^2}
- \frac{z^2}{\alpha^2+\beta^2}=\left(\frac{z}{\sqrt{\alpha^2+\beta^2}}\right)^2. 
- (\text{constant})\cdot \exp\left( -\frac12 \left(\frac{z}{\sqrt{\alpha^2+\beta^2}}\right)^2 \right) . 

@@ -1,9 +1,0 @@
-n,m\in\mathbb N
-a\neq0
-S(n,0,a)=(a+1)^n
-S(n,m,a)=\sum_{k=0}^{n}k^{m}\cdot\binom{n}{k}\cdot a^k.
-S(n,1,a)=na\cdot(a+1)^{n-1}
-S(n,2,a)=an(an+1)(a+1)^{n-2}
-S(n,3,a)=an(a^2n^2+3an-a+1)(a+1)^{n-3}.
-\displaystyle\sum_{k=0}^{n}k^{m}\cdot\binom{n}{k}a^k=a\cdot\frac{\mathrm d}{\mathrm da}\int\displaystyle\sum_{k=0}^{n}k^{m}\cdot\binom{n}{k}a^{k-1}\mathrm da=a\cdot\frac{\mathrm d}{\mathrm da}\sum_{k=0}^{n}k^{m-1}\cdot\binom{n}{k}a^k
-S(n,m,a)=a\cdot\frac{\mathrm d}{\mathrm da}S(n,m-1,a).

@@ -1,17 +1,0 @@
-U
-X
-A \subset X
-\overline{U \cap A} = \overline{U \cap \overline{A}}
-F \subset X
-int(F \cup int(A))=int(F \cup A)
-C
-X-A\subseteq C
-X-A\subseteq \overline{X-A}\subseteq C
-X-C\subseteq X-\overline{X-A}\subseteq X-(X-A) = A
-C
-X-C
-X-C
-A
-X-C\subseteq \mathrm{int}(A)
-X-\overline{X-A}\subseteq \mathrm{int}(A)
-\begin{align*} \mathrm{int}(F\cup \mathrm{int}(A)) &= X - \overline{X-(F\cup\mathrm{int}(A))}\\ &= X - \overline{(X-F) \cap (X-\mathrm{int}(A))}\\ &= X - \overline{(X-F) \cap \overline{X-A}}\\ &= X - \overline{(X-F)\cap (X-A)}&\qquad&\text{(using your fact)}\\ &= X - \overline{(X-(F\cup A))}\\ &= \mathrm{int}(F\cup A). \end{align*}

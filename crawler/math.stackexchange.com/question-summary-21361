@@ -1,25 +1,0 @@
-\frac{\mathrm{d}V(t)}{\mathrm{d}t}=\sqrt{2}\sum_{h=1}^{H}h\omega V_{h}\cos\left(h\omega t+\frac{\pi }{2}\right),
-\frac{1}{T}\int_{0}^{T}  \left( \frac{\mathrm{d} V(t)}{\mathrm{d} t}  \right)^{2}dt=\omega \sum_{h=1}^{H}h^{2}V_{h}^{2}.
-\begin{eqnarray*} \frac{dV(t)}{dt} &=&\sqrt{2}\sum_{h=1}^{H}h\omega V_{h}\cos \left( h\omega t+% \frac{\pi }{2}\right)  \\ &=&-\sqrt{2}\sum_{h=1}^{H}h\omega V_{h}\sin h\omega t, \end{eqnarray*}
-\omega
-\omega =\frac{2\pi }{T},
-\left( \frac{dV(t)}{dt}\right) ^{2}=2\omega ^{2}\left( \sum_{h=1}^{H}hV_{h}\sin \left( h\omega t\right) \right) ^{2}
-\begin{eqnarray*} \frac{1}{T}\int_{0}^{T}\left( \frac{dV(t)}{dt}\right) ^{2}dt &=&\frac{\omega  }{2\pi }\int_{0}^{2\pi /\omega }\left( \frac{dV(t)}{dt}\right) ^{2}dt \\ &=&\frac{\omega }{2\pi }\int_{0}^{2\pi /\omega }2\omega ^{2}\left( \sum_{h=1}^{H}hV_{h}\sin \left( h\omega t\right) \right) ^{2}dt \\ &=&\frac{\omega ^{3}}{\pi }\int_{0}^{2\pi /\omega }\left( \sum_{h=1}^{H}hV_{h}\sin \left( h\omega t\right) \right) ^{2}dt. \end{eqnarray*}
-\left( \sum_{h=1}^{H}hV_{h}\sin \left( h\omega t\right) \right) ^{2}
-h^{2}V_{h}^{2}\sin ^{2}\left( h\omega t\right) 
-k\left( pV_{p}\sin \left( p\omega t\right) \cdot qV_{q}\sin \left( q\omega t\right) \right) \,
-p\neq q
-p,q,k\in\mathbb{N}
-\sin nx
-n\in\mathbb{N}
-[0,2\pi ]
-\int_{0}^{2\pi /\omega }k\left( pV_{p}\sin \left( p\omega t\right) \cdot qV_{q}\sin \left( q\omega t\right) \right) dt=0\quad p\neq q
-\sum_{h=1}^{H}h^{2}V_{h}^{2}\sin ^{2}\left( h\omega t\right) 
-\begin{eqnarray*} \frac{1}{T}\int_{0}^{T}\left( \frac{dV(t)}{dt}\right) ^{2}dt &=&\frac{\omega ^{3}}{\pi }\int_{0}^{2\pi /\omega }\sum_{h=1}^{H}h^{2}V_{h}^{2}\sin ^{2}\left( h\omega t\right) dt \\ &=&\frac{\omega ^{3}}{\pi }\sum_{h=1}^{H}h^{2}V_{h}^{2}\int_{0}^{2\pi /\omega }\sin ^{2}\left( h\omega t\right) dt \\ &=&\frac{\omega ^{3}}{\pi }\sum_{h=1}^{H}h^{2}V_{h}^{2}\cdot \frac{\pi }{% \omega } \\ &=&\omega ^{2}\sum_{h=1}^{H}h^{2}V_{h}^{2}, \end{eqnarray*}
-\begin{eqnarray*} \int \sin ^{2}\left( h\omega t\right) dt &=&\frac{1}{h\omega }\left( -\frac{1% }{2}\cos h\omega t\sin h\omega t+\frac{1}{2}h\omega t\right)  \\ \int_{0}^{2\pi /\omega }\sin ^{2}\left( h\omega t\right) dt &=&\frac{\pi }{% \omega }. \end{eqnarray*}
-\omega^2
-\sqrt{2} \cos(\dots)
-L^2([0,T])
-L^2
-dV/dt
-\sum (h\omega V_h)^2

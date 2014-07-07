@@ -1,12 +1,0 @@
-x = \sqrt{9-y^2}; -2\leq y\leq2
-A= 2\pi \int_{-2}^2 \sqrt{9-y^2} \sqrt{1 + (\frac{1}{2}(9-y^2)^\frac{-1}{2}(-2y))^2} dy
- = 4\pi \int_{0}^2 \sqrt{9-y^2} \sqrt{1 + (\frac{1}{2}(9-y^2)^\frac{-1}{2}(-2y))^2} dy
- = 4\pi \int_{0}^2 \sqrt{(9-y^2) + (9-y^2)(\frac{1}{2}(-2y)(9-y^2)^\frac{-1}{2})^2} dy
- = 4\pi \int_{0}^2 \sqrt{(9-y^2) + (9-y^2)((-y)^2(9-y^2)^{-1})} dy
- = 4\pi \int_{0}^2 \sqrt{(9-y^2) + (9-y^2)(\frac{(-y)^2}{(9-y^2)})} dy
- = 4\pi \int_{0}^2 \sqrt{(9-y^2) + (-y)^2} dy
- = 4\pi \int_{0}^2 \sqrt{9-y^2 -y^2} dy
- = 4\pi \int_{0}^2 \sqrt{9-2y^2} dy
-24\pi
- = 4\pi \int_{0}^2 \sqrt{9} dy
- \begin{align} & \sqrt{9-y^2} \sqrt{1 + \left(\frac{1}{2}(9-y^2)^\frac{-1}{2}(-2y)\right)^2} = \sqrt{9-y^2} \sqrt{1 + \frac{4y^2}{4(9-y^2)}} \\ & = \sqrt{9-y^2} \sqrt{1 + \frac{y^2}{9-y^2}} = \sqrt{9-y^2} \sqrt{\frac{(9-y^2) + y^2}{9-y^2}} \\ & = \sqrt{9-y^2} \sqrt{\frac{9}{9-y^2}} = \sqrt{9}. \end{align} 

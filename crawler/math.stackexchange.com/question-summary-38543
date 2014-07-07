@@ -1,28 +1,0 @@
-\begin{eqnarray} a_{n} &=& ba_{n-1}+cd^{n-1}\\ &=& b\left(ba_{n-2}+cd^{n-2}\right)+cd^{n-1}\\ &=& b\left(b\left(ba_{n-3}+cd^{n-3}\right)+cd^{n-2}\right)+cd^{n-1}\\ &=& b\left(b\left(b\left(ba_{n-4}+cd^{n-4}\right)+cd^{n-3}\right)+cd^{n-2}\right)+cd^{n-1}\\ &=& \dots\\ &=& \sum_{k=0}^{n}b^{k}cd^{n-k-1}\\ &=& \sum_{k=0}^{n}b^{k}cd^{n-\left(k+1\right)} \end{eqnarray}
-\sum_{k=0}^{n-1}b^{k} c d^{n-(k+1)} = (c (b^n-d^n))/(b-d)
-\begin{eqnarray} a_{n} &=& ba_{n-1}+cd^{n-1}\\ &=& b\left(ba_{n-2}+cd^{n-2}\right)+cd^{n-1}\\ &=& b\left(b\left(ba_{n-3}+cd^{n-3}\right)+cd^{n-2}\right)+cd^{n-1}\\ &=& b\left(b\left(b\left(ba_{n-4}+cd^{n-4}\right)+cd^{n-3}\right)+cd^{n-2}\right)+cd^{n-1}\\ &=& b^{4}a_{n-4}+b^{3}cd^{n-4}+b^{2}cd^{n-3}+bcd^{n-2}+cd^{n-1}\\ &=& b^{5}a_{n-5}+b^{4}cd^{n-5}+b^{3}cd^{n-4}+b^{2}cd^{n-3}+bcd^{n-2}+cd^{n-1}\\ &=& b^{n}a_{0}+b^{n-1}c+\dots+b^{4}cd^{n-5}+b^{3}cd^{n-4}+b^{2}cd^{n-3}+cbd^{n-2}+cd^{n-1}\\ &=& \dots\\ &=& 0+b^{n-1}c+\dots+b^{4}cd^{n-5}+b^{3}cd^{n-4}+b^{2}cd^{n-3}+cbd^{n-2}+cd^{n-1}\\ &=& \sum_{k=0}^{n-1}b^{k}cd^{n-1-k}\\ &=& cd^{n-1}\sum_{k=0}^{n-1}b^{k}d^{-k}\\ &=& cd^{n-1}\sum_{k=0}^{n-1}\left(\frac{b}{d}\right)^{k}\\ &=& cd^{n-1}\frac{1-\left(\frac{b}{d}\right)^{n}}{1-\left(\frac{b}{d}\right)}\\ &=& cd^{n-1}\frac{1-\frac{b^{n}}{d^{n}}}{1-\frac{b}{d}}\\ &=& cd^{n-1}\frac{\frac{d^{n}-b^{n}}{d^{n}}}{\frac{d-b}{d}}\\ &=& cd^{n-1}\frac{d^{n}-b^{n}}{d^{n}}\cdot\frac{d}{d-b}\\ &=& \frac{c\left(d^{n}-b^{n}\right)}{d-b} \end{eqnarray}
-\sum_{k=0}^{n}b^{k}cd^{n-(k+1)} = c d^{n-1}\sum_{k=0}^{n}b^{k}d^{-k}
-b/d
-b=0
-a_n = cd^{n-1}
-b\neq 0
-b^n
-x_n = \frac{a_n}{b^n}
-q = \frac{d}{b}
-x_0 = a_0/b = 0
-q\neq 1
- \frac{a_n}{b^n} = \frac{a_{n-1}}{b^{n-1}} + \frac{cd^{n-1}}{b^n} 
- x_n = x_{n-1} + (c/b)q^{n-1} \mbox{ or } x_n - x_{n-1} = (c/b)q^{n-1} 
-\begin{eqnarray} x_n & = & x_0 + \sum_{i=1}^n (x_i - x_{i-1})\\     & = & (c/b)\sum_{i=1}^n q^{i-1}\\     & = & (\frac{c}{b})(\frac{1-q^n}{1-q}) \end{eqnarray} 
-a_n = x_n b^n = (\frac{c}{b})(\frac{1-\frac{d^n}{b^n}}{1-\frac{d}{b}})b^n  = \frac{c(b^n - d^n)}{b - d}
-z^n
-n \ge 0
-A(z)
-n
-m - 1
- A(z) = \sum_{n \ge 0} a_n z^n 
- a_{n + 1} = b a_n + c d^n 
- \frac{A(z) - a_0}{z} = b A(z) + c \frac{1}{1 - d z} 
- (1 - \alpha z)^{-m}   = \sum_{n \ge 0} \binom{-m}{n} (- \alpha)^n z^n   = \sum_{n \ge 0} \binom{n + m - 1}{m - 1} \alpha^n z^n 
- \binom{n + m - 1}{m - 1}    = \frac{(n + m - 1) (n + m - 2) \ldots (n + 1)}{(m - 1)!} 
- 

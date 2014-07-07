@@ -1,85 +1,0 @@
-n
-n
-\mathbb{Z}^3
-n
-n < 10^5
-n < 10^6
-(x,y,z)
-(u,v,w)
-x^2 + y^2 + z^2 = u^2 + v^2 + w^2 = s
-xu + yv + zw = 0
-s
-3\pmod{4}
-(xw-uz)^2 + (yw-vz)^2
-w^2+z^2
-3\pmod{4}
-s
-3\pmod{4}
-s
- \begin{align} (xw-uz)^2 + (yw-vz)^2 &=x^2w^2 - 2xwuz + u^2z^2 + y^2w^2 - 2ywvz + v^2z^2\\ &=(x^2 + y^2)w^2 + (u^2 +v^2)z^2 - 2(xu+yv)wz\\ &=(x^2 + y^2)w^2 + (u^2 +v^2)z^2 + 2(zw)wz\\ &=(x^2 + y^2 + z^2)w^2 + (u^2 +v^2+w^2)z^2\\ &=s(w^2+z^2) \end{align} 
-\{x_i, y_i, z_i\}
-i = 0, 1, 2, 3
-(x_i - x_{i+1})^2 + (y_i - y_{i+1})^2 + (z_i - z_{i+1})^2 = A
-(x_i - x_{i+1})(x_{i+1} - x_{i+2}) + (y_i - y_{i+1})(y_{i+1} - y_{i+2}) + (z_i - z_{i+1})(z_{i+1} - z_{i+2}) = 0
-i+1
-i+2
-4^m(8 n + 7)
-\equiv 1 \bmod 4
-4^m(4 n + 1)
-\equiv 3 \bmod 4
-4^m(8 n + 3)
-x_i - x_{i+1}
-y_i - y_{i+1}
-4^m(8 n + 1)
-\equiv 3 \bmod 4
-8 n + 1
-\equiv 3 \bmod 4
-a^2 + b^2 + c^2 = d^2 + e^2 + F^2
-a d + b e + c F = 0
-c^2
-a, b, d, e, F
-c = 1
-- F = a d + b e
-(a^2 + 1) d^2 + 2 a b d e + (b^2 + 1) e^2 = a^2 + b^2 + 1
-a^2 + 1
-((a^2 + 1) d + a b e)^2 = (a^2 + 1 - e^2) (a^2 + b^2 + 1)
-(a^2 + 1) d + a b e = (a^2 + b^2 + 1) f
-a^2 + 1 - e^2 = (a^2 + b^2 + 1) f^2
-(a^2 + 1) (1 - f^2) = e^2 + (b f)^2
-g, h
-1 - f^2 = g^2 + h^2
-e^2 + (b f)^2 = (a g + h)^2 + (a h - g)^2
-u, v
-u^2 + v^2 = 1
-e = u (a g + h) + v (a h - g)
-b f = v (a g + h) - u (a h - g)
-f^2 + g^2 + h^2 = 1
-f = \frac{p^2 + q^2 - 1}{p^2 + q^2 + 1}
-g = \frac{2 p}{p^2 + q^2 + 1}
-h = \frac{2 q}{p^2 + q^2 + 1}
-u^2 + v^2 = 1
-u = \frac{r^2 - 1}{r^2 + 1}
-v = \frac{2 r}{r^2 + 1}
-e
-b f
-b
-e
-a, p, q, r
-b
-e
-f
-d
-a, p, q, r
-F
-- F = a d + b e
-a^2 _+ b^2 + 1 = d^2 + e^2 + (a d - b e)^2
-b, d, e
-a
-u^2 + v^2 (= 1)
-g^2 + h^2
-G, H
-1 - f^2 = G^2 + H^2
-e = a G + H
-b f = a H - G
-b, d, e, F
-a, G, H

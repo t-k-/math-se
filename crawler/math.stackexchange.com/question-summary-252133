@@ -1,9 +1,0 @@
-G(x_1,x_2) = \int_{0}^{x_1}g_1(x,0)dx + \int_0^{x_2}g_2(x_1,y)dy
-\frac{\partial g_1}{\partial x_2} = \frac{\partial g_2}{\partial x_1}
-g_1 : \mathbb{R} \times \mathbb{R} \to \mathbb{R}
-g_2 : \mathbb{R} \times \mathbb{R} \to \mathbb{R}
-\frac{\partial G}{\partial x_1} = g_1(x_1,x_2)
-x_1
-\partial g_2/\partial x_1=\partial g_1/\partial x_2
- \frac{\partial G}{\partial x_1}   = \frac{\partial}{\partial x_1}\int_0^{x_1}g_1(x,0)\,\mathrm dx   + \frac{\partial}{\partial x_1}\int_0^{x_2}g_2(x_1,y)\,\mathrm dy 
- \frac{\partial}{\partial x_1}\int_0^{x_2}g_2(x_1,y)\,\mathrm dy  = \int_0^{x_2}\frac{\partial g_2}{\partial x_1}(x_1,y)\,\mathrm dy. 

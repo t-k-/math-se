@@ -1,4 +1,0 @@
-A_n\in\mathbb{R}^{n\times n}
-\left[a_{i,j}\right] = \left\lbrace\begin{array}{cc} 1 & i=j \\ -j & i = j+1\\ i & i = j-1 \\ 0 & \text{other cases} \end{array} \right.
-\det{A_n}=\det{\left(\begin{array}{cc|cc} && 0 & 0 \\ & A_{n-2}&n-2&0 \\ \hline\\ 0&-n+2&1&n-1 \\ 0&0&-n+1&1 \end{array}\right)} =\\= \det{\left(\begin{array}{cc|c} && 0 \\ & A_{n-2}&n-2 \\ \hline\\ 0&-n+2&1  \end{array}\right)}+{\left(n-1\right)\cdot \det{\left(\begin{array}{cc|cc} && 0  \\ & A_{n-2}&0 \\ \hline\\ 0&-n+2&n-1 \\ \end{array}\right)}}=\\= \det{A_{n-1}}+\left(n-1\right)^2\cdot\det{A_{n-2}} 
-\det{A_n} = \det{\left(\begin{array}{cc|c} && 0 \\ & A_{n-1}&n-1 \\ \hline\\ 0&-n+1&1  \end{array}\right)}= \det{A_{n-1}}+\left(n-1\right)^2\cdot\det{A_{n-2}} 

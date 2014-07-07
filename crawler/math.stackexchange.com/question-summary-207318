@@ -1,4 +1,0 @@
- \begin{array}[ll] \text{a1}:&A\lor A\Rightarrow A\\ \text{a2}:&A\Rightarrow A\lor B\\ \text{a3}:&A\lor B\Rightarrow B\lor A\\ \text{a4}:&(A\Rightarrow B)\Rightarrow((C\Rightarrow A)\Rightarrow (C\Rightarrow B))\\ \end{array} \\\\ \text{Prove: }A\Rightarrow A 
-A\lor A
-\lor
- \begin{array}[lll] \\ 1&(A\Rightarrow B)\Rightarrow((A\lor A\Rightarrow A)\Rightarrow (A \lor A\Rightarrow B))&\text{using C=$A\lor A$ in a4}\\ 2&(A\Rightarrow B)\Rightarrow (A\lor A\Rightarrow B)&\text{mp using 1 and a1}\\ 3&(A\Rightarrow A\lor B)\Rightarrow(A\lor A \Rightarrow A\lor B)&\text{sub. A$\lor$ B for B}\\ 4&A\lor A\Rightarrow A\lor B&\text{mp using 3 and a2}\\ \end{array} 

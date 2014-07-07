@@ -1,42 +1,0 @@
-V
-W=\{0\}\subset V
-\operatorname{dim}W=+\infty
-E=\{e_\lambda: \lambda\in\Lambda\}
-V
-v\in V
-V
-v_1,v_2\in V
-v_1\bigcirc v_2
-V
-a\in \mathcal{L}(V)
-v_1,v_2\in V
-s_1,s_2\in\mathbb{C}
-v_1,v_2,v\in V
-a\in\mathcal{F}(V)=\mathcal{F}(V,V)
-\{v_{1,k}:k=\overline{1,n}\}\subset V
-\{v_{2,k}:k=\overline{1,n}\}\subset V
-\{s_k:k=\overline{1,n}\}\subset\mathbb{C}
-\bigcirc
-\{v_{1,k}:k=\overline{1,n}\}\subset V
-\operatorname{dim}W=+\infty
-\{w_k:k=\overline{1,n}\}\subset W
-b\in\mathcal{F}(W,V)
-b(w_k)=v_k
-k=\overline{1,n}
-b(v)=0
-v\in\operatorname{span}\{w_k:k=\overline{1,n}\}^{\perp}
-c=\sum\limits_{k=1}^n s_k (w_{k}\bigcirc v_{2,k})\in\mathcal{F}(V,W)
-a\in\mathcal{F}(V)
-b\in\mathcal{F}(W,V)\subset\mathcal{L}(V)
-c\in\mathcal{F}(V,W)
-a=b\circ c
-\mathcal{F}(V)\subset\mathcal{L}(V)\cdot \mathcal{F}(V,W)
- v=\sum\limits_{\lambda\in\Lambda} v_\lambda e_\lambda 
- \langle v_1,v_2\rangle=\sum\limits_{\lambda\in\Lambda} v_{1,\lambda}\overline{v_{2,\lambda}} 
- v_1\bigcirc v_2 : V\to V: v\mapsto\langle v, v_2\rangle v_1 
- a\circ(v_1\bigcirc v_2)=a(v_1)\bigcirc v_2,\qquad (v_1\bigcirc v_2)\circ a=v_1\bigcirc a^*(v_2) 
- (s_1 v_1+s_2 v_2)\bigcirc v = s_1(v_1\bigcirc v)+s_2(v_2\bigcirc v)  
- v\bigcirc(s_1 v_1+s_2 v_2)=\overline{s_1}  (v\bigcirc v_1)+\overline{s_2}(v\bigcirc v_2) 
- a=\sum\limits_{k=1}^n s_k (v_{1,k}\bigcirc v_{2,k}) 
- b\circ c= b\circ \left(\sum\limits_{k=1}^n s_k (w_{k}\bigcirc v_{2,k})\right)= \sum\limits_{k=1}^n s_k b\circ (w_{k}\bigcirc v_{2,k})= 
- \sum\limits_{k=1}^n s_k (b(w_{k})\bigcirc v_{2,k})= \sum\limits_{k=1}^n s_k (v_{1,k}\bigcirc v_{2,k})=a 

@@ -1,22 +1,0 @@
-X
-(s,1)
-X=x
-Y
-x
-\longrightarrow
-s
-W
-\frac{Y-E(Y)}{\sqrt{\operatorname{var}(Y)}}\longrightarrow W
-Y
-\frac{Y-E(Y)}{\sqrt{\operatorname{var}(Y)}}
- M_Y(t)=\left(\frac{1}{2-e^{t}}\right)^s
- M(t)=e^{-\frac{s}{\sqrt{2s}}t}\left(\frac{1}{2-e^{\frac{t}{\sqrt{2s}}}}\right)^s
-X
- M_X(t) = E(e^{tX}) = \left(\frac{1}{1-t}\right)^s. 
-Y
-u=e^t-1
- M_Y(t) = E(e^{tY}) = E(E(e^{tY} \mid X)) = E\left( e^{X(e^t-1)} \right) = M_X(u), 
- M_Y(t) = \left(\frac{1}{1-u}\right)^s = \left(1-(e^t - 1)\right)^{-s}. 
-Y
- E(Y) = E(E(Y\mid X)) = E(X) = s. 
- \operatorname{var}(Y) = \operatorname{var}(E(Y \mid X)) + E(\operatorname{var}(Y \mid X)) = \operatorname{var}(X) + E(X) = s+s. 

@@ -1,16 +1,0 @@
-a>1, b>0
-N \in \mathbb{N}
-b^N < a
-N
-x\in (0,1)
-\sum_{n=1}^{\infty} \frac{\sin(b^nx)}{a^n}
-\sum_{n=1}^{N}\frac{\sin(b^nx)}{a^n}=\sum_{n=1}^{N}\frac{\sin(b^nx)}{a^n}+\sum_{N}^{\infty}\frac{\sin(b^nx)}{a^n} ,\\\ \sum_{N}^{\infty}\left|\frac{\sin(b^nx)}{a^n}\right|<\sum_{N}^{\infty}\frac{b^nx}{a^n}<\sum_{N}^{\infty}\frac{ax}{a^n}=\sum_{N}^{\infty}\frac{x}{a^{n-1}}.
-|\frac{\sin{b^nx}}{a^n}|^\frac1n\leq\frac1a<1
-|\frac{b^n\sin{b^nx}}{a^n}|^\frac1n\leq\frac{b}a<\frac{a^{1/N}}a<1
-0\leq k\leq N
-0 < b^N < a
-a>1
- f(x)=\sum_{n=1}^{\infty} a^{-n} \sin{b^nx} 
- f'(x)=\sum_{n=1}^{\infty} \left(\frac{b}a\right)^n \cos{b^nx} 
- f^{(k)}(x)= \left\{ \begin{matrix} \sum_{n=1}^{\infty} (-1)^\frac{k}{2} \left(\frac{b^k}a\right)^n \sin{b^nx} &\quad& 0\leq k~\text{even}\\ \sum_{n=1}^{\infty} (-1)^\frac{k-1}{2} \left(\frac{b^k}a\right)^n \cos{b^nx} &\quad& 1\leq k~\text{odd} \end{matrix} \right. 
- \left|\frac{b^{kn}}{a^n}\right|^\frac1n\leq\frac{b^k}a<\frac{a^{k/N}}a<1 

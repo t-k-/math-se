@@ -1,35 +1,0 @@
-X_{1:n}
-\eta
-(X_1, ... , X_n)
-X_i\sim EXP(1,\eta
-EXP(\theta,\eta):
-(1/\theta)\exp(-(x-\eta)/\theta)
-x>\eta
-\theta=1
-f(x_1,...,x_n;\eta)
-g(s,\eta)h(x_1,...,x_n)
-S
-X_{1:n}
-g(s;\eta)
-x_1,...,x_n
-s
-h(x_1,...,x_n)
-\theta
-f(x_1,...,x_n;\eta)=\exp(n\eta)\exp(-\sum_{i=1}^n x_i)
-\sum_{i=1}^n x_{i:n}
-x_{1:n}
-x_i
-X \sim \mathrm{Exp}(1,\eta)
-X
-\Ind{A}
-A
-\newcommand{\Ind}[1]{\mathbf{1}_{(#1)}} f(x) \equiv f_X(x) = e^{-(x-\eta)}\Ind{x\geq\eta} \>, 
-X_1, X_2, \ldots
-\Ind{x_i \geq \eta}
-\Ind{\min_i x_i \geq \eta}
- \prod_{i=1}^n f(x_i) = \prod_{i=1}^n e^{-(x_i - \eta)} \Ind{x_i \geq \eta} = e^{-\sum_{i=1}^n x_i} e^{n \eta} \prod_{i=1}^n \Ind{x_i \geq \eta} = e^{-\sum_{i=1}^n x_i} e^{n \eta} \Ind{\min_i x_i \geq \eta} \> , 
-h(x_1,\ldots,x_n) = \exp(-\sum_i x_i)
-g(s,\eta) = e^{n \eta} \Ind{s \geq \eta}
-s = \min_i x_i
-S = \min_{1 \leq i \leq n} X_i
-\eta

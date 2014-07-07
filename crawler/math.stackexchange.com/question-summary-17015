@@ -1,15 +1,0 @@
-f(x;\theta)=(1/\theta)e^{-x/\theta}
-x \geq 0
-\theta > 0
-\theta
- \int {f(x;\theta )dx}  =  - e^{ - x/\theta }  + C
-F(x): = \int_0^x {f(u;\theta )du}  = 1 - e^{ - x/\theta } 
-x \geq 0
-\int_a^b {f(x;\theta )dx}  = F(b) - F(a) = e^{ - a/\theta }  - e^{ - b/\theta } 
-\int_0^\infty  {xf(x;\theta )dx}  = \theta 
-n
-n \in \mathbb{N}
-\Gamma
-{\rm Var}(X)={\rm E}(X^2)-{\rm E}^2(X)
-\mu'_2 - (\mu'_1)^2 = 2 \theta^2 - \theta^2 = \theta^2
- \mu'_n := \int_0^\infty  {x^n f(x;\theta )dx}  = \theta ^n \int_0^\infty  {x^n e^{ - x} dx}  = \theta ^n \Gamma (n + 1) = \theta ^n n!, 

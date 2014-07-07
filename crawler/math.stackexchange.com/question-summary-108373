@@ -1,45 +1,0 @@
-S
-d\left(\mathbf{x},S\right)=\displaystyle\min_{\mathbf{y}\in{S}}\|\mathbf{x}-\mathbf{y}\|
-f\left(\theta\mathbf{x} + \left(1-\theta\right)\mathbf{y}\right)\leq\theta f\left(\mathbf{x}\right) + \left(1-\theta\right)f\left(\mathbf{y}\right),\,\,\forall \mathbf{x}\in \mathbb{R}^{n},\,\,\mathbf{y}\in{\mathrm{dom}\left(f\right)}
-\min_{\mathbf{z}\in{S}}\,\|\left(\theta\mathbf{x} + \left(1-\theta\right)\mathbf{y}\right)-\mathbf{z}\|\leq\theta\cdot\min_{\mathbf{y}\in{S}}\,\|\mathbf{x}-\mathbf{y}\| + \left(1-\theta\right)\cdot\min_{\mathbf{z}\in{S}}\,\|\mathbf{y}-\mathbf{z}\|,\,\,\,\theta\in\left[0,1\right]
-\theta=0
-\min_{\mathbf{z}\in{S}}\,\|\mathbf{y}-\mathbf{z}\|\leq\min_{\mathbf{z}\in{S}}\,\|\mathbf{y}-\mathbf{z}\|, 
-\theta=1
-\min_{\mathbf{z}\in{S}}\,\|\mathbf{x}-\mathbf{z}\|\leq\min_{\mathbf{y}\in{S}}\,\|\mathbf{x}-\mathbf{y}\|.
-d
-d(x,S)=D(x)
-D(x)=\inf\limits_{u\in S}d(x,u)
-D
-x
-y
-\mathbb R^n
-\theta
-[0,1]
-z=\theta x+(1-\theta)y
-u
-S
-v
-S
-\theta u+(1-\theta)v
-S
-S
-D(z)\leqslant\|w\|
-w=z-(\theta u+(1-\theta)v)
-w=\theta(x-u)+(1-\theta)(y-v)
-\|w\|\leqslant(\ast)
-(\ast)=\|\theta(x-u)\|+\|(1-\theta)(y-v)\|
-(\ast)=\theta\|x-u\|+(1-\theta)\|y-v\|
-u
-v
-S
-\inf\limits_{(u,v)\in S\times S}a(u)+b(v)=\inf\limits_{u\in S}a(u)+\inf\limits_{v\in S}b(v)
-a
-b
-D(z)\leqslant\theta D(x)+(1-\theta)D(y)
- D(z)\leqslant\theta\|x-u\|+(1-\theta)\|y-v\|, 
- D(z)\leqslant\inf\limits_{(u,v)\in S\times S}\theta\|x-u\|+(1-\theta)\|y-v\|. 
- D(z)\leqslant\inf\limits_{u\in S}\theta\|x-u\|+\inf\limits_{v\in S}(1-\theta)\|y-v\|=\theta\inf\limits_{u\in S}\|x-u\|+(1-\theta)\inf\limits_{v\in S}\|y-v\|, 
-f:\mathbb{R}^{n}\rightarrow\mathbb{R}
-\theta f\left(\mathbf{x}\right) + \left(1-\theta\right)f\left(\mathbf{y}\right)
-f
-f\left(\theta\mathbf{x} + \left(1-\theta\right)\mathbf{y}\right)\leq f\left(\theta\mathbf{x}\right) + f\left(\left(1-\theta\right)\mathbf{y}\right).

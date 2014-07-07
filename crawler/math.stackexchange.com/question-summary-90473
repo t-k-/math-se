@@ -1,34 +1,0 @@
-X_1,\ldots,X_{n}
-S_k = X_1+\cdots+ X_k
-\mathbb{E}(S_k)=k
-Y_k=|S_k-k|
-Y>t
-t>0
-\Pr(Y>t)
-Z=\max_{k=1}^n Y_k
-\Pr(Z>t)
-t>0
-\mathbb {E} (Z)
-U_k=X_k-1
-(U_k)_k
-n
-S_n-n=\sum\limits_{k=1}^nU_k
-\sqrt{n}
-\mathrm E(U_1^2)=1
-x
-\mathrm P(Y_n\geqslant x\sqrt{n})\to\mathrm P(W_1\geqslant x)
-n\to\infty
-W_1
-(W_n(t))_{0\leqslant t\leqslant 1}
-(W_t)_{0\leqslant t\leqslant 1}
-W_n(k/n)=(S_k-k)/\sqrt{n}
-0\leqslant k\leqslant n
-(W_n(t))_{0\leqslant t\leqslant 1}
-\mathrm P(Z_n\geqslant x\sqrt{n})\to\mathrm P(\tau_x\leqslant 1)
-n\to\infty
-\tau_x=\inf\{t\geqslant0\ ;\, |W_t|\geqslant x\}
-S_k
-f(x)=\frac{x^{k-1}}{(k-1)!}e^{-x}\mathbf 1_{x\geq 0}
-P(S_k-k>t)=e^{-(t+k)}\sum_{j=0}^{k-1}\frac{(t+k)^j}{j!},
-P(S_k<k-t)=\begin{cases} 1-e^{k-t}\sum_{j=0}^{k-1}\frac{(t-j)^j}{j!}&\mbox{ if } t \leq k\\  0&\mbox{ otherwise}, \end{cases}
-P(|S_k-k|>t)=\begin{cases} e^{-(t+k)}\sum_{j=0}^{k-1}\frac{(t+k)^j}{j!}+1-e^{k-t}\sum_{j=0}^{k-1}\frac{(t-j)^j}{j!}&\mbox{ if } t \leq k\\  e^{-(t+k)}\sum_{j=0}^{k-1}\frac{(t+k)^j}{j!}&\mbox{ otherwise}. \end{cases}

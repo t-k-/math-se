@@ -1,7 +1,0 @@
-k
-k
-X_1
-X_2
-\mathbb{E}[\max(X_1, X_2)]
-\mathbb{E}[\min(X_1, X_2)]
- \begin{eqnarray}    \mathbb{E}\left( \vert X_2- X_1\vert \right) &=& \sum_{n_1=1}^k \sum_{n_2=1}^k \mathbb{P}(X_1=n_1) \mathbb{P}(X_2=n_2) \vert n_2 - n_1 \vert \\ &=&     2 \sum_{n_2=1}^k \sum_{n_1=1}^{n_2-1} \mathbb{P}(X_1=n_1) \mathbb{P}(X_2=n_2) (n_2 - n_1 ) \\ &=&     2 \sum_{n_2=1}^k \sum_{n_1=1}^{n_2-1} \mathbb{P}(X_1=n_1) \mathbb{P}(X_2=n_2-n_1) n_1   \end{eqnarray} 

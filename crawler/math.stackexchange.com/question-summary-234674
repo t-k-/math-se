@@ -1,8 +1,0 @@
-\text{MLE}  \cdot \text{pdf}
- \frac{1}{\bar x} 
- \frac{1}{x} 
-\{x_1,x_2,\ldots,x_n\}
-\lambda = \frac{n}{\sum_{k=1}^n x_k}
-     f_X(x) = \lambda \mathrm{e}^{-\lambda x} [x > 0] 
-   n \log \lambda - \lambda \sum_{k=1}^n x_k 
-\begin{eqnarray}   \mathbb{E}\left(\frac{n}{X_1+X_2+\cdots+X_n}\right) &=& n \mathbb{E}\left(\frac{1}{X_1+X_2+\cdots+X_n}\right) \\ &=& n \mathbb{E}\left( \int_0^\infty \exp\left(-t(X_1+\cdots+X_n)\right) \mathrm{d}t \right) \\ &=& n \int_0^\infty \mathbb{E}\left(  \exp\left(-t(X_1+\cdots+X_n)\right)  \right) \mathrm{d}t  \\ &\stackrel{\text{indep.}}{=}& n \int_0^\infty \left(\mathbb{E}\left(  \exp\left(-t  X_1\right)  \right)\right)^n \mathrm{d}t \\ &=&  n \int_0^\infty \left(\frac{\lambda}{t+\lambda}\right)^n \mathrm{d}t = \left. -\frac{n}{n-1} \frac{\lambda^n}{(t+\lambda)^{n-1}} \right|_{0}^\infty \\   &=& \frac{n}{n-1} \lambda \end{eqnarray} 

@@ -1,64 +1,0 @@
-p \in \mathbf{N}
-\sum_{i=0}^p (-1)^{p-i} {p \choose i} i^j=0 \textrm{ for } j \in \{0,\ldots,p-1\},
-\sum_{i=0}^p (-1)^{p-i} {p \choose i} i^p=p!
-0^0:=1
-0^j x_0+1^j x_1+\ldots + p^j x_p=p! \delta_{j,p}
-j=0, \ldots,p
-x_i=(-1)^{p-i} {p \choose i}
-i=0,\ldots, p
-\{1,\dots,j\}
-\{1,\dots, p\}
-p!
-j=p
-j<p
-1\leq i\leq p
-A_i:=\{\text{the functions from }\{1,\dots,j\}\text{ to }\{1,\dots,p\}\text{ which doesn't contain }\; i\;\text{ in their image}\}.
-\begin{align} |A_i|&=(p-1)^j\\ |A_i\cap A_l|&=(p-2)^j\\ &\vdots&\\ \left|\bigcap_{i=1}^p A_i\right|&=0.\end{align}
-|\overline{A_1}\cap\overline{A_2}\cap\dots\cap\overline{A_p}|=|\overline{A_1\cup A_2 \cup\dots\cup A_p}|= p^j-|A_1\cup A_2 \cup\dots\cup A_p|= 
-p^j-\sum_{i=1}^p\left((-1)^{i+1}\sum_{1\leq j_1<\dots<j_i\leq p}\left|\bigcap_{k=1}^i A_{j_k}\right|\right)=\sum_{k=0}^p(-1)^{p+k}\binom{p}{k}k^j.
-D(f(x)) = \frac{\mathrm d}{\mathrm dx}(x\cdot f(x)) = f(x) + x\cdot\frac{\mathrm df}{\mathrm dx}.
-D(x^m)=m\cdot x^m,
-\sum_{k=0}^{p}(-1)^k \binom{p}{k}\,k^j = \left.D^j\left((1-x)^p\right)\right|_{x=1}.
-\mathrm e^x-1=x+o(x)
-x^p
-S_p(x)
-1
-s_{p,p}=p!
-s_{p+j,p}
-j
-j
-\dfrac{s_{p+j,p}}{(p+j)!}
-p
-j
- \frac{s_{p+1,p}}{(p+1)!}=\frac{p}2,\qquad \frac{s_{p+2,p}}{(p+2)!}=\frac{p(3p+1)}{24}, 
-\sum_{j=0}^p (-1)^{p-j} \binom{p}{j} j^k=\left.\Delta^p x^k\right\vert_{x=0}
-x^k=\sum_{j=0}^k \left\{k \atop j\right\} x^{(j)}
-\Delta^p x^k=\sum_{j=0}^k \left\{k \atop j\right\}\Delta^p x^{(j)}
-\Delta^p x^{(k)}=\left(\prod_{j=0}^{p-1} (k-j)\right)x^{(k-p)}
-k < p
-\Delta^p x^{(k)}=0
-k < p
-k=p
-p!
-x^{(0)}=1
-\Delta^p x^{(p)}=p!
-x^k
-x^{(j)}
-\left\{k \atop k\right\}=1
-\displaystyle\binom{p}{i}\binom{i}{k}=\binom{p}{k}\binom{p-k}{i-k}
-1
-k=p
-0
-k<p
-\displaystyle T_pf=\sum_i(-1)^i\binom{p}{i}f(i)
-p
- \begin{align} \sum_i(-1)^i\binom{p}{i}\binom{i}{k} &=\sum_i(-1)^i\binom{p}{k}\binom{p-k}{i-k}\\ &=\binom{p}{k}(1-1)^{p-k}\\ &=\binom{p}{k}0^{p-k}\tag{1} \end{align} 
-\displaystyle k!\binom{i}{k}
-k
-i
-1
-a_{jk}
-(1)
-(2)
- i^j=j!\binom{i}{j}+\sum_{k=0}^{j-1}a_{jk} k!\binom{i}{k}\tag{2} 
- \begin{align} \sum_i(-1)^i\binom{p}{i}i^j &=\sum_i(-1)^i\binom{p}{i}\left(j!\binom{i}{j}+\sum_{k=0}^{j-1}a_k k!\binom{i}{k}\right)\\ &=j!\binom{p}{j}0^{p-j}+\sum_{k=0}^{j-1}a_kk!\binom{p}{k}0^{p-k}\\ &=\left\{\begin{array}{rl}0&\text{if }j<p\\p!&\text{if }j=p\end{array}\right.\tag{3} \end{align} 

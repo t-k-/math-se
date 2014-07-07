@@ -1,12 +1,0 @@
-p(x)=1\cdot x^3+bx^2+cx+d
-p(x)
-P=\pmatrix{1&b&c&d&0&0&0\cr0&1&b&c&d&0&0\cr0&0&1&b&c&d&0\cr0&0&0&1&b&c&d}
-P'=\pmatrix{1&0&0&0&x_1&x_2&x_3\cr0&1&0&0&x_4&x_5&x_6\cr0&0&1&0&x_7&x_8&x_9\cr0&0&0&1&x_{10}&x_{11}&x_{12}}
-P'=\frac{P}{p(x)}
-P'
-P
-P'=\frac{P}{p(x)}
-P
-AX=B
- \left(\begin{array}{cccc} 1 & - b & b^2 - c &  - b^3 + 2\, c\, b - d\\ 0 & 1 & - b & b^2 - c\\ 0 & 0 & 1 & - b\\ 0 & 0 & 0 & 1 \end{array}\right) 
- \left(\begin{array}{cccc|ccc} 1 & 0 & 0 & 0 &  - b^4 + 3\, b^2\, c - 2\, d\, b - c^2 & - \left(2\, c - b^2\right)\, \left(d - b\, c\right) & - d\, \left(b^3 - 2\, c\, b + d\right)\\ 0 & 1 & 0 & 0 & b^3 - 2\, c\, b + d & b^2\, c - d\, b - c^2 & - d\, \left(c - b^2\right)\\ 0 & 0 & 1 & 0 & c - b^2 & d - b\, c & - b\, d\\ 0 & 0 & 0 & 1 & b & c & d \end{array}\right) 

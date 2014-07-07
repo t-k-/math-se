@@ -1,9 +1,0 @@
- \int_{-\sqrt{x}}^{\sqrt{x}}\frac{r\tanh(ar)}{\sqrt{x-r^{2}}}dr=2\int_{0}^{\sqrt{x}}\frac{r\tanh(ar)}{\sqrt{x-r^{2}}}dr
-a
- \tanh(x) 
-x
- \tanh(x) \sim 1+ \frac{1}{x} 
-\tanh
-\begin{align} \tanh{a r} &= \frac{1-e^{-2 a r}}{1+e^{-2 a r}}\\ &= (1-e^{-2 a r}) \sum_{k=0}^{\infty} (-1)^k e^{-2 k a r} \\ &= \sum_{k=0}^{\infty} (-1)^k (e^{-2 k a r}-e^{-2 (k+1)a r}) \end{align}
-\begin{align}\int_{0}^{\sqrt{x}}dr \:\frac{r}{\sqrt{x-r^{2}}} \sum_{k=0}^{\infty} (-1)^k (e^{-2 k a r}-e^{-2 (k+1)a r}) &= \sum_{k=0}^{\infty} (-1)^k \int_{0}^{\sqrt{x}}dr \:\frac{r}{\sqrt{x-r^{2}}} (e^{-2 k a r}-e^{-2 (k+1)a r}) \\ \end{align}
-\int_{0}^{\sqrt{x}}dr \:\frac{r}{\sqrt{x-r^{2}}} (e^{-2 k a r}-e^{-2 (k+1)a r}) = \frac{1}{2} \pi  \sqrt{x} (\pmb{L}_{-1}(2 a \sqrt{x} k)-\pmb{L}_{-1}(2 a \sqrt{x} (k+1))-I_1(2 a \sqrt{x} k)+I_1(2 a \sqrt{x} (k+1)))

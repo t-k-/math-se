@@ -1,21 +1,0 @@
-\mathbf{b}\in\mathbb{R}^{M\times1}
-\mathbf{X}\in\mathbb{R}^{M\times N}
-\mathbf{C}\in\mathbb{R}^{N\times N}
-\mathbf{C}
- \frac{\partial\,\mathbf{b}^\mathrm{T}(\mathbf{X}\mathbf{C}\mathbf{X}^\mathrm{T})^{-1}\mathbf{b}}{\partial\,\mathbf{X}} 
-D = X C X^T
-\frac{\partial\,D^{-1}}{\partial \, x_{ij}} = - D^{-1} \frac{\partial\,D}{\partial \, x_{ij}} D^{-1}  
- \frac{\partial \,( X C X^T )}{\partial \, x_{ij}} = X C J^{ij} + J^{ji} C X^T 
-J^{ij}
-(i,j)
- \frac{\partial \, b^T (X C X^T)^{-1} b }{\partial \, x_{ij}} =  - b^T D^{-1} (X C J^{ij} + J^{ji} C X^T ) D^{-1} b = -2 u^T X C J^{ij} u  
-u= D^{-1}b
-C
-D
- u^T A J^{ij} B u =  A^T u u^T B^T|_{i,j}
- -2 C X^T u u^T |_{i,j}
-\frac{\partial \, b^T (X C X^T)^{-1} b }{\partial \, X}  = -2 C X^T u u^T =  - 2 C  X^T (X C X^T)^{-1} b \, b^T (X C X^T)^{-1}  
- \frac{\partial (XCX^T)}{\partial X} =XCJ^{ji} + J^{ij}CX^T
--2CX^T uu^T
-(M\times N)
-(M\times N)

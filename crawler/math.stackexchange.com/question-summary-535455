@@ -1,9 +1,0 @@
-\frac{\partial}{\partial x}a^{\top}XB(I+BXB)^{-1}B^{\top}X^{\top}a
-X \in \mathbb{R}^{n\times n}
-B \in \mathbb{R}^{n\times n}
-I \in \mathbb{R}^{n\times n}
-a \in \mathbb{R}^{n}
-x
-X
-\begin{align}&(a^TXB(I+BXB)^{-1}B^TX^Ta)'\\ =&a^TX'B(I+BXB)^{-1}B^TX^Ta+a^TXB[(I+BXB)^{-1}]'B^TX^Ta+a^TXB(I+BXB)^{-1}B^TX'^Ta \end{align}
-\begin{align}[(I+BXB)^{-1}]'&=-(I+BXB)^{-1}(I+BXB)'(I+BXB)^{-1}\\& =-(I+BXB)^{-1}BX'B(I+BXB)^{-1}\end{align}

@@ -1,22 +1,0 @@
-{a_n}
-a_1=a_0=1
-a_{n+2}=a_n+a_{n+1}
-n \geq 0
-f(x)=\sum_{0}^{\infty}a_nx^n
-f(x)= \frac{1}{1-x-x^2}
-R=\lim_{n\to \infty} |\frac {a_n}{a_{n+1}}| 
-f(x)
-\dfrac{a_{n+1}}{a_n} \to \phi
-\phi=\dfrac{1+\sqrt 5}{2}
-\limsup \dfrac{a_{n+1}}{a_n}=\lim \dfrac{a_{n+1}}{a_n}=\phi
-a_n=a_{n-1}+a_{n-2},~~ n\ge2
-a_1=1
-\begin{align*} f(x) & = \sum _{n=0}^ \infty {a_n x^n} \&=1+a_1x+\sum_{n=2}^\infty(a_{n-1}+a_{n-2})x^n\\&=1+a_1x+\sum_{n=2}^\infty{a_{n-1}x^n+\sum_{n=2}^\infty}a_{n-2}x^n\\&=1+a_1x+x\sum_{n-1=1}^\infty{a_{n-1}x^{n-1}}+x^2\sum_{n-2=0}^\infty{a_{n-2}x^{n-2}}\\&=1+x+x(f(x)-1)+x^2f(x) ~~~\text{as $a_1=1$}\\&=1+xf(x)+x^2f(x)\end{align*}
-S_N
-S_N = a_Nx^N + S_{N-1} = a_Nx^N + a_{N-1}x^{N-1} + S_{N-2}
-S_N
-\lim_{N \to \infty} S_N
-x
-\begin{align} S_N := \sum_{n=0}^N a_n x^n &= 1 +x + \sum_{n =2}^N a_n x^n \\ &= 1+x + \sum_{n=2}^N(a_{n-2} + a_{n-1})x^n \\ &= 1+ x + x^2\sum_{n=2}^N a_{n-2}x^{n-2} + x\sum_{n=2}^Na_{n-1} x^{n-1} \\ &= 1 + x + x^2 \sum_{n=0}^{N-2} a_n x^n + x \cdot \sum_{n=1}^{N-1} a_n x^n \\ &= 1 + x + x^2 S_{N-2} + x\sum_{n=0}^{N-1} a_n x^n - x \\ &= 1 + x^2 S_{N-2} + x S_{N-1}. \end{align}
- S_N = 1 + x^2 (S_N - a_N x^N - a_{N-1}x^{N-1}) + x(S_N - a_Nx^N) 
- S_N = \frac{1 - a_Nx^{N+2} - a_{N-1}x^{N+1} - a_Nx^{N+1}}{1 - x - x^2}. 

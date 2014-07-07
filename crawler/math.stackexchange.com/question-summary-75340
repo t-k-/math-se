@@ -1,12 +1,0 @@
-d_i
-d_1, d_2, ..., d_k, \quad k \le 100
- n = \sum_{i=1}^k d_i 
-[n/2] \neq n/2
-1 \le m \le 100
-w_1 < w_2 < \cdots < w_m
-k_1, \ldots, k_m
-f(W; x_1, x_2, \ldots, x_m)
-f(W;\quad 0, \ldots, 0, x_t, x_{t+1},\ldots, x_m) =  \bigvee_{i=1}^{t} f(W - i* w_t;\quad0, \ldots, 0, 0, x_{t+1},\ldots, x_m)
-f(W; x_1, \ldots, x_m) = 0 \quad\text{ if }\quad \sum_{i=1}^{m} x_i\cdot w_i < W
-f(W; x_1, \ldots, x_m) = 1 \quad\text{ if }\quad \sum_{i=1}^{m} x_i\cdot w_i = W
-f\left(\frac{n}{2}; k_1, k_2, \ldots, k_m\right) = \text{true}.

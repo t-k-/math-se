@@ -1,6 +1,0 @@
-E\left[\frac{1}{X+1}\right] = \frac{1}{(n+1)p}(1-(1-p)^{n+1})
- \begin{align} E\left[\frac{1}{X+1}\right] & = \sum\limits_{i=0}^n \frac{n!}{(n-i)!(i+1)!} p^i (1-p)^{n-i} \\[6pt] & = \frac{1}{(n+1)p} \sum\limits_{i=0}^n \frac{(n+1)!}{(n-i)!(i+1)!} p^{i+1} (1-p)^{n-i} \\[6pt] & = \frac{1}{(n+1)p} \sum\limits_{i=0}^n \frac{(n+1)!}{(n-i)!(i+1)!} p^{i+1} (1-p)^{n-i} \\[6pt] & = \frac{1}{(n+1)p}\sum\limits_{i=1}^{n+1} \frac{(n+1)!}{(n+1-i)!(i)!} p^{i} (1-p)^{n+1-i} \\[6pt] & = \frac{1}{(n+1)p}(1-(1-p)^{n+1}) \end{align} 
-\sum\limits_{i=1}^{n+1}a_i=(\sum\limits_{i=0}^{n+1}a_i)-a_0
-a_i=\binom{n+1}{i}p^i(1-p)^{n+1-i}.
-\sum\limits_{i=0}^{n+1} \binom{n+1}{i}p^i(1-p)^{n+1-i}=(p+(1-p))^{n+1}=1
-a_0=(1-p)^{n+1}.

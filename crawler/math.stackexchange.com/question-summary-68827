@@ -1,19 +1,0 @@
-[\sigma_n (f)](x) - f(x) = \frac1{2\pi}\int_{-\pi}^\pi [f(x+t) - f(x)]K_n(t)\;\mathrm dt.
-K_n
-f
-2\pi
-L_1
-\sigma_n (f)
-f*K_n
-[\sigma_n (f)](x) - f(x) = \frac1{2\pi}\int_{-\pi}^\pi f(x+t)K_n (t)\;\mathrm dt - f(x)
-K_{n}
-K_{n}
-\sigma_n (f)
-\frac1{n}\sum\limits_{j=0}^{n-1}S_j (f)
-S_j (f) = \sum\limits_{m=-k}^k\widehat{f}(m) e^{imt}
-j
-f
-D_k(t) = \sum_{n=-k}^{k} \exp(i t n)
-    K_n(t) = \frac{1}{n} \sum_{k=0}^{n-1} D_k(t) 
-\int_{-\pi}^\pi  D_k (t) \mathrm{d} t = \sum_{n=-k}^{k} \int_{-\pi}^\pi {\rm e}^{i t n} \mathrm{d} t = \sum_{n=-k}^{k} ( 2\pi \delta_{n,0} ) = 2 \pi
-   \frac{1}{2\pi}\int_{-\pi}^\pi K_n(t) \mathrm{d} t = \frac{1}{2 \pi n} \int_{-\pi}^\pi \sum_{k=0}^{n-1} D_k (t) \mathrm{d} t =  \frac{1}{2 \pi n} \sum_{k=0}^{n-1} \int_{-\pi}^\pi  D_k (t) \mathrm{d} t = \frac{1}{2 \pi n} \sum_{k=0}^{n-1}  (2 \pi) = 1 

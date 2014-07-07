@@ -1,26 +1,0 @@
-n
-\infty
-c
- \begin{align} a_1 &=\frac{1}{c} \int _0^c\frac{x_1 }{1+x_1}\;dx_1 \\  \\ a_2 & =\frac{1}{c^2 } \int _0^c\int _0^c\frac{x_1 +x_2 }{2+x_1 +x_2 }\;dx_2\;dx_1  \\  \\ a_3 & =\frac{1}{c^3 } \int _0^c\int _0^c\int _0^c\frac{x_1 +x_2 +x_3 }{3+x_1 +x_2 +x_3 } \;dx_3\;dx_2\;dx_1 \end{align}  
-a_n
-\dots
-f
-g
- \begin{align} a_1 &=\frac{1}{c} \int _0^c\frac{f(x_1) }{g(x_1)}\;dx_1 \\  \\ a_2 & =\frac{1}{c^2 } \int _0^c\int _0^c\frac{f(x_1) +f(x_2) }{g(x_1) +g(x_2) }\;dx_2\;dx_1  \\  \\ a_3 & =\frac{1}{c^3 } \int _0^c\int _0^c\int _0^c\frac{f(x_1) +f(x_2) +f(x_3) }{g(x_1) +g(x_2) +g(x_3) } \;dx_3\;dx_2\;dx_1 \end{align}  
-a_n
-\dots
-f
-g
-S_n
-n
-(0,c)
-a_n=\mathrm E\left(\dfrac{S_n}{n+S_n}\right)
-\dfrac{S_n}n\to\dfrac{c}2
-\lim\limits_{n\to\infty} a_n=\dfrac{c/2}{1+c/2}=\dfrac{c}{2+c}.
-g\gt0
-(0,c)
-R_n
-|f|\leqslant Ag
-A
-(R_n)_{n\geqslant1}
-\lim\limits_{n\to\infty} a_n=\lim\limits_{n\to\infty}\mathrm E(R_n)=\mathrm E(\lim\limits_{n\to\infty} R_n)=\dfrac{\mathrm E(f(X_1))}{\mathrm E(g(X_1))}=\dfrac{\displaystyle\int_0^cf(x)\mathrm dx}{\displaystyle\int_0^cg(x)\mathrm dx}.

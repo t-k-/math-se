@@ -1,22 +1,0 @@
-(M \times M)
- \begin{array}{ccccccc} p_{11} & p_{12}&0&\cdots&\cdots&\cdots&0\\ p_{21} & p_{22}&p_{23}&0&\cdots&\cdots&0\\ 0 & p_{32}&p_{33}&p_{34}&0&\cdots&0\\ \cdots&\cdots&\cdots&\cdots&\cdots&\cdots&0\\ 0&0&0&0&p_{M-1,M-2}&p_{M-1,M-1}&p_{M-1,M}\\ 0&0&0&0&0&0&1 \end{array} 
-m_{1M}
-1
- \begin{eqnarray} &m_{1M}=1+p_{11}m_{1M}+p_{12}m_{2M} \\ m_{2M}&=1+p_{21}m_{1M}+p_{22}m_{2M} +p_{33}m_{3M} \end{eqnarray} 
-m_{1M}
-O(n)
-m_k
-m_{k,M}
-m_k=a_k+b_k m_{k-1}
-a_M=0
-b_M=0
-m_k=1+p_{k,k-1}m_{k-1}+p_{k,k}m_k+p_{k,k+1}m_{k+1}
-a_k =  \frac{1+p_{k,k+1}a_{k+1}}{1- p_{k,k} -p_{k,k+1}b_{k+1}}
-b_k =  \frac{p_{k,k-1}}{1- p_{k,k} -p_{k,k+1}b_{k+1}}
-a_2
-b_2
-m_1=1+p_{1,1}m_1+p_{1,2}m_2
-b_1=0
-a_1
-m_1=\frac{1+p_{1,2}a_2}{1-p_{1,1}-p_{1,2}b_2}
-m_k

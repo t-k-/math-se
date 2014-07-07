@@ -1,13 +1,0 @@
-\Phi_X(\omega) = \exp(-\omega^2/2)
-\mathcal{F}^\prime(\omega)
-\mathcal{F}^\prime(\omega) = - \omega \mathcal{F}(\omega)
-\mathcal{F}(\omega) = c \exp\left( - \frac{\omega^2}{2} \right)
-\mathcal{F}(0)=1
- \begin{eqnarray}   \mathcal{F}(\omega) = \int_{-\infty}^\infty \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \mathrm{e}^{j \omega x} \mathrm{d} x &=& \int_{0}^\infty \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \mathrm{e}^{j \omega x} \mathrm{d} x + \int_{-\infty}^0 \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \mathrm{e}^{j \omega x} \mathrm{d} x \\    &=& \int_{0}^\infty \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \mathrm{e}^{j \omega x} \mathrm{d} x + \int_{0}^{\infty} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \mathrm{e}^{-j \omega x} \mathrm{d} x \\    &=&  2 \int_{0}^\infty \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{x^2}{2}} \cos(\omega x) \mathrm{d} x   \end{eqnarray} 
-\begin{eqnarray}    \mathcal{F}^\prime(\omega) &=& -\frac{2}{\sqrt{2\pi}} \int_0^\infty \mathrm{e}^{-\frac{x^2}{2}} x \sin(\omega x) \mathrm{d} x = \frac{2}{\sqrt{2\pi}} \int_0^\infty \sin(\omega x) \mathrm{d} \left( \mathrm{e}^{-\frac{x^2}{2}} \right) \\    &=& \frac{2}{\sqrt{2\pi}} \left. \mathrm{e}^{-\frac{x^2}{2}} \sin(\omega x) \right|_0^\infty - \frac{2}{\sqrt{2\pi}} \int_0^\infty \mathrm{e}^{-\frac{x^2}{2}} \omega \cos(\omega x) \mathrm{d} x \\      &=& - \omega \mathcal{F}(\omega)    \end{eqnarray} 
-\mathcal{C}
- -L \to L \to L - j \omega \to -L - j \omega \to -L
-\mathcal{C}
- \begin{eqnarray}   I_L - \mathcal{I}_L &=&\left(\int_{-L-j \omega}^{L-j \omega} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z - \int_{-L}^{L} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z\right) \\ &=& -\int_\mathcal{C} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z - \int_{L}^{L-j \omega} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z - \int_{-L-j \omega}^{-L} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z \end{eqnarray} 
-    I-1 = \lim_{L \to \infty} (I_L-\mathcal{I}_L) = \lim_{L \to \infty} \left( - \int_{L}^{L-j \omega} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z - \int_{-L-j \omega}^{-L} \frac{1}{\sqrt{2\pi}} \mathrm{e}^{-\frac{z^2}{2}  } \mathrm{d} z \right) 
-  \lim_{L\to\infty} \left| \mathrm{e}^{-\frac{-(-L - j \omega t)^2}{2}} \right| =   \lim_{L\to\infty} \left| \mathrm{e}^{-\frac{-(L^2 + \omega^2 t^2)}{2}} \right| =0. 

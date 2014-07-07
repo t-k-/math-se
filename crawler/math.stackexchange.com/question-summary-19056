@@ -1,12 +1,0 @@
-\sum_{m=2}^{10^6}\ \sum_{n=1}^{\infty}\dfrac{m^{\{n\}}+m^{-{\{n\}}}}{m^n}
-\{n\}=\text{ integer nearest to the } \sqrt{n} 
-\left\{ n \right\} = t
-H \left( k \right) := \sum_{i = 1}^k \frac{1}{i}
- S \left( T \right) := \sum_{m = 2}^T \sum_{n = 1}^{\infty} \frac{m^{\left\{ n \right\}} + m^{- \left\{ n \right\}}}{m^n} . 
- \sqrt{n} - \frac{1}{2} < t < \sqrt{n} + \frac{1}{2} \Leftrightarrow t^2 - t + 1 \leq n \leq t^2 + t 
- S \left( T \right) = \sum_{m = 2}^T \sum_{t = 1}^{\infty} \sum_{n = t^2 - t + 1}^{t^2+t} \frac{m^t + m^{-t}}{m^n} = \sum_{m = 2}^T \sum_{t = 1}^{\infty} \frac{\left(m^t + m^{-t} \right) \left(m^{- t^2 + t - 1} - m^{-t^2 - t - 1} \right) m}{m - 1} . 
- S \left( T \right) = \sum_{m = 2}^T \frac{m}{m-1} \sum_{t = 1}^{\infty} \left( m^{- \left( t - 1 \right)^2} - m^{- \left( t + 1 \right)^2} \right), 
- S \left( T \right) = \sum_{m = 2}^T \frac{m}{m-1} \left( 1 + \frac{1}{m} \right) = \sum_{m = 2}^T \left( 1 + \frac{2}{m - 1} \right) = T - 1 + 2 H(T - 1), 
-n
-1
-100

@@ -1,20 +1,0 @@
-f: \mathbb{R}^D \rightarrow \mathbb{R}
-L: \mathbb{R}^D \times \mathbb{R}_+ \rightarrow \mathbb{R}
-L(x;t) = \int_{\xi\in\mathbb{R}^N}f(x - \xi)g(\xi)d \xi
-g: \mathbb{R}^N \times \mathbb{R}_+ \rightarrow \mathbb{R}
-g(x;t) = \frac{1}{(2 \pi \sigma^2)^{\frac{D}{2}}} exp{\frac{-(x_1^2+\cdots x_D^2)}{2 t}}
-\delta_v
-v
-\tilde{L}_{vv} = L_v^2 L_{vv} = L_x^2 L_xx + 2 L_x L_y L_{xy} + L_y^2 L_{yy} = 0
-\tilde{L}_{vvv} = L_v^3 L_{vvv} = L_x^3 L_xxx + 3 L_x^2 L_y L_{xxy} + 3 L_x L_y^2 L_{xyy} + L_y^3 L_{yyy} < 0
-g
-g: \mathbb{R}^N \times \mathbb{R}_+ \rightarrow \mathbb{R}
-g(x;t) = \frac{1}{(2 \pi \sigma^2)^{\frac{D}{2}}} exp{\frac{-(x_1^2+\cdots x_D^2)}{2 t}}
-N + 1
-D + 1
-N=D=2
-L(x,y,t): \mathbb{R}^2\times \mathbb{R^+} \to \mathbb{R}
-t
-\|\nabla L\|^2
-\nabla L
-\begin{align*}\nabla( \nabla L \cdot \nabla L) \cdot \nabla L &= 0\\ \nabla(L_x^2 + L_y^2) \cdot (L_x,L_y) &= 0\\ (2L_x L_{xx} + 2L_y L_{xy},\ 2L_y L_{yy} + 2L_{x}L_{xy})\cdot(L_x,L_y) &= 0\\ L_x^2 L_{xx} + L_xL_y L_{xy} + L_y^2 L_{yy} + L_xL_yL_{xy}&= 0, \end{align*}

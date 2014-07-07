@@ -1,13 +1,0 @@
-\int_0^{y_c} e^{-y} e^{-a e^{-y}}y^2 \operatorname dy
-u = e^{-y}
-\operatorname du = -e^{-y}dy = -u\operatorname dy
-y = -\ln u
--\int_1^{e^{-y_c}} u e^{-a u}(\ln u)^2 \frac{\operatorname du}{u} = -\int_1^{e^{-y_c}} e^{-a u}(\ln u)^2 \operatorname du
-u
- e^{e^{-y}}=t
-e^{-y}=\ln(t)\Rightarrow -y=\ln(\ln(t)) \Rightarrow dy=\frac{-1}{t\ln(t)}dt
-y^2=(\ln(\ln(t)))^2
-I=-\int t^{a-1}(\ln(\ln(t)))^2 dt
-\ln(t)=p \Rightarrow \frac{1}{t}dt=dp \Rightarrow I=-\int e^ {ap}(\ln(p))^2dp
-u=e^{ap}\ln(p)
-dv=\ln(p)dp

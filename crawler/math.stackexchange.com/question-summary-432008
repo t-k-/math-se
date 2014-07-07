@@ -1,7 +1,0 @@
-\begin{array}{ll} \mbox{min.} & & \frac{1}{2} ||w||^2 + C \sum \xi_i \\  \mbox{s.t.} & & y_i (w^T x_i+b) \geq 1 - \xi_i, i = 1,...,m\\              & & \xi_i \geq 0, i=1,...,m \end{array}
-L(w,b,\xi, \alpha, r) = \frac{1}{2}w^Tw + C\sum{\xi_i} - \sum \alpha_i [y_i (x^Tw+b)-1+\xi_i] - \sum r_i \xi_i
-\begin{array}{ll} \alpha_i = 0 & \Rightarrow & y_i (w^Tx_i + b) \geq 1 \\ \alpha_i = C & \Rightarrow & y_i (w^Tx_i + b) \leq 1 \\ 0 < \alpha_i < C & \Rightarrow & y_i (w^Tx_i + b) = 1  \end{array}
-\alpha_i [y_i (x^Tw+b)-1+\xi_i]
-\alpha_i = 0
- y_i (x^Tw+b)-1+\xi_i = 0
-\xi_i

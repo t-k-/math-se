@@ -1,69 +1,0 @@
-E
-\phi
-\Omega\subseteq\mathbb R^2
-R^{2}\rightarrow R
-E(\phi)
-\phi
-E\left(\phi\right)=\int_{\Omega}\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}\left(1-H(\phi\left(\vec{x}\right))\right)d\vec{x} +\mu\int_{\Omega}H(\phi\left(\vec{x})\right)d\vec{x} +\nu\int_{\Omega}\delta\left(\phi\left(\vec{x}\right)\right)\left|\nabla\phi\left(\vec{x}\right)\right|d\vec{x}
-g
-R^{2}\rightarrow R
-H
-H\left(\phi\right)=\frac{1}{2}+\frac{1}{\pi}\arctan\left(\phi\right)
-H
-\delta
-\delta=\frac{\partial{H}}{\partial{\phi}}
-E
-\|\|_2
-E(\phi)\in R
-\|E(\phi)-E(\phi_{0})\|_{2}=|E(\phi)-E(\phi_{0})|
-\varepsilon>0
-\underset{x\epsilon\Omega}{max}|\phi\left(x\right)-\phi_{0}\left(x\right)|<\frac{\varepsilon}{\int|\frac{\left(\mu-N\left(x\right)\right)}{\pi}|\, dx}
-E\left(\phi\right)-E\left(\phi_{0}\right)=\int_{\Omega}\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}\left(H(\phi_{0}\left(\vec{x}\right))-H(\phi\left(\vec{x}\right))\right)d\vec{x} +\mu\int_{\Omega}\left(H(\phi\left(\vec{x})\right)-H(\phi_{0}\left(\vec{x}\right))\right)d\vec{x} +\nu\int_{\Omega}\left(\delta\left(\phi\left(\vec{x}\right)\right)\left|\nabla\phi\left(\vec{x}\right)\right|-\delta\left(\phi_{0}\left(\vec{x}\right)\right)\left|\nabla\phi_{0}\left(\vec{x}\right)\right|\right)d\vec{x}
-E\left(\phi\right)-E\left(\phi_{0}\right)=\int_{\Omega}\left(\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}-\mu\right)\left(H(\phi_{0}\left(\vec{x}\right))-H(\phi\left(\vec{x}\right))\right)d\vec{x} +\nu\int_{\Omega}\left(\delta\left(\phi\left(\vec{x}\right)\right)\left|\nabla\phi\left(\vec{x}\right)\right|-\delta\left(\phi_{0}\left(\vec{x}\right)\right)\left|\nabla\phi_{0}\left(\vec{x}\right)\right|\right)d\vec{x}
-E\left(\phi\right)-E\left(\phi_{0}\right)<\int_{\Omega}\left(\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}-\mu\right)max\left(H(\phi_{0})-H(\phi)\right)d\vec{x} +\nu\int_{\Omega}\left(\delta\left(\phi\left(\vec{x}\right)\right)\left|\nabla\phi\left(\vec{x}\right)\right|-\delta\left(\phi_{0}\left(\vec{x}\right)\right)\left|\nabla\phi_{0}\left(\vec{x}\right)\right|\right)d\vec{x}
-H
-\left|\nabla\phi_{0}\left(\vec{x}\right)\right|\approx1
-\vec{x}\in\Omega
-E\left(\phi\right)-E\left(\phi_{0}\right)<max\left(H(\phi_{0})-H(\phi)\right)\int_{\Omega}\left(\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}-\mu\right)d\vec{x} +\nu\int_{\Omega}\left(\delta\left(\phi\left(\vec{x}\right)\right)-\delta\left(\phi_{0}\left(\vec{x}\right)\right)\right)d\vec{x}
-max(\delta(\phi)-\delta(\phi_{0})) = (\delta(\phi(\vec{x^{*}}))-\delta(\phi_{0}(\vec{x^{*}})))
-\vec{x^{*}}\in{\left\{x|max(\delta(\phi(\vec{x}))-\delta(\phi_{0}\vec{x}))for\,\, all\, x\in\Omega\right\}}
-E\left(\phi\right)-E\left(\phi_{0}\right)<max\left(H(\phi_{0})-H(\phi)\right)\int_{\Omega}\left(\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}-\mu\right)d\vec{x} +\nu max(\delta(\phi)-\delta(\phi_{0}))\int_{\Omega}d\vec{x}
-max(\delta(\phi)-\delta(\phi_{0}))=\frac{\varepsilon}{2\nu\int_{\Omega}d\vec{x}}
-max(H(\phi)-H(\phi_{0}))=\frac{\varepsilon}{2\int_{\Omega}\left(\left|\left(g\left(\vec{x}\right)-A\right)\right|^{2}-\mu\right)d\vec{x}}
-E\left(\phi\right)-E\left(\phi_{0}\right)<\varepsilon
-E
-\phi
-\phi
-R^2\rightarrow R
-H
-R\rightarrow R
-E
-\phi
-\Omega\subseteq\mathbb R^2
-E(\phi)
-E(\phi)
-\phi
-\phi
-E:\mathfrak F\to\mathbb R
-\phi\mapsto E(\phi)
-\mathfrak F
-C^1(\Omega,,\mathbb R)
-E
-\phi
-\mathfrak F
-E(\psi)
-E(\phi)
-\psi
-\mathfrak F
-\phi
-\|\ \|_{\mathfrak F}
-E
-\phi
-\mathfrak F
-\|\ \|_{\mathfrak F}
-\phi
-\phi
-\nabla\phi
-\mathfrak F
-\|\ \|_{\mathfrak F}
- \forall\varepsilon\gt0,\quad\exists\alpha\gt0,\quad\forall\psi\in\mathfrak F,\quad \|\phi-\psi\|_{\mathfrak F}\leqslant\alpha\implies|E(\psi)-E(\phi)|\leqslant\varepsilon. 

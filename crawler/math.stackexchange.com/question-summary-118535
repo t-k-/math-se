@@ -1,28 +1,0 @@
-(\forall A,B,C)(\triangle ABC \Leftrightarrow ((AB<BC+CA)\wedge (BC<CA+AB)\wedge (CA<AB+BC)))
-\begin{align} (\forall A,B,C)(\triangle ABC \Leftrightarrow & (((AB<BC+CA)\wedge (AB\ge BC)\wedge (AB\ge CA))\vee\\ &((BC<CA+AB)\wedge (BC\ge AB)\wedge (BC\ge CA))\vee\\ &((CA<AB+BC)\wedge (CA\ge AB)\wedge (CA\ge BC)))) \end{align}
-x,y
-z
-x\le y\le z
-z<x+y
-x<y+z
-y<x+z
-y<x+z
-y\le z<x+y\le x+z
-x<y+z
-(((AB<BC+CA)\wedge (AB\ge BC)\wedge (AB\ge CA))\vee\\ ((BC<CA+AB)\wedge (BC\ge AB)\wedge (BC\ge CA))\vee\\ ((CA<AB+BC)\wedge (CA\ge AB)\wedge (CA\ge BC)))
-\neg\neg ((P1\wedge P2\wedge P3)\vee (Q1\wedge Q2\wedge Q3)\vee (R1\wedge R2\wedge R3))
-\neg ((\neg P1\vee \neg P2 \vee \neg P3)\wedge (\neg Q1\vee \neg Q2\vee \neg Q3)\wedge (\neg R1\vee \neg R2\vee \neg R3))
-\neg  (\neg P1 \wedge \neg Q1 \wedge \neg R1) \vee (\neg P1 \wedge \neg Q1 \wedge \neg R2) \vee (\neg P1 \wedge \neg Q1 \wedge \neg R3) \vee\\ (\neg P1 \wedge \neg Q2 \wedge \neg R1) \vee (\neg P1 \wedge \neg Q2 \wedge \neg R2) \vee (\neg P1 \wedge \neg Q2 \wedge \neg R3) \vee\\ (\neg P1 \wedge \neg Q3 \wedge \neg R1) \vee (\neg P1 \wedge \neg Q3 \wedge \neg R2) \vee (\neg P1 \wedge \neg Q3 \wedge \neg R3) \vee\\ (\neg P2 \wedge \neg Q1 \wedge \neg R1) \vee (\neg P2 \wedge \neg Q1 \wedge \neg R2) \vee (\neg P2 \wedge \neg Q1 \wedge \neg R3) \vee\\ (\neg P2 \wedge \neg Q2 \wedge \neg R1) \vee (\neg P2 \wedge \neg Q2 \wedge \neg R2) \vee (\neg P2 \wedge \neg Q2 \wedge \neg R3) \vee\\ (\neg P2 \wedge \neg Q3 \wedge \neg R1) \vee (\neg P2 \wedge \neg Q3 \wedge \neg R2) \vee (\neg P2 \wedge \neg Q3 \wedge \neg R3) \vee\\ (\neg P3 \wedge \neg Q1 \wedge \neg R1) \vee (\neg P3 \wedge \neg Q1 \wedge \neg R2) \vee (\neg P3 \wedge \neg Q1 \wedge \neg R3) \vee\\ (\neg P3 \wedge \neg Q2 \wedge \neg R1) \vee (\neg P3 \wedge \neg Q2 \wedge \neg R2) \vee (\neg P3 \wedge \neg Q2 \wedge \neg R3) \vee\\ (\neg P3 \wedge \neg Q3 \wedge \neg R1) \vee (\neg P3 \wedge \neg Q3 \wedge \neg R2) \vee (\neg P3 \wedge \neg Q3 \wedge \neg R3) )
-\neg P2\wedge  \neg Q2
-AB<BC\wedge BC<AB
-\neg P1\wedge\neg Q1
-\neg  (\neg P1 \wedge \neg Q2 \wedge \neg R2) \vee (\neg P1 \wedge \neg Q2 \wedge \neg R3) \vee (\neg P1 \wedge \neg Q3 \wedge \neg R2) \vee\\ (\neg Q1 \wedge \neg P2 \wedge \neg R2) \vee (\neg Q1 \wedge \neg P2 \wedge \neg R3) \vee (\neg Q1 \wedge \neg P3 \wedge \neg R3) \vee\\ (\neg R1 \wedge \neg P2 \wedge \neg Q3) \vee (\neg R1 \wedge \neg P3 \wedge \neg Q2) \vee (\neg R1 \wedge \neg P3 \wedge \neg Q3) \vee\\ (\neg P2 \wedge \neg Q3 \wedge \neg R2) \vee (\neg P3 \wedge \neg Q2 \wedge \neg R3))
-AB<BC\wedge BC<CA\wedge CA<AB
-\neg ( (\neg P1 \wedge ((\neg Q2 \wedge \neg R2) \vee (\neg Q2 \wedge \neg R3) \vee (\neg Q3 \wedge \neg R2)))\vee\\ (\neg Q1 \wedge ((\neg P2 \wedge \neg R2) \vee (\neg P2 \wedge \neg R3) \vee (\neg P3 \wedge \neg R3)))\vee\\ (\neg R1 \wedge ((\neg P2 \wedge \neg Q3) \vee (\neg P3 \wedge \neg Q2) \vee (\neg P3 \wedge \neg Q3))) )
-(\neg P1 \wedge ((\neg Q2 \wedge \neg R2) \vee (\neg Q2 \wedge \neg R3) \vee (\neg Q3 \wedge \neg R2)))
-((AB\ge BC+CA) \wedge \\((AB>BC \wedge AB>CA) \vee (AB>BC>CA) \vee (AB>CA>BC)))
-(AB\ge BC+CA)
-(\neg P1)
-\neg ((\neg P1)\vee(\neg Q1)\vee(\neg R1))
-P1\wedge Q1\wedge R1
-(AB<BC+CA)\wedge(BC<CA+AB)\wedge(CA<AB+BC)

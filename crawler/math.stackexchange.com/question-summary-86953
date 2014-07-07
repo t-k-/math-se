@@ -1,12 +1,0 @@
-f: \mathbb{R} \to \mathbb{R}
- H(x) = \int_{-x}^x [f(t)+f(-t)] dt \text{ } \text{ } \text{  for all x}
-H''(x)
-H'(x) = \displaystyle\frac{d}{dx} \displaystyle\int_{-x}^x f(t) + f(-t) dt = [x+(-x)] - [(-x) +x] = 0
-H''(X) = \displaystyle\frac{d}{dx} H'(X) = \displaystyle\frac{d}{dx} 0 = 0
-\frac{d}{dx}\int_a^x g(t)\,dt = g(x).
-\frac{d}{dx}\int_a^{h(x)}g(t)\,dt = g(h(x))h'(x).
-\begin{align*} H'(x) &= \frac{d}{dx}\int_{-x}^x (f(t)+f(-t))\,dt\\ &= \frac{d}{dx}\left(\int_0^x(f(t)+f(-t))\,dt - \int_0^{-x}(f(t)+f(-t))\,dt\right)\\ &= \left(f(x) + f(-x)\right) -\Bigl(\bigl( f(-x) + f(-(-x))\bigr)(-x)'\Bigr)\\ &= f(x) + f(-x) + f(-x) + f(x) \\ &= 2f(x) + 2f(-x). \end{align*}
-H''(x) = \frac{d}{dx}(2f(x)+2f(-x)) = 2f'(x) + 2f'(-x)(-x)' = 2(f'(x) - f'(-x)).
-H'(x)
- \begin{align} H'(x) & = \lim_{h \to 0} \frac{H(x+h) - H(x)}{h} \\ & = \lim_{h \to 0} \frac{ \int_{-x-h}^{x+h} [f(t)+f(-t)] \, dx - \int_{-x}^x [f(t)+f(-t)] \, dx }{h} \\ & = \lim_{h \to 0} \frac{ \int_{x}^{x+h} [f(t)+f(-t)] \, dx + \int_{-x-h}^{-x} [f(t)+f(-t)] \, dx }h  \\ & = [f(x) + f(-x)] + [f(-x) + f(-(-x))] = 2f(x) + 2f(-x). \\ \end{align} 
- H''(x) = 2f'(x) -2f'(-x). 

@@ -1,6 +1,0 @@
-\int_{0}^{2\pi}{\sin^8(x)}{dx}  = \int_{0}^{2\pi}{\sin^7(x)}\cdot{\sin(x)dx}  = \int_{0}^{2\pi}{\sin^7(x)}\cdot{d(-\cos(x))}  = \left. -\cos(x) \cdot \sin^7(x) \right|_0^{2\pi}    + \int_{0}^{2\pi}{\cos(x)}{d(\sin^7(x))}  = \left. -\cos(x) \cdot \sin^7(x) \right|_0^{2\pi}    + \int_{0}^{2\pi}{\cos^2(x) \cdot 7 \cdot \sin^6(x)}{dx} = \dots
- \begin{align} \int_0^{2\pi}\sin^8xdx &=\int_0^{2\pi}\left(\frac{e^{ix}-e^{-ix}}{2i}\right)^8dx\\ &=\int_0^{2\pi}2^{-8}(e^{ix}-e^{-ix})^8dx\\ &=2^{-8}\int_0^{2\pi}\sum_{k=0}^8\binom{8}{k}(e^{ix})^k(-e^{-ix})^{8-k}dx\\\ &=2^{-8}\sum_{k=0}^8\binom{8}{k}(-1)^{8-k}\int_0^{2\pi}e^{i(2k-8)x}dx\\ &=2^{-8}\sum_{k=0}^8\binom{8}{k}(-1)^{k}2\pi\delta_{2k-8,0}\\ &=2^{-8}\binom{8}{4}(-1)^{4}2\pi\\ &=\frac{\binom{8}{4}}{2^7}\pi \end{align} 
-\int_0^{2\pi}\sin^{2n}x\ dx=\int_0^{\pi}\sin^{2n}x\ dx+\int_\pi^{2\pi}\sin^{2n}x\ dx
-y=x-\pi
-\int_0^{\pi}\sin^{2n}x\ dx=\int_0^{\frac\pi2}\sin^{2n}x\ dx+\int_{\frac\pi2}^\pi\sin^{2n}x\ dx
-z=\pi-x

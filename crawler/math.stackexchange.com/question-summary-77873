@@ -1,15 +1,0 @@
-X_1
-X_2
-Z=X_1/X_2
-X_1
-X_2
-Z
-  \begin{eqnarray} F_Z(z) &=& \mathbb{P}( X_1/X_2 \le z) = \mathbb{P}( X_1 \le X_2 z ; X_2 >0) + \mathbb{P}( X_1 \ge X_2 z ; X_2< 0) \\   &=& \mathbb{E}( F_{X_1}( z X_2) ; X_2 > 0) + \mathbb{E}( 1 - F_{X_1}( z X_2) ; X_2 < 0)  \end{eqnarray} 
-F_Z(z)
-Z
-f_Z(z) = F_Z^\prime(z)
-   f_Z(z) = \mathbb{E}( f_{X_1}( z X_2) X_2 ; X_2 > 0) + \mathbb{E}( -f_{X_1}( z X_2) X_2 ; X_2 < 0) = \mathbb{E}\left( \vert X_2\vert \cdot f_{X_1}(z X_2)\right) 
-f_{X,Y}(x,y) = g(r)
-\int_0^{\infty} g(r)\ \mathrm dr = 1/2\pi
-\int_{x=-\infty}^{\infty}\int_{y=-\infty}^{\infty} f_{X,Y}(x,y) \mathrm dy\ \mathrm dx = \int_0^{\infty}\int_0^{2\pi} g(r)\cdot r\cdot \mathrm d\theta\ \mathrm dr = 1
-\begin{align*} F_Z(z)  &= \int_{x=0}^{\infty}\int_{y=-\infty}^{zx} f_{X,Y}(x,y) \mathrm dy\ \mathrm dx + \int_{x=-\infty}^{0}\int_{y=zx}^{\infty} f_{X,Y}(x,y) \mathrm dy\ \mathrm dx\\ &= 2\int_{\theta=-\pi/2}^{\arctan(z)}\int_{r=0}^{\infty} r \cdot g(r) \mathrm dr \ \mathrm d\theta\\ &= 2(\arctan(z) + \pi/2)/(2\pi) = \frac{1}{2} + \frac{1}{\pi}\arctan(z) \end{align*}  

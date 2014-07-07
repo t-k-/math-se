@@ -1,20 +1,0 @@
-\log(s+x^{2})
-s
-\int_{-\infty}^{\infty}dx\log(s+x^{2})\exp(iux)
-s>0
-u \in \mathbb{R}
-\nu > 0
-\lim_{\nu \uparrow 0} \left( -\partial_\nu \mathcal{I}_\nu(u)\right)
-\mathcal{J}_\nu(u) = -\partial_\nu \mathcal{I}_\nu(u)
-    \mathcal{I}_\nu(u) = \int_{-\infty}^\infty \left(s+x^2\right)^{-\nu} \mathrm{e}^{i u x} \,\,\mathrm{d} x = \int_{-\infty}^\infty \left(s+x^2\right)^{-\nu}  \cos\left(u x\right)  \,\,\mathrm{d} x 
- \begin{eqnarray}    \mathcal{I}_{\nu-1}(u) &=& s \cdot \mathcal{I}_\nu(u) - \partial_u^2 \mathcal{I}_\nu(u) \\     \mathcal{J}_{\nu-1}(u) &=& s \cdot \mathcal{J}_\nu(u) - \partial_u^2 \mathcal{J}_\nu(u)  \end{eqnarray} 
-\mathcal{I}_\nu(u)
-J_1\left(u\right)
-J_1(u)
-u
-\mathcal{J}_1^\prime(u)
-    \mathcal{I}_\nu(u) = \sqrt{\pi} \cdot \frac{ 2^{\frac{3}{2}-\nu } s^{\frac{1}{4}-\frac{\nu }{2}} }{\Gamma (\nu )} \cdot |u|^{\nu -\frac{1}{2}} K_{\frac{1}{2}-\nu }\left(\sqrt{s} |u|\right) 
-    \mathcal{J}_1\left(u\right) = \pi \, \frac{\mathrm{e}^{\sqrt{s} |u|} }{\sqrt{s}} \cdot \operatorname{Ei}\left(-2 \sqrt{s} |u|\right) -\pi\, \frac{  \mathrm{e}^{-\sqrt{s} |u|} }{\sqrt{s}} \left(\frac{1}{2} \log \left(\frac{u^2}{4 s}\right)+\gamma \right) 
-  \begin{eqnarray}    \mathcal{J}_1(u) &=& \frac{\pi  \log \left(16 s^2\right)}{2 \sqrt{s}}+\pi  |u|  (\log (u^2)+2 \gamma -2)+\mathcal{o}\left(u\right) \\    \mathcal{J}_1(u) &=& -\frac{\pi}{2} \mathrm{e}^{-\sqrt{s} |u| } \left(\frac{  \left( \log \left(\frac{u^2}{4s}\right) + 2 \gamma \right)}{\sqrt{s}} + \frac{1}{s    |u|}+\mathcal{o}\left(|u|^{-1}\right)\right)  \end{eqnarray} 
-\mathcal{J}_0(u)
-  \begin{eqnarray}    \int \mathcal{J}_0(u) f(u) \, \mathrm{d} u &=& \int \left( s \mathcal{J}_1(u) - \mathcal{J}_1^{\prime\prime}(u) \right) f(u) \, \mathrm{d} u \\ &=&  \int \left( s f(u) - f^{\prime\prime}(u) \right) \mathcal{J}_1(u) \, \mathrm{d} u \end{eqnarray} 

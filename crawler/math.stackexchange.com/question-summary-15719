@@ -1,25 +1,0 @@
-\int{\frac{1+x^2}{(1-x^2)\sqrt{1+x^4}}}\mathrm dx
-\int{\frac{1+x^2}{(1-x^2)\sqrt{1+x^4}}}\mathrm dx
-\displaystyle u = x -\frac{1}{x}
-\displaystyle du = (1 + \frac{1}{x^2})dx
-\frac{1+x^2}{(1-x^2)\sqrt{1+x^4}} = -\frac{x^2(1 + 1/x^2)}{x(x-1/x)\sqrt{x^2(x^2 + 1/x^2)}} = -\frac{1 + 1/x^2}{(x-1/x)\sqrt{(x - 1/x)^2 + 2}}
-\int{\frac{1+x^2}{(1-x^2)\sqrt{1+x^4}}}\mathrm dx
-= -\int \ \frac{\mathrm{du}}{u \sqrt{u^2 + 2}}
-x=\cot\left(\frac{\theta}{2}\right)
-\mathrm dx=\frac{\mathrm d\theta}{\cos\;\theta-1}
-\int \frac{\mathrm d\theta}{\cos\;\theta(1-\cos\;\theta)\sqrt{1+\cot^4\frac{\theta}{2}}}
-=\int \frac{\mathrm d\theta}{\cos\;\theta(1-\cos\;\theta)\sqrt{1+\left(\frac{1+\cos\;\theta}{1-\cos\;\theta}\right)^2}}
-=\frac1{\sqrt{2}}\int \frac{\mathrm d\theta}{\cos\;\theta\sqrt{1+\cos^2\theta}}
-\frac1{\sqrt{2}}\tanh^{-1}\frac{\sin\;\theta}{\sqrt{1+\cos^2\theta}}
-\frac1{\sqrt{2}}\tanh^{-1}\left(x\sqrt{\frac{2}{x^4+1}}\right)
-1\gt x\gt 0
-x:=\sqrt{y}
-1\gt y\gt 0
- \int{\frac{1+x^2}{(1-x^2)\sqrt{1+x^4}}}\mathrm dx=\int{\frac{1+y}{2(1-y)\sqrt{1+y^2}\sqrt{y}}}\mathrm dy. 
- t:=\frac{1+y}{1-y},\qquad 1\lt t \lt \infty. 
- y=\frac{-1+t}{1+t}, 
- \mathrm dy=\frac{2}{(1+t)^2}\,\mathrm dt. 
- \int{\frac{1+y}{2(1-y)\sqrt{1+y^2}\sqrt{y}}}\mathrm dy=\int{\frac{t}{2\sqrt{1+\left(\dfrac{-1+t}{1+t} \right)^2}\sqrt{\dfrac{-1+t}{1+t}}}\frac{2}{(1+t)^2}\,\mathrm dt} 
- =\frac{1}{\sqrt{2}}\int{\frac{t}{\sqrt{t^4-1}}}\mathrm dt 
- =\frac{1}{2\sqrt{2}}\ln(t^2+\sqrt{t^4-1})+C. 
- \frac{1}{2\sqrt{2}}\ln\left(\frac{(1+x^2)^2+2\sqrt{2}x\sqrt{1+x^4}}{(1-x^2)^2}\right)+C. 

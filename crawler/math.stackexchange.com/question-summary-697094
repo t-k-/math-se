@@ -1,8 +1,0 @@
-x_0
-y_0
-t_0=0
-t_1=1000
- \begin{eqnarray*} x' &=& \cos(y)+\sin(t) \\ y' &=& \sin(x)+\cos(t) \end{eqnarray*} 
-\text{ParametricPlot}[\text{Evaluate}[\{x(t),y(t)\}\text{/.}\, s],\{t,0,500\}] \left(s=\text{NDSolve}\left[\left\{x'(t)=\cos (y(t))+\sin (t),y'(t)=\sin (x(t))+\cos (t),x(0)=y(0)=1\right\},\{x,y\},\{t,500\},\text{AccuracyGoal}\to \text{Automatic}\right];\right)
-\text{ParametricPlot}[\text{Evaluate}[\{x(t),y(t)\}\text{/.}\, s],\{t,0,500\}] \left(s=\text{NDSolve}\left[\left\{x'(t)=\cos (y(t))+\sin (t),y'(t)=\sin (x(t))+\cos (t),x(0)=y(0)=1\right\},\{x,y\},\{t,500\},\text{AccuracyGoal}\to \infty \right];\right)
-\text{ParametricPlot}[\text{Evaluate}[\{x(t),y(t)\}\text{/.}\, s],\{t,0,500\}] \left(s=\text{NDSolve}\left[\left\{x'(t)=\cos (y(t))+\sin (t),y'(t)=\sin (x(t))+\cos (t),x(0)=y(0)=1\right\},\{x,y\},\{t,500\},\text{PrecisionGoal}\to \infty \right];\right)

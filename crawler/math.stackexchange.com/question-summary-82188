@@ -1,5 +1,0 @@
-\vdash \lnot (p \supset q) \supset (p \land \lnot q)
-\neg(p \supset \bot) \vdash p
-\neg\neg p \vdash p
-\begin{array}{cccccccl} 1 & \neg(p \supset q) & & & & & & premiss\\ 2 & & | & \neg p & & & & assumption\\ 3 & & | & & | & p  & & assumption\\ 4 & & | & & | & \bot  & & from\ 2, 3\\ 5 & & | & & | & q  & & from\ 4\\ 6 & & | & (p \supset q) & & & & from\ 3-5\\  7 & & | & \bot & & & & from\ 1, 6\\ 8 & \neg\neg p & & & & & & from\ 2-7\\  9 & p & & & & & & from\ 8, DN\\ \end{array} 
-\begin{array}{cccccccl} 1 & \neg(p \supset q) & & & & & & premiss\\ 2 & & | & q & & & & assumption\\ 3 & & | & & | & p  & & assumption\\ 4 & & | & & | & q  & & from\ 2, reit\\ 5 & & | & (p \supset q) & & & & from\ 3-4\\  6 & & | & \bot & & & & from\ 1, 5\\ 7 & \neg q & & & & & & from\ 2-6 \end{array} 

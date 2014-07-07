@@ -1,12 +1,0 @@
-r_1,\dots, r_n
- a_nx^n + \cdots + a_1x+a_0=0
-\begin{align*}s_1&=r_1+r_2+\cdots\\ s_2&=r_1 r_2 +r_1 r_3 + \cdots \end{align*}
-s_i = (-1)^i \frac{a_{n-i}}{a_n} .
- a_n * \prod_{i=1}^n (x - r_i) = a_nx^n + \dots + a_1x+a_0
-\begin{align*}x_1+x_2+x_3+x_4=&-c_3\\x_1 x_2+x_3 x_2+x_4 x_2+x_1 x_3+x_1 x_4+x_3 x_4=&c_2\\x_1 x_2 x_3+x_1 x_4 x_3+x_2 x_4 x_3+x_1 x_2 x_4=&-c_1\\x_1 x_2 x_3 x_4=&c_0\end{align*}
-\begin{split}&\mathbf J(\mathbf x)=\mathbf J(x_1,x_2,x_3,x_4)=\\&\small\begin{pmatrix} 1 & 1 & 1 & 1 \\ x_2+x_3+x_4 & x_1+x_3+x_4 & x_1+x_2+x_4 & x_1+x_2+x_3 \\ x_2 x_3+x_4 x_3+x_2 x_4 & x_1 x_3+x_4 x_3+x_1 x_4 & x_1 x_2+x_4 x_2+x_1 x_4 & x_1 x_2+x_3 x_2+x_1 x_3 \\ x_2 x_3 x_4 & x_1 x_3 x_4 & x_1 x_2 x_4 & x_1 x_2 x_3\end{pmatrix}\end{split}
-\begin{split}&\mathbf J^{-1}(\mathbf x)=\mathbf J^{-1}(x_1,x_2,x_3,x_4)=\\&\tiny \begin{pmatrix}\frac{x_1^3}{(x_1-x_2) (x_1-x_3) (x_1-x_4)} &\frac{x_1^2}{(x_1-x_2) (x_1-x_3) (x_4-x_1)} &\frac{x_1}{(x_1-x_2) (x_1-x_3) (x_1-x_4)} & \frac1{(x_2-x_1)(x_1-x_3) (x_1-x_4)} \\ \frac{x_2^3}{(x_2-x_1) (x_2-x_3) (x_2-x_4)} &\frac{x_2^2}{(x_1-x_2) (x_2-x_3) (x_2-x_4)} &\frac{x_2}{(x_2-x_1) (x_2-x_3) (x_2-x_4)} & \frac1{(x_1-x_2) (x_2-x_3) (x_2-x_4)} \\\frac{x_3^3}{(x_1-x_3) (x_2-x_3) (x_3-x_4)} &\frac{x_3^2}{(x_1-x_3) (x_3-x_2) (x_3-x_4)} &\frac{x_3}{(x_1-x_3) (x_2-x_3) (x_3-x_4)} & \frac1{(x_1-x_3)(x_3-x_2) (x_3-x_4)} \\\frac{x_4^3}{(x_4-x_1) (x_4-x_2) (x_4-x_3)} &\frac{x_4^2}{(x_1-x_4) (x_4-x_2) (x_4-x_3)} &\frac{x_4}{(x_4-x_1) (x_4-x_2) (x_4-x_3)} & \frac1{(x_1-x_4)(x_4-x_2) (x_4-x_3)}\end{pmatrix}\end{split}
-\mathbf x-\mathbf J^{-1}(\mathbf x)\begin{pmatrix}s_1+c_3\\s_2-c_2\\s_3+c_1\\s_4-c_0\end{pmatrix}
-\begin{align*}x_1-&\frac{c_3 x_1^3+c_2 x_1^2+c_1 x_1+c_0+x_1^4}{(x_1-x_2) (x_1-x_3)(x_1-x_4)}\\x_2-&\frac{c_3 x_2^3+c_2 x_2^2+c_1 x_2+c_0+x_2^4}{(x_2-x_1)(x_2-x_3) (x_2-x_4)}\\x_3-&\frac{c_3 x_3^3+c_2 x_3^2+c_1 x_3+c_0+x_3^4}{(x_3-x_1) (x_3-x_2) (x_3-x_4)}\\x_4-&\frac{c_3 x_4^3+c_2 x_4^2+c_1 x_4+c_0+x_4^4}{(x_4-x_1) (x_4-x_2) (x_4-x_3)}\end{align*}
-x_i^{(k+1)}=x_i^{(k)}-\frac{p(x_i^{(k)})}{\prod\limits_{j\neq i} (x_i^{(k)}-x_j^{(k)})},\qquad i=1\dots n;\; k=0,1,\dots
-x_i^{(0)}

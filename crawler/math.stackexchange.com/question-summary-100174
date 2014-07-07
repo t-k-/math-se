@@ -1,23 +1,0 @@
-u
-\psi
-a, c
-f
-u(\psi) =\left[\begin{array}{cccc} a & f & 0 & 0\\ c & a & f & 0\\ 0 & c & a & f\\ 0 & 0 & c & a \end{array}\right]\left[\begin{array}{c} \psi^{1}\\ \psi^{2}\\ \psi^{3}\\ \psi^{4} \end{array}\right]
-\left[\begin{array}{cccc} a & f & 0 & 0\\ c & a & f & 0\\ 0 & c & a & f\\ 0 & 0 & c & a \end{array}\right]
-\psi
-u=\left[\begin{array}{c} a\psi^{1}+f\psi^{2}\\ c\psi^{1}+a\psi^{2}+f\psi^{3}\\ c\psi^{2}+a\psi^{3}+f\psi^{4}\\ c\psi^{3}+a\psi^{4} \end{array}\right]
-\left[\begin{array}{c} a\\ a\\ a\\ a \end{array}\right]
-\psi
-u
-u:\mathbb{R}^4 \rightarrow \mathbb{R}^4
-f: \mathbb{R}^n \rightarrow \mathbb{R}^m
-\vec{x} = \vec{a} 
-Df_{\vec{a}}: \mathbb{R}^n \rightarrow \mathbb{R}^m
-\lim_{\vec{x} \rightarrow \vec{a}} \frac{|f(\vec{x}) - f(\vec{a})-Df_{\vec{a}}(\vec{x})|}{|\vec{x} - \vec{a}|} = 0 
-Df
-f
-u= (a \psi^1 + f \psi^2, c \psi^1 + a \psi^2 + f \psi^3,c \psi^2 + a \psi^3 + f \psi^4, c \psi^3 + a \psi^4) = (u_1,u_2,u_3,u_4)
-Du
-\left(   \begin{array}{c}     \nabla u_1\\     \nabla u_2 \\       \nabla u_3 \\      \nabla u_4   \end{array} \right) % =\left(   \begin{array}{cccc}     a & f & 0 & 0 \\     c &  a & f & 0 \\      0 & c & a & f \\     0 & 0 & c & a \\   \end{array} \right) 
-u_i(\psi)=\sum_jA_{ij}\psi_j
-\partial_{\psi_k}u_i(\psi)=\sum_jA_{ij}\delta_{jk}=A_{ik}

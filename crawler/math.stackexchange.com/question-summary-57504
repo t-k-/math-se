@@ -1,22 +1,0 @@
-\displaystyle \lim\limits_{h\rightarrow 0}\Big[\frac{f(x+h)g(x) - f(x)g(x+h)}{h}\Big]
-\displaystyle \begin{align*} &=\frac{\lim\limits_{h\rightarrow 0}\Big[f(x+h)g(x) - f(x)g(x+h)\Big]}{\lim\limits_{h\rightarrow 0}h}\\ &=\frac{\lim\limits_{h\rightarrow 0}\Big[f(x+h)g(x)\Big] - \lim\limits_{h\rightarrow 0}\Big[f(x)g(x+h)\Big]}{\lim\limits_{h\rightarrow 0}h}\\ &=\frac{\lim\limits_{h\rightarrow 0}\Big[f(x+h)\Big]\lim\limits_{h\rightarrow 0}\Big[g(x)\Big] - \lim\limits_{h\rightarrow 0}\Big[f(x)\Big]\lim\limits_{h\rightarrow 0}\Big[g(x+h)\Big]}{\lim\limits_{h\rightarrow 0}h}\\ &=\frac{f(x)\lim\limits_{h\rightarrow 0}\Big[g(x)\Big] - f(x)\lim\limits_{h\rightarrow 0}\Big[g(x+h)\Big]}{\lim\limits_{h\rightarrow 0}h}\\ &=\frac{f(x)\Big(\lim\limits_{h\rightarrow 0}\Big[g(x)\Big] - \lim\limits_{h\rightarrow 0}\Big[g(x+h)\Big]\Big)}{\lim\limits_{h\rightarrow 0}h}\\ &=\frac{f(x)\Big(\lim\limits_{h\rightarrow 0}\Big[g(x) - g(x+h)\Big]\Big)}{\lim\limits_{h\rightarrow 0}h}\\ &=f(x)\lim\limits_{h\rightarrow 0}\Big(\frac{g(x) - g(x+h)}{h}\Big)\\ &=-f(x)g'(x)\end{align*}
-f(x)
-g(x)
-f(x)
-\lim\limits_{x\to a}f(x)=L
-\lim\limits_{x\to a}g(x)=M\neq 0
-M\neq 0
-\lim_{x\to a}\frac{f(x)}{g(x)} = \frac{L}{M} = \frac{\lim\limits_{x\to a}f(x)}{\lim\limits_{x\to a}g(x)}.
-f(x+h)g(x) - f(x)g(x+h)=(f(x+h)-f(x))g(x)-f(x)(g(x+h) -g(x)),
-\frac{f(x+h)g(x) - f(x)g(x+h)}{h}=\frac{(f(x+h)-f(x))g(x)}{h}-\frac{f(x)(g(x+h) -g(x))}{h}.
-h
-0
-0
-h
-f(x+h) \approx f(x)+hf'(x)
-g(x+h) \approx g(x)+hg'(x).
- \varphi (h) = \frac{{f(x + h)g(x) - f(x)g(x + h)}}{h}. 
- \varphi (h) = \frac{{[f(x + h) - f(x) + f(x)]g(x) - f(x)[g(x + h) - g(x) + g(x)]}}{h}. 
- \mathop {\lim }\limits_{h \to 0} \varphi (h) = g(x)f'(x) - f(x)g'(x). 
-\lim_{h\to 0}
-\lim_{h\to 0}[f(x+h)g(x)-f(x)g(x+h)](1/h)= \lim_{h\to 0}[f(x+h)g(x)-f(x)g(x+h)]\lim_{h\to 0}(1/h)

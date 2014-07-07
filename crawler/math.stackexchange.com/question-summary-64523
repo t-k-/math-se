@@ -1,26 +1,0 @@
-x
-\xi
-\in \mathbb{R}^n
-A \in \cal{S}(n)
-n \times n
-\varepsilon >0
-\langle Ax,x \rangle \leq \langle (A+\varepsilon A^2) \xi,\xi \rangle+\left(\frac{1}{\varepsilon} + \|A\|\right)|x-\xi|^2,
-\|A\|
-A
-y
-\xi
-e
-\varepsilon
-\|x-y\| + \|y\| \geq \|x\|
-x^TAx\leq\lambda_{max}x^Tx
-(\star)
-\begin{align} (\star) &\geq -x^TAx +y^T(A+e A^2)y+(x-y)^T\left(\frac{1}{e}I + A \right)(x-y) \\ &=y^T(A+e A^2)y+(x-y)^T\frac{1}{e}I(x-y) + y^TAy - 2x^TAy\\ &=y^TA(I+e A)y+y^TAy + \frac{1}{e}y^Ty-2\frac{1}{e}x^Ty+\frac{1}{e}x^Tx-2x^TAy\\ &=y^TA(I+e A)y + y^T(\frac{1}{e}I+A)y -2x^T(\frac{1}{e}I+A)y + \frac{1}{e}x^Tx\\ &= \frac{1}{e}y^T(I+e A)^2y -2\frac{1}{e}x^T(I+eA)y + \frac{1}{e}x^Tx\\ &=\frac{1}{e}\|x-(I+eA)y\|^2\\ &\geq 0 \end{align} 
-B = \varepsilon A
-\varepsilon \gt 0
-\DeclareMathOperator{\eps}{\varepsilon}
-\langle Bx,x \rangle \leq \langle (B+B^2)\xi,\xi \rangle + (1 + \|B\|)\, \|x - \xi\|^2.
-\langle Sy,z\rangle = \langle y, Sz\rangle = \langle Sz,y\rangle
-\|(1+B)(\xi-x)\| \leq \|1+B\|\,\|\xi-x\| \leq (1+\|B\|)\|\xi-x\|
-\begin{align*} \langle Bx, x\rangle &\leq  \langle Bx, x\rangle + \|(1+B)\xi - x\|^2 \\ %&= %\langle Bx, x\rangle+ %\|(1+B)\xi\|^2-2\langle(1+B)\xi,x\rangle +\|x\|^2\\ &= \color{green}{\langle Bx, x\rangle}+ \color{red}{\langle (1+B)\xi,\xi\rangle}+ \color{blue}{\langle(1+B)\xi,B\xi\rangle}- \color{red}{2\langle(1+B)\xi,x\rangle}+\color{green}{\langle x,x\rangle} \\ &=\color{blue}{\langle(B+B^2)\xi,\xi\rangle}+ \color{red}{\langle(1+B)\xi,\xi-x\rangle}- \color{red}{\langle(1+B)\xi,x\rangle}+ \color{green}{\langle(1+B)x,x\rangle} \\ &=\langle(B+B^2)\xi,\xi\rangle+ \langle(1+B)(\xi-x),\xi\rangle -\langle(1+B)(\xi-x),x\rangle \\ &=\langle(B+B^2)\xi,\xi\rangle + \langle (1+B)(\xi-x),\xi-x\rangle. \end{align*}
-\langle(1+B)(\xi-x),\xi-x\rangle \leq \|(1+B)(\xi-x)\|\,\|\xi-x\|.
-\langle Bx,x\rangle \leq \langle(B+B^2)\xi,\xi\rangle + (1+\|B\|)\,\|\xi-x\|^2,

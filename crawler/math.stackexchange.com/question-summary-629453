@@ -1,7 +1,0 @@
-\{ a_{k,l} \}
-\{ b_{k, l} \}
-B_{n}
-n^{\text{th}}
-\begin{align} f(x,y) &= \sum_{k=0}^\infty \sum_{l=0}^\infty a_{k,l}\frac{x^k}{k!}\frac{y^l}{l!} & g(x,y) &= \sum_{n=0}^\infty \sum_{m=0}^\infty b_{n,m}\frac{x^n}{n!}\frac{y^m}{m!} \end{align}
-\begin{align} \frac{z}{\mathrm{e}^{z}-1} &= \sum_{n=0}^\infty \operatorname{B}_n\frac{z^n}{n!} & \frac{\mathrm{e}^{z}-1}{z} &= \sum_{k=0}^\infty \frac{1}{k+1}\frac{z^k}{k!} \end{align}
-\begin{align} g(x,y) &= \frac{x}{\mathrm{e}^x-1}\frac{y}{\mathrm{e}^y-1}f(x,y) &\Leftrightarrow\qquad b_{n,m} &= \sum_{k = 0}^{n} \sum_{l = 0}^{m} \binom{n}{k} \binom{m}{l} \operatorname{B}_{n-k} \operatorname{B}_{m-l} a_{k,l} \\&\Updownarrow\\ f(x,y) &= \frac{\mathrm{e}^x-1}{x}\frac{\mathrm{e}^y-1}{y}g(x,y) &\Leftrightarrow\qquad a_{n,m} &= \sum_{k = 0}^{n} \sum_{l = 0}^{m} \binom{n}{k} \binom{m}{l} \frac{1}{n-k+1} \frac{1}{m-l+1} b_{k,l} \end{align}

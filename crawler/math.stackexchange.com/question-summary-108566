@@ -1,81 +1,0 @@
-g(x)
-x
-h(g(x))
-f(x)
-\begin{vmatrix}     x &f(x)\\     0      & 2\\     1      & 0\\     2      & 0\\     3       &0\\     4       &0\\     5       &0\\     6       &1\\ \end{vmatrix}
-\begin{vmatrix}     x &g(x)& h(g(x)) &f(x)\\      0 &   7&       5  &  2\\     6 &   6 &      5 &   1\\     5  &  5  &     5&    0\\     4   & 4   &    4   & 0\\     3 &   3    &   3  &  0\\     2  &  2     &  2 &   0\\     1   & 1      & 1&    0 \end{vmatrix}
-f(x)=a_1x^6+a_2x^5+\dots+a_6x+a_7
-\dots\dots\dots \\f(1)=a_1+a_2+\dots+a_6+a_7=0\\ \dots\dots\dots
-f(x)=\frac{x^6}{240}-\frac{19x^5}{240}+\frac{29x^4}{48}-\frac{113x^3}{48}+\frac{587x^2}{120}-\frac{76x}{15}+2
-f(x)
-x
-f(x)
-x=0,1,2,3,4,5,6
-f
-f(x)
-x=x_1, x_2, \dots, x_n
-f(x_j) = a_j
-1 \le j \le n
-P_i(x) = \lambda (x-x_1)(x-x_2) \cdots (x-x_{i-1})(x-x_{i+1}) \cdots (x-x_n)
-\lambda
-\lambda
-(x-x_k)
-x-x_i
-P_i(x_k) = 0
-k \ne i
-P_i(x_i) = 1
-f(x) = a_1 P_1(x) + a_2 P_2(x) + \cdots + a_n P_n(x)
-x=x_j
-P_i(x)
-P_j(x)
-f(x_j) = a_jP_j(x_j) = a_j
-\lambda
-1
-x=x_j
-P_i(x) = \dfrac{(x-x_1)(x-x_2) \dots (x-x_{i-1})(x-x_{i+1}) \dots (x-x_n)}{(x_i-x_1)(x_i-x_2) \dots (x_i-x_{i-1})(x_i-x_{i+1}) \dots (x_i-x_n)}
-P_i(x_k) = 0
-k \ne i
-1
-k=i
-f
-f(x_j)=a_j
-1 \le j \le n
-f(x) = \sum_{j=1}^n \left[ a_j \prod_{i=1}_{i \ne j}^n \frac{x-x_i}{x_j-x_i} \right]
-x_1, x_2, \dots, x_7
-0, 1, \dots, 6
-a_1, a_2, \dots, a_7
-2,0,0,0,0,0,1
-\begin{align} f(x) &= 2 \times \dfrac{(x-1)(x-2) \dots (x-6)}{(0-1) (0-2) \dots (0-6)} + 0 \times (\text{stuff}) + 1 \times \dfrac{x(x-1) \dots (x-5)}{6(6-1)(6-2) \dots (6-5)}\\ &= 2 \dfrac{(x-1) (x-2) \dots (x-6)}{720} + \dfrac{x(x-1) \dots (x-5)}{720} \\ &= \dfrac{(x-1)(x-2)(x-3)(x-4)(x-5)}{720} \left[ 2(x-6) + x \right] \\ &= \boxed{\dfrac{(x-1)(x-2)(x-3)(x-4)^2(x-5)}{240}} \end{align}
-f(x)=0
-x=1,2,3,4,5
-x-j
-f(x)
-j=1,2,3,4,5
-g(x)
-x=0,6
-2
-x
-2
-g(x)
-g(x)=ax+b
-f(x) = (x-1)(x-2)(x-3)(x-4)(x-5)g(x)
-f(x) = (x-1)(x-2)(x-3)(x-4)(x-5)(ax+b)
-x=0
-x=6
-b=-\dfrac{2}{120}
-a = \dfrac{3}{720}
-\begin{align}2 &= -5! \cdot b \\ 1 &= 5! \cdot (6a+b) \end{align}
-f(x)=(x-1)(x-2)(x-3)(x-4)(x-5)(\frac{x}{240}-\frac{1}{60})
-0
-1,2,3,4,5
-\frac{\sum\limits_{j=0}^n \frac{(-1)^j}{x-x_j}\binom{n}{j}f(x_j)}{\sum\limits_{j=0}^n \frac{(-1)^j}{x-x_j}\binom{n}{j}}
-x
-x
-\frac{\frac2{x}+\frac1{x-6}}{\frac1{x}-\frac6{x-1}+\frac{15}{x-2}-\frac{20}{x-3}+\frac{15}{x-4}-\frac6{x-5}+\frac1{x-6}}
-\frac{x(x-1)(x-2)(x-3)(x-4)(x-5)(x-6)}{720}\left(\frac1{x-6}+\frac2{x}\right)=\frac{(x-1)(x-2)(x-3)(x-4)^2(x-5)}{240}
-x_2
-x_1
-x_2
-x_1
-x_1
-x_1

@@ -1,33 +1,0 @@
-\Phi(x)
-\int_{\frac{-d}{\sqrt2\sigma}}^{\frac{d}{\sqrt2\sigma}} \frac{1}{2\sigma^2\sqrt{2\pi}} \left( \Phi\left(\alpha+\sqrt{d^2-\frac{x^2}{2\sigma^2}}\right)-\Phi\left(\alpha-\sqrt{d^2-\frac{x^2}{2\sigma^2}}\right)\right) \exp\left(\frac{-x^2}{2}\right) \; dx
-\frac{1}{4\sigma^2\sqrt{2\pi}}\int_{\frac{-d}{\sqrt2\sigma}}^{\frac{d}{\sqrt2\sigma}}\exp\left(\frac{-x^2}{2}\right)  \left(erf\left(\frac{\alpha+\sqrt{d^2-\frac{x^2}{2\sigma^2}}}{\sqrt{2}}\right)-erf\left(\frac{\alpha-\sqrt{d^2-\frac{x^2}{2\sigma^2}}}{\sqrt{2}}\right)\right)\; dx
-\sigma^2 = 1
-i
-t
-X
-Y
-(X, Y)
-d
-(0, \alpha)
-d
-(0, \alpha)
-X = x
-\vert x \vert < d
-x = d
-y = \alpha - \sqrt{d^2 - x^2}
-y = \alpha + \sqrt{d^2 - x^2}
- \begin{align*} P\{(X, Y) \in \text{disc} ~ \mid X = x\}  &= P\{\alpha - \sqrt{d^2 - x^2} < Y < \alpha + \sqrt{d^2 - x^2}\}\\ &= \Phi\left (\alpha + \sqrt{d^2 - x^2}\right)  - \Phi\left (\alpha - \sqrt{d^2 - x^2}\right)  \end{align*} 
- P\{(X, Y) \in \text{disc} \} = \int_{-d}^d \left [ \Phi\left (\alpha + \sqrt{d^2 - x^2}\right)  - \Phi\left (\alpha - \sqrt{d^2 - x^2}\right) \right ]\phi(x) \mathrm dx. 
-\alpha = 0
-1 - \exp(-d^2)
-\alpha \neq 0
-(X,Y)
-2d
-(X, Y)
-\sqrt{2}d
- \begin{align*} P\{\vert X \vert < d, \alpha - d < Y < \alpha + d\}  &= P\{\vert X \vert < d\}P\{\alpha - d < Y < \alpha + d\}\\ &=\left [\Phi(d) - \Phi(-d)\right ] \left [\Phi(\alpha + d) - \Phi(\alpha -d)\right ] \end{align*} 
-\Phi
-dx
-du
-u = \Phi(x)
- \Phi'(x) = \frac{1}{\sqrt{2\pi}} \exp\left(\frac{-x^2}{2}\right), 

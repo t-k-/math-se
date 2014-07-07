@@ -1,15 +1,0 @@
-f\colon \mathbb{R} \to\mathbb{R} 
- f(f(x)) = -x
-\{A,B\}
-|A|=|B|=|\mathbb{R}|
-\varphi:A\to B
-f:\mathbb{R}\to\mathbb{R}
-f(x)=\begin{cases} 0,&\text{if }x=0\\ \varphi(x),&\text{if }x\in A\\ -\varphi^{-1}(x),&\text{if }x\in B\\ -\varphi(-x),&\text{if }-x\in A\\ \varphi^{-1}(-x),&\text{if }-x\in B\;. \end{cases}
-\begin{align*} f(f(x))&=\begin{cases} 0,&\text{if }x=0\\ f(\varphi(x)),&\text{if }x\in A\\ f(-\varphi^{-1}(x)),&\text{if }x\in B\\ f(-\varphi(-x)),&\text{if }-x\in A\\ f(\varphi^{-1}(-x)),&\text{if }-x\in B\;. \end{cases}\\\\ &=\begin{cases} 0,&\text{if }x=0\\ -\varphi^{-1}(\varphi(x)),&\text{if }x\in A\\ -\varphi(\varphi^{-1}(x)),&\text{if }x\in B\\ \varphi^{-1}(\varphi(-x)),&\text{if }-x\in A\\ \varphi(\varphi^{-1}(-x)),&\text{if }-x\in B \end{cases}\\\\ &=-x\;. \end{align*}
-f
-A,B,-A
--B
-A\stackrel{f}\longrightarrow B\stackrel{f}\longrightarrow -A\stackrel{f}\longrightarrow -B\stackrel{f}\longrightarrow A
-0
--A= \{-a:a\in A\}
--B

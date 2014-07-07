@@ -1,27 +1,0 @@
-\sum_{n=1}^{\infty}\ln\left(1+\frac{1}{n^k}\right)
-L = 1
-0<x<1
-\log(1+x)\leq x
-\log (1+n^{-k}) \leq n^{-k}
-k \leq 1
-k=1
-1+1/n = (n+1)/n
-\log( (n+1)/n)
-\log(n+1)-\log(n)
-dv=1\,dx
- \int \ln(1+x^{-k})\, dx, 
- \int \underbrace{\ln(1+x^{-k})}_u\underbrace{1\cdot  dx\vphantom{(}}_{dv} =  \underbrace{\ln(1+x^{-k})}_u \cdot  \underbrace{x\vphantom{(}}_v- \int  \underbrace{\vphantom{k\over x}x}_v\cdot  \underbrace{{-kx^{-k-1}\over 1+x^{-k}}\,dx }_{du} . 
- \int \ln(1+x^{-k})\, dx=\underbrace{\vphantom{\int} x\ln(1+x^{-k})}_{=A} +\underbrace{\int  { k \over  x^k+1}\,dx}_{=B} 
-A
-B
-x
-B
-\int_1^\infty {k\over x^k+1}\,dx
-k>1
-k\le 1
- {k\over 2x^k}<{k\over 1+x^k}\le {k\over x^k}.
-k>1
-\int_1^\infty {k\over x^k+1}\,dx
-k>1
-k>1
-\eqalign{\lim_{x\rightarrow\infty} A &=\lim_{x\rightarrow\infty}  {\ln(1+x^{-k})\over 1/x}\cr  &=\lim_{x\rightarrow\infty}  {-kx^{-k-1}/(1+x^{-k}) \over -1/x^2}\cr &= \lim_{x\rightarrow\infty} {kx^{-k+1}\over1+x^{-k}}\cr &= 0.  }

@@ -1,7 +1,0 @@
-\sum_{k=1}^n \sqrt{k}=\Theta(n\sqrt{n})
-\sum_{i=1}^n \sqrt{i} \leq \sum_{i=1}^n \sqrt{n}=n \sqrt{n}
-\sum_{i=1}^n \sqrt{i}  \geq \sum_{i=\lfloor \frac{n+1}{2} \rfloor}^n \sqrt{i} \geq \sum_{i=\lfloor \frac{n+1}{2} \rfloor}^n \sqrt{\frac{n}{2}} \geq \frac{n-1}{2} \sqrt{\frac{n}{2}}= \frac{n\sqrt{n}}{2 \sqrt{2}}-\sqrt{\frac{n}{8}}
-\int_{i-1}^i\sqrt{x}\,dx\leq \sqrt{i}\leq \int_{i}^{i+1}\sqrt{x}\,dx
-\int_{0}^{n}\sqrt{x}\,dx\leq \sum_{i=1}^n\sqrt{i}\leq \int_{1}^{n+1}\sqrt{x}\,dx
-\int_{0}^{n}\sqrt{x}\,dx = \frac23 n^{3/2}
-\int_{1}^{n+1}\sqrt{x}\,dx = \frac23(n+1)^{3/2} - \frac23 < \frac23(2n)^{3/2} = O(n^{3/2})

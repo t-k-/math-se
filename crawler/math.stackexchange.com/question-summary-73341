@@ -1,5 +1,0 @@
-\int_0^\infty L_{n_1}(x)\cdots L_{n_r}(x)\mathrm e^{-x}\mathrm dx\;,
-\frac1{(2n)!}\int_0^\infty\left(x^2-4x+2\right)^n\mathrm e^{-x}\mathrm dx\;,
-\mathrm e^{-2}
-n\to\infty
- \begin{eqnarray} \frac1{(2n)!}\int_0^\infty\left(x^2-4x+2\right)^n\mathrm e^{-x}\mathrm dx &=& \frac1{(2n)!}\int_0^\infty\left((x-2)^2-2\right)^n\mathrm e^{-x}\mathrm dx \\ &\approx& \frac1{(2n)!}\int_2^\infty\left((x-2)^2-2\right)^n\mathrm e^{-x}\mathrm dx \\ &=& \frac{\mathrm e^{-2}}{(2n)!}\int_0^\infty\left(x^2-2\right)^n\mathrm e^{-x}\mathrm dx \\ &=& \frac{\mathrm e^{-2}}{(2n)!}\int_0^\infty\sum_{k=0}^n\binom nk(-2)^kx^{2(n-k)}\mathrm e^{-x}\mathrm dx \\ &=& \frac{\mathrm e^{-2}}{(2n)!}\sum_{k=0}^n\binom nk(-2)^k\int_0^\infty x^{2(n-k)}\mathrm e^{-x}\mathrm dx \\ &=& \frac{\mathrm e^{-2}}{(2n)!}\sum_{k=0}^n\binom nk(-2)^k(2(n-k))! \\ &=& \frac{\mathrm e^{-2}}{(2n)!}(2n)!\left(1-\frac1{2n-1}+\dotso\right) \\ &\approx& \mathrm e^{-2}\;. \end{eqnarray} 

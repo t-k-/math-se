@@ -1,9 +1,0 @@
-\color{darkred}{\mbox{Proof:}}
-P(n)
-\sum_{i=1}^{n}{\frac{i}{2^i}}=2-\frac{n+2}{2^n}
- \begin{align*} \sum_{i=1}^{n+1}{\frac{i}{2^i}}&=\color{darkred}{\underbrace{\sum_{i=1}^{n}{\frac{i}{2^i}}}_\text{P(n) is true}}+\frac{n+1}{2^{n+1}} \tag{LHS} \\ &=\color{darkred}{2-\frac{n+2}{2^n}} + \frac{n+1}{2^{n+1}}\\ &=\frac{2^{n+1}-n-2}{2^n} + \frac{n+1}{2^{n+1}}\\ &=\frac{2\cdot 2^{n+1}-2n-4+n+1}{2^{n+1}}\\ &=\frac{2\cdot 2^{n+1}-n-3}{2^{n+1}}\tag{2}\\ \end{align*} 
- \begin{align*} 2-\frac{(n+1)+2}{2^{n+1}}&=\frac{2\cdot 2^{n+1}-n-3}{2^{n+1}} \tag{RHS} \end{align*} 
-\sum_{i=1}^{n+1}{\frac{i}{2^i}}\stackrel{}{=}2-\frac{(n+1)+2}{2^{n+1}} \tag{3}
-\rm\ F(n)\ =\ \sum_{i\: =\: 1}^n\:\ f(i)\ \  \iff\ \ \ F(n) - F(n\!-\!1)\ =\ f(n),\quad\  F(0) = 0
-\rm\ F(n)\ =\ 2 - \frac{n\!+\!2}{2^n}\ \ \Rightarrow\ \ F(n)-F(n\!-\!1)\ =\: \frac{n}{2^n}\:.\ 
-\sum\limits_{i=1}^n \frac{i}{2^i} = \sum\limits_{i=1}^n \frac{1}{2^i}+ \sum\limits_{i=2}^{n} \frac{1}{2^i} + \dots + \sum\limits_{i=n}^n \frac{1}{2^i}= \sum\limits_{j=1}^n \sum\limits_{i=j}^n \frac{1}{2^i}

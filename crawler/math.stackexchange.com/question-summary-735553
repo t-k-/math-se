@@ -1,9 +1,0 @@
- \det(A - \lambda I) = (-1)^n \cdot [\lambda^n + c_1\lambda^{n-1} + ... + c_n ] 
- \det(A - \lambda I) = (-1)^n\lambda^n + (-1)^{n-1}tr(A)\lambda^{n-1} + ... + \det(A)
- \det(A - \lambda I) = \begin{pmatrix} a_{11}-\lambda & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22}-\lambda & \cdots & a_{2n} \\ \cdots & \cdots & \cdots & \cdots \\ a_{n1} & a_{n2} & \cdots & a_{nn}-\lambda \end{pmatrix}
- \det(A - \lambda I) = \begin{pmatrix} a_{11}-\lambda & a_{12} & \cdots & a_{1n} & a_{1(n+1)} \\ a_{21} & a_{22}-\lambda & \cdots & a_{2n} & a_{2(n+1)} \\ \cdots & \cdots & \cdots & \cdots & \cdots \\ a_{(n+1)1} & a_{(n+1)2} & \cdots & \cdots & a_{(n+1)(n+1)} -\lambda \end{pmatrix}
-(a_{11} - \lambda ) \cdot \det \begin{pmatrix} a_{22} - \lambda & \cdots & a_{2 (n+1)} \\ \cdots & \cdots & \cdots \\ a_{(n+1)2} & \cdots & a_{(n+1)(n+1)}- \lambda \end{pmatrix} - (a_{12})\cdot \det \begin{pmatrix} a_{21}  & \cdots & a_{2 (n+1)} \\ \cdots & \cdots & \cdots \\ a_{(n+1)1} & \cdots & a_{(n+1)(n+1)}- \lambda \end{pmatrix} + \cdots + (-1)^n \cdot (a_{1(n+1)}) \det \begin{pmatrix} a_{21} - \lambda & \cdots & a_{2n} \\ \cdots & \cdots & \cdots \\ a_{(n+1)1} & \cdots & a_{nn} \end{pmatrix} = (a_{11}-\lambda)\cdot A_{11} - (a_{12})\cdot A_{12} + \cdots + (-1)^n\cdot(a_{1(n+1)})\cdot A_{1(n+1)}
-A_{1i}
-(n \times n)
-1\times 1
-(n+1)\times(n+1)

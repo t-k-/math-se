@@ -1,9 +1,0 @@
-f:\mathbb{R}^2\to\mathbb{R}
-f(x,y):= \sqrt{|xy|}
-u = (a,b)\in\mathbb{R}^2
-t\neq 0
-x\neq 0 
-y\neq 0
-\frac{\sqrt{|(x+ta)(y+tb)|}-\sqrt{|xy|}}{t} = \frac{|(x+ta)(y+tb)| - |xy|}{t[\sqrt{|(x+ta)(y+tb)|}+\sqrt{|xy|}]} = 
- = \frac{|xy + tbx + tay + t^2 ab| - |xy|}{t[\sqrt{|xy + tbx + tay + t^2 ab|}+\sqrt{|xy|}]} \leq \frac{\big ||xy + tbx + tay + t^2 ab| - |xy|\big|}{t[\sqrt{|xy + tbx + tay + t^2 ab|}+\sqrt{|xy|}]}\leq\frac{| tbx + tay + t^2 ab| }{t[\sqrt{|xy + tbx + tay + t^2 ab|}+\sqrt{|xy|}]} = \frac{|t|| bx + ay + tab| }{t[\sqrt{|xy + tbx + tay + t^2 ab|}+\sqrt{|xy|}]} \leq \frac{| bx + ay + tab| }{\sqrt{|xy + tbx + tay + t^2 ab|}+\sqrt{|xy|}} \to \frac{|ax + by|}{2\sqrt{|xy|}}\text{ as } t\to 0
-\operatorname{D}_{u}f(x,y) = \frac{|ax + by|}{2\sqrt{|xy|}}?\;\;\;\;\;\; (*)

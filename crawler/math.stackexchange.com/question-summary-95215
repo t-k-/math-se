@@ -1,43 +1,0 @@
-F
-k
-E \to M
-F
-\omega
-E
-\int_F: \Omega^*(E) \to \Omega^{*-k}(E)
-i: \partial F \to F
-d \int_F \omega=\int_F d\omega \pm \int_{\partial F}i^*\omega
-U\subset M
-\pi^{-1}(U) \cong U\times F
-\pi: E\to M
-\omega
-U
-\phi: U\times V \to \mathbb R^m\times \mathbb R^k
- U\subset M
-V\subset F
-\omega
-\omega = \sum_{I} f_I(x,y) \, dx^I \wedge dy^1 \wedge \ldots \wedge dy^k
-I = (i_1, \ldots, i_s)
-x^1, \ldots, x^m
-U
-y^1, \ldots, y^k
-V
-\int_F \omega = \sum_{I} \left(\int_{\mathbb X} f(x,y) \; dy^1 \dots  dy^k\right) \, dx^I
-\mathbb X = \mathbb R^k
-\mathbb R^{k-1}\times \mathbb R_{\ge 0}
-V
-V \cap \partial F = \varnothing
-V \cap \partial F \ne \varnothing
-d\int_F \omega = \int_F d\omega + (-1)^{q-k}\int_{\partial F} \omega
-\omega
-q
-E
-\phi: U\times V \to \mathbb R^m\times \mathbb R^k
-(\psi_i)_{i\in I}
- \begin{align} d\int_F \omega &= \sum_{i\in I}\; d\left( \int_F \psi_i \omega \right) \\ &=  \sum_{i\in I}\; \int_F d \psi_i\omega + (-1)^{q-k} \sum_{i\in I}\; \int_{\partial F} \psi_i \omega \\ &= \int_F d\left( \sum_{i\in I} \psi_i\omega \right)+ (-1)^{q-k} \sum_{i\in I}\; \int_{\partial F} \psi_i \omega \\  &= \int_F d\omega + (-1)^{q-k} \int_{\partial F} \omega \end{align} 
-\omega
-\begin{align} \int_{F} d\omega  &= (-1)^{q}\left( \int_{\mathbb R^{k-1}\times \mathbb R_{\ge 0}} \frac{\partial f}{\partial y_k}(x,y) \,  dy^1 \dots dy^k\right)\,  dx^I \\  &\quad  + \sum_{i = 1}^n\,  \int_{F} \frac{\partial f}{\partial x_i}(x,y)   \, dx^i \wedge dx^I \wedge dy^1\wedge \ldots \wedge dy^{k-1} \\ &= (-1)^{q+1}\left(\int_{\mathbb R^{k-1}} f(x,y^1, \dots,y^{k-1}, 0) \,  dy^1 \dots dy^{k-1}\right)\,  dx^I \\ \end{align}
-\int_{\partial F}  \omega = \left[(-1)^{k}\int_{\mathbb R^{k-1}} f(x,y^1, \dots,y^{k-1}, 0) \,  dy^1 \dots dy^{k-1}\right] \, dx^I = (-1)^{q-k+1} \int_F d\omega
-d\int_F \omega = 0 = \int_{\partial F} \omega + (-1)^{q-k}\int_F d\omega
-\omega = f(x,y) \, dy^{1} \wedge \ldots \wedge dy^{{k-1}}
-\int_{\partial F}\omega = \int_F d\omega

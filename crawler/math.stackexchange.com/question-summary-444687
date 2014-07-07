@@ -1,8 +1,0 @@
-\{X_k=\min\{X_1,\ldots,X_n\}\}
-X_j\geq X_k
-j
-X_k
-x_k
-X_j\geq x_k
-j\neq k
- \begin{align*} P(X_k=\min\{X_1,\ldots,X_n\})&=\int_0^{\infty}\left[\prod_{\substack{1\leq j\leq n\\j\neq k}}\int_{x_k}^{\infty}\lambda_je^{-\lambda_jx_j}\,dx_j\right]\lambda_k e^{-\lambda_k x_k}\,dx_k\\ &=\int_0^{\infty}\left[\prod_{\substack{1\leq j\leq n\\j\neq k}}e^{-\lambda_j x_k}\right]\lambda_ke^{-\lambda_kx_k}\,dx_k\\ &=\int_0^{\infty}\lambda_k e^{-(\lambda_1+\cdots+\lambda_n)x_k}\,dx_k\\ &=\frac{\lambda_k}{\lambda_1+\cdots+\lambda_n}. \end{align*} 

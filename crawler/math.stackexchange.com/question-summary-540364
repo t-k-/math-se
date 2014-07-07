@@ -1,6 +1,0 @@
-\approx
-\begin{align} & 10,000e^{-\int_2^{10}\left(0.05+\frac{0.01}{t+1}\right)\,dt} \\ \\ & 10,000e^{-\left[0.05t+0.01\frac{1}{0.5t^2+t}\ln|t+1|\right]_2^{10}} \\ \\ & 10,000e^{-\left[\left(0.05(10)+\frac{0.01}{0.5(10)^2+10}\ln11\right)-\left(0.05(2)(+\frac{0.01}{0.5(2)^2+2}\ln3\right)\right]} \\ \\ \\ & 10,000e^{-\left[\left(0.5+\frac{0.01}{60}\ln11\right)-\left(0.1+\frac{0.01}{4}\ln3\right)\right]}\\ \\ \approx& 6,719 \end{align}
-\frac{1}{t+1}dt
-u=t+1, du=dt
-\int\frac{1}{u}du=\ln|u|+C=\ln|t+1|+C
-\int 0.05+\frac{0.01}{t+1}dt = \int 0.05dt + 0.01\int\frac{1}{t+1}dt=0.05t+0.01\ln |t+1|+C

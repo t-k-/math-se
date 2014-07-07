@@ -1,4 +1,0 @@
-\sum_{i=1}^n 2i\binom{2n}{n-i}= n\binom{2n}{n}
-2i=(n+i)-(n-i)
-k=n-i
-\begin{align*} \sum_{i=0}^n2i\binom{2n}{n-i}&=\sum_{k=0}^{n-1}2(n-k)\binom{2n}k\\ &=2n\sum_{k=0}^{n-1}\binom{2n}k-2\sum_{k=0}^{n-1}k\binom{2n}k\\ &=2n\sum_{k=0}^{n-1}\binom{2n}k-4n\sum_{k=1}^{n-1}\binom{2n-1}{k-1}\\ &=2n\left(\sum_{k=0}^{n-1}\binom{2n}k-2\sum_{k=0}^{n-2}\binom{2n-1}k\right)\\ &=2n\left(\sum_{k=0}^{n-1}\binom{2n}k-\sum_{k=0}^{n-2}\left(\binom{2n-1}k+\binom{2n-1}{2n-1-k}\right)\right)\\ &=2n\left(\sum_{k=0}^{n-1}\binom{2n}k-\sum_{k=0}^{n-2}\binom{2n-1}k-\sum_{k=n+1}^{2n-1}\binom{2n-1}k\right)\\ &=2n\left(\sum_{k=0}^{n-1}\binom{2n}k-\left(2^{2n-1}-\binom{2n-1}{n-1}-\binom{2n-1}n\right)\right)\\ &=2n\left(\sum_{k=0}^{n-1}\binom{2n}k-2^{2n-1}+\binom{2n}n\right)\\ &=n\left(2\sum_{k=0}^{n-1}\binom{2n}k-2^{2n}+2\binom{2n}n\right)\\ &=n\left(2^{2n}-\binom{2n}n-2^{2n}+2\binom{2n}n\right)\\ &=n\binom{2n}n\;. \end{align*}

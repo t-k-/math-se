@@ -1,31 +1,0 @@
-n
-[f(x)g(x)h(x)]' = [f(x)p(x)]'
-p(x) = g(x)h(x)
-[f(x)p(x)]' = f'(x)p(x) + f(x)p'(x) = f'(x)p(x) + f(x)[g(x)h(x)]'
-f'(x)p(x) + f(x)[g(x)h(x)]' = f'(x)g(x)h(x) + f(x)[g'(x)h(x) + g(x)h'(x)]'
-f'(x)g(x)h(x) + f(x)g'(x)h(x) + f(x)g(x)h'(x)
-\Big[\prod_{i=1}^{n}f_i(x)\Big]'= f_1'(x)g_1(x) + f_1(x)g'_1(x)
-g_m(x)=$$\prod_{i=1}^{n-m}f_i(x)
-g'_{m-1}=[f_m(x)g_m(x)]'=f'_m(x)g_m(x) + f_m(x)g'_m(x)
-\Big[\prod_{i=1}^{n}f_i(x)\Big]'=\sum_{i=1}^{n}f'_i(x)h_i(x)
-h_i(x)=\frac{1}{f_i(x)}\prod_{j=1}^nf_j(x)
-n
-n = 1
-n = 2
-n
-n+1
-f_1f_2...f_{n+1}
-f_1g
-g = f_2..f_{n+1}
-f_1g
-g'
-g
-n
-g'
-n
-n=1
-n=2
-n
-n+1
-\left(\prod_{i=1}^n f_i(x)\right)' = \sum_{i=1}^n \left(f_i'(x)\prod_{\stackrel{1\leq j\leq n}{i\neq j}}f_j(x)\right)
-\begin{align*} \left(\prod_{i=1}^{n+1}f_i(x)\right)' &= \left(\left(\prod_{i=1}^n f_i(x)\right)f_{n+1}(x)\right)'\\ &= \left(\prod_{i=1}^nf_i(x)\right)'f_{n+1}(x) + \left(\prod_{i=1}^nf_i(x)\right)f_{n+1}^{'}(x)\\ &= \left(\sum_{i=1}^nf_i'(x)\prod_{\stackrel{1\leq j\leq n}{i\neq j}}f_j(x)\right)f_{n+1}(x) + \left(\prod_{i=1}^nf_i(x)\right)f_{n+1}^'(x)\\ &= \sum_{i=1}^nf_i'(x)\prod_{\stackrel{1\leq j\leq n+1}{i\neq j}}f_j(x) + \left(\prod_{i=1}^nf_i(x)\right)f_{n+1}^'(x)\\ &=\sum_{i=1}^{n+1} f_i'(x)\prod_{\stackrel{1\leq j\leq n+1}{i\neq j}}f_j(x), \end{align*}

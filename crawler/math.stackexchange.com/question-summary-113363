@@ -1,31 +1,0 @@
-F
-x^2 + y^2 + z^2 = a^2
-F = zx\hat{i} + zy\hat{j} + z^2\hat{k}
-F
-S
-r(s,t)
-S
-D
-r
- \int\!\!\!\!\int_S F\cdot n\, dS =  \int\!\!\!\!\int_D F(r(s,t))\cdot (r_s\times r_t)\, dsdt, 
-S
-\theta
-\phi
-\pi/2
- r(\theta, \phi)=(a\cos\theta\sin\phi, a\sin\theta\sin\phi, a\cos\phi),\ \ 0\leq\theta\leq\frac\pi2,\ \ 0\leq\phi\leq\frac\pi2. 
- r_\theta=(-a\sin\theta\sin\phi,a\cos\theta\sin\phi, 0),\ \ \ r_\phi=(a\cos\theta\cos\phi, a\sin\theta\cos\phi, -a\sin\phi). 
- \int\!\!\!\!\int_S F\cdot n\, dS = \int_0^{\pi/2}\!\!\int_0^{\pi/2}a^4\sin\phi\cos\phi\,d\theta d\phi=\frac\pi2\,a^4\left.\frac{\sin^2\phi}2\right|_0^{\pi/2}=\frac{\pi a^4}4 
-\int_R F \cdot n \,dS
-R
-x^2 + y^2 + z^2 = a^2
-x,y,z \geq 0
-F \cdot n 
-R
-\int_O div\, F \,dx\,dy\,dz
-O
-x,y,z \geq 0
-\int_O 4z \,dx\,dy\,dz
-\int_0^{\pi \over 2} \int_0^{\pi \over 2}\int_0^a 4\rho^3 \cos(\phi)\sin(\phi)\,d\rho\,d\theta\,d\phi
-= {\pi \over 2}\int_0^a 4\rho^3\,d\rho\int_0^{\pi \over 2}\cos(\phi)\sin(\phi)\,d\phi
-= {\pi a^4 \over 2}\bigg({1 \over 2}\sin^2(\phi)\big|_{\phi = 0}^{\phi = {\pi \over 2}}\bigg)
-= {\pi a^4 \over 4}

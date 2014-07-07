@@ -1,22 +1,0 @@
-U=\{(u,v)\in {R}^2:u>0\}
-F:U \rightarrow R^2
-F(u,v)= (u\cos(v),u\sin(v))= (x,y)
-F
-U
-\Large \frac{\partial u}{\partial x},\frac{\partial u}{\partial y},\frac{\partial v}{\partial x},\frac{\partial v}{\partial y}
-u
-x
-y
-u=\sqrt{x^2+y^2}
-x
-x^2+y^2=u^2(\sin^2(v)+\cos^2(v))
-F
-x
-y
-\cos v = x/u
-\sin v = y/u
-u=\sqrt{x^2+y^2}
- \begin{bmatrix} \dfrac{\partial u}{\partial x} & \dfrac{\partial u}{\partial y} \\ \\ \dfrac{\partial v}{\partial x} & \dfrac{\partial v}{\partial y} \end{bmatrix} \qquad\text{and}\qquad \begin{bmatrix} \dfrac{\partial x}{\partial u} & \dfrac{\partial x}{\partial v} \\ \\ \dfrac{\partial y}{\partial u} & \dfrac{\partial y}{\partial v} \end{bmatrix} 
- \begin{bmatrix} \dfrac{\partial x}{\partial u} & \dfrac{\partial x}{\partial v} \\ \\ \dfrac{\partial y}{\partial u} & \dfrac{\partial y}{\partial v} \end{bmatrix} \;\;=\;\; \begin{bmatrix} \cos v & -u \sin v \\ \sin v & u\cos v \end{bmatrix} 
- \begin{bmatrix} \dfrac{\partial u}{\partial x} & \dfrac{\partial u}{\partial y} \\ \\ \dfrac{\partial v}{\partial x} & \dfrac{\partial v}{\partial y} \end{bmatrix} \;\;=\;\; \frac{1}{u} \begin{bmatrix} u\cos v & u \sin v \\ -\sin v & \cos v \end{bmatrix} 
- \begin{bmatrix} \dfrac{\partial u}{\partial x} & \dfrac{\partial u}{\partial y} \\ \\ \dfrac{\partial v}{\partial x} & \dfrac{\partial v}{\partial y} \end{bmatrix} \;\;=\;\; \begin{bmatrix} x/u & y/u \\ -y/u^2 & x/u^2 \end{bmatrix} 

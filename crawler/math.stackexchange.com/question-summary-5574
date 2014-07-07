@@ -1,15 +1,0 @@
-d(n)
-d(n)=\displaystyle\sum\limits_{k|n}1
-D(x)=\displaystyle\sum\limits_{n \leq x}d(n)
-D(n)
- \begin{array}{ccccccccc} D(1)=&&&&&&&&& 1 &&&&&&&&&&=1\\ &\\ D(2)=&&&&&&&& 2 &+& 1 &&&&&&&&&=3\\ &\\ D(3)=&&&&&&& 3 &+& 1 &+& 1 &&&&&&&&=5\\ &\\ D(4)=&&&&&& 4 &+& 2 &+& 1 &+& 1 &&&&&&&=8\\ &\\ D(5)=&&&&&5 &+& 2 &+& 1 &+& 1 &+& 1&&&&&&=10\\ &\\ D(6)=&&&&6 &+& 3 &+& 2 &+& 1 &+& 1 &+& 1&&&&&=14\\ &\\ D(7)=&&&7 &+& 3 &+& 2 &+& 1 &+& 1 &+& 1&+& 1 &&&&=16\\ &\\ D(8)=&&8 &+& 4 &+& 2 &+& 2 &+& 1 &+& 1&+& 1&+&1&&&=20\\ &\\ \end{array} 
-v_{m}(n)
-m
-n
- m,n \in  \mathbb{N}
-D(n)=\displaystyle\sum\limits_{m=2}^{\infty}v_{m}(p^{n}), p \in  \mathbb{P}
-p
-D(x) = \sum_{n \le x} d(n) = \sum_{n \le x} \sum_{d | n} 1 = \sum_{d \le x} \lfloor \frac{x}{d} \rfloor
-d
-x
- D(n)=\sum_{k=1}^{\lfloor\sqrt{n}\rfloor}\left(2 \cdot \left\lfloor \frac{n-k^2}{k}\right\rfloor+1\right) 

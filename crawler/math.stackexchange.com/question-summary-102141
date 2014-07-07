@@ -1,22 +1,0 @@
-V_i,V_j,D
-H
- H_{ij} = \mathrm E(V_i V_j) - \mathrm E(\mathrm E(V_i\mid D)\mathrm E(V_j\mid D)) 
-H
-\langle V_i, V_j \rangle = H_{ij}
-H
- \langle V_i, V_j \rangle = \langle V_j, V_i \rangle  
- \langle aV_i, V_j \rangle = a \langle V_j, V_i \rangle 
- \langle V_i, V_i \rangle \geq 0 
- \mathrm E(V_i^2) - \mathrm E(\mathrm E(V_i\mid D)^2) \geq 0 
- \mathrm E(V_i^2) - \mathrm E(V_i)^2 \geq 0 
- Var(V_i) \geq 0 
-\mathrm E(V_i)^2 \leq \mathrm E(V_i^2)
-\langle V_i, V_i \rangle \geq 0
-H_{ij}
- H_{ij} = \mathrm E(V_i V_j) - \mathrm E(\mathrm E(V_i\mid D)\mathrm E(V_j\mid D)) 
- \begin{align} Cov(X,Y|Z) & = E[(X-E[X|Z])(Y-E[Y|Z])] \\            & = E[XY] - E[X|Z]E[Y|Z] \end{align} 
- H_{ij} = E[Cov(V_i,V_j|Z)] 
- A_{ij} = Cov(V_i,V_j|Z) 
- x^TAx \geq 0  \quad \forall x 
- E[x^TAx] =x^TE[A]x = x^THx \geq 0  \quad \forall x 
-H

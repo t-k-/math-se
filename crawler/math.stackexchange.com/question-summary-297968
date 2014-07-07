@@ -1,6 +1,0 @@
-\displaystyle f(x)= \sum_{n=1}^{\infty} \frac{\sin nx }{n^4}
-\displaystyle \int_0^{x} f(t)\ \mathrm{d}t
- \int_{0}^{x}f(t)dt=\sum_{n=1}^{\infty}\frac{1}{n^4}\int_{0}^{x}\sin(nt) dt=\sum_{n=1}^{\infty}\frac{1}{n^4}\left(  \frac{1}{n}-\frac{\cos(nx)}{n} \right) 
- \implies \int_{0}^{x}f(t)dt=\sum_{n=1}^{\infty}\frac{1}{n^5}-\sum_{n=1}^{\infty}\frac{\cos(nx)}{n^5} 
-\implies  f(x)=\zeta(5)-\frac{1}{2}\sum_{n=1}^{\infty} \frac{e^{inx} }{n^5} - \frac{1}{2}\sum_{n=1}^{\infty} \frac{e^{-inx} }{n^5} 
- \implies f(x)=\zeta(5)-\frac{1}{2}( Li_{5}(e^{ix})+ Li_{5}(e^{-ix}) ),

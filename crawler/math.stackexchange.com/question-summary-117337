@@ -1,54 +1,0 @@
-n=2
-Z_1,\dots, Z_n
-a_1,\dots, a_n
-\mathbb{E}\left({\sum_{i=1}^n a_i^2 Z_i\over\sum_{i=1}^n a_i Z_i}\right) \leq {\sum_{i=1}^n a_i^2\over\sum_{i=1}^n a_i}.
-Z_1,\ldots,Z_n
-Z_i
-\bar a\equiv\sum_ia_i^2/\sum_ia_i
-c_i\equiv\mathbb{E}[Z_i/\sum_ja_jZ_j]
-\sum_ia_i(\bar a-a_i)=0
-\bar c
-c_i
-a_i
-c_i\le c_j
-a_i\ge a_j
-\bar c
-\bar c\ge c_i
-a_i\ge\bar a
-\bar c\le c_i
-a_i\le\bar a
- \bar a-\mathbb{E}\left[\frac{\sum_ia_i^2Z_i}{\sum_ia_iZ_i}\right]=\sum_ia_i(\bar a-a_i)\mathbb{E}\left[\frac{Z_i}{\sum_ja_jZ_j}\right]. 
- \bar a-\mathbb{E}\left[\frac{\sum_ia_i^2Z_i}{\sum_ia_iZ_i}\right]=\sum_ia_i(\bar a-a_i)(c_i-\bar c). 
-i\not=j
-a_i \ge a_j
-\pi
-\{1,\ldots,n\}
-i,j
-Z_i,Z_j
-c_i
-a_i
- c_i-c_j=\mathbb{E}\left[\frac{Z_i-Z_j}{\sum_ka_kZ_k}\right] 
- \begin{align} 2(c_i-c_j)&=\mathbb{E}\left[\frac{Z_i-Z_j}{\sum_ka_kZ_k}\right]-\mathbb{E}\left[\frac{Z_i-Z_j}{\sum_ka_kZ_{\pi(k)}}\right]\cr &=\mathbb{E}\left[\frac{(a_j-a_i)(Z_i-Z_j)^2}{\sum_ka_kZ_k\sum_ka_kZ_{\pi(k)}}\right]\cr &\le0. \end{align} 
-Z_i
-Z_1,\ldots,Z_n
-z_i = \text{const}
-n = 2
- \mathbb{E} \left[ \frac{1}{n!} \sum_{\pi \in S_n} \frac{\sum_{i=1}^n a_i^2 Z_{\pi(i)}}{\sum_{i=1}^n a_i Z_{\pi(i)}} \right] \leq \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i}. 
- \frac{1}{n!} \sum_{\pi \in S_n} \frac{\sum_{i=1}^n a_i^2 z_{\pi(i)}}{\sum_{i=1}^n a_i z_{\pi(i)}} \leq \frac{\sum_{i=1}^n a_i^2}{\sum_{i=1}^n a_i}. 
- f(x_1, x_2) = \frac{a_1^2x_1 + a_2^2x_2}{a_1x_1+a_2x_2}. 
-f
-I=\{(x_1,x_2) \mid x_1,x_2 \geq 0 \textrm{ and } x_1+x_2=1\}
- \frac{\partial^2}{\partial x^2} f(x, 1-x) = \frac{-2a_1a_2(a_1-a_2)^2}{(a_1x+a_2(1-x))^3} 
-x \in [0,1]
-(Z_1,Z_2)
-I
-(x_1,x_2) \mapsto (x_2, x_1)
-I
-\mathbb{E}(x_1) = \mathbb{E}(x_2) = \tfrac{1}{2}
-I
- \mathbb{E}(f(x_1,x_2)) \leq f(\mathbb{E}(x_1),\mathbb{E}(x_2)) = f(\tfrac{1}{2},\tfrac{1}{2}) = \frac{a_1^2+a_2^2}{a_1+a_2}. 
-f
-x_1+x_2 = \lambda
-\lambda > 0
-\lambda
-(Z_1,Z_2)

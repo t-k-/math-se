@@ -1,23 +1,0 @@
-\int_2^x\frac{\pi(t)}{t^2}dt=\sum_{p\leq x }\frac{1}{p}+o(1)\sim\log\log x.
-\rho(x)
-\delta>0
-T=T(\delta)
-\rho(x)>1+\delta
-x>T
-T
-\rho(x)<1-\delta
-x>T
-\lim \rho(x)
-1
-\rho(x)=\frac{\pi(x)}{x/ \log x}
-\lim \inf \rho(x)\leq 1 \leq \lim \sup \rho(x),
-\delta >0
-T \geqslant 2
-\rho(t) \geqslant 1+\delta
-t \geqslant T
-\ast
-t \geqslant T
-x
-\liminf \rho(x) \leqslant 1
- \pi(t) \geqslant (1+ \delta) \frac{t}{\ln t}, \tag{$\ast$} 
- \begin{align*} \int_2^x \frac{\pi(t)}{t^2} \, dt  & \geqslant \int_T^x \frac{\pi(t)}{t^2} \, dt  \\ &\stackrel{(\ast)}{\geqslant} \int_T^x (1 + \delta) \frac{t}{\ln t} \cdot \frac{1}{t^2}  \, dt \\ &=(1 + \delta) \int_T^x  \frac{1}{t \, \ln t}   \, dt \\ &= (1 + \delta) \cdot \left. \ln \ln t \right\vert_{t=T}^{t=x} \\ &= (1 + \delta) \cdot (\ln \ln x - \ln \ln T) \\ &\sim (1 + \delta) \cdot \ln \ln x, \end{align*} 

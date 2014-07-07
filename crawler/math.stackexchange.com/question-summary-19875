@@ -1,23 +1,0 @@
- \ell 
-A
-n \times n
-n
-n
-P = \left\{ \{k,k'\}, k \not= k' \in \{1,\ldots,2 \ell\} \right\}
-\left< \mathbf{x}, \mathbf{y} \right>
-\mathbf{x},\mathbf{y} \in \mathbb{R}^n
- \int_{\mathbb{R}^n} x_{i_1} \cdots x_{i_{2 \ell}} e^{-\frac{1}{2} \left< \mathbf{ x}, A \      \mathbf{x} \right>} d^n x = \frac{(2 \pi)^{n/2}}{\ell! \sqrt{\det{A}}} \sum\limits_{     \begin{array}     \{ \{ k_1,k_1'\},\ldots,\{k_\ell,k_\ell'\}\in P \\     \cup_{j=1}^\ell \{ k_j, k_j' \} = \{ 1,\ldots,2 \ell \}     \end{array} }     ( A^{-1} )_{i_{k_1},i_{k_1'}} \cdots ( A^{-1} )_{i_{k_\ell},i_{k_\ell'}}     
-A
-B = (A)^{-1/2}
-x = By
-dx = |B| dy
- \int_{\mathbb{R}^n} x_i x_j e^{-\frac12 xAx} dx = |B| \int_{\mathbb{R}^n} B_{ik}B_{jl}y_ky_l e^{-\frac12 y\cdot y} dy 
-|B| = |A|^{-1/2}
-B
-y_l
-\partial_l
-\partial_ly_k = \delta_{lk}
- B_{il}B_{jl} \int_{\mathbb{R}^n} e^{-\frac12 y\cdot y} dy 
-2\pi
-B_{il}B_{jl} = B^2 = A^{-1}_{ij}
-\ell > 1

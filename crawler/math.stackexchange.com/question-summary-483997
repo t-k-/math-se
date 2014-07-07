@@ -1,9 +1,0 @@
-f(x)
-f(x)\approx\sum_{i=0}^{2n-1}f(t_{j})L_{j}(t)
-t_{j}=\dfrac{\pi}{n}j
-L_{j}(t)=\dfrac{1}{2n}\left[1+2\displaystyle\sum_{m=1}^{n-1}\cos{m(t-t_{j})}+\cos{n(t-t_{j})}\right], j=0,1,2,\cdots,2n-1
-\hat{f}(m) = \sum_{j=0}^{2n-1} f(t_j) e_{-m}(t_j)
-\begin{eqnarray} 2n f(t_k) &=& \sum_{m=0}^{2n-1}\hat{f}(m)e_m(t_k)\\ &=& \sum_{j=0}^{2n-1}f(t_j)\sum_{m=0}^{2n-1}e_{-m}(t_j)e_m(t_k)\\ &=& \sum_{j=0}^{2n-1}f(t_j)\sum_{m=0}^{2n-1}e_m(t_k-t_j)\\ &=& \sum_{j=0}^{2n-1}f(t_j)\left(1+\cos n(t_k-t_j) + \sum_{m=1}^{n-1}e_m(t_k-t_j) + \sum_{m=1}^{n-1}e_{2n - m}(t_k-t_j)\right)\\ &=& \sum_{j=0}^{2n-1}f(t_j)\left(1+\cos n(t_k-t_j) + 2\sum_{m=1}^{n-1}\cos m(t_k-t_j)\right) \end{eqnarray}
-t_k
-x
-2\pi

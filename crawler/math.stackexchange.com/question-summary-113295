@@ -1,10 +1,0 @@
-x_1, x_2
-(0,1)
-x_2 / x_1
-X_2
-Z=X_1/X_2
-F_Z(z)=0
-z\leqslant 0
-z > 0
-  F_Z(z) = \mathbb{P}(Z \leqslant z) = \mathbb{P}(X_1 \leqslant z X_2) = \mathbb{E}_{X_2}\left( \mathbb{P}(X_1 \leqslant z X_2 | X_2)\right) = \mathbb{E}_{X_2}\left( F_{X_1}(z X_2)\right)  
-    F_Z(z) = \int_0^1 \left\{ \begin{array}{cl} z x_2 & 0 < x_2 <1/z \\ 1 & x_2 > 1/z \end{array} \right. \mathrm{d} x_2 = \frac{z}{2} \left(\frac{1}{\max(z,1)}\right)^2 + \left(1 - \frac{1}{\max(z,1)}\right) = \left\{\begin{array}{cl} \frac{z}{2}  & 0< z\leqslant 1 \\ 1-\frac{1}{2z} & z > 1 \end{array} \right.  

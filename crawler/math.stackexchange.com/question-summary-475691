@@ -1,5 +1,0 @@
-f(A) = \sum_i \left \| Y_{i} - AB_{i} \right \|^2 + \left \| A - A_\text{constant} \right \|^2
-A
- f(A)=∑_{i}∥Y_{i}−AB_{i}∥^2_F+∥A−A_{constant}∥^2_F
- f(A)=∑_i trace((Y_i−AB_i)(Y_i−AB_i)^T)+trace((A−A_{constant})(A−A_{constant})^T)= ∑_i trace(Y_i Y_i^T−AB_iY_i^T -Y_i B_i^T A^T+AB_i B_i^T A^T)+trace(AA^T−AA_{constant}^T-A_{constant} A^T−A_{constant}A_{constant}^T) 
- \frac{\mathrm \partial}{\mathrm \partial A}f(A)= ∑_i (-2 Y_i B_i^T-2 AB_i B_i^T)+ (2A −2A_{constant}^T) 

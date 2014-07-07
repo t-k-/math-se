@@ -1,62 +1,0 @@
-a
-\sigma
-\int_{-\infty}^{+\infty}\Phi\left(\frac{a-x}{\sigma}\right)\frac1{\sigma} \phi\left(\frac{x-a}{\sigma}\right)\mathrm dx=\frac12
-\Phi
-\phi
-a
-\sigma
-F
-(a,b)
-F(a) = 0
-F(b) = 1
-a = -\infty
-b=\infty
-F
-X
-F
-Y = F(X)
-(0,1)
-y \in (0,1)
-F^{-1}
-F
-(a,b)
- \renewcommand{\Pr}{\mathbb{P}} \Pr(Y \leq y) = \Pr( F(X) \leq y) = \Pr(X \leq F^{-1}(y)) = F( F^{-1}(y) ) = y \> , 
-Y
-(0,1)
-\newcommand{\e}{\mathbb{E}}\e Y = 1/2
-X \sim \mathcal{N}(a, \sigma^2)
-Y = \Phi((X-a)/\sigma)
-\e (1 - Y) = \e Y = 1/2
- \int_{-\infty}^\infty \int_{-\infty}^{- (x-a)/\sigma} \varphi(y) \frac{1}{\sigma} \varphi((x-a)/\sigma) \newcommand{\rd}{\mathrm{d}} \,\rd y \, \rd x = \int_{-\infty}^\infty \int_{-\infty}^{\sigma y + a} \varphi(y) \frac{1}{\sigma} \varphi((x-a)/\sigma) \,\rd x \, \rd y \> . 
-u = (x-a)/\sigma
- \int_{-\infty}^\infty \int_{-\infty}^y \varphi(u) \varphi(y) \, \rd u \,\rd y \>. 
- \int_{-\infty}^\infty \int_{-\infty}^y \varphi(u) \varphi(y) \, \rd u \,\rd y = \int_{-\infty}^\infty \int_u^\infty \varphi(u) \varphi(y) \, \rd y \,\rd u \>. 
-\varphi
-1/2
- \int_{-\infty}^\infty \int_{-\infty}^y \varphi(u) \varphi(y) \, \rd u \,\rd y + \int_{-\infty}^\infty \int_y^\infty \varphi(u) \varphi(y) \, \rd u \,\rd y = 1 \>, 
-\mathrm{erf}
-\Phi
-\phi(x)=\frac1{\sqrt{2\pi}}\exp\left(-\frac{x^2}{2}\right)
-\Phi(x)=\frac12\left(1+\mathrm{erf}\left(\frac{x}{\sqrt{2}}\right)\right)
-\frac1{2\sigma\sqrt{2\pi}}\int_{-\infty}^{\infty}\exp\left(-\frac{(x-a)^2}{2\sigma^2}\right)\left(1-\mathrm{erf}\left(\frac{x-a}{\sqrt{2}\sigma}\right)\right) \mathrm dx
-u=\frac{x-a}{\sqrt{2}\sigma}
-\mathrm du=\frac{\mathrm dx}{{\sqrt{2}\sigma}}
-\frac1{2\sqrt{\pi}}\int_{-\infty}^{\infty}\exp\left(-u^2\right)\left(1-\mathrm{erf}\left(u\right)\right) \mathrm du
-\int_{-\infty}^{\infty}f(u)\mathrm du=\frac12\int_{-\infty}^{\infty}(f(u)+f(-u)\mathrm du
-\mathrm{erf}
-\mathrm{erf}(-x)=-\mathrm{erf}(x)
-\frac1{2\sqrt{\pi}}\int_{-\infty}^{\infty}\exp\left(-u^2\right)\mathrm du
-\Phi'=\phi
-\Phi
-\pm\infty
-\Phi
-z=\displaystyle\Phi\left(\frac{x-a}{\sigma}\right)
-\mathrm{d}z=\displaystyle\phi\left(\frac{x-a}{\sigma}\right)\frac{\mathrm{d}x}{\sigma}=\displaystyle\phi\left(\frac{a-x}{\sigma}\right)\frac{\mathrm{d}x}{\sigma}
-\Phi'=\phi
-\phi
-z
-\Phi(-\infty)=0
-x=-\infty
-\Phi(+\infty)=1
-x=+\infty
-\displaystyle\int_0^1z\mathrm{d}z=\left[\frac{z^2}2\right]_0^1=\frac12

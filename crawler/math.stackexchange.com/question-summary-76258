@@ -1,25 +1,0 @@
-dr_t=c dt+\sigma dB_t
-B_t
-\mathbb{E}[e^{-\int_0^t r_s  ds} |r_t=r]
-r_t-r_0=ct+\int\sigma dB_t
-r_t
-\int_0^t r_s ds
-u_t
-u_0 = 0
-\lim_{s \to t+0^-} u_s = r
-u_s = r \frac{s}{t} + \left(1-\frac{s}{t}\right) W_{0,\sigma}\left( \frac{s}{t-s} \right)
-\mathrm{d} u_s = \left( \frac{r-u_s}{t-s} \right)\mathrm{d} s + \frac{\sigma}{\sqrt{t}} \mathrm{d} W_s
-w_s = \int_0^s u_\tau \mathrm{d} \tau
-    \mathbb{E}\left( \exp(-w_t) \right) = \exp\left( - \mathbb{E}(w_t)+ \frac{1}{2} \operatorname{Var}(w_t) \right) 
-w_s
-\mathrm{d} w_s = u_s \mathrm{d} s
-\mathrm{d}X_t = \mu_t \mathrm{d} t + \sigma_t \mathrm{d} B_t
-    \mathbb{E}( f(X_t)) = \mathbb{E}( f(X_0)) + \int_0^t \mathbb{E}\left( \mu_s f^\prime(X_s) + \frac{1}{2} \sigma_s^2 f^{\prime\prime}(X_s) \right) \mathrm{d} s  
-u_s
-w_s
-m_1(u_s) = \frac{r s}{t}
-m_2(u_s) = r^2 \frac{s^2}{t^2} + \sigma^2 \frac{s}{t} \frac{t-s}{t}
-  \begin{eqnarray}    m_1^\prime(u_s) &=& \frac{r - m_1(u_s)}{t-s} \land m_1(u_0) = 0 \\    m_2^\prime(u_s) &=& 2 \frac{r m_1(u_s) - m_2(u_s)}{t-s} + 2 \frac{\sigma^2}{2t} \land m_2(u_0) = 0  \end{eqnarray} 
-  \begin{eqnarray}     m_1^\prime(w_s) &=& m_1(u_s) \land m_1(w_0) = 0 \\     m_{11}^\prime(u_s w_s) &=& m_2(u_s) + \frac{r m_1(w_s) - m_{11}(u_s w_s)}{t-s} \land m_{11}(u_0 w_0) = 0 \\    m_2^\prime(w_s) &=& 2 m_{11}(u_s w_s) \land m_2(w_0) = 0  \end{eqnarray}  
-    m_1(w_s) = \frac{r t}{2} \frac{s^2}{t^2} \qquad    m_{11}(u_s w_s) = \frac{s^2 \left(r^2 s-s \sigma ^2+\sigma ^2 t\right)}{2 t^2}   \qquad    m_2(w_s) = \frac{s^3 \left(3 r^2 s-3 s \sigma ^2+4 \sigma ^2 t\right)}{12 t^2} 
-   \mathbb{E}(w_t) = \frac{r t}{2} \qquad   \operatorname{Var}(w_t) = \frac{\sigma^2 t^2}{12} 

@@ -1,19 +1,0 @@
-I \subset \mathbb{R}
-f: I \rightarrow \mathbb{R}
-n \geq 2, n \in \mathbb{N}
-\displaystyle f\left(\frac{x_1+x_2}{2}\right) \leq \frac{f(x_1)+f(x_2)}{2}  \textrm{ for } x_1, x_2 \in I
-\displaystyle f\left(\frac{x_1+...+x_n}{n}\right) \leq \frac{f(x_1)+...+f(x_n)}{n} \textrm{ for } x_1,...,x_n \in I
-a,b\in I
-n
-n=2p
-x_1=\ldots=x_p=a
-x_{p+1}=\ldots,=x_{2p}=b
-f\left(\frac 1{2p}\left(\sum_{j=1}^pa+\sum_{j=1}^pb\right)\right)\leq \frac{\sum_{j=1}^pf(a)+\sum_{j=1}^pf(b)}{2p},
-f\left(\frac{pa+pb}{2p}\right)\leq \frac{pf(a)+pf(b)}{2p}\Rightarrow f\left(\frac{a+b}2\right)\leq \frac{f(a)+f(b)}2.
-n=2p+1
-x_1=\ldots=x_p=a
-x_{p+1}=\ldots=x_{2p}=b
-x_{2p+1}=\frac{a+b}2\in I
-2pf\left(\frac{a+b}2\right)\leq p(f(a)+f(b))
-f\left(\frac{a+b}2\right)=f\left(\frac{pa+\frac a2+pb+\frac b2}{2p+1}\right)\leq  \frac{pf(a)+pf(b)+f\left(\frac{a+b}2\right)}{2p+1}
-f\left(\frac{a+b}2\right)\left(1-\frac 1{2p+1}\right)\leq p\frac{f(a)+f(b)}{2p+1}

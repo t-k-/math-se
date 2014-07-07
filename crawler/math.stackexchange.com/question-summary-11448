@@ -1,123 +1,0 @@
-n
-k
-1 \leq k \leq n
-\sum_{k=1}^n {n \choose k}{n \choose k-1} = \frac12{2n+2 \choose n+1} - {2n \choose n}
-A
-B
-C
-A
-n
-B
-n
-C
-2
-n+1
-C(2n+2,n+1)
-2
-C
-n-1
-A
-B
-1
-C
-n
-A
-B
-n+1
-A
-B
-\textbf{Case 1:}
-2
-C
-2
-C
-n-1
-A
-B
-k
-A
-n-k-1
-B
-k
-A
-n-k-1
-B
-C(n,k)C(n,n-k-1)
-k
-0
-n-1
-\displaystyle \sum_{k=0}^{n-1} C(n,k)C(n,n-k-1)
-C(n,r) = C(n,n-r)
-1 \times \displaystyle \sum_{k=0}^{n-1} C(n,k)C(n,k+1) = \displaystyle \sum_{k=1}^{n} C(n,k-1)C(n,k)
-\textbf{Case 2:}
-1
-C
-n
-A
-B
-1
-C
-C(2,1) = 2
-2n
-A
-B
-n
-A
-B
-C(2n,n)
-2 \times C(2n,n)
-\textbf{Case 3:}
-n+1
-A
-B
-C
-1
-n+1
-A
-B
-1 \times \displaystyle \sum_{k=1}^{n} C(n,k)C(n,n+1-k) = \displaystyle \sum_{k=1}^{n} C(n,k)C(n,k-1)
-k
-1
-n
-1
-n
-C(2n,n-1)=C(2n,n+1)
-2 \times \displaystyle \sum_{k=1}^{n} C(n,k)C(n,k-1) + 2 \times C(2n,n) = C(2n+2,n+1)
-\textbf{APPENDIX:}
-C(n,r) = C(n,n-r)
-r
-n
-n-r
-n
-\displaystyle {n \choose k} = {n \choose n-k}
-\displaystyle {n \choose n-k}{n \choose k-1}
- \begin{align} \sum_{k=1}^n \binom{n}{k}\binom{n}{k-1}&=\sum_{k=1}^n \binom{n}{n-k}\binom{n}{k-1}\\ &=\binom{2n}{n-1}\\ &=\binom{2n+1}{n}-\binom{2n}{n}\\ &=\frac{n+1}{2n+2}\binom{2n+2}{n+1}-\binom{2n}{n}\\ &=\frac{1}{2}\binom{2n+2}{n+1}-\binom{2n}{n} \end{align} 
-k
-n
-k
-n
- \binom{n}{k}=\binom{n}{n-k} 
-1...n
-1...n
-n-1
-2n
-n-k
-k-1
- \sum_{k=1}^n \binom{n}{n-k}\binom{n}{k-1}=\binom{2n}{n-1} 
-1...2n
-1
-n
-2n+1
-n-1
-2n
-n
-2n
- \binom{2n}{n-1}+\binom{2n}{n}=\binom{2n+1}{n} 
-n+1
-2n+2
-1
-1
-2n+2
-n
-2n+1
- (2n+2)\binom{2n+1}{n}=(n+1)\binom{2n+2}{n+1} 

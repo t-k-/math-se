@@ -1,8 +1,0 @@
-g_t(x) = e^{-x^2/2t^2}/t\sqrt{2\pi}
-f \in C_0(\mathbb{R})
- \lim_{t \rightarrow \infty} g_t \ast f = 0.
-y = tz
-\begin{align} (g_t\ast f)(x) &= \int_{-\infty}^\infty g_t(y)f(x-y)\,dy\\ &= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty e^{-\frac{y^2}{2t^2}} f(x-y)\frac{dy}{t}\tag{$y = tz$}\\ &= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty e^{-z^2/2} f(x-tz)\,dz. \end{align}
-t
-f(x-tz)
-t\to \infty

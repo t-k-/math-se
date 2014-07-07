@@ -1,43 +1,0 @@
-U
-\mathbb{R}^n
-R
-C^\infty
-U
-\Omega^1(U)
-C^\infty)
-U
-R
-dx_1
-\ldots, dx_n
-\Omega^k(U)
-k
-U
-k
-\Omega^1(U)
-R
-R
-dx_{i_1} \wedge \cdots \wedge dx_{i_k}
-1 \le i_1 < \cdots < i_k \le n
-d^k: \Omega^k(U) \rightarrow \Omega^{k+1}(U)
-k=0
-f
-df = \sum_{i=1}^n (\partial f/ \partial x_i) d x_i
-d^{k+1} \circ d^k = 0
-U
-\mathbb{R}^2
-Ker(d^1)/Im(d^0)
-f \in C^{\infty}(U) := \Omega^{0}(U)
-\partial_if := \frac{\partial f}{\partial x^i}
-k=1
- df = \partial_if \; dx^i 
-d(df) = d(\partial_if \; dx^i) = \partial_j \partial_i f dx^j \wedge dx^i
-i=j
-0
-2
-\partial_{21}f dx^2 \wedge dx^1
-\partial_{ji} := \partial_j \partial_i
- d(df)  = \sum_{i < j} \partial_j \partial_i f dx^j \wedge dx^i + \sum_{i > j} \partial_j \partial_i f dx^j \wedge dx^i. 
- \partial_{12}fdx^1 \wedge dx^2 = -\partial_{12}dx^2 \wedge dx^1 
- \partial_{21}f dx^2 \wedge dx^1 + \partial_{12}fdx^1 \wedge dx^2 = (\partial_{21}f - \partial_{12}f)dx^2 \wedge dx^1 = 0, 
-dx_idx_i=0
-dx_idx_j=-dx_jdx_i

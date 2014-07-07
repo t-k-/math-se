@@ -1,93 +1,0 @@
-n\times n
- \left[ \begin {matrix} 0 & 1 & \ldots & 1 \\ 1 & 0 & \ldots & 1 \\ \vdots & \vdots & \ddots & \vdots \\ 1 & 1 & ... & 0 \end {matrix} \right] 
-D_n(a,b)= \begin{vmatrix} a & b & b & b \\ b & a & b & b \\ b & b & a & b \\ b & b & b & a \end{vmatrix}
-n\times n
-D_n(a,b)= \begin{vmatrix} a & b & b & b \\ b & a & b & b \\ b & b & a & b \\ b & b & b & a \end{vmatrix}
-=[a+(n-1)b] \begin{vmatrix} 1 & 1 & 1 & 1 \\ b & a & b & b \\ b & b & a & b \\ b & b & b & a \end{vmatrix}
-=[a+(n-1)b] \begin{vmatrix} 1 & 1 & 1 & 1 \\ 0 & a-b & 0 & 0 \\ 0 & 0 & a-b & 0 \\ 0 & 0 & 0 & a-b \end{vmatrix}
-=[a+(n-1)b](a-b)^{n-1} 
-b
-D_n(0,1)=(-1)^{n-1}(n-1)
- \begin{vmatrix} 1 & 1 & 1 & 1 \\ 1 & 0 & 1 & 1 \\ 1 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \\ \end{vmatrix} = 
- \begin{vmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 1 & 1 \\ 1 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \\ \end{vmatrix} + \begin{vmatrix} 1 & 0 & 0 & 0 \\ 1 & 0 & 1 & 1 \\ 1 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \\ \end{vmatrix}= 
- \begin{vmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 1 & 1 \\ 1 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \\ \end{vmatrix} + \begin{vmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0  \end{vmatrix} 
-A_n
- n \times n 
-1/(n-2)
- |A_n|= \left| \begin {matrix} \frac {n-1}{n-2} & 1 & \ldots & 1 \\ 0 & 0 & \ldots & 1 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 1 & ... & 0 \end {matrix} \right| = \frac{n-1}{n-2}|A_{n-1}| 
-|A_n| = \frac{n-1}{n-2} \frac{n-2}{n-3}...\frac{2}{1}|A_2|=(n-1)|A_2| 
-|A_2|=-1 
-|A_n|=1-n
-x
-y
-x
-y
-xy^{n-1}
-y=1
-n-1
-n-2
-(y-1)^{n-2}
-x=(n-1)/(y+n-2)
-n-1
-(x(y+n-2)-(n-1)
-(x(y+n-2)-(n-1))(y-1)^{n-2}
-x=y=0
-(-1)^{n-1}(n-1)
-x=1
-y=0
-(-1)^{n-1}
-E
-(n\times n)
-f_1:=(1,\ldots,1)
-Ex=(f_1\cdot x)f_1
-x\in{\mathbb R}^n
-A=E-I
-Ax\ =\ (f_1\cdot x)f_1 -x\qquad(x\in{\mathbb R}^n)\ .
-(f_2,\ldots, f_n)
-\langle f_1\rangle
-Af_1=(f_1\cdot f_1)f_1 - f_1=(n-1)f_1
-Af_i=(f_1\cdot f_i)f_1- f_i=-f_i\qquad(2\leq i\leq n)\ .
-A
-(f_1,f_2,\ldots, f_n)
-{\rm diag}(n-1,-1,-1,\ldots,-1)\phantom{\Bigl|}
-(-1)^{n-1}(n-1)
-a, b \in \mathbb{K}
-a=1
-b=1
- A = \left( \begin {matrix} b & a & \ldots & a \\ a & b & \ddots & \vdots \\ \vdots & \ddots & \ddots & a \\ a & \cdots & a & b \end {matrix} \right), 
-E_\alpha, E_\beta \subseteq \mathbb{K}^n
-A
-\alpha, \beta
-\alpha \neq \beta
-E_\alpha \cap E_\beta = \{ 0 \}
-\dim E_\beta = n-1
-\mathbb{K}^n = E_\alpha \oplus E_\beta
-E_\alpha = \langle v \rangle
-A
-\mathrm{diag}(\alpha, \beta, \dots, \beta)
-\det A = \alpha \beta^{n-1} = [(n-1)a +b] (b-a)^{n-1}
-a=0
-i=2,\dots,n
-i
-C_i
-C
-C_i - C_1
-C_1
-C
- C = \left( \begin {matrix} a & a & \ldots & a \\ a & b & \ddots & \vdots \\ \vdots & \ddots & \ddots & a \\ a & \cdots & a & b \end {matrix} \right). 
- \det C = \det \left( \begin{matrix} a & a & a & \cdots & a \\ 0 & b-a & 0 & \cdots & 0 \\ 0 & 0 & b-a & \ddots & 0 \\ \vdots & \vdots & \ddots & \ddots & 0 \\ 0 & 0 & \cdots & 0 & b-a \end{matrix} \right) = a (b-a)^{n-1}. 
-A\in\mathrm M_{n,m}(K)
-B\in \mathrm M_{m,n}(K)
-\det(I_n+AB)=\det(I_m+BA).
-N
--N=I_n-AB
-A\in\mathrm M_{n,1}(K)
-B
- \det(N)=(-1)^n\det(-N)=(-1)^n\det(I_1-BA)=(-1)^n(1-n). 
-E
-n
-n
-1
-H\subset K^n
-0
-v:=(1,\dots,1)

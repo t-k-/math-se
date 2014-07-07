@@ -1,17 +1,0 @@
-C_1
-C_2
-\mathbb R^3
-\vec{r}
-\oint_{C_1} d\vec{s}\times \left(\oint_{C_2}{d\vec{s'}\times \hat{r}\over |\vec{r}|^2}\right)=-\oint_{C_2} d\vec{s'}\times \left(\oint_{C_1}{d\vec{s}\times \hat{r}\over |\vec{r}|^2}\right)
-\oint_{C_1} d\vec{s}\times \left(\oint_{C_2}{d\vec{s'}\times \hat{r}\over |\vec{r}|^2}\right)
-\vec{a}\times \vec{b}
-\oint_{C_2} d\vec{s'}\times \left(\oint_{C_1}{d\vec{s}\times \hat{r}\over |\vec{r}|^2}\right)
-\vec{b}\times \vec{a}
-C_1,C_2
-\mathbb R^3
-\vec{r}
-s-s'
-s'-s
-\vec a\times(\vec b\times\vec c)=(\vec a\cdot\vec c)\vec b-(\vec a\cdot\vec b)\vec c
- \oint_{C_1} \oint_{C_2} \mathrm d\vec{s}\times{\mathrm d\vec{s'}\times (\vec s-\vec s')\over |\vec s-\vec s'|^3} =\oint_{C_1} \oint_{C_2} {(\mathrm d\vec{s}\cdot(\vec s -\vec s'))\mathrm d\vec s'-(\mathrm d\vec s\cdot\mathrm d\vec s')(\vec s-\vec s')\over |\vec s-\vec s'|^3}\;, \\ \oint_{C_1} \oint_{C_2} \mathrm d\vec{s}'\times{\mathrm d\vec{s}\times (\vec s'-\vec s)\over |\vec s'-\vec s|^3} =\oint_{C_1} \oint_{C_2} {(\mathrm d\vec{s}'\cdot(\vec s' -\vec s))\mathrm d\vec s-(\mathrm d\vec s'\cdot\mathrm d\vec s)(\vec s'-\vec s)\over |\vec s-\vec s'|^3}\;. 
- \begin{eqnarray} \oint_{C_1} \oint_{C_2} {(\mathrm d\vec{s}\cdot(\vec s -\vec s'))\mathrm d\vec s'\over |\vec s-\vec s'|^3} &=& \oint_{C_2}\mathrm d\vec s'\oint_{C_1}\mathrm d\vec s\cdot\frac{\vec s-\vec s'}{|\vec s-\vec s'|^3} \\ &=&-\oint_{C_2}\mathrm d\vec s'\oint_{C_1}\mathrm d\vec s\cdot\vec\nabla_{\vec s}\frac{1}{|\vec s-\vec s'|} \\ &=& 0\;, \end{eqnarray} 

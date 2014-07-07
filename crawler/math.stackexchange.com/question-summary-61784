@@ -1,32 +1,0 @@
-\displaystyle \int_e^\infty \frac{\sin x}{x \ln x}\;dx
-n\geqslant3
-(I_n)_{n\geqslant3}
-\sum\limits_{n\geqslant3}(-1)^nI_n
- I_n=(-1)^n\int\limits_{n\pi}^{(n+1)\pi}\frac{\sin x}{x\log x}\text{d}x, 
- \int\limits_{\mathrm e}^{z}\frac{\sin x}{x\log x}\text{d}x=\int\limits_{\mathrm e}^{3}\frac{\sin x}{x\log x}\text{d}x+\int\limits_{3}^{z}\frac{\sin x}{x\log x}\text{d}x, 
-I_n=\Theta(1/(n\log n))
-\sum\limits_{n\geqslant3}1/(n\log n)
-|\sin|\leqslant1
-I_n\leqslant\pi a_n
-|\sin|\geqslant1/\sqrt2
-\pi/2
-(n\pi,(n+1)\pi)
-I_n\geqslant(\pi\sqrt2/4) a_{n+1}
-I_n
-x
-(0,\pi)
-x\mapsto\sin(x)g_n(x)
-g_n
-(g_n)_{n\geqslant3}
-f
-\lim\limits_{x\to\infty}f(x)=0
-g
-\sup\limits_{x>a}\left|\int_a^xg(t)\;\mathrm{d}t\right|\le G<\infty
-\left|\int_a^\infty f(x)g(x)\;\mathrm{d}x\right|\le f(a)G
-I(x)=\int_a^xg(x)\;\mathrm{d}x\le G
- \begin{align} \left|\int_a^\infty f(x)g(x)\;\mathrm{d}x\right| &\le\left|\lim_{x\to\infty}f(x)I(x)\right|+\left|f(a)I(a)\right|+\left|\int_a^\infty f'(x)I(x)\;\mathrm{d}c\right|\\ &\le0+0+\int_a^\infty -f'(x)G\;\mathrm{d}x\\ &=f(a)G \end{align} 
-f(x)=\dfrac{1}{x\log(x)}
-g(x)=\sin(x)
-\int_a^x \sin(t)\mathrm{d}t=\cos(a)-\cos(x)
-\cos(x)\in[-1,1]
-2/e

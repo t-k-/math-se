@@ -1,8 +1,0 @@
-f \in L^1[0,1]
-g(x) = \int_{[x,1]} \frac{f(t)}{t} dt
-g \in L^1[0,1]
-\int_{[0,1]} g = \int_{[0,1]} f
-f \in L^1([0,\,1])
-f
-\begin{align} \int_{[0,1]} \lvert g(x)\rvert\,dx &= \int_{[0,1]}\left\lvert \int_{[x,1]} \frac{f(t)}{t}\,dt\right\rvert\, dx\\ &\leqslant \int_0^1 \int_x^1 \frac{\lvert f(t)\rvert}{t}\,dt\,dx\\ &= \int_0^1\int_0^t \frac{\lvert f(t)\rvert}{t}\,dx\,dt\\ &= \int_0^1 \left(\int_0^t dx\right)\frac{\lvert f(t)\rvert}{t}\,dt\\ &= \int_0^1 \lvert f(t)\rvert\, dt. \end{align}
-\int_0^1 g(x)\,dx = \int_0^1 f(t)\,dt.

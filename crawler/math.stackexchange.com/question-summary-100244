@@ -1,49 +1,0 @@
-f
-f(-x)=-f(x)
-x\in \mathbb{R}
-\int_{-a}^{a}f(x)dx=0
-a
-I=\int_{-a}^{a}f(x)dx
-\int_{-a}^{a}f(x)dx=\int_{-a}^{0}f(x)dx+\int_{0}^{a}f(x)dx
-A_{1}=\int_{-a}^{0}f(x)dx
-A_{2}=\int_{0}^{a}f(x)dx
-A_{2}=\lim_{n \to \infty }\sum_{i=1}^{n}f(x_{i})\Delta x=\lim_{n \to \infty }\sum_{i=1}^{n}f(x_{i})\frac{a}{n}=\frac{a}{n}\lim_{n \to \infty }\sum_{i=1}^{n}f(x_{i})
-\Delta x=\frac{a}{n}
-A_{1}=\lim_{n \to \infty }\sum_{i=1}^{n}f(-x_{i})\Delta x =\lim_{n \to \infty }\sum_{i=1}^{n}f(-x_{i})\frac{a}{n}
-=\frac{a}{n}\lim_{n \to \infty }\sum_{i=1}^{n}f(-x_{i})=\frac{a}{n}\lim_{n \to \infty }\sum_{i=1}^{n}-f(x_{i})=\frac{-a}{n}\lim_{n \to \infty }\sum_{i=1}^{n}f(x_{i})=-A_{2}
-I=A_{1}+A_{2}=(-A_{2})+A_{2}=0
-f
-[-a,a]
-[-a,0]
-[0,a]
-u=-x
-\int_{-a}^0 f(x)\,dx
-\int_{-a}^0 f(x)\,dx = \int_{a}^{0}f(-u)(-\,du) = -\int_a^0(-f(u))\,du = \int_a^0f(u)\,du = -\int_0^af(u)\,du = -\int_0^af(x)\,dx.
-\int_{-a}^af(x)\,dx = \int_{-a}^0f(x)\,dx + \int_0^af(x)\,dx = -\int_0^af(x)\,dx + \int_0^af(x)\,dx = 0.
-f
-[-a,a]
-[-a,0]
-[0,a]
-A_1
-[-a,0]
-[0,a]
-[-a,a]
-n
-P_n
-[-a,a]
-2^n
-\Delta x = \frac{2a}{2^n}
-x_{i+1}-x_i = \Delta x
-x_{i} = -x_{2^n-i}
-i=0,1,\ldots,2^{n-1}
-x_{2^{n-1}} = -x_{2^{n-1}} = 0
--a = x_0 \lt x_1 \lt x_2 \lt\cdots \lt x_{2^n-1} \lt x_{2^n} = a,
-y_i \in [x_i,x_{i+1}]
-i=0,\ldots,2^{n}-1
-y_i=-y_{2^n-i-1}
-n
-j=2^n-i-1
-j=2^n-1
-2^n-(2^{n-1}-1)-1 = 2^{n-1}
-0
-\begin{align*} S_n &= \sum_{i=0}^{2^n-1}f(y_i)\Delta x = \sum_{i=0}^{2^{n-1}-1}f(y_i)\Delta x + \sum_{i=2^{n-1}}^{2^n-1}f(y_i)\Delta x\\ &= \frac{2a}{n}\sum_{i=0}^{2^{n-1}-1}f(y_i) + \frac{2a}{n}\sum_{i=2^{n-1}}^{2^n-1}f(y_i)\\ &=\frac{2a}{n}\left( \sum_{i=0}^{2^{n-1}-1}f(-y_{2^n-i-1}) + \sum_{i=2^{n-1}}^{2^n-1}f(y_i)\right)\\ &= \frac{2a}{n}\left( -\sum_{i=0}^{2^{n-1}-1}f(y_{2^n-i-1}) + \sum_{i=2^{n-1}}^{2^n-1}f(y_i)\right) \end{align*}

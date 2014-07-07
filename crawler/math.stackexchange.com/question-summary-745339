@@ -1,9 +1,0 @@
-Y \sim U[0,k]
-0 < k < \infty
-U
-X \sim U[0, Y]
-X
-0<x<k
- \begin{align} \Pr(X\le x) & = \mathbb E(\Pr(X\le x \mid Y)) \\[12pt] & = \mathbb E \left.\begin{cases} \dfrac x Y & \text{if }Y>x \\[8pt] 1 & \text{if }Y<x \end{cases}\right\} = 1\Pr(Y<x) + \mathbb E\left(\frac x Y\mid Y>x\right)\Pr(Y>x) \\[10pt] & = \frac x k + \frac{k-x}{k}\int_x^k \frac x y \, \frac{dy}{k-x} \\[10pt] & = \frac x k + \frac{x}{k} \int_x^k \frac{dy}{y} = \frac x k\left(1 + \log_e \frac k x \right). \end{align} 
-0
- \frac{-1}{k}\log_e \frac x k \text{ for }0<x<k\text{ (and $0$ for }x<0\text{ or }x>k). 

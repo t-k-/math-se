@@ -1,45 +1,0 @@
-x \in \mathbb{R}^n
-p(t,x,y) := (2\pi t )^{-\frac{n}{2}} \cdot \exp{\left( - \frac{|x-y|^2}{2t} \right)},
-y \in \mathbb{R}^n
-t >0
-0 \leq t_1 \leq t_2 \leq \ldots \leq t_k
-\nu_{t_1, \ldots, t_k}
-\mathbb{R}^{nk}
-dy=dy_1\ldots dy_k
-p(0, x, y)dy=\delta_x(y)
-x
-\nu_{t_1, \ldots, t_k}(F_1 \times \ldots \times F_k)= \int \limits_{F_1 \times \ldots \times F_k}^{} p(t_1, x, x_1)\prod_{j=1}^{k-1}p(t_{j+1}-t_j,x_{j}, x_{j+1}) dx_1\ldots dx_k,
-\nu_{t_1, \ldots, t_k}
-(\Omega, \mathcal{F}, P^x)
-\{B_t\}_{t \geq 0}
-\Omega
-B_t
- (\star) \ \ P^x(B_{t_1} \in F_1, \ldots, B_{t_k} \in F_k)= \int \limits_{F_1 \times \ldots \times F_k}^{} p(t_1, x, x_1)\prod_{j=1}^{k-1}p(t_{j+1}-t_j,x_{j}, x_{j+1}) dx_1\ldots dx_k.
-Z = (B_{t_1}, \ldots, B_{t_k}) \in \mathbb{R}^{nk}
-M \in \mathbb{R}^{nk}
-C \in \text{M}_{nk \times nk}(\mathbb{R})
-u=(u_1, \ldots, u_{nk}) \in \mathbb{R}^{nk}
-Z
-M
-Z
-C
-Z
-E^x\left[\exp\left(i\left<u, Z \right> \right)\right]= \exp\left( -\frac{1}{2} \left<Cu, u\right> + i \left<u, M\right> \right),
-\star
-B_t
-M
-C
-t_0 = 0
-x_0 = 0 
-x_k = \sum_{i=1}^k s_k
-s_j
-\exp( Q_j(u))
-Q_j
-u
-\exp(Q(u))
-    \mathbb{E}( \exp(i \langle u, Z \rangle ) = \int_{\mathbb{R}^{n k}} \exp( i \langle u, x \rangle ) \prod_{j=1}^k p(t_{j}-t_{j-1}, x_{j} - x_{j-1}) \mathrm{d}x_1 \cdots \mathrm{d} x_k 
- \mathbb{E}( \exp(i \langle u, Z \rangle ) =  \int_{\mathbb{R}^{n k}}    \prod_{k=1}^k \exp( i \, s_j \sum_{m=j}^k u_q ) ) \prod_{j=1}^k p(t_{j}-t_{j-1}, s_j) \mathrm{d}s_1 \cdots \mathrm{d} s_k 
-Q(u) = \langle C u, u \rangle  + i \langle u, M \rangle 
-C
-M
-u

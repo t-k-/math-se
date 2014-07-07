@@ -1,9 +1,0 @@
-f(x) = (x_1+...+x_n)^k
-j_1+...+j_n = k
-D_1^{j_1}\cdots D_n^{j_n}f(x) = k!
-f_k(x) = x^k, g(x_1,\dots x_n) = \sum_{l=1}^n x_l
-\left(\sum_{l=1}^n x_l\right)^k = f\circ g(x_1,\dots,x_n)
- D_j  f_k\circ g(x_1,\dots,x_n) = f_k'\circ g(x_1,\dots,x_n) \times 1 =k f_{k-1}\circ g(x_1,\dots,x_n) \\= \frac{k!}{(k-1)!}  f_{k-1}\circ g(x_1,\dots,x_n) \\ D_{1}^{j_1} \dots D_{n}^{j_n}  f_k\circ g(x_1,\dots,x_n) =\frac{k!}{(k-\sum_{l=1}^n j_l)!}  f_{k-\sum_{l=1}^n j_l}\circ g(x_1,\dots,x_n) 
-\sum_{l=1}^n j_l=k
-f_0 = 1
- D_{1}^{j_1} \dots D_{n}^{j_n} (f_k\circ g)= k! 

@@ -1,51 +1,0 @@
-1/4
-X
-Y
-X
-Y
-0
-1
-X
-Y
-f(x, y) =\begin{cases} \frac1y,&0<x<y<1\\\\ 0,&\text{elsewhere} \end{cases}
-\begin{align*} &P\left(X+Y>\frac12\right)=1-P\left(X+Y<\frac12\right)=1-\int_0^{1/4}\int_x^{1/2-x}\frac1y dy\,dx\\ &=\left. 1-\int_0^{1/4}\left[\ln\left(\frac12-x\right)-\ln x\right]dx=1+\left[\left(\frac12-x\right)\ln\left(\frac12-x\right)-x\ln x\right]\right\vert_0^{1/4}\\ &=1+\frac14\ln\left(\frac14\right)=0.6534. \end{align*}
-0\le X,Y\le 1
-X+Y<\frac12
-x+y=\frac12
-P\left(X+Y<\frac12\right)=\int_0^{1/2}\int_0^{1/2-x}f(x,y)dy\,dx\;.
-f(x,y)=0
-y\le x
-y=x
-x=0
-y=x
-x+y=\frac12
-\triangleright
-f(x,y)=0
-\left\langle\frac14,\frac14\right\rangle
-x
-0
-1/4
-(0,0)
-(\frac{1}{4},\frac{1}{4} )
-(0,\frac{1}{2})
-y
-x
-x
-1/y
-0 \le y \le \frac{1}{4}
-x
-0
-y
-\frac{1}{4}\le y\le \frac{1}{2}
-x
-0
-\frac{1}{2}-y
-1
-\dfrac{1}{4}
-\dfrac{1}{2y}-1
-(1/2)(\ln(1/2)-\ln(1/4)) -(1/2-1/4)
-(1/2)\ln 2-1/4
-(1/2)\ln 2
-1-(1/2)\ln 2
-\int_{y=0}^{\frac{1}{4}}\left(\int_{x=0}^y\frac{dx}{y}\right)dy.
-\int_{y=\frac{1}{4}}^{\frac{1}{2}}\left(\int_{x=0}^{\frac{1}{2}-y}\frac{dx}{y}\right)dy.

@@ -1,26 +1,0 @@
-y = a + bx + cx^2
-a
-b
-c
-(1,0), (-1, -4),
-(2, 11)
-\begin{pmatrix} 1&-1&2\\ 0&4&11 \end{pmatrix} (x\quad y)=??
-y = a + bx + cx^2
-(1 \quad x \quad x^2) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = y
-(x_1,y_1) = (1,0)
-(x_2,y_2) = (-1,-4)
-(x_3,y_3) = (2,11)
-\begin{align} (1 \quad x_1 \quad x_1^2) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) &= y_1 \\ (1 \quad x_2 \quad x_2^2) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) &= y_2 \\ (1 \quad x_3 \quad x_3^2) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) &= y_3 \end{align}
-\left(\begin{array}{ccc} 1 & x_1 & x_1^2 \\ 1 & x_2 & x_2^2 \\ 1 & x_3 & x_3^2 \end{array}\right) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = \left(\begin{array}{c} y_1 \\ y_2 \\ y_3 \end{array}\right)
-x_1, x_2, x_3, y_1, y_2, y_3
-Ax = b
-A
-b
-x
-\left(\begin{array}{ccc} 1 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 2 & 4 \end{array}\right) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = \left(\begin{array}{c} 0 \\ -4 \\ 11 \end{array}\right)
-(0 \quad 2 \quad 0) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = 4 \quad \Longrightarrow \quad \fbox{b = 2}
-(0 \quad 1 \quad 3) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = 11 \quad \Longrightarrow \quad b + 3c = 11 \quad \Longrightarrow \quad \fbox{c = 3}
-(1 \quad 1 \quad 1) \left(\begin{array}{c} a \\ b \\ c \end{array}\right) = 0 \quad \Longrightarrow \quad a + b + c = 0 \quad \Longrightarrow \quad \fbox{a = -5}
-y
-(1,0)
-a + b+ c = 0

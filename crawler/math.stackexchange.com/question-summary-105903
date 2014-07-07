@@ -1,55 +1,0 @@
-\operatorname{ GPF}(n)=
-n
-\operatorname{ GPF}(17)=17
-\operatorname{ GPF}(18)=3
-\sum_{n=1}^{\infty} \frac{1}{n\operatorname{ GPF}(n)}\,?
-\{r_1,\dots,r_k,p\}
-\le p
-\{n\in \mathbb{Z}: \operatorname{gpf}(n)=p\}=\{r_1^{e_1}\cdots r_k^{e_k}p^f:\text{each }e_i\ge 0,f\ge1\}.
-\sum_{e_1\,\ge0}\cdots\sum_{e_k\,\ge0}\sum_{f\ge1}\frac{1}{r_1^{e_1}\cdots r_k^{e_k} p^f}=  \prod_{i=1}^k \left(1+\frac{1}{r_i}+\frac{1}{r_i^2}+\cdots\right)\cdot \left(\frac{1}{p}+\frac{1}{p^2}+\frac{1}{p^3}+\cdots\right) 
-\implies \bullet =\sum_p \frac{1}{p}\sum_{\operatorname{gpf}(n)=p}\frac{1}{n}=\sum_p \frac{1}{p}\left[\,\prod_{q\,< \,p}\left(1-\frac{1}{q}\right)^{-1}\right]\frac{1/p}{1-1/p}
-=\sum_p \frac{1}{p(p-1)}\prod_{q<p}\left(1-\frac{1}{q}\right)^{-1}.
-\frac{\bullet}{C} + \zeta_P'(2)\le \sum_p \frac{\log p}{p}\left(\frac{1}{p-1}-\frac{1}{p}\right)\le \sum_p\frac{\log p}{p^2}=-\zeta_P'(2).
-R_p
-\log p
-p\in\{p_2=3,\dots,p_{10000}=104729\}
-p=104729
-T_p/p \approx 0.000196636/104729 \approx 2\times 10^{-9}
-R_p \approx 2.2544184
-T_p=0.00019663624
-e^\gamma\frac{\log p}{p}=0.000196580221393
-p_k
-k
-\operatorname{GPF}(n)=p_k
-n=p_1^{i_1}\dots p_{k-1}^{i_{k-1}}\,p_k^{i_k}
-i_j\ge0
-1\le j<k
-i_k\ge1
- \sum_{n\ge1}\frac{1}{n\operatorname{GPF}(n)}=\sum_{k\ge1}\frac{1}{p_k}\sum_{\operatorname{GPF}(n)=p_k}\frac{1}{n}. 
- \begin{align*} \sum_{\operatorname{GPF}(n)=p_k}\frac{1}{n}&=\Bigl(\sum_{i_1\ge0}p_1^{-i_1}\Bigr)\dots\Bigl(\sum_{i_{k-1}\ge0}p_{k-1}^{-i_{k-1}}\Bigr)\Bigl(\sum_{i_k\ge1}p_k^{-i_k}\Bigr)\\ &=\frac{1}{p_k}\,\prod_{i=1}^k\Bigl(1-\frac{1}{p_i}\Bigr)^{-1}. \end{align*} 
- \prod_{i=1}^k\Bigl(1-\frac{1}{p_i}\Bigr)^{-1}\sim e^\gamma\,\log p_k\ , 
- \sum_{k\ge1}\frac{\log p_k}{p_k^2} , 
-S=\sum_{j=1}^\infty 1/jGPF(j)
-GPF(1)=1
-r_i
-i
-S=1+\displaystyle\sum_{\{e_i\}} r_n^{-2}\left[\frac{1}{1-r_n^{-1}}\right]\prod r_i^{-e_i}
-\{e_i\}
-i
-k
-0 \le k < n
-S
-k
-m=\sum e_i
-S \ge 1+\displaystyle\sum_{n=1}^\infty r_n^{-2}\left[\frac{1}{1-r_n^{-1}}\right] \left[1+\sum_{m=1}^\infty \sum_{k=1}^{n-1} r_k^{-m} \sum_{\{e_i\}} 1\right]
-m
-m=0
-k=0
-B(m,k)
-m
-k
-B(m,k)={{m+k-1} \choose k}\ge (1+(m-1)/k)^k
-S \ge 1+\displaystyle\sum_{n=1}^\infty r_n^{-2}\left[\frac{1}{1-r_n^{-1}}\right] \left[1+\sum_{m=1}^\infty \sum_{k=1}^{n-1} r_k^{-m}\left(1+\frac{m-1}{k}\right)^k\right]
-n
-m
-S\ge 1.39

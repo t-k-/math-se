@@ -1,60 +1,0 @@
-g(x)=x^4 + \alpha^3 x^3 + x^2 + \alpha x + \alpha^3 = (x-\alpha)(x-\alpha^2)(x-\alpha^3)(x-\alpha^4)
-m(x) = \alpha x^2 + \alpha x + 1
-c_{sys}(x)=x^4m(x) + (x^4m(x)) \bmod g(x)=\alpha x^6 + \alpha x^5 + x^4 + \alpha^5 x^3 + x^2 + \alpha^2 x + \alpha^5
-c_{nonsys}(x)=m(x)g(x)= \alpha x^6 + \alpha^2 x^5 + \alpha^6 x^4 + \alpha^6 x^3 + \alpha^3 x^2 + \alpha^2 x + \alpha^3
-c_{tp}(x) = m(\alpha^5)x^6 + m(\alpha^4)x^5 + m(\alpha^3)x^4 + m(\alpha^2)x^3 + m(\alpha)x^2 + m(1)x + m(0) 
-= \alpha x^6 + \alpha x^5 + \alpha^4 x^4 + \alpha^6 x^3 + \alpha^4 x^2 + x + 1
-c_{tp_i} = c_{nonsys}(\alpha^i)
-0...\alpha^5
-1...\alpha^6
-\alpha^5...0
-\alpha^6...0
-\alpha
-\alpha^3=\alpha+1
-\alpha^3=\alpha^2+1
-g(x)
-c_{nonsys}(x)=m(x)g(x)
- c_{tp}(x)=m(\alpha^6)x^6+m(\alpha^5)x^5+m(\alpha^4)x^4+m(\alpha^3)x^3+m(\alpha^2)x^2+m(\alpha)x+m(1), 
- c_{tp}(x)=\alpha^6x^6+\alpha x^5+\alpha x^4+\alpha^4 x^3+\alpha^6 x^2+\alpha^4x+1. 
-c_{tp}(x)
-m(x)
-c_{tp}(x)
-m(x)
-i
-c_{tp}(\alpha^{7-i})
-c_{tp}(x)
-c_{tp}(\alpha^j)=0
-j=1,2,3,4
-x^6, x^5, x^4, x^3
- c_{tp}(\alpha^{7-0})=c_{tp}(1)=\alpha^6+\alpha+\alpha+\alpha^4+\alpha^6+\alpha^4+1=1, 
- c_{tp}(\alpha^{7-1})=c_{tp}(\alpha^6)=1+\alpha^3+\alpha^4+\alpha+\alpha^4+\alpha^3+1=\alpha, 
- c_{tp}(\alpha^{7-2})=c_{tp}(\alpha^5)=\alpha+\alpha^5+1+\alpha^5+\alpha^2+\alpha^2+1=\alpha. 
-m(x)
-m(x)
-c_{nonsys}(x)
-m(x)
-g(x) = (x-\alpha)(x-\alpha^2)(x-\alpha^3)(x-\alpha^4)
-g(x)
-c_{\text{nonsys}}(x) = m(x)g(x)
-m(x)
- c_{\text{sys}}(x) = x^4m(x) + (x^4 m(x) \bmod g(x)) = d(x)g(x) 
-f(x)
-6
-F_i = f(\alpha^{-i})
-0 \leq i \leq 6,
-F(z) = \sum_{i=0}^6 F_i z^i
-f(x)
-f_j = F(\alpha^j) = \sum_{j=0}^6 F_j\alpha^j
-f(x)
-F(z)
-(1/N)
-1
-c_{\text{nonsys}}(x)
-(\alpha^{-3}, \alpha^{-4},\alpha^{-5},\alpha^{-6}) = (\alpha^{4},\alpha^{3},\alpha^{3},\alpha^{1})
-c_{\text{nonsys}}(x)
-g(x)
-\alpha, \alpha^2, \alpha^3, \alpha^4
-2
-c_{\text{nonsys}}(x)
-C_{\text{nonsys}, i} = c_{\text{nonsys}}(\alpha^{-i})  = \begin{cases}0, & i = 3, 4, 5, 6,\\ m(\alpha^{-i})g(\alpha^{-i}), & i = 0, 1, 2\end{cases}
-\begin{align*} C_{\text{nonsys}}(z) &= \sum_{i=0}^6 C_{\text{nonsys}, i}z^i\\ &= C_{\text{nonsys}, 0} + C_{\text{nonsys}, i}z + C_{\text{nonsys}, i}z^2\\ &= [m(1)g(1)] + [m(\alpha^{-1})g(\alpha^{-1})]z + [m(\alpha^{-2})g(\alpha^{-2})]z^2 \end{align*} 

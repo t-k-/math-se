@@ -1,7 +1,0 @@
-f(x)=\log x
-f'(x)=\frac{dx}{x}
-f'(x)=\lim_{\Delta x\to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
-(\log x)'=\lim_{h\to0}\frac{\log(x+h)-\log(x)}{h}=\lim_{h\to0}\frac{1}{h}\log(\frac{x+h}{x})=\lim_{h\to0}\log\left[(1+\frac{h}{x})\right]^{1/h}=\log(e^{1/x})=\frac{1}{x}
-\frac{\log(x+h)-\log x}{h}=\frac{1}{h}\log\frac{x+h}{x}=\log\left(1+\frac{h}{x}\right)^{1/h}\xrightarrow[h\to 0]{}\log e^{1/x}=\frac{1}{x}
-\left(1+\frac{t}{f(x)}\right)^{f(x)}\xrightarrow[x\to\infty]{}e^t\;,\;\;\text{if}\;\;f(x)\xrightarrow[x\to\infty]{}\infty
-\left(1+\frac{h}{x}\right)^{1/h}=\left(1+\frac{\frac{1}{x}}{\frac{1}{h}}\right)^{1/h}\xrightarrow [h\to 0]{}e^{1/x}

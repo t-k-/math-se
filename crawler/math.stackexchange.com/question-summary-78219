@@ -1,17 +1,0 @@
-\sum\limits_{n>0,\text{ odd}} r^n \sin(nx)
-z=re^{ix}
-\sin(nx)={e^{inx}-e^{-inx}\over 2i}
-n
-r
->0
-\sum_{n=0}^{\infty}r^{2n+1}\sin((2n+1)x)=\frac{1}{2i}\sum_{n=0}^{\infty}r^{2n+1}\left(e^{i(2n+1)x}-e^{-i(2n+1)x}\right).
-\frac{1}{2i}\sum_{n=0}^{\infty}r^{2n+1}e^{i(2n+1)x}-\frac{1}{2i}\sum_{n=0}^{\infty}r^{2n+1}e^{-i(2n+1)x}=\frac{re^{ix}}{2i}\sum_{n=0}^{\infty}\left(re^{ix}\right)^{2n}-\frac{re^{-ix}}{2i}\sum_{n=0}^{\infty}\left(re^{-ix}\right)^{2n}.
-\frac{re^{ix}}{2i}\frac{1}{1-r^{2}e^{2ix}}-\frac{re^{-ix}}{2i}\frac{1}{1-r^{2}e^{-2ix}}=\frac{1}{2i}\left(\frac{re^{ix}-re^{-ix}-r^{3}e^{-ix}+r^{3}e^{ix}}{1-2r^{2}\cos\left(2x\right)+r^{4}}\right) 
-=\frac{r(r^{2}+1)\sin(x)}{1-2r^{2}\cos\left(2x\right)+r^{4}}.
- r^{n}\sin nx=\frac{z^{n}-\overline{z}^{n}}{2i}. 
- \begin{eqnarray*} z^{n} &=&r^{n}e^{inx}=r^{n}\cos nx+ir^{n}\sin nx \\ \overline{z}^{n} &=&r^{n}e^{-inx}=r^{n}\cos nx-ir^{n}\sin nx. \end{eqnarray*} 
- \begin{eqnarray*} S &:&=\sum_{n>0\;\text{odd}}r^{n}\sin (nx)=\sum_{k=1}^{\infty }r^{2k-1}\sin (\left( 2k-1\right) x) \\ &=&\sum_{k=1}^{\infty }\frac{z^{2k-1}-\overline{z}^{2k-1}}{2i} \\ &=&\frac{1}{2i}\sum_{k=1}^{\infty }z^{2k-1}-\frac{1}{2i}\sum_{k=1}^{\infty } \overline{z}^{2k-1} \end{eqnarray*} 
- r^{2k-1}\sin \left( \left( 2k-1\right) x\right) =\frac{z^{2k-1}-\overline{z} ^{2k-1}}{2i}. 
- \sum_{k=1}^{\infty }z^{2k-1}=\frac{z}{1-z^{2}}\qquad (\text{ratio }z^{2}, \text{ first term }z=re^{ix},\ r<1) 
- \sum_{k=1}^{\infty }\overline{z}^{2k-1}=\frac{\overline{z}}{1-\overline{z} ^{2}}\qquad (\text{ratio }\overline{z}^{2},\text{ first term }\overline{z}) 
- S=\frac{1}{2i}\frac{z}{1-z^{2}}-\frac{1}{2i}\frac{\overline{z}}{1-\overline{z }^{2}}. 

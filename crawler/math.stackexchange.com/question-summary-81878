@@ -1,38 +1,0 @@
-\mathbb{S}^2
-0<\lambda<1
-0<\mu<1
-\lambda
-A,B,C\in \mathbb{S}^2
-d(C,A)\le \pi/2, d(C,B)\le \pi/2
-d(A_{\lambda},B_{\lambda})\le \mu d(A,B)
-A_{\lambda}
-B_{\lambda}
-[A,C]
-[B,C]
-d(A_{\lambda},C)=\lambda d(A,C)
-d(B_{\lambda},C)=\lambda d(B,C)
-d
-\sin(\lambda\pi/2)
-A
-B
-C
-A
-B
-C
-A
-\phi=0
-A=\pmatrix{\sin\theta_A\\0\\\cos\theta_A},\quad B=\pmatrix{\sin\theta_B\cos\phi\\\sin\theta_B\sin\phi\\\cos\theta_B}\;.
-A_\lambda=\pmatrix{\sin\lambda\theta_A\\0\\\cos\lambda\theta_A},\quad B_\lambda=\pmatrix{\sin\lambda\theta_B\cos\phi\\\sin\lambda\theta_B\sin\phi\\\cos\lambda\theta_B}\;,
- \begin{eqnarray} d(A,B)&=&\arccos\left(\sin\theta_A\sin\theta_B\cos\phi+\cos\theta_A\cos\theta_B\right)\;,\\ d(A_\lambda,B_\lambda)&=&\arccos\left(\sin\lambda\theta_A\sin\lambda\theta_B\cos\phi+\cos\lambda\theta_A\cos\lambda\theta_B\right)\;. \end{eqnarray} 
-\Sigma=\theta_A+\theta_B
-\Delta=\theta_A-\theta_B
- \begin{eqnarray} d(A,B)&=&\arccos\frac12\left((1-\cos\phi)\cos\Sigma+(1+\cos\phi)\cos\Delta \right)\;,\\ d(A_\lambda,B_\lambda)&=& \arccos\frac12\left((1-\cos\phi)\cos\lambda\Sigma+(1+\cos\phi)\cos\lambda\Delta\right) \;. \end{eqnarray} 
-\Delta
-\frac{\partial}{\partial\Delta}\left(d(A_\lambda,B_\lambda)-\mu d(A,B)\right)=\frac12(1+\cos\phi)\left(\frac{\lambda\sin\lambda\Delta}{\sin d(A_\lambda,B_\lambda)}-\mu\frac{\sin\Delta}{\sin d(A,B)}\right)\;.
-\mu\ge\sin(\lambda\pi/2)\ge\lambda
-d(A_\lambda,B_\lambda)\gt\lambda d(A,B)
-\sin d(A_\lambda,B_\lambda)\gt\lambda \sin d(A,B)
-\theta\le\pi/2
-0\lt\lambda\lt1
- \begin{eqnarray} \frac{\partial}{\partial\Delta}\left(d(A_\lambda,B_\lambda)-\mu d(A,B)\right) &\le& \frac12(1+\cos\phi)\left(\frac{\lambda\sin\lambda\Delta}{\lambda\sin d(A,B)}-\mu\frac{\sin\Delta}{\sin d(A,B)}\right)\\ &=& \frac12\frac{1+\cos\phi}{\sin d(A,B)}\left(\sin\lambda\Delta-\mu\sin\Delta\right)\\ &\le& \frac12\frac{1+\cos\phi}{\sin d(A,B)}\left(\sin\lambda\Delta-\sin\frac{\lambda\pi}2\sin\Delta\right)\\ &\le&0\;. \end{eqnarray} 
-\Delta=0

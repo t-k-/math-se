@@ -1,18 +1,0 @@
-\{X_i\}_{i=1}^n
-f_X(x) = e^{-(x-\theta)} \, e^{-e^{-(x-\theta)}} · \mathbf{1}_{x\in \mathbf{R}}
-T = \sum_{i=1}^n e^{-X_i}
-\textbf{E}(\log T)
-\textbf{V}(\log T)
-T
-Y =  e^{-X}
-Y \sim \textrm{Exponential}(e^{\theta})
-T = \sum_{i=1}^n Y_i \sim \textrm{Gamma} (n, 1/e^{\theta})
-\textbf{E}(\log T)
-\textbf{V}(\log T)
-Y \sim \rm Exponential(\mathrm{e}^\theta)
-T
-     \mathbb{E}( \log x, x \sim \rm Gamma(n, \frac{1}{\beta})) 
-\mathbb{E}( x^s )
-\log(x) = \left. \frac{\mathrm{d}}{\mathrm{d} s} x^s \right\vert_{s=0}
-\log^2(x) = \left. \frac{\mathrm{d}^2}{\mathrm{d} s^2} x^s \right\vert_{s=0}
-    \mathbb{E}( x^s ) = \int_0^\infty x^s \cdot \frac{\beta^{n}}{\Gamma(n)} x^{n-1} \exp(-x \beta) \mathrm{d} x =      \int_0^\infty  \frac{\beta^{n}}{\Gamma(n)} x^{n + s-1} \exp(-x \beta) \mathrm{d} x = \beta^{-s} \frac{\Gamma(n+s)}{\Gamma(n)} 

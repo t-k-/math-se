@@ -1,61 +1,0 @@
-y^n
-\left(\frac{y+y^2+y^3+y^4+y^5+y^6}{6}\right)^x = \left(\frac{y(1-y^6)}{6(1-y)}\right)^x.
-p(x,n)
-p(0,b)=0
-p(0,0)=1
-p(a,b)=\frac{1}{6}\sum_{c=1}^6 p(a-1,b-c)
-X
-Y
-W_X(z) = \sum_k P(X = k) z^k
-P(X = k) = k!\frac{d^kW}{dz^k}\!(0)
-Y
-W_Y
-W_{X+Y} = W_X \cdot W_Y
-n = k+m
-X
-Y
-X
-Y
-Y = m
-X = n-m
-Y = m
-m
-Y \neq \frac{1}{2}
-|z| < 1
-X_i
-i
-z^k
-P\left(\sum_{i=1}^{N} X_i = k\right) \text{ is equal to coefficient in $z^k$ of } \left(\frac{z^1+\ldots +z^6}{6}\right)^N. \quad\quad\quad(1) 
-\left(\frac{z^1+\ldots+z^6}{6}\right)^1
-N
-W_{X_1 + \ldots + X_N} \cdot W_{X_{N+1}}
-W_{X_1 + \ldots + X_N + X_{N+1}}
- \left(\frac{z^1+\ldots+z^6}{6}\right)^{N+1} = \left(\frac{z^1+\ldots+z^6}{6}\right)^N\left(\frac{z^1+\ldots+z^6}{6}\right) \quad\quad\quad(2)
- W_{X_1 + \ldots + X_N + X_{N+1}}(z) =  \sum_k P(X_1 + \ldots + X_N + X_{N+1} = k) z^k 
-z^k
-P(X_1 + \ldots + X_N + X_{N+1} = k)
-N \geq 1
-x^n
- \left(\frac 1 6 \right)^x \times (z+z^2+\dots+z^6)^x = \left(\frac 1 6 \right)^x \times \left(z\frac{1-z^6}{1-z}\right)^x 
-= \left(\frac 1 6 \right)^x \times z^x (1-z^6)^x(1-z)^{-x} 
- \left(\frac 1 6 \right )^x \times \sum \limits_{i=0}^{\min(x,\lfloor (n-x)/6\rfloor)} (-1)^{n+i} \binom{x}{i} \binom{-x}{n-x-6i}
- = \left(\frac 1 6 \right)^x \times \sum_{i=0}^{\min(x,\lfloor (n-x)/6\rfloor)} (-1)^i \binom{x}{i} \binom{n-6i-1}{x-1} 
-X_i
-\{1,2,3,4,5,6\}
-i^{th}
-\Bbb P(X_1+\cdots+X_x=n)
-\cdot
-\Bbb P(\cdot)
-p(x)
-p(1)=1/2
-p(2)=\frac{1}{2}+p(1)\cdot \frac{1}{2}
-x>2
-p(x)=\frac{1}{2}p(x-1)+\frac{1}{2}p(x-2)
-x^2-\frac{1}{2}x-\frac{1}{2}
-r_1=1,r_2=-1/2
-k_1,k_2
-p(1)
-p(2)
-\begin{align} p(x)&=k_1 r_1^x + k_2 r_2^x \\ & = k_1+k_2\left(-\frac{1}{2}\right)^x \end{align}
-x>6
- p(x) = \frac{1}{6}\sum_{i=1}^6 p(x-i)

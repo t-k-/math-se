@@ -1,4 +1,0 @@
-\begin{align} \prod_{k = 0}^N \cos \frac{x}{2^k} &= \frac{\sin \frac{x}{2^N}\cos\frac{x}{2^N}}{\sin \frac{x}{2^N}} \prod_{k=0}^{N-1} \cos \frac{x}{2^k}\\ &= \frac{\sin \frac{x}{2^{N-1}}}{2\sin \frac{x}{2^N}} \prod_{k=0}^{N-1} \cos \frac{x}{2^k}\\ &= \frac{\sin \frac{x}{2^{N-1}}\cos \frac{x}{2^{N-1}}}{2\sin \frac{x}{2^N}} \prod_{k=0}^{N-2} \cos \frac{x}{2^k}\\ &= \frac{\sin \frac{x}{2^{N-2}}}{2^2\sin \frac{x}{2^N}} \prod_{k=0}^{N-2} \cos \frac{x}{2^k}\\ &\qquad\qquad \vdots\\ &= \frac{\sin \frac{x}{2^{N-N}}}{2^N\sin \frac{x}{2^N}}\cos \frac{x}{2^0}\\ &= \frac{\sin x\cos x}{2^N\sin (x\cdot 2^{-N})}. \end{align}
- \cos(x2^{-k})=\frac{\sin(x2^{1-k})}{2\sin(x2^{-k})} 
- \begin{align} \prod_{k=0}^n\cos(x2^{-k}) &=\prod_{k=0}^n\frac{\sin(x2^{1-k})}{2\sin(x2^{-k})}\\ &=\frac1{2^{n+1}}\frac{\prod\limits_{k=-1}^{n-1}\sin(x2^{-k})}{\prod\limits_{k=0}^n\sin(x2^{-k})}\\ &=\frac1{2^{n+1}}\frac{\sin(2x)}{\sin(x2^{-n})}\\[12pt] \end{align} 
- \lim_{x\to0}\frac{\sin(x)}{x}=1 

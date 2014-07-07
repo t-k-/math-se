@@ -1,9 +1,0 @@
-d(x,y):=\sqrt{\sum (x_i - y_i)^2}
-d(x,y):= c \sqrt{\sum \left(\frac{x_i - y_i}{c}\right)^2}
-c = \max_i |x_i - y_i|
-d(x,y):= c \sqrt{1 + \frac{b}{c}^2}
-c
-c_0=1
-c_0=1
-c_i=\max_{j\leq i} |x_i-y_i|
-S_i:=\sum_{j\leq i} \left(\frac{x_i - y_i}{c_i}\right)^2 = \sum_{j\leq i-1} \left(\frac{x_i - y_i}{c_{i-1}}\right)^2 \cdot \frac{c_{i-1}^2}{c_i^2}+\left(\frac{x_i - y_i}{c_i}\right)^2 = S_{i-1} \cdot \left(\frac{c_{i-1}}{c_i}\right)^2+\left(\frac{x_i - y_i}{c_i}\right)^2

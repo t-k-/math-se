@@ -1,51 +1,0 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~             {\textbf{Method of Undetermined Coefficients}}
-{\bf{SOLUTION:}}
-y(x)=y_{h}~+~y_{p}
-{\text{Differential Equation:}}~~~~~~~~~~~~~~~~~
-y^{(5)}+2y^{(3)}+y'=2x+\sin(x)+\cos(x)
-{\text{Homogeneous Case:}}~~~~~~~~~~~~~~~~~~~~
-y^{(5)}+2y^{(3)}+y'=0
-{\text{Characteristic Polynomial:}}~~~~~~~~~
-r^5+2r^3+r=0
-{\text{Solved Roots of polynomial:}}~~~~~~
-\bigg[\{r\rightarrow 0\},\; \{r\rightarrow -i\},\; \{r\rightarrow -i\},\; \{r\rightarrow i\},\; \{r\rightarrow i\}\bigg]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-{\text{General Form of the Homogeneous Solution}}
- y_{h}(x)=C_{1}e^{r_{1}x}+e^{ax}\Big(C_{2}\cos(bx)+C_{3}\sin(bx)+C_{4}x\cos(bx)+C_{5}x\sin(bx) \Big) 
-{\text{Homogeneous Solution to the Differential Equation}}
-y_{h}(x)=C_{1}+C_{2}\cos(x)-C_{3}\sin(x)+C_{4}x\cos(x)-C_{5}\sin(x);~~\Big(~\because \sin(-x)=-\sin(x)~\Big).
- f(x)=2x 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \begin{array}{llll} y_{p}(x)=Ax+b \\ y_{p}'(x)=A \\ y_{p}''(x)=0 \\ y_{p}^{(3)}(x)=0 \\ y_{p}^{(4)}(x)=0 \\ y_{p}^{(5)}(x)=0 \end{array}
-(0)+2(0)+(A)=2x
-{\underline{A}}
- \begin{array}{l} A=~0 \end{array} 
- y_{p}(x)=0. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~y^{(5)}+2y^{(3)}+y'=\sin(x)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- f(x)=\sin(x) 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \begin{array}{llll} y_{p}(x)=A\sin(x)+B\cos(x) \\ y_{p}'(x)=A\cos(x)-B\sin(x) \\ y_{p}''(x)=-A\sin(x)-B\cos(x) \\ y_{p}^{(3)}(x)=-A\cos(x)+B\sin(x) \\ y_{p}^{(4)}(x)=A\sin(x)+B\cos(x) \\ y_{p}^{(5)}(x)=A\cos(x)-B\sin(x) \end{array}
-A\cos(x)-B\sin(x)+2\Big(-A\cos(x)+B\sin(x)\Big)+\Big(A\cos(x)-B\sin(x)\Big)=\sin(x)
-{\underline{A}}
-{\underline{B}}
- \begin{array}{l} A=~0 \\ 0\cdot B=1~~ ????~~ {\text{Huh}} \end{array} 
- y_{p}(x)=0~~?? 
-\cos(x)
-\sin(x)
-\cos(x)
-y_p(x) = A\cos(x) + B\sin(x)
-\sin(x)
-\cos(x)
-m
-i
-r(r+i)^2(r-i)^2
-2
-A
-B
-y_p(x) =  Ax^m\cos(x) + Bx^m\sin(x) =  Ax^2\cos(x) + Bx^2\sin(x)
-y_p(x) = Ax^2e^{ix}
-A
-\cos(x)
-\sin(x)
-A

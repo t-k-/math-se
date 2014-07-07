@@ -1,8 +1,0 @@
-[0,1]
-x\in[0,1]
-g(x)=\frac{1}x\cos\left(\frac{1}x\right) 
-\left[\frac\pi2,n\pi-\frac\pi2\right]\subset[1,n\pi]
-\frac1x\cos\left(\frac1x\right)
-[0,1]
- \int_{\large\frac1{n\pi}}^1\left|\frac1x\cos\left(\frac1x\right)\right|\,\mathrm{d}x =\int_1^{n\pi}\left|\frac1x\cos(x)\right|\,\mathrm{d}x 
- \begin{align} \int_{\pi/2}^{n\pi-\pi/2}\left|\frac1x\cos(x)\right|\,\mathrm{d}x &=\sum_{k=1}^{n-1}\int_{k\pi-\pi/2}^{k\pi+\pi/2}\left|\frac1x\cos(x)\right|\,\mathrm{d}x\\ &\ge\sum_{k=1}^{n-1}\frac2{(2k+1)\pi}\left|\int_{k\pi-\pi/2}^{k\pi+\pi/2}\cos(x)\,\mathrm{d}x\right|\\ &=\sum_{k=1}^{n-1}\frac4{(2k+1)\pi} \end{align} 

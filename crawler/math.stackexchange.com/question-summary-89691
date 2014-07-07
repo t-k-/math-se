@@ -1,24 +1,0 @@
-f(x)
-[0,\infty)
-\int_{0}^{\infty}f(x)dx
-\int_{a}^{\infty}h(x)
-a>0
-h(t)=\int_{t-a}^{t+a}f(x)dx
-t\ge a
-h(x)
-F(x+a)-F(x-a)
-F(x)=\int_{0}^{x}f(x)dx
- \begin{align*}  \int_a^{+ \infty} h(x)\, dx   &= \int_a^{+ \infty} \int_{x-a}^{x+a} f(t) \, dt dx \\ &= \int_a^{+ \infty} \int_0^{+ \infty} 1_{[x-a, x+a]} (t) f(t)\, dt \, dx \\ &= \int_a^{+ \infty} \int_0^{+ \infty} 1_{[t-a, t+a]} (x) f(t)\, dt \, dx \\  &= \int_0^{+ \infty} f(t) \int_a^{+ \infty} 1_{[t-a, t+a]} (x) dx dt. \end{align*} 
-\displaystyle\int_a^{+ \infty} 1_{[t-a, t+a]} (x)\, dx = \min \{t, 2a\}
- \begin{align*} \int_a^{+ \infty} h(x)\, dx  &= \int_0^{+ \infty} f(t) \min \{t, 2a\}\, dt\\  &\leq 2a \int_0^{+ \infty} f(t)\, dt. \end{align*} 
- \begin{align*} \int_a^X h(x) dx & = \int_a^X F(x+a)-F(x-a) \, dx \\ &= \int_{2a}^{X+a} F(x)\, dx - \int_0^{X-a} F(x)\, dx \\ &= \int_{X-a}^{X+a} F(x)\, dx - \int_0^{2a} F(x)\, dx. \end{align*} 
-f
-F
-\int_0^{+ \infty} f(x)\,dx
-\int_{X-a}^{X+a} F(x) dx
-2a \int_0^{+ \infty} f(x)\,dx
-\varepsilon > 0
-X> 0
-x > X
-\int_0^{+ \infty} f(t)\,dt - \varepsilon \leq F(x) \leq \int_0^{+ \infty} f(t)dt
-\int_a^{+ \infty} h(x)\, dx = \lim_{X \to + \infty} \int_a^X h(x)\, dx = 2a \int_0^{+ \infty} f(x)\,dx - \int_0^{2a} F(x)\, dx,

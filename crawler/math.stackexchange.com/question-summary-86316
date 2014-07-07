@@ -1,60 +1,0 @@
-A
-A_{ij} = a^{|i-j|}
--1<a<1
-i,j=1,\dots,n
-n=4
-A = \left[ \begin{matrix} 1 & a & a^2 & a^3 \\ a & 1 & a & a^2 \\ a^2 & a & 1 & a \\ a^3 & a^2 & a & 1 \end{matrix} \right]
-a
-[\lambda(a)^{-1}, \lambda(a)]
-\lambda(a)
-n
-A = LL^\top
-L = \begin{bmatrix} 1 & & & \\a & \sqrt{1-a^2} & & &\\a^2 & a\sqrt{1-a^2} & \sqrt{1-a^2} & &\\a^3 & a^2\sqrt{1-a^2} & a\sqrt{1-a^2} & \sqrt{1-a^2} &\\\vdots & \vdots & \vdots & \vdots & \ddots\end{bmatrix}.
-a
-(x_n)
-n
-x_n=ax_{n-1}+z_n
-(z_n)
-1-a^2
-n
-x_n
-x_{n+m}
-z_iz_j
-i\ne j
-z_k
-z_i^2
-1-a^2
-\mathbb x=(x_n)
-\mathbb z=(z_n)
-\mathbb x=\mathbb T\cdot \mathbb z
-\mathbb T
-T_{n,n+k}=0
-k\geqslant1
-T_{n,n-k}=a^k
-k\geqslant0
-\mathbb A
-A
-y
-n
-y
-\mathbb y
- x_n=\sum_{k\geqslant0}a^kz_{n-k}. 
- \mathrm{Cov}(x_n,x_{n+m})=\sum_{k,\ell\geqslant0}(1-a^2)a^{k+\ell}\cdot[n-k=n+m-\ell], 
- \mathrm{Cov}(x_n,x_{n+m})=(1-a^2)\sum_{k,\ell\geqslant0}a^{k+\ell}\cdot[\ell=m+k]=(1-a^2)\sum_{k\geqslant0}a^{m+2k}=a^m. 
- \mathbb A=\mathrm{Cov}(\mathbb T\mathbb z,\mathbb T\mathbb z)=\mathbb T\cdot\mathrm{Cov}(\mathbb z,\mathbb z)\cdot \mathbb T^*=\mathbb T\cdot \mathbb T^*. 
- y^*\cdot A\cdot y=\mathbb y^*\cdot \mathbb A\cdot \mathbb y=\mathbb y^*\cdot \mathbb T\cdot \mathbb T^*\cdot \mathbb y=\|\mathbb T^*\cdot \mathbb y\|^2\geqslant0. 
-A
-(1-a^2)^{n-1}
-A
-\lambda_k=\frac{1-a^2}{1+a^2-2a\chi_k}
-\chi_k
-n
-U_n(x)-2a U_{n-1}(x)+a^2 U_{n-2}(x)
-U_n(x)
-\chi_k
--1 < \chi_k < 1
-\lambda_k
-1+a +a^2+\dots a^{n-1}
-A
-A^{-1}
- A^{-1} =  \begin{bmatrix} \frac{1}{1-a^2}  & -\frac{a}{1-a^2} & 0                & \dots \\ -\frac{a}{1-a^2} &  \frac{1}{1-a^2} & -\frac{a}{1-a^2} & \ddots\\ 0                &  \ddots          & \ddots           & \ddots \end{bmatrix}. 

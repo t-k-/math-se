@@ -1,7 +1,0 @@
-n \in \mathbb Z
-f_n \text { on } [0,1]
-f_n(x) = \begin{cases}0 &\text{if} &x=0 \\              \sin \left({\pi\over2n}\right)&\text{if}&0\lt x\le\frac{1}{n} \\ \sin \left({2\pi\over2n}\right)&\text{if}&\frac1{n}\lt x\le\frac{2}{n} \\ \\ \sin\left({3\pi\over2n}\right)&\text{if}&\frac2{n}\lt x\le\frac3{n}\\ \vdots&\vdots&\vdots\\ \sin\left({n\pi\over2n}\right)&\text{if}&\frac{n-1}{n}\lt x\le\frac{n}{n}\\ \\ \end{cases}
-\lim_{n\to\infty} \int_0^1f_n(x)\,dx
-\begin{align} \int_0^1 f_n(x)\,dx &= \sum_{k=1}^n \int_{(k-1)/n}^{k/n} f_n(x)\,dx\\ &= \sum_{k=1}^n \int_{(k-1)/n}^{k/n} \sin \left(\frac{k\pi}{2n}\right)\,dx\\ &= \sum_{k=1}^n \frac{1}{n}\cdot \sin \left(\frac{k\pi}{2n}\right)\\ &= \frac{1}{n}\sum_{k=1}^n\sin \left(\frac{\pi}{2}\cdot\frac{k}{n}\right), \end{align}
-\int_0^1 \sin \left(\frac{\pi}{2}\cdot x\right)\,dx.
-\frac{2}{\pi}

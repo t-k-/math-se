@@ -1,22 +1,0 @@
-f
-[0,1]
-\lim_{n\to\infty}\int_0^1f(x^n)dx.
-0<\epsilon<1
-\int_0^1f(x^n)dx=\int_0^{1-\epsilon}f(x^n)dx+\int_{1-\epsilon}^1f(x^n)dx
-\int_0^{1-\epsilon}f(x^n)dx=f(\xi^n)(1-\epsilon,\quad\text{where }0\le\xi\le(1-\epsilon).
-\lim_{n\to\infty}f(0)(1-\epsilon).
-\left|\int_{1-\epsilon}^1f(x^n)dx\right|\le M\epsilon,\quad\text{where }M=\sup\lbrace|f(x)|:x\in[0,1]\rbrace.
-\lim_{n\to\infty}\int_0^1f(x^n)dx=f(0).
-\lim_{n\to\infty}\int_0^1f(x^n)dx=f(0)
-\lim_{n\to\infty}\int_{1-\epsilon}^1f(x^n)dx=f(0)\epsilon
-\epsilon=\frac12
-\xi \in [0,1)
-\xi^n \to 0
-f(\xi^n) \to f(0)
-f
-f
-[0,1]
-f
-[0,1]
-f
-\begin{align} \lim_{n \to \infty} \int_0^{1} f(x^n) dx &= \int_{0}^1 \lim_{n \to \infty} f(x^n)dx  \\ &= \lim_{\epsilon \to 0} \int_0^{1 - \epsilon} \lim_{n \to \infty}f(x^n) dx \\ &= \lim_{\epsilon \to 0} \int_0^{1 - \epsilon} f(0) dx \\ &= \lim_{\epsilon \to 0}(1 - \epsilon) f(0)  \\ &= f(0). \end{align}

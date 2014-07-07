@@ -1,48 +1,0 @@
- \{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 \} 
-=
-= 3\times 4
-n=
- \begin{bmatrix} 1 &2  &3 & 4\\      5 &6 & 7 & 8\\      9 &10 &11 &12 \end{bmatrix} 
-f_{row}(n)
-f_{col}(n)
-f_{row}(2) = 1, f_{col}(2) = 2
-f_{row}(10) = 3, f_{col}(10) = 2
-f_{row}(12) = 3, f_{col}(12) = 4
-f_{row}
-f_{col}
-\operatorname{int}(\cdot), \operatorname{floor}(\cdot),\operatorname{mod}(\cdot)\ldots
-3 \times 4
-\lceil x \rceil
-x
-x
-(n-1)/4
-f_\textrm{row}(n) = \lceil n / 4 \rceil
-f_\textrm{col}(n) = ((n-1) ~ \% ~ 4) + 1
-k \times m
-f_\textrm{row}(n) = \lceil n / m \rceil
-f_\textrm{col}(n) = ((n-1) ~ \% ~ m) +1
-h
-f_\textrm{row}(n)
-k \times m
-\infty
-k
-h(x) = \begin{cases} 0 & x < 0 \\ 1 & x \geq 0 \end{cases}
-f_\textrm{row}(n) = \sum_{i = 0}^k h(n - m i-1)
-f_\textrm{col}(n)
-1, 2, 3, \dots, m, 1, \dots
-m
-k = \infty
-k
-f_\textrm{col}(n) = \sum_{i=1}^m h(n-i) ~~ \textrm{for} ~~ n = 1, \dots, m
-f_\textrm{col}(n) = \sum_{i=1}^m h(n- i) + \sum_{j=1}^k \left( \sum_{i=1}^m h(n-i-jm) - m \cdot h(n-jm-1) \right)
-f_\textrm{col}
-f_\textrm{col}
-\frac{1}{m}
-m
-f_\textrm{col}(m) = m
-f_\textrm{col}(m) = 0
-f_\textrm{col}(n) = n ~~ \textrm{for} ~~ n = 1, \dots, m
-f_\textrm{col}
-f_\textrm{col}(n) = n - m \sum_{i=1}^k h(n - m i - 1) = n - m(f_\textrm{row}(n) - h(n-1))
-f_\textrm{row}
-h

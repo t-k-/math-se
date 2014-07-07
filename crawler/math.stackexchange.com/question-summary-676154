@@ -1,7 +1,0 @@
-p(X,Y;\lambda_x,\lambda_y,\gamma)=\exp(-\lambda_x-\lambda_y-\gamma)\dfrac{\lambda_x^X}{X!}\dfrac{\lambda_y^Y}{Y!}\sum\limits_{k=0}^{\min(X,Y)}\binom{X}{k} \binom{Y}{k}k!\left( \dfrac{\gamma}{\lambda_x \lambda_y} \right)^k
-X=Z_1+Z_3 \wedge Y=Z_2+Z_3
-Z_1\sim \text{Pois}(\lambda_x), Z_2\sim \text{Pois}(\lambda_y) \wedge Z_3\sim \text{Pois}(\gamma)
-P(X=i,Y=j)=\sum_{k=0}^\infty P(Z_1=i-k,Z_2=j-k,Z_3=k)
- P(X=i,Y=j)=\sum_{k=0}^{\min(i,j)}\mathrm e^{-\lambda_X-\lambda_Y-\gamma}\frac{\lambda_X^{i-k}}{(i-k)!}\frac{\lambda_Y^{j-k}}{(j-k)!}\frac{\gamma^k}{k!} 
- P(X=i,Y=j)=\mathrm e^{-\beta}\lambda_X^i\lambda_Y^j\sum_{k=0}^{\min(i,j)}\frac{\alpha^k}{(i-k)!(j-k)!k!} 
- \alpha=\frac{\gamma}{\lambda_X\lambda_Y},\qquad\beta=\lambda_X+\lambda_Y+\gamma.

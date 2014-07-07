@@ -1,9 +1,0 @@
-\int\frac{dx}{1+x^2+\sin^2x}
-\because0\leq\dfrac{\sin^2x}{x^2+1}<1
-\forall x\in\mathbb{R}
-\therefore\int\dfrac{dx}{1+x^2+\sin^2x}
-=\int\dfrac{dx}{(x^2+1)\left(1+\dfrac{\sin^2x}{x^2+1}\right)}
-=\int\dfrac{1}{x^2+1}\sum\limits_{m=0}^\infty\dfrac{(-1)^m\sin^{2m}x}{(x^2+1)^m}dx
-=\int\dfrac{1}{x^2+1}dx+\int\sum\limits_{m=1}^\infty\dfrac{(-1)^m\sin^{2m}x}{(x^2+1)^{m+1}}dx
-=\int\dfrac{1}{x^2+1}dx+\int\sum\limits_{m=1}^\infty\dfrac{(-1)^m(2m)!}{4^m(m!)^2(x^2+1)^{m+1}}dx+\int\sum\limits_{m=1}^\infty\sum\limits_{n=1}^m\dfrac{(-1)^{m+n}(2m)!\cos2nx}{2^{2m-1}(m-n)!(m+n)!(x^2+1)^{m+1}}dx
-=\int\dfrac{1}{x^2+1}dx+\int\sum\limits_{m=1}^\infty\dfrac{(-1)^m(2m)!}{4^m(m!)^2(x^2+1)^{m+1}}dx+\int\sum\limits_{m=1}^\infty\sum\limits_{n=1}^m\sum\limits_{p=0}^\infty\dfrac{(-1)^{m+n+p}(2m)!4^pn^{2p}x^{2p}}{2^{2m-1}(m-n)!(m+n)!(2p)!(x^2+1)^{m+1}}dx

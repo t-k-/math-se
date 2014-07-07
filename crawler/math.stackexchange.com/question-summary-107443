@@ -1,23 +1,0 @@
-T \colon \mathbb{R}^n \to \mathbb{R}^n
-H^{m}
-f(x)
-   \int\limits_{T(M)} f(x) H^{m}(dx) = |\det{T}| \int\limits_{M} f(T(x)) H^{m}(dx) 
-n=3
-M=\{(x,y,z):0\leq x\leq 1,\quad 0\leq y\leq 1\quad z=0\}
-xy
-T
-\operatorname{det}(T_k)=k
-T_k(M)=M
-f:\mathbb{R}^3\to\mathbb{R}
-f(x)=1
-k\neq 1
-k=0
-k=2
- T_k=\begin{vmatrix}1 && 0 && 0\\0 && 1 && 0\\0 && 0 && k \end{vmatrix} 
- \int\limits_{T_k(M)}f(x)H^m(dx)=\iint\limits_{M}1dxdy=1 
- \operatorname{det}(T_k)\int\limits_{M}f(T_k(x))H^m(T_k(dx))=k\iint\limits_{M}1dxdy=k 
- \int\limits_{T_k(M)}f(x)H^m(dx)\neq\operatorname{det}(T_k)\int\limits_{M}f(T_k(x))H^m(T_k(dx)) 
-\frac{\log 2}{\log 3}
-\frac{\log 2}{\log 3}
- \mu_\alpha(E) = \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam }F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty F_k,\ \ \mbox{diam }F_k\leq\delta,\forall k\right\}, 
- \mu_\alpha(\lambda E) = \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam }F_k)^\alpha\ \right|\ \lambda E \subset \bigcup_{k=1}^\infty F_k,\ \ \mbox{diam }F_k\leq\delta,\forall k\right\}\\ = \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam }F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty \lambda^{-1}F_k,\ \ \mbox{diam }F_k\leq\delta,\forall k\right\}\\ =\lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam }\lambda F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty F_k,\ \ \mbox{diam }\lambda F_k\leq\delta,\forall k\right\}\\ = \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\lambda\,\mbox{diam }F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty F_k,\ \ \lambda\,\mbox{diam }F_k\leq\delta,\forall k\right\}\\ =\lambda^\alpha \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam } F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty F_k,\ \ \mbox{diam }F_k\leq\frac{\delta}{\lambda},\forall k\right\}\\ = \lambda^\alpha \lim_{\delta \to 0} \inf\left\{\left.\sum_k(\mbox{diam }F_k)^\alpha\ \right|\ E \subset \bigcup_{k=1}^\infty F_k,\ \ \mbox{diam }F_k\leq\delta,\forall k\right\}\\ =\lambda^\alpha \mu_\alpha(E). 

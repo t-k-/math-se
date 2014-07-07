@@ -1,5 +1,0 @@
-\int x(\arctan x)^{2}dx
-\tan(u)=x
- \begin{align} \int x\arctan(x)^2\mathrm{d}x &=\int\tan(u)\,u^2sec^2(u)\,\mathrm{d}u\\ &=\frac12\int u^2\,\mathrm{d}\sec^2(u)\\ &=\frac12u^2\sec^2(u)-\int u\sec^2(u)\,\mathrm{d}u\\ &=\frac12u^2\sec^2(u)-\int u\,\mathrm{d}\tan(u)\\ &=\frac12u^2\sec^2(u)-u\tan(u)+\int\tan(u)\,\mathrm{d}u\\ &=\frac12u^2\sec^2(u)-u\tan(u)-\log|\cos(u)|+C\\ &=\frac12(1+x^2)\arctan(x)^2-x\arctan(x)+\frac12\log(1+x^2)+C \end{align} 
-\int x(\arctan x)^{2}dx = (\arctan x)^2 \int x dx - \int \frac{2 \arctan x}{1 + x^2} \left( \int x dx \right) dx  \\ = \frac{(\arctan x)^2 x^2}{2} - \int \frac{2 \arctan x}{1 + x^2} \frac{x^2}{2} dx 
-\begin{align} \int dx \: x (\arctan{x} )^2 &= \frac{1}{2} x^2 (\arctan{x} )^2 - \int dx \: \frac{x^2}{1+x^2} \arctan{x} \\ &=  \frac{1}{2} x^2 (\arctan{x} )^2 - \int dx \: \arctan{x}  + \int dx \: \frac{\arctan{x}}{1+x^2} \\ &= \frac{1}{2} x^2 (\arctan{x} )^2 - x \arctan{x} + \int dx \: \frac{x}{1+x^2} + \frac{1}{2} (\arctan{x})^2 \\ &= \frac{1}{2} [(1+x^2) (\arctan{x})^2 + \log{(1+x^2)}] - x \arctan{x} + C  \end{align}

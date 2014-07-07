@@ -1,25 +1,0 @@
-N
-X_i
-G_Y= G_{N} \circ G_{X}.
-G_{N}(s) = \exp(\mu(s-1)).
- \begin{align} G_{X}(s) &= \sum_{k\geq 1}s^{k} \frac{(1-p)^k}{k \log(1/p)} \\ &= \frac{1}{\log(1/p)} \sum_{k\geq 1} \frac{(s(1-p))^k}{k}  \\ &= \frac{\log(1/q)}{\log(1/p)} \sum_{k\geq 1} \frac{(1-q)^k}{k\log(1/q)} \qquad (q := 1-s(1-p))\\ &= \frac{\log(1/q)}{\log(1/p)}\qquad \bigg(\text{Since } \frac{(1-q)^k}{k\log(1/q)} \text{ is a pmf.}\bigg) \\ &= \frac{\log q}{\log p} \\ &= \frac{\log(1-s(1-p))}{\log p}. \end{align} 
-     \begin{align}       G_{Y}(s) &= G_{N}(G_{X}(s)) \\       &= \exp\bigg(\mu \big(\frac{\log(1-s(1-p))}{\log p} - 1\big)\bigg).     \end{align} 
-r
-\alpha
-r
-\alpha
-r
-\alpha
-Y
-\alpha = p
-r= \mu
- \left(\frac{\alpha s}{1-s(1-\alpha)}\right)^{r}. 
- \exp\bigg(\mu \big(\frac{\log(1-s(1-p))}{\log p} - 1\big)\bigg) = \left(\frac{\alpha s}{1-s(1-\alpha)}\right)^{r} 
- \exp\left(\mu \left(\frac{\log(1-s(1-p))}{\log p} - 1\right)\right) = \left(\frac{\alpha s}{1-s(1-\alpha)}\right)^r 
-\mu = r\log p
-{0,1,2,3,\ldots}
- \begin{align} & \exp\left(\mu \left(\frac{\log(1-s(1-p))}{\log p} - 1\right)\right) = \exp\left(r\log p \left(\frac{\log(1-s(1-p))}{\log p} - 1\right)\right) \\  \\ & = \exp\left(r\log(1-s(1-p)) - r\log p\right) = \exp\left(r \log\left(\frac{1-s(1-p)}{p}\right)\right) \\  \\ & = \left(\frac{1-s(1-p)}{p}\right)^r \end{align} 
-r=\mu/\log p
-\{0,1,2,3,\ldots\}
-1
-0

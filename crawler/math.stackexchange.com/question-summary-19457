@@ -1,17 +1,0 @@
-\displaystyle \int_{\sqrt2/2}^{1}\int_{\sqrt{1-x^2}}^{x}\frac{1}{\sqrt{x^2+y^2}}dydx
-I = \int_{1/\sqrt{2}}^1 \, \int_{\sqrt{1-x^2}}^x \frac{1}{\sqrt{x^2+y^2}} \text{d}y \, \text{d}x.
-I = \int_0^{\pi/4} \, \int_{r=1}^{r=\sec \theta} \frac{1}{r} r \text{d}r \, \text{d} \theta = \int_0^{\pi/4} \sec \theta \, - 1 \textrm{ d} \theta 
-= \left[ \frac{1}{2} \log \left| \frac{1+ \sin \theta}{1- \sin \theta} \right| - \theta  \right]_0^{\pi/4} = \log(1+\sqrt{2}) - \frac{\pi}{4}.
-y= x \sinh u
-\sinh^{-1} u = \log(u+ \sqrt{1+u^2})
-\int_{\sqrt{1-x^2}}^x \frac{1}{\sqrt{x^2+y^2}} \text{d}y  = \left[ \log \left( \frac{y}{x} +  \sqrt{ 1+ \frac{y^2}{x^2} }\right) \right]_{\sqrt{1-x^2}}^x 
-= \log(1+ \sqrt{2}) + \log x - \log( 1+ \sqrt{1-x^2}). \quad (1)
-\int \log x \textrm{ d}x = x \log x - x + C
- \int \log( 1+ \sqrt{1-x^2} ) \textrm{ d}x = x \log( 1+ \sqrt{1-x^2}) -x + \sin^{-1} x + C.
-\frac{1}{\sqrt{1-x^2}} - 1 = \frac{x^2}{(1-x^2) + \sqrt{1-x^2}}.
-(1)
-1/\sqrt{2}
-1
-I = \left(1 - \frac{1}{\sqrt{2}} \right) \log(1+ \sqrt{2}) + \left[ x \log x - x\log( 1+ \sqrt{1-x^2}) - \sin^{-1} x \right]_{1/\sqrt{2}}^1
-= \log(1+\sqrt{2}) - \frac{\pi}{4}.
-\sec(\theta) - 1

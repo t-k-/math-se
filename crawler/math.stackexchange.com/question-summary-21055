@@ -1,43 +1,0 @@
-\rho(A)<1
- I + A + A^2 + A^3 + \cdots 
-(I-A)^{-1}
- I + A^T A + (A^2)^T A^2 + (A^3)^T A^3 + \cdots
-\rho(A)<1
-(I-A^T A)^{-1}
- (A^2)^T A^2 \neq (A^T A)^2
-\rho(A)<1
-\rho(A^T A)=1
-S
-A^TSA=S-I
-n=2
-S\mapsto A^TSA-S
-M_n(\mathbb C)
-(\det A-1)^2\det(A^2-I)
-A
-n
-F:M_n\to M_n
-F(X)=A^\mathrm{T}XA
-\mathrm{id}:M_n\to M_n
-(\mathrm{id} - F)^{-1}(I)
- \small S = I + A \cdot A^\tau + A^2 \cdot (A^\tau)^2 + A^3  \cdot  (A^\tau)^3 + ... 
- \small S = I + A \cdot S  \cdot A^\tau  
- \qquad \small  \begin{array} {lll}   A &=& \begin{array} {rrrrr}  1 & 2 & 3 & 4 \\  1 & 4 & 9 & 16 \\  1 & 8 & 27 & 64 \\  1 & 16 & 81 & 256  \end{array} \\   \\ \\   W ,D &=& \begin{array} {rrrr|r}     -10.952794 & 8.1645134 & -0.97056263 & 0.017714558  & 0.11272446 \\     10.508537 & 4.2521778 & -1.8354857 & 0.066926874  & 1.0292480 \\     -5.0996430 & -4.0885199 & -2.6756811 & 0.25725908  & 8.9314971 \\     1 & 1 & 1 & 1  & 277.92653     \end{array} \\   \\ \\  Mm &=& \begin{array} {rrrr}  0.0039983491 & 0.00083487726 & -0.0016554169 & -0.00076571340 \\  0.00083487726 & 0.010062383 & 0.0027137791 & -0.0041346567 \\  -0.0016554169 & 0.0027137791 & 0.081999971 & -0.013791508 \\  -0.00076571340 & -0.0041346567 & -0.013791508 & 0.93753657  \end{array} \\   \\ \\  Gg&=&\begin{array} {rrrr}  0.0040498092 & 0.00094445419 & 0.24350752 & 0.000025246807 \\  0.00094445419 & -0.16953880 & -0.00033124251 & 0.000014504751 \\  0.24350752 & -0.00033124251 & -0.0010409834 & 0.0000055581782 \\  0.000025246807 & 0.000014504751 & 0.0000055581782 & -0.000012137628  \end{array} \\   \\ \\  S &=& \begin{array} {rrrr}       -5.8030040 & -3.8986593 & 14.233205 & -4.3361544 \\       -3.8986593 & -11.925784 & -1.9019096 & 1.4489718 \\       14.233205 & -1.9019096 & 3.9412187 & -1.2246860 \\       -4.3361544 & 1.4489718 & -1.2246860 & 0.32178997       \end{array} \\   \\ \\  chk &=& \begin{array} {rrrr}        -5.8030040 & -3.8986593 & 14.233205 & -4.3361544 \\        -3.8986593 & -11.925784 & -1.9019096 & 1.4489718 \\        14.233205 & -1.9019096 & 3.9412187 & -1.2246860 \\        -4.3361544 & 1.4489718 & -1.2246860 & 0.32178997        \end{array} \\   \\ \\  err &=& \begin{array} {rrrr}                     0 & . & . & . \\                     . & 0 & . & . \\                     . & . & 0 & . \\                     . & . & . & 0                     \end{array} \end{array} 
- \rm\ B = transpose(A) 
- \rm\ I 
- \rm\ S = I + B S A 
- S = I + BSA = I + mDM*S*WDw 
-  MSW = MW + D MSW D 
-I + A^T A + (A^2)^T A^2 + (A^3)^T A^3 + \cdots
-S
-A^TSA=S-I
-\rho(A)<1
-S
-\rho(A^T\otimes A^T)=\rho(A)^2<1
-\rho(A)<1
-n\rightarrow\infty
-A^n\rightarrow0
-(A^T)^nSA^n\rightarrow0
-I + A^T A + (A^2)^T A^2 + (A^3)^T A^3 + \cdots
-S
- A^TSA=S-I\ \Leftrightarrow\ ISI-A^TSA=I \ \Leftrightarrow\ (I\otimes I - A^T\otimes A^T)\textrm{vec}(S)=\textrm{vec}(I) 
- \begin{eqnarray} A^TSA&=&S-I,\\ \Rightarrow(A^T)^2SA^2&=&A^TSA-A^TA=S-I-A^TA,\\ &\vdots&\\ \Rightarrow(A^T)^nSA^n&=&S-I-A^TA-(A^T)^2A^2-\ldots-(A^T)^{n-1}A^{n-1}. \end{eqnarray} 

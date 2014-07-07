@@ -1,14 +1,0 @@
-\min_x \sum_i (b_i - x)^2
-b_i
-\min_x \sum_i w_i(b_i - x)^2
-x
-\sum_i w_i=1
- \sum_i w_i b_i 
-n
-\sum\limits_i\ 1
-0
-x =\text{the aformentioned weighted average}
-{}\;x\;{}
-x
-x
- \begin{align} & {} \qquad \sum_{i=1}^n w_i(x - b_i)^2 = \sum_{i=1}^n w_i(x^2 - 2xb_i + b_i^2) = x^2 - \left(2x\sum_{i=1}^n (w_i b_i)\right) + \left(\sum_{i=1}^n w_i b_i^2\right) \\  \\  \\ & = \underbrace{\left(x^2 -2x\sum_{i=1}^n w_i b_i + \left(\sum_{i=1}^n w_i b_i \right)^2 \right)}_\text{a square} + \sum_{i=1}^n w_i b_i^2 - \left(\sum_{i=1}^n w_i b_i \right)^2\tag{completing the square} \\  \\  \\ & = \underbrace{\left( x - \sum_{i=1}^n w_i b_i \right)^2}_\text{a square} + \sum_{i=1}^n w_i b_i^2 - \left(\sum_{i=1}^n w_i b_i \right)^2. \end{align} 

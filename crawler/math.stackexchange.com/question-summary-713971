@@ -1,6 +1,0 @@
-\int_0^1\arctan(x)^2\,dx
-{\pi^2\over16} + \frac{\pi\ln(2)}{4} -C
-\int_0^1{\frac{\log\left(\frac1{x}+x\right)}{1+x^2}}\,dx
- \begin{align} \int_{0}^{1} (\arctan x)^{2} \ dx &= x (\arctan x)^{2} \Big|^{1}_{0} - 2 \int_{0}^{1} \frac{x \arctan x}{1+x^{2}} \ dx \\ &= \frac{\pi^{2}}{16} - 2 \int_{0}^{1} \frac{x \arctan x}{1+x^{2}} \ dx \\ &= \frac{\pi^{2}}{16} - \arctan(x) \ln(1+x^{2}) \Big|^{1}_{0} + \int_{0}^{1} \frac{\ln (1+x^{2})}{1+x^{2}} \ dx \\ &= \frac{\pi^{2}}{16} - \frac{\pi}{4} \ln 2 + \int_{0}^{1} \frac{\ln(1+x^{2})}{1+x^{2}} \ dx \end{align}
-x = \tan t 
-\begin{align}\int_{0}^{1} (\arctan x)^{2} \ dx  &=\frac{\pi^{2}}{16} - \frac{\pi}{4} \ln 2  - 2 \int_{0}^{\pi /4} \ln (\cos t) \ dt \\ &= \frac{\pi^{2}}{16} - \frac{\pi}{4} \ln 2 -2 \int_{0}^{\pi /4} \left( \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n} \cos (2nt) - \ln 2 \right) \ dt \\ &= \frac{\pi^{2}}{16} - \frac{\pi}{4} \ln 2 - 2 \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}\int_{0}^{\pi /4} \cos (2nt) \ dt + \frac{\pi}{2} \ln 2 \\ &= \frac{\pi^{2}}{16} + \frac{\pi}{4} \ln 2 - \sum_{n=1}^{\infty} \frac{\sin \left(\frac{\pi n}{2} \right)}{n^{2}} \\ &= \frac{\pi^{2}}{16} + \frac{\pi}{4} \ln 2 - \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)^{2}} \\  &= \frac{\pi^{2}}{16} + \frac{\pi}{4} \ln 2 - C \end{align}

@@ -1,21 +1,0 @@
- f^{(n)}(z)=\frac{n!}{2\pi i}\int_C\frac{f(\zeta)d\zeta}{(\zeta-z)^{n+1}}. 
-C
-r
-|f(\zeta)|\leq M
-C
-z=a
- |f^{(n)}(a)|\leq Mn!r^{-n}. 
- |f^{(n)}(a)|\leq\frac{n!}{2\pi}\int_C \frac{|f(\zeta)||d\zeta|}{|\zeta-a|^{n+1}}\leq Mn!\int_C\frac{|d\zeta|}{|\zeta-a|^{n+1}} 
-C
-r
-a
-C
-\zeta=a+re^{i\theta}
-0\leq \theta\leq 2\pi
-|e^{i\theta}|=1
-|i|=1
-|f|\leq M
-C
-f^{(n)}(a)=\frac{n!}{2\pi i}\int_C\frac{f(\zeta)d\zeta}{(\zeta-a)^{n+1}}
-|f^{(n)}(a)|=\left|\frac{n!}{2\pi i}\int_0^{2\pi}\frac{f(a+re^{i\theta})rie^{i\theta}d\theta}{(re^{i\theta})^{n+1}}\right|\leq\frac{n!}{2\pi }\int_0^{2\pi}\left|\frac{f(a+re^{i\theta})rie^{i\theta}}{(re^{i\theta})^{n+1}}\right|d\theta
-=\frac{n!}{2\pi }\int_0^{2\pi}\frac{|f(a+re^{i\theta})|}{r^n}d\theta\leq \frac{n!}{2\pi }\int_0^{2\pi}\frac{M}{r^n}d\theta=\frac{Mn!}{r^n}

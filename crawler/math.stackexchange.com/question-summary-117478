@@ -1,37 +1,0 @@
-X_1,...,X_n
- \sum_{i=1}^{n} X_i
-X_1
-\lambda_1
-X_2
-\lambda_2
-X_1
-X_2
-X_1+X_2
-\lambda_1+\lambda_2
-X_1
-\lambda_1
-X_2
-\lambda_2
-X_1+X_2
-\lambda_1+\lambda_2
-X_1+X_2
-\lambda_1+\lambda_2
-p_Y
-Y=X_1+X_2
-X_1
-X_2
-i\ge0
-P[X_1=i]= {\lambda_1^i\over i!} e^{-\lambda_1}\quad\text{and}\quad P[X_2=i]= {\lambda_2^i\over i!} e^{-\lambda_2}.
-k\ge0
-X_1
-X_2
-   \eqalign{       p_Y(k)       &=\sum_{i=0}^kP[X_1=i,X_2=k-i]\cr       &=\sum_{i=0}^kP[X_1=i]\cdot P[ X_2=k-i]\cr       &=\sum_{i=0}^k{\lambda_1^i\over i!}e^{-\lambda_1}\cdot{\lambda_2^{k-i}\over(k-i)!}e^{-\lambda_2}\cr       &=\sum_{i=0}^k{\lambda_1^i\lambda_2^{k-i}\over i!\,(k-i)!}e^{-(\lambda_1+\lambda_2)}\cr       &= e^{-(\lambda_1+\lambda_2)}\cdot\sum_{i=0}^k{\lambda_1^i\lambda_2^{k-i}\over i!\,(k-i)!}\cr       &={1\over k!}\cdot e^{-(\lambda_1+\lambda_2)}\cdot\sum_{i=0}^k{k!\over i!\,(k-i)!}\,\lambda_1^i\lambda_2^{k-i}\cr      % &={1\over k!}\cdot e^{-(\lambda_1+\lambda_2)}\cdot\sum_{i=1}^k{k!\over i!\,(k-i)!}\,\lambda_1^i\lambda_2^{k-i}\cr         &={(\lambda_1+\lambda_2)^k\over k!}\cdot e^{-(\lambda_1+\lambda_2)},\cr   } 
-\lambda_1+\lambda_2
- p_Y(k)= {(\lambda_1+\lambda_2)^k\over k!}\cdot e^{-(\lambda_1+\lambda_2)},\quad k\ge 0 ; 
-n\ge 1
-X_1, X_2 \cdots X_n
-X_i
-\lambda_i
-Z
-\sum\limits_{i=1}^n\lambda_i
-Z=\sum_{i=1}^nX_i

@@ -1,23 +1,0 @@
- 1 + \sum_{i=0}^{n-2}  \prod_{k=0}^{i} \dfrac{n-k}{r-k}  
-\Gamma
-m \to n-2-m
-s_{m+1} - s_m = \binom{m+r-n+1}{m+1}
-    \prod_{k=0}^m \frac{n-k}{r-k} = \frac{\Gamma(n+1)}{\Gamma(n-m)} \cdot \frac{\Gamma(r-m)}{\Gamma(r+1)} 
-    1 + \sum_{m=0}^{n-2} \frac{\Gamma(n+1)}{\Gamma(n-m)} \cdot \frac{\Gamma(r-m)}{\Gamma(r+1)} = 1 + \sum_{m=0}^{n-2} \frac{\Gamma(n+1)}{\Gamma(n-(n-2-m))} \cdot \frac{\Gamma(r-(n-m-2))}{\Gamma(r+1)} = \\ 1 + \frac{\Gamma(n+1)}{\Gamma(r+1)}  \sum_{m=0}^{n-2} \frac{\Gamma(m+r+2-n)}{\Gamma(m+2)}   = 1 + \frac{\Gamma(n+1)}{\Gamma(r+1)}  \sum_{m=0}^{n-2} \frac{\Gamma(m+r+2-n)}{\Gamma(m+2)}  
-    \frac{\Gamma(n+1)}{\Gamma(r+1)}  \sum_{m=0}^{n-2} \frac{\Gamma(m+r+2-n)}{\Gamma(m+2)}  =     \frac{\Gamma(n+1) \Gamma(1+r-n)}{\Gamma(r+1)}  \sum_{m=0}^{n-2} \frac{\Gamma(m+r+2-n)}{\Gamma(m+2) \Gamma(1+r-n)}  = \\     \frac{1}{\binom{r}{n}} \sum_{m=0}^{n-2} \binom{m+r-n+1}{m+1} = \frac{n}{r-n+1} - \frac{1}{\binom{r}{n}} 
-     s_m = \frac{m+1}{r-n+1}\binom{m+r-n+1}{m+1} 
- \sum_{m=0}^{n-2} \binom{m+r-n+1}{m+1} = \sum_{m=0}^{n-2} (s_{m+1}-s_m)  = s_{n-1} - s_0 
-s_{m+1}-s_m
-   s_{m+1} = \frac{m+2}{r-n+1} \binom{m+r-n+2}{m+2} = \frac{m+2}{r-n+1} \cdot \frac{m+r-n+2}{m+2} \binom{m+r-n+1}{m+1} = \\ s_m + \binom{m+r-n+1}{m+1} 
- \frac{r+1}{r-n+1} - \frac{1}{\binom{r}{n}}
-\frac{1}{\binom{r}{k}} = (r+1)\int_{0}^{1} t^{r-k} (1-t)^k dt
-1+\sum_{k=1}^{n-1} \frac{\binom{n}{k}}{\binom{r}{k}}
-\sum_{k=1}^{n-1} \frac{\binom{n}{k}}{\binom{r}{k}} = \sum_{k=1}^{n-1} (r+1)\int_{0}^{1} \binom{n}{k} t^{r-k} (1-t)^k dt = 
- (r+1)\int_{0}^{1} \sum_{k=1}^{n-1} \binom{n}{k} t^{r-k} (1-t)^k dt  = 
- (r+1)\int_{0}^{1} t^{r-n} \sum_{k=1}^{n-1} \binom{n}{k} t^{n-k} (1-t)^k dt  = 
- (r+1)\int_{0}^{1} t^{r-n} (1 - t^n - (1-t)^n) dt  = 
- (r+1)\int_{0}^{1} t^{r-n} - t^r - t^{r-n}(1-t)^n dt =  
- \frac{r+1}{r-n+1} - 1 - (r+1)\int_{0}^{1}t^{r-n}(1-t)^n dt =
- \frac{r+1}{r-n+1} - 1 - \frac{1}{\binom{r}{n}}
- \frac{r+1}{r-n+1} - \frac{1}{\binom{r}{n}}
-H_n = \sum_{k=1}^n 1/k

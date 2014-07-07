@@ -1,81 +1,0 @@
-N\times N
-\mathcal{H} = \{H\,|\, H_{ij}=H_{N+1-i,N+1-j}, \det H \neq 0\}
-\begin{pmatrix}a_{1} & a_{2} & \cdots & a_{N-1} & a_{N}\\ b_{1} & b_{2} & \cdots & b_{N-1} & b_{N}\\ \vdots & \vdots & \ddots & \vdots & \vdots\\ b_{N} & b_{N-1} & \cdots & b_{2} & b_{1}\\ a_{N} & a_{N-1} & \cdots & a_{2} & a_{1} \end{pmatrix}
-I\in \mathcal{H}
-A\in \mathcal{H}
-B\in \mathcal{H}
-AB\in\mathcal{H}
-\begin{align*} (AB)_{mn}&=\sum_i A_{mi}B_{in}=\sum_i A_{N+1-m,N+1-i}B_{N+1-i, N+1-n}\\ &=\sum_{i^\prime} A_{N+1-m,i^\prime}B_{i^\prime, N+1-n}=(AB)_{N+1-m,N+1-n} \end{align*}
-A\in\mathcal{H}
-A^{-1}\in\mathcal{H}
-\left(\begin{array}{ccc} 0 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 0 \end{array}\right)
-A
-(i,j)
-(N+1-i,N+1-j)
-B_{ij}
-A
-i
-j
-\det(B_{ij})
-\det(B_{N+1-i,N+1-j})
-(r,s)
-B_{ij}
-(N-r,N-s)
-B_{N+1-i,N+1-j}
-(r,s)
-B_{ij}
-r\lt i
-s\lt j
-(r,s)
-B_{ij}
-a_{rs}= a_{N+1-r,N+1-s}
-(r,s)
-(i,j)
-(N+1-r,N+1-s)
-(N+1-i,N+1-j)
-(N-r,N-s)
-B_{N+1-i,N+1-j}
-a_{N+1-r,N+1-s}=a_{rs}
-r\lt i
-s\geq j
-(r,s)
-B_{ij}
-a_{r,s+1} = a_{N+1-r,N-s}
-(r,s+1)
-(i,j)
-(N+1-r,N-s)
-(N+1-i,N+1-j)
-a_{N+1-r,N-s}
-(N-r,N-s)
-B_{N+1-i,N+1-j}
-r\geq i
-s\lt j
-r\geq i
-s\geq j
-(r,s)
-B_{ij}
-a_{r+1,s+1} = a_{N-r,N-s}
-(r+1,s+1)
-(i,j)
-(N-r,N-s)
-(N+1-i,N+1-j)
-(N-r,N-s)
-B_{N+1-i,N+1-j}
-a_{N-r,N-s}
-N\times N
-(i,j)
-(N+1-i,N+1-j)
--1
-A\in\mathcal{H}
-(i,j)
-A
-(N+1-i,N+1-j)
-A
-A
-\mathcal{H}
-A
-\mathcal{H}
-A
-\mathcal{H}
-\mathcal{H}
-\mathcal{H}

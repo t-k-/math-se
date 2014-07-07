@@ -1,74 +1,0 @@
-f: \mathbb{C} \to \mathbb{C}
-\theta \geq 0
-\gamma_{\theta}: [0,1] \to \mathbb{C}
-\gamma_{\theta}
-(0,0)
-e^{i \theta} = (\cos \theta, \sin \theta)
- \gamma_{\theta}(t) = t e^{i\theta}, \qquad t \in [0,1], 
-\theta
-f
-\gamma_{\theta}
-f
-f
-\gamma_0
-f
-\gamma_0
-\epsilon > 0
-f
-\gamma_{\theta}
-f
-\gamma_0
-\epsilon
-\epsilon
-\theta
-\theta
-\theta
-e^{i\theta}
-1
-f(\gamma_{\theta}(t)) - f(\gamma_0(t))
-t
-f
-\theta
-t\theta \leq \theta
-f
-\epsilon
-\theta
-\epsilon
- \int_{\gamma_{\theta}} f(z) \, dz = \int_0^1 f(\gamma_{\theta}(t)) e^{i \theta} \, dt 
- \int_{\gamma_{\theta}} f(z) \, dz - \int_{\gamma_0} f(z) \, dz = \int_0^1 (f(\gamma_{\theta}(t)) e^{i \theta} - f(\gamma_0(t)) ) \, dt   
-\theta
-\epsilon > 0
-f(\gamma_0(t))
-[0,1]
-M > 0
-|f(\gamma_0(t))| < M
-t \in [0,1]
-x \mapsto e^{ix}
-\delta_1
-|e^{i\theta} - 1| < \epsilon/(2M)
-0 < \theta < \delta_1
-0 < \theta < \delta_1
-|f(\gamma_0(t))| |e^{i\theta} - 1| < \epsilon/2
-t \in [0,1]
- \begin{align} \left|\int_{\gamma_{\theta}} f(z) \, dz - \int_{\gamma_0} f(z) \, dz\right| & = \left|\int_0^1 (f(\gamma_{\theta}(t)) e^{i \theta} - f(\gamma_0(t)) ) \, dt  \right| \\ & \leq \int_0^1 |f(\gamma_{\theta}(t)) e^{i \theta} - f(\gamma_0(t)) | dt \\ & \leq \int_0^1 |f(\gamma_{\theta}(t)) e^{i \theta} - f(\gamma_0(t)) e^{i\theta} + f(\gamma_0(t)) e^{i\theta}  - f(\gamma_0(t)) | dt \\ & \leq \int_0^1 (|f(\gamma_{\theta}(t)) e^{i \theta} - f(\gamma_0(t)) e^{i\theta}| + |f(\gamma_0(t)) e^{i\theta}  - f(\gamma_0(t)) |) dt \\ & \leq \int_0^1 (|f(\gamma_{\theta}(t)) - f(\gamma_0(t))| + |f(\gamma_0(t))| |e^{i\theta} - 1|) dt. \end{align} 
-f
-\delta_2
-|f(z) - f(w)| < \epsilon/2
-|z - w| < \delta_2
-0 < \theta < \delta_2
-|\gamma_{\theta}(t) - \gamma_0(t)| \leq t \theta \leq \theta < \delta_2
-t \in [0,1]
-\delta_2
-|f(\gamma_{\theta}(t)) - f(\gamma_0(t))| < \epsilon/2
-t \in [0,1]
-0 < \theta < \min(\delta_1, \delta_2)
-\epsilon/2 + \epsilon/2 = \epsilon
-\epsilon
-\lim_{t \to 0^{+}} \int_{\gamma_{\theta}} f(z) \, dz = \int_{\gamma_0} f(z) \, dz
-f
-f
-C
-f
-C
-f
-C

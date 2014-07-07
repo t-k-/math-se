@@ -1,50 +1,0 @@
-a>b>0
-I(a,b)=\int_{0}^{\infty}\frac{e^{ax}-e^{bx}}{x\left(e^{ax}+1\right)\left(e^{bx}+1\right)}dx
-t
-I_t(a,b)
-I(a,b)
-t
-+\infty
-I_t(a,b)
-x=0
-x\leftarrow bx
-x\leftarrow ax
- I_t(a,b)=\int_{t}^{+\infty}\frac{\mathrm{d}x}{x\left(\mathrm{e}^{bx}+1\right)}-\int_{t}^{+\infty}\frac{\mathrm{d}x}{x\left(\mathrm{e}^{ax}+1\right)}= \int_{bt}^{at}\frac{\mathrm{d}x}{x\left(\mathrm{e}^{x}+1\right)}, 
-1/(2x)
-O(t)
-t\to0
-x=0
-at-bt=O(t)
-t\to0
-I_t(a,b)\to I(a,b)
- I_t(a,b)=\frac12\log\left(\frac{a}b\right)- \int_{bt}^{at}\frac{\mathrm{e}^{x}-1}{2x\left(\mathrm{e}^{x}+1\right)}\mathrm{d}x=\frac12\log\left(\frac{a}b\right)+O(t), 
- I(a,b)=\frac12\log\left(\frac{a}b\right). 
-u\ge0
-I(a,b)
- u(c,x)=\frac{\mathrm{e}^{cx}}{(1+\mathrm{e}^{cx})^2}=\frac{\partial}{\partial c}\left(\frac{-1}{x(1+\mathrm{e}^{cx})}\right). 
- \frac{\mathrm{e}^{ax}-\mathrm{e}^{bx}}{x\left(\mathrm{e}^{ax}+1\right)\left(\mathrm{e}^{bx}+1\right)}=\frac1{x\left(\mathrm{e}^{bx}+1\right)}-\frac1{x\left(\mathrm{e}^{ax}+1\right)}=\int_b^au(c,x)\mathrm{d}c, 
- I(a,b)=\int_{0}^{\infty}\left(\int_b^au(c,x)\mathrm{d}c\right)\mathrm{d}x. 
- I(a,b)=\int_b^aU(c)\mathrm{d}c,\qquad U(c)=\int_{0}^{\infty}u(c,x)\mathrm{d}x. 
- u(c,x)=\frac{\partial}{\partial x}\left(\frac{-1}{c(1+\mathrm{e}^{cx})}\right),\qquad U(c)=\left.\frac{-1}{c(1+\mathrm{e}^{cx})}\right|^{x=+\infty}_{x=0}=\frac1{2c}, 
-I(a,b)=\int_{0}^{\infty}\frac{e^{ax}-e^{bx}}{x\left(e^{ax}+1\right)\left(e^{bx}+1\right)}dx = \int_{0}^{\infty} \left(\frac{1} {x\left(e^{bx}+1\right)}- \frac{1} {x\left(e^{ax}+1\right)} \right)dx
-\frac{\partial I}{\partial a} = \int_0^{\infty} \frac{e^{ax}}{(1+e^{ax})^2} dx
-t = e^{ax}
-\frac{\partial I}{\partial a} = \frac1{a} \int_1^{\infty} \frac{dt}{(1+t)^2} = \frac{1}{2a}
-\frac{\partial I}{\partial b} = - \frac1{b} \int_1^{\infty} \frac{dt}{(1+t)^2} = -\frac{1}{2b}
-I(a,b) = \frac1{2} \left( \log(a) - \log(b) \right) + c
-I(a,a) = 0
-c = 0
-I(a,b) = \frac1{2} \log \left(\frac{a}{b}\right)
-\text{Re}(s)>1
-\text{Re}(s)>1
-\eta(s)
-\Gamma(s)
-1
-s=0
-\eta(0)=\left(1-2\right)\zeta(0)=\frac{1}{2}
-\int_{0}^{\infty}\frac{\left(e^{ax}-e^{bx}\right)x^{s-1}}{\left(e^{ax}+1\right)\left(e^{bx}+1\right)}dx=\int_{0}^{\infty}\frac{x^{s-1}}{e^{bx}+1}dx-\int_{0}^{\infty}\frac{x^{s-1}}{e^{ax}+1}.
-\Gamma(s)\eta(s)=\int_{0}^{\infty}\frac{t^{s-1}}{e^{t}+1}dt
-\frac{\Gamma(s)\eta(s)}{b^{s}}-\frac{\Gamma(s)\eta(s)}{a^{s}}=\Gamma(s)\eta(s)\left(e^{-s\log b}-e^{-s\log a}\right)
-=\Gamma(s)\eta(s)\left(s\left(\log a-\log b\right)+s^{2}\left(\cdots\right)+\cdots\right)
-\lim_{s\rightarrow0}\int_{0}^{\infty}\frac{e^{ax}-e^{bx}}{\left(e^{ax}+1\right)\left(e^{bx}+1\right)}x^{s-1}dx=\frac{1}{2}\log\left(\frac{a}{b}\right).
-I(a,b)=\frac{1}{2}\log\left(\frac{a}{b}\right).

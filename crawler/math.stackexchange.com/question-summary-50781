@@ -1,13 +1,0 @@
-k
-m
-S
-\{0,1,2,\ldots\}
-k
-m
-k
-P_{m}(k,S)=\sum_{\sum_{s\in S}t_s=m,\sum_{s\in S}st_s=k}\prod_{s\in S-{0}}\frac{k!}{t_s!(s!)^{t_s}} 
-\sum_{k=0}^{\infty}P_{m}(k,S)\frac{x^k}{k!}=\sum_{t_0=0}^{m-1}\frac{1}{(m-t_0)!}\left(\sum_{s\in S-{0}}\frac{x^s}{s!}\right)^{m-t_0}
- F_S(x,y)=\sum_{m=1}^{\infty}y^m\sum_{k=0}^{\infty}P_{m}(k,S)\frac{x^k}{k!}. 
- \sum_{k=0}^{\infty}P_{m}(k,S)\frac{x^k}{k!}=\sum_{i=1}^{m}\frac{1}{i!}u_S(x)^{i},\quad\mbox{with}\ u_S(x)=\sum_{s\in S-{0}}\frac{x^s}{s!}. 
- F_S(x,y)=\sum_{i=1}^{\infty}\frac{1}{i!}u_S(x)^{i}\sum_{m=i}^{\infty}y^m=\sum_{i=1}^{\infty}\frac{1}{i!}u_S(x)^{i}\frac{y^i}{1-y}, 
- F_S(x,y)=\frac{\exp(yu_S(x))-1}{1-y}. 

@@ -1,13 +1,0 @@
-G
-V
-W
-\mathfrak{g}
-G
-X \in \mathfrak{g}
-V
-\displaystyle X(v)=\left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)
-\gamma_t
-G
-\gamma'_0 = X
- \begin{align*} X(v \otimes w) & = \left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)\otimes \gamma_t(w) \\ & \stackrel{?}{=}\left(\left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)\right)\otimes w + v\otimes \left(\left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)\right) \\ & = X(v)\otimes w + v \otimes x(w)\end{align*}
- \begin{align*} X(v \otimes w) & = \left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)\otimes \gamma_t(w) \\ & = \lim_{t \to 0} \,\,\, \frac{\gamma_t(v)\otimes \gamma_t(w)-v \otimes w}{t} \\ & = \lim_{t \to 0} \,\,\, \frac{\gamma_t(v)\otimes ( \gamma_t(w)-w+w)-v \otimes w}{t} \\ & = \lim_{t \to 0} \,\,\, \frac{\gamma_t(v)\otimes  (\gamma_t(w)-w)+ \gamma_t(v)\otimes w-v \otimes w}{t} \\ & = \lim_{t \to 0} \,\,\, \frac{\gamma_t(v)\otimes  (\gamma_t(w)-w)+ (\gamma_t(v)-v)\otimes w}{t} \\ & = \lim_{t \to 0} \,\,\, \frac{v \otimes  (\gamma_t(w)-w)}{t}+ \lim_{t \to 0} \,\,\, \frac{(\gamma_t(v)-v)\otimes w}{t} \\ & =\left(\left.\frac{d}{dt}\right|_{t=0}\gamma_t(v)\right)\otimes w + v\otimes \left(\left.\frac{d}{dt}\right|_{t=0}\gamma_t(w)\right) \\ & = X(v)\otimes w + v \otimes X(w)\end{align*}

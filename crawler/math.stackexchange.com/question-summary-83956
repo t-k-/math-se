@@ -1,30 +1,0 @@
-V
-v_1,v_2, \dots ,v_k
-\sum_{i=1}^k | \langle x,v_i \rangle \langle y,v_i\rangle| \leq \|x\|\cdot\|y\|?
-\{v_i:1\le i\le k\}
-V
-V
-\{v_i\}
-\left<v_i,v_j\right>=0
-i\not=j
-\left<v_i,v_i\right>=1
-x^\perp
-\{v_i\}
-x^\perp
-x-x^\perp=\sum\limits_{i=1}^k\left<x,v_i\right>v_i
- x^\perp=x-\sum_{i=1}^k\left<x,v_i\right>v_i\tag{1} 
- \begin{align} \left<x^\perp,v_j\right> &=\left<x-\sum_{i=1}^k\left<x,v_i\right>v_i,v_j\right>\\ &=\left<x,v_j\right>-\left<x,v_j\right>\left<v_j,v_j\right>\\ &=0\tag{2} \end{align} 
-x^\perp
-x-x^\perp
-\|x-x^\perp\|\le\|x\|
- \begin{align} \left<x-x^\perp,y-y^\perp\right> &=\left<\sum_{i=1}^k\left<x,v_i\right>v_i,\sum_{j=1}^k\left<y,v_j\right>v_j\right>\\ &=\sum_{i=1}^k\left<x,v_i\right>\left<y,v_i\right>\left<v_i,v_i\right>\\ &=\sum_{i=1}^k\left<x,v_i\right>\left<y,v_i\right>\tag{3} \end{align} 
- \|x-x^\perp\|^2+\|x^\perp\|^2=\|x\|^2\tag{4} 
-(3)
-(4)
-\|x^+\|^2=\sum\limits_{i=1}^k\left<x,v_i\right>^2=\|x-x^\perp\|^2
- \begin{align} \left|\sum_{i=1}^k\left<x,v_i\right>\left<y,v_i\right>\right| &=\left|\left<x-x^\perp,y-y^\perp\right>\right|\\ &\le\|x-x^\perp\|\|y-y^\perp\|\\ &\le\|x\|\|y\|\tag{5} \end{align} 
- x^+=\sum_{i=1}^k\left|\left<x,v_i\right>\right|v_i\tag{6} 
-x^+
-y^+
-(5)
- \begin{align} \sum_{i=1}^k\left|\left<x,v_i\right>\left<y,v_i\right>\right| &=\left|\sum_{i=1}^k\left<x^+,v_i\right>\left<y^+,v_i\right>\right|\\ &\le\|x^+\|\|y^+\|\\ &\le\|x\|\|y\|\tag{7} \end{align} 

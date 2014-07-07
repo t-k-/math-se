@@ -1,33 +1,0 @@
-K
-K
-1
-3
-P(N=n|K=k) = 1/k
-n = 1,\dots,k
-P(K=k): 1/3
-k=1,2,3
-P(N=n|K=k) = P(N=n \text{ and } K=k)/P(K=k) = 1/k
-P(N=n\text{ and }K=k) = (1/k)P(K=k)
-1
-P[N=n,K=k]
-1 \leq k,n \leq 3
-P[K=k]=\frac{1}{3}
-1 \leq k \leq 3
-P[N=n,K=k]=P[N=n|K=k] \cdot P[K=k] = \frac{1}{3k}
-1 \leq n \leq k \leq 3
-0
-n>k
-P[N=n]=\sum_{k=n}^{3}P[N=n|K=k]=\sum_{k=n}^{3}\frac{1}{3k}
- \begin{array}{ccc} P[N=n|K=k] & n=1 & n=2 & n=3 \\ k=1 & 1 & 0 & 0 \\ k=2 & \frac{1}{2} & \frac{1}{2} & 0 \\ k=3 & \frac{1}{3} & \frac{1}{3} & \frac{1}{3} \end{array} 
- \begin{array}{ccc} P[N=n,K=k] & n=1 & n=2 & n=3 \\ k=1 & \frac{1}{3} & 0 & 0 \\ k=2 & \frac{1}{6} & \frac{1}{6} & 0 \\ k=3 & \frac{1}{9} & \frac{1}{9} & \frac{1}{9} \end{array} 
- P[N=n|K=k]= \left\{   \begin{align}     \frac{1}{k} &\quad \text{for }1 \leq n \leq k;     \\     0 &\quad\text{for }n>k.   \end{align} \right. 
- \begin{align*}     P(N=1|K=1) &= 1 \\\\     P(N=1|K=2) &= 1/6 \\\\     P(N=1|K=3) &= 1/9 \\\\ \end{align*}
- \begin{align*}     P(N=1|K=1) &= 1 \\\\     P(N=1|K=2) &= 1/2 \\\\     P(N=1|K=3) &= 1/3 \\\\ \end{align*}
-N=1
-P(N=n\text{ and }K=k) = (1/k)P(K=k), {\text { for }} n\le k
- \begin{align*}     P(N=1\text{ and }K=1) &= 1\cdot(1/3)=1/3 \\\\     P(N=1\text{ and }K=2) &= 1/2 \cdot(1/3)=1/6\\\\     P(N=1\text{ and }K=3) &= 1/3\cdot(1/3)=1/9 \\\\ \end{align*}
-P[N=1]={1\over 3}+{1\over 6} +{1\over 9}={11\over 18}
-P[N=n|K=k]=0
-n>k
-P[N=n,K=k]=0
-n>k

@@ -1,58 +1,0 @@
- \textbf{v}^T \textbf{w} \;=\; \begin{bmatrix}v_x & v_y & v_z\end{bmatrix}\begin{bmatrix}w_x \\ \\ w_y \\  \\w_z\end{bmatrix} \;=\; v_x w_x + v_y w_y + v_z w_z \;=\; \textbf{v}\cdot \textbf{w}. 
-\nabla
-g
-g
-F=(F_x,F_y,F_z)
-F
-\nabla^T
-\nabla
- \nabla g \;=\; \begin{bmatrix}\partial_x \\ \\ \partial_y \\ \\ \partial_z \end{bmatrix}g \;=\; \begin{bmatrix}\partial_xg \\ \\ \partial_yg \\ \\ \partial_zg \end{bmatrix} 
- \nabla^T F \;=\; \begin{bmatrix}\partial_x & \partial_y & \partial_z\end{bmatrix}\begin{bmatrix}F_x \\ \\ F_y \\ \\ F_z\end{bmatrix} \;=\; \partial_xF_x + \partial_yF_y + \partial_zF_z. 
-\nabla^T g
-g
- \nabla^T (gF) \;=\; (\nabla^T g)F \,+\, g(\nabla^T F) 
- \text{div} (gF) \;=\; (\text{grad } g)\cdot F \,+\, g\;\text{div } F. 
- \int\!\!\int g (\nabla^T F)\,dx\,dy \;=\; -\int\!\!\int (\nabla g)^T F \,dx\,dy. 
-E'
-e \in E
-e' \in E'
-E
-E = E'
- \langle e, e' \rangle \in \mathbb{R} 
-T
- \int_{\Omega} u(x, y) v(x, y) d x d y  
- T: E \to E 
- T': E' \to E' 
- \langle T e, e' \rangle = \langle e, T' e' \rangle 
-\cdot
-\mathbb{R}^n
- \int_{\Omega} (- div \; grad u(x, y)) v(x, y) d x d y  
- \int_{\Omega} (grad \; u(x, y)) \cdot (grad \; v(x, y)) d x d y  
-\mathbb{R}
-\mathbb{R}^2
- \langle - div \; e, e' \rangle = \langle e, grad \; e' \rangle 
-G
-V
-E
-\mathbb{R}^V, \mathbb{R}^E
-V \to \mathbb{R}
-E \to \mathbb{R}
-\mathbb{R}^E
-u
-v
-uv
-vu
-f(uv) = -f(vu)
-f \in \mathbb{R}^V
-G
-\text{grad}(f)(uv) = f(v) - f(u)
-\sum_{i=1}^{n-1} \text{grad}(f)(v_{i+1} v_i) = f(v_n) - f(v_1)
-\langle a, b \rangle_V = \sum_{v \in V} a(v) b(v)
-\langle a, b \rangle_E = \sum_{e \in E} a(e) b(e)
-A, B
-T : A \to B
-T^{\dagger} : B \to A
-\langle Ta, b \rangle_B = \langle a, T^{\dagger} b \rangle_A.
-\text{div}(g)(u) = \sum_{uv \in E} g(uv).
-g
-G

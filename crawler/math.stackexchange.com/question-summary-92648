@@ -1,11 +1,0 @@
-n
-Y
-\begin{align}  E[(Y-E(Y))^n]&=\int_\mathbb{R}\left(f(x)-\int_\mathbb{R}f(x)dx\right)^n\,dx \\ &=\int_\mathbb{R}\sum_{k=0}^n\left[\binom{n}{k}(f(x))^k\left(-\int_\mathbb{R}f(x)dx\right)^{n-k}\right]\,dx \\ &=\sum_{k=0}^n\binom{n}{k}\left(\int_\mathbb{R}\left[(f(x))^k\left(-\int_\mathbb{R}f(x)dx\right)^{n-k}\right]\,dx\right) \\ &=\sum_{k=0}^n\binom{n}{k}\left(\int_\mathbb{R}\left[(f(x))^k\left(-\mu\right)^{n-k}\right]\,dx\right) \\ &=\sum_{k=0}^n\binom{n}{k}\left((-\mu)^{n-k}\int_\mathbb{R}(f(x))^k\,dx\right) \\ &=\sum_{k=0}^n\binom{n}{k}\left((-\mu)^{n-k}E\left(Y^k\right)\right) \\ \end{align}
-n
-\hat{m}_n = \mathbb{E}\left( \left(X-\mathbb{E}(X)\right)^n \right)
-\mathbb{E}(X) = \mu
-Y = X-\mu
-\sigma^2
-X
-X
-Y

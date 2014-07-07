@@ -1,60 +1,0 @@
-T(n) = 2T(n - 1) + \Theta(n)
-T(0) = \Theta(1)
-T(n) = 2^n*{\rm constant}_2 + (2^n - 1)n + \Theta(1) = \Theta(n  2^n)
-n * \Theta (n)
-\Theta(n * 2^n)
-\Theta(n2^n)
-T(n)=2T(n-1)+n
-T(0)=1
-\begin{align*} T(n)&=2T(n-1)+n\\ &=4T(n-2)+2(n-1)+n\\ &=8T(n-3)+4(n-2)+2(n-1)+n\\ &\,\vdots\\ &=2^kT(n-k)+\sum_{i=0}^{k-1}2^i(n-i)\\ &\,\vdots\\ &=2^nT(0)+\sum_{i=0}^{n-1}2^i(n-i)\\ &=2^n+n(2^n-1)-\sum_{i=0}^{n-1}i2^i\\ &=2^n+n(2^n-1)-\sum_{i=1}^{n-1}\sum_{j=1}^i2^i\\ &=2^n+n(2^n-1)-\sum_{j=1}^{n-1}\sum_{i=j}^{n-1}2^i\\ &=2^n+n(2^n-1)-\sum_{j=1}^{n-1}(2^n-2^j)\\ &=2^n+n(2^n-1)-n2^n+\sum_{j=1}^{n-1}2^j\\ &=2^n-n+2^n-2\\ &=2^{n+1}-n-2\;. \end{align*}
-\Theta(2^n)
-\Theta(n2^n)
-\Omega(n2^n)
-\lim_{n\to\infty}\frac{2^{n+1}-n-2}{n2^n}=0\;.
-\Theta(n)
-(R(n))
-n_0
-c
-C
-cn\leqslant R(n)\leqslant Cn
-n\geqslant n_0
-n\geqslant n_0
-t(n)=2^{-n}T(n)
-n\geqslant n_0
-n\geqslant n_0+1
-s^*
-a2^n\le T(n)\leqslant A2^n
-n\geqslant n_0+1
-a=t(n_0)+cs_*
-A=t(n_0)+Cs^*
-\color{red}{T(n)=\Theta(2^n)}
- 2T(n-1)+cn\leqslant T(n)\leqslant 2T(n-1)+Cn. 
- t(n-1)+cn2^{-n}\leqslant t(n)\leqslant t(n-1)+Cn2^{-n}. 
- t(n_0)+cs(n)\leqslant t(n)\leqslant t(n_0)+Cs(n),\qquad s(n)=\sum_{k=n_0+1}^{n}k2^{-k}. 
- t(n_0)+cs_*\leqslant t(n)\leqslant t(n_0)+Cs^*,\qquad s_*=(n_0+1)2^{-n_0},\quad s^*=\sum_{k=n_0+1}^{+\infty}k2^{-k}. 
-s^*
-s_0
-s_0=\frac12\sigma'\left(\frac12\right)
-|x|\lt1
-\sigma'(x)=(1-x)^{-2}
-s_0=2
- s_0=\sum_{k=0}^{+\infty}k2^{-k}. 
- \sigma(x)=\sum_{k=0}^{+\infty}x^k=(1-x)^{-1}, 
-\Theta(n\cdot2^n)
-\Theta(n)
-2 \Theta(n-1)
-4\Theta(n-2)
-i
-2^i \Theta(n-i)
-\Theta(n)
-n
-\Theta(n-i)
-\Theta(n)-\Theta(i)
-\Theta(n)
-\sum_{i=0}^n 2^i = 2^{n+1} - 1
-\sum_{i=0}^n i\cdot 2^i = 2(n\cdot 2^n - 2^n+1)
-T(n)= \Theta(2^{n})
-T(n) = \sum_{i=0}^n 2^i  \Theta(n-i)
- T(n) = \sum_{i=0}^n 2^i  \Theta(n) - 2^i\Theta(i) = \sum_{i=0}^n 2^i  \Theta(n) - \sum_{i=0}^n 2^i\Theta(i) 
- T(n) = n*(2^{n+1} - 1) - 2(n\cdot 2^n - 2^n + 1) = -n + 2^{n+1} - 2 
-\Theta(2^n)

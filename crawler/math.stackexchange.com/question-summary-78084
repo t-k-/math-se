@@ -1,12 +1,0 @@
-\sum_k\binom{n}{k}\binom{2k}{k}(-2)^{-k}
-\sum_k\binom{n}{k}\binom{2k}{k}(-2)^{k}
-\begin{aligned} \sum_n\sum_k\binom{n}{k}\binom{2k}{k}(-2)^{-k}x^n & = \sum_k\sum_n\binom{n}{k}\binom{2k}{k}(-2)^{-k}x^n \\ & = \sum_k\binom{2k}{k}(-2)^{-k}\sum_n\binom{n}{k}x^n \\ & = \sum_k\binom{2k}{k}(-2)^{-k}\frac{x^k}{(1-x)^{k+1}} \\ & = \frac{1}{1-x}\sum_k\binom{2k}{k}(\frac{x}{2x-2})^k \end{aligned}
-\sum_k\binom{2k}{k}x^k=\frac{1}{\sqrt{1-4x}}
- \sum_n\sum_k\binom{n}{k}\binom{2k}{k}(-2)^{-k}x^n = \frac{1}{\sqrt{1-x^2}} 
-\sum_{k=0}^n\binom{-1/2}{k}(-1)^k\binom{-1/2}{n-k}
-c_n = \sum_{k=0}^\infty \binom{n}{k} \binom{2k}{k} (-2)^k
-    \sum_{n=0}^\infty c_n x^n = \frac{1}{\sqrt{(1-x)(1+7 x)}} 
-   \frac{1}{\sqrt{1-x}} = \frac{1}{\sqrt{\pi}} \sum_{n=0}^\infty \frac{\Gamma(n+1/2)}{n!} x^n    \qquad    \frac{1}{\sqrt{1+7x}} = \frac{1}{\sqrt{\pi}} \sum_{n=0}^\infty \frac{\Gamma(n+1/2)}{n!} (-7 x)^n 
-   \frac{1}{\sqrt{(1-x)(1+7x)}} = \sum_{n=0}^\infty x^n \sum_{m=0}^n \frac{1}{\pi} (-7)^m \frac{\Gamma(m+1/2) \Gamma(n-m+1/2)}{m! (n-m)!}  
-m
- \begin{eqnarray}   c_n &=& \sum_{m=0}^n \frac{1}{\pi} (-7)^m \frac{\Gamma(m+1/2) \Gamma(n-m+1/2)}{m! (n-m)!} \\ &=&     \frac{\Gamma\left(n+\frac{1}{2}\right)}{\Gamma\left(\frac{1}{2}\right) n!} {}_2 F_1\left( \frac{1}{2}, -n; \frac{1}{2}-n ; -7 \right) \\ &=&  {}_2 F_1 \left( \frac{1}{2}, -n ; 1 ; 8 \right) \end{eqnarray} 

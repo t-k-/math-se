@@ -1,8 +1,0 @@
-X
-T:=\{T(t)\}_{t\geq 0}
-X
-\lim_{h\to0^+}\left\|\frac{1}{h}\int_t^{t+h}T(s)ds-T(t)\right\|=0.
-\begin{align*} \frac{1}{h} \int_t^{t+h} T(s) \, ds - T_t &=\frac{1}{h} \int_t^{t+h} (T(s)-T(t)) \, ds \\ &=\frac{1}{h} \int_0^h T_t(T(s)-I) \, ds. \end{align*}
-T(t)
-\begin{align*} \left\| \frac{1}{h} \int_t^{t+h} T(s) \,ds - T(t) \right\| &\leq \frac{1}{h} \int_0^h \|T(t)\| \cdot \|T(s)-I\| \, ds \\ &\leq \|T(t)\| \cdot \sup_{s \leq h} \|T(s)-I\|.\end{align*}
-\lim_{h \downarrow 0+} \|T(h)-I\|=0

@@ -1,35 +1,0 @@
- \sum_{n=1}^N\frac{1}{n} -\log N - \gamma \leqslant \frac{1}{2N} 
-n<m
-\gamma_n = \sum_{k=1}^n \frac{1}{k} - \log n.
-\gamma_n - \lim_{m \to \infty} \gamma_m \leq \frac{1}{2n}.
-\gamma_n - \gamma_m \leq \frac{1}{2n}.
-\gamma_n - \gamma_m = \int_{n}^m \frac{dt}{t} - \sum_{k=n+1}^m \frac{1}{k} =\sum_{j=n}^{m-1} \int_{j}^{j+1} \left( \frac{1}{t} - \frac{1}{j+1} \right) \cdot dt .
-y=1/x
-(j,1/(j+1))
-(j+1, 1/(j+1))
-(j,1/j)
-1
-1/j - 1/(j+1)
-(1/2) (1/j - 1/(j+1))
-\leq \sum_{j=n}^{m-1} \frac{1}{2} \left( \frac{1}{j} - \frac{1}{j+1} \right) = \frac{1}{2} \left( \frac{1}{n} - \frac{1}{m} \right) \leq \frac{1}{2n}.
- \int_n^{n+1} \frac{x-[x]}{x^2}\: dx = \log\Big(\frac{n+1}{n}\Big) - \frac{1}{n+1} < \frac{1}{n} - \frac{1}{n+1} -\frac{1}{2n^2} +\frac{1}{3n^3}. 
-1/2n^2-1/3n^3 \ge 1/2(n)(n+1)
-(3n-2)/6n^3\ge 1/2n(n+1)
-(3n-2)/3n^2 \ge 1/(n+1)
-(3n-2)(n+1) \ge 3n^2
-n \ge 2
-1/n^2
-1/n(n+1)
-1/n-1/(n+1)
-S(N):=\sum_{n=1}^N\frac{1}{n} -\log N - \gamma = \int_N^\infty \frac{x-[x]}{x^2} \: dx
-[x]
-x
-\log(1+x)
-(1)
-N \in \mathbb{N}
-\sum \frac{1}{n^2}
- \int_n^{n+1} \frac{x-[x]}{x^2}\: dx = \log\Big(\frac{n+1}{n}\Big) - \frac{1}{n+1} < \frac{1}{n} - \frac{1}{n+1} -\frac{1}{2n^2} +\frac{1}{3n^3}, \qquad (1) 
- n(n+1)(3n-1) = 3n^3 + 2n^2 -n > 3n^3 
- \frac{1}{n(n+1)} < \frac{3n-1}{3n^3} = \frac{1}{n^2} - \frac{1}{3n^3}. 
- S(N) < \sum_{n=N}^\infty \frac{1}{n(n+1)} -\frac{1}{2n^2} +\frac{1}{3n^3} < \sum_{n=N}^\infty \frac{1}{n^2} - \frac{1}{3n^3} -\frac{1}{2n^2} +\frac{1}{3n^3}, 
- S(N) < \frac{1}{2}\sum_{n=N}^\infty \frac{1}{n^2} < \frac{1}{2(N-1)}, 

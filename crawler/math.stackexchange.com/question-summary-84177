@@ -1,6 +1,0 @@
-\mu(n) = \sum\limits_{\stackrel{1\le k \le n }{ \gcd(k,\,n)=1}} e^{2\pi i \tfrac{k}{n}}
-\displaystyle T(n,k) = \begin{bmatrix} +1&+1&+1&+1&+1&+1&+1 \\ +1&-1&+1&-1&+1&-1&+1 \\ +1&+1&-2&+1&+1&-2&+1 \\ +1&-1&+1&-1&+1&-1&+1 \\ +1&+1&+1&+1&-4&+1&+1 \\ +1&-1&-2&-1&+1&+2&+1 \\ +1&+1&+1&+1&+1&+1&-6 \end{bmatrix}
-\displaystyle T(n,1)=1, T(1,k)=1, n>=k: -\sum\limits_{i=1}^{k-1} T(n-i,k), n<k: -\sum\limits_{i=1}^{n-1} T(k-i,n)
-\displaystyle \mu(n)
-\displaystyle \mu(n) = \frac{1}{n} \sum\limits_{k=1}^{k=n} T(n,k) \cdot e^{i 2 \pi \frac{k}{n}}
-\displaystyle T(n,k)

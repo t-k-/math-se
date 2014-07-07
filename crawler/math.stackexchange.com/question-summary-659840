@@ -1,7 +1,0 @@
-X_1, X_2, · · · , X_n
-σ^2
-\bar{x}
-E[n(\bar{x}− µ)^2] = σ^2
-Y_i = X_i - \mu
-{\rm E}[Y_i] = {\rm E}[X_i - \mu] = {\rm E}[X_i] - \mu = 0
-\begin{align*} {\rm E}[n(\bar x - \mu)^2] &= {\rm E}\left[\frac{1}{n} \biggl(\sum_{i=1}^n (X_i - \mu)\biggr)^{\!\!2}\right] \\ &= {\rm E}\left[\frac{1}{n} \sum_{i=1}^n Y_i \sum_{j=1}^n Y_j \right] \\ &= {\rm E}\left[\frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n Y_i Y_j\right] \\ &= \frac{1}{n} \sum_{i=1}^n \sum_{j=1}^n {\rm E}[Y_i Y_j] \\ &= \frac{1}{n} \Biggl( \sum_{i=1}^n {\rm E}[Y_i^2] + \sum_{i \ne j} {\rm E}[Y_i]{\rm E}[Y_j] \Biggr) \\ &= \frac{1}{n} \sum_{i=1}^n {\rm E}[(X_i-\mu)^2] + \frac{1}{n} \sum_{i\ne j} 0 \cdot 0 \\ &= \frac{1}{n} \cdot n \cdot {\rm Var}[X_1] \\ &= \sigma^2. \end{align*}

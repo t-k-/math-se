@@ -1,40 +1,0 @@
-V
-F
-V^* \otimes V \rightarrow End(V)
-(f \otimes v)(w) = f(w)v
-V
-L
-L
-End(V)
-L
-(x.f)(v) = x.f(v) - f(x.v)
-V^* \otimes V
-End(V)
-f(v) = \sum \lambda_{ij} e_i^*(v) e_j
-V
-x \in L
-(x, f)
-L \times End(V)
-L \times (V^* \otimes V)
-V^* \otimes V
-v \in V
- \begin{align}   \sum \lambda_{ij} (x.e_i^*(v)e_j + e_i^*(v)(x.e_j)) &= - \sum \lambda_{ij} e_i^*(x.v)e_j + \sum \lambda_{ij} e_i^*(v)(x.e_j) \\   &=  \sum \lambda_{ij} e_i^*(v)(x.e_j) - f(x.v). \end{align} 
-   (x, \sum \lambda_{ij} e_i^* \otimes e_j) 
-   \sum \lambda_{ij} \left( (x.e_i^*) \otimes e_j + e_i^* \otimes (x.e_j) \right) 
-\psi:V\otimes V^* \to \mathrm{End}(V)
-w \in V
-\psi\left(\sum\limits_i v_i \otimes f_i\right)(w) = \sum\limits_i f_i(w)v_i
-\psi
-x\in L
-w \in V
-\psi\left(x \cdot (v \otimes f) \right)(w) 
-=  \psi\left((x \cdot v) \otimes f +  v \otimes (x \cdot f) \right)(w) 
-= f(w)(x \cdot v)+(x \cdot f)(w)v
-= f(w)(x \cdot v)-f(x\cdot w)v
-(x \cdot \psi(v \otimes f))(w) = (x \cdot (f(\cdot)v))(w) = x \cdot (f(w)v) - f(x \cdot w)v = f(w)(x \cdot v) - f(x \cdot w)v
-w \in V
-\psi\left(x \cdot (v \otimes f) \right) = x \cdot \psi(v \otimes f)
-\psi
-L
-V\otimes V^* \cong \mathrm{End}(V)
-L

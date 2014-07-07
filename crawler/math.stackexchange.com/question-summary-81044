@@ -1,55 +1,0 @@
-x_1,\ldots,x_n
-y_1,\ldots,y_n
-p(x)
-p(x_i) = y_i
-i=1,\ldots,n
-p_1(x)
-0
-x_2,\ldots,x_n
-1
-x_1
-p_2(x)
-0
-x_1,x_3,\ldots,x_n
-1
-x_2
-p_3(x)
-0
-x_1,x_2,x_4,\ldots,x_n
-1
-x_3
-x_i
-0
-y_ip_i(x_i) = y_i
-y_1p_1(x) + \cdots + y_np_n(x),
-0
-x_2,x_3,\ldots,x_n
-1
-x_1
-x_1
-x_1
-1
-0
-x_2,\ldots,x_n
-1
-x_1
-(x-x_2)(x-x_3)\cdots(x-x_n).
-(x_1-x_2)(x_1-x_3)\cdots (x_1-x_n);
-p_i(x)
-p_1(x) = \left(\frac{1}{(x_1-x_2)(x_1-x_3)\cdots(x_1-x_n)}\right)(x-x_2)(x-x_3)\cdots (x-x_n).
-\begin{align*} p_i(x) &= \left(\frac{1}{(x_i-x_1)(x_i-x_2)\cdots (x_i-x_{i-1})(x_i-x_{i+1})\cdots(x_i-x_n)}\right)\\ \\ &\qquad \times (x-x_1)(x-x_2)\cdots(x-x_{i-1})(x-x_{i+1})\cdots(x_i-x_n). \end{align*}
-p(x) = y_1p_1(x) + y_2p_2(x)+\cdots+y_np_n(x).
-\begin{align*} \Bigl( (x-x_1)\cdots(x-x_n)\Bigr)' &= (x-x_1)'(x-x_2)\cdots(x-x_n) \\ &\qquad + (x-x_1)(x-x_2)'(x-x_3)\cdots (x-x_n)\\ &\qquad + \cdots + (x-x_1)\cdots(x-x_{n-1})(x-x_n)'\\ &= (x-x_2)\cdots(x-x_n) + (x-x_1)(x-x_3)\cdots(x-x_n) \\ &\qquad + \cdots + (x-x_1)\cdots(x-x_{n-1}). \end{align*}
- p(x)=\sum_{i=1}^n\;y_i\prod_{\genfrac{}{}{0}{1}{j\not=i}{j=1}}^n\frac{x-x_j}{x_i-x_j}\tag{1} 
-i
-x=x_j
-j\not=i
-\dfrac{x-x_j}{x_i-x_j}
-(2)
-q_i(x_j)=0
- q_i(x)=\prod_{\genfrac{}{}{0}{1}{j\not=i}{j=1}}^n\frac{x-x_j}{x_i-x_j}\tag{2} 
-x=x_i
-(2)
-\dfrac{x_i-x_j}{x_i-x_j}=1
-q_i(x_i)=1
-\displaystyle p(x_i)=\sum_{j=1}^n\;y_jq_j(x_i)=y_i

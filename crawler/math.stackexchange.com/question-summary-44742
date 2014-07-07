@@ -1,81 +1,0 @@
-f
-G
-\forall x,y\in G: f(x)f(y) = \frac{f(1)}{|G|}\sum_{z\in G} f(yzxz^{-1}) \leftrightarrow f \text{ is proportional to an irreducible character}
-\rightarrow
-f
-f
-y
-f
-\{yzxz^{-1} | z \in G \}
-x
-\leftarrow
-f
-f(1)
-f
-\pi
-\rho
-\frac{\chi(1)}{|G|}\sum_{g} \overline{\chi(g)}\rho(g)
-\chi
-\pi
-\phi
-\sim
-y=1
-\sum_{z\in G} \phi(x) \phi(z^{-1} y z) = \phi(1) \sum_{z \in G} \phi(x (z^{-1}yz))
-\phi(1)
-\leftarrow
-\rho
-\chi
-\rho ' = \sum_{z \in G} \rho_{z^{-1}yz}
-Tr(\rho_x)Tr(\rho ') = \chi(1) Tr(\rho_x \rho ')
-\sum_{z\in G} \phi(x) \phi(z^{-1} y z) \sim \sum_{z \in G} \phi(x (z^{-1}yz))
-\leftarrow
-\rightarrow
-f
-f
-f(x)=\sum_ic_i\chi_i(x)\;,
-c_i
-\rho_i (x)
-\chi_i(x)
- \begin{eqnarray} \sum_{z\in G}f(yzxz^{-1}) &=& \sum_{z\in G}\sum_ic_i\chi_i(yzxz^{-1}) \\ &=& \sum_{z\in G}\sum_ic_i\mathrm{Tr}\rho_i(yzxz^{-1}) \\ &=& \sum_{z\in G}\sum_ic_i\mathrm{Tr}\left(\rho_i(y)\rho_i(zxz^{-1})\right) \\ &=& \sum_ic_i\mathrm{Tr}\left(\rho_i(y)\sum_{z\in G}\rho_i(zxz^{-1})\right)\;. \end{eqnarray} 
-\sum_{z\in G}\rho_i(zxz^{-1})
-\rho_i(g)
-\sum_{z\in G}\rho_i(zxz^{-1})\rho_i(g)=\sum_{z\in G}\rho_i(zxz^{-1}g)=\sum_{z\in G}\rho_i(gzxz^{-1})=\rho_i(g)\sum_{z\in G}\rho_i(zxz^{-1})\;.
-\sum_{z\in G}\rho_i(zxz^{-1})=\kappa_i(x)\mathbb I
-\kappa_i(x)
-\kappa_i(x)=\frac{\mathrm{Tr}\sum_{z\in G}\rho_i(zxz^{-1})}{\dim\rho_i}=\frac{\chi_i(x)}{\chi_i(1)}|G|\;,
-\kappa_i(x)
-x
-\chi_i(x)
-\sum_{z\in G}f(yzxz^{-1})=\sum_ic_i\kappa_i(x)\mathrm{Tr}\rho_i(y)=\sum_ic_i\kappa_i(x)\chi_i(y)\;,
-f(x)\sum_ic_i\chi_i(y)=\frac{f(1)}{|G|}\sum_ic_i\kappa_i(x)\chi_i(y)\;.
-\chi_i(y)
-f(x)c_i=\frac{f(1)}{|G|}c_i\kappa_i(x)\;.
-i
-c_i\neq0
-f(x)=\frac{f(1)}{|G|}\kappa_i(x)\;.
-\kappa_i(x)
-\chi_i
-f(x)
-c_i
-f(1)=0
-f \equiv 0
-0
-f(1) \neq 0
-y=1
-f
-f = \sum_{i=1}^{n} a_i \chi_i
-\chi_i
-a_i
-\chi_i * \chi_j = \frac{|G|}{\chi_j(1)} \chi _j \delta_{ij}
-f * \chi_j = \frac{a_j |G|}{\chi_j(1)}\chi_j
-f \neq 0
-a_j \neq 0
-j
-\frac{a_j |G|}{\chi_j(1)}\chi_j
-f
-f
-\chi_j
-a_j
-x = \sum_{g \in G} \chi_j(g^{-1}) g \in Z(\mathbb{C}G)
-\forall y \in G: (f * \chi_j)(y) = \sum_{g \in G} f(yg)\chi_j(g^{-1}) = f(y \sum_{g\in G} \chi_j(g^{-1})g) = f(yx) 
-=f(y)f(x)=f(y)\sum_{g\in G} \chi_j(g^{-1})f(g) = |G| \langle f, \chi_j \rangle f(y) = |G| a_j f(y)

@@ -1,17 +1,0 @@
-X
-Y = aX + b
-f(x)=(\frac{1}{\sqrt{2}\pi\sigma}e^{-\frac{(x-u)^2}{\sigma^2}}
-F_y(y)=F_x(\frac{y-b}{a})
-u=b
-\sigma=a
-F_Y(y) = F_X\left(\frac{y-b}{a}\right) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{t} e^{-x^2/2} \,dx, 
-t = \frac{y-b}{a}
-x = \frac{s-b}{a}
-dx = ds/a
-F_Y(y) = \frac{1}{a\sqrt{2\pi}}\int_{-\infty}^{y} e^{-(s-b)^2/2a^2} \,ds. 
-a>0
- \begin{align} & f_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy}\Pr(Y\le y) = \frac{d}{dy}\Pr(aX+b\le y) = \frac{d}{dy}\Pr\left(X \le \frac{y-b}{a}\right) \\  \\ & = \frac{d}{dy}F_X\left( \frac{y-b}{a} \right) = f_X\left(\frac{y-b}{a}\right) \cdot \frac{d}{dy} \frac{y-b}{a} = \frac 1 a f_X\left(\frac{y-b}{a}\right) \\  \\  \\ & = \frac 1 a \cdot \frac{1}{\sqrt{2\pi}}\exp\left(\frac{-1}{2} \cdot \left(\frac{y-b}{a}\right)^2\right). \end{align} 
- F_Y(y) = \frac 1 a \int_{-\infty}^y \frac{1}{\sqrt{2\pi}} \exp\left(\frac{-1}{2} \left(\frac{u-a}{a}\right)^2\right)\; du. 
-aX+b\le y
-X \le \frac{y-b}{a}
-a>0

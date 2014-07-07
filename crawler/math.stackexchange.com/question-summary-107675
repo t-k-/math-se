@@ -1,34 +1,0 @@
-\mathop {\lim }\limits_{x \to 0} {x^\alpha }\int\limits_x^1 {\frac{{f\left( t \right)}}{{{t^{\alpha  + 1}}}}dt} 
-f
-[0,1]
-\eqalign{   & t = x\cdot u  \cr    & dt = x\cdot du \cr} 
-\mathop {\lim }\limits_{x \to 0} \int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right)}}{{{u^{\alpha  + 1}}}}du} 
-f
-\mathop {\lim }\limits_{x \to 0} \int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right)}}{{{u^{\alpha  + 1}}}}du}  = f\left( 0 \right)\int\limits_1^\infty  {\frac{{du}}{{{u^{\alpha  + 1}}}}}  = \frac{1}{\alpha }f\left( 0 \right)
-\mathop {\lim }\limits_{x \to 0} \int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right) - f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du}  + \mathop {\lim }\limits_{x \to 0} \int\limits_1^{\frac{1}{x}} {\frac{{f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du} 
-\left| {\int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right) - f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du} } \right| < \int\limits_1^{\frac{1}{x}} {\frac{{\left| {f\left( {xu} \right) - f\left( 0 \right)} \right|}}{{{u^{\alpha  + 1}}}}du}  < \epsilon \frac{{1 - {x^\alpha }}}{\alpha }
-P
-\mathop {\lim }\limits_{x \to 0} \int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right)}}{{{u^{\alpha  + 1}}}}du}  = \frac{{f\left( 0 \right)}}{\alpha }
-P
- \forall \epsilon  > 0\exists \delta  > 0
-\left| x \right| < \delta 
- \left| {\int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right)}}{{{u^{\alpha  + 1}}}}du}  - \frac{{f\left( 0 \right)}}{\alpha }} \right| < \epsilon 
-\left| {\int\limits_1^{\frac{1}{x}} {\frac{{f\left( {xu} \right) - f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du}  + \int\limits_1^{\frac{1}{x}} {\frac{{f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du - \frac{{f\left( 0 \right)}}{\alpha }} } \right| < 
-\left| {\int\limits_1^{\frac{1}{\delta }} {\frac{{f\left( {xu} \right) - f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du}  + \int\limits_1^{\frac{1}{\delta }} {\frac{{f\left( 0 \right)}}{{{u^{\alpha  + 1}}}}du - \frac{{f\left( 0 \right)}}{\alpha }} } \right| \leqslant 
-\varepsilon \frac{{1 - {\delta ^\alpha }}}{\alpha } + f\left( 0 \right)\frac{{1 - {\delta ^\alpha }}}{\alpha } - \frac{{f\left( 0 \right)}}{\alpha } < 
-\frac{{1 - {\delta ^\alpha }}}{\alpha } < \frac{1}{\alpha }
-\epsilon \frac{{1 - {\delta ^\alpha }}}{\alpha } + f\left( 0 \right)\frac{{1 - {\delta ^\alpha }}}{\alpha } - \frac{{f\left( 0 \right)}}{\alpha } < \frac{\epsilon }{\alpha } < \epsilon 
-[0,1/\sqrt x]
-[1/\sqrt x,1/x]
-x
-|f(xu)-f(0)|<\epsilon\alpha/2
-0<u\le 1/\sqrt x
-xu\le\sqrt{x}
-|f(xu)-f(0)|\le 2M
-M=\max_{0\le u\le 1}|f(u)|
-x
-2Mx^{\alpha/2}<\epsilon\alpha/2
-\epsilon
-x\to0
-\alpha>0
- \left(\int_1^{1/\sqrt{x}}+\int_{1/\sqrt{x}}^{1/x} \right) \frac{|f(xu)-f(0)|}{u^{\alpha+1}}du \le \frac{\epsilon\alpha}2 \frac{1-x^{\alpha/2}}\alpha + 2M  \frac{x^{\alpha/2}-x^\alpha}\alpha < \frac{\epsilon}2+ 2M\frac{x^{\alpha/2}}\alpha. 

@@ -1,44 +1,0 @@
-x \geq 2
-\int_{2}^{x} \frac{\mathrm dt}{\log^{n}{t}} = O\Bigl(\frac{x}{\log^{n}{x}}\Bigr)?
-c > 2
-c > e^{n+1}
-\int_{c}^{x} \frac{dt}{\log^n t}
-\int_{c}^{x} \frac{dt}{\log^n t} =  \frac{x}{\log^n x} - K + n \int_{c}^{x} \frac{dt}{\log^{n+1} t}
-n\int_{c}^{x} \frac{dt}{\log^{n+1} t} \le \frac{n}{n+1} \int_{c}^{x} \frac{dt}{\log^n t} 
-\log t \ge n+1
-t \ge c
-\frac{1}{n+1}\int_{c}^{x} \frac{dt}{\log^n t} < \frac{x}{\log^n x}  
-\int_{2}^{x} \frac{dt}{\log^n t} = \theta(\frac{x}{\log^n x})
- \frac{d}{dx} \frac{x}{\log^n(x)} = \frac{1}{\log^n(x)} - \frac{n}{\log^{n+1}(x)} = \frac{1}{\log^n(x)}\left( 1 - \frac{n}{\log x}\right)
-x
-\frac12 \frac{1}{\log^n(x)}
-2\leq f(x)\leq x
-x
-f(x)=\frac{x}{\log^{n+1}x}
-f(x)=xe^{-c\sqrt{\log x}}
-\int_{2}^{x}\frac{1}{\log^{n}t}dt\leq\int_{2}^{f(x)}\frac{1}{\log^{n}t}dt+\int_{f(x)}^{x}\frac{1}{\log^{n}t}dt\leq f(x)+\frac{x}{\log^{n}\left(f(x)\right)}.
-\int_{2}^{x}\frac{1}{\log^{n}t}dt\ll\frac{x}{\log^{n+1}x}. 
-t = e^u
-\ln 2
-c
-c
-\int_{\ln 2}^{\ln x}{e^u \over u^n}\,du
-\int_c^{\ln x}{e^u \over u^n}\,du = {x \over (\ln{x})^n} - {e^c \over c^n}+\int_c^{\ln x}{ne^u \over u^{n+1}}\,du
-\int_c^{\ln x}{e^u \over u^n}\,du = {2x \over (\ln{x})^n} - {2e^c \over c^n}
-< {2x \over (\ln{x})^n}
-f
-g
-x \to \infty
-f \sim g
-f = O(g)
-x \to \infty
- f(x)=\int_2^x {\frac{{dt}}{{\log ^n t}}} \;\; {\rm and} \;\; g(x)=\frac{x}{{\log ^n x}}. 
- f'(x)=\frac{1}{{\log ^n x}} \;\; {\rm and} \;\; g'(x)=\frac{{\log ^n x - n\log ^{n - 1} x}}{{\log ^{2n} x}}. 
- \mathop {\lim }\limits_{x \to \infty } \frac{{f(x)}}{{g(x)}} = \mathop {\lim }\limits_{x \to \infty } \frac{{f'(x)}}{{g'(x)}} = \mathop {\lim }\limits_{x \to \infty } \frac{{\log ^n x}}{{\log ^n x - n\log ^{n - 1} x}} = \mathop {\lim }\limits_{x \to \infty } \frac{1}{{1 - n/\log x}} = 1. 
-\alpha > -1
- \int_2^x {t^\alpha  L(t)dt} \sim \frac{{x^{\alpha  + 1} }}{{\alpha  + 1}}L(x) \;\; {\rm as} \; x \to \infty; 
-\alpha < -1
- \int_2^x {t^\alpha  L(t)dt} \sim - \frac{{x^{\alpha  + 1} }}{{\alpha  + 1}}L(x) \;\; {\rm as} \; x \to \infty. 
-\alpha = 0
- \int_2^x {L(t)dt} \sim xL(x) \;\; {\rm as} \; x \to \infty, 
- \int_2^x {\frac{{dt}}{{\log ^n t}}} \sim \frac{x}{{\log ^n x}} \;\; {\rm as} \; x \to \infty. 

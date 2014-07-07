@@ -1,28 +1,0 @@
-u
-dv
-(d/dx)(e^{e^x}) = e^x.e^{e^x}
-\int xe^xe^{e^x} dx = xe^{e^x} - \int e^{e^x} dx 
-\int (1 + xe^x)e^{e^x} dx = xe^{e^x} + C 
-  \int_0^1 (1 + xe^x)e^{e^x} dx = e^e 
- I = \int \sin(\ln x) + \cos(\ln x) \, \mathrm{d}x
-u=ln x
-x = e^u
-\begin{align} u &= \sin(\ln x)  \qquad \quad v'  = 1 \\ u'&=\frac{1}{x}\cos(\ln x) \qquad \, v  = x \end{align}
-\begin{align}  I & = \int \sin(\ln x) + \cos(\ln x) \, \mathrm{d}x \\  I & = \int \sin(\ln x)\, \mathrm{d}x + \int \cos(\ln x) \, \mathrm{d}x \\  I & = \left[ x \sin(\ln x) - \int x \cdot \frac{1}{x} \cos(\ln x)  \, \mathrm{d}x \right] + \int \cos(\ln x) \, \mathrm{d}x \\  I & = \left[ x \sin(\ln x) - \int  \cos(\ln x)  \, \mathrm{d}x  \right] + \int \cos(\ln x) \, \mathrm{d}x \\ I & = x \sin(\ln x) + \mathcal{C} \end{align}
- I = \int \left( 1 + 2x^2 \right)e^{x^2} \, \mathrm{d}x 
-e^{x^2}
- I = \int  e^{x^2} \, \mathrm{d}x + \int 2x^2 e^{x^2} \, \mathrm{d}x 
- \int \frac{2}{\log x} + \log(\log x) - \frac{1}{\log^2x} \, \mathrm{d}x 
-e^{-x}
-e^x
-\int(e^{-x}+x)e^xe^{e^x}dx
-u=e^{-x}+x,du=1-e^{-x}
-dv=e^xe^{e^x}dx,v=e^{e^x}
-\int(e^{-x}+x)e^xe^{e^x}dx=e^{e^x}(e^{-x}+x)-\int(1-e^{-x})e^{e^x}dx
-e^x
-e^{-x}
-\int(1-e^{-x})e^{e^x}dx=\int(e^x-1)e^{-x}e^{e^x}dx=\int(e^x-1)e^{e^x-x}dx
-z=e^x-x,dz=(e^x-1)dx
-\int(e^x-1)e^{e^x-x}dx=\int e^zdz=e^z=e^{e^x-x}
-\int(1+xe^x)e^{e^x}dx=e^{e^x}(e^{-x}+x)-\int(1-e^{-x})e^{e^x}dx=
-e^{e^x}(e^{-x}+x)-e^{e^x}e^{-x}+C=xe^{e^x}+C

@@ -1,8 +1,0 @@
-E(X|Y=1)
-E(X|Y=y)=$$$\begin{align}\int_{-\infty}^{\infty} g(x)f_X(x|Y=1)dx\\ =\int_{-\infty}^{\infty}g(x)P(x|Y=1)dx\\=\int_{-\infty}^{\infty}g(x)*\frac{f(x,y)}{f_Y(y)} dx\end{align}$$ This is the definitiion given in my textbook. Is the 
- supposed to be the marginal density of 
-f(x,y)=\begin{cases}\lambda^3xe^{-\lambda y} & 0\lt x\lt y\\ 0 & \text{elsewhere}\end{cases}
-$\begin{align}\int_{-\infty}^{\infty} g(x)f_X(x|Y=1)dx\\ =\int_{-\infty}^{\infty}g(x)P(x|Y=1)dx\\=\int_{-\infty}^{\infty}g(x)*\frac{f(x,y)}{f_Y(y)} dx\end{align}
-f_Y(y) = \int_{-\infty}^{\infty}f(x,y)dx
-E(g(X)|Y=y)
-E(X|Y=y) = \int_{-\infty}^{\infty}x\frac{f(x,y)}{f_Y(y)}dx

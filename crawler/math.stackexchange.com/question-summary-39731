@@ -1,23 +1,0 @@
-f : \mathbb{R}^2 \mapsto \mathbb{R}, f \in C^2
-h= \nabla f  = \left(\frac{\partial f}{\partial x_1 },\frac{\partial f}{\partial x_2 }  \right)
-x=(x_1,x_2)
-\int_0^1 \! \langle \nabla f(x \cdot t),x \rangle\,dt \,= \int_0^{x_1} \! h_1(t,0) ,dt \, +\int_0^{x_2} \! h_2(x_1,t) \,dt \,
-\langle \nabla f(x \cdot t),x \rangle=d f(tx) \cdot x
-(0,0)
-(x_{1},0)
-(x_{1},x_{2})
-\gamma
-x_1
-\gamma_{1}
-x_2
-\gamma_2
-\gamma: [0,1] \to \mathbb{R}^2
-t \mapsto tx
-\gamma_{1} : [0,1] \to \mathbb{R}^2
-t \mapsto (tx_{1},0)
-\gamma_{2} : [0,1] \to \mathbb{R}^2
-t \mapsto (x_{1}, tx_{2})
-\int_{0}^{1} df(\gamma(t))\cdot\dot{\gamma}(t)\,dt = \int_{0}^{1} \frac{d}{dt}(f \circ \gamma)(t)\,dt = f(\gamma(1)) - f(\gamma(0)) = f(x_1, x_2) - f(0,0).
-\gamma_1 (1) = (x_1,0) = \gamma_2 (0)
-f(x_{1},x_{2}) - f(0,0)
-\int_{0}^{1} \frac{d}{dt} (f \circ \gamma_{1})(t)\,dt + \int_{0}^{1} \frac{d}{dt} (f \circ \gamma_2)(t)\,dt = \left( f(\gamma_{1}(1)) - f(\gamma_{1}(0))\right) + \left(f(\gamma_2 (1)) - f(\gamma_2(0))\right)

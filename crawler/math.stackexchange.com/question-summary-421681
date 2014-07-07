@@ -1,7 +1,0 @@
- InvCDF(x) = \begin{cases} \sqrt{x (b-a) (c-a)}+a & 0\leq x\leq \frac{c-a}{b-a} \\ b-\sqrt{(1-x) (b-a) (b-c)} & 1\geq x>\frac{c-a}{b-a} \\ a & x<0 \\ b & x > 1 \\ \end{cases} 
- f1(x') = \int_0^{x'} \left(\sqrt{x (b-a) (c-a)}+a\right) \, dx =  \frac{2}{3} x' \sqrt{x' (a-b) (a-c)}+a x' 
- f2(x'') = \int_{\frac{c-a}{b-a}}^{x''} b - \sqrt{(-a + b) (b - c) (1 - x)]} dx = -\frac{-b \left(2 x'' \sqrt{(x''-1) (a-b) (b-c)}-2 \sqrt{(x''-1) (a-b) (b-c)}+2 \sqrt{(b-c)^2}+3 c\right)+a (x''-1) \left(2 \sqrt{(x''-1) (a-b) (b-c)}-3 b\right)+3 b^2 x''+2 c \sqrt{(b-c)^2}}{3 (a-b)} 
- TotalCost[percentage]  = volume *  f1\left(\min \left(percentage,\frac{c-a}{b-a}\right)\right)+volume * f2\left(\max \left(percentage,\frac{c-a}{b-a}\right)\right) 
- F(x) = \int_0^{x} f(x) \, dx 
- F(3) 
- F(3) = \int_0^3 f(3) \, dx = \int_0^3 c \, dx = cx|_0^3 = c(3) - c(0) = 3 c 

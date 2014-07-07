@@ -1,13 +1,0 @@
-(-\infty,\infty)
-\int f(x)~\text{d}x=\int f(x+t)~\text{d}x
-M
-|g(x)|\leq M
-f
-\int|f-h|\lt \frac{\epsilon}{4M}.
-h
-\exists ~\delta \gt 0
-|h(x)-h(x+t)|\lt \frac{\epsilon}{2M}.
- \begin{align*} \int|g(x)[f(x)-f(x+t)|&\leq \int|g(x)[h(x)-h(x+t)]| + \int|g(x)[f(x)-h(x)-f(x+t)+h(x+t)]|\\ &\leq \frac{\epsilon M}{2M} + M\int |f(x)-h(x)|+M\int|f(x+t)-h(x+t)| \\ & \leq \frac{\epsilon}{2} + 2M\int|f(x)-h(x)|\\ & \leq \frac{\epsilon}{2} + \frac{2M\epsilon}{4M}\\ & \lt \epsilon. \end{align*}
-f
-t_n \to 0
-\lim_{n \to \infty} \int |g(x)[f(x) - f(x + t_n)]| \, \textrm{d}x = 0.

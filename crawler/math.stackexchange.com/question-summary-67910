@@ -1,79 +1,0 @@
-f\in L^1(R)
-f
-L_1
- \lim_{\omega\to\pm\infty} \hat f (\omega) = 0 
- f\in L^1(R),  \mbox{ f is continuous and  } \lim_{x\to\pm\infty}  f (x) = 0
- \hat f(\omega)\in L^1(R)
-f(x)=\frac{-1}{\log(x)+\log(1-x)}
-x\in(0,1)
-0
-x\not\in(0,1)
-|\xi|\to\infty
-f
-[0,1]
-f\in L^1
-|\hat{f}(\xi)|\sim\left|\frac{\sin(\pi \xi)}{\pi \xi\log|\xi|}\right|
-\hat{f}\not\in L^1
- \begin{align} \int_0^1\frac{-1}{\log(x)+\log(1-x)}e^{-2\pi ix\xi}\;\mathrm{d}x &=\int_0^\infty\frac{-1}{\log(-is)+\log(1+is)}e^{-2\pi s\xi}(-i)\mathrm{d}s\\ &-\int_0^\infty\frac{-1}{\log(1-is)+\log(is)}e^{-2\pi i\xi-2\pi s\xi}(-i)\mathrm{d}s\\ &=\frac{1}{\xi}\int_0^\infty\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}e^{-2\pi s}(-i)\mathrm{d}s\\ &-\frac{e^{-2\pi i\xi}}{\xi}\int_0^\infty\frac{-1}{\log(1-is/\xi)+\log(is/\xi)}e^{-2\pi s}(-i)\mathrm{d}s\\ &\sim \frac{1-e^{-2\pi i\xi}}{2\pi i\xi\log|\xi|}\\ &=e^{-\pi i\xi}\frac{\sin(\pi \xi)}{\pi \xi\log|\xi|} \end{align} 
-|t|<1
-|t|<\frac{1}{2}
- \begin{align} |\log(-it)+\log(1+it)| &\ge|\log(|t|)|-\frac{1}{2}\log(1+t^2)\\ &\ge\log(1/|t|)-\frac{1}{2}\log(2)\\ &\ge\frac{1}{2}\log(1/|t|)\tag{2} \end{align} 
-f(x)
-\hat{f}(\xi)
-e^{i\alpha\xi}
-\alpha
-\xi>0
-\xi<0
-\xi>0
-\xi\to\infty
-\xi>1
-(3)
-I_1=[0,\xi^{-\epsilon})
-I_2=[\xi^{-\epsilon},\xi^{\epsilon})
-I_3=[\xi^{\epsilon},\infty)
-\epsilon
-\xi^{-\epsilon}=\epsilon
-\epsilon=\operatorname{W}(\log(\xi))/\log(\xi)\to0
-\xi\to\infty
-\epsilon<\log(\log(\xi))/\log(\xi)
-\xi>e^e
- \int_0^\infty\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}\;e^{-2\pi s}\;\mathrm{d}s\tag{3} 
-\underline{I_1=[0,\xi^{-\epsilon})}
-|I_1|=\epsilon
-s<1
-(2)
-\xi\ge2
- \int_{I_1}\left|\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}\right|\;e^{-2\pi s}\;\mathrm{d}s\le\frac{2\epsilon}{\log(\xi)}\tag{4} 
-\underline{I_2=[\xi^{-\epsilon},\xi^\epsilon)}
-I_2
-|I_1|=\epsilon
-I_3=[\xi^\epsilon,\infty)
-s\in I_2
-\left|\frac{\log(s)}{\log(\xi)}\right|\le\epsilon
-s/\xi\le1
-\xi>27
-\epsilon<\frac{1}{3}
-\log(\xi)=\log(1/\epsilon)/\epsilon\ge\log(3)/\epsilon
-(8)
-I_2
-(5)
-\underline{I_3=[\xi^\epsilon,\infty)}
-(1)
-(5)
-(4)
-(6)
-(7)
-(9)
-(10)
-\xi>27
-(11)
--\xi
- \begin{align} &\int_{I_2}\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}\;e^{-2\pi s}\;\mathrm{d}s\\ &=\int_{I_2}\frac{1}{\log(\xi)\left(1-\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}\right)}\;e^{-2\pi s}\;\mathrm{d}s\\ &=\int_{I_2}\;\frac{e^{-2\pi s}}{\log(\xi)}\;\mathrm{d}s+\int_{I_2}\left(\frac{1}{1-\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}}-1\right)\;\frac{e^{-2\pi s}}{\log(\xi)}\;\mathrm{d}s\\ &=\frac{1}{2\pi\log(\xi)} - \int_{I_1+I_3}\;\frac{e^{-2\pi s}}{\log(\xi)}\;\mathrm{d}s + \int_{I_2}\left(\frac{\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}}{1-\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}}\right)\;\frac{e^{-2\pi s}}{\log(\xi)}\;\mathrm{d}s\tag{5} \end{align} 
- \int_{I_1}\left|\frac{e^{-2\pi s}}{\log(\xi)}\right|\mathrm{d}s\le\frac{\epsilon}{\log(\xi)}\tag{6} 
- \begin{align} \int_{I_3}\left|\frac{e^{-2\pi s}}{\log(\xi)}\right|\mathrm{d}s &=\frac{e^{-2\pi\xi^\epsilon}}{2\pi\log(\xi)}\\ &=\frac{\epsilon e^{-2\pi/\epsilon+\log(1/\epsilon)}}{2\pi\log(\xi)}\\ &\le\frac{\epsilon}{2\pi\log(\xi)}\tag{7} \end{align} 
- \begin{align} \left|\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}\right| &\le\left|\frac{\log(s)}{\log(\xi)}\right|+\left|\frac{\log(-i)+\log(1+is/\xi)}{\log(\xi)}\right|\\ &\le\epsilon+\left(\frac{\pi}{2}+\frac{1}{2}\log(2)\right)\frac{\epsilon}{\log(3)}\\ &\le\frac{11}{4}\epsilon\tag{8} \end{align} 
- \begin{align} \int_{I_2}\left|\frac{\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}}{1-\frac{\log(-is)+\log(1+is/\xi)}{\log(\xi)}}\right|\;\frac{e^{-2\pi s}}{\log(\xi)}\;\mathrm{d}s &\le\frac{\frac{11}{4}\epsilon}{1-\frac{11}{4}\epsilon}\frac{1}{2\pi\log(\xi)}\\ &\le\frac{33\epsilon}{2\pi\log(\xi)}\tag{9} \end{align} 
- \begin{align} \int_{I_3}\left|\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}\right|\;e^{-2\pi s}\;\mathrm{d}s &\le\frac{2}{\log(2)}\frac{e^{-2\pi\xi^\epsilon}}{2\pi}\\ &=\frac{2}{\log(2)}\frac{\epsilon e^{-2\pi/\epsilon+\log(1/\epsilon)+\log(\log(\xi))}}{2\pi\log(\xi)}\\ &=\frac{2}{\log(2)}\frac{\epsilon e^{-2\pi/\epsilon+2\log(1/\epsilon)+\log(\log(1/\epsilon))}}{2\pi\log(\xi)}\\ &\le\frac{\epsilon}{\pi\log(2)\log(\xi)}\tag{10} \end{align} 
- \begin{align} &\left|\int_0^\infty\frac{-1}{\log(-is/\xi)+\log(1+is/\xi)}\;e^{-2\pi s}\;\mathrm{d}s - \frac{1}{2\pi\log(\xi)}\right|\\ &\le(2+1+\frac{1}{2\pi}+\frac{33}{2\pi}+\frac{1}{\pi\log(2)})\frac{\epsilon}{\log(\xi)}\\ &\le\frac{6\epsilon}{\log(\xi)}\tag{11} \end{align} 
- \left|\int_0^1\frac{-1}{\log(x)+\log(1-x)}e^{-2\pi ix\xi}\;\mathrm{d}x-e^{-\pi i\xi}\frac{\sin(\pi \xi)}{\pi \xi\log|\xi|}\right|\le\frac{12\epsilon}{|\xi|\log|\xi|} 
- \frac{1/\log|x|}{1+x^2}\quad\text{or}\quad \frac{\sin x^3}{1+x^2}. 

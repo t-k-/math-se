@@ -1,59 +1,0 @@
-(d_i,n_{xi},n_{yi},n_{zi})
-i=1,2
-(n_{xi},n_{yi},n_{zi})
-i
-d_i
-i
-4\times4
-M_i
-(d_1,d_2,(n_1\times n_2)_x,(n_1\times n_2)_y,(n_1\times n_2)_z)
-n_1
-n_2
-(n_1+\Delta n_1)\times (n_2+\Delta n_2)\approx n_1\times n_2 \Delta n_1\times n_2+n_1\times\Delta n_2\;,
- \begin{pmatrix} \Delta d_1 \\ \Delta d_2 \\ \Delta (n_1\times n_2)_x \\ \Delta (n_1\times n_2)_y \\ \Delta (n_1\times n_2)_z \end{pmatrix} = \begin{pmatrix} 1 \\ &&&&1 \\ &0&n_{z2}&-n_{y2}&&0&-n_{z1}&n_{y1}\\ &-n_{z2}&0&n_{x2}&&n_{z1}&0&-n_{x1}\\ &n_{y2}&-n_{x2}&0&&-n_{y1}&n_{x1}&0\\ \end{pmatrix} \begin{pmatrix} \Delta d_1 \\ \Delta n_{x1} \\ \Delta n_{y1} \\ \Delta n_{z1} \\ \Delta d_2 \\ \Delta n_{x2} \\ \Delta n_{y2} \\ \Delta n_{z2} \end{pmatrix} \;. 
-\Delta l=J\Delta p
-M_l
-M_l=J\begin{pmatrix}M_1\\&M_2\end{pmatrix}J^{\text T}\;.
-M_i
-Pn=\lambda n\;.
-\Delta n
-n
-\Delta P
-P
-(P+\Delta P)(n+\Delta n)=(\lambda+\Delta\lambda)(n+\Delta n)\;.
-P\Delta n+\Delta P n=\lambda\Delta n+\Delta\lambda n\;.\tag1
-(1)
-n^{\text T}
-n^{\text T}P\Delta n+n^{\text T}\Delta P n=\lambda n^{\text T}\Delta n+\Delta\lambda n^{\text T}n\;.
-n^{\text T}P=n^{\text T}\lambda
-P
-n^{\text T}n=1
-\Delta\lambda=n^{\text T}\Delta P n\;.
-(1)
-e_1
-e_2
-e_i^{\text T}P\Delta n+e_i^{\text T}\Delta P n=\lambda e_i^{\text T}\Delta n+\Delta\lambda e_i^{\text T}n\;.
-e_i^{\text T}P=e_i^{\text T}\lambda_i
-\lambda_i
-e_i
-e_i^{\text T}\Delta n=\frac{e_i^{\text T}\Delta P n}{\lambda-\lambda_i}\;.
-e_i
-\Delta n
-n
-\Delta n=\sum_{i=1,2}\frac{e_i^{\text T}\Delta P n}{\lambda-\lambda_i}e_i\;.
-\Delta P
-\Delta n
-d
-c
-n
-d=c^{\text T}n\;,
-\Delta d=\Delta c^{\text T}n+c^{\text T}\Delta n\;,
-\Delta c
-\Delta P
-\Delta P
-\Delta c
-\Delta d
-\Delta n
-\Delta p
-\Delta l
-P

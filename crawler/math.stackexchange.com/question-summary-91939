@@ -1,51 +1,0 @@
-\{z_i\}
-i
-n
-J
-\left|\sum_{j\in J} z_j\right|\ge \frac{1}{4\sqrt 2} \sum_{k=1}^n |z_k|.
-|\operatorname{Re}(z)|+|\operatorname{Im}(z)|\ge |z|
- \left(\sum_{k=1}^n  |\operatorname{Re}(z_k)|+|\operatorname{Im}(z_k)| \right) \ge \sum_{k=1}^n |z_k|.
-\sum \limits_{k=1}^n  |\operatorname{Re}(z_k)|+|\operatorname{Im}(z_k)| = X^+ + |X^-|+ Y^+ +|Y^-|
-J
-1/\sqrt 2
- 4X^+ \ge \sum_{k=1}^n |z_k|.
-\frac{1}{4 \sqrt{2}}
-\frac{1}{\pi}
-n
-R(z) = \max(0, \text{Re}(z))
-\theta \in [0,2\pi]
-F(z_1,\ldots, z_n,\theta) = \sum_{j=1}^n R(e^{i\theta}  z_j)
-z
-F(z_1,\ldots,z_n,\theta)
-\theta \in [0,2\pi]
-\frac{1}{\pi} \sum_{j=1}^n |z_j|
-J = \{j: R(e^{i\theta} z_j) > 0\}
-\left|\sum_{j \in J} z_j\right| \ge \text{Re} \sum_{j \in J} e^{i \theta} z_j = F(z_1,\ldots,z_n,\theta)
-\frac{1}{2\pi} \int_0^{2 \pi} R(e^{i \theta} z) \ d\theta  = \frac{|z|}{2 \pi} \int_{0}^\pi \sin \theta \ d\theta = \frac{|z|}{\pi}
-n
-z_n
-n
-|w|=1
-w\cdot z\le|z|
-\theta
-w
-z_k
-w
-\theta/2
- \sum_{k=1}^n z_k\cdot w\le\left|\sum_{k=1}^n z_k\right|\tag{1} 
- \begin{align} \left|\sum_{k=1}^n z_k\right| &\ge\sum_{k=1}^n z_k\cdot w\\ &\ge\sum_{k=1}^n |z_k|\cos(\theta/2)\tag{2} \end{align} 
-\theta
-W
-\theta
- \sum_{z_k\in W} |z_k|\ge\frac{\theta}{2\pi}\sum_{k=1}^n |z_k|\tag{3} 
-(2)
-(3)
-\dfrac{\theta}{2\pi}\cos(\theta/2)
-0.1786
-\theta
-1.720667
-\theta=\pi/2
-\dfrac{\theta}{2\pi}\cos(\theta/2)=\frac{1}{4\sqrt{2}}
-(4)
- \begin{align} \left|\sum_{z_k\in W} z_k\right| &\ge\cos(\theta/2)\sum_{z_k\in W} |z_k|\\ &\ge\frac{\theta}{2\pi}\cos(\theta/2)\sum_{k=1}^n |z_k|\tag{4} \end{align} 
- \left|\sum_{z_k\in W} z_k\right|\ge\frac{1}{4\sqrt{2}}\sum_{k=1}^n |z_k|\tag{5} 

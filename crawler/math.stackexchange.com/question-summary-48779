@@ -1,18 +1,0 @@
-\int_0^{2\pi} \frac{y}{y^n-1} dy
-y^n-1
-(y-1)(y-e^{i\theta})(y-e^{i2\theta})...(y-e^{i(n-1)\theta})
- R_k = \lim_{z\to \omega_k} (z-\omega_k)f(z) =  \omega_k \prod_{j \ne k} (\omega_k - \omega_j)^{-1} = \omega_k \prod_{l = 1}^{n-1} \left[ \omega_k^{-1} ( 1 - \omega_l)^{-1} \right] = \omega_k^2 R_0 .
- \omega_k^{-n} = 1 
- l = j-k 
- R_0 = 1/(n-1) 
- \sum \omega_k^2 = 0 
- n > 2 
- z^2 
- z^n-1 
-\xi_k, k=1,2,\ldots,n,
-z^n-a
-f(z)=1/(z^n-a)
-\xi_k
-f(z)
-a\neq0
- Res(f(z),\xi_k)=\lim_{z\to\xi_k}\frac{z-\xi_k}{z^n-a}= \lim_{z\to\xi_k}\frac{1}{nz^{n-1}}=\frac{1}{n\xi_k^{n-1}}=\frac{\xi_k}{n\xi_k^n}=\frac{\xi_k}{na}. 

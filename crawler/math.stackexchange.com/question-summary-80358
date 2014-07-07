@@ -1,12 +1,0 @@
-B
-1 
- A = \frac{1}{2} \int_0^\infty \frac{(B+sI)^{-1}}{\sqrt{\mbox{det}(B+sI)}} ds 
-B
-1
-A
-1
-B
-b_i
-\sum_i A_{ii}
- \begin{eqnarray}   A_{11} &=& \frac{1}{2} \int_0^\infty \frac{1}{(s+b_1)^{3/2}} \prod_{k=2}^n \frac{1}{(s+b_k)^{1/2}} \mathrm{d} s \\     &=& \frac{1}{ \pi^{n/2}} \int_0^\infty \mathrm{d} s \int_0^\infty \mathrm{d} x_1 \cdots \int_0^\infty \mathrm{d} x_n x_1^{1/2} x_2^{-1/2}\cdots x_n^{-1/2} \mathrm{e}^{-(b_1+s)x_1} \cdots \mathrm{e}^{-(b_n+s)x_n} \\   &=& \frac{1}{ \pi^{n/2}} \int_0^\infty \mathrm{d} x_1 \cdots \int_0^\infty \mathrm{d} x_n \frac{x_1^{-1/2} x_2^{-1/2}\cdots x_n^{-1/2}}{x_1 + x_2 + \ldots + x_n} x_1 \mathrm{e}^{-\sum_i b_i x_i} \end{eqnarray} 
- \begin{eqnarray}   \operatorname{Tr}(A) &=& \frac{1}{ \pi^{n/2}} \int_0^\infty \mathrm{d} x_1 \cdots \int_0^\infty \mathrm{d} x_n \frac{x_1^{-1/2} x_2^{-1/2}\cdots x_n^{-1/2}}{x_1 + x_2 + \ldots + x_n} \left( \sum_i x_i \right) \mathrm{e}^{-\sum_i b_i x_i} \\   &=& \frac{1}{ \pi^{n/2}} \int_0^\infty \mathrm{d} x_1 \cdots \int_0^\infty \mathrm{d} x_n \left(x_1^{-1/2} x_2^{-1/2}\cdots x_n^{-1/2} \right) \mathrm{e}^{-\sum_i b_i x_i} = \frac{1}{\sqrt{\det B}} = 1 \end{eqnarray} 

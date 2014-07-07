@@ -1,19 +1,0 @@
-f(x) = f(x-1)*b \to f(x) = c_1 b^{x-1}
-f(x) = f(x-1)*b
-\begin{align} \\ f(4) &= f(4-1)*b \\ &= f(f(3-1)*b)*b \\ &= f(f(f(2-1)*b)*b)*b \\ &= f(f(f(f(1-1)*b)*b)*b)*b \\ &= \qquad ...  \end{align}
-\begin{align} F_n &= F_{n-1} + F_{n-2}\\     F_0 &= 0\\     F_1 &= 1\\     F_5 &= F_{5-1} + F_{5-2}\\        &= F_4 + F_3\\        &= (F_3 + F_2) + (F_2 + F_1)\\        &= ((F_2 + F_1) + (F_1 + F_0)) + ((F_1 + F_0) + F_1)\\        &= (((F_1 + F_0) + F_1) + (F_1 + F_0)) + ((F_1 + F_0) + F_1) \\        &= 5 \end{align}
-f(n)
-f(4) = b * f(3) = b^2 * f(2)
-f(4) = b * f(f(2)*b)
-f(1) = c_1
-f(n) = c_1 * b^{n-1}
-f(n) = b * f(n-1) = b^2 * f(n-2) = \ldots = b^{n-1} * f(1).
-(n-1,\cdot)
-(n,\cdot)
-\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
-C(n,k) = C(n-1,k-1) + C(n-1,k), \quad C(0,k) = 1_{k=0}.
-n \times n
-n=1
-(n-1)\times(n-1)
-F_n
-F_n

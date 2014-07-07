@@ -1,8 +1,0 @@
-\lnot A
-\lor
-\lnot A
-B \land C
-\lor
-(B \land C) \lor (\lnot A \land \lnot B) \lor (\lnot A \land \lnot C) \;\equiv\; (A \land B \land C) \lor \lnot A
- \begin{align} & (A \land B \land C) \lor \lnot A \\ \equiv & \;\;\;\;\;\text{"use negation of $\lnot A$ in other side of $\lor$"} \\ & (\textrm{true} \land B \land C) \lor \lnot A \\ \equiv & \;\;\;\;\;\text{"simplify"} \\ & (B \land C) \lor \lnot A \\ \end{align} 
- \begin{align} & (B \land C) \lor (\lnot A \land \lnot B) \lor (\lnot A \land \lnot C) \\ \equiv & \;\;\;\;\;\text{"factor out $\lnot A$"} \\ & (B \land C) \lor (\lnot A \land (\lnot B \lor \lnot C)) \\ \equiv & \;\;\;\;\;\text{"use De Morgan"} \\ & (B \land C) \lor \lnot(A \lor (B \land C)) \\ \equiv & \;\;\;\;\;\text{"use negation of $B \land C$ in other side of $\lor$"} \\ & (B \land C) \lor \lnot(A \lor \textrm{false}) \\ \equiv & \;\;\;\;\;\text{"simplify"} \\ & (B \land C) \lor \lnot A \\ \end{align} 

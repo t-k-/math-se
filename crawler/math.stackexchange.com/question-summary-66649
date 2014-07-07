@@ -1,31 +1,0 @@
-\mathtt e_x = \begin{bmatrix} 1\\0\\0 \end{bmatrix}
-\mathtt  e_y = \begin{bmatrix} 0\\1\\0 \end{bmatrix}
-\mathtt  e_z = \begin{bmatrix} 0\\0\\1 \end{bmatrix}
-3\times 3
-\mathtt R_{wo} = \mathtt I.
-x
-\theta_x
-y
-\theta_y
-z
-\theta_z
-\mathbf R_{wo'} =  \mathbf R_{wo} \exp(\theta_x\mathbf G_x)\exp(\theta_y\mathbf G_y)\exp(\theta_z\mathbf G_z)
-=   \exp(\theta_x\mathbf G_x)\exp(\theta_y\mathbf G_y)\exp(\theta_z\mathbf G_z)
-\exp(\theta_i\mathbf G_i)
-\exp
-\mathbf G_x=\begin{bmatrix}0 & 0& 0\\0 & 0& -1\\0 & 1& 0\end{bmatrix}
-\mathbf G_y=\begin{bmatrix}0 & 0& 1\\0 & 0& 0\\-1 & 0& 0\end{bmatrix}
-\mathbf G_z=\begin{bmatrix}0 & -1& 0\\1 & 0& 0\\0 & 0& 0\end{bmatrix}
- \exp (\theta_i \mathbf G_i) = \mathtt I + \mathtt G_i\sin(\theta_i) + \mathtt G_i^2(1-\cos(\theta_i)) 
-\exp(\theta_x\cdot \mathtt G_x) = \mathtt I +\begin{bmatrix}0 & 0& 0\\0 & 0& -1\\0 & 1& 0\end{bmatrix}\sin(\theta_x) + \begin{bmatrix}0 & 0& 0\\0 & -1& 0\\0 & 0& -1\end{bmatrix}(1-\cos(\theta_x)) 
-\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad=\begin{bmatrix}1 & 0& 0\\0 & \cos(\theta_x)& -\sin(\theta_x)\\0 & \sin(\theta_x)& \cos(\theta_x)\end{bmatrix}
-\exp(\theta_x\mathbf G_x)\exp(\theta_y\mathbf G_y)\neq\exp(\theta_y\mathbf G_y)\exp(\theta_x\mathbf G_x)
-\mathbf x_{o'}
-\mathbf x_w
-\mathbf x_w = \mathtt R_{wo'}\mathbf x_{o'}
-\mathbf e_z
-\mathbf x_{\text{forward}}
-\mathbf x_{\text{forward}} = \mathtt R_{wo'}\mathbf e_{z}
-\hat{k}
- \hat{k}_{world} = {\rm R_1 R_2 R_3} \hat{k} 
-\rm R_i

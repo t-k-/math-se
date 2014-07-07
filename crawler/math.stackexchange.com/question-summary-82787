@@ -1,11 +1,0 @@
-X,Y
-P(|\min(X,Y)|<1)
-\Pr(|\min(X,Y)| \lt k) =  \Pr(\min(X,Y) \gt -k) -  \Pr(\min(X,Y) \ge k)
-= \Pr(X \gt -k) \Pr(Y \gt -k) - \Pr(X \ge k) \Pr(Y \ge k)
- = (1- F(-k))^2- (1- F(k))^2 
-0
-F(k)^2- (1- F(k))^2= 2F(k)-1 = F(k)-F(-k) = \Pr(|X| \le k)
-|\min(X,Y)|<1
-\begin{align}  \operatorname{Area}(|\min(X,Y)|<1) &= \operatorname{Area}(-1<X<1 \text{ and } Y >-1) + \operatorname{Area}(-1<Y<1 \text { and } X>1)\\ &=\operatorname{Area}(-1<X<1 \text{ and } Y>-1) + \operatorname{Area}(-1<X<1 \text { and } Y>1)\\ &=\operatorname{Area}(-1<X<1) \end{align}
-P(|\min(X,Y)|<1)
-P(|\min(X,Y)|<1) = P(-1<X<1) = \Phi(1)-\Phi(-1)

@@ -1,25 +1,0 @@
-A\in M_{n}
-\sigma_{1}\geq \sigma_{2} \geq \cdots \sigma_n
-\sigma_{1}\leq 1 \iff\begin{pmatrix}I_{n} & A \\ A^{*} & I_{n} \\ \end{pmatrix} \geq 0
-\sigma_1 \leq 1 \implies B = \begin{pmatrix}I_{n} & A \\ A^{*} & I_{n} \\ \end{pmatrix} \geq 0
-x \in \mathbb{C}^{2n \times 1}
-x = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}
-x_1,x_2 \in \mathbb{C}^{n \times 1}
-x^* Bx = \|x_1\|^2 + \|x_2\|^2 + x_1^*Ax_2 + x_2^*A^*x_1 = \|x_1\|^2 + \|x_2\|^2 + 2 \text{Re}(x_1^*Ax_2)
-|x_1^*Ax_2| \leq \|x_1\|\cdot\|Ax_2\| \leq \sigma_1 \|x_1\|\cdot\|x_2\|.
--|x_1^*Ax_2| \leq \text{Re}(x_1^*Ax_2) \leq |x_1^*Ax_2|.
-x_1^*Ax_2 + x_2^*A^*x_1 = 2 \text{Re}(x_1^*Ax_2) \in \left[ -2 \sigma_1 \|x_1\|\cdot\|x_2\|,2 \sigma_1 \|x_1\|\cdot\|x_2\| \right].
-x^* Bx \geq \|x_1\|^2 + \|x_2\|^2 - 2\sigma_1\|x_1\|\cdot\|x_2\| \geq 0 \qquad(\text{since }\sigma_1 \leq 1)
-B = \begin{pmatrix}I_{n} & A \\ A^{*} & I_{n} \\ \end{pmatrix} \geq 0 \implies \sigma_1 \leq 1
-B
-x \in \mathbb{C}^{2n \times 1}
-x^*Bx \geq 0
-x = \begin{pmatrix} -u \\ v \end{pmatrix}
-u \in \mathbb{C}^{n \times 1}
-A
-v \in \mathbb{C}^{n \times 1}
-A
-0 \leq x^* Bx = \|u\|^2 + \|v\|^2 - u^*Av - v^*A^*u = 2 - 2 \sigma_1.
-\sigma_1 \leq 1.
-I\succeq A^*A
- \begin{pmatrix} I &A\\ A^* &I \end{pmatrix} \succeq 0 \iff \begin{align} I &\succeq 0\\ I - A^* I A &\succeq 0\\ A(I-I) &= 0 \end{align} 

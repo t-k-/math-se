@@ -1,31 +1,0 @@
-f(x) = f(a) + f'(a)(x-a) + \frac{1}{2!}f''(a) (x-a)^2 + ...
-(x-a)
-dx
-(y-b)
-dy
-f(x,y)
-f(x,y)
-f(x,y) = f(a,b) +  \bigg[(x-a)\frac{\partial}{\partial x} + (y-b)\frac{\partial}{\partial x}\bigg]f +  \frac{1}{2!} \bigg[(x-a)\frac{\partial}{\partial x} + (y-b)\frac{\partial}{\partial x}\bigg]^2 f + ... 
-f(a+u,b+v)
-f(a,b)
-(u,v)
-f
-(a,b)
-\phi
-t=0
-\phi(t):=f(a+t u, b+t v)\qquad(0\leq t\leq 1)\ .
-f(a+u,b+v)=\phi(1)=\sum_{r=0}^n{1\over r!}\phi^{(r)}(0)+{\rm error\ term}\ .\qquad(*)
-\phi^{(0)}(0)=f(a,b)
-\phi'(t)
-\phi'(0)=f_1(a,b)u+f_2(a,b)v
-\phi''(0)=f_{11}(a,b)u^2 + 2f_{12}(a,b)uv+f_{22}(a,b) v^2\ .
-\phi
-\phi(0)
-\phi'(0)
-\phi''(0)
-\ldots
-(*)
-\phi^{(0)}(t)=\phi(t)=f(a+tu,b+tv)
-\phi'(t)={d\over dt}\phi(t)={d\over dt}f(a+t u,b+ t v)=f_1(a+t u,b+ tv)u+f_2(a+ tu, b+ tv) v\ ,
-\eqalign{\phi''(t)&={d\over dt}\bigl(f_1(a+t u,b+ tv)u+f_2(a+ tu, b+ tv) v\bigr) \cr  &=f_{11}(a+tu,b+tv)u^2+2f_{12}(a+tu,b+tv) uv +f_{22}(a+tu,b+tv)v^2\cr}
-    f(\vec{x} + \vec{u}) = \sum_{n=0}^\infty \frac{1}{n!} \left( \langle \vec{u}, \mathcal{T}_{\vec{x}} \rangle \right)^n \circ f(\vec{x})  

@@ -1,8 +1,0 @@
-u\in C^2(\Omega), \Omega\subset\mathbb{R}^2
- \frac{\partial}{\partial x}\left(\frac{\frac{\partial u}{\partial x}}{\sqrt{1+\left(\frac{\partial u}{\partial x}\right)^2+\left(\frac{\partial u}{\partial y}\right)^2}}\right). 
- a:=1+\left(\frac{\partial u}{\partial x}\right)^2+\left(\frac{\partial u}{\partial y}\right)^2 
- \frac{\partial}{\partial x}\left(\frac{\frac{\partial u}{\partial x}}{\sqrt{1+\left(\frac{\partial u}{\partial x}\right)^2+\left(\frac{\partial u}{\partial y}\right)^2}}\right)=\frac{\frac{\partial^2 u}{\partial x^2}\cdot\sqrt{a}-\frac{\partial}{\partial x}(\sqrt{a})\cdot\frac{\partial u}{\partial x}}{a}. 
-\frac{\partial}{\partial x}(\sqrt{a})
- \frac{\partial}{\partial x}(\sqrt{a})=\frac{\frac{\partial u}{\partial x}}{\sqrt{a}}\cdot\frac{\partial^2 u}{\partial x^2}+\frac{\frac{\partial u}{\partial y}}{\sqrt{a}}\cdot\frac{\partial^2 u}{\partial x\partial y} 
- \frac{\frac{\partial^2 u}{\partial x^2}\cdot\sqrt{a}-\frac{\frac{\partial u}{\partial x}}{\sqrt{a}}\cdot\frac{\partial^2 u}{\partial x^2}\frac{\partial u}{\partial x}-\frac{\frac{\partial u}{\partial y}}{\sqrt{a}}\cdot\frac{\partial^2 u}{\partial x\partial y}\frac{\partial u}{\partial x}}{a}. 
- \begin{split} &(u_x(1+u_x^2+u_y^2)^{-1/2})_x  \\ & =u_{xx} (1+u_x^2+u_y^2)^{-1/2} + u_x\left(- \frac12\right)  (1+u_x^2+u_y^2)^{-3/2} (2u_xu_{xx}+2u_yu_{xy}) \\ & = (1+u_x^2+u_y^2)^{-3/2}\left\{ u_{xx}( 1+u_x^2+u_y^2)  - u_x (u_xu_{xx}+u_yu_{xy}) \right\} \\ & = (1+u_x^2+u_y^2)^{-3/2}\left\{ u_{xx}( 1+ u_y^2)  - u_x u_yu_{xy}  \right\} \\ \end{split} 

@@ -1,9 +1,0 @@
-\begin{align*} \sum_{n=1}^Kb_n&=\sum_{n=1}^K(b_n-a_n+a_n)\\ &=\sum_{n=1}^K(b_n-a_n)+\sum_{n=1}^Ka_n\;; \end{align*}
-b_1+b_2+\ldots+b_K
-(b_1-a_1+a_1)+(b_2-a_2+a_2)+\ldots+(b_K-a_K+a_K)
-\Big((b_1-a_1)+(b_2-a_2)+\ldots+(b_K-a_K)\Big)+\Big(a_1+a_2+\ldots+a_K\Big)\;.
-N>K
-\begin{align*} \sum_{n=1}^Nb_n&=\sum_{n=1}^Kb_n+\sum_{n=K+1}^Nb_n\\ &=\sum_{n=1}^K(b_n-a_n)+\sum_{n=1}^Ka_n+\sum_{n=K+1}^Nb_n\\ &=\sum_{n=1}^K(b_n-a_n)+\color{red}{\sum_{n=1}^Ka_n+\sum_{n=K+1}^Na_n}&&\text{since }b_n=a_n\text{ for }n>K\\ &=\sum_{n=1}^K(b_n-a_n)+\color{red}{\sum_{n=1}^Na_n}\;. \end{align*}
-N\to\infty
-\lim_{N\to\infty}\sum_{n=1}^Na_n=\sum_{n=1}^\infty a_n\;,
-\sum_{n=1}^\infty b_n=\lim_{N\to\infty}\sum_{n=1}^Nb_n=\sum_{n=1}^K(b_n-a_n)+\sum_{n=1}^\infty a_n\;.

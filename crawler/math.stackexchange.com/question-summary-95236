@@ -1,24 +1,0 @@
-\displaystyle \sum_{k=0}^{n}\frac{(2n-k)!\cdot 2^{k}}{(n-k)!}=4^{n}\cdot n!
-\displaystyle 2^{n}\prod_{k=1}^{n}2k=2^{n}\cdot 2^{n}\cdot n!=4^{n}\cdot n!
-\displaystyle \frac{(2n)!}{n!}+\frac{(2n-1)!\cdot 2}{(n-1)!}+\frac{(2n-2)!2^{2}}{(n-2)!}+\cdot\cdot\cdot +n!\cdot 2^{n}=4^{n}\cdot n!
-2^{n}
-2n(2n-1)(2n-2)(2n-3)\dots
-2n, \;\ 2n-2
-\displaystyle \sum_{k=0}^{n}\frac{(2n-k)!\cdot 2^{k}\cdot (k+m)!}{(n-k)!\cdot k!}
-m\in \mathbb{N}
-\displaystyle \frac{\Gamma(1+m)4^{n}\Gamma(n+1+\frac{m}{2})}{\Gamma(1+\frac{m}{2})}
- \begin{align} \sum_{k=0}^{n}\frac{(2n-k)!}{(n-k)!}2^k\tag{1} &=n!\sum_{k=0}^n\binom{2n-k}{n-k}\sum_{j=0}^k\binom{k}{j}\\\tag{2} &=n!\sum_{k=0}^n\sum_{j=0}^{n-k}\binom{n+k}{k}\binom{n-k}{j}\\\tag{3} &=n!\sum_{j=0}^n\sum_{k=0}^{n-j}\binom{n+k}{n}\binom{n-k}{j}\\\tag{4} &=n!\sum_{j=0}^n\binom{2n+1}{n+j+1}\\\tag{5} &=n!\;2^{2n} \end{align} 
-2^k
-k\mapsto n-k
-\binom{n}{k}=\binom{n}{n-k}
-\sum_k\binom{n-k}{i}\binom{m+k}{j}=\binom{n+m+1}{i+j+1}
-\sum_j\binom{2n+1}{j}=2^{2n+1}
-n!
-\sum\limits_{k=0}^n \binom{n+k}{k} 2^{n-k}= 4^n.
-n+1
-n+1
-2n+1
-\sum_{k\leq m}{m+k\choose k}2^{-k}=2^m\qquad\text{integer}\quad m\geq 0.\qquad\qquad (5.20)
-k=j-m
-2^m
-\sum_{m\leq j\leq 2m} {j\choose m}\left({1\over 2}\right)^j=1.

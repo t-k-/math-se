@@ -1,14 +1,0 @@
-f^{k+1}(x)=f^k(x)\log(f^k(x))
-f^1(x)=\log x
-x\gg0
-g(x)=\sum_{k=1}^\infty \frac{1}{xf^k(x)}
-f_k(x)
-f_k(x) = \prod_{n=1}^k \log^{(\circ n)}(x)
-h_1(x) = x \log(x)
-h_2(x) = \log(\log(x))
-h_3(x) = \log(\log(\log(x)))
-    f_1(x) = \log(x) \qquad f_2(x) = \log(x) \cdot \log(\log(x)) \qquad f_3(x)= \log(x) \cdot \log(\log(x)) \cdot \log(\log(\log(x))) 
-    g(x) = \frac{1}{h_1} + \frac{1}{h_1 h_2} + \frac{1}{h_1 h_2 h_3} + \ldots = \frac{1}{h_1} \left( 1 + \frac{1}{h_2} \left( 1 + \frac{1}{h_3} \left( 1+ \ldots \right)\right) \right) 
-x \gg 0
-g(x) = O \left( \frac{1}{x \log(x)} \right)
-    x \log(x) g(x) = h_1(x) g(x) = 1 + o(1) 

@@ -1,44 +1,0 @@
-\displaystyle\sum_{n=2}^{\infty}(-1)^{n}\ln\left(1-\frac{1}{n(n-1)}\right).
-\ln(1/2)-\ln(5/6)+\ln(11/12)-\ln(19/20)+\ln(29/30)-..............
-\ln(1/2)+\ln(11/12)+\ln(29/30)+......=\ln(\frac{1}{2}\cdot \frac{11}{12}\cdot \frac{29}{30}\cdot\cdot\cdot)
--(\ln(5/6)+\ln(19/20)+\ln(41/42)+......=-\ln(\frac{5}{6}\cdot \frac{19}{20}\cdot \frac{41}{42}\cdot\cdot\cdot) 
-\ln(\frac{1}{2}\cdot \frac{11}{12}\cdot \frac{29}{30}\cdot\cdot\cdot)-\ln(\frac{5}{6}\cdot \frac{19}{20}\cdot \frac{41}{42}\cdot\cdot\cdot)
-=\displaystyle \ln\left(\frac{\frac{1}{2}\cdot \frac{11}{12}\cdot \frac{29}{30}\cdot\cdot\cdot}{\frac{5}{6}\cdot \frac{19}{20}\cdot \frac{41}{42}\cdot\cdot\cdot}\right)
-n=2,4,6,....
-n=3,5,7,.....
-\frac{N(N-1)-1}{N(N-1)}
-\ln(1)=0
-\varphi=\frac{1+\sqrt{5}}{2},\Phi=\frac{1-\sqrt{5}}{2}
-\Gamma
-m\to\infty
-\log\prod_{n=1}^\infty \frac{1-\frac{1}{2n(2n-1)}}{1-\frac{1}{(2n+1)2n}}=\log\prod_{n=1}^\infty\frac{8n^3-4n-1}{8n^3-4n+1}
-=\log\prod_{n=1}^{m-1}\frac{n+1/2}{n-1/2}\frac{n-\varphi/2}{n+\varphi/2}\frac{n-\Phi/2}{n+\Phi/2}
-\log\left((2m+1)\frac{\Gamma(m-\varphi/2)\Gamma(-\varphi/2)^{-1}}{\Gamma(m+\varphi/2)\Gamma(\varphi/2)^{-1}}\frac{\Gamma(m-\Phi/2)\Gamma(-\Phi/2)^{-1}}{\Gamma(m+\Phi/2)\Gamma(\Phi/2)^{-1}}\right)
-\log\left(\frac{2\Gamma(\varphi/2)\Gamma(\Phi/2)}{\Gamma(-\varphi/2)\Gamma(-\Phi/2)}\right).
- \log\left(1 - \frac{1}{n(n-1)}\right) = \int_0^1 \frac{\mathrm{d} t}{n(1-n)+t}
-\sum_{n=1}^\infty \left(\frac{1}{n} -  \frac{1}{n+a}\right) = \gamma + \psi^{(0)}(a+1)
- \begin{eqnarray}    \sum_{n=2}^\infty \frac{(-1)^n}{n - n^2 + t} &=& \sum_{n=2}^\infty \frac{2 (-1)^n }{\sqrt{4 t+1}} \left(\frac{1}{2 n+\sqrt{4 t+1}-1}-\frac{1}{2 n-\sqrt{4    t+1}-1}\right) \\&=&  \frac{1}{2 \sqrt{4 t+1}} \left( \psi ^{(0)}\left(-\frac{1}{4} \sqrt{4 t+1}-\frac{1}{4}\right)-\psi    ^{(0)}\left(\frac{1}{4}-\frac{1}{4} \sqrt{4 t+1}\right) \right) \\   &+&  \frac{1}{2 \sqrt{4 t+1}}  \left(\psi    ^{(0)}\left(\frac{1}{4} \sqrt{4 t+1}+\frac{1}{4}\right)  -\psi    ^{(0)}\left(\frac{1}{4} \sqrt{4 t+1}-\frac{1}{4}\right)\right) \end{eqnarray} 
-\Gamma 
-\Gamma    
-\Gamma 
-\Gamma 
-\phi
-   \text{log$\Gamma $}\left(\frac{1}{2}-\frac{\phi}{2} \right)-\text{log$\Gamma    $}\left(-\frac{1}{2}+\frac{\phi }{2}\right)-\text{log$\Gamma $}\left(-\frac{\phi    }{2}\right)+\text{log$\Gamma $}\left(\frac{\phi }{2}\right)+\log (2) 
-\frac{\mathrm{d} t}{\sqrt{4 t+1}} = \mathrm{d}\left(\frac{\sqrt{4 t+1}}{2}\right)
-\int \psi^{(0)}(u) \mathrm{d} u = \log\Gamma(u) + C
-\Gamma
-\Gamma(1)=1
-\Gamma(x+1)=x\Gamma(x)
-0\le\alpha\le1
-(1)
-(2)
-(3)
-0\le\alpha\le1
-(4)
-\alpha
- \begin{align} \Gamma(x+\alpha) &\le\Gamma(x)^{1-\alpha}\Gamma(x+1)^\alpha\\ &=\Gamma(x)x^\alpha\tag{1} \end{align} 
- \begin{align} \Gamma(x)x^\alpha &=\Gamma(x+1)x^{\alpha-1}\\ &\le\Gamma(x+\alpha)^\alpha\Gamma(x+\alpha+1)^{1-\alpha}x^{\alpha-1}\\ &=\Gamma(x+\alpha)(x+\alpha)^{1-\alpha}x^{\alpha-1}\\ &=\Gamma(x+\alpha)(1+\alpha/x)^{1-\alpha}\tag{2} \end{align} 
- (1+\alpha/x)^{\alpha-1}\le\frac{\Gamma(x+\alpha)}{x^\alpha\Gamma(x)}\le1\tag{3} 
- \lim_{x\to\infty}\frac{\Gamma(x+\alpha)}{x^\alpha\Gamma(x)}=1\tag{4} 
- \begin{align} \frac{\Gamma(x+\alpha+k)}{x^k\Gamma(x+\alpha)} &=\frac{(x+\alpha)(x+\alpha+1)(x+\alpha+2)\dots(x+\alpha+k-1)}{x^k}\\ &\to1\text{ as }x\to\infty\tag{5} \end{align} 
- \begin{align} \frac{\Gamma(x+\alpha-k)}{x^{-k}\Gamma(x+\alpha)} &=\frac{x^k}{(x+\alpha-k)(x+\alpha-k+1)(x+\alpha-k+2)\dots(x+\alpha-1)}\\ &\to1\text{ as }x\to\infty\tag{6} \end{align} 

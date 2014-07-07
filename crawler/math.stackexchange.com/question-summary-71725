@@ -1,42 +1,0 @@
- t = - \frac{ \begin{vmatrix}1&1&1&1\\x_0&x_1&x_2&x_4\\y_0&y_1&y_2&y_4\\z_0&z_1&z_2&z_4\end{vmatrix}}{\begin{vmatrix}1&1&1&0\\x_0&x_1&x_2&(x_5-x_4)\\y_0&y_1&y_2&(y_5-y_4)\\z_0&z_1&z_2&(z_5-z_4)\end{vmatrix}} 
- V_0 = \hspace{2mm} \begin{array}{c} 0 \\ 0 \\ 0 \end{array} \hspace{5mm} V_1 = \hspace{2mm} \begin{array}{c} 0 \\ 5 \\ 0 \end{array} \hspace{5mm} V_2 = \hspace{2mm} \begin{array}{c} 0 \\ 0 \\ 5 \end{array} \hspace{15mm} V_4 = \hspace{2mm} \begin{array}{c} 10 \\ 1.5 \\ 1.5 \end{array} \hspace{5mm} V_5 = \hspace{2mm} \begin{array}{c} 5 \\ 1.5 \\ 1.5 \end{array} \hspace{5mm} 
- V_0 
- V_2 
- V_4 
- V_5 
-x, y,
-z
-P=\{(0,0,0)+s(0,5,0)+t(0,0,5)\}
-x=0, \qquad y=5s, \qquad z=5t
-L=\{(10,1.5,1.5)+r[(10,1.5,1.5)-(5,1.5,1.5)]\}=\{(10,1.5,1.5)+r(5,0,0)\}
-x=10+5r, \qquad y=1.5, \qquad z=1.5
-L
-(1,1,1)
-(2,-1,3)
-M
-(1,1,-2)
-(2,1,3)
-(0,1,1)
-L\cap M
-L=\{(1,1,1)+s(2,-1,3)\}
-M=\{(1,1,-2)+t(2,1,3)+r(0,1,1)\}
-s,t,
-r
-L
-M
-x=1+2s,  \qquad y=1-s, \qquad z=1+3s
-x=1+2t, \qquad y=1+t+r, \qquad z=-2+3t+r
-x, y
-z
-y=1-s \implies s=1-y
-x=1+2(1-y)=3-2y
-z=1+3(1-y)=4-3y
-s
-t
-x
-y
-z
--x-y+z=-4
--(3-2y)-y+(4-3y)=1-2y=-4 \implies y=\tfrac 5 2
-x=3-2(\tfrac 5 2 )=-2, \qquad z=4-3(\tfrac 5 2)=\tfrac 7 2
-(-2, \tfrac 5 2, \tfrac {-7} 2)

@@ -1,74 +1,0 @@
-X
-(n, \frac12)
-X
-\frac12
-X
-n
-X_n
-X
-n
-X_{n-1}
-n-1
-n-1
-n-1
-n
-n-1
-\frac12
-X_{n-1}
-P(X_{n-1}\ \text{odd})+ P(X_{n-1}\ \text{even})=1
-P(X_n\ \text{even}) =\frac12
-P(X_n\ \text{even}) = P(X_{n-1}\ \text{odd}) P(n\text{th coin head}) + P(X_{n-1}\ \text{even}) P(n\text{th coin tail})
-P(X_n\ \text{even}) = P(X_{n-1}\ \text{odd})\tfrac12+ P(X_{n-1}\ \text{even})\tfrac12
-n
-X \to n - X
-n
-X
-(n-1,1/2)
-a = 1 \circ 0^{n-1}
-a
-1
-n-1
-x \in \{0,1\}^n
-x \oplus a
-x
-x
-x \oplus a
-a
-x
-x \oplus a
-x
-x \oplus a
-E \oplus a \subseteq O
-O \oplus a \subseteq E
-|E| = |E \oplus a | \leqslant |O|
-|O| = |O \oplus a| \leqslant |E|
-|E| = |O|
-X
-Y
-X
-Y = 0
-X_1
-W
-0/1
-X_1
-\{0,1\}
-X_1 \oplus W
-\{0,1\}
-W = X_2 \oplus X_3 \oplus \cdots \oplus X_n
-Y = X_1 \oplus X_2 \oplus \cdots \oplus X_n
-\{0,1\}
-X
-\{ \text{even}, \text{odd} \}
-(n,p)
-X
-\frac{1}{2}
-p = \frac{1}{2}
-\frac{1}{2}
-n \to\infty
-p = 1
-0
-1
-n
- \begin{align*} \left((1-p) + p\right)^n &= \sum_{k=0}^n\binom{n}{k}p^k(1-p)^{n-k}\\ &= \sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n}{2k}p^{2k}(1-p)^{n-2k} +  \sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n}{2k+1}p^{2k+1}(1-p)^{n-(2k+1)}\\ &= P\{X~\text{even}\} + P\{X~\text{odd}\} \end{align*} 
- \begin{align*} \left((1-p)-p\right)^n &= \sum_{k=0}^n \binom{n}{k}(-p)^k(1-p)^{n-k}\\ &= \sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n}{2k}p^{2k}(1-p)^{n-2k} -  \sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n}{2k+1}p^{2k+1}(1-p)^{n-(2k+1)}\\ &= P\{X~\text{even}\} - P\{X~\text{odd}\} \end{align*} 
-P\{X~\text{even}\} = \frac{1}{2}(1 + (1-2p)^n)  = \frac{1}{2} + \frac{1}{2}(1-2p)^n

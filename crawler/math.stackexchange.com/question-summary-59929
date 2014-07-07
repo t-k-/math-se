@@ -1,59 +1,0 @@
-A=B=C=\mathbb{R}
-f\colon A\to B
-g\colon B\to C
-f(a)=2a+1
-g(b)=b/3
-(g\circ f)^{-1}=f^{-1}\circ g^{-1}.
-f^{-1}
-g^{-1}
-(g\circ f)
-a=f^{-1}(b)
-\begin{align*} \text{Let}\qquad\qquad b &= f(a)\\ a&= f^{-1}(b)\\ &{ }\\ b&=f(a)\\ b&=2a+1\\ \frac{b-1}{2} &= a\\ a &= \frac{b-1}{2} \end{align*}
-f^{-1}(b) = \frac{b-1}{2}.
-{}
-\begin{align*} \text{Let}\qquad\qquad a&=g(b)\\ b&= g^{-1}(a)\\ a&= g(b)\\ a &= b/3\\ b &= 3a\\ g^{-1}(a) &= 3a\qquad(\text{because }b=g^{-1}(a) \end{align*}
-{}
-\begin{align*} f^{-1}\circ g^{-1} &= ?\\ &= f^{-1}\Bigl( g^{-1}(a)\Bigr)\\ &= f^{-1}(3a)\\ f^{-1}\circ g^{-1} &= \frac{3a-1}{2} \end{align*}
-\begin{align*} g\circ f&= g\bigl(f(a)\bigr)\\ &= g(2a+1)\\ g\circ f &= \frac{2a+1}{3}\\ (g\circ f)^{-1} &= ?\\ \text{Let}\qquad\qquad &b=g\circ f \end{align*}
-f,g
-\begin{eqnarray*} b &=&f(a)=2a+1,  \end{eqnarray*}
-f^{-1}
-\begin{eqnarray*} &a=\frac{b-1}{2}=f^{-1}(b).\tag{A} \end{eqnarray*}
-\begin{eqnarray*} c &=&g(b)=\frac{b}{3},  \end{eqnarray*}
-g^{-1}
-\begin{eqnarray*} b=3c=g^{-1}(c),\tag{B} \end{eqnarray*}
-(A)
-(B)
-a=\frac{3c-1}{2}=(f^{-1}\circ g^{-1})(c).\tag{1}
-c=(g\circ f)(a)=g(f(a))=g(2a+1)=\frac{2a+1}{3}.\tag{2}
-c
-(g\circ f)^{-1}
-a=\frac{3c-1}{2}=(g\circ f)^{-1}(c).\tag{3}
-(1)
-(3)
-f,g
-f^{-1},g^{-1}
-(f^{-1}\circ g^{-1})(c)=(g\circ f)^{-1}(c).\tag{4}
-f^{-1}
-g^{-1}
-f^{-1}\circ g^{-1}
-(g\circ f)^{-1}
-(g\circ f)(a) = \frac{2a+1}{3}
-(g\circ f)^{-1}
-h^{-1}
-h(a) = \frac{2a+1}{3},
-g\circ f
-(g\circ f)^{-1} = f^{-1} \circ g^{-1}
-f
-g
-f
-a = g(b)
-c=g(b)
-c=b/3
-b=3c
-g^{-1}(c) = 3c.
-f^{-1}(b) = \frac{b-1}{2}.
-c = g(f(a)) = \dfrac{f(a)}{3} = \dfrac{2a+1}{3}
-c = \dfrac{2a+1}{3}
-a
- \begin{align} 3c & = 2a+1 \\ 3c - 1 & = 2a \\  \\ \frac{3c-1}{2} & = a. \end{align} 

@@ -1,7 +1,0 @@
-a_k
-p_n(x) = \sum_{k=0}^N a_k x^k 
-c_k
- p_n(x) = \sum_{k=0}^N c_k T_k(x)
-      c_k = \frac{2 - \delta_{k,0}}{\pi} \int_0^\pi \cos(k x) p_n(\cos(x)) \mathrm{d}x = \frac{2 - \delta_{k,0}}{\pi} \sum_{m=0}^n a_m \int_0^\pi \cos(k x) \cos^m(x) \mathrm{d}x 
- \begin{eqnarray} \cos^m(x) &=& \Re\left( \left( \frac{1}{2} \left(\mathrm{e}^{i x} + \mathrm{e}^{-i x} \right) \right)^m \right) = \Re\left(\frac{1}{2^m} \sum_{r=0}^m \binom{m}{r} \mathrm{e}^{i (r x - x (m-r) }\right)\\  &=& \frac{1}{2^m} \sum_{r=0}^m \binom{m}{r} \cos((2r-m)x) \end{eqnarray}
-\begin{eqnarray}     c_k &=& \frac{2 - \delta_{k,0}}{\pi} \sum_{m=0}^n \frac{a_m}{2^m}  \frac{\pi}{2-\delta_{k,0}} \sum_{r=0}^m \binom{m}{r} \delta_{k, | 2r-m |}  \\ &=& \sum_{m=0}^{n} \frac{a_m}{2^m} \left[ m + k \equiv 0 \mod 2 \right] \frac{1}{1+\delta_{k,0}}\left( \binom{m}{\frac{m+k}{2}} + \binom{m}{\frac{m-k}{2}} \right) \end{eqnarray}

@@ -1,29 +1,0 @@
-p
- \int\limits_0^{2\pi} \int\limits_0^\pi \int\limits_0^{2}  \frac{p^2\sin(\phi)}{\sqrt{p^2 + 3}} dp d\phi d\theta 
-P(x)
-n\geq 2
-Q(x)
-n-1
-C
-\int \frac{P(x)}{\sqrt{ax^{2}+bx+c}}\;\mathrm{d}x=Q(x)\sqrt{ax^{2}+bx+c}+\int \frac{C}{\sqrt{ax^{2}+bx+c}}\;\mathrm{d}x.
-\begin{eqnarray*} I &:&=\int_{\theta =0}^{2\pi }\int_{\phi =0}^{\pi }\int_{p=0}^{2}\frac{p^{2}\sin (\phi )}{\sqrt{p^{2}+3}}\;\mathrm{d}p\;% \mathrm{d}\phi \;\mathrm{d}\theta \\&=&\left( \int_{0}^{2\pi }\mathrm{d}\theta \right) \left( \int_{0}^{\pi }\sin(\phi)\;\mathrm{d}\phi\;\right)\left(\int_{0}^{2}\frac{p^{2}}{\sqrt{% p^{2}+3}}\;\mathrm{d}p\right) \\ &=&2\pi \left( \int_{0}^{\pi }\sin(\phi)\;\mathrm{d}\phi\;\right)\left(\int_{0}^{2}\frac{p^{2}}{\sqrt{% p^{2}+3}}\;\mathrm{d}p\right). \end{eqnarray*}
-\sin (\phi )
--\cos \left( \phi \right) 
-I =4\pi \int_{0}^{2}\frac{p^{2}}{\sqrt{p^{2}+3}}\;\mathrm{d}p.
-P(x)
-n\geq 2
-Q(x)
-n-1
-C
-\int \frac{P(x)}{\sqrt{x^{2}+c}}\;\mathrm{d}x=Q(x)\sqrt{x^{2}+c}+\int \frac{C}{\sqrt{% x^{2}+c}}\;\mathrm{d}x.
-P(x)=x^{2}
-Q(x)
-Q(x)=Ax+B
-\int \frac{x^{2}}{\sqrt{x^{2}+c}}\;\mathrm{d}x=\left( Ax+B\right) \sqrt{% x^{2}+c}+\int \frac{C}{\sqrt{x^{2}+c}}\;\mathrm{d}x.
-\begin{eqnarray*} \frac{x^{2}}{\sqrt{x^{2}+c}} &=&A\sqrt{x^{2}+c}+\frac{x\left( Ax+B\right) }{% \sqrt{x^{2}+c}}+\frac{C}{\sqrt{x^{2}+c}} \\ &=&\frac{1}{\sqrt{x^{2}+c}}\left[ A\left( x^{2}+c\right) +x\left( Ax+B\right) +C\right],  \end{eqnarray*}
-x^{2} =A\left( x^{2}+c\right) +x\left( Ax+B\right) +C=2Ax^{2}+Bx+Ac+C.
-A=1/2,\;B=0,\;C=-c/2
-\begin{eqnarray*} \int \frac{x^{2}}{\sqrt{x^{2}+c}}\;\mathrm{d}x &=&\frac{1}{2}x\sqrt{x^{2}+c}-% \frac{c}{2}\int \frac{1}{\sqrt{x^{2}+c}}\;\mathrm{d}x \\ &=&\frac{1}{2}x\sqrt{x^{2}+c}-\frac{c}{2}\ln \left( x+\sqrt{x^{2}+c}\right)  \end{eqnarray*}
-\int \frac{1}{\sqrt{x^{2}+c}}\;\mathrm{d}x=\ln \left( x+\sqrt{x^{2}+c}% \right)+\text{ constant}.
-\int_{0}^{2}\frac{p^{2}}{\sqrt{p^{2}+3}}\;\mathrm{d}p=\sqrt{7}-\frac{3}{2}%  \ln \left( 2+\sqrt{7}\right) +\frac{3}{2}\ln \left( \sqrt{3}\right).
-I=4\pi \left( \sqrt{7}-\frac{3}{2}\ln \left( 2+\sqrt{7}\right) +\frac{3}{2}\ln \left( \sqrt{3}\right) \right) .

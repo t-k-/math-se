@@ -1,7 +1,0 @@
- \int_{x=0}^{t}\int_{y=0}^{t}\min(x,y)dydx 
-\min \{x,y\}=\frac{x+y-\vert x-y\vert}{2}.
-x\ge y
-x<y
-\int_{x=0}^{t}\int_{y=0}^{t}\min(x,y)\,dy\,dx=\int_{x=0}^{t}\int_{y=0}^{x}y\,dy\,dx+\int_{x=0}^{t}\int_{y=x}^{t}x\,dy\,dx
-\min\{y,x\}=\begin{cases}y, ~~\text{when}~~ y \leq x \\x, ~~\text{when} ~~x \leq y\end{cases}
-\begin{align*}\int_o^t\int_0^t \min\{x,y\} \mathrm dy ~~\mathrm dx&=\int_0^t\left(\int_0^xy~\mathrm dy+\int_x^t x\mathrm dy\right)\mathrm d x\\&=\int_0^t\left(\dfrac{x^2}{2}+x(t-x)\right)\mathrm d x\\&=\dfrac{t^3}{6}+\dfrac{t^3}{2}-\dfrac{t^3}{3}\\&=\dfrac{t^3}{3}\end{align*}

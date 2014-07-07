@@ -1,40 +1,0 @@
-\mathcal{C}
-\mathcal{C'}
-L_v:\mathcal{C} \rightarrow \mathcal{C'}
-R_v:\mathcal{C'} \rightarrow \mathcal{C}
-(L_v,R_v)
-\epsilon_v: id_\mathcal{C} \rightarrow R_v L_v
-\eta_v: L_v \circ R_v  \rightarrow id_{\mathcal{C'}}
-\lambda
-\mu
-\varphi \in Hom_{Fct(\mathcal{C},\mathcal{C'})}(L_1,L_2)
-\psi \in Hom_{Fct(\mathcal{C}',\mathcal{C})}(R_2,R_1)
-Hom_{Fct(\mathcal{C},\mathcal{C'})}(L_1,L_2) \rightleftarrows^{\lambda}_{\mu} Hom_{Fct(\mathcal{C'},\mathcal{C})}(R_2,R_1)
-\lambda(\varphi):R_2 \rightarrow^{\epsilon_1 \circ R_2} R_1 \circ L_1 \circ R_2 \rightarrow^{R_1 \circ \varphi \circ R_2} R_1 \circ L_2 \circ R_2 \rightarrow^{R_1 \circ \eta_2} R_1
-\mu(\psi) : L_1 \rightarrow^{L_1 \circ \epsilon_2} L_1 \circ R_2 \circ L_2 \rightarrow^{L_1 \circ \psi \circ L_2} L_1 \circ R_1 \circ L_2 \rightarrow^{\eta_1 \circ L_2} L_2
-i=1,2
-X
-\mathcal C
-X'
-\mathcal C'
-b
- L_i:\mathcal C\to \mathcal C',\quad R_i:\mathcal C'\to \mathcal C 
- \varepsilon_i:\text{id}_{\mathcal C}\to R_iL_i,\quad\eta_i:L_iR_i\to\text{id}_{\mathcal C'} 
- a_i:\mathcal C'(L_iX,X')\to \mathcal C(X,R_iX') 
- \varphi:L_1\to L_2 
- \begin{matrix} &a_2&\\  \mathcal C'(L_2X,X')&\to&\mathcal C(X,R_2X')\\ &&&\\ \varphi(X)^*\downarrow&&\downarrow b\\ &&&\\ \mathcal C'(L_1X,X')&\to&\mathcal C(X,R_1X'),\\ &a_1& \end{matrix} 
-1.5.4
-a_2^{-1}f
-\varphi
-1.5.4
-\varepsilon_1
- \psi:R_2\to R_1 
- b=\psi(X')_*. 
- f:X\to R_2X' 
- a_2^{-1}f=\left[L_2X\xrightarrow{L_2f}L_2R_2X'\xrightarrow{\eta_2(X')}X'\right], 
- \varphi(X)^*a_2^{-1}f=\left[L_1X\xrightarrow{\varphi(X)}L_2X\xrightarrow{L_2f}L_2R_2X'\xrightarrow{\eta_2(X')}X'\right]. 
- \varphi(X)^*a_2^{-1}f=\left[L_1X\xrightarrow{L_1f}L_1R_2X'\xrightarrow{\varphi(R_2X')}L_2R_2X'\xrightarrow{\eta_2(X')}X'\right]. 
- a_1\,\varphi(X)^*a_2^{-1}f= 
- \left[X\xrightarrow{\varepsilon_1(X)}R_1L_1X\xrightarrow{R_1L_1f}R_1L_2R_2X'\xrightarrow{R_1\varphi(R_2X')}R_1L_2R_2X'\xrightarrow{R_1\eta_2(X')}R_1X'\right], 
- \left[X\xrightarrow{f}R_2X'\xrightarrow{\varepsilon_1(R_2X')}R_1L_1R_2X'\xrightarrow{R_1\varphi(R_2X')}R_1L_2R_2X'\xrightarrow{R_1\eta_2(X')}R_1X'\right]. 
- \psi(X')=\left[R_2X'\xrightarrow{\varepsilon_1(R_2X')}R_1L_1R_2X'\xrightarrow{R_1\varphi(R_2X')}R_1L_2R_2X'\xrightarrow{R_1\eta_2(X')}R_1X'\right]. 

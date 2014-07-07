@@ -1,10 +1,0 @@
-CS(x,y) := IS(x) \wedge IS(y) \wedge x \lt y \wedge \forall z: (x \lt z) \wedge (z \lt y)⇒\neg IS(z)
-IS(x)⇔ x=0 \vee x=1 \vee \exists y: \exists z: (CS(z,y) \wedge IS(y) \wedge (\forall z: (y < z \wedge z < x) ⇒ \neg IS(z)) \wedge x + z = y + y + 2)
-IS
-CS
-CS
-IS
-IS(x) ⇔x=0 \vee x=1 \vee  \exists y: \exists z:  (IS(z) \wedge IS(y) \wedge z \lt y \wedge \forall w: (z \lt w) \wedge (w \lt y)⇒\neg IS(w)) \wedge  IS(y) \wedge  (\forall z: (y < z \wedge z < x) ⇒ \neg IS(z)) \wedge  x + z = y + y + 2  
-0
-S(z) =z+1
- f(z) =  \begin{cases} 1 & (\exists x)(\exists y)[z = x^2 + y^2]\\ 0 & \text{otherwise} \end{cases} 

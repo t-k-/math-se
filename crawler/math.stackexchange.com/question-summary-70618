@@ -1,15 +1,0 @@
-x \to \infty
-k^2 = 0
-k\neq0
-d = 2
-\xi = |x| \eta
-  \int\limits_{\mathbb{R}^d} \frac{e^{i\xi x}}{\xi^2 + 2k\xi}d\xi = O\left(|x|^{-\frac{d-1}{2}} \right)  \;\;\; \; d\geqslant2, \;\;\; k\in \mathbb{C}^d 
-\int_0^\infty \exp(-t u) \mathrm{d} t = \frac{1}{u}
-u>0
-u = \xi^2 + 2 k \xi = (\xi + k)^2 -k^2 = (\xi+k)^2
- \begin{multline}   \int_{\mathbb{R}^d} \exp\left( i \xi x - t(\xi +k)^2\right) \mathrm{d} \xi =   \int_{\mathbb{R}^d} \exp\left( -t ( \xi + k - \frac{i}{2t} x)^2 - \frac{x^2}{4 t} - i k x \right) \mathrm{d} \xi = \\   \int_{\mathbb{R}^d} \exp\left( -t \zeta^2 - \frac{x^2}{4 t}  - i k x\right) \mathrm{d} \zeta =    \left( \frac{\pi}{t} \right)^{d/2}  \exp\left(- \frac{x^2}{4 t} - i k x\right)   \end{multline} 
-\mathcal{I}
-\Gamma
-d > 2
-   \mathcal{I} = \int_0^\infty \left( \frac{\pi}{t} \right)^{d/2}  \exp\left(- \frac{x^2}{4 t} - i k x \right)  \, \mathrm{d} t \, \stackrel{t = u^{-1}}=  \,  \pi^{d/2} \int_0^\infty u^{d/2 - 2}  \exp\left(- \frac{x^2}{4} u - i k x \right) \, \mathrm{d} u 
-  \mathcal{I} = (\pi)^{d/2} \mathrm{e}^{-i k x} \left(\frac{x^2}{4}\right)^{1-d/2} \Gamma\left(\frac{d}{2} -1\right) =  (\pi)^{d/2} \mathrm{e}^{-i k x} \left(\frac{\vert x \vert}{2}\right)^{2-d} \Gamma\left(\frac{d}{2} -1\right) 

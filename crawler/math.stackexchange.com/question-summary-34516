@@ -1,45 +1,0 @@
-L
-\int_0^{2\pi} \frac{d\theta}{(a^2 \cos^2 \theta +b^2\sin^2\theta)^{3/2}}
-\frac{ L}{(ab)^2}
-L
-J(a,b)=J(b,a)
-t=b \tan\theta
-1/4
-0
-\pi/2
-2\pi
-J(b,a)/(ab)^2
-J
-L/(ab)^2
- \frac{L}{4} = J(a,b) := \int_0^{\pi/2} \sqrt{a^2 \cos^2 \theta + b^2 \sin^2 \theta} \, d\theta 
- \sqrt{a^2 \cos^2 \theta + b^2 \sin^2 \theta} = \cos \theta \, \sqrt{a^2 + t^2}, \qquad  \cos \theta = \frac{b}{\sqrt{b^2 + t^2}}, \qquad d\theta = \frac{b}{b^2 + t^2} \, dt;
- J(a,b) = \int_0^\infty \frac{b^2 \, \sqrt{a^2 + t^2}}{(b^2 + t^2)^{3/2}} \, dt. 
- \frac{1}{b^2} \int_0^\infty \frac{\sqrt{b^2 + t^2}}{(a^2 + t^2)^{3/2}} \, dt, 
-a > b
-\int_0^{2\pi} \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}=\int_0^\pi \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}+\int_\pi^{2\pi} \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}
-=\int_0^\pi \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}+\int_0^{\pi} \frac{\mathrm d\theta}{(a^2 \cos^2(\theta+\pi)+b^2\sin^2(\theta+\pi))^{3/2}}
-=2\int_0^\pi \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}
-=2\int_{-\pi/2}^{\pi/2} \frac{\mathrm d\theta}{(a^2 \cos^2(\theta+\pi/2)+b^2\sin^2(\theta+\pi/2))^{3/2}}
-=2\int_{-\pi/2}^{\pi/2} \frac{\mathrm d\theta}{(a^2 \sin^2\theta +b^2\cos^2\theta)^{3/2}}
-=4\int_{-\pi/2}^0 \frac{\mathrm d\theta}{(a^2 \sin^2\theta +b^2\cos^2\theta)^{3/2}}
-=4\int_0^{\pi/2} \frac{\mathrm d\theta}{(a^2 \cos^2\theta +b^2\sin^2\theta)^{3/2}}
-=4\int_0^{\pi/2} \frac{\mathrm d\theta}{(a^2(1-\sin^2\theta)+b^2\sin^2\theta)^{3/2}}
-=4\int_0^{\pi/2} \frac{\mathrm d\theta}{(a^2-(a^2-b^2)\sin^2\theta)^{3/2}}
-=\frac4{a^3}\int_0^{\pi/2} \frac{\mathrm d\theta}{(1-m\sin^2\theta)^{3/2}}
-=\frac4{a^3}\int_0^{K(m)} \frac{\mathrm{dn}(u|m)\mathrm du}{(1-m\mathrm{sn}^2(u|m))^{3/2}}
-\sin(\mathrm{am}(u|m))=\mathrm{sn}(u|m)
-\mathrm{dn}^2(u|m)+m\mathrm{sn}^2(u|m)=1
-=\frac4{a^3}\int_0^{K(m)} \frac{\mathrm du}{\mathrm{dn}^2(u|m)}=\frac4{a^3}\int_0^{K(m)} \mathrm{nd}^2(u|m)\mathrm du
-\frac4{a^3}\frac{E(m)}{1-m}=\frac4{ab^2}E\left(1-\frac{b^2}{a^2}\right)
-\vec{dl}
-r,\hat{r},\vec{r}
-\vec{dl}
-r(\theta) = \frac{ab}{\sqrt{a^2\sin^2\theta+b^2\cos^2\theta}}
-\frac{\mu_0 I }{4\pi}\oint \frac{\vec{dl}\times\hat{r}}{r^2}
-a
-b
-d\theta = \frac{|\vec{dl}\times\hat{r}|}{r}
-\frac{\mu_0 I\hat{k} }{4\pi ab}\int_0^{2\pi}\sqrt{a^2\sin^2\theta+b^2\cos^2\theta}d\theta
-1-\frac{b^2}{a^2} = k^2
-\frac{\mu_0I\hat{k}}{\pi b}\int_0^{\pi/2}\sqrt{1-k^2 \sin^2\theta}d\theta
-=\frac{\mu_0 I L}{4A}

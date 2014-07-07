@@ -1,9 +1,0 @@
-X_1,X_2,..,X_n
-P(X_1)=0.005
-S_n:=X_1+...+X_n
-\theta \in \mathbb{R}
- l(a) := \sup[\theta a - \ln M(\theta)]
-M(\theta) := E[e^{\theta X_1}]
-\theta > 0
-\theta
-\begin{align} P\{S_N \geq k\} &= \sum_{i=k}^N \binom{N}{i}p^i(1-p)^{N-i}\\ &= \sum_{i=0}^N \binom{N}{i}p^i(1-p)^{N-i}\cdot \mathbf 1_{i\geq k}\\ &< \sum_{i=0}^N \binom{N}{i}p^i(1-p)^{N-i}\cdot e^{\theta(i-k)}  = e^{-\theta k}E[e^{\theta S_n}]\\ &= e^{-\theta k}(pe^\theta + 1-p)^N \end{align}

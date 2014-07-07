@@ -1,30 +1,0 @@
-\sqrt{1-cos^2(\theta)}
-\theta
-\cos(\theta)
-\frac{AB^2+BC^2-AC^2}{2AB\cdot BC}
-n
-O
-A
-B
-C
-D
-O
-A
-x
-B
-xy
- \begin{align} O &= (0,0,0) \\ A &= (x_a,0,0) \\ B &= (x_b,y_b,0) \\ C &= (x_c,y_c,z_c) \\ D &= (x_d,y_d,z_d) \end{align} 
- \begin{align} OA\;\; &= x_a \\ OB^2 &= x_b^2 + y_b^2 \\ OC^2 &= x_c^2 + y_c^2 + z_c^2 \\ OD^2 &= x_d^2 + y_d^2 + z_d^2 \\ AB^2 &= ( x_a - x_b )^2 + y_b^2 = OA^2 + OB^2 - 2 \; OA \; x_b \\ AC^2 &= ( x_a - x_c )^2 + y_c^2 + z_c^2 = OA^2 + OC^2 - 2 \; OA \; x_c \\ AD^2 &= ( x_a - x_d )^2 + y_d^2 + z_d^2 = OA^2 + OD^2 - 2 \; OA \; x_d \\ BC^2 &= ( x_b - x_c )^2 + ( y_b - y_c )^2 + z_c^2 = OB^2 + OC^2 - 2 x_b x_c - 2 y_b y_c \\ BD^2 &= ( x_b - x_d )^2 + ( y_b - y_d )^2 + z_d^2 = OB^2 + OD^2 - 2 x_b x_d - 2 y_b y_d \\ CD^2 &= ( x_c - x_d )^2 + ( y_c - y_d )^2 + ( z_c - z_d )^2 = OC^2 + OD^2 - 2 x_c x_d - 2 y_c y_d - 2 z_c z_d \end{align} 
-x
-y
-z
-x_b
-x_c
-x_d
-\begin{align} x_b &= \frac{1}{2 \; OA} \left( OA^2 + OB^2 - AB^2 \right) \\ x_c &= \frac{1}{2 \; OA} \left( OA^2 + OC^2 - AC^2 \right) \\ x_d &= \frac{1}{2 \; OA} \left( OA^2 + OD^2 - AD^2 \right) \\ \end{align}
- \begin{align} y_b^2 &= OB^2 - \hat{x}_b^2 \\ y_c^2 &= OC^2 - \hat{x}_c^2 - z_c^2 \\ y_d^2 &= OD^2 - \hat{x}_d^2 - z_d^2 \\ 2 y_b y_c &= OB^2 + OC^2 - BC^2 - 2 \hat{x}_b \hat{x}_c =: [OBC] - 2 \hat{x}_b \hat{x}_c \\ 2 y_b y_d &= OB^2 + OD^2 - BD^2 - 2 \hat{x}_b \hat{x}_d =: [OBD] - 2 \hat{x}_b \hat{x}_d \\ 2 y_c y_d &= OC^2 + OD^2 - CD^2 - 2 \hat{x}_c \hat{x}_d - 2 z_c z_d =: [OCD] - 2 \hat{x}_c \hat{x}_d - 2 z_c z_d \end{align}
-\begin{align} 4 \left( OB^2 - \hat{x}_b^2 \right)\left( OC^2 - \hat{x}_c^2 - z_c^2 \right) &= \left( [OBC] - 2 \hat{x}_b \hat{x}_c \right)^2 \\ 4 \left( OB^2 - \hat{x}_b^2 \right) \left( OD^2 - \hat{x}_d^2 - z_d^2 \right) &= \left( [OBD] - 2 \hat{x}_b \hat{x}_d \right)^2 \\ 2 y_c y_d = \frac{2 (2 y_b y_c) ( 2 y_b y_d )}{4 y_b^2} &= \\ \frac{\left( [OBC] - 2 \hat{x}_b \hat{x}_c\right)\left( [OBD] - 2 \hat{x}_b \hat{x}_d \right)}{2\left( OB^2 - \hat{x}_b^2\right)^2 } &= [OCD] - 2 \hat{x}_c \hat{x}_d - 2 z_c z_d  \end{align} 
-z_c^2
-z_d^2
-z_c z_d
-z_c^2 z_d^2 = ( z_c z_d )^2

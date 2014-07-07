@@ -1,80 +1,0 @@
-n
-p
-X
-X
-np
-X
-n
-p
-X
- p_X(k)= {n\choose k} \cdot  p^k (1-p)^{n-k}= {n!\over (n-k)! k!} p^k (1-p)^{n-k},\quad k=0,1,2,\ldots,n. 
-X
-\eqalign{ {P(X=k+1)\over P(X=k)}&= {  {n!\over (n-(k+1))! (k+1)!} p^{k+1} (1-p)^{n-(k+1)}   } \cdot   { (n-k)! k!\over n!} {1\over p^k (1-p)^{n-k}}\cr &=    {n-k\over k+1} {p\over(1-p)} } 
-X
-n
-p
- P(X=k+1)=  {n-k\over k+1} {p\over(1-p)} P(X=k). 
-p_X(k+1)\ge p_X(k)
-p_X(k+1)\ge p_X(k)
-p_X(k+1)\ge p_X(k)
- {n-k\over k+1}\ge{1-p\over p }. 
- p(n-k) \ge(1-p)(k+1). 
- np \ge (1-p)(k+1) +pk 
- (1-p)(k+1) +pk = k +1 -p. 
- np \ge k+1-p. 
- k\le p(n+1)-1. 
-p_X(k)
-k
-(n+1)p
-p_X(k)
-p_X(n)=p^n
-p_X(0)=(1-p)^n
-np
-f(k) = {n \choose k} p^k (1-p)^{n-k}
-k
-f(k)/f(k-1)
- {f(k) \over f(k-1)} = {{n \choose k} \over {n \choose k-1}} {p^k \over p^{k-1}} {(1-p)^{n-k} \over (1-p)^{n-k+1}} 
-p
-1-p
- {{n \choose k} \over {n \choose k-1}} {p \over 1-p}. 
- {{n \choose k} \over {n \choose k-1}} = {n! \over k! (n-k)!} {(k-1)! (n-k+1)! \over n!} = {n! \over n!} {(k-1)! \over k!} {(n-k+1)! \over (n-k)!} = {n-k+1 \over k}. 
- {f(k) \over f(k-1)} = {n-k+1 \over k} {p \over 1-p}. 
-k
-k
-1
-1
-f(0), f(1), \ldots, f(n)
-f(k) \ge f(k-1)
-k \le np+p = (n+1)p
-f(k)
-k
-\lfloor (n+1)p \rfloor
- {n-k+1 \over k} {p \over 1-p} \ge 1 
- (n-k+1)p \ge k(1-p) 
- np-kp+p \ge k-kp 
- np+1 \ge k 
-k = 1/3, p = 6
-f(k) \ge f(k-1)
-k \le (6+1)/3
-f(2) \ge f(1)
-f(3) \le f(2)
-f(0), \ldots, f(6)
-0.088, 0.263, 0.329, 0.219, 0.082, 0.016, 0.001
-(n+1)p
-k = (n+1)p
-f(k)/f(k-1) = 1
-(n+1)p
-(n+1)p-1
-p  = 1/2
-n
-n = 5
-2
-3
-f(0), f(1), f(2), \ldots, f(n)
-0
-n
-0
-p > 1/2
-n
-p < 1/2
-p = 1/2

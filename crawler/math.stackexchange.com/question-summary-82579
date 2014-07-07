@@ -1,57 +1,0 @@
-\
- when she/he wins a match in the 
-th round. Develop and solve a recurrence relation for 
-, the total amount of money given away in a tournament with 
- entrants, where 
- is assumed to be a power of 
-n
-2
-2n
-n
-n/2
-\
-.  So if 
- is the distribution of a tournament of 
- players, 
-.  It would be easier to think in terms of 
-, the number of rounds of the tournament.  Using 
- to avoid confusion, 
-2^n
-2^{n-1}
-2^{n-1}
-1 \times 100 \times 2^{n-1}
-2^{n-1}
-2^{n-2}
-2 \times 100 \times 2^{n-2}
-2^{n-2}
-2^{n-3}
-3 \times 100 \times 2^{n-3}
-k
-k^{\text{\th}}
-k \times 100 \times 2^{n-k}
-k = 1, \dots, n
-\text{Total}(n+1)
-T(n)
-T(n+1) = (n+1)100 + 2T(n)
- \text{Total}(n) = \sum_{k=1}^n \, (k \times 100 \times 2^{n-k}) = 2^n \times 100 \times \left( \sum_{k=1}^n \frac{k}{2^k} \right). 
- \begin{align} \text{Total}(n+1)= 2^{n+1} \times 100 \times \left( \sum_{k=1}^{n+1} \frac k{2^k} \right) \\ = 2^{n+1} \times 100 \times \left( \sum_{k=1}^{n} \frac k{2^k} + \frac{n+1}{2^{n+1}} \right) \\ = (n+1) \times 100  + 2 \times 2^n \times 100 \times \left( \sum_{k=1}^n \frac k{2^k} \right) \\ = (n+1) \times 100 + 2 \,\, \text{Total}(n) \\ \end{align} 
-T(n)
-2^n
-2^n
-2^{n+1}
-P
-Q
-2^n
-1
-T(n)
-2T(n)
-2^{n+1}
-2^n
-2^{n-1}
-k
-n
-2^{n+1-n}=2
-(n+1)
-100(n+1)
-\frac{2^{n+1}}{2^k}=2^{n+1-k}
-T(n+1)=2T(n)+100(n+1)\;.

@@ -1,9 +1,0 @@
-\lambda
- E[W] = E[E[W|X=x]] 
-E[W|X=x] = \begin{cases} 0, & \text{if }x\geq T \\ x + E[W], & \text{if } x < T \end{cases}
-E[E[W|X=x]] = \int_0^\infty E[W|X=x] * \lambda e^{-\lambda x}dx
- = \int_0^T E[W|X=x] * \lambda e^{-\lambda x} + \int_T^\infty E[W|X=x] * \lambda e^{-\lambda x}
-E[W|X=x]
-E[W|X=x] = 0 
-X \geq T, correct? 
-E[W] = \int_0^T (x + E[W]) * \lambda e^{-\lambda x} 

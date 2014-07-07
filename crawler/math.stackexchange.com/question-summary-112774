@@ -1,66 +1,0 @@
-P
-Q
-P
-Q
-Q
-Q
-Q
-Q
-(R\to \neg R) \to \neg R.
-P
-\neg Q
-Q
-P
-\neg Q\to Q
-R
-\neg Q
-(\neg Q\to \neg(\neg Q))\to \neg\neg Q.
-\begin{align*} 1.&&P,\neg Q&\vdash Q&\text{(what we are assuming we can prove)}\\ 2.&&P&\vdash \neg Q\to Q &\text{(Deduction Theorem)}\\ 3.&&P&\vdash ((\neg Q\to \neg\neg Q)\to \neg\neg Q) &\text{(Tautology)}\\  4.&&P&\vdash \neg\neg Q\leftrightarrow Q &\text{(Tautology)}\\ 5.&&P&\vdash (\neg Q\to Q)\to Q &\text{(by substitution of 4 in 3)}\\ 6.&&P&\vdash Q &\text{(Modus ponens, 2,5)}\\ 7.&&&\vdash P\to Q &\text{(Deduction Theorem)} \end{align*}
-W_1\subseteq W_2
-W_1\cup W_2=W_2\neq V
-W_1
-W_2
-W_1\not\subseteq W_2
-W_2\subseteq W_1
-W_1\cup W_2=W_1\neq V
-W_2\not\subseteq W_1
-w_1\in W_1-W_2
-w_2\in W_2-W_1
-w_1+w_2\notin W_1
-w_1\in W_1
-w_2\notin W_2
-w_1+w_2\notin W_2
-w_2\in W_2
-w_1\notin W_1
-w_1+w_2\notin W_1\cup W_2
-w_1+w_2\in V-(W_1\cup W_2)
-V\neq W_1\cup W_2
-V=W_1\cup W_2
-V\neq W_1\cup W_2
-\Box
-P
-\neg Q
-Q
-\sim Q
-(P\wedge \sim Q) \to Q
-P
-Q
-\neg Q
-0=1
-2
-0=2
-0=1
-1\ne 2
-0
-0=1
-0=2
-Q
-R
-R=Q
-\neg Q
-R
-Q
-\neg Q
-Q
-Q
-Q\implies \lnot Q

@@ -1,28 +1,0 @@
-U_{1}, \, ... \, ,U_{n}
-U_i \sim \mathrm{Uniform}(0,1)
-U_{(1)}, \, ... \, , U_{(n)}
- W = U_{(s)}-U_{(r)} \sim \textrm{Beta}(s-r, \, n - s + r +1) \qquad 1 \leq r < s \leq r  
-U_{(r)}, U_{(s)}
- f_{U_{(r)}, U_{(s)}} (u, v) = \frac{n!}{(r-1)!(s-1-r)!(n-s)!} u^{r-1} (v-u)^{s-1-r} (1 -v)^{n-s} \cdot \textbf{1}_{\{u < v\}}  
-  \begin{Bmatrix} W = U_{(s)} - U{(r)}  & U_{(r)} = Z \\ Z = U_{(r)} & U_{(s)} = W + Z \\ \end{Bmatrix} 
- f_{W,Z}(w,z) = \frac{n!}{(r-1)!(s-1-r)!(n-s)!} z^{r-1} w^{s-1-r} (1 - w  - z)^{n-s}  
- f_W(w) = \int_{S} f_{W,Z}(w,z) \, \textrm{d}z 
-w
-S = \{z  \, : \, 0 \leq z \leq 1 - w\}
- f_W(w) = \frac{n!}{(r-1)!(s-1-r)!(n-s)!} w^{s-1-r} \int_{0}^{1-w} z^{r-1}(1-w-z)^{n-s} \, \textrm{d} z 
- \int_{0}^{1-w} z^{r-1}(1-w-z)^{n-s} \, \textrm{d} z= \frac{\Gamma(r)\Gamma(n-s+1)}{\Gamma(n+r-s+1)} (1- w)^{n+r-s} 
-W
-W
-W
-U_{(r)}, U_{(s)}
-u=(1-w)v
-f_W(w)
-C
-w^{s-1-r}
-(1-w)^{n+r-s}
-C
-f_W
-1
-v
-0
-1

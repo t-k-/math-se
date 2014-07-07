@@ -1,35 +1,0 @@
-A \setminus ( B \setminus C ) \equiv ( A \setminus B) \cup ( A \cap C )
-A \setminus ( B \setminus C )
-x \in A \wedge x \notin ( B \setminus C )
-x \in A \wedge ((x \in B \wedge x \in C) \vee (x \notin B \wedge x \in C) \vee (x \notin B \wedge x \notin C) )
- ( A \setminus B) \cup ( A \cap C ) 
- x \in ( A \setminus B) \cup ( A \cap C ) 
- x \in ( A \setminus B) \vee x \in ( A \cap C ) 
- ( x \in A \wedge x \notin B ) \vee ( x \in A \wedge x \notin C ) 
- x \in A \wedge (x \notin B \vee x \notin C ) 
- x \in A \wedge x \notin ( B \cap C ) 
- A \setminus ( B \cap C ) 
-x\in B\setminus C \iff x\in B\land x\not\in C
-x\not\in B\setminus C\iff x\not\in B\lor x\in C
-x
- \begin{align*} x\in A\setminus (B\setminus C) &\iff x\in A \land (x\not\in B\setminus C)\\ &\iff x\in A \land (x\not\in B\lor x\in C). \end{align*} 
- \begin{align*} x\in (A\setminus B)\cup (A\cap C) &\iff x\in A\setminus B\lor x\in A\cap C\\ &\iff (x\in A\land x\not\in B)\lor (x\in A\land x\in C)\\ &\iff x\in A\land (x\not\in B\lor x\in C). \end{align*} 
-A \setminus ( B \setminus C ) = ( A \setminus B) \cup ( A \cap C )
-x
-A,B,C
-(A\cup B)^c = A^c\cap B^c
-A\setminus B = A\cap B^c
-A\cup (B\cap C) = (A\cup B)\cap(A\cup C)
-A\cap (B\cup C) = (A\cap B)\cup(A\cap C)
- A\setminus(B\setminus C) = A\setminus (B \cap C^c) = A\cap (B\cap C^c)^c = A\cap(B^c\cup C) = (A\cap B^c)\cup(A\cap C) 
-\cdot ^c
-A,B,C
-X
- \chi_A : X \to \{0,1\}, \ \chi_A(x)=\begin{cases}1, & x \in A \\ 0, &x \notin A \end{cases} 
-\chi_{A\cap B}=\chi_A \chi_B, \chi_{A\cup B}= \chi_A+\chi_B-\chi_{A\cap B}, \chi_{A\setminus B}=\chi_A-\chi_A\chi_B
- \chi_{A\setminus(B\setminus C)}=\chi_A-\chi_A\chi_{B\setminus C}=\chi_A-\chi_A(\chi_B-\chi_B\chi_C)=\chi_A-\chi_A\chi_B+\chi_A\chi_B\chi_C
- \chi_{(A\setminus B)\cup (A\cup C)}=\chi_{A\setminus B}+\chi_{A\cap C}-\chi_{A\setminus B}\chi_{A\cap C}=
-=\chi_A-\chi_A\chi_B+\chi_A\chi_C-(\chi_A-\chi_A\chi_B)\chi_A \chi_C=
-= \chi_A-\chi_A \chi_B+\chi_A\chi_C+\chi_A\chi_B\chi_C=\chi_A-\chi_A\chi_B+\chi_A\chi_B\chi_C,
-\chi_A^2=\chi_A
-A\Delta (B \Delta C)=(A \Delta B)\Delta C

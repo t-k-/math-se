@@ -1,8 +1,0 @@
-X_0=0
-B(t)
-\theta>0
- dX_t = -\theta X_tdt + dB(t) 
- X_t=B(t) - \theta \exp(-\theta t)\int_0^t\exp(\theta s)B(s)ds 
-X_t = \exp(-\theta t)\int_0^t\exp(\theta s)dB(s)
-\exp(\theta t) \cdot B_t = \int_0^t \exp(\theta s) \, dB_s + \theta \int_0^t \exp(\theta s) B_s \, ds,
- \int_0^t \exp(\theta s) \, dB_s  = \exp(\theta t) \cdot B_t - \theta \int_0^t \exp(\theta s) B_s \, ds.

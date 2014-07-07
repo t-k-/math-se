@@ -1,17 +1,0 @@
-f \in {\mathbb N}_0^m
-L(f)
-v \in \{1,\ldots,m\}^n
-|\{i: v_i = j\}| \le f_j
-j
-\sum_{i=1}^m f_i \ge n
-= f_j
-\le f_j
-\sum_{i=1}^m f_i = n
-N(f) = \frac{n!}{f_1! f_2! \ldots f_j!}
-L(f) = \sum_h N(h)
-h \in {\mathbb N}_0^m
-h \le f
-\sum_i h_i = n
-a_j = \max\left( 0, n - \sum_{k=1}^{j-1} h_k - \sum_{k=j+1}^m f_k \right)
-b_j = \min\left(f_j, n - \sum_{k=1}^{j-1} h_k\right)
- L(f) = \sum_{h_1 = a_1}^{b_1} \sum_{h_2 = a_2}^{b_2} \ldots \sum_{h_m = a_m}^{b_m}  \frac{n!}{h_1! h_2! \ldots h_m!}

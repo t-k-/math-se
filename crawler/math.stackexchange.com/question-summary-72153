@@ -1,27 +1,0 @@
-S_N = \sum_{n=1}^N e^{2\pi i f(n)}
-H\le N
-c>0
-N
-H
-f
-|S_N|^2 \le c \frac NH \sum_{h=0}^H\,  \left|\,\sum_{n=1}^{N-h} e^{2\pi i(f(n+h)- f(n))} \right|
-a_n = e^{2\pi if(n)}
-1\le n\le N
-0
-H\;\sum_n a_n = \sum_{h=1}^H \sum_n a_{n+h}
-\begin{align} |S_N|^2 &= \frac 1{H^2} \left| \sum_{h=1}^H \sum_n a_n \right|^2 \\  &\leq  \frac1H \sum_{h=1}^H \left|\sum_n a_{n+h} \right|^2 \\ &= \frac1H \sum_{h=1}^H \sum_{n,m} a_{n+h}\overline{a_{m+h}} \end{align}
-n
-1-H\leq n\leq N-1
-a_{n+k}\overline{a}_{n+j}
-k-j
-e^{2\pi i(f(n+h)-f(n))}
-a_{n+h}\overline{a}_n
-H-1
- HS_N=H\sum_na_n=\sum_{k=1}^H\sum_na_{n+k}=\sum_n\sum_{k=1}^Ha_{n+k}. 
-\begin{align*} H^2|S_N|^2 &= \left|\sum_n\sum_{k=1}^Ha_{n+k}\right|^2\leq (N+H-1)\sum_n\left|\sum_{k=1}^Ha_{n+k}\right|^2\\ &= (N+H-1)\sum_n\sum_{k=1}^H\sum_{j=1}^Ha_{n+k}\overline{a}_{n+j}\\ &= (N+H-1)\sum_{k=1}^H\sum_{j=1}^H\sum_na_{n+k}\overline{a}_{n+j}. \end{align*}
-\begin{align*} \sum_{k=1}^H\sum_{j=1}^H\sum_na_{n+k}\overline{a}_{n+j} &= H\sum_n|a_n|^2+ 2\text{Re}\,\left(\sum_{h=1}^{H-1}(H-h)\sum_na_{n+h}\overline{a}_{n+h}\right)\\ &\leq 2\sum_{h=0}^{H-1}(H-h)\left|\sum_na_{n+h}\overline{a}_{n+h}\right|. \end{align*} 
- \begin{align*} |S_N|^2& \leq 2\left(\frac{N+H-1}{H}\right)\sum_{h=0}^{H-1}\left(1-\frac{h}{H}\right)\left|\sum_na_{n+h}\overline{a}_{n}\right|\\ &\leq 2\frac{N}{H-1}\sum_{h=0}^{H-1}\left|\sum_na_{n+h}\overline{a}_{n}\right|. \end{align*} 
-\begin{align*} \sum_{k=1}^H\sum_{j=1}^H\sum_na_{n+k}\overline{a}_{n+j} &= \sum_{1\leq j\leq k\leq H}\sum_na_{n+k}\overline{a}_{n+j}\\ &\qquad + \sum_{1\leq k<j\leq H}\sum_na_{n+k}\overline{a}_{n+j}, \end{align*} 
- \begin{align*} \sum_{1\leq j\leq k\leq H}\sum_na_{n+k}\overline{a}_{n+j} &= \sum_{1\leq j\leq k\leq H}\sum_na_{n+k-j}\overline{a}_{n}\\ &= \sum_{0\leq k-j\leq H-j\leq H-1}\sum_na_{n+k-j}\overline{a}_n\\ &= \sum_{0\leq h\leq H-j\leq H-1}\sum_na_{n+h}\overline{a}_n\\ &= \sum_{h=0}^{H-1}\sum_{j=1}^{H-h}\sum_na_{n+h}\overline{a}_n\\ &= \sum_{h=0}^{H-1}(H-h)\sum_na_{n+h}\overline{a}_n. \end{align*} 
- \begin{align*} \sum_{1\leq k<j\leq H}\sum_na_{n+k}\overline{a}_{n+j} &= \sum_{h=1}^{H-1}(H-h)\sum_na_n\overline{a}_{n+h}. \end{align*}
-\begin{align*} \sum_{k=1}^H\sum_{j=1}^H\sum_na_{n+k}\overline{a}_{n+j} &= H\sum_n|a_n|^2+ 2\text{Re}\,\left(\sum_{h=1}^{H-1}(H-h)\sum_na_{n+h}\overline{a}_{n+h}\right). \end{align*}

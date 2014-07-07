@@ -1,53 +1,0 @@
-^{t}(A \cdot B) = ^{t}B \cdot ^{t}A
-A \in M_{m,n}, B \in M_{n, p}
-(i,j)
-(AB)^T
-(j,i)
-AB
-\sum \limits_k a_{jk}b_{ki}
-(i,j)
-B^TA^T
-\sum \limits_k b_{ki}a_{jk}
-i
-B^T
-i
-B
-j
-A^T
-j
-A
-(i,j)
-AB
-\sum \limits_k a_{ik}b_{kj}
-k
-i
-A
-j
-B
- \overbrace{\left[\matrix{a_{11}&a_{12}&a_{13} \cr  \color{maroon}{a_{21}}&\color{maroon}{a_{22}}&\color{maroon}{a_{23}} \cr  a_{31}&a_{32}&a_{33} \cr  }\right]}^A \overbrace{ \left[\matrix{b_{11}&b_{12}&\color{maroon}{b_{13}} \cr  b_{21}&b_{22}&\color{maroon}{b_{23}} \cr  b_{31}&b_{32}&\color{maroon}{b_{33}} \cr  }\right]}^B = \underbrace{ \left[\matrix{  \cdot & \cdot  & \cdot \cr   \cdot & \cdot  & \color{maroon}{ a_{21}b_{13}+  a_{22}b_{23}+  a_{23}b_{33} } \cr     \cdot & \cdot  & \cdot \cr  }\right]}_{AB} 
- \phantom{ \overbrace{\left[\matrix{a_{11}&a_{12}&a_{13} \cr  \color{maroon}{a_{21}}&\color{maroon}{a_{22}}&\color{maroon}{a_{23}} \cr  a_{31}&a_{32}&a_{33} \cr  }\right]}^A \overbrace{ \left[\matrix{b_{11}&b_{12}&\color{maroon}{b_{13}} \cr  b_{21}&b_{22}&\color{maroon}{b_{23}} \cr  b_{31}&b_{32}&\color{maroon}{b_{33}} \cr  }\right]}^B=}  \underbrace{ \left[\matrix{  \cdot & \cdot  & \cdot \cr   \cdot & \cdot  & \cdot \cr     \cdot &  \color{maroon}{ a_{21}b_{13}+  a_{22}b_{23}+  a_{23}b_{33} } & \cdot \cr  }\right]}_{[AB]^T} 
- \underbrace{ \left[\matrix{b_{11}&b_{21}&b_{31} \cr  {b_{12}}&{b_{22}}&{b_{32}} \cr  \color{maroon}{b_{13}}&\color{maroon}{b_{23}}&\color{maroon}{b_{33}} \cr  }\right]}_{B^T} \underbrace{ \left[\matrix{a_{11}&\color{maroon}{a_{21}}& {a_{31}} \cr  a_{12}&\color{maroon}{a_{22}}& {a_{32}} \cr  a_{13}&\color{maroon}{a_{23}}& {a_{33}} \cr  }\right]}_{A^T} = \underbrace{ \left[\matrix{  \cdot & \cdot  & \cdot \cr   \cdot & \cdot  & \cdot \cr     \cdot & \color{maroon}{  a_{21}b_{13}+  a_{22}b_{23}+  a_{23}b_{33} } & \cdot \cr  }\right]}_{B^TA^T} 
-A
-B
-r_1,.., r_n
-A
-c_1,..,c_n
-B
-ij
-(AB)^T
-ji
-AB
-r_j \cdot c_i
-ij
-B^TA^T
-i
-B^T
-j
-A^T
-i
-B
-j
-A
-c_i \cdot r_j
-r_j\cdot c_i =c_i \cdot r_j 
-(AB)^T=B^TA^T \,.

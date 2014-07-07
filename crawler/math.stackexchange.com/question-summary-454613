@@ -1,9 +1,0 @@
-u
-x
-\beta
-L(w,u)=\frac{1}{2}\|w-u\|^2+\beta \|\frac{w}{x}\|,~w,u\in R^n
-\frac{w}{x}=(\frac{w_1}{x_1},\dots, \frac{w_n}{x_n})
-\|x\|=\sqrt{x_1^2+\cdots+x_n^2}
-\arg\min_{w\in R^n}L(w,u)
- L(w,u)=\frac{1}{2}\|w-u\|^2+\beta \|\frac{w}{x}\| =\frac{1}{2}\sum_{i=1}^n (w_i-u_i)^2+\beta\sqrt{ \sum_{i=1}^n \frac{w_i^2}{x_i^2}} 
-  \frac{\partial L}{\partial w_k}=w_k-u_k+\beta\frac{w_k/x_k^2}{\sqrt{ \sum_{i=1}^n \frac{w_i^2}{x_i^2}}}=0, \qquad k=1,2,\cdots,n 

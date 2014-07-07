@@ -1,69 +1,0 @@
-A = [A_{ij}]
-n\times n
-\sigma_k
-k=1,\ldots, n
-A^\dagger
-A
- \mathrm{Tr}(A^\dagger A) = \sum_{i,j=1}^{n}|A_{ij}|^2 = \sum_{k=1}^n\sigma^2_k=1 \>, 
-A
-\newcommand{\Atr}{A^{\dagger}}B = \Atr A
-a_{ij}
-(i,j)
-A
-B
-b_{ii}
-b_{ii} \geq b_{i+1,i+1} \geq 0
-1 \leq i < n
-s_k = \sum_{i=1}^k b_{ii}
-k
-b_{ii}
-i
-b_{ii} = \sum_{j=1}^n |a_{ji}|^2
-i
-A
-k
-|a_{ij}|^2
-k
-k
-A
-k
-b_{ii}
-s_k
-1 \leq k \leq n
-\sum_{i=1}^n b_{ii} = \sum_{i=1}^n \sum_{j=1}^n |a_{ij}|^2
-B
-B = Q \Lambda Q^*
-Q
-\Lambda
-(\lambda_i)
-I_k
-k \times k
-\zmat
-(n-k) \times k
-\newcommand{\Tr}{\mathrm{Tr}} s_k = \Tr(J_k^T B J_k) 
-\newcommand{\zmat}{\mathbf{0}} J_k = \left(\begin{matrix} I_k \\ \zmat \end{matrix}\right) 
- \Tr(J_k^T B J_k) = \Tr(J_k^T Q \Lambda Q^* J_k) = \Tr(Q^* J_k J_k^T Q \Lambda) \>. 
-Q^* J_k J_k^T Q
-k
-n-k
- s_k = |s_k| = |\Tr(J_k^T B J_k)| \leq \sum_{i=1}^k 1 \cdot \lambda_i = \sum_{i=1}^k \lambda_i \> . 
-k \leq n
-A_{ij}
-|\psi\rangle=\sum_{ij}A_{ij}|i\rangle|j\rangle
-\{|i\rangle\}
-\{|j\rangle\}
-k
-|A_{ij}|^2
-(i,j)\in I_k
-I_k
-k
-\{ (i,j)|i,j=1,\ldots,n \}
- \sum_{(i,j)\in I_k}|A_{ij}|^2 = \sum_{(i,j)\in I_k}\textrm{Tr}(|i\rangle\langle i|\otimes |j\rangle\langle j| |\psi\rangle\langle\psi|) 
- \sum_{i:\exists j s.t. (i,j)\in I_k}\textrm{Tr}(|i\rangle\langle i|\otimes I |\psi\rangle\langle\psi|)=\textrm{Tr}_1(\sum_{i:\exists j s.t. (i,j)\in I_k}|i\rangle\langle i|\textrm{Tr}_2(|\psi\rangle\langle\psi|)) 
-I
-\textrm{Tr}_2(|\psi\rangle\langle\psi|)
-A
-|\psi\rangle
- \textrm{Tr}_1(\sum_{i:\exists j s.t. (i,j)\in I_k}|i\rangle\langle i|\textrm{Tr}_2(|\psi\rangle\langle\psi|))\leq \max_{P_k} \textrm{Tr}_1(P_k\textrm{Tr}_2(|\psi\rangle\langle\psi|))=\sum_{i=1}^k\sigma_k^2, 
-k
-k

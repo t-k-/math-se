@@ -1,6 +1,0 @@
- f(t,B_t)=(1-t) \int_0^t\frac{1}{1-s}dB_s 
-X_t = \int_0^t \frac{\mathrm{d}B_s}{1-s}
-\mathrm{d}X_t = \frac{1}{1-t} \mathrm{d}B_t
-W_t = (1-t) X_t
-    \mathrm{d} W_t = \left(\frac{\partial ((1-t)X_t))}{\partial t} + \underbrace{0}_{\text{drift}} \frac{\partial ((1-t)X_t))}{\partial X_t} + \frac{1}{2} \left(\underbrace{\frac{1}{1-t}}_\text{diffusion}\right)^2 \underbrace{\frac{\partial^2 ((1-t)X_t))}{\partial X_t^2}}_0 \right) \mathrm{d}t + \frac{\partial ((1-t)X_t)}{\partial X_t} \mathrm{d}X_t 
-    \mathrm{d}W_t = -X_t  \mathrm{d}t + (1-t) \mathrm{d} X_t = -\frac{W_t}{1-t} \mathrm{d}t +  \mathrm{d} B_t 

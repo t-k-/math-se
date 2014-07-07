@@ -1,34 +1,0 @@
-X
-Y
-(-1,1)
-0 \le r \le 1
-1/4
-r
-\pi r^2/4
-1 <r < \sqrt{2}
-4
-4
-2\arccos(1/r)
-2\sqrt{r^2-1}
-1
-4
-\pi r^2
-4
-r>\sqrt{2}
-1
-4\left[r^2\arccos(1/r)-\sqrt{r^2-1}\right]
-\pi r^2/4 + \sqrt{r^2-1} -r^2\arccos(1/r)
-Z=X^2+Y^2
-Z \le z
-r=\sqrt{z}
-Z
-\,dy $$ where 
- is a density function of 
-, i.e. $$ f_Y(y) = \frac{1}{2}I_{[-1,1]}(y), $$ where 
- is an indicator function which is equal to 
- on 
- and 
- otherwise. So $$ F_R(r) = \frac{1}{2}\int\limits_{-1}^1 P(X^2\leq r^2 - y^2)\,dy. $$ The function in the last integral I you can find easily. With this you have answer to 1) and also 
- F_R(r) = P(X^2+Y^2\leq r^2) = P(X^2\leq r^2 - Y^2) = \int\limits_{-\infty}^\infty P(X^2\leq r^2 - y^2)f_Y(y)$\,dy 
- f_Y(y) = \frac{1}{2}I_{[-1,1]}(y), 
- F_R(r) = \frac{1}{2}\int\limits_{-1}^1 P(X^2\leq r^2 - y^2)\,dy. 

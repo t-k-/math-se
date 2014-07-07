@@ -1,37 +1,0 @@
- \int {\sqrt{x^2 + 81} \over 2} \,dx 
-\frac 12 \int (x^2 +81)^{1/2}\, dx
-x = 9 \tan{t}
-x^{2}+81 = 81(\tan^{2}(t)+1) = 81 \cdot \sec^{2}(t)
- \int \sqrt{x^2+81} dx 
- \int u(x)v^{'}(x) dx = u(x)v(x) - \int v(x)u^{'}(x) dx
-v^{'}(x) = 1
- I = \int \sqrt{x^2+81} dx
- \begin{align*}   I &= x \sqrt{x^2+81} - \int \frac{x^2}{\sqrt{x^2+81}} dx\\   &= x \sqrt{x^2+81} -  \int \frac{x^2+81-81}{\sqrt{x^2+81}} dx\\   &= x \sqrt{x^2+81} - I + 81 \int \frac{1}{\sqrt{x^2+81}} dx \end{align*} 
- 2I = x \sqrt{x^2+81} +81  \int \frac{1}{\sqrt{x^2+81}} dx
-u(x) = \sqrt{x^2+81}
-v(x) = x
-v^{'}(x) = 1
- u^{'}(x) = \frac{1}{2}\left(x^2+81\right)^{-\frac{1}{2}} \times 2x = \frac{x}{\sqrt{x^2+81}}
- \begin{align*} \int \sqrt{x^2+81} dx  &= \int u(x) v^{'}(x) \\   &= u(x)v(x) - \int u^{'}(x) v(x) dx\\   &= x \sqrt{x^2+81} -  \int \frac{x^2+81-81}{\sqrt{x^2+81}} dx\\   &= x \sqrt{x^2+81} - \int \sqrt{x^2+81} \hspace{3pt} dx +  \int \frac{81}{\sqrt{x^2+81}} dx\\  \end{align*} 
-a^2+x^2 = x^2+81 = 9^2+x^2
-x = 9\tan(\theta)
-dx = 9\sec^2\theta d\theta
-1/2 \int \sqrt{9^2+9^2\tan^2(\theta)} 9\sec^2 \theta d\theta =
-27/2 \int \sqrt{1+\tan^2(\theta)} \sec^2 \theta d\theta =
-27/2 \int  \sec^3 \theta d\theta 
-\int \frac{P(x)}{\sqrt{ax^{2}+bx+c}}\;\mathrm{d}x=Q(x)\sqrt{ax^{2}+bx+c}+\int \frac{C}{\sqrt{ax^{2}+bx+c}}\;\mathrm{d}x.
-1/2
-Q(x)=Ax+B
-A
-B
-x=9u
- \begin{equation*} I(x):=\int \sqrt{x^{2}+81}dx=\int \frac{x^{2}+81}{\sqrt{x^{2}+81}}\mathrm{d}x=Q(x) \sqrt{x^{2}+81}+\int \frac{C}{\sqrt{x^{2}+81}}\mathrm{d}x, \end{equation*}
-\begin{eqnarray*} \frac{x^{2}+81}{\sqrt{x^{2}+81}} &=&A\sqrt{x^{2}+81}+\frac{2x\cdot \left( Ax+B\right) }{2\sqrt{x^{2}+81}}+\frac{C}{\sqrt{x^{2}+81}} \\ &=&\frac{2Ax^{2}+Bx+81A+C}{\sqrt{x^{2}+81}} \end{eqnarray*}
-\begin{eqnarray*} 2A &=&1\Leftrightarrow A=\frac{1}{2} \\ B &=&0 \\ 81A+C &=&81\Leftrightarrow C=\frac{81}{2}. \end{eqnarray*}
- \begin{equation*} I(x)=\frac{1}{2}x\sqrt{x^{2}+81}+\frac{81}{2}\int \frac{1}{\sqrt{x^{2}+81}}\mathrm{d}x.\end{equation*}
-\begin{eqnarray*} \int \frac{1}{\sqrt{x^{2}+81}}dx &=&\int \frac{1}{\sqrt{u^{2}+1}}\mathrm{d}u \\ &=&\operatorname{arcsinh} u=\operatorname{arcsinh}\frac{x}{9}+\text{Constant}. \end{eqnarray*}
-\int{\sqrt{x^2 + a^2}} dx
-x= a\tan\theta
-dx=a \ \sec^2\theta \space d\theta
-\int{\sqrt{x^2 + a^2}} dx=\space\frac{x}{2}\sqrt{x^2 + a^2}+\frac{a^2}{2}\arctan{\frac{x}{a}}+ C
-\int {\sqrt{x^2 + 81} \over 2} \,dx= \int \sqrt{x^2 + 9^2} \,dx=\frac{x}{2}\sqrt{x^2 + 9^2}+\frac{81}{2} \arctan{\frac{x}{9}+C}

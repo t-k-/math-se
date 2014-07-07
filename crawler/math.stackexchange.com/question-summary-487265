@@ -1,6 +1,0 @@
-Y_1(t)=t^2 X(t)
-Y_2(t)=-2 X'(t)
-C_{YY}(t,s) \neq C_{Y_1 Y_1}(t,s) + C_{Y_2 Y_2}(t,s)
-C_{X,X'}(t,s)=E[(X(t)-E[X(t)])(\lim_{h\rightarrow0}{X(s+h)-E[X(s+h)] -(X(s)-E[X(s)])})=\lim_{h\rightarrow0}\frac{C_{X,X'}(t,s+h)-C_{X,X'}(t,s)}{h}=\frac{\partial C_{X,X}(t,s)}{\partial s}
-C_{Y,Y}(t,s)=C_{Y_1,Y_1}(t,s)+C_{Y_2,Y_2}(t,s)+C_{Y_1,Y_2}(t,s)+C_{Y_1,Y_2}(s,t)
-C_{Y_1,Y_1}(t,s)=(st)^2C_{X,X}(t,s) \\ C_{Y_2,Y_2}(t,s)=4C_{X,X}\frac{\partial^2 C_{X,X}(t,s)}{\partial t\partial s} \\ C_{Y_1,Y_2}(t,s)=-2t^2\frac{\partial C_{X,X}(t,s)}{\partial s}

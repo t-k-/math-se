@@ -1,96 +1,0 @@
-A
-A = \left(\begin{array}{cc} 41 & 12\\ 12 & 34 \end{array}\right).
-B^2
-U
-A = U^T U
-50,25
-(4,3),(-3,4)
-A=\begin{pmatrix}4 & -3 \\ 3 & 4\end{pmatrix} \begin{pmatrix}50 & 0 \\ 0 & 25\end{pmatrix} \begin{pmatrix}4 & -3 \\ 3 & 4\end{pmatrix}^{-1}.
-A=Q\Lambda Q^{-1}
-B^2
-B
-Q\Lambda^{1/2} Q^{-1}
-B=\begin{pmatrix}4 & -3 \\ 3 & 4\end{pmatrix} \begin{pmatrix}\sqrt{50} & 0 \\ 0 & \sqrt{25}\end{pmatrix} \begin{pmatrix}4 & -3 \\ 3 & 4\end{pmatrix}^{-1}
-=\frac{1}{5}\begin{pmatrix}9+16\sqrt{2} & -12+12\sqrt{2} \\ -12+12\sqrt{2} & 16+9\sqrt{2}\end{pmatrix}.
-\sqrt{50}=5\sqrt{2},\sqrt{25}=5
-2\times 2
-\begin{pmatrix}a&b\\c&d\end{pmatrix}^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
-A
-U
-A=U^TU
-A=\begin{pmatrix} a&0 \\ b&c \end{pmatrix} \cdot  \begin{pmatrix} a&b \\ 0&c \end{pmatrix} 
-a^2=41
-a=\sqrt{41}
-ab=12
-b=\frac{12}{41}\sqrt{41}
-b^2+c^2=34
-c=25\sqrt{\frac{2}{41}}
-U=\sqrt{41}\begin{pmatrix}1&\frac{12}{41}\\0&\frac{25}{41}\sqrt{2}\end{pmatrix}. 
-X^2-({\rm tr}X)X+(\det X)I=0
-2\times2
-X
-X^2=A
-\det X=\pm\sqrt{\det A}=r
-r
-({\rm tr}X)^2 = {\rm tr}\left(({\rm tr}X)X\right) = {\rm tr}(A+rI) = {\rm tr}A + 2r
-(\ast)
-A
-\det A\ge0
-{\rm tr}A + 2\sqrt{\det A}>0
-A
- (\ast):\quad ({\rm tr}X)X=X^2+rI=A+rI 
- X = \frac{1}{\sqrt{{\rm tr}A + 2r}}(A+rI)\quad {\rm where}\quad r=\sqrt{\det A}. 
-\alpha
-u
-v
-\chi_A(x)=\det(xI-A)
-\alpha=1/2
-A
-t=\sqrt{uv}
-t=\sqrt{\det A}
-s=\sqrt{u}+\sqrt{v}
-s^2=u+v+2t
-\chi_A(x)=(x-41)(x-34)-12^2=(x-25)(x-50)
-\sqrt{u}=5\sqrt2
-\sqrt{v}=5
- A^\alpha=\frac{(u^\alpha-v^\alpha)A+(uv^\alpha-vu^\alpha)I}{u-v}, 
- \sqrt{A}=\frac{A+\sqrt{uv}I}{\sqrt{u}+\sqrt{v}}. 
- s=\sqrt{\text{tr}(A)+2\sqrt{\det(A)}}. 
-\lambda
-\mu
-2
-2
-A
-\lambda=\mu
-\lambda
-\mu
-n
-n
-T
-n
-n
-\lambda_i
-m(i)
-A
-f(z)
-\{ \lambda_1,\dots,\lambda_k \}
-T
-p(X)=(X-\lambda_1)^{m(1)}\cdots(X-\lambda_k)^{m(k)}
-\mathbb C[X]
-A
-\mathbb C[T]=\mathbb C[X]/(p(X))
-f(z)\mapsto f(T)
-f(z)
-A
-f(T)
-\mathbb C[X]
-\deg p(X)
-\sum_{i=1}^k\ \ \underset{X=\lambda_i}\heartsuit\left( \Big(\ \underset{z=\lambda_i}\heartsuit f(z) \Big)\ \  \frac{(X-\lambda_i)^{m(i)}}{p(X)}\ \right)\  \frac{p(X)}{(X-\lambda_i)^{m(i)}}
-\underset{u=\lambda_i}\heartsuit\varphi(u):=\sum_{j=0}^{m(i)-1}\frac{\varphi^{(j)}(\lambda_i)}{j!}\ (X-\lambda_i)^j.
-\lambda_i
-T
-f(\lambda_i)
-f(T)
-\frac{\mathbb C[X]}{(p(X))}=\prod_{i=1}^k\ \  \frac{\mathbb C[X]}{(X-\lambda_i)^{m(i)}}\quad,
-a,b,c,d
-\pmatrix{a&b\cr c&d\cr}^2=\pmatrix{41&12\cr12&34\cr}

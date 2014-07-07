@@ -1,118 +1,0 @@
- f(a,a)=1 
- f(0,a)=0 
- f(a,b)=a \cdot f(a,b-1)+f(a-1,b-1) 
- P(M,N)=\frac{f(M-1,N-1)}{f(M,N)} 
-i
-\sum_jp_ip_{ij}=p_j\;,
-p_i
-p_{ij}
-i
-j
-M+N
-M=1
-1
-N\ge M
-M
-N
-1/M
-M
-1
-M'=M-1,N'=N-1
-M'=M,N'=N-1
-M
-M-1
-M-1
-M
-1
-1/(M-1)
-1/M
-0
-i
-g_i
-g_i'
-g
-g'
- \begin{eqnarray} 1\cdot g_0+\frac1Mg_1+\frac1M\sum_{i>1}g_i &=& g\,\,\,\text{(untruncated),}\\ 1\cdot g_1'+\frac1M\sum_{i>1}g_i' &=& g'\,\,\,\text{(truncated).} \end{eqnarray} 
-Mg_0=(M-1)g_1
- 1\cdot g_1+\frac1M\sum_{i>1}g_i=g\;. 
-M
-f(M,N)
-f(M-1,N-1)
-Mf(M,N-1)
-M
-f(M,N)=f(M-1,N-1)+Mf(M,N-1)
-f(M-1,N-1)/f(M,N)
-f(0,N)=0
-f(N,N)=1
-1
-p
-p=S(n-1,m-1)/S(n,m)
-S(\cdot,\cdot)
-S(n,k)
-[n]:=\{1,2,\ldots, n\}
-k
-m
-n\equiv 0
-n
-1
-\ldots
-n-1
-n
-n
-[n]
-m
-n^{\rm th}
-n
-S(n,m)
-[n]
-m
-S(n-1,m-1)
-[n]
-n
-N,M
-1
-N
-N
-M
-M!
-\#S= M! \; S(N,M)
-S_h
-\#S_h = M (M-1)! \; S(N-1,M-1) = M! \; S(N-1,M-1)
-p = \frac{\#S_h}{\#S} = \frac{S(N-1,M-1)}{S(N,M)}
-N-1
-p \approx (1 - \frac{1-p}{M})^{N-1} \approx e^{-r(1-p)}
-M=2
-\frac{1}{2^{N-1}-1}
-1
-0
-N-2
-N-2
-N-2
-N-1
-N-1
-\frac{1}{2}
-\frac{1}{4}
-\frac{1}{2^{N-3}}
-N-2
-\frac{1}{2^{N-1}}
-N-1
-r
-r=\frac{N-2}{2^{N-2}}+\frac{N-1}{2^{N-1}}+\sum_{i=1}^{N-3}\frac{i+1+r}{2^i}+\frac{N-1+r}{2^{N-1}}
-\frac{3}{2^{N-1}}r=3-\frac{N}{2^{N-3}}+\frac{N-2}{2^{N-2}}+\frac{N-1}{2^{N-1}}+\frac{N-1}{2^{N-1}}
-r=2^{N-1}-2
-1
-2^{N-1}-1
-1
-N-1
-1
-N-1
-k
-0.5
-k-1
-0.5
-N-1
-N=6
-1
-(1,2,4,8,16)^T
-\frac{1}{31}
-\left(\begin {array} {c c c c c} 0&.5&0&0&0\\0&0&.5&0&0\\0&0&0&.5&0\\0&0&0&0&.5\\1&.5&.5&.5&.5\end{array}\right)

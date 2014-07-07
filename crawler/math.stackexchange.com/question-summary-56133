@@ -1,34 +1,0 @@
-M\times M
-M
-N
-N/6
-N\times N
-4\times 4
-X
-\begin{array}{cccc}   1 & 2 & 3 & 4\\  5 & 6 & 7 & 8\\  9 & 1 & 2 & 3\\  4 & 5 & 6 & 7\\ \end{array}
-2\times 2
-0+0+0+1=1
-\begin{matrix} 0 & 0 \\ 0 & 1\end{matrix}
-\hskip-0.3in \begin{array}{ccccc}  \fbox{$\begin{matrix} 0 & 0 \\ 0 & 1\end{matrix}$}\!\!\!\! & {\atop 2} & {\atop 3} & {\atop 4}\\  \begin{matrix} \hphantom{0} & 5\end{matrix}\!\!\!\! & 6 & 7 & 8\\  \begin{matrix} \hphantom{0} & 9\end{matrix}\!\!\!\! & 1 & 2 & 3\\  \begin{matrix} \hphantom{0} & 4\end{matrix}\!\!\!\! & 5 & 6 & 7\\ \end{array}
-0+0+1+2=3
-\begin{matrix} 0 & 0 \\ 1 & 2\end{matrix}
-\begin{array}{cccc}  \fbox{$\begin{matrix} 0 & 0 \\ 1 & 2\end{matrix}$}\!\!\!\!\!\! & {\atop 3} & {\atop 4} \\  \begin{matrix} 5 & 6\end{matrix}\!\!\!\!\!\! & 7 & 8\\  \begin{matrix} 9 & 1\end{matrix}\!\!\!\!\!\! & 2 & 3\\  \begin{matrix} 4 & 5\end{matrix}\!\!\!\!\!\! & 6 & 7\\ \end{array}
-5
-7
-X
-(N+1)\times(N+1)
-Y
-\begin{matrix}  1 & 3 & 5 & 7 & 4\\ 6 & 14& 18&22 & 12\\ 14 & 21 & 16&20 & 11\\ 13 & 19& 14& 18&10 \\ 4 & 9& 11&13 & 7 \end{matrix}
-N\times N
-X
-(N+1)\times(N+1)
-Y
-M\times M
-Y(i,j) = \sum_{\substack{i'=0\text{ to }M-1 \\ j'=0\text{ to }M-1}} X(i-i',j-j'),
-X(i,j) = Y(i,j) - \sum_{\substack{i'=0\text{ to }M-1 \\ j'=0\text{ to }M-1 \\ (i,j) \neq (0,0)}} X(i-i',j-j').
-X(1,1) = Y(1,1)
-N\times N
-X(1,1)
-X(1,2) = Y(1,2) - X(1,1)
-X(1,3) = Y(1,3) - \ldots
-X

@@ -1,35 +1,0 @@
-E[e^{tX}]=\frac{1}{2^{r/2}\Gamma(r/2)}\int_0^\infty x^{(r-2)/2}e^{-x/2}e^{tx}dx.
-(1-2t)^{(-r/2)}.
- \begin{align} & {}\qquad E[e^{tX}]=\frac{1}{2^{r/2}\Gamma(r/2)}\int_0^\infty x^{(r-2)/2}e^{-x/2}e^{tx}\;dx  \\  \\  \\ & = \frac{1}{2^{r/2}\Gamma(r/2)}\int_0^\infty x^{(r-2)/2}e^{x(t-(1/2))}\;dx \\  \\  \\ & = \frac{1}{2^{r/2}\Gamma(r/2)}\int_0^{-\infty} \left(\frac{u}{t-\frac12}\right)^{(r-2)/2}(e^u)\left(\frac{du}{t-\frac12}\right) \\  \\  \\ & = \frac{1}{2^{r/2}\Gamma(r/2)} \frac{1}{(t-\frac12)^{r/2}} \int_0^{-\infty} u^{(r-2)/2} e^u \; du. \end{align} 
- 2^{r/2} \left(t-\frac12\right)^{r/2} = (2t-1)^{r/2}. 
-x
-0
-+\infty
-u
-0
--\infty
-t-\frac12
-w=-u
-u=-w
-du=-dw
-u
-0
--\infty
-w
-0
-+\infty
-\dfrac{u}{t-\frac12}
-u
-t-\frac12
-\dfrac{u}{\frac12-t}
-x
-u
-0
-+\infty
-e^{x(t-\frac12)}
-e^{-u}
-\Gamma(r/2)
-t < \frac{1}{2}
-x = (1-2 t) y
-y
- \int_0^\infty x^{(r-2)/2} \mathrm{e}^{-x/2}\mathrm{e}^{t x}\mathrm{d}x =  \int_0^\infty x^{r/2} \mathrm{e}^{-\frac{(1-2 t) x}{2}} \, \frac{\mathrm{d}x}{x} =  \left(1-2 t\right)^{-r/2} \int_0^\infty y^{r/2} \mathrm{e}^{-\frac{t}{2}}  \, \frac{\mathrm{d}y}{y} 

@@ -1,47 +1,0 @@
-V_1,...,V_n
-\mathrm{Beta}(1,\alpha)
-X_i = V_i \prod_{j=1}^{i-1} (1-V_j)
-i=1,...,n
-E[X_i]
-P(X_i > t)
-t
-V_i
- E(X_i) = E(V_i) \prod_{j=1}^{i-1} (1-E(V_j)) 
-E(V_i) = 1/(1+\alpha)
- E(X_i) = {1 \over 1+\alpha} \left( {\alpha \over 1 + \alpha} \right)^i 
-P(X_i > t)
- \log X_i = (\log V_i) + \sum_{j=1}^{i-1} \log (1-V_j). 
-i
-\beta
-\alpha
-V_0
-(1, \beta)
-\{V_i \colon 1 \leq i \leq n\}
-n
-(\beta, 1)
-n+1
-V_0
-\beta(1-v_0)^{\beta - 1}\mathbf{1}_{(0,1)}
-V_i
-i > 0
-\beta v_i^{\beta - 1}\mathbf{1}_{(0,1)}
-n+1
-X = V_0V_1\cdots V_n
-P\{X> t\}
-V
-(n+1)
-v_i < 1
-v_0v_1\cdots v_n > t
-v_i > t
-i
-v_1, \ldots, v_{n-1} \in (0, 1)
-v_0v_1\cdots v_{n-1} > t
-v_0
-v_0 = t/v_1\cdots v_n
-1
- E[X] = E[V_0V_1\cdots V_n] = \prod_{i=0}^n E[V_i]  = \left( \frac{1}{1 + \beta} \right ) \left( \frac{\beta}{1 + \beta} \right )^n 
- \begin{align*} P\{X > t\} &= \int \int \cdots \int_{v_0 = t/v_1\cdots v_n}^1 \beta(1-v_0)^{\beta - 1} \mathrm dv_0  \prod_{i=1}^n \beta v_i^{\beta - 1} \mathrm dv_i\\ &= \int \int \cdots \int \left (1 - \frac{t}{v_1\cdots v_n}\right)^{\beta} \beta^n (v_1\cdots v_n)^{\beta - 1}\mathrm dv_1 \cdots \mathrm dv_n\\ &= \int \int \cdots \int \beta^n  \frac{(v_1\cdots v_n - t)^{\beta}}{v_1\cdots v_n} \mathrm dv_1 \cdots \mathrm dv_n \end{align*} 
-(n+1)
-t < v_i < 1 \colon 0 \leq i \leq n
-0 < t < 1
- \begin{align*} P\{X > t\} &< \int_t^1 \int_t^1 \cdots \int_t^1 \beta (1-v_0)^{\beta - 1}\mathrm dv_0 \prod_{i=1}^n \beta v_i^{\beta - 1} \mathrm dv_i\\ &= (1-t)^{\beta}(1 - t^{\beta})^n \end{align*} 

@@ -1,25 +1,0 @@
-P_X(k) = (1-p)^{k-1}p
-q = 1 -p
-E[X] = \sum_{k=1}^{\infty}k(1-p)^{k-1}p\;.
-E[X] = p + 2qp + 3q^2p + 4q^3p + \dotso 
-P_{X|X>1}(k) = \begin{cases}(1-p)^{k-2}p\text{ if }k > 1\\ 0\text{ if }k = 1\end{cases}
-E[X|X>1] = \sum_{k=2}^{\infty}k(1-p)^{k-2}p\;,
-E[X|X>1] + 1 = 1 + 2p + 3qp +  4q^2p + \dotso
-E[X|X>1] = E[X] + 1
-P_X(k)
-\sum_{k=1}^\infty(1-p)^{k-1}p=\sum_{k=2}^\infty(1-p)^{k-2}p=1\;.
- \begin{eqnarray} E[X|X>1] &=& \sum_{k=2}^{\infty}k(1-p)^{k-2}p \\ &=& \sum_{k=2}^{\infty}(k-1)(1-p)^{k-2}p+\sum_{k=2}^{\infty}(1-p)^{k-2}p \\ &=& \sum_{k=1}^{\infty}k(1-p)^{k-1}p+1 \\ &=& E[X] + 1 \end{eqnarray} 
-k+1
-k
-k
-k+1
-p
-q=1-p
-p\ne 0
-X
-X
-E(X)
-E(X)=1/p
-X
-X\ge\text{any particular integer}
-X+\text{that same integer}

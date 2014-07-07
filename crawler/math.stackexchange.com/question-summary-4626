@@ -1,29 +1,0 @@
-C_{n}=A_{n}+A_{n-1}w_{n}
-D_{n}=B_{n}+B_{n-1}w_{n}
-C_{-1}=1,D_{-1}=0.
-n\geq 1
-\lambda_{n}=a_{n}-w_{n-1}(b_{n}+w_{n})\neq 0
-c_{n}=a_{n-1}\lambda_{n}/\lambda_{n-1},
-d_{n}=b_{n}+w_{n}-w_{n-2}\lambda_{n}/\lambda _{n-1},
-n\geq 2,
-\underset{n=1}{\overset{\infty }{\mathbb{K}}}(a_{n}/b_{n})=w_{0}+\dfrac{\lambda_{1}}{b_{1}+w_{1}+\underset{n=1}{\overset{\infty }{\mathbb{K}}}(c_{n}/d_{n})}.
-\underset{n=1}{\overset{\infty }{\mathbb{K}}}\left( n^{2}t/\left( \left( n+1\right) -kt\right) \right) =\dfrac{t}{2+\underset{n=3}{\overset{\infty }{% \mathbb{K}}}\left( \left( n-2\right) ^{2}t/\left( n-\left( n-3\right) t\right) \right) }.
-\log (1+t)=\displaystyle\sum_{n=1}^{\infty }\dfrac{(-1)^{n-1}t^{n}}{n}=\dfrac{t}{1+% \underset{n=1}{\overset{\infty }{\mathbb{K}}}\left( n^{2}t/\left( \left( n+1\right) -nt\right) \right) },
-\log (1+t)=\dfrac{t}{1+\dfrac{t}{2+\underset{n=3}{\overset{\infty }{\mathbb{% K}}}\left( \left( n-2\right) ^{2}t/\left( n-\left( n-3\right) t\right) \right) }}.
-c_n
-c_n
-C_{n-1}D_n-D_{n-1}C_n=(A_{n-1}B_{n-2}-A_{n-2}B_{n-1})\lambda_n.
-C_{n-2}D_{n-1}-D_{n-2}C_{n-1}=(A_{n-2}B_{n-3}-A_{n-3}B_{n-2})\lambda_{n-1}.
-n\ge 2
-c_n=\dfrac{C_{n-1}D_n-D_{n-1}C_n}{-(C_{n-2}D_{n-1}-D_{n-2}C_{n-1})}=\dfrac{(A_{n-1}B_{n-2}-A_{n-2}B_{n-1})\lambda_n}{-(A_{n-2}B_{n-3}-A_{n-3}B_{n-2})\lambda_{n-1}}.
-A_{n-1}B_{n-2}-A_{n-2}B_{n-1}=-a_{n-1}(A_{n-2}B_{n-3}-A_{n-3}B_{n-2}).
-c_n=a_{n-1}\dfrac{\lambda_n}{\lambda_{n-1}}.
-d_{n}=b_{n}+w_{n}-w_{n-2}\lambda_{n}/\lambda_{n-1}
-d_{n}=\dfrac{C_{n}D_{n-2}-D_{n}C_{n-2}}{C_{n}D_{n-1}-D_{n}C_{n-1}}\qquad\text{for}\quad n\ge 2
-\begin{equation} A_{n}B_{n-1}-A_{n-1}B_{n}=\left( -1\right) ^{n-1}a_{1}a_{2}\cdots a_{n}  \nonumber \end{equation}
-\begin{equation} A_{n}B_{n-2}-A_{n-2}B_{n}=\left( -1\right) ^{n}b_{n}a_{1}a_{2}\cdots a_{n-1} \end{equation}
-\begin{equation} A_{n}B_{n-3}-A_{n-3}B_{n }=(-1)^{n-1}a_{1}a_{2}\cdots a_{n -2}\left( b_{n}b_{n-1}+a_{n}\right)    \end{equation}
-\begin{eqnarray} &&\left( A_{n}+w_{n}A_{n-1}\right) \left( B_{n-1}+w_{n-1}B_{n-2}\right)   \\ &&-\left( A_{n-1}+w_{n-1}A_{n-2}\right) \left( B_{n}+w_{n}B_{n-1}\right)  \\ &=&-\left( -1\right) ^{n }a_{1}a_{2}\cdots a_{n-1}\left( a_{v}-w_{n-1}\left( b_{n}+w_{n}\right) \right)    \end{eqnarray}
-\begin{eqnarray} &&\left( A_{n -1}+w_{n-1}A_{n-2}\right) \left( B_{n-2}+w_{n-2}B_{n-3}\right)   \nonumber \\ &&-\left( A_{n-3}+w_{n-3}A_{\nu -3}\right) \left( B_{n-1}+w_{n-1}B_{n -2}\right)    \\ &=&-\left( -1\right) ^{n -1}a_{1}a_{2}\cdots a_{n-2}\left( a_{n-1}-w_{n-2}\left( b_{n-1}+w_{n-1}\right) \right)    \end{eqnarray}
-\begin{eqnarray} &&\left( A_{n}+w_{n}A_{n-1}\right) (B_{n-2}+w_{n-2}B_{n-3})   \\ &&-(A_{n-2}+w_{n-2}A_{n-3})\left( B_{n}+w_{n}B_{n -1}\right)    \\ &=&\left( -1\right) ^{n}b_{n }a_{1}a_{2}\cdots a_{n -1}+w_{n -2}(-1)^{n -1}a_{1}a_{2}\cdots a_{n -2}\left( b_{n}b_{n-1}+a_{n}\right)   \\ &&+w_{n}\left( -1\right) ^{n -2}a_{1}a_{2}\cdots a_{n-1}+w_{n-2}\left( -1\right) ^{n-1}b_{n-1}a_{1}a_{2}\cdots a_{n-2}  \end{eqnarray}
-\begin{eqnarray*} d_{n} &=&\frac{\left( A_{n}+w_{n}A_{n-1}\right) (B_{n-2}+w_{n-2}B_{n-3})-(A_{n-2}+w_{n-2}A_{n-3})\left( B_{n}+w_{n}B_{n-1}\right) }{% (A_{n-1}+w_{n-1}A_{n-2})(B_{n-2}+w_{n-2}B_{n-3})-(A_{n-2}+w_{n-2}A_{n-3})(B_{n-1}+w_{n-1}B_{n-2})% } \\ &=&\frac{\left( -1\right) ^{n}b_{n}a_{1}a_{2}\cdots a_{n-1}+w_{n-2}(-1)^{n-1}a_{1}a_{2}\cdots a_{n-2}\left( b_{n}b_{n-1}+a_{n}\right) }{-\left( -1\right) ^{n -1}a_{1}a_{2}\cdots a_{n-2}\left( a_{n-1}-w_{n-2}\left( b_{n -1}+w_{n-1}\right) \right) } \\ &&+\frac{w_{n }\left( -1\right) ^{n-2}a_{1}a_{2}\cdots a_{n-1}+w_{n-2}\left( -1\right) ^{n-1}b_{n -1}a_{1}a_{2}\cdots a_{n-2}}{% -\left( -1\right) ^{n-1}a_{1}a_{2}\cdots a_{n-2}\left( a_{v-1}-w_{n-2}\left( b_{n-1}+r_{n-1}\right) \right) } \\ &=&\dfrac{\left( b_{n}+w_{n}\right) \left( a_{n-1}-w_{n-2}(b_{n-1}+w_{n-1})\right) -w_{n-2}\left( a_{n}-w_{n-1}(b_{n}+w_{n})\right) }{a_{n-1}-w_{n-2}(b_{n-1}+w_{n-1})} \\ &=&b_{n }+w_{n}-w_{n-2}\dfrac{a_{n }-w_{n-1}(b_{n }+w_{n})}{a_{n -1}-w_{n-2}(b_{n-1}+w_{n-1})} \end{eqnarray*}

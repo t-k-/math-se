@@ -1,48 +1,0 @@
-f: \mathbb{R} \rightarrow \mathbb{R}
-2\pi
-[-\pi, \pi]
-f(x)\sim \frac{a_0}{2}+\sum_{n=1}^\infty (a_n \cos nx+b_n \sin nx )
-m
- \int_0^x \ldots \int_0^x f(x) dx\ldots dx=\int_0^x \ldots \int_0^x \frac{a_0}{2} dx\ldots dx+ \atop \sum_{n=1}^\infty \int_0^x \ldots \int_0^x (a_n \cos nx+ b_n \sin nx)  dx \ldots dx, 
-m=1
-F(x)=\int_0^x (f(t)-\frac{a_0}{2})dt
-x\in \mathbb{R}
-a_0=\frac{1}{\pi} \int_{-\pi}^\pi f(t)dt
-F
-2\pi
-F(x) \sim \frac{A_0}{2}+\sum_{n=1}^\infty (A_n \cos nx+B_n \sin nx)
-  (*) \ \ F(x) = \frac{A_0}{2}+\sum_{n=1}^\infty (A_n \cos nx+B_n \sin nx) \ \  for  \  x\in \mathbb{R}.  
-A_n=-\frac{b_n}{n}
-B_n=\frac{a_n}{n}
-n \in \mathbb{N}
-(*)
-x=0
-\frac{A_0}{2}=-\sum_{n=1}^\infty A_n=\sum_{n=1}^\infty  \frac{b_n}{n}
-(*)
-\int_0^x f(t(dt=\int_0^x \frac{a_0}{2}dt +\sum_{n=1}^\infty \int_0^x (a_n \cos nt +b_n \sin nt)dt
-m-fold
-\int_0^x... \int_0^x f(x) dx...dx
-\int_0^x... \int_0^x f(x) dx...dx:=\int_0^x[ \int_0^{x_m}...(\int_0^{x_3}(\int_0^{x_2} f(x_1) dx_1) dx_2)...dx_{m-1}]dx_m
-\int_0^x... \int_0^x f(x) dx...dx:=\frac{1}{(m-1)!} \int_0^x f(t) (x-t)^{m-1} dt
-S_n(t)
-n
-f(t)
-x \in [0, 2 \pi]
-\int_0^{2\pi} g(t) S_n(t) \ dt \to \int_0^{2\pi} g(t) f(t) \ dt
-n \to \infty
-g(t) = (x-t)^{m-1}/(m-1)!
-0 < t < x
-T_n(t)
-n
-g(t)
-\int_0^{2 \pi} g(t) S_n(t) = \int_0^{2 \pi} T_n(t) f(t)\ dt
-g(t)
-2 \pi
-x
-g(t)
-[0,2\pi]
-0
-x
-2 \pi
-f
-T_n - g

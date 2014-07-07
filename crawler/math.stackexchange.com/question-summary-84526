@@ -1,89 +1,0 @@
-\mathcal{X}
-C\subseteq \mathcal{X}
-C
- d_C:\mathcal{X}\ni x \mapsto d_c(x):= \inf_{y\in C}\|x-y\| \in [0,\infty] 
- \liminf_n C_n = \bigcup_{n=1}^\infty \bigcap_{m=n}^\infty C_m 
- \liminf_n C_n = \left\{x \in \mathcal{X} | x\in C_k \text{ ultimately for all } k \right\} 
-n_k\in\mathbb{N}
-\{C_{n_k}\}_{k\in\mathbb{N}}
-{C_n}_{n\in\mathbb{N}}
- \liminf_{n\to\infty} C_n = \{x | \forall k\in\mathbb{N} \exists x_k\in C_{n_k}:\ x_k\to x\} 
-x\in \liminf C_n
-\{n_k\}
-\{x_k\}
-\lVert x-x_k\rVert\leq k^{-1}
-x_k\in C_{n_k}
-x\in\overline{\bigcup_{m\geq 1}C_m}
-x_1\in\bigcup_{m\geq 1}C_m
-\lVert x-x_1\rVert\leq 1
-n_1
-x_1\in C_{n_1}
-x_1,\ldots,x_k
-n_1,\ldots,n_k
-x\in \overline{\bigcup_{j\geq n_k+1}C_j}
-x_{k+1}
-\lVert x-x_{k+1}\rVert\leq (k+1)^{-1}
-n_{k+1}
-\geq n_k+1
-x_{k+1}\in C_{n_{k+1}}
-d_{C_{n_k}}(x)\leq k^{-1}
-0\leq \liminf_n d_{C_n}(x)\leq \liminf_k d_{C_{n_k}}(x) =0
-\subset
-\liminf_n d_{C_n}(x)=0
-\{n_k\}
-\lim_k d_{C_{n_k}}(x) =0
-n\in\mathbb N
-\delta>0
-k
-n_k>n
-d_{C_{n_k}}(x)\leq \frac{\delta}2
-y\in C_{n_k}
-\lVert x-y\rVert\leq\delta
-x\in\overline{\bigcup_{m\geq n}C_m}
-n
-x\in\liminf_n C_n
-x\in\liminf_n C_n
-\{x_k\}_{k\in\mathbb{N}}
-x_k\to x
-x_k\in C_{n_k}
-\{n_k\}_{k\in\mathbb{N}}\subseteq \mathbb{N}
-V\in\mho(x)
-N_0\in\mathbb{N}
-i\geq N_0
-x_i\in V
-x_i\in C_{n_i}
-C_{n_i}\cap V\neq \emptyset
-x
-x
-\{n_k\}_{k\in\mathbb{N}}
-V\in\mho(x)
-x_k\in C_{n_k}\cap V
-x_k\to x
-\mathcal{T}
-\square
-\limsup_n d(x,C_n)=0
-\limsup_n d(x,C_n)>0
-\{n_k\}_{k\in\mathbb{N}}
-d(x,C_{n_k})\to_k a > 0
-\varepsilon_0>0
-k\in\mathbb{N}
-d(x,C_{n_k})>\varepsilon_0
-x\in\text{cl}\bigcup_{k\in\mathbb{N}}C_{n_k}
-d(x,\text{cl}\bigcup_{k\in\mathbb{N}}C_{n_k})\geq\varepsilon_0
-\limsup_n d(x,C_n)=0
-\lim_n d(x,C_n)=0
-x
-x
-\lim_n d(x,C_n)=0
-\varepsilon>0
-n_0\in\mathbb{N}
-d(x,C_{n})\leq \frac{\varepsilon}{2}
-n\geq n_0
-d(x,C_{n})=\inf\{\|x-y\|,\ y\in C_{n}\}
-y_n\in C_{n}
-\|y_n-x\|<d(x,C_{n})+\frac{\varepsilon}{2}=\varepsilon
-x\in C_{n} + \varepsilon \mathcal{B}
-x\in\liminf_n C_n
- \exists\ y_n\in C_{n}:\ \|y_n-x\|<\varepsilon 
-\square
- \liminf_n C_n \subseteq \{ x\in X | \liminf_n d(x,C_n)=0 \} 

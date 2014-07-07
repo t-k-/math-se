@@ -1,23 +1,0 @@
-f:\{0,1\}^n -> \{0,1\}
-x_1
-x_n
-T
-n=0
-\bot
-\top
-f
-n>0
-(\lnot x_1 \land T_0) \lor (x_1 \land T_1)
-T_0
-\lambda x_2,...,x_n f(0,x_2,...,x_n)
-T_1
-\lambda x_2,...,x_n f(1,x_2,...,x_n)
-T
-(\lnot x_i \land T') \lor (x_i \land T')
-T'
-f(n,d)
-n
-d
-2^{2^n}
-n
- \begin{align*} f(0,d) &= \begin{cases} 2 & d = 0, \\ 0 & d \neq 0. \end{cases} \\ f(n+1,d+1) &= f(n,d+1) + 2\sum_{c \leq d} f(n,d) f(n,c) + f(n,d)(f(n,d)-1). \end{align*} 

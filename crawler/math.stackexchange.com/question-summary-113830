@@ -1,7 +1,0 @@
-(\log_2n)^{100} = \mathcal O(n^{1/10})
-(\log_2n)^{100}
-n^{1/10}
-\begin{align*}\lim_{n\to\infty}\frac{(\log_2n)^{100}}{n^{1/10}}&=\lim_{n\to\infty}\frac{100(\ln 2)(\log_2n)^{99}\left(\frac1n\right)}{\frac1{10}n^{-9/10}}\\ &=10\cdot100\cdot(\ln 2)\lim_{n\to\infty}\frac{(\log_2n)^{99}}{n^{1/10}}\\ &=10\cdot100\cdot(\ln 2)\lim_{n\to\infty}\frac{99(\ln 2)(\log_2n)^{98}\left(\frac1n\right)}{\frac1{10}n^{-9/10}}\\ &=10^2\cdot100\cdot99\cdot(\ln 2)^2\lim_{n\to\infty}\frac{(\log_2n)^{98}}{n^{1/10}}\\ &\qquad\qquad\qquad\qquad\vdots\\\\ &=10^{99}\cdot100!\cdot(\ln 2)^{99}\lim_{n\to\infty}\frac{\log_2n}{n^{1/10}}\\ &=10^{100}\cdot100!\cdot(\ln 2)^{100}\lim_{n\to\infty}\frac1{n^{1/10}}\\ &=0\;. \end{align*}
-p
-\log_2 n= O(n^p)
-p=\frac{1}{1000}

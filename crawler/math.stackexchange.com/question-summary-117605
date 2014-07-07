@@ -1,16 +1,0 @@
-\int\limits_0^\infty \frac{\log x} {(1+x^2)^2} dx
-R>1
-r<1
--\dfrac{\pi}{4}
-x=e^u
-\mathcal{I}=\int\limits_0^\infty  {\frac{{\log x}}{{{{\left( {1 + {x^2}} \right)}^2}}}dx = } \int\limits_{ - \infty }^\infty  {\frac{{u{e^u}}}{{{{\left( {1 + {e^{2u}}} \right)}^2}}}du} 
-{\mathcal I} = \int\limits_{ - \infty }^\infty  {\frac{{u{e^{ - u}}}}{{{{\left( {{e^{ - u}} + {e^u}} \right)}^2}}}du} 
-u=-v
-{\mathcal I} = \int\limits_{ - \infty }^\infty  {\frac{{u{e^{ - u}}}}{{{{\left( {{e^{ - u}} + {e^u}} \right)}^2}}}du}  = -\int\limits_{ - \infty }^\infty  {\frac{{v{e^v}}}{{{{\left( {{e^{ - v}} + {e^v}} \right)}^2}}}dv} 
-2I = 2\int\limits_0^\infty  {\frac{{\log x}}{{{{\left( {1 + {x^2}} \right)}^2}}}dx = } \int\limits_{ - \infty }^\infty  {\frac{{u\left( {{e^{ - u}} - {e^u}} \right)}}{{{{\left( {{e^u} + {e^{ - u}}} \right)}^2}}}du} 
-2I = 2\int\limits_0^\infty  {\frac{{\log x}}{{{{\left( {1 + {x^2}} \right)}^2}}}dx = }  - \frac{1}{2}\int\limits_{ - \infty }^\infty  {\frac{{u\sinh u}}{{\cosh^2 u}}du} 
-(\operatorname{sech} u)'=-\dfrac{{\sinh u}}{{\cosh^2 u}}
- - \int\limits_{ - \infty }^\infty  {\frac{{\sinh udu}}{{{{\cosh }^2}u}}}  = \left[ {u\operatorname{sech} u} \right]_{ - \infty }^\infty  - \int\limits_{ - \infty }^\infty  {\frac{{du}}{{\cosh u}}} 
-\int\limits_{ - \infty }^\infty  {\frac{{du}}{{\cosh u}}}  = \pi 
-u \operatorname{sech} u
-\eqalign{   & 2I = 2\int\limits_0^\infty  {\frac{{\log x}}{{{{\left( {1 + {x^2}} \right)}^2}}}dx = }  - \frac{\pi }{2}  \cr    & I = \int\limits_0^\infty  {\frac{{\log x}}{{{{\left( {1 + {x^2}} \right)}^2}}}dx = }  - \frac{\pi }{4} \cr} 

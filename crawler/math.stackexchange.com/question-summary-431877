@@ -1,9 +1,0 @@
-\int_0^{\infty} dt \exp{\left ( a \, t^b\right)} \, I_v {\left ( a \, t^b\right)} 
-I_v(.)
-v
-\int_0^\infty e^{at^b}I_v(at^b)~dt
-=\int_0^\infty e^{at}I_v(at)~d\left(t^\frac{1}{b}\right)
-=\dfrac{1}{b}\int_0^\infty t^{\frac{1}{b}-1}e^{at}I_v(at)~dt
-=\dfrac{(-1)^v}{b}\int_0^\infty t^{\frac{1}{b}-1}e^{at}I_v(-at)~dt
-=\dfrac{(-1)^v}{b}\int_0^\infty\left(\dfrac{t}{-a}\right)^{\frac{1}{b}-1}e^{-t}I_v(t)~d\left(\dfrac{t}{-a}\right)
-=\dfrac{(-1)^v}{(-a)^\frac{1}{b}~b}\int_0^\infty t^{\frac{1}{b}-1}e^{-t}I_v(t)~dt

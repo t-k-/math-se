@@ -1,37 +1,0 @@
-\gamma
-A= \sum_{n=1}^\infty \frac{\mu(n) \log n}{n^2}
-A
-\sum_{n \le x} \frac{\varphi(n)}{n^2}=\frac{\log x}{\zeta(2)}+\frac{\gamma}{\zeta(2)}-A+O \left(\frac{\log x}{x} \right),
- \begin{align*} \sum_{n \le x} \frac{\varphi(n)}{n^2} &= \sum_{n \le x} \frac{1}{n^2} \sum_{d \mid n} \mu(d) \frac{n}{d} \\ &= \sum_{n \le x} \frac{1}{n} \sum_{d \le x/n} \frac{\mu(d)}{d^2} \\ &= \sum_{n \le x} \frac{1}{n} \left( \sum_{d=1}^\infty \frac{\mu(d)}{d^2}- \sum_{d>x/n} \frac{\mu(d)}{d^2} \right) \\ &= \sum_{n \le x} \frac{1}{n} \left( \frac{1}{\zeta(2)}- \sum_{d>x/n} \frac{\mu(d)}{d^2} \right) \\ &= \frac{1}{\zeta(2)} \left(\log x + \gamma +O(x^{-1}) \right) - \sum_{n \le x} \frac{1}{n}\sum_{d>x/n} \frac{\mu(d)}{d^2}. \end{align*} 
- \begin{align*} & \sum_{n \le x} \frac{1}{n} \left( \frac{1}{\zeta(2)}- \sum_{d>x/n} \frac{\mu(d)}{d^2} \right) +A-A \\ &= \left( \frac{1}{\zeta(2)} \left(\log x + \gamma +O(x^{-1}) \right) - A \right) - \sum_{n \le x} \frac{1}{n}\sum_{d>x/n} \frac{\mu(d)}{d^2} + A, \end{align*} 
-\displaystyle\sum_{n\le x}\frac{\phi(n)}{n^2}=\sum_{d\le x}\frac{\mu(d)}{d^2}\sum_{q\le\frac{x}{d}}\frac{1}{q}=\sum_{d\le x}\frac{\mu(d)}{d^2} \left (\log\left(\frac{x}{d}\right)+C+O\left(\frac{d}{x}\right)\right)
-C
-\displaystyle\sum_{d\le x}\frac{\mu(d)}{d^2}=\frac{1}{\zeta(2)}+O\left(\frac{1}{x}\right)
-\displaystyle\sum_{d\le x}\frac{\mu(d)\log d}{d^2}=A-\sum_{d>x}\frac{\mu(d)\log d}{d^2}
-\displaystyle O\left(\sum_{d>x}\frac{\log d}{d^2}\right)
-0<\displaystyle \sum_{d>x}\frac{\log d}{d^2}=\sum_{d>x}\frac{\log d}{d^\frac{1}{2}}.\frac{1}{d^\frac{3}{2}}<\frac{\log x}{x^\frac{1}{2}}\sum_{d>x}\frac{1}{d^\frac{3}{2}}
-\displaystyle O\left(\frac{\log x}{x}\right)
-A
-\begin{align} \sum_{1 \leq n \leq x} ~\sum_{d > x/n} \frac{1}{n} \frac{\mu(d)}{d^2} &=  \sum_{d \geq 2} \frac{\mu(d)}{d^2}\sum_{\frac{x}{d}< n \leq x} \frac{1}{n} \end{align}
- \sum_{\frac{x}{d} < n \leq x}\frac{1}{n} = \sum_{n \leq x}\frac{1}{n} - \sum_{n \leq x/d}\frac{1}{n} = \log d + O\left(\frac{d}{x}\right) 
-\sum_{n \le x} \frac{\varphi(n)}{n^2}=\frac{\log x}{\zeta(2)}+\frac{\gamma}{\zeta(2)}-A + \sum_{d \geq 2} \frac{\mu(d)}{d^2} \cdot O\left( \frac{d}{x} \right).
-\ast
- \sum_{d \geq 2} \frac{\mu(d)}{d^2} \cdot O\left( \frac{d}{x} \right) = \sum_{d \geq 2} \frac{\mu(d)}{d} O\left( \frac{1}{x} \right) = O\left(\frac{\log x}{x} \right)\tag{$\ast$} 
-\log x
- \sum_{n \geq 1} \frac{\mu(n)}{n^s} = \frac{1}{\zeta(s)}. 
-\mu(n)
- \sum_{n \geq 1} \frac{\mu(n)}{n} = \lim_{s \to 1^+} \sum_{n \geq 1} \frac{\mu(n)}{n^s} = \lim_{s \to 1^+} \frac{1}{\zeta(s)} = 0. 
- \sum_{d \geq 2} \frac{\mu(d)}{d} = \sum_{d \geq 1} \frac{\mu(d)}{d} - 1 = -1. 
-(\ast)
-x
-z = 0
-\mathcal{L}^{-1}_z\left( \frac{1}{z^{n+1}} \right)(s) = \frac{s^n}{n!}
-\frac{\zeta^\prime(s)}{\zeta(s)} = \sum_{n=1}^\infty \frac{\mu(n) \log(n)}{n^s}
-\frac{\zeta^\prime(2)}{\zeta(2)} = A
-   \frac{\zeta(z+1)}{\zeta(z+2)} \sim \frac{1}{\zeta(2)} \left( \frac{1}{z} + \gamma -  \zeta^\prime(2)\right) + O(z) 
-    A(x) = \frac{\log x}{\zeta(2)} + \left( \frac{\gamma}{\zeta(2)} - \frac{\zeta^\prime(2)}{\zeta(2)} \right) + \mathcal{L}^{-1}_z\left( \frac{\zeta(z+1)}{\zeta(z+2)} \frac{1}{z} - \frac{1}{\zeta(2) z^2} - \frac{\gamma - \zeta^\prime(2)}{\zeta(2) z} \right)(\log x) 
-\frac{\log x}{\sqrt{x}}
-x\approx 7.39
-x>2
-\sum_{d>x}\frac{\log d}{d^2} = \sum_{d>x}\frac{\log d}{d^\frac{1}{2}}.\frac{1}{d^\frac{3}{2}}<\frac{\log x}{x^\frac{1}{2}}\sum_{d>x}\frac{1}{d^\frac{3}{2}}
-\sum_{d>x}\frac{\log d}{d^2} \leq \frac{\log x}{x^2} + \int_x^\infty \frac{\log t}{t^2}dt

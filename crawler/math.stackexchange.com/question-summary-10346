@@ -1,22 +1,0 @@
-\displaystyle (a+b+c)^n = \sum_{m=0}^{n} \sum_{k=m}^{n} {n \choose k}{k \choose m} a^m b^{k-m} c^{n-k}
-\displaystyle a = pp_j x
-b = p(1-p_j)
-c = 1-p
-\displaystyle (pp_jx + p(1-p_j) + 1-p )^n = \sum_{m=0}^{n} \sum_{k=m}^{n} {n \choose k}{k \choose m} (pp_jx)^m (p(1-p_j))^{k-m} (1-p)^{n-k}
-\displaystyle (pp_jx + 1 - pp_j)^n = \sum_{m=0}^{n} \sum_{k=m}^{n} {n \choose k}{k \choose m} p_j^m(1-p_j)^{k-m} p^{k}(1-p)^{n-k} x^m
-\displaystyle x^m
-n
-p
-k
-p_j
-m
-pp_j
-l (=n-m) \geq 0
-p=0
-0^0=1
-p = x/y
-0 < x \leq y
-[(x - xp_j ) + (y - x)]^l
- \sum\limits_{k = 0}^{n - m} {{n \choose k + m} p^{k + m} (1 - p)^{n - (k + m)} {k + m \choose m} p_j^m (1 - p_j )^{k + m - m} }  
- \sum\limits_{k = 0}^l {{l \choose k}p^k (1 - p)^{l - k} (1 - p_j )^k }  = (1 - pp_j )^l , 
- \sum\limits_{k = 0}^l {{l \choose k}(x - x p_j)^k (y-x)^{l-k}  = (y - xp_j)^l}. 

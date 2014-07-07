@@ -1,9 +1,0 @@
-\sum_{k=0}^n \binom{n}{k} 2^{k^2}
-V \subseteq [n]
-R(n) = \frac{2n^2}{4^n}
-0
-n \to \infty
-\sum_{k=0}^n \binom{n}{k} 2^{k^2} \approx 2^{n^2}
-2^{n^2} \leq \sum_{k=0}^n \binom{n}{k} 2^{k^2} \leq 2^{n^2}\left(1 + \frac{2n^2}{4^n}\right).
-2^{n^2} \leq \sum_{k=0}^n \binom{n}{k} 2^{k^2} = 2^{n^2} + \sum_{k=0}^{n-1} \binom{n}{k} 2^{k^2} \leq 2^{n^2} + \sum_{k=0}^{n-1} \binom{n}{n-1} 2^{(n-1)^2} = 2^{n^2} + n^2 2^{n^2-2n+1}
-= 2^{n^2}\left(1 + \frac{2n^2}{4^n}\right).

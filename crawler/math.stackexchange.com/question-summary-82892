@@ -1,28 +1,0 @@
-f\in L^{p}(\mathbb{R}^{d})
-g\in L^{1}(\mathbb{R}^{d})
-1\leq p\leq \infty
-1\leq p < \infty
-\left|\int_{\mathbb{R}^{d}}|f(x-y)g(y)|dy\right|^{p} \leq \left(\int_{\mathbb{R}^{d}}|f(x-y)|^{p}|g(y)|dy\right)\left(\int_{\mathbb{R}^{d}}|g(y)|dy\right)^{p-1}
-\frac{1}{p}+\frac{1}{q}=1
-q=\frac{p}{p-1}
- \small\begin{align} \left|\int_{\mathbb{R}^n}|f(x-y)g(y)|\mathrm{d}y\right|^p &\le\left(\int_{\mathbb{R}^n}\left(|f(x-y)||g(y)|^{1/p}\right)\left(|g(y)|^{1-1/p}\right)\mathrm{d}y\right)^p\\ &\le\left(\left(\int_{\mathbb{R}^n}\left(|f(x-y)||g(y)|^{1/p}\right)^p\mathrm{d}y\right)^{1/p}\left(\int_{\mathbb{R}^n}\left(|g(y)|^{1-1/p}\right)^{\frac{p}{p-1}}\mathrm{d}y\right)^{\frac{p-1}{p}}\right)^p\\ &=\left(\int_{\mathbb{R}^n}|f(x-y)|^p|g(y)|\mathrm{d}y\right)\left(\int_{\mathbb{R}^n}|g(y)|\mathrm{d}y\right)^{p-1} \end{align} 
-G=\int_{\mathbb{R}^n}|g(y)|\mathrm{d}y
- \begin{align} \left|\int_{\mathbb{R}^n}|f(x-y)g(y)|\mathrm{d}y\right|^p &=\left|G\int_{\mathbb{R}^n}\left|f(x-y)\right|\frac{|g(y)|}{G}\mathrm{d}y\right|^p\\ &\le G^p\int_{\mathbb{R}^n}\left|f(x-y)\right|^p\frac{|g(y)|}{G}\mathrm{d}y\\ &=\left(\int_{\mathbb{R}^n}\left|f(x-y)\right|^p|g(y)|\mathrm{d}y\right)\left(\int_{\mathbb{R}^n}|g(y)|\mathrm{d}y\right)^{p-1} \end{align} 
-\mu
-\mathbb{R}^n
-d\mu = \left|g\right|dy
-dy
-\mu(E)=\int_{E} \left|g(y)\right| dy
-E
-\mathbb{R}^n
-\left|g\right|
-\frac{d\mu}{dy}
-x\in\mathbb{R}^n
-y\to \left|f(x-y)\right|
-y\to 1
-\mathbb{R}^n
-\mu
-p
-p'
- \begin{eqnarray*}  \int_{\mathbb{R}^n} \left|f(x-y)g(y)\right| dy  &=& \int_{\mathbb{R}^n} \left|f(x-y)\right|d\mu(y)  \\ &\leq& \left(\int_{\mathbb{R}^n} \left|f(x-y)\right|^{p}d\mu(y)\right)^{\frac{1}{p}}\left(\int_{\mathbb{R}^n} 1^{p'}d\mu(y)\right)^{\frac{1}{p'}}   \\ &=&  \left(\int_{\mathbb{R}^n} \left|f(x-y)\right|^{p}\left|g(y)\right|dy\right)^{\frac{1}{p}}\left(\int_{\mathbb{R}^n}\left|g(y)\right|dy\right)^{\frac{1}{p'}}. \end{eqnarray*} 
-p

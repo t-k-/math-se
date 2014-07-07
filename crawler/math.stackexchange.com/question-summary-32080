@@ -1,82 +1,0 @@
-U=\left \{  u_j\right \} , 1 \leq j\leq N= 2^{L},
-L
-V=\left \{  v_i\right \} , 1 \leq i\leq M=\binom{L}{k}2^{k},
-k
-L-k
-A_{M*N}=[a_{i,j}]
-a_{i,j} = \left\{\begin{matrix} 1 & \text{if } v_i \text{ matches } u_j \\  0 & \text{otherwise } \end{matrix}\right.
-S_{M*M}=AA^{T}
-L=2, k=1
-U = \left \{  00,01,10,11\right \} 
-V = \left \{  0.,1.,.0,.1\right \}  ^*
- A = \begin{bmatrix} 1 & 1 & 0 &0 \\  0 & 0 & 1 &1 \\  1 & 0 & 1 &0 \\  0 & 1 & 0 &1  \end{bmatrix}
- S = \begin{bmatrix} 2 & 0 & 1 &1 \\  0 & 2 & 1 &1 \\  1 & 1 & 2 &0 \\  1 & 1 & 0 &2  \end{bmatrix}
-^{*}
-k
-(L−K)
-V
-2^{L−k}
-A
-2^{L−k}
-m=0,1,...,k
-m
-L
-\binom {L} {m}
-i^{th}
-x_i
-x_i =  \begin{cases}  1, & \text{if } v_i \text{ has no gaps among the m bits and has even number of 1s among these m bits} \\ -1, & \text{if } v_i \text{ has no gaps among the m bits and has odd number of 1s among these m bits} \\ 0, & \text{otherwise} \end{cases} 
-S = AA^T
-\binom {L-m}{k-m}*2^{L-k}
-S_{ij}
-ij^{th}
-S=AA^T
-U
-v_i
-v_j
-x
-x_i \neq 0
-x_j = x_i
-v_i
-v_j
-S_{ij}
-x_i = 0
-j_1
-S_{ij_1} \neq 0
-x_{j_1} \neq 0
-j_2
-S_{ij_1} = S_{ij_2}
-x_{j_1} = - x_{j_2}
-x_i = 0
-m
-v_i
-v_{j_1}
-v_{j_2}
-S_{ij_1} = S_{ij_2}
-x_{j_1} = -x_{j_2}
-x_i = 0
-i^{th}
-Sx
-x_i = 1
-i^{th}
-Sx
-U
-v_i
-v_j
-j
-x_j = 1
-v_j
-u
-2^{L-k}
-u
-v_i
-\binom{L-m}{k-m}* 2^{L-k}
-x_i = -1
-x
-S
-\binom{L-m}{k-m}* 2^{L-k}
-m
-\binom{L}{m}
-\binom{L}{m}
-m
-0
-k

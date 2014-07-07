@@ -1,65 +1,0 @@
-\sum_{i=0}^n i
-n^2/2
-\sum_{i=0}^n i^2
-n^3/3
-\sum_{i=0}^n i^3
-\sum_{i=0}^n i^k
-n^{k+1}/{(k+1)}
-P(k)
-k
-P(k)
-P(k)\text{ is true for all integers }k \ge k_0,
-\text{for all integers }n\ge 0,\sum_{i=0}^n i^k\text{ is a polynomial in }n\text{ whose leading term is }\frac{n^{k+1}}{k+1}.
-k
-k<m
-p_k
-k
-p_m
-m
-\sum_{i=0}^n i^{m+1}
-q_{m-1}
-m-1
-\sum_{i=0}^n i^{m+1}
-n
-m
-r_m(n)
-\sum_{i=0}^n i^k = \frac{n^{k+1}}{k+1} + p_k(n),
-\sum_{i=0}^n i^m = \frac{n^{m+1}}{m+1} + p_m(n)
-\begin{align*} \sum_{i=0}^n i^{m+1} + (n+1)^{m+1} &= \sum_{i=0}^n (i+1)^{m+1}\\ &= \sum_{i=0}^n\left(i^{m+1}+(m+1)i^m + q_{m-1}(i) \right)\\ &= \sum_{i=0}^n i^{m+1} + (m+1)\sum_{i=0}^n i^m + \sum_{i=0}^n q_{m-1}(i), \end{align*}
-\qquad\qquad(n+1)^{m+1} = (m+1)\sum_{i=0}^n i^m + \sum_{i=0}^n q_{m-1}(i).\qquad\qquad(*)
-q_{m-1}(x) = a_0 x^{m-1} + a_1 x_{m-2} + \dots + a_{m-1} = \sum_{j=0}^{m-1}a_{m-1-j} x^j;
-\begin{align*} \sum_{i=0}^n q_{m-1}(i) &= \sum_{i=0}^n \sum_{j=0}^{m-1} a_{m-1-j} i^j\\ &= \sum_{j=0}^{m-1}\sum_{i=0}^n a_{m-1-j} i^j\\ &= \sum_{j=0}^{m-1} a_{m-1-j} \sum_{i=0}^n i^j\\ &= \sum_{j=0}^{m-1} a_{m-1-j} \left(\frac{n^{j+1}}{j+1} + p_j(n) \right) \end{align*}
-(*)
-\displaystyle(n+1)^{m+1} = (m+1)\sum_{i=0}^n i^m + r_m(n)
-s_m
-m
-s_m(n) - r_m(n)
-n
-m
-p_m
-m
-\begin{align*} (m+1)\sum_{i=0}^n i^m &= (n+1)^{m+1} - r_m(n)\\ &= n^{m+1} + s_m(n) - r_m(n), \end{align*}
-p_m(n) = \frac{1}{m+1}(s_m(n) - r_m(n),
-\sum_{i=0}^n i^m = \frac{n^{m+1}}{m+1} + p_m(n),
-P_k
-k
-n
- \sum_{i=1}^n\;i^k=\frac{n^{k+1}}{k+1}+P_k(n) 
- \begin{align} \sum_{n=1}^m\;\sum_{i=1}^n\;i^k&=\sum_{n=1}^m\left(\frac{n^{k+1}}{k+1}+P_k(n)\right)\\ \sum_{i=1}^m\;\sum_{n=i}^m\;i^k&=\frac{1}{k+1}\sum_{n=1}^m\;n^{k+1}+Q_{k+1}(m)\\ \sum_{i=1}^m\;(m-i+1)i^k&=\frac{1}{k+1}\sum_{n=1}^m\;n^{k+1}+Q_{k+1}(m)\\ (m+1)\left(\frac{m^{k+1}}{k+1}+P_k(m)\right)-\sum_{i=1}^m\;i^{k+1}&=\frac{1}{k+1}\sum_{n=1}^m\;n^{k+1}+Q_{k+1}(m)\\ (m+1)\left(\frac{m^{k+1}}{k+1}+P_k(m)\right)-Q_{k+1}(m)&=\frac{k+2}{k+1}\sum_{n=1}^m\;n^{k+1}\\ \frac{m^{k+2}}{k+2}+P_{k+1}(m)&=\sum_{n=1}^m\;n^{k+1} \end{align} 
-\sum_{i=1}^n i^k = \frac{n^{k+1}}{k+1} + 
-O(n^k)
-(n+1)^k
-\frac{(n+1)^{k+1}}{k+1} = \frac{n^{k+1}}{k+1} + (n+1)^k
-O(n^{k-1})
-k
-x^{(k)} = x(x-1)\cdots (x-k+1) = \prod_{i=0}^{k-1} (x+i)
-k \in \mathbb{N}
- x^{(k)} = \frac{1}{k+1} \left( (x+1)^{(k+1)} - x^{(k+1)} \right)
-x^m = \sum_{k=1}^m {S}^{(2)}_{n,k}  x^{(k)}
-{S}^{(2)}_{n,k} 
-   (x+1)^{(k)} - x^{(k)} = (x+1) \cdot x^{(k-1)} - x^{(k-1)} \cdot (x-k+1) = k \cdot x^{(k-1)} 
-   \begin{eqnarray}   \sum_{x=0}^n x^{(k)} &=& \frac{1}{k+1} \sum_{x=0}^n \left( (x+1)^{(k+1)} - x^{(k+1)} \right) \\ &=&    \frac{1}{k+1} \left( (n+1)^{(k+1)} - 0^{(k+1)} \right) \\ &=& \frac{1}{k+1} (n+1)^{(k+1)} \end{eqnarray} 
-n
-k+1
-\frac{1}{k+1}n^{k+1}
-    \sum_{x=0}^n x^k = \sum_{i=1}^k {S}^{(2)}_{k,i} \sum_{x=0}^n x^{(i)} = \sum_{i=1}^k {S}^{(2)}_{k,i} \frac{1}{i+1} (n+1)^{(i+1)} 

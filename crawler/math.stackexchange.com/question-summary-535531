@@ -1,9 +1,0 @@
-f:[0, 1] \rightarrow \mathbb{R}
-a>0
-\lim_{\epsilon\rightarrow 0}\int_{\epsilon a}^{\epsilon b} \frac{f(x)-f(0)}{x}dx=0
-b > a
-\begin{align} \left\lvert \int_{\epsilon a}^{\epsilon b}\frac{f(x)-f(0)}{x}\,dx\right\rvert &\leqslant \int_{\epsilon a}^{\epsilon b} \frac{\lvert f(x) - f(0)\rvert}{x}\,dx\\ &\leqslant \sup_{0 \leqslant \xi \leqslant \epsilon b} \lvert f(\xi) - f(0)\rvert \cdot\int_{\epsilon a}^{\epsilon b} \frac{dx}{x}\\ &= \log \frac{b}{a}\cdot \sup_{0 \leqslant \xi \leqslant \epsilon b} \lvert f(\xi) - f(0)\rvert. \end{align}
-f
-0
-0
-\epsilon\to 0

@@ -1,36 +1,0 @@
-f(x) = x^2
-\lim \limits_{n\to\infty} n \left( p_n(x) - f(x)\right) = x(1-x)
-p_n(x)
-f(x) = x^2
- p_n(x) = \sum_{k=0}^n \dbinom{n}{k} f \left( \frac{k}{n}\right) x^k (1-x)^{n-k} 
- p_n(x) = \sum_{k=0}^n \dbinom{n}{k} \left( \frac{k}{n}\right)^2 x^k (1-x)^{n-k}
- n\left(p_n(x) - f(x)\right) = \left(\sum_{k=0}^n \frac{(n-1)! k }{(n-k)! (k-1)!} x^k (1-x)^{n-k}\right) - nx^2
- n\left(p_n(x) - f(x)\right) = x(1-x)^{n-1} + (n-1)(2)x^2 (1-x)^{n-2} + \ldots + n (x^n) (1-x) - nx^2
-n
-x
-X \sim \mathrm{Bin}(n, x)
-0 \leq x \leq 1
-\newcommand{\E}{\mathop{\mathbf E}} \newcommand{\Var}{\mathop{\mathbf {Var}}}
-p_n(x)
-x^2 + \frac{1}{n}x(1-x)
-[0,1]
-p_n(x) = x^2 + \frac1n x(1-x)
-x
-f(x) = x^2
-n(p_n(x) - f(x))
-x(1-x)
-\quad \Box
- \begin{eqnarray*} p_n(x) &=& \frac{1}{n^2} \sum_{k=0}^n k^2 \cdot \binom n k  x^k (1-x)^{n-k} \\ &=& \frac{ \E [X^2] }{n^2} \\ &=& \frac{(\E X)^2 + \Var X}{n^2}  \\ &=& \frac{(nx)^2 + nx(1-x)}{n^2}  \\ &=& x^2 + \frac{x(1-x)}{n}. \end{eqnarray*} 
-k^2=k(k-1)+k
-u_n(x)
-v_n(x)
-m\geqslant0
- {n\choose k}k=n{n-1\choose k-1},\qquad {n\choose k}k(k-1)=n(n-1){n-2\choose k-2}. 
- n^2p_n(x)=\sum\limits_{k=0}^n{n\choose k}k^2x^k(1-x)^{n-k}=u_n(x)+v_n(x), 
- u_n(x)=\sum\limits_{k=2}^n{n\choose k}k(k-1)x^k(1-x)^{n-k},\quad v_n(x)=\sum\limits_{k=1}^n{n\choose k}kx^k(1-x)^{n-k}. 
- u_n(x)=\sum\limits_{k=2}^nn(n-1){n-2\choose k-2}x^2x^{k-2}(1-x)^{(n-2)-(k-2)}, 
- u_n(x)=n(n-1)x^2\sum\limits_{k=0}^{n-2}{n-2\choose k}x^{k}(1-x)^{(n-2)-k}=n(n-1)x^2, 
- v_n(x)=\sum\limits_{k=1}^nn{n-1\choose k-1}xx^{k-1}(1-x)^{(n-1)-(k-1)}, 
- v_n(x)=nx\sum\limits_{k=0}^{n-1}{n-1\choose k}x^{k}(1-x)^{(n-1)-k}=nx. 
- \sum\limits_{k=0}^m{m\choose k}x^{k}(1-x)^{m-k}=(x+(1-x))^m=1. 
- np_n(x)=(n-1)x^2+x=nf(x)+x(1-x). 

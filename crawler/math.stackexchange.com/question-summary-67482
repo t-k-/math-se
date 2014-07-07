@@ -1,59 +1,0 @@
-a_{(1,j)}
-a_{(1,1)}=1
-a_{(1,n)}=a_{(1,(n-1))}+2
-a_{(i,j)}
-i>1
-a_{(i,1)}=a_{((i-1),1)}+1+i
-a_{(i,n)}=a_{(i,(n-1))}+2\cdot i
-a_{(i,j)}
-n
-\langle a_{n,1},a_{n,2},a_{n,3},\dots\rangle
-d_n
-\langle d_1,d_2,d_3,\dots\rangle
-d
-\langle a_{1,1},a_{2,1},a_{3,1},\dots\rangle
-\langle a_{2,1}-a_{1,1},a_{3,1}-a_{2,1},a_{4,1}-a_{3,1},\dots\rangle
-e
-n
-a_{n,1},a_{n-1,2},a_{n-2,3},\dots,a_{1,n}
-a_{k,n+1-k}
-k=1,2,\dots,n
-a_{k,n+1-k}
-(n+1-k)
-k
-d_k
-k
-a_{k,n+1-k} = a_{k,1} + ((n+1-k)-1)d_k = a_{k,1}+(n-k)d_k,
-d_k = d_1+(k-1)d.
-\begin{align*}a_{k,n+1-k} &= a_{k,1} + (n-k)(d_1+(k-1)d)\\ &= a_{k,1} + (n-k)d_1 + (n-k)(k-1)d\\&= a_{k,1} + nd_1 - kd_1 +(nk - n - k^2 + k)d\\ &= a_{k,1} + n(d_1-d) + ((n+1)d-d_1)k-dk^2, \end{align*}
-n
-\begin{align*} \sum\limits_{k=1}^n a_{k,n+1-k} &= \sum\limits_{k=1}^n \left(a_{k,1} + n(d_1-d) + ((n+1)d-d_1)k-dk^2\right)\\ &= \sum\limits_{k=1}^n a_{k,1} + \sum\limits_{k=1}^n n(d-d_1) + \sum\limits_{k=1}^n ((n+1)d-d_1)k - \sum\limits_{k=1}^n dk^2\\ &= \sum\limits_{k=1}^n a_{k,1} + n^2(d-d_1) + ((n+1)d-d_1)\sum\limits_{k=1}^n k - d\sum\limits_{k=1}^n k^2. \end{align*}
-\sum\limits_{k=1}^n k = \dfrac12n(n+1)
-\sum\limits_{k=1}^n k^2 = \dfrac16n(n+1)(2n+1)
-\begin{align*} \sum\limits_{k=1}^n a_{k,n+1-k} &= \sum\limits_{k=1}^n a_{k,1} + n^2(d-d_1) + \frac12((n+1)d-d_1)n(n+1) - \frac16dn(n+1)(2n+1)\\ &= \sum\limits_{k=1}^n a_{k,1} + d\left(n^2 + \frac12n(n+1)^2 - \frac16n(n+1)(2n+1)\right) - d_1\left(n^2 + \frac12n(n+1)\right)\\ &= \sum\limits_{k=1}^n a_{k,1} + \frac{d}6\left(6n^2 + 3n(n+1)^2 - n(n+1)(2n+1)\right) - \frac{d_1}2(3n^2+n)\\ &= \sum\limits_{k=1}^n a_{k,1} + \frac{d}6\left(6n^2 + (3n^3+6n^2+3n) - (2n^3+3n^2+n)\right)-\frac{d_1}2(3n^2+n)\\ &= \sum\limits_{k=1}^n a_{k,1} + \frac{d}6(n^3+9n^2+2n)-\frac{d_1}2(3n^2+n)\\ &= \sum\limits_{k=1}^n a_{k,1} + \frac{d}6 n^3 + \frac{3d-3d_1}{2}n^2 + \frac{2d-3d_1}{6}n. \end{align*}
-\sum\limits_{k=1}^n a_{k,1}
-n
-a_{k,1}
-e_k = a_{k+1,1}-a_k
-\langle e_1, e_2, e_3,\dots\rangle
-e
-e_k = e_1 + (k-1)e
-\begin{align*} a_{k,1} &= a_{1,1} + e_1 + e_2 + \dots + e_{k-1}\\ &= a_{1,1} + \sum\limits_{i=1}^{k-1} (e_1 + (i-1)e)\\ &= a_{1,1} + \sum\limits_{i=1}^{k-1} e_1 + e\sum\limits_{i=1}^{k-1} (i-1)\\ &= a_{1,1} + (k-1)e_1 + e\sum\limits_{i=0}^{k-2} i\\ &= a_{1,1} + (k-1)e_1 + \frac12 e(k-2)(k-1)\\ &= a_{1,1} + e_1k - e_1 + \frac{e}2 k^2 - \frac{3e}{2}k+e\\ &= \frac{e}2 k^2 + \frac{2e_1-3e}{2}k + (a_{1,1}+e-e_1), \end{align*}
-\begin{align*} \sum\limits_{k=1}^n a_{k,1} &= \sum\limits_{k=1}^n \left(\frac{e}2 k^2 + \frac{2e_1-3e}{2}k + (a_{1,1}+e-e_1)\right)\\ &= \frac{e}{2}\sum\limits_{k=1}^n k^2 + \frac{2e_1-3e}{2}\sum\limits_{k=1}^n k + \sum\limits_{k=1}^n (a_{1,1}+e-e_1)\\ &= \frac{e}{12}n(n+1)(2n+1) + \frac{2e_1-3e}{4}n(n+1) + (a_{1,1}+e-e_1)n\\ &= \frac{e}{12}(2n^3+3n^2+n) + \frac{2e_1-3e}{4}(n^2+n) + (a_{1,1}+e-e_1)n\\ &= \frac{e}6 n^3 + \frac{e_1-e}{2}n^2 + \frac{6a_{1,1}+2e-3e_1}{6}n. \end{align*}
-n
-\begin{align*} &\sum\limits_{k=1}^n a_{k,1} + \frac{d}6 n^3 + \frac{3d-3d_1}{2}n^2 + \frac{2d-3d_1}{6}n =\\ &\frac{e}6 n^3 + \frac{e_1-e}{2}n^2 + \frac{6a_{1,1}+2e-3e_1}{6}n + \frac{d}6 n^3 + \frac{3d-3d_1}{2}n^2 + \frac{2d-3d_1}{6}n =\\ &\frac{e+d}6 n^3 + \frac{e_1-e+3d-3d_1}2 n^2 + \frac{6a_{1,1}+2(e+d)-3(e_1+d_1)}6 n,\tag{1} \end{align*}
-n
-a_{1,1}=1
-d_1=2
-d=2
-e_1=3
-e=1
-(1)
-\frac12 n^3 + n^2 - \frac12 n,
-a(1,1) = 1
-a(i,1) = a(i-1,1) + 1 + i
-a(i,j) = a(i,j-1) + 2i
-i
-a(i,1) = 1 + \sum_{k=2}^i (1+k) = \frac{i^2}{2} + \frac{3i}{2} - 1.
-a(i,j) = \frac{i^2}{2} + \frac{3i}{2} - 1 + \sum_{k=2}^j 2i =  \frac{i^2}{2} + \frac{3i}{2} - 1 + 2 i (j-1).
-\begin{align*} \sum_{k=1}^i a(i+1-k,k) &= \sum_{k=1}^i  \left(-\frac{3}{2}{k}^{2}+\frac{3}{2}k+ik-1+\frac{1}{2}{i}^{2}+\frac{1}{2}i\right)\\ &= \frac{i^3}{2} + i^2 - \frac{i}{2}\text{(after some simplification)}. \end{align*}

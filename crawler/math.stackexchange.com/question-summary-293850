@@ -1,9 +1,0 @@
-n\in \mathbb{N}
-z\in \mathbb{C}
-n=0
-n \rightarrow n+1
-\sin{((n+1)z)}=\sin{(nz+z)}=\sin{(nz)}\cos{(z)}+\cos{(nz)}\sin{(z)}= \\ =(\sum_{k=0}^{n}\binom{n}{k}\frac{1}{2i}(i^k-(-i)^k)(\cos{(z)})^{n-k}(\sin{(z)})^k)(\cos{(z)}) \\ +(\sum_{k=0}^{n}\binom{n}{k}\frac{1}{2i}(i^k+(-i)^k)(\cos{z})^{n-k}(\sin{z})^k)(\sin{z})= \\ =\sum_{k=0}^{n}\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k + \\ +\sum_{k=1}^{n+1}\binom{n}{k-1}\frac{1}{2}(i^{k-1}+(-i)^{k-1})(\cos{z})^{n-(k-1)}(\sin{z})^k= \\ =\binom{1}{0}\frac{1}{2i}(i^0-(-i)^0)(\cos{z})^{n+1}(\sin{z})^0 + \\ + \sum_{k=1}^{n}[\binom{n}{k}+\binom{n}{k-1}]\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k + \\ + \binom{n}{n}\frac{1}{2i}(i^{n+1}-(-i)^{n+1})(\cos{z})^0(\sin{z})^{n+1}= \\ =\sum_{k=0}^{n+1}\binom{n+1}{k}\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k
-n=0
-n \rightarrow n+1
-\sin{((n+1)z)}=\sin{(nz+z)}=\sin{(nz)}\cos{(z)}+\cos{(nz)}\sin{(z)}= \\ =(\sum_{k=0}^{n}\binom{n}{k}\frac{1}{2i}(i^k-(-i)^k)(\cos{(z)})^{n-k}(\sin{(z)})^k)(\cos{(z)}) \\ +(\sum_{k=0}^{n}\binom{n}{k}\frac{1}{2i}(i^k+(-i)^k)(\cos{z})^{n-k}(\sin{z})^k)(\sin{z})= \\ =\sum_{k=0}^{n}\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k + \\ +\sum_{k=1}^{n+1}\binom{n}{k-1}\frac{1}{2}(i^{k-1}+(-i)^{k-1})(\cos{z})^{n-(k-1)}(\sin{z})^k= \\ =\binom{1}{0}\frac{1}{2i}(i^0-(-i)^0)(\cos{z})^{n+1}(\sin{z})^0 + \\ + \sum_{k=1}^{n}[\binom{n}{k}+\binom{n}{k-1}]\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k + \\ + \binom{n}{n}\frac{1}{2i}(i^{n+1}-(-i)^{n+1})(\cos{z})^0(\sin{z})^{n+1}= \\ =\sum_{k=0}^{n+1}\binom{n+1}{k}\frac{1}{2i}(i^k-(-i)^k)(\cos{z})^{n+1-k}(\sin{z})^k
-\sin{(nz+z)}=\sum _{ k=0 }^{ n+1 }{ \binom{n+1}{k} }\frac{1}{2i}(i^k+(-i)^k)(\cos{z})^{(n+1)-k}(\sin{z})^k

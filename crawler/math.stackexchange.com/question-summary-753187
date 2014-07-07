@@ -1,8 +1,0 @@
-\frac{2}{\pi}\int_0^{\infty}\frac{\cos tx}{1+x^2}dx=e^{-|t|}?
-C_R:=[-R,R]\cup\gamma_R\;,\;\;\gamma_R:=\{z\in\Bbb C\;;\;z=Re^{i\theta}\,\,,\,0\leq \theta\leq \pi\;,\;\;R\in\Bbb R^+\}\;,\;\;f(z):=\frac{e^{itz}}{z^2+1}
-\;R>1\;
-\;f\;
-\text{Res}_{z=1}(f)=\lim_{z\to i}(z-i)f(z)=\lim_{z\to i}\frac{e^{itz}}{z+i}=\frac{e^{-t}}{2i}
-\int\limits_{C_R}f(z)dz=2\pi i\frac{e^{-t}}{2i}=\frac\pi{e^t}
-\int\limits_{\gamma_R}f(z)dz\xrightarrow[R\to\infty]{}0
-\frac\pi{e^t}=\lim_{R\to\infty}\int\limits_{C_R}f(z)=\int\limits_{-\infty}^\infty\frac{e^{ixt}}{x^2+1}dx

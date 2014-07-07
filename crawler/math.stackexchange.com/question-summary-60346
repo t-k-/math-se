@@ -1,45 +1,0 @@
-\lim_{x\to \infty} (x+3)^{1 + 1/x} - x^{1 + 1/(x+3)}
-f(x)=xx^{1/x}g(x)
-\mathrm{e}^{a(x)}=1+3/x+o(1/x)
-\mathrm{e}^{b(x)}=1+o(1/x)
-g(x)=3/x+o(1/x)
- g(x)=(1+3/x)^{1+1/x}-x^{1/(x+3)-1/x}=\mathrm{e}^{a(x)}-\mathrm{e}^{b(x)}, 
- a(x)=(1+1/x)\log(1+3/x)=3/x+o(1/x), 
- b(x)=-\frac{3\log(x)}{x(x+3)}=o(1/x). 
-x^{1/x}=\mathrm{e}^{\log(x)/x}=1+o(1)
-f
-3
- f(x)=xx^{1/x}g(x)=x(1+o(1))(3/x+o(1/x))=3+o(1). 
-\begin{eqnarray*} (t^{-1}+3)^{1+t} &=&t^{-1}+\left( 3-\ln t\right) +\left( -\frac{3}{2}+\frac{1 }{2}\left( 3-\ln t\right) ^{2}\right) t+O\left( t^{2}\right)  \\ t^{-1-1/(t^{-1}+3)} &=&t^{-1}+\left( -\ln t\right) +\left( 3\ln t+\frac{1}{2} \ln ^{2}t\right) t+O\left( t^{2}\right)  \end{eqnarray*}
-(t^{-1}+3)^{1+t}-t^{-1-1/(t^{-1}+3)}=3+\left( -\frac{3}{2}+\frac{1}{2}\left( 3-\ln t\right) ^{2}-3\ln t-\frac{1}{2}\ln ^{2}t\right) t+O\left( t^{2}\right).
-(x+3)^{1+1/x}-x^{1+1/(x+3)}
-x=1/t
-\begin{eqnarray*} f(x)&=&(x+3)^{1+1/x}-x^{1+1/(x+3)} \\ &=&3+\left( -\frac{3}{2}+\frac{1}{2}\left( 3-\ln  \frac{1}{x}\right) ^{2}-3\ln \frac{1}{x}-\frac{1}{2}\ln ^{2}\frac{1}{x} \right) \frac{1}{x}+O\left( \frac{1}{x^{2}}\right)  \\ &=&3+\left( -\frac{3}{2x}+\frac{1}{2x}\left( 3+\ln x\right) ^{2}+\frac{3\ln x }{x}+\frac{\ln ^{2}x}{2x}\right) +O\left( \frac{1}{x^{2}}\right)  \\ &=&3+\frac{3}{x}+6\frac{\ln x}{x}+\frac{\ln ^{2}x}{x}+O\left( \frac{1}{x^{2}} \right)  \\ &\sim &3, \end{eqnarray*}
-\begin{eqnarray*} f(x)&=&(x+3)^{1+1/x}-x^{1+1/(x+3)} \\ &=&\frac{\left( x+3\right) ^{1+1/x}x^{-1-1/(x+3)}-1}{x^{-1-1/(x+3)}} \\ &\sim &\frac{1+\frac{3}{x}+\left( -3\ln \frac{1}{x}+3\right) \frac{1}{x^{2}} +O\left( \frac{1}{x^{3}}\right) -1}{\frac{1}{x}+\left( \ln \frac{1}{x} \right) \frac{1}{x^{2}}+O\left( \frac{1}{x^{3}}\right) } \\ &\sim &3\frac{x+\ln x+1}{x-\ln x} \\ &\sim &3. \end{eqnarray*}
-(x+3)e^{((\ln(x+3))/x)}-xe^{((\ln x)/(x+3))}= 3+{(((x+3)\ln(x+3))/x)-((x\ln x)/(x+3))}+o(1)= 3+o(1)
-\ln(x+3)= \ln x+\ln(1+(3/x))
-(x+a)^{1+1/(x+b)}
-x\to\infty
-(x+a)e^{\log(x+a)/(x+b)}
-\log(x+a)/(x+b)
-e^{\log(x+a)/(x+b)}=1+\log(x+a)/(x+b)+\ldots
-\ldots
-\log(x+a)^2/(x+b)^2
-(x+a)^{1+1/(x+b)}=(x+a)+(x+a)\log(x+a)/(x+b)+(x+a)\ldots
-(x+a)\log(x+a)^2/(x+b)^2
-(x+a)\ldots
-(x+a)^{1+1/(x+b)}-(x+a)-(x+a)\log(x+a)/(x+b)\to0
-x\to\infty
-(x+a)\log(x+a)/(x+b)-\log(x+a)=(a-b)\log(x+a)/(x+b)\to0
-x\to\infty
-\log(x+a)-\log x=\log(1+a/x)\to\log 1=0
-x\to\infty
-(x+a)^{1+1/(x+b)}-(x+a)-\log x\to 0
-(x+a)^{1+1/(x+b)}-(x+\log x)\to a
-a=3
-b=0
-(x+3)^{1+1/x}-(x+\log x)\to 3
-a=0
-b=3
-x^{1+1/(x+3)}-(x+\log x)\to 0
-(x+3)^{1+1/x}-x^{1+1/(x+3)}\to 3

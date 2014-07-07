@@ -1,28 +1,0 @@
-G,T: [1,\infty) \to \mathbb R
-G(x)=\sum_{n \leq x} T\left(\frac{x}{n}\right)
-T(x)=O(x)
-T(x) \sim cx (x \to \infty)
-G(x) \sim cx\log{x} (x \to \infty)
-2
-1
-x\ge1
- |T(x)|\le c_1x 
-\epsilon>0
-B_\epsilon
-x>B_\epsilon
-\displaystyle\sum_{n\le x}\frac{1}{n}=\log(x)+\gamma+O\left(\frac{1}{x}\right)
-G(x)\sim cx\log(x)
- (c-\epsilon)x<T(x)<(c+\epsilon)x 
- \sum_{x\ge n>x/B_\epsilon}\left|T\left(\frac{x}{n}\right)\right|\le\sum_{x\ge n>x/B_\epsilon}c_1\frac{x}{n}\tag{1} 
- \sum_{n\le x/B_\epsilon}(c-\epsilon)\frac{x}{n}\le\sum_{n\le x/B_\epsilon}T\left(\frac{x}{n}\right)\le\sum_{n\le x/B_\epsilon}(c+\epsilon)\frac{x}{n}\tag{2} 
- \begin{align} \left|\sum_{n\le x}T\left(\frac{x}{n}\right)-cx\log(x)\right| &\le\epsilon x(\log(x)-\log(B_\epsilon))+\gamma x+c_1x\log(B_\epsilon)+O\left(1\right)\\ &\le x\log(x)\left(\epsilon+\frac{\gamma+c_1\log(B_\epsilon)+O\left(\frac{1}{x}\right)}{\log(x)}\right) \end{align} 
-T
-[1,\infty)
-T(t) = t + 1/(t-1)^2
-t > 1
-T(1) = 0
-c_1 x < T(x) < c_2 x
-x > N
-|T(x)| <= B
-x \le N
-G(x)

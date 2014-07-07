@@ -1,11 +1,0 @@
-x^m = \sum\limits_{n=0}^m S(m,n) \cdot x \cdot (x-1) \cdots (x-n + 1) 
- x^m = \sum\limits_{n=0}^m S(m,n) \prod\limits_{i=1}^n (x+1-i)
- m = 0 \rightarrow a(0,0) = x^0 = S(0,0) 
- m = 1 \rightarrow a(1,0) + a(1,1) \cdot x = S(1,0) + S(1,1) \cdot x 
- a(2,0) + a(2,1) \cdot x + a(2,2) \cdot x \cdot (x+1) = S(2,0) \cdot x + S(2,1) \cdot x + S(2,2) \cdot x \cdot (x-1)
- \begin{array}{llll} a(3,0) & + a(3,1) \cdot x & + a(3,2) \cdot x \cdot (x+1) & + a(3,3) \cdot x \cdot (x+1) \cdot (x+2) \\ \underbrace{S(3,0) \cdot x}_{\text{always 0}} & +S(3,1) \cdot x & +S(3,2) \cdot x \cdot (x-1) & +S(3,3) \cdot x \cdot (x-1) \cdot (x-2) \end{array}   
- \begin{array}{llll} a(3,0) & + a(3,1) \cdot x & + a(3,2) \cdot x \cdot (x+1) & + a(3,3) \cdot x \cdot (x+1) \cdot (x+2) \\ S(3,0) & +S(3,1) \cdot (-x) & +S(3,2) \cdot (-x) \cdot (-x-1) & +S(3,3) \cdot (-x)(-x-1)(-x-2) \end{array} 
-(-1)^{(n+1)}
- \begin{array}{llll} a(3,0) & + a(3,1) \cdot x & + a(3,2) \cdot x \cdot (x+1) & + a(3,3) \cdot x \cdot (x+1) \cdot (x+2) \\ S(3,0) & +S(3,1) \cdot x & +S(3,2) \cdot x \cdot (x+1) & +S(3,3) \cdot x\cdot(x+1)\cdot(x+2) \end{array} 
-x
--x

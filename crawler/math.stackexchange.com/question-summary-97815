@@ -1,55 +1,0 @@
-X
-Y
-R = \dfrac{\bar{Y}}{\bar{X}}=\dfrac{\sum_{i=1}^nY_i}{\sum_{i=1}^nX_i}
-E(Y\mid X)= aX 
-\operatorname{Var}(Y\mid X) = b^2X^2 
-a,b > 0 \text{ are constants}.
-E(R)
-\operatorname{Var}(R)
-\frac{\bar{Y}}{\bar{X}}
-\mu_X,\mu_Y
-S_n=X_1+\cdots+X_n
-T_n=Y_1+\cdots+Y_n
-R_n=T_n/S_n
-\mathfrak X_n
-(X_i)_{1\leqslant i\leqslant n}
-R_n
-i\leqslant n
-E(Y_i\mid\mathfrak X)=E(Y_i\mid X_i)=aX_i
-E(T_n\mid\mathfrak X_n)=aS_n
-E(R_n\mid\mathfrak X_n)=E(T_n/S_n\mid\mathfrak X_n)=E(T_n\mid\mathfrak X_n)/S_n=a
-i\leqslant n
-E(Y_i^2\mid\mathfrak X_n)=E(Y_i^2\mid X_i)=(b^2+a^2)X_i^2
-i\ne j
-S_n^2
-E(R_n)
-\text{Var}(R_n)
-b
-X_i
-\text{Var}(R_n)
-n
-a
-b
-n=1
-U_1^2=X_1^2=S_1^2
-\text{Var}(R_1)=b^2
-E(R_n)=a. 
- T_n^2=\sum_iY_i^2+\sum_{i\ne j}Y_iY_j 
-E(Y_iY_j\mid\mathfrak X_n)=E(Y_iY_j\mid \sigma(X_i,X_j))=E(Y_i\mid X_i)E(Y_j\mid X_j)=a^2X_iX_j. 
- E(T_n^2\mid\mathfrak X_n)=\sum_i(b^2+a^2)X_i^2+\sum_{i\ne j}a^2X_iX_j=b^2\sum_iX_i^2+a^2S_n^2. 
-\text{Var}(R_n)=b^2E\left(\frac{U_n^2}{S_n^2}\right),\qquad U_n^2=X_1^2+\cdots+X_n^2. 
-n\geqslant1
-\text{Var}(R_n)=nb^2E\left(\dfrac{X_1^2}{S_n^2}\right)\geqslant\dfrac{b^2}n
-X_i
-[0,x]
-n\geqslant1
-\text{Var}(R_n)=\dfrac{2b^2}{n+1}
-n=1
-X
-n
-(X_1, X_2, X_3, \ldots X_n)
-X_i \sim X, Y_i \sim Y
-E[R] = E[E[R|X]] = E[a] = a
-Var[R] = E[Var[R|X]] + Var[E[R|X]]
-E[Var[R|X]] = E[b^2X] = b^2E[X]
-Var[E[R|X]] = Var[a] = 0

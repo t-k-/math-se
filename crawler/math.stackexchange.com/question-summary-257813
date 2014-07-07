@@ -1,9 +1,0 @@
-X\mid P=p\sim\mathrm{binomial}(n,p)
-P\sim \mathrm{beta}(1,2)
-X
-(f_X(x))
- f_{X,P}(x,p) = f_{X\mid P}(x\mid p)f_X(x) = \int_0^1 {{n}\choose{x}}p^x (1-p)^{n-x}\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}p^{\alpha-1}(1-p)^{\beta-1}dp. 
-\mathrm{Beta}(x+\alpha, n-x+\beta)
-1
-{{n}\choose{x}}\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\frac{\Gamma(x+\alpha)\Gamma(n-x+\beta)}{\Gamma(\alpha+n+\beta)}.
-{{n}\choose{x}}\frac{\Gamma(1+2)}{\Gamma(1)\Gamma(2)}\frac{\Gamma(x+1)\Gamma(n-x+2)}{\Gamma(1+n+2)}={{n}\choose{x}}2\frac{\Gamma(x+1)\Gamma(n-x+2)}{\Gamma(n+3)}=2\frac{n!}{x!(n-x)!}\frac{x!(n-x+1)!}{(n+2)!}=2\frac{(n-x+1)}{(n+1)(n+2)}.

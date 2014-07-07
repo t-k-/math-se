@@ -1,18 +1,0 @@
-{\mathbb Z} / N {\mathbb Z}
-A = {1 \over \sqrt{N}} \pmatrix{ \zeta^0& \zeta^0 & \cdots & \zeta^0 \cr \zeta^0& \zeta^1 & \cdots & \zeta^{N-1} \cr \vdots & \vdots &\ddots &\vdots \cr \zeta^0& \zeta^{N-1}  & \cdots & \zeta^1 \cr }
-\zeta \equiv \exp({2 \pi i \over N})
-z_k = exp(\frac{i 2\pi k}{N})
-F(z) = z^N-1 = (z-z_0) ... (z-z_{N-1})
-z=0
- \prod z_i = (-1)^{N+1}
-F(z)
-z=z_0
- N z_0^{N-1} = (z_0 - z_1) (z_0 - z_2)  ... (z_0 - z_{N-1}) 
-z_i
- N^N (\prod z_i)^{N-1} =  \prod_{i \ne j} (z_i - z_j) 
- N^N (-1)^{N+1} =  \prod_{i \ne j} (z_i - z_j) 
-N^{N/2} = | \prod_{i<j} (z_i - z_j)|
-n = 2
-t^2 - t + q
-1 - 4q
-\frac{dt}{dq} = \sum {2k \choose k} q^k = \frac{1}{\sqrt{1 - 4q}}.

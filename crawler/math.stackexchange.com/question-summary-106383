@@ -1,9 +1,0 @@
-X_1,\ldots,X_n
-x
-f(x,\theta)=\frac{1}{\pi[1+(x-\theta)^2]}
-I(\theta)
-I(\theta)=2\sum_i^n E \left[ \frac{1-(x_i-\theta)^2}{(1+(x_i-\theta)^2)^2} \right]
-L(\theta)=\pi^{-n}\prod_i^n \frac{1}{1+(x_i-\theta)^2}
-\Rightarrow l(\theta)=-n\operatorname{log}\pi-\sum_i^n\operatorname{log}(1+(x_i-\theta)^2)
-\Rightarrow l'(\theta)= 2\sum_i^n \frac{x_i-\theta}{1+(x_i-\theta)^2}
-\Rightarrow -l''(\theta)=2\sum_i^n  \frac{1-(x_i-\theta)^2}{(1+(x_i-\theta)^2)^2}

@@ -1,22 +1,0 @@
-X
- \min_{c \in \mathbb{R}} E(|X-c|) \, ? 
-\mathrm E(|X-c|)
-(x-y)^+=\int\limits_y^{+\infty}[t\leqslant x]\mathrm dt
-|x-c|=((-x)-(-c))^++(x-c)^+
-x
-c
- |x-c|=\int\limits_{-c}^{+\infty}[x\leqslant -t]\mathrm dt+\int\limits_c^{+\infty}[x\geqslant t]\mathrm dt. 
-f
-J(c) = E(|X-c|)
-J(c)
-E(|X-c|) = \int_{\mathbb{R}} |x-c| f(x) dx = \int_{-\infty}^{c} (c-x) f(x) dx  + \int_c^{\infty} (x-c) f(x) dx.
-\frac{dJ}{dc} = 0
-\begin{align} \frac{dJ}{dc} & = (c-x)f(x) | _{x=c} + \int_{-\infty}^{c} f(x) dx + (x-c)f(x) | _{x=c} - \int_c^{\infty} f(x) dx\\ & = \int_{-\infty}^{c} f(x) dx - \int_c^{\infty} f(x) dx = 0 \end{align} 
-c
-\int_{-\infty}^{c} f(x) dx = \int_c^{\infty} f(x) dx
-P(X \leq c) = P(X > c).
-P(X \leq c) + P(X > c) = 1
-P(X \leq c) = P(X > c) = \frac12.
-X
-\displaystyle \int_{-\infty}^{c} (c-x) dP(x) = \lim_{y \rightarrow -\infty} (c-y) P(y) + \displaystyle \int_{c}^{\infty} P(x) dx.
-\displaystyle \int_{c}^{\infty} (x-c) dP(x) = \lim_{y \rightarrow \infty} (y-c) P(y) - \displaystyle \int_{c}^{\infty} P(x) dx.

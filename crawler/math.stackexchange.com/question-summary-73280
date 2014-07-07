@@ -1,17 +1,0 @@
-(\Omega, \mathcal{F},P)
-X\colon\Omega \to \mathbb{R},Y \colon \Omega \to \mathbb{R}
-P(X=x)=P(Y=y)=0~\forall x,y \in \mathbb{R}
-F_{X,Y}
-F_Y
-P(X \leq x | y \leq Y \leq y + \delta y) = \frac{P( X \leq x, y \leq Y \leq y + \delta y)}{P(y \leq Y \leq y + \delta y)} = \frac{F_{X,Y}(x,y+\delta y) - F_{X,Y}(x,y)}{F_Y(y+\delta y) - F_Y(y)}
-\lim_{\delta y \to 0} \frac{F_{X,Y}(x,y+\delta y) - F_{X,Y}(x,y)}{F_Y(y+\delta y) - F_Y(y)}.
-\frac{0}{0}
- f_{X|Y}(x,y) =  \lim_{\delta y \to 0} \left(\frac{\partial F_{X,Y}(x,y+\delta y) - F_{X,Y}(x,y)}{\partial x}\frac{1}{F_Y(y+\delta y) - F_Y(y)}\right)
-\frac{0}{0}
-x
- F_{X|Y}(x,y) =  \lim_{\delta y \to 0} \left(\frac {F_{X,Y}(x,y+\delta y) - F_{X,Y}(x,y)}{F_Y(y+\delta y) - F_Y(y)}\right)
-\lim_{\delta y \to 0} \left(\frac {\partial {F_{X,Y}(x,y+\delta y) - F_{X,Y}(x,y)}}{\partial \delta y} \frac{1}{\frac{\partial F_Y(y+\delta y) - F_Y(y)}{\partial \delta y}} \right)
-\frac{\partial {F_{X,Y}(x,y)}}{\partial y} \frac{1}{f_Y(y)}
-f_{X|Y}(x,y) := \frac{\partial F_{X|Y}(x,y)}{\partial x}=\frac{\partial^2 {F_{X,Y}(x,y)}}{\partial x\partial y} \frac{1}{f_Y(y)} := \frac{f_{X,Y}(x,y)}{f_Y(y)}
-F_{X,Y}(x,y)
-\frac{\partial {F_{X,Y}(x,y)}}{\partial y} 

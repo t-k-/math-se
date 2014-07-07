@@ -1,7 +1,0 @@
-T(n) = 2T(n-1) + n;\; n \ge2\text{ and }T(1) = 1.
-\begin{align}T(n) &= 2T(n-1) + n\\ &= 2(2T(n-2) + (n-1)) + n\\ &= 4T(n-2) + 3n -2\\ &= 2(4T(n-3) + 3(n-1) -2) + n\\ &= 2(4T(n-3) + 3n -3 -2) + n\\ &= 2(4T(n-3) + 3n -5) + n\\ &= 8T(n-3) + 6n - 10 + n\\ &= 8T(n-3) +7n -10\end{align}
-\begin{align*} T(n)&=2T(n-1)+n\\ &=2\Big(2T(n-2)+(n-1)\Big)+n\\ &=2^2T(n-2)+2(n-1)+n\\ &=2^2\Big(2T(n-3)+(n-2)\Big)+2(n-1)+n\\ &=2^3T(n-3)+2^2(n-2)+2(n-1)+n\;. \end{align*}
-k
-\begin{align*} T(n)&=2^kT(n-k)+2^{k-1}\big(n-(k-1)\big)+2^{k-2}\big(n-(k-2)\big)+\ldots+2^1(n-1)+2^0n\\ &=2^kT(n-k)+\sum_{i=0}^{k-1}2^i(n-i)\;. \end{align*}
-\sum_{i=0}^m2^i(n-i)=\sum_{i=0}^m2^in-\sum_{i=0}^m2^ii=n\sum_{i=0}^m2^i-\sum_{i=0}^mi2^i
-m

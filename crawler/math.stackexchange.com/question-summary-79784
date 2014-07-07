@@ -1,46 +1,0 @@
-n
-\frac{n}{\log_2{n}-2\log_2{\log_2{n}}}
-(\log_2{n}-2\log_2{\log_2{n}})
-2*(\frac{1}{2})^{\log_2{n}-2\log_2{\log_2{n}}}
-2*[\frac{1}{n}*(\log_2{n})^2]
-(1-\frac{2}{n}(\log_2{n})^2)^{\frac{n}{{\log_2{n}-2\log_2{\log_2{n}}}}} \approx e^{-\frac{2(\log_2{n})^2}{log_2{n}-2log_2{log_2{n}}}} \le e^{-\frac{2(\log_2{n})^2}{log_2{n}}} = e^{-2\log_2{n}} =\Theta(\frac{1}{n^2})
-1/n^2
-1/n
-L
-n
-n
-A
-L
-A_k
-L
-k\pmod{L}
-B_k^i
-k+iL
-k+(i+1)L-1
-A
-k
-\mathbb Z_L
-A_k
-A_k
-i\leqslant n/L
-B_k^i
-k
-\mathbb Z_L
-(B_k^i)_i
-1-2\cdot2^{-L}
-k
-\mathbb Z_L
-L=L(n)
- L(n)=\log_2(n)-2\log_2\log_2(n)+o(\log_2\log_2(n)), 
-\log\mathrm P(A_1)\leqslant-\log(n)
-n
-\mathrm P(A)\leqslant \mathrm P(A_1)\leqslant1/n
- \mathrm P(A_k)=\mathrm P\left(\bigcap\limits_{i\leqslant n/L}B_k^i\right)=\prod\limits_{i\leqslant n/L}\mathrm P\left(B_k^i\right)=\mathrm P(B_k^1)^{n/L}=(1-2\cdot2^{-L})^{n/L}, 
- \mathrm P(A)=\mathrm P\left(\bigcap\limits_{k\in\mathbb Z_L}A_k\right)\leqslant\mathrm P(A_1). 
- \log\mathrm P(A_1)\sim2n/(L2^L)\sim-2\log(n), 
-\mathrm P(A)\leqslant1/n^{u}
-n
-u<2
-1/n
-L
-1\pmod{L}

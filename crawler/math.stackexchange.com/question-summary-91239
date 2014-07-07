@@ -1,39 +1,0 @@
- A^{100}
-A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \\ \end{pmatrix}
- P([A]) = \sum\limits_{k=1}^{n} P(\lambda _{k}) Z_{k}([A])
- \lambda_{k}
- Z_{k}([A])=\frac{\prod\limits_{r\neq k} (A - \lambda_{k}I)}{\prod\limits_{r\neq k} (\lambda_{r}- \lambda_{k}I)} , k= 1, \dots, 100
-A
-f(t)
-\lambda_1,\ldots,\lambda_n
-A
-n
-A_i
-A
-f(A) = \sum_{i=1}^n f(\lambda_i)A_i
-A_i = \prod_{\stackrel{j=1}{j\neq i}}^n \frac{1}{\lambda_i-\lambda_j}(A-\lambda_jI).
-2\times 2
-f(A) = f(\lambda_1)A_1 + f(\lambda_2)A_2,
-A_1 = \frac{1}{\lambda_1-\lambda_2}(A-\lambda_2I),\qquad A_2 = \frac{1}{\lambda_2-\lambda_1}(A-\lambda_1I).
-f(t)=t^{100}
-(2-t)^2 - 1 = t^2-4t+3
-A
-3
-4
-4
-3
-\lambda_1=1
-\lambda_2 = 3
-\begin{align*} A_1 &= \frac{1}{1-3}(A-3I) = -\frac{1}{2}\left(\begin{array}{rr} -1&1\\ 1& -1 \end{array}\right)\\ A_2 &= \frac{1}{3-1}(A-I) = \frac{1}{2}\left(\begin{array}{cc} 1&1\\ 1& 1 \end{array}\right). \end{align*}
-A^{100} = f(A) = \left(-\frac{f(1)}{2}\left(\begin{array}{rr}-1&1\\1&-1\end{array}\right)\right) + \left(\frac{f(3)}{2}\left(\begin{array}{cc}1&1\\1&1 \end{array}\right)\right).
-A
-(1,-1)
-\lambda_1=1
-(1,1)
-\lambda_2=3
-(PAP^{-1})^n = PA^nP^{-1}
-A^{100}
- \left(\begin{array}{rr} \frac{1}{2} & -\frac{1}{2}\\ \frac{1}{2} & \frac{1}{2} \end{array}\right) A \left(\begin{array}{rr} 1 & 1\\ -1 & 1 \end{array}\right) = \left(\begin{array}{cc}1 & 0\\0 & 3 \end{array}\right).
-\begin{align*}  \left(\begin{array}{rr} \frac{1}{2} & -\frac{1}{2}\\ \frac{1}{2} & \frac{1}{2} \end{array}\right) A^{100} \left(\begin{array}{rr} 1 & 1\\ -1 & 1 \end{array}\right) &= \left(\left(\begin{array}{rr} \frac{1}{2} & -\frac{1}{2}\\ \frac{1}{2} & \frac{1}{2} \end{array}\right) A \left(\begin{array}{rr} 1 & 1\\ -1 & 1 \end{array}\right) = \left(\begin{array}{cc}1 & 0\\0 & 3 \end{array}\right)\right)^{100} \\ &= \left(\begin{array}{cc} 1& 0\\ 0 & 3 \end{array}\right)^{100}. \end{align*}
-\left(\begin{array}{rr}1 & 1\\-1 & 1 \end{array}\right)
-\left(\begin{array}{rr} \frac{1}{2} & -\frac{1}{2}\\ \frac{1}{2} & \frac{1}{2}\end{array}\right)

@@ -1,70 +1,0 @@
-\mathbf{\hat i}
-\mathbf{\hat j}
-\mathbf{\hat k}
-\mathbf{F} = x\mathbf{\hat i} + y\mathbf{\hat j} + z\mathbf{\hat k}
-\mathbf{\hat r}
-\boldsymbol{\hat \theta}
-\boldsymbol{\hat \phi}
-\begin{align} F_r &= \sqrt{{F_x}^2 + {F_y}^2 + {F_z}^2}\\ F_\theta &= \tan^{-1} \frac{F_y}{F_x}\\ F_\phi &= \cos^{-1} \frac{F_z}{F_r} \end{align}
-\begin{align} x &= r\cos{\theta}\sin{\phi}\\ y &= r\sin{\theta}\sin{\phi}\\ z &= r\cos{\phi} \end{align}
-\begin{align} \mathbf{F} &= F_{r}\mathbf{\hat r} + F_{\theta}\boldsymbol{\hat \theta} + F_{\phi}\boldsymbol{\hat \phi} \end{align}
-\begin{align} \mathbf{F} &= \sqrt{x^2 + y^2 + z^2}\mathbf{\hat r} + \tan^{-1} \frac{y}{x}\boldsymbol{\hat \theta} + \cos^{-1} \frac{z}{\sqrt{x^2 + y^2 + z^2}}\boldsymbol{\hat \phi} \end{align}
-x
-y
-z
-r
-\theta
-\phi
-\begin{bmatrix}\boldsymbol{\hat\rho} \\ \boldsymbol{\hat\theta}  \\ \boldsymbol{\hat\phi} \end{bmatrix}  = \begin{bmatrix} \sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta \\                    \cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta \\                    -\sin\phi          & \cos\phi           & 0 \end{bmatrix}    \begin{bmatrix} \mathbf{\hat x} \\ \mathbf{\hat y} \\ \mathbf{\hat z} \end{bmatrix}
-\mathbf{F} = x\mathbf{\hat i} + y\mathbf{\hat j} + z\mathbf{\hat k} = F_{r}\mathbf{\hat r} + F_{\theta}\boldsymbol{\hat \theta} + F_{\phi}\boldsymbol{\hat \phi}
-\mathbf{F} = x\mathbf{\hat i} + y\mathbf{\hat j} + z\mathbf{\hat k}
-\mathbf{F} = \rho \boldsymbol{\hat\rho} 
-\mathbf{F}
-\boldsymbol{\hat\rho}
-(x,y,z)
-|\mathbf{F}(x,y,z)| = \sqrt{x^2+y^2+z^2} = \rho
-(x,y,z)
-\begin{bmatrix}\boldsymbol{\hat\rho} \\ \boldsymbol{\hat\theta}  \\ \boldsymbol{\hat\phi} \end{bmatrix}  = \begin{bmatrix} \sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta \\                    \cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta \\                    -\sin\phi          & \cos\phi           & 0 \end{bmatrix}    \begin{bmatrix} \mathbf{\hat x} \\ \mathbf{\hat y} \\ \mathbf{\hat z} \end{bmatrix}
-(x,y)
-\mathbf{\hat{r}}
-\boldsymbol{\hat\theta}
-(1/\sqrt{2},1/\sqrt{2})
-\mathbf{\hat{r}}
-\boldsymbol{\hat\theta}
-\mathbf{\hat{r}}
-\boldsymbol{\hat{\theta}}
-(x,y)
-\mathbf{\hat{r}}
-\theta
-(r \cos \theta, r \sin \theta)
-\mathbf{\hat{r}}
-r
-r
-\frac{d}{dr} (r \cos \theta, r \sin \theta) = (\cos \theta, \sin \theta)
-\mathbf{\hat{r}} = \cos \theta \mathbf{\hat{x}} + \sin \theta \mathbf{\hat{y}} 
-r
-(r \cos \theta, r \sin \theta)
-\boldsymbol{\hat\theta}
-\frac{d}{d\theta} (r \cos \theta, r \sin \theta) = (-r \sin \theta, r \cos \theta)
-\boldsymbol{\hat\theta}= -\sin \theta \mathbf{\hat{x}} +  \cos \theta \mathbf{\hat{y}} 
-\begin{bmatrix} \mathbf{\hat{r}} \\ \boldsymbol{\hat\theta}\end{bmatrix} = \begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix} \begin{bmatrix} \mathbf{\hat{x}} \\ \mathbf{\hat{y}} \end{bmatrix}
-(x,y,z)
-\boldsymbol{\hat\rho}
-\boldsymbol{\hat\theta}
-\boldsymbol{\hat{\phi}}
-\theta
-\phi
-\boldsymbol{\hat\rho}
-\boldsymbol{\hat\theta}
-\boldsymbol{\hat{\phi}}
-(\rho \sin \theta \cos \phi, \rho \sin \theta \sin \phi, \rho \cos \theta)
-\rho
-\theta
-\phi
-\begin{bmatrix}\boldsymbol{\hat\rho} \\ \boldsymbol{\hat\theta}  \\ \boldsymbol{\hat\phi} \end{bmatrix}  = \begin{bmatrix} \sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta \\                    \cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta \\                    -\sin\phi          & \cos\phi           & 0 \end{bmatrix}    \begin{bmatrix} \mathbf{\hat x} \\ \mathbf{\hat y} \\ \mathbf{\hat z} \end{bmatrix}
-\mathbf{\hat{x}}, \mathbf{\hat{y}}, \mathbf{\hat{z}}
-\mathbf{F} = x\mathbf{\hat i} + y\mathbf{\hat j} + z\mathbf{\hat k}
-\mathbf{F} = \rho \boldsymbol{\hat\rho} + 0 \boldsymbol{\hat\theta} + 0 \boldsymbol{\hat{\phi}} = \rho \boldsymbol{\hat{\rho}}
-\begin{bmatrix} \sin \theta \cos \phi & \sin \theta \sin \phi & \cos \theta \\ \cos \theta \cos \phi & \cos \theta \sin \phi & -  \sin \theta \\ - \sin \phi & \cos \phi & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} \sin \theta \cos \phi & \sin \theta \sin \phi & \cos \theta \\ \cos \theta \cos \phi & \cos \theta \sin \phi & - \sin \theta \\ - \sin \phi & \cos \phi & 0 \end{bmatrix} \begin{bmatrix} \rho \sin \theta \cos \phi \\ \rho \sin \theta \sin \phi \\ \rho \cos \theta \end{bmatrix} 
-= \begin{bmatrix} \rho \sin^2 \theta \cos^2 \phi + \rho \sin^2 \theta \sin^2 \phi + \rho \cos^2 \theta \\ \rho \sin \theta \cos \theta \cos^2 \phi + \rho \sin \theta \cos \theta \sin^2 \phi - \rho \sin \theta \cos \theta \\ - \rho \sin \theta \sin \phi \cos \phi + \rho \sin \theta  \sin \phi \cos \phi + 0 \end{bmatrix} = \begin{bmatrix} \rho \\ 0 \\ 0\end{bmatrix}.
-(r,\theta,\phi)=\left(\sqrt{x^2 + y^2 + z^2},\;\; \tan^{-1} \frac{y}{x},\;\; \cos^{-1} \frac{z}{\sqrt{x^2 + y^2 + z^2}}\right)

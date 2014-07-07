@@ -1,29 +1,0 @@
-\omega
-\mathbb{R}^3
-\omega = x\,dy\wedge dz + y\,dz\wedge dx + z\,dx\wedge dy
-\omega
-(\rho,\phi,\theta)
-d\omega
-\omega=\rho^3\sin\phi\,d\phi\wedge d\theta
-\omega|_{S^2} = \iota^*\omega
-\iota:S^2\to\mathbb{R}^3
-(\phi,\theta)
-p\in S^2
-\left(\frac{\partial}{\partial\phi},\frac{\partial}{\partial\theta}\right)
-T_pS^2
--\frac{\pi}{2}<\phi<\frac{\pi}{2}
-0<\theta<2\pi
-(\iota^*\omega)_{(\phi,\theta)}\left(\frac{\partial}{\partial\phi},\frac{\partial}{\partial\theta}\right)=\omega_{\iota(\phi,\theta)}\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)=\sin\phi\,d\phi\wedge d\theta\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)\,.
-\iota: S^2\rightarrow\mathbb{R}^3
-\iota
-\iota(\phi,\theta)=(\cos\phi\cos\theta,\cos\phi\sin\theta,\sin\phi).
-d\iota=\left[                            \begin{array}{cc}                             -\sin\phi\cos\theta  & -\cos\phi\sin\theta \\                              -\sin\phi\sin\theta & \cos\phi\cos\theta \\                              \cos\phi & 0 \\                             \end{array}                          \right],
-\iota_*\left(\frac{\partial}{\partial\phi}\right)=-\sin\phi\cos\theta\frac{\partial}{\partial x}-\sin\phi\sin\theta\frac{\partial}{\partial y}+\cos\phi\frac{\partial}{\partial z},
-\iota_*\left(\frac{\partial}{\partial\theta}\right)=-\cos\phi\sin\theta\frac{\partial}{\partial x}+\cos\phi\cos\theta\frac{\partial}{\partial y}.
-dy\wedge dz\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)=-\cos^2\phi\cos\theta
-dy\wedge dz\left(X,Y\right)=\left[                            \begin{array}{cc}                             dy(X)  & dz(X) \\                              dy(Y) & dz(Y) \\                            \end{array}                          \right].
-dz\wedge dx\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)=-\cos^2\phi\sin\theta,  dx\wedge dy\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)=-\sin\phi\cos\phi.
-(\iota^*\omega)_{(\phi,\theta)}\left(\frac{\partial}{\partial\phi},\frac{\partial}{\partial\theta}\right)=\omega_{\iota(\phi,\theta)}\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)
-=\cos\phi\cos\theta dz\wedge dy\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)+\cos\phi\sin\theta dz\wedge dx\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)
-+\sin\phi dx\wedge dy\left(\iota_*\left(\frac{\partial}{\partial\phi}\right),\iota_*\left(\frac{\partial}{\partial\theta}\right)\right)
-=-\cos^3\phi\cos^2\theta-\cos^3\phi\sin^2\theta-\sin^2\phi\cos\phi=-\cos\phi.

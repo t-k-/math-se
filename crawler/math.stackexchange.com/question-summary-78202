@@ -1,18 +1,0 @@
-\sum\limits_{n=-\infty}^\infty {z^n\over n}-\sum\limits_{n=-\infty}^\infty {z^{2n}\over 2n}
-z=Re^{i\theta}
-n=0
-|z|\not=1
-R=1
-(1)
- \sum_{k=-\infty}^\infty\frac{z^{2k+1}}{2k+1}\tag{1} 
- \sum_{k=0}^\infty\frac{z^{2k+1}}{2k+1}=\frac{1}{2}\log\left(\frac{1+z}{1-z}\right)\tag{2} 
- \begin{align} \sum_{k=-\infty}^\infty\frac{e^{i(2k+1)\theta}}{2k+1} &=\sum_{k=0}^\infty\frac{e^{i(2k+1)\theta}-e^{-i(2k+1)\theta}}{2k+1}\\ &=\frac{1}{2}\log\left(\frac{1+e^{i\theta}}{1-e^{i\theta}}\right)-\frac{1}{2}\log\left(\frac{1+e^{-i\theta}}{1-e^{-i\theta}}\right)\\ &=\frac{1}{2}\log\left(\frac{e^{-i\theta/2}+e^{i\theta/2}}{e^{-i\theta/2}-e^{i\theta/2}}\right)-\frac{1}{2}\log\left(\frac{e^{i\theta/2}+e^{-i\theta/2}}{e^{i\theta/2}-e^{-i\theta/2}}\right)\\ &=\frac{1}{2}\log(i\cot(\theta/2))-\frac{1}{2}\log(-i\cot(\theta/2))\\ &=\left\{\begin{array}{}+\frac{\pi}{2}i&\text{ when }0<\theta<\pi\\-\frac{\pi}{2}i&\text{ when }-\pi<\theta<0\end{array}\right.\tag{3} \end{align} 
-n=0
-f(z)=\sum_{n\in\mathbb{Z}\backslash \{0\}}\frac{z^n}{n}-\sum_{n\in\mathbb{Z}\backslash \{0\}}\frac{z^{2n}}{2n}.
-f(z)=\sum_{n=1}^\infty \frac{z^n}{n}-\sum_{n=1}^\infty\frac{z^{-n}}{n}-\sum_{n=1}^\infty \frac{z^{2n}}{2n}+\sum_{n=1}^\infty \frac{z^{-2n}}{2n}.
-\sum_{n=1}^\infty \frac{z^n}{n}=-\log(1-z)
--\log(1-z)+\log\left(1-z^{-1}\right)+\frac{1}{2}\log\left(1-z^{2}\right)-\frac{1}{2}\log\left(1-z^{-2}\right).
-\frac{1}{2}\log(-1)
-2\pi
-\frac{1}{2}\log\left(\frac{\left(1-z^{-1}\right)^2\left(1-z^{2}\right)}{\left(1-z\right)^2\left(1-z^{-2}\right)}\right)=\frac{1}{2}\log\left(\frac{\left(1-z^{-1}\right)\left(1+z\right)}{\left(1-z\right)\left(1+z^{-1}\right)}\right)=\frac{1}{2}\log(-1).
-f(z)=\frac{\pi i}{2}\ \text{for} \ |z|=1,\ \text{Im}(z)>0\ \text{and} \ f(z)=-\frac{\pi i}{2}\ \text{for} \ |z|=1,\ \text{Im}(z)<0.

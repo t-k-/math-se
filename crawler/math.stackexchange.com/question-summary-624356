@@ -1,9 +1,0 @@
-\sum{||A_{i}x-b_{i}||}
-A_{i}
-b_{i},x
-\sum{||y_{i}||}
-y_{i}=A_{i}x-b{i}
-y_{i}
-\mathcal{L}(x,y_i,\lambda_i)=\sum_i \|y_i\|+\lambda_i^T(y_i - A_i x+b_i)
-\inf_{x, y_i} \mathcal{L}(x,y_i,\lambda_i) =\begin{cases} -\infty & \text{ if } \sum_i A_i^T\lambda_i \ne 0 \ \text{  or  } \ \|\lambda_i\| > 1 \\ \sum_i  b_i^T \lambda_i & \text{ otherwise } \end{cases} 
- \begin{gathered}\max_{\lambda_i} \sum_i  b_i^T \lambda_i\\ \text{s.t.}: \sum_i A_i^T\lambda_i = 0, \\ \quad\|\lambda_i\| \le 1, \ \forall \ i. \end{gathered} 

@@ -1,30 +1,0 @@
-A
-B
-\exists P: B = P^{-1}AP
-A
-{\lambda_i, v^{(A)}_i}
-A.v^{(A)}_i = \lambda_i v^{(A)}_i
-T_A = \left\{v^{(A)}_1, \ldots, v^{(A)}_n\right\}
-A.T_A = T_A.D
-D
-(A.T_A)_{j, i} = (A.v^{(A)}_i)_j = \lambda_i (v^{(A)}_i)_j = (T_A.D)_{j,i}
-B.T_B = T_B.D
-T_B
-T_A
-D = T_B^{-1}.B.T_B = T_A^{-1}.A.T_A
-B=(T_A.T_B^{-1})^{-1}.A.(T_A.T_B^{-1})
-T_A
-T_B
-D_1 = \left( \begin{array}{ccc}  4 & 1 & 0 \\  0 & 4 & 0 \\  0 & 0 & 1 \\ \end{array} \right)
-D_2 = \mathrm{diag}(4,4,1)
-s_1=\left( \begin{array}{ccc}  -1 & 1 & 1 \\  1 & 1 & -1 \\  0 & 2 & 2 \\ \end{array} \right)
-s_2 = \left( \begin{array}{ccc}  1 & -1 & 0 \\  2 & 1 & 0 \\  -2 & -2 & 2 \\ \end{array} \right)
-A = s_1.D_1.s_1^{-1}
-B=s_2.D_2.s_2^{-1}
-    A = \left( \begin{array}{ccc}  5 & 1 & -\frac{3}{2} \\  -1 & 3 & \frac{3}{2} \\  3 & 3 & 1 \\ \end{array} \right) \quad \quad  B = \frac{1}{3} \left( \begin{array}{ccc}  10 & 1 & 0 \\  -4 & 14 & 0 \\  10 & -14 & 3 \\ \end{array} \right) 
-A
-Q
-\Lambda
-B
-R
-\begin{array}{rl} A &= Q\Lambda Q^{-1} \Rightarrow \Lambda=Q^{-1}\Lambda Q,\\    B &= R\Lambda R^{-1} = (QR^{-1})^{-1}A\underbrace{(QR^{-1})}_{=P}\end{array}

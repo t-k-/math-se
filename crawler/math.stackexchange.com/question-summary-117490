@@ -1,39 +1,0 @@
-F
-\Omega=(0,1]
-d_i(\omega)=d_1(F^{i-1}\omega)
-\omega=\sum_{i=1}^{\infty }d_i(\omega)/{2^i}
-F\omega=\begin{Bmatrix} 2\omega & \mbox{if } 0< \omega\leqslant\frac{1}{2} \\  2\omega-1 & \mbox{if } \frac{1}{2}< \omega\leqslant1  \end{Bmatrix} 
-d_1(\omega)=\begin{Bmatrix} 0 & \mbox{if } 0< \omega\leqslant\frac{1}{2} \\  1 & \mbox{if } \frac{1}{2}< \omega\leqslant1  \end{Bmatrix} 
-F^2(\omega)=\begin{cases} 4\omega,&\text{if }0<\omega\le\frac14\\\\ 4\omega-1,&\text{if }\frac14<\omega\le\frac12\\\\ 4\omega-2,&\text{if }\frac12<\omega\le\frac34\\\\ 4\omega-3,&\text{if }\frac34<\omega\le1\;. \end{cases}
-n
-k=0,\dots,2^n-1
-F^n(\omega)=2^n\omega-k
-\frac{k}{2^n}<\omega\le\frac{k+1}{2^n}
-\frac{k}{2^n}<\omega\le\frac{k+1}{2^n}
-k<2^n\omega\le k+1
-k=\lceil 2^n\omega\rceil-1
-F^n(\omega)=2^n\omega-\lceil 2^n\omega\rceil+1
-\omega\in(0,1]
-0<\omega-\frac{d_1(\omega)}2\le\frac12
-0<\omega-\sum_{k=1}^n\frac{d_k(\omega)}{2^k}\le\frac1{2^n}\;.\tag{1}
-m=\sum_{k=1}^nd_k(\omega)2^{n-k}
-m
-m<2^n\omega\le m+1
-m+1=\lceil 2^n\omega\rceil
-2^n\omega-\lceil 2^n\omega\rceil+1=2^n\omega-m
-0<2^n\omega-\sum_{k=1}^nd_k(\omega)2^{n-k}\le 1\;.
-d_{n+1}(\omega)=d_1(F^n(\omega))=d_1(2^n\omega-\lceil 2^n\omega\rceil+1)=d_1(2^n\omega-m)
-1
-2^n\omega-m>\frac12
-0
-\begin{align*} 2^n\omega-1>\frac12&\text{ iff }\omega-\frac{m}{2^n}>\frac1{2^{n+1}}\\ &\text{ iff }\omega-\sum_{k=1}^n\frac{d_k(\omega)}{2^k}>\frac1{2^n}\\ &\text{ iff }\omega-\sum_{k=1}^{n+1}\frac{d_k(\omega)}{2^k}>0\;, \end{align*}
-0<\omega-\sum_{k=1}^{n+1}\frac{d_k(\omega)}{2^k}\le\frac1{2^{n+1}}\;.\tag{2}
-(2)
-2^n\omega-m\le 1
-(1)
-(2)
-(1)
-n\ge 1
-\frac1{2^n}\to 0
-n\to\infty
-\omega=\sum_{k=1}^\infty\frac{d_k(\omega)}{2^k}\;.

@@ -1,22 +1,0 @@
-\frac{1}{(1-z^{-1})^2}
-y[n]
-Y(z)
-\sum \limits_{k=-\infty}^{n} y[k]
-\frac{Y(z)}{1 - z^{-1}}
-\delta[n]
-1
-(1-z^{-1})^{-1}
- u[n] = \begin{cases} 1, &n \geqslant 0, \\ 0, &n < 0, \end{cases} 
-(1-z^{-1})^{-2}
-\qquad \diamond
- \sum_{k=-\infty}^{n} u[k] = \sum_{k=-\infty}^n [k \geqslant 0] = \begin{cases} n+1, &n \geqslant 0, \\ 0, &n < 0, \end{cases} 
-U(z) = (1 - z^{-1})^{-1}
-n \cdot u[n]
-z^{-1}
-1
-(n+1)\cdot u[n+1]
-(1-z^{-1})^{-2}
-(n+1) \cdot u[n+1]
-\qquad \diamond
- u[n] = \begin{cases} 1, &n \geqslant 0, \\ 0, &n < 0,\end{cases} 
- - z \frac{d U(z)}{dz} = -z \cdot \frac{(-1)}{(1 - z^{-1})^{2}} \cdot \frac{1}{z^2} = \frac{z^{-1}}{(1-z^{-1})^2}.  

@@ -1,8 +1,0 @@
-(x \in A) \land (x\notin B) \lor (x \notin A) \land (x\in B)
-A \Delta B = (A \cup B)
-(A\cap B)
-\begin{align} & x\in (A \Delta B) \iff \Big[(x \in A) \land (x\notin B)\Big] \lor \Big[(x \notin A) \land (x\in B)\Big]\\ \\ & \iff \Big[x \in A \lor (x \notin A \land x \in B)\Big] \land \Big[x\notin B \lor (x\notin A \land x\in B)\Big]\\ \\  & \iff (x \in A \lor x \notin A) \land (x\in A \lor x \in B) \land (x \notin B \lor x\notin A) \land (x \notin B \lor x\in B) \\ \\ &\iff T \land (x \in a \lor x \in B) \land (x \notin A \lor x \notin B) \land T \\ \\ & \iff (x \in A \lor x \in B) \land (x\notin A \lor x \notin B) \\ \\ & \iff (x \in A \cup B) \land \lnot (x \in A \land x\in B) \\ \\  & \iff \Big[x \in (A\cup B)\Big] \land  \Big[x\notin (A\cap B)\Big] \\ \\ & \iff x \in \Big[(A\cup B)\setminus(A \cap B)\Big] \end{align} 
-\begin{array}{ll} (A\setminus B)\cup (B\setminus A)&=\left\{x\mid (x\in A\land x\not\in B)\lor (x \not\in A \land x \in B)\right\}\\ &=\left\{x\mid (x\in A\lor x \not\in A) \land (x\in A\lor x \in B) \land (x\not\in B\lor x \not\in A) \land (x\not\in B\lor x \in B)\right\}\\ &=\left\{x\mid (x\in A\lor x \in B) \land (x\not\in B\lor x \not\in A) \right\}\\ &=\left\{x\mid (x\in A\lor x \in B) \land \lnot(x\in B\land x \in A) \right\}\\ (A\setminus B)\cup (B\setminus A) &= (A\cup B) \setminus (A\cap B) \end{array}
-(A \setminus B) ∪ (B \setminus A) = (A ∩ B') ∪ (B ∩ A') = (A ∪ B) ∩ (A ∪ A') ∩ (B' ∪ B) ∩ (B' ∪ A') = (A ∪ B) ∩ (A ∩ B)' = (A ∪ B) \setminus (A ∩ B)
-X'
-X

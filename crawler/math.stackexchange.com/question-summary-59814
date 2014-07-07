@@ -1,34 +1,0 @@
-x,y,z\in [1,4]
-x \geq y
-x \geq z
-u,v\in[\frac{1}{4},1]
-P
-u
-v
-\frac{\partial P}{\partial u}=\frac{\partial P}{\partial v}=0
-u,v\in[\frac{1}{4},1]
-u\frac{\partial P}{\partial u}+v\frac{\partial P}{\partial v}\ge\frac{1}{25}
- P=\frac{1}{2+3u}+\frac{u}{u+v}+\frac{v}{v+1} 
- \begin{align} \frac{\partial P}{\partial u}&=-\frac{3}{(2+3u)^2}+\frac{v}{(u+v)^2}\\ \frac{\partial P}{\partial v}&=-\frac{u}{(u+v)^2}+\frac{1}{(v+1)^2} \end{align} 
- 0=u\frac{\partial P}{\partial u}+v\frac{\partial P}{\partial v}=-\frac{3u}{(2+3u)^2}+\frac{v}{(v+1)^2} 
- \begin{array}{c} \frac{12}{121}\le\frac{3u}{(2+3u)^2}\le\frac{3}{25}\\ \frac{4}{25}\le\frac{v}{(v+1)^2}\le\frac{1}{4} \end{array} 
-(u,v)\cdot\nabla P=u\frac{\partial P}{\partial u}+v\frac{\partial P}{\partial v}\ge\frac{1}{25}
-[\frac{1}{4},1]\times[\frac{1}{4},1]
-u=\frac{1}{4}
-v=\frac{1}{4}
-P(\frac{1}{4},\frac{1}{4})=\frac{117}{110}
-P(\frac{1}{4},\frac{1}{2})=\frac{34}{33}
-P(\frac{1}{4},1)=\frac{117}{110}
-P(\frac{1}{4},\frac{1}{2})
-P(\frac{1}{4},\frac{1}{4})=\frac{117}{110}
-P(1,\frac{1}{4})=\frac{33}{20}
-P(\frac{1}{4},\frac{1}{4})
-\frac{34}{33}
-\partial_zP(x,y,z)
-P(x,y,z)
-z
-(x-y)(z^2-xy)
-Q(\frac12)=1+\frac1{33}<1+\frac15
-P
-(4,1,2)
-P(4,1,2)=Q(\frac12)=1+\frac1{33}

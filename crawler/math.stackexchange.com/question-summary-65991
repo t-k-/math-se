@@ -1,27 +1,0 @@
-\int \sqrt{1+x^{\frac{3}{2}}} \operatorname d x
-u = x^3
-x=u^2
-2\int u\sqrt{1+u^3}\mathrm du
-(u+1)(u^2-u+1)
-u=-\frac{-1+\sqrt{(-1)^2-(-1)+1}+(-1-\sqrt{(-1)^2-(-1)+1})v}{1+v}=\frac{2\sqrt{3}}{1+v}-(1+\sqrt{3})
-12\int\frac{(1-\sqrt{3}+(1+\sqrt{3})v)}{(1+v)^5}\sqrt{(1-v^2)\left(2\sqrt{3}-3+(2\sqrt{3}+3\right) v^2)}\mathrm dv
--12\int\frac{(1-\sqrt{3}+(1+\sqrt{3})\mathrm{cn}(w|m))}{(1+\mathrm{cn}(w|m))^5}\sqrt{2\sqrt{3}-3+(2\sqrt{3}+3)\mathrm{cn}^2(w|m)}\mathrm{sn}^2(w|m)\mathrm{dn}(w|m)\mathrm dw
--24\sqrt[4]{3}\int\frac{(1-\sqrt{3}+(1+\sqrt{3})\mathrm{cn}(w|m))}{(1+\mathrm{cn}(w|m))^5}\sqrt{1-\frac{2+\sqrt{3}}{4}\mathrm{sn}^2(w|m)}\mathrm{sn}^2(w|m)\mathrm{dn}(w|m)\mathrm dw
-m=\dfrac{2+\sqrt{3}}{4}
-\mathrm{dn}^2(w|m)+m\,\mathrm{sn}^2(w|m)=1
--24\sqrt[4]{3}\int\frac{(1-\sqrt{3}+(1+\sqrt{3})\mathrm{cn}(w|m))}{(1+\mathrm{cn}(w|m))^5}\mathrm{sn}^2(w|m)\mathrm{dn}^2(w|m)\;\mathrm dw
-\mathrm{cn}
-2\sqrt[4]{3}\left(3(5+3\sqrt{3})w-6(13+8\sqrt{3})\varrho_1+48(3+2\sqrt{3})\varrho_2-96(1+\sqrt{3})\varrho_3+48\sqrt{3}\varrho_4\right)
-\varrho_k=\int\frac{\mathrm dw}{(1+\mathrm{cn}(w\mid m))^k}
-\begin{align*}\varrho_1&=w-\varepsilon\left(w \mid \frac{2+\sqrt{3}}{4}\right)+\frac{\mathrm{sn}\left(w \mid \frac{2+\sqrt{3}}{4}\right)\mathrm{dn}\left(w \mid \frac{2+\sqrt{3}}{4}\right)}{1+\mathrm{cn}\left(w \mid \frac{2+\sqrt{3}}{4}\right)}\\\varrho_2&=\frac13\left((3+\sqrt{3})\varrho_1-\frac12(2+\sqrt{3})w+\frac{\mathrm{sn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)\mathrm{dn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)}{\left(1+\mathrm{cn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)\right)^2}\right)\\\varrho_3&=\frac15\left(2\left(3+\sqrt{3}\right)\varrho_2-\frac32(2+\sqrt{3})\varrho_1+\frac{2+\sqrt{3}}{4}w+\frac{\mathrm{sn}\left(w\mid \frac{2+\sqrt{3}}{4}\right) \mathrm{dn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)}{\left(1+\mathrm{cn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)\right)^3}\right)\\\varrho_4&=\frac17\left(3\left(3+\sqrt{3}\right)\varrho_3-\frac52\left(2+\sqrt{3}\right)\varrho_2+\frac{2+\sqrt{3}}{2}\varrho_1+\frac{\mathrm{sn}\left(w\mid \frac{2+\sqrt{3}}{4}\right) \mathrm{dn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)}{\left(1+\mathrm{cn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)\right)^4}\right)\end{align*}
-\begin{split}\frac{\sqrt[4]{3}}{7} \left((3-\sqrt{3})w-6\,\varepsilon\left(w \mid \frac{2+\sqrt{3}}{4}\right)+\frac{2\,\mathrm{sn}\left(w\mid \frac{2+\sqrt{3}}{4}\right) \mathrm{dn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)}{\left(1+\mathrm{cn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)\right)^4}\left(3\mathrm{cn}^3\left(w\mid \frac{2+\sqrt{3}}{4}\right)+\right.\right. \\ \left.\left.(21+8\sqrt{3})\mathrm{cn}^2\left(w\mid \frac{2+\sqrt{3}}{4}\right)+(9-8\sqrt{3})\mathrm{cn}\left(w\mid \frac{2+\sqrt{3}}{4}\right)+8 \sqrt{3}-9\right)\right)\end{split}
-\begin{split}\frac2{7\sqrt[4]{3}}\left(\frac{2\sqrt[4]{3}\sqrt{1+x^{3/2}}(3+x(1+\sqrt{3}+\sqrt{x}))}{1+\sqrt{3}+\sqrt{x}}-6\sqrt{3} E\left(\arccos\left(\frac{2\sqrt{3}}{1+\sqrt{3}+\sqrt{x}}-1\right)\mid \frac{2+\sqrt{3}}{4}\right)\right. \\ \left.+3(\sqrt{3}-1)F\left(\arccos\left(\frac{2\sqrt{3}}{1+\sqrt{3}+\sqrt{x}}-1\right)\mid \frac{2+\sqrt{3}}{4}\right)\right)\end{split}
-\sqrt{1+x^\frac32}
-I = \int \sqrt{1 + x^{3/2}} \, \mathrm{d} x
-   \begin{eqnarray}    I &=& x \sqrt{1 + x^{3/2}} - \int x \frac{3}{4} \, \frac{\sqrt{x}}{\sqrt{1+x^{3/2}}} \,  \mathrm{d} x = x \sqrt{1 + x^{3/2}} - \frac{3}{4} \int \sqrt{1+x^{3/2}} \, \mathrm{d} x + \frac{3}{4} \int \frac{\mathrm{d} x}{\sqrt{1+x^{3/2}}} \\   &=& -\frac{3}{4} I + x \sqrt{1 + x^{3/2}}  + \frac{3}{4} \int \frac{\mathrm{d} x}{\sqrt{1+x^{3/2}}}   \end{eqnarray} 
-   I = \frac{4}{7} x \sqrt{1 + x^{3/2}} + \frac{3}{7}  \int \frac{\mathrm{d} x}{\sqrt{1+x^{3/2}}} 
-   I = \frac{4}{7} x \sqrt{1 + x^{3/2}} + \frac{3 x}{7} \, {}_2F_1\left(\frac{1}{2}, \frac{2}{3} ; \frac{5}{3} ; -x^{3/2} \right) 
-I=\int \sqrt{1^2+(x^\frac{3}{4})^2} dx
-x^\frac{3}{4}=t \Rightarrow \frac{3}{4}x^\frac{-1}{4} dx=dt
-x=t^\frac{4}{3} \Rightarrow dx=\frac{4}{3}t^\frac{1}{3} dt
-I=\frac{4}{3}\int \sqrt {(1^2+t^2)} t^\frac{1}{3} dt

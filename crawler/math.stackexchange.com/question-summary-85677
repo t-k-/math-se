@@ -1,3 +1,0 @@
-t_{i}=(y_{i},\delta_{i})
-p(t_{i}|\theta) = p(y_{i},\delta_{i}|\theta) = p(y_{i}|\delta_{i},\theta)p(\delta_{i}|\theta)
- \begin{align*} P(\color{Red}{y_i, \delta_i} \mid \color{Blue}{\theta})   &= \frac{P(\color{Red}{y_i, \delta_i}, \color{Blue}{\theta})}{P(\color{Blue}{\theta})}  \\ &= \frac{P(y_i, \delta_i, \theta)}{P(\delta_i, \theta)} \frac{P(\delta_i, \theta)}{P(\theta)}  \\ &= \frac{P(\color{Red}{y_i}, \color{Blue}{\delta_i, \theta})}{P(\color{Blue}{\delta_i, \theta})} \frac{P(\color{Red}{\delta_i}, \color{Blue}{\theta})}{P(\color{Blue}{\theta})} \qquad \qquad \text{added color coding}  \\ &= P(\color{Red}{y_i} \mid \color{Blue}{\delta_i, \theta}) \cdot P(\color{Red}{\delta_i} \mid \color{Blue}{\theta})  \end{align*} 

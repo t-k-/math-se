@@ -1,9 +1,0 @@
-A\in M_{n\times n} (\mathbb{R})
-\dot x = Ax
-x(0) = x_0
- x = x_0 e^{At} = x_0 \sum_{k=0}^\infty \frac{(At)^k}{k!} 
-x_{n+1}=x_0+\int_0^t Ax_n\,\mathrm{d}t
-x_1=x_0+\int_0^t Ax_0\,\mathrm{d}t=x_0+A\cdot tx_0
-x_2=x_0+\int_0^t Ax_1\,ds=x_0+\int_0^tA(x_0+Atx_0)\,\mathrm{d}t
-\ x_{n+1}
-x_n=\left(I+A\frac t{1!}+A^2\frac{t^2}{2!}+\cdots +A^n\frac{t^n}{n!}\right)x_0

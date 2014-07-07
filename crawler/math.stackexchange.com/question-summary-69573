@@ -1,50 +1,0 @@
-X_1, X_2,\dotsc
-E[X]
-VAR[X]
-N
-X_i
- VAR\left[ \sum_{i=1}^N X_i \right] = E[N]VAR[X]+(E[X])^2VAR[N] 
-(1)
-X^2
-\operatorname{Var}[X]=\operatorname{E}\left[X^2\right]-\operatorname{E}[X]^2
-(1)
-(2)
-(3)
- \begin{align} \operatorname{E}[X] &=\operatorname{E}_Y[\operatorname{E}_X[X|Y]]\tag{1} \end{align} 
- \begin{align} \operatorname{E}\left[X^2\right] &=\operatorname{E}_Y\left[\operatorname{E}_X\left[X^2|Y\right]\right]\\ &=\operatorname{E}_Y\left[\operatorname{Var}_X[X|Y]\right]+\operatorname{E}_Y\left[\operatorname{E}_X[X|Y]^2\right]\tag{2} \end{align} 
- \begin{align} \operatorname{Var}[X] &=\operatorname{E}\left[X^2\right]-\operatorname{E}[X]^2\\ &=\operatorname{E}_Y\left[\operatorname{Var}_X[X|Y]\right]+\operatorname{E}_Y\left[\operatorname{E}_X[X|Y]^2\right]-\operatorname{E}_Y[\operatorname{E}_X[X|Y]]^2\\ &=\operatorname{E}_Y\left[\operatorname{Var}_X[X|Y]\right]+\operatorname{Var}_Y[\operatorname{E}_X[X|Y]]\tag{3} \end{align} 
- \begin{align} \operatorname{Var}\left[\sum_{i=1}^NX_i\right] &=\operatorname{E}_N\left[\left.\operatorname{Var}_X\left[\sum_{i=1}^NX_i\right]\right|N\right]+\operatorname{Var}_N\left[\left.\operatorname{E}_X\left[\sum_{i=1}^NX_i\right]\right|N\right]\\ &=\operatorname{E}_N[N\operatorname{Var}[X]]+\operatorname{Var}_N[N\operatorname{E}[X]]\\ &=\operatorname{E}[N]\operatorname{Var}[X]+\operatorname{Var}[N]\operatorname{E}[X]^2\tag{4} \end{align} 
-Y_i = 1
-N \ge i
-0
-N
-\text{var}(Y_i X_i) = E[Y_i^2 X_i^2] - E[Y_i X_i]^2 =  E[Y_i] \text{var}(X) + \text{var}(Y_i) E[X]^2
-j < i
-\text{cov}(Y_i X_i, Y_j X_j) = E[Y_i Y_j X_i X_j] - E[Y_i X_i] E[Y_j X_j]  = E[Y_i] (1 - E[Y_j]) E[X]^2
-X_i
-N = \sum_{i=1}^\infty Y_i
-S = \sum_{i=1}^N X_i = \sum_{i=1}^\infty Y_i X_i
-\text{var}(S) = \sum_{i=1}^\infty \text{var}(Y_i X_i) + 2 \sum_{i=1}^\infty \sum_{j=1}^{i-1} \text{cov}(Y_i X_i, Y_j X_j)
- \text{var}(S) = \sum_{i=1}^\infty E[Y_i] \text{var}(X) + \sum_{i=1}^\infty \text{var}(Y_i) E[X]^2 + 2 \sum_{i=1}^\infty \sum_{j=1}^{i-1} E[Y_i](1 - E[Y_j]) E[X]^2
- \text{var}(N) = \sum_{i=1}^\infty \text{var}(Y_i) + 2 \sum_{i=1}^\infty \sum_{j=1}^{i-1} E[Y_i](1 - E[Y_j])
- \text{var}(S) = \sum_{i=1}^\infty E[Y_i] \text{var}(X) + \text{var}(N) E[X]^2 = E[N] \text{var}(X) + \text{var}(N) E[X]^2 
-Y = \sum_{i=1}^N X_i
-Y
-X
-\phi(t)
-N
-g(s)
-Y
-\mathrm{Var}(Y) = m_2(Y) - m_1(Y)^2
-m_r(Y) = (-i)^r \psi^{(r)}(0)
-\mathrm{Var}(Y) = -\psi^{\prime\prime}(0)+\left( \psi^\prime(0)\right)^2
-\psi = g \circ \phi
-  \psi(t) = \mathbb{E}( \exp( i Y t) ) = \mathbb{E}\left( \mathbb{E}( \exp( i Y t) \vert N) \right) =     \mathbb{E}\left( \phi(t)^N \right) = \sum_{k=0}^\infty \phi(t)^k \mathbb{P}(N=k) = g(\phi(t)).  
-   \psi^{\prime}(0)= g^\prime(1) \times \phi^\prime(0) = i \mathbb{E}(N) \mathbb{E}(X) 
-   \psi^{\prime\prime}(0)= g^{\prime\prime}(1) \phi^\prime(0)^2 + g^\prime(1) \phi^{\prime\prime}(0) = -\left( \mathbb{E}(X)^2 \cdot \mathbb{E}(N(N-1)) + \mathbb{E}(N) \cdot \mathbb{E}(X^2) \right) 
- \begin{eqnarray}   \mathrm{Var}(Y) &=& \mathbb{E}(X)^2 \cdot \left( \mathbb{E}(N^2) -\mathbb{E}(N) \right) + \mathbb{E}(N) \cdot \left( \mathrm{Var}(X) + \mathbb{E}(X)^2 \right) - \mathbb{E}(N)^2 \cdot \mathbb{E}(X)^2 \\   &=&  \mathbb{E}(X)^2 \cdot \left( \mathrm{Var}(N) + \mathbb{E}(N)^2 -\mathbb{E}(N) \right) + \mathbb{E}(N) \cdot \left( \mathrm{Var}(X) + \mathbb{E}(X)^2 \right) - \mathbb{E}(N)^2 \cdot \mathbb{E}(X)^2 \\   &=& \mathbb{E}(X)^2 \cdot \mathrm{Var}(N) + \mathbb{E}(N) \cdot \mathrm{Var}(X)  \end{eqnarray} 
-g^\prime(1) = \mathbb{E}(N)
-g^{\prime\prime}(1) = \mathbb{E}(N(N-1))
-g(s) = \sum_{k=0}^\infty s^k \mathbb{P}(N=k)
-g^\prime(1) = \sum_{k=0}^\infty k \mathbb{P}(N=k) = \mathbb{E}(N)
-g^{\prime\prime}(1) = \sum_{k=0}^\infty k (k-1) \mathbb{P}(N=k) = \mathbb{E}(N (N-1))

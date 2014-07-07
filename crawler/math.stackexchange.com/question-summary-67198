@@ -1,106 +1,0 @@
-\displaystyle \int_0^a\frac{\sin x}xdx
-x\mapsto \frac{\sin x}x
-0
-1
-0
-\displaystyle\int_a^A\frac{\sin x}x dx
-\displaystyle\lim_{A\to +\infty}\frac{\cos A}A=0
-\displaystyle\int_a^{+\infty}\frac{dx}{x^2}
-\displaystyle\int_a^{+\infty}\frac{\sin x}xdx
-f(x):=\frac{\sin x}x
-\displaystyle\int_0^{\infty}\left|\frac{\sin x}x\right| dx
-f
-f
-g(x)=\frac 1{\sqrt x}
-0<x\leq 1
-g(x)=0
-x>1
-N\in\mathbb N
-\int_a^A\frac{\sin x}xdx =\left[-\frac{\cos x}x\right]_a^A+\int_a^A-\frac{\cos x}{x^2}dx = \frac{\cos a}a-\frac{\cos A}A-\int_a^A\frac{\cos x}{x^2}dx,
-0
-0
-\int_0^\infty \frac{\sin x}{x} \, \text{d}x = \lim_{y \to \infty} \left (\sum_{k = 1}^{[y/\pi]} \int_{k \pi}^{(k + 1) \pi} \frac{\sin x}{x} \, \text{d}x + \int_{[y/\pi]\pi}^y \frac{\sin x}{x} \, \text{d}x \right ).
-\lim_{y \to \infty} \left (\sum_{k = 1}^{[y/\pi]} \int_{0}^{\pi} (-1)^k \frac{\sin x}{x + k \pi} \, \text{d}x + \int_{[y/\pi]\pi}^y \frac{\sin x}{x} \, \text{d}x \right ).
- \int_{k\pi}^{(k+1)\pi}|\sin(t)|\;\mathrm{d}t=2\tag{1} 
- \frac{2}{(k+1)\pi}\le\int_{k\pi}^{(k+1)\pi}\left|\frac{\sin(t)}{t}\right|\;\mathrm{d}t\le\frac{2}{k\pi}\tag{2} 
-a=\frac12\left(\frac{1}{2k\pi}+\frac{1}{2(k+1)\pi}\right)
-(1)
-(4)
-(2)
-(5)
-(6)
-\dfrac1\pi
- \int_0^\infty\frac{\sin(t)}{t}\mathrm{d}t\tag{3} 
- \int_{2k\pi}^{2(k+1)\pi}\sin(t)\;\mathrm{d}t=0\tag{4} 
- \begin{align} \left|\int_{2k\pi}^{2(k+1)\pi}\frac{\sin(t)}{t}\mathrm{d}t\right| &=\left|\int_{2k\pi}^{2(k+1)\pi}\sin(t)\;\left(\frac1t-a\right)\;\mathrm{d}t\right|\\ &\le\int_{2k\pi}^{2(k+1)\pi}\left|\sin(t)\right|\;\mathrm{d}t\;\max_{[2k\pi,2(k+1)\pi]}\left(\frac1t-a\right)\\ &=4\cdot\frac12\left(\frac{1}{2k\pi}-\frac{1}{2(k+1)\pi}\right)\\ &=\frac{1}{k(k+1)\pi}\tag{5} \end{align} 
- \begin{align} \sum_{k=1}^\infty\frac{1}{k(k+1)} &=\sum_{k=1}^\infty\frac{1}{k}-\frac{1}{k+1}\\ &=1\tag{6} \end{align} 
- \int_{2\pi}^\infty\frac{\sin(t)}{t}\mathrm{d}t\tag{7} 
-\left|\dfrac{\sin(t)}{t}\right|\le1
-2\pi
- \int_0^{2\pi}\frac{\sin(t)}{t}\mathrm{d}t\tag{8} 
-(7)
-(8)
-2\pi+\dfrac1\pi
- \int_0^\infty\frac{\sin(t)}{t}\mathrm{d}t\tag{9} 
-\dfrac1t
-0
-(0,\infty)
- \left|\int_0^N\sin(t)\;\mathrm{d}t\right|\le2 
- \int_0^\infty\frac{\sin(t)}{t}\mathrm{d}t 
-\frac{\sin x}{x}
-(0,\infty)
-\int_0^\pi \frac{|\sin x|}{x}\ \text{d}x
-\lim_{x\to 0^+} \frac{\sin x}{x} =1
-\frac{\sin x}{x}
-]0,\pi]
-\int_\pi^\infty \frac{|\sin x|}{x}\ \text{d} x =\infty\; ,
-\mathfrak{T}_k
-A_k:=(k\pi ,0)
-B_k:=((k+1)\pi ,0)
-C_k:=(\xi_k,f(\xi_k))
-\mathfrak{R}_k:=\{(x,y)\in \mathbb{R}^2|\ k\pi\leq x\leq (k+1)\pi,\ 0\leq y\leq f(x)\}
-k
-\int_{k\pi}^{(k+1)\pi} f(x)\ \text{d} x =\operatorname{Area}(\mathfrak{R}_k) \geq \operatorname{Area}(\mathfrak{T}_k)=\frac{\pi}{2}\ f(\xi_k)
-\tag{1} \int_{\pi}^{(k+1)\pi} f(x)\ \text{d} x\geq \sum_{n=1}^k \frac{\pi}{2}\ f(\xi_n)\; .
-[a,b]
-\int_0^a \frac{\sin(x)}{x} dx
-\mathbb{R}
-1
-0
-[0,a]
-\frac{\sin(x)}{x}
-(0,a]
-1
-0
-[0,a]
-\textrm{sinc}(x/\pi)
-\textrm{sinc}(x) = \Bigg\{\begin{eqnarray} & \frac{\sin(\pi x)}{\pi x} & , \ \ x \neq 0 \\ & 1 & , \ \ x = 0 \end{eqnarray}
-[0,a]
-\textrm{sinc}(x/\pi)
-\pi
-\textrm{sinc}(x)
-\int_0^a \textrm{sinc}(x/\pi) dx
-a\in \mathbb{R}^+
-\int_a^M \frac{\sin(x)}{x} dx
-a
-\infty
-\int_a^\infty \frac{\cos(x)}{x^2} dx
-M \geq a
-M \rightarrow \infty
-\int_a^\infty \frac{\sin(x)}{x} dx
-a \in \mathbb{R}^+
-\infty
-n > 0
-n \rightarrow \infty
-\infty
-\infty - \infty
-\textrm{sinc}(x/\pi)
-|\textrm{sinc}(x/\pi)|
-\infty
-\textrm{sinc}(x/\pi)
-[0,a]
-\frac{1}{a}
-[a,\infty)
-\textrm{sinc}(x/\pi)
-\frac{1}{x}
-\sin(x)

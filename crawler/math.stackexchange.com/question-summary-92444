@@ -1,50 +1,0 @@
-k=r(B_n,B_n)-1
-K_k
-B_n
-E_r
-E_b
-V\,
-K_k
-v\in V\,
-\deg_r(v)
-\deg_b(v)
-v
-e=\{u,v\}
-M(e)
-u
-v
-e
-\mu(e)=|M(e)|
-K_k
-m=\frac13\sum_{e\in E_r\cup E_n}\mu(e)\;,
-e=\{u,v\}\in E_r
-e
-\{u,w\}
-\{v,w\}
-w\in M(e)
-B_{\mu(e)}
-\mu(e)<n
-\mu(e)<n
-e\in E_b
-m\le\frac13(n-1)|E_r\cup E_b|=\frac13(n-1)\binom{k}2\;.\tag{1}
-v\in V
-\langle e_r,e_b\rangle\in E_r\times E_b
-e_r
-e_b
-v
-K_k
-v
-\deg_r(v)\deg_b(v)
-K_k
-\frac12\sum_{v\in V}\deg_r(v)\deg_b(v)\;,
-\begin{align*}m&=\binom{k}3-\frac12\sum_{v\in V}\deg_r(v)\deg_b(v)\\ &=\binom{k}3-\frac12\sum_{v\in V}\deg_r(v)(k-1-\deg_r(v))\\ &=\binom{k}3-\frac{k-1}2\sum_{v\in V}\deg_r(v)+\frac12\sum_{v\in V}\deg_r(v)^2\\ &=\binom{k}3-(k-1)|E_r|+\frac12\sum_{v\in V}\deg_r(v)^2\;. \end{align*}
-\left(\sum_{v\in V}\deg_r(v)\right)^2\le\sum_{v\in V}\deg_r(v)^2\; \sum_{v\in V}1^2=k\sum_{v\in V}\deg_r(v)^2\;,
-4|E_r|^2\ge k\sum_{v\in V}\deg_r(v)^2\;,
-\begin{align*}m&\ge\binom{k}3-(k-1)|E_r|+\frac{2|E_r|^2}k\\ &=\binom{k}3-|E_r|\left(k-1-\frac{2|E_r|}k\right)\\ &=\binom{k}3-|E_r|\frac2k\left(\frac{k(k-1)}2-|E_r|\right)\\ &=\binom{k}3-|E_r|\frac2k\left(\binom{k}2-|E_r|\right)\\ &=\binom{k}3-|E_r|\frac2k|E_b|\;. \end{align*}
-d=\frac12\big||E_r|-|E_b|\big|
-\begin{align*} m&\ge\binom{k}3-\frac2k\left(\frac12\binom{k}2-d\right)\left(\frac12\binom{k}2+d\right)\\ &=\frac{k(k-1)(k-2)}6-\frac2k\left(\frac14\binom{k}2^2-d^2\right)\\ &=\frac{k(k-1)(k-2)}6-\frac{k(k-1)^2}8+\frac{2d^2}k\\ &=\frac{k(k-1)(k-5)}{24}+\frac{2d^2}k\;, \end{align*}
-(1)
-\begin{align*} \frac{k(k-1)(k-5)}{24}+\frac{2d^2}k&\le\frac13(n-1)\binom{k}2\\ &=\frac{k(k-1)(n-1)}6\;, \end{align*}
-\begin{align*} \frac{2d^2}k&\le\frac{k(k-1)(n-1)}6-\frac{k(k-1)(k-5)}{24}\\ &=\frac{k(k-1)(4n+1-k)}{24}\;. \end{align*}
-4n+1-k\ge 0
-r(B_n,B_n)=k+1\le 4n+2

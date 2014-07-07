@@ -1,29 +1,0 @@
-A=\begin{bmatrix}   cos(\theta) & -sin(\theta) & x_{trans} \\  sin(\theta) &  cos(\theta) & y_{trans} \\ 0            & 0           & 1         \\ \end{bmatrix} 
-\theta
-(x_{trans}, y_{trans})
-\sin
-\cos
-\cos(\theta)*P_{aix} - \sin(\theta)*P_{aiy} + x_{trans} = P_{bix}
-\sin(\theta)*P_{aix} + \cos(\theta)*P_{aiy} + y_{trans} = P_{biy}
-\begin{bmatrix}  P_{a1x} & -P_{a1y} & 1 &0\\ P_{a1y} &  P_{a1x} & 0 &1\\ P_{a2x} & -P_{a2y} & 1 &0\\ P_{a2y} &  P_{a2x} & 0 &1\\ ...\\ P_{aNx} & -P_{aNy} & 1 &0\\ P_{aNy} &  P_{aNx} & 0 &1\\ \end{bmatrix}* \begin{bmatrix}  \cos(\theta) \\ \sin(\theta) \\ x_{trans}\\ y_{trans} \end{bmatrix}=  \begin{bmatrix}  P_{a1x}\\ P_{a1y}\\ P_{a2x}\\ P_{a2y}\\ ...\\ P_{aNx}\\ P_{aNy}\\ \end{bmatrix} 
-\{c_k\}_{k=1}^m
-[V\;]_k
-k
-V
-I_k
-k^{th}
-1
-0
-\det(W)<0
-\det(W)>0
-a_k
-c_k
- \begin{align} c_k &=\sum_{j=1}^m[(P_j-\bar{P}\;)V\;]_k[(Q_j-\bar{Q})U\;]_k\\ &=\left(\sum_{j=1}^m[P_jV\;]_k[Q_jU\;]_k\right)-m[\bar{P}V\;]_k[\bar{Q}U\;]_k \end{align} 
- a_k=\operatorname{signum}(c_k) 
- E=\sum_{k=1}^ma_kI_k 
- W=VEU^T 
-r
-Q = PM+R
- r\sum_{j=1}^m|P_j-\bar{P}\;|^2=\sum_{j=1}^m\left<(P_j-\bar{P}\;)W,Q_j-\bar{Q}\right> 
- r\left(\left(\sum_{j=1}^m|P_j|^2\right)-m|\bar{P}\;|^2\right)=\left(\sum_{j=1}^m\left<P_jW,Q_j\right>\right)-m\left<\bar{P}\;W,\bar{Q}\;\right> 
- \begin{array}{} M=rW&\text{and}&R=\bar{Q}-\bar{P}M \end{array} 

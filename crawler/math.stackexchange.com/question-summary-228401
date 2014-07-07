@@ -1,6 +1,0 @@
-M_t := \sup_{s \leq t} B_s
-\mathbb{P}[M_t \geq b] \stackrel{\text{Def}}{=} \mathbb{P} \left[\sup_{s \leq t} B_s \geq b \right] = 2 \mathbb{P}[B_t \geq b]
-M_t \sim |B_t|
-\mathbb{P}[M_t \geq b] = 2\mathbb{P}[B_t \geq b] = \mathbb{P}[B_t \geq b]+\underbrace{\mathbb{P}[-B_t \leq -b]}_{\mathbb{P}[B_t \leq -b]} = \mathbb{P}[|B_t| \geq b]
-(-B_t)_{t \geq 0}
-\mathbb{P}[M_t \leq b] = 2 \mathbb{P}[0 \leq B_t \leq b] = \frac{2}{\sqrt{2\pi \cdot t}} \cdot \int_0^b \exp \left(-\frac{x^2}{2t} \right) \, dx \\ \Rightarrow M_t \sim \frac{\sqrt{2}}{\sqrt{\pi \cdot t}} \cdot \exp \left(-\frac{x^2}{2t} \right) \cdot 1_{(0,\infty)}(x) \, dx

@@ -1,22 +1,0 @@
-\textbf{15.2.3.}
-\mathbb{R}
-P(x, \cdot) = N(\frac{x}{2}, \frac{3}{4})
-x \in \mathbb{R}
-\pi(\cdot) = N(0,1)
-P(x,A)
-A
-x
-A
-\sigma^2 = 3/4
- \pi(A) = \int\limits_{\mathbb R}P(y,A)\pi(dy) 
- P(y,A) = \int\limits_{A}\frac1{\sigma\sqrt{2\pi}}\mathrm e^{-\frac{(z-y/2)^2}{2\sigma^2}}\,dz. 
- \int\limits_{A}\frac1{\sqrt{2\pi}}\mathrm e^{-\frac{y^2}{2}}\,dy = \int\limits_{\mathbb R}\frac1{\sqrt{2\pi}}\mathrm e^{-\frac{y^2}{2}}\,dy\int\limits_{A}\frac1{\sigma\sqrt{2\pi}}\mathrm e^{-\frac{(z-y/2)^2}{2\sigma^2}}\,dz 
-1
- \frac1{2\sigma\pi}\int\limits_{\mathbb R}\mathrm \,dy\int\limits_{A}\mathrm e^{-\frac{(z-y/2)^2}{2\sigma^2}+y^2/2}\,dz = \frac1{2\sigma\pi}\int\limits_{\mathbb R}\mathrm \,dy\int\limits_{A}\exp\left\{-\frac{(z-y/2)^2+\sigma^2y^2}{2\sigma^2}\right\}\,dz 
- = \frac1{2\sigma\pi}\int\limits_{\mathbb R}\mathrm \,dy\int\limits_{A}\exp\left\{-\frac{z^2-zy+y^2}{2\sigma^2}\right\}\,dz= \frac1{2\sigma\pi}\int\limits_{\mathbb R}\mathrm \,dy\int\limits_{A}\exp\left\{-\frac{(y-z/2)^2+\sigma^2z^2}{2\sigma^2}\right\}\,dz 
-  = \frac{1}{\sqrt{2\pi}} \int\limits_{A}\mathrm e^{-z^2/2}\,dz\int\limits_{\mathbb R}\frac{1}{\sigma\sqrt{2\pi}}\mathrm e^{-\frac{(y-z/2)^2}{2\sigma^2}}\,dy = \frac{1}{\sqrt{2\pi}} \int\limits_{A}\mathrm e^{-z^2/2}\,dz = \pi(A) 
-\lambda(A)>0
-L(x,A)>0
-x\in \mathbb R
-L(x,A)\geq P(x,A)>0
-A:\lambda(A)>0

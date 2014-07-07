@@ -1,9 +1,0 @@
-C(0,1)
-(f,g) = \int_0^1 f(t)g(t)dt
-V
-\int_0^1 f(t)dt = 0
-T: V \rightarrow C
-\int_0^x f(t)dt
-T
-\int_0^1 f(t)Tg(t) + Tf(t)g(t)dt = 0
-\int_0^1 \left( f(Tg) + (Tf)g \right) (x) dx = \int_0^1 \left( f(x) \left( \int_0^x g(t)dt \right) + \left( \int_0^x f(t)dt \right) g(x) \right) dx = \int_0^1 \left( \left( \int_0^x f(t)dt \right)'_x \left( \int_0^x g(t)dt \right) + \left( \int_0^x f(t)dt \right) \left( \int_0^x g(t)dt \right)'_x \right) dx = \left. \left( \int_0^x f(t)dt \int_0^x g(t)dt \right) \right\vert_0^1 = \int_0^1 f(t)dt \int_0^1 g(t)dt = 0.

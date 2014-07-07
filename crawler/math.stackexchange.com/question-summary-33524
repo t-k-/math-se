@@ -1,102 +1,0 @@
-f: X \rightarrow Y
-\iff
-X
-Y
-Z
-\Leftarrow
-Z \simeq X
-Z \simeq Y
-X \simeq Y
-\Rightarrow
-Z_f
-X \times I
-Y
-(x,s,t)\mapsto (x,st)
-Z_f
-X
-Z_f
-X \times I
-X
-Z_f
-X
-f \circ g \simeq id_Y
-g \circ f \simeq id_X
-id_{Z_f} \simeq i \circ r_Y
-r_Y
-Z_f
-Y
-i \circ r_Y \simeq id_Y \simeq f \circ g
-X
-A \hookrightarrow B
-A
-B
-A \hookrightarrow B
-B
-B
-A
-A \times I
-A
-B 
-A
-A
-A
-\emptyset
-B
-\emptyset \to B
-\emptyset \to B
-\emptyset \to \ast
-\ast
-B \to \emptyset
-B \rightrightarrows B
-B \sqcup B \to B \times I
-B \times I
-B \to \ast
-\emptyset \to B
-\emptyset \to B \sqcup B
-\emptyset \to B \times I
-B \sqcup B \sqcup \emptyset \times I \to B \times I
-B \times I \to B
-Z_f
-f: X \rightarrow Y
-Z_f
-X \times [0,1] \cup Y / \sim
-\sim
-x \in X
-y \in Y
-f(x) = y
-r_Y
-Z_f
-Y
-Z_f
-r_Y:Z_f \rightarrow Z_f
-\begin{array}{ccc} [x,s] & \mapsto & [x, 0] \\                             [y] &   \mapsto & [y]    \\   \end{array}
-h_1
-id_X
-r_Y
-h_1: Z_f \times [0,1] \rightarrow Z_f
-\begin{array}{ccc} [x,s], t & \mapsto & [x, s(1-t)] \\                             [y], t &   \mapsto & [y]    \\   \end{array}
-F:Y \times [0,1] \rightarrow Y
- f\circ g 
-id_Y
-G:X \times [0,1] \rightarrow X
- g \circ f
-id_X
-B: Z_f \rightarrow Z_f
-\begin{array}{ccc} [x,s] & \mapsto & [g(f(x)),0] \\                             [y]&   \mapsto & [g(y),0]    \\   \end{array}
-h_2:Z_f \times [0,1] \rightarrow Z_f
-r_Y
-B
-\begin{array}{ccc} [x,s], t & \mapsto & [F(f(x), 1-t] \\                             [y], t &   \mapsto & [F(y, 1 - t)]    \\   \end{array}
-r_X: Z_f \rightarrow Z_f
-Z_f
-X
-\begin{array}{ccc} [x,s], t & \mapsto & [G(x, s), 1] \\                             [y], t &   \mapsto & [g(y), 1]    \\   \end{array}
-h_3: Z_f \times [0,1] \rightarrow Z_f
-B
-r_X
-\begin{array}{ccc} [x,s], t & \mapsto & [G(x, st), t] \\                             [y], t &   \mapsto & [G(g(y), t)]    \\   \end{array}
-[f(x)] = [x,0]
-[y] = [x,0]
-f(x) = y
-B = h_2(.,1) = h_3(.,0)
- r_X \simeq B \simeq r_Y \simeq id_{Z_f}

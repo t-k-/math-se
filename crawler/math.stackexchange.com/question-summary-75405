@@ -1,46 +1,0 @@
-\hat{f}
-\left[-M,M\right]
-f(z) = \sum_{n=0}^{\infty}{a_{n}z^{n}}
-f(z) = \sum_{n=0}^{\infty}{a_{n}z^{n}}
-\lim_{n \rightarrow \infty}{\sup{(n! |a_{n}|)^{1/n}} }\leq 2 \pi M
-f
-\epsilon > 0
-A_{\epsilon} > 0
-|f(z)| \leq A_{\epsilon}e^{2\pi (M+ \epsilon) |z|}.
-a_{n}= \frac{(2\pi i)^{n}}{n!} \int_{-M}^{M}{\hat{f}(\xi)\xi^{n} d \xi },\ \text{and so that}\ \ \lim_{n \rightarrow \infty}{\sup{(n! |a_{n}|)^{1/n}}} \leq 2 \pi M.
-a_{n}= \frac{(2\pi i)^{n}}{n!} \int_{-M}^{M}{\hat{f}(\xi)\xi^{n} d \xi }
-|\xi|\le M
-\limsup
-(4)
- \begin{align} f(z) &=\sum_{n=0}^\infty a_nz^n\\ &=\sum_{n=0}^\infty f^{(n)}(0)\frac{z^n}{n!}\\ &=\sum_{n=0}^\infty\left(\int_{-M}^M\hat{f}(\xi)(2\pi i\xi)^n\;\mathrm{d}\xi\right)\frac{z^n}{n!}\tag{1} \end{align} 
- a_n=\frac{(2\pi i)^n}{n!}\int_{-M}^M\hat{f}(\xi)\;\xi^n\;\mathrm{d}\xi\tag{2} 
- |a_n|\le\frac{(2\pi)^n}{n!}\|\hat{f}\|_{L^1}M^n\tag{3} 
- |n!\:a_n|^{1/n}\le2\pi M\left(\|\hat{f}\|_{L^1}\right)^{1/n}\tag{4} 
-\limsup\limits_{n\to\infty}|n!\:a_n|^{1/n}\le2\pi M
-n!>\sqrt{2\pi n}(n/e)^n
-\infty
-f
-\epsilon>0
-N
-n\ge N
-e^{2\pi(M+\epsilon)|z|}
-|z|
-A_\epsilon-1
-(6)
-(7)
- \begin{align} \limsup\limits_{n\to\infty}\;|a_n|^{1/n}& \le\limsup\limits_{n\to\infty}\;2\pi M\frac{e}{n}(2\pi n)^{-\frac{1}{2n}}\\ &=0 \end{align} 
- |a_n|\le\frac{(2\pi(M+\epsilon))^n}{n!}\tag{5} 
- \begin{align} \sum_{n=N}^\infty|a_nz^n| &\le\sum_{n=N}^\infty\frac{(2\pi(M+\epsilon)|z|)^n}{n!}\\ &\le e^{2\pi(M+\epsilon)|z|}\tag{6} \end{align} 
- \sum_{n=0}^{N-1}|a_nz^n|\le(A_\epsilon-1)e^{2\pi(M+\epsilon)|z|}\tag{7} 
- \sum_{n=0}^\infty|a_nz^n|\le A_\epsilon e^{2\pi(M+\epsilon)|z|}\tag{8} 
-f
-\varepsilon > 0
-N \in \mathbf N
-|a_n| \leqslant \frac{[2 \pi (M + \epsilon)]^n}{n!}
-n \geqslant N
-\limsup_{n \to \infty} |a_n|^{\frac1n} = 0
-f
-|f(z)| \leqslant \sum_{n = 0}^N |a_n| |z|^n + \sum_{n = N + 1}^\infty |a_n| |z|^n.
-e^{2 \pi (M + \varepsilon) |z|}
-C_{\varepsilon} e^{2 \pi (M + \varepsilon) |z|}
- |n! a_{n}|= \left|(2\pi i)^{n}\int_{-M}^{M}\hat{f}(\xi)\xi^{n} \,d \xi \right|\le (2\pi)^{n} M^n\int_{-M}^{M}|\hat{f}(\xi)|\,d\xi=C (2\pi)^{n} M^n. 

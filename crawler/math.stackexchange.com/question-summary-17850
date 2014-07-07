@@ -1,39 +1,0 @@
-A     = r \int_{0}^{\pi}\int_{0}^{2\pi} e^{i (\alpha+\theta)} d\alpha d\theta         = r \int_{0}^{\pi} [\frac{-i}{\alpha+\theta} e^{i(\alpha + \theta)}]_{0}^{2\pi} d\theta         = ...         = r \int_{0}^{\pi} e^{2i\alpha} ( \frac{1}{\alpha} - \frac{1}{\alpha+2\pi}  ) d\theta
-g = \begin{pmatrix} E & F \\ F & G \end{pmatrix}
-(u, v)
-S
-A = \int_S \sqrt{\det g} \, du \, dv 
-S \subset \mathbb{R}^2
-(x, y)
-(0, 0), (a, 0), (a, b), (0, b)
-(r, \theta)
-\det J = r
-a
-A = \int_S dx \, dy
-A = \int_0^b \int_0^a dx \, dy = ab
-\begin{aligned} x & = r \cos \theta \\ y & = r \sin \theta \end{aligned}
-J = \begin{pmatrix} \cos \theta & -r \sin \theta \\ \sin \theta & r \cos \theta \end{pmatrix}
-A = \int_S r \, dr \, d\theta
-A = \int_0^{2\pi} \int_{0}^{a} r \, dr \, d\theta = \pi a^2
-g
-g = J^T J
-\det g = (\det J)^2
-\det J = \sqrt{\det g}
-g = \begin{pmatrix} 1 & 0 \\ 0 & r^2 \end{pmatrix}
-(\phi, \theta)
-\begin{aligned} x & = r \cos \theta \sin \phi \\ y & = r \sin \theta \sin \phi \\ z & = r \cos \phi \end{aligned}
-J = \begin{pmatrix} r \cos \theta \cos \phi & -r \sin \theta \sin \phi \\ r \sin \theta \cos \phi &  r \cos \theta \sin \phi \\ -r \sin \phi & 0 \end{pmatrix}
-g = J^T J = \begin{pmatrix} r^2 & 0 \\ 0 & (r \sin \phi)^2 \end{pmatrix}
-A = \int_0^{2\pi} \int_0^\pi r^2 \sin \phi \, d\phi \, d\theta = 4 \pi r^2
-\text{d}A = r^2 \sin \phi \, \text{d} \phi \, \text{d} \theta.
-0 \le \phi \le \pi 
- 0 \le \theta  \le 2 \pi.
-r^2 \int_{0}^{2 \pi} \int_{0}^{\pi} \sin(\phi) \ d \phi \ d \theta
-d\phi \; d\theta
-\sin(\phi)
-\phi
-\pi
-\pi / 2
-\theta
-\theta
-d

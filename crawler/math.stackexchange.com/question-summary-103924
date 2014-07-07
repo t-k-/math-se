@@ -1,34 +1,0 @@
-\mathbf c(t)=\begin{pmatrix}2t^3 + t^2 - 3t + 6\\t^3 - 2t^2 + 4t\\-3t^3 + 4t^2 + 2t - 9\end{pmatrix}
-\mathbf c^\prime(t)=\begin{pmatrix}6t^2+2t-3\\3t^2-4t+4\\-9t^2+8t+2\end{pmatrix}
-\mathbf c^{\prime\prime}(t)=\begin{pmatrix}12t+2\\6t-4\\8-18t\end{pmatrix}
-\mathbf c^\prime(t)
-\begin{align*} \|\mathbf c^\prime(t)\|&=\sqrt{(6t^2+2t-3)^2+(3t^2-4t+4)^2+(-9t^2+8t+2)^2}\\ &=\sqrt{126t^4-144t^3+36t^2-12t+29} \end{align*}
-\mathbf c^\prime(t)
-\mathbf T(t)=\frac{\mathbf c^\prime(t)}{\|\mathbf c^\prime(t)\|}=\frac1{\sqrt{126t^4-144t^3+36t^2-12t+29}}\begin{pmatrix}6t^2+2t-3\\3t^2-4t+4\\-9t^2+8t+2\end{pmatrix}
-\mathbf c^\prime(t)
-\mathbf c^{\prime\prime}(t)
-\mathbf c^\prime(t)\times \mathbf c^{\prime\prime}(t)=\begin{pmatrix}12t^2-84t+40\\66t^2-30t+28\\30t^2-66t+4\end{pmatrix}
-\begin{align*} \|\mathbf c^\prime(t)\times \mathbf c^{\prime\prime}(t)\|&=\sqrt{(12t^2-84t+40)^2+(66t^2-30t+28)^2+(30t^2-66t+4)^2}\\ &=24(225t^4-414t^3+717t^2-372t+100) \end{align*}
-\mathbf B(t)=\frac{\mathbf c^\prime(t)\times \mathbf c^{\prime\prime}(t)}{\|\mathbf c^\prime(t)\times \mathbf c^{\prime\prime}(t)\|}=\frac1{\sqrt{24(225t^4-414t^3+717t^2-372t+100)}}\begin{pmatrix}12t^2-84t+40\\66t^2-30t+28\\30t^2-66t+4\end{pmatrix}
-\mathbf{b}
-\mathbf{n}
-\mathbf{n}(s)=\frac{\mathbf{x}\verb|"|(s)}{\|\mathbf{x}\verb|"|(s)\|}
-s
-\mathbf{t}(s)=\mathbf{x}'(s)
-t
-\mathbf{t}(t)=\frac{\mathbf{x}'(t)}{\|\mathbf{x}'(t)\|}
-\mathbf{x}\verb|"|(t)
-\mathbf{x}\verb|"|(s)
-\frac{\mathbf{x}\verb|"|(t)}{\|\mathbf{x}\verb|"|(t)\|}
-\mathbf{n}
-\mathbf{x}'(t)
-\frac{\mathbf{x}'(t)}{\|\mathbf{x}'(t)\|}
-\mathbf{t}(t)=\frac{\mathbf{x}'(t)}{\|\mathbf{x}'(t)\|}
-\mathbf{n}(t)=\frac{\mathbf{x}'(t)\times(\mathbf{x}\verb|"|(t)\times\mathbf{x}'(t))}{\|\mathbf{x}'(t)\times(\mathbf{x}\verb|"|(t)\times\mathbf{x}'(t))\|} = \mathbf{b}(t)\times\mathbf{t}(t)
-\mathbf{b}(t)=\frac{\mathbf{x}'(t)\times\mathbf{x}\verb|"|(t)}{\|\mathbf{x}'(t)\times\mathbf{x}\verb|"|(t)\|} = \mathbf{t}(t)\times\mathbf{n}(t)
-\mathbf{t}
-\mathbf{b}
-\mathbf{n}
-\times
-C^1
-\mathbf{x}\verb|"|

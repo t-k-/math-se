@@ -1,36 +1,0 @@
-\sum u_n
-u_n=\prod_{k=2}^n \left(1+\frac{(-1)^k}{\sqrt{k}} \right), 
-\ln u_n= \sum_{k=2}^n \ln \left(1+\frac{(-1)^k}{\sqrt{k}} \right) 
- \ln \left(1+\frac{(-1)^n}{\sqrt{n}} \right)=\frac{(-1)^n}{\sqrt{n}}-\frac{1}{2n}+\frac{(-1)^n}{3n^{3/2}}+ o\left(\frac {1}{n^{3/2}} \right)  
- n \geq N 
- \ln(u_n)=\ln(u_N)+\ln(v_n) 
- \ln(v_n)=\sum_{k=N+1}^n \ln (1+\frac{(-1)^k}{\sqrt{k}})=\sum_{k=N+1}^n \frac{(-1)^k}{\sqrt{k}}-\frac{1}{2k}+O(\frac{1}{n^{3/2}}) 
- u_n=u_N\exp(\sum_{k=N+1}^n \frac{(-1)^k}{\sqrt{k}}-\frac{1}{2k}+O(\frac{1}{n^{3/2}})) 
- u_n=u_N(1+\sum_{k=N+1}^n \frac{(-1)^k}{\sqrt{k}}-\frac{1}{2k}+\frac{1}{2}(\sum_{k=N+1}^n \frac{1}{k}+2\sum_{N+1\leq p,q\leq n, p\neq q} \frac{(-1)^{p+q}}{\sqrt{pq}}+O(\frac{1}{n^{3/2}})))
- u_n=u_N(1+\sum_{k=N+1}^n \frac{(-1)^k}{\sqrt{k}}+\sum_{N+1\leq p,q\leq n, p\neq q} \frac{(-1)^{p+q}}{\sqrt{pq}}+O(\frac{1}{n^{3/2}})))
-\sum\limits_nu_n
-u_n
-\sqrt{2k+1}\geqslant\sqrt{2k}
-k\geqslant1
-n\geqslant1
-(1-\frac12x)^2\geqslant1-x
-x
-u_{2n+1}\geqslant\frac12\frac1{\sqrt{n}}
-u_{2n}\geqslant u_{2n+1}
-u_{2n}+u_{2n+1}\geqslant\frac1{\sqrt{n}}
-n\geqslant1
-\sum\limits_{k=2}^{n}u_k
-\sum\limits_nu_n
- u_{2n+1}=\prod_{k=1}^n\left(1+\frac1{\sqrt{2k}}\right)\cdot\left(1-\frac1{\sqrt{2k+1}}\right) 
- u_{2n+1}\geqslant\prod_{k=1}^n\left(1+\frac1{\sqrt{2k}}\right)\cdot\left(1-\frac1{\sqrt{2k}}\right)=\prod_{k=1}^n\left(1-\frac1{2k}\right), 
- u_{2n+1}^2\geqslant\frac14\prod_{k=2}^n\left(1-\frac1{2k}\right)^2\geqslant\frac14\prod_{k=2}^n\left(1-\frac1{k}\right)=\frac1{4n}. 
- \sum\limits_{k=2}^{2n+1}u_k\geqslant\sum\limits_{k=1}^n\frac1{\sqrt{k}}=\int\limits_1^{n+1}\frac{\mathrm dt}{\sqrt{\lfloor t\rfloor}}\geqslant\int\limits_1^{n+1}\frac{\mathrm dt}{\sqrt{t}}=2\sqrt{n+1}-2. 
-k
-K
-n
-K
-k<K
-K
-k \ge K
-|o(1/k^{3/2})|
-1/3k^{3/2}

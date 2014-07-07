@@ -1,8 +1,0 @@
-f\in C^2[a,b]
-[a,b]
-I[f]:=\int_a^bf(x)\text{ dx}\approx \frac{b-a}{n}\sum_{i=1}^nf\left(a+\frac{2i-1}{n}(b-a)\right)=:M_n[f]
-|I[f]-M_n[f]|\le \frac{(b-a)^3}{24n^2}\max_{x\in [a,b]}|f''(x)|
-\,t=(b-a)/2n\,
-\begin {align}I'(t)&=f(t)+f(-t) \\ I''(t)&=f'(t)-f'(-t) \\ I'''(t)&=f''(t)+f''(-t) \end {align} 
-I(t)=2f(0)t+(f''(c)+f''(-c))\frac {t^3}{3!}
-|I(t)-2f(0)t|\le 2\max |f''|\frac {t^3}{3!}

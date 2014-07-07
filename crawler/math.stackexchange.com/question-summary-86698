@@ -1,15 +1,0 @@
- I(X;Y) = H(X) - H(X | Y) 
- H(X) = \sum_{x} p(x) \log \frac{1}{p(x)} ,
- H(X|Y) = \sum_{x,y} p(x,y) \log \frac{1}{p(x|y)} 
-H(X)
- \begin{align*} \sum_x p(x) \log \frac{1}{p(x)}  &= \sum_x \left( (p(x) \log \frac{1}{p(x)}) \sum_y p(y|x) \right)  \\ &= \sum_{x,y} p(x)p(y|x) \log \frac{1}{p(x)} = \\ &= \sum_{x,y} p(x,y) \log \frac{1}{p(x)}  \end{align*} 
- \sum \limits_y p(y|x) = 1 
-x
-H(X|Y)
-\sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)} .
- \begin{align*} \sum_{x} p(x) \log \frac{1}{p(x)}  &= \sum_{x} \left\{ ( p(x) \log \frac{1}{p(x)} ) \sum_{y} p(y) \right\}  \\ &= \sum_{x,y} p(x)p(y) \log \frac{1}{p(x)}  \end{align*} 
- \sum_{y} p(y) = 1 
-\sum_{x,y} p(x,y) \log \frac{1}{p(x)} = \sum_{x,y} p(x)p(y) \log \frac{1}{p(x)} 
- p(x,y) = p(x)p(y) 
-X
-Y

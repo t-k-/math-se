@@ -1,13 +1,0 @@
-x
-\displaystyle \left\{\sum_{p=0}^{n}\left(\arctan\frac{x}{2^p}\right)^2\right\}_{n\geq 0}
- |\arctan u| \le |u|,\text{ so }(\arctan u)^2 \le u^2. 
-f_p(x):=\left(\arctan \frac x{2^p}\right)^2
-\sum\limits_{p\geq 0}\frac{x^2}{2^{2p}}
-\sum\limits_{p\geq 0}f_p(x)
-x
-\mathbb R
-N
-\sup_{x\in\mathbb R}\sum\limits_{p\geq N}f_p(x)
-0
-0\leq f_p(x)=\left(\int_0^{\frac x{2^p}}\frac{dt}{1+t^2}\right)^2\leq\left(\int_0^{\frac x{2^p}}dt\right)^2=\frac{x^2}{2^{2p}},
-\sup_{x\in\mathbb R}\sum_{p\geq N}f_p(x)\geq \sum_{p\geq N}f_p\left(2^N\right)\geq \left(\arctan \frac{2^N}{2^N}\right)^2=\frac{\pi^2}{16}

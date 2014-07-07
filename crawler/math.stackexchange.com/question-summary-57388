@@ -1,17 +1,0 @@
-p(x_1,x_2,x_3)
-x_1,x_2,x_3
-p(x_1,x_2,x_3)
-\alpha_k
- \left(   \begin{array}{c}     x_1 \\     x_2 \\     x_3 \\   \end{array} \right)_{k+1} = \left(   \begin{array}{c}     x_1 \\     x_2 \\     x_3 \\   \end{array} \right)_{k} - \alpha_k \left(   \begin{array}{c}     \frac{\partial p}{\partial x_1} \\     \frac{\partial p}{\partial x_2} \\     \frac{\partial p}{\partial x_3} \\   \end{array} \right)_{k} 
-\alpha_{1,k}, \alpha_{2,k}, \alpha_{3,k}
-\alpha_{1,k}=\alpha_{2,k}=\alpha_{3,k}
-\alpha_{1,k}, \alpha_{2,k}, \alpha_{3,k}
-\nabla_\mathbf{x} p(\mathbf{x})
- x_{1,k+1}=x_{1,k}-\alpha_{1,k} \frac{\partial p}{\partial x_1} 
- x_{2,k+1}=x_{2,k}-\alpha_{2,k} \frac{\partial p}{\partial x_2} 
- x_{3,k+1}=x_{3,k}-\alpha_{3,k} \frac{\partial p}{\partial x_3} 
- \left(   \begin{array}{c}     x_1 \\     x_2 \\     x_3 \\   \end{array} \right)_{k+1} = \left(   \begin{array}{c}     x_1 \\     x_2 \\     x_3 \\   \end{array} \right)_{k} - \left(   \begin{array}{ccc}     \alpha_{1,k} & 0 & 0 \\     0 & \alpha_{2,k} & 0  \\     0& 0& \alpha_{3,k}\\   \end{array} \right) \left(   \begin{array}{c}     \frac{\partial p}{\partial x_1} \\     \frac{\partial p}{\partial x_2} \\     \frac{\partial p}{\partial x_3} \\   \end{array} \right)_{k} 
-\alpha_{i,k}
-0 < l < u
-   l \ \alpha_{i,k} \leq \alpha_{j,k} \leq u \ \alpha_{i,k}   \quad   \text{for all iterations } k \text{ and all } i, j = 1, \ldots, n. 
-B

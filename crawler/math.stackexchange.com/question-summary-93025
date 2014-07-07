@@ -1,46 +1,0 @@
-(U, V)
-\rho = \sin a
-R\cos(Q)
-R\sin(Q+a)
-R\cos(Q)
-R\sin(Q)
-R\sin(Q+a) = R\cos(Q)\sin(a)+R\sin(Q)\cos(a)
-X
-f_X(x)
-a \neq 0
-Y = aX+b
-f_Y(y) = \frac{1}{|a|}f_X\left(\frac{y-b}{a}\right)
-n
-X
-f_X(x)
-n\times n
-A
-B
-Y = AX+B
-n
-\text{det}(A)
-A
-f_Y(y) = \frac{1}{|\text{det}(A)|}f_X(A^{-1}(y-B))
-n
-X
-E[X]
-i
-E[X_i]
-n\times n
-S
-E[(X-E[X])(X-E[X])^T]
-\{i,j\}
-\text{cov}(X_i,X_j) = E[(X_i-E[X_i])(X_j-E[X_j])]
-X_i
-X_i
-Y = AX+B
-E[XX^T] = I
-Y_i
- f_X(x) = \prod_{i=1}^n f_{X_i}(x_i)  = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}}\exp(-x_i^2/2) = (2\pi)^{-n/2}\exp\left(-\frac{1}{2}x^Tx\right). 
-E[Y] = E[AX+B] = AE[X]+B = B,
-S_Y =  E[(Y-B)(Y-B)^T]= E[AXX^TA^T] = AE[XX^T]A^T = AA^T
-\begin{align*} f_Y(y) &= \frac{1}{|\text{det}(A)|}f_X(A^{-1}(y-B))\\ &= \frac{1}{(2\pi)^{n/2}|\text{det}(A)|} \exp\left(-\frac{1}{2}(A^{-1}(y-B))^TA^{-1}(y-B)\right)\\ &=\frac{1}{(2\pi)^{n/2}|\text{det}(A)|} \exp\left(-\frac{1}{2}(y-B)^T(A^{-1})^TA^{-1}(y-B)\right)\\ &= \frac{1}{(2\pi)^{n/2}|\text{det}(A)|^{1/2}|\text{det}(A^T)|^{1/2}} \exp\left(-\frac{1}{2}(y-B)^T(AA^T)^{-1}(y-B)\right)\\ &= \frac{1}{(2\pi)^{n/2}|\text{det}(AA^T)|^{1/2}} \exp\left(-\frac{1}{2}(y-B)^T(AA^T)^{-1}(y-B)\right)\\ &= \frac{1}{(2\pi)^{n/2}|\text{det}(S_Y)|^{1/2}} \exp\left(-\frac{1}{2}(y-B)^TS_Y^{-1}(y-B)\right) \end{align*} 
-[R\cos(Q), R\sin(Q+a)]^T
-[R\cos(Q), R\sin(Q)]^T
-R\cos(Q)
-R\sin(Q+a)

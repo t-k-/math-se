@@ -1,14 +1,0 @@
-f: \mathbb{R}^n \to \mathbb{R}
-\boldsymbol{g}: \mathbb{R}^n \to \mathbb{R}^m
-f(\boldsymbol{x})
-\boldsymbol{g}(\boldsymbol{x}) = \boldsymbol{0}
-\boldsymbol{J}_g^T(\boldsymbol{x})
-\boldsymbol{g}(\boldsymbol{x})
- \bigtriangledown \mathcal{L}(\boldsymbol{x}, \boldsymbol{y}) = \begin{bmatrix} \bigtriangledown f(\boldsymbol{x}) + \boldsymbol{J}_g^T(\boldsymbol{x})\boldsymbol{\lambda} \\ \boldsymbol{g}(\boldsymbol{x}) \end{bmatrix} = \boldsymbol{0} 
-\boldsymbol{B}(\boldsymbol{x}, \boldsymbol{y}) = \boldsymbol{H}_f(\boldsymbol{x}) + \sum_{i=1}^m  \lambda_i \boldsymbol{H}_{gi}(\boldsymbol{x})
- \boldsymbol{H}_{\mathcal{L}} (\boldsymbol{x}, \boldsymbol{y}) =  \begin{bmatrix} \boldsymbol{B}(\boldsymbol{x}, \boldsymbol{y}) & \boldsymbol{J}_g^T(\boldsymbol{x}) \\ \boldsymbol{J}_g(\boldsymbol{x}) & \boldsymbol{0} \end{bmatrix} 
-\boldsymbol{H}_{\mathcal{L}} (\boldsymbol{x}, \boldsymbol{y})
-(a,b)
-a = 0
-b
- \begin{bmatrix}  a^T & b^T \end{bmatrix} \begin{bmatrix}  B & J^T \\  J & 0 \end{bmatrix} \begin{bmatrix}  a \\ b \end{bmatrix} = a^T B a + 2 b^T J a. 

@@ -1,87 +1,0 @@
-\int_{0}^{1}e^x(1-x)^{100}dx
-(1-x)=u
-e\int_0^1e^{-t}t^{100}
- t^{100}e^{-t}=t^{100}(1-t+{t^2\over 2!}-{t^3\over 3!}-\cdots ) =t^{100}-t^{101}+{t^{102}\over 2!}-{t^{103}\over 3!}-\cdots 
-[0,1]
- \eqalign{ \int_0^1 e^{-t}t^{100}\,dt &=\sum_{n=0}^\infty \int_0^1 (-1)^n{t^{100+n}\over n!}\cr  &=\sum_{n=0}^\infty   (-1)^n{t^{101+n}\over({101+n}) n!}\Bigl|_0^1\cr   &=\sum_{n=0}^\infty   (-1)^n{1\over({101+n}) n!}. \cr } 
-100!\,e
-100!\ e-\lfloor100!\ e\rfloor\approx0.00999901019\ldots
-I_{100}=-1+100[-1+99[-1+98[-1+\cdots+2[-1+1I_0]\cdots]]]
-I_0
-e-1
-I_{100}=-1+100[-1+99[-1+98[-1+\cdots+2[-1+e-1]\cdots]]]
-I_n\to0
-n\to\infty
-n!\,e
-n!\,e
-e
-100
-100!\, e
- \begin{align} \int_0^1e^{1-t}t^{100}\,dt &  = 100!\, e-\lfloor100!\,e\rfloor\\ & = \sum_{n=101}^{\infty}\frac{100!}{n!} \end{align} 
-1/n
-f
- \frac{d}{dx}\left(e^x\ \sum_{n\ge0}\ (-1)^n\ f^{(n)}(x)\right)=e^x\ f(x), 
-\int\limits_0^1 {{e^{ - x}}{x^n}dx = \left[ { - {e^{ - x}}{x^n}} \right]_0^1}  + n\int\limits_0^1 {{e^{ - x}}} {x^{n - 1}}dx
-{I_n} =   -\frac{1}{e} + n{I_{n - 1}}
-\int\limits_0^1 {{e^{ - t}}{t^n}dt}  = {I_n}
-1-x = t
-I= -e \int \limits_1^0 e^{-t} \cdot t^{100}\,dt =e \int \limits_0^1 e^{-t} \cdot t^{100}\,dt
--t=s
-I= -e \int \limits_0^{-1} e^{s} \cdot s^{100}\,ds = e \int \limits_{-1}^{0} e^{s} \cdot s^{100}\,ds
-u = s^{100}~
-dv = e^s ds
-I_n
-n=100
-I_n
-n\geqslant0
-s
-s^n
-I_n
-k
-\frac1{(n+1)^k}
- I_n=\int_0^1x^n\mathrm e^{1-x}\mathrm dx. 
- \sum_{n\geqslant0}\frac{s^n}{n!}I_n=\int_0^1\sum_{n\geqslant0}\frac{s^n}{n!}x^n\mathrm e^{1-x}\mathrm dx=\int_0^1\mathrm e^{1-x(1-s)}\mathrm dx=\frac{\mathrm e-\mathrm e^{s}}{1-s}. 
- \frac{\mathrm e}{1-s}=\sum\limits_{n\geqslant0}\mathrm es^n. 
- \mathrm e^s\cdot\frac1{1-s}=\left(\sum\limits_{n\geqslant0}\frac{s^n}{n!}\right)\cdot\left(\sum\limits_{n\geqslant0}s^n\right), 
- \sum\limits_{k=0}^n\frac1{k!}. 
- \frac{I_n}{n!}=\mathrm e-\sum\limits_{k=0}^n\frac1{k!}=\sum\limits_{k=0}^{+\infty}\frac1{k!}-\sum\limits_{k=0}^n\frac1{k!}=\sum\limits_{k\geqslant n+1}\frac1{k!}, 
- I_n=\sum\limits_{k\geqslant1}\frac{n!}{(n+k)!}, 
- \frac1{n+1}\lt I_n\lt\frac1n. 
- I_n = e\int_0^1 e^{-t} t^n dt 
-I_n=n I_{n-1} - 1
-I_0 = e-1
-I_n
-a_n e - b_n
-a_n
-b_n
-a_n = n a_{n-1}
-b_n = n b_{n-1} +1
-a_0=1=b_0=1
- e\int_0^1 e^{-t} t^n dt = n! e - A000522(n)  
-b_{100} = A000522(100)
-b_{100}
-t=1-x,~dt=-dx
-I_n=\int_{0}^{1}t^{n}e^{-t}dt
-u=t^n,~du=nt^{n-1}dt
-v=-e^{-t},~dv=e^{-t}dt
-n>0
-I_0=1-\frac1e
-t^0=1
- I=\int_{0}^{1}e^x(1-x)^{100}dx=e\int_{0}^{1}t^{100}e^{-t}dt=e\;I_{100} 
- I_n =\int_{0}^{1}t^{n}e^{-t}dt =\left[-t^ne^{-t}\right]_0^1 +n\int_{0}^{1}t^{n-1}e^{-t}dt =-\frac1e+nI_{n-1} 
- I_n=n!\left(1-\frac1e\;\sum_{k=0}^n\frac1{k!}\right) =\frac{n!}{e}\left(e-\sum_{k=0}^n\frac1{k!}\right) 
- =\frac{n!}{e}\sum_{k=n+1}^\infty\frac1{k!} %=\frac1e\sum_{k=n+1}^\infty\frac{n!}{k!}% (hidden) extra step! =\frac1e\sum_{k=1}^\infty\frac{n!}{(n+k)!} 
- \frac{e^{-1}}{n+1} <I_n <\frac1e\sum_{k=1}^\infty\frac1{n^k} =\frac{e^{-1}}{n-1} 
- I=e\;I_{100} =\sum_{k=1}^\infty\frac{100!}{(100+k)!} =\frac1{101} +\frac1{101\cdot102} +\frac1{101\cdot102\cdot103} +\cdots 
- \eqalign{ I_n &=\sum_{k=0}^\infty {(-1)^k\over k!} \int_0^1 t^{n+k} dt \cr &=\sum_{k=0}^\infty {(-1)^k\over (n+k+1)k!}. \cr } 
-0.17\times10^{-238}
-8823909717
-7197666661
-n>-1
-u=1-t
-\Gamma(s)
-\Gamma(s,a)
-n=100
-e\big[\Gamma(101)-\Gamma(101,1)\big]\approx 0.009999
-I=\int\limits_{0}^{1}{\rm d}t\,e^{t}(1-t)^{n}.
-I=e \int\limits_{0}^{1}{\rm d}u{\hspace{1pt}} e^{-u}u^{n}=e \Bigg(\int\limits_{0}^{\infty}{\rm d}u{\hspace{1pt}} e^{-u}u^{n}-\int\limits_{1}^{\infty}{\rm d}u{\hspace{1pt}} e^{-u}u^{n}\Bigg)=e\big[\Gamma(n+1)-\Gamma(n+1,1)\big],

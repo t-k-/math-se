@@ -1,4 +1,0 @@
-\begin{align*}T(1)&=x^n\\ Tx&=1\\ Tx^2&=2x\\ \ldots&\ldots\\ Tx^n&=nx^{n-1}\end{align*}\implies \left[T\right]=\begin{pmatrix}0&0&0&\ldots&0&1\\ 1&0&0&\ldots&0&0\\ 0&2&0&\ldots&0&0\\ \ldots\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ 0&0&\ldots&0&n&0\end{pmatrix}
-\det(xI-[T])=\begin{vmatrix}x&0&0&\ldots&0&-1\\ -1&x&0&\ldots&0&0\\ 0&-2&x&\ldots&0&0\\ \ldots\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ 0&0&\ldots&0&-n&x\end{vmatrix}=
-x\begin{vmatrix}x&0&0&\ldots&0&0\\ -2&x&0&\ldots&0&0\\ 0&-2&x&\ldots&0&0\\ \ldots\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ 0&0&\ldots&0&-n&x\end{vmatrix}+\begin{vmatrix}0&0&0&\ldots&0&-1\\ -2&x&0&\ldots&0&0\\ 0&-3&x&\ldots&0&0\\ \ldots\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ 0&0&\ldots&0&-n&x\end{vmatrix}=
-=x(x^n)+(-1)^n\begin{vmatrix}-2&x&0&\ldots&0&0\\ 0&-3&x&\ldots&0&0\\ 0&0&-4&\ldots&0&0\\ \ldots\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ 0&0&\ldots&0&0&-n\end{vmatrix}=x^{n+1}+(-1)^n(-1)^nn!=x^{n+1}+n!

@@ -1,66 +1,0 @@
-f:\mathbb R\to \mathbb R
-C^1
-0<L<+\infty
-L:=\lim_{x\to+\infty}\frac{f(x)}{x^2}
-0<\liminf_{x\to+\infty}\frac{f'(x)}{x}\leq\limsup_{x\to+\infty}\frac{f'(x)}{x}<+\infty.
-\lim_{x\to+\infty}\frac{f'(x)}{x},
-\epsilon>0
-x_0
-x>x_0
-\left|\frac{f(x)}{x^2}-L\right|<\epsilon^2
-x>y>x_0
-x>y>z>x_0
-\frac{x^2-y^2}{x^2+y^2}=\epsilon
-\frac{y^2-z^2}{y^2+z^2}=\epsilon
-\xi
-\eta
-x>\xi>y>\eta>z
-(1)
-(2)
-x
-y
-z
-f
-f'
-f'(\eta)\le f'(y)\le f'(\xi)
-(3)
-(4)
-y>x_0\sqrt{\frac{1+\epsilon}{1-\epsilon}}
-\epsilon
- \begin{align} \frac{f(x)-f(y)}{x^2-y^2}&\le\frac{(L+\epsilon^2)x^2-(L-\epsilon^2)y^2}{x^2-y^2}\\ &=L+\epsilon^2\frac{x^2+y^2}{x^2-y^2} \end{align} 
- \begin{align} \frac{f(x)-f(y)}{x^2-y^2}&\ge\frac{(L-\epsilon^2)x^2-(L+\epsilon^2)y^2}{x^2-y^2}\\ &=L-\epsilon^2\frac{x^2+y^2}{x^2-y^2} \end{align} 
- \left|\frac{f(x)-f(y)}{x^2-y^2}-L\right|\le\epsilon^2\frac{x^2+y^2}{x^2-y^2}\tag{1} 
- \frac{f'(\xi)}{2\xi}=\frac{f(x)-f(y)}{x^2-y^2}\text{ and }\frac{f'(\eta)}{2\eta}=\frac{f(y)-f(z)}{y^2-z^2}\tag{2} 
- \left|\frac{f'(\xi)}{2\xi}-L\right|<\epsilon\text{ and }\left|\frac{f'(\eta)}{2\eta}-L\right|<\epsilon\tag{3} 
- 1\le\frac{\xi}{y}\le\frac{x}{y}=\sqrt{\frac{1+\epsilon}{1-\epsilon}}\text{ and }1\ge\frac{\eta}{y}\ge\frac{z}{y}=\sqrt{\frac{1-\epsilon}{1+\epsilon}}\tag{4} 
- \frac{f'(y)}{y}\le\frac{f'(\xi)}{y}\le\frac{f'(\xi)}{\xi}\sqrt{\frac{1+\epsilon}{1-\epsilon}}\le2(L+\epsilon)\sqrt{\frac{1+\epsilon}{1-\epsilon}} 
- \frac{f'(y)}{y}\ge\frac{f'(\eta)}{y}\ge\frac{f'(\eta)}{\eta}\sqrt{\frac{1-\epsilon}{1+\epsilon}}\ge2(L-\epsilon)\sqrt{\frac{1-\epsilon}{1+\epsilon}} 
- 2(L-\epsilon)\sqrt{\frac{1-\epsilon}{1+\epsilon}}\le\frac{f'(y)}{y}\le2(L+\epsilon)\sqrt{\frac{1+\epsilon}{1-\epsilon}} 
- \limsup\limits_{x\to+\infty}\frac{f'(x)}{x}\le2(L+\epsilon)\sqrt{\frac{1+\epsilon}{1-\epsilon}}\hspace{.25in}\text{and}\hspace{.25in}\liminf\limits_{x\to+\infty}\frac{f'(x)}{x}\ge2(L-\epsilon)\sqrt{\frac{1-\epsilon}{1+\epsilon}} 
- \lim\limits_{x\to+\infty}\frac{f'(x)}{x}=2L 
-\lim_{x\to\infty}\frac{f'(x)}{x}=2L.
-\lim\sup\frac{f'(x)}{x}\le 2L.
-f(x+h)\ge f(x)+hf'(x),
-h\ge 0.
-f
-h.
-g(x)=\frac{f(x)}{x^2},
-x,h>0.
-\varepsilon>0
-x>0,
-L-\varepsilon < g(x)<L+\varepsilon,
-\frac{f'(x)}{x}\le \frac{(x+h)^2}{xh}\left(g(x+h)-g(x)\frac{x^2}{(x+h)^2}\right)
-\frac{f'(x)}{x}\le \frac{(x+h)^2}{xh}\left(L+\varepsilon- (L-\varepsilon)\frac{x^2}{(x+h)^2}\right),
-\frac{f'(x)}{x}\le 2L+ L\frac{h}{x}+\varepsilon\frac{(x+h)^2+x^2}{xh}.
-h.
-L\frac{h}{x}+\varepsilon\frac{(x+h)^2+x^2}{xh}
-h=x\frac{\sqrt{2\varepsilon}}{\sqrt{L+\varepsilon}}.
-\lim\inf\frac{f'(x)}{x}\ge 2L
--h
-h
-L\frac{h}{x}+\varepsilon\frac{(x+h)^2+x^2}{xh}=(L+\varepsilon)\frac{h}{x}+2\varepsilon\frac{x}{h}+2\varepsilon=2\sqrt{2\varepsilon(L+\varepsilon)}+2\varepsilon,
-\lim_{x \rightarrow \infty} {f'(x) \over x} = 2L
-\liminf_{x \rightarrow \infty} {f'(x) \over x} < 2L
-y_n = (1 - \delta)x_n
-\delta
-y_n = (1 + \delta)x_n

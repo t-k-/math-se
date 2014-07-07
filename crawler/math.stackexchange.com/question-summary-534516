@@ -1,3 +1,0 @@
-\int_0^{1200}\int_0^{1200-x}\frac{1}{1440000}e^{-x/1200}e^{-y/1200}dy\, \, dx = 1-e^{-1}
-\geq
-\int\limits_{0}^{1200} \int\limits_0^{1200-x}(\frac{1}{1200})^2 e^{\frac{-x}{1200}} e^{\frac{-y}{1200}} dydx = \int\limits_{0}^{1200}(\frac{1}{1200})e^{\frac{-x}{1200}} \int\limits_0^{1200-x}(\frac{1}{1200}) e^{\frac{-y}{1200}} dydx = \int\limits_{0}^{1200}(\frac{1}{1200})e^{\frac{-x}{1200}} [-e^{\frac{-y}{1200}}]^{1200-x}_0 dydx = \int\limits_{0}^{1200}(\frac{1}{1200})e^{\frac{-x}{1200}}[1-e^{-(1-\frac{x}{1200})}]dx = \int\limits_{0}^{1200}(\frac{1}{1200})e^{\frac{-x}{1200}}-\frac{1}{1200}e^{-1}dx = [1-e^{-1}]-e^{-1} =1-2e^{-1} = Poisson(N\geq2, \lambda = 1)

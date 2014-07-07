@@ -1,13 +1,0 @@
-x, y
- \min_{x,y}\ x^T x + a^T x \qquad \mathrm{s.t.} \qquad \begin{array}{r}x^T M_i y + c_i = 0 \\ y \geq 0\end{array}.
-b=-\frac{1}{2}a
-L(y)^T=-[M_1 y, M_2 y, \ldots ] 
-  \min_{x,y}\ \frac{1}{2} \|x-b\|^2 \qquad \mathrm{s.t.} \qquad \begin{array}{r} L(y)x = c \\ y \geq 0\end{array}. 
-    x^* = b + L(y)^T(L(y)L(y)^T)^{-1}(c-L(y)b) 
-  \min_{y}\ \frac{1}{2} \|c-L(y)b\|_{H^{-1}}^2 \qquad \mathrm{s.t.} \qquad \begin{array}{r} H = L(y)L(y)^T \\ y \geq 0\end{array}. 
-\|z\|_{H^{-1}}^2=z^TH^{-1}z
-H_{0}=I
-  y_{k+1} = \mbox{arg }\min_{y\ge 0 }\ \frac{1}{2} \|c-L(y)b\|_{H_{k}^{-1}}^2 
-  H_{k+1} = L(y_{k+1})L(y_{k+1})^T 
-c=L(y_1)b
-x^*=b

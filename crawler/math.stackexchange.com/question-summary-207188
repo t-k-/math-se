@@ -1,9 +1,0 @@
-f(x)=\int_0^{\frac{\pi}{2}} e^{\sqrt{1-x^2 \sin^2 t}}\, dt
-u=\sin t
-f(x)=\int_0^{1} \cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-f'(x)=\int_0^{1} \frac{-xu^2}{\sqrt{1-x^2 u^2 }}\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-xf'(x)=\int_0^{1} \frac{-1+1-x^2u^2}{\sqrt{1-x^2 u^2 }}\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-xf'(x)=-\int_0^{1} \frac{1}{\sqrt{1-x^2 u^2 }}\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du+\int_0^{1} \sqrt{1-x^2 u^2 }\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-h(x)=\int_0^{1} \sqrt{1-x^2 u^2 }\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-h'(x)=\int_0^{1} \frac{-xu^2}{\sqrt{1-x^2 u^2 }}\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du-\int_0^{1} xu^2\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du
-h'(x)=f'(x)-\int_0^{1} xu^2\cfrac{e^{\sqrt{1-x^2 u^2}}}{\sqrt{1-u^2}}\, du

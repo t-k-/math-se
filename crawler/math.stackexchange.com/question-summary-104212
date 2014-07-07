@@ -1,60 +1,0 @@
-n\to \infty
-k\geqslant1
-x\mapsto x^{1/4}
-(k-1)^{1/4}\leqslant x^{1/4}\leqslant k^{1/4}
-k-1\leqslant x\leqslant k
-k=1
-k=n
-\tfrac45n^{5/4}
-s_{n-1}=s_n-n^{1/4}
-n\geqslant1
-n^{1/4}=o(n^{5/4})
-s_n\sim\tfrac45n^{5/4}
- (k-1)^{1/4}\leqslant\int_{k-1}^kx^{1/4}\mathrm dx\leqslant k^{1/4}. 
- s_{n-1}=\sum_{k=0}^{n-1}k^{1/4}\leqslant\int_{0}^nx^{1/4}\mathrm dx\leqslant \sum_{k=1}^{n}k^{1/4}=s_n. 
- \tfrac45n^{5/4}\leqslant s_n\leqslant\tfrac45n^{5/4}+n^{1/4}. 
-\sum_{k=0}^{n} k^{1/4} = \frac{4}{5} n^{5/4} + \frac{1}{2} n^{1/4} + C + \mathcal{O}(n^{-3/4})
-C = \zeta(-1/4)
-\zeta
-\sum_{k=0}^{n}k^{1/4} \sim \frac{4}{5} n^{5/4}
-\lim_{n \to \infty} \frac{\sum_{k=0}^{n}k^{1/4}}{\frac{4}{5} n^{5/4}} = 1
-\lim_{n \to \infty} \sum_{k=0}^{n}k^{1/4}-  \frac{4}{5} n^{5/4} - \frac{1}{2} n^{1/4} - C = 0 
-S(n)
-S(x) = \sum_{k\ge 1} \left(\sqrt[4]{k}-\sqrt[4]{x+k}\right).
-S(n) = \sum_{q=1}^n \sqrt[4]{q},
-S(x) = \sum_{k\ge 1} \sqrt[4]{k} \left(1-\sqrt[4]{x/k+1}\right).
-g^*(s)
-g(x).
-\mathfrak{M}\left(\sum_{k\ge 1} \lambda_k g(\mu_k x);s\right) = \left(\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} \right) g^*(s)
-\lambda_k = \sqrt[4]{k}, \quad \mu_k = \frac{1}{k} \quad \text{and} \quad g(x) = 1 - \sqrt[4]{1+x}.
--1/4-s > 1
-s < -5/4.
-\sum_{k\ge 1} \frac{\lambda_k}{\mu_k^s} =  \sum_{k\ge 1} \sqrt[4]{k}\times k^s = \zeta(-1/4-s)
-g^*(s)
-g(x)
-\langle -1, -1/4 \rangle,
-g^*(s)
-\langle -2, -1 \rangle,
-\int_0^\infty \left(1 - \sqrt[4]{1+x}\right) x^{s-1} dx
-g^*(s) = - \frac{1}{\Gamma(-1/4)} \Gamma(s)\Gamma(-1/4-s)
- g(x) = 1 + \frac{1}{4} x - \sqrt[4]{1+x}
-\sum_{k\ge 1} \sqrt[4]{k} \frac{1}{4} \frac{x}{k} = \frac{1}{4} x \zeta(3/4),
-Q(s)
-S(x)
-Q(s) = - \frac{1}{\Gamma(-1/4)} \Gamma(s)\Gamma(-1/4-s) \zeta(-1/4-s).
-\frac{1}{2\pi i} \int_{-3/2-i\infty}^{-3/2+i\infty} Q(s)/x^s ds
-s=-5/4
-s=-1
-g^*(s)
-\mathrm{Res}(Q(s)/x^s; s=-5/4) = -\frac{1}{\Gamma(-1/4)} \Gamma(-5/4)\Gamma(1)\times -1 \times x^{5/4} = -\frac{4}{5} x^{5/4}.
-\mathrm{Res}(Q(s)/x^s; s=-1) = -\frac{1}{4}\zeta(3/4)x.
-s=-1/4
-s=0
-\mathrm{Res}(Q(s)/x^s; s=-1/4) =  -\frac{1}{\Gamma(-1/4)} \Gamma(-1/4) \times -1 \times\zeta(0) = -\frac{1}{2} \sqrt[4]{x}.
-\mathrm{Res}(Q(s)/x^s; s=0) = -\frac{1}{\Gamma(-1/4)} \Gamma(-1/4) \zeta(-1/4) = -\zeta(-1/4).
-s = q-1/4
-q\ge 1
-\mathrm{Res}(Q(s)/x^s; s=q-1/4) = -\frac{1}{\Gamma(-1/4)} \Gamma(q-1/4) \frac{(-1)^{q+1}}{q!} \zeta(-q) \frac{1}{x^{q-1/4}} \\ = \prod_{p=0}^{q-1} (p-1/4) \times  \frac{(-1)^{q+1}}{q!} \frac{B_{q+1}}{q+1}  \frac{1}{x^{q-1/4}} = - \left(-\frac{1}{4}\right)^q B_{q+1} \frac{\prod_{p=0}^{q-1} (4p-1)}{(q+1)!}  \frac{1}{x^{q-1/4}}.
-x=n
-S(n) = \sum_{k=1}^n \sqrt[4]{k} \sim \frac{4}{5} n^{5/4} + \frac{1}{2} \sqrt[4]{n} + \zeta(-1/4) + \sum_{q\ge 1} \left(-\frac{1}{4}\right)^q B_{q+1} \frac{\prod_{p=0}^{q-1} (4p-1)}{(q+1)!}  \frac{1}{n^{q-1/4}}.
-\frac{4}{5} n^{5/4} + \frac{1}{2} \sqrt[4]{n} + \zeta(-1/4) + 1/48\,{n}^{-3/4}-{\frac {7}{15360}}\,{n}^{-11/4}+{\frac {11}{98304}}\, {n}^{-{\frac {19}{4}}}\\-{\frac {4807}{62914560}}\,{n}^{-{\frac {27}{4}} }+{\frac {13547}{134217728}}\,{n}^{-{\frac {35}{4}}}-{\frac {9360977}{ 42949672960}}\,{n}^{-{\frac {43}{4}}}\\+{\frac {191649409}{274877906944} }\,{n}^{-{\frac {51}{4}}}-{\frac {1089307862269}{351843720888320}}\,{n }^{-{\frac {59}{4}}} +\cdots.

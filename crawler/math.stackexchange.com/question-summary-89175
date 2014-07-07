@@ -1,31 +1,0 @@
-(X_1, X_2)
-\{1,2, \ldots, 20\}
-E_1:=\{X_1 \geq 8\}
-E_2:=\{X_2 \geq 12\}
-P(E_1\cap E_2) = \frac{9}{20}
-P(E_1) \cdot P(E_2) = \frac{13}{20} \cdot \frac{9}{20} = \frac{117}{400}
-P(E_1 \cap E_2) > P(E_1)\cdot P(E_2)
-(E_1\text{ and }E_2)
-P(E_1^c) = 1 - P(E_1)
-P(E_2 \mid E_1^c)  >  P(E_2)
-P(E_2 \cap E_1) = \dfrac{9}{20}
-\begin{align*} P(E_2) &= P(E_2\mid E_1)P(E_1) + P(E_2\mid E_1^c)P(E_1^c)\\ &= P(E_2\mid E_1^c) + (P(E_2\mid E_1) -P(E_2\mid E_1^c))P(E_1) \end{align*}
-\min\{P(E_2\mid E_1), P(E_2\mid E_1^c)\}  \leq P(E_2) \leq \max\{P(E_2\mid E_1), P(E_2\mid E_1^c)\},
-P(E_2 \mid E_1)  <  P(E_2) ~\text{and}~  P(E_2 \cap E_1) = P(E_2 \mid E_1)P(E_1)  <  P(E_2)P(E_1).
-P(E_2 \mid E_1) = \frac{P(E_2) - P(E_2\mid E_1^c)P(E_1^c)}{P(E_1)} = \frac{\frac{9}{20}-\left(\frac{9}{19}\times\frac{7}{20}\right)}{\frac{13}{20}} =\frac{9 \times 12}{13 \times 19}
-P(E_2 \cap E_1) = P(E_2 \mid E_1)P(E_1) = \frac{9 \times 12}{13 \times 19} \times \frac{13}{20} = \frac{9}{20}\times \frac{12}{19}
-E_1, E_2
-E_1
-E_2
-E_1
-\frac{P(E_1\cap E_2)}{P(E_1)P(E_2)}=\frac{P(E_2|E_1)}{P(E_2)}\lt1
-E_1
-E_2
-Cov(e_1,e_2) = E[ \left(e_1 - E(e_1)\right)   \left(e_2 - E(e_2)\right) ]=E[e_1 e_2] - E(e_1)E(e_2) = P(E_1 \cap E_2) - P(E_1)P(E_2)
-P(E_1 \cap E_2) > P(E_1)  P(E_2)
-E_1
-E_2
- P(E_1) = \frac{13}{20}
- P(E_2) = \frac{9}{20}
- P(E_1 \cap E_2 ) =  P (E_1 | E_2) P(E_2) =  \frac{12}{19} \frac{9}{20}
- P(E_1 \cap E_2 ) < P(E_1) P(E_2)

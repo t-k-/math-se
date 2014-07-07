@@ -1,18 +1,0 @@
-f(x)
-[0,\infty)
-\displaystyle F(t)=\int_0^{\infty} \frac{t f(x)}{t^2+x^2} dx
-t>0
-\displaystyle \lim_{t\to 0^+} F(t)
-|f(x)|\leq M
-|F(t)|\leq \frac{\pi}{2} M
-\displaystyle F(t)=\int_0^{\infty} \frac{f(t y)}{1+y^2} dy
-\displaystyle \lim_{t\to o^+} F(t)=\int_0^{\infty} \frac{\lim\limits_{t\to 0^+}f(t y)}{1+y^2} dy=\frac{\pi}{2} f(0).
-\epsilon > 0
-\delta > 0
-|x| \leq \delta
-|f(x) - f(0)| \leq \epsilon
-\limsup_{t \to 0^+}
-\epsilon > 0
- \begin{align*} \left| F(t) - \frac{\pi}{2} f(0) \right| & = \left| \int_{0}^{\infty} \frac{f(t x) - f(0)}{1+x^2} \; dx \right| \\ & \leq \int_{0}^{\infty} \frac{|f(t x) - f(0)|}{1+x^2} \; dx \\ & = \int_{0}^{\delta / t} \frac{|f(t x) - f(0)|}{1+x^2} \; dx + \int_{\delta / t}^{\infty} \frac{|f(t x) - f(0)|}{1+x^2} \; dx \\ & \leq \epsilon \int_{0}^{\delta / t} \frac{dx}{1+x^2} + \int_{\delta / t}^{\infty} \frac{2M}{1+x^2} \; dx \\ & \leq \frac{\pi}{2} \epsilon + \int_{\delta / t}^{\infty} \frac{2M}{1+x^2} \; dx. \end{align*}
-\limsup_{t \to 0^+} \left| F(t) - \frac{\pi}{2} f(0) \right| \leq \frac{\pi}{2}\epsilon.
-\begin{align*} \limsup_{t \to 0^+} \left| F(t) - \frac{\pi}{2} f(0) \right| = 0 & \Longrightarrow \lim_{t \to 0^+} \left| F(t) - \frac{\pi}{2} f(0) \right| = 0 \\ & \Longrightarrow \lim_{t \to 0^+} F(t) = \frac{\pi}{2} f(0) \end{align*}

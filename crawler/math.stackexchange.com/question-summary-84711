@@ -1,32 +1,0 @@
- f : \mathbb{R} \to \mathbb{R} 
-f(2) = 3, f'(2) = 1
-f''(x) =  \frac{e^{-x}}{x^2+1}
-f
-a=2
-x = \frac{5}{2}
- \frac{7}{2} \leq f\left(\frac{5}{2}\right) \leq \frac{7}{2} + \frac{e^{-2}}{40} . 
-f(5/2) \approx 7/2 + \frac{e^{-2}}{40} - \frac{ - e^{-5/2}}{48} 
-f(x) \approx f(2) + f'(2)(x-2) = x+1.
-n=1
-\max|f''(x)|\leq M
-2
-x
-\left| f(x) - (x+1)\right| \leq \frac{M}{2!}|x-2|^2
-[2,2.5]
-f''(x) = \frac{e^{-x}}{x^2+1}
-M=f''(2) = \frac{e^{-2}}{5}
-x=\frac{5}{2}
--\frac{(x^2+1)e^{-x} + 2xe^{-x}}{(x^2+1)^2},
-\frac{M}{2}\left(\frac{1}{2}\right)^2 = \frac{e^{-2}}{10}\left(\frac{1}{2}\right)^2.
--\left(\frac{e^{-2}}{10}\right)\left(\frac{1}{2}\right)^2 \leq f\left(\frac{5}{2}\right) - \frac{7}{2}\leq \frac{e^{-2}}{10}\left(\frac{1}{2}\right)^2
-f'''(x)=(f''(x))'= -\frac{e^{-x}}{x^2+1} -\frac{2xe^{-x}}{(x^2+1)^2}
-x=2
-f'''(2)=-\frac{9e^{-2}}{25}
-\frac{3e^{-2}}{50}
-f^\prime(x) = f^\prime(2) + \int_2^x f^{\prime\prime}(y) \mathrm{d} y = 1 + \int_2^x \frac{\exp(-u)}{1+u^2} \mathrm{d} u
- \begin{eqnarray}    f(x) &=& f(2) + \int_2^x f^\prime(z) \mathrm{d} z = 3 + \int_2^x \left( 1 + \int_2^z \frac{\exp(-u)}{1+u^2} \mathrm{d} u \right) \mathrm{d} z \\   &=& 3 + (x-2) + \int_2^x \int_2^z \frac{\exp(-u)}{1+u^2} \mathrm{d} u \mathrm{d} z \end{eqnarray} 
-f\left( \frac{5}{2} \right) \ge 3 + \left( \frac{5}{2} - 2\right) = \frac{7}{2}
-\frac{\exp(-u)}{1+u^2}
-u>0
-\begin{eqnarray}   \int_2^\frac{5}{2} \int_2^z \frac{\exp(-u)}{1+u^2} \mathrm{d} u \mathrm{d} z &\le& \int_2^\frac{5}{2} \int_2^z \frac{\exp(-2)}{1+2^2} \mathrm{d} u \mathrm{d} z = \int_2^{\frac{5}{2}} \frac{\exp(-2)}{5} (z-2) \mathrm{d} z \\ &=& \frac{1}{5 \mathrm{e}^{2}} \cdot \left. \frac{1}{2} (z-2)^2 \right|_2^\frac{5}{2} =  \frac{1}{5 \mathrm{e}^{2}} \cdot  \frac{1}{8} = \frac{1}{40 \mathrm{e}^{2}} \end{eqnarray} 
-    \frac{7}{2} \le f\left( \frac{5}{2} \right) \le \frac{7}{2} + \frac{1}{40 \mathrm{e}^{2}}     

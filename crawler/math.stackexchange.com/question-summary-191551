@@ -1,9 +1,0 @@
-f(x)=(x−4)^2\forall x\in[0,4]
-f(x)
-[−8,8]
-f(x)
-p=4,l=2
-\begin{align*} a_0&=\frac1L\int\limits_{-L}^Lf(x)\mathrm dx\\ &=\frac22\int\limits_0^4\left[x^2-8x+16\right]\mathrm dx\\ &=\left[\frac13x^3-4x^2+16x\right]\Big|^4_0\\ a_0&=64/3 \end{align*}
-\begin{align*} a_n&=\frac1L\int\limits_{-L}^Lf(x)\cos\left(\frac{n\pi x}L\right)\mathrm dx\\ &=\int\limits_0^4x^2\cos\left(\frac{n\pi x}2\right)\mathrm dx-8\int\limits_{0}^{4}x\cos\left(\frac{n\pi x}2\right)\mathrm dx+16\int\limits_{0}^{4}\cos\left(\frac{n\pi x}2\right)\mathrm dx\\ &=\frac22\left[\frac{32}{n^2\pi^2}-8(0)+16\left(\frac{2}{n\pi}\sin\left(\frac{nx\pi}{2}\right)\right)\Big|^4_0\right]\\ a_n&=\frac{16}{n^2\pi^2} \end{align*}
-L = 4
-\cos

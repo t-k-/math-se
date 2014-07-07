@@ -1,28 +1,0 @@
-(x_1,0)
-t=0
-x
-b_1
-(0,x_2)
-t=0
-b_2 > b_1
-u(x_1,x_2)
-u(x_1,x_2)
-b_2^{(x_i)}(t)
-b_2
-x_i
-x_1
-x_2
- \begin{aligned} \int^{u(x_1,x_2)}_0 b_2^{(x_1)}(t;x_1,x_2)\,dt &= x_1+ b_1 u(x_1,x_2) \\ \int^{u(x_1,x_2)}_0 b_2^{(x_2)}(t;x_1,x_2)\,dt &= x_2 \end{aligned} 
-u
-(X_1,0)
-(X_2,Y_2)
-\begin{align} \frac{d}{dt}X_1 &= b_1 \\ \frac{d}{dt}(X_2, Y_2) &= \frac{b_2}{\sqrt{(X_1 - X_2)^2 + (Y_2)^2}} (X_1-X_2, -Y_2) \end{align}
- \frac{d}{dt}(X_1 - X_2, Y_2) = \left( b_1 - \frac{b_2(X_1-X_2)}{\sqrt{(X_1 - X_2)^2 + (Y_2)^2}}, \frac{-b_2 Y_2}{\sqrt{(X_1 - X_2)^2 + (Y_2)^2}}\right) 
-X_1 = x_1, X_2 = 0, Y_2 = x_2
-x'_1 = X_1(t)- X_2(t)
-x'_2 = Y_2(t)
- u(X_1(t) - X_2(t), Y_2(t)) = s + u(X_1(s+t) - X_2(s+t), Y_2(s+t)) 
-s
- 0 = 1 + du \circ \frac{d}{dt}(X_1 - X_2, Y_2) 
-u = u(x_1,x_2)
- -1 = \partial_1 u \cdot \left( b_1 - \frac{b_2 x_1}{\sqrt{x_1^2 + x_2^2}}\right) + \partial_2 u \cdot \left( - \frac{b_2 x_2}{\sqrt{x_1^2 + x_2^2}}\right) 

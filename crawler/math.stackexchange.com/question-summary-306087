@@ -1,4 +1,0 @@
-\int_0^1 \int_0^1 \cos (n\pi (x+y))\text{d}x\text{d}y
-\begin{align}\int_0^1\mathrm dx\int_0^1\mathrm dy \:\cos (n\pi (x+y)) &= \int_0^1\mathrm dx\int_0^1\mathrm dy \: [\cos{n \pi x} \cos{n \pi y} - \sin{n \pi x}\sin{n \pi y}] \\ &= \int_0^1\mathrm dx \:\cos{n \pi x} \int_0^1\mathrm dy \cos{n \pi y} - \int_0^1\mathrm dx \:\sin{n \pi x} \int_0^1\mathrm dy \sin{n \pi y} \\ &= \frac{\sin^2{n \pi} - (1-\cos{n \pi})^2}{n^2 \pi^2}\\ &= -\frac{1 -2 \cos{n \pi} + \cos{2 n \pi}}{n^2 \pi^2}\end{align}
- \int_0^1 \cos(n \pi (x + y)) dx = \frac{1}{n\pi} [\sin(n\pi(y+1)) - \sin(n\pi y)]
-\int_0^1 \int_0^1 \cos(n\pi(x+y))dx dy = \int_0^1 \frac{1}{n\pi} [\sin(n\pi(y+1)) - \sin(n\pi y)] dy = \frac{1}{n^2\pi^2}(2\cos(n\pi) - 1)
