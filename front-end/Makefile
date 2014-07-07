@@ -5,6 +5,7 @@ $(search_cgi): front-end.c search.html template.html
 	chmod +x $@
 
 install: $(search_cgi) ../ma-pa ../ma-se *.png *.jpg *.cat *.html
+	mkdir -p /var/www/html/ /var/www/cgi/
 	for f in $^; do cp $$f /var/www/cgi/; done
 	cp /var/www/cgi/*.jpg /var/www/html/
 	cp /var/www/cgi/*.png /var/www/html/
