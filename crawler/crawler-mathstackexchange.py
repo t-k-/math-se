@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 import re
 import os
 import sys
@@ -5,6 +6,7 @@ import pycurl
 import time 
 import cStringIO
 import getopt
+from dollar import find_dollar_tex
 from bs4 import BeautifulSoup
 
 re_sdollar = re.compile(r'(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)')
@@ -42,17 +44,20 @@ def find_tex(re_mod, string, sf):
 
 def find_p(q_page, sf):
 	s = BeautifulSoup(q_page)
-	# s = BeautifulSoup(open("test.html"))
 	tag_p_array = s.find_all('p')
 	for obj in tag_p_array:
 		string = obj.string
 		if string is None:
 			continue
-                # a newline is equavalent to a space in Tex
+		# a newline is equavalent to a space in Tex
 		string = string.replace("\n", ' ') 
 		string = string.replace("\r", ' ') 
-		find_tex(re_sdollar, string, sf)
-		find_tex(re_ddollar, string, sf)
+		# The following two functions are obsolete,
+		# they are solely mistakes. 
+		# find_tex(re_sdollar, string, sf)
+		# find_tex(re_ddollar, string, sf)
+		find_dollar_tex(string, sf)
+
 		find_tex(re_inline, string, sf)
 		find_tex(re_display, string, sf)
 
@@ -111,13 +116,13 @@ def crawl_all():
 	crawl(1, 5000)
 
 def help(arg0):
-	print '%s [-a, --all] | [-f, --force <url>]' % arg0
+	print '%s [-a, --all] [-f, --force <post id>] [-t, --test <file path>]' % arg0
 	sys.exit(1)
 
 def main(arg):
 	argv = arg[1:]
 	try:
-		opts, args = getopt.getopt(argv, "af:", ['all', 'force='])
+		opts, args = getopt.getopt(argv, "af:t:", ['all', 'force=', 'test='])
 		if len(opts) == 0:
 			raise
 	except:
@@ -127,6 +132,10 @@ def main(arg):
 		if opt in ("-a", "--all"):
 			print "crawling all pages..."
 			crawl_all()
+			break
+		if opt in ("-t", "--test"):
+			print "crawling test page %s ..." % arg
+			find_p(open(arg), sys.stdout)
 			break
 		if opt in ("-f", "--force"):
 			print "crawling %s..." % arg
