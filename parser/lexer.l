@@ -153,18 +153,42 @@ extern unsigned int stack;
 \\begin\{cases\}   { mkstr(yytext); return BEGIN_MAT; }
 \\end\{cases\}     { mkstr(yytext); return END_MAT; } 
 
-\\begin\{array\}\{[^}]*\}    { BEGIN(tab); } 
-\\end\{array\}               { BEGIN(INITIAL); } 
-\\begin\{align\}             { BEGIN(tab); } 
-\\end\{align\}               { BEGIN(INITIAL); } 
-\\begin\{align\*\}           { BEGIN(tab); } 
-\\end\{align\*\}             { BEGIN(INITIAL); } 
-\\begin\{equation\}          { BEGIN(tab); } 
-\\end\{equation\}            { BEGIN(INITIAL); } 
-\\begin\{split\}             { BEGIN(tab); } 
-\\end\{split\}               { BEGIN(INITIAL); } 
-\\begin\{gather\}            { BEGIN(tab); } 
-\\end\{gather\}              { BEGIN(INITIAL); } 
+\\begin\{align\}                  { BEGIN(tab); } 
+\\end\{align\}                    { BEGIN(INITIAL); } 
+\\begin\{align\*\}                { BEGIN(tab); } 
+\\end\{align\*\}                  { BEGIN(INITIAL); } 
+\\begin\{alignat\}\{[^}]*\}       { BEGIN(tab); } 
+\\end\{alignat\}                  { BEGIN(INITIAL); } 
+\\begin\{alignat\*\}\{[^}]*\}     { BEGIN(tab); } 
+\\end\{alignat\*\}                { BEGIN(INITIAL); } 
+\\begin\{aligned\}                { BEGIN(tab); } 
+\\end\{aligned\}                  { BEGIN(INITIAL); } 
+\\begin\{alignedat\}\{[^}]*\}     { BEGIN(tab); } 
+\\end\{alignedat\}                { BEGIN(INITIAL); } 
+\\begin\{array\}\{[^}]*\}         { BEGIN(tab); } 
+\\end\{array\}                    { BEGIN(INITIAL); } 
+\\begin\{eqnarray\}               { BEGIN(tab); } 
+\\end\{eqnarray\}                 { BEGIN(INITIAL); } 
+\\begin\{eqnarray\*\}             { BEGIN(tab); } 
+\\end\{eqnarray\*\}               { BEGIN(INITIAL); } 
+\\begin\{equation\}               { BEGIN(tab); } 
+\\end\{equation\}                 { BEGIN(INITIAL); } 
+\\begin\{equation\*\}             { BEGIN(tab); } 
+\\end\{equation\*\}               { BEGIN(INITIAL); } 
+\\begin\{gather\}                 { BEGIN(tab); } 
+\\end\{gather\}                   { BEGIN(INITIAL); } 
+\\begin\{gather\*\}               { BEGIN(tab); } 
+\\end\{gather\*\}                 { BEGIN(INITIAL); } 
+\\begin\{gathered\}               { BEGIN(tab); } 
+\\end\{gathered\}                 { BEGIN(INITIAL); } 
+\\begin\{multline\}               { BEGIN(tab); } 
+\\end\{multline\}                 { BEGIN(INITIAL); } 
+\\begin\{multline\*\}             { BEGIN(tab); } 
+\\end\{multline\*\}               { BEGIN(INITIAL); } 
+\\begin\{split\}                  { BEGIN(tab); } 
+\\end\{split\}                    { BEGIN(INITIAL); } 
+\\begin\{subarray\}\{[^}]*\}      { BEGIN(tab); } 
+\\end\{subarray\}                 { BEGIN(INITIAL); } 
 
 \\dbinom        { mkstr(yytext); return COMBIN; }
 \\tbinom        { mkstr(yytext); return COMBIN; }
@@ -377,9 +401,10 @@ extern unsigned int stack;
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
 
-\\color\{       { BEGIN(ign); stack = 1; } /* omit color */
-\\mbox\{        { BEGIN(ign); stack = 1; } /* omit mbox */
-\label\{[^}]*\} { BEGIN(ign); stack = 1; } /* skip label */
+\\color\{        { BEGIN(ign); stack = 1; } /* omit color */
+\\mbox\{         { BEGIN(ign); stack = 1; } /* omit mbox */
+\\label\{[^}]*\} { BEGIN(ign); stack = 1; } /* skip label */
+\\tag\{[^}]*\}   { BEGIN(ign); stack = 1; } /* skip tag */
 
 <ign>\{         { stack ++; }
 <ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
