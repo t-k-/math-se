@@ -73,11 +73,6 @@ tex : %prec NULL_REDUCE
     SUB_CONS(mktoken("+", MT_ADD), $1, p);
     root = $$ = father;
     }
-    | tex DIV term 
-    {
-    SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
-    root = $$ = father;
-    }
     | tex EQ_CLASS tex 
     {
     SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
@@ -147,11 +142,6 @@ mat_tex : %prec NULL_REDUCE
         SUB_CONS(mktoken("+", MT_ADD), $1, p);
         root = $$ = father;
         }
-        | mat_tex DIV term 
-        {
-        SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
-        root = $$ = father;
-        }
         | mat_tex EQ_CLASS mat_tex 
         {
         SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
@@ -197,6 +187,11 @@ term : factor
      | term factor 
      {
      SUB_CONS(mktoken("⋅", MT_TIMES), $1, $2);
+     root = $$ = father;
+     }
+     | term DIV factor 
+     {
+     SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
      root = $$ = father;
      }
      ;
