@@ -24,20 +24,14 @@ install:
 	$(CC) $*.c -c 
 	$(CC) -MM $*.c -o $*.d
 
-libmathtree.a: tree.o list.o mathtree.o
-	ar rcs libmathtree.a $^
-
-test-tree: test-tree.c libmathtree.a 
-	$(CC) $< -lmathtree -o $@
-
 PARSER_DEP=$(addprefix parser/, lex.yy.o y.tab.o)
 
-$(PARSER): $(PARSER_DEP) libmathtree.a
-	$(CC) $(PARSER_DEP) -lmathtree -lmcheck -ll -lreadline -lncurses \
+$(PARSER): $(PARSER_DEP) parser/libmathtree.a
+	$(CC) $(PARSER_DEP) -L parser -lmathtree -lmcheck -ll -lreadline -lncurses \
 	-o $@ 
 
-$(SEARCHER): $(SEARCHER).c libmathtree.a
-	$(CC) $< -lmathtree -o $@
+$(SEARCHER): $(SEARCHER).c list.o
+	$(CC) $^ -o $@
 
 clean:
 	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER)
