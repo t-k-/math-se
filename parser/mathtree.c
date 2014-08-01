@@ -127,6 +127,7 @@ static
 TREE_IT_CALLBK(print)
 {
 	TREE_OBJ(struct token_t, p, tnd);
+	P_CAST(fi, FILE, pa_extra);
 	int i;
 
 	if (pa_now->now == pa_head->last)
@@ -137,22 +138,22 @@ TREE_IT_CALLBK(print)
 	for (i = 0; i<pa_depth; i++) {
 		switch (depth_flag[i + 1]) {
 		case depth_end:
-			OUTPUT("    ");
+			fprintf(fi, "    ");
 			break;
 		case depth_begin:
-			OUTPUT("   │");
+			fprintf(fi, "   │");
 			break;
 		case depth_going_end:
-			OUTPUT("   └");
+			fprintf(fi, "   └");
 			break;
 		default:
 			break;
 		}
 	}
 
-	OUTPUT("──(%s) weight=%d, type=", p->name, p->weight);
-	OUTPUT("%s", str_type(p->type));
-	OUTPUT("\n");
+	fprintf(fi, "──(%s) weight=%d, type=", p->name, p->weight);
+	fprintf(fi, "%s", str_type(p->type));
+	fprintf(fi, "\n");
 
 	if (depth_flag[pa_depth] == depth_going_end)
 		depth_flag[pa_depth] = depth_end;
@@ -261,9 +262,9 @@ struct token_t* mktoken(char* name, int type)
 	return p;
 }
 
-void matree_print(struct token_t *p)
+void matree_print(struct token_t *p, FILE *fi)
 {
-	tree_foreach(&p->tnd, &tree_pre_order_DFS, &print, 0, NULL);
+	tree_foreach(&p->tnd, &tree_pre_order_DFS, &print, 0, fi);
 }
 
 void matree_release(struct token_t *p)
@@ -293,44 +294,72 @@ static void leaf_up_print(struct token_t *f)
 	OUTPUT("\n");
 }
 
-static char *leaf_up_dir(struct token_t *f, char *res)
+void leaf_up_dir(struct token_t *f, FILE *fi)
 {
-	char tmp[32];
-	sprintf(tmp, "%s", "./collection/");
-	strcat(res, tmp);
+	fprintf(fi, "./collection/");
 
 	while (f != NULL) {
 		if (f->type == MT_SUM_CLASS)
-			sprintf(tmp, "%s", f->name + 1);
+			fprintf(fi, "%s", f->name + 1);
 		else
-			sprintf(tmp, "%s", str_type(f->type));
+			fprintf(fi, "%s", str_type(f->type));
 
-		strcat(res, tmp);
-		
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
 
-		if (f != NULL) {
-			sprintf(tmp, "/");
-			strcat(res, tmp);
-		}
+		if (f != NULL)
+			fprintf(fi, "/");
 	}
 
-	strcat(res, " ");
-	return res;
+	fprintf(fi, " ");
 }
 
-static char *leaf_up_weight(struct token_t *f, char *res)
+void leaf_up_weight(struct token_t *f, FILE *fi)
 {
-	char tmp[32];
 	while (f != NULL) {
-		sprintf(tmp, "%d-", f->weight);
-		strcat(res, tmp);
+		if (f->weight > 1)
+			fprintf(fi, "%d-", f->weight);
 		
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
 	}
 
-	strcat(res, " ");
-	return res;
+	fprintf(fi, " ");
+}
+
+void leaf_name(struct token_t *f, FILE *fi)
+{
+	fprintf(fi, "%s ", f->name);
+}
+
+struct leaf_group_arg {
+	char *leaf_name;
+	int   same_names;
+};
+
+static
+LIST_IT_CALLBK(count_same_name)
+{
+	TREE_OBJ(struct token_t, son, tnd);
+	P_CAST(lga, struct leaf_group_arg, pa_extra); 
+
+	if (0 == strcmp(son->name, lga->leaf_name)) {
+		lga->same_names ++;
+		son->weight = 0;
+	}
+
+	LIST_GO_OVER;
+}
+
+void leaf_group(struct token_t *l, FILE *fi)
+{
+	struct leaf_group_arg lga = {l->name, 0};
+	struct token_t *f = 
+		MEMBER_2_STRUCT(l->tnd.father, struct token_t, tnd);
+	if (f == NULL)
+		lga.same_names = 1;
+	else
+		list_foreach(&f->tnd.sons, &count_same_name, &lga);
+
+	fprintf(fi, "%d~", lga.same_names);
 }
 
 struct br_word_arg {
@@ -343,25 +372,24 @@ static
 TREE_IT_CALLBK(leaf_up)
 {
 	TREE_OBJ(struct token_t, p, tnd);
-	P_CAST(res_str, char, pa_extra);
+	P_CAST(fi, FILE, pa_extra);
 	BOOL res;
 
-	if (p->tnd.sons.now == NULL /* is leaf */ ) {
-		leaf_up_print(p);
-		leaf_up_dir(p, res_str);
-		leaf_up_weight(p, res_str);
-		strcat(res_str, "\n");
+	if (p->tnd.sons.now == NULL /* is leaf */ &&
+	    p->weight != 0 /* not grouped */) {
+		/* leaf_up_print(p); */
+		leaf_up_dir(p, fi);
+		leaf_name(p, fi);
+		leaf_group(p, fi);
+		leaf_up_weight(p, fi);
+		fprintf(fi, "\n");
 	}
 
 	LIST_GO_OVER;
 }
 
-char *matree_br_word(struct token_t *p)
+void matree_print_brword(struct token_t *p, FILE *fi)
 {
-	static char res[STR_BUFLEN];
-	res[0] = '\0';
-
-	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, res);
-
-	return res;
+	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, fi);
+	fprintf(fi, "\n");
 }

@@ -6,6 +6,7 @@
 
 void yyerror(const char *);
 extern struct token_t *root;
+extern FILE  *fout;
 
 #define SUB_CONS(_father, _sonl, _sonr) \
 	struct token_t *father = _father; \
@@ -47,7 +48,10 @@ doc : | doc piece;
 
 piece : tex '\n' 
       {
-      if (root) { matree_print(root); matree_release(root); }
+      if (root) { matree_print(root, fout); 
+                  fprintf(fout, "\n");
+                  matree_print_brword(root, fout);
+                  matree_release(root); }
       }
       ;
 
@@ -396,8 +400,7 @@ void yyerror(const char *ps)
 	printf("[ %s ]\n", ps);
 }
 
-/*
-void __pp(char * a)
+/* void __pp(char * a)
 {
 	int i = 0;
 	for (i = 0;; i++) {
@@ -412,16 +415,25 @@ void __pp(char * a)
 			putchar(a[i]);
 	}
 	printf("\n");
-}
-*/
+} */
 
 #include "edit.h"
+FILE *fout;
+char *url;
 
 int main(int argc, char *argv[]) 
 {
 	char *str, *str0;
 	size_t str0_sz;
-	char exit_flag = 0;
+
+	if (argc != 2) {
+		printf("invalid argument format. \n");
+		return 1;
+	}
+
+	url = argv[1];
+	fout = fopen("parser.output", "w");
+	fprintf(fout, "url: %s\n", url);
 
 	/* disable auto-complete */
 	rl_bind_key('\t', rl_abort);
@@ -436,6 +448,7 @@ int main(int argc, char *argv[])
 		/* user can use UP and DOWN key to 
 		search through the history. */
 		add_history(str); 
+		fprintf(fout, "%s\n", str);
 
 		str0_sz = strlen(str) + 3;
 		str0 = malloc(str0_sz);
@@ -450,6 +463,8 @@ int main(int argc, char *argv[])
 		free(str0);
 	} 
 
+	fclose(fout);
 	printf("[ goodbye~ ]\n");
+
 	return 0;
 }

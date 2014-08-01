@@ -50,8 +50,8 @@ struct token_t* mktoken(char*, int);
 void matree_attach(struct token_t * /* son */, 
 		struct token_t * /* father */); 
 
-void matree_print(struct token_t *);
+void matree_print(struct token_t*, FILE*);
 
 void matree_release(struct token_t*);
 
-char *matree_br_word(struct token_t *);
+void matree_print_brword(struct token_t*, FILE*);
