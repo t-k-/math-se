@@ -15,5 +15,6 @@ I will provide more description when I think it is ready to be published.
 An Ubuntu user may install all the dependencies by the following command:
 
 ```
+sudo apt-get update
 sudo apt-get install flex bison libncurses5-dev readline-dev libcurl4-openssl-dev
 ```
