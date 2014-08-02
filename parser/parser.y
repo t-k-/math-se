@@ -433,7 +433,7 @@ int main(int argc, char *argv[])
 
 	url = argv[1];
 	fout = fopen("parser.output", "w");
-	fprintf(fout, "url: %s\n", url);
+	fprintf(fout, "%s\n", url);
 
 	/* disable auto-complete */
 	rl_bind_key('\t', rl_abort);
