@@ -1,30 +1,42 @@
 #!/usr/bin/python2.7
 import hashlib
+import os
 f = open('parser.output', 'r')
 url = f.readline()
-print "url: %s" % url
 while True:
+	# get the formula
 	formula = f.readline()
 	if not formula:
 		break
-	print "formula: %s" % formula,
-	
+	# get the sha-1
 	m = hashlib.sha1()
 	m.update(url)
 	m.update(formula)
 	sha1 = m.hexdigest()
-	print "sha1: %s" % sha1 
-
+	# get the tree 
 	tree = ''
 	while True:
 		res = f.readline()
 		if not res or res == "\n":
 			break
 		tree += res
-	print "tree: \n %s" % tree,
-
+	# get the branch words and save them
 	while True:
-		brword = f.readline()
-		if not brword or brword == "\n":
+		line = f.readline()
+		if not line or line == "\n":
 			break
-		print "branch word: %s" % brword,
+		array = line.split()
+		path = array[0]
+		brword = array[1] + ' ' + array[2];
+		print "path: %s/%s" % (path, sha1)
+		os.system("mkdir -p " + path)
+		print "branch word: %s" % brword
+		posting = open(path + '/posting', 'a')
+		document = open(path + '/' + sha1, 'w')
+		posting.write(sha1 + ' ' + brword + '\n')
+		posting.close()
+		document.write(url)
+		document.write(formula)
+		document.write(tree)
+		document.close()
+f.close()
