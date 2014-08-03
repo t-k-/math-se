@@ -5,7 +5,10 @@ CC=gcc $(CFLAGS)
 
 .PHONY: all clean submake
 
-all: submake $(PARSER) $(SEARCHER) install tags
+all: submake $(PARSER) $(SEARCHER) libbdb_wraper.so install tags
+
+libbdb_wraper.so: bdb_wraper.c
+	gcc -shared -fPIC -o $@ $^ -ltokyocabinet
 
 tags: $(shell find . -name "*.[hcly]" -print)
 	@echo dep: $^
@@ -34,6 +37,6 @@ $(SEARCHER): $(SEARCHER).c list.o
 	$(CC) $^ -o $@
 
 clean:
-	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER)
+	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER) libbdb_wraper.so
 	make clean -C ./front-end
 	make clean -C ./parser

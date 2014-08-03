@@ -317,7 +317,7 @@ void leaf_up_weight(struct token_t *f, FILE *fi)
 {
 	while (f != NULL) {
 		if (f->weight > 1)
-			fprintf(fi, "%d-", f->weight);
+			fprintf(fi, "%d ", f->weight);
 		
 		f = MEMBER_2_STRUCT(f->tnd.father, struct token_t, tnd);
 	}
@@ -359,7 +359,7 @@ void leaf_group(struct token_t *l, FILE *fi)
 	else
 		list_foreach(&f->tnd.sons, &count_same_name, &lga);
 
-	fprintf(fi, "%d~", lga.same_names);
+	fprintf(fi, "%d ", lga.same_names);
 }
 
 struct br_word_arg {
