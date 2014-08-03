@@ -37,6 +37,6 @@ $(SEARCHER): $(SEARCHER).c list.o
 	$(CC) $^ -o $@
 
 clean:
-	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER) libbdb_wraper.so
+	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER) libbdb_wraper.so collection.bdb 
 	make clean -C ./front-end
 	make clean -C ./parser
