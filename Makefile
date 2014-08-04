@@ -38,5 +38,6 @@ $(SEARCHER): $(SEARCHER).c list.o
 
 clean:
 	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER) libbdb_wraper.so collection.bdb 
+	rm -rf collection
 	make clean -C ./front-end
 	make clean -C ./parser
