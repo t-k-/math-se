@@ -4,7 +4,8 @@ import os
 import ctypes
 # init DBM
 so = ctypes.CDLL("./libbdb_wraper.so") 
-so.bdb_init("collection.bdb")
+os.system("mkdir -p ./collection")
+so.bdb_init("./collection/documents.bdb")
 so.bdb_get2.restype = ctypes.c_char_p
 old_records = so.bdb_records()
 

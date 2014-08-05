@@ -1,25 +1,22 @@
-PARSER=ma-pa
-SEARCHER=ma-se
+SEARCHER=search
 CFLAGS=-I . -I ./inc -L . 
 CC=gcc $(CFLAGS)
 
 .PHONY: all clean submake
 
-all: submake $(PARSER) $(SEARCHER) libbdb_wraper.so install tags
-
-libbdb_wraper.so: bdb_wraper.c
-	gcc -shared -fPIC -o $@ $^ -ltokyocabinet
+all: submake $(SEARCHER) install tags
 
 tags: $(shell find . -name "*.[hcly]" -print)
 	@echo dep: $^
 	ctags --langmap=c:.c.y -R ./*
 
 submake: 
+	make -C ./index
 	make -C ./parser
-	make -C ./front-end
+	make -C ./web
 
 install:
-	make install -C ./front-end
+	make install -C ./web
 
 -include $(wildcard *.d)
 
@@ -27,17 +24,11 @@ install:
 	$(CC) $*.c -c 
 	$(CC) -MM $*.c -o $*.d
 
-PARSER_DEP=$(addprefix parser/, lex.yy.o y.tab.o)
-
-$(PARSER): $(PARSER_DEP) parser/libmathtree.a
-	$(CC) $(PARSER_DEP) -L parser -lmathtree -lmcheck -ll -lreadline -lncurses \
-	-o $@ 
-
-$(SEARCHER): $(SEARCHER).c list.o
+$(SEARCHER): $(SEARCHER).o
 	$(CC) $^ -o $@
 
 clean:
-	rm -f *.a *.o *.d $(PARSER) test-tree query candy score tags rank rand $(SEARCHER) libbdb_wraper.so collection.bdb 
-	rm -rf collection
-	make clean -C ./front-end
+	rm -f *.o *.d query candy score tags rank rand $(SEARCHER)
+	make clean -C ./web
 	make clean -C ./parser
+	make clean -C ./index

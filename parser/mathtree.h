@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "tknet.h"
 
 enum type_enum {

@@ -1,6 +1,7 @@
 OUTPUT=$(shell basename `pwd`)
 CFLAGS=-I .. -I ../inc -L .
 CC=gcc
+LIB_NAME=parser
 
 define cl_insert 
 @ echo $1 >> toclean.list
@@ -8,7 +9,10 @@ endef
 
 .PHONY: all clean
 
-all: lex.yy.o y.tab.o libmathtree.a
+all: $(LIB_NAME) lib$(LIB_NAME).a
+
+$(LIB_NAME): main.o lib$(LIB_NAME).a
+	gcc $< -L . -l$(LIB_NAME) -lmcheck -ll -lreadline -lncurses -o $@
 
 lex.yy.o y.tab.o: y.tab.h y.tab.c lex.yy.c
 	gcc -c $(filter %.c, $^) -include $< -I . -I ../inc
@@ -24,15 +28,11 @@ lex.yy.c: *.l
 	lex $^
 	$(call cl_insert, $@)
 
-libmathtree.a: tree.o list.o mathtree.o
-	ar rcs libmathtree.a $^
+lib$(LIB_NAME).a: tree.o mathtree.o parser.o lex.yy.o y.tab.o
+	ar rcs $@ $^
 
-test: test.c libmathtree.a 
-	$(CC) $< $(CFLAGS) -lmathtree -o $@
-
-list.o : 
-	$(CC) $(CFLAGS) ../list.c -c 
-	$(CC) $(CFLAGS) -MM ../list.c -o list.d
+test: test.c lib$(LIB_NAME).a
+	$(CC) $< $(CFLAGS) -l $(LIB_NAME) -o $@
 
 %.o : %.c
 	$(CC) $(CFLAGS) $*.c -c 
@@ -41,3 +41,4 @@ list.o :
 clean:
 	cat toclean.list | xargs rm -f
 	rm -f toclean.list
+	rm -f *.o *.d *.a test parser

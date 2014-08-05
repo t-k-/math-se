@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "inter-def.h"
 #include "tknet.h"
 
 #define ANSI_COLOR_RST     "\e[0m"

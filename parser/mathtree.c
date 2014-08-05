@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "mathtree.h"
-#include "inter-def.h"
 
 static char *str_type(int t_num)
 {
@@ -388,8 +387,20 @@ TREE_IT_CALLBK(leaf_up)
 	LIST_GO_OVER;
 }
 
+static
+TREE_IT_CALLBK(leaf_rst_weight)
+{
+	TREE_OBJ(struct token_t, p, tnd);
+	if (p->weight == 0)
+		p->weight = 1;
+
+	LIST_GO_OVER;
+}
+
 void matree_print_brword(struct token_t *p, FILE *fi)
 {
 	tree_foreach(&p->tnd, &tree_post_order_DFS, &leaf_up, 0, fi);
+	tree_foreach(&p->tnd, &tree_post_order_DFS, 
+		&leaf_rst_weight, 0, NULL);
 	fprintf(fi, "\n");
 }

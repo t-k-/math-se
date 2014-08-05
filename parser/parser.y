@@ -6,7 +6,6 @@
 
 void yyerror(const char *);
 extern struct token_t *root;
-extern FILE  *fout;
 
 #define SUB_CONS(_father, _sonl, _sonr) \
 	struct token_t *father = _father; \
@@ -43,17 +42,7 @@ extern FILE  *fout;
 %left DIV
 %nonassoc '{' '}' '(' ')' '[' ']' LEFT RIGHT
 %%
-
-doc : | doc piece;
-
-piece : tex '\n' 
-      {
-      if (root) { matree_print(root, fout); 
-                  fprintf(fout, "\n");
-                  matree_print_brword(root, fout);
-                  matree_release(root); }
-      }
-      ;
+doc : tex '\n' ;
 
 tex : %prec NULL_REDUCE 
     {
@@ -398,73 +387,4 @@ struct token_t *root = NULL;
 void yyerror(const char *ps) 
 {
 	printf("[ %s ]\n", ps);
-}
-
-/* void __pp(char * a)
-{
-	int i = 0;
-	for (i = 0;; i++) {
-		if (a[i] == '\n') 
-			putchar('N');
-		else if (a[i]=='\0') {
-			putchar('O');
-			if (a[i+1] == '\0')
-				printf("yes\n");
-			break;
-		} else 
-			putchar(a[i]);
-	}
-	printf("\n");
-} */
-
-#include "edit.h"
-FILE *fout;
-char *url;
-
-int main(int argc, char *argv[]) 
-{
-	char *str, *str0;
-	size_t str0_sz;
-
-	if (argc != 2) {
-		printf("invalid argument format. \n");
-		return 1;
-	}
-
-	url = argv[1];
-	fout = fopen("parser.output", "w");
-	fprintf(fout, "%s\n", url);
-
-	/* disable auto-complete */
-	rl_bind_key('\t', rl_abort);
-
-	while (1) {
-		str = readline("edit: ");
-		if (str == NULL) {
-			printf("\n");
-			break;
-		} 
-
-		/* user can use UP and DOWN key to 
-		search through the history. */
-		add_history(str); 
-		fprintf(fout, "%s\n", str);
-
-		str0_sz = strlen(str) + 3;
-		str0 = malloc(str0_sz);
-		sprintf(str0, "%s\n_", str);
-		str0[str0_sz - 2] = '\0';
-		free(str);
-
-		YY_BUFFER_STATE buffer = 
-			yy_scan_buffer(str0, str0_sz);
-		yyparse();
-		yy_delete_buffer(buffer);
-		free(str0);
-	} 
-
-	fclose(fout);
-	printf("[ goodbye~ ]\n");
-
-	return 0;
 }

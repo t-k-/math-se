@@ -37,9 +37,9 @@ main()
 	matree_attach(p[10], p[11]);
 	p[0] = p[11];
 	
-	matree_print(p[0]);
+	matree_print(p[0], stdout);
 	printf("=========\n");
-	matree_br_word(p[0]);
+	matree_print_brword(p[0], stdout);
 	matree_release(p[0]);
 
 	return 0;

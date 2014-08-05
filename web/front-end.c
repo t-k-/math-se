@@ -2,7 +2,7 @@
 #include <curl/curl.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../inter-def.h"
+#include "comdef.h"
 
 #define RES_PER_PAGE 10
 
