@@ -21,7 +21,7 @@ extern struct token_t *root;
 %error-verbose
 
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT RIGHT 
-%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC SQRT TAB 
+%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC TIMES SQRT TAB 
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT 
 %token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL
 %token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE SEP_DIV TRANSPOSE
@@ -39,7 +39,7 @@ extern struct token_t *root;
 %left '+' '-'
 %nonassoc '!'
 %right '^' '_'
-%left DIV
+%left TIMES DIV
 %nonassoc '{' '}' '(' ')' '[' ']' LEFT RIGHT
 %%
 doc : tex '\n' ;
@@ -180,6 +180,11 @@ term : factor
      | term factor 
      {
      SUB_CONS(mktoken("⋅", MT_TIMES), $1, $2);
+     root = $$ = father;
+     }
+     | term TIMES factor 
+     {
+     SUB_CONS(mktoken("×", MT_TIMES), $1, $3);
      root = $$ = father;
      }
      | term DIV factor 

@@ -343,6 +343,9 @@ extern unsigned int stack;
 \\hom           { mkstr(yytext); return FUN_CLASS; }
 \\dim           { mkstr(yytext); return FUN_CLASS; }
 
+\\times         { mkstr(yytext); return TIMES; }
+\\cdot          { mkstr(yytext); return TIMES; }
+
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
 \\over          { mkstr(yytext); return OVER; }
