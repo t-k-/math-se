@@ -13,9 +13,10 @@ void parser_out(FILE *fout)
 		printf("\n");
 		matree_print_brword(root, stdout);
 
-		matree_print(root, fout); 
+		/*matree_print(root, fout); 
 		fprintf(fout, "\n");
 		matree_print_brword(root, fout);
+		*/
 		matree_release(root); 
 	}
 }

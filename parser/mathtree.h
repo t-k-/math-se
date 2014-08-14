@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "tknet.h"
 
+struct query_brw {
+	struct list_node ln;
+	char dir[512];
+	char vname[32];
+	int weight[64];
+};
+
 enum type_enum {
 	MT_EQ_CLASS,
 	MT_SEP_CLASS,
@@ -56,3 +63,5 @@ void matree_print(struct token_t*, FILE*);
 void matree_release(struct token_t*);
 
 void matree_print_brword(struct token_t*, FILE*);
+
+struct list_it matree_ls_brw(struct token_t*);
