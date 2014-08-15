@@ -65,3 +65,9 @@ void matree_release(struct token_t*);
 void matree_print_brword(struct token_t*, FILE*);
 
 struct list_it matree_ls_brw(struct token_t*);
+
+extern struct token_t *root;
+
+struct list_it tex2brwords(char*); 
+
+void li_brw_release(struct list_it*);

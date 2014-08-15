@@ -410,3 +410,8 @@ void matree_print_brword(struct token_t* p, FILE* fi)
 	list_foreach(&li, &li_print, fi);
 	list_foreach(&li, &li_release, NULL);
 }
+
+void li_brw_release(struct list_it *li_brw)
+{
+	list_foreach(li_brw, &li_release, NULL);
+}

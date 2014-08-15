@@ -1,3 +1,11 @@
 a
-1 2
-1\times2
+a+b+c+c
+   └──(+) weight=5, type=add
+       │──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       │──(c) weight=2, type=var
+       └──(c) weight=1, type=var
+
+./collection/var/add a 1 5 
+./collection/var/add b 1 5 
+./collection/var/add c 2 5 

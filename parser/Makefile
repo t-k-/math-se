@@ -9,10 +9,10 @@ endef
 
 .PHONY: all clean
 
-all: $(LIB_NAME) lib$(LIB_NAME).a
+all: $(LIB_NAME) ../lib$(LIB_NAME).a
 
-$(LIB_NAME): main.o lib$(LIB_NAME).a
-	gcc $< -L . -l$(LIB_NAME) -lmcheck -ll -lreadline -lncurses -o $@
+$(LIB_NAME): main.o ../lib$(LIB_NAME).a
+	gcc $< -L .. -l$(LIB_NAME) -lmcheck -ll -lreadline -lncurses -o $@
 
 lex.yy.o y.tab.o: y.tab.h y.tab.c lex.yy.c
 	gcc -c $(filter %.c, $^) -include $< -I . -I ../inc
@@ -28,11 +28,17 @@ lex.yy.c: *.l
 	lex $^
 	$(call cl_insert, $@)
 
-lib$(LIB_NAME).a: tree.o mathtree.o parser.o lex.yy.o y.tab.o
+../lib$(LIB_NAME).a: tree.o mathtree.o parser.o lex.yy.o y.tab.o
 	ar rcs $@ $^
 
-test: test.c lib$(LIB_NAME).a
-	$(CC) $< $(CFLAGS) -l $(LIB_NAME) -o $@
+test: test.c ../lib$(LIB_NAME).a
+	$(CC) $< $(CFLAGS) -L .. -l $(LIB_NAME) -o $@
+
+-include $(wildcard *.d)
+
+tree.o: ../tree.c
+	$(CC) $(CFLAGS) $^ -c
+	$(CC) $(CFLAGS) -MM $^ -o tree.d
 
 %.o : %.c
 	$(CC) $(CFLAGS) $*.c -c 

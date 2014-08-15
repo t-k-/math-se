@@ -18,8 +18,9 @@ char *to_scan_str(char *str, size_t *res_str_sz)
 	return str0;
 }
 
-int tex2brwords(char *str) 
+struct list_it tex2brwords(char *str) 
 {
+	struct list_it ret;
 	char *str0;
 	size_t str0_sz;
 	str0 = to_scan_str(str, &str0_sz);
@@ -28,15 +29,11 @@ int tex2brwords(char *str)
 		yy_scan_buffer(str0, str0_sz);
 
 	yyparse();
-	if (root) {
-		matree_print(root, stdout); 
-		printf("\n");
-		matree_print_brword(root, stdout);
-		matree_release(root); 
-	}
+	ret = matree_ls_brw(root);
+	matree_release(root); 
 
 	yy_delete_buffer(buffer);
 	free(str0);
 
-	return 0;
+	return ret;
 }
