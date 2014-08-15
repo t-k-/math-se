@@ -3,6 +3,7 @@
 
 struct query_brw {
 	struct list_node ln;
+	uint same_name_cnt;
 	char dir[512];
 	char vname[32];
 	int weight[64];

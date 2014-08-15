@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <dirent.h>
+#include <string.h>
 #include "mathtree.h"
 
 static
@@ -70,19 +73,65 @@ void li_brw_name_sort(struct list_it *li)
 	list_sort(li, &lsa);
 }
 
+struct _score_main_arg {
+	pid_t pid;
+};
+
+static
+LIST_IT_CALLBK(_score_main)
+{
+	uint i;
+	struct query_brw *next_a;
+	P_CAST(sma, struct _score_main_arg, pa_extra);
+	LIST_OBJ(struct query_brw, a, ln);
+
+	for (i = 0; i < a->weight[0]; i++) {
+		printf("%s\n", a->vname);
+	}
+
+	if (pa_now->now == pa_head->last)
+		printf("this is the last.\n");
+	else {
+		next_a = MEMBER_2_STRUCT(pa_now->now->next, 
+		                           struct query_brw, ln);
+		if (strcmp(a->vname, next_a->vname) != 0)
+			printf("next will change.\n");
+	}
+	
+	LIST_GO_OVER;
+}
+
 int main(int argc, char *argv[])
 {
 	struct list_it li_query_brw; 
 	char *query = argv[1];
+	struct _score_main_arg sma;
+
 	if (argc != 2) {
 		printf("invalid argument format.\n");
 		return 1;
 	}
 
+	/*DIR *dip;
+	struct dirent *dit;
+
+	if ((dip = opendir("./demo")) == NULL) {
+		printf("opendir() error.\n");
+	}
+
+	while ((dit = readdir(dip)) != NULL) {
+		printf("%s, ", dit->d_name);
+	}*/
+
 	printf("%s\n", query);
 	li_query_brw = tex2brwords(query);
 	li_brw_name_sort(&li_query_brw);
+
 	list_foreach(&li_query_brw, &print, NULL);
+
+	sma.pid = getpid();
+	list_foreach(&li_query_brw, &_score_main, &sma);
+
 	li_brw_release(&li_query_brw);
 
 	return 0;
