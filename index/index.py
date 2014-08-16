@@ -17,11 +17,11 @@ while True:
 	if not formula:
 		break
 
-	# get the sha-1
+	# get the sha-1 of doc
 	m = hashlib.sha1()
 	m.update(url)
 	m.update(formula)
-	sha1 = m.hexdigest()
+	doc_sha1 = m.hexdigest()
 
 	# get the tree 
 	tree = ''
@@ -33,9 +33,9 @@ while True:
 
 	# record the doc into database
 	doc = url + '\n' + formula + '\n' + tree
-	print '[ record %s into database... ]' % sha1
+	print '[ record %s into database... ]' % doc_sha1
 	print doc
-	old_doc = so.bdb_get2(sha1)
+	old_doc = so.bdb_get2(doc_sha1)
 	so.bdb_free_last()
 	if old_doc:
 		print 'same sha-1 key exists, skip...'
@@ -45,20 +45,28 @@ while True:
 			if not line or line == "\n":
 				break
 	else:
-		so.bdb_put2(sha1, doc)
+		so.bdb_put2(doc_sha1, doc)
 		# get the branch words and save them
 		while True:
 			line = f.readline()
 			if not line or line == "\n":
 				break
+			# get the dir and brword from lines 
 			array = line.split()
 			path = array[0]
 			brword = " ".join(array[1:]);
+			# calculate the sha1 for brword
+			m = hashlib.sha1()
+			m.update(doc_sha1)
+			m.update(brword)
+			brword_sha1 = m.hexdigest()
+			# mkdir directory and write the posting file
 			print "post at path: %s" % path
 			print "branch word: %s" % brword
 			os.system("mkdir -p " + path)
 			posting = open(path + '/posting', 'a')
-			posting.write(sha1 + ' ' + brword + '\n')
+			line_fmt = brword_sha1 + ' ' + doc_sha1 + ' ' + brword 
+			posting.write(line_fmt + '\n')
 			posting.close()
 
 f.close()

@@ -18,6 +18,7 @@ void parser_out(FILE *fout)
 		matree_print_brword(root, fout);
 		
 		matree_release(root); 
+		fprintf(fout, "\n");
 	}
 }
 

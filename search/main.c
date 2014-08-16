@@ -5,6 +5,8 @@
 #include <string.h>
 #include "mathtree.h"
 
+typedef void (*fopen_callbk)(const char *);
+
 static
 LIST_IT_CALLBK(print)
 {
@@ -101,6 +103,47 @@ LIST_IT_CALLBK(_score_main)
 	LIST_GO_OVER;
 }
 
+void search_open(const char *path)
+{
+	printf("%s\n", path);
+}
+
+int search_dir(const char *path, const char *fname, 
+               fopen_callbk fopen_fun)
+{
+	struct dirent *ent;
+	DIR *dir = opendir(path);
+	char target_path[PATH_MAX];
+	const char *ent_name;
+
+	if (!dir)
+		return 1;
+	
+	while (1) {
+		ent = readdir(dir);
+		if (!ent)
+			break;
+
+		ent_name = ent->d_name;
+		if (ent->d_type & DT_DIR) {
+			if (strcmp(ent_name, "..") == 0 ||
+			    strcmp(ent_name, ".") == 0)
+				continue;
+			sprintf(target_path, "%s/%s", path, ent_name);
+			search_dir(target_path, fname, fopen_fun);
+
+		} else {
+			/* printf("%s/%s\n", path, ent_name); */
+			if (strcmp(ent_name, fname) == 0) {
+				sprintf(target_path, "%s/%s", path, ent_name);
+				fopen_fun(target_path);
+			}
+		}
+	}
+
+	closedir(dir);
+}
+
 int main(int argc, char *argv[])
 {
 	struct list_it li_query_brw; 
@@ -112,18 +155,9 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	/*DIR *dip;
-	struct dirent *dit;
+	search_dir("./collection", "posting", &search_open);
 
-	if ((dip = opendir("./demo")) == NULL) {
-		printf("opendir() error.\n");
-	}
-
-	while ((dit = readdir(dip)) != NULL) {
-		printf("%s, ", dit->d_name);
-	}*/
-
-	printf("%s\n", query);
+	/*printf("%s\n", query);
 	li_query_brw = tex2brwords(query);
 	li_brw_name_sort(&li_query_brw);
 
@@ -133,6 +167,7 @@ int main(int argc, char *argv[])
 	list_foreach(&li_query_brw, &_score_main, &sma);
 
 	li_brw_release(&li_query_brw);
+	*/
 
 	return 0;
 }
