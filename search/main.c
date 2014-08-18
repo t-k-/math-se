@@ -1,9 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <dirent.h>
-#include <string.h>
-#include "mathtree.h"
+#include "rlv_tr.h"
 
 typedef void (*fopen_callbk)(const char *);
 
@@ -146,6 +143,7 @@ int search_dir(const char *path, const char *fname,
 
 int main(int argc, char *argv[])
 {
+	/*
 	struct list_it li_query_brw; 
 	char *query = argv[1];
 	struct _score_main_arg sma;
@@ -156,8 +154,10 @@ int main(int argc, char *argv[])
 	}
 
 	search_dir("./collection", "posting", &search_open);
+	*/
 
-	/*printf("%s\n", query);
+	/*
+	printf("%s\n", query);
 	li_query_brw = tex2brwords(query);
 	li_brw_name_sort(&li_query_brw);
 

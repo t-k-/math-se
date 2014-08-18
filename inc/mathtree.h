@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include "tknet.h"
 
+#define DIR_NAME_MAX_LEN 512
+#define VAR_NAME_MAX_LEN 16
+#define WEIGHT_MAX_LEN 64
+
 struct query_brw {
 	struct list_node ln;
 	uint same_name_cnt;
-	char dir[512];
-	char vname[32];
-	int weight[64];
+	char dir[DIR_NAME_MAX_LEN];
+	char vname[VAR_NAME_MAX_LEN];
+	int weight[WEIGHT_MAX_LEN];
 };
 
 enum type_enum {
