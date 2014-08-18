@@ -7,14 +7,7 @@
 #define BRW_HASH_LEN 40
 #define DOC_HASH_LEN 40
 
-//char doc_id[DOC_HASH_LEN];
-//     |
-//     |
-//    _|_
-//    \ /
-//     * 
 struct doc_frml {
-	char brw_id[BRW_HASH_LEN];
 	struct list_it sons;
 };
 
@@ -25,12 +18,15 @@ struct doc_var {
 };
 
 struct doc_brw {
+	char brw_id[BRW_HASH_LEN];
 	struct doc_var *var_fthr;
 	uint *weight;
 	float score;
 };
 
 #define DEFAULT_REDIS_PORT 6379
+
+typedef void (*retstr_callbk)(const char *);
 
 int redis_cli_init(const char*, ushort);
 
@@ -42,7 +38,7 @@ void redis_set_union(const char*, const char*);
 
 int redis_set_printall(const char*);
 
-void redis_set_popeach(const char*);
+void redis_set_popeach(const char*, retstr_callbk);
 
 struct doc_frml *redis_frml_map_get(const char*);
 

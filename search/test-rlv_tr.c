@@ -2,8 +2,15 @@
 #include <dirent.h>
 #include "rlv_tr.h"
 
+void test_fun(const char *value)
+{
+	printf("value: %s\n", value);
+}
+
 int main(void) 
 {
+	char test_str[] = "04a8bf5d416a9d2eae327d3d239a256b28b6c3de "
+	"42e92bfc15a38e15a797c46a16e1f2d6fc5eada6 _xi 1 18 20 47 55";
 	/* init */
 	struct doc_frml test_frml, *p;
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT))
@@ -27,7 +34,7 @@ int main(void)
 	printf("hash-set after union: \n");
 	redis_set_printall("hash-set");
 
-	redis_set_popeach("hash-set");
+	redis_set_popeach("hash-set", &test_fun);
 
 	printf("hash-set after pop-out: \n");
 	if (1 == redis_set_printall("hash-set"))
@@ -44,6 +51,9 @@ int main(void)
 	printf("get pointer: %p (\"%s\")\n", p, p->brw_id);
 
 	redis_frml_map_del("some_hash");
+
+	/* test for frml_* */
+	tr_insert_frml(test_str, "tmp");
 
 	/* destory */
 	redis_cli_free();

@@ -2,8 +2,6 @@
 #include <dirent.h>
 #include "rlv_tr.h"
 
-typedef void (*fopen_callbk)(const char *);
-
 static
 LIST_IT_CALLBK(print)
 {
@@ -106,7 +104,7 @@ void search_open(const char *path)
 }
 
 int search_dir(const char *path, const char *fname, 
-               fopen_callbk fopen_fun)
+               retstr_callbk fopen_fun)
 {
 	struct dirent *ent;
 	DIR *dir = opendir(path);

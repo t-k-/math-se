@@ -57,7 +57,7 @@ int redis_set_printall(const char *set)
 	return 1;
 }
 
-void redis_set_popeach(const char *set)
+void redis_set_popeach(const char *set, retstr_callbk fun)
 {
 	redisReply *r;
 	while (1) {
@@ -66,7 +66,7 @@ void redis_set_popeach(const char *set)
 			break;
 		}
 
-		printf("string: %s\n", r->str);
+		fun(r->str);
 		freeReplyObject(r);
 	}
 
@@ -111,4 +111,39 @@ void redis_frml_map_del(const char *hash)
 
 	r = redisCommand(redis_cntxt, "del %s", hash);
 	freeReplyObject(r);
+}
+
+void tr_insert_frml(const char *str, const char *ret_set)
+{
+	char brw_id[DOC_HASH_LEN];
+	char vname[VAR_NAME_MAX_LEN];
+	char *field = strtok((char*)str, " ");
+	struct doc_frml *df;
+	uint i = 0;
+
+	while (field) {
+		switch (i) {
+			case 0:
+				strcpy(brw_id, field);
+				break;
+			case 1:
+				df = redis_frml_map_get(field);
+				if (!df) {
+					df = malloc(sizeof(struct doc_frml));
+					LIST_CONS(df->sons);
+					redis_frml_map_set(doc_id, df);
+				}
+
+				redis_set_add_hash(ret_set, doc_id);
+				break;
+			case 2:
+				strcpy(vname, field);
+				break;
+			default:
+		}
+
+		printf("field: %s\n", field);
+		field = strtok(NULL, " ");
+		i ++;
+	}
 }
