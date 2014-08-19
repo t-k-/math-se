@@ -113,15 +113,27 @@ void redis_frml_map_del(const char *hash)
 	freeReplyObject(r);
 }
 
-void tr_insert_frml(const char *str, const char *ret_set)
+int rlv_tr_test(struct doc_frml *df, char *brw_id)
+{
+	return 0;
+}
+
+void rlv_tr_insert(struct doc_frml *df, char *vname, uint *w)
+{
+	return;
+}
+
+void process_str(const char *str, const char *ret_set)
 {
 	char brw_id[DOC_HASH_LEN];
 	char vname[VAR_NAME_MAX_LEN];
+	uint weight[WEIGHT_MAX_LEN];
 	char *field = strtok((char*)str, " ");
 	struct doc_frml *df;
 	uint i = 0;
+	int test_res;
 
-	while (field) {
+	while (1) {
 		switch (i) {
 			case 0:
 				strcpy(brw_id, field);
@@ -131,19 +143,31 @@ void tr_insert_frml(const char *str, const char *ret_set)
 				if (!df) {
 					df = malloc(sizeof(struct doc_frml));
 					LIST_CONS(df->sons);
-					redis_frml_map_set(doc_id, df);
+					redis_frml_map_set(field, df);
 				}
 
 				redis_set_add_hash(ret_set, doc_id);
+				test_res = rlv_tr_test(df, brw_id);
 				break;
 			case 2:
-				strcpy(vname, field);
+				if (test_res)
+					strcpy(vname, field);
 				break;
 			default:
+				if (test_res)
+					weight[i - 3] = atoi(field);
 		}
 
 		printf("field: %s\n", field);
 		field = strtok(NULL, " ");
 		i ++;
+
+		if (field == NULL) {
+			if (test_res) {
+				rlv_tr_insert(df, vname, weight)
+				weight[i - 3] = 0;
+			}
+			break;
+		}
 	}
 }

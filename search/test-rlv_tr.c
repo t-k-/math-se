@@ -7,6 +7,11 @@ void test_fun(const char *value)
 	printf("value: %s\n", value);
 }
 
+void delete_fun(const char *value)
+{
+	printf("value: %s\n", value);
+}
+
 int main(void) 
 {
 	char test_str[] = "04a8bf5d416a9d2eae327d3d239a256b28b6c3de "
@@ -53,7 +58,8 @@ int main(void)
 	redis_frml_map_del("some_hash");
 
 	/* test for frml_* */
-	tr_insert_frml(test_str, "tmp");
+	process_str(test_str, "tmp");
+	redis_set_popeach("tmp", &delete_fun);
 
 	/* destory */
 	redis_cli_free();

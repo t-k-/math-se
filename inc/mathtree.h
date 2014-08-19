@@ -10,7 +10,7 @@ struct query_brw {
 	uint same_name_cnt;
 	char dir[DIR_NAME_MAX_LEN];
 	char vname[VAR_NAME_MAX_LEN];
-	int weight[WEIGHT_MAX_LEN];
+	uint weight[WEIGHT_MAX_LEN];
 };
 
 enum type_enum {
