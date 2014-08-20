@@ -9,7 +9,7 @@ all: $(OUTPUT)
 test: test-rlv_tr
 
 test-rlv_tr: rlv_tr.o test-rlv_tr.o
-	gcc $(CFLAGS) $^ -lhiredis -o $@
+	gcc $(CFLAGS) $^ -lhiredis -o $@ -lmcheck
 
 $(OUTPUT): main.o rlv_tr.o ../libparser.a
 	gcc $(CFLAGS) $(filter %.o, $^) -o $(OUTPUT) $(DEP_LIB)

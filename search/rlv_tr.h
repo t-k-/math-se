@@ -9,17 +9,22 @@
 
 struct doc_frml {
 	struct list_it sons;
+	char id[DOC_HASH_LEN];
+	float score;
 };
 
 struct doc_var {
 	struct doc_frml *doc_fthr;
-	char vname[VAR_NAME_MAX_LEN];
 	struct list_it sons;
+	struct list_node ln;
+	char vname[VAR_NAME_MAX_LEN];
+	float score;
 };
 
 struct doc_brw {
-	char brw_id[BRW_HASH_LEN];
 	struct doc_var *var_fthr;
+	struct list_node ln;
+	char id[BRW_HASH_LEN];
 	uint *weight;
 	float score;
 };
@@ -45,3 +50,9 @@ struct doc_frml *redis_frml_map_get(const char*);
 int redis_frml_map_set(const char*, struct doc_frml*);
 
 void redis_frml_map_del(const char*);
+
+struct doc_var *rlv_tr_test(struct doc_frml*, char*);
+
+void rlv_tr_insert(struct doc_frml*, char*, char*, uint*);
+
+void rlv_tr_print(struct doc_frml*);
