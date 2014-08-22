@@ -22,8 +22,8 @@ struct doc_var {
 };
 
 struct doc_brw {
-	struct list_node ln;
 	struct doc_var *var_fthr;
+	struct list_node ln;
 	uint *weight;
 	float score;
 	char id[BRW_HASH_LEN];
@@ -51,8 +51,15 @@ int redis_frml_map_set(const char*, struct doc_frml*);
 
 void redis_frml_map_del(const char*);
 
-struct doc_var *rlv_tr_test(struct doc_frml*, char*);
+int rlv_tr_test(struct doc_frml*, char*, char*, struct doc_var **);
 
 void rlv_tr_insert(struct doc_frml*, char*, char*, uint*);
 
+void rlv_tr_qk_insert(struct doc_var*, struct doc_frml*, 
+                      char*, char*, uint*);
+
 void rlv_tr_print(struct doc_frml*);
+
+void rlv_tr_free(struct doc_frml*);
+
+void rlv_process_str(const char*, const char*);

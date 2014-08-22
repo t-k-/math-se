@@ -119,8 +119,8 @@ struct _var_find_arg {
 };
 
 struct _brw_find_arg {
-	char *id;
-	struct doc_var *var;
+	char *brw_id;
+	BOOL  found;
 };
 
 static 
@@ -129,17 +129,50 @@ LIST_IT_CALLBK(_var_find)
 	LIST_OBJ(struct doc_var, v, ln);
 	P_CAST(vfa, struct _var_find_arg, pa_extra);
 
-	if (0 == strcmp(v->vname, vfa->vname))
+	if (0 == strcmp(v->vname, vfa->vname)) {
 		vfa->var = v;
+		return LIST_RET_BREAK;
+	}
 	
 	LIST_GO_OVER;
 }
 
-struct doc_var *rlv_tr_test(struct doc_frml *df, char *id)
+static 
+LIST_IT_CALLBK(_brw_find)
 {
-	struct _var_find_arg vfa = {, NULL};
-	list_foreach(&df->sons, _itr_var, &vfa);
-	return NULL;
+	LIST_OBJ(struct doc_brw, brw, ln);
+	P_CAST(bfa, struct _brw_find_arg, pa_extra);
+
+	if (0 == strcmp(brw->id, bfa->brw_id)) {
+		bfa->found = 1;
+		return LIST_RET_BREAK;
+	}
+	
+	LIST_GO_OVER;
+}
+
+int rlv_tr_test(struct doc_frml *df, char *vname,
+                char *brw_id, struct doc_var **into_var)
+{
+	struct _var_find_arg vfa = {vname, NULL};
+	struct _brw_find_arg bfa;
+	list_foreach(&df->sons, &_var_find, &vfa);
+	*into_var = NULL;
+
+	if (vfa.var) {
+		bfa.found = 0;
+		bfa.brw_id = brw_id;
+		list_foreach(&vfa.var->sons, &_brw_find, &bfa);
+
+		if (bfa.found) { 
+			return 0;
+		} else {
+			*into_var = vfa.var;
+			return 1;
+		}
+	} else {
+		return 1;
+	}
 }
 
 uint brwsize(uint *weight)
@@ -159,29 +192,25 @@ void brwcpy(uint *w_dst, uint *w_src)
 	w_dst[i] = 0;
 }
 
-void rlv_tr_insert(struct doc_frml *df, char *vname, 
-                   char *brw_id, uint *weight)
+static 
+struct doc_var *new_var_to_df(char *vname, struct doc_frml *df)
 {
-	struct doc_var *var;
-	struct doc_brw *new_brw;
-	struct _var_find_arg vfa = {vname, NULL};
+	struct doc_var *var = malloc(sizeof(struct doc_var));
+	var->doc_fthr = df;
+	LIST_CONS(var->sons);
+	LIST_NODE_CONS(var->ln);
+	strcpy(var->vname, vname);
+	var->score = 0.f;
 
-	list_foreach(&df->sons, _var_find, &vfa);
+	list_insert_one_at_tail(&var->ln, &df->sons, NULL, NULL);
+	return var;
+}
 
-	if (vfa.var) {
-		var = vfa.var;
-	} else {
-		var = malloc(sizeof(struct doc_var));
-		var->doc_fthr = df;
-		LIST_CONS(var->sons);
-		LIST_NODE_CONS(var->ln);
-		strcpy(var->vname, vname);
-		var->score = 0.f;
-		
-		list_insert_one_at_tail(&var->ln, &df->sons, NULL, NULL);
-	}
-
-	new_brw = malloc(sizeof(struct doc_brw));
+static 
+struct doc_brw *new_brw_to_var(char *brw_id, uint *weight, 
+                               struct doc_var *var)
+{
+	struct doc_brw *new_brw = malloc(sizeof(struct doc_brw));
 	new_brw->var_fthr = var;
 	LIST_NODE_CONS(new_brw->ln);
 	strcpy(new_brw->id, brw_id);
@@ -190,6 +219,37 @@ void rlv_tr_insert(struct doc_frml *df, char *vname,
 	new_brw->score = 0.f;
 
 	list_insert_one_at_tail(&new_brw->ln, &var->sons, NULL, NULL);
+	return new_brw;
+}
+
+void rlv_tr_insert(struct doc_frml *df, char *vname, 
+                   char *brw_id, uint *weight)
+{
+	struct doc_var *var;
+	struct _var_find_arg vfa = {vname, NULL};
+
+	list_foreach(&df->sons, &_var_find, &vfa);
+
+	if (vfa.var)
+		var = vfa.var;
+	else
+		var = new_var_to_df(vname, df);
+
+	new_brw_to_var(brw_id, weight, var);
+}
+
+void rlv_tr_qk_insert(struct doc_var *into_var, 
+                      struct doc_frml *df, char *vname, 
+                      char *brw_id, uint *weight)
+{
+	struct doc_var *var;
+
+	if (NULL == into_var)
+		var = new_var_to_df(vname, df);
+	else
+		var = into_var;
+
+	new_brw_to_var(brw_id, weight, var);
 }
 
 static LIST_IT_CALLBK(_print_brw)
@@ -247,7 +307,7 @@ void rlv_tr_free(struct doc_frml *df)
 	free(df);
 }
 
-void process_str(const char *str, const char *ret_set)
+void rlv_process_str(const char *str, const char *ret_set)
 {
 	char brw_id[DOC_HASH_LEN];
 	char vname[VAR_NAME_MAX_LEN];
@@ -281,7 +341,7 @@ void process_str(const char *str, const char *ret_set)
 				}
 				break;
 			case 2:
-				if (!insert_flag) #
+				if (!insert_flag)
 					insert_flag = rlv_tr_test(df, field, 
 					                          brw_id, &into_var);
 
@@ -298,7 +358,7 @@ void process_str(const char *str, const char *ret_set)
 		i ++;
 	}
 
-	if (insert_flag) { #
+	if (insert_flag) {
 		rlv_tr_qk_insert(into_var, df, vname, brw_id, weight);
 		weight[i - 3] = 0;
 	}
