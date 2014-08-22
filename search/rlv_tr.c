@@ -21,6 +21,7 @@ int redis_cli_init(const char *ip, ushort port)
 
 void redis_cli_free()
 {
+	redisCommand(redis_cntxt, "flushall");
 	redisFree(redis_cntxt);
 }
 
@@ -252,15 +253,20 @@ void rlv_tr_qk_insert(struct doc_var *into_var,
 	new_brw_to_var(brw_id, weight, var);
 }
 
-static LIST_IT_CALLBK(_print_brw)
+static print_weight(uint *weight)
 {
 	uint i;
-	LIST_OBJ(struct doc_brw, brw, ln);
-	printf("\t\tbrw #%s [%f] ", brw->id, brw->score);
-	for (i = 0; brw->weight[i]; i++) {
-		printf("%d-", brw->weight[i]);
+	for (i = 0; weight[i]; i++) {
+		printf("%d-", weight[i]);
 	}
 	printf("\n");
+}
+
+static LIST_IT_CALLBK(_print_brw)
+{
+	LIST_OBJ(struct doc_brw, brw, ln);
+	printf("\t\tbrw #%s [%f] ", brw->id, brw->score);
+	print_weight(brw->weight);
 	
 	LIST_GO_OVER;
 }
@@ -268,7 +274,7 @@ static LIST_IT_CALLBK(_print_brw)
 static LIST_IT_CALLBK(_print_frml)
 {
 	LIST_OBJ(struct doc_var, v, ln);
-	printf("\tvar #%s [%f]\n", v->vname, v->score);
+	printf("\tvar `%s' [%f]\n", v->vname, v->score);
 	list_foreach(&v->sons, _print_brw, NULL);
 	
 	LIST_GO_OVER;
@@ -316,7 +322,7 @@ void rlv_process_str(const char *str, const char *ret_set)
 	struct doc_var *into_var;
 	int insert_flag;
 	uint i = 0;
-	
+
 	char *field = strtok((char*)str, " ");
 
 	while (field) {
@@ -343,7 +349,7 @@ void rlv_process_str(const char *str, const char *ret_set)
 			case 2:
 				if (!insert_flag)
 					insert_flag = rlv_tr_test(df, field, 
-					                          brw_id, &into_var);
+							brw_id, &into_var);
 
 				if (insert_flag)
 					strcpy(vname, field);
@@ -353,13 +359,13 @@ void rlv_process_str(const char *str, const char *ret_set)
 					weight[i - 3] = atoi(field);
 		}
 
-		printf("field: %s\n", field);
+		//printf("field: %s\n", field);
 		field = strtok(NULL, " ");
 		i ++;
 	}
 
 	if (insert_flag) {
-		rlv_tr_qk_insert(into_var, df, vname, brw_id, weight);
 		weight[i - 3] = 0;
+		rlv_tr_qk_insert(into_var, df, vname, brw_id, weight);
 	}
 }
