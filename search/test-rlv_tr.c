@@ -15,7 +15,7 @@ void delete_map_fun(const char *map)
 
 int main(void) 
 {
-	char test_str[] = "04a8bf5d416a9d2eae327d3d239a256b28b6c3de "
+	char test_str[] = "04a8bf5d416a9d2eae327d3d239a256b28b6c3de " 
 	"42e92bfc15a38e15a797c46a16e1f2d6fc5eada6 _xi 1 18 20 47 55";
 	/* init */
 	struct doc_frml test_frml, *p;
@@ -68,6 +68,16 @@ int main(void)
 //	/* destory */
 //	redis_cli_free();
 
+	/* test for rlv_tr_insert */
+	printf("sizeof(struct doc_frml)=%ld\n", 
+	        sizeof(struct doc_frml));
+
+	printf("sizeof(struct doc_var)=%ld\n", 
+	        sizeof(struct doc_var));
+
+	printf("sizeof(struct doc_brw)=%ld\n", 
+	        sizeof(struct doc_brw));
+
 	p = malloc(sizeof(struct doc_frml));
 	LIST_CONS(p->sons);
 	strcpy(p->id, "DOREME");
@@ -77,6 +87,20 @@ int main(void)
 	weight[1] = 2;
 	weight[2] = 3;
 	weight[3] = 0;
-	rlv_tr_insert(p, "ABCD", "alpha", weight);
-	//rlv_tr_print(p);
+	rlv_tr_insert(p, "alpha", "ABCD", weight);
+	weight[0] = 4;
+	weight[1] = 5;
+	weight[2] = 6;
+	weight[3] = 0;
+	rlv_tr_insert(p, "beta", "FIOJ", weight);
+	weight[0] = 4;
+	weight[1] = 5;
+	weight[2] = 6;
+	weight[3] = 0;
+	rlv_tr_insert(p, "alpha", "OKMM", weight);
+
+	rlv_tr_print(p);
+
+	printf("free relevance tree...\n");
+	rlv_tr_free(p);
 }

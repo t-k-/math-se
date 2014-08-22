@@ -113,13 +113,13 @@ void redis_del(const char *hash)
 	freeReplyObject(r);
 }
 
-struct doc_var *rlv_tr_test(struct doc_frml *df, char *id)
-{
-	return NULL;
-}
-
 struct _var_find_arg {
 	char *vname;
+	struct doc_var *var;
+};
+
+struct _brw_find_arg {
+	char *id;
 	struct doc_var *var;
 };
 
@@ -135,27 +135,32 @@ LIST_IT_CALLBK(_var_find)
 	LIST_GO_OVER;
 }
 
+struct doc_var *rlv_tr_test(struct doc_frml *df, char *id)
+{
+	struct _var_find_arg vfa = {, NULL};
+	list_foreach(&df->sons, _itr_var, &vfa);
+	return NULL;
+}
+
 uint brwsize(uint *weight)
 {
 	uint i, cnt = 0;
 	for (i = 0; weight[i]; i++) {
 		cnt ++;
 	}
-	return cnt;
+	return ++cnt;
 }
 
 void brwcpy(uint *w_dst, uint *w_src)
 {
 	uint i;
-	for (i = 0; w_src[i]; i++) {
-		printf("cpy [%d]\n", i);
+	for (i = 0; w_src[i]; i++)
 		w_dst[i] = w_src[i];
-	}
 	w_dst[i] = 0;
 }
 
-void rlv_tr_insert(struct doc_frml *df, char *brw_id, 
-                   char *vname, uint *weight)
+void rlv_tr_insert(struct doc_frml *df, char *vname, 
+                   char *brw_id, uint *weight)
 {
 	struct doc_var *var;
 	struct doc_brw *new_brw;
@@ -180,7 +185,7 @@ void rlv_tr_insert(struct doc_frml *df, char *brw_id,
 	new_brw->var_fthr = var;
 	LIST_NODE_CONS(new_brw->ln);
 	strcpy(new_brw->id, brw_id);
-	new_brw = malloc(sizeof(uint) * brwsize(weight));
+	new_brw->weight = malloc(sizeof(uint) * brwsize(weight));
 	brwcpy(new_brw->weight, weight);
 	new_brw->score = 0.f;
 
@@ -191,7 +196,7 @@ static LIST_IT_CALLBK(_print_brw)
 {
 	uint i;
 	LIST_OBJ(struct doc_brw, brw, ln);
-	printf("\tbrw #%s [%f] ", brw->id, brw->score);
+	printf("\t\tbrw #%s [%f] ", brw->id, brw->score);
 	for (i = 0; brw->weight[i]; i++) {
 		printf("%d-", brw->weight[i]);
 	}
@@ -213,7 +218,33 @@ void rlv_tr_print(struct doc_frml *df)
 {
 	printf("formula #%s [%f]\n", df->id, df->score);
 	list_foreach(&df->sons, _print_frml, NULL);
-	return;
+}
+
+static LIST_IT_CALLBK(_free_brw)
+{
+	LIST_OBJ(struct doc_brw, brw, ln);
+	BOOL res = list_detach_one(pa_now->now,
+	               pa_head, pa_now, pa_fwd);
+	free(brw->weight);
+	free(brw);
+	return res;
+}
+
+static LIST_IT_CALLBK(_free_frml)
+{
+	BOOL res;
+	LIST_OBJ(struct doc_var, v, ln);
+	list_foreach(&v->sons, _free_brw, NULL);
+	res = list_detach_one(pa_now->now,
+	          pa_head, pa_now, pa_fwd);
+	free(v);
+	return res;
+}
+
+void rlv_tr_free(struct doc_frml *df)
+{
+	list_foreach(&df->sons, _free_frml, NULL);
+	free(df);
 }
 
 void process_str(const char *str, const char *ret_set)
@@ -222,7 +253,8 @@ void process_str(const char *str, const char *ret_set)
 	char vname[VAR_NAME_MAX_LEN];
 	uint weight[WEIGHT_MAX_LEN];
 	struct doc_frml *df;
-	struct doc_var *test;
+	struct doc_var *into_var;
+	int insert_flag;
 	uint i = 0;
 	
 	char *field = strtok((char*)str, " ");
@@ -242,18 +274,22 @@ void process_str(const char *str, const char *ret_set)
 
 					redis_set_add_hash(ret_set, field);
 					redis_frml_map_set(field, df);
-					test = NULL;
+					insert_flag = 1;
+					into_var = NULL;
 				} else {
-					test = rlv_tr_test(df, brw_id);
+					insert_flag = 0;
 				}
-
 				break;
 			case 2:
-				if (NULL == test)
+				if (!insert_flag) #
+					insert_flag = rlv_tr_test(df, field, 
+					                          brw_id, &into_var);
+
+				if (insert_flag)
 					strcpy(vname, field);
 				break;
 			default:
-				if (NULL == test)
+				if (insert_flag)
 					weight[i - 3] = atoi(field);
 		}
 
@@ -262,8 +298,8 @@ void process_str(const char *str, const char *ret_set)
 		i ++;
 	}
 
-	if (test == NULL) {
-		rlv_tr_insert(df, brw_id, vname, weight);
+	if (insert_flag) { #
+		rlv_tr_qk_insert(into_var, df, vname, brw_id, weight);
 		weight[i - 3] = 0;
 	}
 }

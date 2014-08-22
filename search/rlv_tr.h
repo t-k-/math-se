@@ -22,11 +22,11 @@ struct doc_var {
 };
 
 struct doc_brw {
-	struct doc_var *var_fthr;
 	struct list_node ln;
-	char id[BRW_HASH_LEN];
+	struct doc_var *var_fthr;
 	uint *weight;
 	float score;
+	char id[BRW_HASH_LEN];
 };
 
 #define DEFAULT_REDIS_PORT 6379
