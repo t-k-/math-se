@@ -161,7 +161,7 @@ struct doc_brw *rlv_tr_test(struct doc_frml *df, char *vname,
 	*into_var = NULL;
 
 	if (vfa.var) {
-		bfa.found = 0;
+		bfa.found = NULL;
 		bfa.brw_id = brw_id;
 		list_foreach(&vfa.var->sons, &_brw_find, &bfa);
 
