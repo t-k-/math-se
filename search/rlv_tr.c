@@ -121,7 +121,7 @@ struct _var_find_arg {
 
 struct _brw_find_arg {
 	char *brw_id;
-	BOOL  found;
+	struct doc_brw *found;
 };
 
 static 
@@ -145,15 +145,15 @@ LIST_IT_CALLBK(_brw_find)
 	P_CAST(bfa, struct _brw_find_arg, pa_extra);
 
 	if (0 == strcmp(brw->id, bfa->brw_id)) {
-		bfa->found = 1;
+		bfa->found = brw;
 		return LIST_RET_BREAK;
 	}
 	
 	LIST_GO_OVER;
 }
 
-int rlv_tr_test(struct doc_frml *df, char *vname,
-                char *brw_id, struct doc_var **into_var)
+struct doc_brw *rlv_tr_test(struct doc_frml *df, char *vname,
+                      char *brw_id, struct doc_var **into_var)
 {
 	struct _var_find_arg vfa = {vname, NULL};
 	struct _brw_find_arg bfa;
@@ -166,13 +166,13 @@ int rlv_tr_test(struct doc_frml *df, char *vname,
 		list_foreach(&vfa.var->sons, &_brw_find, &bfa);
 
 		if (bfa.found) { 
-			return 0;
+			return bfa.found;
 		} else {
 			*into_var = vfa.var;
-			return 1;
+			return NULL;
 		}
 	} else {
-		return 1;
+		return NULL;
 	}
 }
 
@@ -218,13 +218,14 @@ struct doc_brw *new_brw_to_var(char *brw_id, uint *weight,
 	new_brw->weight = malloc(sizeof(uint) * brwsize(weight));
 	brwcpy(new_brw->weight, weight);
 	new_brw->score = 0.f;
+	new_brw->state = unmark;
 
 	list_insert_one_at_tail(&new_brw->ln, &var->sons, NULL, NULL);
 	return new_brw;
 }
 
-void rlv_tr_insert(struct doc_frml *df, char *vname, 
-                   char *brw_id, uint *weight)
+struct doc_brw *rlv_tr_insert(struct doc_frml *df, char *vname, 
+                              char *brw_id, uint *weight)
 {
 	struct doc_var *var;
 	struct _var_find_arg vfa = {vname, NULL};
@@ -236,12 +237,12 @@ void rlv_tr_insert(struct doc_frml *df, char *vname,
 	else
 		var = new_var_to_df(vname, df);
 
-	new_brw_to_var(brw_id, weight, var);
+	return new_brw_to_var(brw_id, weight, var);
 }
 
-void rlv_tr_qk_insert(struct doc_var *into_var, 
-                      struct doc_frml *df, char *vname, 
-                      char *brw_id, uint *weight)
+struct doc_brw *rlv_tr_qk_insert(struct doc_var *into_var, 
+                                 struct doc_frml *df, char *vname, 
+                                 char *brw_id, uint *weight)
 {
 	struct doc_var *var;
 
@@ -250,16 +251,32 @@ void rlv_tr_qk_insert(struct doc_var *into_var,
 	else
 		var = into_var;
 
-	new_brw_to_var(brw_id, weight, var);
+	return new_brw_to_var(brw_id, weight, var);
 }
 
-static print_weight(uint *weight)
+static void print_weight(uint *weight)
 {
 	uint i;
 	for (i = 0; weight[i]; i++) {
 		printf("%d-", weight[i]);
 	}
-	printf("\n");
+}
+
+static void print_state(enum brw_state state)
+{
+	switch(state) {
+	case unmark:
+		printf("unmark");
+		break;
+	case mark:
+		printf("mark");
+		break;
+	case dead:
+		printf("dead");
+		break;
+	default:
+		printf("unknown");
+	}
 }
 
 static LIST_IT_CALLBK(_print_brw)
@@ -267,6 +284,9 @@ static LIST_IT_CALLBK(_print_brw)
 	LIST_OBJ(struct doc_brw, brw, ln);
 	printf("\t\tbrw #%s [%f] ", brw->id, brw->score);
 	print_weight(brw->weight);
+	printf(" (");
+	print_state(brw->state);
+	printf(")\n");
 	
 	LIST_GO_OVER;
 }
@@ -313,14 +333,15 @@ void rlv_tr_free(struct doc_frml *df)
 	free(df);
 }
 
-void rlv_process_str(const char *str, const char *ret_set)
+struct doc_brw *rlv_process_str(const char *str, 
+                                const char *ret_set)
 {
 	char brw_id[DOC_HASH_LEN];
 	char vname[VAR_NAME_MAX_LEN];
 	uint weight[WEIGHT_MAX_LEN];
 	struct doc_frml *df;
 	struct doc_var *into_var;
-	int insert_flag;
+	struct doc_brw *map_brw;
 	uint i = 0;
 
 	char *field = strtok((char*)str, " ");
@@ -340,22 +361,22 @@ void rlv_process_str(const char *str, const char *ret_set)
 
 					redis_set_add_hash(ret_set, field);
 					redis_frml_map_set(field, df);
-					insert_flag = 1;
+					map_brw = NULL;
 					into_var = NULL;
 				} else {
-					insert_flag = 0;
+					map_brw = (struct doc_brw*)0x1;
 				}
 				break;
 			case 2:
-				if (!insert_flag)
-					insert_flag = rlv_tr_test(df, field, 
+				if (map_brw)
+					map_brw = rlv_tr_test(df, field, 
 							brw_id, &into_var);
 
-				if (insert_flag)
+				if (NULL == map_brw)
 					strcpy(vname, field);
 				break;
 			default:
-				if (insert_flag)
+				if (NULL == map_brw)
 					weight[i - 3] = atoi(field);
 		}
 
@@ -364,8 +385,11 @@ void rlv_process_str(const char *str, const char *ret_set)
 		i ++;
 	}
 
-	if (insert_flag) {
+	if (NULL == map_brw) {
 		weight[i - 3] = 0;
-		rlv_tr_qk_insert(into_var, df, vname, brw_id, weight);
+		return rlv_tr_qk_insert(into_var, df, vname, 
+		                        brw_id, weight);
+	} else {
+		return map_brw;
 	}
 }

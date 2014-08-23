@@ -21,12 +21,19 @@ struct doc_var {
 	float score;
 };
 
+enum brw_state {
+	unmark,
+	mark,
+	dead
+};
+
 struct doc_brw {
 	struct doc_var *var_fthr;
 	struct list_node ln;
 	uint *weight;
 	float score;
 	char id[BRW_HASH_LEN];
+	enum brw_state state;
 };
 
 #define DEFAULT_REDIS_PORT 6379
@@ -51,15 +58,18 @@ int redis_frml_map_set(const char*, struct doc_frml*);
 
 void redis_frml_map_del(const char*);
 
-int rlv_tr_test(struct doc_frml*, char*, char*, struct doc_var **);
+struct doc_brw *rlv_tr_test(struct doc_frml*, char*, char*, 
+                            struct doc_var **);
 
-void rlv_tr_insert(struct doc_frml*, char*, char*, uint*);
+struct doc_brw *rlv_tr_insert(struct doc_frml*, char*, char*, 
+                              uint*);
 
-void rlv_tr_qk_insert(struct doc_var*, struct doc_frml*, 
-                      char*, char*, uint*);
+struct doc_brw *rlv_tr_qk_insert(struct doc_var*, 
+                                 struct doc_frml*, 
+                                 char*, char*, uint*);
 
 void rlv_tr_print(struct doc_frml*);
 
 void rlv_tr_free(struct doc_frml*);
 
-void rlv_process_str(const char*, const char*);
+struct doc_brw *rlv_process_str(const char*, const char*);

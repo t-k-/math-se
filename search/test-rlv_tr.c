@@ -18,14 +18,15 @@ void free_map_fun(const char *map)
 
 #define PROCESS(_line) \
 	line = strdup(_line); \
-	rlv_process_str(line, "tmp"); \
-	free(line)
+	map_brw = rlv_process_str(line, "tmp"); \
+	free(line); \
+	printf("brw %s mapped.\n", map_brw->id)
 
 int main(void) 
 {
 	struct doc_frml test_frml, *p;
 	struct doc_var *into_var;
-	int res;
+	struct doc_brw *map_brw;
 	uint weight[WEIGHT_MAX_LEN];
 
 	/* init redis client */
@@ -102,9 +103,11 @@ int main(void)
 	rlv_tr_print(p);
 
 	char vname[] = "alpha", vhash[] = "bbb";
-	res = rlv_tr_test(p, vname, vhash, &into_var);
-	printf("res = %d, into_var=%s\n", res, (into_var==NULL)?"no":into_var->vname);
-	if (res) 
+	map_brw = rlv_tr_test(p, vname, vhash, &into_var);
+	printf("map_brw=%s, into_var=%s\n", 
+	       (map_brw==NULL)?"no":map_brw->id,
+	       (into_var==NULL)?"no":into_var->vname);
+	if (NULL == map_brw) 
 		rlv_tr_qk_insert(into_var, p, vname, vhash, weight);
 	rlv_tr_print(p);
 	printf("free relevance tree...\n");
