@@ -19,7 +19,7 @@ install:
 	make install -C ./web
 
 clean:
-	rm -f *.a tags
+	rm -f *.a tags inc/*.gch
 	make clean -C ./index
 	make clean -C ./parser
 	make clean -C ./search

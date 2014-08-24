@@ -22,9 +22,9 @@ struct doc_var {
 };
 
 enum brw_state {
-	unmark,
-	mark,
-	dead
+	bs_unmark,
+	bs_mark,
+	bs_cross
 };
 
 struct doc_brw {
@@ -38,7 +38,7 @@ struct doc_brw {
 
 #define DEFAULT_REDIS_PORT 6379
 
-typedef void (*retstr_callbk)(const char *);
+typedef void (*retstr_callbk)(const char *, void *);
 
 int redis_cli_init(const char*, ushort);
 
@@ -51,6 +51,8 @@ void redis_set_union(const char*, const char*);
 int redis_set_printall(const char*);
 
 void redis_set_popeach(const char*, retstr_callbk);
+
+void redis_set_members(const char*, retstr_callbk);
 
 struct doc_frml *redis_frml_map_get(const char*);
 
@@ -73,3 +75,5 @@ void rlv_tr_print(struct doc_frml*);
 void rlv_tr_free(struct doc_frml*);
 
 struct doc_brw *rlv_process_str(const char*, const char*);
+
+void print_weight(uint*);

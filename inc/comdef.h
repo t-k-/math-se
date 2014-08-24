@@ -34,3 +34,10 @@ static __inline int min(int a, int b)
 {
 	return (a<b)?a:b;
 }
+
+#define COLOR_RST     "\e[0m"
+#define COLOR_RED     "\033[1m\033[31m"      /* Bold Red */
+#define COLOR_GREEN   "\033[1m\033[32m"      /* Bold Green */
+#define COLOR_BLUE    "\033[1m\033[34m"      /* Bold Blue */
+#define COLOR_MAGENTA "\033[1m\033[35m"      /* Bold Magenta */
+#define COLOR_CYAN    "\033[1m\033[36m"      /* Bold Cyan */

@@ -67,10 +67,26 @@ void redis_set_popeach(const char *set, retstr_callbk fun)
 			break;
 		}
 
-		fun(r->str);
+		fun(r->str, NULL);
 		freeReplyObject(r);
 	}
 
+	freeReplyObject(r);
+}
+
+void redis_set_members(const char *set, retstr_callbk fun)
+{
+	size_t i;
+	redisReply *r;
+	r = redisCommand(redis_cntxt, "smembers %s", set);
+	if (r->type == REDIS_REPLY_NIL) {
+		freeReplyObject(r);
+		return;
+	}
+
+	for (i = 0; i < r->elements; i++)
+		fun(r->element[i]->str, NULL);
+	
 	freeReplyObject(r);
 }
 
@@ -218,7 +234,7 @@ struct doc_brw *new_brw_to_var(char *brw_id, uint *weight,
 	new_brw->weight = malloc(sizeof(uint) * brwsize(weight));
 	brwcpy(new_brw->weight, weight);
 	new_brw->score = 0.f;
-	new_brw->state = unmark;
+	new_brw->state = bs_unmark;
 
 	list_insert_one_at_tail(&new_brw->ln, &var->sons, NULL, NULL);
 	return new_brw;
@@ -254,7 +270,7 @@ struct doc_brw *rlv_tr_qk_insert(struct doc_var *into_var,
 	return new_brw_to_var(brw_id, weight, var);
 }
 
-static void print_weight(uint *weight)
+void print_weight(uint *weight)
 {
 	uint i;
 	for (i = 0; weight[i]; i++) {
@@ -265,14 +281,14 @@ static void print_weight(uint *weight)
 static void print_state(enum brw_state state)
 {
 	switch(state) {
-	case unmark:
-		printf("unmark");
+	case bs_unmark:
+		printf("unmarked");
 		break;
-	case mark:
-		printf("mark");
+	case bs_mark:
+		printf("marked");
 		break;
-	case dead:
-		printf("dead");
+	case bs_cross:
+		printf("crossed");
 		break;
 	default:
 		printf("unknown");

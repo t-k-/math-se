@@ -2,17 +2,22 @@
 #include <dirent.h>
 #include "rlv_tr.h"
 
-void print_fun(const char *value)
+void print_fun(const char *value, void *arg)
 {
 	printf("value: %s\n", value);
 }
 
-void free_map_fun(const char *map)
+void print_map_fun(const char *map, void *arg)
+{
+	struct doc_frml *df = redis_frml_map_get(map);
+	rlv_tr_print(df);
+}
+
+void free_map_fun(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
 	printf("free formula ...\n");
-	rlv_tr_print(df);
-	free(df);
+	rlv_tr_free(df);
 	redis_del(map);
 }
 
@@ -126,6 +131,7 @@ int main(void)
 	PROCESS("04a8bf5d416a9d2eae327d3d239rrrrrrrrrrrrr "
     "42e92bfc15a38e15a797c46a16e1f2d6fc5eada6 _xi 3 11 21 37 45");
 
+	redis_set_members("tmp", &print_map_fun);
 	redis_set_popeach("tmp", &free_map_fun);
 	redis_del("tmp");
 

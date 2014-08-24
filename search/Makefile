@@ -4,7 +4,7 @@ DEP_LIB=-lparser -ll -lhiredis
 
 .PHONY: all clean
 
-all: $(OUTPUT) test
+all: $(OUTPUT)
 
 test: test-rlv_tr
 
