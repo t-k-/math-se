@@ -384,13 +384,14 @@ struct doc_brw *rlv_process_str(const char *str,
 				break;
 			case 1:
 				df = redis_frml_map_get(field);
+				redis_set_add_hash(ret_set, field);
+
 				if (!df) {
 					df = malloc(sizeof(struct doc_frml));
 					LIST_CONS(df->sons);
 					strcpy(df->id, field);
 					df->score = 0.f;
 
-					redis_set_add_hash(ret_set, field);
 					redis_frml_map_set(field, df);
 					map_brw = NULL;
 					into_var = NULL;
@@ -417,7 +418,7 @@ struct doc_brw *rlv_process_str(const char *str,
 
 	if (NULL == map_brw) {
 		weight[i - 3] = 0;
-		return rlv_tr_qk_insert(into_var, df, vname, 
+		return rlv_tr_qk_insert(into_var, df, vname,
 		                        brw_id, weight);
 	} else {
 		return map_brw;

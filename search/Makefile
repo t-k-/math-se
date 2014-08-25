@@ -1,6 +1,6 @@
 OUTPUT=$(shell basename `pwd`)
 CFLAGS=-I ../inc -L .. -I /usr/include/hiredis
-DEP_LIB=-lparser -ll -lhiredis
+DEP_LIB=-lparser -ll -lhiredis -lbdb_wraper -ltokyocabinet
 
 .PHONY: all clean
 
@@ -11,7 +11,7 @@ test: test-rlv_tr
 test-rlv_tr: rlv_tr.o test-rlv_tr.o
 	gcc $(CFLAGS) $^ -lhiredis -o $@ -lmcheck
 
-$(OUTPUT): main.o rlv_tr.o ../libparser.a
+$(OUTPUT): main.o rlv_tr.o ../libparser.a ../libbdb_wraper.a
 	gcc $(CFLAGS) $(filter %.o, $^) -o $(OUTPUT) $(DEP_LIB)
 
 -include $(wildcard *.d)

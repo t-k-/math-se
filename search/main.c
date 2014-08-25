@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <dirent.h>
 #include "rlv_tr.h"
+#include "bdb_wraper.h"
 
 static
 LIST_IT_CALLBK(print)
@@ -97,8 +98,10 @@ void search_open(const char *path, void *arg)
 		map_brw = rlv_process_str(line, soa->ret_set_name);
 
 		if (map_brw->state == bs_unmark) {
+			printf("one match-and-score brw: #%s\n", 
+			       hash2str(map_brw->id));
 			soa->ret_search_flag = 1;
-			map_brw->score = 0.985f;
+			map_brw->score = 0.99f;
 		}
 	}
 	fclose(f);
@@ -146,10 +149,11 @@ int search_and_score(const char *dir, const char *ret_set)
 {
 	struct _search_open_arg soa = {0, ret_set};
 	search_dir(dir, "posting", &search_open, &soa);
+	return soa.ret_search_flag;
 }
 
 static 
-void redis_print_frml_map(const char *map, void *arg)
+void print_frml_map(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
 	rlv_tr_print(df);
@@ -259,9 +263,14 @@ void update_frml_score(const char *map, void *arg)
 }
 
 static
-void final_score(const char *map, void *arg)
+void _final_score(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
+	char *hash_str = hash2str(df->id);
+	char *doc = bdb_get2(hash_str);
+
+	printf("doc #%s:\n%s\n", hash_str, doc);
+	free(doc);
 
 	rlv_tr_print(df);
 
@@ -270,6 +279,7 @@ void final_score(const char *map, void *arg)
 }
 
 struct _score_main_arg {
+	const char *complete_set;
 	pid_t pid;
 };
 
@@ -282,15 +292,23 @@ LIST_IT_CALLBK(_score_main)
 	P_CAST(sma, struct _score_main_arg, pa_extra);
 	LIST_OBJ(struct query_brw, a, ln);
 
-	printf(COLOR_MAGENTA "for query brw:\n");
+	printf(COLOR_MAGENTA "for query brw: ");
 	printf("%s ", a->vname);
 	print_weight(a->weight);
 	printf(" @ %s\n", a->dir);
+	printf("matching:\n");
 	printf(COLOR_RST);
 
-	search_and_score(a->dir, "result set");
+	if (0 == search_and_score(a->dir, "result set")) {
+		printf("note 300\n");
+		return LIST_RET_BREAK;
+	}
 	redis_set_union("temp set", "result set");
-	redis_set_popeach("result set", &update_var_score);
+	printf(COLOR_GREEN "before var update:\n" COLOR_RST);
+	redis_set_members("result set", &print_frml_map);
+	redis_set_members("result set", &update_var_score);
+	printf(COLOR_GREEN "after var update:\n" COLOR_RST);
+	redis_set_popeach("result set", &print_frml_map);
 	redis_del("result set");
 
 	stage_flag = 0;
@@ -304,28 +322,46 @@ LIST_IT_CALLBK(_score_main)
 	}
 
 	if (stage_flag) {
-		redis_set_union("cmplt set", "temp set");
-		redis_set_popeach("temp set", &update_frml_score);
+		redis_set_union(sma->complete_set, "temp set");
+		redis_set_members("temp set", &update_frml_score);
+		printf(COLOR_RED "after frml update...\n" COLOR_RST);
+		redis_set_popeach("temp set", &print_frml_map);
 		redis_del("temp set");
 	}
 
 	LIST_GO_OVER;
 }
 
+void mark_cross_score(struct list_it *li_query_brw)
+{
+	struct _score_main_arg sma;
+	const char complete_set[] = "cmplt set";
+	sma.pid = getpid();
+	sma.complete_set = complete_set;
+
+	list_foreach(li_query_brw, &_score_main, &sma);
+	redis_set_popeach(complete_set, &_final_score);
+	redis_del(complete_set);
+}
+
 int main(int argc, char *argv[])
 {
 	struct list_it li_query_brw; 
 	char *query = argv[1];
-	struct _score_main_arg sma;
 
 	if (argc != 2) {
 		printf("invalid argument format.\n");
 		return 1;
 	}
 
+	if (bdb_init("./collection/documents.bdb")) {
+		printf("tcbdb open error.\n");
+		return 2;
+	}
+
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT)) {
 		printf("redis server is down.\n");
-		return 1;
+		return 3;
 	}
 
 	if (0 == strcmp(query, "#flush")) {
@@ -347,12 +383,11 @@ int main(int argc, char *argv[])
 	list_foreach(&li_query_brw, &print, NULL);
 	printf(COLOR_RST);
 
-	sma.pid = getpid();
-	list_foreach(&li_query_brw, &_score_main, &sma);
-	redis_set_popeach("cmplt set", &final_score);
-	redis_del("cmplt set");
+	mark_cross_score(&li_query_brw);
 
 	li_brw_release(&li_query_brw);
 	redis_cli_free();
+	bdb_records();
+
 	return 0;
 }

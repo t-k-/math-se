@@ -79,3 +79,5 @@ void rlv_tr_free(struct doc_frml*);
 struct doc_brw *rlv_process_str(const char*, const char*);
 
 void print_weight(uint*);
+
+char *hash2str(char*);
