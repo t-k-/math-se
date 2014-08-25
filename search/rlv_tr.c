@@ -25,6 +25,13 @@ void redis_cli_free()
 	redisFree(redis_cntxt);
 }
 
+void redis_shutdown()
+{
+	redisCommand(redis_cntxt, "flushall");
+	redisCommand(redis_cntxt, "shutdown");
+	redisFree(redis_cntxt);
+}
+
 void redis_set_add_hash(const char *set, const char *hash)
 {
 	redisReply *r;
@@ -295,10 +302,18 @@ static void print_state(enum brw_state state)
 	}
 }
 
+char *hash2str(char *hash)
+{
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf;
+}
+
 static LIST_IT_CALLBK(_print_brw)
 {
 	LIST_OBJ(struct doc_brw, brw, ln);
-	printf("\t\tbrw #%s [%f] ", brw->id, brw->score);
+	printf("\t\tbrw #%s [%f] ", hash2str(brw->id), brw->score);
 	print_weight(brw->weight);
 	printf(" (");
 	print_state(brw->state);
@@ -318,7 +333,7 @@ static LIST_IT_CALLBK(_print_frml)
 
 void rlv_tr_print(struct doc_frml *df)
 {
-	printf("formula #%s [%f]\n", df->id, df->score);
+	printf("formula #%s [%f]\n", hash2str(df->id), df->score);
 	list_foreach(&df->sons, _print_frml, NULL);
 }
 
@@ -396,7 +411,6 @@ struct doc_brw *rlv_process_str(const char *str,
 					weight[i - 3] = atoi(field);
 		}
 
-		//printf("field: %s\n", field);
 		field = strtok(NULL, " ");
 		i ++;
 	}

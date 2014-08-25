@@ -44,6 +44,8 @@ int redis_cli_init(const char*, ushort);
 
 void redis_cli_free();
 
+void redis_shutdown();
+
 void redis_set_add_hash(const char*, const char*);
 
 void redis_set_union(const char*, const char*);

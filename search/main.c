@@ -62,6 +62,7 @@ LIST_CMP_CALLBK(_same_name_cmp)
 	return p0->same_name_cnt > p1->same_name_cnt;
 }
 
+static
 void li_brw_name_sort(struct list_it *li)
 {
 	struct list_sort_arg lsa;
@@ -75,6 +76,7 @@ struct _search_open_arg {
 	const char *ret_set_name;
 };
 
+static
 void search_open(const char *path, void *arg)
 {
 	char *c, line[1024];
@@ -102,6 +104,7 @@ void search_open(const char *path, void *arg)
 	fclose(f);
 }
 
+static
 int search_dir(const char *path, const char *fname, 
                retstr_callbk fopen_fun, void *arg)
 {
@@ -138,6 +141,7 @@ int search_dir(const char *path, const char *fname,
 	closedir(dir);
 }
 
+static
 int search_and_score(const char *dir, const char *ret_set)
 {
 	struct _search_open_arg soa = {0, ret_set};
@@ -145,18 +149,9 @@ int search_and_score(const char *dir, const char *ret_set)
 }
 
 static 
-void redis_free_map_callbk(const char *map, void *arg)
-{
-	struct doc_frml *df = redis_frml_map_get(map);
-	rlv_tr_free(df);
-	redis_del(map);
-}
-
-static 
 void redis_print_frml_map(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
-	printf("formula:\n");
 	rlv_tr_print(df);
 }
 
@@ -202,6 +197,73 @@ void update_var_score(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
 	list_foreach(&df->sons, &_update_var_score, NULL);
+}
+
+struct _find_max_var_arg {
+	float max_score;
+	struct doc_var *max_var;
+};
+
+static
+LIST_IT_CALLBK(_find_max_var)
+{
+	LIST_OBJ(struct doc_var, v, ln);
+	P_CAST(fmva, struct _find_max_var_arg, pa_extra);
+	if (fmva->max_score < v->score) {
+		fmva->max_score = v->score;
+		fmva->max_var = v;
+	}
+
+	LIST_GO_OVER;
+}
+
+static
+LIST_IT_CALLBK(__change_brw_state)
+{
+	LIST_OBJ(struct doc_brw, brw, ln);
+	P_CAST(next_state, enum brw_state, pa_extra);
+
+	if (brw->state == bs_mark)
+		brw->state = *next_state;
+
+	LIST_GO_OVER;
+}
+
+static
+LIST_IT_CALLBK(_change_brw_state)
+{
+	LIST_OBJ(struct doc_var, v, ln);
+	P_CAST(max_var, struct doc_var, pa_extra);
+
+	enum brw_state next_state = bs_unmark;
+	if (v == max_var)
+		next_state = bs_cross;
+
+	list_foreach(&v->sons, &__change_brw_state, &next_state);
+	v->score = 0.f;
+
+	LIST_GO_OVER;
+}
+
+static
+void update_frml_score(const char *map, void *arg)
+{
+	struct doc_frml *df = redis_frml_map_get(map);
+	struct _find_max_var_arg fmva = {0.f, NULL};
+	list_foreach(&df->sons, &_find_max_var, &fmva);
+
+	if (fmva.max_var)
+		df->score += fmva.max_var->score;
+	
+	list_foreach(&df->sons, &_change_brw_state, fmva.max_var);
+}
+
+static
+void final_score(const char *map, void *arg)
+{
+	struct doc_frml *df = redis_frml_map_get(map);
+
+	rlv_tr_print(df);
 
 	rlv_tr_free(df);
 	redis_del(map);
@@ -215,6 +277,7 @@ static
 LIST_IT_CALLBK(_score_main)
 {
 	uint i;
+	char stage_flag;
 	struct query_brw *next_a;
 	P_CAST(sma, struct _score_main_arg, pa_extra);
 	LIST_OBJ(struct query_brw, a, ln);
@@ -230,20 +293,22 @@ LIST_IT_CALLBK(_score_main)
 	redis_set_popeach("result set", &update_var_score);
 	redis_del("result set");
 
-	if (pa_now->now == pa_head->last)
-		printf("this is the last.\n");
-		redis_set_popeach("temp set", &update_frml_score);
-	else {
+	stage_flag = 0;
+	if (pa_now->now == pa_head->last) {
+		stage_flag = 1;
+	} else {
 		next_a = MEMBER_2_STRUCT(pa_now->now->next, 
-		                           struct query_brw, ln);
-		if (strcmp(a->vname, next_a->vname) != 0) {
-			printf("next will change.\n");
-			redis_set_popeach("temp set", &update_frml_score);
-			redis_set_union("cmplt set", "temp set");
-			redis_del("temp set");
-		}
+		                         struct query_brw, ln);
+		if (strcmp(a->vname, next_a->vname) != 0)
+			stage_flag = 1;
 	}
-	
+
+	if (stage_flag) {
+		redis_set_union("cmplt set", "temp set");
+		redis_set_popeach("temp set", &update_frml_score);
+		redis_del("temp set");
+	}
+
 	LIST_GO_OVER;
 }
 
@@ -253,14 +318,24 @@ int main(int argc, char *argv[])
 	char *query = argv[1];
 	struct _score_main_arg sma;
 
+	if (argc != 2) {
+		printf("invalid argument format.\n");
+		return 1;
+	}
+
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT)) {
 		printf("redis server is down.\n");
 		return 1;
 	}
 
-	if (argc != 2) {
-		printf("invalid argument format.\n");
-		return 1;
+	if (0 == strcmp(query, "#flush")) {
+		printf("flush redis DB...\n");
+		redis_cli_free();
+		return 0;
+	} else if (0 == strcmp(query, "#shutdown")) {
+		printf("shutdown redis DB...\n");
+		redis_shutdown();
+		return 0;
 	}
 
 	printf("query: %s\n", query);
@@ -274,8 +349,10 @@ int main(int argc, char *argv[])
 
 	sma.pid = getpid();
 	list_foreach(&li_query_brw, &_score_main, &sma);
+	redis_set_popeach("cmplt set", &final_score);
+	redis_del("cmplt set");
 
 	li_brw_release(&li_query_brw);
-
+	redis_cli_free();
 	return 0;
 }
