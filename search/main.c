@@ -3,6 +3,11 @@
 #include "rlv_tr.h"
 #include "bdb_wraper.h"
 
+float score(struct query_brw *a, struct doc_brw *b)
+{
+	return 0.99f;
+}
+
 static
 LIST_IT_CALLBK(print)
 {
@@ -74,6 +79,7 @@ void li_brw_name_sort(struct list_it *li)
 
 struct _search_open_arg {
 	int         ret_search_flag;
+	struct query_brw *a;
 	const char *ret_set_name;
 };
 
@@ -101,7 +107,7 @@ void search_open(const char *path, void *arg)
 			printf("one match-and-score brw: #%s\n", 
 			       hash2str(map_brw->id));
 			soa->ret_search_flag = 1;
-			map_brw->score = 0.99f;
+			map_brw->score = score(soa->a, map_brw);
 		}
 	}
 	fclose(f);
@@ -145,9 +151,10 @@ int search_dir(const char *path, const char *fname,
 }
 
 static
-int search_and_score(const char *dir, const char *ret_set)
+int search_and_score(const char *dir, struct query_brw *a, 
+                     const char *ret_set)
 {
-	struct _search_open_arg soa = {0, ret_set};
+	struct _search_open_arg soa = {0, a, ret_set};
 	search_dir(dir, "posting", &search_open, &soa);
 	return soa.ret_search_flag;
 }
@@ -299,7 +306,7 @@ LIST_IT_CALLBK(_score_main)
 	printf("matching:\n");
 	printf(COLOR_RST);
 
-	if (0 == search_and_score(a->dir, "result set")) {
+	if (0 == search_and_score(a->dir, a, "result set")) {
 		printf("note 300\n");
 		return LIST_RET_BREAK;
 	}
@@ -340,6 +347,10 @@ void mark_cross_score(struct list_it *li_query_brw)
 	sma.complete_set = complete_set;
 
 	list_foreach(li_query_brw, &_score_main, &sma);
+
+	printf(COLOR_BLUE 
+	       "========= final score =========\n" 
+	       COLOR_RST);
 	redis_set_popeach(complete_set, &_final_score);
 	redis_del(complete_set);
 }

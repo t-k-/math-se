@@ -3,7 +3,7 @@ bdb_wraper.o: bdb_wraper.c
 	gcc -c -o $@ $^
 
 libbdb_wraper.so: bdb_wraper.c
-	gcc -shared -fPIC -o $@ -ltokyocabinet $^ 
+	gcc -shared -fPIC -o $@ $^ -ltokyocabinet
 
 ../libbdb_wraper.a: bdb_wraper.o
 	ar rcs $@ $^ 
