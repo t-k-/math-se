@@ -311,15 +311,22 @@ void update_frml_score(const char *map, void *arg)
 	list_foreach(&df->sons, &_change_brw_state, fmva.max_var);
 }
 
+struct _final_score_arg {
+	void *bdb_doc;
+	void *bdb_num;
+};
+
 static
 void _final_score(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
 	char *hash_str = hash2str(df->id);
-	char *doc = bdb_get2(hash_str);
-
-	printf("doc #%s:\n%s\n", hash_str, doc);
+	P_CAST(fsa, struct _final_score_arg, arg);
+	char *doc = bdb_get2(fsa->bdb_doc, hash_str);
+	int  *num = bdb_get_int(fsa->bdb_num, hash_str, DOC_HASH_LEN);
+	printf("doc #%s (brws=%d):\n%s\n", hash_str, *num, doc);
 	free(doc);
+	free(num);
 
 	rlv_tr_print(df);
 
@@ -381,10 +388,12 @@ LIST_IT_CALLBK(_score_main)
 	LIST_GO_OVER;
 }
 
-void mark_cross_score(struct list_it *li_query_brw)
+void mark_cross_score(struct list_it *li_query_brw, void *bdb_doc,
+                      void *bdb_num)
 {
 	struct _score_main_arg sma;
 	const char complete_set[] = "cmplt set";
+	struct _final_score_arg fsa = {bdb_doc, bdb_num};
 	sma.pid = getpid();
 	sma.complete_set = complete_set;
 
@@ -393,7 +402,7 @@ void mark_cross_score(struct list_it *li_query_brw)
 	printf(COLOR_BLUE 
 	       "========= final score =========\n" 
 	       COLOR_RST);
-	redis_set_popeach(complete_set, &_final_score);
+	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
 	redis_del(complete_set);
 }
 
@@ -401,20 +410,28 @@ int main(int argc, char *argv[])
 {
 	struct list_it li_query_brw; 
 	char *query = argv[1];
+	void *bdb_doc, *bdb_num;
 
 	if (argc != 2) {
 		printf("invalid argument format.\n");
 		return 1;
 	}
 
-	if (bdb_init("./collection/documents.bdb")) {
-		printf("tcbdb open error.\n");
+	bdb_doc = bdb_init("./collection/documents.bdb");
+	if (NULL == bdb_doc) {
+		printf("tcbdb doc open error.\n");
 		return 2;
+	}
+	
+	bdb_num = bdb_init("./collection/brw-number.bdb");
+	if (NULL == bdb_num) {
+		printf("tcbdb num open error.\n");
+		return 3;
 	}
 
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT)) {
 		printf("redis server is down.\n");
-		return 3;
+		return 4;
 	}
 
 	if (0 == strcmp(query, "#flush")) {
@@ -436,11 +453,11 @@ int main(int argc, char *argv[])
 	list_foreach(&li_query_brw, &print, NULL);
 	printf(COLOR_RST);
 
-	mark_cross_score(&li_query_brw);
+	mark_cross_score(&li_query_brw, bdb_doc, bdb_num);
 
 	li_brw_release(&li_query_brw);
 	redis_cli_free();
-	bdb_records();
-
+	bdb_release(bdb_doc);
+	bdb_release(bdb_num);
 	return 0;
 }

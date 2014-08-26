@@ -5,9 +5,11 @@ import ctypes
 # init DBM
 so = ctypes.CDLL("./libbdb_wraper.so") 
 os.system("mkdir -p ./collection")
-so.bdb_init("./collection/documents.bdb")
-so.bdb_get2.restype = ctypes.c_char_p
-old_records = so.bdb_records()
+bdb_doc = so.bdb_init("./collection/documents.bdb")
+bdb_num = so.bdb_init("./collection/brw-number.bdb")
+
+old_records = so.bdb_records(bdb_doc)
+DOC_HASH_LEN = 40
 
 f = open('parser.output', 'r')
 url = f.readline()
@@ -36,8 +38,13 @@ while True:
 	print '\n[ ======= record ======= ]' 
 	print "formula %s (%s)" % (formula, doc_sha1)
 	print doc
-	old_doc = so.bdb_get2(doc_sha1)
-	so.bdb_free_last()
+	p = so.bdb_get2(bdb_doc, doc_sha1)
+	if p:
+		old_doc = ctypes.string_at(p)
+	else:
+		old_doc = None 
+	so.c_free(p)
+	
 	if old_doc:
 		print 'same sha-1 key exists, skip...'
 		print '[ old document: ]\n%s' % old_doc
@@ -46,7 +53,7 @@ while True:
 			if not line or line == "\n":
 				break
 	else:
-		so.bdb_put2(doc_sha1, doc)
+		so.bdb_put2(bdb_doc, doc_sha1, doc)
 		# get the branch words and save them
 		brw_num = 0
 		while True:
@@ -72,8 +79,11 @@ while True:
 			line_fmt = brword_sha1 + ' ' + doc_sha1 + ' ' + brword 
 			posting.write(line_fmt + '\n')
 			posting.close()
+		print '[brws = ' + str(brw_num) + ']'
+		so.bdb_put_int(bdb_num, doc_sha1, DOC_HASH_LEN, brw_num)
 
 f.close()
-delta_records = so.bdb_records() - old_records
+delta_records = so.bdb_records(bdb_doc) - old_records
 print "[ %s new records in DB. ]" % delta_records
-so.bdb_release()
+so.bdb_release(bdb_doc)
+so.bdb_release(bdb_num)

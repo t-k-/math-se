@@ -81,6 +81,23 @@ void redis_set_popeach(const char *set, retstr_callbk fun)
 	freeReplyObject(r);
 }
 
+void redis_set_popeach_ext(const char *set, retstr_callbk fun, 
+                           void *arg)
+{
+	redisReply *r;
+	while (1) {
+		r = redisCommand(redis_cntxt, "spop %s", set);
+		if (r->type == REDIS_REPLY_NIL) {
+			break;
+		}
+
+		fun(r->str, arg);
+		freeReplyObject(r);
+	}
+
+	freeReplyObject(r);
+}
+
 void redis_set_members(const char *set, retstr_callbk fun)
 {
 	size_t i;

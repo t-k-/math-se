@@ -52,6 +52,8 @@ int redis_set_printall(const char*);
 
 void redis_set_popeach(const char*, retstr_callbk);
 
+void redis_set_popeach_ext(const char*, retstr_callbk, void*);
+
 void redis_set_members(const char*, retstr_callbk);
 
 struct doc_frml *redis_frml_map_get(const char*);

@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 void *bdb_init(const char*); 
 
 uint64_t bdb_records(void*);
