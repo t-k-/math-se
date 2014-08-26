@@ -14,7 +14,6 @@ struct doc_frml {
 };
 
 struct doc_var {
-	struct doc_frml *doc_fthr;
 	struct list_it sons;
 	struct list_node ln;
 	char vname[VAR_NAME_MAX_LEN];
@@ -28,7 +27,6 @@ enum brw_state {
 };
 
 struct doc_brw {
-	struct doc_var *var_fthr;
 	struct list_node ln;
 	uint *weight;
 	float score;
@@ -69,14 +67,14 @@ struct doc_brw *rlv_tr_insert(struct doc_frml*, char*, char*,
                               uint*);
 
 struct doc_brw *rlv_tr_qk_insert(struct doc_var*, 
-                                 struct doc_frml*, 
-                                 char*, char*, uint*);
+                                 struct doc_frml*, char*, 
+                                 char*, uint*, char **);
 
 void rlv_tr_print(struct doc_frml*);
 
 void rlv_tr_free(struct doc_frml*);
 
-struct doc_brw *rlv_process_str(const char*, const char*);
+struct doc_brw *rlv_process_str(const char*, char**, const char*);
 
 void print_weight(uint*);
 

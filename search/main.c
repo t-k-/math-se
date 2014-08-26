@@ -3,9 +3,48 @@
 #include "rlv_tr.h"
 #include "bdb_wraper.h"
 
-float score(struct query_brw *a, struct doc_brw *b)
+float main_score(struct query_brw *a, 
+                 struct doc_brw *b, char *b_name)
 {
-	return 0.99f;
+	uint i;
+	float d_n, q_n, m, bin, d_l, q_l;
+#ifdef 0
+	printf("score(query brw: ");
+	printf("[%s] ", a->vname);
+	print_weight(a->weight);
+
+	printf(", doc brw: ");
+	printf("[%s] ", b_name);
+	print_weight(b->weight);
+	printf(") = ?\n");
+#endif
+
+	q_n = a->weight[0];
+	d_n = b->weight[0];
+
+	for (m = 0.f, i = 1; 
+	     a->weight[i] || b->weight[i]; i++) {
+		if (a->weight[i] == b->weight[i])
+			m += 1.f;
+		else 
+			break;
+	}
+
+	for (q_l = 0.f, i = 0; a->weight[i]; i++)
+		q_l += 1.f;
+
+	for (d_l = 0.f, i = 0; b->weight[i]; i++)
+		d_l += 1.f;
+
+	bin = (0 == strcmp(a->vname, b_name)) ? 1.f : 0.f;
+
+#ifdef 0
+	printf("dn=%f, qn=%f, m=%f, bin=%f, dl=%f, ql=%f.\n",
+	       d_n, q_n, m, bin, d_l, q_l);
+#endif
+
+	return (min(d_n, q_n) / q_n) * 
+	       ((m + bin + 1.f) / (max(d_l, q_l) + 2.f));
 }
 
 static
@@ -90,6 +129,7 @@ void search_open(const char *path, void *arg)
 	struct doc_brw *map_brw;
 	P_CAST(soa, struct _search_open_arg, arg);
 	FILE *f = fopen(path, "r");
+	char *pvname;
 
 	if (f == NULL)
 		return;
@@ -101,13 +141,15 @@ void search_open(const char *path, void *arg)
 		if (c) 
 			*c = '\0';
 
-		map_brw = rlv_process_str(line, soa->ret_set_name);
+		map_brw = rlv_process_str(line, &pvname, 
+		                          soa->ret_set_name);
 
 		if (map_brw->state == bs_unmark) {
 			printf("one match-and-score brw: #%s\n", 
 			       hash2str(map_brw->id));
 			soa->ret_search_flag = 1;
-			map_brw->score = score(soa->a, map_brw);
+			map_brw->score = main_score(soa->a, 
+			                            map_brw, pvname);
 		}
 	}
 	fclose(f);

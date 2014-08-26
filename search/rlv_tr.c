@@ -181,20 +181,20 @@ struct doc_brw *rlv_tr_test(struct doc_frml *df, char *vname,
 	struct _var_find_arg vfa = {vname, NULL};
 	struct _brw_find_arg bfa;
 	list_foreach(&df->sons, &_var_find, &vfa);
-	*into_var = NULL;
 
 	if (vfa.var) {
+		*into_var = vfa.var;
+
 		bfa.found = NULL;
 		bfa.brw_id = brw_id;
 		list_foreach(&vfa.var->sons, &_brw_find, &bfa);
 
-		if (bfa.found) { 
+		if (bfa.found)
 			return bfa.found;
-		} else {
-			*into_var = vfa.var;
+		else
 			return NULL;
-		}
 	} else {
+		*into_var = NULL;
 		return NULL;
 	}
 }
@@ -220,7 +220,6 @@ static
 struct doc_var *new_var_to_df(char *vname, struct doc_frml *df)
 {
 	struct doc_var *var = malloc(sizeof(struct doc_var));
-	var->doc_fthr = df;
 	LIST_CONS(var->sons);
 	LIST_NODE_CONS(var->ln);
 	strcpy(var->vname, vname);
@@ -235,7 +234,6 @@ struct doc_brw *new_brw_to_var(char *brw_id, uint *weight,
                                struct doc_var *var)
 {
 	struct doc_brw *new_brw = malloc(sizeof(struct doc_brw));
-	new_brw->var_fthr = var;
 	LIST_NODE_CONS(new_brw->ln);
 	strcpy(new_brw->id, brw_id);
 	new_brw->weight = malloc(sizeof(uint) * brwsize(weight));
@@ -265,7 +263,8 @@ struct doc_brw *rlv_tr_insert(struct doc_frml *df, char *vname,
 
 struct doc_brw *rlv_tr_qk_insert(struct doc_var *into_var, 
                                  struct doc_frml *df, char *vname, 
-                                 char *brw_id, uint *weight)
+                                 char *brw_id, uint *weight,
+                                 char **pvname)
 {
 	struct doc_var *var;
 
@@ -273,7 +272,8 @@ struct doc_brw *rlv_tr_qk_insert(struct doc_var *into_var,
 		var = new_var_to_df(vname, df);
 	else
 		var = into_var;
-
+	
+	*pvname = var->vname;
 	return new_brw_to_var(brw_id, weight, var);
 }
 
@@ -365,6 +365,7 @@ void rlv_tr_free(struct doc_frml *df)
 }
 
 struct doc_brw *rlv_process_str(const char *str, 
+                                char **pvname,
                                 const char *ret_set)
 {
 	char brw_id[DOC_HASH_LEN];
@@ -419,8 +420,9 @@ struct doc_brw *rlv_process_str(const char *str,
 	if (NULL == map_brw) {
 		weight[i - 3] = 0;
 		return rlv_tr_qk_insert(into_var, df, vname,
-		                        brw_id, weight);
+		                        brw_id, weight, pvname);
 	} else {
+		*pvname = into_var->vname;
 		return map_brw;
 	}
 }
