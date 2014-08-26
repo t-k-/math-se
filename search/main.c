@@ -8,7 +8,7 @@ float main_score(struct query_brw *a,
 {
 	uint i;
 	float d_n, q_n, m, bin, d_l, q_l;
-#ifdef 0
+#if 0
 	printf("score(query brw: ");
 	printf("[%s] ", a->vname);
 	print_weight(a->weight);
@@ -38,7 +38,7 @@ float main_score(struct query_brw *a,
 
 	bin = (0 == strcmp(a->vname, b_name)) ? 1.f : 0.f;
 
-#ifdef 0
+#if 0
 	printf("dn=%f, qn=%f, m=%f, bin=%f, dl=%f, ql=%f.\n",
 	       d_n, q_n, m, bin, d_l, q_l);
 #endif
