@@ -1,28 +1,25 @@
 #include <tcutil.h>
 #include <tcbdb.h>
 
-TCBDB *bdb = NULL;
-char  *last = NULL;
-
-int bdb_init(const char *name) 
+void *bdb_init(const char *name) 
 {
-	bdb = tcbdbnew();
+	TCBDB *bdb = tcbdbnew();
 	
 	if (!tcbdbopen(bdb, name, BDBOCREAT | BDBOWRITER))
-		return 1;
+		return NULL;
 
-	return 0;
+	return bdb;
 }
 
-uint64_t bdb_records()
+uint64_t bdb_records(void *bdb)
 {
-	return tcbdbrnum(bdb); 
+	return tcbdbrnum((TCBDB*)bdb); 
 }
 
-int bdb_release() 
+int bdb_release(void *bdb) 
 {
-	int res = tcbdbclose(bdb);
-	tcbdbdel(bdb);
+	int res = tcbdbclose((TCBDB*)bdb);
+	tcbdbdel((TCBDB*)bdb);
 
 	if (res)
 		return 0; 
@@ -30,9 +27,14 @@ int bdb_release()
 		return 1;
 }
 
-int bdb_put2(const char *key, const char *value)
+void c_free(void *p) 
 {
-	int res = tcbdbput2(bdb, key, value);
+	free(p);
+}
+
+int bdb_put2(void *bdb, const char *key, const char *value)
+{
+	int res = tcbdbput2((TCBDB*)bdb, key, value);
 
 	if (res)
 		return 0; 
@@ -40,14 +42,23 @@ int bdb_put2(const char *key, const char *value)
 		return 1;
 }
 
-char *bdb_get2(const char *key)
+char *bdb_get2(void *bdb, const char *key)
 {
-	last = tcbdbget2(bdb, key);
-	return last;
+	return tcbdbget2((TCBDB*)bdb, key);
 }
 
-void bdb_free_last()
+int bdb_put_int(void *bdb, const char *key, int ksiz, int value)
 {
-	if (last)
-		free(last);
+	int res = tcbdbput((TCBDB*)bdb, key, ksiz, &value, sizeof(int));
+
+	if (res)
+		return 0; 
+	else
+		return 1;
+}
+
+int *bdb_get_int(void *bdb, const char *key, int ksiz)
+{
+	int ret_sz;
+	return tcbdbget((TCBDB*)bdb, key, ksiz, &ret_sz);
 }
