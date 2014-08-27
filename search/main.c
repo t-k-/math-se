@@ -8,7 +8,7 @@ float main_score(struct query_brw *a,
 {
 	uint i;
 	float d_n, q_n, m, bin, d_l, q_l;
-#if 0
+#if 1
 	printf("score(query brw: ");
 	printf("[%s] ", a->vname);
 	print_weight(a->weight);
@@ -104,6 +104,13 @@ LIST_CMP_CALLBK(_same_name_cmp)
 	                                struct query_brw, ln);
 	struct query_brw *p1 = MEMBER_2_STRUCT(pa_node1, 
 	                                struct query_brw, ln);
+	if (p0->same_name_cnt == p1->same_name_cnt) {
+		if (0 == strcmp(p0->vname, p1->vname))
+			return 1;
+		else 
+			return 0;
+	}
+
 	return p0->same_name_cnt > p1->same_name_cnt;
 }
 

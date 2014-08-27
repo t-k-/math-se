@@ -27,6 +27,45 @@ void free_map_fun(const char *map, void *arg)
 	free(line); \
 	printf("brw %s mapped.\n", map_brw->id)
 
+struct T {
+	int occr;
+	char str[32];
+	struct list_node ln;
+};
+
+static
+LIST_CMP_CALLBK(test_cmp)
+{
+	struct T *p0 = MEMBER_2_STRUCT(pa_node0, struct T, ln);
+	struct T *p1 = MEMBER_2_STRUCT(pa_node1, struct T, ln);
+	if (p0->occr == p1->occr) {
+		if (0 == strcmp(p0->str, p1->str))
+			return 1;
+		else 
+			return 0;
+	}
+
+	return p0->occr > p1->occr;
+}
+
+static
+LIST_IT_CALLBK(print_li)
+{
+	int i;
+	LIST_OBJ(struct T, p, ln);
+	printf("%d, %s\n", p->occr, p->str);
+	LIST_GO_OVER;
+}
+
+LIST_DEF_FREE_FUN(free_my_list, struct T, ln);
+
+#define MY_INSERT(_occr, _str) \
+	new_t = malloc(sizeof(struct T)); \
+	LIST_NODE_CONS(new_t->ln); \
+	new_t->occr = _occr; \
+	strcpy(new_t->str, _str); \
+	list_insert_one_at_tail(&new_t->ln, &li_t, NULL, NULL);
+
 int main(void) 
 {
 	struct doc_frml test_frml, *p;
@@ -34,6 +73,29 @@ int main(void)
 	struct doc_brw *map_brw;
 	char *pvname;
 	uint weight[WEIGHT_MAX_LEN];
+
+	/* test brw_name sort */
+	struct list_it li_t = LIST_NULL;
+	struct T *new_t;
+	struct list_sort_arg lsa;
+	lsa.cmp = &test_cmp;
+
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "a");
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "c");
+	MY_INSERT(2, "two");
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "a");
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "b");
+	MY_INSERT(3, "c");
+	MY_INSERT(3, "d");
+
+	list_sort(&li_t, &lsa);
+	list_foreach(&li_t, &print_li, NULL);
+	free_my_list(&li_t);
 
 	/* init redis client */
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT))
