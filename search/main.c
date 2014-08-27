@@ -48,7 +48,7 @@ float main_score(struct query_brw *a,
 }
 
 static
-LIST_IT_CALLBK(print)
+LIST_IT_CALLBK(_print_query_brw)
 {
 	int i;
 	LIST_OBJ(struct query_brw, p, ln);
@@ -354,7 +354,16 @@ LIST_IT_CALLBK(_score_main)
 	printf(COLOR_RST);
 
 	if (0 == search_and_score(a->dir, a, "result set")) {
-		printf("note 300\n");
+		printf(COLOR_RED 
+		       "no more matching document brword...\n"
+			   COLOR_RST);
+
+		redis_set_union(sma->complete_set, "temp set");
+		redis_set_members("temp set", &update_frml_score);
+		printf(COLOR_RED "after frml update...\n" COLOR_RST);
+		redis_set_popeach("temp set", &print_frml_map);
+		redis_del("temp set");
+
 		return LIST_RET_BREAK;
 	}
 	redis_set_union("temp set", "result set");
@@ -483,7 +492,7 @@ int main(int argc, char *argv[])
 	li_brw_name_sort(&li_query_brw);
 
 	printf(COLOR_CYAN "query brw list:\n");
-	list_foreach(&li_query_brw, &print, NULL);
+	list_foreach(&li_query_brw, &_print_query_brw, NULL);
 	printf(COLOR_RST);
 
 	mark_cross_score(&li_query_brw, bdb_doc, bdb_num,
