@@ -1,62 +1,17 @@
-nourl
-a+1/b
-   └──(+) weight=5, type=add
+no_url
+a+b
+   └──(+) weight=3, type=add
        │──(a) weight=1, type=var
-       └──(/) weight=3, type=frac
-           │──(1) weight=1, type=one
-           └──(b) weight=1, type=var
+       └──(b) weight=1, type=var
 
-./collection/var/add a 1 5 
-./collection/one/frac/add 1 1 3 5 
-./collection/var/frac/add b 1 3 5 
+./collection/var/add a 1 3 
+./collection/var/add b 1 3 
 
-a+1/a
-   └──(+) weight=5, type=add
+a+c
+   └──(+) weight=3, type=add
        │──(a) weight=1, type=var
-       └──(/) weight=3, type=frac
-           │──(1) weight=1, type=one
-           └──(a) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./collection/var/add a 1 5 
-./collection/one/frac/add 1 1 3 5 
-./collection/var/frac/add a 1 3 5 
-
-a+1/b+a
-   └──(+) weight=6, type=add
-       │──(a) weight=2, type=var
-       │──(/) weight=3, type=frac
-       │   │──(1) weight=1, type=one
-       │   └──(b) weight=1, type=var
-       └──(a) weight=1, type=var
-
-./collection/var/add a 2 6 
-./collection/one/frac/add 1 1 3 6 
-./collection/var/frac/add b 1 3 6 
-
-a+1/(b+b)
-   └──(+) weight=7, type=add
-       │──(a) weight=1, type=var
-       └──(/) weight=5, type=frac
-           │──(1) weight=1, type=one
-           └──(+) weight=3, type=add
-               │──(b) weight=2, type=var
-               └──(b) weight=1, type=var
-
-./collection/var/add a 1 7 
-./collection/one/frac/add 1 1 5 7 
-./collection/var/add/frac/add b 2 3 5 7 
-
-1/c + 1/c
-   └──(+) weight=7, type=add
-       │──(/) weight=3, type=frac
-       │   │──(1) weight=1, type=one
-       │   └──(c) weight=1, type=var
-       └──(/) weight=3, type=frac
-           │──(1) weight=1, type=one
-           └──(c) weight=1, type=var
-
-./collection/one/frac/add 1 1 3 7 
-./collection/var/frac/add c 1 3 7 
-./collection/one/frac/add 1 1 3 7 
-./collection/var/frac/add c 1 3 7 
+./collection/var/add a 1 3 
+./collection/var/add c 1 3 
 
