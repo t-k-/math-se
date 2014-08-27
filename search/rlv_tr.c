@@ -1,4 +1,5 @@
 #include "rlv_tr.h"
+#include <inttypes.h>
 
 static redisContext *redis_cntxt;
 
@@ -151,6 +152,39 @@ void redis_del(const char *hash)
 	redisReply *r;
 
 	r = redisCommand(redis_cntxt, "del %s", hash);
+	freeReplyObject(r);
+}
+
+void redis_z_add(const char *set, float score, 
+                 const char *hash)
+{
+	redisReply *r;
+	char score_str[32];
+	sprintf(score_str, "%f", score);
+	r = redisCommand(redis_cntxt, "zadd %s %s %s", 
+	                 set, score_str, hash);
+	freeReplyObject(r);
+}
+
+void redis_z_rrange(const char *set, retstr_callbk fun,
+                    int64_t start, int64_t end, void *arg)
+{
+	size_t i;
+	redisReply *r;
+	char start_str[32];
+	char end_str[32];
+	sprintf(start_str, "%" PRId64, start);
+	sprintf(end_str, "%" PRId64, end);
+	r = redisCommand(redis_cntxt, "zrevrange %s %s %s", 
+	                 set, start_str, end_str);
+	if (r->type == REDIS_REPLY_NIL) {
+		freeReplyObject(r);
+		return;
+	}
+
+	for (i = 0; i < r->elements; i++)
+		fun(r->element[i]->str, arg);
+	
 	freeReplyObject(r);
 }
 

@@ -314,6 +314,8 @@ void update_frml_score(const char *map, void *arg)
 struct _final_score_arg {
 	void *bdb_doc;
 	void *bdb_num;
+	const char *rank_set;
+	uint *rank;
 };
 
 static
@@ -322,16 +324,12 @@ void _final_score(const char *map, void *arg)
 	struct doc_frml *df = redis_frml_map_get(map);
 	char *hash_str = hash2str(df->id);
 	P_CAST(fsa, struct _final_score_arg, arg);
-	char *doc = bdb_get2(fsa->bdb_doc, hash_str);
 	int  *num = bdb_get_int(fsa->bdb_num, hash_str, DOC_HASH_LEN);
-	printf("doc #%s (brws=%d):\n%s\n", hash_str, *num, doc);
-	free(doc);
+	redis_z_add(fsa->rank_set, df->score * 10000.f + 
+	            1.f / (float)(*num),
+	            hash2str(df->id));
+
 	free(num);
-
-	rlv_tr_print(df);
-
-	rlv_tr_free(df);
-	redis_del(map);
 }
 
 struct _score_main_arg {
@@ -388,22 +386,52 @@ LIST_IT_CALLBK(_score_main)
 	LIST_GO_OVER;
 }
 
+static void _print_rank(const char* frml_hash, void *arg)
+{
+	struct doc_frml *df = redis_frml_map_get(frml_hash);
+#if 1
+	P_CAST(fsa, struct _final_score_arg, arg);
+	char *doc = bdb_get2(fsa->bdb_doc, frml_hash);
+	int *num = bdb_get_int(fsa->bdb_num, frml_hash, DOC_HASH_LEN);
+
+	if (*fsa->rank % 2) 
+		printf(COLOR_CYAN);
+	else 
+		printf(COLOR_MAGENTA);
+	printf("< #%d >: \n" COLOR_RST, (*fsa->rank) ++);
+
+	printf("doc #%s (brws=%d):\n%s\n", frml_hash, *num, doc);
+	free(doc);
+	free(num);
+#endif
+	rlv_tr_print(df);
+
+	rlv_tr_free(df);
+	redis_del(frml_hash);
+}
+
 void mark_cross_score(struct list_it *li_query_brw, void *bdb_doc,
-                      void *bdb_num)
+                      void *bdb_num, int64_t start, int64_t end)
 {
 	struct _score_main_arg sma;
 	const char complete_set[] = "cmplt set";
-	struct _final_score_arg fsa = {bdb_doc, bdb_num};
+	const char rank_set[] = "ranking set";
+	uint rank = 1;
+	struct _final_score_arg fsa = {bdb_doc, bdb_num, 
+	                               rank_set, &rank};
 	sma.pid = getpid();
 	sma.complete_set = complete_set;
 
 	list_foreach(li_query_brw, &_score_main, &sma);
 
+	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
+	redis_del(complete_set);
+
 	printf(COLOR_BLUE 
 	       "========= final score =========\n" 
 	       COLOR_RST);
-	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
-	redis_del(complete_set);
+	redis_z_rrange(rank_set, &_print_rank, start, end, &fsa);
+	redis_del(rank_set);
 }
 
 int main(int argc, char *argv[])
@@ -411,6 +439,7 @@ int main(int argc, char *argv[])
 	struct list_it li_query_brw; 
 	char *query = argv[1];
 	void *bdb_doc, *bdb_num;
+	int64_t start = 0, end = -1;
 
 	if (argc != 2) {
 		printf("invalid argument format.\n");
@@ -453,7 +482,8 @@ int main(int argc, char *argv[])
 	list_foreach(&li_query_brw, &print, NULL);
 	printf(COLOR_RST);
 
-	mark_cross_score(&li_query_brw, bdb_doc, bdb_num);
+	mark_cross_score(&li_query_brw, bdb_doc, bdb_num,
+	                 start, end);
 
 	li_brw_release(&li_query_brw);
 	redis_cli_free();

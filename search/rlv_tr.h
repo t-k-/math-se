@@ -60,7 +60,12 @@ struct doc_frml *redis_frml_map_get(const char*);
 
 int redis_frml_map_set(const char*, struct doc_frml*);
 
-void redis_frml_map_del(const char*);
+void redis_del(const char*);
+
+void redis_z_add(const char*, float, const char*);
+
+void redis_z_rrange(const char*, retstr_callbk, 
+                    int64_t, int64_t, void*);
 
 struct doc_brw *rlv_tr_test(struct doc_frml*, char*, char*, 
                             struct doc_var **);

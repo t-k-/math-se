@@ -62,6 +62,25 @@ int main(void)
 	printf("hash-set after pop-out: \n");
 	if (1 == redis_set_printall("hash-set"))
 		printf("empty set.\n");
+
+
+	/* test for redis_z_* */
+	redis_z_add("ranking", 89.9f, "wei");
+	redis_z_add("ranking", 90.f, "yao");
+	redis_z_add("ranking", 91.f, "wanzhu");
+	redis_z_add("ranking", 87.f, "fan");
+	redis_z_add("ranking", 79.2f, "horse");
+	redis_z_add("ranking", 35.2f, "dog");
+	redis_z_add("ranking", 1092.f, "flight");
+	redis_z_add("ranking", 60.f, "deng");
+
+	printf("0 to -1:\n");
+	redis_z_rrange("ranking", &print_fun, 0, -1, NULL);
+	
+	printf("3 to 6:\n");
+	redis_z_rrange("ranking", &print_fun, 3, 6, NULL);
+
+	redis_del("ranking");
 	
 	/* test for redis_frml_* */
 	p = redis_frml_map_get("some_hash");
