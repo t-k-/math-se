@@ -82,6 +82,9 @@ int main(void)
 
 	redis_del("ranking");
 	
+	printf("empty ranking set test:\n");
+	redis_z_rrange("ranking", &print_fun, 3, 6, NULL);
+	
 	/* test for redis_frml_* */
 	p = redis_frml_map_get("some_hash");
 	printf("get null: %p\n", p);
