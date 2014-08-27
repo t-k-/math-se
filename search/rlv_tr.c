@@ -355,10 +355,10 @@ static void print_state(enum brw_state state)
 
 char *hash2str(char *hash)
 {
-	static char buf[BRW_HASH_LEN + 1];
-	strcpy(buf, hash);
-	buf[BRW_HASH_LEN] = '\0';
-	return buf;
+//	static char buf[BRW_HASH_LEN + 1];
+//	strcpy(buf, hash);
+//	buf[BRW_HASH_LEN] = '\0';
+	return hash;
 }
 
 static LIST_IT_CALLBK(_print_brw)

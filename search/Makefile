@@ -12,7 +12,7 @@ test-rlv_tr: rlv_tr.o test-rlv_tr.o
 	gcc $(CFLAGS) $^ -lhiredis -o $@ -lmcheck
 
 $(OUTPUT): main.o rlv_tr.o ../libparser.a ../libbdb_wraper.a
-	gcc $(CFLAGS) $(filter %.o, $^) -o $(OUTPUT) $(DEP_LIB)
+	gcc $(CFLAGS) $(filter %.o, $^) -o $(OUTPUT) $(DEP_LIB) -lmcheck
 
 -include $(wildcard *.d)
 

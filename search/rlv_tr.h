@@ -4,8 +4,8 @@
 #include <hiredis.h>
 #include "mathtree.h"
 
-#define BRW_HASH_LEN 40
-#define DOC_HASH_LEN 40
+#define BRW_HASH_LEN 41
+#define DOC_HASH_LEN 41
 
 struct doc_frml {
 	struct list_it sons;
