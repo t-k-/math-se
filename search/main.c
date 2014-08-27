@@ -497,6 +497,8 @@ int main(int argc, char *argv[])
 
 	mark_cross_score(&li_query_brw, bdb_doc, bdb_num,
 	                 start, end);
+	
+	printf(COLOR_RED "(for query: `%s')\n" COLOR_RST, query);
 
 	li_brw_release(&li_query_brw);
 	redis_cli_free();

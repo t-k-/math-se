@@ -1,11 +1,12 @@
 #!/bin/bash
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $#
 if [ $# -ne 3 ]
 then
 	echo 'bad arg.'
 	exit
 fi
-cd parser
+cd $dir/../parser
 echo $1 >> tmp
 echo $2 >> tmp
 ./parser no_url < tmp
@@ -16,4 +17,5 @@ cd ../index
 rm -rf ../search/collection
 mv collection ../search/
 cd ../search
-./search $3
+echo ./search "$3"
+./search "$3"
