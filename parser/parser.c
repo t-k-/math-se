@@ -18,7 +18,8 @@ char *to_scan_str(char *str, size_t *res_str_sz)
 	return str0;
 }
 
-struct list_it tex2brwords(char *str) 
+struct list_it tex2brwords(char *str, 
+                           struct token_t **tr_root)
 {
 	struct list_it ret;
 	char *str0;
@@ -30,7 +31,7 @@ struct list_it tex2brwords(char *str)
 
 	yyparse();
 	ret = matree_ls_brw(root);
-	matree_release(root); 
+	*tr_root = root;
 
 	yy_delete_buffer(buffer);
 	free(str0);

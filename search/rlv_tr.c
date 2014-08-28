@@ -222,6 +222,54 @@ int brw_id_cmp(char *dest, char *src)
 	return 0;
 }
 
+void print_weight(uint *weight)
+{
+	uint i;
+	for (i = 0; weight[i]; i++) {
+		printf("%d-", weight[i]);
+	}
+}
+
+static void print_state(enum brw_state state)
+{
+	switch(state) {
+	case bs_unmark:
+		printf(COLOR_GREEN "unmarked" COLOR_RST);
+		break;
+	case bs_mark:
+		printf(COLOR_RED "marked" COLOR_RST);
+		break;
+	case bs_cross:
+		printf(COLOR_GRAY "crossed" COLOR_RST);
+		break;
+	default:
+		printf("unknown");
+	}
+}
+
+char *hash2str(const char *hash)
+{
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf;
+}
+
+char *short_hash(const char *hash)
+{
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf + 32;
+}
+
+void print_query_brw(struct query_brw *qbrw)
+{
+	printf("%s ", qbrw->dir);
+	printf("%s ", qbrw->vname);
+	print_weight(qbrw->weight);
+}
+
 struct _var_find_arg {
 	char *vname;
 	struct doc_var *var;
@@ -343,47 +391,6 @@ struct doc_brw *rlv_tr_qk_insert(struct doc_var *into_var,
 	
 	*pvname = var->vname;
 	return new_brw_to_var(brw_id, weight, var);
-}
-
-void print_weight(uint *weight)
-{
-	uint i;
-	for (i = 0; weight[i]; i++) {
-		printf("%d-", weight[i]);
-	}
-}
-
-static void print_state(enum brw_state state)
-{
-	switch(state) {
-	case bs_unmark:
-		printf(COLOR_GREEN "unmarked" COLOR_RST);
-		break;
-	case bs_mark:
-		printf(COLOR_RED "marked" COLOR_RST);
-		break;
-	case bs_cross:
-		printf(COLOR_GRAY "crossed" COLOR_RST);
-		break;
-	default:
-		printf("unknown");
-	}
-}
-
-char *hash2str(const char *hash)
-{
-	static char buf[BRW_HASH_LEN + 1];
-	strcpy(buf, hash);
-	buf[BRW_HASH_LEN] = '\0';
-	return buf;
-}
-
-char *short_hash(const char *hash)
-{
-	static char buf[BRW_HASH_LEN + 1];
-	strcpy(buf, hash);
-	buf[BRW_HASH_LEN] = '\0';
-	return buf + 32;
 }
 
 static LIST_IT_CALLBK(_print_brw)

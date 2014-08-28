@@ -17,5 +17,5 @@ cd ../index
 rm -rf ../search/collection
 mv collection ../search/
 cd ../search
-echo ./search "$3"
+echo ./search "'$3'"
 ./search "$3"

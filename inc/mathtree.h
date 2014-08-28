@@ -73,6 +73,6 @@ struct list_it matree_ls_brw(struct token_t*);
 
 extern struct token_t *root;
 
-struct list_it tex2brwords(char*); 
+struct list_it tex2brwords(char*, struct token_t **); 
 
 void li_brw_release(struct list_it*);

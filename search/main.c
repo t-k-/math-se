@@ -8,7 +8,7 @@ float main_score(struct query_brw *a,
 {
 	uint i;
 	float d_n, q_n, m, bin, d_l, q_l;
-#if 1
+#if 0
 	printf("score(query brw: ");
 	printf("[%s] ", a->vname);
 	print_weight(a->weight);
@@ -53,13 +53,7 @@ LIST_IT_CALLBK(_print_query_brw)
 	int i;
 	LIST_OBJ(struct query_brw, p, ln);
 	printf("(sort key: %d) ", p->same_name_cnt);
-	printf("%s ", p->dir);
-	printf("%s ", p->vname);
-	for (i = 0;; i++) {
-		if (p->weight[i] == 0)
-			break;
-		printf("%d ", p->weight[i]);
-	}
+	print_query_brw(p);
 	printf("\n");
 	LIST_GO_OVER;
 }
@@ -124,8 +118,8 @@ void li_brw_name_sort(struct list_it *li)
 }
 
 struct _search_open_arg {
-	int         ret_search_flag;
-	struct query_brw *a;
+	int if_any_match;
+	struct query_brw *qbrw;
 	const char *ret_set_name;
 };
 
@@ -141,8 +135,6 @@ void search_open(const char *path, void *arg)
 	if (f == NULL)
 		return;
 	
-	printf("path: %s\n", path);
-	
 	while (fgets(line, sizeof(line), f)) {
 		c = strchr(line, '\n');
 		if (c) 
@@ -152,10 +144,11 @@ void search_open(const char *path, void *arg)
 		                          soa->ret_set_name);
 
 		if (map_brw->state == bs_unmark) {
-			printf("one match-and-score brw: #%s\n", 
+			soa->if_any_match = 1;
+
+			printf("matching doc brw: #%s\n",
 			       short_hash(map_brw->id));
-			soa->ret_search_flag = 1;
-			map_brw->score = main_score(soa->a, 
+			map_brw->score = main_score(soa->qbrw, 
 			                            map_brw, pvname);
 		}
 	}
@@ -200,12 +193,12 @@ int search_dir(const char *path, const char *fname,
 }
 
 static
-int search_and_score(const char *dir, struct query_brw *a, 
+int search_and_score(const char *dir, struct query_brw *qbrw, 
                      const char *ret_set)
 {
-	struct _search_open_arg soa = {0, a, ret_set};
+	struct _search_open_arg soa = {0, qbrw, ret_set};
 	search_dir(dir, "posting", &search_open, &soa);
-	return soa.ret_search_flag;
+	return soa.if_any_match;
 }
 
 static 
@@ -354,32 +347,25 @@ LIST_IT_CALLBK(_score_main)
 	LIST_OBJ(struct query_brw, a, ln);
 
 	printf(COLOR_MAGENTA "for query brw: ");
-	printf("%s ", a->vname);
-	print_weight(a->weight);
-	printf(" @ %s\n", a->dir);
-	printf("matching:\n");
+	print_query_brw(a);
+	printf(":\n");
 	printf(COLOR_RST);
 
-	if (0 == search_and_score(a->dir, a, "result set")) {
-		printf(COLOR_RED 
-		       "no more matching document brword...\n"
-			   COLOR_RST);
-
-		redis_set_union(sma->complete_set, "temp set");
-		redis_set_members("temp set", &update_frml_score);
-		printf(COLOR_RED "after frml update...\n" COLOR_RST);
-		redis_set_popeach("temp set", &print_frml_map);
-		redis_del("temp set");
-
-		return LIST_RET_BREAK;
+	if (search_and_score(a->dir, a, "result set")) {
+		redis_set_union("temp set", "result set");
+		printf(COLOR_GREEN 
+		       "before variable score update:\n" 
+		       COLOR_RST);
+		redis_set_members("result set", &print_frml_map);
+		redis_set_members("result set", &update_var_score);
+		printf(COLOR_GREEN 
+		       "after variable score update:\n" 
+		       COLOR_RST);
+		redis_set_popeach("result set", &print_frml_map);
+		redis_del("result set");
+	} else {
+		printf(COLOR_GREEN "matching none.\n" COLOR_RST);
 	}
-	redis_set_union("temp set", "result set");
-	printf(COLOR_GREEN "before var update:\n" COLOR_RST);
-	redis_set_members("result set", &print_frml_map);
-	redis_set_members("result set", &update_var_score);
-	printf(COLOR_GREEN "after var update:\n" COLOR_RST);
-	redis_set_popeach("result set", &print_frml_map);
-	redis_del("result set");
 
 	stage_flag = 0;
 	if (pa_now->now == pa_head->last) {
@@ -394,7 +380,9 @@ LIST_IT_CALLBK(_score_main)
 	if (stage_flag) {
 		redis_set_union(sma->complete_set, "temp set");
 		redis_set_members("temp set", &update_frml_score);
-		printf(COLOR_RED "after frml update...\n" COLOR_RST);
+		printf(COLOR_GREEN 
+		       "after formula score update...\n" 
+		       COLOR_RST);
 		redis_set_popeach("temp set", &print_frml_map);
 		redis_del("temp set");
 	}
@@ -411,12 +399,7 @@ static void _print_rank(const char* frml_hash, void *arg)
 	int *num = bdb_get_int(fsa->bdb_num, frml_hash, 
 	                       DOC_HASH_LEN);
 
-	if (*fsa->rank % 2) 
-		printf(COLOR_CYAN);
-	else 
-		printf(COLOR_MAGENTA);
-	printf("< #%d >: \n" COLOR_RST, (*fsa->rank) ++);
-
+	printf(COLOR_BLUE "< #%d >: \n" COLOR_RST, (*fsa->rank) ++);
 	printf("doc #%s (brws=%d):\n%s\n", 
 	       short_hash(frml_hash), *num, doc);
 	free(doc);
@@ -445,9 +428,7 @@ void mark_cross_score(struct list_it *li_query_brw, void *bdb_doc,
 	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
 	redis_del(complete_set);
 
-	printf(COLOR_BLUE 
-	       "========= final score =========\n" 
-	       COLOR_RST);
+	printf(COLOR_BLUE "final score:\n" COLOR_RST);
 	redis_z_rrange(rank_set, &_print_rank, start, end, &fsa);
 	redis_del(rank_set);
 }
@@ -457,6 +438,7 @@ int main(int argc, char *argv[])
 	struct list_it li_query_brw; 
 	char *query = argv[1];
 	void *bdb_doc, *bdb_num;
+	struct token_t *query_tr;
 	int64_t start = 0, end = -1;
 
 	if (argc != 2) {
@@ -497,17 +479,20 @@ int main(int argc, char *argv[])
 
 	printf("query: %s\n", query);
 
-	li_query_brw = tex2brwords(query);
+	li_query_brw = tex2brwords(query, &query_tr);
+	matree_print(query_tr, stdout);
+	matree_release(root); 
+
 	li_brw_name_sort(&li_query_brw);
 
-	printf(COLOR_CYAN "query brw list:\n");
+	printf(COLOR_CYAN "query brword sorted list:\n");
 	list_foreach(&li_query_brw, &_print_query_brw, NULL);
 	printf(COLOR_RST);
 
 	mark_cross_score(&li_query_brw, bdb_doc, bdb_num,
 	                 start, end);
 	
-	printf(COLOR_RED "(for query: `%s')\n" COLOR_RST, query);
+	printf(COLOR_BLUE "(query: `%s')\n" COLOR_RST, query);
 
 	li_brw_release(&li_query_brw);
 	redis_cli_free();
