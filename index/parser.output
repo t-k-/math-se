@@ -1,49 +1,21 @@
 no_url
-a^3+a^2+b+c^2
-   └──(+) weight=14, type=add
-       │──([) weight=4, type=sus
-       │   │──(^) weight=2, type=sups
-       │   │   └──(3) weight=1, type=const
-       │   └──(a) weight=1, type=var
-       │──([) weight=4, type=sus
-       │   │──(^) weight=2, type=sups
-       │   │   └──(2) weight=1, type=const
-       │   └──(a) weight=1, type=var
+a+b+c
+   └──(+) weight=4, type=add
+       │──(a) weight=1, type=var
        │──(b) weight=1, type=var
-       └──([) weight=4, type=sus
-           │──(^) weight=2, type=sups
-           │   └──(2) weight=1, type=const
-           └──(c) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./collection/const/sups/sus/add 3 1 2 4 14 
-./collection/var/sus/add a 1 4 14 
-./collection/const/sups/sus/add 2 1 2 4 14 
-./collection/var/sus/add a 1 4 14 
-./collection/var/add b 1 14 
-./collection/const/sups/sus/add 2 1 2 4 14 
-./collection/var/sus/add c 1 4 14 
+./collection/var/add a 1 4 
+./collection/var/add b 1 4 
+./collection/var/add c 1 4 
 
-a^3+b^2+c+y^2
-   └──(+) weight=14, type=add
-       │──([) weight=4, type=sus
-       │   │──(^) weight=2, type=sups
-       │   │   └──(3) weight=1, type=const
-       │   └──(a) weight=1, type=var
-       │──([) weight=4, type=sus
-       │   │──(^) weight=2, type=sups
-       │   │   └──(2) weight=1, type=const
-       │   └──(b) weight=1, type=var
-       │──(c) weight=1, type=var
-       └──([) weight=4, type=sus
-           │──(^) weight=2, type=sups
-           │   └──(2) weight=1, type=const
-           └──(y) weight=1, type=var
+x+y+z
+   └──(+) weight=4, type=add
+       │──(x) weight=1, type=var
+       │──(y) weight=1, type=var
+       └──(z) weight=1, type=var
 
-./collection/const/sups/sus/add 3 1 2 4 14 
-./collection/var/sus/add a 1 4 14 
-./collection/const/sups/sus/add 2 1 2 4 14 
-./collection/var/sus/add b 1 4 14 
-./collection/var/add c 1 14 
-./collection/const/sups/sus/add 2 1 2 4 14 
-./collection/var/sus/add y 1 4 14 
+./collection/var/add x 1 4 
+./collection/var/add y 1 4 
+./collection/var/add z 1 4 
 
