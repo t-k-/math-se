@@ -153,7 +153,7 @@ void search_open(const char *path, void *arg)
 
 		if (map_brw->state == bs_unmark) {
 			printf("one match-and-score brw: #%s\n", 
-			       hash2str(map_brw->id));
+			       short_hash(map_brw->id));
 			soa->ret_search_flag = 1;
 			map_brw->score = main_score(soa->a, 
 			                            map_brw, pvname);
@@ -329,10 +329,9 @@ static
 void _final_score(const char *map, void *arg)
 {
 	struct doc_frml *df = redis_frml_map_get(map);
-	char *hash_str = hash2str(df->id);
 	P_CAST(fsa, struct _final_score_arg, arg);
-	int  *num = bdb_get_int(fsa->bdb_num, hash_str, 
-	                        DOC_HASH_LEN - 1);
+	int  *num = bdb_get_int(fsa->bdb_num, df->id, 
+	                        DOC_HASH_LEN);
 	redis_z_add(fsa->rank_set, df->score * 10000.f + 
 	            1.f / (float)(*num),
 	            hash2str(df->id));
@@ -410,7 +409,7 @@ static void _print_rank(const char* frml_hash, void *arg)
 	P_CAST(fsa, struct _final_score_arg, arg);
 	char *doc = bdb_get2(fsa->bdb_doc, frml_hash);
 	int *num = bdb_get_int(fsa->bdb_num, frml_hash, 
-	                       DOC_HASH_LEN-1);
+	                       DOC_HASH_LEN);
 
 	if (*fsa->rank % 2) 
 		printf(COLOR_CYAN);
@@ -418,7 +417,8 @@ static void _print_rank(const char* frml_hash, void *arg)
 		printf(COLOR_MAGENTA);
 	printf("< #%d >: \n" COLOR_RST, (*fsa->rank) ++);
 
-	printf("doc #%s (brws=%d):\n%s\n", frml_hash, *num, doc);
+	printf("doc #%s (brws=%d):\n%s\n", 
+	       short_hash(frml_hash), *num, doc);
 	free(doc);
 	free(num);
 #endif

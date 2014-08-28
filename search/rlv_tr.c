@@ -188,6 +188,40 @@ void redis_z_rrange(const char *set, retstr_callbk fun,
 	freeReplyObject(r);
 }
 
+
+uint brwsize(uint *weight)
+{
+	uint i, cnt = 0;
+	for (i = 0; weight[i]; i++) {
+		cnt ++;
+	}
+	return ++cnt;
+}
+
+void brwcpy(uint *w_dst, uint *w_src)
+{
+	uint i;
+	for (i = 0; w_src[i]; i++)
+		w_dst[i] = w_src[i];
+	w_dst[i] = 0;
+}
+
+void brw_id_cpy(char *dest, char *src)
+{
+	uint i;
+	for (i = 0; i < BRW_HASH_LEN; i++)
+		dest[i] = src[i];
+}
+
+int brw_id_cmp(char *dest, char *src)
+{
+	uint i;
+	for (i = 0; i < BRW_HASH_LEN; i++)
+		if (dest[i] != src[i])
+			return 1;
+	return 0;
+}
+
 struct _var_find_arg {
 	char *vname;
 	struct doc_var *var;
@@ -218,7 +252,7 @@ LIST_IT_CALLBK(_brw_find)
 	LIST_OBJ(struct doc_brw, brw, ln);
 	P_CAST(bfa, struct _brw_find_arg, pa_extra);
 
-	if (0 == strcmp(brw->id, bfa->brw_id)) {
+	if (0 == brw_id_cmp(brw->id, bfa->brw_id)) {
 		bfa->found = brw;
 		return LIST_RET_BREAK;
 	}
@@ -250,23 +284,6 @@ struct doc_brw *rlv_tr_test(struct doc_frml *df, char *vname,
 	}
 }
 
-uint brwsize(uint *weight)
-{
-	uint i, cnt = 0;
-	for (i = 0; weight[i]; i++) {
-		cnt ++;
-	}
-	return ++cnt;
-}
-
-void brwcpy(uint *w_dst, uint *w_src)
-{
-	uint i;
-	for (i = 0; w_src[i]; i++)
-		w_dst[i] = w_src[i];
-	w_dst[i] = 0;
-}
-
 static 
 struct doc_var *new_var_to_df(char *vname, struct doc_frml *df)
 {
@@ -286,7 +303,7 @@ struct doc_brw *new_brw_to_var(char *brw_id, uint *weight,
 {
 	struct doc_brw *new_brw = malloc(sizeof(struct doc_brw));
 	LIST_NODE_CONS(new_brw->ln);
-	strcpy(new_brw->id, brw_id);
+	brw_id_cpy(new_brw->id, brw_id);
 	new_brw->weight = malloc(sizeof(uint) * brwsize(weight));
 	brwcpy(new_brw->weight, weight);
 	new_brw->score = 0.f;
@@ -340,31 +357,40 @@ static void print_state(enum brw_state state)
 {
 	switch(state) {
 	case bs_unmark:
-		printf("unmarked");
+		printf(COLOR_GREEN "unmarked" COLOR_RST);
 		break;
 	case bs_mark:
-		printf("marked");
+		printf(COLOR_RED "marked" COLOR_RST);
 		break;
 	case bs_cross:
-		printf("crossed");
+		printf(COLOR_GRAY "crossed" COLOR_RST);
 		break;
 	default:
 		printf("unknown");
 	}
 }
 
-char *hash2str(char *hash)
+char *hash2str(const char *hash)
 {
-//	static char buf[BRW_HASH_LEN + 1];
-//	strcpy(buf, hash);
-//	buf[BRW_HASH_LEN] = '\0';
-	return hash;
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf;
+}
+
+char *short_hash(const char *hash)
+{
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf + 32;
 }
 
 static LIST_IT_CALLBK(_print_brw)
 {
 	LIST_OBJ(struct doc_brw, brw, ln);
-	printf("\t\tbrw #%s [%f] ", hash2str(brw->id), brw->score);
+	printf("\t\tbrw #%s [%g] ", short_hash(brw->id), 
+	       brw->score);
 	print_weight(brw->weight);
 	printf(" (");
 	print_state(brw->state);
@@ -376,7 +402,7 @@ static LIST_IT_CALLBK(_print_brw)
 static LIST_IT_CALLBK(_print_frml)
 {
 	LIST_OBJ(struct doc_var, v, ln);
-	printf("\tvar `%s' [%f]\n", v->vname, v->score);
+	printf("\tvar `%s' [%g]\n", v->vname, v->score);
 	list_foreach(&v->sons, _print_brw, NULL);
 	
 	LIST_GO_OVER;
@@ -384,7 +410,8 @@ static LIST_IT_CALLBK(_print_frml)
 
 void rlv_tr_print(struct doc_frml *df)
 {
-	printf("formula #%s [%f]\n", hash2str(df->id), df->score);
+	printf("formula #%s [%g]\n", short_hash(df->id), 
+	       df->score);
 	list_foreach(&df->sons, _print_frml, NULL);
 }
 
@@ -419,7 +446,7 @@ struct doc_brw *rlv_process_str(const char *str,
                                 char **pvname,
                                 const char *ret_set)
 {
-	char brw_id[DOC_HASH_LEN];
+	char brw_id[DOC_HASH_LEN + 1];
 	char vname[VAR_NAME_MAX_LEN];
 	uint weight[WEIGHT_MAX_LEN];
 	struct doc_frml *df;
@@ -441,7 +468,7 @@ struct doc_brw *rlv_process_str(const char *str,
 				if (!df) {
 					df = malloc(sizeof(struct doc_frml));
 					LIST_CONS(df->sons);
-					strcpy(df->id, field);
+					brw_id_cpy(df->id, field);
 					df->score = 0.f;
 
 					redis_frml_map_set(field, df);

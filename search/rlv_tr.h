@@ -4,8 +4,8 @@
 #include <hiredis.h>
 #include "mathtree.h"
 
-#define BRW_HASH_LEN 41
-#define DOC_HASH_LEN 41
+#define BRW_HASH_LEN 40
+#define DOC_HASH_LEN 40
 
 struct doc_frml {
 	struct list_it sons;
@@ -85,4 +85,6 @@ struct doc_brw *rlv_process_str(const char*, char**, const char*);
 
 void print_weight(uint*);
 
-char *hash2str(char*);
+char *hash2str(const char*);
+
+char *short_hash(const char*);

@@ -41,3 +41,4 @@ static __inline int min(int a, int b)
 #define COLOR_BLUE    "\033[1m\033[34m"      /* Bold Blue */
 #define COLOR_MAGENTA "\033[1m\033[35m"      /* Bold Magenta */
 #define COLOR_CYAN    "\033[1m\033[36m"      /* Bold Cyan */
+#define COLOR_GRAY    "\033[1m\033[30m"      /* Bold Gray */
