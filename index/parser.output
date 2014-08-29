@@ -1,23 +1,23 @@
 no_url
-a+1/a
+a+2/a
    └──(+) weight=5, type=add
        │──(a) weight=1, type=var
        └──(/) weight=3, type=frac
-           │──(1) weight=1, type=one
+           │──(2) weight=1, type=const
            └──(a) weight=1, type=var
 
 ./collection/var/add a 1 5 
-./collection/one/frac/add 1 1 3 5 
+./collection/const/frac/add 2 1 3 5 
 ./collection/var/frac/add a 1 3 5 
 
-a+1/b
+a+3/b
    └──(+) weight=5, type=add
        │──(a) weight=1, type=var
        └──(/) weight=3, type=frac
-           │──(1) weight=1, type=one
+           │──(3) weight=1, type=const
            └──(b) weight=1, type=var
 
 ./collection/var/add a 1 5 
-./collection/one/frac/add 1 1 3 5 
+./collection/const/frac/add 3 1 3 5 
 ./collection/var/frac/add b 1 3 5 
 

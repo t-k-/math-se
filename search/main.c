@@ -325,6 +325,7 @@ void _final_score(const char *map, void *arg)
 	P_CAST(fsa, struct _final_score_arg, arg);
 	int  *num = bdb_get_int(fsa->bdb_num, df->id, 
 	                        DOC_HASH_LEN);
+	df->score = df->score * 10000.f + 1.f / (float)(*num);
 	redis_z_add(fsa->rank_set, df->score * 10000.f + 
 	            1.f / (float)(*num),
 	            hash2str(df->id));
@@ -428,7 +429,8 @@ void mark_cross_score(struct list_it *li_query_brw, void *bdb_doc,
 	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
 	redis_del(complete_set);
 
-	printf(COLOR_BLUE "final score:\n" COLOR_RST);
+	printf(COLOR_BLUE "final score:" COLOR_RST);
+	printf(" (final score = score * 10000 + 1/#brw)\n");
 	redis_z_rrange(rank_set, &_print_rank, start, end, &fsa);
 	redis_del(rank_set);
 }
