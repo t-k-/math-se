@@ -146,8 +146,8 @@ void search_open(const char *path, void *arg)
 		if (map_brw->state == bs_unmark) {
 			soa->if_any_match = 1;
 
-			printf("matching doc brw: #%s\n",
-			       short_hash(map_brw->id));
+			printf("matching doc brw: #%s @ %s\n",
+			       short_hash(map_brw->id), path);
 			map_brw->score = main_score(soa->qbrw, 
 			                            map_brw, pvname);
 		}
