@@ -1,9 +1,5 @@
 ## About
-It used to be my cpeg657 course project.
-
-But now... it is my toy project :soccer:
-
-I will provide more description when I think it is ready to be published.
+Not ready to be published, keep your eyes open and have fun! :cake:
 
 ## Library Dependencies
 
@@ -20,5 +16,3 @@ An Ubuntu user may install all the dependencies by the following command:
 sudo apt-get update
 sudo apt-get install flex bison libncurses5-dev readline-dev libcurl4-openssl-dev libtokyocabinet-dev libhiredis-dev
 ```
-
-Have fun! :cake:
