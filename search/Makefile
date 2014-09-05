@@ -1,5 +1,5 @@
 BNAME=$(shell basename `pwd`)
-CFLAGS=-I ../inc -L .. -I /usr/include/hiredis
+CFLAGS=-I ../inc -L .. -I /usr/include/hiredis -DRK_VERBOSE
 
 .PHONY: all clean
 

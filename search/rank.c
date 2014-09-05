@@ -147,8 +147,10 @@ void search_open(const char *path, void *arg)
 		if (map_brw->state == bs_unmark) {
 			soa->if_any_match = 1;
 
+#ifdef RK_VERBOSE
 			printf("matching doc brw: #%s @ %s\n",
 			       short_hash(map_brw->id), path);
+#endif
 			map_brw->score = main_score(soa->qbrw, 
 			                            map_brw, pvname);
 		}
@@ -348,13 +350,16 @@ LIST_IT_CALLBK(_score_main)
 	P_CAST(sma, struct _score_main_arg, pa_extra);
 	LIST_OBJ(struct query_brw, a, ln);
 
+#ifdef RK_VERBOSE
 	printf(COLOR_MAGENTA "for query brw: ");
 	print_query_brw(a);
 	printf(":\n");
 	printf(COLOR_RST);
+#endif
 
 	if (search_and_score(a->dir, a, "result set")) {
 		redis_set_union("temp set", "result set");
+#ifdef RK_VERBOSE
 		printf(COLOR_GREEN 
 		       "before variable score update:\n" 
 		       COLOR_RST);
@@ -364,10 +369,16 @@ LIST_IT_CALLBK(_score_main)
 		       "after variable score update:\n" 
 		       COLOR_RST);
 		redis_set_popeach("result set", &print_frml_map);
+#else
+		redis_set_popeach("result set", &update_var_score);
+#endif
 		redis_del("result set");
-	} else {
+	} 
+#ifdef RK_VERBOSE
+	else {
 		printf(COLOR_GREEN "matching none.\n" COLOR_RST);
 	}
+#endif
 
 	stage_flag = 0;
 	if (pa_now->now == pa_head->last) {
@@ -381,11 +392,15 @@ LIST_IT_CALLBK(_score_main)
 
 	if (stage_flag) {
 		redis_set_union(sma->complete_set, "temp set");
+#ifdef RK_VERBOSE
 		redis_set_members("temp set", &update_frml_score);
 		printf(COLOR_GREEN 
 		       "after formula score update...\n" 
 		       COLOR_RST);
 		redis_set_popeach("temp set", &print_frml_map);
+#else
+		redis_set_popeach("temp set", &update_frml_score);
+#endif
 		redis_del("temp set");
 	}
 
@@ -428,9 +443,11 @@ void mark_cross_score(struct list_it *li_query_brw,
 
 	li_brw_name_sort(li_query_brw);
 
+#ifdef RK_VERBOSE
 	printf(COLOR_CYAN "query brword sorted list:\n");
 	list_foreach(li_query_brw, &_print_query_brw, NULL);
 	printf(COLOR_RST);
+#endif
 
 	list_foreach(li_query_brw, &_score_main, &sma);
 
@@ -444,7 +461,9 @@ void mak_rank(const char *rank_set, char *query, void *bdb_num)
 	struct token_t *query_tr;
 
 	li_query_brw = tex2brwords(query, &query_tr);
+#ifdef RK_VERBOSE
 	matree_print(query_tr, stdout);
+#endif
 	matree_release(query_tr); 
 
 	mark_cross_score(&li_query_brw, rank_set, bdb_num);

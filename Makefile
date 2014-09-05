@@ -3,7 +3,7 @@ CC=gcc $(CFLAGS)
 
 .PHONY: all clean submake
 
-all: submake install tags
+all: submake tags
 
 tags: $(shell find . -name "*.[hcly]" -print)
 	@echo dep: $^

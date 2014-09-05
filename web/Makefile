@@ -6,6 +6,7 @@ cgi_path:=/var/www/$(web_base_name)/cgi
 #$(search_cgi): front-end.c search.html template.html 
 #	gcc $< -lcurl -I ./include -I ../inc -o $@
 #	chmod +x $@
+all: 
 
 install: permit-cgi
 	sudo cp -u *.jpg $(web_path)
