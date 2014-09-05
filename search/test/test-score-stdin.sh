@@ -6,7 +6,7 @@ then
 	echo 'bad arg.'
 	exit
 fi
-cd $dir/../parser
+cd $dir/../../parser
 echo $1 >> tmp
 echo $2 >> tmp
 ./parser no_url < tmp
