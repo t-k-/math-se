@@ -8,12 +8,8 @@ int redis_cli_init(const char *ip, ushort port)
 	struct timeval timeout = {1, 500000}; /* 1.5 seconds */
 	redis_cntxt = redisConnectWithTimeout(ip, port, timeout);
 	if (redis_cntxt == NULL || redis_cntxt->err) {
-		if (redis_cntxt) {
-			printf("redis error: %s\n", redis_cntxt->errstr);
+		if (redis_cntxt)
 			redisFree(redis_cntxt);
-		} else {
-			printf("can't allocate redis context.\n");
-		}
 		return 1;
 	}
 

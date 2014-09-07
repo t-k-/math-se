@@ -7,7 +7,6 @@ int main(int argc, char *argv[])
 {
 	char *query = argv[1];
 	void *bdb_doc, *bdb_num;
-	struct list_it li_query_brw;
 
 	if (argc != 2) {
 		printf("invalid argument format.\n");
