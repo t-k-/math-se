@@ -51,18 +51,24 @@ int main(int argc, char *argv[])
 		/* user can use UP and DOWN key to 
 		search through the history. */
 		add_history(str); 
-		fprintf(fout, "%s\n", str);
 
 		str0 = to_scan_str(str, &str0_sz);
-		free(str);
 
 		YY_BUFFER_STATE buffer = 
 			yy_scan_buffer(str0, str0_sz);
 
 		yyparse();
-		parser_out(fout);
+
+		if (parser_error_flag) {
+			parser_error_flag = 0;
+			printf("[ %s ]\n", parser_error_dscr);
+		} else {
+			fprintf(fout, "%s\n", str);
+			parser_out(fout);
+		}
 
 		yy_delete_buffer(buffer);
+		free(str);
 		free(str0);
 	} 
 

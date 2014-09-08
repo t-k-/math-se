@@ -76,3 +76,11 @@ extern struct token_t *root;
 struct list_it tex2brwords(char*, struct token_t **); 
 
 void li_brw_release(struct list_it*);
+
+void yyerror(const char *);
+
+extern struct token_t *root;
+
+extern int parser_error_flag;
+
+extern char parser_error_dscr[];

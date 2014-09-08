@@ -1,5 +1,5 @@
 BNAME=$(shell basename `pwd`)
-CFLAGS=-I ../inc -L .. -I /usr/include/hiredis -DRK_VERBOSE
+CFLAGS=-I ../inc -L .. -I /usr/include/hiredis 
 
 .PHONY: all clean
 
@@ -10,15 +10,17 @@ test: test-rlv_tr
 test-rlv_tr: rlv_tr.o test-rlv_tr.o
 	gcc $(CFLAGS) $^ -lhiredis -o $@ -lmcheck
 
-DEP_LIB:=-l$(BNAME) -lparser -ll -lbdb_wraper 
-DEP_LIB:=$(DEP_LIB) -lhiredis -ltokyocabinet
+DEP_LIB:=-lparser -ll -lbdb_wraper -lhiredis -ltokyocabinet -lmcheck
 
-$(BNAME): main.o ../lib$(BNAME).a ../libparser.a ../libbdb_wraper.a
-	@echo dep: $(DEP_LIB)
-	gcc $(CFLAGS) $< -o $(BNAME) $(DEP_LIB) -lmcheck
+$(BNAME): main.o rank_verb.o rlv_tr.o ../libparser.a ../libbdb_wraper.a
+	gcc $(CFLAGS) $(filter %.o, $^) -o $(BNAME) $(DEP_LIB)
 
 ../lib$(BNAME).a: rank.o rlv_tr.o
 	ar rcs $@ $^
+
+rank_verb.o : rank.c
+	gcc -DRK_VERBOSE $(CFLAGS) -c $^ -o $@
+	gcc $(CFLAGS) -MM $^ -o rank_verb.d
 
 -include $(wildcard *.d)
 

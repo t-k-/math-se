@@ -4,9 +4,6 @@
 #include <string.h> 
 #include "mathtree.h"
 
-void yyerror(const char *);
-extern struct token_t *root;
-
 #define SUB_CONS(_father, _sonl, _sonr) \
 	struct token_t *father = _father; \
 	matree_attach(_sonl, father); \
@@ -388,8 +385,12 @@ script : '_' atom
        ;
 %%
 struct token_t *root = NULL;
+int  parser_error_flag = 0;
+char parser_error_dscr[1024];
 
 void yyerror(const char *ps) 
 {
-	printf("[ %s ]\n", ps);
+	strcpy(parser_error_dscr, ps);
+	parser_error_flag = 1;
+	return;
 }

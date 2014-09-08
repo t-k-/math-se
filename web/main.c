@@ -43,26 +43,57 @@ static char *q_unescape(char *str)
 	return ret;
 }
 
-static void _print_rank(const char* frml_hash, void *arg)
-{
-#if 0
-	struct doc_frml *df = redis_frml_map_get(frml_hash);
-	P_CAST(fsa, struct _final_score_arg, arg);
-	char *doc = bdb_get2(fsa->bdb_doc, frml_hash);
-	int *num = bdb_get_int(fsa->bdb_num, frml_hash, 
-	                       DOC_HASH_LEN);
+struct _html_li_arg {
+	void *bdb_doc;	
+	void *bdb_num;	
+	uint  nitems;
+};
 
-	printf(COLOR_BLUE "< #%ld >: \n" COLOR_RST, (*fsa->rank) ++);
-	printf("doc #%s (brws=%d):\n%s\n", 
-	       short_hash(frml_hash), *num, doc);
+static void _html_li(const char* frml_hash, void *arg)
+{
+	struct doc_frml *df = redis_frml_map_get(frml_hash);
+
+	P_CAST(hla, struct _html_li_arg, arg);
+	char *doc = bdb_get2(hla->bdb_doc, frml_hash);
+	int *num = bdb_get_int(hla->bdb_num, frml_hash, DOC_HASH_LEN);
+	char url[4096];
+	char tex[4096];
+	int i = 0;
+	char *field;
+
+	if (doc == NULL || num == NULL)
+		return;
+	
+	field = strtok(doc, "\n\n");
+	if (field) 
+		strcpy(url, field);
+	else 
+		return;
+
+	field = strtok(NULL, "\n\n");
+	if (field) 
+		strcpy(tex, field);
+	else 
+		return;
+
+	/* printf("url=%s tex=%s nbrw=%d ID=%s<br/>", 
+	          url, tex, *num, frml_hash); */
+	printf("<li><table border=\"0\"><tr><td>"
+	       "<a href=\"%s\"><h3>%s</h3></a>"
+	       "<span style=\"color:green;\">%s</span>"
+	       "</td><td>[dmath]%s[/dmath]"
+	       "<span style=\"color:white;\">"
+	       "ID=%s, score=%f, nbrw=%d."
+	       "</span></td></tr></table></li>",
+	       url, tex, url, tex, frml_hash, df->score, *num);
+	hla->nitems ++;
 	free(doc);
 	free(num);
-#endif
-	rlv_tr_print(df);
 }
 
 int main()
 {
+	struct _html_li_arg hla;
 	void *bdb_doc, *bdb_num;
 	int64_t start;
 	char *query, *env_str, stdin_str[64];
@@ -73,7 +104,7 @@ int main()
 	scanf("%s", stdin_str);
 	replace_plus(stdin_str);
 
-	/* get GET argument, use `export QUERY_STRING=q=a+b' to
+	/* get GET argument, use `export QUERY_STRING=s=123' to
 	 * test cgi program. */
 	env_str = getenv("QUERY_STRING");
 
@@ -81,7 +112,13 @@ int main()
 		printf("cgi: getenv() returns null.");
 		return __LINE__;
 	}
+
 	sscanf(env_str, "s=%" PRId64, &start);
+	
+	if (start < 0) {
+		printf("cgi: start < 0.");
+		return __LINE__;
+	}
 
 	if (redis_cli_init("127.0.0.1", DEFAULT_REDIS_PORT)) {
 		printf("cgi: redis server is down.");
@@ -106,47 +143,32 @@ int main()
 	query = q_unescape(stdin_str);
 	query[0] = ' ';
 	query[1] = ' ';
-	/* printf("query=%s, start=%" PRId64 "\n", query, start); */
 
 	cat("head.cat");
-	printf("%s", query); curl_free(query);
-	printf("\\Big\\}[/imath]</h2>");
-	printf("<p>%d result(s)</p>", 123);
+	printf("[imath]q=\\Big\\{%s\\Big\\}[/imath]", query);
 	cat("neck.cat");
+	printf("<!-- query=%s, start=%" PRId64 "-->", query, start);
+	
+	hla.bdb_doc = bdb_doc;
+	hla.bdb_num = bdb_num;
+	hla.nitems = 0;
 
-//	if (fail) {
-//		printf("<li><h1>query syntax error. X_X </h1></li>\n");
-//		exit(1);
-//	} else if (results == 0) {
-//		printf("<li><h1>we have tried our best... </h1></li>\n");
-//		exit(1);
-//	}
-//
-//	end_flag = 0;
-//	while (getline(&line, &len, f_rank) != -1) {
-//		if (cnt / 2 >= start + RES_PER_PAGE - 1)
-//			goto quit;
-//
-//		if (cnt >= 2 * (start - 1)) {
-//			if (cnt % 2 == 0) {
-//				strcpy(last_line, line);
-//			} else {
-//				printf("<li><table border=\"0\"><tr><td><a href=%s"
-//						"><h3>%s</h3></a><span style=\"color:green;\">"
-//						"%s</span></td><td>[dmath]%s"
-//						"[/dmath]</td></tr></table></li>",
-//						line, last_line, line, last_line);
-//			}
-//		}
-//
-//		cnt ++;
-//	}
-//	end_flag = 1;
-//
+	if (!mak_rank("ranking set", query, bdb_num)) {
+		printf("<li><h1>Query syntax error. X_X </h1></li>\n");
+	} else {
+		redis_z_rrange("ranking set", &_html_li, 
+				start * RES_PER_PAGE, 
+				(start + 1) * RES_PER_PAGE + 1, &hla);
+		del_rank("ranking set");
+
+		if (hla.nitems == 0)
+			printf("<li><h1>No matching document.</h1></li>\n");
+	}
+	
+	curl_free(query);
+	printf("<!-- results=%d -->", hla.nitems);
 	cat("ass.cat");
-//
-//	//printf("<span class=\"cnt_%d_endflag_%d\"></span>", cnt, end_flag);
-//
+
 //	printf(
 //  "<form action=\"/cgi/result.bin?s=%d\" method=\"post\" "
 //  "name=\"my_pr\"><input type=\"hidden\" name=\"q\" value=\"%s\"/>"
@@ -164,15 +186,8 @@ int main()
 //		cat("next.cat");
 	cat("tail.cat");
 
-/*
-	mak_rank("ranking set", query, bdb_num);
-	pri_rank("ranking set", 0, -1, bdb_doc, bdb_num);
-	redis_z_rrange(rank_set, &_print_rank, start, end, &fsa);
-	del_rank("ranking set");
-	
 	bdb_release(bdb_doc);
 	bdb_release(bdb_num);
 	redis_cli_free();
-*/
 	return 0;
 }

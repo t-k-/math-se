@@ -7,6 +7,7 @@ then
 	exit
 fi
 cd $dir/../../parser
+>tmp
 echo $1 >> tmp
 echo $2 >> tmp
 ./parser no_url < tmp

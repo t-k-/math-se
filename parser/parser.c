@@ -21,7 +21,7 @@ char *to_scan_str(char *str, size_t *res_str_sz)
 struct list_it tex2brwords(char *str, 
                            struct token_t **tr_root)
 {
-	struct list_it ret;
+	struct list_it ret = LIST_NULL;
 	char *str0;
 	size_t str0_sz;
 	str0 = to_scan_str(str, &str0_sz);
@@ -30,9 +30,17 @@ struct list_it tex2brwords(char *str,
 		yy_scan_buffer(str0, str0_sz);
 
 	yyparse();
+
+	if (parser_error_flag) {
+		parser_error_flag = 0;
+		*tr_root = NULL;
+		goto exit;
+	}
+
 	ret = matree_ls_brw(root);
 	*tr_root = root;
 
+exit:
 	yy_delete_buffer(buffer);
 	free(str0);
 

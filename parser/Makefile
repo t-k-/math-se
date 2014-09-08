@@ -32,7 +32,7 @@ lex.yy.c: *.l
 	ar rcs $@ $^
 
 test: test.c ../lib$(LIB_NAME).a
-	$(CC) $< $(CFLAGS) -L .. -l $(LIB_NAME) -o $@
+	$(CC) $< $(CFLAGS) -L .. -l $(LIB_NAME) -o $@.out
 
 -include $(wildcard *.d)
 
@@ -47,4 +47,4 @@ tree.o: ../tree.c
 clean:
 	cat toclean.list | xargs rm -f
 	rm -f toclean.list
-	rm -f *.o *.d *.a $(LIB_NAME)
+	rm -f *.o *.d *.a $(LIB_NAME) test.out

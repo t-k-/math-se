@@ -455,12 +455,14 @@ void mark_cross_score(struct list_it *li_query_brw,
 	redis_del(complete_set);
 }
 
-void mak_rank(const char *rank_set, char *query, void *bdb_num)
+int mak_rank(const char *rank_set, char *query, void *bdb_num)
 {
 	struct list_it li_query_brw;
 	struct token_t *query_tr;
 
 	li_query_brw = tex2brwords(query, &query_tr);
+	if (query_tr == NULL)
+		return 0;
 #ifdef RK_VERBOSE
 	matree_print(query_tr, stdout);
 #endif
@@ -468,6 +470,7 @@ void mak_rank(const char *rank_set, char *query, void *bdb_num)
 
 	mark_cross_score(&li_query_brw, rank_set, bdb_num);
 	li_brw_release(&li_query_brw);
+	return 1;
 }
 
 void pri_rank(const char *rank_set, int64_t start, int64_t end, 

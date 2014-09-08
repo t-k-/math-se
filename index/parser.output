@@ -1,33 +1,27 @@
 no_url
-\sqrt{a+b}+\sqrt{a+c}
-   └──(+) weight=9, type=add
-       │──(√) weight=4, type=sqrt
-       │   └──(+) weight=3, type=add
-       │       │──(a) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(√) weight=4, type=sqrt
-           └──(+) weight=3, type=add
-               │──(a) weight=1, type=var
-               └──(c) weight=1, type=var
+a+b+c+d+e+f
+   └──(+) weight=7, type=add
+       │──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       │──(c) weight=1, type=var
+       │──(d) weight=1, type=var
+       │──(e) weight=1, type=var
+       └──(f) weight=1, type=var
 
-./collection/var/add/sqrt/add a 1 3 4 9 
-./collection/var/add/sqrt/add b 1 3 4 9 
-./collection/var/add/sqrt/add a 1 3 4 9 
-./collection/var/add/sqrt/add c 1 3 4 9 
+./collection/var/add a 1 7 
+./collection/var/add b 1 7 
+./collection/var/add c 1 7 
+./collection/var/add d 1 7 
+./collection/var/add e 1 7 
+./collection/var/add f 1 7 
 
-\sqrt{a+b}+\sqrt{c+d}
-   └──(+) weight=9, type=add
-       │──(√) weight=4, type=sqrt
-       │   └──(+) weight=3, type=add
-       │       │──(a) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(√) weight=4, type=sqrt
-           └──(+) weight=3, type=add
-               │──(c) weight=1, type=var
-               └──(d) weight=1, type=var
+a+b+c
+   └──(+) weight=4, type=add
+       │──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./collection/var/add/sqrt/add a 1 3 4 9 
-./collection/var/add/sqrt/add b 1 3 4 9 
-./collection/var/add/sqrt/add c 1 3 4 9 
-./collection/var/add/sqrt/add d 1 3 4 9 
+./collection/var/add a 1 4 
+./collection/var/add b 1 4 
+./collection/var/add c 1 4 
 

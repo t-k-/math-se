@@ -21,8 +21,8 @@ install: permit-cgi $(output)
 	else \
 		echo "no collection installed"; \
 	fi;
-	sudo find $(web_path) -print0 | xargs -0 chown www-data
-	sudo find $(web_path) -print0 | xargs -0 chgrp www-data
+	sudo find $(web_path) -print0 | xargs -0 sudo chown www-data
+	sudo find $(web_path) -print0 | xargs -0 sudo chgrp www-data
 
 hello-world.cgi: helloworld.o
 	gcc helloworld.o -o $@
@@ -53,3 +53,6 @@ permit-cgi: hello-world.cgi
 clean:
 	rm -rf *.d *.o *.cgi
 	rm -f $(search_cgi) install
+
+distclean: clean
+	sudo rm -rf $(web_path)
