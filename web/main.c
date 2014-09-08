@@ -175,7 +175,7 @@ int main()
 		del_rank("ranking set");
 
 		if (hla.nitems == 0)
-			printf("<li><h1>No matching document.</h1></li>\n");
+			printf("<li><h1>No matching document. X_X!</h1></li>\n");
 	}
 	
 	cat("ass.cat");
