@@ -1,3 +1,4 @@
 #!/bin/bash
-export QUERY_STRING=s=123
-echo "q=%5Cfrac%7Ba%2Bb%7D%7Bc%7D" | ./rank.cgi
+export QUERY_STRING=s=0
+# query = a + b
+echo -n "q=a%2Bb" | ./rank.cgi

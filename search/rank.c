@@ -318,7 +318,7 @@ struct _final_score_arg {
 	void *bdb_doc;
 	void *bdb_num;
 	const char *rank_set;
-	uint64_t *rank;
+	uint64_t *cnt;
 };
 
 static
@@ -333,6 +333,7 @@ void _final_score(const char *map, void *arg)
 	            1.f / (float)(*num),
 	            hash2str(df->id));
 
+	(*fsa->cnt) ++;
 	free(num);
 }
 
@@ -416,7 +417,7 @@ static void _print_rank(const char* frml_hash, void *arg)
 	int *num = bdb_get_int(fsa->bdb_num, frml_hash, 
 	                       DOC_HASH_LEN);
 
-	printf(COLOR_BLUE "< #%ld >: \n" COLOR_RST, (*fsa->rank) ++);
+	printf(COLOR_BLUE "< #%ld >: \n" COLOR_RST, (*fsa->cnt) ++);
 	printf("doc #%s (brws=%d):\n%s\n", 
 	       short_hash(frml_hash), *num, doc);
 	free(doc);
@@ -432,12 +433,13 @@ static void _del_rank(const char* frml_hash, void *arg)
 	redis_del(frml_hash);
 }
 
-void mark_cross_score(struct list_it *li_query_brw, 
-                      const char *rank_set, void *bdb_num)
+uint64_t mark_cross_score(struct list_it *li_query_brw, 
+                          const char *rank_set, void *bdb_num)
 {
 	struct _score_main_arg sma;
 	const char complete_set[] = "cmplt set";
-	struct _final_score_arg fsa = {NULL, bdb_num, rank_set, NULL};
+	uint64_t cnt = 0;
+	struct _final_score_arg fsa = {NULL, bdb_num, rank_set, &cnt};
 	sma.pid = getpid();
 	sma.complete_set = complete_set;
 
@@ -453,24 +455,32 @@ void mark_cross_score(struct list_it *li_query_brw,
 
 	redis_set_popeach_ext(complete_set, &_final_score, &fsa);
 	redis_del(complete_set);
+
+	return *fsa.cnt;
 }
 
-int mak_rank(const char *rank_set, char *query, void *bdb_num)
+int mak_rank(const char *rank_set, char *query, 
+             void *bdb_num, uint64_t *n_relevant)
 {
 	struct list_it li_query_brw;
 	struct token_t *query_tr;
 
 	li_query_brw = tex2brwords(query, &query_tr);
-	if (query_tr == NULL)
-		return 0;
+
+	if (query_tr == NULL) {
+		*n_relevant = 0;
+		return 1;
+	}
+
 #ifdef RK_VERBOSE
 	matree_print(query_tr, stdout);
 #endif
 	matree_release(query_tr); 
 
-	mark_cross_score(&li_query_brw, rank_set, bdb_num);
+	*n_relevant = mark_cross_score(&li_query_brw, 
+	                               rank_set, bdb_num);
 	li_brw_release(&li_query_brw);
-	return 1;
+	return 0;
 }
 
 void pri_rank(const char *rank_set, int64_t start, int64_t end, 

@@ -15,7 +15,7 @@ submake:
 	make -C ./search
 	make -C ./web
 
-install:
+install: submake
 	make install -C ./web
 
 clean:
@@ -24,3 +24,6 @@ clean:
 	make clean -C ./parser
 	make clean -C ./search
 	make clean -C ./web
+
+distclean: clean
+	make distclean -C ./web

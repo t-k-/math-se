@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <inttypes.h>
 #include "rlv_tr.h"
 #include "bdb_wraper.h"
 #include "rank.h"
@@ -7,6 +8,7 @@ int main(int argc, char *argv[])
 {
 	char *query = argv[1];
 	void *bdb_doc, *bdb_num;
+	uint64_t n_relevant;
 
 	if (argc != 2) {
 		printf("invalid argument format.\n");
@@ -46,7 +48,7 @@ int main(int argc, char *argv[])
 
 	printf("query: %s\n", query);
 
-	mak_rank("ranking set", query, bdb_num);
+	mak_rank("ranking set", query, bdb_num, &n_relevant);
 	pri_rank("ranking set", 0, -1, bdb_doc, bdb_num);
 	del_rank("ranking set");
 	
@@ -54,6 +56,7 @@ int main(int argc, char *argv[])
 	bdb_release(bdb_num);
 	redis_cli_free();
 	
-	printf(COLOR_BLUE "(query: `%s')\n" COLOR_RST, query);
+	printf(COLOR_BLUE "(query: `%s', #relevant: %" PRIu64 
+	       ")\n" COLOR_RST, query, n_relevant);
 	return 0;
 }
