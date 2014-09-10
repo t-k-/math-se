@@ -6,28 +6,37 @@ output=rank.cgi
 CFLAGS=-I ../inc -I /usr/include/hiredis -L ..
 LIBS=-lcurl -lsearch -lparser -ll -lbdb_wraper -lhiredis -ltokyocabinet
 COL_DIR=../search/collection
+check_perm=@ touch /root/test 2>/dev/null || \
+           ($(call color, "* ROOT REQUIRED. *") && exit 1)
+COLOR_RED=$(shell tput setaf 1)
+COLOR_NIL=$(shell tput sgr0)
+
+color=echo $(COLOR_RED) $1 $(COLOR_NIL)
 
 $(output): main.o
 	gcc $^ $(CFLAGS) $(LIBS) -o $@
 
 install: permit-cgi $(output)
-	sudo cp -u *.png $(web_path)
-	sudo cp -u *.html $(web_path)
-	sudo cp -u *.cat $(cgi_path)
-	sudo cp -u $(output) $(cgi_path)
+	$(check_perm)
+	cp -u *.png $(web_path)
+	cp -u *.html $(web_path)
+	cp -u *.cat $(cgi_path)
+	cp -u $(output) $(cgi_path)
 	@ if [ -e $(COL_DIR) ]; then \
-		echo "install collection..."; \
-		sudo cp -ru $(COL_DIR) $(cgi_path); \
+		echo -e $(C_RED) "install collection..." $(C_END); \
+		cp -ru $(COL_DIR) $(cgi_path); \
 	else \
-		echo "no collection installed"; \
+		$(call color, "* NO COLLECTION INSTALLED *"); \
 	fi;
-	sudo find $(web_path) -print0 | xargs -0 sudo chown www-data
-	sudo find $(web_path) -print0 | xargs -0 sudo chgrp www-data
+	find $(web_path) -print0 | xargs -0 chown www-data
+	find $(web_path) -print0 | xargs -0 chgrp www-data
+	chmod +x $(cgi_path)/*.cgi
 
 hello-world.cgi: helloworld.o
 	gcc helloworld.o -o $@
 
 permit-cgi: hello-world.cgi
+	$(check_perm)
 	@ if [ ! -e $(apa_conf_path) ]; then \
 		echo '[ apache2 not installed ]'; \
 		exit; \
@@ -38,11 +47,11 @@ permit-cgi: hello-world.cgi
 		echo "\n# $(web_base_name)\nScriptAlias" \
 		"/$(web_base_name)-bin/ $(cgi_path)/\nAlias" \
 		"/$(web_base_name)/ $(web_path)/\n" | \
-		sudo tee -a $(apa_conf_path); \
-		sudo /etc/init.d/apache2 restart; \
+		tee -a $(apa_conf_path); \
+		/etc/init.d/apache2 restart; \
 	);
-	sudo mkdir -p $(cgi_path)
-	sudo cp -u hello-world.cgi $(cgi_path)
+	mkdir -p $(cgi_path)
+	cp -u hello-world.cgi $(cgi_path)
 
 -include $(wildcard *.d)
 
@@ -55,4 +64,5 @@ clean:
 	rm -f $(search_cgi) install
 
 distclean: clean
-	sudo rm -rf $(web_path)
+	$(check_perm)
+	rm -rf $(web_path)
