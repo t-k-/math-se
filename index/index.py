@@ -2,11 +2,13 @@
 import hashlib
 import os
 import ctypes
+# set collection path
+co_path = "./collection"
 # init DBM
 so = ctypes.CDLL("./libbdb_wraper.so") 
-os.system("mkdir -p ./collection")
-bdb_doc = so.bdb_init("./collection/documents.bdb")
-bdb_num = so.bdb_init("./collection/brw-number.bdb")
+os.system("mkdir -p " + co_path)
+bdb_doc = so.bdb_init(co_path + "/documents.bdb")
+bdb_num = so.bdb_init(co_path + "/brw-number.bdb")
 
 old_records = so.bdb_records(bdb_doc)
 DOC_HASH_LEN = 40
@@ -62,7 +64,7 @@ while True:
 				break
 			# get the dir and brword from lines 
 			array = line.split()
-			path = array[0]
+			path = co_path + '/' + array[0]
 			brword = " ".join(array[1:]);
 			# calculate the sha1 for brword
 			m = hashlib.sha1()

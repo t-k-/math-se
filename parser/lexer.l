@@ -369,7 +369,7 @@ extern unsigned int stack;
 \\angle         { mkstr(yytext); return ANGLE; }
 \\perp          { mkstr(yytext); return PERP; }
 \\circ          { mkstr(yytext); return CIRC; }
-\\top           { mkstr(yytext); return TRANSPOSE; }
+\\%             { mkstr(yytext); return PERCENT; }
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\Pi            { mkstr(yytext); return VAR; } 
@@ -404,6 +404,7 @@ extern unsigned int stack;
 \\varrho        { mkstr(yytext); return VAR; }
 \\varsigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
+\\top           { mkstr(yytext); return VAR; }
 
 \\color\{        { BEGIN(ign); stack = 1; } /* omit color */
 \\mbox\{         { BEGIN(ign); stack = 1; } /* omit mbox */

@@ -28,7 +28,7 @@ lex.yy.c: *.l
 	lex $^
 	$(call cl_insert, $@)
 
-../lib$(LIB_NAME).a: tree.o mathtree.o parser.o lex.yy.o y.tab.o
+../lib$(LIB_NAME).a: tree.o mathtree.o parser_intf.o lex.yy.o y.tab.o
 	ar rcs $@ $^
 
 test: test.c ../lib$(LIB_NAME).a

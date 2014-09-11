@@ -16,7 +16,9 @@ root_url = 'math.stackexchange.com'
 
 def curl(sub_url, c):
 	buf = cStringIO.StringIO()
-	c.setopt(c.URL, 'http://' + root_url + sub_url)
+	url = 'http://' + root_url + sub_url
+	url = url.encode('iso-8859-1')
+	c.setopt(c.URL, url)
 	c.setopt(c.WRITEFUNCTION, buf.write)
 	errs = 0
 	while True:

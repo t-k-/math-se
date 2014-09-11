@@ -8,7 +8,10 @@ def find_dollar_tex(s, sf):
 	i, j, stack = 0, 0, 0
 	while i < len(s):
 		#print s[i],
-		if s[i] == '$':
+		if s[i] == '\\' and (i + 1) < len(s):
+			if s[i + 1] == '$':
+				i += 1 # skip the escaped dollar
+		elif s[i] == '$':
 			if stack == 0:
 				stack = 1
 				j = i + 1

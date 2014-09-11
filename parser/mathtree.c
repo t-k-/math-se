@@ -49,8 +49,8 @@ static char *str_type(int t_num)
 		case MT_CIRC:
 			sprintf(out, "circ");
 			break;
-		case MT_TRANSPOSE:
-			sprintf(out, "tasp");
+		case MT_PERCENT:
+			sprintf(out, "percent");
 			break;
 		case MT_TIMES:
 			sprintf(out, "times");
@@ -274,7 +274,7 @@ void matree_release(struct token_t *p)
 void leaf_up_dir(struct token_t *f, char *buf)
 {
 	char *p = buf;
-	p += sprintf(p, "./collection/");
+	p += sprintf(p, "./");
 
 	while (f != NULL) {
 		if (f->type == MT_SUM_CLASS)

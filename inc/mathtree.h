@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "tknet.h"
 
-#define DIR_NAME_MAX_LEN 512
+#define DIR_NAME_MAX_LEN 1024
 #define VAR_NAME_MAX_LEN 16
 #define WEIGHT_MAX_LEN 64
 
@@ -28,7 +28,7 @@ enum type_enum {
 	MT_ANGLE,
 	MT_PERP,
 	MT_CIRC,
-	MT_TRANSPOSE,
+	MT_PERCENT, 
 	MT_TIMES,
 	MT_COMBIN,
 	MT_FRAC,

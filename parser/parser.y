@@ -21,7 +21,7 @@
 %token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC TIMES SQRT TAB 
 %token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT 
 %token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL
-%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE SEP_DIV TRANSPOSE
+%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE SEP_DIV PERCENT
  
 %type <p> tex mat_tex term factor pack atom script
 
@@ -281,9 +281,9 @@ atom : VAR
      SUB_CONS(mktoken($1, MT_CIRC), NULL, NULL);
      root = $$ = father;
      }
-     | TRANSPOSE 
+     | PERCENT 
      { 
-     SUB_CONS(mktoken($1, MT_TRANSPOSE), NULL, NULL);
+     SUB_CONS(mktoken($1, MT_PERCENT), NULL, NULL);
      root = $$ = father;
      }
      ;

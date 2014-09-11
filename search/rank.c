@@ -124,8 +124,7 @@ struct _search_open_arg {
 	const char *ret_set_name;
 };
 
-static
-void search_open(const char *path, void *arg)
+static void search_open(const char *path, void *arg)
 {
 	char *c, line[1024];
 	struct doc_brw *map_brw;
@@ -155,6 +154,7 @@ void search_open(const char *path, void *arg)
 			                            map_brw, pvname);
 		}
 	}
+
 	fclose(f);
 }
 
@@ -196,10 +196,12 @@ int search_dir(const char *path, const char *fname,
 }
 
 static
-int search_and_score(const char *dir, struct query_brw *qbrw, 
-                     const char *ret_set)
+int search_and_score(const char *root_dir, const char *sub_dir, 
+                     struct query_brw *qbrw, const char *ret_set)
 {
 	struct _search_open_arg soa = {0, qbrw, ret_set};
+	char dir[DIR_NAME_MAX_LEN];
+	sprintf(dir, "%s/%s", root_dir, sub_dir);
 	search_dir(dir, "posting", &search_open, &soa);
 	return soa.if_any_match;
 }
@@ -358,7 +360,7 @@ LIST_IT_CALLBK(_score_main)
 	printf(COLOR_RST);
 #endif
 
-	if (search_and_score(a->dir, a, "result set")) {
+	if (search_and_score("./collection", a->dir, a, "result set")) {
 		redis_set_union("temp set", "result set");
 #ifdef RK_VERBOSE
 		printf(COLOR_GREEN 
