@@ -199,6 +199,7 @@ extern unsigned int stack;
 \.\.\.          { mkstr(yytext); return DOTS; }
 \\ldots         { mkstr(yytext); return DOTS; }
 \\cdots         { mkstr(yytext); return DOTS; }
+\\ddots         { mkstr(yytext); return DOTS; }
 
 ,               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
