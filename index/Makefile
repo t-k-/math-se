@@ -1,4 +1,4 @@
-all: libbdb_wraper.so ../libbdb_wraper.a
+all: libbdb_wraper.so ../libbdb_wraper.a bdb_probe
 bdb_wraper.o: bdb_wraper.c
 	gcc -c -o $@ $^
 
@@ -11,5 +11,8 @@ libbdb_wraper.so: bdb_wraper.c
 test: test.c bdb_wraper.c
 	gcc -I ../inc $^ -ltokyocabinet -o $@
 
+bdb_probe: bdb_probe.c bdb_wraper.c
+	gcc -I ../inc -I /usr/include/hiredis $^ -ltokyocabinet -o $@
+
 clean:
-	rm -rf *.o collection *.so test *.bdb
+	rm -rf *.o collection *.so test *.bdb bdb_probe
