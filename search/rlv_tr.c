@@ -259,6 +259,14 @@ char *short_hash(const char *hash)
 	return buf + 32;
 }
 
+char *full_hash(const char *hash)
+{
+	static char buf[BRW_HASH_LEN + 1];
+	strcpy(buf, hash);
+	buf[BRW_HASH_LEN] = '\0';
+	return buf;
+}
+
 void print_query_brw(struct query_brw *qbrw)
 {
 	printf("%s ", qbrw->dir);
@@ -413,7 +421,7 @@ static LIST_IT_CALLBK(_print_frml)
 
 void rlv_tr_print(struct doc_frml *df)
 {
-	printf("formula #%s [%g]\n", short_hash(df->id), 
+	printf("formula #%s [%g]\n", full_hash(df->id), 
 	       df->score);
 	list_foreach(&df->sons, _print_frml, NULL);
 }
