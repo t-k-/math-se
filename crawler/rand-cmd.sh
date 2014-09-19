@@ -1,6 +1,8 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd ${DIR}/math.stackexchange.com
+[ $# -ne 1 ] && echo "bad arg." && exit
+[ ! -d ${1} ] && echo "not dir." && exit
+cd ${DIR}/${1}
+echo "pick random file @ `pwd`"
 file=`ls | shuf -n 1`
-echo ${file}... | tee -a ${DIR}/rand-hist.list
-cat $file | tee ${DIR}/../rand 
+echo ${file} | tee -a ${DIR}/rand-hist.log

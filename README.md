@@ -10,7 +10,7 @@ Not ready to be published, keep your eyes open and have fun! :cake:
 5. tokyo-cabinet DBM
 6. hiredis 
 
-An Ubuntu user may install all the dependencies by the following command:
+A helpful example for an Ubuntu user to install all the dependencies:
 
 ```
 sudo apt-get update

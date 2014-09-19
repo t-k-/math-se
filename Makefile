@@ -13,6 +13,10 @@ mklink: submake
 	@ echo making symbolic links...
 	@ [ -e search.ln ] || ln -s `pwd`/search/search `pwd`/search.ln
 	@ [ -e bdb_probe.ln ] || ln -s `pwd`/index/bdb_probe `pwd`/bdb_probe.ln
+	@ [ -e test/parse/rand-cmd.sh.ln ] || \
+	ln -s `pwd`/crawler/rand-cmd.sh `pwd`/test/parse/rand-cmd.sh.ln
+	@ [ -e test/parse/parser.ln ] || \
+	ln -s `pwd`/parser/parser `pwd`/test/parse/parser.ln
 
 submake: 
 	make -C ./index
@@ -24,8 +28,9 @@ install: submake
 	make install -C ./web
 
 clean:
-	rm -f *.a tags inc/*.gch *.ln
+	rm -f *.a tags inc/*.gch
 	find . -name "*.pyc" | xargs rm -f
+	find . -name "*.ln" | xargs rm -f
 	make clean -C ./index
 	make clean -C ./parser
 	make clean -C ./search

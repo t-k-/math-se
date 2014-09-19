@@ -28,10 +28,11 @@ int main(int argc, char *argv[])
 	size_t str0_sz;
 	char *url;
 	FILE *fout;
+	uint suc_cnt = 0, fail_cnt = 0;
 
 	if (argc != 2) {
 		printf("invalid argument format. \n");
-		return 1;
+		return 0;
 	}
 
 	url = argv[1];
@@ -60,9 +61,11 @@ int main(int argc, char *argv[])
 		yyparse();
 
 		if (parser_error_flag) {
+			fail_cnt ++;
 			parser_error_flag = 0;
 			printf("[ %s ]\n", parser_error_dscr);
 		} else {
+			suc_cnt ++;
 			fprintf(fout, "%s\n", str);
 			parser_out(fout);
 		}
@@ -73,7 +76,8 @@ int main(int argc, char *argv[])
 	} 
 
 	fclose(fout);
-	printf("[ goodbye~ ]\n");
+	printf("[ %d successfully parsed, %d fail(s) ]\n", 
+	       suc_cnt, fail_cnt);
 
-	return 0;
+	return suc_cnt;
 }
