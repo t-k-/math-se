@@ -3,12 +3,12 @@ Not ready to be published, keep your eyes open and have fun! :cake:
 
 ## Dependencies
 
-1. [ncurses](http://ftp.gnu.org/pub/gnu/ncurses)
-2. [readline](http://ftp.gnu.org/gnu/readline) 
-3. curl 
+1. [libncurses](http://ftp.gnu.org/pub/gnu/ncurses)
+2. [libreadline](http://ftp.gnu.org/gnu/readline) 
+3. libcurl 
 4. lex (libl) and yacc
-5. tokyo-cabinet DBM
-6. redis & hiredis
+5. tokyo-cabinet DBM library
+6. redis-server & hiredis library 
 
 A helpful example for an Ubuntu user to install all the dependencies:
 
