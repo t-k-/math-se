@@ -8,8 +8,8 @@ float main_score(struct query_brw *a,
                  struct doc_brw *b, char *b_name)
 {
 	uint i;
-	float d_n, q_n, m, bin, d_l, q_l;
-#if 0
+	float score, d_n, q_n, m, bin, d_l, q_l;
+#if 1
 	printf("score(query brw: ");
 	printf("[%s] ", a->vname);
 	print_weight(a->weight);
@@ -38,10 +38,14 @@ float main_score(struct query_brw *a,
 		d_l += 1.f;
 
 	bin = (0 == strcmp(a->vname, b_name)) ? 1.f : 0.f;
+	
+	score = (min(d_n, q_n) / q_n) * 
+	        ((m + bin) / max(d_l, q_l));
 
 #if 0
 	printf("dn=%f, qn=%f, m=%f, bin=%f, dl=%f, ql=%f.\n",
 	       d_n, q_n, m, bin, d_l, q_l);
+	printf("score = %f\n", score);
 #endif
 
 	return (min(d_n, q_n) / q_n) * 
