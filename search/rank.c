@@ -9,7 +9,7 @@ float main_score(struct query_brw *a,
 {
 	uint i;
 	float score, d_n, q_n, m, bin, d_l, q_l;
-#if 1
+#if 0
 	printf("score(query brw: ");
 	printf("[%s] ", a->vname);
 	print_weight(a->weight);
@@ -48,8 +48,7 @@ float main_score(struct query_brw *a,
 	printf("score = %f\n", score);
 #endif
 
-	return (min(d_n, q_n) / q_n) * 
-	       ((m + bin + 1.f) / (max(d_l, q_l) + 2.f));
+	return score;
 }
 
 static
