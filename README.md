@@ -1,4 +1,4 @@
-## About
+## About [![Build Status](https://drone.io/github.com/t-k-/math-se/status.png)](https://drone.io/github.com/t-k-/math-se/latest)
 Not ready to be published, keep your eyes open and have fun! :cake:
 
 ## Dependencies
