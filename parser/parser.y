@@ -37,7 +37,9 @@
 %nonassoc '!'
 %right '^' '_'
 %left TIMES DIV
-%nonassoc '{' '}' '(' ')' '[' ']' _LEFT _RIGHT _LEFT_ABS _RIGHT_ABS _LEFT_CEIL _RIGHT_CEIL _LEFT_FLOOR _RIGHT_FLOOR
+%nonassoc '{' '}' '(' ')' '[' ']' 
+%nonassoc _LEFT _RIGHT _LEFT_FLOOR _RIGHT_FLOOR
+%nonassoc _LEFT_ABS _RIGHT_ABS _LEFT_CEIL _RIGHT_CEIL 
 
 %destructor { matree_release($$); } <p>
 %destructor { free($$);} <s>
