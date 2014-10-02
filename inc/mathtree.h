@@ -2,7 +2,7 @@
 #include "tknet.h"
 
 #define DIR_NAME_MAX_LEN 1024
-#define VAR_NAME_MAX_LEN 16
+#define VAR_NAME_MAX_LEN 32
 #define WEIGHT_MAX_LEN 64
 
 struct query_brw {
