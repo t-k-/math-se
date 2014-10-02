@@ -13,17 +13,17 @@
 
 %destructor { printf("destructing: %s\n", $$);} <str> 
 %%
-doc : | doc line;
+doc  : | doc line;
 line : frac LF | LF;
 atom : NUM {$$ = $1;} | VAR {$$ = $1;}
-    | '{' atom '}'
+	| '{' atom '}'
 	{
 		$$ = malloc(32); 
 		sprintf($$, "<%s>", $2);
 		free($2);
 	};
 frac : FRAC atom atom 
-    {
+	{
 	printf("%s/%s\n", $2, $3); 
 	free($2);
 	free($3);
