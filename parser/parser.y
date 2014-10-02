@@ -17,11 +17,12 @@
 
 %error-verbose
 
-%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT RIGHT 
-%token <s> EMPTY MODULAR ANGLE PERP CIRC VAR FRAC TIMES SQRT TAB 
-%token <s> CONST DIV FUN_CLASS DOTS PARTIAL PI INFTY END_MAT 
-%token <s> RIGHT_FLOOR LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL
-%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN CHOOSE SEP_DIV PERCENT
+%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT 
+%token <s> RIGHT PI EMPTY MODULAR ANGLE PERP CIRC VAR 
+%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS DOTS 
+%token <s> PARTIAL INFTY END_MAT FRAC__ RIGHT_FLOOR PERCENT
+%token <s> LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL CHOOSE
+%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN COMBIN__ SEP_DIV
  
 %type <p> tex mat_tex term factor pack atom script
 
@@ -38,6 +39,9 @@
 %right '^' '_'
 %left TIMES DIV
 %nonassoc '{' '}' '(' ')' '[' ']' LEFT RIGHT
+
+%destructor { matree_release($$); } <p>
+%destructor { free($$);} <s>
 %%
 doc : tex '\n' ;
 
@@ -56,6 +60,11 @@ tex : %prec NULL_REDUCE
     SUB_CONS(mktoken("+", MT_ADD), $1, $3);
     root = $$ = father;
     }
+    | tex '+' 
+    {
+    SUB_CONS(mktoken("+", MT_ADD), $1, NULL);
+    root = $$ = father;
+    }
     | tex '-' term 
     { 
     struct token_t *p = mktoken("-", MT_NEG);
@@ -63,50 +72,68 @@ tex : %prec NULL_REDUCE
     SUB_CONS(mktoken("+", MT_ADD), $1, p);
     root = $$ = father;
     }
+    | tex '-' 
+    {
+    SUB_CONS(mktoken("+", MT_ADD), $1, NULL);
+    root = $$ = father;
+    }
     | tex EQ_CLASS tex 
     {
     SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex STACKREL atom EQ_CLASS tex 
     {
-    SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $5);
+    free($2);
+    matree_release($3);
+    free($4);
+    SUB_CONS(mktoken("~=", MT_EQ_CLASS), $1, $5);
     root = $$ = father;
     }
     | tex STACKREL atom atom tex 
     {
-    SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $5);
+    free($2);
+    matree_release($3);
+    matree_release($4);
+    SUB_CONS(mktoken("~=", MT_EQ_CLASS), $1, $5);
     root = $$ = father;
     }
     | tex SEP_CLASS tex 
     {
     SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex SEP_DIV tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex OVER tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex CHOOSE tex 
     {
     SUB_CONS(mktoken($2, MT_COMBIN), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex TAB tex 
     {
     SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
     root = $$ = father;
+    free($2);
     }
     | tex MODULAR tex 
     {
     SUB_CONS(mktoken("mod", MT_MOD), $1, $3);
     root = $$ = father;
+    free($2);
     }
     ;
 
@@ -136,31 +163,37 @@ mat_tex : %prec NULL_REDUCE
         {
         SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $3);
         root = $$ = father;
+        free($2);
         }
         | mat_tex SEP_CLASS mat_tex 
         {
         SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
         root = $$ = father;
+        free($2);
         }
         | mat_tex SEP_DIV mat_tex 
         {
         SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
         root = $$ = father;
+        free($2);
         }
         | mat_tex OVER mat_tex 
         {
         SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
         root = $$ = father;
+        free($2);
         }
         | mat_tex TAB mat_tex 
         {
         SUB_CONS(mktoken($2, MT_TAB), $1, $3);
         root = $$ = father;
+        free($2);
         }
         | mat_tex MODULAR mat_tex 
         {
         SUB_CONS(mktoken("mod", MT_MOD), $1, $3);
         root = $$ = father;
+        free($2);
         }
         ;
 
@@ -183,11 +216,13 @@ term : factor
      {
      SUB_CONS(mktoken("×", MT_TIMES), $1, $3);
      root = $$ = father;
+     free($2);
      }
      | term DIV factor 
      {
      SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
      root = $$ = father;
+     free($2);
      }
      ;
 
@@ -212,6 +247,7 @@ atom : VAR
      {
      SUB_CONS(mktoken($1, MT_VAR), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | CONST
      {
@@ -225,6 +261,7 @@ atom : VAR
        SUB_CONS(mktoken($1, MT_CONST), NULL, NULL);
        root = $$ = father;
      }
+     free($1);
      }
      | '{' tex '}'
      {
@@ -235,56 +272,67 @@ atom : VAR
      { 
      SUB_CONS(mktoken($1, MT_DOTS), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | SUM_CLASS  
      { 
      SUB_CONS(mktoken($1, MT_SUM_CLASS), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | FUN_CLASS  
      { 
      SUB_CONS(mktoken($1, MT_FUN_CLASS), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | PARTIAL  
      { 
      SUB_CONS(mktoken($1, MT_PARTIAL), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | PI  
      { 
      SUB_CONS(mktoken($1, MT_PI), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | INFTY
      { 
      SUB_CONS(mktoken($1, MT_INFTY), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | EMPTY
      { 
      SUB_CONS(mktoken($1, MT_EMPTY), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | ANGLE 
      { 
      SUB_CONS(mktoken($1, MT_ANGLE), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | PERP 
      { 
      SUB_CONS(mktoken($1, MT_PERP), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | CIRC 
      { 
      SUB_CONS(mktoken($1, MT_CIRC), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      | PERCENT 
      { 
      SUB_CONS(mktoken($1, MT_PERCENT), NULL, NULL);
      root = $$ = father;
+     free($1);
      }
      ;
 
@@ -307,46 +355,80 @@ pack : atom
      {
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
+     free($1);
+     free($3);
      }
      | LEFT_ABS tex RIGHT_ABS 
      {
      SUB_CONS(mktoken("|abs|", MT_ABS), $2, NULL);
      root = $$ = father;
+     free($1);
+     free($3);
      }
      | LEFT_FLOOR tex RIGHT_FLOOR 
      {
      SUB_CONS(mktoken("|flo|", MT_FLOOR), $2, NULL);
      root = $$ = father;
+     free($1);
+     free($3);
      }
      | LEFT_CEIL tex RIGHT_CEIL
      {
      SUB_CONS(mktoken("|cei|", MT_CEIL), $2, NULL);
      root = $$ = father;
+     free($1);
+     free($3);
      }
      | BEGIN_MAT mat_tex END_MAT 
      {
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
+     free($1);
+     free($3);
      }
      | COMBIN atom atom 
      { 
      SUB_CONS(mktoken("C", MT_COMBIN), $2, $3);
      root = $$ = father;
+     free($1);
+     }
+     | COMBIN__ 
+     { 
+     char a[] = "a"; struct token_t *ta;
+     char b[] = "b"; struct token_t *tb;
+     a[0] = $1[strlen($1) - 2]; ta = mktoken(a, MT_VAR);
+     b[0] = $1[strlen($1) - 1]; tb = mktoken(b, MT_VAR);
+     SUB_CONS(mktoken("C", MT_COMBIN), ta, tb);
+     root = $$ = father;
+     free($1);
      }
      | FRAC atom atom 
      { 
      SUB_CONS(mktoken("/", MT_FRAC), $2, $3);
      root = $$ = father;
+     free($1);
+     }
+     | FRAC__ 
+     { 
+     char a[] = "a"; struct token_t *ta;
+     char b[] = "b"; struct token_t *tb;
+     a[0] = $1[strlen($1) - 2]; ta = mktoken(a, MT_VAR);
+     b[0] = $1[strlen($1) - 1]; tb = mktoken(b, MT_VAR);
+     SUB_CONS(mktoken("/", MT_FRAC), ta, tb);
+     root = $$ = father;
+     free($1);
      }
      | SQRT '[' tex ']' atom 
      { 
      SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
      root = $$ = father;
+     free($1);
      }
      | SQRT atom 
      { 
      SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
      root = $$ = father;
+     free($1);
      }
      ;
 

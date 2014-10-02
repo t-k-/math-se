@@ -190,9 +190,13 @@ extern unsigned int stack;
 \\begin\{subarray\}\{[^}]*\}      { BEGIN(tab); } 
 \\end\{subarray\}                 { BEGIN(INITIAL); } 
 
+\\dbinom[ ]*[0-9][0-9]  {mkstr(yytext); return COMBIN__;}
+\\tbinom[ ]*[0-9][0-9]  {mkstr(yytext); return COMBIN__;}
+\\binom[ ]*[0-9][0-9]   {mkstr(yytext); return COMBIN__;}
 \\dbinom        { mkstr(yytext); return COMBIN; }
 \\tbinom        { mkstr(yytext); return COMBIN; }
 \\binom         { mkstr(yytext); return COMBIN; }
+
 \\choose        { mkstr(yytext); return CHOOSE; }
 
 \\dots          { mkstr(yytext); return DOTS; }
@@ -350,6 +354,9 @@ extern unsigned int stack;
 \/              { mkstr(yytext); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
 \\over          { mkstr(yytext); return OVER; }
+\\frac[ ]*[0-9][0-9]  {mkstr(yytext); return FRAC__;}
+\\dfrac[ ]*[0-9][0-9] {mkstr(yytext); return FRAC__;}
+\\cfrac[ ]*[0-9][0-9] {mkstr(yytext); return FRAC__;}
 \\frac          { mkstr(yytext); return FRAC; }
 \\dfrac         { mkstr(yytext); return FRAC; }
 \\cfrac         { mkstr(yytext); return FRAC; }

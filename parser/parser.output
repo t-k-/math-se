@@ -1,33 +1,50 @@
-no_url
-\sqrt{a+b}+\sqrt{a+c}
-   └──(+) weight=9, type=add
-       │──(√) weight=4, type=sqrt
-       │   └──(+) weight=3, type=add
-       │       │──(a) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(√) weight=4, type=sqrt
-           └──(+) weight=3, type=add
-               │──(a) weight=1, type=var
-               └──(c) weight=1, type=var
+a
+a=a+
+   └──(=) weight=4, type=eq_class
+       │──(a) weight=1, type=var
+       └──(+) weight=2, type=add
+           └──(a) weight=1, type=var
 
-./var/add/sqrt/add a 1 3 4 9 
-./var/add/sqrt/add b 1 3 4 9 
-./var/add/sqrt/add a 1 3 4 9 
-./var/add/sqrt/add c 1 3 4 9 
+./var/eq_class a 1 4 
+./var/add/eq_class a 1 2 4 
 
-\sqrt{a+b}+\sqrt{c+d}
-   └──(+) weight=9, type=add
-       │──(√) weight=4, type=sqrt
-       │   └──(+) weight=3, type=add
-       │       │──(a) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(√) weight=4, type=sqrt
-           └──(+) weight=3, type=add
-               │──(c) weight=1, type=var
-               └──(d) weight=1, type=var
+\frac12
+   └──(/) weight=3, type=frac
+       │──(1) weight=1, type=var
+       └──(2) weight=1, type=var
 
-./var/add/sqrt/add a 1 3 4 9 
-./var/add/sqrt/add b 1 3 4 9 
-./var/add/sqrt/add c 1 3 4 9 
-./var/add/sqrt/add d 1 3 4 9 
+./var/frac 1 1 3 
+./var/frac 2 1 3 
+
+\dfrac12
+   └──(/) weight=3, type=frac
+       │──(1) weight=1, type=var
+       └──(2) weight=1, type=var
+
+./var/frac 1 1 3 
+./var/frac 2 1 3 
+
+\dfrac 1 b
+   └──(/) weight=3, type=frac
+       │──(1) weight=1, type=one
+       └──(b) weight=1, type=var
+
+./one/frac 1 1 3 
+./var/frac b 1 3 
+
+\dfrac ab
+   └──(/) weight=3, type=frac
+       │──(a) weight=1, type=var
+       └──(b) weight=1, type=var
+
+./var/frac a 1 3 
+./var/frac b 1 3 
+
+\dbinom12
+   └──(C) weight=3, type=combin
+       │──(1) weight=1, type=var
+       └──(2) weight=1, type=var
+
+./var/combin 1 1 3 
+./var/combin 2 1 3 
 
