@@ -9,6 +9,7 @@ Not ready to be published, keep your eyes open and have fun! :cake:
 4. lex (libl) and yacc
 5. tokyo-cabinet DBM library
 6. redis-server & hiredis library 
+7. libz libm and libbz2 
 
 A helpful example for an Ubuntu user to install all the dependencies:
 
