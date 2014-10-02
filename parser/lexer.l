@@ -32,46 +32,46 @@ extern unsigned int stack;
 \\smallsetminus { return '-'; }
 \\lnot          { return '-'; } 
 
-\\left[ ]*"."          { return LEFT; }
-\\left[ ]*"["          { return LEFT; }
-\\left[ ]*"\\{"        { return LEFT; }
-\\left[ ]*"("          { return LEFT; }
-\\left[ ]*"<"          { return LEFT; }
-\\left[ ]*"|"          { return LEFT_ABS; }
-\\left[ ]*"\\|"        { return LEFT_ABS; }
-\\left[ ]*"/"          { return LEFT; }
-\\left[ ]*\\uparrow    { return LEFT; }
-\\left[ ]*\\Uparrow    { return LEFT; }
-\\left[ ]*\\updownarrow { return LEFT; }
+\\left[ ]*"."          { return _LEFT; }
+\\left[ ]*"["          { return _LEFT; }
+\\left[ ]*"\\{"        { return _LEFT; }
+\\left[ ]*"("          { return _LEFT; }
+\\left[ ]*"<"          { return _LEFT; }
+\\left[ ]*"|"          { return _LEFT_ABS; }
+\\left[ ]*"\\|"        { return _LEFT_ABS; }
+\\left[ ]*"/"          { return _LEFT; }
+\\left[ ]*\\uparrow    { return _LEFT; }
+\\left[ ]*\\Uparrow    { return _LEFT; }
+\\left[ ]*\\updownarrow { return _LEFT; }
 
-\\right[ ]*"."         { return RIGHT; }
-\\right[ ]*"]"         { return RIGHT; }
-\\right[ ]*"\\}"       { return RIGHT; }
-\\right[ ]*")"         { return RIGHT; }
-\\right[ ]*">"         { return RIGHT; }
-\\right[ ]*"|"         { return RIGHT_ABS; }
-\\right[ ]*"\\|"       { return RIGHT_ABS; }
-\\right[ ]*\\backslash { return RIGHT; }
-\\right[ ]*\\downarrow  { return RIGHT; }
-\\right[ ]*\\Downarrow  { return RIGHT; }
-\\right[ ]*\\Updownarrow { return RIGHT; }
+\\right[ ]*"."         { return _RIGHT; }
+\\right[ ]*"]"         { return _RIGHT; }
+\\right[ ]*"\\}"       { return _RIGHT; }
+\\right[ ]*")"         { return _RIGHT; }
+\\right[ ]*">"         { return _RIGHT; }
+\\right[ ]*"|"         { return _RIGHT_ABS; }
+\\right[ ]*"\\|"       { return _RIGHT_ABS; }
+\\right[ ]*\\backslash { return _RIGHT; }
+\\right[ ]*\\downarrow  { return _RIGHT; }
+\\right[ ]*\\Downarrow  { return _RIGHT; }
+\\right[ ]*\\Updownarrow { return _RIGHT; }
 
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }
 "["|"]"         { return yytext[0]; }
 
-\\r[vV]ert      { return RIGHT_ABS; }
-\\l[vV]ert      { return LEFT_ABS; }
-\\rangle        { return RIGHT; }      
-\\langle        { return LEFT; }
-\\rfloor        { return RIGHT_FLOOR; }
-\\lfloor        { return LEFT_FLOOR; }
-\\rceil         { return RIGHT_CEIL; }
-\\lceil         { return LEFT_CEIL; }
-\\rgroup        { return RIGHT; }      
-\\lgroup        { return LEFT; }
-\\rmoustache    { return RIGHT; }      
-\\lmoustache    { return LEFT; }
+\\r[vV]ert      { return _RIGHT_ABS; }
+\\l[vV]ert      { return _LEFT_ABS; }
+\\rangle        { return _RIGHT; }      
+\\langle        { return _LEFT; }
+\\rfloor        { return _RIGHT_FLOOR; }
+\\lfloor        { return _LEFT_FLOOR; }
+\\rceil         { return _RIGHT_CEIL; }
+\\lceil         { return _LEFT_CEIL; }
+\\rgroup        { return _RIGHT; }      
+\\lgroup        { return _LEFT; }
+\\rmoustache    { return _RIGHT; }      
+\\lmoustache    { return _LEFT; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 :=              { mkstr(yytext); return EQ_CLASS; }
@@ -351,7 +351,7 @@ extern unsigned int stack;
 \\times         { mkstr(yytext); return TIMES; }
 \\cdot          { mkstr(yytext); return TIMES; }
 
-\/              { mkstr(yytext); return DIV; }
+\/              { mkstr("slash"); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
 \\over          { mkstr(yytext); return OVER; }
 \\frac[ ]*[0-9][0-9]  {mkstr(yytext); return FRAC__;}

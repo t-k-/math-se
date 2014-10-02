@@ -1,50 +1,63 @@
-a
-a=a+
-   └──(=) weight=4, type=eq_class
+nil
+a+b+c
+   └──(+) weight=4, type=add
        │──(a) weight=1, type=var
-       └──(+) weight=2, type=add
-           └──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./var/eq_class a 1 4 
-./var/add/eq_class a 1 2 4 
+./var/add a 1 4 
+./var/add b 1 4 
+./var/add c 1 4 
 
-\frac12
-   └──(/) weight=3, type=frac
-       │──(1) weight=1, type=var
-       └──(2) weight=1, type=var
+(a+b+c)
+   └──(+) weight=4, type=add
+       │──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./var/frac 1 1 3 
-./var/frac 2 1 3 
+./var/add a 1 4 
+./var/add b 1 4 
+./var/add c 1 4 
 
-\dfrac12
-   └──(/) weight=3, type=frac
-       │──(1) weight=1, type=var
-       └──(2) weight=1, type=var
-
-./var/frac 1 1 3 
-./var/frac 2 1 3 
-
-\dfrac 1 b
-   └──(/) weight=3, type=frac
-       │──(1) weight=1, type=one
+(a+b+c)+b
+   └──(+) weight=5, type=add
+       │──(a) weight=1, type=var
+       │──(b) weight=2, type=var
+       │──(c) weight=1, type=var
        └──(b) weight=1, type=var
 
-./one/frac 1 1 3 
-./var/frac b 1 3 
+./var/add a 1 5 
+./var/add b 2 5 
+./var/add c 1 5 
 
-\dfrac ab
-   └──(/) weight=3, type=frac
+(a+b+c)-bb
+   └──(+) weight=8, type=add
        │──(a) weight=1, type=var
+       │──(b) weight=1, type=var
+       │──(c) weight=1, type=var
+       └──(-) weight=4, type=neg
+           └──(⋅) weight=3, type=times
+               │──(b) weight=2, type=var
+               └──(b) weight=1, type=var
+
+./var/add a 1 8 
+./var/add b 1 8 
+./var/add c 1 8 
+./var/times/neg/add b 2 3 4 8 
+
+((a+b+c)-b)b
+   └──(⋅) weight=8, type=times
+       │──(+) weight=6, type=add
+       │   │──(a) weight=1, type=var
+       │   │──(b) weight=1, type=var
+       │   │──(c) weight=1, type=var
+       │   └──(-) weight=2, type=neg
+       │       └──(b) weight=1, type=var
        └──(b) weight=1, type=var
 
-./var/frac a 1 3 
-./var/frac b 1 3 
-
-\dbinom12
-   └──(C) weight=3, type=combin
-       │──(1) weight=1, type=var
-       └──(2) weight=1, type=var
-
-./var/combin 1 1 3 
-./var/combin 2 1 3 
+./var/add/times a 1 6 8 
+./var/add/times b 1 6 8 
+./var/add/times c 1 6 8 
+./var/neg/add/times b 1 2 6 8 
+./var/times b 1 8 
 

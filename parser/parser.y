@@ -17,12 +17,11 @@
 
 %error-verbose
 
-%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT LEFT 
-%token <s> RIGHT PI EMPTY MODULAR ANGLE PERP CIRC VAR 
-%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS DOTS 
-%token <s> PARTIAL INFTY END_MAT FRAC__ RIGHT_FLOOR PERCENT
-%token <s> LEFT_FLOOR RIGHT_CEIL LEFT_CEIL STACKREL CHOOSE
-%token <s> LEFT_ABS RIGHT_ABS OVER COMBIN COMBIN__ SEP_DIV
+%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT DOTS
+%token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR SEP_DIV
+%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS 
+%token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT
+%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
  
 %type <p> tex mat_tex term factor pack atom script
 
@@ -38,7 +37,7 @@
 %nonassoc '!'
 %right '^' '_'
 %left TIMES DIV
-%nonassoc '{' '}' '(' ')' '[' ']' LEFT RIGHT
+%nonassoc '{' '}' '(' ')' '[' ']' _LEFT _RIGHT _LEFT_ABS _RIGHT_ABS _LEFT_CEIL _RIGHT_CEIL _LEFT_FLOOR _RIGHT_FLOOR
 
 %destructor { matree_release($$); } <p>
 %destructor { free($$);} <s>
@@ -351,33 +350,25 @@ pack : atom
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
-     | LEFT tex RIGHT 
+     | _LEFT tex _RIGHT 
      {
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
-     free($1);
-     free($3);
      }
-     | LEFT_ABS tex RIGHT_ABS 
+     | _LEFT_ABS tex _RIGHT_ABS 
      {
      SUB_CONS(mktoken("|abs|", MT_ABS), $2, NULL);
      root = $$ = father;
-     free($1);
-     free($3);
      }
-     | LEFT_FLOOR tex RIGHT_FLOOR 
+     | _LEFT_FLOOR tex _RIGHT_FLOOR 
      {
      SUB_CONS(mktoken("|flo|", MT_FLOOR), $2, NULL);
      root = $$ = father;
-     free($1);
-     free($3);
      }
-     | LEFT_CEIL tex RIGHT_CEIL
+     | _LEFT_CEIL tex _RIGHT_CEIL
      {
      SUB_CONS(mktoken("|cei|", MT_CEIL), $2, NULL);
      root = $$ = father;
-     free($1);
-     free($3);
      }
      | BEGIN_MAT mat_tex END_MAT 
      {

@@ -1,21 +1,193 @@
-nill
-\operatorname{erf}
-   └──(_operatorname{erf}) weight=1, type=fun_class
+nil
+ f(x,y)=e^{-\beta\left(x^{2}+y^{2}\right)} 
+   └──(=) weight=21, type=eq_class
+       │──(⋅) weight=5, type=times
+       │   │──(f) weight=1, type=var
+       │   └──(,) weight=3, type=sep_class
+       │       │──(x) weight=1, type=var
+       │       └──(y) weight=1, type=var
+       └──([) weight=15, type=sus
+           │──(^) weight=13, type=sups
+           │   └──(⋅) weight=12, type=times
+           │       │──(-) weight=2, type=neg
+           │       │   └──(_beta) weight=1, type=var
+           │       └──(+) weight=9, type=add
+           │           │──([) weight=4, type=sus
+           │           │   │──(^) weight=2, type=sups
+           │           │   │   └──(2) weight=1, type=const
+           │           │   └──(x) weight=1, type=var
+           │           └──([) weight=4, type=sus
+           │               │──(^) weight=2, type=sups
+           │               │   └──(2) weight=1, type=const
+           │               └──(y) weight=1, type=var
+           └──(e) weight=1, type=var
 
-./fun_class _operatorname{er 1 
+./var/times/eq_class f 1 5 21 
+./var/sep_class/times/eq_class x 1 3 5 21 
+./var/sep_class/times/eq_class y 1 3 5 21 
+./var/neg/times/sups/sus/eq_class _beta 1 2 12 13 15 21 
+./const/sups/sus/add/times/sups/sus/eq_class 2 1 2 4 9 12 13 15 21 
+./var/sus/add/times/sups/sus/eq_class x 1 4 9 12 13 15 21 
+./const/sups/sus/add/times/sups/sus/eq_class 2 1 2 4 9 12 13 15 21 
+./var/sus/add/times/sups/sus/eq_class y 1 4 9 12 13 15 21 
+./var/sus/eq_class e 1 15 21 
 
-\operatorname*{erf}
-   └──(_operatorname*{erf}) weight=1, type=fun_class
+\int_{-r}^r dx \, e^{-\beta x^2} \, \int_0^{a+r-\sqrt{r^2-x^2}} dy \, e^{-\beta y^2}
+   └──(⋅) weight=52, type=times
+       │──([) weight=7, type=sus
+       │   │──(_) weight=3, type=subs
+       │   │   └──(-) weight=2, type=neg
+       │   │       └──(r) weight=1, type=var
+       │   │──(^) weight=2, type=sups
+       │   │   └──(r) weight=1, type=var
+       │   └──(_int) weight=1, type=sum_class
+       │──(d) weight=2, type=var
+       │──(x) weight=1, type=var
+       │──([) weight=10, type=sus
+       │   │──(^) weight=8, type=sups
+       │   │   └──(⋅) weight=7, type=times
+       │   │       │──(-) weight=2, type=neg
+       │   │       │   └──(_beta) weight=1, type=var
+       │   │       └──([) weight=4, type=sus
+       │   │           │──(^) weight=2, type=sups
+       │   │           │   └──(2) weight=1, type=const
+       │   │           └──(x) weight=1, type=var
+       │   └──(e) weight=1, type=var
+       │──([) weight=20, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(0) weight=1, type=zero
+       │   │──(^) weight=16, type=sups
+       │   │   └──(+) weight=15, type=add
+       │   │       │──(a) weight=1, type=var
+       │   │       │──(r) weight=1, type=var
+       │   │       └──(-) weight=12, type=neg
+       │   │           └──(√) weight=11, type=sqrt
+       │   │               └──(+) weight=10, type=add
+       │   │                   │──([) weight=4, type=sus
+       │   │                   │   │──(^) weight=2, type=sups
+       │   │                   │   │   └──(2) weight=1, type=const
+       │   │                   │   └──(r) weight=1, type=var
+       │   │                   └──(-) weight=5, type=neg
+       │   │                       └──([) weight=4, type=sus
+       │   │                           │──(^) weight=2, type=sups
+       │   │                           │   └──(2) weight=1, type=const
+       │   │                           └──(x) weight=1, type=var
+       │   └──(_int) weight=1, type=sum_class
+       │──(d) weight=1, type=var
+       │──(y) weight=1, type=var
+       └──([) weight=10, type=sus
+           │──(^) weight=8, type=sups
+           │   └──(⋅) weight=7, type=times
+           │       │──(-) weight=2, type=neg
+           │       │   └──(_beta) weight=1, type=var
+           │       └──([) weight=4, type=sus
+           │           │──(^) weight=2, type=sups
+           │           │   └──(2) weight=1, type=const
+           │           └──(y) weight=1, type=var
+           └──(e) weight=1, type=var
 
-./fun_class _operatorname*{e 1 
+./var/neg/subs/sus/times r 1 2 3 7 52 
+./var/sups/sus/times r 1 2 7 52 
+./int/sus/times _int 1 7 52 
+./var/times d 2 52 
+./var/times x 1 52 
+./var/neg/times/sups/sus/times _beta 1 2 7 8 10 52 
+./const/sups/sus/times/sups/sus/times 2 1 2 4 7 8 10 52 
+./var/sus/times/sups/sus/times x 1 4 7 8 10 52 
+./var/sus/times e 1 10 52 
+./zero/subs/sus/times 0 1 2 20 52 
+./var/add/sups/sus/times a 1 15 16 20 52 
+./var/add/sups/sus/times r 1 15 16 20 52 
+./const/sups/sus/add/sqrt/neg/add/sups/sus/times 2 1 2 4 10 11 12 15 16 20 52 
+./var/sus/add/sqrt/neg/add/sups/sus/times r 1 4 10 11 12 15 16 20 52 
+./const/sups/sus/neg/add/sqrt/neg/add/sups/sus/times 2 1 2 4 5 10 11 12 15 16 20 52 
+./var/sus/neg/add/sqrt/neg/add/sups/sus/times x 1 4 5 10 11 12 15 16 20 52 
+./int/sus/times _int 1 20 52 
+./var/times y 1 52 
+./var/neg/times/sups/sus/times _beta 1 2 7 8 10 52 
+./const/sups/sus/times/sups/sus/times 2 1 2 4 7 8 10 52 
+./var/sus/times/sups/sus/times y 1 4 7 8 10 52 
+./var/sus/times e 1 10 52 
 
-\operatorname*{erf}
-   └──(_operatorname*{erf}) weight=1, type=fun_class
+\frac12 \sqrt{\frac{\pi}{\beta}} \int_{-r}^r dx \, e^{-\beta x^2} \operatorname*{erf}{\left [ \sqrt{\beta} \left ( a+r-\sqrt{r^2-x^2}\right )\right ]}
+   └──(⋅) weight=45, type=times
+       │──(/) weight=3, type=frac
+       │   │──(1) weight=1, type=var
+       │   └──(2) weight=1, type=var
+       │──(√) weight=4, type=sqrt
+       │   └──(/) weight=3, type=frac
+       │       │──(_pi) weight=1, type=pi
+       │       └──(_beta) weight=1, type=var
+       │──([) weight=7, type=sus
+       │   │──(_) weight=3, type=subs
+       │   │   └──(-) weight=2, type=neg
+       │   │       └──(r) weight=1, type=var
+       │   │──(^) weight=2, type=sups
+       │   │   └──(r) weight=1, type=var
+       │   └──(_int) weight=1, type=sum_class
+       │──(d) weight=1, type=var
+       │──(x) weight=1, type=var
+       │──([) weight=10, type=sus
+       │   │──(^) weight=8, type=sups
+       │   │   └──(⋅) weight=7, type=times
+       │   │       │──(-) weight=2, type=neg
+       │   │       │   └──(_beta) weight=1, type=var
+       │   │       └──([) weight=4, type=sus
+       │   │           │──(^) weight=2, type=sups
+       │   │           │   └──(2) weight=1, type=const
+       │   │           └──(x) weight=1, type=var
+       │   └──(e) weight=1, type=var
+       │──(_operatorname*{erf}) weight=1, type=fun_class
+       │──(√) weight=2, type=sqrt
+       │   └──(_beta) weight=1, type=var
+       └──(+) weight=15, type=add
+           │──(a) weight=1, type=var
+           │──(r) weight=1, type=var
+           └──(-) weight=12, type=neg
+               └──(√) weight=11, type=sqrt
+                   └──(+) weight=10, type=add
+                       │──([) weight=4, type=sus
+                       │   │──(^) weight=2, type=sups
+                       │   │   └──(2) weight=1, type=const
+                       │   └──(r) weight=1, type=var
+                       └──(-) weight=5, type=neg
+                           └──([) weight=4, type=sus
+                               │──(^) weight=2, type=sups
+                               │   └──(2) weight=1, type=const
+                               └──(x) weight=1, type=var
 
-./fun_class _operatorname*{e 1 
+./var/frac/times 1 1 3 45 
+./var/frac/times 2 1 3 45 
+./pi/frac/sqrt/times _pi 1 3 4 45 
+./var/frac/sqrt/times _beta 1 3 4 45 
+./var/neg/subs/sus/times r 1 2 3 7 45 
+./var/sups/sus/times r 1 2 7 45 
+./int/sus/times _int 1 7 45 
+./var/times d 1 45 
+./var/times x 1 45 
+./var/neg/times/sups/sus/times _beta 1 2 7 8 10 45 
+./const/sups/sus/times/sups/sus/times 2 1 2 4 7 8 10 45 
+./var/sus/times/sups/sus/times x 1 4 7 8 10 45 
+./var/sus/times e 1 10 45 
+./fun_class/times _operatorname*{erf} 1 45 
+./var/sqrt/times _beta 1 2 45 
+./var/add/times a 1 15 45 
+./var/add/times r 1 15 45 
+./const/sups/sus/add/sqrt/neg/add/times 2 1 2 4 10 11 12 15 45 
+./var/sus/add/sqrt/neg/add/times r 1 4 10 11 12 15 45 
+./const/sups/sus/neg/add/sqrt/neg/add/times 2 1 2 4 5 10 11 12 15 45 
+./var/sus/neg/add/sqrt/neg/add/times x 1 4 5 10 11 12 15 45 
 
-\operatorname*{erf}
-   └──(_operatorname*{erf}) weight=1, type=fun_class
+x=r \cos{\theta}
+   └──(=) weight=6, type=eq_class
+       │──(x) weight=1, type=var
+       └──(⋅) weight=4, type=times
+           │──(r) weight=1, type=var
+           │──(_cos) weight=1, type=fun_class
+           └──(_theta) weight=1, type=var
 
-./fun_class _operatorname*{e 1 
+./var/eq_class x 1 6 
+./var/times/eq_class r 1 4 6 
+./fun_class/times/eq_class _cos 1 4 6 
+./var/times/eq_class _theta 1 4 6 
 
