@@ -7,7 +7,7 @@ define cl_insert
 @ echo $1 >> toclean.list
 endef
 
-.PHONY: all clean
+.PHONY: all clean example
 
 all: $(LIB_NAME) ../lib$(LIB_NAME).a
 
@@ -44,7 +44,11 @@ tree.o: ../tree.c
 	$(CC) $(CFLAGS) $*.c -c 
 	$(CC) $(CFLAGS) -MM $*.c -o $*.d
 
+example:
+	make -C ./example/frac
+
 clean:
 	cat toclean.list | xargs rm -f
 	rm -f toclean.list
 	rm -f *.o *.d *.a $(LIB_NAME) test.out
+	make clean -C ./example/frac

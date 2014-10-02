@@ -335,7 +335,7 @@ extern unsigned int stack;
 \\sgn           { mkstr(yytext); return FUN_CLASS; }
 \\signum        { mkstr(yytext); return FUN_CLASS; }
 \\sign          { mkstr(yytext); return FUN_CLASS; }
-\\operatorname\{[^}]*\} { mkstr(yytext); return FUN_CLASS; }
+\\operatorname\*?\{[^}]*\} { mkstr(yytext); return FUN_CLASS; }
 \\ker           { mkstr(yytext); return FUN_CLASS; }
 \\deg           { mkstr(yytext); return FUN_CLASS; }
 \\gcd           { mkstr(yytext); return FUN_CLASS; }
