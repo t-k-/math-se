@@ -414,10 +414,10 @@ extern unsigned int stack;
 \\varphi        { mkstr(yytext); return VAR; } 
 \\top           { mkstr(yytext); return VAR; }
 
-\\color\{        { BEGIN(ign); stack = 1; } /* omit color */
-\\mbox\{         { BEGIN(ign); stack = 1; } /* omit mbox */
-\\label\{[^}]*\} { BEGIN(ign); stack = 1; } /* skip label */
-\\tag\{[^}]*\}   { BEGIN(ign); stack = 1; } /* skip tag */
+\\color\{       { BEGIN(ign); stack = 1; } 
+\\mbox\{        { BEGIN(ign); stack = 1; }
+\\label\{       { BEGIN(ign); stack = 1; }
+\\tag\{         { BEGIN(ign); stack = 1; }
 
 <ign>\{         { stack ++; }
 <ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
