@@ -1,63 +1,27 @@
-nil
-a+b+c
-   └──(+) weight=4, type=add
-       │──(a) weight=1, type=var
-       │──(b) weight=1, type=var
-       └──(c) weight=1, type=var
+n
+{z^2 \over (z^2-1)}; \ \ z=1 
+   └──(;) weight=16, type=sep_class
+       │──(_over) weight=12, type=frac
+       │   │──([) weight=4, type=sus
+       │   │   │──(^) weight=2, type=sups
+       │   │   │   └──(2) weight=1, type=const
+       │   │   └──(z) weight=1, type=var
+       │   └──(+) weight=7, type=add
+       │       │──([) weight=4, type=sus
+       │       │   │──(^) weight=2, type=sups
+       │       │   │   └──(2) weight=1, type=const
+       │       │   └──(z) weight=1, type=var
+       │       └──(-) weight=2, type=neg
+       │           └──(1) weight=1, type=one
+       └──(=) weight=3, type=eq_class
+           │──(z) weight=1, type=var
+           └──(1) weight=1, type=one
 
-./var/add a 1 4 
-./var/add b 1 4 
-./var/add c 1 4 
-
-(a+b+c)
-   └──(+) weight=4, type=add
-       │──(a) weight=1, type=var
-       │──(b) weight=1, type=var
-       └──(c) weight=1, type=var
-
-./var/add a 1 4 
-./var/add b 1 4 
-./var/add c 1 4 
-
-(a+b+c)+b
-   └──(+) weight=5, type=add
-       │──(a) weight=1, type=var
-       │──(b) weight=2, type=var
-       │──(c) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/add a 1 5 
-./var/add b 2 5 
-./var/add c 1 5 
-
-(a+b+c)-bb
-   └──(+) weight=8, type=add
-       │──(a) weight=1, type=var
-       │──(b) weight=1, type=var
-       │──(c) weight=1, type=var
-       └──(-) weight=4, type=neg
-           └──(⋅) weight=3, type=times
-               │──(b) weight=2, type=var
-               └──(b) weight=1, type=var
-
-./var/add a 1 8 
-./var/add b 1 8 
-./var/add c 1 8 
-./var/times/neg/add b 2 3 4 8 
-
-((a+b+c)-b)b
-   └──(⋅) weight=8, type=times
-       │──(+) weight=6, type=add
-       │   │──(a) weight=1, type=var
-       │   │──(b) weight=1, type=var
-       │   │──(c) weight=1, type=var
-       │   └──(-) weight=2, type=neg
-       │       └──(b) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/add/times a 1 6 8 
-./var/add/times b 1 6 8 
-./var/add/times c 1 6 8 
-./var/neg/add/times b 1 2 6 8 
-./var/times b 1 8 
+./const/sups/sus/frac/sep_class 2 1 2 4 12 16 
+./var/sus/frac/sep_class z 1 4 12 16 
+./const/sups/sus/add/frac/sep_class 2 1 2 4 7 12 16 
+./var/sus/add/frac/sep_class z 1 4 7 12 16 
+./one/neg/add/frac/sep_class 1 1 2 7 12 16 
+./var/eq_class/sep_class z 1 3 16 
+./one/eq_class/sep_class 1 1 3 16 
 
