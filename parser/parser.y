@@ -19,7 +19,7 @@
 
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT DOTS
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR SEP_DIV
-%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS 
+%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS _ABS
 %token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT
 %token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
  
@@ -38,8 +38,7 @@
 %right '^' '_'
 %left TIMES DIV
 %nonassoc '{' '}' '(' ')' '[' ']' 
-%nonassoc _LEFT _RIGHT _LEFT_FLOOR _RIGHT_FLOOR
-%nonassoc _LEFT_ABS _RIGHT_ABS _LEFT_CEIL _RIGHT_CEIL 
+%nonassoc _LEFT _RIGHT _LEFT_FLOOR _RIGHT_FLOOR _LEFT_CEIL _RIGHT_CEIL 
 
 %destructor { matree_release($$); } <p>
 %destructor { free($$);} <s>
@@ -335,6 +334,12 @@ atom : VAR
      SUB_CONS(mktoken("*", MT_STAR), NULL, NULL);
      root = $$ = father;
      }
+     | _ABS 
+     {
+     SUB_CONS(mktoken($1, MT_ABS), NULL, NULL);
+     root = $$ = father;
+     free($1);
+     }
      ;
 
 pack : atom 
@@ -357,19 +362,14 @@ pack : atom
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
-     | _LEFT_ABS tex _RIGHT_ABS 
-     {
-     SUB_CONS(mktoken("|abs|", MT_ABS), $2, NULL);
-     root = $$ = father;
-     }
      | _LEFT_FLOOR tex _RIGHT_FLOOR 
      {
-     SUB_CONS(mktoken("|flo|", MT_FLOOR), $2, NULL);
+     SUB_CONS(mktoken("floor", MT_FLOOR), $2, NULL);
      root = $$ = father;
      }
      | _LEFT_CEIL tex _RIGHT_CEIL
      {
-     SUB_CONS(mktoken("|cei|", MT_CEIL), $2, NULL);
+     SUB_CONS(mktoken("ceil", MT_CEIL), $2, NULL);
      root = $$ = father;
      }
      | BEGIN_MAT mat_tex END_MAT 

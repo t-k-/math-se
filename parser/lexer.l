@@ -37,31 +37,33 @@ extern unsigned int stack;
 \\left[ ]*"\\{"        { return _LEFT; }
 \\left[ ]*"("          { return _LEFT; }
 \\left[ ]*"<"          { return _LEFT; }
-\\left[ ]*"|"          { return _LEFT_ABS; }
-\\left[ ]*"\\|"        { return _LEFT_ABS; }
 \\left[ ]*"/"          { return _LEFT; }
 \\left[ ]*\\uparrow    { return _LEFT; }
 \\left[ ]*\\Uparrow    { return _LEFT; }
 \\left[ ]*\\updownarrow { return _LEFT; }
+\\left                 { return _LEFT; }
 
 \\right[ ]*"."         { return _RIGHT; }
 \\right[ ]*"]"         { return _RIGHT; }
 \\right[ ]*"\\}"       { return _RIGHT; }
 \\right[ ]*")"         { return _RIGHT; }
 \\right[ ]*">"         { return _RIGHT; }
-\\right[ ]*"|"         { return _RIGHT_ABS; }
-\\right[ ]*"\\|"       { return _RIGHT_ABS; }
 \\right[ ]*\\backslash { return _RIGHT; }
 \\right[ ]*\\downarrow  { return _RIGHT; }
 \\right[ ]*\\Downarrow  { return _RIGHT; }
 \\right[ ]*\\Updownarrow { return _RIGHT; }
+\\right                { return _RIGHT; }
+
+ /* ABS is a crazy mass */
+\\r[vV]ert      { mkstr(yytext); return _ABS; }
+\\l[vV]ert      { mkstr(yytext); return _ABS; }
+"\\|"           { mkstr(yytext); return _ABS; }
+"|"             { mkstr(yytext); return _ABS; }
 
 "("|"\\{"       { return '('; }
 ")"|"\\}"       { return ')'; }
 "["|"]"         { return yytext[0]; }
 
-\\r[vV]ert      { return _RIGHT_ABS; }
-\\l[vV]ert      { return _LEFT_ABS; }
 \\rangle        { return _RIGHT; }      
 \\langle        { return _LEFT; }
 \\rfloor        { return _RIGHT_FLOOR; }
@@ -208,7 +210,6 @@ extern unsigned int stack;
 ,               { mkstr(yytext); return SEP_CLASS; }
 ;               { mkstr(yytext); return SEP_CLASS; }
 \\;             { mkstr(yytext); return SEP_CLASS; }
-"|"             { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
 \\mid           { mkstr(yytext); return SEP_CLASS; }
 \\nmid          { mkstr(yytext); return SEP_CLASS; }
