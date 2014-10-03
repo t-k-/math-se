@@ -90,6 +90,11 @@ def crawl(start_page, end_page):
 
 def crawl_force(id):
 	c = pycurl.Curl()
+	c.setopt(c.CONNECTTIMEOUT, 8)
+	c.setopt(c.TIMEOUT, 10)
+
+	if not os.path.exists(root_url):
+		os.makedirs(root_url)
 
 	save_path = root_url + '/question-summary-' + id 
 	if os.path.isfile(save_path):

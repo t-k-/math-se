@@ -1,18 +1,10 @@
-l
-[[ c + b ]  a + n ] c
-   └──(⋅) weight=9, type=times
-       │──(+) weight=7, type=add
-       │   │──(⋅) weight=5, type=times
-       │   │   │──(+) weight=3, type=add
-       │   │   │   │──(c) weight=1, type=var
-       │   │   │   └──(b) weight=1, type=var
-       │   │   └──(a) weight=1, type=var
-       │   └──(n) weight=1, type=var
-       └──(c) weight=1, type=var
+nil
+\chi_a
+   └──([) weight=4, type=sus
+       │──(_) weight=2, type=subs
+       │   └──(a) weight=1, type=var
+       └──(_chi) weight=1, type=var
 
-./var/add/times/add/times c 1 3 5 7 9 
-./var/add/times/add/times b 1 3 5 7 9 
-./var/times/add/times a 1 5 7 9 
-./var/add/times n 1 7 9 
-./var/times c 1 9 
+./var/subs/sus a 1 2 4 
+./var/sus _chi 1 4 
 
