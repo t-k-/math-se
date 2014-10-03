@@ -15,6 +15,7 @@ while read rfile
 do
 	path=./${1}/$rfile
 	echo -n "${path} \t\t" | tee -a ${output};
+	sed -i -e 's/\r//g' $path # make sure no <CR>
 	./parser.ln nil < $path > /dev/null
 	status="$? / `wc -l $path`"
 	echo $status | awk '{exit ($1 == $3)}'
