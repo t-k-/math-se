@@ -442,10 +442,6 @@ extern unsigned int stack;
 <dim>px\}?      { BEGIN(INITIAL); }
 <dim>.          {}
 
-"^*"            {} /* omit star super-scripts */
-"_*"            {} /* omit star sub-scripts */
-
-
 \\[a-zA-Z]+     {} /* omit undefined control sequence */
 .               {}
 %%

@@ -1,27 +1,136 @@
-n
-{z^2 \over (z^2-1)}; \ \ z=1 
-   └──(;) weight=16, type=sep_class
-       │──(_over) weight=12, type=frac
-       │   │──([) weight=4, type=sus
-       │   │   │──(^) weight=2, type=sups
-       │   │   │   └──(2) weight=1, type=const
-       │   │   └──(z) weight=1, type=var
-       │   └──(+) weight=7, type=add
-       │       │──([) weight=4, type=sus
-       │       │   │──(^) weight=2, type=sups
-       │       │   │   └──(2) weight=1, type=const
-       │       │   └──(z) weight=1, type=var
-       │       └──(-) weight=2, type=neg
-       │           └──(1) weight=1, type=one
-       └──(=) weight=3, type=eq_class
-           │──(z) weight=1, type=var
+a
+-
+   └──(+) weight=3, type=add
+       │──(NULL) weight=1, type=null
+       └──(-) weight=1, type=neg
+
+./null/add NULL 1 3 
+./neg/add - 1 3 
+
+a_-
+   └──([) weight=4, type=sus
+       │──(_) weight=2, type=subs
+       │   └──(-) weight=1, type=neg
+       └──(a) weight=1, type=var
+
+./neg/subs/sus - 1 2 4 
+./var/sus a 1 4 
+
+a_{-}
+   └──([) weight=6, type=sus
+       │──(_) weight=4, type=subs
+       │   └──(+) weight=3, type=add
+       │       │──(NULL) weight=1, type=null
+       │       └──(-) weight=1, type=neg
+       └──(a) weight=1, type=var
+
+./null/add/subs/sus NULL 1 3 4 6 
+./neg/add/subs/sus - 1 3 4 6 
+./var/sus a 1 6 
+
+1-
+   └──(+) weight=3, type=add
+       │──(1) weight=1, type=one
+       └──(-) weight=1, type=neg
+
+./one/add 1 1 3 
+./neg/add - 1 3 
+
+-1
+   └──(+) weight=4, type=add
+       │──(NULL) weight=1, type=null
+       └──(-) weight=2, type=neg
            └──(1) weight=1, type=one
 
-./const/sups/sus/frac/sep_class 2 1 2 4 12 16 
-./var/sus/frac/sep_class z 1 4 12 16 
-./const/sups/sus/add/frac/sep_class 2 1 2 4 7 12 16 
-./var/sus/add/frac/sep_class z 1 4 7 12 16 
-./one/neg/add/frac/sep_class 1 1 2 7 12 16 
-./var/eq_class/sep_class z 1 3 16 
-./one/eq_class/sep_class 1 1 3 16 
+./null/add NULL 1 4 
+./one/neg/add 1 1 2 4 
+
++
+   └──(+) weight=2, type=add
+       └──(NULL) weight=1, type=null
+
+./null/add NULL 1 2 
+
+1+
+   └──(+) weight=2, type=add
+       └──(1) weight=1, type=one
+
+./one/add 1 1 2 
+
++1
+   └──(+) weight=3, type=add
+       │──(NULL) weight=1, type=null
+       └──(1) weight=1, type=one
+
+./null/add NULL 1 3 
+./one/add 1 1 3 
+
++
+   └──(+) weight=2, type=add
+       └──(NULL) weight=1, type=null
+
+./null/add NULL 1 2 
+
+a-
+   └──(+) weight=3, type=add
+       │──(a) weight=1, type=var
+       └──(-) weight=1, type=neg
+
+./var/add a 1 3 
+./neg/add - 1 3 
+
+-a
+   └──(+) weight=4, type=add
+       │──(NULL) weight=1, type=null
+       └──(-) weight=2, type=neg
+           └──(a) weight=1, type=var
+
+./null/add NULL 1 4 
+./var/neg/add a 1 2 4 
+
+-
+   └──(+) weight=3, type=add
+       │──(NULL) weight=1, type=null
+       └──(-) weight=1, type=neg
+
+./null/add NULL 1 3 
+./neg/add - 1 3 
+
+a_-
+   └──([) weight=4, type=sus
+       │──(_) weight=2, type=subs
+       │   └──(-) weight=1, type=neg
+       └──(a) weight=1, type=var
+
+./neg/subs/sus - 1 2 4 
+./var/sus a 1 4 
+
+a+
+   └──(+) weight=2, type=add
+       └──(a) weight=1, type=var
+
+./var/add a 1 2 
+
++a
+   └──(+) weight=3, type=add
+       │──(NULL) weight=1, type=null
+       └──(a) weight=1, type=var
+
+./null/add NULL 1 3 
+./var/add a 1 3 
+
++
+   └──(+) weight=2, type=add
+       └──(NULL) weight=1, type=null
+
+./null/add NULL 1 2 
+
+a^+
+   └──([) weight=4, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(+) weight=1, type=pos
+       └──(a) weight=1, type=var
+
+./pos/sups/sus + 1 2 4 
+./var/sus a 1 4 
 

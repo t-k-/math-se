@@ -19,6 +19,8 @@ enum type_enum {
 	MT_TAB,
 	MT_MOD,
 	MT_ADD,
+	MT_POS,
+	MT_STAR,
 	MT_SUM_CLASS,
 	MT_FUN_CLASS,
 	MT_DOTS,

@@ -23,7 +23,7 @@
 %token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT
 %token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
  
-%type <p> tex mat_tex term factor pack atom script
+%type <p> tex mat_tex term factor pack atom s_atom script
 
 %right OVER CHOOSE
 %right TAB
@@ -75,7 +75,7 @@ tex : %prec NULL_REDUCE
     }
     | tex '-' 
     {
-    SUB_CONS(mktoken("+", MT_ADD), $1, NULL);
+    SUB_CONS(mktoken("+", MT_ADD), $1, mktoken("-", MT_NEG));
     root = $$ = father;
     }
     | tex EQ_CLASS tex 
@@ -201,11 +201,6 @@ mat_tex : %prec NULL_REDUCE
 term : factor 
      { 
      SUB_CONS($1, NULL, NULL);
-     root = $$ = father;
-     }
-     | '-' factor
-     { 
-     SUB_CONS(mktoken("-", MT_NEG), $2, NULL);
      root = $$ = father;
      }
      | term factor 
@@ -335,6 +330,11 @@ atom : VAR
      root = $$ = father;
      free($1);
      }
+     | '*'
+     {
+     SUB_CONS(mktoken("*", MT_STAR), NULL, NULL);
+     root = $$ = father;
+     }
      ;
 
 pack : atom 
@@ -425,21 +425,38 @@ pack : atom
      }
      ;
 
-script : '_' atom
+s_atom : atom 
+       {
+       SUB_CONS($1, NULL, NULL);
+       root = $$ = father;
+       }
+       | '+' 
+       {
+       SUB_CONS(mktoken("+", MT_POS), NULL, NULL);
+       root = $$ = father;
+       }
+       | '-' 
+       {
+       SUB_CONS(mktoken("-", MT_NEG), NULL, NULL);
+       root = $$ = father;
+       }
+       ;
+
+script : '_' s_atom
        { 
        struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
        matree_attach($2, sub);
        SUB_CONS(mktoken("[", MT_SU_SCRIPT), sub, NULL);
        root = $$ = father;
        }
-       | '^' atom
+       | '^' s_atom
        { 
        struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
        matree_attach($2, sup);
        SUB_CONS(mktoken("[", MT_SU_SCRIPT), NULL, sup);
        root = $$ = father;
        }
-       | '_' atom '^' atom
+       | '_' s_atom '^' s_atom
        { 
        struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
        struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
@@ -448,7 +465,7 @@ script : '_' atom
        SUB_CONS(mktoken("[", MT_SU_SCRIPT), sub, sup);
        root = $$ = father;
        }
-       | '^' atom '_' atom
+       | '^' s_atom '_' s_atom
        { 
        struct token_t *sub = mktoken("_", MT_SUB_SCRIPT);
        struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);

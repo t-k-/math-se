@@ -19,6 +19,9 @@ static char *str_type(int t_num)
 		case MT_ADD:
 			sprintf(out, "add");
 			break;
+		case MT_POS:
+			sprintf(out, "pos");
+			break;
 		case MT_MOD:
 			sprintf(out, "mod");
 			break;
@@ -93,6 +96,9 @@ static char *str_type(int t_num)
 			break;
 		case MT_NEG:
 			sprintf(out, "neg");
+			break;
+		case MT_STAR:
+			sprintf(out, "star");
 			break;
 		case MT_SU_SCRIPT:
 			sprintf(out, "sus");
