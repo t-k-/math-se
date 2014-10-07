@@ -325,6 +325,10 @@ extern unsigned int stack;
 \\varinjlim     { mkstr(yytext); return SUM_CLASS; }
 \\projlim       { mkstr(yytext); return SUM_CLASS; }
 \\varprojlim    { mkstr(yytext); return SUM_CLASS; }
+\\liminf        { mkstr(yytext); return SUM_CLASS; }
+\\varliminf     { mkstr(yytext); return SUM_CLASS; }
+\\limsup        { mkstr(yytext); return SUM_CLASS; }
+\\varlimsup     { mkstr(yytext); return SUM_CLASS; }
 \\sup           { mkstr(yytext); return SUM_CLASS; }
 \\inf           { mkstr(yytext); return SUM_CLASS; }
 \\arg           { mkstr(yytext); return SUM_CLASS; }

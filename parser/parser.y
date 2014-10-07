@@ -450,6 +450,12 @@ s_atom : atom
        SUB_CONS(mktoken("-", MT_NEG), NULL, NULL);
        root = $$ = father;
        }
+       | TIMES 
+       {
+       SUB_CONS(mktoken("×", MT_STAR), NULL, NULL);
+       root = $$ = father;
+       free($1);
+       }
        ;
 
 script : '_' s_atom
