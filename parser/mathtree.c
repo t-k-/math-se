@@ -55,6 +55,9 @@ static char *str_type(int t_num)
 		case MT_PERCENT:
 			sprintf(out, "percent");
 			break;
+		case MT_PRIME:
+			sprintf(out, "prime");
+			break;
 		case MT_TIMES:
 			sprintf(out, "times");
 			break;
@@ -421,3 +424,48 @@ void li_brw_release(struct list_it *li_brw)
 {
 	list_foreach(li_brw, &li_release, NULL);
 }
+
+/*
+static
+LIST_IT_CALLBK(search_sup)
+{
+	int i;
+	TREE_OBJ(struct token_t, p, tnd);
+	P_CAST(found, struct token_t*, pa_extra);
+	if (p->type == MT_SUP_SCRIPT) {
+		*found = p;
+		return LIST_RET_BREAK;
+	}
+	LIST_GO_OVER;
+}
+
+void matree_ins_prime(struct token_t *sup, struct token_t *prm)
+{
+	struct token_t *found = NULL;
+	if (sup == NULL || prm == NULL) 
+		return;
+
+	list_foreach(&sup->tnd.sons, &search_sup, &found);
+
+	if (found) {
+		tree_attach(&prm->tnd, &found->tnd, NULL, NULL);
+		sup->weight ++;
+		found->weight ++;
+	} else {
+		matree_release(prm);
+	}
+}
+
+       struct token_t *lhs = $1;
+       if (lhs->type == MT_SU_SCRIPT) {
+            struct token_t *prm = mktoken($2, MT_PRIME);
+            matree_ins_prime($1, prm);
+            root = $$ = $1;
+       } else {
+            struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
+            struct token_t *prm = mktoken($2, MT_PRIME);
+            matree_attach(prm, sup);
+            SUB_CONS(mktoken("[", MT_SU_SCRIPT), $1, sup);
+            root = $$ = father;
+       }
+*/

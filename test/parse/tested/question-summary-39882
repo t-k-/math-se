@@ -1,0 +1,67 @@
+10^n \equiv (-1)^n\pmod{11}
+n\geq 0
+11|((-1)^n - 10^n) \Longrightarrow (-1)^n -10^n = k*11,\quad k \in \mathbb{Z}. 
+n = 0
+ (-1)^0 - (10)^0 = 0*11 
+n\Rightarrow n+1
+\begin{align*}  (-1) ^{n+1} - (10) ^{n+1} &= k*11\\ (-1)*(-1)^n - 10*(10)^n &= k*11 \end{align*}
+\text{There exists an integer }k\text{ such that }(-1)^n - 10^n = 11k.
+\text{there exists an integer }\ell\text{ such that }(-1)^{n+1}-10^{n+1}=11\ell.
+a^{n+1}-b^{n+1} = (a-b)(a^n + a^{n-1}b + a^{n-2}b^2 + \cdots + ab^{n-1}+b^n),
+a=-1
+b=10
+(-1)^{n+1}-10^{n+1}
+11
+ (-1)^{n+1} - 10^{n+1} = \Bigl( (-1) - 10\Bigr)\Bigl( (-1)^n + (-1)^{n-1}(10) + \cdots + (-1)10^{n-1} + 10^n\Bigr).
+(-1)^{n+1} - 10^{n+1}
+11
+(-1)^n - 10^n
+11
+\begin{align*} (-1)^{n+1} - 10^{n+1} &= -1\left( (-1)^n + 10^{n+1}\right)\\  &= -\left( (-1)^n -10^n + 10^n + 10^{n+1}\right)\\ &= -\left( \Bigl((-1)^n - 10^n\Bigr) + 10^n\Bigl(1 + 10\Bigr)\right)\\ &= -\left( 11k + 10^n(11)\right) &\quad&\text{(by the induction hypothesis)}\\ &= -\left( 11(k+10^n)\right)\\ &= 11\left( -(k+10^n)\right), \end{align*}
+c\equiv d\pmod{k}
+k|c-d
+k|(c-d)b = cb-db
+bc\equiv bd\pmod{k}
+(-1)^n-10^n=11k
+(-1)^{(n+1)}-10^{(n+1)}=11m
+(-1)^{(n+1)}-10^{(n+1)}=-1(-1)^n-10(10^n)=-1(11k+10^n)-10(10^n)=-11k-11(10^n)=11m
+n
+\rm\ 10^n\equiv (-1)^n\ (mod\ 11)\:,\:
+\rm\:a,b\:
+\rm\:n\:
+\rm a^{n+1}-b^{n+1}\ =\ (a-b)\ (a^n + a^{n-1}b + a^{n-2}b^2 + \cdots + ab^{n-1}+b^n) 
+\rm\: a = 10,\: b = -1\:
+a \equiv b \left(\bmod m \right)
+a^n \equiv b^n \left(\bmod m \right)
+n \in \mathbb{N}
+a,b,m \in \mathbb{Z}
+a^n - b^n
+(a-b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \cdots + b^{n-1})
+m | (a-b)
+m | (a^n-b^n)
+a \equiv b \left(\bmod m \right)
+c \equiv d \left(\bmod m \right)
+a \times c  \equiv b \times d \left(\bmod m \right)
+ac-bd = a(c-d) + d(a-b)
+10^k \equiv (-1)^k \left(\bmod m \right)
+10 \equiv (-1) \left(\bmod m \right)
+10^{k+1} \equiv (-1)^{k+1} \left(\bmod m \right)
+10 \equiv -1 \ (\text{mod} \ 11) \Longrightarrow (10)^{n} \equiv (-1)^{n} \ (\text{mod} \ 11)
+P(n) \Rightarrow P(n+2)
+P(1), P(2)
+P(n) \Rightarrow P(n+2)
+10^{n+2}= 10^n*100=99*10^n+10^n \cong 10^n \cong (-1)^n \mod 11
+n=2k
+10^n \cong 1 \mod 11
+10^{2k}-1=999....999
+2k
+10^{2k}-1= 90909090..909 *11 
+n=2k+1
+10^n \cong -1 \mod 11
+10^{2k+1}+1=999....9990+11
+2k
+10^{2k}+1= 90909090..9090 *11 +11
+1-10+10^2-10^3+...+(-10)^{n-1}= \frac{1-(-10)^n}{1-(-10)} \,.
+10^{n+1}=10\cdot 10^n\equiv(-1)\cdot(-1)^n=(-1)^{n+1} \; (\mod 11)
+10^{n+1} - (-1)^{n+1} = 11 \times \sum_{i=0}^{n} 10^i(-1)^{n-i}
+10^n=(11-1)^n=11(\dots)+(-1)^n

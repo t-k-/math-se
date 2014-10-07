@@ -1,0 +1,18 @@
+2^{-n}
+[n,n+1)
+n \ge 0
+1
+x \le 0
+0
+x\to\infty
+f(x) = \begin{cases} 1,&x \le 2\\ 2^{-n}\cos (2^{2n}\pi(x-n))+3\cdot 2^{-n}, &2 \le n \le x \le n+2^{-2n}\\ 2^{-(n-1)}, &2 < n+2^{-2n} \le x \le n+1, \end{cases}
+f'(x) = \begin{cases} 0,&x\le 2\\ -2^n\pi \sin(2^{2n}\pi(x-n)),&2 \le n \le x \le n+2^{-2n}\\ 0,&2 < n+2^{-2n}\le x \le n+1. \end{cases}
+n \ge 2
+f'(x)
+0
+-2^n
+0
+[n,n+2^{-2n}]
+n\ge 2
+f'(n+2^{-(2n+1)})=-2^n\pi\to -\infty
+n\to\infty

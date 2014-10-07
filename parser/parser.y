@@ -20,8 +20,8 @@
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT DOTS
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR SEP_DIV
 %token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS _ABS
-%token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT
-%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
+%token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT PRIME_SUP
+%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ PRIME_VAR
  
 %type <p> tex mat_tex term factor pack atom s_atom script
 
@@ -34,7 +34,7 @@
 
 %left NULL_REDUCE 
 %left '+' '-'
-%nonassoc '!'
+%nonassoc '!' PRIME_SUP
 %right '^' '_'
 %left TIMES DIV
 %nonassoc '{' '}' '(' ')' '[' ']' 
@@ -237,6 +237,15 @@ factor : pack
        SUB_CONS(mktoken("!", MT_FACT), $1, NULL);
        root = $$ = father;
        }
+       | factor PRIME_SUP
+       { 
+       struct token_t *sup = mktoken("^", MT_SUP_SCRIPT);
+       struct token_t *prm = mktoken("prime", MT_PRIME);
+       matree_attach(prm, sup);
+       SUB_CONS(mktoken("[", MT_SU_SCRIPT), $1, sup);
+       root = $$ = father;
+       free($2);
+       }
        | factor script
        { 
        SUB_CONS($2, $1, NULL);
@@ -343,6 +352,12 @@ atom : VAR
      | _ABS 
      {
      SUB_CONS(mktoken($1, MT_ABS), NULL, NULL);
+     root = $$ = father;
+     free($1);
+     }
+     | PRIME_VAR
+     {
+     SUB_CONS(mktoken("prime", MT_PRIME), NULL, NULL);
      root = $$ = father;
      free($1);
      }

@@ -31,6 +31,7 @@ enum type_enum {
 	MT_PERP,
 	MT_CIRC,
 	MT_PERCENT, 
+	MT_PRIME, 
 	MT_TIMES,
 	MT_COMBIN,
 	MT_FRAC,

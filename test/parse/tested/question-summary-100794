@@ -1,0 +1,48 @@
+m\times n
+1
+-1
+-1
+m
+n
+-1
+m
+n
+-1
+n-1
+m\equiv n\pmod 2
+-1
+m
+n
+2^{n-1}
+-1
+(2^{n-1})^{m-1}=2^{(n-1)(m-1)}
+m\equiv n\pmod 2
+0
+(m-1)\times(n-1)
+n-1
+i
+1\leq i\leq m-1
+n
+m-1
+j
+1\leq j\leq n-1
+m
+(m,n)
+a_{ij}
+(i,j)
+1\leq i\leq m-1
+1\leq j\leq n-1
+a_{i,n} = -\prod\limits_{j=1}^{n-1}a_{i,j}
+a_{m,j} = -\prod\limits_{i=1}^{n-1}a_{i,j}
+2
+a_{m,n}
+2
+a_{m,n}
+m\equiv n\pmod{2}
+m\equiv n\pmod{2}
+a_{m,n} = -\prod\limits_{i=1}^{n-1}a_{i,n} = -\prod\limits_{i=1}^{n-1}\left(-\prod_{j=1}^{m-1}a_{i,j}\right) = -(-1)^{n-1}\prod_{i=1}^{n-1}\prod_{j=1}^{m-1}a_{i,j} = (-1)^n\prod_{\stackrel{\scriptstyle1\leq i\leq n-1}{1\leq j\leq m-1}}a_{ij},
+a_{m,n} = -\prod\limits_{j=1}^{m-1}a_{m,j} = -\prod\limits_{j=1}^{m-1}\left(-\prod_{i=1}^{n-1}a_{i,j}\right) = -(-1)^{m-1}\prod_{j=1}^{m-1}\prod_{i=1}^{n-1}a_{i,j} = (-1)^m\prod_{\stackrel{\scriptstyle1\leq i\leq n-1}{1\leq j\leq m-1}}a_{ij}.
+2^{(n-1)(m-1)}
+m\equiv n\pmod{2}
+0
+m\not\equiv n\pmod{2}

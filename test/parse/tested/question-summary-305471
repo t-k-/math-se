@@ -1,0 +1,23 @@
+ (\alpha,\beta) = \text{argmax} \log \det (\alpha K_1 + \beta K_2)
+c_1 \alpha + c_2 \beta = c_3, \alpha\geq0, \beta\geq 0
+K_1
+K_2
+c_1
+c_2
+c_3
+ det(\alpha K + \beta L)=\begin{vmatrix} \alpha K_{1,1}+\beta L_{1,1}&\alpha K_{1,2}+\beta L_{1,2}\\\alpha K_{2,1}+\beta L_{2,1}&\alpha K_{2,1}+\beta L_{2,2}\end{vmatrix}
+\Rightarrow \alpha^2\begin{vmatrix} K_{1,1}&K_{1,2}\\K_{2,1} & K_{2,1}\end{vmatrix}+\alpha \beta\begin{vmatrix} K_{1,1}&K_{1,2}\\L_{2,1} & L_{2,1}\end{vmatrix}+\alpha \beta\begin{vmatrix} L_{1,1}&L_{1,2}\\K_{2,1} & K_{2,1}\end{vmatrix}+\beta^2\begin{vmatrix} L_{1,1}&L_{1,2}\\L_{2,1} & L_{2,1}\end{vmatrix}
+K_1
+\det(\alpha K_1 + \beta K_2) = \det(K_2) \det(\alpha K_2^{-1} K_1 + \beta I),
+K_2^{-1} K_1 = U \Lambda U^T
+\Lambda = \text{diag}(\lambda_1,\dots,\lambda_n)
+c_1
+c_2
+>0
+c_1 > 0
+\alpha = c'_3 + c_2' \beta
+\beta
+ \max \sum_{i=1}^n \log(\alpha \lambda_i + \beta) 
+K_1
+K_2
+K_2' = K_2 + \epsilon I

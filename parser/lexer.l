@@ -393,8 +393,10 @@ extern unsigned int stack;
 \\perp          { mkstr(yytext); return PERP; }
 \\circ          { mkstr(yytext); return CIRC; }
 \\%             { mkstr(yytext); return PERCENT; }
+"'"             { mkstr(yytext); return PRIME_SUP; }
+\\prime         { mkstr(yytext); return PRIME_VAR; }
 
-[a-zA-Z_]'*     { mkstr(yytext); return VAR; }
+[a-zA-Z_]*      { mkstr(yytext); return VAR; }
 \\[Aa]lpha      { mkstr(yytext); return VAR; } 
 \\aleph         { mkstr(yytext); return VAR; }
 \\[Bb]eta       { mkstr(yytext); return VAR; } 

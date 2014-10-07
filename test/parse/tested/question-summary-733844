@@ -1,0 +1,19 @@
+\int \left(1 + \sqrt{\frac{x-1}{x+1}}\right)^2 dx
+t = \sqrt{\frac{x-1}{x+1}}
+2
+\dfrac{x-1}{x+1}=t
+\int {\left( {1 + \frac{{x - 1}}{{x + 1}}} \right)dx + 2\int {\sqrt {\frac{{x - 1}}{{x + 1}}} } } dx
+2\left[ {\int {\left( {1 - \frac{1}{{x + 1}}} \right)} \;dx + \int {\sqrt {\frac{{x - 1}}{{x + 1}}} dx} } \right]
+x
+u=\sqrt{t};\;t=u^2;\;dt=2u\,du
+x = \frac{{t + 1}}{{1 - t}};\quad dx = \frac{{2\,dt}}{{{{\left( {t - 1} \right)}^2}}}
+\int {\sqrt {\frac{{x - 1}}{{x + 1}}} \,dx}  = \int {\frac{{2\sqrt t }}{{{{\left( {t - 1} \right)}^2}}}} \;dt
+\int {\frac{{2u \cdot 2u\,du}}{{{{\left( {{u^2} - 1} \right)}^2}}}}  = \int {\frac{{4{u^2}\,du}}{{{{\left( {{u^2} - 1} \right)}^2}}}} 
+\frac{{4{u^2}}}{{{{\left( {{u^2} - 1} \right)}^2}}} = \frac{1}{{{{\left( {u + 1} \right)}^2}}} + \frac{1}{{{{\left( {u - 1} \right)}^2}}} + \frac{1}{{u - 1}} - \frac{1}{{u + 1}}
+\int {\frac{{4{u^2}}}{{{{\left( {{u^2} - 1} \right)}^2}}}} \,du = \int {\frac{{du}}{{{{\left( {u + 1} \right)}^2}}}}  + \int {\frac{{du}}{{{{\left( {u - 1} \right)}^2}}}}  + \int {\frac{{du}}{{u - 1}}}  - \int {\frac{{du}}{{u + 1}}} 
+ - \frac{1}{{u + 1}} + \frac{1}{{1 - u}} + \ln \left( {u - 1} \right) - \ln \left( {u + 1} \right) + C=
+=\frac{{2u}}{{1 - {u^2}}} + \ln \frac{{u - 1}}{{u + 1}} + C = \frac{{2u}}{{1 - {u^2}}} + \ln \left( {1 - \frac{2}{{u + 1}}} \right) + C=
+=\frac{{2\sqrt {\frac{{x - 1}}{{x + 1}}} }}{{1 - \frac{{x - 1}}{{x + 1}}}} + \ln \frac{{\sqrt {\frac{{x - 1}}{{x + 1}}}  - 1}}{{\sqrt {\frac{{x - 1}}{{x + 1}}}  + 1}} + C
+2\left( {x+\ln \left( {\sqrt {\frac{{x - 1}}{{x + 1}}}  - \frac{x}{{x + 1}}} \right) + \left( {x + 1} \right)\sqrt {\frac{{x - 1}}{{x + 1}}} } \right) + C
+x
+ t = \sqrt{\frac{x-1}{x+1}} \\ x = \frac{1+t^2}{1-t^2} \\ dx = \frac{4t}{(1-t^2)^2}\;dt = \frac{4t}{(1-t)^2(1+t)^2}\;dt \\ \int\left(1+\sqrt{\frac{x-1}{x+1}}\right)^2 dx = \int (1+t)^2\frac{4t}{(1-t)^2(1+t)^2}\;dt = \int \frac{4t}{(1-t)^2}\;dt \\ \qquad = \int\left(\frac{4}{t-1} + \frac{4}{(t-1)^2}\right) dt = 4\log(t-1) - \frac{4}{t-1} +C 

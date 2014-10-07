@@ -1,10 +1,53 @@
-nil
-\chi_a
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(a) weight=1, type=var
-       └──(_chi) weight=1, type=var
+ln
+a''
+   └──([) weight=7, type=sus
+       │──([) weight=4, type=sus
+       │   │──(a) weight=1, type=var
+       │   └──(^) weight=2, type=sups
+       │       └──(prime) weight=1, type=prime
+       └──(^) weight=2, type=sups
+           └──(prime) weight=1, type=prime
 
-./var/subs/sus a 1 2 4 
-./var/sus _chi 1 4 
+./var/sus/sus a 1 4 7 
+./prime/sups/sus/sus prime 1 2 4 7 
+./prime/sups/sus prime 1 2 7 
+
+a'^2
+   └──([) weight=7, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(2) weight=1, type=const
+       └──([) weight=4, type=sus
+           │──(a) weight=1, type=var
+           └──(^) weight=2, type=sups
+               └──(prime) weight=1, type=prime
+
+./const/sups/sus 2 1 2 7 
+./var/sus/sus a 1 4 7 
+./prime/sups/sus/sus prime 1 2 4 7 
+
+(a^2)'
+   └──([) weight=7, type=sus
+       │──([) weight=4, type=sus
+       │   │──(^) weight=2, type=sups
+       │   │   └──(2) weight=1, type=const
+       │   └──(a) weight=1, type=var
+       └──(^) weight=2, type=sups
+           └──(prime) weight=1, type=prime
+
+./const/sups/sus/sus 2 1 2 4 7 
+./var/sus/sus a 1 4 7 
+./prime/sups/sus prime 1 2 7 
+
+a''
+   └──([) weight=7, type=sus
+       │──([) weight=4, type=sus
+       │   │──(a) weight=1, type=var
+       │   └──(^) weight=2, type=sups
+       │       └──(prime) weight=1, type=prime
+       └──(^) weight=2, type=sups
+           └──(prime) weight=1, type=prime
+
+./var/sus/sus a 1 4 7 
+./prime/sups/sus/sus prime 1 2 4 7 
+./prime/sups/sus prime 1 2 7 
 
