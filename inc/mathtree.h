@@ -42,7 +42,6 @@ enum type_enum {
 	MT_ZERO,
 	MT_SQRT,
 	MT_VERT,
-	MT_ABS,
 	MT_FLOOR,
 	MT_CEIL,
 	MT_NEG,

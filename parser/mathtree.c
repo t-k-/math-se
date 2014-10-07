@@ -88,9 +88,6 @@ static char *str_type(int t_num)
 		case MT_VERT:
 			sprintf(out, "vert");
 			break;
-		case MT_ABS:
-			sprintf(out, "abs");
-			break;
 		case MT_FLOOR:
 			sprintf(out, "floor");
 			break;

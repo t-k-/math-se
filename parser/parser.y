@@ -19,7 +19,7 @@
 
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT DOTS
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR SEP_DIV
-%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS _ABS
+%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS _VERT
 %token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT PRIME_SUP
 %token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ PRIME_VAR
  
@@ -349,9 +349,9 @@ atom : VAR
      SUB_CONS(mktoken("*", MT_STAR), NULL, NULL);
      root = $$ = father;
      }
-     | _ABS 
+     | _VERT 
      {
-     SUB_CONS(mktoken($1, MT_ABS), NULL, NULL);
+     SUB_CONS(mktoken($1, MT_VERT), NULL, NULL);
      root = $$ = father;
      free($1);
      }

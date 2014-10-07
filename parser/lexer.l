@@ -18,6 +18,7 @@ extern unsigned int stack;
 "\\,"           {} /* omit space, prior than comma */
 \\[ ]           {} /* omit space */
 
+ /* some binary operators */
 "!"|"*"|"{"|"}" { return yytext[0]; }
 "+"|"-"|"_"|"^" { return yytext[0]; }
 
@@ -32,58 +33,66 @@ extern unsigned int stack;
 \\smallsetminus { return '-'; }
 \\lnot          { return '-'; } 
 
-\\left[ ]*"."          { return _LEFT; }
-\\left[ ]*"["          { return _LEFT; }
-\\left[ ]*"\\{"        { return _LEFT; }
-\\left[ ]*"("          { return _LEFT; }
-\\left[ ]*"<"          { return _LEFT; }
-\\left[ ]*"/"          { return _LEFT; }
-\\left[ ]*\\uparrow    { return _LEFT; }
-\\left[ ]*\\Uparrow    { return _LEFT; }
-\\left[ ]*\\updownarrow { return _LEFT; }
-\\left[ ]*\\langle     { return _LEFT; }
-\\left[ ]*\\lfloor     { return _LEFT; }
-\\left[ ]*\\lceil      { return _LEFT; }
-\\left[ ]*\\lgroup     { return _LEFT; }
-\\left[ ]*\\lmoustache { return _LEFT; }
-\\left                 { return _LEFT; }
+ /* make as much as use of \left \right clue */
+\\left[ ]*"."               { return _LEFT; }
+\\left[ ]*"("               { return _LEFT; }
+\\left[ ]*\\lgroup          { return _LEFT; }
+\\left[ ]*"["               { return _LEFT; }
+\\left[ ]*"\\{"             { return _LEFT; }
+\\left[ ]*\\langle          { return _LEFT; }
+\\left[ ]*"<"               { return _LEFT; }
+\\left[ ]*\\lceil           { return _LEFT_CEIL; }
+\\left[ ]*\\lfloor          { return _LEFT_FLOOR; }
+\\left[ ]*"/"               { return _LEFT; }
+\\left[ ]*"\\"              { return _LEFT; }
+\\left[ ]*\\backslash       { return _LEFT; }
+\\left[ ]*\\lmoustache      { return _LEFT; }
+\\left[ ]*\\[Uu]parrow      { return _LEFT; }
+\\left[ ]*\\[Dd]ownarrow    { return _LEFT; }
+\\left[ ]*\\[Uu]pdownarrow  { return _LEFT; }
+\\left                      { return _LEFT; }
 
-\\right[ ]*"."         { return _RIGHT; }
-\\right[ ]*"]"         { return _RIGHT; }
-\\right[ ]*"\\}"       { return _RIGHT; }
-\\right[ ]*")"         { return _RIGHT; }
-\\right[ ]*">"         { return _RIGHT; }
-\\right[ ]*\\backslash { return _RIGHT; }
-\\right[ ]*\\downarrow  { return _RIGHT; }
-\\right[ ]*\\Downarrow  { return _RIGHT; }
-\\right[ ]*\\Updownarrow { return _RIGHT; }
-\\right[ ]*\\rangle     { return _RIGHT; }
-\\right[ ]*\\rfloor     { return _RIGHT; }
-\\right[ ]*\\rceil      { return _RIGHT; }
-\\right[ ]*\\rgroup     { return _RIGHT; }
-\\right[ ]*\\rmoustache { return _RIGHT; }
-\\right                { return _RIGHT; }
+\\right[ ]*"."               { return _RIGHT; }
+\\right[ ]*")"               { return _RIGHT; }
+\\right[ ]*\\rgroup          { return _RIGHT; }
+\\right[ ]*"]"               { return _RIGHT; }
+\\right[ ]*"\\}"             { return _RIGHT; }
+\\right[ ]*\\rangle          { return _RIGHT; }
+\\right[ ]*">"               { return _RIGHT; }
+\\right[ ]*\\rceil           { return _RIGHT_CEIL; }
+\\right[ ]*\\rfloor          { return _RIGHT_FLOOR; }
+\\right[ ]*"/"               { return _RIGHT; }
+\\right[ ]*"\\"              { return _RIGHT; }
+\\right[ ]*\\backslash       { return _RIGHT; }
+\\right[ ]*\\rmoustache      { return _RIGHT; }
+\\right[ ]*\\[Uu]parrow      { return _RIGHT; }
+\\right[ ]*\\[Dd]ownarrow    { return _RIGHT; }
+\\right[ ]*\\[Uu]pdownarrow  { return _RIGHT; }
+\\right                      { return _RIGHT; }
 
- /* ABS is a crazy mass */
-\\r[vV]ert      { mkstr(yytext); return _ABS; }
-\\l[vV]ert      { mkstr(yytext); return _ABS; }
-"\\|"           { mkstr(yytext); return _ABS; }
-"|"             { mkstr(yytext); return _ABS; }
+ /* then discriminative pairs */
+"("|"\\{"          { return '('; }
+")"|"\\}"          { return ')'; }
+\\rgroup           { return _RIGHT; }
+\\lgroup           { return _LEFT; }
+"["|"]"            { return yytext[0]; }
+\\rangle           { return _RIGHT; }
+\\langle           { return _LEFT; }
+\\rceil            { return _RIGHT_CEIL; }
+\\lceil            { return _LEFT_CEIL; }
+\\rfloor           { return _RIGHT_FLOOR; }
+\\lfloor           { return _LEFT_FLOOR; }
+\\rmoustache       { return _RIGHT; }
+\\lmoustache       { return _LEFT; }
 
-"("|"\\{"       { return '('; }
-")"|"\\}"       { return ')'; }
-"["|"]"         { return yytext[0]; }
-
-\\rangle        { return _RIGHT; }      
-\\langle        { return _LEFT; }
-\\rfloor        { return _RIGHT_FLOOR; }
-\\lfloor        { return _LEFT_FLOOR; }
-\\rceil         { return _RIGHT_CEIL; }
-\\lceil         { return _LEFT_CEIL; }
-\\rgroup        { return _RIGHT; }      
-\\lgroup        { return _LEFT; }
-\\rmoustache    { return _RIGHT; }      
-\\lmoustache    { return _LEFT; }
+ /* non-discriminative pairs are crazy mass */
+"|"                { mkstr(yytext); return _VERT; }
+"\\|"              { mkstr(yytext); return _VERT; }
+\\vert             { mkstr(yytext); return _VERT; }
+\\[Aa]rrowvert     { mkstr(yytext); return _VERT; }
+\\bracevert        { mkstr(yytext); return _VERT; }
+\\r[vV]ert         { mkstr(yytext); return _VERT; }
+\\l[vV]ert         { mkstr(yytext); return _VERT; }
 
 =               { mkstr(yytext); return EQ_CLASS; }
 :=              { mkstr(yytext); return EQ_CLASS; }
@@ -301,71 +310,76 @@ extern unsigned int stack;
 \\bmod          { mkstr(yytext); return MODULAR; }
 \\mod           { mkstr(yytext); return MODULAR; }
 
+ /* big operators */
+\\arccos        { mkstr(yytext); return FUN_CLASS; }
+\\arcsin        { mkstr(yytext); return FUN_CLASS; }
+\\arctan        { mkstr(yytext); return FUN_CLASS; }
+\\arg           { mkstr(yytext); return SUM_CLASS; }
+\\bigcap        { mkstr(yytext); return SUM_CLASS; }
+\\bigcup        { mkstr(yytext); return SUM_CLASS; }
+\\bigodot       { mkstr(yytext); return SUM_CLASS; }
+\\bigoplus      { mkstr(yytext); return SUM_CLASS; }
+\\bigotimes     { mkstr(yytext); return SUM_CLASS; }
+\\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
+\\biguplus      { mkstr(yytext); return SUM_CLASS; }
+\\bigvee        { mkstr(yytext); return SUM_CLASS; }
+\\bigwedge      { mkstr(yytext); return SUM_CLASS; }
+\\coprod        { mkstr(yytext); return SUM_CLASS; }
+\\cos           { mkstr(yytext); return FUN_CLASS; }
+\\sin           { mkstr(yytext); return FUN_CLASS; }
+\\tan           { mkstr(yytext); return FUN_CLASS; }
+\\sec           { mkstr(yytext); return FUN_CLASS; }
+\\cot           { mkstr(yytext); return FUN_CLASS; }
+\\csc           { mkstr(yytext); return FUN_CLASS; }
+\\cosh          { mkstr(yytext); return FUN_CLASS; }
+\\sinh          { mkstr(yytext); return FUN_CLASS; }
+\\tanh          { mkstr(yytext); return FUN_CLASS; }
+\\coth          { mkstr(yytext); return FUN_CLASS; }
+\\deg           { mkstr(yytext); return FUN_CLASS; }
+\\det           { mkstr(yytext); return FUN_CLASS; }
+\\dim           { mkstr(yytext); return FUN_CLASS; }
+\\exp           { mkstr(yytext); return FUN_CLASS; }
+\\gcd           { mkstr(yytext); return FUN_CLASS; }
+\\hom           { mkstr(yytext); return FUN_CLASS; }
+\\idotsint      { mkstr(yytext); return SUM_CLASS; }
 \\int           { mkstr(yytext); return SUM_CLASS; }
 \\iint          { mkstr(yytext); return SUM_CLASS; }
 \\iiint         { mkstr(yytext); return SUM_CLASS; }
 \\iiiint        { mkstr(yytext); return SUM_CLASS; }
-\\idotsint      { mkstr(yytext); return SUM_CLASS; }
 \\intop         { mkstr(yytext); return SUM_CLASS; }
-\\bigodot       { mkstr(yytext); return SUM_CLASS; }
-\\biguplus      { mkstr(yytext); return SUM_CLASS; }
-\\prod          { mkstr(yytext); return SUM_CLASS; }
-\\oint          { mkstr(yytext); return SUM_CLASS; }
-\\bigoplus      { mkstr(yytext); return SUM_CLASS; }
-\\bigvee        { mkstr(yytext); return SUM_CLASS; }
-\\bigcap        { mkstr(yytext); return SUM_CLASS; }
-\\bigotimes     { mkstr(yytext); return SUM_CLASS; }
-\\bigwedge      { mkstr(yytext); return SUM_CLASS; }
-\\sum           { mkstr(yytext); return SUM_CLASS; }
-\\bigcup        { mkstr(yytext); return SUM_CLASS; }
-\\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
-\\coprod        { mkstr(yytext); return SUM_CLASS; }
-\\lim           { mkstr(yytext); return SUM_CLASS; }
+\\inf           { mkstr(yytext); return SUM_CLASS; }
+\\sup           { mkstr(yytext); return SUM_CLASS; }
 \\injlim        { mkstr(yytext); return SUM_CLASS; }
 \\varinjlim     { mkstr(yytext); return SUM_CLASS; }
+\\ker           { mkstr(yytext); return FUN_CLASS; }
+\\lg            { mkstr(yytext); return FUN_CLASS; }
+\\lim           { mkstr(yytext); return SUM_CLASS; }
+\\liminf        { mkstr(yytext); return SUM_CLASS; }
+\\limsup        { mkstr(yytext); return SUM_CLASS; }
+\\varliminf     { mkstr(yytext); return SUM_CLASS; }
+\\varlimsup     { mkstr(yytext); return SUM_CLASS; }
+\\ln            { mkstr(yytext); return FUN_CLASS; }
+\\log           { mkstr(yytext); return FUN_CLASS; }
+\\max           { mkstr(yytext); return FUN_CLASS; }
+\\min           { mkstr(yytext); return FUN_CLASS; }
+\\oint          { mkstr(yytext); return SUM_CLASS; }
+\\Pr            { mkstr(yytext); return FUN_CLASS; }
+\\prod          { mkstr(yytext); return SUM_CLASS; }
 \\projlim       { mkstr(yytext); return SUM_CLASS; }
 \\varprojlim    { mkstr(yytext); return SUM_CLASS; }
-\\liminf        { mkstr(yytext); return SUM_CLASS; }
-\\varliminf     { mkstr(yytext); return SUM_CLASS; }
-\\limsup        { mkstr(yytext); return SUM_CLASS; }
-\\varlimsup     { mkstr(yytext); return SUM_CLASS; }
-\\sup           { mkstr(yytext); return SUM_CLASS; }
-\\inf           { mkstr(yytext); return SUM_CLASS; }
-\\arg           { mkstr(yytext); return SUM_CLASS; }
+\\sum           { mkstr(yytext); return SUM_CLASS; }
 
-\\exp           { mkstr(yytext); return FUN_CLASS; }
-\\min           { mkstr(yytext); return FUN_CLASS; }
-\\max           { mkstr(yytext); return FUN_CLASS; }
-\\sin           { mkstr(yytext); return FUN_CLASS; }
-\\cos           { mkstr(yytext); return FUN_CLASS; }
-\\tan           { mkstr(yytext); return FUN_CLASS; }
-\\sec           { mkstr(yytext); return FUN_CLASS; }
-\\csc           { mkstr(yytext); return FUN_CLASS; }
-\\cot           { mkstr(yytext); return FUN_CLASS; }
-\\arcsin        { mkstr(yytext); return FUN_CLASS; }
-\\arccos        { mkstr(yytext); return FUN_CLASS; }
-\\arctan        { mkstr(yytext); return FUN_CLASS; }
-\\sinh          { mkstr(yytext); return FUN_CLASS; }
-\\cosh          { mkstr(yytext); return FUN_CLASS; }
-\\tanh          { mkstr(yytext); return FUN_CLASS; }
-\\coth          { mkstr(yytext); return FUN_CLASS; }
-\\ln            { mkstr(yytext); return FUN_CLASS; }
-\\lg            { mkstr(yytext); return FUN_CLASS; }
-\\log           { mkstr(yytext); return FUN_CLASS; }
+ /* not standard operators */
 \\sgn           { mkstr(yytext); return FUN_CLASS; }
 \\signum        { mkstr(yytext); return FUN_CLASS; }
 \\sign          { mkstr(yytext); return FUN_CLASS; }
+ 
+ /* self-defined operators */
 \\operatorname\*?\{[^}]*\} { mkstr(yytext); return FUN_CLASS; }
-\\ker           { mkstr(yytext); return FUN_CLASS; }
-\\deg           { mkstr(yytext); return FUN_CLASS; }
-\\gcd           { mkstr(yytext); return FUN_CLASS; }
-\\Pr            { mkstr(yytext); return FUN_CLASS; }
-\\det           { mkstr(yytext); return FUN_CLASS; }
-\\hom           { mkstr(yytext); return FUN_CLASS; }
-\\dim           { mkstr(yytext); return FUN_CLASS; }
 
 \\times         { mkstr(yytext); return TIMES; }
 \\cdot          { mkstr(yytext); return TIMES; }
+\\ast           { mkstr(yytext); return TIMES; }
 
 \/              { mkstr("slash"); return DIV; }
 \\div           { mkstr(yytext); return DIV; }
@@ -399,7 +413,9 @@ extern unsigned int stack;
 [a-zA-Z_]*      { mkstr(yytext); return VAR; }
 \\[Aa]lpha      { mkstr(yytext); return VAR; } 
 \\aleph         { mkstr(yytext); return VAR; }
+α               { mkstr("alpha"); return VAR; }
 \\[Bb]eta       { mkstr(yytext); return VAR; } 
+β               { mkstr("beta"); return VAR; }
 \\[Cc]hi        { mkstr(yytext); return VAR; } 
 \\[Dd]elta      { mkstr(yytext); return VAR; } 
 \\[Ee]psilon    { mkstr(yytext); return VAR; } 
