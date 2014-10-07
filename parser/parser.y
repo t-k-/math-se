@@ -213,6 +213,12 @@ term : factor
      root = $$ = father;
      free($2);
      }
+     | TIMES  
+     {
+     SUB_CONS(mktoken("×", MT_STAR), NULL, NULL);
+     root = $$ = father;
+     free($1);
+     }
      | term DIV factor 
      {
      SUB_CONS(mktoken("/", MT_FRAC), $1, $3);
