@@ -382,6 +382,7 @@ extern unsigned int stack;
 
 [a-zA-Z_]'*     { mkstr(yytext); return VAR; }
 \\[Aa]lpha      { mkstr(yytext); return VAR; } 
+\\aleph         { mkstr(yytext); return VAR; }
 \\[Bb]eta       { mkstr(yytext); return VAR; } 
 \\[Cc]hi        { mkstr(yytext); return VAR; } 
 \\[Dd]elta      { mkstr(yytext); return VAR; } 

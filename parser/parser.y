@@ -340,44 +340,11 @@ atom : VAR
      root = $$ = father;
      free($1);
      }
-     ;
-
-pack : atom 
-     {
-     SUB_CONS($1, NULL, NULL);
-     root = $$ = father;
-     }
-     | '(' tex ')'
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | '[' tex ']'
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | _LEFT tex _RIGHT 
-     {
-     SUB_CONS($2, NULL, NULL);
-     root = $$ = father;
-     }
-     | _LEFT_FLOOR tex _RIGHT_FLOOR 
-     {
-     SUB_CONS(mktoken("floor", MT_FLOOR), $2, NULL);
-     root = $$ = father;
-     }
-     | _LEFT_CEIL tex _RIGHT_CEIL
-     {
-     SUB_CONS(mktoken("ceil", MT_CEIL), $2, NULL);
-     root = $$ = father;
-     }
-     | BEGIN_MAT mat_tex END_MAT 
-     {
-     SUB_CONS($2, NULL, NULL);
+     | SQRT atom 
+     { 
+     SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
      root = $$ = father;
      free($1);
-     free($3);
      }
      | COMBIN atom atom 
      { 
@@ -417,11 +384,44 @@ pack : atom
      root = $$ = father;
      free($1);
      }
-     | SQRT atom 
-     { 
-     SUB_CONS(mktoken("√", MT_SQRT), $2, NULL);
+     ;
+
+pack : atom 
+     {
+     SUB_CONS($1, NULL, NULL);
+     root = $$ = father;
+     }
+     | '(' tex ')'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | '[' tex ']'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | _LEFT tex _RIGHT 
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | _LEFT_FLOOR tex _RIGHT_FLOOR 
+     {
+     SUB_CONS(mktoken("floor", MT_FLOOR), $2, NULL);
+     root = $$ = father;
+     }
+     | _LEFT_CEIL tex _RIGHT_CEIL
+     {
+     SUB_CONS(mktoken("ceil", MT_CEIL), $2, NULL);
+     root = $$ = father;
+     }
+     | BEGIN_MAT mat_tex END_MAT 
+     {
+     SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      free($1);
+     free($3);
      }
      ;
 
