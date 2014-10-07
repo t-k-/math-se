@@ -1,53 +1,20 @@
-ln
-a''
-   └──([) weight=7, type=sus
-       │──([) weight=4, type=sus
-       │   │──(a) weight=1, type=var
-       │   └──(^) weight=2, type=sups
-       │       └──(prime) weight=1, type=prime
-       └──(^) weight=2, type=sups
-           └──(prime) weight=1, type=prime
+l
+[0,10)
+   └──(,) weight=3, type=sep_class
+       │──(0) weight=1, type=zero
+       └──(10) weight=1, type=const
 
-./var/sus/sus a 1 4 7 
-./prime/sups/sus/sus prime 1 2 4 7 
-./prime/sups/sus prime 1 2 7 
+./zero/sep_class 0 1 3 
+./const/sep_class 10 1 3 
 
-a'^2
-   └──([) weight=7, type=sus
-       │──(^) weight=2, type=sups
-       │   └──(2) weight=1, type=const
-       └──([) weight=4, type=sus
-           │──(a) weight=1, type=var
-           └──(^) weight=2, type=sups
-               └──(prime) weight=1, type=prime
+\left< asdf \right>
+   └──(asdf) weight=1, type=var
 
-./const/sups/sus 2 1 2 7 
-./var/sus/sus a 1 4 7 
-./prime/sups/sus/sus prime 1 2 4 7 
+./var asdf 1 
 
-(a^2)'
-   └──([) weight=7, type=sus
-       │──([) weight=4, type=sus
-       │   │──(^) weight=2, type=sups
-       │   │   └──(2) weight=1, type=const
-       │   └──(a) weight=1, type=var
-       └──(^) weight=2, type=sups
-           └──(prime) weight=1, type=prime
+\lceil a \rceil
+   └──(ceil) weight=2, type=ceil
+       └──(a) weight=1, type=var
 
-./const/sups/sus/sus 2 1 2 4 7 
-./var/sus/sus a 1 4 7 
-./prime/sups/sus prime 1 2 7 
-
-a''
-   └──([) weight=7, type=sus
-       │──([) weight=4, type=sus
-       │   │──(a) weight=1, type=var
-       │   └──(^) weight=2, type=sups
-       │       └──(prime) weight=1, type=prime
-       └──(^) weight=2, type=sups
-           └──(prime) weight=1, type=prime
-
-./var/sus/sus a 1 4 7 
-./prime/sups/sus/sus prime 1 2 4 7 
-./prime/sups/sus prime 1 2 7 
+./var/ceil a 1 2 
 

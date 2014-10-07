@@ -1,0 +1,9 @@
+F
+ F(u)=\int\limits_0^1 (1-u'(x)^2)^2+u(x)^2\, dx, u\in W^{1,4}(0,1), u(0)=u(1)=0. 
+ 2ab\leq\varepsilon a^2+\frac{b^2}{\varepsilon}~\forall~a,b,\varepsilon > 0. 
+ u'^2\leq\frac{1}{4}u'^4 +c_{\varepsilon} 
+F(u)=\int\limits_0^1 u'^4-2u'^2+1+u^2\, dx
+\geq \int\limits_0^1 u'^4 -(\frac{1}{2}u'^4+2c_{\varepsilon})+1+u^2\, dx
+=\int\limits_0^1\frac{1}{2} u'^4\, dx + \int\limits_0^1 u^2+c\, dx
+\geq \lVert u\rVert_{W^{1,4}(0,1)}
+ \lim\limits_{\lVert u\rVert\to\infty}\frac{\langle F(u),u\rangle}{\lVert u\rVert}=\infty. 
