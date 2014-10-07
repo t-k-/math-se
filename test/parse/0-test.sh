@@ -1,5 +1,5 @@
 #!/bin/sh
-[ $# -ne 2 ] && echo "bad arg. (cmd dir num)" && exit
+[ $# -ne 2 ] && echo "bad arg. (cmd test_dir num)" && exit
 [ ! -d ${1} ] && echo "${1} not dir." && exit
 output="test-summary.txt"
 
