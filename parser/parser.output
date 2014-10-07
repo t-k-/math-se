@@ -1,20 +1,14 @@
-l
-[0,10)
-   └──(,) weight=3, type=sep_class
-       │──(0) weight=1, type=zero
-       └──(10) weight=1, type=const
+n
+\overbrace{x+\cdots+x}^{n\text{ times}}
+   └──([) weight=7, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(n) weight=1, type=var
+       └──(+) weight=4, type=add
+           │──(x) weight=2, type=var
+           │──(_cdots) weight=1, type=dots
+           └──(x) weight=1, type=var
 
-./zero/sep_class 0 1 3 
-./const/sep_class 10 1 3 
-
-\left< asdf \right>
-   └──(asdf) weight=1, type=var
-
-./var asdf 1 
-
-\lceil a \rceil
-   └──(ceil) weight=2, type=ceil
-       └──(a) weight=1, type=var
-
-./var/ceil a 1 2 
+./var/sups/sus n 1 2 7 
+./var/add/sus x 2 4 7 
+./dots/add/sus _cdots 1 4 7 
 

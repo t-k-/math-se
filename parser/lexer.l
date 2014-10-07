@@ -453,6 +453,7 @@ extern unsigned int stack;
 \\mbox\{        { BEGIN(ign); stack = 1; }
 \\label\{       { BEGIN(ign); stack = 1; }
 \\tag\{         { BEGIN(ign); stack = 1; }
+\\text\{         { BEGIN(ign); stack = 1; }
 
 <ign>\{         { stack ++; }
 <ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
