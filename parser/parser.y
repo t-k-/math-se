@@ -396,6 +396,16 @@ pack : atom
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
      }
+     | '(' tex ']'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
+     | '[' tex ')'
+     {
+     SUB_CONS($2, NULL, NULL);
+     root = $$ = father;
+     }
      | '[' tex ']'
      {
      SUB_CONS($2, NULL, NULL);
