@@ -2,7 +2,6 @@
 #include <stdlib.h>  /* for atoi()   */
 #include <stdio.h>   /* for printf() */
 #include <string.h>  /* for strdup() */
-#include <ctype.h>   /* for toupper() */
 
 void mkstr(char *);
 extern unsigned int stack;
@@ -14,8 +13,8 @@ extern unsigned int stack;
 
 %%
 \n              { return '\n'; }
-"\\!"           {} /* omit space, prior than factorial */
-"\\,"           {} /* omit space, prior than comma */
+"\\!"           {} /* omit short space, prior than factorial */
+"\\,"           {} /* omit short space, prior than comma */
 \\[ ]           {} /* omit space */
 
  /* some binary operators */
@@ -226,10 +225,16 @@ extern unsigned int stack;
 \\cdots         { mkstr(yytext); return DOTS; }
 \\ddots         { mkstr(yytext); return DOTS; }
 
+ /* space as seperator */
+\\:             { mkstr(yytext); return SEP_CLASS; }
+\\>             { mkstr(yytext); return SEP_CLASS; }
+\\;             { mkstr(yytext); return SEP_CLASS; }
+
+ /* semantical seperator */
 ,               { mkstr(yytext); return SEP_CLASS; }
 ;               { mkstr(yytext); return SEP_CLASS; }
-\\;             { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
+\\\&            { mkstr(yytext); return SEP_CLASS; } 
 \\mid           { mkstr(yytext); return SEP_CLASS; }
 \\nmid          { mkstr(yytext); return SEP_CLASS; }
 \\quad          { mkstr(yytext); return SEP_CLASS; }
@@ -410,9 +415,10 @@ extern unsigned int stack;
 "'"             { mkstr(yytext); return PRIME_SUP; }
 \\prime         { mkstr(yytext); return PRIME_VAR; }
 
-[a-zA-Z_]*      { mkstr(yytext); return VAR; }
+[a-zA-Z_]       { mkstr(yytext); return VAR; }
 \\[Aa]lpha      { mkstr(yytext); return VAR; } 
 \\aleph         { mkstr(yytext); return VAR; }
+\\amalg         { mkstr(yytext); return VAR; }
 α               { mkstr("alpha"); return VAR; }
 \\[Bb]eta       { mkstr(yytext); return VAR; } 
 β               { mkstr("beta"); return VAR; }
@@ -488,7 +494,6 @@ void mkstr(char *str)
 	char *p, *tmp_str = strdup(str);
 	p = tmp_str;
 	while (*p != '\0') {
-		*p = tolower(*p);
 		if (*p == '\\')
 			*p = '_';
 		else if (*p == '\'')
