@@ -41,6 +41,11 @@ extern unsigned int stack;
 \\left[ ]*\\uparrow    { return _LEFT; }
 \\left[ ]*\\Uparrow    { return _LEFT; }
 \\left[ ]*\\updownarrow { return _LEFT; }
+\\left[ ]*\\langle     { return _LEFT; }
+\\left[ ]*\\lfloor     { return _LEFT; }
+\\left[ ]*\\lceil      { return _LEFT; }
+\\left[ ]*\\lgroup     { return _LEFT; }
+\\left[ ]*\\lmoustache { return _LEFT; }
 \\left                 { return _LEFT; }
 
 \\right[ ]*"."         { return _RIGHT; }
@@ -52,6 +57,11 @@ extern unsigned int stack;
 \\right[ ]*\\downarrow  { return _RIGHT; }
 \\right[ ]*\\Downarrow  { return _RIGHT; }
 \\right[ ]*\\Updownarrow { return _RIGHT; }
+\\right[ ]*\\rangle     { return _RIGHT; }
+\\right[ ]*\\rfloor     { return _RIGHT; }
+\\right[ ]*\\rceil      { return _RIGHT; }
+\\right[ ]*\\rgroup     { return _RIGHT; }
+\\right[ ]*\\rmoustache { return _RIGHT; }
 \\right                { return _RIGHT; }
 
  /* ABS is a crazy mass */
