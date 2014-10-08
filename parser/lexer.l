@@ -4,7 +4,9 @@
 #include <string.h>  /* for strdup() */
 
 void mkstr(char *);
-extern unsigned int stack;
+void sts(unsigned int *s);
+extern unsigned int ign_st;
+extern unsigned int tb_st;
 %}
 
 %x ign
@@ -18,8 +20,18 @@ extern unsigned int stack;
 \\[ ]           {} /* omit space */
 
  /* some binary operators */
-"!"|"*"|"{"|"}" { return yytext[0]; }
-"+"|"-"|"_"|"^" { return yytext[0]; }
+"!"|"*"|"^" { return yytext[0]; }
+"+"|"-"|"_" { return yytext[0]; }
+
+<tab>"{"         { tb_st ++; return yytext[0]; }
+<tab>"}"         { tb_st --; 
+                   if (!tb_st) { 
+                       BEGIN(INITIAL);
+                       return _END_MAT;
+                   } else return yytext[0]; }
+
+"{"              { return yytext[0]; }
+"}"              { return yytext[0]; }
 
 \\oplus         { return '+'; }
 \\pm            { return '+'; }
@@ -93,122 +105,133 @@ extern unsigned int stack;
 \\r[vV]ert         { mkstr(yytext); return _VERT; }
 \\l[vV]ert         { mkstr(yytext); return _VERT; }
 
-=               { mkstr(yytext); return EQ_CLASS; }
-:=              { mkstr(yytext); return EQ_CLASS; }
-\\sim           { mkstr(yytext); return EQ_CLASS; }
-\\approx        { mkstr(yytext); return EQ_CLASS; }
-\\simeq         { mkstr(yytext); return EQ_CLASS; }
-\\cong          { mkstr(yytext); return EQ_CLASS; }
-\\dot=          { mkstr(yytext); return EQ_CLASS; }
-\\equiv         { mkstr(yytext); return EQ_CLASS; }
-\\propto        { mkstr(yytext); return EQ_CLASS; }
-\\ge            { mkstr(yytext); return EQ_CLASS; }
-\\gt            { mkstr(yytext); return EQ_CLASS; }
-\\geq           { mkstr(yytext); return EQ_CLASS; }
-\\le            { mkstr(yytext); return EQ_CLASS; }
-\\lt            { mkstr(yytext); return EQ_CLASS; }
-\\leq           { mkstr(yytext); return EQ_CLASS; }
-\\ll            { mkstr(yytext); return EQ_CLASS; }
-\\gg            { mkstr(yytext); return EQ_CLASS; }
-\\in            { mkstr(yytext); return EQ_CLASS; }
-\\ni            { mkstr(yytext); return EQ_CLASS; }
-\\notin         { mkstr(yytext); return EQ_CLASS; }
-\\ne            { mkstr(yytext); return EQ_CLASS; }
-\\neq           { mkstr(yytext); return EQ_CLASS; }
-\\not("="|"\equiv"|"\in") { mkstr(yytext); return EQ_CLASS; }
-">"             { mkstr(yytext); return EQ_CLASS; }
-"<"             { mkstr(yytext); return EQ_CLASS; }
-\\subset        { mkstr(yytext); return EQ_CLASS; }
-\\sqsubset      { mkstr(yytext); return EQ_CLASS; }
-\\sqsubseteq    { mkstr(yytext); return EQ_CLASS; }
-\\supset        { mkstr(yytext); return EQ_CLASS; }
-\\sqsupset      { mkstr(yytext); return EQ_CLASS; }
-\\sqsupseteq    { mkstr(yytext); return EQ_CLASS; }
-\\subseteq      { mkstr(yytext); return EQ_CLASS; }
-\\supseteq      { mkstr(yytext); return EQ_CLASS; }
-\\sqcap         { mkstr(yytext); return EQ_CLASS; }
-\\sqcup         { mkstr(yytext); return EQ_CLASS; }
-\\prec          { mkstr(yytext); return EQ_CLASS; }
-\\succ          { mkstr(yytext); return EQ_CLASS; }
-\\preceq        { mkstr(yytext); return EQ_CLASS; }
-\\succeq        { mkstr(yytext); return EQ_CLASS; }
-\\cap           { mkstr(yytext); return EQ_CLASS; }
-\\cup           { mkstr(yytext); return EQ_CLASS; }
-\\land          { mkstr(yytext); return EQ_CLASS; } 
-\\and           { mkstr(yytext); return EQ_CLASS; } 
-\\wedge         { mkstr(yytext); return EQ_CLASS; } 
-\\lor           { mkstr(yytext); return EQ_CLASS; } 
-\\vee           { mkstr(yytext); return EQ_CLASS; } 
-\\lessapprox    { mkstr(yytext); return EQ_CLASS; }
-\\lesssim       { mkstr(yytext); return EQ_CLASS; }
-\\eqslantless   { mkstr(yytext); return EQ_CLASS; }
-\\leqslant      { mkstr(yytext); return EQ_CLASS; }
-\\leqq          { mkstr(yytext); return EQ_CLASS; }
-\\geqq          { mkstr(yytext); return EQ_CLASS; }
-\\geqslant      { mkstr(yytext); return EQ_CLASS; }
-\\eqslantgtr    { mkstr(yytext); return EQ_CLASS; }
-\\gtrsim        { mkstr(yytext); return EQ_CLASS; }
-\\gtrapprox     { mkstr(yytext); return EQ_CLASS; }
+=                          { mkstr(yytext); return EQ_CLASS; }
+:=                         { mkstr(yytext); return EQ_CLASS; }
+\\sim                      { mkstr(yytext); return EQ_CLASS; }
+\\approx                   { mkstr(yytext); return EQ_CLASS; }
+\\approxeq                 { mkstr(yytext); return EQ_CLASS; }
+\\simeq                    { mkstr(yytext); return EQ_CLASS; }
+\\cong                     { mkstr(yytext); return EQ_CLASS; }
+\\dot=                     { mkstr(yytext); return EQ_CLASS; }
+\\equiv                    { mkstr(yytext); return EQ_CLASS; }
+\\propto                   { mkstr(yytext); return EQ_CLASS; }
+\\ge                       { mkstr(yytext); return EQ_CLASS; }
+\\gt                       { mkstr(yytext); return EQ_CLASS; }
+\\geq                      { mkstr(yytext); return EQ_CLASS; }
+\\le                       { mkstr(yytext); return EQ_CLASS; }
+\\lt                       { mkstr(yytext); return EQ_CLASS; }
+\\leq                      { mkstr(yytext); return EQ_CLASS; }
+\\ll                       { mkstr(yytext); return EQ_CLASS; }
+\\gg                       { mkstr(yytext); return EQ_CLASS; }
+\\in                       { mkstr(yytext); return EQ_CLASS; }
+\\ni                       { mkstr(yytext); return EQ_CLASS; }
+\\notin                    { mkstr(yytext); return EQ_CLASS; }
+\\ne                       { mkstr(yytext); return EQ_CLASS; }
+\\neq                      { mkstr(yytext); return EQ_CLASS; }
+\\not("="|"\equiv"|"\in")  { mkstr(yytext); return EQ_CLASS; }
+">"                        { mkstr(yytext); return EQ_CLASS; }
+"<"                        { mkstr(yytext); return EQ_CLASS; }
+\\subset                   { mkstr(yytext); return EQ_CLASS; }
+\\sqsubset                 { mkstr(yytext); return EQ_CLASS; }
+\\sqsubseteq               { mkstr(yytext); return EQ_CLASS; }
+\\supset                   { mkstr(yytext); return EQ_CLASS; }
+\\sqsupset                 { mkstr(yytext); return EQ_CLASS; }
+\\sqsupseteq               { mkstr(yytext); return EQ_CLASS; }
+\\subseteq                 { mkstr(yytext); return EQ_CLASS; }
+\\supseteq                 { mkstr(yytext); return EQ_CLASS; }
+\\sqcap                    { mkstr(yytext); return EQ_CLASS; }
+\\sqcup                    { mkstr(yytext); return EQ_CLASS; }
+\\prec                     { mkstr(yytext); return EQ_CLASS; }
+\\succ                     { mkstr(yytext); return EQ_CLASS; }
+\\preceq                   { mkstr(yytext); return EQ_CLASS; }
+\\succeq                   { mkstr(yytext); return EQ_CLASS; }
+\\cap                      { mkstr(yytext); return EQ_CLASS; }
+\\cup                      { mkstr(yytext); return EQ_CLASS; }
+\\land                     { mkstr(yytext); return EQ_CLASS; } 
+\\and                      { mkstr(yytext); return EQ_CLASS; } 
+\\wedge                    { mkstr(yytext); return EQ_CLASS; } 
+\\lor                      { mkstr(yytext); return EQ_CLASS; } 
+\\vee                      { mkstr(yytext); return EQ_CLASS; } 
+\\lessapprox               { mkstr(yytext); return EQ_CLASS; }
+\\lesssim                  { mkstr(yytext); return EQ_CLASS; }
+\\eqslantless              { mkstr(yytext); return EQ_CLASS; }
+\\leqslant                 { mkstr(yytext); return EQ_CLASS; }
+\\leqq                     { mkstr(yytext); return EQ_CLASS; }
+\\geqq                     { mkstr(yytext); return EQ_CLASS; }
+\\geqslant                 { mkstr(yytext); return EQ_CLASS; }
+\\eqslantgtr               { mkstr(yytext); return EQ_CLASS; }
+\\gtrsim                   { mkstr(yytext); return EQ_CLASS; }
+\\gtrapprox                { mkstr(yytext); return EQ_CLASS; }
 
-\\stackrel      { mkstr(yytext); return STACKREL; }
+\\stackrel  { mkstr(yytext); return STACKREL; }
 
-\\\\               { mkstr(yytext); return TAB; }
-<tab>&             {}
-&                  { mkstr(yytext); return TAB; }
+ /* table/matrix related */
+<tab>\\\\          { return _TAB; }
+<tab>\\cr          { return _TAB; }
+<tab>&             { return _TAB; }
+\\\\               { return SEP_CLASS; }
+\\cr               { return SEP_CLASS; }
+&                  { return _TAB; }
 
-\\begin\{matrix\}  { mkstr(yytext); return BEGIN_MAT; }
-\\end\{matrix\}    { mkstr(yytext); return END_MAT; } 
-\\begin\{vmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{vmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{Vmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{Vmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{bmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{bmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{Bmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{Bmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{pmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{pmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{smallmatrix\} { mkstr(yytext); return BEGIN_MAT; }
-\\end\{smallmatrix\}   { mkstr(yytext); return END_MAT; } 
-\\begin\{cases\}   { mkstr(yytext); return BEGIN_MAT; }
-\\end\{cases\}     { mkstr(yytext); return END_MAT; } 
+\\array\{          { BEGIN(tab);
+                     sts(&tb_st); 
+                     return _BEGIN_MAT; }
 
-\\begin\{align\}                  { BEGIN(tab); } 
-\\end\{align\}                    { BEGIN(INITIAL); } 
-\\begin\{align\*\}                { BEGIN(tab); } 
-\\end\{align\*\}                  { BEGIN(INITIAL); } 
-\\begin\{alignat\}\{[^}]*\}       { BEGIN(tab); } 
-\\end\{alignat\}                  { BEGIN(INITIAL); } 
-\\begin\{alignat\*\}\{[^}]*\}     { BEGIN(tab); } 
-\\end\{alignat\*\}                { BEGIN(INITIAL); } 
-\\begin\{aligned\}                { BEGIN(tab); } 
-\\end\{aligned\}                  { BEGIN(INITIAL); } 
-\\begin\{alignedat\}\{[^}]*\}     { BEGIN(tab); } 
-\\end\{alignedat\}                { BEGIN(INITIAL); } 
-\\begin\{array\}\{[^}]*\}         { BEGIN(tab); } 
-\\end\{array\}                    { BEGIN(INITIAL); } 
-\\begin\{eqnarray\}               { BEGIN(tab); } 
-\\end\{eqnarray\}                 { BEGIN(INITIAL); } 
-\\begin\{eqnarray\*\}             { BEGIN(tab); } 
-\\end\{eqnarray\*\}               { BEGIN(INITIAL); } 
-\\begin\{equation\}               { BEGIN(tab); } 
-\\end\{equation\}                 { BEGIN(INITIAL); } 
-\\begin\{equation\*\}             { BEGIN(tab); } 
-\\end\{equation\*\}               { BEGIN(INITIAL); } 
-\\begin\{gather\}                 { BEGIN(tab); } 
-\\end\{gather\}                   { BEGIN(INITIAL); } 
-\\begin\{gather\*\}               { BEGIN(tab); } 
-\\end\{gather\*\}                 { BEGIN(INITIAL); } 
-\\begin\{gathered\}               { BEGIN(tab); } 
-\\end\{gathered\}                 { BEGIN(INITIAL); } 
-\\begin\{multline\}               { BEGIN(tab); } 
-\\end\{multline\}                 { BEGIN(INITIAL); } 
-\\begin\{multline\*\}             { BEGIN(tab); } 
-\\end\{multline\*\}               { BEGIN(INITIAL); } 
-\\begin\{split\}                  { BEGIN(tab); } 
-\\end\{split\}                    { BEGIN(INITIAL); } 
-\\begin\{subarray\}\{[^}]*\}      { BEGIN(tab); } 
-\\end\{subarray\}                 { BEGIN(INITIAL); } 
+\\begin\{matrix\}       { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{vmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{Vmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{bmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{Bmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{pmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{smallmatrix\}  { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+\\begin\{cases\}        { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
+
+\\end\{matrix\}         { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{vmatrix\}        { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{Vmatrix\}        { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{bmatrix\}        { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{Bmatrix\}        { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{pmatrix\}        { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{smallmatrix\}    { BEGIN(INITIAL); return _END_MAT; } 
+\\end\{cases\}          { BEGIN(INITIAL); return _END_MAT; } 
+
+ /* ignore some environment */
+\\begin\{align\}                  { } 
+\\end\{align\}                    { }  
+\\begin\{align\*\}                { } 
+\\end\{align\*\}                  { }  
+\\begin\{alignat\}\{[^}]*\}       { } 
+\\end\{alignat\}                  { }  
+\\begin\{alignat\*\}\{[^}]*\}     { } 
+\\end\{alignat\*\}                { }  
+\\begin\{aligned\}                { } 
+\\end\{aligned\}                  { }  
+\\begin\{alignedat\}\{[^}]*\}     { } 
+\\end\{alignedat\}                { }  
+\\begin\{array\}\{[^}]*\}         { } 
+\\end\{array\}                    { }  
+\\begin\{eqnarray\}               { } 
+\\end\{eqnarray\}                 { }  
+\\begin\{eqnarray\*\}             { } 
+\\end\{eqnarray\*\}               { }  
+\\begin\{equation\}               { } 
+\\end\{equation\}                 { }  
+\\begin\{equation\*\}             { } 
+\\end\{equation\*\}               { }  
+\\begin\{gather\}                 { } 
+\\end\{gather\}                   { }  
+\\begin\{gather\*\}               { } 
+\\end\{gather\*\}                 { }  
+\\begin\{gathered\}               { } 
+\\end\{gathered\}                 { }  
+\\begin\{multline\}               { } 
+\\end\{multline\}                 { }  
+\\begin\{multline\*\}             { } 
+\\end\{multline\*\}               { }  
+\\begin\{split\}                  { } 
+\\end\{split\}                    { }  
+\\begin\{subarray\}\{[^}]*\}      { } 
+\\end\{subarray\}                 { }  
 
 \\dbinom[ ]*[0-9][0-9]  {mkstr(yytext); return COMBIN__;}
 \\tbinom[ ]*[0-9][0-9]  {mkstr(yytext); return COMBIN__;}
@@ -235,13 +258,13 @@ extern unsigned int stack;
 ;               { mkstr(yytext); return SEP_CLASS; }
 ":"             { mkstr(yytext); return SEP_CLASS; }
 \\\&            { mkstr(yytext); return SEP_CLASS; } 
+\\And           { mkstr(yytext); return SEP_CLASS; }
 \\mid           { mkstr(yytext); return SEP_CLASS; }
 \\nmid          { mkstr(yytext); return SEP_CLASS; }
 \\quad          { mkstr(yytext); return SEP_CLASS; }
 \\qquad         { mkstr(yytext); return SEP_CLASS; }
 \\forall        { mkstr(yytext); return SEP_CLASS; }
 \\exists        { mkstr(yytext); return SEP_CLASS; }
-\\And           { mkstr(yytext); return SEP_CLASS; }
 \\atop          { mkstr(yytext); return SEP_CLASS; }
 
 \\leftarrow      { mkstr(yytext); return SEP_CLASS; }
@@ -455,14 +478,14 @@ extern unsigned int stack;
 \\varphi        { mkstr(yytext); return VAR; } 
 \\top           { mkstr(yytext); return VAR; }
 
-\\color\{       { BEGIN(ign); stack = 1; } 
-\\mbox\{        { BEGIN(ign); stack = 1; }
-\\label\{       { BEGIN(ign); stack = 1; }
-\\tag\{         { BEGIN(ign); stack = 1; }
-\\text\{         { BEGIN(ign); stack = 1; }
+\\color\{       { BEGIN(ign); sts(&ign_st); } 
+\\mbox\{        { BEGIN(ign); sts(&ign_st); }
+\\label\{       { BEGIN(ign); sts(&ign_st); }
+\\tag\{         { BEGIN(ign); sts(&ign_st); }
+\\text\{        { BEGIN(ign); sts(&ign_st); }
 
-<ign>\{         { stack ++; }
-<ign>\}         { stack --; if (!stack) BEGIN(INITIAL); }
+<ign>\{         { ign_st ++; }
+<ign>\}         { ign_st --; if (!ign_st) BEGIN(INITIAL); }
 <ign>.          {}
 
 \\hspace        { BEGIN(dim); }
@@ -487,7 +510,13 @@ extern unsigned int stack;
 \\[a-zA-Z]+     {} /* omit undefined control sequence */
 .               {}
 %%
-unsigned int stack = 0;
+unsigned int ign_st = 0;
+unsigned int tb_st = 0;
+
+void sts(unsigned int *s)
+{
+	*s = 1;
+}
 
 void mkstr(char *str)
 {

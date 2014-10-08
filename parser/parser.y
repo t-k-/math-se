@@ -17,22 +17,23 @@
 
 %error-verbose
 
-%token <s> EQ_CLASS SEP_CLASS SUM_CLASS BEGIN_MAT DOTS
-%token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR SEP_DIV
-%token <s> FRAC TIMES SQRT TAB CONST DIV FUN_CLASS _VERT
-%token <s> PARTIAL INFTY END_MAT FRAC__ PERCENT PRIME_SUP
-%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ PRIME_VAR
+%token _BEGIN_MAT _END_MAT
+%token <s> EQ_CLASS SEP_CLASS SUM_CLASS DOTS SEP_DIV
+%token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR _VERT
+%token <s> FRAC TIMES SQRT CONST DIV FUN_CLASS PRIME_VAR
+%token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP
+%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
  
 %type <p> tex mat_tex term factor pack atom s_atom script
 
 %right OVER CHOOSE
-%right TAB
+%right _TAB
 %right SEP_CLASS
 %right EQ_CLASS STACKREL
 %right MODULAR
 %right SEP_DIV 
 
-%left NULL_REDUCE 
+%left NULL_REDUCE
 %left '+' '-'
 %nonassoc '!' PRIME_SUP
 %right '^' '_'
@@ -105,6 +106,11 @@ tex : %prec NULL_REDUCE
     root = $$ = father;
     free($2);
     }
+    | tex _TAB tex 
+    {
+    SUB_CONS(mktoken("tab", MT_SEP_CLASS), $1, $3);
+    root = $$ = father;
+    }
     | tex SEP_DIV tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
@@ -120,12 +126,6 @@ tex : %prec NULL_REDUCE
     | tex CHOOSE tex 
     {
     SUB_CONS(mktoken($2, MT_COMBIN), $1, $3);
-    root = $$ = father;
-    free($2);
-    }
-    | tex TAB tex 
-    {
-    SUB_CONS(mktoken($2, MT_SEP_CLASS), $1, $3);
     root = $$ = father;
     free($2);
     }
@@ -183,11 +183,10 @@ mat_tex : %prec NULL_REDUCE
         root = $$ = father;
         free($2);
         }
-        | mat_tex TAB mat_tex 
+        | mat_tex _TAB mat_tex 
         {
-        SUB_CONS(mktoken($2, MT_TAB), $1, $3);
+        SUB_CONS(mktoken("tab", MT_TAB), $1, $3);
         root = $$ = father;
-        free($2);
         }
         | mat_tex MODULAR mat_tex 
         {
@@ -447,12 +446,10 @@ pack : atom
      SUB_CONS(mktoken("ceil", MT_CEIL), $2, NULL);
      root = $$ = father;
      }
-     | BEGIN_MAT mat_tex END_MAT 
+     | _BEGIN_MAT mat_tex _END_MAT 
      {
      SUB_CONS($2, NULL, NULL);
      root = $$ = father;
-     free($1);
-     free($3);
      }
      ;
 
