@@ -1,0 +1,204 @@
+http://math.stackexchange.com/questions/88547
+K
+   └──(K) weight=1, type=var
+
+./var K 1 
+
+K[E]
+   └──(⋅) weight=3, type=times
+       │──(K) weight=1, type=var
+       └──(E) weight=1, type=var
+
+./var/times K 1 3 
+./var/times E 1 3 
+
+E
+   └──(E) weight=1, type=var
+
+./var E 1 
+
+E\times E
+   └──(×) weight=3, type=times
+       │──(E) weight=2, type=var
+       └──(E) weight=1, type=var
+
+./var/times E 2 3 
+
+f(X,Y)=Y^2+a_1XY+a_3Y-X^3-a_2X^2-a_4X-a_6=0.
+   └──(=) weight=53, type=eq_class
+       │──(⋅) weight=5, type=times
+       │   │──(f) weight=1, type=var
+       │   └──(,) weight=3, type=sep_class
+       │       │──(X) weight=1, type=var
+       │       └──(Y) weight=1, type=var
+       └──(=) weight=47, type=eq_class
+           │──(+) weight=45, type=add
+           │   │──([) weight=4, type=sus
+           │   │   │──(^) weight=2, type=sups
+           │   │   │   └──(2) weight=1, type=const
+           │   │   └──(Y) weight=1, type=var
+           │   │──(⋅) weight=7, type=times
+           │   │   │──([) weight=4, type=sus
+           │   │   │   │──(_) weight=2, type=subs
+           │   │   │   │   └──(1) weight=1, type=one
+           │   │   │   └──(a) weight=1, type=var
+           │   │   │──(X) weight=1, type=var
+           │   │   └──(Y) weight=1, type=var
+           │   │──(⋅) weight=6, type=times
+           │   │   │──([) weight=4, type=sus
+           │   │   │   │──(_) weight=2, type=subs
+           │   │   │   │   └──(3) weight=1, type=const
+           │   │   │   └──(a) weight=1, type=var
+           │   │   └──(Y) weight=1, type=var
+           │   │──(-) weight=5, type=neg
+           │   │   └──([) weight=4, type=sus
+           │   │       │──(^) weight=2, type=sups
+           │   │       │   └──(3) weight=1, type=const
+           │   │       └──(X) weight=1, type=var
+           │   │──(-) weight=10, type=neg
+           │   │   └──(⋅) weight=9, type=times
+           │   │       │──([) weight=4, type=sus
+           │   │       │   │──(_) weight=2, type=subs
+           │   │       │   │   └──(2) weight=1, type=const
+           │   │       │   └──(a) weight=1, type=var
+           │   │       └──([) weight=4, type=sus
+           │   │           │──(^) weight=2, type=sups
+           │   │           │   └──(2) weight=1, type=const
+           │   │           └──(X) weight=1, type=var
+           │   │──(-) weight=7, type=neg
+           │   │   └──(⋅) weight=6, type=times
+           │   │       │──([) weight=4, type=sus
+           │   │       │   │──(_) weight=2, type=subs
+           │   │       │   │   └──(4) weight=1, type=const
+           │   │       │   └──(a) weight=1, type=var
+           │   │       └──(X) weight=1, type=var
+           │   └──(-) weight=5, type=neg
+           │       └──([) weight=4, type=sus
+           │           │──(_) weight=2, type=subs
+           │           │   └──(6) weight=1, type=const
+           │           └──(a) weight=1, type=var
+           └──(0.) weight=1, type=const
+
+./var/times/eq_class f 1 5 53 
+./var/sep_class/times/eq_class X 1 3 5 53 
+./var/sep_class/times/eq_class Y 1 3 5 53 
+./const/sups/sus/add/eq_class/eq_class 2 1 2 4 45 47 53 
+./var/sus/add/eq_class/eq_class Y 1 4 45 47 53 
+./one/subs/sus/times/add/eq_class/eq_class 1 1 2 4 7 45 47 53 
+./var/sus/times/add/eq_class/eq_class a 1 4 7 45 47 53 
+./var/times/add/eq_class/eq_class X 1 7 45 47 53 
+./var/times/add/eq_class/eq_class Y 1 7 45 47 53 
+./const/subs/sus/times/add/eq_class/eq_class 3 1 2 4 6 45 47 53 
+./var/sus/times/add/eq_class/eq_class a 1 4 6 45 47 53 
+./var/times/add/eq_class/eq_class Y 1 6 45 47 53 
+./const/sups/sus/neg/add/eq_class/eq_class 3 1 2 4 5 45 47 53 
+./var/sus/neg/add/eq_class/eq_class X 1 4 5 45 47 53 
+./const/subs/sus/times/neg/add/eq_class/eq_class 2 1 2 4 9 10 45 47 53 
+./var/sus/times/neg/add/eq_class/eq_class a 1 4 9 10 45 47 53 
+./const/sups/sus/times/neg/add/eq_class/eq_class 2 1 2 4 9 10 45 47 53 
+./var/sus/times/neg/add/eq_class/eq_class X 1 4 9 10 45 47 53 
+./const/subs/sus/times/neg/add/eq_class/eq_class 4 1 2 4 6 7 45 47 53 
+./var/sus/times/neg/add/eq_class/eq_class a 1 4 6 7 45 47 53 
+./var/times/neg/add/eq_class/eq_class X 1 6 7 45 47 53 
+./const/subs/sus/neg/add/eq_class/eq_class 6 1 2 4 5 45 47 53 
+./var/sus/neg/add/eq_class/eq_class a 1 4 5 45 47 53 
+./const/eq_class/eq_class 0. 1 47 53 
+
+\frac{K[X_1,Y_1,X_2,Y_2]}{(f(X_1,Y_1),f(X_2,Y_2))},
+   └──(,) weight=45, type=sep_class
+       │──(/) weight=43, type=frac
+       │   │──(⋅) weight=19, type=times
+       │   │   │──(K) weight=1, type=var
+       │   │   └──(,) weight=17, type=sep_class
+       │   │       │──([) weight=4, type=sus
+       │   │       │   │──(_) weight=2, type=subs
+       │   │       │   │   └──(1) weight=1, type=one
+       │   │       │   └──(X) weight=1, type=var
+       │   │       │──([) weight=4, type=sus
+       │   │       │   │──(_) weight=2, type=subs
+       │   │       │   │   └──(1) weight=1, type=one
+       │   │       │   └──(Y) weight=1, type=var
+       │   │       │──([) weight=4, type=sus
+       │   │       │   │──(_) weight=2, type=subs
+       │   │       │   │   └──(2) weight=1, type=const
+       │   │       │   └──(X) weight=1, type=var
+       │   │       └──([) weight=4, type=sus
+       │   │           │──(_) weight=2, type=subs
+       │   │           │   └──(2) weight=1, type=const
+       │   │           └──(Y) weight=1, type=var
+       │   └──(,) weight=23, type=sep_class
+       │       │──(⋅) weight=11, type=times
+       │       │   │──(f) weight=1, type=var
+       │       │   └──(,) weight=9, type=sep_class
+       │       │       │──([) weight=4, type=sus
+       │       │       │   │──(_) weight=2, type=subs
+       │       │       │   │   └──(1) weight=1, type=one
+       │       │       │   └──(X) weight=1, type=var
+       │       │       └──([) weight=4, type=sus
+       │       │           │──(_) weight=2, type=subs
+       │       │           │   └──(1) weight=1, type=one
+       │       │           └──(Y) weight=1, type=var
+       │       └──(⋅) weight=11, type=times
+       │           │──(f) weight=1, type=var
+       │           └──(,) weight=9, type=sep_class
+       │               │──([) weight=4, type=sus
+       │               │   │──(_) weight=2, type=subs
+       │               │   │   └──(2) weight=1, type=const
+       │               │   └──(X) weight=1, type=var
+       │               └──([) weight=4, type=sus
+       │                   │──(_) weight=2, type=subs
+       │                   │   └──(2) weight=1, type=const
+       │                   └──(Y) weight=1, type=var
+       └──(NULL) weight=1, type=null
+
+./var/times/frac/sep_class K 1 19 43 45 
+./one/subs/sus/sep_class/times/frac/sep_class 1 1 2 4 17 19 43 45 
+./var/sus/sep_class/times/frac/sep_class X 1 4 17 19 43 45 
+./one/subs/sus/sep_class/times/frac/sep_class 1 1 2 4 17 19 43 45 
+./var/sus/sep_class/times/frac/sep_class Y 1 4 17 19 43 45 
+./const/subs/sus/sep_class/times/frac/sep_class 2 1 2 4 17 19 43 45 
+./var/sus/sep_class/times/frac/sep_class X 1 4 17 19 43 45 
+./const/subs/sus/sep_class/times/frac/sep_class 2 1 2 4 17 19 43 45 
+./var/sus/sep_class/times/frac/sep_class Y 1 4 17 19 43 45 
+./var/times/sep_class/frac/sep_class f 1 11 23 43 45 
+./one/subs/sus/sep_class/times/sep_class/frac/sep_class 1 1 2 4 9 11 23 43 45 
+./var/sus/sep_class/times/sep_class/frac/sep_class X 1 4 9 11 23 43 45 
+./one/subs/sus/sep_class/times/sep_class/frac/sep_class 1 1 2 4 9 11 23 43 45 
+./var/sus/sep_class/times/sep_class/frac/sep_class Y 1 4 9 11 23 43 45 
+./var/times/sep_class/frac/sep_class f 1 11 23 43 45 
+./const/subs/sus/sep_class/times/sep_class/frac/sep_class 2 1 2 4 9 11 23 43 45 
+./var/sus/sep_class/times/sep_class/frac/sep_class X 1 4 9 11 23 43 45 
+./const/subs/sus/sep_class/times/sep_class/frac/sep_class 2 1 2 4 9 11 23 43 45 
+./var/sus/sep_class/times/sep_class/frac/sep_class Y 1 4 9 11 23 43 45 
+./null/sep_class NULL 1 45 
+
+E^n
+   └──([) weight=4, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(n) weight=1, type=var
+       └──(E) weight=1, type=var
+
+./var/sups/sus n 1 2 4 
+./var/sus E 1 4 
+
+K(E)\otimes_K ...\otimes_K K(E)
+   └──(⋅) weight=12, type=times
+       │──(K) weight=2, type=var
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(K) weight=1, type=var
+       │   └──(E) weight=1, type=var
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(K) weight=1, type=var
+       │   └──(...) weight=1, type=dots
+       │──(K) weight=1, type=var
+       └──(E) weight=1, type=var
+
+./var/times K 2 12 
+./var/subs/sus/times K 1 2 4 12 
+./var/sus/times E 1 4 12 
+./var/subs/sus/times K 1 2 4 12 
+./dots/sus/times ... 1 4 12 
+./var/times E 1 12 
+

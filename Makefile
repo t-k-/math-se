@@ -17,6 +17,12 @@ mklink: submake
 	ln -s `pwd`/crawler/rand-cmd.sh `pwd`/test/parse/rand-cmd.sh.ln
 	@ [ -e test/parse/parser.ln ] || \
 	ln -s `pwd`/parser/parser `pwd`/test/parse/parser.ln
+	@ [ -e test/eval/parser.ln ] || \
+	ln -s `pwd`/parser/parser `pwd`/test/eval/parser.ln
+	@ [ -e test/eval/index.py.ln ] || \
+	ln -s `pwd`/index/index.py `pwd`/test/eval/index.py.ln
+	@ [ -e test/eval/libbdb_wraper.so ] || \
+	ln -s `pwd`/index/libbdb_wraper.so `pwd`/test/eval/libbdb_wraper.so
 
 submake: 
 	make -C ./index
