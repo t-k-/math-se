@@ -171,7 +171,7 @@ extern unsigned int tb_st;
 <tab>&             { return _TAB; }
 \\\\               { return SEP_CLASS; }
 \\cr               { return SEP_CLASS; }
-&                  { return _TAB; }
+&                  { /* ignore when not in matrix. */ }
 
 \\array\{          { BEGIN(tab);
                      sts(&tb_st); 

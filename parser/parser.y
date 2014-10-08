@@ -106,11 +106,6 @@ tex : %prec NULL_REDUCE
     root = $$ = father;
     free($2);
     }
-    | tex _TAB tex 
-    {
-    SUB_CONS(mktoken("tab", MT_SEP_CLASS), $1, $3);
-    root = $$ = father;
-    }
     | tex SEP_DIV tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
