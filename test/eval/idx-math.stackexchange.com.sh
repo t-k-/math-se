@@ -18,4 +18,4 @@ else
 	echo -n $status; tput setaf 2; echo "\t\t pass" \
 	| tee -a ${output}; tput sgr0
 fi
-./index.py.ln -p $dest # | tail -1
+./index.py.ln -p $dest | tail -1
