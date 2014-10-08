@@ -107,7 +107,7 @@ int main()
 {
 	struct _html_li_arg hla;
 	int64_t start, end;
-	uint64_t n_relevant;
+	uint64_t n_records, n_relevant;
 	char *query, *env_str, stdin_str[64];
 
 	printf("Content-type: text/html\n\n");
@@ -174,8 +174,14 @@ int main()
 				end, &hla);
 		del_rank("ranking set");
 
-		if (hla.nitems == 0)
+		if (hla.nitems == 0) {
 			printf("<li><h1>No matching document. X_X!</h1></li>\n");
+		} else {
+			n_records = bdb_records(hla.bdb_doc);
+			printf("<span style=\"color: #aaaaaa\">%" PRId64
+					" relevant in %" PRId64 " documents.", 
+					n_relevant, n_records);
+		}
 	}
 	
 	cat("ass.cat");
