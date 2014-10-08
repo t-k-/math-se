@@ -1,204 +1,421 @@
-http://math.stackexchange.com/questions/88547
-K
-   └──(K) weight=1, type=var
+http://math.stackexchange.com/questions/313943
+(\mathbb{R},+)
+   └──(,) weight=4, type=sep_class
+       │──(R) weight=1, type=var
+       └──(+) weight=2, type=add
+           └──(NULL) weight=1, type=null
 
-./var K 1 
+./var/sep_class R 1 4 
+./null/add/sep_class NULL 1 2 4 
 
-K[E]
+G\subset \mathbb{R}
+   └──(_subset) weight=3, type=eq_class
+       │──(G) weight=1, type=var
+       └──(R) weight=1, type=var
+
+./var/eq_class G 1 3 
+./var/eq_class R 1 3 
+
+G=a\mathbb{Z}
+   └──(=) weight=5, type=eq_class
+       │──(G) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(a) weight=1, type=var
+           └──(Z) weight=1, type=var
+
+./var/eq_class G 1 5 
+./var/times/eq_class a 1 3 5 
+./var/times/eq_class Z 1 3 5 
+
+a\in\mathbb{R}
+   └──(_in) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(R) weight=1, type=var
+
+./var/eq_class a 1 3 
+./var/eq_class R 1 3 
+
+a=\inf \{x>0:x\in G\}
+   └──(=) weight=11, type=eq_class
+       │──(a) weight=1, type=var
+       └──(⋅) weight=9, type=times
+           │──(_inf) weight=1, type=sum_class
+           └──(:) weight=7, type=sep_class
+               │──(>) weight=3, type=eq_class
+               │   │──(x) weight=1, type=var
+               │   └──(0) weight=1, type=zero
+               └──(_in) weight=3, type=eq_class
+                   │──(x) weight=1, type=var
+                   └──(G) weight=1, type=var
+
+./var/eq_class a 1 11 
+./inf/times/eq_class _inf 1 9 11 
+./var/eq_class/sep_class/times/eq_class x 1 3 7 9 11 
+./zero/eq_class/sep_class/times/eq_class 0 1 3 7 9 11 
+./var/eq_class/sep_class/times/eq_class x 1 3 7 9 11 
+./var/eq_class/sep_class/times/eq_class G 1 3 7 9 11 
+
+a>0
+   └──(>) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(0) weight=1, type=zero
+
+./var/eq_class a 1 3 
+./zero/eq_class 0 1 3 
+
+G=a\mathbb{Z}
+   └──(=) weight=5, type=eq_class
+       │──(G) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(a) weight=1, type=var
+           └──(Z) weight=1, type=var
+
+./var/eq_class G 1 5 
+./var/times/eq_class a 1 3 5 
+./var/times/eq_class Z 1 3 5 
+
+a=0
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(0) weight=1, type=zero
+
+./var/eq_class a 1 3 
+./zero/eq_class 0 1 3 
+
+G
+   └──(G) weight=1, type=var
+
+./var G 1 
+
+a=0
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(0) weight=1, type=zero
+
+./var/eq_class a 1 3 
+./zero/eq_class 0 1 3 
+
+G
+   └──(G) weight=1, type=var
+
+./var G 1 
+
+(A,+)
+   └──(,) weight=4, type=sep_class
+       │──(A) weight=1, type=var
+       └──(+) weight=2, type=add
+           └──(NULL) weight=1, type=null
+
+./var/sep_class A 1 4 
+./null/add/sep_class NULL 1 2 4 
+
+(\mathbb{R},+)
+   └──(,) weight=4, type=sep_class
+       │──(R) weight=1, type=var
+       └──(+) weight=2, type=add
+           └──(NULL) weight=1, type=null
+
+./var/sep_class R 1 4 
+./null/add/sep_class NULL 1 2 4 
+
+A
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+A=a\mathbb{Z}
+   └──(=) weight=5, type=eq_class
+       │──(A) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(a) weight=1, type=var
+           └──(Z) weight=1, type=var
+
+./var/eq_class A 1 5 
+./var/times/eq_class a 1 3 5 
+./var/times/eq_class Z 1 3 5 
+
+a\in\mathbb{R}
+   └──(_in) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(R) weight=1, type=var
+
+./var/eq_class a 1 3 
+./var/eq_class R 1 3 
+
+\beta\in A
+   └──(_in) weight=3, type=eq_class
+       │──(_beta) weight=1, type=var
+       └──(A) weight=1, type=var
+
+./var/eq_class _beta 1 3 
+./var/eq_class A 1 3 
+
+1\in A
+   └──(_in) weight=3, type=eq_class
+       │──(1) weight=1, type=one
+       └──(A) weight=1, type=var
+
+./one/eq_class 1 1 3 
+./var/eq_class A 1 3 
+
+\beta=ak_{1}
+   └──(=) weight=8, type=eq_class
+       │──(_beta) weight=1, type=var
+       └──(⋅) weight=6, type=times
+           │──(a) weight=1, type=var
+           └──([) weight=4, type=sus
+               │──(_) weight=2, type=subs
+               │   └──(1) weight=1, type=one
+               └──(k) weight=1, type=var
+
+./var/eq_class _beta 1 8 
+./var/times/eq_class a 1 6 8 
+./one/subs/sus/times/eq_class 1 1 2 4 6 8 
+./var/sus/times/eq_class k 1 4 6 8 
+
+1=ak_{2}
+   └──(=) weight=8, type=eq_class
+       │──(1) weight=1, type=one
+       └──(⋅) weight=6, type=times
+           │──(a) weight=1, type=var
+           └──([) weight=4, type=sus
+               │──(_) weight=2, type=subs
+               │   └──(2) weight=1, type=const
+               └──(k) weight=1, type=var
+
+./one/eq_class 1 1 8 
+./var/times/eq_class a 1 6 8 
+./const/subs/sus/times/eq_class 2 1 2 4 6 8 
+./var/sus/times/eq_class k 1 4 6 8 
+
+k_{1},k_{2}\in\mathbb{Z}
+   └──(,) weight=11, type=sep_class
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(1) weight=1, type=one
+       │   └──(k) weight=1, type=var
+       └──(_in) weight=6, type=eq_class
+           │──([) weight=4, type=sus
+           │   │──(_) weight=2, type=subs
+           │   │   └──(2) weight=1, type=const
+           │   └──(k) weight=1, type=var
+           └──(Z) weight=1, type=var
+
+./one/subs/sus/sep_class 1 1 2 4 11 
+./var/sus/sep_class k 1 4 11 
+./const/subs/sus/eq_class/sep_class 2 1 2 4 6 11 
+./var/sus/eq_class/sep_class k 1 4 6 11 
+./var/eq_class/sep_class Z 1 6 11 
+
+\beta=\frac{\beta}{1}=\frac{a k_{1}}{a k_{2}}=\frac{k_{1}}{k_{2}}\in\mathbb{Q}
+   └──(=) weight=31, type=eq_class
+       │──(_beta) weight=1, type=var
+       └──(=) weight=29, type=eq_class
+           │──(/) weight=3, type=frac
+           │   │──(_beta) weight=1, type=var
+           │   └──(1) weight=1, type=one
+           └──(=) weight=25, type=eq_class
+               │──(/) weight=13, type=frac
+               │   │──(⋅) weight=6, type=times
+               │   │   │──(a) weight=1, type=var
+               │   │   └──([) weight=4, type=sus
+               │   │       │──(_) weight=2, type=subs
+               │   │       │   └──(1) weight=1, type=one
+               │   │       └──(k) weight=1, type=var
+               │   └──(⋅) weight=6, type=times
+               │       │──(a) weight=1, type=var
+               │       └──([) weight=4, type=sus
+               │           │──(_) weight=2, type=subs
+               │           │   └──(2) weight=1, type=const
+               │           └──(k) weight=1, type=var
+               └──(_in) weight=11, type=eq_class
+                   │──(/) weight=9, type=frac
+                   │   │──([) weight=4, type=sus
+                   │   │   │──(_) weight=2, type=subs
+                   │   │   │   └──(1) weight=1, type=one
+                   │   │   └──(k) weight=1, type=var
+                   │   └──([) weight=4, type=sus
+                   │       │──(_) weight=2, type=subs
+                   │       │   └──(2) weight=1, type=const
+                   │       └──(k) weight=1, type=var
+                   └──(Q) weight=1, type=var
+
+./var/eq_class _beta 1 31 
+./var/frac/eq_class/eq_class _beta 1 3 29 31 
+./one/frac/eq_class/eq_class 1 1 3 29 31 
+./var/times/frac/eq_class/eq_class/eq_class a 1 6 13 25 29 31 
+./one/subs/sus/times/frac/eq_class/eq_class/eq_class 1 1 2 4 6 13 25 29 31 
+./var/sus/times/frac/eq_class/eq_class/eq_class k 1 4 6 13 25 29 31 
+./var/times/frac/eq_class/eq_class/eq_class a 1 6 13 25 29 31 
+./const/subs/sus/times/frac/eq_class/eq_class/eq_class 2 1 2 4 6 13 25 29 31 
+./var/sus/times/frac/eq_class/eq_class/eq_class k 1 4 6 13 25 29 31 
+./one/subs/sus/frac/eq_class/eq_class/eq_class/eq_class 1 1 2 4 9 11 25 29 31 
+./var/sus/frac/eq_class/eq_class/eq_class/eq_class k 1 4 9 11 25 29 31 
+./const/subs/sus/frac/eq_class/eq_class/eq_class/eq_class 2 1 2 4 9 11 25 29 31 
+./var/sus/frac/eq_class/eq_class/eq_class/eq_class k 1 4 9 11 25 29 31 
+./var/eq_class/eq_class/eq_class/eq_class Q 1 11 25 29 31 
+
+A
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+\mathbb{R}
+   └──(R) weight=1, type=var
+
+./var R 1 
+
+\sin(\mathbb{Z})
    └──(⋅) weight=3, type=times
-       │──(K) weight=1, type=var
-       └──(E) weight=1, type=var
+       │──(_sin) weight=1, type=fun_class
+       └──(Z) weight=1, type=var
 
-./var/times K 1 3 
-./var/times E 1 3 
+./fun_class/times _sin 1 3 
+./var/times Z 1 3 
 
-E
-   └──(E) weight=1, type=var
+[-1,1]
+   └──(,) weight=6, type=sep_class
+       │──(+) weight=4, type=add
+       │   │──(NULL) weight=1, type=null
+       │   └──(-) weight=2, type=neg
+       │       └──(1) weight=1, type=one
+       └──(1) weight=1, type=one
 
-./var E 1 
+./null/add/sep_class NULL 1 4 6 
+./one/neg/add/sep_class 1 1 2 4 6 
+./one/sep_class 1 1 6 
 
-E\times E
-   └──(×) weight=3, type=times
-       │──(E) weight=2, type=var
-       └──(E) weight=1, type=var
+\sin(\mathbb{Z})= \sin(\mathbb{Z}+ \pi \mathbb{Z})
+   └──(=) weight=11, type=eq_class
+       │──(⋅) weight=3, type=times
+       │   │──(_sin) weight=1, type=fun_class
+       │   └──(Z) weight=1, type=var
+       └──(⋅) weight=7, type=times
+           │──(_sin) weight=1, type=fun_class
+           └──(+) weight=5, type=add
+               │──(Z) weight=1, type=var
+               └──(⋅) weight=3, type=times
+                   │──(_pi) weight=1, type=pi
+                   └──(Z) weight=1, type=var
 
-./var/times E 2 3 
+./fun_class/times/eq_class _sin 1 3 11 
+./var/times/eq_class Z 1 3 11 
+./fun_class/times/eq_class _sin 1 7 11 
+./var/add/times/eq_class Z 1 5 7 11 
+./pi/times/add/times/eq_class _pi 1 3 5 7 11 
+./var/times/add/times/eq_class Z 1 3 5 7 11 
 
-f(X,Y)=Y^2+a_1XY+a_3Y-X^3-a_2X^2-a_4X-a_6=0.
-   └──(=) weight=53, type=eq_class
-       │──(⋅) weight=5, type=times
-       │   │──(f) weight=1, type=var
-       │   └──(,) weight=3, type=sep_class
-       │       │──(X) weight=1, type=var
-       │       └──(Y) weight=1, type=var
-       └──(=) weight=47, type=eq_class
-           │──(+) weight=45, type=add
-           │   │──([) weight=4, type=sus
-           │   │   │──(^) weight=2, type=sups
-           │   │   │   └──(2) weight=1, type=const
-           │   │   └──(Y) weight=1, type=var
-           │   │──(⋅) weight=7, type=times
-           │   │   │──([) weight=4, type=sus
-           │   │   │   │──(_) weight=2, type=subs
-           │   │   │   │   └──(1) weight=1, type=one
-           │   │   │   └──(a) weight=1, type=var
-           │   │   │──(X) weight=1, type=var
-           │   │   └──(Y) weight=1, type=var
-           │   │──(⋅) weight=6, type=times
-           │   │   │──([) weight=4, type=sus
-           │   │   │   │──(_) weight=2, type=subs
-           │   │   │   │   └──(3) weight=1, type=const
-           │   │   │   └──(a) weight=1, type=var
-           │   │   └──(Y) weight=1, type=var
-           │   │──(-) weight=5, type=neg
-           │   │   └──([) weight=4, type=sus
-           │   │       │──(^) weight=2, type=sups
-           │   │       │   └──(3) weight=1, type=const
-           │   │       └──(X) weight=1, type=var
-           │   │──(-) weight=10, type=neg
-           │   │   └──(⋅) weight=9, type=times
-           │   │       │──([) weight=4, type=sus
-           │   │       │   │──(_) weight=2, type=subs
-           │   │       │   │   └──(2) weight=1, type=const
-           │   │       │   └──(a) weight=1, type=var
-           │   │       └──([) weight=4, type=sus
-           │   │           │──(^) weight=2, type=sups
-           │   │           │   └──(2) weight=1, type=const
-           │   │           └──(X) weight=1, type=var
-           │   │──(-) weight=7, type=neg
-           │   │   └──(⋅) weight=6, type=times
-           │   │       │──([) weight=4, type=sus
-           │   │       │   │──(_) weight=2, type=subs
-           │   │       │   │   └──(4) weight=1, type=const
-           │   │       │   └──(a) weight=1, type=var
-           │   │       └──(X) weight=1, type=var
-           │   └──(-) weight=5, type=neg
-           │       └──([) weight=4, type=sus
-           │           │──(_) weight=2, type=subs
-           │           │   └──(6) weight=1, type=const
-           │           └──(a) weight=1, type=var
-           └──(0.) weight=1, type=const
+\mathbb{Z}+ \pi \mathbb{Z}
+   └──(+) weight=5, type=add
+       │──(Z) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(_pi) weight=1, type=pi
+           └──(Z) weight=1, type=var
 
-./var/times/eq_class f 1 5 53 
-./var/sep_class/times/eq_class X 1 3 5 53 
-./var/sep_class/times/eq_class Y 1 3 5 53 
-./const/sups/sus/add/eq_class/eq_class 2 1 2 4 45 47 53 
-./var/sus/add/eq_class/eq_class Y 1 4 45 47 53 
-./one/subs/sus/times/add/eq_class/eq_class 1 1 2 4 7 45 47 53 
-./var/sus/times/add/eq_class/eq_class a 1 4 7 45 47 53 
-./var/times/add/eq_class/eq_class X 1 7 45 47 53 
-./var/times/add/eq_class/eq_class Y 1 7 45 47 53 
-./const/subs/sus/times/add/eq_class/eq_class 3 1 2 4 6 45 47 53 
-./var/sus/times/add/eq_class/eq_class a 1 4 6 45 47 53 
-./var/times/add/eq_class/eq_class Y 1 6 45 47 53 
-./const/sups/sus/neg/add/eq_class/eq_class 3 1 2 4 5 45 47 53 
-./var/sus/neg/add/eq_class/eq_class X 1 4 5 45 47 53 
-./const/subs/sus/times/neg/add/eq_class/eq_class 2 1 2 4 9 10 45 47 53 
-./var/sus/times/neg/add/eq_class/eq_class a 1 4 9 10 45 47 53 
-./const/sups/sus/times/neg/add/eq_class/eq_class 2 1 2 4 9 10 45 47 53 
-./var/sus/times/neg/add/eq_class/eq_class X 1 4 9 10 45 47 53 
-./const/subs/sus/times/neg/add/eq_class/eq_class 4 1 2 4 6 7 45 47 53 
-./var/sus/times/neg/add/eq_class/eq_class a 1 4 6 7 45 47 53 
-./var/times/neg/add/eq_class/eq_class X 1 6 7 45 47 53 
-./const/subs/sus/neg/add/eq_class/eq_class 6 1 2 4 5 45 47 53 
-./var/sus/neg/add/eq_class/eq_class a 1 4 5 45 47 53 
-./const/eq_class/eq_class 0. 1 47 53 
+./var/add Z 1 5 
+./pi/times/add _pi 1 3 5 
+./var/times/add Z 1 3 5 
 
-\frac{K[X_1,Y_1,X_2,Y_2]}{(f(X_1,Y_1),f(X_2,Y_2))},
-   └──(,) weight=45, type=sep_class
-       │──(/) weight=43, type=frac
-       │   │──(⋅) weight=19, type=times
-       │   │   │──(K) weight=1, type=var
-       │   │   └──(,) weight=17, type=sep_class
-       │   │       │──([) weight=4, type=sus
-       │   │       │   │──(_) weight=2, type=subs
-       │   │       │   │   └──(1) weight=1, type=one
-       │   │       │   └──(X) weight=1, type=var
-       │   │       │──([) weight=4, type=sus
-       │   │       │   │──(_) weight=2, type=subs
-       │   │       │   │   └──(1) weight=1, type=one
-       │   │       │   └──(Y) weight=1, type=var
-       │   │       │──([) weight=4, type=sus
-       │   │       │   │──(_) weight=2, type=subs
-       │   │       │   │   └──(2) weight=1, type=const
-       │   │       │   └──(X) weight=1, type=var
-       │   │       └──([) weight=4, type=sus
-       │   │           │──(_) weight=2, type=subs
-       │   │           │   └──(2) weight=1, type=const
-       │   │           └──(Y) weight=1, type=var
-       │   └──(,) weight=23, type=sep_class
-       │       │──(⋅) weight=11, type=times
-       │       │   │──(f) weight=1, type=var
-       │       │   └──(,) weight=9, type=sep_class
-       │       │       │──([) weight=4, type=sus
-       │       │       │   │──(_) weight=2, type=subs
-       │       │       │   │   └──(1) weight=1, type=one
-       │       │       │   └──(X) weight=1, type=var
-       │       │       └──([) weight=4, type=sus
-       │       │           │──(_) weight=2, type=subs
-       │       │           │   └──(1) weight=1, type=one
-       │       │           └──(Y) weight=1, type=var
-       │       └──(⋅) weight=11, type=times
-       │           │──(f) weight=1, type=var
-       │           └──(,) weight=9, type=sep_class
-       │               │──([) weight=4, type=sus
-       │               │   │──(_) weight=2, type=subs
-       │               │   │   └──(2) weight=1, type=const
-       │               │   └──(X) weight=1, type=var
-       │               └──([) weight=4, type=sus
-       │                   │──(_) weight=2, type=subs
-       │                   │   └──(2) weight=1, type=const
-       │                   └──(Y) weight=1, type=var
-       └──(NULL) weight=1, type=null
+(\mathbb{R},+)
+   └──(,) weight=4, type=sep_class
+       │──(R) weight=1, type=var
+       └──(+) weight=2, type=add
+           └──(NULL) weight=1, type=null
 
-./var/times/frac/sep_class K 1 19 43 45 
-./one/subs/sus/sep_class/times/frac/sep_class 1 1 2 4 17 19 43 45 
-./var/sus/sep_class/times/frac/sep_class X 1 4 17 19 43 45 
-./one/subs/sus/sep_class/times/frac/sep_class 1 1 2 4 17 19 43 45 
-./var/sus/sep_class/times/frac/sep_class Y 1 4 17 19 43 45 
-./const/subs/sus/sep_class/times/frac/sep_class 2 1 2 4 17 19 43 45 
-./var/sus/sep_class/times/frac/sep_class X 1 4 17 19 43 45 
-./const/subs/sus/sep_class/times/frac/sep_class 2 1 2 4 17 19 43 45 
-./var/sus/sep_class/times/frac/sep_class Y 1 4 17 19 43 45 
-./var/times/sep_class/frac/sep_class f 1 11 23 43 45 
-./one/subs/sus/sep_class/times/sep_class/frac/sep_class 1 1 2 4 9 11 23 43 45 
-./var/sus/sep_class/times/sep_class/frac/sep_class X 1 4 9 11 23 43 45 
-./one/subs/sus/sep_class/times/sep_class/frac/sep_class 1 1 2 4 9 11 23 43 45 
-./var/sus/sep_class/times/sep_class/frac/sep_class Y 1 4 9 11 23 43 45 
-./var/times/sep_class/frac/sep_class f 1 11 23 43 45 
-./const/subs/sus/sep_class/times/sep_class/frac/sep_class 2 1 2 4 9 11 23 43 45 
-./var/sus/sep_class/times/sep_class/frac/sep_class X 1 4 9 11 23 43 45 
-./const/subs/sus/sep_class/times/sep_class/frac/sep_class 2 1 2 4 9 11 23 43 45 
-./var/sus/sep_class/times/sep_class/frac/sep_class Y 1 4 9 11 23 43 45 
-./null/sep_class NULL 1 45 
+./var/sep_class R 1 4 
+./null/add/sep_class NULL 1 2 4 
 
-E^n
-   └──([) weight=4, type=sus
-       │──(^) weight=2, type=sups
-       │   └──(n) weight=1, type=var
-       └──(E) weight=1, type=var
+\pi
+   └──(_pi) weight=1, type=pi
 
-./var/sups/sus n 1 2 4 
-./var/sus E 1 4 
+./pi _pi 1 
 
-K(E)\otimes_K ...\otimes_K K(E)
-   └──(⋅) weight=12, type=times
-       │──(K) weight=2, type=var
-       │──([) weight=4, type=sus
-       │   │──(_) weight=2, type=subs
-       │   │   └──(K) weight=1, type=var
-       │   └──(E) weight=1, type=var
-       │──([) weight=4, type=sus
-       │   │──(_) weight=2, type=subs
-       │   │   └──(K) weight=1, type=var
-       │   └──(...) weight=1, type=dots
-       │──(K) weight=1, type=var
-       └──(E) weight=1, type=var
+\mathbb{Z}+ \pi \mathbb{Z}
+   └──(+) weight=5, type=add
+       │──(Z) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(_pi) weight=1, type=pi
+           └──(Z) weight=1, type=var
 
-./var/times K 2 12 
-./var/subs/sus/times K 1 2 4 12 
-./var/sus/times E 1 4 12 
-./var/subs/sus/times K 1 2 4 12 
-./dots/sus/times ... 1 4 12 
-./var/times E 1 12 
+./var/add Z 1 5 
+./pi/times/add _pi 1 3 5 
+./var/times/add Z 1 3 5 
+
+\mathbb{R}
+   └──(R) weight=1, type=var
+
+./var R 1 
+
+\sin
+   └──(_sin) weight=1, type=fun_class
+
+./fun_class _sin 1 
+
+[-1,1]= \sin(\mathbb{R})= \sin \left( \overline{\mathbb{Z}+ \pi \mathbb{Z}} \right) \subset \overline{\sin (\mathbb{Z}+\pi \mathbb{Z})}= \overline{\sin(\mathbb{Z})}
+   └──(=) weight=30, type=eq_class
+       │──(,) weight=6, type=sep_class
+       │   │──(+) weight=4, type=add
+       │   │   │──(NULL) weight=1, type=null
+       │   │   └──(-) weight=2, type=neg
+       │   │       └──(1) weight=1, type=one
+       │   └──(1) weight=1, type=one
+       └──(=) weight=23, type=eq_class
+           │──(⋅) weight=3, type=times
+           │   │──(_sin) weight=1, type=fun_class
+           │   └──(R) weight=1, type=var
+           └──(_subset) weight=19, type=eq_class
+               │──(⋅) weight=7, type=times
+               │   │──(_sin) weight=1, type=fun_class
+               │   └──(+) weight=5, type=add
+               │       │──(Z) weight=1, type=var
+               │       └──(⋅) weight=3, type=times
+               │           │──(_pi) weight=1, type=pi
+               │           └──(Z) weight=1, type=var
+               └──(=) weight=11, type=eq_class
+                   │──(⋅) weight=7, type=times
+                   │   │──(_sin) weight=1, type=fun_class
+                   │   └──(+) weight=5, type=add
+                   │       │──(Z) weight=1, type=var
+                   │       └──(⋅) weight=3, type=times
+                   │           │──(_pi) weight=1, type=pi
+                   │           └──(Z) weight=1, type=var
+                   └──(⋅) weight=3, type=times
+                       │──(_sin) weight=1, type=fun_class
+                       └──(Z) weight=1, type=var
+
+./null/add/sep_class/eq_class NULL 1 4 6 30 
+./one/neg/add/sep_class/eq_class 1 1 2 4 6 30 
+./one/sep_class/eq_class 1 1 6 30 
+./fun_class/times/eq_class/eq_class _sin 1 3 23 30 
+./var/times/eq_class/eq_class R 1 3 23 30 
+./fun_class/times/eq_class/eq_class/eq_class _sin 1 7 19 23 30 
+./var/add/times/eq_class/eq_class/eq_class Z 1 5 7 19 23 30 
+./pi/times/add/times/eq_class/eq_class/eq_class _pi 1 3 5 7 19 23 30 
+./var/times/add/times/eq_class/eq_class/eq_class Z 1 3 5 7 19 23 30 
+./fun_class/times/eq_class/eq_class/eq_class/eq_class _sin 1 7 11 19 23 30 
+./var/add/times/eq_class/eq_class/eq_class/eq_class Z 1 5 7 11 19 23 30 
+./pi/times/add/times/eq_class/eq_class/eq_class/eq_class _pi 1 3 5 7 11 19 23 30 
+./var/times/add/times/eq_class/eq_class/eq_class/eq_class Z 1 3 5 7 11 19 23 30 
+./fun_class/times/eq_class/eq_class/eq_class/eq_class _sin 1 3 11 19 23 30 
+./var/times/eq_class/eq_class/eq_class/eq_class Z 1 3 11 19 23 30 
+
+\sin(\mathbb{Z})
+   └──(⋅) weight=3, type=times
+       │──(_sin) weight=1, type=fun_class
+       └──(Z) weight=1, type=var
+
+./fun_class/times _sin 1 3 
+./var/times Z 1 3 
+
+[-1,1]
+   └──(,) weight=6, type=sep_class
+       │──(+) weight=4, type=add
+       │   │──(NULL) weight=1, type=null
+       │   └──(-) weight=2, type=neg
+       │       └──(1) weight=1, type=one
+       └──(1) weight=1, type=one
+
+./null/add/sep_class NULL 1 4 6 
+./one/neg/add/sep_class 1 1 2 4 6 
+./one/sep_class 1 1 6 
 

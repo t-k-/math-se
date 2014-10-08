@@ -95,13 +95,13 @@ extern unsigned int tb_st;
 \\lmoustache       { return _LEFT; }
 
  /* non-discriminative pairs are crazy mass */
-"|"                { mkstr(yytext); return _VERT; }
-"\\|"              { mkstr(yytext); return _VERT; }
-\\vert             { mkstr(yytext); return _VERT; }
-\\[Aa]rrowvert     { mkstr(yytext); return _VERT; }
-\\bracevert        { mkstr(yytext); return _VERT; }
-\\r[vV]ert         { mkstr(yytext); return _VERT; }
-\\l[vV]ert         { mkstr(yytext); return _VERT; }
+"|"                { mkstr(yytext); return VERT; }
+"\\|"              { mkstr(yytext); return VERT; }
+\\vert             { mkstr(yytext); return VERT; }
+\\[Aa]rrowvert     { mkstr(yytext); return VERT; }
+\\bracevert        { mkstr(yytext); return VERT; }
+\\r[vV]ert         { mkstr(yytext); return VERT; }
+\\l[vV]ert         { mkstr(yytext); return VERT; }
 
 =                          { mkstr(yytext); return EQ_CLASS; }
 :=                         { mkstr(yytext); return EQ_CLASS; }
@@ -171,8 +171,8 @@ extern unsigned int tb_st;
 <tab>\\\\          { return _TAB; }
 <tab>\\cr          { return _TAB; }
 <tab>&             { return _TAB; }
-\\\\               { return SEP_CLASS; }
-\\cr               { return SEP_CLASS; }
+\\\\               { mkstr(yytext); return SEP_CLASS; }
+\\cr               { mkstr(yytext); return SEP_CLASS; }
 &                  { /* ignore when not in matrix. */ }
 
 \\array\{          { BEGIN(tab);
