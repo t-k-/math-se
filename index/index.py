@@ -2,8 +2,30 @@
 import hashlib
 import os
 import ctypes
+import sys
+import getopt
+
+def help(arg0):
+	print '%s [-p, --path=<collection path>]' % arg0
+	sys.exit(1)
+
 # set collection path
+argv = sys.argv
 co_path = "./collection"
+try: 
+	opts, args = getopt.getopt(argv[1:], "p:", ['path='])
+	if len(opts) == 0 and len(argv) != 1:
+		raise
+except:
+	help(argv[0])
+	exit(0)
+
+for opt, arg in opts:
+	if opt in ("-p", "--path"):
+		co_path = arg
+
+print "target path: %s" % co_path
+
 # init DBM
 so = ctypes.CDLL("./libbdb_wraper.so") 
 os.system("mkdir -p " + co_path)
