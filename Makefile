@@ -37,6 +37,7 @@ clean:
 	rm -f *.a tags inc/*.gch
 	find . -name "*.pyc" | xargs rm -f
 	find . -name "*.ln" | xargs rm -f
+	find . -name "*.so" | xargs rm -f
 	make clean -C ./index
 	make clean -C ./parser
 	make clean -C ./search
