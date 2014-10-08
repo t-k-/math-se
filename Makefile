@@ -23,6 +23,8 @@ mklink: submake
 	ln -s `pwd`/index/index.py `pwd`/test/eval/index.py.ln
 	@ [ -e test/eval/libbdb_wraper.so ] || \
 	ln -s `pwd`/index/libbdb_wraper.so `pwd`/test/eval/libbdb_wraper.so
+	@ [ -e test/eval/where.sh.ln ] || \
+	ln -s `pwd`/test/parse/1-where.sh `pwd`/test/eval/where.sh.ln
 
 submake: 
 	make -C ./index
