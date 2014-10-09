@@ -1,18 +1,29 @@
 n
-{a+1 \atop b+2}+c
-   └──(+) weight=9, type=add
-       │──(_atop) weight=7, type=sep_class
-       │   │──(+) weight=3, type=add
-       │   │   │──(a) weight=1, type=var
-       │   │   └──(1) weight=1, type=one
-       │   └──(+) weight=3, type=add
-       │       │──(b) weight=1, type=var
-       │       └──(2) weight=1, type=const
-       └──(c) weight=1, type=var
+\buildrel \alpha\beta \over \longrightarrow
+   └──(_over) weight=7, type=frac
+       │──(⋅) weight=3, type=times
+       │   │──(_alpha) weight=1, type=var
+       │   └──(_beta) weight=1, type=var
+       └──(_longrightarrow) weight=3, type=sep_class
+           │──(NULL) weight=2, type=null
+           └──(NULL) weight=1, type=null
 
-./var/add/sep_class/add a 1 3 7 9 
-./one/add/sep_class/add 1 1 3 7 9 
-./var/add/sep_class/add b 1 3 7 9 
-./const/add/sep_class/add 2 1 3 7 9 
-./var/add c 1 9 
+./var/times/frac _alpha 1 3 7 
+./var/times/frac _beta 1 3 7 
+./null/sep_class/frac NULL 2 3 7 
+
+\buildrel \rm def \over {:=}
+   └──(_over) weight=8, type=frac
+       │──(⋅) weight=4, type=times
+       │   │──(d) weight=1, type=var
+       │   │──(e) weight=1, type=var
+       │   └──(f) weight=1, type=var
+       └──(:=) weight=3, type=eq_class
+           │──(NULL) weight=2, type=null
+           └──(NULL) weight=1, type=null
+
+./var/times/frac d 1 4 8 
+./var/times/frac e 1 4 8 
+./var/times/frac f 1 4 8 
+./null/eq_class/frac NULL 2 3 8 
 

@@ -21,12 +21,12 @@
 %token <s> EQ_CLASS SEP_CLASS SUM_CLASS DOTS SEP_DIV
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR VERT
 %token <s> FRAC TIMES SQRT CONST DIV FUN_CLASS PRIME_VAR
-%token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP
+%token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP BRACK
 %token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
  
 %type <p> tex mat_tex term factor pack atom s_atom script
 
-%right OVER CHOOSE
+%right OVER CHOOSE BRACK
 %right _TAB
 %right SEP_CLASS
 %right EQ_CLASS STACKREL
@@ -118,9 +118,21 @@ tex : %prec NULL_REDUCE
     root = $$ = father;
     free($2);
     }
+    | tex OVER EQ_CLASS 
+    {
+    SUB_CONS(mktoken($2, MT_FRAC), $1, NULL);
+    root = $$ = father;
+    free($2);
+    }
     | tex CHOOSE tex 
     {
     SUB_CONS(mktoken($2, MT_COMBIN), $1, $3);
+    root = $$ = father;
+    free($2);
+    }
+    | tex BRACK tex 
+    {
+    SUB_CONS(mktoken($2, MT_TAB), $1, $3);
     root = $$ = father;
     free($2);
     }

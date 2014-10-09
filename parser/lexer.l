@@ -164,6 +164,7 @@ extern unsigned int tb_st;
 \\eqslantgtr               { mkstr(yytext); return EQ_CLASS; }
 \\gtrsim                   { mkstr(yytext); return EQ_CLASS; }
 \\gtrapprox                { mkstr(yytext); return EQ_CLASS; }
+\\bowtie                   { mkstr(yytext); return EQ_CLASS; }
 
 \\stackrel  { mkstr(yytext); return STACKREL; }
 
@@ -179,6 +180,7 @@ extern unsigned int tb_st;
                      sts(&tb_st); 
                      return _BEGIN_MAT; }
 
+ /* all the supported environment in MathJax */
 \\begin\{matrix\}       { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
 \\begin\{vmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
 \\begin\{Vmatrix\}      { BEGIN(tab); sts(&tb_st); return _BEGIN_MAT; }
@@ -197,7 +199,6 @@ extern unsigned int tb_st;
 \\end\{smallmatrix\}    { BEGIN(INITIAL); return _END_MAT; } 
 \\end\{cases\}          { BEGIN(INITIAL); return _END_MAT; } 
 
- /* ignore some environment */
 \\begin\{align\}                  { } 
 \\end\{align\}                    { }  
 \\begin\{align\*\}                { } 
@@ -243,6 +244,7 @@ extern unsigned int tb_st;
 \\binom                 { mkstr(yytext); return COMBIN; }
 
 \\choose                { mkstr(yytext); return CHOOSE; }
+\\brack                 { mkstr(yytext); return BRACK; }
 
 \\dots          { mkstr(yytext); return DOTS; }
 \.\.\.          { mkstr(yytext); return DOTS; }
@@ -261,6 +263,7 @@ extern unsigned int tb_st;
 ":"                      { mkstr(yytext); return SEP_CLASS; }
 \\\&                     { mkstr(yytext); return SEP_CLASS; } 
 \\And                    { mkstr(yytext); return SEP_CLASS; }
+\\between                { mkstr(yytext); return SEP_CLASS; }
 \\mid                    { mkstr(yytext); return SEP_CLASS; }
 \\nmid                   { mkstr(yytext); return SEP_CLASS; }
 \\quad                   { mkstr(yytext); return SEP_CLASS; }
@@ -346,10 +349,13 @@ extern unsigned int tb_st;
 \\arg           { mkstr(yytext); return SUM_CLASS; }
 \\bigcap        { mkstr(yytext); return SUM_CLASS; }
 \\bigcup        { mkstr(yytext); return SUM_CLASS; }
+\\bigcirc       { mkstr(yytext); return SUM_CLASS; }
 \\bigodot       { mkstr(yytext); return SUM_CLASS; }
 \\bigoplus      { mkstr(yytext); return SUM_CLASS; }
 \\bigotimes     { mkstr(yytext); return SUM_CLASS; }
 \\bigsqcup      { mkstr(yytext); return SUM_CLASS; }
+\\bigtriangledown { mkstr(yytext); return SUM_CLASS; }
+\\bigtriangleup { mkstr(yytext); return SUM_CLASS; }
 \\biguplus      { mkstr(yytext); return SUM_CLASS; }
 \\bigvee        { mkstr(yytext); return SUM_CLASS; }
 \\bigwedge      { mkstr(yytext); return SUM_CLASS; }
@@ -434,6 +440,7 @@ extern unsigned int tb_st;
 \\triangle      { mkstr(yytext); return ANGLE; }
 \\angle         { mkstr(yytext); return ANGLE; }
 \\perp          { mkstr(yytext); return PERP; }
+\\bot           { mkstr(yytext); return PERP; }
 \\circ          { mkstr(yytext); return CIRC; }
 \\%             { mkstr(yytext); return PERCENT; }
 "'"             { mkstr(yytext); return PRIME_SUP; }
@@ -446,6 +453,7 @@ extern unsigned int tb_st;
 α               { mkstr("alpha"); return VAR; }
 \\[Bb]eta       { mkstr(yytext); return VAR; } 
 β               { mkstr("beta"); return VAR; }
+\\beth          { mkstr(yytext); return VAR; } 
 \\[Cc]hi        { mkstr(yytext); return VAR; } 
 \\[Dd]elta      { mkstr(yytext); return VAR; } 
 \\[Ee]psilon    { mkstr(yytext); return VAR; } 
