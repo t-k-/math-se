@@ -67,6 +67,9 @@ static char *str_type(int t_num)
 		case MT_FRAC:
 			sprintf(out, "frac");
 			break;
+		case MT_VEC:
+			sprintf(out, "vec");
+			break;
 		case MT_FACT:
 			sprintf(out, "fact");
 			break;

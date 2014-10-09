@@ -17,8 +17,8 @@
 
 %error-verbose
 
-%token _BEGIN_MAT _END_MAT
-%token <s> EQ_CLASS SEP_CLASS SUM_CLASS DOTS SEP_DIV
+%token _BEGIN_MAT _END_MAT 
+%token <s> EQ_CLASS SEP_CLASS SUM_CLASS DOTS SEP_DIV VEC
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR VERT
 %token <s> FRAC TIMES SQRT CONST DIV FUN_CLASS PRIME_VAR
 %token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP BRACK
@@ -409,6 +409,12 @@ atom : VAR
      a[0] = $1[strlen($1) - 2]; ta = mktoken(a, MT_VAR);
      b[0] = $1[strlen($1) - 1]; tb = mktoken(b, MT_VAR);
      SUB_CONS(mktoken("/", MT_FRAC), ta, tb);
+     root = $$ = father;
+     free($1);
+     }
+     | VEC atom 
+     { 
+     SUB_CONS(mktoken($1, MT_VEC), $2, NULL);
      root = $$ = father;
      free($1);
      }

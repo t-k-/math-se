@@ -1,21 +1,14 @@
 n
-\root 3 \of {7}
-   └──(√) weight=3, type=sqrt
-       │──(3) weight=1, type=const
-       └──(7) weight=1, type=const
+a^\overrightarrow AB
+   └──(⋅) weight=7, type=times
+       │──([) weight=5, type=sus
+       │   │──(^) weight=3, type=sups
+       │   │   └──(_overrightarrow) weight=2, type=vec
+       │   │       └──(A) weight=1, type=var
+       │   └──(a) weight=1, type=var
+       └──(B) weight=1, type=var
 
-./const/sqrt 3 1 3 
-./const/sqrt 7 1 3 
-
-a^\root 3 \of {7}
-   └──([) weight=6, type=sus
-       │──(^) weight=4, type=sups
-       │   └──(√) weight=3, type=sqrt
-       │       │──(3) weight=1, type=const
-       │       └──(7) weight=1, type=const
-       └──(a) weight=1, type=var
-
-./const/sqrt/sups/sus 3 1 3 4 6 
-./const/sqrt/sups/sus 7 1 3 4 6 
-./var/sus a 1 6 
+./var/vec/sups/sus/times A 1 2 3 5 7 
+./var/sus/times a 1 5 7 
+./var/times B 1 7 
 

@@ -35,6 +35,7 @@ enum type_enum {
 	MT_TIMES,
 	MT_COMBIN,
 	MT_FRAC,
+	MT_VEC,
 	MT_FACT,
 	MT_VAR,
 	MT_CONST,
