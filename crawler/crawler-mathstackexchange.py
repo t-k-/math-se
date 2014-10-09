@@ -44,18 +44,17 @@ def find_tex(re_mod, string, sf):
 
 def find_p(q_page, sf):
 	s = BeautifulSoup(q_page)
+	# uncomment the print below to see if the encoding is correct.
+	# print s 
 	tag_p_array = s.find_all('p')
 	for obj in tag_p_array:
-		string = obj.string
-		if string is None:
-			continue
+		string = unicode(obj)
 		# a newline is equavalent to a space in Tex
 		string = string.replace("\n", ' ') 
 		string = string.replace("\r", ' ') 
 		find_dollar_tex(string, sf)
 		find_tex(re_inline, string, sf)
 		find_tex(re_display, string, sf)
-
 
 def find_q_page(navi_page, c):
 	# find question page url
@@ -107,10 +106,10 @@ def crawl_force(id):
 	s = BeautifulSoup(curl(url_redir, c))
 	tag_a = s.find('a')
 	url = tag_a['href']
-	print 'url: ', url
 	find_p(curl(url, c), save_file)
 	save_file.close()
-	print "at: %s" % save_path
+	print "path at: %s" % save_path
+	print "url at: %s%s" % (root_url, url) 
 
 def crawl_all():
 	crawl(1, 5000)
@@ -135,7 +134,9 @@ def main(arg):
 			break
 		if opt in ("-t", "--test"):
 			print "crawling test page %s ..." % arg
-			find_p(open(arg), sys.stdout)
+			testf = open(arg).read()
+			testf = testf.decode('utf-8', 'ignore')
+			find_p(testf, sys.stdout)
 			break
 		if opt in ("-f", "--force"):
 			print "crawling %s..." % arg
