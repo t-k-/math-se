@@ -22,7 +22,7 @@
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR VERT
 %token <s> FRAC TIMES SQRT CONST DIV FUN_CLASS PRIME_VAR
 %token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP BRACK
-%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ 
+%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ ROOT OF
  
 %type <p> tex mat_tex term factor pack atom s_atom script
 
@@ -115,12 +115,6 @@ tex : %prec NULL_REDUCE
     | tex OVER tex 
     {
     SUB_CONS(mktoken($2, MT_FRAC), $1, $3);
-    root = $$ = father;
-    free($2);
-    }
-    | tex OVER EQ_CLASS 
-    {
-    SUB_CONS(mktoken($2, MT_FRAC), $1, NULL);
     root = $$ = father;
     free($2);
     }
@@ -373,6 +367,19 @@ atom : VAR
      root = $$ = father;
      free($1);
      }
+     | SQRT '[' tex ']' atom 
+     { 
+     SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
+     root = $$ = father;
+     free($1);
+     }
+     | ROOT atom OF atom
+     { 
+     SUB_CONS(mktoken("√", MT_SQRT), $2, $4);
+     root = $$ = father;
+     free($1);
+     free($3);
+     }
      | COMBIN atom atom 
      { 
      SUB_CONS(mktoken("C", MT_COMBIN), $2, $3);
@@ -402,12 +409,6 @@ atom : VAR
      a[0] = $1[strlen($1) - 2]; ta = mktoken(a, MT_VAR);
      b[0] = $1[strlen($1) - 1]; tb = mktoken(b, MT_VAR);
      SUB_CONS(mktoken("/", MT_FRAC), ta, tb);
-     root = $$ = father;
-     free($1);
-     }
-     | SQRT '[' tex ']' atom 
-     { 
-     SUB_CONS(mktoken("√", MT_SQRT), $3, $5);
      root = $$ = father;
      free($1);
      }
