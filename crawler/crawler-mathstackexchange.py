@@ -111,36 +111,43 @@ def crawl_force(id):
 	print "path at: %s" % save_path
 	print "url at: %s%s" % (root_url, url) 
 
-def crawl_all():
-	crawl(1, 5000)
+def crawl_all(page_begin, page_end):
+	crawl(page_begin, page_end)
 
 def help(arg0):
-	print '%s [-a, --all] [-f, --force <post id>] [-t, --test <file path>]' % arg0
+	print '%s [-b, --begin-page <page>=1] [-e, --end-page <page>=30000] [-p, --post <post id>] [-f, --file <html file path>]' % arg0
 	sys.exit(1)
 
 def main(arg):
 	argv = arg[1:]
 	try:
-		opts, args = getopt.getopt(argv, "af:t:", ['all', 'force=', 'test='])
-		if len(opts) == 0:
-			raise
+		opts, args = getopt.getopt(argv, "b:e:p:f:", ['begin-page=', 'end-page=', 'post=', 'file='])
 	except:
 		help(arg[0])
 
+	begin_page = 1;
+	end_page = 30000;
 	for opt, arg in opts:
-		if opt in ("-a", "--all"):
-			print "crawling all pages..."
-			crawl_all()
-			break
-		if opt in ("-t", "--test"):
+		if opt in ("-b", "--begin-page"):
+			begin_page = int(arg);
+			continue
+		if opt in ("-e", "--end-page"):
+			end_page = int(arg);
+			continue
+		if opt in ("-f", "--file"):
 			print "crawling test page %s ..." % arg
 			testf = open(arg).read()
 			testf = testf.decode('utf-8', 'ignore')
 			find_p(testf, sys.stdout)
 			break
-		if opt in ("-f", "--force"):
+		if opt in ("-p", "--post"):
 			print "crawling %s..." % arg
 			crawl_force(arg)
+			break
+
+	if (end_page >= begin_page):
+		print "crawling pages from %d to %d..." % (begin_page, end_page)
+		crawl_all(begin_page, end_page)
 
 if __name__ == "__main__":
 	main(sys.argv)
