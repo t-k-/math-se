@@ -22,14 +22,14 @@
 %token <s> PI EMPTY MODULAR ANGLE PERP CIRC VAR VERT BUILDREL
 %token <s> FRAC TIMES SQRT CONST DIV FUN_CLASS PRIME_VAR
 %token <s> PARTIAL INFTY FRAC__ PERCENT PRIME_SUP BRACK SET_REL
-%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ ROOT OF
+%token <s> STACKREL CHOOSE OVER COMBIN COMBIN__ ROOT OF X_ARROW
  
 %type <p> tex nor_tex mat_tex term factor pack atom s_atom script
 
-%right OVER CHOOSE BRACK
+%right OVER CHOOSE BRACK  
 %right _TAB
 %right SEP_CLASS
-%right EQ_CLASS STACKREL BUILDREL SET_REL
+%right EQ_CLASS STACKREL BUILDREL SET_REL X_ARROW
 %right MODULAR
 %right SEP_DIV 
 
@@ -116,6 +116,13 @@ nor_tex : %prec NULL_REDUCE
         | nor_tex SET_REL atom EQ_CLASS nor_tex
         { 
         SUB_CONS(mktoken($4, MT_EQ_CLASS), $1, $5);
+        root = $$ = father;
+        free($2);
+        matree_release($3);
+        }
+        | nor_tex X_ARROW atom nor_tex
+        { 
+        SUB_CONS(mktoken($2, MT_EQ_CLASS), $1, $4);
         root = $$ = father;
         free($2);
         matree_release($3);

@@ -242,10 +242,12 @@ extern unsigned int tb_st;
 \\unlhd                    { mkstr(yytext); return EQ_CLASS; }
 \\unrhd                    { mkstr(yytext); return EQ_CLASS; }
 
-\\stackrel  { mkstr(yytext); return STACKREL; }
-\\buildrel  { mkstr(yytext); return BUILDREL; }
-\\overset   { mkstr(yytext); return SET_REL; }
-\\underset  { mkstr(yytext); return SET_REL; }
+\\stackrel    { mkstr(yytext); return STACKREL; }
+\\xleftarrow  { mkstr(yytext); return X_ARROW; }
+\\xrightarrow { mkstr(yytext); return X_ARROW; }
+\\buildrel    { mkstr(yytext); return BUILDREL; }
+\\overset     { mkstr(yytext); return SET_REL; }
+\\underset    { mkstr(yytext); return SET_REL; }
 
  /* table/matrix related */
 <tab>\\\\          { return _TAB; }
