@@ -539,10 +539,10 @@ extern unsigned int tb_st;
 \\odot          { mkstr(yytext); return TIMES; }
 \\ast           { mkstr(yytext); return TIMES; }
 
+\\over                { return _OVER; }
 \/                    { mkstr("slash"); return DIV; }
 \\div                 { mkstr(yytext); return DIV; }
 \\divideontimes       { mkstr(yytext); return DIV; }
-\\over                { mkstr(yytext); return OVER; }
 \\frac[ ]*[0-9][0-9]  { mkstr(yytext); return FRAC__; }
 \\dfrac[ ]*[0-9][0-9] { mkstr(yytext); return FRAC__; }
 \\cfrac[ ]*[0-9][0-9] { mkstr(yytext); return FRAC__; }
