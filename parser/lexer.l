@@ -31,6 +31,7 @@ extern unsigned int tb_st;
 "}"              { return yytext[0]; }
 
 \\oplus         { return '+'; }
+\\uplus         { return '+'; }
 \\dotplus       { return '+'; }
 \\pm            { return '+'; }
 \\mp            { return '+'; }
@@ -104,6 +105,7 @@ extern unsigned int tb_st;
 "|"                { mkstr(yytext); return VERT; }
 "\\|"              { mkstr(yytext); return VERT; }
 \\vert             { mkstr(yytext); return VERT; }
+\\Vert             { mkstr(yytext); return VERT; }
 \\[Aa]rrowvert     { mkstr(yytext); return VERT; }
 \\bracevert        { mkstr(yytext); return VERT; }
 \\r[vV]ert         { mkstr(yytext); return VERT; }
@@ -117,6 +119,7 @@ extern unsigned int tb_st;
 \\parallel                 { mkstr(yytext); return EQ_CLASS; }
 \\nparallel                { mkstr(yytext); return EQ_CLASS; }
 \\approx                   { mkstr(yytext); return EQ_CLASS; }
+\\thickapprox              { mkstr(yytext); return EQ_CLASS; }
 \\[dD]oteq                 { mkstr(yytext); return EQ_CLASS; }
 \\approxeq                 { mkstr(yytext); return EQ_CLASS; }
 \\lnapprox                 { mkstr(yytext); return EQ_CLASS; }
@@ -125,6 +128,7 @@ extern unsigned int tb_st;
 \\asymp                    { mkstr(yytext); return EQ_CLASS; }
 \\backepsilon              { mkstr(yytext); return EQ_CLASS; }
 \\backsim                  { mkstr(yytext); return EQ_CLASS; }
+\\thicksim                 { mkstr(yytext); return EQ_CLASS; }
 \\backsimeq                { mkstr(yytext); return EQ_CLASS; }
 \\lvertneqq                { mkstr(yytext); return EQ_CLASS; }
 \\curlyeqprec              { mkstr(yytext); return EQ_CLASS; }
@@ -152,6 +156,7 @@ extern unsigned int tb_st;
 \\gg                       { mkstr(yytext); return EQ_CLASS; }
 \\in                       { mkstr(yytext); return EQ_CLASS; }
 \\ni                       { mkstr(yytext); return EQ_CLASS; }
+\\owns                     { mkstr(yytext); return EQ_CLASS; }
 \\notin                    { mkstr(yytext); return EQ_CLASS; }
 \\ne                       { mkstr(yytext); return EQ_CLASS; }
 \\neq                      { mkstr(yytext); return EQ_CLASS; }
@@ -160,20 +165,33 @@ extern unsigned int tb_st;
 "<"                        { mkstr(yytext); return EQ_CLASS; }
 \\gtrdot                   { mkstr(yytext); return EQ_CLASS; }
 \\subset                   { mkstr(yytext); return EQ_CLASS; }
+\\Subset                   { mkstr(yytext); return EQ_CLASS; }
 \\sqsubset                 { mkstr(yytext); return EQ_CLASS; }
 \\sqsubseteq               { mkstr(yytext); return EQ_CLASS; }
+\\varsubsetneq             { mkstr(yytext); return EQ_CLASS; }
+\\varsubsetneqq            { mkstr(yytext); return EQ_CLASS; }
+\\varsupsetneq             { mkstr(yytext); return EQ_CLASS; }
+\\varsupsetneqq            { mkstr(yytext); return EQ_CLASS; }
 \\supset                   { mkstr(yytext); return EQ_CLASS; }
+\\Supset                   { mkstr(yytext); return EQ_CLASS; }
 \\sqsupset                 { mkstr(yytext); return EQ_CLASS; }
 \\sqsupseteq               { mkstr(yytext); return EQ_CLASS; }
 \\subseteq                 { mkstr(yytext); return EQ_CLASS; }
+\\subsetneq                { mkstr(yytext); return EQ_CLASS; }
+\\subseteqq                { mkstr(yytext); return EQ_CLASS; }
+\\subsetneqq               { mkstr(yytext); return EQ_CLASS; }
 \\nsubseteq                { mkstr(yytext); return EQ_CLASS; }
 \\supseteq                 { mkstr(yytext); return EQ_CLASS; }
 \\nsupseteq                { mkstr(yytext); return EQ_CLASS; }
+\\supsetneq                { mkstr(yytext); return EQ_CLASS; }
+\\supseteqq                { mkstr(yytext); return EQ_CLASS; }
+\\supsetneqq               { mkstr(yytext); return EQ_CLASS; }
 \\sqcap                    { mkstr(yytext); return EQ_CLASS; }
 \\sqcup                    { mkstr(yytext); return EQ_CLASS; }
 \\circeq                   { mkstr(yytext); return EQ_CLASS; }
 \\prec                     { mkstr(yytext); return EQ_CLASS; }
 \\nprec                    { mkstr(yytext); return EQ_CLASS; }
+\\Prec                     { mkstr(yytext); return EQ_CLASS; }
 \\succ                     { mkstr(yytext); return EQ_CLASS; }
 \\nsucc                    { mkstr(yytext); return EQ_CLASS; }
 \\preceq                   { mkstr(yytext); return EQ_CLASS; }
@@ -189,6 +207,7 @@ extern unsigned int tb_st;
 \\wedge                    { mkstr(yytext); return EQ_CLASS; } 
 \\lor                      { mkstr(yytext); return EQ_CLASS; } 
 \\vee                      { mkstr(yytext); return EQ_CLASS; } 
+\\veebar                   { mkstr(yytext); return EQ_CLASS; } 
 \\nless                    { mkstr(yytext); return EQ_CLASS; } 
 \\lessapprox               { mkstr(yytext); return EQ_CLASS; }
 \\lesssim                  { mkstr(yytext); return EQ_CLASS; }
@@ -211,6 +230,17 @@ extern unsigned int tb_st;
 \\bowtie                   { mkstr(yytext); return EQ_CLASS; }
 \\Join                     { mkstr(yytext); return EQ_CLASS; }
 \\leadsto                  { mkstr(yytext); return EQ_CLASS; }
+\\succapprox               { mkstr(yytext); return EQ_CLASS; }
+\\succnapprox              { mkstr(yytext); return EQ_CLASS; }
+\\succcurlyeq              { mkstr(yytext); return EQ_CLASS; }
+\\succneqq                 { mkstr(yytext); return EQ_CLASS; }
+\\succsim                  { mkstr(yytext); return EQ_CLASS; }
+\\succnsim                 { mkstr(yytext); return EQ_CLASS; }
+\\trianglelefteq           { mkstr(yytext); return EQ_CLASS; }
+\\trianglerighteq          { mkstr(yytext); return EQ_CLASS; }
+\\triangleq                { mkstr(yytext); return EQ_CLASS; }
+\\unlhd                    { mkstr(yytext); return EQ_CLASS; }
+\\unrhd                    { mkstr(yytext); return EQ_CLASS; }
 
 \\stackrel  { mkstr(yytext); return STACKREL; }
 
@@ -297,6 +327,7 @@ extern unsigned int tb_st;
 \\dots          { mkstr(yytext); return DOTS; }
 \.\.\.          { mkstr(yytext); return DOTS; }
 \\ldots         { mkstr(yytext); return DOTS; }
+\\vdots         { mkstr(yytext); return DOTS; }
 \\cdots         { mkstr(yytext); return DOTS; }
 \\ddots         { mkstr(yytext); return DOTS; }
 \\ddot          { mkstr(yytext); return DOTS; }
@@ -330,6 +361,8 @@ extern unsigned int tb_st;
 \\qquad                  { mkstr(yytext); return SEP_CLASS; }
 \\forall                 { mkstr(yytext); return SEP_CLASS; }
 \\frown                  { mkstr(yytext); return SEP_CLASS; }
+\\smallfrown             { mkstr(yytext); return SEP_CLASS; }
+\\smallsmile             { mkstr(yytext); return SEP_CLASS; }
 \\exists                 { mkstr(yytext); return SEP_CLASS; }
 \\nexists                { mkstr(yytext); return SEP_CLASS; }
 \\atop                   { mkstr(yytext); return SEP_CLASS; }
@@ -407,11 +440,18 @@ extern unsigned int tb_st;
 \\rightsquigarrow        { mkstr(yytext); return SEP_CLASS; }
 \\impliedby              { mkstr(yytext); return SEP_CLASS; }
 \\implies                { mkstr(yytext); return SEP_CLASS; }
+\\precapprox             { mkstr(yytext); return SEP_CLASS; }
+\\precnapprox            { mkstr(yytext); return SEP_CLASS; }
+\\preccurlyeq            { mkstr(yytext); return SEP_CLASS; }
+\\precneqq               { mkstr(yytext); return SEP_CLASS; }
+\\precsim                { mkstr(yytext); return SEP_CLASS; }
+\\precnsim               { mkstr(yytext); return SEP_CLASS; }
 
 \\pmod          { mkstr(yytext); return MODULAR; }
 \\bmod          { mkstr(yytext); return MODULAR; }
 \\mod           { mkstr(yytext); return MODULAR; }
 
+\\vec                  { mkstr(yytext); return VEC; }
 \\overleftarrow        { mkstr(yytext); return VEC; }
 \\overrightarrow       { mkstr(yytext); return VEC; }
 
@@ -451,6 +491,7 @@ extern unsigned int tb_st;
 \\hom           { mkstr(yytext); return FUN_CLASS; }
 \\idotsint      { mkstr(yytext); return SUM_CLASS; }
 \\int           { mkstr(yytext); return SUM_CLASS; }
+\\smallint      { mkstr(yytext); return SUM_CLASS; }
 \\iint          { mkstr(yytext); return SUM_CLASS; }
 \\iiint         { mkstr(yytext); return SUM_CLASS; }
 \\iiiint        { mkstr(yytext); return SUM_CLASS; }
@@ -459,6 +500,7 @@ extern unsigned int tb_st;
 \\injlim        { mkstr(yytext); return SUM_CLASS; }
 \\sup           { mkstr(yytext); return SUM_CLASS; }
 \\varinjlim     { mkstr(yytext); return SUM_CLASS; }
+\\varprojlim    { mkstr(yytext); return SUM_CLASS; }
 \\ker           { mkstr(yytext); return FUN_CLASS; }
 \\lg            { mkstr(yytext); return FUN_CLASS; }
 \\lim           { mkstr(yytext); return SUM_CLASS; }
@@ -474,7 +516,6 @@ extern unsigned int tb_st;
 \\Pr            { mkstr(yytext); return FUN_CLASS; }
 \\prod          { mkstr(yytext); return SUM_CLASS; }
 \\projlim       { mkstr(yytext); return SUM_CLASS; }
-\\varprojlim    { mkstr(yytext); return SUM_CLASS; }
 \\sum           { mkstr(yytext); return SUM_CLASS; }
 
  /* not standard operators */
@@ -488,6 +529,7 @@ extern unsigned int tb_st;
 \\times         { mkstr(yytext); return TIMES; }
 \\otimes        { mkstr(yytext); return TIMES; }
 \\ltimes        { mkstr(yytext); return TIMES; }
+\\rtimes        { mkstr(yytext); return TIMES; }
 \\cdot          { mkstr(yytext); return TIMES; }
 \\odot          { mkstr(yytext); return TIMES; }
 \\ast           { mkstr(yytext); return TIMES; }
@@ -499,32 +541,41 @@ extern unsigned int tb_st;
 \\frac[ ]*[0-9][0-9]  { mkstr(yytext); return FRAC__; }
 \\dfrac[ ]*[0-9][0-9] { mkstr(yytext); return FRAC__; }
 \\cfrac[ ]*[0-9][0-9] { mkstr(yytext); return FRAC__; }
+\\tfrac[ ]*[0-9][0-9] { mkstr(yytext); return FRAC__; }
 \\frac                { mkstr(yytext); return FRAC; }
 \\dfrac               { mkstr(yytext); return FRAC; }
 \\cfrac               { mkstr(yytext); return FRAC; }
+\\tfrac               { mkstr(yytext); return FRAC; }
 
 \\sqrt          { mkstr(yytext); return SQRT; }
 \\root          { mkstr(yytext); return ROOT; }
 \\of            { mkstr(yytext); return OF; }
 
-[0-9]+\.?[0-9]* { mkstr(yytext); return CONST; } 
-\\partial       { mkstr(yytext); return PARTIAL; } 
-\\nabla         { mkstr(yytext); return PARTIAL; } 
-\\pi            { mkstr(yytext); return PI; } 
-\\infty         { mkstr(yytext); return INFTY; }
-∞               { mkstr(yytext); return INFTY; }
-\\empty         { mkstr(yytext); return EMPTY; }
-\\emptyset      { mkstr(yytext); return EMPTY; }
-\\\varnothing   { mkstr(yytext); return EMPTY; }
-\\triangle      { mkstr(yytext); return ANGLE; }
-\\angle         { mkstr(yytext); return ANGLE; }
-\\measuredangle { mkstr(yytext); return ANGLE; }
-\\perp          { mkstr(yytext); return PERP; }
-\\bot           { mkstr(yytext); return PERP; }
-\\circ          { mkstr(yytext); return CIRC; }
-\\%             { mkstr(yytext); return PERCENT; }
-"'"             { mkstr(yytext); return PRIME_SUP; }
-\\prime         { mkstr(yytext); return PRIME_VAR; }
+[0-9]+\.?[0-9]*      { mkstr(yytext); return CONST; } 
+\\partial            { mkstr(yytext); return PARTIAL; } 
+\\nabla              { mkstr(yytext); return PARTIAL; } 
+\\pi                 { mkstr(yytext); return PI; } 
+\\infty              { mkstr(yytext); return INFTY; }
+∞                    { mkstr(yytext); return INFTY; }
+\\empty              { mkstr(yytext); return EMPTY; }
+\\emptyset           { mkstr(yytext); return EMPTY; }
+\\varnothing         { mkstr(yytext); return EMPTY; }
+\\triangle           { mkstr(yytext); return ANGLE; }
+\\triangledown       { mkstr(yytext); return ANGLE; }
+\\angle              { mkstr(yytext); return ANGLE; }
+\\vartriangle        { mkstr(yytext); return ANGLE; }
+\\vartriangleleft    { mkstr(yytext); return ANGLE; }
+\\vartriangleright   { mkstr(yytext); return ANGLE; }
+\\triangleleft       { mkstr(yytext); return ANGLE; }
+\\triangleright      { mkstr(yytext); return ANGLE; }
+\\measuredangle      { mkstr(yytext); return ANGLE; }
+\\sphericalangle     { mkstr(yytext); return ANGLE; }
+\\perp               { mkstr(yytext); return PERP; }
+\\bot                { mkstr(yytext); return PERP; }
+\\circ               { mkstr(yytext); return CIRC; }
+\\%                  { mkstr(yytext); return PERCENT; }
+"'"                  { mkstr(yytext); return PRIME_SUP; }
+\\prime              { mkstr(yytext); return PRIME_VAR; }
 
 [a-zA-Z_]       { mkstr(yytext); return VAR; }
 \\[Aa]lpha      { mkstr(yytext); return VAR; } 
@@ -537,24 +588,28 @@ extern unsigned int tb_st;
 \\eth           { mkstr(yytext); return VAR; } 
 \\[Cc]hi        { mkstr(yytext); return VAR; } 
 \\[Dd]elta      { mkstr(yytext); return VAR; } 
+\\varDelta      { mkstr(yytext); return VAR; } 
 \\[Ee]psilon    { mkstr(yytext); return VAR; } 
 \\ell           { mkstr(yytext); return VAR; }
 \\[Ee]ta        { mkstr(yytext); return VAR; } 
 \\[Gg]amma      { mkstr(yytext); return VAR; } 
+\\varGamma      { mkstr(yytext); return VAR; } 
 \\[Ii]ota       { mkstr(yytext); return VAR; }
 \\imath         { mkstr(yytext); return VAR; }
 \\jmath         { mkstr(yytext); return VAR; }
 \\[Kk]appa      { mkstr(yytext); return VAR; }
 \\[Ll]ambda     { mkstr(yytext); return VAR; } 
+\\VarLambda     { mkstr(yytext); return VAR; } 
 \\[Mm]u         { mkstr(yytext); return VAR; } 
 \\[Nn]u         { mkstr(yytext); return VAR; } 
 \\[Oo]micron    { mkstr(yytext); return VAR; }
 \\[Oo]mega      { mkstr(yytext); return VAR; } 
-\\omicron       { mkstr(yytext); return VAR; } 
+\\VarOmega      { mkstr(yytext); return VAR; } 
 \\mho           { mkstr(yytext); return VAR; }
 \\[Pp]si        { mkstr(yytext); return VAR; } 
 \\[Pp]hi        { mkstr(yytext); return VAR; } 
 \\Pi            { mkstr(yytext); return VAR; } 
+\\varpropto     { mkstr(yytext); return VAR; } 
 \\[Rr]ho        { mkstr(yytext); return VAR; } 
 \\[Ss]igma      { mkstr(yytext); return VAR; } 
 \\[Tt]heta      { mkstr(yytext); return VAR; } 
@@ -562,15 +617,23 @@ extern unsigned int tb_st;
 \\[Uu]psilon    { mkstr(yytext); return VAR; } 
 \\[Xx]i         { mkstr(yytext); return VAR; } 
 \\[Zz]eta       { mkstr(yytext); return VAR; }
-
+\\Re            { mkstr(yytext); return VAR; }
 \\varepsilon    { mkstr(yytext); return VAR; } 
-\\vartheta      { mkstr(yytext); return VAR; } 
 \\varkappa      { mkstr(yytext); return VAR; } 
 \\varpi         { mkstr(yytext); return VAR; }
+\\varPi         { mkstr(yytext); return VAR; }
 \\varrho        { mkstr(yytext); return VAR; }
 \\varsigma      { mkstr(yytext); return VAR; } 
+\\varSigma      { mkstr(yytext); return VAR; } 
 \\varphi        { mkstr(yytext); return VAR; } 
+\\varPhi        { mkstr(yytext); return VAR; } 
+\\varPsi        { mkstr(yytext); return VAR; } 
+\\vartheta      { mkstr(yytext); return VAR; } 
+\\varTheta      { mkstr(yytext); return VAR; } 
+\\varUpsilon    { mkstr(yytext); return VAR; } 
+\\varXi         { mkstr(yytext); return VAR; } 
 \\top           { mkstr(yytext); return VAR; }
+\\wr            { mkstr(yytext); return VAR; }
 
 \\color\{       { BEGIN(ign); sts(&ign_st); } 
 \\mbox\{        { BEGIN(ign); sts(&ign_st); }
