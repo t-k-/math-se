@@ -1,0 +1,242 @@
+http://math.stackexchange.com/questions/783529
+\small x^4 −  4x^3 + 2x^2 + 4x + 4=(x^2-(2+\alpha)x+1+\sqrt{7}+\alpha)(x^2-(2-\alpha)x+1+\sqrt{7}-\alpha)
+   └──(=) weight=55, type=eq_class
+       │──(+) weight=21, type=add
+       │   │──(⋅) weight=10, type=times
+       │   │   │──([) weight=4, type=sus
+       │   │   │   │──(^) weight=2, type=sups
+       │   │   │   │   └──(4) weight=1, type=const
+       │   │   │   └──(x) weight=1, type=var
+       │   │   │──(4) weight=1, type=const
+       │   │   └──([) weight=4, type=sus
+       │   │       │──(^) weight=2, type=sups
+       │   │       │   └──(3) weight=1, type=const
+       │   │       └──(x) weight=1, type=var
+       │   │──(⋅) weight=6, type=times
+       │   │   │──(2) weight=1, type=const
+       │   │   └──([) weight=4, type=sus
+       │   │       │──(^) weight=2, type=sups
+       │   │       │   └──(2) weight=1, type=const
+       │   │       └──(x) weight=1, type=var
+       │   │──(⋅) weight=3, type=times
+       │   │   │──(4) weight=1, type=const
+       │   │   └──(x) weight=1, type=var
+       │   └──(4) weight=1, type=const
+       └──(⋅) weight=33, type=times
+           │──(+) weight=15, type=add
+           │   │──([) weight=4, type=sus
+           │   │   │──(^) weight=2, type=sups
+           │   │   │   └──(2) weight=1, type=const
+           │   │   └──(x) weight=1, type=var
+           │   │──(-) weight=6, type=neg
+           │   │   └──(⋅) weight=5, type=times
+           │   │       │──(+) weight=3, type=add
+           │   │       │   │──(2) weight=1, type=const
+           │   │       │   └──(_alpha) weight=1, type=var
+           │   │       └──(x) weight=1, type=var
+           │   │──(1) weight=1, type=one
+           │   │──(√) weight=2, type=sqrt
+           │   │   └──(7) weight=1, type=const
+           │   └──(_alpha) weight=1, type=var
+           └──(+) weight=17, type=add
+               │──([) weight=4, type=sus
+               │   │──(^) weight=2, type=sups
+               │   │   └──(2) weight=1, type=const
+               │   └──(x) weight=1, type=var
+               │──(-) weight=7, type=neg
+               │   └──(⋅) weight=6, type=times
+               │       │──(+) weight=4, type=add
+               │       │   │──(2) weight=1, type=const
+               │       │   └──(-) weight=2, type=neg
+               │       │       └──(_alpha) weight=1, type=var
+               │       └──(x) weight=1, type=var
+               │──(1) weight=1, type=one
+               │──(√) weight=2, type=sqrt
+               │   └──(7) weight=1, type=const
+               └──(-) weight=2, type=neg
+                   └──(_alpha) weight=1, type=var
+
+./const/sups/sus/times/add/eq_class 4 1 2 4 10 21 55 
+./var/sus/times/add/eq_class x 1 4 10 21 55 
+./const/times/add/eq_class 4 1 10 21 55 
+./const/sups/sus/times/add/eq_class 3 1 2 4 10 21 55 
+./var/sus/times/add/eq_class x 1 4 10 21 55 
+./const/times/add/eq_class 2 1 6 21 55 
+./const/sups/sus/times/add/eq_class 2 1 2 4 6 21 55 
+./var/sus/times/add/eq_class x 1 4 6 21 55 
+./const/times/add/eq_class 4 1 3 21 55 
+./var/times/add/eq_class x 1 3 21 55 
+./const/add/eq_class 4 1 21 55 
+./const/sups/sus/add/times/eq_class 2 1 2 4 15 33 55 
+./var/sus/add/times/eq_class x 1 4 15 33 55 
+./const/add/times/neg/add/times/eq_class 2 1 3 5 6 15 33 55 
+./var/add/times/neg/add/times/eq_class _alpha 1 3 5 6 15 33 55 
+./var/times/neg/add/times/eq_class x 1 5 6 15 33 55 
+./one/add/times/eq_class 1 1 15 33 55 
+./const/sqrt/add/times/eq_class 7 1 2 15 33 55 
+./var/add/times/eq_class _alpha 1 15 33 55 
+./const/sups/sus/add/times/eq_class 2 1 2 4 17 33 55 
+./var/sus/add/times/eq_class x 1 4 17 33 55 
+./const/add/times/neg/add/times/eq_class 2 1 4 6 7 17 33 55 
+./var/neg/add/times/neg/add/times/eq_class _alpha 1 2 4 6 7 17 33 55 
+./var/times/neg/add/times/eq_class x 1 6 7 17 33 55 
+./one/add/times/eq_class 1 1 17 33 55 
+./const/sqrt/add/times/eq_class 7 1 2 17 33 55 
+./var/neg/add/times/eq_class _alpha 1 2 17 33 55 
+
+\alpha = \sqrt{4+2\sqrt{7}}
+   └──(=) weight=9, type=eq_class
+       │──(_alpha) weight=1, type=var
+       └──(√) weight=7, type=sqrt
+           └──(+) weight=6, type=add
+               │──(4) weight=1, type=const
+               └──(⋅) weight=4, type=times
+                   │──(2) weight=1, type=const
+                   └──(√) weight=2, type=sqrt
+                       └──(7) weight=1, type=const
+
+./var/eq_class _alpha 1 9 
+./const/add/sqrt/eq_class 4 1 6 7 9 
+./const/times/add/sqrt/eq_class 2 1 4 6 7 9 
+./const/sqrt/times/add/sqrt/eq_class 7 1 2 4 6 7 9 
+
+(x-1)^4
+   └──([) weight=7, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(4) weight=1, type=const
+       └──(+) weight=4, type=add
+           │──(x) weight=1, type=var
+           └──(-) weight=2, type=neg
+               └──(1) weight=1, type=one
+
+./const/sups/sus 4 1 2 7 
+./var/add/sus x 1 4 7 
+./one/neg/add/sus 1 1 2 4 7 
+
+4x^2-8x-3
+   └──(+) weight=13, type=add
+       │──(⋅) weight=6, type=times
+       │   │──(4) weight=1, type=const
+       │   └──([) weight=4, type=sus
+       │       │──(^) weight=2, type=sups
+       │       │   └──(2) weight=1, type=const
+       │       └──(x) weight=1, type=var
+       │──(-) weight=4, type=neg
+       │   └──(⋅) weight=3, type=times
+       │       │──(8) weight=1, type=const
+       │       └──(x) weight=1, type=var
+       └──(-) weight=2, type=neg
+           └──(3) weight=1, type=const
+
+./const/times/add 4 1 6 13 
+./const/sups/sus/times/add 2 1 2 4 6 13 
+./var/sus/times/add x 1 4 6 13 
+./const/times/neg/add 8 1 3 4 13 
+./var/times/neg/add x 1 3 4 13 
+./const/neg/add 3 1 2 13 
+
+1\pm
+   └──(+) weight=2, type=add
+       └──(1) weight=1, type=one
+
+./one/add 1 1 2 
+
+\dfrac{\sqrt7}2
+   └──(/) weight=4, type=frac
+       │──(√) weight=2, type=sqrt
+       │   └──(7) weight=1, type=const
+       └──(2) weight=1, type=const
+
+./const/sqrt/frac 7 1 2 4 
+./const/frac 2 1 4 
+
+\alpha
+   └──(_alpha) weight=1, type=var
+
+./var _alpha 1 
+
+P(x)=(x-1)^4-\bigg[(x-1)-\dfrac{\sqrt7}2\bigg]\bigg[(x-1)+\dfrac{\sqrt7}2\bigg]=u^2-u+
+   └──(=) weight=39, type=eq_class
+       │──(⋅) weight=3, type=times
+       │   │──(P) weight=1, type=var
+       │   └──(x) weight=1, type=var
+       └──(=) weight=35, type=eq_class
+           │──(+) weight=27, type=add
+           │   │──([) weight=7, type=sus
+           │   │   │──(^) weight=2, type=sups
+           │   │   │   └──(4) weight=1, type=const
+           │   │   └──(+) weight=4, type=add
+           │   │       │──(x) weight=1, type=var
+           │   │       └──(-) weight=2, type=neg
+           │   │           └──(1) weight=1, type=one
+           │   └──(-) weight=19, type=neg
+           │       └──(⋅) weight=18, type=times
+           │           │──(+) weight=9, type=add
+           │           │   │──(x) weight=1, type=var
+           │           │   │──(-) weight=2, type=neg
+           │           │   │   └──(1) weight=1, type=one
+           │           │   └──(-) weight=5, type=neg
+           │           │       └──(/) weight=4, type=frac
+           │           │           │──(√) weight=2, type=sqrt
+           │           │           │   └──(7) weight=1, type=const
+           │           │           └──(2) weight=1, type=const
+           │           └──(+) weight=8, type=add
+           │               │──(x) weight=1, type=var
+           │               │──(-) weight=2, type=neg
+           │               │   └──(1) weight=1, type=one
+           │               └──(/) weight=4, type=frac
+           │                   │──(√) weight=2, type=sqrt
+           │                   │   └──(7) weight=1, type=const
+           │                   └──(2) weight=1, type=const
+           └──(+) weight=7, type=add
+               │──([) weight=4, type=sus
+               │   │──(^) weight=2, type=sups
+               │   │   └──(2) weight=1, type=const
+               │   └──(u) weight=1, type=var
+               └──(-) weight=2, type=neg
+                   └──(u) weight=1, type=var
+
+./var/times/eq_class P 1 3 39 
+./var/times/eq_class x 1 3 39 
+./const/sups/sus/add/eq_class/eq_class 4 1 2 7 27 35 39 
+./var/add/sus/add/eq_class/eq_class x 1 4 7 27 35 39 
+./one/neg/add/sus/add/eq_class/eq_class 1 1 2 4 7 27 35 39 
+./var/add/times/neg/add/eq_class/eq_class x 1 9 18 19 27 35 39 
+./one/neg/add/times/neg/add/eq_class/eq_class 1 1 2 9 18 19 27 35 39 
+./const/sqrt/frac/neg/add/times/neg/add/eq_class/eq_class 7 1 2 4 5 9 18 19 27 35 39 
+./const/frac/neg/add/times/neg/add/eq_class/eq_class 2 1 4 5 9 18 19 27 35 39 
+./var/add/times/neg/add/eq_class/eq_class x 1 8 18 19 27 35 39 
+./one/neg/add/times/neg/add/eq_class/eq_class 1 1 2 8 18 19 27 35 39 
+./const/sqrt/frac/add/times/neg/add/eq_class/eq_class 7 1 2 4 8 18 19 27 35 39 
+./const/frac/add/times/neg/add/eq_class/eq_class 2 1 4 8 18 19 27 35 39 
+./const/sups/sus/add/eq_class/eq_class 2 1 2 4 7 35 39 
+./var/sus/add/eq_class/eq_class u 1 4 7 35 39 
+./var/neg/add/eq_class/eq_class u 1 2 7 35 39 
+
++\dfrac74
+   └──(+) weight=5, type=add
+       │──(NULL) weight=1, type=null
+       └──(/) weight=3, type=frac
+           │──(7) weight=1, type=var
+           └──(4) weight=1, type=var
+
+./null/add NULL 1 5 
+./var/frac/add 7 1 3 5 
+./var/frac/add 4 1 3 5 
+
+u=(x-1)^2
+   └──(=) weight=9, type=eq_class
+       │──(u) weight=1, type=var
+       └──([) weight=7, type=sus
+           │──(^) weight=2, type=sups
+           │   └──(2) weight=1, type=const
+           └──(+) weight=4, type=add
+               │──(x) weight=1, type=var
+               └──(-) weight=2, type=neg
+                   └──(1) weight=1, type=one
+
+./var/eq_class u 1 9 
+./const/sups/sus/eq_class 2 1 2 7 9 
+./var/add/sus/eq_class x 1 4 7 9 
+./one/neg/add/sus/eq_class 1 1 2 4 7 9 
+

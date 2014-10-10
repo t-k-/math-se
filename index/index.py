@@ -27,7 +27,8 @@ for opt, arg in opts:
 print "target path: %s" % co_path
 
 # init DBM
-so = ctypes.CDLL("./libbdb_wraper.so") 
+src_dir = os.path.dirname(argv[0])
+so = ctypes.CDLL(src_dir + "/libbdb_wraper.so") 
 os.system("mkdir -p " + co_path)
 bdb_doc = so.bdb_init(co_path + "/documents.bdb")
 bdb_num = so.bdb_init(co_path + "/brw-number.bdb")
