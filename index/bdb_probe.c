@@ -8,22 +8,21 @@ int main(int argc, char **argv)
 	void *num_bdb = bdb_init("./collection/brw-number.bdb");	
 	void *doc_bdb = bdb_init("./collection/documents.bdb");	
 	uint64_t nnum_bdb, ndoc_bdb;
-	char *key, *doc;
+	char *doc, *key = argv[1];
 	int *nbrw;
 
 	if (num_bdb == NULL || doc_bdb == NULL) {
 		printf("open db error.\n");
 		goto exit;
+	} else {
+		nnum_bdb = bdb_records(num_bdb);
+		ndoc_bdb = bdb_records(doc_bdb);
 	}
 
 	if (argc != 2) {
 		printf("bad arg. (cmd <doc-id>)\n");
 		goto exit;
 	}
-
-	key = argv[1];
-	nnum_bdb = bdb_records(num_bdb);
-	ndoc_bdb = bdb_records(doc_bdb);
 
 	nbrw = bdb_get_int(num_bdb, key, DOC_HASH_LEN);
 

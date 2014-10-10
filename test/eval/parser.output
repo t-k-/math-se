@@ -1,613 +1,505 @@
-http://math.stackexchange.com/questions/296115
-a_1=2
-   └──(=) weight=6, type=eq_class
-       │──([) weight=4, type=sus
-       │   │──(_) weight=2, type=subs
-       │   │   └──(1) weight=1, type=one
-       │   └──(a) weight=1, type=var
-       └──(2) weight=1, type=const
+http://math.stackexchange.com/questions/793260
+A
+   └──(A) weight=1, type=var
 
-./one/subs/sus/eq_class 1 1 2 4 6 
-./var/sus/eq_class a 1 4 6 
-./const/eq_class 2 1 6 
+./var A 1 
 
-b_1=1
-   └──(=) weight=6, type=eq_class
-       │──([) weight=4, type=sus
-       │   │──(_) weight=2, type=subs
-       │   │   └──(1) weight=1, type=one
-       │   └──(b) weight=1, type=var
-       └──(1) weight=1, type=one
-
-./one/subs/sus/eq_class 1 1 2 4 6 
-./var/sus/eq_class b 1 4 6 
-./one/eq_class 1 1 6 
-
-n \geq 1
-   └──(_geq) weight=3, type=eq_class
-       │──(n) weight=1, type=var
-       └──(1) weight=1, type=one
-
-./var/eq_class n 1 3 
-./one/eq_class 1 1 3 
-
-a_{n+1}=\dfrac{a_n+b_n}{2},  b_{n+1}=\dfrac{2a_nb_n}{a_n+b_n}
-   └──(,) weight=46, type=sep_class
-       │──(=) weight=18, type=eq_class
-       │   │──([) weight=6, type=sus
-       │   │   │──(_) weight=4, type=subs
-       │   │   │   └──(+) weight=3, type=add
-       │   │   │       │──(n) weight=1, type=var
-       │   │   │       └──(1) weight=1, type=one
-       │   │   └──(a) weight=1, type=var
-       │   └──(/) weight=11, type=frac
-       │       │──(+) weight=9, type=add
-       │       │   │──([) weight=4, type=sus
-       │       │   │   │──(_) weight=2, type=subs
-       │       │   │   │   └──(n) weight=1, type=var
-       │       │   │   └──(a) weight=1, type=var
-       │       │   └──([) weight=4, type=sus
-       │       │       │──(_) weight=2, type=subs
-       │       │       │   └──(n) weight=1, type=var
-       │       │       └──(b) weight=1, type=var
-       │       └──(2) weight=1, type=const
-       └──(=) weight=27, type=eq_class
-           │──([) weight=6, type=sus
-           │   │──(_) weight=4, type=subs
-           │   │   └──(+) weight=3, type=add
-           │   │       │──(n) weight=1, type=var
-           │   │       └──(1) weight=1, type=one
-           │   └──(b) weight=1, type=var
-           └──(/) weight=20, type=frac
-               │──(⋅) weight=10, type=times
-               │   │──(2) weight=1, type=const
-               │   │──([) weight=4, type=sus
-               │   │   │──(_) weight=2, type=subs
-               │   │   │   └──(n) weight=1, type=var
-               │   │   └──(a) weight=1, type=var
-               │   └──([) weight=4, type=sus
-               │       │──(_) weight=2, type=subs
-               │       │   └──(n) weight=1, type=var
-               │       └──(b) weight=1, type=var
-               └──(+) weight=9, type=add
-                   │──([) weight=4, type=sus
-                   │   │──(_) weight=2, type=subs
-                   │   │   └──(n) weight=1, type=var
-                   │   └──(a) weight=1, type=var
-                   └──([) weight=4, type=sus
-                       │──(_) weight=2, type=subs
-                       │   └──(n) weight=1, type=var
-                       └──(b) weight=1, type=var
-
-./var/add/subs/sus/eq_class/sep_class n 1 3 4 6 18 46 
-./one/add/subs/sus/eq_class/sep_class 1 1 3 4 6 18 46 
-./var/sus/eq_class/sep_class a 1 6 18 46 
-./var/subs/sus/add/frac/eq_class/sep_class n 1 2 4 9 11 18 46 
-./var/sus/add/frac/eq_class/sep_class a 1 4 9 11 18 46 
-./var/subs/sus/add/frac/eq_class/sep_class n 1 2 4 9 11 18 46 
-./var/sus/add/frac/eq_class/sep_class b 1 4 9 11 18 46 
-./const/frac/eq_class/sep_class 2 1 11 18 46 
-./var/add/subs/sus/eq_class/sep_class n 1 3 4 6 27 46 
-./one/add/subs/sus/eq_class/sep_class 1 1 3 4 6 27 46 
-./var/sus/eq_class/sep_class b 1 6 27 46 
-./const/times/frac/eq_class/sep_class 2 1 10 20 27 46 
-./var/subs/sus/times/frac/eq_class/sep_class n 1 2 4 10 20 27 46 
-./var/sus/times/frac/eq_class/sep_class a 1 4 10 20 27 46 
-./var/subs/sus/times/frac/eq_class/sep_class n 1 2 4 10 20 27 46 
-./var/sus/times/frac/eq_class/sep_class b 1 4 10 20 27 46 
-./var/subs/sus/add/frac/eq_class/sep_class n 1 2 4 9 20 27 46 
-./var/sus/add/frac/eq_class/sep_class a 1 4 9 20 27 46 
-./var/subs/sus/add/frac/eq_class/sep_class n 1 2 4 9 20 27 46 
-./var/sus/add/frac/eq_class/sep_class b 1 4 9 20 27 46 
-
-\{a_n\}
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(a) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus a 1 4 
-
-\{b_n\}
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus b 1 4 
-
-\sqrt 2
-   └──(√) weight=2, type=sqrt
-       └──(2) weight=1, type=const
-
-./const/sqrt 2 1 2 
-
-a_n
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(a) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus a 1 4 
-
-a
-   └──(a) weight=1, type=var
-
-./var a 1 
-
-b_n
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus b 1 4 
-
-b
-   └──(b) weight=1, type=var
-
-./var b 1 
-
-a=\dfrac{a+b}{2},  b=\dfrac{2ab}{a+b}
-   └──(,) weight=18, type=sep_class
-       │──(=) weight=7, type=eq_class
-       │   │──(a) weight=1, type=var
-       │   └──(/) weight=5, type=frac
-       │       │──(+) weight=3, type=add
-       │       │   │──(a) weight=1, type=var
-       │       │   └──(b) weight=1, type=var
-       │       └──(2) weight=1, type=const
-       └──(=) weight=10, type=eq_class
-           │──(b) weight=1, type=var
-           └──(/) weight=8, type=frac
-               │──(⋅) weight=4, type=times
-               │   │──(2) weight=1, type=const
-               │   │──(a) weight=1, type=var
-               │   └──(b) weight=1, type=var
-               └──(+) weight=3, type=add
-                   │──(a) weight=1, type=var
-                   └──(b) weight=1, type=var
-
-./var/eq_class/sep_class a 1 7 18 
-./var/add/frac/eq_class/sep_class a 1 3 5 7 18 
-./var/add/frac/eq_class/sep_class b 1 3 5 7 18 
-./const/frac/eq_class/sep_class 2 1 5 7 18 
-./var/eq_class/sep_class b 1 10 18 
-./const/times/frac/eq_class/sep_class 2 1 4 8 10 18 
-./var/times/frac/eq_class/sep_class a 1 4 8 10 18 
-./var/times/frac/eq_class/sep_class b 1 4 8 10 18 
-./var/add/frac/eq_class/sep_class a 1 3 8 10 18 
-./var/add/frac/eq_class/sep_class b 1 3 8 10 18 
-
-a=b
-   └──(=) weight=3, type=eq_class
-       │──(a) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/eq_class a 1 3 
-./var/eq_class b 1 3 
-
-a=b=\sqrt2
-   └──(=) weight=6, type=eq_class
-       │──(a) weight=1, type=var
-       └──(=) weight=4, type=eq_class
-           │──(b) weight=1, type=var
-           └──(√) weight=2, type=sqrt
-               └──(2) weight=1, type=const
-
-./var/eq_class a 1 6 
-./var/eq_class/eq_class b 1 4 6 
-./const/sqrt/eq_class/eq_class 2 1 2 4 6 
-
-2 \geq a_n>b_n \geq 1
-   └──(_geq) weight=13, type=eq_class
-       │──(2) weight=1, type=const
-       └──(>) weight=11, type=eq_class
-           │──([) weight=4, type=sus
-           │   │──(_) weight=2, type=subs
-           │   │   └──(n) weight=1, type=var
-           │   └──(a) weight=1, type=var
-           └──(_geq) weight=6, type=eq_class
-               │──([) weight=4, type=sus
-               │   │──(_) weight=2, type=subs
-               │   │   └──(n) weight=1, type=var
-               │   └──(b) weight=1, type=var
-               └──(1) weight=1, type=one
-
-./const/eq_class 2 1 13 
-./var/subs/sus/eq_class/eq_class n 1 2 4 11 13 
-./var/sus/eq_class/eq_class a 1 4 11 13 
-./var/subs/sus/eq_class/eq_class/eq_class n 1 2 4 6 11 13 
-./var/sus/eq_class/eq_class/eq_class b 1 4 6 11 13 
-./one/eq_class/eq_class/eq_class 1 1 6 11 13 
-
-a_n + b_n > 2
-   └──(>) weight=11, type=eq_class
-       │──(+) weight=9, type=add
-       │   │──([) weight=4, type=sus
-       │   │   │──(_) weight=2, type=subs
-       │   │   │   └──(n) weight=1, type=var
-       │   │   └──(a) weight=1, type=var
-       │   └──([) weight=4, type=sus
-       │       │──(_) weight=2, type=subs
-       │       │   └──(n) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(2) weight=1, type=const
-
-./var/subs/sus/add/eq_class n 1 2 4 9 11 
-./var/sus/add/eq_class a 1 4 9 11 
-./var/subs/sus/add/eq_class n 1 2 4 9 11 
-./var/sus/add/eq_class b 1 4 9 11 
-./const/eq_class 2 1 11 
-
-a_n
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(a) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus a 1 4 
-
-b_n
-   └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(n) weight=1, type=var
-       └──(b) weight=1, type=var
-
-./var/subs/sus n 1 2 4 
-./var/sus b 1 4 
-
- (\spadesuit)
-   └──(NULL) weight=1, type=null
-
-./null NULL 1 
-
-\sqrt2
-   └──(√) weight=2, type=sqrt
-       └──(2) weight=1, type=const
-
-./const/sqrt 2 1 2 
-
-a_{n+1} \geq b_{n+1} \,\,\,\,\,\, (\text{Since Arithmetic mean is greater than the Harmonic mean})
-   └──(_geq) weight=15, type=eq_class
-       │──([) weight=6, type=sus
-       │   │──(_) weight=4, type=subs
-       │   │   └──(+) weight=3, type=add
-       │   │       │──(n) weight=1, type=var
-       │   │       └──(1) weight=1, type=one
-       │   └──(a) weight=1, type=var
-       └──(⋅) weight=8, type=times
-           │──([) weight=6, type=sus
-           │   │──(_) weight=4, type=subs
-           │   │   └──(+) weight=3, type=add
-           │   │       │──(n) weight=1, type=var
-           │   │       └──(1) weight=1, type=one
-           │   └──(b) weight=1, type=var
-           └──(NULL) weight=1, type=null
-
-./var/add/subs/sus/eq_class n 1 3 4 6 15 
-./one/add/subs/sus/eq_class 1 1 3 4 6 15 
-./var/sus/eq_class a 1 6 15 
-./var/add/subs/sus/times/eq_class n 1 3 4 6 8 15 
-./one/add/subs/sus/times/eq_class 1 1 3 4 6 8 15 
-./var/sus/times/eq_class b 1 6 8 15 
-./null/times/eq_class NULL 1 8 15 
-
-a_{n+1} - b_{n+1} = \dfrac{(a_n-b_n)^2}{2(a_n+b_n)}
-   └──(=) weight=40, type=eq_class
-       │──(+) weight=14, type=add
-       │   │──([) weight=6, type=sus
-       │   │   │──(_) weight=4, type=subs
-       │   │   │   └──(+) weight=3, type=add
-       │   │   │       │──(n) weight=1, type=var
-       │   │   │       └──(1) weight=1, type=one
-       │   │   └──(a) weight=1, type=var
-       │   └──(-) weight=7, type=neg
-       │       └──([) weight=6, type=sus
-       │           │──(_) weight=4, type=subs
-       │           │   └──(+) weight=3, type=add
-       │           │       │──(n) weight=1, type=var
-       │           │       └──(1) weight=1, type=one
-       │           └──(b) weight=1, type=var
-       └──(/) weight=25, type=frac
-           │──([) weight=13, type=sus
-           │   │──(^) weight=2, type=sups
-           │   │   └──(2) weight=1, type=const
-           │   └──(+) weight=10, type=add
-           │       │──([) weight=4, type=sus
-           │       │   │──(_) weight=2, type=subs
-           │       │   │   └──(n) weight=1, type=var
-           │       │   └──(a) weight=1, type=var
-           │       └──(-) weight=5, type=neg
-           │           └──([) weight=4, type=sus
-           │               │──(_) weight=2, type=subs
-           │               │   └──(n) weight=1, type=var
-           │               └──(b) weight=1, type=var
-           └──(⋅) weight=11, type=times
-               │──(2) weight=1, type=const
-               └──(+) weight=9, type=add
-                   │──([) weight=4, type=sus
-                   │   │──(_) weight=2, type=subs
-                   │   │   └──(n) weight=1, type=var
-                   │   └──(a) weight=1, type=var
-                   └──([) weight=4, type=sus
-                       │──(_) weight=2, type=subs
-                       │   └──(n) weight=1, type=var
-                       └──(b) weight=1, type=var
-
-./var/add/subs/sus/add/eq_class n 1 3 4 6 14 40 
-./one/add/subs/sus/add/eq_class 1 1 3 4 6 14 40 
-./var/sus/add/eq_class a 1 6 14 40 
-./var/add/subs/sus/neg/add/eq_class n 1 3 4 6 7 14 40 
-./one/add/subs/sus/neg/add/eq_class 1 1 3 4 6 7 14 40 
-./var/sus/neg/add/eq_class b 1 6 7 14 40 
-./const/sups/sus/frac/eq_class 2 1 2 13 25 40 
-./var/subs/sus/add/sus/frac/eq_class n 1 2 4 10 13 25 40 
-./var/sus/add/sus/frac/eq_class a 1 4 10 13 25 40 
-./var/subs/sus/neg/add/sus/frac/eq_class n 1 2 4 5 10 13 25 40 
-./var/sus/neg/add/sus/frac/eq_class b 1 4 5 10 13 25 40 
-./const/times/frac/eq_class 2 1 11 25 40 
-./var/subs/sus/add/times/frac/eq_class n 1 2 4 9 11 25 40 
-./var/sus/add/times/frac/eq_class a 1 4 9 11 25 40 
-./var/subs/sus/add/times/frac/eq_class n 1 2 4 9 11 25 40 
-./var/sus/add/times/frac/eq_class b 1 4 9 11 25 40 
-
-a_{n+1} - b_{n+1} = \dfrac{(a_n-b_n)^2}{2(a_n+b_n)} < \dfrac{(a_n-b_n)^2}4 < \dfrac{(a_1-b_1)^2}{4^{2n-1}} = \dfrac1{4^{2n-1}} \,\,\,\,\,\, (\spadesuit)
-   └──(=) weight=94, type=eq_class
-       │──(+) weight=14, type=add
-       │   │──([) weight=6, type=sus
-       │   │   │──(_) weight=4, type=subs
-       │   │   │   └──(+) weight=3, type=add
-       │   │   │       │──(n) weight=1, type=var
-       │   │   │       └──(1) weight=1, type=one
-       │   │   └──(a) weight=1, type=var
-       │   └──(-) weight=7, type=neg
-       │       └──([) weight=6, type=sus
-       │           │──(_) weight=4, type=subs
-       │           │   └──(+) weight=3, type=add
-       │           │       │──(n) weight=1, type=var
-       │           │       └──(1) weight=1, type=one
-       │           └──(b) weight=1, type=var
-       └──(<) weight=79, type=eq_class
-           │──(/) weight=25, type=frac
-           │   │──([) weight=13, type=sus
-           │   │   │──(^) weight=2, type=sups
-           │   │   │   └──(2) weight=1, type=const
-           │   │   └──(+) weight=10, type=add
-           │   │       │──([) weight=4, type=sus
-           │   │       │   │──(_) weight=2, type=subs
-           │   │       │   │   └──(n) weight=1, type=var
-           │   │       │   └──(a) weight=1, type=var
-           │   │       └──(-) weight=5, type=neg
-           │   │           └──([) weight=4, type=sus
-           │   │               │──(_) weight=2, type=subs
-           │   │               │   └──(n) weight=1, type=var
-           │   │               └──(b) weight=1, type=var
-           │   └──(⋅) weight=11, type=times
-           │       │──(2) weight=1, type=const
-           │       └──(+) weight=9, type=add
-           │           │──([) weight=4, type=sus
-           │           │   │──(_) weight=2, type=subs
-           │           │   │   └──(n) weight=1, type=var
-           │           │   └──(a) weight=1, type=var
-           │           └──([) weight=4, type=sus
-           │               │──(_) weight=2, type=subs
-           │               │   └──(n) weight=1, type=var
-           │               └──(b) weight=1, type=var
-           └──(<) weight=53, type=eq_class
-               │──(/) weight=15, type=frac
-               │   │──([) weight=13, type=sus
-               │   │   │──(^) weight=2, type=sups
-               │   │   │   └──(2) weight=1, type=const
-               │   │   └──(+) weight=10, type=add
-               │   │       │──([) weight=4, type=sus
-               │   │       │   │──(_) weight=2, type=subs
-               │   │       │   │   └──(n) weight=1, type=var
-               │   │       │   └──(a) weight=1, type=var
-               │   │       └──(-) weight=5, type=neg
-               │   │           └──([) weight=4, type=sus
-               │   │               │──(_) weight=2, type=subs
-               │   │               │   └──(n) weight=1, type=var
-               │   │               └──(b) weight=1, type=var
-               │   └──(4) weight=1, type=const
-               └──(=) weight=37, type=eq_class
-                   │──(/) weight=23, type=frac
-                   │   │──([) weight=13, type=sus
-                   │   │   │──(^) weight=2, type=sups
-                   │   │   │   └──(2) weight=1, type=const
-                   │   │   └──(+) weight=10, type=add
-                   │   │       │──([) weight=4, type=sus
-                   │   │       │   │──(_) weight=2, type=subs
-                   │   │       │   │   └──(1) weight=1, type=one
-                   │   │       │   └──(a) weight=1, type=var
-                   │   │       └──(-) weight=5, type=neg
-                   │   │           └──([) weight=4, type=sus
-                   │   │               │──(_) weight=2, type=subs
-                   │   │               │   └──(1) weight=1, type=one
-                   │   │               └──(b) weight=1, type=var
-                   │   └──([) weight=9, type=sus
-                   │       │──(^) weight=7, type=sups
-                   │       │   └──(+) weight=6, type=add
-                   │       │       │──(⋅) weight=3, type=times
-                   │       │       │   │──(2) weight=1, type=const
-                   │       │       │   └──(n) weight=1, type=var
-                   │       │       └──(-) weight=2, type=neg
-                   │       │           └──(1) weight=1, type=one
-                   │       └──(4) weight=1, type=const
-                   └──(⋅) weight=13, type=times
-                       │──(/) weight=11, type=frac
-                       │   │──(1) weight=1, type=one
-                       │   └──([) weight=9, type=sus
-                       │       │──(^) weight=7, type=sups
-                       │       │   └──(+) weight=6, type=add
-                       │       │       │──(⋅) weight=3, type=times
-                       │       │       │   │──(2) weight=1, type=const
-                       │       │       │   └──(n) weight=1, type=var
-                       │       │       └──(-) weight=2, type=neg
-                       │       │           └──(1) weight=1, type=one
-                       │       └──(4) weight=1, type=const
-                       └──(NULL) weight=1, type=null
-
-./var/add/subs/sus/add/eq_class n 1 3 4 6 14 94 
-./one/add/subs/sus/add/eq_class 1 1 3 4 6 14 94 
-./var/sus/add/eq_class a 1 6 14 94 
-./var/add/subs/sus/neg/add/eq_class n 1 3 4 6 7 14 94 
-./one/add/subs/sus/neg/add/eq_class 1 1 3 4 6 7 14 94 
-./var/sus/neg/add/eq_class b 1 6 7 14 94 
-./const/sups/sus/frac/eq_class/eq_class 2 1 2 13 25 79 94 
-./var/subs/sus/add/sus/frac/eq_class/eq_class n 1 2 4 10 13 25 79 94 
-./var/sus/add/sus/frac/eq_class/eq_class a 1 4 10 13 25 79 94 
-./var/subs/sus/neg/add/sus/frac/eq_class/eq_class n 1 2 4 5 10 13 25 79 94 
-./var/sus/neg/add/sus/frac/eq_class/eq_class b 1 4 5 10 13 25 79 94 
-./const/times/frac/eq_class/eq_class 2 1 11 25 79 94 
-./var/subs/sus/add/times/frac/eq_class/eq_class n 1 2 4 9 11 25 79 94 
-./var/sus/add/times/frac/eq_class/eq_class a 1 4 9 11 25 79 94 
-./var/subs/sus/add/times/frac/eq_class/eq_class n 1 2 4 9 11 25 79 94 
-./var/sus/add/times/frac/eq_class/eq_class b 1 4 9 11 25 79 94 
-./const/sups/sus/frac/eq_class/eq_class/eq_class 2 1 2 13 15 53 79 94 
-./var/subs/sus/add/sus/frac/eq_class/eq_class/eq_class n 1 2 4 10 13 15 53 79 94 
-./var/sus/add/sus/frac/eq_class/eq_class/eq_class a 1 4 10 13 15 53 79 94 
-./var/subs/sus/neg/add/sus/frac/eq_class/eq_class/eq_class n 1 2 4 5 10 13 15 53 79 94 
-./var/sus/neg/add/sus/frac/eq_class/eq_class/eq_class b 1 4 5 10 13 15 53 79 94 
-./const/frac/eq_class/eq_class/eq_class 4 1 15 53 79 94 
-./const/sups/sus/frac/eq_class/eq_class/eq_class/eq_class 2 1 2 13 23 37 53 79 94 
-./one/subs/sus/add/sus/frac/eq_class/eq_class/eq_class/eq_class 1 1 2 4 10 13 23 37 53 79 94 
-./var/sus/add/sus/frac/eq_class/eq_class/eq_class/eq_class a 1 4 10 13 23 37 53 79 94 
-./one/subs/sus/neg/add/sus/frac/eq_class/eq_class/eq_class/eq_class 1 1 2 4 5 10 13 23 37 53 79 94 
-./var/sus/neg/add/sus/frac/eq_class/eq_class/eq_class/eq_class b 1 4 5 10 13 23 37 53 79 94 
-./const/times/add/sups/sus/frac/eq_class/eq_class/eq_class/eq_class 2 1 3 6 7 9 23 37 53 79 94 
-./var/times/add/sups/sus/frac/eq_class/eq_class/eq_class/eq_class n 1 3 6 7 9 23 37 53 79 94 
-./one/neg/add/sups/sus/frac/eq_class/eq_class/eq_class/eq_class 1 1 2 6 7 9 23 37 53 79 94 
-./const/sus/frac/eq_class/eq_class/eq_class/eq_class 4 1 9 23 37 53 79 94 
-./one/frac/times/eq_class/eq_class/eq_class/eq_class 1 1 11 13 37 53 79 94 
-./const/times/add/sups/sus/frac/times/eq_class/eq_class/eq_class/eq_class 2 1 3 6 7 9 11 13 37 53 79 94 
-./var/times/add/sups/sus/frac/times/eq_class/eq_class/eq_class/eq_class n 1 3 6 7 9 11 13 37 53 79 94 
-./one/neg/add/sups/sus/frac/times/eq_class/eq_class/eq_class/eq_class 1 1 2 6 7 9 11 13 37 53 79 94 
-./const/sus/frac/times/eq_class/eq_class/eq_class/eq_class 4 1 9 11 13 37 53 79 94 
-./null/times/eq_class/eq_class/eq_class/eq_class NULL 1 13 37 53 79 94 
-
-a_n \to b_n
-   └──(_to) weight=9, type=sep_class
-       │──([) weight=4, type=sus
-       │   │──(_) weight=2, type=subs
-       │   │   └──(n) weight=1, type=var
-       │   └──(a) weight=1, type=var
+\vec{\alpha_{i}}
+   └──(_vec) weight=5, type=vec
        └──([) weight=4, type=sus
            │──(_) weight=2, type=subs
-           │   └──(n) weight=1, type=var
-           └──(b) weight=1, type=var
+           │   └──(i) weight=1, type=var
+           └──(_alpha) weight=1, type=var
 
-./var/subs/sus/sep_class n 1 2 4 9 
-./var/sus/sep_class a 1 4 9 
-./var/subs/sus/sep_class n 1 2 4 9 
-./var/sus/sep_class b 1 4 9 
+./var/subs/sus/vec i 1 2 4 5 
+./var/sus/vec _alpha 1 4 5 
 
-a_{n+1} b_{n+1} = a_nb_n
-   └──(=) weight=23, type=eq_class
-       │──(⋅) weight=13, type=times
-       │   │──([) weight=6, type=sus
-       │   │   │──(_) weight=4, type=subs
-       │   │   │   └──(+) weight=3, type=add
-       │   │   │       │──(n) weight=1, type=var
-       │   │   │       └──(1) weight=1, type=one
-       │   │   └──(a) weight=1, type=var
-       │   └──([) weight=6, type=sus
-       │       │──(_) weight=4, type=subs
-       │       │   └──(+) weight=3, type=add
-       │       │       │──(n) weight=1, type=var
-       │       │       └──(1) weight=1, type=one
-       │       └──(b) weight=1, type=var
-       └──(⋅) weight=9, type=times
-           │──([) weight=4, type=sus
-           │   │──(_) weight=2, type=subs
-           │   │   └──(n) weight=1, type=var
-           │   └──(a) weight=1, type=var
-           └──([) weight=4, type=sus
-               │──(_) weight=2, type=subs
-               │   └──(n) weight=1, type=var
-               └──(b) weight=1, type=var
+\lambda_{i}
+   └──([) weight=4, type=sus
+       │──(_) weight=2, type=subs
+       │   └──(i) weight=1, type=var
+       └──(_lambda) weight=1, type=var
 
-./var/add/subs/sus/times/eq_class n 1 3 4 6 13 23 
-./one/add/subs/sus/times/eq_class 1 1 3 4 6 13 23 
-./var/sus/times/eq_class a 1 6 13 23 
-./var/add/subs/sus/times/eq_class n 1 3 4 6 13 23 
-./one/add/subs/sus/times/eq_class 1 1 3 4 6 13 23 
-./var/sus/times/eq_class b 1 6 13 23 
-./var/subs/sus/times/eq_class n 1 2 4 9 23 
-./var/sus/times/eq_class a 1 4 9 23 
-./var/subs/sus/times/eq_class n 1 2 4 9 23 
-./var/sus/times/eq_class b 1 4 9 23 
+./var/subs/sus i 1 2 4 
+./var/sus _lambda 1 4 
 
-a_n b_n = a_1 b_1 = 2
-   └──(=) weight=21, type=eq_class
-       │──(⋅) weight=9, type=times
-       │   │──([) weight=4, type=sus
-       │   │   │──(_) weight=2, type=subs
-       │   │   │   └──(n) weight=1, type=var
-       │   │   └──(a) weight=1, type=var
-       │   └──([) weight=4, type=sus
-       │       │──(_) weight=2, type=subs
-       │       │   └──(n) weight=1, type=var
-       │       └──(b) weight=1, type=var
-       └──(=) weight=11, type=eq_class
-           │──(⋅) weight=9, type=times
-           │   │──([) weight=4, type=sus
-           │   │   │──(_) weight=2, type=subs
-           │   │   │   └──(1) weight=1, type=one
-           │   │   └──(a) weight=1, type=var
+i=1,...n
+   └──(,) weight=7, type=sep_class
+       │──(=) weight=3, type=eq_class
+       │   │──(i) weight=1, type=var
+       │   └──(1) weight=1, type=one
+       └──(⋅) weight=3, type=times
+           │──(...) weight=1, type=dots
+           └──(n) weight=1, type=var
+
+./var/eq_class/sep_class i 1 3 7 
+./one/eq_class/sep_class 1 1 3 7 
+./dots/times/sep_class ... 1 3 7 
+./var/times/sep_class n 1 3 7 
+
+\lambda_i \neq \lambda_j
+   └──(_neq) weight=9, type=eq_class
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(i) weight=1, type=var
+       │   └──(_lambda) weight=1, type=var
+       └──([) weight=4, type=sus
+           │──(_) weight=2, type=subs
+           │   └──(j) weight=1, type=var
+           └──(_lambda) weight=1, type=var
+
+./var/subs/sus/eq_class i 1 2 4 9 
+./var/sus/eq_class _lambda 1 4 9 
+./var/subs/sus/eq_class j 1 2 4 9 
+./var/sus/eq_class _lambda 1 4 9 
+
+i \neq j
+   └──(_neq) weight=3, type=eq_class
+       │──(i) weight=1, type=var
+       └──(j) weight=1, type=var
+
+./var/eq_class i 1 3 
+./var/eq_class j 1 3 
+
+A=PDP^{-1}
+   └──(=) weight=12, type=eq_class
+       │──(A) weight=1, type=var
+       └──(⋅) weight=10, type=times
+           │──(P) weight=1, type=var
+           │──(D) weight=1, type=var
+           └──([) weight=7, type=sus
+               │──(^) weight=5, type=sups
+               │   └──(+) weight=4, type=add
+               │       │──(NULL) weight=1, type=null
+               │       └──(-) weight=2, type=neg
+               │           └──(1) weight=1, type=one
+               └──(P) weight=1, type=var
+
+./var/eq_class A 1 12 
+./var/times/eq_class P 1 10 12 
+./var/times/eq_class D 1 10 12 
+./null/add/sups/sus/times/eq_class NULL 1 4 5 7 10 12 
+./one/neg/add/sups/sus/times/eq_class 1 1 2 4 5 7 10 12 
+./var/sus/times/eq_class P 1 7 10 12 
+
+P=\begin{pmatrix} \, &amp; \, &amp; \, &amp; \, \\ \vdots &amp; \vdots &amp; \, &amp; \vdots \\ \vec{\alpha_1} &amp; \vec{\alpha_2} &amp; \cdots &amp; \vec{\alpha_n} \\ \vdots &amp; \vdots &amp; \, &amp; \vdots \\ \, &amp; \, &amp; \, &amp; \, \end{pmatrix}
+   └──(=) weight=110, type=eq_class
+       │──(P) weight=1, type=var
+       └──(tab) weight=108, type=tab
+           │──(NULL) weight=2, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(_vdots) weight=2, type=dots
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vdots) weight=1, type=dots
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vdots) weight=1, type=dots
+           │──(_vec) weight=5, type=vec
            │   └──([) weight=4, type=sus
            │       │──(_) weight=2, type=subs
            │       │   └──(1) weight=1, type=one
-           │       └──(b) weight=1, type=var
-           └──(2) weight=1, type=const
+           │       └──(_alpha) weight=1, type=var
+           │──(;) weight=10, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vec) weight=5, type=vec
+           │       └──([) weight=4, type=sus
+           │           │──(_) weight=2, type=subs
+           │           │   └──(2) weight=1, type=const
+           │           └──(_alpha) weight=1, type=var
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_cdots) weight=1, type=dots
+           │──(;) weight=10, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vec) weight=5, type=vec
+           │       └──([) weight=4, type=sus
+           │           │──(_) weight=2, type=subs
+           │           │   └──(n) weight=1, type=var
+           │           └──(_alpha) weight=1, type=var
+           │──(_vdots) weight=1, type=dots
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vdots) weight=1, type=dots
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(_vdots) weight=1, type=dots
+           │──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           │──(;) weight=6, type=sep_class
+           │   │──(⋅) weight=4, type=times
+           │   │   │──(a) weight=1, type=var
+           │   │   │──(m) weight=1, type=var
+           │   │   └──(p) weight=1, type=var
+           │   └──(NULL) weight=1, type=null
+           └──(;) weight=6, type=sep_class
+               │──(⋅) weight=4, type=times
+               │   │──(a) weight=1, type=var
+               │   │──(m) weight=1, type=var
+               │   └──(p) weight=1, type=var
+               └──(NULL) weight=1, type=null
 
-./var/subs/sus/times/eq_class n 1 2 4 9 21 
-./var/sus/times/eq_class a 1 4 9 21 
-./var/subs/sus/times/eq_class n 1 2 4 9 21 
-./var/sus/times/eq_class b 1 4 9 21 
-./one/subs/sus/times/eq_class/eq_class 1 1 2 4 9 11 21 
-./var/sus/times/eq_class/eq_class a 1 4 9 11 21 
-./one/subs/sus/times/eq_class/eq_class 1 1 2 4 9 11 21 
-./var/sus/times/eq_class/eq_class b 1 4 9 11 21 
-./const/eq_class/eq_class 2 1 11 21 
+./var/eq_class P 1 110 
+./null/tab/eq_class NULL 2 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./dots/tab/eq_class _vdots 2 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
+./one/subs/sus/vec/tab/eq_class 1 1 2 4 5 108 110 
+./var/sus/vec/tab/eq_class _alpha 1 4 5 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 10 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 10 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 10 108 110 
+./const/subs/sus/vec/sep_class/tab/eq_class 2 1 2 4 5 10 108 110 
+./var/sus/vec/sep_class/tab/eq_class _alpha 1 4 5 10 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./dots/sep_class/tab/eq_class _cdots 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 10 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 10 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 10 108 110 
+./var/subs/sus/vec/sep_class/tab/eq_class n 1 2 4 5 10 108 110 
+./var/sus/vec/sep_class/tab/eq_class _alpha 1 4 5 10 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
+./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
+./null/sep_class/tab/eq_class NULL 1 6 108 110 
 
-\frac{a_{n+1}}{b_{n+1}}
-   └──(/) weight=13, type=frac
-       │──([) weight=6, type=sus
-       │   │──(_) weight=4, type=subs
-       │   │   └──(+) weight=3, type=add
-       │   │       │──(n) weight=1, type=var
-       │   │       └──(1) weight=1, type=one
-       │   └──(a) weight=1, type=var
-       └──([) weight=6, type=sus
-           │──(_) weight=4, type=subs
-           │   └──(+) weight=3, type=add
-           │       │──(n) weight=1, type=var
-           │       └──(1) weight=1, type=one
-           └──(b) weight=1, type=var
+D=\begin{pmatrix} \lambda_1 &amp; 0 &amp; \cdots &amp; \, &amp; 0 \\ 0 &amp; \lambda_2 &amp; 0 &amp; \cdots &amp; 0 \\ \vdots &amp; 0 &amp; \ddots &amp; &amp; \vdots\\ \, &amp; \vdots &amp;  &amp; &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; \lambda_n \end{pmatrix}\,\,,
+   └──(,) weight=139, type=sep_class
+       │──(=) weight=137, type=eq_class
+       │   │──(D) weight=1, type=var
+       │   └──(tab) weight=135, type=tab
+       │       │──([) weight=4, type=sus
+       │       │   │──(_) weight=2, type=subs
+       │       │   │   └──(1) weight=1, type=one
+       │       │   └──(_lambda) weight=1, type=var
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_cdots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(NULL) weight=1, type=null
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(0) weight=2, type=zero
+       │       │──(;) weight=9, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──([) weight=4, type=sus
+       │       │       │──(_) weight=2, type=subs
+       │       │       │   └──(2) weight=1, type=const
+       │       │       └──(_lambda) weight=1, type=var
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_cdots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(_vdots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_ddots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(NULL) weight=1, type=null
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_vdots) weight=1, type=dots
+       │       │──(NULL) weight=1, type=null
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_vdots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(NULL) weight=1, type=null
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(NULL) weight=1, type=null
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(0) weight=1, type=zero
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(_cdots) weight=1, type=dots
+       │       │──(;) weight=6, type=sep_class
+       │       │   │──(⋅) weight=4, type=times
+       │       │   │   │──(a) weight=1, type=var
+       │       │   │   │──(m) weight=1, type=var
+       │       │   │   └──(p) weight=1, type=var
+       │       │   └──(0) weight=1, type=zero
+       │       └──(;) weight=9, type=sep_class
+       │           │──(⋅) weight=4, type=times
+       │           │   │──(a) weight=1, type=var
+       │           │   │──(m) weight=1, type=var
+       │           │   └──(p) weight=1, type=var
+       │           └──([) weight=4, type=sus
+       │               │──(_) weight=2, type=subs
+       │               │   └──(n) weight=1, type=var
+       │               └──(_lambda) weight=1, type=var
+       └──(NULL) weight=1, type=null
 
-./var/add/subs/sus/frac n 1 3 4 6 13 
-./one/add/subs/sus/frac 1 1 3 4 6 13 
-./var/sus/frac a 1 6 13 
-./var/add/subs/sus/frac n 1 3 4 6 13 
-./one/add/subs/sus/frac 1 1 3 4 6 13 
-./var/sus/frac b 1 6 13 
+./var/eq_class/sep_class D 1 137 139 
+./one/subs/sus/tab/eq_class/sep_class 1 1 2 4 135 137 139 
+./var/sus/tab/eq_class/sep_class _lambda 1 4 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./zero/tab/eq_class/sep_class 0 2 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 9 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 9 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 9 135 137 139 
+./const/subs/sus/sep_class/tab/eq_class/sep_class 2 1 2 4 9 135 137 139 
+./var/sus/sep_class/tab/eq_class/sep_class _lambda 1 4 9 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./dots/tab/eq_class/sep_class _vdots 1 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _ddots 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _vdots 1 6 135 137 139 
+./null/tab/eq_class/sep_class NULL 1 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _vdots 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
+./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class a 1 4 9 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class m 1 4 9 135 137 139 
+./var/times/sep_class/tab/eq_class/sep_class p 1 4 9 135 137 139 
+./var/subs/sus/sep_class/tab/eq_class/sep_class n 1 2 4 9 135 137 139 
+./var/sus/sep_class/tab/eq_class/sep_class _lambda 1 4 9 135 137 139 
+./null/sep_class NULL 1 139 
 
-1
-   └──(1) weight=1, type=one
+D
+   └──(D) weight=1, type=var
 
-./one 1 1 
+./var D 1 
 
-n\to \infty
-   └──(_to) weight=3, type=sep_class
-       │──(n) weight=1, type=var
-       └──(_infty) weight=1, type=infty
+P
+   └──(P) weight=1, type=var
 
-./var/sep_class n 1 3 
-./infty/sep_class _infty 1 3 
+./var P 1 
 
