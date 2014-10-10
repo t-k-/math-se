@@ -17,16 +17,13 @@ int main(int argc, char **argv)
 	}
 
 	if (argc != 2) {
-		printf("bad arg.\n");
+		printf("bad arg. (cmd <doc-id>)\n");
 		goto exit;
 	}
 
 	key = argv[1];
 	nnum_bdb = bdb_records(num_bdb);
 	ndoc_bdb = bdb_records(doc_bdb);
-
-	printf("#records in num bdb: %ld\n", nnum_bdb);
-	printf("#records in doc bdb: %ld\n", ndoc_bdb);
 
 	nbrw = bdb_get_int(num_bdb, key, DOC_HASH_LEN);
 
@@ -49,6 +46,9 @@ int main(int argc, char **argv)
 	free(doc);
 
 exit:
+	printf("#records in num bdb: %ld\n", nnum_bdb);
+	printf("#records in doc bdb: %ld\n", ndoc_bdb);
+
 	if (num_bdb)
 		bdb_release(num_bdb);
 	if (doc_bdb)

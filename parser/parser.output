@@ -1,16 +1,83 @@
 n
-\vec a
-   └──(_vec) weight=2, type=vec
-       └──(a) weight=1, type=var
+a \overset b = c
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(c) weight=1, type=var
 
-./var/vec a 1 2 
+./var/eq_class a 1 3 
+./var/eq_class c 1 3 
 
-\vec {ac}
-   └──(_vec) weight=4, type=vec
-       └──(⋅) weight=3, type=times
-           │──(a) weight=1, type=var
+a \overset b = c a \overset b = c
+   └──(=) weight=7, type=eq_class
+       │──(a) weight=1, type=var
+       └──(=) weight=5, type=eq_class
+           │──(⋅) weight=3, type=times
+           │   │──(c) weight=1, type=var
+           │   └──(a) weight=1, type=var
            └──(c) weight=1, type=var
 
-./var/times/vec a 1 3 4 
-./var/times/vec c 1 3 4 
+./var/eq_class a 1 7 
+./var/times/eq_class/eq_class c 1 3 5 7 
+./var/times/eq_class/eq_class a 1 3 5 7 
+./var/eq_class/eq_class c 1 5 7 
+
+a \overset b = c a \underset b = c
+   └──(=) weight=7, type=eq_class
+       │──(a) weight=1, type=var
+       └──(=) weight=5, type=eq_class
+           │──(⋅) weight=3, type=times
+           │   │──(c) weight=1, type=var
+           │   └──(a) weight=1, type=var
+           └──(c) weight=1, type=var
+
+./var/eq_class a 1 7 
+./var/times/eq_class/eq_class c 1 3 5 7 
+./var/times/eq_class/eq_class a 1 3 5 7 
+./var/eq_class/eq_class c 1 5 7 
+
+a \buildrel abc \over = d
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(d) weight=1, type=var
+
+./var/eq_class a 1 3 
+./var/eq_class d 1 3 
+
+a \buildrel abc \over = d \buildrel abc \over = e
+   └──(=) weight=5, type=eq_class
+       │──(a) weight=1, type=var
+       └──(=) weight=3, type=eq_class
+           │──(d) weight=1, type=var
+           └──(e) weight=1, type=var
+
+./var/eq_class a 1 5 
+./var/eq_class/eq_class d 1 3 5 
+./var/eq_class/eq_class e 1 3 5 
+
+a \stackrel a = c
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(c) weight=1, type=var
+
+./var/eq_class a 1 3 
+./var/eq_class c 1 3 
+
+a \stackrel b = c
+   └──(=) weight=3, type=eq_class
+       │──(a) weight=1, type=var
+       └──(c) weight=1, type=var
+
+./var/eq_class a 1 3 
+./var/eq_class c 1 3 
+
+a \stackrel b = c \stackrel b = d
+   └──(=) weight=5, type=eq_class
+       │──(a) weight=1, type=var
+       └──(=) weight=3, type=eq_class
+           │──(c) weight=1, type=var
+           └──(d) weight=1, type=var
+
+./var/eq_class a 1 5 
+./var/eq_class/eq_class c 1 3 5 
+./var/eq_class/eq_class d 1 3 5 
 

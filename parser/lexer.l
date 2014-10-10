@@ -243,6 +243,9 @@ extern unsigned int tb_st;
 \\unrhd                    { mkstr(yytext); return EQ_CLASS; }
 
 \\stackrel  { mkstr(yytext); return STACKREL; }
+\\buildrel  { mkstr(yytext); return BUILDREL; }
+\\overset   { mkstr(yytext); return SET_REL; }
+\\underset  { mkstr(yytext); return SET_REL; }
 
  /* table/matrix related */
 <tab>\\\\          { return _TAB; }
