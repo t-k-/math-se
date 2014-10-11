@@ -1,17 +1,22 @@
 n
-d \buildrel {a \over b} \over = c
-   └──(~=) weight=3, type=eq_class
-       │──(d) weight=1, type=var
-       └──(c) weight=1, type=var
+a=b+c
+   └──(=) weight=5, type=eq_class
+       │──(a) weight=1, type=var
+       └──(+) weight=3, type=add
+           │──(b) weight=1, type=var
+           └──(c) weight=1, type=var
 
-./var/eq_class d 1 3 
-./var/eq_class c 1 3 
+./var/eq_class a 1 5 
+./var/add/eq_class b 1 3 5 
+./var/add/eq_class c 1 3 5 
 
-d \buildrel a=b \over = c
-   └──(~=) weight=3, type=eq_class
-       │──(d) weight=1, type=var
-       └──(c) weight=1, type=var
+a=b+b
+   └──(=) weight=5, type=eq_class
+       │──(a) weight=1, type=var
+       └──(+) weight=3, type=add
+           │──(b) weight=2, type=var
+           └──(b) weight=1, type=var
 
-./var/eq_class d 1 3 
-./var/eq_class c 1 3 
+./var/eq_class a 1 5 
+./var/add/eq_class b 2 3 5 
 

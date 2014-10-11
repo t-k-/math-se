@@ -1,8 +1,14 @@
+Family characteristic member indexing.
 search depth 
 
-concurrent retrieval
+build library path config 
 
 time cost anylize && efficiency
+
+sep_class should have commutative property.
+
+~~~~~~~~~~~~~~~~~~~~~~
+concurrent retrieval
 
 ignore all len=1 branchwords
 
@@ -15,10 +21,20 @@ Provide a WEB interface like Symbol Lab
 
 incorporation with general text search
 
+Context search, search for web pages containing the most selected keywords (not only restricted to formula):
+given keywords K1 AND K2 AND K3, with weights a1 a2 a3.
+Do three times of separate search on each keywords, list results in three thread ordered by pageID:
+thread1: 1 1 3 4 5 6 7 7 9
+thread2: 1 2 3 4 8 9
+thread3: 1 2 2 2 6 7 8
+Then you get, for example, page with ID = 1 has a vector(2,1,1) and page with ID = 2 has a vector(0,1,3).
+The final score of a page is given by, for example of page with ID=1: (2,1,1) * (a1,a2,a3)
+
+NOT operation
+
 provide instances for elastic search
 
 \def\specialFrac#1#2{\frac{x + #1}{y + #2}} 整个网页有效，所以要用预处理
 \DeclareMathOperator
 \newcommand
 \newenvironment
-
