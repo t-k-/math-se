@@ -12,6 +12,7 @@ tags: $(shell find . -name "*.[hcly]" -print)
 mklink: submake
 	@ echo making symbolic links...
 	@ [ -e search.ln ] || ln -s `pwd`/search/search `pwd`/search.ln
+	@ [ -e search-time.ln ] || ln -s `pwd`/search/search-time `pwd`/search-time.ln
 	@ [ -e bdb_probe.ln ] || ln -s `pwd`/index/bdb_probe `pwd`/bdb_probe.ln
 	@ [ -e test/parse/rand-cmd.sh.ln ] || \
 	ln -s `pwd`/crawler/rand-cmd.sh `pwd`/test/parse/rand-cmd.sh.ln

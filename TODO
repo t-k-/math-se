@@ -1,4 +1,3 @@
-Family characteristic member indexing.
 search depth 
 
 build library path config 
@@ -40,3 +39,11 @@ provide instances for elastic search
 \DeclareMathOperator
 \newcommand
 \newenvironment
+==========
+Family characteristic member indexing:
+
+/link path rm common path near root
+does not go beyond when search in /link dir
+longest path search first
+set two limits: 1. searched items max number; 2. search items for every a|b (posting file should have a limited size)
+choose(n,2) instead of indexing both a|b and b|a. (choose by path length: a|b should also be a*|b)

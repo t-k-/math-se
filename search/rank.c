@@ -4,6 +4,10 @@
 #include "rlv_tr.h"
 #include "bdb_wraper.h"
 
+#ifdef RK_TIME_TEST
+#include "elapsed.h"
+#endif
+
 float main_score(struct query_brw *a, 
                  struct doc_brw *b, char *b_name)
 {
@@ -205,6 +209,11 @@ int search_and_score(const char *root_dir, const char *sub_dir,
 	struct _search_open_arg soa = {0, qbrw, ret_set};
 	char dir[DIR_NAME_MAX_LEN];
 	sprintf(dir, "%s/%s", root_dir, sub_dir);
+
+#ifdef RK_TIME_TEST
+	printf("recursive search: %s \n", dir);
+#endif
+
 	search_dir(dir, "posting", &search_open, &soa);
 	return soa.if_any_match;
 }
@@ -351,6 +360,7 @@ static
 LIST_IT_CALLBK(_score_main)
 {
 	uint i;
+	int res;
 	char stage_flag;
 	struct query_brw *next_a;
 	P_CAST(sma, struct _score_main_arg, pa_extra);
@@ -363,7 +373,22 @@ LIST_IT_CALLBK(_score_main)
 	printf(COLOR_RST);
 #endif
 
-	if (search_and_score("./collection", a->dir, a, "result set")) {
+#ifdef RK_TIME_TEST
+	printf("%s\n", "[time] begin directory search...");
+	time_reset();
+#endif
+
+	res = search_and_score("./collection", a->dir, a, "result set");
+
+#ifdef RK_TIME_TEST
+	printf("[time] end directory search (%.3f sec).\n", time_get());
+#endif
+
+	if (res) {
+#ifdef RK_TIME_TEST
+		printf("%s\n", "[time] begin var-update...");
+		time_reset();
+#endif
 		redis_set_union("temp set", "result set");
 #ifdef RK_VERBOSE
 		printf(COLOR_GREEN 
@@ -377,6 +402,10 @@ LIST_IT_CALLBK(_score_main)
 		redis_set_popeach("result set", &print_frml_map);
 #else
 		redis_set_popeach("result set", &update_var_score);
+#endif
+
+#ifdef RK_TIME_TEST
+		printf("[time] end var-update (%.3f sec).\n", time_get());
 #endif
 		redis_del("result set");
 	} 
@@ -397,6 +426,11 @@ LIST_IT_CALLBK(_score_main)
 	}
 
 	if (stage_flag) {
+#ifdef RK_TIME_TEST
+		printf("%s\n", "[time] begin frml-update...");
+		time_reset();
+#endif
+
 		redis_set_union(sma->complete_set, "temp set");
 #ifdef RK_VERBOSE
 		redis_set_members("temp set", &update_frml_score);
@@ -408,6 +442,9 @@ LIST_IT_CALLBK(_score_main)
 		redis_set_popeach("temp set", &update_frml_score);
 #endif
 		redis_del("temp set");
+#ifdef RK_TIME_TEST
+		printf("[time] end frml-update (%.3f sec).\n", time_get());
+#endif
 	}
 
 	LIST_GO_OVER;
