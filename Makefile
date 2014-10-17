@@ -34,6 +34,9 @@ submake:
 	make -C ./search
 	make -C ./web
 
+find:
+	$(FIND) -name '*.c' -print
+
 install: submake mklink
 	make install -C ./web
 

@@ -5,7 +5,7 @@ cgi_path:=/var/www/$(web_base_name)/cgi
 output=rank.cgi
 CFLAGS=-I ../inc -I /usr/include/hiredis -L ..
 LIBS=-lcurl -lsearch -lparser -ll -lbdb_wraper -lhiredis -ltokyocabinet
-COL_DIR=../collection
+COL_DIR=../col
 check_perm=@ touch /root/test 2>/dev/null || \
            ($(call color, "* ROOT REQUIRED. *") && exit 1)
 COLOR_RED=$(shell tput setaf 1)
