@@ -21,12 +21,12 @@ cp ./parser/parser.output ./index
 
 # index directory
 cd ./index
-rm -rf collection
+rm -rf col 
 ./index.py
 
 # root
 cd $rootdir
 echo $rootdir
-rm -rf collection
-mv ./index/collection .
+rm -rf col 
+mv ./index/col .
 ./search.ln "$3"

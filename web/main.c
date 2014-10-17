@@ -137,14 +137,14 @@ int main()
 		return __LINE__;
 	}
 
-	hla.bdb_doc = bdb_init("./collection/documents.bdb");
+	hla.bdb_doc = bdb_init("./col/documents.bdb");
 	if (NULL == hla.bdb_doc) {
 		printf("cgi: tcbdb doc open error.");
 		redis_cli_free();
 		return __LINE__;
 	}
 	
-	hla.bdb_num = bdb_init("./collection/brw-number.bdb");
+	hla.bdb_num = bdb_init("./col/brw-number.bdb");
 	if (NULL == hla.bdb_num) {
 		printf("cgi: tcbdb num open error.");
 		redis_cli_free();

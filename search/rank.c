@@ -378,7 +378,7 @@ LIST_IT_CALLBK(_score_main)
 	time_reset();
 #endif
 
-	res = search_and_score("./collection", a->dir, a, "result set");
+	res = search_and_score("./col", a->dir, a, "result set");
 
 #ifdef RK_TIME_TEST
 	printf("[time] end directory search (%.3f sec).\n", time_get());

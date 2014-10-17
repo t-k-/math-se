@@ -59,7 +59,7 @@ usage:
 		return 0;
 	}
 
-	bdb_doc = bdb_init("./collection/documents.bdb");
+	bdb_doc = bdb_init("./col/documents.bdb");
 	if (NULL == bdb_doc) {
 		printf("tcbdb doc open error.\n");
 		redis_cli_free();
@@ -67,7 +67,7 @@ usage:
 		return __LINE__;
 	}
 	
-	bdb_num = bdb_init("./collection/brw-number.bdb");
+	bdb_num = bdb_init("./col/brw-number.bdb");
 	if (NULL == bdb_num) {
 		printf("tcbdb num open error.\n");
 		redis_cli_free();

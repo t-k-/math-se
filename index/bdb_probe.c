@@ -5,8 +5,8 @@
 
 int main(int argc, char **argv) 
 {
-	void *num_bdb = bdb_init("./collection/brw-number.bdb");	
-	void *doc_bdb = bdb_init("./collection/documents.bdb");	
+	void *num_bdb = bdb_init("./col/brw-number.bdb");	
+	void *doc_bdb = bdb_init("./col/documents.bdb");	
 	uint64_t nnum_bdb, ndoc_bdb;
 	char *doc, *key = argv[1];
 	int *nbrw;
