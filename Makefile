@@ -1,13 +1,14 @@
 CFLAGS=-I . -I ./inc -L . 
 CC=gcc $(CFLAGS)
+FIND=find . -type d \( -path './*col' -o -path './.git' \) -prune -o 
 
-.PHONY: all clean submake mklink
+.PHONY: all clean submake mklink tags
 
 all: submake tags mklink
 
-tags: $(shell find . -name "*.[hcly]" -print)
-	@echo dep: $^
-	ctags --langmap=c:.c.y -R ./*
+tags:
+	$(FIND) -name '*.[hcly]' -print > tags.list 
+	ctags --langmap=c:.c.y -L tags.list
 
 mklink: submake
 	@ echo making symbolic links...
@@ -33,19 +34,18 @@ submake:
 	make -C ./search
 	make -C ./web
 
-install: submake
+install: submake mklink
 	make install -C ./web
 
 clean:
-	rm -f *.a tags inc/*.gch
-	find . -name "*.pyc" | xargs rm -f
-	find . -name "*.ln" | xargs rm -f
-	find . -name "*.so" | xargs rm -f
+	rm -f *.a tags inc/*.gch tags.list
+	$(FIND) -name '*.pyc' -print | xargs rm -f
+	$(FIND) -name '*.ln' -print | xargs rm -f
+	$(FIND) -name '*.so' -print | xargs rm -f
 	make clean -C ./index
 	make clean -C ./parser
 	make clean -C ./search
 	make clean -C ./web
 
 distclean: clean
-	find . -name "collection" | xargs rm -rf
 	make distclean -C ./web

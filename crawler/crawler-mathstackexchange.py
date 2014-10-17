@@ -13,6 +13,7 @@ re_inline = re.compile(r'\\\\\((.+?)\\\\\)')
 re_display = re.compile(r'\\\[(.+?)\\\]')
 
 root_url = 'math.stackexchange.com'
+save_dir = root_url + '-raw-col' 
 
 def curl(sub_url, c):
 	buf = cStringIO.StringIO()
@@ -64,7 +65,7 @@ def find_q_page(navi_page, c):
 		tag_a = tag_sum.find('a', {"class": "question-hyperlink"})
 		print 'crawling', tag_sum['id'], '...'
 		# curl it...
-		save_path = root_url + '/' + tag_sum['id']
+		save_path = save_dir + '/' + tag_sum['id']
 		if os.path.isfile(save_path):
 			print "aready exists."
 			continue
@@ -77,8 +78,8 @@ def crawl(start_page, end_page):
 	c.setopt(c.CONNECTTIMEOUT, 8)
 	c.setopt(c.TIMEOUT, 10)
 
-	if not os.path.exists(root_url):
-		os.makedirs(root_url)
+	if not os.path.exists(save_dir):
+		os.makedirs(save_dir)
 
 	for i in range(start_page, end_page):
 		print "page %d/%d..." % (i, end_page)
@@ -92,10 +93,10 @@ def crawl_force(id):
 	c.setopt(c.CONNECTTIMEOUT, 8)
 	c.setopt(c.TIMEOUT, 10)
 
-	if not os.path.exists(root_url):
-		os.makedirs(root_url)
+	if not os.path.exists(save_dir):
+		os.makedirs(save_dir)
 
-	save_path = root_url + '/question-summary-' + id 
+	save_path = save_dir + '/question-summary-' + id 
 	if os.path.isfile(save_path):
 		print "overwrite existing file..."
 	else:
@@ -139,11 +140,11 @@ def main(arg):
 			testf = open(arg).read()
 			testf = testf.decode('utf-8', 'ignore')
 			find_p(testf, sys.stdout)
-			break
+			return	
 		if opt in ("-p", "--post"):
 			print "crawling %s..." % arg
 			crawl_force(arg)
-			break
+			return
 
 	if (end_page >= begin_page):
 		print "crawling pages from %d to %d..." % (begin_page, end_page)

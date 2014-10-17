@@ -11,7 +11,7 @@ def help(arg0):
 
 # set collection path
 argv = sys.argv
-co_path = "./collection"
+co_path = "./col"
 try: 
 	opts, args = getopt.getopt(argv[1:], "p:", ['path='])
 	if len(opts) == 0 and len(argv) != 1:
