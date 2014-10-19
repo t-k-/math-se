@@ -11,6 +11,17 @@ void *bdb_init(const char *name)
 	return bdb;
 }
 
+void *bdb_init2(const char *name, TCCMP cmp) 
+{
+	TCBDB *bdb = tcbdbnew();
+	tcbdbsetcmpfunc(bdb, cmp, NULL);
+	
+	if (!tcbdbopen(bdb, name, BDBOCREAT | BDBOWRITER))
+		return NULL;
+
+	return bdb;
+}
+
 uint64_t bdb_records(void *bdb)
 {
 	return tcbdbrnum((TCBDB*)bdb); 

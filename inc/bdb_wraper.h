@@ -2,6 +2,10 @@
 
 void *bdb_init(const char*); 
 
+typedef int (*TCCMP)(const char *aptr, int asiz, const char *bptr, int bsiz, void *op);
+
+void *bdb_init2(const char *, TCCMP); 
+
 uint64_t bdb_records(void*);
 
 int bdb_release(void*); 
