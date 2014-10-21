@@ -2,17 +2,24 @@
 
 * sep_class should have commutative property.
 
-identify hotspot (long posting list) in filesystem
+! Green Light Pruning
+full:
+	yes:
+		go on searching this path 
+	no:
+		two pathes belong to the merge points:
+			yes:
+				go on searching this path 
+			no:
+				stop searching on this path
 
-brword dir depth information (do not calculate on runing time) to search in the order of depth
+! depth-by-depth identical path merging search
 
-brword ID does not need a long HASH
+! posting file with incremented ID and skip-list merging search
 
-multiple brword key for one formula key.
+! brword ID does not need a long HASH
 
-if paths are diff, brw id must be diff
-
-given b1|b2, b1* and b2* should satisfy: root_depth(b1*) - root_depth(b1) = root_depth(b2*) - root_depth(b2) 
+! incriminate all brwords if one brword commit relevant or put identical document ID in a consecutive postion in posting file.
 
 ---------------------
 NTCIR data evalutation
