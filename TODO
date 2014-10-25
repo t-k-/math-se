@@ -1,17 +1,6 @@
-* build library path config 
+! build library path config 
 
-* sep_class should have commutative property.
-
-! Green Light Pruning
-full:
-	yes:
-		go on searching this path 
-	no:
-		two pathes belong to the merge points:
-			yes:
-				go on searching this path 
-			no:
-				stop searching on this path
+! sep_class should have commutative property.
 
 ! depth-by-depth identical path merging search
 
@@ -21,7 +10,7 @@ full:
 
 ! incriminate all brwords if one brword commit relevant or put identical document ID in a consecutive position in posting file.
 
-! heuristically search longer brword combination first.
+! heuristically search brword combination with higher merge point.
 
 ---------------------
 NTCIR data evalutation

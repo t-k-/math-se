@@ -73,8 +73,11 @@ static void _html_li(const char* frml_hash, void *arg)
 	int i = 0;
 	char *field;
 
-	if (doc == NULL || num == NULL)
+	if (doc == NULL || num == NULL) {
+		printf("<li>bdb open error...</li>\n");
+		hla->nitems ++;
 		return;
+	}
 	
 	field = strtok(doc, "\n\n");
 	if (field) 

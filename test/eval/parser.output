@@ -1,505 +1,406 @@
-http://math.stackexchange.com/questions/793260
+http://math.stackexchange.com/questions/313504
+V
+   └──(V) weight=1, type=var
+
+./var V 1 
+
+v_1, v_2, . . . , v_n
+   └──(,) weight=14, type=sep_class
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(1) weight=1, type=one
+       │   └──(v) weight=1, type=var
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(2) weight=1, type=const
+       │   └──(v) weight=1, type=var
+       │──(NULL) weight=1, type=null
+       └──([) weight=4, type=sus
+           │──(_) weight=2, type=subs
+           │   └──(n) weight=1, type=var
+           └──(v) weight=1, type=var
+
+./one/subs/sus/sep_class 1 1 2 4 14 
+./var/sus/sep_class v 1 4 14 
+./const/subs/sus/sep_class 2 1 2 4 14 
+./var/sus/sep_class v 1 4 14 
+./null/sep_class NULL 1 14 
+./var/subs/sus/sep_class n 1 2 4 14 
+./var/sus/sep_class v 1 4 14 
+
+V
+   └──(V) weight=1, type=var
+
+./var V 1 
+
 A
    └──(A) weight=1, type=var
 
 ./var A 1 
 
-\vec{\alpha_{i}}
-   └──(_vec) weight=5, type=vec
-       └──([) weight=4, type=sus
-           │──(_) weight=2, type=subs
-           │   └──(i) weight=1, type=var
-           └──(_alpha) weight=1, type=var
+A
+   └──(A) weight=1, type=var
 
-./var/subs/sus/vec i 1 2 4 5 
-./var/sus/vec _alpha 1 4 5 
+./var A 1 
 
-\lambda_{i}
+A^T
    └──([) weight=4, type=sus
-       │──(_) weight=2, type=subs
-       │   └──(i) weight=1, type=var
-       └──(_lambda) weight=1, type=var
+       │──(^) weight=2, type=sups
+       │   └──(T) weight=1, type=var
+       └──(A) weight=1, type=var
 
-./var/subs/sus i 1 2 4 
-./var/sus _lambda 1 4 
+./var/sups/sus T 1 2 4 
+./var/sus A 1 4 
 
-i=1,...n
-   └──(,) weight=7, type=sep_class
-       │──(=) weight=3, type=eq_class
-       │   │──(i) weight=1, type=var
+V = \mathbb R ^2
+   └──(=) weight=6, type=eq_class
+       │──(V) weight=1, type=var
+       └──([) weight=4, type=sus
+           │──(^) weight=2, type=sups
+           │   └──(2) weight=1, type=const
+           └──(R) weight=1, type=var
+
+./var/eq_class V 1 6 
+./const/sups/sus/eq_class 2 1 2 4 6 
+./var/sus/eq_class R 1 4 6 
+
+x
+   └──(x) weight=1, type=var
+
+./var x 1 
+
+y
+   └──(y) weight=1, type=var
+
+./var y 1 
+
+(3,4)
+   └──(,) weight=3, type=sep_class
+       │──(3) weight=1, type=const
+       └──(4) weight=1, type=const
+
+./const/sep_class 3 1 3 
+./const/sep_class 4 1 3 
+
+(1,0)
+   └──(,) weight=3, type=sep_class
+       │──(1) weight=1, type=one
+       └──(0) weight=1, type=zero
+
+./one/sep_class 1 1 3 
+./zero/sep_class 0 1 3 
+
+(0,1)
+   └──(,) weight=3, type=sep_class
+       │──(0) weight=1, type=zero
+       └──(1) weight=1, type=one
+
+./zero/sep_class 0 1 3 
+./one/sep_class 1 1 3 
+
+(1,1)
+   └──(,) weight=3, type=sep_class
+       │──(1) weight=2, type=one
+       └──(1) weight=1, type=one
+
+./one/sep_class 1 2 3 
+
+(0,1)
+   └──(,) weight=3, type=sep_class
+       │──(0) weight=1, type=zero
+       └──(1) weight=1, type=one
+
+./zero/sep_class 0 1 3 
+./one/sep_class 1 1 3 
+
+(3,4) = 3\cdot(1,1) + 1\cdot(0,1)
+   └──(=) weight=15, type=eq_class
+       │──(,) weight=3, type=sep_class
+       │   │──(3) weight=1, type=const
+       │   └──(4) weight=1, type=const
+       └──(+) weight=11, type=add
+           │──(×) weight=5, type=times
+           │   │──(3) weight=1, type=const
+           │   └──(,) weight=3, type=sep_class
+           │       │──(1) weight=2, type=one
+           │       └──(1) weight=1, type=one
+           └──(×) weight=5, type=times
+               │──(1) weight=1, type=one
+               └──(,) weight=3, type=sep_class
+                   │──(0) weight=1, type=zero
+                   └──(1) weight=1, type=one
+
+./const/sep_class/eq_class 3 1 3 15 
+./const/sep_class/eq_class 4 1 3 15 
+./const/times/add/eq_class 3 1 5 11 15 
+./one/sep_class/times/add/eq_class 1 2 3 5 11 15 
+./one/times/add/eq_class 1 1 5 11 15 
+./zero/sep_class/times/add/eq_class 0 1 3 5 11 15 
+./one/sep_class/times/add/eq_class 1 1 3 5 11 15 
+
+(a,b) = a \cdot (1,1) + (b-a)\cdot(0,1).
+   └──(=) weight=18, type=eq_class
+       │──(,) weight=3, type=sep_class
+       │   │──(a) weight=1, type=var
+       │   └──(b) weight=1, type=var
+       └──(+) weight=14, type=add
+           │──(×) weight=5, type=times
+           │   │──(a) weight=1, type=var
+           │   └──(,) weight=3, type=sep_class
+           │       │──(1) weight=2, type=one
+           │       └──(1) weight=1, type=one
+           └──(×) weight=8, type=times
+               │──(+) weight=4, type=add
+               │   │──(b) weight=1, type=var
+               │   └──(-) weight=2, type=neg
+               │       └──(a) weight=1, type=var
+               └──(,) weight=3, type=sep_class
+                   │──(0) weight=1, type=zero
+                   └──(1) weight=1, type=one
+
+./var/sep_class/eq_class a 1 3 18 
+./var/sep_class/eq_class b 1 3 18 
+./var/times/add/eq_class a 1 5 14 18 
+./one/sep_class/times/add/eq_class 1 2 3 5 14 18 
+./var/add/times/add/eq_class b 1 4 8 14 18 
+./var/neg/add/times/add/eq_class a 1 2 4 8 14 18 
+./zero/sep_class/times/add/eq_class 0 1 3 8 14 18 
+./one/sep_class/times/add/eq_class 1 1 3 8 14 18 
+
+\left(\begin{array}{cc} 1 & 1 \\ 0 & 1 \end{array} \right)
+   └──(__) weight=7, type=sep_class
+       │──(⋅) weight=3, type=times
+       │   │──(1) weight=2, type=one
        │   └──(1) weight=1, type=one
        └──(⋅) weight=3, type=times
-           │──(...) weight=1, type=dots
-           └──(n) weight=1, type=var
+           │──(0) weight=1, type=zero
+           └──(1) weight=1, type=one
 
-./var/eq_class/sep_class i 1 3 7 
-./one/eq_class/sep_class 1 1 3 7 
-./dots/times/sep_class ... 1 3 7 
-./var/times/sep_class n 1 3 7 
+./one/times/sep_class 1 2 3 7 
+./zero/times/sep_class 0 1 3 7 
+./one/times/sep_class 1 1 3 7 
 
-\lambda_i \neq \lambda_j
-   └──(_neq) weight=9, type=eq_class
+n
+   └──(n) weight=1, type=var
+
+./var n 1 
+
+m
+   └──(m) weight=1, type=var
+
+./var m 1 
+
+a_1,...,a_m
+   └──(,) weight=10, type=sep_class
        │──([) weight=4, type=sus
        │   │──(_) weight=2, type=subs
-       │   │   └──(i) weight=1, type=var
-       │   └──(_lambda) weight=1, type=var
+       │   │   └──(1) weight=1, type=one
+       │   └──(a) weight=1, type=var
+       │──(...) weight=1, type=dots
        └──([) weight=4, type=sus
            │──(_) weight=2, type=subs
-           │   └──(j) weight=1, type=var
-           └──(_lambda) weight=1, type=var
+           │   └──(m) weight=1, type=var
+           └──(a) weight=1, type=var
 
-./var/subs/sus/eq_class i 1 2 4 9 
-./var/sus/eq_class _lambda 1 4 9 
-./var/subs/sus/eq_class j 1 2 4 9 
-./var/sus/eq_class _lambda 1 4 9 
+./one/subs/sus/sep_class 1 1 2 4 10 
+./var/sus/sep_class a 1 4 10 
+./dots/sep_class ... 1 10 
+./var/subs/sus/sep_class m 1 2 4 10 
+./var/sus/sep_class a 1 4 10 
 
-i \neq j
-   └──(_neq) weight=3, type=eq_class
-       │──(i) weight=1, type=var
-       └──(j) weight=1, type=var
+b
+   └──(b) weight=1, type=var
 
-./var/eq_class i 1 3 
-./var/eq_class j 1 3 
+./var b 1 
 
-A=PDP^{-1}
-   └──(=) weight=12, type=eq_class
-       │──(A) weight=1, type=var
-       └──(⋅) weight=10, type=times
-           │──(P) weight=1, type=var
-           │──(D) weight=1, type=var
-           └──([) weight=7, type=sus
-               │──(^) weight=5, type=sups
-               │   └──(+) weight=4, type=add
-               │       │──(NULL) weight=1, type=null
-               │       └──(-) weight=2, type=neg
-               │           └──(1) weight=1, type=one
-               └──(P) weight=1, type=var
+n
+   └──(n) weight=1, type=var
 
-./var/eq_class A 1 12 
-./var/times/eq_class P 1 10 12 
-./var/times/eq_class D 1 10 12 
-./null/add/sups/sus/times/eq_class NULL 1 4 5 7 10 12 
-./one/neg/add/sups/sus/times/eq_class 1 1 2 4 5 7 10 12 
-./var/sus/times/eq_class P 1 7 10 12 
+./var n 1 
 
-P=\begin{pmatrix} \, &amp; \, &amp; \, &amp; \, \\ \vdots &amp; \vdots &amp; \, &amp; \vdots \\ \vec{\alpha_1} &amp; \vec{\alpha_2} &amp; \cdots &amp; \vec{\alpha_n} \\ \vdots &amp; \vdots &amp; \, &amp; \vdots \\ \, &amp; \, &amp; \, &amp; \, \end{pmatrix}
-   └──(=) weight=110, type=eq_class
-       │──(P) weight=1, type=var
-       └──(tab) weight=108, type=tab
-           │──(NULL) weight=2, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(_vdots) weight=2, type=dots
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vdots) weight=1, type=dots
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vdots) weight=1, type=dots
-           │──(_vec) weight=5, type=vec
-           │   └──([) weight=4, type=sus
-           │       │──(_) weight=2, type=subs
-           │       │   └──(1) weight=1, type=one
-           │       └──(_alpha) weight=1, type=var
-           │──(;) weight=10, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vec) weight=5, type=vec
-           │       └──([) weight=4, type=sus
-           │           │──(_) weight=2, type=subs
-           │           │   └──(2) weight=1, type=const
-           │           └──(_alpha) weight=1, type=var
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_cdots) weight=1, type=dots
-           │──(;) weight=10, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vec) weight=5, type=vec
-           │       └──([) weight=4, type=sus
-           │           │──(_) weight=2, type=subs
-           │           │   └──(n) weight=1, type=var
-           │           └──(_alpha) weight=1, type=var
-           │──(_vdots) weight=1, type=dots
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vdots) weight=1, type=dots
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(_vdots) weight=1, type=dots
-           │──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           │──(;) weight=6, type=sep_class
-           │   │──(⋅) weight=4, type=times
-           │   │   │──(a) weight=1, type=var
-           │   │   │──(m) weight=1, type=var
-           │   │   └──(p) weight=1, type=var
-           │   └──(NULL) weight=1, type=null
-           └──(;) weight=6, type=sep_class
-               │──(⋅) weight=4, type=times
-               │   │──(a) weight=1, type=var
-               │   │──(m) weight=1, type=var
-               │   └──(p) weight=1, type=var
-               └──(NULL) weight=1, type=null
+Ax=b
+   └──(=) weight=5, type=eq_class
+       │──(⋅) weight=3, type=times
+       │   │──(A) weight=1, type=var
+       │   └──(x) weight=1, type=var
+       └──(b) weight=1, type=var
 
-./var/eq_class P 1 110 
-./null/tab/eq_class NULL 2 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./dots/tab/eq_class _vdots 2 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
-./one/subs/sus/vec/tab/eq_class 1 1 2 4 5 108 110 
-./var/sus/vec/tab/eq_class _alpha 1 4 5 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 10 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 10 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 10 108 110 
-./const/subs/sus/vec/sep_class/tab/eq_class 2 1 2 4 5 10 108 110 
-./var/sus/vec/sep_class/tab/eq_class _alpha 1 4 5 10 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./dots/sep_class/tab/eq_class _cdots 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 10 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 10 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 10 108 110 
-./var/subs/sus/vec/sep_class/tab/eq_class n 1 2 4 5 10 108 110 
-./var/sus/vec/sep_class/tab/eq_class _alpha 1 4 5 10 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./dots/sep_class/tab/eq_class _vdots 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
-./var/times/sep_class/tab/eq_class a 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class m 1 4 6 108 110 
-./var/times/sep_class/tab/eq_class p 1 4 6 108 110 
-./null/sep_class/tab/eq_class NULL 1 6 108 110 
+./var/times/eq_class A 1 3 5 
+./var/times/eq_class x 1 3 5 
+./var/eq_class b 1 5 
 
-D=\begin{pmatrix} \lambda_1 &amp; 0 &amp; \cdots &amp; \, &amp; 0 \\ 0 &amp; \lambda_2 &amp; 0 &amp; \cdots &amp; 0 \\ \vdots &amp; 0 &amp; \ddots &amp; &amp; \vdots\\ \, &amp; \vdots &amp;  &amp; &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; \lambda_n \end{pmatrix}\,\,,
-   └──(,) weight=139, type=sep_class
-       │──(=) weight=137, type=eq_class
-       │   │──(D) weight=1, type=var
-       │   └──(tab) weight=135, type=tab
+a_1,...,a_m
+   └──(,) weight=10, type=sep_class
+       │──([) weight=4, type=sus
+       │   │──(_) weight=2, type=subs
+       │   │   └──(1) weight=1, type=one
+       │   └──(a) weight=1, type=var
+       │──(...) weight=1, type=dots
+       └──([) weight=4, type=sus
+           │──(_) weight=2, type=subs
+           │   └──(m) weight=1, type=var
+           └──(a) weight=1, type=var
+
+./one/subs/sus/sep_class 1 1 2 4 10 
+./var/sus/sep_class a 1 4 10 
+./dots/sep_class ... 1 10 
+./var/subs/sus/sep_class m 1 2 4 10 
+./var/sus/sep_class a 1 4 10 
+
+A
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+b
+   └──(b) weight=1, type=var
+
+./var b 1 
+
+a_j
+   └──([) weight=4, type=sus
+       │──(_) weight=2, type=subs
+       │   └──(j) weight=1, type=var
+       └──(a) weight=1, type=var
+
+./var/subs/sus j 1 2 4 
+./var/sus a 1 4 
+
+a_1 x_1 + ... + a_m x_m = b
+   └──(=) weight=22, type=eq_class
+       │──(+) weight=20, type=add
+       │   │──(⋅) weight=9, type=times
+       │   │   │──([) weight=4, type=sus
+       │   │   │   │──(_) weight=2, type=subs
+       │   │   │   │   └──(1) weight=1, type=one
+       │   │   │   └──(a) weight=1, type=var
+       │   │   └──([) weight=4, type=sus
+       │   │       │──(_) weight=2, type=subs
+       │   │       │   └──(1) weight=1, type=one
+       │   │       └──(x) weight=1, type=var
+       │   │──(...) weight=1, type=dots
+       │   └──(⋅) weight=9, type=times
        │       │──([) weight=4, type=sus
        │       │   │──(_) weight=2, type=subs
-       │       │   │   └──(1) weight=1, type=one
-       │       │   └──(_lambda) weight=1, type=var
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_cdots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(NULL) weight=1, type=null
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(0) weight=2, type=zero
-       │       │──(;) weight=9, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──([) weight=4, type=sus
-       │       │       │──(_) weight=2, type=subs
-       │       │       │   └──(2) weight=1, type=const
-       │       │       └──(_lambda) weight=1, type=var
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_cdots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(_vdots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_ddots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(NULL) weight=1, type=null
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_vdots) weight=1, type=dots
-       │       │──(NULL) weight=1, type=null
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_vdots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(NULL) weight=1, type=null
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(NULL) weight=1, type=null
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(0) weight=1, type=zero
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(_cdots) weight=1, type=dots
-       │       │──(;) weight=6, type=sep_class
-       │       │   │──(⋅) weight=4, type=times
-       │       │   │   │──(a) weight=1, type=var
-       │       │   │   │──(m) weight=1, type=var
-       │       │   │   └──(p) weight=1, type=var
-       │       │   └──(0) weight=1, type=zero
-       │       └──(;) weight=9, type=sep_class
-       │           │──(⋅) weight=4, type=times
-       │           │   │──(a) weight=1, type=var
-       │           │   │──(m) weight=1, type=var
-       │           │   └──(p) weight=1, type=var
-       │           └──([) weight=4, type=sus
-       │               │──(_) weight=2, type=subs
-       │               │   └──(n) weight=1, type=var
-       │               └──(_lambda) weight=1, type=var
-       └──(NULL) weight=1, type=null
+       │       │   │   └──(m) weight=1, type=var
+       │       │   └──(a) weight=1, type=var
+       │       └──([) weight=4, type=sus
+       │           │──(_) weight=2, type=subs
+       │           │   └──(m) weight=1, type=var
+       │           └──(x) weight=1, type=var
+       └──(b) weight=1, type=var
 
-./var/eq_class/sep_class D 1 137 139 
-./one/subs/sus/tab/eq_class/sep_class 1 1 2 4 135 137 139 
-./var/sus/tab/eq_class/sep_class _lambda 1 4 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./zero/tab/eq_class/sep_class 0 2 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 9 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 9 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 9 135 137 139 
-./const/subs/sus/sep_class/tab/eq_class/sep_class 2 1 2 4 9 135 137 139 
-./var/sus/sep_class/tab/eq_class/sep_class _lambda 1 4 9 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./dots/tab/eq_class/sep_class _vdots 1 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _ddots 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _vdots 1 6 135 137 139 
-./null/tab/eq_class/sep_class NULL 1 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _vdots 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./null/sep_class/tab/eq_class/sep_class NULL 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./dots/sep_class/tab/eq_class/sep_class _cdots 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 6 135 137 139 
-./zero/sep_class/tab/eq_class/sep_class 0 1 6 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class a 1 4 9 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class m 1 4 9 135 137 139 
-./var/times/sep_class/tab/eq_class/sep_class p 1 4 9 135 137 139 
-./var/subs/sus/sep_class/tab/eq_class/sep_class n 1 2 4 9 135 137 139 
-./var/sus/sep_class/tab/eq_class/sep_class _lambda 1 4 9 135 137 139 
-./null/sep_class NULL 1 139 
+./one/subs/sus/times/add/eq_class 1 1 2 4 9 20 22 
+./var/sus/times/add/eq_class a 1 4 9 20 22 
+./one/subs/sus/times/add/eq_class 1 1 2 4 9 20 22 
+./var/sus/times/add/eq_class x 1 4 9 20 22 
+./dots/add/eq_class ... 1 20 22 
+./var/subs/sus/times/add/eq_class m 1 2 4 9 20 22 
+./var/sus/times/add/eq_class a 1 4 9 20 22 
+./var/subs/sus/times/add/eq_class m 1 2 4 9 20 22 
+./var/sus/times/add/eq_class x 1 4 9 20 22 
+./var/eq_class b 1 22 
 
-D
-   └──(D) weight=1, type=var
+\mathbf{A}
+   └──(A) weight=1, type=var
 
-./var D 1 
+./var A 1 
 
-P
-   └──(P) weight=1, type=var
+m\times n
+   └──(×) weight=3, type=times
+       │──(m) weight=1, type=var
+       └──(n) weight=1, type=var
 
-./var P 1 
+./var/times m 1 3 
+./var/times n 1 3 
+
+\mathbf{x}
+   └──(x) weight=1, type=var
+
+./var x 1 
+
+n\times 1
+   └──(×) weight=3, type=times
+       │──(n) weight=1, type=var
+       └──(1) weight=1, type=one
+
+./var/times n 1 3 
+./one/times 1 1 3 
+
+\mathbf{y=Ax}
+   └──(=) weight=5, type=eq_class
+       │──(y) weight=1, type=var
+       └──(⋅) weight=3, type=times
+           │──(A) weight=1, type=var
+           └──(x) weight=1, type=var
+
+./var/eq_class y 1 5 
+./var/times/eq_class A 1 3 5 
+./var/times/eq_class x 1 3 5 
+
+\mathbf{A}
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+\mathbf y
+   └──(y) weight=1, type=var
+
+./var y 1 
+
+\mathbf{A}
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+\mathbf{Ax}
+   └──(⋅) weight=3, type=times
+       │──(A) weight=1, type=var
+       └──(x) weight=1, type=var
+
+./var/times A 1 3 
+./var/times x 1 3 
+
+\mathbf x
+   └──(x) weight=1, type=var
+
+./var x 1 
+
+\mathbf x
+   └──(x) weight=1, type=var
+
+./var x 1 
+
+\mathbf A
+   └──(A) weight=1, type=var
+
+./var A 1 
+
+\mathbb R^n
+   └──([) weight=4, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(n) weight=1, type=var
+       └──(R) weight=1, type=var
+
+./var/sups/sus n 1 2 4 
+./var/sus R 1 4 
+
+\mathbf x
+   └──(x) weight=1, type=var
+
+./var x 1 
+
+n
+   └──(n) weight=1, type=var
+
+./var n 1 
+
+\mathbb R^n
+   └──([) weight=4, type=sus
+       │──(^) weight=2, type=sups
+       │   └──(n) weight=1, type=var
+       └──(R) weight=1, type=var
+
+./var/sups/sus n 1 2 4 
+./var/sus R 1 4 
 

@@ -184,6 +184,7 @@ int search_dir(const char *path, const char *fname,
 
 		ent_name = ent->d_name;
 		if (ent->d_type & DT_DIR) {
+continue;
 			if (strcmp(ent_name, "..") == 0 ||
 			    strcmp(ent_name, ".") == 0)
 				continue;
