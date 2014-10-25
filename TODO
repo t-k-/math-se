@@ -12,6 +12,19 @@
 
 ! heuristically search brword combination with higher merge point.
 
+! hotspot info after indexing 
+
+! use READ instead of WRITE to open bdb when searching.
+
+level 1: [..............|.....] ordered by ID
+level 2: [......|...] score prune
+....    
+level L: [......|...]
+
+1. ID belongs to level l
+2. next level is either exist OR must be the same. Therefore level prune is independent of irrelevant brword. And level search can be in parallel.
+3. score can be given to specific ID whenever all the relevant brword of that ID is fully get.
+
 ---------------------
 NTCIR data evalutation
 
