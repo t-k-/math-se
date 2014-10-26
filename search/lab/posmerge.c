@@ -97,7 +97,7 @@ unsigned int read2(char (*fname)[32], int n)
 	}
 	
 	do { 
-		/* update buffer when need */
+		/* update buffer when needed */
 		for (i = 0; i < n; i++) {
 			if (idx[i] == end[i]) {
 				continue;
