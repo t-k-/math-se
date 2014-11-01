@@ -1,0 +1,41 @@
+	tag:none
+<b>Definition 1</b>: Define color set [imath]C = \mathbb{N}[/imath], for a element [imath]c \in \mathbf{N}[/imath], we call [imath]c[/imath] color.
+
+associative
+
+<b>Definition 2</b>: A path [imath]p[/imath] is an ordered list of color [imath]c_1,\ c_2,\ \ldots c_n[/imath] of length [imath]n[/imath] where [imath]c_i\in C,\ i = 1,\ 2,\ \ldots n[/imath]. The subpath of [imath]p[/imath] is defined by
+[dmath]
+p(k) \left\{\begin{array}{l}
+c_0 && k = 0 \\
+c_{k+1} ( p(k) ) && k = 0 \\
+c_0 (\bar{s_i}) && \text{when} && \bar{s_i} \not= \emptyset,\ \bar{s_j} = \emptyset \\
+c_0 && \text{when} && \bar{s_i},\ \bar{s_j} = \emptyset \\
+\end{array}
+\right.
+[/dmath]
+where [imath]c_i \in C,\ i = 0,\ 1,\ \ldots n-1[/imath].
+
+<b>Definition 3</b>: A sub-path of order [imath]k[/imath] from path is defined by [imath]p = <c_1,\ c_2,\ \ldots c_n>[/imath], where [imath]c_i \in C,\ i = 1,\ 2,\ \ldots n[/imath]. 
+Denote:
+[dmath]
+p = c_1 c_2 \ldots c_n
+[/dmath]
+
+<b>Definition 4</b>: If the two head elements of two non-empty path [imath]s_i[/imath] and [imath]s_j[/imath] are equal, i.e. [imath]s_i = <c_0, \bar{s_i}>[/imath] and [imath]s_j = <c_0, \bar{s_j}>[/imath] where [imath]\bar{s_i}[/imath] and [imath]\bar{s_j}[/imath] are the postfix of [imath]s_i[/imath] and [imath]s_j[/imath] respectively excluding the head element, then we define an intermediate color tree [imath]T_t[/imath] generated from [imath]s_i[/imath] and [imath]s_j[/imath] as:
+[dmath]
+T_t = s_i + s_j = \left\{\begin{array}{l}
+c_0 (\bar{s_i} + \bar{s_j}) && \text{when} && \bar{s_i},\ \bar{s_j} \not= \emptyset \\
+c_0 (\bar{s_i}) && \text{when} && \bar{s_i} \not= \emptyset,\ \bar{s_j} = \emptyset \\
+c_0 && \text{when} && \bar{s_i},\ \bar{s_j} = \emptyset \\
+\end{array}
+\right.
+[/dmath]
+ [imath] s_i + s_j = c_0 (\bar{s_i} + \bar{s_j})[/imath], where the [imath]+[/imath] sign here can be commutative. In the case [imath]s_j = \emptyset[/imath], we 
+
+<b>Definition 5</b>: A complete color tree [imath]T[/imath] is a intermediate tree of form [imath]T = [/imath]
+
+Given [imath]b_1 \ \big| \ b_2[/imath], we want to find a branch word [imath]b_1^*[/imath]. Such that [imath]b_1^* \subseteq b_1[/imath] and:
+[dmath]
+\exists \; b_2^* \quad \text{s.t.} \quad b^*_2 \bowtie b_1^*, \; b_2^* \subseteq b_2
+[/dmath]
+[photo]twbook/images/tree_posting.png[/photo]

@@ -105,7 +105,7 @@ unsigned int read2(char (*fname)[32], int n)
 				nread = fread(buf[i], BRWBLK_UNIT_SZ, 
 				              BRWBLK_RD_NUM, fh[i]);
 
-				printf("...........read %d\n", nread);
+				//printf("...........read %d\n", nread);
 				idx[i] = 0;
 				if (nread < BRWBLK_RD_NUM)
 					end[i] = nread;
@@ -154,6 +154,7 @@ exit:
 int
 main()
 {
+	int i;
 	unsigned int check_sum = 0;
 	char fname[][32] = {"posting-1.bin", 
 	                    "posting-2.bin", 
@@ -167,11 +168,9 @@ main()
 	check_sum += write("posting-4.bin");
 	printf("check_sum = %d\n", check_sum);
 
-	//read("posting-1.bin");
-	//read("posting-2.bin");
-	//read("posting-3.bin");
-
-	check_sum = read2(fname, 4);
+	for (i = 0; i < 1000; i++) {
+		check_sum = read2(fname, 4);
+	}
 	
 	printf("check_sum = %d\n", check_sum);
 	return 0;

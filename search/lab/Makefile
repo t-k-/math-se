@@ -1,9 +1,12 @@
 .PHONY: all clean
 
-all: test
+all: posmerge dirmerge
 
-test: posmerge.c clean
+posmerge: posmerge.c clean
+	gcc $< -o $@
+
+dirmerge: dirmerge.c clean
 	gcc $< -o $@
 	
 clean:
-	rm -f *.bin test
+	rm -f *.bin posmerge dirmerge 

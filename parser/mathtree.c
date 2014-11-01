@@ -246,6 +246,9 @@ void matree_attach(struct token_t *s /* son */,
 	} else if (s->type == f->type && f->type == MT_SEP_CLASS &&
 	   strcmp(s->name, f->name) == 0) {
 		; /* skip if statement */
+	} else if (s->type == f->type && f->type == MT_EQ_CLASS &&
+	   strcmp(s->name, f->name) == 0) {
+		; /* skip if statement */
 	} else {
 		tree_attach(&s->tnd, &f->tnd, NULL, NULL);
 		return;
