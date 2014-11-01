@@ -168,7 +168,7 @@ main()
 	check_sum += write("posting-4.bin");
 	printf("check_sum = %d\n", check_sum);
 
-	for (i = 0; i < 1000; i++) {
+	for (i = 0; i < 100; i++) {
 		check_sum = read2(fname, 4);
 	}
 	
