@@ -75,12 +75,14 @@ void dir_merge(char (*path)[PATH_MAX], unsigned long int n)
 				free(next_dir);
 			}
 		} else {
-			for (i = 0; i < n; i++) {
-				char aaa[PATH_MAX];
-				sprintf(aaa, "%s/%s", path[i], dname);
-				printf("%s\n", aaa);
-			}
-			printf("\n");
+char aaa[PATH_MAX];
+sprintf(aaa, "%s/%s", path[0], dname);
+printf("%s\n", aaa);
+//			for (i = 0; i < n; i++) {
+//				sprintf(aaa, "%s/%s", path[i], dname);
+//				printf("%s\n", aaa);
+//			}
+//			printf("\n");
 		}
 	}
 
@@ -98,8 +100,10 @@ main()
 {
 	//char dirname[][PATH_MAX] = {"./dir0", "./dir1", "./dir2"};
 	char dirname[][PATH_MAX] = {
-	"/home/tk/math-se/col/var/add", 
-	"/home/tk/math-se/col/var/times/add" 
+	"/home/tk/math-se/col/./var/sups/sus", 
+	"/home/tk/math-se/col/./one/add/sus", 
+	"/home/tk/math-se/col/./one/frac/add/sus", 
+	"/home/tk/math-se/col/./var/frac/add/sus"
 	};
 
 	dir_merge(dirname, sizeof(dirname) / PATH_MAX);
