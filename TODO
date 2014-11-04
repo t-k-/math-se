@@ -6,9 +6,8 @@
 
 ! brword ID does not need a long HASH
 
-! incrimination
-
-! hotspot info after indexing 
+! incrimination: one big doc is matching with a query, except for a proliferous branch word on one of its sub-tree. But we can find that doc using its another sub-tree, to better access the score, we need incrimination. 
+* when a docID is in, all the brw with same docID in terms of the same path are also in.
 
 ! use READ instead of WRITE to open bdb when searching.
 
