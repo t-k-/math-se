@@ -22,9 +22,9 @@ void write(const char *fname)
 		return;
 
 	blk.frml_id = 0;
-	delta = rand() % 15;
-	for (i = 0; i < 40 + delta; i++) {
-		blk.frml_id += rand() % 15;
+	delta = rand() % 50000;
+	for (i = 0; i < 150000 + delta; i++) {
+		blk.frml_id += rand() % 500;
 		fwrite(&blk, sizeof(struct brw_blk), 1, fh);
 	}
 	
@@ -74,9 +74,26 @@ void write_case1(const char *fname)
 	fclose(fh);
 }
 
-#define BRWBLK_RD_NUM 4 //4096
+#define BRWBLK_RD_NUM 4096 //4
 #define BRWBLK_UNIT_SZ sizeof(struct brw_blk)
 #define BRWBLK_RD_BUF_SZ (BRWBLK_RD_NUM * BRWBLK_UNIT_SZ) 
+
+void tracebuf(struct brw_blk* buff, 
+              unsigned int idx, unsigned int end) 
+{
+	unsigned int j;
+	struct brw_blk *blk;
+	for (j = 0; j < BRWBLK_RD_NUM; j++) {
+		blk = buff + j;
+		if (j == idx)
+			printf("[%d]", blk->frml_id);
+		else if (j >= end)
+			printf("<%d>", blk->frml_id);
+		else
+			printf("(%d)", blk->frml_id);
+	}
+	printf("\n");
+}
 
 int read(const char *fname)
 {
@@ -127,10 +144,11 @@ jump(unsigned int target, struct brw_blk *buf, FILE *fh,
 		idx_far = *end - 1;
 		if (buf[idx_far].frml_id >= target)
 			break;
-		else if (*end != BRWBLK_RD_NUM)
-			return 0; 
 		
 		jumps += rebuf(buf, fh, idx, end);
+		
+		if (*end != BRWBLK_RD_NUM)
+			return 0; 
 	} while (1);
 
 	while (*idx < *end && buf[*idx].frml_id < target) {
@@ -168,17 +186,16 @@ unsigned int posmerge(char (*fname)[32], int n)
 	do { 
 		max = buf[0][idx[0]].frml_id;
 		diff = 0;
-		printf("%d: (%d) \n", 0, max);
+		//printf("%d: (%d) \n", 0, max);
 		for (i = 1; i < n; i++) {
 			id = buf[i][idx[i]].frml_id;
-			printf("%d: (%d) \n", i, id);
+			//printf("%d: (%d) \n", i, id);
 			if (id != max) {
 				if (id > max) 
 					max = id;
 				diff = 1;
 			}
 		}
-		printf("\n");
 		
 		go_on = 1;
 		if (diff) {
@@ -190,7 +207,7 @@ unsigned int posmerge(char (*fname)[32], int n)
 					if (!go_on)
 						break;
 					else if (go_on > 1) {
-						printf("jumped %d\n", go_on);
+						//printf("jumped %d\n", go_on);
 						jumps += go_on;
 					}
 				}
@@ -226,25 +243,33 @@ exit:
 
 	free(fh);
 
-	printf("total jumps: %d\n", jumps);
-	return 0;
+	return jumps;
 }
 
 int
 main()
 {
-	char fname[][32] = {"posting-0.bin", "posting-1.bin"};
-	srand(2132);
+	char fname[][32] = {"posting-0.bin", 
+	                    "posting-1.bin",
+	                    "posting-2.bin"};
+	srand(3909);
+	unsigned int i, jumps;
 
 	system("rm -f *.bin");
 	write("posting-0.bin");
 	write("posting-1.bin");
+	write("posting-2.bin");
 //	write_case0("posting-0.bin");
 //	write_case1("posting-1.bin");
 
-	read("posting-0.bin");
-	read("posting-1.bin");
+	//read("posting-0.bin");
+	//read("posting-1.bin");
 
-	posmerge(fname, 2);
+	printf("begin.\n");
+	for (i = 0; i < 50; i++) {
+		jumps = posmerge(fname, 3);
+	}
+
+	printf("total jumps: %d \n", jumps);
 	return 0;
 }
