@@ -1,12 +1,21 @@
 # parser:
 # input: url, tex list
-# output: url, (tex, tree, brw[])[]
+# output: parser.output
+#	url, (tex, tree, path[], brw[])[]
+
+# trpa *cowpie_parse(tex)
+
+# {path[], brw[]} trpa_gen_path_brw(trpa *)
+
+# brw: {n, vname, nsons[]}
 
 # index:
 # input: parser.output
 # output: 
 #	./col/bdb {#id}->{#brw, url, tex, tree}
 #	./col/path/to/brw/posting {max, min, records[]}
+
+# brw_record: {frml_id, brw_idx, brw}
 
 # search:
 def score_tr_mark_cross(li_query_brw, score_tr):
