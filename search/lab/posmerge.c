@@ -163,7 +163,8 @@ unsigned int posmerge(char (*fname)[32], int n)
 {
 	FILE **fh = calloc(n, sizeof(FILE*));
 	struct brw_blk (*buf)[BRWBLK_RD_NUM];
-	unsigned int i, *idx, *end, max, id, diff, go_on, jumps = 0;
+	unsigned int i, *idx, *end, max, id, diff, go_on;
+	unsigned int last_call = 0, jumps = 0;
 
 	for (i = 0; i < n; i++) {
 		fh[i] = fopen(fname[i], "r");
@@ -215,8 +216,20 @@ unsigned int posmerge(char (*fname)[32], int n)
 		} else {
 			for (i = 0; i < n; i++) {
 				while (buf[i][idx[i]].frml_id == max) {
-					printf("[%d] @ pipe %d calls\n", 
-					       buf[i][idx[i]].frml_id, i);
+					if (last_call) {
+						if (last_call == max) {
+						printf("[%d] @ pipe %d calls\n", 
+					           buf[i][idx[i]].frml_id, i);
+						} else {
+						printf("end calls.\n");
+						printf("[%d] @ pipe %d first calls\n", 
+					           buf[i][idx[i]].frml_id, i);
+						}
+					} else {
+						printf("[%d] @ pipe %d first calls\n", 
+					           buf[i][idx[i]].frml_id, i);
+					}
+					last_call = max;
 					idx[i] ++;
 					if (idx[i] == end[i]) {
 						if (end[i] == BRWBLK_RD_NUM) {
@@ -230,6 +243,9 @@ unsigned int posmerge(char (*fname)[32], int n)
 			}
 		}
 	} while (go_on);
+
+	if (last_call)
+		printf("end calls.\n");
 
 	free(end);
 	free(idx);
@@ -251,14 +267,34 @@ main()
 {
 	char fname[][32] = {"posting-0.bin", 
 	                    "posting-1.bin",
-	                    "posting-2.bin"};
-	srand(3909);
+	                    "posting-2.bin",
+	                    "posting-3.bin",
+	                    "posting-4.bin",
+	                    "posting-5.bin",
+	                    "posting-6.bin",
+	                    "posting-7.bin",
+	                    "posting-8.bin",
+	                    "posting-9.bin",
+	                    "posting-10.bin",
+	                    "posting-11.bin",
+	                    "posting-12.bin"};
+	srand(3875);
 	unsigned int i, jumps;
 
 	system("rm -f *.bin");
 	write("posting-0.bin");
 	write("posting-1.bin");
 	write("posting-2.bin");
+	write("posting-3.bin");
+	write("posting-4.bin");
+	write("posting-5.bin");
+	write("posting-6.bin");
+	write("posting-7.bin");
+	write("posting-8.bin");
+	write("posting-9.bin");
+	write("posting-10.bin");
+	write("posting-11.bin");
+	write("posting-12.bin");
 //	write_case0("posting-0.bin");
 //	write_case1("posting-1.bin");
 
@@ -266,9 +302,9 @@ main()
 	//read("posting-1.bin");
 
 	printf("begin.\n");
-	for (i = 0; i < 50; i++) {
-		jumps = posmerge(fname, 3);
-	}
+	//for (i = 0; i < 50; i++) {
+		jumps = posmerge(fname, 13);
+	//}
 
 	printf("total jumps: %d \n", jumps);
 	return 0;
