@@ -23,8 +23,8 @@ struct brw {
 
 struct search_dir {
 	char *dir;
-	struct dbrw *dbrw_entry;
-	struct score_tr_leaf *rlv_stack[MAX_BRW_EACH_FRML];
+	struct dbrw *dbrw_ref[MAX_DBRW_REF];
+	(p,q) rlv_stack[FRML_MAX_BRW];
 };
 struct dbrw {
 	char *dir;
@@ -43,20 +43,19 @@ struct score_tr_var {
 
 struct champ_unit {
 	T_SCORE max;
-	struct score_tr_leaf *who;
+	struct check_unit *who;
 };
 struct check_unit {
 	uchar idx;
 	uint ck_mark;
-	uint var_idx;
 };
 struct score_tr {
-	uint n_var;
+	uint n_var, n_qbrw;
 	T_SCORE max, score;	
-	struct score_tr_leaf *who;
-	struct score_tr_var var[i];
-	struct champ_unit champ_board[i][k];
-	struct check_unit check_board[i * j];
+	struct check_unit *who;
+	struct score_tr_var var[n_var];
+	struct champ_unit champ_board[n_qbrw][n_var];
+	struct check_unit check_board[n_var][n_leaf];
 };
 
 void parse(url)
@@ -114,8 +113,18 @@ int merge_search_callbk(struct post_rec matched, instr, srch_entry,
 	if instr == FIRST_CALL {
 		if ranking_set_has(matched.id) 
 			return SKIP_THIS_ID;
-	} else if instr == END_CALL {
+	}  
+
+	if instr != SKIP_THIS_ID {
+		leaf = score_tr_insert(score_tr, matched);
+		srch_entry.rlv_stack.push(leaf);
+		for dbrw in srch_entry.dbrw_ref 
+			score_cache_put(matched.brw, dbrw.brw);
+	}
+
+	if instr == END_CALL {
 		score = score_tr_calc(score_tr, li_query_dbrw);
+		score_tr_clear(score_tr);
 		nbrw = hdb_get_nbrw(matched.id);
 		score = 1000 * score + 1 / nbrw; 
 		ranking_set_add(score, matched.id);
@@ -124,28 +133,28 @@ int merge_search_callbk(struct post_rec matched, instr, srch_entry,
 			return ABORT_ALL;
 	}
 	
-	if instr != SKIP_THIS_ID {
-		leaf = score_tr_insert(score_tr, matched);
-		srch_entry.rlv_stack.push(leaf);
-		score_cache_put(matched.brw, srch_entry.dbrw_entry.brw);
-	}
-
 	return NEXT;
+}
+
+void score_tr_clear()
+{
+	score_tr.score = 0;
+	score_tr.n_var = 0;
+	score_tr.n_qbrw = 0;
 }
 
 T_SCORE score_tr_calc(score_tr, li_query_dbrw)
 {
 	k = 0;
-	score_tr.score = 0;
 
 	for q_dbrw in li_query_dbrw {
 		i = q_bdrw.brw.idx;
 		champs = score_tr.champ_board[i];
-		for p in q_dbrw.srch_entry->rlv_stack {
-			leaf = score_tr.check_board[p]
+		for p, q in q_dbrw.srch_entry->rlv_stack {
+			leaf = score_tr.check_board[p][q];
+			champ = champs[p];
 			if leaf.ck_mark == unmark {
 				score = score_cache_get(i, leaf.idx);
-				champ = champs[leaf.var_idx];
 				if score > champ.max {
 					if champ.who 
 						champ.who->ck_mark = unmark;
@@ -177,7 +186,7 @@ T_SCORE score_tr_calc(score_tr, li_query_dbrw)
 				for l = k; l <= i; l ++ {
 					champ = score_tr.champ_board[l][j];
 					if champ.who 
-						champ.state = next_state;
+						champ.who.state = next_state;
 				}
 			}
 			memset(score_tr.var);
@@ -190,7 +199,7 @@ T_SCORE score_tr_calc(score_tr, li_query_dbrw)
 			k = i;
 		}
 	}
-	memset(score_tr.check_board);
 
+	memset(score_tr.check_board);
 	return score_tr.score;
 }
