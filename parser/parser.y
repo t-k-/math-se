@@ -46,6 +46,7 @@
 %destructor { matree_release($$); } <p>
 %destructor { free($$);} <s>
 %%
+/* aa */
 doc : tex '\n' ;
 
 rel : atom
