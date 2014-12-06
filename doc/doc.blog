@@ -4,51 +4,27 @@
 \newcommand{fa}{\forall\;}
 \newcommand{ex}{\exists\;}
 [/imath]
-<h3>Factor expanded form</h3>
-For a undirected tree [imath]T = (V,E)[/imath], arbitrarily choose a vertex [imath]r \in V[/imath] and 
-
-[imath]\fa v_i \in V_s = \set{v}{\{r, v\} \in E}, \; i=1,2, \ldots n[/imath]. 
-
-Denote [imath]F[/imath] as the <b>factor expanded form</b> of [imath]T[/imath] with root [imath]r[/imath]:
-
-[dmath]
-F = \left\{\begin{array}{c}	\
-r  && \text{if} \; V_s = \emptyset \\
-\\
-r \cdot \sum_{i=1}^n F_i  && \text{otherwise}
-\end{array} \right.
-[/dmath]
-
-Where [imath]F_i[/imath] is the factor expanded form of [imath]T_i = (V_i, E_i)[/imath] with root [imath]v_i[/imath], such that:
-<ol>
-<li>[imath]\fa v_j \in V,\; j=1, 2, \ldots |V|[/imath], the set [imath]P_{i,j}[/imath] is all the paths in [imath]T[/imath] from [imath]v_j[/imath] to [imath]r[/imath] 
-and has the unordered-edge [imath]\{v_i, r\}[/imath]. [imath]E_i[/imath] is union of all [imath]p \in P_{i,j}[/imath].
-</li>
-
-<li> [imath]V_i[/imath] is the union of all the edges in [imath]E_i[/imath]. </li>
-</ol>
-
 <h3>Formula subtree</h3>
-A tree [imath]T_s = (V,E)[/imath] is a formula subtree of a rooted tree [imath]T[/imath] if:
+A rooted tree [imath]T_s = (V,E)[/imath] is a formula subtree of a rooted tree [imath]T[/imath] if:
 <ol>
 <li>[imath]T_s[/imath] is a subtree of [imath]T[/imath]</li>
 <li>any leaf in [imath]T_s[/imath] is also a leaf in [imath]T[/imath]</li>
 </ol>
-The set containing all the formula subtree of [imath]T[/imath] is denoted as [imath]\text{FS}(T)[/imath]
+The set containing all the formula subtree of [imath]T[/imath] is denoted as [imath]\text{FSS}(T)[/imath]
 
 <h3>Branch word</h3>
 Define branch word [imath]b[/imath] as a sequence of set, denote [imath]|b|[/imath] as the length of the sequence, 
 and [imath]\mathbb{B}[/imath] as the set of all branch words.
 
 Particularly, the branch word of path [imath]p=(V,E),\; |V|= n,\; E=\{\{v_1, v_2\}, \{v_2, v_3\} \ldots \{v_{n-1}, v_{n}\}\}[/imath]
-denoted by [imath]\bar{p}[/imath], is a sequence of set: 
+denoted by [imath]\bar{p}[/imath], is defined by
 [dmath]
 \bar{p} = f(v_1) \cdot f(v_2) \ldots f(v_n)
 [/dmath]
 Where [imath]f[/imath] is a function that maps a vertex to a set.
 
 
-The branch word set of rooted undirected tree [imath]T[/imath], is defined as [imath]B(T)[/imath], such that,
+The branch word set of rooted tree [imath]T[/imath], is defined as [imath]B(T)[/imath], such that,
 for [imath]\text{SPS}(T) = \{p_1,\ p_2,\ \ldots p_n\}[/imath]:
 [dmath]
 B(T) = \bigcup^n_{i=1}\ \{\,\bar{p}_i\}
@@ -63,20 +39,20 @@ I_C(b) = \set{T}{b \in B(T),\; T \in C}
 [/dmath]
 
 <h3>Theorem</h3>
-Given a undirected tree [imath]T_q[/imath] with [imath]B(T_q)=\{b_1,\ b_2, \ldots b_n\}[/imath]. 
+Given a tree [imath]T_q[/imath] with [imath]B(T_q)=\{b_1,\ b_2, \ldots b_n\}[/imath]. 
 
-Define search set of [imath]T_q[/imath] at level [imath]l[/imath] in collection C as:
+Define search set of [imath]T_q[/imath] at level [imath]l[/imath] in collection [imath]C[/imath] as:
 [dmath]
-S_{l,C} (T_q) = \bigcap_{i=1}^n\ \bigcup_{j=1}^m \ I_C(h_j \cdot b_i)
+S_{l,C} (T_q) = \bigcup_{i=1}^m\  \bigcap_{j=1}^n\ I_C(h_i \cdot b_j)
 [/dmath]
-Where [imath]h_1,\ h_2,\ \ldots h_m[/imath] are all the branch words in [imath]\mathbb{B}[/imath] such that [imath]|h_j| = l,\; j=1,2, \ldots m[/imath]. 
+Where [imath]h_1,\ h_2,\ \ldots h_m[/imath] are all the branch words in [imath]\mathbb{B}[/imath] such that [imath]|h_i| = l,\; i=1,2, \ldots m[/imath]. 
 
 Then [imath]\fa T_d \in C[/imath], 
 [dmath]
-T_q \in \text{FS}(T_d) 
+T_q \in \text{FSS}(T_d) 
 \quad
 \Leftrightarrow 
 \quad
-\ex l \le 0,\;\; s.t. \;\; T_d \in S_{l,C} (T_q)
+\ex l \ge 0,\;\; s.t. \;\; T_d \in S_{l,C} (T_q)
 [/dmath]
 
