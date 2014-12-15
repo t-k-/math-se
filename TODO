@@ -1,31 +1,17 @@
-! build library path config 
-
-! depth-by-depth identical path merging search
-
-! posting file with incremented ID and skip-list merging search
-
-! brword ID does not need a long HASH
-
-! incrimination: one big doc is matching with a query, except for a proliferous branch word on one of its sub-tree. But we can find that doc using its another sub-tree, to better access the score, we need incrimination. 
-* when a docID is in, all the brw with same docID in terms of the same path are also in.
-
 ! use READ instead of WRITE to open bdb when searching.
 
-! [ use node with branch factor, to determine if tree are identical ]
+! mark and cross only happens when more than one brwords are found for a query brword.
+
+! log system, config/limits header.
 
 ! have a max/min info in posting file header.
 
-! number each node in a tree for better debug
+! number each node in a tree for better debug, and further pin array
 
-! ID belongs to level x, ordered by ID, score pruning: 
-1) Score can be given to specific ID whenever all the relevant brword of that ID is fully get.
+! ID belongs to level x, ordered by ID, : 
+1) score pruning: Score can be given to specific ID whenever all the relevant brword of that ID is fully get.
 2) use simply sum of brw score for a given ID will help to prune 2 if we know final score of 1: final_score_2 < sum_score_2 < final_score_1
-
-! limits log
-
-! add order info into posting
-
-! add operation does not distinguish order 
+3) prun trees with different pin array.
 
 ! joint node [ :
 	\frac: [, frac_nu and frac_de
