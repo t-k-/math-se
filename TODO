@@ -2,7 +2,7 @@
 
 ! mark and cross only happens when more than one brwords are found for a query brword.
 
-! log system, config/limits header.
+! log system, config/limits header, alloc mem count.
 
 ! have a max/min info in posting file header.
 
@@ -10,7 +10,7 @@
 
 ! ID belongs to level x, ordered by ID, : 
 1) score pruning: Score can be given to specific ID whenever all the relevant brword of that ID is fully get.
-2) use simply sum of brw score for a given ID will help to prune 2 if we know final score of 1: final_score_2 < sum_score_2 < final_score_1
+2) using sum of best match brw score will help to prune doc with bad score.
 3) prun trees with different pin array.
 
 ! joint node [ :
