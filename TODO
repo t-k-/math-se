@@ -1,23 +1,12 @@
 ! fan less than, then sub tree is possible.
 
-! use READ instead of WRITE to open bdb when searching. AND lock.
-
 ! mark and cross only happens when more than one brwords are found for a query brword.
-
-! have a max/min info in posting file header.
 
 ! ID belongs to level x, ordered by ID, : 
 1) score pruning: Score can be given to specific ID whenever all the relevant brword of that ID is fully get.
 2) using sum of best match brw score will help to prune doc with bad score.
 3) prun trees with different pin array.
 
-! hanger node [ :
-	\frac: [, frac^ and frac_
-	\sqrt: [, sqrt^ and sqrt_ 
-	\choose | \mod : choose^ and choose_ 
-
-! remove [NULL] 
-! number tokens
 ---------------------
 NTCIR data evalutation
 
@@ -46,3 +35,8 @@ provide instances for elastic search
 \DeclareMathOperator
 \newcommand
 \newenvironment
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+container:
+	* callbk -> for loop
+	* pa_extra -> variable arguments
